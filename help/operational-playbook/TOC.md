@@ -1,15 +1,15 @@
 ---
-user-guide-title: Operationeel afspeelboek voor handel
+user-guide-title: Operational Playbook
 user-guide-description: Leer hoe te om uw ondernemingen operationeel klaar te krijgen om een succesvolle e-commercesite in werking te stellen.
-source-git-commit: 6eeb6547d06d416c50fcf97cb07cbc94729ebcd0
+source-git-commit: 748c302527617c6a9bf7d6e666c6b3acff89e021
 workflow-type: tm+mt
-source-wordcount: '134'
+source-wordcount: '132'
 ht-degree: 0%
 
 ---
 
 
-# Operationeel afspeelboek voor handel {#operational-playbook}
+# Operationeel afspelen {#operational-playbook}
 
 - [Overzicht](overview.md)
 - Handel {#intro}
@@ -17,21 +17,21 @@ ht-degree: 0%
    - [Wat is e-commerce?](intro/ecommerce.md)
    - [Bedrijfsmodel](intro/business-model.md)
    - [Handelsverrichtingen](intro/operations.md)
-   - [Handelskenmerken](intro/features.md)
+   - [Commerce features](intro/features.md)
 - Leiderschap {#leadership}
    - [Beginselen](leadership/principles.md)
-   - [Doelen](leadership/goals.md)
+   - [Goals](leadership/goals.md)
    - [Vision](leadership/vision.md)
    - [Planning](leadership/planning.md)
 - Oplossing {#solution}
    - [Software-as-a-service (SaaS)](solution/software-service.md)
    - [Platform-as-a-service (PaaS)](solution/platform-service.md)
-   - [hosting op locatie](solution/on-premises.md)
+   - [On-premises hosting](solution/on-premises.md)
    - [Wolk versus in-gebouw](solution/hosting-comparison.md)
    - [Integraties van derden](solution/integrations.md)
-   - [Upgrades, back-ups en onderhoud](solution/maintenance.md)
-- Strategie {#strategy}
-   - [Handelsstrategie](strategy/commerce.md)
+   - [Upgrades, backups, and maintenance](solution/maintenance.md)
+- Strategy {#strategy}
+   - [Commerce strategy](strategy/commerce.md)
    - [Focus](strategy/focus.md)
    - [Inhoudsstrategie](strategy/content.md)
    - [Looptijd](strategy/maturity.md)
@@ -43,12 +43,12 @@ ht-degree: 0%
    - [DACI-model](process/project-management-framework.md)
    - [Methode voor Agile Scrum](process/agile-scrum.md)
    - [Gemeenschappelijke projectworkshops](process/project-workshops.md)
-   - [Testen](process/testing.md)
-- Personen {#people}
+   - [Testing](process/testing.md)
+- People {#people}
    - [Teams](people/teams.md)
    - [Teamstructuur](people/team-structure.md)
    - [Organisatiestructuur](people/organizational-structure.md)
-   - [Communicatie](people/communication.md)
+   - [Communication](people/communication.md)
    - [Taken en verantwoordelijkheden](people/roles-responsibilities.md)
    - [Bronnen](people/resources.md)
    - [Cultuur](people/culture.md)
@@ -58,17 +58,17 @@ ht-degree: 0%
    - [Verzending en uitvoering](product/shipping-fulfillment.md)
    - [Betalingsgateways](product/payment-gateways.md)
    - [Prijzen](product/pricing.md)
-   - [Productafbeeldingen](product/images.md)
+   - [Product images](product/images.md)
    - [Uitcheckstromen en -processen](product/checkout.md)
-   - [Dynamisch prijsbeheer](product/dynamic-pricing.md)
+   - [Dynamic pricing management](product/dynamic-pricing.md)
    - [Aanbiedingen](product/promotions.md)
-   - [Campagnebeheer](product/campaign-management.md)
-   - [Loodgeneratie](product/lead-generation.md)
+   - [Campaign management](product/campaign-management.md)
+   - [Lead generation](product/lead-generation.md)
    - [Rapportage en dashboards](product/reporting.md)
-   - [Online klantenservice](product/customer-service.md)
+   - [Online customer service](product/customer-service.md)
    - [SEO](product/search-engine-optimization.md)
-   - [E-mailmarketing](product/marketing.md)
+   - [Email marketing](product/marketing.md)
    - [Personalisatie](product/personalization.md)
-   - [Klikken en verzamelen](product/click-collect.md)
+   - [Click and collect](product/click-collect.md)
    - [PWA](product/progressive-web-app.md)
-- [Controlelijsten en sjablonen](checklists-templates/home.md)
+- [Checklists and templates](checklists-templates/home.md)
