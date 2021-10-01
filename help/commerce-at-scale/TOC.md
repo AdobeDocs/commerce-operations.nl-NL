@@ -1,10 +1,9 @@
 ---
 user-guide-title: Ervaringen op het gebied van handel op schaal leveren
 user-guide-description: Leer hoe u ervaringen op schaal kunt bieden met Adobe Commerce met Adobe Experience Manager.
-hide: true
-source-git-commit: 1cff7359ddb4caeca6773ff74b92048c89676f12
+source-git-commit: 63f153365398c3ae7dc7e6214b67705c8a4c7686
 workflow-type: tm+mt
-source-wordcount: '39'
+source-wordcount: '0'
 ht-degree: 0%
 
 ---
@@ -14,8 +13,8 @@ ht-degree: 0%
 
 - [Overzicht](overview.md)
 - [Efficiënte caching plannen](caching.md)
-- [Prestaties optimaliseren](performance.md)
+- [Optimalisatie van AEM](performance.md)
 - [Infrastructuur uitlijnen](infrastructure.md)
-- [Standaardinstellingen wijzigen](default-settings.md)
-- [Voorbereiden op starten](launch.md)
+- [Adobe Commerce-prestatieoptimalisatie](default-settings.md)
+- [Tips voor het testen van prestaties](launch.md)
 - [Conclusie](conclusion.md)

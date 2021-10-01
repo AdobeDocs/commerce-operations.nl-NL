@@ -1,15 +1,15 @@
 ---
-title: Optimalisatie van prestaties
+title: Optimalisatie van AEM prestaties
 description: Optimaliseer uw standaardAdobe Experience Manager configuratie om hoge ladingen op de Handel van de Adobe te steunen.
-source-git-commit: 1cff7359ddb4caeca6773ff74b92048c89676f12
+source-git-commit: 63f153365398c3ae7dc7e6214b67705c8a4c7686
 workflow-type: tm+mt
-source-wordcount: '2252'
+source-wordcount: '0'
 ht-degree: 0%
 
 ---
 
 
-# Optimalisatie van AEM prestaties tijdens het laden van standaardconfiguraties
+# Optimalisatie van AEM
 
 De AEM dispatcher is een reverse-proxy die helpt een omgeving te leveren die zowel snel als dynamisch is. Het werkt als deel van een statische server van HTML, zoals de Server van Apache HTTP, met het doel om (of &quot;caching&quot;) zoveel mogelijk van de plaatsinhoud op te slaan mogelijk, in de vorm van statische middelen. Deze aanpak is erop gericht de noodzaak om toegang te krijgen tot de AEM paginerendering en de dienst GraphQL van de Handel van de Adobe zoveel mogelijk te minimaliseren. Het resultaat van het bedienen van een groot deel van de pagina&#39;s als statische HTML, CSS en JS biedt prestatievoordelen voor gebruikers en vermindert de infrastructuurvereisten voor de omgeving. Pagina&#39;s of query&#39;s die waarschijnlijk van gebruiker tot gebruiker op dezelfde manier worden herhaald, moeten in cache worden geplaatst.
 
@@ -54,7 +54,7 @@ Elk mapniveau heeft een &quot;statusniveau&quot;, zoals weergegeven in de bovens
 
 | inhoud (docroot) | elektronische | ons | en | producten | product-page.tml |
 |-------------------|-----------|----|----|----------|------------------|
-| 0 | 3 | 2 | 3 | 4 | - |
+| 0 | 1 | 2 | 3 | 4 | - |
 
 Als u in dit geval de eigenschap statusLevel op de standaardwaarde &quot;0&quot; hebt ingesteld en de sjabloon product-page.html wordt bijgewerkt en geactiveerd waardoor een validatie wordt uitgevoerd, wordt elk .stat-bestand van docroot naar niveau 4 aangeraakt en worden bestanden ongeldig gemaakt, waardoor een nieuw verzoek van de AEM publicatieinstanties voor alle pagina&#39;s op de site (inclusief andere websites, landen en talen) van die ene wijziging wordt gedaan.
 
@@ -134,6 +134,6 @@ Het zou daarom moeten worden gevormd om alle parameters door gebrek in &quot;ign
 
 ## Grenswaarden voor MPM-workers voor verzenders
 
-De MPM-workers-instellingen zijn een geavanceerde Apache HTTP-serverconfiguratie die grondig moet worden getest om te worden geoptimaliseerd op basis van de beschikbare CPU en RAM van de Dispatcher. Nochtans, in het werkingsgebied van dit whitepaper zouden wij suggereren dat ServerLimit en MaxRequestWorkers, tot een niveau zouden moeten worden verhoogd dat de beschikbare cpu en RAM van de server zouden steunen, en dan MinSpareThreads en MaxSpareThreads allebei worden verhoogd tot een niveau dat de MaxRequestWorkers aanpast.
+De MPM-workers-instellingen zijn een geavanceerde Apache HTTP-serverconfiguratie die grondig moet worden getest om te worden geoptimaliseerd op basis van de beschikbare CPU en het RAM van de Dispatcher. Nochtans, in het werkingsgebied van dit whitepaper zouden wij suggereren dat ServerLimit en MaxRequestWorkers, tot een niveau zouden moeten worden verhoogd dat de beschikbare cpu en RAM van de server zouden steunen, en dan MinSpareThreads en MaxSpareThreads allebei worden verhoogd tot een niveau dat de MaxRequestWorkers aanpast.
 
 Deze configuratie zou Apache HTTP op een &quot;volledige bereidheid plaatsen&quot;verlaten die een krachtige configuratie voor servers met significant RAM en veelvoudige cores van cpu is. Deze configuratie zal de best mogelijke reactietijden van Apache HTTP veroorzaken door blijvende open verbindingen te handhaven klaar om verzoeken te dienen en om het even welke vertraging in het paaien van nieuwe processen in reactie op plotselinge verkeerspieken, zoals tijdens flitsverkoop te verwijderen.
