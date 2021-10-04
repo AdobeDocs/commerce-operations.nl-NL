@@ -1,15 +1,15 @@
 ---
 title: Optimalisatie van AEM prestaties
 description: Optimaliseer uw standaardAdobe Experience Manager configuratie om hoge ladingen op de Handel van de Adobe te steunen.
-exl-id: 923a709f-9048-4e67-a5b0-ece831d2eb91
-source-git-commit: e76f101df47116f7b246f21f0fe0fa72769d2776
+source-git-commit: 6ad72d5110ae3e3a7cf341282f2af9b700874f09
 workflow-type: tm+mt
-source-wordcount: '2248'
+source-wordcount: '0'
 ht-degree: 0%
 
 ---
 
-# Optimalisatie van AEM
+
+# Optimalisatie van AEM prestaties tijdens het laden van standaardconfiguraties
 
 De AEM dispatcher is een reverse-proxy die helpt een omgeving te leveren die zowel snel als dynamisch is. Het werkt als deel van een statische server van HTML, zoals de Server van Apache HTTP, met het doel om (of &quot;caching&quot;) zoveel mogelijk van de plaatsinhoud op te slaan mogelijk, in de vorm van statische middelen. Deze aanpak is erop gericht de noodzaak om toegang te krijgen tot de AEM paginerendering en de dienst GraphQL van de Handel van de Adobe zoveel mogelijk te minimaliseren. Het resultaat van het bedienen van een groot deel van de pagina&#39;s als statische HTML, CSS en JS biedt prestatievoordelen voor gebruikers en vermindert de infrastructuurvereisten voor de omgeving. Pagina&#39;s of query&#39;s die waarschijnlijk van gebruiker tot gebruiker op dezelfde manier worden herhaald, moeten in cache worden geplaatst.
 
@@ -134,6 +134,6 @@ Het zou daarom moeten worden gevormd om alle parameters door gebrek in &quot;ign
 
 ## Grenswaarden voor MPM-workers voor verzenders
 
-De MPM-workers-instellingen zijn een geavanceerde Apache HTTP-serverconfiguratie die grondig moet worden getest om te worden geoptimaliseerd op basis van de beschikbare CPU en RAM van de Dispatcher. Nochtans, in het werkingsgebied van dit whitepaper zouden wij suggereren dat ServerLimit en MaxRequestWorkers, tot een niveau zouden moeten worden verhoogd dat de beschikbare cpu en RAM van de server zouden steunen, en dan MinSpareThreads en MaxSpareThreads allebei worden verhoogd tot een niveau dat de MaxRequestWorkers aanpast.
+De MPM-workers-instellingen zijn een geavanceerde Apache HTTP-serverconfiguratie die grondig moet worden getest om te worden geoptimaliseerd op basis van de beschikbare CPU en het RAM van de Dispatcher. Nochtans, in het werkingsgebied van dit whitepaper zouden wij suggereren dat ServerLimit en MaxRequestWorkers, tot een niveau zouden moeten worden verhoogd dat de beschikbare cpu en RAM van de server zouden steunen, en dan MinSpareThreads en MaxSpareThreads allebei worden verhoogd tot een niveau dat de MaxRequestWorkers aanpast.
 
 Deze configuratie zou Apache HTTP op een &quot;volledige bereidheid plaatsen&quot;verlaten die een krachtige configuratie voor servers met significant RAM en veelvoudige cores van cpu is. Deze configuratie zal de best mogelijke reactietijden van Apache HTTP veroorzaken door blijvende open verbindingen te handhaven klaar om verzoeken te dienen en om het even welke vertraging in het paaien van nieuwe processen in reactie op plotselinge verkeerspieken, zoals tijdens flitsverkoop te verwijderen.

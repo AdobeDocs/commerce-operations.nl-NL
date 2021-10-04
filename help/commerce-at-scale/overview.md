@@ -1,13 +1,13 @@
 ---
 title: Ervaringen op schaal leveren
 description: Leer hoe u op grote schaal ervaringen kunt opdoen met Adobe Commerce en Adobe Experience Manager.
-exl-id: e3166c46-fc9d-4ff4-a3a9-2cd740a95e9b
-source-git-commit: e76f101df47116f7b246f21f0fe0fa72769d2776
+source-git-commit: 6ad72d5110ae3e3a7cf341282f2af9b700874f09
 workflow-type: tm+mt
-source-wordcount: '581'
+source-wordcount: '0'
 ht-degree: 0%
 
 ---
+
 
 # Lever ervaringen op schaal met Adobe Commerce, het Kader van de Integratie van de Handel, en Adobe Experience Manager
 
