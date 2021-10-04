@@ -4,7 +4,7 @@ description: Leer hoe u KPI's instelt voor het starten van uw Adobe Commerce- en
 exl-id: 4b0d9c4f-e611-452d-a80f-27f82705935d
 source-git-commit: e76f101df47116f7b246f21f0fe0fa72769d2776
 workflow-type: tm+mt
-source-wordcount: '0'
+source-wordcount: '1147'
 ht-degree: 0%
 
 ---
