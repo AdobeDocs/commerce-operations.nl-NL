@@ -1,15 +1,15 @@
 ---
-title: Starten voorbereiden
+title: Tips voor het testen van prestaties
 description: Leer hoe u KPI's instelt voor het starten van uw Adobe Commerce- en Adobe Experience Manager-oplossing.
-source-git-commit: 1cff7359ddb4caeca6773ff74b92048c89676f12
+exl-id: 4b0d9c4f-e611-452d-a80f-27f82705935d
+source-git-commit: e76f101df47116f7b246f21f0fe0fa72769d2776
 workflow-type: tm+mt
-source-wordcount: '1147'
+source-wordcount: '0'
 ht-degree: 0%
 
 ---
 
-
-# Starten voorbereiden
+# Tips voor het testen van prestaties
 
 Om de doeltreffendheid van alle hierboven vermelde wijzigingen te evalueren, moeten grondige prestatietests worden uitgevoerd voordat u live gaat en voordat u toekomstige grote implementaties in uw productieomgeving uitvoert. Bij het plannen van het testen van de belasting, is het belangrijk om echt het verkeer van de consument zoveel mogelijk te simuleren.
 

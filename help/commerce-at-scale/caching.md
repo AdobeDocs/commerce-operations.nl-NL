@@ -1,17 +1,17 @@
 ---
 title: Effectieve cacheplanning
 description: Raadpleeg de aanbevolen benchmarks voor het in cache plaatsen om ervoor te zorgen dat uw site probleemloos wordt geladen.
-source-git-commit: 41c0ba17b3d731a82ad6ecd8b16fac151a597e75
+exl-id: 275eb21d-fa52-4b97-9453-8f8553128b53
+source-git-commit: e76f101df47116f7b246f21f0fe0fa72769d2776
 workflow-type: tm+mt
-source-wordcount: '0'
+source-wordcount: '354'
 ht-degree: 0%
 
 ---
 
-
 # Efficiënte caching plannen voor succes van e-commerce onder belasting
 
-Om een winkelervaring onder druk te kunnen aanbieden, is een goed geplande caching-strategie vereist. Hoewel in eerste instantie het verzoek van belanghebbenden uit het bedrijfsleven kan zijn om altijd realtime productgegevens aan klanten te presenteren, is dit geen optimaal gebruik van systeembronnen en zouden de gevolgen van de prestaties van de site van de eindgebruiker ruimschoots opwegen tegen de voordelen van het consistent tonen van real-time informatie.
+Voor het aanbieden van een winkelervaring onder druk is een goed geplande caching-strategie vereist. Hoewel in eerste instantie het verzoek van belanghebbenden uit het bedrijfsleven kan zijn om altijd realtime productgegevens aan klanten te presenteren, is dit geen optimaal gebruik van systeembronnen en zouden de gevolgen van de prestaties van de site van de eindgebruiker ruimschoots opwegen tegen de voordelen van het consistent tonen van real-time informatie.
 
 De eerste stap in de caching-strategie moet daarom zijn om met de relevante belanghebbenden een matrix van aanvaardbare tijdstippen voor het in cache plaatsen van de verschillende gebieden van de site te definiëren, bijvoorbeeld:
 

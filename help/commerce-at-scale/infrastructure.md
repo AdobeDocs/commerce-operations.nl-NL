@@ -1,13 +1,13 @@
 ---
 title: Adobe Commerce en Adobe Experience Manager Infrastructure Alignment
 description: Lijn uw Adobe Commerce- en Adobe Experience Manager-infrastructuur uit om acceptabele onderbrekingen en verbindingsgrenzen in te stellen.
-source-git-commit: 1cff7359ddb4caeca6773ff74b92048c89676f12
+exl-id: f9cb818f-1461-4b23-b931-e7cee70912fd
+source-git-commit: e76f101df47116f7b246f21f0fe0fa72769d2776
 workflow-type: tm+mt
 source-wordcount: '671'
 ht-degree: 0%
 
 ---
-
 
 # Infrastructuuruitlijning (time-outs en verbindingslimieten)
 
@@ -25,11 +25,11 @@ Ervan uitgaande dat de infrastructuur een taakverdelingsmechanisme voor AWS-toep
 
 1. De gezondheidscontroles van uitgevers moeten worden herzien om te voorkomen dat verzenders onnodig vroeg uit de dienst vallen vanwege de oplaadpieken. De time-outinstellingen van de taakverdelingscontrole moeten worden afgestemd op de time-outinstellingen van de uitgever.
 
-   ![Screenshot met AEM health checks van taakverdelingsmechanisme](../assets/commerce-at-scale/health-checks.svg)
+   ![Screenshot met AEM health checks van taakverdelingsmechanisme](../assets/commerce-at-scale/health-checks.png)
 
 1. De doelgroepkleverheid van de Dispatcher kan worden uitgeschakeld en het taakverdelingsalgoritme van de Round Robin kan worden gebruikt. Hierbij wordt ervan uitgegaan dat er geen AEM specifieke functionaliteit is of AEM gebruikerssessies worden gebruikt waarvoor de sessiestandaardigheid moet worden ingesteld. Het veronderstelt dat gebruikerslogin en zittingsbeheer slechts op de Handel van Adobe via GraphQL is.
 
-   ![Schermafbeelding met kenmerken voor AEM sessievasthouding](../assets/commerce-at-scale/session-stickiness.svg)
+   ![Schermafbeelding met kenmerken voor AEM sessievasthouding](../assets/commerce-at-scale/session-stickiness.png)
 
 1. Houd er rekening mee dat als u sessiestandaardigheid inschakelt, aanvragen naar Snelheid niet in de cache kunnen worden opgeslagen. Standaard worden pagina&#39;s niet met de koptekst Set-Cookies in de cache geplaatst. Met Adobe Commerce worden cookies zelfs ingesteld op cacheable pages (TTL > 0), maar met de standaard snelle VCL worden deze cookies gestript op cacheable pages, zodat snel caching werkt. Als pagina&#39;s niet in cache worden geplaatst, controleert u eventueel gebruikte aangepaste cookies en uploadt u ook de Fastly VCL en controleert u de site opnieuw.
 
@@ -49,8 +49,8 @@ De time-out van de http-verbinding en de http-socket moet worden ingesteld op ee
 
 De volgende afbeelding toont de Magento CIF GraphQL Client Configuration Factory. De hier getoonde instellingen zijn alleen voorbeelden en moeten per geval worden aangepast:
 
-![Screenshot van de configuratieinstellingen van het Commerce-integratieframework](../assets/commerce-at-scale/cif-config.svg)
+![Screenshot van de configuratieinstellingen van het Commerce-integratieframework](../assets/commerce-at-scale/cif-config.png)
 
 In de volgende afbeeldingen ziet u de snelste achtergrondconfiguraties. De hier getoonde instellingen zijn alleen voorbeelden en moeten per geval worden aangepast:
 
-![Schermafbeelding van de configuratie-instellingen voor Admin-handelsbeheer voor snel](../assets/commerce-at-scale/cif-config-advanced.svg)
+![Schermafbeelding van de configuratie-instellingen voor Admin-handelsbeheer voor snel](../assets/commerce-at-scale/cif-config-advanced.png)

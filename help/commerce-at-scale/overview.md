@@ -1,13 +1,13 @@
 ---
 title: Ervaringen op schaal leveren
 description: Leer hoe u op grote schaal ervaringen kunt opdoen met Adobe Commerce en Adobe Experience Manager.
-source-git-commit: 1cff7359ddb4caeca6773ff74b92048c89676f12
+exl-id: e3166c46-fc9d-4ff4-a3a9-2cd740a95e9b
+source-git-commit: e76f101df47116f7b246f21f0fe0fa72769d2776
 workflow-type: tm+mt
 source-wordcount: '581'
 ht-degree: 0%
 
 ---
-
 
 # Lever ervaringen op schaal met Adobe Commerce, het Kader van de Integratie van de Handel, en Adobe Experience Manager
 
@@ -30,6 +30,6 @@ E-commercepagina&#39;s zoals pagina&#39;s met productdetails (PDP&#39;s) en pagi
 
 ## Rendering op de client
 
-Waar meer dynamische attributen zoals voorraadniveaus/beschikbaarheid of prijs worden getoond, bijvoorbeeld op de Pagina&#39;s van het Detail van het Product (PDP&#39;s), cliënt-zijcomponenten kunnen worden gebruikt. Hoewel de sjabloonpagina op de dispatcher kan worden gemaakt en in cache kan worden geplaatst met behulp van de hierboven beschreven rendermethode aan de serverzijde, kunnen er binnen de statische pagina zelf dynamische client-side webcomponenten zijn. Deze dynamische componenten kunnen gegevens direct in browser van de cliënt van de Handel van de Adobe via GraphQL APIs ophalen om, bijvoorbeeld, huidige prijs of voorraadniveau in echt te controleren - tijd op PDP. Dit zorgt ervoor dat inhoud die doorgaans van essentieel belang is om in real-time te worden weergegeven, altijd wordt opgehaald bij het laden van de pagina. Voorbeelden hiervan worden weergegeven in de gele vakken in het bovenstaande voorbeeld.
+Waar meer dynamische attributen zoals voorraadniveaus/beschikbaarheid of prijs worden getoond, bijvoorbeeld op de Pagina&#39;s van het Detail van het Product (PDP&#39;s), cliënt-zijcomponenten kunnen worden gebruikt. Hoewel de sjabloonpagina op de dispatcher kan worden gemaakt en in cache kan worden geplaatst met behulp van de hierboven beschreven rendermethode aan de serverzijde, kunnen er binnen de statische pagina zelf dynamische client-side webcomponenten zijn. Deze dynamische componenten kunnen gegevens direct in browser van de cliënt van de Handel van de Adobe via GraphQL APIs ophalen om, bijvoorbeeld, huidige prijs of voorraadniveau in echt te controleren - tijd op PDP. Dit zorgt ervoor dat inhoud die doorgaans van essentieel belang is om in real-time te worden weergegeven, altijd wordt opgehaald bij het laden van de pagina. Voorbeelden hiervan worden weergegeven in de rode vakken in het bovenstaande voorbeeld.
 
 Een combinatie van AEM sjablonen en renderen aan de clientzijde kan ook worden gebruikt tijdens het uitcheckproces: clientcartonderdelen maken het winkelwagentje, het uitcheckformulier en de integratie met de betalingsdienstaanbieder. Deze hybride aanpak kan ook worden gebruikt voor de functies voor accountbeheer van Adobe Commerce, zoals het maken van een account, het aanmelden met account en het vergeten wachtwoord.
