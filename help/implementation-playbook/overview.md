@@ -2,7 +2,7 @@
 title: Afspeelmap voor implementatie
 description: Doelstelling van de handelsportefeuille
 exl-id: 2f82c68c-60c7-4a62-837b-492afc06e0db
-source-git-commit: e76f101df47116f7b246f21f0fe0fa72769d2776
+source-git-commit: 7bad54402e4698545f3436d4195170adb7b48c15
 workflow-type: tm+mt
 source-wordcount: '0'
 ht-degree: 0%
@@ -23,7 +23,7 @@ Bovendien zijn deze processen en overwegingen van toepassing op elk soort Adobe 
 - Wederzijdse marktintroductie
 - Uitgebreide integratie met of zonder middleware
 
-Wij hopen dat dit playbook inzichten en begeleiding aan een verscheidenheid van belanghebbenden verstrekt die typisch bij een e-commerce projectinitiatief zouden betrokken zijn, zoals:
+Wij hopen dat dit playbook inzichten en begeleiding aan een verscheidenheid van belanghebbenden verstrekt die typisch aan een e-commerce projectinitiatief zouden betrokken zijn, die omvatten:
 
 - CEO&#39;s en algemeen management, die een solide idee zouden moeten hebben van wat een uitrol van e-commerce inhoudt
 - GMO&#39;s en digitale managers, die op het platform zelf met zakelijke gebruikers zullen samenwerken
