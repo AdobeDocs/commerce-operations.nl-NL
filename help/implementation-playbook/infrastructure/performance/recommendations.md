@@ -1,17 +1,17 @@
 ---
 title: Prestaties optimaliseren, Recommendations
-description: Optimaliseer de prestaties van uw implementatie van de Handel van de Adobe door deze aanbevelingen te volgen.
-source-git-commit: 748c302527617c6a9bf7d6e666c6b3acff89e021
+description: Optimaliseer de prestaties van uw Adobe Commerce-implementatie met deze aanbevelingen.
+exl-id: c5d62e23-be43-4eea-afdb-bb1b156848f9
+source-git-commit: a7ccb83cbcfc2f12882fa8d8a879118db2b20ede
 workflow-type: tm+mt
-source-wordcount: '1287'
+source-wordcount: '0'
 ht-degree: 0%
 
 ---
 
-
 # Evaluatie voor optimalisatie van prestaties
 
-Even as performance optimization can come from many aspects, there are some general recommendations that should be considered for most scenarios. Dit omvat configuratieoptimalisering voor infrastructuurelementen, de achtergrondconfiguratie van de Handel van de Adobe, en architectuur scalability planning.
+Zelfs als prestatiesoptimalisering uit vele aspecten kan komen, zijn er sommige algemene aanbevelingen die voor de meeste scenario&#39;s moeten worden overwogen. Dit omvat configuratieoptimalisering voor infrastructuurelementen, Adobe Commerce backend configuratie, en architectuur scalability planning.
 
 ## Infrastructuur
 
@@ -19,11 +19,11 @@ In de volgende secties worden aanbevelingen voor infrastructuuroptimalisatie bes
 
 ### DNS-zoekopdrachten
 
-DNS lookup is the process of finding which IP address that the domain name belongs to. De browser moet wachten tot de DNS raadpleging volledig is alvorens het om het even wat voor elk verzoek kan downloaden. Het verminderen van DNS raadplegingen is belangrijk om algemene pagina ladingstijden te verbeteren.
+DNS raadpleging is het proces om te vinden welk IP adres dat de domeinnaam tot behoort. De browser moet wachten tot de DNS raadpleging volledig is alvorens het om het even wat voor elk verzoek kan downloaden. Het verminderen van DNS raadplegingen is belangrijk om algemene pagina ladingstijden te verbeteren.
 
 ### CDN (Content Delivery Network)
 
-Gebruik een CDN om de downloadprestaties van elementen te optimaliseren. Adobe Commerce gebruikt snel. Als een implementatie van de Handel van Adobe op-gebouw heeft, zou u ook moeten overwegen toevoegend een laag CDN.
+Gebruik een CDN om de downloadprestaties van elementen te optimaliseren. Adobe Commerce gebruikt Fastly. Als u een implementatie op locatie van Adobe Commerce hebt, kunt u ook overwegen een CDN-laag toe te voegen.
 
 ### Webvertraging
 
@@ -31,17 +31,17 @@ De locatie van het datacenter is van invloed op de webvertraging voor frontend-g
 
 ### Netwerkbandbreedte
 
-Sufficient network bandwidth is one of the key requirements for data exchange between web nodes, databases, caching/session servers, and other services.
+Voldoende netwerkbandbreedte is een van de belangrijkste vereisten voor gegevensuitwisseling tussen webknooppunten, databases, caching-/sessieservers en andere services.
 
-Because Adobe Commerce effectively leverages caching for high performance, your system can actively exchange data with caching servers like Redis. Als Redis zich op een externe server bevindt, moet u een voldoende netwerkkanaal tussen webknooppunten en de caching-server opgeven om knelpunten bij lees- en schrijfbewerkingen te voorkomen.
+Omdat Adobe Commerce effectief gebruik maakt van caching voor hoge prestaties, kan uw systeem actief gegevens uitwisselen met cacheservers zoals Redis. Als Redis zich op een externe server bevindt, moet u een voldoende netwerkkanaal tussen webknooppunten en de caching-server opgeven om knelpunten bij lees- en schrijfbewerkingen te voorkomen.
 
 ### Besturingssysteem (OS)
 
-Configuraties en optimalisaties van besturingssystemen zijn vergelijkbaar voor Adobe Commerce in vergelijking met andere webtoepassingen met hoge belasting. As the number of concurrent connections handled by the server increases, the number of available sockets can become fully allocated.
+Configuraties en optimalisaties van besturingssystemen zijn vergelijkbaar voor Adobe Commerce in vergelijking met andere webtoepassingen met een hoge belasting. Naarmate het aantal gelijktijdige verbindingen dat door de server wordt afgehandeld toeneemt, kan het aantal beschikbare sockets volledig worden toegewezen.
 
-### CPU of web nodes
+### CPU van webknooppunten
 
-Eén CPU-core kan ongeveer 2-4 Adobe Commerce-aanvragen zonder cache uitvoeren. Om te bepalen hoeveel Webknopen/kernen nodig waren om alle inkomende verzoeken te verwerken zonder hen in rij te zetten, gebruik de vergelijking:
+Eén CPU-core kan ongeveer 2-4 Adobe Commerce-verzoeken zonder cache leveren. Om te bepalen hoeveel Webknopen/kernen nodig waren om alle inkomende verzoeken te verwerken zonder hen in rij te zetten, gebruik de vergelijking:
 
 ```
 N[Cores] = (N [Expected Requests] / 2) + N [Expected Cron Processes])
@@ -49,17 +49,17 @@ N[Cores] = (N [Expected Requests] / 2) + N [Expected Cron Processes])
 
 ### PHP-FPM-instellingen
 
-Optimizing these settings depends on the performance test results for different projects.
+Het optimaliseren van deze instellingen is afhankelijk van de resultaten van de prestatietest voor verschillende projecten.
 
-- **ByteCode**—To get maximum speed out of Adobe Commerce on PHP 7, you must activate the `opcache` module and configure it properly.
+- **ByteCode**—Als u de maximale snelheid van Adobe Commerce wilt bereiken op PHP 7, moet u de `opcache` en het behoorlijk vormen.
 
-- **APCU** - We raden u aan de PHP APCu-extensie in te schakelen en Composer te configureren voor optimale prestaties. Deze uitbreiding plaatst dossierplaatsen voor geopende dossiers in het voorgeheugen, die prestaties voor de servervraag van de Handel van de Adobe, met inbegrip van pagina&#39;s, Ajax vraag, en eindpunten verhoogt.
+- **APCU**—We raden u aan de PHP APCu-extensie in te schakelen en Composer te configureren voor optimale prestaties. Deze extensie plaatst bestandslocaties voor geopende bestanden in cache, waardoor de prestaties van Adobe Commerce-serveraanroepen, zoals pagina&#39;s, Ajax-aanroepen en eindpunten, worden verhoogd.
 
-- **Realpath_cacheconfiguration**—Optimaliseren  `realpath_cache` maakt het mogelijk dat PHP-processen paden naar bestanden in cache plaatsen in plaats van ze elke keer weer op te zoeken wanneer een pagina wordt geladen.
+- **Realpath_cacheconfiguration**—Optimaliseren `realpath_cache` PHP kan paden naar bestanden in cache plaatsen in plaats van ze elke keer dat een pagina wordt geladen, op te zoeken.
 
-### Web server
+### Webserver
 
-Slechts is een lichte herconfiguratie nodig om nginx als Webserver te gebruiken. De nginx-webserver biedt betere prestaties en is eenvoudig te configureren met behulp van het voorbeeldconfiguratiebestand van de Adobe Commerce ([`nginx.conf.sample`](https://github.com/magento/magento2/blob/2.4/nginx.conf.sample)).
+Slechts is een lichte herconfiguratie nodig om nginx als Webserver te gebruiken. De nginx-webserver biedt betere prestaties en is eenvoudig te configureren met het voorbeeldconfiguratiebestand van Adobe Commerce ([`nginx.conf.sample`](https://github.com/magento/magento2/blob/2.4/nginx.conf.sample)).
 
 - PHP-FPM met TCP correct instellen
 
@@ -69,11 +69,11 @@ Slechts is een lichte herconfiguratie nodig om nginx als Webserver te gebruiken.
 
 ### Database
 
-This document does not provide in-depth MySQL tuning instructions because each store and environment is different, but we can make some general recommendations.
+Dit document bevat geen uitgebreide MySQL-afstemmingsinstructies omdat elke winkel en omgeving anders zijn, maar we kunnen wel enkele algemene aanbevelingen doen.
 
-The Adobe Commerce database (as well as any other database) is sensitive to the amount of memory available for storing data and indexes. Om effectief hefboomwerking MySQL gegevensindexatie, zou de hoeveelheid beschikbaar geheugen, minstens, dicht aan de helft van de grootte van de gegevens moeten zijn die in het gegevensbestand worden opgeslagen.
+De Adobe Commerce-database (en elke andere database) is gevoelig voor de hoeveelheid geheugen die beschikbaar is voor het opslaan van gegevens en indexen. Om effectief hefboomwerking MySQL gegevensindexatie, zou de hoeveelheid beschikbaar geheugen, minstens, dicht aan de helft van de grootte van de gegevens moeten zijn die in het gegevensbestand worden opgeslagen.
 
-Optimaliseer `innodb_buffer_pool_instances` plaatsen om kwesties met veelvoudige draden te vermijden die tot de zelfde instantie proberen toegang te hebben. De waarde van de parameter `max_connections` zou met het totale aantal PHP draden moeten correleren die in de toepassingsserver worden gevormd. Gebruik de volgende formule om de beste waarde voor `innodb-thread-concurrency` te berekenen:
+Optimaliseren `innodb_buffer_pool_instances` het plaatsen om kwesties met veelvoudige draden te vermijden die tot de zelfde instantie proberen toegang te hebben. De waarde van de `max_connections` Deze parameter moet correleren met het totale aantal PHP threads dat is geconfigureerd in de toepassingsserver. Gebruik de volgende formule om de beste waarde te berekenen voor `innodb-thread-concurrency`:
 
 ```
 innodb-thread-concurrency = 2 * (NumCPUs+NumDisks)
@@ -81,58 +81,58 @@ innodb-thread-concurrency = 2 * (NumCPUs+NumDisks)
 
 ### Sessie in cache plaatsen
 
-Session caching is a good candidate to configure for a separate instance of Redis. Memory configuration for this cache type should consider the site’s cart abandonment strategy and how long a session should expect to remain in the cache.
+Het in cache plaatsen van sessies is een goede kandidaat om te configureren voor een afzonderlijk geval van Redis. Bij de geheugenconfiguratie voor dit cachetype moet rekening worden gehouden met de strategie voor het verlaten van het winkelwagentje van de site en met de tijd die een sessie naar verwachting in de cache zal blijven.
 
-Redis moet voldoende geheugen hebben om alle andere cache in het geheugen te bewaren voor optimale prestaties. Block cache will be the key factor in determining the amount of memory to configure. Het cachegeheugen van een blok wordt groter ten opzichte van het aantal pagina&#39;s op een site (aantal SKU-x-winkelweergaven).
+Redis moet voldoende geheugen hebben om alle andere cache in het geheugen te bewaren voor optimale prestaties. Het geheime voorgeheugen van het blok zal de belangrijkste factor in het bepalen van de hoeveelheid geheugen zijn te vormen. Het cachegeheugen van een blok wordt groter ten opzichte van het aantal pagina&#39;s op een site (aantal SKU-x-winkelweergaven).
 
-### Page caching
+### Pagina in cache plaatsen
 
-We highly recommend using Varnish for full page cache on your Adobe Commerce store. The `PageCache` module is still present in the codebase, but it should be used for development purposes only.
+We raden u ten zeerste aan Varnish te gebruiken voor de volledige paginacache in uw Adobe Commerce-winkel. De `PageCache` de module is nog steeds aanwezig in de codebase, maar mag alleen voor ontwikkelingsdoeleinden worden gebruikt.
 
-Varnish installeren op een aparte server vóór de weblaag. It should accept all incoming requests and provide cached page copies. Om Varnish toe te staan om effectief met beveiligde pagina&#39;s te werken, kan een SSL beëindigingsvolmacht vóór Varnish worden geplaatst. Nginx can be used for this purpose.
+Varnish installeren op een aparte server vóór de weblaag. Het zou alle inkomende verzoeken moeten goedkeuren en in het voorgeheugen ondergebrachte paginaaKopieën verstrekken. Om Varnish toe te staan om effectief met beveiligde pagina&#39;s te werken, kan een SSL beëindigingsvolmacht vóór Varnish worden geplaatst. Nginx kan voor dit doel worden gebruikt.
 
 Hoewel validatie van het volledige paginacachegeheugen van Varnish effectief is, raden we u aan voldoende geheugen toe te wijzen aan Varnish om uw populairste pagina&#39;s in het geheugen te houden.
 
 ### Berichtenrijen
 
-The Message Queue Framework (MQF) is a system that allows a module to publish messages to queues. It also defines the consumers that receive the messages asynchronously. Adobe Commerce supports RabbitMQ as the messaging broker, which provides a scalable platform for sending and receiving messages.
+Het Kader van de Rij van het Bericht (MQF) is een systeem dat een module toestaat om berichten aan rijen te publiceren. Het bepaalt ook de consumenten die de berichten asynchroon ontvangen. Adobe Commerce steunt RabbitMQ als overseinenmakelaar, die een scalable platform voor het verzenden van en het ontvangen van berichten verstrekt.
 
-### Performance testing and monitoring
+### Prestatietests en -bewaking
 
 Het testen van prestaties vóór elke productielevering wordt altijd geadviseerd om een schatting van het vermogen van uw e-commerceplatform te krijgen. Houd toezicht na het opstarten en heb een schaalbaarheid en back-upplan voor het afhandelen van piektijden.
 
 >[!NOTE]
 >
-> Adobe Commerce on cloud infrastrucrure already applies all of the above infrastructure and architecture optimizations, except for the DNS lookup because it&#39;s out of scope.
+> Adobe Commerce op cloud-infrastructuur past al alle bovenstaande infrastructuren en architectuuroptimalisaties toe, behalve voor de DNS-zoekopdracht omdat deze buiten het bereik valt.
 
-### Search
+### Zoeken
 
-Elasticsearch is vereist vanaf versie 2.4 van de Handel van de Adobe, maar het is ook een beste praktijk om het voor versies vóór 2.4 toe te laten.
+Elasticsearch is vereist vanaf Adobe Commerce versie 2.4, maar het is ook aan te raden dit in te schakelen voor versies ouder dan 2.4.
 
-## Operating models
+## Operationele modellen
 
-Apart from the previoiusly mentioend common infrastructure optimization recommendations, there are also approaches to enhance the performance for specific business modes and scales. Dit document bevat geen gedetailleerde tuninginstructies voor alle scenario&#39;s, omdat elk scenario anders is, maar we kunnen wel een aantal opties op hoog niveau voor uw referentie bieden.
+Afgezien van de eerder genoemde gemeenschappelijke aanbevelingen voor de optimalisering van de infrastructuur, zijn er ook manieren om de prestaties voor specifieke bedrijfsmodi en schalen te verbeteren. Dit document bevat geen gedetailleerde tuninginstructies voor alle scenario&#39;s, omdat elk scenario anders is, maar we kunnen wel een aantal opties op hoog niveau voor uw referentie bieden.
 
-### Headless architecture
+### Hoofdloze architectuur
 
-Er is een apart gedeelte gewijd aan de details van [headless](../../architecture/headless/adobe-commerce.md) en verschillende opties. Samengevat wordt de storefront-laag gescheiden van het platform zelf. It is still the same backend, but Adobe Commerce no longer processes requests directly and instead only supports custom storefronts through the GraphQL API.
+Er is een apart gedeelte gewijd aan het gedetailleerd weergeven van [koploos](../../architecture/headless/adobe-commerce.md) is en verschillende opties. Samengevat wordt de storefront-laag gescheiden van het platform zelf. Het is nog steeds dezelfde achtergrond, maar Adobe Commerce verwerkt aanvragen niet langer rechtstreeks en ondersteunt in plaats daarvan alleen aangepaste winkelvoorronten via de GraphQL-API.
 
 ### Adobe Commerce bijwerken
 
-De Handel van de Adobe heeft altijd betere prestaties wanneer het runnen van de recentste versie. Zelfs als het niet mogelijk is om Adobe Commerce bijgewerkt te houden nadat elke nieuwe versie is uitgebracht, wordt het nog steeds aanbevolen om een upgrade uit te voeren wanneer Adobe Commerce belangrijke optimalisaties voor de prestaties introduceert.
+Adobe Commerce presteert altijd beter wanneer de nieuwste versie wordt uitgevoerd. Zelfs als het niet mogelijk is om Adobe Commerce bijgewerkt te houden nadat elke nieuwe versie is uitgebracht, wordt het nog steeds aanbevolen [upgrade](../../../assets/upgrade-guide/adobe-commerce-2-4-upgrade-guide.pdf) als Adobe Commerce belangrijke prestatieoptimalisaties introduceert.
 
-In 2020 bijvoorbeeld publiceerde Adobe een optimalisatie naar de Redis-laag, waardoor veel inefficiëntie, verbindingsproblemen en onnodige gegevensoverdracht tussen Redis en Adobe Commerce werden gecorrigeerd. Overall performance between 2.3 and 2.4 is night and day and we saw significant improvements in cart, checkout, concurrent users, just because of the Redis optimization.
+In 2020 heeft Adobe bijvoorbeeld een optimalisatie uitgevoerd naar de Redis-laag, waardoor een groot aantal inefficiënties, verbindingsproblemen en onnodige gegevensoverdracht tussen Redis en Adobe Commerce zijn verholpen. De algehele prestaties tussen 2,3 en 2,4 zijn &#39;s nachts en &#39;s nachts en we zagen aanzienlijke verbeteringen in het winkelwagentje, de kassa en de gebruikers die tegelijk met elkaar werken, alleen vanwege de Redis-optimalisatie.
 
 ### Gegevensmodel optimaliseren
 
-A lot of problems originate from data, including bad data models, data that is not structured properly, and data that is missing an index.
+Veel problemen komen voort uit gegevens, waaronder slechte gegevensmodellen, gegevens die niet goed zijn gestructureerd en gegevens die een index missen.
 
-Het ziet er goed uit als je een paar verbindingen test, maar gezien in productie wanneer het echte verkeer raakt en dit is waar de traagheid binnenkomt. It’s very important that systems integrators know how to design a data model (especially for product attributes), avoid adding unnecessary attributes, and keep mandatory attributes that affect business logic (such as pricing, stock availability, and search).
+Het ziet er goed uit als je een paar verbindingen test, maar gezien in productie wanneer het echte verkeer raakt en dit is waar de traagheid binnenkomt. Het is zeer belangrijk dat systeemintegrators weten hoe ze een gegevensmodel kunnen ontwerpen (met name voor productkenmerken), voorkomen dat ze onnodige kenmerken toevoegen en verplichte kenmerken behouden die van invloed zijn op de bedrijfslogica (zoals prijzen, beschikbaarheid van voorraden en zoeken).
 
-For those attributes that do not affect business logic but still need to be present on the storefront, combine them into a few attributes (for example, JSON format).
+Voor die kenmerken die geen invloed hebben op de bedrijfslogica, maar die nog wel op de storefront aanwezig moeten zijn, combineert u ze in een paar kenmerken (bijvoorbeeld JSON-indeling).
 
-Om platformprestaties te optimaliseren, als de bedrijfslogica niet op de opslag van gegevens of attributen wordt vereist die uit PIM of ERP worden genomen, is er geen behoefte om die eigenschap in de Handel van Adobe toe te voegen.
+Om platformprestaties te optimaliseren, als bedrijfslogica niet op het storefront van gegevens of attributen wordt vereist die van PIM of ERP worden genomen, is er geen behoefte om die eigenschap in Adobe Commerce toe te voegen.
 
-### Design for scalability
+### Ontwerpen voor schaalbaarheid
 
-Dit is belangrijk voor bedrijven die campagnes voeren en vaak piektijden tegemoet zien. For architecture and application design to be easy to scale, this can increase resources during peak times and reduce them after it.
+Dit is belangrijk voor bedrijven die campagnes voeren en vaak piektijden tegemoet zien. Architectuur en toepassingsontwerp kunnen eenvoudig geschaald worden uitgebreid, waardoor de bronnen tijdens piektijden toenemen en daarna afnemen.
