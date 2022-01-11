@@ -2,9 +2,9 @@
 title: Prestaties optimaliseren, Recommendations
 description: Optimaliseer de prestaties van uw Adobe Commerce-implementatie met deze aanbevelingen.
 exl-id: c5d62e23-be43-4eea-afdb-bb1b156848f9
-source-git-commit: a7ccb83cbcfc2f12882fa8d8a879118db2b20ede
+source-git-commit: bbc412f1ceafaa557d223aabfd4b2a381d6ab04a
 workflow-type: tm+mt
-source-wordcount: '0'
+source-wordcount: '1289'
 ht-degree: 0%
 
 ---
@@ -119,7 +119,7 @@ Er is een apart gedeelte gewijd aan het gedetailleerd weergeven van [koploos](..
 
 ### Adobe Commerce bijwerken
 
-Adobe Commerce presteert altijd beter wanneer de nieuwste versie wordt uitgevoerd. Zelfs als het niet mogelijk is om Adobe Commerce bijgewerkt te houden nadat elke nieuwe versie is uitgebracht, wordt het nog steeds aanbevolen [upgrade](../../../assets/upgrade-guide/adobe-commerce-2-4-upgrade-guide.pdf) als Adobe Commerce belangrijke prestatieoptimalisaties introduceert.
+Adobe Commerce presteert altijd beter wanneer de nieuwste versie wordt uitgevoerd. Zelfs als het niet mogelijk is om Adobe Commerce bijgewerkt te houden nadat elke nieuwe versie is uitgebracht, wordt het nog steeds aanbevolen [upgrade](../../../upgrade/overview.md) als Adobe Commerce belangrijke prestatieoptimalisaties introduceert.
 
 In 2020 heeft Adobe bijvoorbeeld een optimalisatie uitgevoerd naar de Redis-laag, waardoor een groot aantal inefficiënties, verbindingsproblemen en onnodige gegevensoverdracht tussen Redis en Adobe Commerce zijn verholpen. De algehele prestaties tussen 2,3 en 2,4 zijn &#39;s nachts en &#39;s nachts en we zagen aanzienlijke verbeteringen in het winkelwagentje, de kassa en de gebruikers die tegelijk met elkaar werken, alleen vanwege de Redis-optimalisatie.
 
