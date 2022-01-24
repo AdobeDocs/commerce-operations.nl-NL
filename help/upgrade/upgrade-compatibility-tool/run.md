@@ -1,19 +1,19 @@
 ---
-title: Voer het gereedschap Compatibiliteit bijwerken uit
-description: Voer de volgende stappen uit om het hulpprogramma Compatibiliteit upgraden uit te voeren voor uw Adobe Commerce-project.
-source-git-commit: bbc412f1ceafaa557d223aabfd4b2a381d6ab04a
+title: Voer de [!DNL Upgrade Compatibility Tool]
+description: Voer de volgende stappen uit [!DNL Upgrade Compatibility Tool] op uw Adobe Commerce-project.
+source-git-commit: 3d9a721e33621b78f03f16b932a1ba2904ae4010
 workflow-type: tm+mt
-source-wordcount: '1616'
+source-wordcount: '1559'
 ht-degree: 0%
 
 ---
 
 
-# Voer het gereedschap Compatibiliteit bijwerken uit
+# Voer de [!DNL Upgrade Compatibility Tool]
 
-Het hulpmiddel van de Verenigbaarheid van de Verbetering is een bevel-lijn hulpmiddel dat een Adobe Commerce aangepaste instantie tegen een specifieke versie controleert door alle modules te analyseren die in het worden geïnstalleerd. Er wordt een lijst geretourneerd met kritieke problemen, fouten en waarschuwingen die moeten worden opgelost voordat u de upgrade naar de nieuwste versie van Adobe Commerce uitvoert.
+De [!DNL Upgrade Compatibility Tool] is een opdrachtregelprogramma dat een aangepaste Adobe Commerce-instantie controleert op een specifieke versie door alle daarin geïnstalleerde modules te analyseren. Er wordt een lijst geretourneerd met kritieke problemen, fouten en waarschuwingen die moeten worden opgelost voordat u de upgrade naar de nieuwste versie van Adobe Commerce uitvoert.
 
-Met het gereedschap Compatibiliteit upgraden kunt u mogelijke problemen vaststellen die in uw code moeten worden opgelost voordat u kunt upgraden naar een nieuwere versie van Adobe Commerce.
+De [!DNL Upgrade Compatibility Tool] identificeert potentiële problemen die in uw code moeten worden opgelost alvorens te proberen om aan een nieuwere versie van Adobe Commerce te bevorderen.
 
 ## Gebruik de `upgrade:check` command
 
@@ -27,7 +27,7 @@ bin/uct upgrade:check <dir>
 >
 >De `<dir>` waarde is de map waarin uw Adobe Commerce-instantie zich bevindt.
 
-De `upgrade:check` voert het bevel uit het Hulpmiddel van de Verenigbaarheid van de Verbetering en controleert een aangepaste instantie van Adobe Commerce tegen een specifieke versie door alle modules te analyseren die in het worden geïnstalleerd. Er wordt een lijst geretourneerd met kritieke problemen, fouten en waarschuwingen die moeten worden opgelost voordat u de upgrade naar de nieuwste versie van uw Adobe Commerce uitvoert.
+De `upgrade:check` bevel stelt het bevel in werking [!DNL Upgrade Compatibility Tool] en controleert een aangepaste Adobe Commerce-instantie op een specifieke versie door alle daarin geïnstalleerde modules te analyseren. Er wordt een lijst geretourneerd met kritieke problemen, fouten en waarschuwingen die moeten worden opgelost voordat u de upgrade naar de nieuwste versie van uw Adobe Commerce uitvoert.
 
 >[!WARNING]
 >
@@ -41,7 +41,7 @@ Terwijl u `graphql:compare` bevel om twee schema&#39;s te vergelijken GraphQL om
 
 ### Recommendations om de `upgrade:check` command
 
-- Voor het upgradecompatibiliteitsprogramma is minstens 2 GB RAM vereist. Deze instelling wordt aanbevolen om problemen te voorkomen vanwege een lage geheugenbeperking. Met het gereedschap Compatibiliteit bijwerken wordt een vraag weergegeven als u het gereedschap `upgrade:check` gebruiken met een lage `memory_limit` instellen.
+- De [!DNL Upgrade Compatibility Tool] vereist minstens 2 GB RAM om te kunnen worden uitgevoerd. Deze instelling wordt aanbevolen om problemen te voorkomen vanwege een lage geheugenbeperking. De [!DNL Upgrade Compatibility Tool] geeft een vraag weer als u de `upgrade:check` gebruiken met een lage `memory_limit` instellen.
 - Geef de `-m` om het gereedschap uit te voeren op een specifieke module:
 
    ```bash
@@ -55,7 +55,7 @@ Waar de argumenten als volgt zijn:
 
 ### Gebruik de `--help` option
 
-Voer de volgende handelingen uit om de algemene opties en Help van het gereedschap Compatibiliteit bijwerken weer te geven:
+Als u de [!DNL Upgrade Compatibility Tool] algemene opties en Help gebruiken, uitvoeren:
 
 ```bash
 bin/uct --help
@@ -75,7 +75,7 @@ Beschikbaar `--help` opties voor de `upgrade:check` opdracht:
 - `--json-output-path[=JSON-OUTPUT-PATH]`: Pad van het bestand waarin de uitvoer wordt geëxporteerd in de indeling JSON.
 - `--html-output-path[=HTML-OUTPUT-PATH]`: Pad van het bestand waarin de uitvoer wordt geëxporteerd in HTML-indeling.
 - `--min-issue-level`: Minimaal emissieniveau dat in het rapport moet worden weergegeven. Standaard is [WAARSCHUWING].
-- `--ignore-current-version-compatibility-issues`: Gebruik deze optie als u geen bekende kritieke problemen, fouten en waarschuwingen wilt opnemen in het rapport van het Hulpprogramma voor upgradecompatibiliteit.
+- `--ignore-current-version-compatibility-issues`: Gebruik deze optie als u geen bekende kritieke problemen, fouten en waarschuwingen in uw [!DNL Upgrade Compatibility Tool] verslag.
 - `--context=CONTEXT`: Uitvoeringcontext. Deze optie is bedoeld voor integratiedoeleinden en heeft geen invloed op het resultaat van de uitvoering.
 - `-h, --help`: Help weergeven voor die specifieke opdracht. Als er geen opdracht is opgegeven, `list` is het standaardresultaat.
 - `-q, --quiet`: Geen berichten uitvoeren tijdens het uitvoeren van de opdracht.
@@ -86,7 +86,7 @@ Beschikbaar `--help` opties voor de `upgrade:check` opdracht:
 
 ### Uitvoer
 
-Als resultaat van de uitgevoerde analyse, voert het Hulpmiddel van de Verenigbaarheid van de Verbetering een rapport uit dat een lijst van kwesties voor elk dossier bevat die zijn strengheid, foutencode en foutenbeschrijving specificeren.
+Als gevolg van de uitgevoerde analyse [!DNL Upgrade Compatibility Tool] Hiermee wordt een rapport geëxporteerd dat een lijst met problemen voor elk bestand bevat waarin de ernst, foutcode en beschrijving van de fout worden vermeld.
 
 Zie het onderstaande voorbeeld:
 
@@ -128,7 +128,7 @@ Zie het onderstaande voorbeeld:
 
 >[!NOTE]
 >
->Door gebrek, voert het Hulpmiddel van de Verenigbaarheid van de Verbetering het rapport in twee verschillende formaten uit: `json` en `html`.
+>Standaard worden de [!DNL Upgrade Compatibility Tool] het rapport wordt in twee verschillende formaten geëxporteerd: `json` en `html`.
 
 #### JSON
 
@@ -190,7 +190,7 @@ Waar de argumenten als volgt zijn:
 
 ### Gebruik de `--ignore-current-version-compatibility-issues` option
 
-Met het gereedschap Compatibiliteit bijwerken kunt u het `upgrade:check` gebruiken met een `--ignore-current-version-compatibility-issues` zodat alleen nieuwe of onbekende kritieke problemen, fouten en waarschuwingen worden weergegeven. Gebruik deze optie als u geen bekende kritieke problemen, fouten en waarschuwingen wilt opnemen in het rapport van het Hulpprogramma voor upgradecompatibiliteit.
+De [!DNL Upgrade Compatibility Tool] staat u toe om `upgrade:check` gebruiken met een `--ignore-current-version-compatibility-issues` zodat alleen nieuwe of onbekende kritieke problemen, fouten en waarschuwingen worden weergegeven. Gebruik deze optie als u geen bekende kritieke problemen, fouten en waarschuwingen in uw [!DNL Upgrade Compatibility Tool] verslag.
 
 ```bash
 bin/uct upgrade:check --ignore-current-version-compatibility-issues <dir>
@@ -206,13 +206,13 @@ A _vanille_ De installatie is een schone installatie van een gespecificeerde ver
 
 De `bin/uct core:code:changes` controleert of er een vanilla-instantie in uw systeem is. Als dit de eerste keer gebruikend een vanilla installatie is, een interactieve bevel-lijn vraag u ertoe aanzet om het vanilla project van te downloaden [Adobe Commerce-opslagplaats](https://repo.magento.com/).
 
-U kunt de opdracht Upgrade Compatibility Tool uitvoeren met de opdracht `--vanilla-dir` om de installatiemap van Adobe Commerce vanilla op te geven.
+U kunt een [!DNL Upgrade Compatibility Tool] gebruiken met de `--vanilla-dir` om de installatiemap van Adobe Commerce vanilla op te geven.
 
 Zie de [Instantie vanilla implementeren](https://devdocs.magento.com/contributor-guide/contributing.html#vanilla-pr) voor meer informatie.
 
 ## Gebruik de `list` command
 
-Voer de volgende handelingen uit om een lijst met de beschikbare opdrachten voor het gereedschap Compatibiliteit bijwerken te retourneren:
+Om een lijst van terug te keren [!DNL Upgrade Compatibility Tool] beschikbare opdrachten, uitvoeren:
 
 ```bash
 bin/uct list
@@ -279,7 +279,7 @@ Er gelden enkele beperkingen voor het uitvoeren van de vorige opdracht:
 
 ## Compatibiliteitsverificatie van GraphQL-schema
 
-Het hulpmiddel van de Verenigbaarheid van de Verbetering verstrekt ook de optie om twee eindpunten in te voeren GraphQL en hun schema&#39;s te vergelijken die breken en gevaarlijke veranderingen tussen hen zoeken:
+De [!DNL Upgrade Compatibility Tool] biedt ook de optie om twee eindpunten GraphQL in te voeren en hun schema&#39;s te vergelijken die breken en gevaarlijke veranderingen tussen hen zoeken:
 
 ```bash
 bin/uct graphql:compare <schema1> <schema2>
@@ -312,7 +312,7 @@ Beschikbaar `--help` opties voor de `graphql:compare` opdracht:
 
 Zie [Informatie over ontwikkelaars](../upgrade-compatibility-tool/developer.md) voor meer informatie .
 
-U kunt het Hulpmiddel van de Verenigbaarheid van de Verbetering met een looppasconfiguratie via de stop uitvoeren PhpStorm. Zie de [Configuratie van compatibiliteitsprogramma bijwerken](https://devdocs.magento.com/guides/v2.3/ext-best-practices/phpstorm/uct-run-configuration.html) voor meer informatie.
+U kunt de [!DNL Upgrade Compatibility Tool] met een uitvoeringsconfiguratie via de insteekmodule PhpStorm. Zie de [[!DNL Upgrade Compatibility Tool] Configuratie uitvoeren](https://devdocs.magento.com/guides/v2.3/ext-best-practices/phpstorm/uct-run-configuration.html) voor meer informatie.
 
 ## Problemen oplossen
 

@@ -1,38 +1,38 @@
 ---
-title: Het gereedschap Compatibiliteit bijwerken installeren
-description: Voer de volgende stappen uit om het hulpprogramma Compatibiliteit bijwerken voor uw Adobe Commerce-project te installeren.
-source-git-commit: bbc412f1ceafaa557d223aabfd4b2a381d6ab04a
+title: Installeer de [!DNL Upgrade Compatibility Tool]
+description: Voer de volgende stappen uit om de [!DNL Upgrade Compatibility Tool] voor uw Adobe Commerce-project.
+source-git-commit: 3d9a721e33621b78f03f16b932a1ba2904ae4010
 workflow-type: tm+mt
-source-wordcount: '817'
+source-wordcount: '739'
 ht-degree: 0%
 
 ---
 
 
-# Het gereedschap Compatibiliteit bijwerken installeren
+# Installeer de [!DNL Upgrade Compatibility Tool]
 
-Het hulpmiddel van de Verenigbaarheid van de Verbetering is een bevel-lijn hulpmiddel dat een Adobe Commerce aangepaste instantie tegen een specifieke versie controleert door alle modules te analyseren die in het worden geïnstalleerd. Er wordt een lijst met fouten en waarschuwingen geretourneerd die moeten worden opgelost voordat u de upgrade naar de nieuwste versie van Adobe Commerce uitvoert.
+De [!DNL Upgrade Compatibility Tool] is een opdrachtregelprogramma dat een aangepaste Adobe Commerce-instantie controleert op een specifieke versie door alle daarin geïnstalleerde modules te analyseren. Er wordt een lijst met fouten en waarschuwingen geretourneerd die moeten worden opgelost voordat u de upgrade naar de nieuwste versie van Adobe Commerce uitvoert.
 
 ## Workflow
 
-In het volgende diagram wordt de verwachte workflow getoond wanneer het gereedschap Compatibiliteit upgraden wordt uitgevoerd:
+Het volgende diagram toont het verwachte werkschema wanneer het runnen van [!DNL Upgrade Compatibility Tool]:
 
-![Diagram van compatibiliteitsprogramma bijwerken](../../assets/upgrade-guide/mvp-diagram-v3.png)
+![[!DNL Upgrade Compatibility Tool] Diagram](../../assets/upgrade-guide/mvp-diagram-v3.png)
 
-## Voor wie is het hulpprogramma Compatibiliteit bijwerken?
+## Wie is de [!DNL Upgrade Compatibility Tool] for?
 
 In het volgende gebruiksgeval wordt het gebruikelijke proces beschreven dat een Adobe Commerce-partner moet doorvoeren om een clientexemplaar te upgraden:
 
-1. De software engineer van een partner downloadt het upgradecompatibiliteitspakket van het [Adobe Commerce-opslagplaats](https://repo.magento.com/) en voert deze uit tijdens de bètafase van de nieuwste Adobe Commerce-versie. Zie de [Het gereedschap Compatibiliteit bijwerken downloaden](../upgrade-compatibility-tool/install.md#download-the-upgrade-compatibility-tool) voor meer informatie.
+1. De software engineer van een partner downloadt de [!DNL Upgrade Compatibility Tool] pakket van de [Adobe Commerce-opslagplaats](https://repo.magento.com/) en voert deze uit tijdens de bètafase van de nieuwste Adobe Commerce-versie. Zie de [Download de [!DNL Upgrade Compatibility Tool]](../upgrade-compatibility-tool/install.md#download-the-upgrade-compatibility-tool) voor meer informatie.
 1. De software engineer genereert een vanilla instantie voor de specifieke versie van Adobe Commerce die momenteel is geïnstalleerd. Zie de [Handleiding voor contribuanten](https://devdocs.magento.com/contributor-guide/contributing.html#vanilla-pr) voor meer informatie over het gebruik van de `instance` gebruiken om een vanilleinstallatie te genereren.
 1. De software engineer ziet dat er verschillende aangepaste gebieden in de inventarisatie- en catalogusmodules verbroken zijn en ze krijgen ook een complexiteitsscore van X. Zie de [Ontwikkelaar](../upgrade-compatibility-tool/developer.md) voor meer informatie over de complexiteitsscore.
 1. Met deze informatie, kan de Ingenieur van de Software de ingewikkeldheid van de verbetering begrijpen en kan deze informatie terug naar de Manager van de Rekening van de partner teruggeven.
 1. De accountmanager maakt een tijdlijn en kosten voor de Adobe Commerce-upgrade, zodat de beheerder deze kan goedkeuren.
 1. Met de goedkeuring van hun manager, werkt de Ingenieur van de Software aan de vereiste codewijzigingen om de gebroken modules te bevestigen.
-1. De software engineer voert het Upgrade Compatibility Tool nog één keer uit met een Adobe Commerce pre-release om ervoor te zorgen dat er geen nieuwe problemen zijn en dat de wijzigingen in de code de problemen verholpen die tijdens de bètafase werden gevonden.
+1. De software engineer voert de [!DNL Upgrade Compatibility Tool] nog een keer met een Adobe Commerce-pre-release om ervoor te zorgen dat er geen nieuwe problemen zijn en dat de wijzigingen in de code de problemen verholpen die tijdens de bètafase werden gevonden.
 1. Alles wordt uitgecheckt en de software engineer stuurt de code naar een testomgeving waar regressietests bevestigen dat alle tests groen zijn, waardoor ze de nieuwste Adobe Commerce-versie kunnen vrijgeven op dezelfde dag dat de Adobe Commerce pre-release wordt uitgebracht.
 
-   ![Upgradecompatibiliteit publiek](../../assets/upgrade-guide/audience-uct-v3.png)
+   ![[!DNL Upgrade Compatibility Tool] publiek](../../assets/upgrade-guide/audience-uct-v3.png)
 
 >[!NOTE]
 >
@@ -44,13 +44,13 @@ Zie [voorwaarden](../upgrade-compatibility-tool/prerequisites.md) voor meer info
 
 >[!NOTE]
 >
->U kunt het gereedschap Compatibiliteit bijwerken op elk besturingssysteem uitvoeren. U hoeft het hulpprogramma voor upgradecompatibiliteit niet uit te voeren op de locatie van uw Adobe Commerce-exemplaar. Het is nodig dat het gereedschap Compatibiliteit upgraden toegang heeft tot de broncode van het Adobe Commerce-exemplaar. U kunt het hulpprogramma bijvoorbeeld op de ene server installeren en naar de Adobe Commerce-installatie verwijzen op een andere server.
+>U kunt de [!DNL Upgrade Compatibility Tool] in elk besturingssysteem. Er is geen vereiste om de [!DNL Upgrade Compatibility Tool] waar uw Adobe Commerce-exemplaar zich bevindt. Het is noodzakelijk [!DNL Upgrade Compatibility Tool] om toegang te hebben tot de broncode van de instantie Adobe Commerce. U kunt het hulpprogramma bijvoorbeeld op de ene server installeren en naar de Adobe Commerce-installatie verwijzen op een andere server.
 
-Als u het Hulpmiddel van de Verenigbaarheid van de Verbetering tegen een instantie van Adobe Commerce met grote modules en dossiers in werking stelt, zou het hulpmiddel een hoge hoeveelheid RAM, minstens 2 GB RAM kunnen vereisen.
+Als u de [!DNL Upgrade Compatibility Tool] bij een Adobe Commerce-instantie met grote modules en bestanden kan het zijn dat voor het hulpprogramma een hoge hoeveelheid RAM nodig is, ten minste 2 GB RAM.
 
 ### Aanbevolen acties
 
-De beste praktijken van Adobe Commerce adviseren om het hebben van twee modules met de zelfde naam te vermijden. Als dit gebeurt, toont het Hulpmiddel van de Verenigbaarheid van de Verbetering een fout van de segmenteringsfout.
+De beste praktijken van Adobe Commerce adviseren om het hebben van twee modules met de zelfde naam te vermijden. Als dit gebeurt, wordt [!DNL Upgrade Compatibility Tool] geeft een fout met een segmentatiefout weer.
 
 Als u deze fout wilt voorkomen, kunt u het beste de opdracht `bin` opdracht met de toegevoegde optie `-m`:
 
@@ -62,19 +62,19 @@ bin/uct upgrade:check /<dir>/<instance-name> --coming-version=2.4.1 -m /vendor/<
 >
 >De `<dir>` waarde is de map waarin uw Adobe Commerce-instantie zich bevindt.
 
-De `-m` Met het gereedschap Compatibiliteit upgraden kunt u elke specifieke module afzonderlijk analyseren om te voorkomen dat er twee modules met dezelfde naam in uw Adobe Commerce-instantie voorkomen.
+De `-m` de optie [!DNL Upgrade Compatibility Tool] om elke specifieke module afzonderlijk te analyseren om te voorkomen dat er twee modules met dezelfde naam in uw Adobe Commerce-instantie voorkomen.
 
-Met deze opdrachtoptie kan het gereedschap Compatibiliteit upgraden ook een map analyseren die verschillende modules bevat:
+Met deze opdrachtoptie kunt u ook [!DNL Upgrade Compatibility Tool] om een map met meerdere modules te analyseren:
 
 ```bash
 bin/uct upgrade:check /<dir>/<instance-name> --coming-version=2.4.1 -m /vendor/<vendor-name>/
 ```
 
-Deze aanbeveling helpt ook bij geheugenproblemen die kunnen optreden wanneer u het gereedschap Compatibiliteit upgraden uitvoert.
+Deze aanbeveling helpt ook bij geheugenproblemen die kunnen optreden bij het uitvoeren van de [!DNL Upgrade Compatibility Tool].
 
-## Het gereedschap Compatibiliteit bijwerken downloaden
+## Download de [!DNL Upgrade Compatibility Tool]
 
-Voer de volgende opdracht uit om het gereedschap Compatibiliteit bijwerken te downloaden:
+Als u het dialoogvenster [!DNL Upgrade Compatibility Tool], voert u de volgende opdracht uit:
 
 ```bash
 composer create-project magento/upgrade-compatibility-tool uct --repository https://repo.magento.com
@@ -82,7 +82,7 @@ composer create-project magento/upgrade-compatibility-tool uct --repository http
 
 ## Installeren
 
-Als u het gereedschap Compatibiliteit bijwerken wilt installeren, moet u de vereiste voorwaarden installeren:
+Als u het dialoogvenster [!DNL Upgrade Compatibility Tool]dient u de vereiste voorwaarden te installeren:
 
 * Adobe Commerce-toegangstoetsen
 * Composer
@@ -90,7 +90,7 @@ Als u het gereedschap Compatibiliteit bijwerken wilt installeren, moet u de vere
 
 ### Adobe Commerce-toegangstoetsen
 
-U moet [Adobe Commerce-toegangstoetsen](https://devdocs.magento.com/marketplace/sellers/profile-information.html#access-keys) om het gereedschap Compatibiliteit bijwerken te downloaden en gebruiken. Voeg je Adobe Commerce toegangstoetsen toe aan je `auth.json` bestand, dat zich bevindt op `~/.composer` standaard.
+U moet [Adobe Commerce-toegangstoetsen](https://devdocs.magento.com/marketplace/sellers/profile-information.html#access-keys) om de [!DNL Upgrade Compatibility Tool]. Voeg je Adobe Commerce toegangstoetsen toe aan je `auth.json` bestand, dat zich bevindt op `~/.composer` standaard.
 
 >[!WARNING]
 >
@@ -111,11 +111,11 @@ De **openbare sleutel** komt overeen met de _gebruikersnaam_ overwegende dat de 
 
 ### Composer
 
-Kloont de opslagplaats voor upgradecompatibiliteitsprogramma&#39;s en voert deze uit `composer install` in uw terminal om gebiedsdelen te installeren.
+Klonen met [!DNL Upgrade Compatibility Tool] opbergen en uitvoeren `composer install` in uw terminal om gebiedsdelen te installeren.
 
 >[!WARNING]
 >
->Als de **Adobe Commerce-toegangstoetsen** niet correct zijn geconfigureerd, wordt het gereedschap Compatibiliteit bijwerken niet geïnstalleerd en worden fouten gegenereerd wanneer het programma `composer install` gebruiken.
+>Als de **Adobe Commerce-toegangstoetsen** zijn niet correct gevormd, [!DNL Upgrade Compatibility Tool] zal niet installeren en u zult fouten krijgen wanneer het runnen van `composer install` gebruiken.
 
 ### Node.js
 
@@ -125,4 +125,4 @@ Om Node.js te installeren, zie Node.js [documentatie](https://nodejs.dev/learn/h
 
 Adobe raadt u aan contact op te nemen met uw leverancier van extensies om te bepalen of uw extensie volledig compatibel is met Adobe Commerce 2.4.x.
 
-Zie [Het gereedschap uitvoeren](../upgrade-compatibility-tool/run.md) voor informatie over het uitvoeren van het Hulpmiddel van de Verenigbaarheid van de Verbetering.
+Zie [Het gereedschap uitvoeren](../upgrade-compatibility-tool/run.md) voor informatie over de uitvoering van de [!DNL Upgrade Compatibility Tool].

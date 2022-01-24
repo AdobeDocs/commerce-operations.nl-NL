@@ -1,17 +1,17 @@
 ---
-title: Foutberichten van het gereedschap Compatibiliteit bijwerken
-description: Meer informatie over foutberichten die u tegenkomt wanneer u het gereedschap Compatibiliteit upgraden gebruikt voor uw Adobe Commerce-project.
-source-git-commit: bbc412f1ceafaa557d223aabfd4b2a381d6ab04a
+title: '[!DNL Upgrade Compatibility Tool] Foutberichten'
+description: Meer informatie over foutberichten die u tegenkomt bij het gebruik van de [!DNL Upgrade Compatibility Tool] op uw Adobe Commerce-project.
+source-git-commit: 3d9a721e33621b78f03f16b932a1ba2904ae4010
 workflow-type: tm+mt
-source-wordcount: '3759'
+source-wordcount: '3747'
 ht-degree: 0%
 
 ---
 
 
-# Foutberichten voor het gereedschap Compatibiliteit bijwerken
+# [!DNL Upgrade Compatibility Tool] foutberichten
 
-Deze foutmelding bevat informatie over fouten die kunnen optreden bij het uitvoeren van het gereedschap Compatibiliteit bijwerken.
+Deze naslaggids voor foutberichten bevat informatie over fouten die kunnen optreden tijdens het uitvoeren van de opdracht [!DNL Upgrade Compatibility Tool].
 
 Foutberichten worden gecategoriseerd op niveau (kritieke problemen, fouten en waarschuwingen) en type (kerncode, aangepaste code en GraphQL-schema&#39;s). Elk type bevat de volgende informatie:
 

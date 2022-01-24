@@ -1,17 +1,17 @@
 ---
-title: Informatie over ontwikkelaars van hulpprogramma voor upgradecompatibiliteit
-description: Pas het gereedschap Compatibiliteit bijwerken aan met behulp van de API-indexintegratie.
-source-git-commit: bbc412f1ceafaa557d223aabfd4b2a381d6ab04a
+title: '[!DNL Upgrade Compatibility Tool] Informatie over ontwikkelaar'
+description: De [!DNL Upgrade Compatibility Tool] de API-indexintegratie gebruiken.
+source-git-commit: 3d9a721e33621b78f03f16b932a1ba2904ae4010
 workflow-type: tm+mt
-source-wordcount: '450'
+source-wordcount: '432'
 ht-degree: 0%
 
 ---
 
 
-# Informatie voor ontwikkelaars van het gereedschap Compatibiliteit upgraden
+# [!DNL Upgrade Compatibility Tool] ontwikkelaarsinformatie
 
-Dit onderwerp bevat informatie voor ontwikkelaars die nauw met de code van Adobe Commerce samenwerken en gedetailleerde informatie over het Hulpmiddel van de Verenigbaarheid van de Verbetering willen leren. U kunt deze kennis gebruiken om de componenten van het gereedschap aan te passen.
+Dit onderwerp bevat informatie voor ontwikkelaars die nauw met de code van Adobe Commerce samenwerken en gedetailleerde informatie over willen leren [!DNL Upgrade Compatibility Tool]. U kunt deze kennis gebruiken om de componenten van het gereedschap aan te passen.
 
 ## Integratie van Adobe Commerce API-index
 
@@ -29,7 +29,7 @@ Bewerk dit bestand om de reactie aan te passen aan uw installatie. Vervang de wa
 
 `sut\Domain\MRay\MRayInterface : "@sut_mray_mock"`
 
-In het vorige voorbeeld gebruikt het gereedschap Compatibiliteit bijwerken `@sut_mray_mock` als de `MRayInterface` uitvoering. De reacties van de `api()` en `modules()` methoden zijn afkomstig uit de volgende bestanden:
+In het vorige voorbeeld wordt [!DNL Upgrade Compatibility Tool] gebruik `@sut_mray_mock` als de `MRayInterface` uitvoering. De reacties van de `api()` en `modules()` methoden zijn afkomstig uit de volgende bestanden:
 
 - `dev/mray_mock_files/api.json`
 - `dev/mray_mock_files/modules.json`
@@ -117,7 +117,7 @@ Deze score is gebaseerd op de resultaten van de analyse:
 - Aantal geconstateerde problemen
 - Ernst van de geconstateerde problemen
 
-Met het gereedschap Compatibiliteit bijwerken wordt deze score berekend op basis van de onderstaande formule voor complexiteitsscore.
+De [!DNL Upgrade Compatibility Tool] berekent deze score op basis van de onderstaande formule voor de score &#39;complexiteit&#39;.
 
 ### Complexiteit score-formule
 

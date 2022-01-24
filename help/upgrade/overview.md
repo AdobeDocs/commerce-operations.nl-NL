@@ -1,9 +1,9 @@
 ---
 title: Overzicht van het upgradeproces
 description: Leer hoe u met de upgrade van uw Adobe Commerce- en Magento Open Source-project uw winkel veilig en efficiënt kunt laten werken.
-source-git-commit: bbc412f1ceafaa557d223aabfd4b2a381d6ab04a
+source-git-commit: 8f983e6791da852350fa061fd3119abcdaa03cbf
 workflow-type: tm+mt
-source-wordcount: '988'
+source-wordcount: '1054'
 ht-degree: 0%
 
 ---
@@ -59,9 +59,16 @@ De reden voor het uitstellen of uitstellen van platformupgrades is vaak de direc
 
 Het lijkt misschien contraintuïtief, maar het uitvoeren van regelmatige platformupdates vereist minder algemene inspanningen dan het uitvoeren van niet-frequente updates vanwege het bedrag van de geaccumuleerde technische schuld die het gevolg is van vertragingen. We hebben onlangs samengewerkt met een partner die een detailhandelaar heeft die altijd zelden en inconsistent (jaarlijks of langer) upgrades uitvoerde. Door te transformeren hoe zij verbeteringen en na een Adobe-geadviseerde regelmatige verbeteringsweg in de loop van 12 maanden naderen, kon de partner de cliënt vier weken&#39; waarde van cumulatieve ontwikkelingstijd, inspanning, en bijbehorende kosten besparen, die allen aan initiatieven werden opnieuw gericht die bedrijfsgroei drijven.
 
-![](../assets/upgrade-guide/waiting-is-not-a-winning-strategy.jpg)
-
 Wanneer de updates regelmatig worden uitgevoerd, zijn de veranderingen stijgende en de overeenkomstige verbeteringsinspanning wijst op dit. Wanneer platformupdates gedurende een langere periode worden uitgesteld, kunnen ze een veel meer betrokken proces worden. Bovendien worden de extensies die u gebruikt vanuit de [Marketplace](https://marketplace.magento.com/) en eventuele andere integraties van derden kunnen ook worden beïnvloed. Tot slot duurt het langer om een vertraagde upgrade te onderzoeken, te plannen en uit te voeren, wat vermijdbare inspanningen en kosten met zich meebrengt.
+
+Enkele algemene factoren die van invloed zijn op de mate van inspanning om uw project te upgraden, zijn onder andere:
+
+| Technische complexiteit | Planning en strategie |
+|-----------------------------------------------------------|--------------------------------------------------------------|
+| Omvang van aanpassingen | Duidelijkheid van vereisten, het nemen van beslissingen en bereik |
+| Aantal extensies | Uw upgradfrequentie |
+| Aantal integraties met derden (OMS, ERP) | Uw teststrategie |
+| Codering naar beste praktijken |  |
 
 De voortdurende groei in de digitale handelruimte heeft verhoogde druk op ondernemingen toegepast om sneller, vaker, en op onvoorspelbare manieren te evolueren. Als de klant zijn aankoopgedrag niet kon bijhouden en niet kon anticiperen, heeft het speelveld zelfs voor de grootste, meest gevestigde merken gelijk gemaakt. U moet robuuste, gepersonaliseerde ervaringen op alle aanraakpunten kunnen bieden, zonder prestatieverlies en uptime. Je moet sneller kunnen innoveren, zonder beperkingen, om voor de mondiale concurrenten te blijven. Door een upgrade uit te voeren, kunt u uw bedrijf in de toekomst controleren en uzelf instellen op betere service en dynamische klantenbehoeften.
 
@@ -69,11 +76,11 @@ De voortdurende groei in de digitale handelruimte heeft verhoogde druk op ondern
 
 Adobe publiceert een [releaseplanning](https://devdocs.magento.com/release/) om het planningsproces van handelaren te vergemakkelijken en raadt u aan elke patchreleasecyclus te upgraden. Om PCI-compatibel te blijven, moeten handelaren op de nieuwste patch of beveiligingspatch zitten. In de volgende tijdlijn ziet u de belangrijkste release- en EOL-gebeurtenissen in 2022.
 
-![](../assets/upgrade-guide/2022-release-timeline.svg)
+![](../assets/upgrade-guide/2022-release-timeline.jpg)
 
 Belangrijke gebeurtenissen die u kunt opmerken zijn:
 
-- 2.3.x de steun beëindigt na April &quot;22
-- 2.4.0 tot 2.4.3 (gebaseerd op PHP 7.4) bereikt einde kwaliteitsondersteuning in november &#39;22, wanneer PHP 7.4 EOL bereikt
-- Gebaseerd op deze twee gebeurtenissen hierboven, is het belangrijk om aan versie 2.4.4 of hoger tegen november &quot;22 te bevorderen
-- In overeenstemming met de Adobe Commerce [levenscyclusbeleid](https://devdocs.magento.com/release/lifecycle-policy.html), worden versies 2.4.4 en 2.4.5 ondersteund tot en met nov ’24
+- 2.3.x de lijn bereikt Einde van Steun (EOS) in September 2022
+- 2.4.0 tot 2.4.3 (gebaseerd op PHP 7.4) bereikt EOS in november 2022, toen PHP 7.4 End of Life (EOL) bereikt
+- Gebaseerd op deze twee EOS-gebeurtenissen, **het is belangrijk om tegen november 2022 te upgraden naar versie 2.4.4 of hoger**
+- In overeenstemming met de Adobe Commerce [levenscyclusbeleid](https://devdocs.magento.com/release/lifecycle-policy.html), versies 2.4.4 en 2.4.5, krijgen tot november 2024 ondersteuning voor kwaliteit en beveiligingspatches

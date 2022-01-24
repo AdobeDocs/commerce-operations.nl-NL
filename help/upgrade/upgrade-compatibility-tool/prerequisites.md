@@ -1,19 +1,19 @@
 ---
-title: Compatibiliteitsvereisten voor upgrades
-description: 'Controleer of uw systeem voldoet aan de vereisten voor het uitvoeren van het hulpprogramma Compatibiliteit upgraden voor uw Adobe Commerce-project. '
-source-git-commit: bbc412f1ceafaa557d223aabfd4b2a381d6ab04a
+title: '[!DNL Upgrade Compatibility Tool] Vereisten'
+description: 'Controleer of uw systeem voldoet aan de vereisten die nodig zijn om het [!DNL Upgrade Compatibility Tool] voor uw Adobe Commerce-project. '
+source-git-commit: 3d9a721e33621b78f03f16b932a1ba2904ae4010
 workflow-type: tm+mt
-source-wordcount: '161'
+source-wordcount: '137'
 ht-degree: 0%
 
 ---
 
 
-# Voorwaarden voor het gereedschap Compatibiliteit bijwerken
+# [!DNL Upgrade Compatibility Tool] voorwaarden
 
-Als u het gereedschap Compatibiliteit bijwerken uitvoert, kunt u beter zien wat u moet doen **voor** uw Adobe Commerce-versie upgraden.
+De [!DNL Upgrade Compatibility Tool] helpt u te identificeren wat u moet doen **voor** uw Adobe Commerce-versie upgraden.
 
-De minimale vereisten voor het uitvoeren van het upgradecompatibiliteitsprogramma zijn:
+De minimumvereisten voor het uitvoeren van de [!DNL Upgrade Compatibility Tool] zijn:
 
 | **Vereisten** | **Restricties** |
 |----------------|-----------------|
@@ -24,6 +24,6 @@ De minimale vereisten voor het uitvoeren van het upgradecompatibiliteitsprogramm
 | Adobe Commerce Access-toetsen | none |
 | Adobe Commerce (Open Source of Enterprise) | none |
 
-U kunt het gereedschap Compatibiliteit bijwerken op elk besturingssysteem uitvoeren. U hoeft het hulpprogramma voor upgradecompatibiliteit niet uit te voeren op de locatie van uw Adobe Commerce-exemplaar.
+U kunt de [!DNL Upgrade Compatibility Tool] in elk besturingssysteem. Er is geen vereiste om de [!DNL Upgrade Compatibility Tool] waar uw Adobe Commerce-exemplaar zich bevindt.
 
-Het is nodig dat het gereedschap Compatibiliteit upgraden toegang heeft tot de broncode van het Adobe Commerce-exemplaar. U kunt de toepassing bijvoorbeeld op de ene server installeren en deze op de Adobe Commerce-installatie op een andere server plaatsen. Zie de [installeren](../upgrade-compatibility-tool/install.md) voor meer informatie.
+Het is noodzakelijk [!DNL Upgrade Compatibility Tool] om toegang te hebben tot de broncode van de instantie Adobe Commerce. U kunt de toepassing bijvoorbeeld op de ene server installeren en deze op de Adobe Commerce-installatie op een andere server plaatsen. Zie de [installeren](../upgrade-compatibility-tool/install.md) voor meer informatie.

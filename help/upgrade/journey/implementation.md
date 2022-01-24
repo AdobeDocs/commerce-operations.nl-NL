@@ -1,9 +1,9 @@
 ---
 title: Upgrade uitvoeren
 description: Leer over de verschillende fasen van verbeteringsimplementatie voor Adobe Commerce en Magento Open Source projecten.
-source-git-commit: bbc412f1ceafaa557d223aabfd4b2a381d6ab04a
+source-git-commit: 3d9a721e33621b78f03f16b932a1ba2904ae4010
 workflow-type: tm+mt
-source-wordcount: '883'
+source-wordcount: '877'
 ht-degree: 1%
 
 ---
@@ -27,7 +27,7 @@ De volgende punten kunnen u in een grondige analyse willen omvatten:
 
 - **Toepassingsgebied van doelversie**—Documentatie over [Handelsversie DevDocs](https://devdocs.magento.com) en de informatie van de partnerversie webinars verstrekt alle details u over uw doelverbetering moet weten.
 
-- **Resultaten van het gereedschap Compatibiliteit upgraden**—Dit hulpmiddel maakt om het even welke verbetering sneller en gemakkelijker door uw huidige code met de code van de doelversie te vergelijken en een rapport van alle kwesties te produceren die moeten worden behandeld. Zie de [Compatibiliteit upgraden](../upgrade-compatibility-tool/overview.md). Belangrijkste details uit het verslag zijn:
+- **[!DNL Upgrade Compatibility Tool]resultaten**—Dit hulpmiddel maakt om het even welke verbetering sneller en gemakkelijker door uw huidige code met de code van de doelversie te vergelijken en een rapport van alle kwesties te produceren die moeten worden behandeld. Zie de [[!DNL Upgrade Compatibility Tool]](../upgrade-compatibility-tool/overview.md). Belangrijkste details uit het verslag zijn:
 
    - Huidige geïnstalleerde versie
    - Doelversie van upgrade

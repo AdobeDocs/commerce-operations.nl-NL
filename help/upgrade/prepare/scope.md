@@ -1,9 +1,9 @@
 ---
 title: Bereik voor upgrade
 description: Leer over achterwaartse onverenigbare veranderingen in een versie die Adobe Commerce of Magento Open Source douanemodules of derdeuitbreidingen zou kunnen beïnvloeden.
-source-git-commit: bbc412f1ceafaa557d223aabfd4b2a381d6ab04a
+source-git-commit: 3d9a721e33621b78f03f16b932a1ba2904ae4010
 workflow-type: tm+mt
-source-wordcount: '916'
+source-wordcount: '931'
 ht-degree: 0%
 
 ---
@@ -28,13 +28,13 @@ Het nieuwe compatibiliteitsbeleid van Adobe Commerce Marketplace zorgt ervoor da
 
 Alle douanemodules zouden tegen de doelversie moeten worden gecontroleerd u aan bevordert. Dit is het meest tijd- en middel-intensieve proces van een verbetering. Wanneer het evalueren van uw douanemodules, moet u achteruit-incompatibele veranderingen zoeken en zich van nieuwe praktijken, zoals controlemechanismedecompositie bewust zijn. Meer informatie hierover vindt u in het gedeelte [releaseopmerkingen](https://devdocs.magento.com/guides/v2.4/release-notes/bk-release-notes.html). Ook, zorg ervoor dat u volgt [best practices](https://devdocs.magento.com/guides/v2.4/ext-best-practices/extension-coding/common-programming-bp.html) voor moduleontwikkeling.
 
-## Compatibiliteit upgraden
+## [!DNL Upgrade Compatibility Tool]
 
-Het hulpmiddel van de Verenigbaarheid van de Verbetering is een bevel-lijn hulpmiddel dat uw geval voor potentiële verbeteringskwesties analyseert. Er wordt gecontroleerd op problemen tussen de huidige versie die u hebt geïnstalleerd en de versie waarnaar u wilt upgraden.
+De [!DNL Upgrade Compatibility Tool] is een bevel-lijn hulpmiddel dat uw geval voor potentiële verbeteringskwesties analyseert. Er wordt gecontroleerd op problemen tussen de huidige versie die u hebt geïnstalleerd en de versie waarnaar u wilt upgraden.
 
 Het gebruik van dit hulpmiddel vermindert de inspanning die van uw team wordt vereist om het werkingsgebied en het effect van een verbetering te begrijpen. Het helpt u gemeenschappelijke codekwesties te vermijden wanneer bevordering en verstrekt duidelijke richting op hoe te om geïdentificeerde kwesties op te lossen. Het helpt ook om voorrang te geven aan de meest kritieke kwesties noodzakelijk om een succesvolle verbetering te verzekeren, die zowel tijd als kosten bespaart wanneer het bevorderen.
 
-Raadpleeg de volgende secties om aan de slag te gaan met het gereedschap Compatibiliteit upgraden. Zie het gereedschap Compatibiliteit upgraden [hulplijn](../upgrade-compatibility-tool/overview.md) voor meer technische details en gevallen van geavanceerd gebruik.
+Zie de volgende secties om aan de slag te gaan met de [!DNL Upgrade Compatibility Tool]. Zie de [!DNL Upgrade Compatibility Tool] [hulplijn](../upgrade-compatibility-tool/overview.md) voor meer technische details en gevallen van geavanceerd gebruik.
 
 ### Het gereedschap downloaden
 
@@ -78,7 +78,7 @@ U kunt deze opdracht ook gebruiken met de volgende opties:
 
 ### De uitvoer analyseren
 
-Het hulpmiddel van de Verenigbaarheid van de Verbetering voert een JSON dossier uit dat de beïnvloede code of de modules, de strengheid, en een beschrijving van het probleem voor elke kwestie identificeert het ontmoet. Het output ook een samenvattingsrapport met een ingewikkeldheidsscore, die uw team toestaat ruwweg te begrijpen wat het aan verbetering aan de recentste versie vergt. Hoe lager de score voor complexiteit, hoe eenvoudiger het is om de upgrade uit te voeren.
+De [!DNL Upgrade Compatibility Tool] Hiermee exporteert u een JSON-bestand waarin de desbetreffende code of modules, de ernst en een beschrijving van het probleem worden aangegeven voor elk probleem dat het tegenkomt. Het output ook een samenvattingsrapport met een ingewikkeldheidsscore, die uw team toestaat ruwweg te begrijpen wat het aan verbetering aan de recentste versie vergt. Hoe lager de score voor complexiteit, hoe eenvoudiger het is om de upgrade uit te voeren.
 
 De volgende output toont een voorbeeld samenvattingsrapport:
 
@@ -111,4 +111,4 @@ Wij adviseren besparend de resultaten van elk verbeteringsproject zodat u toekom
 
 Wij adviseren ook dat u regelmatig het hulpmiddel in werking stelt terwijl het werken aan de verbetering om zicht in uw vooruitgang te hebben. Het aantal problemen moet afnemen wanneer u deze verhelpt. Dit helpt uw team ook beslissen over de beste benadering om werk te verdelen.
 
-Toekomstige versies van het gereedschap zullen compatibiliteitstests en autofixes voor PHP 8.1 bevatten om u te helpen problemen zo snel mogelijk te verhelpen.
+De [!DNL Upgrade Compatibility Tool] wordt verder verbeterd en in toekomstige versies worden functies zoals autofixes opgenomen om problemen zo snel mogelijk te verhelpen. De meest recente verbeteringen die in januari 2022 zijn geïntroduceerd, zijn onder andere compatibiliteitstests en HTML-visualisatiefuncties waarmee u snel gebieden kunt identificeren die meer moeite nodig hebben om te upgraden.

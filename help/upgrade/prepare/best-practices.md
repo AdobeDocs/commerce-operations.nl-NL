@@ -1,9 +1,9 @@
 ---
 title: Aanbevolen werkwijzen
 description: Gebruik de door de Adobe aanbevolen aanbevolen aanbevolen werkwijze om het upgradeproces voor uw Adobe Commerce- en Magento Open Source-projecten te beheren.
-source-git-commit: bbc412f1ceafaa557d223aabfd4b2a381d6ab04a
+source-git-commit: 3d9a721e33621b78f03f16b932a1ba2904ae4010
 workflow-type: tm+mt
-source-wordcount: '1095'
+source-wordcount: '1092'
 ht-degree: 0%
 
 ---
@@ -74,7 +74,7 @@ Evalueer het werk dat moet worden gedaan voor de upgrade:
 
 - Controleer de [releaseopmerkingen](https://devdocs.magento.com/guides/v2.4/release-notes/bk-release-notes.html) inzicht te krijgen in de reikwijdte en de gevolgen van de nieuwe versie.
 
-- Gebruik de [Compatibiliteit upgraden](../upgrade-compatibility-tool/overview.md) om potentiële problemen te identificeren die in uw douanecode moeten worden opgelost alvorens te proberen om aan een nieuwere versie te bevorderen.
+- Gebruik de [[!DNL Upgrade Compatibility Tool]](../upgrade-compatibility-tool/overview.md) om potentiële problemen te identificeren die in uw douanecode moeten worden opgelost alvorens te proberen om aan een nieuwere versie te bevorderen.
 
 - Als u extensies van derden gebruikt, valideert u de compatibiliteit van deze extensies met de doelversie waarnaar u wilt upgraden.
 
