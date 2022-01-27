@@ -2,9 +2,9 @@
 title: Effectieve cacheplanning
 description: Raadpleeg de aanbevolen benchmarks voor het in cache plaatsen om ervoor te zorgen dat uw site probleemloos wordt geladen.
 exl-id: 275eb21d-fa52-4b97-9453-8f8553128b53
-source-git-commit: e76f101df47116f7b246f21f0fe0fa72769d2776
+source-git-commit: 87e379aff4ec57f15ce914a13b4e9bc2769e6d1c
 workflow-type: tm+mt
-source-wordcount: '0'
+source-wordcount: '357'
 ht-degree: 0%
 
 ---
@@ -17,7 +17,7 @@ De eerste stap in de caching-strategie moet daarom zijn om met de relevante bela
 
 | Cachegebied | Hoe vaak veranderen? | Effect indien verouderde inhoud wordt aangeboden vanuit cache | Acceptabele tijd-aan-levende (TTL) het in de cache plaatsen? |
 |---------------------------------------------------------------|--------------------|-------------------------------------------|-----------------------------------------------------|
-| HTML-pagina&#39;s met site-inhoud, bijgewerkt via CMS | Vaak | Laag | 1 dag |
+| Pagina&#39;s met HTML voor site-inhoud, bijgewerkt via CMS | Vaak | Laag | 1 dag |
 | Sjabloonmedia/middelen voor site-inhoud - logo, CSS-ontwerp, afbeeldingen | Vaak | Laag | 1 week |
 | Pagina&#39;s met productaanbiedingen (PLP) | Vaak | Normaal | 1 dag |
 | Pagina met productdetails (PDP) | Soms | Normaal | 1 uur |
@@ -31,4 +31,4 @@ De eerste stap in de caching-strategie moet daarom zijn om met de relevante bela
 
 Met deze aanvankelijke planning voltooid, kan de technische configuratie beginnen op zijn plaats te worden gebracht om geheime voorgeheugens te vormen die op deze vereisten worden gebaseerd.
 
-Zelfs als de inhoud wordt bijgewerkt en live moet worden gemaakt binnen de in cache geplaatste TTL, is het in de meeste gevallen mogelijk om de cache voor de AEM dispatcher en de Adobe Commerce-cache selectief te wissen voor die inhoud, wat betekent dat urgente wijzigingen onmiddellijk worden doorgevoerd. Het proces rond handmatige cacheverwerking zou ook vooraf moeten worden gepland en worden getest zodat als er een behoefte is om een update op sommige inhoud manueel te dwingen, dan wordt het gedocumenteerd in een runtime van plaatsverrichtingen en duidelijk hoe en wie moet worden betrokken om dit te doen. Hier wordt een voorbeeld van een handmatige cache-wisbewerking voor AEM en Adobe Commerce weergegeven.
+Zelfs als de inhoud wordt bijgewerkt en live moet worden gemaakt in het cachegeheugen van TTL, is het in de meeste gevallen mogelijk om de caches voor de [AEM](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/page-invalidate.html?lang=en) en [Adobe Commerce](https://devdocs.magento.com/guides/v2.4/config-guide/cli/config-cli-subcommands-cache.html#config-cli-subcommands-cache-clean) selectief in cache plaatsen voor die inhoud, wat betekent dat urgente wijzigingen onmiddellijk worden doorgevoerd. Het proces rond handmatige cacheverwerking zou ook vooraf moeten worden gepland en worden getest zodat als er een behoefte is om een update op sommige inhoud manueel te dwingen, dan wordt het gedocumenteerd in een runtime van plaatsverrichtingen en duidelijk hoe en wie moet worden betrokken om dit te doen.
