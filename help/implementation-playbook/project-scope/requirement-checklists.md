@@ -1,13 +1,13 @@
 ---
 title: Controlelijsten vereist
 description: Gebruik deze lijst met uitgebreide vragen om u te helpen bij het voorbereiden van een Adobe Commerce-implementatie.
-source-git-commit: 748c302527617c6a9bf7d6e666c6b3acff89e021
+exl-id: 9ac485c5-d491-4022-9366-5e3a382513b6
+source-git-commit: 6509c939c7abc5462bffbe104466b2ff9e6fadc9
 workflow-type: tm+mt
-source-wordcount: '1509'
+source-wordcount: '1536'
 ht-degree: 0%
 
 ---
-
 
 # Controlelijsten vereist
 
@@ -19,17 +19,17 @@ De volgende vragen kunnen als uitgangspunt dienen om te zien welke informatie mo
 
 - Wat zijn de redenen om uw huidige e-commerceplatform te veranderen?
 
-- What are the objectives for the website infrastructure?
+- Wat zijn de doelstellingen voor de infrastructuur van de website?
 
-- What is your timeframe to deliver the new ecommerce platform?
+- Wat is uw tijdkader om het nieuwe elektronische handelplatform te leveren?
 
-- How many of your IT project managers will be assigned to this project?
+- Hoeveel van uw projectmanagers van IT zullen aan dit project worden toegewezen?
 
 - Hoeveel van uw bedrijfsanalisten zullen aan dit project worden toegewezen?
 
 - Hoeveel van uw technische analisten zullen aan dit project worden toegewezen?
 
-- Hoeveel van uw ontwikkelaars van HTML zullen aan dit project worden toegewezen?
+- Hoeveel van uw HTML ontwikkelaars zullen aan dit project worden toegewezen?
 
 - Welke documentatie bestaat voor huidige bedrijfsprocessen?
 
@@ -45,7 +45,7 @@ De volgende vragen kunnen als uitgangspunt dienen om te zien welke informatie mo
 
 - Welke opleiding zal na om te gaan leven worden voltooid?
 
-- Welke Adobe Commerce-ondersteuning is na de introductie vereist?
+- Welke Adobe Commerce-ondersteuning is vereist na de introductie?
 
 - Is dit project afhankelijk van andere projecten voor systeemontwikkeling?
 
@@ -53,13 +53,13 @@ De volgende vragen kunnen als uitgangspunt dienen om te zien welke informatie mo
 
 - Wie zijn uw belangrijkste concurrenten? Geef koppelingen naar hun sites op. Hoe wilt u uw online ervaring van uw concurrenten onderscheiden?
 
-- Where do you see future growth coming from in your business?
+- Waar ziet u de toekomstige groei komen van in uw zaken?
 
-- Welke rol speelt de digitale handel in uw bedrijfsstrategie? Wat zijn uw belangrijkste doelstellingen voor de oprichting van dit elektronische platform?
+- Welke rol speelt de digitale handel in uw bedrijfsstrategie? Wat zijn uw primaire doelstellingen om dit e-commerce platform op te zetten?
 
 - Hebt u om het even welke merken/bedrijven die u als verwijzing op neemt hoe u uw omnichannel zaken kweken?
 
-- Welke teams of individuen drijven de bedrijfsstrategie? Beschrijf de desbetreffende posities.
+- Welke teams of individuen drijven de e-commerce strategie? Beschrijf de desbetreffende posities.
 
 ## Huidig platform
 
@@ -73,27 +73,27 @@ De volgende vragen kunnen als uitgangspunt dienen om te zien welke informatie mo
 
 - Hoeveel web- en databaseservers bevinden zich in de staging- (pre-productie-) omgeving?
 
-- How many web and database servers are in the production environment?
+- Hoeveel web- en databaseservers bevinden zich in de productieomgeving?
 
 - Is het een architectuur met meerdere servers met taakverdeling?
 
-- Is it a high-availability system architecture?
+- Is het een high-availability systeemarchitectuur?
 
 - Welke problemen ondervindt u met uw huidige websites?
 
-- Current catalog size (number of SKUs)?
+- Huidige catalogusgrootte (aantal SKU&#39;s)?
 
-- Average visitors per day?
+- Gemiddeld aantal bezoekers per dag?
 
 - Gemiddelde aantal gelijktijdige sessies per uur?
 
-- Average page views per day?
+- Gemiddelde paginaweergaven per dag?
 
 - Gemiddelde bestellingen per uur en per dag?
 
 ## Verwachte platformvereisten
 
-- Welke versie van de Handel van Adobe zult u gebruiken?
+- Welke Adobe Commerce-versie gaat u gebruiken?
 
 - Hoe zal het toekomstige platform worden gehost? Interne, hostingprovider, privécloudservers of gehoste cloudservers?
 
@@ -103,7 +103,7 @@ De volgende vragen kunnen als uitgangspunt dienen om te zien welke informatie mo
 
 - Zal het een high-availability systeemarchitectuur zijn?
 
-- Hoeveel Adobe-bedrijfsbeheerders hebt u?
+- Hoeveel Adobe Commerce-beheerders hebt u?
 
 - Catalogusgrootte (aantal SKU&#39;s) verwacht?
 
@@ -111,7 +111,7 @@ De volgende vragen kunnen als uitgangspunt dienen om te zien welke informatie mo
 
 - Gemiddelde gelijktijdige sessies per uur verwacht?
 
-- Expected average page views per day?
+- Gemiddelde paginaweergaven per dag verwacht?
 
 - Welke gegevens moeten van de oude site naar de nieuwe site worden geïmporteerd? (Voorbeeld: product, klant, ordergeschiedenis)
 
@@ -137,9 +137,9 @@ De volgende vragen kunnen als uitgangspunt dienen om te zien welke informatie mo
 
 - Hebt u een aangepast internationaal website-thema nodig?
 
-- Is dit voornamelijk een B2C- of B2B-locatie? Is there any B2B2B or B2B2C element?
+- Is dit voornamelijk een B2C- of B2B-locatie? Is er een B2B2B- of B2B2C-element?
 
-- Bestaat er een bestaand ontwerp dat aangepast is, of wordt het platform geheel nieuw ontworpen?
+- Bestaat er een bestaand ontwerp dat aangepast is of wordt het platform geheel nieuw ontworpen?
 
 - Bestaat er een vereiste voor koploze handel (afzonderlijke voorste en achterste lagen)?
 
@@ -149,7 +149,7 @@ De volgende vragen kunnen als uitgangspunt dienen om te zien welke informatie mo
 
 - Welke specifieke browsers moeten worden getest (behalve de standaardbrowsers IE9+, Firefox, Chrome, Safari)?
 
-- Wat zijn de talen voor elk front? Is de vertaalde inhoud beschikbaar of is ondersteuning nodig?
+- Wat zijn de talen voor elke voorkant? Is de vertaalde inhoud beschikbaar of is ondersteuning nodig?
 
 - Zijn er meerdere websites? Als zo, kunnen de klanten hun geloofsbrieven over alle plaatsen gebruiken?
 
@@ -165,29 +165,29 @@ De volgende vragen kunnen als uitgangspunt dienen om te zien welke informatie mo
 
 - Welk CMS-systeem wordt geïntegreerd met Adobe Commerce? (Voorbeelden: WordPress, Drupal, Concrete (5)
 
-Are there existing APIs that can be used?
+Zijn er bestaande API&#39;s die kunnen worden gebruikt?
 
 - Is de systeem-fout behandeling ontworpen en ontwikkeld voor deze derdesysteemintegratie?
 
-- Welk ERP-systeem wordt geïntegreerd met Adobe Commerce? (Voorbeelden: SAP, MS Dynamics NAV)
+- Welk ERP-systeem wordt met Adobe Commerce geïntegreerd? (Voorbeelden: SAP, MS Dynamics NAV)
 
-- Welk transportsysteem voor verzending wordt geïntegreerd met Adobe Commerce?
+- Welk transportsysteem wordt met Adobe Commerce geïntegreerd?
 
-- Welk fiscaal-softwaresysteem zal met de Handel van Adobe worden geïntegreerd? (bijvoorbeeld Taxware)
+- Welk fiscaal softwaresysteem zal met Adobe Commerce worden geïntegreerd? (Voorbeeld: Taxware)
 
-- Van welk systeem worden de productgegevens geïmporteerd in Adobe Commerce?
+- Van welk systeem worden productgegevens geïmporteerd in Adobe Commerce?
 
 - Frequentie van het laden van geïmporteerde productgegevens?
 
-- In welk systeem worden de productgegevens van Adobe COMMERSARIS geëxporteerd?
+- In welk systeem zal Adobe Commerce productgegevens exporteren?
 
 - Frequentie van het laden van geëxporteerde productgegevens?
 
-- Vanuit welk systeem worden gegevens geïmporteerd in Adobe Commerce?
+- Van welk systeem worden gegevens geïmporteerd in Adobe Commerce?
 
 - Frequentie van het laden van geïmporteerde ordergegevens?
 
-- Into which system willAdobe Commerceexport order data?
+- In welk systeem zal Adobe Commerce bestellingsgegevens exporteren?
 
 - Frequentie van het laden van geëxporteerde ordergegevens?
 
@@ -203,13 +203,13 @@ Are there existing APIs that can be used?
 
 - Welke betaalgateway wilt u uw plaats hebben?
 
-- Welk orderbeheersysteem wordt geïntegreerd met Adobe Commerce? (Voorbeelden: Microsoft Dynamics, SAP, Retail Pro)
+- Welk systeem voor orderbeheer zal met Adobe Commerce worden geïntegreerd? (Voorbeelden: Microsoft Dynamics, SAP, Retail Pro)
 
-- Welk productinventarisbeheersysteem wordt geïntegreerd met Adobe Commerce? (Voorbeelden: Akeneo, InRiver, Bluestone)
+- Welk systeem voor het beheer van de productinventaris zal met Adobe Commerce worden geïntegreerd? (Voorbeelden: Akeneo, InRiver, Bluestone)
 
-- Welk systeem van het klantenrelatiebeheer zal met de Handel van Adobe worden geïntegreerd? (Voorbeelden: Hubspot, Salesforce, Klaviyo)
+- Welk systeem van het klantenrelatiebeheer zal met Adobe Commerce worden geïntegreerd? (Voorbeelden: Hubspot, Salesforce, Klaviyo)
 
-## Specifieke kenmerken van de Adobe-handel
+## Adobe Commerce-specifieke functies
 
 - Wilt u een A/B-test uitvoeren?
 
@@ -217,7 +217,7 @@ Are there existing APIs that can be used?
 
 - Staat u een klant toe om items op te halen die op de website in een winkel zijn aangeschaft?
 
-- Will you have promotional pages?
+- Heb je promotiepagina&#39;s?
 
 - Heb je marketingbanners?
 
@@ -231,19 +231,19 @@ Are there existing APIs that can be used?
 
 - Hebt u een website voor het opslaan van inhoud nodig?
 
-- Mochten klanten een websiteaccount mogen maken
+- Moeten klanten toestemming krijgen om een websiteaccount te maken?
 
 - Gebruikt u unieke kortingsbonnen voor speciale acties?
 
 - Heb je promotieprijzen?
 
-- Will you have flexible coupons (ability to set per website, customer group, time, categories, or products)?
+- Hebt u flexibele coupons (mogelijkheid om per website, klantengroep, tijd, categorieën of producten in te stellen)?
 
 - Worden kortingspercentages voor afzonderlijke objecten aangeboden?
 
 - Welk type cadeaufunctionaliteit is vereist?
 
-- Will rewards-program functionality be required?
+- Worden beloningsprogramma-functionaliteit vereist?
 
 - Is nieuwsbrief-functionaliteit vereist?
 
@@ -257,7 +257,7 @@ Are there existing APIs that can be used?
 
 - Staat u een klant toe om items van de website te retourneren?
 
-- Zal Adobe Commerce RMA retourneren?
+- Zal Adobe Commerce een RMA retourneren?
 
 - Terugbetalingsgegevens vastleggen in Adobe Commerce?
 
@@ -285,7 +285,7 @@ Are there existing APIs that can be used?
 
 - Punten achteruit
 
-- &quot;Later factureren&quot; - beter bekend als &quot;Nu kopen, Later betalen&quot; omdat het meteen wordt gefactureerd maar nog niet is betaald
+- &quot;Later factureren&quot; - beter bekend als &quot;Nu kopen, Later betalen&quot; omdat het direct wordt gefactureerd maar nog niet is betaald
 
 - Zijn er verschillende prijzen voor producten op verschillende websites?
 
@@ -307,9 +307,9 @@ Are there existing APIs that can be used?
 
 - Winkelwagentje: Producten in karretjes, verlaten kunsten
 
-- Producten: Bestsellers, bestelde producten, meest bekeken, ondervoorraad, downloads
+- Producten: Bestsellers, bestelde producten, meest bekeken, lage voorraad, downloads
 
-- Klanten: Newaccounts,klanten op ordertotaal,klanten op aantal orders,klantsegmenten,klantenrevisies
+- Klanten: Nieuwe accounts, klanten op ordertotaal, klanten op aantal orders, klantsegmenten, klantbeoordelingen
 
 - Productbeoordelingen
 
@@ -319,11 +319,11 @@ Are there existing APIs that can be used?
 
 - Uitnodigingen: Algemeen, klanten, orderconversietarief
 
-- Hebt u Adobe Commerce nodig om rapporten te genereren op basis van coupongebruiksgegevens?
+- Hebt u Adobe Commerce nodig om rapporten te genereren op basis van gegevens over coupongebruik?
 
-- Hebt u Adobe Commerce nodig om rapporten te produceren die op verkoopgegevens worden gebaseerd?
+- Hebt u Adobe Commerce nodig om rapporten te genereren op basis van verkoopgegevens?
 
-- Hebt u aangepaste Adobe Commercere-poorten nodig?
+- Hebt u aangepaste Adobe Commerce-rapporten nodig?
 
 - Wat is uw huidige SEO-strategie?
 
@@ -331,11 +331,11 @@ Are there existing APIs that can be used?
 
 - Wat zijn uw vereisten voor SEO-migratie?
 
-- Vaste rente opslaan in Adobe Commerce?
+- Vaste bedragen opslaan in Adobe Commerce?
 
 - Deelverzending toestaan?
 
-- Should shipment tracking information be stored inAdobe Commerce?
+- Moet informatie over het volgen van verzendingen worden opgeslagen in Adobe Commerce?
 
 - Wilt u regels voor belastingberekening voor uw eigen regio&#39;s?
 

@@ -1,13 +1,13 @@
 ---
 title: Onderhoud- en ondersteuningsmodellen
-description: 'Gebruik deze gemeenschappelijke onderhouds en steunmodellen om uw implementatie van de Handel van de Adobe vlot te laten lopen. '
-source-git-commit: 748c302527617c6a9bf7d6e666c6b3acff89e021
+description: Gebruik deze algemene onderhouds- en ondersteuningsmodellen om uw Adobe Commerce-implementatie soepel te laten verlopen.
+exl-id: 44469b83-a10b-44c2-8721-9a7daa2733d3
+source-git-commit: 6509c939c7abc5462bffbe104466b2ff9e6fadc9
 workflow-type: tm+mt
 source-wordcount: '501'
 ht-degree: 0%
 
 ---
-
 
 # Onderhoud- en ondersteuningsmodellen
 
@@ -15,7 +15,7 @@ Er is niet slechts één manier om de steun van uw plaats van de Handel te behan
 
 ## Typische modellen
 
-The option of managed services with an SLA commitment and fixed maintenance capacity is an outcome-driven model to manage, maintain, and enhance digital commerce ecosystems with expected service levels and to produce strong, quality, and measurable outcomes for digital business and operations with fixed capacity and cost.
+De optie van beheerde services met een SLA-verplichting en vaste onderhoudscapaciteit is een resultaatgericht model voor het beheren, onderhouden en verbeteren van digitale commerciële ecosystemen met verwachte serviceniveaus en voor het produceren van sterke, kwalitatieve en meetbare resultaten voor digitale bedrijven en activiteiten met vaste capaciteit en kosten.
 
 - **Steun en verbeteringen voor de productie van vaste capaciteit**
 
@@ -30,7 +30,7 @@ The option of managed services with an SLA commitment and fixed maintenance capa
    - Aanvullende bronnen om het overeengekomen veranderingsbeheerproces te volgen
 
 - **SLA-ondersteuning voor kritieke incidenten met toegewezen leveringscapaciteit**
-   - Optional 24*7 support with SLA for severity 1 incidents
+   - Optionele 24*7-ondersteuning met SLA voor incidenten met prioriteitsniveau 1
    - Vaste leveringsbronnen en onbeperkte operationele ondersteuning
    - Aanvullende leveringsbronnen om het overeengekomen proces voor wijzigingsbeheer te volgen
    - Omvat alle rollen (Dev/QA/SA/PM/RM) en operationele steun
@@ -58,9 +58,9 @@ Activiteiten en &quot;break-fix&quot;-activiteiten kunnen verder worden onderver
    - Piekondersteuning
 
 - **Verbeteringen**
-   - Backlog grooming + prioritization
-   - Sprint + release planning
-   - Design + development
+   - Achtergrondgrooming + prioritering
+   - Sprint + releaseplanning
+   - Ontwerp en ontwikkeling
    - Functionele sprinttests
    - Prestaties en beveiligingstests ondersteunen
    - Implementatieplanning
@@ -77,13 +77,13 @@ Activiteiten en &quot;break-fix&quot;-activiteiten kunnen verder worden onderver
 Levering en servicebeheer maken ook integrerend deel uit van de functie voor ondersteuning en verbetering. Hier zijn de activiteiten die doorgaans onder deze functie vallen:
 
 - Toezicht op levering en service, vloer- en ploegenbeheer
-- Incident and problem triaging
+- Incidenten en problemen triggeren
 - Communicatie en beheer van belanghebbenden
-- Service reporting and governance
-- Continuous improvement
+- Servicerapportage en -bestuur
+- Continue verbetering
 - Procescontrole
 - Documentatie en rapportage
-- Adobe Commerce-platform-updates
+- Adobe Commerce-platformupdates
 
 Het supportmodel werkt naadloos met een duidelijke verantwoordingsplicht verdeeld over de clientteams en L1-, L2- en L3-teams, met een bewezen governance- en communicatiemodel.
 

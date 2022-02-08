@@ -1,14 +1,14 @@
 ---
 title: Reis naar hoofdletters
-description: Herzie een chronologie van de jouirney van de Handel van Adobe om hoofdloze architecturen te steunen.
-source-git-commit: 748c302527617c6a9bf7d6e666c6b3acff89e021
+description: Bekijk een tijdlijn van de Adobe Commerce-reis om architecturen zonder kop te ondersteunen.
+exl-id: 9286e6b3-3c29-4428-b353-f66eb4bc382d
+source-git-commit: 6509c939c7abc5462bffbe104466b2ff9e6fadc9
 workflow-type: tm+mt
 source-wordcount: '28'
 ht-degree: 0%
 
 ---
 
-
 # Adobe Commerce&#39;s Reis naar Headless
 
-![Tijdlijn van de reis van de Adobe Commerce naar een headless architectuur](../../../assets/playbooks/journey-to-headless.svg)
+![Tijdlijn van Adobe Commerce op weg naar een architectuur zonder kop](../../../assets/playbooks/journey-to-headless.svg)

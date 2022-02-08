@@ -1,18 +1,18 @@
 ---
-title: Adobe Commerce Extenability Strategy
-description: 'Leer hoe u met het uitbreidingsmodel van Adobe Commerce uw implementatie kunt aanpassen. '
-source-git-commit: 748c302527617c6a9bf7d6e666c6b3acff89e021
+title: Adobe Commerce-uitbreidingsstrategie
+description: Leer hoe u met het uitbreidingsmodel van Adobe Commerce uw implementatie kunt aanpassen.
+exl-id: fac4630d-8a41-40dc-899a-01eabceaa61e
+source-git-commit: 6509c939c7abc5462bffbe104466b2ff9e6fadc9
 workflow-type: tm+mt
 source-wordcount: '48'
 ht-degree: 0%
 
 ---
 
-
 # Uitbreidingsstrategie
 
-Het uitbreidbaarheidsplatform van de Handel van Adobe staat merken toe om processen efficiënt aan te passen, systemen te integreren, en nieuwe mogelijkheden op te stellen terwijl het handhaven van SaaS-als upgradeability.
+Met het uitbreidbaarheidsplatform van Adobe Commerce kunnen merken op efficiënte wijze processen aanpassen, systemen integreren en nieuwe mogelijkheden implementeren terwijl upgradebaarheid zoals SaaS behouden blijft.
 
-![Adobe Commerce-uitbreidingsstrategiediagram](../../assets/playbooks/extensibility-strategy-1.svg)
+![Adobe Commerce-diagram met uitbreidingsstrategie](../../assets/playbooks/extensibility-strategy-1.svg)
 
-![Adobe Commerce-uitbreidingsstrategiediagram](../../assets/playbooks/extensibility-strategy-2.svg)
+![Adobe Commerce-diagram met uitbreidingsstrategie](../../assets/playbooks/extensibility-strategy-2.svg)

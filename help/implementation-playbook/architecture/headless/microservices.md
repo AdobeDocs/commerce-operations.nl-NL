@@ -1,10 +1,10 @@
 ---
 title: Adobe Commerce Microservices
-description: In staat zijn onderscheid te maken tussen gezondheid en microdiensten, zoals deze betrekking hebben op Adobe Commerce.
+description: U kunt onderscheid maken tussen headless en microservices zoals deze voor Adobe Commerce gelden.
 exl-id: 078e0e8e-7acc-4913-8b78-585a950f3f5e
-source-git-commit: 4e8f6ce05c14195433e7c46e6090a93a76b8b5f9
+source-git-commit: 6509c939c7abc5462bffbe104466b2ff9e6fadc9
 workflow-type: tm+mt
-source-wordcount: '0'
+source-wordcount: '294'
 ht-degree: 0%
 
 ---

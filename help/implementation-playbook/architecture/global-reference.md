@@ -1,13 +1,13 @@
 ---
 title: Adobe Commerce Global Reference Architecture
-description: Haal het meeste uit uw Adobe Commerce-implementatie door gebruik te maken van een wereldwijde referentiearchitectuur.
-source-git-commit: 748c302527617c6a9bf7d6e666c6b3acff89e021
+description: Profiteer optimaal van onze Adobe Commerce-implementatie door gebruik te maken van een wereldwijde referentiearchitectuur.
+exl-id: a18529a3-da9b-4e1b-8048-0a906e65c740
+source-git-commit: 6509c939c7abc5462bffbe104466b2ff9e6fadc9
 workflow-type: tm+mt
 source-wordcount: '194'
 ht-degree: 0%
 
 ---
-
 
 # Algemene referentiearchitectuur (GRA)
 
@@ -15,7 +15,7 @@ Wanneer het runnen van ondernemingen die veelvoudige plaatsen voor veelvoudige m
 
 ![Tabel waarin de kosten van verschillen in architectuur worden toegelicht](../../assets/playbooks/divergent-architecture.svg)
 
-![Table explaining the cost of consolidated in architecture](../../assets/playbooks/consolidated-architecture.svg)
+![Tabel die de kosten van geconsolideerde architectuur toelicht](../../assets/playbooks/consolidated-architecture.svg)
 
 GRA is:
 
@@ -25,11 +25,11 @@ GRA is:
 
 GRA is niet:
 
-- A product “feature”
-- Unique to any commerce platform
-- Only for global business use cases
+- Een product &quot;functie&quot;
+- Uniek aan elk handelsplatform
+- Alleen voor wereldwijde gevallen van zakelijk gebruik
 
-GRA impacts:
+GRA-effecten:
 
 - Hoe code wordt geleverd
 
@@ -43,7 +43,6 @@ GRA impacts:
 
    - Zorgt voor aanpassingen die gecentraliseerd en domeinspecifiek zijn, zodat alle aanpassingsinspanningen vanuit holistisch oogpunt voor het bedrijf worden uitgevoerd.
 
-- How new markets are enabled
+- Hoe nieuwe markten worden ingeschakeld
 
-   - Simplifies the release of multiple channels and markets that would otherwise cost considerably more time and money.
-
+   - Vereenvoudigt het vrijgeven van meerdere kanalen en markten die anders aanzienlijk meer tijd en geld zouden kosten.

@@ -1,16 +1,16 @@
 ---
 title: Overzicht van infrastructuur en implementatie
-description: Get an overview of what we've taught you about the Adobe Commerce soluion so far.
-source-git-commit: 748c302527617c6a9bf7d6e666c6b3acff89e021
+description: Bekijk een overzicht van wat we je tot nu toe hebben geleerd over de Adobe Commerce oplossing.
+exl-id: 8767bb83-9175-4a54-8c5c-c6af0931917c
+source-git-commit: 6509c939c7abc5462bffbe104466b2ff9e6fadc9
 workflow-type: tm+mt
 source-wordcount: '125'
 ht-degree: 0%
 
 ---
 
-
 # Overzicht
 
-Tot nu toe hebben we alle stappen besproken die nodig zijn om de implementatie van e-commerce op te zetten voor Adobe Commerce, om succes te boeken. Now, we dive further into the actual platform itself, highlighting the infrastructures and environments that power Adobe Commerce and the software solutions that make it such a robust platform.
+Tot nu toe hebben we alle stappen besproken die nodig zijn om uw e-commerce-implementatie op Adobe Commerce op te zetten voor succes. Nu duiken we verder in het echte platform zelf, om de infrastructuur en omgevingen te benadrukken die Adobe Commerce van kracht maken en de softwareoplossingen die het zo&#39;n robuust platform maken.
 
-We also detail tactical and actionable ways to optimize your Adobe Commerce implementation, including recommendations and definitions for security, configuration, and performance optimizations. Tegen de tijd dat u klaar bent met het lezen van deze sectie, zult u de in- en uitgangen van het platform begrijpen, evenals gemakkelijke moeilijke situaties voor het toestaan van het om bij optimale snelheid te lopen.
+We geven ook gedetailleerde informatie over tactische en activeerbare manieren om uw Adobe Commerce-implementatie te optimaliseren, inclusief aanbevelingen en definities voor beveiliging, configuratie en optimalisatie van prestaties. Tegen de tijd dat u klaar bent met het lezen van deze sectie, zult u de in- en uitgangen van het platform begrijpen, evenals gemakkelijke moeilijke situaties voor het toestaan van het lopen bij optimale snelheid.

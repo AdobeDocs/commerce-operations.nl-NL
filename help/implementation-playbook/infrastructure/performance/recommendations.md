@@ -2,7 +2,7 @@
 title: Prestaties optimaliseren, Recommendations
 description: Optimaliseer de prestaties van uw Adobe Commerce-implementatie met deze aanbevelingen.
 exl-id: c5d62e23-be43-4eea-afdb-bb1b156848f9
-source-git-commit: bbc412f1ceafaa557d223aabfd4b2a381d6ab04a
+source-git-commit: 6509c939c7abc5462bffbe104466b2ff9e6fadc9
 workflow-type: tm+mt
 source-wordcount: '1289'
 ht-degree: 0%
@@ -103,7 +103,7 @@ Het testen van prestaties vóór elke productielevering wordt altijd geadviseerd
 
 >[!NOTE]
 >
-> Adobe Commerce op cloud-infrastructuur past al alle bovenstaande infrastructuren en architectuuroptimalisaties toe, behalve voor de DNS-zoekopdracht omdat deze buiten het bereik valt.
+> Adobe Commerce op cloudinfrastructuur past al alle bovenstaande infrastructuren en architectuuroptimalisaties toe, behalve voor de DNS-zoekopdracht omdat deze buiten het bereik valt.
 
 ### Zoeken
 
@@ -111,11 +111,11 @@ Elasticsearch is vereist vanaf Adobe Commerce versie 2.4, maar het is ook aan te
 
 ## Operationele modellen
 
-Afgezien van de eerder genoemde gemeenschappelijke aanbevelingen voor de optimalisering van de infrastructuur, zijn er ook manieren om de prestaties voor specifieke bedrijfsmodi en schalen te verbeteren. Dit document bevat geen gedetailleerde tuninginstructies voor alle scenario&#39;s, omdat elk scenario anders is, maar we kunnen wel een aantal opties op hoog niveau voor uw referentie bieden.
+Naast de eerder genoemde gemeenschappelijke aanbevelingen voor optimalisatie van de infrastructuur, zijn er ook benaderingen om de prestaties voor specifieke bedrijfswijzen en schalen te verbeteren. Dit document bevat geen gedetailleerde tuninginstructies voor alle scenario&#39;s, omdat elk scenario anders is, maar we kunnen wel een aantal opties op hoog niveau voor uw referentie bieden.
 
 ### Hoofdloze architectuur
 
-Er is een apart gedeelte gewijd aan het gedetailleerd weergeven van [koploos](../../architecture/headless/adobe-commerce.md) is en verschillende opties. Samengevat wordt de storefront-laag gescheiden van het platform zelf. Het is nog steeds dezelfde achtergrond, maar Adobe Commerce verwerkt aanvragen niet langer rechtstreeks en ondersteunt in plaats daarvan alleen aangepaste winkelvoorronten via de GraphQL-API.
+Er is een aparte sectie gewijd aan het gedetailleerd weergeven van [koploos](../../architecture/headless/adobe-commerce.md) is en verschillende opties. Samengevat wordt de storefront-laag gescheiden van het platform zelf. Het is nog steeds dezelfde achtergrond, maar Adobe Commerce verwerkt aanvragen niet langer rechtstreeks en ondersteunt in plaats daarvan alleen aangepaste winkelvoorronten via de GraphQL-API.
 
 ### Adobe Commerce bijwerken
 
