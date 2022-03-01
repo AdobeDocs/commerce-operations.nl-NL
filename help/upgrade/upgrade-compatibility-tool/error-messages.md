@@ -1,15 +1,17 @@
 ---
 title: '"[!DNL Upgrade Compatibility Tool] Foutberichten"'
 description: Meer informatie over foutberichten die u tegenkomt bij het gebruik van de [!DNL Upgrade Compatibility Tool] op uw Adobe Commerce-project.
-source-git-commit: 97295df89fda393c8cf8675f8f4be92ac6f38a6a
+source-git-commit: 317a044e66fe796ff66b9d8cf7b308f741eb82c1
 workflow-type: tm+mt
-source-wordcount: '3638'
+source-wordcount: '0'
 ht-degree: 0%
 
 ---
 
 
 # [!DNL Upgrade Compatibility Tool] foutberichten
+
+{{commerce-only}
 
 Deze naslaggids voor foutberichten bevat informatie over fouten die kunnen optreden tijdens het uitvoeren van de opdracht [!DNL Upgrade Compatibility Tool].
 

@@ -1,15 +1,17 @@
 ---
 title: '"[!DNL Upgrade Compatibility Tool] Vereisten"'
 description: 'Controleer of uw systeem voldoet aan de vereisten die nodig zijn om het [!DNL Upgrade Compatibility Tool] voor uw Adobe Commerce-project. '
-source-git-commit: 97295df89fda393c8cf8675f8f4be92ac6f38a6a
+source-git-commit: 2e2f55ff659c36ffce7cf26224d5ceb61e53c42d
 workflow-type: tm+mt
-source-wordcount: '137'
+source-wordcount: '0'
 ht-degree: 0%
 
 ---
 
 
 # [!DNL Upgrade Compatibility Tool] voorwaarden
+
+{{commerce-only}
 
 De [!DNL Upgrade Compatibility Tool] helpt u te identificeren wat u moet doen **voor** uw Adobe Commerce-versie upgraden.
 
@@ -22,7 +24,7 @@ De minimumvereisten voor het uitvoeren van de [!DNL Upgrade Compatibility Tool] 
 | Node.js | [Node.js](https://nodejs.org/) (`^12.22.0`, `^14.17.0`, of `>=16.0.0`) |
 | Geheugenbeperkingen | Minimaal 2 GB RAM |
 | Adobe Commerce Access-toetsen | none |
-| Adobe Commerce (Open Source of Enterprise) | none |
+| Adobe Commerce | none |
 
 U kunt de [!DNL Upgrade Compatibility Tool] in elk besturingssysteem. Er is geen vereiste om de [!DNL Upgrade Compatibility Tool] waar uw Adobe Commerce-exemplaar zich bevindt.
 

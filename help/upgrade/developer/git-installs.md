@@ -1,9 +1,9 @@
 ---
 title: Een upgrade uitvoeren van een op een kit gebaseerde installatie
 description: Voer een upgrade uit van een Adobe Commerce- of Magento Open Source-installatie die u hebt gekloond vanuit een it-opslagplaats.
-source-git-commit: bbc412f1ceafaa557d223aabfd4b2a381d6ab04a
+source-git-commit: 7bcfbc4483f4b6d4c1a5e852adbd1cd81bc136b7
 workflow-type: tm+mt
-source-wordcount: '151'
+source-wordcount: '0'
 ht-degree: 0%
 
 ---
@@ -15,15 +15,7 @@ Dit onderwerp bespreekt hoe een bijdragende ontwikkelaar Adobe Commerce of Magen
 
 U kunt als volgt upgraden als u een ontwikkelaar bent die bijdraagt:
 
-1. Meld u aan bij uw server.
-
-1. Naar de [eigenaar van bestandssysteem](https://devdocs.magento.com/guides/v2.4/install-gde/prereq/file-sys-perms-over.html).
-
-1. Ga naar de map waarin u de toepassing hebt gekloond. Bijvoorbeeld:
-
-   ```bash
-   cd /var/www/magento2
-   ```
+{{$include /help/_includes/server-login.md}}
 
 1. Sla de wijzigingen op die u in het dialoogvenster `composer.json` omdat de volgende stappen dit overschrijven.
 
