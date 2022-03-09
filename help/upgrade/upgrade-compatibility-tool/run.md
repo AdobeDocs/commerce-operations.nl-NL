@@ -1,7 +1,7 @@
 ---
 title: Voer de [!DNL Upgrade Compatibility Tool]
 description: Voer de volgende stappen uit [!DNL Upgrade Compatibility Tool] op uw Adobe Commerce-project.
-source-git-commit: bcb8fced43c5d9972291f15a5039dbbc2a692a59
+source-git-commit: ee80753da5327ebf593e007e3b4316e2b01c5a61
 workflow-type: tm+mt
 source-wordcount: '1864'
 ht-degree: 0%
@@ -73,11 +73,11 @@ Beschikbaar `--help` opties voor de `upgrade:check` opdracht:
 
 - `-m, --module-path[=MODULE-PATH]`: Pad van de te analyseren modules
 - `-a, --current-version[=CURRENT-VERSION]`: Huidige Adobe Commerce-versie, versie van de Adobe Commerce-installatie wordt gebruikt als deze wordt weggelaten.
-- `-c, --coming-version[=COMING-VERSION]`: Adobe Commerce-doelversie, versie van de Adobe Commerce-installatie wordt gebruikt als deze wordt weggelaten.
+- `-c, --coming-version[=COMING-VERSION]`: Adobe Commerce-doelversie, nieuwste releaseversie van Adobe Commerce wordt gebruikt als deze wordt weggelaten.
 - `--json-output-path[=JSON-OUTPUT-PATH]`: Pad van het bestand waarin de uitvoer wordt geëxporteerd in de indeling JSON.
 - `--html-output-path[=HTML-OUTPUT-PATH]`: Pad van het bestand waarin de uitvoer wordt geëxporteerd in HTML-indeling.
 - `--min-issue-level`: Minimaal emissieniveau dat in het rapport moet worden weergegeven. Standaard is [WAARSCHUWING].
-- `--ignore-current-version-compatibility-issues`: Gebruik deze optie als u geen bekende kritieke problemen, fouten en waarschuwingen in uw [!DNL Upgrade Compatibility Tool] verslag.
+- `-i, --ignore-current-version-compatibility-issues`: Gebruik deze optie als u geen bekende kritieke problemen, fouten en waarschuwingen in uw [!DNL Upgrade Compatibility Tool] verslag.
 - `--context=CONTEXT`: Uitvoeringcontext. Deze optie is bedoeld voor integratiedoeleinden en heeft geen invloed op het resultaat van de uitvoering.
 - `-h, --help`: Help weergeven voor die specifieke opdracht. Als er geen opdracht is opgegeven, `list` is het standaardresultaat.
 - `-q, --quiet`: Geen berichten uitvoeren tijdens het uitvoeren van de opdracht.
