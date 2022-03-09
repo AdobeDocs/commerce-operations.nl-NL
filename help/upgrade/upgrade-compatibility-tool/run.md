@@ -1,9 +1,9 @@
 ---
 title: Voer de [!DNL Upgrade Compatibility Tool]
 description: Voer de volgende stappen uit [!DNL Upgrade Compatibility Tool] op uw Adobe Commerce-project.
-source-git-commit: 317a044e66fe796ff66b9d8cf7b308f741eb82c1
+source-git-commit: bcb8fced43c5d9972291f15a5039dbbc2a692a59
 workflow-type: tm+mt
-source-wordcount: '0'
+source-wordcount: '1864'
 ht-degree: 0%
 
 ---
@@ -279,6 +279,20 @@ Er gelden enkele beperkingen voor het uitvoeren van de vorige opdracht:
 - Geef de versie van de tag zonder aanhalingstekens op (niet enkele of dubbele aanhalingstekens): ~~&quot;2.4.1-ontwikkeling&quot;~~.
 - Geef GEEN oudere versies op dan de versie die u momenteel hebt geïnstalleerd, of ouder dan versie 2.3, de oudste versie die op dit moment wordt ondersteund.
 
+### Gebruik de `refactor` command
+
+De [!DNL Upgrade Compatibility Tool] kan automatisch een beperkte set problemen verhelpen:
+
+- Functies die mochten worden gebruikt zonder een argument door te geven, maar met een dergelijk gebruik zijn nu afgekeurd.
+- Gebruik van `$this` in Magento sjablonen.
+- Gebruik van het trefwoord PHP `final` in methoden van het type private.
+
+Uitvoeren:
+
+```bash
+bin/uct refactor <dir>
+```
+
 ## Compatibiliteitsverificatie van GraphQL-schema
 
 De [!DNL Upgrade Compatibility Tool] biedt ook de optie om twee eindpunten GraphQL in te voeren en hun schema&#39;s te vergelijken die breken en gevaarlijke veranderingen tussen hen zoeken:
@@ -316,7 +330,46 @@ Zie [Informatie over ontwikkelaars](../upgrade-compatibility-tool/developer.md) 
 
 U kunt de [!DNL Upgrade Compatibility Tool] met een uitvoeringsconfiguratie via de insteekmodule PhpStorm. Zie de [[!DNL Upgrade Compatibility Tool] Configuratie uitvoeren](https://devdocs.magento.com/guides/v2.3/ext-best-practices/phpstorm/uct-run-configuration.html) voor meer informatie.
 
+## Aanbevolen acties
+
+### De resultaten optimaliseren
+
+De [!DNL Upgrade Compatibility Tool] verstrekt een rapport dat resultaten met alle kwesties bevat die op uw project door gebrek worden geïdentificeerd. U kunt de resultaten optimaliseren om u te concentreren op de problemen die u moet verhelpen om de upgrade te voltooien:
+
+- De optie gebruiken `--ignore-current-version-compatibility-issues`, waarin alle bekende kritieke problemen, fouten en waarschuwingen voor uw huidige Adobe Commerce-versie worden onderdrukt. Er worden alleen fouten weergegeven in de versie waarnaar u wilt upgraden.
+- Voeg de `--min-issue-level` kunt u met deze instelling het minimale niveau van de uitgaven instellen, zodat u alleen de belangrijkste problemen met de upgrade kunt oplossen. Als u alleen een bepaalde leverancier, module of zelfs map wilt analyseren, kunt u het pad ook als optie opgeven.
+- Voer de `bin` opdracht met de toegevoegde optie `-m`. Hierdoor wordt de [!DNL Upgrade Compatibility Tool] om een specifieke module onafhankelijk te analyseren, en hulp met geheugenkwesties die kunnen voorkomen wanneer het uitvoeren van [!DNL Upgrade Compatibility Tool].
+
+### Aanbevolen procedures voor Adobe Commerce volgen
+
+- Vermijd het gebruik van twee modules met dezelfde naam.
+- Adobe Commerce volgen [coderingsnormen](https://devdocs.magento.com/guides/v2.4/coding-standards/bk-coding-standards.html).
+
 ## Problemen oplossen
+
+### Fout in segmentfout
+
+Wanneer twee modules de zelfde naam hebben [!DNL Upgrade Compatibility Tool] geeft een fout met een segmentatiefout weer.
+
+Als u deze fout wilt voorkomen, kunt u het beste de opdracht `bin` opdracht met de toegevoegde optie `-m`:
+
+```bash
+bin/uct upgrade:check /<dir>/<instance-name> --coming-version=2.4.1 -m /vendor/<vendor-name>/<module-name>
+```
+
+>[!NOTE]
+>
+>De `<dir>` waarde is de map waarin uw Adobe Commerce-instantie zich bevindt.
+
+De `-m` de optie [!DNL Upgrade Compatibility Tool] om elke specifieke module afzonderlijk te analyseren om te voorkomen dat er twee modules met dezelfde naam in uw Adobe Commerce-instantie voorkomen.
+
+Met deze opdrachtoptie kunt u ook [!DNL Upgrade Compatibility Tool] om een map met meerdere modules te analyseren:
+
+```bash
+bin/uct upgrade:check /<dir>/<instance-name> --coming-version=2.4.1 -m /vendor/<vendor-name>/
+```
+
+Deze aanbeveling helpt ook bij geheugenproblemen die kunnen optreden bij het uitvoeren van de [!DNL Upgrade Compatibility Tool].
 
 ### Lege uitvoer
 

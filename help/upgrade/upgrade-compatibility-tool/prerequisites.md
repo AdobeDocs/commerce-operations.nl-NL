@@ -1,9 +1,9 @@
 ---
 title: '"[!DNL Upgrade Compatibility Tool] Vereisten"'
 description: 'Controleer of uw systeem voldoet aan de vereisten die nodig zijn om het [!DNL Upgrade Compatibility Tool] voor uw Adobe Commerce-project. '
-source-git-commit: 2e2f55ff659c36ffce7cf26224d5ceb61e53c42d
+source-git-commit: c4769b555df49ed2f0b2fffbeaf458c5a64816ba
 workflow-type: tm+mt
-source-wordcount: '0'
+source-wordcount: '162'
 ht-degree: 0%
 
 ---
@@ -29,3 +29,5 @@ De minimumvereisten voor het uitvoeren van de [!DNL Upgrade Compatibility Tool] 
 U kunt de [!DNL Upgrade Compatibility Tool] in elk besturingssysteem. Er is geen vereiste om de [!DNL Upgrade Compatibility Tool] waar uw Adobe Commerce-exemplaar zich bevindt.
 
 Het is noodzakelijk [!DNL Upgrade Compatibility Tool] om toegang te hebben tot de broncode van de instantie Adobe Commerce. U kunt de toepassing bijvoorbeeld op de ene server installeren en deze op de Adobe Commerce-installatie op een andere server plaatsen. Zie de [installeren](../upgrade-compatibility-tool/install.md) voor meer informatie.
+
+Als u de [!DNL Upgrade Compatibility Tool] bij een Adobe Commerce-instantie met grote modules en bestanden kan het zijn dat voor het hulpprogramma een hoge hoeveelheid RAM nodig is, ten minste 2 GB RAM.
