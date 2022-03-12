@@ -2,9 +2,9 @@
 keywords: Adobe Commerce;home;populaire onderwerpen
 title: Home
 description: Blader door een index van de Adobe Commerce-documentatie van het operationele product.
-source-git-commit: 3637e81bf3951d0130941613d88488405073e7e1
+source-git-commit: 63ceb5bad64a7ed5bce3ad2af76966eb6883d62e
 workflow-type: tm+mt
-source-wordcount: '210'
+source-wordcount: '205'
 ht-degree: 0%
 
 ---
@@ -12,18 +12,7 @@ ht-degree: 0%
 
 # Operationele Adobe Commerce-hulplijnen
 
-Deze pagina bevat koppelingen naar alle operationele handleidingen voor Adobe Commerce en Magento Open Source.
-
-## Nieuwe functies
-
-De volgende lijst omvat recente veranderingen die wij u, zoals nieuwe onderwerpen en significante updates aan bestaande onderwerpen zouden willen weten:
-
-| Beschrijving | Type |
-|------------------------------------------------------------------------------------------------------------------------------------|--------------|
-| Toegevoegd [informatie](../upgrade/upgrade-compatibility-tool/overview.md) over hoe de regels voor het Hulpmiddel van de Verenigbaarheid van de Verbetering worden bepaald. | Belangrijke update |
-| Verouderde upgradecompatibiliteitsfunctie verwijderd [foutcodes](../upgrade/upgrade-compatibility-tool/error-messages.md). | Technisch |
-
-## Hulplijnen
+Krijg praktische informatie over concepten, processen, hulpmiddelen, en beste praktijken om handelsprojecten te ontwikkelen op Adobe Commerce en de platforms van de Magento Open Source op te stellen en te handhaven.
 
 <table>
 <tr>
@@ -63,7 +52,7 @@ De volgende lijst omvat recente veranderingen die wij u, zoals nieuwe onderwerpe
 <tr>
   <td valign="top">
     <a href="../upgrade/overview.md">
-      <img alt="Upgrade" src="../assets/icons/download-cloud.svg" width="40" height="40"/>
+      <img alt="Upgrade" src="../assets/icons/upload-cloud.svg" width="40" height="40"/>
     </a>
     <div>
       <a href="../upgrade/overview.md"><strong>Upgrade</strong></a>
@@ -129,3 +118,12 @@ De volgende lijst omvat recente veranderingen die wij u, zoals nieuwe onderwerpe
   </td>
 </tr>
 </table>
+
+## Nieuwe functies
+
+Meer informatie over nieuwe documentatie en belangrijke updates voor bestaande documentatie.
+
+| Wijzigen | Type |
+|----------------------------------------------------------------------------------------------------------------------------------------|--------------|
+| Toegevoegd [informatie](../upgrade/upgrade-compatibility-tool/overview.md) over hoe de regels voor het Hulpmiddel van de Verenigbaarheid van de Verbetering worden bepaald. | Belangrijke update |
+| Verouderde upgradecompatibiliteitsfunctie verwijderd [foutcodes](../upgrade/upgrade-compatibility-tool/error-messages.md). | Technisch |
