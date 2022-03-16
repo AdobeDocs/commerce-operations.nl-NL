@@ -1,13 +1,13 @@
 ---
 title: Software voor handel
 description: Leer over zeer belangrijke verschillen tussen toepassingen SaaS en andere zelf-ontvangen (op-gebouw) opensource e-commerce opties.
-source-git-commit: 226f1925d9ca628c94b67a86888084a21cd7e336
+exl-id: 9be70e1e-76d5-4696-862e-f2b71eb1abb0
+source-git-commit: e76f101df47116f7b246f21f0fe0fa72769d2776
 workflow-type: tm+mt
 source-wordcount: '576'
 ht-degree: 0%
 
 ---
-
 
 # Software-as-a-service (SaaS)
 
@@ -49,5 +49,4 @@ Hoewel de elektronische handelplatforms bij de kern van de meeste ondernemingen 
 
 Wij adviseren dat detailhandelaren het beste van rassensystemen gebruiken, betekenend dat zij het beste systeem voor elk deel van hun zaken gebruiken. Meestal voldoet het kiezen van één platform om alle aspecten en functies van uw bedrijf uit te voeren niet aan uw verwachtingen.
 
-In plaats daarvan moeten bedrijven een willekeurig aantal systemen kunnen gebruiken voor
-hun ERP, POS, 3PL, en e-commerce systemen en integreren die systemen om inventaris, orden, klanten, punten, en verschepen/volgen gegevens te synchroniseren uw bedrijfsprocessen automatiseren. Cloud-gebaseerde SaaS-platforms voldoen vaak met flexibiliteit en gemak aan deze zakelijke vereisten.
+In plaats daarvan, zouden de ondernemingen om het even welk aantal systemen voor hun ERP, POS, 3PL, en e-commerce systemen moeten kunnen gebruiken en die systemen integreren om inventaris te synchroniseren, orden, klanten, punten, en het verschepen/volgen gegevens uw bedrijfsprocessen automatiseren. Cloud-gebaseerde SaaS-platforms voldoen vaak met flexibiliteit en gemak aan deze zakelijke vereisten.

@@ -1,13 +1,13 @@
 ---
 title: Commerciële Platform
 description: Herzie de voordelen en de nadelen van het gebruiken van oplossingen PaaS voor uw het ontvangen infrastructuur om te bepalen wat voor uw e-commerce project geschikt is.
-source-git-commit: 226f1925d9ca628c94b67a86888084a21cd7e336
+exl-id: 071e6e9b-6874-4d08-90b4-036d6cdca4c2
+source-git-commit: e76f101df47116f7b246f21f0fe0fa72769d2776
 workflow-type: tm+mt
 source-wordcount: '368'
 ht-degree: 0%
 
 ---
-
 
 # Platform-as-a-service (PaaS)
 
@@ -17,9 +17,9 @@ PaaS wordt aangeboden als een service die wordt gehost op de infrastructuur van 
 
 PaaS werkt op particuliere, openbare en hybride wolken:
 
-- **De privé wolk**-PaaS wordt geleverd binnen de firewall van de cliënt voor veiligheid, waar het gegeven op-gebouw wordt opgeslagen.
-- **De openbare wolk**-cliënt is in controle van de plaatsingen en de leverancier is verantwoordelijk voor alle andere componenten zoals netwerk en werkend systeem.
-- **Hybride wolk**-Hybride mengt de functies van zowel privé als openbaar zodat de cliënt flexibiliteit kan hebben.
+- **Privécloud**—PaaS wordt geleverd binnen de firewall van de cliënt voor veiligheid, waar het gegeven op-gebouw wordt opgeslagen.
+- **Openbare cloud**—De cliënt is in controle van de plaatsingen en de leverancier is verantwoordelijk voor alle andere componenten zoals netwerk en werkend systeem.
+- **Hybride wolk**—Hybride mengt de functies van zowel privé als openbaar zodat de cliënt flexibiliteit kan hebben.
 
 ## Voordelen
 
@@ -39,8 +39,7 @@ PaaS werkt op particuliere, openbare en hybride wolken:
 
 - Kan leiden tot een bedreiging van de beveiliging omdat alles in de cloud is opgeslagen
 - Afhankelijk van de dienstverlener
-- Als de leverancier een onderbreking ervaart, zou het een kwestie voor de
-client
+- Als de leverancier een onderbreking ervaart, zou het een kwestie voor de cliënt zijn
 - Hiermee kunt u eenvoudig en snel updates uitvoeren
 
 Wanneer de cliënt PaS in e-commerce gebruikt, te hoeven zij niet om het systeem en werkende software te beheren. De cliënt wordt voorzien van een platform aan opstelling hun elektronische handelplaats waar zij inhoud, codegegevens, en producten bouwen en vormen. die los staat van de toedieningszijde van zaken die verband houden met PaaS.

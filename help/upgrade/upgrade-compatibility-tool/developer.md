@@ -3,7 +3,7 @@ title: '"[!DNL Upgrade Compatibility Tool] Informatie over ontwikkelaar"'
 description: De [!DNL Upgrade Compatibility Tool] de API-indexintegratie gebruiken.
 source-git-commit: 317a044e66fe796ff66b9d8cf7b308f741eb82c1
 workflow-type: tm+mt
-source-wordcount: '0'
+source-wordcount: '433'
 ht-degree: 0%
 
 ---

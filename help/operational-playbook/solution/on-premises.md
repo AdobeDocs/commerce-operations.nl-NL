@@ -1,18 +1,17 @@
 ---
 title: Ontvangst op locatie
 description: Cloudgebaseerde hostingoplossingen zijn erg populair, maar hosting in verkoopruimten kan zinvol zijn voor uw e-commerceproject.
-source-git-commit: 226f1925d9ca628c94b67a86888084a21cd7e336
+exl-id: e505c216-2d6c-4ca4-a4ec-4853cd9347fe
+source-git-commit: e76f101df47116f7b246f21f0fe0fa72769d2776
 workflow-type: tm+mt
 source-wordcount: '183'
 ht-degree: 0%
 
 ---
 
-
 # hosting op locatie
 
-Cloud-gebaseerde hostingoplossingen zijn bijzonder populair en dienen zeker als
-Een belangrijke rol in veel organisaties is echter nog steeds een geschikte optie voor sommige organisaties en handelaren.
+Cloud-gebaseerde hostingoplossingen zijn bijzonder populair en spelen in veel organisaties zeker een belangrijke rol, maar de infrastructuur ter plaatse is voor sommige organisaties en handelaren nog steeds een geschikte optie.
 
 U moet rekening houden met verschillende factoren voordat u een hosting op locatie kiest, waaronder aanzienlijke verzonken kosten, een gemakkelijk beschikbare pool van competente/kosteneffectieve IT-expertise en het feit dat toepassingen op locatie vaak gemakkelijker op de behoeften van een organisatie kunnen worden afgestemd en aangepast.
 

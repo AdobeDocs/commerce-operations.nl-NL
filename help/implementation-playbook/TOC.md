@@ -1,6 +1,6 @@
 ---
 user-guide-title: Afspeelmap voor implementatie
-user-guide-description: Leer over strategieën om een succesvolle plaats van de Handel van de Adobe te plannen en uit te voeren.
+user-guide-description: Leer meer over strategieën voor het plannen en implementeren van een geslaagde Adobe Commerce-site.
 mini-toc-levels: 3
 source-git-commit: 0def7f131883428f4d959071e36200644b73b7c2
 workflow-type: tm+mt
@@ -20,14 +20,14 @@ ht-degree: 0%
    - [Kennis is macht](project-scope/knowledge.md)
    - [Belangrijkste betrokkenen](project-scope/key-stakeholders.md)
    - [Proces en tijdlijn](project-scope/process-timeline.md)
-   - [Deliverables](project-scope/deliverables.md)
+   - [Te leveren items](project-scope/deliverables.md)
    - [Vereiste controlelijsten](project-scope/requirement-checklists.md)
 - Ontwikkeling {#development}
-   - [Platform tools](development/platform-tools.md)
+   - [Gereedschappen voor Platforms](development/platform-tools.md)
    - [Projectbeheertools](development/project-management-tools.md)
    - [Methode voor projectuitvoering](development/delivery.md)
    - [Kwaliteitscontrole](development/quality-control.md)
-- Planning en beheer {#planning}
+- Planning en bestuur {#planning}
    - [Bezorgings- en planningsaanpak](planning/delivery.md)
    - [Verantwoordelijkheid en verantwoordelijkheid](planning/ownership.md)
    - [Projectbeheer](planning/governance.md)
@@ -45,20 +45,20 @@ ht-degree: 0%
       - [Gekoppelde opslagarchitectuur](architecture/headless/legacy-storefront.md)
       - [Hoofdloze architectuur](architecture/headless/adobe-commerce.md)
 - Infrastructuur en implementatie {#infrastructure}
-   - [Overview](infrastructure/overview.md)
+   - [Overzicht](infrastructure/overview.md)
    - [Infrastructuur ter plaatse](infrastructure/on-premises.md)
    - Cloud-infrastructuur {#cloud}
       - [Overzicht](infrastructure/cloud/overview.md)
       - [Regio&#39;s](infrastructure/cloud/regions.md)
-      - [Technologies](infrastructure/cloud/technology.md)
+      - [Technologieën](infrastructure/cloud/technology.md)
       - [Omgevingen](infrastructure/cloud/environments.md)
       - [Beheerde services](infrastructure/cloud/managed-services.md)
       - [Beveiliging en naleving](infrastructure/cloud/security.md)
-   - Prestaties optimaliseren {#performance}
+   - Optimalisatie van prestaties {#performance}
       - [Typische problemen](infrastructure/performance/optimization.md)
       - [Benchmarks](infrastructure/performance/benchmarks.md)
       - [Recommendations](infrastructure/performance/recommendations.md)
-- Gereedheid {#launch} starten
+- Gereedheid starten {#launch}
    - [Overzicht](launch/overview.md)
    - [Stappen vóór de introductie](launch/pre-launch-steps.md)
    - [Stappen starten](launch/launch-steps.md)
@@ -68,4 +68,4 @@ ht-degree: 0%
    - [Modellen](maintenance/models.md)
    - [Serviceniveaus](maintenance/service-level-agreements.md)
    - [Metrisch](maintenance/metrics.md)
-   - [Adobe Managed Services](maintenance/adobe-managed-services.md)
+   - [Beheerde services van Adobe](maintenance/adobe-managed-services.md)

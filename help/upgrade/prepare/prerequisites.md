@@ -84,7 +84,7 @@ U stelt de limiet in vanaf de opdrachtregel:
 
    >[!NOTE]
    >
-   > De syntaxis voor de maximale waarde voor open bestanden is afhankelijk van de UNIX-shell die u gebruikt. De voorgaande instelling werkt alleen met CentOS en Ubuntu met Bash-shell. Voor Mac OS is de juiste instelling echter -S 65532. Raadpleeg een hoofdpagina of referentie van het besturingssysteem voor meer informatie.
+   > De syntaxis voor de maximale waarde voor open bestanden is afhankelijk van de UNIX-shell die u gebruikt. The preceding setting should work with CentOS and Ubuntu with the Bash shell. Voor Mac OS is de juiste instelling echter -S 65532. Raadpleeg een hoofdpagina of referentie van het besturingssysteem voor meer informatie.
 
 De waarde in de Bash-shell instellen:
 
@@ -96,7 +96,7 @@ De waarde in de Bash-shell instellen:
    ulimit -s 65536
    ```
 
-1. Sla uw wijzigingen op in het dialoogvenster `.bashrc` en sluit de teksteditor af.
+1. Save your changes to the `.bashrc` file and exit the text editor.
 
 >[!IMPORTANT]
 >

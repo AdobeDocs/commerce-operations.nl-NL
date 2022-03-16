@@ -1,13 +1,13 @@
 ---
 title: Betalingswegen
 description: Kies een leverancier van de betaalgateway voor uw e-commerce project dat op de behoeften van uw zaken wordt gebaseerd.
-source-git-commit: 226f1925d9ca628c94b67a86888084a21cd7e336
+exl-id: eab50191-0744-41da-99ba-2e06ea61da27
+source-git-commit: e76f101df47116f7b246f21f0fe0fa72769d2776
 workflow-type: tm+mt
 source-wordcount: '554'
 ht-degree: 0%
 
 ---
-
 
 # Betalingsgateways
 
@@ -42,8 +42,7 @@ Wanneer een bedrijf besluit om een betaalgateway met hun platform te integreren,
 
 B2B- en B2C-bedrijven hebben vergelijkbare betalingssystemen, maar B2B-bedrijven hebben meer regels, regels en processen. B2B-ondernemingen hebben de neiging om in grotere hoeveelheden te handelen dan B2C-ondernemingen.
 
-B2C-klanten kopen producten of diensten voor individueel gebruik. Klanten betalen doorgaans dezelfde prijs als andere klanten en er is geen sprake van onderhandeling. B2B-klanten omvatten verschillende
-belanghebbenden, waardoor goedkeuring complexer en duurder wordt.
+B2C-klanten kopen producten of diensten voor individueel gebruik. Klanten betalen doorgaans dezelfde prijs als andere klanten en er is geen sprake van onderhandeling. B2B-klanten hebben verschillende belanghebbenden, waardoor goedkeuring complexer en duurder wordt.
 
 B2B-klanten hebben verschillende bestellingen en vereisten die door de verkoper of een verkoper moeten worden verwerkt en goedgekeurd wanneer een klant online een aanvraag voor een voorstel (BFP) of een inkooporder (PO) aanschaft.
 

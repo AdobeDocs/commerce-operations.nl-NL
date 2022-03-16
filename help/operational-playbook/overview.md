@@ -1,13 +1,13 @@
 ---
 title: Operationeel afspelen
 description: Doel van de operationele handelsportefeuille
-source-git-commit: 748c302527617c6a9bf7d6e666c6b3acff89e021
+exl-id: f072f6ca-3654-4bd2-a32e-000358bb67b3
+source-git-commit: e76f101df47116f7b246f21f0fe0fa72769d2776
 workflow-type: tm+mt
 source-wordcount: '426'
 ht-degree: 0%
 
 ---
-
 
 # Operationeel afspeelboek
 
@@ -17,7 +17,7 @@ Wij creeerden dit playbook voor alle industrieën en klanten (B2C en B2B) om als
 
 Dit playbook wordt ontworpen om u te helpen enkele gemeenschappelijke fouten vermijden die wij in minder succesvol e-commerce websitebeheer en leveringsteams hebben geïdentificeerd. De aanbevelingen en beste praktijken in dit playbook zijn bedoeld om op om het even welke industrie en zaken parallel met uw technologieoplossing worden toegepast om ervoor te zorgen dat uw zaken worden geplaatst om waarde van uw investering te realiseren en het platform van begin tot eind te gebruiken.
 
-De playbooks in deze reeks gebruiken een gemeenschappelijke digitale governancestructuur die zich op de belangrijkste gebieden van leiderschap, strategie, mensen, oplossing, product, en proces concentreert om een robuuste benadering van het lezen van uw zaken te leveren of u een nieuwe eigenschap op uw platform of een robuuste routekaart van de Handel van de Handel van de Adobe opstelt.
+De playbooks in deze reeks gebruiken een gemeenschappelijke digitale governancestructuur die zich op de belangrijkste gebieden van leiderschap, strategie, mensen, oplossing, product, en proces concentreert om een robuuste benadering van het lezen van uw zaken te leveren of u een nieuwe eigenschap op uw platform of een robuuste e-commerce routekaart op Adobe Commerce opstelt.
 
 Het doelpubliek voor dit afspeelboek bevat:
 
@@ -30,19 +30,19 @@ Het doelpubliek voor dit afspeelboek bevat:
 
 ## Over dit afspeelboek
 
-Dit document volgt een structuur die is ontworpen om u te helpen de belangrijkste aandachtsgebieden te begrijpen om maximumwaarde van uw investering in de Handel van de Adobe te drijven. Deze structuur is gebaseerd op het Deloitte and Adobe Commerce Governance Framework, dat het juiste bedrijfsklimaat creëert voor het slagen van digitale transacties en transformaties. Het omvat:
+Dit document volgt een structuur die is ontworpen om u te helpen de belangrijkste aandachtsgebieden te begrijpen en zo uw investering in Adobe Commerce maximaal te benutten. Deze structuur is gebaseerd op het Deloitte and Adobe Commerce Governance Framework, dat het juiste bedrijfsklimaat creëert voor het slagen van digitale bewerkingen en transformaties. Het omvat:
 
-- **Leiderschap** - Uitvoerende koop-binnen en steun voor het succesvolle beheer van een e-commerce platform.
+- **Leiderschap**—Inkoop en ondersteuning van het succesvolle beheer van een e-commerce-platform.
 
-- **Strategie** - Helderheid en groepering rond zeer belangrijke bedrijfsdoelstellingen voor het evalueren van digitale prestaties en elektronische handel verrichtingen.
+- **Strategie**—Helderheid en groepering rond zeer belangrijke bedrijfsdoelstellingen voor het evalueren van digitale prestaties en elektronische handel verrichtingen.
 
-- **De oplossing**-Hosting en infrastructuureling voor variërende zaken en e-commerce vereisten.
+- **Oplossing**—Hosting en infrastructuurevaluatie voor verschillende bedrijfs en e-commerce vereisten.
 
-- **Personen**-Middelen, deskundigheid, en de aangewezen teamstructuur om de verrichtingen van de elektronische handel effectief in werking te stellen.
+- **Mensen**—De middelen, de deskundigheid, en de aangewezen teamstructuur om de verrichtingen van de elektronische handel effectief in werking te stellen.
 
-- **Proces**-procedures, projectbeheer, en werkschema&#39;s voor het effectief beheren van een plaats van de Handel.
+- **Proces**—Procedures, projectbeheer, en werkschema&#39;s voor effectief het beheren van een plaats van de Handel.
 
-- **Product**-Algemene e-commerce oplossingen, gemeenschappelijke integratie, en automatiseringen.
+- **Product**—Algemene e-commerce oplossingen, gemeenschappelijke integratie, en automatiseringen.
 
 >[!NOTE]
 >

@@ -13,9 +13,9 @@ ht-degree: 0%
 
 {{commerce-only}
 
-De [!DNL Upgrade Compatibility Tool] is een opdrachtregelprogramma dat een aangepaste Adobe Commerce-instantie controleert op een specifieke versie door alle daarin geïnstalleerde modules te analyseren. Er wordt een lijst met fouten en waarschuwingen geretourneerd die moeten worden opgelost voordat u de upgrade naar de nieuwste versie van Adobe Commerce uitvoert.
+The [!DNL Upgrade Compatibility Tool] is a command-line tool that checks an Adobe Commerce customized instance against a specific version by analyzing all modules installed in it. Er wordt een lijst met fouten en waarschuwingen geretourneerd die moeten worden opgelost voordat u de upgrade naar de nieuwste versie van Adobe Commerce uitvoert.
 
-## Download de [!DNL Upgrade Compatibility Tool]
+## Download the [!DNL Upgrade Compatibility Tool]
 
 Als u het dialoogvenster [!DNL Upgrade Compatibility Tool], voert u de volgende opdracht uit:
 
@@ -25,9 +25,9 @@ composer create-project magento/upgrade-compatibility-tool uct --repository http
 
 ## Installeren
 
-Als u het dialoogvenster [!DNL Upgrade Compatibility Tool]dient u de vereiste voorwaarden te installeren:
+To install the [!DNL Upgrade Compatibility Tool], you must install the necessary prerequisites:
 
-* Adobe Commerce-toegangstoetsen
+* Adobe Commerce access keys
 * Composer
 * Node.js
 
@@ -35,17 +35,17 @@ Als u het dialoogvenster [!DNL Upgrade Compatibility Tool]dient u de vereiste vo
 
 Zie [voorwaarden](../upgrade-compatibility-tool/prerequisites.md) voor meer informatie .
 
-### Adobe Commerce-toegangstoetsen
+### Adobe Commerce access keys
 
-U moet [Adobe Commerce-toegangstoetsen](https://devdocs.magento.com/marketplace/sellers/profile-information.html#access-keys) om de [!DNL Upgrade Compatibility Tool]. Voeg je Adobe Commerce toegangstoetsen toe aan je `auth.json` bestand, dat zich bevindt op `~/.composer` standaard.
+You must have [Adobe Commerce access keys](https://devdocs.magento.com/marketplace/sellers/profile-information.html#access-keys) to download and use the [!DNL Upgrade Compatibility Tool]. Add your Adobe Commerce access keys to your `auth.json` file, which is located at `~/.composer` by default.
 
 >[!WARNING]
 >
->Controleer uw **COMPOSER_HOME** omgevingsvariabele om te zien waar de `auth.json` bestand is gevonden.
+>Check your **COMPOSER_HOME** environment variable to see where the `auth.json` file is located.
 
 De **openbare sleutel** komt overeen met de _gebruikersnaam_ overwegende dat de **persoonlijke sleutel** is de _password_:
 
-### Voorbeeld van Adobe Commerce-toegangstoetsen
+### Example of Adobe Commerce access keys
 
 ```json
     "http-basic": {
@@ -58,7 +58,7 @@ De **openbare sleutel** komt overeen met de _gebruikersnaam_ overwegende dat de 
 
 ### Composer
 
-Klonen met [!DNL Upgrade Compatibility Tool] opbergen en uitvoeren `composer install` in uw terminal om gebiedsdelen te installeren.
+Clone the [!DNL Upgrade Compatibility Tool] repository and run `composer install` in your terminal to install dependencies.
 
 >[!WARNING]
 >

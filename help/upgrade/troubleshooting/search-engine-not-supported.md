@@ -44,7 +44,7 @@ De fout treedt op als de geretourneerde waarde `mysql` of `elasticsearch`.
 >composer require-commerce magento/product-community-edition=<version>
 >```
 >
->Wanneer `<version>` is de versie van de Magento die u hebt uitgevoerd **voor** de upgrade. Bijvoorbeeld: `2.3.5`.
+>Wanneer `<version>` is de versie van de Magento die u hebt uitgevoerd **voor** de upgrade. Bijvoorbeeld, `2.3.5`.
 
 Volg de richtlijnen die in de volgende secties worden beschreven om van een inconsistente staat terug te krijgen.
 

@@ -1,43 +1,43 @@
 ---
-title: Key Stakeholders
-description: Review the key stakeholders involved in an Adobe Commerce implementation and who owns different aspects of the project.
-source-git-commit: 748c302527617c6a9bf7d6e666c6b3acff89e021
+title: Belangrijke belanghebbenden
+description: De belangrijkste belanghebbenden die betrokken zijn bij een Adobe Commerce-implementatie en die verschillende aspecten van het project hebben, beoordelen.
+exl-id: 04d8270f-3f68-445a-8e7a-e17905a6f77c
+source-git-commit: e76f101df47116f7b246f21f0fe0fa72769d2776
 workflow-type: tm+mt
 source-wordcount: '390'
 ht-degree: 0%
 
 ---
 
-
 # Belangrijkste betrokkenen
 
-Veel bedrijven in 2021 zijn tot het besef gekomen dat het &quot;pandemisch-bestendig&quot; worden direct verband houdt met de digitale kracht van een organisatie. Gebaseerd op gegevens van Forrester,[McKinsey](https://www.mckinsey.com/business-functions/strategy-and-corporate-finance/our-insights/five-fifty-the-quickening)ontdekte dat de elektronische handel 10 jaar groei in slechts 3 maanden heeft gezien, met groei die door de behoefte wordt gedreven om digitaal met klanten te verbinden terwijl de baksteen-en-mortierdeuren gesloten werden.
+Veel bedrijven in 2021 zijn tot het besef gekomen dat het &quot;pandemisch-bestendig&quot; worden direct verband houdt met de digitale kracht van een organisatie. Gebaseerd op Forrester-gegevens[McKinsey](https://www.mckinsey.com/business-functions/strategy-and-corporate-finance/our-insights/five-fifty-the-quickening)de elektronische handel heeft in slechts drie maanden een groei van tien jaar gekend, waarbij de groei wordt gedreven door de noodzaak om digitaal met klanten te verbinden terwijl de baksteen- en mortierdeuren gesloten werden.
 
-When the decision is made to invest in a commerce transformation, one of the most important steps is determining who from the organization is involved in the process. For smaller businesses, sometimes the ecommerce or digital team is only a handful of people, so the entire team takes on the task. Voor grotere organisaties is het echter mogelijk dit op te splitsen in drie verschillende gebieden, waaronder:
+Wanneer wordt besloten in een handelstransformatie te investeren, is een van de belangrijkste stappen het bepalen van wie van de organisatie bij het proces betrokken is. Voor kleinere ondernemingen, soms is het e-commerce of digitale team slechts een handvol mensen, zodat neemt het volledige team de taak. Voor grotere organisaties is het echter mogelijk dit op te splitsen in drie verschillende gebieden, waaronder:
 
-- Experience
+- Ervaring
 - Technologie
 - Executive sponsor
 
 ## Wie is de eigenaar van de ervaring?
 
-This is the person or team at the organization with the best understanding of the current and future wants and needs of the customer and who is ultimately responsible for delivering the experience that addresses those wants and needs. Dit omvat focal points zoals productassortiment, inventariszichtbaarheid, promoties, klachten van klanten, en realtime orderupdates en het bijhouden van verzendingen. This group often includes titles, such as:
+Dit is de persoon of het team bij de organisatie met het beste inzicht in de huidige en toekomstige wensen en behoeften van de klant en die uiteindelijk verantwoordelijk is voor het leveren van de ervaring die die die wensen en behoeften richt. Dit omvat focal points zoals productassortiment, inventariszichtbaarheid, promoties, klachten van klanten, en realtime orderupdates en het bijhouden van verzendingen. Deze groep bevat vaak titels, zoals:
 
 - VP van Digitale Strategie
 - VP van de Ecommerce
-- VP of Marketing
+- VP van Marketing
 - Customer Service Manager
 - Hoofd verkoop (hoofdzakelijk voor B2B-toepassingen)
 
 ## Wie is de eigenaar van de technologie?
 
-De meeste handelsimplementaties vereisen verscheidene verschillende platforms om heen en weer te communiceren en volledig, zoals een systeem van het ordebeheer, het platform van de klantendienst, of ERP systeem te zijn geïntegreerd. Back-office systemen die worden voorbereid voor een handelstransformatie dicteren vaak de tijdslijn voor een implementatie, zodat het absoluut noodzakelijk is contacten te hebben van het IT-team van een organisatie dat vanaf dag één betrokken is om het initiatief te ondersteunen. This group often include:
+De meeste handelsimplementaties vereisen verscheidene verschillende platforms om heen en weer te communiceren en volledig, zoals een systeem van het ordebeheer, het platform van de klantendienst, of ERP systeem te zijn geïntegreerd. Back-office systemen die worden voorbereid voor een handelstransformatie dicteren vaak de tijdslijn voor een implementatie, zodat het absoluut noodzakelijk is contacten te hebben van het IT-team van een organisatie dat vanaf dag één betrokken is om het initiatief te ondersteunen. Deze groep omvat vaak:
 
 - IT Systems Manager, CTO en interne technici
-- ERP (or any back-office) Engineer
+- ERP (of een back-office)-engineer
 
 ## Wie is de uitvoerende sponsor?
 
-Digital Commerce 360 has reported that the number one reason that organizations haven’t yet invested in a new commerce transformation is because they lack leadership support. The extent to which the leadership team is involved is crucial to a brand’s success. Volledige steun van de volgende rollen, met inbegrip van terugkomende controlepuntvergaderingen tijdens de duur van een handelsimplementatie, wordt geadviseerd:
+Digital Commerce 360 heeft gemeld dat organisaties nog niet hebben geïnvesteerd in een nieuwe transformatie van de handel, omdat ze geen leiderschapsondersteuning hebben. De mate waarin het leidinggevende team betrokken is, is van cruciaal belang voor het succes van een merk. Volledige steun van de volgende rollen, met inbegrip van terugkomende controlepuntvergaderingen tijdens de duur van een handelsimplementatie, wordt geadviseerd:
 
 - De hele C-suite

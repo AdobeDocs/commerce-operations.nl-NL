@@ -1,13 +1,13 @@
 ---
 title: Personalisatie
 description: Leer over het soort ervaring die de verpersoonlijking uw klanten zou moeten verstrekken.
-source-git-commit: 226f1925d9ca628c94b67a86888084a21cd7e336
+exl-id: ea829c53-1f98-4e23-90ee-5424a4ef0324
+source-git-commit: e76f101df47116f7b246f21f0fe0fa72769d2776
 workflow-type: tm+mt
 source-wordcount: '338'
 ht-degree: 0%
 
 ---
-
 
 # Personalisatie
 
@@ -25,21 +25,21 @@ Personalisatie dient onder meer te omvatten:
 
 Voorbeelden van personalisatie zijn:
 
-- **Belang** van de klant - Het veranderen van homepage en navigatie die op klantenprofiel wordt gebaseerd. Als een gebruiker bijvoorbeeld de site eerder heeft bezocht en de sectie voor vrouwen heeft doorzocht, navigeert hij de volgende keer dat hij of zij de URL invoert naar de homepage van de vrouw.
+- **Belang van de klant**—Website en navigatie wijzigen op basis van het profiel van de klant. Als een gebruiker bijvoorbeeld de site eerder heeft bezocht en de sectie voor vrouwen heeft doorzocht, navigeert hij de volgende keer dat hij of zij de URL invoert naar de homepage van de vrouw.
 
 - **Aanbevolen producten**—Aanbevolen producten op basis van het browsergedrag van klanten.
 
-- **Zoeken** - Geppersonaliseerde zoekresultaten weergeven op basis van een vorig zoekgedrag van klanten.
+- **Zoeken**—Geef gepersonaliseerde zoekresultaten weer op basis van een vorig zoekgedrag van klanten.
 
-- **E-mail**-verzend gepersonaliseerde e-mails over producten als een klant het punt in hun kar heeft verlaten, of als het product uit voorraad was een bericht verzenden wanneer het terug in voorraad is.
+- **E-mail**—Stuur gepersonaliseerde e-mails over producten als een klant het artikel in zijn winkelwagentje heeft verlaten, of als het product uit voorraad was een bericht wanneer het weer in voorraad is.
 
-- **Geo-locatie** - Meerdere geo-locaties voor de site weergeven. Bijvoorbeeld, bezoekt een klant de plaats van AU, maar de de plaatsoptie van de V.S. wordt ook getoond om de klant een keus te geven.
+- **Geo-locatie**—Meerdere geo-locaties voor de site weergeven. Bijvoorbeeld, bezoekt een klant de plaats van AU, maar de de plaatsoptie van de V.S. wordt ook getoond om de klant een keus te geven.
 
-- **Korting code** - Geef specifieke codes van de categoriekortingen weer om producten van een bepaalde categorie te promoten.
+- **Korting**—Specifieke categorierentekortcodes weergeven om producten van een bepaalde categorie te promoten.
 
-- **Complementaire producten** - Toon complementaire producten wanneer de klant een product bezoekt. Een klant bekijkt bijvoorbeeld een jurk en kan gratis producten zoals schoenen, tassen en accessoires die bij de jurk horen, bekijken.
+- **Aanvullende producten**—Aanvullende producten weergeven wanneer de klant een product bezoekt. Een klant bekijkt bijvoorbeeld een jurk en kan gratis producten zoals schoenen, tassen en accessoires die bij de jurk horen, bekijken.
 
-- **Persoonlijke homepage** - Geef een gepersonaliseerde homepage voor een geregistreerde gebruiker weer om hen speciaal te maken.
+- **Persoonlijke homepage**—Geef een gepersonaliseerde homepage weer zodat een geregistreerde gebruiker zich speciaal voelt.
 
 ![Voorbeeld van gepersonaliseerde producten](../../assets/playbooks/personalization-example.png)
 

@@ -1,17 +1,17 @@
 ---
 title: Prijzen
 description: Meer informatie over verschillende elektronische betalingsmethoden en de voordelen van online betalingen in het algemeen.
-source-git-commit: 226f1925d9ca628c94b67a86888084a21cd7e336
+exl-id: d2dd1a6d-0a75-433e-88cd-74bffcc47594
+source-git-commit: e76f101df47116f7b246f21f0fe0fa72769d2776
 workflow-type: tm+mt
 source-wordcount: '332'
 ht-degree: 0%
 
 ---
 
-
 # Prijzen
 
-Het belang van de elektronische handel neemt snel toe. Consumenten kopen liever online producten omdat ze dat op elk gewenst moment kunnen doen. Om een plaats van de Handel te laten groeien, is het essentieel om een goed tariferingssysteem in werking te hebben. Wanneer een klant online probeert te betalen en de transactie mislukt, kiezen klanten vaak een andere betalingsmethode, terwijl sommige klanten hun winkelwagentje verlaten. Klanten die hun winkelwagen verlaten, doen dit omdat ze een negatieve ervaring hebben omdat ze de betalingsmethode ingewikkeld en verwarrend vinden. Als een bedrijf ervoor kiest slechts één soort betalingsmethode te hebben, zal het hoogstwaarschijnlijk niet het verwachte niveau van de klantendienst aanbieden. Door verschillende betalingsmethoden aan te bieden kunnen potentiële kopers de betalingsmethode selecteren die het beste aansluit bij hun behoeften en uw investeringsrendement verhogen.
+The importance of ecommerce is growing rapidly. Consumers prefer to purchase products online because they can do so anywhere at any time. For an ecommerce site to grow, it is essential to have a good pricing system in place. Wanneer een klant online probeert te betalen en de transactie mislukt, kiezen klanten vaak een andere betalingsmethode, terwijl sommige klanten hun winkelwagentje verlaten. Klanten die hun winkelwagen verlaten, doen dit omdat ze een negatieve ervaring hebben omdat ze de betalingsmethode ingewikkeld en verwarrend vinden. Als een bedrijf ervoor kiest slechts één soort betalingsmethode te hebben, zal het hoogstwaarschijnlijk niet het verwachte niveau van de klantendienst aanbieden. Door verschillende betalingsmethoden aan te bieden kunnen potentiële kopers de betalingsmethode selecteren die het beste aansluit bij hun behoeften en uw investeringsrendement verhogen.
 
 ## Betalingsgateways
 
@@ -42,4 +42,4 @@ De voordelen van online betalingen zijn onder meer:
 - Meerdere betalingsopties vergroten de gebruikerservaring
 - Beveilig gateway-veiligheid is een essentieel punt in betalingen omdat de klanten slechts zullen te voltooien hun transactie als zij veilig voelen om dit te doen
 
-Bedrijven moeten nog steeds betaalmethoden en de betaalgateway selecteren door aspecten als klantvoorkeur, installatiekosten, lopende kosten en beveiliging en zakelijke vereisten te analyseren. Alle ondernemingen zijn verschillend, hebben unieke vereisten, en bevinden zich in een verschillende fase (kruipen, lopen en lopen). De bedrijfsvereisten en de fase spelen een belangrijke rol in het bepalen van de prijsstrategie.
+Bedrijven moeten nog steeds betalingsmethoden en de betaalgateway selecteren door aspecten als klantvoorkeur, installatiekosten, lopende kosten en beveiliging en zakelijke vereisten te analyseren. All businesses are different, have unique requirements, and is in a different phase (crawl, walk and run). De bedrijfsvereisten en de fase spelen een belangrijke rol in het bepalen van de prijsstrategie.

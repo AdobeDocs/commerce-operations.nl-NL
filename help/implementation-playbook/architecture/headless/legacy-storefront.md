@@ -1,38 +1,38 @@
 ---
 title: Gekoppelde opslagarchitectuur
-description: Meer informatie over wat een gekoppelde winkel betekent in het kader van Adobe Commerce-architecturen zonder kop.
-source-git-commit: 748c302527617c6a9bf7d6e666c6b3acff89e021
+description: Meer weten over wat een gekoppelde winkel betekent in de context van Adobe Commerce-architecturen zonder kop.
+exl-id: 978e6853-4fbe-45b8-8e46-f491c6724fc6
+source-git-commit: e76f101df47116f7b246f21f0fe0fa72769d2776
 workflow-type: tm+mt
 source-wordcount: '315'
 ht-degree: 0%
 
 ---
 
+# Gekoppelde (verouderde) Adobe Commerce-opslagarchitectuur
 
-# Opslagarchitectuur gekoppelde (verouderde) Adobe Commerce
+De huidige standaardimplementatieoptie voor de meeste commerciële klanten omvat:
 
-The current default deployment option for most commercial customers includes:
-
-- 100% feature support across B2B &amp; B2C
+- 100% functieondersteuning voor B2B en B2C
 - Het de verwijzingsthema van de natuur (Luma) dat snel kan worden opgesteld/worden aangepast
-- Mature SI partner implementation expertise
-- Fully compatible with commerce capabilities like Page Builder or Staging &amp; Preview
+- expertise op het gebied van implementatie van Mature SI-partners
+- Volledig compatibel met handelsmogelijkheden zoals Page Builder of Staging &amp; Preview
 - Brede compatibiliteit met extensies in Adobe Commerce Marketplace
 
-![Diagram met een gekoppelde Adobe Commerce-opslagarchitectuur](../../../assets/playbooks/coupled-storefront-architecture.svg)
+![Diagram met een gekoppelde Adobe Commerce storefront architectuur](../../../assets/playbooks/coupled-storefront-architecture.svg)
 
-## Cons of legacy storefront
+## Kons van verouderde opslagplaats
 
-- **Niet zonder kop** - Alle onderdelen van de toepassing van de koophandel van de monolithische Adobe. No separation of business logic and processes between the frontend and the backend.
+- **Niet zonder kop**—Alle onderdelen van de monolithische Adobe Commerce-toepassing. Geen scheiding van bedrijfslogica en processen tussen het front en het backend.
 
-- **Geen PWA** - hoewel het thema ontvankelijk is, blijven de prestaties van de site ver achter bij de beste PWA.
+- **Geen PWA**—Hoewel het thema responsief is, liggen de prestaties van de site ver achter bij de PWA van de beste in-klasse.
 
-- **Front-end architecture (Adobe Commerce UI components)**—Adobe Commerce/PHP specialists to build on legacy storefront.
+- **Front-end architectuur (Adobe Commerce UI-componenten)**—Adobe Commerce/PHP-specialisten om voort te bouwen op verouderde winkels.
 
-Voordat we in eindeloze opties geraken, moeten we beginnen met de meer bekende archiefront-architectuur. If headless is decoupled, this would be the coupled storefront architecture, most commonly seen with our Luma demos.
+Voordat we in eindeloze opties geraken, moeten we beginnen met de meer bekende archiefront-architectuur. Als er geen kop wordt losgekoppeld, zou dit de gekoppelde opslagarchitectuur zijn, die het meest wordt gezien bij onze Luma-demo&#39;s.
 
-This is where the storefront capabilities are tightly integrated with the core commerce services, not separated by that GraphQL API layer. Er is dus veel bedrijfslogica gekoppeld aan dat thema. Deze aanpak is niet zonder kop en is niet PWA.
+Dit is waar de storefront mogelijkheden strak met de kernhandelsdiensten worden geïntegreerd, niet door die laag GraphQL API wordt gescheiden. Er is dus veel bedrijfslogica gekoppeld aan dat thema. Deze aanpak is niet zonder kop en is niet PWA.
 
-Dit is momenteel de gemeenschappelijkste optie koopt handelaars omdat het 100% eigenschapsteun met zowel B2B als B2C de mogelijkheden van de Handel heeft. De gemeenschap is er bekend mee, er is een volwassen ecosysteem van deskundigheid om zich heen, en het is in ruime mate compatibel met Adobe Commerce Marketplace-uitbreidingen.
+Dit is momenteel de gemeenschappelijkste optie koopt handelaars omdat het 100% eigenschapsteun met zowel B2B als B2C de mogelijkheden van de Handel heeft. De gemeenschap is er bekend mee, er is een volwassen ecosysteem van deskundigheid rond en het is in ruime mate compatibel met Adobe Commerce Marketplace-extensies.
 
-Het ontbreekt echter aan de voordelen waar we eerder over hebben gesproken. Zonder scheiding van lagen, zijn er vele gebiedsdelen en potentiële punten van mislukking wanneer de veranderingen worden aangebracht. It’s not as performant as a well-implemented PWA and if a merchant doesn’t have expertise in Adobe Commerce or PHP development, they will have to go find those resources.
+Het ontbreekt echter aan de voordelen waar we eerder over hebben gesproken. Zonder scheiding van lagen, zijn er vele gebiedsdelen en potentiële punten van mislukking wanneer de veranderingen worden aangebracht. Het presteert niet zo goed als een goed geïmplementeerde PWA en als een handelaar niet beschikt over expertise op het gebied van Adobe Commerce of PHP-ontwikkeling, moeten hij of zij die bronnen zoeken.

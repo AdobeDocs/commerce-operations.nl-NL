@@ -1,13 +1,13 @@
 ---
 title: Integratie van de handel
 description: Eet uw team met de tools die ze nodig hebben om uw klanten te verrukken en ervoor te zorgen dat uw dagelijkse activiteiten naadloos verlopen.
-source-git-commit: 226f1925d9ca628c94b67a86888084a21cd7e336
+exl-id: 52bfa6c7-0687-45de-8889-c529cea7d01a
+source-git-commit: e76f101df47116f7b246f21f0fe0fa72769d2776
 workflow-type: tm+mt
 source-wordcount: '295'
 ht-degree: 0%
 
 ---
-
 
 # Integraties van derden
 
@@ -15,8 +15,7 @@ De meeste ondernemingen begrijpen dat vele unieke strategieën en processen als 
 
 Aan de meeste operationele behoeften kan worden voldaan met behulp van verschillende softwareplatforms, zoals ERP, Marketplace, tools voor bedrijfsintelligentie, boekhoudsoftware, rapporteringssuites en nog veel meer. De extra software wordt geselecteerd om tijd en inspanning voor de organisatie te verminderen terwijl het optimaliseren van klantenervaring en bedrijfsverrichtingen.
 
-Wanneer het selecteren van een derdeleverancier, zouden de ondernemingen een eenvoudig moeten gebruiken
-en een doeltreffende integratieaanpak die aan hun behoeften voldoet. Nadat u de behoeften van de klant hebt begrepen, neemt u met de hulp van de belanghebbende een gedetailleerd plan op. Nadat u een beslissing hebt genomen over het plan, stelt u een specificatiedocument in waarin wordt gedefinieerd hoe het systeem communiceert en welk soort gegevens wordt vereist en aan de derde wordt doorgegeven.
+Wanneer het selecteren van een derdeleverancier, zouden de ondernemingen een eenvoudige en efficiënte benadering voor integratie moeten gebruiken die aan hun behoeften voldoet. Nadat u de behoeften van de klant hebt begrepen, neemt u met de hulp van de belanghebbende een gedetailleerd plan op. Nadat u een beslissing hebt genomen over het plan, stelt u een specificatiedocument in waarin wordt gedefinieerd hoe het systeem communiceert en welk soort gegevens wordt vereist en aan de derde wordt doorgegeven.
 
 >[!NOTE]
 >
@@ -41,4 +40,4 @@ en een doeltreffende integratieaanpak die aan hun behoeften voldoet. Nadat u de 
 - Marktplaatsen
 - E-mailmarketing
 - Sociaal
-- Google Shopping, Tagbeheer en andere API-feeds
+- Google Shopping, Tag Manager en andere API-feeds

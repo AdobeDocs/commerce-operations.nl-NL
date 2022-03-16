@@ -1,23 +1,23 @@
 ---
-title: Project Governance
+title: Projectbeheer
 description: Pas onze aanbevelingen voor projectbeheer toe op uw Adobe Commerce-implementatie.
-source-git-commit: 748c302527617c6a9bf7d6e666c6b3acff89e021
+exl-id: adf53a2a-1673-441a-84d3-4cdda47d6aa5
+source-git-commit: e76f101df47116f7b246f21f0fe0fa72769d2776
 workflow-type: tm+mt
 source-wordcount: '474'
 ht-degree: 0%
 
 ---
 
+# Projectbeheer
 
-# Project governance
+Projectbeheer is een toezichtfunctie die is afgestemd op de governancestructuur van de organisatie en de levenscyclus van het project omvat. Het voorziet de projectmanager en het team van structuur, processen, besluitvormingsmodellen, en hulpmiddelen om het project te beheren en te controleren, terwijl ook het verzekeren van de succesvolle levering van het project. Projectgovernance is een cruciaal element, met name voor complexe en strategische projecten.
 
-Project governance is an oversight function aligned with the organization’s governance structure and encompasses the project life cycle. It provides the project manager and team with structure, processes, decision-making models, and tools for managing and controlling the project, while also ensuring the successful delivery of the project. Projectgovernance is een cruciaal element, met name voor complexe en strategische projecten.
+Het governancemodel definieert, documenteert en communiceert aangepaste en effectieve praktijken om een uitgebreide methode te bieden voor het beheren van het project en het periodiek zichtbaar maken op elk niveau om succes te waarborgen. Het bevat een kader voor het nemen van besluiten; omschrijft de rollen, verantwoordelijkheden en aansprakelijkheid voor de uitvoering van het project; en regelt de doeltreffendheid. De governancestructuur rolt van het uitvoeringsteam helemaal naar het uitvoerend management en definieert de activiteiten, rapportage, escalatie en informatiestroom.
 
-Het governancemodel definieert, documenteert en communiceert aangepaste en effectieve praktijken om een uitgebreide methode te bieden voor het beheren van het project en het periodiek zichtbaar maken op elk niveau om succes te waarborgen. It contains a framework for making decisions; defines roles, responsibilities, and liabilities for the accomplishment of the project; and governs the effectiveness. The governance structure rolls up from the execution team all the way to executive management, defining the activities, reporting, escalation, and information flow.
+![Infografisch projectbeheer](../../assets/playbooks/project-governance.svg)
 
-![Project governance infographic](../../assets/playbooks/project-governance.svg)
-
-Op diverse niveaus, onderzoeken de teams specifieke sprint en projectmetriek om de vooruitgang te begrijpen en correctieve acties te nemen zoals nodig. Deze gegevens op sprintniveau kunnen de snelheid en uitbarsting van elke sprint omvatten.
+Op diverse niveaus, onderzoeken de teams specifieke sprint en projectmetriek om de vooruitgang te begrijpen en correctieve acties te nemen zonodig. Deze gegevens op sprintniveau kunnen de snelheid en uitbarsting van elke sprint omvatten.
 
 ## Regelmatige vergaderdetails
 
@@ -25,27 +25,27 @@ Op diverse niveaus, onderzoeken de teams specifieke sprint en projectmetriek om 
 
    - Bespreek groeiescalatiestrategieën
 
-   - Highlight current success &amp; goals
+   - Huidig succes en doelen benadrukken
 
-   - Align on desired outcomes for the coming quarters
+   - Uitlijnen op gewenste resultaten voor de komende kwartalen
 
-- Monthly steering committee
+- Maandelijkse stuurgroep
 
-   - Coordinate and review project progress
+   - De voortgang van het project coördineren en evalueren
 
-   - Decision making on major impact items (if any)
+   - Besluitvorming inzake belangrijke-effectposten (indien van toepassing)
 
    - Dentsule zorgt ervoor dat klanttevredenheid en zorgen worden vastgelegd en aangepakt
 
 - Wekelijks projectcomité
 
-   - Decide on objectives, plan, organization for the week
+   - Beslissen over de doelstellingen, het plan en de organisatie van de week
 
-   - Make architecture decisions as needed
+   - Architectuurbeslissingen nemen waar nodig
 
    - Evalueren en reageren op rapporten over de projectstatus
 
-   - Demos the platform and features
+   - Demonstreert het platform en de functies
 
    - Verzoeken/problemen/suggesties doorverwijzen
 
@@ -67,13 +67,13 @@ Afgezien van de sprintmetriek is het ook van essentieel belang om project en kwa
 
 ![Voorbeeldsprint en uitvouwdiagram](../../assets/playbooks/sprint-release-burndown.svg)
 
-Challenges or changes occur throughout the duration of any project. Empowering the right people within your organization with the ability to track, measure, and pivot when a challenge is met is going to increase the likelihood that you come out of the project having met your goals and are satisfied with the result.
+De uitdagingen of de veranderingen komen tijdens de duur van om het even welk project voor. Door de juiste mensen binnen uw organisatie de mogelijkheid te geven om te volgen, te meten en te roteren wanneer een uitdaging wordt aangegaan, wordt de kans groter dat u uit het project komt omdat u uw doelstellingen hebt bereikt en tevreden bent met het resultaat.
 
 <table>
 <thead>
   <tr>
     <th>Meting van de belangrijkste prestaties</th>
-    <th>Unit of Measure</th>
+    <th>Maateenheid</th>
     <th>Gerapporteerde cijfers</th>
   </tr>
 </thead>
@@ -84,24 +84,24 @@ Challenges or changes occur throughout the duration of any project. Empowering t
     <td>Aantal testvoorschriften waarop de testgevallen betrekking hebben VS Totaal aantal testvoorschriften op basis van tests</td>
   </tr>
   <tr>
-    <td>Defect Density</td>
+    <td>Dichtheid beschermen</td>
     <td>%</td>
-    <td># of valid Defects found VS Total of Test cases executed</td>
+    <td>Aantal gevonden geldige defecten VS Totaal van uitgevoerde testgevallen</td>
   </tr>
   <tr>
-    <td>Defect Leakage to SIT/ UAT / Production</td>
+    <td>Lekking naar SIT/UAT/productie defect</td>
     <td>%</td>
     <td>Defecten gerapporteerd in Productie VS Defecten gerapporteerd in Productie + Defecten gerapporteerd door QA+UAT</td>
   </tr>
   <tr>
-    <td>Test Effectiveness</td>
+    <td>Doeltreffendheid testen</td>
     <td>%</td>
-    <td>Valid Defects raised/Valid Defects raised Rejected defects</td>
+    <td>Geldige Defecten opgeheven/Geldige Defecten opgeheven Geweigerde gebreken</td>
   </tr>
   <tr>
     <td>Codekwaliteit</td>
     <td># + %</td>
-    <td>Complexity, LoC, Violations, Code coverage for the sprint</td>
+    <td>Complexiteit, LoC, Overtredingen, Codedekking voor sprint</td>
   </tr>
 </tbody>
 </table>

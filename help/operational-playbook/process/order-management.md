@@ -1,18 +1,17 @@
 ---
 title: Orderbeheer
 description: Leer hoe een systeem van het ordebeheer voor uw e-commerce zaken essentieel is.
-source-git-commit: 226f1925d9ca628c94b67a86888084a21cd7e336
+exl-id: 62edc895-d725-4252-9a43-e03427579444
+source-git-commit: e76f101df47116f7b246f21f0fe0fa72769d2776
 workflow-type: tm+mt
 source-wordcount: '426'
 ht-degree: 0%
 
 ---
 
-
 # Orderbeheer
 
-Voor gloednieuwe bedrijven zijn de orderniveaus laag en is het eenvoudiger om
-volledige bestellingen tegen lagere kosten. Nochtans, wanneer de vraag stijgt de orden en het moeilijk wordt om orden met een klein team of door zich tegen lagere kosten te behandelen. U zou een grotere faciliteit, zoals een pakhuis of meer dan één pakhuis afhankelijk van de aard van de zaken kunnen nodig hebben, die kostbaar kan zijn en meer personeel vereist. Dit is waar het ordebeheer in het beeld komt.
+Voor gloednieuwe bedrijven zijn de orderniveaus laag en is het eenvoudiger om bestellingen tegen lagere kosten te voltooien. Nochtans, wanneer de vraag stijgt de orden en het moeilijk wordt om orden met een klein team of door zich tegen lagere kosten te behandelen. U zou een grotere faciliteit, zoals een pakhuis of meer dan één pakhuis afhankelijk van de aard van de zaken kunnen nodig hebben, die kostbaar kan zijn en meer personeel vereist. Dit is waar ordebeheer in het beeld komt.
 
 Het beheer van bestellingen helpt te voldoen aan de veranderende operationele vereisten voor het beheer van de vraag, de voorraad, de verpakking en de verzending. Het integreren van een Systeem van het Beheer van de Orde met het Platform kan ondernemingen helpen aan hun veranderende vereisten voldoen en klantentevredenheid, klantenbehoud, hogere omzettingspercentages, en merkloyaliteit drijven. Al deze factoren beïnvloeden direct en indirect de prestaties en de opbrengstgroei van uw zaken.
 

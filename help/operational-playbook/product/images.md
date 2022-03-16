@@ -1,13 +1,13 @@
 ---
 title: Productafbeeldingen
 description: Verstrek uw klanten van kwalitatief hoogstaande productbeelden en video's om gesprekstarieven te verhogen.
-source-git-commit: 226f1925d9ca628c94b67a86888084a21cd7e336
+exl-id: 080f177e-f668-4154-8a05-ea4724c29c5f
+source-git-commit: e76f101df47116f7b246f21f0fe0fa72769d2776
 workflow-type: tm+mt
 source-wordcount: '490'
 ht-degree: 0%
 
 ---
-
 
 # Productafbeeldingen
 
@@ -51,13 +51,13 @@ De verschillende types van beelden kunnen worden gebruikt volgens de vereisten v
 
 ## Aanbevolen procedures
 
-- **Demo het product**-als het product een bepaald doel heeft, dan demo het product om zijn functies en eigenschappen te tonen.
+- **Het product demo**—Als het product een bepaald doel heeft, demo dan het product om zijn functies en eigenschappen te tonen.
 
-- **Door gebruikers gegenereerde afbeeldingen** promoten: gebruikers kunnen hun afbeeldingen als revisie met het product uploaden om andere kopers te motiveren het product te kopen.
+- **Door de gebruiker gegenereerde afbeeldingen promoten**—Gebruikers uploaden hun afbeeldingen met het product als een review, wat andere kopers motiveert het product aan te schaffen.
 
-- **Weergave van 360 graden van het product** - Het uploaden van een video van 360 graden of GIF van het product kan een gedetailleerde mening aan de klant verstrekken en hen motiveren om het product te kopen.
+- **360 graden van het product**—Het uploaden van een video of GIF van 360 graden van het product kan de klant een gedetailleerd beeld verstrekken en hen motiveren om het product te kopen.
 
-- **Naamgevingsconventie**: maak het een regel om een naamgevingsconventie voor de productafbeelding te volgen. Hierdoor wordt de fout bij het uploaden van een onjuiste afbeelding voor een product tot een minimum beperkt en kan het team eenvoudig afbeeldingen beheren.
+- **Naamgevingsconventie**—Maak het een regel om een naamgevingsconventie voor de productafbeelding te volgen, die helpt de fout bij het uploaden van een onjuiste afbeelding voor een product tot een minimum te beperken en het team helpt om afbeeldingen eenvoudig te beheren.
 
 - **Pagina laden**—Upload geen afbeeldingen waardoor de laadtijd van de pagina langer wordt. Als een klant moet wachten tot het image wordt weergegeven, kan het zijn dat de klant de site verlaat.
 

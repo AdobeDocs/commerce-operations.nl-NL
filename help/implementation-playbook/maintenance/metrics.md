@@ -1,29 +1,29 @@
 ---
 title: Ondersteuningsmetriek
-description: De steun en het onderhoud van de controle voor uw implementatie van de Handel van de Adobe gebruikend gemeenschappelijke metriek.
-source-git-commit: 748c302527617c6a9bf7d6e666c6b3acff89e021
+description: Bewaak ondersteuning en onderhoud voor uw Adobe Commerce-implementatie met behulp van gangbare maatstaven.
+exl-id: a8171a08-3583-4c6a-bb18-158161be42d1
+source-git-commit: e76f101df47116f7b246f21f0fe0fa72769d2776
 workflow-type: tm+mt
 source-wordcount: '183'
 ht-degree: 0%
 
 ---
 
-
 # Ondersteuningsmetriek
 
 In het volgende diagram worden typische metingen/KPI&#39;s weergegeven die zijn verzameld en gerapporteerd voor L1-functies:
 
-![Diagram showing SLA metrics](../../assets/playbooks/sla-metrics.svg)
+![Diagram met SLA-meetgegevens](../../assets/playbooks/sla-metrics.svg)
 
-Measurement and reporting of L2 services (enhancements and optional services) are similar to development projects. De prestaties en de vooruitgang van de L2 teams worden gemeten door metriek zoals snelheid, codekwaliteit, testdoeltreffendheid, en productiviteit.
+De meting en rapportage van L2-diensten (verbeteringen en optionele diensten) zijn vergelijkbaar met ontwikkelingsprojecten. De prestaties en de vooruitgang van de L2 teams worden gemeten door metriek zoals snelheid, codekwaliteit, testdoeltreffendheid, en productiviteit.
 
-| Meting van de belangrijkste prestaties | Maateenheid | Reported Metrics |
+| Meting van de belangrijkste prestaties | Maateenheid | Gerapporteerde cijfers |
 |------------------------------|---------------------|------------------------------------------------------------------------------------|
-| Velocity | Getal | No. van verhaalpunten die het team kon leveren voor de sprint |
+| Snelheid | Getal | Nee. van verhaalpunten die het team kon leveren voor de sprint |
 | Efficiëntie van afdrukbetrokkenheid | Percentage | Totaal nr. van artikelpunten toegewezen Vs voor een afdruk |
-| Afdrukken doordrukken naar beneden | Number | Chart (Report, tracks the completion of work throughout the sprint) |
-| Code Quality | Getallen, percentage | Complexiteit, LoC, Overtredingen, Codedekking voor sprint |
-| Requirement volatility | Getal | # of requirements change/ total # requirements for the sprint |
-| Defect Density | Percentage | [Nee. van geldige defecten gevonden/Totaal aantal uitgevoerde tests]*100 voor sprint |
-| Doeltreffendheid testen | Percentage | [Geldige Defecten opgeheven/(Geldige Defecten opgeheven+ Afgewezen defecten)]*100 voor de sprint |
-| Productivity | Aantal (trend) | Story points delivered per sprint / capacity |
+| Afdrukken doordrukken naar beneden | Getal | Grafiek (Rapport, spoor de voltooiing van het werk door de sprint) |
+| Codekwaliteit | Getallen, percentage | Complexiteit, LoC, Overtredingen, Codedekking voor sprint |
+| Volgorde van vereisten | Getal | Aantal vereisten wijzigen/totaal # vereisten voor sprint |
+| Dichtheid beschermen | Percentage | [Nee. van geldige gevonden defecten/Totaal aantal uitgevoerde tests]*100 voor sprint |
+| Doeltreffendheid testen | Percentage | [Geldige Defecten verhoogd/(Geldige Defecten verhoogd+ Afgewezen defecten)]*100 voor sprint |
+| Productiviteit | Aantal (trend) | Artikelpunten per sprint/capaciteit |

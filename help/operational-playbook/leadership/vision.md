@@ -1,13 +1,13 @@
 ---
 title: Commerce Vision
-description: Vernieuw uw team door een visie voor uw Adobe Commerce-project tot stand te brengen.
-source-git-commit: 226f1925d9ca628c94b67a86888084a21cd7e336
+description: Vernieuw uw team door een visie voor uw Adobe Commerce-project te ontwikkelen.
+exl-id: 0eed719a-50fe-4ed7-9838-ec51d9b222b4
+source-git-commit: e76f101df47116f7b246f21f0fe0fa72769d2776
 workflow-type: tm+mt
 source-wordcount: '94'
 ht-degree: 0%
 
 ---
-
 
 # Vision
 

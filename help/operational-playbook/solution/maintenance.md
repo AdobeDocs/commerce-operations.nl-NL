@@ -1,13 +1,13 @@
 ---
 title: Onderhoud van handelsprojecten
 description: Vaststelling van hoge kwaliteitsnormen en vaststelling van mechanismen om deze normen in de loop der tijd te handhaven.
-source-git-commit: 226f1925d9ca628c94b67a86888084a21cd7e336
+exl-id: 8f394ae0-02c4-4efc-a313-40b8c48aecbb
+source-git-commit: e76f101df47116f7b246f21f0fe0fa72769d2776
 workflow-type: tm+mt
 source-wordcount: '709'
 ht-degree: 0%
 
 ---
-
 
 # Upgrades, back-ups en onderhoud
 
@@ -29,18 +29,17 @@ Door te bevorderen, bent u toekomstbestendig uw zaken en het geven van de capaci
 
 Hier volgt een korte lijst met vragen die u moet stellen wanneer u de upgrade wilt uitvoeren:
 
-- **Opschonen** van de plaats-wat kan ik houden en wat kan veranderen? Welke nieuwe dingen wil ik implementeren? Bijvoorbeeld, welke veranderingen wil ik in taxonomie en productstructuur, of veranderingen in inhoud aanbrengen?
+- **Site opschonen**—Wat kan ik behouden en wat kan veranderen? Welke nieuwe dingen wil ik implementeren? Bijvoorbeeld, welke veranderingen wil ik in taxonomie en productstructuur, of veranderingen in inhoud aanbrengen?
 
-- **Analysecontrole**-wat zijn mijn huidige KPIs? Wat vertellen mijn gegevens mij over hoe mijn site verbeterd kan worden? Zijn er nieuwe KPIs die ik voor mijn nieuwe plaats uitgevoerd wil?
+- **Analysecontrole**—Wat zijn mijn huidige KPIs? Wat vertellen mijn gegevens mij over hoe mijn site verbeterd kan worden? Zijn er nieuwe KPIs die ik voor mijn nieuwe plaats uitgevoerd wil?
 
-- **Extensies** - Heb ik ze nog steeds nodig? Welke uitbreidingen van derden dekken mijn behoeften?
+- **Extensies**—Heb ik ze nog steeds nodig? Welke uitbreidingen van derden dekken mijn behoeften?
 
-- **Integraties**—Welke systemen van derden, zoals ERP en boekhouding, moet ik integreren met? Hebben zij specifieke schakelaars of zijn douaneintegratie nodig?
+- **Integraties**—Met welke systemen van derden, zoals ERP en boekhouding, moet ik integreren? Hebben zij specifieke schakelaars of zijn douaneintegratie nodig?
 
-- **Training**: heeft het upgrademeam de juiste kennis en training? Wat is
-mijn plan om eindgebruikers op te leiden hoe ze de nieuwe beheerder kunnen gebruiken voordat deze live gaat ?
+- **Training**—Beschikt het verbeteringsteam over de juiste kennis en opleiding? Wat is mijn plan om eindgebruikers op te leiden hoe te om nieuwe admin te gebruiken alvorens het live gaat?
 
-- **Het team**-wie van de verbetering wordt gewijd aan het verbeteringsproject (zowel interne als externe deskundigen)? Hebben zij de nodige steun van leiders en andere interne teams?
+- **Upgradeteam**—Wie is gewijd aan het verbeteringsproject (zowel interne als externe deskundigen)? Hebben zij de nodige steun van leiders en andere interne teams?
 
 ## Algemene upgradevragen
 
@@ -53,9 +52,9 @@ V: Hoeveel kost een upgrade?
 
 A: Het hangt weer af van uw huidige situatie en uw vereisten voor uw nieuwe site. Het goede nieuws is dat de partners en de ontwikkelaars over het algemeen vertrouwd en met uw platform van de Handel zijn geworden, verbeteringskosten en projectlengten zijn gedaald. Wij adviseren het raadplegen met uw Partner van de Oplossing voor een schatting.
 
-V: Zijn Adobe Commerce 2 versies van mijn Adobe Commerce 1 uitbreidingen beschikbaar?
+V: Zijn Adobe Commerce 2-versies van mijn Adobe Commerce 1-extensies beschikbaar?
 
-A: Vrijwel alle bedrijfskritieke behoeften zijn gedekt. Van inhoud en aanpassingen, verschepen en vervulling aan plaatsoptimalisering, hebben wij een drastische toename in het aantal, en de diversiteit, van uitbreidingen in de Commerce Marketplace gezien aangezien de handels adoptie van, en partnervertrouwdheid met, de Handel van de Adobe is gegroeid.
+A: Vrijwel alle bedrijfskritieke behoeften zijn gedekt. Van inhoud en aanpassingen, de verscheping en de vervulling aan plaatsoptimalisering, hebben wij een drastische toename van het aantal, en de diversiteit, van uitbreidingen in de Commerce Marketplace gezien aangezien de handels adoptie van, en partnervertrouwdheid met Adobe Commerce is gegroeid.
 
 Voorbeelden van toonaangevende wereldwijde technologiebedrijven die extensies hebben gemaakt, zijn:
 

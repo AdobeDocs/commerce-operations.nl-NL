@@ -1,13 +1,13 @@
 ---
 title: Projectbeheer
 description: Pas bekende kaders toe om uw e-commerce project te beheren.
-source-git-commit: 226f1925d9ca628c94b67a86888084a21cd7e336
+exl-id: 514e2317-f409-4079-bdee-1596f6635467
+source-git-commit: e76f101df47116f7b246f21f0fe0fa72769d2776
 workflow-type: tm+mt
 source-wordcount: '378'
 ht-degree: 0%
 
 ---
-
 
 # Projectbeheer
 
@@ -20,7 +20,7 @@ In het volgende diagram worden de vijf fasen van projectbeheer en de levenscyclu
 De levenscyclus van het projectbeheer biedt een tijdig en gecontroleerd leveringsproces dat voordelen oplevert voor een; belanghebbenden. De eerste stap in het leveren van een succesvol e-commerceproject is projectbeheer. De juiste aanpak en methodologie is nodig om het team in staat te stellen het project effectief en efficiënt te leveren.
 
 
-Sommige teams kiezen de het projectbeheersmethodologie van het Trommel voor hun e-commerceprojecten. De hieronder vermelde functies van de trommel helpen het project te vergemakkelijken en te beheren:
+Sommige teams kiezen de methodiek van het projectbeheer van de Trommel voor hun e-commerce projecten. De hieronder vermelde functies van de trommel helpen het project te vergemakkelijken en te beheren:
 
 - Periodiek uitvoeren van taken
 - Periodiek uitvoeren van taken met betrekking tot achterstand vóór en tijdens de sprint
@@ -36,17 +36,17 @@ De hulp van het scherm beheert veranderingen tijdens het project, staat teams to
 
 Een elementair projectbeheerplan voor e-commerce omvat:
 
-- **Analyse** - In de eerste fase van een project, moet de onderneming analyse, met inbegrip van markt en concurrerende bedrijfsanalyse uitvoeren om de sterke en zwakke punten van de organisatie te begrijpen.
+- **Analyse**—In de eerste fase van een project moet het bedrijf een analyse uitvoeren, met inbegrip van een zakelijke analyse van de markt en de concurrenten, om inzicht te krijgen in de sterke en zwakke punten van de organisatie.
 
-- **Vereisten** - Bepaal gedetailleerde vereisten van wat de organisatie aan het eind van het project in termen van het verbeteren van bestaande vaardigheden en/of het uitvoeren van nieuwe eigenschappen en/of integratie wenst.
+- **Vereisten**—Gedetailleerde vereisten definiëren voor wat de organisatie aan het eind van het project wil bereiken met betrekking tot het verbeteren van bestaande vaardigheden en/of het implementeren van nieuwe functies en/of integratie.
 
-- **Leveranciers** van derden - In dit stadium kunt u de vereiste integratie van derden (bijvoorbeeld betaling, verzending, beoordelingen en revisies) uitlijnen.
+- **Leveranciers van derden**—In deze fase geeft u de vereiste integratie van derden (bijvoorbeeld betaling, verzending, beoordelingen en revisies) in kaart.
 
-- **Ontwerp**-brainstorm ontwerpspecifieke vereisten voor malplaatjes en het merkboek van het bedrijf.
+- **Ontwerp**—Ontwerpspecifieke vereisten voor brainstorm voor sjablonen en het merkboek van het bedrijf.
 
-- **Migratie** - Plan de stappen voor het migreren van inhoud en gegevens.
+- **Migratie**—Plan de stappen voor het migreren van inhoud en gegevens.
 
-- **Ecommerce platform**-analyseert en voltooit het platform dat voor de zaken wordt vereist om aan de vereisten te voldoen.
+- **E-commerceplatform**—Analyseer en voltooi het platform dat voor de zaken wordt vereist om aan de vereisten te voldoen.
 
 ## Aanbevolen procedures
 

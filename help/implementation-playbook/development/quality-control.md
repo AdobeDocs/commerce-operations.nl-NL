@@ -1,15 +1,15 @@
 ---
 title: Kwaliteitscontrole
-description: Leer over de kwaliteitscontroleprocessen van de Handel van de Adobe met betrekking tot implementatieprojecten.
-source-git-commit: 748c302527617c6a9bf7d6e666c6b3acff89e021
+description: Leer over de kwaliteitscontroleprocessen van Adobe Commerce met betrekking tot implementatieprojecten.
+exl-id: 0eb62b24-21f6-4cec-8ef9-eeaa1ee6ae52
+source-git-commit: e76f101df47116f7b246f21f0fe0fa72769d2776
 workflow-type: tm+mt
 source-wordcount: '658'
 ht-degree: 0%
 
 ---
 
-
-# Quality control process and tools
+# Kwaliteitscontroleproces en -instrumenten
 
 ![Diagram kwaliteitscontroleproces](../../assets/playbooks/quality-control-diagram.svg)
 
@@ -46,7 +46,7 @@ Het kwaliteitscontroleproces in het vorige diagram kan als volgt kort worden bes
   <tr>
     <td></td>
     <td>Analyse en ontwerp testen</td>
-    <td>Review and contribute to test plans</td>
+    <td>Evalueren en bijdragen aan testplannen</td>
     <td>Start het preparaat, specificaties</td>
   </tr>
   <tr>
@@ -100,7 +100,7 @@ Het kwaliteitscontroleproces in het vorige diagram kan als volgt kort worden bes
   <tr>
     <td>UAT</td>
     <td>UAT</td>
-    <td>Verify Customer Feedbacks or Change Requests (CRs)</td>
+    <td>Feedback van klant of wijzigingsverzoeken controleren</td>
     <td>Follow-up</td>
   </tr>
   <tr>
@@ -142,7 +142,7 @@ Het kwaliteitscontroleproces in het vorige diagram kan als volgt kort worden bes
 </tbody>
 </table>
 
-Net als de [tools](project-management-tools.md) die we voor het ontwikkelingsproces hebben geïdentificeerd, hebben we een handvol gekozen oplossingen en platforms geselecteerd die we vaak gebruiken voor het testen van de kwaliteit.
+Vergelijkbaar met de [gereedschappen](project-management-tools.md) wij hebben voor het ontwikkelingsproces een handvol gekozen oplossingen en platforms gekozen die wij vaak gebruiken voor het testen van de kwaliteitscontrole .
 
 | Doel | Gereedschap |
 |---------------------------|---------------------------------------------------|
@@ -176,11 +176,11 @@ Met Perfect Pixel kunnen ontwikkelaars en markeringsontwerpers een halftranspara
 
 BrowserStack is een testplatform voor cloud&#39;s en mobiele apparaten waarmee ontwikkelaars hun websites en mobiele toepassingen kunnen testen in browsers, besturingssystemen en mobiele apparaten op aanvraag.
 
-## API testing
+## API-tests
 
-Postman is het samenwerkingsplatform voor API-ontwikkeling. Postman simplifies each step of building an API and streamlines collaboration so you can create better APIs.
+Postman is het samenwerkingsplatform voor API-ontwikkeling. Postman vereenvoudigt elke stap van de bouw van API en stroomlijnt samenwerking zodat kunt u betere APIs tot stand brengen.
 
-SoapUI is een open-source webservice testtoepassing voor Simple Object Access Protocol (SOAP) en overdracht van representationele status (REST). Its functionality covers web-service inspection; invoking, development, simulation, and mocking; functional testing; load and compliance testing.
+SoapUI is een open-source webservice testtoepassing voor Simple Object Access Protocol (SOAP) en overdracht van representationele status (REST). De functionaliteit ervan omvat webservicecontrole; aanroepen, ontwikkelen, simuleren en roken; functionele tests; belasting- en conformiteitstests.
 
 ## Automatiseringstests
 

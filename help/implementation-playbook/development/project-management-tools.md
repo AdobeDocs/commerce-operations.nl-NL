@@ -1,17 +1,17 @@
 ---
 title: Projectbeheertools
-description: Kies de geadviseerde hulpmiddelen van het projectbeheer voor uw implementatie van de Handel van de Adobe.
-source-git-commit: 748c302527617c6a9bf7d6e666c6b3acff89e021
+description: Kies de aanbevolen tools voor projectbeheer voor uw Adobe Commerce-implementatie.
+exl-id: 5c87d762-06ce-4716-946a-f0fe5348fa18
+source-git-commit: e76f101df47116f7b246f21f0fe0fa72769d2776
 workflow-type: tm+mt
 source-wordcount: '373'
 ht-degree: 0%
 
 ---
 
-
 # Projectbeheertools
 
-Moving out of the actual Adobe Commerce environment, but equally important, are the tools and solutions that make collaboration and the entire development process as smooth as possible.
+De middelen en oplossingen die samenwerking en het hele ontwikkelingsproces zo soepel mogelijk maken, zijn even belangrijk als de eigenlijke Adobe Commerce-omgeving.
 
 De volgende tabel bevat aanbevolen projectbeheertools:
 
@@ -29,11 +29,11 @@ De volgende tabel bevat aanbevolen projectbeheertools:
 
 Het Beheer van de Dienst van Jira machtigt ontwikkelings en verrichtingenteams om aan een hoge snelheid samen te werken zodat zij aan bedrijfsveranderingen kunnen antwoorden en grote klant en de dienstervaringen van de werknemersdienst snel leveren.
 
-## Document Management
+## Documentbeheer
 
-Confluence is great tool to build, organize, and collaborate on work in one place from virtually anywhere. De verbinding wordt geleverd met best practices-sjablonen, dus u hoeft het wiel niet opnieuw uit te vinden. Get started easily and maintain consistency across teams and projects.
+Het samenleven is een fantastisch hulpmiddel om op één plaats van vrijwel overal aan het werk te bouwen, te organiseren en aan het werk samen te werken. De verbinding wordt geleverd met best practices-sjablonen, dus u hoeft het wiel niet opnieuw uit te vinden. Ga eenvoudig aan de slag en zorg voor consistentie tussen teams en projecten.
 
-## Ticket Management
+## Ticket-beheer
 
 Jira is een systeem voor het bijhouden en beheren van tickets (inclusief versie- en releasebeheer) met krachtige functies, zoals:
 
@@ -46,7 +46,7 @@ Jira is een systeem voor het bijhouden en beheren van tickets (inclusief versie-
 
 Bitbucket is meer dan alleen Git-codebeheer. Bitbucket geeft teams één plaats om projecten te plannen, aan code samen te werken, te testen, en op te stellen. Met Bitbucket kunt u code-revisies efficiënter goedkeuren met pull-aanvragen. U kunt ook een samengevoegde checklist met aangewezen fiatteurs maken en discussies direct in de broncode met inline commentaren houden.
 
-GitHub is similar to Bitbucket, which is also used in some projects.
+GitHub is gelijkaardig aan Bitbucket, die ook in sommige projecten wordt gebruikt.
 
 ## Communicatie
 

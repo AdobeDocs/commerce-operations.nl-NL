@@ -1,13 +1,13 @@
 ---
 title: Methodologie voor projectuitvoering
-description: Krijg vertrouwd met hoe de softwarelevering van de Adobe Commerce werkt.
-source-git-commit: 748c302527617c6a9bf7d6e666c6b3acff89e021
+description: Ga vertrouwd met de werking van Adobe Commerce-software.
+exl-id: 579cd083-8b12-49ff-bc8a-8db1ca588d74
+source-git-commit: e76f101df47116f7b246f21f0fe0fa72769d2776
 workflow-type: tm+mt
 source-wordcount: '339'
 ht-degree: 0%
 
 ---
-
 
 # Methode voor projectuitvoering
 

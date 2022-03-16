@@ -1,17 +1,17 @@
 ---
 title: Klikken en verzamelen
 description: Volg deze tien tips om een prachtige klik te leveren en ervaringen voor uw klanten te verzamelen.
-source-git-commit: 226f1925d9ca628c94b67a86888084a21cd7e336
+exl-id: 5f5743ac-75a5-41f1-8819-2de088f56387
+source-git-commit: e76f101df47116f7b246f21f0fe0fa72769d2776
 workflow-type: tm+mt
 source-wordcount: '802'
 ht-degree: 0%
 
 ---
 
+# Click and collect
 
-# Klikken en verzamelen
-
-Klik en verzamel is een integraal onderdeel geworden van omni-channel strategieën omdat dit de toename van het verbruik, de ervaring van de klant en het investeringsrendement bevordert. Klikken en verzamelen is niet meer alleen voor grote supermarkten, maar maakt ook deel uit van zowel B2B- als B2C-organisaties.
+Click and collect has become an integral part of omni-channel strategies because it promotes increase in footfall, customer experience, and ROI. Click and collect is no longer just for big supermarkets, it is becoming a part of both B2B and B2C organizations.
 
 ![Afbeeldingen in een cirkel](../../assets/playbooks/shoes.png)
 
@@ -20,7 +20,7 @@ Klik en verzamel is een integraal onderdeel geworden van omni-channel strategie�
 De ondernemingen zouden deze tien uiteinden moeten volgen om de goede klik te leveren en de dienst te verzamelen:
 
 - Leveren
-- Aanbieding
+- Promotion
 - Beschikbaarheid van voorraden
 - Winkellocatie
 - Mobiel
@@ -34,21 +34,21 @@ De ondernemingen zouden deze tien uiteinden moeten volgen om de goede klik te le
 
 Wanneer het beslissen om te voeren klik en verzamelt, moeten de ondernemingen overwegen hoe zij van plan zijn om te leveren klik en aan klanten, zoals de diensttypes verzamelen:
 
-- **Online betaling en in-store** innen - De gebruiker betaalt het product online en nadat de betaling is bevestigd, brengt de winkel de klant op de hoogte wanneer het product gereed is om te worden ingezameld op basis van de keuze van de winkel van de klant. Als u de betaling int, kunt u het product beter reserveren.
+- **Online betaling en in-store verzamelen**—De gebruiker betaalt het product online en nadat de betaling is bevestigd, brengt de winkel de klant op de hoogte wanneer het product gereed is om te worden ingezameld op basis van de keuze van de winkel van de klant. Als u de betaling int, kunt u het product beter reserveren.
 
-- **Het product online, de betaling en de inzameling van de reserve in opslag**-In dit de diensttype betaalt de klant niet online wanneer het reserveren van een product. In dit type van dienst, kan de klant hun mening veranderen en zou niet het product kunnen kopen.
+- **Onlineproduct, betaling en inzameling in de winkel reserveren**—In dit servicetype betaalt de klant niet online bij het reserveren van een product. In this type of service, the customer can change their mind and might not purchase the product.
 
-- **Integratie**-nadat het leveringstype wordt geselecteerd, moeten de ondernemingen op integratiestructuur besluiten (waar de orden worden verzonden, waar de orden worden vervuld). De voorraad kan worden aangelegd vanuit een centraal entrepot of rechtstreeks vanuit afzonderlijke opslagplaatsen.
+- **Integratie**—Nadat het leveringstype wordt geselecteerd, moeten de ondernemingen over integratiestructuur beslissen (waar de orden worden verzonden, waar de orden worden vervuld). De voorraad kan worden aangelegd vanuit een centraal entrepot of rechtstreeks vanuit afzonderlijke opslagplaatsen.
 
-- **Keert terug**-Keert terug kan complex zijn. De ondernemingen moeten een duidelijke strategie hebben om rendementen voor geleverde producten en producten te beheren die gebruikend klikken en worden bevolen te verzamelen. De ondernemingen moeten klanten toestaan om producten terug te keren die zij door te klikken en ontvangen om de klantendienst van begin tot eind te verlenen.
+- **Retourneert**—Retourneert kan complex zijn. De ondernemingen moeten een duidelijke strategie hebben om rendementen voor geleverde producten en producten te beheren die gebruikend klikken en worden bevolen te verzamelen. De ondernemingen moeten klanten toestaan om producten terug te keren die zij door te klikken en ontvangen om de klantendienst van begin tot eind te verlenen.
 
 ## Aanbieding
 
-Bedrijven moeten hun klik op de markt brengen en service verzamelen. Als niemand zich van de dienst bewust is, dan is het niet nuttig en zal niet het vereiste rendement op investering produceren. Hoewel de klik en de inzamelingsdiensten gewoonlijk het zelfde zijn, is het nog essentieel om aan de klant uit te leggen de stappen om te gebruiken klikken en te verzamelen.
+Bedrijven moeten hun klik op de markt brengen en service verzamelen. If no one is aware of the service, then it isn&#39;t useful and will not generate the required return on investment. Even though click and collect services are usually the same, it is still essential to explain to the customer the steps to use click and collect.
 
 ## Beschikbaarheid van voorraden
 
-De ondernemingen moeten voorraadniveaus in real time aan klanten tonen wanneer zij klikken en verzamelen selecteren. Dit toont het voorraadniveau aan klanten in hun aangewezen opslag. Om dit goed te laten functioneren, moet het pakhuis en het e-commerce platform worden geïntegreerd om de inventarisniveaus in controle te houden en klaagklachten van klanten te vermijden.
+Businesses need to display real-time stock levels to customers when they select click and collect. This displays the stock level to customers in their preferred store. Om dit goed te laten functioneren, moet het pakhuis en het e-commerce platform worden geïntegreerd om de inventarisniveaus in controle te houden en klaagklachten van klanten te vermijden.
 
 ## Winkellocatie
 
@@ -68,7 +68,7 @@ Als niet alle producten die een bedrijf op de website verkoopt, beschikbaar zijn
 
 ## Status van bestelling
 
-Communicatie is zeer belangrijk voor de klantendienst zelfs wanneer het komt om te klikken en te verzamelen. Het is belangrijk dat de orderstatus na aankoop wordt meegedeeld, bijvoorbeeld waar en wanneer zij hun bestelling moeten verzamelen, en of zij persoonlijke identificatie moeten aanbrengen om hun bestelling te verzamelen. De status moet niet alleen via SMS of e-mail worden doorgegeven, maar ook op de site in de volgorde van bijhouden.
+Communicatie is zeer belangrijk voor de klantendienst zelfs wanneer het komt om te klikken en te verzamelen. Communicating the order status after purchase, such as where and when they should collect their order, and whether they must bring personal identification to collect their order is important. De status moet niet alleen via SMS of e-mail worden doorgegeven, maar ook op de site in de volgorde van bijhouden.
 
 ## Aanvullende kosten
 

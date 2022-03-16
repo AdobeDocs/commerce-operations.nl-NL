@@ -86,7 +86,7 @@ U moet de opdracht [upgradevoorwaarden](../prepare/prerequisites.md) om uw omgev
 
    - `<product>` —(Vereist) Het pakket dat moet worden bijgewerkt. Voor installaties ter plaatse moet deze waarde ofwel `product-community-edition` of `product-enterprise-edition`.
 
-   - `<version>` —(Vereist) De versie van Adobe Commerce of Magento Open Source waarnaar u een upgrade uitvoert. Bijvoorbeeld: `2.4.3`.
+   - `<version>` —(Vereist) De versie van Adobe Commerce of Magento Open Source waarnaar u een upgrade uitvoert. Bijvoorbeeld, `2.4.3`.
 
    - `--no-update` — (Vereist) maakt de automatische update van de gebiedsdelen onbruikbaar.
 

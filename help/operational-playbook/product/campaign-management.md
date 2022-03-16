@@ -1,13 +1,13 @@
 ---
 title: Campagnebeheer
 description: Structuur uw e-commerce campagnes om uw bedrijfsvereisten aan te passen.
-source-git-commit: 226f1925d9ca628c94b67a86888084a21cd7e336
+exl-id: 466f2f83-ea19-4230-b33b-4435974effb7
+source-git-commit: e76f101df47116f7b246f21f0fe0fa72769d2776
 workflow-type: tm+mt
 source-wordcount: '255'
 ht-degree: 0%
 
 ---
-
 
 # Campagnebeheer
 
@@ -34,10 +34,10 @@ Het volledige model van e-commerce wordt geplaatst op de website, wat betekent d
 
 Verschillen tussen B2B- en B2C-campagnebeheer:
 
-- **Ontwikkel verhouding**-B2B gebruikt campagnebeheer om relaties op lange termijn te bouwen, terwijl B2C campagnebeheer gebruikt om relaties op korte termijn te bouwen
+- **Ontwikkelen van relatie**—B2B gebruikt campagnebeheer om langetermijnrelaties op te bouwen, terwijl B2C campagnebeheer gebruikt om kortetermijnrelaties op te bouwen
 
 - **Branding**—B2B-campagnebeheer richt zich meer op het genereren van leads, terwijl B2C zich richt op merkwaarde
 
-- **Besluitvorming** - B2B campagnebesluiten zijn logisch, terwijl B2C campagnebesluiten emotioneel zijn
+- **Besluitvorming**—B2B-campagnebeslissingen zijn logisch, terwijl B2C-beslissingen emotioneel zijn
 
 - **Publiek**—B2B-campagnebeheer omvat meerdere belanghebbenden, terwijl B2C-campagnebeheer gericht is op individuele eindgebruikers

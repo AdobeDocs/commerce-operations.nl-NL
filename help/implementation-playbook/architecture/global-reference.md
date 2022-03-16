@@ -45,4 +45,4 @@ GRA-effecten:
 
 - Hoe nieuwe markten worden ingeschakeld
 
-   - Vereenvoudigt het vrijgeven van meerdere kanalen en markten die anders aanzienlijk meer tijd en geld zouden kosten.
+   - Vereenvoudigt de vrijgave van meerdere kanalen en markten die anders aanzienlijk meer tijd en geld zouden kosten.

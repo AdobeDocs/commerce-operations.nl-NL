@@ -1,13 +1,13 @@
 ---
 title: Afhandelingsstromen en -verwerking
 description: Verhoog de conversiesnelheden door uw klanten een naadloze kassa te bieden.
-source-git-commit: 226f1925d9ca628c94b67a86888084a21cd7e336
+exl-id: 692236fd-b909-4061-8038-0db19e0ed72b
+source-git-commit: e76f101df47116f7b246f21f0fe0fa72769d2776
 workflow-type: tm+mt
 source-wordcount: '680'
 ht-degree: 0%
 
 ---
-
 
 # Afhandelingsstromen en -verwerking
 
@@ -47,7 +47,7 @@ Gebruik schone en vette CTA-knoppen met een eenvoudig paginaontwerp.
 
 Klanten die online winkelen maken zich altijd zorgen over beveiliging. Geef het volgende op de site weer om klanten zekerheid te bieden:
 
-- Geloofsaccreditaties zoals Norton Secure, MacAfee Secure en Google Trusted Store
+- Geloofsgoedkeuringen zoals Norton Secure, MacAfee Secure en Google Trusted Store
 - SSL-certificaten
 - Logo&#39;s betalingsmethode
 - Waarderingen en beoordelingen
@@ -68,7 +68,7 @@ U mag niet één type optie op de gebruiker afdwingen.
 
 Detailhandelaars moeten verschillende verzendmethoden bieden om aan de behoeften van verschillende klanten te voldoen.
 
-Naast betalingsopties kunnen detailhandelaren ook opties bieden, zoals [klikken en verzamelen](click-collect.md).
+Naast betalingsopties kunnen detailhandelaren ook opties bieden zoals [klikken en verzamelen](click-collect.md).
 
 ## Betalingsgegevens
 
@@ -92,7 +92,7 @@ Sommige detailhandelaren leveren ook promotieberichten als de gebruiker zich als
 
 Volg altijd de bevestiging van de bestelling op met een bevestigingsbericht voor bestellingen waarin alle gegevens van de bestelling en de functie voor het bijhouden van de bestelling worden beschreven.
 
-Afhandeling is een drijvende kracht om de omrekeningskoers te verhogen naar een verhoging van het rendement. Het afrekenproces moet worden gestroomlijnd om een gebruiksvriendelijke, snelle en handige afrekenervaring te bieden. Het is niet één maat voor iedereen wat betreft de kassa en het proces, zodat het voor detailhandelaren van essentieel belang is om de beste opties te onderzoeken, te analyseren en te testen.
+Afhandeling is een drijvende kracht om de omrekeningskoers te verhogen naar een verhoging van het rendement. Het afrekenproces moet worden gestroomlijnd om een gebruiksvriendelijke, snelle en handige afrekenervaring te bieden. Het is niet één maat voor iedereen als het gaat om de afrekenstroom en het proces. Het is dus van essentieel belang dat detailhandelaren de beste opties onderzoeken, analyseren en testen.
 
 ## B2C- en B2B-uitchecksysteem
 

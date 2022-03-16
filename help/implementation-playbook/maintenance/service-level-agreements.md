@@ -1,21 +1,21 @@
 ---
 title: Serviceovereenkomsten
-description: Leer over de overeenkomsten van het de dienstniveau en hoe te om hen te gebruiken om uw implementatie van de Handel van de Adobe te steunen.
-source-git-commit: 748c302527617c6a9bf7d6e666c6b3acff89e021
+description: Meer informatie over serviceniveau-overeenkomsten en hoe u deze kunt gebruiken om uw Adobe Commerce-implementatie te ondersteunen.
+exl-id: 5da42dfa-e165-4142-a863-6f3ce7689478
+source-git-commit: e76f101df47116f7b246f21f0fe0fa72769d2776
 workflow-type: tm+mt
 source-wordcount: '226'
 ht-degree: 1%
 
 ---
 
-
 # Serviceovereenkomsten (SLA&#39;s)
 
-The service-level agreement (SLA) defines the level of service expected by a customer from the service provider, with simple metrics by which that service is measured, as well as the remedies or penalties, if any, should the agreed-upon service levels not be achieved.
+De dienst-vlakke overeenkomst (SLA) bepaalt het niveau van de dienst die door een klant van de dienstverlener wordt verwacht, met eenvoudige metriek waardoor die dienst wordt gemeten, evenals de verhaalsmogelijkheden of sancties, als om het even welk, overeengekomen de dienstniveaus niet worden bereikt.
 
-De SLA&#39;s voor verschillende soorten incidentkritiek kunnen worden gecontracteerd, onderhouden en gemeten. Further, the response type can have multiple standards (Gold, Platinum), based on the level of service required by the customer.
+De SLA&#39;s voor verschillende soorten incidentkritiek kunnen worden gecontracteerd, onderhouden en gemeten. Bovendien kan het type reactie meerdere standaarden hebben (Gold, Platinum), op basis van het serviceniveau dat de klant nodig heeft.
 
-The following table describes a typical SLA metric breakdown with multiple service levels:
+De volgende lijst beschrijft een typische metrische verdeling van SLA met veelvoudige de dienstniveaus:
 
 <table>
 <thead>
@@ -37,7 +37,7 @@ The following table describes a typical SLA metric breakdown with multiple servi
     <td>Kritieke impact</td>
     <td>Service uitgeschakeld of onbruikbaar</td>
     <td>1 uur / 4 uur</td>
-    <td>1 hour / 4 hours</td>
+    <td>1 uur/4 uur</td>
   </tr>
   <tr>
     <td></td>
@@ -58,7 +58,7 @@ The following table describes a typical SLA metric breakdown with multiple servi
     <td>Hoge impact</td>
     <td>Service ernstig verstoord</td>
     <td>2 uur / 12 uur</td>
-    <td>2 hours / 8 hours</td>
+    <td>2 uur/8 uur</td>
   </tr>
   <tr>
     <td></td>
@@ -91,15 +91,15 @@ The following table describes a typical SLA metric breakdown with multiple servi
   <tr>
     <td></td>
     <td></td>
-    <td>Questions about features used in customer launch</td>
+    <td>Vragen over functies die worden gebruikt bij het starten van de klant</td>
     <td></td>
     <td></td>
   </tr>
 </tbody>
 </table>
 
-## Coverage options
+## Dekkingsopties
 
 De dekkingsopties voor toegezegde SLAs variëren met verschillende soorten het aanbieden. Doorgaans ziet het bereik van Gold- en Platinum-supportservices er ongeveer als volgt uit:
 
-![Infographic showing SLA coverage options](../../assets/playbooks/sla-coverage-options.svg)
+![Infografisch tonen van SLA-dekkingsopties](../../assets/playbooks/sla-coverage-options.svg)

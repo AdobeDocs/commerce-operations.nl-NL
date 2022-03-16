@@ -1,13 +1,13 @@
 ---
 title: Resporteren en dashboards
-description: 'De controle KPIs, spoorverkoop, en meet het succes van uw plaats van de Handel met rapporten en dashboards. '
-source-git-commit: 226f1925d9ca628c94b67a86888084a21cd7e336
+description: De controle KPIs, spoorverkoop, en meet het succes van uw plaats van de Handel met rapporten en dashboards.
+exl-id: 7b57c11b-ff32-440f-85bd-6b6d09c522b7
+source-git-commit: e76f101df47116f7b246f21f0fe0fa72769d2776
 workflow-type: tm+mt
 source-wordcount: '497'
 ht-degree: 0%
 
 ---
-
 
 # Rapportage en dashboards
 
@@ -37,16 +37,16 @@ Er gebeurt zoveel in een handel in elektronische handel dat het moeilijk kan zij
 
 De belangrijkste vier rapporten en dashboards B2B bedrijven gebruiken omvatten:
 
-- **Bedrijfsprofiel** - B2B-bedrijven moeten hun profielen van het cliëntbedrijf volgen om hun aankoopgeschiedenis, betalingsdetails te begrijpen, en welk kanaal zij gebruikten om te kopen. Dit dashboard kan helpen potentiële risico&#39;s en kwesties identificeren.
+- **Bedrijfsprofiel**—B2B-bedrijven moeten hun bedrijfsprofielen van hun clientbedrijf bijhouden om inzicht te krijgen in hun aankoopgeschiedenis, betalingsgegevens en welk kanaal ze gebruikten om te kopen. Dit dashboard kan helpen potentiële risico&#39;s en kwesties identificeren.
 
-- **Catalogus** - Een catalogusrapport en een dashboard helpen B2B-bedrijven de prestaties van elk product in de catalogus, de promoties, en de inventarisniveaus bekijken, die helpen identificeren welk soort bevordering het beste werkt en welke producten in vraag zijn. Hierdoor kunnen bedrijven hun voorraad op voorraad houden en een concurrentievoordeel behalen.
+- **Catalogus**—Een catalogusrapport en een dashboard helpen B2B-bedrijven de prestaties van elk product in de catalogus, de promoties en de inventarisniveaus te bekijken. Zo kunnen ze vaststellen wat voor soort promotie het beste werkt en welke producten er nodig zijn. Hierdoor kunnen bedrijven hun voorraad op voorraad houden en een concurrentievoordeel behalen.
 
-- **Aanhalingstekens** - Het B2B bedrijfsmodel werkt op noteringen en tarifering. B2B-bedrijven moeten een proces doorlopen waarbij ze een prijsopgave analyseren, zodat ze deze kunnen goedkeuren of proberen te onderhandelen. Een citaatrapport en een dashboard helpen uw tarief van de citaatomzetting verbeteren door het succestarief, de mededingingstarieven, prestaties, en algemeen klantenbehoud te volgen.
+- **Aanhalingstekens**—Het B2B-bedrijfsmodel is gebaseerd op noteringen en prijzen. B2B-bedrijven moeten een proces doorlopen waarbij ze een prijsopgave analyseren, zodat ze deze kunnen goedkeuren of proberen te onderhandelen. Een citaatrapport en een dashboard helpen uw tarief van de citaatomzetting verbeteren door het succestarief, de mededingingstarieven, prestaties, en algemeen klantenbehoud te volgen.
 
-- **Verkoop**-alhoewel de ondernemingen B2B online kunnen werken, is een verkoopvertegenwoordiger nog noodzakelijk om dingen te krijgen die in termen van het identificeren van citaten bewegen die onderhandeling vereisen, het volgen citaten die dicht bij het verlopen, het volgen contracten die omhoog voor vernieuwing zijn, het volgen teamprestaties, en het helpen dagelijkse bedrijfsactiviteiten stroomlijnen.
+- **Verkoop**—Hoewel de ondernemingen B2B online kunnen werken, is een verkoopvertegenwoordiger nog noodzakelijk om dingen te krijgen die in termen van het identificeren van citaten bewegen die onderhandeling vereisen, het volgen van citaten die dicht bij het verlopen, het volgen van contracten die omhoog voor vernieuwing zijn, het volgen teamprestaties, en het helpen dagelijkse bedrijfsactiviteiten stroomlijnen.
 
 ## Beter samenwerken
 
-Merchants die op zoek zijn naar een manier om gedragsgegevens met transactiegegevens te correleren, kunnen Adobe Commerce Reporting en Adobe Analytics gebruiken om een nauwkeuriger inzicht te krijgen in hoe marketingactiviteiten kerngegevens op het gebied van e-commerce beïnvloeden.
+Handelaars die op zoek zijn naar een manier om gedragsgegevens te correleren met transactiegegevens kunnen Adobe Commerce Reporting en Adobe Analytics gebruiken om een nauwkeuriger inzicht te krijgen in hoe marketingactiviteiten de belangrijkste gegevens op het gebied van e-commerce beïnvloeden.
 
 ![Rapportageschema](../../assets/playbooks/reporting-diagram.png)

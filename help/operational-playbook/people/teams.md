@@ -1,13 +1,13 @@
 ---
 title: Teams
 description: Leer over de verschillende soorten teams die e-commerceprojecten succesvol maken.
-source-git-commit: 226f1925d9ca628c94b67a86888084a21cd7e336
+exl-id: b1a007b2-49ff-475f-9ad7-5fa100cdfa3b
+source-git-commit: e76f101df47116f7b246f21f0fe0fa72769d2776
 workflow-type: tm+mt
 source-wordcount: '1224'
 ht-degree: 0%
 
 ---
-
 
 # Teams
 
@@ -75,7 +75,7 @@ De managers op C-niveau willen altijd dat hun organisaties op het optimale nivea
 
 C-niveau en andere topmanagement buy-in is essentieel voor het succes van een groot project voor e-commerce. Het vereist directe betrokkenheid en juiste communicatie over alle teams.
 
-Aangezien de e-commerceprojecten vaak met de technologie eerder dan de zaken beginnen, is het zeldzaam dat zij op C-niveau voortkomen. Daarom is het belangrijk om het C-niveau zo snel mogelijk te betrekken en hen tot het eind bij het proces te houden. Het helpt verwachtingen in de hele organisatie in te stellen en belanghebbenden te informeren.
+Aangezien de e-commerceprojecten vaak met de technologie eerder dan de zaken beginnen, is het zeldzaam dat zij op C-niveau voortkomen. Daarom is het belangrijk om het C-niveau zo snel mogelijk te betrekken en hen tot het eind te houden betrokken. Het helpt verwachtingen in de hele organisatie in te stellen en belanghebbenden te informeren.
 
 Wanneer u een e-commerce-project begint, houd het C-niveau en de zaken in mening. Ze zijn vooral geïnteresseerd in de KPI&#39;s en ROI, maar door ze vanaf het begin op de reis te brengen, kunnen ze het doel begrijpen en wat de organisatie te winnen heeft.
 
@@ -87,8 +87,8 @@ Wanneer u een e-commerce-project begint, houd het C-niveau en de zaken in mening
 
 Er zijn andere teams die of deel van een bestaand team uitmaken of een stand-alone, die omvatten:
 
-- **Het team** van de inhoud-zij moeten met alle teams worden gericht om efficiënte inhoud tot stand te brengen. Inhoud op de site moet regelmatig worden bijgewerkt. Het team Inhoud is verantwoordelijk voor het instellen van inhoud op de productpagina, categoriepagina&#39;s, blog en voettekst. Hierdoor wordt het bezoekersverkeer van de site aangetrokken en wordt de conversiesnelheid verhoogd.
+- **Inhoudsteam**—Ze moeten worden uitgelijnd met alle teams om effectieve inhoud te maken. Inhoud op de site moet regelmatig worden bijgewerkt. Het team Inhoud is verantwoordelijk voor het instellen van inhoud op de productpagina, categoriepagina&#39;s, blog en voettekst. Hierdoor wordt het bezoekersverkeer van de site aangetrokken en wordt de conversiesnelheid verhoogd.
 
-- **Het team**-e-handelplaatsen van gegevens produceren veel gegevens die u, met inbegrip van klanteninformatie, het uitgeven gewoonten, populaire producten, en tijd kunt verzamelen en analyseren de plaats het meeste verkeer heeft. Het team van Gegevens verwerkt al deze informatie om inzicht te verstrekken over hoe de plaats functioneert en waar de plaats meer verbetering nodig heeft. Het team van Gegevens kan adviseren welke tendensen aanstaande zijn en waar de zaken zich moeten concentreren.
+- **Gegevensteam**—De plaatsen van de e-commerce produceren veel gegevens die u kunt verzamelen en analyseren, met inbegrip van klanteninformatie, bestedingsgewoonten, populaire producten, en tijd de plaats het meeste verkeer heeft. Het team van Gegevens verwerkt al deze informatie om inzicht te verstrekken over hoe de plaats functioneert en waar de plaats meer verbetering nodig heeft. Het team van Gegevens kan adviseren welke tendensen aanstaande zijn en waar de zaken zich moeten concentreren.
 
-- **Financieel en boekhoudingsteam**-Sommige ondernemingen hebben een klein team van Financiën en van de Rekeningen, dat of intern of extern kan zijn. Zij richten zich op het begroten, het voorspellen, en het beheren van het financiële aspect van het opzetten en het runnen van een e-commercesite.
+- **Financieel team**—Sommige ondernemingen hebben een klein team van Financiën en Boekhouding, dat of intern of extern kan zijn. Zij richten zich op het begroten, het voorspellen, en het beheren van het financiële aspect van het opzetten en het runnen van een e-commercesite.

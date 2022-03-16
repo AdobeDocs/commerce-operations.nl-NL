@@ -1,46 +1,46 @@
 ---
 title: Te leveren items
-description: Leer over de verschillende te leveren producten verbonden aan een implementatie van de Handel van de Adobe.
-source-git-commit: 748c302527617c6a9bf7d6e666c6b3acff89e021
+description: Meer informatie over de verschillende te leveren items die aan een Adobe Commerce-implementatie zijn gekoppeld.
+exl-id: 6f5e603b-bbe5-411d-ad72-696cb4eae246
+source-git-commit: e76f101df47116f7b246f21f0fe0fa72769d2776
 workflow-type: tm+mt
 source-wordcount: '266'
 ht-degree: 0%
 
 ---
 
-
 # Te leveren items
 
-Het ontdekkingsproces identificeert specifieke implementatieproducten van de Handel van de Adobe. Review the following sections to learn more.
+Het detectieproces identificeert specifieke Adobe Commerce-implementatieproducten. Bekijk de volgende secties voor meer informatie.
 
 ## Bedrijfsvereisten
 
-This document captures business requirement approvals for functional specifications and the usability of the customer experience. Deze wordt gebruikt om de gebruikerservaring, het visuele ontwerp en gedetailleerde testplannen te verbeteren.
+In dit document worden goedkeuringen van bedrijfsvereisten voor functionele specificaties en de bruikbaarheid van de ervaring van de klant beschreven. Deze wordt gebruikt om de gebruikerservaring, het visuele ontwerp en gedetailleerde testplannen te verbeteren.
 
 ## Systeemdiagram
 
-A systems diagram should show data (for example, orders, products, third-party integrations) flowing to and from the various systems involved (Adobe Commerce, OMS, ESP, payment providers).
+In een systeemdiagram moeten gegevens worden weergegeven (bijvoorbeeld bestellingen, producten, integratie van derden) die van en naar de verschillende betrokken systemen (Adobe Commerce, OMS, ESP, betalingsdienstaanbieders) stromen.
 
 ## Technische specificaties
 
 In dit document worden de technische implementatiebenadering en de toepasselijke details over alle integratie en systemen van derden gedefinieerd die moeten worden gewijzigd. Dit kunnen API&#39;s zijn die op dit moment niet bestaan en die moeten worden ontwikkeld.
 
-## Data mapping
+## Gegevenstoewijzing
 
-A data mapping document covers categories, products, recommendations, pricing data, and inventory and includes the necessary attributes to map the current products and categories to your Adobe Commerce product catalog.
+Een document met gegevenstoewijzingen heeft betrekking op categorieën, producten, aanbevelingen, prijsgegevens en inventaris en bevat de noodzakelijke kenmerken om de huidige producten en categorieën toe te wijzen aan uw Adobe Commerce-productcatalogus.
 
 ## Stroomdiagram
 
-Shows the user flows for critical and/or unique processes, especially when customized from standard Adobe Commerce behavior.
+Geeft de gebruikersstromen weer voor kritieke en/of unieke processen, vooral wanneer deze zijn aangepast aan het standaard Adobe Commerce-gedrag.
 
 ## Bereik en leveranciers
 
-Dit is een definitieve lijst van genoemde derdeverkopers die in de oplossing van de Handel van de Adobe moeten worden geïntegreerd.
+Dit is een definitieve lijst van genoemde derdeverkopers die in de oplossing van Adobe Commerce moeten worden geïntegreerd.
 
-## Product data
+## Productgegevens
 
-A review of an organization’s existing products, pricing, and inventory data as well as a plan to map data attributes used to populate Adobe Commerce.
+Een overzicht van de bestaande producten, prijzen en inventarisgegevens van een organisatie en een plan om gegevenskenmerken toe te wijzen die worden gebruikt om Adobe Commerce te vullen.
 
 ## Projectplan
 
-In een projectplan worden de taken en tijdlijnen op hoog niveau beschreven die aan het implementeringsinitiatief zijn gekoppeld, inclusief overlappende integraties en afhankelijkheden van derden. Het plan kan ook een verantwoordelijkheidsmatrix bevatten, of [RACI](../planning/ownership.md), grafiek die toont wie verantwoordelijk is, verantwoordelijk, geraadpleegd, en geïnformeerd.
+In een projectplan worden de taken en tijdlijnen op hoog niveau beschreven die aan het implementeringsinitiatief zijn gekoppeld, inclusief overlappende integraties en afhankelijkheden van derden. Het plan kan ook een matrix van verantwoordelijkheden bevatten, of [RACI](../planning/ownership.md), een grafiek waarin wordt aangegeven wie verantwoordelijk is, wie verantwoordelijk is, wie geraadpleegd is en wie geïnformeerd is.

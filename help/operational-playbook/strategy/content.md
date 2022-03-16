@@ -1,17 +1,17 @@
 ---
 title: Inhoudsstrategie
 description: Gebruik uw inhoud om aansprekende campagnes op te zetten die uw klanten aangaan.
-source-git-commit: 226f1925d9ca628c94b67a86888084a21cd7e336
+exl-id: fabfed9e-63ff-4be3-8bb7-192ccdb9dde6
+source-git-commit: e76f101df47116f7b246f21f0fe0fa72769d2776
 workflow-type: tm+mt
 source-wordcount: '449'
 ht-degree: 0%
 
 ---
 
-
 # Inhoudsstrategie
 
-Succesvolle marketingplannen voor inhoud via e-mail komen niet van brainstormsessies, jagers of geërfde gewoonten. De ondernemingen moeten kwantitatieve en kwalitatieve gegevens (sommige van bronnen verzamelen die zij reeds hebben en sommige gecreeerd of aangekocht) om voor inhoud te plannen die de klanten zullen vinden en waarderen. Met Adobe Experience Manager kunt u inhoud die in de AEM ontwerpomgeving wordt beheerd, gebruiken om bijzonder aantrekkelijke campagnes te maken. U kunt gemakkelijk marketingmiddelen publiceren die u ontwerpt, beheert en valideert in Adobe Experience Manager op verschillende kanalen.
+Succesvolle marketingplannen voor inhoud via e-mail zijn niet afkomstig van brainstormsessies, jagers of geërfde gewoonten. De ondernemingen moeten kwantitatieve en kwalitatieve gegevens (sommige van bronnen verzamelen die zij reeds hebben en sommige gecreeerd of aangekocht) om voor inhoud te plannen die de klanten zullen vinden en waarderen. Met Adobe Experience Manager kunt u inhoud die in de AEM ontwerpomgeving wordt beheerd, gebruiken om bijzonder aantrekkelijke campagnes te maken. U kunt gemakkelijk marketingmiddelen publiceren die u ontwerpt, beheert en valideert in Adobe Experience Manager op verschillende kanalen.
 
 ## Kader voor inhoudsstrategie
 
@@ -37,10 +37,10 @@ Of u nu elementaire webinhoud beheert of inhoud die in sociale netwerken wordt u
 
 Adobe Experience Manager combineert een aantal infrastructuren en toepassingsfuncties in één geïntegreerd pakket. Het aanbiedingsadres:
 
-- **Sites**: maak en lever snel relevante websites en mobiele apps en werk de inhoud op elk gewenst moment bij zonder de IT-afdeling te belasten.
-- **Middelen**: eenvoudig afbeeldingen, video&#39;s en andere middelen over elk digitaal kanaal te beheren voor persoonlijke ervaringen van klanten.
-- **De gemeenschappen**-bouwen florerende gemeenschappen en het in dienst nemen van gesprekken over al uw sociale eigenschappen zodat kunt u nieuwe niveaus van het leren en klantenloyaliteit inspireren.
-- **Forms**: integreer formulieren op bedrijfsniveau in uw websites en mobiele beleving en vereenvoudig het maken van formulieren en het voltooien van transacties.
-- **Apps**: maak en lever mobiele apps met een oplossing die de kloof tussen marketers en IT overbrugt, zodat marketers inhoud eenvoudig kunnen bijwerken (zelfs na het opstarten).
+- **Sites**—Maak en lever snel relevante websites en mobiele apps en werk de inhoud op elk gewenst moment bij zonder uw IT-afdeling te belasten.
+- **Activa**—Eenvoudig afbeeldingen, video&#39;s en andere middelen beheren op elk digitaal kanaal voor persoonlijke ervaringen van klanten.
+- **Gemeenschappen**—Bouw het gedijen gemeenschappen en het in dienst nemen van gesprekken over al uw sociale eigenschappen zodat kunt u nieuwe niveaus van het leren en klantenloyaliteit inspireren.
+- **Forms**—Integreer formulieren op bedrijfsniveau in uw websites en mobiele ervaringen en vereenvoudig het maken van formulieren en het voltooien van transacties.
+- **Apps**—Maak en lever mobiele apps met een oplossing die de kloof tussen marketers en IT overbrugt, zodat marketeers inhoud eenvoudig kunnen bijwerken (zelfs na introductie).
 
 ![Stroomdiagram voor inhoudsstrategie](../../assets/playbooks/content-strategy-framework2.png)

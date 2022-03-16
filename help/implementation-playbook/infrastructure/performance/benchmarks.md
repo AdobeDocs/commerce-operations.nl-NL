@@ -1,13 +1,13 @@
 ---
-title: Performance Benchmarks
-description: Review performance benchmarks for Adobe Commerce implementations hosted on Adobe cloud infrastructure.
-source-git-commit: 748c302527617c6a9bf7d6e666c6b3acff89e021
+title: Prestatiebenchmarks
+description: Bekijk prestatiebenchmarks voor Adobe Commerce-implementaties die worden gehost op de Adobe-cloud-infrastructuur.
+exl-id: cc9b090a-a504-4df3-aa32-81882f431dd9
+source-git-commit: e76f101df47116f7b246f21f0fe0fa72769d2776
 workflow-type: tm+mt
 source-wordcount: '51'
 ht-degree: 0%
 
 ---
-
 
 # Benchmarks
 
@@ -16,5 +16,5 @@ Adobe Commerce op cloudinfrastructuur zonder aanvullende aanpassingen en CDN-cac
 - 200 MB effectieve SKU&#39;s
 - Gemiddelde API-responstijd van 300 ms
 - 1.700 bestellingen per uur
-- &lt;2s average=&quot;&quot; storefront=&quot;&quot; response=&quot;&quot; time=&quot;&quot;>
-- 500k hourly page views
+- &lt;2s gemiddelde responstijd van opslagomgeving
+- Weergaven per uur van 500 kB

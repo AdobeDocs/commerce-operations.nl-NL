@@ -1,13 +1,13 @@
 ---
 title: Projectteams
 description: Bouw het juiste team voor uw e-commerce project.
-source-git-commit: 226f1925d9ca628c94b67a86888084a21cd7e336
+exl-id: 57aee5ac-db27-4c2a-8e08-3e926d7658d3
+source-git-commit: e76f101df47116f7b246f21f0fe0fa72769d2776
 workflow-type: tm+mt
 source-wordcount: '404'
 ht-degree: 0%
 
 ---
-
 
 # Projectteams
 
@@ -35,10 +35,10 @@ Elk van deze rollen is verantwoordelijk voor de planning en uitvoering van het e
 
 De organisaties neigen om externe gebiedsdelen over het hoofd te zien die direct of indirect een belangrijke rol spelen in het succes van het project, met inbegrip van:
 
-- **Team** van het pakhuis - Als de website in werking is maar het personeel in het pakhuis beperkt is, zou dat het verpakken en het verschepen kunnen vertragen. Er zou ook een systeemprobleem in het pakhuis kunnen zijn dat het verhindert bestellingen te volgen die ook de verpakking en de verzending kunnen vertragen.
+- **Warehouse-team**- Als de website wel in bedrijf is, maar het personeel in het pakhuis beperkt is, kan dat de verpakking en de verzending vertragen. Er zou ook een systeemprobleem in het pakhuis kunnen zijn dat het verhindert bestellingen te volgen die ook de verpakking en de verzending kunnen vertragen.
 
-- **Het de dienstteam**-Dit team van de klant is in direct contact met klanten. Zij zijn zich bewust van de punten van de klantenpijn, maar zij zijn gewoonlijk het meest ondergewaardeerde team in een organisatie. Bijvoorbeeld, als u een nieuwe bevordering op uw website in werking stelt en het team zich niet bewust is, kunnen zij klanten van correcte informatie misschien niet voorzien of zij kunnen niet het volume van vraag behandelen als het een klein team is. Deze voorbeelden kunnen tot een negatieve klantenervaring leiden.
+- **Team voor klantenservice**—Dit team heeft rechtstreeks contact met klanten. Zij zijn zich bewust van de punten van de klantenpijn, maar zij zijn gewoonlijk het meest ondergewaardeerde team in een organisatie. Bijvoorbeeld, als u een nieuwe bevordering op uw website in werking stelt en het team zich niet bewust is, kunnen zij klanten van correcte informatie misschien niet voorzien of zij kunnen niet het volume van vraag behandelen als het een klein team is. Deze voorbeelden kunnen tot een negatieve klantenervaring leiden.
 
-- **Marketing team**—Marketing teams verwerken verkoop, aanbiedingen, promoties en campagnes. Als ze e-mails over een product verzenden, maar niet weten dat de voorraad beperkt is, kan dit leiden tot een slechte klantervaring en kan de conversiesnelheid dalen.
+- **Marketingsteam**—Marketing teams handelen verkoop, aanbiedingen, promoties en campagnes af. Als ze e-mails over een product verzenden, maar niet weten dat de voorraad beperkt is, kan dit leiden tot een slechte klantervaring en kan de conversiesnelheid dalen.
 
 Wanneer het opzetten van het projectteam, is het niet alleen essentieel om de correcte mensen met de vereiste vaardigheidsreeks te hebben, maar ook om ervoor te zorgen dat de externe teams worden geïnformeerd en gericht om een succesvol resultaat te bereiken.
