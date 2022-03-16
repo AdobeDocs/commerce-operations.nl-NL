@@ -1,15 +1,15 @@
 ---
-title: Informatie over Adobe Commerce
+title: Adobe Commerce
 description: Beschrijving van Adobe Commerce
 exl-id: 130bae23-8a22-4523-abe2-8dc97b3881d2
-source-git-commit: bbc412f1ceafaa557d223aabfd4b2a381d6ab04a
+source-git-commit: 3432ba8640a82269cb725b8b15854f20c270b1e3
 workflow-type: tm+mt
 source-wordcount: '284'
 ht-degree: 0%
 
 ---
 
-# Adobe Commerce
+# Informatie over Adobe Commerce
 
 Adobe Commerce is het toonaangevende platform voor open handel-innovatie. Elk jaar verwerkt Adobe Commerce meer dan 100 miljard dollar aan bruto-handelsvolume. Adobe Commerce biedt klanten de kracht om unieke en boeiende boodschappenbeleving te creëren, functies die buiten de verpakking vallen en de onbeperkte mogelijkheid om zich aan te passen, een flexibele architectuur zonder koppen en naadloze integratie van derden.
 
