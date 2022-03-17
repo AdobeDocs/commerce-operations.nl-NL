@@ -1,9 +1,9 @@
 ---
 title: Aanbevolen lezingen voor upgrades
 description: Lees de aanbevolen tekst voor het plannen van uw Adobe Commerce- of Magento Open Source-upgrade.
-source-git-commit: 01ece828514da11459010f2633e370dd53e4e82e
+source-git-commit: 9700c0066d2f765ff22419f6b61beda4cf1e61bc
 workflow-type: tm+mt
-source-wordcount: '328'
+source-wordcount: '319'
 ht-degree: 0%
 
 ---
@@ -23,13 +23,13 @@ Ga verder met het leren van upgrades voor Adobe Commerce en Magento Open Source 
             <li><a href="https://helpx.adobe.com/security/products/magento/apsb22-12.html">Adobe Security Bulletin</a></li>
             <li><a href="https://community.magento.com/t5/Magento-DevBlog/bg-p/devblog">Devblog</a></li>
             <li><a href="https://devdocs.magento.com/guides/v2.4/release-notes/bk-release-notes.html">Opmerkingen bij de release</a></li>
-            <li><a href="https://solutionpartners.adobe.com/solution-partners.html">Partnerportal voor oplossingen</a> (voor partners met een geldige aanmelding)</li>
+            <li><a href="https://solutionpartners.adobe.com/solution-partners.html">Partnerportal voor oplossingen</a></li>
           </ul>
         </td>
       <td><strong>Gereedschappen</strong>
         <ul>
             <li><a href="https://magento.com/tech-resources/downloads">Adobe Commerce-versies downloaden</li>
-            <li><a href="https://experienceleague.adobe.com/docs/commerce-learn/tutorials/uct-phpstorm.html?lang=en">Het gereedschap Compatibiliteit bijwerken gebruiken met de insteekmodule PHPStorm</a> (video)</li>
+            <li><a href="https://experienceleague.adobe.com/docs/commerce-learn/tutorials/uct-phpstorm.html?lang=en">PhpStorm-plug-in Compatibiliteit bijwerken</a> (video)</li>
             <li><a href="https://experienceleague.adobe.com/docs/commerce-operations/upgrade-guide/upgrade-compatibility-tool/overview.html?lang=en">Compatibiliteit upgraden</a></li>
             <li><a href="https://magentocommeng.slack.com/archives/C019Y143U9F">#UpgradeCompatibilityTool Slack-kanaal</a></li>
             <li><a href="https://devdocs.magento.com/quality-patches/usage.html">Kwaliteitspatches</a></li>
@@ -60,7 +60,7 @@ Ga verder met het leren van upgrades voor Adobe Commerce en Magento Open Source 
       <td><strong>Upgradebronnen</strong>
         <ul>
              <li><a href="https://experienceleague.adobe.com/docs/commerce-operations/upgrade-guide/resources/recommended-upgrade-paths-2022.html?lang=en">2022 Aanbevolen upgradepaden</a></li>
-            <li><a href="https://experienceleague.adobe.com/docs/commerce-operations/upgrade-guide/overview.html">2.4-upgradehandleiding</a></li>
+            <li><a href="https://experienceleague.adobe.com/docs/commerce-operations/assets/adobe-commerce-2-4-upgrade-guide.pdf">2.4-upgradehandleiding</a> (PDF)</li>
             <li><a href="https://experienceleague.adobe.com/docs/commerce-learn/tutorials/upgrade-workshop.html?lang=en">2.4 Workshop over technische upgrade</a></li>
             <li><a href="https://support.magento.com/hc/en-us/articles/360034120932">Toegang tot pre-releases</a></li>
             <li><a href="https://devdocs.magento.com/release/beta-program.html">Overzicht van het bètaprogramma</a></li>
