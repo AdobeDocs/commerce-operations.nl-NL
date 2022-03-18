@@ -1,11 +1,11 @@
 ---
 mini-toc-levels: 2
-git-repo: https://git.corp.adobe.com/AdobeDocs/commerce-operations.nl-NL
+git-repo: https://github.com/AdobeDocs/commerce-operations.nl-NL
 index: true
-solution: Adobe Commerce
+solution: Commerce,Adobe Commerce
 product: magento
 type: Documentation
-source-git-commit: 78ae8bb7dfa35fd268e226c4c3181ed5fb781138
+source-git-commit: 4130362ef8fa34b5f7de98fb7823ee533a8f925a
 workflow-type: tm+mt
 source-wordcount: '127'
 ht-degree: 0%
@@ -15,7 +15,7 @@ ht-degree: 0%
 
 # Metagegevens voor intern gebruik
 
-Het `metadata.md`-bestand bevat metagegevens op repo-niveau die worden doorgegeven aan `TOC.md`-bestanden in de revisie. Als u de inhoud metadata.md voor om het even welke gebruikersgids wilt veranderen, doe dit in om het even welk `TOC.md` dossier.
+De `metadata.md` Het bestand bevat metagegevens op repo-niveau die worden doorgegeven aan de gebruikershandleiding `TOC.md` in de revisie. Als u de inhoud metadata.md voor een gebruikersgids wilt wijzigen, doet u dit in om het even welke `TOC.md` bestand.
 
 | metagegevens | wat het doet |
 |--- |--- |
