@@ -2,9 +2,9 @@
 title: Informatie over Adobe Commerce
 description: Beschrijving van Adobe Commerce
 exl-id: a9ebd4a6-87b4-47b9-8ae8-72d99e1797eb
-source-git-commit: e76f101df47116f7b246f21f0fe0fa72769d2776
+source-git-commit: 219cbe839e40afa19b3754a9d5929074ed238920
 workflow-type: tm+mt
-source-wordcount: '300'
+source-wordcount: '297'
 ht-degree: 0%
 
 ---
@@ -26,9 +26,9 @@ De eigenschappen van Adobe Commerce worden altijd aangepast aan de wensen van de
 
 ## Overal probleemloos winkelen
 
-De groei van de handel wordt gevoed door de behoeften van uw klanten te dienen waar zij zijn. Vergroot uw bereik en vergroot uw aanbod tot nieuwe kanalen, geografische gebieden en verkoop online aan zowel bedrijven als consumenten in één platform. Breng de handel naar uw klanten waar, wanneer, en hoe zij verkiezen te winkelen.
+De groei van de handel wordt gevoed door de behoeften van uw klanten te dienen. Vergroot uw bereik en vergroot uw aanbod tot nieuwe kanalen, geografische gebieden en verkoop online aan zowel bedrijven als consumenten in één platform. Breng de handel naar uw klanten waar, wanneer, en hoe zij verkiezen te winkelen.
 
-- Mobiele handel
+- Mobile commerce
 - B2B-elektronische handel
 - PWA Studio
 - Wereldwijde uitbreiding
