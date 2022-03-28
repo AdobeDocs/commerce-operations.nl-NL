@@ -1,9 +1,9 @@
 ---
 title: Voer de [!DNL Upgrade Compatibility Tool]
 description: Voer de volgende stappen uit [!DNL Upgrade Compatibility Tool] op uw Adobe Commerce-project.
-source-git-commit: ba077f5d5429f2971dfbca8edd8ebd5ea44922c8
+source-git-commit: fbe47245623469a93cce5cc5a83baf467a007bc4
 workflow-type: tm+mt
-source-wordcount: '1885'
+source-wordcount: '0'
 ht-degree: 0%
 
 ---
@@ -206,7 +206,7 @@ bin/uct upgrade:check --ignore-current-version-compatibility-issues <dir>
 
 A _vanille_ De installatie is een schone installatie van een gespecificeerde versietag of tak voor een specifieke versieversie.
 
-De `bin/uct core:code:changes` controleert of er een vanilla-instantie in uw systeem is. Als dit de eerste keer gebruikend een vanilla installatie is, een interactieve bevel-lijn vraag u ertoe aanzet om het vanilla project van te downloaden [Adobe Commerce-opslagplaats](https://repo.magento.com/).
+De `bin/uct core:code:changes` controleert of er een vanilla-instantie in uw systeem is. Als dit de eerste keer is met een vanilla-installatie, wordt u met een interactieve opdrachtregelvraag gevraagd het vanilla-project te downloaden van de Adobe Commerce-opslagplaats (`https://repo.magento.com/`).
 
 U kunt een [!DNL Upgrade Compatibility Tool] gebruiken met de `--vanilla-dir` om de installatiemap van Adobe Commerce vanilla op te geven.
 

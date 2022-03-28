@@ -1,9 +1,9 @@
 ---
 title: Volledige voorwaarden
 description: Bereid uw Adobe Commerce- of Magento Open Source-project voor op een upgrade door deze vereiste stappen uit te voeren.
-source-git-commit: bbc412f1ceafaa557d223aabfd4b2a381d6ab04a
+source-git-commit: fbe47245623469a93cce5cc5a83baf467a007bc4
 workflow-type: tm+mt
-source-wordcount: '1316'
+source-wordcount: '0'
 ht-degree: 0%
 
 ---
@@ -71,7 +71,7 @@ We raden u aan contact op te nemen met de leverancier van de zoekmachine om te b
 
 Door de limiet voor geopende bestanden in te stellen (ulimit), kan worden voorkomen dat meerdere recursieve aanroepen van lange querytekenreeksen mislukken of dat er problemen optreden met het gebruik van de `bin/magento setup:rollback` gebruiken. Deze opdracht is anders voor verschillende UNIX-schelpen. Raadpleeg uw individuele smaak voor details over `ulimit` gebruiken.
 
-Adobe raadt u aan de geopende bestanden in te stellen [ulimit](http://ss64.com/bash/ulimit.html) op een waarde van `65536` of meer, maar u kunt indien nodig een hogere waarde gebruiken. U kunt de limiet instellen op de opdrachtregel of u kunt deze instellen als een permanente instelling voor de shell van de gebruiker.
+Adobe raadt u aan de geopende bestanden in te stellen [ulimit](https://ss64.com/bash/ulimit.html) op een waarde van `65536` of meer, maar u kunt indien nodig een hogere waarde gebruiken. U kunt de limiet instellen op de opdrachtregel of u kunt deze instellen als een permanente instelling voor de shell van de gebruiker.
 
 U stelt de limiet in vanaf de opdrachtregel:
 
@@ -84,7 +84,7 @@ U stelt de limiet in vanaf de opdrachtregel:
 
    >[!NOTE]
    >
-   > De syntaxis voor de maximale waarde voor open bestanden is afhankelijk van de UNIX-shell die u gebruikt. The preceding setting should work with CentOS and Ubuntu with the Bash shell. Voor Mac OS is de juiste instelling echter -S 65532. Raadpleeg een hoofdpagina of referentie van het besturingssysteem voor meer informatie.
+   > De syntaxis voor de maximale waarde voor open bestanden is afhankelijk van de UNIX-shell die u gebruikt. De voorgaande instelling werkt alleen met CentOS en Ubuntu met Bash-shell. Voor Mac OS is de juiste instelling echter -S 65532. Raadpleeg een hoofdpagina of referentie van het besturingssysteem voor meer informatie.
 
 De waarde in de Bash-shell instellen:
 
@@ -96,7 +96,7 @@ De waarde in de Bash-shell instellen:
    ulimit -s 65536
    ```
 
-1. Save your changes to the `.bashrc` file and exit the text editor.
+1. Sla uw wijzigingen op in het dialoogvenster `.bashrc` en sluit de teksteditor af.
 
 >[!IMPORTANT]
 >
