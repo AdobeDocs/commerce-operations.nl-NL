@@ -1,9 +1,9 @@
 ---
 title: Huidige zoekengine wordt niet ondersteund
 description: Los uw Adobe Commerce of verbetering van de Magento Open Source na het ontmoeten van een fout over een niet gestaafde onderzoeksmotor problemen op.
-source-git-commit: bbc412f1ceafaa557d223aabfd4b2a381d6ab04a
+source-git-commit: 96534d5307062aa4fda8f6433630d2d39e2848e7
 workflow-type: tm+mt
-source-wordcount: '459'
+source-wordcount: '473'
 ht-degree: 0%
 
 ---
@@ -11,7 +11,7 @@ ht-degree: 0%
 
 # Huidige zoekengine wordt niet ondersteund
 
-Het volgende foutbericht geeft aan dat de Magento-versie waarvan u een upgrade uitvoert, is geconfigureerd voor het gebruik van een zoekfunctie voor catalogi die niet wordt ondersteund in de Magento-versie waarnaar u een upgrade uitvoert:
+Het volgende foutbericht geeft aan dat de Adobe Commerce- of Magento Open Source-versie waarvan u een upgrade uitvoert, is geconfigureerd voor het gebruik van een zoekprogramma voor catalogi dat niet wordt ondersteund in de versie waarnaar u de upgrade uitvoert:
 
 ```terminal
 Your current search engine, <Engine Name>, is not supported. You must install a supported search engine before upgrading. See the System Upgrade Guide for more information.
@@ -32,7 +32,7 @@ De fout treedt op als de geretourneerde waarde `mysql` of `elasticsearch`.
 
 >[!WARNING]
 >
->Als deze fout is opgetreden, is de status van Magento inconsistent en hebt u geen toegang tot de beheerder. We raden u aan terug te keren naar uw vorige versie terwijl u deze fout verhelpt. Voer hiertoe een van de volgende opdrachten uit:
+>Als deze fout is opgetreden, verloopt de installatie niet correct en hebt u geen toegang tot de beheerder. We raden u aan terug te keren naar uw vorige versie terwijl u deze fout verhelpt. Voer hiertoe een van de volgende opdrachten uit:
 >
 >
 ```bash
@@ -50,7 +50,7 @@ Volg de richtlijnen die in de volgende secties worden beschreven om van een inco
 
 ## Als uw zoekmachine `mysql`
 
-In eerdere versies dan 2.4 was MySQL de standaardzoekengine voor catalogi, maar MySQL wordt in deze hoedanigheid niet meer ondersteund. Nu, moet u Elasticsearch als uw onderzoeksmotor installeren en vormen alvorens aan 2.4 te bevorderen.
+In eerdere versies dan 2.4 was MySQL de standaardzoekengine voor catalogi, maar MySQL wordt in deze hoedanigheid niet meer ondersteund. Nu moet u Elasticsearch of OpenSearch installeren en configureren als zoekprogramma voordat u de upgrade uitvoert naar 2.4.
 
 Gebruik de volgende bronnen om u door dit proces te begeleiden:
 
@@ -59,7 +59,7 @@ Gebruik de volgende bronnen om u door dit proces te begeleiden:
 - Elasticsearch configureren om mee te werken [nginx](https://devdocs.magento.com/guides/v2.3/config-guide/elasticsearch/es-config-nginx.html) of [Apache](https://devdocs.magento.com/guides/v2.3/config-guide/elasticsearch/es-config-apache.html)
 - [Magento configureren voor gebruik van Elasticsearch](https://devdocs.magento.com/guides/v2.3/config-guide/elasticsearch/configure-magento.html)
 
-Nadat u Elasticsearch en herdex vormt, bent u bereid om aan 2.4 te bevorderen.
+Nadat u de zoekmachine en de herindex hebt geconfigureerd, kunt u een upgrade uitvoeren naar 2.4.
 
 ## Als uw zoekmachine `elasticsearch`
 
@@ -67,7 +67,7 @@ Een waarde van `elasticsearch` Hiermee geeft u aan dat uw versie op downniveau v
 
 U moet de volgende taken uitvoeren alvorens aan 2.4 te bevorderen:
 
-1. Elasticsearch bijwerken. We raden u aan de update naar Elasticsearch 7.x uit te voeren. Zie [Elasticsearch bijwerken](https://www.elastic.co/guide/en/elasticsearch/reference/current/setup-upgrade.html) voor volledige instructies voor het maken van back-ups van uw gegevens, het opsporen van potentiële migratiekwesties en het testen van upgrades voordat u deze implementeert naar de productie. Afhankelijk van uw huidige versie van Elasticsearch, is het mogelijk dat een volledige clusterherstart al dan niet vereist is.
+1. Update aan een versie van Elasticsearch die door de Handel wordt gesteund. Zie [Elasticsearch bijwerken](https://www.elastic.co/guide/en/elasticsearch/reference/current/setup-upgrade.html) voor volledige instructies voor het maken van back-ups van uw gegevens, het opsporen van potentiële migratiekwesties en het testen van upgrades voordat u deze implementeert naar de productie. Afhankelijk van uw huidige versie van Elasticsearch, is het mogelijk dat een volledige clusterherstart al dan niet vereist is.
 
    >[!NOTE]
    >
@@ -75,4 +75,4 @@ U moet de volgende taken uitvoeren alvorens aan 2.4 te bevorderen:
 
 1. [Magento configureren voor gebruik van Elasticsearch](https://devdocs.magento.com/guides/v2.3/config-guide/elasticsearch/configure-magento.html) en opnieuw indexeren.
 
-Nadat u Elasticsearch en herdex vormt, bent u bereid om aan 2.4 te bevorderen.
+Nadat u de zoekmachine en de herindex hebt geconfigureerd, kunt u een upgrade uitvoeren naar 2.4.

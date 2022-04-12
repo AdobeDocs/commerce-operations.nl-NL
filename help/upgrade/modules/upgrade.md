@@ -1,9 +1,9 @@
 ---
 title: Modules en extensies upgraden
 description: Gebruik de bevel-lijn interface en Composer om Adobe Commerce en Magento Open Source modules en uitbreidingen te bevorderen.
-source-git-commit: bbc412f1ceafaa557d223aabfd4b2a381d6ab04a
+source-git-commit: 70f1bda91023526fbc0024b6a6fef93c7633ecc2
 workflow-type: tm+mt
-source-wordcount: '96'
+source-wordcount: '161'
 ht-degree: 0%
 
 ---
@@ -44,3 +44,9 @@ Een module of extensie bijwerken of bijwerken:
    ```bash
    bin/magento cache:clean
    ```
+
+## Door leverancier gebundelde extensies (VBE&#39;s)
+
+Adobe alle verwijderd [VBEs](https://devdocs.magento.com/extensions/vendor/) in 2.4.4. Leveranciers blijven deze extensies ondersteunen op de Adobe Commerce Marketplace.
+
+Als u deze extensies wilt blijven gebruiken met Adobe Commerce en Magento Open Source 2.4.4 en hoger, moet u de bijbehorende pakketafhankelijkheden bijwerken in uw `composer.json` file _voor_ opwaardering tot 2.4.4. Neem contact op met de leverancier voor de pakketnaam en -versie die u wilt gebruiken.
