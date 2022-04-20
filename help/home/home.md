@@ -2,9 +2,9 @@
 keywords: Adobe Commerce;home;populaire onderwerpen
 title: Home
 description: Blader door een index van de Adobe Commerce-documentatie van het operationele product.
-source-git-commit: d3eac6db56f658ead240e8244858d0bd80a43908
+source-git-commit: 29b8d64cd700531f04166ad20694fa342ea0e186
 workflow-type: tm+mt
-source-wordcount: '0'
+source-wordcount: '197'
 ht-degree: 0%
 
 ---
@@ -67,11 +67,11 @@ Krijg praktische informatie over concepten, processen, hulpmiddelen, en beste pr
     </div>
   </td>
   <td valign="top">
-    <a href="https://devdocs.magento.com/guides/v2.4/performance-best-practices/introduction.html">
+    <a href="../performance/overview.md">
        <img alt="Prestaties" src="../assets/icons/gauge.svg" width="40" height="40"/>
     </a>
     <div>
-      <a href="https://devdocs.magento.com/guides/v2.4/performance-best-practices/introduction.html"><strong>Aanbevolen werkwijzen voor prestaties</strong></a>
+      <a href="../performance/overview.md"><strong>Aanbevolen werkwijzen voor prestaties</strong></a>
     </div>
   </td>
   <td valign="top">
@@ -79,7 +79,7 @@ Krijg praktische informatie over concepten, processen, hulpmiddelen, en beste pr
        <img alt="Gereedschappen" src="../assets/icons/wrench.svg" width="40" height="40"/>
     </a>
     <div>
-      <a href="https://experienceleague.corp.adobe.com/docs/commerce-operations/tools/overview.html?lang=en"><strong>Gereedschappen</strong></a>
+      <a href="https://experienceleague.adobe.com/docs/commerce-operations/tools/overview.html?lang=en"><strong>Gereedschappen</strong></a>
     </div>
   </td>
 </tr>
