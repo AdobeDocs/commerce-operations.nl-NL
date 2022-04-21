@@ -2,9 +2,9 @@
 keywords: Adobe Commerce;home;populaire onderwerpen
 title: Home
 description: Blader door een index van de Adobe Commerce-documentatie van het operationele product.
-source-git-commit: 29b8d64cd700531f04166ad20694fa342ea0e186
+source-git-commit: bca5208cb5a53ac839c666cb42f2124de5d96be2
 workflow-type: tm+mt
-source-wordcount: '197'
+source-wordcount: '212'
 ht-degree: 0%
 
 ---
@@ -127,3 +127,4 @@ Meer informatie over nieuwe documentatie en belangrijke updates voor bestaande d
 |----------------------------------------------------------------------------------------------------------------------------------------|--------------|
 | Toegevoegd [informatie](../upgrade/upgrade-compatibility-tool/overview.md) over hoe de regels voor het Hulpmiddel van de Verenigbaarheid van de Verbetering worden bepaald. | Belangrijke update |
 | Verouderde upgradecompatibiliteitsfunctie verwijderd [foutcodes](../upgrade/upgrade-compatibility-tool/error-messages.md). | Technisch |
+| Verplaatst [Handleiding voor Analyse voor de hele site](../tools/site-wide-analysis-tool/intro.md) van [devdocs.magento.com](https://devdocs.magento.com/tools/site-wide-analysis.html) naar Experience League. | Nieuw |
