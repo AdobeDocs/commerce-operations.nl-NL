@@ -1,9 +1,9 @@
 ---
 title: Modules en extensies upgraden
 description: Gebruik de bevel-lijn interface en Composer om Adobe Commerce en Magento Open Source modules en uitbreidingen te bevorderen.
-source-git-commit: 70f1bda91023526fbc0024b6a6fef93c7633ecc2
+source-git-commit: 28ce8cca3bb1780ee1466cc2c1b2143e923fe768
 workflow-type: tm+mt
-source-wordcount: '161'
+source-wordcount: '0'
 ht-degree: 0%
 
 ---
@@ -50,3 +50,12 @@ Een module of extensie bijwerken of bijwerken:
 Adobe alle verwijderd [VBEs](https://devdocs.magento.com/extensions/vendor/) in 2.4.4. Leveranciers blijven deze extensies ondersteunen op de Adobe Commerce Marketplace.
 
 Als u deze extensies wilt blijven gebruiken met Adobe Commerce en Magento Open Source 2.4.4 en hoger, moet u de bijbehorende pakketafhankelijkheden bijwerken in uw `composer.json` file _voor_ opwaardering tot 2.4.4. Neem contact op met de leverancier voor de pakketnaam en -versie die u wilt gebruiken.
+
+Zie de volgende Adobe Commerce Marketplace-aanbiedingen voor meer informatie:
+
+- [Amazon Pay](https://marketplace.magento.com/amzn-amazon-pay-magento-2-module.html)
+- [Dotdigital](https://marketplace.magento.com/dotdigital-dotdigital-magento2-os-package.html)
+- [Klarna](https://marketplace.magento.com/klarna-m2-klarna.html)
+- [Vertex](https://marketplace.magento.com/vertexinc-vertex-tax-module.html)
+- [Yotpo](https://marketplace.magento.com/yotpo-module-yotpo.html)
+
