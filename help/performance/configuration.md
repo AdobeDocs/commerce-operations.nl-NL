@@ -1,7 +1,7 @@
 ---
 title: Best practices voor configuratie
 description: Optimaliseer de reactietijd van uw Adobe Commerce- of Magento Open Source-implementatie met deze best practices.
-source-git-commit: 09c4d0e09354230c8779b930f085d8c7c131b85b
+source-git-commit: 20c4f55162b25be8906562c395abf4671437992b
 workflow-type: tm+mt
 source-wordcount: '959'
 ht-degree: 0%
@@ -11,7 +11,7 @@ ht-degree: 0%
 
 # Best practices voor configuratie
 
-Commerceo biedt veel instellingen en gereedschappen waarmee u de responstijd op de pagina&#39;s kunt verbeteren en een hogere doorvoer kunt garanderen.
+De handel verstrekt vele montages en hulpmiddelen die u kunt gebruiken om reactietijd op de pagina&#39;s te verbeteren evenals hogere productie te verstrekken.
 
 ## Cron Jobs
 
