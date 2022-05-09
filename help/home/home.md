@@ -2,9 +2,9 @@
 keywords: Adobe Commerce;home;populaire onderwerpen
 title: Home
 description: Blader door een index van de Adobe Commerce-documentatie van het operationele product.
-source-git-commit: bca5208cb5a53ac839c666cb42f2124de5d96be2
+source-git-commit: e38d4f1c3e7618e77afb638f4a996cd7e5ebdbd5
 workflow-type: tm+mt
-source-wordcount: '212'
+source-wordcount: '214'
 ht-degree: 0%
 
 ---
@@ -75,7 +75,7 @@ Krijg praktische informatie over concepten, processen, hulpmiddelen, en beste pr
     </div>
   </td>
   <td valign="top">
-    <a href="https://devdocs.magento.com/quality-patches/tool.html">
+    <a href="https://experienceleague.adobe.com/docs/commerce-operations/tools/overview.html">
        <img alt="Gereedschappen" src="../assets/icons/wrench.svg" width="40" height="40"/>
     </a>
     <div>
