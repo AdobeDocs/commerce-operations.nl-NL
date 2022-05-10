@@ -1,9 +1,9 @@
 ---
 title: '"[!DNL Upgrade Compatibility Tool] Foutberichten"'
 description: Meer informatie over foutberichten die u tegenkomt bij het gebruik van de [!DNL Upgrade Compatibility Tool] op uw Adobe Commerce-project.
-source-git-commit: 9bdf64177b4cecab5dd3562fef0bcc507a57ccf0
+source-git-commit: d62299d23d73b8566ed1c9b9739ca59fb0535d6f
 workflow-type: tm+mt
-source-wordcount: '3816'
+source-wordcount: '3756'
 ht-degree: 4%
 
 ---
@@ -141,16 +141,6 @@ Er worden aangepaste codefouten gegenereerd wanneer aangepaste code gebruikmaakt
 | 5026 | Niet gebruiken `"text/javascript"` type, kenmerk | Gebruik alleen leden van het type public. |
 | 5028 | Toegang tot beschermde en particuliere leden van `Block` klasse is verouderd in HTML-sjablonen | Gebruik alleen leden van het type public. |
 | 5031 | Bevat verouderde methode | Gebruiken `getConnection()` in plaats daarvan. |
-| 5032 | `loadLayout` methode is afgekeurd | Gebruiken `\Magento\Framework\View\Layout\Builder::build` in plaats daarvan. |
-| 5033 | `renderLayout` methode is afgekeurd | Gebruiken `\Magento\Framework\Controller\ResultInterface::renderResult` in plaats daarvan. |
-| 5034 | `_redirect` methode is afgekeurd | Gebruiken `\Magento\Backend\Model\View\Result\Redirect::render` in plaats daarvan. |
-| 5035 | `_forward` methode is afgekeurd | Gebruiken `\Magento\Backend\Model\View\Result\Forward::forward` in plaats daarvan. |
-| 5036 | `_setActiveMenu` methode is afgekeurd | Gebruiken `\Magento\Backend\Model\View\Result\Page::setActiveMenu` in plaats daarvan. |
-| 5037 | `_addBreadcrumb` methode is afgekeurd | Gebruiken `\Magento\Backend\Model\View\Result\Page::addBreadcrumb` in plaats daarvan. |
-| 5038 | `_addContent` methode is afgekeurd | Gebruiken `\Magento\Backend\Model\View\Result\Page::addContent` in plaats daarvan. |
-| 5039 | `_addLeft` methode is afgekeurd | Gebruiken `\Magento\Backend\Model\View\Result\Page::addLeft` in plaats daarvan. |
-| 5040 | `_addJs` methode is afgekeurd | Gebruiken `\Magento\Backend\Model\View\Result\Page::addJs` in plaats daarvan. |
-| 5041 | `_moveBlockToContainer` methode is afgekeurd | Gebruiken `\Magento\Backend\Model\View\Result\Page::moveBlockToContainer` in plaats daarvan. |
 | 5042 | Onjuiste indeling van PHP-klasseverwijzing | Controleer of er naar de klasse wordt verwezen met alleen hoofdletters, cijfers en geen slash. |
 | 5043 | Onjuiste indeling van moduleverwijzing | Controleer of er alleen naar de module wordt verwezen met behulp van letters, cijfers, onderstrepingstekens en geen slash. |
 | 5044 | Klasse `Zend_Db_Select` is beperkt | Voorgestelde vervanging: `\Magento\Framework\DB\Select`. |
