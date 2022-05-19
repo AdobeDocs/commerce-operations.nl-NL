@@ -1,9 +1,9 @@
 ---
 title: '"[!DNL Upgrade Compatibility Tool] Foutberichten"'
 description: Meer informatie over foutberichten die u tegenkomt bij het gebruik van de [!DNL Upgrade Compatibility Tool] op uw Adobe Commerce-project.
-source-git-commit: d62299d23d73b8566ed1c9b9739ca59fb0535d6f
+source-git-commit: a13b0ea5aa109ce2f5d33e0966b194d64bad5d0c
 workflow-type: tm+mt
-source-wordcount: '3756'
+source-wordcount: '3782'
 ht-degree: 4%
 
 ---
@@ -233,6 +233,7 @@ Aangepaste waarschuwingen voor de code worden weergegeven wanneer verwijzingen n
 | 1338 | Geïmplementeerde Adobe Commerce `@deprecated` interface | De vervangen interface wordt in de volgende versies verwijderd. U kunt overwegen de interfaceovererving te verwijderen door een interface te gebruiken die is gemarkeerd als `@api` of een interface die in plaats daarvan binnen uw implementatie wordt geïntroduceerd. |
 | 1430 | Niet-gedeclareerde gegevensobjectmethode aanroepen | De magische methoden die niet worden gedeclareerd, kunnen worden gewijzigd. U kunt in plaats daarvan ook op interfacemethoden vertrouwen. |
 | 1439 | Adobe Commerce bellen `@deprecated` methode | De vervangen methode wordt in de volgende versies verwijderd. U kunt in plaats daarvan ook vertrouwen op methoden die zijn gedeclareerd in API-interfaces. |
+| 1440 | Verkeerde methodehandtekening | Een aanroep of overschrijving van de kernmethode wordt gedetecteerd met parameters, argumenten of retourneringstype die niet overeenkomen met de methodehandtekening. |
 | 1534 | Adobe Commerce gebruiken `@deprecated` eigenschap | De vervangen methode wordt in de volgende versies verwijderd. U kunt in plaats daarvan ook vertrouwen op methoden die zijn gedeclareerd in API-interfaces. |
 | 1535 | Adobe Commerce overschrijven `@deprecated` eigenschap | De vervangen eigenschap wordt in de volgende versies verwijderd. U kunt ook vertrouwen op methoden die zijn gedeclareerd in API-interfaces of op het gebruik van een eigenschap van het type private in uw implementatie. |
 | 1536 | Toewijzing van Adobe Commerce `@deprecated` eigenschap | De vervangen methode wordt in de volgende versies verwijderd. U kunt in plaats daarvan ook vertrouwen op methoden die zijn gedeclareerd in API-interfaces. |
