@@ -1,9 +1,9 @@
 ---
 title: '"[!DNL Upgrade Compatibility Tool] Vereisten"'
 description: 'Controleer of uw systeem voldoet aan de vereisten die nodig zijn om het [!DNL Upgrade Compatibility Tool] voor uw Adobe Commerce-project. '
-source-git-commit: c4769b555df49ed2f0b2fffbeaf458c5a64816ba
+source-git-commit: 5ff08d231269ea0bcb69f8c80aa546b171a5e4a0
 workflow-type: tm+mt
-source-wordcount: '162'
+source-wordcount: '186'
 ht-degree: 0%
 
 ---
@@ -12,8 +12,6 @@ ht-degree: 0%
 # [!DNL Upgrade Compatibility Tool] voorwaarden
 
 {{commerce-only}
-
-De [!DNL Upgrade Compatibility Tool] helpt u te identificeren wat u moet doen **voor** uw Adobe Commerce-versie upgraden.
 
 De minimumvereisten voor het uitvoeren van de [!DNL Upgrade Compatibility Tool] zijn:
 
@@ -26,8 +24,17 @@ De minimumvereisten voor het uitvoeren van de [!DNL Upgrade Compatibility Tool] 
 | Adobe Commerce Access-toetsen | none |
 | Adobe Commerce | none |
 
-U kunt de [!DNL Upgrade Compatibility Tool] in elk besturingssysteem. Er is geen vereiste om de [!DNL Upgrade Compatibility Tool] waar uw Adobe Commerce-exemplaar zich bevindt.
+U kunt de [!DNL Upgrade Compatibility Tool] in verschillende besturingssystemen (Windows wordt niet ondersteund). U hoeft de [!DNL Upgrade Compatibility Tool] waar uw Adobe Commerce-exemplaar zich bevindt.
 
 Het is noodzakelijk [!DNL Upgrade Compatibility Tool] om toegang te hebben tot de broncode van de instantie Adobe Commerce. U kunt de toepassing bijvoorbeeld op de ene server installeren en deze op de Adobe Commerce-installatie op een andere server plaatsen. Zie de [installeren](../upgrade-compatibility-tool/install.md) voor meer informatie.
 
-Als u de [!DNL Upgrade Compatibility Tool] bij een Adobe Commerce-instantie met grote modules en bestanden kan het zijn dat voor het hulpprogramma een hoge hoeveelheid RAM nodig is, ten minste 2 GB RAM.
+Als u de [!DNL Upgrade Compatibility Tool] voor een Adobe Commerce-exemplaar met grote modules en bestanden kan het nodig zijn dat er veel RAM-geheugen beschikbaar is (ten minste 2 GB). U kunt de `[=MODULE-PATH]` in uw opdracht om de modulepadmap op te geven om problemen te voorkomen die te wijten zijn aan een lage geheugenbeperking:
+
+```bash
+bin/uct upgrade:check <dir> -m[=MODULE-PATH]
+```
+
+Waar de argumenten als volgt zijn:
+
+- `<dir>`: Adobe Commerce-installatiemap.
+- `[=MODULE-PATH]`: Specifieke modulepad.

@@ -1,34 +1,34 @@
 ---
-title: ' [!DNL Site-Wide Analysis Tool]'
-description: ' [!DNL Upgrade Compatibility Tool]  [!DNL Site-Wide Analysis Tool] '
-source-git-commit: 8db30895604dc6414975e00818138815e5dfc360
+title: '"Integreer de [!DNL Site-Wide Analysis Tool]"'
+description: Voer de volgende stappen uit om de [!DNL Upgrade Compatibility Tool] verslag van de [!DNL Site-Wide Analysis Tool] dashboard op uw Adobe Commerce-project.
+source-git-commit: 5ff08d231269ea0bcb69f8c80aa546b171a5e4a0
 workflow-type: tm+mt
-source-wordcount: '136'
+source-wordcount: '172'
 ht-degree: 0%
 
 ---
 
 
-# [!DNL Site-Wide Analysis Tool]
+# De [!DNL Site-Wide Analysis Tool]
 
-[!DNL Site-Wide Analysis Tool]
+De [!DNL Site-Wide Analysis Tool] biedt 24x7 realtime prestatiebewaking, rapporten en aanbevelingen om de beveiliging en de werking voor installaties van Adobe Commerce te waarborgen.
 
-[](https://docs.magento.com/user-guide/reports/site-wide-analysis-tool.html)
+De [!DNL Upgrade Compatibility Tool] is nu geïntegreerd met de [!DNL Site-Wide Analysis Tool] om niet-technische personen in staat te stellen de [!DNL Upgrade Compatibility Tool] en krijg een [HTML-rapport](https://experienceleague.adobe.com/docs/commerce-operations/upgrade-guide/upgrade-compatibility-tool/run.html?lang=en#output) met een lijst met problemen voor elk bestand met de ernst, foutcode en beschrijving van de fout.
 
-[!DNL Site-Wide Analysis Tool][!DNL Upgrade Compatibility Tool]
+Zie de [[!DNL Site-Wide Analysis Tool] gebruikershandleiding](https://docs.magento.com/user-guide/reports/site-wide-analysis-tool.html) voor meer informatie .
 
-## [!DNL Upgrade Compatibility Tool]
+## Voer de [!DNL Upgrade Compatibility Tool] van SWAT
 
-[!DNL Site-Wide Analysis Tool][!DNL Upgrade Compatibility Tool]
+Ga naar de [!DNL Site-Wide Analysis Tool] het dashboard voor uw project en bepaal de plaats van [!DNL Upgrade Compatibility Tool] widget.
 
-![](../../assets/upgrade-guide/uct-swat-initial.png)
+![UCT SWAT-widget - Oorspronkelijk](../../assets/upgrade-guide/uct-swat-initial.png)
 
-Klik op **[!UICONTROL Run Upgrade Scan]**. The scan can take some time depending on the project size. A spinner indicates that the scan is in progress.
+Klik op **[!UICONTROL Run Upgrade Scan]**. Afhankelijk van de grootte van het project kan het scannen enige tijd in beslag nemen. Een spinner geeft aan dat de scan wordt uitgevoerd.
 
-![](../../assets/upgrade-guide/uct-swat-progress.png)
+![UCT SWAT-widget - Bezig](../../assets/upgrade-guide/uct-swat-progress.png)
 
-After the scan is complete, the high level results are displayed in the widget.
+Nadat de scan is voltooid, worden de resultaten op hoog niveau weergegeven in de widget.
 
-![](../../assets/upgrade-guide/uct-swat-results.png)
+![UCT SWAT-widget - Resultaten](../../assets/upgrade-guide/uct-swat-results.png)
 
-**[!UICONTROL Download Report]**[!DNL Upgrade Compatibility Tool]
+Klikken **[!UICONTROL Download Report]** om de [!DNL Upgrade Compatibility Tool] HTML rapporteert en bekijkt de details.

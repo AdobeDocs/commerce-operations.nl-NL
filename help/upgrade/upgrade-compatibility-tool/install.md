@@ -1,9 +1,9 @@
 ---
-title: Installeer de [!DNL Upgrade Compatibility Tool]
+title: Download de [!DNL Upgrade Compatibility Tool]
 description: Voer de volgende stappen uit om de [!DNL Upgrade Compatibility Tool] voor uw Adobe Commerce-project.
-source-git-commit: 218b099caa883f66ddda48407fb789e51fedc203
+source-git-commit: 5ff08d231269ea0bcb69f8c80aa546b171a5e4a0
 workflow-type: tm+mt
-source-wordcount: '241'
+source-wordcount: '233'
 ht-degree: 0%
 
 ---
@@ -13,9 +13,15 @@ ht-degree: 0%
 
 {{commerce-only}
 
-The [!DNL Upgrade Compatibility Tool] is a command-line tool that checks an Adobe Commerce customized instance against a specific version by analyzing all modules installed in it. Er wordt een lijst met fouten en waarschuwingen geretourneerd die moeten worden opgelost voordat u de upgrade naar de nieuwste versie van Adobe Commerce uitvoert.
+De [!DNL Upgrade Compatibility Tool] is een opdrachtregelprogramma dat een aangepaste Adobe Commerce-instantie controleert op een specifieke versie door alle daarin geïnstalleerde modules te analyseren. Er wordt een lijst met fouten en waarschuwingen geretourneerd die moeten worden opgelost voordat u de upgrade naar de nieuwste versie van Adobe Commerce uitvoert.
 
-## Download the [!DNL Upgrade Compatibility Tool]
+## Vereisten
+
+Als u het dialoogvenster [!DNL Upgrade Compatibility Tool], moet u de noodzakelijke voorwaarden installeren.
+
+Zie [voorwaarden](../upgrade-compatibility-tool/prerequisites.md) voor meer informatie .
+
+## Download de [!DNL Upgrade Compatibility Tool]
 
 Als u het dialoogvenster [!DNL Upgrade Compatibility Tool], voert u de volgende opdracht uit:
 
@@ -23,29 +29,17 @@ Als u het dialoogvenster [!DNL Upgrade Compatibility Tool], voert u de volgende 
 composer create-project magento/upgrade-compatibility-tool uct --repository https://repo.magento.com
 ```
 
-## Installeren
+### Adobe Commerce-toegangstoetsen
 
-To install the [!DNL Upgrade Compatibility Tool], you must install the necessary prerequisites:
-
-* Adobe Commerce access keys
-* Composer
-* Node.js
-
-## Vereisten
-
-Zie [voorwaarden](../upgrade-compatibility-tool/prerequisites.md) voor meer informatie .
-
-### Adobe Commerce access keys
-
-You must have [Adobe Commerce access keys](https://devdocs.magento.com/marketplace/sellers/profile-information.html#access-keys) to download and use the [!DNL Upgrade Compatibility Tool]. Add your Adobe Commerce access keys to your `auth.json` file, which is located at `~/.composer` by default.
+U moet [Adobe Commerce-toegangstoetsen](https://devdocs.magento.com/marketplace/sellers/profile-information.html#access-keys) om de [!DNL Upgrade Compatibility Tool]. Voeg je Adobe Commerce toegangstoetsen toe aan je `auth.json` bestand, dat zich bevindt op `~/.composer` standaard.
 
 >[!WARNING]
 >
->Check your **COMPOSER_HOME** environment variable to see where the `auth.json` file is located.
+>Controleer uw **COMPOSER_HOME** omgevingsvariabele om te zien waar de `auth.json` bestand is gevonden.
 
 De **openbare sleutel** komt overeen met de _gebruikersnaam_ overwegende dat de **persoonlijke sleutel** is de _password_:
 
-### Example of Adobe Commerce access keys
+### Voorbeeld van Adobe Commerce-toegangstoetsen
 
 ```json
     "http-basic": {
@@ -58,11 +52,11 @@ De **openbare sleutel** komt overeen met de _gebruikersnaam_ overwegende dat de 
 
 ### Composer
 
-Clone the [!DNL Upgrade Compatibility Tool] repository and run `composer install` in your terminal to install dependencies.
+Download de [!DNL Upgrade Compatibility Tool] opbergen en uitvoeren `composer install` in uw terminal om gebiedsdelen te installeren.
 
 >[!WARNING]
 >
->Als de **Adobe Commerce-toegangstoetsen** zijn niet correct gevormd, [!DNL Upgrade Compatibility Tool] zal niet installeren en u zult fouten krijgen wanneer het runnen van `composer install` gebruiken.
+>Als de **Adobe Commerce-toegangstoetsen** niet correct zijn geconfigureerd, kunt u de [!DNL Upgrade Compatibility Tool] en wanneer de `composer create-project` zal mislukken.
 
 ### Node.js
 
