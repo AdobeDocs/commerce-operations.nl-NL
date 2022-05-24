@@ -1,9 +1,9 @@
 ---
 title: Hulplijn installeren
 description: Deze handleiding gebruiken om te installeren [!DNL Site-Wide Analysis Tool] voor uw website
-source-git-commit: de2fb829def2cf94c452a06a219d7f29885c8f9f
+source-git-commit: a694de861fcc681d864ffb2c405b2366b32bba41
 workflow-type: tm+mt
-source-wordcount: '1050'
+source-wordcount: '1071'
 ht-degree: 0%
 
 ---
@@ -134,7 +134,7 @@ We hebben een [shellscript](https://github.com/magento-swat/install-agent-helper
 1. Controleer de installatie.
 
    ```bash
-   scheduler -v
+   ./scheduler -v
    ```
 
    ```bash
@@ -253,7 +253,7 @@ Wij adviseren vormend de agent om als dienst te lopen. Als u beperkte toegang to
 
 ### Service {#service}
 
-1. Een systeemeenheidsbestand maken `(/etc/systemd/system/scheduler.service)` met de volgende configuratie (vervang `<filesystemowner>` met de gebruiker van Unix die de folder bezit waar de agent geïnstalleerd is).
+1. Een systeemeenheidsbestand maken `(/etc/systemd/system/scheduler.service)` met de volgende configuratie (vervang `<filesystemowner>` met de Unix-gebruiker die eigenaar is van de map waarin de agent en de Adobe Commerce-software zijn geïnstalleerd). Als u de agent als hoofdgebruiker hebt gedownload, wijzigt u de map en de eigenaar van de geneste bestanden.
 
    ```config
    [Unit]
