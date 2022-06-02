@@ -1,21 +1,50 @@
 ---
-title: Voer de [!DNL Upgrade Compatibility Tool]
+title: '"Voer de [!DNL Upgrade Compatibility Tool]"'
 description: Voer de volgende stappen uit [!DNL Upgrade Compatibility Tool] op uw Adobe Commerce-project.
-source-git-commit: 64b061f3b2f93827bfdb904a6faddbd21f4da5e6
+source-git-commit: ee949c72e42d329fdfb7f4068aeeb3cdc20e1758
 workflow-type: tm+mt
-source-wordcount: '2057'
+source-wordcount: '1529'
 ht-degree: 0%
 
 ---
 
 
-# Voer de [!DNL Upgrade Compatibility Tool]
+# Download de [!DNL Upgrade Compatibility Tool]
 
 {{commerce-only}
 
-De [!DNL Upgrade Compatibility Tool] is een opdrachtregelprogramma dat een aangepaste Adobe Commerce-instantie controleert op een specifieke versie door alle daarin geïnstalleerde modules te analyseren. Er wordt een lijst geretourneerd met kritieke problemen, fouten en waarschuwingen die moeten worden opgelost voordat u de upgrade naar de nieuwste versie van Adobe Commerce uitvoert.
+Ga als volgt te werk: [!DNL Upgrade Compatibility Tool] in een bevel-lijn interface, download het door het volgende bevel in werking te stellen:
+
+```bash
+composer create-project magento/upgrade-compatibility-tool uct --repository https://repo.magento.com
+```
+
+>[!NOTE]
+>
+> Zie de [voorwaarden](../upgrade-compatibility-tool/prerequisites.md) voor meer informatie over de minimumvereisten om het gereedschap te gebruiken.
+
+## Voer de [!DNL Upgrade Compatibility Tool]
+
+De [!DNL Upgrade Compatibility Tool] is een hulpmiddel dat een Adobe Commerce aangepaste instantie tegen een specifieke versie door alle modules controleert te analyseren die in het worden geïnstalleerd. Er wordt een lijst geretourneerd met kritieke problemen, fouten en waarschuwingen die moeten worden opgelost voordat u de upgrade naar de nieuwste versie van Adobe Commerce uitvoert.
 
 De [!DNL Upgrade Compatibility Tool] identificeert potentiële problemen die in uw code moeten worden opgelost alvorens te proberen om aan een nieuwere versie van Adobe Commerce te bevorderen.
+
+Zie dit [videozelfstudie](https://experienceleague.adobe.com/docs/commerce-learn/tutorials/upgrade/upgrade-compatibility-tool-overview.html?lang=en) (06:02) voor meer informatie over de [!DNL Upgrade Compatibility Tool].
+
+## Aanbevolen acties
+
+### De resultaten optimaliseren
+
+De [!DNL Upgrade Compatibility Tool] verstrekt een rapport dat resultaten met alle kwesties bevat die op uw project door gebrek worden geïdentificeerd. U kunt de resultaten optimaliseren om u te concentreren op de problemen die u moet verhelpen om de upgrade te voltooien:
+
+- De optie gebruiken `--ignore-current-version-compatibility-issues`, waarin alle bekende kritieke problemen, fouten en waarschuwingen voor uw huidige Adobe Commerce-versie worden onderdrukt. Er worden alleen fouten weergegeven in de versie waarnaar u wilt upgraden.
+- Voeg de `--min-issue-level` kunt u met deze instelling het minimale niveau van de uitgaven instellen, zodat u alleen de belangrijkste problemen met de upgrade kunt oplossen.
+- Als u alleen een bepaalde leverancier, module of zelfs map wilt analyseren, kunt u het pad ook als optie opgeven. Voer de `bin` opdracht met de toegevoegde optie `-m`. Hierdoor wordt de [!DNL Upgrade Compatibility Tool] om een specifieke module onafhankelijk te analyseren, en hulp met geheugenkwesties die kunnen voorkomen wanneer het uitvoeren van [!DNL Upgrade Compatibility Tool].
+
+### Aanbevolen procedures voor Adobe Commerce volgen
+
+- Vermijd het gebruik van twee modules met dezelfde naam.
+- Adobe Commerce volgen [coderingsnormen](https://devdocs.magento.com/guides/v2.4/coding-standards/bk-coding-standards.html).
 
 ## Gebruik de `upgrade:check` command
 
@@ -85,130 +114,6 @@ Beschikbaar `--help` opties voor de `upgrade:check` opdracht:
 - `--ansi, --no-ansi`: Schakel ANSI-uitvoer in.
 - `-n, --no-interaction`: Stel geen interactieve vraag terwijl het uitvoeren van het bevel.
 - `-v, --vv, --vvv, --verbose`: Verhoog de breedtegraad van uitvoercommunicatie. 1 voor normale uitvoer, 2 voor uitgebreide uitvoer en 3 voor DEBUG-uitvoer.
-
-### Uitvoer
-
-Als gevolg van de uitgevoerde analyse [!DNL Upgrade Compatibility Tool] Hiermee wordt een rapport geëxporteerd dat een lijst met problemen voor elk bestand bevat waarin de ernst, foutcode en beschrijving van de fout worden vermeld.
-
-Zie het onderstaande voorbeeld:
-
-```terminal
-File: /app/code/Custom/CatalogExtension/Controller/Index/Index.php
-------------------------------------------------------------------
- * [WARNING][1131] Line 23: Extending from class 'Magento\Framework\App\Action\Action' that is @deprecated on version '2.4.2'
- * [ERROR][1429] Line 103: Call method 'Magento\Framework\Api\SearchCriteriaBuilder::addFilters' that is non API on version '2.4.2'
- * [CRITICAL][1110] Line 60: Instantiating class/interface 'Magento\Catalog\Model\ProductRepository' that does not exist on version '2.4.2'
-```
-
-Controleer de [Verwijzing naar foutbericht](error-messages.md) voor meer informatie.
-
-Het verslag bevat ook een gedetailleerde samenvatting die het volgende laat zien:
-
-- *Huidige versie*: de versie die momenteel is geïnstalleerd.
-- *Doelversie*: de versie waarnaar u wilt upgraden.
-- *Uitvoeringstijd*: de hoeveelheid tijd die de analyse nodig had om het rapport op te stellen (mm:ss).
-- *Modules die update vereisen*: het percentage modules dat compatibiliteitsproblemen bevat en moet worden bijgewerkt.
-- *Bestanden die moeten worden bijgewerkt*: het percentage bestanden dat compatibiliteitsproblemen bevat en moet worden bijgewerkt.
-- *Totaal aantal kritieke fouten*: het aantal aangetroffen kritieke fouten.
-- *Totaal aantal fouten*: het aantal gevonden fouten.
-- *Totaal aantal waarschuwingen*: het aantal gevonden waarschuwingen.
-
-Zie het onderstaande voorbeeld:
-
-```terminal
- ----------------------------- ------------------
-  Current version               2.4.2
-  Target version                2.4.3
-  Execution time                1m:10s
-  Modules that require update   78.33% (47/60)
-  Files that require update     21.62% (115/532)
-  Total critical issues         35
-  Total errors                  201
-  Total warnings                103
- ----------------------------- ------------------
-```
-
->[!NOTE]
->
->Standaard worden de [!DNL Upgrade Compatibility Tool] het rapport wordt in twee verschillende formaten geëxporteerd: `json` en `html`.
-
-#### JSON
-
-Het JSON-bestand bevat exact dezelfde informatie als wordt weergegeven bij uitvoer:
-
-- Lijst van de geïdentificeerde problemen.
-- Samenvatting van de analyse.
-
-Voor elke ondervonden kwestie, verstrekt het rapport gedetailleerde informatie zoals de ernst en de beschrijving van het probleem.
-
->[!NOTE]
->
->Het standaardpad voor de uitvoermap is `var/output/[TIME]-results.json`.
-
-Voer de volgende handelingen uit om dit rapport naar een andere uitvoermap te exporteren:
-
-```bash
-bin/uct upgrade:check <dir> --json-output-path[=JSON-OUTPUT-PATH]
-```
-
-Waar de argumenten als volgt zijn:
-
-- `<dir>`: Adobe Commerce-installatiemap.
-- `[=JSON-OUTPUT-PATH]`: Padmap om het pad te exporteren `.json` uitvoerbestand.
-
->[!NOTE]
->
->Het standaardpad voor de uitvoermap is `var/output/[TIME]-results.json`.
-
-#### HTML
-
-Het HTML-bestand bevat ook de analysesamenvatting en de lijst met geïdentificeerde problemen.
-
-![HTML-rapport - Samenvatting](../../assets/upgrade-guide/uct-html-summary.png)
-
-U kunt gemakkelijk door de geïdentificeerde kwesties navigeren tijdens [!DNL Upgrade Compatibility Tool] analyse:
-
-![HTML-rapport - Details](../../assets/upgrade-guide/uct-html-details.png)
-
-Het rapport HTML bevat ook vier verschillende grafieken:
-
-- **Modules naar uitgifteernst**: Toont strengheidsverdeling door modules.
-- **Bestanden met de ernst van de uitgave**: Hiermee geeft u de verdeling van de ernst per bestand weer.
-- **Modules geordend op totaal aantal emissies**: Toont de 10 meest gecompromitteerde modules rekening houdend met waarschuwingen, fouten, en kritieke fouten.
-- **Modules met relatieve grootten en problemen**: Hoe meer bestanden een module bevat, hoe groter de cirkel. Hoe meer problemen een module heeft, hoe meer rood de cirkel wordt weergegeven.
-
-Met deze grafieken kunt u (in één oogopslag) de onderdelen identificeren die het meest gecompromitteerd zijn en die waarvoor meer werk nodig is om een upgrade uit te voeren.
-
-![HTML-rapport - Diagrammen](../../assets/upgrade-guide/uct-html-diagrams.png)
-
-U kunt de in het rapport weergegeven problemen filteren op basis van het minimale niveau van de uitgave (standaard, [WAARSCHUWING]).
-
-In de rechterbovenhoek bevindt zich een vervolgkeuzelijst waarmee u naar wens een andere vervolgkeuzelijst kunt selecteren. De lijst met geïdentificeerde problemen wordt dienovereenkomstig gefilterd.
-
-![Rapport HTML - Vervolgkeuzemogelijkheden](../../assets/upgrade-guide/uct-html-filtered-issues-list.png)
-
-Houd er rekening mee dat de problemen met een lager emissieniveau zijn opgelost, maar u krijgt een melding zodat u altijd op de hoogte bent van de geïdentificeerde problemen per module.
-
-De diagrammen worden ook dienovereenkomstig bijgewerkt, met uitzondering van de `Modules with relative sizes and issues`, die met de `min-issue-level` oorspronkelijk ingesteld.
-
-Als u verschillende resultaten wilt zien, zult u het bevel moeten opnieuw in werking stellen die een andere waarde voor het verstrekken van `--min-issue-level` optie.
-
-![Rapport HTML - Bubble Chart Diagram](../../assets/upgrade-guide/uct-html-filtered-diagrams.png)
-
-Dit rapport exporteren naar een andere uitvoermap:
-
-```bash
-bin/uct upgrade:check <dir> --html-output-path[=HTML-OUTPUT-PATH]
-```
-
-Waar de argumenten als volgt zijn:
-
-- `<dir>`: installatiemap {site.data.var.ee} .
-- `[=HTML-OUTPUT-PATH]`: Padmap om het pad te exporteren `.html` uitvoerbestand.
-
->[!NOTE]
->
->Het standaardpad voor de uitvoermap is `var/output/[TIME]-results.html`.
 
 ### Gebruik de `--ignore-current-version-compatibility-issues` option
 
@@ -353,26 +258,6 @@ Beschikbaar `--help` opties voor de `graphql:compare` opdracht:
  *   [WARNING] FIELD_CHANGED_KIND: ConfigurableProduct.gender changed type from Int to String.
  *   [WARNING] OPTIONAL_INPUT_FIELD_ADDED: An optional field sku on input type ProductAttributeSortInput was added.
 ```
-
-U kunt de [!DNL Upgrade Compatibility Tool] met een uitvoeringsconfiguratie via de insteekmodule PhpStorm. Zie de [[!DNL Upgrade Compatibility Tool] Configuratie uitvoeren](https://devdocs.magento.com/guides/v2.3/ext-best-practices/phpstorm/uct-run-configuration.html) voor meer informatie.
-
-Zie dit [videozelfstudie](https://experienceleague.adobe.com/docs/commerce-learn/tutorials/upgrade/uct-phpstorm.html?lang=en) (06:30) leren hoe u de [!DNL Upgrade Compatibility Tool] met de Magento PHPStorm-plug-in.
-
-
-## Aanbevolen acties
-
-### De resultaten optimaliseren
-
-De [!DNL Upgrade Compatibility Tool] verstrekt een rapport dat resultaten met alle kwesties bevat die op uw project door gebrek worden geïdentificeerd. U kunt de resultaten optimaliseren om u te concentreren op de problemen die u moet verhelpen om de upgrade te voltooien:
-
-- De optie gebruiken `--ignore-current-version-compatibility-issues`, waarin alle bekende kritieke problemen, fouten en waarschuwingen voor uw huidige Adobe Commerce-versie worden onderdrukt. Er worden alleen fouten weergegeven in de versie waarnaar u wilt upgraden.
-- Voeg de `--min-issue-level` kunt u met deze instelling het minimale niveau van de uitgaven instellen, zodat u alleen de belangrijkste problemen met de upgrade kunt oplossen.
-- Als u alleen een bepaalde leverancier, module of zelfs map wilt analyseren, kunt u het pad ook als optie opgeven. Voer de `bin` opdracht met de toegevoegde optie `-m`. Hierdoor wordt de [!DNL Upgrade Compatibility Tool] om een specifieke module onafhankelijk te analyseren, en hulp met geheugenkwesties die kunnen voorkomen wanneer het uitvoeren van [!DNL Upgrade Compatibility Tool].
-
-### Aanbevolen procedures voor Adobe Commerce volgen
-
-- Vermijd het gebruik van twee modules met dezelfde naam.
-- Adobe Commerce volgen [coderingsnormen](https://devdocs.magento.com/guides/v2.4/coding-standards/bk-coding-standards.html).
 
 ## Problemen oplossen
 

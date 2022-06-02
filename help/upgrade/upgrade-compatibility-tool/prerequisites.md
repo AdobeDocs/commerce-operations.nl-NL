@@ -1,40 +1,66 @@
 ---
-title: '"[!DNL Upgrade Compatibility Tool] Vereisten"'
-description: 'Controleer of uw systeem voldoet aan de vereisten die nodig zijn om het [!DNL Upgrade Compatibility Tool] voor uw Adobe Commerce-project. '
-source-git-commit: 5ff08d231269ea0bcb69f8c80aa546b171a5e4a0
+title: '"[!DNL Upgrade Compatibility Tool] vereisten"'
+description: 'Controleer of uw systeem voldoet aan de vereisten voor het uitvoeren van de [!DNL Upgrade Compatibility Tool] voor uw Adobe Commerce-project. '
+source-git-commit: e539824b336978debd6e6adc538cd8bad367eff1
 workflow-type: tm+mt
-source-wordcount: '186'
+source-wordcount: '276'
 ht-degree: 0%
 
 ---
 
 
-# [!DNL Upgrade Compatibility Tool] voorwaarden
+# Systeemvereisten
 
 {{commerce-only}
 
-De minimumvereisten voor het uitvoeren van de [!DNL Upgrade Compatibility Tool] zijn:
+De minimumeisen voor het gebruik van de [!DNL Upgrade Compatibility Tool] zijn:
 
 | **Vereisten** | **Restricties** |
 |----------------|-----------------|
 | PHP-versie | >= 7,3 |
-| Composer | none |
+| Composer | geen bekende vereiste |
 | Node.js | [Node.js](https://nodejs.org/) (`^12.22.0`, `^14.17.0`, of `>=16.0.0`) |
 | Geheugenbeperkingen | Minimaal 2 GB RAM |
-| Adobe Commerce Access-toetsen | none |
-| Adobe Commerce | none |
 
 U kunt de [!DNL Upgrade Compatibility Tool] in verschillende besturingssystemen (Windows wordt niet ondersteund). U hoeft de [!DNL Upgrade Compatibility Tool] waar uw Adobe Commerce-exemplaar zich bevindt.
 
-Het is noodzakelijk [!DNL Upgrade Compatibility Tool] om toegang te hebben tot de broncode van de instantie Adobe Commerce. U kunt de toepassing bijvoorbeeld op de ene server installeren en deze op de Adobe Commerce-installatie op een andere server plaatsen. Zie de [installeren](../upgrade-compatibility-tool/install.md) voor meer informatie.
+Het is noodzakelijk [!DNL Upgrade Compatibility Tool] om toegang te hebben tot de broncode van de instantie Adobe Commerce. U kunt de toepassing bijvoorbeeld op de ene server installeren en deze op de Adobe Commerce-installatie op een andere server plaatsen.
 
-Als u de [!DNL Upgrade Compatibility Tool] voor een Adobe Commerce-exemplaar met grote modules en bestanden kan het nodig zijn dat er veel RAM-geheugen beschikbaar is (ten minste 2 GB). U kunt de `[=MODULE-PATH]` in uw opdracht om de modulepadmap op te geven om problemen te voorkomen die te wijten zijn aan een lage geheugenbeperking:
+Als u de [!DNL Upgrade Compatibility Tool] voor een Adobe Commerce-exemplaar met grote modules en bestanden kan het nodig zijn dat er veel RAM-geheugen beschikbaar is (ten minste 2 GB).
 
-```bash
-bin/uct upgrade:check <dir> -m[=MODULE-PATH]
+## Adobe Commerce-toegangstoetsen
+
+U moet [Adobe Commerce-toegangstoetsen](https://devdocs.magento.com/marketplace/sellers/profile-information.html#access-keys) om de [!DNL Upgrade Compatibility Tool]. Voeg je Adobe Commerce toegangstoetsen toe aan je `auth.json` bestand, dat zich bevindt op `~/.composer` standaard.
+
+>[!WARNING]
+>
+>Controleer uw **COMPOSER_HOME** omgevingsvariabele om te zien waar de `auth.json` bestand is gevonden.
+
+De **openbare sleutel** komt overeen met de _gebruikersnaam_ overwegende dat de **persoonlijke sleutel** is de _password_:
+
+### Voorbeeld van Adobe Commerce-toegangstoetsen
+
+```json
+    "http-basic": {
+        "repo.magento.com": {
+            "username": "YOUR_MAGENTO_PUBLIC_KEY",
+            "password": "YOUR_MAGENTO_PRIVATE_KEY"
+        }
+    },
 ```
 
-Waar de argumenten als volgt zijn:
+## Composer
 
-- `<dir>`: Adobe Commerce-installatiemap.
-- `[=MODULE-PATH]`: Specifieke modulepad.
+Download de [!DNL Upgrade Compatibility Tool] opbergen en uitvoeren `composer install` in uw terminal om gebiedsdelen te installeren.
+
+>[!NOTE]
+>
+> Als u uw **Adobe Commerce-toegangstoetsen**, kunt u de [!DNL Upgrade Compatibility Tool]. De `composer create-project` de opdracht mislukt.
+
+## Node.js
+
+Om Node.js te installeren, zie Node.js [documentatie](https://nodejs.dev/learn/how-to-install-nodejs).
+
+## Extensies van derden
+
+Adobe raadt u aan contact op te nemen met uw leverancier van extensies om te bepalen of uw extensie volledig compatibel is met de nieuwste versie van Adobe Commerce.
