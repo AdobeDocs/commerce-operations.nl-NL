@@ -1,9 +1,9 @@
 ---
 title: Statuskenmerken
 description: Meer informatie over de verschillende statusgegevens vindt u in het dialoogvenster [!DNL Site-Wide Analysis Tool].
-source-git-commit: 1222d1c87de26ce95c4eefaa9d2a9c3731e1b3cf
+source-git-commit: 01d4e800c31615494e6e3f20adfbf3d35fabcce9
 workflow-type: tm+mt
-source-wordcount: '0'
+source-wordcount: '154'
 ht-degree: 0%
 
 ---
@@ -19,6 +19,3 @@ De volgende statusinformatie wordt weergegeven op het bovenste niveau van de pag
 **[!UICONTROL Health Index Bar]**: Het meet algemene gezondheid van de plaats van 0 tot 100, waar nul het slechtst is, en 100 is perfecte gezondheid. Deze wordt berekend op basis van de coëfficiënt voor de hoeveelheid en het prioritaire gewicht van de werkzame aanbevelingen.
 
 **[!UICONTROL Download Recommendations Report]**: Het Recommendations-rapport bevat persoonlijke aanbevelingen die van toepassing zijn op uw project. U kunt een rapport van de PDF downloaden door op deze sectie te klikken.
-
-
-

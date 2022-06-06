@@ -1,9 +1,9 @@
 ---
 user-guide-title: Gereedschappen
 user-guide-description: Leer meer over de verschillende gereedschappen die u met Adobe Commerce kunt gebruiken, hun gebruik, het installatieproces en hoe u toegang krijgt.
-source-git-commit: 55282af5ac2aef62f55c0d552045d622102a1091
+source-git-commit: 89ac54c84a9db0e9f4e171d07a55f7cbe2a2280d
 workflow-type: tm+mt
-source-wordcount: '37'
+source-wordcount: '38'
 ht-degree: 0%
 
 ---
@@ -19,4 +19,4 @@ ht-degree: 0%
    - [Statuskenmerken](site-wide-analysis-tool/status.md)
    - [Tabbladen met functies](site-wide-analysis-tool/features-tabs.md)
    - [Extensies](site-wide-analysis-tool/extensions.md)
-
+   - [Patches](site-wide-analysis-tool/patches.md)
