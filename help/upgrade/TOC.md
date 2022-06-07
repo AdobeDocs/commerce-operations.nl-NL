@@ -1,9 +1,9 @@
 ---
 user-guide-title: Upgradehandleiding
 user-guide-description: Leer waarom het upgraden van uw Adobe Commerce- of Magento Open Source-toepassing zo belangrijk is en hoe u een upgrade succesvol kunt plannen en uitvoeren.
-source-git-commit: ee949c72e42d329fdfb7f4068aeeb3cdc20e1758
+source-git-commit: fd624a97d74c7f6a9e29223227dae425bb6fa68c
 workflow-type: tm+mt
-source-wordcount: '145'
+source-wordcount: '146'
 ht-degree: 0%
 
 ---
@@ -33,7 +33,7 @@ ht-degree: 0%
    - [Patches toepassen](patches/apply.md)
 - [!DNL Upgrade Compatibility Tool] {#upgrade-compatibility-tool}
    - [Overzicht](upgrade-compatibility-tool/overview.md)
-   - [Vereisten](upgrade-compatibility-tool/prerequisites.md)
+   - [Systeemvereisten](upgrade-compatibility-tool/prerequisites.md)
    - Gebruik de [!DNL Upgrade Compatibility Tool] {#use-upgrade-compatibility-tool}
       - [Het gereedschap uitvoeren in een opdrachtregelinterface](upgrade-compatibility-tool/run.md)
       - [Integreer met de [!DNL Site-Wide Analysis Tool]](upgrade-compatibility-tool/integrate-analysis-tool.md)
