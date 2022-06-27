@@ -1,9 +1,9 @@
 ---
 title: Hoe reparaties werken
 description: Leer meer over de verschillende typen patches voor Adobe Commerce en Magento Open Source en hoe ze werken.
-source-git-commit: 06ac3169a5e3813e4f50246f54f91998e14b5985
+source-git-commit: 45a44d98f149b4b9a1fbb4ac0bcea3eb372f49a8
 workflow-type: tm+mt
-source-wordcount: '619'
+source-wordcount: '614'
 ht-degree: 0%
 
 ---
@@ -21,7 +21,7 @@ Patch-bestanden (of diff-bestanden) zijn tekstbestanden met de volgende notatie:
 - Het regelnummer waarmee de wijziging moet beginnen en het aantal regels dat moet worden gewijzigd.
 - De nieuwe code die moet worden omgewisseld.
 
-Wanneer de [pleister](https://en.wikipedia.org/wiki/Patch_(Unix)) programma wordt uitgevoerd, wordt dit bestand ingelezen en worden de opgegeven wijzigingen aangebracht in het bestand of de bestanden.
+Wanneer het patchprogramma wordt uitgevoerd, wordt dit bestand ingelezen en worden de opgegeven wijzigingen aangebracht in het bestand of de bestanden.
 
 Er zijn drie typen patches:
 
