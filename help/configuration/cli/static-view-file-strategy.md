@@ -1,0 +1,105 @@
+---
+title: Implementatiestrategieën voor statische weergavebestanden
+description: Lees over plaatsingsstrategieën voor de toepassing van de Handel.
+source-git-commit: 96fe0c5eeaa029347c829c39547ee5e473c8d04d
+workflow-type: tm+mt
+source-wordcount: '482'
+ht-degree: 0%
+
+---
+
+
+# Implementatiestrategieën voor statische weergavebestanden
+
+Bij het implementeren van statische weergavebestanden kunt u een van de drie beschikbare strategieën kiezen. Elk van hen verstrekt optimale plaatsingsresultaten voor verschillende gebruiksgevallen:
+
+- [Standaard](#standard-strategy): het reguliere implementatieproces.
+- [Snel](#quick-strategy) (_default_): Minimaliseert de tijd die voor plaatsing wordt vereist wanneer de dossiers voor meer dan één scène worden opgesteld.
+- [Compact](#compact-strategy): Hiermee minimaliseert u de ruimte die door de gepubliceerde weergavebestanden wordt ingenomen.
+
+In de volgende secties worden de implementatiedetails en -kenmerken van elke strategie beschreven.
+
+## Standaardstrategie
+
+Wanneer de Standaardstrategie wordt gebruikt, worden alle statische meningsdossiers voor alle pakketten opgesteld, dat wil zeggen, verwerkt door [`\Magento\Framework\App\View\Asset\Publisher`](https://github.com/magento/magento2/blob/2.4/lib/internal/Magento/Framework/App/View/Asset/Publisher.php).
+
+Zie voor meer informatie [Statische weergavebestanden gebruiken](../cli/static-view-file-deployment.md).
+
+## Snelle strategie
+
+De snelle strategie voert de volgende acties uit:
+
+1. Voor elk thema wordt één willekeurige landinstelling gekozen en worden alle bestanden voor deze landinstelling geïmplementeerd, zoals in de standaardstrategie.
+1. Voor alle andere landinstellingen van het thema:
+
+   1. Bestanden die de geïmplementeerde landinstelling overschrijven, worden gedefinieerd en geïmplementeerd.
+   1. Alle andere bestanden worden beschouwd als vergelijkbaar voor alle landinstellingen en worden gekopieerd van de geïmplementeerde landinstelling.
+
+>[!INFO]
+>
+>Door _gelijkaardig_, we hebben het over bestanden die onafhankelijk zijn van de landinstelling, het thema of het gebied. Deze bestanden kunnen CSS, afbeeldingen en lettertypen bevatten.
+
+Deze benadering minimaliseert de plaatsingstijd die voor veelvoudige scènes wordt vereist hoewel veel dossiers worden gedupliceerd.
+
+## Compacte strategie
+
+Met de compacte strategie vermijdt u dubbele bestanden door vergelijkbare bestanden op te slaan in `base` submappen.
+
+Voor het meest geoptimaliseerde resultaat worden drie bereiken voor mogelijke gelijkenis toegewezen: gebied, thema en landinstelling. De `base` subdirectory&#39;s worden gemaakt voor alle combinaties van deze bereiken.
+
+De bestanden worden volgens de volgende patronen naar deze submappen geïmplementeerd.
+
+| Patroon | Beschrijving |
+| ------- | ----------- |
+| `<area>/<theme>/<locale>` | Bestanden die specifiek zijn voor een bepaald gebied, thema en landinstelling |
+| `<area>/<theme>/default` | Bestanden die vergelijkbaar zijn voor alle landinstellingen van een bepaald thema in een bepaald gebied. |
+| `<area>/Magento/base/<locale>` | Bestanden die specifiek zijn voor een bepaald gebied en een bepaalde landinstelling, maar die vergelijkbaar zijn voor alle thema&#39;s. |
+| `<area>/Magento/base/default` | Bestanden die specifiek zijn voor een bepaald gebied, maar vergelijkbaar voor alle thema&#39;s en landinstellingen. |
+| `base/Magento/base/<locale>` | Bestanden die vergelijkbaar zijn voor alle gebieden en thema&#39;s, maar specifiek zijn voor een bepaalde landinstelling. |
+| `base/Magento/base/default` | Vergelijkbaar voor alle gebieden, thema&#39;s en landinstellingen. |
+
+### Geïmplementeerde bestanden toewijzen
+
+De benadering van plaatsing die in de compacte strategie wordt gebruikt betekent dat de dossiers van basisthema&#39;s en scènes worden geërft. Deze overervingsrelaties worden opgeslagen in de kaartbestanden voor elke combinatie van gebied, thema en landinstelling. Er zijn afzonderlijke toewijzingsbestanden voor PHP en JS:
+
+- `map.php`
+- `requirejs-map.js`
+
+De `map.php` bestand wordt gebruikt door [`Magento\Framework\View\Asset\Repository`](https://github.com/magento/magento2/blob/2.4/lib/internal/Magento/Framework/View/Asset/Repository.php) om juiste URL&#39;s samen te stellen.
+
+De `requirejs-map.js` wordt gebruikt door de `baseUrlResolver` insteekmodule voor RequireJS.
+
+Voorbeeld van `map.php`:
+
+```php?start_inline=1
+return [
+    'Magento_Checkout::cvv.png' => [
+        'area' => 'frontend',
+        'theme' => 'Magento/luma',
+        'locale' => 'en_US',
+    ],
+    '...' => [
+        'area' => '...',
+        'theme' => '...',
+        'locale' => '...'
+    ]
+];
+```
+
+Voorbeeld van `requirejs-map.js`:
+
+```js
+require.config({
+    "config": {
+       "baseUrlInterceptor": {
+            "jquery.js": "../../../../base/Magento/base/en_US/"
+        }
+    }
+});
+```
+
+## Tips voor ontwikkelaars van extensies
+
+Als u URL&#39;s wilt maken naar statische weergavebestanden, gebruikt u [`\Magento\Framework\View\Asset\Repository::createAsset()`](https://github.com/magento/magento2/blob/2.4/lib/internal/Magento/Framework/View/Asset/Repository.php#L211-L244).
+
+Gebruik geen URL-aaneenschakelingen om problemen te voorkomen waarbij statische bestanden niet worden gevonden en niet worden weergegeven tijdens het weergeven van pagina&#39;s.

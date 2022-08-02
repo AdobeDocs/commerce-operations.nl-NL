@@ -1,0 +1,43 @@
+---
+title: Overzicht van serviceconfiguratiepaden
+description: Zie een lijst van de waarden van de de dienstenconfiguratie.
+source-git-commit: 6a3995dd24f8e3e8686a8893be9693581d31712b
+workflow-type: tm+mt
+source-wordcount: '162'
+ht-degree: 0%
+
+---
+
+
+# Overzicht van serviceconfiguratiepaden
+
+In deze sectie worden de namen van variabelen en configuratiepaden weergegeven die beschikbaar zijn voor opties in de beheerdersruimte onder **Winkels** > Instellingen > **Configuratie** > **Services**.
+
+De [`magento app:config:dump` command](../cli/export-configuration.md) deze waarden naar het gedeelde configuratiebestand schrijft, `app/etc/config.php`, die onder broncontrole moeten staan. Om naar keuze om het even welke configuratiemontages met voeten te treden of gevoelige montages te plaatsen, zie [Omgevingsvariabelen gebruiken om configuratie-instellingen te overschrijven](override-config-settings.md#environment-variables). Dit onderwerp doet _niet_ list [gevoelige en systeemspecifieke waarden](config-reference-sens.md).
+
+## Web API-paden voor handel
+
+Deze configuratiewaarden zijn beschikbaar in de Admin in **Winkels** > Instellingen > **Configuratie** > **Services** > **Web-API**.
+
+| Naam | Config-pad | Alleen handel? |
+|--------------|--------------|--------------|
+| Standaardresponstekenreeks | `webapi/soap/charset` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
+| Anonieme toegang voor gasten toestaan | `webapi/webapisecurity/allow_insecure` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
+
+{style=&quot;table-layout:auto&quot;}
+
+## OAuth-paden
+
+Deze configuratiewaarden zijn beschikbaar in de Admin in **Winkels** > Instellingen > **Configuratie** > **Services** > **OAuth**.
+
+| Naam | Config-pad | Alleen handel? |
+|--------------|--------------|--------------|
+| Levensduur klanttoken (uren) | `oauth/access_token_lifetime/customer` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
+| Levensduur beheertoken (uren) | `oauth/access_token_lifetime/admin` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
+| Mogelijkheid tot opschonen | `oauth/cleanup/cleanup_probability` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
+| Vervalperiode | `oauth/cleanup/expiration_period` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
+| Vervalperiode | `oauth/consumer/expiration_period` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
+| OAuth Consumer credentials HTTP Post maxredirects | `oauth/consumer/post_maxredirects` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
+| OAuth Consumer credentials HTTP Post timeout | `oauth/consumer/post_timeout` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
+
+{style=&quot;table-layout:auto&quot;}
