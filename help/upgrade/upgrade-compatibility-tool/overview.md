@@ -3,7 +3,7 @@ title: '"Overzicht van de [!DNL Upgrade Compatibility Tool]"'
 description: Meer informatie over de [!DNL Upgrade Compatibility Tool] en hoe u hiermee kunt helpen bij uw Adobe Commerce-project.
 source-git-commit: 9b0f97d36092d2a1057cdc905671cda8540881c9
 workflow-type: tm+mt
-source-wordcount: '0'
+source-wordcount: '343'
 ht-degree: 0%
 
 ---
@@ -11,7 +11,7 @@ ht-degree: 0%
 
 # Overzicht van hulplijnen
 
-{{commerce-only}
+{{commerce-only}}
 
 Deze handleiding is bedoeld voor beheerders en software-engineers van Adobe Commerce. Het omvat gedetailleerde informatie over installatie van [!DNL Upgrade Compatibility Tool], alsmede de configuratie en het beheer ervan. Het veronderstelt een basisbegrip van de kernconfiguratie en de functionaliteit van de Handel.
 
