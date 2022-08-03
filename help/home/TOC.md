@@ -1,7 +1,7 @@
 ---
 user-guide-title: Operationele hulplijnen
 user-guide-description: Meer informatie over de operationele aspecten van het onderhoud van uw Adobe Commerce- of Magento Open Source-toepassing.
-source-git-commit: 8b40946fc65d9089de752376abbd31e37f60c541
+source-git-commit: 6c462d615675615b317c6de529d1af5846d26e69
 workflow-type: tm+mt
 source-wordcount: '118'
 ht-degree: 0%
@@ -14,7 +14,7 @@ ht-degree: 0%
 - [Home](home.md)
 - [Geen informatie](https://devdocs.magento.com/guides/v2.4/release-notes/bk-release-notes.html)
 - [Installatie](https://devdocs.magento.com/guides/v2.4/install-gde/install-flow-diagram.html)
-- [Configuratie](https://devdocs.magento.com/guides/v2.4/config-guide/bk-config-guide.html)
+- [Configuratie](https://experienceleague.adobe.com/docs/commerce-operations/configuration-guide/overview.html)
 - [Migratie](https://devdocs.magento.com/guides/v2.4/migration/bk-migration-guide.html)
 - [Upgrade](https://experienceleague.adobe.com/docs/commerce-operations/upgrade-guide/overview.html?lang=en)
 - [Aanbevolen werkwijzen voor prestaties](https://experienceleague.adobe.com/docs/commerce-operations/performance-best-practices/overview.html)
