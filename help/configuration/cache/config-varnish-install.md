@@ -1,9 +1,9 @@
 ---
 title: Varnish installeren
 description: Zie advies over het installeren van Varnish.
-source-git-commit: 688db9fcc9cd196d1560e49719b03ef32d13870d
+source-git-commit: c65c065c5f9ac2847caa8898535afdacf089006a
 workflow-type: tm+mt
-source-wordcount: '163'
+source-wordcount: '165'
 ht-degree: 0%
 
 ---
@@ -13,9 +13,9 @@ ht-degree: 0%
 
 Het installeren van de Varnish software is voorbij het werkingsgebied van deze gids. Zie voor meer informatie over het installeren van Varnish:
 
-- [installatiewiki](http://wiki.mikejung.biz/Varnish)
+- [installatiegids](https://www.varnish-software.com/developers/tutorials/installing-varnish-ubuntu/)
 - [Vernis-installatiehulplijnen](https://www.varnish-cache.org/docs)
-- [Varnish (Tecmint) installeren](http://www.tecmint.com/install-varnish-cache-web-accelerator)
+- [Varnish (Tecmint) installeren](https://www.tecmint.com/install-varnish-cache-web-accelerator/)
 
 >[!INFO]
 >

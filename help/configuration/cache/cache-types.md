@@ -1,9 +1,9 @@
 ---
 title: Cachetypen
 description: De voorkanten van het geheime voorgeheugen van de vennoot met geheim voorgeheugentypes.
-source-git-commit: 80abb0180fcd8ecc275428c23b68feb5883cbc28
+source-git-commit: c65c065c5f9ac2847caa8898535afdacf089006a
 workflow-type: tm+mt
-source-wordcount: '301'
+source-wordcount: '271'
 ht-degree: 0%
 
 ---
@@ -67,10 +67,11 @@ U kunt de opties voor de configuratie van de front- en back-end cache opgeven in
 
 waar
 
-- `<frontend_type>` is het front-end cachetype op laag niveau. Geef de naam op van een klasse die compatibel is met [Zend\Cache\Core](https://framework.zend.com/apidoc/1.7/Zend_Cache/Zend_Cache_Core.html).
-
-   Als u weglaat `<frontend_type>`, [Magento\Framework\Cache\Core](https://github.com/magento/magento2/blob/2.4/lib/internal/Magento/Framework/Cache/Core.php) wordt gebruikt.
+- `<frontend_type>` is het front-end cachetype op laag niveau. Geef de naam op van een klasse die compatibel is met `Zend\Cache\Core`.
+Als u weglaat `<frontend_type>`, [Magento\Framework\Cache\Core](https://github.com/magento/magento2/blob/2.4/lib/internal/Magento/Framework/Cache/Core.php) wordt gebruikt.
 
 - `<frontend_option>`, `<frontend_option_value>` Dit zijn de naam en waarde van opties die het kader van de Handel als associatieve serie aan het frontend geheime voorgeheugen op zijn verwezenlijking overgaat.
-- `<backend_type>` is het achterste cachetype op laag niveau. Geef de naam op van een klasse die compatibel is met [Zend_cache_Backend](https://framework.zend.com/apidoc/1.7/Zend_Cache/Zend_Cache_Backend/Zend_Cache_Backend.html) en dat [Zend_Cache_Backend_Interface](https://framework.zend.com/apidoc/1.6/Zend_Cache/Zend_Cache_Backend/Zend_Cache_Backend_Interface.html).
+- `<backend_type>` is het achterste cachetype op laag niveau. Geef de naam op van een klasse die compatibel is met `Zend_Cache_Backend` en dat `Zend_Cache_Backend_Interface`.
 - `<backend_option>` en `<backend_option_value>` Dit zijn de naam en waarde van opties die het kader van de Handel als associatieve serie aan achterste voorgeheugen op zijn verwezenlijking overgaat.
+
+Zie de [Documentatie Laminas](https://docs.laminas.dev/) voor de meest recente informatie van Zend.

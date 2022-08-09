@@ -1,7 +1,7 @@
 ---
 title: Overzicht berichtenrijen
 description: Lees meer over het framework voor de wachtrij van berichten en hoe dit werkt met de Adobe Commerce- en Magento Open Source-toepassing.
-source-git-commit: 5c0d285717a79d654af769cb734ec385d2d4046f
+source-git-commit: c65c065c5f9ac2847caa8898535afdacf089006a
 workflow-type: tm+mt
 source-wordcount: '313'
 ht-degree: 0%
@@ -11,7 +11,7 @@ ht-degree: 0%
 
 # Overzicht van wachtrij met berichten
 
-Het Kader van de Rij van het Bericht (MQF) is een systeem dat een [module](https://glossary.magento.com/module) om berichten aan rijen te publiceren. Het bepaalt ook de consumenten die de berichten asynchroon zullen ontvangen. Het MQF-gebruik [KonijnMQ](http://www.rabbitmq.com) als overseinenmakelaar, die een scalable platform voor het verzenden van en het ontvangen van berichten verstrekt. Het omvat ook een mechanisme voor het opslaan van niet-geleverde berichten. RabbitMQ is gebaseerd op de Advanced Message Queuing Protocol (AMQP) 0.9.1 specificatie.
+Het Kader van de Rij van het Bericht (MQF) is een systeem dat een [module](https://glossary.magento.com/module) om berichten aan rijen te publiceren. Het bepaalt ook de consumenten die de berichten asynchroon zullen ontvangen. Het MQF-gebruik [KonijnMQ](https://www.rabbitmq.com) als overseinenmakelaar, die een scalable platform voor het verzenden van en het ontvangen van berichten verstrekt. Het omvat ook een mechanisme voor het opslaan van niet-geleverde berichten. RabbitMQ is gebaseerd op de Advanced Message Queuing Protocol (AMQP) 0.9.1 specificatie.
 
 Het volgende diagram illustreert het Kader van de Rij van het Bericht:
 

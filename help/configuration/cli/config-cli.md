@@ -1,9 +1,9 @@
 ---
 title: Gereedschap Command-lijn
 description: Gebruik het bevel-lijn van de Handel hulpmiddel om installatie en configuratietaken in werking te stellen.
-source-git-commit: 6a3995dd24f8e3e8686a8893be9693581d31712b
+source-git-commit: c65c065c5f9ac2847caa8898535afdacf089006a
 workflow-type: tm+mt
-source-wordcount: '324'
+source-wordcount: '325'
 ht-degree: 0%
 
 ---
@@ -28,7 +28,7 @@ De extra voordelen omvatten:
 - CLI is verlengbaar zodat kunnen de derdeontwikkelaars &quot;binnen&quot;aan het &quot;stoppen. Dit heeft het extra voordeel om de het leren kromme van gebruikers te elimineren.
 - Opdrachten voor uitgeschakelde modules worden niet weergegeven.
 
-Dit onderwerp bespreekt het vormen van de software van Adobe Commerce en van de Magento Open Source gebruikend CLI. Voor informatie over het installeren van Handel, zie [Overzicht van installatie](https://devdocs.magento.com/guides/2.4/install-gde/bk-install-guide.html) in de _Installatiehandleiding_.
+Dit onderwerp bespreekt het vormen van de software van Adobe Commerce en van de Magento Open Source gebruikend CLI. Voor informatie over het installeren van Handel, zie [Installatiestroom](https://devdocs.magento.com/guides/v2.4/install-gde/install-flow-diagram.html) in de _Installatiehandleiding_.
 
 ## Vereisten
 

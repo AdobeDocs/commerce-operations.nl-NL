@@ -1,7 +1,7 @@
 ---
 title: Geavanceerd [!DNL JavaScript] Bundling
 description: Meer informatie over hoe JavaScript-pakketten de grootte en frequentie van serveraanvragen kunnen verminderen.
-source-git-commit: 09c4d0e09354230c8779b930f085d8c7c131b85b
+source-git-commit: c65c065c5f9ac2847caa8898535afdacf089006a
 workflow-type: tm+mt
 source-wordcount: '2137'
 ht-degree: 0%
@@ -88,7 +88,7 @@ In de volgende stappen moet u de volgende programma&#39;s installeren en vertrou
 
 - [nodejs](https://nodejs.org/en/download/)
 - [r.js](http://requirejs.org/docs/optimization.html#download)
-- [[!DNL PhantomJS]](http://phantomjs.org/) (optioneel)
+- [[!DNL PhantomJS]](https://phantomjs.org/) (optioneel)
 
 ### Voorbeeldcode
 
