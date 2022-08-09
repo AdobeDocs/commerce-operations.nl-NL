@@ -1,9 +1,9 @@
 ---
 title: De indexen beheren
 description: Zie voorbeelden van hoe te om de indexen van de Handel te bekijken en te beheren.
-source-git-commit: 6a3995dd24f8e3e8686a8893be9693581d31712b
+source-git-commit: dd84039be22b6bd25d57912615d64bad91970926
 workflow-type: tm+mt
-source-wordcount: '611'
+source-wordcount: '0'
 ht-degree: 0%
 
 ---
@@ -49,7 +49,6 @@ bin/magento indexer:status [indexer]
 ```
 
 Wanneer `[indexer]` is een door spaties gescheiden lijst met indexen. Weglaten `[indexer]` om de status van alle indexen weer te geven.
-
 
 Monsterresultaat:
 
@@ -120,8 +119,9 @@ U kunt de volgende indexen parallel uitvoeren:
 - `Catalog Search Fulltext` kan door archiefmeningen worden parallel gelopen.
 - `Category Product` kan door archiefmeningen worden parallel gelopen.
 - `Catalog Price` kan worden gekoppeld door website- en klantengroepen.
+- `Catalog Permissions` kan door klantengroepen worden geëvenaard.
 
-Als u parallellisatie wilt gebruiken, moet u één van de beschikbare wijzen van afmetingen voor de indexeer van de productprijs plaatsen:
+Als u parallellisatie wilt gebruiken, stelt u een van de beschikbare afmetingen in voor de indexeer van de productprijs:
 
 - `none` (standaard)
 - `website`
@@ -133,6 +133,11 @@ Stel bijvoorbeeld de modus per website in:
 ```bash
 bin/magento indexer:set-dimensions-mode catalog_product_price website
 ```
+
+Als u parallellisering wilt gebruiken voor catalogusmachtigingen, stelt u een van de beschikbare dimensiemodi in voor de indexer Catalogusmachtigingen:
+
+- `none` (standaard)
+- `customer_group`
 
 Of om de huidige modus te controleren:
 

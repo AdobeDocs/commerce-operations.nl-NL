@@ -1,9 +1,9 @@
 ---
 title: env.php reference
 description: Zie een lijst met waarden voor het bestand env.php.
-source-git-commit: 6a3995dd24f8e3e8686a8893be9693581d31712b
+source-git-commit: 7ecd54b40690ec046e9a3d46a6ef9ad44ffaf4ab
 workflow-type: tm+mt
-source-wordcount: '629'
+source-wordcount: '0'
 ht-degree: 0%
 
 ---
@@ -22,6 +22,7 @@ De `env.php` bestand bevat de volgende secties:
 | `cron` | De uitsnijdtaken in- of uitschakelen |
 | `crypt` | De coderingssleutel voor cryptografische functies |
 | `db` | Instellingen voor databaseverbinding |
+| `default_connection` | Standaardverbinding voor wachtrij met berichten |
 | `directories` | Toewijzingsinstellingen voor directory&#39;s voor handel |
 | `downloadable_domains` | Lijst met downloadbare domeinen |
 | `install` | De installatiedatum |
@@ -168,6 +169,19 @@ Alle databaseconfiguraties zijn beschikbaar in dit knooppunt.
   ]
 ]
 ```
+
+## default_connection
+
+Bepaalt de standaardverbinding voor berichtrijen. De waarde kan `db`, `amqp`of een aangepast wachtrijsysteem zoals `redismq`. Als u een andere waarde opgeeft dan `db`, moet de software van de berichtrij eerst worden geïnstalleerd en worden gevormd. Anders worden berichten niet correct verwerkt.
+
+```conf
+'queue' => [
+    'default_connection' => 'amqp'
+]
+```
+
+Indien `queue/default_connection` is opgegeven in het systeem `env.php` bestand, wordt deze verbinding gebruikt voor alle berichtrijen door het systeem, tenzij een specifieke verbinding in een `queue_topology.xml`, `queue_publisher.xml` of `queue_consumer.xml` bestand.
+Als `queue/default_connection` is `amqp` in `env.php` maar `db` De verbinding wordt gespecificeerd in de dossiers van XML van de rijconfiguratie van een module, zal de module MySQL als berichtbroker gebruiken.
 
 ## mappen
 
