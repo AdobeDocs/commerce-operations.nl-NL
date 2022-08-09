@@ -1,9 +1,9 @@
 ---
 title: Een upgrade uitvoeren
 description: Voer de volgende stappen uit om een Adobe Commerce- of Magento Open Source-project bij te werken.
-source-git-commit: bbc412f1ceafaa557d223aabfd4b2a381d6ab04a
+source-git-commit: 3c3966a904b0568e0255020d8880d348c357ea95
 workflow-type: tm+mt
-source-wordcount: '761'
+source-wordcount: '837'
 ht-degree: 0%
 
 ---
@@ -43,6 +43,28 @@ U moet de opdracht [upgradevoorwaarden](../prepare/prerequisites.md) om uw omgev
    ```
 
    Zie [Onderhoudsmodus in- of uitschakelen](https://devdocs.magento.com/guides/v2.4/install-gde/install/cli/install-cli-subcommands-maint.html) voor extra opties. U kunt desgewenst een [aangepaste onderhoudsmodus, pagina](https://devdocs.magento.com/guides/v2.4/comp-mgr/trouble/cman/maint-mode.html).
+
+1. De aanvang van het verbeteringsproces terwijl de asynchrone processen, zoals de consumenten van de berichtrij, lopen kan gegevenscorruptie veroorzaken. Schakel alle snijtaken uit om gegevensbeschadiging te voorkomen.
+
+   _Adobe Commerce op cloudinfrastructuur:_
+
+   ```bash
+   ./vendor/bin/ece-tools cron:disable
+   ```
+
+   _Magento Open Source:_
+
+   ```bash
+   bin/magento cron:remove
+   ```
+
+1. Start handmatig alle gebruikers in de wachtrij met berichten om ervoor te zorgen dat alle berichten worden verbruikt.
+
+   ```bash
+   bin/magento cron:run --group=consumers
+   ```
+
+   Wacht tot de uitsnijdtaak is voltooid. U kunt de status van de taak controleren met een procesviewer of door het `ps aux | grep 'bin/magento queue'` meerdere keren gebruiken totdat alle processen zijn voltooid.
 
 1. Maak een back-up van de `composer.json` bestand.
 
