@@ -1,9 +1,9 @@
 ---
 title: Verwerking van bestellingen met hoge doorvoer
 description: Optimaliseer de plaatsing van bestellingen en het afrekenen van bestellingen voor uw Adobe Commerce- of Magento Open Source-implementatie.
-source-git-commit: 4ce6f01ab6c3e0bb408657727b65bcb2f84dd954
+source-git-commit: 6afdb941ce3753af02bde3dddd4e66414f488957
 workflow-type: tm+mt
-source-wordcount: '0'
+source-wordcount: '1046'
 ht-degree: 0%
 
 ---
@@ -166,6 +166,21 @@ De _Inventaris bij laden van winkelwagentje inschakelen_ globale instelling bepa
 Indien uitgeschakeld, wordt de inventariscontrole niet uitgevoerd wanneer een product aan het winkelwagentje wordt toegevoegd. Als deze inventariscontrole wordt overgeslagen, zouden sommige uit-van-voorraadscenario&#39;s andere soorten fouten kunnen werpen. Een inventariscontrole _altijd_ komt bij de stap van de ordeplaatsing voor, zelfs wanneer onbruikbaar gemaakt.
 
 **Inventariscontrole bij laden van winkelwagentje inschakelen** is standaard ingeschakeld (ingesteld op Ja). Als u de inventariscontrole tijdens het laden van het winkelwagentje wilt uitschakelen, stelt u **[!UICONTROL Enable Inventory Check On Cart Load]** tot `No` in de beheerinterface **Winkels** > **Configuratie** > **Catalogus** > **Inventaris** > **Opties voor voorraad** sectie. Zie [Globale opties configureren][global] en [Catalogusoverzicht][inventory] in de _Handboek_.
+
+## Taakverdeling
+
+U kunt helpen lading over verschillende knopen in evenwicht brengen door secundaire verbindingen voor het gegevensbestand MySQL en instantie Redis toe te laten.
+
+Adobe Commerce kan meerdere databases of Redis-instanties asynchroon lezen. Als u Handel op wolkeninfrastructuur gebruikt, kunt u de secundaire verbindingen vormen door uit te geven [MYSQL_USE_SLAVE_CONNECTION](https://devdocs.magento.com/cloud/env/variables-deploy.html#mysql_use_slave_connection) en [REDIS_USE_SLAVE_CONNECTION](https://devdocs.magento.com/cloud/env/variables-deploy.html#redis_use_slave_connection) waarden in de `.magento.env.yaml` bestand. Slechts één knoop moet read-write verkeer behandelen, zo plaatsend de variabelen aan `true` resulteert in het creëren van een secundaire verbinding voor read-only verkeer. De waarden instellen op `false` om een bestaande alleen-lezen-verbindingsarray te verwijderen uit de `env.php` bestand.
+
+Voorbeeld van het `.magento.env.yaml` bestand:
+
+```yaml
+stage:
+  deploy:
+    MYSQL_USE_SLAVE_CONNECTION: true
+    REDIS_USE_SLAVE_CONNECTION: true
+```
 
 <!-- link definitions -->
 
