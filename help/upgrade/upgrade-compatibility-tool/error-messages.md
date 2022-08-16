@@ -1,9 +1,9 @@
 ---
 title: '"[!DNL Upgrade Compatibility Tool] Foutberichten"'
 description: Meer informatie over foutberichten die u tegenkomt bij het gebruik van de [!DNL Upgrade Compatibility Tool] op uw Adobe Commerce-project.
-source-git-commit: a13b0ea5aa109ce2f5d33e0966b194d64bad5d0c
+source-git-commit: 038cb256cb19c253ae9c0375258a555601428847
 workflow-type: tm+mt
-source-wordcount: '3781'
+source-wordcount: '4140'
 ht-degree: 4%
 
 ---
@@ -64,6 +64,17 @@ Er treden kritieke fouten op wanneer de aangepaste code verwijst naar entiteiten
 | 5072 | Mogelijke schending van het ontwerp van Magento 2. Doorgaans een Magento 1.x-constructie gedetecteerd | Constructie bijwerken naar Magento 2-standaarden. |
 | 5076 | Kan niet gebruiken in naamruimte zoals deze is gereserveerd sinds PHP 7 | Vervang het gereserveerde woord in de naamruimte door een niet-gereserveerd trefwoord. |
 | 5077 | Kan niet gebruiken als klassenaam omdat deze is gereserveerd sinds PHP 7 | Vervang de gereserveerde klassenaam door een niet-gereserveerde naam. |
+
+{style=&quot;table-layout:auto&quot;}
+
+### DB-schema
+
+Kritieke problemen met het DB-schema worden gerapporteerd als verwijderde kerntabellen of kolommen worden aangeduid door aangepaste beperkingen.
+
+| Foutcode | Foutbeschrijving | Voorgestelde actie |
+| --- | --- | --- |
+| 7009 | De beperking van de douane verwijst naar een kernlijst die in de doelversie werd verwijderd | De kenmerken constraint of update referenceTable en referenceColumn verwijderen |
+| 7010 | De beperking van de douane verwijst naar een kernkolom die in de doelversie werd verwijderd | De beperking verwijderen of het kenmerk referenceColumn bijwerken |
 
 {style=&quot;table-layout:auto&quot;}
 
@@ -199,6 +210,23 @@ Er worden aangepaste codefouten gegenereerd wanneer aangepaste code gebruikmaakt
 | 6009 | `jQuery.isArray()` is afgekeurd | Gebruik in plaats hiervan de methode native Array.isArray. |
 | 6009 | `jQuery.parseJSON()` is afgekeurd | Als u JSON-tekenreeksen wilt parseren, gebruikt u in plaats daarvan de native JSON.parse-methode. |
 | 6010 | (`jQuery.expr[":"]`, `jQuery.expr.filters`) is afgekeurd | Gebruik in plaats hiervan jQuery.expr.pseudo. |
+
+{style=&quot;table-layout:auto&quot;}
+
+### DB-schema
+
+De fouten van het schema van OB worden opgeheven als de gegevensbestandlijsten, de kolommen, de indexen of de beperkingen, die in de versie van doelAdobe Commerce worden toegevoegd of worden verwijderd, in conflicten met het schema van het douanegegevensbestand kunnen resulteren.
+
+| Foutcode | Foutbeschrijving | Voorgestelde actie |
+| --- | --- | --- |
+| 7001 | De doelkernversie introduceert een tabel met dezelfde naam als een tabel die is gedeclareerd door een aangepaste module | De nieuwe kerntabel gebruiken (indien van toepassing) of de naam van de aangepaste tabel wijzigen |
+| 7002 | De kernlijst die door een douanemodule wordt uitgebreid werd verwijderd in de doelversie | Alle verwijderde verwijzingen naar kerntabellen moeten uit de codebase worden verwijderd |
+| 7003 | De doelkernversie introduceert een kolom met de zelfde naam zoals een kolom die door een douanemodule wordt verklaard | De nieuwe kernkolom gebruiken (indien van toepassing) of de naam van de aangepaste kolom wijzigen |
+| 7004 | De kernkolom die door een douanemodule wordt uitgebreid werd verwijderd in de doelversie | Alle verwijderde verwijzingen naar kernkolommen moeten uit de codebase worden verwijderd |
+| 7005 | De doelkernversie introduceert een index met zelfde referenceId zoals een index die door een douanemodule wordt verklaard | Verwijderen (als gedupliceerd naar de nieuwe kernindex) of de naam van de aangepaste index wijzigen |
+| 7006 | De kernindex die met een aangepaste module is uitgebreid, is verwijderd uit de doelversie | Alle verwijderde verwijzingen naar de kernindex moeten uit de codebase worden verwijderd |
+| 7007 | De doelkernversie introduceert een beperking met dezelfde naam als een beperking die is gedeclareerd door een aangepaste module | Verwijderen (als deze waarde wordt gedupliceerd naar de nieuwe kernbeperking) of de naam van de aangepaste restrictie wijzigen |
+| 7008 | De kernbeperking die door een douanemodule wordt uitgebreid werd verwijderd in de doelversie | Gebruik de nieuwe kernbeperking (indien van toepassing) of wijzig de naam van de aangepaste restrictie |
 
 {style=&quot;table-layout:auto&quot;}
 
