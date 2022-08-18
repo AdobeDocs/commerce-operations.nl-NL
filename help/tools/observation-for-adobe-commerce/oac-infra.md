@@ -1,0 +1,56 @@
+---
+title: '"De [!UICONTROL Infra] tab"'
+description: De [!UICONTROL Infra] -tabblad isoleert problemen en oorzaken van infrastructuurproblemen.
+source-git-commit: b0d80d97f60b24bc801063dc484f3a495cf0a036
+workflow-type: tm+mt
+source-wordcount: '255'
+ht-degree: 0%
+
+---
+
+
+# De [!UICONTROL Infra] tab
+
+De **[!UICONTROL Infra]** -tabblad isoleert problemen en oorzaken van infrastructuurproblemen. Verder worden de frames beschreven die u op het tabblad kunt zien.
+
+## [!UICONTROL Service Alerts – Infrastructure Alerts by Application name]
+
+![Servicewaarschuwingen](../../assets/tools/observation-for-adobe-commerce/service-alerts.jpg)
+
+De **[!UICONTROL Service Alerts – Infrastructure Alerts by Application name]** grafiek toont de door de [!DNL New Relic] infrastructuuragent. Dit zal de dienstherstart tonen, velen verbonden aan plaatsingen.
+
+## [!UICONTROL Inode usage by mount]
+
+![Gebruik van knooppunt door koppelen](../../assets/tools/observation-for-adobe-commerce/inode-usage-mount.jpg)
+
+De **[!UICONTROL Inode usage by mount]** frame geeft inodegebruik weer door de koppeling over de geselecteerde tijdlijn. Zelfs al is er misschien genoeg opslag vrij, als een knoop uit gedoe loopt, zal het een gebrek aan beschikbare opslag tonen. Als u bestanden verwijdert (vooral kleine bestanden), wordt er ruimte vrijgemaakt en worden er codes beschikbaar gesteld.
+
+## [!UICONTROL vCPU tier view over timeline GREATER 2 weeks]
+
+![vCPU-rijweergave over tijdlijn GROTER 2 weken](../../assets/tools/observation-for-adobe-commerce/vCPU-tier.jpg)
+
+De **[!UICONTROL vCPU tier view over timeline GREATER 2 weeks]** frame toont de vCPU-rijweergave gedurende het geselecteerde tijdsbestek van meer dan twee weken. In dit frame wordt gekeken naar het aantal vCPU&#39;s dat is toegewezen aan de [!DNL New Relic] toepassingsnaam weergegeven.
+
+## [!UICONTROL vCPU tier view over timeline]
+
+![vCPU-rijweergave over tijdlijn](../../assets/tools/observation-for-adobe-commerce/vcpu-tier-24.jpg)
+
+De **[!UICONTROL vCPU tier view over timeline]** frame toont de vCPU-rijweergave gedurende het geselecteerde tijdkader van meer dan 24 uur. In dit frame wordt gekeken naar het aantal vCPU&#39;s dat is toegewezen aan de [!DNL New Relic] toepassingsnaam weergegeven. Het zal zowel cluster upsizes als downsizes tonen.
+
+## [!UICONTROL vCPU tier view over timeline BY NODE]
+
+![vCPU-rijweergave over tijdlijn door NODE](../../assets/tools/observation-for-adobe-commerce/infra_by_node.png)
+
+De **[!UICONTROL vCPU tier view over timeline BY NODE]** frame toont vCPU-rijweergaven in de geselecteerde tijdlijn per knooppunt. Dit frame is handig voor het detecteren van verlies van knooppunten of wanneer knooppunten groter of kleiner worden gemaakt. In de vCPU-rijweergave gedurende de tijdlijn BY NODE moet u naar een tijdlijn van MINDER dan 24 uur kijken.
+
+## [!UICONTROL Instance details]
+
+![Instantiedetails](../../assets/tools/observation-for-adobe-commerce/instance-details.jpg)
+
+De **[!UICONTROL Instance details]** tabel bevat instantiedetails van elk [!DNL New Relic] toepassing.
+
+## [!UICONTROL Logging, if there is a broken line for a node, it indicates non-responsive node during that time period]
+
+![non-responsive-node](../../assets/tools/observation-for-adobe-commerce/non-responsive-node.jpg)
+
+De **[!UICONTROL Logging, if there is a broken line for a node, it indicates non-responsive node during that time period]** frame toont de knooppunten die niet reageren gedurende een tijdsperiode.
