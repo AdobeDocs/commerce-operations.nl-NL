@@ -1,9 +1,9 @@
 ---
 title: '"[!DNL Observation for Adobe Commerce]"'
 description: Meer informatie over [!DNL Observation for Adobe Commerce], zijn gebruik, wanneer te gebruiken, en hoe te om toegang te krijgen.
-source-git-commit: 0ee158cb33757b33307d0ca669b921a82665cefe
+source-git-commit: e042acac00d9aaa7d2f49beb8ce98e213ae369e7
 workflow-type: tm+mt
-source-wordcount: '344'
+source-wordcount: '351'
 ht-degree: 0%
 
 ---
@@ -31,3 +31,9 @@ Merchants en partners die hun Adobe Commerce-siteprestaties willen optimaliseren
 * Vereenvoudig het verzamelen van gegevens en het ontleden met visuele overzichten van kritieke foutenmeldingen van de logboeken.
 
 * Het perspectief van de aanwinst over diverse diensten zoals IP verzoekfrequentie, URLs betreden, gebruikte APIs, en meer.
+
+## [!DNL Observation for Adobe Commerce] demo
+
+Bekijk deze video voor meer informatie over [!DNL Observation for Adobe Commerce]:
+
+>[!VIDEO](https://video.tv.adobe.com/v/344444?quality=12)

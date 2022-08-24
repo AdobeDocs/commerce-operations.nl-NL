@@ -1,9 +1,9 @@
 ---
 title: '"Configuratie uitvoeren binnen de [!DNL Magento PHPStorm plugin]"'
 description: Volg deze handleiding om de [!DNL Upgrade Compatibility Tool] binnen de [!DNL Magento PHPStorm plugin].
-source-git-commit: e539824b336978debd6e6adc538cd8bad367eff1
+source-git-commit: ded2204fe0b3327f72bbce2ec03f8d66aa1b9353
 workflow-type: tm+mt
-source-wordcount: '129'
+source-wordcount: '116'
 ht-degree: 0%
 
 ---
@@ -17,4 +17,8 @@ Controleer de [Installatie](https://devdocs.magento.com/guides/v2.4/ext-best-pra
 
 U kunt de [!DNL Upgrade Compatibility Tool] met een uitvoeringsconfiguratie via de [!DNL Magento PHPStorm plugin]. Zie de [[!DNL Upgrade Compatibility Tool] Configuratie uitvoeren](https://devdocs.magento.com/guides/v2.3/ext-best-practices/phpstorm/uct-run-configuration.html) voor meer informatie.
 
-Zie dit [videozelfstudie](https://experienceleague.adobe.com/docs/commerce-learn/tutorials/upgrade/uct-phpstorm.html?lang=en) (06:30) leren hoe u de [!DNL Upgrade Compatibility Tool] met de [!DNL Magento PHPStorm plugin].
+## [!DNL Magento PHPStorm plugin] demo
+
+Bekijk deze video voor meer informatie over de [!DNL Magento PHPStorm plugin]:
+
+>[!VIDEO](https://video.tv.adobe.com/v/340150?quality=12)

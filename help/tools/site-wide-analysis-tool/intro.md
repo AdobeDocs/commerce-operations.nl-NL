@@ -1,9 +1,9 @@
 ---
 title: '"[!DNL Site-Wide Analysis Tool]"'
 description: Meer informatie over de [!DNL Site-Wide Analysis] Gereedschap, het gebruik ervan, het installatieproces en de manier waarop toegang kan worden verkregen
-source-git-commit: 52a74694ad01cf3192a7eb8af086d77a5b7e9276
+source-git-commit: ded2204fe0b3327f72bbce2ec03f8d66aa1b9353
 workflow-type: tm+mt
-source-wordcount: '0'
+source-wordcount: '420'
 ht-degree: 0%
 
 ---
@@ -45,3 +45,9 @@ Bekijk alle belangrijke inzichten van uw site op één plaats. [!DNL Site-Wide A
 ## Voor wie is deze gids?
 
 Handelaren en partners die meer zichtbaarheid willen krijgen op hun Adobe Commerce-websites. Het biedt handelaren de mogelijkheid om de ervaring van hun klanten te verbeteren en zich beter aan te passen aan de aanbevelingen van best practices en fundamentele kwesties.
+
+## [!DNL Site-Wide Analysis Tool] demo
+
+Bekijk deze video voor meer informatie over de [!DNL Site-Wide Analysis Tool]:
+
+>[!VIDEO](https://video.tv.adobe.com/v/344001?quality=12)
