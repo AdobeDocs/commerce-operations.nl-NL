@@ -1,9 +1,9 @@
 ---
 title: Overzicht
 description: Volg deze aanbevolen procedures om de prestaties van uw Adobe Commerce- of Magento Open Source-implementatie te optimaliseren.
-source-git-commit: 4baa58b440eab0d33a86388198670292a4119381
+source-git-commit: d263e412022a89255b7d33b267b696a8bb1bc8a2
 workflow-type: tm+mt
-source-wordcount: '104'
+source-wordcount: '98'
 ht-degree: 0%
 
 ---
@@ -15,5 +15,5 @@ De _Aanbevolen werkwijzen voor prestaties_ Deze handleiding bevat aanbevelingen 
 
 ## Aannames
 
-* Adobe Commerce of Magento Open Source is geïnstalleerd met [Composer](https://devdocs.magento.com/guides/v2.4/install-gde/composer.html).
+* Adobe Commerce of Magento Open Source is geïnstalleerd met [Composer](../installation/composer.md).
 * U gebruikt deze installatie om een live productie-instantie van Adobe Commerce of Magento Open Source uit te voeren.

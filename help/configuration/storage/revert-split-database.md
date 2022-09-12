@@ -1,9 +1,9 @@
 ---
 title: Gesplitste database herstellen
 description: Keer van een afgekeurde gespleten gegevensbestandimplementatie aan één enkele gegevensbestandimplementatie terug.
-source-git-commit: bda758381d8d1b9209110adb168c36e1d504c4fa
+source-git-commit: d263e412022a89255b7d33b267b696a8bb1bc8a2
 workflow-type: tm+mt
-source-wordcount: '265'
+source-wordcount: '257'
 ht-degree: 0%
 
 ---
@@ -64,7 +64,7 @@ In dit voorbeeld, login aan alle drie gegevensbestanden, die op de zelfde gasthe
 
 ## Uw werk controleren
 
-Om te controleren of de implementatie van één database goed werkt, voert u de volgende taken uit en controleert u of er gegevens zijn toegevoegd aan de `magento_main` databasetabellen met behulp van databasegereedschappen, zoals [phpMyAdmin](https://devdocs.magento.com/guides/v2.4/install-gde/prereq/optional.html#install-optional-phpmyadmin):
+Om te controleren of de implementatie van één database goed werkt, voert u de volgende taken uit en controleert u of er gegevens zijn toegevoegd aan de `magento_main` databasetabellen met behulp van databasegereedschappen, zoals [phpMyAdmin](../../installation/prerequisites/optional-software.md#phpmyadmin):
 
 1. Controleer of vreemde sleutels zijn hersteld. De `QUOTE_STORE_ID_STORE_STORE_ID` in de `quote` databasetabel.
 1. Controleer of klanten bestellingen kunnen plaatsen vanuit de winkel.

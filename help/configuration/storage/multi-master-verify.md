@@ -1,9 +1,9 @@
 ---
 title: Gesplitste database verifiëren
 description: Leer hoe te om te verifiëren dat een gespleten van de Handel gegevensbestandconfiguratie behoorlijk werkt.
-source-git-commit: 52f92ef79586d618fd4ac51c00eaa1446a2dc98f
+source-git-commit: d263e412022a89255b7d33b267b696a8bb1bc8a2
 workflow-type: tm+mt
-source-wordcount: '171'
+source-wordcount: '155'
 ht-degree: 0%
 
 ---
@@ -21,7 +21,7 @@ Na configuratie, worden de master gegevensbestanden gevormd als volgt:
 - Handel [aanhalingsteken](https://glossary.magento.com/quote) database: 11 tabellen
 - Database van de handel: 55 tabellen
 
-Om te verifiëren dat uw gesplitste gegevensbestanden behoorlijk werken, voer de volgende taken uit en verifieer dat het gegeven aan de gegevensbestandlijsten gebruikend een gegevensbestandhulpmiddel als wordt toegevoegd [fpmyadmin](https://devdocs.magento.com/guides/v2.4/install-gde/prereq/optional.html#install-optional-phpmyadmin):
+Om te verifiëren dat uw gesplitste gegevensbestanden behoorlijk werken, voer de volgende taken uit en verifieer dat het gegeven aan de gegevensbestandlijsten gebruikend een gegevensbestandhulpmiddel als wordt toegevoegd [fpmyadmin](../../installation/prerequisites/optional-software.md#phpmyadmin):
 
 | Te controleren wat | Controleren |
 | -------------- | ------------- |
@@ -30,4 +30,4 @@ Om te verifiëren dat uw gesplitste gegevensbestanden behoorlijk werken, voer de
 
 >[!WARNING]
 >
->U moet de twee extra gegevensbestandinstanties manueel file. De handel steunt slechts de belangrijkste gegevensbestandinstantie. De [`magento setup:backup --db`](https://devdocs.magento.com/guides/v2.4/install-gde/install/cli/install-cli-backup.html) geen back-up maken van de extra tabellen.
+>U moet de twee extra gegevensbestandinstanties manueel file. De handel steunt slechts de belangrijkste gegevensbestandinstantie. De [`magento setup:backup --db`](../../installation/tutorials/backup.md) geen back-up maken van de extra tabellen.

@@ -1,9 +1,9 @@
 ---
 title: Software Recommendations
 description: Bekijk een lijst met aanbevolen software voor optimale prestaties van Adobe Commerce- en Magento Open Source-implementaties.
-source-git-commit: c65c065c5f9ac2847caa8898535afdacf089006a
+source-git-commit: d263e412022a89255b7d33b267b696a8bb1bc8a2
 workflow-type: tm+mt
-source-wordcount: '0'
+source-wordcount: '1415'
 ht-degree: 0%
 
 ---
@@ -13,18 +13,18 @@ ht-degree: 0%
 
 We hebben de volgende software nodig voor productieexemplaren van [!DNL Commerce]:
 
-* [PHP](https://devdocs.magento.com/guides/v2.4/install-gde/system-requirements.html)
+* [PHP](../installation/system-requirements.md)
 * Nginx en [PHP-FPM](https://php-fpm.org/)
-* [[!DNL MySQL]](https://devdocs.magento.com/guides/v2.4/install-gde/prereq/mysql.html)
-* [[!DNL Elasticsearch] of OpenSearch](https://devdocs.magento.com/guides/v2.4/install-gde/prereq/elasticsearch.html)
+* [[!DNL MySQL]](../installation/prerequisites/database/mysql.md)
+* [[!DNL Elasticsearch] of OpenSearch](../installation/prerequisites/search-engine/overview.md)
 
 Voor multiserver plaatsingen, of voor verkopers die op het schrapen van hun zaken plannen, adviseren wij het volgende:
 
-* [[!DNL Varnish] cachegeheugen](https://devdocs.magento.com/guides/v2.4/config-guide/varnish/config-varnish.html)
-* [Redis](https://devdocs.magento.com/guides/v2.4/config-guide/redis/redis-session.html) voor sessies (vanaf 2.0.6+)
-* Een aparte Redis-instantie als uw [standaardcache](https://devdocs.magento.com/guides/v2.4/config-guide/redis/redis-pg-cache.html) (gebruik deze instantie niet voor paginacache)
+* [[!DNL Varnish] cachegeheugen](../configuration/cache/config-varnish.md)
+* [Redis](../configuration/cache/redis-session.md) voor sessies (vanaf 2.0.6+)
+* Een aparte Redis-instantie als uw [standaardcache](../configuration/cache/redis-pg-cache.md) (gebruik deze instantie niet voor paginacache)
 
-Zie [systeemvereisten](https://devdocs.magento.com/guides/v2.4/install-gde/system-requirements.html) voor informatie over ondersteunde versies van elk type software.
+Zie [systeemvereisten](../installation/system-requirements.md) voor informatie over ondersteunde versies van elk type software.
 
 ## Besturingssysteem
 
@@ -146,7 +146,7 @@ opcache.validate_timestamps=0
 opcache.enable_cli=1
 ```
 
-Wanneer u de geheugentoewijzing voor opcache precies afstemt, moet u rekening houden met de grootte van de codebasis van Magento en al uw extensies. Het prestatieteam van Magento gebruikt de waarden in het vorige voorbeeld voor het testen omdat het genoeg ruimte in opcache voor het gemiddelde aantal geïnstalleerde extensies biedt.
+Wanneer u de geheugentoewijzing voor opcache precies afstemt, houdt u rekening met de grootte van de Magento base en al uw extensies. Het voorgaande Magento gebruikt de waarden in het voorgaande voorbeeld voor testdoeleinden, omdat er voldoende ruimte in de cache is voor het gemiddelde aantal geïnstalleerde extensies.
 
 Als u een computer met weinig geheugen hebt en u niet veel extensies of aanpassingen hebt geïnstalleerd, gebruikt u de volgende instellingen voor een vergelijkbaar resultaat:
 
@@ -157,7 +157,7 @@ opcache.max_accelerated_files=60000
 
 #### APCU
 
-We raden u aan de [PHP APCu-extensie](https://getcomposer.org/doc/articles/autoloader-optimization.md#optimization-level-2-b-apcu-cache) en [configureren `composer` ter ondersteuning van](https://devdocs.magento.com/guides/v2.4/performance-best-practices/deployment-flow.html#preprocess-dependency-injection-instructions) optimaliseren voor maximale prestaties. Met deze extensie worden bestandslocaties voor geopende bestanden in cache geplaatst, waardoor de prestaties voor [!DNL Commerce] serveraanroepen inclusief pagina&#39;s, Ajax-aanroepen en eindpunten.
+We raden u aan de [PHP APCu-extensie](https://getcomposer.org/doc/articles/autoloader-optimization.md#optimization-level-2-b-apcu-cache) en [configureren `composer` ter ondersteuning van](../performance/deployment-flow.md#preprocess-dependency-injection-instructions) optimaliseren voor maximale prestaties. Met deze extensie worden bestandslocaties voor geopende bestanden in cache geplaatst, waardoor de prestaties voor [!DNL Commerce] serveraanroepen inclusief pagina&#39;s, Ajax-aanroepen en eindpunten.
 
 Bewerk uw `apcu.ini` bestand dat het volgende bevat:
 
@@ -208,7 +208,7 @@ Installeren [!DNL Varnish] op een aparte server vóór de weblaag. Het zou alle 
 * **Respijtmodus** staat u toe om te instrueren [!DNL Varnish] om een object in cache te houden na de periode Tijd tot live (TTL) en deze schaalinhoud te bedienen als [!DNL Commerce] is niet gezond of als er nog geen nieuwe inhoud is opgehaald.
 * **Sint-modus** zwarte lijsten ongezond [!DNL Commerce] servers voor een configureerbare hoeveelheid tijd. Dientengevolge, kunnen de ongezonde achtergronden verkeer niet dienen wanneer het gebruiken [!DNL Varnish] als een taakverdelingsmechanisme.
 
-Zie [Geavanceerd [!DNL Varnish] configuratie](https://devdocs.magento.com/guides/v2.4/config-guide/varnish/config-varnish-advanced.html) voor meer informatie over het implementeren van deze functies.
+Zie [Geavanceerd [!DNL Varnish] configuratie](../configuration/cache/config-varnish-advanced.md) voor meer informatie over het implementeren van deze functies.
 
 ### Elementprestaties optimaliseren
 

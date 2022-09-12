@@ -1,9 +1,9 @@
 ---
 title: Een upgrade uitvoeren
 description: Voer de volgende stappen uit om een Adobe Commerce- of Magento Open Source-project bij te werken.
-source-git-commit: 3c3966a904b0568e0255020d8880d348c357ea95
+source-git-commit: d263e412022a89255b7d33b267b696a8bb1bc8a2
 workflow-type: tm+mt
-source-wordcount: '837'
+source-wordcount: '808'
 ht-degree: 0%
 
 ---
@@ -20,7 +20,7 @@ U kunt uw Adobe Commerce- of Magento Open Source-toepassing upgraden vanaf de op
 >
 >Gebruik deze methode niet om te bevorderen als u de bewaarplaats GitHub kloond. Zie in plaats daarvan [Een op een git gebaseerde installatie upgraden](../developer/git-installs.md) voor upgradeinstructies.
 
-De volgende instructies tonen u hoe te om het gebruiken van Composer te bevorderen. Adobe Commerce 2.4.2 introduceerde ondersteuning voor Composer 2. Als u probeert om van &lt;2.4.1 te bevorderen, moet u eerst aan een versie bevorderen die met Composer 2 (bijvoorbeeld, 2.4.2) compatibel is gebruikend Composer 1 _voor_ upgrade naar Composer 2 voor >2.4.2 upgrades. Bovendien moet u een [ondersteunde versie](https://devdocs.magento.com/guides/v2.4/install-gde/system-requirements.html) van PHP.
+De volgende instructies tonen u hoe te om het gebruiken van Composer te bevorderen. Adobe Commerce 2.4.2 introduceerde ondersteuning voor Composer 2. Als u probeert om van &lt;2.4.1 te bevorderen, moet u eerst aan een versie bevorderen die met Composer 2 (bijvoorbeeld, 2.4.2) compatibel is gebruikend Composer 1 _voor_ upgrade naar Composer 2 voor >2.4.2 upgrades. Bovendien moet u een [ondersteunde versie](../../installation/system-requirements.md) van PHP.
 
 >[!WARNING]
 >
@@ -42,7 +42,7 @@ U moet de opdracht [upgradevoorwaarden](../prepare/prerequisites.md) om uw omgev
    bin/magento maintenance:enable
    ```
 
-   Zie [Onderhoudsmodus in- of uitschakelen](https://devdocs.magento.com/guides/v2.4/install-gde/install/cli/install-cli-subcommands-maint.html) voor extra opties. U kunt desgewenst een [aangepaste onderhoudsmodus, pagina](https://devdocs.magento.com/guides/v2.4/comp-mgr/trouble/cman/maint-mode.html).
+   Zie [Onderhoudsmodus in- of uitschakelen](../../installation/tutorials/maintenance-mode.md) voor extra opties. U kunt desgewenst een [aangepaste onderhoudsmodus, pagina](../troubleshooting/maintenance-mode-options.md).
 
 1. De aanvang van het verbeteringsproces terwijl de asynchrone processen, zoals de consumenten van de berichtrij, lopen kan gegevenscorruptie veroorzaken. Schakel alle snijtaken uit om gegevensbeschadiging te voorkomen.
 
@@ -253,7 +253,7 @@ Open de URL van de winkel in een webbrowser om te controleren of de upgrade is g
 
 Als de toepassing met een  `We're sorry, an error has occurred while generating this email.` fout:
 
-1. Herstellen [eigendom van het bestandssysteem en machtigingen](https://devdocs.magento.com/guides/v2.4/install-gde/prereq/file-system-perms.html) als een gebruiker met `root` rechten.
+1. Herstellen [eigendom van het bestandssysteem en machtigingen](../../installation/prerequisites/file-system/configure-permissions.md) als een gebruiker met `root` rechten.
 1. Wis de volgende directory&#39;s:
    - `var/cache/`
    - `var/page_cache/`

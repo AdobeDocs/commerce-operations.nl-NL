@@ -1,9 +1,9 @@
 ---
 title: De bewerkingsmodus instellen
 description: Lees meer over het instellen van de Adobe Commerce-bewerkingsmodi.
-source-git-commit: 6a3995dd24f8e3e8686a8893be9693581d31712b
+source-git-commit: d263e412022a89255b7d33b267b696a8bb1bc8a2
 workflow-type: tm+mt
-source-wordcount: '390'
+source-wordcount: '383'
 ht-degree: 0%
 
 ---
@@ -44,7 +44,7 @@ Uitzonderingen:
 
 ## De huidige modus weergeven
 
-De eenvoudigste manier om dat te doen is deze opdracht als de [eigenaar van bestandssysteem](https://devdocs.magento.com/guides/v2.4/install-gde/prereq/file-sys-perms-over.html). Als u een gedeelde host hebt, is dit de gebruiker die uw provider u geeft om u aan te melden bij de server. Als u een privé server hebt, is het typisch een lokale gebruikersrekening op de server van de Handel.
+De eenvoudigste manier om dat te doen is deze opdracht als de [eigenaar van bestandssysteem](../../installation/prerequisites/file-system/overview.md). Als u een gedeelde host hebt, is dit de gebruiker die uw provider u geeft om u aan te melden bij de server. Als u een privé server hebt, is het typisch een lokale gebruikersrekening op de server van de Handel.
 
 Opdrachtgebruik:
 

@@ -1,9 +1,9 @@
 ---
 title: Wijzigingen migreren
 description: Leer hoe u alleen gegevens kunt migreren die zijn gewijzigd sinds de laatste Magento 1-gegevensmigratie met de [!DNL Data Migration Tool].
-source-git-commit: b5a2c362b09de993e1dc196bdda90e74cf4a8ba2
+source-git-commit: d263e412022a89255b7d33b267b696a8bb1bc8a2
 workflow-type: tm+mt
-source-wordcount: '367'
+source-wordcount: '359'
 ht-degree: 0%
 
 ---
@@ -24,8 +24,8 @@ Met het gereedschap Incrementele migratie installeert u catalogustabellen (met v
 
 Voer de volgende stappen uit om voor te bereiden voordat u begint:
 
-1. Aanmelden bij Magento-server als [de eigenaar van het bestandssysteem](https://devdocs.magento.com/guides/v2.4/install-gde/prereq/file-sys-perms-over.html).
-1. Wijzigen in de Magento `/bin` of zorg ervoor het aan uw systeemPATH wordt toegevoegd.
+1. Aanmelden bij de toepassingsserver als [de eigenaar van het bestandssysteem](../../../installation/prerequisites/file-system/overview.md).
+1. Wijzigen in de `/bin` of zorg ervoor dat het aan uw systeem wordt toegevoegd `PATH`.
 
 Zie de [eerste stappen](overview.md#first-steps) voor meer informatie.
 

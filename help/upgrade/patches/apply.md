@@ -1,9 +1,9 @@
 ---
 title: Patches toepassen
 description: Leer hoe u patches kunt toepassen op een Adobe Commerce- of Magento Open Source-project.
-source-git-commit: bbc412f1ceafaa557d223aabfd4b2a381d6ab04a
+source-git-commit: d263e412022a89255b7d33b267b696a8bb1bc8a2
 workflow-type: tm+mt
-source-wordcount: '338'
+source-wordcount: '330'
 ht-degree: 0%
 
 ---
@@ -69,7 +69,7 @@ Een aangepaste patch toepassen met Composer:
 Patches toepassen vanaf de opdrachtregel:
 
 1. Het lokale bestand uploaden naar het `<Magento_root>` directory op de server die FTP, SFTP, SSH, of uw normale vervoermethode gebruikt.
-1. Aanmelden bij de server als de [beheerder](https://devdocs.magento.com/guides/v2.4/config-guide/cli/config-cli.html#config-install-cli-first) en controleert u of het bestand zich in de juiste map bevindt.
+1. Aanmelden bij de server als de [beheerder](../../configuration/cli/config-cli.md#prerequisites) en controleert u of het bestand zich in de juiste map bevindt.
 1. Voer in de opdrachtregelinterface de volgende opdrachten uit volgens de patchextensie:
 
    ```bash

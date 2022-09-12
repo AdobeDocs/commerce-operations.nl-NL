@@ -1,9 +1,9 @@
 ---
 title: Hulplijn installeren
 description: Deze handleiding gebruiken om te installeren [!DNL Site-Wide Analysis Tool] voor uw website
-source-git-commit: a694de861fcc681d864ffb2c405b2366b32bba41
+source-git-commit: d263e412022a89255b7d33b267b696a8bb1bc8a2
 workflow-type: tm+mt
-source-wordcount: '1071'
+source-wordcount: '1063'
 ht-degree: 0%
 
 ---
@@ -75,7 +75,7 @@ bin/magento module:status Magento_ServicesConnector
 
 Als u de extensie hebt geïnstalleerd en geconfigureerd met een bestaande API-sleutel voor een andere service, **MOET de API-sleutel opnieuw genereren** en werkt het in Adobe Commerce Admin voor de agent bij.
 
-1. Plaats uw website in [onderhoudsmodus](https://devdocs.magento.com/guides/v2.4/install-gde/install/cli/install-cli-subcommands-maint.html).
+1. Plaats uw website in [onderhoudsmodus](../../installation/tutorials/maintenance-mode.md).
 
 1. Aanmelden [accounts.magento.com](https://account.magento.com/customer/account/login?_ga=2.164207871.117144580.1649172612-1623400270.1640858671).
 

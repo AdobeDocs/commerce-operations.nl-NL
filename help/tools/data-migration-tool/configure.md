@@ -1,9 +1,9 @@
 ---
 title: Configureer de [!DNL Data Migration Tool]
 description: Meer informatie over de twee methoden voor het configureren van de [!DNL Data Migration Tool] gegevens tussen Magento 1 en Magento 2 over te dragen.
-source-git-commit: d609c497fdf00c5e5f975a5679b1d072cec4f8a2
+source-git-commit: d263e412022a89255b7d33b267b696a8bb1bc8a2
 workflow-type: tm+mt
-source-wordcount: '799'
+source-wordcount: '792'
 ht-degree: 0%
 
 ---
@@ -113,7 +113,7 @@ Voordat u gegevens kunt migreren, moet u een `config.xml` configuratiebestand ui
 
 Om het [!DNL Data Migration Tool] voor migratie:
 
-1. Meld u aan bij de Magento-server als of schakel over naar de [eigenaar van bestandssysteem](https://devdocs.magento.com/guides/v2.4/install-gde/prereq/file-sys-perms-over.html).
+1. Meld u aan bij de toepassingsserver als of schakel over naar de [eigenaar van bestandssysteem](../../installation/prerequisites/file-system/overview.md).
 
 1. Ga naar de volgende map:
 

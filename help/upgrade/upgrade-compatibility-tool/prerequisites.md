@@ -1,9 +1,9 @@
 ---
-title: '"[!DNL Upgrade Compatibility Tool] vereisten"'
-description: 'Controleer of uw systeem voldoet aan de vereisten voor het uitvoeren van de [!DNL Upgrade Compatibility Tool] in een opdrachtregelinterface voor uw Adobe Commerce-project. '
-source-git-commit: 167e0e7554e912aeef276a34daeaff29d7762009
+title: "[!DNL Upgrade Compatibility Tool] vereisten"
+description: Controleer of uw systeem voldoet aan de vereisten voor het uitvoeren van de [!DNL Upgrade Compatibility Tool] in een opdrachtregelinterface voor uw Adobe Commerce-project.
+source-git-commit: d263e412022a89255b7d33b267b696a8bb1bc8a2
 workflow-type: tm+mt
-source-wordcount: '0'
+source-wordcount: '275'
 ht-degree: 0%
 
 ---
@@ -13,7 +13,7 @@ ht-degree: 0%
 
 {{commerce-only}}
 
-U moet [Adobe Commerce-toegangstoetsen](https://devdocs.magento.com/marketplace/sellers/profile-information.html#access-keys) om de [!DNL Upgrade Compatibility Tool]. Voeg je Adobe Commerce toegangstoetsen toe aan je `auth.json` bestand, dat zich bevindt op `~/.composer` standaard.
+U moet [Adobe Commerce-toegangstoetsen](https://developer.adobe.com/commerce/marketplace/guides/sellers/profile-information/#access-keys) om de [!DNL Upgrade Compatibility Tool]. Voeg je Adobe Commerce toegangstoetsen toe aan je `auth.json` bestand, dat zich bevindt op `~/.composer` standaard.
 
 >[!NOTE]
 >

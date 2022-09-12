@@ -1,9 +1,9 @@
 ---
 title: Configuratie van zoekmachine
 description: Configureer een zoekmachine met Adobe Commerce en Magento Open Source.
-source-git-commit: 80abb0180fcd8ecc275428c23b68feb5883cbc28
+source-git-commit: d263e412022a89255b7d33b267b696a8bb1bc8a2
 workflow-type: tm+mt
-source-wordcount: '666'
+source-wordcount: '637'
 ht-degree: 0%
 
 ---
@@ -41,8 +41,8 @@ Tenzij u de serverinstellingen van uw zoekmachine hebt gewijzigd, werken de stan
 
    Doorgaan met:
 
-   - [Apache configureren voor uw zoekmachine](https://devdocs.magento.com/guides/v2.4/install-gde/prereq/es-config-apache.html)
-   - [Nginx voor uw zoekmachine configureren](https://devdocs.magento.com/guides/v2.4/install-gde/prereq/es-config-nginx.html)
+   - [Apache configureren voor uw zoekmachine](../../installation/prerequisites/search-engine/configure-apache.md)
+   - [Nginx voor uw zoekmachine configureren](../../installation/prerequisites/search-engine/configure-nginx.md)
 
    of u ziet:
 
@@ -53,7 +53,7 @@ Zo ja, probeer dan het volgende:
 - Zorg ervoor dat de zoekmachine-server actief is.
 - Als de server op een verschillende gastheer van Handel is, login aan de server van de Handel en pingel de gastheer van de onderzoeksmotor. Los de kwesties van de netwerkconnectiviteit op en test opnieuw de verbinding.
 - Onderzoek het bevelvenster waarin u Elasticsearch of OpenSearch voor stapelsporen en uitzonderingen begon. U moet deze oplossen voordat u verdergaat. Zorg er met name voor dat u de zoekfunctie hebt gestart als een gebruiker met `root` rechten.
-- Controleer of [UNIX-firewall en SELinux](https://devdocs.magento.com/guides/v2.4/install-gde/prereq/elasticsearch.html#firewall-selinux) zijn beide uitgeschakeld, of stel regels in waarmee je zoekmachine en handel met elkaar kunnen communiceren.
+- Controleer of [UNIX-firewall en SELinux](../../installation/prerequisites/search-engine/overview.md#firewall-and-selinux) zijn beide uitgeschakeld, of stel regels in waarmee je zoekmachine en handel met elkaar kunnen communiceren.
 - Controleer de waarde van de **Hostnaam Elasticsearch-server** veld. Controleer of de server beschikbaar is. U kunt het IP-adres van de server proberen.
 - Gebruik de `netstat -an | grep <listen-port>` bevel om te verifiëren dat de haven in wordt gespecificeerd **Elasticsearch-serverpoort** wordt niet door een ander proces gebruikt.
 
@@ -85,7 +85,7 @@ De cache reinigen met de opdrachtregel: [`bin/magento cache:clean`](../cli/manag
 
 Herindexeren met behulp van de opdrachtregel:
 
-1. Meld u aan bij de Commerce-server als of schakel over naar de [eigenaar van bestandssysteem](https://devdocs.magento.com/guides/v2.4/install-gde/prereq/file-sys-perms-over.html).
+1. Meld u aan bij de Commerce-server als of schakel over naar de [eigenaar van bestandssysteem](../../installation/prerequisites/file-system/overview.md).
 1. Voer een van de volgende opdrachten in:
 
    Voer de volgende opdracht in om alleen de zoekindex van de catalogus opnieuw te indexeren:

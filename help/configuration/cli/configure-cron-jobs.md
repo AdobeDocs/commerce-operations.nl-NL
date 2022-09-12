@@ -1,9 +1,9 @@
 ---
 title: Cron-taken configureren en uitvoeren
 description: Leer hoe u taken voor uitsnijden beheert.
-source-git-commit: 6a3995dd24f8e3e8686a8893be9693581d31712b
+source-git-commit: d263e412022a89255b7d33b267b696a8bb1bc8a2
 workflow-type: tm+mt
-source-wordcount: '766'
+source-wordcount: '745'
 ht-degree: 0%
 
 ---
@@ -46,7 +46,7 @@ De toepassing van de Handel gebruikt kroontaken die met verschillende configurat
 
 >[!WARNING]
 >
->- Om problemen tijdens installatie en verbetering te vermijden, adviseren wij sterk u om de zelfde PHP montages op zowel de PHP bevel-lijn configuratie als op de configuratie van de PHP Webserver stop-in toe te passen. Zie voor meer informatie [Vereiste PHP-instellingen](https://devdocs.magento.com/guides/v2.4/install-gde/prereq/php-settings.html).
+>- Om problemen tijdens installatie en verbetering te vermijden, adviseren wij sterk u om de zelfde PHP montages op zowel de PHP bevel-lijn configuratie als op de configuratie van de PHP Webserver stop-in toe te passen. Zie voor meer informatie [Vereiste PHP-instellingen](../../installation/prerequisites/php-settings.md).
 >- In een systeem met meerdere knooppunten kan de tab op slechts één knooppunt worden uitgevoerd. Dit geldt alleen voor u als u meer dan één webnode instelt om redenen die te maken hebben met prestaties of schaalbaarheid.
 
 
@@ -58,7 +58,7 @@ Het tabblad Handel bevindt zich in `#~ MAGENTO START` en `#~ MAGENTO END` opmerk
 
 U kunt als volgt de Commerce-tab maken:
 
-1. Meld u aan als, of schakel over naar, de [eigenaar van bestandssysteem](https://devdocs.magento.com/guides/v2.4/install-gde/prereq/file-sys-perms-over.html).
+1. Meld u aan als, of schakel over naar, de [eigenaar van bestandssysteem](../../installation/prerequisites/file-system/overview.md).
 1. Verandering in uw de installatiemap van de Handel.
 1. Voer de volgende opdracht in:
 
@@ -100,7 +100,7 @@ U zou de handelskrontab moeten verwijderen slechts alvorens de toepassing van de
 
 U verwijdert de tab Handel als volgt:
 
-1. Aanmelden als of schakelen naar [eigenaar van bestandssysteem](https://devdocs.magento.com/guides/v2.4/install-gde/prereq/file-sys-perms-over.html).
+1. Aanmelden als of schakelen naar [eigenaar van bestandssysteem](../../installation/prerequisites/file-system/overview.md).
 1. Ga naar de installatiemap Handel.
 1. Voer de volgende opdracht in:
 

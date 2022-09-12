@@ -1,9 +1,9 @@
 ---
 title: Cache wissen met Varnish
 description: Leer hoe het leegmaken van cache werkt met Varnish en hoe u dit gebruikt als een web-caching accelerator voor de Adobe Commerce-toepassing.
-source-git-commit: c65c065c5f9ac2847caa8898535afdacf089006a
+source-git-commit: d263e412022a89255b7d33b267b696a8bb1bc8a2
 workflow-type: tm+mt
-source-wordcount: '0'
+source-wordcount: '388'
 ht-degree: 0%
 
 ---
@@ -57,4 +57,4 @@ U kunt Varnish gastheren dan zuiveren wanneer u het geheime voorgeheugen van de 
 
 Als u de cache wilt vernieuwen met behulp van de beheerfunctie, klikt u op **[!UICONTROL SYSTEM]** > Gereedschappen > **Cachebeheer** en klik vervolgens op **Magento-cache leegmaken** boven aan de pagina. (U kunt ook afzonderlijke cachetypen vernieuwen.)
 
-Als u de cache wilt vernieuwen met behulp van de opdrachtregel, gebruikt u doorgaans de opdracht [`magento cache:clean <type>`](../cli/manage-cache.md#clean-and-flush-cache-types) als de [eigenaar van bestandssysteem](https://devdocs.magento.com/guides/v2.4/install-gde/prereq/file-sys-perms-over.html).
+Als u de cache wilt vernieuwen met behulp van de opdrachtregel, gebruikt u doorgaans de opdracht [`magento cache:clean <type>`](../cli/manage-cache.md#clean-and-flush-cache-types) als de [eigenaar van bestandssysteem](../../installation/prerequisites/file-system/overview.md).

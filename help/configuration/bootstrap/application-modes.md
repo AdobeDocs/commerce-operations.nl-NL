@@ -1,9 +1,9 @@
 ---
 title: Toepassingsmodi
 description: De toepassing van de Handel kan op verschillende wijzen afhankelijk van uw behoeften werken. Bekijk een gedetailleerde lijst met de beschikbare toepassingsmodi.
-source-git-commit: 53448b11a2d000fe8e8a7eecf2ffcef4b7e248fa
+source-git-commit: d263e412022a89255b7d33b267b696a8bb1bc8a2
 workflow-type: tm+mt
-source-wordcount: '805'
+source-wordcount: '790'
 ht-degree: 0%
 
 ---
@@ -69,6 +69,6 @@ In de productiemodus:
 
 Voer de toepassing Commerce in onderhoudsmodus uit om uw site offline te zetten terwijl u onderhouds-, upgrade- of configuratietaken uitvoert. In de onderhoudsmodus leidt de site de bezoekers om naar de standaardinstelling `Service Temporarily Unavailable` pagina.
 
-U kunt een [aangepaste onderhoudspagina](https://experienceleague.adobe.com/docs/commerce-operations/upgrade-guide/troubleshooting/maintenance-mode-options.html), laat manueel en maakt onderhoudswijze onbruikbaar, en vormt onderhoudswijze om bezoekers van erkende IP adressen toe te staan om de opslag normaal te bekijken. Zie [de onderhoudsmodus in- en uitschakelen](https://devdocs.magento.com/guides/v2.4/install-gde/install/cli/install-cli-subcommands-maint.html).
+U kunt een [aangepaste onderhoudspagina](../../upgrade/troubleshooting/maintenance-mode-options.md), laat manueel en maakt onderhoudswijze onbruikbaar, en vormt onderhoudswijze om bezoekers van erkende IP adressen toe te staan om de opslag normaal te bekijken. Zie [de onderhoudsmodus in- en uitschakelen](../../installation/tutorials/maintenance-mode.md).
 
 Als u Handel op wolkeninfrastructuur gebruikt, loopt de toepassing van de Handel op onderhoudswijze tijdens de opstellen fase. Wanneer de plaatsing met succes voltooit, keert de toepassing van de Handel aan lopende op productiemodus terug. Zie [Implementatiehaken](https://devdocs.magento.com/cloud/reference/discover-deploy.html#cloud-deploy-over-phases-hook) in de _Commerce Cloud-hulplijn_.

@@ -1,9 +1,9 @@
 ---
 title: Best practices voor configuratie
 description: Optimaliseer de reactietijd van uw Adobe Commerce- of Magento Open Source-implementatie met deze best practices.
-source-git-commit: c65c065c5f9ac2847caa8898535afdacf089006a
+source-git-commit: d263e412022a89255b7d33b267b696a8bb1bc8a2
 workflow-type: tm+mt
-source-wordcount: '0'
+source-wordcount: '938'
 ht-degree: 0%
 
 ---
@@ -15,7 +15,7 @@ De handel verstrekt vele montages en hulpmiddelen die u kunt gebruiken om reacti
 
 ## Cron Jobs
 
-Alle asynchrone bewerkingen in [!DNL Commerce] worden uitgevoerd met behulp van Linux `cron` gebruiken. Zie [Uitsnede configureren en uitvoeren](https://devdocs.magento.com/guides/v2.4/config-guide/cli/config-cli-subcommands-cron.html) om het correct te vormen.
+Alle asynchrone bewerkingen in [!DNL Commerce] worden uitgevoerd met behulp van Linux `cron` gebruiken. Zie [Uitsnede configureren en uitvoeren](../configuration/cli/configure-cron-jobs.md) om het correct te vormen.
 
 ## Indexers
 
@@ -40,7 +40,7 @@ Er kunnen momenten zijn dat intensieve verkoop op een winkel plaatsvindt op hetz
 
 >[!WARNING]
 >
->De **[!UICONTROL Developer]** tab en opties zijn alleen beschikbaar in [Modus Ontwikkelaar](https://devdocs.magento.com/guides/v2.4/config-guide/cli/config-cli-subcommands-mode.html). [Adobe Commerce over cloudinfrastructuur](https://devdocs.magento.com/cloud/requirements/cloud-requirements.html#cloud-req-test) ondersteunt niet `Developer` in.
+>De **[!UICONTROL Developer]** tab en opties zijn alleen beschikbaar in [Modus Ontwikkelaar](../configuration/cli/set-mode.md). [Adobe Commerce over cloudinfrastructuur](https://devdocs.magento.com/cloud/requirements/cloud-requirements.html#cloud-req-test) ondersteunt niet `Developer` in.
 
 ## Uitgestelde voorraadupdate
 
@@ -66,7 +66,7 @@ Om de storefront reactiesnelheid van uw [!DNL Commerce] Ga bijvoorbeeld naar de 
 
 >[!INFO]
 >
->De **[!UICONTROL Developer]** tab en opties zijn alleen beschikbaar in [Modus Ontwikkelaar](https://devdocs.magento.com/guides/v2.4/config-guide/cli/config-cli-subcommands-mode.html). [Adobe [!DNL Commerce] over cloudinfrastructuur](https://devdocs.magento.com/cloud/requirements/cloud-requirements.html#cloud-req-test) ondersteunt niet `Developer` in.
+>De **[!UICONTROL Developer]** tab en opties zijn alleen beschikbaar in [Modus Ontwikkelaar](../configuration/cli/set-mode.md). [Adobe [!DNL Commerce] over cloudinfrastructuur](https://devdocs.magento.com/cloud/requirements/cloud-requirements.html#cloud-req-test) ondersteunt niet `Developer` in.
 
 Wanneer u het dialoogvenster **[!UICONTROL Enable [!DNL JavaScript] Bundling]** toestaan, staat u de Handel toe om alle middelen JS in één of een reeks bundels samen te voegen die in storefront pagina&#39;s worden geladen. Het bundelen van JS resulteert in minder verzoeken aan de server, wat paginaprestaties verbetert. Het helpt de browser JS middelen van het geheime voorgeheugen op de eerste vraag ook en hergebruik hen voor al verder het doorbladeren. Deze optie brengt ook luie evaluatie, aangezien al JS als tekst wordt geladen. Het initieert analyse en evaluatie van code slechts nadat de specifieke acties op de pagina worden teweeggebracht. Nochtans, wordt dit het plaatsen niet geadviseerd voor opslag waar de eerste tijd van de paginading uiterst kritiek is, omdat al inhoud JS op de eerste vraag zal worden geladen.
 

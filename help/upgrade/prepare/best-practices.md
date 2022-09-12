@@ -1,9 +1,9 @@
 ---
 title: Aanbevolen werkwijzen
 description: Gebruik de door de Adobe aanbevolen aanbevolen aanbevolen werkwijze om het upgradeproces voor uw Adobe Commerce- en Magento Open Source-projecten te beheren.
-source-git-commit: 3d9a721e33621b78f03f16b932a1ba2904ae4010
+source-git-commit: d263e412022a89255b7d33b267b696a8bb1bc8a2
 workflow-type: tm+mt
-source-wordcount: '1092'
+source-wordcount: '1089'
 ht-degree: 0%
 
 ---
@@ -41,8 +41,8 @@ Als uw project live is, raden we u aan een controle uit te voeren om de kwalitei
 
 Vanaf het moment dat u aan een project begint te werken, dient u te overwegen wat de gevolgen zullen zijn voor toekomstige upgrades van uw huidige werk. Volg altijd best practices voor Adobe Commerce-ontwikkeling zoals hier beschreven:
 
-- [Best practices voor ontwikkeling](https://devdocs.magento.com/guides/v2.4/ext-best-practices/bk-ext-best-practices.html)
-- [Codeerstandaarden](https://devdocs.magento.com/guides/v2.4/coding-standards/bk-coding-standards.html)
+- [Best practices voor ontwikkeling](https://developer.adobe.com/commerce/php/best-practices/)
+- [Codeerstandaarden](https://developer.adobe.com/commerce/php/coding-standards/)
 
 Begin met het aannemen van het Adobe Commerce Extenability Platform, als u dit nog niet hebt gedaan. Met het platform kunt u processen efficiënt aanpassen, systemen integreren en nieuwe mogelijkheden implementeren terwijl u SaaS-achtige upgradebaarheid behoudt. De volgende functies zijn beschikbaar:
 
@@ -80,7 +80,7 @@ Evalueer het werk dat moet worden gedaan voor de upgrade:
 
 ### Post-upgrade testen
 
-Het testen is de fase van een verbetering die de meeste tijd vereist. Dit proces moet daarom zo geautomatiseerd mogelijk zijn. U kunt profiteren van de belangrijkste testgereedschappen. De [Testhandleiding voor toepassingen](https://devdocs.magento.com/guides/v2.4/test/testing.html) bevat details.
+Het testen is de fase van een verbetering die de meeste tijd vereist. Dit proces moet daarom zo geautomatiseerd mogelijk zijn. U kunt profiteren van de belangrijkste testgereedschappen. De [Testhandleiding voor toepassingen](https://developer.adobe.com/commerce/testing/guide/) bevat details.
 
 Gebruik een testomgeving om de upgrade te testen en te valideren voordat u overschakelt naar de productie.
 

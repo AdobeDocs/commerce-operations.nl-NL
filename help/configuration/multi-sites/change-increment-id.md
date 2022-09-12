@@ -1,9 +1,9 @@
 ---
 title: Toename-id wijzigen
 description: Wijzig de increment ID voor een commercieel databaseentiteit.
-source-git-commit: 5c0d285717a79d654af769cb734ec385d2d4046f
+source-git-commit: d263e412022a89255b7d33b267b696a8bb1bc8a2
 workflow-type: tm+mt
-source-wordcount: '391'
+source-wordcount: '384'
 ht-degree: 0%
 
 ---
@@ -17,7 +17,7 @@ In dit artikel wordt besproken hoe u de increment-id voor een entiteit in een ha
 
 - Adobe Commerce (ter plaatse): 2.x.x
 - Adobe Commerce op cloudinfrastructuur: 2.x.x
-- MySQL: [elke ondersteunde versie]
+- MySQL: [elke ondersteunde versie](../../installation/prerequisites/database/mysql.md)
 
 ## Wanneer moet u de increment-id wijzigen
 
@@ -75,4 +75,4 @@ Voordat u het dialoogvenster `ALTER TABLE` We raden u ten zeerste aan om de volg
 
 [PayPal-gateway afgewezen aanvraag - dubbele factuurkwestie]: https://support.magento.com/hc/en-us/articles/115002457473
 [Een DB-back-up maken]: https://support.magento.com/hc/en-us/articles/360003254334
-[elke ondersteunde versie]: https://devdocs.magento.com/guides/v2.4/install-gde/prereq/mysql.html
+[elke ondersteunde versie]

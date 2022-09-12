@@ -1,9 +1,9 @@
 ---
 title: Codecompiler
 description: Leer hoe te om de codecompiler van de bevellijn in werking te stellen.
-source-git-commit: 6a3995dd24f8e3e8686a8893be9693581d31712b
+source-git-commit: d263e412022a89255b7d33b267b696a8bb1bc8a2
 workflow-type: tm+mt
-source-wordcount: '191'
+source-wordcount: '183'
 ht-degree: 0%
 
 ---
@@ -46,7 +46,7 @@ In sommige gevallen, zou u code kunnen willen compileren alvorens u de toepassin
 
    Gebruik de `[-c|--clear-static-content]` optie voor wissen [statische inhoud](https://glossary.magento.com/static-content). Dit is nodig als u eerder modules hebt in- of uitgeschakeld en u de statische inhoud moet wissen die eerder voor deze modules is gegenereerd.
 
-   Zie [Modules inschakelen](https://devdocs.magento.com/guides/v2.4/install-gde/install/cli/install-cli-subcommands-enable.html).
+   Zie [Modules inschakelen](../../installation/tutorials/manage-modules.md).
 
 1. Compileer de code.
 

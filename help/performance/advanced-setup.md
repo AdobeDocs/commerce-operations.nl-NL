@@ -1,9 +1,9 @@
 ---
 title: Geavanceerde instellingen
 description: Bekijk best practices en aanbevelingen voor grote bedrijfssystemen die zijn ontworpen om grote hoeveelheden gegevens te verwerken.
-source-git-commit: 9ab52374e031bd2b0a846dd5f47c89ff788dcafa
+source-git-commit: d263e412022a89255b7d33b267b696a8bb1bc8a2
 workflow-type: tm+mt
-source-wordcount: '1203'
+source-wordcount: '1192'
 ht-degree: 0%
 
 ---
@@ -36,7 +36,7 @@ Als u bijvoorbeeld een profiel uitvoert dat lijkt op B2B Medium, kunt u de confi
 
 Een groot aantal product-SKU&#39;s, websites, klantgroepen of gedeelde catalogi is van invloed op de runtime van de indexeerders Product Price en Catalog Rule. Dit komt doordat standaard alle websites zijn toegewezen aan alle klantengroepen (gedeelde catalogi).
 
-Als u de indexatietijd wilt verkorten, kunt u [bepaalde websites uitsluiten van klantengroepen (gedeelde catalogi)](https://devdocs.magento.com/guides/v2.4/extension-dev-guide/indexer-optimization.html#customer-group-limitations-by-websites).
+Als u de indexatietijd wilt verkorten, kunt u [bepaalde websites uitsluiten van klantengroepen (gedeelde catalogi)](https://developer.adobe.com/commerce/php/development/components/indexing/optimization/#customer-group-limitations-by-websites).
 
 ## Redis instellen
 
@@ -56,7 +56,7 @@ Magento Open Source en Adobe [!DNL Commerce] de rijen van het steunbericht die d
 
 >[!WARNING]
 >
->De functie voor gesplitste databases was [verouderd](https://community.magento.com/t5/Magento-DevBlog/Deprecation-of-Split-Database-in-Magento-Commerce/ba-p/465187) in versie 2.4.2 van Adobe Commerce. Zie [Herstel van een gesplitste database naar één database](https://devdocs.magento.com/guides/v2.4/config-guide/revert-split-database.html).
+>De functie voor gesplitste databases was [verouderd](https://community.magento.com/t5/Magento-DevBlog/Deprecation-of-Split-Database-in-Magento-Commerce/ba-p/465187) in versie 2.4.2 van Adobe Commerce. Zie [Herstel van een gesplitste database naar één database](../configuration/storage/revert-split-database.md).
 
 Adobe Commerce staat u toe om scalable gegevensbestandopslag te vormen om aan de behoeften van groeiende zaken te voldoen. U kunt drie aparte master databases instellen die specifieke domeinen bedienen:
 
@@ -95,7 +95,7 @@ Dit bevel voert configuratieveranderingen uit maar vormt replicatie zelf niet. D
 Nadat u de master database hebt gesplitst en slave-databases hebt ingesteld, [!DNL Commerce] regelt automatisch verbindingen met een specifieke database, waarbij beslissingen worden genomen op basis van het type verzoek (POST, PUT, GET, enz.) en de gegevensbron. Indien [!DNL Commerce] of de extensies ervan schrijven naar een GET-aanvraag, schakelt het systeem de verbinding automatisch van slave naar een master database. Het werkt de zelfde manier met master gegevensbestanden: zodra u met een op uitchecken betrekking hebbende lijst werkt, richt het systeem alle vragen aan een specifiek gegevensbestand opnieuw. Ondertussen, zullen alle op catalogus betrekking hebbende vragen naar het belangrijkste gegevensbestand gaan.
 
 Voor meer details over de configuratie en de voordelen van veelvoudige master/slave configuratie, zie
-[Oplossing voor gesplitste databaseprestaties](https://devdocs.magento.com/guides/v2.4/config-guide/multi-master/multi-master.html).
+[Oplossing voor gesplitste databaseprestaties](../configuration/storage/multi-master.md).
 
 ## Media-inhoud serveren
 
@@ -107,4 +107,4 @@ Voor middelgrote en hoge ladingsmilieu&#39;s, adviseren wij het gebruiken van de
 
 ## Logopslag configureren
 
-De opslag van logboeken en hun invloed op andere schijfverrichtingen beïnvloeden de beschikbaarheid van uw Webknopen, vooral in high-load situaties. We raden u aan de logboekregistratie zo klein mogelijk te houden als u deze niet nodig hebt. U kunt registreren ook vormen zodat het op een afzonderlijk opslagsysteem schrijft dat hoge toegangssnelheden heeft. Merk op dat om het even welk knelpunt bij de toegang tot van logboekopslag de verwerking van inkomende verzoeken kan direct beïnvloeden die logboek schrijft of verrichtingen als deel van hun stroom leest.
+De opslag van logboeken en hun invloed op andere schijfverrichtingen beïnvloeden de beschikbaarheid van uw Webknopen, vooral in high-load situaties. Wij adviseren dat u registreren minimaliseert als u het niet nodig hebt. U kunt registreren ook vormen zodat het op een afzonderlijk opslagsysteem schrijft dat hoge toegangssnelheden heeft. Merk op dat om het even welk knelpunt bij de toegang tot van logboekopslag de verwerking van inkomende verzoeken kan direct beïnvloeden die logboek schrijft of verrichtingen als deel van hun stroom leest.

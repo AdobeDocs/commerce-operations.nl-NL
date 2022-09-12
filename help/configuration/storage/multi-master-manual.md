@@ -1,9 +1,9 @@
 ---
 title: Master databases handmatig configureren
 description: Zie begeleiding bij het manueel vormen van de gespleten gegevensbestandoplossing.
-source-git-commit: 52f92ef79586d618fd4ac51c00eaa1446a2dc98f
+source-git-commit: d263e412022a89255b7d33b267b696a8bb1bc8a2
 workflow-type: tm+mt
-source-wordcount: '1402'
+source-wordcount: '1388'
 ht-degree: 0%
 
 ---
@@ -51,7 +51,7 @@ Adobe raadt u ten zeerste aan een back-up te maken van uw huidige database en be
 
 **Een back-up van uw systeem maken**:
 
-1. Meld u aan bij de Commerce-server als of schakel over naar de [eigenaar van bestandssysteem](https://devdocs.magento.com/guides/v2.4/install-gde/prereq/file-sys-perms-over.html).
+1. Meld u aan bij de Commerce-server als of schakel over naar de [eigenaar van bestandssysteem](../../installation/prerequisites/file-system/overview.md).
 1. Voer de volgende opdrachten in:
 
    ```bash
@@ -476,7 +476,7 @@ De definitieve stap in manueel het splitsen van gegevensbestanden moet verbindin
 
 Om de plaatsingsconfiguratie bij te werken:
 
-1. Meld u aan bij de Commerce-server als of schakel over naar de [eigenaar van bestandssysteem](https://devdocs.magento.com/guides/v2.4/install-gde/prereq/file-sys-perms-over.html).
+1. Meld u aan bij de Commerce-server als of schakel over naar de [eigenaar van bestandssysteem](../../installation/prerequisites/file-system/overview.md).
 1. Maak een back-up van uw implementatieconfiguratie:
 
    ```bash

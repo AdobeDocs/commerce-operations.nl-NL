@@ -1,9 +1,9 @@
 ---
 title: Cache wissen met meerdere instanties van Varnish
 description: Leer hoe cachewissen werkt met meerdere instanties van Varnish.
-source-git-commit: 80abb0180fcd8ecc275428c23b68feb5883cbc28
+source-git-commit: d263e412022a89255b7d33b267b696a8bb1bc8a2
 workflow-type: tm+mt
-source-wordcount: '194'
+source-wordcount: '179'
 ht-degree: 1%
 
 ---
@@ -17,7 +17,7 @@ Dit onderwerp toont de grondbeginselen van het vormen van veelvoudige instanties
 
 ## Configuratie om meerdere instanties van Varnish te zuiveren
 
-Handel koopt Varnish gastheren aan nadat u Varnish gastheren vormt gebruikend [`magento setup:config:set`](https://devdocs.magento.com/guides/v2.4/install-gde/install/cli/install-cli-subcommands-deployment.html) gebruiken.
+Handel koopt Varnish gastheren aan nadat u Varnish gastheren vormt gebruikend [`magento setup:config:set`](../../installation/tutorials/deployment.md) gebruiken.
 
 U moet de opdracht `--http-cache-hosts` parameter om een komma-gescheiden lijst van Varnish gastheren te specificeren en havens te luisteren. (Plaats geen spatie tussen de hosts.)
 
@@ -33,4 +33,4 @@ U kunt dan alle Varnish gastheren leegmaken wanneer u het geheime voorgeheugen v
 
 Als u de cache wilt vernieuwen met behulp van de beheerfunctie, klikt u op **SYSTEEM** > Gereedschappen > **Cachebeheer** en klik vervolgens op **Magento-cache leegmaken** boven aan de pagina. (U kunt ook afzonderlijke cachetypen vernieuwen.)
 
-Als u het cachegeheugen van meerdere instanties Varnish wilt vernieuwen vanuit de cli, gebruikt u de opdracht [`magento cache:clean <type>`](../cli/manage-cache.md#clean-and-flush-cache-types) als de [eigenaar van bestandssysteem](https://devdocs.magento.com/guides/v2.4/install-gde/prereq/file-sys-perms-over.html).
+Als u het cachegeheugen van meerdere instanties Varnish wilt vernieuwen vanuit de cli, gebruikt u de opdracht [`magento cache:clean <type>`](../cli/manage-cache.md#clean-and-flush-cache-types) als de [eigenaar van bestandssysteem](../../installation/prerequisites/file-system/overview.md).

@@ -1,9 +1,9 @@
 ---
 title: Toegangsrechten voor bestandssystemen
 description: Zie hoe u de eigenaar of eigenaars van het bestandssysteem voor de toepassing Commerce instelt voor een ontwikkelings- en productiesysteem.
-source-git-commit: 80abb0180fcd8ecc275428c23b68feb5883cbc28
+source-git-commit: d263e412022a89255b7d33b267b696a8bb1bc8a2
 workflow-type: tm+mt
-source-wordcount: '895'
+source-wordcount: '866'
 ht-degree: 0%
 
 ---
@@ -11,9 +11,9 @@ ht-degree: 0%
 
 # Toegangsrechten voor bestandssystemen
 
-In deze sectie wordt beschreven hoe u de eigenaar of eigenaars van het bestandssysteem Commerce voor een ontwikkelings- en productiesysteem instelt. Voordat u verdergaat, bekijkt u de in [Overzicht van eigendom en machtigingen van bestandssystemen](https://devdocs.magento.com/guides/v2.4/install-gde/prereq/file-sys-perms-over.html).
+In deze sectie wordt beschreven hoe u de eigenaar of eigenaars van het bestandssysteem Commerce voor een ontwikkelings- en productiesysteem instelt. Voordat u verdergaat, bekijkt u de in [Overzicht van eigendom en machtigingen van bestandssystemen](../../installation/prerequisites/file-system/overview.md).
 
-Dit onderwerp richt zich op de ontwikkeling en de productiesystemen van de handel. Als u Handel installeert, zie [Eigendom en machtigingen vóór de installatie instellen](https://devdocs.magento.com/guides/v2.4/install-gde/prereq/file-system-perms.html).
+Dit onderwerp richt zich op de ontwikkeling en de productiesystemen van de handel. Als u Handel installeert, zie [Eigendom en machtigingen vóór de installatie instellen](../../installation/prerequisites/file-system/configure-permissions.md).
 
 De volgende secties bespreken vereisten voor één of twee eigenaars van bestandssystemen. Dat betekent:
 
@@ -103,7 +103,7 @@ Bestanden en mappen schrijfbaar maken, zodat u componenten kunt bijwerken en de 
 
 ### Optioneel ingesteld `magento_umask`
 
-Zie [Optioneel een masker instellen](https://devdocs.magento.com/guides/v2.4/install-gde/install/post-install-umask.html) in de _Installatiehandleiding_.
+Zie [Optioneel een masker instellen](../../installation/next-steps/set-umask.md) in de _Installatiehandleiding_.
 
 ## Eigendom van productiesysteem voor privéhosting (twee gebruikers)
 
@@ -121,7 +121,7 @@ Als u uw eigen server gebruikt (inclusief de privéserverinstallatie van een hos
    >
    >De opdrachtregelgebruiker wordt ook wel de _eigenaar van bestandssysteem_.
 
-Omdat deze gebruikers toegang tot de zelfde dossiers vereisen, adviseren wij u tot een [gedeelde groep](https://devdocs.magento.com/guides/v2.4/install-gde/prereq/file-system-perms.html#mage-owner-about-group) waartoe zij beide behoren. De volgende procedures gaan ervan uit dat u dit al hebt gedaan.
+Omdat deze gebruikers toegang tot de zelfde dossiers vereisen, adviseren wij u tot een [gedeelde groep](../../installation/prerequisites/file-system/configure-permissions.md#about-the-shared-group) waartoe zij beide behoren. De volgende procedures gaan ervan uit dat u dit al hebt gedaan.
 
 Zie een van de volgende secties:
 

@@ -1,9 +1,9 @@
 ---
 title: Statische weergavebestanden gebruiken
 description: Leer om statische dossiers aan het het dossiersysteem van de Handel tijdens productiemodus te schrijven.
-source-git-commit: 80abb0180fcd8ecc275428c23b68feb5883cbc28
+source-git-commit: d263e412022a89255b7d33b267b696a8bb1bc8a2
 workflow-type: tm+mt
-source-wordcount: '1167'
+source-wordcount: '1135'
 ht-degree: 0%
 
 ---
@@ -31,11 +31,11 @@ U moet statische meningsdossiers aan het het dossiersysteem van de Handel manuee
 
 >[!WARNING]
 >
->_Alleen modus Ontwikkelaar_: Wanneer u een nieuwe module installeert of inschakelt, wordt mogelijk nieuwe JavaScript, CSS, lay-outs enzovoort geladen. Als u problemen met statische bestanden wilt voorkomen, moet u de oude bestanden opschonen om ervoor te zorgen dat alle wijzigingen voor de nieuwe module worden doorgevoerd. U kunt gegenereerde statische weergavebestanden op verschillende manieren opschonen. Zie [Cache-onderwerp van statische bestanden opschonen voor meer informatie](https://devdocs.magento.com/guides/v2.4/frontend-dev-guide/cache_for_frontdevs.html#clean_static_cache) voor meer informatie .
+>_Alleen modus Ontwikkelaar_: Wanneer u een nieuwe module installeert of inschakelt, wordt mogelijk nieuwe JavaScript, CSS, lay-outs enzovoort geladen. Als u problemen met statische bestanden wilt voorkomen, moet u de oude bestanden opschonen om ervoor te zorgen dat alle wijzigingen voor de nieuwe module worden doorgevoerd. U kunt gegenereerde statische weergavebestanden op verschillende manieren opschonen. Zie [Cache-onderwerp van statische bestanden opschonen voor meer informatie](https://developer.adobe.com/commerce/frontend-core/guide/caching/#clean-static-files-cache) voor meer informatie .
 
 **Statische weergavebestanden implementeren**:
 
-1. Log in bij de Commerce-server als, of [schakelen naar de eigenaar van het bestandssysteem](https://devdocs.magento.com/guides/v2.4/install-gde/prereq/file-sys-perms-over.html).
+1. Log in bij de Commerce-server als, of [schakelen naar de eigenaar van het bestandssysteem](../../installation/prerequisites/file-system/overview.md).
 1. De inhoud van `<magento_root>/pub/static`, met uitzondering van de `.htaccess` bestand. Verwijder dit bestand niet.
 1. Het implementatieprogramma voor statische weergavebestanden uitvoeren `<magento_root>/bin/magento setup:static-content:deploy`.
 
@@ -158,7 +158,7 @@ Voer hiertoe de volgende stappen uit:
 
 ## Problemen met het implementatieprogramma voor statische weergavebestanden oplossen
 
-[Eerst de Commerce-software installeren](https://devdocs.magento.com/guides/v2.4/install-gde/bk-install-guide.html); anders, kunt u niet het statische hulpmiddel van de plaatsing van meningsdossiers in werking stellen.
+[Eerst de Commerce-software installeren](../../installation/overview.md); anders, kunt u niet het statische hulpmiddel van de plaatsing van meningsdossiers in werking stellen.
 
 **Symptoom**: De volgende fout wordt getoond wanneer u het statische hulpmiddel van de plaatsing van meningsdossiers in werking stelt:
 
@@ -170,9 +170,9 @@ ERROR: You need to install the Commerce application before running this utility.
 
 Voer de volgende stappen uit:
 
-1. Installeer de software Commerce met de [opdrachtregel](https://devdocs.magento.com/guides/v2.4/install-gde/install/cli/install-cli.html).
-1. Log in bij de Commerce-server als, of [schakelen naar](https://devdocs.magento.com/guides/v2.4/install-gde/prereq/file-sys-perms-over.html), de eigenaar van het bestandssysteem.
-1. De inhoud van `<magento_root>/pub/static` map, behalve de map `.htaccess` bestand. Verwijder dit bestand niet.
+1. Installeer de software Commerce met de [opdrachtregel](../../installation/composer.md).
+1. Meld u aan bij de toepassingsserver als, of [schakelen naar](../../installation/prerequisites/file-system/overview.md), de eigenaar van het bestandssysteem.
+1. De inhoud van `<app_root>/pub/static` map, behalve de map `.htaccess` bestand. Verwijder dit bestand niet.
 1. Statische weergavebestanden gebruiken: `bin/magento setup:static-content:deploy`
 
 ## Tip voor ontwikkelaars die het statische hulpmiddel van de inhoudsimplementatie aanpassen

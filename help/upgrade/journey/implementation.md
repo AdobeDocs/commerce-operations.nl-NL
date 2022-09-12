@@ -1,9 +1,9 @@
 ---
 title: Upgrade uitvoeren
 description: Leer over de verschillende fasen van verbeteringsimplementatie voor Adobe Commerce en Magento Open Source projecten.
-source-git-commit: 3d9a721e33621b78f03f16b932a1ba2904ae4010
+source-git-commit: d263e412022a89255b7d33b267b696a8bb1bc8a2
 workflow-type: tm+mt
-source-wordcount: '877'
+source-wordcount: '870'
 ht-degree: 1%
 
 ---
@@ -33,7 +33,7 @@ De volgende punten kunnen u in een grondige analyse willen omvatten:
    - Doelversie van upgrade
    - Aantal en details van aangetroffen kritieke fouten
 
-- De diensten van de verbetering om doelversie te steunen. Gebruik het volgende lijstmalplaatje om uit in kaart te brengen welke diensten u moet bevorderen. Gebruik de [systeemvereisten](https://devdocs.magento.com/guides/v2.4/install-gde/system-requirements.html) om te bepalen wat u aan de _Upgrade uitvoeren naar_ kolom.
+- De diensten van de verbetering om doelversie te steunen. Gebruik het volgende lijstmalplaatje om uit in kaart te brengen welke diensten u moet bevorderen. Gebruik de [systeemvereisten](../../installation/system-requirements.md) om te bepalen wat u aan de _Upgrade uitvoeren naar_ kolom.
 
 
    | Service | Huidige versie | Upgrade uitvoeren naar | Notities |
@@ -64,7 +64,7 @@ Daarnaast kunnen partners deelnemen aan de [Adobe Commerce Beta-programma](https
 
 ## Ontwikkeling en kwaliteitscontrole
 
-Het testen is de fase van een verbetering die de meeste tijd vereist. Dit proces moet daarom zo geautomatiseerd mogelijk zijn. De _[Testhandleiding voor toepassingen](https://devdocs.magento.com/guides/v2.4/test/testing.html)_ Hier vindt u informatie over het instellen en gebruiken van platform- en systeemtestprogramma&#39;s voor snellere kwaliteitscontrole. Gebruik een testomgeving om de upgrade te testen en te valideren voordat u overschakelt naar de productie.
+Het testen is de fase van een verbetering die de meeste tijd vereist. Dit proces moet daarom zo geautomatiseerd mogelijk zijn. De _[Testhandleiding voor toepassingen](https://developer.adobe.com/commerce/testing/guide/)_ Hier vindt u informatie over het instellen en gebruiken van platform- en systeemtestprogramma&#39;s voor snellere kwaliteitscontrole. Gebruik een testomgeving om de upgrade te testen en te valideren voordat u overschakelt naar de productie.
 
 ## UAT en voorbereiding voor introductie
 

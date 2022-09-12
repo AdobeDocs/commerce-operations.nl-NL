@@ -1,9 +1,9 @@
 ---
 title: Een aangepaste uitsnijdtaak en uitsnijdgroep configureren (zelfstudie)
 description: Gebruik deze stapsgewijze zelfstudie om een aangepaste uitsnijdtaak te maken.
-source-git-commit: 53448b11a2d000fe8e8a7eecf2ffcef4b7e248fa
+source-git-commit: d263e412022a89255b7d33b267b696a8bb1bc8a2
 workflow-type: tm+mt
-source-wordcount: '822'
+source-wordcount: '808'
 ht-degree: 0%
 
 ---
@@ -21,7 +21,7 @@ In deze zelfstudie gaan we uit van het volgende:
 
 - De toepassing Commerce is geïnstalleerd in `/var/www/html/magento2`
 - De gebruikersnaam en het wachtwoord van de Commerce-database zijn beide `magento`
-- U voert alle handelingen uit als de [eigenaar van bestandssysteem](https://devdocs.magento.com/guides/v2.4/install-gde/prereq/file-sys-perms-over.html)
+- U voert alle handelingen uit als de [eigenaar van bestandssysteem](../../installation/prerequisites/file-system/overview.md)
 
 ## Stap 1: Een voorbeeldmodule ophalen
 
@@ -31,7 +31,7 @@ Als u reeds een steekproefmodule hebt, kunt u het gebruiken; Sla deze stap en de
 
 **Een voorbeeldmodule ophalen**:
 
-1. Meld u aan bij de Commerce-server als of schakel over naar de [eigenaar van bestandssysteem](https://devdocs.magento.com/guides/v2.4/install-gde/prereq/file-sys-perms-over.html).
+1. Meld u aan bij de Commerce-server als of schakel over naar de [eigenaar van bestandssysteem](../../installation/prerequisites/file-system/overview.md).
 1. Verandering in een folder die niet in uw de toepassingswortel van de Handel is (bijvoorbeeld, uw huisfolder).
 1. Klonen met [`magento2-samples` opslagplaats][samples].
 

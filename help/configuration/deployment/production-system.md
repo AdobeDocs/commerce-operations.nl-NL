@@ -1,9 +1,9 @@
 ---
 title: Installatie van productiesysteem
 description: Leer hoe u een productiesysteem instelt voor de toepassing Commerce.
-source-git-commit: 53448b11a2d000fe8e8a7eecf2ffcef4b7e248fa
+source-git-commit: d263e412022a89255b7d33b267b696a8bb1bc8a2
 workflow-type: tm+mt
-source-wordcount: '386'
+source-wordcount: '379'
 ht-degree: 0%
 
 ---
@@ -40,7 +40,7 @@ Een productiemachine instellen:
 
    Maken `auth.json` in die map.
 
-   `auth.json` moet uw [verificatietoetsen](https://devdocs.magento.com/guides/v2.4/install-gde/prereq/connect-auth.html).
+   `auth.json` moet uw [verificatietoetsen](../../installation/prerequisites/authentication-keys.md).
 
    Hieronder volgt een monster:
 

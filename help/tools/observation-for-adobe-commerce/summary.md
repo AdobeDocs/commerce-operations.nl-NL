@@ -1,9 +1,9 @@
 ---
-title: '"De [!UICONTROL Summary] tab"'
+title: "De [!UICONTROL Summary] tab"
 description: Meer informatie over de [!UICONTROL Summary] tabblad van [!DNL Observation for Adobe Commerce].
-source-git-commit: 22df5b80262fbc98f3dd929ec8fdf6f697734c9b
+source-git-commit: 5bcb834bc563c52cd5b169b9f4f20dab31d404cd
 workflow-type: tm+mt
-source-wordcount: '2650'
+source-wordcount: '2637'
 ht-degree: 0%
 
 ---
@@ -109,7 +109,7 @@ De **[!UICONTROL Deployment State]** frame facets bepaalde plaatsingsuitdrukking
 
 **Implementatielogboekzinnen:**
 
-* &quot;%Starten genereert opdracht%&quot;) als &#39;start_gen&#39;
+* &#39;%Starten genereert opdracht%&#39;) als &#39;start_gen&#39;
 * &#39;%git apply /app/vendor/magento/ece-tools/patches%&#39;) as &#39;apply_patches&#39;
 * markering %Set: .static_content_Implementeren%&#39;) als &#39;SCD&#39;
 * %NOTICE: Opdracht genereren voltooid%&#39;) als &#39;gen_compl&#39;
@@ -122,7 +122,7 @@ De **[!UICONTROL Deployment State]** frame facets bepaalde plaatsingsuitdrukking
 
 ![IP-frequentie](../../assets/tools/ip-frequency.jpg)
 
-De **[!UICONTROL IP Frequency]** frame counts de statussen (&quot;MISS&quot; en &quot;PASS&quot;) voor elk IP van het [!DNL Fastly] logboeken. De verzoeken van het Web met deze statussen zullen de oorsprongsserver bereiken en zullen lading aan de server toevoegen. De top 20 van adressen in frequentie worden getoond. Dit kader kan worden gebruikt om IP aanvallen of bronnen van zware lading op een website te ontdekken.
+De **[!UICONTROL IP Frequency]** het kader telt de (&quot;MISS&quot;en &quot;PASS&quot;) statussen voor elk IP van [!DNL Fastly] logboeken. De verzoeken van het Web met deze statussen zullen de oorsprongsserver bereiken en zullen lading aan de server toevoegen. De top 20 van adressen in frequentie worden getoond. Dit kader kan worden gebruikt om IP aanvallen of bronnen van zware lading op een website te ontdekken.
 
 ## [!UICONTROL IP Response – top 20 URLs in duration]
 
@@ -152,7 +152,7 @@ Soms is het moeilijk om te zien welk IP adres de meeste verzoeken op de andere k
 
 ![potentiële bots](../../assets/tools/potential-bots.jpg)
 
-De **[!UICONTROL Potential Bots]** frame kijkt naar aanvragen met een request_user_agent naam zoals NULL of &quot;%bot%&quot;. Doorgaans volgt de &#39;%bot%&#39; request_user_agent de beleidsinstellingen in `robots.txt` bestand.
+De **[!UICONTROL Potential Bots]** frame bekijkt verzoeken met een request_user_agent naam zoals NULL of &#39;%bot%&#39;. Doorgaans volgt de &#39;%bot%&#39; request_user_agent de beleidsinstellingen in `robots.txt` bestand.
 
 ## [!UICONTROL Transaction Errors]
 
@@ -181,7 +181,7 @@ De **[!UICONTROL Nginx access by node]** frame bekijkt de tellingen van de `acce
 * &#39;%self-leave%&#39;) als &#39;susp_node&#39;
 * &#39;%members = 3/3 (join/total)%&#39;) als &#39;3of3&#39;
 * &#39;%members = 2/3 (join/total)%&#39;) als &#39;2of3&#39;
-* &#39;%members = 2/2%&#39;) as &#39;2of2&#39; ・ &#39;%members = 1/2%&#39;) as &#39;1of2&#39; ・ &#39;%members = 1/3%&#39;) as &#39;1of3&#39;
+* &#39;%members = 2/2%&#39;) as &#39;2of2&#39; * &#39;%members = 1/2%&#39;) as &#39;1of2&#39; * &#39;%members = 1/3%&#39;) as &#39;1of3&#39;
 * &#39;%members = 1/1%&#39;) als &#39;1of1&#39;
 * &quot;%\[Opmerking\] /usr/sbin/mysqld (mysqld 10.%&#39;) als &#39;sql_start&#39;
 * &#39;%Quorum: Geen knooppunt met volledige status:%&#39;) als &#39;no_node_count&#39;
@@ -190,7 +190,7 @@ De **[!UICONTROL Nginx access by node]** frame bekijkt de tellingen van de `acce
 * &#39;%WSREP: Lid 2%&quot;) als &quot;mem2&quot;
 * &#39;%WSREP: Gesynchroniseerd met groep, gereed voor verbindingen%&#39;) als &#39;ready&#39;
 * &#39;%/usr/sbin/mysqld, Version:%&#39;) als &#39;mysql_start_mysql.slow&#39;
-* &quot;%\[Opmerking\] WSREP: Nieuwe clusterweergave: globale status:%&#39;) als &#39;galera_cluster_view_chng&#39;
+* &quot;%\[Nota\] WSREP: Nieuwe clusterweergave: globale status:%&#39;) als &#39;galera_cluster_view_chng&#39;
 
 Deze signalen kunnen op opslag, geheugen, of vraagkwesties wijzen als de staat vaak verandert.
 
@@ -228,7 +228,7 @@ Deze signalen kunnen op opslag, geheugen, of vraagkwesties wijzen als de staat v
 * &#39;%1062 \[\ERROR\] InnoDB:%&#39;) als &#39;sql_1062_e&#39;
 * &quot;%\[Nota\] WSREP: Geheugenkaart naar schijf spoelen...%&#39;) als &#39;mem_map_flush&#39;
 * &#39;%Internal MariaDB error code: 1146%&#39;) als &#39;sql_1146&#39;
-* &#39;%Internal MariaDB error code: 1062%&#39;) als &#39;sql_1062&#39; ・ &#39;%1062 \[Waarschuwing\] InnoDB:%&#39;) als &#39;sql_1062_w&#39;
+* &#39;%Internal MariaDB error code: 1062%&#39;) als &#39;sql_1062&#39; * &#39;%1062 \[Waarschuwing\] InnoDB:%&#39;) als &#39;sql_1062_w&#39;
 * &#39;%Internal MariaDB error code: 1064%&#39;) als &#39;sql_1064&#39;
 * &#39;%InnoDB: Bevestigingsfout in bestand%&#39;) als &#39;assertion_err&#39;
 * &#39;%mysqld_safe Aantal processen dat nu wordt uitgevoerd: 0%&#39;) als &#39;mysql_oom&#39;
@@ -289,7 +289,7 @@ De manier waarop PHP zich gedraagt is afhankelijk van [configuratie](https://www
 
 ![php-fouten](../../assets/tools/php-errors.jpg)
 
-De **[!UICONTROL PHP errors]** frame toont het aantal PHP fouten met workers over de geselecteerde tijdsperiode. Raadpleeg voor meer informatie [Adobe Commerce PHP-instellingen](https://devdocs.magento.com/guides/v2.4/install-gde/prereq/php-settings.html).
+De **[!UICONTROL PHP errors]** frame toont het aantal PHP fouten met workers over de geselecteerde tijdsperiode. Raadpleeg voor meer informatie [Adobe Commerce PHP-instellingen](../../installation/prerequisites/php-settings.md).
 
 **PHP-fouten en -berichten**
 
@@ -309,7 +309,7 @@ De **[!UICONTROL PHP errors]** frame toont het aantal PHP fouten met workers ove
 
 ![php-processen](../../assets/tools/php-processes.jpg)
 
-[PHP-FPM](https://php-fpm.org/), [!UICONTROL FastCGI Process Manager] gebruikt door [!DNL Nginx]. Voor meer informatie over systeemvereisten raadpleegt u [PHP-versievereisten toegewezen aan Adobe Commerce-versies](https://devdocs.magento.com/guides/v2.4/install-gde/system-requirements.html). De **[!UICONTROL PHP processes]** frame toont het aantal PHP-processen dat op een bepaald moment in de geselecteerde tijdlijn wordt uitgevoerd.
+[PHP-FPM](https://php-fpm.org/), [!UICONTROL FastCGI Process Manager] gebruikt door [!DNL Nginx]. Voor meer informatie over systeemvereisten raadpleegt u [PHP-versievereisten toegewezen aan Adobe Commerce-versies](../../installation/system-requirements.md). De **[!UICONTROL PHP processes]** frame toont het aantal PHP-processen dat op een bepaald moment in de geselecteerde tijdlijn wordt uitgevoerd.
 
 ## [!UICONTROL Secondary processes]
 
@@ -321,7 +321,7 @@ Secundaire processen kunnen de reactie van de site beïnvloeden. De **[!UICONTRO
 
 ![verkeer versus week geleden](../../assets/tools/traffic-vs-week-ago.jpg)
 
-De **[!UICONTROL Traffic vs Week Ago]** frame bekijkt het websiteverkeer (verzoeken) van [!DNL Fastly] stammen met de cachestatus &quot;MISS&quot;, &quot;PASS&quot;. Deze verzoeken voegen lading aan de oorsprongservers toe. In dit frame wordt het volume van de webaanvraag vergeleken met een week geleden tijdens hetzelfde tijdsbestek.
+De **[!UICONTROL Traffic vs Week Ago]** frame bekijkt het websiteverkeer (verzoeken) van [!DNL Fastly] logt met (&#39;MISS&#39;, &#39;PASS&#39;) geheim voorgeheugenstatussen. Deze verzoeken voegen lading aan de oorsprongservers toe. In dit frame wordt het volume van de webaanvraag vergeleken met een week geleden tijdens hetzelfde tijdsbestek.
 
 ## [!UICONTROL Fastly Cache]
 
@@ -359,7 +359,7 @@ De **[!UICONTROL Admin Activities]** frame identificeert transacties met een beh
 
 ![Standaardordertransacties](../../assets/tools/order-transactions-default.jpg)
 
-De **[!UICONTROL Order transactions (default?)]** frame zoekt naar transacties `request.headers.host` uit transacties waarbij de naam = &quot;WebTransaction/Action/checkout/onepage/success&quot;. Als de URL voor het succes van de bestelling anders is, heeft dit frame geen gegevens.
+De **[!UICONTROL Order transactions (default?)]** frame zoekt naar transacties `request.headers.host` uit transacties waarbij de naam = &quot;WebTransaction/Action/checkout/onepage/success&quot; is. Als de URL voor het succes van de bestelling anders is, heeft dit frame geen gegevens.
 
 ## [!UICONTROL Elasticsearch Index information]
 
@@ -402,7 +402,7 @@ De **[!UICONTROL Cron view]** frame zoekt in het uitsnijdlog naar evenwicht tuss
 * &#39;%Could not get lock for cron job%&#39; as &#39;cron_lock&#39;
 * &#39;%Algemene fout: 2006 MySQL server has away%&#39; as &#39;mysql_has_away_away&#39;
 * &#39;%error%&#39; als &#39;error&#39;
-* &#39;%Algemene fout: 1205 De time-out voor vergrendelen is overschreden%’ zoals sql_1205_cron
+* &#39;%Algemene fout: 1205 De time-out voor vergrendelen is overschreden%&#39; als sql_1205_cron
 
 ## [!UICONTROL cron_schedule table updates]
 

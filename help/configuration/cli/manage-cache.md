@@ -1,9 +1,9 @@
 ---
 title: De cache beheren
 description: Cachetypen beheren en de status van het meningsgeheime voorgeheugen bekijken.
-source-git-commit: 6a3995dd24f8e3e8686a8893be9693581d31712b
+source-git-commit: d263e412022a89255b7d33b267b696a8bb1bc8a2
 workflow-type: tm+mt
-source-wordcount: '877'
+source-wordcount: '870'
 ht-degree: 0%
 
 ---
@@ -71,7 +71,7 @@ Met deze opdracht kunt u alle cachetypen of alleen de door u opgegeven typen in-
 
 >[!INFO]
 >
->Beginnend in versie 2.2, kunt u geheim voorgeheugentypes slechts toelaten of onbruikbaar maken gebruikend de bevellijn terwijl het runnen van Handel op productiemodus. Als het runnen van Handel op ontwikkelaarwijze, kunt u geheim voorgeheugentypes toelaten of onbruikbaar maken gebruikend de bevellijn of manueel. Voordat u dit doet, moet u handmatig `<magento_root>/app/etc/env.php` door de [eigenaar van bestandssysteem](https://devdocs.magento.com/guides/v2.4/install-gde/prereq/file-system-perms.html).
+>Beginnend in versie 2.2, kunt u geheim voorgeheugentypes slechts toelaten of onbruikbaar maken gebruikend de bevellijn terwijl het runnen van Handel op productiemodus. Als het runnen van Handel op ontwikkelaarwijze, kunt u geheim voorgeheugentypes toelaten of onbruikbaar maken gebruikend de bevellijn of manueel. Voordat u dit doet, moet u handmatig `<magento_root>/app/etc/env.php` door de [eigenaar van bestandssysteem](../../installation/prerequisites/file-system/overview.md).
 
 U kunt schoonmaken (ook wel _flush_ of _vernieuwen_) gebruikt.
 

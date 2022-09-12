@@ -1,9 +1,9 @@
 ---
 title: Algemene opdrachten
 description: Bekijk een steekproef van gemeenschappelijke bevelen en gebruik van de Handel CLI.
-source-git-commit: 6a3995dd24f8e3e8686a8893be9693581d31712b
+source-git-commit: d263e412022a89255b7d33b267b696a8bb1bc8a2
 workflow-type: tm+mt
-source-wordcount: '270'
+source-wordcount: '248'
 ht-degree: 0%
 
 ---
@@ -44,10 +44,10 @@ Opdrachten worden alleen in samengevatte vorm weergegeven. voor meer informatie 
 | [`magento dev:tests:run`](../cli/unit-tests.md) | Voert geautomatiseerde tests uit |
 | [`magento dev:xml:convert`](../cli/convert-layout-files.md) | Werk uw lay-outXML dossiers bij om de nieuwe Verlengbare stijlpagina van de Transformaties van de Taal van Stylesheet (XSLT) aan te passen |
 | [`magento setup:perf:generate-fixtures`](../cli/generate-data.md) | Gegevens genereren om te gebruiken voor het testen van de prestaties. |
-| [`magento sampledata:install`](https://devdocs.magento.com/guides/v2.4/install-gde/install/sample-data.html) | Hiermee installeert u optionele voorbeeldgegevens nadat u de toepassing Commerce hebt geïnstalleerd.<br><br>Zie voor meer informatie over voorbeeldgegevens [Optionele voorbeeldgegevens](https://devdocs.magento.com/guides/v2.4/install-gde/install/sample-data.html). |
+| [`magento sampledata:install`](../../installation/sample-data/overview.md) | Hiermee installeert u optionele voorbeeldgegevens nadat u de toepassing Commerce hebt geïnstalleerd.<br><br>Zie voor meer informatie over voorbeeldgegevens [Optionele voorbeeldgegevens](../../installation/sample-data/overview.md). |
 | [`magento config:{set/sensitive:set/show/}`](../cli/set-configuration-values.md) | Beheert back-endconfiguraties |
-| [`magento admin:user:{create/unlock}`](https://devdocs.magento.com/guides/v2.4/install-gde/install/cli/install-cli-subcommands-admin.html) | Hiermee maakt u beheergebruikers, bewerkt of ontgrendelt u deze. |
-| [`magento dev:template-hints:{enable/disable}`](https://devdocs.magento.com/guides/v2.4/frontend-dev-guide/themes/debug-theme.html) | Hiermee schakelt u tips voor ontwikkelaarsjablonen in of uit. |
+| [`magento admin:user:{create/unlock}`](../../installation/tutorials/admin.md#create-edit-or-unloack-an-administrator-account) | Hiermee maakt u beheergebruikers, bewerkt of ontgrendelt u deze. |
+| [`magento dev:template-hints:{enable/disable}`](https://developer.adobe.com/commerce/frontend-core/guide/themes/debug/) | Hiermee schakelt u tips voor ontwikkelaarsjablonen in of uit. |
 
 ## Algemene argumenten
 

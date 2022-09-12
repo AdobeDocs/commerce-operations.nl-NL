@@ -1,9 +1,9 @@
 ---
 title: Gereedschap Command-lijn
 description: Gebruik het bevel-lijn van de Handel hulpmiddel om installatie en configuratietaken in werking te stellen.
-source-git-commit: c65c065c5f9ac2847caa8898535afdacf089006a
+source-git-commit: d263e412022a89255b7d33b267b696a8bb1bc8a2
 workflow-type: tm+mt
-source-wordcount: '325'
+source-wordcount: '299'
 ht-degree: 0%
 
 ---
@@ -28,15 +28,15 @@ De extra voordelen omvatten:
 - CLI is verlengbaar zodat kunnen de derdeontwikkelaars &quot;binnen&quot;aan het &quot;stoppen. Dit heeft het extra voordeel om de het leren kromme van gebruikers te elimineren.
 - Opdrachten voor uitgeschakelde modules worden niet weergegeven.
 
-Dit onderwerp bespreekt het vormen van de software van Adobe Commerce en van de Magento Open Source gebruikend CLI. Voor informatie over het installeren van Handel, zie [Installatiestroom](https://devdocs.magento.com/guides/v2.4/install-gde/install-flow-diagram.html) in de _Installatiehandleiding_.
+Dit onderwerp bespreekt het vormen van de software van Adobe Commerce en van de Magento Open Source gebruikend CLI. Voor informatie over het installeren van Handel, zie [Installatiestroom](../../installation/overview.md) in de _Installatiehandleiding_.
 
 ## Vereisten
 
 Voordat u begint met het gebruik van de CLI, moet u ervoor zorgen dat:
 
-1. Uw systeem voldoet aan de vereisten die worden besproken in [Systeemvereisten](https://devdocs.magento.com/guides/v2.4/install-gde/system-requirements.html) in de _Installatiehandleiding_.
-1. U hebt alle vereiste taken uitgevoerd die zijn besproken in [Vereisten](https://devdocs.magento.com/guides/v2.4/install-gde/prereq/prereq-overview.html) in de _Installatiehandleiding_.
-1. Nadat u login aan de server van de Handel, schakelaar aan een gebruiker die toestemmingen heeft om aan het het dossiersysteem van de Handel te schrijven. Zie [schakelen naar de eigenaar van het bestandssysteem](https://devdocs.magento.com/guides/v2.4/install-gde/prereq/file-sys-perms-over.html) in de _Installatiehandleiding_.
+1. Uw systeem voldoet aan de vereisten die worden besproken in [Systeemvereisten](../../installation/system-requirements.md) in de _Installatiehandleiding_.
+1. U hebt alle vereiste taken uitgevoerd die zijn besproken in [Vereisten](../../installation/prerequisites/overview.md) in de _Installatiehandleiding_.
+1. Nadat u login aan de server van de Handel, schakelaar aan een gebruiker die toestemmingen heeft om aan het het dossiersysteem van de Handel te schrijven. Zie [schakelen naar de eigenaar van het bestandssysteem](../../installation/prerequisites/file-system/overview.md) in de _Installatiehandleiding_.
 
 ## Opdrachten uitvoeren
 

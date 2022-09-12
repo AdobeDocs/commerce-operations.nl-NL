@@ -1,9 +1,9 @@
 ---
 title: Zoekstopwoorden configureren
 description: Leer hoe u stopwords voor Adobe Commerce kunt beheren met gebruik van CSV-bestanden.
-source-git-commit: 6a3995dd24f8e3e8686a8893be9693581d31712b
+source-git-commit: d263e412022a89255b7d33b267b696a8bb1bc8a2
 workflow-type: tm+mt
-source-wordcount: '672'
+source-wordcount: '658'
 ht-degree: 0%
 
 ---
@@ -34,7 +34,7 @@ De standaardlevensduur voor het stopwoordenbestand [cachegeheugen](https://gloss
 
 **Stopwoorden bewerken**:
 
-1. Meld u aan bij de Commerce-server of schakel over naar de [eigenaar van bestandssysteem](https://devdocs.magento.com/guides/v2.4/install-gde/prereq/file-sys-perms-over.html).
+1. Meld u aan bij de Commerce-server of schakel over naar de [eigenaar van bestandssysteem](../../installation/prerequisites/file-system/overview.md).
 1. Een teksteditor gebruiken om een stopwoordbestand te openen in het dialoogvenster `<magento_root>/vendor/magento/module-elasticsearch/etc/stopwords` directory.
 
    CSV-bestanden gebruiken de naamgevingsconventie `stopwords_<locale_code>.csv`. Het Duitse stopword-bestand krijgt bijvoorbeeld de naam `stopwords_de_DE.csv`.
@@ -60,7 +60,7 @@ De standaardlevensduur voor het stopwoordenbestand [cachegeheugen](https://gloss
 
 **Stop-woorden toevoegen voor een landinstelling**:
 
-1. Meld u aan bij de Commerce-server of schakel over naar de [eigenaar van bestandssysteem](https://devdocs.magento.com/guides/v2.4/install-gde/prereq/file-sys-perms-over.html).
+1. Meld u aan bij de Commerce-server of schakel over naar de [eigenaar van bestandssysteem](../../installation/prerequisites/file-system/overview.md).
 
 1. Een teksteditor gebruiken om een stopword-bestand met de naam `stopwords_<locale_code>.csv` in de `<magento_root>/vendor/magento/module-elasticsearch/etc/stopwords` directory.
 
@@ -125,7 +125,7 @@ De locatie is afhankelijk van de manier waarop u de software Commerce hebt geïn
 
 ## Om de folder van uw module te veranderen
 
-1. [Een module maken](https://devdocs.magento.com/guides/v2.4/extension-dev-guide/build/module-file-structure.html)
+1. [Een module maken](https://developer.adobe.com/commerce/php/development/build/component-file-structure/)
 1. In uw module `etc/di.xml` instructies toevoegen:
 
    ```xml

@@ -1,9 +1,9 @@
 ---
 title: Oplossing voor gesplitste databaseprestaties
 description: Lees over de gesplitste databaseoplossing voor Adobe Commerce en Magento Open Source.
-source-git-commit: 52f92ef79586d618fd4ac51c00eaa1446a2dc98f
+source-git-commit: d263e412022a89255b7d33b267b696a8bb1bc8a2
 workflow-type: tm+mt
-source-wordcount: '640'
+source-wordcount: '632'
 ht-degree: 0%
 
 ---
@@ -70,7 +70,7 @@ Dit betekent ook dat u:
 
    >[!WARNING]
    >
-   >U moet de twee extra gegevensbestandinstanties manueel file. De handel steunt slechts de belangrijkste gegevensbestandinstantie. De [`magento setup:backup --db`](https://devdocs.magento.com/guides/v2.4/install-gde/install/cli/install-cli-backup.html) geen back-up maken van de extra tabellen.
+   >U moet de twee extra gegevensbestandinstanties manueel file. De handel steunt slechts de belangrijkste gegevensbestandinstantie. De [`magento setup:backup --db`](../../installation/tutorials/backup.md) geen back-up maken van de extra tabellen.
 
 ## Vereisten
 

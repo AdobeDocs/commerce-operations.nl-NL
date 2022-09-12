@@ -1,9 +1,9 @@
 ---
 title: Master databases automatisch configureren
 description: Zie begeleiding bij het automatisch vormen van de gespleten gegevensbestandoplossing.
-source-git-commit: 52f92ef79586d618fd4ac51c00eaa1446a2dc98f
+source-git-commit: d263e412022a89255b7d33b267b696a8bb1bc8a2
 workflow-type: tm+mt
-source-wordcount: '364'
+source-wordcount: '358'
 ht-degree: 1%
 
 ---
@@ -27,7 +27,7 @@ Dit onderwerp bespreekt hoe te beginnen met de gespleten gegevensbestandoplossin
 
 ## De Adobe Commerce-software installeren
 
-U kunt gesplitste databases op elk gewenst moment inschakelen nadat u de Adobe Commerce-software hebt geïnstalleerd. Met andere woorden, u kunt gesplitste databases toevoegen aan een Adobe Commerce-systeem dat al gegevens voor kassa&#39;s en bestellingen heeft. Gebruik de instructies in Adobe Commerce README of in de [installatiegids](https://devdocs.magento.com/guides/v2.4/install-gde/bk-install-guide.html) om de Adobe Commerce-software te installeren met behulp van één master database.
+U kunt gesplitste databases op elk gewenst moment inschakelen nadat u de Adobe Commerce-software hebt geïnstalleerd. Met andere woorden, u kunt gesplitste databases toevoegen aan een Adobe Commerce-systeem dat al gegevens voor kassa&#39;s en bestellingen heeft. Gebruik de instructies in Adobe Commerce README of in de [installatiegids](../../installation/overview.md) om de Adobe Commerce-software te installeren met behulp van één master database.
 
 ## Aanvullende master databases instellen
 

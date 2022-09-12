@@ -1,9 +1,9 @@
 ---
 title: Een plan voor gegevensmigratie maken
 description: Voer de volgende stappen uit om een plan voor gegevensmigratie te maken om een geslaagde upgrade van Magento 1 naar Magento 2 te garanderen.
-source-git-commit: b5a2c362b09de993e1dc196bdda90e74cf4a8ba2
+source-git-commit: d263e412022a89255b7d33b267b696a8bb1bc8a2
 workflow-type: tm+mt
-source-wordcount: '915'
+source-wordcount: '902'
 ht-degree: 0%
 
 ---
@@ -116,6 +116,6 @@ Nu uw Magento 2-site up-to-date is met Magento 1 en naar behoren functioneert, k
 1. De Magento 2-winkel is nu gebruiksklaar. U en uw klanten kunnen alle activiteiten hervatten.
 
 <!-- LINK ADDRESSES -->
-[Magento-systeemvereisten]: https://devdocs.magento.com/guides/v2.4/install-gde/system-requirements.html
+[Magento-systeemvereisten]: ../../installation/system-requirements.md
 [Commerce Marketplace]: https://marketplace.magento.com
-[Configuratiegids]: https://experienceleague.adobe.com/docs/commerce-operations/configuration-guide/cli/manage-indexers.html
+[Configuratiegids]: ../../configuration/cli/manage-indexers.md

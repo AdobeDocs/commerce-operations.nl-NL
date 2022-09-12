@@ -1,9 +1,9 @@
 ---
-title: '"[!DNL Data Migration Tool] voorwaarden"'
-description: '"Leer wat je moet doen voordat je begint met het gebruik van de [!DNL Data Migration Tool] om gegevens tussen Magento 1 en Magento 2 over te brengen."'
-source-git-commit: 87298a6dfd783fed264f275495a3ad72374eb9f6
+title: "[!DNL Data Migration Tool] voorwaarden"
+description: "Leer wat je moet doen voordat je begint met het gebruik van de [!DNL Data Migration Tool] om gegevens tussen Magento 1 en Magento 2 over te brengen."
+source-git-commit: d263e412022a89255b7d33b267b696a8bb1bc8a2
 workflow-type: tm+mt
-source-wordcount: '261'
+source-wordcount: '249'
 ht-degree: 0%
 
 ---
@@ -15,11 +15,11 @@ Voordat u de migratie start, moet u controleren of aan de volgende vereisten is 
 
 ## Magento 2-systeem
 
-* Stel uw Magento 2-systeem zo in dat het voldoet aan de [systeemvereisten](https://devdocs.magento.com/guides/v2.4/install-gde/system-requirements.html).
+* Stel uw Magento 2-systeem zo in dat het voldoet aan de [systeemvereisten](../../installation/system-requirements.md).
 
    Gebruik een topologie en een ontwerp dat minstens uw bestaand Magento 1 systeem aanpast.
 
-* [Magento 2 installeren](https://devdocs.magento.com/guides/v2.4/install-gde/bk-install-guide.html).
+* [Magento 2 installeren](../../installation/overview.md).
 
 ## Cron
 

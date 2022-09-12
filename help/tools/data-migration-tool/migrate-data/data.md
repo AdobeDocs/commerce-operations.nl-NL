@@ -1,9 +1,9 @@
 ---
 title: Gegevens migreren
 description: Leer hoe u begint met het migreren van gegevens van Magento 1 naar Magento 2 met de [!DNL Data Migration Tool].
-source-git-commit: b5a2c362b09de993e1dc196bdda90e74cf4a8ba2
+source-git-commit: d263e412022a89255b7d33b267b696a8bb1bc8a2
 workflow-type: tm+mt
-source-wordcount: '335'
+source-wordcount: '328'
 ht-degree: 0%
 
 ---
@@ -13,7 +13,7 @@ ht-degree: 0%
 
 Voer de volgende stappen uit om voor te bereiden voordat u begint:
 
-1. Meld u aan bij uw toepassingsserver als [de eigenaar van het bestandssysteem](https://devdocs.magento.com/guides/v2.4/install-gde/prereq/file-sys-perms-over.html).
+1. Meld u aan bij uw toepassingsserver als [de eigenaar van het bestandssysteem](../../../installation/prerequisites/file-system/overview.md).
 1. Wijzigen in de installatiemap van de toepassing of controleren of deze aan uw systeem is toegevoegd `PATH`.
 
 Zie de [eerste stappen](overview.md#first-steps) voor meer informatie.

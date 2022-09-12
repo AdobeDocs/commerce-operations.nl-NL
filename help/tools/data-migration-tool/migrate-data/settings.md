@@ -1,9 +1,9 @@
 ---
 title: Instellingen voor gegevensmigratie
 description: Leer hoe u begint met het migreren van instellingen van Magento 1 naar Magento 2 met de opdracht [!DNL Data Migration Tool].
-source-git-commit: b5a2c362b09de993e1dc196bdda90e74cf4a8ba2
+source-git-commit: d263e412022a89255b7d33b267b696a8bb1bc8a2
 workflow-type: tm+mt
-source-wordcount: '319'
+source-wordcount: '298'
 ht-degree: 0%
 
 ---
@@ -15,9 +15,9 @@ De `Settings` de wijze migreert winkels, websites, en systeemconfiguratie zoals 
 
 Voer de volgende stappen uit om voor te bereiden voordat u begint:
 
-1. Meld u aan bij de server met uw Magento 2-instantie als [de eigenaar van het bestandssysteem](https://devdocs.magento.com/guides/v2.4/install-gde/prereq/file-sys-perms-over.html).
+1. Meld u aan bij de toepassingsserver als de [eigenaar van bestandssysteem](../../../installation/prerequisites/file-system/overview.md).
 
-1. Wijziging in de Magento 2 `/bin` of zorg ervoor het aan uw systeemPATH wordt toegevoegd.
+1. Wijzigen in de `/bin` of zorg ervoor dat het aan uw systeem wordt toegevoegd `PATH`.
 
 >[!NOTE]
 >
@@ -53,15 +53,15 @@ De `Migration completed` bericht wordt weergegeven nadat de instellingen zijn ov
 
 U kunt de systeemconfiguraties negeren, hernoemen of wijzigen tijdens het migreren van instellingen. Hiervoor geeft u uw aangepaste regels op in het dialoogvenster `settings.xml` bestand.
 
-1. Meld u aan bij de server met uw Magento 2-instantie als of schakel over naar de [eigenaar van bestandssysteem](https://devdocs.magento.com/guides/v2.4/install-gde/prereq/file-sys-perms-over.html).
+1. Meld u aan bij de toepassingsserver als of schakel over naar de [eigenaar van bestandssysteem](../../../installation/prerequisites/file-system/overview.md).
 
 1. Ga naar de volgende map:
 
    ```bash
-   cd <your Magento 2 install dir>/vendor/magento/data-migration-tool/etc/<edition-to-edition>
+   cd <your application 2 install dir>/vendor/magento/data-migration-tool/etc/<edition-to-edition>
    ```
 
-   Als bijvoorbeeld Magento 2 is geïnstalleerd in `/var/www/html`de `settings.xml.dist` Het bestand bevindt zich in een van de volgende mappen:
+   Als de toepassing bijvoorbeeld is geïnstalleerd in `/var/www/html`de `settings.xml.dist` Het bestand bevindt zich in een van de volgende mappen:
 
    * `/var/www/html/vendor/magento/data-migration-tool/etc/opensource-to-commerce`
 

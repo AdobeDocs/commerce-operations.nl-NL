@@ -1,9 +1,9 @@
 ---
 title: Bereik voor upgrade
 description: Leer over achterwaartse onverenigbare veranderingen in een versie die Adobe Commerce of Magento Open Source douanemodules of derdeuitbreidingen zou kunnen beïnvloeden.
-source-git-commit: 3d9a721e33621b78f03f16b932a1ba2904ae4010
+source-git-commit: d263e412022a89255b7d33b267b696a8bb1bc8a2
 workflow-type: tm+mt
-source-wordcount: '931'
+source-wordcount: '930'
 ht-degree: 0%
 
 ---
@@ -26,7 +26,7 @@ Het nieuwe compatibiliteitsbeleid van Adobe Commerce Marketplace zorgt ervoor da
 
 ## Aangepaste modules
 
-Alle douanemodules zouden tegen de doelversie moeten worden gecontroleerd u aan bevordert. Dit is het meest tijd- en middel-intensieve proces van een verbetering. Wanneer het evalueren van uw douanemodules, moet u achteruit-incompatibele veranderingen zoeken en zich van nieuwe praktijken, zoals controlemechanismedecompositie bewust zijn. Meer informatie hierover vindt u in het gedeelte [releaseopmerkingen](https://devdocs.magento.com/guides/v2.4/release-notes/bk-release-notes.html). Ook, zorg ervoor dat u volgt [best practices](https://devdocs.magento.com/guides/v2.4/ext-best-practices/extension-coding/common-programming-bp.html) voor moduleontwikkeling.
+Alle douanemodules zouden tegen de doelversie moeten worden gecontroleerd u aan bevordert. Dit is het meest tijd- en middel-intensieve proces van een verbetering. Wanneer het evalueren van uw douanemodules, moet u achteruit-incompatibele veranderingen zoeken en zich van nieuwe praktijken, zoals controlemechanismedecompositie bewust zijn. Meer informatie hierover vindt u in het gedeelte [releaseopmerkingen](https://devdocs.magento.com/guides/v2.4/release-notes/bk-release-notes.html). Ook, zorg ervoor dat u volgt [best practices](https://developer.adobe.com/commerce/php/best-practices/extensions/) voor moduleontwikkeling.
 
 ## [!DNL Upgrade Compatibility Tool]
 
@@ -107,7 +107,7 @@ Alle kwesties die het geïdentificeerde hulpmiddel zijn vermeld zijn in het rapp
 
 Gebruik het rapport om te schatten hoeveel moeite het zal vergen om uw code voor de verbetering bij te werken. Op basis van uw ervaring kunt u een schatting maken van de vereiste inspanning om een upgrade uit te voeren op basis van het totale aantal geïdentificeerde problemen en de ernst van de problemen. Aangezien dit een opdrachtregelprogramma is, kunt u dit opnemen in automatische test- en codeselecties en de JSON-uitvoer gebruiken om uw rapporten te genereren.
 
-Wij adviseren besparend de resultaten van elk verbeteringsproject zodat u toekomstige verbeteringsresultaten met vorige resultaten kunt vergelijken. Als u doorgaat met het gebruik, krijgt u vanaf het samenvattingsrapport dat door het hulpprogramma wordt geleverd, een duidelijk inzicht in de mate van moeite die het kost om te upgraden naar de volgende versie.
+Wij adviseren besparend de resultaten van elk verbeteringsproject zodat u toekomstige verbeteringsresultaten met vorige resultaten kunt vergelijken. Als u doorgaat met het gebruik, krijgt u vanaf het samenvattingsrapport dat door het hulpprogramma wordt geleverd, een goed inzicht in het inspanningsniveau dat nodig is om te upgraden naar de volgende versie.
 
 Wij adviseren ook dat u regelmatig het hulpmiddel in werking stelt terwijl het werken aan de verbetering om zicht in uw vooruitgang te hebben. Het aantal problemen moet afnemen wanneer u deze verhelpt. Dit helpt uw team ook beslissen over de beste benadering om werk te verdelen.
 

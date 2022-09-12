@@ -1,9 +1,9 @@
 ---
 title: Volledige voorwaarden
 description: Bereid uw Adobe Commerce- of Magento Open Source-project voor op een upgrade door deze vereiste stappen uit te voeren.
-source-git-commit: 0729e84adabcded6d50cf28a7525b97fd50d45f5
+source-git-commit: d263e412022a89255b7d33b267b696a8bb1bc8a2
 workflow-type: tm+mt
-source-wordcount: '0'
+source-wordcount: '1338'
 ht-degree: 0%
 
 ---
@@ -11,7 +11,7 @@ ht-degree: 0%
 
 # Volledige upgradevoorwaarden
 
-Het is belangrijk om te begrijpen wat nodig is om Adobe Commerce of Magento Open Source te leiden. U moet eerst de [systeemvereisten](https://devdocs.magento.com/guides/v2.4/install-gde/system-requirements.html) voor de versie waarnaar u wilt upgraden.
+Het is belangrijk om te begrijpen wat nodig is om Adobe Commerce of Magento Open Source te leiden. U moet eerst de [systeemvereisten](../../installation/system-requirements.md) voor de versie waarnaar u wilt upgraden.
 
 Nadat u de systeemvereisten hebt gecontroleerd, moet u aan de volgende voorwaarden voldoen voordat u de upgrade van uw systeem uitvoert:
 
@@ -26,9 +26,9 @@ Nadat u de systeemvereisten hebt gecontroleerd, moet u aan de volgende voorwaard
 
 ## Alle software bijwerken
 
-De [systeemvereisten](https://devdocs.magento.com/guides/v2.4/install-gde/system-requirements.html) exact beschrijven welke versies van software van derden zijn getest met Adobe Commerce en Magento Open Source.
+De [systeemvereisten](../../installation/system-requirements.md) exact beschrijven welke versies van software van derden zijn getest met Adobe Commerce en Magento Open Source.
 
-Zorg ervoor dat u alle systeemvereisten en afhankelijkheden in uw omgeving hebt bijgewerkt. Zie PHP [7,4](https://www.php.net/manual/en/migration74.php), PHP [8,0](https://www.php.net/manual/en/migration80.php), PHP [8,1](https://www.php.net/manual/en/migration81.php), en [vereiste PHP-instellingen](https://devdocs.magento.com/guides/v2.4/install-gde/prereq/php-settings.html#php-required-set).
+Zorg ervoor dat u alle systeemvereisten en afhankelijkheden in uw omgeving hebt bijgewerkt. Zie PHP [7,4](https://www.php.net/manual/en/migration74.php), PHP [8,0](https://www.php.net/manual/en/migration80.php), PHP [8,1](https://www.php.net/manual/en/migration81.php), en [vereiste PHP-instellingen](../../installation/prerequisites/php-settings.md#php-settings).
 
 ## Controleren of een ondersteund zoekprogramma is geïnstalleerd
 
@@ -50,10 +50,10 @@ In de volgende secties wordt beschreven welke handelingen u moet uitvoeren voord
 
 Vanaf 2.4, is MySQL niet meer een gesteunde motor van de catalogusonderzoek. U moet Elasticsearch of OpenSearch installeren en configureren voordat u een upgrade uitvoert. Gebruik de volgende bronnen om u door dit proces te begeleiden:
 
-- [Elasticsearch installeren en configureren](https://devdocs.magento.com/guides/v2.4/config-guide/elasticsearch/es-overview.html)
+- [Elasticsearch installeren en configureren](../../configuration/search/overview-search.md)
 - [Elasticsearch installeren](https://www.elastic.co/guide/en/elasticsearch/reference/current/install-elasticsearch.html)
-- Configureren [nginx](https://devdocs.magento.com/guides/v2.4/install-gde/prereq/es-config-nginx.html) of [Apache](https://devdocs.magento.com/guides/v2.4/install-gde/prereq/es-config-apache.html) om met uw zoekmachine te werken
-- [Handel configureren om Elasticsearch te gebruiken](https://devdocs.magento.com/guides/v2.4/config-guide/elasticsearch/configure-magento.html) en opnieuw indexeren
+- Configureren [nginx](../../installation/prerequisites/search-engine/configure-nginx.md) of [Apache](../../installation/prerequisites/search-engine/configure-apache.md) om met uw zoekmachine te werken
+- [Handel configureren om Elasticsearch te gebruiken](../../configuration/search/configure-search-engine.md) en opnieuw indexeren
 
 Bepaalde zoekprogramma&#39;s voor catalogi van derden worden boven op de zoekfunctie van Adobe Commerce uitgevoerd. Neem contact op met de leverancier om te bepalen of u de extensie moet bijwerken.
 
@@ -63,9 +63,9 @@ U moet Elasticsearch 7.6 of hoger of OpenSearch 1.2 installeren en configureren 
 
 Zie [Elasticsearch bijwerken](https://www.elastic.co/guide/en/elasticsearch/reference/current/setup-upgrade.html) voor volledige instructies voor het maken van back-ups van uw gegevens, het opsporen van potentiële migratiekwesties en het testen van upgrades voordat u deze implementeert naar de productie. Afhankelijk van uw huidige versie van Elasticsearch, is het mogelijk dat een volledige clusterherstart al dan niet vereist is.
 
-Elasticsearch vereist JDK 1.8 of hoger. Zie [De JDK (Java Software Development Kit) installeren](https://devdocs.magento.com/guides/v2.4/install-gde/prereq/elasticsearch.html#prereq-java) om te controleren welke versie van JDK is geïnstalleerd.
+Elasticsearch vereist JDK 1.8 of hoger. Zie [De JDK (Java Software Development Kit) installeren](../../installation/prerequisites/search-engine/overview.md#install-the-java-software-development-kit-jdk) om te controleren welke versie van JDK is geïnstalleerd.
 
-[Magento configureren voor gebruik van Elasticsearch](https://devdocs.magento.com/guides/v2.4/config-guide/elasticsearch/configure-magento.html) beschrijft de taken u na het bijwerken van Elasticsearch 2 aan een gesteunde versie moet uitvoeren.
+[Elasticsearch configureren](../../configuration/search/configure-search-engine.md) beschrijft de taken u na het bijwerken van Elasticsearch 2 aan een gesteunde versie moet uitvoeren.
 
 ### OpenSearch
 
@@ -77,9 +77,9 @@ OpenSearch is een open-source vork van Elasticsearch 7.10.2, na het wijzigen van
 
 U kunt [migreren van Elasticsearch naar OpenSearch](opensearch-migration.md) alleen als u een upgrade uitvoert naar een hierboven vermelde versie van Adobe Commerce of Magento Open Source (of hoger).
 
-Voor OpenSearch is JDK 1.8 of hoger vereist. Zie [De JDK (Java Software Development Kit) installeren](https://devdocs.magento.com/guides/v2.4/install-gde/prereq/elasticsearch.html#prereq-java) om te controleren welke versie van JDK is geïnstalleerd.
+Voor OpenSearch is JDK 1.8 of hoger vereist. Zie [De JDK (Java Software Development Kit) installeren](../../installation/prerequisites/search-engine/overview.md#install-the-java-software-development-kit-jdk) om te controleren welke versie van JDK is geïnstalleerd.
 
-[Magento configureren voor gebruik van Elasticsearch](https://devdocs.magento.com/guides/v2.4/config-guide/elasticsearch/configure-magento.html) beschrijft de taken u na veranderende onderzoeksmotoren moet uitvoeren.
+[Magento configureren voor gebruik van Elasticsearch](../../configuration/search/configure-search-engine.md) beschrijft de taken u na veranderende onderzoeksmotoren moet uitvoeren.
 
 ### Extensies van derden
 
@@ -93,8 +93,8 @@ Adobe raadt u aan de geopende bestanden in te stellen [ulimit](https://ss64.com/
 
 U stelt de limiet in vanaf de opdrachtregel:
 
-1. Naar de [eigenaar van bestandssysteem](https://devdocs.magento.com/guides/v2.4/install-gde/prereq/file-sys-perms-over.html).
-1. Stel de limiet in op 65536.
+1. Naar de [eigenaar van bestandssysteem](../../installation/prerequisites/file-system/overview.md).
+1. Stel de limiet in op `65536`.
 
    ```bash
    ulimit -s 65536
@@ -106,7 +106,7 @@ U stelt de limiet in vanaf de opdrachtregel:
 
 De waarde in de Bash-shell instellen:
 
-1. Naar de [eigenaar van bestandssysteem](https://devdocs.magento.com/guides/v2.4/install-gde/prereq/file-sys-perms-over.html).
+1. Naar de [eigenaar van bestandssysteem](../../installation/prerequisites/file-system/overview.md).
 1. Openen `/home/<username>/.bashrc` in een teksteditor.
 1. Voeg de volgende regel toe:
 
@@ -150,7 +150,7 @@ Klik op **Systeemberichten** boven aan het venster als volgt:
 
 ![](../../assets/upgrade-guide/system-messages.png)
 
-Zie [Uitsnede configureren en uitvoeren](https://devdocs.magento.com/guides/v2.4/config-guide/cli/config-cli-subcommands-cron.html) voor meer informatie.
+Zie [Uitsnede configureren en uitvoeren](../../configuration/cli/configure-cron-jobs.md) voor meer informatie.
 
 ## DATA_CONVERTER_BATCH_SIZE instellen
 
@@ -172,7 +172,7 @@ Als u een grote hoeveelheid gegevens hebt, kunt u de prestaties verbeteren door 
 
 De omgevingsvariabele instellen:
 
-1. Naar de [eigenaar van bestandssysteem](https://devdocs.magento.com/guides/v2.4/install-gde/prereq/file-sys-perms-over.html).
+1. Naar de [eigenaar van bestandssysteem](../../installation/prerequisites/file-system/overview.md).
 1. Stel de variabele in:
 
    ```bash
@@ -191,9 +191,9 @@ De omgevingsvariabele instellen:
 
 ## Controleren op bestandssysteemmachtigingen
 
-Om veiligheidsredenen hebben Adobe Commerce en Magento Open Source bepaalde machtigingen voor het bestandssysteem nodig. Machtigingen verschillen van _[eigendom](https://devdocs.magento.com/guides/v2.4/comp-mgr/prereq/prereq_compman-checklist.html#magento-owner-group)_. De eigendom bepaalt wie acties op het dossiersysteem kan uitvoeren; machtigingen bepalen wat de gebruiker kan doen.
+Om veiligheidsredenen hebben Adobe Commerce en Magento Open Source bepaalde machtigingen voor het bestandssysteem nodig. Machtigingen verschillen van _[eigendom](../../upgrade/prepare/prerequisites.md#verify-file-system-permissions)_. De eigendom bepaalt wie acties op het dossiersysteem kan uitvoeren; machtigingen bepalen wat de gebruiker kan doen.
 
-Mappen in het bestandssysteem moeten door de [eigenaar van bestandssysteem](https://devdocs.magento.com/guides/v2.4/install-gde/prereq/file-sys-perms-over.html) groep.
+Mappen in het bestandssysteem moeten door de [eigenaar van bestandssysteem](../../installation/prerequisites/file-system/overview.md) groep.
 
 Om te controleren of de machtigingen voor het bestandssysteem correct zijn ingesteld, meldt u zich aan bij de toepassingsserver of gebruikt u de toepassing van het bestandsbeheer van de hostingprovider.
 
@@ -252,13 +252,13 @@ Als u meer gedetailleerde informatie wilt, voert u de volgende opdracht in:
 ls -la /var/www/html/magento2/pub
 ```
 
-Omdat Adobe Commerce en Magento Open Source de statische dossieractiva aan subdirectories van `pub`Het is raadzaam ook hier de machtigingen en de eigendom te controleren.
+Omdat Adobe Commerce en Magento Open Source de statische dossieractiva aan subdirectories van `pub`, is het een goed idee om ook daar toestemmingen en eigendom te verifiëren.
 
-Zie voor meer informatie [Machtigingen en eigendom van bestandssystemen](https://devdocs.magento.com/guides/v2.4/install-gde/prereq/file-sys-perms-over.html).
+Zie voor meer informatie [Machtigingen en eigendom van bestandssystemen](../../installation/prerequisites/file-system/overview.md).
 
 ## Stel de `pub/` mapbasis
 
-Zie [Documenthoofdmap wijzigen om de beveiliging te verbeteren](https://devdocs.magento.com/guides/v2.4/install-gde/tutorials/change-docroot-to-pub.html) voor meer informatie .
+Zie [Documenthoofdmap wijzigen om de beveiliging te verbeteren](../../installation/tutorials/docroot.md) voor meer informatie .
 
 ## De plug-in Composer-update installeren
 

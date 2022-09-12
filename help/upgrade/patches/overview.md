@@ -1,9 +1,9 @@
 ---
 title: Hoe reparaties werken
 description: Leer meer over de verschillende typen patches voor Adobe Commerce en Magento Open Source en hoe ze werken.
-source-git-commit: 45a44d98f149b4b9a1fbb4ac0bcea3eb372f49a8
+source-git-commit: d263e412022a89255b7d33b267b696a8bb1bc8a2
 workflow-type: tm+mt
-source-wordcount: '614'
+source-wordcount: '606'
 ht-degree: 0%
 
 ---
@@ -13,7 +13,7 @@ ht-degree: 0%
 
 >[!WARNING]
 >
->We raden u ten zeerste aan alle patches in een testomgeving of ontwikkelomgeving te testen voordat u de patches gaat implementeren in productie. We raden u ook aan een back-up van uw gegevens te maken voordat u een patch toepast. Zie [Een back-up van het bestandssysteem maken en terugdraaien](https://devdocs.magento.com/guides/v2.4/install-gde/install/cli/install-cli-backup.html).
+>We raden u ten zeerste aan alle patches in een testomgeving of ontwikkelomgeving te testen voordat u de patches gaat implementeren in productie. We raden u ook aan een back-up van uw gegevens te maken voordat u een patch toepast. Zie [Een back-up van het bestandssysteem maken en terugdraaien](../../installation/tutorials/backup.md).
 
 Patch-bestanden (of diff-bestanden) zijn tekstbestanden met de volgende notatie:
 

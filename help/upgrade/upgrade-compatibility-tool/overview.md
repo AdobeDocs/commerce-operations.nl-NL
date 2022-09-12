@@ -1,9 +1,9 @@
 ---
-title: '"Overzicht van de [!DNL Upgrade Compatibility Tool]"'
+title: "Overzicht van de [!DNL Upgrade Compatibility Tool]"
 description: Meer informatie over de [!DNL Upgrade Compatibility Tool] en hoe u hiermee kunt helpen bij uw Adobe Commerce-project.
-source-git-commit: ded2204fe0b3327f72bbce2ec03f8d66aa1b9353
+source-git-commit: d263e412022a89255b7d33b267b696a8bb1bc8a2
 workflow-type: tm+mt
-source-wordcount: '0'
+source-wordcount: '344'
 ht-degree: 0%
 
 ---
@@ -45,15 +45,15 @@ Gebruik de volgende bronnen als u informatie nodig hebt of vragen hebt die niet 
 
 Als u verbinding wilt maken met de [!DNL Upgrade Compatibility Tool] team, contacteer ons op het kanaal van de Slack van de Techniek [#upgrade-compatibility-tool](https://magentocommeng.slack.com/archives/C019Y143U9F). We willen graag uw feedback, problemen en suggesties horen die ons helpen het gereedschap te verbeteren.
 
-De [!DNL Upgrade Compatibility Tool] gebruikt regels die binnen onze [Codeerstandaarden](https://devdocs.magento.com/guides/v2.4/coding-standards/bk-coding-standards.html) om ervoor te zorgen dat uw project de beste praktijken van Adobe Commerce volgt en u te helpen verbeteren en uitbreiden [!DNL Upgrade Compatibility Tool].
+De [!DNL Upgrade Compatibility Tool] gebruikt regels die binnen onze [Codeerstandaarden](https://developer.adobe.com/commerce/php/coding-standards/) om ervoor te zorgen dat uw project de beste praktijken van Adobe Commerce volgt en u te helpen verbeteren en uitbreiden [!DNL Upgrade Compatibility Tool].
 
-Zie de [Contribute](https://devdocs.magento.com/guides/v2.4/coding-standards/contributing.html) onderwerp voor meer informatie over het bijdragen van coderingsnormen.
+Zie de [Contribute](https://developer.adobe.com/commerce/php/coding-standards/contributing/) onderwerp voor meer informatie over het bijdragen van coderingsnormen.
 
 ## Bronnen
 
 Raadpleeg de volgende bronnen voor meer informatie over upgrades voor Adobe Commerce:
 
-- De [upgradehulplijn](https://experienceleague.adobe.com/docs/commerce-operations/upgrade-guide/overview.html) biedt een overzicht van de gebruikelijke Adobe Commerce- of Magento Open Source-upgradereis en van de beste praktijken om deze reis te volgen.
+- De [upgradehulplijn](../overview.md) biedt een overzicht van de gebruikelijke Adobe Commerce- of Magento Open Source-upgradereis en van de beste praktijken om deze reis te volgen.
 - De [komende releases](https://devdocs.magento.com/release/) bevat de datums voor geplande en komende releases.
 - De [communautaire middelen](https://developer.adobe.com/commerce/contributor/community/) Deze pagina is bedoeld om discussies te starten of om meer informatie te zoeken.
 - Controleer de [verwante gereedschappen](../upgrade-compatibility-tool/related-tools.md) pagina voor nuttige hulpmiddelen in uw typisch verbeteringsreis.

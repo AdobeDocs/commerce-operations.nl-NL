@@ -1,9 +1,9 @@
 ---
 title: Installeer de [!DNL Data Migration Tool]
 description: Leer hoe u de [!DNL Data Migration Tool] gegevens tussen Magento 1 en Magento 2 over te dragen.
-source-git-commit: d609c497fdf00c5e5f975a5679b1d072cec4f8a2
+source-git-commit: d263e412022a89255b7d33b267b696a8bb1bc8a2
 workflow-type: tm+mt
-source-wordcount: '403'
+source-wordcount: '378'
 ht-degree: 0%
 
 ---
@@ -45,10 +45,10 @@ cd <your Magento 2 clone directory>
 git branch
 ```
 
-Als u momenteel in `develop` vertakt, moet u in <a href="https://devdocs.magento.com/guides/v2.4/install-gde/install/cli/dev_downgrade.html">vrijgegeven vertakking</a> voordat u verdergaat.
+Als u momenteel in `develop` vertakt, moet u in [vrijgegeven vertakking](https://developer.adobe.com/commerce/contributor/guides/install/change-version/) voordat u verdergaat.
 
-Als u de Magento-software nog niet hebt geïnstalleerd, [nu installeren](https://devdocs.magento.com/guides/v2.4/install-gde/bk-install-guide.html).
-Als u de bewaarplaats GitHub kloont, zorg ervoor u een versiemarkering zoals besproken in controleert [(Medewerker) Clone the Magento repository](https://devdocs.magento.com/guides/v2.4/install-gde/prereq/dev_install.html).
+Als u de Adobe Commerce- of Magento Open Source-software nog niet hebt geïnstalleerd, [nu installeren](../../installation/prerequisites/commerce.md).
+Als u de bewaarplaats GitHub kloont, zorg ervoor u een versiemarkering zoals besproken in controleert [(Medewerker) Kloon de GitHub-opslagplaats](https://developer.adobe.com/commerce/contributor/guides/install/clone-repository/).
 
 ## Gepubliceerde versies van [!DNL Data Migration Tool]
 
@@ -70,8 +70,8 @@ Controleer voordat u gaat installeren of:
 
 Als u het dialoogvenster [!DNL Data Migration Tool], moet u bijwerken `composer.json` in de hoofdinstallatiemap van de Magento om de locatie van de [!DNL Data Migration Tool] pakket.
 
-1. Meld u aan bij de Magento-server als of schakel over naar de [eigenaar van bestandssysteem](https://devdocs.magento.com/guides/v2.4/install-gde/prereq/file-sys-perms-over.html).
-1. Wijzigen in hoofdmap van Magento 2.
+1. Meld u aan bij de toepassingsserver als of schakel over naar de [eigenaar van bestandssysteem](../../installation/prerequisites/file-system/overview.md).
+1. Wijzig de hoofdmap van de toepassing.
 1. Voer de volgende opdrachten in:
 
    ```bash
@@ -94,14 +94,14 @@ Als u het dialoogvenster [!DNL Data Migration Tool], moet u bijwerken `composer.
    composer require magento/data-migration-tool:2.2.0
    ```
 
-1. Voer desgevraagd uw [verificatietoetsen](https://devdocs.magento.com/guides/v2.4/install-gde/prereq/connect-auth.html). Uw openbare sleutel is uw gebruikersnaam; uw persoonlijke sleutel is uw wachtwoord.
+1. Voer desgevraagd uw [verificatietoetsen](../../installation/prerequisites/authentication-keys.md). Uw openbare sleutel is uw gebruikersnaam; uw persoonlijke sleutel is uw wachtwoord.
 
 ### Installeren vanuit GitHub
 
-Als u Magento 2 van de bewaarplaats van GitHub hebt gekloond, volg hieronder de stappen om te installeren [!DNL Data Migration Tool].
+Als u de bewaarplaats GitHub hebt gekloond, volg de stappen hieronder om te installeren [!DNL Data Migration Tool].
 
-1. Meld u aan bij de Magento-server als of schakel over naar de [eigenaar van bestandssysteem](https://devdocs.magento.com/guides/v2.4/install-gde/prereq/file-sys-perms-over.html).
-1. Wijzigen in hoofdmap van Magento 2.
+1. Meld u aan bij de toepassingsserver als of schakel over naar de [eigenaar van bestandssysteem](../../installation/prerequisites/file-system/overview.md).
+1. Wijzig de hoofdmap van de toepassing.
 1. Voer de volgende opdrachten in:
 
    ```bash

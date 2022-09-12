@@ -1,7 +1,7 @@
 ---
 title: Layoutbestanden converteren
 description: XML-indelingsbestanden converteren.
-source-git-commit: 02f02393878d04b4a0fcdae256ac1ac5dd13b7f6
+source-git-commit: d263e412022a89255b7d33b267b696a8bb1bc8a2
 workflow-type: tm+mt
 source-wordcount: '94'
 ht-degree: 0%
@@ -15,8 +15,8 @@ ht-degree: 0%
 
 Gebruik deze opdracht om uw XML-bestanden voor lay-outs bij te werken als u de overeenkomstige XSLT-stijlpagina (Extensible Stylesheet Language Transformations) bijwerkt.
 
-- [Layout-instructies](https://devdocs.magento.com/guides/v2.4/frontend-dev-guide/layouts/xml-instructions.html)
-- [Bestandstypen layout](https://devdocs.magento.com/guides/v2.4/frontend-dev-guide/layouts/layout-types.html)
+- [Layout-instructies](https://developer.adobe.com/commerce/frontend-core/guide/layouts/xml-instructions/)
+- [Bestandstypen layout](https://developer.adobe.com/commerce/frontend-core/guide/layouts/types/)
 
 Opdrachtopties:
 

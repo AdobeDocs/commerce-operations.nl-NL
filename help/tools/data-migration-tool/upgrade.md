@@ -1,9 +1,9 @@
 ---
 title: Upgrade de [!DNL Data Migration Tool]
 description: Leer hoe u de upgrade uitvoert voor [!DNL Data Migration Tool] gegevens tussen Magento 1 en Magento 2 over te dragen.
-source-git-commit: b5a2c362b09de993e1dc196bdda90e74cf4a8ba2
+source-git-commit: d263e412022a89255b7d33b267b696a8bb1bc8a2
 workflow-type: tm+mt
-source-wordcount: '239'
+source-wordcount: '227'
 ht-degree: 0%
 
 ---
@@ -25,7 +25,7 @@ Voordat u de [!DNL Data Migration Tool]moet u:
 
 ### Upgrade uw Magento-software
 
-Als u dat nog niet hebt gedaan, [upgrade uitvoeren van de Magento-software](https://experienceleague.adobe.com/docs/commerce-operations/upgrade-guide/overview.html).
+Als u dat nog niet hebt gedaan, [upgrade uitvoeren van de Magento-software](../../upgrade/overview.md).
 
 ### Maak een back-up van de `vendor/magento/data-migration-tool` directory
 
@@ -56,8 +56,8 @@ Zie de [Installeren [!DNL Data Migration Tool]](install.md) onderwerp om te wete
 
 ## Upgrade de [!DNL Data Migration Tool]
 
-1. Meld u aan bij uw Magento-server als, of schakel over naar, [de eigenaar van het bestandssysteem](https://devdocs.magento.com/guides/v2.4/install-gde/prereq/file-sys-perms-over.html).
-1. Wijzigen in hoofdmap van Magento 2.
+1. Meld u aan bij uw toepassingsserver als, of schakel over naar, [de eigenaar van het bestandssysteem](../../installation/prerequisites/file-system/overview.md).
+1. Wijzig de hoofdmap van de toepassing.
 1. Voer de volgende opdracht in:
 
    ```bash

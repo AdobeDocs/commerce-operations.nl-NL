@@ -3,7 +3,7 @@ title: Naar aangepast logbestand schrijven
 description: Leer aangepaste logbestanden instellen.
 contributor_name: Atwix
 contributor_link: https://www.atwix.com/
-source-git-commit: 2c12c6ea6e7b6ffeb07bbda17ded34e39de6656a
+source-git-commit: d263e412022a89255b7d33b267b696a8bb1bc8a2
 workflow-type: tm+mt
 source-wordcount: '394'
 ht-degree: 0%
@@ -32,9 +32,9 @@ U kunt een van de volgende methoden gebruiken om u aan te melden bij een aangepa
 
 ## Een aangepast logbestand instellen in het dialoogvenster `di.xml`
 
-In dit voorbeeld wordt getoond hoe u kunt gebruiken [virtuele typen](https://devdocs.magento.com/guides/v2.4/extension-dev-guide/build/di-xml-file.html#virtual-types) aan logbestand `debug` berichten naar een aangepast logbestand in plaats van naar een standaard `/var/log/debug.log`.
+In dit voorbeeld wordt getoond hoe u kunt gebruiken [virtuele typen](https://developer.adobe.com/commerce/php/development/build/dependency-injection-file/#virtual-types) aan logbestand `debug` berichten naar een aangepast logbestand in plaats van naar een standaard `/var/log/debug.log`.
 
-1. In de `di.xml` een aangepast logbestand van uw module definiëren als een [virtueel type](https://devdocs.magento.com/guides/v2.4/extension-dev-guide/build/di-xml-file.html#virtual-types).
+1. In de `di.xml` een aangepast logbestand van uw module definiëren als een [virtueel type](https://developer.adobe.com/commerce/php/development/build/dependency-injection-file/#virtual-types).
 
    ```xml
    <virtualType name="Magento\Payment\Model\Method\MyCustomDebug" type="Magento\Framework\Logger\Handler\Base">
@@ -46,7 +46,7 @@ In dit voorbeeld wordt getoond hoe u kunt gebruiken [virtuele typen](https://dev
 
    De `name` waarde van `Magento\Payment\Model\Method\MyCustomDebug` moet uniek zijn.
 
-1. De handler in een andere handler definiëren [virtueel type](https://devdocs.magento.com/guides/v2.4/extension-dev-guide/build/di-xml-file.html#virtual-types) met een unieke `name`:
+1. De handler in een andere handler definiëren [virtueel type](https://developer.adobe.com/commerce/php/development/build/dependency-injection-file/#virtual-types) met een unieke `name`:
 
    ```xml
    <virtualType name="Magento\Payment\Model\Method\MyCustomLogger" type="Magento\Framework\Logger\Monolog">
@@ -58,7 +58,7 @@ In dit voorbeeld wordt getoond hoe u kunt gebruiken [virtuele typen](https://dev
    </virtualType>
    ```
 
-1. Injecteer de `MyCustomLogger` [virtueel type](https://devdocs.magento.com/guides/v2.4/extension-dev-guide/build/di-xml-file.html#virtual-types) in de `Magento\Payment\Model\Method\Logger` object:
+1. Injecteer de `MyCustomLogger` [virtueel type](https://developer.adobe.com/commerce/php/development/build/dependency-injection-file/#virtual-types) in de `Magento\Payment\Model\Method\Logger` object:
 
    ```xml
    <type name="Magento\Payment\Model\Method\Logger">
@@ -117,7 +117,7 @@ In dit voorbeeld wordt getoond hoe u een aangepaste logboekafhandelingsklasse ku
    }
    ```
 
-1. De handler voor deze klasse definiëren als een [virtueel type](https://devdocs.magento.com/guides/v2.4/extension-dev-guide/build/di-xml-file.html#virtual-types) in de module `di.xml` bestand.
+1. De handler voor deze klasse definiëren als een [virtueel type](https://developer.adobe.com/commerce/php/development/build/dependency-injection-file/#virtual-types) in de module `di.xml` bestand.
 
    ```xml
    <virtualType name="MyCustomLogger" type="Magento\Framework\Logger\Monolog">

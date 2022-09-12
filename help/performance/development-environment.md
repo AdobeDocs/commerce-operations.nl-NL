@@ -1,9 +1,9 @@
 ---
 title: Ontwikkelingsomgeving Recommendations
 description: Meer informatie over prestatieaanbevelingen voor het instellen van uw lokale Adobe Commerce- of Magento Open Source-ontwikkelomgeving.
-source-git-commit: 87b353b408ecd7f55cea5b4775a0c8523952abc0
+source-git-commit: d263e412022a89255b7d33b267b696a8bb1bc8a2
 workflow-type: tm+mt
-source-wordcount: '257'
+source-wordcount: '241'
 ht-degree: 0%
 
 ---
@@ -47,5 +47,5 @@ Als u zich op een VM ontwikkelt en het langer dan 2 seconden duurt om een Magent
 
 <!-- Link definitions -->
 
-[schoonmaken]: https://devdocs.magento.com/guides/v2.4/config-guide/cli/config-cli-subcommands-cache.html#config-cli-subcommands-cache-clean
-[caches uitschakelen]: https://devdocs.magento.com/guides/v2.4/config-guide/cli/config-cli-subcommands-cache.html#config-cli-subcommands-cache-en
+[schoonmaken]: ../configuration/cli/manage-cache.md#clean-and-flush-cache-types
+[caches uitschakelen]: ../configuration/cli/manage-cache.md#enable-or-disable-cache-types

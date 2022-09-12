@@ -1,9 +1,9 @@
 ---
 title: Migratieoverzicht
 description: Leer hoe u begint met het migreren van gegevens van Magento 1 naar Magento 2 met de [!DNL Data Migration Tool].
-source-git-commit: d609c497fdf00c5e5f975a5679b1d072cec4f8a2
+source-git-commit: d263e412022a89255b7d33b267b696a8bb1bc8a2
 workflow-type: tm+mt
-source-wordcount: '333'
+source-wordcount: '306'
 ht-degree: 0%
 
 ---
@@ -29,7 +29,7 @@ In deze sectie ziet u hoe u de [!DNL Data Migration Tool] om instellingen, gegev
 
 ### Eerste stappen
 
-1. Meld u aan bij de toepassingsserver of schakel over naar een gebruiker met schrijfmachtigingen naar het bestandssysteem. Zie [schakelen naar de eigenaar van het bestandssysteem](https://devdocs.magento.com/guides/v2.4/install-gde/prereq/file-sys-perms-over.html).
+1. Meld u aan bij de toepassingsserver of schakel over naar een gebruiker met schrijfmachtigingen naar het bestandssysteem. Zie [schakelen naar de eigenaar van het bestandssysteem](../../../installation/prerequisites/file-system/overview.md).
 
    Als u bash shell gebruikt, kunt u de volgende syntaxis gebruiken om aan de eigenaar van het dossiersysteem over te schakelen en het bevel tezelfdertijd in te gaan:
 
@@ -58,8 +58,6 @@ In deze sectie ziet u hoe u de [!DNL Data Migration Tool] om instellingen, gegev
    - `cd <magento_root>/bin` en uitvoeren als `./magento <command name>`
    - `<magento_root>/bin/magento <command name>`
    - `<magento_root>` is een submap van de hoofdmap van de webserver.
-
-Naast de hier vermelde opdrachtargumenten raadpleegt u [Algemene argumenten](https://devdocs.magento.com/guides/v2.4/install-gde/install/cli/install-cli-subcommands.html#instgde-cli-subcommands-common)
 
 ### Opdrachtsyntaxis
 

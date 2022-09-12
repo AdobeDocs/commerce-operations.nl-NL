@@ -1,9 +1,9 @@
 ---
 title: Implementatiestroom
-description: 'Meer informatie over de stappen die nodig zijn voor de implementatie van Adobe Commerce of Magento Open Source in een productieomgeving. '
-source-git-commit: 9ab52374e031bd2b0a846dd5f47c89ff788dcafa
+description: Meer informatie over de stappen die nodig zijn voor de implementatie van Adobe Commerce of Magento Open Source in een productieomgeving.
+source-git-commit: d263e412022a89255b7d33b267b696a8bb1bc8a2
 workflow-type: tm+mt
-source-wordcount: '482'
+source-wordcount: '468'
 ht-degree: 0%
 
 ---
@@ -40,7 +40,7 @@ bin/magento setup:di:compile
 
 ## De autoloader bijwerken
 
-Bevestig na voltooiing van de compilatie dat [APCu is ingeschakeld](https://devdocs.magento.com/guides/v2.4/performance-best-practices/software.html#php-settings) en werk de autoloader bij:
+Bevestig na voltooiing van de compilatie dat [APCu is ingeschakeld](../performance/software.md#php-settings) en werk de autoloader bij:
 
 De autoloader bijwerken:
 
@@ -82,7 +82,7 @@ Statische inhoud implementeren veroorzaakt [!DNL Commerce] om de volgende handel
 
 Als uw statische inhoud niet wordt opgesteld, [!DNL Commerce] voert alle vermelde bewerkingen op de vlucht uit, wat leidt tot een aanzienlijke toename van de responstijd.
 
-U kunt een verscheidenheid van opties gebruiken om plaatsingsverrichtingen aan te passen die op archiefgrootte en vervulling behoeften worden gebaseerd. Het meest algemeen is compact opstellen strategie. Zie [Statische strategieën voor bestandsimplementatie](https://devdocs.magento.com/guides/v2.4/config-guide/cli/config-cli-subcommands-static-deploy-strategies.html)
+U kunt een verscheidenheid van opties gebruiken om plaatsingsverrichtingen aan te passen die op archiefgrootte en vervulling behoeften worden gebaseerd. Het meest algemeen is compact opstellen strategie. Zie [Statische strategieën voor bestandsimplementatie](../configuration/cli/static-view-file-strategy.md)
 
 Statische inhoud implementeren:
 
