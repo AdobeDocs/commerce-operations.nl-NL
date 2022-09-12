@@ -2,9 +2,9 @@
 keywords: Adobe Commerce;home;populaire onderwerpen
 title: Home
 description: Blader door een index van de Adobe Commerce-documentatie van het operationele product.
-source-git-commit: 6c462d615675615b317c6de529d1af5846d26e69
+source-git-commit: 64e697a357e10005d02abeca13bd09c8a823bc00
 workflow-type: tm+mt
-source-wordcount: '206'
+source-wordcount: '155'
 ht-degree: 0%
 
 ---
@@ -25,27 +25,27 @@ Krijg praktische informatie over concepten, processen, hulpmiddelen, en beste pr
     </div>
   </td>
   <td valign="top">
-    <a href="https://devdocs.magento.com/guides/v2.4/install-gde/install-flow-diagram.html">
+    <a href="../installation/overview.md">
       <img alt="Installatie" src="../assets/icons/servers.svg" width="40" height="40"/>
     </a>
     <div>
-      <a href="https://devdocs.magento.com/guides/v2.4/install-gde/install-flow-diagram.html"><strong>Installatie</strong></a>
+      <a href="../installation/overview.md"><strong>Installatie</strong></a>
     </div>
   </td>
   <td valign="top">
-    <a href="https://experienceleague.adobe.com/docs/commerce-operations/configuration-guide/overview.html">
+    <a href="../configuration/overview.md">
       <img alt="Configuratie" src="../assets/icons/settings.svg" width="40" height="40"/>
     </a>
     <div>
-      <a href="https://experienceleague.adobe.com/docs/commerce-operations/configuration-guide/overview.html"><strong>Configuratie</strong></a>
+      <a href="../configuration/overview.md"><strong>Configuratie</strong></a>
     </div>
   </td>
   <td valign="top">
-    <a href="https://devdocs.magento.com/guides/v2.4/migration/bk-migration-guide.html">
-      <img alt="Migratie" src="../assets/icons/move-to.svg" width="40" height="40"/>
+    <a href="../tools/data-migration-tool/how-migration-works.md">
+      <img alt="Gegevensmigratie" src="../assets/icons/move-to.svg" width="40" height="40"/>
     </a>
     <div>
-      <a href="https://devdocs.magento.com/guides/v2.4/migration/bk-migration-guide.html"><strong>Migratie</strong></a>
+      <a href="../tools/data-migration-tool/how-migration-works.md"><strong>Gegevensmigratie</strong></a>
     </div>
   </td>
 </tr>
@@ -75,11 +75,11 @@ Krijg praktische informatie over concepten, processen, hulpmiddelen, en beste pr
     </div>
   </td>
   <td valign="top">
-    <a href="https://experienceleague.adobe.com/docs/commerce-operations/tools/overview.html">
+    <a href="../tools/overview.md">
        <img alt="Gereedschappen" src="../assets/icons/wrench.svg" width="40" height="40"/>
     </a>
     <div>
-      <a href="https://experienceleague.adobe.com/docs/commerce-operations/tools/overview.html?lang=en"><strong>Gereedschappen</strong></a>
+      <a href="../tools/overview.md"><strong>Gereedschappen</strong></a>
     </div>
   </td>
 </tr>
@@ -117,6 +117,5 @@ Meer informatie over nieuwe documentatie en belangrijke updates voor bestaande d
 
 | Wijzigen | Type |
 |----------------------------------------------------------------------------------------------------------------------------------------|--------------|
-| Toegevoegd [informatie](../upgrade/upgrade-compatibility-tool/overview.md) over hoe de regels voor het Hulpmiddel van de Verenigbaarheid van de Verbetering worden bepaald. | Belangrijke update |
-| Verouderde upgradecompatibiliteitsfunctie verwijderd [foutcodes](../upgrade/upgrade-compatibility-tool/error-messages.md). | Technisch |
-| Verplaatst [Handleiding voor Analyse voor de hele site](../tools/site-wide-analysis-tool/intro.md) van [devdocs.magento.com](https://devdocs.magento.com/tools/site-wide-analysis.html) naar Experience League. | Nieuw |
+| Verplaatst [Installatiehandleiding op locatie](../installation/overview.md) van [devdocs.magento.com](https://devdocs.magento.com/guides/v2.4/install-gde/install-flow-diagram.html) naar Experience League. | Nieuw |
+| Verplaatst [Gegevensmigratiehandleiding](../tools/data-migration-tool/how-migration-works.md) van [devdocs.magento.com](https://devdocs.magento.com/guides/v2.4/migration/bk-migration-guide.html) naar Experience League. | Nieuw |
