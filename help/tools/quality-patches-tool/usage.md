@@ -1,16 +1,16 @@
 ---
 title: Gebruik
 description: Leer hoe u de [!DNL Quality Patches Tool].
-source-git-commit: 356ee307e0199d70c0e391e0d903e8f2e1600e63
+source-git-commit: 83fa1c77dd6105f4c97f697fd6636773d94fb5ee
 workflow-type: tm+mt
-source-wordcount: '876'
+source-wordcount: '872'
 ht-degree: 0%
 
 ---
 
 # Gebruik
 
-De [Kwaliteitspatches](https://github.com/magento/quality-patches) levert afzonderlijke patches die door Adobe en de Magento Open Source-gemeenschap zijn ontwikkeld. Hiermee kunt u algemene informatie over alle afzonderlijke patches die beschikbaar zijn voor de geïnstalleerde versie van Adobe Commerce of Magento Open Source, toepassen, herstellen en weergeven. U kunt patches toepassen op Adobe Commerce- en Magento Open Source-projecten, ongeacht wie de patch heeft ontwikkeld. U kunt bijvoorbeeld een patch toepassen die door de gemeenschap is ontwikkeld op Adobe Commerce-projecten.
+De [[!DNL Quality Patches Tool]](https://github.com/magento/quality-patches) levert afzonderlijke patches die door Adobe en de Magento Open Source-gemeenschap zijn ontwikkeld. Hiermee kunt u algemene informatie over alle afzonderlijke patches die beschikbaar zijn voor de geïnstalleerde versie van Adobe Commerce of Magento Open Source, toepassen, herstellen en weergeven. U kunt patches toepassen op Adobe Commerce- en Magento Open Source-projecten, ongeacht wie de patch heeft ontwikkeld. U kunt bijvoorbeeld een patch toepassen die door de gemeenschap is ontwikkeld op Adobe Commerce-projecten.
 
 
 >[!INFO]
@@ -25,7 +25,7 @@ De [Kwaliteitspatches](https://github.com/magento/quality-patches) levert afzond
 
 >[!INFO]
 > 
->Als dit nog niet het geval is, moet u de installatie [Git](https://github.com/git-guides/install-git) of [Reparatie](https://man7.org/linux/man-pages/man1/patch.1.html) voordat u de [!DNL Quality Patches Tool]. Voeg de `magento/quality-patches` Composer-pakket naar uw `composer.json` bestand:
+>Als dit nog niet het geval is, moet u de installatie [[!DNL Git]](https://github.com/git-guides/install-git) of [Reparatie](https://man7.org/linux/man-pages/man1/patch.1.html) voordat u de [!DNL Quality Patches Tool]. Voeg de `magento/quality-patches` Composer-pakket naar uw `composer.json` bestand:
 
 ```bash
 composer require magento/quality-patches
