@@ -1,8 +1,8 @@
 ---
-source-git-commit: 34c7fca1ee676f1eb96256c55121771370702410
+source-git-commit: ec60f7f2baecbdfe40971d17abe61aa52e30d1bd
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '246'
+ht-degree: 60%
 
 ---
 # Systeemvereisten
@@ -644,4 +644,4 @@ ht-degree: 0%
 
 >[!NOTE]
 >
->Elasticsearch versieondersteuning en compatibiliteit voor Adobe Commerce op cloudinfrastructuur worden bepaald door serviceversies die worden geïmplementeerd op de Cloud-infrastructuur. In zeldzame gevallen kunnen deze versies afwijken van de versies die worden ondersteund door Adobe Commerce-implementaties op locatie.
+>Serviceversie en compatibiliteitsondersteuning voor Adobe Commerce op cloudinfrastructuur worden bepaald door versies die worden geïmplementeerd op de Cloud-infrastructuur en verschillen soms van versies die worden ondersteund door Adobe Commerce-implementaties op locatie. Ga voor meer informatie over ondersteunde software en services die op Adobe Commerce zijn geïmplementeerd op cloudinfrastructuur naar [Ondersteunde software en services](https://devdocs.magento.com/cloud/requirements/cloud-requirements.html#cloud-arch-software).
