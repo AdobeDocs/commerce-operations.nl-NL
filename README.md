@@ -1,27 +1,27 @@
 ---
-source-git-commit: 3fcc6d98509da4fcb8705ea69e708ad8e038b65c
+source-git-commit: 5a950079e8b445ef363217c085da92f0991a3a7f
 workflow-type: tm+mt
-source-wordcount: '432'
+source-wordcount: '0'
 ht-degree: 0%
 
 ---
-# Gebruikersdocumentatie Adobe Commerce
+# Adobe Commerce-gebruikersdocumentatie
 
 Wij verwelkomen de bijdragen van onze gemeenschap en van Adobe werknemers van buiten de documentatieteams.
 
 ## Adobe Open-Source-gedragscode
 
-Dit project heeft [Adobe Open Bron Code van Gedrag ](code-of-conduct.md) of [.NET de Code van de Stichting van Gedrag](https://dotnetfoundation.org/code-of-conduct) goedgekeurd. Zie het artikel [Bijdragen](contributing.md) voor meer informatie.
+Dit project heeft de [Adobe-gedragscode voor open source](code-of-conduct.md) of de [.NET Foundation-gedragscode](https://dotnetfoundation.org/code-of-conduct) overgenomen. Zie het artikel [Bijdragen](contributing.md) voor meer informatie.
 
 ## Over uw bijdragen aan Adobe-inhoud
 
-Zie [Adobe Docs Contributor Guide](https://docs.adobe.com/content/help/en/contributor/contributor-guide/introduction.html).
+Zie de [Adobe Docs Contributor Guide](https://docs.adobe.com/content/help/en/contributor/contributor-guide/introduction.html).
 
 Hoe u een bijdrage levert, hangt af van wie u bent en van het soort veranderingen dat u wilt bijdragen:
 
 ### Kleine wijzigingen
 
-Als u minder belangrijke updates uit de goodness van uw hart bijdraagt, bezoek het artikel en klik de **Edit** verbinding in het artikel dat naar de bron GitHub voor het artikel gaat. Dan, gebruik enkel GitHub UI om uw updates te maken. Zie de algemene [handleiding ](https://docs.adobe.com/content/help/en/contributor/contributor-guide/introduction.html) voor docs Adobe voor meer informatie.
+Als u kleine updates aanbrengt uit uw goedheid, gaat u naar het artikel en klikt u op de knop **Bewerken** verbinding in het artikel dat naar de bron GitHub voor het artikel gaat. Dan, gebruik enkel GitHub UI om uw updates te maken. Zie de algemene [Handleiding Adobe Docs Contributor](https://docs.adobe.com/content/help/en/contributor/contributor-guide/introduction.html) voor meer informatie .
 
 Kleine correcties of verduidelijkingen die u ter documentatie en codevoorbeelden in dit antwoord aanbrengt, worden behandeld in de gebruiksvoorwaarden van de Adobe.
 
@@ -35,7 +35,7 @@ If you submit a pull request with significant changes to documentation and code 
 
 ### Belangrijke wijzigingen van Adobe-medewerkers
 
-Als u een technisch schrijver, programmamanager, of ontwikkelaar van het productteam voor een oplossing van Adobe Experience Cloud bent en het uw baan is om aan of auteur technische artikelen bij te dragen, zou u de privé bewaarplaats bij `https://git.corp.adobe.com/AdobeDocs` moeten gebruiken.
+Als u een technisch schrijver, programmamanager, of ontwikkelaar van het productteam voor een oplossing van Adobe Experience Cloud bent en het uw baan is om aan of auteur technische artikelen bij te dragen, zou u de privé bewaarplaats op moeten gebruiken `https://git.corp.adobe.com/AdobeDocs`.
 
 <!--Employees from other parts of the Adobe world should use the public repo for minor updates.-->
 
@@ -43,7 +43,7 @@ Als u een technisch schrijver, programmamanager, of ontwikkelaar van het product
 
 Communautaire contribuanten kunnen GitHub UI voor basishet uitgeven of vork gebruiken het repo om belangrijke bijdragen te leveren.
 
-Zie [Adobe Docs Contributor Guide](https://docs.adobe.com/content/help/en/contributor/contributor-guide/introduction.html) voor meer informatie.
+Zie de [Adobe Docs Contributor Guide](https://docs.adobe.com/content/help/en/contributor/contributor-guide/introduction.html) voor meer informatie.
 
 ## Hoe te om prijsdaling te gebruiken om uw onderwerp te formatteren
 
@@ -56,5 +56,31 @@ Alle artikelen in deze repository gebruiken GitHub gearomatiseerde prijsopgave. 
 
 In de openbare bewaarplaats, worden de geautomatiseerde etiketten toegewezen om verzoeken te trekken om ons te helpen de werkschema van het trekkingsverzoek beheren en u te helpen laten weten wat aan de hand is uw trekkrachtverzoek:
 
-* **Naar auteur** verzonden wijziging: De auteur is op de hoogte gesteld van het aanloopverzoek.
-* **kant-en-klaar samenvoegen**: Klaar voor overzicht door ons team van het trekpleonderzoek.
+* **Wijziging verzonden naar auteur**: De auteur is op de hoogte gesteld van het aanloopverzoek.
+* **samenvoegen**: Klaar voor overzicht door ons team van het trekpleonderzoek.
+
+## Sjablonen
+
+De `_jekyll` map bevat sjabloononderwerpen en vereiste elementen.
+De sjablonen die de taal voor vloeiende sjablonen gebruiken, bevinden zich in de `_jekyll` als HTML-bestanden.
+De `_jekyll/_data` map bevat bestanden met de gegevens die worden gebruikt om de sjablonen te renderen.
+
+Alle sjablonen renderen:
+
+1. Ga naar de `_jekyll` directory.
+
+   cd_jekyll
+
+1. Voer het renderscript uit.
+
+```
+_scripts/render
+```
+
+> **OPMERKING:** U moet het script uitvoeren vanuit het dialoogvenster `_jekyll` directory.
+> **OPMERKING:** U moet Ruby hebben geïnstalleerd om dit manuscript in werking te stellen.
+
+Het script voert rendering uit, schrijft gerenderde bestanden naar de `_jekyll/_rendered` map als HTML-bestanden, en kopieert deze naar de `help/_includes` map als `.md` bestanden.
+
+
+Raadpleeg de documentatie bij Jekyll voor meer informatie over [Gegevensbestanden](https://jekyllrb.com/docs/datafiles, [Vloeibare filters](https://jekyllrb.com/docs/liquid/filters/)en andere functies.
