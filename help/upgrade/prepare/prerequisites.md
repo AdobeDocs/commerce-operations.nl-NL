@@ -1,9 +1,9 @@
 ---
 title: Volledige voorwaarden
 description: Bereid uw Adobe Commerce- of Magento Open Source-project voor op een upgrade door deze vereiste stappen uit te voeren.
-source-git-commit: d263e412022a89255b7d33b267b696a8bb1bc8a2
+source-git-commit: c2d0c1d46a5f111a245b34ed6bc706dcd52be31c
 workflow-type: tm+mt
-source-wordcount: '1338'
+source-wordcount: '1291'
 ht-degree: 0%
 
 ---
@@ -97,12 +97,8 @@ U stelt de limiet in vanaf de opdrachtregel:
 1. Stel de limiet in op `65536`.
 
    ```bash
-   ulimit -s 65536
+   ulimit -n 65536
    ```
-
-   >[!NOTE]
-   >
-   > De syntaxis voor de maximale waarde voor open bestanden is afhankelijk van de UNIX-shell die u gebruikt. De voorgaande instelling werkt alleen met CentOS en Ubuntu met Bash-shell. Voor Mac OS is de juiste instelling echter -S 65532. Raadpleeg een hoofdpagina of referentie van het besturingssysteem voor meer informatie.
 
 De waarde in de Bash-shell instellen:
 
@@ -111,7 +107,7 @@ De waarde in de Bash-shell instellen:
 1. Voeg de volgende regel toe:
 
    ```bash
-   ulimit -s 65536
+   ulimit -n 65536
    ```
 
 1. Sla uw wijzigingen op in het dialoogvenster `.bashrc` en sluit de teksteditor af.
