@@ -1,9 +1,9 @@
 ---
-title: '"[!DNL Observation for Adobe Commerce]"'
+title: "[!DNL Observation for Adobe Commerce]"
 description: Meer informatie over [!DNL Observation for Adobe Commerce], zijn gebruik, wanneer te gebruiken, en hoe te om toegang te krijgen.
-source-git-commit: e042acac00d9aaa7d2f49beb8ce98e213ae369e7
+source-git-commit: 6523372cd5fe3219dc582123471cc85f3c47f37d
 workflow-type: tm+mt
-source-wordcount: '351'
+source-wordcount: '361'
 ht-degree: 0%
 
 ---
@@ -18,7 +18,7 @@ Deze handleiding biedt een holistisch overzicht van [!DNL Observation for Adobe 
 
 Als er problemen ontstaan, kan het tijdrovend zijn om vast te stellen waar het probleem is geworteld en de kennis te hebben om het op te lossen. De de steunorganisatie van de Adobe heeft stamkennis opgebouwd die op jaren wordt voortgebouwd van het bekijken van logboeken en bevellijnoutput terwijl het oplossen van problemenkwesties. Het hulpmiddel gebruikt dergelijke kennis om belangrijke signalen tegen een gemeenschappelijke chronologie te identificeren. De tijdlijn kan worden uitgevouwen of uitbesteed, zodat u uw loggegevens kunt visualiseren voor prestatiebeheer en probleemoplossing.
 
-Gebruiken [!DNL Observation]kunt u complexe problemen analyseren die worden aangetroffen door ondersteuning, zodat u de hoofdoorzaken beter kunt identificeren. In plaats van het bijhouden van ongelijke gegevens kunt u tijd besteden aan het correleren van gebeurtenissen en fouten om diepgaande inzichten te krijgen in de oorzaken van knelpunten in de prestaties. Het hulpmiddel is bedoeld om een duidelijkere mening van sommige problemen te geven die door plaatsen worden ervaren om u te helpen potentiële worteloorzaken van problemen identificeren en plaatsen te houden optimaal presteert.
+Gebruiken [!DNL Observation]kunt u complexe problemen analyseren die worden aangetroffen door ondersteuning, zodat u de hoofdoorzaken beter kunt identificeren. In plaats van het bijhouden van ongelijke gegevens kunt u tijd besteden aan het correleren van gebeurtenissen en fouten om diepgaande inzichten te krijgen in de oorzaken van knelpunten in de prestaties. Het hulpmiddel is bedoeld om een duidelijkere mening van sommige problemen te geven die door plaatsen worden ervaren om u te helpen potentiële worteloorzaken van problemen identificeren en plaatsen te houden optimaal presteert. Dit omvat het identificeren of en wat [!DNL bots] veroorzaken problemen met de site.
 
 ## Voor wie is deze gids?
 
