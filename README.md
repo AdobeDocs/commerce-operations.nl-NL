@@ -1,8 +1,8 @@
 ---
-source-git-commit: 5a950079e8b445ef363217c085da92f0991a3a7f
+source-git-commit: 3ba17b62f595e5a02ca56753d81d67166ddbc413
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '538'
+ht-degree: 5%
 
 ---
 # Adobe Commerce-gebruikersdocumentatie
@@ -62,7 +62,7 @@ In de openbare bewaarplaats, worden de geautomatiseerde etiketten toegewezen om 
 ## Sjablonen
 
 De `_jekyll` map bevat sjabloononderwerpen en vereiste elementen.
-De sjablonen die de taal voor vloeiende sjablonen gebruiken, bevinden zich in de `_jekyll` als HTML-bestanden.
+De sjablonen die de taal voor vloeiende sjablonen gebruiken, bevinden zich in de `_jekyll/templated` als HTML-bestanden.
 De `_jekyll/_data` map bevat bestanden met de gegevens die worden gebruikt om de sjablonen te renderen.
 
 Alle sjablonen renderen:
@@ -80,7 +80,6 @@ _scripts/render
 > **OPMERKING:** U moet het script uitvoeren vanuit het dialoogvenster `_jekyll` directory.
 > **OPMERKING:** U moet Ruby hebben geïnstalleerd om dit manuscript in werking te stellen.
 
-Het script voert rendering uit, schrijft gerenderde bestanden naar de `_jekyll/_rendered` map als HTML-bestanden, en kopieert deze naar de `help/_includes` map als `.md` bestanden.
-
+Het script voert rendering uit en schrijft gerenderde sjablonen naar de `help/_includes/templated` directory.
 
 Raadpleeg de documentatie bij Jekyll voor meer informatie over [Gegevensbestanden](https://jekyllrb.com/docs/datafiles, [Vloeibare filters](https://jekyllrb.com/docs/liquid/filters/)en andere functies.
