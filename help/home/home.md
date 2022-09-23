@@ -2,9 +2,9 @@
 keywords: Adobe Commerce;home;populaire onderwerpen
 title: Home
 description: Blader door een index van de Adobe Commerce-documentatie van het operationele product.
-source-git-commit: 64e697a357e10005d02abeca13bd09c8a823bc00
+source-git-commit: 8605fa5c791a48c112efa997b14d7bffe5f3028c
 workflow-type: tm+mt
-source-wordcount: '155'
+source-wordcount: '162'
 ht-degree: 0%
 
 ---
@@ -59,11 +59,11 @@ Krijg praktische informatie over concepten, processen, hulpmiddelen, en beste pr
     </div>
   </td>
   <td valign="top">
-    <a href="https://devdocs.magento.com/guides/v2.4/reference/cli/magento.html">
+    <a href="https://experienceleague.adobe.com/docs/commerce-operations/reference/commerce.html">
        <img alt="Verwijzing naar opdrachtregelprogramma's" src="../assets/icons/page-rule.svg" width="40" height="40"/>
     </a>
     <div>
-      <a href="https://devdocs.magento.com/guides/v2.4/reference/cli/magento.html"><strong>Referentie voor opdrachtregelprogramma's</strong></a>
+      <a href="https://experienceleague.adobe.com/docs/commerce-operations/reference/commerce.html"><strong>Referentie voor opdrachtregelprogramma's</strong></a>
     </div>
   </td>
   <td valign="top">
@@ -117,5 +117,6 @@ Meer informatie over nieuwe documentatie en belangrijke updates voor bestaande d
 
 | Wijzigen | Type |
 |----------------------------------------------------------------------------------------------------------------------------------------|--------------|
-| Verplaatst [Installatiehandleiding op locatie](../installation/overview.md) van [devdocs.magento.com](https://devdocs.magento.com/guides/v2.4/install-gde/install-flow-diagram.html) naar Experience League. | Nieuw |
-| Verplaatst [Gegevensmigratiehandleiding](../tools/data-migration-tool/how-migration-works.md) van [devdocs.magento.com](https://devdocs.magento.com/guides/v2.4/migration/bk-migration-guide.html) naar Experience League. | Nieuw |
+| Verplaatst [Referentie voor opdrachtregelprogramma&#39;s](../reference/commerce.md) van [devdocs.magento.com](https://devdocs.magento.com/guides/v2.4/reference/cli/magento-cloud.html). | Nieuw |
+| Verplaatst [Installatiehandleiding op locatie](../installation/overview.md) van [devdocs.magento.com](https://devdocs.magento.com/guides/v2.4/install-gde/install-flow-diagram.html). | Nieuw |
+| Verplaatst [Gegevensmigratiehandleiding](../tools/data-migration-tool/how-migration-works.md) van [devdocs.magento.com](https://devdocs.magento.com/guides/v2.4/migration/bk-migration-guide.html). | Nieuw |
