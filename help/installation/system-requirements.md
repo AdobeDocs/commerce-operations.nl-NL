@@ -1,9 +1,9 @@
 ---
 title: Systeemvereisten
 description: Gebruik deze naslaggids om vereiste softwareafhankelijkheden te identificeren die zijn getest met Adobe Commerce- en Magento Open Source-releases.
-source-git-commit: 3ba17b62f595e5a02ca56753d81d67166ddbc413
+source-git-commit: df8240b71efe992bc1c0655aa30c32778297a3c6
 workflow-type: tm+mt
-source-wordcount: '534'
+source-wordcount: '0'
 ht-degree: 0%
 
 ---
@@ -39,7 +39,7 @@ Linux-distributies, zoals RedHat Enterprise Linux (RHEL), CentOS, Ubuntu, Debian
 >
 >De [Installatie-instructies voor PHP](prerequisites/php-settings.md) Neem een stap op voor het installeren van deze extensies.
 
-{{$include /help/_includes/php-extensions.md}}
+{{$include /help/_includes/templated/php-extensions.md}}
 
 Zie [officiële PHP-documentatie](https://php.net/manual/en/extensions.php) voor installatiegegevens.
 
