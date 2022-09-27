@@ -1,7 +1,7 @@
 ---
 title: Varnish configureren en gebruiken
 description: Begrijp hoe Varnish dossiers opslaat en het verkeer van HTTP verbetert.
-source-git-commit: d263e412022a89255b7d33b267b696a8bb1bc8a2
+source-git-commit: 974c3480ccf5d1e1a5308e1bd2b27fcfaf3c72b2
 workflow-type: tm+mt
 source-wordcount: '1088'
 ht-degree: 0%
@@ -90,7 +90,7 @@ Varnish caching werkt met Commerce met behulp van:
 
 - [`nginx.conf.sample`](https://github.com/magento/magento2/blob/2.4/nginx.conf.sample) van de Magento 2 bewaarplaats van GitHub
 - `.htaccess` gedistribueerd configuratiebestand voor Apache dat bij de Handel wordt geleverd
-- `default.vcl` configuratie voor Varnish die wordt gegenereerd met de [Beheer](../cache/config-varnish-magento.md)
+- `default.vcl` configuratie voor Varnish die wordt gegenereerd met de [Beheer](../cache/configure-varnish-commerce.md)
 
 >[!INFO]
 Dit onderwerp behandelt slechts de standaardopties in de voorafgaande lijst. Er zijn vele andere manieren om caching in complexe scenario&#39;s (bijvoorbeeld, gebruikend een Netwerk van de Levering van de Inhoud) te vormen; deze methoden vallen buiten het toepassingsgebied van deze gids .

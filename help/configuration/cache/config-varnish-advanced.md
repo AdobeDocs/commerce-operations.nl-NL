@@ -1,7 +1,7 @@
 ---
 title: Geavanceerde Varnish-configuratie
 description: Veelzijdige functies configureren, zoals health check, respijtmodi en verfmodi.
-source-git-commit: bda758381d8d1b9209110adb168c36e1d504c4fa
+source-git-commit: 974c3480ccf5d1e1a5308e1bd2b27fcfaf3c72b2
 workflow-type: tm+mt
 source-wordcount: '907'
 ht-degree: 0%
@@ -48,7 +48,7 @@ De `vcl_hit` subroutine definieert hoe Varnish reageert op een aanvraag voor obj
 
 ### Wanneer de steun van de Handel gezond is
 
-Wanneer uit de gezondheidscontroles blijkt dat de handelsachterstand gezond is, controleert Varnish of de tijd in de respijtperiode blijft. De standaardrespijtperiode is 300 seconden, maar een handelaar kan de waarde van de [Beheer](https://glossary.magento.com/admin) zoals beschreven in [Handel configureren voor gebruik van Varnish](config-varnish-magento.md). Als de respijtperiode niet is verlopen, levert Varnish de schaalinhoud en vernieuwt asynchroon het object van de Commerce-server. Als de respijtperiode is verlopen, levert Varnish de schaalinhoud en wordt het object synchroon vernieuwd vanaf de achtergrond van de Handel.
+Wanneer uit de gezondheidscontroles blijkt dat de handelsachterstand gezond is, controleert Varnish of de tijd in de respijtperiode blijft. De standaardrespijtperiode is 300 seconden, maar een handelaar kan de waarde van de [Beheer](https://glossary.magento.com/admin) zoals beschreven in [Handel configureren voor gebruik van Varnish](configure-varnish-commerce.md). Als de respijtperiode niet is verlopen, levert Varnish de schaalinhoud en vernieuwt asynchroon het object van de Commerce-server. Als de respijtperiode is verlopen, levert Varnish de schaalinhoud en wordt het object synchroon vernieuwd vanaf de achtergrond van de Handel.
 
 De maximumhoeveelheid tijd dat Varnish een stapelvoorwerp dient is de som respijtperiode (300 seconden door gebrek) en de waarde van TTL (86400 seconden door gebrek).
 

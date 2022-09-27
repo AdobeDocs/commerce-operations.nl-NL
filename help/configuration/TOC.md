@@ -1,7 +1,7 @@
 ---
 user-guide-title: Configuratiegids
 user-guide-description: Configureer uw Adobe Commerce- of Magento Open Source-toepassingsfuncties en -services.
-source-git-commit: 53448b11a2d000fe8e8a7eecf2ffcef4b7e248fa
+source-git-commit: d451ea025a6f4fc8a4a9f15ca83896a63058a3a0
 workflow-type: tm+mt
 source-wordcount: '348'
 ht-degree: 0%
@@ -44,7 +44,7 @@ ht-degree: 0%
       - [Varnish, overzicht](cache/config-varnish.md)
       - [Varnish installeren](cache/config-varnish-install.md)
       - [Webserver](cache/config-varnish-server.md)
-      - [Commerce-toepassing configureren](cache/config-varnish-magento.md)
+      - [Commerce-toepassing configureren](cache/configure-varnish-commerce.md)
       - [Geavanceerde Varnish-configuratie](cache/config-varnish-advanced.md)
       - [Cache wissen](cache/use-varnish-cache.md)
       - [Cache wissen van meerdere instanties van Varnish](cache/use-multiple-varnish-cache.md)
