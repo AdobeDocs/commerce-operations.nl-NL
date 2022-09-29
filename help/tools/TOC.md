@@ -1,9 +1,9 @@
 ---
 user-guide-title: Gereedschappen
 user-guide-description: Leer meer over de verschillende gereedschappen die u met Adobe Commerce kunt gebruiken, hun gebruik, het installatieproces en hoe u toegang krijgt.
-source-git-commit: 5b623d713d8950b362a9fa66ad97e444811d23fa
+source-git-commit: 5edd2839a611fc20b1978b01923a692b21a8dd55
 workflow-type: tm+mt
-source-wordcount: '169'
+source-wordcount: '168'
 ht-degree: 0%
 
 ---
@@ -27,6 +27,7 @@ ht-degree: 0%
    - [Patches](site-wide-analysis-tool/patches.md)
 - Kwaliteitspatches {#quality-patches-tool}
    - [Gebruik](quality-patches-tool/usage.md)
+   - [Opmerkingen bij de release](quality-patches-tool/release-notes.md)
 - Waarneming voor Adobe Commerce {#observation-for-adobe-commerce}
    - [Inleiding](observation-for-adobe-commerce/intro.md)
    - [Toegang krijgen](observation-for-adobe-commerce/access.md)
@@ -40,7 +41,6 @@ ht-degree: 0%
    - [Het tabblad Implementeren](observation-for-adobe-commerce/deploy-tab.md)
    - [Het tabblad Waarschuwingen](observation-for-adobe-commerce/alerts-tab.md)
    - [Het tabblad WAF](observation-for-adobe-commerce/waf-tab.md)
-   - [Het tabblad Bots](observation-for-adobe-commerce/bots.md)
    - [Het tabblad CDN](observation-for-adobe-commerce/cdn-tab.md)
    - [Het tabblad RabbitMQ](observation-for-adobe-commerce/rabbitmq-tab.md)
    - [Het tabblad Uitsnijden](observation-for-adobe-commerce/cron-tab.md)
