@@ -1,9 +1,9 @@
 ---
 user-guide-title: Gereedschappen
 user-guide-description: Leer meer over de verschillende gereedschappen die u met Adobe Commerce kunt gebruiken, hun gebruik, het installatieproces en hoe u toegang krijgt.
-source-git-commit: 5edd2839a611fc20b1978b01923a692b21a8dd55
+source-git-commit: 3914a9bb185a18fa80497630f8a6e09b58bdec22
 workflow-type: tm+mt
-source-wordcount: '168'
+source-wordcount: '178'
 ht-degree: 0%
 
 ---
@@ -26,6 +26,7 @@ ht-degree: 0%
    - [Waarschuwingen](site-wide-analysis-tool/alerts.md)
    - [Patches](site-wide-analysis-tool/patches.md)
 - Kwaliteitspatches {#quality-patches-tool}
+   - [Kwaliteitspatches](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html){target=&quot;_blank&quot;}
    - [Gebruik](quality-patches-tool/usage.md)
    - [Opmerkingen bij de release](quality-patches-tool/release-notes.md)
 - Waarneming voor Adobe Commerce {#observation-for-adobe-commerce}
