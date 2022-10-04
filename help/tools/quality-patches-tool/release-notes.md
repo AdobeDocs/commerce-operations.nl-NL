@@ -1,7 +1,7 @@
 ---
 title: Opmerkingen bij de release
 description: Meer informatie over de patches die beschikbaar zijn voor Adobe Commerce en de problemen die ze oplossen.
-source-git-commit: ead062ac2f5dbf07293aef2a5a5d9f1f21255402
+source-git-commit: ea89232bba442add673a0024753f7a5dfdc8d1f8
 workflow-type: tm+mt
 source-wordcount: '9233'
 ht-degree: 0%
@@ -14,7 +14,7 @@ De [[!DNL Quality Patches Tool]](https://github.com/magento/quality-patches) lev
 
 >[!INFO]
 >
->Zie [Patches toepassen](https://experienceleague.adobe.com/docs/commerce-operations/tools/quality-patches-tool/usage.html#apply-individual-patches) voor instructies voor het toepassen van patches op uw Adobe Commerce- of Magento Open Source-projecten. Zie [Beschikbare patches](https://devdocs.magento.com/quality-patches/tool.html#patch-grid) in de Software Update Guide om een volledige lijst met vrijgegeven patches te bekijken.
+>Zie [Patches toepassen](https://experienceleague.adobe.com/docs/commerce-operations/tools/quality-patches-tool/usage.html#apply-individual-patches) voor instructies voor het toepassen van patches op uw Adobe Commerce- of Magento Open Source-projecten. Zie [Beschikbare patches](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html) in de Software Update Guide om een volledige lijst met vrijgegeven patches te bekijken.
 
 >[!INFO]
 >
@@ -542,4 +542,3 @@ Kleine correcties voor patchversies
 * **MDVA-30052** (*voor Adobe Commerce >=2.3.2-p2 &lt;2.3.5*) - Het probleem is verholpen waarbij particuliere inhoud (lokale opslag) niet correct is ingevuld, wat tot prestatieproblemen heeft geleid.
 * **MDVA-30131** (*voor Adobe Commerce >=2.3.4 &lt;2.3.6 || 2.4.0*) - Het probleem wordt verholpen met gelaagde navigatie, waarbij de *Nee* waarde voor productkenmerken van het booleaanse type is niet opgenomen in gelaagde navigatie als [!DNL Elasticsearch] is gebruikt als zoekprogramma.
 * **MDVA-35514** (*voor Adobe Commerce >=2.4.0 &lt;2.4.1*) - Het probleem is opgelost door een verzendlabel te maken en geordende producten toe te voegen aan een pakket in het modale venster Pakketten maken.
-

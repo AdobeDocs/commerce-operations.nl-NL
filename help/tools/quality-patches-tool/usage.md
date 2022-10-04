@@ -1,7 +1,7 @@
 ---
 title: Gebruik
 description: Leer hoe u de [!DNL Quality Patches Tool].
-source-git-commit: 83fa1c77dd6105f4c97f697fd6636773d94fb5ee
+source-git-commit: 7ce26f10b92632c077d37ae03d68594ba2444098
 workflow-type: tm+mt
 source-wordcount: '872'
 ht-degree: 0%
@@ -14,8 +14,8 @@ De [[!DNL Quality Patches Tool]](https://github.com/magento/quality-patches) lev
 
 
 >[!INFO]
-> 
->Zie [Afzonderlijke patches toepassen](#apply-individual-patches) voor instructies voor het toepassen van patches op uw Adobe Commerce- of Magento Open Source-projecten. Zie [Beschikbare patches](https://devdocs.magento.com/quality-patches/tool.html#patch-grid) om een volledige lijst met vrijgegeven patches te bekijken.
+>
+>Zie [Afzonderlijke patches toepassen](#apply-individual-patches) voor instructies voor het toepassen van patches op uw Adobe Commerce- of Magento Open Source-projecten. Zie [Beschikbare patches](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html) om een volledige lijst met vrijgegeven patches te bekijken.
 
 >[!WARNING]
 >
@@ -24,7 +24,7 @@ De [[!DNL Quality Patches Tool]](https://github.com/magento/quality-patches) lev
 ## Installeren
 
 >[!INFO]
-> 
+>
 >Als dit nog niet het geval is, moet u de installatie [[!DNL Git]](https://github.com/git-guides/install-git) of [Reparatie](https://man7.org/linux/man-pages/man1/patch.1.html) voordat u de [!DNL Quality Patches Tool]. Voeg de `magento/quality-patches` Composer-pakket naar uw `composer.json` bestand:
 
 ```bash
@@ -72,7 +72,7 @@ De statustabel bevat:
    - `Recommended replacement` — De pleister die een aanbevolen vervanging voor een vervangen pleister is.
 
 >[!INFO]
-> 
+>
 >Nadat u een upgrade hebt uitgevoerd naar een nieuwe versie van Adobe Commerce of Magento Open Source, moet u de patches opnieuw toepassen als de patches niet in de nieuwe versie zijn opgenomen. Zie [Patches opnieuw toepassen na een upgrade](#re-apply-patches-after-an-upgrade).
 
 ## Afzonderlijke patches toepassen {#apply-individual-patches}
