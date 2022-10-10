@@ -1,9 +1,9 @@
 ---
 user-guide-title: Gereedschappen
 user-guide-description: Leer meer over de verschillende gereedschappen die u met Adobe Commerce kunt gebruiken, hun gebruik, het installatieproces en hoe u toegang krijgt.
-source-git-commit: 3914a9bb185a18fa80497630f8a6e09b58bdec22
+source-git-commit: 5e8e2730a0cc30997365bd70c4409e0eb8923dfb
 workflow-type: tm+mt
-source-wordcount: '178'
+source-wordcount: '181'
 ht-degree: 0%
 
 ---
@@ -39,6 +39,7 @@ ht-degree: 0%
    - [Het tabblad Redis](observation-for-adobe-commerce/redis-tab.md)
    - [Het tabblad MySQL](observation-for-adobe-commerce/mysql-tab.md)
    - [Het tabblad PHP](observation-for-adobe-commerce/php-tab.md)
+   - [Het tabblad Bots](observation-for-adobe-commerce/bots.md)
    - [Het tabblad Implementeren](observation-for-adobe-commerce/deploy-tab.md)
    - [Het tabblad Waarschuwingen](observation-for-adobe-commerce/alerts-tab.md)
    - [Het tabblad WAF](observation-for-adobe-commerce/waf-tab.md)
