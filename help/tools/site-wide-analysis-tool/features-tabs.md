@@ -1,9 +1,9 @@
 ---
 title: Tabbladen met functies
 description: Meer informatie over de verschillende tabbladen met functies vindt u in het dialoogvenster [!DNL Site-Wide Analysis Tool]
-source-git-commit: c4eca6568dc507a7ba746ac059b1959929815a5e
+source-git-commit: 4f34d7db04229ef511cddbedce6ed08b75028831
 workflow-type: tm+mt
-source-wordcount: '336'
+source-wordcount: '331'
 ht-degree: 0%
 
 ---
@@ -12,7 +12,7 @@ ht-degree: 0%
 
 De volgende tabbladen met functies worden bovenaan in het scherm weergegeven [!DNL Site-Wide Analysis Tool] scherm.
 
-**[!UICONTROL Dashboard]**: De [!UICONTROL Dashboard] op de pagina worden widgets weergegeven die de huidige Recommendations, Upgrade Compatibility, Security Scan, Extensions en [!DNL NewRelic Alerts] voor de huidige status van uw Adobe Commerce-website. Er is ook een lijst met [!UICONTROL External Resources] koppelingen voor Adobe Commerce, inclusief de [Adobe Commerce Help Center Support Knowledge Base (Help Center)](https://support.magento.com/), [Adobe Commerce Developer Documentation (DevDocs)](https://devdocs.magento.com/), [Kwaliteitspatches](https://devdocs.magento.com/quality-patches/tool.html#patch-grid), [Beveiligingscentrum](https://magento.com/security), en [Waarneming voor Adobe Commerce (OAC)](https://support.magento.com/hc/en-us/articles/4402379845901-Use-Observation-for-Adobe-Commerce).
+**[!UICONTROL Dashboard]**: De [!UICONTROL Dashboard] op de pagina worden widgets weergegeven die de huidige Recommendations, Upgrade Compatibility, Security Scan, Extensions en [!DNL NewRelic Alerts] voor de huidige status van uw Adobe Commerce-website. Er is ook een lijst met [!UICONTROL External Resources] koppelingen voor Adobe Commerce, inclusief de [Adobe Commerce Help Center Support Knowledge Base (Help Center)](https://support.magento.com/), [Adobe Commerce Developer Documentation (DevDocs)](https://devdocs.magento.com/), [[!DNL Quality Patches Tool]](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html){target=&quot;_blank&quot;}, [Beveiligingscentrum](https://magento.com/security), en [Waarneming voor Adobe Commerce (OAC)](https://support.magento.com/hc/en-us/articles/4402379845901-Use-Observation-for-Adobe-Commerce).
 
 **[!UICONTROL Information]**: De [!UICONTROL Information] Deze pagina bevat overzichtsinformatie over de site.
 De [!UICONTROL General Information] in het gebied worden de gegevens van de zakelijke site weergegeven, wordt de eigenaar van de contactpersoon weergegeven, [!DNL Jira] problemen (alleen intern gebruik) en de secties Tickets rapporteren.
@@ -28,5 +28,4 @@ De informatie van Uitzonderingen omvat Laatste Gedetecteerde Datum (UTC), het De
 
 **[!UICONTROL Alerts]**: De [!UICONTROL Alerts] pagina geeft de nieuwste [!DNL NewRelic Managed Alerts] voor de Adobe Commerce-instantie. Meer informatie over [Beheerde waarschuwingen voor Adobe Commerce](https://support.magento.com/hc/en-us/articles/360045806832) en hoe [Access NewRelic Services](https://support.magento.com/hc/en-us/articles/360039127712) in de Adobe Commerce Support Knowledge Base.
 
-**[!UICONTROL Patches]**: De [!UICONTROL Patches] op de pagina worden alle huidige patches van de [Kwaliteitspatches](https://devdocs.magento.com/quality-patches/tool.html#patch-grid) compatibel met de Adobe Commerce-instantieversie van de handelaar. Meer informatie over de [Kwaliteitspatches](https://support.magento.com/hc/en-us/articles/360047139492) in de Adobe Commerce Support Knowledge Base.
-
+**[!UICONTROL Patches]**: De [!UICONTROL Patches] op de pagina worden alle huidige patches van de [[!DNL Quality Patches Tool]](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html){target=&quot;_blank&quot;} is compatibel met de Adobe Commerce-instantieversie van de handelaar. Meer informatie over de [[!DNL Quality Patches Tool]](https://support.magento.com/hc/en-us/articles/360047139492) in de Adobe Commerce Support Knowledge Base.

@@ -1,7 +1,7 @@
 ---
 title: Hoe reparaties werken
 description: Leer meer over de verschillende typen patches voor Adobe Commerce en Magento Open Source en hoe ze werken.
-source-git-commit: d263e412022a89255b7d33b267b696a8bb1bc8a2
+source-git-commit: 1a18a445cb104420dd9b853b7c4d42ce3bddf2ac
 workflow-type: tm+mt
 source-wordcount: '606'
 ht-degree: 0%
@@ -43,7 +43,7 @@ U kunt hotfixes in [Beveiligingscentrum](https://magento.com/security/patches). 
 
 Afzonderlijke patches bevatten oplossingen voor een bepaalde kwestie met een lage-effectkwaliteit. Deze correcties worden toegepast op de meest recente ondersteunde secundaire versie (bijvoorbeeld 2.4.x), maar kunnen ontbreken in de vorige ondersteunde secundaire versie (bijvoorbeeld 2.3.x). Adobe geeft zonodig afzonderlijke pleisters af.
 
-Gebruik de [Kwaliteitspatches](https://devdocs.magento.com/quality-patches/tool.html) om afzonderlijke pleisters toe te passen.
+Gebruik de [[!DNL Quality Patches Tool]](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html){target=&quot;_blank&quot;} om afzonderlijke patches toe te passen.
 
 >[!NOTE]
 >
@@ -81,7 +81,7 @@ index c8a6fef58d31..7d01c195791e 100644
              clearTimeout: function () {
                  clearTimeout(this.timeoutId);
 +                this.fail();
- 
+
                  return this;
              },
 ```
@@ -90,7 +90,7 @@ index c8a6fef58d31..7d01c195791e 100644
 
 U kunt patches op een van de volgende manieren toepassen:
 
-- [Kwaliteitspatches](https://devdocs.magento.com/quality-patches/tool.html)
+- [[!DNL Quality Patches Tool]](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html){target=&quot;_blank&quot;}
 - [Opdrachtregel](/help/upgrade/patches/apply.md#command-line)
 - [Composer](/help/upgrade/patches/apply.md#composer)
 
