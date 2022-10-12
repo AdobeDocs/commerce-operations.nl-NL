@@ -1,9 +1,9 @@
 ---
 title: Releaseplanning
 description: Leer wanneer specifieke versies van Adobe Commerce zijn gepland voor bèta, pre-release en algemene beschikbaarheid.
-source-git-commit: 1c302d312eeeb7512d8b91063f06f8e7c9bf98bd
+source-git-commit: c0609aef52f6c8c24a6ccb036b9d44bed9b3c597
 workflow-type: tm+mt
-source-wordcount: '474'
+source-wordcount: '0'
 ht-degree: 0%
 
 ---
@@ -24,8 +24,6 @@ De volgende tabel bevat de datums voor geplande releases (datums kunnen worden g
 | juni 2022<br>Functierelease | \-\- | \-\- | \-\- | 21 juni 2022 |
 | augustus 2022<br>Functie + patchrelease + beveiligingspatchrelease | 2.4.5.<br>2.4.4-p1<br>2.4.3-p3<br>2.3.7-p4<sup>1</sup> | \-\- | 26 juli 2022 | 9 augustus 2022 |
 | Oktober 2022<br>Functie + beveiligingspatchrelease | 2.4.5-p1<sup>2</sup><br>2.4.4-p2 | \-\- | 27 september 2022 | 11 oktober 2022 |
-| Januari 2023<br>Functierelease | \-\- | \-\- | \-\- | 17 januari 2023 |
-| maart 2023<br>Functie + patchrelease + beveiligingspatchrelease | 2.4.6.<br>2.4.5-p2<br>2.4.4-p3 | Januari 2023 | 28 februari 2023 | 14 maart 2023 |
 
 <sup>\-\- wijst op punten die niet op deze versie van toepassing zijn.</sup><br>
 <sup>1 Dit is de laatste patchrelease voor de 2.3.x release line. De releaselijn 2.3.x bereikt End of Support (EOS) in september 2022.</sup><br>
