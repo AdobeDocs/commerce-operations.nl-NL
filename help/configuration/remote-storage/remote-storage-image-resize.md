@@ -1,24 +1,28 @@
 ---
 title: Afbeeldingsgrootte configureren voor externe opslag
 description: U kunt schijfbronnen optimaliseren door de grootte van afbeeldingen op de server te configureren.
-source-git-commit: 96fe0c5eeaa029347c829c39547ee5e473c8d04d
+source-git-commit: 7fc5d561baa3c2a4aab160a35a1c8a302a62a3b1
 workflow-type: tm+mt
-source-wordcount: '226'
+source-wordcount: '247'
 ht-degree: 1%
 
 ---
 
 # Afbeeldingsgrootte configureren voor externe opslag
 
-Standaard, [!DNL Commerce] ondersteunt het vergroten/verkleinen van afbeeldingen aan de toepassingszijde. Door de externe opslagmodule in te schakelen kunt u Nginx echter gebruiken om de grootte van de afbeelding te verschuiven naar de serverzijde, waar u schijfbronnen kunt opslaan en schijfgebruik kunt optimaliseren.
+Adobe Commerce biedt standaard ondersteuning voor het vergroten of verkleinen van afbeeldingen aan de toepassingszijde. Door de externe opslagmodule in te schakelen kunt u Nginx echter gebruiken om de grootte van de afbeelding te verschuiven naar de serverzijde, waar u schijfbronnen kunt opslaan en schijfgebruik kunt optimaliseren.
 
 In het volgende diagram ziet u hoe Nginx afbeeldingen in het cachegeheugen ophaalt, vergroot of verkleint en opslaat. Het formaat wordt bepaald door de parameters inbegrepen in URL, zoals hoogte en breedte.
 
 ![afbeelding vergroten/verkleinen](../../assets/configuration/remote-storage-nginx-image-resize.png)
 
-## URL-indeling configureren in [!DNL Commerce]
+>[!TIP]
+>
+>Voor Adobe Commerce over infrastructuurprojecten in de cloud gaat u naar [Externe opslag configureren voor handel op Cloud-infrastructuur](cloud-support.md)
 
-Als u de grootte van afbeeldingen aan de serverzijde wilt wijzigen, moet u de optie Handel configureren om argumenten voor de hoogte, breedte en locatie (URL) van de afbeelding op te geven.
+## URL-indeling configureren in Adobe Commerce
+
+Als u het formaat van afbeeldingen aan de serverzijde wilt wijzigen, moet u Adobe Commerce zodanig configureren dat er argumenten worden opgegeven voor de hoogte, breedte en locatie (URL) van de afbeelding.
 
 **Om Commerce voor server-kant beeld resizing te vormen**:
 

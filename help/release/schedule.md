@@ -3,7 +3,7 @@ title: Releaseplanning
 description: Leer wanneer specifieke versies van Adobe Commerce zijn gepland voor bèta, pre-release en algemene beschikbaarheid.
 source-git-commit: 1c302d312eeeb7512d8b91063f06f8e7c9bf98bd
 workflow-type: tm+mt
-source-wordcount: '0'
+source-wordcount: '474'
 ht-degree: 0%
 
 ---
