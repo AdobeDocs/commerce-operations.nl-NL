@@ -1,7 +1,7 @@
 ---
-source-git-commit: 5b04a064f51426d29fb8adf8659e266aa5f453ec
+source-git-commit: a2747c1d62c4a22179c1177e7c4e76e028f66cea
 workflow-type: tm+mt
-source-wordcount: '931'
+source-wordcount: '953'
 ht-degree: 7%
 
 ---
@@ -20,9 +20,21 @@ De ondersteuning voor de releaselijn 2.4.4-2.4.6 eindigt op 25 november 2024.
   </thead>
   <tbody>
     <tr>
+        <td>2.4.5-p1</td>
+        <td>11 oktober 2022</td>
+          <td><a href="https://devdocs.magento.com/guides/v2.4/release-notes/2-4-5-p1.html">Opmerkingen bij de release</a><br>
+          </td>
+    </tr>
+    <tr>
         <td>2.4.5.</td>
         <td>9 augustus 2022</td>
           <td><a href="https://devdocs.magento.com/guides/v2.4/release-notes/commerce-2-4-5.html">Opmerkingen bij de release van Adobe Commerce</a><br><a href="https://devdocs.magento.com/guides/v2.4/release-notes/open-source-2-4-5.html">Opmerkingen bij de release Magento Open Source</a><br>
+          </td>
+    </tr>
+    <tr>
+        <td>2.4.4-p2</td>
+        <td>11 oktober 2022</td>
+          <td><a href="https://devdocs.magento.com/guides/v2.4/release-notes/2-4-4-p2.html">Opmerkingen bij de release</a><br>
           </td>
     </tr>
     <tr>
