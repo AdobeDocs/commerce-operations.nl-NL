@@ -2,9 +2,9 @@
 keywords: Adobe Commerce;home;populaire onderwerpen
 title: Home
 description: Blader door een index van de Adobe Commerce-documentatie van het operationele product.
-source-git-commit: e247b0bd2765e425da033f32ab99f79cfe6cc0b2
+source-git-commit: 441bbcf15901b9ca547780eb6f3a20efc8025d91
 workflow-type: tm+mt
-source-wordcount: '174'
+source-wordcount: '148'
 ht-degree: 0%
 
 ---
@@ -108,6 +108,14 @@ Krijg praktische informatie over concepten, processen, hulpmiddelen, en beste pr
       <a href="../commerce-at-scale/overview.md"><strong>Handel op schaal</strong></a>
     </div>
   </td>
+  <td valign="top">
+    <a href="../security-and-compliance/overview.md">
+       <img alt="Enterprise" src="../assets/icons/alert-circle.svg" width="40" height="40"/>
+    </a>
+    <div>
+      <a href="../security-and-compliance/overview.md"><strong>Beveiliging en naleving</strong></a>
+    </div>
+  </td>
 </tr>
 </table>
 
@@ -116,8 +124,6 @@ Krijg praktische informatie over concepten, processen, hulpmiddelen, en beste pr
 Meer informatie over nieuwe documentatie en belangrijke updates voor bestaande documentatie.
 
 | Wijzigen | Type |
-|----------------------------------------------------------------------------------------------------------------------------------------|--------------|
-| Verplaatst [Handleiding voor informatie bij vrijgeven](../release/roadmap.md) van [devdocs.magento.com](https://devdocs.magento.com/release/versions.html). | Nieuw |
-| Verplaatst [Referentie voor opdrachtregelprogramma&#39;s](../reference/commerce.md) van [devdocs.magento.com](https://devdocs.magento.com/guides/v2.4/reference/cli/magento-cloud.html). | Nieuw |
-| Verplaatst [Installatiehandleiding op locatie](../installation/overview.md) van [devdocs.magento.com](https://devdocs.magento.com/guides/v2.4/install-gde/install-flow-diagram.html). | Nieuw |
-| Verplaatst [Gegevensmigratiehandleiding](../tools/data-migration-tool/how-migration-works.md) van [devdocs.magento.com](https://devdocs.magento.com/guides/v2.4/migration/bk-migration-guide.html). | Nieuw |
+|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|------|
+| Verplaatst [Handleiding voor beveiliging en naleving](../security-and-compliance/overview.md) van [devdocs.magento.com](https://devdocs.magento.com/security/security-and-compliance.html). | Nieuw |
+| Verplaatst [Handleiding voor informatie bij vrijgeven](../release/roadmap.md) van [devdocs.magento.com](https://devdocs.magento.com/release/released-versions.html). | Nieuw |
