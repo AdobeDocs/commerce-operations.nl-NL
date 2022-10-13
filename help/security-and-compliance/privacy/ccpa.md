@@ -1,7 +1,7 @@
 ---
 title: California Consumer Privacy Act (CCPA)
 description: Leer over de Wet van de Privacy van de Consumentenprivacy van Californië (CCPA), die de rechten van consumenten in Californië uitbreidt om te bepalen hoe hun persoonlijke informatie wordt verzameld, opgeslagen, en gebruikt.
-source-git-commit: 495dfd515759e4df507479de57118586eac14fda
+source-git-commit: 2120e5bb912a89c58611ef9e23661a54e40a14f1
 workflow-type: tm+mt
 source-wordcount: '413'
 ht-degree: 0%
@@ -24,7 +24,7 @@ De CCPA verleent de consument de volgende nieuwe rechten:
 - **Recht om te weigeren** van de verkoop van hun persoonlijke gegevens.
 - **Recht op non-discriminatie** in termen van prijs of dienst voor het uitoefenen van een privacyrecht in het kader van de CCPA.
 
-## CCPA-compatibiliteitshandleiding
+## CCPA-conformiteit
 
 De ontwikkeling en uitvoering van een plan voor naleving van de CCPA-voorschriften vereist een gecoördineerde inspanning. We moedigen handelaren aan om een interfunctioneel team samen te stellen en de routekaart te volgen die in [CCPA-compatibiliteitshandleiding](https://experienceleague.adobe.com/docs/commerce-admin/start/compliance/privacy/compliance-ccpa.html) hun bedrijf aan de verordening te onderwerpen . Als ontwikkelaar kunt u worden uitgenodigd om als belanghebbende deel te nemen met een nadruk op de stappen 2 tot en met 5 van het proces. Zie de [CCPA-compatibiliteitshandleiding](https://experienceleague.adobe.com/docs/commerce-admin/start/compliance/privacy/compliance-ccpa.html) voor meer informatie .
 
@@ -44,9 +44,9 @@ De ontwikkeling en uitvoering van een plan voor naleving van de CCPA-voorschrift
 
 1. Alle procedures in verband met de CCPA documenteren en registers bijhouden.
 
-## Persoonlijke gegevens
+## Verwijzing naar persoonsgegevens
 
-Voor technische informatie, zie de diagrammen van de gegevensstroom en de afbeeldingen van de gegevensbestandentiteit in de Persoonlijke Verwijzing van de Informatie die op elke versie van Adobe Commerce of Magento Open Source van toepassing is die u steunt.
+Voor technische informatie, zie de dataflow diagrammen en de afbeeldingen van de gegevensbestandentiteit in de Persoonlijke Verwijzing van de Informatie die op elke versie van Adobe Commerce of Magento Open Source van toepassing is die u steunt.
 
-- [Referentie van persoonlijke gegevens (versie 2.x)](data-m2.md)
-- [Referentie van persoonlijke gegevens (versie 1.x)](data-m1.md)
+- [Referentie persoonlijke gegevens van klant (versie 2.x)](data-m2.md)
+- [Referentie persoonlijke gegevens klant (versie) 1.x](data-m1.md)

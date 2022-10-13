@@ -1,9 +1,9 @@
 ---
 title: Referentie persoonlijke gegevens van klant (versie 2.x)
-description: Meer informatie over gegevensstroomdiagrammen en toewijzingen van database-entiteiten voor persoonlijke gegevens van klanten in Adobe Commerce en Magento Open Source 2.x.
-source-git-commit: 0640b59cc529123911537475bbfc179c917ac258
+description: Meer informatie over dataflow-diagrammen en toewijzingen van database-entiteiten voor persoonlijke gegevens van klanten in Adobe Commerce en Magento Open Source 2.x.
+source-git-commit: 2120e5bb912a89c58611ef9e23661a54e40a14f1
 workflow-type: tm+mt
-source-wordcount: '759'
+source-wordcount: '755'
 ht-degree: 0%
 
 ---
@@ -15,14 +15,14 @@ ht-degree: 0%
 >
 >Dit is een van de onderwerpen die Adobe Commerce en Magento Open Source-handelaren en -ontwikkelaars helpen zich voor te bereiden op de naleving van privacyregels. Raadpleeg uw juridisch adviseur om te bepalen of en hoe uw bedrijf aan om het even welke wettelijke verplichtingen zou moeten voldoen.
 
-Gebruik de volgende schema&#39;s van de gegevensstroom en de afbeeldingen van de gegevensbestandentiteit ter referentie wanneer het ontwikkelen van nalevingsprogramma&#39;s voor privacyverordeningen zoals:
+Gebruik de volgende dataflow diagrammen en de afbeeldingen van de gegevensbestandentiteit ter referentie wanneer het ontwikkelen van nalevingsprogramma&#39;s voor privacyverordeningen zoals:
 
 - [GDPR](gdpr.md)
 - [CCPA](ccpa.md)
 
-## Gegevensstroomdiagrammen
+## Dataflow-diagrammen
 
-De diagrammen van de gegevensstroom tonen de types van gegevens die klanten en beheerders kunnen ingaan en van opslag en Admin terugwinnen.
+In de dataflow-diagrammen worden de typen gegevens weergegeven die klanten en beheerders kunnen invoeren en ophalen van de winkel en Admin.
 
 ### Punten voor gegevensinvoer vóór
 

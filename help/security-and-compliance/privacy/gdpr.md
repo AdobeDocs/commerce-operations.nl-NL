@@ -1,9 +1,9 @@
 ---
 title: Algemene verordening inzake gegevensbescherming (GDPR)
 description: Leer over de algemene verordening inzake gegevensbescherming (GDPR), die wetgeving is die gegevensbescherming en privacy regelt voor alle individuen in de Europese Unie en de Europese Economische Ruimte.
-source-git-commit: 1a608e8a5986026d5a187dc8cbd358fed2db5d9e
+source-git-commit: 2120e5bb912a89c58611ef9e23661a54e40a14f1
 workflow-type: tm+mt
-source-wordcount: '294'
+source-wordcount: '292'
 ht-degree: 0%
 
 ---
@@ -17,14 +17,14 @@ ht-degree: 0%
 
 De Europese Unie (EU) heeft [Algemene verordening inzake gegevensbescherming](https://ec.europa.eu/info/law/law-topic/data-protection_en) (GDPR) haar burgers meer controle te geven over hun persoonsgegevens. De GDPR is van toepassing op elke organisatie die actief is binnen de EU. Het is ook van toepassing op organisaties buiten de EU die goederen of diensten aanbieden aan klanten of bedrijven in de EU.
 
-De integrators van het systeem kunnen de diagrammen van de gegevensstroom en gegevensbestandinformatie in de Persoonlijke Verwijzing van de Informatie gebruiken om manuscripten te bouwen om gebruiksgevallen op te lossen gelijkend op het volgende:
+De integrators van het systeem kunnen de dataflow diagrammen en gegevensbestandinformatie in de Persoonlijke Verwijzing van de Informatie gebruiken om manuscripten te bouwen om gebruiksgevallen op te lossen gelijkend op het volgende:
 
 - Een winkelier vraagt om een kopie van de gegevens die de handelaar over hen heeft opgeslagen
 - Winkelverzoeken om hun gegevens te verwijderen
 
-## Persoonlijke gegevens
+## Verwijzing naar persoonsgegevens
 
-Voor technische informatie, zie de diagrammen van de gegevensstroom en de afbeeldingen van de gegevensbestandentiteit in de Persoonlijke Verwijzing van de Informatie die op elke versie van Adobe Commerce of Magento Open Source van toepassing is die u steunt.
+Voor technische informatie, zie de dataflow diagrammen en de afbeeldingen van de gegevensbestandentiteit in de Persoonlijke Verwijzing van de Informatie die op elke versie van Adobe Commerce of Magento Open Source van toepassing is die u steunt.
 
 - [Referentie persoonlijke gegevens van klant (versie 2.x)](data-m2.md)
 - [Referentie persoonlijke gegevens klant (versie) 1.x](data-m1.md)
