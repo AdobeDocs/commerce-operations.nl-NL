@@ -1,9 +1,9 @@
 ---
 title: Aanbevolen lezingen voor upgrades
 description: Lees de aanbevolen tekst voor het plannen van uw Adobe Commerce- of Magento Open Source-upgrade.
-source-git-commit: d263e412022a89255b7d33b267b696a8bb1bc8a2
+source-git-commit: ffa8b957828833d2c3f9bc79c31dc3fa2c6035a5
 workflow-type: tm+mt
-source-wordcount: '420'
+source-wordcount: '423'
 ht-degree: 0%
 
 ---
@@ -34,7 +34,7 @@ Ga verder met het leren van upgrades voor Adobe Commerce en Magento Open Source 
             <li><a href="https://experienceleague.adobe.com/docs/commerce-learn/tutorials/uct-phpstorm.html?lang=en">PhpStorm-plug-in Compatibiliteit bijwerken</a> (video)</li>
             <li><a href="../upgrade-compatibility-tool/overview.md">Compatibiliteit upgraden</a></li>
             <li><a href="https://magentocommeng.slack.com/archives/C019Y143U9F">#UpgradeCompatibilityTool Slack-kanaal</a></li>
-            <li><a href="https://devdocs.magento.com/quality-patches/usage.html">Kwaliteitspatches</a></li>
+            <li><a href="https://experienceleague.adobe.com/docs/commerce-operations/tools/quality-patches-tool/usage.html">Kwaliteitspatches</a></li>
           </ul>
       </td>
     </tr>

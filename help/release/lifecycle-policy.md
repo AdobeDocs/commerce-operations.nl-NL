@@ -1,10 +1,10 @@
 ---
 title: Levenscyclusbeleid voor software
 description: In deze video ziet u de belangrijkste datums voor einde softwareondersteuning voor Adobe Commerce-releases.
-source-git-commit: 79f36e3728e6bc436e8093bd4051143a48e681d6
+source-git-commit: ffa8b957828833d2c3f9bc79c31dc3fa2c6035a5
 workflow-type: tm+mt
-source-wordcount: '368'
-ht-degree: 5%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
@@ -13,7 +13,7 @@ ht-degree: 5%
 
 Voor Adobe Commerce 2.4 en latere versies:
 
-- Om ons levenscyclusbeleid beter te stroomlijnen, verstrekt Adobe kwaliteitsmoeilijke situaties aan 2.4 versielijn tot het eind van steundatum van de PHP versie waarop het is gebaseerd. Een klant kan tot kwaliteitsmoeilijke situaties toegang hebben door te contacteren [Adobe Commerce-ondersteuning](https://developer.adobe.com/commerce/contributor/community/support/) of via het zelfdienen [Kwaliteitspatches](https://devdocs.magento.com/quality-patches/tool.html) als de versie ervan nog steeds in aanmerking komt voor kwaliteitsondersteuning. Raadpleeg de onderstaande tabel voor de data van einde softwareondersteuning voor Adobe Commerce-releaselijnen.
+- Om ons levenscyclusbeleid beter te stroomlijnen, verstrekt Adobe kwaliteitsmoeilijke situaties aan 2.4 versielijn tot het eind van steundatum van de PHP versie waarop het is gebaseerd. Een klant kan tot kwaliteitsmoeilijke situaties toegang hebben door te contacteren [Adobe Commerce-ondersteuning](https://developer.adobe.com/commerce/contributor/community/support/) of via het zelfdienen [[!DNL Quality Patches Tool]](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html){target=&quot;_blank&quot;} als de versie ervan nog steeds in aanmerking komt voor kwaliteitsondersteuning. Raadpleeg de onderstaande tabel voor de data van einde softwareondersteuning voor Adobe Commerce-releaselijnen.
 
 - Adobe biedt alleen beveiligingsoplossingen via de nieuwste patch of beveiligingspatchrelease, zelfs als de versie van een klant nog steeds in aanmerking komt voor kwaliteitsondersteuning. In tegenstelling tot kwaliteitsmoeilijke situaties, kunnen de veiligheidsmoeilijke situaties niet aan vorige minder belangrijke versies noch aan vorige flardversies binnen gesteunde minder belangrijke versies worden gesteund.
 
