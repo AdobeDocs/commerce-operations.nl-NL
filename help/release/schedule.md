@@ -1,7 +1,7 @@
 ---
 title: Releaseplanning
 description: Leer wanneer specifieke versies van Adobe Commerce zijn gepland voor bèta, pre-release en algemene beschikbaarheid.
-source-git-commit: c0609aef52f6c8c24a6ccb036b9d44bed9b3c597
+source-git-commit: 77ef9c276306700a9ff62795d05075e8731f5d5a
 workflow-type: tm+mt
 source-wordcount: '0'
 ht-degree: 0%
@@ -24,6 +24,8 @@ De volgende tabel bevat de datums voor geplande releases (datums kunnen worden g
 | juni 2022<br>Functierelease | \-\- | \-\- | \-\- | 21 juni 2022 |
 | augustus 2022<br>Functie + patchrelease + beveiligingspatchrelease | 2.4.5.<br>2.4.4-p1<br>2.4.3-p3<br>2.3.7-p4<sup>1</sup> | \-\- | 26 juli 2022 | 9 augustus 2022 |
 | Oktober 2022<br>Functie + beveiligingspatchrelease | 2.4.5-p1<sup>2</sup><br>2.4.4-p2 | \-\- | 27 september 2022 | 11 oktober 2022 |
+| Januari 2023<br>Functierelease | \-\- | \-\- | \-\- | 17 januari 2023 |
+| maart 2023<br>Functie + patchrelease + beveiligingspatchrelease | 2.4.6.<br>2.4.5-p2<br>2.4.4-p3 | Januari 2023 | 28 februari 2023 | 14 maart 2023 |
 
 <sup>\-\- wijst op punten die niet op deze versie van toepassing zijn.</sup><br>
 <sup>1 Dit is de laatste patchrelease voor de 2.3.x release line. De releaselijn 2.3.x bereikt End of Support (EOS) in september 2022.</sup><br>
@@ -32,10 +34,6 @@ De volgende tabel bevat de datums voor geplande releases (datums kunnen worden g
 >[!TIP]
 >
 >Patch- en beveiligingspatchreleases zijn mogelijkheden om de kerncodebase te upgraden, zodat uw platform veilig, betrouwbaar en prestatiever blijft. De Versies van de Eigenschap komen om de andere maand voor. De Versies van de eigenschap zijn onafhankelijk van de kerncodebase en zijn beschikbaar door externe module of uitbreiding. Om het even welke updates aan bestaande onafhankelijke eigenschappen worden vrijgegeven tijdens de periodes van de Versie van de Eigenschap en gebeuren niet automatisch als de eigenschap reeds wordt uitgevoerd.
-
->[!NOTE]
->
->We hebben een [nieuw beleid](https://www.adobe.com/content/dam/cc/en/legal/terms/enterprise/pdfs/Adobe-Commerce-Software-Lifecycle-Policy.pdf) dat geldt voor onze ondersteunde releaselijnen. Ga voor meer informatie over de nieuwe strategie achter ons releasekalender- en levenscyclusbeleid voor 2022 naar onze [blog](https://business.adobe.com/blog/how-to/accelerating-innovation-through-simplified-release-strategy).
 
 ## Vroege toegang
 
