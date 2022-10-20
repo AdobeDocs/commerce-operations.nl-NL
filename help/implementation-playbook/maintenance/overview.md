@@ -2,18 +2,18 @@
 title: Overzicht van onderhoud en ondersteuning
 description: Behoud en steun uw onlangs gelanceerde implementatie van Adobe Commerce behoorlijk.
 exl-id: 5a104148-74f1-469b-84ca-9bce740a7865
-source-git-commit: e76f101df47116f7b246f21f0fe0fa72769d2776
+source-git-commit: 514426d622ba47b8a7e517368132c86c9236b63a
 workflow-type: tm+mt
-source-wordcount: '441'
+source-wordcount: '530'
 ht-degree: 0%
 
 ---
 
 # Overzicht van onderhoud en ondersteuning
 
-Consumenten hebben nu al meer mogelijkheden dan ooit tevoren. Als er geen gebrek is aan merknamen die de aandacht trekken, kunt u consumenten geen reden geven om naar uw concurrenten te kijken. Zoals we hebben gezien, is loyaliteit en geduld met de consumenten gering. Het kost hen niet veel om uw merk op te geven en een slechte ervaring met e-commerce is een gemakkelijke manier om op te geven.
+Consumenten hebben nu al meer mogelijkheden dan ooit tevoren. Als er geen gebrek is aan merknamen die voor aandacht worden gevierd, kunt u consumenten geen reden geven om naar uw concurrenten te kijken. Zoals we hebben gezien, is loyaliteit en geduld met de consumenten dun. Het kost hen niet veel om je merk op te geven en een slechte ervaring met e-commerce is een gemakkelijke manier om op te geven.
 
-Dit leidt tot twee aanvullende punten. De eerste is dat de lancering van een nieuwe e-commercesite niet betekent dat je dan verder moet gaan. Het tempo waarin de marketing en de behoeften van de consument veranderen, is te hoog dat merken voortdurend moeten evolueren om zich aan te houden. Dat brengt ons bij punt twee. Als uw steun voor e-commerce er alleen maar is om iets te herstellen als het doorbreekt, zal het onmogelijk zijn om aan de stijgende verwachtingen van de consument te voldoen. Kortom, de ondersteuning van e-commerce moet niet alleen uw site aan het werk houden, maar moet ook uw merk vooruit helpen. Met deze sectie kunt u uw merk vooruitzetten nadat u uw site hebt gestart.
+Dit leidt tot twee aanvullende punten. De eerste is dat de lancering van een nieuwe e-commercesite niet betekent dat je dan verder moet gaan. Het tempo waarin de marketing en de behoeften van de consument veranderen, is te hoog dat merken voortdurend moeten evolueren om zich aan te passen. Dat brengt ons bij punt twee. Als uw steun voor e-commerce er alleen maar is om iets op te lossen wanneer het gebroken wordt, dan zal het onmogelijk zijn om aan de stijgende verwachtingen van de consument te voldoen. Kortom, de ondersteuning van e-commerce moet niet alleen uw site aan het werk houden, maar moet ook uw merk vooruit helpen. Met deze sectie kunt u uw merk vooruitzetten nadat u uw site hebt gestart.
 
 ## Overgangsfase
 
@@ -30,3 +30,7 @@ In het volgende diagram worden de fasen en activiteiten weergegeven die in een s
 > Het is belangrijk om een overgangscontrolelijst samen te stellen die projectmanagers helpt de taken voltooien die worden vereist om met succes het post-productie ondersteuningsteam te vestigen. Deze overgang moet deel uitmaken van het algemene projectplan en de taken moeten in het tijdschema worden opgenomen.
 
 Het identificeren van het juiste steunmodel voor uw zaken om uw platform-en handelspraktijk te blijven verbeteren en optimaliseren als geheel-is een kritieke stap aan het handhaven van al hard werk dat tijdens het implementatieproces werd gedaan. Met een uitgebreid aan de gang zijnde steunplan op zijn plaats, kan uw handelsplaats omhoog met de verwachtingen van uw klanten houden en u kunt uw doelstellingen blijven bereiken.
+
+Bij de implementatie van Adobe Commerce is het van essentieel belang om na te denken over wat u moet opnemen in uw onderhouds- en ondersteuningsstrategie.
+Expert support is inbegrepen in een Adobe Commerce-licentie. Raadpleeg voor meer informatie over de ondersteuningsplannen voor experts en Adobe voor ondersteuning de [Ondersteuningsplannen voor Adobe](https://business.adobe.com/customers/consulting-services/premier-support.html).
+Naast de plannen van de Steun van de Adobe zijn er erfenis Magento de steuntermijnen. Als u wilt weten welke supportservices op u van toepassing zijn, raadpleegt u uw contract om te zien welke supportovereenkomst u hebt of neemt u contact op met uw Customer Success Manager (CSM).
