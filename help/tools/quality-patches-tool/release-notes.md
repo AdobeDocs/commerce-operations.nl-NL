@@ -1,9 +1,9 @@
 ---
 title: Opmerkingen bij de release
 description: Meer informatie over de patches die beschikbaar zijn voor Adobe Commerce en de problemen die ze oplossen.
-source-git-commit: bb1cb17b75a799409336068967c9d0facefeaf41
+source-git-commit: e9ba2d0ad8568c40335e8643ef0070d9e2bb9b3f
 workflow-type: tm+mt
-source-wordcount: '9467'
+source-wordcount: '9581'
 ht-degree: 0%
 
 ---
@@ -19,6 +19,14 @@ De [[!DNL Quality Patches Tool]](https://github.com/magento/quality-patches) lev
 >[!INFO]
 >
 >Voor informatie over [!DNL quality patches] die door de Gemeenschap voor Magento Open Source zijn opgericht, [releaseopmerkingen](https://github.com/magento/quality-patches/blob/master/community-release-notes.md).
+
+## v1.1.22 {#v1-1-22}
+
+* **ACSD-47444** (voor Adobe Commerce en Magento Open Source >=2.4.0 &lt;2.4.3) - Hiermee wordt het _Arrayverschuiving benaderen bij waarde van type bool_ fout bij het openen van bepaalde niet bestaande categoriepaden voor bekende producten op PHP 7.4.
+* **ACSD-47332** (voor Adobe Commerce en Magento Open Source >=2.4.0 &lt;2.4.6) - Hiermee wordt het probleem verholpen waarbij de uitsnede mislukt door een fout die alleen wordt gerapporteerd bij een uitvoering tussen 00:00 en 00:59 UTC.
+* **ACSD-47280** (voor Adobe Commerce en Magento Open Source >=2.4.0 &lt;2.4.6) - Hiermee wordt het probleem verholpen waarbij het uitschakelen van de functie voor gedeelde catalogus in een bepaald bereik niet correct werkt.
+* **ACSD-47106** (voor Adobe Commerce en Magento Open Source >=2.4.4 &lt;2.4.6) - Hiermee wordt het probleem verholpen waarbij een waarde niet kan worden opgeslagen in een nieuw aangepast kenmerk op een pagina voor het maken van een bedrijf.
+* Bijgewerkte patch: ACSD-45143.
 
 ## v1.1.21 {#v1-1-21}
 
