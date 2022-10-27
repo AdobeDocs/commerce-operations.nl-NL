@@ -1,9 +1,9 @@
 ---
 title: L2-cacheconfiguratie
 description: Leer om het L2 geheime voorgeheugen te vormen.
-source-git-commit: e5e4cf0b3979a457e706823dd16c88508ec4abd8
+source-git-commit: 2ef8b48fab84221c8e6423f41126bbee37706809
 workflow-type: tm+mt
-source-wordcount: '428'
+source-wordcount: '427'
 ht-degree: 0%
 
 ---
@@ -21,7 +21,7 @@ De handel slaat de gehakte gegevensversie in Redis op, met achtervoegsel &quot;:
 
 >[!INFO]
 >
->Voor Adobe Commerce over cloudinfrastructuur kunt u de beste werkwijzen raadplegen in de [Uitgebreide Redis-cacheimplementatie](https://support.magento.com/hc/en-us/articles/360049292532) ondersteuningsartikel.
+>Voor Adobe Commerce op cloudinfrastructuur kunt u [variabelen implementeren](https://devdocs.magento.com/cloud/env/variables-deploy.html#redis_backend) voor L2 cacheconfiguratie.
 
 ## Voorbeeld van configuratie
 
