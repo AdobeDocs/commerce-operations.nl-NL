@@ -1,9 +1,9 @@
 ---
 title: Releaseplanning
 description: Leer wanneer specifieke versies van Adobe Commerce zijn gepland voor bèta, pre-release en algemene beschikbaarheid.
-source-git-commit: 77ef9c276306700a9ff62795d05075e8731f5d5a
+source-git-commit: 261aecd7d217e5c2e22f1a6c97242baa2923af60
 workflow-type: tm+mt
-source-wordcount: '0'
+source-wordcount: '428'
 ht-degree: 0%
 
 ---
@@ -11,7 +11,7 @@ ht-degree: 0%
 
 # Releaseplanning
 
-Adobe streeft voortdurend naar de juiste balans tussen het eenvoudig en voorspelbaar maken van productupgrades en het sneller aanbieden van verbeteringen en nieuwe functies voor vroege gebruikers. Het afgelopen jaar hebben we verfijnd hoe we software leveren om dit evenwicht te ondersteunen. Raadpleeg voor meer informatie onze [releasebeleid](policy.md).
+Adobe streeft voortdurend naar de juiste balans tussen het eenvoudig en voorspelbaar maken van productupgrades en het sneller aanbieden van verbeteringen en nieuwe functies voor vroege gebruikers. Het afgelopen jaar hebben we verfijnd hoe we software leveren om dit evenwicht te ondersteunen. Raadpleeg voor meer informatie onze [versiebeleid](versioning-policy.md).
 
 Adobe geeft beveiligings- en functionele patches uit voor elke ondersteunde releaselijn van Adobe Commerce en Magento Open Source.
 

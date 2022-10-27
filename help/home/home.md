@@ -2,7 +2,7 @@
 keywords: Adobe Commerce;home;populaire onderwerpen
 title: Home
 description: Blader door een index van de Adobe Commerce-documentatie van het operationele product.
-source-git-commit: 441bbcf15901b9ca547780eb6f3a20efc8025d91
+source-git-commit: 80163ec1c40a19ea4eb138c3753b08daa231dc41
 workflow-type: tm+mt
 source-wordcount: '148'
 ht-degree: 0%
@@ -126,4 +126,4 @@ Meer informatie over nieuwe documentatie en belangrijke updates voor bestaande d
 | Wijzigen | Type |
 |------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|------|
 | Verplaatst [Handleiding voor beveiliging en naleving](../security-and-compliance/overview.md) van [devdocs.magento.com](https://devdocs.magento.com/security/security-and-compliance.html). | Nieuw |
-| Verplaatst [Handleiding voor informatie bij vrijgeven](../release/roadmap.md) van [devdocs.magento.com](https://devdocs.magento.com/release/released-versions.html). | Nieuw |
+| Verplaatst [Handleiding voor informatie bij vrijgeven](../release/release-notes/overview.md) van [devdocs.magento.com](https://devdocs.magento.com/release/released-versions.html). | Nieuw |

@@ -1,0 +1,24 @@
+---
+title: Beschikbaarheid van producten
+description: Ontdek welke Adobe Commerce-functies momenteel beschikbaar zijn, hoe u deze kunt openen en hoe u de compatibiliteit met bepaalde Adobe Commerce-releases kunt controleren.
+source-git-commit: f9bbfb86d2197ee7252602edba455ebcae5a2b18
+workflow-type: tm+mt
+source-wordcount: '376'
+ht-degree: 0%
+
+---
+
+
+# Beschikbaarheid van producten
+
+In de volgende tabel wordt de status van de beschikbaarheid van Adobe Commerce-software beschreven en wordt aangegeven waar deze beschikbaar is, met name voor software die beschikbaar is buiten het conventionele Adobe Commerce Composer-pakket.
+
+| Product | Beschikbaarheid | Hoe kan ik het bereiken? | |-|-|-|-| | **Adobe Commerce 2.4.5**                  | Nu beschikbaar | [Composer](../installation/composer.md)  | | **Adobe Commerce on cloud Infrastructure Tools (ook bekend als ECE-Tools)** | Nu beschikbaar | [Composer](https://devdocs.magento.com/cloud/project/ece-tools-update.html) | | **Live zoeken**                                 | Nu beschikbaar | [Commerce Marketplace](https://marketplace.magento.com/magento-live-search.html) \| [Documentatie voor ontwikkelaars](https://devdocs.magento.com/live-search/overview.html) \| [Opmerkingen bij de release](https://experienceleague.adobe.com/docs/commerce-merchant-services/live-search/release-notes.html) \| [Handboek](https://experienceleague.adobe.com/docs/commerce-merchant-services/live-search/overview.html) | | **Betalingsdiensten**                            | Nu beschikbaar | [Commerce Marketplace](https://marketplace.magento.com/magento-payment-services.html) \| [Opmerkingen bij de release](https://experienceleague.adobe.com/docs/commerce-merchant-services/payment-services/release-notes.html) \| [Handboek](https://experienceleague.adobe.com/docs/commerce-merchant-services/payment-services/guide-overview.html) | | **Snelle afhandeling** | Nu beschikbaar | [Commerce Marketplace](https://marketplace.magento.com/magento-quick-checkout.html) \| [Opmerkingen bij de release](https://experienceleague.adobe.com/docs/commerce-merchant-services/quick-checkout/release-notes.html) \| [Handboek](https://experienceleague.adobe.com/docs/commerce-merchant-services/quick-checkout/overview.html) | | **Winkeltegoed voor Adobe Commerce** | Nu beschikbaar | [Commerce Marketplace](https://marketplace.magento.com/store-fulfillment-magento-walmart.html) \| [Handboek](https://experienceleague.adobe.com/docs/commerce-merchant-services/store-fulfillment/introduction.html) | | **Product Recommendations**                     | Nu beschikbaar | [Commerce Marketplace](https://marketplace.magento.com/magento-product-recommendations.html) \| [Documentatie voor ontwikkelaars](https://devdocs.magento.com/recommendations/product-recs.html) \| [Opmerkingen bij de release](https://experienceleague.adobe.com/docs/commerce-merchant-services/product-recommendations/release-notes.html) \| [Handboek](https://experienceleague.adobe.com/docs/commerce-merchant-services/product-recommendations/overview.html) | | **PWA Studio**                                  | Nu beschikbaar | [Documentatie](https://developer.adobe.com/commerce/pwa-studio/) en [GitHub](https://github.com/magento/pwa-studio) | | **Kanaalbeheer**                             | Nu beschikbaar | [Commerce Marketplace](https://marketplace.magento.com/magento-channel-manager.html) \| [Handboek](https://experienceleague.adobe.com/docs/commerce-channels/channel-manager/intro-to-channel-manager/overview.html) | | **Amazon Sales Channel**                        | Nu beschikbaar voor Adobe Commerce-versies 2.4.x en 2.3.x (VS, Canada, Mexico en het Verenigd Koninkrijk) | [Commerce Marketplace](https://marketplace.magento.com/magento-module-amazon.html) \| [Opmerkingen bij de release](https://experienceleague.adobe.com/docs/commerce-channels/amazon/release-notes.html) \| [Handboek](https://experienceleague.adobe.com/docs/commerce-channels/amazon/overview.html) | | **Experience Platform Connector**                     | Nu beschikbaar | [Commerce Marketplace](https://marketplace.magento.com/magento-experience-platform-connector.html) \| [Opmerkingen bij de release](https://experienceleague.adobe.com/docs/commerce-merchant-services/experience-platform-connector/release-notes.html?lang=en) \| [Handboek](https://experienceleague.adobe.com/docs/commerce-merchant-services/experience-platform-connector/overview.html?lang=en) |
+
+## Compatibiliteit
+
+Gebruik deze sectie voor meer informatie over Adobe Commerce-modules die zijn losgekoppeld van het kernreleaseproces. Hierdoor kan Adobe herhalingen van deze modules sneller vrijgeven aan handelaren die bereid zijn een klein risico te accepteren in ruil voor eerdere toegang tot nieuwe functies.
+
+In de volgende tabel wordt de releasestatus van extensieversies ten opzichte van Adobe Commerce weergegeven.
+
+{{$include /help/_includes/templated/release/compatibility-mde.md}}
