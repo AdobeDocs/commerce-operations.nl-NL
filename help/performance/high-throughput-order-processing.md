@@ -1,9 +1,9 @@
 ---
 title: Verwerking van bestellingen met hoge doorvoer
 description: Optimaliseer de plaatsing van bestellingen en het afrekenen van bestellingen voor uw Adobe Commerce- of Magento Open Source-implementatie.
-source-git-commit: d263e412022a89255b7d33b267b696a8bb1bc8a2
+source-git-commit: 45ffa6487d94feba3d6c2a6d5d938108b1fef91d
 workflow-type: tm+mt
-source-wordcount: '1046'
+source-wordcount: '1048'
 ht-degree: 0%
 
 ---
@@ -75,7 +75,7 @@ De `set` opdracht schrijft het volgende naar de `app/etc/env.php` bestand:
 AsyncOrder ondersteunt een beperkte set [!DNL Commerce] functies.
 
 | Categorie | Ondersteunde functie |
-|---------------- | -----------------------|
+|------------------|--------------------------------------------------------------------------|
 | Afhandelingstypen | Afhandeling van één pagina<br>Standaard uitchecken<br>B2B-onderhandelbare offerte |
 | Betalingsmethoden | Cheque/postwissel<br>Onder rembours<br>Braintree<br>PayPal PayFlow Pro |
 | Verzendmethoden | Alle verzendmethoden worden ondersteund. |
@@ -184,8 +184,8 @@ stage:
 
 <!-- link definitions -->
 
-[global]: https://docs.magento.com/user-guide/catalog/inventory-options-global.html
-[inventory]: https://docs.magento.com/user-guide/configuration/catalog/inventory.html
+[global]: https://experienceleague.adobe.com/docs/commerce-admin/inventory/configuration/global-options.html
+[inventory]: https://experienceleague.adobe.com/docs/commerce-admin/inventory/guide-overview.html
 [mrg]: https://developer.adobe.com/commerce/php/module-reference/
 [AsyncOrder]: https://developer.adobe.com/commerce/php/module-reference/module-async-order/
 [UitgesteldeTotaalBerekenen]: https://developer.adobe.com/commerce/php/module-reference/module-deferred-total-calculating/

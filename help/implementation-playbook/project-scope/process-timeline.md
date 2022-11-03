@@ -1,15 +1,16 @@
 ---
-title: Proces en tijdlijn
+title: Implementatieproces en tijdlijn
 description: Zie voorbeelden van gebruikelijke tijdlijnen en tijdlijnactiviteiten voor Adobe Commerce-implementatie.
 exl-id: 73e38098-db2b-4ad3-9f2d-ac8a377f2525
-source-git-commit: 6509c939c7abc5462bffbe104466b2ff9e6fadc9
+source-git-commit: 6e07f8c958adedd2a98d3fe0d174865a3b9ebead
 workflow-type: tm+mt
-source-wordcount: '168'
+source-wordcount: '170'
 ht-degree: 0%
 
 ---
 
-# Normaal proces en tijdlijn
+
+# Typisch implementatieproces en tijdlijn
 
 Veel organisaties bereiden zich voor op een handelstransformatie door een verzoek om een voorstel (RFP) te creëren. Dit omvat gedetailleerde vereisten, huidige systemen van verslag, een bedrijfscase, en specifieke doelstellingen (bijvoorbeeld, opbrengst, omzetting, gemiddelde ordewaarde) om succes te bepalen. Het merk nadert vervolgens twee tot drie verschillende integrators van handelssystemen of digitale agentschappen om schattingen en voorstellen te evalueren, te herzien, een bedrijf te selecteren en te beginnen werken aan het geplande tijdschema om te lanceren.
 
