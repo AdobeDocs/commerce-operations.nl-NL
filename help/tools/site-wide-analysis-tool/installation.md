@@ -1,9 +1,9 @@
 ---
 title: Hulplijn installeren
 description: Deze handleiding gebruiken om te installeren [!DNL Site-Wide Analysis Tool] voor uw website
-source-git-commit: d263e412022a89255b7d33b267b696a8bb1bc8a2
+source-git-commit: 434fb9eb9570f183d9bf9d4b56b8e56a69e8005d
 workflow-type: tm+mt
-source-wordcount: '1063'
+source-wordcount: '1067'
 ht-degree: 0%
 
 ---
@@ -67,7 +67,7 @@ Uw infrastructuur ter plaatse moet aan de volgende vereisten voldoen alvorens de
 
 ## [!DNL Commerce Services Connector]
 
-De agent vereist [[!DNL Commerce Services Connector]](https://experienceleague.adobe.com/docs/commerce-merchant-services/user-guides/saas.html) extensie die op uw systeem moet worden geïnstalleerd en [geconfigureerd](https://experienceleague.adobe.com/docs/commerce-merchant-services/user-guides/saas.html) met API-toetsen. Voer de volgende opdracht uit om te controleren of de extensie is geïnstalleerd:
+De agent vereist [[!DNL Commerce Services Connector]](https://experienceleague.adobe.com/docs/commerce-merchant-services/user-guides/integration-services/saas.html) extensie die op uw systeem moet worden geïnstalleerd en [geconfigureerd](https://experienceleague.adobe.com/docs/commerce-merchant-services/user-guides/integration-services/saas.html) met API-toetsen. Voer de volgende opdracht uit om te controleren of de extensie is geïnstalleerd:
 
 ```bash
 bin/magento module:status Magento_ServicesConnector
@@ -83,7 +83,7 @@ Als u de extensie hebt geïnstalleerd en geconfigureerd met een bestaande API-sl
 
 1. Klikken **[!UICONTROL Delete]** naast de bestaande API-sleutel.
 
-1. [Configureren](https://experienceleague.adobe.com/docs/commerce-merchant-services/user-guides/saas.html) een nieuwe API-sleutel.
+1. [Configureren](https://experienceleague.adobe.com/docs/commerce-merchant-services/user-guides/integration-services/saas.html) een nieuwe API-sleutel.
 
 >[!IMPORTANT]
 >
@@ -109,7 +109,7 @@ Als de extensie niet is geïnstalleerd, gebruikt u de volgende instructies om de
    bin/magento setup:upgrade
    ```
 
-1. [API-toetsen configureren](https://experienceleague.adobe.com/docs/commerce-merchant-services/user-guides/saas.html) om de extensie aan te sluiten op uw systeem.
+1. [API-toetsen configureren](https://experienceleague.adobe.com/docs/commerce-merchant-services/user-guides/integration-services/saas.html) om de extensie aan te sluiten op uw systeem.
 
 ## De agent installeren
 
