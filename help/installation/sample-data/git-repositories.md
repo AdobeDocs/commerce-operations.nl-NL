@@ -1,9 +1,9 @@
 ---
 title: Voorbeeldgegevensopslagruimten klonen
 description: Voer de volgende stappen uit om Adobe Commerce- en Magento Open Source-voorbeeldgegevens te installeren door Git-opslagruimten te klonen.
-source-git-commit: f6f438b17478505536351fa20a051d355f5b157a
+source-git-commit: 3692dcfd5b50c2f036b005d40a22db061b9ea5fd
 workflow-type: tm+mt
-source-wordcount: '800'
+source-wordcount: '764'
 ht-degree: 0%
 
 ---
@@ -73,12 +73,10 @@ Om de bewaarplaats van GitHub van steekproefgegevens te klonen gebruikend het pr
 
    Als u het `2.4-develop` vertakking van de Magento Open Source GitHub bewaarplaats, zou de tak van Gegevens van de Steekproef moeten zijn `2.4-develop`.
 
-   Als u het `2.4.3` vertakking van de Magento Open Source GitHub bewaarplaats, zou de tak van Gegevens van de Steekproef moeten zijn `2.4.3`.
-
-   Als u de juiste vertakking wilt uitchecken, voert u de volgende opdracht uit vanuit de hoofdmap van de gegevensopslagruimte van het voorbeeld (ervan uitgaande dat u de opdracht `2.4.3` vertakking):
+   Als u de juiste vertakking wilt uitchecken, voert u de volgende opdracht uit vanuit de hoofdmap van de gegevensopslagruimte van het voorbeeld (ervan uitgaande dat u de opdracht `2.4-develop` vertakking):
 
    ```bash
-   git checkout 2.4.3
+   git checkout 2.4-develop
    ```
 
 1. Wijzigen in `<app_root>`.
@@ -129,12 +127,10 @@ U kunt als volgt de GitHub-voorbeeldgegevens klonen met behulp van het HTTPS-pro
 
    Als u het `2.4-develop` vertakking van de Magento Open Source GitHub bewaarplaats, zou de tak van Gegevens van de Steekproef moeten zijn `2.4-develop`.
 
-   Als u het `2.4.3` vertakking van de Magento Open Source GitHub bewaarplaats, zou de tak van Gegevens van de Steekproef moeten zijn `2.4.3`.
-
-   Als u de juiste vertakking wilt uitchecken, voert u de volgende opdracht uit vanuit de hoofdmap van de gegevensopslagruimte van het voorbeeld (ervan uitgaande dat u de opdracht `2.4.3` vertakking):
+   Als u de juiste vertakking wilt uitchecken, voert u de volgende opdracht uit vanuit de hoofdmap van de gegevensopslagruimte van het voorbeeld (ervan uitgaande dat u de opdracht `2.4-develop` vertakking):
 
    ```bash
-   git checkout 2.4.3
+   git checkout 2.4-develop
    ```
 
 1. Wijzigen in `<magento_root>`.

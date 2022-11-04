@@ -1,9 +1,9 @@
 ---
 title: Snelle start van de installatie op locatie
 description: Voer de volgende stappen uit om Adobe Commerce of Magento Open Source op uw eigen infrastructuur te installeren.
-source-git-commit: f6f438b17478505536351fa20a051d355f5b157a
+source-git-commit: 3692dcfd5b50c2f036b005d40a22db061b9ea5fd
 workflow-type: tm+mt
-source-wordcount: '996'
+source-wordcount: '993'
 ht-degree: 0%
 
 ---
@@ -95,32 +95,32 @@ Zo krijgt u het metapakket Adobe Commerce of Magento Open Source:
 
    >[!NOTE]
    >
-   >Adobe Commerce-klanten hebben twee weken voor de datum van algemene beschikbaarheid toegang tot patches van 2,4,x en 2,3,x. Pakketten met pre-release zijn alleen beschikbaar via Composer. U kunt tot pre-versies op het Portaal van de Ontwikkelaar of GitHub tot GA niet toegang hebben. Neem contact op met Adobe Commerce Support als u deze pakketten niet kunt vinden in Composer.
+   >Adobe Commerce-klanten hebben twee weken voor de datum van algemene beschikbaarheid (GA) toegang tot patches. Pakketten met pre-release zijn alleen beschikbaar via Composer. U kunt tot pre-versies op het Portaal van de Ontwikkelaar of GitHub tot GA niet toegang hebben. Neem contact op met Adobe Commerce Support als u deze pakketten niet kunt vinden in Composer.
 
 ### Voorbeeld - kleine release
 
-Kleine versies bevatten nieuwe functies, oplossingen voor de kwaliteit en beveiligingsoplossingen. Gebruik Composer om een kleine release op te geven. Zo kunt u bijvoorbeeld het pakket met Adobe Commerce 2.4.3-metagegevens opgeven:
+Kleine versies bevatten nieuwe functies, oplossingen voor de kwaliteit en beveiligingsoplossingen. Gebruik Composer om een kleine release op te geven. U kunt bijvoorbeeld als volgt het metapakket Adobe Commerce 2.4.5 opgeven:
 
 ```bash
-composer create-project --repository-url=https://repo.magento.com/ magento/project-enterprise-edition=2.4.3 <install-directory-name>
+composer create-project --repository-url=https://repo.magento.com/ magento/project-enterprise-edition=2.4.5 <install-directory-name>
 ```
 
 ### Voorbeeld - Kwaliteitspatch
 
-Kwaliteitspatches bevatten voornamelijk functionele _en_ beveiligingsoplossingen. Soms kunnen ze echter ook nieuwe, achterwaartse compatibele functies bevatten. Gebruik Composer om een kwaliteitspatch te downloaden. Zo kunt u bijvoorbeeld het pakket met Adobe Commerce 2.4.3-metagegevens opgeven:
+Kwaliteitspatches bevatten voornamelijk functionele _en_ beveiligingsoplossingen. Soms kunnen ze echter ook nieuwe, achterwaartse compatibele functies bevatten. Gebruik Composer om een kwaliteitspatch te downloaden. U kunt bijvoorbeeld als volgt het metapakket Adobe Commerce 2.4.5 opgeven:
 
 ```bash
-composer create-project --repository-url=https://repo.magento.com/ magento/project-enterprise-edition=2.4.3 <install-directory-name>
+composer create-project --repository-url=https://repo.magento.com/ magento/project-enterprise-edition=2.4.5 <install-directory-name>
 ```
 
 ### Voorbeeld - Beveiligingspatch
 
 Beveiligingspatches bevatten alleen beveiligingsoplossingen. Ze zijn ontworpen om het upgradeproces sneller en eenvoudiger te maken.
 
-Beveiligingspatches gebruiken de naamgevingsconventie van Composer `2.4.3-px`. Gebruik Composer om een patch op te geven. Als u bijvoorbeeld het pakket met Adobe Commerce 2.4.3-p1 wilt downloaden:
+Beveiligingspatches gebruiken de naamgevingsconventie van Composer `2.4.5-px`. Gebruik Composer om een patch op te geven. Als u bijvoorbeeld het pakket met Adobe Commerce 2.4.5-p1 wilt downloaden:
 
 ```bash
-composer create-project --repository-url=https://repo.magento.com/ magento/project-enterprise-edition=2.4.3-p1 <install-directory-name>
+composer create-project --repository-url=https://repo.magento.com/ magento/project-enterprise-edition=2.4.5-p1 <install-directory-name>
 ```
 
 ## Bestandsmachtigingen instellen
