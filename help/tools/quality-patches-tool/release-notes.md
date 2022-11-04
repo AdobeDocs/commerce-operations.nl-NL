@@ -1,9 +1,9 @@
 ---
 title: Opmerkingen bij de release
 description: Meer informatie over de patches die beschikbaar zijn voor Adobe Commerce en de problemen die ze oplossen.
-source-git-commit: e9ba2d0ad8568c40335e8643ef0070d9e2bb9b3f
+source-git-commit: 6d0b5515792afe33eab440290413b84d251796cc
 workflow-type: tm+mt
-source-wordcount: '9581'
+source-wordcount: '9752'
 ht-degree: 0%
 
 ---
@@ -19,6 +19,18 @@ De [[!DNL Quality Patches Tool]](https://github.com/magento/quality-patches) lev
 >[!INFO]
 >
 >Voor informatie over [!DNL quality patches] die door de Gemeenschap voor Magento Open Source zijn opgericht, [releaseopmerkingen](https://github.com/magento/quality-patches/blob/master/community-release-notes.md).
+
+## v1.1.23 {#v1-1-23}
+
+* **ACSD-47179** (voor Adobe Commerce en Magento Open Source >=2.4.0 &lt;2.4.6) - Hiermee wordt het probleem verholpen waarbij een beheerder met beperkte toegang tot een bepaald bereik productbeoordelingen niet kan verwijderen.
+* **ACSD-47107** (voor Adobe Commerce en Magento Open Source >=2.4.2 &lt;2.4.5) - Hiermee wordt het probleem opgelost waarbij de korting op de regel Catalogusprijs wordt toegepast op aangepaste productopties.
+* **ACSD-47232** (voor Adobe Commerce en Magento Open Source >=2.4.0 &lt;2.4.6) - Hiermee wordt de emissie gecorrigeerd waarbij coupons met totaal gewicht niet kunnen worden toegepast in de Admin.
+* **ACSD-46519** (voor Adobe Commerce en Magento Open Source >=2.4.1 &lt;2.4.6) - Hiermee wordt het probleem verholpen waarbij de aanvraag van de categorie GraphQL een onjuiste product_count voor een ankercategorie retourneert.
+* **ACSD-47027** (voor Adobe Commerce en Magento Open Source >=2.4.2 &lt;2.4.6) - lost een langzaam updateCompanyRole GraphQL- verzoek op.
+* **ACSD-4766** (voor Adobe Commerce en Magento Open Source >=2.4.0 &lt;2.4.6) - Hiermee wordt het probleem verholpen waarbij de filterfunctie niet werkt in Beheer > Systeem > Machtigingen > Gebruikersrollen > een rol > Rolgebruikersraster.
+* **ACSD-47497** (voor Adobe Commerce en Magento Open Source >=2.4.0 &lt;2.4.6) - Hiermee wordt het probleem verholpen waarbij het tabblad Services niet zichtbaar is in de Configuratie onder Beheer.
+* Bijgewerkte patch: ACSD-47743.
+* Vervangen patches: MDVA-42807.
 
 ## v1.1.22 {#v1-1-22}
 
