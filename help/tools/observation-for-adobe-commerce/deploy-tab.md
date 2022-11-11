@@ -1,7 +1,7 @@
 ---
 title: "De [!UICONTROL Deploy] tab"
 description: Meer informatie over de [!UICONTROL Deploy] tabblad van [!DNL Observation for Adobe Commerce].
-source-git-commit: 3f2a401bb916fc04405f21ba2acfc42f7defdccb
+source-git-commit: b95a35ee64cd8e844a51a9ff699eceb9c3a9266c
 workflow-type: tm+mt
 source-wordcount: '1114'
 ht-degree: 0%
@@ -40,7 +40,7 @@ De **[!UICONTROL Deploy State]** frame toont de implementatiegebeurtenissen die 
 
 De **[!UICONTROL Deploy Log Detail]** Het kader toont de summiere details van het plaatsingslogboekbericht die over het geselecteerde tijdkader voorkwamen. Het kader ontleedt voor de volgende koorden in de plaatsingslogboeken:
 
-* ‘%NOTITIE: Implementatie starten.%&#39;) als &#39;start_dply&#39;
+* %NOTICE: Implementatie starten.%&#39;) als &#39;start_dply&#39;
 * &#39;%INFO: Beginscenario(s): scenario/deploy.xml%&#39;) als &#39;start_scenario&#39;
 * %NOTICE: Vooraf implementeren%&#39;) starten als &#39;start_predply&#39;
 * &#39;% INFO: Patchlogbestand (%&#39;) herstellen als &#39;rstr_ptch_log&#39;
@@ -97,7 +97,7 @@ De **[!UICONTROL Post Deploy Log Detail]** het kader toont de post-opstellings l
 
 ![Cloud Log Detail](../../assets/tools/observation-for-adobe-commerce/deploy-tab-5.jpg)
 
-De **[!UICONTROL Cloud Log Detail]** frame geeft de gegevens van het cloudlog weer die tijdens het geselecteerde tijdsbestek zijn opgetreden. De volgende tekenreeksen worden geparseerd en geretourneerd met het onderstaande AS-label:
+De **[!UICONTROL Cloud Log Detail]** frame geeft de gegevens van het cloudlog weer die tijdens het geselecteerde tijdsbestek zijn opgetreden. De volgende tekenreeksen worden geparseerd en geretourneerd met het label &#39;AS&#39; hieronder:
 
 * &#39;%DEBUG: /bin/bash-c &quot;set -o pipefail&quot;; php ./bin/magento setup:upgrade%&#39;) als &#39;start_update&#39;
 * &#39;%Schema maken/bijwerken:%&#39;) als &#39;schema_updates&#39;

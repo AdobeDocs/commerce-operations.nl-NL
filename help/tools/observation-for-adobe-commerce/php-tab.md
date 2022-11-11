@@ -1,9 +1,9 @@
 ---
 title: "De [!UICONTROL PHP] tab"
-description: Meer informatie over de [!UICONTROL PHP] tabblad van [!DNS-waarneming voor Adobe Commerce].
-source-git-commit: f71fc3b2a66a4cc0b0d7865138184135e4a874e0
+description: Meer informatie over de [!UICONTROL PHP] tabblad van [!DNL Observation for Adobe Commerce].
+source-git-commit: 28055eb09235912c66c637990e2081a70e1c7808
 workflow-type: tm+mt
-source-wordcount: '595'
+source-wordcount: '591'
 ht-degree: 0%
 
 ---
@@ -11,7 +11,7 @@ ht-degree: 0%
 
 # De [!UICONTROL PHP] tab
 
-De **PHP** tabblad geeft PHP-procesproblemen weer om diepgaande analyse te geven van PHP-problemen.
+De **PHP** Dit tabblad geeft PHP-procesproblemen weer om een diepgaande analyse te geven van PHP-problemen.
 
 ## [!UICONTROL PHP active process details]
 
@@ -23,7 +23,7 @@ De **[!UICONTROL PHP active process details]** frame toont de PHP processen, inc
 
 ![PHP-procesbelasting](../../assets/tools/php-process-load.jpg)
 
-Dit frame toont de CPU load van PHP-FPM processen over de geselecteerde tijdsperiode.
+De **[!UICONTROL PHP process load (# of PHP processes and % of CPU load)]** frame toont de CPU load van PHP-FPM processen over de geselecteerde tijdsperiode.
 
 ## [!UICONTROL PHP Memory detail]
 
@@ -35,13 +35,13 @@ De **[!UICONTROL PHP Memory detail]** frame toont het geheugengebruik van PHP pr
 
 ![PHP CPU-gebruik](../../assets/tools/php-cpu-utilization.jpg)
 
-De **[!UICONTROL PHP CPU Utilization]** frame toont het CPU % gebruik van PHP processen over het geselecteerde tijdsbestek.
+De **[!UICONTROL PHP CPU Utilization]** frame toont het CPU-procentuele gebruik van PHP processen over de geselecteerde tijdsperiode.
 
 ## [!UICONTROL PHP Process states]
 
 ![PHP-processtatussen](../../assets/tools/php-process-states-image-1.jpg)
 
-De **[!UICONTROL PHP Process states]** frame toont de PHP processtatus over het geselecteerde tijdframe. Deze wordt weergegeven wanneer PHP-processen worden beëindigd en opnieuw worden gestart. Wees voorzichtig met afgesloten PHP-processen die geen nieuwe start laten zien.
+De **[!UICONTROL PHP Process states]** frame toont de PHP processtatus over het geselecteerde tijdframe. Het wordt weergegeven wanneer PHP-processen worden beëindigd en opnieuw worden gestart. Wees voorzichtig met afgesloten PHP-processen die geen nieuwe start laten zien.
 
 * %NOTICE: Beëindigen...%&#39;) als &#39;php_term&#39;
 * MELDING &#39;%: afscheid nemen, afscheid nemen!%&#39;) als &#39;php_exit&#39;
@@ -106,7 +106,7 @@ De **[!UICONTROL Database Errors]** frame geeft databasefouten weer over de gese
 * &#39;%1062 \[ERROR\] InnoDB:%&#39;) als &#39;sql_1062_e&#39;
 * &#39;%[Opmerking] WSREP: Geheugenkaart naar schijf spoelen...%&#39;) als &#39;mem_map_flush&#39;
 * &#39;%Internal MariaDB error code: 1146%&#39;) als &#39;sql_1146&#39;
-* &#39;%Internal MariaDB error code: 1062%&#39;) als &#39;sql_1062&#39; ・ &#39;%1062&#39; [Waarschuwing] InnoDB:%&#39;) als &#39;sql_1062_w&#39;
+* &#39;%Internal MariaDB error code: 1062%&#39;) als &#39;sql_1062&#39; * &#39;%1062&#39; [Waarschuwing] InnoDB:%&#39;) als &#39;sql_1062_w&#39;
 * &#39;%Internal MariaDB error code: 1064%&#39;) als &#39;sql_1064&#39;
 * &#39;%InnoDB: Bevestigingsfout in bestand%&#39;) als &#39;assertion_err&#39;
 * &#39;%mysqld_safe Aantal processen dat nu wordt uitgevoerd: 0%&#39;) als &#39;mysql_oom&#39;

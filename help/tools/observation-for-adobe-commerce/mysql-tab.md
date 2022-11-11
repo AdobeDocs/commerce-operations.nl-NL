@@ -1,7 +1,7 @@
 ---
 title: "De [!UICONTROL MySQL] tab"
 description: Meer informatie over de [!UICONTROL MySQL] tabblad van [!DNL Observation for Adobe Commerce].
-source-git-commit: 3f2a401bb916fc04405f21ba2acfc42f7defdccb
+source-git-commit: 8c9753fe5b9038978859cc101d53f897267ecfe9
 workflow-type: tm+mt
 source-wordcount: '2030'
 ht-degree: 0%
@@ -14,7 +14,7 @@ ht-degree: 0%
 
 ![MySQL% gratis opslag per knooppunt](../../assets/tools/observation-for-adobe-commerce/mysql-tab-1.jpg)
 
-Veel problemen worden veroorzaakt doordat MySQL onvoldoende opslagruimte heeft in de opslagruimte die is toegewezen aan MySQL (`datadir` MySQL configuratie setting, default is `/data/mysql`) of de `tmpdir` er is bijna geen ruimte meer. De standaardwaarde `tmpdir` (MySQL-instelling) is `/tmp`. In dit frame wordt gekeken naar de `/, /tmp` (indien gedefinieerd als een afzonderlijke montage) en de `/data/mysql` % van de gratis opslag. Vanaf MySQL versie 5.7 (MariaDB versie 10.2) worden ongecomprimeerde tmp-tabellen geschreven naar een tmp-tabelruimte in het dialoogvenster `/data/mysql` in het bestand (ibtmp1). Dit bestand wordt standaard zonder beperkingen uitgebreid. Aangezien het een tabelruimte is, neemt de grootte niet af en wordt de waarde weer ingesteld op 12 MB wanneer MySQL opnieuw wordt gestart.
+Veel problemen worden veroorzaakt doordat MySQL onvoldoende opslagruimte heeft in de opslagruimte die is toegewezen aan MySQL (`datadir` MySQL configuratie setting, default is `/data/mysql`) of de `tmpdir` er is bijna geen ruimte meer. De standaardwaarde `tmpdir` (MySQL-instelling) is `/tmp`. De **[!UICONTROL MySQL% free storage by node]** frame kijkt naar de `/, /tmp` (indien gedefinieerd als een afzonderlijke montage) en de `/data/mysql` percentage vrije opslag. Vanaf MySQL versie 5.7 (MariaDB versie 10.2), niet-gecomprimeerd `tmp` tabellen worden geschreven naar een `tmp` tabelruimte in de `/data/mysql` in het bestand (ibtmp1). Dit bestand wordt standaard automatisch zonder limiet uitgebreid. Aangezien het een tabelruimte is, neemt de grootte niet af en wordt de waarde weer ingesteld op 12 MB wanneer MySQL opnieuw wordt gestart.
 
 ## [!UICONTROL MySQL Connections by Node]
 
@@ -38,13 +38,13 @@ De **[!UICONTROL Galera Number of Nodes in cluster]** het kader toont informatie
 
 ![MySQL afsluiten en starten](../../assets/tools/observation-for-adobe-commerce/mysql-tab-5.jpg)
 
-De **[!UICONTROL MySQL shutdowns and starts]** frame detecteert wanneer een knooppunt wordt afgesloten. [!DNL Galera] knooppunten worden verwijderd en zelf uit de [!DNL Galera] knooppunt. Dit zal typisch in een nieuw begin van de dienst MySQL resulteren.
+De **[!UICONTROL MySQL shutdowns and starts]** frame detecteert wanneer een knooppunt wordt afgesloten. De [!DNL Galera] knooppunten worden verwijderd en zelf uit de [!DNL Galera] knooppunt. Dit zal typisch in een nieuw begin van de dienst MySQL resulteren.
 
 ## [!UICONTROL Galera log]
 
 ![Galera](../../assets/tools/observation-for-adobe-commerce/mysql-tab-6.jpg)
 
-De **[!UICONTROL Galera log]** het kader toont tellingen van bijzondere signalen van de logboeken MySQL betreffende [!DNL Galera] knooppunten, hun statussen en de statuswijzigingen van de [!DNL Galera] cluster.
+De **[!UICONTROL Galera log]** het kader toont de tellingen van bijzondere signalen van de logboeken MySQL betreffende [!DNL Galera] knooppunten, hun statussen en de statuswijzigingen van de [!DNL Galera] cluster.
 
 * &#39;%1047 WSREP heeft nog geen knooppunt voor toepassingsgebruik%&#39;) als &#39;node_not_prep_for_use&#39; voorbereid
 * WSREP &#39;%\[ERROR\]: Kan niet lezen van: wsrep_sst_xtrabackup-v2%&#39;) als &#39;xtrabackup_read_fail&#39;
@@ -55,8 +55,8 @@ De **[!UICONTROL Galera log]** het kader toont tellingen van bijzondere signalen
 * &#39;%members = 2/3 (join/total)%&#39;) as&#39;2of3&#39;
 * &#39;%members = 2/2%&#39;) als &#39;2of2&#39;
 * &#39;%members = 1/2%&#39;) als &#39;1of2&#39;
-* &quot;%members = 1/3%&quot;) als &#39;1of3&#39;
-* &quot;%members = 1/1%&quot;) als &#39;1of1&#39;
+* &#39;%members = 1/3%&#39;) als &#39;1of3&#39;
+* &#39;%members = 1/1%&#39;) als &#39;1of1&#39;
 * &quot;%\[Opmerking\] /usr/sbin/mysqld (mysqld 10.%&#39;) as&#39;sql_start&#39;
 * &#39;%Quorum: Geen knooppunt met volledige status:%&#39;) als &#39;no_node_count&#39;
 * &#39;%WSREP: Lid 0%&#39;) als &#39;mem_0&#39;
@@ -102,7 +102,7 @@ De **[!UICONTROL Cron_schedule table updates]** Het kader toont de maximumduur v
 
 ![Trage querysporen](../../assets/tools/observation-for-adobe-commerce/mysql-tab-11.jpg)
 
-De **[!UICONTROL Slow Query Traces]** het kader toont de lijst en verzoektype waar de langzame vraagsporen bestaan. Een langzaam vraagspoor wordt gecreeerd voor vraagtransacties die langer dan 5 seconden duren. Van belang voor dit kader zijn de updatequery&#39;s. Als een tabel wordt bijgewerkt door `UPDATE`, `DELETE`, en `INSERT` instructies, kunnen ze tabellen gedurende een bepaalde periode vergrendelen.
+De **[!UICONTROL Slow Query Traces]** het kader toont de lijst en verzoektype waar de langzame vraagsporen bestaan. Een langzaam vraagspoor wordt gecreeerd voor vraagtransacties die langer dan vijf seconden duren. Van belang voor dit kader zijn de updatequery&#39;s. Als een tabel wordt bijgewerkt door `UPDATE`, `DELETE`, en `INSERT` instructies, kunnen ze tabellen gedurende een bepaalde periode vergrendelen.
 
 Even `SELECT` instructies kunnen rijen vergrendelen bij gebruik met FOR UPDATE.
 
@@ -114,13 +114,13 @@ Even `SELECT` instructies kunnen rijen vergrendelen bij gebruik met FOR UPDATE.
 
 ![Tabelwijziging uitsnijden](../../assets/tools/observation-for-adobe-commerce/mysql-tab-13.jpg)
 
-De **[!UICONTROL Cron table change]** frame is op zoek naar &#39;kan lock for cron job niet verkrijgen:&#39; foutberichten, samen met een specifieke PHP-geheugenfout en vergrendelingen voor de functie `cron_schedule` tabel. Als de `cron_schedule` tabel is vergrendeld (bijvoorbeeld een `DELETE` vraag die tegen het wordt in werking gesteld), zal het andere kronnen van het lopen blokkeren.
+De **[!UICONTROL Cron table change]** frame zoekt naar &#39;kan lock for cron job niet verkrijgen:&#39; foutberichten, samen met een specifieke PHP-geheugenfout en vergrendelingen voor de functie `cron_schedule` tabel. Als de `cron_schedule` tabel is vergrendeld (bijvoorbeeld een `DELETE` vraag die tegen het wordt in werking gesteld), zal het andere kronnen van het lopen blokkeren.
 
 ## [!UICONTROL Deadlocks]
 
 ![Deadlocks](../../assets/tools/observation-for-adobe-commerce/mysql-tab-14.jpg)
 
-De **[!UICONTROL Deadlocks]** frame bekijkt de volgende koorden die van de logboeken MySQL worden geparseerd.
+De **[!UICONTROL Deadlocks]** frame bekijkt de volgende tekenreeksen die uit de MySQL-logboeken zijn geparseerd:
 
 * &#39;%PHP Fatale fout: Toegestane geheugengrootte van%&#39;) als php_mem_error
 * &#39;%get lock; Probeer transactie opnieuw te starten, query was: DELETE VAN \&quot;cron_planning%&quot;) als cron_sched_lock_del
@@ -198,7 +198,7 @@ De **[!UICONTROL DB Statistics]** frame weergeeft verwijdert , schrijft , leest 
 
 ![Databasefouten](../../assets/tools/observation-for-adobe-commerce/mysql-tab-17.jpg)
 
-De **[!UICONTROL Database Errors]** frame geeft diverse databases weer [waarschuwingen en fouten](https://mariadb.com/kb/en/mariadb-error-codes/).
+De **[!UICONTROL Database Errors]** frame geeft diverse databases weer [waarschuwingen en fouten](https://mariadb.com/kb/en/mariadb-error-codes/):
 
 * &#39;%Geheugengrootte toegewezen voor de tijdelijke tabel is meer dan 20% van de waarde van &#39;innodb_buffer_pool_size%&#39; als &#39;temp_tbl_buff_pool&#39;
 * WSREP &#39;%\[ERROR\]: rbr write fail%&#39;) als &#39;rbr_write_fail&#39;
@@ -225,9 +225,9 @@ De **[!UICONTROL Database Errors]** frame geeft diverse databases weer [waarschu
 * &#39;%SQLSTATE[HY000]: Algemene fout: 2014%&#39;) als &#39;sql_2014&#39;
 * &#39;%1927 Verbinding is gedood%&#39;) als &#39;sql_1927&#39;
 * &#39;%1062 \[ERROR\] InnoDB:%&#39;) als &#39;sql_1062_e&#39;
-* &quot;%[Opmerking] WSREP: Geheugenkaart naar schijf spoelen...%&#39;) als &#39;mem_map_flush&#39;
+* &#39;&#39;%[Opmerking] WSREP: Geheugenkaart naar schijf spoelen...%&#39;) als &#39;mem_map_flush&#39;
 * &#39;%Internal MariaDB error code: 1146%&#39;) als &#39;sql_1146&#39;
-* &#39;%Internal MariaDB error code: 1062%&#39;) als &#39;sql_1062&#39; ・ &#39;%1062&#39; [Waarschuwing] InnoDB:%&#39;) als &#39;sql_1062_w&#39;
+* &#39;%Internal MariaDB error code: 1062%&#39;) als &#39;sql_1062&#39; * &#39;%1062&#39; [Waarschuwing] InnoDB:%&#39;) als &#39;sql_1062_w&#39;
 * &#39;%Internal MariaDB error code: 1064%&#39;) als &#39;sql_1064&#39;
 * &#39;%InnoDB: Bevestigingsfout in bestand%&#39;) als &#39;assertion_err&#39;
 * &#39;%mysqld_safe Aantal processen dat nu wordt uitgevoerd: 0%&#39;) als &#39;mysql_oom&#39;

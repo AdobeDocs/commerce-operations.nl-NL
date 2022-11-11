@@ -1,9 +1,9 @@
 ---
 title: "De [!UICONTROL Redis] tab"
 description: Meer informatie over de [!UICONTROL Redis] tabblad van [!DNL Observation for Adobe Commerce].
-source-git-commit: 3f2a401bb916fc04405f21ba2acfc42f7defdccb
+source-git-commit: f4379d0b89a6ea6d2f2a5a02c505581d4d54708f
 workflow-type: tm+mt
-source-wordcount: '237'
+source-wordcount: '248'
 ht-degree: 0%
 
 ---
@@ -14,7 +14,7 @@ ht-degree: 0%
 
 ![Overzicht van Redis Node](../../assets/tools/observation-for-adobe-commerce/redis-tab-1.jpg)
 
-De **[!UICONTROL Redis Node summary]** omvat alle knooppunten in een omgeving. Dit voorbeeld bevat de knooppunten voor gedeelde staging. Er zijn één primaire en twee secundaire werknemers in productie en ook een primaire en twee secundaire staging.
+De **[!UICONTROL Redis Node summary]** omvat alle knooppunten in een omgeving. In het bovenstaande voorbeeld staan de knooppunten voor gedeelde staging. Er zijn één primaire en twee secundaire werknemers in productie en ook een primaire en twee secundaire staging.
 
 ## [!UICONTROL Redis node detail]
 
@@ -44,7 +44,7 @@ De **[!UICONTROL Commands per second by node]** frame toont de [!DNL Redis] opdr
 
 ![%s gebruikt geheugen opnieuw instellen](../../assets/tools/observation-for-adobe-commerce/redis-tab-6.jpg)
 
-De **[!UICONTROL Redis % of memory used]** frame toont het percentage van het maximale geheugen dat door de [!DNL Redis] servers.
+De **[!UICONTROL Redis % of memory used]** frame geeft het percentage weer van het maximale geheugen dat door de [!DNL Redis] servers.
 
 ## [!UICONTROL Redis used memory]
 
@@ -56,10 +56,10 @@ De **[!UICONTROL Redis used memory]** frame toont het knoopgebruik van geheugen 
 
 ![Wijzigingen sinds laatste keer opslaan opnieuw verzenden](../../assets/tools/observation-for-adobe-commerce/redis-tab-8.jpg)
 
-[!DNL Redis] is een geheugeningezetene en slaat de informatie op voor opslag. De **[!UICONTROL Redis changes since last db save]** frame geeft het aantal wijzigingen in het geheugen aan dat is opgetreden sinds de laatste database naar de opslaglocatie is opgeslagen. [Deze informatie](https://redis.io/docs/manual/persistence/) verklaart [!DNL Redis's] persistentie.
+[!DNL Redis] is een geheugeningezetene en slaat de informatie op voor opslag. De **[!UICONTROL Redis changes since last db save]** frame geeft het aantal wijzigingen in het geheugen aan dat is opgetreden sinds de laatste database naar de opslaglocatie is opgeslagen. Zie [Redis persistentie](https://redis.io/docs/manual/persistence/) voor meer uitleg over [!DNL Redis's] persistentie.
 
 ## [!UICONTROL Redis synchronization from Log]
 
 ![Synchronisatie van logbestand opnieuw uitschakelen](../../assets/tools/observation-for-adobe-commerce/redis-tab-9.jpg)
 
-De **[!UICONTROL Redis synchronization from Log]** frame richt zich op de fouten die tijdens [!DNL Redis] synchroniseren of fouten die optreden als gevolg van synchronisatieproblemen. Zie [Redis Documentation](https://redis.io/docs/).
+De **[!UICONTROL Redis synchronization from Log]** frame richt zich op de fouten die tijdens [!DNL Redis] synchroniseren of fouten die optreden als gevolg van synchronisatieproblemen. Voor meer informatie over [!DNL Redis], zie [[!DNL Redis] Documentatie](https://redis.io/docs/).

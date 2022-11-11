@@ -1,9 +1,9 @@
 ---
 title: "De [!UICONTROL Elasticsearch] tab"
 description: Meer informatie over de [!UICONTROL Elasticsearch] tabblad van [!DNL Observation for Adobe Commerce].
-source-git-commit: 2427a18ea67833bc50912ef78be29d4320b5b205
+source-git-commit: b3cc9033eb9445af3edafd8c7ae9809dbb8174fc
 workflow-type: tm+mt
-source-wordcount: '533'
+source-wordcount: '536'
 ht-degree: 0%
 
 ---
@@ -15,13 +15,13 @@ ht-degree: 0%
 
 ![Overzicht clusterstatus](../../assets/tools/cluster-status-summary.jpg)
 
-Over de geselecteerde tijdlijn **[!UICONTROL Cluster Status Summary]** frame geeft de kleurstatus weer van de [!DNL Elasticsearch] cluster is voorbij. In dit voorbeeld bevond de cluster zich tijdens de geselecteerde tijdlijn eenmaal in de status Groen en was deze één keer geel tijdens de geselecteerde tijdlijn.
+Over de geselecteerde tijdlijn **[!UICONTROL Cluster Status Summary]** frame geeft de kleurstatus weer van de [!DNL Elasticsearch] cluster is voorbij. In dit voorbeeld was de cluster tijdens het geselecteerde tijdframe één keer groen en één keer geel in de status Geel tijdens het geselecteerde tijdframe.
 
 ## [!UICONTROL Active Primary Shards]
 
 ![Actieve primaire delen](../../assets/tools/active-primary-shards.jpg)
 
-De **[!UICONTROL Active Primary Shards]** frame zal verschillende getallen tonen afhankelijk van het aantal actieve primaire kaarten voor de geselecteerde account [!DNL Elasticsearch] service.
+De **[!UICONTROL Active Primary Shards]** frame geeft de verschillende getallen weer, afhankelijk van het aantal actieve primaire kaarten voor de geselecteerde account [!DNL Elasticsearch] service.
 
 Van [!DNL Elasticsearch]: De definitieve gids [2,x]:
 
@@ -33,31 +33,31 @@ Wanneer een index wordt gecreeerd, zijn er verscheidene kaarten gecreeerd met di
 
 ![Actief delen in cluster](../../assets/tools/active-shards-in-cluster.jpg)
 
-**[!UICONTROL Active Shards in Cluster]** - ALLE primaire en replicaatvormen in een [!DNL Elasticsearch] cluster.
+De **[!UICONTROL Active Shards in Cluster]** frame geeft het totale aantal primaire en replicaweergaven in een [!DNL Elasticsearch] cluster.
 
 ## [!UICONTROL Index health - this will show the index name and color status]
 
 ![Indexgezondheid](../../assets/tools/index-health.jpg)
 
-In dit frame worden de naam van de index en het aantal statussen van de indexkleur weergegeven. Als u de tabel omlaag schuift, ziet u dezelfde indexnaam met de kleurstatus Geel en Rood. Het getal dat volgt op de 27 indexnaam is het getal van de statuskleur. Als de waarde nul is, waren er geen gevallen waarin de index zich in die kleurstatus bevond tijdens deze geselecteerde tijdframes.
+In dit frame worden de naam van de index en het aantal statussen van de indexkleur weergegeven. Als u de tabel omlaag schuift, ziet u dezelfde indexnaam met de kleurstatus Geel en Rood. Het getal dat volgt op de 27 indexnaam is het getal van de statuskleur. Als de waarde nul is, waren er geen gevallen waarin de index zich in die kleurstatus bevond tijdens de geselecteerde tijdframes.
 
 ## [!UICONTROL Elasticsearch Status by node information]
 
 ![Elasticsearch-status](../../assets/tools/elasticsearch-status-by-node.jpg)
 
-De **[!UICONTROL Elasticsearch Status by node information]** frame toont de [!DNL Elasticsearch] clusterstatus per kleur, per knooppunt. Hiermee kunt u aangeven welk knooppunt in het dialoogvenster [!DNL Elasticsearch] wordt de status van de geselecteerde tijdlijn geretourneerd.
+De **[!UICONTROL Elasticsearch Status by node information]** frame toont de [!DNL Elasticsearch] clusterstatus per kleur en per knooppunt. Hiermee kunt u aangeven welk knooppunt in het dialoogvenster [!DNL Elasticsearch] wordt de status van de geselecteerde tijdlijn geretourneerd.
 
 ## [!UICONTROL Elasticsearch index information]
 
 ![Elasticsearch-indexgegevens](../../assets/tools/elasticsearch-tab-elasticsearch-index-information-image-1.jpg)
 
-Dit **[!UICONTROL Elasticsearch index information]** de lijst toont de indexnaam, welke knoop het is, het aantal geïndexeerde documenten, de indexgezondheid, en de indexgrootte in MB op een bepaald ogenblik.
+De **[!UICONTROL Elasticsearch index information]** de lijst toont de indexnaam, welke knoop het is, het aantal geïndexeerde documenten, de indexgezondheid, en de indexgrootte in MB op een bepaald ogenblik.
 
 ## [!UICONTROL Elasticsearch process CPU %]
 
 ![Elasticsearch-processor](../../assets/tools/elasticsearch-process-cpu.jpg)
 
-De **[!UICONTROL Elasticsearch process CPU %]** frame toont de processor% van het proces door de [!DNL Elasticsearch] proces over het geselecteerde tijdkader.
+De **[!UICONTROL Elasticsearch process CPU %]** frame toont het CPU-percentage van het proces door de [!DNL Elasticsearch] proces over het geselecteerde tijdkader.
 
 ## [!UICONTROL Elasticsearch Memory garbage collection]
 
