@@ -178,7 +178,7 @@ BrowserStack is een testplatform voor cloud&#39;s en mobiele apparaten waarmee o
 
 ## API-tests
 
-Postman is het samenwerkingsplatform voor API-ontwikkeling. Postman vereenvoudigt elke stap van de bouw van API en stroomlijnt samenwerking zodat kunt u betere APIs tot stand brengen.
+Postman is het samenwerkingsplatform voor API-ontwikkeling. Postman vereenvoudigt elke stap voor het samenstellen van een API en stroomlijnt de samenwerking zodat u betere API&#39;s kunt maken.
 
 SoapUI is een open-source webservice testtoepassing voor Simple Object Access Protocol (SOAP) en overdracht van representationele status (REST). De functionaliteit ervan omvat webservicecontrole; aanroepen, ontwikkelen, simuleren en roken; functionele tests; belasting- en conformiteitstests.
 

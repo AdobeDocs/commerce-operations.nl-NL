@@ -1,5 +1,5 @@
 ---
-title: '"Integreer de [!DNL Site-Wide Analysis Tool]"'
+title: "Integreer de [!DNL Site-Wide Analysis Tool]"
 description: Voer de volgende stappen uit om de [!DNL Upgrade Compatibility Tool] verslag van de [!DNL Site-Wide Analysis Tool] dashboard op uw Adobe Commerce-project.
 source-git-commit: 1fc12289125a5954243e177a0c21505234eb2e81
 workflow-type: tm+mt

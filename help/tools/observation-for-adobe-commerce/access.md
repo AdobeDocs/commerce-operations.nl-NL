@@ -1,5 +1,5 @@
 ---
-title: '"Toegang tot de [!DNL Observation for Adobe Commerce] nerdlet"'
+title: "Toegang tot de [!DNL Observation for Adobe Commerce] nerdlet"
 description: Leer hoe u toegang krijgt tot de [!DNL Observation for Adobe Commerce] nerdlet.
 source-git-commit: 3f2a401bb916fc04405f21ba2acfc42f7defdccb
 workflow-type: tm+mt

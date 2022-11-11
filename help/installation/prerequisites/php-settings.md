@@ -3,7 +3,7 @@ title: PHP-instellingen
 description: Volg deze stappen om vereiste PHP uitbreidingen te installeren en vereiste PHP montages voor op-gebouw installaties van Adobe Commerce en Magento Open Source te vormen.
 source-git-commit: df8240b71efe992bc1c0655aa30c32778297a3c6
 workflow-type: tm+mt
-source-wordcount: '0'
+source-wordcount: '810'
 ht-degree: 0%
 
 ---

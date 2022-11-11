@@ -17,11 +17,11 @@ De elektronische handel is digitaal gebaseerd en het enige team dat met de echte
 
 De detailhandelaars moeten pro-actief in termen van klantendienst zijn omdat niet alleen de merknaam op het spel staat, maar vooral zijn loyaliteit van de klant. Om ervoor te zorgen dat detailhandelaren erin slagen de beste klantervaring te bieden, zijn er enkele best practices die zij kunnen volgen:
 
-- **Multi-support channel**—Providing service through email or phone only is not enough in today’s era. De klantendienst moet op diverse kanalen, zoals levende chats, e-mail, telefoongesprekken, sociale media, en of tekstberichten worden verleend. Elk van deze heeft hun eigen voor- en nadelen die detailhandelaren moeten analyseren.
+- **Kanaal voor meerdere ondersteuning**—Het verlenen van de dienst door e-mail of telefoon slechts is niet genoeg in het tijdperk van vandaag. De klantendienst moet op diverse kanalen, zoals levende chats, e-mail, telefoongesprekken, sociale media, en of tekstberichten worden verleend. Elk van deze heeft hun eigen voor- en nadelen die detailhandelaren moeten analyseren.
 
-- **Personalized service**—All customer activity is done online, which retailers can track to understand customer behavior. Wanneer een klant bijvoorbeeld het team van de klantenservice bereikt, beschikt het team vooraf over de benodigde gegevens, zoals naam, e-mailadres, ordergeschiedenis en geretourneerde gegevens. This helps the Customer Service provide quick and accurate service and also provides customers with personalized service.
+- **Persoonlijke service**—Alle klantenactiviteit wordt online gedaan, die detailhandelaren kunnen volgen om klantengedrag te begrijpen. Wanneer een klant bijvoorbeeld het team van de klantenservice bereikt, beschikt het team vooraf over de benodigde gegevens, zoals naam, e-mailadres, ordergeschiedenis en geretourneerde gegevens. Dit helpt de Klantenservice om snel en nauwkeurig service te bieden en biedt klanten ook een persoonlijke service.
 
-- **Self-service**—Customers can also be provided with self-service, such as providing FAQ’s, privacy policy, terms and conditions, and forums.
+- **Zelfbediening**—Klanten kunnen ook zelfbediening krijgen, zoals het aanbieden van veelgestelde vragen, privacybeleid, voorwaarden en forums.
 
 De detailhandelaars zouden zich in de schoenen van de klant moeten zetten om hun probleem te begrijpen en de beste klantenervaring te verstrekken. De ervaring van de klant houdt de klant loyaal en bevordert het merk.
 
@@ -29,9 +29,9 @@ De detailhandelaars zouden zich in de schoenen van de klant moeten zetten om hun
 
 De dienst van de klant is belangrijk voor zowel B2B als B2C ondernemingen, maar het concept klantendienst is verschillend tussen beide:
 
-- B2B businesses tend to have involve a lot of stakeholder’s and more complex issues that take more time and effort to resolve, whereas B2C businesses usually consist of regular issues.
+- B2B-bedrijven hebben vaak te maken met veel van de belanghebbenden en complexere kwesties die meer tijd en moeite vergen om op te lossen, terwijl B2C-bedrijven meestal bestaan uit regelmatige kwesties.
 
-- B2B businesses have fewer customers, but it is essential to provide the best customer service to retain those customers. B2B products also tend to be more complex and larger so there is significant impact on the ROI.
+- B2B-bedrijven hebben minder klanten, maar het is van essentieel belang om de beste klantenservice te bieden om die klanten te behouden. B2B-producten zijn meestal ook complexer en groter, zodat het rendement van investeringen aanzienlijk wordt beïnvloed.
 
 - In B2C-bedrijven praat het team van de klantenservice met één persoon die de transactie heeft uitgevoerd, terwijl er bij B2B-bedrijven meerdere belanghebbenden zijn, zodat het team van de klantenservice oproepen van verschillende belanghebbenden kan ontvangen als er problemen zijn.
 

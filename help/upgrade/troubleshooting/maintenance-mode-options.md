@@ -1,6 +1,6 @@
 ---
 title: Onderhoudsmodusopties voor upgrade
-description: 'Maak een aangepaste pagina voor de onderhoudsmodus die uw klanten op uw Adobe Commerce- of Magento Open Source-winkel zien wanneer u een upgrade uitvoert. '
+description: Maak een aangepaste pagina voor de onderhoudsmodus die uw klanten op uw Adobe Commerce- of Magento Open Source-winkel zien wanneer u een upgrade uitvoert.
 source-git-commit: bbc412f1ceafaa557d223aabfd4b2a381d6ab04a
 workflow-type: tm+mt
 source-wordcount: '384'

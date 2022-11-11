@@ -170,14 +170,14 @@ De volgende tabellen bevatten veel, maar niet alle beschikbare installatieparame
 | `--elasticsearch-username` | De gebruiker-id voor verificatie van de zoekmachine | Nee, tenzij verificatie is ingeschakeld |
 | `--elasticsearch-password` | Het wachtwoord voor verificatie van de zoekmachine | Nee, tenzij verificatie is ingeschakeld |
 
-**Konijn-MQ-configuratieopties:**
+**RabbitMQ-configuratieopties:**
 
 | Naam | Waarde | Vereist? |
 |--- |--- |--- |
 | `--amqp-host` | Gebruik de `--amqp` tenzij u al een installatie van RabbitMQ hebt ingesteld. Zie de installatie van RabbitMQ voor meer informatie over het installeren en configureren van RabbitMQ.<br><br>De hostnaam waar RabbitMQ is geïnstalleerd. | Nee |
 | `--amqp-port` | De poort die moet worden gebruikt om verbinding te maken met RabbitMQ. De standaardwaarde is 5672. | Nee |
 | `--amqp-user` | De gebruikersnaam voor verbinding met RabbitMQ. De standaardgebruiker niet gebruiken `guest`. | Nee |
-| `--amqp-password` | Het wachtwoord voor verbinding met RabbitMQ. Het standaardwachtwoord niet gebruiken `guest`. | Nee |
+| `--amqp-password` | Het wachtwoord voor verbinding maken met RabbitMQ. Het standaardwachtwoord niet gebruiken `guest`. | Nee |
 | `--amqp-virtualhost` | De virtuele host voor verbinding met RabbitMQ. De standaardwaarde is `/`. | Nee |
 | `--amqp-ssl` | Geeft aan of verbinding moet worden gemaakt met RabbitMQ. De standaardwaarde is `false`. Zie RabbitMQ voor informatie over het instellen van SSL voor RabbitMQ. | Nee |
 | `--consumers-wait-for-messages` | Moeten consumenten wachten op een bericht uit de wachtrij? 1 - Ja, 0 - Nee | Nee |

@@ -69,7 +69,7 @@ De standaardconfiguratie voor `InventoryCatalog` publiceert geen berichten naar 
 
 ## De wachtrij met berichten testen
 
-Om bericht te testen die van Handel naar RabbitMQ verzenden:
+Om bericht te testen dat van Handel naar RabbitMQ wordt verzonden:
 
 1. Meld u aan bij de RabbitMQ-webconsole in AWS om wachtrijen te controleren.
 1. Maak een product in Admin.
@@ -78,7 +78,7 @@ Om bericht te testen die van Handel naar RabbitMQ verzenden:
 1. Ga naar **Catalogus** > Producten. Selecteer het hierboven gemaakte product in het raster en klik op **Inventarisbron toewijzen**.
 1. Klikken **Opslaan en sluiten** om het proces te voltooien.
 
-   U zou berichten nu moeten zien verschijnen in de RabbitMQ Webconsole.
+   De berichten worden nu weergegeven in de RabbitMQ-webconsole.
 
 1. Start de `async.operations.all` de consument van de berichtrij.
 

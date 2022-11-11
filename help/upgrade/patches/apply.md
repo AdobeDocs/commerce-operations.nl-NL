@@ -3,7 +3,7 @@ title: Patches toepassen
 description: Leer hoe u patches kunt toepassen op een Adobe Commerce- of Magento Open Source-project.
 source-git-commit: e2ddb30da8dd86236e1dcf33a3f911b67384a6d7
 workflow-type: tm+mt
-source-wordcount: '0'
+source-wordcount: '330'
 ht-degree: 0%
 
 ---

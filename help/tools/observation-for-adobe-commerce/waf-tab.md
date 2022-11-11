@@ -1,5 +1,5 @@
 ---
-title: '"De [!UICONTROL WAF] tab"'
+title: "De [!UICONTROL WAF] tab"
 description: Meer informatie over de [!UICONTROL WAF] tabblad van [!DNL Observation for Adobe Commerce].
 source-git-commit: 431bc7c06e76b061a94026aa380d8be88d227099
 workflow-type: tm+mt

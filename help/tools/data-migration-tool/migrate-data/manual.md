@@ -1,6 +1,6 @@
 ---
 title: Gegevens die handmatige migratie vereisen
-description: 'Meer informatie over gegevens die handmatig moeten worden gemigreerd tijdens een gegevensmigratie van Magento 1 tot en met Magento 2 en over hoe u dit kunt doen. '
+description: Meer informatie over gegevens die handmatig moeten worden gemigreerd tijdens een gegevensmigratie van Magento 1 tot en met Magento 2 en over hoe u dit kunt doen.
 source-git-commit: d609c497fdf00c5e5f975a5679b1d072cec4f8a2
 workflow-type: tm+mt
 source-wordcount: '302'

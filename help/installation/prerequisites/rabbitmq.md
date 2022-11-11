@@ -18,11 +18,11 @@ De rijen van het bericht verstrekken een asynchroon communicatie mechanisme waar
 Het systeem van de berichtrij moet worden gevestigd alvorens u Adobe Commerce of Magento Open Source installeert. De basisvolgorde is:
 
 1. Installeer RabbitMQ en alle voorwaarden.
-1. Sluit RabbitMQ aan op Adobe Commerce of Magento Open Source.
+1. Verbind RabbitMQ met Adobe Commerce of Magento Open Source.
 
 >[!NOTE]
 >
->U kunt MySQL of RabbitMQ voor de verwerking van de berichtrij gebruiken. Voor details bij vestiging het systeem van de berichtrij, zie [Overzicht van wachtrij met berichten](https://developer.adobe.com/commerce/php/development/components/message-queues/). Als u het Bulk API met Adobe Commerce gebruikt, blijft de configuratie van het systeem van de berichtrij aan het gebruiken van RabbitMQ als berichtbroker in gebreke. Zie [Gebruikers in de wachtrij met berichten starten](../../configuration/cli/start-message-queues.md) voor meer informatie .
+>U kunt MySQL of RabbitMQ voor de verwerking van de berichtrij gebruiken. Voor details bij vestiging het systeem van de berichtrij, zie [Overzicht van wachtrij met berichten](https://developer.adobe.com/commerce/php/development/components/message-queues/). Als u de Bulk API met Adobe Commerce gebruikt, blijft de systeemconfiguratie van de berichtrij aan het gebruiken van RabbitMQ als berichtbroker in gebreke. Zie [Gebruikers in de wachtrij met berichten starten](../../configuration/cli/start-message-queues.md) voor meer informatie .
 
 ## RabbitMQ installeren op Ubuntu
 
@@ -45,7 +45,7 @@ Zie [Installeren op Debian/Ubuntu](https://www.rabbitmq.com/install-debian.html)
 
 ### Installeren Erlang
 
-RabbitMQ is geschreven met de programmeertaal Erlang, die op hetzelfde systeem moet worden geïnstalleerd als RabbitMQ.
+RabbitMQ is geschreven met de programmeertaal Erlang, die op hetzelfde systeem als RabbitMQ moet worden geïnstalleerd.
 
 Zie [Handmatige installatie](https://www.erlang-solutions.com/downloads/) voor meer informatie .
 
@@ -71,7 +71,7 @@ Controleer de officiële documentatie van RabbitMQ om RabbitMQ te configureren e
 
 ## Installeren met RabbitMQ en verbinding maken
 
-Als u Adobe Commerce of Magento Open Source installeert _na_ als u RabbitMQ installeert, voegt u tijdens de installatie de volgende opdrachtregelparameters toe:
+Als u Adobe Commerce of Magento Open Source installeert _na_ Als u RabbitMQ installeert, voegt u tijdens de installatie de volgende opdrachtregelparameters toe:
 
 ```bash
 --amqp-host="<hostname>" --amqp-port="5672" --amqp-user="<user_name>" --amqp-password="<password>" --amqp-virtualhost="/"
@@ -83,14 +83,14 @@ Waar:
 |--- |--- |
 | `--amqp-host` | De hostnaam waar RabbitMQ is geïnstalleerd. |
 | `--amqp-port` | De poort die moet worden gebruikt om verbinding te maken met RabbitMQ. De standaardwaarde is `5672`. |
-| `--amqp-user` | De gebruikersnaam voor verbinding met RabbitMQ. De standaardgebruiker niet gebruiken `guest`. |
-| `--amqp-password` | Het wachtwoord voor verbinding met RabbitMQ. Het standaardwachtwoord niet gebruiken `guest`. |
+| `--amqp-user` | De gebruikersnaam voor verbinding maken met RabbitMQ. De standaardgebruiker niet gebruiken `guest`. |
+| `--amqp-password` | Het wachtwoord voor verbinding maken met RabbitMQ. Het standaardwachtwoord niet gebruiken `guest`. |
 | `--amqp-virtualhost` | De virtuele host voor verbinding met RabbitMQ. De standaardwaarde is `/`. |
 | `--amqp-ssl` | Geeft aan of verbinding moet worden gemaakt met RabbitMQ. De standaardwaarde is `false`. Als u de waarde aan waar plaatst, zie SSL voor meer informatie vormen. |
 
 ## Connect RabbitMQ
 
-Als u Adobe Commerce of Magento Open Source al hebt geïnstalleerd en u wilt deze koppelen aan RabbitMQ, voegt u een `queue` in de `<install_directory>/app/etc/env.php` bestand, zodat deze vergelijkbaar is met het volgende:
+Als Adobe Commerce of Magento Open Source al op uw computer is geïnstalleerd en u verbinding wilt maken met RabbitMQ, voegt u een `queue` in de `<install_directory>/app/etc/env.php` bestand, zodat deze vergelijkbaar is met het volgende:
 
 ```php
 'queue' =>
@@ -106,13 +106,13 @@ Als u Adobe Commerce of Magento Open Source al hebt geïnstalleerd en u wilt dez
   ),
 ```
 
-U kunt de configuratiewaarden van RabbitMQ ook instellen met de `bin/magento setup:config:set` opdracht:
+U kunt ook RabbitMQ-configuratiewaarden instellen met de `bin/magento setup:config:set` opdracht:
 
 ```bash
 bin/magento setup:config:set --amqp-host="rabbitmq.example.com" --amqp-port="11213" --amqp-user="magento" --amqp-password="magento" --amqp-virtualhost="/"
 ```
 
-Nadat u de opdracht hebt uitgevoerd of de opdracht hebt bijgewerkt `<install_directory>/app/etc/env.php` bestand met AMQP-configuratiewaarden, uitvoeren `bin/magento setup:upgrade` om de veranderingen toe te passen en de vereiste rijen en uitwisselingen in RabbitMQ tot stand te brengen.
+Nadat u de opdracht hebt uitgevoerd of de opdracht hebt bijgewerkt `<install_directory>/app/etc/env.php` bestand met AMQP-configuratiewaarden, uitvoeren `bin/magento setup:upgrade` om de wijzigingen toe te passen en de vereiste wachtrijen en uitwisselingen in RabbitMQ te maken.
 
 ## SSL configureren
 

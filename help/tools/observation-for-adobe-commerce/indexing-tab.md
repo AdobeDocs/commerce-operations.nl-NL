@@ -1,5 +1,5 @@
 ---
-title: '"De [!UICONTROL Indexing] tab"'
+title: "De [!UICONTROL Indexing] tab"
 description: Meer informatie over de [!UICONTROL Indexing] tabblad van [!DNL Observation for Adobe Commerce].
 source-git-commit: 1f334f329b72b715afa7f3617b1ce2fb8004f816
 workflow-type: tm+mt

@@ -1,5 +1,5 @@
 ---
-title: '"[!DNL Exceptions]"'
+title: "[!DNL Exceptions]"
 description: Meer informatie over de [!UICONTROL Exceptions] in de [!DNL Site-Wide Analysis Tool], wanneer deze wordt gebruikt, de voordelen ervan en de beste praktijken.
 source-git-commit: 6cbb4b4fef5e1ccc06803b5a3af5dd9f4d0e7df8
 workflow-type: tm+mt

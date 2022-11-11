@@ -1,5 +1,5 @@
 ---
-title: '"De [!UICONTROL Security] tab"'
+title: "De [!UICONTROL Security] tab"
 description: Meer informatie over de [!UICONTROL Security] tabblad van [!DNL Observation for Adobe Commerce].
 source-git-commit: 5e4babd14bb918db7f894b7ca6a0344a4652704c
 workflow-type: tm+mt

@@ -27,7 +27,7 @@ U vormt de websites, de opslag, en de opslagmeningen in de Handel [Beheer](https
 
 Overweeg de volgende termen:
 
-- **Website**—is de container van het hoogste niveau voor plaatsen, leveringsmethodes, betalingsmethodes, en meer. Als u volledig aparte sites wilt maken die geen winkelwagentje, bezorgmethoden of andere sites delen, moet u afzonderlijke websites maken.
+- **Website**—is de container op hoofdniveau voor sites, leveringsmethoden, betalingsmethoden en meer. Als u volledig aparte sites wilt maken die geen winkelwagentje, bezorgmethoden of andere sites delen, moet u afzonderlijke websites maken.
 
    De de klantenrekeningen van de website kunnen tussen veelvoudige websites binnen één enkele instantie van de Handel worden gedeeld. Een website bevat minstens één winkel. Catalogusprijzen moeten op het niveau van de website worden beheerd.
 

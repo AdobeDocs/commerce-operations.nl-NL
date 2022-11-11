@@ -42,7 +42,7 @@ Efficiëntie, automatisering en toegang tot gegevens zijn vereist om te kunnen c
 
 - Bedrijfsgegevens
 - Verzending
-- Inventarisbeheer
+- Inventory management
 - Bestelbeheer en klantenservice
 
 ## Werken met vertrouwen

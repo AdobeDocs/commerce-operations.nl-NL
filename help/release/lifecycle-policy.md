@@ -3,8 +3,8 @@ title: Levenscyclusbeleid voor software
 description: In deze video ziet u de belangrijkste datums voor einde softwareondersteuning voor Adobe Commerce-releases.
 source-git-commit: ffa8b957828833d2c3f9bc79c31dc3fa2c6035a5
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '368'
+ht-degree: 5%
 
 ---
 

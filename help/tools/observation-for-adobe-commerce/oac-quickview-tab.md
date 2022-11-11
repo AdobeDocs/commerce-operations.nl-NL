@@ -1,5 +1,5 @@
 ---
-title: '"De [!UICONTROL QuickView] tab"'
+title: "De [!UICONTROL QuickView] tab"
 description: Op het tabblad QuickView worden de verschillende waarschuwingstypen uitgelegd die u kunt zien, inclusief de typen met een laag schijfruimte en servergebruik.
 source-git-commit: 4d700c04be5cd1ec2dc1c43c627feeed93f0fbee
 workflow-type: tm+mt

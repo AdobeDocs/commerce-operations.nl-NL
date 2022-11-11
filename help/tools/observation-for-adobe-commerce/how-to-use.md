@@ -1,5 +1,5 @@
 ---
-title: '"Hoe wordt het [!DNL Observation for Adobe Commerce] nerdlet"'
+title: "Hoe wordt het [!DNL Observation for Adobe Commerce] nerdlet"
 description: Leer hoe u de [!DNL Observation for Adobe Commerce] nerdlet.
 source-git-commit: 69bcb755c3c1f9a820856ac69ce12eb85c686213
 workflow-type: tm+mt

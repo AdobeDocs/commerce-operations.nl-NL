@@ -1,5 +1,5 @@
 ---
-title: '"De [!UICONTROL PHP] tab"'
+title: "De [!UICONTROL PHP] tab"
 description: Meer informatie over de [!UICONTROL PHP] tabblad van [!DNS-waarneming voor Adobe Commerce].
 source-git-commit: f71fc3b2a66a4cc0b0d7865138184135e4a874e0
 workflow-type: tm+mt

@@ -1,7 +1,7 @@
 ---
 title: Referentie aangepaste uitsnijdtaak en uitsnijdgroep
 description: Leer hoe u crons aanpast met gebruik van uitsnijdgroepen.
-source-git-commit: ee2e446edf79efcd7cbbd67248f8e7ece06bfefd
+source-git-commit: 24f6d30fb42c2bed6dbb85a4ce7acf9145a74162
 workflow-type: tm+mt
 source-wordcount: '535'
 ht-degree: 0%
@@ -38,7 +38,8 @@ Een `crontab.xml` bestand in uw modulemap:
 Voor één groep moet het bestand de volgende inhoud hebben:
 
 ```xml
-<config>
+<?xml version="1.0"?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Cron:etc/crontab.xsd">
     <group id="<group_name>">
         <job name="<job_name>" instance="<classpath>" method="<method>">
             <schedule><time></schedule>
@@ -60,7 +61,8 @@ Waar:
 Het resultaat `crontab.xml` twee groepen kunnen er als volgt uitzien :
 
 ```xml
-<config>
+<?xml version="1.0"?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Cron:etc/crontab.xsd">
     <group id="default">
         <job name="<job_1_name>" instance="<classpath>" method="<method_name>">
             <schedule>* * * * *</schedule>
@@ -93,7 +95,8 @@ U kunt een nieuwe groep declareren en de configuratieopties ervan opgeven (die a
 Hieronder ziet u een voorbeeld van het `cron_groups.xml` bestand:
 
 ```xml
-<config>
+<?xml version="1.0"?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Cron:etc/cron_groups.xsd">
     <group id="<group_name>">
         <schedule_generate_every>1</schedule_generate_every>
         <schedule_ahead_for>4</schedule_ahead_for>

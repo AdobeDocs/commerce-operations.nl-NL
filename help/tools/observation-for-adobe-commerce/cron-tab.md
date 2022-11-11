@@ -1,5 +1,5 @@
 ---
-title: '"De [!UICONTROL Cron] tab"'
+title: "De [!UICONTROL Cron] tab"
 description: Meer informatie over de [!UICONTROL Cron] tabblad van [!DNL Observation for Adobe Commerce].
 source-git-commit: 3c1e50b3bff1bd2b2760e2e763173275161b0044
 workflow-type: tm+mt

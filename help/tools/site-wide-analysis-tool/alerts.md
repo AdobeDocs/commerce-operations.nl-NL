@@ -1,9 +1,9 @@
 ---
-title: '"[!DNL Alerts]"'
+title: "[!DNL Alerts]"
 description: Meer informatie over de [!UICONTROL Alerts] in de [!DNL Site-Wide Analysis Tool], wanneer en de voordelen ervan.
 source-git-commit: 3efc01fb1f376514ebbfb1dd29b42c764a9fd4d5
 workflow-type: tm+mt
-source-wordcount: '0'
+source-wordcount: '91'
 ht-degree: 0%
 
 ---

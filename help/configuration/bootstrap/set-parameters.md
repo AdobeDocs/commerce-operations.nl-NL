@@ -3,8 +3,8 @@ title: De waarde van bootstrap-parameters instellen
 description: Leer hoe te om laarzentrekkerparameters voor de toepassing van de Handel te plaatsen.
 source-git-commit: c65c065c5f9ac2847caa8898535afdacf089006a
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '594'
+ht-degree: 1%
 
 ---
 

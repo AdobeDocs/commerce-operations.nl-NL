@@ -1,5 +1,5 @@
 ---
-title: '"De [!UICONTROL Alerts] tab"'
+title: "De [!UICONTROL Alerts] tab"
 description: Meer informatie over de [!UICONTROL Alerts] tabblad van [!DNL Observation for Adobe Commerce].
 source-git-commit: 2a82a5e232de3efa3adb76aee2334e198b929947
 workflow-type: tm+mt

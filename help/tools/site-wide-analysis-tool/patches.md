@@ -1,5 +1,5 @@
 ---
-title: '"[!DNL Patches]"'
+title: "[!DNL Patches]"
 description: Meer informatie over de [!UICONTROL Patches] in de [!DNL Site-Wide Analysis Tool], wanneer en de voordelen ervan.
 source-git-commit: 9ee2e49de83c23386de624eff9515fd59923e987
 workflow-type: tm+mt

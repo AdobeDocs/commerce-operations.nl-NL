@@ -47,4 +47,4 @@ Adobe Commerce biedt drie flexibele integratieopties:
 
 ![Adobe Commerce-integratieopties](../../assets/playbooks/integration-options.svg)
 
-Hoewel integratie in real time meestal gewenst is, is dit niet nodig voor bepaalde scenario&#39;s. Adobe Commerce biedt native ondersteuning voor RabbitMQ als de berichtenbus voor het inschakelen van asynchrone processen. Dit wordt aanbevolen voor sommige gegevens die niet in realtime moeten worden uitgewisseld, maar voor het asynchroon verwerken van batchverwerking met behulp van de API voor batchverwerking of REST-batchverwerking.
+Hoewel integratie in real time meestal gewenst is, is dit niet nodig voor bepaalde scenario&#39;s. Adobe Commerce biedt native ondersteuning voor RabbitMQ als de berichtenbus voor het inschakelen van asynchrone processen. Dit wordt aanbevolen voor sommige gegevens die niet in real-time hoeven te worden uitgewisseld, maar die wel moeten worden bijgewerkt met batch-bestandsuitwisseling of REST-batchgegevensverwerkings-API voor asynchroon verwerken.

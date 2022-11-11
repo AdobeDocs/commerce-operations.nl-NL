@@ -1,5 +1,5 @@
 ---
-title: '"De [!UICONTROL MySQL] tab"'
+title: "De [!UICONTROL MySQL] tab"
 description: Meer informatie over de [!UICONTROL MySQL] tabblad van [!DNL Observation for Adobe Commerce].
 source-git-commit: 3f2a401bb916fc04405f21ba2acfc42f7defdccb
 workflow-type: tm+mt

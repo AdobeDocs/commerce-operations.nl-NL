@@ -1,5 +1,5 @@
 ---
-title: Campagnebeheer
+title: Campaign Management
 description: Structuur uw e-commerce campagnes om uw bedrijfsvereisten aan te passen.
 exl-id: 466f2f83-ea19-4230-b33b-4435974effb7
 source-git-commit: e76f101df47116f7b246f21f0fe0fa72769d2776

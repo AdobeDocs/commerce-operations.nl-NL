@@ -1,5 +1,5 @@
 ---
-title: '"De [!UICONTROL Elasticsearch] tab"'
+title: "De [!UICONTROL Elasticsearch] tab"
 description: Meer informatie over de [!UICONTROL Elasticsearch] tabblad van [!DNL Observation for Adobe Commerce].
 source-git-commit: 2427a18ea67833bc50912ef78be29d4320b5b205
 workflow-type: tm+mt

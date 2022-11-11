@@ -1,9 +1,9 @@
 ---
-title: '"[!DNL Recommendations]"'
+title: "[!DNL Recommendations]"
 description: Meer informatie over de [!UICONTROL Recommendations] in de [!DNL Site-Wide Analysis Tool], wanneer deze wordt gebruikt, de voordelen ervan en de beste praktijken.
 source-git-commit: bc0d61a3a6210e50072733e212041f34185a8e2e
 workflow-type: tm+mt
-source-wordcount: '0'
+source-wordcount: '144'
 ht-degree: 0%
 
 ---

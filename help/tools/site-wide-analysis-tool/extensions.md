@@ -1,5 +1,5 @@
 ---
-title: '"[!DNL Extensions]"'
+title: "[!DNL Extensions]"
 description: Meer informatie over de [!DNL Extensions] in de [!DNL Site-Wide Analysis Tool], wanneer deze wordt gebruikt, de voordelen ervan en de beste praktijken.
 source-git-commit: 8b14dc7e30f4dd487fdb37bb9984346021fcba14
 workflow-type: tm+mt

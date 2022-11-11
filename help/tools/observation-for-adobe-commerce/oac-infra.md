@@ -1,5 +1,5 @@
 ---
-title: '"De [!UICONTROL Infra] tab"'
+title: "De [!UICONTROL Infra] tab"
 description: De [!UICONTROL Infra] -tabblad isoleert problemen en oorzaken van infrastructuurproblemen.
 source-git-commit: b0d80d97f60b24bc801063dc484f3a495cf0a036
 workflow-type: tm+mt

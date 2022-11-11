@@ -2,9 +2,9 @@
 user-guide-title: Afspeelmap voor implementatie
 user-guide-description: Leer meer over strategieën voor het plannen en implementeren van een geslaagde Adobe Commerce-site.
 mini-toc-levels: 3
-source-git-commit: 8c86688cd0c7127b6b39c0c605c668288dbe09dc
+source-git-commit: 1582431fed6978de23bd1b7f6d901ae343523a2e
 workflow-type: tm+mt
-source-wordcount: '0'
+source-wordcount: '235'
 ht-degree: 0%
 
 ---
@@ -99,7 +99,6 @@ ht-degree: 0%
       - [Overzicht](best-practices/launch/overview.md)
       - [Adobe Security Notification Service](best-practices/launch/security-notification-service.md)
       - [Het bestand robots.txt configureren](best-practices/launch/robots-txt.md)
-      - [Beveiligingsincidenten voorkomen en erop reageren](best-practices/launch/prevent-respond-security-incident.md)
    - Onderhoud {#maintenance}
       - [Overzicht](best-practices/maintenance/overview.md)
       - [Voorwaartse controle](best-practices/maintenance/frontend-performance.md)

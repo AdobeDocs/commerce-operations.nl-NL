@@ -46,7 +46,7 @@ Wanneer
 * `-f` of `--force` om een module te dwingen om ondanks gebiedsdelen worden toegelaten of worden onbruikbaar gemaakt. Voordat u deze optie gebruikt, raadpleegt u [Modules in- en uitschakelen](#about-enabling-and-disabling-modules).
 * `-c` of `--clear-static-content` cleans [gegenereerde statische weergavebestanden](../../configuration/cli/static-view-file-deployment.md).
 
-   Als u statische weergavebestanden niet wist, kunnen er problemen optreden als er meerdere bestanden met dezelfde naam zijn en u ze niet allemaal wist.
+   Als u statische weergavebestanden niet wist, kunnen er problemen optreden als er meerdere bestanden met dezelfde naam zijn en u niet alle bestanden wist.
 
    Met andere woorden, vanwege de [fallback van statische bestanden](../../configuration/cli/static-view-file-deployment.md) regels, als u statische bestanden niet wist en er meerdere bestanden zijn met de naam `logo.svg` anders, zou de reserve het verkeerde dossier kunnen veroorzaken om te tonen.
 
