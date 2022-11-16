@@ -1,9 +1,9 @@
 ---
 title: Upgrade uitvoeren
 description: Leer over de verschillende fasen van verbeteringsimplementatie voor Adobe Commerce en Magento Open Source projecten.
-source-git-commit: d263e412022a89255b7d33b267b696a8bb1bc8a2
+source-git-commit: 639dca9ee715f2f9ca7272d3b951d3315a85346c
 workflow-type: tm+mt
-source-wordcount: '870'
+source-wordcount: '869'
 ht-degree: 1%
 
 ---
@@ -40,7 +40,7 @@ De volgende punten kunnen u in een grondige analyse willen omvatten:
    |-----------------|-----------------|------------|----------------------------------------------------------|
    | PHP | 7.2.33. | 8,1 |  |
    | Redis | 5,05 | 6,0 |  |
-   | KonijnMQ | 3,7 | 3,8 | Momenteel niet gebruikt, maar we moeten overwegen het te gebruiken |
+   | [!DNL RabbitMQ] | 3,7 | 3,8 | Momenteel niet gebruikt, maar we moeten overwegen het te gebruiken |
    | MariaDB (cloud) | 10.2.33. | 10,4 |  |
    | MySQL | 8,0 |  |  |
    | Composer | 1.9.2. | 2,0 |  |

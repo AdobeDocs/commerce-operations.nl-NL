@@ -2,9 +2,9 @@
 title: Prestaties optimaliseren, Recommendations
 description: Optimaliseer de prestaties van uw Adobe Commerce-implementatie met deze aanbevelingen.
 exl-id: c5d62e23-be43-4eea-afdb-bb1b156848f9
-source-git-commit: 6509c939c7abc5462bffbe104466b2ff9e6fadc9
+source-git-commit: 639dca9ee715f2f9ca7272d3b951d3315a85346c
 workflow-type: tm+mt
-source-wordcount: '1289'
+source-wordcount: '1288'
 ht-degree: 0%
 
 ---
@@ -95,7 +95,7 @@ Hoewel validatie van het volledige paginacachegeheugen van Varnish effectief is,
 
 ### Berichtenrijen
 
-Het Kader van de Rij van het Bericht (MQF) is een systeem dat een module toestaat om berichten aan rijen te publiceren. Het bepaalt ook de consumenten die de berichten asynchroon ontvangen. Adobe Commerce steunt RabbitMQ als overseinenmakelaar, die een scalable platform voor het verzenden van en het ontvangen van berichten verstrekt.
+Het Kader van de Rij van het Bericht (MQF) is een systeem dat een module toestaat om berichten aan rijen te publiceren. Het bepaalt ook de consumenten die de berichten asynchroon ontvangen. Adobe Commerce-ondersteuning [!DNL RabbitMQ] als overseinenmakelaar, die een scalable platform voor het verzenden van en het ontvangen van berichten verstrekt.
 
 ### Prestatietests en -bewaking
 

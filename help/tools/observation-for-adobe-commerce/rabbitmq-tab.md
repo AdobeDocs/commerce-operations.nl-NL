@@ -1,22 +1,22 @@
 ---
-title: "De [!UICONTROL RabbitMQ] tab"
-description: Meer informatie over de [!UICONTROL RabbitMQ] tabblad van [!DNL Observation for Adobe Commerce].
-source-git-commit: 3f2a401bb916fc04405f21ba2acfc42f7defdccb
+title: "De [!UICONTROL [!DNL RabbitMQ]] tab"
+description: Meer informatie over de [!UICONTROL [!DNL RabbitMQ]] tabblad van [!DNL Observation for Adobe Commerce].
+source-git-commit: 639dca9ee715f2f9ca7272d3b951d3315a85346c
 workflow-type: tm+mt
-source-wordcount: '570'
+source-wordcount: '557'
 ht-degree: 0%
 
 ---
 
-# De [!UICONTROL RabbitMQ] tab
+# De [!UICONTROL [!DNL RabbitMQ]] tab
 
-De **[!UICONTROL RabbitMQ]** tab bevat informatie waarop de focus ligt [!DNL RabbitMQ] signalen.
+De **[!UICONTROL [!DNL RabbitMQ]]** tab bevat informatie waarop de focus ligt [!DNL RabbitMQ] signalen.
 
-## [!UICONTROL RabbitMQ Infrastructure events]
+## [!UICONTROL [!DNL RabbitMQ] Infrastructure events]
 
-![RabbitMQ Infrastructure-gebeurtenissen](../../assets/tools/observation-for-adobe-commerce/rabbitmq-tab-1.jpeg)
+![[!DNL RabbitMQ] Infrastructuurgebeurtenissen](../../assets/tools/observation-for-adobe-commerce/rabbitmq-tab-1.jpeg)
 
-De **[!UICONTROL RabbitMQ Infrastructure events]** frame toont infrastructuurgebeurtenissen die betrekking hebben op [!DNL RabbitMQ] die zich tijdens de geselecteerde tijdlijn hebben voorgedaan:
+De **[!UICONTROL [!DNL RabbitMQ] Infrastructure events]** frame toont infrastructuurgebeurtenissen die betrekking hebben op [!DNL RabbitMQ] die zich tijdens de geselecteerde tijdlijn hebben voorgedaan:
 
 * %response [fout] for node [rabbit@host1]: Onverwachte http-reactie van%&#39;) als &#39;Onverwacht_resp_node1&#39;
 * &#39;%response [fout] for node [rabbit@host2]: Onverwachte http-reactie van%&#39;) als &#39;Onverwacht_resp_node2&#39;
@@ -37,18 +37,18 @@ De **[!UICONTROL RabbitMQ Infrastructure events]** frame toont infrastructuurgeb
 * &#39;%Entiteit gewijzigd: version/management%&#39;) als &#39;rmq_entity_modified_ver_mgt&#39;
 * &#39;%Entiteit gewijzigd: version/management%&#39;) als &#39;rmq_entity_modified_ver_mgt&#39;
 
-## [!UICONTROL RabbitMQ service start/stop signals]
+## [!UICONTROL [!DNL RabbitMQ] service start/stop signals]
 
-![RabbitMQ service start/stop signalen](../../assets/tools/observation-for-adobe-commerce/rabbitmq-tab-2.jpeg)
+![[!DNL RabbitMQ] start- en stopsignalen van de service](../../assets/tools/observation-for-adobe-commerce/rabbitmq-tab-2.jpeg)
 
 Dit frame toont [!DNL RabbitMQ] de de dienstbegin/stopsignalen die tijdens het geselecteerde tijdkader voorkwamen:
 
-* &#39;%RabbitMQ wordt gevraagd te stoppen...%&#39;) als &#39;rabbitmq_stop&#39;
-* &#39;%Starten RabbitMQ%&#39;) als &#39;rabbitmq_start&#39;
+* &#39;%[!DNL RabbitMQ] wordt gevraagd te stoppen...%&#39;) als &#39;rabbitmq_stop&#39;
+* &#39;%Starten [!DNL RabbitMQ]%&#39;) als &#39;rabbitmq_start&#39;
 
-## [!UICONTROL RabbitMQ errors]
+## [!UICONTROL [!DNL RabbitMQ] errors]
 
-![RabbitMQ-fouten](../../assets/tools/observation-for-adobe-commerce/rabbitmq-tab-3.jpeg)
+![[!DNL RabbitMQ] fouten](../../assets/tools/observation-for-adobe-commerce/rabbitmq-tab-3.jpeg)
 
 Dit frame toont [!DNL RabbitMQ] fouten die tijdens de geselecteerde tijdlijn zijn opgetreden:
 
@@ -58,9 +58,9 @@ Dit frame toont [!DNL RabbitMQ] fouten die tijdens de geselecteerde tijdlijn zij
 * &#39;%Connection try from disallowed node%&#39;) as &#39;disallowed_node&#39;
 * &#39;%closing AMQP connection%&#39;) als &#39;rmq_err_amqp_conn&#39;
 
-## [!UICONTROL RabbitMQ node status]
+## [!UICONTROL [!DNL RabbitMQ] node status]
 
-![Status RabbitMQ-knooppunt](../../assets/tools/observation-for-adobe-commerce/rabbitmq-tab-4.jpeg)
+![[!DNL RabbitMQ] knooppuntstatus](../../assets/tools/observation-for-adobe-commerce/rabbitmq-tab-4.jpeg)
 
 * &#39;%konbit op knooppunt rabbit@host1 down%&#39;) als &#39;rmq_node1_down&#39;
 * &#39;%konbit op knooppunt rabbit@host2 down%&#39;) als &#39;rmq_node2_down&#39;
@@ -69,47 +69,47 @@ Dit frame toont [!DNL RabbitMQ] fouten die tijdens de geselecteerde tijdlijn zij
 * &#39;%rabbit op knooppunt rabbit@host2 up%&#39;) als &#39;rmq_node2_up&#39;
 * &#39;%rabbit op knooppunt rabbit@host3 up%&#39;) als &#39;rmq_node3_up&#39;
 
-## [!UICONTROL RabbitMQ Message High-Level Summary status by Queue]
+## [!UICONTROL [!DNL RabbitMQ] Message High-Level Summary status by Queue]
 
-![RabbitMQ Message High Level Summary status door Wachtrij](../../assets/tools/observation-for-adobe-commerce/rabbitmq-tab-5.jpeg)
+![[!DNL RabbitMQ] Samenvattingsstatus op hoog niveau van het bericht door Rij](../../assets/tools/observation-for-adobe-commerce/rabbitmq-tab-5.jpeg)
 
-De **[!UICONTROL RabbitMQ Message High-Level Summary status by Queue]** grafiek toont het aantal gepubliceerde berichten door [!DNL RabbitMQ] wachtrij voor het geselecteerde tijdframe.
+De **[!UICONTROL [!DNL RabbitMQ] Message High-Level Summary status by Queue]** grafiek toont het aantal gepubliceerde berichten door [!DNL RabbitMQ] wachtrij voor het geselecteerde tijdframe.
 
-## [!UICONTROL RabbitMQ Message Detail Summary]
+## [!UICONTROL [!DNL RabbitMQ] Message Detail Summary]
 
-![Overzicht van MQ-berichtgegevens voor konijn](../../assets/tools/observation-for-adobe-commerce/rabbitmq-tab-6.jpeg)
+![[!DNL RabbitMQ] Overzicht van berichtdetails](../../assets/tools/observation-for-adobe-commerce/rabbitmq-tab-6.jpeg)
 
 * &#39;%rapport.ERROR: Cron Job consumer_runner heeft een fout: NOT_FOUND - no queue%&#39;) als &#39;queue_err&#39;
 * &#39;%rapport.ERROR: Cron Job consumer_runner heeft een fout: NOT_FOUND - no queue%&#39;) als &#39;queue_err&#39;
 * &#39;%authenticated and allowed access to vhost%&#39;) as &#39;auth&#39;
 * &#39;%closing AMQP connection%&#39;) als &#39;close_conn&#39;
 
-## [!UICONTROL RabbitMQ Queue Consumption MB]
+## [!UICONTROL [!DNL RabbitMQ] Queue Consumption MB]
 
-![RabbitMQ Queue Consumption MB](../../assets/tools/observation-for-adobe-commerce/rabbitmq-tab-7.jpeg)
+![[!DNL RabbitMQ] Wachtrijverbruik MB](../../assets/tools/observation-for-adobe-commerce/rabbitmq-tab-7.jpeg)
 
-De **[!UICONTROL RabbitMQ Queue Consumption MB]** grafiek toont het aantal bytes dat door elk wordt verbruikt [!DNL RabbitMQ] een wachtrij over het geselecteerde tijdkader.
+De **[!UICONTROL [!DNL RabbitMQ] Queue Consumption MB]** grafiek toont het aantal bytes dat door elk wordt verbruikt [!DNL RabbitMQ] een wachtrij over het geselecteerde tijdkader.
 
-## [!UICONTROL RabbitMQ Published Messages by Queue]
+## [!UICONTROL [!DNL RabbitMQ] Published Messages by Queue]
 
-![Gepubliceerde berichten van RabbitMQ op wachtrij](../../assets/tools/observation-for-adobe-commerce/rabbitmq-tab-8.jpeg)
+![[!DNL RabbitMQ] Gepubliceerde Berichten door Wachtrij](../../assets/tools/observation-for-adobe-commerce/rabbitmq-tab-8.jpeg)
 
-De **[!UICONTROL RabbitMQ Published Messages by Queue]** grafiek toont het aantal bytes dat door elk wordt verbruikt [!DNL RabbitMQ] een wachtrij over het geselecteerde tijdkader.
+De **[!UICONTROL [!DNL RabbitMQ] Published Messages by Queue]** grafiek toont het aantal bytes dat door elk wordt verbruikt [!DNL RabbitMQ] een wachtrij over het geselecteerde tijdkader.
 
-## [!UICONTROL RabbitMQ Published Message Throughput by Queue]
+## [!UICONTROL [!DNL RabbitMQ] Published Message Throughput by Queue]
 
-![Door Wachtrij gepubliceerde berichtendoorvoer van RabbitMQ](../../assets/tools/observation-for-adobe-commerce/rabbitmq-tab-9.jpeg)
+![[!DNL RabbitMQ] Gepubliceerde Doorvoer van Bericht door Rij](../../assets/tools/observation-for-adobe-commerce/rabbitmq-tab-9.jpeg)
 
-De **[!UICONTROL RabbitMQ Published Message Throughput by Queue]** grafiek geeft het gemiddelde aantal gepubliceerde berichten per seconde weer [!DNL RabbitMQ] een wachtrij over het geselecteerde tijdkader.
+De **[!UICONTROL [!DNL RabbitMQ] Published Message Throughput by Queue]** grafiek geeft het gemiddelde aantal gepubliceerde berichten per seconde weer [!DNL RabbitMQ] een wachtrij over het geselecteerde tijdkader.
 
-## [!UICONTROL RabbitMQ Total Message Throughput by Queue]
+## [!UICONTROL [!DNL RabbitMQ] Total Message Throughput by Queue]
 
-![RabbitMQ Totale Doorvoer bericht door Wachtrij](../../assets/tools/observation-for-adobe-commerce/rabbitmq-tab-10.jpeg)
+![[!DNL RabbitMQ] Totale Doorvoer van bericht door Wachtrij](../../assets/tools/observation-for-adobe-commerce/rabbitmq-tab-10.jpeg)
 
-De **[!UICONTROL RabbitMQ Total Message Throughput by Queue]** grafiek toont het gemiddelde totale aantal berichten per seconde [!DNL RabbitMQ] een wachtrij over het geselecteerde tijdkader.
+De **[!UICONTROL [!DNL RabbitMQ] Total Message Throughput by Queue]** grafiek toont het gemiddelde totale aantal berichten per seconde [!DNL RabbitMQ] een wachtrij over het geselecteerde tijdkader.
 
-## [!UICONTROL RabbitMQ Consumers by Queue]
+## [!UICONTROL [!DNL RabbitMQ] Consumers by Queue]
 
-![RabbitMQ Consumenten per Wachtrij](../../assets/tools/observation-for-adobe-commerce/rabbitmq-tab-11.jpeg)
+![[!DNL RabbitMQ] Consumenten op Wachtrij](../../assets/tools/observation-for-adobe-commerce/rabbitmq-tab-11.jpeg)
 
-De **[!UICONTROL RabbitMQ Consumers by Queue]** grafiek geeft het gemiddelde totale aantal consumenten per [!DNL RabbitMQ] een wachtrij over het geselecteerde tijdkader.
+De **[!UICONTROL [!DNL RabbitMQ] Consumers by Queue]** grafiek geeft het gemiddelde totale aantal consumenten per [!DNL RabbitMQ] een wachtrij over het geselecteerde tijdkader.

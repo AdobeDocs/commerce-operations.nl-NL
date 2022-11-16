@@ -2,9 +2,9 @@
 title: Overzicht van cloudinfrastructuur
 description: Meer informatie over Adobe Commerce op cloudinfrastructuur.
 exl-id: 94cf1505-0853-4e01-ba55-befc1117fbdb
-source-git-commit: 6509c939c7abc5462bffbe104466b2ff9e6fadc9
+source-git-commit: 639dca9ee715f2f9ca7272d3b951d3315a85346c
 workflow-type: tm+mt
-source-wordcount: '536'
+source-wordcount: '535'
 ht-degree: 0%
 
 ---
@@ -49,6 +49,6 @@ Laten we ook eens kijken naar de software die de voordelen van Adobe Commerce we
 
 - Git is uw code in repositories. Het maakt lokale vertakkingen, handige staging gebieden en meerdere workflows mogelijk met automatische build en implementatie voor efficiënte snelle ontwikkeling en doorlopende implementatie.
 
-- Platform-as-a-Service (PaaS) verstrekt een pre-provisioned infrastructuur die PHP, MySQL, Redis, RabbitMQ, en de technologieën van de Elasticsearch omvat.
+- Platform-as-a-Service (PaaS) biedt een vooraf ingerichte infrastructuur die PHP, MySQL, Redis omvat, [!DNL RabbitMQ]en Elasticsearch-technologieën.
 
 - AWS of de wolk van Azure bedienen de onderliggende infrastructuur-as-a-Service (IaaS), die een scalable en veilige omgeving voor online verkoop en detailhandel aanbiedt.

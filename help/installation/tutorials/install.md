@@ -1,9 +1,9 @@
 ---
 title: Adobe Commerce installeren
 description: Voer de volgende stappen uit om Adobe Commerce of Magento Open Source op uw eigen infrastructuur te installeren.
-source-git-commit: 46302eb8e8fd9bb7c9e7fbf990abb149bedd0ff4
+source-git-commit: 639dca9ee715f2f9ca7272d3b951d3315a85346c
 workflow-type: tm+mt
-source-wordcount: '2118'
+source-wordcount: '2106'
 ht-degree: 0%
 
 ---
@@ -132,16 +132,16 @@ In Adobe Commerce versie 2.2.8 en hoger kunt u tijdens of na de installatie de b
 | `--elasticsearch-username` | De gebruikersnaam die moet worden geverifieerd | Nee, tenzij verificatie is ingeschakeld |
 | `--elasticsearch-password` | Het wachtwoord voor verificatie | Nee, tenzij verificatie is ingeschakeld |
 
-**Konijn-MQ-configuratieopties:**
+**[!DNL RabbitMQ]configuratieopties:**
 
 | Naam | Waarde | Vereist? |
 |--- |--- |--- |
-| `--amqp-host` | Gebruik de `--amqp` tenzij u al een installatie van RabbitMQ hebt ingesteld. Zie RabbitMQ voor meer informatie over het installeren en configureren van RabbitMQ.<br><br>De hostnaam waar RabbitMQ is geïnstalleerd. | Nee |
-| `--amqp-port` | De poort die moet worden gebruikt om verbinding te maken met RabbitMQ. De standaardwaarde is 5672. | Nee |
-| `--amqp-user` | De gebruikersnaam voor verbinding met RabbitMQ. De standaardgebruiker niet gebruiken `guest`. | Nee |
-| `--amqp-password` | Het wachtwoord voor verbinding maken met RabbitMQ. Het standaardwachtwoord niet gebruiken `guest`. | Nee |
-| `--amqp-virtualhost` | De virtuele host voor verbinding met RabbitMQ. De standaardwaarde is `/`. | Nee |
-| `--amqp-ssl` | Geeft aan of verbinding moet worden gemaakt met RabbitMQ. De standaardwaarde is `false`. Zie RabbitMQ voor informatie over het instellen van SSL voor RabbitMQ. | Nee |
+| `--amqp-host` | Gebruik de `--amqp` tenzij u al een installatie van [!DNL RabbitMQ]. Zie [!DNL RabbitMQ] installatie voor meer informatie over installeren en configureren [!DNL RabbitMQ].<br><br>De hostnaam waarbij [!DNL RabbitMQ] is geïnstalleerd. | Nee |
+| `--amqp-port` | De poort waarmee verbinding moet worden gemaakt [!DNL RabbitMQ]. De standaardwaarde is 5672. | Nee |
+| `--amqp-user` | De gebruikersnaam waarmee verbinding wordt gemaakt [!DNL RabbitMQ]. De standaardgebruiker niet gebruiken `guest`. | Nee |
+| `--amqp-password` | Het wachtwoord voor verbinding maken met [!DNL RabbitMQ]. Het standaardwachtwoord niet gebruiken `guest`. | Nee |
+| `--amqp-virtualhost` | De virtuele host voor verbinding met [!DNL RabbitMQ]. De standaardwaarde is `/`. | Nee |
+| `--amqp-ssl` | Geeft aan of verbinding moet worden gemaakt [!DNL RabbitMQ]. De standaardwaarde is `false`. Zie [!DNL RabbitMQ] voor informatie over het instellen van SSL voor [!DNL RabbitMQ]. | Nee |
 | `--consumers-wait-for-messages` | Moeten consumenten wachten op een bericht uit de wachtrij? 1 - Ja, 0 - Nee | Nee |
 
 **Opties voor externe opslag:**

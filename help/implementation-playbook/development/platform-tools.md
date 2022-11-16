@@ -2,9 +2,9 @@
 title: Platforms
 description: Kies de aanbevolen platformgereedschappen voor uw Adobe Commerce-implementatie.
 exl-id: 3fc164f9-a0fc-46e7-a54e-08ce101ccae7
-source-git-commit: 6509c939c7abc5462bffbe104466b2ff9e6fadc9
+source-git-commit: 639dca9ee715f2f9ca7272d3b951d3315a85346c
 workflow-type: tm+mt
-source-wordcount: '732'
+source-wordcount: '730'
 ht-degree: 0%
 
 ---
@@ -25,7 +25,7 @@ De volgende tabel bevat oplossingen die wij aanbevelen en die in Adobe Commerce 
 | Webserver | Nginx, Apache |
 | Caching | Redis, Varnish |
 | Zoeken in services | Elasticsearch |
-| Berichtenrijservices | KonijnMQ |
+| Berichtenrijservices | [!DNL RabbitMQ] |
 | Beveiligingsscan | SonarQube, ZAP |
 
 ## Database
@@ -61,7 +61,7 @@ Voor Adobe Commerce versie 2.4 en hoger moeten alle installaties zo zijn geconfi
 
 ## Berichtenrijservices
 
-De rijen van het bericht verstrekken een asynchroon communicatie mechanisme waarin de afzender en de ontvanger van een bericht niet elkaar contacteren. RabbitMQ is een open-source berichtmakelaar die een betrouwbaar, hoogst beschikbaar, scalable, en draagbaar overseinensysteem aanbiedt.
+De rijen van het bericht verstrekken een asynchroon communicatie mechanisme waarin de afzender en de ontvanger van een bericht niet elkaar contacteren. [!DNL RabbitMQ] is een open-bron berichtbroker die een betrouwbaar, hoogst beschikbaar, scalable, en draagbaar overseinensysteem aanbiedt.
 
 ## Beveiligingsgereedschappen
 

@@ -1,9 +1,9 @@
 ---
 title: De toepassing configureren
 description: Meer informatie over de configuratie na installatie die vereist is voor Adobe Commerce- en Magento Open Source-implementaties op locatie.
-source-git-commit: 61638d373408d9a7c3c3a935eee61927acfac7a6
+source-git-commit: 639dca9ee715f2f9ca7272d3b951d3315a85346c
 workflow-type: tm+mt
-source-wordcount: '732'
+source-wordcount: '731'
 ht-degree: 0%
 
 ---
@@ -93,7 +93,7 @@ Elasticsearch of OpenSearch is vereist voor alle installaties vanaf 2.4.0.
 
 Sinds versie 2.3.0 bevatten Adobe Commerce en Magento Open Source een functionaliteit voor een wachtrij met berichten. In eerdere versies is deze alleen beschikbaar voor Adobe Commerce.
 
-* [KonijnMQ](../../configuration/queues/message-queue-framework.md)
+* [[!DNL RabbitMQ]](../../configuration/queues/message-queue-framework.md)
 
 ## Alleen instellingen voor Adobe Commerce
 

@@ -1,9 +1,9 @@
 ---
 title: Amazon-berichtenwachtrij instellen
 description: Leer hoe te om Handel te vormen om de dienst van AWS MQ te gebruiken.
-source-git-commit: ee2e446edf79efcd7cbbd67248f8e7ece06bfefd
+source-git-commit: 639dca9ee715f2f9ca7272d3b951d3315a85346c
 workflow-type: tm+mt
-source-wordcount: '342'
+source-wordcount: '337'
 ht-degree: 0%
 
 ---
@@ -65,20 +65,20 @@ async.V1.inventory.bulk-product-source-unassign.POST
 async.V1.inventory.bulk-product-source-transfer.POST
 ```
 
-De standaardconfiguratie voor `InventoryCatalog` publiceert geen berichten naar RabbitMQ; het standaardgedrag moet de actie in de zelfde gebruikersdraad uitvoeren. Als u `InventoryCatalog` om berichten te publiceren, laat toe `cataloginventory/bulk_operations/async`. Ga vanuit de beheerder naar **Winkels** > Configuratie > **Catalogus** > **Inventaris** > bulkbewerkingen beheren en instellen  `Run asynchronously`tot **Ja**.
+De standaardconfiguratie voor `InventoryCatalog` publiceert geen berichten naar [!DNL RabbitMQ]; het standaardgedrag moet de actie in de zelfde gebruikersdraad uitvoeren. Als u `InventoryCatalog` om berichten te publiceren, laat toe `cataloginventory/bulk_operations/async`. Ga vanuit de beheerder naar **Winkels** > Configuratie > **Catalogus** > **Inventaris** > bulkbewerkingen beheren en instellen  `Run asynchronously`tot **Ja**.
 
 ## De wachtrij met berichten testen
 
-Om bericht te testen dat van Handel naar RabbitMQ wordt verzonden:
+Om bericht te testen dat van de Handel naar [!DNL RabbitMQ]:
 
-1. Meld u aan bij de RabbitMQ-webconsole in AWS om wachtrijen te controleren.
+1. Aanmelden bij de [!DNL RabbitMQ] webconsole in AWS om wachtrijen te controleren.
 1. Maak een product in Admin.
 1. Maak een inventarisbron.
 1. Inschakelen **Winkels** > Configuratie > **Catalogus** > **Inventaris** > Beheer bulkbewerkingen > asynchroon uitvoeren.
 1. Ga naar **Catalogus** > Producten. Selecteer het hierboven gemaakte product in het raster en klik op **Inventarisbron toewijzen**.
 1. Klikken **Opslaan en sluiten** om het proces te voltooien.
 
-   De berichten worden nu weergegeven in de RabbitMQ-webconsole.
+   U moet nu berichten zien in het dialoogvenster [!DNL RabbitMQ] webconsole.
 
 1. Start de `async.operations.all` de consument van de berichtrij.
 
@@ -86,5 +86,5 @@ Om bericht te testen dat van Handel naar RabbitMQ wordt verzonden:
    bin/magento queue:consumers:start async.operations.all
    ```
 
-Het bericht in de wachtrij wordt nu verwerkt in de RabbitMQ-webconsole.
+Het bericht in de wachtrij wordt nu verwerkt in het dialoogvenster [!DNL RabbitMQ] webconsole.
 Controleer of de inventarisbronnen op het product in de Admin zijn gewijzigd.

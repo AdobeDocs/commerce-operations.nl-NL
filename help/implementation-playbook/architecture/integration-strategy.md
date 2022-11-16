@@ -2,9 +2,9 @@
 title: Adobe Commerce Integration Strategy
 description: Herzie integratiestrategieën en opties voor uw implementatie van Adobe Commerce.
 exl-id: af7cc59a-3ee2-461a-8489-a35fe0288277
-source-git-commit: 1e545d8d5554e73f522469e526ed098395db9075
+source-git-commit: 639dca9ee715f2f9ca7272d3b951d3315a85346c
 workflow-type: tm+mt
-source-wordcount: '519'
+source-wordcount: '518'
 ht-degree: 0%
 
 ---
@@ -47,4 +47,4 @@ Adobe Commerce biedt drie flexibele integratieopties:
 
 ![Adobe Commerce-integratieopties](../../assets/playbooks/integration-options.svg)
 
-Hoewel integratie in real time meestal gewenst is, is dit niet nodig voor bepaalde scenario&#39;s. Adobe Commerce biedt native ondersteuning voor RabbitMQ als de berichtenbus voor het inschakelen van asynchrone processen. Dit wordt aanbevolen voor sommige gegevens die niet in real-time hoeven te worden uitgewisseld, maar die wel moeten worden bijgewerkt met batch-bestandsuitwisseling of REST-batchgegevensverwerkings-API voor asynchroon verwerken.
+Hoewel integratie in real time meestal gewenst is, is dit niet nodig voor bepaalde scenario&#39;s. Adobe Commerce wordt native ondersteund [!DNL RabbitMQ] als berichtenbus om asynchrone processen toe te laten, die voor sommige gegevens wordt geadviseerd die niet noodzakelijk om in echt - tijd te ruilen zijn, maar eerder om met partij-dossier uitwisseling of REST het proces API van partijgegevens om asynchroon te verwerken.
