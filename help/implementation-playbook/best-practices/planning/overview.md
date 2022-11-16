@@ -4,9 +4,9 @@ description: Leer over implementatie beste praktijken voor de planningsfase van 
 role: Developer, Admin, User
 feature: Best Practices
 feature-set: Commerce
-source-git-commit: 510f2d4cdaec1034cb04a01fab0948c4261c6d10
+source-git-commit: 78308f9cb3d2ebe8af41c42f9bb146409367ab6c
 workflow-type: tm+mt
-source-wordcount: '245'
+source-wordcount: '248'
 ht-degree: 0%
 
 ---
@@ -67,13 +67,14 @@ De volgende onderwerpen beschrijven best practices voor het optimaliseren van pr
 
 ## **Verkoop en marketing**
 
-- [Aanbevolen werkwijzen voor productkartellimieten &#x200B;](product-cart.md)
+- [Aanbevolen werkwijzen voor productkartongrens](product-cart.md)
 - [Aanbevolen procedures voor het configureren van promoties](product-cart-promotions.md)
 
 ## **Projectbereikregels**
 
 - [Partnerescalaties](partner-escalation.md)
+- [Betalingsopslagverwerking](payment-processing-storage.md)
 
 ## **Extensies kopen**
 
-- [Aanbevolen procedures voor het gebruik van extensies van derden in Adobe Commerce-&#x200B;](extensions.md)
+- [Aanbevolen procedures voor het gebruik van extensies van derden in Adobe Commerce](extensions.md)

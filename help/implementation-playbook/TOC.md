@@ -2,9 +2,9 @@
 user-guide-title: Afspeelmap voor implementatie
 user-guide-description: Leer meer over strategieën voor het plannen en implementeren van een geslaagde Adobe Commerce-site.
 mini-toc-levels: 3
-source-git-commit: 1582431fed6978de23bd1b7f6d901ae343523a2e
+source-git-commit: 86149bbe268a573f94e8bdb34974403459e46909
 workflow-type: tm+mt
-source-wordcount: '235'
+source-wordcount: '244'
 ht-degree: 0%
 
 ---
@@ -88,6 +88,7 @@ ht-degree: 0%
       - [Aanbiedingen](best-practices/planning/product-cart-promotions.md)
       - [Extensies](best-practices/planning/extensions.md)
       - [Partnerescalaties](best-practices/planning/partner-escalation.md)
+      - [Betalingsopslagverwerking](best-practices/planning/payment-processing-storage.md)
    - Ontwikkeling {#development}
       - [Overzicht](best-practices/development/overview.md)
       - [Optimalisatie van afbeeldingen](best-practices/development/image-optimization.md)
@@ -99,6 +100,7 @@ ht-degree: 0%
       - [Overzicht](best-practices/launch/overview.md)
       - [Adobe Security Notification Service](best-practices/launch/security-notification-service.md)
       - [Het bestand robots.txt configureren](best-practices/launch/robots-txt.md)
+      - [Beveiligingsincidenten voorkomen en erop reageren](best-practices/launch/prevent-respond-security-incident.md)
    - Onderhoud {#maintenance}
       - [Overzicht](best-practices/maintenance/overview.md)
       - [Voorwaartse controle](best-practices/maintenance/frontend-performance.md)
