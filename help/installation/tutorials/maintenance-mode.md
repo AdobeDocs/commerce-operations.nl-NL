@@ -1,9 +1,9 @@
 ---
 title: Onderhoudsmodus in- of uitschakelen
 description: Voer de volgende stappen uit om aan te passen wat klanten zien wanneer uw Adobe Commerce- of Magento Open Source-implementatie niet beschikbaar is voor onderhoud.
-source-git-commit: f6f438b17478505536351fa20a051d355f5b157a
+source-git-commit: bc025217ed7bc2195c0a2d919139abe13d184259
 workflow-type: tm+mt
-source-wordcount: '599'
+source-wordcount: '553'
 ht-degree: 0%
 
 ---
@@ -81,9 +81,10 @@ De `--none` Hiermee wist u de lijst.
 
 ## Instellingen voor meerdere winkels
 
-Als u meerdere winkels wilt instellen, elk met een andere indeling en gelokaliseerde inhoud, maakt u een skin voor elke winkel en plaatst u deze in `pub/errors/{name}` waar `{name}` is de opslagcode. Als u onderscheid wilt maken tussen winkels en websites met dezelfde instantie, gebruikt u `pub/errors/{type}-{name}` waar `{type}` is ofwel `store` of `website` en komt overeen met de `MAGE_RUN_TYPE` in uw serverconfiguratie.
+<!-- To set up multiple stores, each with a different layout and localized content, create a skin for each and put it into `pub/errors/{name}` where `{name}` is the store code. To distinguish between stores and websites with the same instance, use `pub/errors/{type}-{name}` where `{type}` is either `store` or `website` and matches the `MAGE_RUN_TYPE` in your server configuration. Another option is to pass the `$_GET['skin']` parameter to the intended processor. This method requires a specific configuration on your server. -->
+<!-- Replace the line below with the commented text after https://github.com/magento/magento2/pull/35095 is merged. -->
 
-Een andere optie is om de `$_GET['skin']` aan de bedoelde verwerker. Deze methode vereist een specifieke configuratie op uw server.
+Als u meerdere winkels wilt instellen, elk met een andere indeling en gelokaliseerde inhoud, geeft u de opdracht `$_GET['skin']` aan de bedoelde verwerker.
 
 In het volgende voorbeeld gebruiken we een `503` type foutsjabloonbestand, waarvoor gelokaliseerde inhoud is vereist.
 
