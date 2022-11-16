@@ -4,9 +4,9 @@ description: Leer best practices voor configuratie om de verwerkingsprestaties v
 role: Admin, User
 feature: Best Practices
 feature-set: Commerce
-source-git-commit: fbeaa486d32d77135ab97f4819ef4df9e64c6471
+source-git-commit: fb30b18c9b9f6a9f538189eeafda9ee7a29d436c
 workflow-type: tm+mt
-source-wordcount: '251'
+source-wordcount: '249'
 ht-degree: 0%
 
 ---
@@ -17,7 +17,7 @@ Naarmate het ordervolume toeneemt op uw Commerce-sites, kunt u de prestaties van
 
 - **[!UICONTROL Asynchronous indexing]**—Laat deze optie toe om gegevensbestandsloten en vertraagde verwerking te verhinderen die kunnen voorkomen wanneer de grote aantallen orden gelijktijdig worden geplaatst.
 - **[!UICONTROL Asynchronous email notifications]**—Schakel deze optie in om de prestaties bij het afrekenen te versnellen door het verzenden van afrekenings- en bestelberichten voor de verwerking van e-mailberichten met bepaalde intervallen in plaats van deze onmiddellijk te verzenden.
-- **[!UICONTROL Enable Archiving]**—Schakel deze optie in om de prestaties van de rasters voor bestellingen, facturen, verzendingen en creditnota&#39;s te verbeteren en uw werkruimte vrij te houden van overbodige informatie, zodat u zich kunt richten op de huidige activiteiten. Zie [Archivering inschakelen](https://docs.magento.com/user-guide/sales/order-archive.html#to-enable-archiving).
+- **[!UICONTROL Enable Archiving]**—Schakel deze optie in om de prestaties van bestellingen, facturen, verzendingen en creditnota&#39;s te verbeteren en uw werkruimte vrij te houden van onnodige informatie, zodat u zich kunt concentreren op het huidige bedrijf. Zie [Archivering inschakelen](https://docs.magento.com/user-guide/sales/order-archive.html#to-enable-archiving).
 
 ## Betrokken producten en versies
 
