@@ -1,7 +1,7 @@
 ---
 title: env.php reference
 description: Zie een lijst met waarden voor het bestand env.php.
-source-git-commit: d263e412022a89255b7d33b267b696a8bb1bc8a2
+source-git-commit: fe5e16d44213d1864a62230029e9e206eecd1717
 workflow-type: tm+mt
 source-wordcount: '717'
 ht-degree: 0%
@@ -185,7 +185,7 @@ Als `queue/default_connection` is `amqp` in `env.php` maar `db` De verbinding wo
 
 ## mappen
 
-Optionele mappingopties voor mappen die moeten worden ingesteld wanneer de webserver is geconfigureerd voor de toepassing Handelsgewijs vanuit de `/pub` map voor [verbeterde beveiliging][change-docroot-to-pub].
+Optionele mappingopties voor mappen die moeten worden ingesteld wanneer de webserver is geconfigureerd voor de toepassing Handelsgewijs vanuit de `/pub` map voor [verbeterde beveiliging](../../installation/tutorials/docroot.md).
 
 ```conf
 'directories' => [
@@ -219,7 +219,7 @@ De installatiedatum van de toepassing Commerce.
 
 Providerinstellingen vergrendelen worden geconfigureerd met de optie `lock` knooppunt.
 
-Meer informatie over [Configuratie provider vergrendelen][lock-provider-config].
+Meer informatie over [Configuratie provider vergrendelen](../../installation/tutorials/lock-provider.md).
 
 ## MAGE_MODE
 
@@ -299,6 +299,4 @@ Meer informatie in [env-php-config-set](../cli/set-configuration-values.md).
 
 <!-- Link definitions -->
 
-[change-docroot-to-pub]: ../../installation/tutorials/docroot.md
-[lock-provider-config]: ../../installation/tutorials/lock-provider.md
 [message-queue]: https://developer.adobe.com/commerce/php/development/components/message-queues/
