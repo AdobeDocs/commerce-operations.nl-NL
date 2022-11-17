@@ -1,9 +1,9 @@
 ---
 title: Ontwikkelingsfase van de implementatie
 description: Leer over implementatie beste praktijken voor de ontwikkelingsfase van projecten van Adobe Commerce.
-source-git-commit: 510f2d4cdaec1034cb04a01fab0948c4261c6d10
+source-git-commit: c717d45525c7893fa2c38183326534e0fa4ee0c6
 workflow-type: tm+mt
-source-wordcount: '156'
+source-wordcount: '164'
 ht-degree: 0%
 
 ---
@@ -70,3 +70,4 @@ De volgende secties bevatten informatie over de beste praktijken voor de ontwikk
 - [CSS- en JS-bestanden optimaliseren](optimize-css-js-files.md)
 - [Afbeeldingen optimaliseren voor een meer responsieve site](image-optimization.md)
 - [Aanbevolen procedures voor het oplossen van problemen voor Adobe Commerce op &#x200B; van cloudinfrastructuur](troubleshooting.md)
+- [Weet wanneer en hoe u databasetabellen kunt wijzigen &#x200B;](modifying-core-and-third-party-tables.md)
