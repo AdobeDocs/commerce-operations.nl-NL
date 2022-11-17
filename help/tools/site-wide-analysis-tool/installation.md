@@ -1,7 +1,7 @@
 ---
 title: Hulplijn installeren
 description: Deze handleiding gebruiken om te installeren [!DNL Site-Wide Analysis Tool] voor uw website
-source-git-commit: 434fb9eb9570f183d9bf9d4b56b8e56a69e8005d
+source-git-commit: 23ad424a913c5ee58f4092aae008a47fe37b5382
 workflow-type: tm+mt
 source-wordcount: '1067'
 ht-degree: 0%
@@ -57,13 +57,17 @@ Uw infrastructuur ter plaatse moet aan de volgende vereisten voldoen alvorens de
 
 - Hulpprogramma&#39;s voor basis/shell
 
-   - `grep`
+   - `php`
+
+   - `wget`
 
    - `awk`
 
    - `nice`
 
    - `grep`
+
+   - `openssl`
 
 ## [!DNL Commerce Services Connector]
 
@@ -185,7 +189,7 @@ Als u onze [shellscript](https://github.com/magento-swat/install-agent-helpers/b
       curl -O https://updater.swat.magento.com/launcher/launcher.linux-arm64.tar.gz
       ```
 
-   1. Inpak het archief van de lanceerinrichting.
+   1. Pak het archief van de draagprogramma&#39;s uit.
 
       ```bash
       tar -xf launcher.linux-arm64.tar.gz
