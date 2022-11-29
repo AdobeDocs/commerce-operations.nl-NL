@@ -1,9 +1,9 @@
 ---
 title: X-Frame-Options header
 description: Gebruik X-Frame-Opties om paginaweergaven te besturen.
-source-git-commit: 6a3995dd24f8e3e8686a8893be9693581d31712b
+source-git-commit: db696b8ca501d128db655c5ebb161c654c6378a7
 workflow-type: tm+mt
-source-wordcount: '218'
+source-wordcount: '225'
 ht-degree: 0%
 
 ---
@@ -13,7 +13,7 @@ ht-degree: 0%
 
 helpen voorkomen [Klikjacking](https://owasp.org/www-community/attacks/Clickjacking) misbruiken, hebben we een optie toegevoegd om de [X-frame-opties](https://datatracker.ietf.org/doc/html/rfc7034) HTTP- aanvraagkopbal in verzoeken aan uw storefront.
 
-De `X-Frame-Options` koptekst biedt u de mogelijkheid op te geven of een browser een pagina in een `<frame>`, `<iframe>`, of `<object>` als volgt:
+De `X-Frame-Options` kunt u opgeven of een browser een pagina in een `<frame>`, `<iframe>`, of `<object>` als volgt:
 
 - `DENY`: De pagina kan niet in een kader worden weergegeven.
 - `SAMEORIGIN`: (standaard) Pagina kan alleen worden weergegeven in een kader dat zich op dezelfde oorsprong bevindt als de pagina zelf.
@@ -28,11 +28,13 @@ De `X-Frame-Options` koptekst biedt u de mogelijkheid op te geven of een browser
 
 ## Implementeren `X-Frame-Options`
 
-Een waarde instellen voor `X-Frame-Options` in `<magento_root>/app/etc/env.php`. Hier volgt de standaardwaarde:
+Een waarde instellen voor `X-Frame-Options` in `<project-root>/app/etc/env.php`. De standaardwaarde wordt als volgt ingesteld:
 
 ```php
 'x-frame-options' => 'SAMEORIGIN',
 ```
+
+Opnieuw implementeren voor wijzigingen in de `env.php` in te voeren.
 
 >[!TIP]
 >
@@ -44,10 +46,8 @@ Als u de instelling wilt controleren, geeft u de HTTP-headers op een willekeurig
 
 In het volgende voorbeeld wordt curl gebruikt, die u kunt uitvoeren vanaf elke computer die via het HTTP-protocol verbinding kan maken met de Commerce-server.
 
-Gebruik de volgende opdracht:
-
 ```bash
-curl -I -v --location-trusted '<your storefront URL>'
+curl -I -v --location-trusted '<storefront-URL>'
 ```
 
 Zoek naar `X-Frame-Options` waarde in de kopteksten.
