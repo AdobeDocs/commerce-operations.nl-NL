@@ -1,9 +1,9 @@
 ---
 title: Opmerkingen bij de release
 description: Meer informatie over de patches die beschikbaar zijn voor Adobe Commerce en de problemen die ze oplossen.
-source-git-commit: 6d0b5515792afe33eab440290413b84d251796cc
+source-git-commit: aad242e3a458e40fb1977399649ffe3e31696cd3
 workflow-type: tm+mt
-source-wordcount: '9752'
+source-wordcount: '10066'
 ht-degree: 0%
 
 ---
@@ -19,6 +19,22 @@ De [[!DNL Quality Patches Tool]](https://github.com/magento/quality-patches) lev
 >[!INFO]
 >
 >Voor informatie over [!DNL quality patches] die door de Gemeenschap voor Magento Open Source zijn opgericht, [releaseopmerkingen](https://github.com/magento/quality-patches/blob/master/community-release-notes.md).
+
+## v1.1.24 {#v1-1-24}
+
+* **ACSD-45168** (voor Adobe Commerce en Magento Open Source >=2.4.2 &lt;2.4.6) - Hiermee wordt het probleem opgelost waarbij geen SEO-vriendelijke URL&#39;s worden gegenereerd voor producten die *url_key* worden genegeerd op het niveau van de store-view.
+* **ACSD-46865** (voor Adobe Commerce en Magento Open Source >=2.4.4 &lt;2.4.6) - Hiermee wordt het probleem verholpen waarbij het net Verzending en creditmemo niet wordt gevuld wanneer asynchrone indexering is ingeschakeld.
+* **ACSD-47004** (voor Adobe Commerce en Magento Open Source >=2.4.2 &lt;2.4.6) - Hiermee wordt het probleem opgelost dat btw niet wordt geheven op een factuuradres zonder BTW-identificatienummer.
+* **ACSD-47803** (voor Adobe Commerce en Magento Open Source >=2.4.0 &lt;2.4.6) - Hiermee wordt het probleem opgelost waarbij stalen van producten die uit de voorraad kunnen worden geconfigureerd, worden weergegeven als beschikbaar.
+* **ACSD-47137** (voor Adobe Commerce en Magento Open Source >=2.4.4 &lt;2.4.6) - Hiermee verbetert u de laadsnelheid van de afbeeldingsgalerie wanneer de map pub/media erg groot is.
+* **ACSD-46770** (voor Adobe Commerce en Magento Open Source >=2.4.0 &lt;2.4.6) - Hiermee wordt het probleem opgelost waarbij e-mails met bestellingen voor beheerders worden verzonden, zelfs als de *E-mailorderbevestiging* is uitgeschakeld.
+* **ACSD-47955** (voor Adobe Commerce en Magento Open Source >=2.4.4 &lt;2.4.6) - Hiermee wordt het probleem verholpen waarbij GraphQL de kaartkorting niet correct weergeeft.
+* **ACSD-46617** (voor Adobe Commerce en Magento Open Source >=2.4.0 &lt;2.4.6) - Hiermee wordt het probleem opgelost waarbij de *Doorgaan met afhandeling* de knoop wordt grijs uit zelfs als subtotaal groter is dan gevormd *Minimumbedrag bestelling*.
+* **ACSD-47079** (voor Adobe Commerce en Magento Open Source >=2.4.4 &lt;2.4.5) - Hiermee wordt het probleem opgelost waarbij de voorraadstatus van de voorraad van de voorraad van het subproduct (bundel, gegroepeerd en configureerbaar) niet wordt bijgewerkt wanneer de status van de voorraad van het subproduct verandert via REST API POST /rest/V1/voorraad/bron-items.
+* **ACSD-47336** (voor Adobe Commerce en Magento Open Source >=2.4.0 &lt;2.4.6) - Oplossingen *Er ging iets mis.* fout bij het negeren van meldingen in Commerce Admin.
+* **ACSD-47559** (voor Adobe Commerce en Magento Open Source >=2.4.0 &lt;2.4.6) - Hiermee wordt het probleem verholpen waarbij het gebied Voorvertoning e-mailsjabloon niet volledig zichtbaar is.
+* **ACSD-47920** (voor Adobe Commerce en Magento Open Source >=2.4.0 &lt;2.4.6) - Hiermee wordt het probleem opgelost waarbij orders via de rest-API als gastgebruiker kunnen worden geplaatst, zelfs als de *Uitchecken door gasten toestaan* is uitgeschakeld.
+* Vervangen patches: MDVA-39305, MDVA-42855.
 
 ## v1.1.23 {#v1-1-23}
 
@@ -465,7 +481,7 @@ De [[!DNL Quality Patches Tool]](https://github.com/magento/quality-patches) lev
 * **MDVA-31236** (*voor Adobe Commerce >=2.4.0 &lt;2.4.2*) - Hiermee wordt het probleem verholpen waarbij beheerders met aangepaste resourcetoegang 2FA niet kunnen instellen of zich aanmelden.
 * **MDVA-30845** (*voor Adobe Commerce >=2.3.5 &lt;2.3.7*) - Hiermee wordt het probleem opgelost waarbij de *Er zijn momenteel geen aanhalingstekens beschikbaar voor deze bestelling* Er wordt een fout weergegeven wanneer u geen verbinding maakt met UPS XML/USPS/DHL en er geen andere verzendmethode beschikbaar is.
 * **MDVA-32133** (*voor Adobe Commerce >=2.4.0 &lt;2.4.1*) - Hiermee wordt het probleem verholpen waarbij mediagalerie in bepaalde gevallen niet vanaf Page Builder wordt geladen.
-* **MDVA-12304** (*voor Adobe Commerce >=2.3.0 &lt;2.4.2*) - Het maximumaantal cookies wordt verhoogd van 50 naar 200.
+* **MDVA-12304** (*voor Adobe Commerce >=2.3.0*) - Het maximumaantal cookies wordt verhoogd van 50 naar 200.
 * **MDVA-32632** (*voor Adobe Commerce >=2.3.2 &lt;2.3.5*) - Oplossing van het probleem waarbij in het betalingssysteem, maar niet in Adobe Commerce, bestellingen worden weergegeven.
 * **MDVA-32449** (*voor Adobe Commerce >=2.3.0 &lt;2.3.6 || 2.4.0 || >=2.4.1 &lt;2.4.2 met B2B-extensie*) - Hiermee wordt het probleem verholpen waarbij de geschiedenis van de bestelling zeer langzaam wordt geladen of helemaal niet wordt geladen.
 * **MDVA-32739** (*voor Adobe Commerce >=2.3.0 &lt;2.4.2*) - Hiermee wordt het probleem verholpen waarbij oude e-mails worden verzonden wanneer asynchrone e-mailberichten worden ingeschakeld.
