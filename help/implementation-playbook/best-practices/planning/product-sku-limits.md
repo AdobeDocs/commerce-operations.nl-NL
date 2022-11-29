@@ -4,9 +4,9 @@ description: Leer beste praktijken voor het vormen van de Eenheden van het Bewar
 role: Admin
 feature: Best Practices
 feature-set: Commerce
-source-git-commit: 510f2d4cdaec1034cb04a01fab0948c4261c6d10
+source-git-commit: 3a187ae8c066e56df0d7f4981d26ffb934f64576
 workflow-type: tm+mt
-source-wordcount: '267'
+source-wordcount: '0'
 ht-degree: 0%
 
 ---
@@ -14,9 +14,11 @@ ht-degree: 0%
 
 # Aanbevolen procedures voor SKU-configuratie van product
 
-Om de prestaties te maximaliseren, is het geadviseerde maximum voor efficiënte het Houden Eenheden van het Product (SKUs) 10 miljoen. Dit effectieve productmaximum wordt berekend als:
+Om de prestaties te maximaliseren, is het geadviseerde maximum voor efficiënte product het Houting Units (SKUs) 242 miljoen. Dit effectieve productmaximum wordt berekend als:
 
-`Effective SKU = N\[SKUs\] * Stores/Websites * Customer Groups`
+```text
+Effective SKU = N\[SKUs\] * Stores/Websites * Customer Groups
+```
 
 Als u meer dan het maximale aantal effectieve SKU&#39;s hebt, vertraagt u het ophalen van productgegevens en neemt de tijd voor het voltooien van beheerbewerkingen toe.
 
