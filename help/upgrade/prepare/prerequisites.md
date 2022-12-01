@@ -1,9 +1,9 @@
 ---
 title: Volledige voorwaarden
 description: Bereid uw Adobe Commerce- of Magento Open Source-project voor op een upgrade door deze vereiste stappen uit te voeren.
-source-git-commit: c2d0c1d46a5f111a245b34ed6bc706dcd52be31c
+source-git-commit: 6782498985d4fd6540b0481e2567499f74d04d97
 workflow-type: tm+mt
-source-wordcount: '1291'
+source-wordcount: '1401'
 ht-degree: 0%
 
 ---
@@ -17,6 +17,7 @@ Nadat u de systeemvereisten hebt gecontroleerd, moet u aan de volgende voorwaard
 
 - Alle software bijwerken
 - Controleren of een ondersteund zoekprogramma is geïnstalleerd
+- Database-tabelindeling converteren
 - Limiet voor geopende bestanden instellen
 - Controleren of uitsnijdtaken worden uitgevoerd
 - Set `DATA_CONVERTER_BATCH_SIZE`
@@ -29,6 +30,10 @@ Nadat u de systeemvereisten hebt gecontroleerd, moet u aan de volgende voorwaard
 De [systeemvereisten](../../installation/system-requirements.md) exact beschrijven welke versies van software van derden zijn getest met Adobe Commerce en Magento Open Source.
 
 Zorg ervoor dat u alle systeemvereisten en afhankelijkheden in uw omgeving hebt bijgewerkt. Zie PHP [7,4](https://www.php.net/manual/en/migration74.php), PHP [8,0](https://www.php.net/manual/en/migration80.php), PHP [8,1](https://www.php.net/manual/en/migration81.php), en [vereiste PHP-instellingen](../../installation/prerequisites/php-settings.md#php-settings).
+
+>[!NOTE]
+>
+>Voor Adobe Commerce op cloud Infrastructure Pro-projecten moet u een [Ondersteuning](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html#submit-ticket) ticket voor installatie of update van services in een testomgeving. Geef aan welke servicewijzigingen nodig zijn en neem uw bijgewerkte `.magento.app.yaml` en `services.yaml` bestanden en PHP-versie in het ticket. Het kan tot 48 uur duren voordat het infrastructuurteam van de cloud uw project kan bijwerken. Zie [Ondersteunde software en services](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/architecture/cloud-architecture.html#supported-software-and-services).
 
 ## Controleren of een ondersteund zoekprogramma is geïnstalleerd
 
@@ -63,13 +68,13 @@ U moet Elasticsearch 7.6 of hoger of OpenSearch 1.2 installeren en configureren 
 
 Zie [Elasticsearch bijwerken](https://www.elastic.co/guide/en/elasticsearch/reference/current/setup-upgrade.html) voor volledige instructies voor het maken van back-ups van uw gegevens, het opsporen van potentiële migratiekwesties en het testen van upgrades voordat u deze implementeert naar de productie. Afhankelijk van uw huidige versie van Elasticsearch, is het mogelijk dat een volledige clusterherstart al dan niet vereist is.
 
-Elasticsearch vereist JDK 1.8 of hoger. Zie [De JDK (Java Software Development Kit) installeren](../../installation/prerequisites/search-engine/overview.md#install-the-java-software-development-kit-jdk) om te controleren welke versie van JDK is geïnstalleerd.
+Voor Elasticsearch is Java Development Kit (JDK) 1.8 of hoger vereist. Zie [De JDK (Java Software Development Kit) installeren](../../installation/prerequisites/search-engine/overview.md#install-the-java-software-development-kit-jdk) om te controleren welke versie van JDK is geïnstalleerd.
 
 [Elasticsearch configureren](../../configuration/search/configure-search-engine.md) beschrijft de taken u na het bijwerken van Elasticsearch 2 aan een gesteunde versie moet uitvoeren.
 
 ### OpenSearch
 
-OpenSearch is een open-source vork van Elasticsearch 7.10.2, na het wijzigen van licenties voor Elasticsearch. In de volgende versies van Adobe Commerce en Magento Open Source wordt ondersteuning voor OpenSearch geïntroduceerd:
+OpenSearch is een open-source vork van Elasticsearch 7.1.2, na een licentiewijziging van Elasticsearch. In de volgende versies van Adobe Commerce en Magento Open Source wordt ondersteuning voor OpenSearch geïntroduceerd:
 
 - 2.4.4.
 - 2.4.3-p2
@@ -79,11 +84,15 @@ U kunt [migreren van Elasticsearch naar OpenSearch](opensearch-migration.md) all
 
 Voor OpenSearch is JDK 1.8 of hoger vereist. Zie [De JDK (Java Software Development Kit) installeren](../../installation/prerequisites/search-engine/overview.md#install-the-java-software-development-kit-jdk) om te controleren welke versie van JDK is geïnstalleerd.
 
-[Magento configureren voor gebruik van Elasticsearch](../../configuration/search/configure-search-engine.md) beschrijft de taken u na veranderende onderzoeksmotoren moet uitvoeren.
+[Configuratie van zoekmachine](../../configuration/search/configure-search-engine.md) beschrijft de taken die u na het veranderen van onderzoeksmotoren moet uitvoeren.
 
 ### Extensies van derden
 
 We raden u aan contact op te nemen met de leverancier van de zoekmachine om te bepalen of uw extensie volledig compatibel is met versie 2.4.
+
+## Database-tabelindeling converteren
+
+U moet de indeling van alle databasetabellen omzetten vanuit `COMPACT` tot `DYNAMIC`. U moet ook het type opslagengine omzetten van `MyISAM` tot `InnoDB`. Zie [best practices](../../implementation-playbook/best-practices/maintenance/commerce-235-upgrade-prerequisites-mariadb.md).
 
 ## Limiet voor geopende bestanden instellen
 
@@ -118,7 +127,7 @@ De waarde in de Bash-shell instellen:
 
 ## Controleren of uitsnijdtaken worden uitgevoerd
 
-De de taakplanner van UNIX `cron` is essentieel voor dagelijkse Adobe Commerce- en Magento Open Source-bewerkingen. Het plant dingen als het opnieuw indexeren, nieuwsbrieven, e-mail, sitemaps, etc. Voor verschillende functies is minstens één snijtaak vereist die wordt uitgevoerd als de eigenaar van het bestandssysteem.
+De de taakplanner van UNIX `cron` is essentieel voor dagelijkse Adobe Commerce- en Magento Open Source-bewerkingen. Het plant dingen zoals het opnieuw indexeren, nieuwsbrieven, e-mail, en sitemaps. Voor verschillende functies is minstens één snijtaak vereist die wordt uitgevoerd als de eigenaar van het bestandssysteem.
 
 Als u wilt controleren of de uitsnijdtaak op de juiste wijze is ingesteld, controleert u de tab door de volgende opdracht in te voeren als de eigenaar van het bestandssysteem:
 
@@ -146,7 +155,7 @@ Klik op **Systeemberichten** boven aan het venster als volgt:
 
 ![](../../assets/upgrade-guide/system-messages.png)
 
-Zie [Uitsnede configureren en uitvoeren](../../configuration/cli/configure-cron-jobs.md) voor meer informatie.
+Zie [Uitsnede configureren en uitvoeren](../../configuration/cli/configure-cron-jobs.md) voor meer informatie .
 
 ## DATA_CONVERTER_BATCH_SIZE instellen
 
@@ -177,7 +186,7 @@ De omgevingsvariabele instellen:
 
    >[!NOTE]
    >
-   > `DATA_CONVERTER_BATCH_SIZE` vereist geheugen; U kunt het niet instellen op een grote waarde (ongeveer 1 GB) zonder deze eerst te testen.
+   > `DATA_CONVERTER_BATCH_SIZE` vereist geheugen; U moet voorkomen dat u een grote waarde (ongeveer 1 GB) instelt zonder deze eerst te testen.
 
 1. Nadat de upgrade is voltooid, kunt u de instelling van de variabele ongedaan maken:
 
