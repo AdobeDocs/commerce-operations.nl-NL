@@ -2,7 +2,7 @@
 title: Controlelijsten vereist
 description: Gebruik deze lijst met uitgebreide vragen om u te helpen bij het voorbereiden van een Adobe Commerce-implementatie.
 exl-id: 9ac485c5-d491-4022-9366-5e3a382513b6
-source-git-commit: 6509c939c7abc5462bffbe104466b2ff9e6fadc9
+source-git-commit: d18be812626723e203d2308be8c3f9783a19b43b
 workflow-type: tm+mt
 source-wordcount: '1536'
 ht-degree: 0%
@@ -205,7 +205,7 @@ Zijn er bestaande API&#39;s die kunnen worden gebruikt?
 
 - Welk systeem voor orderbeheer zal met Adobe Commerce worden geïntegreerd? (Voorbeelden: Microsoft Dynamics, SAP, Retail Pro)
 
-- Welk systeem voor het beheer van de productinventaris zal met Adobe Commerce worden geïntegreerd? (Voorbeelden: Akeneo, InRiver, Bluestone)
+- Welk systeem voor productinformatiebeheer zal met Adobe Commerce worden geïntegreerd? (Voorbeelden: Akeneo, InRiver, Bluestone)
 
 - Welk systeem van het klantenrelatiebeheer zal met Adobe Commerce worden geïntegreerd? (Voorbeelden: Hubspot, Salesforce, Klaviyo)
 
