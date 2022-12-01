@@ -1,9 +1,9 @@
 ---
 title: "De [!UICONTROL CDN] tab"
 description: Meer informatie over de [!UICONTROL CDN] tabblad van [!DNL Observation for Adobe Commerce].
-source-git-commit: 3f2a401bb916fc04405f21ba2acfc42f7defdccb
+source-git-commit: 424c832ba7580e5d766dea33e3b776eaca7a0d77
 workflow-type: tm+mt
-source-wordcount: '702'
+source-wordcount: '0'
 ht-degree: 0%
 
 ---
@@ -56,7 +56,7 @@ De **[!UICONTROL Error Percentage]** geeft de waarde van het percentage FOUT van
 
 ![Snelle cache-gemiddelde respons voor geselecteerde tijdsperiode in seconden](../../assets/tools/observation-for-adobe-commerce/cdn-tab-9.png)
 
-Dit kader toont de duur in seconden van de cacheable verzoeken, betekenend dat als a `cache_response` is een MISS, toont het het gemiddelde voor gemiste caching reacties voor de geselecteerde tijd.
+Dit kader toont de duur in seconden van de cacheable verzoeken, betekenend dat als a `cache_response` is een [!UICONTROL MISS], wordt het gemiddelde voor gemiste reacties in de cache voor de geselecteerde tijd weergegeven.
 
 ## [!UICONTROL Fastly Cache Average Response for selected time period in seconds, faceted by POP]
 
@@ -70,7 +70,7 @@ Dit kader toont de duur in seconden van de cacheable verzoeken, betekenend dat a
 
 ![Verzoeken - Sinds de geselecteerde tijdsperiode vergeleken met een week geleden](../../assets/tools/observation-for-adobe-commerce/cdn-tab-12.png)
 
-Dit kader is gelijkaardig aan de summiere doos voor Totale Verzoeken bij de bovenkant maar toont de vorige weken verzoektellingen. Dit zijn allemaal verzoeken, niet alleen cacheable verzoeken (waar `is_cacheable` is waar).
+Dit kader is vergelijkbaar met het overzichtsvak voor [!UICONTROL Total Requests] bovenaan, maar toont het aantal verzoeken van voorgaande weken. Dit zijn allemaal verzoeken, niet alleen cacheable verzoeken (waar `is_cacheable` is waar).
 
 ## [!UICONTROL Response Count]
 
@@ -114,7 +114,7 @@ De **[!UICONTROL Duration by Response Status, top 25 non-200 status]** grafiek i
 
 ![Fout bij tellen op POP-tijdlijn](../../assets/tools/observation-for-adobe-commerce/cdn-tab-20.png)
 
-De **[!UICONTROL Error Count by POP timeline]** in de grafiek wordt het aantal statussen van de fout weergegeven in de geselecteerde tijdlijn, afhankelijk van de foutcode.
+De **[!UICONTROL Error Count by POP timeline]** in een grafiek wordt het aantal statussen van fouten weergegeven in de geselecteerde tijdlijn van het tijdframe, afhankelijk van de foutcode.
 
 ## [!UICONTROL Duration by Response status, top 25 client IP, non-200 status]
 
@@ -126,4 +126,4 @@ De **[!UICONTROL Duration by Response status, top 25 client IP, non 200 status]*
 
 ![IP-frequentie](../../assets/tools/observation-for-adobe-commerce/cdn-tab-22.jpeg)
 
-De **[!UICONTROL IP Frequency]** frame counts de statussen (&quot;MISS&quot; en &quot;PASS&quot;) voor elk IP van het [!DNL Fastly] logboeken. De verzoeken van het Web met deze statussen zullen de oorsprongsserver bereiken en zullen lading aan de server toevoegen. De top 20 van adressen in frequentie worden getoond. Dit kader kan worden gebruikt om IP aanvallen of bronnen van zware lading op een website te ontdekken. Deze grafiek staat ook op het tabblad Samenvatting en wordt hier geplaatst voor een eenvoudige vergelijking met meer details op het tabblad [!DNL Fastly] loggegevens die op dit tabblad worden weergegeven.
+De **[!UICONTROL IP Frequency]** het kader telt de (&quot;MISS&quot;en &quot;PASS&quot;) statussen voor elk IP van [!DNL Fastly] logboeken. De verzoeken van het Web met deze statussen zullen de oorsprongsserver bereiken en zullen lading aan de server toevoegen. De top 20 van adressen in frequentie worden getoond. Dit kader kan worden gebruikt om IP aanvallen of bronnen van zware lading op een website te ontdekken. Deze grafiek staat ook op het tabblad Samenvatting en wordt hier geplaatst voor een eenvoudige vergelijking met meer details op het tabblad [!DNL Fastly] loggegevens die op dit tabblad worden weergegeven.
