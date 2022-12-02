@@ -1,9 +1,9 @@
 ---
 title: Meerdere websites instellen met Apache
 description: Volg deze zelfstudie om meerdere websites in te stellen met Apache.
-source-git-commit: 6a3995dd24f8e3e8686a8893be9693581d31712b
+source-git-commit: 8102c083bb0216bbdcad2882f39f7711b9cee52b
 workflow-type: tm+mt
-source-wordcount: '500'
+source-wordcount: '508'
 ht-degree: 0%
 
 ---
@@ -19,7 +19,7 @@ Kopieer, indien nodig, de bestaande `index.php` script voor het ingangspunt voor
 
    Er kunnen extra taken nodig zijn om meerdere websites in een gehoste omgeving te implementeren. Raadpleeg uw hostingprovider voor meer informatie.
 
-   Er zijn extra taken nodig om Adobe Commerce in te stellen op cloudinfrastructuur. Nadat u de taken voltooit die in dit onderwerp worden besproken, zie [Meerdere websites of winkels instellen](https://devdocs.magento.com/cloud/project/project-multi-sites.html) in de _Commerce Cloud-hulplijn_.
+   Er zijn extra taken nodig om Adobe Commerce in te stellen op cloudinfrastructuur. Nadat u de taken voltooit die in dit onderwerp worden besproken, zie [Meerdere websites of winkels instellen](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure-store/multiple-sites.html) in de _Handleiding Handel in Cloud-infrastructuur_.
 
 - U gebruikt één virtuele host per website; het virtuele hostconfiguratiebestand is `/etc/httpd/httpd.conf`
 
@@ -95,8 +95,8 @@ Tenzij u DNS opstelling voor de URL van uw opslag hebt, moet u een statische rou
 1. Voeg de statische route in het formaat toe:
 
    ```conf
-   <ip address> french.mysite.mg
-   <ip address> german.mysite.mg
+   <ip-address> french.mysite.mg
+   <ip-address> german.mysite.mg
    ```
 
 1. Ga naar een van de volgende URL&#39;s in uw browser:
@@ -110,7 +110,7 @@ Tenzij u DNS opstelling voor de URL van uw opslag hebt, moet u een statische rou
 >[!INFO]
 >
 >- Er kunnen extra taken nodig zijn om meerdere websites in een gehoste omgeving te implementeren. Raadpleeg uw hostingprovider voor meer informatie.
->- Er zijn extra taken nodig om Adobe Commerce op cloudinfrastructuur in te stellen. zie [Meerdere Cloud-websites of -winkels instellen](https://devdocs.magento.com/cloud/project/project-multi-sites.html) in de _Commerce Cloud-hulplijn_.
+>- Er zijn extra taken nodig om Adobe Commerce op cloudinfrastructuur in te stellen. zie [Meerdere Cloud-websites of -winkels instellen](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure-store/multiple-sites.html) in de _Handleiding Handel in Cloud-infrastructuur_.
 
 
 ### Problemen oplossen

@@ -1,9 +1,9 @@
 ---
 title: Berichtenrijen beheren
 description: Leer hoe u berichtrijen van de bevellijn voor Adobe Commerce kunt beheren.
-source-git-commit: 53448b11a2d000fe8e8a7eecf2ffcef4b7e248fa
+source-git-commit: 8102c083bb0216bbdcad2882f39f7711b9cee52b
 workflow-type: tm+mt
-source-wordcount: '402'
+source-wordcount: '410'
 ht-degree: 0%
 
 ---
@@ -49,7 +49,7 @@ U kunt ook procesbeheer gebruiken, zoals [Supervisor](http://supervisord.org/ind
 
 >[!INFO]
 >
->Als uw Adobe Commerce-winkel op het Cloud-platform wordt gehost, gebruikt u de [`CRON_CONSUMERS_RUNNER`](https://devdocs.magento.com/cloud/env/variables-deploy.html#cron_consumers_runner) om het `consumers_runner` snijtaak.
+>Als uw Adobe Commerce-winkel op het Cloud-platform wordt gehost, gebruikt u de [`CRON_CONSUMERS_RUNNER`](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure/env/stage/variables-deploy.html#cron_consumers_runner) om het `consumers_runner` snijtaak.
 
 ### Specifieke configuratie
 
@@ -82,6 +82,6 @@ Bewerk de `/app/etc/env.php` bestand om de uitsnijdtaak te configureren `consume
 
    >[!INFO]
    >
-   >Als uw Adobe Commerce-winkel op het Cloud-platform wordt gehost, gebruikt u de [`CONSUMERS_WAIT_FOR_MAX_MESSAGES`](https://devdocs.magento.com/cloud/env/variables-deploy.html#consumers_wait_for_max_messages) om te vormen hoe de consumenten berichten van de berichtrij verwerken.
+   >Als uw Adobe Commerce-winkel op het Cloud-platform wordt gehost, gebruikt u de [`CONSUMERS_WAIT_FOR_MAX_MESSAGES`](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure/env/stage/variables-deploy.html#consumers_wait_for_max_messages) om te vormen hoe de consumenten berichten van de berichtrij verwerken.
 
 Zie [Gebruikers in de wachtrij met berichten starten](../cli/start-message-queues.md).

@@ -1,9 +1,9 @@
 ---
 title: Externe opslag voor handel in cloudinfrastructuur
 description: Zie de richtlijnen voor het instellen van externe opslag voor Adobe Commerce op cloudinfrastructuur.
-source-git-commit: 9a5993c9a65ad210f1a9682734730f235bbc3d44
+source-git-commit: 8102c083bb0216bbdcad2882f39f7711b9cee52b
 workflow-type: tm+mt
-source-wordcount: '175'
+source-wordcount: '178'
 ht-degree: 0%
 
 ---
@@ -13,7 +13,7 @@ ht-degree: 0%
 
 Als u ervoor kiest om de oplossing voor externe opslag te gebruiken met een Adobe Commerce-project voor cloudinfrastructuur, gebruikt u de [Amazon S3](https://docs.fastly.com/en/guides/amazon-s3) richtsnoeren in de _Snel_ documentatie om ervoor te zorgen dat Fastly Image Optimization werkt met AWS S3.
 
-Wees voorbereid met uw [Snelle referenties](https://devdocs.magento.com/cloud/cdn/configure-fastly.html#cloud-fastly-creds). Bij Pro-projecten gebruikt u SSH om verbinding te maken met uw server en krijgt u de snelste referenties van de `/mnt/shared/fastly_tokens.txt` bestand. Staging- en productieomgevingen hebben unieke gegevens. U moet de geloofsbrieven voor elke milieu krijgen.
+Wees voorbereid met uw [Snelle referenties](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/cdn/setup-fastly/fastly-configuration.html#get-fastly-credentials). Bij Pro-projecten gebruikt u SSH om verbinding te maken met uw server en krijgt u de snelste referenties van de `/mnt/shared/fastly_tokens.txt` bestand. Staging- en productieomgevingen hebben unieke gegevens. U moet de geloofsbrieven voor elke milieu krijgen.
 
 De externe opslag voor cloudprojecten blijven instellen met de volgende taken:
 

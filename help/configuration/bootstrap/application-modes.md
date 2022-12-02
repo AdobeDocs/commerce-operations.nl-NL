@@ -1,9 +1,9 @@
 ---
 title: Toepassingsmodi
 description: De toepassing van de Handel kan op verschillende wijzen afhankelijk van uw behoeften werken. Bekijk een gedetailleerde lijst met de beschikbare toepassingsmodi.
-source-git-commit: d263e412022a89255b7d33b267b696a8bb1bc8a2
+source-git-commit: 8102c083bb0216bbdcad2882f39f7711b9cee52b
 workflow-type: tm+mt
-source-wordcount: '790'
+source-wordcount: '798'
 ht-degree: 0%
 
 ---
@@ -22,7 +22,7 @@ U kunt de toepassing van de Handel in om het even welk volgend in werking stelle
 
 >[!INFO]
 >
->[Adobe Commerce over cloudinfrastructuur](https://devdocs.magento.com/cloud/bk-cloud.html) ondersteunt alleen de productie- en onderhoudsmodi.
+>[Adobe Commerce over cloudinfrastructuur](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/overview.html) ondersteunt alleen de productie- en onderhoudsmodi.
 
 ## Standaardmodus
 
@@ -71,4 +71,4 @@ Voer de toepassing Commerce in onderhoudsmodus uit om uw site offline te zetten 
 
 U kunt een [aangepaste onderhoudspagina](../../upgrade/troubleshooting/maintenance-mode-options.md), laat manueel en maakt onderhoudswijze onbruikbaar, en vormt onderhoudswijze om bezoekers van erkende IP adressen toe te staan om de opslag normaal te bekijken. Zie [de onderhoudsmodus in- en uitschakelen](../../installation/tutorials/maintenance-mode.md).
 
-Als u Handel op wolkeninfrastructuur gebruikt, loopt de toepassing van de Handel op onderhoudswijze tijdens de opstellen fase. Wanneer de plaatsing met succes voltooit, keert de toepassing van de Handel aan lopende op productiemodus terug. Zie [Implementatiehaken](https://devdocs.magento.com/cloud/reference/discover-deploy.html#cloud-deploy-over-phases-hook) in de _Commerce Cloud-hulplijn_.
+Als u Handel op wolkeninfrastructuur gebruikt, loopt de toepassing van de Handel op onderhoudswijze tijdens de opstellen fase. Wanneer de plaatsing met succes voltooit, keert de toepassing van de Handel aan lopende op productiemodus terug. Zie [Implementatiehaken](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/deploy/best-practices.html#phase-5%3A-deployment-hooks) in de _Handleiding Handel in Cloud-infrastructuur_.

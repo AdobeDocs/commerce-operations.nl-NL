@@ -1,9 +1,9 @@
 ---
 title: Meerdere websites instellen met Nginx
 description: Volg deze zelfstudie om meerdere websites in te stellen met Nginx.
-source-git-commit: d263e412022a89255b7d33b267b696a8bb1bc8a2
+source-git-commit: 8102c083bb0216bbdcad2882f39f7711b9cee52b
 workflow-type: tm+mt
-source-wordcount: '954'
+source-wordcount: '962'
 ht-degree: 0%
 
 ---
@@ -17,7 +17,7 @@ Wij gaan ervan uit dat:
 
    Er kunnen extra taken nodig zijn om meerdere websites in een gehoste omgeving te implementeren. Raadpleeg uw hostingprovider voor meer informatie.
 
-   Er zijn extra taken nodig om Adobe Commerce in te stellen op cloudinfrastructuur. Nadat u de taken voltooit die in dit onderwerp worden besproken, zie [Meerdere websites of winkels instellen](https://devdocs.magento.com/cloud/project/project-multi-sites.html) in de _Commerce Cloud-hulplijn_.
+   Er zijn extra taken nodig om Adobe Commerce in te stellen op cloudinfrastructuur. Nadat u de taken voltooit die in dit onderwerp worden besproken, zie [Meerdere websites of winkels instellen](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure-store/multiple-sites.html) in de _Handleiding Handel in Cloud-infrastructuur_.
 
 - U accepteert meerdere domeinen in één virtueel hostbestand of gebruikt één virtuele host per website. de virtuele dossiers van de gastheerconfiguratie in worden gevestigd `/etc/nginx/sites-available`.
 - U gebruikt de `nginx.conf.sample` verstrekt door de Handel met slechts de wijzigingen die in deze zelfstudie worden besproken.
@@ -265,8 +265,8 @@ Tenzij u DNS opstelling voor de URL van uw opslag hebt, moet u een statische rou
 1. Voeg de statische route in het formaat toe:
 
    ```conf
-   <ip address> french.mysite.mg
-   <ip address> german.mysite.mg
+   <ip-address> french.mysite.mg
+   <ip-address> german.mysite.mg
    ```
 
 1. Ga naar een van de volgende URL&#39;s in uw browser:
@@ -280,7 +280,7 @@ Tenzij u DNS opstelling voor de URL van uw opslag hebt, moet u een statische rou
 >[!INFO]
 >
 >- Er kunnen extra taken nodig zijn om meerdere websites in een gehoste omgeving te implementeren. Raadpleeg uw hostingprovider voor meer informatie.
->- Er zijn extra taken nodig om Adobe Commerce op cloudinfrastructuur in te stellen. zie [Meerdere Cloud-websites of -winkels instellen](https://devdocs.magento.com/cloud/project/project-multi-sites.html) in de _Commerce Cloud-hulplijn_.
+>- Er zijn extra taken nodig om Adobe Commerce op cloudinfrastructuur in te stellen. zie [Meerdere Cloud-websites of -winkels instellen](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure-store/multiple-sites.html) in de _Handleiding Handel in Cloud-infrastructuur_.
 
 
 ### Problemen oplossen

@@ -1,9 +1,9 @@
 ---
 title: Overzicht van de configuratiehandleiding
 description: Meer informatie over alle configureerbare functies en services voor uw Adobe Commerce- of Magento Open Source-toepassing.
-source-git-commit: 573b407bf29fd4dea2c0e9a52593f65fa64ffa2d
+source-git-commit: 8102c083bb0216bbdcad2882f39f7711b9cee52b
 workflow-type: tm+mt
-source-wordcount: '157'
+source-wordcount: '163'
 ht-degree: 0%
 
 ---
@@ -29,4 +29,4 @@ Er zijn overeenkomstige onderwerpen in [Handboek voor handel](https://docs.magen
 
 ## Cloudconfiguratie
 
-[!DNL Commerce on cloud infrastructure] gebruikt een [set configuratiebestanden](https://devdocs.magento.com/cloud/env/environments.html) om de [!DNL Commerce] toepassingsfuncties en -services in de gehoste omgevingen. Vanwege de unieke aard van omgevingen met cloudgehoste omgevingen moet u altijd de [Wolkengids](https://devdocs.magento.com/cloud/bk-cloud.html) voor extra configuratievereisten.
+[!DNL Commerce on cloud infrastructure] gebruikt een [set configuratiebestanden](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure/overview.html) om de de toepassingseigenschappen en diensten van de Handel in de ontvangen milieu&#39;s bij te werken. Vanwege de unieke aard van de door de Adobe cloud gehoste omgevingen moet u altijd de [Wolkengids](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/overview.html) voor extra configuratievereisten.

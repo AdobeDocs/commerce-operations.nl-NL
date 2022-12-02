@@ -1,9 +1,9 @@
 ---
 title: De indexen beheren
 description: Zie voorbeelden van hoe te om de indexen van de Handel te bekijken en te beheren.
-source-git-commit: d263e412022a89255b7d33b267b696a8bb1bc8a2
+source-git-commit: 8102c083bb0216bbdcad2882f39f7711b9cee52b
 workflow-type: tm+mt
-source-wordcount: '622'
+source-wordcount: '626'
 ht-degree: 0%
 
 ---
@@ -220,7 +220,7 @@ Catalog Search:                                    Update on Save
 
 >[!INFO]
 >
->Voordat u van indexeermodus overschakelt, raden we u aan uw website te plaatsen naar [onderhoud](../../installation/tutorials/maintenance-mode.md) en [uitsnijdtaken uitschakelen](https://devdocs.magento.com/cloud/configure/setup-cron-jobs.html#disable-cron-jobs). Dit zorgt ervoor u geen gegevensbestandsloten lijdt.
+>Voordat u van indexeermodus overschakelt, raden we u aan uw website te plaatsen naar [onderhoud](../../installation/tutorials/maintenance-mode.md) en [uitsnijdtaken uitschakelen](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure/app/properties/crons-property.html#disable-cron-jobs). Dit zorgt ervoor u geen gegevensbestandsloten lijdt.
 
 De indexeerconfiguratie opgeven:
 

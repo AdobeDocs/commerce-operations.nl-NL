@@ -1,9 +1,9 @@
 ---
 title: Configuratie-instellingen overschrijven
 description: Leer hoe te om omgevingsvariabelen te gebruiken om configuratiemontages met voeten te treden.
-source-git-commit: 6a3995dd24f8e3e8686a8893be9693581d31712b
+source-git-commit: 8102c083bb0216bbdcad2882f39f7711b9cee52b
 workflow-type: tm+mt
-source-wordcount: '1241'
+source-wordcount: '1228'
 ht-degree: 0%
 
 ---
@@ -17,7 +17,7 @@ U kunt de waarde van _alle_ configuratie-instelling met behulp van omgevingsvari
 
 >[!TIP]
 >
->Kijk uit de [Omgevingen configureren](https://devdocs.magento.com/cloud/env/variables-intro.html) in het _Commerce Cloud-hulplijn_ voor meer informatie over het werken met variabelen in Adobe Commerce over cloudinfrastructuur.
+>Kijk uit de [Omgevingen configureren](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure/env/stage/variables-intro.html) in het _Handleiding Handel in Cloud-infrastructuur_.
 
 ## Omgevingsvariabelen
 
@@ -253,6 +253,6 @@ Een stapsgewijs voorbeeld wordt getoond in [Configuratiewaarden instellen met om
 >
 >- De waarden gebruiken die u instelt in het dialoogvenster `$_ENV` array, u moet instellen `variables_order = "EGPCS"`(Environment, Get, Post, Cookie, and Server) in uw `php.ini` bestand. Zie voor meer informatie [PHP-documentatie](https://www.php.net/manual/en/ini.core.php).
 >
->- Voor Adobe Commerce op cloudinfrastructuur geldt dat als u probeert de configuratie-instellingen te overschrijven met de opdracht [Projectwebinterface](https://devdocs.magento.com/cloud/project/project-webint-basic.html#project-conf-env-var), moet u de variabelenaam vooraf aan `env:`. Bijvoorbeeld:
+>- Voor Adobe Commerce op cloudinfrastructuur geldt dat als u probeert de configuratie-instellingen te overschrijven met de opdracht [Projectwebinterface](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/project/overview.html#configure-the-project), moet u de variabelenaam vooraf aan `env:`. Bijvoorbeeld:
 >
->![Voorbeeld van de variabele Environment](https://devdocs.magento.com/common/images/cloud/cloud_env_var_example.png)
+>![Voorbeeld van de variabele Environment](../../assets/configuration/cloud-console-envvariable.png)
