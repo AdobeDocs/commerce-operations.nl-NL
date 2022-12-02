@@ -4,9 +4,9 @@ description: Leer hoe u uw Adobe Commerce-database voorbereidt voor een upgrade 
 role: Developer
 feature-set: Commerce
 feature: Best Practices
-source-git-commit: 1abe86197de68336e10c50cab7ad38eebb098aeb
+source-git-commit: 071e88c6a07df0f74b6d4b09cce858710c9332cc
 workflow-type: tm+mt
-source-wordcount: '406'
+source-wordcount: '562'
 ht-degree: 0%
 
 ---
@@ -16,7 +16,7 @@ ht-degree: 0%
 
 In dit artikel wordt uitgelegd hoe u uw database voorbereidt wanneer u een upgrade uitvoert naar Adobe Commerce 2.3.5 vanuit versie 2.3.4 of eerder.
 
-Voor deze upgrade moet het ondersteuningsteam MariaDB upgraden naar de cloudinfrastructuur van MariaDB 10.0 naar 10.2 om te voldoen aan de vereisten voor Adobe Commerce. Adobe Commerce versie 2.3.5 en hoger.
+Voor deze upgrade moet het ondersteuningsteam MariaDB upgraden naar de cloudinfrastructuur van MariaDB 10.0 naar 10.2 om te voldoen aan de vereisten voor Adobe Commerce versie 2.3.5 en hoger.
 
 ## Betrokken product en versies
 
@@ -24,77 +24,118 @@ Adobe Commerce op cloudinfrastructuur met Adobe Commerce versie 2.3.4 of lager e
 
 ## Uw database voorbereiden voor de upgrade
 
-Voordat het Adobe Commerce Support-team begint met het upgradeproces, moet u uw database voorbereiden door de indeling voor alle tabellen te converteren vanuit `COMPACT` tot `DYNAMIC`. U moet ook het type opslagengine omzetten van `MyISAM` tot `InnoDB`.
+Voordat het Adobe Commerce-ondersteuningsteam met het upgradeproces begint, moet u uw database voorbereiden door uw databasetabellen te converteren:
 
-Houd de volgende richtlijnen in mening wanneer u het plan en het programma creeert om het gegevensbestand om te zetten.
+- De rijindeling omzetten van `COMPACT` tot `DYNAMIC`
+- De opslagengine converteren vanuit `MyISAM` tot `InnoDB`
+
+Houd rekening met het volgende wanneer u de conversie plant en plant:
 
 - Converteren vanuit `COMPACT` tot `DYNAMIC` tabellen kunnen enkele uren duren met een grote database.
 
-- Voer de conversie niet uit wanneer uw site actief is om gegevensbeschadiging te voorkomen.
+- Als u gegevensbeschadiging wilt voorkomen, voltooit u de conversiewerkzaamheden op een livesite niet.
 
 - Voltooi het omzettingswerk tijdens een lage verkeersperiode op uw plaats.
 
-- Ga van site naar [onderhoudsmodus](../../../installation/tutorials/maintenance-mode.md) voordat u het `ALTER` opdrachten.
+- Ga van site naar [onderhoudsmodus](../../../installation/tutorials/maintenance-mode.md) voordat u de opdrachten uitvoert om databasetabellen om te zetten.
 
-### Databasetabellen converteren
+### Opmaak databasetabelrij converteren
 
-U kunt tabellen op één knooppunt in uw cluster omzetten. De wijzigingen worden overgenomen in de andere kernknooppunten in uw cluster.
+U kunt tabellen op één knooppunt in uw cluster omzetten. De wijzigingen worden automatisch overgenomen in de andere serviceknoppen.
 
 1. Gebruik vanuit uw Adobe Commerce op de cloud-infrastructuur SSH om verbinding te maken met knooppunt 1.
 
 1. Meld u aan bij MariaDB.
 
-1. Zet de tabelindeling om.
+1. Tabellen identificeren die van compacte naar dynamische indeling moeten worden omgezet.
 
-   - Tabellen identificeren die van compacte naar dynamische indeling moeten worden omgezet.
+   ```mysql
+   SELECT table_name, row_format FROM information_schema.tables WHERE table_schema=DATABASE() and row_format 'Compact';
+   ```
 
-      ```mysql
-      SELECT table_name, row_format FROM information_schema.tables WHERE table_schema=DATABASE() and row_format 'Compact';
-      ```
+1. Bepaal de tabelgrootte zodat u de conversiewerkzaamheden kunt plannen.
 
-   - Bepaal de tabelgrootte zodat u de conversiewerkzaamheden kunt plannen.
+   ```mysql
+   SELECT table_schema as 'Database', table_name AS 'Table', round(((data_length + index_length) / 1024 / 1024), 2) 'Size in MB' FROM information_schema.TABLES ORDER BY (data_length + index_length) DESC;
+   ```
 
-      ```mysql
-      SELECT table_schema as 'Database', table_name AS 'Table', round(((data_length + index_length) / 1024 / 1024), 2) 'Size in MB' FROM information_schema.TABLES ORDER BY (data_length + index_length) DESC;
-      ```
+   Grotere tabellen duurt langer om te converteren. Controleer de tabellen en batchgeer het conversiewerk op prioriteit en op tabelgrootte om de vereiste onderhoudsvensters te plannen.
 
-      Grotere tabellen duurt langer om te converteren. U zou dienovereenkomstig moeten plannen wanneer het nemen van uw plaats in en uit onderhoudsmodus welke partijen van lijsten in welke orde om te zetten, om de timing van de noodzakelijke onderhoudsvensters te plannen
+1. Zet alle tabellen een voor een om in een dynamische indeling.
 
-   - Zet alle tabellen een voor een om in een dynamische indeling.
+   ```mysql
+   ALTER TABLE [ table name here ] ROW_FORMAT=DYNAMIC;
+   ```
 
-      ```mysql
-      ALTER TABLE [ table name here ] ROW_FORMAT=DYNAMIC;
-      ```
+### Opmaak databasetabelopslag converteren
 
-1. Werk de engine voor tabelopslag bij.
+U kunt tabellen op één knooppunt in uw cluster omzetten. De wijzigingen worden automatisch overgenomen in de andere serviceknoppen.
 
-   - Tabellen identificeren die worden gebruikt `MyISAM` opslag.
+Het converteren van de opslagindeling is anders voor Adobe Commerce Starter- en Adobe Commerce Pro-projecten.
 
-      ```mysql
-      SELECT table_name FROM INFORMATION_SCHEMA.TABLES WHERE engine = 'MyISAM';
-      ```
+- Voor Starter architectuur, gebruik MySQL `ALTER` gebruiken om de indeling te converteren.
+- Bij Pro architectuur, gebruik MySQL `CREATE` en `SELECT` opdrachten om een databasetabel te maken met `InnoDB` de gegevens uit de bestaande tabel opslaan en kopiëren naar de nieuwe tabel. Deze methode zorgt ervoor dat de wijzigingen worden gerepliceerd naar alle knooppunten in uw cluster.
 
-   - Tabellen omzetten die `MyISAM` opslag naar `InnoDB` opslag.
+**Opmaak voor tabelopslag converteren voor Adobe Commerce Pro-projecten**
 
-      ```mysql
-      ALTER TABLE [ table name here ] ENGINE=InnoDB;
-      ```
+1. Tabellen identificeren die worden gebruikt `MyISAM` opslag.
 
-1. Controleer de conversie.
+   ```mysql
+   SELECT table_name FROM INFORMATION_SCHEMA.TABLES WHERE engine = 'MyISAM';
+   ```
 
-   Deze stap wordt vereist omdat de code plaatsingen die nadat u voltooide de omzetting worden gemaakt sommige lijsten zouden kunnen veroorzaken om aan hun originele configuratie worden teruggezet.
+1. Alle tabellen converteren naar `InnoDB` opslagindeling één voor één.
 
-   - De dag vóór de geplande upgrade naar MariaDB versie 10.2 meldt u zich aan bij uw database en voert u de query&#39;s uit om de indeling en de opslagengine te controleren.
-
-      ```mysql
-      SELECT table_name, row_format FROM information_schema.tables WHERE table_schema=DATABASE() and row_format = 'Compact';
-      ```
+   - Wijzig de naam van de bestaande tabel om naamconflicten te voorkomen.
 
       ```mysql
-      SELECT table_name FROM INFORMATION_SCHEMA.TABLES WHERE engine = 'MyISAM';
+      RENAME TABLE <existing_table> <table_old>;
       ```
 
-   - Herhaal de stappen om de tabel- en opslagengine te wijzigen als er tabellen zijn teruggezet.
+   - Een tabel maken die `InnoDB` opslag met behulp van de gegevens uit de bestaande tabel.
+
+      ```mysql
+      CREATE TABLE <existing_table> ENGINE=InnoDB SELECT * from <table_old>;
+      ```
+
+   - Controleer of de nieuwe tabel alle vereiste gegevens bevat.
+
+   - Verwijder de oorspronkelijke tabel waarvan u de naam hebt gewijzigd.
+
+
+**Opmaak voor tabelopslag converteren voor Adobe Commerce Starter-projecten**
+
+1. Tabellen identificeren die worden gebruikt `MyISAM` opslag.
+
+   ```mysql
+   SELECT table_name FROM INFORMATION_SCHEMA.TABLES WHERE engine = 'MyISAM';
+   ```
+
+1. Tabellen omzetten die `MyISAM` opslag naar `InnoDB` opslag.
+
+   ```mysql
+   ALTER TABLE [ table name here ] ENGINE=InnoDB;
+   ```
+
+### De databaseconversie controleren
+
+De dag vóór de geplande upgrade naar MariaDB-versie 10.2 controleert u of alle tabellen de juiste rijindeling en opslagengine hebben. De controle wordt vereist omdat de code plaatsingen die nadat u de omzetting wordt gemaakt sommige lijsten zouden kunnen veroorzaken om aan hun originele configuratie worden teruggezet.
+
+1. Meld u aan bij uw database.
+
+1. Controleren op alle tabellen die nog steeds de `COMPACT` rijindeling.
+
+   ```mysql
+   SELECT table_name, row_format FROM information_schema.tables WHERE table_schema=DATABASE() and row_format = 'Compact';
+   ```
+
+1. Controleren op alle tabellen die nog steeds gebruikmaken van de `MyISAM` opslagindeling
+
+   ```mysql
+   SELECT table_name FROM INFORMATION_SCHEMA.TABLES WHERE engine = 'MyISAM';
+   ```
+
+1. Herhaal de stappen om de indeling van de tabelrij en de opslagengine te wijzigen als er tabellen zijn teruggezet.
 
 ## Aanvullende informatie
 
