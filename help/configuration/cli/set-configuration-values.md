@@ -1,7 +1,7 @@
 ---
 title: Configuratiewaarden instellen
 description: Leer hoe u configuratiewaarden instelt en waarden wijzigt die zijn vergrendeld in Beheer.
-source-git-commit: ee2e446edf79efcd7cbbd67248f8e7ece06bfefd
+source-git-commit: cb8edb8de8f8419e9992b180ea927ba55cbd839b
 workflow-type: tm+mt
 source-wordcount: '985'
 ht-degree: 0%
@@ -133,8 +133,8 @@ In de volgende tabel worden de `set` opdrachtparameters:
 | --- | --- |
 | `--scope` | Het bereik van de configuratie. De mogelijke waarden zijn: `default`, `website`, of `store`. De standaardwaarde is `default`. |
 | `--scope-code` | De bereikcode van de configuratie (code van de website of van de opslagmening) |
-| `-le or --lock-env` | Hiermee vergrendelt u de waarde zodat deze niet kan worden bewerkt in de beheerfunctie of wijzigt u een instelling die al is vergrendeld in de beheerfunctie. De opdracht schrijft de waarde naar de `<Commerce base dir>/app/etc/env.php` bestand. |
-| `-lc or --lock-config` | Hiermee vergrendelt u de waarde zodat deze niet kan worden bewerkt in de beheerfunctie of wijzigt u een instelling die al is vergrendeld in de beheerfunctie. De opdracht schrijft de waarde naar de `<Commerce base dir>/app/etc/config.php` bestand. De `--lock-config` optie overschrijft `--lock-env` als u beide opties opgeeft. |
+| `-e or --lock-env` | Hiermee vergrendelt u de waarde zodat deze niet kan worden bewerkt in de beheerfunctie of wijzigt u een instelling die al is vergrendeld in de beheerfunctie. De opdracht schrijft de waarde naar de `<Commerce base dir>/app/etc/env.php` bestand. |
+| `-c or --lock-config` | Hiermee vergrendelt u de waarde zodat deze niet kan worden bewerkt in de beheerfunctie of wijzigt u een instelling die al is vergrendeld in de beheerfunctie. De opdracht schrijft de waarde naar de `<Commerce base dir>/app/etc/config.php` bestand. De `--lock-config` optie overschrijft `--lock-env` als u beide opties opgeeft. |
 | `path` | _Vereist_. Het configuratiepad |
 | `value` | _Vereist_. De waarde van de configuratie |
 
