@@ -1,9 +1,9 @@
 ---
 title: "De [!UICONTROL [!DNL RabbitMQ]] tab"
 description: Meer informatie over de [!UICONTROL [!DNL RabbitMQ]] tabblad van [!DNL Observation for Adobe Commerce].
-source-git-commit: 639dca9ee715f2f9ca7272d3b951d3315a85346c
+source-git-commit: e59b8db21c449fcf91466df7482849a0454bfe3e
 workflow-type: tm+mt
-source-wordcount: '557'
+source-wordcount: '225'
 ht-degree: 0%
 
 ---
@@ -18,24 +18,24 @@ De **[!UICONTROL [!DNL RabbitMQ]]** tab bevat informatie waarop de focus ligt [!
 
 De **[!UICONTROL [!DNL RabbitMQ] Infrastructure events]** frame toont infrastructuurgebeurtenissen die betrekking hebben op [!DNL RabbitMQ] die zich tijdens de geselecteerde tijdlijn hebben voorgedaan:
 
-* %response [fout] for node [rabbit@host1]: Onverwachte http-reactie van%&#39;) als &#39;Onverwacht_resp_node1&#39;
-* &#39;%response [fout] for node [rabbit@host2]: Onverwachte http-reactie van%&#39;) als &#39;Onverwacht_resp_node2&#39;
-* &#39;%response [fout] for node [rabbit@host3]: Onverwachte http-reactie van%&#39;) als &#39;Onverwacht_resp_node3&#39;
-* &#39;%response [fout] for node [rabbit@host3]: Ga naar &quot;http://localhost:15672/api/healthchecks/node/rabbit@host3&quot;: contextdeadline overschreden%&#39;) als &#39;node3_timeout_over&#39;
-* &#39;%response [fout] for node [rabbit@host1]: Ga naar &quot;http://localhost:15672/api/healthchecks/node/rabbit@host1&quot;: contextdeadline overschreden%&#39;) als &#39;node1_timeout_over
-* &#39;%response [fout] for node [rabbit@host2]: Ga naar &quot;http://localhost:15672/api/healthchecks/node/rabbit@host2&quot;: contextdeadline overschreden%&#39;) als &#39;node2_timeout_over&#39;
-* &quot;%401 Unauthorised%&quot;) als &quot;401_unauth&quot;
-* &#39;%401 Unauthorised%&#39;) als &#39;401_unauth&#39;
-* %Service opnieuw gestart: rabbitmq-server%&#39;) als &#39;rmq_service_start&#39;
-* &#39;%response [mislukt] for node [rabbit@host1]: nodedown%&#39;) als &#39;rmq_node1_down&#39;
-* &#39;%response [mislukt] for node [rabbit@host2]: nodedown%&#39;) als &#39;rmq_node2_down&#39;
-* &#39;%response [mislukt] for node [rabbit@host2]: nodedown%&#39;) als &#39;rmq_node2_down&#39;
-* &#39;%Entiteit gewijzigd: exchange/bindings.destination%&#39;) als &#39;rmq_entity_modified
-* &#39;%Entiteit gewijzigd: exchange/bindings.destination%&#39;) als &#39;rmq_entity_modified
-* &#39;%Entiteit gewijzigd: queue/Exclusive%&#39;) als &#39;rmq_entity_created_q_Exclusive&#39;&#39;%Entiteit gewijzigd: queue/auto_delete%&#39;) als &#39;rmq_entity_q_delete&#39;
-* &#39;%Entiteit gewijzigd: queue/durable%&#39;) als &#39;rmq_entity_modified_q_durable&#39;
-* &#39;%Entiteit gewijzigd: version/management%&#39;) als &#39;rmq_entity_modified_ver_mgt&#39;
-* &#39;%Entiteit gewijzigd: version/management%&#39;) als &#39;rmq_entity_modified_ver_mgt&#39;
+* `%Response [error] for node [rabbit@host1]: unexpected http response from%`) als `unexpected_resp_node1`
+* `%Response [error] for node [rabbit@host2]: unexpected http response from%`) als `unexpected_resp_node2`
+* `%Response [error] for node [rabbit@host3]: unexpected http response from%`) als `unexpected_resp_node3`
+* `%Response [error] for node [rabbit@host3]: Get "http://localhost:15672/api/healthchecks/node/rabbit@host3": context deadline exceeded%`) als `node3_timeout_exceeded`
+* `%Response [error] for node [rabbit@host1]: Get "http://localhost:15672/api/healthchecks/node/rabbit@host1": context deadline exceeded%`) als `node1_timeout_exceeded`
+* `%Response [error] for node [rabbit@host2]: Get "http://localhost:15672/api/healthchecks/node/rabbit@host2": context deadline exceeded%`) als `node2_timeout_exceeded`
+* `%401 Unauthorized%`) als `401_unauth`
+* `%401 Unauthorized%`) als `401_unauth`
+* `%Service restarted: rabbitmq-server%`) als `rmq_service_restart`
+* `%Response [failed] for node [rabbit@host1]: nodedown%`) als `rmq_node1_down`
+* `%Response [failed] for node [rabbit@host2]: nodedown%`) als `rmq_node2_down`
+* `%Response [failed] for node [rabbit@host2]: nodedown%`) als `rmq_node2_down`
+* `%Entity modified: exchange/bindings.destination%`) als `rmq_entity_modified`
+* `%Entity modified: exchange/bindings.destination%`) als `rmq_entity_modified`
+* `%Entity modified: queue/exclusive%`) als `rmq_entity_created_q_exclusive` `%Entity modified: queue/auto_delete%`) als `rmq_entity_q_delete`
+* `%Entity modified: queue/durable%`) als `rmq_entity_modified_q_durable`
+* `%Entity modified: version/management%`) als `rmq_entity_modified_ver_mgt`
+* `%Entity modified: version/management%`) als `rmq_entity_modified_ver_mgt`
 
 ## [!UICONTROL [!DNL RabbitMQ] service start/stop signals]
 
@@ -43,8 +43,8 @@ De **[!UICONTROL [!DNL RabbitMQ] Infrastructure events]** frame toont infrastruc
 
 Dit frame toont [!DNL RabbitMQ] de de dienstbegin/stopsignalen die tijdens het geselecteerde tijdkader voorkwamen:
 
-* &#39;%[!DNL RabbitMQ] wordt gevraagd te stoppen...%&#39;) als &#39;rabbitmq_stop&#39;
-* &#39;%Starten [!DNL RabbitMQ]%&#39;) als &#39;rabbitmq_start&#39;
+* `%RabbitMQ is asked to stop...%`) als `rabbitmq_stop`
+* `%Starting RabbitMQ%`) als `rabbitmq_start`
 
 ## [!UICONTROL [!DNL RabbitMQ] errors]
 
@@ -52,22 +52,22 @@ Dit frame toont [!DNL RabbitMQ] de de dienstbegin/stopsignalen die tijdens het g
 
 Dit frame toont [!DNL RabbitMQ] fouten die tijdens de geselecteerde tijdlijn zijn opgetreden:
 
-* &#39;%exit with reason {case_clause,timeout} and stacktrace {rabbit_mgmt_wm_health checks%&#39;} as &#39;exit_timeout&#39;
-* &#39;%client onverwachts gesloten TCP connection%&#39;) als &#39;client_closed_tcp_conn&#39;
-* &#39;%at undefined exit with reason shutdown in context shutdown_error%&#39;) as &#39;undef_exit&#39;
-* &#39;%Connection try from disallowed node%&#39;) as &#39;disallowed_node&#39;
-* &#39;%closing AMQP connection%&#39;) als &#39;rmq_err_amqp_conn&#39;
+* `%exit with reason {case_clause,timeout} and stacktrace {rabbit_mgmt_wm_healthchecks%}` als `exit_timeout`
+* `%client unexpectedly closed TCP connection%`) als `client_closed_tcp_conn`
+* `%at undefined exit with reason shutdown in context shutdown_error%`) als `undef_exit`
+* `%Connection attempt from disallowed node%`) als `disallowed_node`
+* `%closing AMQP connection%`) als `rmq_err_amqp_conn`
 
 ## [!UICONTROL [!DNL RabbitMQ] node status]
 
 ![[!DNL RabbitMQ] knooppuntstatus](../../assets/tools/observation-for-adobe-commerce/rabbitmq-tab-4.jpeg)
 
-* &#39;%konbit op knooppunt rabbit@host1 down%&#39;) als &#39;rmq_node1_down&#39;
-* &#39;%konbit op knooppunt rabbit@host2 down%&#39;) als &#39;rmq_node2_down&#39;
-* &#39;%konbit op knooppunt rabbit@host3 down%&#39;) als &#39;rmq_node3_down&#39;
-* &#39;%rabbit op knooppunt rabbit@host1 up%&#39;) als &#39;rmq_node1_up&#39;
-* &#39;%rabbit op knooppunt rabbit@host2 up%&#39;) als &#39;rmq_node2_up&#39;
-* &#39;%rabbit op knooppunt rabbit@host3 up%&#39;) als &#39;rmq_node3_up&#39;
+* `%rabbit on node rabbit@host1 down%`) als `rmq_node1_down`
+* `%rabbit on node rabbit@host2 down%`) als `rmq_node2_down`
+* `%rabbit on node rabbit@host3 down%`) als `rmq_node3_down`
+* `%rabbit on node rabbit@host1 up%`) als `rmq_node1_up`
+* `%rabbit on node rabbit@host2 up%`) als `rmq_node2_up`
+* `%rabbit on node rabbit@host3 up%`) als `rmq_node3_up`
 
 ## [!UICONTROL [!DNL RabbitMQ] Message High-Level Summary status by Queue]
 
@@ -79,10 +79,10 @@ De **[!UICONTROL [!DNL RabbitMQ] Message High-Level Summary status by Queue]** g
 
 ![[!DNL RabbitMQ] Overzicht van berichtdetails](../../assets/tools/observation-for-adobe-commerce/rabbitmq-tab-6.jpeg)
 
-* &#39;%rapport.ERROR: Cron Job consumer_runner heeft een fout: NOT_FOUND - no queue%&#39;) als &#39;queue_err&#39;
-* &#39;%rapport.ERROR: Cron Job consumer_runner heeft een fout: NOT_FOUND - no queue%&#39;) als &#39;queue_err&#39;
-* &#39;%authenticated and allowed access to vhost%&#39;) as &#39;auth&#39;
-* &#39;%closing AMQP connection%&#39;) als &#39;close_conn&#39;
+* `%report.ERROR: Cron Job consumers_runner has an error: NOT_FOUND - no queue%`) als `queue_err`
+* `%report.ERROR: Cron Job consumers_runner has an error: NOT_FOUND - no queue%`) als `queue_err`
+* `%authenticated and granted access to vhost%`) als `auth`
+* `%closing AMQP connection%`) als `close_conn`
 
 ## [!UICONTROL [!DNL RabbitMQ] Queue Consumption MB]
 
