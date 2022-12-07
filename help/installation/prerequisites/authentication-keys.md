@@ -1,9 +1,9 @@
 ---
 title: Uw verificatietoetsen ophalen
 description: Voer de volgende stappen uit om referenties op repo.magento.com op te halen en toegang te krijgen tot Adobe Commerce- en Magento Open Source Composer-pakketten.
-source-git-commit: 8f05fb6fc212c2b3fda80457bbf27ecf16fb1194
+source-git-commit: d209d3f7fde55f7495488f2cbeeebf21024875ed
 workflow-type: tm+mt
-source-wordcount: '457'
+source-wordcount: '512'
 ht-degree: 0%
 
 ---
@@ -13,9 +13,15 @@ ht-degree: 0%
 
 De `repo.magento.com` In de opslagplaats worden Adobe Commerce- en Magento Open Source- en Composer-pakketten van derden opgeslagen en vereist verificatie. Gebruik uw Commerce Marketplace-account om een paar van 32 tekens te genereren *verificatietoetsen* om toegang te krijgen tot de repository.
 
->[!NOTE]
+Voor toegangsrechten voor Adobe Commerce- en Magento Open Source-pakketten moet u sleutels gebruiken die zijn gekoppeld aan een MAGEID die toegang heeft gekregen tot deze pakketten. De MAGEID is doorgaans de primaire contactpersoon op de Adobe Commerce-account en is mogelijk niet altijd de projecteigenaar van de Adobe Commerce voor het infrastructuurproject in de cloud.
+
+>[!TIP]
 >
->Voor toegangsrechten voor Adobe Commerce- en Magento Open Source-pakketten moet u sleutels gebruiken die zijn gekoppeld aan een MAGEID die toegang heeft gekregen tot deze pakketten. De MAGEID is doorgaans de **Factureringscontactpersoon** op de Adobe Commerce-rekening en is wellicht niet altijd de **Projecteigenaar** van het Adobe Commerce-project inzake cloudinfrastructuur. Als u [fouten](https://support.magento.com/hc/en-us/articles/360040296392), hebt u mogelijk geen toestemming om het pakket te openen of de toegangsrechten zijn verlopen vanwege een openstaande factuur op de account. Contact [Adobe Commerce-ondersteuning](https://support.magento.com/hc/en-us) voor hulp met je MAGEID.
+>Als u [fouten](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/deployment/magento-commerce-cloud-repo-could-not-be-accessed-403-forbidden-or-404-not-found-error-when-deploying.html), hebt u mogelijk geen toestemming om het pakket te openen of de toegangsrechten zijn verlopen vanwege een openstaande factuur op uw account.
+>
+>* Als je de primaire contactpersoon voor de account bent, zorg er dan voor dat er geen openstaande factuur op de account wordt vermeld.
+>* Als de sleutels die door de Primaire Contact worden verstrekt niet werken en er geen uitstaande facturen op de rekening zijn, contacteer [Adobe Commerce-ondersteuning](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html#submit-ticket) voor hulp met behulp van de MAGEID van de primaire contactpersoon.
+
 
 Zo maakt u verificatietoetsen:
 
