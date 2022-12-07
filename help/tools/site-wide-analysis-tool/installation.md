@@ -1,9 +1,9 @@
 ---
 title: Hulplijn installeren
 description: "Gebruik deze handleiding om te installeren [!DNL Site-Wide Analysis Tool] voor uw website"
-source-git-commit: bfcedda38f91f5dba8880bb1593ad40a6e3f8041
+source-git-commit: 5603d0feee6ec9dd5e8b534a0e64df274d7ab84d
 workflow-type: tm+mt
-source-wordcount: '1067'
+source-wordcount: '1092'
 ht-degree: 0%
 
 ---
@@ -16,7 +16,7 @@ De [!DNL Site-Wide Analysis Tool] biedt 24x7 realtime prestatiebewaking, rapport
 >
 >Meer informatie [inschakelen](../site-wide-analysis-tool/access.md) de [!DNL Site-Wide Analysis Tool] en rapporten genereren.
 
-Als u een installatie op locatie van Adobe Commerce hebt, moet u een agent op uw infrastructuur installeren om het hulpprogramma te kunnen gebruiken. U hoeft de agent niet op Adobe Commerce te installeren op cloudinfrastructuurprojecten.
+Als u een installatie van Adobe Commerce in de bedrijfsruimten hebt, installeert u een agent op uw infrastructuur om het hulpmiddel te gebruiken. U hoeft de agent niet op Adobe Commerce te installeren op cloudinfrastructuurprojecten.
 
 ## Agent
 
@@ -36,7 +36,7 @@ Het installeren van de agent vereist de volgende stappen:
 
 >[!INFO]
 >
->De agent ondersteunt Adobe Commerce-installaties met meerdere knooppunten. U moet de agent op elke knoop installeren en vormen.
+>De agent ondersteunt Adobe Commerce-installaties met meerdere knooppunten. Installeer en vorm de agent op elke knoop.
 
 ## Systeemvereisten
 
@@ -44,7 +44,7 @@ Uw infrastructuur ter plaatse moet aan de volgende vereisten voldoen alvorens de
 
 - Besturingssystemen
 
-   - [!DNL Linux x86-64] distributies, zoals [!DNL RedHat Enterprise Linux (RHEL)], [!DNL CentOS], [!DNL Ubuntu], [!DNL Debian], en soortgelijke
+   - [!DNL Linux x86-64] distributies, zoals [!DNL Red Hat® Enterprise Linux (RHEL)], [!DNL CentOS], [!DNL Ubuntu], [!DNL Debian], en soortgelijke
    >[!IMPORTANT]
    >
    >Adobe Commerce wordt niet ondersteund op [!DNL Microsoft Windows] of [!DNL macOS].
@@ -81,7 +81,11 @@ Als u de extensie hebt geïnstalleerd en geconfigureerd met een bestaande API-sl
 
 1. Plaats uw website in [onderhoudsmodus](../../installation/tutorials/maintenance-mode.md).
 
-1. Aanmelden [accounts.magento.com](https://account.magento.com/customer/account/login?_ga=2.164207871.117144580.1649172612-1623400270.1640858671).
+1. Aanmelden [account.magento.com](https://account.magento.com/customer/account/login?_ga=2.164207871.117144580.1649172612-1623400270.1640858671).
+
+   >[!NOTE]
+   >
+   > Als u problemen hebt met het openen van uw account, raadpleegt u [Aanmelden bij Adobe Commerce-ondersteuning of cloudaccount is niet mogelijk](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/unable-to-log-in-to-support-or-cloud-project.html) voor hulp bij het oplossen van problemen.
 
 1. Klik op **[!UICONTROL API Portal]**.
 
@@ -91,7 +95,7 @@ Als u de extensie hebt geïnstalleerd en geconfigureerd met een bestaande API-sl
 
 >[!IMPORTANT]
 >
-> Als u nieuwe sleutels in het Portaal van API produceert, werk onmiddellijk de sleutels API in [!DNL Admin configuration]. Als u nieuwe toetsen genereert en deze niet bijwerkt in het dialoogvenster [!DNL Admin], werken uw SaaS-extensies niet meer en gaan waardevolle gegevens verloren.
+> Als u nieuwe sleutels in het Portaal van API produceert, werk onmiddellijk de sleutels API in [!DNL Admin configuration]. Als u nieuwe toetsen genereert en de toetsen in het dialoogvenster [!DNL Admin], werken uw SaaS-extensies niet meer en gaan waardevolle gegevens verloren.
 
 Als de extensie niet is geïnstalleerd, gebruikt u de volgende instructies om deze te installeren:
 
@@ -146,7 +150,7 @@ We hebben een [shellscript](https://github.com/magento-swat/install-agent-helper
    Success exit.
    ```
 
-1. Na het downloaden en installeren van de agent, moet u [configureren om uit te voeren](#run-the-agent) met een van de volgende methoden:
+1. Na het downloaden en installeren van de agent, [configureren om uit te voeren](#run-the-agent) met een van de volgende methoden:
 
    - [Service](#service) (heeft de voorkeur als u toegang tot de hoofdmap hebt)
 
@@ -257,7 +261,7 @@ Wij adviseren vormend de agent om als dienst te lopen. Als u beperkte toegang to
 
 ### Service {#service}
 
-1. Een systeemeenheidsbestand maken `(/etc/systemd/system/scheduler.service)` met de volgende configuratie (vervang `<filesystemowner>` met de Unix-gebruiker die eigenaar is van de map waarin de agent en de Adobe Commerce-software zijn geïnstalleerd). Als u de agent als hoofdgebruiker hebt gedownload, wijzigt u de map en de eigenaar van de geneste bestanden.
+1. Een systeemeenheidsbestand maken `(/etc/systemd/system/scheduler.service)` met de volgende configuratie (vervang `<filesystemowner>` met de UNIX®-gebruiker die eigenaar is van de directory waarin de agent en de Adobe Commerce-software zijn geïnstalleerd). Als u de agent als hoofdgebruiker hebt gedownload, wijzigt u de map en de eigenaar van de geneste bestanden.
 
    ```config
    [Unit]
