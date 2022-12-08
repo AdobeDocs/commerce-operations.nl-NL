@@ -1,17 +1,17 @@
 ---
-title: "De [!UICONTROL Infra] tab"
-description: De [!UICONTROL Infra] -tabblad isoleert problemen en oorzaken van infrastructuurproblemen.
-source-git-commit: b0d80d97f60b24bc801063dc484f3a495cf0a036
+title: "De [!DNL Infra] tab"
+description: De [!DNL Infra] -tabblad isoleert problemen en oorzaken van infrastructuurproblemen.
+source-git-commit: 38467ebd2ec29f9e1679182fb1ee7076d738664b
 workflow-type: tm+mt
-source-wordcount: '255'
+source-wordcount: '0'
 ht-degree: 0%
 
 ---
 
 
-# De [!UICONTROL Infra] tab
+# De [!DNL Infra] tab
 
-De **[!UICONTROL Infra]** -tabblad isoleert problemen en oorzaken van infrastructuurproblemen. Verder worden de frames beschreven die u op het tabblad kunt zien.
+De **[!DNL Infra]** -tabblad isoleert problemen en oorzaken van infrastructuurproblemen. Verder worden de frames beschreven die u op het tabblad kunt zien.
 
 ## [!UICONTROL Service Alerts – Infrastructure Alerts by Application name]
 
@@ -23,7 +23,7 @@ De **[!UICONTROL Service Alerts – Infrastructure Alerts by Application name]**
 
 ![Gebruik van knooppunt door koppelen](../../assets/tools/observation-for-adobe-commerce/inode-usage-mount.jpg)
 
-De **[!UICONTROL Inode usage by mount]** frame geeft inodegebruik weer door de koppeling over de geselecteerde tijdlijn. Zelfs al is er misschien genoeg opslag vrij, als een knoop uit gedoe loopt, zal het een gebrek aan beschikbare opslag tonen. Als u bestanden verwijdert (vooral kleine bestanden), wordt er ruimte vrijgemaakt en worden er codes beschikbaar gesteld.
+De **[!UICONTROL Inode usage by mount]** frame shows [!DNL inode] het gebruik door over het geselecteerde tijdkader te koppelen. Ook al is er misschien veel opslagruimte vrij, als een knooppunt op is [!DNL inodes], zal er een gebrek aan beschikbare opslag zijn. Als u bestanden verwijdert (vooral kleine bestanden), wordt er ruimte vrijgemaakt en wordt [!DNL inodes] beschikbaar.
 
 ## [!UICONTROL vCPU tier view over timeline GREATER 2 weeks]
 

@@ -1,15 +1,15 @@
 ---
-title: "De [!UICONTROL QuickView] tab"
-description: Op het tabblad QuickView worden de verschillende waarschuwingstypen uitgelegd die u kunt zien, inclusief de typen met een laag schijfruimte en servergebruik.
-source-git-commit: 4d700c04be5cd1ec2dc1c43c627feeed93f0fbee
+title: "De [!DNL QuickView] tab"
+description: De [!DNL QuickView] tabblad geeft uitleg over de verschillende soorten waarschuwingen die u kunt zien, waaronder die op een laag schijfruimte en servergebruik.
+source-git-commit: 38467ebd2ec29f9e1679182fb1ee7076d738664b
 workflow-type: tm+mt
-source-wordcount: '129'
+source-wordcount: '128'
 ht-degree: 0%
 
 ---
 
 
-# De [!UICONTROL QuickView] tab
+# De [!DNL QuickView] tab
 
 De **[!UICONTROL QuickView]** tabblad geeft uitleg over de verschillende soorten waarschuwingen die u kunt zien, waaronder die op een laag schijfruimte en servergebruik. Verder worden de frames van het tabblad beschreven.
 

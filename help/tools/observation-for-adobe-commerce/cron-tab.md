@@ -1,52 +1,52 @@
 ---
-title: "De [!UICONTROL Cron] tab"
-description: Meer informatie over de [!UICONTROL Cron] tabblad van [!DNL Observation for Adobe Commerce].
-source-git-commit: 3c1e50b3bff1bd2b2760e2e763173275161b0044
+title: "De [!DNL Cron] tab"
+description: Meer informatie over de [!DNL Cron] tabblad van [!DNL Observation for Adobe Commerce].
+source-git-commit: 38467ebd2ec29f9e1679182fb1ee7076d738664b
 workflow-type: tm+mt
-source-wordcount: '311'
+source-wordcount: '298'
 ht-degree: 0%
 
 ---
 
-# De [!UICONTROL Cron] tab
+# De [!DNL Cron] tab
 
-Dit tabblad is een poging om problemen en oorzaken van snijproblemen snel te isoleren.
+Dit tabblad is een poging om problemen en oorzaken van [!DNL cron] problemen.
 
 ## [!UICONTROL Cron transaction duration in seconds]
 
 ![Transactieduur bijsnijden in seconden](../../assets/tools/observation-for-adobe-commerce/cron-tab-1.jpg)
 
-De **[!UICONTROL Cron transaction duration in seconds]** in frame wordt de duur van de transactie uitgedrukt in korrels in seconden. Hiermee worden transacties met lange runtimes weergegeven. Een diepere duik in APM zal meer details tonen over welke vraag de transactie/de verrichting kan lopen.
+De **[!UICONTROL Cron transaction duration in seconds]** frame wordt weergegeven [!DNL crons] transactieduur in seconden. Hiermee worden transacties met lange runtimes weergegeven. Een diepere duik in APM zal meer details tonen over welke vraag de transactie/de verrichting kan lopen.
 
-## [!UICONTROL MySql Non-Sleeping Threads by Node]
+## [!UICONTROL MySQL Non-Sleeping Threads by Node]
 
-![MySql niet-slaapende threads per knooppunt](../../assets/tools/observation-for-adobe-commerce/cron-tab-2.jpg)
+![MySQL niet-slaapende threads per knooppunt](../../assets/tools/observation-for-adobe-commerce/cron-tab-2.jpg)
 
-De **[!UICONTROL MySql Non-Sleeping Threads by Node]** frame toont de MySql niet-slaapende verbindingen per knooppunt over de geselecteerde tijdlijn.
+De **[!UICONTROL MySQL Non-Sleeping Threads by Node]** frame toont de MySQL niet-slaapende threads per knooppunt over de geselecteerde tijdlijn.
 
 ## [!UICONTROL SQL Trace count by path]
 
 ![Aantal SQL-overtrekken per pad](../../assets/tools/observation-for-adobe-commerce/cron-tab-3.jpg)
 
-De **[!UICONTROL SQL Trace count by path]** Het kader kijkt naar MySql spoortellingen door weg, die SQL verklaringen over een geselecteerd tijdskader kunnen helpen vinden.
+De **[!UICONTROL SQL Trace count by path]** frame bekijkt MySQL spoor tellingen door weg, die SQL verklaringen over een geselecteerd tijdskader kunnen helpen vinden.
 
 ## [!UICONTROL Cron database call]
 
 ![Aanroep van Cron-database](../../assets/tools/observation-for-adobe-commerce/cron-tab-4.jpg)
 
-De **[!UICONTROL Cron database call]** frame bekijkt het aantal manden die aan het gegevensbestand over een geselecteerd tijdkader roepen.
+De **[!UICONTROL Cron database call]** frame bekijkt het aantal [!DNL crons] het aanroepen van de database in een geselecteerd tijdskader.
 
 ## [!UICONTROL Cron schedule table locks]
 
 ![Tabelvergrendelingen uitsnijden](../../assets/tools/observation-for-adobe-commerce/cron-tab-5.jpg)
 
-De **[!UICONTROL Cron schedule table locks]** frame bekijkt de tabelvergrendelingen voor de uitsnijdplanning over een geselecteerd tijdkader.
+De **[!UICONTROL Cron schedule table locks]** frame kijkt naar [!DNL cron] planningstabel loopt over een geselecteerd tijdkader.
 
 ## [!UICONTROL Cron schedule clean cron fired]
 
 ![Tabelvergrendelingen uitsnijden](../../assets/tools/observation-for-adobe-commerce/cron-tab-6.jpg)
 
-De **[!UICONTROL Cron schedule clean cron fired]** frame bekijkt het aantal manen dat over een geselecteerd tijdsbestek wordt schoongemaakt. Als er in dit frame geen gegevens worden weergegeven, kan dit wijzen op een probleem met de juiste werking van bakens. Als het programma voor de uitsnijdtaak niet wordt schoongemaakt, worden de crons niet optimaal uitgevoerd en kan het langer duren om deze uit te voeren.
+De **[!UICONTROL Cron schedule clean cron fired]** frame bekijkt het aantal [!DNL crons] opruimen over een geselecteerd tijdkader. Als er in dit frame geen gegevens worden weergegeven, kan dit wijzen op een probleem met [!DNL crons] correct wordt uitgevoerd. Als de [!DNL cron] de dienstregeling niet is schoongemaakt; [!DNL crons] niet optimaal wordt uitgevoerd en kan langer duren.
 
 ## [!UICONTROL Cron schedule clean records details table]
 
@@ -58,7 +58,7 @@ De **[!UICONTROL Cron schedule clean records details table]** tabel bevat detail
 
 ![tabel-updates uitsnijden_plannen](../../assets/tools/observation-for-adobe-commerce/cron-tab-8.jpg)
 
-De **[!UICONTROL cron_schedule table updates]** frame bekijkt het aantal geplande bijgesneden tabelupdates over een geselecteerd tijdkader. Een hoge activiteit bij het verwijderen of bijwerken van deze tabel kan wijzen op een probleem met bakens. Ook, werken de bakens deze lijst bij wanneer zij lopen en voltooien, zodat als er geen activiteit op deze lijst is en er gevormde bakens zijn, er een probleem met kronnen zou kunnen zijn.
+De **[!UICONTROL cron_schedule table updates]** frame bekijkt het aantal [!DNL cron] De geplande tabel wordt bijgewerkt over een geselecteerd tijdsbestek. Een hoge activiteit bij het verwijderen of bijwerken van deze tabel kan wijzen op een probleem met [!DNL crons]. Ook, [!DNL crons] werk deze tabel bij wanneer ze worden uitgevoerd en voltooid, dus als deze tabel geen activiteit bevat en er [!DNL crons] geconfigureerd, kan er een probleem zijn met [!DNL crons].
 
 ## [!UICONTROL Datastore Operations Tables]
 
