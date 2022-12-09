@@ -1,9 +1,9 @@
 ---
 title: "De [!UICONTROL Security] tab"
 description: Meer informatie over de [!UICONTROL Security] tabblad van [!DNL Observation for Adobe Commerce].
-source-git-commit: 5e4babd14bb918db7f894b7ca6a0344a4652704c
+source-git-commit: 297c3fed4c0f7ad1a3cb40addef1d33fa8d41525
 workflow-type: tm+mt
-source-wordcount: '385'
+source-wordcount: '374'
 ht-degree: 0%
 
 ---
@@ -33,24 +33,24 @@ De **[!UICONTROL Create Account access]** frame geeft het aantal nieuwe accounta
 
 ## [!UICONTROL POST activities]
 
-De **[!UICONTROL POST activities]** frame toont de POST activiteiten voor de site, beperkt op client_ip vanuit de [!DNL Fastly] logboeken. Het toont ook URL die door het IP adres wordt betreden.
+De **[!UICONTROL POST activities]** frame toont de `POST` activiteiten voor de site, aangestuurd op `client_ip` van de [!DNL Fastly] logboeken. Het toont ook URL die door het IP adres wordt betreden.
 
 ![POST](../../assets/tools/observation-for-adobe-commerce/POST-activities.jpg)
 
 ## [!UICONTROL POST activities summary table]
 
-De **Overzicht van de activiteiten van POSTEN** frame toont de samengevatte activiteiten van de POST voor de site, beperkt op client_ip vanuit de [!DNL Fastly] logboeken. Het toont ook de telling voor URL die door het IP adres wordt betreden. Het aantal is voor het geselecteerde tijdframe.
+De **[!UICONTROL POST activities summary table]** frame toont overzicht `POST` activiteiten voor de site, aangestuurd op `client_ip` van de [!DNL Fastly] logboeken. Het toont ook de telling voor URL die door het IP adres wordt betreden. Het aantal is voor het geselecteerde tijdframe.
 
 ![POST-activiteiten-overzicht](../../assets/tools/observation-for-adobe-commerce/POST-activities-summary.jpg)
 
 ## [!UICONTROL POST activities details table]
 
-De **[!UICONTROL POST activities details table]** frame geeft de activiteiten van de POST voor de site weer vanuit de [!DNL Fastly] logboeken. Het toont ook alle details van [!DNL Fastly] logboek voor deze verzoeken. Het is beperkt tot de laatste 2000 verzoeken.
+De **[!UICONTROL POST activities details table]** frame toont de `POST` activiteiten voor de locatie vanuit de [!DNL Fastly] logboeken. Het toont ook alle details van [!DNL Fastly] logboek voor deze verzoeken. Het is beperkt tot de laatste 2000 verzoeken.
 ![POST-activiteiten-details](../../assets/tools/observation-for-adobe-commerce/POST-activities-details.jpg)
 
 ## [!UICONTROL Guest Carts activities]
 
-De **[!UICONTROL Guest Carts activities]** Het kader toont het aantal activiteiten van het gastwinkelwagentje over een geselecteerd tijdskader, beperkt door IP adres en URL betreden. Gastkaarten kunnen worden gebruikt bij een tekenaanval. Dit kader toont het totale aantal verzoeken waar gast-wagentjes URLs wordt betreden.
+De **[!UICONTROL Guest Carts activities]** Het kader toont het aantal activiteiten van het gastwinkelwagentje over een geselecteerd tijdskader, beperkt door IP adres en URL betreden. Gastkaarten kunnen worden gebruikt bij een tekenaanval. Dit kader toont het totale aantal verzoeken waar gast-winkelwagentjes&#39; URLs worden betreden.
 
 ![gastwinkels](../../assets/tools/observation-for-adobe-commerce/guest-carts-activities.jpg)
 
