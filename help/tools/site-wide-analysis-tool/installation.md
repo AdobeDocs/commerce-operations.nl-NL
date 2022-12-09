@@ -1,9 +1,9 @@
 ---
 title: Hulplijn installeren
 description: "Gebruik deze handleiding om te installeren [!DNL Site-Wide Analysis Tool] voor uw website"
-source-git-commit: 5603d0feee6ec9dd5e8b534a0e64df274d7ab84d
+source-git-commit: 696f1624fe43fdd637b374b880667d35daca04de
 workflow-type: tm+mt
-source-wordcount: '1092'
+source-wordcount: '1095'
 ht-degree: 0%
 
 ---
@@ -74,7 +74,7 @@ Uw infrastructuur ter plaatse moet aan de volgende vereisten voldoen alvorens de
 De agent vereist [[!DNL Commerce Services Connector]](https://experienceleague.adobe.com/docs/commerce-merchant-services/user-guides/integration-services/saas.html) extensie die op uw systeem moet worden geïnstalleerd en [geconfigureerd](https://experienceleague.adobe.com/docs/commerce-merchant-services/user-guides/integration-services/saas.html) met API-toetsen. Voer de volgende opdracht uit om te controleren of de extensie is geïnstalleerd:
 
 ```bash
-bin/magento module:status Magento_ServicesConnector
+bin/magento module:status Magento_ServicesId
 ```
 
 Als u de extensie hebt geïnstalleerd en geconfigureerd met een bestaande API-sleutel voor een andere service, **MOET de API-sleutel opnieuw genereren** en werkt het in Adobe Commerce Admin voor de agent bij.
@@ -102,19 +102,25 @@ Als de extensie niet is geïnstalleerd, gebruikt u de volgende instructies om de
 1. Voeg de extensie toe aan uw `composer.json` en installeer het bestand.
 
    ```bash
-   composer require magento/services-connector:1.*
+   composer require magento/services-id
    ```
 
 1. De extensie inschakelen.
 
    ```bash
-   bin/magento module:enable Magento_ServicesConnector
+   bin/magento module:enable Magento_ServicesId
    ```
 
 1. Werk het databaseschema bij.
 
    ```bash
    bin/magento setup:upgrade
+   ```
+
+1. Wis de cache.
+
+   ```bash
+   bin/magento cache:clean
    ```
 
 1. [API-toetsen configureren](https://experienceleague.adobe.com/docs/commerce-merchant-services/user-guides/integration-services/saas.html) om de extensie aan te sluiten op uw systeem.
