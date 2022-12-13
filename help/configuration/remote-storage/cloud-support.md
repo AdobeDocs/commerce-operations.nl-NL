@@ -1,9 +1,9 @@
 ---
 title: Externe opslag voor handel in cloudinfrastructuur
 description: Zie de richtlijnen voor het instellen van externe opslag voor Adobe Commerce op cloudinfrastructuur.
-source-git-commit: 0653d90d92e264b62fcc648f2b1307c013e9be54
+source-git-commit: 2080950852e3c4e6da556733e56f68e0e8005530
 workflow-type: tm+mt
-source-wordcount: '629'
+source-wordcount: '630'
 ht-degree: 0%
 
 ---
@@ -47,7 +47,7 @@ Stel de `REMOTE_STORAGE` variabele als een [variabele op milieuniveau](https://e
 magento-cloud variable:create --level environment --name REMOTE_STORAGE --json true --inheritable false --value '{"driver":"aws-s3","prefix":"uat","config":{"bucket":"aws-bucket-id","region":"eu-west-1","key":"optional-key","secret":"optional-secret"}}'
 ```
 
-Hiermee maakt u een `REMOTE_STORAGE` variabele met de opgegeven JSON-configuratie. De `REMOTE_STORAGE` De variabele neemt een koord JSON om verre opslag te vormen. Hieronder ziet u een voorbeeld van JSON-configuratie.
+Hiermee maakt u een `REMOTE_STORAGE` variabele met de opgegeven JSON-configuratie. De `REMOTE_STORAGE` De variabele neemt een koord JSON om verre opslag te vormen. Hieronder ziet u een voorbeeld van JSON-configuratie:
 
 ```json
 {
