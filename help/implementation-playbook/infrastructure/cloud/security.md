@@ -2,9 +2,9 @@
 title: Beveiliging van cloudinfrastructuur
 description: Meer informatie over hoe we Adobe Commerce veilig houden op de cloudinfrastructuur.
 exl-id: cd5d1106-c8db-4b70-b1c7-12378d7d77a7
-source-git-commit: 6509c939c7abc5462bffbe104466b2ff9e6fadc9
+source-git-commit: 50882bebb4712e6cf095a81297684f37e15b1a6b
 workflow-type: tm+mt
-source-wordcount: '1639'
+source-wordcount: '1644'
 ht-degree: 0%
 
 ---
@@ -80,7 +80,7 @@ Alle AWS-activiteiten zijn aangemeld bij AWS CloudTrail. Linux-, toepassingsserv
 
 Gevoelige gegevens kunnen betrekking hebben op persoonlijke informatie van consumenten of vertrouwelijke gegevens van Managed Services-klanten. De bescherming van gevoelige gegevens van klanten en consumenten is een essentiële verplichting voor Adobe Commerce Managed Services. Zowel Managed Services als onze klanten hebben wettelijke verplichtingen over persoonlijk identificeerbare informatie. Naast de veiligheidseigenschappen van de architectuur, zijn er andere controles om de distributie en de toegang tot gevoelige gegevens te beperken.
 
-De klanten hebben hun gegevens en hebben controle over waar die gegevens zullen worden gevestigd. De klant geeft de locatie op waar de productie- en ontwikkelingsinstanties zich bevinden. Zij specificeren ook welke plaats voor de milieu van de Magento Business Intelligence (MBI) samen met Handel zal worden gebruikt, en als die toepassing MBI toegang tot persoonlijk identificeerbare informatie heeft of niet. Productiebedrijven kunnen zich in de meeste AWS-regio&#39;s bevinden, terwijl ontwikkelings- en MBI-omgevingen momenteel in de Verenigde Staten of in de Europese Unie kunnen worden gevonden.
+De klanten hebben hun gegevens en hebben controle over waar die gegevens zullen worden gevestigd. De klant geeft de locatie op waar de productie- en ontwikkelingsinstanties zich bevinden. Zij geven ook aan welke locatie zal worden gebruikt voor de Adobe Commerce Reporting environment in combinatie met Commerce, en of die Adobe Commerce Reporting application al dan niet toegang heeft tot persoonlijk identificeerbare informatie. Productie-instanties kunnen zich in de meeste AWS-regio&#39;s bevinden, terwijl ontwikkelings- en Adobe Commerce-rapportageomgevingen op dit moment zowel in de Verenigde Staten als in de Europese Unie te vinden zijn.
 
 Gevoelige gegevens kunnen door het Fastly CDN servernetwerk overgaan maar worden niet opgeslagen in het Fastly netwerk. Alle partners die deel uitmaken van het Adobe Commerce Managed Services-aanbod hebben contractuele verplichtingen om de bescherming van gevoelige gegevens te waarborgen. Managed Services verplaatst geen gevoelige klant- of consumentengegevens van de door de klant opgegeven locaties.
 
