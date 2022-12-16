@@ -1,9 +1,9 @@
 ---
 user-guide-title: Configuratiegids
 user-guide-description: Configureer uw Adobe Commerce- of Magento Open Source-toepassingsfuncties en -services.
-source-git-commit: b872a61f74818990833ba6b48e061fa1ca69b7cb
+source-git-commit: 31f9ff21a848e248d2c3da7cfb3cfc8bfd5785be
 workflow-type: tm+mt
-source-wordcount: '352'
+source-wordcount: '353'
 ht-degree: 0%
 
 ---
@@ -108,6 +108,7 @@ ht-degree: 0%
    + [Framework voor wachtrij met berichten](queues/message-queue-framework.md)
    + [Berichtenrijen beheren](queues/manage-message-queues.md)
    + [Amazon MQ instellen](queues/aws-mq.md)
+   + [Consumenten](queues/consumers.md)
 + Meerdere sites {#multi-sites}
    + [Meerdere sites en weergaven](multi-sites/ms-overview.md)
    + [Toename-ID database-entiteit](multi-sites/change-increment-id.md)

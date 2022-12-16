@@ -1,7 +1,7 @@
 ---
 title: Gebruikers in de wachtrij met berichten starten
 description: Leer hoe u een consument in een wachtrij met berichten kunt starten.
-source-git-commit: 02f02393878d04b4a0fcdae256ac1ac5dd13b7f6
+source-git-commit: 3e3dac0c75622b210cf1168639b8804003f3c538
 workflow-type: tm+mt
 source-wordcount: '189'
 ht-degree: 0%
@@ -13,7 +13,7 @@ ht-degree: 0%
 
 {{file-system-owner}}
 
-U moet een consument van de berichtrij beginnen om asynchrone verrichtingen zoals de massaacties van Inventory management en REST bulksgewijs en asynchrone eindpunten toe te laten. Om B2B functionaliteit toe te laten, moet u veelvoudige consumenten beginnen. De modules van de derde zouden ook kunnen vereisen dat u een douaneconsument begint.
+U moet een [berichtwachtrijconsument](../queues/consumers.md) om asynchrone bewerkingen mogelijk te maken, zoals Inventory management-massaacties en REST-bulkobjecten en asynchrone eindpunten. Om B2B functionaliteit toe te laten, moet u veelvoudige consumenten beginnen. De modules van de derde zouden ook kunnen vereisen dat u een douaneconsument begint.
 
 Een lijst met alle consumenten weergeven:
 
