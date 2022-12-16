@@ -2,9 +2,9 @@
 keywords: Adobe Commerce;home;populaire onderwerpen
 title: Home
 description: Blader door een index van de Adobe Commerce-documentatie van het operationele product.
-source-git-commit: 80163ec1c40a19ea4eb138c3753b08daa231dc41
+source-git-commit: f66183c3dc01e0f8c049edf767cd6c74aae1a1cf
 workflow-type: tm+mt
-source-wordcount: '148'
+source-wordcount: '164'
 ht-degree: 0%
 
 ---
@@ -124,6 +124,7 @@ Krijg praktische informatie over concepten, processen, hulpmiddelen, en beste pr
 Meer informatie over nieuwe documentatie en belangrijke updates voor bestaande documentatie.
 
 | Wijzigen | Type |
-|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|------|
-| Verplaatst [Handleiding voor beveiliging en naleving](../security-and-compliance/overview.md) van [devdocs.magento.com](https://devdocs.magento.com/security/security-and-compliance.html). | Nieuw |
-| Verplaatst [Handleiding voor informatie bij vrijgeven](../release/release-notes/overview.md) van [devdocs.magento.com](https://devdocs.magento.com/release/released-versions.html). | Nieuw |
+|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|---------|
+| Een nieuw onderwerp toegevoegd waarin alles wordt beschreven [berichtwachtrij voor consumenten](../configuration/queues/consumers.md). | Nieuw |
+| Toegevoegd [instructies](../implementation-playbook/best-practices/maintenance/commerce-235-upgrade-prerequisites-mariadb.md) voor het converteren van de opslagindeling van databasetabellen voor Adobe Commerce op cloudinfrastructuur Pro-projecten. | Bijgewerkt |
+| Toegevoegd [instructies](../configuration/remote-storage/cloud-support.md) voor het inschakelen van externe opslag voor Adobe Commerce op cloud-infrastructuurprojecten. | Bijgewerkt |
