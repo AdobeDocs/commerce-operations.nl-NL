@@ -1,9 +1,9 @@
 ---
 title: Opmerkingen bij de release
 description: Meer informatie over de patches die beschikbaar zijn voor Adobe Commerce en de problemen die ze oplossen.
-source-git-commit: aad242e3a458e40fb1977399649ffe3e31696cd3
+source-git-commit: 2754ce0c8e27d51777924f4640b81628fbb2ea81
 workflow-type: tm+mt
-source-wordcount: '10066'
+source-wordcount: '10379'
 ht-degree: 0%
 
 ---
@@ -19,6 +19,21 @@ De [[!DNL Quality Patches Tool]](https://github.com/magento/quality-patches) lev
 >[!INFO]
 >
 >Voor informatie over [!DNL quality patches] die door de Gemeenschap voor Magento Open Source zijn opgericht, [releaseopmerkingen](https://github.com/magento/quality-patches/blob/master/community-release-notes.md).
+
+## v1.1.25 {#v1-1-25}
+
+* **ACSD-48058** (voor Adobe Commerce en Magento Open Source >=2.4.5 &lt;2.4.6) - Hiermee wordt het probleem opgelost waarbij de productprijsherindex niet werkt als het bundelproduct niet aan een website wordt toegewezen.
+* **ACSD-48262** (voor Adobe Commerce en Magento Open Source >=2.4.5 &lt;2.4.6) - Hiermee wordt het probleem verholpen waarbij producten niet op de voorzijde zichtbaar zijn wanneer de instelling &quot;Alle producten per pagina toestaan&quot; is ingesteld op Ja.
+* **ACSD-48293** (voor Adobe Commerce en Magento Open Source >=2.4.3 &lt;2.4.4) - Hiermee wordt het probleem opgelost waarbij de samengestelde producten uit de voorraad verdwijnen wanneer de onderliggende producten die werden verkocht naar de voorraad worden teruggestuurd.
+* **ACSD-47520** (voor Adobe Commerce en Magento Open Source >=2.4.0 &lt;2.4.6) - Hiermee wordt het probleem opgelost waarbij klanten beloningspunten verliezen wanneer een creditmemo wordt gemaakt.
+* **ACSD-48044** (voor Adobe Commerce en Magento Open Source >=2.4.0 &lt;2.4.4) - Hiermee wordt het probleem opgelost dat het toepassen van meerdere cadeaukaarten op één bestelling met meerdere verzendingen ertoe leidt dat bestellingen niet kunnen worden geplaatst.
+* **ACSD-48300** (voor Adobe Commerce en Magento Open Source >=2.4.0 &lt;2.4.6) - Hiermee wordt het probleem verholpen waarbij geen return kan worden gecreëerd als het configureerbare product wordt verwijderd.
+* **ACSD-47910** (voor Adobe Commerce en Magento Open Source >=2.4.4 &lt;2.4.6) - Oplossingen voor de afgifte van ontbrekende orders, facturen, overbrengingen en creditnota&#39;s in de respectieve entiteitsnetwerken.
+* **ACSD-47292** (voor Adobe Commerce en Magento Open Source >=2.4.4 &lt;2.4.6) - Hiermee wordt het probleem opgelost waarbij gebundelde producten uit de voorraad niet beschikbaar zijn in het GraphQL-antwoord als de &quot;producten uit de voorraad&quot; op Ja is ingesteld.
+* **ACSD-48234** (voor Adobe Commerce en Magento Open Source >=2.4.5 &lt;2.4.6) - Hiermee wordt het probleem verholpen waarbij in het zoekresultaat van de catalogus een onjuist aantal items in de categorie wordt weergegeven wanneer de optie &quot;show out of stock&quot; is ingeschakeld.
+* **ACSD-48313** (voor Adobe Commerce en Magento Open Source >=2.4.0 &lt;2.4.5) - Hiermee wordt het probleem verholpen waarbij de kolom &quot;configurable_variation&quot; niet wordt geparseerd als de kenmerkwaarde een komma bevat. Hetzelfde parseringsalgoritme wordt gebruikt voor &quot;additional_attributes.
+* **ACSD-48627** (voor Adobe Commerce en Magento Open Source >=2.4.5 &lt;2.4.6) - Hiermee wordt het probleem verholpen waarbij het configureerbare product uit de voorraad een fout veroorzaakt bij het verzenden van een GraphQL-verzoek om details over het winkelwagentje op te halen.
+* Bijgewerkte patch: MDVA-39384.
 
 ## v1.1.24 {#v1-1-24}
 
@@ -41,7 +56,7 @@ De [[!DNL Quality Patches Tool]](https://github.com/magento/quality-patches) lev
 * **ACSD-47179** (voor Adobe Commerce en Magento Open Source >=2.4.0 &lt;2.4.6) - Hiermee wordt het probleem verholpen waarbij een beheerder met beperkte toegang tot een bepaald bereik productbeoordelingen niet kan verwijderen.
 * **ACSD-47107** (voor Adobe Commerce en Magento Open Source >=2.4.2 &lt;2.4.5) - Hiermee wordt het probleem opgelost waarbij de korting op de regel Catalogusprijs wordt toegepast op aangepaste productopties.
 * **ACSD-47232** (voor Adobe Commerce en Magento Open Source >=2.4.0 &lt;2.4.6) - Hiermee wordt de emissie gecorrigeerd waarbij coupons met totaal gewicht niet kunnen worden toegepast in de Admin.
-* **ACSD-46519** (voor Adobe Commerce en Magento Open Source >=2.4.1 &lt;2.4.6) - Hiermee wordt het probleem verholpen waarbij de aanvraag van de categorie GraphQL een onjuiste product_count voor een ankercategorie retourneert.
+* **ACSD-46519** (voor Adobe Commerce en Magento Open Source >=2.4.1 &lt;2.4.6) - Hiermee wordt het probleem verholpen waarbij de aanvraag voor de GraphQL-categorieList een onjuist product_count voor een ankercategorie retourneert.
 * **ACSD-47027** (voor Adobe Commerce en Magento Open Source >=2.4.2 &lt;2.4.6) - lost een langzaam updateCompanyRole GraphQL- verzoek op.
 * **ACSD-4766** (voor Adobe Commerce en Magento Open Source >=2.4.0 &lt;2.4.6) - Hiermee wordt het probleem verholpen waarbij de filterfunctie niet werkt in Beheer > Systeem > Machtigingen > Gebruikersrollen > een rol > Rolgebruikersraster.
 * **ACSD-47497** (voor Adobe Commerce en Magento Open Source >=2.4.0 &lt;2.4.6) - Hiermee wordt het probleem verholpen waarbij het tabblad Services niet zichtbaar is in de Configuratie onder Beheer.
@@ -100,7 +115,7 @@ De [[!DNL Quality Patches Tool]](https://github.com/magento/quality-patches) lev
 * **ACSD-45754** (*voor Adobe Commerce en Magento Open Source >=2.3.1 &lt;2.4.6*) - Hiermee wordt de emissie gecorrigeerd waarbij geen punten naar achteren worden toegevoegd nadat een coupon op de winkelwagentje is toegepast.
 * **ACSD-45849** (*voor Adobe Commerce >=2.4.3 &lt;2.4.4*) - Hiermee wordt het probleem verholpen waarbij videometagegevens verloren gaan nadat een testupdate is toegepast.
 * **ACSD-45257** (*voor Adobe Commerce en Magento Open Source >=2.3.4 &lt;2.4.4*) - Hiermee wordt het probleem verholpen waarbij GraphQL geen kaartkorting correct weergeeft.
-* **ACSD-44938** (*voor Adobe Commerce en Magento Open Source >=2.4.0 &lt;2.4.4*) - Hiermee wordt het probleem opgelost waarbij `VAT_ID` kan niet in een verzoek GraphQL voor een gastgebruiker worden toegepast.
+* **ACSD-44938** (*voor Adobe Commerce en Magento Open Source >=2.4.0 &lt;2.4.4*) - Hiermee wordt het probleem opgelost waarbij `VAT_ID` kan niet worden toegepast in een GraphQL-aanvraag voor een gastgebruiker.
 * Bijgewerkte patches: MDVA-43417.
 
 ## v1.1.17 {#v1-1-17}
@@ -202,7 +217,7 @@ De [[!DNL Quality Patches Tool]](https://github.com/magento/quality-patches) lev
 * **MDVA-38728** (*voor Adobe Commerce en Magento Open Source >=2.3.2 &lt;2.4.5*) - Hiermee wordt het probleem verholpen waarbij bij het bijwerken van het massakenmerk alleen na het wijzigen een URL wordt gemaakt die wordt herschreven voor de standaardwinkel *Zichtbaarheid van product*.
 * **MDVA-43091** (*voor Adobe Commerce en Magento Open Source >=2.4.3 &lt;2.4.4*) - Hiermee wordt het probleem verholpen waarbij de fout optreedt wanneer op de achtergrond een bundelproduct van de beheerder wordt besteld *U kunt geen decimale hoeveelheid gebruiken voor dit product*.
 * **MDVA-40816** (*voor Adobe Commerce en Magento Open Source >=2.3.0 &lt;2.4.5*) - Hiermee wordt het probleem opgelost waarbij producten uit categorieën die niet in de algemene voorwaarden zijn gedefinieerd, in de desbetreffende productregels worden vermeld.
-* **MDVA-41305** (*voor Adobe Commerce en Magento Open Source >=2.4.2 &lt;2.4.5*) - Hiermee wordt het probleem verholpen waarbij GraphQL-mutatie geen configureerbare productopties retourneert nadat deze aan de wenslijst is toegevoegd.
+* **MDVA-41305** (*voor Adobe Commerce en Magento Open Source >=2.4.2 &lt;2.4.5*) - Het probleem waarbij GraphQL-mutatie geen configureerbare productopties retourneert nadat deze aan de wenslijst is toegevoegd.
 * **MDVA-39181** (*voor Adobe Commerce en Magento Open Source >=2.4.1 &lt;2.4.5*) - Hiermee wordt het probleem opgelost waarbij producten uit categorieën die niet in de algemene voorwaarden zijn gedefinieerd, in de desbetreffende productregels worden vermeld.
 * **MDVA-42584** (*voor Adobe Commerce en Magento Open Source >=2.4.2 &lt;2.4.3*) - Hiermee wordt het probleem verholpen waarbij de configureerbare voorraadstatus op de achtergrond niet wordt bijgewerkt nadat de status van de hoeveelheid en de voorraad via Importeren of API is gewijzigd.
 * **MDVA-40175** (*voor Adobe Commerce en Magento Open Source >=2.4.0 &lt;2.4.3*) - Hiermee wordt het probleem opgelost waarbij *Klik om de verzendmethode te wijzigen* Keuzerondjes worden niet weergegeven om verzendmethoden in de beheerdersgroep te selecteren tijdens het opnieuw ordenen.
@@ -245,11 +260,11 @@ De [[!DNL Quality Patches Tool]](https://github.com/magento/quality-patches) lev
 ## v1.1.6 {#v1-1-6}
 
 * **MDVA-40550** (*voor Adobe Commerce en Magento Open Source >=2.3.5 &lt;2.4.4*) - Hiermee wordt het probleem verholpen waarbij ontbrekende producten aan de voorzijde worden aangetroffen tijdens het opnieuw uitsnijden.
-* **MDVA-40120** (*voor Adobe Commerce en Magento Open Source >=2.4.1 &lt;2.4.4*) - Hiermee wordt het probleem opgelost waarbij het sorteren met GraphQL op DESC/ASC niet werkt met producten met dezelfde relevantie of prijs.
+* **MDVA-40120** (*voor Adobe Commerce en Magento Open Source >=2.4.1 &lt;2.4.4*) - Hiermee wordt het probleem opgelost dat GraphQL-sortering via DESC/ASC niet werkt met producten met dezelfde relevantie of prijs.
 * **MDVA-41399** (*voor Adobe Commerce en Magento Open Source >=2.3.3 &lt;2.4.2*) - Hiermee wordt het probleem verholpen waarbij beheergebruikers geen toegang hebben tot de *Winkelwagentje beheren* pagina als een klant een product aan de verlanglijst toevoegt.
 * **MDVA-40609** (*voor Adobe Commerce en Magento Open Source >=2.4.2 &lt;2.4.3*) - Hiermee wordt het probleem opgelost waarbij gegevens over uitgeschakelde producten ontbreken in de `cataloginventory_stock_status` indextabel met onjuiste hoeveelheden van uitgeschakelde producten.
 * **MDVA-39031** (*voor Adobe Commerce en Magento Open Source >=2.4.1 &lt;2.4.4*) - Hiermee wordt het probleem opgelost dat het toevoegen van een product aan het winkelwagentje via GraphQL mogelijk is, zelfs als het product niet aan de doelwebsite is toegewezen.
-* **MDVA-41597** (*voor Adobe Commerce en Magento Open Source >=2.4.2 &lt;2.4.4*) - Hiermee wordt het probleem verholpen waarbij gebruikers een fout krijgen wanneer ze meer dan één configureerbaar product aan het winkelwagentje toevoegen met behulp van GraphQL.
+* **MDVA-41597** (*voor Adobe Commerce en Magento Open Source >=2.4.2 &lt;2.4.4*) - Hiermee wordt het probleem opgelost waarbij gebruikers een fout krijgen wanneer ze meer dan één configureerbaar product met GraphQL aan het winkelwagentje toevoegen.
 * **MDVA-27456** (*voor Adobe Commerce en Magento Open Source >=2.3.5 &lt;2.3.7*) - Hiermee wordt het probleem verholpen waarbij gebruikers een fout ondervinden bij het laden van een toepassing [!DNL Swagger].
 * **MDVA-32776** (*voor Adobe Commerce en Magento Open Source >=2.4.0 &lt;2.4.2*) - Hiermee wordt het probleem opgelost waarbij de voorraadstatus niet wordt bijgewerkt wanneer een bestelling wordt geplaatst, maar niet wordt verzonden.
 * **MDVA-30862** (*voor Adobe Commerce en Magento Open Source >=2.3.4 &lt;2.4.0*) - Hiermee wordt het probleem verholpen met de onjuiste besteldatum op de gedrukte PDF-factuur.
@@ -441,7 +456,7 @@ De [[!DNL Quality Patches Tool]](https://github.com/magento/quality-patches) lev
 * **MDVA-33482** (*voor Adobe Commerce ^2.3.5*) - Oplossing van de kwestie waar het genereren van een creditmemo tegen een gedeeltelijke factuur leidt tot belasting voor de totale bestelling in plaats van belasting voor die gedeeltelijke factuur.
 * **MDVA-33393** (*voor Adobe Commerce >=2.3.0 &lt;2.4.2*) - Hiermee wordt de fout gecorrigeerd *Opgegeven landId bestaat niet*.
 * **MDVA-33632** (*voor Adobe Commerce >=2.3.0 &lt;2.3.7*) - Verstrekt een moeilijke situatie waar het uitzonderingsbericht *Dit product is uit voorraad* wordt nu weergegeven aan een beheerder die een product uit de voorraad opnieuw probeert te bestellen.
-* **MDVA-34469** (*voor Adobe Commerce >=2.4.1 &lt;2.4.2*) - Hiermee wordt het probleem verholpen waarbij GraphQL-mutaties op de winkelwagentje van een klant mislukken wanneer meerdere winkelweergaven worden gebruikt.
+* **MDVA-34469** (*voor Adobe Commerce >=2.4.1 &lt;2.4.2*) - Hiermee wordt het probleem opgelost waarbij GraphQL-mutaties in de winkelwagentje van een klant mislukken wanneer meerdere winkelweergaven worden gebruikt.
 * **MDVA-33976** (*voor Adobe Commerce >=2.3.0 &lt;2.3.7*) - Hiermee wordt het probleem opgelost waarbij het bundelproduct uit voorraad op de winkel wordt weergegeven nadat de tweede optie uit het bundelproduct is verwijderd.
 * **MDVA-33894** (*voor Adobe Commerce >=2.4.0 &lt;2.4.1 met B2B-extensie*) - Hiermee worden meerdere problemen opgelost voor de functie Snel bestellen, zoals het toevoegen en verwijderen van meerdere producten en de gevoeligheid van SKU-hoofdletters.
 * **MDVA-27664** (*voor Adobe Commerce >=2.3.4 &lt;2.3.6*) - Oplossing van het probleem in het registratieformulier voor klanten dat een weergavefout veroorzaakt: *FOUT - De geboortedatum mag niet groter zijn dan vandaag.*
@@ -473,7 +488,7 @@ De [[!DNL Quality Patches Tool]](https://github.com/magento/quality-patches) lev
 * **MDVA-23426** (*voor Adobe Commerce >=2.3.3 &lt;2.3.5*) - Hiermee wordt het probleem verholpen waarbij e-mailberichten die door Adobe Commerce zijn verzonden een lege tekst bevatten met inhoud die als bijlage wordt toegevoegd.
 * **MDVA-22150** (*voor Adobe Commerce >=2.3.1 &lt;2.3.4*) - Hiermee wordt het probleem verholpen waarbij klanten met een configureerbaar product in de winkelwagen en een coupon niet kunnen inloggen als dat configureerbare product is uitgeschakeld in de beheerder.
 * **MDVA-32545** (*voor Adobe Commerce >=2.3.0 &lt;2.4.2*) - Hiermee wordt het probleem verholpen waarbij facturen niet automatisch worden verzonden bij het maken van bestellingen van de beheerder.
-* **MDVA-32714** (*voor Adobe Commerce >=2.3.4 &lt;2.4.1*) - Hiermee wordt het probleem verholpen waarbij de prijs van de klantengroep niet werkt in GraphQL-productquery.
+* **MDVA-32714** (*voor Adobe Commerce >=2.3.4 &lt;2.4.1*) - Hiermee wordt het probleem verholpen waarbij de prijs van de klantengroep niet werkt in de productquery van GraphQL.
 
 ## v1.0.12 {#v1-0-12}
 
