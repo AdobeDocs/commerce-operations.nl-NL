@@ -1,9 +1,9 @@
 ---
 title: Ontwikkelingsfase van de implementatie
 description: Leer over implementatie beste praktijken voor de ontwikkelingsfase van projecten van Adobe Commerce.
-source-git-commit: c717d45525c7893fa2c38183326534e0fa4ee0c6
+source-git-commit: ae9573f3766c59887aea177cb85bf889c2161bfc
 workflow-type: tm+mt
-source-wordcount: '164'
+source-wordcount: '158'
 ht-degree: 0%
 
 ---
@@ -27,18 +27,15 @@ De volgende secties bevatten informatie over de beste praktijken voor de ontwikk
 
 ### Codeoverzicht, samenvoegen en testen
 
-- Richtsnoeren en normen
-
 <!--Assets not yet integrated
+- Guidelines and standards
   - [Development best practices](https://wiki.corp.adobe.com/x/nT4ykw)
   - [Code Review](https://wiki.corp.adobe.com/x/qT4ykw)
   - [Debugging Magento 2](https://wiki.corp.adobe.com/x/nz4ykw) (wiki)
 -->
 - [CSS- en JS-bestanden optimaliseren](optimize-css-js-files.md)
 - [Tips en trucs voor blokken met persoonlijke inhoud](private-content-block-configuration.md)
-
-- Aangepaste code toevoegen
-   - [Aanbevolen procedures voor ontwikkelaars van extensies](https://developer.adobe.com/commerce/php/best-practices/)
+- [Aanbevolen procedures voor ontwikkelaars van extensies](https://developer.adobe.com/commerce/php/best-practices/)
 
 <!--Assets not yet integrated
 
@@ -61,13 +58,13 @@ De volgende secties bevatten informatie over de beste praktijken voor de ontwikk
 
 ### Lokale en staging-omgeving instellen
 
-- [Werkstroom voor ontwikkeling van cloudinfrastructuur](https://devdocs.magento.com/cloud/architecture/pro-develop-deploy-workflow.html) - toegevoegd vanuit de cloud Guide
+- [Werkstroom voor ontwikkeling van cloudinfrastructuur](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/architecture/pro-develop-deploy-workflow.html)
 
 ## Code, samenvoegen, testen
 
-- [Aanbevolen werkwijzen voor builds en implementatie](https://devdocs.magento.com/cloud/reference/discover-deploy.html#best-practices)
+- [Aanbevolen werkwijzen voor builds en implementatie](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/deploy/best-practices.html)
 - [Implementatie van statische inhoud - cloud](static-content-deployment.md)
 - [CSS- en JS-bestanden optimaliseren](optimize-css-js-files.md)
 - [Afbeeldingen optimaliseren voor een meer responsieve site](image-optimization.md)
-- [Aanbevolen procedures voor het oplossen van problemen voor Adobe Commerce op &#x200B; van cloudinfrastructuur](troubleshooting.md)
-- [Weet wanneer en hoe u databasetabellen kunt wijzigen &#x200B;](modifying-core-and-third-party-tables.md)
+- [Aanbevolen procedures voor het oplossen van problemen voor Adobe Commerce met cloudinfrastructuur](troubleshooting.md)
+- [Weet wanneer en hoe u databasetabellen kunt wijzigen](modifying-core-and-third-party-tables.md)

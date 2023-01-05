@@ -4,7 +4,7 @@ description: Leer hoe u instructies over uw Adobe Commerce-site doorgeeft aan we
 role: Developer
 feature-set: Commerce
 feature: Best Practices
-source-git-commit: 48c5666ee9b83bbf8a5c6375ec53762d918bcece
+source-git-commit: cf8626bfab170a1e12cc72f0bc344c9beb9349a7
 workflow-type: tm+mt
 source-wordcount: '596'
 ht-degree: 0%
@@ -107,11 +107,11 @@ Voor stappen om de `robots.txt` bestand en alle items van het beheerpad verwijde
 
 >[!TIP]
 >
->Als u hulp nodig hebt, [een Adobe Commerce-ondersteuningsticket verzenden](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.md#submit-ticket).
+>Als u hulp nodig hebt, [een Adobe Commerce-ondersteuningsticket verzenden](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html#submit-ticket).
 
 ## Aanvullende informatie
 
 - [Werken met websites, winkels en winkelweergaven](https://devdocs.magento.com/cloud/configure/configure-best-practices.html#sites)
 - [Websites toevoegen](https://docs.magento.com/user-guide/stores/stores-all-create-website.html)
 - [Gebruik Fastly om kwaadwillig verkeer voor uw plaatsen van Adobe Commerce te blokkeren](https://devdocs.magento.com/cloud/cdn/fastly-vcl-blocking.html)
-- [robots.txt geeft een fout van 404 in Adobe Commerce op wolkeninfrastructuur 2.3.x](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/robots.txt-gives-404-error-magento-commerce-cloud-2.3.x.md)
+- [robots.txt geeft een fout van 404 in Adobe Commerce op wolkeninfrastructuur 2.3.x](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/robots.txt-gives-404-error-magento-commerce-cloud-2.3.x.html)

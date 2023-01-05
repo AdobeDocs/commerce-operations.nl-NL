@@ -4,9 +4,9 @@ description: Leer hoe u database- en toepassingsinstellingen configureert om de 
 role: Developer, Admin
 feature-set: Commerce
 feature: Best Practices
-source-git-commit: 85f9355d0e8c704be3760334b07414d3e15b3b97
+source-git-commit: cf8626bfab170a1e12cc72f0bc344c9beb9349a7
 workflow-type: tm+mt
-source-wordcount: '691'
+source-wordcount: '687'
 ht-degree: 0%
 
 ---
@@ -99,6 +99,6 @@ Zie [Archivering inschakelen](https://experienceleague.adobe.com/docs/commerce-a
 
 ## Aanvullende informatie
 
-- [Wat zijn de belangrijkste verschillen tussen InnoDB en MYISAM](http://www.expertphp.in/article/what-are-the-main-differences-between-innodb-and-myisam)
+- [MySQL-opslagengines](https://dev.mysql.com/doc/refman/8.0/en/storage-engines.html)
 - [Adobe Commerce 2.3.5-upgradevoorwaarden voor MariaDB](../maintenance/commerce-235-upgrade-prerequisites-mariadb.md)
 - [Aanbevolen procedures om prestatieproblemen met databases op te lossen](../maintenance/resolve-database-performance-issues.md)

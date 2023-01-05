@@ -4,9 +4,9 @@ description: Prestaties van sites onderhouden en optimaliseren door de best prac
 role: Admin, User
 feature: Best Practices
 feature-set: Commerce
-source-git-commit: 510f2d4cdaec1034cb04a01fab0948c4261c6d10
+source-git-commit: ae9573f3766c59887aea177cb85bf889c2161bfc
 workflow-type: tm+mt
-source-wordcount: '265'
+source-wordcount: '280'
 ht-degree: 0%
 
 ---
@@ -38,6 +38,10 @@ Volg de volgende aanbevolen procedures voor indexering om de prestaties van de s
 - Controleer de indexconfiguratie.
 - Indexeerders instellen op _[!UICONTROL Update on Schedule]_voor grote plaatsen, en plaatsen met frequente updates en zwaar verkeer. Zie [Indexbeheer](https://docs.magento.com/user-guide/system/index-management.html#change-the-index-mode).
 - Volg [best practices voor prestaties](../../../performance/configuration.md) voor het beheren van indexen.
+
+>[!IMPORTANT]
+>
+>De [!DNL Customer Grid] kan alleen opnieuw worden gedexeerd met de opdracht [!UICONTROL Update on Save] optie. Deze index ondersteunt het `Update by Schedule` optie.
 
 ## Aanvullende informatie
 

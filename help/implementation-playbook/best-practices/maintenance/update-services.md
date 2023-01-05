@@ -4,7 +4,7 @@ description: Leer hoe u uw Adobe Commerce op de technologiestapel voor cloudinfr
 role: Developer
 feature: Best Practices
 feature-set: Commerce
-source-git-commit: 48c5666ee9b83bbf8a5c6375ec53762d918bcece
+source-git-commit: cf8626bfab170a1e12cc72f0bc344c9beb9349a7
 workflow-type: tm+mt
 source-wordcount: '264'
 ht-degree: 0%
@@ -26,7 +26,7 @@ Upgrade de services en onderdelen die door Adobe Commerce worden gebruikt voorda
 
 De klanten op de plannen van de Aanzet kunnen zelf-dienen op de dienstverbeteringen. Zie [Serviceversie wijzigen](https://devdocs.magento.com/cloud/project/services.html#change-service-version) voor meer informatie over hoe dit te doen.
 
-Klanten met Pro-plannen kunnen alleen zelf hun eigen upgrades voor services uitvoeren in hun [Integratieomgeving](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/announcements/commerce-announcements/integration-environment-enhancement-request-pro-and-starter.md). Voor services-upgrades op Productie moet u [een ondersteuningsticket indienen](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html#submit-ticket) de upgrade aanvragen.
+Klanten met Pro-plannen kunnen alleen zelf hun eigen upgrades voor services uitvoeren in hun [Integratieomgeving](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/announcements/commerce-announcements/integration-environment-enhancement-request-pro-and-starter.html). Voor services-upgrades op Productie moet u [een ondersteuningsticket indienen](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html#submit-ticket) de upgrade aanvragen.
 
 >[!WARNING]
 >

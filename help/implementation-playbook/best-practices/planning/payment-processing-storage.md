@@ -4,9 +4,9 @@ description: Meer informatie over het veilig verwerken en opslaan van betalingsg
 role: Developer
 feature-set: Commerce
 feature: Best Practices
-source-git-commit: 124eaf6e7b465b320d3d7e6a3694130edb93f187
+source-git-commit: cf8626bfab170a1e12cc72f0bc344c9beb9349a7
 workflow-type: tm+mt
-source-wordcount: '525'
+source-wordcount: '529'
 ht-degree: 0%
 
 ---
@@ -14,7 +14,7 @@ ht-degree: 0%
 
 # Aanbevolen procedures voor betalingsverwerking en -opslag
 
-Een van de belangrijkste beginselen bij het handhaven van [PCI-compatibiliteit](https://nam04.safelinks.protection.outlook.com/GetUrlReputation) heeft een strategie om creditcardbetalingen correct te verwerken en op te slaan.
+Een van de belangrijkste beginselen bij het handhaven van [PCI-compatibiliteit](https://experienceleague.adobe.com/docs/commerce-admin/start/compliance/payments/compliance-pci.html) heeft een strategie om creditcardbetalingen correct te verwerken en op te slaan.
 
 Gegevens van kaarthouders opslaan in Adobe Commerce is **strikt verboden** en dit zou een schending van uw verplichtingen als handelaar onder de Norm van de Veiligheid van Gegevens van de Industrie van de Bedrijfs van de Betalingskaart (PCI-DSS) kunnen zijn. Meer informatie over ons model van gedeelde verantwoordelijkheid en de richtsnoeren voor handelsverplichtingen vindt u in onze [Handleiding voor gedeelde verantwoordelijkheid voor Adobe Commerce](https://www.adobe.com/content/dam/cc/en/trust-center/ungated/whitepapers/experience-cloud/adobe-commerce-shared-responsibility-guide.pdf) in het Adobe Trust Center.
 
@@ -31,7 +31,7 @@ We raden je aan de onderstaande aanbevolen procedures te volgen om ervoor te zor
 
 Als het opslaan van gegevens van kaarthouders nodig is, moeten kaarthoudergegevens buiten Adobe Commerce worden opgeslagen met opslaggaranties. Het bieden van opslagwaarborgen voor betalingsdetails, zoals creditcardgegevens, helpt fraude en andere potentiële veiligheidskwesties te voorkomen. In overeenstemming met andere PCI-normen is het op zijn plaats hebben van bescherming de eerste verdedigingslinie. Sommige voorkeursmethoden voor het verbeteren van de beveiliging van opgeslagen gegevens zijn codering, afkapping, kenisering, one-way hashing en maskeren.
 
-Bescherming van cryptografische sleutels is van essentieel belang voor gegevensbeschermingsstrategieën. Het is van essentieel belang dat u bekwame en betrouwbare bewaarnemers hebt die op deze sleutels toezien.
+Bescherming van cryptografische sleutels is van essentieel belang voor gegevensbeschermingsstrategieën. Het is essentieel om ervaren en betrouwbare bewaarnemers te hebben die deze sleutels controleren.
 
 Ten slotte moet een primair rekeningnummer (PAN) tijdens de opslag onleesbaar zijn (bijvoorbeeld gemaskeerd zoals XXX). Dit omvat draagbare opslag- en back-upmedia zoals flash drives, USB en externe harde schijven en zelfs auditlogs.
 
