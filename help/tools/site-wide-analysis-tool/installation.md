@@ -1,9 +1,9 @@
 ---
 title: Hulplijn installeren
 description: "Gebruik deze handleiding om te installeren [!DNL Site-Wide Analysis Tool] voor uw website"
-source-git-commit: 696f1624fe43fdd637b374b880667d35daca04de
+source-git-commit: 0c27d4cf5854161e14a482912941cd144ca654f7
 workflow-type: tm+mt
-source-wordcount: '1095'
+source-wordcount: '1074'
 ht-degree: 0%
 
 ---
@@ -267,7 +267,7 @@ Wij adviseren vormend de agent om als dienst te lopen. Als u beperkte toegang to
 
 ### Service {#service}
 
-1. Een systeemeenheidsbestand maken `(/etc/systemd/system/scheduler.service)` met de volgende configuratie (vervang `<filesystemowner>` met de UNIX®-gebruiker die eigenaar is van de directory waarin de agent en de Adobe Commerce-software zijn geïnstalleerd). Als u de agent als hoofdgebruiker hebt gedownload, wijzigt u de map en de eigenaar van de geneste bestanden.
+1. Een systeemeenheidsbestand maken `(/etc/systemd/system/scheduler.service)` met de volgende configuratie (vervang `<filesystemowner>` met de UNIX®-gebruiker die eigenaar is van de directory waarin de agent en de Adobe Commerce-software zijn geïnstalleerd). Als u de agent als hoofdgebruiker hebt gedownload, wijzigt u de map en de eigenaar van geneste bestanden.
 
    ```config
    [Unit]
@@ -381,27 +381,27 @@ Als u de agent aan looppas met kroon vormde, gebruik in plaats daarvan de volgen
    rm -rf swat-agent
    ```
 
-## Het configuratiebestand overschrijven
+## Problemen oplossen
 
-U kunt de waarden die u in het configuratiebestand hebt opgegeven tijdens de installatie overschrijven met behulp van omgevingsvariabelen. Dit bewaart achterwaartse verenigbaarheid met vroegere versies van de agent. Zie de volgende tabel voor aanbevolen waarden:
+### Toegangstoetsen niet correct geparseerd
 
-| EIGENSCHAP | BESCHRIJVING |
-| --- | --- |
-| `SWAT_AGENT_APP_NAME` | Het bedrijf of de plaatsnaam die u toen het installeren van de agent verstrekte |
-| `SWAT_AGENT_APPLICATION_PHP_PATH` | Pad naar uw PHP CLI interpreter (gewoonlijk `/usr/bin/php`) |
-| `SWAT_AGENT_APPLICATION_MAGENTO_PATH` | Hoofdmap waar uw Adobe Commerce-toepassing is geïnstalleerd (gewoonlijk `/var/www/html`) |
-| `SWAT_AGENT_APPLICATION_DB_USER` | Databasegebruiker voor uw Adobe Commerce-installatie |
-| `SWAT_AGENT_APPLICATION_DB_PASSWORD` | Databasewachtwoord voor de opgegeven gebruiker voor uw Adobe Commerce-installatie |
-| `SWAT_AGENT_APPLICATION_DB_HOST` | Databasehost voor uw Adobe Commerce-installatie |
-| `SWAT_AGENT_APPLICATION_DB_NAME` | Databasenaam voor uw Adobe Commerce-installatie |
-| `SWAT_AGENT_APPLICATION_DB_PORT` | Databasepoort voor uw Adobe Commerce-installatie (gewoonlijk `3306`) |
-| `SWAT_AGENT_APPLICATION_DB_TABLE_PREFIX` | Tabelvoorvoegsel voor Adobe Commerce-installatie (standaardwaarde): `empty`) |
-| `SWAT_AGENT_APPLICATION_DB_REPLICATED` | Of uw Adobe Commerce-installatie een secundaire database-instantie heeft (meestal `false`) |
-| `SWAT_AGENT_APPLICATION_CHECK_REGISTRY_PATH` | Tijdelijke map voor de agent (gewoonlijk `/usr/local/swat-agent/tmp`) |
-| `SWAT_AGENT_RUN_CHECKS_ON_START` | Gegevens verzamelen op de eerste uitvoering (gewoonlijk `1`) |
-| `SWAT_AGENT_LOG_LEVEL` | Bepaalt welke gebeurtenissen op strengheid (gewoonlijk) worden geregistreerd `error`) |
-| `SWAT_AGENT_ENABLE_AUTO_UPGRADE` | Schakelt automatische upgrade in (opnieuw opstarten vereist na een upgrade); de agent controleert niet op verbeteringen als de optie onbruikbaar wordt gemaakt; `true` of `false`) |
-| `SWAT_AGENT_IS_SANDBOX=false` | Sandboxmodus inschakelen om de agent te gebruiken in een staging-omgeving |
+U ziet mogelijk de volgende fout als uw toegangstoetsen niet correct worden geparseerd:
+
+```terminal
+ERRO[2022-10-10 00:01:41] Error while refreshing token: error while getting jwt from magento: invalid character 'M' looking for beginning of value
+FATA[2022-12-10 20:38:44] bad http status from https://updater.swat.magento.com/linux-amd64.json: 403 Forbidden
+```
+
+Voer de volgende stappen uit om deze fout op te lossen:
+
+1. Doe een [gescripte installatie](#scripted), slaat u de uitvoer op en controleert u de uitvoer op fouten.
+1. De gegenereerde `config.yaml` en controleer of het pad naar uw instantie Commerce en PHP juist is.
+1. Zorg ervoor dat de gebruiker die de planner in werking stelt in is [eigenaar van bestandssysteem](../../installation/prerequisites/file-system/overview.md) Unix-groep of dezelfde gebruiker als de eigenaar van het bestandssysteem.
+1. Zorg ervoor dat de [Commerce Services Connector](https://experienceleague.adobe.com/docs/commerce-merchant-services/user-guides/integration-services/saas.html) worden correct geïnstalleerd en probeer hen bij te werken om de uitbreiding met uw systeem te verbinden.
+1. [Verwijderen](#uninstall) de agent nadat de toetsen zijn bijgewerkt en opnieuw zijn geïnstalleerd met de [installatiescript](#scripted).
+1. Stel de planner in werking en zie of ontvangt u nog de zelfde fout.
+1. Als u nog steeds dezelfde fout krijgt, verhoogt u het logniveau in het dialoogvenster `config.yaml` om te zuiveren en een kaartje van de Steun te openen.
+
 
 >[!INFO]
 >
