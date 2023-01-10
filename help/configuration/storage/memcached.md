@@ -1,7 +1,7 @@
 ---
 title: In cache geplaatste bestanden voor sessieopslag gebruiken
 description: Leer over het gebruiken van gegeheugen voor de zittingsopslag van de Handel.
-source-git-commit: 53448b11a2d000fe8e8a7eecf2ffcef4b7e248fa
+source-git-commit: 0d106b36f479ecf2eda3fecf6740b28d4b6793eb
 workflow-type: tm+mt
 source-wordcount: '285'
 ht-degree: 0%
@@ -13,7 +13,7 @@ ht-degree: 0%
 
 Het in het geheugen onderbrengen is een algemeen, verdeeld geheugen in het voorgeheugen onderbrengend systeem. Het wordt vaak gebruikt om dynamische database-gedreven websites te versnellen door gegevens en voorwerpen in RAM in het voorgeheugen op te nemen om het aantal tijden te verminderen een externe gegevensbron (zoals een gegevensbestand of API) moet worden gelezen.
 
-Het in geheugen ondergebracht verstrekt een grote haktafel die over veelvoudige machines kan worden verdeeld. Als de tabel vol is, zorgen de invoegingen ervoor dat oudere gegevens worden gewist in de volgorde die het minst recent is gebruikt (LRU). De grootte van deze hash-tabel is vaak erg groot. (Bron: [memcached.org](http://memcached.org/))
+Het in geheugen ondergebracht verstrekt een grote haktafel die over veelvoudige machines kan worden verdeeld. Als de tabel vol is, zorgen de invoegingen ervoor dat oudere gegevens worden gewist in de volgorde die het minst recent is gebruikt (LRU). De grootte van deze hash-tabel is vaak erg groot. (Bron: [memcached.org](https://www.memcached.org/))
 
 De handel gebruikt getelegrafeerd voor zittingsopslag maar niet voor pagina caching. Voor het in cache plaatsen van pagina&#39;s raden we aan [Redis](../cache/redis-pg-cache.md) of [Varnish](../cache/config-varnish.md).
 
@@ -39,7 +39,7 @@ De handel gebruikt getelegrafeerd voor zittingsopslag maar niet voor pagina cach
    ),
    ```
 
-   in het geheugen ondergebracht heeft facultatieve startparameters die buiten het werkingsgebied van deze gids zijn. Meer informatie hierover vindt u in het dialoogvenster [ingesloten](https://php.net/manual/en/memcached.sessions.php) documentatie, broncode en wijzigingen.
+   in het geheugen ondergebracht heeft facultatieve startparameters die buiten het werkingsgebied van deze gids zijn. Meer informatie hierover vindt u in het dialoogvenster [ingesloten](https://www.php.net/manual/en/memcached.sessions.php) documentatie, broncode en wijzigingen.
 
 1. Ga verder met de volgende sectie.
 
@@ -80,5 +80,5 @@ De handel gebruikt getelegrafeerd voor zittingsopslag maar niet voor pagina cach
    STAT items:3:outofmemory 0
    STAT items:3:tailrepairs 0
    
-   [Look at the keys in more detail](http://www.darkcoding.net/software/memcached-list-all-keys/)
+   [Look at the keys in more detail](https://darkcoding.net/software/memcached-list-all-keys/)
    ```

@@ -1,7 +1,7 @@
 ---
 title: "[!DNL Data Migration Tool] technische specificatie"
 description: "Meer informatie over de implementatiedetails van de [!DNL Data Migration Tool] en hoe u de gegevensoverdracht tussen Magento 1 en Magento 2 kunt uitbreiden."
-source-git-commit: d263e412022a89255b7d33b267b696a8bb1bc8a2
+source-git-commit: c56cc6d97f69770aa718333c02514ab3cfce774c
 workflow-type: tm+mt
 source-wordcount: '2085'
 ht-degree: 0%
@@ -264,7 +264,7 @@ class StageClass implements StageInterface
 
 Als het gegevenswerkgebied terugdraaiacties ondersteunt, moet het `RollbackInterface` interface.
 
-Visualisatie van de lopende stap wordt verstrekt door de component ProgressBar van Symfony (zie [Voortgangsbalk](http://symfony.com/doc/current/components/console/helpers/progressbar.html)). Open deze component in een stap als LogLevelProcessor.
+Visualisatie van de lopende stap wordt verstrekt door de component ProgressBar van Symfony (zie [Voortgangsbalk](https://symfony.com/doc/current/components/console/helpers/progressbar.html)). Open deze component in een stap als LogLevelProcessor.
 
 De belangrijkste gebruiksmethoden zijn:
 

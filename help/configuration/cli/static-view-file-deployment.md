@@ -1,7 +1,7 @@
 ---
 title: Statische weergavebestanden gebruiken
 description: Leer om statische dossiers aan het het dossiersysteem van de Handel tijdens productiemodus te schrijven.
-source-git-commit: 4fe6d6a76a5d4849d4f96b61b95a9a3dae7fc76a
+source-git-commit: 0d106b36f479ecf2eda3fecf6740b28d4b6793eb
 workflow-type: tm+mt
 source-wordcount: '1135'
 ht-degree: 0%
@@ -53,7 +53,7 @@ De volgende lijst verklaart de parameters en de waarden van dit bevel.
 
 | Option | Beschrijving | Vereist? |
 | ------ | ----------- | --------- |
-| `<languages>` | Lijst met door spaties gescheiden [ISO-639](http://www.loc.gov/standards/iso639-2/php/code_list.php) taalcodes waarvoor statische weergavebestanden moeten worden uitgevoerd. (Standaard is `en_US`.)<br>Zoek de lijst door deze uit te voeren: `bin/magento info:language:list` | Nee |
+| `<languages>` | Lijst met door spaties gescheiden [ISO-639](https://www.loc.gov/standards/iso639-2/php/code_list.php) taalcodes waarvoor statische weergavebestanden moeten worden uitgevoerd. (Standaard is `en_US`.)<br>Zoek de lijst door deze uit te voeren: `bin/magento info:language:list` | Nee |
 | `--language (-l)` | Genereer bestanden alleen voor de opgegeven talen. Als er geen optie is opgegeven, worden standaard bestanden voor alle ISO-639-taalcodes gegenereerd. U kunt de naam van één taalcode tegelijk opgeven. Standaardwaarde is **alles**.<br>Bijvoorbeeld: `--language en_US --language es_ES` | Nee |
 | `--exclude-language` | Genereer bestanden voor de opgegeven taalcodes. Als er geen optie is opgegeven, wordt standaard niets uitgesloten. U kunt de naam van één taalcode of een komma-gescheiden lijst van taalcodes specificeren. Standaardwaarde is **none**. | Nee |
 | `--theme <theme>` | Thema&#39;s waarvoor statische inhoud moet worden geïmplementeerd. Standaardwaarde is **alles**.<br>Bijvoorbeeld: `--theme Magento/blank --theme Magento/luma` | Nee |

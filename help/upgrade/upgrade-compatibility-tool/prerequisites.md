@@ -1,9 +1,9 @@
 ---
 title: "[!DNL Upgrade Compatibility Tool] vereisten"
 description: Controleer of uw systeem voldoet aan de vereisten voor het uitvoeren van de [!DNL Upgrade Compatibility Tool] in een opdrachtregelinterface voor uw Adobe Commerce-project.
-source-git-commit: d263e412022a89255b7d33b267b696a8bb1bc8a2
+source-git-commit: 0d106b36f479ecf2eda3fecf6740b28d4b6793eb
 workflow-type: tm+mt
-source-wordcount: '275'
+source-wordcount: '276'
 ht-degree: 0%
 
 ---
@@ -44,9 +44,9 @@ De minimumeisen voor het gebruik van de [!DNL Upgrade Compatibility Tool] in een
 
 | **Vereisten** | **Restricties** |
 |----------------|-----------------|
-| PHP-versie | >= 7,3 |
+| PHP-versie | >= 7.3 |
 | Composer | geen bekende eis. |
-| Node.js | Node.js-versies `^12.22.0`, `^14.17.0`, of `>=16.0.0` (zie [Node.js installeren](https://nodejs.dev/learn/how-to-install-nodejs)) |
+| Node.js | Node.js-versies `^12.22.0`, `^14.17.0`, of `>=16.0.0` (zie [Node.js installeren](https://nodejs.dev/en/learn/how-to-install-nodejs/)) |
 | Geheugenbeperkingen | minimaal 2 GB RAM. |
 
 [!DNL Upgrade Compatibility Tool] vereist [PCNTL](https://www.php.net/manual/en/book.pcntl.php) en andere PHP extensies voor de uitvoering. Controleer de vereiste PHP extensies met `composer check-platform-reqs` opdracht:

@@ -1,9 +1,9 @@
 ---
 title: Berichtenrijen beheren
 description: Leer hoe u berichtrijen van de bevellijn voor Adobe Commerce kunt beheren.
-source-git-commit: 8102c083bb0216bbdcad2882f39f7711b9cee52b
+source-git-commit: 0d106b36f479ecf2eda3fecf6740b28d4b6793eb
 workflow-type: tm+mt
-source-wordcount: '410'
+source-wordcount: '411'
 ht-degree: 0%
 
 ---
@@ -31,7 +31,7 @@ In het volgende voorbeeld wordt het `crontab` configuratie voor het runnen van c
 
 >[!INFO]
 >
->Hoe vaak u berichtrijen controleert hangt van uw bedrijfslogica en beschikbare systeemmiddelen af. Over het algemeen wilt u wellicht meer controleren op nieuwe klanten en welkomste-mails verzenden dan een proces dat veel resources vergt, zoals het bijwerken van uw catalogus. U moet `cron` programma&#39;s volgens uw bedrijfsbehoeften.
+>Hoe vaak u berichtrijen controleert kan van uw bedrijfslogica en beschikbare systeemmiddelen afhangen. Over het algemeen wilt u wellicht meer controleren op nieuwe klanten en welkomste-mails verzenden dan een proces dat veel resources vergt, zoals het bijwerken van uw catalogus. U moet `cron` programma&#39;s volgens uw bedrijfsbehoeften.
 >
 >U kunt deze configuratie configureren in de beheerderwinkels > Instellingen > Configuratie > Geavanceerd > Systeem > Cron-configuratieopties voor de groep: consumenten.
 >
