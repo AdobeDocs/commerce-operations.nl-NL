@@ -4,7 +4,7 @@ description: Leer hoe u de MySQL-slave-verbinding configureert voor Adobe Commer
 role: Developer
 feature-set: Commerce
 feature: Best Practices
-source-git-commit: 0866272e02a7a223d35e14842bfb42a827e0468d
+source-git-commit: a5a6e25e3fd303e07a07110b85aa1d460f53cd54
 workflow-type: tm+mt
 source-wordcount: '286'
 ht-degree: 0%
@@ -14,8 +14,9 @@ ht-degree: 0%
 
 # Beste praktijken om de MySQL slave verbinding te vormen
 
->!![NOTE]
-We zijn ons ervan bewust dat dit artikel nog steeds industriestandaard softwaretermen bevat die sommigen racistisch, seksistisch of onderdrukkend vinden en die de lezer kunnen doen voelen gekwetst, getraumatiseerd of onwelkom. Adobe werkt eraan deze termen te verwijderen uit onze code, documentatie en gebruikerservaring.
+>[!NOTE]
+>
+>We zijn ons ervan bewust dat dit artikel nog steeds industriestandaard softwaretermen bevat die sommigen racistisch, seksistisch of onderdrukkend vinden en die de lezer kunnen doen voelen gekwetst, getraumatiseerd of onwelkom. Adobe werkt eraan deze termen te verwijderen uit onze code, documentatie en gebruikerservaring.
 
 Voor Adobe Commerce-sites die zijn geïmplementeerd op de Pro-architectuur van de cloud, raadt Adobe aan de MYSQL-slave-verbinding standaard in te schakelen voor de database.
 
