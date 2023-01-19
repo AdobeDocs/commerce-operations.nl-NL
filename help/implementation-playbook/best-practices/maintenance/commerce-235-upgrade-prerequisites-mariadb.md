@@ -4,7 +4,7 @@ description: Leer hoe u uw Adobe Commerce-database voorbereidt voor een upgrade 
 role: Developer
 feature-set: Commerce
 feature: Best Practices
-source-git-commit: 071e88c6a07df0f74b6d4b09cce858710c9332cc
+source-git-commit: 35efea20181b112e97bfae803c8d0168cfc88dfc
 workflow-type: tm+mt
 source-wordcount: '562'
 ht-degree: 0%
@@ -50,7 +50,7 @@ U kunt tabellen op één knooppunt in uw cluster omzetten. De wijzigingen worden
 1. Tabellen identificeren die van compacte naar dynamische indeling moeten worden omgezet.
 
    ```mysql
-   SELECT table_name, row_format FROM information_schema.tables WHERE table_schema=DATABASE() and row_format 'Compact';
+   SELECT table_name, row_format FROM information_schema.tables WHERE table_schema=DATABASE() and row_format = 'Compact';
    ```
 
 1. Bepaal de tabelgrootte zodat u de conversiewerkzaamheden kunt plannen.
