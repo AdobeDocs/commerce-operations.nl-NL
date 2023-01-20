@@ -1,9 +1,9 @@
 ---
 user-guide-title: Operationeel afspelen
 user-guide-description: Leer hoe te om uw ondernemingen operationeel klaar te krijgen om een succesvolle e-commercesite in werking te stellen.
-source-git-commit: 748c302527617c6a9bf7d6e666c6b3acff89e021
+source-git-commit: 338a99f4f047640ac4bb944ac8599301cba5f646
 workflow-type: tm+mt
-source-wordcount: '132'
+source-wordcount: '142'
 ht-degree: 0%
 
 ---
@@ -72,3 +72,4 @@ ht-degree: 0%
    - [Klikken en verzamelen](product/click-collect.md)
    - [PWA](product/progressive-web-app.md)
 - [Controlelijsten en sjablonen](checklists-templates/home.md)
+- [Terugkeren naar operationele hulplijnen](https://experienceleague.adobe.com/docs/commerce-operations/operational-guides/home.html)

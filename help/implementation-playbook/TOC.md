@@ -2,9 +2,9 @@
 user-guide-title: Afspeelmap voor implementatie
 user-guide-description: Leer meer over strategieën voor het plannen en implementeren van een geslaagde Adobe Commerce-site.
 mini-toc-levels: 3
-source-git-commit: e856fd2a6a5bde96896f624fc0914e990d20d4cc
+source-git-commit: 338a99f4f047640ac4bb944ac8599301cba5f646
 workflow-type: tm+mt
-source-wordcount: '247'
+source-wordcount: '257'
 ht-degree: 0%
 
 ---
@@ -112,3 +112,4 @@ ht-degree: 0%
       - [Controlelijst voor upgraden](best-practices/maintenance/upgrade-checklist.md)
       - [Problemen met databaseprestaties oplossen &#x200B;](best-practices/maintenance/resolve-database-performance-issues.md)
       - [Adobe Commerce 2.3.5-upgradevoorwaarden voor MariaDB-&#x200B;](best-practices/maintenance/commerce-235-upgrade-prerequisites-mariadb.md)
+- [Terugkeren naar operationele hulplijnen](https://experienceleague.adobe.com/docs/commerce-operations/operational-guides/home.html)

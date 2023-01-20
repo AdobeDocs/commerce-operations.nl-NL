@@ -1,9 +1,9 @@
 ---
 user-guide-title: Installatiehandleiding
 user-guide-description: Leer hoe u Adobe Commerce en Magento Open Source voor implementaties op locatie kunt installeren.
-source-git-commit: 949ef8d2036ceeef3cc892a5063ddecc2586a6a9
+source-git-commit: 338a99f4f047640ac4bb944ac8599301cba5f646
 workflow-type: tm+mt
-source-wordcount: '168'
+source-wordcount: '178'
 ht-degree: 0%
 
 ---
@@ -66,3 +66,4 @@ ht-degree: 0%
    - [Commerce verwijderen of opnieuw installeren](tutorials/uninstall.md)
    - [Thema&#39;s verwijderen](tutorials/themes.md)
    - [Het databaseschema bijwerken](tutorials/database-upgrade.md)
+- [Terugkeren naar operationele hulplijnen](https://experienceleague.adobe.com/docs/commerce-operations/operational-guides/home.html)
