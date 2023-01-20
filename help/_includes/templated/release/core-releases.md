@@ -1,5 +1,5 @@
 ---
-source-git-commit: a2747c1d62c4a22179c1177e7c4e76e028f66cea
+source-git-commit: 4391091cce32618dc02b0bddb62ff9d16dd12f10
 workflow-type: tm+mt
 source-wordcount: '953'
 ht-degree: 7%
@@ -7,7 +7,7 @@ ht-degree: 7%
 ---
 # Uitgebrachte versies
 
-## 2.4.4-2.4.6.
+## 2.4.4-2.4.6
 
 De ondersteuning voor de releaselijn 2.4.4-2.4.6 eindigt op 25 november 2024.
 
@@ -26,7 +26,7 @@ De ondersteuning voor de releaselijn 2.4.4-2.4.6 eindigt op 25 november 2024.
           </td>
     </tr>
     <tr>
-        <td>2.4.5.</td>
+        <td>2.4.5</td>
         <td>9 augustus 2022</td>
           <td><a href="https://devdocs.magento.com/guides/v2.4/release-notes/commerce-2-4-5.html">Opmerkingen bij de release van Adobe Commerce</a><br><a href="https://devdocs.magento.com/guides/v2.4/release-notes/open-source-2-4-5.html">Opmerkingen bij de release Magento Open Source</a><br>
           </td>
@@ -44,7 +44,7 @@ De ondersteuning voor de releaselijn 2.4.4-2.4.6 eindigt op 25 november 2024.
           </td>
     </tr>
     <tr>
-        <td>2.4.4.</td>
+        <td>2.4.4</td>
         <td>12 april 2022</td>
           <td><a href="https://devdocs.magento.com/guides/v2.4/release-notes/commerce-2-4-4.html">Opmerkingen bij de release van Adobe Commerce</a><br><a href="https://devdocs.magento.com/guides/v2.4/release-notes/open-source-2-4-4.html">Opmerkingen bij de release Magento Open Source</a><br>
           </td>
@@ -52,9 +52,9 @@ De ondersteuning voor de releaselijn 2.4.4-2.4.6 eindigt op 25 november 2024.
   </tbody>
 </table>
 
-## 2.4.0-2.4.3.
+## 2.4.0-2.4.3
 
-De ondersteuning voor de releaselijn 2.4.0-2.4.3 eindigt op 28 november 2022.
+De ondersteuning voor de releaselijn 2.4.0-2.4.3 is afgelopen op 28 november 2022.
 
 <table>
   <thead>
@@ -83,7 +83,7 @@ De ondersteuning voor de releaselijn 2.4.0-2.4.3 eindigt op 28 november 2022.
           </td>
     </tr>
     <tr>
-        <td>2.4.3.</td>
+        <td>2.4.3</td>
         <td>10 augustus 2021</td>
           <td><a href="https://devdocs.magento.com/guides/v2.4/release-notes/commerce-2-4-3.html">Opmerkingen bij de release van Adobe Commerce</a><br><a href="https://devdocs.magento.com/guides/v2.4/release-notes/open-source-2-4-3.html">Opmerkingen bij de release Magento Open Source</a><br>
           </td>
@@ -101,7 +101,7 @@ De ondersteuning voor de releaselijn 2.4.0-2.4.3 eindigt op 28 november 2022.
           </td>
     </tr>
     <tr>
-        <td>2.4.2.</td>
+        <td>2.4.2</td>
         <td>9 februari 2021</td>
           <td><a href="https://devdocs.magento.com/guides/v2.4/release-notes/commerce-2-4-2.html">Opmerkingen bij de release van Adobe Commerce</a><br><a href="https://devdocs.magento.com/guides/v2.4/release-notes/open-source-2-4-2.html">Opmerkingen bij de release Magento Open Source</a><br>
           </td>
@@ -113,7 +113,7 @@ De ondersteuning voor de releaselijn 2.4.0-2.4.3 eindigt op 28 november 2022.
           </td>
     </tr>
     <tr>
-        <td>2.4.1.</td>
+        <td>2.4.1</td>
         <td>15 oktober 2020</td>
           <td><a href="https://devdocs.magento.com/guides/v2.4/release-notes/commerce-2-4-1.html">Opmerkingen bij de release van Adobe Commerce</a><br><a href="https://devdocs.magento.com/guides/v2.4/release-notes/open-source-2-4-1.html">Opmerkingen bij de release Magento Open Source</a><br>
           </td>
@@ -125,7 +125,7 @@ De ondersteuning voor de releaselijn 2.4.0-2.4.3 eindigt op 28 november 2022.
           </td>
     </tr>
     <tr>
-        <td>2.4.0.</td>
+        <td>2.4.0</td>
         <td>28 juli 2020</td>
           <td><a href="https://devdocs.magento.com/guides/v2.4/release-notes/release-notes-2-4-0-commerce.html">Opmerkingen bij de release van Adobe Commerce</a><br><a href="https://devdocs.magento.com/guides/v2.4/release-notes/release-notes-2-4-0-open-source.html">Opmerkingen bij de release Magento Open Source</a><br>
           </td>
@@ -133,7 +133,7 @@ De ondersteuning voor de releaselijn 2.4.0-2.4.3 eindigt op 28 november 2022.
   </tbody>
 </table>
 
-## 2,3
+## 2.3
 
 Ondersteuning voor de release line 2.3 eindigde op 8 september 2022.
 
@@ -170,7 +170,7 @@ Ondersteuning voor de release line 2.3 eindigde op 8 september 2022.
           </td>
     </tr>
     <tr>
-        <td>2.3.7.</td>
+        <td>2.3.7</td>
         <td>11 mei 2021</td>
           <td><a href="https://devdocs.magento.com/guides/v2.3/release-notes/commerce-2-3-7.html">Opmerkingen bij de release van Adobe Commerce</a><br><a href="https://devdocs.magento.com/guides/v2.3/release-notes/open-source-2-3-7.html">Opmerkingen bij de release Magento Open Source</a><br>
           </td>
@@ -182,7 +182,7 @@ Ondersteuning voor de release line 2.3 eindigde op 8 september 2022.
           </td>
     </tr>
     <tr>
-        <td>2.3.6.</td>
+        <td>2.3.6</td>
         <td>15 oktober 2020</td>
           <td><a href="https://devdocs.magento.com/guides/v2.3/release-notes/commerce-2-3-6.html">Opmerkingen bij de release van Adobe Commerce</a><br><a href="https://devdocs.magento.com/guides/v2.3/release-notes/open-source-2-3-6.html">Opmerkingen bij de release Magento Open Source</a><br>
           </td>
@@ -206,7 +206,7 @@ Ondersteuning voor de release line 2.3 eindigde op 8 september 2022.
           </td>
     </tr>
     <tr>
-        <td>2.3.5.</td>
+        <td>2.3.5</td>
         <td>28 april 2020</td>
           <td><a href="https://devdocs.magento.com/guides/v2.3/release-notes/release-notes-2-3-5-commerce.html">Opmerkingen bij de release van Adobe Commerce</a><br><a href="https://devdocs.magento.com/guides/v2.3/release-notes/release-notes-2-3-5-open-source.html">Opmerkingen bij de release Magento Open Source</a><br>
           </td>
@@ -218,7 +218,7 @@ Ondersteuning voor de release line 2.3 eindigde op 8 september 2022.
           </td>
     </tr>
     <tr>
-        <td>2.3.4.</td>
+        <td>2.3.4</td>
         <td>28 januari 2020</td>
           <td><a href="https://devdocs.magento.com/guides/v2.3/release-notes/release-notes-2-3-4-commerce.html">Opmerkingen bij de release van Adobe Commerce</a><br><a href="https://devdocs.magento.com/guides/v2.3/release-notes/release-notes-2-3-4-open-source.html">Opmerkingen bij de release Magento Open Source</a><br>
           </td>
@@ -230,25 +230,25 @@ Ondersteuning voor de release line 2.3 eindigde op 8 september 2022.
           </td>
     </tr>
     <tr>
-        <td>2.3.3.</td>
+        <td>2.3.3</td>
         <td>8 oktober 2019</td>
           <td><a href="https://devdocs.magento.com/guides/v2.3/release-notes/release-notes-2-3-3-commerce.html">Opmerkingen bij de release van Adobe Commerce</a><br><a href="https://devdocs.magento.com/guides/v2.3/release-notes/release-notes-2-3-3-open-source.html">Opmerkingen bij de release Magento Open Source</a><br>
           </td>
     </tr>
     <tr>
-        <td>2.3.2.</td>
+        <td>2.3.2</td>
         <td>25 juni 2019</td>
           <td><a href="https://devdocs.magento.com/guides/v2.3/release-notes/ReleaseNotes2.3.2Commerce.html">Opmerkingen bij de release van Adobe Commerce</a><br><a href="https://devdocs.magento.com/guides/v2.3/release-notes/ReleaseNotes2.3.2OpenSource.html">Opmerkingen bij de release Magento Open Source</a><br>
           </td>
     </tr>
     <tr>
-        <td>2.3.1.</td>
+        <td>2.3.1</td>
         <td>26 maart 2019</td>
           <td><a href="https://devdocs.magento.com/guides/v2.3/release-notes/ReleaseNotes2.3.1Commerce.html">Opmerkingen bij de release van Adobe Commerce</a><br><a href="https://devdocs.magento.com/guides/v2.3/release-notes/ReleaseNotes2.3.1OpenSource.html">Opmerkingen bij de release Magento Open Source</a><br>
           </td>
     </tr>
     <tr>
-        <td>2.3.0.</td>
+        <td>2.3.0</td>
         <td>28 november 2018</td>
           <td><a href="https://devdocs.magento.com/guides/v2.3/release-notes/ReleaseNotes2.3.0Commerce.html">Opmerkingen bij de release van Adobe Commerce</a><br><a href="https://devdocs.magento.com/guides/v2.3/release-notes/ReleaseNotes2.3.0OpenSource.html">Opmerkingen bij de release Magento Open Source</a><br>
           </td>
@@ -256,7 +256,7 @@ Ondersteuning voor de release line 2.3 eindigde op 8 september 2022.
   </tbody>
 </table>
 
-## 2,2
+## 2.2
 
 De ondersteuning voor de releaselijn 2.2 liep af op 1 december 2019.
 
@@ -269,73 +269,73 @@ De ondersteuning voor de releaselijn 2.2 liep af op 1 december 2019.
   </thead>
   <tbody>
     <tr>
-        <td>2.2.11.</td>
+        <td>2.2.11</td>
         <td>28 januari 2020</td>
           <td><a href="https://devdocs.magento.com/guides/v2.2/release-notes/release-notes-2-2-11-commerce.html">Opmerkingen bij de release van Adobe Commerce</a><br><a href="https://devdocs.magento.com/guides/v2.2/release-notes/release-notes-2-2-11-open-source.html">Opmerkingen bij de release Magento Open Source</a><br>
           </td>
     </tr>
     <tr>
-        <td>2.2.10.</td>
+        <td>2.2.10</td>
         <td>8 oktober 2019</td>
           <td><a href="https://devdocs.magento.com/guides/v2.2/release-notes/release-notes-2-2-10-commerce.html">Opmerkingen bij de release van Adobe Commerce</a><br><a href="https://devdocs.magento.com/guides/v2.2/release-notes/release-notes-2-2-10-open-source.html">Opmerkingen bij de release Magento Open Source</a><br>
           </td>
     </tr>
     <tr>
-        <td>2.2.9.</td>
+        <td>2.2.9</td>
         <td>25 juni 2019</td>
           <td><a href="https://devdocs.magento.com/guides/v2.2/release-notes/ReleaseNotes2.2.9EE.html">Opmerkingen bij de release van Adobe Commerce</a><br><a href="https://devdocs.magento.com/guides/v2.2/release-notes/ReleaseNotes2.2.9CE.html">Opmerkingen bij de release Magento Open Source</a><br>
           </td>
     </tr>
     <tr>
-        <td>2.2.8.</td>
+        <td>2.2.8</td>
         <td>26 maart 2019</td>
           <td><a href="https://devdocs.magento.com/guides/v2.2/release-notes/ReleaseNotes2.2.8EE.html">Opmerkingen bij de release van Adobe Commerce</a><br><a href="https://devdocs.magento.com/guides/v2.2/release-notes/ReleaseNotes2.2.8CE.html">Opmerkingen bij de release Magento Open Source</a><br>
           </td>
     </tr>
     <tr>
-        <td>2.2.7.</td>
+        <td>2.2.7</td>
         <td>28 november 2018</td>
           <td><a href="https://devdocs.magento.com/guides/v2.2/release-notes/ReleaseNotes2.2.7EE.html">Opmerkingen bij de release van Adobe Commerce</a><br><a href="https://devdocs.magento.com/guides/v2.2/release-notes/ReleaseNotes2.2.7CE.html">Opmerkingen bij de release Magento Open Source</a><br>
           </td>
     </tr>
     <tr>
-        <td>2.2.6.</td>
+        <td>2.2.6</td>
         <td>18 september 2018</td>
           <td><a href="https://devdocs.magento.com/guides/v2.2/release-notes/ReleaseNotes2.2.6EE.html">Opmerkingen bij de release van Adobe Commerce</a><br><a href="https://devdocs.magento.com/guides/v2.2/release-notes/ReleaseNotes2.2.6CE.html">Opmerkingen bij de release Magento Open Source</a><br>
           </td>
     </tr>
     <tr>
-        <td>2.2.5.</td>
+        <td>2.2.5</td>
         <td>27 juni 2018</td>
           <td><a href="https://devdocs.magento.com/guides/v2.2/release-notes/ReleaseNotes2.2.5EE.html">Opmerkingen bij de release van Adobe Commerce</a><br><a href="https://devdocs.magento.com/guides/v2.2/release-notes/ReleaseNotes2.2.5CE.html">Opmerkingen bij de release Magento Open Source</a><br>
           </td>
     </tr>
     <tr>
-        <td>2.2.4.</td>
+        <td>2.2.4</td>
         <td>2 mei 2018</td>
           <td><a href="https://devdocs.magento.com/guides/v2.2/release-notes/ReleaseNotes2.2.4EE.html">Opmerkingen bij de release van Adobe Commerce</a><br><a href="https://devdocs.magento.com/guides/v2.2/release-notes/ReleaseNotes2.2.4CE.html">Opmerkingen bij de release Magento Open Source</a><br>
           </td>
     </tr>
     <tr>
-        <td>2.2.3.</td>
+        <td>2.2.3</td>
         <td>27 februari 2018</td>
           <td><a href="https://devdocs.magento.com/guides/v2.2/release-notes/ReleaseNotes2.2.3EE.html">Opmerkingen bij de release van Adobe Commerce</a><br><a href="https://devdocs.magento.com/guides/v2.2/release-notes/ReleaseNotes2.2.3CE.html">Opmerkingen bij de release Magento Open Source</a><br>
           </td>
     </tr>
     <tr>
-        <td>2.2.2.</td>
+        <td>2.2.2</td>
         <td>12 december 2017</td>
           <td><a href="https://devdocs.magento.com/guides/v2.2/release-notes/ReleaseNotes2.2.2EE.html">Opmerkingen bij de release van Adobe Commerce</a><br><a href="https://devdocs.magento.com/guides/v2.2/release-notes/ReleaseNotes2.2.2CE.html">Opmerkingen bij de release Magento Open Source</a><br>
           </td>
     </tr>
     <tr>
-        <td>2.2.1.</td>
+        <td>2.2.1</td>
         <td>7 november 2017</td>
           <td><a href="https://devdocs.magento.com/guides/v2.2/release-notes/ReleaseNotes2.2.1EE.html">Opmerkingen bij de release van Adobe Commerce</a><br><a href="https://devdocs.magento.com/guides/v2.2/release-notes/ReleaseNotes2.2.1CE.html">Opmerkingen bij de release Magento Open Source</a><br>
           </td>
     </tr>
     <tr>
-        <td>2.2.0.</td>
+        <td>2.2.0</td>
         <td>26 september 2017</td>
           <td><a href="https://devdocs.magento.com/guides/v2.2/release-notes/ReleaseNotes2.2.0EE.html">Opmerkingen bij de release van Adobe Commerce</a><br><a href="https://devdocs.magento.com/guides/v2.2/release-notes/ReleaseNotes2.2.0CE.html">Opmerkingen bij de release Magento Open Source</a><br>
           </td>
@@ -343,7 +343,7 @@ De ondersteuning voor de releaselijn 2.2 liep af op 1 december 2019.
   </tbody>
 </table>
 
-## 2,1
+## 2.1
 
 De ondersteuning voor de releaselijn 2.1 liep af op 30 juni 2019.
 
@@ -356,85 +356,85 @@ De ondersteuning voor de releaselijn 2.1 liep af op 30 juni 2019.
   </thead>
   <tbody>
     <tr>
-        <td>2.1.18.</td>
+        <td>2.1.18</td>
         <td>25 juni 2019</td>
     </tr>
     <tr>
-        <td>2.1.17.</td>
+        <td>2.1.17</td>
         <td>26 maart 2019</td>
     </tr>
     <tr>
-        <td>2.1.16.</td>
+        <td>2.1.16</td>
         <td>28 november 2018</td>
     </tr>
     <tr>
-        <td>2.1.15.</td>
+        <td>2.1.15</td>
         <td>18 september 2018</td>
     </tr>
     <tr>
-        <td>2.1.14.</td>
+        <td>2.1.14</td>
         <td>27 juni 2018</td>
     </tr>
     <tr>
-        <td>2.1.13.</td>
+        <td>2.1.13</td>
         <td>2 mei 2018</td>
     </tr>
     <tr>
-        <td>2.1.12.</td>
+        <td>2.1.12</td>
         <td>27 februari 2018</td>
     </tr>
     <tr>
-        <td>2.1.11.</td>
+        <td>2.1.11</td>
         <td>12 december 2017</td>
     </tr>
     <tr>
-        <td>2.1.10.</td>
+        <td>2.1.10</td>
         <td>7 november 2017</td>
     </tr>
     <tr>
-        <td>2.1.9.</td>
+        <td>2.1.9</td>
         <td>14 september 2017</td>
     </tr>
     <tr>
-        <td>2.1.8.</td>
+        <td>2.1.8</td>
         <td>9 augustus 2017</td>
     </tr>
     <tr>
-        <td>2.1.7.</td>
+        <td>2.1.7</td>
         <td>31 mei 2017</td>
     </tr>
     <tr>
-        <td>2.1.6.</td>
+        <td>2.1.6</td>
         <td>11 april 2017</td>
     </tr>
     <tr>
-        <td>2.1.5.</td>
+        <td>2.1.5</td>
         <td>21 februari 2017</td>
     </tr>
     <tr>
-        <td>2.1.4.</td>
+        <td>2.1.4</td>
         <td>7 februari 2017</td>
     </tr>
     <tr>
-        <td>2.1.3.</td>
+        <td>2.1.3</td>
         <td>14 december 2016</td>
     </tr>
     <tr>
-        <td>2.1.2.</td>
+        <td>2.1.2</td>
         <td>12 oktober 2016</td>
     </tr>
     <tr>
-        <td>2.1.1.</td>
+        <td>2.1.1</td>
         <td>30 augustus 2016</td>
     </tr>
     <tr>
-        <td>2.1.0.</td>
+        <td>2.1.0</td>
         <td>23 juni 2016</td>
     </tr><!-- patch_releases -->
   </tbody>
 </table>
 
-## 2,0
+## 2.0
 
 De ondersteuning voor de releaselijn 2.0 liep af op 31 maart 2018.
 
@@ -447,79 +447,79 @@ De ondersteuning voor de releaselijn 2.0 liep af op 31 maart 2018.
   </thead>
   <tbody>
     <tr>
-        <td>2.0.18.</td>
+        <td>2.0.18</td>
         <td>27 februari 2018</td>
     </tr>
     <tr>
-        <td>2.0.17.</td>
+        <td>2.0.17</td>
         <td>7 november 2017</td>
     </tr>
     <tr>
-        <td>2.0.16.</td>
+        <td>2.0.16</td>
         <td>14 september 2017</td>
     </tr>
     <tr>
-        <td>2.0.15.</td>
+        <td>2.0.15</td>
         <td>21 juni 2017</td>
     </tr>
     <tr>
-        <td>2.0.14.</td>
+        <td>2.0.14</td>
         <td>31 mei 2017</td>
     </tr>
     <tr>
-        <td>2.0.13.</td>
+        <td>2.0.13</td>
         <td>21 februari 2017</td>
     </tr>
     <tr>
-        <td>2.0.12.</td>
+        <td>2.0.12</td>
         <td>7 februari 2017</td>
     </tr>
     <tr>
-        <td>2.0.11.</td>
+        <td>2.0.11</td>
         <td>14 december 2016</td>
     </tr>
     <tr>
-        <td>2.0.10.</td>
+        <td>2.0.10</td>
         <td>12 oktober 2016</td>
     </tr>
     <tr>
-        <td>2.0.9.</td>
+        <td>2.0.9</td>
         <td>10 augustus 2016</td>
     </tr>
     <tr>
-        <td>2.0.8.</td>
+        <td>2.0.8</td>
         <td>19 juli 2016</td>
     </tr>
     <tr>
-        <td>2.0.7.</td>
+        <td>2.0.7</td>
         <td>24 mei 2016</td>
     </tr>
     <tr>
-        <td>2.0.6.</td>
+        <td>2.0.6</td>
         <td>17 mei 2016</td>
     </tr>
     <tr>
-        <td>2.0.5.</td>
+        <td>2.0.5</td>
         <td>28 april 2016</td>
     </tr>
     <tr>
-        <td>2.0.4.</td>
+        <td>2.0.4</td>
         <td>31 maart 2016</td>
     </tr>
     <tr>
-        <td>2.0.3.</td>
+        <td>2.0.3</td>
         <td>30 maart 2016</td>
     </tr>
     <tr>
-        <td>2.0.2.</td>
+        <td>2.0.2</td>
         <td>28 januari 2016</td>
     </tr>
     <tr>
-        <td>2.0.1.</td>
+        <td>2.0.1</td>
         <td>20 januari 2016</td>
     </tr>
     <tr>
-        <td>2.0.0.</td>
+        <td>2.0.0</td>
         <td>17 november 2015</td>
     </tr><!-- patch_releases -->
   </tbody>
