@@ -2,9 +2,9 @@
 keywords: Adobe Commerce;home;populaire onderwerpen
 title: Home
 description: Blader door een index van de Adobe Commerce-documentatie van het operationele product.
-source-git-commit: f66183c3dc01e0f8c049edf767cd6c74aae1a1cf
+source-git-commit: a1e74edb232b818dea9a2723bf506fac49acbd9f
 workflow-type: tm+mt
-source-wordcount: '164'
+source-wordcount: '109'
 ht-degree: 0%
 
 ---
@@ -119,12 +119,4 @@ Krijg praktische informatie over concepten, processen, hulpmiddelen, en beste pr
 </tr>
 </table>
 
-## Nieuwe functies
-
-Meer informatie over nieuwe documentatie en belangrijke updates voor bestaande documentatie.
-
-| Wijzigen | Type |
-|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|---------|
-| Een nieuw onderwerp toegevoegd waarin alles wordt beschreven [berichtwachtrij voor consumenten](../configuration/queues/consumers.md). | Nieuw |
-| Toegevoegd [instructies](../implementation-playbook/best-practices/maintenance/commerce-235-upgrade-prerequisites-mariadb.md) voor het converteren van de opslagindeling van databasetabellen voor Adobe Commerce op cloudinfrastructuur Pro-projecten. | Bijgewerkt |
-| Toegevoegd [instructies](../configuration/remote-storage/cloud-support.md) voor het inschakelen van externe opslag voor Adobe Commerce op cloud-infrastructuurprojecten. | Bijgewerkt |
+{{$include /help/_includes/templated/whats-new.md}}

@@ -1,7 +1,7 @@
 ---
-source-git-commit: 0de0d58da491b3fac449c16a6a7328bbaffbcd38
+source-git-commit: b990a133f69191e8164ef1da16238938cd535183
 workflow-type: tm+mt
-source-wordcount: '560'
+source-wordcount: '559'
 ht-degree: 13%
 
 ---
@@ -121,7 +121,7 @@ De ondersteuning voor de releaselijn 2.4.0-2.4.3 is afgelopen op 28 november 202
     <tr>
         <td>2.4.3</td>
         <td>10 augustus 2021</td>
-          <td><a href="https://experienceleague.adobe.com/docs/commerce-operations/release/notes/security-patches/commerce-2-4-3.html">Opmerkingen bij de release van Adobe Commerce</a><br>
+          <td><a href="https://experienceleague.adobe.com/docs/commerce-operations/release/notes/adobe-commerce/2-4-3.html">Opmerkingen bij de release van Adobe Commerce</a><br>
           </td>
     </tr>
     <tr>
