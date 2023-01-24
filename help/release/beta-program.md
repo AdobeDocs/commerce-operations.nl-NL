@@ -1,9 +1,9 @@
 ---
 title: Bètaprogramma
 description: Meer informatie over het bètaprogramma van Adobe Commerce en hoe u kunt deelnemen.
-source-git-commit: 79f36e3728e6bc436e8093bd4051143a48e681d6
+source-git-commit: b92053ae4b5454a686d314bdbbad97a212082046
 workflow-type: tm+mt
-source-wordcount: '534'
+source-wordcount: '574'
 ht-degree: 0%
 
 ---
@@ -13,8 +13,11 @@ ht-degree: 0%
 
 Welkom bij het Adobe Commerce Beta-programma en dank u voor uw interesse in deelname.
 
-Dit programma is beschikbaar voor alle Adobe Commerce-partners en -klanten.
-Als u zich wilt aanmelden voor het bètaprogramma, leest u de onderstaande stappen en volgt u deze.
+Dit programma is beschikbaar voor alle Adobe Commerce-partners en -klanten. Als u zich wilt aanmelden voor het bètaprogramma, leest u de onderstaande stappen en volgt u deze.
+
+>[!IMPORTANT]
+>
+>Adobe Commerce 2.4.6 is de laatste release die door dit programma wordt ondersteund. Vanaf juni 2023 zal Adobe openbare weddenschappen voor Adobe Commerce en Magento Open Source publiceren. Zie de [releaseplanning](schedule.md) voor een lijst van openbare bètareleasedatums.
 
 ## Waarom deelnemen
 

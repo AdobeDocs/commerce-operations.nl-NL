@@ -1,9 +1,9 @@
 ---
 title: Releasebeleid
 description: Leer meer over de verschillende typen Adobe Commerce-releases, zoals kleine patches, beveiligingspatches, functies, hotfix, afzonderlijke patches en aangepaste patches.
-source-git-commit: f9bbfb86d2197ee7252602edba455ebcae5a2b18
+source-git-commit: 1705e930b7ab0176722c4f911dd06f448f992373
 workflow-type: tm+mt
-source-wordcount: '951'
+source-wordcount: '818'
 ht-degree: 0%
 
 ---
@@ -15,10 +15,11 @@ Adobe Commerce en Magento Open Source gebruiken [semantische versie](https://sem
 
 - **MAJOR release**—2
 - **MINOR release**—2,4
-- **PATCH release**—2.4.1
-   - **VEILIGHEIDSpatchrelease**—2.4.1-p1
+- **PATCH release**—2.4.5
+   - **VEILIGHEIDSpatchrelease**—2.4.5-p1
       - Beveiligingsfout verhelpen
       - Verbeterde beveiliging
+- **BÈTA-patchrelease**—2.4.7-bèta1
 - **Functierelease**
 - **Hotfix**
 - **Individuele patch**
@@ -43,43 +44,23 @@ De volgende richtlijnen zijn van toepassing op patchreleases:
 - Wijzigingen die extensies of compatibiliteit met code kunnen onderbreken, worden vermeden. Code die is geschreven voor versie 2.2.0 werkt bijvoorbeeld nog steeds op versie 2.2.7.
 - Bij wijze van uitzondering kunnen verbreken van wijzigingen of extra patches of hotfixes worden vrijgegeven om beveiligings- of nalevingsproblemen en kwaliteitsproblemen met een hoog effect aan te pakken. Op moduleniveau zijn dit meestal veranderingen op PATCH-niveau; soms kleine wijzigingen.
 
-## VEILIGHEIDSpatchrelease
+### VEILIGHEIDSpatchrelease
 
 **Opgeloste beveiligingsproblemen**: Een wijziging in de softwarecode die een geïdentificeerd beveiligingsprobleem verhelpt en verwachte resultaten oplevert in een betrokken productgebied. Deze correcties zijn over het algemeen compatibel met oudere versies.
 
 **Verbeterde beveiliging**: Een softwareverbetering of configuratieverandering om de veiligheid binnen de toepassing proactief te verbeteren. Deze beveiligingsverbeteringen helpen beveiligingsrisico&#39;s aan te pakken die van invloed zijn op de beveiligingspositie van de Adobe Commerce-toepassing, maar die mogelijk niet compatibel zijn met oudere versies.
 
-Met beveiligingspatchreleases kunt u uw site veiliger houden zonder aanvullende kwaliteitsoplossingen en -verbeteringen toe te passen die zijn opgenomen in een volledige driemaandelijkse patchrelease. Beveiligingspatchreleases worden toegevoegd met &#39;-pN&#39;, waarbij N de incrementele patchversie is die begint met 1 (bijvoorbeeld 2.3.5-p1). Beveiligingspatchreleases kunnen ook hotfixes bevatten die vereist zijn om kritieke problemen die de Adobe Commerce-toepassing beïnvloeden, aan te pakken.
+Met beveiligingspatchreleases kunt u uw site veiliger houden zonder aanvullende kwaliteitsoplossingen en -verbeteringen toe te passen die deel uitmaken van een volledige patchrelease. Beveiligingspatchreleases worden toegevoegd met &#39;-pN&#39;, waarbij N de incrementele patchversie is die begint met 1 (bijvoorbeeld 2.3.5-p1). Beveiligingspatchreleases kunnen ook hotfixes bevatten die vereist zijn om kritieke problemen die de Adobe Commerce-toepassing beïnvloeden, aan te pakken.
 
 Elke beveiligingspatchrelease is gebaseerd op de vorige volledige patchrelease. Het bevat kwaliteits- en beveiligingsoplossingen van eerdere patchreleases en beveiligingsoplossingen die zijn gemaakt tussen de vorige volledige patchrelease en de beveiligingspatchrelease.
 
-Met de aankondiging van onze [nieuwe releasestrategie en bijgewerkt levenscyclusbeleid](https://business.adobe.com/blog/how-to/accelerating-innovation-through-simplified-release-strategy) (16-09-2021), worden onze beveiligingspatchreleases gedifferentieerd op basis van de vraag of ze van toepassing zijn op de meest recente ondersteunde secundaire release of een onderdeel van een eerder gemaakte, minder belangrijke release met nog steeds ondersteuning:
+Voor instructies over het downloaden en toepassen van beveiligingspatches raadpleegt u [Snelle start met installeren](../installation/composer.md#example---security-patch).
 
-- **Beveiligingspatchreleases voor de meest recente ondersteunde secundaire release**:
+## BÈTA-patchrelease
 
-   - De beveiligingspatchrelease voor de meest recente ondersteunde secundaire release (momenteel Adobe Commerce 2.4) bevat:
+De pre-algemene beschikbaarheidsversies van de eigenschappen van Adobe Commerce worden openbaar gemaakt aan alle klanten van Adobe Commerce en Adobe partners. Het staat extra tijd voor Algemene Beschikbaarheid toe om code en beïnvloede componenten te herzien.
 
-      - Beveiligingsproblemen zijn opgelost die zijn gemaakt sinds de vorige volledige patchrelease.
-
-      - Deze beveiligingspatchreleases kunnen ook hotfixes bevatten die nodig zijn om kritieke problemen op te lossen die de Adobe Commerce-toepassing kunnen beïnvloeden.
-   - De beveiligingspatchrelease voor de meest recente ondersteunde secundaire release (momenteel Adobe Commerce 2.4) bevat doorgaans geen beveiligingsverbeteringen. In plaats daarvan worden deze meegeleverd in de volledige patchrelease voor de meest recente ondersteunde secundaire release.
-
-
-- **Beveiligingspatchreleases voor ondersteunde eerdere secundaire releases**:
-
-   - De beveiligingspatchrelease voor een vorige secundaire release die nog wordt ondersteund (momenteel Adobe Commerce 2.3) bevat:
-
-      - Beveiligingsproblemen verhelpen die zijn gemaakt sinds de vorige patch- of beveiligingspatchrelease en nieuwe beveiligingsverbeteringen.
-
-      - Deze beveiligingspatchreleases kunnen ook hotfixes bevatten die nodig zijn om kritieke problemen op te lossen die van invloed zijn op de Adobe Commerce-toepassing.
-
-      |  | Beveiligingsfout | Verbeterde beveiliging |
-      |--------------------------------------------------------------------------------|--------------|----------------------|
-      | Beveiligingspatchreleases voor de meest recente ondersteunde secundaire release (momenteel 2.4) | X |  |
-      | Beveiligingspatchreleases voor vorige, ondersteunde secundaire releases (momenteel 2.3) | X | X |
-
-
-Voor algemene informatie over veiligheidsversies, zie [Introductie van de nieuwe beveiligings-enige Versie van de Reparatie](https://community.magento.com:443/t5/Magento-DevBlog/Introducing-the-New-Security-Patch-Release/ba-p/141287). Voor instructies over het downloaden en toepassen van beveiligingspatches raadpleegt u [Snelle start met installeren](../installation/composer.md).
+Bètareleases kunnen defecten bevatten en worden geleverd als &quot;AS IS&quot; zonder enige garantie. Adobe is niet verplicht om de bètareleases te onderhouden, te corrigeren, bij te werken, te wijzigen, te wijzigen of anderszins te ondersteunen (via Adobe Support Services of anderszins). Klanten wordt aangeraden voorzichtig te zijn en op geen enkele wijze te vertrouwen op de correcte werking of prestaties van de bètareleases en/of begeleidende documentatie of materialen. Daarom is elk gebruik van de bètareleases volledig op eigen risico van de klant.
 
 ## Functierelease
 
@@ -107,7 +88,6 @@ Gemaakt door niet-Adobe-personeel om een probleem op te lossen of om verschillen
 
 ## Verwante onderwerpen
 
-- [Planning en budgettering voor upgradecycli voor handel](https://magento.com/sites/default/files8/2019-08/Magento-Release-Cycle-Infosheet_Aug_2019.pdf)
 - [Versioning](https://developer.adobe.com/commerce/php/development/versioning/)
 - [Volgende releases](schedule.md)
 - [Levenscyclusbeleid software](https://www.adobe.com/content/dam/cc/en/legal/terms/enterprise/pdfs/Adobe-Commerce-Software-Lifecycle-Policy.pdf)
