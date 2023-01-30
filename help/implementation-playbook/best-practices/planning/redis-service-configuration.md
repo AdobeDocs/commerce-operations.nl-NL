@@ -4,9 +4,9 @@ description: Leer hoe u de prestaties van caching kunt verbeteren door de uitgeb
 role: Developer, Admin
 feature-set: Commerce
 feature: Best Practices
-source-git-commit: 85f9355d0e8c704be3760334b07414d3e15b3b97
+source-git-commit: 12de523cc7ea1486c894d54efe6944d92d87ded0
 workflow-type: tm+mt
-source-wordcount: '328'
+source-wordcount: '380'
 ht-degree: 0%
 
 ---
@@ -51,6 +51,11 @@ Zie voor meer informatie [Variabelen implementeren > `REDIS_BACKEND`](https://de
 >[!NOTE]
 >
 > Gebruik de opdrachtregel om de versie van de bureaubladgereedschappen die in uw lokale cloud-omgeving is geïnstalleerd, te controleren met de `composer show magento/ece-tools` gebruiken. Indien nodig [update the ece tools version](https://devdocs.magento.com/cloud/project/ece-tools-update.html).
+
+>[!WARNING]
+>
+>Do _niet_ Een Redis-slave-verbinding configureren voor infrastructuurprojecten in de cloud met een [geschaalde architectuur](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/architecture/scaled-architecture.html). Dit veroorzaakt Redis verbindingsfouten. Zie [de Redis-configuratiehandleiding](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure/env/stage/variables-deploy.html#redis_use_slave_connection) in de _Handel in Cloud-infrastructuur_ hulplijn.
+
 
 ### Configuratie voor implementaties op locatie
 
