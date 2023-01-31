@@ -1,7 +1,7 @@
 ---
 title: Externe opslag voor handel in cloudinfrastructuur
 description: Zie de richtlijnen voor het instellen van externe opslag voor Adobe Commerce op cloudinfrastructuur.
-source-git-commit: 2080950852e3c4e6da556733e56f68e0e8005530
+source-git-commit: 4c89ef65ffb559ad4ad3f3fc45bd73079fbacd1b
 workflow-type: tm+mt
 source-wordcount: '630'
 ht-degree: 0%
@@ -78,7 +78,7 @@ Alternatief, kunt u de Interface van het Web van het Project gebruiken om de var
 
 1. Klikken **Variabele toevoegen**.
 
-1. In de _Naam_ veld, Enter `env:REMOTE_STORAGE`
+1. In de _Naam_ veld, Enter `REMOTE_STORAGE`
 
 1. In de _Waarde_ in het veld, voegt u de JSON-configuratie toe.
 
