@@ -1,10 +1,10 @@
 ---
 title: Implementatie van één computer
 description: Leer hoe te om updates aan Handel op een productieserver op te stellen gebruikend de bevellijn.
-source-git-commit: d263e412022a89255b7d33b267b696a8bb1bc8a2
+source-git-commit: 2e1a06b59fda7db4a9b32d000e1b2a3ca88926d3
 workflow-type: tm+mt
 source-wordcount: '186'
-ht-degree: 1%
+ht-degree: 0%
 
 ---
 
@@ -14,7 +14,7 @@ Dit onderwerp verstrekt instructies voor het opstellen van updates aan Handel op
 
 ## Aannames
 
-- U hebt Commerce geïnstalleerd met [Composer].
+- U hebt Commerce geïnstalleerd met [Composer](../../installation/composer.md).
 - U past rechtstreeks updates toe op de server.
 
 >[!WARNING]
@@ -24,7 +24,7 @@ Dit onderwerp verstrekt instructies voor het opstellen van updates aan Handel op
 
 ## Implementatiestappen
 
-1. Meld u aan bij uw productieserver als of schakel over naar de [eigenaar van bestandssysteem][file-owner].
+1. Meld u aan bij uw productieserver als of schakel over naar de [eigenaar van bestandssysteem](../../installation/prerequisites/file-system/overview.md).
 
 1. Map wijzigen in de basismap Commerce:
 
@@ -92,5 +92,3 @@ Dit onderwerp verstrekt instructies voor het opstellen van updates aan Handel op
 <!-- link definitions -->
 
 [install]: https://developer.adobe.com/commerce/contributor/guides/install/update-dependencies/
-[composer]: ../../installation/composer.md
-[file-owner]: ../../installation/prerequisites/file-system/overview.md

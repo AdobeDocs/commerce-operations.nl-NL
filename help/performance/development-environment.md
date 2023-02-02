@@ -1,9 +1,9 @@
 ---
 title: Ontwikkelingsomgeving Recommendations
 description: Meer informatie over prestatieaanbevelingen voor het instellen van uw lokale Adobe Commerce- of Magento Open Source-ontwikkelomgeving.
-source-git-commit: d263e412022a89255b7d33b267b696a8bb1bc8a2
+source-git-commit: 2e1a06b59fda7db4a9b32d000e1b2a3ca88926d3
 workflow-type: tm+mt
-source-wordcount: '241'
+source-wordcount: '235'
 ht-degree: 0%
 
 ---
@@ -15,9 +15,9 @@ Deze pagina verstrekt aanbevelingen voor de ontwikkelomgevingen van de Handel.
 
 ## De cache verwijderen in plaats van uitschakelen
 
-Vele ontwikkelaars neigen om alle geheime voorgeheugens op hun ontwikkelaarinstanties onbruikbaar te maken. We raden u alleen aan caches te reinigen zonder alle caches uit te schakelen. [!DNL Commerce] efficiënter werkt wanneer u [schoonmaken] in plaats van ze volledig uit te schakelen. De meeste typen caches worden zelden ongeldig gemaakt tijdens de ontwikkeling.
+Vele ontwikkelaars neigen om alle geheime voorgeheugens op hun ontwikkelaarinstanties onbruikbaar te maken. We raden u alleen aan caches te reinigen zonder alle caches uit te schakelen. [!DNL Commerce] efficiënter werkt wanneer u [schoonmaken](../configuration/cli/manage-cache.md#clean-and-flush-cache-types) in plaats van ze volledig uit te schakelen. De meeste typen caches worden zelden ongeldig gemaakt tijdens de ontwikkeling.
 
-Als u [caches uitschakelen], adviseren wij slechts het onbruikbaar maken van de geheime voorgeheugens van de Pagina en van het Blok in ontwikkelingsinstanties. Vergeet niet alle caches tijdens het testen in te schakelen.
+Als u [caches uitschakelen](../configuration/cli/manage-cache.md#enable-or-disable-cache-types), adviseren wij slechts het onbruikbaar maken van de geheime voorgeheugens van de Pagina en van het Blok in ontwikkelingsinstanties. Vergeet niet alle caches tijdens het testen in te schakelen.
 
 ## Opdrachten om te voorkomen in de ontwikkelingsmodus
 
@@ -44,8 +44,3 @@ In de ontwikkelingswijze, stel geen bevelen voor compilatie, codegeneratie en st
 ## Normale laadtijd van pagina&#39;s op een virtuele computer
 
 Als u zich op een VM ontwikkelt en het langer dan 2 seconden duurt om een Magento-pagina te laden, herzie uw omgevingsinstellingen.
-
-<!-- Link definitions -->
-
-[schoonmaken]: ../configuration/cli/manage-cache.md#clean-and-flush-cache-types
-[caches uitschakelen]: ../configuration/cli/manage-cache.md#enable-or-disable-cache-types

@@ -1,9 +1,9 @@
 ---
 title: Een plan voor gegevensmigratie maken
 description: Voer de volgende stappen uit om een plan voor gegevensmigratie te maken om een geslaagde upgrade van Magento 1 naar Magento 2 te garanderen.
-source-git-commit: d263e412022a89255b7d33b267b696a8bb1bc8a2
+source-git-commit: 2e1a06b59fda7db4a9b32d000e1b2a3ca88926d3
 workflow-type: tm+mt
-source-wordcount: '902'
+source-wordcount: '900'
 ht-degree: 0%
 
 ---
@@ -31,7 +31,7 @@ Migratie is een ideaal moment om serieuze wijzigingen aan te brengen en uw site 
 
 * Opstelling een Magento 2 hardwaresysteem gebruikend topologie en ontwerp dat minstens uw bestaand Magento 1 systeem aanpast
 
-* Installeer Magento 2.x (met alle modules van deze versie) en [!DNL Data Migration Tool] op een systeem dat voldoet aan de [Magento-systeemvereisten]
+* Installeer Magento 2.x (met alle modules van deze versie) en [!DNL Data Migration Tool] op een systeem dat voldoet aan de [systeemvereisten](../../installation/system-requirements.md)
 
 * Aangepaste aanpassingen aanbrengen in de [!DNL Data Migration Tool] code voor het geval dat u bepaalde gegevens niet hoeft te migreren (zoals CMS-pagina&#39;s, Verkoopregels) of dat u de Magento-aanpassing tijdens de migratie wilt converteren. Lees de [!DNL Data Migration Tool]s [Technische specificaties](technical-specification.md) om beter te begrijpen hoe migratie van binnenuit werkt
 
@@ -73,7 +73,7 @@ Voer bij dergelijke migratietests de volgende stappen uit:
 
    Als bepaalde extensies gegevens bevatten die u wilt migreren, moet u deze extensies mogelijk installeren, aangepast voor Magento 2. Als de extensies een andere structuur hebben in de Magento 2-database, gebruikt u de toewijzingsbestanden die bij de [!DNL Data Migration Tool].
 
-1. Alle Magento 2.x-indexen opnieuw indexeren. Zie voor meer informatie de [Configuratiegids].
+1. Alle Magento 2.x-indexen opnieuw indexeren. Zie voor meer informatie de [Indexeerders beheren](../../configuration/cli/manage-indexers.md) in de _Configuratiegids_.
 
 ## Stap 5: Wijzigingen aanbrengen in de gemigreerde gegevens (indien nodig)
 
@@ -116,6 +116,5 @@ Nu uw Magento 2-site up-to-date is met Magento 1 en naar behoren functioneert, k
 1. De Magento 2-winkel is nu gebruiksklaar. U en uw klanten kunnen alle activiteiten hervatten.
 
 <!-- LINK ADDRESSES -->
-[Magento-systeemvereisten]: ../../installation/system-requirements.md
+
 [Commerce Marketplace]: https://marketplace.magento.com
-[Configuratiegids]: ../../configuration/cli/manage-indexers.md
