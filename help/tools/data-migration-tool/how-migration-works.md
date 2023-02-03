@@ -1,9 +1,9 @@
 ---
 title: Hoe werkt gegevensmigratie?
 description: Leer over het proces van de gegevensmigratie tussen Magento 1 en Magento 2, met inbegrip van terminologie, werkschemadiagrammen, en stappen.
-source-git-commit: 2e1a06b59fda7db4a9b32d000e1b2a3ca88926d3
+source-git-commit: be2f924728853236bba786e7611b2a368c9f3054
 workflow-type: tm+mt
-source-wordcount: '783'
+source-wordcount: '782'
 ht-degree: 0%
 
 ---
@@ -62,7 +62,7 @@ Toewijzingsbestanden worden nader besproken in [[!DNL Data Migration Tool] Techn
 
 ![Migratiestroom](../../assets/data-migration/migration_flow.png)
 
-[[!DNL Data Migration Tool] Technische specificatie]: technische specificatie.md
+[[!DNL Data Migration Tool] Technische specificaties](technical-specification.md)
 
 We zijn blij dat je overweegt van &#39;s werelds #1 handelsplatform - Magento 1.x - over te stappen op het platform van de toekomst, Magento 2. We zijn blij dat we de details van dit proces, dat we migratie noemen, kunnen delen.
 
