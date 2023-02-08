@@ -1,7 +1,7 @@
 ---
-source-git-commit: a0b8a6131d9bccb819c846c873d2044da4009989
+source-git-commit: e7c10f28e241e47af8722fd41da0a9e86709b871
 workflow-type: tm+mt
-source-wordcount: '293'
+source-wordcount: '0'
 ht-degree: 0%
 
 ---
@@ -11,9 +11,69 @@ ht-degree: 0%
 
 Meer informatie over nieuwe documentatie en belangrijke updates voor bestaande documentatie.
 
+### 27 januari 2023
+
+<table style="table-layout:auto;">
+  <thead>
+    <tr>
+      <th>Beschrijving</th>
+      <th>Type</th>
+      <th>Bron</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><p>Gepubliceerd <a href="https://experienceleague.adobe.com/docs/commerce-operations/tools/quality-patches-tool/release-notes.html">releaseopmerkingen</a> voor de pakketrelease van het 1.1.26 Quality Patches Tool (QPT).</p>
+</td>
+      <td>belangrijke update</td>
+      <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/08210f356354d20adf7360d18e2ddba9fe9a565a">08210f</a> (toewijzen)</td>
+    </tr>
+  </tbody>
+</table>
+
+### 24 januari 2023
+
+<table style="table-layout:auto;">
+  <thead>
+    <tr>
+      <th>Beschrijving</th>
+      <th>Type</th>
+      <th>Bron</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><p>De <a href="https://experienceleague.adobe.com/docs/commerce-operations/release/planning/schedule.html">releaseplanning</a> en <a href="https://experienceleague.adobe.com/docs/commerce-operations/release/planning/lifecycle-policy.html">beleid van de softwarelevenscyclus</a> onderwerpen voor 2023.</p>
+</td>
+      <td>belangrijke update</td>
+      <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/979a6d481021eb26121e79974b2ce6e9280d51c3">979a6d</a> (toewijzen)</td>
+    </tr>
+  </tbody>
+</table>
+
+### 23 januari 2023
+
+<table style="table-layout:auto;">
+  <thead>
+    <tr>
+      <th>Beschrijving</th>
+      <th>Type</th>
+      <th>Bron</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><p>Opmerkingen bij de release toegevoegd voor Adobe Commerce 2.4.6 bèta 2. Zie <a href="https://experienceleague.adobe.com/docs/commerce-operations/release/notes/adobe-commerce/2-4-6.html">Opmerkingen bij de release Adobe Commerce 2.4.6</a>.</p>
+</td>
+      <td>belangrijke update</td>
+      <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/af347fea185d2a3c02180216feb2fd13f5868081">af347f</a> (toewijzen)</td>
+    </tr>
+  </tbody>
+</table>
+
 ### 19 januari 2023
 
-<table>
+<table style="table-layout:auto;">
   <thead>
     <tr>
       <th>Beschrijving</th>
@@ -33,7 +93,7 @@ Meer informatie over nieuwe documentatie en belangrijke updates voor bestaande d
 
 ### 10 januari 2023
 
-<table>
+<table style="table-layout:auto;">
   <thead>
     <tr>
       <th>Beschrijving</th>
@@ -53,7 +113,7 @@ Meer informatie over nieuwe documentatie en belangrijke updates voor bestaande d
 
 ### 9 januari 2023
 
-<table>
+<table style="table-layout:auto;">
   <thead>
     <tr>
       <th>Beschrijving</th>
@@ -73,7 +133,7 @@ Meer informatie over nieuwe documentatie en belangrijke updates voor bestaande d
 
 ### 20 december 2022
 
-<table>
+<table style="table-layout:auto;">
   <thead>
     <tr>
       <th>Beschrijving</th>
@@ -93,7 +153,7 @@ Meer informatie over nieuwe documentatie en belangrijke updates voor bestaande d
 
 ### 16 december 2022
 
-<table>
+<table style="table-layout:auto;">
   <thead>
     <tr>
       <th>Beschrijving</th>
@@ -113,7 +173,7 @@ Meer informatie over nieuwe documentatie en belangrijke updates voor bestaande d
 
 ### 2 december 2022
 
-<table>
+<table style="table-layout:auto;">
   <thead>
     <tr>
       <th>Beschrijving</th>
@@ -133,7 +193,7 @@ Meer informatie over nieuwe documentatie en belangrijke updates voor bestaande d
 
 ### 1 december 2022
 
-<table>
+<table style="table-layout:auto;">
   <thead>
     <tr>
       <th>Beschrijving</th>
