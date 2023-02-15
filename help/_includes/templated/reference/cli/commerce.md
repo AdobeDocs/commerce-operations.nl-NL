@@ -1,7 +1,7 @@
 ---
-source-git-commit: 23d55385046de18b238c90f6a99be692f1ce7561
+source-git-commit: 27e7a262fd1d8092045f5ebe2f88caaec37a6b0d
 workflow-type: tm+mt
-source-wordcount: '19853'
+source-wordcount: '29783'
 ht-degree: 0%
 
 ---
@@ -10,9 +10,9 @@ ht-degree: 0%
 <!-- All the assigned and captured content is used in the included template -->
 
 <!-- The template to render with above values -->
-**Versie**: 1.40.0.
+**Versie**: 1.42.0.
 
-Deze verwijzing bevat 129 bevelen beschikbaar door `magento-cloud` opdrachtregelprogramma.
+Deze verwijzing bevat 134 bevelen beschikbaar door `magento-cloud` opdrachtregelprogramma.
 De eerste lijst wordt automatisch gegenereerd met de opdracht `magento-cloud list` in de editie.
 
 >[!NOTE]
@@ -83,13 +83,6 @@ Dit Help-bericht weergeven
 - Standaard: `false`
 - Accepteert geen waarde
 
-### `--quiet`, `-q`
-
-Geen bericht uitvoeren
-
-- Standaard: `false`
-- Accepteert geen waarde
-
 ### `--verbose`, `-v|-vv|-vvv`
 
 Verhoog de breedheid van berichten
@@ -106,14 +99,42 @@ Deze toepassingsversie weergeven
 
 ### `--yes`, `-y`
 
-Antwoord &quot;ja&quot; op ja/nee-vragen interactie uitschakelen
+&quot;ja&quot; antwoorden op bevestigingsvragen; accepteert de standaardwaarde voor andere vragen; interactie uitschakelen
+
+- Standaard: `false`
+- Accepteert geen waarde
+
+### `--no-interaction`
+
+Geen interactieve vragen stellen; Accepteer standaardwaarden. Gelijk aan het gebruik van de omgevingsvariabele: &lt;comment>Magento_CLOUD_CLI_NO_INTERACTION=1&lt;/comment>
+
+- Standaard: `false`
+- Accepteert geen waarde
+
+### `--ansi`
+
+ANSI-uitvoer forceren
+
+- Standaard: `false`
+- Accepteert geen waarde
+
+### `--no-ansi`
+
+ANSI-uitvoer uitschakelen
 
 - Standaard: `false`
 - Accepteert geen waarde
 
 ### `--no`, `-n`
 
-Antwoord &quot;nee&quot; op ja/nee-vragen. interactie uitschakelen
+Antwoord &quot;nee&quot; op bevestigingsvragen; accepteert de standaardwaarde voor andere vragen; interactie uitschakelen
+
+- Standaard: `false`
+- Accepteert geen waarde
+
+### `--quiet`, `-q`
+
+Geen bericht uitvoeren
 
 - Standaard: `false`
 - Accepteert geen waarde
@@ -144,13 +165,6 @@ Dit Help-bericht weergeven
 - Standaard: `false`
 - Accepteert geen waarde
 
-### `--quiet`, `-q`
-
-Geen bericht uitvoeren
-
-- Standaard: `false`
-- Accepteert geen waarde
-
 ### `--verbose`, `-v|-vv|-vvv`
 
 Verhoog de breedheid van berichten
@@ -167,14 +181,42 @@ Deze toepassingsversie weergeven
 
 ### `--yes`, `-y`
 
-Antwoord &quot;ja&quot; op ja/nee-vragen interactie uitschakelen
+&quot;ja&quot; antwoorden op bevestigingsvragen; accepteert de standaardwaarde voor andere vragen; interactie uitschakelen
+
+- Standaard: `false`
+- Accepteert geen waarde
+
+### `--no-interaction`
+
+Geen interactieve vragen stellen; Accepteer standaardwaarden. Gelijk aan het gebruik van de omgevingsvariabele: &lt;comment>Magento_CLOUD_CLI_NO_INTERACTION=1&lt;/comment>
+
+- Standaard: `false`
+- Accepteert geen waarde
+
+### `--ansi`
+
+ANSI-uitvoer forceren
+
+- Standaard: `false`
+- Accepteert geen waarde
+
+### `--no-ansi`
+
+ANSI-uitvoer uitschakelen
 
 - Standaard: `false`
 - Accepteert geen waarde
 
 ### `--no`, `-n`
 
-Antwoord &quot;nee&quot; op ja/nee-vragen. interactie uitschakelen
+Antwoord &quot;nee&quot; op bevestigingsvragen; accepteert de standaardwaarde voor andere vragen; interactie uitschakelen
+
+- Standaard: `false`
+- Accepteert geen waarde
+
+### `--quiet`, `-q`
+
+Geen bericht uitvoeren
 
 - Standaard: `false`
 - Accepteert geen waarde
@@ -208,13 +250,6 @@ Dit Help-bericht weergeven
 - Standaard: `false`
 - Accepteert geen waarde
 
-### `--quiet`, `-q`
-
-Geen bericht uitvoeren
-
-- Standaard: `false`
-- Accepteert geen waarde
-
 ### `--verbose`, `-v|-vv|-vvv`
 
 Verhoog de breedheid van berichten
@@ -231,14 +266,42 @@ Deze toepassingsversie weergeven
 
 ### `--yes`, `-y`
 
-Antwoord &quot;ja&quot; op ja/nee-vragen interactie uitschakelen
+&quot;ja&quot; antwoorden op bevestigingsvragen; accepteert de standaardwaarde voor andere vragen; interactie uitschakelen
+
+- Standaard: `false`
+- Accepteert geen waarde
+
+### `--no-interaction`
+
+Geen interactieve vragen stellen; Accepteer standaardwaarden. Gelijk aan het gebruik van de omgevingsvariabele: &lt;comment>Magento_CLOUD_CLI_NO_INTERACTION=1&lt;/comment>
+
+- Standaard: `false`
+- Accepteert geen waarde
+
+### `--ansi`
+
+ANSI-uitvoer forceren
+
+- Standaard: `false`
+- Accepteert geen waarde
+
+### `--no-ansi`
+
+ANSI-uitvoer uitschakelen
 
 - Standaard: `false`
 - Accepteert geen waarde
 
 ### `--no`, `-n`
 
-Antwoord &quot;nee&quot; op ja/nee-vragen. interactie uitschakelen
+Antwoord &quot;nee&quot; op bevestigingsvragen; accepteert de standaardwaarde voor andere vragen; interactie uitschakelen
+
+- Standaard: `false`
+- Accepteert geen waarde
+
+### `--quiet`, `-q`
+
+Geen bericht uitvoeren
 
 - Standaard: `false`
 - Accepteert geen waarde
@@ -281,13 +344,6 @@ Dit Help-bericht weergeven
 - Standaard: `false`
 - Accepteert geen waarde
 
-### `--quiet`, `-q`
-
-Geen bericht uitvoeren
-
-- Standaard: `false`
-- Accepteert geen waarde
-
 ### `--verbose`, `-v|-vv|-vvv`
 
 Verhoog de breedheid van berichten
@@ -304,14 +360,42 @@ Deze toepassingsversie weergeven
 
 ### `--yes`, `-y`
 
-Antwoord &quot;ja&quot; op ja/nee-vragen interactie uitschakelen
+&quot;ja&quot; antwoorden op bevestigingsvragen; accepteert de standaardwaarde voor andere vragen; interactie uitschakelen
+
+- Standaard: `false`
+- Accepteert geen waarde
+
+### `--no-interaction`
+
+Geen interactieve vragen stellen; Accepteer standaardwaarden. Gelijk aan het gebruik van de omgevingsvariabele: &lt;comment>Magento_CLOUD_CLI_NO_INTERACTION=1&lt;/comment>
+
+- Standaard: `false`
+- Accepteert geen waarde
+
+### `--ansi`
+
+ANSI-uitvoer forceren
+
+- Standaard: `false`
+- Accepteert geen waarde
+
+### `--no-ansi`
+
+ANSI-uitvoer uitschakelen
 
 - Standaard: `false`
 - Accepteert geen waarde
 
 ### `--no`, `-n`
 
-Antwoord &quot;nee&quot; op ja/nee-vragen. interactie uitschakelen
+Antwoord &quot;nee&quot; op bevestigingsvragen; accepteert de standaardwaarde voor andere vragen; interactie uitschakelen
+
+- Standaard: `false`
+- Accepteert geen waarde
+
+### `--quiet`, `-q`
+
+Geen bericht uitvoeren
 
 - Standaard: `false`
 - Accepteert geen waarde
@@ -322,7 +406,7 @@ Antwoord &quot;nee&quot; op ja/nee-vragen. interactie uitschakelen
 Hiermee geeft u Help voor een opdracht weer
 
 ```bash
-help [--format FORMAT] [--raw] [--] [<command_name>]
+magento-cloud help [--format FORMAT] [--raw] [--] [<command_name>]
 ```
 
 
@@ -354,13 +438,6 @@ Dit Help-bericht weergeven
 - Standaard: `false`
 - Accepteert geen waarde
 
-### `--quiet`, `-q`
-
-Geen bericht uitvoeren
-
-- Standaard: `false`
-- Accepteert geen waarde
-
 ### `--verbose`, `-v|-vv|-vvv`
 
 Verhoog de breedheid van berichten
@@ -377,14 +454,42 @@ Deze toepassingsversie weergeven
 
 ### `--yes`, `-y`
 
-Antwoord &quot;ja&quot; op ja/nee-vragen interactie uitschakelen
+&quot;ja&quot; antwoorden op bevestigingsvragen; accepteert de standaardwaarde voor andere vragen; interactie uitschakelen
+
+- Standaard: `false`
+- Accepteert geen waarde
+
+### `--no-interaction`
+
+Geen interactieve vragen stellen; Accepteer standaardwaarden. Gelijk aan het gebruik van de omgevingsvariabele: &lt;comment>Magento_CLOUD_CLI_NO_INTERACTION=1&lt;/comment>
+
+- Standaard: `false`
+- Accepteert geen waarde
+
+### `--ansi`
+
+ANSI-uitvoer forceren
+
+- Standaard: `false`
+- Accepteert geen waarde
+
+### `--no-ansi`
+
+ANSI-uitvoer uitschakelen
 
 - Standaard: `false`
 - Accepteert geen waarde
 
 ### `--no`, `-n`
 
-Antwoord &quot;nee&quot; op ja/nee-vragen. interactie uitschakelen
+Antwoord &quot;nee&quot; op bevestigingsvragen; accepteert de standaardwaarde voor andere vragen; interactie uitschakelen
+
+- Standaard: `false`
+- Accepteert geen waarde
+
+### `--quiet`, `-q`
+
+Geen bericht uitvoeren
 
 - Standaard: `false`
 - Accepteert geen waarde
@@ -412,13 +517,6 @@ Dit Help-bericht weergeven
 - Standaard: `false`
 - Accepteert geen waarde
 
-### `--quiet`, `-q`
-
-Geen bericht uitvoeren
-
-- Standaard: `false`
-- Accepteert geen waarde
-
 ### `--verbose`, `-v|-vv|-vvv`
 
 Verhoog de breedheid van berichten
@@ -435,14 +533,42 @@ Deze toepassingsversie weergeven
 
 ### `--yes`, `-y`
 
-Antwoord &quot;ja&quot; op ja/nee-vragen interactie uitschakelen
+&quot;ja&quot; antwoorden op bevestigingsvragen; accepteert de standaardwaarde voor andere vragen; interactie uitschakelen
+
+- Standaard: `false`
+- Accepteert geen waarde
+
+### `--no-interaction`
+
+Geen interactieve vragen stellen; Accepteer standaardwaarden. Gelijk aan het gebruik van de omgevingsvariabele: &lt;comment>Magento_CLOUD_CLI_NO_INTERACTION=1&lt;/comment>
+
+- Standaard: `false`
+- Accepteert geen waarde
+
+### `--ansi`
+
+ANSI-uitvoer forceren
+
+- Standaard: `false`
+- Accepteert geen waarde
+
+### `--no-ansi`
+
+ANSI-uitvoer uitschakelen
 
 - Standaard: `false`
 - Accepteert geen waarde
 
 ### `--no`, `-n`
 
-Antwoord &quot;nee&quot; op ja/nee-vragen. interactie uitschakelen
+Antwoord &quot;nee&quot; op bevestigingsvragen; accepteert de standaardwaarde voor andere vragen; interactie uitschakelen
+
+- Standaard: `false`
+- Accepteert geen waarde
+
+### `--quiet`, `-q`
+
+Geen bericht uitvoeren
 
 - Standaard: `false`
 - Accepteert geen waarde
@@ -453,9 +579,15 @@ Antwoord &quot;nee&quot; op ja/nee-vragen. interactie uitschakelen
 Lijsten, opdrachten
 
 ```bash
-list [--raw] [--format FORMAT] [--all] [--] [<namespace>]
+magento-cloud list [--raw] [--format FORMAT] [--all] [--] [<namespace>]
 ```
 
+
+### `command`
+
+De uit te voeren opdracht
+
+- Vereist
 
 ### `namespace`
 
@@ -476,13 +608,83 @@ De uitvoerindeling (txt, xml, json of md)
 - Standaard: `txt`
 - Vereist een waarde
 
+### `--all`
+
+Alle opdrachten tonen, inclusief verborgen opdrachten
+
+- Standaard: `false`
+- Accepteert geen waarde
+
+### `--help`, `-h`
+
+Dit Help-bericht weergeven
+
+- Standaard: `false`
+- Accepteert geen waarde
+
+### `--verbose`, `-v|-vv|-vvv`
+
+Verhoog de breedheid van berichten
+
+- Standaard: `false`
+- Accepteert geen waarde
+
+### `--version`, `-V`
+
+Deze toepassingsversie weergeven
+
+- Standaard: `false`
+- Accepteert geen waarde
+
+### `--yes`, `-y`
+
+&quot;ja&quot; antwoorden op bevestigingsvragen; accepteert de standaardwaarde voor andere vragen; interactie uitschakelen
+
+- Standaard: `false`
+- Accepteert geen waarde
+
+### `--no-interaction`
+
+Geen interactieve vragen stellen; Accepteer standaardwaarden. Gelijk aan het gebruik van de omgevingsvariabele: &lt;comment>Magento_CLOUD_CLI_NO_INTERACTION=1&lt;/comment>
+
+- Standaard: `false`
+- Accepteert geen waarde
+
+### `--ansi`
+
+ANSI-uitvoer forceren
+
+- Standaard: `false`
+- Accepteert geen waarde
+
+### `--no-ansi`
+
+ANSI-uitvoer uitschakelen
+
+- Standaard: `false`
+- Accepteert geen waarde
+
+### `--no`, `-n`
+
+Antwoord &quot;nee&quot; op bevestigingsvragen; accepteert de standaardwaarde voor andere vragen; interactie uitschakelen
+
+- Standaard: `false`
+- Accepteert geen waarde
+
+### `--quiet`, `-q`
+
+Geen bericht uitvoeren
+
+- Standaard: `false`
+- Accepteert geen waarde
+
 
 ## `multi`
 
 Voer een bevel op veelvoudige projecten uit
 
 ```bash
-magento-cloud multi [-p|--projects PROJECTS] [--continue] [--sort SORT] [--reverse] [--] <cmd>
+magento-cloud multi [-p|--projects PROJECTS] [--continue] [--sort SORT] [--reverse] [--] <cmd> (<cmd>)...
 ```
 
 
@@ -490,7 +692,10 @@ magento-cloud multi [-p|--projects PROJECTS] [--continue] [--sort SORT] [--rever
 
 De uit te voeren opdracht
 
+- Standaard: `[]`
+
 - Vereist
+- Array
 
 ### `--projects`, `-p`
 
@@ -526,13 +731,6 @@ Dit Help-bericht weergeven
 - Standaard: `false`
 - Accepteert geen waarde
 
-### `--quiet`, `-q`
-
-Geen bericht uitvoeren
-
-- Standaard: `false`
-- Accepteert geen waarde
-
 ### `--verbose`, `-v|-vv|-vvv`
 
 Verhoog de breedheid van berichten
@@ -549,14 +747,42 @@ Deze toepassingsversie weergeven
 
 ### `--yes`, `-y`
 
-Antwoord &quot;ja&quot; op ja/nee-vragen interactie uitschakelen
+&quot;ja&quot; antwoorden op bevestigingsvragen; accepteert de standaardwaarde voor andere vragen; interactie uitschakelen
+
+- Standaard: `false`
+- Accepteert geen waarde
+
+### `--no-interaction`
+
+Geen interactieve vragen stellen; Accepteer standaardwaarden. Gelijk aan het gebruik van de omgevingsvariabele: &lt;comment>Magento_CLOUD_CLI_NO_INTERACTION=1&lt;/comment>
+
+- Standaard: `false`
+- Accepteert geen waarde
+
+### `--ansi`
+
+ANSI-uitvoer forceren
+
+- Standaard: `false`
+- Accepteert geen waarde
+
+### `--no-ansi`
+
+ANSI-uitvoer uitschakelen
 
 - Standaard: `false`
 - Accepteert geen waarde
 
 ### `--no`, `-n`
 
-Antwoord &quot;nee&quot; op ja/nee-vragen. interactie uitschakelen
+Antwoord &quot;nee&quot; op bevestigingsvragen; accepteert de standaardwaarde voor andere vragen; interactie uitschakelen
+
+- Standaard: `false`
+- Accepteert geen waarde
+
+### `--quiet`, `-q`
+
+Geen bericht uitvoeren
 
 - Standaard: `false`
 - Accepteert geen waarde
@@ -567,7 +793,7 @@ Antwoord &quot;nee&quot; op ja/nee-vragen. interactie uitschakelen
 De webinterface openen
 
 ```bash
-magento-cloud web [--browser BROWSER] [--pipe] [-p|--project PROJECT] [--host HOST] [-e|--environment ENVIRONMENT]
+magento-cloud web [--browser BROWSER] [--pipe] [-p|--project PROJECT] [-e|--environment ENVIRONMENT]
 ```
 
 ### `--browser`
@@ -591,7 +817,7 @@ De project-id of URL
 
 ### `--host`
 
-De API-hostnaam van het project
+Vervangen optie, niet meer gebruikt
 
 - Vereist een waarde
 
@@ -604,13 +830,6 @@ De milieu-id
 ### `--help`, `-h`
 
 Dit Help-bericht weergeven
-
-- Standaard: `false`
-- Accepteert geen waarde
-
-### `--quiet`, `-q`
-
-Geen bericht uitvoeren
 
 - Standaard: `false`
 - Accepteert geen waarde
@@ -631,14 +850,42 @@ Deze toepassingsversie weergeven
 
 ### `--yes`, `-y`
 
-Antwoord &quot;ja&quot; op ja/nee-vragen interactie uitschakelen
+&quot;ja&quot; antwoorden op bevestigingsvragen; accepteert de standaardwaarde voor andere vragen; interactie uitschakelen
+
+- Standaard: `false`
+- Accepteert geen waarde
+
+### `--no-interaction`
+
+Geen interactieve vragen stellen; Accepteer standaardwaarden. Gelijk aan het gebruik van de omgevingsvariabele: &lt;comment>Magento_CLOUD_CLI_NO_INTERACTION=1&lt;/comment>
+
+- Standaard: `false`
+- Accepteert geen waarde
+
+### `--ansi`
+
+ANSI-uitvoer forceren
+
+- Standaard: `false`
+- Accepteert geen waarde
+
+### `--no-ansi`
+
+ANSI-uitvoer uitschakelen
 
 - Standaard: `false`
 - Accepteert geen waarde
 
 ### `--no`, `-n`
 
-Antwoord &quot;nee&quot; op ja/nee-vragen. interactie uitschakelen
+Antwoord &quot;nee&quot; op bevestigingsvragen; accepteert de standaardwaarde voor andere vragen; interactie uitschakelen
+
+- Standaard: `false`
+- Accepteert geen waarde
+
+### `--quiet`, `-q`
+
+Geen bericht uitvoeren
 
 - Standaard: `false`
 - Accepteert geen waarde
@@ -659,13 +906,6 @@ Dit Help-bericht weergeven
 - Standaard: `false`
 - Accepteert geen waarde
 
-### `--quiet`, `-q`
-
-Geen bericht uitvoeren
-
-- Standaard: `false`
-- Accepteert geen waarde
-
 ### `--verbose`, `-v|-vv|-vvv`
 
 Verhoog de breedheid van berichten
@@ -682,14 +922,42 @@ Deze toepassingsversie weergeven
 
 ### `--yes`, `-y`
 
-Antwoord &quot;ja&quot; op ja/nee-vragen interactie uitschakelen
+&quot;ja&quot; antwoorden op bevestigingsvragen; accepteert de standaardwaarde voor andere vragen; interactie uitschakelen
+
+- Standaard: `false`
+- Accepteert geen waarde
+
+### `--no-interaction`
+
+Geen interactieve vragen stellen; Accepteer standaardwaarden. Gelijk aan het gebruik van de omgevingsvariabele: &lt;comment>Magento_CLOUD_CLI_NO_INTERACTION=1&lt;/comment>
+
+- Standaard: `false`
+- Accepteert geen waarde
+
+### `--ansi`
+
+ANSI-uitvoer forceren
+
+- Standaard: `false`
+- Accepteert geen waarde
+
+### `--no-ansi`
+
+ANSI-uitvoer uitschakelen
 
 - Standaard: `false`
 - Accepteert geen waarde
 
 ### `--no`, `-n`
 
-Antwoord &quot;nee&quot; op ja/nee-vragen. interactie uitschakelen
+Antwoord &quot;nee&quot; op bevestigingsvragen; accepteert de standaardwaarde voor andere vragen; interactie uitschakelen
+
+- Standaard: `false`
+- Accepteert geen waarde
+
+### `--quiet`, `-q`
+
+Geen bericht uitvoeren
 
 - Standaard: `false`
 - Accepteert geen waarde
@@ -710,13 +978,6 @@ Dit Help-bericht weergeven
 - Standaard: `false`
 - Accepteert geen waarde
 
-### `--quiet`, `-q`
-
-Geen bericht uitvoeren
-
-- Standaard: `false`
-- Accepteert geen waarde
-
 ### `--verbose`, `-v|-vv|-vvv`
 
 Verhoog de breedheid van berichten
@@ -733,14 +994,42 @@ Deze toepassingsversie weergeven
 
 ### `--yes`, `-y`
 
-Antwoord &quot;ja&quot; op ja/nee-vragen interactie uitschakelen
+&quot;ja&quot; antwoorden op bevestigingsvragen; accepteert de standaardwaarde voor andere vragen; interactie uitschakelen
+
+- Standaard: `false`
+- Accepteert geen waarde
+
+### `--no-interaction`
+
+Geen interactieve vragen stellen; Accepteer standaardwaarden. Gelijk aan het gebruik van de omgevingsvariabele: &lt;comment>Magento_CLOUD_CLI_NO_INTERACTION=1&lt;/comment>
+
+- Standaard: `false`
+- Accepteert geen waarde
+
+### `--ansi`
+
+ANSI-uitvoer forceren
+
+- Standaard: `false`
+- Accepteert geen waarde
+
+### `--no-ansi`
+
+ANSI-uitvoer uitschakelen
 
 - Standaard: `false`
 - Accepteert geen waarde
 
 ### `--no`, `-n`
 
-Antwoord &quot;nee&quot; op ja/nee-vragen. interactie uitschakelen
+Antwoord &quot;nee&quot; op bevestigingsvragen; accepteert de standaardwaarde voor andere vragen; interactie uitschakelen
+
+- Standaard: `false`
+- Accepteert geen waarde
+
+### `--quiet`, `-q`
+
+Geen bericht uitvoeren
 
 - Standaard: `false`
 - Accepteert geen waarde
@@ -751,7 +1040,7 @@ Antwoord &quot;nee&quot; op ja/nee-vragen. interactie uitschakelen
 Een activiteit annuleren
 
 ```bash
-magento-cloud activity:cancel [--type TYPE] [--exclude-type EXCLUDE-TYPE] [-a|--all] [-p|--project PROJECT] [--host HOST] [-e|--environment ENVIRONMENT] [--] [<id>]
+magento-cloud activity:cancel [--type TYPE] [--exclude-type EXCLUDE-TYPE] [-a|--all] [-p|--project PROJECT] [-e|--environment ENVIRONMENT] [--] [<id>]
 ```
 
 
@@ -762,14 +1051,14 @@ De activiteit-id. Wordt standaard ingesteld op de meest recente annuleerbare act
 
 ### `--type`
 
-Filteren op type (wanneer u een standaardactiviteit selecteert). Als er één waarde is opgegeven, wordt deze gesplitst in komma&#39;s of spaties.
+Filteren op type (wanneer u een standaardactiviteit selecteert). Als een lijst als één waarde wordt gegeven (bv. &quot;a,b,c&quot;) wordt gesplitst in komma&#39;s en/of witruimte. Het teken % kan worden gebruikt als jokerteken voor het type, bijvoorbeeld &#39;%var%&#39; om aan variabelen gerelateerde activiteiten te selecteren.
 
 - Standaard: `[]`
 - Vereist een waarde
 
 ### `--exclude-type`
 
-Uitsluiten op type (bij het selecteren van een standaardactiviteit). Als er één waarde is opgegeven, wordt deze gesplitst in komma&#39;s of spaties.
+Uitsluiten op type (bij het selecteren van een standaardactiviteit). Als een lijst als één waarde wordt gegeven (bv. &quot;a,b,c&quot;) wordt gesplitst in komma&#39;s en/of witruimte. Het teken % kan worden gebruikt als jokerteken om typen uit te sluiten.
 
 - Standaard: `[]`
 - Vereist een waarde
@@ -789,7 +1078,7 @@ De project-id of URL
 
 ### `--host`
 
-De API-hostnaam van het project
+Vervangen optie, niet meer gebruikt
 
 - Vereist een waarde
 
@@ -802,13 +1091,6 @@ De milieu-id
 ### `--help`, `-h`
 
 Dit Help-bericht weergeven
-
-- Standaard: `false`
-- Accepteert geen waarde
-
-### `--quiet`, `-q`
-
-Geen bericht uitvoeren
 
 - Standaard: `false`
 - Accepteert geen waarde
@@ -829,14 +1111,42 @@ Deze toepassingsversie weergeven
 
 ### `--yes`, `-y`
 
-Antwoord &quot;ja&quot; op ja/nee-vragen interactie uitschakelen
+&quot;ja&quot; antwoorden op bevestigingsvragen; accepteert de standaardwaarde voor andere vragen; interactie uitschakelen
+
+- Standaard: `false`
+- Accepteert geen waarde
+
+### `--no-interaction`
+
+Geen interactieve vragen stellen; Accepteer standaardwaarden. Gelijk aan het gebruik van de omgevingsvariabele: &lt;comment>Magento_CLOUD_CLI_NO_INTERACTION=1&lt;/comment>
+
+- Standaard: `false`
+- Accepteert geen waarde
+
+### `--ansi`
+
+ANSI-uitvoer forceren
+
+- Standaard: `false`
+- Accepteert geen waarde
+
+### `--no-ansi`
+
+ANSI-uitvoer uitschakelen
 
 - Standaard: `false`
 - Accepteert geen waarde
 
 ### `--no`, `-n`
 
-Antwoord &quot;nee&quot; op ja/nee-vragen. interactie uitschakelen
+Antwoord &quot;nee&quot; op bevestigingsvragen; accepteert de standaardwaarde voor andere vragen; interactie uitschakelen
+
+- Standaard: `false`
+- Accepteert geen waarde
+
+### `--quiet`, `-q`
+
+Geen bericht uitvoeren
 
 - Standaard: `false`
 - Accepteert geen waarde
@@ -847,7 +1157,7 @@ Antwoord &quot;nee&quot; op ja/nee-vragen. interactie uitschakelen
 Gedetailleerde informatie over één activiteit weergeven
 
 ```bash
-magento-cloud activity:get [-P|--property PROPERTY] [--type TYPE] [--exclude-type EXCLUDE-TYPE] [--state STATE] [--result RESULT] [-i|--incomplete] [-a|--all] [-p|--project PROJECT] [--host HOST] [-e|--environment ENVIRONMENT] [--format FORMAT] [--columns COLUMNS] [--no-header] [--date-fmt DATE-FMT] [--] [<id>]
+magento-cloud activity:get [-P|--property PROPERTY] [--type TYPE] [--exclude-type EXCLUDE-TYPE] [--state STATE] [--result RESULT] [-i|--incomplete] [-a|--all] [-p|--project PROJECT] [-e|--environment ENVIRONMENT] [--format FORMAT] [-c|--columns COLUMNS] [--no-header] [--date-fmt DATE-FMT] [--] [<id>]
 ```
 
 
@@ -864,21 +1174,21 @@ De eigenschap die moet worden weergegeven
 
 ### `--type`
 
-Filteren op type (wanneer u een standaardactiviteit selecteert). Als er één waarde is opgegeven, wordt deze gesplitst in komma&#39;s of spaties.
+Filteren op type (wanneer u een standaardactiviteit selecteert). Als een lijst als één waarde wordt gegeven (bv. &quot;a,b,c&quot;) wordt gesplitst in komma&#39;s en/of witruimte. Het teken % kan worden gebruikt als jokerteken voor het type, bijvoorbeeld &#39;%var%&#39; om aan variabelen gerelateerde activiteiten te selecteren.
 
 - Standaard: `[]`
 - Vereist een waarde
 
 ### `--exclude-type`
 
-Uitsluiten op type (bij het selecteren van een standaardactiviteit). Als er één waarde is opgegeven, wordt deze gesplitst in komma&#39;s of spaties.
+Uitsluiten op type (bij het selecteren van een standaardactiviteit). Als een lijst als één waarde wordt gegeven (bv. &quot;a,b,c&quot;) wordt gesplitst in komma&#39;s en/of witruimte. Het teken % kan worden gebruikt als jokerteken om typen uit te sluiten.
 
 - Standaard: `[]`
 - Vereist een waarde
 
 ### `--state`
 
-Filteren op status (bij het selecteren van een standaardactiviteit): in_progress, pending, complete of canceled. Als er één waarde is opgegeven, wordt deze gesplitst in komma&#39;s of spaties.
+Filteren op status (bij het selecteren van een standaardactiviteit): in_progress, pending, complete of canceled. Als een lijst als één waarde wordt gegeven (bv. &quot;a,b,c&quot;) wordt gesplitst in komma&#39;s en/of witruimte.
 
 - Standaard: `[]`
 - Vereist een waarde
@@ -911,7 +1221,7 @@ De project-id of URL
 
 ### `--host`
 
-De API-hostnaam van het project
+Vervangen optie, niet meer gebruikt
 
 - Vereist een waarde
 
@@ -923,14 +1233,14 @@ De milieu-id
 
 ### `--format`
 
-De uitvoerindeling (&quot;table&quot;, &quot;csv&quot;, &quot;tsv&quot; of &quot;plain&quot;)
+De uitvoerindeling: table, csv, tsv of plain
 
 - Standaard: `table`
 - Vereist een waarde
 
-### `--columns`
+### `--columns`, `-c`
 
-Weer te geven kolommen (lijst met door komma&#39;s gescheiden waarden of meerdere waarden)
+Weer te geven kolommen. Als een lijst als één waarde wordt gegeven (bv. &quot;a,b,c&quot;) wordt gesplitst in komma&#39;s en/of witruimte.
 
 - Standaard: `[]`
 - Vereist een waarde
@@ -956,13 +1266,6 @@ Dit Help-bericht weergeven
 - Standaard: `false`
 - Accepteert geen waarde
 
-### `--quiet`, `-q`
-
-Geen bericht uitvoeren
-
-- Standaard: `false`
-- Accepteert geen waarde
-
 ### `--verbose`, `-v|-vv|-vvv`
 
 Verhoog de breedheid van berichten
@@ -979,14 +1282,42 @@ Deze toepassingsversie weergeven
 
 ### `--yes`, `-y`
 
-Antwoord &quot;ja&quot; op ja/nee-vragen interactie uitschakelen
+&quot;ja&quot; antwoorden op bevestigingsvragen; accepteert de standaardwaarde voor andere vragen; interactie uitschakelen
+
+- Standaard: `false`
+- Accepteert geen waarde
+
+### `--no-interaction`
+
+Geen interactieve vragen stellen; Accepteer standaardwaarden. Gelijk aan het gebruik van de omgevingsvariabele: &lt;comment>Magento_CLOUD_CLI_NO_INTERACTION=1&lt;/comment>
+
+- Standaard: `false`
+- Accepteert geen waarde
+
+### `--ansi`
+
+ANSI-uitvoer forceren
+
+- Standaard: `false`
+- Accepteert geen waarde
+
+### `--no-ansi`
+
+ANSI-uitvoer uitschakelen
 
 - Standaard: `false`
 - Accepteert geen waarde
 
 ### `--no`, `-n`
 
-Antwoord &quot;nee&quot; op ja/nee-vragen. interactie uitschakelen
+Antwoord &quot;nee&quot; op bevestigingsvragen; accepteert de standaardwaarde voor andere vragen; interactie uitschakelen
+
+- Standaard: `false`
+- Accepteert geen waarde
+
+### `--quiet`, `-q`
+
+Geen bericht uitvoeren
 
 - Standaard: `false`
 - Accepteert geen waarde
@@ -997,7 +1328,7 @@ Antwoord &quot;nee&quot; op ja/nee-vragen. interactie uitschakelen
 Een lijst met activiteiten voor een omgeving of project ophalen
 
 ```bash
-magento-cloud activity:list [-t|--type TYPE] [-x|--exclude-type EXCLUDE-TYPE] [--limit LIMIT] [--start START] [--state STATE] [--result RESULT] [-i|--incomplete] [-a|--all] [--format FORMAT] [--columns COLUMNS] [--no-header] [--date-fmt DATE-FMT] [-p|--project PROJECT] [--host HOST] [-e|--environment ENVIRONMENT]
+magento-cloud activity:list [-t|--type TYPE] [-x|--exclude-type EXCLUDE-TYPE] [--limit LIMIT] [--start START] [--state STATE] [--result RESULT] [-i|--incomplete] [-a|--all] [--format FORMAT] [-c|--columns COLUMNS] [--no-header] [--date-fmt DATE-FMT] [-p|--project PROJECT] [-e|--environment ENVIRONMENT]
 ```
 
 
@@ -1012,14 +1343,14 @@ act
 
 ### `--type`, `-t`
 
-Filteractiviteiten op type Als één waarde is opgegeven, wordt deze gesplitst in komma&#39;s of spaties.
+Filteractiviteiten op type Als een lijst als één waarde wordt gegeven (bijvoorbeeld &quot;a,b,c&quot;) wordt gesplitst in komma&#39;s en/of witruimte. Het teken % kan worden gebruikt als jokerteken voor het type, bijvoorbeeld &#39;%var%&#39; om aan variabelen gerelateerde activiteiten te selecteren.
 
 - Standaard: `[]`
 - Vereist een waarde
 
 ### `--exclude-type`, `-x`
 
-Exclusief activiteiten naar type. Als er één waarde is opgegeven, wordt deze gesplitst in komma&#39;s of spaties.
+Exclusief activiteiten naar type. Als een lijst als één waarde wordt gegeven (bv. &quot;a,b,c&quot;) wordt gesplitst in komma&#39;s en/of witruimte. Het teken % kan worden gebruikt als jokerteken om typen uit te sluiten.
 
 - Standaard: `[]`
 - Vereist een waarde
@@ -1039,7 +1370,7 @@ Alleen activiteiten die vóór deze datum zijn gemaakt, worden vermeld
 
 ### `--state`
 
-Filteractiviteiten naar status: in_progress, pending, complete of canceled. Als er één waarde is opgegeven, wordt deze gesplitst in komma&#39;s of spaties.
+Filteractiviteiten naar status: in_progress, pending, complete of canceled. Als een lijst als één waarde wordt gegeven (bv. &quot;a,b,c&quot;) wordt gesplitst in komma&#39;s en/of witruimte.
 
 - Standaard: `[]`
 - Vereist een waarde
@@ -1066,14 +1397,14 @@ Activiteiten weergeven in alle omgevingen
 
 ### `--format`
 
-De uitvoerindeling (&quot;table&quot;, &quot;csv&quot;, &quot;tsv&quot; of &quot;plain&quot;)
+De uitvoerindeling: table, csv, tsv of plain
 
 - Standaard: `table`
 - Vereist een waarde
 
-### `--columns`
+### `--columns`, `-c`
 
-Weer te geven kolommen (lijst met door komma&#39;s gescheiden waarden of meerdere waarden)
+Weer te geven kolommen. Beschikbare kolommen: id*, created*, description*, progress*, state*, result*, completed, environment, type (* = default columns). Het teken &quot;+&quot; kan worden gebruikt als tijdelijke aanduiding voor de standaardkolommen. Als een lijst als één waarde wordt gegeven (bv. &quot;a,b,c&quot;) wordt gesplitst in komma&#39;s en/of witruimte.
 
 - Standaard: `[]`
 - Vereist een waarde
@@ -1100,7 +1431,7 @@ De project-id of URL
 
 ### `--host`
 
-De API-hostnaam van het project
+Vervangen optie, niet meer gebruikt
 
 - Vereist een waarde
 
@@ -1113,13 +1444,6 @@ De milieu-id
 ### `--help`, `-h`
 
 Dit Help-bericht weergeven
-
-- Standaard: `false`
-- Accepteert geen waarde
-
-### `--quiet`, `-q`
-
-Geen bericht uitvoeren
 
 - Standaard: `false`
 - Accepteert geen waarde
@@ -1140,14 +1464,42 @@ Deze toepassingsversie weergeven
 
 ### `--yes`, `-y`
 
-Antwoord &quot;ja&quot; op ja/nee-vragen interactie uitschakelen
+&quot;ja&quot; antwoorden op bevestigingsvragen; accepteert de standaardwaarde voor andere vragen; interactie uitschakelen
+
+- Standaard: `false`
+- Accepteert geen waarde
+
+### `--no-interaction`
+
+Geen interactieve vragen stellen; Accepteer standaardwaarden. Gelijk aan het gebruik van de omgevingsvariabele: &lt;comment>Magento_CLOUD_CLI_NO_INTERACTION=1&lt;/comment>
+
+- Standaard: `false`
+- Accepteert geen waarde
+
+### `--ansi`
+
+ANSI-uitvoer forceren
+
+- Standaard: `false`
+- Accepteert geen waarde
+
+### `--no-ansi`
+
+ANSI-uitvoer uitschakelen
 
 - Standaard: `false`
 - Accepteert geen waarde
 
 ### `--no`, `-n`
 
-Antwoord &quot;nee&quot; op ja/nee-vragen. interactie uitschakelen
+Antwoord &quot;nee&quot; op bevestigingsvragen; accepteert de standaardwaarde voor andere vragen; interactie uitschakelen
+
+- Standaard: `false`
+- Accepteert geen waarde
+
+### `--quiet`, `-q`
+
+Geen bericht uitvoeren
 
 - Standaard: `false`
 - Accepteert geen waarde
@@ -1158,7 +1510,7 @@ Antwoord &quot;nee&quot; op ja/nee-vragen. interactie uitschakelen
 Logboek weergeven voor een activiteit
 
 ```bash
-magento-cloud activity:log [--refresh REFRESH] [-t|--timestamps] [--type TYPE] [--exclude-type EXCLUDE-TYPE] [--state STATE] [--result RESULT] [-i|--incomplete] [-a|--all] [--date-fmt DATE-FMT] [-p|--project PROJECT] [--host HOST] [-e|--environment ENVIRONMENT] [--] [<id>]
+magento-cloud activity:log [--refresh REFRESH] [-t|--timestamps] [--type TYPE] [--exclude-type EXCLUDE-TYPE] [--state STATE] [--result RESULT] [-i|--incomplete] [-a|--all] [--date-fmt DATE-FMT] [-p|--project PROJECT] [-e|--environment ENVIRONMENT] [--] [<id>]
 ```
 
 
@@ -1183,21 +1535,21 @@ Een tijdstempel naast elk bericht weergeven
 
 ### `--type`
 
-Filteren op type (wanneer u een standaardactiviteit selecteert). Als er één waarde is opgegeven, wordt deze gesplitst in komma&#39;s of spaties.
+Filteren op type (wanneer u een standaardactiviteit selecteert). Als een lijst als één waarde wordt gegeven (bv. &quot;a,b,c&quot;) wordt gesplitst in komma&#39;s en/of witruimte. Het teken % kan worden gebruikt als jokerteken voor het type, bijvoorbeeld &#39;%var%&#39; om aan variabelen gerelateerde activiteiten te selecteren.
 
 - Standaard: `[]`
 - Vereist een waarde
 
 ### `--exclude-type`
 
-Uitsluiten op type (bij het selecteren van een standaardactiviteit). Als er één waarde is opgegeven, wordt deze gesplitst in komma&#39;s of spaties.
+Uitsluiten op type (bij het selecteren van een standaardactiviteit). Als een lijst als één waarde wordt gegeven (bv. &quot;a,b,c&quot;) wordt gesplitst in komma&#39;s en/of witruimte. Het teken % kan worden gebruikt als jokerteken om typen uit te sluiten.
 
 - Standaard: `[]`
 - Vereist een waarde
 
 ### `--state`
 
-Filteren op status (bij het selecteren van een standaardactiviteit): in_progress, pending, complete of canceled. Als er één waarde is opgegeven, wordt deze gesplitst in komma&#39;s of spaties.
+Filteren op status (bij het selecteren van een standaardactiviteit): in_progress, pending, complete of canceled. Als een lijst als één waarde wordt gegeven (bv. &quot;a,b,c&quot;) wordt gesplitst in komma&#39;s en/of witruimte.
 
 - Standaard: `[]`
 - Vereist een waarde
@@ -1237,7 +1589,7 @@ De project-id of URL
 
 ### `--host`
 
-De API-hostnaam van het project
+Vervangen optie, niet meer gebruikt
 
 - Vereist een waarde
 
@@ -1250,13 +1602,6 @@ De milieu-id
 ### `--help`, `-h`
 
 Dit Help-bericht weergeven
-
-- Standaard: `false`
-- Accepteert geen waarde
-
-### `--quiet`, `-q`
-
-Geen bericht uitvoeren
 
 - Standaard: `false`
 - Accepteert geen waarde
@@ -1277,14 +1622,42 @@ Deze toepassingsversie weergeven
 
 ### `--yes`, `-y`
 
-Antwoord &quot;ja&quot; op ja/nee-vragen interactie uitschakelen
+&quot;ja&quot; antwoorden op bevestigingsvragen; accepteert de standaardwaarde voor andere vragen; interactie uitschakelen
+
+- Standaard: `false`
+- Accepteert geen waarde
+
+### `--no-interaction`
+
+Geen interactieve vragen stellen; Accepteer standaardwaarden. Gelijk aan het gebruik van de omgevingsvariabele: &lt;comment>Magento_CLOUD_CLI_NO_INTERACTION=1&lt;/comment>
+
+- Standaard: `false`
+- Accepteert geen waarde
+
+### `--ansi`
+
+ANSI-uitvoer forceren
+
+- Standaard: `false`
+- Accepteert geen waarde
+
+### `--no-ansi`
+
+ANSI-uitvoer uitschakelen
 
 - Standaard: `false`
 - Accepteert geen waarde
 
 ### `--no`, `-n`
 
-Antwoord &quot;nee&quot; op ja/nee-vragen. interactie uitschakelen
+Antwoord &quot;nee&quot; op bevestigingsvragen; accepteert de standaardwaarde voor andere vragen; interactie uitschakelen
+
+- Standaard: `false`
+- Accepteert geen waarde
+
+### `--quiet`, `-q`
+
+Geen bericht uitvoeren
 
 - Standaard: `false`
 - Accepteert geen waarde
@@ -1295,7 +1668,7 @@ Antwoord &quot;nee&quot; op ja/nee-vragen. interactie uitschakelen
 Een geverifieerd cURL-verzoek uitvoeren op de Magento Cloud-API
 
 ```bash
-magento-cloud api:curl [-X|--request REQUEST] [-d|--data DATA] [-i|--include] [-I|--head] [--disable-compression] [--enable-glob] [-f|--fail] [-H|--header HEADER] [--] [<path>]
+magento-cloud api:curl [-X|--request REQUEST] [-d|--data DATA] [--json JSON] [-i|--include] [-I|--head] [--disable-compression] [--enable-glob] [-f|--fail] [-H|--header HEADER] [--] [<path>]
 ```
 
 
@@ -1313,6 +1686,12 @@ De aanvraagmethode
 ### `--data`, `-d`
 
 Te verzenden gegevens
+
+- Vereist een waarde
+
+### `--json`
+
+Te verzenden JSON-gegevens
 
 - Vereist een waarde
 
@@ -1365,13 +1744,6 @@ Dit Help-bericht weergeven
 - Standaard: `false`
 - Accepteert geen waarde
 
-### `--quiet`, `-q`
-
-Geen bericht uitvoeren
-
-- Standaard: `false`
-- Accepteert geen waarde
-
 ### `--verbose`, `-v|-vv|-vvv`
 
 Verhoog de breedheid van berichten
@@ -1388,14 +1760,42 @@ Deze toepassingsversie weergeven
 
 ### `--yes`, `-y`
 
-Antwoord &quot;ja&quot; op ja/nee-vragen interactie uitschakelen
+&quot;ja&quot; antwoorden op bevestigingsvragen; accepteert de standaardwaarde voor andere vragen; interactie uitschakelen
+
+- Standaard: `false`
+- Accepteert geen waarde
+
+### `--no-interaction`
+
+Geen interactieve vragen stellen; Accepteer standaardwaarden. Gelijk aan het gebruik van de omgevingsvariabele: &lt;comment>Magento_CLOUD_CLI_NO_INTERACTION=1&lt;/comment>
+
+- Standaard: `false`
+- Accepteert geen waarde
+
+### `--ansi`
+
+ANSI-uitvoer forceren
+
+- Standaard: `false`
+- Accepteert geen waarde
+
+### `--no-ansi`
+
+ANSI-uitvoer uitschakelen
 
 - Standaard: `false`
 - Accepteert geen waarde
 
 ### `--no`, `-n`
 
-Antwoord &quot;nee&quot; op ja/nee-vragen. interactie uitschakelen
+Antwoord &quot;nee&quot; op bevestigingsvragen; accepteert de standaardwaarde voor andere vragen; interactie uitschakelen
+
+- Standaard: `false`
+- Accepteert geen waarde
+
+### `--quiet`, `-q`
+
+Geen bericht uitvoeren
 
 - Standaard: `false`
 - Accepteert geen waarde
@@ -1406,7 +1806,7 @@ Antwoord &quot;nee&quot; op ja/nee-vragen. interactie uitschakelen
 De configuratie van een app weergeven
 
 ```bash
-magento-cloud app:config-get [-P|--property PROPERTY] [--refresh] [-p|--project PROJECT] [--host HOST] [-e|--environment ENVIRONMENT] [-A|--app APP] [-i|--identity-file IDENTITY-FILE]
+magento-cloud app:config-get [-P|--property PROPERTY] [--refresh] [-p|--project PROJECT] [-e|--environment ENVIRONMENT] [-A|--app APP] [-i|--identity-file IDENTITY-FILE]
 ```
 
 ### `--property`, `-P`
@@ -1430,7 +1830,7 @@ De project-id of URL
 
 ### `--host`
 
-De API-hostnaam van het project
+Vervangen optie, niet meer gebruikt
 
 - Vereist een waarde
 
@@ -1459,13 +1859,6 @@ Dit Help-bericht weergeven
 - Standaard: `false`
 - Accepteert geen waarde
 
-### `--quiet`, `-q`
-
-Geen bericht uitvoeren
-
-- Standaard: `false`
-- Accepteert geen waarde
-
 ### `--verbose`, `-v|-vv|-vvv`
 
 Verhoog de breedheid van berichten
@@ -1482,14 +1875,42 @@ Deze toepassingsversie weergeven
 
 ### `--yes`, `-y`
 
-Antwoord &quot;ja&quot; op ja/nee-vragen interactie uitschakelen
+&quot;ja&quot; antwoorden op bevestigingsvragen; accepteert de standaardwaarde voor andere vragen; interactie uitschakelen
+
+- Standaard: `false`
+- Accepteert geen waarde
+
+### `--no-interaction`
+
+Geen interactieve vragen stellen; Accepteer standaardwaarden. Gelijk aan het gebruik van de omgevingsvariabele: &lt;comment>Magento_CLOUD_CLI_NO_INTERACTION=1&lt;/comment>
+
+- Standaard: `false`
+- Accepteert geen waarde
+
+### `--ansi`
+
+ANSI-uitvoer forceren
+
+- Standaard: `false`
+- Accepteert geen waarde
+
+### `--no-ansi`
+
+ANSI-uitvoer uitschakelen
 
 - Standaard: `false`
 - Accepteert geen waarde
 
 ### `--no`, `-n`
 
-Antwoord &quot;nee&quot; op ja/nee-vragen. interactie uitschakelen
+Antwoord &quot;nee&quot; op bevestigingsvragen; accepteert de standaardwaarde voor andere vragen; interactie uitschakelen
+
+- Standaard: `false`
+- Accepteert geen waarde
+
+### `--quiet`, `-q`
+
+Geen bericht uitvoeren
 
 - Standaard: `false`
 - Accepteert geen waarde
@@ -1500,7 +1921,7 @@ Antwoord &quot;nee&quot; op ja/nee-vragen. interactie uitschakelen
 Apps weergeven in het project
 
 ```bash
-magento-cloud apps [--refresh] [-p|--project PROJECT] [--host HOST] [-e|--environment ENVIRONMENT] [--format FORMAT] [--columns COLUMNS] [--no-header]
+magento-cloud apps [--refresh] [-p|--project PROJECT] [-e|--environment ENVIRONMENT] [--format FORMAT] [-c|--columns COLUMNS] [--no-header]
 ```
 
 
@@ -1523,7 +1944,7 @@ De project-id of URL
 
 ### `--host`
 
-De API-hostnaam van het project
+Vervangen optie, niet meer gebruikt
 
 - Vereist een waarde
 
@@ -1535,14 +1956,14 @@ De milieu-id
 
 ### `--format`
 
-De uitvoerindeling (&quot;table&quot;, &quot;csv&quot;, &quot;tsv&quot; of &quot;plain&quot;)
+De uitvoerindeling: table, csv, tsv of plain
 
 - Standaard: `table`
 - Vereist een waarde
 
-### `--columns`
+### `--columns`, `-c`
 
-Weer te geven kolommen (lijst met door komma&#39;s gescheiden waarden of meerdere waarden)
+Weer te geven kolommen. Beschikbare kolommen: name*, type*, disk, path, size (* = standaardkolommen). Het teken &quot;+&quot; kan worden gebruikt als tijdelijke aanduiding voor de standaardkolommen. Als een lijst als één waarde wordt gegeven (bv. &quot;a,b,c&quot;) wordt gesplitst in komma&#39;s en/of witruimte.
 
 - Standaard: `[]`
 - Vereist een waarde
@@ -1557,13 +1978,6 @@ De tabelkoptekst niet uitvoeren
 ### `--help`, `-h`
 
 Dit Help-bericht weergeven
-
-- Standaard: `false`
-- Accepteert geen waarde
-
-### `--quiet`, `-q`
-
-Geen bericht uitvoeren
 
 - Standaard: `false`
 - Accepteert geen waarde
@@ -1584,14 +1998,42 @@ Deze toepassingsversie weergeven
 
 ### `--yes`, `-y`
 
-Antwoord &quot;ja&quot; op ja/nee-vragen interactie uitschakelen
+&quot;ja&quot; antwoorden op bevestigingsvragen; accepteert de standaardwaarde voor andere vragen; interactie uitschakelen
+
+- Standaard: `false`
+- Accepteert geen waarde
+
+### `--no-interaction`
+
+Geen interactieve vragen stellen; Accepteer standaardwaarden. Gelijk aan het gebruik van de omgevingsvariabele: &lt;comment>Magento_CLOUD_CLI_NO_INTERACTION=1&lt;/comment>
+
+- Standaard: `false`
+- Accepteert geen waarde
+
+### `--ansi`
+
+ANSI-uitvoer forceren
+
+- Standaard: `false`
+- Accepteert geen waarde
+
+### `--no-ansi`
+
+ANSI-uitvoer uitschakelen
 
 - Standaard: `false`
 - Accepteert geen waarde
 
 ### `--no`, `-n`
 
-Antwoord &quot;nee&quot; op ja/nee-vragen. interactie uitschakelen
+Antwoord &quot;nee&quot; op bevestigingsvragen; accepteert de standaardwaarde voor andere vragen; interactie uitschakelen
+
+- Standaard: `false`
+- Accepteert geen waarde
+
+### `--quiet`, `-q`
+
+Geen bericht uitvoeren
 
 - Standaard: `false`
 - Accepteert geen waarde
@@ -1612,13 +2054,6 @@ Dit Help-bericht weergeven
 - Standaard: `false`
 - Accepteert geen waarde
 
-### `--quiet`, `-q`
-
-Geen bericht uitvoeren
-
-- Standaard: `false`
-- Accepteert geen waarde
-
 ### `--verbose`, `-v|-vv|-vvv`
 
 Verhoog de breedheid van berichten
@@ -1635,14 +2070,42 @@ Deze toepassingsversie weergeven
 
 ### `--yes`, `-y`
 
-Antwoord &quot;ja&quot; op ja/nee-vragen interactie uitschakelen
+&quot;ja&quot; antwoorden op bevestigingsvragen; accepteert de standaardwaarde voor andere vragen; interactie uitschakelen
+
+- Standaard: `false`
+- Accepteert geen waarde
+
+### `--no-interaction`
+
+Geen interactieve vragen stellen; Accepteer standaardwaarden. Gelijk aan het gebruik van de omgevingsvariabele: &lt;comment>Magento_CLOUD_CLI_NO_INTERACTION=1&lt;/comment>
+
+- Standaard: `false`
+- Accepteert geen waarde
+
+### `--ansi`
+
+ANSI-uitvoer forceren
+
+- Standaard: `false`
+- Accepteert geen waarde
+
+### `--no-ansi`
+
+ANSI-uitvoer uitschakelen
 
 - Standaard: `false`
 - Accepteert geen waarde
 
 ### `--no`, `-n`
 
-Antwoord &quot;nee&quot; op ja/nee-vragen. interactie uitschakelen
+Antwoord &quot;nee&quot; op bevestigingsvragen; accepteert de standaardwaarde voor andere vragen; interactie uitschakelen
+
+- Standaard: `false`
+- Accepteert geen waarde
+
+### `--quiet`, `-q`
+
+Geen bericht uitvoeren
 
 - Standaard: `false`
 - Accepteert geen waarde
@@ -1688,13 +2151,6 @@ Dit Help-bericht weergeven
 - Standaard: `false`
 - Accepteert geen waarde
 
-### `--quiet`, `-q`
-
-Geen bericht uitvoeren
-
-- Standaard: `false`
-- Accepteert geen waarde
-
 ### `--verbose`, `-v|-vv|-vvv`
 
 Verhoog de breedheid van berichten
@@ -1711,14 +2167,42 @@ Deze toepassingsversie weergeven
 
 ### `--yes`, `-y`
 
-Antwoord &quot;ja&quot; op ja/nee-vragen interactie uitschakelen
+&quot;ja&quot; antwoorden op bevestigingsvragen; accepteert de standaardwaarde voor andere vragen; interactie uitschakelen
+
+- Standaard: `false`
+- Accepteert geen waarde
+
+### `--no-interaction`
+
+Geen interactieve vragen stellen; Accepteer standaardwaarden. Gelijk aan het gebruik van de omgevingsvariabele: &lt;comment>Magento_CLOUD_CLI_NO_INTERACTION=1&lt;/comment>
+
+- Standaard: `false`
+- Accepteert geen waarde
+
+### `--ansi`
+
+ANSI-uitvoer forceren
+
+- Standaard: `false`
+- Accepteert geen waarde
+
+### `--no-ansi`
+
+ANSI-uitvoer uitschakelen
 
 - Standaard: `false`
 - Accepteert geen waarde
 
 ### `--no`, `-n`
 
-Antwoord &quot;nee&quot; op ja/nee-vragen. interactie uitschakelen
+Antwoord &quot;nee&quot; op bevestigingsvragen; accepteert de standaardwaarde voor andere vragen; interactie uitschakelen
+
+- Standaard: `false`
+- Accepteert geen waarde
+
+### `--quiet`, `-q`
+
+Geen bericht uitvoeren
 
 - Standaard: `false`
 - Accepteert geen waarde
@@ -1729,7 +2213,7 @@ Antwoord &quot;nee&quot; op ja/nee-vragen. interactie uitschakelen
 Je accountgegevens weergeven
 
 ```bash
-magento-cloud auth:info [--no-auto-login] [-P|--property PROPERTY] [--refresh] [--format FORMAT] [--columns COLUMNS] [--no-header] [--] [<property>]
+magento-cloud auth:info [--no-auto-login] [-P|--property PROPERTY] [--refresh] [--format FORMAT] [-c|--columns COLUMNS] [--no-header] [--] [<property>]
 ```
 
 
@@ -1760,14 +2244,14 @@ Of de cache moet worden vernieuwd
 
 ### `--format`
 
-De uitvoerindeling (&quot;table&quot;, &quot;csv&quot;, &quot;tsv&quot; of &quot;plain&quot;)
+De uitvoerindeling: table, csv, tsv of plain
 
 - Standaard: `table`
 - Vereist een waarde
 
-### `--columns`
+### `--columns`, `-c`
 
-Weer te geven kolommen (lijst met door komma&#39;s gescheiden waarden of meerdere waarden)
+Weer te geven kolommen. Als een lijst als één waarde wordt gegeven (bv. &quot;a,b,c&quot;) wordt gesplitst in komma&#39;s en/of witruimte.
 
 - Standaard: `[]`
 - Vereist een waarde
@@ -1782,13 +2266,6 @@ De tabelkoptekst niet uitvoeren
 ### `--help`, `-h`
 
 Dit Help-bericht weergeven
-
-- Standaard: `false`
-- Accepteert geen waarde
-
-### `--quiet`, `-q`
-
-Geen bericht uitvoeren
 
 - Standaard: `false`
 - Accepteert geen waarde
@@ -1809,14 +2286,42 @@ Deze toepassingsversie weergeven
 
 ### `--yes`, `-y`
 
-Antwoord &quot;ja&quot; op ja/nee-vragen interactie uitschakelen
+&quot;ja&quot; antwoorden op bevestigingsvragen; accepteert de standaardwaarde voor andere vragen; interactie uitschakelen
+
+- Standaard: `false`
+- Accepteert geen waarde
+
+### `--no-interaction`
+
+Geen interactieve vragen stellen; Accepteer standaardwaarden. Gelijk aan het gebruik van de omgevingsvariabele: &lt;comment>Magento_CLOUD_CLI_NO_INTERACTION=1&lt;/comment>
+
+- Standaard: `false`
+- Accepteert geen waarde
+
+### `--ansi`
+
+ANSI-uitvoer forceren
+
+- Standaard: `false`
+- Accepteert geen waarde
+
+### `--no-ansi`
+
+ANSI-uitvoer uitschakelen
 
 - Standaard: `false`
 - Accepteert geen waarde
 
 ### `--no`, `-n`
 
-Antwoord &quot;nee&quot; op ja/nee-vragen. interactie uitschakelen
+Antwoord &quot;nee&quot; op bevestigingsvragen; accepteert de standaardwaarde voor andere vragen; interactie uitschakelen
+
+- Standaard: `false`
+- Accepteert geen waarde
+
+### `--quiet`, `-q`
+
+Geen bericht uitvoeren
 
 - Standaard: `false`
 - Accepteert geen waarde
@@ -1856,13 +2361,6 @@ Dit Help-bericht weergeven
 - Standaard: `false`
 - Accepteert geen waarde
 
-### `--quiet`, `-q`
-
-Geen bericht uitvoeren
-
-- Standaard: `false`
-- Accepteert geen waarde
-
 ### `--verbose`, `-v|-vv|-vvv`
 
 Verhoog de breedheid van berichten
@@ -1879,14 +2377,42 @@ Deze toepassingsversie weergeven
 
 ### `--yes`, `-y`
 
-Antwoord &quot;ja&quot; op ja/nee-vragen interactie uitschakelen
+&quot;ja&quot; antwoorden op bevestigingsvragen; accepteert de standaardwaarde voor andere vragen; interactie uitschakelen
+
+- Standaard: `false`
+- Accepteert geen waarde
+
+### `--no-interaction`
+
+Geen interactieve vragen stellen; Accepteer standaardwaarden. Gelijk aan het gebruik van de omgevingsvariabele: &lt;comment>Magento_CLOUD_CLI_NO_INTERACTION=1&lt;/comment>
+
+- Standaard: `false`
+- Accepteert geen waarde
+
+### `--ansi`
+
+ANSI-uitvoer forceren
+
+- Standaard: `false`
+- Accepteert geen waarde
+
+### `--no-ansi`
+
+ANSI-uitvoer uitschakelen
 
 - Standaard: `false`
 - Accepteert geen waarde
 
 ### `--no`, `-n`
 
-Antwoord &quot;nee&quot; op ja/nee-vragen. interactie uitschakelen
+Antwoord &quot;nee&quot; op bevestigingsvragen; accepteert de standaardwaarde voor andere vragen; interactie uitschakelen
+
+- Standaard: `false`
+- Accepteert geen waarde
+
+### `--quiet`, `-q`
+
+Geen bericht uitvoeren
 
 - Standaard: `false`
 - Accepteert geen waarde
@@ -1912,13 +2438,6 @@ Dit Help-bericht weergeven
 - Standaard: `false`
 - Accepteert geen waarde
 
-### `--quiet`, `-q`
-
-Geen bericht uitvoeren
-
-- Standaard: `false`
-- Accepteert geen waarde
-
 ### `--verbose`, `-v|-vv|-vvv`
 
 Verhoog de breedheid van berichten
@@ -1935,14 +2454,42 @@ Deze toepassingsversie weergeven
 
 ### `--yes`, `-y`
 
-Antwoord &quot;ja&quot; op ja/nee-vragen interactie uitschakelen
+&quot;ja&quot; antwoorden op bevestigingsvragen; accepteert de standaardwaarde voor andere vragen; interactie uitschakelen
+
+- Standaard: `false`
+- Accepteert geen waarde
+
+### `--no-interaction`
+
+Geen interactieve vragen stellen; Accepteer standaardwaarden. Gelijk aan het gebruik van de omgevingsvariabele: &lt;comment>Magento_CLOUD_CLI_NO_INTERACTION=1&lt;/comment>
+
+- Standaard: `false`
+- Accepteert geen waarde
+
+### `--ansi`
+
+ANSI-uitvoer forceren
+
+- Standaard: `false`
+- Accepteert geen waarde
+
+### `--no-ansi`
+
+ANSI-uitvoer uitschakelen
 
 - Standaard: `false`
 - Accepteert geen waarde
 
 ### `--no`, `-n`
 
-Antwoord &quot;nee&quot; op ja/nee-vragen. interactie uitschakelen
+Antwoord &quot;nee&quot; op bevestigingsvragen; accepteert de standaardwaarde voor andere vragen; interactie uitschakelen
+
+- Standaard: `false`
+- Accepteert geen waarde
+
+### `--quiet`, `-q`
+
+Geen bericht uitvoeren
 
 - Standaard: `false`
 - Accepteert geen waarde
@@ -1953,19 +2500,26 @@ Antwoord &quot;nee&quot; op ja/nee-vragen. interactie uitschakelen
 Een OAuth 2-toegangstoken verkrijgen voor aanvragen voor Magento Cloud-API&#39;s
 
 ```bash
-magento-cloud auth:token
+magento-cloud auth:token [-H|--header] [-W|--no-warn]
 ```
 
-### `--help`, `-h`
+### `--header`, `-H`
 
-Dit Help-bericht weergeven
+Plaats voor de token &quot;Autorisatie&quot;: Drager &quot; om een RFC 6750-koptekst te maken
 
 - Standaard: `false`
 - Accepteert geen waarde
 
-### `--quiet`, `-q`
+### `--no-warn`, `-W`
 
-Geen bericht uitvoeren
+Onderdruk de waarschuwing die standaard aan stderr wordt gedrukt. Deze optie heeft de voorkeur boven het omleiden van stderr, aangezien dat andere potentieel nuttige berichten zou verbergen.
+
+- Standaard: `false`
+- Accepteert geen waarde
+
+### `--help`, `-h`
+
+Dit Help-bericht weergeven
 
 - Standaard: `false`
 - Accepteert geen waarde
@@ -1986,14 +2540,42 @@ Deze toepassingsversie weergeven
 
 ### `--yes`, `-y`
 
-Antwoord &quot;ja&quot; op ja/nee-vragen interactie uitschakelen
+&quot;ja&quot; antwoorden op bevestigingsvragen; accepteert de standaardwaarde voor andere vragen; interactie uitschakelen
+
+- Standaard: `false`
+- Accepteert geen waarde
+
+### `--no-interaction`
+
+Geen interactieve vragen stellen; Accepteer standaardwaarden. Gelijk aan het gebruik van de omgevingsvariabele: &lt;comment>Magento_CLOUD_CLI_NO_INTERACTION=1&lt;/comment>
+
+- Standaard: `false`
+- Accepteert geen waarde
+
+### `--ansi`
+
+ANSI-uitvoer forceren
+
+- Standaard: `false`
+- Accepteert geen waarde
+
+### `--no-ansi`
+
+ANSI-uitvoer uitschakelen
 
 - Standaard: `false`
 - Accepteert geen waarde
 
 ### `--no`, `-n`
 
-Antwoord &quot;nee&quot; op ja/nee-vragen. interactie uitschakelen
+Antwoord &quot;nee&quot; op bevestigingsvragen; accepteert de standaardwaarde voor andere vragen; interactie uitschakelen
+
+- Standaard: `false`
+- Accepteert geen waarde
+
+### `--quiet`, `-q`
+
+Geen bericht uitvoeren
 
 - Standaard: `false`
 - Accepteert geen waarde
@@ -2004,7 +2586,7 @@ Antwoord &quot;nee&quot; op ja/nee-vragen. interactie uitschakelen
 De integratie van Blackfire.io van de opstelling voor het project
 
 ```bash
-magento-cloud blackfire:setup [--server_id SERVER_ID] [--server_token SERVER_TOKEN] [-p|--project PROJECT] [--host HOST] [-W|--no-wait] [--wait]
+magento-cloud blackfire:setup [--server_id SERVER_ID] [--server_token SERVER_TOKEN] [-p|--project PROJECT] [-W|--no-wait] [--wait]
 ```
 
 ### `--server_id`
@@ -2027,7 +2609,7 @@ De project-id of URL
 
 ### `--host`
 
-De API-hostnaam van het project
+Vervangen optie, niet meer gebruikt
 
 - Vereist een waarde
 
@@ -2052,9 +2634,92 @@ Dit Help-bericht weergeven
 - Standaard: `false`
 - Accepteert geen waarde
 
+### `--verbose`, `-v|-vv|-vvv`
+
+Verhoog de breedheid van berichten
+
+- Standaard: `false`
+- Accepteert geen waarde
+
+### `--version`, `-V`
+
+Deze toepassingsversie weergeven
+
+- Standaard: `false`
+- Accepteert geen waarde
+
+### `--yes`, `-y`
+
+&quot;ja&quot; antwoorden op bevestigingsvragen; accepteert de standaardwaarde voor andere vragen; interactie uitschakelen
+
+- Standaard: `false`
+- Accepteert geen waarde
+
+### `--no-interaction`
+
+Geen interactieve vragen stellen; Accepteer standaardwaarden. Gelijk aan het gebruik van de omgevingsvariabele: &lt;comment>Magento_CLOUD_CLI_NO_INTERACTION=1&lt;/comment>
+
+- Standaard: `false`
+- Accepteert geen waarde
+
+### `--ansi`
+
+ANSI-uitvoer forceren
+
+- Standaard: `false`
+- Accepteert geen waarde
+
+### `--no-ansi`
+
+ANSI-uitvoer uitschakelen
+
+- Standaard: `false`
+- Accepteert geen waarde
+
+### `--no`, `-n`
+
+Antwoord &quot;nee&quot; op bevestigingsvragen; accepteert de standaardwaarde voor andere vragen; interactie uitschakelen
+
+- Standaard: `false`
+- Accepteert geen waarde
+
 ### `--quiet`, `-q`
 
 Geen bericht uitvoeren
+
+- Standaard: `false`
+- Accepteert geen waarde
+
+
+## `blue-green:conclude`
+
+&lt;fg white=&quot;&quot; bg=&quot;red&quot;>[ ALPHA ]&lt;/> Een blauwe/groene implementatie afsluiten
+
+```bash
+magento-cloud blue-green:conclude [-p|--project PROJECT] [-e|--environment ENVIRONMENT]
+```
+
+### `--project`, `-p`
+
+De project-id of URL
+
+- Vereist een waarde
+
+### `--host`
+
+Vervangen optie, niet meer gebruikt
+
+- Vereist een waarde
+
+### `--environment`, `-e`
+
+De milieu-id
+
+- Vereist een waarde
+
+### `--help`, `-h`
+
+Dit Help-bericht weergeven
 
 - Standaard: `false`
 - Accepteert geen waarde
@@ -2075,14 +2740,236 @@ Deze toepassingsversie weergeven
 
 ### `--yes`, `-y`
 
-Antwoord &quot;ja&quot; op ja/nee-vragen interactie uitschakelen
+&quot;ja&quot; antwoorden op bevestigingsvragen; accepteert de standaardwaarde voor andere vragen; interactie uitschakelen
+
+- Standaard: `false`
+- Accepteert geen waarde
+
+### `--no-interaction`
+
+Geen interactieve vragen stellen; Accepteer standaardwaarden. Gelijk aan het gebruik van de omgevingsvariabele: &lt;comment>Magento_CLOUD_CLI_NO_INTERACTION=1&lt;/comment>
+
+- Standaard: `false`
+- Accepteert geen waarde
+
+### `--ansi`
+
+ANSI-uitvoer forceren
+
+- Standaard: `false`
+- Accepteert geen waarde
+
+### `--no-ansi`
+
+ANSI-uitvoer uitschakelen
 
 - Standaard: `false`
 - Accepteert geen waarde
 
 ### `--no`, `-n`
 
-Antwoord &quot;nee&quot; op ja/nee-vragen. interactie uitschakelen
+Antwoord &quot;nee&quot; op bevestigingsvragen; accepteert de standaardwaarde voor andere vragen; interactie uitschakelen
+
+- Standaard: `false`
+- Accepteert geen waarde
+
+### `--quiet`, `-q`
+
+Geen bericht uitvoeren
+
+- Standaard: `false`
+- Accepteert geen waarde
+
+
+## `blue-green:deploy`
+
+&lt;fg white=&quot;&quot; bg=&quot;red&quot;>[ ALPHA ]&lt;/> Een blauwe/groene implementatie uitvoeren
+
+```bash
+magento-cloud blue-green:deploy [--routing-percentage ROUTING-PERCENTAGE] [-p|--project PROJECT] [-e|--environment ENVIRONMENT]
+```
+
+### `--routing-percentage`
+
+Stel het verpletterende percentage van de nieuwste versie in
+
+- Standaard: `100`
+- Vereist een waarde
+
+### `--project`, `-p`
+
+De project-id of URL
+
+- Vereist een waarde
+
+### `--host`
+
+Vervangen optie, niet meer gebruikt
+
+- Vereist een waarde
+
+### `--environment`, `-e`
+
+De milieu-id
+
+- Vereist een waarde
+
+### `--help`, `-h`
+
+Dit Help-bericht weergeven
+
+- Standaard: `false`
+- Accepteert geen waarde
+
+### `--verbose`, `-v|-vv|-vvv`
+
+Verhoog de breedheid van berichten
+
+- Standaard: `false`
+- Accepteert geen waarde
+
+### `--version`, `-V`
+
+Deze toepassingsversie weergeven
+
+- Standaard: `false`
+- Accepteert geen waarde
+
+### `--yes`, `-y`
+
+&quot;ja&quot; antwoorden op bevestigingsvragen; accepteert de standaardwaarde voor andere vragen; interactie uitschakelen
+
+- Standaard: `false`
+- Accepteert geen waarde
+
+### `--no-interaction`
+
+Geen interactieve vragen stellen; Accepteer standaardwaarden. Gelijk aan het gebruik van de omgevingsvariabele: &lt;comment>Magento_CLOUD_CLI_NO_INTERACTION=1&lt;/comment>
+
+- Standaard: `false`
+- Accepteert geen waarde
+
+### `--ansi`
+
+ANSI-uitvoer forceren
+
+- Standaard: `false`
+- Accepteert geen waarde
+
+### `--no-ansi`
+
+ANSI-uitvoer uitschakelen
+
+- Standaard: `false`
+- Accepteert geen waarde
+
+### `--no`, `-n`
+
+Antwoord &quot;nee&quot; op bevestigingsvragen; accepteert de standaardwaarde voor andere vragen; interactie uitschakelen
+
+- Standaard: `false`
+- Accepteert geen waarde
+
+### `--quiet`, `-q`
+
+Geen bericht uitvoeren
+
+- Standaard: `false`
+- Accepteert geen waarde
+
+
+## `blue-green:enable`
+
+&lt;fg white=&quot;&quot; bg=&quot;red&quot;>[ ALPHA ]&lt;/> Blauwe/groene implementaties inschakelen
+
+```bash
+magento-cloud blue-green:enable [-%|--routing-percentage ROUTING-PERCENTAGE] [-p|--project PROJECT] [-e|--environment ENVIRONMENT]
+```
+
+### `--routing-percentage`, `-%`
+
+Stel het verpletterende percentage van de nieuwste versie in
+
+- Standaard: `100`
+- Vereist een waarde
+
+### `--project`, `-p`
+
+De project-id of URL
+
+- Vereist een waarde
+
+### `--host`
+
+Vervangen optie, niet meer gebruikt
+
+- Vereist een waarde
+
+### `--environment`, `-e`
+
+De milieu-id
+
+- Vereist een waarde
+
+### `--help`, `-h`
+
+Dit Help-bericht weergeven
+
+- Standaard: `false`
+- Accepteert geen waarde
+
+### `--verbose`, `-v|-vv|-vvv`
+
+Verhoog de breedheid van berichten
+
+- Standaard: `false`
+- Accepteert geen waarde
+
+### `--version`, `-V`
+
+Deze toepassingsversie weergeven
+
+- Standaard: `false`
+- Accepteert geen waarde
+
+### `--yes`, `-y`
+
+&quot;ja&quot; antwoorden op bevestigingsvragen; accepteert de standaardwaarde voor andere vragen; interactie uitschakelen
+
+- Standaard: `false`
+- Accepteert geen waarde
+
+### `--no-interaction`
+
+Geen interactieve vragen stellen; Accepteer standaardwaarden. Gelijk aan het gebruik van de omgevingsvariabele: &lt;comment>Magento_CLOUD_CLI_NO_INTERACTION=1&lt;/comment>
+
+- Standaard: `false`
+- Accepteert geen waarde
+
+### `--ansi`
+
+ANSI-uitvoer forceren
+
+- Standaard: `false`
+- Accepteert geen waarde
+
+### `--no-ansi`
+
+ANSI-uitvoer uitschakelen
+
+- Standaard: `false`
+- Accepteert geen waarde
+
+### `--no`, `-n`
+
+Antwoord &quot;nee&quot; op bevestigingsvragen; accepteert de standaardwaarde voor andere vragen; interactie uitschakelen
+
+- Standaard: `false`
+- Accepteert geen waarde
+
+### `--quiet`, `-q`
+
+Geen bericht uitvoeren
 
 - Standaard: `false`
 - Accepteert geen waarde
@@ -2093,7 +2980,7 @@ Antwoord &quot;nee&quot; op ja/nee-vragen. interactie uitschakelen
 Een SSL-certificaat toevoegen aan het project
 
 ```bash
-magento-cloud certificate:add [--cert CERT] [--key KEY] [--chain CHAIN] [-p|--project PROJECT] [--host HOST] [-W|--no-wait] [--wait]
+magento-cloud certificate:add [--cert CERT] [--key KEY] [--chain CHAIN] [-p|--project PROJECT] [-W|--no-wait] [--wait]
 ```
 
 ### `--cert`
@@ -2123,7 +3010,7 @@ De project-id of URL
 
 ### `--host`
 
-De API-hostnaam van het project
+Vervangen optie, niet meer gebruikt
 
 - Vereist een waarde
 
@@ -2148,13 +3035,6 @@ Dit Help-bericht weergeven
 - Standaard: `false`
 - Accepteert geen waarde
 
-### `--quiet`, `-q`
-
-Geen bericht uitvoeren
-
-- Standaard: `false`
-- Accepteert geen waarde
-
 ### `--verbose`, `-v|-vv|-vvv`
 
 Verhoog de breedheid van berichten
@@ -2171,14 +3051,42 @@ Deze toepassingsversie weergeven
 
 ### `--yes`, `-y`
 
-Antwoord &quot;ja&quot; op ja/nee-vragen interactie uitschakelen
+&quot;ja&quot; antwoorden op bevestigingsvragen; accepteert de standaardwaarde voor andere vragen; interactie uitschakelen
+
+- Standaard: `false`
+- Accepteert geen waarde
+
+### `--no-interaction`
+
+Geen interactieve vragen stellen; Accepteer standaardwaarden. Gelijk aan het gebruik van de omgevingsvariabele: &lt;comment>Magento_CLOUD_CLI_NO_INTERACTION=1&lt;/comment>
+
+- Standaard: `false`
+- Accepteert geen waarde
+
+### `--ansi`
+
+ANSI-uitvoer forceren
+
+- Standaard: `false`
+- Accepteert geen waarde
+
+### `--no-ansi`
+
+ANSI-uitvoer uitschakelen
 
 - Standaard: `false`
 - Accepteert geen waarde
 
 ### `--no`, `-n`
 
-Antwoord &quot;nee&quot; op ja/nee-vragen. interactie uitschakelen
+Antwoord &quot;nee&quot; op bevestigingsvragen; accepteert de standaardwaarde voor andere vragen; interactie uitschakelen
+
+- Standaard: `false`
+- Accepteert geen waarde
+
+### `--quiet`, `-q`
+
+Geen bericht uitvoeren
 
 - Standaard: `false`
 - Accepteert geen waarde
@@ -2189,7 +3097,7 @@ Antwoord &quot;nee&quot; op ja/nee-vragen. interactie uitschakelen
 Een certificaat verwijderen uit het project
 
 ```bash
-magento-cloud certificate:delete [-p|--project PROJECT] [--host HOST] [-W|--no-wait] [--wait] [--] <id>
+magento-cloud certificate:delete [-p|--project PROJECT] [-W|--no-wait] [--wait] [--] <id>
 ```
 
 
@@ -2207,7 +3115,7 @@ De project-id of URL
 
 ### `--host`
 
-De API-hostnaam van het project
+Vervangen optie, niet meer gebruikt
 
 - Vereist een waarde
 
@@ -2232,13 +3140,6 @@ Dit Help-bericht weergeven
 - Standaard: `false`
 - Accepteert geen waarde
 
-### `--quiet`, `-q`
-
-Geen bericht uitvoeren
-
-- Standaard: `false`
-- Accepteert geen waarde
-
 ### `--verbose`, `-v|-vv|-vvv`
 
 Verhoog de breedheid van berichten
@@ -2255,14 +3156,42 @@ Deze toepassingsversie weergeven
 
 ### `--yes`, `-y`
 
-Antwoord &quot;ja&quot; op ja/nee-vragen interactie uitschakelen
+&quot;ja&quot; antwoorden op bevestigingsvragen; accepteert de standaardwaarde voor andere vragen; interactie uitschakelen
+
+- Standaard: `false`
+- Accepteert geen waarde
+
+### `--no-interaction`
+
+Geen interactieve vragen stellen; Accepteer standaardwaarden. Gelijk aan het gebruik van de omgevingsvariabele: &lt;comment>Magento_CLOUD_CLI_NO_INTERACTION=1&lt;/comment>
+
+- Standaard: `false`
+- Accepteert geen waarde
+
+### `--ansi`
+
+ANSI-uitvoer forceren
+
+- Standaard: `false`
+- Accepteert geen waarde
+
+### `--no-ansi`
+
+ANSI-uitvoer uitschakelen
 
 - Standaard: `false`
 - Accepteert geen waarde
 
 ### `--no`, `-n`
 
-Antwoord &quot;nee&quot; op ja/nee-vragen. interactie uitschakelen
+Antwoord &quot;nee&quot; op bevestigingsvragen; accepteert de standaardwaarde voor andere vragen; interactie uitschakelen
+
+- Standaard: `false`
+- Accepteert geen waarde
+
+### `--quiet`, `-q`
+
+Geen bericht uitvoeren
 
 - Standaard: `false`
 - Accepteert geen waarde
@@ -2273,7 +3202,7 @@ Antwoord &quot;nee&quot; op ja/nee-vragen. interactie uitschakelen
 Een certificaat weergeven
 
 ```bash
-magento-cloud certificate:get [-P|--property PROPERTY] [--date-fmt DATE-FMT] [-p|--project PROJECT] [--host HOST] [--] <id>
+magento-cloud certificate:get [-P|--property PROPERTY] [--date-fmt DATE-FMT] [-p|--project PROJECT] [--] <id>
 ```
 
 
@@ -2304,20 +3233,13 @@ De project-id of URL
 
 ### `--host`
 
-De API-hostnaam van het project
+Vervangen optie, niet meer gebruikt
 
 - Vereist een waarde
 
 ### `--help`, `-h`
 
 Dit Help-bericht weergeven
-
-- Standaard: `false`
-- Accepteert geen waarde
-
-### `--quiet`, `-q`
-
-Geen bericht uitvoeren
 
 - Standaard: `false`
 - Accepteert geen waarde
@@ -2338,14 +3260,42 @@ Deze toepassingsversie weergeven
 
 ### `--yes`, `-y`
 
-Antwoord &quot;ja&quot; op ja/nee-vragen interactie uitschakelen
+&quot;ja&quot; antwoorden op bevestigingsvragen; accepteert de standaardwaarde voor andere vragen; interactie uitschakelen
+
+- Standaard: `false`
+- Accepteert geen waarde
+
+### `--no-interaction`
+
+Geen interactieve vragen stellen; Accepteer standaardwaarden. Gelijk aan het gebruik van de omgevingsvariabele: &lt;comment>Magento_CLOUD_CLI_NO_INTERACTION=1&lt;/comment>
+
+- Standaard: `false`
+- Accepteert geen waarde
+
+### `--ansi`
+
+ANSI-uitvoer forceren
+
+- Standaard: `false`
+- Accepteert geen waarde
+
+### `--no-ansi`
+
+ANSI-uitvoer uitschakelen
 
 - Standaard: `false`
 - Accepteert geen waarde
 
 ### `--no`, `-n`
 
-Antwoord &quot;nee&quot; op ja/nee-vragen. interactie uitschakelen
+Antwoord &quot;nee&quot; op bevestigingsvragen; accepteert de standaardwaarde voor andere vragen; interactie uitschakelen
+
+- Standaard: `false`
+- Accepteert geen waarde
+
+### `--quiet`, `-q`
+
+Geen bericht uitvoeren
 
 - Standaard: `false`
 - Accepteert geen waarde
@@ -2356,7 +3306,7 @@ Antwoord &quot;nee&quot; op ja/nee-vragen. interactie uitschakelen
 Projectcertificaten weergeven
 
 ```bash
-magento-cloud certificate:list [--domain DOMAIN] [--exclude-domain EXCLUDE-DOMAIN] [--issuer ISSUER] [--only-auto] [--no-auto] [--ignore-expiry] [--only-expired] [--no-expired] [--pipe-domains] [--date-fmt DATE-FMT] [--format FORMAT] [--columns COLUMNS] [--no-header] [-p|--project PROJECT] [--host HOST]
+magento-cloud certificate:list [--domain DOMAIN] [--exclude-domain EXCLUDE-DOMAIN] [--issuer ISSUER] [--only-auto] [--no-auto] [--ignore-expiry] [--only-expired] [--no-expired] [--pipe-domains] [--date-fmt DATE-FMT] [--format FORMAT] [-c|--columns COLUMNS] [--no-header] [-p|--project PROJECT]
 ```
 
 
@@ -2438,14 +3388,14 @@ De datumnotatie (als een PHP-datumnotatietekenreeks)
 
 ### `--format`
 
-De uitvoerindeling (&quot;table&quot;, &quot;csv&quot;, &quot;tsv&quot; of &quot;plain&quot;)
+De uitvoerindeling: table, csv, tsv of plain
 
 - Standaard: `table`
 - Vereist een waarde
 
-### `--columns`
+### `--columns`, `-c`
 
-Weer te geven kolommen (lijst met door komma&#39;s gescheiden waarden of meerdere waarden)
+Weer te geven kolommen. Beschikbare kolommen: gemaakt, domeinen, verloopt, id, uitgever. Als een lijst als één waarde wordt gegeven (bv. &quot;a,b,c&quot;) wordt gesplitst in komma&#39;s en/of witruimte.
 
 - Standaard: `[]`
 - Vereist een waarde
@@ -2465,20 +3415,13 @@ De project-id of URL
 
 ### `--host`
 
-De API-hostnaam van het project
+Vervangen optie, niet meer gebruikt
 
 - Vereist een waarde
 
 ### `--help`, `-h`
 
 Dit Help-bericht weergeven
-
-- Standaard: `false`
-- Accepteert geen waarde
-
-### `--quiet`, `-q`
-
-Geen bericht uitvoeren
 
 - Standaard: `false`
 - Accepteert geen waarde
@@ -2499,14 +3442,42 @@ Deze toepassingsversie weergeven
 
 ### `--yes`, `-y`
 
-Antwoord &quot;ja&quot; op ja/nee-vragen interactie uitschakelen
+&quot;ja&quot; antwoorden op bevestigingsvragen; accepteert de standaardwaarde voor andere vragen; interactie uitschakelen
+
+- Standaard: `false`
+- Accepteert geen waarde
+
+### `--no-interaction`
+
+Geen interactieve vragen stellen; Accepteer standaardwaarden. Gelijk aan het gebruik van de omgevingsvariabele: &lt;comment>Magento_CLOUD_CLI_NO_INTERACTION=1&lt;/comment>
+
+- Standaard: `false`
+- Accepteert geen waarde
+
+### `--ansi`
+
+ANSI-uitvoer forceren
+
+- Standaard: `false`
+- Accepteert geen waarde
+
+### `--no-ansi`
+
+ANSI-uitvoer uitschakelen
 
 - Standaard: `false`
 - Accepteert geen waarde
 
 ### `--no`, `-n`
 
-Antwoord &quot;nee&quot; op ja/nee-vragen. interactie uitschakelen
+Antwoord &quot;nee&quot; op bevestigingsvragen; accepteert de standaardwaarde voor andere vragen; interactie uitschakelen
+
+- Standaard: `false`
+- Accepteert geen waarde
+
+### `--quiet`, `-q`
+
+Geen bericht uitvoeren
 
 - Standaard: `false`
 - Accepteert geen waarde
@@ -2517,7 +3488,7 @@ Antwoord &quot;nee&quot; op ja/nee-vragen. interactie uitschakelen
 Vastleggingsdetails tonen
 
 ```bash
-magento-cloud commit:get [-P|--property PROPERTY] [-p|--project PROJECT] [--host HOST] [-e|--environment ENVIRONMENT] [--date-fmt DATE-FMT] [--format FORMAT] [--columns COLUMNS] [--no-header] [--] [<commit>]
+magento-cloud commit:get [-P|--property PROPERTY] [-p|--project PROJECT] [-e|--environment ENVIRONMENT] [--date-fmt DATE-FMT] [--] [<commit>]
 ```
 
 
@@ -2542,7 +3513,7 @@ De project-id of URL
 
 ### `--host`
 
-De API-hostnaam van het project
+Vervangen optie, niet meer gebruikt
 
 - Vereist een waarde
 
@@ -2586,13 +3557,6 @@ Dit Help-bericht weergeven
 - Standaard: `false`
 - Accepteert geen waarde
 
-### `--quiet`, `-q`
-
-Geen bericht uitvoeren
-
-- Standaard: `false`
-- Accepteert geen waarde
-
 ### `--verbose`, `-v|-vv|-vvv`
 
 Verhoog de breedheid van berichten
@@ -2609,14 +3573,42 @@ Deze toepassingsversie weergeven
 
 ### `--yes`, `-y`
 
-Antwoord &quot;ja&quot; op ja/nee-vragen interactie uitschakelen
+&quot;ja&quot; antwoorden op bevestigingsvragen; accepteert de standaardwaarde voor andere vragen; interactie uitschakelen
+
+- Standaard: `false`
+- Accepteert geen waarde
+
+### `--no-interaction`
+
+Geen interactieve vragen stellen; Accepteer standaardwaarden. Gelijk aan het gebruik van de omgevingsvariabele: &lt;comment>Magento_CLOUD_CLI_NO_INTERACTION=1&lt;/comment>
+
+- Standaard: `false`
+- Accepteert geen waarde
+
+### `--ansi`
+
+ANSI-uitvoer forceren
+
+- Standaard: `false`
+- Accepteert geen waarde
+
+### `--no-ansi`
+
+ANSI-uitvoer uitschakelen
 
 - Standaard: `false`
 - Accepteert geen waarde
 
 ### `--no`, `-n`
 
-Antwoord &quot;nee&quot; op ja/nee-vragen. interactie uitschakelen
+Antwoord &quot;nee&quot; op bevestigingsvragen; accepteert de standaardwaarde voor andere vragen; interactie uitschakelen
+
+- Standaard: `false`
+- Accepteert geen waarde
+
+### `--quiet`, `-q`
+
+Geen bericht uitvoeren
 
 - Standaard: `false`
 - Accepteert geen waarde
@@ -2627,7 +3619,7 @@ Antwoord &quot;nee&quot; op ja/nee-vragen. interactie uitschakelen
 Lijstopdrachten
 
 ```bash
-magento-cloud commits [--limit LIMIT] [-p|--project PROJECT] [--host HOST] [-e|--environment ENVIRONMENT] [--format FORMAT] [--columns COLUMNS] [--no-header] [--date-fmt DATE-FMT] [--] [<commit>]
+magento-cloud commits [--limit LIMIT] [-p|--project PROJECT] [-e|--environment ENVIRONMENT] [--format FORMAT] [-c|--columns COLUMNS] [--no-header] [--date-fmt DATE-FMT] [--] [<commit>]
 ```
 
 
@@ -2656,7 +3648,7 @@ De project-id of URL
 
 ### `--host`
 
-De API-hostnaam van het project
+Vervangen optie, niet meer gebruikt
 
 - Vereist een waarde
 
@@ -2668,14 +3660,14 @@ De milieu-id
 
 ### `--format`
 
-De uitvoerindeling (&quot;table&quot;, &quot;csv&quot;, &quot;tsv&quot; of &quot;plain&quot;)
+De uitvoerindeling: table, csv, tsv of plain
 
 - Standaard: `table`
 - Vereist een waarde
 
-### `--columns`
+### `--columns`, `-c`
 
-Weer te geven kolommen (lijst met door komma&#39;s gescheiden waarden of meerdere waarden)
+Weer te geven kolommen. Beschikbare kolommen: auteur, date, sha, summary. Als een lijst als één waarde wordt gegeven (bv. &quot;a,b,c&quot;) wordt gesplitst in komma&#39;s en/of witruimte.
 
 - Standaard: `[]`
 - Vereist een waarde
@@ -2701,13 +3693,6 @@ Dit Help-bericht weergeven
 - Standaard: `false`
 - Accepteert geen waarde
 
-### `--quiet`, `-q`
-
-Geen bericht uitvoeren
-
-- Standaard: `false`
-- Accepteert geen waarde
-
 ### `--verbose`, `-v|-vv|-vvv`
 
 Verhoog de breedheid van berichten
@@ -2724,14 +3709,42 @@ Deze toepassingsversie weergeven
 
 ### `--yes`, `-y`
 
-Antwoord &quot;ja&quot; op ja/nee-vragen interactie uitschakelen
+&quot;ja&quot; antwoorden op bevestigingsvragen; accepteert de standaardwaarde voor andere vragen; interactie uitschakelen
+
+- Standaard: `false`
+- Accepteert geen waarde
+
+### `--no-interaction`
+
+Geen interactieve vragen stellen; Accepteer standaardwaarden. Gelijk aan het gebruik van de omgevingsvariabele: &lt;comment>Magento_CLOUD_CLI_NO_INTERACTION=1&lt;/comment>
+
+- Standaard: `false`
+- Accepteert geen waarde
+
+### `--ansi`
+
+ANSI-uitvoer forceren
+
+- Standaard: `false`
+- Accepteert geen waarde
+
+### `--no-ansi`
+
+ANSI-uitvoer uitschakelen
 
 - Standaard: `false`
 - Accepteert geen waarde
 
 ### `--no`, `-n`
 
-Antwoord &quot;nee&quot; op ja/nee-vragen. interactie uitschakelen
+Antwoord &quot;nee&quot; op bevestigingsvragen; accepteert de standaardwaarde voor andere vragen; interactie uitschakelen
+
+- Standaard: `false`
+- Accepteert geen waarde
+
+### `--quiet`, `-q`
+
+Geen bericht uitvoeren
 
 - Standaard: `false`
 - Accepteert geen waarde
@@ -2742,7 +3755,7 @@ Antwoord &quot;nee&quot; op ja/nee-vragen. interactie uitschakelen
 Creeer een lokale stortplaats van het verre gegevensbestand
 
 ```bash
-magento-cloud db:dump [--schema SCHEMA] [-f|--file FILE] [-d|--directory DIRECTORY] [-z|--gzip] [-t|--timestamp] [-o|--stdout] [--table TABLE] [--exclude-table EXCLUDE-TABLE] [--schema-only] [--charset CHARSET] [-p|--project PROJECT] [--host HOST] [-e|--environment ENVIRONMENT] [-A|--app APP] [-r|--relationship RELATIONSHIP] [-i|--identity-file IDENTITY-FILE]
+magento-cloud db:dump [--schema SCHEMA] [-f|--file FILE] [-d|--directory DIRECTORY] [-z|--gzip] [-t|--timestamp] [-o|--stdout] [--table TABLE] [--exclude-table EXCLUDE-TABLE] [--schema-only] [--charset CHARSET] [-p|--project PROJECT] [-e|--environment ENVIRONMENT] [-A|--app APP] [-r|--relationship RELATIONSHIP] [-i|--identity-file IDENTITY-FILE]
 ```
 
 
@@ -2829,7 +3842,7 @@ De project-id of URL
 
 ### `--host`
 
-De API-hostnaam van het project
+Vervangen optie, niet meer gebruikt
 
 - Vereist een waarde
 
@@ -2864,13 +3877,6 @@ Dit Help-bericht weergeven
 - Standaard: `false`
 - Accepteert geen waarde
 
-### `--quiet`, `-q`
-
-Geen bericht uitvoeren
-
-- Standaard: `false`
-- Accepteert geen waarde
-
 ### `--verbose`, `-v|-vv|-vvv`
 
 Verhoog de breedheid van berichten
@@ -2887,14 +3893,42 @@ Deze toepassingsversie weergeven
 
 ### `--yes`, `-y`
 
-Antwoord &quot;ja&quot; op ja/nee-vragen interactie uitschakelen
+&quot;ja&quot; antwoorden op bevestigingsvragen; accepteert de standaardwaarde voor andere vragen; interactie uitschakelen
+
+- Standaard: `false`
+- Accepteert geen waarde
+
+### `--no-interaction`
+
+Geen interactieve vragen stellen; Accepteer standaardwaarden. Gelijk aan het gebruik van de omgevingsvariabele: &lt;comment>Magento_CLOUD_CLI_NO_INTERACTION=1&lt;/comment>
+
+- Standaard: `false`
+- Accepteert geen waarde
+
+### `--ansi`
+
+ANSI-uitvoer forceren
+
+- Standaard: `false`
+- Accepteert geen waarde
+
+### `--no-ansi`
+
+ANSI-uitvoer uitschakelen
 
 - Standaard: `false`
 - Accepteert geen waarde
 
 ### `--no`, `-n`
 
-Antwoord &quot;nee&quot; op ja/nee-vragen. interactie uitschakelen
+Antwoord &quot;nee&quot; op bevestigingsvragen; accepteert de standaardwaarde voor andere vragen; interactie uitschakelen
+
+- Standaard: `false`
+- Accepteert geen waarde
+
+### `--quiet`, `-q`
+
+Geen bericht uitvoeren
 
 - Standaard: `false`
 - Accepteert geen waarde
@@ -2905,7 +3939,7 @@ Antwoord &quot;nee&quot; op ja/nee-vragen. interactie uitschakelen
 Schatting van het schijfgebruik van een gegevensbestand
 
 ```bash
-magento-cloud db:size [-B|--bytes] [-C|--cleanup] [-p|--project PROJECT] [--host HOST] [-e|--environment ENVIRONMENT] [-A|--app APP] [-r|--relationship RELATIONSHIP] [--format FORMAT] [--columns COLUMNS] [--no-header] [-i|--identity-file IDENTITY-FILE]
+magento-cloud db:size [-B|--bytes] [-C|--cleanup] [-p|--project PROJECT] [-e|--environment ENVIRONMENT] [-A|--app APP] [-r|--relationship RELATIONSHIP] [--format FORMAT] [-c|--columns COLUMNS] [--no-header] [-i|--identity-file IDENTITY-FILE]
 ```
 
 ### `--bytes`, `-B`
@@ -2930,7 +3964,7 @@ De project-id of URL
 
 ### `--host`
 
-De API-hostnaam van het project
+Vervangen optie, niet meer gebruikt
 
 - Vereist een waarde
 
@@ -2954,14 +3988,14 @@ De de dienstverhouding om te gebruiken
 
 ### `--format`
 
-De uitvoerindeling (&quot;table&quot;, &quot;csv&quot;, &quot;tsv&quot; of &quot;plain&quot;)
+De uitvoerindeling: table, csv, tsv of plain
 
 - Standaard: `table`
 - Vereist een waarde
 
-### `--columns`
+### `--columns`, `-c`
 
-Weer te geven kolommen (lijst met door komma&#39;s gescheiden waarden of meerdere waarden)
+Weer te geven kolommen. Beschikbare kolommen: max, percent_used, used. Als een lijst als één waarde wordt gegeven (bv. &quot;a,b,c&quot;) wordt gesplitst in komma&#39;s en/of witruimte.
 
 - Standaard: `[]`
 - Vereist een waarde
@@ -2986,13 +4020,6 @@ Dit Help-bericht weergeven
 - Standaard: `false`
 - Accepteert geen waarde
 
-### `--quiet`, `-q`
-
-Geen bericht uitvoeren
-
-- Standaard: `false`
-- Accepteert geen waarde
-
 ### `--verbose`, `-v|-vv|-vvv`
 
 Verhoog de breedheid van berichten
@@ -3009,14 +4036,42 @@ Deze toepassingsversie weergeven
 
 ### `--yes`, `-y`
 
-Antwoord &quot;ja&quot; op ja/nee-vragen interactie uitschakelen
+&quot;ja&quot; antwoorden op bevestigingsvragen; accepteert de standaardwaarde voor andere vragen; interactie uitschakelen
+
+- Standaard: `false`
+- Accepteert geen waarde
+
+### `--no-interaction`
+
+Geen interactieve vragen stellen; Accepteer standaardwaarden. Gelijk aan het gebruik van de omgevingsvariabele: &lt;comment>Magento_CLOUD_CLI_NO_INTERACTION=1&lt;/comment>
+
+- Standaard: `false`
+- Accepteert geen waarde
+
+### `--ansi`
+
+ANSI-uitvoer forceren
+
+- Standaard: `false`
+- Accepteert geen waarde
+
+### `--no-ansi`
+
+ANSI-uitvoer uitschakelen
 
 - Standaard: `false`
 - Accepteert geen waarde
 
 ### `--no`, `-n`
 
-Antwoord &quot;nee&quot; op ja/nee-vragen. interactie uitschakelen
+Antwoord &quot;nee&quot; op bevestigingsvragen; accepteert de standaardwaarde voor andere vragen; interactie uitschakelen
+
+- Standaard: `false`
+- Accepteert geen waarde
+
+### `--quiet`, `-q`
+
+Geen bericht uitvoeren
 
 - Standaard: `false`
 - Accepteert geen waarde
@@ -3027,7 +4082,7 @@ Antwoord &quot;nee&quot; op ja/nee-vragen. interactie uitschakelen
 SQL uitvoeren op de externe database
 
 ```bash
-magento-cloud sql [--raw] [--schema SCHEMA] [-p|--project PROJECT] [--host HOST] [-e|--environment ENVIRONMENT] [-A|--app APP] [-r|--relationship RELATIONSHIP] [-i|--identity-file IDENTITY-FILE] [--] [<query>]
+magento-cloud sql [--raw] [--schema SCHEMA] [-p|--project PROJECT] [-e|--environment ENVIRONMENT] [-A|--app APP] [-r|--relationship RELATIONSHIP] [-i|--identity-file IDENTITY-FILE] [--] [<query>]
 ```
 
 
@@ -3067,7 +4122,7 @@ De project-id of URL
 
 ### `--host`
 
-De API-hostnaam van het project
+Vervangen optie, niet meer gebruikt
 
 - Vereist een waarde
 
@@ -3102,13 +4157,6 @@ Dit Help-bericht weergeven
 - Standaard: `false`
 - Accepteert geen waarde
 
-### `--quiet`, `-q`
-
-Geen bericht uitvoeren
-
-- Standaard: `false`
-- Accepteert geen waarde
-
 ### `--verbose`, `-v|-vv|-vvv`
 
 Verhoog de breedheid van berichten
@@ -3125,14 +4173,42 @@ Deze toepassingsversie weergeven
 
 ### `--yes`, `-y`
 
-Antwoord &quot;ja&quot; op ja/nee-vragen interactie uitschakelen
+&quot;ja&quot; antwoorden op bevestigingsvragen; accepteert de standaardwaarde voor andere vragen; interactie uitschakelen
+
+- Standaard: `false`
+- Accepteert geen waarde
+
+### `--no-interaction`
+
+Geen interactieve vragen stellen; Accepteer standaardwaarden. Gelijk aan het gebruik van de omgevingsvariabele: &lt;comment>Magento_CLOUD_CLI_NO_INTERACTION=1&lt;/comment>
+
+- Standaard: `false`
+- Accepteert geen waarde
+
+### `--ansi`
+
+ANSI-uitvoer forceren
+
+- Standaard: `false`
+- Accepteert geen waarde
+
+### `--no-ansi`
+
+ANSI-uitvoer uitschakelen
 
 - Standaard: `false`
 - Accepteert geen waarde
 
 ### `--no`, `-n`
 
-Antwoord &quot;nee&quot; op ja/nee-vragen. interactie uitschakelen
+Antwoord &quot;nee&quot; op bevestigingsvragen; accepteert de standaardwaarde voor andere vragen; interactie uitschakelen
+
+- Standaard: `false`
+- Accepteert geen waarde
+
+### `--quiet`, `-q`
+
+Geen bericht uitvoeren
 
 - Standaard: `false`
 - Accepteert geen waarde
@@ -3143,7 +4219,7 @@ Antwoord &quot;nee&quot; op ja/nee-vragen. interactie uitschakelen
 Een nieuw domein toevoegen aan het project
 
 ```bash
-magento-cloud domain:add [--cert CERT] [--key KEY] [--chain CHAIN] [-p|--project PROJECT] [--host HOST] [-W|--no-wait] [--wait] [--] <name>
+magento-cloud domain:add [--cert CERT] [--key KEY] [--chain CHAIN] [-p|--project PROJECT] [-W|--no-wait] [--wait] [--] <name>
 ```
 
 
@@ -3180,7 +4256,7 @@ De project-id of URL
 
 ### `--host`
 
-De API-hostnaam van het project
+Vervangen optie, niet meer gebruikt
 
 - Vereist een waarde
 
@@ -3205,13 +4281,6 @@ Dit Help-bericht weergeven
 - Standaard: `false`
 - Accepteert geen waarde
 
-### `--quiet`, `-q`
-
-Geen bericht uitvoeren
-
-- Standaard: `false`
-- Accepteert geen waarde
-
 ### `--verbose`, `-v|-vv|-vvv`
 
 Verhoog de breedheid van berichten
@@ -3228,14 +4297,42 @@ Deze toepassingsversie weergeven
 
 ### `--yes`, `-y`
 
-Antwoord &quot;ja&quot; op ja/nee-vragen interactie uitschakelen
+&quot;ja&quot; antwoorden op bevestigingsvragen; accepteert de standaardwaarde voor andere vragen; interactie uitschakelen
+
+- Standaard: `false`
+- Accepteert geen waarde
+
+### `--no-interaction`
+
+Geen interactieve vragen stellen; Accepteer standaardwaarden. Gelijk aan het gebruik van de omgevingsvariabele: &lt;comment>Magento_CLOUD_CLI_NO_INTERACTION=1&lt;/comment>
+
+- Standaard: `false`
+- Accepteert geen waarde
+
+### `--ansi`
+
+ANSI-uitvoer forceren
+
+- Standaard: `false`
+- Accepteert geen waarde
+
+### `--no-ansi`
+
+ANSI-uitvoer uitschakelen
 
 - Standaard: `false`
 - Accepteert geen waarde
 
 ### `--no`, `-n`
 
-Antwoord &quot;nee&quot; op ja/nee-vragen. interactie uitschakelen
+Antwoord &quot;nee&quot; op bevestigingsvragen; accepteert de standaardwaarde voor andere vragen; interactie uitschakelen
+
+- Standaard: `false`
+- Accepteert geen waarde
+
+### `--quiet`, `-q`
+
+Geen bericht uitvoeren
 
 - Standaard: `false`
 - Accepteert geen waarde
@@ -3246,7 +4343,7 @@ Antwoord &quot;nee&quot; op ja/nee-vragen. interactie uitschakelen
 Een domein verwijderen uit het project
 
 ```bash
-magento-cloud domain:delete [-p|--project PROJECT] [--host HOST] [-W|--no-wait] [--wait] [--] <name>
+magento-cloud domain:delete [-p|--project PROJECT] [-W|--no-wait] [--wait] [--] <name>
 ```
 
 
@@ -3264,7 +4361,7 @@ De project-id of URL
 
 ### `--host`
 
-De API-hostnaam van het project
+Vervangen optie, niet meer gebruikt
 
 - Vereist een waarde
 
@@ -3289,13 +4386,6 @@ Dit Help-bericht weergeven
 - Standaard: `false`
 - Accepteert geen waarde
 
-### `--quiet`, `-q`
-
-Geen bericht uitvoeren
-
-- Standaard: `false`
-- Accepteert geen waarde
-
 ### `--verbose`, `-v|-vv|-vvv`
 
 Verhoog de breedheid van berichten
@@ -3312,14 +4402,42 @@ Deze toepassingsversie weergeven
 
 ### `--yes`, `-y`
 
-Antwoord &quot;ja&quot; op ja/nee-vragen interactie uitschakelen
+&quot;ja&quot; antwoorden op bevestigingsvragen; accepteert de standaardwaarde voor andere vragen; interactie uitschakelen
+
+- Standaard: `false`
+- Accepteert geen waarde
+
+### `--no-interaction`
+
+Geen interactieve vragen stellen; Accepteer standaardwaarden. Gelijk aan het gebruik van de omgevingsvariabele: &lt;comment>Magento_CLOUD_CLI_NO_INTERACTION=1&lt;/comment>
+
+- Standaard: `false`
+- Accepteert geen waarde
+
+### `--ansi`
+
+ANSI-uitvoer forceren
+
+- Standaard: `false`
+- Accepteert geen waarde
+
+### `--no-ansi`
+
+ANSI-uitvoer uitschakelen
 
 - Standaard: `false`
 - Accepteert geen waarde
 
 ### `--no`, `-n`
 
-Antwoord &quot;nee&quot; op ja/nee-vragen. interactie uitschakelen
+Antwoord &quot;nee&quot; op bevestigingsvragen; accepteert de standaardwaarde voor andere vragen; interactie uitschakelen
+
+- Standaard: `false`
+- Accepteert geen waarde
+
+### `--quiet`, `-q`
+
+Geen bericht uitvoeren
 
 - Standaard: `false`
 - Accepteert geen waarde
@@ -3330,7 +4448,7 @@ Antwoord &quot;nee&quot; op ja/nee-vragen. interactie uitschakelen
 Gedetailleerde informatie voor een domein weergeven
 
 ```bash
-magento-cloud domain:get [-P|--property PROPERTY] [--format FORMAT] [--columns COLUMNS] [--no-header] [--date-fmt DATE-FMT] [-p|--project PROJECT] [--host HOST] [--] [<name>]
+magento-cloud domain:get [-P|--property PROPERTY] [--format FORMAT] [-c|--columns COLUMNS] [--no-header] [--date-fmt DATE-FMT] [-p|--project PROJECT] [--] [<name>]
 ```
 
 
@@ -3347,14 +4465,14 @@ De eigenschap domain die moet worden weergegeven
 
 ### `--format`
 
-De uitvoerindeling (&quot;table&quot;, &quot;csv&quot;, &quot;tsv&quot; of &quot;plain&quot;)
+De uitvoerindeling: table, csv, tsv of plain
 
 - Standaard: `table`
 - Vereist een waarde
 
-### `--columns`
+### `--columns`, `-c`
 
-Weer te geven kolommen (lijst met door komma&#39;s gescheiden waarden of meerdere waarden)
+Weer te geven kolommen. Als een lijst als één waarde wordt gegeven (bv. &quot;a,b,c&quot;) wordt gesplitst in komma&#39;s en/of witruimte.
 
 - Standaard: `[]`
 - Vereist een waarde
@@ -3381,20 +4499,13 @@ De project-id of URL
 
 ### `--host`
 
-De API-hostnaam van het project
+Vervangen optie, niet meer gebruikt
 
 - Vereist een waarde
 
 ### `--help`, `-h`
 
 Dit Help-bericht weergeven
-
-- Standaard: `false`
-- Accepteert geen waarde
-
-### `--quiet`, `-q`
-
-Geen bericht uitvoeren
 
 - Standaard: `false`
 - Accepteert geen waarde
@@ -3415,14 +4526,42 @@ Deze toepassingsversie weergeven
 
 ### `--yes`, `-y`
 
-Antwoord &quot;ja&quot; op ja/nee-vragen interactie uitschakelen
+&quot;ja&quot; antwoorden op bevestigingsvragen; accepteert de standaardwaarde voor andere vragen; interactie uitschakelen
+
+- Standaard: `false`
+- Accepteert geen waarde
+
+### `--no-interaction`
+
+Geen interactieve vragen stellen; Accepteer standaardwaarden. Gelijk aan het gebruik van de omgevingsvariabele: &lt;comment>Magento_CLOUD_CLI_NO_INTERACTION=1&lt;/comment>
+
+- Standaard: `false`
+- Accepteert geen waarde
+
+### `--ansi`
+
+ANSI-uitvoer forceren
+
+- Standaard: `false`
+- Accepteert geen waarde
+
+### `--no-ansi`
+
+ANSI-uitvoer uitschakelen
 
 - Standaard: `false`
 - Accepteert geen waarde
 
 ### `--no`, `-n`
 
-Antwoord &quot;nee&quot; op ja/nee-vragen. interactie uitschakelen
+Antwoord &quot;nee&quot; op bevestigingsvragen; accepteert de standaardwaarde voor andere vragen; interactie uitschakelen
+
+- Standaard: `false`
+- Accepteert geen waarde
+
+### `--quiet`, `-q`
+
+Geen bericht uitvoeren
 
 - Standaard: `false`
 - Accepteert geen waarde
@@ -3433,7 +4572,7 @@ Antwoord &quot;nee&quot; op ja/nee-vragen. interactie uitschakelen
 Een lijst met alle domeinen ophalen
 
 ```bash
-magento-cloud domains [--format FORMAT] [--columns COLUMNS] [--no-header] [-p|--project PROJECT] [--host HOST]
+magento-cloud domains [--format FORMAT] [-c|--columns COLUMNS] [--no-header] [-p|--project PROJECT]
 ```
 
 
@@ -3443,14 +4582,14 @@ domains
 
 ### `--format`
 
-De uitvoerindeling (&quot;table&quot;, &quot;csv&quot;, &quot;tsv&quot; of &quot;plain&quot;)
+De uitvoerindeling: table, csv, tsv of plain
 
 - Standaard: `table`
 - Vereist een waarde
 
-### `--columns`
+### `--columns`, `-c`
 
-Weer te geven kolommen (lijst met door komma&#39;s gescheiden waarden of meerdere waarden)
+Weer te geven kolommen. Beschikbare kolommen: name*, ssl*, created_at*, updated_at (* = default columns). Het teken &quot;+&quot; kan worden gebruikt als tijdelijke aanduiding voor de standaardkolommen. Als een lijst als één waarde wordt gegeven (bv. &quot;a,b,c&quot;) wordt gesplitst in komma&#39;s en/of witruimte.
 
 - Standaard: `[]`
 - Vereist een waarde
@@ -3470,20 +4609,13 @@ De project-id of URL
 
 ### `--host`
 
-De API-hostnaam van het project
+Vervangen optie, niet meer gebruikt
 
 - Vereist een waarde
 
 ### `--help`, `-h`
 
 Dit Help-bericht weergeven
-
-- Standaard: `false`
-- Accepteert geen waarde
-
-### `--quiet`, `-q`
-
-Geen bericht uitvoeren
 
 - Standaard: `false`
 - Accepteert geen waarde
@@ -3504,14 +4636,42 @@ Deze toepassingsversie weergeven
 
 ### `--yes`, `-y`
 
-Antwoord &quot;ja&quot; op ja/nee-vragen interactie uitschakelen
+&quot;ja&quot; antwoorden op bevestigingsvragen; accepteert de standaardwaarde voor andere vragen; interactie uitschakelen
+
+- Standaard: `false`
+- Accepteert geen waarde
+
+### `--no-interaction`
+
+Geen interactieve vragen stellen; Accepteer standaardwaarden. Gelijk aan het gebruik van de omgevingsvariabele: &lt;comment>Magento_CLOUD_CLI_NO_INTERACTION=1&lt;/comment>
+
+- Standaard: `false`
+- Accepteert geen waarde
+
+### `--ansi`
+
+ANSI-uitvoer forceren
+
+- Standaard: `false`
+- Accepteert geen waarde
+
+### `--no-ansi`
+
+ANSI-uitvoer uitschakelen
 
 - Standaard: `false`
 - Accepteert geen waarde
 
 ### `--no`, `-n`
 
-Antwoord &quot;nee&quot; op ja/nee-vragen. interactie uitschakelen
+Antwoord &quot;nee&quot; op bevestigingsvragen; accepteert de standaardwaarde voor andere vragen; interactie uitschakelen
+
+- Standaard: `false`
+- Accepteert geen waarde
+
+### `--quiet`, `-q`
+
+Geen bericht uitvoeren
 
 - Standaard: `false`
 - Accepteert geen waarde
@@ -3522,7 +4682,7 @@ Antwoord &quot;nee&quot; op ja/nee-vragen. interactie uitschakelen
 Een domein bijwerken
 
 ```bash
-magento-cloud domain:update [--cert CERT] [--key KEY] [--chain CHAIN] [-p|--project PROJECT] [--host HOST] [-W|--no-wait] [--wait] [--] <name>
+magento-cloud domain:update [--cert CERT] [--key KEY] [--chain CHAIN] [-p|--project PROJECT] [-W|--no-wait] [--wait] [--] <name>
 ```
 
 
@@ -3559,7 +4719,7 @@ De project-id of URL
 
 ### `--host`
 
-De API-hostnaam van het project
+Vervangen optie, niet meer gebruikt
 
 - Vereist een waarde
 
@@ -3584,13 +4744,6 @@ Dit Help-bericht weergeven
 - Standaard: `false`
 - Accepteert geen waarde
 
-### `--quiet`, `-q`
-
-Geen bericht uitvoeren
-
-- Standaard: `false`
-- Accepteert geen waarde
-
 ### `--verbose`, `-v|-vv|-vvv`
 
 Verhoog de breedheid van berichten
@@ -3607,14 +4760,42 @@ Deze toepassingsversie weergeven
 
 ### `--yes`, `-y`
 
-Antwoord &quot;ja&quot; op ja/nee-vragen interactie uitschakelen
+&quot;ja&quot; antwoorden op bevestigingsvragen; accepteert de standaardwaarde voor andere vragen; interactie uitschakelen
+
+- Standaard: `false`
+- Accepteert geen waarde
+
+### `--no-interaction`
+
+Geen interactieve vragen stellen; Accepteer standaardwaarden. Gelijk aan het gebruik van de omgevingsvariabele: &lt;comment>Magento_CLOUD_CLI_NO_INTERACTION=1&lt;/comment>
+
+- Standaard: `false`
+- Accepteert geen waarde
+
+### `--ansi`
+
+ANSI-uitvoer forceren
+
+- Standaard: `false`
+- Accepteert geen waarde
+
+### `--no-ansi`
+
+ANSI-uitvoer uitschakelen
 
 - Standaard: `false`
 - Accepteert geen waarde
 
 ### `--no`, `-n`
 
-Antwoord &quot;nee&quot; op ja/nee-vragen. interactie uitschakelen
+Antwoord &quot;nee&quot; op bevestigingsvragen; accepteert de standaardwaarde voor andere vragen; interactie uitschakelen
+
+- Standaard: `false`
+- Accepteert geen waarde
+
+### `--quiet`, `-q`
+
+Geen bericht uitvoeren
 
 - Standaard: `false`
 - Accepteert geen waarde
@@ -3625,7 +4806,7 @@ Antwoord &quot;nee&quot; op ja/nee-vragen. interactie uitschakelen
 Een omgeving activeren
 
 ```bash
-magento-cloud environment:activate [--parent PARENT] [-p|--project PROJECT] [--host HOST] [-e|--environment ENVIRONMENT] [-W|--no-wait] [--wait] [--] [<environment>]...
+magento-cloud environment:activate [--parent PARENT] [-p|--project PROJECT] [-e|--environment ENVIRONMENT] [-W|--no-wait] [--wait] [--] [<environment>]...
 ```
 
 
@@ -3651,7 +4832,7 @@ De project-id of URL
 
 ### `--host`
 
-De API-hostnaam van het project
+Vervangen optie, niet meer gebruikt
 
 - Vereist een waarde
 
@@ -3682,13 +4863,6 @@ Dit Help-bericht weergeven
 - Standaard: `false`
 - Accepteert geen waarde
 
-### `--quiet`, `-q`
-
-Geen bericht uitvoeren
-
-- Standaard: `false`
-- Accepteert geen waarde
-
 ### `--verbose`, `-v|-vv|-vvv`
 
 Verhoog de breedheid van berichten
@@ -3705,14 +4879,42 @@ Deze toepassingsversie weergeven
 
 ### `--yes`, `-y`
 
-Antwoord &quot;ja&quot; op ja/nee-vragen interactie uitschakelen
+&quot;ja&quot; antwoorden op bevestigingsvragen; accepteert de standaardwaarde voor andere vragen; interactie uitschakelen
+
+- Standaard: `false`
+- Accepteert geen waarde
+
+### `--no-interaction`
+
+Geen interactieve vragen stellen; Accepteer standaardwaarden. Gelijk aan het gebruik van de omgevingsvariabele: &lt;comment>Magento_CLOUD_CLI_NO_INTERACTION=1&lt;/comment>
+
+- Standaard: `false`
+- Accepteert geen waarde
+
+### `--ansi`
+
+ANSI-uitvoer forceren
+
+- Standaard: `false`
+- Accepteert geen waarde
+
+### `--no-ansi`
+
+ANSI-uitvoer uitschakelen
 
 - Standaard: `false`
 - Accepteert geen waarde
 
 ### `--no`, `-n`
 
-Antwoord &quot;nee&quot; op ja/nee-vragen. interactie uitschakelen
+Antwoord &quot;nee&quot; op bevestigingsvragen; accepteert de standaardwaarde voor andere vragen; interactie uitschakelen
+
+- Standaard: `false`
+- Accepteert geen waarde
+
+### `--quiet`, `-q`
+
+Geen bericht uitvoeren
 
 - Standaard: `false`
 - Accepteert geen waarde
@@ -3723,7 +4925,7 @@ Antwoord &quot;nee&quot; op ja/nee-vragen. interactie uitschakelen
 Een omgeving vertakken
 
 ```bash
-magento-cloud branch [--title TITLE] [--type TYPE] [--force] [--no-clone-parent] [-p|--project PROJECT] [--host HOST] [-e|--environment ENVIRONMENT] [-W|--no-wait] [--wait] [-i|--identity-file IDENTITY-FILE] [--] [<id>] [<parent>]
+magento-cloud branch [--title TITLE] [--type TYPE] [--force] [--no-clone-parent] [-p|--project PROJECT] [-e|--environment ENVIRONMENT] [-W|--no-wait] [--wait] [-i|--identity-file IDENTITY-FILE] [--] [<id>] [<parent>]
 ```
 
 
@@ -3776,7 +4978,7 @@ De project-id of URL
 
 ### `--host`
 
-De API-hostnaam van het project
+Vervangen optie, niet meer gebruikt
 
 - Vereist een waarde
 
@@ -3813,13 +5015,6 @@ Dit Help-bericht weergeven
 - Standaard: `false`
 - Accepteert geen waarde
 
-### `--quiet`, `-q`
-
-Geen bericht uitvoeren
-
-- Standaard: `false`
-- Accepteert geen waarde
-
 ### `--verbose`, `-v|-vv|-vvv`
 
 Verhoog de breedheid van berichten
@@ -3836,14 +5031,42 @@ Deze toepassingsversie weergeven
 
 ### `--yes`, `-y`
 
-Antwoord &quot;ja&quot; op ja/nee-vragen interactie uitschakelen
+&quot;ja&quot; antwoorden op bevestigingsvragen; accepteert de standaardwaarde voor andere vragen; interactie uitschakelen
+
+- Standaard: `false`
+- Accepteert geen waarde
+
+### `--no-interaction`
+
+Geen interactieve vragen stellen; Accepteer standaardwaarden. Gelijk aan het gebruik van de omgevingsvariabele: &lt;comment>Magento_CLOUD_CLI_NO_INTERACTION=1&lt;/comment>
+
+- Standaard: `false`
+- Accepteert geen waarde
+
+### `--ansi`
+
+ANSI-uitvoer forceren
+
+- Standaard: `false`
+- Accepteert geen waarde
+
+### `--no-ansi`
+
+ANSI-uitvoer uitschakelen
 
 - Standaard: `false`
 - Accepteert geen waarde
 
 ### `--no`, `-n`
 
-Antwoord &quot;nee&quot; op ja/nee-vragen. interactie uitschakelen
+Antwoord &quot;nee&quot; op bevestigingsvragen; accepteert de standaardwaarde voor andere vragen; interactie uitschakelen
+
+- Standaard: `false`
+- Accepteert geen waarde
+
+### `--quiet`, `-q`
+
+Geen bericht uitvoeren
 
 - Standaard: `false`
 - Accepteert geen waarde
@@ -3881,13 +5104,6 @@ Dit Help-bericht weergeven
 - Standaard: `false`
 - Accepteert geen waarde
 
-### `--quiet`, `-q`
-
-Geen bericht uitvoeren
-
-- Standaard: `false`
-- Accepteert geen waarde
-
 ### `--verbose`, `-v|-vv|-vvv`
 
 Verhoog de breedheid van berichten
@@ -3904,14 +5120,42 @@ Deze toepassingsversie weergeven
 
 ### `--yes`, `-y`
 
-Antwoord &quot;ja&quot; op ja/nee-vragen interactie uitschakelen
+&quot;ja&quot; antwoorden op bevestigingsvragen; accepteert de standaardwaarde voor andere vragen; interactie uitschakelen
+
+- Standaard: `false`
+- Accepteert geen waarde
+
+### `--no-interaction`
+
+Geen interactieve vragen stellen; Accepteer standaardwaarden. Gelijk aan het gebruik van de omgevingsvariabele: &lt;comment>Magento_CLOUD_CLI_NO_INTERACTION=1&lt;/comment>
+
+- Standaard: `false`
+- Accepteert geen waarde
+
+### `--ansi`
+
+ANSI-uitvoer forceren
+
+- Standaard: `false`
+- Accepteert geen waarde
+
+### `--no-ansi`
+
+ANSI-uitvoer uitschakelen
 
 - Standaard: `false`
 - Accepteert geen waarde
 
 ### `--no`, `-n`
 
-Antwoord &quot;nee&quot; op ja/nee-vragen. interactie uitschakelen
+Antwoord &quot;nee&quot; op bevestigingsvragen; accepteert de standaardwaarde voor andere vragen; interactie uitschakelen
+
+- Standaard: `false`
+- Accepteert geen waarde
+
+### `--quiet`, `-q`
+
+Geen bericht uitvoeren
 
 - Standaard: `false`
 - Accepteert geen waarde
@@ -3922,7 +5166,7 @@ Antwoord &quot;nee&quot; op ja/nee-vragen. interactie uitschakelen
 Een geverifieerd cURL-verzoek uitvoeren op de API van een omgeving
 
 ```bash
-magento-cloud environment:curl [-X|--request REQUEST] [-d|--data DATA] [-i|--include] [-I|--head] [--disable-compression] [--enable-glob] [-f|--fail] [-H|--header HEADER] [-p|--project PROJECT] [--host HOST] [-e|--environment ENVIRONMENT] [--] [<path>]
+magento-cloud environment:curl [-X|--request REQUEST] [-d|--data DATA] [--json JSON] [-i|--include] [-I|--head] [--disable-compression] [--enable-glob] [-f|--fail] [-H|--header HEADER] [-p|--project PROJECT] [-e|--environment ENVIRONMENT] [--] [<path>]
 ```
 
 
@@ -3940,6 +5184,12 @@ De aanvraagmethode
 ### `--data`, `-d`
 
 Te verzenden gegevens
+
+- Vereist een waarde
+
+### `--json`
+
+Te verzenden JSON-gegevens
 
 - Vereist een waarde
 
@@ -3993,7 +5243,7 @@ De project-id of URL
 
 ### `--host`
 
-De API-hostnaam van het project
+Vervangen optie, niet meer gebruikt
 
 - Vereist een waarde
 
@@ -4006,13 +5256,6 @@ De milieu-id
 ### `--help`, `-h`
 
 Dit Help-bericht weergeven
-
-- Standaard: `false`
-- Accepteert geen waarde
-
-### `--quiet`, `-q`
-
-Geen bericht uitvoeren
 
 - Standaard: `false`
 - Accepteert geen waarde
@@ -4033,14 +5276,42 @@ Deze toepassingsversie weergeven
 
 ### `--yes`, `-y`
 
-Antwoord &quot;ja&quot; op ja/nee-vragen interactie uitschakelen
+&quot;ja&quot; antwoorden op bevestigingsvragen; accepteert de standaardwaarde voor andere vragen; interactie uitschakelen
+
+- Standaard: `false`
+- Accepteert geen waarde
+
+### `--no-interaction`
+
+Geen interactieve vragen stellen; Accepteer standaardwaarden. Gelijk aan het gebruik van de omgevingsvariabele: &lt;comment>Magento_CLOUD_CLI_NO_INTERACTION=1&lt;/comment>
+
+- Standaard: `false`
+- Accepteert geen waarde
+
+### `--ansi`
+
+ANSI-uitvoer forceren
+
+- Standaard: `false`
+- Accepteert geen waarde
+
+### `--no-ansi`
+
+ANSI-uitvoer uitschakelen
 
 - Standaard: `false`
 - Accepteert geen waarde
 
 ### `--no`, `-n`
 
-Antwoord &quot;nee&quot; op ja/nee-vragen. interactie uitschakelen
+Antwoord &quot;nee&quot; op bevestigingsvragen; accepteert de standaardwaarde voor andere vragen; interactie uitschakelen
+
+- Standaard: `false`
+- Accepteert geen waarde
+
+### `--quiet`, `-q`
+
+Geen bericht uitvoeren
 
 - Standaard: `false`
 - Accepteert geen waarde
@@ -4048,10 +5319,10 @@ Antwoord &quot;nee&quot; op ja/nee-vragen. interactie uitschakelen
 
 ## `environment:delete`
 
-Een omgeving verwijderen
+Een of meer omgevingen verwijderen
 
 ```bash
-magento-cloud environment:delete [--delete-branch] [--no-delete-branch] [--inactive] [--merged] [--type TYPE] [--exclude EXCLUDE] [--exclude-type EXCLUDE-TYPE] [-p|--project PROJECT] [--host HOST] [-e|--environment ENVIRONMENT] [-W|--no-wait] [--wait] [--] [<environment>]...
+magento-cloud environment:delete [--delete-branch] [--no-delete-branch] [--type TYPE] [-t|--only-type ONLY-TYPE] [--exclude EXCLUDE] [--exclude-type EXCLUDE-TYPE] [--inactive] [--merged] [-p|--project PROJECT] [-e|--environment ENVIRONMENT] [-W|--no-wait] [--wait] [--] [<environment>]...
 ```
 
 
@@ -4062,7 +5333,7 @@ environment:deactivate
 
 ### `environment`
 
-The environment(s) to delete. Het teken % kan als jokerteken worden gebruikt. Als er één waarde is opgegeven, wordt deze gesplitst in komma&#39;s of spaties.
+The environment(s) to delete. Het teken % kan als jokerteken worden gebruikt. Als een lijst als één waarde wordt gegeven (bv. &quot;a,b,c&quot;) wordt gesplitst in komma&#39;s en/of witruimte.
 
 - Standaard: `[]`
 
@@ -4070,52 +5341,59 @@ The environment(s) to delete. Het teken % kan als jokerteken worden gebruikt. Al
 
 ### `--delete-branch`
 
-De externe Git-vertakking(en) verwijderen
+Git-vertakking(en) verwijderen (inactieve omgevingen)
 
 - Standaard: `false`
 - Accepteert geen waarde
 
 ### `--no-delete-branch`
 
-De externe Git-vertakking(en) niet verwijderen
-
-- Standaard: `false`
-- Accepteert geen waarde
-
-### `--inactive`
-
-Alle niet-actieve omgevingen verwijderen
-
-- Standaard: `false`
-- Accepteert geen waarde
-
-### `--merged`
-
-Alle samengevoegde omgevingen verwijderen
+Git-vertakking(en) niet verwijderen (inactieve omgevingen)
 
 - Standaard: `false`
 - Accepteert geen waarde
 
 ### `--type`
 
-Omgevingstype(n) waarvan verwijderen Als één waarde is opgegeven, wordt deze gesplitst in komma&#39;s of witruimte.
+Alle omgevingen van een type verwijderen (aan andere geselecteerde omgevingen toevoegen) Als een lijst als één waarde wordt opgegeven (bijvoorbeeld &quot;a,b,c&quot;) wordt gesplitst in komma&#39;s en/of witruimte.
+
+- Standaard: `[]`
+- Vereist een waarde
+
+### `--only-type`, `-t`
+
+Alleen omgeving(en) van een specifiek type verwijderen Als een lijst als één waarde wordt gegeven (bijvoorbeeld &quot;a,b,c&quot;) wordt gesplitst in komma&#39;s en/of witruimte.
 
 - Standaard: `[]`
 - Vereist een waarde
 
 ### `--exclude`
 
-Omgeving(en) niet te verwijderen. Het teken % kan als jokerteken worden gebruikt. Als er één waarde is opgegeven, wordt deze gesplitst in komma&#39;s of spaties.
+Omgeving(en) niet te verwijderen. Het teken % kan als jokerteken worden gebruikt. Als een lijst als één waarde wordt gegeven (bv. &quot;a,b,c&quot;) wordt gesplitst in komma&#39;s en/of witruimte.
 
 - Standaard: `[]`
 - Vereist een waarde
 
 ### `--exclude-type`
 
-Omgevingstype(n) waarvan niet wordt verwijderd Als één waarde is opgegeven, wordt deze gesplitst in komma&#39;s of witruimte.
+Omgevingstype(n) waarvan niet te verwijderen Als een lijst als één waarde wordt gegeven (bijvoorbeeld &quot;a,b,c&quot;) wordt gesplitst in komma&#39;s en/of witruimte.
 
 - Standaard: `[]`
 - Vereist een waarde
+
+### `--inactive`
+
+Alle niet-actieve omgevingen verwijderen (toevoegen aan andere geselecteerde omgevingen
+
+- Standaard: `false`
+- Accepteert geen waarde
+
+### `--merged`
+
+Alle samengevoegde omgevingen verwijderen (aan geselecteerde omgevingen toevoegen)
+
+- Standaard: `false`
+- Accepteert geen waarde
 
 ### `--project`, `-p`
 
@@ -4125,7 +5403,7 @@ De project-id of URL
 
 ### `--host`
 
-De API-hostnaam van het project
+Vervangen optie, niet meer gebruikt
 
 - Vereist een waarde
 
@@ -4156,13 +5434,6 @@ Dit Help-bericht weergeven
 - Standaard: `false`
 - Accepteert geen waarde
 
-### `--quiet`, `-q`
-
-Geen bericht uitvoeren
-
-- Standaard: `false`
-- Accepteert geen waarde
-
 ### `--verbose`, `-v|-vv|-vvv`
 
 Verhoog de breedheid van berichten
@@ -4179,14 +5450,42 @@ Deze toepassingsversie weergeven
 
 ### `--yes`, `-y`
 
-Antwoord &quot;ja&quot; op ja/nee-vragen interactie uitschakelen
+&quot;ja&quot; antwoorden op bevestigingsvragen; accepteert de standaardwaarde voor andere vragen; interactie uitschakelen
+
+- Standaard: `false`
+- Accepteert geen waarde
+
+### `--no-interaction`
+
+Geen interactieve vragen stellen; Accepteer standaardwaarden. Gelijk aan het gebruik van de omgevingsvariabele: &lt;comment>Magento_CLOUD_CLI_NO_INTERACTION=1&lt;/comment>
+
+- Standaard: `false`
+- Accepteert geen waarde
+
+### `--ansi`
+
+ANSI-uitvoer forceren
+
+- Standaard: `false`
+- Accepteert geen waarde
+
+### `--no-ansi`
+
+ANSI-uitvoer uitschakelen
 
 - Standaard: `false`
 - Accepteert geen waarde
 
 ### `--no`, `-n`
 
-Antwoord &quot;nee&quot; op ja/nee-vragen. interactie uitschakelen
+Antwoord &quot;nee&quot; op bevestigingsvragen; accepteert de standaardwaarde voor andere vragen; interactie uitschakelen
+
+- Standaard: `false`
+- Accepteert geen waarde
+
+### `--quiet`, `-q`
+
+Geen bericht uitvoeren
 
 - Standaard: `false`
 - Accepteert geen waarde
@@ -4197,7 +5496,7 @@ Antwoord &quot;nee&quot; op ja/nee-vragen. interactie uitschakelen
 De HTTP-toegangsinstellingen voor een omgeving bijwerken
 
 ```bash
-magento-cloud httpaccess [--access ACCESS] [--auth AUTH] [--enabled ENABLED] [-p|--project PROJECT] [--host HOST] [-e|--environment ENVIRONMENT] [-W|--no-wait] [--wait]
+magento-cloud httpaccess [--access ACCESS] [--auth AUTH] [--enabled ENABLED] [-p|--project PROJECT] [-e|--environment ENVIRONMENT] [-W|--no-wait] [--wait]
 ```
 
 
@@ -4233,7 +5532,7 @@ De project-id of URL
 
 ### `--host`
 
-De API-hostnaam van het project
+Vervangen optie, niet meer gebruikt
 
 - Vereist een waarde
 
@@ -4264,13 +5563,6 @@ Dit Help-bericht weergeven
 - Standaard: `false`
 - Accepteert geen waarde
 
-### `--quiet`, `-q`
-
-Geen bericht uitvoeren
-
-- Standaard: `false`
-- Accepteert geen waarde
-
 ### `--verbose`, `-v|-vv|-vvv`
 
 Verhoog de breedheid van berichten
@@ -4287,14 +5579,42 @@ Deze toepassingsversie weergeven
 
 ### `--yes`, `-y`
 
-Antwoord &quot;ja&quot; op ja/nee-vragen interactie uitschakelen
+&quot;ja&quot; antwoorden op bevestigingsvragen; accepteert de standaardwaarde voor andere vragen; interactie uitschakelen
+
+- Standaard: `false`
+- Accepteert geen waarde
+
+### `--no-interaction`
+
+Geen interactieve vragen stellen; Accepteer standaardwaarden. Gelijk aan het gebruik van de omgevingsvariabele: &lt;comment>Magento_CLOUD_CLI_NO_INTERACTION=1&lt;/comment>
+
+- Standaard: `false`
+- Accepteert geen waarde
+
+### `--ansi`
+
+ANSI-uitvoer forceren
+
+- Standaard: `false`
+- Accepteert geen waarde
+
+### `--no-ansi`
+
+ANSI-uitvoer uitschakelen
 
 - Standaard: `false`
 - Accepteert geen waarde
 
 ### `--no`, `-n`
 
-Antwoord &quot;nee&quot; op ja/nee-vragen. interactie uitschakelen
+Antwoord &quot;nee&quot; op bevestigingsvragen; accepteert de standaardwaarde voor andere vragen; interactie uitschakelen
+
+- Standaard: `false`
+- Accepteert geen waarde
+
+### `--quiet`, `-q`
+
+Geen bericht uitvoeren
 
 - Standaard: `false`
 - Accepteert geen waarde
@@ -4305,7 +5625,7 @@ Antwoord &quot;nee&quot; op ja/nee-vragen. interactie uitschakelen
 Eigenschappen voor een omgeving lezen of instellen
 
 ```bash
-magento-cloud environment:info [--refresh] [--date-fmt DATE-FMT] [--format FORMAT] [--columns COLUMNS] [--no-header] [-p|--project PROJECT] [--host HOST] [-e|--environment ENVIRONMENT] [-W|--no-wait] [--wait] [--] [<property>] [<value>]
+magento-cloud environment:info [--refresh] [--date-fmt DATE-FMT] [--format FORMAT] [-c|--columns COLUMNS] [--no-header] [-p|--project PROJECT] [-e|--environment ENVIRONMENT] [-W|--no-wait] [--wait] [--] [<property>] [<value>]
 ```
 
 
@@ -4340,14 +5660,14 @@ De datumnotatie (als een PHP-datumnotatietekenreeks)
 
 ### `--format`
 
-De uitvoerindeling (&quot;table&quot;, &quot;csv&quot;, &quot;tsv&quot; of &quot;plain&quot;)
+De uitvoerindeling: table, csv, tsv of plain
 
 - Standaard: `table`
 - Vereist een waarde
 
-### `--columns`
+### `--columns`, `-c`
 
-Weer te geven kolommen (lijst met door komma&#39;s gescheiden waarden of meerdere waarden)
+Weer te geven kolommen. Als een lijst als één waarde wordt gegeven (bv. &quot;a,b,c&quot;) wordt gesplitst in komma&#39;s en/of witruimte.
 
 - Standaard: `[]`
 - Vereist een waarde
@@ -4367,7 +5687,7 @@ De project-id of URL
 
 ### `--host`
 
-De API-hostnaam van het project
+Vervangen optie, niet meer gebruikt
 
 - Vereist een waarde
 
@@ -4398,13 +5718,6 @@ Dit Help-bericht weergeven
 - Standaard: `false`
 - Accepteert geen waarde
 
-### `--quiet`, `-q`
-
-Geen bericht uitvoeren
-
-- Standaard: `false`
-- Accepteert geen waarde
-
 ### `--verbose`, `-v|-vv|-vvv`
 
 Verhoog de breedheid van berichten
@@ -4421,14 +5734,42 @@ Deze toepassingsversie weergeven
 
 ### `--yes`, `-y`
 
-Antwoord &quot;ja&quot; op ja/nee-vragen interactie uitschakelen
+&quot;ja&quot; antwoorden op bevestigingsvragen; accepteert de standaardwaarde voor andere vragen; interactie uitschakelen
+
+- Standaard: `false`
+- Accepteert geen waarde
+
+### `--no-interaction`
+
+Geen interactieve vragen stellen; Accepteer standaardwaarden. Gelijk aan het gebruik van de omgevingsvariabele: &lt;comment>Magento_CLOUD_CLI_NO_INTERACTION=1&lt;/comment>
+
+- Standaard: `false`
+- Accepteert geen waarde
+
+### `--ansi`
+
+ANSI-uitvoer forceren
+
+- Standaard: `false`
+- Accepteert geen waarde
+
+### `--no-ansi`
+
+ANSI-uitvoer uitschakelen
 
 - Standaard: `false`
 - Accepteert geen waarde
 
 ### `--no`, `-n`
 
-Antwoord &quot;nee&quot; op ja/nee-vragen. interactie uitschakelen
+Antwoord &quot;nee&quot; op bevestigingsvragen; accepteert de standaardwaarde voor andere vragen; interactie uitschakelen
+
+- Standaard: `false`
+- Accepteert geen waarde
+
+### `--quiet`, `-q`
+
+Geen bericht uitvoeren
 
 - Standaard: `false`
 - Accepteert geen waarde
@@ -4439,7 +5780,7 @@ Antwoord &quot;nee&quot; op ja/nee-vragen. interactie uitschakelen
 Een omgeving initialiseren vanuit een openbare Git-opslagplaats
 
 ```bash
-magento-cloud environment:init [--profile PROFILE] [-p|--project PROJECT] [--host HOST] [-e|--environment ENVIRONMENT] [-W|--no-wait] [--wait] [--] <url>
+magento-cloud environment:init [--profile PROFILE] [-p|--project PROJECT] [-e|--environment ENVIRONMENT] [-W|--no-wait] [--wait] [--] <url>
 ```
 
 
@@ -4463,7 +5804,7 @@ De project-id of URL
 
 ### `--host`
 
-De API-hostnaam van het project
+Vervangen optie, niet meer gebruikt
 
 - Vereist een waarde
 
@@ -4494,13 +5835,6 @@ Dit Help-bericht weergeven
 - Standaard: `false`
 - Accepteert geen waarde
 
-### `--quiet`, `-q`
-
-Geen bericht uitvoeren
-
-- Standaard: `false`
-- Accepteert geen waarde
-
 ### `--verbose`, `-v|-vv|-vvv`
 
 Verhoog de breedheid van berichten
@@ -4517,14 +5851,42 @@ Deze toepassingsversie weergeven
 
 ### `--yes`, `-y`
 
-Antwoord &quot;ja&quot; op ja/nee-vragen interactie uitschakelen
+&quot;ja&quot; antwoorden op bevestigingsvragen; accepteert de standaardwaarde voor andere vragen; interactie uitschakelen
+
+- Standaard: `false`
+- Accepteert geen waarde
+
+### `--no-interaction`
+
+Geen interactieve vragen stellen; Accepteer standaardwaarden. Gelijk aan het gebruik van de omgevingsvariabele: &lt;comment>Magento_CLOUD_CLI_NO_INTERACTION=1&lt;/comment>
+
+- Standaard: `false`
+- Accepteert geen waarde
+
+### `--ansi`
+
+ANSI-uitvoer forceren
+
+- Standaard: `false`
+- Accepteert geen waarde
+
+### `--no-ansi`
+
+ANSI-uitvoer uitschakelen
 
 - Standaard: `false`
 - Accepteert geen waarde
 
 ### `--no`, `-n`
 
-Antwoord &quot;nee&quot; op ja/nee-vragen. interactie uitschakelen
+Antwoord &quot;nee&quot; op bevestigingsvragen; accepteert de standaardwaarde voor andere vragen; interactie uitschakelen
+
+- Standaard: `false`
+- Accepteert geen waarde
+
+### `--quiet`, `-q`
+
+Geen bericht uitvoeren
 
 - Standaard: `false`
 - Accepteert geen waarde
@@ -4535,7 +5897,7 @@ Antwoord &quot;nee&quot; op ja/nee-vragen. interactie uitschakelen
 Een lijst met omgevingen ophalen
 
 ```bash
-magento-cloud environment:list [-I|--no-inactive] [--pipe] [--refresh REFRESH] [--sort SORT] [--reverse] [--type TYPE] [--format FORMAT] [--columns COLUMNS] [--no-header] [-p|--project PROJECT] [--host HOST]
+magento-cloud environment:list [-I|--no-inactive] [--pipe] [--refresh REFRESH] [--sort SORT] [--reverse] [--type TYPE] [--format FORMAT] [-c|--columns COLUMNS] [--no-header] [-p|--project PROJECT]
 ```
 
 
@@ -4585,21 +5947,21 @@ Omgekeerde (aflopende) volgorde sorteren
 
 ### `--type`
 
-Filter de lijst op omgevingstype(n). Als er één waarde is opgegeven, wordt deze gesplitst in komma&#39;s of spaties.
+Filter de lijst op omgevingstype(n). Als een lijst als één waarde wordt gegeven (bv. &quot;a,b,c&quot;) wordt gesplitst in komma&#39;s en/of witruimte.
 
 - Standaard: `[]`
 - Vereist een waarde
 
 ### `--format`
 
-De uitvoerindeling (&quot;table&quot;, &quot;csv&quot;, &quot;tsv&quot; of &quot;plain&quot;)
+De uitvoerindeling: table, csv, tsv of plain
 
 - Standaard: `table`
 - Vereist een waarde
 
-### `--columns`
+### `--columns`, `-c`
 
-Weer te geven kolommen (lijst met door komma&#39;s gescheiden waarden of meerdere waarden)
+Weer te geven kolommen. Beschikbare kolommen: id*, title*, status*, type*, gemaakt, machine_naam, bijgewerkt (* = standaardkolommen). Het teken &quot;+&quot; kan worden gebruikt als tijdelijke aanduiding voor de standaardkolommen. Als een lijst als één waarde wordt gegeven (bv. &quot;a,b,c&quot;) wordt gesplitst in komma&#39;s en/of witruimte.
 
 - Standaard: `[]`
 - Vereist een waarde
@@ -4619,20 +5981,13 @@ De project-id of URL
 
 ### `--host`
 
-De API-hostnaam van het project
+Vervangen optie, niet meer gebruikt
 
 - Vereist een waarde
 
 ### `--help`, `-h`
 
 Dit Help-bericht weergeven
-
-- Standaard: `false`
-- Accepteert geen waarde
-
-### `--quiet`, `-q`
-
-Geen bericht uitvoeren
 
 - Standaard: `false`
 - Accepteert geen waarde
@@ -4653,14 +6008,42 @@ Deze toepassingsversie weergeven
 
 ### `--yes`, `-y`
 
-Antwoord &quot;ja&quot; op ja/nee-vragen interactie uitschakelen
+&quot;ja&quot; antwoorden op bevestigingsvragen; accepteert de standaardwaarde voor andere vragen; interactie uitschakelen
+
+- Standaard: `false`
+- Accepteert geen waarde
+
+### `--no-interaction`
+
+Geen interactieve vragen stellen; Accepteer standaardwaarden. Gelijk aan het gebruik van de omgevingsvariabele: &lt;comment>Magento_CLOUD_CLI_NO_INTERACTION=1&lt;/comment>
+
+- Standaard: `false`
+- Accepteert geen waarde
+
+### `--ansi`
+
+ANSI-uitvoer forceren
+
+- Standaard: `false`
+- Accepteert geen waarde
+
+### `--no-ansi`
+
+ANSI-uitvoer uitschakelen
 
 - Standaard: `false`
 - Accepteert geen waarde
 
 ### `--no`, `-n`
 
-Antwoord &quot;nee&quot; op ja/nee-vragen. interactie uitschakelen
+Antwoord &quot;nee&quot; op bevestigingsvragen; accepteert de standaardwaarde voor andere vragen; interactie uitschakelen
+
+- Standaard: `false`
+- Accepteert geen waarde
+
+### `--quiet`, `-q`
+
+Geen bericht uitvoeren
 
 - Standaard: `false`
 - Accepteert geen waarde
@@ -4671,7 +6054,7 @@ Antwoord &quot;nee&quot; op ja/nee-vragen. interactie uitschakelen
 De logboeken van een omgeving lezen
 
 ```bash
-magento-cloud log [--lines LINES] [--tail] [-p|--project PROJECT] [--host HOST] [-e|--environment ENVIRONMENT] [-A|--app APP] [--worker WORKER] [--] [<type>]
+magento-cloud log [--lines LINES] [--tail] [-p|--project PROJECT] [-e|--environment ENVIRONMENT] [-A|--app APP] [--worker WORKER] [-I|--instance INSTANCE] [--] [<type>]
 ```
 
 
@@ -4712,7 +6095,7 @@ De project-id of URL
 
 ### `--host`
 
-De API-hostnaam van het project
+Vervangen optie, niet meer gebruikt
 
 - Vereist een waarde
 
@@ -4734,16 +6117,15 @@ De naam van een worker
 
 - Vereist een waarde
 
+### `--instance`, `-I`
+
+Instantie-id
+
+- Vereist een waarde
+
 ### `--help`, `-h`
 
 Dit Help-bericht weergeven
-
-- Standaard: `false`
-- Accepteert geen waarde
-
-### `--quiet`, `-q`
-
-Geen bericht uitvoeren
 
 - Standaard: `false`
 - Accepteert geen waarde
@@ -4764,14 +6146,42 @@ Deze toepassingsversie weergeven
 
 ### `--yes`, `-y`
 
-Antwoord &quot;ja&quot; op ja/nee-vragen interactie uitschakelen
+&quot;ja&quot; antwoorden op bevestigingsvragen; accepteert de standaardwaarde voor andere vragen; interactie uitschakelen
+
+- Standaard: `false`
+- Accepteert geen waarde
+
+### `--no-interaction`
+
+Geen interactieve vragen stellen; Accepteer standaardwaarden. Gelijk aan het gebruik van de omgevingsvariabele: &lt;comment>Magento_CLOUD_CLI_NO_INTERACTION=1&lt;/comment>
+
+- Standaard: `false`
+- Accepteert geen waarde
+
+### `--ansi`
+
+ANSI-uitvoer forceren
+
+- Standaard: `false`
+- Accepteert geen waarde
+
+### `--no-ansi`
+
+ANSI-uitvoer uitschakelen
 
 - Standaard: `false`
 - Accepteert geen waarde
 
 ### `--no`, `-n`
 
-Antwoord &quot;nee&quot; op ja/nee-vragen. interactie uitschakelen
+Antwoord &quot;nee&quot; op bevestigingsvragen; accepteert de standaardwaarde voor andere vragen; interactie uitschakelen
+
+- Standaard: `false`
+- Accepteert geen waarde
+
+### `--quiet`, `-q`
+
+Geen bericht uitvoeren
 
 - Standaard: `false`
 - Accepteert geen waarde
@@ -4782,7 +6192,7 @@ Antwoord &quot;nee&quot; op ja/nee-vragen. interactie uitschakelen
 Een omgeving samenvoegen
 
 ```bash
-magento-cloud merge [-p|--project PROJECT] [--host HOST] [-e|--environment ENVIRONMENT] [-W|--no-wait] [--wait] [--] [<environment>]
+magento-cloud merge [-p|--project PROJECT] [-e|--environment ENVIRONMENT] [-W|--no-wait] [--wait] [--] [<environment>]
 ```
 
 
@@ -4804,7 +6214,7 @@ De project-id of URL
 
 ### `--host`
 
-De API-hostnaam van het project
+Vervangen optie, niet meer gebruikt
 
 - Vereist een waarde
 
@@ -4835,13 +6245,6 @@ Dit Help-bericht weergeven
 - Standaard: `false`
 - Accepteert geen waarde
 
-### `--quiet`, `-q`
-
-Geen bericht uitvoeren
-
-- Standaard: `false`
-- Accepteert geen waarde
-
 ### `--verbose`, `-v|-vv|-vvv`
 
 Verhoog de breedheid van berichten
@@ -4858,14 +6261,42 @@ Deze toepassingsversie weergeven
 
 ### `--yes`, `-y`
 
-Antwoord &quot;ja&quot; op ja/nee-vragen interactie uitschakelen
+&quot;ja&quot; antwoorden op bevestigingsvragen; accepteert de standaardwaarde voor andere vragen; interactie uitschakelen
+
+- Standaard: `false`
+- Accepteert geen waarde
+
+### `--no-interaction`
+
+Geen interactieve vragen stellen; Accepteer standaardwaarden. Gelijk aan het gebruik van de omgevingsvariabele: &lt;comment>Magento_CLOUD_CLI_NO_INTERACTION=1&lt;/comment>
+
+- Standaard: `false`
+- Accepteert geen waarde
+
+### `--ansi`
+
+ANSI-uitvoer forceren
+
+- Standaard: `false`
+- Accepteert geen waarde
+
+### `--no-ansi`
+
+ANSI-uitvoer uitschakelen
 
 - Standaard: `false`
 - Accepteert geen waarde
 
 ### `--no`, `-n`
 
-Antwoord &quot;nee&quot; op ja/nee-vragen. interactie uitschakelen
+Antwoord &quot;nee&quot; op bevestigingsvragen; accepteert de standaardwaarde voor andere vragen; interactie uitschakelen
+
+- Standaard: `false`
+- Accepteert geen waarde
+
+### `--quiet`, `-q`
+
+Geen bericht uitvoeren
 
 - Standaard: `false`
 - Accepteert geen waarde
@@ -4876,7 +6307,7 @@ Antwoord &quot;nee&quot; op ja/nee-vragen. interactie uitschakelen
 Code naar een omgeving duwen
 
 ```bash
-magento-cloud push [--target TARGET] [-f|--force] [--force-with-lease] [-u|--set-upstream] [--activate] [--branch] [--parent PARENT] [--type TYPE] [--no-clone-parent] [-W|--no-wait] [--wait] [-p|--project PROJECT] [--host HOST] [-e|--environment ENVIRONMENT] [-i|--identity-file IDENTITY-FILE] [--] [<source>]
+magento-cloud push [--target TARGET] [-f|--force] [--force-with-lease] [-u|--set-upstream] [--activate] [--parent PARENT] [--type TYPE] [--no-clone-parent] [-W|--no-wait] [--wait] [-p|--project PROJECT] [-e|--environment ENVIRONMENT] [-i|--identity-file IDENTITY-FILE] [--] [<source>]
 ```
 
 
@@ -4974,7 +6405,7 @@ De project-id of URL
 
 ### `--host`
 
-De API-hostnaam van het project
+Vervangen optie, niet meer gebruikt
 
 - Vereist een waarde
 
@@ -4997,13 +6428,6 @@ Dit Help-bericht weergeven
 - Standaard: `false`
 - Accepteert geen waarde
 
-### `--quiet`, `-q`
-
-Geen bericht uitvoeren
-
-- Standaard: `false`
-- Accepteert geen waarde
-
 ### `--verbose`, `-v|-vv|-vvv`
 
 Verhoog de breedheid van berichten
@@ -5020,14 +6444,42 @@ Deze toepassingsversie weergeven
 
 ### `--yes`, `-y`
 
-Antwoord &quot;ja&quot; op ja/nee-vragen interactie uitschakelen
+&quot;ja&quot; antwoorden op bevestigingsvragen; accepteert de standaardwaarde voor andere vragen; interactie uitschakelen
+
+- Standaard: `false`
+- Accepteert geen waarde
+
+### `--no-interaction`
+
+Geen interactieve vragen stellen; Accepteer standaardwaarden. Gelijk aan het gebruik van de omgevingsvariabele: &lt;comment>Magento_CLOUD_CLI_NO_INTERACTION=1&lt;/comment>
+
+- Standaard: `false`
+- Accepteert geen waarde
+
+### `--ansi`
+
+ANSI-uitvoer forceren
+
+- Standaard: `false`
+- Accepteert geen waarde
+
+### `--no-ansi`
+
+ANSI-uitvoer uitschakelen
 
 - Standaard: `false`
 - Accepteert geen waarde
 
 ### `--no`, `-n`
 
-Antwoord &quot;nee&quot; op ja/nee-vragen. interactie uitschakelen
+Antwoord &quot;nee&quot; op bevestigingsvragen; accepteert de standaardwaarde voor andere vragen; interactie uitschakelen
+
+- Standaard: `false`
+- Accepteert geen waarde
+
+### `--quiet`, `-q`
+
+Geen bericht uitvoeren
 
 - Standaard: `false`
 - Accepteert geen waarde
@@ -5038,7 +6490,7 @@ Antwoord &quot;nee&quot; op ja/nee-vragen. interactie uitschakelen
 Een omgeving opnieuw implementeren
 
 ```bash
-magento-cloud redeploy [-p|--project PROJECT] [--host HOST] [-e|--environment ENVIRONMENT] [-W|--no-wait] [--wait]
+magento-cloud redeploy [-p|--project PROJECT] [-e|--environment ENVIRONMENT] [-W|--no-wait] [--wait]
 ```
 
 
@@ -5054,7 +6506,7 @@ De project-id of URL
 
 ### `--host`
 
-De API-hostnaam van het project
+Vervangen optie, niet meer gebruikt
 
 - Vereist een waarde
 
@@ -5085,13 +6537,6 @@ Dit Help-bericht weergeven
 - Standaard: `false`
 - Accepteert geen waarde
 
-### `--quiet`, `-q`
-
-Geen bericht uitvoeren
-
-- Standaard: `false`
-- Accepteert geen waarde
-
 ### `--verbose`, `-v|-vv|-vvv`
 
 Verhoog de breedheid van berichten
@@ -5108,14 +6553,42 @@ Deze toepassingsversie weergeven
 
 ### `--yes`, `-y`
 
-Antwoord &quot;ja&quot; op ja/nee-vragen interactie uitschakelen
+&quot;ja&quot; antwoorden op bevestigingsvragen; accepteert de standaardwaarde voor andere vragen; interactie uitschakelen
+
+- Standaard: `false`
+- Accepteert geen waarde
+
+### `--no-interaction`
+
+Geen interactieve vragen stellen; Accepteer standaardwaarden. Gelijk aan het gebruik van de omgevingsvariabele: &lt;comment>Magento_CLOUD_CLI_NO_INTERACTION=1&lt;/comment>
+
+- Standaard: `false`
+- Accepteert geen waarde
+
+### `--ansi`
+
+ANSI-uitvoer forceren
+
+- Standaard: `false`
+- Accepteert geen waarde
+
+### `--no-ansi`
+
+ANSI-uitvoer uitschakelen
 
 - Standaard: `false`
 - Accepteert geen waarde
 
 ### `--no`, `-n`
 
-Antwoord &quot;nee&quot; op ja/nee-vragen. interactie uitschakelen
+Antwoord &quot;nee&quot; op bevestigingsvragen; accepteert de standaardwaarde voor andere vragen; interactie uitschakelen
+
+- Standaard: `false`
+- Accepteert geen waarde
+
+### `--quiet`, `-q`
+
+Geen bericht uitvoeren
 
 - Standaard: `false`
 - Accepteert geen waarde
@@ -5126,7 +6599,7 @@ Antwoord &quot;nee&quot; op ja/nee-vragen. interactie uitschakelen
 Relaties van een omgeving tonen
 
 ```bash
-magento-cloud relationships [-P|--property PROPERTY] [--refresh] [-p|--project PROJECT] [--host HOST] [-e|--environment ENVIRONMENT] [-A|--app APP] [-i|--identity-file IDENTITY-FILE] [--] [<environment>]
+magento-cloud relationships [-P|--property PROPERTY] [--refresh] [-p|--project PROJECT] [-e|--environment ENVIRONMENT] [-A|--app APP] [-i|--identity-file IDENTITY-FILE] [--] [<environment>]
 ```
 
 
@@ -5161,7 +6634,7 @@ De project-id of URL
 
 ### `--host`
 
-De API-hostnaam van het project
+Vervangen optie, niet meer gebruikt
 
 - Vereist een waarde
 
@@ -5190,13 +6663,6 @@ Dit Help-bericht weergeven
 - Standaard: `false`
 - Accepteert geen waarde
 
-### `--quiet`, `-q`
-
-Geen bericht uitvoeren
-
-- Standaard: `false`
-- Accepteert geen waarde
-
 ### `--verbose`, `-v|-vv|-vvv`
 
 Verhoog de breedheid van berichten
@@ -5213,14 +6679,42 @@ Deze toepassingsversie weergeven
 
 ### `--yes`, `-y`
 
-Antwoord &quot;ja&quot; op ja/nee-vragen interactie uitschakelen
+&quot;ja&quot; antwoorden op bevestigingsvragen; accepteert de standaardwaarde voor andere vragen; interactie uitschakelen
+
+- Standaard: `false`
+- Accepteert geen waarde
+
+### `--no-interaction`
+
+Geen interactieve vragen stellen; Accepteer standaardwaarden. Gelijk aan het gebruik van de omgevingsvariabele: &lt;comment>Magento_CLOUD_CLI_NO_INTERACTION=1&lt;/comment>
+
+- Standaard: `false`
+- Accepteert geen waarde
+
+### `--ansi`
+
+ANSI-uitvoer forceren
+
+- Standaard: `false`
+- Accepteert geen waarde
+
+### `--no-ansi`
+
+ANSI-uitvoer uitschakelen
 
 - Standaard: `false`
 - Accepteert geen waarde
 
 ### `--no`, `-n`
 
-Antwoord &quot;nee&quot; op ja/nee-vragen. interactie uitschakelen
+Antwoord &quot;nee&quot; op bevestigingsvragen; accepteert de standaardwaarde voor andere vragen; interactie uitschakelen
+
+- Standaard: `false`
+- Accepteert geen waarde
+
+### `--quiet`, `-q`
+
+Geen bericht uitvoeren
 
 - Standaard: `false`
 - Accepteert geen waarde
@@ -5231,7 +6725,7 @@ Antwoord &quot;nee&quot; op ja/nee-vragen. interactie uitschakelen
 Bestanden kopiëren naar en van de huidige omgeving met behulp van scp
 
 ```bash
-magento-cloud scp [-r|--recursive] [-p|--project PROJECT] [--host HOST] [-e|--environment ENVIRONMENT] [-A|--app APP] [--worker WORKER] [-i|--identity-file IDENTITY-FILE] [--] [<files>]...
+magento-cloud scp [-r|--recursive] [-p|--project PROJECT] [-e|--environment ENVIRONMENT] [-A|--app APP] [--worker WORKER] [-I|--instance INSTANCE] [-i|--identity-file IDENTITY-FILE] [--] [<files>]...
 ```
 
 
@@ -5263,7 +6757,7 @@ De project-id of URL
 
 ### `--host`
 
-De API-hostnaam van het project
+Vervangen optie, niet meer gebruikt
 
 - Vereist een waarde
 
@@ -5285,6 +6779,12 @@ De naam van een worker
 
 - Vereist een waarde
 
+### `--instance`, `-I`
+
+Instantie-id
+
+- Vereist een waarde
+
 ### `--identity-file`, `-i`
 
 Een SSH-identiteit (persoonlijke sleutel) die moet worden gebruikt
@@ -5294,13 +6794,6 @@ Een SSH-identiteit (persoonlijke sleutel) die moet worden gebruikt
 ### `--help`, `-h`
 
 Dit Help-bericht weergeven
-
-- Standaard: `false`
-- Accepteert geen waarde
-
-### `--quiet`, `-q`
-
-Geen bericht uitvoeren
 
 - Standaard: `false`
 - Accepteert geen waarde
@@ -5321,14 +6814,42 @@ Deze toepassingsversie weergeven
 
 ### `--yes`, `-y`
 
-Antwoord &quot;ja&quot; op ja/nee-vragen interactie uitschakelen
+&quot;ja&quot; antwoorden op bevestigingsvragen; accepteert de standaardwaarde voor andere vragen; interactie uitschakelen
+
+- Standaard: `false`
+- Accepteert geen waarde
+
+### `--no-interaction`
+
+Geen interactieve vragen stellen; Accepteer standaardwaarden. Gelijk aan het gebruik van de omgevingsvariabele: &lt;comment>Magento_CLOUD_CLI_NO_INTERACTION=1&lt;/comment>
+
+- Standaard: `false`
+- Accepteert geen waarde
+
+### `--ansi`
+
+ANSI-uitvoer forceren
+
+- Standaard: `false`
+- Accepteert geen waarde
+
+### `--no-ansi`
+
+ANSI-uitvoer uitschakelen
 
 - Standaard: `false`
 - Accepteert geen waarde
 
 ### `--no`, `-n`
 
-Antwoord &quot;nee&quot; op ja/nee-vragen. interactie uitschakelen
+Antwoord &quot;nee&quot; op bevestigingsvragen; accepteert de standaardwaarde voor andere vragen; interactie uitschakelen
+
+- Standaard: `false`
+- Accepteert geen waarde
+
+### `--quiet`, `-q`
+
+Geen bericht uitvoeren
 
 - Standaard: `false`
 - Accepteert geen waarde
@@ -5361,13 +6882,6 @@ Dit Help-bericht weergeven
 - Standaard: `false`
 - Accepteert geen waarde
 
-### `--quiet`, `-q`
-
-Geen bericht uitvoeren
-
-- Standaard: `false`
-- Accepteert geen waarde
-
 ### `--verbose`, `-v|-vv|-vvv`
 
 Verhoog de breedheid van berichten
@@ -5384,14 +6898,42 @@ Deze toepassingsversie weergeven
 
 ### `--yes`, `-y`
 
-Antwoord &quot;ja&quot; op ja/nee-vragen interactie uitschakelen
+&quot;ja&quot; antwoorden op bevestigingsvragen; accepteert de standaardwaarde voor andere vragen; interactie uitschakelen
+
+- Standaard: `false`
+- Accepteert geen waarde
+
+### `--no-interaction`
+
+Geen interactieve vragen stellen; Accepteer standaardwaarden. Gelijk aan het gebruik van de omgevingsvariabele: &lt;comment>Magento_CLOUD_CLI_NO_INTERACTION=1&lt;/comment>
+
+- Standaard: `false`
+- Accepteert geen waarde
+
+### `--ansi`
+
+ANSI-uitvoer forceren
+
+- Standaard: `false`
+- Accepteert geen waarde
+
+### `--no-ansi`
+
+ANSI-uitvoer uitschakelen
 
 - Standaard: `false`
 - Accepteert geen waarde
 
 ### `--no`, `-n`
 
-Antwoord &quot;nee&quot; op ja/nee-vragen. interactie uitschakelen
+Antwoord &quot;nee&quot; op bevestigingsvragen; accepteert de standaardwaarde voor andere vragen; interactie uitschakelen
+
+- Standaard: `false`
+- Accepteert geen waarde
+
+### `--quiet`, `-q`
+
+Geen bericht uitvoeren
 
 - Standaard: `false`
 - Accepteert geen waarde
@@ -5402,7 +6944,7 @@ Antwoord &quot;nee&quot; op ja/nee-vragen. interactie uitschakelen
 SSH in de huidige omgeving
 
 ```bash
-magento-cloud ssh [--pipe] [--all] [-p|--project PROJECT] [--host HOST] [-e|--environment ENVIRONMENT] [-A|--app APP] [--worker WORKER] [-i|--identity-file IDENTITY-FILE] [--] [<cmd>]...
+magento-cloud ssh [--pipe] [--all] [-p|--project PROJECT] [-e|--environment ENVIRONMENT] [-A|--app APP] [--worker WORKER] [-I|--instance INSTANCE] [-i|--identity-file IDENTITY-FILE] [--] [<cmd>]...
 ```
 
 
@@ -5441,7 +6983,7 @@ De project-id of URL
 
 ### `--host`
 
-De API-hostnaam van het project
+Vervangen optie, niet meer gebruikt
 
 - Vereist een waarde
 
@@ -5463,6 +7005,12 @@ De naam van een worker
 
 - Vereist een waarde
 
+### `--instance`, `-I`
+
+Instantie-id
+
+- Vereist een waarde
+
 ### `--identity-file`, `-i`
 
 Een SSH-identiteit (persoonlijke sleutel) die moet worden gebruikt
@@ -5472,13 +7020,6 @@ Een SSH-identiteit (persoonlijke sleutel) die moet worden gebruikt
 ### `--help`, `-h`
 
 Dit Help-bericht weergeven
-
-- Standaard: `false`
-- Accepteert geen waarde
-
-### `--quiet`, `-q`
-
-Geen bericht uitvoeren
 
 - Standaard: `false`
 - Accepteert geen waarde
@@ -5499,14 +7040,42 @@ Deze toepassingsversie weergeven
 
 ### `--yes`, `-y`
 
-Antwoord &quot;ja&quot; op ja/nee-vragen interactie uitschakelen
+&quot;ja&quot; antwoorden op bevestigingsvragen; accepteert de standaardwaarde voor andere vragen; interactie uitschakelen
+
+- Standaard: `false`
+- Accepteert geen waarde
+
+### `--no-interaction`
+
+Geen interactieve vragen stellen; Accepteer standaardwaarden. Gelijk aan het gebruik van de omgevingsvariabele: &lt;comment>Magento_CLOUD_CLI_NO_INTERACTION=1&lt;/comment>
+
+- Standaard: `false`
+- Accepteert geen waarde
+
+### `--ansi`
+
+ANSI-uitvoer forceren
+
+- Standaard: `false`
+- Accepteert geen waarde
+
+### `--no-ansi`
+
+ANSI-uitvoer uitschakelen
 
 - Standaard: `false`
 - Accepteert geen waarde
 
 ### `--no`, `-n`
 
-Antwoord &quot;nee&quot; op ja/nee-vragen. interactie uitschakelen
+Antwoord &quot;nee&quot; op bevestigingsvragen; accepteert de standaardwaarde voor andere vragen; interactie uitschakelen
+
+- Standaard: `false`
+- Accepteert geen waarde
+
+### `--quiet`, `-q`
+
+Geen bericht uitvoeren
 
 - Standaard: `false`
 - Accepteert geen waarde
@@ -5517,7 +7086,7 @@ Antwoord &quot;nee&quot; op ja/nee-vragen. interactie uitschakelen
 De code en/of gegevens van een omgeving synchroniseren vanuit het bovenliggende element
 
 ```bash
-magento-cloud sync [--rebase] [-p|--project PROJECT] [--host HOST] [-e|--environment ENVIRONMENT] [-W|--no-wait] [--wait] [--] [<synchronize>]...
+magento-cloud sync [--rebase] [-p|--project PROJECT] [-e|--environment ENVIRONMENT] [-W|--no-wait] [--wait] [--] [<synchronize>]...
 ```
 
 
@@ -5549,7 +7118,7 @@ De project-id of URL
 
 ### `--host`
 
-De API-hostnaam van het project
+Vervangen optie, niet meer gebruikt
 
 - Vereist een waarde
 
@@ -5580,13 +7149,6 @@ Dit Help-bericht weergeven
 - Standaard: `false`
 - Accepteert geen waarde
 
-### `--quiet`, `-q`
-
-Geen bericht uitvoeren
-
-- Standaard: `false`
-- Accepteert geen waarde
-
 ### `--verbose`, `-v|-vv|-vvv`
 
 Verhoog de breedheid van berichten
@@ -5603,14 +7165,42 @@ Deze toepassingsversie weergeven
 
 ### `--yes`, `-y`
 
-Antwoord &quot;ja&quot; op ja/nee-vragen interactie uitschakelen
+&quot;ja&quot; antwoorden op bevestigingsvragen; accepteert de standaardwaarde voor andere vragen; interactie uitschakelen
+
+- Standaard: `false`
+- Accepteert geen waarde
+
+### `--no-interaction`
+
+Geen interactieve vragen stellen; Accepteer standaardwaarden. Gelijk aan het gebruik van de omgevingsvariabele: &lt;comment>Magento_CLOUD_CLI_NO_INTERACTION=1&lt;/comment>
+
+- Standaard: `false`
+- Accepteert geen waarde
+
+### `--ansi`
+
+ANSI-uitvoer forceren
+
+- Standaard: `false`
+- Accepteert geen waarde
+
+### `--no-ansi`
+
+ANSI-uitvoer uitschakelen
 
 - Standaard: `false`
 - Accepteert geen waarde
 
 ### `--no`, `-n`
 
-Antwoord &quot;nee&quot; op ja/nee-vragen. interactie uitschakelen
+Antwoord &quot;nee&quot; op bevestigingsvragen; accepteert de standaardwaarde voor andere vragen; interactie uitschakelen
+
+- Standaard: `false`
+- Accepteert geen waarde
+
+### `--quiet`, `-q`
+
+Geen bericht uitvoeren
 
 - Standaard: `false`
 - Accepteert geen waarde
@@ -5621,7 +7211,7 @@ Antwoord &quot;nee&quot; op ja/nee-vragen. interactie uitschakelen
 De openbare URL&#39;s van een omgeving ophalen
 
 ```bash
-magento-cloud url [-1|--primary] [--browser BROWSER] [--pipe] [-p|--project PROJECT] [--host HOST] [-e|--environment ENVIRONMENT]
+magento-cloud url [-1|--primary] [--browser BROWSER] [--pipe] [-p|--project PROJECT] [-e|--environment ENVIRONMENT]
 ```
 
 
@@ -5657,7 +7247,7 @@ De project-id of URL
 
 ### `--host`
 
-De API-hostnaam van het project
+Vervangen optie, niet meer gebruikt
 
 - Vereist een waarde
 
@@ -5670,13 +7260,6 @@ De milieu-id
 ### `--help`, `-h`
 
 Dit Help-bericht weergeven
-
-- Standaard: `false`
-- Accepteert geen waarde
-
-### `--quiet`, `-q`
-
-Geen bericht uitvoeren
 
 - Standaard: `false`
 - Accepteert geen waarde
@@ -5697,14 +7280,42 @@ Deze toepassingsversie weergeven
 
 ### `--yes`, `-y`
 
-Antwoord &quot;ja&quot; op ja/nee-vragen interactie uitschakelen
+&quot;ja&quot; antwoorden op bevestigingsvragen; accepteert de standaardwaarde voor andere vragen; interactie uitschakelen
+
+- Standaard: `false`
+- Accepteert geen waarde
+
+### `--no-interaction`
+
+Geen interactieve vragen stellen; Accepteer standaardwaarden. Gelijk aan het gebruik van de omgevingsvariabele: &lt;comment>Magento_CLOUD_CLI_NO_INTERACTION=1&lt;/comment>
+
+- Standaard: `false`
+- Accepteert geen waarde
+
+### `--ansi`
+
+ANSI-uitvoer forceren
+
+- Standaard: `false`
+- Accepteert geen waarde
+
+### `--no-ansi`
+
+ANSI-uitvoer uitschakelen
 
 - Standaard: `false`
 - Accepteert geen waarde
 
 ### `--no`, `-n`
 
-Antwoord &quot;nee&quot; op ja/nee-vragen. interactie uitschakelen
+Antwoord &quot;nee&quot; op bevestigingsvragen; accepteert de standaardwaarde voor andere vragen; interactie uitschakelen
+
+- Standaard: `false`
+- Accepteert geen waarde
+
+### `--quiet`, `-q`
+
+Geen bericht uitvoeren
 
 - Standaard: `false`
 - Accepteert geen waarde
@@ -5715,7 +7326,7 @@ Antwoord &quot;nee&quot; op ja/nee-vragen. interactie uitschakelen
 Een tunnel openen voor Xdebug in de omgeving
 
 ```bash
-magento-cloud xdebug [--port PORT] [-p|--project PROJECT] [--host HOST] [-e|--environment ENVIRONMENT] [-A|--app APP] [--worker WORKER] [-i|--identity-file IDENTITY-FILE]
+magento-cloud xdebug [--port PORT] [-p|--project PROJECT] [-e|--environment ENVIRONMENT] [-A|--app APP] [--worker WORKER] [-I|--instance INSTANCE] [-i|--identity-file IDENTITY-FILE]
 ```
 
 
@@ -5738,7 +7349,7 @@ De project-id of URL
 
 ### `--host`
 
-De API-hostnaam van het project
+Vervangen optie, niet meer gebruikt
 
 - Vereist een waarde
 
@@ -5760,6 +7371,12 @@ De naam van een worker
 
 - Vereist een waarde
 
+### `--instance`, `-I`
+
+Instantie-id
+
+- Vereist een waarde
+
 ### `--identity-file`, `-i`
 
 Een SSH-identiteit (persoonlijke sleutel) die moet worden gebruikt
@@ -5769,13 +7386,6 @@ Een SSH-identiteit (persoonlijke sleutel) die moet worden gebruikt
 ### `--help`, `-h`
 
 Dit Help-bericht weergeven
-
-- Standaard: `false`
-- Accepteert geen waarde
-
-### `--quiet`, `-q`
-
-Geen bericht uitvoeren
 
 - Standaard: `false`
 - Accepteert geen waarde
@@ -5796,14 +7406,42 @@ Deze toepassingsversie weergeven
 
 ### `--yes`, `-y`
 
-Antwoord &quot;ja&quot; op ja/nee-vragen interactie uitschakelen
+&quot;ja&quot; antwoorden op bevestigingsvragen; accepteert de standaardwaarde voor andere vragen; interactie uitschakelen
+
+- Standaard: `false`
+- Accepteert geen waarde
+
+### `--no-interaction`
+
+Geen interactieve vragen stellen; Accepteer standaardwaarden. Gelijk aan het gebruik van de omgevingsvariabele: &lt;comment>Magento_CLOUD_CLI_NO_INTERACTION=1&lt;/comment>
+
+- Standaard: `false`
+- Accepteert geen waarde
+
+### `--ansi`
+
+ANSI-uitvoer forceren
+
+- Standaard: `false`
+- Accepteert geen waarde
+
+### `--no-ansi`
+
+ANSI-uitvoer uitschakelen
 
 - Standaard: `false`
 - Accepteert geen waarde
 
 ### `--no`, `-n`
 
-Antwoord &quot;nee&quot; op ja/nee-vragen. interactie uitschakelen
+Antwoord &quot;nee&quot; op bevestigingsvragen; accepteert de standaardwaarde voor andere vragen; interactie uitschakelen
+
+- Standaard: `false`
+- Accepteert geen waarde
+
+### `--quiet`, `-q`
+
+Geen bericht uitvoeren
 
 - Standaard: `false`
 - Accepteert geen waarde
@@ -5814,7 +7452,7 @@ Antwoord &quot;nee&quot; op ja/nee-vragen. interactie uitschakelen
 Gedetailleerde informatie weergeven over één integratieactiviteit
 
 ```bash
-magento-cloud integration:activity:get [-P|--property PROPERTY] [-p|--project PROJECT] [--host HOST] [-e|--environment ENVIRONMENT] [--format FORMAT] [--columns COLUMNS] [--no-header] [--date-fmt DATE-FMT] [--] [<integration>] [<activity>]
+magento-cloud integration:activity:get [-P|--property PROPERTY] [-p|--project PROJECT] [-e|--environment ENVIRONMENT] [--format FORMAT] [-c|--columns COLUMNS] [--no-header] [--date-fmt DATE-FMT] [--] [<integration>] [<activity>]
 ```
 
 
@@ -5842,7 +7480,7 @@ De project-id of URL
 
 ### `--host`
 
-De API-hostnaam van het project
+Vervangen optie, niet meer gebruikt
 
 - Vereist een waarde
 
@@ -5854,14 +7492,14 @@ De API-hostnaam van het project
 
 ### `--format`
 
-De uitvoerindeling (&quot;table&quot;, &quot;csv&quot;, &quot;tsv&quot; of &quot;plain&quot;)
+De uitvoerindeling: table, csv, tsv of plain
 
 - Standaard: `table`
 - Vereist een waarde
 
-### `--columns`
+### `--columns`, `-c`
 
-Weer te geven kolommen (lijst met door komma&#39;s gescheiden waarden of meerdere waarden)
+Weer te geven kolommen. Als een lijst als één waarde wordt gegeven (bv. &quot;a,b,c&quot;) wordt gesplitst in komma&#39;s en/of witruimte.
 
 - Standaard: `[]`
 - Vereist een waarde
@@ -5887,13 +7525,6 @@ Dit Help-bericht weergeven
 - Standaard: `false`
 - Accepteert geen waarde
 
-### `--quiet`, `-q`
-
-Geen bericht uitvoeren
-
-- Standaard: `false`
-- Accepteert geen waarde
-
 ### `--verbose`, `-v|-vv|-vvv`
 
 Verhoog de breedheid van berichten
@@ -5910,14 +7541,42 @@ Deze toepassingsversie weergeven
 
 ### `--yes`, `-y`
 
-Antwoord &quot;ja&quot; op ja/nee-vragen interactie uitschakelen
+&quot;ja&quot; antwoorden op bevestigingsvragen; accepteert de standaardwaarde voor andere vragen; interactie uitschakelen
+
+- Standaard: `false`
+- Accepteert geen waarde
+
+### `--no-interaction`
+
+Geen interactieve vragen stellen; Accepteer standaardwaarden. Gelijk aan het gebruik van de omgevingsvariabele: &lt;comment>Magento_CLOUD_CLI_NO_INTERACTION=1&lt;/comment>
+
+- Standaard: `false`
+- Accepteert geen waarde
+
+### `--ansi`
+
+ANSI-uitvoer forceren
+
+- Standaard: `false`
+- Accepteert geen waarde
+
+### `--no-ansi`
+
+ANSI-uitvoer uitschakelen
 
 - Standaard: `false`
 - Accepteert geen waarde
 
 ### `--no`, `-n`
 
-Antwoord &quot;nee&quot; op ja/nee-vragen. interactie uitschakelen
+Antwoord &quot;nee&quot; op bevestigingsvragen; accepteert de standaardwaarde voor andere vragen; interactie uitschakelen
+
+- Standaard: `false`
+- Accepteert geen waarde
+
+### `--quiet`, `-q`
+
+Geen bericht uitvoeren
 
 - Standaard: `false`
 - Accepteert geen waarde
@@ -5928,7 +7587,7 @@ Antwoord &quot;nee&quot; op ja/nee-vragen. interactie uitschakelen
 Een lijst met activiteiten voor integratie ophalen
 
 ```bash
-magento-cloud i:act [--type TYPE] [-x|--exclude-type EXCLUDE-TYPE] [--limit LIMIT] [--start START] [--state STATE] [--result RESULT] [--format FORMAT] [--columns COLUMNS] [--no-header] [--date-fmt DATE-FMT] [-p|--project PROJECT] [--host HOST] [-e|--environment ENVIRONMENT] [--] [<id>]
+magento-cloud i:act [--type TYPE] [-x|--exclude-type EXCLUDE-TYPE] [--limit LIMIT] [--start START] [--state STATE] [--result RESULT] [-i|--incomplete] [--format FORMAT] [-c|--columns COLUMNS] [--no-header] [--date-fmt DATE-FMT] [-p|--project PROJECT] [-e|--environment ENVIRONMENT] [--] [<id>]
 ```
 
 
@@ -5949,14 +7608,14 @@ Een integratie-id. Laat leeg om uit een lijst te kiezen.
 
 ### `--type`
 
-Filteractiviteiten op type. Als er één waarde is opgegeven, wordt deze gesplitst in komma&#39;s of spaties.
+Filteractiviteiten op type. Als een lijst als één waarde wordt gegeven (bv. &quot;a,b,c&quot;) wordt gesplitst in komma&#39;s en/of witruimte.
 
 - Standaard: `[]`
 - Vereist een waarde
 
 ### `--exclude-type`, `-x`
 
-Exclusief activiteiten naar type. Als er één waarde is opgegeven, wordt deze gesplitst in komma&#39;s of spaties.
+Exclusief activiteiten naar type. Als een lijst als één waarde wordt gegeven (bv. &quot;a,b,c&quot;) wordt gesplitst in komma&#39;s en/of witruimte. Het teken % kan worden gebruikt als jokerteken om typen uit te sluiten.
 
 - Standaard: `[]`
 - Vereist een waarde
@@ -5976,7 +7635,7 @@ Alleen activiteiten die vóór deze datum zijn gemaakt, worden vermeld
 
 ### `--state`
 
-Filteractiviteiten op status. Als er één waarde is opgegeven, wordt deze gesplitst in komma&#39;s of spaties.
+Filteractiviteiten op status. Als een lijst als één waarde wordt gegeven (bv. &quot;a,b,c&quot;) wordt gesplitst in komma&#39;s en/of witruimte.
 
 - Standaard: `[]`
 - Vereist een waarde
@@ -5987,16 +7646,23 @@ Activiteiten filteren op resultaat
 
 - Vereist een waarde
 
+### `--incomplete`, `-i`
+
+Alleen onvolledige activiteiten weergeven
+
+- Standaard: `false`
+- Accepteert geen waarde
+
 ### `--format`
 
-De uitvoerindeling (&quot;table&quot;, &quot;csv&quot;, &quot;tsv&quot; of &quot;plain&quot;)
+De uitvoerindeling: table, csv, tsv of plain
 
 - Standaard: `table`
 - Vereist een waarde
 
-### `--columns`
+### `--columns`, `-c`
 
-Weer te geven kolommen (lijst met door komma&#39;s gescheiden waarden of meerdere waarden)
+Weer te geven kolommen. Beschikbare kolommen: id*, created*, description*, type*, state*, result*, completed (* = default columns). Het teken &quot;+&quot; kan worden gebruikt als tijdelijke aanduiding voor de standaardkolommen. Als een lijst als één waarde wordt gegeven (bv. &quot;a,b,c&quot;) wordt gesplitst in komma&#39;s en/of witruimte.
 
 - Standaard: `[]`
 - Vereist een waarde
@@ -6023,7 +7689,7 @@ De project-id of URL
 
 ### `--host`
 
-De API-hostnaam van het project
+Vervangen optie, niet meer gebruikt
 
 - Vereist een waarde
 
@@ -6036,13 +7702,6 @@ De API-hostnaam van het project
 ### `--help`, `-h`
 
 Dit Help-bericht weergeven
-
-- Standaard: `false`
-- Accepteert geen waarde
-
-### `--quiet`, `-q`
-
-Geen bericht uitvoeren
 
 - Standaard: `false`
 - Accepteert geen waarde
@@ -6063,14 +7722,42 @@ Deze toepassingsversie weergeven
 
 ### `--yes`, `-y`
 
-Antwoord &quot;ja&quot; op ja/nee-vragen interactie uitschakelen
+&quot;ja&quot; antwoorden op bevestigingsvragen; accepteert de standaardwaarde voor andere vragen; interactie uitschakelen
+
+- Standaard: `false`
+- Accepteert geen waarde
+
+### `--no-interaction`
+
+Geen interactieve vragen stellen; Accepteer standaardwaarden. Gelijk aan het gebruik van de omgevingsvariabele: &lt;comment>Magento_CLOUD_CLI_NO_INTERACTION=1&lt;/comment>
+
+- Standaard: `false`
+- Accepteert geen waarde
+
+### `--ansi`
+
+ANSI-uitvoer forceren
+
+- Standaard: `false`
+- Accepteert geen waarde
+
+### `--no-ansi`
+
+ANSI-uitvoer uitschakelen
 
 - Standaard: `false`
 - Accepteert geen waarde
 
 ### `--no`, `-n`
 
-Antwoord &quot;nee&quot; op ja/nee-vragen. interactie uitschakelen
+Antwoord &quot;nee&quot; op bevestigingsvragen; accepteert de standaardwaarde voor andere vragen; interactie uitschakelen
+
+- Standaard: `false`
+- Accepteert geen waarde
+
+### `--quiet`, `-q`
+
+Geen bericht uitvoeren
 
 - Standaard: `false`
 - Accepteert geen waarde
@@ -6081,7 +7768,7 @@ Antwoord &quot;nee&quot; op ja/nee-vragen. interactie uitschakelen
 Logboek weergeven voor een integratieactiviteit
 
 ```bash
-magento-cloud integration:activity:log [-t|--timestamps] [--date-fmt DATE-FMT] [-p|--project PROJECT] [--host HOST] [-e|--environment ENVIRONMENT] [--] [<integration>] [<activity>]
+magento-cloud integration:activity:log [-t|--timestamps] [--date-fmt DATE-FMT] [-p|--project PROJECT] [-e|--environment ENVIRONMENT] [--] [<integration>] [<activity>]
 ```
 
 
@@ -6117,7 +7804,7 @@ De project-id of URL
 
 ### `--host`
 
-De API-hostnaam van het project
+Vervangen optie, niet meer gebruikt
 
 - Vereist een waarde
 
@@ -6134,13 +7821,6 @@ Dit Help-bericht weergeven
 - Standaard: `false`
 - Accepteert geen waarde
 
-### `--quiet`, `-q`
-
-Geen bericht uitvoeren
-
-- Standaard: `false`
-- Accepteert geen waarde
-
 ### `--verbose`, `-v|-vv|-vvv`
 
 Verhoog de breedheid van berichten
@@ -6157,14 +7837,42 @@ Deze toepassingsversie weergeven
 
 ### `--yes`, `-y`
 
-Antwoord &quot;ja&quot; op ja/nee-vragen interactie uitschakelen
+&quot;ja&quot; antwoorden op bevestigingsvragen; accepteert de standaardwaarde voor andere vragen; interactie uitschakelen
+
+- Standaard: `false`
+- Accepteert geen waarde
+
+### `--no-interaction`
+
+Geen interactieve vragen stellen; Accepteer standaardwaarden. Gelijk aan het gebruik van de omgevingsvariabele: &lt;comment>Magento_CLOUD_CLI_NO_INTERACTION=1&lt;/comment>
+
+- Standaard: `false`
+- Accepteert geen waarde
+
+### `--ansi`
+
+ANSI-uitvoer forceren
+
+- Standaard: `false`
+- Accepteert geen waarde
+
+### `--no-ansi`
+
+ANSI-uitvoer uitschakelen
 
 - Standaard: `false`
 - Accepteert geen waarde
 
 ### `--no`, `-n`
 
-Antwoord &quot;nee&quot; op ja/nee-vragen. interactie uitschakelen
+Antwoord &quot;nee&quot; op bevestigingsvragen; accepteert de standaardwaarde voor andere vragen; interactie uitschakelen
+
+- Standaard: `false`
+- Accepteert geen waarde
+
+### `--quiet`, `-q`
+
+Geen bericht uitvoeren
 
 - Standaard: `false`
 - Accepteert geen waarde
@@ -6175,12 +7883,12 @@ Antwoord &quot;nee&quot; op ja/nee-vragen. interactie uitschakelen
 Integratie toevoegen aan het project
 
 ```bash
-magento-cloud integration:add [--type TYPE] [--base-url BASE-URL] [--username USERNAME] [--token TOKEN] [--key KEY] [--secret SECRET] [--server-project SERVER-PROJECT] [--repository REPOSITORY] [--build-merge-requests BUILD-MERGE-REQUESTS] [--build-pull-requests BUILD-PULL-REQUESTS] [--build-draft-pull-requests BUILD-DRAFT-PULL-REQUESTS] [--build-pull-requests-post-merge BUILD-PULL-REQUESTS-POST-MERGE] [--build-wip-merge-requests BUILD-WIP-MERGE-REQUESTS] [--merge-requests-clone-parent-data MERGE-REQUESTS-CLONE-PARENT-DATA] [--pull-requests-clone-parent-data PULL-REQUESTS-CLONE-PARENT-DATA] [--resync-pull-requests RESYNC-PULL-REQUESTS] [--fetch-branches FETCH-BRANCHES] [--prune-branches PRUNE-BRANCHES] [--url URL] [--shared-key SHARED-KEY] [--file FILE] [--events EVENTS] [--states STATES] [--environments ENVIRONMENTS] [--excluded-environments EXCLUDED-ENVIRONMENTS] [--from-address FROM-ADDRESS] [--recipients RECIPIENTS] [--channel CHANNEL] [--routing-key ROUTING-KEY] [-p|--project PROJECT] [--host HOST] [-W|--no-wait] [--wait]
+magento-cloud integration:add [--type TYPE] [--base-url BASE-URL] [--username USERNAME] [--token TOKEN] [--key KEY] [--secret SECRET] [--license-key LICENSE-KEY] [--server-project SERVER-PROJECT] [--repository REPOSITORY] [--build-merge-requests BUILD-MERGE-REQUESTS] [--build-pull-requests BUILD-PULL-REQUESTS] [--build-draft-pull-requests BUILD-DRAFT-PULL-REQUESTS] [--build-pull-requests-post-merge BUILD-PULL-REQUESTS-POST-MERGE] [--build-wip-merge-requests BUILD-WIP-MERGE-REQUESTS] [--merge-requests-clone-parent-data MERGE-REQUESTS-CLONE-PARENT-DATA] [--pull-requests-clone-parent-data PULL-REQUESTS-CLONE-PARENT-DATA] [--resync-pull-requests RESYNC-PULL-REQUESTS] [--fetch-branches FETCH-BRANCHES] [--prune-branches PRUNE-BRANCHES] [--url URL] [--shared-key SHARED-KEY] [--file FILE] [--events EVENTS] [--states STATES] [--environments ENVIRONMENTS] [--excluded-environments EXCLUDED-ENVIRONMENTS] [--from-address FROM-ADDRESS] [--recipients RECIPIENTS] [--channel CHANNEL] [--routing-key ROUTING-KEY] [--category CATEGORY] [--index INDEX] [--sourcetype SOURCETYPE] [--protocol PROTOCOL] [--syslog-host SYSLOG-HOST] [--syslog-port SYSLOG-PORT] [--facility FACILITY] [--message-format MESSAGE-FORMAT] [--auth-mode AUTH-MODE] [--auth-token AUTH-TOKEN] [--verify-tls VERIFY-TLS] [-p|--project PROJECT] [-W|--no-wait] [--wait]
 ```
 
 ### `--type`
 
-Het integratietype (&#39;bitbucket&#39;, &#39;bitbucket_server&#39;, &#39;github&#39;, &#39;gitlab&#39;, &#39;webhaak&#39;, &#39;health.email&#39;, &#39;health.pagerduty&#39;, &#39;health.slack&#39;, &#39;health.webhaak&#39;, &#39;script&#39;)
+Het integratietype (&#39;bitbucket&#39;, &#39;bitbucket_server&#39;, &#39;github&#39;, &#39;gitlab&#39;, &#39;webhaakje&#39;, &#39;health.email&#39;, &#39;health.pagerduty&#39;, &#39;health.slack&#39;, &#39;health.webhaakje&#39;, &#39;script&#39;, &#39;newrelic&#39;, &#39;splunk&#39;, &#39;sumologic&#39;, &#39;syslog&#39;)
 
 - Vereist een waarde
 
@@ -6198,7 +7906,7 @@ De gebruikersnaam van de Bitmap-server
 
 ### `--token`
 
-Een toegangstoken voor de integratie
+Een verificatie- of toegangstoken voor de integratie
 
 - Vereist een waarde
 
@@ -6211,6 +7919,12 @@ Een OAuth-toets voor bitemmers
 ### `--secret`
 
 Een Bitbucket OAuth-consumentengeheim
+
+- Vereist een waarde
+
+### `--license-key`
+
+De licentiecode voor New Relic Logs
 
 - Vereist een waarde
 
@@ -6298,7 +8012,7 @@ Vertakkingen verwijderen die niet bestaan op de externe server
 
 ### `--url`
 
-Webhaak: een URL om JSON-gegevens te ontvangen
+Het URL- of API-eindpunt voor de integratie
 
 - Vereist een waarde
 
@@ -6367,6 +8081,77 @@ De PagerDuty-routeringssleutel
 
 - Vereist een waarde
 
+### `--category`
+
+De Sumo Logic-categorie, gebruikt voor filteren
+
+- Vereist een waarde
+
+### `--index`
+
+De segmentindex
+
+- Vereist een waarde
+
+### `--sourcetype`
+
+Het brontype van de Splunk-gebeurtenis
+
+- Vereist een waarde
+
+### `--protocol`
+
+Vervoersprotocol van Syslog (&quot;tcp&quot;, &quot;udp&quot;, &quot;tls&quot;)
+
+- Standaard: `tls`
+- Vereist een waarde
+
+### `--syslog-host`
+
+Syslog relais/inzamelaargastheer
+
+- Vereist een waarde
+
+### `--syslog-port`
+
+Syslog relais/inzamelingspoort
+
+- Vereist een waarde
+
+### `--facility`
+
+Syslog-faciliteit
+
+- Standaard: `1`
+- Vereist een waarde
+
+### `--message-format`
+
+Syslog-berichtindeling (&#39;rfc3164&#39; of &#39;rfc5424&#39;)
+
+- Standaard: `rfc5424`
+- Vereist een waarde
+
+### `--auth-mode`
+
+Verificatiemodus (&#39;prefix&#39; of &#39;gestructureerde_data&#39;)
+
+- Standaard: `prefix`
+- Vereist een waarde
+
+### `--auth-token`
+
+Verificatietoken
+
+- Vereist een waarde
+
+### `--verify-tls`
+
+Of HTTPS-certificaatverificatie moet worden ingeschakeld (aanbevolen)
+
+- Standaard: `true`
+- Vereist een waarde
+
 ### `--project`, `-p`
 
 De project-id of URL
@@ -6375,7 +8160,7 @@ De project-id of URL
 
 ### `--host`
 
-De API-hostnaam van het project
+Vervangen optie, niet meer gebruikt
 
 - Vereist een waarde
 
@@ -6400,13 +8185,6 @@ Dit Help-bericht weergeven
 - Standaard: `false`
 - Accepteert geen waarde
 
-### `--quiet`, `-q`
-
-Geen bericht uitvoeren
-
-- Standaard: `false`
-- Accepteert geen waarde
-
 ### `--verbose`, `-v|-vv|-vvv`
 
 Verhoog de breedheid van berichten
@@ -6423,14 +8201,42 @@ Deze toepassingsversie weergeven
 
 ### `--yes`, `-y`
 
-Antwoord &quot;ja&quot; op ja/nee-vragen interactie uitschakelen
+&quot;ja&quot; antwoorden op bevestigingsvragen; accepteert de standaardwaarde voor andere vragen; interactie uitschakelen
+
+- Standaard: `false`
+- Accepteert geen waarde
+
+### `--no-interaction`
+
+Geen interactieve vragen stellen; Accepteer standaardwaarden. Gelijk aan het gebruik van de omgevingsvariabele: &lt;comment>Magento_CLOUD_CLI_NO_INTERACTION=1&lt;/comment>
+
+- Standaard: `false`
+- Accepteert geen waarde
+
+### `--ansi`
+
+ANSI-uitvoer forceren
+
+- Standaard: `false`
+- Accepteert geen waarde
+
+### `--no-ansi`
+
+ANSI-uitvoer uitschakelen
 
 - Standaard: `false`
 - Accepteert geen waarde
 
 ### `--no`, `-n`
 
-Antwoord &quot;nee&quot; op ja/nee-vragen. interactie uitschakelen
+Antwoord &quot;nee&quot; op bevestigingsvragen; accepteert de standaardwaarde voor andere vragen; interactie uitschakelen
+
+- Standaard: `false`
+- Accepteert geen waarde
+
+### `--quiet`, `-q`
+
+Geen bericht uitvoeren
 
 - Standaard: `false`
 - Accepteert geen waarde
@@ -6441,7 +8247,7 @@ Antwoord &quot;nee&quot; op ja/nee-vragen. interactie uitschakelen
 Integratie uit een project verwijderen
 
 ```bash
-magento-cloud integration:delete [-p|--project PROJECT] [--host HOST] [-W|--no-wait] [--wait] [--] [<id>]
+magento-cloud integration:delete [-p|--project PROJECT] [-W|--no-wait] [--wait] [--] [<id>]
 ```
 
 
@@ -6458,7 +8264,7 @@ De project-id of URL
 
 ### `--host`
 
-De API-hostnaam van het project
+Vervangen optie, niet meer gebruikt
 
 - Vereist een waarde
 
@@ -6483,13 +8289,6 @@ Dit Help-bericht weergeven
 - Standaard: `false`
 - Accepteert geen waarde
 
-### `--quiet`, `-q`
-
-Geen bericht uitvoeren
-
-- Standaard: `false`
-- Accepteert geen waarde
-
 ### `--verbose`, `-v|-vv|-vvv`
 
 Verhoog de breedheid van berichten
@@ -6506,14 +8305,42 @@ Deze toepassingsversie weergeven
 
 ### `--yes`, `-y`
 
-Antwoord &quot;ja&quot; op ja/nee-vragen interactie uitschakelen
+&quot;ja&quot; antwoorden op bevestigingsvragen; accepteert de standaardwaarde voor andere vragen; interactie uitschakelen
+
+- Standaard: `false`
+- Accepteert geen waarde
+
+### `--no-interaction`
+
+Geen interactieve vragen stellen; Accepteer standaardwaarden. Gelijk aan het gebruik van de omgevingsvariabele: &lt;comment>Magento_CLOUD_CLI_NO_INTERACTION=1&lt;/comment>
+
+- Standaard: `false`
+- Accepteert geen waarde
+
+### `--ansi`
+
+ANSI-uitvoer forceren
+
+- Standaard: `false`
+- Accepteert geen waarde
+
+### `--no-ansi`
+
+ANSI-uitvoer uitschakelen
 
 - Standaard: `false`
 - Accepteert geen waarde
 
 ### `--no`, `-n`
 
-Antwoord &quot;nee&quot; op ja/nee-vragen. interactie uitschakelen
+Antwoord &quot;nee&quot; op bevestigingsvragen; accepteert de standaardwaarde voor andere vragen; interactie uitschakelen
+
+- Standaard: `false`
+- Accepteert geen waarde
+
+### `--quiet`, `-q`
+
+Geen bericht uitvoeren
 
 - Standaard: `false`
 - Accepteert geen waarde
@@ -6524,7 +8351,7 @@ Antwoord &quot;nee&quot; op ja/nee-vragen. interactie uitschakelen
 Details van een integratie weergeven
 
 ```bash
-magento-cloud integration:get [-P|--property [PROPERTY]] [--format FORMAT] [--columns COLUMNS] [--no-header] [-p|--project PROJECT] [--host HOST] [--] [<id>]
+magento-cloud integration:get [-P|--property [PROPERTY]] [--format FORMAT] [-c|--columns COLUMNS] [--no-header] [-p|--project PROJECT] [--] [<id>]
 ```
 
 
@@ -6541,14 +8368,14 @@ De integratieeigenschap die moet worden weergegeven
 
 ### `--format`
 
-De uitvoerindeling (&quot;table&quot;, &quot;csv&quot;, &quot;tsv&quot; of &quot;plain&quot;)
+De uitvoerindeling: table, csv, tsv of plain
 
 - Standaard: `table`
 - Vereist een waarde
 
-### `--columns`
+### `--columns`, `-c`
 
-Weer te geven kolommen (lijst met door komma&#39;s gescheiden waarden of meerdere waarden)
+Weer te geven kolommen. Als een lijst als één waarde wordt gegeven (bv. &quot;a,b,c&quot;) wordt gesplitst in komma&#39;s en/of witruimte.
 
 - Standaard: `[]`
 - Vereist een waarde
@@ -6568,20 +8395,13 @@ De project-id of URL
 
 ### `--host`
 
-De API-hostnaam van het project
+Vervangen optie, niet meer gebruikt
 
 - Vereist een waarde
 
 ### `--help`, `-h`
 
 Dit Help-bericht weergeven
-
-- Standaard: `false`
-- Accepteert geen waarde
-
-### `--quiet`, `-q`
-
-Geen bericht uitvoeren
 
 - Standaard: `false`
 - Accepteert geen waarde
@@ -6602,14 +8422,42 @@ Deze toepassingsversie weergeven
 
 ### `--yes`, `-y`
 
-Antwoord &quot;ja&quot; op ja/nee-vragen interactie uitschakelen
+&quot;ja&quot; antwoorden op bevestigingsvragen; accepteert de standaardwaarde voor andere vragen; interactie uitschakelen
+
+- Standaard: `false`
+- Accepteert geen waarde
+
+### `--no-interaction`
+
+Geen interactieve vragen stellen; Accepteer standaardwaarden. Gelijk aan het gebruik van de omgevingsvariabele: &lt;comment>Magento_CLOUD_CLI_NO_INTERACTION=1&lt;/comment>
+
+- Standaard: `false`
+- Accepteert geen waarde
+
+### `--ansi`
+
+ANSI-uitvoer forceren
+
+- Standaard: `false`
+- Accepteert geen waarde
+
+### `--no-ansi`
+
+ANSI-uitvoer uitschakelen
 
 - Standaard: `false`
 - Accepteert geen waarde
 
 ### `--no`, `-n`
 
-Antwoord &quot;nee&quot; op ja/nee-vragen. interactie uitschakelen
+Antwoord &quot;nee&quot; op bevestigingsvragen; accepteert de standaardwaarde voor andere vragen; interactie uitschakelen
+
+- Standaard: `false`
+- Accepteert geen waarde
+
+### `--quiet`, `-q`
+
+Geen bericht uitvoeren
 
 - Standaard: `false`
 - Accepteert geen waarde
@@ -6620,7 +8468,7 @@ Antwoord &quot;nee&quot; op ja/nee-vragen. interactie uitschakelen
 Een lijst met projectintegratie(s) weergeven
 
 ```bash
-magento-cloud integrations [--format FORMAT] [--columns COLUMNS] [--no-header] [-p|--project PROJECT] [--host HOST]
+magento-cloud integrations [--format FORMAT] [-c|--columns COLUMNS] [--no-header] [-p|--project PROJECT]
 ```
 
 
@@ -6630,14 +8478,14 @@ integrations
 
 ### `--format`
 
-De uitvoerindeling (&quot;table&quot;, &quot;csv&quot;, &quot;tsv&quot; of &quot;plain&quot;)
+De uitvoerindeling: table, csv, tsv of plain
 
 - Standaard: `table`
 - Vereist een waarde
 
-### `--columns`
+### `--columns`, `-c`
 
-Weer te geven kolommen (lijst met door komma&#39;s gescheiden waarden of meerdere waarden)
+Weer te geven kolommen. Beschikbare kolommen: id, summary, type. Als een lijst als één waarde wordt gegeven (bv. &quot;a,b,c&quot;) wordt gesplitst in komma&#39;s en/of witruimte.
 
 - Standaard: `[]`
 - Vereist een waarde
@@ -6657,20 +8505,13 @@ De project-id of URL
 
 ### `--host`
 
-De API-hostnaam van het project
+Vervangen optie, niet meer gebruikt
 
 - Vereist een waarde
 
 ### `--help`, `-h`
 
 Dit Help-bericht weergeven
-
-- Standaard: `false`
-- Accepteert geen waarde
-
-### `--quiet`, `-q`
-
-Geen bericht uitvoeren
 
 - Standaard: `false`
 - Accepteert geen waarde
@@ -6691,14 +8532,42 @@ Deze toepassingsversie weergeven
 
 ### `--yes`, `-y`
 
-Antwoord &quot;ja&quot; op ja/nee-vragen interactie uitschakelen
+&quot;ja&quot; antwoorden op bevestigingsvragen; accepteert de standaardwaarde voor andere vragen; interactie uitschakelen
+
+- Standaard: `false`
+- Accepteert geen waarde
+
+### `--no-interaction`
+
+Geen interactieve vragen stellen; Accepteer standaardwaarden. Gelijk aan het gebruik van de omgevingsvariabele: &lt;comment>Magento_CLOUD_CLI_NO_INTERACTION=1&lt;/comment>
+
+- Standaard: `false`
+- Accepteert geen waarde
+
+### `--ansi`
+
+ANSI-uitvoer forceren
+
+- Standaard: `false`
+- Accepteert geen waarde
+
+### `--no-ansi`
+
+ANSI-uitvoer uitschakelen
 
 - Standaard: `false`
 - Accepteert geen waarde
 
 ### `--no`, `-n`
 
-Antwoord &quot;nee&quot; op ja/nee-vragen. interactie uitschakelen
+Antwoord &quot;nee&quot; op bevestigingsvragen; accepteert de standaardwaarde voor andere vragen; interactie uitschakelen
+
+- Standaard: `false`
+- Accepteert geen waarde
+
+### `--quiet`, `-q`
+
+Geen bericht uitvoeren
 
 - Standaard: `false`
 - Accepteert geen waarde
@@ -6709,7 +8578,7 @@ Antwoord &quot;nee&quot; op ja/nee-vragen. interactie uitschakelen
 Integratie bijwerken
 
 ```bash
-magento-cloud integration:update [--type TYPE] [--base-url BASE-URL] [--username USERNAME] [--token TOKEN] [--key KEY] [--secret SECRET] [--server-project SERVER-PROJECT] [--repository REPOSITORY] [--build-merge-requests BUILD-MERGE-REQUESTS] [--build-pull-requests BUILD-PULL-REQUESTS] [--build-draft-pull-requests BUILD-DRAFT-PULL-REQUESTS] [--build-pull-requests-post-merge BUILD-PULL-REQUESTS-POST-MERGE] [--build-wip-merge-requests BUILD-WIP-MERGE-REQUESTS] [--merge-requests-clone-parent-data MERGE-REQUESTS-CLONE-PARENT-DATA] [--pull-requests-clone-parent-data PULL-REQUESTS-CLONE-PARENT-DATA] [--resync-pull-requests RESYNC-PULL-REQUESTS] [--fetch-branches FETCH-BRANCHES] [--prune-branches PRUNE-BRANCHES] [--url URL] [--shared-key SHARED-KEY] [--file FILE] [--events EVENTS] [--states STATES] [--environments ENVIRONMENTS] [--excluded-environments EXCLUDED-ENVIRONMENTS] [--from-address FROM-ADDRESS] [--recipients RECIPIENTS] [--channel CHANNEL] [--routing-key ROUTING-KEY] [-p|--project PROJECT] [--host HOST] [-W|--no-wait] [--wait] [--] [<id>]
+magento-cloud integration:update [--type TYPE] [--base-url BASE-URL] [--username USERNAME] [--token TOKEN] [--key KEY] [--secret SECRET] [--license-key LICENSE-KEY] [--server-project SERVER-PROJECT] [--repository REPOSITORY] [--build-merge-requests BUILD-MERGE-REQUESTS] [--build-pull-requests BUILD-PULL-REQUESTS] [--build-draft-pull-requests BUILD-DRAFT-PULL-REQUESTS] [--build-pull-requests-post-merge BUILD-PULL-REQUESTS-POST-MERGE] [--build-wip-merge-requests BUILD-WIP-MERGE-REQUESTS] [--merge-requests-clone-parent-data MERGE-REQUESTS-CLONE-PARENT-DATA] [--pull-requests-clone-parent-data PULL-REQUESTS-CLONE-PARENT-DATA] [--resync-pull-requests RESYNC-PULL-REQUESTS] [--fetch-branches FETCH-BRANCHES] [--prune-branches PRUNE-BRANCHES] [--url URL] [--shared-key SHARED-KEY] [--file FILE] [--events EVENTS] [--states STATES] [--environments ENVIRONMENTS] [--excluded-environments EXCLUDED-ENVIRONMENTS] [--from-address FROM-ADDRESS] [--recipients RECIPIENTS] [--channel CHANNEL] [--routing-key ROUTING-KEY] [--category CATEGORY] [--index INDEX] [--sourcetype SOURCETYPE] [--protocol PROTOCOL] [--syslog-host SYSLOG-HOST] [--syslog-port SYSLOG-PORT] [--facility FACILITY] [--message-format MESSAGE-FORMAT] [--auth-mode AUTH-MODE] [--auth-token AUTH-TOKEN] [--verify-tls VERIFY-TLS] [-p|--project PROJECT] [-W|--no-wait] [--wait] [--] [<id>]
 ```
 
 
@@ -6720,7 +8589,7 @@ De id van de bij te werken integratie
 
 ### `--type`
 
-Het integratietype (&#39;bitbucket&#39;, &#39;bitbucket_server&#39;, &#39;github&#39;, &#39;gitlab&#39;, &#39;webhaak&#39;, &#39;health.email&#39;, &#39;health.pagerduty&#39;, &#39;health.slack&#39;, &#39;health.webhaak&#39;, &#39;script&#39;)
+Het integratietype (&#39;bitbucket&#39;, &#39;bitbucket_server&#39;, &#39;github&#39;, &#39;gitlab&#39;, &#39;webhaakje&#39;, &#39;health.email&#39;, &#39;health.pagerduty&#39;, &#39;health.slack&#39;, &#39;health.webhaakje&#39;, &#39;script&#39;, &#39;newrelic&#39;, &#39;splunk&#39;, &#39;sumologic&#39;, &#39;syslog&#39;)
 
 - Vereist een waarde
 
@@ -6738,7 +8607,7 @@ De gebruikersnaam van de Bitmap-server
 
 ### `--token`
 
-Een toegangstoken voor de integratie
+Een verificatie- of toegangstoken voor de integratie
 
 - Vereist een waarde
 
@@ -6751,6 +8620,12 @@ Een OAuth-toets voor bitemmers
 ### `--secret`
 
 Een Bitbucket OAuth-consumentengeheim
+
+- Vereist een waarde
+
+### `--license-key`
+
+De licentiecode voor New Relic Logs
 
 - Vereist een waarde
 
@@ -6838,7 +8713,7 @@ Vertakkingen verwijderen die niet bestaan op de externe server
 
 ### `--url`
 
-Webhaak: een URL om JSON-gegevens te ontvangen
+Het URL- of API-eindpunt voor de integratie
 
 - Vereist een waarde
 
@@ -6907,6 +8782,77 @@ De PagerDuty-routeringssleutel
 
 - Vereist een waarde
 
+### `--category`
+
+De Sumo Logic-categorie, gebruikt voor filteren
+
+- Vereist een waarde
+
+### `--index`
+
+De segmentindex
+
+- Vereist een waarde
+
+### `--sourcetype`
+
+Het brontype van de Splunk-gebeurtenis
+
+- Vereist een waarde
+
+### `--protocol`
+
+Vervoersprotocol van Syslog (&quot;tcp&quot;, &quot;udp&quot;, &quot;tls&quot;)
+
+- Standaard: `tls`
+- Vereist een waarde
+
+### `--syslog-host`
+
+Syslog relais/inzamelaargastheer
+
+- Vereist een waarde
+
+### `--syslog-port`
+
+Syslog relais/inzamelingspoort
+
+- Vereist een waarde
+
+### `--facility`
+
+Syslog-faciliteit
+
+- Standaard: `1`
+- Vereist een waarde
+
+### `--message-format`
+
+Syslog-berichtindeling (&#39;rfc3164&#39; of &#39;rfc5424&#39;)
+
+- Standaard: `rfc5424`
+- Vereist een waarde
+
+### `--auth-mode`
+
+Verificatiemodus (&#39;prefix&#39; of &#39;gestructureerde_data&#39;)
+
+- Standaard: `prefix`
+- Vereist een waarde
+
+### `--auth-token`
+
+Verificatietoken
+
+- Vereist een waarde
+
+### `--verify-tls`
+
+Of HTTPS-certificaatverificatie moet worden ingeschakeld (aanbevolen)
+
+- Standaard: `true`
+- Vereist een waarde
+
 ### `--project`, `-p`
 
 De project-id of URL
@@ -6915,7 +8861,7 @@ De project-id of URL
 
 ### `--host`
 
-De API-hostnaam van het project
+Vervangen optie, niet meer gebruikt
 
 - Vereist een waarde
 
@@ -6940,13 +8886,6 @@ Dit Help-bericht weergeven
 - Standaard: `false`
 - Accepteert geen waarde
 
-### `--quiet`, `-q`
-
-Geen bericht uitvoeren
-
-- Standaard: `false`
-- Accepteert geen waarde
-
 ### `--verbose`, `-v|-vv|-vvv`
 
 Verhoog de breedheid van berichten
@@ -6963,14 +8902,42 @@ Deze toepassingsversie weergeven
 
 ### `--yes`, `-y`
 
-Antwoord &quot;ja&quot; op ja/nee-vragen interactie uitschakelen
+&quot;ja&quot; antwoorden op bevestigingsvragen; accepteert de standaardwaarde voor andere vragen; interactie uitschakelen
+
+- Standaard: `false`
+- Accepteert geen waarde
+
+### `--no-interaction`
+
+Geen interactieve vragen stellen; Accepteer standaardwaarden. Gelijk aan het gebruik van de omgevingsvariabele: &lt;comment>Magento_CLOUD_CLI_NO_INTERACTION=1&lt;/comment>
+
+- Standaard: `false`
+- Accepteert geen waarde
+
+### `--ansi`
+
+ANSI-uitvoer forceren
+
+- Standaard: `false`
+- Accepteert geen waarde
+
+### `--no-ansi`
+
+ANSI-uitvoer uitschakelen
 
 - Standaard: `false`
 - Accepteert geen waarde
 
 ### `--no`, `-n`
 
-Antwoord &quot;nee&quot; op ja/nee-vragen. interactie uitschakelen
+Antwoord &quot;nee&quot; op bevestigingsvragen; accepteert de standaardwaarde voor andere vragen; interactie uitschakelen
+
+- Standaard: `false`
+- Accepteert geen waarde
+
+### `--quiet`, `-q`
+
+Geen bericht uitvoeren
 
 - Standaard: `false`
 - Accepteert geen waarde
@@ -6981,7 +8948,7 @@ Antwoord &quot;nee&quot; op ja/nee-vragen. interactie uitschakelen
 Een bestaande integratie valideren
 
 ```bash
-magento-cloud integration:validate [-p|--project PROJECT] [--host HOST] [--] [<id>]
+magento-cloud integration:validate [-p|--project PROJECT] [--] [<id>]
 ```
 
 
@@ -6998,20 +8965,13 @@ De project-id of URL
 
 ### `--host`
 
-De API-hostnaam van het project
+Vervangen optie, niet meer gebruikt
 
 - Vereist een waarde
 
 ### `--help`, `-h`
 
 Dit Help-bericht weergeven
-
-- Standaard: `false`
-- Accepteert geen waarde
-
-### `--quiet`, `-q`
-
-Geen bericht uitvoeren
 
 - Standaard: `false`
 - Accepteert geen waarde
@@ -7032,14 +8992,42 @@ Deze toepassingsversie weergeven
 
 ### `--yes`, `-y`
 
-Antwoord &quot;ja&quot; op ja/nee-vragen interactie uitschakelen
+&quot;ja&quot; antwoorden op bevestigingsvragen; accepteert de standaardwaarde voor andere vragen; interactie uitschakelen
+
+- Standaard: `false`
+- Accepteert geen waarde
+
+### `--no-interaction`
+
+Geen interactieve vragen stellen; Accepteer standaardwaarden. Gelijk aan het gebruik van de omgevingsvariabele: &lt;comment>Magento_CLOUD_CLI_NO_INTERACTION=1&lt;/comment>
+
+- Standaard: `false`
+- Accepteert geen waarde
+
+### `--ansi`
+
+ANSI-uitvoer forceren
+
+- Standaard: `false`
+- Accepteert geen waarde
+
+### `--no-ansi`
+
+ANSI-uitvoer uitschakelen
 
 - Standaard: `false`
 - Accepteert geen waarde
 
 ### `--no`, `-n`
 
-Antwoord &quot;nee&quot; op ja/nee-vragen. interactie uitschakelen
+Antwoord &quot;nee&quot; op bevestigingsvragen; accepteert de standaardwaarde voor andere vragen; interactie uitschakelen
+
+- Standaard: `false`
+- Accepteert geen waarde
+
+### `--quiet`, `-q`
+
+Geen bericht uitvoeren
 
 - Standaard: `false`
 - Accepteert geen waarde
@@ -7177,13 +9165,6 @@ Dit Help-bericht weergeven
 - Standaard: `false`
 - Accepteert geen waarde
 
-### `--quiet`, `-q`
-
-Geen bericht uitvoeren
-
-- Standaard: `false`
-- Accepteert geen waarde
-
 ### `--verbose`, `-v|-vv|-vvv`
 
 Verhoog de breedheid van berichten
@@ -7200,14 +9181,42 @@ Deze toepassingsversie weergeven
 
 ### `--yes`, `-y`
 
-Antwoord &quot;ja&quot; op ja/nee-vragen interactie uitschakelen
+&quot;ja&quot; antwoorden op bevestigingsvragen; accepteert de standaardwaarde voor andere vragen; interactie uitschakelen
+
+- Standaard: `false`
+- Accepteert geen waarde
+
+### `--no-interaction`
+
+Geen interactieve vragen stellen; Accepteer standaardwaarden. Gelijk aan het gebruik van de omgevingsvariabele: &lt;comment>Magento_CLOUD_CLI_NO_INTERACTION=1&lt;/comment>
+
+- Standaard: `false`
+- Accepteert geen waarde
+
+### `--ansi`
+
+ANSI-uitvoer forceren
+
+- Standaard: `false`
+- Accepteert geen waarde
+
+### `--no-ansi`
+
+ANSI-uitvoer uitschakelen
 
 - Standaard: `false`
 - Accepteert geen waarde
 
 ### `--no`, `-n`
 
-Antwoord &quot;nee&quot; op ja/nee-vragen. interactie uitschakelen
+Antwoord &quot;nee&quot; op bevestigingsvragen; accepteert de standaardwaarde voor andere vragen; interactie uitschakelen
+
+- Standaard: `false`
+- Accepteert geen waarde
+
+### `--quiet`, `-q`
+
+Geen bericht uitvoeren
 
 - Standaard: `false`
 - Accepteert geen waarde
@@ -7253,13 +9262,6 @@ Dit Help-bericht weergeven
 - Standaard: `false`
 - Accepteert geen waarde
 
-### `--quiet`, `-q`
-
-Geen bericht uitvoeren
-
-- Standaard: `false`
-- Accepteert geen waarde
-
 ### `--verbose`, `-v|-vv|-vvv`
 
 Verhoog de breedheid van berichten
@@ -7276,14 +9278,42 @@ Deze toepassingsversie weergeven
 
 ### `--yes`, `-y`
 
-Antwoord &quot;ja&quot; op ja/nee-vragen interactie uitschakelen
+&quot;ja&quot; antwoorden op bevestigingsvragen; accepteert de standaardwaarde voor andere vragen; interactie uitschakelen
+
+- Standaard: `false`
+- Accepteert geen waarde
+
+### `--no-interaction`
+
+Geen interactieve vragen stellen; Accepteer standaardwaarden. Gelijk aan het gebruik van de omgevingsvariabele: &lt;comment>Magento_CLOUD_CLI_NO_INTERACTION=1&lt;/comment>
+
+- Standaard: `false`
+- Accepteert geen waarde
+
+### `--ansi`
+
+ANSI-uitvoer forceren
+
+- Standaard: `false`
+- Accepteert geen waarde
+
+### `--no-ansi`
+
+ANSI-uitvoer uitschakelen
 
 - Standaard: `false`
 - Accepteert geen waarde
 
 ### `--no`, `-n`
 
-Antwoord &quot;nee&quot; op ja/nee-vragen. interactie uitschakelen
+Antwoord &quot;nee&quot; op bevestigingsvragen; accepteert de standaardwaarde voor andere vragen; interactie uitschakelen
+
+- Standaard: `false`
+- Accepteert geen waarde
+
+### `--quiet`, `-q`
+
+Geen bericht uitvoeren
 
 - Standaard: `false`
 - Accepteert geen waarde
@@ -7315,9 +9345,169 @@ Dit Help-bericht weergeven
 - Standaard: `false`
 - Accepteert geen waarde
 
+### `--verbose`, `-v|-vv|-vvv`
+
+Verhoog de breedheid van berichten
+
+- Standaard: `false`
+- Accepteert geen waarde
+
+### `--version`, `-V`
+
+Deze toepassingsversie weergeven
+
+- Standaard: `false`
+- Accepteert geen waarde
+
+### `--yes`, `-y`
+
+&quot;ja&quot; antwoorden op bevestigingsvragen; accepteert de standaardwaarde voor andere vragen; interactie uitschakelen
+
+- Standaard: `false`
+- Accepteert geen waarde
+
+### `--no-interaction`
+
+Geen interactieve vragen stellen; Accepteer standaardwaarden. Gelijk aan het gebruik van de omgevingsvariabele: &lt;comment>Magento_CLOUD_CLI_NO_INTERACTION=1&lt;/comment>
+
+- Standaard: `false`
+- Accepteert geen waarde
+
+### `--ansi`
+
+ANSI-uitvoer forceren
+
+- Standaard: `false`
+- Accepteert geen waarde
+
+### `--no-ansi`
+
+ANSI-uitvoer uitschakelen
+
+- Standaard: `false`
+- Accepteert geen waarde
+
+### `--no`, `-n`
+
+Antwoord &quot;nee&quot; op bevestigingsvragen; accepteert de standaardwaarde voor andere vragen; interactie uitschakelen
+
+- Standaard: `false`
+- Accepteert geen waarde
+
 ### `--quiet`, `-q`
 
 Geen bericht uitvoeren
+
+- Standaard: `false`
+- Accepteert geen waarde
+
+
+## `metrics:disk-usage`
+
+Schijfgebruik tonen op een service
+
+```bash
+magento-cloud disk [-s|--service SERVICE] [--type TYPE] [-r|--range RANGE] [-i|--interval INTERVAL] [--to TO] [-B|--bytes] [-1|--latest] [-p|--project PROJECT] [-e|--environment ENVIRONMENT] [--format FORMAT] [-c|--columns COLUMNS] [--no-header] [--date-fmt DATE-FMT]
+```
+
+
+```bash
+disk
+```
+
+### `--service`, `-s`
+
+De servicenaam
+
+- Vereist een waarde
+
+### `--type`
+
+Het servicetype (als de servicenaam niet wordt opgegeven), bijvoorbeeld mysql, pgsql, mongodb, enz. De typeversie is niet vereist.
+
+- Vereist een waarde
+
+### `--range`, `-r`
+
+Het tijdbereik. Metriek wordt voor deze duur geladen tot de eindtijd (—to). U kunt eenheden opgeven: uren (h), minuten (m) of seconden (s). Minimaal &lt;comment>5 m&lt;/comment>, maximum &lt;comment>8&lt;/comment> of meer (afhankelijk van het project), standaard &lt;comment>10 m&lt;/comment>.
+
+- Vereist een waarde
+
+### `--interval`, `-i`
+
+Het tijdinterval. De standaardwaarde is een verdeling van het bereik. U kunt eenheden opgeven: uren (h), minuten (m) of seconden (s). Minimaal &lt;comment>1 m&lt;/comment>, maximum &lt;comment>1h&lt;/comment>.
+
+- Vereist een waarde
+
+### `--to`
+
+De eindtijd. Tot nu toe is dat standaard het geval.
+
+- Vereist een waarde
+
+### `--bytes`, `-B`
+
+Grootte in bytes weergeven
+
+- Standaard: `false`
+- Accepteert geen waarde
+
+### `--latest`, `-1`
+
+Alleen het laatste enkele gegevenspunt weergeven
+
+- Standaard: `false`
+- Accepteert geen waarde
+
+### `--project`, `-p`
+
+De project-id of URL
+
+- Vereist een waarde
+
+### `--host`
+
+Vervangen optie, niet meer gebruikt
+
+- Vereist een waarde
+
+### `--environment`, `-e`
+
+De milieu-id
+
+- Vereist een waarde
+
+### `--format`
+
+De uitvoerindeling: table, csv, tsv of plain
+
+- Standaard: `table`
+- Vereist een waarde
+
+### `--columns`, `-c`
+
+Weer te geven kolommen. Beschikbare kolommen: timestamp*, used*, limit*, percent*, ipercent*, ilimit, interval, used (* = default columns). Het teken &quot;+&quot; kan worden gebruikt als plaatsaanduiding voor de standaardkolommen. Als een lijst als één waarde wordt gegeven (bijv. &quot;a,b,c&quot;) wordt gesplitst in komma&#39;s en/of spaties.
+
+- Standaard: `[]`
+- Vereist een waarde
+
+### `--no-header`
+
+De tabelkoptekst niet uitvoeren
+
+- Standaard: `false`
+- Accepteert geen waarde
+
+### `--date-fmt`
+
+De datumnotatie (als een PHP-tekenreeks voor de datumnotatie)
+
+- Standaard: `c`
+- Vereist een waarde
+
+### `--help`, `-h`
+
+Dit Help-bericht weergeven
 
 - Standaard: `false`
 - Accepteert geen waarde
@@ -7338,14 +9528,42 @@ Deze toepassingsversie weergeven
 
 ### `--yes`, `-y`
 
-Antwoord &quot;ja&quot; op ja/nee-vragen interactie uitschakelen
+&quot;ja&quot; antwoorden op bevestigingsvragen; accepteert de standaardwaarde voor andere vragen; interactie uitschakelen
+
+- Standaard: `false`
+- Accepteert geen waarde
+
+### `--no-interaction`
+
+Geen interactieve vragen stellen; Accepteer standaardwaarden. Gelijk aan het gebruik van de omgevingsvariabele: &lt;comment>Magento_CLOUD_CLI_NO_INTERACTION=1&lt;/comment>
+
+- Standaard: `false`
+- Accepteert geen waarde
+
+### `--ansi`
+
+ANSI-uitvoer forceren
+
+- Standaard: `false`
+- Accepteert geen waarde
+
+### `--no-ansi`
+
+ANSI-uitvoer uitschakelen
 
 - Standaard: `false`
 - Accepteert geen waarde
 
 ### `--no`, `-n`
 
-Antwoord &quot;nee&quot; op ja/nee-vragen. interactie uitschakelen
+Antwoord &quot;nee&quot; op bevestigingsvragen; accepteert de standaardwaarde voor andere vragen; interactie uitschakelen
+
+- Standaard: `false`
+- Accepteert geen waarde
+
+### `--quiet`, `-q`
+
+Geen bericht uitvoeren
 
 - Standaard: `false`
 - Accepteert geen waarde
@@ -7356,7 +9574,7 @@ Antwoord &quot;nee&quot; op ja/nee-vragen. interactie uitschakelen
 Bestanden downloaden van een berg, via resynchroniseren
 
 ```bash
-magento-cloud mount:download [-a|--all] [-m|--mount MOUNT] [--target TARGET] [--source-path] [--delete] [--exclude EXCLUDE] [--include INCLUDE] [--refresh] [-p|--project PROJECT] [--host HOST] [-e|--environment ENVIRONMENT] [-A|--app APP] [--worker WORKER] [-i|--identity-file IDENTITY-FILE]
+magento-cloud mount:download [-a|--all] [-m|--mount MOUNT] [--target TARGET] [--source-path] [--delete] [--exclude EXCLUDE] [--include INCLUDE] [--refresh] [-p|--project PROJECT] [-e|--environment ENVIRONMENT] [-A|--app APP] [--worker WORKER] [-I|--instance INSTANCE] [-i|--identity-file IDENTITY-FILE]
 ```
 
 ### `--all`, `-a`
@@ -7421,7 +9639,7 @@ De project-id of URL
 
 ### `--host`
 
-De API-hostnaam van het project
+Vervangen optie, niet meer gebruikt
 
 - Vereist een waarde
 
@@ -7443,6 +9661,12 @@ De naam van een worker
 
 - Vereist een waarde
 
+### `--instance`, `-I`
+
+Instantie-id
+
+- Vereist een waarde
+
 ### `--identity-file`, `-i`
 
 Een SSH-identiteit (persoonlijke sleutel) die moet worden gebruikt
@@ -7452,13 +9676,6 @@ Een SSH-identiteit (persoonlijke sleutel) die moet worden gebruikt
 ### `--help`, `-h`
 
 Dit Help-bericht weergeven
-
-- Standaard: `false`
-- Accepteert geen waarde
-
-### `--quiet`, `-q`
-
-Geen bericht uitvoeren
 
 - Standaard: `false`
 - Accepteert geen waarde
@@ -7479,14 +9696,42 @@ Deze toepassingsversie weergeven
 
 ### `--yes`, `-y`
 
-Antwoord &quot;ja&quot; op ja/nee-vragen interactie uitschakelen
+&quot;ja&quot; antwoorden op bevestigingsvragen; accepteert de standaardwaarde voor andere vragen; interactie uitschakelen
+
+- Standaard: `false`
+- Accepteert geen waarde
+
+### `--no-interaction`
+
+Geen interactieve vragen stellen; Accepteer standaardwaarden. Gelijk aan het gebruik van de omgevingsvariabele: &lt;comment>Magento_CLOUD_CLI_NO_INTERACTION=1&lt;/comment>
+
+- Standaard: `false`
+- Accepteert geen waarde
+
+### `--ansi`
+
+ANSI-uitvoer forceren
+
+- Standaard: `false`
+- Accepteert geen waarde
+
+### `--no-ansi`
+
+ANSI-uitvoer uitschakelen
 
 - Standaard: `false`
 - Accepteert geen waarde
 
 ### `--no`, `-n`
 
-Antwoord &quot;nee&quot; op ja/nee-vragen. interactie uitschakelen
+Antwoord &quot;nee&quot; op bevestigingsvragen; accepteert de standaardwaarde voor andere vragen; interactie uitschakelen
+
+- Standaard: `false`
+- Accepteert geen waarde
+
+### `--quiet`, `-q`
+
+Geen bericht uitvoeren
 
 - Standaard: `false`
 - Accepteert geen waarde
@@ -7497,7 +9742,7 @@ Antwoord &quot;nee&quot; op ja/nee-vragen. interactie uitschakelen
 Een lijst met bevestigingen ophalen
 
 ```bash
-magento-cloud mounts [--paths] [--refresh] [--format FORMAT] [--columns COLUMNS] [--no-header] [-p|--project PROJECT] [--host HOST] [-e|--environment ENVIRONMENT] [-A|--app APP] [--worker WORKER]
+magento-cloud mounts [--paths] [--refresh] [--format FORMAT] [-c|--columns COLUMNS] [--no-header] [-p|--project PROJECT] [-e|--environment ENVIRONMENT] [-A|--app APP] [--worker WORKER] [-I|--instance INSTANCE]
 ```
 
 
@@ -7521,14 +9766,14 @@ Of de cache moet worden vernieuwd
 
 ### `--format`
 
-De uitvoerindeling (&quot;table&quot;, &quot;csv&quot;, &quot;tsv&quot; of &quot;plain&quot;)
+De uitvoerindeling: table, csv, tsv of plain
 
 - Standaard: `table`
 - Vereist een waarde
 
-### `--columns`
+### `--columns`, `-c`
 
-Weer te geven kolommen (lijst met door komma&#39;s gescheiden waarden of meerdere waarden)
+Weer te geven kolommen. Beschikbare kolommen: definitie, pad. Als een lijst als één waarde wordt gegeven (bv. &quot;a,b,c&quot;) wordt gesplitst in komma&#39;s en/of witruimte.
 
 - Standaard: `[]`
 - Vereist een waarde
@@ -7548,7 +9793,7 @@ De project-id of URL
 
 ### `--host`
 
-De API-hostnaam van het project
+Vervangen optie, niet meer gebruikt
 
 - Vereist een waarde
 
@@ -7570,16 +9815,15 @@ De naam van een worker
 
 - Vereist een waarde
 
+### `--instance`, `-I`
+
+Instantie-id
+
+- Vereist een waarde
+
 ### `--help`, `-h`
 
 Dit Help-bericht weergeven
-
-- Standaard: `false`
-- Accepteert geen waarde
-
-### `--quiet`, `-q`
-
-Geen bericht uitvoeren
 
 - Standaard: `false`
 - Accepteert geen waarde
@@ -7600,14 +9844,42 @@ Deze toepassingsversie weergeven
 
 ### `--yes`, `-y`
 
-Antwoord &quot;ja&quot; op ja/nee-vragen interactie uitschakelen
+&quot;ja&quot; antwoorden op bevestigingsvragen; accepteert de standaardwaarde voor andere vragen; interactie uitschakelen
+
+- Standaard: `false`
+- Accepteert geen waarde
+
+### `--no-interaction`
+
+Geen interactieve vragen stellen; Accepteer standaardwaarden. Gelijk aan het gebruik van de omgevingsvariabele: &lt;comment>Magento_CLOUD_CLI_NO_INTERACTION=1&lt;/comment>
+
+- Standaard: `false`
+- Accepteert geen waarde
+
+### `--ansi`
+
+ANSI-uitvoer forceren
+
+- Standaard: `false`
+- Accepteert geen waarde
+
+### `--no-ansi`
+
+ANSI-uitvoer uitschakelen
 
 - Standaard: `false`
 - Accepteert geen waarde
 
 ### `--no`, `-n`
 
-Antwoord &quot;nee&quot; op ja/nee-vragen. interactie uitschakelen
+Antwoord &quot;nee&quot; op bevestigingsvragen; accepteert de standaardwaarde voor andere vragen; interactie uitschakelen
+
+- Standaard: `false`
+- Accepteert geen waarde
+
+### `--quiet`, `-q`
+
+Geen bericht uitvoeren
 
 - Standaard: `false`
 - Accepteert geen waarde
@@ -7618,7 +9890,7 @@ Antwoord &quot;nee&quot; op ja/nee-vragen. interactie uitschakelen
 Controleer het schijfgebruik van bevestigingen
 
 ```bash
-magento-cloud mount:size [-B|--bytes] [--refresh] [--format FORMAT] [--columns COLUMNS] [--no-header] [-i|--identity-file IDENTITY-FILE] [-p|--project PROJECT] [--host HOST] [-e|--environment ENVIRONMENT] [-A|--app APP] [--worker WORKER]
+magento-cloud mount:size [-B|--bytes] [--refresh] [--format FORMAT] [-c|--columns COLUMNS] [--no-header] [-i|--identity-file IDENTITY-FILE] [-p|--project PROJECT] [-e|--environment ENVIRONMENT] [-A|--app APP] [--worker WORKER] [-I|--instance INSTANCE]
 ```
 
 ### `--bytes`, `-B`
@@ -7637,14 +9909,14 @@ De cache vernieuwen
 
 ### `--format`
 
-De uitvoerindeling (&quot;table&quot;, &quot;csv&quot;, &quot;tsv&quot; of &quot;plain&quot;)
+De uitvoerindeling: table, csv, tsv of plain
 
 - Standaard: `table`
 - Vereist een waarde
 
-### `--columns`
+### `--columns`, `-c`
 
-Weer te geven kolommen (lijst met door komma&#39;s gescheiden waarden of meerdere waarden)
+Weer te geven kolommen. Beschikbare kolommen: beschikbaar, max, mount, percent_used, sizes, used. Als een lijst als één waarde wordt gegeven (bv. &quot;a,b,c&quot;) wordt gesplitst in komma&#39;s en/of witruimte.
 
 - Standaard: `[]`
 - Vereist een waarde
@@ -7670,7 +9942,7 @@ De project-id of URL
 
 ### `--host`
 
-De API-hostnaam van het project
+Vervangen optie, niet meer gebruikt
 
 - Vereist een waarde
 
@@ -7692,16 +9964,15 @@ De naam van een worker
 
 - Vereist een waarde
 
+### `--instance`, `-I`
+
+Instantie-id
+
+- Vereist een waarde
+
 ### `--help`, `-h`
 
 Dit Help-bericht weergeven
-
-- Standaard: `false`
-- Accepteert geen waarde
-
-### `--quiet`, `-q`
-
-Geen bericht uitvoeren
 
 - Standaard: `false`
 - Accepteert geen waarde
@@ -7722,14 +9993,42 @@ Deze toepassingsversie weergeven
 
 ### `--yes`, `-y`
 
-Antwoord &quot;ja&quot; op ja/nee-vragen interactie uitschakelen
+&quot;ja&quot; antwoorden op bevestigingsvragen; accepteert de standaardwaarde voor andere vragen; interactie uitschakelen
+
+- Standaard: `false`
+- Accepteert geen waarde
+
+### `--no-interaction`
+
+Geen interactieve vragen stellen; Accepteer standaardwaarden. Gelijk aan het gebruik van de omgevingsvariabele: &lt;comment>Magento_CLOUD_CLI_NO_INTERACTION=1&lt;/comment>
+
+- Standaard: `false`
+- Accepteert geen waarde
+
+### `--ansi`
+
+ANSI-uitvoer forceren
+
+- Standaard: `false`
+- Accepteert geen waarde
+
+### `--no-ansi`
+
+ANSI-uitvoer uitschakelen
 
 - Standaard: `false`
 - Accepteert geen waarde
 
 ### `--no`, `-n`
 
-Antwoord &quot;nee&quot; op ja/nee-vragen. interactie uitschakelen
+Antwoord &quot;nee&quot; op bevestigingsvragen; accepteert de standaardwaarde voor andere vragen; interactie uitschakelen
+
+- Standaard: `false`
+- Accepteert geen waarde
+
+### `--quiet`, `-q`
+
+Geen bericht uitvoeren
 
 - Standaard: `false`
 - Accepteert geen waarde
@@ -7740,7 +10039,7 @@ Antwoord &quot;nee&quot; op ja/nee-vragen. interactie uitschakelen
 Bestanden uploaden naar een koppelingsgebied, via opnieuw synchroniseren
 
 ```bash
-magento-cloud mount:upload [--source SOURCE] [-m|--mount MOUNT] [--delete] [--exclude EXCLUDE] [--include INCLUDE] [--refresh] [-p|--project PROJECT] [--host HOST] [-e|--environment ENVIRONMENT] [-A|--app APP] [--worker WORKER] [-i|--identity-file IDENTITY-FILE]
+magento-cloud mount:upload [--source SOURCE] [-m|--mount MOUNT] [--delete] [--exclude EXCLUDE] [--include INCLUDE] [--refresh] [-p|--project PROJECT] [-e|--environment ENVIRONMENT] [-A|--app APP] [--worker WORKER] [-I|--instance INSTANCE] [-i|--identity-file IDENTITY-FILE]
 ```
 
 ### `--source`
@@ -7791,7 +10090,7 @@ De project-id of URL
 
 ### `--host`
 
-De API-hostnaam van het project
+Vervangen optie, niet meer gebruikt
 
 - Vereist een waarde
 
@@ -7813,6 +10112,12 @@ De naam van een worker
 
 - Vereist een waarde
 
+### `--instance`, `-I`
+
+Instantie-id
+
+- Vereist een waarde
+
 ### `--identity-file`, `-i`
 
 Een SSH-identiteit (persoonlijke sleutel) die moet worden gebruikt
@@ -7826,13 +10131,6 @@ Dit Help-bericht weergeven
 - Standaard: `false`
 - Accepteert geen waarde
 
-### `--quiet`, `-q`
-
-Geen bericht uitvoeren
-
-- Standaard: `false`
-- Accepteert geen waarde
-
 ### `--verbose`, `-v|-vv|-vvv`
 
 Verhoog de breedheid van berichten
@@ -7849,14 +10147,42 @@ Deze toepassingsversie weergeven
 
 ### `--yes`, `-y`
 
-Antwoord &quot;ja&quot; op ja/nee-vragen interactie uitschakelen
+&quot;ja&quot; antwoorden op bevestigingsvragen; accepteert de standaardwaarde voor andere vragen; interactie uitschakelen
+
+- Standaard: `false`
+- Accepteert geen waarde
+
+### `--no-interaction`
+
+Geen interactieve vragen stellen; Accepteer standaardwaarden. Gelijk aan het gebruik van de omgevingsvariabele: &lt;comment>Magento_CLOUD_CLI_NO_INTERACTION=1&lt;/comment>
+
+- Standaard: `false`
+- Accepteert geen waarde
+
+### `--ansi`
+
+ANSI-uitvoer forceren
+
+- Standaard: `false`
+- Accepteert geen waarde
+
+### `--no-ansi`
+
+ANSI-uitvoer uitschakelen
 
 - Standaard: `false`
 - Accepteert geen waarde
 
 ### `--no`, `-n`
 
-Antwoord &quot;nee&quot; op ja/nee-vragen. interactie uitschakelen
+Antwoord &quot;nee&quot; op bevestigingsvragen; accepteert de standaardwaarde voor andere vragen; interactie uitschakelen
+
+- Standaard: `false`
+- Accepteert geen waarde
+
+### `--quiet`, `-q`
+
+Geen bericht uitvoeren
 
 - Standaard: `false`
 - Accepteert geen waarde
@@ -7867,7 +10193,7 @@ Antwoord &quot;nee&quot; op ja/nee-vragen. interactie uitschakelen
 De cache voor het samenstellen van een project wissen
 
 ```bash
-magento-cloud project:clear-build-cache [-p|--project PROJECT] [--host HOST]
+magento-cloud project:clear-build-cache [-p|--project PROJECT]
 ```
 
 ### `--project`, `-p`
@@ -7878,20 +10204,13 @@ De project-id of URL
 
 ### `--host`
 
-De API-hostnaam van het project
+Vervangen optie, niet meer gebruikt
 
 - Vereist een waarde
 
 ### `--help`, `-h`
 
 Dit Help-bericht weergeven
-
-- Standaard: `false`
-- Accepteert geen waarde
-
-### `--quiet`, `-q`
-
-Geen bericht uitvoeren
 
 - Standaard: `false`
 - Accepteert geen waarde
@@ -7912,14 +10231,42 @@ Deze toepassingsversie weergeven
 
 ### `--yes`, `-y`
 
-Antwoord &quot;ja&quot; op ja/nee-vragen interactie uitschakelen
+&quot;ja&quot; antwoorden op bevestigingsvragen; accepteert de standaardwaarde voor andere vragen; interactie uitschakelen
+
+- Standaard: `false`
+- Accepteert geen waarde
+
+### `--no-interaction`
+
+Geen interactieve vragen stellen; Accepteer standaardwaarden. Gelijk aan het gebruik van de omgevingsvariabele: &lt;comment>Magento_CLOUD_CLI_NO_INTERACTION=1&lt;/comment>
+
+- Standaard: `false`
+- Accepteert geen waarde
+
+### `--ansi`
+
+ANSI-uitvoer forceren
+
+- Standaard: `false`
+- Accepteert geen waarde
+
+### `--no-ansi`
+
+ANSI-uitvoer uitschakelen
 
 - Standaard: `false`
 - Accepteert geen waarde
 
 ### `--no`, `-n`
 
-Antwoord &quot;nee&quot; op ja/nee-vragen. interactie uitschakelen
+Antwoord &quot;nee&quot; op bevestigingsvragen; accepteert de standaardwaarde voor andere vragen; interactie uitschakelen
+
+- Standaard: `false`
+- Accepteert geen waarde
+
+### `--quiet`, `-q`
+
+Geen bericht uitvoeren
 
 - Standaard: `false`
 - Accepteert geen waarde
@@ -7930,7 +10277,7 @@ Antwoord &quot;nee&quot; op ja/nee-vragen. interactie uitschakelen
 Een geverifieerd cURL-verzoek uitvoeren op de API van een project
 
 ```bash
-magento-cloud project:curl [-X|--request REQUEST] [-d|--data DATA] [-i|--include] [-I|--head] [--disable-compression] [--enable-glob] [-f|--fail] [-H|--header HEADER] [-p|--project PROJECT] [--host HOST] [--] [<path>]
+magento-cloud project:curl [-X|--request REQUEST] [-d|--data DATA] [--json JSON] [-i|--include] [-I|--head] [--disable-compression] [--enable-glob] [-f|--fail] [-H|--header HEADER] [-p|--project PROJECT] [--] [<path>]
 ```
 
 
@@ -7948,6 +10295,12 @@ De aanvraagmethode
 ### `--data`, `-d`
 
 Te verzenden gegevens
+
+- Vereist een waarde
+
+### `--json`
+
+Te verzenden JSON-gegevens
 
 - Vereist een waarde
 
@@ -8001,20 +10354,13 @@ De project-id of URL
 
 ### `--host`
 
-De API-hostnaam van het project
+Vervangen optie, niet meer gebruikt
 
 - Vereist een waarde
 
 ### `--help`, `-h`
 
 Dit Help-bericht weergeven
-
-- Standaard: `false`
-- Accepteert geen waarde
-
-### `--quiet`, `-q`
-
-Geen bericht uitvoeren
 
 - Standaard: `false`
 - Accepteert geen waarde
@@ -8035,14 +10381,42 @@ Deze toepassingsversie weergeven
 
 ### `--yes`, `-y`
 
-Antwoord &quot;ja&quot; op ja/nee-vragen interactie uitschakelen
+&quot;ja&quot; antwoorden op bevestigingsvragen; accepteert de standaardwaarde voor andere vragen; interactie uitschakelen
+
+- Standaard: `false`
+- Accepteert geen waarde
+
+### `--no-interaction`
+
+Geen interactieve vragen stellen; Accepteer standaardwaarden. Gelijk aan het gebruik van de omgevingsvariabele: &lt;comment>Magento_CLOUD_CLI_NO_INTERACTION=1&lt;/comment>
+
+- Standaard: `false`
+- Accepteert geen waarde
+
+### `--ansi`
+
+ANSI-uitvoer forceren
+
+- Standaard: `false`
+- Accepteert geen waarde
+
+### `--no-ansi`
+
+ANSI-uitvoer uitschakelen
 
 - Standaard: `false`
 - Accepteert geen waarde
 
 ### `--no`, `-n`
 
-Antwoord &quot;nee&quot; op ja/nee-vragen. interactie uitschakelen
+Antwoord &quot;nee&quot; op bevestigingsvragen; accepteert de standaardwaarde voor andere vragen; interactie uitschakelen
+
+- Standaard: `false`
+- Accepteert geen waarde
+
+### `--quiet`, `-q`
+
+Geen bericht uitvoeren
 
 - Standaard: `false`
 - Accepteert geen waarde
@@ -8053,7 +10427,7 @@ Antwoord &quot;nee&quot; op ja/nee-vragen. interactie uitschakelen
 Een project lokaal klonen
 
 ```bash
-magento-cloud get [-e|--environment ENVIRONMENT] [--depth DEPTH] [--build] [-p|--project PROJECT] [--host HOST] [-i|--identity-file IDENTITY-FILE] [--] [<project>] [<directory>]
+magento-cloud get [-e|--environment ENVIRONMENT] [--depth DEPTH] [--build] [-p|--project PROJECT] [-i|--identity-file IDENTITY-FILE] [--] [<project>] [<directory>]
 ```
 
 
@@ -8099,7 +10473,7 @@ De project-id of URL
 
 ### `--host`
 
-De API-hostnaam van het project
+Vervangen optie, niet meer gebruikt
 
 - Vereist een waarde
 
@@ -8112,13 +10486,6 @@ Een SSH-identiteit (persoonlijke sleutel) die moet worden gebruikt
 ### `--help`, `-h`
 
 Dit Help-bericht weergeven
-
-- Standaard: `false`
-- Accepteert geen waarde
-
-### `--quiet`, `-q`
-
-Geen bericht uitvoeren
 
 - Standaard: `false`
 - Accepteert geen waarde
@@ -8139,14 +10506,42 @@ Deze toepassingsversie weergeven
 
 ### `--yes`, `-y`
 
-Antwoord &quot;ja&quot; op ja/nee-vragen interactie uitschakelen
+&quot;ja&quot; antwoorden op bevestigingsvragen; accepteert de standaardwaarde voor andere vragen; interactie uitschakelen
+
+- Standaard: `false`
+- Accepteert geen waarde
+
+### `--no-interaction`
+
+Geen interactieve vragen stellen; Accepteer standaardwaarden. Gelijk aan het gebruik van de omgevingsvariabele: &lt;comment>Magento_CLOUD_CLI_NO_INTERACTION=1&lt;/comment>
+
+- Standaard: `false`
+- Accepteert geen waarde
+
+### `--ansi`
+
+ANSI-uitvoer forceren
+
+- Standaard: `false`
+- Accepteert geen waarde
+
+### `--no-ansi`
+
+ANSI-uitvoer uitschakelen
 
 - Standaard: `false`
 - Accepteert geen waarde
 
 ### `--no`, `-n`
 
-Antwoord &quot;nee&quot; op ja/nee-vragen. interactie uitschakelen
+Antwoord &quot;nee&quot; op bevestigingsvragen; accepteert de standaardwaarde voor andere vragen; interactie uitschakelen
+
+- Standaard: `false`
+- Accepteert geen waarde
+
+### `--quiet`, `-q`
+
+Geen bericht uitvoeren
 
 - Standaard: `false`
 - Accepteert geen waarde
@@ -8157,7 +10552,7 @@ Antwoord &quot;nee&quot; op ja/nee-vragen. interactie uitschakelen
 Eigenschappen voor een project lezen of instellen
 
 ```bash
-magento-cloud project:info [--refresh] [--date-fmt DATE-FMT] [--format FORMAT] [--columns COLUMNS] [--no-header] [-p|--project PROJECT] [--host HOST] [-W|--no-wait] [--wait] [--] [<property>] [<value>]
+magento-cloud project:info [--refresh] [--date-fmt DATE-FMT] [--format FORMAT] [-c|--columns COLUMNS] [--no-header] [-p|--project PROJECT] [-W|--no-wait] [--wait] [--] [<property>] [<value>]
 ```
 
 
@@ -8192,14 +10587,14 @@ De datumnotatie (als een PHP-datumnotatietekenreeks)
 
 ### `--format`
 
-De uitvoerindeling (&quot;table&quot;, &quot;csv&quot;, &quot;tsv&quot; of &quot;plain&quot;)
+De uitvoerindeling: table, csv, tsv of plain
 
 - Standaard: `table`
 - Vereist een waarde
 
-### `--columns`
+### `--columns`, `-c`
 
-Weer te geven kolommen (lijst met door komma&#39;s gescheiden waarden of meerdere waarden)
+Weer te geven kolommen. Als een lijst als één waarde wordt gegeven (bv. &quot;a,b,c&quot;) wordt gesplitst in komma&#39;s en/of witruimte.
 
 - Standaard: `[]`
 - Vereist een waarde
@@ -8219,7 +10614,7 @@ De project-id of URL
 
 ### `--host`
 
-De API-hostnaam van het project
+Vervangen optie, niet meer gebruikt
 
 - Vereist een waarde
 
@@ -8244,13 +10639,6 @@ Dit Help-bericht weergeven
 - Standaard: `false`
 - Accepteert geen waarde
 
-### `--quiet`, `-q`
-
-Geen bericht uitvoeren
-
-- Standaard: `false`
-- Accepteert geen waarde
-
 ### `--verbose`, `-v|-vv|-vvv`
 
 Verhoog de breedheid van berichten
@@ -8267,14 +10655,42 @@ Deze toepassingsversie weergeven
 
 ### `--yes`, `-y`
 
-Antwoord &quot;ja&quot; op ja/nee-vragen interactie uitschakelen
+&quot;ja&quot; antwoorden op bevestigingsvragen; accepteert de standaardwaarde voor andere vragen; interactie uitschakelen
+
+- Standaard: `false`
+- Accepteert geen waarde
+
+### `--no-interaction`
+
+Geen interactieve vragen stellen; Accepteer standaardwaarden. Gelijk aan het gebruik van de omgevingsvariabele: &lt;comment>Magento_CLOUD_CLI_NO_INTERACTION=1&lt;/comment>
+
+- Standaard: `false`
+- Accepteert geen waarde
+
+### `--ansi`
+
+ANSI-uitvoer forceren
+
+- Standaard: `false`
+- Accepteert geen waarde
+
+### `--no-ansi`
+
+ANSI-uitvoer uitschakelen
 
 - Standaard: `false`
 - Accepteert geen waarde
 
 ### `--no`, `-n`
 
-Antwoord &quot;nee&quot; op ja/nee-vragen. interactie uitschakelen
+Antwoord &quot;nee&quot; op bevestigingsvragen; accepteert de standaardwaarde voor andere vragen; interactie uitschakelen
+
+- Standaard: `false`
+- Accepteert geen waarde
+
+### `--quiet`, `-q`
+
+Geen bericht uitvoeren
 
 - Standaard: `false`
 - Accepteert geen waarde
@@ -8285,7 +10701,7 @@ Antwoord &quot;nee&quot; op ja/nee-vragen. interactie uitschakelen
 Een lijst met alle actieve projecten ophalen
 
 ```bash
-magento-cloud project:list [--pipe] [--host HOST] [--title TITLE] [--my] [--refresh REFRESH] [--sort SORT] [--reverse] [--page PAGE] [--count COUNT] [--format FORMAT] [--columns COLUMNS] [--no-header] [--date-fmt DATE-FMT]
+magento-cloud project:list [--pipe] [--host HOST] [--title TITLE] [--my] [--refresh REFRESH] [--sort SORT] [--reverse] [--page PAGE] [-c|--count COUNT] [--format FORMAT] [--columns COLUMNS] [--no-header] [--date-fmt DATE-FMT]
 ```
 
 
@@ -8300,7 +10716,7 @@ pro
 
 ### `--pipe`
 
-Een eenvoudige lijst met project-id&#39;s uitvoeren. Hierdoor wordt paginering uitgeschakeld.
+Een eenvoudige lijst met project-id&#39;s uitvoeren. Hiermee schakelt u paginering uit.
 
 - Standaard: `false`
 - Accepteert geen waarde
@@ -8347,27 +10763,26 @@ Omgekeerde (aflopende) volgorde sorteren
 
 ### `--page`
 
-Paginanummer (vanaf 1)
+Paginanummer. Dit laat paginering, ondanks configuratie of —count toe. Genegeerd als —pipe is opgegeven.
 
-- Standaard: `1`
 - Vereist een waarde
 
-### `--count`
+### `--count`, `-c`
 
-Het aantal projecten dat per pagina moet worden weergegeven. Het gebrek is gebaseerd op de eindhoogte. Gebruik 0 om paginering uit te schakelen.
+Het aantal projecten dat per pagina moet worden weergegeven. Gebruik 0 om paginering uit te schakelen. Genegeerd als —page is gespecificeerd.
 
 - Vereist een waarde
 
 ### `--format`
 
-De uitvoerindeling (&quot;table&quot;, &quot;csv&quot;, &quot;tsv&quot; of &quot;plain&quot;)
+De uitvoerindeling: table, csv, tsv of plain
 
 - Standaard: `table`
 - Vereist een waarde
 
 ### `--columns`
 
-Weer te geven kolommen (lijst met door komma&#39;s gescheiden waarden of meerdere waarden)
+Weer te geven kolommen. Beschikbare kolommen: id*, title*, region*, created_at, eindpunt, organisation_id, organisation_label, organisation_name, region_label, status, ui_url (* = standaardkolommen). Het teken &quot;+&quot; kan worden gebruikt als tijdelijke aanduiding voor de standaardkolommen. Als een lijst als één waarde wordt gegeven (bv. &quot;a,b,c&quot;) wordt gesplitst in komma&#39;s en/of witruimte.
 
 - Standaard: `[]`
 - Vereist een waarde
@@ -8393,13 +10808,6 @@ Dit Help-bericht weergeven
 - Standaard: `false`
 - Accepteert geen waarde
 
-### `--quiet`, `-q`
-
-Geen bericht uitvoeren
-
-- Standaard: `false`
-- Accepteert geen waarde
-
 ### `--verbose`, `-v|-vv|-vvv`
 
 Verhoog de breedheid van berichten
@@ -8416,14 +10824,42 @@ Deze toepassingsversie weergeven
 
 ### `--yes`, `-y`
 
-Antwoord &quot;ja&quot; op ja/nee-vragen interactie uitschakelen
+&quot;ja&quot; antwoorden op bevestigingsvragen; accepteert de standaardwaarde voor andere vragen; interactie uitschakelen
+
+- Standaard: `false`
+- Accepteert geen waarde
+
+### `--no-interaction`
+
+Geen interactieve vragen stellen; Accepteer standaardwaarden. Gelijk aan het gebruik van de omgevingsvariabele: &lt;comment>Magento_CLOUD_CLI_NO_INTERACTION=1&lt;/comment>
+
+- Standaard: `false`
+- Accepteert geen waarde
+
+### `--ansi`
+
+ANSI-uitvoer forceren
+
+- Standaard: `false`
+- Accepteert geen waarde
+
+### `--no-ansi`
+
+ANSI-uitvoer uitschakelen
 
 - Standaard: `false`
 - Accepteert geen waarde
 
 ### `--no`, `-n`
 
-Antwoord &quot;nee&quot; op ja/nee-vragen. interactie uitschakelen
+Antwoord &quot;nee&quot; op bevestigingsvragen; accepteert de standaardwaarde voor andere vragen; interactie uitschakelen
+
+- Standaard: `false`
+- Accepteert geen waarde
+
+### `--quiet`, `-q`
+
+Geen bericht uitvoeren
 
 - Standaard: `false`
 - Accepteert geen waarde
@@ -8450,13 +10886,6 @@ Dit Help-bericht weergeven
 - Standaard: `false`
 - Accepteert geen waarde
 
-### `--quiet`, `-q`
-
-Geen bericht uitvoeren
-
-- Standaard: `false`
-- Accepteert geen waarde
-
 ### `--verbose`, `-v|-vv|-vvv`
 
 Verhoog de breedheid van berichten
@@ -8473,14 +10902,42 @@ Deze toepassingsversie weergeven
 
 ### `--yes`, `-y`
 
-Antwoord &quot;ja&quot; op ja/nee-vragen interactie uitschakelen
+&quot;ja&quot; antwoorden op bevestigingsvragen; accepteert de standaardwaarde voor andere vragen; interactie uitschakelen
+
+- Standaard: `false`
+- Accepteert geen waarde
+
+### `--no-interaction`
+
+Geen interactieve vragen stellen; Accepteer standaardwaarden. Gelijk aan het gebruik van de omgevingsvariabele: &lt;comment>Magento_CLOUD_CLI_NO_INTERACTION=1&lt;/comment>
+
+- Standaard: `false`
+- Accepteert geen waarde
+
+### `--ansi`
+
+ANSI-uitvoer forceren
+
+- Standaard: `false`
+- Accepteert geen waarde
+
+### `--no-ansi`
+
+ANSI-uitvoer uitschakelen
 
 - Standaard: `false`
 - Accepteert geen waarde
 
 ### `--no`, `-n`
 
-Antwoord &quot;nee&quot; op ja/nee-vragen. interactie uitschakelen
+Antwoord &quot;nee&quot; op bevestigingsvragen; accepteert de standaardwaarde voor andere vragen; interactie uitschakelen
+
+- Standaard: `false`
+- Accepteert geen waarde
+
+### `--quiet`, `-q`
+
+Geen bericht uitvoeren
 
 - Standaard: `false`
 - Accepteert geen waarde
@@ -8491,7 +10948,7 @@ Antwoord &quot;nee&quot; op ja/nee-vragen. interactie uitschakelen
 &lt;fg white=&quot;&quot; bg=&quot;red&quot;>[ VEROUDERD ]&lt;/> Een variabele uit een project verwijderen
 
 ```bash
-magento-cloud project:variable:delete [-p|--project PROJECT] [--host HOST] [-W|--no-wait] [--wait] [--] <name>
+magento-cloud project:variable:delete [-p|--project PROJECT] [-W|--no-wait] [--wait] [--] <name>
 ```
 
 
@@ -8509,7 +10966,7 @@ De project-id of URL
 
 ### `--host`
 
-De API-hostnaam van het project
+Vervangen optie, niet meer gebruikt
 
 - Vereist een waarde
 
@@ -8534,13 +10991,6 @@ Dit Help-bericht weergeven
 - Standaard: `false`
 - Accepteert geen waarde
 
-### `--quiet`, `-q`
-
-Geen bericht uitvoeren
-
-- Standaard: `false`
-- Accepteert geen waarde
-
 ### `--verbose`, `-v|-vv|-vvv`
 
 Verhoog de breedheid van berichten
@@ -8557,14 +11007,42 @@ Deze toepassingsversie weergeven
 
 ### `--yes`, `-y`
 
-Antwoord &quot;ja&quot; op ja/nee-vragen interactie uitschakelen
+&quot;ja&quot; antwoorden op bevestigingsvragen; accepteert de standaardwaarde voor andere vragen; interactie uitschakelen
+
+- Standaard: `false`
+- Accepteert geen waarde
+
+### `--no-interaction`
+
+Geen interactieve vragen stellen; Accepteer standaardwaarden. Gelijk aan het gebruik van de omgevingsvariabele: &lt;comment>Magento_CLOUD_CLI_NO_INTERACTION=1&lt;/comment>
+
+- Standaard: `false`
+- Accepteert geen waarde
+
+### `--ansi`
+
+ANSI-uitvoer forceren
+
+- Standaard: `false`
+- Accepteert geen waarde
+
+### `--no-ansi`
+
+ANSI-uitvoer uitschakelen
 
 - Standaard: `false`
 - Accepteert geen waarde
 
 ### `--no`, `-n`
 
-Antwoord &quot;nee&quot; op ja/nee-vragen. interactie uitschakelen
+Antwoord &quot;nee&quot; op bevestigingsvragen; accepteert de standaardwaarde voor andere vragen; interactie uitschakelen
+
+- Standaard: `false`
+- Accepteert geen waarde
+
+### `--quiet`, `-q`
+
+Geen bericht uitvoeren
 
 - Standaard: `false`
 - Accepteert geen waarde
@@ -8575,7 +11053,7 @@ Antwoord &quot;nee&quot; op ja/nee-vragen. interactie uitschakelen
 &lt;fg white=&quot;&quot; bg=&quot;red&quot;>[ VEROUDERD ]&lt;/> Variabelen voor een project weergeven
 
 ```bash
-magento-cloud project:variable:get [--pipe] [--format FORMAT] [--columns COLUMNS] [--no-header] [-p|--project PROJECT] [--host HOST] [--] [<name>]
+magento-cloud project:variable:get [--pipe] [--format FORMAT] [-c|--columns COLUMNS] [--no-header] [-p|--project PROJECT] [--] [<name>]
 ```
 
 
@@ -8608,14 +11086,14 @@ Alleen de waarde van de volledige variabele uitvoeren (er moet een &quot;naam&qu
 
 ### `--format`
 
-De uitvoerindeling (&quot;table&quot;, &quot;csv&quot;, &quot;tsv&quot; of &quot;plain&quot;)
+De uitvoerindeling: table, csv, tsv of plain
 
 - Standaard: `table`
 - Vereist een waarde
 
-### `--columns`
+### `--columns`, `-c`
 
-Weer te geven kolommen (lijst met door komma&#39;s gescheiden waarden of meerdere waarden)
+Weer te geven kolommen. Als een lijst als één waarde wordt gegeven (bv. &quot;a,b,c&quot;) wordt gesplitst in komma&#39;s en/of witruimte.
 
 - Standaard: `[]`
 - Vereist een waarde
@@ -8635,20 +11113,13 @@ De project-id of URL
 
 ### `--host`
 
-De API-hostnaam van het project
+Vervangen optie, niet meer gebruikt
 
 - Vereist een waarde
 
 ### `--help`, `-h`
 
 Dit Help-bericht weergeven
-
-- Standaard: `false`
-- Accepteert geen waarde
-
-### `--quiet`, `-q`
-
-Geen bericht uitvoeren
 
 - Standaard: `false`
 - Accepteert geen waarde
@@ -8669,14 +11140,42 @@ Deze toepassingsversie weergeven
 
 ### `--yes`, `-y`
 
-Antwoord &quot;ja&quot; op ja/nee-vragen interactie uitschakelen
+&quot;ja&quot; antwoorden op bevestigingsvragen; accepteert de standaardwaarde voor andere vragen; interactie uitschakelen
+
+- Standaard: `false`
+- Accepteert geen waarde
+
+### `--no-interaction`
+
+Geen interactieve vragen stellen; Accepteer standaardwaarden. Gelijk aan het gebruik van de omgevingsvariabele: &lt;comment>Magento_CLOUD_CLI_NO_INTERACTION=1&lt;/comment>
+
+- Standaard: `false`
+- Accepteert geen waarde
+
+### `--ansi`
+
+ANSI-uitvoer forceren
+
+- Standaard: `false`
+- Accepteert geen waarde
+
+### `--no-ansi`
+
+ANSI-uitvoer uitschakelen
 
 - Standaard: `false`
 - Accepteert geen waarde
 
 ### `--no`, `-n`
 
-Antwoord &quot;nee&quot; op ja/nee-vragen. interactie uitschakelen
+Antwoord &quot;nee&quot; op bevestigingsvragen; accepteert de standaardwaarde voor andere vragen; interactie uitschakelen
+
+- Standaard: `false`
+- Accepteert geen waarde
+
+### `--quiet`, `-q`
+
+Geen bericht uitvoeren
 
 - Standaard: `false`
 - Accepteert geen waarde
@@ -8687,7 +11186,7 @@ Antwoord &quot;nee&quot; op ja/nee-vragen. interactie uitschakelen
 &lt;fg white=&quot;&quot; bg=&quot;red&quot;>[ VEROUDERD ]&lt;/> Een variabele instellen voor een project
 
 ```bash
-magento-cloud pvset [--json] [--no-visible-build] [--no-visible-runtime] [-p|--project PROJECT] [--host HOST] [-W|--no-wait] [--wait] [--] <name> <value>
+magento-cloud pvset [--json] [--no-visible-build] [--no-visible-runtime] [-p|--project PROJECT] [-W|--no-wait] [--wait] [--] <name> <value>
 ```
 
 
@@ -8737,7 +11236,7 @@ De project-id of URL
 
 ### `--host`
 
-De API-hostnaam van het project
+Vervangen optie, niet meer gebruikt
 
 - Vereist een waarde
 
@@ -8762,13 +11261,6 @@ Dit Help-bericht weergeven
 - Standaard: `false`
 - Accepteert geen waarde
 
-### `--quiet`, `-q`
-
-Geen bericht uitvoeren
-
-- Standaard: `false`
-- Accepteert geen waarde
-
 ### `--verbose`, `-v|-vv|-vvv`
 
 Verhoog de breedheid van berichten
@@ -8785,14 +11277,42 @@ Deze toepassingsversie weergeven
 
 ### `--yes`, `-y`
 
-Antwoord &quot;ja&quot; op ja/nee-vragen interactie uitschakelen
+&quot;ja&quot; antwoorden op bevestigingsvragen; accepteert de standaardwaarde voor andere vragen; interactie uitschakelen
+
+- Standaard: `false`
+- Accepteert geen waarde
+
+### `--no-interaction`
+
+Geen interactieve vragen stellen; Accepteer standaardwaarden. Gelijk aan het gebruik van de omgevingsvariabele: &lt;comment>Magento_CLOUD_CLI_NO_INTERACTION=1&lt;/comment>
+
+- Standaard: `false`
+- Accepteert geen waarde
+
+### `--ansi`
+
+ANSI-uitvoer forceren
+
+- Standaard: `false`
+- Accepteert geen waarde
+
+### `--no-ansi`
+
+ANSI-uitvoer uitschakelen
 
 - Standaard: `false`
 - Accepteert geen waarde
 
 ### `--no`, `-n`
 
-Antwoord &quot;nee&quot; op ja/nee-vragen. interactie uitschakelen
+Antwoord &quot;nee&quot; op bevestigingsvragen; accepteert de standaardwaarde voor andere vragen; interactie uitschakelen
+
+- Standaard: `false`
+- Accepteert geen waarde
+
+### `--quiet`, `-q`
+
+Geen bericht uitvoeren
 
 - Standaard: `false`
 - Accepteert geen waarde
@@ -8803,7 +11323,7 @@ Antwoord &quot;nee&quot; op ja/nee-vragen. interactie uitschakelen
 Een bestand lezen in de gegevensopslagruimte van het project
 
 ```bash
-magento-cloud repo:cat [-c|--commit COMMIT] [-p|--project PROJECT] [--host HOST] [-e|--environment ENVIRONMENT] [--] <path>
+magento-cloud repo:cat [-c|--commit COMMIT] [-p|--project PROJECT] [-e|--environment ENVIRONMENT] [--] <path>
 ```
 
 
@@ -8827,7 +11347,7 @@ De project-id of URL
 
 ### `--host`
 
-De API-hostnaam van het project
+Vervangen optie, niet meer gebruikt
 
 - Vereist een waarde
 
@@ -8840,13 +11360,6 @@ De milieu-id
 ### `--help`, `-h`
 
 Dit Help-bericht weergeven
-
-- Standaard: `false`
-- Accepteert geen waarde
-
-### `--quiet`, `-q`
-
-Geen bericht uitvoeren
 
 - Standaard: `false`
 - Accepteert geen waarde
@@ -8867,14 +11380,42 @@ Deze toepassingsversie weergeven
 
 ### `--yes`, `-y`
 
-Antwoord &quot;ja&quot; op ja/nee-vragen interactie uitschakelen
+&quot;ja&quot; antwoorden op bevestigingsvragen; accepteert de standaardwaarde voor andere vragen; interactie uitschakelen
+
+- Standaard: `false`
+- Accepteert geen waarde
+
+### `--no-interaction`
+
+Geen interactieve vragen stellen; Accepteer standaardwaarden. Gelijk aan het gebruik van de omgevingsvariabele: &lt;comment>Magento_CLOUD_CLI_NO_INTERACTION=1&lt;/comment>
+
+- Standaard: `false`
+- Accepteert geen waarde
+
+### `--ansi`
+
+ANSI-uitvoer forceren
+
+- Standaard: `false`
+- Accepteert geen waarde
+
+### `--no-ansi`
+
+ANSI-uitvoer uitschakelen
 
 - Standaard: `false`
 - Accepteert geen waarde
 
 ### `--no`, `-n`
 
-Antwoord &quot;nee&quot; op ja/nee-vragen. interactie uitschakelen
+Antwoord &quot;nee&quot; op bevestigingsvragen; accepteert de standaardwaarde voor andere vragen; interactie uitschakelen
+
+- Standaard: `false`
+- Accepteert geen waarde
+
+### `--quiet`, `-q`
+
+Geen bericht uitvoeren
 
 - Standaard: `false`
 - Accepteert geen waarde
@@ -8885,7 +11426,7 @@ Antwoord &quot;nee&quot; op ja/nee-vragen. interactie uitschakelen
 Bestanden weergeven in de gegevensopslagruimte van het project
 
 ```bash
-magento-cloud repo:ls [-d|--directories] [-f|--files] [--git-style] [-c|--commit COMMIT] [-p|--project PROJECT] [--host HOST] [-e|--environment ENVIRONMENT] [--] [<path>]
+magento-cloud repo:ls [-d|--directories] [-f|--files] [--git-style] [-c|--commit COMMIT] [-p|--project PROJECT] [-e|--environment ENVIRONMENT] [--] [<path>]
 ```
 
 
@@ -8929,7 +11470,7 @@ De project-id of URL
 
 ### `--host`
 
-De API-hostnaam van het project
+Vervangen optie, niet meer gebruikt
 
 - Vereist een waarde
 
@@ -8942,13 +11483,6 @@ De milieu-id
 ### `--help`, `-h`
 
 Dit Help-bericht weergeven
-
-- Standaard: `false`
-- Accepteert geen waarde
-
-### `--quiet`, `-q`
-
-Geen bericht uitvoeren
 
 - Standaard: `false`
 - Accepteert geen waarde
@@ -8969,14 +11503,42 @@ Deze toepassingsversie weergeven
 
 ### `--yes`, `-y`
 
-Antwoord &quot;ja&quot; op ja/nee-vragen interactie uitschakelen
+&quot;ja&quot; antwoorden op bevestigingsvragen; accepteert de standaardwaarde voor andere vragen; interactie uitschakelen
+
+- Standaard: `false`
+- Accepteert geen waarde
+
+### `--no-interaction`
+
+Geen interactieve vragen stellen; Accepteer standaardwaarden. Gelijk aan het gebruik van de omgevingsvariabele: &lt;comment>Magento_CLOUD_CLI_NO_INTERACTION=1&lt;/comment>
+
+- Standaard: `false`
+- Accepteert geen waarde
+
+### `--ansi`
+
+ANSI-uitvoer forceren
+
+- Standaard: `false`
+- Accepteert geen waarde
+
+### `--no-ansi`
+
+ANSI-uitvoer uitschakelen
 
 - Standaard: `false`
 - Accepteert geen waarde
 
 ### `--no`, `-n`
 
-Antwoord &quot;nee&quot; op ja/nee-vragen. interactie uitschakelen
+Antwoord &quot;nee&quot; op bevestigingsvragen; accepteert de standaardwaarde voor andere vragen; interactie uitschakelen
+
+- Standaard: `false`
+- Accepteert geen waarde
+
+### `--quiet`, `-q`
+
+Geen bericht uitvoeren
 
 - Standaard: `false`
 - Accepteert geen waarde
@@ -8987,7 +11549,7 @@ Antwoord &quot;nee&quot; op ja/nee-vragen. interactie uitschakelen
 Een map of bestand lezen in de projectopslagplaats
 
 ```bash
-magento-cloud read [-c|--commit COMMIT] [-p|--project PROJECT] [--host HOST] [-e|--environment ENVIRONMENT] [--] [<path>]
+magento-cloud read [-c|--commit COMMIT] [-p|--project PROJECT] [-e|--environment ENVIRONMENT] [--] [<path>]
 ```
 
 
@@ -9015,7 +11577,7 @@ De project-id of URL
 
 ### `--host`
 
-De API-hostnaam van het project
+Vervangen optie, niet meer gebruikt
 
 - Vereist een waarde
 
@@ -9028,13 +11590,6 @@ De milieu-id
 ### `--help`, `-h`
 
 Dit Help-bericht weergeven
-
-- Standaard: `false`
-- Accepteert geen waarde
-
-### `--quiet`, `-q`
-
-Geen bericht uitvoeren
 
 - Standaard: `false`
 - Accepteert geen waarde
@@ -9055,14 +11610,42 @@ Deze toepassingsversie weergeven
 
 ### `--yes`, `-y`
 
-Antwoord &quot;ja&quot; op ja/nee-vragen interactie uitschakelen
+&quot;ja&quot; antwoorden op bevestigingsvragen; accepteert de standaardwaarde voor andere vragen; interactie uitschakelen
+
+- Standaard: `false`
+- Accepteert geen waarde
+
+### `--no-interaction`
+
+Geen interactieve vragen stellen; Accepteer standaardwaarden. Gelijk aan het gebruik van de omgevingsvariabele: &lt;comment>Magento_CLOUD_CLI_NO_INTERACTION=1&lt;/comment>
+
+- Standaard: `false`
+- Accepteert geen waarde
+
+### `--ansi`
+
+ANSI-uitvoer forceren
+
+- Standaard: `false`
+- Accepteert geen waarde
+
+### `--no-ansi`
+
+ANSI-uitvoer uitschakelen
 
 - Standaard: `false`
 - Accepteert geen waarde
 
 ### `--no`, `-n`
 
-Antwoord &quot;nee&quot; op ja/nee-vragen. interactie uitschakelen
+Antwoord &quot;nee&quot; op bevestigingsvragen; accepteert de standaardwaarde voor andere vragen; interactie uitschakelen
+
+- Standaard: `false`
+- Accepteert geen waarde
+
+### `--quiet`, `-q`
+
+Geen bericht uitvoeren
 
 - Standaard: `false`
 - Accepteert geen waarde
@@ -9073,7 +11656,7 @@ Antwoord &quot;nee&quot; op ja/nee-vragen. interactie uitschakelen
 Gedetailleerde informatie over een route weergeven
 
 ```bash
-magento-cloud route:get [--id ID] [-1|--primary] [-P|--property PROPERTY] [--refresh] [--date-fmt DATE-FMT] [-p|--project PROJECT] [--host HOST] [-e|--environment ENVIRONMENT] [-A|--app APP] [-i|--identity-file IDENTITY-FILE] [--] [<route>]
+magento-cloud route:get [--id ID] [-1|--primary] [-P|--property PROPERTY] [--refresh] [--date-fmt DATE-FMT] [-p|--project PROJECT] [-e|--environment ENVIRONMENT] [-A|--app APP] [-i|--identity-file IDENTITY-FILE] [--] [<route>]
 ```
 
 
@@ -9123,7 +11706,7 @@ De project-id of URL
 
 ### `--host`
 
-De API-hostnaam van het project
+Vervangen optie, niet meer gebruikt
 
 - Vereist een waarde
 
@@ -9152,13 +11735,6 @@ Dit Help-bericht weergeven
 - Standaard: `false`
 - Accepteert geen waarde
 
-### `--quiet`, `-q`
-
-Geen bericht uitvoeren
-
-- Standaard: `false`
-- Accepteert geen waarde
-
 ### `--verbose`, `-v|-vv|-vvv`
 
 Verhoog de breedheid van berichten
@@ -9175,14 +11751,42 @@ Deze toepassingsversie weergeven
 
 ### `--yes`, `-y`
 
-Antwoord &quot;ja&quot; op ja/nee-vragen interactie uitschakelen
+&quot;ja&quot; antwoorden op bevestigingsvragen; accepteert de standaardwaarde voor andere vragen; interactie uitschakelen
+
+- Standaard: `false`
+- Accepteert geen waarde
+
+### `--no-interaction`
+
+Geen interactieve vragen stellen; Accepteer standaardwaarden. Gelijk aan het gebruik van de omgevingsvariabele: &lt;comment>Magento_CLOUD_CLI_NO_INTERACTION=1&lt;/comment>
+
+- Standaard: `false`
+- Accepteert geen waarde
+
+### `--ansi`
+
+ANSI-uitvoer forceren
+
+- Standaard: `false`
+- Accepteert geen waarde
+
+### `--no-ansi`
+
+ANSI-uitvoer uitschakelen
 
 - Standaard: `false`
 - Accepteert geen waarde
 
 ### `--no`, `-n`
 
-Antwoord &quot;nee&quot; op ja/nee-vragen. interactie uitschakelen
+Antwoord &quot;nee&quot; op bevestigingsvragen; accepteert de standaardwaarde voor andere vragen; interactie uitschakelen
+
+- Standaard: `false`
+- Accepteert geen waarde
+
+### `--quiet`, `-q`
+
+Geen bericht uitvoeren
 
 - Standaard: `false`
 - Accepteert geen waarde
@@ -9193,7 +11797,7 @@ Antwoord &quot;nee&quot; op ja/nee-vragen. interactie uitschakelen
 Alle routes weergeven voor een omgeving
 
 ```bash
-magento-cloud routes [--refresh] [--format FORMAT] [--columns COLUMNS] [--no-header] [-p|--project PROJECT] [--host HOST] [-e|--environment ENVIRONMENT] [--] [<environment>]
+magento-cloud routes [--refresh] [--format FORMAT] [-c|--columns COLUMNS] [--no-header] [-p|--project PROJECT] [-e|--environment ENVIRONMENT] [--] [<environment>]
 ```
 
 
@@ -9221,14 +11825,14 @@ Het geheime voorgeheugen van routes omzeilen
 
 ### `--format`
 
-De uitvoerindeling (&quot;table&quot;, &quot;csv&quot;, &quot;tsv&quot; of &quot;plain&quot;)
+De uitvoerindeling: table, csv, tsv of plain
 
 - Standaard: `table`
 - Vereist een waarde
 
-### `--columns`
+### `--columns`, `-c`
 
-Weer te geven kolommen (lijst met door komma&#39;s gescheiden waarden of meerdere waarden)
+Weer te geven kolommen. Beschikbare kolommen: route*, type*, to*, url (* = standaardkolommen). Het teken &quot;+&quot; kan worden gebruikt als tijdelijke aanduiding voor de standaardkolommen. Als een lijst als één waarde wordt gegeven (bv. &quot;a,b,c&quot;) wordt gesplitst in komma&#39;s en/of witruimte.
 
 - Standaard: `[]`
 - Vereist een waarde
@@ -9248,7 +11852,7 @@ De project-id of URL
 
 ### `--host`
 
-De API-hostnaam van het project
+Vervangen optie, niet meer gebruikt
 
 - Vereist een waarde
 
@@ -9261,13 +11865,6 @@ De milieu-id
 ### `--help`, `-h`
 
 Dit Help-bericht weergeven
-
-- Standaard: `false`
-- Accepteert geen waarde
-
-### `--quiet`, `-q`
-
-Geen bericht uitvoeren
 
 - Standaard: `false`
 - Accepteert geen waarde
@@ -9288,14 +11885,42 @@ Deze toepassingsversie weergeven
 
 ### `--yes`, `-y`
 
-Antwoord &quot;ja&quot; op ja/nee-vragen interactie uitschakelen
+&quot;ja&quot; antwoorden op bevestigingsvragen; accepteert de standaardwaarde voor andere vragen; interactie uitschakelen
+
+- Standaard: `false`
+- Accepteert geen waarde
+
+### `--no-interaction`
+
+Geen interactieve vragen stellen; Accepteer standaardwaarden. Gelijk aan het gebruik van de omgevingsvariabele: &lt;comment>Magento_CLOUD_CLI_NO_INTERACTION=1&lt;/comment>
+
+- Standaard: `false`
+- Accepteert geen waarde
+
+### `--ansi`
+
+ANSI-uitvoer forceren
+
+- Standaard: `false`
+- Accepteert geen waarde
+
+### `--no-ansi`
+
+ANSI-uitvoer uitschakelen
 
 - Standaard: `false`
 - Accepteert geen waarde
 
 ### `--no`, `-n`
 
-Antwoord &quot;nee&quot; op ja/nee-vragen. interactie uitschakelen
+Antwoord &quot;nee&quot; op bevestigingsvragen; accepteert de standaardwaarde voor andere vragen; interactie uitschakelen
+
+- Standaard: `false`
+- Accepteert geen waarde
+
+### `--quiet`, `-q`
+
+Geen bericht uitvoeren
 
 - Standaard: `false`
 - Accepteert geen waarde
@@ -9327,13 +11952,6 @@ Dit Help-bericht weergeven
 - Standaard: `false`
 - Accepteert geen waarde
 
-### `--quiet`, `-q`
-
-Geen bericht uitvoeren
-
-- Standaard: `false`
-- Accepteert geen waarde
-
 ### `--verbose`, `-v|-vv|-vvv`
 
 Verhoog de breedheid van berichten
@@ -9350,14 +11968,42 @@ Deze toepassingsversie weergeven
 
 ### `--yes`, `-y`
 
-Antwoord &quot;ja&quot; op ja/nee-vragen interactie uitschakelen
+&quot;ja&quot; antwoorden op bevestigingsvragen; accepteert de standaardwaarde voor andere vragen; interactie uitschakelen
+
+- Standaard: `false`
+- Accepteert geen waarde
+
+### `--no-interaction`
+
+Geen interactieve vragen stellen; Accepteer standaardwaarden. Gelijk aan het gebruik van de omgevingsvariabele: &lt;comment>Magento_CLOUD_CLI_NO_INTERACTION=1&lt;/comment>
+
+- Standaard: `false`
+- Accepteert geen waarde
+
+### `--ansi`
+
+ANSI-uitvoer forceren
+
+- Standaard: `false`
+- Accepteert geen waarde
+
+### `--no-ansi`
+
+ANSI-uitvoer uitschakelen
 
 - Standaard: `false`
 - Accepteert geen waarde
 
 ### `--no`, `-n`
 
-Antwoord &quot;nee&quot; op ja/nee-vragen. interactie uitschakelen
+Antwoord &quot;nee&quot; op bevestigingsvragen; accepteert de standaardwaarde voor andere vragen; interactie uitschakelen
+
+- Standaard: `false`
+- Accepteert geen waarde
+
+### `--quiet`, `-q`
+
+Geen bericht uitvoeren
 
 - Standaard: `false`
 - Accepteert geen waarde
@@ -9387,14 +12033,14 @@ Resultaten per pagina (max.: 100)
 
 ### `--format`
 
-De uitvoerindeling (&quot;table&quot;, &quot;csv&quot;, &quot;tsv&quot; of &quot;plain&quot;)
+De uitvoerindeling: table, csv, tsv of plain
 
 - Standaard: `table`
 - Vereist een waarde
 
 ### `--columns`
 
-Weer te geven kolommen (lijst met door komma&#39;s gescheiden waarden of meerdere waarden)
+Weer te geven kolommen. Beschikbare kolommen: middel, datum, downloads, release. Als een lijst als één waarde wordt gegeven (bijv. &quot;a,b,c&quot;) wordt gesplitst in komma&#39;s en/of spaties.
 
 - Standaard: `[]`
 - Vereist een waarde
@@ -9408,7 +12054,7 @@ De tabelkoptekst niet uitvoeren
 
 ### `--date-fmt`
 
-De datumnotatie (als een PHP-datumnotatietekenreeks)
+De datumnotatie (als een PHP-tekenreeks voor de datumnotatie)
 
 - Standaard: `c`
 - Vereist een waarde
@@ -9416,13 +12062,6 @@ De datumnotatie (als een PHP-datumnotatietekenreeks)
 ### `--help`, `-h`
 
 Dit Help-bericht weergeven
-
-- Standaard: `false`
-- Accepteert geen waarde
-
-### `--quiet`, `-q`
-
-Geen bericht uitvoeren
 
 - Standaard: `false`
 - Accepteert geen waarde
@@ -9443,14 +12082,42 @@ Deze toepassingsversie weergeven
 
 ### `--yes`, `-y`
 
-Antwoord &quot;ja&quot; op ja/nee-vragen interactie uitschakelen
+&quot;ja&quot; antwoorden op bevestigingsvragen; accepteert de standaardwaarde voor andere vragen; interactie uitschakelen
+
+- Standaard: `false`
+- Accepteert geen waarde
+
+### `--no-interaction`
+
+Geen interactieve vragen stellen; Accepteer standaardwaarden. Gelijk aan het gebruik van de omgevingsvariabele: &lt;comment>Magento_CLOUD_CLI_NO_INTERACTION=1&lt;/comment>
+
+- Standaard: `false`
+- Accepteert geen waarde
+
+### `--ansi`
+
+ANSI-uitvoer forceren
+
+- Standaard: `false`
+- Accepteert geen waarde
+
+### `--no-ansi`
+
+ANSI-uitvoer uitschakelen
 
 - Standaard: `false`
 - Accepteert geen waarde
 
 ### `--no`, `-n`
 
-Antwoord &quot;nee&quot; op ja/nee-vragen. interactie uitschakelen
+Antwoord &quot;nee&quot; op bevestigingsvragen; accepteert de standaardwaarde voor andere vragen; interactie uitschakelen
+
+- Standaard: `false`
+- Accepteert geen waarde
+
+### `--quiet`, `-q`
+
+Geen bericht uitvoeren
 
 - Standaard: `false`
 - Accepteert geen waarde
@@ -9514,13 +12181,6 @@ Dit Help-bericht weergeven
 - Standaard: `false`
 - Accepteert geen waarde
 
-### `--quiet`, `-q`
-
-Geen bericht uitvoeren
-
-- Standaard: `false`
-- Accepteert geen waarde
-
 ### `--verbose`, `-v|-vv|-vvv`
 
 Verhoog de breedheid van berichten
@@ -9537,14 +12197,42 @@ Deze toepassingsversie weergeven
 
 ### `--yes`, `-y`
 
-Antwoord &quot;ja&quot; op ja/nee-vragen interactie uitschakelen
+&quot;ja&quot; antwoorden op bevestigingsvragen; accepteert de standaardwaarde voor andere vragen; interactie uitschakelen
+
+- Standaard: `false`
+- Accepteert geen waarde
+
+### `--no-interaction`
+
+Geen interactieve vragen stellen; Accepteer standaardwaarden. Gelijk aan het gebruik van de omgevingsvariabele: &lt;comment>Magento_CLOUD_CLI_NO_INTERACTION=1&lt;/comment>
+
+- Standaard: `false`
+- Accepteert geen waarde
+
+### `--ansi`
+
+ANSI-uitvoer forceren
+
+- Standaard: `false`
+- Accepteert geen waarde
+
+### `--no-ansi`
+
+ANSI-uitvoer uitschakelen
 
 - Standaard: `false`
 - Accepteert geen waarde
 
 ### `--no`, `-n`
 
-Antwoord &quot;nee&quot; op ja/nee-vragen. interactie uitschakelen
+Antwoord &quot;nee&quot; op bevestigingsvragen; accepteert de standaardwaarde voor andere vragen; interactie uitschakelen
+
+- Standaard: `false`
+- Accepteert geen waarde
+
+### `--quiet`, `-q`
+
+Geen bericht uitvoeren
 
 - Standaard: `false`
 - Accepteert geen waarde
@@ -9555,7 +12243,7 @@ Antwoord &quot;nee&quot; op ja/nee-vragen. interactie uitschakelen
 De diensten van de lijst in het project
 
 ```bash
-magento-cloud services [--refresh] [-p|--project PROJECT] [--host HOST] [-e|--environment ENVIRONMENT] [--format FORMAT] [--columns COLUMNS] [--no-header]
+magento-cloud services [--refresh] [-p|--project PROJECT] [-e|--environment ENVIRONMENT] [--format FORMAT] [-c|--columns COLUMNS] [--no-header]
 ```
 
 
@@ -9578,7 +12266,7 @@ De project-id of URL
 
 ### `--host`
 
-De API-hostnaam van het project
+Vervangen optie, niet meer gebruikt
 
 - Vereist een waarde
 
@@ -9590,14 +12278,14 @@ De milieu-id
 
 ### `--format`
 
-De uitvoerindeling (&quot;table&quot;, &quot;csv&quot;, &quot;tsv&quot; of &quot;plain&quot;)
+De uitvoerindeling: table, csv, tsv of plain
 
 - Standaard: `table`
 - Vereist een waarde
 
-### `--columns`
+### `--columns`, `-c`
 
-Weer te geven kolommen (lijst met door komma&#39;s gescheiden waarden of meerdere waarden)
+Weer te geven kolommen. Beschikbare kolommen: schijf, naam, grootte, type. Als een lijst als één waarde wordt gegeven (bv. &quot;a,b,c&quot;) wordt gesplitst in komma&#39;s en/of witruimte.
 
 - Standaard: `[]`
 - Vereist een waarde
@@ -9612,13 +12300,6 @@ De tabelkoptekst niet uitvoeren
 ### `--help`, `-h`
 
 Dit Help-bericht weergeven
-
-- Standaard: `false`
-- Accepteert geen waarde
-
-### `--quiet`, `-q`
-
-Geen bericht uitvoeren
 
 - Standaard: `false`
 - Accepteert geen waarde
@@ -9639,14 +12320,42 @@ Deze toepassingsversie weergeven
 
 ### `--yes`, `-y`
 
-Antwoord &quot;ja&quot; op ja/nee-vragen interactie uitschakelen
+&quot;ja&quot; antwoorden op bevestigingsvragen; accepteert de standaardwaarde voor andere vragen; interactie uitschakelen
+
+- Standaard: `false`
+- Accepteert geen waarde
+
+### `--no-interaction`
+
+Geen interactieve vragen stellen; Accepteer standaardwaarden. Gelijk aan het gebruik van de omgevingsvariabele: &lt;comment>Magento_CLOUD_CLI_NO_INTERACTION=1&lt;/comment>
+
+- Standaard: `false`
+- Accepteert geen waarde
+
+### `--ansi`
+
+ANSI-uitvoer forceren
+
+- Standaard: `false`
+- Accepteert geen waarde
+
+### `--no-ansi`
+
+ANSI-uitvoer uitschakelen
 
 - Standaard: `false`
 - Accepteert geen waarde
 
 ### `--no`, `-n`
 
-Antwoord &quot;nee&quot; op ja/nee-vragen. interactie uitschakelen
+Antwoord &quot;nee&quot; op bevestigingsvragen; accepteert de standaardwaarde voor andere vragen; interactie uitschakelen
+
+- Standaard: `false`
+- Accepteert geen waarde
+
+### `--quiet`, `-q`
+
+Geen bericht uitvoeren
 
 - Standaard: `false`
 - Accepteert geen waarde
@@ -9657,7 +12366,7 @@ Antwoord &quot;nee&quot; op ja/nee-vragen. interactie uitschakelen
 Een binaire archiefstortplaats maken van gegevens van MongoDB
 
 ```bash
-magento-cloud mongodump [-c|--collection COLLECTION] [-z|--gzip] [-o|--stdout] [-r|--relationship RELATIONSHIP] [-i|--identity-file IDENTITY-FILE] [-p|--project PROJECT] [--host HOST] [-e|--environment ENVIRONMENT] [-A|--app APP]
+magento-cloud mongodump [-c|--collection COLLECTION] [-z|--gzip] [-o|--stdout] [-r|--relationship RELATIONSHIP] [-i|--identity-file IDENTITY-FILE] [-p|--project PROJECT] [-e|--environment ENVIRONMENT] [-A|--app APP]
 ```
 
 
@@ -9705,7 +12414,7 @@ De project-id of URL
 
 ### `--host`
 
-De API-hostnaam van het project
+Vervangen optie, niet meer gebruikt
 
 - Vereist een waarde
 
@@ -9728,13 +12437,6 @@ Dit Help-bericht weergeven
 - Standaard: `false`
 - Accepteert geen waarde
 
-### `--quiet`, `-q`
-
-Geen bericht uitvoeren
-
-- Standaard: `false`
-- Accepteert geen waarde
-
 ### `--verbose`, `-v|-vv|-vvv`
 
 Verhoog de breedheid van berichten
@@ -9751,14 +12453,42 @@ Deze toepassingsversie weergeven
 
 ### `--yes`, `-y`
 
-Antwoord &quot;ja&quot; op ja/nee-vragen interactie uitschakelen
+&quot;ja&quot; antwoorden op bevestigingsvragen; accepteert de standaardwaarde voor andere vragen; interactie uitschakelen
+
+- Standaard: `false`
+- Accepteert geen waarde
+
+### `--no-interaction`
+
+Geen interactieve vragen stellen; Accepteer standaardwaarden. Gelijk aan het gebruik van de omgevingsvariabele: &lt;comment>Magento_CLOUD_CLI_NO_INTERACTION=1&lt;/comment>
+
+- Standaard: `false`
+- Accepteert geen waarde
+
+### `--ansi`
+
+ANSI-uitvoer forceren
+
+- Standaard: `false`
+- Accepteert geen waarde
+
+### `--no-ansi`
+
+ANSI-uitvoer uitschakelen
 
 - Standaard: `false`
 - Accepteert geen waarde
 
 ### `--no`, `-n`
 
-Antwoord &quot;nee&quot; op ja/nee-vragen. interactie uitschakelen
+Antwoord &quot;nee&quot; op bevestigingsvragen; accepteert de standaardwaarde voor andere vragen; interactie uitschakelen
+
+- Standaard: `false`
+- Accepteert geen waarde
+
+### `--quiet`, `-q`
+
+Geen bericht uitvoeren
 
 - Standaard: `false`
 - Accepteert geen waarde
@@ -9769,7 +12499,7 @@ Antwoord &quot;nee&quot; op ja/nee-vragen. interactie uitschakelen
 Gegevens exporteren uit MongoDB
 
 ```bash
-magento-cloud mongoexport [-c|--collection COLLECTION] [--jsonArray] [--type TYPE] [-f|--fields FIELDS] [-r|--relationship RELATIONSHIP] [-i|--identity-file IDENTITY-FILE] [-p|--project PROJECT] [--host HOST] [-e|--environment ENVIRONMENT] [-A|--app APP]
+magento-cloud mongoexport [-c|--collection COLLECTION] [--jsonArray] [--type TYPE] [-f|--fields FIELDS] [-r|--relationship RELATIONSHIP] [-i|--identity-file IDENTITY-FILE] [-p|--project PROJECT] [-e|--environment ENVIRONMENT] [-A|--app APP]
 ```
 
 
@@ -9823,7 +12553,7 @@ De project-id of URL
 
 ### `--host`
 
-De API-hostnaam van het project
+Vervangen optie, niet meer gebruikt
 
 - Vereist een waarde
 
@@ -9846,13 +12576,6 @@ Dit Help-bericht weergeven
 - Standaard: `false`
 - Accepteert geen waarde
 
-### `--quiet`, `-q`
-
-Geen bericht uitvoeren
-
-- Standaard: `false`
-- Accepteert geen waarde
-
 ### `--verbose`, `-v|-vv|-vvv`
 
 Verhoog de breedheid van berichten
@@ -9869,14 +12592,42 @@ Deze toepassingsversie weergeven
 
 ### `--yes`, `-y`
 
-Antwoord &quot;ja&quot; op ja/nee-vragen interactie uitschakelen
+&quot;ja&quot; antwoorden op bevestigingsvragen; accepteert de standaardwaarde voor andere vragen; interactie uitschakelen
+
+- Standaard: `false`
+- Accepteert geen waarde
+
+### `--no-interaction`
+
+Geen interactieve vragen stellen; Accepteer standaardwaarden. Gelijk aan het gebruik van de omgevingsvariabele: &lt;comment>Magento_CLOUD_CLI_NO_INTERACTION=1&lt;/comment>
+
+- Standaard: `false`
+- Accepteert geen waarde
+
+### `--ansi`
+
+ANSI-uitvoer forceren
+
+- Standaard: `false`
+- Accepteert geen waarde
+
+### `--no-ansi`
+
+ANSI-uitvoer uitschakelen
 
 - Standaard: `false`
 - Accepteert geen waarde
 
 ### `--no`, `-n`
 
-Antwoord &quot;nee&quot; op ja/nee-vragen. interactie uitschakelen
+Antwoord &quot;nee&quot; op bevestigingsvragen; accepteert de standaardwaarde voor andere vragen; interactie uitschakelen
+
+- Standaard: `false`
+- Accepteert geen waarde
+
+### `--quiet`, `-q`
+
+Geen bericht uitvoeren
 
 - Standaard: `false`
 - Accepteert geen waarde
@@ -9887,7 +12638,7 @@ Antwoord &quot;nee&quot; op ja/nee-vragen. interactie uitschakelen
 Herstel een binaire archiefstortplaats van gegevens in MongoDB
 
 ```bash
-magento-cloud mongorestore [-c|--collection COLLECTION] [-r|--relationship RELATIONSHIP] [-i|--identity-file IDENTITY-FILE] [-p|--project PROJECT] [--host HOST] [-e|--environment ENVIRONMENT] [-A|--app APP]
+magento-cloud mongorestore [-c|--collection COLLECTION] [-r|--relationship RELATIONSHIP] [-i|--identity-file IDENTITY-FILE] [-p|--project PROJECT] [-e|--environment ENVIRONMENT] [-A|--app APP]
 ```
 
 
@@ -9921,7 +12672,7 @@ De project-id of URL
 
 ### `--host`
 
-De API-hostnaam van het project
+Vervangen optie, niet meer gebruikt
 
 - Vereist een waarde
 
@@ -9944,13 +12695,6 @@ Dit Help-bericht weergeven
 - Standaard: `false`
 - Accepteert geen waarde
 
-### `--quiet`, `-q`
-
-Geen bericht uitvoeren
-
-- Standaard: `false`
-- Accepteert geen waarde
-
 ### `--verbose`, `-v|-vv|-vvv`
 
 Verhoog de breedheid van berichten
@@ -9967,14 +12711,42 @@ Deze toepassingsversie weergeven
 
 ### `--yes`, `-y`
 
-Antwoord &quot;ja&quot; op ja/nee-vragen interactie uitschakelen
+&quot;ja&quot; antwoorden op bevestigingsvragen; accepteert de standaardwaarde voor andere vragen; interactie uitschakelen
+
+- Standaard: `false`
+- Accepteert geen waarde
+
+### `--no-interaction`
+
+Geen interactieve vragen stellen; Accepteer standaardwaarden. Gelijk aan het gebruik van de omgevingsvariabele: &lt;comment>Magento_CLOUD_CLI_NO_INTERACTION=1&lt;/comment>
+
+- Standaard: `false`
+- Accepteert geen waarde
+
+### `--ansi`
+
+ANSI-uitvoer forceren
+
+- Standaard: `false`
+- Accepteert geen waarde
+
+### `--no-ansi`
+
+ANSI-uitvoer uitschakelen
 
 - Standaard: `false`
 - Accepteert geen waarde
 
 ### `--no`, `-n`
 
-Antwoord &quot;nee&quot; op ja/nee-vragen. interactie uitschakelen
+Antwoord &quot;nee&quot; op bevestigingsvragen; accepteert de standaardwaarde voor andere vragen; interactie uitschakelen
+
+- Standaard: `false`
+- Accepteert geen waarde
+
+### `--quiet`, `-q`
+
+Geen bericht uitvoeren
 
 - Standaard: `false`
 - Accepteert geen waarde
@@ -9985,7 +12757,7 @@ Antwoord &quot;nee&quot; op ja/nee-vragen. interactie uitschakelen
 De shell van MongoDB gebruiken
 
 ```bash
-magento-cloud mongo [--eval EVAL] [-r|--relationship RELATIONSHIP] [-i|--identity-file IDENTITY-FILE] [-p|--project PROJECT] [--host HOST] [-e|--environment ENVIRONMENT] [-A|--app APP]
+magento-cloud mongo [--eval EVAL] [-r|--relationship RELATIONSHIP] [-i|--identity-file IDENTITY-FILE] [-p|--project PROJECT] [-e|--environment ENVIRONMENT] [-A|--app APP]
 ```
 
 
@@ -10019,7 +12791,7 @@ De project-id of URL
 
 ### `--host`
 
-De API-hostnaam van het project
+Vervangen optie, niet meer gebruikt
 
 - Vereist een waarde
 
@@ -10042,13 +12814,6 @@ Dit Help-bericht weergeven
 - Standaard: `false`
 - Accepteert geen waarde
 
-### `--quiet`, `-q`
-
-Geen bericht uitvoeren
-
-- Standaard: `false`
-- Accepteert geen waarde
-
 ### `--verbose`, `-v|-vv|-vvv`
 
 Verhoog de breedheid van berichten
@@ -10065,14 +12830,42 @@ Deze toepassingsversie weergeven
 
 ### `--yes`, `-y`
 
-Antwoord &quot;ja&quot; op ja/nee-vragen interactie uitschakelen
+&quot;ja&quot; antwoorden op bevestigingsvragen; accepteert de standaardwaarde voor andere vragen; interactie uitschakelen
+
+- Standaard: `false`
+- Accepteert geen waarde
+
+### `--no-interaction`
+
+Geen interactieve vragen stellen; Accepteer standaardwaarden. Gelijk aan het gebruik van de omgevingsvariabele: &lt;comment>Magento_CLOUD_CLI_NO_INTERACTION=1&lt;/comment>
+
+- Standaard: `false`
+- Accepteert geen waarde
+
+### `--ansi`
+
+ANSI-uitvoer forceren
+
+- Standaard: `false`
+- Accepteert geen waarde
+
+### `--no-ansi`
+
+ANSI-uitvoer uitschakelen
 
 - Standaard: `false`
 - Accepteert geen waarde
 
 ### `--no`, `-n`
 
-Antwoord &quot;nee&quot; op ja/nee-vragen. interactie uitschakelen
+Antwoord &quot;nee&quot; op bevestigingsvragen; accepteert de standaardwaarde voor andere vragen; interactie uitschakelen
+
+- Standaard: `false`
+- Accepteert geen waarde
+
+### `--quiet`, `-q`
+
+Geen bericht uitvoeren
 
 - Standaard: `false`
 - Accepteert geen waarde
@@ -10083,7 +12876,7 @@ Antwoord &quot;nee&quot; op ja/nee-vragen. interactie uitschakelen
 Toegang tot de CLI van Redis
 
 ```bash
-magento-cloud redis [-r|--relationship RELATIONSHIP] [-i|--identity-file IDENTITY-FILE] [-p|--project PROJECT] [--host HOST] [-e|--environment ENVIRONMENT] [-A|--app APP] [--] [<args>]
+magento-cloud redis [-r|--relationship RELATIONSHIP] [-i|--identity-file IDENTITY-FILE] [-p|--project PROJECT] [-e|--environment ENVIRONMENT] [-A|--app APP] [--] [<args>]
 ```
 
 
@@ -10117,7 +12910,7 @@ De project-id of URL
 
 ### `--host`
 
-De API-hostnaam van het project
+Vervangen optie, niet meer gebruikt
 
 - Vereist een waarde
 
@@ -10140,13 +12933,6 @@ Dit Help-bericht weergeven
 - Standaard: `false`
 - Accepteert geen waarde
 
-### `--quiet`, `-q`
-
-Geen bericht uitvoeren
-
-- Standaard: `false`
-- Accepteert geen waarde
-
 ### `--verbose`, `-v|-vv|-vvv`
 
 Verhoog de breedheid van berichten
@@ -10163,14 +12949,42 @@ Deze toepassingsversie weergeven
 
 ### `--yes`, `-y`
 
-Antwoord &quot;ja&quot; op ja/nee-vragen interactie uitschakelen
+&quot;ja&quot; antwoorden op bevestigingsvragen; accepteert de standaardwaarde voor andere vragen; interactie uitschakelen
+
+- Standaard: `false`
+- Accepteert geen waarde
+
+### `--no-interaction`
+
+Geen interactieve vragen stellen; Accepteer standaardwaarden. Gelijk aan het gebruik van de omgevingsvariabele: &lt;comment>Magento_CLOUD_CLI_NO_INTERACTION=1&lt;/comment>
+
+- Standaard: `false`
+- Accepteert geen waarde
+
+### `--ansi`
+
+ANSI-uitvoer forceren
+
+- Standaard: `false`
+- Accepteert geen waarde
+
+### `--no-ansi`
+
+ANSI-uitvoer uitschakelen
 
 - Standaard: `false`
 - Accepteert geen waarde
 
 ### `--no`, `-n`
 
-Antwoord &quot;nee&quot; op ja/nee-vragen. interactie uitschakelen
+Antwoord &quot;nee&quot; op bevestigingsvragen; accepteert de standaardwaarde voor andere vragen; interactie uitschakelen
+
+- Standaard: `false`
+- Accepteert geen waarde
+
+### `--quiet`, `-q`
+
+Geen bericht uitvoeren
 
 - Standaard: `false`
 - Accepteert geen waarde
@@ -10197,13 +13011,6 @@ Dit Help-bericht weergeven
 - Standaard: `false`
 - Accepteert geen waarde
 
-### `--quiet`, `-q`
-
-Geen bericht uitvoeren
-
-- Standaard: `false`
-- Accepteert geen waarde
-
 ### `--verbose`, `-v|-vv|-vvv`
 
 Verhoog de breedheid van berichten
@@ -10220,14 +13027,42 @@ Deze toepassingsversie weergeven
 
 ### `--yes`, `-y`
 
-Antwoord &quot;ja&quot; op ja/nee-vragen interactie uitschakelen
+&quot;ja&quot; antwoorden op bevestigingsvragen; accepteert de standaardwaarde voor andere vragen; interactie uitschakelen
+
+- Standaard: `false`
+- Accepteert geen waarde
+
+### `--no-interaction`
+
+Geen interactieve vragen stellen; Accepteer standaardwaarden. Gelijk aan het gebruik van de omgevingsvariabele: &lt;comment>Magento_CLOUD_CLI_NO_INTERACTION=1&lt;/comment>
+
+- Standaard: `false`
+- Accepteert geen waarde
+
+### `--ansi`
+
+ANSI-uitvoer forceren
+
+- Standaard: `false`
+- Accepteert geen waarde
+
+### `--no-ansi`
+
+ANSI-uitvoer uitschakelen
 
 - Standaard: `false`
 - Accepteert geen waarde
 
 ### `--no`, `-n`
 
-Antwoord &quot;nee&quot; op ja/nee-vragen. interactie uitschakelen
+Antwoord &quot;nee&quot; op bevestigingsvragen; accepteert de standaardwaarde voor andere vragen; interactie uitschakelen
+
+- Standaard: `false`
+- Accepteert geen waarde
+
+### `--quiet`, `-q`
+
+Geen bericht uitvoeren
 
 - Standaard: `false`
 - Accepteert geen waarde
@@ -10238,7 +13073,7 @@ Antwoord &quot;nee&quot; op ja/nee-vragen. interactie uitschakelen
 Een opname maken van een omgeving
 
 ```bash
-magento-cloud backup [--live] [-p|--project PROJECT] [--host HOST] [-e|--environment ENVIRONMENT] [-W|--no-wait] [--wait] [--] [<environment>]
+magento-cloud backup [--live] [-p|--project PROJECT] [-e|--environment ENVIRONMENT] [-W|--no-wait] [--wait] [--] [<environment>]
 ```
 
 
@@ -10277,7 +13112,7 @@ De project-id of URL
 
 ### `--host`
 
-De API-hostnaam van het project
+Vervangen optie, niet meer gebruikt
 
 - Vereist een waarde
 
@@ -10301,16 +13136,16 @@ Wacht tot de bewerking is voltooid (standaardwaarde)
 - Standaard: `false`
 - Accepteert geen waarde
 
-### `--help`, `-h`
+### `--unsafe`
 
-Dit Help-bericht weergeven
+Vervangen optie: use —live
 
 - Standaard: `false`
 - Accepteert geen waarde
 
-### `--quiet`, `-q`
+### `--help`, `-h`
 
-Geen bericht uitvoeren
+Dit Help-bericht weergeven
 
 - Standaard: `false`
 - Accepteert geen waarde
@@ -10331,14 +13166,42 @@ Deze toepassingsversie weergeven
 
 ### `--yes`, `-y`
 
-Antwoord &quot;ja&quot; op ja/nee-vragen interactie uitschakelen
+&quot;ja&quot; antwoorden op bevestigingsvragen; accepteert de standaardwaarde voor andere vragen; interactie uitschakelen
+
+- Standaard: `false`
+- Accepteert geen waarde
+
+### `--no-interaction`
+
+Geen interactieve vragen stellen; Accepteer standaardwaarden. Gelijk aan het gebruik van de omgevingsvariabele: &lt;comment>Magento_CLOUD_CLI_NO_INTERACTION=1&lt;/comment>
+
+- Standaard: `false`
+- Accepteert geen waarde
+
+### `--ansi`
+
+ANSI-uitvoer forceren
+
+- Standaard: `false`
+- Accepteert geen waarde
+
+### `--no-ansi`
+
+ANSI-uitvoer uitschakelen
 
 - Standaard: `false`
 - Accepteert geen waarde
 
 ### `--no`, `-n`
 
-Antwoord &quot;nee&quot; op ja/nee-vragen. interactie uitschakelen
+Antwoord &quot;nee&quot; op bevestigingsvragen; accepteert de standaardwaarde voor andere vragen; interactie uitschakelen
+
+- Standaard: `false`
+- Accepteert geen waarde
+
+### `--quiet`, `-q`
+
+Geen bericht uitvoeren
 
 - Standaard: `false`
 - Accepteert geen waarde
@@ -10349,7 +13212,7 @@ Antwoord &quot;nee&quot; op ja/nee-vragen. interactie uitschakelen
 Beschikbare momentopnamen van een omgeving weergeven
 
 ```bash
-magento-cloud snapshots [--limit LIMIT] [--start START] [--format FORMAT] [--columns COLUMNS] [--no-header] [--date-fmt DATE-FMT] [-p|--project PROJECT] [--host HOST] [-e|--environment ENVIRONMENT]
+magento-cloud snapshots [--format FORMAT] [-c|--columns COLUMNS] [--no-header] [--date-fmt DATE-FMT] [-p|--project PROJECT] [-e|--environment ENVIRONMENT]
 ```
 
 
@@ -10369,7 +13232,7 @@ backup:list
 
 ### `--limit`
 
-Het aantal momentopnamen beperken tot de lijst
+[Vervangen] - deze optie niet wordt gebruikt
 
 - Vereist een waarde
 
@@ -10381,14 +13244,14 @@ Het aantal momentopnamen beperken tot de lijst
 
 ### `--format`
 
-De uitvoerindeling (&quot;table&quot;, &quot;csv&quot;, &quot;tsv&quot; of &quot;plain&quot;)
+De uitvoerindeling: table, csv, tsv of plain
 
 - Standaard: `table`
 - Vereist een waarde
 
-### `--columns`
+### `--columns`, `-c`
 
-Weer te geven kolommen (lijst met door komma&#39;s gescheiden waarden of meerdere waarden)
+Weer te geven kolommen. Als een lijst als één waarde wordt gegeven (bv. &quot;a,b,c&quot;) wordt gesplitst in komma&#39;s en/of witruimte.
 
 - Standaard: `[]`
 - Vereist een waarde
@@ -10415,7 +13278,7 @@ De project-id of URL
 
 ### `--host`
 
-De API-hostnaam van het project
+Vervangen optie, niet meer gebruikt
 
 - Vereist een waarde
 
@@ -10428,13 +13291,6 @@ De milieu-id
 ### `--help`, `-h`
 
 Dit Help-bericht weergeven
-
-- Standaard: `false`
-- Accepteert geen waarde
-
-### `--quiet`, `-q`
-
-Geen bericht uitvoeren
 
 - Standaard: `false`
 - Accepteert geen waarde
@@ -10455,14 +13311,42 @@ Deze toepassingsversie weergeven
 
 ### `--yes`, `-y`
 
-Antwoord &quot;ja&quot; op ja/nee-vragen interactie uitschakelen
+&quot;ja&quot; antwoorden op bevestigingsvragen; accepteert de standaardwaarde voor andere vragen; interactie uitschakelen
+
+- Standaard: `false`
+- Accepteert geen waarde
+
+### `--no-interaction`
+
+Geen interactieve vragen stellen; Accepteer standaardwaarden. Gelijk aan het gebruik van de omgevingsvariabele: &lt;comment>Magento_CLOUD_CLI_NO_INTERACTION=1&lt;/comment>
+
+- Standaard: `false`
+- Accepteert geen waarde
+
+### `--ansi`
+
+ANSI-uitvoer forceren
+
+- Standaard: `false`
+- Accepteert geen waarde
+
+### `--no-ansi`
+
+ANSI-uitvoer uitschakelen
 
 - Standaard: `false`
 - Accepteert geen waarde
 
 ### `--no`, `-n`
 
-Antwoord &quot;nee&quot; op ja/nee-vragen. interactie uitschakelen
+Antwoord &quot;nee&quot; op bevestigingsvragen; accepteert de standaardwaarde voor andere vragen; interactie uitschakelen
+
+- Standaard: `false`
+- Accepteert geen waarde
+
+### `--quiet`, `-q`
+
+Geen bericht uitvoeren
 
 - Standaard: `false`
 - Accepteert geen waarde
@@ -10473,7 +13357,7 @@ Antwoord &quot;nee&quot; op ja/nee-vragen. interactie uitschakelen
 Een omgevingsmomentopname herstellen
 
 ```bash
-magento-cloud snapshot:restore [--target TARGET] [--branch-from BRANCH-FROM] [-p|--project PROJECT] [--host HOST] [-e|--environment ENVIRONMENT] [-W|--no-wait] [--wait] [--] [<snapshot>]
+magento-cloud snapshot:restore [--target TARGET] [--branch-from BRANCH-FROM] [-p|--project PROJECT] [-e|--environment ENVIRONMENT] [-W|--no-wait] [--wait] [--] [<snapshot>]
 ```
 
 
@@ -10512,7 +13396,7 @@ De project-id of URL
 
 ### `--host`
 
-De API-hostnaam van het project
+Vervangen optie, niet meer gebruikt
 
 - Vereist een waarde
 
@@ -10543,13 +13427,6 @@ Dit Help-bericht weergeven
 - Standaard: `false`
 - Accepteert geen waarde
 
-### `--quiet`, `-q`
-
-Geen bericht uitvoeren
-
-- Standaard: `false`
-- Accepteert geen waarde
-
 ### `--verbose`, `-v|-vv|-vvv`
 
 Verhoog de breedheid van berichten
@@ -10566,14 +13443,42 @@ Deze toepassingsversie weergeven
 
 ### `--yes`, `-y`
 
-Antwoord &quot;ja&quot; op ja/nee-vragen interactie uitschakelen
+&quot;ja&quot; antwoorden op bevestigingsvragen; accepteert de standaardwaarde voor andere vragen; interactie uitschakelen
+
+- Standaard: `false`
+- Accepteert geen waarde
+
+### `--no-interaction`
+
+Geen interactieve vragen stellen; Accepteer standaardwaarden. Gelijk aan het gebruik van de omgevingsvariabele: &lt;comment>Magento_CLOUD_CLI_NO_INTERACTION=1&lt;/comment>
+
+- Standaard: `false`
+- Accepteert geen waarde
+
+### `--ansi`
+
+ANSI-uitvoer forceren
+
+- Standaard: `false`
+- Accepteert geen waarde
+
+### `--no-ansi`
+
+ANSI-uitvoer uitschakelen
 
 - Standaard: `false`
 - Accepteert geen waarde
 
 ### `--no`, `-n`
 
-Antwoord &quot;nee&quot; op ja/nee-vragen. interactie uitschakelen
+Antwoord &quot;nee&quot; op bevestigingsvragen; accepteert de standaardwaarde voor andere vragen; interactie uitschakelen
+
+- Standaard: `false`
+- Accepteert geen waarde
+
+### `--quiet`, `-q`
+
+Geen bericht uitvoeren
 
 - Standaard: `false`
 - Accepteert geen waarde
@@ -10584,7 +13489,7 @@ Antwoord &quot;nee&quot; op ja/nee-vragen. interactie uitschakelen
 &lt;fg white=&quot;&quot; bg=&quot;red&quot;>[ BETA ]&lt;/> Een bronbewerking uitvoeren
 
 ```bash
-magento-cloud source-operation:run [--variable VARIABLE] [-p|--project PROJECT] [--host HOST] [-e|--environment ENVIRONMENT] [-W|--no-wait] [--wait] [--] <operation>
+magento-cloud source-operation:run [--variable VARIABLE] [-p|--project PROJECT] [-e|--environment ENVIRONMENT] [-W|--no-wait] [--wait] [--] <operation>
 ```
 
 
@@ -10609,7 +13514,7 @@ De project-id of URL
 
 ### `--host`
 
-De API-hostnaam van het project
+Vervangen optie, niet meer gebruikt
 
 - Vereist een waarde
 
@@ -10640,13 +13545,6 @@ Dit Help-bericht weergeven
 - Standaard: `false`
 - Accepteert geen waarde
 
-### `--quiet`, `-q`
-
-Geen bericht uitvoeren
-
-- Standaard: `false`
-- Accepteert geen waarde
-
 ### `--verbose`, `-v|-vv|-vvv`
 
 Verhoog de breedheid van berichten
@@ -10663,14 +13561,42 @@ Deze toepassingsversie weergeven
 
 ### `--yes`, `-y`
 
-Antwoord &quot;ja&quot; op ja/nee-vragen interactie uitschakelen
+&quot;ja&quot; antwoorden op bevestigingsvragen; accepteert de standaardwaarde voor andere vragen; interactie uitschakelen
+
+- Standaard: `false`
+- Accepteert geen waarde
+
+### `--no-interaction`
+
+Geen interactieve vragen stellen; Accepteer standaardwaarden. Gelijk aan het gebruik van de omgevingsvariabele: &lt;comment>Magento_CLOUD_CLI_NO_INTERACTION=1&lt;/comment>
+
+- Standaard: `false`
+- Accepteert geen waarde
+
+### `--ansi`
+
+ANSI-uitvoer forceren
+
+- Standaard: `false`
+- Accepteert geen waarde
+
+### `--no-ansi`
+
+ANSI-uitvoer uitschakelen
 
 - Standaard: `false`
 - Accepteert geen waarde
 
 ### `--no`, `-n`
 
-Antwoord &quot;nee&quot; op ja/nee-vragen. interactie uitschakelen
+Antwoord &quot;nee&quot; op bevestigingsvragen; accepteert de standaardwaarde voor andere vragen; interactie uitschakelen
+
+- Standaard: `false`
+- Accepteert geen waarde
+
+### `--quiet`, `-q`
+
+Geen bericht uitvoeren
 
 - Standaard: `false`
 - Accepteert geen waarde
@@ -10711,13 +13637,6 @@ Dit Help-bericht weergeven
 - Standaard: `false`
 - Accepteert geen waarde
 
-### `--quiet`, `-q`
-
-Geen bericht uitvoeren
-
-- Standaard: `false`
-- Accepteert geen waarde
-
 ### `--verbose`, `-v|-vv|-vvv`
 
 Verhoog de breedheid van berichten
@@ -10734,14 +13653,42 @@ Deze toepassingsversie weergeven
 
 ### `--yes`, `-y`
 
-Antwoord &quot;ja&quot; op ja/nee-vragen interactie uitschakelen
+&quot;ja&quot; antwoorden op bevestigingsvragen; accepteert de standaardwaarde voor andere vragen; interactie uitschakelen
+
+- Standaard: `false`
+- Accepteert geen waarde
+
+### `--no-interaction`
+
+Geen interactieve vragen stellen; Accepteer standaardwaarden. Gelijk aan het gebruik van de omgevingsvariabele: &lt;comment>Magento_CLOUD_CLI_NO_INTERACTION=1&lt;/comment>
+
+- Standaard: `false`
+- Accepteert geen waarde
+
+### `--ansi`
+
+ANSI-uitvoer forceren
+
+- Standaard: `false`
+- Accepteert geen waarde
+
+### `--no-ansi`
+
+ANSI-uitvoer uitschakelen
 
 - Standaard: `false`
 - Accepteert geen waarde
 
 ### `--no`, `-n`
 
-Antwoord &quot;nee&quot; op ja/nee-vragen. interactie uitschakelen
+Antwoord &quot;nee&quot; op bevestigingsvragen; accepteert de standaardwaarde voor andere vragen; interactie uitschakelen
+
+- Standaard: `false`
+- Accepteert geen waarde
+
+### `--quiet`, `-q`
+
+Geen bericht uitvoeren
 
 - Standaard: `false`
 - Accepteert geen waarde
@@ -10783,13 +13730,6 @@ Dit Help-bericht weergeven
 - Standaard: `false`
 - Accepteert geen waarde
 
-### `--quiet`, `-q`
-
-Geen bericht uitvoeren
-
-- Standaard: `false`
-- Accepteert geen waarde
-
 ### `--verbose`, `-v|-vv|-vvv`
 
 Verhoog de breedheid van berichten
@@ -10806,14 +13746,42 @@ Deze toepassingsversie weergeven
 
 ### `--yes`, `-y`
 
-Antwoord &quot;ja&quot; op ja/nee-vragen interactie uitschakelen
+&quot;ja&quot; antwoorden op bevestigingsvragen; accepteert de standaardwaarde voor andere vragen; interactie uitschakelen
+
+- Standaard: `false`
+- Accepteert geen waarde
+
+### `--no-interaction`
+
+Geen interactieve vragen stellen; Accepteer standaardwaarden. Gelijk aan het gebruik van de omgevingsvariabele: &lt;comment>Magento_CLOUD_CLI_NO_INTERACTION=1&lt;/comment>
+
+- Standaard: `false`
+- Accepteert geen waarde
+
+### `--ansi`
+
+ANSI-uitvoer forceren
+
+- Standaard: `false`
+- Accepteert geen waarde
+
+### `--no-ansi`
+
+ANSI-uitvoer uitschakelen
 
 - Standaard: `false`
 - Accepteert geen waarde
 
 ### `--no`, `-n`
 
-Antwoord &quot;nee&quot; op ja/nee-vragen. interactie uitschakelen
+Antwoord &quot;nee&quot; op bevestigingsvragen; accepteert de standaardwaarde voor andere vragen; interactie uitschakelen
+
+- Standaard: `false`
+- Accepteert geen waarde
+
+### `--quiet`, `-q`
+
+Geen bericht uitvoeren
 
 - Standaard: `false`
 - Accepteert geen waarde
@@ -10846,13 +13814,6 @@ Dit Help-bericht weergeven
 - Standaard: `false`
 - Accepteert geen waarde
 
-### `--quiet`, `-q`
-
-Geen bericht uitvoeren
-
-- Standaard: `false`
-- Accepteert geen waarde
-
 ### `--verbose`, `-v|-vv|-vvv`
 
 Verhoog de breedheid van berichten
@@ -10869,14 +13830,42 @@ Deze toepassingsversie weergeven
 
 ### `--yes`, `-y`
 
-Antwoord &quot;ja&quot; op ja/nee-vragen interactie uitschakelen
+&quot;ja&quot; antwoorden op bevestigingsvragen; accepteert de standaardwaarde voor andere vragen; interactie uitschakelen
+
+- Standaard: `false`
+- Accepteert geen waarde
+
+### `--no-interaction`
+
+Geen interactieve vragen stellen; Accepteer standaardwaarden. Gelijk aan het gebruik van de omgevingsvariabele: &lt;comment>Magento_CLOUD_CLI_NO_INTERACTION=1&lt;/comment>
+
+- Standaard: `false`
+- Accepteert geen waarde
+
+### `--ansi`
+
+ANSI-uitvoer forceren
+
+- Standaard: `false`
+- Accepteert geen waarde
+
+### `--no-ansi`
+
+ANSI-uitvoer uitschakelen
 
 - Standaard: `false`
 - Accepteert geen waarde
 
 ### `--no`, `-n`
 
-Antwoord &quot;nee&quot; op ja/nee-vragen. interactie uitschakelen
+Antwoord &quot;nee&quot; op bevestigingsvragen; accepteert de standaardwaarde voor andere vragen; interactie uitschakelen
+
+- Standaard: `false`
+- Accepteert geen waarde
+
+### `--quiet`, `-q`
+
+Geen bericht uitvoeren
 
 - Standaard: `false`
 - Accepteert geen waarde
@@ -10903,13 +13892,6 @@ Dit Help-bericht weergeven
 - Standaard: `false`
 - Accepteert geen waarde
 
-### `--quiet`, `-q`
-
-Geen bericht uitvoeren
-
-- Standaard: `false`
-- Accepteert geen waarde
-
 ### `--verbose`, `-v|-vv|-vvv`
 
 Verhoog de breedheid van berichten
@@ -10926,14 +13908,42 @@ Deze toepassingsversie weergeven
 
 ### `--yes`, `-y`
 
-Antwoord &quot;ja&quot; op ja/nee-vragen interactie uitschakelen
+&quot;ja&quot; antwoorden op bevestigingsvragen; accepteert de standaardwaarde voor andere vragen; interactie uitschakelen
+
+- Standaard: `false`
+- Accepteert geen waarde
+
+### `--no-interaction`
+
+Geen interactieve vragen stellen; Accepteer standaardwaarden. Gelijk aan het gebruik van de omgevingsvariabele: &lt;comment>Magento_CLOUD_CLI_NO_INTERACTION=1&lt;/comment>
+
+- Standaard: `false`
+- Accepteert geen waarde
+
+### `--ansi`
+
+ANSI-uitvoer forceren
+
+- Standaard: `false`
+- Accepteert geen waarde
+
+### `--no-ansi`
+
+ANSI-uitvoer uitschakelen
 
 - Standaard: `false`
 - Accepteert geen waarde
 
 ### `--no`, `-n`
 
-Antwoord &quot;nee&quot; op ja/nee-vragen. interactie uitschakelen
+Antwoord &quot;nee&quot; op bevestigingsvragen; accepteert de standaardwaarde voor andere vragen; interactie uitschakelen
+
+- Standaard: `false`
+- Accepteert geen waarde
+
+### `--quiet`, `-q`
+
+Geen bericht uitvoeren
 
 - Standaard: `false`
 - Accepteert geen waarde
@@ -10944,7 +13954,7 @@ Antwoord &quot;nee&quot; op ja/nee-vragen. interactie uitschakelen
 Een lijst met SSH-sleutels in uw account ophalen
 
 ```bash
-magento-cloud ssh-keys [--format FORMAT] [--columns COLUMNS] [--no-header]
+magento-cloud ssh-keys [--format FORMAT] [-c|--columns COLUMNS] [--no-header]
 ```
 
 
@@ -10954,14 +13964,14 @@ ssh-keys
 
 ### `--format`
 
-De uitvoerindeling (&quot;table&quot;, &quot;csv&quot;, &quot;tsv&quot; of &quot;plain&quot;)
+De uitvoerindeling: table, csv, tsv of plain
 
 - Standaard: `table`
 - Vereist een waarde
 
-### `--columns`
+### `--columns`, `-c`
 
-Weer te geven kolommen (lijst met door komma&#39;s gescheiden waarden of meerdere waarden)
+Weer te geven kolommen. Beschikbare kolommen: id*, title*, path*, vingerafdruk (* = standaardkolommen). Het teken &quot;+&quot; kan worden gebruikt als tijdelijke aanduiding voor de standaardkolommen. Als een lijst als één waarde wordt gegeven (bv. &quot;a,b,c&quot;) wordt gesplitst in komma&#39;s en/of witruimte.
 
 - Standaard: `[]`
 - Vereist een waarde
@@ -10980,13 +13990,6 @@ Dit Help-bericht weergeven
 - Standaard: `false`
 - Accepteert geen waarde
 
-### `--quiet`, `-q`
-
-Geen bericht uitvoeren
-
-- Standaard: `false`
-- Accepteert geen waarde
-
 ### `--verbose`, `-v|-vv|-vvv`
 
 Verhoog de breedheid van berichten
@@ -11003,14 +14006,42 @@ Deze toepassingsversie weergeven
 
 ### `--yes`, `-y`
 
-Antwoord &quot;ja&quot; op ja/nee-vragen interactie uitschakelen
+&quot;ja&quot; antwoorden op bevestigingsvragen; accepteert de standaardwaarde voor andere vragen; interactie uitschakelen
+
+- Standaard: `false`
+- Accepteert geen waarde
+
+### `--no-interaction`
+
+Geen interactieve vragen stellen; Accepteer standaardwaarden. Gelijk aan het gebruik van de omgevingsvariabele: &lt;comment>Magento_CLOUD_CLI_NO_INTERACTION=1&lt;/comment>
+
+- Standaard: `false`
+- Accepteert geen waarde
+
+### `--ansi`
+
+ANSI-uitvoer forceren
+
+- Standaard: `false`
+- Accepteert geen waarde
+
+### `--no-ansi`
+
+ANSI-uitvoer uitschakelen
 
 - Standaard: `false`
 - Accepteert geen waarde
 
 ### `--no`, `-n`
 
-Antwoord &quot;nee&quot; op ja/nee-vragen. interactie uitschakelen
+Antwoord &quot;nee&quot; op bevestigingsvragen; accepteert de standaardwaarde voor andere vragen; interactie uitschakelen
+
+- Standaard: `false`
+- Accepteert geen waarde
+
+### `--quiet`, `-q`
+
+Geen bericht uitvoeren
 
 - Standaard: `false`
 - Accepteert geen waarde
@@ -11021,7 +14052,7 @@ Antwoord &quot;nee&quot; op ja/nee-vragen. interactie uitschakelen
 Abonnementseigenschappen lezen of wijzigen
 
 ```bash
-magento-cloud subscription:info [-s|--id ID] [--date-fmt DATE-FMT] [--format FORMAT] [--columns COLUMNS] [--no-header] [-p|--project PROJECT] [--host HOST] [--] [<property>] [<value>]
+magento-cloud subscription:info [-s|--id ID] [--date-fmt DATE-FMT] [--format FORMAT] [-c|--columns COLUMNS] [--no-header] [-p|--project PROJECT] [--] [<property>] [<value>]
 ```
 
 
@@ -11050,14 +14081,14 @@ De datumnotatie (als een PHP-datumnotatietekenreeks)
 
 ### `--format`
 
-De uitvoerindeling (&quot;table&quot;, &quot;csv&quot;, &quot;tsv&quot; of &quot;plain&quot;)
+De uitvoerindeling: table, csv, tsv of plain
 
 - Standaard: `table`
 - Vereist een waarde
 
-### `--columns`
+### `--columns`, `-c`
 
-Weer te geven kolommen (lijst met door komma&#39;s gescheiden waarden of meerdere waarden)
+Weer te geven kolommen. Als een lijst als één waarde wordt gegeven (bv. &quot;a,b,c&quot;) wordt gesplitst in komma&#39;s en/of witruimte.
 
 - Standaard: `[]`
 - Vereist een waarde
@@ -11077,20 +14108,13 @@ De project-id of URL
 
 ### `--host`
 
-De API-hostnaam van het project
+Vervangen optie, niet meer gebruikt
 
 - Vereist een waarde
 
 ### `--help`, `-h`
 
 Dit Help-bericht weergeven
-
-- Standaard: `false`
-- Accepteert geen waarde
-
-### `--quiet`, `-q`
-
-Geen bericht uitvoeren
 
 - Standaard: `false`
 - Accepteert geen waarde
@@ -11111,14 +14135,42 @@ Deze toepassingsversie weergeven
 
 ### `--yes`, `-y`
 
-Antwoord &quot;ja&quot; op ja/nee-vragen interactie uitschakelen
+&quot;ja&quot; antwoorden op bevestigingsvragen; accepteert de standaardwaarde voor andere vragen; interactie uitschakelen
+
+- Standaard: `false`
+- Accepteert geen waarde
+
+### `--no-interaction`
+
+Geen interactieve vragen stellen; Accepteer standaardwaarden. Gelijk aan het gebruik van de omgevingsvariabele: &lt;comment>Magento_CLOUD_CLI_NO_INTERACTION=1&lt;/comment>
+
+- Standaard: `false`
+- Accepteert geen waarde
+
+### `--ansi`
+
+ANSI-uitvoer forceren
+
+- Standaard: `false`
+- Accepteert geen waarde
+
+### `--no-ansi`
+
+ANSI-uitvoer uitschakelen
 
 - Standaard: `false`
 - Accepteert geen waarde
 
 ### `--no`, `-n`
 
-Antwoord &quot;nee&quot; op ja/nee-vragen. interactie uitschakelen
+Antwoord &quot;nee&quot; op bevestigingsvragen; accepteert de standaardwaarde voor andere vragen; interactie uitschakelen
+
+- Standaard: `false`
+- Accepteert geen waarde
+
+### `--quiet`, `-q`
+
+Geen bericht uitvoeren
 
 - Standaard: `false`
 - Accepteert geen waarde
@@ -11129,7 +14181,7 @@ Antwoord &quot;nee&quot; op ja/nee-vragen. interactie uitschakelen
 SSH-tunnels sluiten
 
 ```bash
-magento-cloud tunnel:close [-a|--all] [-p|--project PROJECT] [--host HOST] [-e|--environment ENVIRONMENT] [-A|--app APP]
+magento-cloud tunnel:close [-a|--all] [-p|--project PROJECT] [-e|--environment ENVIRONMENT] [-A|--app APP]
 ```
 
 ### `--all`, `-a`
@@ -11147,7 +14199,7 @@ De project-id of URL
 
 ### `--host`
 
-De API-hostnaam van het project
+Vervangen optie, niet meer gebruikt
 
 - Vereist een waarde
 
@@ -11170,13 +14222,6 @@ Dit Help-bericht weergeven
 - Standaard: `false`
 - Accepteert geen waarde
 
-### `--quiet`, `-q`
-
-Geen bericht uitvoeren
-
-- Standaard: `false`
-- Accepteert geen waarde
-
 ### `--verbose`, `-v|-vv|-vvv`
 
 Verhoog de breedheid van berichten
@@ -11193,14 +14238,42 @@ Deze toepassingsversie weergeven
 
 ### `--yes`, `-y`
 
-Antwoord &quot;ja&quot; op ja/nee-vragen interactie uitschakelen
+&quot;ja&quot; antwoorden op bevestigingsvragen; accepteert de standaardwaarde voor andere vragen; interactie uitschakelen
+
+- Standaard: `false`
+- Accepteert geen waarde
+
+### `--no-interaction`
+
+Geen interactieve vragen stellen; Accepteer standaardwaarden. Gelijk aan het gebruik van de omgevingsvariabele: &lt;comment>Magento_CLOUD_CLI_NO_INTERACTION=1&lt;/comment>
+
+- Standaard: `false`
+- Accepteert geen waarde
+
+### `--ansi`
+
+ANSI-uitvoer forceren
+
+- Standaard: `false`
+- Accepteert geen waarde
+
+### `--no-ansi`
+
+ANSI-uitvoer uitschakelen
 
 - Standaard: `false`
 - Accepteert geen waarde
 
 ### `--no`, `-n`
 
-Antwoord &quot;nee&quot; op ja/nee-vragen. interactie uitschakelen
+Antwoord &quot;nee&quot; op bevestigingsvragen; accepteert de standaardwaarde voor andere vragen; interactie uitschakelen
+
+- Standaard: `false`
+- Accepteert geen waarde
+
+### `--quiet`, `-q`
+
+Geen bericht uitvoeren
 
 - Standaard: `false`
 - Accepteert geen waarde
@@ -11211,7 +14284,7 @@ Antwoord &quot;nee&quot; op ja/nee-vragen. interactie uitschakelen
 Relatie-informatie voor SSH-tunnels weergeven
 
 ```bash
-magento-cloud tunnel:info [-P|--property PROPERTY] [-c|--encode] [-p|--project PROJECT] [--host HOST] [-e|--environment ENVIRONMENT] [-A|--app APP] [--format FORMAT] [--columns COLUMNS] [--no-header]
+magento-cloud tunnel:info [-P|--property PROPERTY] [-c|--encode] [-p|--project PROJECT] [-e|--environment ENVIRONMENT] [-A|--app APP] [--format FORMAT] [--columns COLUMNS] [--no-header]
 ```
 
 ### `--property`, `-P`
@@ -11235,7 +14308,7 @@ De project-id of URL
 
 ### `--host`
 
-De API-hostnaam van het project
+Vervangen optie, niet meer gebruikt
 
 - Vereist een waarde
 
@@ -11253,14 +14326,14 @@ De naam van de externe toepassing
 
 ### `--format`
 
-De uitvoerindeling (&quot;table&quot;, &quot;csv&quot;, &quot;tsv&quot; of &quot;plain&quot;)
+De uitvoerindeling: table, csv, tsv of plain
 
 - Standaard: `table`
 - Vereist een waarde
 
 ### `--columns`
 
-Weer te geven kolommen (lijst met door komma&#39;s gescheiden waarden of meerdere waarden)
+Weer te geven kolommen. Als een lijst als één waarde wordt gegeven (bv. &quot;a,b,c&quot;) wordt gesplitst in komma&#39;s en/of witruimte.
 
 - Standaard: `[]`
 - Vereist een waarde
@@ -11275,13 +14348,6 @@ De tabelkoptekst niet uitvoeren
 ### `--help`, `-h`
 
 Dit Help-bericht weergeven
-
-- Standaard: `false`
-- Accepteert geen waarde
-
-### `--quiet`, `-q`
-
-Geen bericht uitvoeren
 
 - Standaard: `false`
 - Accepteert geen waarde
@@ -11302,14 +14368,42 @@ Deze toepassingsversie weergeven
 
 ### `--yes`, `-y`
 
-Antwoord &quot;ja&quot; op ja/nee-vragen interactie uitschakelen
+&quot;ja&quot; antwoorden op bevestigingsvragen; accepteert de standaardwaarde voor andere vragen; interactie uitschakelen
+
+- Standaard: `false`
+- Accepteert geen waarde
+
+### `--no-interaction`
+
+Geen interactieve vragen stellen; Accepteer standaardwaarden. Gelijk aan het gebruik van de omgevingsvariabele: &lt;comment>Magento_CLOUD_CLI_NO_INTERACTION=1&lt;/comment>
+
+- Standaard: `false`
+- Accepteert geen waarde
+
+### `--ansi`
+
+ANSI-uitvoer forceren
+
+- Standaard: `false`
+- Accepteert geen waarde
+
+### `--no-ansi`
+
+ANSI-uitvoer uitschakelen
 
 - Standaard: `false`
 - Accepteert geen waarde
 
 ### `--no`, `-n`
 
-Antwoord &quot;nee&quot; op ja/nee-vragen. interactie uitschakelen
+Antwoord &quot;nee&quot; op bevestigingsvragen; accepteert de standaardwaarde voor andere vragen; interactie uitschakelen
+
+- Standaard: `false`
+- Accepteert geen waarde
+
+### `--quiet`, `-q`
+
+Geen bericht uitvoeren
 
 - Standaard: `false`
 - Accepteert geen waarde
@@ -11320,7 +14414,7 @@ Antwoord &quot;nee&quot; op ja/nee-vragen. interactie uitschakelen
 Lijst SSH-tunnels
 
 ```bash
-magento-cloud tunnels [-a|--all] [-p|--project PROJECT] [--host HOST] [-e|--environment ENVIRONMENT] [-A|--app APP] [--format FORMAT] [--columns COLUMNS] [--no-header]
+magento-cloud tunnels [-a|--all] [-p|--project PROJECT] [-e|--environment ENVIRONMENT] [-A|--app APP] [--format FORMAT] [-c|--columns COLUMNS] [--no-header]
 ```
 
 
@@ -11343,7 +14437,7 @@ De project-id of URL
 
 ### `--host`
 
-De API-hostnaam van het project
+Vervangen optie, niet meer gebruikt
 
 - Vereist een waarde
 
@@ -11361,14 +14455,14 @@ De naam van de externe toepassing
 
 ### `--format`
 
-De uitvoerindeling (&quot;table&quot;, &quot;csv&quot;, &quot;tsv&quot; of &quot;plain&quot;)
+De uitvoerindeling: table, csv, tsv of plain
 
 - Standaard: `table`
 - Vereist een waarde
 
-### `--columns`
+### `--columns`, `-c`
 
-Weer te geven kolommen (lijst met door komma&#39;s gescheiden waarden of meerdere waarden)
+Weer te geven kolommen. Als een lijst als één waarde wordt gegeven (bv. &quot;a,b,c&quot;) wordt gesplitst in komma&#39;s en/of witruimte.
 
 - Standaard: `[]`
 - Vereist een waarde
@@ -11383,13 +14477,6 @@ De tabelkoptekst niet uitvoeren
 ### `--help`, `-h`
 
 Dit Help-bericht weergeven
-
-- Standaard: `false`
-- Accepteert geen waarde
-
-### `--quiet`, `-q`
-
-Geen bericht uitvoeren
 
 - Standaard: `false`
 - Accepteert geen waarde
@@ -11410,14 +14497,42 @@ Deze toepassingsversie weergeven
 
 ### `--yes`, `-y`
 
-Antwoord &quot;ja&quot; op ja/nee-vragen interactie uitschakelen
+&quot;ja&quot; antwoorden op bevestigingsvragen; accepteert de standaardwaarde voor andere vragen; interactie uitschakelen
+
+- Standaard: `false`
+- Accepteert geen waarde
+
+### `--no-interaction`
+
+Geen interactieve vragen stellen; Accepteer standaardwaarden. Gelijk aan het gebruik van de omgevingsvariabele: &lt;comment>Magento_CLOUD_CLI_NO_INTERACTION=1&lt;/comment>
+
+- Standaard: `false`
+- Accepteert geen waarde
+
+### `--ansi`
+
+ANSI-uitvoer forceren
+
+- Standaard: `false`
+- Accepteert geen waarde
+
+### `--no-ansi`
+
+ANSI-uitvoer uitschakelen
 
 - Standaard: `false`
 - Accepteert geen waarde
 
 ### `--no`, `-n`
 
-Antwoord &quot;nee&quot; op ja/nee-vragen. interactie uitschakelen
+Antwoord &quot;nee&quot; op bevestigingsvragen; accepteert de standaardwaarde voor andere vragen; interactie uitschakelen
+
+- Standaard: `false`
+- Accepteert geen waarde
+
+### `--quiet`, `-q`
+
+Geen bericht uitvoeren
 
 - Standaard: `false`
 - Accepteert geen waarde
@@ -11428,7 +14543,7 @@ Antwoord &quot;nee&quot; op ja/nee-vragen. interactie uitschakelen
 SSH-tunnels openen naar de relaties van een app
 
 ```bash
-magento-cloud tunnel:open [-g|--gateway-ports] [-p|--project PROJECT] [--host HOST] [-e|--environment ENVIRONMENT] [-A|--app APP] [-i|--identity-file IDENTITY-FILE]
+magento-cloud tunnel:open [-g|--gateway-ports] [-p|--project PROJECT] [-e|--environment ENVIRONMENT] [-A|--app APP] [-i|--identity-file IDENTITY-FILE]
 ```
 
 ### `--gateway-ports`, `-g`
@@ -11446,7 +14561,7 @@ De project-id of URL
 
 ### `--host`
 
-De API-hostnaam van het project
+Vervangen optie, niet meer gebruikt
 
 - Vereist een waarde
 
@@ -11475,13 +14590,6 @@ Dit Help-bericht weergeven
 - Standaard: `false`
 - Accepteert geen waarde
 
-### `--quiet`, `-q`
-
-Geen bericht uitvoeren
-
-- Standaard: `false`
-- Accepteert geen waarde
-
 ### `--verbose`, `-v|-vv|-vvv`
 
 Verhoog de breedheid van berichten
@@ -11498,14 +14606,42 @@ Deze toepassingsversie weergeven
 
 ### `--yes`, `-y`
 
-Antwoord &quot;ja&quot; op ja/nee-vragen interactie uitschakelen
+&quot;ja&quot; antwoorden op bevestigingsvragen; accepteert de standaardwaarde voor andere vragen; interactie uitschakelen
+
+- Standaard: `false`
+- Accepteert geen waarde
+
+### `--no-interaction`
+
+Geen interactieve vragen stellen; Accepteer standaardwaarden. Gelijk aan het gebruik van de omgevingsvariabele: &lt;comment>Magento_CLOUD_CLI_NO_INTERACTION=1&lt;/comment>
+
+- Standaard: `false`
+- Accepteert geen waarde
+
+### `--ansi`
+
+ANSI-uitvoer forceren
+
+- Standaard: `false`
+- Accepteert geen waarde
+
+### `--no-ansi`
+
+ANSI-uitvoer uitschakelen
 
 - Standaard: `false`
 - Accepteert geen waarde
 
 ### `--no`, `-n`
 
-Antwoord &quot;nee&quot; op ja/nee-vragen. interactie uitschakelen
+Antwoord &quot;nee&quot; op bevestigingsvragen; accepteert de standaardwaarde voor andere vragen; interactie uitschakelen
+
+- Standaard: `false`
+- Accepteert geen waarde
+
+### `--quiet`, `-q`
+
+Geen bericht uitvoeren
 
 - Standaard: `false`
 - Accepteert geen waarde
@@ -11516,7 +14652,7 @@ Antwoord &quot;nee&quot; op ja/nee-vragen. interactie uitschakelen
 Eén SSH-tunnel openen voor een app-relatie
 
 ```bash
-magento-cloud tunnel:single [--port PORT] [-g|--gateway-ports] [-p|--project PROJECT] [--host HOST] [-e|--environment ENVIRONMENT] [-A|--app APP] [-r|--relationship RELATIONSHIP] [-i|--identity-file IDENTITY-FILE]
+magento-cloud tunnel:single [--port PORT] [-g|--gateway-ports] [-p|--project PROJECT] [-e|--environment ENVIRONMENT] [-A|--app APP] [-r|--relationship RELATIONSHIP] [-i|--identity-file IDENTITY-FILE]
 ```
 
 ### `--port`
@@ -11540,7 +14676,7 @@ De project-id of URL
 
 ### `--host`
 
-De API-hostnaam van het project
+Vervangen optie, niet meer gebruikt
 
 - Vereist een waarde
 
@@ -11575,13 +14711,6 @@ Dit Help-bericht weergeven
 - Standaard: `false`
 - Accepteert geen waarde
 
-### `--quiet`, `-q`
-
-Geen bericht uitvoeren
-
-- Standaard: `false`
-- Accepteert geen waarde
-
 ### `--verbose`, `-v|-vv|-vvv`
 
 Verhoog de breedheid van berichten
@@ -11598,14 +14727,42 @@ Deze toepassingsversie weergeven
 
 ### `--yes`, `-y`
 
-Antwoord &quot;ja&quot; op ja/nee-vragen interactie uitschakelen
+&quot;ja&quot; antwoorden op bevestigingsvragen; accepteert de standaardwaarde voor andere vragen; interactie uitschakelen
+
+- Standaard: `false`
+- Accepteert geen waarde
+
+### `--no-interaction`
+
+Geen interactieve vragen stellen; Accepteer standaardwaarden. Gelijk aan het gebruik van de omgevingsvariabele: &lt;comment>Magento_CLOUD_CLI_NO_INTERACTION=1&lt;/comment>
+
+- Standaard: `false`
+- Accepteert geen waarde
+
+### `--ansi`
+
+ANSI-uitvoer forceren
+
+- Standaard: `false`
+- Accepteert geen waarde
+
+### `--no-ansi`
+
+ANSI-uitvoer uitschakelen
 
 - Standaard: `false`
 - Accepteert geen waarde
 
 ### `--no`, `-n`
 
-Antwoord &quot;nee&quot; op ja/nee-vragen. interactie uitschakelen
+Antwoord &quot;nee&quot; op bevestigingsvragen; accepteert de standaardwaarde voor andere vragen; interactie uitschakelen
+
+- Standaard: `false`
+- Accepteert geen waarde
+
+### `--quiet`, `-q`
+
+Geen bericht uitvoeren
 
 - Standaard: `false`
 - Accepteert geen waarde
@@ -11616,7 +14773,7 @@ Antwoord &quot;nee&quot; op ja/nee-vragen. interactie uitschakelen
 Een gebruiker toevoegen aan het project
 
 ```bash
-magento-cloud user:add [-r|--role ROLE] [-p|--project PROJECT] [--host HOST] [-W|--no-wait] [--wait] [--] [<email>]
+magento-cloud user:add [-r|--role ROLE] [-p|--project PROJECT] [-W|--no-wait] [--wait] [--] [<email>]
 ```
 
 
@@ -11640,7 +14797,7 @@ De project-id of URL
 
 ### `--host`
 
-De API-hostnaam van het project
+Vervangen optie, niet meer gebruikt
 
 - Vereist een waarde
 
@@ -11665,13 +14822,6 @@ Dit Help-bericht weergeven
 - Standaard: `false`
 - Accepteert geen waarde
 
-### `--quiet`, `-q`
-
-Geen bericht uitvoeren
-
-- Standaard: `false`
-- Accepteert geen waarde
-
 ### `--verbose`, `-v|-vv|-vvv`
 
 Verhoog de breedheid van berichten
@@ -11688,14 +14838,42 @@ Deze toepassingsversie weergeven
 
 ### `--yes`, `-y`
 
-Antwoord &quot;ja&quot; op ja/nee-vragen interactie uitschakelen
+&quot;ja&quot; antwoorden op bevestigingsvragen; accepteert de standaardwaarde voor andere vragen; interactie uitschakelen
+
+- Standaard: `false`
+- Accepteert geen waarde
+
+### `--no-interaction`
+
+Geen interactieve vragen stellen; Accepteer standaardwaarden. Gelijk aan het gebruik van de omgevingsvariabele: &lt;comment>Magento_CLOUD_CLI_NO_INTERACTION=1&lt;/comment>
+
+- Standaard: `false`
+- Accepteert geen waarde
+
+### `--ansi`
+
+ANSI-uitvoer forceren
+
+- Standaard: `false`
+- Accepteert geen waarde
+
+### `--no-ansi`
+
+ANSI-uitvoer uitschakelen
 
 - Standaard: `false`
 - Accepteert geen waarde
 
 ### `--no`, `-n`
 
-Antwoord &quot;nee&quot; op ja/nee-vragen. interactie uitschakelen
+Antwoord &quot;nee&quot; op bevestigingsvragen; accepteert de standaardwaarde voor andere vragen; interactie uitschakelen
+
+- Standaard: `false`
+- Accepteert geen waarde
+
+### `--quiet`, `-q`
+
+Geen bericht uitvoeren
 
 - Standaard: `false`
 - Accepteert geen waarde
@@ -11706,7 +14884,7 @@ Antwoord &quot;nee&quot; op ja/nee-vragen. interactie uitschakelen
 Een gebruiker verwijderen uit het project
 
 ```bash
-magento-cloud user:delete [-p|--project PROJECT] [--host HOST] [-W|--no-wait] [--wait] [--] <email>
+magento-cloud user:delete [-p|--project PROJECT] [-W|--no-wait] [--wait] [--] <email>
 ```
 
 
@@ -11724,7 +14902,7 @@ De project-id of URL
 
 ### `--host`
 
-De API-hostnaam van het project
+Vervangen optie, niet meer gebruikt
 
 - Vereist een waarde
 
@@ -11749,13 +14927,6 @@ Dit Help-bericht weergeven
 - Standaard: `false`
 - Accepteert geen waarde
 
-### `--quiet`, `-q`
-
-Geen bericht uitvoeren
-
-- Standaard: `false`
-- Accepteert geen waarde
-
 ### `--verbose`, `-v|-vv|-vvv`
 
 Verhoog de breedheid van berichten
@@ -11772,14 +14943,42 @@ Deze toepassingsversie weergeven
 
 ### `--yes`, `-y`
 
-Antwoord &quot;ja&quot; op ja/nee-vragen interactie uitschakelen
+&quot;ja&quot; antwoorden op bevestigingsvragen; accepteert de standaardwaarde voor andere vragen; interactie uitschakelen
+
+- Standaard: `false`
+- Accepteert geen waarde
+
+### `--no-interaction`
+
+Geen interactieve vragen stellen; Accepteer standaardwaarden. Gelijk aan het gebruik van de omgevingsvariabele: &lt;comment>Magento_CLOUD_CLI_NO_INTERACTION=1&lt;/comment>
+
+- Standaard: `false`
+- Accepteert geen waarde
+
+### `--ansi`
+
+ANSI-uitvoer forceren
+
+- Standaard: `false`
+- Accepteert geen waarde
+
+### `--no-ansi`
+
+ANSI-uitvoer uitschakelen
 
 - Standaard: `false`
 - Accepteert geen waarde
 
 ### `--no`, `-n`
 
-Antwoord &quot;nee&quot; op ja/nee-vragen. interactie uitschakelen
+Antwoord &quot;nee&quot; op bevestigingsvragen; accepteert de standaardwaarde voor andere vragen; interactie uitschakelen
+
+- Standaard: `false`
+- Accepteert geen waarde
+
+### `--quiet`, `-q`
+
+Geen bericht uitvoeren
 
 - Standaard: `false`
 - Accepteert geen waarde
@@ -11790,7 +14989,7 @@ Antwoord &quot;nee&quot; op ja/nee-vragen. interactie uitschakelen
 Rollen van gebruikers weergeven
 
 ```bash
-magento-cloud user:get [-l|--level LEVEL] [--pipe] [-p|--project PROJECT] [--host HOST] [-e|--environment ENVIRONMENT] [-W|--no-wait] [--wait] [-r|--role ROLE] [--] [<email>]
+magento-cloud user:get [-l|--level LEVEL] [--pipe] [-p|--project PROJECT] [-e|--environment ENVIRONMENT] [-W|--no-wait] [--wait] [-r|--role ROLE] [--] [<email>]
 ```
 
 
@@ -11825,7 +15024,7 @@ De project-id of URL
 
 ### `--host`
 
-De API-hostnaam van het project
+Vervangen optie, niet meer gebruikt
 
 - Vereist een waarde
 
@@ -11862,13 +15061,6 @@ Dit Help-bericht weergeven
 - Standaard: `false`
 - Accepteert geen waarde
 
-### `--quiet`, `-q`
-
-Geen bericht uitvoeren
-
-- Standaard: `false`
-- Accepteert geen waarde
-
 ### `--verbose`, `-v|-vv|-vvv`
 
 Verhoog de breedheid van berichten
@@ -11885,14 +15077,42 @@ Deze toepassingsversie weergeven
 
 ### `--yes`, `-y`
 
-Antwoord &quot;ja&quot; op ja/nee-vragen interactie uitschakelen
+&quot;ja&quot; antwoorden op bevestigingsvragen; accepteert de standaardwaarde voor andere vragen; interactie uitschakelen
+
+- Standaard: `false`
+- Accepteert geen waarde
+
+### `--no-interaction`
+
+Geen interactieve vragen stellen; Accepteer standaardwaarden. Gelijk aan het gebruik van de omgevingsvariabele: &lt;comment>Magento_CLOUD_CLI_NO_INTERACTION=1&lt;/comment>
+
+- Standaard: `false`
+- Accepteert geen waarde
+
+### `--ansi`
+
+ANSI-uitvoer forceren
+
+- Standaard: `false`
+- Accepteert geen waarde
+
+### `--no-ansi`
+
+ANSI-uitvoer uitschakelen
 
 - Standaard: `false`
 - Accepteert geen waarde
 
 ### `--no`, `-n`
 
-Antwoord &quot;nee&quot; op ja/nee-vragen. interactie uitschakelen
+Antwoord &quot;nee&quot; op bevestigingsvragen; accepteert de standaardwaarde voor andere vragen; interactie uitschakelen
+
+- Standaard: `false`
+- Accepteert geen waarde
+
+### `--quiet`, `-q`
+
+Geen bericht uitvoeren
 
 - Standaard: `false`
 - Accepteert geen waarde
@@ -11903,7 +15123,7 @@ Antwoord &quot;nee&quot; op ja/nee-vragen. interactie uitschakelen
 Projectgebruikers weergeven
 
 ```bash
-magento-cloud users [--format FORMAT] [--columns COLUMNS] [--no-header] [-p|--project PROJECT] [--host HOST]
+magento-cloud users [--format FORMAT] [-c|--columns COLUMNS] [--no-header] [-p|--project PROJECT]
 ```
 
 
@@ -11913,14 +15133,14 @@ users
 
 ### `--format`
 
-De uitvoerindeling (&quot;table&quot;, &quot;csv&quot;, &quot;tsv&quot; of &quot;plain&quot;)
+De uitvoerindeling: table, csv, tsv of plain
 
 - Standaard: `table`
 - Vereist een waarde
 
-### `--columns`
+### `--columns`, `-c`
 
-Weer te geven kolommen (lijst met door komma&#39;s gescheiden waarden of meerdere waarden)
+Weer te geven kolommen. Beschikbare kolommen: email, id, name, role. Als een lijst als één waarde wordt gegeven (bv. &quot;a,b,c&quot;) wordt gesplitst in komma&#39;s en/of witruimte.
 
 - Standaard: `[]`
 - Vereist een waarde
@@ -11940,20 +15160,13 @@ De project-id of URL
 
 ### `--host`
 
-De API-hostnaam van het project
+Vervangen optie, niet meer gebruikt
 
 - Vereist een waarde
 
 ### `--help`, `-h`
 
 Dit Help-bericht weergeven
-
-- Standaard: `false`
-- Accepteert geen waarde
-
-### `--quiet`, `-q`
-
-Geen bericht uitvoeren
 
 - Standaard: `false`
 - Accepteert geen waarde
@@ -11974,14 +15187,42 @@ Deze toepassingsversie weergeven
 
 ### `--yes`, `-y`
 
-Antwoord &quot;ja&quot; op ja/nee-vragen interactie uitschakelen
+&quot;ja&quot; antwoorden op bevestigingsvragen; accepteert de standaardwaarde voor andere vragen; interactie uitschakelen
+
+- Standaard: `false`
+- Accepteert geen waarde
+
+### `--no-interaction`
+
+Geen interactieve vragen stellen; Accepteer standaardwaarden. Gelijk aan het gebruik van de omgevingsvariabele: &lt;comment>Magento_CLOUD_CLI_NO_INTERACTION=1&lt;/comment>
+
+- Standaard: `false`
+- Accepteert geen waarde
+
+### `--ansi`
+
+ANSI-uitvoer forceren
+
+- Standaard: `false`
+- Accepteert geen waarde
+
+### `--no-ansi`
+
+ANSI-uitvoer uitschakelen
 
 - Standaard: `false`
 - Accepteert geen waarde
 
 ### `--no`, `-n`
 
-Antwoord &quot;nee&quot; op ja/nee-vragen. interactie uitschakelen
+Antwoord &quot;nee&quot; op bevestigingsvragen; accepteert de standaardwaarde voor andere vragen; interactie uitschakelen
+
+- Standaard: `false`
+- Accepteert geen waarde
+
+### `--quiet`, `-q`
+
+Geen bericht uitvoeren
 
 - Standaard: `false`
 - Accepteert geen waarde
@@ -11992,7 +15233,7 @@ Antwoord &quot;nee&quot; op ja/nee-vragen. interactie uitschakelen
 Gebruikersrol(s) voor een project bijwerken
 
 ```bash
-magento-cloud user:update [-r|--role ROLE] [-p|--project PROJECT] [--host HOST] [-W|--no-wait] [--wait] [--] [<email>]
+magento-cloud user:update [-r|--role ROLE] [-p|--project PROJECT] [-W|--no-wait] [--wait] [--] [<email>]
 ```
 
 
@@ -12016,7 +15257,7 @@ De project-id of URL
 
 ### `--host`
 
-De API-hostnaam van het project
+Vervangen optie, niet meer gebruikt
 
 - Vereist een waarde
 
@@ -12041,13 +15282,6 @@ Dit Help-bericht weergeven
 - Standaard: `false`
 - Accepteert geen waarde
 
-### `--quiet`, `-q`
-
-Geen bericht uitvoeren
-
-- Standaard: `false`
-- Accepteert geen waarde
-
 ### `--verbose`, `-v|-vv|-vvv`
 
 Verhoog de breedheid van berichten
@@ -12064,14 +15298,42 @@ Deze toepassingsversie weergeven
 
 ### `--yes`, `-y`
 
-Antwoord &quot;ja&quot; op ja/nee-vragen interactie uitschakelen
+&quot;ja&quot; antwoorden op bevestigingsvragen; accepteert de standaardwaarde voor andere vragen; interactie uitschakelen
+
+- Standaard: `false`
+- Accepteert geen waarde
+
+### `--no-interaction`
+
+Geen interactieve vragen stellen; Accepteer standaardwaarden. Gelijk aan het gebruik van de omgevingsvariabele: &lt;comment>Magento_CLOUD_CLI_NO_INTERACTION=1&lt;/comment>
+
+- Standaard: `false`
+- Accepteert geen waarde
+
+### `--ansi`
+
+ANSI-uitvoer forceren
+
+- Standaard: `false`
+- Accepteert geen waarde
+
+### `--no-ansi`
+
+ANSI-uitvoer uitschakelen
 
 - Standaard: `false`
 - Accepteert geen waarde
 
 ### `--no`, `-n`
 
-Antwoord &quot;nee&quot; op ja/nee-vragen. interactie uitschakelen
+Antwoord &quot;nee&quot; op bevestigingsvragen; accepteert de standaardwaarde voor andere vragen; interactie uitschakelen
+
+- Standaard: `false`
+- Accepteert geen waarde
+
+### `--quiet`, `-q`
+
+Geen bericht uitvoeren
 
 - Standaard: `false`
 - Accepteert geen waarde
@@ -12082,7 +15344,7 @@ Antwoord &quot;nee&quot; op ja/nee-vragen. interactie uitschakelen
 Een variabele maken
 
 ```bash
-magento-cloud variable:create [-l|--level LEVEL] [--name NAME] [--value VALUE] [--json JSON] [--sensitive SENSITIVE] [--prefix PREFIX] [--enabled ENABLED] [--inheritable INHERITABLE] [--visible-build VISIBLE-BUILD] [--visible-runtime VISIBLE-RUNTIME] [-p|--project PROJECT] [--host HOST] [-e|--environment ENVIRONMENT] [-W|--no-wait] [--wait] [--] [<name>]
+magento-cloud variable:create [-l|--level LEVEL] [--name NAME] [--value VALUE] [--json JSON] [--sensitive SENSITIVE] [--prefix PREFIX] [--enabled ENABLED] [--inheritable INHERITABLE] [--visible-build VISIBLE-BUILD] [--visible-runtime VISIBLE-RUNTIME] [-p|--project PROJECT] [-e|--environment ENVIRONMENT] [-W|--no-wait] [--wait] [--] [<name>]
 ```
 
 
@@ -12165,7 +15427,7 @@ De project-id of URL
 
 ### `--host`
 
-De API-hostnaam van het project
+Vervangen optie, niet meer gebruikt
 
 - Vereist een waarde
 
@@ -12196,13 +15458,6 @@ Dit Help-bericht weergeven
 - Standaard: `false`
 - Accepteert geen waarde
 
-### `--quiet`, `-q`
-
-Geen bericht uitvoeren
-
-- Standaard: `false`
-- Accepteert geen waarde
-
 ### `--verbose`, `-v|-vv|-vvv`
 
 Verhoog de breedheid van berichten
@@ -12219,14 +15474,42 @@ Deze toepassingsversie weergeven
 
 ### `--yes`, `-y`
 
-Antwoord &quot;ja&quot; op ja/nee-vragen interactie uitschakelen
+&quot;ja&quot; antwoorden op bevestigingsvragen; accepteert de standaardwaarde voor andere vragen; interactie uitschakelen
+
+- Standaard: `false`
+- Accepteert geen waarde
+
+### `--no-interaction`
+
+Geen interactieve vragen stellen; Accepteer standaardwaarden. Gelijk aan het gebruik van de omgevingsvariabele: &lt;comment>Magento_CLOUD_CLI_NO_INTERACTION=1&lt;/comment>
+
+- Standaard: `false`
+- Accepteert geen waarde
+
+### `--ansi`
+
+ANSI-uitvoer forceren
+
+- Standaard: `false`
+- Accepteert geen waarde
+
+### `--no-ansi`
+
+ANSI-uitvoer uitschakelen
 
 - Standaard: `false`
 - Accepteert geen waarde
 
 ### `--no`, `-n`
 
-Antwoord &quot;nee&quot; op ja/nee-vragen. interactie uitschakelen
+Antwoord &quot;nee&quot; op bevestigingsvragen; accepteert de standaardwaarde voor andere vragen; interactie uitschakelen
+
+- Standaard: `false`
+- Accepteert geen waarde
+
+### `--quiet`, `-q`
+
+Geen bericht uitvoeren
 
 - Standaard: `false`
 - Accepteert geen waarde
@@ -12237,7 +15520,7 @@ Antwoord &quot;nee&quot; op ja/nee-vragen. interactie uitschakelen
 Een variabele verwijderen
 
 ```bash
-magento-cloud variable:delete [-l|--level LEVEL] [-p|--project PROJECT] [--host HOST] [-e|--environment ENVIRONMENT] [-W|--no-wait] [--wait] [--] <name>
+magento-cloud variable:delete [-l|--level LEVEL] [-p|--project PROJECT] [-e|--environment ENVIRONMENT] [-W|--no-wait] [--wait] [--] <name>
 ```
 
 
@@ -12261,7 +15544,7 @@ De project-id of URL
 
 ### `--host`
 
-De API-hostnaam van het project
+Vervangen optie, niet meer gebruikt
 
 - Vereist een waarde
 
@@ -12292,13 +15575,6 @@ Dit Help-bericht weergeven
 - Standaard: `false`
 - Accepteert geen waarde
 
-### `--quiet`, `-q`
-
-Geen bericht uitvoeren
-
-- Standaard: `false`
-- Accepteert geen waarde
-
 ### `--verbose`, `-v|-vv|-vvv`
 
 Verhoog de breedheid van berichten
@@ -12315,14 +15591,42 @@ Deze toepassingsversie weergeven
 
 ### `--yes`, `-y`
 
-Antwoord &quot;ja&quot; op ja/nee-vragen interactie uitschakelen
+&quot;ja&quot; antwoorden op bevestigingsvragen; accepteert de standaardwaarde voor andere vragen; interactie uitschakelen
+
+- Standaard: `false`
+- Accepteert geen waarde
+
+### `--no-interaction`
+
+Geen interactieve vragen stellen; Accepteer standaardwaarden. Gelijk aan het gebruik van de omgevingsvariabele: &lt;comment>Magento_CLOUD_CLI_NO_INTERACTION=1&lt;/comment>
+
+- Standaard: `false`
+- Accepteert geen waarde
+
+### `--ansi`
+
+ANSI-uitvoer forceren
+
+- Standaard: `false`
+- Accepteert geen waarde
+
+### `--no-ansi`
+
+ANSI-uitvoer uitschakelen
 
 - Standaard: `false`
 - Accepteert geen waarde
 
 ### `--no`, `-n`
 
-Antwoord &quot;nee&quot; op ja/nee-vragen. interactie uitschakelen
+Antwoord &quot;nee&quot; op bevestigingsvragen; accepteert de standaardwaarde voor andere vragen; interactie uitschakelen
+
+- Standaard: `false`
+- Accepteert geen waarde
+
+### `--quiet`, `-q`
+
+Geen bericht uitvoeren
 
 - Standaard: `false`
 - Accepteert geen waarde
@@ -12333,7 +15637,7 @@ Antwoord &quot;nee&quot; op ja/nee-vragen. interactie uitschakelen
 &lt;fg white=&quot;&quot; bg=&quot;red&quot;>[ VEROUDERD ]&lt;/> Een ingeschakelde variabele op milieuniveau uitschakelen
 
 ```bash
-magento-cloud variable:disable [-p|--project PROJECT] [--host HOST] [-e|--environment ENVIRONMENT] [-W|--no-wait] [--wait] [--] <name>
+magento-cloud variable:disable [-p|--project PROJECT] [-e|--environment ENVIRONMENT] [-W|--no-wait] [--wait] [--] <name>
 ```
 
 
@@ -12351,7 +15655,7 @@ De project-id of URL
 
 ### `--host`
 
-De API-hostnaam van het project
+Vervangen optie, niet meer gebruikt
 
 - Vereist een waarde
 
@@ -12382,13 +15686,6 @@ Dit Help-bericht weergeven
 - Standaard: `false`
 - Accepteert geen waarde
 
-### `--quiet`, `-q`
-
-Geen bericht uitvoeren
-
-- Standaard: `false`
-- Accepteert geen waarde
-
 ### `--verbose`, `-v|-vv|-vvv`
 
 Verhoog de breedheid van berichten
@@ -12405,14 +15702,42 @@ Deze toepassingsversie weergeven
 
 ### `--yes`, `-y`
 
-Antwoord &quot;ja&quot; op ja/nee-vragen interactie uitschakelen
+&quot;ja&quot; antwoorden op bevestigingsvragen; accepteert de standaardwaarde voor andere vragen; interactie uitschakelen
+
+- Standaard: `false`
+- Accepteert geen waarde
+
+### `--no-interaction`
+
+Geen interactieve vragen stellen; Accepteer standaardwaarden. Gelijk aan het gebruik van de omgevingsvariabele: &lt;comment>Magento_CLOUD_CLI_NO_INTERACTION=1&lt;/comment>
+
+- Standaard: `false`
+- Accepteert geen waarde
+
+### `--ansi`
+
+ANSI-uitvoer forceren
+
+- Standaard: `false`
+- Accepteert geen waarde
+
+### `--no-ansi`
+
+ANSI-uitvoer uitschakelen
 
 - Standaard: `false`
 - Accepteert geen waarde
 
 ### `--no`, `-n`
 
-Antwoord &quot;nee&quot; op ja/nee-vragen. interactie uitschakelen
+Antwoord &quot;nee&quot; op bevestigingsvragen; accepteert de standaardwaarde voor andere vragen; interactie uitschakelen
+
+- Standaard: `false`
+- Accepteert geen waarde
+
+### `--quiet`, `-q`
+
+Geen bericht uitvoeren
 
 - Standaard: `false`
 - Accepteert geen waarde
@@ -12423,7 +15748,7 @@ Antwoord &quot;nee&quot; op ja/nee-vragen. interactie uitschakelen
 &lt;fg white=&quot;&quot; bg=&quot;red&quot;>[ VEROUDERD ]&lt;/> Een uitgeschakelde variabele op milieuniveau inschakelen
 
 ```bash
-magento-cloud variable:enable [-p|--project PROJECT] [--host HOST] [-e|--environment ENVIRONMENT] [-W|--no-wait] [--wait] [--] <name>
+magento-cloud variable:enable [-p|--project PROJECT] [-e|--environment ENVIRONMENT] [-W|--no-wait] [--wait] [--] <name>
 ```
 
 
@@ -12441,7 +15766,7 @@ De project-id of URL
 
 ### `--host`
 
-De API-hostnaam van het project
+Vervangen optie, niet meer gebruikt
 
 - Vereist een waarde
 
@@ -12472,13 +15797,6 @@ Dit Help-bericht weergeven
 - Standaard: `false`
 - Accepteert geen waarde
 
-### `--quiet`, `-q`
-
-Geen bericht uitvoeren
-
-- Standaard: `false`
-- Accepteert geen waarde
-
 ### `--verbose`, `-v|-vv|-vvv`
 
 Verhoog de breedheid van berichten
@@ -12495,14 +15813,42 @@ Deze toepassingsversie weergeven
 
 ### `--yes`, `-y`
 
-Antwoord &quot;ja&quot; op ja/nee-vragen interactie uitschakelen
+&quot;ja&quot; antwoorden op bevestigingsvragen; accepteert de standaardwaarde voor andere vragen; interactie uitschakelen
+
+- Standaard: `false`
+- Accepteert geen waarde
+
+### `--no-interaction`
+
+Geen interactieve vragen stellen; Accepteer standaardwaarden. Gelijk aan het gebruik van de omgevingsvariabele: &lt;comment>Magento_CLOUD_CLI_NO_INTERACTION=1&lt;/comment>
+
+- Standaard: `false`
+- Accepteert geen waarde
+
+### `--ansi`
+
+ANSI-uitvoer forceren
+
+- Standaard: `false`
+- Accepteert geen waarde
+
+### `--no-ansi`
+
+ANSI-uitvoer uitschakelen
 
 - Standaard: `false`
 - Accepteert geen waarde
 
 ### `--no`, `-n`
 
-Antwoord &quot;nee&quot; op ja/nee-vragen. interactie uitschakelen
+Antwoord &quot;nee&quot; op bevestigingsvragen; accepteert de standaardwaarde voor andere vragen; interactie uitschakelen
+
+- Standaard: `false`
+- Accepteert geen waarde
+
+### `--quiet`, `-q`
+
+Geen bericht uitvoeren
 
 - Standaard: `false`
 - Accepteert geen waarde
@@ -12513,7 +15859,7 @@ Antwoord &quot;nee&quot; op ja/nee-vragen. interactie uitschakelen
 Een variabele weergeven
 
 ```bash
-magento-cloud vget [-P|--property PROPERTY] [-l|--level LEVEL] [--format FORMAT] [--columns COLUMNS] [--no-header] [-p|--project PROJECT] [--host HOST] [-e|--environment ENVIRONMENT] [--pipe] [--] [<name>]
+magento-cloud vget [-P|--property PROPERTY] [-l|--level LEVEL] [--format FORMAT] [-c|--columns COLUMNS] [--no-header] [-p|--project PROJECT] [-e|--environment ENVIRONMENT] [--pipe] [--] [<name>]
 ```
 
 
@@ -12541,14 +15887,14 @@ Variabel niveau (&#39;project&#39;, &#39;milieu&#39;, &#39;p&#39; of &#39;e&#39;
 
 ### `--format`
 
-De uitvoerindeling (&quot;table&quot;, &quot;csv&quot;, &quot;tsv&quot; of &quot;plain&quot;)
+De uitvoerindeling: table, csv, tsv of plain
 
 - Standaard: `table`
 - Vereist een waarde
 
-### `--columns`
+### `--columns`, `-c`
 
-Weer te geven kolommen (lijst met door komma&#39;s gescheiden waarden of meerdere waarden)
+Weer te geven kolommen. Als een lijst als één waarde wordt gegeven (bv. &quot;a,b,c&quot;) wordt gesplitst in komma&#39;s en/of witruimte.
 
 - Standaard: `[]`
 - Vereist een waarde
@@ -12568,7 +15914,7 @@ De project-id of URL
 
 ### `--host`
 
-De API-hostnaam van het project
+Vervangen optie, niet meer gebruikt
 
 - Vereist een waarde
 
@@ -12592,13 +15938,6 @@ Dit Help-bericht weergeven
 - Standaard: `false`
 - Accepteert geen waarde
 
-### `--quiet`, `-q`
-
-Geen bericht uitvoeren
-
-- Standaard: `false`
-- Accepteert geen waarde
-
 ### `--verbose`, `-v|-vv|-vvv`
 
 Verhoog de breedheid van berichten
@@ -12615,14 +15954,42 @@ Deze toepassingsversie weergeven
 
 ### `--yes`, `-y`
 
-Antwoord &quot;ja&quot; op ja/nee-vragen interactie uitschakelen
+&quot;ja&quot; antwoorden op bevestigingsvragen; accepteert de standaardwaarde voor andere vragen; interactie uitschakelen
+
+- Standaard: `false`
+- Accepteert geen waarde
+
+### `--no-interaction`
+
+Geen interactieve vragen stellen; Accepteer standaardwaarden. Gelijk aan het gebruik van de omgevingsvariabele: &lt;comment>Magento_CLOUD_CLI_NO_INTERACTION=1&lt;/comment>
+
+- Standaard: `false`
+- Accepteert geen waarde
+
+### `--ansi`
+
+ANSI-uitvoer forceren
+
+- Standaard: `false`
+- Accepteert geen waarde
+
+### `--no-ansi`
+
+ANSI-uitvoer uitschakelen
 
 - Standaard: `false`
 - Accepteert geen waarde
 
 ### `--no`, `-n`
 
-Antwoord &quot;nee&quot; op ja/nee-vragen. interactie uitschakelen
+Antwoord &quot;nee&quot; op bevestigingsvragen; accepteert de standaardwaarde voor andere vragen; interactie uitschakelen
+
+- Standaard: `false`
+- Accepteert geen waarde
+
+### `--quiet`, `-q`
+
+Geen bericht uitvoeren
 
 - Standaard: `false`
 - Accepteert geen waarde
@@ -12633,7 +16000,7 @@ Antwoord &quot;nee&quot; op ja/nee-vragen. interactie uitschakelen
 Lijstvariabelen
 
 ```bash
-magento-cloud variable:list [-l|--level LEVEL] [--format FORMAT] [--columns COLUMNS] [--no-header] [-p|--project PROJECT] [--host HOST] [-e|--environment ENVIRONMENT]
+magento-cloud variable:list [-l|--level LEVEL] [--format FORMAT] [-c|--columns COLUMNS] [--no-header] [-p|--project PROJECT] [-e|--environment ENVIRONMENT]
 ```
 
 
@@ -12654,14 +16021,14 @@ Variabel niveau (&#39;project&#39;, &#39;milieu&#39;, &#39;p&#39; of &#39;e&#39;
 
 ### `--format`
 
-De uitvoerindeling (&quot;table&quot;, &quot;csv&quot;, &quot;tsv&quot; of &quot;plain&quot;)
+De uitvoerindeling: table, csv, tsv of plain
 
 - Standaard: `table`
 - Vereist een waarde
 
-### `--columns`
+### `--columns`, `-c`
 
-Weer te geven kolommen (lijst met door komma&#39;s gescheiden waarden of meerdere waarden)
+Weer te geven kolommen. Beschikbare kolommen: is_enabled, niveau, naam, waarde. Als een lijst als één waarde wordt gegeven (bv. &quot;a,b,c&quot;) wordt gesplitst in komma&#39;s en/of witruimte.
 
 - Standaard: `[]`
 - Vereist een waarde
@@ -12681,7 +16048,7 @@ De project-id of URL
 
 ### `--host`
 
-De API-hostnaam van het project
+Vervangen optie, niet meer gebruikt
 
 - Vereist een waarde
 
@@ -12694,13 +16061,6 @@ De milieu-id
 ### `--help`, `-h`
 
 Dit Help-bericht weergeven
-
-- Standaard: `false`
-- Accepteert geen waarde
-
-### `--quiet`, `-q`
-
-Geen bericht uitvoeren
 
 - Standaard: `false`
 - Accepteert geen waarde
@@ -12721,14 +16081,42 @@ Deze toepassingsversie weergeven
 
 ### `--yes`, `-y`
 
-Antwoord &quot;ja&quot; op ja/nee-vragen interactie uitschakelen
+&quot;ja&quot; antwoorden op bevestigingsvragen; accepteert de standaardwaarde voor andere vragen; interactie uitschakelen
+
+- Standaard: `false`
+- Accepteert geen waarde
+
+### `--no-interaction`
+
+Geen interactieve vragen stellen; Accepteer standaardwaarden. Gelijk aan het gebruik van de omgevingsvariabele: &lt;comment>Magento_CLOUD_CLI_NO_INTERACTION=1&lt;/comment>
+
+- Standaard: `false`
+- Accepteert geen waarde
+
+### `--ansi`
+
+ANSI-uitvoer forceren
+
+- Standaard: `false`
+- Accepteert geen waarde
+
+### `--no-ansi`
+
+ANSI-uitvoer uitschakelen
 
 - Standaard: `false`
 - Accepteert geen waarde
 
 ### `--no`, `-n`
 
-Antwoord &quot;nee&quot; op ja/nee-vragen. interactie uitschakelen
+Antwoord &quot;nee&quot; op bevestigingsvragen; accepteert de standaardwaarde voor andere vragen; interactie uitschakelen
+
+- Standaard: `false`
+- Accepteert geen waarde
+
+### `--quiet`, `-q`
+
+Geen bericht uitvoeren
 
 - Standaard: `false`
 - Accepteert geen waarde
@@ -12739,7 +16127,7 @@ Antwoord &quot;nee&quot; op ja/nee-vragen. interactie uitschakelen
 &lt;fg white=&quot;&quot; bg=&quot;red&quot;>[ VEROUDERD ]&lt;/> Een variabele instellen voor een omgeving
 
 ```bash
-magento-cloud vset [--json] [--disabled] [-p|--project PROJECT] [--host HOST] [-e|--environment ENVIRONMENT] [-W|--no-wait] [--wait] [--] <name> <value>
+magento-cloud vset [--json] [--disabled] [-p|--project PROJECT] [-e|--environment ENVIRONMENT] [-W|--no-wait] [--wait] [--] <name> <value>
 ```
 
 
@@ -12782,7 +16170,7 @@ De project-id of URL
 
 ### `--host`
 
-De API-hostnaam van het project
+Vervangen optie, niet meer gebruikt
 
 - Vereist een waarde
 
@@ -12813,13 +16201,6 @@ Dit Help-bericht weergeven
 - Standaard: `false`
 - Accepteert geen waarde
 
-### `--quiet`, `-q`
-
-Geen bericht uitvoeren
-
-- Standaard: `false`
-- Accepteert geen waarde
-
 ### `--verbose`, `-v|-vv|-vvv`
 
 Verhoog de breedheid van berichten
@@ -12836,14 +16217,42 @@ Deze toepassingsversie weergeven
 
 ### `--yes`, `-y`
 
-Antwoord &quot;ja&quot; op ja/nee-vragen interactie uitschakelen
+&quot;ja&quot; antwoorden op bevestigingsvragen; accepteert de standaardwaarde voor andere vragen; interactie uitschakelen
+
+- Standaard: `false`
+- Accepteert geen waarde
+
+### `--no-interaction`
+
+Geen interactieve vragen stellen; Accepteer standaardwaarden. Gelijk aan het gebruik van de omgevingsvariabele: &lt;comment>Magento_CLOUD_CLI_NO_INTERACTION=1&lt;/comment>
+
+- Standaard: `false`
+- Accepteert geen waarde
+
+### `--ansi`
+
+ANSI-uitvoer forceren
+
+- Standaard: `false`
+- Accepteert geen waarde
+
+### `--no-ansi`
+
+ANSI-uitvoer uitschakelen
 
 - Standaard: `false`
 - Accepteert geen waarde
 
 ### `--no`, `-n`
 
-Antwoord &quot;nee&quot; op ja/nee-vragen. interactie uitschakelen
+Antwoord &quot;nee&quot; op bevestigingsvragen; accepteert de standaardwaarde voor andere vragen; interactie uitschakelen
+
+- Standaard: `false`
+- Accepteert geen waarde
+
+### `--quiet`, `-q`
+
+Geen bericht uitvoeren
 
 - Standaard: `false`
 - Accepteert geen waarde
@@ -12854,7 +16263,7 @@ Antwoord &quot;nee&quot; op ja/nee-vragen. interactie uitschakelen
 Een variabele bijwerken
 
 ```bash
-magento-cloud variable:update [-l|--level LEVEL] [--value VALUE] [--json JSON] [--sensitive SENSITIVE] [--enabled ENABLED] [--inheritable INHERITABLE] [--visible-build VISIBLE-BUILD] [--visible-runtime VISIBLE-RUNTIME] [-p|--project PROJECT] [--host HOST] [-e|--environment ENVIRONMENT] [-W|--no-wait] [--wait] [--] <name>
+magento-cloud variable:update [-l|--level LEVEL] [--value VALUE] [--json JSON] [--sensitive SENSITIVE] [--enabled ENABLED] [--inheritable INHERITABLE] [--visible-build VISIBLE-BUILD] [--visible-runtime VISIBLE-RUNTIME] [-p|--project PROJECT] [-e|--environment ENVIRONMENT] [-W|--no-wait] [--wait] [--] <name>
 ```
 
 
@@ -12925,7 +16334,7 @@ De project-id of URL
 
 ### `--host`
 
-De API-hostnaam van het project
+Vervangen optie, niet meer gebruikt
 
 - Vereist een waarde
 
@@ -12956,9 +16365,118 @@ Dit Help-bericht weergeven
 - Standaard: `false`
 - Accepteert geen waarde
 
+### `--verbose`, `-v|-vv|-vvv`
+
+Verhoog de breedheid van berichten
+
+- Standaard: `false`
+- Accepteert geen waarde
+
+### `--version`, `-V`
+
+Deze toepassingsversie weergeven
+
+- Standaard: `false`
+- Accepteert geen waarde
+
+### `--yes`, `-y`
+
+&quot;ja&quot; antwoorden op bevestigingsvragen; accepteert de standaardwaarde voor andere vragen; interactie uitschakelen
+
+- Standaard: `false`
+- Accepteert geen waarde
+
+### `--no-interaction`
+
+Geen interactieve vragen stellen; Accepteer standaardwaarden. Gelijk aan het gebruik van de omgevingsvariabele: &lt;comment>Magento_CLOUD_CLI_NO_INTERACTION=1&lt;/comment>
+
+- Standaard: `false`
+- Accepteert geen waarde
+
+### `--ansi`
+
+ANSI-uitvoer forceren
+
+- Standaard: `false`
+- Accepteert geen waarde
+
+### `--no-ansi`
+
+ANSI-uitvoer uitschakelen
+
+- Standaard: `false`
+- Accepteert geen waarde
+
+### `--no`, `-n`
+
+Antwoord &quot;nee&quot; op bevestigingsvragen; accepteert de standaardwaarde voor andere vragen; interactie uitschakelen
+
+- Standaard: `false`
+- Accepteert geen waarde
+
 ### `--quiet`, `-q`
 
 Geen bericht uitvoeren
+
+- Standaard: `false`
+- Accepteert geen waarde
+
+
+## `version:list`
+
+&lt;fg white=&quot;&quot; bg=&quot;red&quot;>[ ALPHA ]&lt;/> Omgevingsversies weergeven
+
+```bash
+magento-cloud versions [-p|--project PROJECT] [-e|--environment ENVIRONMENT] [--format FORMAT] [-c|--columns COLUMNS] [--no-header]
+```
+
+
+```bash
+versions
+```
+
+### `--project`, `-p`
+
+De project-id of URL
+
+- Vereist een waarde
+
+### `--host`
+
+Vervangen optie, niet meer gebruikt
+
+- Vereist een waarde
+
+### `--environment`, `-e`
+
+De milieu-id
+
+- Vereist een waarde
+
+### `--format`
+
+De uitvoerindeling: table, csv, tsv of plain
+
+- Standaard: `table`
+- Vereist een waarde
+
+### `--columns`, `-c`
+
+Weer te geven kolommen. Als een lijst als één waarde wordt gegeven (bv. &quot;a,b,c&quot;) wordt gesplitst in komma&#39;s en/of witruimte.
+
+- Standaard: `[]`
+- Vereist een waarde
+
+### `--no-header`
+
+De tabelkoptekst niet uitvoeren
+
+- Standaard: `false`
+- Accepteert geen waarde
+
+### `--help`, `-h`
+
+Dit Help-bericht weergeven
 
 - Standaard: `false`
 - Accepteert geen waarde
@@ -12979,14 +16497,42 @@ Deze toepassingsversie weergeven
 
 ### `--yes`, `-y`
 
-Antwoord &quot;ja&quot; op ja/nee-vragen interactie uitschakelen
+&quot;ja&quot; antwoorden op bevestigingsvragen; accepteert de standaardwaarde voor andere vragen; interactie uitschakelen
+
+- Standaard: `false`
+- Accepteert geen waarde
+
+### `--no-interaction`
+
+Geen interactieve vragen stellen; Accepteer standaardwaarden. Gelijk aan het gebruik van de omgevingsvariabele: &lt;comment>Magento_CLOUD_CLI_NO_INTERACTION=1&lt;/comment>
+
+- Standaard: `false`
+- Accepteert geen waarde
+
+### `--ansi`
+
+ANSI-uitvoer forceren
+
+- Standaard: `false`
+- Accepteert geen waarde
+
+### `--no-ansi`
+
+ANSI-uitvoer uitschakelen
 
 - Standaard: `false`
 - Accepteert geen waarde
 
 ### `--no`, `-n`
 
-Antwoord &quot;nee&quot; op ja/nee-vragen. interactie uitschakelen
+Antwoord &quot;nee&quot; op bevestigingsvragen; accepteert de standaardwaarde voor andere vragen; interactie uitschakelen
+
+- Standaard: `false`
+- Accepteert geen waarde
+
+### `--quiet`, `-q`
+
+Geen bericht uitvoeren
 
 - Standaard: `false`
 - Accepteert geen waarde
@@ -12997,7 +16543,7 @@ Antwoord &quot;nee&quot; op ja/nee-vragen. interactie uitschakelen
 Een lijst met alle geïmplementeerde workers ophalen
 
 ```bash
-magento-cloud workers [--refresh] [-p|--project PROJECT] [--host HOST] [-e|--environment ENVIRONMENT] [--format FORMAT] [--columns COLUMNS] [--no-header]
+magento-cloud workers [--refresh] [-p|--project PROJECT] [-e|--environment ENVIRONMENT] [--format FORMAT] [-c|--columns COLUMNS] [--no-header]
 ```
 
 
@@ -13020,7 +16566,7 @@ De project-id of URL
 
 ### `--host`
 
-De API-hostnaam van het project
+Vervangen optie, niet meer gebruikt
 
 - Vereist een waarde
 
@@ -13032,14 +16578,14 @@ De milieu-id
 
 ### `--format`
 
-De uitvoerindeling (&quot;table&quot;, &quot;csv&quot;, &quot;tsv&quot; of &quot;plain&quot;)
+De uitvoerindeling: table, csv, tsv of plain
 
 - Standaard: `table`
 - Vereist een waarde
 
-### `--columns`
+### `--columns`, `-c`
 
-Weer te geven kolommen (lijst met door komma&#39;s gescheiden waarden of meerdere waarden)
+Weer te geven kolommen. Beschikbare kolommen: opdrachten, naam, type. Als een lijst als één waarde wordt gegeven (bv. &quot;a,b,c&quot;) wordt gesplitst in komma&#39;s en/of witruimte.
 
 - Standaard: `[]`
 - Vereist een waarde
@@ -13054,13 +16600,6 @@ De tabelkoptekst niet uitvoeren
 ### `--help`, `-h`
 
 Dit Help-bericht weergeven
-
-- Standaard: `false`
-- Accepteert geen waarde
-
-### `--quiet`, `-q`
-
-Geen bericht uitvoeren
 
 - Standaard: `false`
 - Accepteert geen waarde
@@ -13081,14 +16620,42 @@ Deze toepassingsversie weergeven
 
 ### `--yes`, `-y`
 
-Antwoord &quot;ja&quot; op ja/nee-vragen interactie uitschakelen
+&quot;ja&quot; antwoorden op bevestigingsvragen; accepteert de standaardwaarde voor andere vragen; interactie uitschakelen
+
+- Standaard: `false`
+- Accepteert geen waarde
+
+### `--no-interaction`
+
+Geen interactieve vragen stellen; Accepteer standaardwaarden. Gelijk aan het gebruik van de omgevingsvariabele: &lt;comment>Magento_CLOUD_CLI_NO_INTERACTION=1&lt;/comment>
+
+- Standaard: `false`
+- Accepteert geen waarde
+
+### `--ansi`
+
+ANSI-uitvoer forceren
+
+- Standaard: `false`
+- Accepteert geen waarde
+
+### `--no-ansi`
+
+ANSI-uitvoer uitschakelen
 
 - Standaard: `false`
 - Accepteert geen waarde
 
 ### `--no`, `-n`
 
-Antwoord &quot;nee&quot; op ja/nee-vragen. interactie uitschakelen
+Antwoord &quot;nee&quot; op bevestigingsvragen; accepteert de standaardwaarde voor andere vragen; interactie uitschakelen
+
+- Standaard: `false`
+- Accepteert geen waarde
+
+### `--quiet`, `-q`
+
+Geen bericht uitvoeren
 
 - Standaard: `false`
 - Accepteert geen waarde
