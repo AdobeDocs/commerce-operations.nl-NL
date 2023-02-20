@@ -1,11 +1,10 @@
 ---
 title: system.xml reference
 description: Leer hoe het systeemXML- dossier de de toepassingsconfiguratie van de Handel beheert.
-contributor_name: David Lambauer
-contributor_link: https://github.com/DavidLambauer
-source-git-commit: 5c0d285717a79d654af769cb734ec385d2d4046f
+badge: label="Bijgedragen door David Lambauer" type="Informatief" url="https://github.com/DavidLambauer" tooltip="David Lambauer"
+source-git-commit: d7f32690b25c61fa31a99e6d02f9f1025de2bb99
 workflow-type: tm+mt
-source-wordcount: '2671'
+source-wordcount: '2685'
 ht-degree: 0%
 
 ---
@@ -385,7 +384,7 @@ De volgende validatieregels zijn beschikbaar:
 | `integer` | Hiermee wordt een positief of negatief getal zonder decimaal getal toegestaan. |
 | `ipv4` | Staat een geldig IP v4 adres toe. |
 | `ipv6` | Hiermee wordt een geldig IP v6-adres toegestaan. |
-| `letters-only` | Hiermee worden alleen letters toegestaan. Bijvoorbeeld, `abcABC`. |
+| `letters-only` | Hiermee worden alleen letters toegestaan. Bijvoorbeeld: `abcABC`. |
 | `letters-with-basic-punc` | Hiermee worden alleen letters of interpunctie toegestaan.<br>Moet de volgende expressie doorgeven: `/^[a-z\-.,()\u0027\u0022\s]+$/i`. |
 | `mobileUK` | Hiermee wordt een (VK) mobiel telefoonnummer toegestaan. |
 | `no-marginal-whitespace` | Hiermee worden witruimten aan het begin of einde van de waarde uitgeschakeld. |
