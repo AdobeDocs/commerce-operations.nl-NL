@@ -2,7 +2,7 @@
 title: Prestaties optimaliseren, Recommendations
 description: Optimaliseer de prestaties van uw Adobe Commerce-implementatie met deze aanbevelingen.
 exl-id: c5d62e23-be43-4eea-afdb-bb1b156848f9
-source-git-commit: 639dca9ee715f2f9ca7272d3b951d3315a85346c
+source-git-commit: 065c56f20ba5b1eef8c331c5c2f5649902f1442b
 workflow-type: tm+mt
 source-wordcount: '1288'
 ht-degree: 0%
@@ -105,7 +105,7 @@ Het testen van prestaties vóór elke productielevering wordt altijd geadviseerd
 >
 > Adobe Commerce op cloudinfrastructuur past al alle bovenstaande infrastructuren en architectuuroptimalisaties toe, behalve voor de DNS-zoekopdracht omdat deze buiten het bereik valt.
 
-### Zoeken
+### Zoeken {#search-heading}
 
 Elasticsearch is vereist vanaf Adobe Commerce versie 2.4, maar het is ook aan te raden dit in te schakelen voor versies ouder dan 2.4.
 
@@ -115,7 +115,7 @@ Naast de eerder genoemde gemeenschappelijke aanbevelingen voor optimalisatie van
 
 ### Hoofdloze architectuur
 
-Er is een aparte sectie gewijd aan het gedetailleerd weergeven van [koploos](../../architecture/headless/adobe-commerce.md) is en verschillende opties. Samengevat wordt de storefront-laag gescheiden van het platform zelf. Het is nog steeds dezelfde achtergrond, maar Adobe Commerce verwerkt aanvragen niet langer rechtstreeks en ondersteunt in plaats daarvan alleen aangepaste winkelvoorronten via de GraphQL-API.
+Er is een aparte sectie gewijd aan het gedetailleerd weergeven van [koploos](../../architecture/headless/adobe-commerce.md) is en verschillende opties. Samengevat wordt de storefront-laag gescheiden van het platform zelf. Het is nog steeds dezelfde achtergrond, maar Adobe Commerce verwerkt aanvragen niet meer rechtstreeks en ondersteunt in plaats daarvan alleen aangepaste winkels via de GraphQL API.
 
 ### Adobe Commerce bijwerken
 
