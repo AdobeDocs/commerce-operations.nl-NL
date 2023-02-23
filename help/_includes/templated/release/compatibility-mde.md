@@ -1,7 +1,7 @@
 ---
-source-git-commit: 608c98818243557fe9c1f7dffceb23641b858fa5
+source-git-commit: 9b27ce148570b9480c4a1373c6b82c401742fd88
 workflow-type: tm+mt
-source-wordcount: '2197'
+source-wordcount: '2484'
 ht-degree: 0%
 
 ---
@@ -828,18 +828,80 @@ the updated content: https://github.com/AdobeDocs/commerce-operations.en/blob/ma
       <th colspan="15">Catalogusservice</th>
     </tr>
     <tr>
+      <td>Catalogusservice 1.4</td>
+      <td>Ondersteund</span>
+      </td>
+      <td>Ondersteund</span>
+      </td>
+      <td>Niet ondersteund</span>
+      </td>
+      <td>Niet ondersteund</span>
+      </td>
+      <td>Niet ondersteund</span>
+      </td>
+      <td>Niet ondersteund</span>
+      </td>
+      <td>Niet ondersteund</span>
+      </td>
+      <td>Niet ondersteund</span>
+      </td>
+      <td>Niet ondersteund</span>
+      </td>
+      <td>Niet ondersteund</span>
+      </td>
+      <td>Niet ondersteund</span>
+      </td>
+      <td>Niet ondersteund</span>
+      </td>
+      <td>Niet ondersteund</span>
+      </td>
+      <td>Niet ondersteund</span>
+      </td>
+    </tr>
+    <tr>
+      <td>Catalogusservice 1.3</td>
+      <td>Ondersteund</span>
+      </td>
+      <td>Ondersteund</span>
+      </td>
+      <td>Niet ondersteund</span>
+      </td>
+      <td>Niet ondersteund</span>
+      </td>
+      <td>Niet ondersteund</span>
+      </td>
+      <td>Niet ondersteund</span>
+      </td>
+      <td>Niet ondersteund</span>
+      </td>
+      <td>Niet ondersteund</span>
+      </td>
+      <td>Niet ondersteund</span>
+      </td>
+      <td>Niet ondersteund</span>
+      </td>
+      <td>Niet ondersteund</span>
+      </td>
+      <td>Niet ondersteund</span>
+      </td>
+      <td>Niet ondersteund</span>
+      </td>
+      <td>Niet ondersteund</span>
+      </td>
+    </tr>
+    <tr>
       <td>Catalogusservice 1.1</td>
       <td>Ondersteund</span>
       </td>
       <td>Ondersteund</span>
       </td>
-      <td>Ondersteund</span>
+      <td>Niet ondersteund</span>
       </td>
-      <td>Ondersteund</span>
+      <td>Niet ondersteund</span>
       </td>
-      <td>Ondersteund</span>
+      <td>Niet ondersteund</span>
       </td>
-      <td>Ondersteund</span>
+      <td>Niet ondersteund</span>
       </td>
       <td>Niet ondersteund</span>
       </td>
@@ -864,13 +926,13 @@ the updated content: https://github.com/AdobeDocs/commerce-operations.en/blob/ma
       </td>
       <td>Ondersteund</span>
       </td>
-      <td>Ondersteund</span>
+      <td>Niet ondersteund</span>
       </td>
-      <td>Ondersteund</span>
+      <td>Niet ondersteund</span>
       </td>
-      <td>Ondersteund</span>
+      <td>Niet ondersteund</span>
       </td>
-      <td>Ondersteund</span>
+      <td>Niet ondersteund</span>
       </td>
       <td>Niet ondersteund</span>
       </td>
@@ -1401,18 +1463,80 @@ the updated content: https://github.com/AdobeDocs/commerce-operations.en/blob/ma
       <th colspan="15">Live zoeken</th>
     </tr>
     <tr>
+      <td>Live zoeken 2.0.5</td>
+      <td>Ondersteund</span>
+      </td>
+      <td>Ondersteund</span>
+      </td>
+      <td>Niet ondersteund</span>
+      </td>
+      <td>Niet ondersteund</span>
+      </td>
+      <td>Niet ondersteund</span>
+      </td>
+      <td>Niet ondersteund</span>
+      </td>
+      <td>Niet ondersteund</span>
+      </td>
+      <td>Niet ondersteund</span>
+      </td>
+      <td>Niet ondersteund</span>
+      </td>
+      <td>Niet ondersteund</span>
+      </td>
+      <td>Niet ondersteund</span>
+      </td>
+      <td>Niet ondersteund</span>
+      </td>
+      <td>Niet ondersteund</span>
+      </td>
+      <td>Niet ondersteund</span>
+      </td>
+    </tr>
+    <tr>
+      <td>Live zoeken 2.0.4</td>
+      <td>Ondersteund</span>
+      </td>
+      <td>Ondersteund</span>
+      </td>
+      <td>Niet ondersteund</span>
+      </td>
+      <td>Niet ondersteund</span>
+      </td>
+      <td>Niet ondersteund</span>
+      </td>
+      <td>Niet ondersteund</span>
+      </td>
+      <td>Niet ondersteund</span>
+      </td>
+      <td>Niet ondersteund</span>
+      </td>
+      <td>Niet ondersteund</span>
+      </td>
+      <td>Niet ondersteund</span>
+      </td>
+      <td>Niet ondersteund</span>
+      </td>
+      <td>Niet ondersteund</span>
+      </td>
+      <td>Niet ondersteund</span>
+      </td>
+      <td>Niet ondersteund</span>
+      </td>
+    </tr>
+    <tr>
       <td>Live zoeken 2.0.3</td>
       <td>Ondersteund</span>
       </td>
       <td>Ondersteund</span>
       </td>
-      <td>Ondersteund</span>
+      <td>Niet ondersteund</span>
       </td>
-      <td>Ondersteund</span>
+      <td>Niet ondersteund</span>
       </td>
-      <td>Ondersteund</span>
+      <td>Niet ondersteund</span>
       </td>
-      <td>Ondersteund</span>
+      <td>Niet ondersteund</span>
       </td>
       <td>Niet ondersteund</span>
       </td>
@@ -1437,13 +1561,13 @@ the updated content: https://github.com/AdobeDocs/commerce-operations.en/blob/ma
       </td>
       <td>Ondersteund</span>
       </td>
-      <td>Ondersteund</span>
+      <td>Niet ondersteund</span>
       </td>
-      <td>Ondersteund</span>
+      <td>Niet ondersteund</span>
       </td>
-      <td>Ondersteund</span>
+      <td>Niet ondersteund</span>
       </td>
-      <td>Ondersteund</span>
+      <td>Niet ondersteund</span>
       </td>
       <td>Niet ondersteund</span>
       </td>
@@ -2377,18 +2501,173 @@ the updated content: https://github.com/AdobeDocs/commerce-operations.en/blob/ma
       <th colspan="15">Snelle afhandeling</th>
     </tr>
     <tr>
+      <td>Snelle afhandeling 1.7.0</td>
+      <td>Ondersteund</span>
+      </td>
+      <td>Ondersteund</span>
+      </td>
+      <td>Compatibel</span>
+      </td>
+      <td>Compatibel</span>
+      </td>
+      <td>Compatibel</span>
+      </td>
+      <td>Compatibel</span>
+      </td>
+      <td>Niet ondersteund</span>
+      </td>
+      <td>Niet ondersteund</span>
+      </td>
+      <td>Niet ondersteund</span>
+      </td>
+      <td>Niet ondersteund</span>
+      </td>
+      <td>Niet ondersteund</span>
+      </td>
+      <td>Niet ondersteund</span>
+      </td>
+      <td>Niet ondersteund</span>
+      </td>
+      <td>Niet ondersteund</span>
+      </td>
+    </tr>
+    <tr>
+      <td>Snelle afhandeling 1.6.0</td>
+      <td>Ondersteund</span>
+      </td>
+      <td>Ondersteund</span>
+      </td>
+      <td>Compatibel</span>
+      </td>
+      <td>Compatibel</span>
+      </td>
+      <td>Compatibel</span>
+      </td>
+      <td>Compatibel</span>
+      </td>
+      <td>Niet ondersteund</span>
+      </td>
+      <td>Niet ondersteund</span>
+      </td>
+      <td>Niet ondersteund</span>
+      </td>
+      <td>Niet ondersteund</span>
+      </td>
+      <td>Niet ondersteund</span>
+      </td>
+      <td>Niet ondersteund</span>
+      </td>
+      <td>Niet ondersteund</span>
+      </td>
+      <td>Niet ondersteund</span>
+      </td>
+    </tr>
+    <tr>
+      <td>Snelle afhandeling 1.5.0</td>
+      <td>Ondersteund</span>
+      </td>
+      <td>Ondersteund</span>
+      </td>
+      <td>Compatibel</span>
+      </td>
+      <td>Compatibel</span>
+      </td>
+      <td>Compatibel</span>
+      </td>
+      <td>Compatibel</span>
+      </td>
+      <td>Niet ondersteund</span>
+      </td>
+      <td>Niet ondersteund</span>
+      </td>
+      <td>Niet ondersteund</span>
+      </td>
+      <td>Niet ondersteund</span>
+      </td>
+      <td>Niet ondersteund</span>
+      </td>
+      <td>Niet ondersteund</span>
+      </td>
+      <td>Niet ondersteund</span>
+      </td>
+      <td>Niet ondersteund</span>
+      </td>
+    </tr>
+    <tr>
+      <td>Snelle afhandeling 1.4.0</td>
+      <td>Ondersteund</span>
+      </td>
+      <td>Ondersteund</span>
+      </td>
+      <td>Compatibel</span>
+      </td>
+      <td>Compatibel</span>
+      </td>
+      <td>Compatibel</span>
+      </td>
+      <td>Compatibel</span>
+      </td>
+      <td>Niet ondersteund</span>
+      </td>
+      <td>Niet ondersteund</span>
+      </td>
+      <td>Niet ondersteund</span>
+      </td>
+      <td>Niet ondersteund</span>
+      </td>
+      <td>Niet ondersteund</span>
+      </td>
+      <td>Niet ondersteund</span>
+      </td>
+      <td>Niet ondersteund</span>
+      </td>
+      <td>Niet ondersteund</span>
+      </td>
+    </tr>
+    <tr>
+      <td>Snelle afhandeling 1.3.0</td>
+      <td>Ondersteund</span>
+      </td>
+      <td>Ondersteund</span>
+      </td>
+      <td>Compatibel</span>
+      </td>
+      <td>Compatibel</span>
+      </td>
+      <td>Compatibel</span>
+      </td>
+      <td>Compatibel</span>
+      </td>
+      <td>Niet ondersteund</span>
+      </td>
+      <td>Niet ondersteund</span>
+      </td>
+      <td>Niet ondersteund</span>
+      </td>
+      <td>Niet ondersteund</span>
+      </td>
+      <td>Niet ondersteund</span>
+      </td>
+      <td>Niet ondersteund</span>
+      </td>
+      <td>Niet ondersteund</span>
+      </td>
+      <td>Niet ondersteund</span>
+      </td>
+    </tr>
+    <tr>
       <td>Snelle afhandeling 1.2.0</td>
       <td>Ondersteund</span>
       </td>
       <td>Ondersteund</span>
       </td>
-      <td>Ondersteund</span>
+      <td>Compatibel</span>
       </td>
-      <td>Ondersteund</span>
+      <td>Compatibel</span>
       </td>
-      <td>Ondersteund</span>
+      <td>Compatibel</span>
       </td>
-      <td>Niet ondersteund</span>
+      <td>Compatibel</span>
       </td>
       <td>Niet ondersteund</span>
       </td>
@@ -2511,34 +2790,65 @@ the updated content: https://github.com/AdobeDocs/commerce-operations.en/blob/ma
       <th colspan="15">Product Recommendations</th>
     </tr>
     <tr>
+      <td>Product Recommendations 4.0.1</td>
+      <td>Ondersteund</span>
+      </td>
+      <td>Ondersteund</span>
+      </td>
+      <td>Niet ondersteund</span>
+      </td>
+      <td>Niet ondersteund</span>
+      </td>
+      <td>Niet ondersteund</span>
+      </td>
+      <td>Niet ondersteund</span>
+      </td>
+      <td>Niet ondersteund</span>
+      </td>
+      <td>Niet ondersteund</span>
+      </td>
+      <td>Niet ondersteund</span>
+      </td>
+      <td>Niet ondersteund</span>
+      </td>
+      <td>Niet ondersteund</span>
+      </td>
+      <td>Niet ondersteund</span>
+      </td>
+      <td>Niet ondersteund</span>
+      </td>
+      <td>Niet ondersteund</span>
+      </td>
+    </tr>
+    <tr>
       <td>Product Recommendations 4.0.0</td>
       <td>Ondersteund</span>
       </td>
       <td>Ondersteund</span>
       </td>
-      <td>Ondersteund</span>
+      <td>Niet ondersteund</span>
       </td>
-      <td>Ondersteund</span>
+      <td>Niet ondersteund</span>
       </td>
-      <td>Ondersteund</span>
+      <td>Niet ondersteund</span>
       </td>
-      <td>Ondersteund</span>
+      <td>Niet ondersteund</span>
       </td>
-      <td>Ondersteund</span>
+      <td>Niet ondersteund</span>
       </td>
-      <td>Ondersteund</span>
+      <td>Niet ondersteund</span>
       </td>
-      <td>Ondersteund</span>
+      <td>Niet ondersteund</span>
       </td>
-      <td>Ondersteund</span>
+      <td>Niet ondersteund</span>
       </td>
-      <td>Ondersteund</span>
+      <td>Niet ondersteund</span>
       </td>
-      <td>Ondersteund</span>
+      <td>Niet ondersteund</span>
       </td>
-      <td>Ondersteund</span>
+      <td>Niet ondersteund</span>
       </td>
-      <td>Ondersteund</span>
+      <td>Niet ondersteund</span>
       </td>
     </tr>
     <tr>
