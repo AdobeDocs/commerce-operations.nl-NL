@@ -1,8 +1,8 @@
 ---
-source-git-commit: 9f6110d359ffb31b04ebef369b82c25d4d0b9058
+source-git-commit: 8f4575e529cff1e11544f6df66bd486709e3d826
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '238'
+ht-degree: 62%
 
 ---
 # Systeemvereisten
@@ -123,7 +123,7 @@ ht-degree: 0%
             1.2
       </td>
       <td>
-          —
+          --
       </td>
       <td>
           --
@@ -244,7 +244,7 @@ ht-degree: 0%
       </td>
     </tr>
     <tr>
-      <td><span class="uicontrol">KonijnMQ</span></td>
+      <td><span class="uicontrol">RabbitMQ</span></td>
       <td>
             3.9
       </td>
@@ -644,4 +644,4 @@ ht-degree: 0%
 
 >[!IMPORTANT]
 >
->Serviceversie en compatibiliteitsondersteuning voor Adobe Commerce op cloudinfrastructuur worden bepaald door versies die worden geïmplementeerd op de Cloud-infrastructuur en verschillen soms van versies die worden ondersteund door Adobe Commerce-implementaties op locatie. Zie [Ondersteunde software en services](https://devdocs.magento.com/cloud/requirements/cloud-requirements.html#cloud-arch-software) in de _Wolkengids_.
+>Serviceversie en compatibiliteitsondersteuning voor Adobe Commerce op cloudinfrastructuur worden bepaald door versies die worden geïmplementeerd op de Cloud-infrastructuur en verschillen soms van versies die worden ondersteund door Adobe Commerce-implementaties op locatie. Zie [Ondersteunde software en services](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/architecture/cloud-architecture.html#supported-software-and-services) in de _Wolkengids_.
