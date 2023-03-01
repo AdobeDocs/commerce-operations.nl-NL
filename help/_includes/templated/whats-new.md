@@ -1,7 +1,7 @@
 ---
-source-git-commit: 5014cdc2ce236798a57d1c537aeefab135d03559
+source-git-commit: e4387672c28795a90d5f2d7ef83eb9a101799d49
 workflow-type: tm+mt
-source-wordcount: '486'
+source-wordcount: '303'
 ht-degree: 0%
 
 ---
@@ -10,6 +10,26 @@ ht-degree: 0%
 ## Nieuwe functies
 
 Meer informatie over nieuwe documentatie en belangrijke updates voor bestaande documentatie.
+
+### 1 maart 2023
+
+<table style="table-layout:auto;">
+  <thead>
+    <tr>
+      <th>Beschrijving</th>
+      <th>Type</th>
+      <th>Bron</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><p>Extra informatie over de bijdragen van de gemeenschap aan de Adobe Commerce en opmerkingen in de voorlopige versie van Magento Open Source 2.4.6. Zie <a href="https://experienceleague.adobe.com/docs/commerce-operations/release/notes/overview.html">Opmerkingen bij de release voor Adobe Commerce en Magento Open Source</a>.</p>
+</td>
+      <td>belangrijke update</td>
+      <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/710bfc501d63a7e0c3b41bd2a56d8d1d5cd27d53">710bfc</a> (toewijzen)</td>
+    </tr>
+  </tbody>
+</table><!-- date_group -->
 
 ### 23 februari 2023
 
@@ -113,126 +133,6 @@ Meer informatie over nieuwe documentatie en belangrijke updates voor bestaande d
 </td>
       <td>belangrijke update</td>
       <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/64cb70ebc9f2bd6533581a302e15aa6301ae4869">64cb70</a> (toewijzen)</td>
-    </tr>
-  </tbody>
-</table><!-- date_group -->
-
-### 27 januari 2023
-
-<table style="table-layout:auto;">
-  <thead>
-    <tr>
-      <th>Beschrijving</th>
-      <th>Type</th>
-      <th>Bron</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td><p>Gepubliceerd <a href="https://experienceleague.adobe.com/docs/commerce-operations/tools/quality-patches-tool/release-notes.html">releaseopmerkingen</a> voor de pakketrelease van het 1.1.26 Quality Patches Tool (QPT).</p>
-</td>
-      <td>belangrijke update</td>
-      <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/08210f356354d20adf7360d18e2ddba9fe9a565a">08210f</a> (toewijzen)</td>
-    </tr>
-  </tbody>
-</table>
-
-### 24 januari 2023
-
-<table style="table-layout:auto;">
-  <thead>
-    <tr>
-      <th>Beschrijving</th>
-      <th>Type</th>
-      <th>Bron</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td><p>De <a href="https://experienceleague.adobe.com/docs/commerce-operations/release/planning/schedule.html">releaseplanning</a> en <a href="https://experienceleague.adobe.com/docs/commerce-operations/release/planning/lifecycle-policy.html">beleid van de softwarelevenscyclus</a> onderwerpen voor 2023.</p>
-</td>
-      <td>belangrijke update</td>
-      <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/979a6d481021eb26121e79974b2ce6e9280d51c3">979a6d</a> (toewijzen)</td>
-    </tr>
-  </tbody>
-</table>
-
-### 23 januari 2023
-
-<table style="table-layout:auto;">
-  <thead>
-    <tr>
-      <th>Beschrijving</th>
-      <th>Type</th>
-      <th>Bron</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td><p>Opmerkingen bij de release toegevoegd voor Adobe Commerce 2.4.6 bèta 2. Zie <a href="https://experienceleague.adobe.com/docs/commerce-operations/release/notes/adobe-commerce/2-4-6.html">Opmerkingen bij de release Adobe Commerce 2.4.6</a>.</p>
-</td>
-      <td>belangrijke update</td>
-      <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/af347fea185d2a3c02180216feb2fd13f5868081">af347f</a> (toewijzen)</td>
-    </tr>
-  </tbody>
-</table>
-
-### 19 januari 2023
-
-<table style="table-layout:auto;">
-  <thead>
-    <tr>
-      <th>Beschrijving</th>
-      <th>Type</th>
-      <th>Bron</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td><p>Oplossing voor een SQL-syntaxisfout in het dialoogvenster <a href="https://experienceleague.adobe.com/docs/commerce-operations/implementation-playbook/best-practices/maintenance/commerce-235-upgrade-prerequisites-mariadb.html">upgradevoorwaarden</a> onderwerp over best practices.</p>
-<p><i>Bijdrage van de Gemeenschap door Zifius</i></p></td>
-      <td>technisch</td>
-      <td><a href="https://github.com/AdobeDocs/commerce-operations.en/pull/77">77</a> (aanvraag intrekken)</td>
-    </tr>
-  </tbody>
-</table>
-
-### 10 januari 2023
-
-<table style="table-layout:auto;">
-  <thead>
-    <tr>
-      <th>Beschrijving</th>
-      <th>Type</th>
-      <th>Bron</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td><p>Toegevoegd <a href="https://experienceleague.adobe.com/docs/commerce-operations/release/notes/adobe-commerce/2-4-6.html">releaseopmerkingen</a> voor de release van Adobe Commerce 2.4.6-beta1.</p>
-</td>
-      <td>nieuw onderwerp</td>
-      <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/108fe16a62c51c53d1850583cfd33938e39c7a6c">108fe1</a> (toewijzen)</td>
-    </tr>
-  </tbody>
-</table>
-
-### 9 januari 2023
-
-<table style="table-layout:auto;">
-  <thead>
-    <tr>
-      <th>Beschrijving</th>
-      <th>Type</th>
-      <th>Bron</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td><p>Catalogusservice toegevoegd aan de <a href="https://experienceleague.adobe.com/docs/commerce-operations/release/product-availability.html">compatibiliteitstabel</a>.</p>
-</td>
-      <td>belangrijke update</td>
-      <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/0ffc4e9c9b0bb4fe629d0f0fb46bfbb287d5fdcc">0ffc4e</a> (toewijzen)</td>
     </tr>
   </tbody>
 </table><!-- date_group --><!-- month_group --><!-- year_group -->
