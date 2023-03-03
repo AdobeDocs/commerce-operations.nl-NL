@@ -2,9 +2,9 @@
 title: Overzicht van onderhoud en ondersteuning
 description: Behoud en steun uw onlangs gelanceerde implementatie van Adobe Commerce behoorlijk.
 exl-id: 5a104148-74f1-469b-84ca-9bce740a7865
-source-git-commit: 514426d622ba47b8a7e517368132c86c9236b63a
+source-git-commit: 10d65d3453e260e105c1e90acbdfe678ca15c4e3
 workflow-type: tm+mt
-source-wordcount: '530'
+source-wordcount: '529'
 ht-degree: 0%
 
 ---
@@ -33,4 +33,4 @@ Het identificeren van het juiste steunmodel voor uw zaken om uw platform-en hand
 
 Bij de implementatie van Adobe Commerce is het van essentieel belang om na te denken over wat u moet opnemen in uw onderhouds- en ondersteuningsstrategie.
 Expert support is inbegrepen in een Adobe Commerce-licentie. Raadpleeg voor meer informatie over de ondersteuningsplannen voor experts en Adobe voor ondersteuning de [Ondersteuningsplannen voor Adobe](https://business.adobe.com/customers/consulting-services/premier-support.html).
-Naast de plannen van de Steun van de Adobe zijn er erfenis Magento de steuntermijnen. Als u wilt weten welke supportservices op u van toepassing zijn, raadpleegt u uw contract om te zien welke supportovereenkomst u hebt of neemt u contact op met uw Customer Success Manager (CSM).
+Naast de plannen van de Steun van de Adobe zijn er erfenis Magento de steuntermijnen. Als u wilt weten welke supportservices op u van toepassing zijn, kunt u verwijzen naar uw contract om te zien welke ondersteuningsovereenkomst u hebt of kunt u contact opnemen met uw Adobe-accountteam.

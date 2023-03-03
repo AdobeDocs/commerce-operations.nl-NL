@@ -2,7 +2,7 @@
 title: Optimalisatie van Adobe Commerce-prestaties
 description: Bereid uw Adobe Commerce-project voor om Adobe Experience Manager als CMS te gebruiken door enkele standaardinstellingen te wijzigen.
 exl-id: 55d77af7-508c-4ef7-888b-00911cc6e920
-source-git-commit: e76f101df47116f7b246f21f0fe0fa72769d2776
+source-git-commit: a11f3ef0519a4a6c08ea1d4e520ce0462e88885d
 workflow-type: tm+mt
 source-wordcount: '1143'
 ht-degree: 0%
@@ -13,11 +13,11 @@ ht-degree: 0%
 
 ## Geografische locatie van AEM- en Adobe Commerce-infrastructuur
 
-Om de latentie tussen de AEM uitgever en Adobe Commerce GraphQL bij het bouwen van pagina&#39;s te verminderen, zou de aanvankelijke levering van de twee afzonderlijke infrastructuur binnen zelfde AWS (of Azure) Gebied moeten worden ontvangen. De geografische plaats die voor beide wolken wordt gekozen zou ook het dichtst bij de meerderheid van uw klantenbasis moeten zijn, zodat de cliënt zijverzoeken GraphQL van een geografisch dichtbij plaats aan de meerderheid van uw klanten worden gediend.
+Om de vertragingen tussen de AEM uitgever en Adobe Commerce GraphQL bij het bouwen van pagina&#39;s te verminderen, zou de aanvankelijke levering van de twee afzonderlijke infrastructuur binnen zelfde AWS (of Azure) Gebied moeten ontvangen. De geografische locatie die voor beide clouds is gekozen, moet zich ook het dichtst bij het merendeel van uw klantenbestand bevinden, zodat GraphQL-verzoeken aan de clientzijde worden bediend vanaf een locatie die geografisch dicht bij de meeste van uw klanten ligt.
 
-## GrafiekQL in cache plaatsen in Adobe Commerce
+## GraphQL caching in Adobe Commerce
 
-Wanneer browser van de gebruiker of AEM uitgever Adobe Commerce GraphQL roept, zullen bepaalde vraag in Fastly in het voorgeheugen ondergebracht worden. De vragen die in cache worden geplaatst zijn over het algemeen die die niet-persoonlijke gegevens bevatten en waarschijnlijk niet vaak zullen veranderen. Dit zijn bijvoorbeeld: categorieën, categorielijst en producten. Die die uitdrukkelijk niet in de cache worden geplaatst zijn die die regelmatig veranderen en als caching risico&#39;s voor persoonlijke gegevens en plaatsverrichtingen zoals vragen zoals winkelwagentje en customerPaymentTokens zou kunnen veroorzaken.
+Wanneer de browser of AEM uitgever van de gebruiker Adobe Commerce GraphQL roept, zullen bepaalde vraag in het voorgeheugen ondergebracht in Fastly worden. De vragen die in cache worden geplaatst zijn over het algemeen die die niet-persoonlijke gegevens bevatten en waarschijnlijk niet vaak zullen veranderen. Dit zijn bijvoorbeeld: categorieën, categorielijst en producten. Die die uitdrukkelijk niet in de cache worden geplaatst zijn die die regelmatig veranderen en als caching risico&#39;s voor persoonlijke gegevens en plaatsverrichtingen zoals vragen zoals winkelwagentje en customerPaymentTokens zou kunnen veroorzaken.
 
 GraphQL staat u toe om veelvoudige vragen in één enkele vraag te maken. Het is belangrijk om op te merken dat als u zelfs één vraag specificeert die Adobe Commerce niet met vele anderen in het voorgeheugen onderbrengt die niet cacheable zijn, Adobe Commerce het geheime voorgeheugen voor alle vragen in de vraag zal omzeilen. Dit zou door ontwikkelaars moeten worden overwogen wanneer het combineren van veelvoudige vragen om ervoor te zorgen potentieel cacheable vragen niet per ongeluk worden overgeslagen‡.
 
@@ -45,7 +45,7 @@ U kunt de functie voor het snel optimaliseren van afbeeldingen inschakelen door 
 
 ## Ongebruikte modules uitschakelen
 
-Als het runnen van Adobe Commerce hoofdloos, slechts het dienen van verzoeken door het eindpunt GraphQL en geen front-end opslagpagina&#39;s direct van Adobe Commerce worden gediend, dan worden vele modules overtollig en niet gebruikt. Door ongebruikte modules uit te schakelen, wordt uw Adobe Commerce-codebasis kleiner, minder complex en kan deze daarom prestatieverbeteringen bieden. Het onbruikbaar maken modules op Adobe Commerce kan worden beheerd gebruikend composer. Welke modules die kunnen worden onbruikbaar gemaakt zouden van de vereisten voor uw plaats afhangen, zodat kan geen geadviseerde lijst worden gegeven aangezien het voor de implementatie van elke klant van Adobe Commerce specifiek zou zijn.
+Als het runnen van Adobe Commerce headless, slechts het dienen van verzoeken door het eindpunt van GraphQL en geen front-end opslagpagina&#39;s direct van Adobe Commerce worden gediend, dan worden vele modules overtollig en niet gebruikt. Door ongebruikte modules uit te schakelen, wordt uw Adobe Commerce-codebasis kleiner, minder complex en kan deze daarom prestatieverbeteringen bieden. Het onbruikbaar maken modules op Adobe Commerce kan worden beheerd gebruikend composer. Welke modules die kunnen worden onbruikbaar gemaakt zouden van de vereisten voor uw plaats afhangen, zodat kan geen geadviseerde lijst worden gegeven aangezien het voor de implementatie van elke klant van Adobe Commerce specifiek zou zijn.
 
 ## Activering van MySQL- en Redis-verbinding
 
@@ -72,4 +72,4 @@ Als na alle bovenstaande configuraties de resultaten van de belastingstest of de
 
 Met een standaard Pro architectuur, zijn er 3 knopen, elk waarvan een volledige technologiestapel bevat. Door om te zetten in de gespleten rijarchitectuur, verandert dit in een minimum van 6 knopen: 3 waarvan Elasticsearch, MariaDB, Redis en andere kerndiensten; de andere 3 voor de verwerking van webverkeer bevatten phpfm en NGINX. Er zijn meer schaalmogelijkheden met gesplitste lagen: kernknooppunten met databases kunnen verticaal worden geschaald; de Webknopen kunnen horizontaal en verticaal worden geschraapt, die een grote hoeveelheid flexibiliteit geven om infrastructuur op bestelling voor vastgestelde periode van hoge ladingsactiviteit en op knopen uit te breiden waar de extra middelen nodig zijn.
 
-Als het besluit is genomen om over te schakelen op een gesplitste laagarchitectuur vanwege de hoge verwachtingen ten aanzien van de belasting van uw site, moet een gesprek worden gevoerd met uw Customer Success Manager over de stappen om dit mogelijk te maken.
+Als een besluit is genomen om op een gespleten rijarchitectuur wegens zware ladingsverwachtingen voor uw plaats over te schakelen, dan zou een bespreking met uw Team van de Rekening van de Adobe op de stappen moeten worden betrokken om dit toe te laten.
