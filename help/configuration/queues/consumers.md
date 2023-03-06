@@ -1,9 +1,9 @@
 ---
 title: Gebruikers in de wachtrij met berichten
 description: Meer informatie over gebruikers in de wachtrij met Adobe Commerce- en Magento Open Source-berichten, inclusief de functies en systeemconfiguratie die eraan zijn gekoppeld.
-source-git-commit: 2eecaab32b090cfd3c1a8e8832027d3531cf0edc
+source-git-commit: 1006a5761849b1d455469c6dfcb79a66cb90ec40
 workflow-type: tm+mt
-source-wordcount: '929'
+source-wordcount: '950'
 ht-degree: 0%
 
 ---
@@ -71,5 +71,7 @@ De volgende lijst identificeert alle consumenten van de berichtrij, beschrijft w
 | Hiermee werkt u de prijs bij voor elk product in een gedeelde catalogus. Vereist wanneer de [**[!UICONTROL Shared Catalogs]**](https://docs.magento.com/user-guide/catalog/catalog-shared.html) Deze optie is ingeschakeld in de configuratie-instellingen van het beheersysteem. |  |  |  |
 | `quoteItemCleaner` | + | + |  |
 | Hiermee verwijdert u ongeldige of inactieve prijsaanhalingstekens wanneer een product uit de catalogus wordt verwijderd of uit het winkelwagentje wordt verwijderd. Vereist wanneer de [**[!UICONTROL Quotes]**](https://docs.magento.com/user-guide/sales/quotes.html) Deze optie is ingeschakeld in de configuratie-instellingen van het beheersysteem. |  |  |  |
+| `sales.rule.quote.trigger.recollect` | + | + | + |
+| Hiermee werkt u actieve winkelwagentjes bij om de wijzigingen in de regels voor de winkelwagenprijs weer te geven. Vereist bij bijwerken [**[!UICONTROL Catalog price rules]**](https://experienceleague.adobe.com/docs/commerce-admin/marketing/promotions/catalog-rules/price-rules-catalog.html). |  |  |  |
 
-{style=&quot;table-layout:auto&quot;}
+{style="table-layout:auto"}
