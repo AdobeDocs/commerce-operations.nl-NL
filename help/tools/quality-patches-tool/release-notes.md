@@ -1,9 +1,9 @@
 ---
 title: Opmerkingen bij de release
 description: Meer informatie over de patches die beschikbaar zijn voor Adobe Commerce en de problemen die ze oplossen.
-source-git-commit: 76ff1bbcc3a1ca8f73dfdd2ba4f516a201986f62
+source-git-commit: f1c6c816695e01fc30d0ab0a7a9c43122a130cb5
 workflow-type: tm+mt
-source-wordcount: '10848'
+source-wordcount: '11145'
 ht-degree: 0%
 
 ---
@@ -19,6 +19,22 @@ De [[!DNL Quality Patches Tool]](https://github.com/magento/quality-patches) lev
 >[!INFO]
 >
 >Voor informatie over [!DNL quality patches] die door de Gemeenschap voor Magento Open Source zijn opgericht, [releaseopmerkingen](https://github.com/magento/quality-patches/blob/master/community-release-notes.md).
+
+## v1.1.28 {#v1-1-28}
+
+* **ACSD-48204** (voor Adobe Commerce en Magento Open Source >=2.3.7 &lt;2.4.3) - Hiermee wordt het probleem verholpen waarbij een op het kenmerk Ja/Nee gebaseerde prijsregel voor catalogi geen rekening houdt met het geselecteerde bereik.
+* **ACSD-47704** (voor Adobe Commerce en Magento Open Source >=2.3.7 &lt;2.4.7) - Hiermee wordt de kwestie gecorrigeerd waarbij het gebundelde product alleen de prijs van in-voorraad producten weergeeft.
+* **ACSD-49370** (voor Adobe Commerce en Magento Open Source >=2.3.7 &lt;2.4.7) - Hiermee wordt het probleem opgelost waarbij de *Datum en tijd* productkenmerk heeft een *FilterMatchTypeInput* type in GraphQL-schema.
+* **ACSD-48807** (voor Adobe Commerce en Magento Open Source >=2.4.1 &lt;2.4.7) - Hiermee wordt het probleem verholpen waarbij de Revisies van producten van de klant niet via GraphQL worden gefilterd.
+* **ACSD-49433** (voor Adobe Commerce en Magento Open Source >=2.4.3 &lt;2.4.7) - Hiermee wordt het probleem opgelost waarbij het standaardbedrag als subtotaal in het winkelwagentje wordt weergegeven voor een cadeaukaart met een open bedrag.
+* **ACSD-48866** (voor Adobe Commerce en Magento Open Source >=2.3.7 &lt;2.4.7) - Hiermee wordt het probleem verholpen waarbij een fout optreedt bij het aanvragen van RSS-feed voor categorieën.
+* **ACSD-48784** (voor Adobe Commerce en Magento Open Source >=2.3.7 &lt;2.4.7) - Hiermee wordt het probleem verholpen waarbij de prijzen van het klantensegment onjuist in de cache worden opgeslagen tussen klantengroepen.
+* **ACSD-48857** (voor Adobe Commerce en Magento Open Source >=2.4.3 &lt;2.4.7) - Hiermee wordt het probleem verholpen waarbij een gebruiker geen wijzigingen kan opslaan na bewerking met Page Builder.
+* **ACSD-49065** (voor Adobe Commerce en Magento Open Source >=2.3.7 &lt;2.4.7) - Hiermee wordt het probleem verholpen waarbij prijsaanhalingstekens niet zichtbaar zijn in de beheerder als deze alleen aan de aangepaste voorraad worden toegewezen.
+* **ACSD-49179** (voor Adobe Commerce en Magento Open Source >=2.4.2 &lt;2.4.7) - Hiermee wordt de emissie gecorrigeerd waarbij in het orderrapport onjuiste bedragen worden vermeld in geval van verschillende valuta&#39;s voor verschillende winkels.
+* **ACSD-49286** (voor Adobe Commerce en Magento Open Source >=2.4.3 &lt;2.4.7) - Hiermee wordt het probleem verholpen waarbij een product tweemaal aan een winkelwagentje wordt toegevoegd wanneer meerdere productwidgets op de pagina aanwezig zijn.
+* **ACSD-49574** (voor Adobe Commerce >=2.4.4 &lt;2.4.7) - Hiermee voegt u functionaliteit toe ter ondersteuning van productupdates voor Cadeautjes in een winkelwagentje via GraphQL.
+* Bijgewerkte patch: ACSD-48694.
 
 ## v1.1.27 {#v1-1-27}
 
