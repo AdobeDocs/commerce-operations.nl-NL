@@ -1,9 +1,9 @@
 ---
 title: Toepassingsmodi
 description: De toepassing van de Handel kan op verschillende wijzen afhankelijk van uw behoeften werken. Bekijk een gedetailleerde lijst met de beschikbare toepassingsmodi.
-source-git-commit: 8102c083bb0216bbdcad2882f39f7711b9cee52b
+source-git-commit: e7c325aef90d4135218b984cc57df2c8d1d921d2
 workflow-type: tm+mt
-source-wordcount: '798'
+source-wordcount: '719'
 ht-degree: 0%
 
 ---
@@ -13,62 +13,68 @@ ht-degree: 0%
 
 U kunt de toepassing van de Handel in om het even welk volgend in werking stellen _modi_:
 
-| Modulenaam | Beschrijving |
-| ----------- | ----------- |
-| default | Laat u toe om de toepassing van de Handel op één enkele server op te stellen zonder enige montages te veranderen. De standaardmodus is echter niet geoptimaliseerd voor productie.<br>Om de toepassing van de Handel op meer dan één server op te stellen of het voor productie te optimaliseren, verander in één van de andere wijzen.<ul><li>Statische weergave van bestanden in cache plaatsen ingeschakeld</li><li>De uitzonderingen worden niet getoond aan de gebruiker; in plaats daarvan worden uitzonderingen naar logbestanden geschreven .</li><li>Verbergt aangepaste `X-Magento-*` HTTP-aanvraag- en antwoordheaders</li></ul> |
-| ontwikkelaar | Deze modus is alleen bedoeld voor ontwikkeling:<ul><li>Schakelt het in cache plaatsen van statische weergavebestanden uit</li><li>Biedt uitgebreide logboekregistratie</li><li>Inschakelen [automatische codecompilatie](../cli/code-compiler.md)</li><li>Maakt verbeterde foutopsporing mogelijk</li><li>Aangepaste tonen `X-Magento-*` HTTP-aanvraag- en antwoordheaders</li><li>Resultaten in de langzaamste prestaties</li><li>Hiermee worden fouten op de voorzijde weergegeven</li></ul> |
-| productie | Bedoeld voor plaatsing op een productiesysteem, deze wijze:<ul><li>Geeft geen uitzonderingen aan de gebruiker (uitzonderingen worden alleen naar logboeken geschreven).</li><li>Serveert statische weergavebestanden alleen uit cache.</li><li>Voorkomt automatische compilatie van codebestanden. Nieuwe of bijgewerkte bestanden worden niet naar het bestandssysteem geschreven.</li><li>**Hiermee kunt u cachetypen in de beheerfunctie niet in- of uitschakelen.** Zie [de cache in- en uitschakelen](../cli/manage-cache.md#enable-or-disable-cache-types).</li><li>Sommige gebieden, zoals de Geavanceerde en secties van de de systeemconfiguratie van de Ontwikkelaar in Admin, zijn niet beschikbaar op productiemodus.</li></ul> |
-| onderhoud | Bedoeld om toegang tot een plaats te verhinderen terwijl het wordt bijgewerkt of opnieuw gevormd, deze wijze:<ul><li>Sitebezoekers omleiden naar de standaardmap `Service Temporarily Unavailable` pagina.</li><li>Als de onderhoudsmodus van de site is geactiveerd, `var/` bevat de map `.maintenance.flag` bestand.</li><li>U kunt onderhoudswijze vormen om bezoekerstoegang van een gespecificeerde lijst van IP adressen toe te staan.</li></ul> |
+| Naam van modus | Beschrijving | Ondersteuning voor cloud |
+| ------------------------ | ------------------- | ------------- |
+| [default](#default-mode) | Implementeer en voer de toepassing Commerce op één server uit zonder instellingen te wijzigen. _Niet_ geoptimaliseerd voor productie. | nee |
+| [ontwikkelaar](#developer-mode) | Ideaal voor ontwikkeling wanneer u de toepassing Commerce uitbreidt of aanpast. | nee |
+| [productie](#production-mode) | Stel en stel de toepassing van de Handel in werking op een productiesysteem. | Ja |
+| [onderhoud](#maintenance-mode) | Toegang tot een site verhinderen tijdens het uitvoeren van updates en configuraties. | Ja |
 
->[!INFO]
->
->[Adobe Commerce over cloudinfrastructuur](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/overview.html) ondersteunt alleen de productie- en onderhoudsmodi.
+Zie [De bewerkingsmodus instellen](../cli/set-mode.md) voor informatie over het handmatig wijzigen van de Adobe Commerce-bewerkingsmodi.
+
+## Ondersteuning voor cloud
+
+Het is niet nodig om de toepassingsmodi voor een project van de wolkeninfrastructuur te beheren. Vanwege het alleen-lezen bestandssysteem kunt u geen modi wijzigen in externe cloudomgevingen. Adobe Commerce on cloud Infrastructure voert de toepassing automatisch uit in _onderhoud_ wijze tijdens een plaatsing, die uw plaats offline neemt tot de plaatsing volledig is. Anders blijft de toepassing in _productie_ in. Zie [Implementatieproces](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/deploy/process.html#deploy-phase) in de _Handleiding Handel in Cloud-infrastructuur_.
+
+Als u Cloud Docker voor Handel als ontwikkelingsinstrument gebruikt, kunt u uw cloudinfrastructuurproject in een Docker-omgeving implementeren in _ontwikkelaar_ , maar de prestaties zijn trager als gevolg van extra bewerkingen voor bestandssynchronisatie. Zie [De Docker-omgeving implementeren](https://developer.adobe.com/commerce/cloud-tools/docker/deploy/#launch-mode) in de _Handleiding Cloud Docker voor handel_.
 
 ## Standaardmodus
 
-Zoals zijn naam impliceert, is de standaardwijze hoe de Handel werkt als geen andere wijze wordt gespecificeerd. De standaardwijze laat u toe om de toepassing van de Handel op één enkele server op te stellen zonder enige montages te veranderen. De standaardmodus is echter niet zo geoptimaliseerd voor productie als de productiemodus.
-
-Om de toepassing van de Handel op meer dan één server op te stellen of het voor productie te optimaliseren, verander in één van de andere wijzen.
+De _default_ De wijze laat u toe om de toepassing van de Handel op één enkele server op te stellen zonder enige montages te veranderen. De standaardmodus is echter niet geoptimaliseerd voor productie vanwege het negatieve effect van statische bestanden op de prestaties. Het maken van statische bestanden en het in cache plaatsen ervan heeft meer invloed op de prestaties dan het genereren van bestanden met het gereedschap voor het maken van statische bestanden.
 
 In de standaardmodus:
 
-- Fouten worden geregistreerd bij de bestandsrapporten op de server en worden nooit weergegeven bij een gebruiker
+- Uitzonderingen worden naar logbestanden geschreven in plaats van weer te geven
 - Statische weergavebestanden worden in cache geplaatst
-- De standaardmodus is niet geoptimaliseerd voor een productieomgeving, voornamelijk vanwege het negatieve effect op de prestaties van [statische bestanden](https://glossary.magento.com/static-files) dynamisch worden gegenereerd in plaats van tot stand te brengen. Met andere woorden, het maken van statische bestanden en het in cache plaatsen ervan heeft een groter effect op de prestaties dan het genereren ervan met het gereedschap voor het maken van statische bestanden.
+- Verbergt aangepaste `X-Magento-*` HTTP-aanvraag- en antwoordheaders
 
-Zie [De bewerkingsmodus instellen](../cli/set-mode.md).
+De handel werkt op standaardwijze als geen andere wijze wordt gespecificeerd.
 
 ## Modus Ontwikkelaar
 
-Voer de toepassing van de Handel op ontwikkelaarwijze in werking wanneer u het uitbreidt of aanpast.
+De _ontwikkelaar_ wordt aanbevolen voor het uitbreiden en aanpassen van de toepassing Commerce. Statische weergavebestanden worden niet in de cache opgeslagen, maar naar de `pub/static` directory on demand.
 
 In de modus Ontwikkelaar:
 
-- Statische weergavebestanden worden niet in cache geplaatst. zij worden naar de `pub/static` directory elke keer dat ze worden aangeroepen
+- Inschakelen [automatische codecompilatie](../cli/code-compiler.md) en verbeterde foutopsporing
 - Niet-afgevangen uitzonderingen worden in de browser weergegeven
 - Systeemaanmelding `var/report` is uitgebreid
-- An [uitzondering](https://glossary.magento.com/exception) wordt gegenereerd in de fouthandler en niet vastgelegd
-- Een uitzondering wordt gegenereerd wanneer een [event](https://glossary.magento.com/event) abonnee kan niet worden aangeroepen
-
-Zie [De bewerkingsmodus instellen](../cli/set-mode.md).
+- Er wordt een uitzondering gegenereerd in de fouthandler, in plaats van dat deze wordt geregistreerd
+- Een uitzondering wordt gegenereerd wanneer een gebeurtenisabonnee niet kan worden aangeroepen
+- Aangepaste tonen `X-Magento-*` HTTP-aanvraag- en antwoordheaders
 
 ## Productiemodus
 
-De Handel van de looppas op productiemodus wanneer het aan een productieserver wordt opgesteld. Nadat u de serveromgeving, zoals de database en de webserver, hebt geoptimaliseerd, moet u de opdracht [hulpmiddel voor het implementeren van statische weergavebestanden](../cli/static-view-file-deployment.md) om statische weergavebestanden naar de `pub/static` directory.
+De _productie_ De wijze is best voor het opstellen van de toepassing van de Handel op een productiesysteem. Nadat u de serveromgeving, zoals de database en de webserver, hebt geoptimaliseerd, moet u de opdracht [hulpmiddel voor het implementeren van statische weergavebestanden](../cli/static-view-file-deployment.md) om statische weergavebestanden naar de `pub/static` directory. Dit verbetert prestaties door alle noodzakelijke statische dossiers bij plaatsing te verstrekken in plaats van de toepassing van de Handel te dwingen om dynamisch van statische dossiers de plaats te bepalen en te kopiëren (materialiseren) tijdens runtime.
 
-Dit verbetert prestaties door alle noodzakelijke statische dossiers bij plaatsing te verstrekken in plaats van de Handel te dwingen om dynamisch van statische dossiers op bestelling tijdens runtime de plaats te bepalen en te kopiëren (materialiseren).
+Sommige gebieden, zoals de Geavanceerde en secties van de de systeemconfiguratie van de Ontwikkelaar in Admin, zijn niet beschikbaar op productiemodus. U kunt bijvoorbeeld _kan_ Schakel cachetypen in of uit met behulp van Admin. U kunt cachetypen in- en uitschakelen _alleen_ met de [opdrachtregel](../cli/manage-cache.md#config-cli-subcommands-cache-en).
 
 In de productiemodus:
 
-- Statische weergavebestanden worden niet geconcretiseerd en URL&#39;s voor deze bestanden worden direct samengesteld. De statische meningsdossiers worden gediend van [cachegeheugen](https://glossary.magento.com/cache) alleen.
-- Fouten worden bij het bestandssysteem geregistreerd en worden nooit aan de gebruiker weergegeven.
-- U kunt cachetypen in- en uitschakelen _alleen_ met de [opdrachtregel](../cli/manage-cache.md#config-cli-subcommands-cache-en).
-- U _kan_ Schakel cachetypen in of uit met behulp van Admin.
+- Statische weergavebestanden worden alleen via de cache verzonden
+- Fouten en uitzonderingen worden geregistreerd bij het bestandssysteem en worden nooit weergegeven bij de gebruiker
+- Sommige configuratievelden in de beheerder zijn niet beschikbaar
 
 ## Onderhoudsmodus
 
-Voer de toepassing Commerce in onderhoudsmodus uit om uw site offline te zetten terwijl u onderhouds-, upgrade- of configuratietaken uitvoert. In de onderhoudsmodus leidt de site de bezoekers om naar de standaardinstelling `Service Temporarily Unavailable` pagina.
+De _onderhoud_ de wijze beperkt of verhindert toegang tot een plaats tijdens verbeteringen, updates, en configuratietaken. Standaard leidt de site bezoekers om naar de standaardmap `Service Temporarily Unavailable` pagina.
 
-U kunt een [aangepaste onderhoudspagina](../../upgrade/troubleshooting/maintenance-mode-options.md), laat manueel en maakt onderhoudswijze onbruikbaar, en vormt onderhoudswijze om bezoekers van erkende IP adressen toe te staan om de opslag normaal te bekijken. Zie [de onderhoudsmodus in- en uitschakelen](../../installation/tutorials/maintenance-mode.md).
+U kunt een [aangepaste onderhoudspagina](../../upgrade/troubleshooting/maintenance-mode-options.md), laat manueel en maakt onderhoudswijze onbruikbaar, en vormt onderhoudswijze om bezoekers van erkende IP adressen toe te staan om de opslag normaal te bekijken. Zie [de onderhoudsmodus in- en uitschakelen](../../installation/tutorials/maintenance-mode.md) in de _Installatiehandleiding_.
 
 Als u Handel op wolkeninfrastructuur gebruikt, loopt de toepassing van de Handel op onderhoudswijze tijdens de opstellen fase. Wanneer de plaatsing met succes voltooit, keert de toepassing van de Handel aan lopende op productiemodus terug. Zie [Implementatiehaken](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/deploy/best-practices.html#phase-5%3A-deployment-hooks) in de _Handleiding Handel in Cloud-infrastructuur_.
+
+In de onderhoudsmodus:
+
+- Sitebezoekers worden omgeleid naar de standaardversie `Service Temporarily Unavailable` page
+- De `var/` bevat de map `.maintenance.flag` file
+- U kunt bezoekerstoegang beperken die op IP adressen wordt gebaseerd
