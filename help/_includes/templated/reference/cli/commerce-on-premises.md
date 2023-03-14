@@ -1,7 +1,7 @@
 ---
-source-git-commit: 23d55385046de18b238c90f6a99be692f1ce7561
+source-git-commit: 177f301802e1ab1d0560ee98594b8128440efa7c
 workflow-type: tm+mt
-source-wordcount: '15643'
+source-wordcount: '19444'
 ht-degree: 0%
 
 ---
@@ -11,9 +11,9 @@ ht-degree: 0%
 
 <!-- The template to render with above values -->
 
-**Versie**: 2.4.5.
+**Versie**: 2.4.6-bèta2
 
-Deze verwijzing bevat 118 bevelen beschikbaar door `bin/magento` opdrachtregelprogramma.
+Deze verwijzing bevat 130 bevelen beschikbaar door `bin/magento` opdrachtregelprogramma.
 De eerste lijst wordt automatisch gegenereerd met de opdracht `bin/magento list` in de editie.
 Gebruik de [&quot;CLI-opdrachten toevoegen&quot;](https://developer.adobe.com/commerce/php/development/cli-commands/) gids om een douane CLI bevel toe te voegen.
 
@@ -24,6 +24,158 @@ Gebruik de [&quot;CLI-opdrachten toevoegen&quot;](https://developer.adobe.com/co
 >[!NOTE]
 >
 >Deze verwijzing wordt gegenereerd op basis van de codebase van de toepassing. Als u de inhoud wilt wijzigen, kunt u de broncode voor de corresponderende opdrachtimplementatie bijwerken in het dialoogvenster [codebase](https://github.com/magento) opslaan en uw wijzigingen ter controle verzenden. Een andere manier is om _Feedback geven_ (zoek de koppeling in de rechterbovenhoek). Zie voor richtsnoeren voor bijdragen [Codebijdragen](https://developer.adobe.com/commerce/contributor/guides/code-contributions/).
+
+## `_complete`
+
+Interne opdracht voor suggesties voor shell-voltooiing
+
+```bash
+bin/magento _complete [-s|--shell SHELL] [-i|--input INPUT] [-c|--current CURRENT] [-S|--symfony SYMFONY]
+```
+
+### `--shell`, `-s`
+
+Het shell-type (&quot;bash&quot;)
+
+- Vereist een waarde
+
+### `--input`, `-i`
+
+Een array van invoertokens (bv. COMP_WORDS of argv)
+
+- Standaard: `[]`
+- Vereist een waarde
+
+### `--current`, `-c`
+
+De index van de &quot;input&quot;-array waarin de cursor zich bevindt (bijvoorbeeld COMP_CWORD)
+
+- Vereist een waarde
+
+### `--symfony`, `-S`
+
+De versie van het voltooiingsscript
+
+- Vereist een waarde
+
+### `--help`, `-h`
+
+Help weergeven voor de opgegeven opdracht. Wanneer geen bevel vertoningshulp voor wordt gegeven &lt;info>list&lt;/info> command
+
+- Standaard: `false`
+- Accepteert geen waarde
+
+### `--quiet`, `-q`
+
+Geen bericht uitvoeren
+
+- Standaard: `false`
+- Accepteert geen waarde
+
+### `--verbose`, `-v|-vv|-vvv`
+
+Verhoog de breedheid van berichten: 1 voor normale output, 2 voor meer uitgebreide output en 3 voor zuiveren
+
+- Standaard: `false`
+- Accepteert geen waarde
+
+### `--version`, `-V`
+
+Deze toepassingsversie weergeven
+
+- Standaard: `false`
+- Accepteert geen waarde
+
+### `--ansi`
+
+ANSI-uitvoer forceren (of uitschakelen —no-ansi)
+
+- Accepteert geen waarde
+
+### `--no-ansi`
+
+De optie &quot;—ansi&quot; negeren
+
+- Standaard: `false`
+- Accepteert geen waarde
+
+### `--no-interaction`, `-n`
+
+Geen interactieve vraag stellen
+
+- Standaard: `false`
+- Accepteert geen waarde
+
+
+## `completion`
+
+Het shell-voltooiingsscript dumpen
+
+```bash
+bin/magento completion [--debug] [--] [<shell>]
+```
+
+
+### `shell`
+
+Het shell-type (bijvoorbeeld &quot;bash&quot;), wordt de waarde van &quot;$SHELL&quot; env var gebruikt als dit niet wordt gegeven
+
+
+### `--debug`
+
+Tik op het logbestand voor foutopsporing bij voltooien
+
+- Standaard: `false`
+- Accepteert geen waarde
+
+### `--help`, `-h`
+
+Help weergeven voor de opgegeven opdracht. Wanneer geen bevel vertoningshulp voor wordt gegeven &lt;info>list&lt;/info> command
+
+- Standaard: `false`
+- Accepteert geen waarde
+
+### `--quiet`, `-q`
+
+Geen bericht uitvoeren
+
+- Standaard: `false`
+- Accepteert geen waarde
+
+### `--verbose`, `-v|-vv|-vvv`
+
+Verhoog de breedheid van berichten: 1 voor normale output, 2 voor meer uitgebreide output en 3 voor zuiveren
+
+- Standaard: `false`
+- Accepteert geen waarde
+
+### `--version`, `-V`
+
+Deze toepassingsversie weergeven
+
+- Standaard: `false`
+- Accepteert geen waarde
+
+### `--ansi`
+
+ANSI-uitvoer forceren (of uitschakelen —no-ansi)
+
+- Accepteert geen waarde
+
+### `--no-ansi`
+
+De optie &quot;—ansi&quot; negeren
+
+- Standaard: `false`
+- Accepteert geen waarde
+
+### `--no-interaction`, `-n`
+
+Geen interactieve vraag stellen
+
+- Standaard: `false`
+- Accepteert geen waarde
+
 
 ## `help`
 
@@ -57,7 +209,7 @@ Help bij de opdracht Uitvoeren
 
 ### `--help`, `-h`
 
-Dit Help-bericht weergeven
+Help weergeven voor de opgegeven opdracht. Wanneer geen bevel vertoningshulp voor wordt gegeven &lt;info>list&lt;/info> command
 
 - Standaard: `false`
 - Accepteert geen waarde
@@ -85,14 +237,13 @@ Deze toepassingsversie weergeven
 
 ### `--ansi`
 
-ANSI-uitvoer forceren
+ANSI-uitvoer forceren (of uitschakelen —no-ansi)
 
-- Standaard: `false`
 - Accepteert geen waarde
 
 ### `--no-ansi`
 
-ANSI-uitvoer uitschakelen
+De optie &quot;—ansi&quot; negeren
 
 - Standaard: `false`
 - Accepteert geen waarde
@@ -110,7 +261,7 @@ Geen interactieve vraag stellen
 Lijstopdrachten
 
 ```bash
-bin/magento list [--raw] [--format FORMAT] [--] [<namespace>]
+bin/magento list [--raw] [--format FORMAT] [--short] [--] [<namespace>]
 ```
 
 
@@ -133,18 +284,16 @@ De uitvoerindeling (txt, xml, json of md)
 - Standaard: `txt`
 - Vereist een waarde
 
+### `--short`
 
-## `admin:adobe-ims:disable`
+Om het beschrijven van de argumenten van bevelen over te slaan
 
-Adobe IMS-module uitschakelen
-
-```bash
-bin/magento admin:adobe-ims:disable
-```
+- Standaard: `false`
+- Accepteert geen waarde
 
 ### `--help`, `-h`
 
-Dit Help-bericht weergeven
+Help weergeven voor de opgegeven opdracht. Wanneer geen bevel vertoningshulp voor wordt gegeven &lt;info>list&lt;/info> command
 
 - Standaard: `false`
 - Accepteert geen waarde
@@ -172,14 +321,70 @@ Deze toepassingsversie weergeven
 
 ### `--ansi`
 
-ANSI-uitvoer forceren
+ANSI-uitvoer forceren (of uitschakelen —no-ansi)
 
-- Standaard: `false`
 - Accepteert geen waarde
 
 ### `--no-ansi`
 
-ANSI-uitvoer uitschakelen
+De optie &quot;—ansi&quot; negeren
+
+- Standaard: `false`
+- Accepteert geen waarde
+
+### `--no-interaction`, `-n`
+
+Geen interactieve vraag stellen
+
+- Standaard: `false`
+- Accepteert geen waarde
+
+
+## `admin:adobe-ims:disable`
+
+Adobe IMS-module uitschakelen
+
+```bash
+bin/magento admin:adobe-ims:disable
+```
+
+### `--help`, `-h`
+
+Help weergeven voor de opgegeven opdracht. Wanneer geen bevel vertoningshulp voor wordt gegeven &lt;info>list&lt;/info> command
+
+- Standaard: `false`
+- Accepteert geen waarde
+
+### `--quiet`, `-q`
+
+Geen bericht uitvoeren
+
+- Standaard: `false`
+- Accepteert geen waarde
+
+### `--verbose`, `-v|-vv|-vvv`
+
+Verhoog de breedheid van berichten: 1 voor normale output, 2 voor meer uitgebreide output en 3 voor zuiveren
+
+- Standaard: `false`
+- Accepteert geen waarde
+
+### `--version`, `-V`
+
+Deze toepassingsversie weergeven
+
+- Standaard: `false`
+- Accepteert geen waarde
+
+### `--ansi`
+
+ANSI-uitvoer forceren (of uitschakelen —no-ansi)
+
+- Accepteert geen waarde
+
+### `--no-ansi`
+
+De optie &quot;—ansi&quot; negeren
 
 - Standaard: `false`
 - Accepteert geen waarde
@@ -226,7 +431,7 @@ Controleer of 2FA is ingeschakeld voor Organisatie in Adobe Admin Console. Verei
 
 ### `--help`, `-h`
 
-Dit Help-bericht weergeven
+Help weergeven voor de opgegeven opdracht. Wanneer geen bevel vertoningshulp voor wordt gegeven &lt;info>list&lt;/info> command
 
 - Standaard: `false`
 - Accepteert geen waarde
@@ -254,14 +459,13 @@ Deze toepassingsversie weergeven
 
 ### `--ansi`
 
-ANSI-uitvoer forceren
+ANSI-uitvoer forceren (of uitschakelen —no-ansi)
 
-- Standaard: `false`
 - Accepteert geen waarde
 
 ### `--no-ansi`
 
-ANSI-uitvoer uitschakelen
+De optie &quot;—ansi&quot; negeren
 
 - Standaard: `false`
 - Accepteert geen waarde
@@ -284,7 +488,7 @@ bin/magento admin:adobe-ims:info
 
 ### `--help`, `-h`
 
-Dit Help-bericht weergeven
+Help weergeven voor de opgegeven opdracht. Wanneer geen bevel vertoningshulp voor wordt gegeven &lt;info>list&lt;/info> command
 
 - Standaard: `false`
 - Accepteert geen waarde
@@ -312,14 +516,13 @@ Deze toepassingsversie weergeven
 
 ### `--ansi`
 
-ANSI-uitvoer forceren
+ANSI-uitvoer forceren (of uitschakelen —no-ansi)
 
-- Standaard: `false`
 - Accepteert geen waarde
 
 ### `--no-ansi`
 
-ANSI-uitvoer uitschakelen
+De optie &quot;—ansi&quot; negeren
 
 - Standaard: `false`
 - Accepteert geen waarde
@@ -342,7 +545,7 @@ bin/magento admin:adobe-ims:status
 
 ### `--help`, `-h`
 
-Dit Help-bericht weergeven
+Help weergeven voor de opgegeven opdracht. Wanneer geen bevel vertoningshulp voor wordt gegeven &lt;info>list&lt;/info> command
 
 - Standaard: `false`
 - Accepteert geen waarde
@@ -370,14 +573,13 @@ Deze toepassingsversie weergeven
 
 ### `--ansi`
 
-ANSI-uitvoer forceren
+ANSI-uitvoer forceren (of uitschakelen —no-ansi)
 
-- Standaard: `false`
 - Accepteert geen waarde
 
 ### `--no-ansi`
 
-ANSI-uitvoer uitschakelen
+De optie &quot;—ansi&quot; negeren
 
 - Standaard: `false`
 - Accepteert geen waarde
@@ -436,7 +638,7 @@ Voeg aan om het even welke bevel toe om Magento initialisatieparameters aan te p
 
 ### `--help`, `-h`
 
-Dit Help-bericht weergeven
+Help weergeven voor de opgegeven opdracht. Wanneer geen bevel vertoningshulp voor wordt gegeven &lt;info>list&lt;/info> command
 
 - Standaard: `false`
 - Accepteert geen waarde
@@ -464,14 +666,13 @@ Deze toepassingsversie weergeven
 
 ### `--ansi`
 
-ANSI-uitvoer forceren
+ANSI-uitvoer forceren (of uitschakelen —no-ansi)
 
-- Standaard: `false`
 - Accepteert geen waarde
 
 ### `--no-ansi`
 
-ANSI-uitvoer uitschakelen
+De optie &quot;—ansi&quot; negeren
 
 - Standaard: `false`
 - Accepteert geen waarde
@@ -501,7 +702,7 @@ De te ontgrendelen admin-gebruikersnaam
 
 ### `--help`, `-h`
 
-Dit Help-bericht weergeven
+Help weergeven voor de opgegeven opdracht. Wanneer geen bevel vertoningshulp voor wordt gegeven &lt;info>list&lt;/info> command
 
 - Standaard: `false`
 - Accepteert geen waarde
@@ -529,14 +730,13 @@ Deze toepassingsversie weergeven
 
 ### `--ansi`
 
-ANSI-uitvoer forceren
+ANSI-uitvoer forceren (of uitschakelen —no-ansi)
 
-- Standaard: `false`
 - Accepteert geen waarde
 
 ### `--no-ansi`
 
-ANSI-uitvoer uitschakelen
+De optie &quot;—ansi&quot; negeren
 
 - Standaard: `false`
 - Accepteert geen waarde
@@ -560,7 +760,7 @@ bin/magento app:config:dump [<config-types>...]
 
 ### `config-types`
 
-Lijst met door spaties gescheiden configuratietypen of het weglaten om alles te dumpen [bereik, thema&#39;s, systeem, i18n]
+Lijst met door spaties gescheiden configuratietypen of het weglaten om alles te dumpen [bereik, systeem, thema&#39;s, i18n]
 
 - Standaard: `[]`
 
@@ -568,7 +768,7 @@ Lijst met door spaties gescheiden configuratietypen of het weglaten om alles te 
 
 ### `--help`, `-h`
 
-Dit Help-bericht weergeven
+Help weergeven voor de opgegeven opdracht. Wanneer geen bevel vertoningshulp voor wordt gegeven &lt;info>list&lt;/info> command
 
 - Standaard: `false`
 - Accepteert geen waarde
@@ -596,14 +796,13 @@ Deze toepassingsversie weergeven
 
 ### `--ansi`
 
-ANSI-uitvoer forceren
+ANSI-uitvoer forceren (of uitschakelen —no-ansi)
 
-- Standaard: `false`
 - Accepteert geen waarde
 
 ### `--no-ansi`
 
-ANSI-uitvoer uitschakelen
+De optie &quot;—ansi&quot; negeren
 
 - Standaard: `false`
 - Accepteert geen waarde
@@ -626,7 +825,7 @@ bin/magento app:config:import
 
 ### `--help`, `-h`
 
-Dit Help-bericht weergeven
+Help weergeven voor de opgegeven opdracht. Wanneer geen bevel vertoningshulp voor wordt gegeven &lt;info>list&lt;/info> command
 
 - Standaard: `false`
 - Accepteert geen waarde
@@ -654,14 +853,13 @@ Deze toepassingsversie weergeven
 
 ### `--ansi`
 
-ANSI-uitvoer forceren
+ANSI-uitvoer forceren (of uitschakelen —no-ansi)
 
-- Standaard: `false`
 - Accepteert geen waarde
 
 ### `--no-ansi`
 
-ANSI-uitvoer uitschakelen
+De optie &quot;—ansi&quot; negeren
 
 - Standaard: `false`
 - Accepteert geen waarde
@@ -684,7 +882,7 @@ bin/magento app:config:status
 
 ### `--help`, `-h`
 
-Dit Help-bericht weergeven
+Help weergeven voor de opgegeven opdracht. Wanneer geen bevel vertoningshulp voor wordt gegeven &lt;info>list&lt;/info> command
 
 - Standaard: `false`
 - Accepteert geen waarde
@@ -712,14 +910,13 @@ Deze toepassingsversie weergeven
 
 ### `--ansi`
 
-ANSI-uitvoer forceren
+ANSI-uitvoer forceren (of uitschakelen —no-ansi)
 
-- Standaard: `false`
 - Accepteert geen waarde
 
 ### `--no-ansi`
 
-ANSI-uitvoer uitschakelen
+De optie &quot;—ansi&quot; negeren
 
 - Standaard: `false`
 - Accepteert geen waarde
@@ -766,7 +963,7 @@ Wachtwoord
 
 ### `--help`, `-h`
 
-Dit Help-bericht weergeven
+Help weergeven voor de opgegeven opdracht. Wanneer geen bevel vertoningshulp voor wordt gegeven &lt;info>list&lt;/info> command
 
 - Standaard: `false`
 - Accepteert geen waarde
@@ -794,14 +991,13 @@ Deze toepassingsversie weergeven
 
 ### `--ansi`
 
-ANSI-uitvoer forceren
+ANSI-uitvoer forceren (of uitschakelen —no-ansi)
 
-- Standaard: `false`
 - Accepteert geen waarde
 
 ### `--no-ansi`
 
-ANSI-uitvoer uitschakelen
+De optie &quot;—ansi&quot; negeren
 
 - Standaard: `false`
 - Accepteert geen waarde
@@ -839,7 +1035,7 @@ parameters van de bootstrap toevoegen of overschrijven
 
 ### `--help`, `-h`
 
-Dit Help-bericht weergeven
+Help weergeven voor de opgegeven opdracht. Wanneer geen bevel vertoningshulp voor wordt gegeven &lt;info>list&lt;/info> command
 
 - Standaard: `false`
 - Accepteert geen waarde
@@ -867,14 +1063,13 @@ Deze toepassingsversie weergeven
 
 ### `--ansi`
 
-ANSI-uitvoer forceren
+ANSI-uitvoer forceren (of uitschakelen —no-ansi)
 
-- Standaard: `false`
 - Accepteert geen waarde
 
 ### `--no-ansi`
 
-ANSI-uitvoer uitschakelen
+De optie &quot;—ansi&quot; negeren
 
 - Standaard: `false`
 - Accepteert geen waarde
@@ -912,7 +1107,7 @@ parameters van de bootstrap toevoegen of overschrijven
 
 ### `--help`, `-h`
 
-Dit Help-bericht weergeven
+Help weergeven voor de opgegeven opdracht. Wanneer geen bevel vertoningshulp voor wordt gegeven &lt;info>list&lt;/info> command
 
 - Standaard: `false`
 - Accepteert geen waarde
@@ -940,14 +1135,13 @@ Deze toepassingsversie weergeven
 
 ### `--ansi`
 
-ANSI-uitvoer forceren
+ANSI-uitvoer forceren (of uitschakelen —no-ansi)
 
-- Standaard: `false`
 - Accepteert geen waarde
 
 ### `--no-ansi`
 
-ANSI-uitvoer uitschakelen
+De optie &quot;—ansi&quot; negeren
 
 - Standaard: `false`
 - Accepteert geen waarde
@@ -985,7 +1179,7 @@ parameters van de bootstrap toevoegen of overschrijven
 
 ### `--help`, `-h`
 
-Dit Help-bericht weergeven
+Help weergeven voor de opgegeven opdracht. Wanneer geen bevel vertoningshulp voor wordt gegeven &lt;info>list&lt;/info> command
 
 - Standaard: `false`
 - Accepteert geen waarde
@@ -1013,14 +1207,13 @@ Deze toepassingsversie weergeven
 
 ### `--ansi`
 
-ANSI-uitvoer forceren
+ANSI-uitvoer forceren (of uitschakelen —no-ansi)
 
-- Standaard: `false`
 - Accepteert geen waarde
 
 ### `--no-ansi`
 
-ANSI-uitvoer uitschakelen
+De optie &quot;—ansi&quot; negeren
 
 - Standaard: `false`
 - Accepteert geen waarde
@@ -1058,7 +1251,7 @@ parameters van de bootstrap toevoegen of overschrijven
 
 ### `--help`, `-h`
 
-Dit Help-bericht weergeven
+Help weergeven voor de opgegeven opdracht. Wanneer geen bevel vertoningshulp voor wordt gegeven &lt;info>list&lt;/info> command
 
 - Standaard: `false`
 - Accepteert geen waarde
@@ -1086,14 +1279,13 @@ Deze toepassingsversie weergeven
 
 ### `--ansi`
 
-ANSI-uitvoer forceren
+ANSI-uitvoer forceren (of uitschakelen —no-ansi)
 
-- Standaard: `false`
 - Accepteert geen waarde
 
 ### `--no-ansi`
 
-ANSI-uitvoer uitschakelen
+De optie &quot;—ansi&quot; negeren
 
 - Standaard: `false`
 - Accepteert geen waarde
@@ -1122,7 +1314,7 @@ parameters van de bootstrap toevoegen of overschrijven
 
 ### `--help`, `-h`
 
-Dit Help-bericht weergeven
+Help weergeven voor de opgegeven opdracht. Wanneer geen bevel vertoningshulp voor wordt gegeven &lt;info>list&lt;/info> command
 
 - Standaard: `false`
 - Accepteert geen waarde
@@ -1150,14 +1342,13 @@ Deze toepassingsversie weergeven
 
 ### `--ansi`
 
-ANSI-uitvoer forceren
+ANSI-uitvoer forceren (of uitschakelen —no-ansi)
 
-- Standaard: `false`
 - Accepteert geen waarde
 
 ### `--no-ansi`
 
-ANSI-uitvoer uitschakelen
+De optie &quot;—ansi&quot; negeren
 
 - Standaard: `false`
 - Accepteert geen waarde
@@ -1194,7 +1385,7 @@ Afbeeldingen die als verborgen op de productpagina zijn gemarkeerd, niet verwerk
 
 ### `--help`, `-h`
 
-Dit Help-bericht weergeven
+Help weergeven voor de opgegeven opdracht. Wanneer geen bevel vertoningshulp voor wordt gegeven &lt;info>list&lt;/info> command
 
 - Standaard: `false`
 - Accepteert geen waarde
@@ -1222,14 +1413,13 @@ Deze toepassingsversie weergeven
 
 ### `--ansi`
 
-ANSI-uitvoer forceren
+ANSI-uitvoer forceren (of uitschakelen —no-ansi)
 
-- Standaard: `false`
 - Accepteert geen waarde
 
 ### `--no-ansi`
 
-ANSI-uitvoer uitschakelen
+De optie &quot;—ansi&quot; negeren
 
 - Standaard: `false`
 - Accepteert geen waarde
@@ -1252,7 +1442,7 @@ bin/magento catalog:product:attributes:cleanup
 
 ### `--help`, `-h`
 
-Dit Help-bericht weergeven
+Help weergeven voor de opgegeven opdracht. Wanneer geen bevel vertoningshulp voor wordt gegeven &lt;info>list&lt;/info> command
 
 - Standaard: `false`
 - Accepteert geen waarde
@@ -1280,14 +1470,13 @@ Deze toepassingsversie weergeven
 
 ### `--ansi`
 
-ANSI-uitvoer forceren
+ANSI-uitvoer forceren (of uitschakelen —no-ansi)
 
-- Standaard: `false`
 - Accepteert geen waarde
 
 ### `--no-ansi`
 
-ANSI-uitvoer uitschakelen
+De optie &quot;—ansi&quot; negeren
 
 - Standaard: `false`
 - Accepteert geen waarde
@@ -1317,7 +1506,7 @@ y\n
 
 ### `--help`, `-h`
 
-Dit Help-bericht weergeven
+Help weergeven voor de opgegeven opdracht. Wanneer geen bevel vertoningshulp voor wordt gegeven &lt;info>list&lt;/info> command
 
 - Standaard: `false`
 - Accepteert geen waarde
@@ -1345,14 +1534,13 @@ Deze toepassingsversie weergeven
 
 ### `--ansi`
 
-ANSI-uitvoer forceren
+ANSI-uitvoer forceren (of uitschakelen —no-ansi)
 
-- Standaard: `false`
 - Accepteert geen waarde
 
 ### `--no-ansi`
 
-ANSI-uitvoer uitschakelen
+De optie &quot;—ansi&quot; negeren
 
 - Standaard: `false`
 - Accepteert geen waarde
@@ -1407,7 +1595,7 @@ Toepassingscode voor configuratie, standaard lege tekenreeks
 
 ### `--help`, `-h`
 
-Dit Help-bericht weergeven
+Help weergeven voor de opgegeven opdracht. Wanneer geen bevel vertoningshulp voor wordt gegeven &lt;info>list&lt;/info> command
 
 - Standaard: `false`
 - Accepteert geen waarde
@@ -1435,14 +1623,13 @@ Deze toepassingsversie weergeven
 
 ### `--ansi`
 
-ANSI-uitvoer forceren
+ANSI-uitvoer forceren (of uitschakelen —no-ansi)
 
-- Standaard: `false`
 - Accepteert geen waarde
 
 ### `--no-ansi`
 
-ANSI-uitvoer uitschakelen
+De optie &quot;—ansi&quot; negeren
 
 - Standaard: `false`
 - Accepteert geen waarde
@@ -1512,7 +1699,7 @@ Vervangen, gebruik in plaats hiervan de optie —lock-env.
 
 ### `--help`, `-h`
 
-Dit Help-bericht weergeven
+Help weergeven voor de opgegeven opdracht. Wanneer geen bevel vertoningshulp voor wordt gegeven &lt;info>list&lt;/info> command
 
 - Standaard: `false`
 - Accepteert geen waarde
@@ -1540,14 +1727,13 @@ Deze toepassingsversie weergeven
 
 ### `--ansi`
 
-ANSI-uitvoer forceren
+ANSI-uitvoer forceren (of uitschakelen —no-ansi)
 
-- Standaard: `false`
 - Accepteert geen waarde
 
 ### `--no-ansi`
 
-ANSI-uitvoer uitschakelen
+De optie &quot;—ansi&quot; negeren
 
 - Standaard: `false`
 - Accepteert geen waarde
@@ -1590,7 +1776,7 @@ Code bereik (alleen vereist als het bereik niet is ingesteld) `default`)
 
 ### `--help`, `-h`
 
-Dit Help-bericht weergeven
+Help weergeven voor de opgegeven opdracht. Wanneer geen bevel vertoningshulp voor wordt gegeven &lt;info>list&lt;/info> command
 
 - Standaard: `false`
 - Accepteert geen waarde
@@ -1618,14 +1804,13 @@ Deze toepassingsversie weergeven
 
 ### `--ansi`
 
-ANSI-uitvoer forceren
+ANSI-uitvoer forceren (of uitschakelen —no-ansi)
 
-- Standaard: `false`
 - Accepteert geen waarde
 
 ### `--no-ansi`
 
-ANSI-uitvoer uitschakelen
+De optie &quot;—ansi&quot; negeren
 
 - Standaard: `false`
 - Accepteert geen waarde
@@ -1662,7 +1847,7 @@ Alleen de niet-optionele (standaard)taken installeren
 
 ### `--help`, `-h`
 
-Dit Help-bericht weergeven
+Help weergeven voor de opgegeven opdracht. Wanneer geen bevel vertoningshulp voor wordt gegeven &lt;info>list&lt;/info> command
 
 - Standaard: `false`
 - Accepteert geen waarde
@@ -1690,14 +1875,13 @@ Deze toepassingsversie weergeven
 
 ### `--ansi`
 
-ANSI-uitvoer forceren
+ANSI-uitvoer forceren (of uitschakelen —no-ansi)
 
-- Standaard: `false`
 - Accepteert geen waarde
 
 ### `--no-ansi`
 
-ANSI-uitvoer uitschakelen
+De optie &quot;—ansi&quot; negeren
 
 - Standaard: `false`
 - Accepteert geen waarde
@@ -1720,7 +1904,7 @@ bin/magento cron:remove
 
 ### `--help`, `-h`
 
-Dit Help-bericht weergeven
+Help weergeven voor de opgegeven opdracht. Wanneer geen bevel vertoningshulp voor wordt gegeven &lt;info>list&lt;/info> command
 
 - Standaard: `false`
 - Accepteert geen waarde
@@ -1748,14 +1932,13 @@ Deze toepassingsversie weergeven
 
 ### `--ansi`
 
-ANSI-uitvoer forceren
+ANSI-uitvoer forceren (of uitschakelen —no-ansi)
 
-- Standaard: `false`
 - Accepteert geen waarde
 
 ### `--no-ansi`
 
-ANSI-uitvoer uitschakelen
+De optie &quot;—ansi&quot; negeren
 
 - Standaard: `false`
 - Accepteert geen waarde
@@ -1790,7 +1973,7 @@ Parameters van de bootstrap toevoegen of overschrijven
 
 ### `--help`, `-h`
 
-Dit Help-bericht weergeven
+Help weergeven voor de opgegeven opdracht. Wanneer geen bevel vertoningshulp voor wordt gegeven &lt;info>list&lt;/info> command
 
 - Standaard: `false`
 - Accepteert geen waarde
@@ -1818,14 +2001,13 @@ Deze toepassingsversie weergeven
 
 ### `--ansi`
 
-ANSI-uitvoer forceren
+ANSI-uitvoer forceren (of uitschakelen —no-ansi)
 
-- Standaard: `false`
 - Accepteert geen waarde
 
 ### `--no-ansi`
 
-ANSI-uitvoer uitschakelen
+De optie &quot;—ansi&quot; negeren
 
 - Standaard: `false`
 - Accepteert geen waarde
@@ -1848,7 +2030,7 @@ bin/magento customer:hash:upgrade
 
 ### `--help`, `-h`
 
-Dit Help-bericht weergeven
+Help weergeven voor de opgegeven opdracht. Wanneer geen bevel vertoningshulp voor wordt gegeven &lt;info>list&lt;/info> command
 
 - Standaard: `false`
 - Accepteert geen waarde
@@ -1876,14 +2058,13 @@ Deze toepassingsversie weergeven
 
 ### `--ansi`
 
-ANSI-uitvoer forceren
+ANSI-uitvoer forceren (of uitschakelen —no-ansi)
 
-- Standaard: `false`
 - Accepteert geen waarde
 
 ### `--no-ansi`
 
-ANSI-uitvoer uitschakelen
+De optie &quot;—ansi&quot; negeren
 
 - Standaard: `false`
 - Accepteert geen waarde
@@ -1920,7 +2101,7 @@ Hiermee slaat u het wissen en opnieuw genereren van statische inhoud (gegenereer
 
 ### `--help`, `-h`
 
-Dit Help-bericht weergeven
+Help weergeven voor de opgegeven opdracht. Wanneer geen bevel vertoningshulp voor wordt gegeven &lt;info>list&lt;/info> command
 
 - Standaard: `false`
 - Accepteert geen waarde
@@ -1948,14 +2129,13 @@ Deze toepassingsversie weergeven
 
 ### `--ansi`
 
-ANSI-uitvoer forceren
+ANSI-uitvoer forceren (of uitschakelen —no-ansi)
 
-- Standaard: `false`
 - Accepteert geen waarde
 
 ### `--no-ansi`
 
-ANSI-uitvoer uitschakelen
+De optie &quot;—ansi&quot; negeren
 
 - Standaard: `false`
 - Accepteert geen waarde
@@ -1978,7 +2158,7 @@ bin/magento deploy:mode:show
 
 ### `--help`, `-h`
 
-Dit Help-bericht weergeven
+Help weergeven voor de opgegeven opdracht. Wanneer geen bevel vertoningshulp voor wordt gegeven &lt;info>list&lt;/info> command
 
 - Standaard: `false`
 - Accepteert geen waarde
@@ -2006,14 +2186,13 @@ Deze toepassingsversie weergeven
 
 ### `--ansi`
 
-ANSI-uitvoer forceren
+ANSI-uitvoer forceren (of uitschakelen —no-ansi)
 
-- Standaard: `false`
 - Accepteert geen waarde
 
 ### `--no-ansi`
 
-ANSI-uitvoer uitschakelen
+De optie &quot;—ansi&quot; negeren
 
 - Standaard: `false`
 - Accepteert geen waarde
@@ -2043,7 +2222,7 @@ Klassenaam
 
 ### `--help`, `-h`
 
-Dit Help-bericht weergeven
+Help weergeven voor de opgegeven opdracht. Wanneer geen bevel vertoningshulp voor wordt gegeven &lt;info>list&lt;/info> command
 
 - Standaard: `false`
 - Accepteert geen waarde
@@ -2071,14 +2250,13 @@ Deze toepassingsversie weergeven
 
 ### `--ansi`
 
-ANSI-uitvoer forceren
+ANSI-uitvoer forceren (of uitschakelen —no-ansi)
 
-- Standaard: `false`
 - Accepteert geen waarde
 
 ### `--no-ansi`
 
-ANSI-uitvoer uitschakelen
+De optie &quot;—ansi&quot; negeren
 
 - Standaard: `false`
 - Accepteert geen waarde
@@ -2101,7 +2279,7 @@ bin/magento dev:email:newsletter-compatibility-check
 
 ### `--help`, `-h`
 
-Dit Help-bericht weergeven
+Help weergeven voor de opgegeven opdracht. Wanneer geen bevel vertoningshulp voor wordt gegeven &lt;info>list&lt;/info> command
 
 - Standaard: `false`
 - Accepteert geen waarde
@@ -2129,14 +2307,13 @@ Deze toepassingsversie weergeven
 
 ### `--ansi`
 
-ANSI-uitvoer forceren
+ANSI-uitvoer forceren (of uitschakelen —no-ansi)
 
-- Standaard: `false`
 - Accepteert geen waarde
 
 ### `--no-ansi`
 
-ANSI-uitvoer uitschakelen
+De optie &quot;—ansi&quot; negeren
 
 - Standaard: `false`
 - Accepteert geen waarde
@@ -2159,7 +2336,7 @@ bin/magento dev:email:override-compatibility-check
 
 ### `--help`, `-h`
 
-Dit Help-bericht weergeven
+Help weergeven voor de opgegeven opdracht. Wanneer geen bevel vertoningshulp voor wordt gegeven &lt;info>list&lt;/info> command
 
 - Standaard: `false`
 - Accepteert geen waarde
@@ -2187,14 +2364,13 @@ Deze toepassingsversie weergeven
 
 ### `--ansi`
 
-ANSI-uitvoer forceren
+ANSI-uitvoer forceren (of uitschakelen —no-ansi)
 
-- Standaard: `false`
 - Accepteert geen waarde
 
 ### `--no-ansi`
 
-ANSI-uitvoer uitschakelen
+De optie &quot;—ansi&quot; negeren
 
 - Standaard: `false`
 - Accepteert geen waarde
@@ -2217,7 +2393,7 @@ bin/magento dev:profiler:disable
 
 ### `--help`, `-h`
 
-Dit Help-bericht weergeven
+Help weergeven voor de opgegeven opdracht. Wanneer geen bevel vertoningshulp voor wordt gegeven &lt;info>list&lt;/info> command
 
 - Standaard: `false`
 - Accepteert geen waarde
@@ -2245,14 +2421,13 @@ Deze toepassingsversie weergeven
 
 ### `--ansi`
 
-ANSI-uitvoer forceren
+ANSI-uitvoer forceren (of uitschakelen —no-ansi)
 
-- Standaard: `false`
 - Accepteert geen waarde
 
 ### `--no-ansi`
 
-ANSI-uitvoer uitschakelen
+De optie &quot;—ansi&quot; negeren
 
 - Standaard: `false`
 - Accepteert geen waarde
@@ -2281,7 +2456,7 @@ Het type Profiler
 
 ### `--help`, `-h`
 
-Dit Help-bericht weergeven
+Help weergeven voor de opgegeven opdracht. Wanneer geen bevel vertoningshulp voor wordt gegeven &lt;info>list&lt;/info> command
 
 - Standaard: `false`
 - Accepteert geen waarde
@@ -2309,14 +2484,13 @@ Deze toepassingsversie weergeven
 
 ### `--ansi`
 
-ANSI-uitvoer forceren
+ANSI-uitvoer forceren (of uitschakelen —no-ansi)
 
-- Standaard: `false`
 - Accepteert geen waarde
 
 ### `--no-ansi`
 
-ANSI-uitvoer uitschakelen
+De optie &quot;—ansi&quot; negeren
 
 - Standaard: `false`
 - Accepteert geen waarde
@@ -2339,7 +2513,7 @@ bin/magento dev:query-log:disable
 
 ### `--help`, `-h`
 
-Dit Help-bericht weergeven
+Help weergeven voor de opgegeven opdracht. Wanneer geen bevel vertoningshulp voor wordt gegeven &lt;info>list&lt;/info> command
 
 - Standaard: `false`
 - Accepteert geen waarde
@@ -2367,14 +2541,13 @@ Deze toepassingsversie weergeven
 
 ### `--ansi`
 
-ANSI-uitvoer forceren
+ANSI-uitvoer forceren (of uitschakelen —no-ansi)
 
-- Standaard: `false`
 - Accepteert geen waarde
 
 ### `--no-ansi`
 
-ANSI-uitvoer uitschakelen
+De optie &quot;—ansi&quot; negeren
 
 - Standaard: `false`
 - Accepteert geen waarde
@@ -2418,7 +2591,7 @@ Inclusief aanroepstack. [true\|false]
 
 ### `--help`, `-h`
 
-Dit Help-bericht weergeven
+Help weergeven voor de opgegeven opdracht. Wanneer geen bevel vertoningshulp voor wordt gegeven &lt;info>list&lt;/info> command
 
 - Standaard: `false`
 - Accepteert geen waarde
@@ -2446,14 +2619,13 @@ Deze toepassingsversie weergeven
 
 ### `--ansi`
 
-ANSI-uitvoer forceren
+ANSI-uitvoer forceren (of uitschakelen —no-ansi)
 
-- Standaard: `false`
 - Accepteert geen waarde
 
 ### `--no-ansi`
 
-ANSI-uitvoer uitschakelen
+De optie &quot;—ansi&quot; negeren
 
 - Standaard: `false`
 - Accepteert geen waarde
@@ -2513,7 +2685,7 @@ Thema: [Leverancier/thema]
 
 ### `--help`, `-h`
 
-Dit Help-bericht weergeven
+Help weergeven voor de opgegeven opdracht. Wanneer geen bevel vertoningshulp voor wordt gegeven &lt;info>list&lt;/info> command
 
 - Standaard: `false`
 - Accepteert geen waarde
@@ -2541,14 +2713,13 @@ Deze toepassingsversie weergeven
 
 ### `--ansi`
 
-ANSI-uitvoer forceren
+ANSI-uitvoer forceren (of uitschakelen —no-ansi)
 
-- Standaard: `false`
 - Accepteert geen waarde
 
 ### `--no-ansi`
 
-ANSI-uitvoer uitschakelen
+De optie &quot;—ansi&quot; negeren
 
 - Standaard: `false`
 - Accepteert geen waarde
@@ -2571,7 +2742,7 @@ bin/magento dev:template-hints:disable
 
 ### `--help`, `-h`
 
-Dit Help-bericht weergeven
+Help weergeven voor de opgegeven opdracht. Wanneer geen bevel vertoningshulp voor wordt gegeven &lt;info>list&lt;/info> command
 
 - Standaard: `false`
 - Accepteert geen waarde
@@ -2599,14 +2770,13 @@ Deze toepassingsversie weergeven
 
 ### `--ansi`
 
-ANSI-uitvoer forceren
+ANSI-uitvoer forceren (of uitschakelen —no-ansi)
 
-- Standaard: `false`
 - Accepteert geen waarde
 
 ### `--no-ansi`
 
-ANSI-uitvoer uitschakelen
+De optie &quot;—ansi&quot; negeren
 
 - Standaard: `false`
 - Accepteert geen waarde
@@ -2629,7 +2799,7 @@ bin/magento dev:template-hints:enable
 
 ### `--help`, `-h`
 
-Dit Help-bericht weergeven
+Help weergeven voor de opgegeven opdracht. Wanneer geen bevel vertoningshulp voor wordt gegeven &lt;info>list&lt;/info> command
 
 - Standaard: `false`
 - Accepteert geen waarde
@@ -2657,14 +2827,13 @@ Deze toepassingsversie weergeven
 
 ### `--ansi`
 
-ANSI-uitvoer forceren
+ANSI-uitvoer forceren (of uitschakelen —no-ansi)
 
-- Standaard: `false`
 - Accepteert geen waarde
 
 ### `--no-ansi`
 
-ANSI-uitvoer uitschakelen
+De optie &quot;—ansi&quot; negeren
 
 - Standaard: `false`
 - Accepteert geen waarde
@@ -2687,7 +2856,7 @@ bin/magento dev:template-hints:status
 
 ### `--help`, `-h`
 
-Dit Help-bericht weergeven
+Help weergeven voor de opgegeven opdracht. Wanneer geen bevel vertoningshulp voor wordt gegeven &lt;info>list&lt;/info> command
 
 - Standaard: `false`
 - Accepteert geen waarde
@@ -2715,14 +2884,13 @@ Deze toepassingsversie weergeven
 
 ### `--ansi`
 
-ANSI-uitvoer forceren
+ANSI-uitvoer forceren (of uitschakelen —no-ansi)
 
-- Standaard: `false`
 - Accepteert geen waarde
 
 ### `--no-ansi`
 
-ANSI-uitvoer uitschakelen
+De optie &quot;—ansi&quot; negeren
 
 - Standaard: `false`
 - Accepteert geen waarde
@@ -2760,7 +2928,7 @@ Aanvullende argumenten voor PHPUnit. Voorbeeld: &quot;-c&#39;—filter=MyTest&#3
 
 ### `--help`, `-h`
 
-Dit Help-bericht weergeven
+Help weergeven voor de opgegeven opdracht. Wanneer geen bevel vertoningshulp voor wordt gegeven &lt;info>list&lt;/info> command
 
 - Standaard: `false`
 - Accepteert geen waarde
@@ -2788,14 +2956,13 @@ Deze toepassingsversie weergeven
 
 ### `--ansi`
 
-ANSI-uitvoer forceren
+ANSI-uitvoer forceren (of uitschakelen —no-ansi)
 
-- Standaard: `false`
 - Accepteert geen waarde
 
 ### `--no-ansi`
 
-ANSI-uitvoer uitschakelen
+De optie &quot;—ansi&quot; negeren
 
 - Standaard: `false`
 - Accepteert geen waarde
@@ -2832,7 +2999,7 @@ Indeling waarin de catalogus wordt gegenereerd. Ondersteund: [phpstorm, vscode]
 
 ### `--help`, `-h`
 
-Dit Help-bericht weergeven
+Help weergeven voor de opgegeven opdracht. Wanneer geen bevel vertoningshulp voor wordt gegeven &lt;info>list&lt;/info> command
 
 - Standaard: `false`
 - Accepteert geen waarde
@@ -2860,14 +3027,13 @@ Deze toepassingsversie weergeven
 
 ### `--ansi`
 
-ANSI-uitvoer forceren
+ANSI-uitvoer forceren (of uitschakelen —no-ansi)
 
-- Standaard: `false`
 - Accepteert geen waarde
 
 ### `--no-ansi`
 
-ANSI-uitvoer uitschakelen
+De optie &quot;—ansi&quot; negeren
 
 - Standaard: `false`
 - Accepteert geen waarde
@@ -2910,7 +3076,7 @@ XML-bestand overschrijven
 
 ### `--help`, `-h`
 
-Dit Help-bericht weergeven
+Help weergeven voor de opgegeven opdracht. Wanneer geen bevel vertoningshulp voor wordt gegeven &lt;info>list&lt;/info> command
 
 - Standaard: `false`
 - Accepteert geen waarde
@@ -2938,14 +3104,13 @@ Deze toepassingsversie weergeven
 
 ### `--ansi`
 
-ANSI-uitvoer forceren
+ANSI-uitvoer forceren (of uitschakelen —no-ansi)
 
-- Standaard: `false`
 - Accepteert geen waarde
 
 ### `--no-ansi`
 
-ANSI-uitvoer uitschakelen
+De optie &quot;—ansi&quot; negeren
 
 - Standaard: `false`
 - Accepteert geen waarde
@@ -2977,7 +3142,7 @@ Naam van domein
 
 ### `--help`, `-h`
 
-Dit Help-bericht weergeven
+Help weergeven voor de opgegeven opdracht. Wanneer geen bevel vertoningshulp voor wordt gegeven &lt;info>list&lt;/info> command
 
 - Standaard: `false`
 - Accepteert geen waarde
@@ -3005,14 +3170,13 @@ Deze toepassingsversie weergeven
 
 ### `--ansi`
 
-ANSI-uitvoer forceren
+ANSI-uitvoer forceren (of uitschakelen —no-ansi)
 
-- Standaard: `false`
 - Accepteert geen waarde
 
 ### `--no-ansi`
 
-ANSI-uitvoer uitschakelen
+De optie &quot;—ansi&quot; negeren
 
 - Standaard: `false`
 - Accepteert geen waarde
@@ -3044,7 +3208,7 @@ Domeinnamen
 
 ### `--help`, `-h`
 
-Dit Help-bericht weergeven
+Help weergeven voor de opgegeven opdracht. Wanneer geen bevel vertoningshulp voor wordt gegeven &lt;info>list&lt;/info> command
 
 - Standaard: `false`
 - Accepteert geen waarde
@@ -3072,14 +3236,13 @@ Deze toepassingsversie weergeven
 
 ### `--ansi`
 
-ANSI-uitvoer forceren
+ANSI-uitvoer forceren (of uitschakelen —no-ansi)
 
-- Standaard: `false`
 - Accepteert geen waarde
 
 ### `--no-ansi`
 
-ANSI-uitvoer uitschakelen
+De optie &quot;—ansi&quot; negeren
 
 - Standaard: `false`
 - Accepteert geen waarde
@@ -3102,7 +3265,7 @@ bin/magento downloadable:domains:show
 
 ### `--help`, `-h`
 
-Dit Help-bericht weergeven
+Help weergeven voor de opgegeven opdracht. Wanneer geen bevel vertoningshulp voor wordt gegeven &lt;info>list&lt;/info> command
 
 - Standaard: `false`
 - Accepteert geen waarde
@@ -3130,14 +3293,13 @@ Deze toepassingsversie weergeven
 
 ### `--ansi`
 
-ANSI-uitvoer forceren
+ANSI-uitvoer forceren (of uitschakelen —no-ansi)
 
-- Standaard: `false`
 - Accepteert geen waarde
 
 ### `--no-ansi`
 
-ANSI-uitvoer uitschakelen
+De optie &quot;—ansi&quot; negeren
 
 - Standaard: `false`
 - Accepteert geen waarde
@@ -3160,7 +3322,7 @@ bin/magento encryption:payment-data:update
 
 ### `--help`, `-h`
 
-Dit Help-bericht weergeven
+Help weergeven voor de opgegeven opdracht. Wanneer geen bevel vertoningshulp voor wordt gegeven &lt;info>list&lt;/info> command
 
 - Standaard: `false`
 - Accepteert geen waarde
@@ -3188,14 +3350,612 @@ Deze toepassingsversie weergeven
 
 ### `--ansi`
 
-ANSI-uitvoer forceren
+ANSI-uitvoer forceren (of uitschakelen —no-ansi)
 
-- Standaard: `false`
 - Accepteert geen waarde
 
 ### `--no-ansi`
 
-ANSI-uitvoer uitschakelen
+De optie &quot;—ansi&quot; negeren
+
+- Standaard: `false`
+- Accepteert geen waarde
+
+### `--no-interaction`, `-n`
+
+Geen interactieve vraag stellen
+
+- Standaard: `false`
+- Accepteert geen waarde
+
+
+## `events:create-event-provider`
+
+Maak een aangepaste gebeurtenisprovider in Adobe I/O Events voor deze instantie. Als u de label- en beschrijvingsopties niet opgeeft, moeten deze worden gedefinieerd in het bestand system app/etc/event-types.json.
+
+```bash
+bin/magento events:create-event-provider [--label [LABEL]] [--description [DESCRIPTION]]
+```
+
+
+```bash
+bin/magento events:provider:create 
+```
+
+### `--label`
+
+Een label om uw aangepaste provider te definiëren.
+
+- Accepteert een waarde
+
+### `--description`
+
+Een beschrijving van uw provider.
+
+- Accepteert een waarde
+
+### `--help`, `-h`
+
+Help weergeven voor de opgegeven opdracht. Wanneer geen bevel vertoningshulp voor wordt gegeven &lt;info>list&lt;/info> command
+
+- Standaard: `false`
+- Accepteert geen waarde
+
+### `--quiet`, `-q`
+
+Geen bericht uitvoeren
+
+- Standaard: `false`
+- Accepteert geen waarde
+
+### `--verbose`, `-v|-vv|-vvv`
+
+Verhoog de breedheid van berichten: 1 voor normale output, 2 voor meer uitgebreide output en 3 voor zuiveren
+
+- Standaard: `false`
+- Accepteert geen waarde
+
+### `--version`, `-V`
+
+Deze toepassingsversie weergeven
+
+- Standaard: `false`
+- Accepteert geen waarde
+
+### `--ansi`
+
+ANSI-uitvoer forceren (of uitschakelen —no-ansi)
+
+- Accepteert geen waarde
+
+### `--no-ansi`
+
+De optie &quot;—ansi&quot; negeren
+
+- Standaard: `false`
+- Accepteert geen waarde
+
+### `--no-interaction`, `-n`
+
+Geen interactieve vraag stellen
+
+- Standaard: `false`
+- Accepteert geen waarde
+
+
+## `events:generate:module`
+
+Module genereren op basis van de lijst met insteekmodules
+
+```bash
+bin/magento events:generate:module
+```
+
+### `--help`, `-h`
+
+Help weergeven voor de opgegeven opdracht. Wanneer geen bevel vertoningshulp voor wordt gegeven &lt;info>list&lt;/info> command
+
+- Standaard: `false`
+- Accepteert geen waarde
+
+### `--quiet`, `-q`
+
+Geen bericht uitvoeren
+
+- Standaard: `false`
+- Accepteert geen waarde
+
+### `--verbose`, `-v|-vv|-vvv`
+
+Verhoog de breedheid van berichten: 1 voor normale output, 2 voor meer uitgebreide output en 3 voor zuiveren
+
+- Standaard: `false`
+- Accepteert geen waarde
+
+### `--version`, `-V`
+
+Deze toepassingsversie weergeven
+
+- Standaard: `false`
+- Accepteert geen waarde
+
+### `--ansi`
+
+ANSI-uitvoer forceren (of uitschakelen —no-ansi)
+
+- Accepteert geen waarde
+
+### `--no-ansi`
+
+De optie &quot;—ansi&quot; negeren
+
+- Standaard: `false`
+- Accepteert geen waarde
+
+### `--no-interaction`, `-n`
+
+Geen interactieve vraag stellen
+
+- Standaard: `false`
+- Accepteert geen waarde
+
+
+## `events:info`
+
+Retourneert de payload van de opgegeven gebeurtenis.
+
+```bash
+bin/magento events:info [--depth [DEPTH]] [--] <event-code>
+```
+
+
+### `event-code`
+
+Gebeurteniscode
+
+- Vereist
+
+### `--depth`
+
+Het aantal niveaus in de gebeurtenislading om terug te keren
+
+- Standaard: `2`
+- Accepteert een waarde
+
+### `--help`, `-h`
+
+Help weergeven voor de opgegeven opdracht. Wanneer geen bevel vertoningshulp voor wordt gegeven &lt;info>list&lt;/info> command
+
+- Standaard: `false`
+- Accepteert geen waarde
+
+### `--quiet`, `-q`
+
+Geen bericht uitvoeren
+
+- Standaard: `false`
+- Accepteert geen waarde
+
+### `--verbose`, `-v|-vv|-vvv`
+
+Verhoog de breedheid van berichten: 1 voor normale output, 2 voor meer uitgebreide output en 3 voor zuiveren
+
+- Standaard: `false`
+- Accepteert geen waarde
+
+### `--version`, `-V`
+
+Deze toepassingsversie weergeven
+
+- Standaard: `false`
+- Accepteert geen waarde
+
+### `--ansi`
+
+ANSI-uitvoer forceren (of uitschakelen —no-ansi)
+
+- Accepteert geen waarde
+
+### `--no-ansi`
+
+De optie &quot;—ansi&quot; negeren
+
+- Standaard: `false`
+- Accepteert geen waarde
+
+### `--no-interaction`, `-n`
+
+Geen interactieve vraag stellen
+
+- Standaard: `false`
+- Accepteert geen waarde
+
+
+## `events:list`
+
+Geeft een lijst met geabonneerde gebeurtenissen weer
+
+```bash
+bin/magento events:list
+```
+
+### `--help`, `-h`
+
+Help weergeven voor de opgegeven opdracht. Wanneer geen bevel vertoningshulp voor wordt gegeven &lt;info>list&lt;/info> command
+
+- Standaard: `false`
+- Accepteert geen waarde
+
+### `--quiet`, `-q`
+
+Geen bericht uitvoeren
+
+- Standaard: `false`
+- Accepteert geen waarde
+
+### `--verbose`, `-v|-vv|-vvv`
+
+Verhoog de breedheid van berichten: 1 voor normale output, 2 voor meer uitgebreide output en 3 voor zuiveren
+
+- Standaard: `false`
+- Accepteert geen waarde
+
+### `--version`, `-V`
+
+Deze toepassingsversie weergeven
+
+- Standaard: `false`
+- Accepteert geen waarde
+
+### `--ansi`
+
+ANSI-uitvoer forceren (of uitschakelen —no-ansi)
+
+- Accepteert geen waarde
+
+### `--no-ansi`
+
+De optie &quot;—ansi&quot; negeren
+
+- Standaard: `false`
+- Accepteert geen waarde
+
+### `--no-interaction`, `-n`
+
+Geen interactieve vraag stellen
+
+- Standaard: `false`
+- Accepteert geen waarde
+
+
+## `events:list:all`
+
+Hiermee wordt een lijst geretourneerd met abonnementsgebeurtenissen die in de opgegeven module zijn gedefinieerd
+
+```bash
+bin/magento events:list:all <module_name>
+```
+
+
+### `module_name`
+
+Modulenaam
+
+- Vereist
+
+### `--help`, `-h`
+
+Help weergeven voor de opgegeven opdracht. Wanneer geen bevel vertoningshulp voor wordt gegeven &lt;info>list&lt;/info> command
+
+- Standaard: `false`
+- Accepteert geen waarde
+
+### `--quiet`, `-q`
+
+Geen bericht uitvoeren
+
+- Standaard: `false`
+- Accepteert geen waarde
+
+### `--verbose`, `-v|-vv|-vvv`
+
+Verhoog de breedheid van berichten: 1 voor normale output, 2 voor meer uitgebreide output en 3 voor zuiveren
+
+- Standaard: `false`
+- Accepteert geen waarde
+
+### `--version`, `-V`
+
+Deze toepassingsversie weergeven
+
+- Standaard: `false`
+- Accepteert geen waarde
+
+### `--ansi`
+
+ANSI-uitvoer forceren (of uitschakelen —no-ansi)
+
+- Accepteert geen waarde
+
+### `--no-ansi`
+
+De optie &quot;—ansi&quot; negeren
+
+- Standaard: `false`
+- Accepteert geen waarde
+
+### `--no-interaction`, `-n`
+
+Geen interactieve vraag stellen
+
+- Standaard: `false`
+- Accepteert geen waarde
+
+
+## `events:metadata:populate`
+
+Hiermee maakt u metagegevens in Adobe I/O op basis van de configuratielijst (XML en toepassingsconfiguraties)
+
+```bash
+bin/magento events:metadata:populate
+```
+
+### `--help`, `-h`
+
+Help weergeven voor de opgegeven opdracht. Wanneer geen bevel vertoningshulp voor wordt gegeven &lt;info>list&lt;/info> command
+
+- Standaard: `false`
+- Accepteert geen waarde
+
+### `--quiet`, `-q`
+
+Geen bericht uitvoeren
+
+- Standaard: `false`
+- Accepteert geen waarde
+
+### `--verbose`, `-v|-vv|-vvv`
+
+Verhoog de breedheid van berichten: 1 voor normale output, 2 voor meer uitgebreide output en 3 voor zuiveren
+
+- Standaard: `false`
+- Accepteert geen waarde
+
+### `--version`, `-V`
+
+Deze toepassingsversie weergeven
+
+- Standaard: `false`
+- Accepteert geen waarde
+
+### `--ansi`
+
+ANSI-uitvoer forceren (of uitschakelen —no-ansi)
+
+- Accepteert geen waarde
+
+### `--no-ansi`
+
+De optie &quot;—ansi&quot; negeren
+
+- Standaard: `false`
+- Accepteert geen waarde
+
+### `--no-interaction`, `-n`
+
+Geen interactieve vraag stellen
+
+- Standaard: `false`
+- Accepteert geen waarde
+
+
+## `events:subscribe`
+
+Abonneren op de gebeurtenis
+
+```bash
+bin/magento events:subscribe [-f|--force] [--fields FIELDS] [--parent PARENT] [--rules RULES] [--] <event-code>
+```
+
+
+### `event-code`
+
+Gebeurteniscode
+
+- Vereist
+
+### `--force`, `-f`
+
+Dwingt de gespecificeerde gebeurtenis om worden ingetekend, zelfs als het niet plaatselijk is bepaald.
+
+- Standaard: `false`
+- Accepteert geen waarde
+
+### `--fields`
+
+De lijst met velden in de payload van gebeurtenisgegevens.
+
+- Standaard: `[]`
+- Vereist een waarde
+
+### `--parent`
+
+De bovenliggende gebeurteniscode voor een gebeurtenisabonnement met regels.
+
+- Vereist een waarde
+
+### `--rules`
+
+De lijst met regels voor het gebeurtenisabonnement, waarbij elke regel is opgemaakt als &quot;field\|operator\|value&quot;.
+
+- Standaard: `[]`
+- Vereist een waarde
+
+### `--help`, `-h`
+
+Help weergeven voor de opgegeven opdracht. Wanneer geen bevel vertoningshulp voor wordt gegeven &lt;info>list&lt;/info> command
+
+- Standaard: `false`
+- Accepteert geen waarde
+
+### `--quiet`, `-q`
+
+Geen bericht uitvoeren
+
+- Standaard: `false`
+- Accepteert geen waarde
+
+### `--verbose`, `-v|-vv|-vvv`
+
+Verhoog de breedheid van berichten: 1 voor normale output, 2 voor meer uitgebreide output en 3 voor zuiveren
+
+- Standaard: `false`
+- Accepteert geen waarde
+
+### `--version`, `-V`
+
+Deze toepassingsversie weergeven
+
+- Standaard: `false`
+- Accepteert geen waarde
+
+### `--ansi`
+
+ANSI-uitvoer forceren (of uitschakelen —no-ansi)
+
+- Accepteert geen waarde
+
+### `--no-ansi`
+
+De optie &quot;—ansi&quot; negeren
+
+- Standaard: `false`
+- Accepteert geen waarde
+
+### `--no-interaction`, `-n`
+
+Geen interactieve vraag stellen
+
+- Standaard: `false`
+- Accepteert geen waarde
+
+
+## `events:sync-events-metadata`
+
+Metagegevens van gebeurtenissen synchroniseren voor deze instantie
+
+```bash
+bin/magento events:sync-events-metadata [-d|--delete]
+```
+
+### `--delete`, `-d`
+
+Metagegevens van gebeurtenissen verwijderen is niet langer vereist
+
+- Standaard: `false`
+- Accepteert geen waarde
+
+### `--help`, `-h`
+
+Help weergeven voor de opgegeven opdracht. Wanneer geen bevel vertoningshulp voor wordt gegeven &lt;info>list&lt;/info> command
+
+- Standaard: `false`
+- Accepteert geen waarde
+
+### `--quiet`, `-q`
+
+Geen bericht uitvoeren
+
+- Standaard: `false`
+- Accepteert geen waarde
+
+### `--verbose`, `-v|-vv|-vvv`
+
+Verhoog de breedheid van berichten: 1 voor normale output, 2 voor meer uitgebreide output en 3 voor zuiveren
+
+- Standaard: `false`
+- Accepteert geen waarde
+
+### `--version`, `-V`
+
+Deze toepassingsversie weergeven
+
+- Standaard: `false`
+- Accepteert geen waarde
+
+### `--ansi`
+
+ANSI-uitvoer forceren (of uitschakelen —no-ansi)
+
+- Accepteert geen waarde
+
+### `--no-ansi`
+
+De optie &quot;—ansi&quot; negeren
+
+- Standaard: `false`
+- Accepteert geen waarde
+
+### `--no-interaction`, `-n`
+
+Geen interactieve vraag stellen
+
+- Standaard: `false`
+- Accepteert geen waarde
+
+
+## `events:unsubscribe`
+
+Hiermee wordt het abonnement op de opgegeven gebeurtenis verwijderd
+
+```bash
+bin/magento events:unsubscribe <event-code>
+```
+
+
+### `event-code`
+
+Gebeurteniscode waarvan abonnement moet worden opgezegd
+
+- Vereist
+
+### `--help`, `-h`
+
+Help weergeven voor de opgegeven opdracht. Wanneer geen bevel vertoningshulp voor wordt gegeven &lt;info>list&lt;/info> command
+
+- Standaard: `false`
+- Accepteert geen waarde
+
+### `--quiet`, `-q`
+
+Geen bericht uitvoeren
+
+- Standaard: `false`
+- Accepteert geen waarde
+
+### `--verbose`, `-v|-vv|-vvv`
+
+Verhoog de breedheid van berichten: 1 voor normale output, 2 voor meer uitgebreide output en 3 voor zuiveren
+
+- Standaard: `false`
+- Accepteert geen waarde
+
+### `--version`, `-V`
+
+Deze toepassingsversie weergeven
+
+- Standaard: `false`
+- Accepteert geen waarde
+
+### `--ansi`
+
+ANSI-uitvoer forceren (of uitschakelen —no-ansi)
+
+- Accepteert geen waarde
+
+### `--no-ansi`
+
+De optie &quot;—ansi&quot; negeren
 
 - Standaard: `false`
 - Accepteert geen waarde
@@ -3237,7 +3997,7 @@ Gebruik de parameter —magento om de huidige Magento-codebase te parseren. Laat
 
 ### `--help`, `-h`
 
-Dit Help-bericht weergeven
+Help weergeven voor de opgegeven opdracht. Wanneer geen bevel vertoningshulp voor wordt gegeven &lt;info>list&lt;/info> command
 
 - Standaard: `false`
 - Accepteert geen waarde
@@ -3265,14 +4025,13 @@ Deze toepassingsversie weergeven
 
 ### `--ansi`
 
-ANSI-uitvoer forceren
+ANSI-uitvoer forceren (of uitschakelen —no-ansi)
 
-- Standaard: `false`
 - Accepteert geen waarde
 
 ### `--no-ansi`
 
-ANSI-uitvoer uitschakelen
+De optie &quot;—ansi&quot; negeren
 
 - Standaard: `false`
 - Accepteert geen waarde
@@ -3322,7 +4081,7 @@ Gebruik de parameter —allow-duplicates om het opslaan van duplicaten van trans
 
 ### `--help`, `-h`
 
-Dit Help-bericht weergeven
+Help weergeven voor de opgegeven opdracht. Wanneer geen bevel vertoningshulp voor wordt gegeven &lt;info>list&lt;/info> command
 
 - Standaard: `false`
 - Accepteert geen waarde
@@ -3350,14 +4109,13 @@ Deze toepassingsversie weergeven
 
 ### `--ansi`
 
-ANSI-uitvoer forceren
+ANSI-uitvoer forceren (of uitschakelen —no-ansi)
 
-- Standaard: `false`
 - Accepteert geen waarde
 
 ### `--no-ansi`
 
-ANSI-uitvoer uitschakelen
+De optie &quot;—ansi&quot; negeren
 
 - Standaard: `false`
 - Accepteert geen waarde
@@ -3397,7 +4155,7 @@ Back-up maken van code- en configuratiebestanden (met uitzondering van tijdelijk
 
 ### `--help`, `-h`
 
-Dit Help-bericht weergeven
+Help weergeven voor de opgegeven opdracht. Wanneer geen bevel vertoningshulp voor wordt gegeven &lt;info>list&lt;/info> command
 
 - Standaard: `false`
 - Accepteert geen waarde
@@ -3425,14 +4183,13 @@ Deze toepassingsversie weergeven
 
 ### `--ansi`
 
-ANSI-uitvoer forceren
+ANSI-uitvoer forceren (of uitschakelen —no-ansi)
 
-- Standaard: `false`
 - Accepteert geen waarde
 
 ### `--no-ansi`
 
-ANSI-uitvoer uitschakelen
+De optie &quot;—ansi&quot; negeren
 
 - Standaard: `false`
 - Accepteert geen waarde
@@ -3455,7 +4212,7 @@ bin/magento indexer:info
 
 ### `--help`, `-h`
 
-Dit Help-bericht weergeven
+Help weergeven voor de opgegeven opdracht. Wanneer geen bevel vertoningshulp voor wordt gegeven &lt;info>list&lt;/info> command
 
 - Standaard: `false`
 - Accepteert geen waarde
@@ -3483,14 +4240,13 @@ Deze toepassingsversie weergeven
 
 ### `--ansi`
 
-ANSI-uitvoer forceren
+ANSI-uitvoer forceren (of uitschakelen —no-ansi)
 
-- Standaard: `false`
 - Accepteert geen waarde
 
 ### `--no-ansi`
 
-ANSI-uitvoer uitschakelen
+De optie &quot;—ansi&quot; negeren
 
 - Standaard: `false`
 - Accepteert geen waarde
@@ -3522,7 +4278,7 @@ Lijst met door spaties gescheiden indextypen of laat toe om op alle indexen toe 
 
 ### `--help`, `-h`
 
-Dit Help-bericht weergeven
+Help weergeven voor de opgegeven opdracht. Wanneer geen bevel vertoningshulp voor wordt gegeven &lt;info>list&lt;/info> command
 
 - Standaard: `false`
 - Accepteert geen waarde
@@ -3550,14 +4306,13 @@ Deze toepassingsversie weergeven
 
 ### `--ansi`
 
-ANSI-uitvoer forceren
+ANSI-uitvoer forceren (of uitschakelen —no-ansi)
 
-- Standaard: `false`
 - Accepteert geen waarde
 
 ### `--no-ansi`
 
-ANSI-uitvoer uitschakelen
+De optie &quot;—ansi&quot; negeren
 
 - Standaard: `false`
 - Accepteert geen waarde
@@ -3589,7 +4344,7 @@ Lijst met door spaties gescheiden indextypen of laat toe om op alle indexen toe 
 
 ### `--help`, `-h`
 
-Dit Help-bericht weergeven
+Help weergeven voor de opgegeven opdracht. Wanneer geen bevel vertoningshulp voor wordt gegeven &lt;info>list&lt;/info> command
 
 - Standaard: `false`
 - Accepteert geen waarde
@@ -3617,14 +4372,13 @@ Deze toepassingsversie weergeven
 
 ### `--ansi`
 
-ANSI-uitvoer forceren
+ANSI-uitvoer forceren (of uitschakelen —no-ansi)
 
-- Standaard: `false`
 - Accepteert geen waarde
 
 ### `--no-ansi`
 
-ANSI-uitvoer uitschakelen
+De optie &quot;—ansi&quot; negeren
 
 - Standaard: `false`
 - Accepteert geen waarde
@@ -3658,7 +4412,7 @@ Indexer-dimensie-modi catalog_product_price none,website,customer_group,website_
 
 ### `--help`, `-h`
 
-Dit Help-bericht weergeven
+Help weergeven voor de opgegeven opdracht. Wanneer geen bevel vertoningshulp voor wordt gegeven &lt;info>list&lt;/info> command
 
 - Standaard: `false`
 - Accepteert geen waarde
@@ -3686,14 +4440,13 @@ Deze toepassingsversie weergeven
 
 ### `--ansi`
 
-ANSI-uitvoer forceren
+ANSI-uitvoer forceren (of uitschakelen —no-ansi)
 
-- Standaard: `false`
 - Accepteert geen waarde
 
 ### `--no-ansi`
 
-ANSI-uitvoer uitschakelen
+De optie &quot;—ansi&quot; negeren
 
 - Standaard: `false`
 - Accepteert geen waarde
@@ -3730,7 +4483,7 @@ Lijst met door spaties gescheiden indextypen of laat toe om op alle indexen toe 
 
 ### `--help`, `-h`
 
-Dit Help-bericht weergeven
+Help weergeven voor de opgegeven opdracht. Wanneer geen bevel vertoningshulp voor wordt gegeven &lt;info>list&lt;/info> command
 
 - Standaard: `false`
 - Accepteert geen waarde
@@ -3758,14 +4511,13 @@ Deze toepassingsversie weergeven
 
 ### `--ansi`
 
-ANSI-uitvoer forceren
+ANSI-uitvoer forceren (of uitschakelen —no-ansi)
 
-- Standaard: `false`
 - Accepteert geen waarde
 
 ### `--no-ansi`
 
-ANSI-uitvoer uitschakelen
+De optie &quot;—ansi&quot; negeren
 
 - Standaard: `false`
 - Accepteert geen waarde
@@ -3797,7 +4549,7 @@ Lijst met door spaties gescheiden indextypen of laat deze weg om toe te passen o
 
 ### `--help`, `-h`
 
-Dit Help-bericht weergeven
+Help weergeven voor de opgegeven opdracht. Wanneer geen bevel vertoningshulp voor wordt gegeven &lt;info>list&lt;/info> command
 
 - Standaard: `false`
 - Accepteert geen waarde
@@ -3825,14 +4577,13 @@ Deze toepassingsversie weergeven
 
 ### `--ansi`
 
-ANSI-uitvoer forceren
+ANSI-uitvoer forceren (of uitschakelen —no-ansi)
 
-- Standaard: `false`
 - Accepteert geen waarde
 
 ### `--no-ansi`
 
-ANSI-uitvoer uitschakelen
+De optie &quot;—ansi&quot; negeren
 
 - Standaard: `false`
 - Accepteert geen waarde
@@ -3864,7 +4615,7 @@ Lijst met door spaties gescheiden indextypen of laat toe om op alle indexen toe 
 
 ### `--help`, `-h`
 
-Dit Help-bericht weergeven
+Help weergeven voor de opgegeven opdracht. Wanneer geen bevel vertoningshulp voor wordt gegeven &lt;info>list&lt;/info> command
 
 - Standaard: `false`
 - Accepteert geen waarde
@@ -3892,14 +4643,13 @@ Deze toepassingsversie weergeven
 
 ### `--ansi`
 
-ANSI-uitvoer forceren
+ANSI-uitvoer forceren (of uitschakelen —no-ansi)
 
-- Standaard: `false`
 - Accepteert geen waarde
 
 ### `--no-ansi`
 
-ANSI-uitvoer uitschakelen
+De optie &quot;—ansi&quot; negeren
 
 - Standaard: `false`
 - Accepteert geen waarde
@@ -3931,7 +4681,7 @@ Lijst met door spaties gescheiden indextypen of laat toe om op alle indexen toe 
 
 ### `--help`, `-h`
 
-Dit Help-bericht weergeven
+Help weergeven voor de opgegeven opdracht. Wanneer geen bevel vertoningshulp voor wordt gegeven &lt;info>list&lt;/info> command
 
 - Standaard: `false`
 - Accepteert geen waarde
@@ -3959,14 +4709,13 @@ Deze toepassingsversie weergeven
 
 ### `--ansi`
 
-ANSI-uitvoer forceren
+ANSI-uitvoer forceren (of uitschakelen —no-ansi)
 
-- Standaard: `false`
 - Accepteert geen waarde
 
 ### `--no-ansi`
 
-ANSI-uitvoer uitschakelen
+De optie &quot;—ansi&quot; negeren
 
 - Standaard: `false`
 - Accepteert geen waarde
@@ -3989,7 +4738,7 @@ bin/magento info:adminuri
 
 ### `--help`, `-h`
 
-Dit Help-bericht weergeven
+Help weergeven voor de opgegeven opdracht. Wanneer geen bevel vertoningshulp voor wordt gegeven &lt;info>list&lt;/info> command
 
 - Standaard: `false`
 - Accepteert geen waarde
@@ -4017,14 +4766,13 @@ Deze toepassingsversie weergeven
 
 ### `--ansi`
 
-ANSI-uitvoer forceren
+ANSI-uitvoer forceren (of uitschakelen —no-ansi)
 
-- Standaard: `false`
 - Accepteert geen waarde
 
 ### `--no-ansi`
 
-ANSI-uitvoer uitschakelen
+De optie &quot;—ansi&quot; negeren
 
 - Standaard: `false`
 - Accepteert geen waarde
@@ -4047,7 +4795,7 @@ bin/magento info:backups:list
 
 ### `--help`, `-h`
 
-Dit Help-bericht weergeven
+Help weergeven voor de opgegeven opdracht. Wanneer geen bevel vertoningshulp voor wordt gegeven &lt;info>list&lt;/info> command
 
 - Standaard: `false`
 - Accepteert geen waarde
@@ -4075,14 +4823,13 @@ Deze toepassingsversie weergeven
 
 ### `--ansi`
 
-ANSI-uitvoer forceren
+ANSI-uitvoer forceren (of uitschakelen —no-ansi)
 
-- Standaard: `false`
 - Accepteert geen waarde
 
 ### `--no-ansi`
 
-ANSI-uitvoer uitschakelen
+De optie &quot;—ansi&quot; negeren
 
 - Standaard: `false`
 - Accepteert geen waarde
@@ -4105,7 +4852,7 @@ bin/magento info:currency:list
 
 ### `--help`, `-h`
 
-Dit Help-bericht weergeven
+Help weergeven voor de opgegeven opdracht. Wanneer geen bevel vertoningshulp voor wordt gegeven &lt;info>list&lt;/info> command
 
 - Standaard: `false`
 - Accepteert geen waarde
@@ -4133,14 +4880,13 @@ Deze toepassingsversie weergeven
 
 ### `--ansi`
 
-ANSI-uitvoer forceren
+ANSI-uitvoer forceren (of uitschakelen —no-ansi)
 
-- Standaard: `false`
 - Accepteert geen waarde
 
 ### `--no-ansi`
 
-ANSI-uitvoer uitschakelen
+De optie &quot;—ansi&quot; negeren
 
 - Standaard: `false`
 - Accepteert geen waarde
@@ -4170,7 +4916,7 @@ Bestandsnaam rapport
 
 ### `--help`, `-h`
 
-Dit Help-bericht weergeven
+Help weergeven voor de opgegeven opdracht. Wanneer geen bevel vertoningshulp voor wordt gegeven &lt;info>list&lt;/info> command
 
 - Standaard: `false`
 - Accepteert geen waarde
@@ -4198,14 +4944,13 @@ Deze toepassingsversie weergeven
 
 ### `--ansi`
 
-ANSI-uitvoer forceren
+ANSI-uitvoer forceren (of uitschakelen —no-ansi)
 
-- Standaard: `false`
 - Accepteert geen waarde
 
 ### `--no-ansi`
 
-ANSI-uitvoer uitschakelen
+De optie &quot;—ansi&quot; negeren
 
 - Standaard: `false`
 - Accepteert geen waarde
@@ -4235,7 +4980,7 @@ Bestandsnaam rapport
 
 ### `--help`, `-h`
 
-Dit Help-bericht weergeven
+Help weergeven voor de opgegeven opdracht. Wanneer geen bevel vertoningshulp voor wordt gegeven &lt;info>list&lt;/info> command
 
 - Standaard: `false`
 - Accepteert geen waarde
@@ -4263,14 +5008,13 @@ Deze toepassingsversie weergeven
 
 ### `--ansi`
 
-ANSI-uitvoer forceren
+ANSI-uitvoer forceren (of uitschakelen —no-ansi)
 
-- Standaard: `false`
 - Accepteert geen waarde
 
 ### `--no-ansi`
 
-ANSI-uitvoer uitschakelen
+De optie &quot;—ansi&quot; negeren
 
 - Standaard: `false`
 - Accepteert geen waarde
@@ -4300,7 +5044,7 @@ Bestandsnaam rapport
 
 ### `--help`, `-h`
 
-Dit Help-bericht weergeven
+Help weergeven voor de opgegeven opdracht. Wanneer geen bevel vertoningshulp voor wordt gegeven &lt;info>list&lt;/info> command
 
 - Standaard: `false`
 - Accepteert geen waarde
@@ -4328,14 +5072,13 @@ Deze toepassingsversie weergeven
 
 ### `--ansi`
 
-ANSI-uitvoer forceren
+ANSI-uitvoer forceren (of uitschakelen —no-ansi)
 
-- Standaard: `false`
 - Accepteert geen waarde
 
 ### `--no-ansi`
 
-ANSI-uitvoer uitschakelen
+De optie &quot;—ansi&quot; negeren
 
 - Standaard: `false`
 - Accepteert geen waarde
@@ -4358,7 +5101,7 @@ bin/magento info:language:list
 
 ### `--help`, `-h`
 
-Dit Help-bericht weergeven
+Help weergeven voor de opgegeven opdracht. Wanneer geen bevel vertoningshulp voor wordt gegeven &lt;info>list&lt;/info> command
 
 - Standaard: `false`
 - Accepteert geen waarde
@@ -4386,14 +5129,13 @@ Deze toepassingsversie weergeven
 
 ### `--ansi`
 
-ANSI-uitvoer forceren
+ANSI-uitvoer forceren (of uitschakelen —no-ansi)
 
-- Standaard: `false`
 - Accepteert geen waarde
 
 ### `--no-ansi`
 
-ANSI-uitvoer uitschakelen
+De optie &quot;—ansi&quot; negeren
 
 - Standaard: `false`
 - Accepteert geen waarde
@@ -4416,7 +5158,7 @@ bin/magento info:timezone:list
 
 ### `--help`, `-h`
 
-Dit Help-bericht weergeven
+Help weergeven voor de opgegeven opdracht. Wanneer geen bevel vertoningshulp voor wordt gegeven &lt;info>list&lt;/info> command
 
 - Standaard: `false`
 - Accepteert geen waarde
@@ -4444,14 +5186,13 @@ Deze toepassingsversie weergeven
 
 ### `--ansi`
 
-ANSI-uitvoer forceren
+ANSI-uitvoer forceren (of uitschakelen —no-ansi)
 
-- Standaard: `false`
 - Accepteert geen waarde
 
 ### `--no-ansi`
 
-ANSI-uitvoer uitschakelen
+De optie &quot;—ansi&quot; negeren
 
 - Standaard: `false`
 - Accepteert geen waarde
@@ -4490,7 +5231,7 @@ Onbewerkte uitvoer
 
 ### `--help`, `-h`
 
-Dit Help-bericht weergeven
+Help weergeven voor de opgegeven opdracht. Wanneer geen bevel vertoningshulp voor wordt gegeven &lt;info>list&lt;/info> command
 
 - Standaard: `false`
 - Accepteert geen waarde
@@ -4518,14 +5259,13 @@ Deze toepassingsversie weergeven
 
 ### `--ansi`
 
-ANSI-uitvoer forceren
+ANSI-uitvoer forceren (of uitschakelen —no-ansi)
 
-- Standaard: `false`
 - Accepteert geen waarde
 
 ### `--no-ansi`
 
-ANSI-uitvoer uitschakelen
+De optie &quot;—ansi&quot; negeren
 
 - Standaard: `false`
 - Accepteert geen waarde
@@ -4576,7 +5316,7 @@ Onbewerkte uitvoer
 
 ### `--help`, `-h`
 
-Dit Help-bericht weergeven
+Help weergeven voor de opgegeven opdracht. Wanneer geen bevel vertoningshulp voor wordt gegeven &lt;info>list&lt;/info> command
 
 - Standaard: `false`
 - Accepteert geen waarde
@@ -4604,14 +5344,13 @@ Deze toepassingsversie weergeven
 
 ### `--ansi`
 
-ANSI-uitvoer forceren
+ANSI-uitvoer forceren (of uitschakelen —no-ansi)
 
-- Standaard: `false`
 - Accepteert geen waarde
 
 ### `--no-ansi`
 
-ANSI-uitvoer uitschakelen
+De optie &quot;—ansi&quot; negeren
 
 - Standaard: `false`
 - Accepteert geen waarde
@@ -4644,7 +5383,7 @@ Lijst van landcodes die moeten worden ingevoerd
 
 ### `--help`, `-h`
 
-Dit Help-bericht weergeven
+Help weergeven voor de opgegeven opdracht. Wanneer geen bevel vertoningshulp voor wordt gegeven &lt;info>list&lt;/info> command
 
 - Standaard: `false`
 - Accepteert geen waarde
@@ -4672,14 +5411,13 @@ Deze toepassingsversie weergeven
 
 ### `--ansi`
 
-ANSI-uitvoer forceren
+ANSI-uitvoer forceren (of uitschakelen —no-ansi)
 
-- Standaard: `false`
 - Accepteert geen waarde
 
 ### `--no-ansi`
 
-ANSI-uitvoer uitschakelen
+De optie &quot;—ansi&quot; negeren
 
 - Standaard: `false`
 - Accepteert geen waarde
@@ -4731,7 +5469,7 @@ Voeg aan om het even welke bevel toe om Magento initialisatieparameters aan te p
 
 ### `--help`, `-h`
 
-Dit Help-bericht weergeven
+Help weergeven voor de opgegeven opdracht. Wanneer geen bevel vertoningshulp voor wordt gegeven &lt;info>list&lt;/info> command
 
 - Standaard: `false`
 - Accepteert geen waarde
@@ -4759,14 +5497,13 @@ Deze toepassingsversie weergeven
 
 ### `--ansi`
 
-ANSI-uitvoer forceren
+ANSI-uitvoer forceren (of uitschakelen —no-ansi)
 
-- Standaard: `false`
 - Accepteert geen waarde
 
 ### `--no-ansi`
 
-ANSI-uitvoer uitschakelen
+De optie &quot;—ansi&quot; negeren
 
 - Standaard: `false`
 - Accepteert geen waarde
@@ -4802,7 +5539,7 @@ Voeg aan om het even welke bevel toe om Magento initialisatieparameters aan te p
 
 ### `--help`, `-h`
 
-Dit Help-bericht weergeven
+Help weergeven voor de opgegeven opdracht. Wanneer geen bevel vertoningshulp voor wordt gegeven &lt;info>list&lt;/info> command
 
 - Standaard: `false`
 - Accepteert geen waarde
@@ -4830,14 +5567,13 @@ Deze toepassingsversie weergeven
 
 ### `--ansi`
 
-ANSI-uitvoer forceren
+ANSI-uitvoer forceren (of uitschakelen —no-ansi)
 
-- Standaard: `false`
 - Accepteert geen waarde
 
 ### `--no-ansi`
 
-ANSI-uitvoer uitschakelen
+De optie &quot;—ansi&quot; negeren
 
 - Standaard: `false`
 - Accepteert geen waarde
@@ -4873,7 +5609,7 @@ Voeg aan om het even welke bevel toe om Magento initialisatieparameters aan te p
 
 ### `--help`, `-h`
 
-Dit Help-bericht weergeven
+Help weergeven voor de opgegeven opdracht. Wanneer geen bevel vertoningshulp voor wordt gegeven &lt;info>list&lt;/info> command
 
 - Standaard: `false`
 - Accepteert geen waarde
@@ -4901,14 +5637,13 @@ Deze toepassingsversie weergeven
 
 ### `--ansi`
 
-ANSI-uitvoer forceren
+ANSI-uitvoer forceren (of uitschakelen —no-ansi)
 
-- Standaard: `false`
 - Accepteert geen waarde
 
 ### `--no-ansi`
 
-ANSI-uitvoer uitschakelen
+De optie &quot;—ansi&quot; negeren
 
 - Standaard: `false`
 - Accepteert geen waarde
@@ -4937,7 +5672,7 @@ Voeg aan om het even welke bevel toe om Magento initialisatieparameters aan te p
 
 ### `--help`, `-h`
 
-Dit Help-bericht weergeven
+Help weergeven voor de opgegeven opdracht. Wanneer geen bevel vertoningshulp voor wordt gegeven &lt;info>list&lt;/info> command
 
 - Standaard: `false`
 - Accepteert geen waarde
@@ -4965,14 +5700,13 @@ Deze toepassingsversie weergeven
 
 ### `--ansi`
 
-ANSI-uitvoer forceren
+ANSI-uitvoer forceren (of uitschakelen —no-ansi)
 
-- Standaard: `false`
 - Accepteert geen waarde
 
 ### `--no-ansi`
 
-ANSI-uitvoer uitschakelen
+De optie &quot;—ansi&quot; negeren
 
 - Standaard: `false`
 - Accepteert geen waarde
@@ -4995,7 +5729,7 @@ bin/magento media-content:sync
 
 ### `--help`, `-h`
 
-Dit Help-bericht weergeven
+Help weergeven voor de opgegeven opdracht. Wanneer geen bevel vertoningshulp voor wordt gegeven &lt;info>list&lt;/info> command
 
 - Standaard: `false`
 - Accepteert geen waarde
@@ -5023,14 +5757,13 @@ Deze toepassingsversie weergeven
 
 ### `--ansi`
 
-ANSI-uitvoer forceren
+ANSI-uitvoer forceren (of uitschakelen —no-ansi)
 
-- Standaard: `false`
 - Accepteert geen waarde
 
 ### `--no-ansi`
 
-ANSI-uitvoer uitschakelen
+De optie &quot;—ansi&quot; negeren
 
 - Standaard: `false`
 - Accepteert geen waarde
@@ -5053,7 +5786,7 @@ bin/magento media-gallery:sync
 
 ### `--help`, `-h`
 
-Dit Help-bericht weergeven
+Help weergeven voor de opgegeven opdracht. Wanneer geen bevel vertoningshulp voor wordt gegeven &lt;info>list&lt;/info> command
 
 - Standaard: `false`
 - Accepteert geen waarde
@@ -5081,14 +5814,13 @@ Deze toepassingsversie weergeven
 
 ### `--ansi`
 
-ANSI-uitvoer forceren
+ANSI-uitvoer forceren (of uitschakelen —no-ansi)
 
-- Standaard: `false`
 - Accepteert geen waarde
 
 ### `--no-ansi`
 
-ANSI-uitvoer uitschakelen
+De optie &quot;—ansi&quot; negeren
 
 - Standaard: `false`
 - Accepteert geen waarde
@@ -5111,7 +5843,7 @@ bin/magento module:config:status
 
 ### `--help`, `-h`
 
-Dit Help-bericht weergeven
+Help weergeven voor de opgegeven opdracht. Wanneer geen bevel vertoningshulp voor wordt gegeven &lt;info>list&lt;/info> command
 
 - Standaard: `false`
 - Accepteert geen waarde
@@ -5139,14 +5871,13 @@ Deze toepassingsversie weergeven
 
 ### `--ansi`
 
-ANSI-uitvoer forceren
+ANSI-uitvoer forceren (of uitschakelen —no-ansi)
 
-- Standaard: `false`
 - Accepteert geen waarde
 
 ### `--no-ansi`
 
-ANSI-uitvoer uitschakelen
+De optie &quot;—ansi&quot; negeren
 
 - Standaard: `false`
 - Accepteert geen waarde
@@ -5205,7 +5936,7 @@ Voeg aan om het even welke bevel toe om Magento initialisatieparameters aan te p
 
 ### `--help`, `-h`
 
-Dit Help-bericht weergeven
+Help weergeven voor de opgegeven opdracht. Wanneer geen bevel vertoningshulp voor wordt gegeven &lt;info>list&lt;/info> command
 
 - Standaard: `false`
 - Accepteert geen waarde
@@ -5233,14 +5964,13 @@ Deze toepassingsversie weergeven
 
 ### `--ansi`
 
-ANSI-uitvoer forceren
+ANSI-uitvoer forceren (of uitschakelen —no-ansi)
 
-- Standaard: `false`
 - Accepteert geen waarde
 
 ### `--no-ansi`
 
-ANSI-uitvoer uitschakelen
+De optie &quot;—ansi&quot; negeren
 
 - Standaard: `false`
 - Accepteert geen waarde
@@ -5299,7 +6029,7 @@ Voeg aan om het even welke bevel toe om Magento initialisatieparameters aan te p
 
 ### `--help`, `-h`
 
-Dit Help-bericht weergeven
+Help weergeven voor de opgegeven opdracht. Wanneer geen bevel vertoningshulp voor wordt gegeven &lt;info>list&lt;/info> command
 
 - Standaard: `false`
 - Accepteert geen waarde
@@ -5327,14 +6057,13 @@ Deze toepassingsversie weergeven
 
 ### `--ansi`
 
-ANSI-uitvoer forceren
+ANSI-uitvoer forceren (of uitschakelen —no-ansi)
 
-- Standaard: `false`
 - Accepteert geen waarde
 
 ### `--no-ansi`
 
-ANSI-uitvoer uitschakelen
+De optie &quot;—ansi&quot; negeren
 
 - Standaard: `false`
 - Accepteert geen waarde
@@ -5386,7 +6115,7 @@ Voeg aan om het even welke bevel toe om Magento initialisatieparameters aan te p
 
 ### `--help`, `-h`
 
-Dit Help-bericht weergeven
+Help weergeven voor de opgegeven opdracht. Wanneer geen bevel vertoningshulp voor wordt gegeven &lt;info>list&lt;/info> command
 
 - Standaard: `false`
 - Accepteert geen waarde
@@ -5414,14 +6143,13 @@ Deze toepassingsversie weergeven
 
 ### `--ansi`
 
-ANSI-uitvoer forceren
+ANSI-uitvoer forceren (of uitschakelen —no-ansi)
 
-- Standaard: `false`
 - Accepteert geen waarde
 
 ### `--no-ansi`
 
-ANSI-uitvoer uitschakelen
+De optie &quot;—ansi&quot; negeren
 
 - Standaard: `false`
 - Accepteert geen waarde
@@ -5502,7 +6230,7 @@ Voeg aan om het even welke bevel toe om Magento initialisatieparameters aan te p
 
 ### `--help`, `-h`
 
-Dit Help-bericht weergeven
+Help weergeven voor de opgegeven opdracht. Wanneer geen bevel vertoningshulp voor wordt gegeven &lt;info>list&lt;/info> command
 
 - Standaard: `false`
 - Accepteert geen waarde
@@ -5530,14 +6258,13 @@ Deze toepassingsversie weergeven
 
 ### `--ansi`
 
-ANSI-uitvoer forceren
+ANSI-uitvoer forceren (of uitschakelen —no-ansi)
 
-- Standaard: `false`
 - Accepteert geen waarde
 
 ### `--no-ansi`
 
-ANSI-uitvoer uitschakelen
+De optie &quot;—ansi&quot; negeren
 
 - Standaard: `false`
 - Accepteert geen waarde
@@ -5583,7 +6310,7 @@ Herziening
 
 ### `--help`, `-h`
 
-Dit Help-bericht weergeven
+Help weergeven voor de opgegeven opdracht. Wanneer geen bevel vertoningshulp voor wordt gegeven &lt;info>list&lt;/info> command
 
 - Standaard: `false`
 - Accepteert geen waarde
@@ -5611,14 +6338,13 @@ Deze toepassingsversie weergeven
 
 ### `--ansi`
 
-ANSI-uitvoer forceren
+ANSI-uitvoer forceren (of uitschakelen —no-ansi)
 
-- Standaard: `false`
 - Accepteert geen waarde
 
 ### `--no-ansi`
 
-ANSI-uitvoer uitschakelen
+De optie &quot;—ansi&quot; negeren
 
 - Standaard: `false`
 - Accepteert geen waarde
@@ -5641,7 +6367,7 @@ bin/magento queue:consumers:list
 
 ### `--help`, `-h`
 
-Dit Help-bericht weergeven
+Help weergeven voor de opgegeven opdracht. Wanneer geen bevel vertoningshulp voor wordt gegeven &lt;info>list&lt;/info> command
 
 - Standaard: `false`
 - Accepteert geen waarde
@@ -5669,14 +6395,70 @@ Deze toepassingsversie weergeven
 
 ### `--ansi`
 
-ANSI-uitvoer forceren
+ANSI-uitvoer forceren (of uitschakelen —no-ansi)
 
-- Standaard: `false`
 - Accepteert geen waarde
 
 ### `--no-ansi`
 
-ANSI-uitvoer uitschakelen
+De optie &quot;—ansi&quot; negeren
+
+- Standaard: `false`
+- Accepteert geen waarde
+
+### `--no-interaction`, `-n`
+
+Geen interactieve vraag stellen
+
+- Standaard: `false`
+- Accepteert geen waarde
+
+
+## `queue:consumers:restart`
+
+Gebruikers van MessageQueue opnieuw starten
+
+```bash
+bin/magento queue:consumers:restart
+```
+
+### `--help`, `-h`
+
+Help weergeven voor de opgegeven opdracht. Wanneer geen bevel vertoningshulp voor wordt gegeven &lt;info>list&lt;/info> command
+
+- Standaard: `false`
+- Accepteert geen waarde
+
+### `--quiet`, `-q`
+
+Geen bericht uitvoeren
+
+- Standaard: `false`
+- Accepteert geen waarde
+
+### `--verbose`, `-v|-vv|-vvv`
+
+Verhoog de breedheid van berichten: 1 voor normale output, 2 voor meer uitgebreide output en 3 voor zuiveren
+
+- Standaard: `false`
+- Accepteert geen waarde
+
+### `--version`, `-V`
+
+Deze toepassingsversie weergeven
+
+- Standaard: `false`
+- Accepteert geen waarde
+
+### `--ansi`
+
+ANSI-uitvoer forceren (of uitschakelen —no-ansi)
+
+- Accepteert geen waarde
+
+### `--no-ansi`
+
+De optie &quot;—ansi&quot; negeren
 
 - Standaard: `false`
 - Accepteert geen waarde
@@ -5743,7 +6525,7 @@ Het bestandspad voor het opslaan van PID (deze optie is afgekeurd, gebruik —en
 
 ### `--help`, `-h`
 
-Dit Help-bericht weergeven
+Help weergeven voor de opgegeven opdracht. Wanneer geen bevel vertoningshulp voor wordt gegeven &lt;info>list&lt;/info> command
 
 - Standaard: `false`
 - Accepteert geen waarde
@@ -5771,14 +6553,13 @@ Deze toepassingsversie weergeven
 
 ### `--ansi`
 
-ANSI-uitvoer forceren
+ANSI-uitvoer forceren (of uitschakelen —no-ansi)
 
-- Standaard: `false`
 - Accepteert geen waarde
 
 ### `--no-ansi`
 
-ANSI-uitvoer uitschakelen
+De optie &quot;—ansi&quot; negeren
 
 - Standaard: `false`
 - Accepteert geen waarde
@@ -5801,7 +6582,7 @@ bin/magento remote-storage:sync
 
 ### `--help`, `-h`
 
-Dit Help-bericht weergeven
+Help weergeven voor de opgegeven opdracht. Wanneer geen bevel vertoningshulp voor wordt gegeven &lt;info>list&lt;/info> command
 
 - Standaard: `false`
 - Accepteert geen waarde
@@ -5829,14 +6610,13 @@ Deze toepassingsversie weergeven
 
 ### `--ansi`
 
-ANSI-uitvoer forceren
+ANSI-uitvoer forceren (of uitschakelen —no-ansi)
 
-- Standaard: `false`
 - Accepteert geen waarde
 
 ### `--no-ansi`
 
-ANSI-uitvoer uitschakelen
+De optie &quot;—ansi&quot; negeren
 
 - Standaard: `false`
 - Accepteert geen waarde
@@ -5866,7 +6646,7 @@ Composer.json bijwerken zonder composer-update uit te voeren
 
 ### `--help`, `-h`
 
-Dit Help-bericht weergeven
+Help weergeven voor de opgegeven opdracht. Wanneer geen bevel vertoningshulp voor wordt gegeven &lt;info>list&lt;/info> command
 
 - Standaard: `false`
 - Accepteert geen waarde
@@ -5894,14 +6674,13 @@ Deze toepassingsversie weergeven
 
 ### `--ansi`
 
-ANSI-uitvoer forceren
+ANSI-uitvoer forceren (of uitschakelen —no-ansi)
 
-- Standaard: `false`
 - Accepteert geen waarde
 
 ### `--no-ansi`
 
-ANSI-uitvoer uitschakelen
+De optie &quot;—ansi&quot; negeren
 
 - Standaard: `false`
 - Accepteert geen waarde
@@ -5931,7 +6710,7 @@ Composer.json bijwerken zonder composer-update uit te voeren
 
 ### `--help`, `-h`
 
-Dit Help-bericht weergeven
+Help weergeven voor de opgegeven opdracht. Wanneer geen bevel vertoningshulp voor wordt gegeven &lt;info>list&lt;/info> command
 
 - Standaard: `false`
 - Accepteert geen waarde
@@ -5959,14 +6738,13 @@ Deze toepassingsversie weergeven
 
 ### `--ansi`
 
-ANSI-uitvoer forceren
+ANSI-uitvoer forceren (of uitschakelen —no-ansi)
 
-- Standaard: `false`
 - Accepteert geen waarde
 
 ### `--no-ansi`
 
-ANSI-uitvoer uitschakelen
+De optie &quot;—ansi&quot; negeren
 
 - Standaard: `false`
 - Accepteert geen waarde
@@ -5989,7 +6767,7 @@ bin/magento sampledata:reset
 
 ### `--help`, `-h`
 
-Dit Help-bericht weergeven
+Help weergeven voor de opgegeven opdracht. Wanneer geen bevel vertoningshulp voor wordt gegeven &lt;info>list&lt;/info> command
 
 - Standaard: `false`
 - Accepteert geen waarde
@@ -6017,14 +6795,13 @@ Deze toepassingsversie weergeven
 
 ### `--ansi`
 
-ANSI-uitvoer forceren
+ANSI-uitvoer forceren (of uitschakelen —no-ansi)
 
-- Standaard: `false`
 - Accepteert geen waarde
 
 ### `--no-ansi`
 
-ANSI-uitvoer uitschakelen
+De optie &quot;—ansi&quot; negeren
 
 - Standaard: `false`
 - Accepteert geen waarde
@@ -6047,7 +6824,7 @@ bin/magento security:recaptcha:disable-for-user-forgot-password
 
 ### `--help`, `-h`
 
-Dit Help-bericht weergeven
+Help weergeven voor de opgegeven opdracht. Wanneer geen bevel vertoningshulp voor wordt gegeven &lt;info>list&lt;/info> command
 
 - Standaard: `false`
 - Accepteert geen waarde
@@ -6075,14 +6852,13 @@ Deze toepassingsversie weergeven
 
 ### `--ansi`
 
-ANSI-uitvoer forceren
+ANSI-uitvoer forceren (of uitschakelen —no-ansi)
 
-- Standaard: `false`
 - Accepteert geen waarde
 
 ### `--no-ansi`
 
-ANSI-uitvoer uitschakelen
+De optie &quot;—ansi&quot; negeren
 
 - Standaard: `false`
 - Accepteert geen waarde
@@ -6105,7 +6881,7 @@ bin/magento security:recaptcha:disable-for-user-login
 
 ### `--help`, `-h`
 
-Dit Help-bericht weergeven
+Help weergeven voor de opgegeven opdracht. Wanneer geen bevel vertoningshulp voor wordt gegeven &lt;info>list&lt;/info> command
 
 - Standaard: `false`
 - Accepteert geen waarde
@@ -6133,14 +6909,13 @@ Deze toepassingsversie weergeven
 
 ### `--ansi`
 
-ANSI-uitvoer forceren
+ANSI-uitvoer forceren (of uitschakelen —no-ansi)
 
-- Standaard: `false`
 - Accepteert geen waarde
 
 ### `--no-ansi`
 
-ANSI-uitvoer uitschakelen
+De optie &quot;—ansi&quot; negeren
 
 - Standaard: `false`
 - Accepteert geen waarde
@@ -6176,7 +6951,7 @@ Geheim
 
 ### `--help`, `-h`
 
-Dit Help-bericht weergeven
+Help weergeven voor de opgegeven opdracht. Wanneer geen bevel vertoningshulp voor wordt gegeven &lt;info>list&lt;/info> command
 
 - Standaard: `false`
 - Accepteert geen waarde
@@ -6204,14 +6979,13 @@ Deze toepassingsversie weergeven
 
 ### `--ansi`
 
-ANSI-uitvoer forceren
+ANSI-uitvoer forceren (of uitschakelen —no-ansi)
 
-- Standaard: `false`
 - Accepteert geen waarde
 
 ### `--no-ansi`
 
-ANSI-uitvoer uitschakelen
+De optie &quot;—ansi&quot; negeren
 
 - Standaard: `false`
 - Accepteert geen waarde
@@ -6234,7 +7008,7 @@ bin/magento security:tfa:providers
 
 ### `--help`, `-h`
 
-Dit Help-bericht weergeven
+Help weergeven voor de opgegeven opdracht. Wanneer geen bevel vertoningshulp voor wordt gegeven &lt;info>list&lt;/info> command
 
 - Standaard: `false`
 - Accepteert geen waarde
@@ -6262,14 +7036,13 @@ Deze toepassingsversie weergeven
 
 ### `--ansi`
 
-ANSI-uitvoer forceren
+ANSI-uitvoer forceren (of uitschakelen —no-ansi)
 
-- Standaard: `false`
 - Accepteert geen waarde
 
 ### `--no-ansi`
 
-ANSI-uitvoer uitschakelen
+De optie &quot;—ansi&quot; negeren
 
 - Standaard: `false`
 - Accepteert geen waarde
@@ -6305,7 +7078,7 @@ Providercode
 
 ### `--help`, `-h`
 
-Dit Help-bericht weergeven
+Help weergeven voor de opgegeven opdracht. Wanneer geen bevel vertoningshulp voor wordt gegeven &lt;info>list&lt;/info> command
 
 - Standaard: `false`
 - Accepteert geen waarde
@@ -6333,14 +7106,13 @@ Deze toepassingsversie weergeven
 
 ### `--ansi`
 
-ANSI-uitvoer forceren
+ANSI-uitvoer forceren (of uitschakelen —no-ansi)
 
-- Standaard: `false`
 - Accepteert geen waarde
 
 ### `--no-ansi`
 
-ANSI-uitvoer uitschakelen
+De optie &quot;—ansi&quot; negeren
 
 - Standaard: `false`
 - Accepteert geen waarde
@@ -6390,7 +7162,7 @@ Voeg aan om het even welke bevel toe om Magento initialisatieparameters aan te p
 
 ### `--help`, `-h`
 
-Dit Help-bericht weergeven
+Help weergeven voor de opgegeven opdracht. Wanneer geen bevel vertoningshulp voor wordt gegeven &lt;info>list&lt;/info> command
 
 - Standaard: `false`
 - Accepteert geen waarde
@@ -6418,14 +7190,13 @@ Deze toepassingsversie weergeven
 
 ### `--ansi`
 
-ANSI-uitvoer forceren
+ANSI-uitvoer forceren (of uitschakelen —no-ansi)
 
-- Standaard: `false`
 - Accepteert geen waarde
 
 ### `--no-ansi`
 
-ANSI-uitvoer uitschakelen
+De optie &quot;—ansi&quot; negeren
 
 - Standaard: `false`
 - Accepteert geen waarde
@@ -6443,7 +7214,7 @@ Geen interactieve vraag stellen
 Creeert of wijzigt de plaatsingsconfiguratie
 
 ```bash
-bin/magento setup:config:set [--backend-frontname BACKEND-FRONTNAME] [--enable-debug-logging ENABLE-DEBUG-LOGGING] [--enable-syslog-logging ENABLE-SYSLOG-LOGGING] [--remote-storage-driver REMOTE-STORAGE-DRIVER] [--remote-storage-prefix REMOTE-STORAGE-PREFIX] [--remote-storage-endpoint REMOTE-STORAGE-ENDPOINT] [--remote-storage-bucket REMOTE-STORAGE-BUCKET] [--remote-storage-region REMOTE-STORAGE-REGION] [--remote-storage-key REMOTE-STORAGE-KEY] [--remote-storage-secret REMOTE-STORAGE-SECRET] [--remote-storage-path-style REMOTE-STORAGE-PATH-STYLE] [--checkout-async CHECKOUT-ASYNC] [--amqp-host AMQP-HOST] [--amqp-port AMQP-PORT] [--amqp-user AMQP-USER] [--amqp-password AMQP-PASSWORD] [--amqp-virtualhost AMQP-VIRTUALHOST] [--amqp-ssl AMQP-SSL] [--amqp-ssl-options AMQP-SSL-OPTIONS] [--consumers-wait-for-messages CONSUMERS-WAIT-FOR-MESSAGES] [--queue-default-connection QUEUE-DEFAULT-CONNECTION] [--deferred-total-calculating DEFERRED-TOTAL-CALCULATING] [--key KEY] [--db-host DB-HOST] [--db-name DB-NAME] [--db-user DB-USER] [--db-engine DB-ENGINE] [--db-password DB-PASSWORD] [--db-prefix DB-PREFIX] [--db-model DB-MODEL] [--db-init-statements DB-INIT-STATEMENTS] [-s|--skip-db-validation] [--http-cache-hosts HTTP-CACHE-HOSTS] [--db-ssl-key DB-SSL-KEY] [--db-ssl-cert DB-SSL-CERT] [--db-ssl-ca DB-SSL-CA] [--db-ssl-verify] [--session-save SESSION-SAVE] [--session-save-redis-host SESSION-SAVE-REDIS-HOST] [--session-save-redis-port SESSION-SAVE-REDIS-PORT] [--session-save-redis-password SESSION-SAVE-REDIS-PASSWORD] [--session-save-redis-timeout SESSION-SAVE-REDIS-TIMEOUT] [--session-save-redis-persistent-id SESSION-SAVE-REDIS-PERSISTENT-ID] [--session-save-redis-db SESSION-SAVE-REDIS-DB] [--session-save-redis-compression-threshold SESSION-SAVE-REDIS-COMPRESSION-THRESHOLD] [--session-save-redis-compression-lib SESSION-SAVE-REDIS-COMPRESSION-LIB] [--session-save-redis-log-level SESSION-SAVE-REDIS-LOG-LEVEL] [--session-save-redis-max-concurrency SESSION-SAVE-REDIS-MAX-CONCURRENCY] [--session-save-redis-break-after-frontend SESSION-SAVE-REDIS-BREAK-AFTER-FRONTEND] [--session-save-redis-break-after-adminhtml SESSION-SAVE-REDIS-BREAK-AFTER-ADMINHTML] [--session-save-redis-first-lifetime SESSION-SAVE-REDIS-FIRST-LIFETIME] [--session-save-redis-bot-first-lifetime SESSION-SAVE-REDIS-BOT-FIRST-LIFETIME] [--session-save-redis-bot-lifetime SESSION-SAVE-REDIS-BOT-LIFETIME] [--session-save-redis-disable-locking SESSION-SAVE-REDIS-DISABLE-LOCKING] [--session-save-redis-min-lifetime SESSION-SAVE-REDIS-MIN-LIFETIME] [--session-save-redis-max-lifetime SESSION-SAVE-REDIS-MAX-LIFETIME] [--session-save-redis-sentinel-master SESSION-SAVE-REDIS-SENTINEL-MASTER] [--session-save-redis-sentinel-servers SESSION-SAVE-REDIS-SENTINEL-SERVERS] [--session-save-redis-sentinel-verify-master SESSION-SAVE-REDIS-SENTINEL-VERIFY-MASTER] [--session-save-redis-sentinel-connect-retries SESSION-SAVE-REDIS-SENTINEL-CONNECT-RETRIES] [--cache-backend CACHE-BACKEND] [--cache-backend-redis-server CACHE-BACKEND-REDIS-SERVER] [--cache-backend-redis-db CACHE-BACKEND-REDIS-DB] [--cache-backend-redis-port CACHE-BACKEND-REDIS-PORT] [--cache-backend-redis-password CACHE-BACKEND-REDIS-PASSWORD] [--cache-backend-redis-compress-data CACHE-BACKEND-REDIS-COMPRESS-DATA] [--cache-backend-redis-compression-lib CACHE-BACKEND-REDIS-COMPRESSION-LIB] [--cache-id-prefix CACHE-ID-PREFIX] [--allow-parallel-generation] [--page-cache PAGE-CACHE] [--page-cache-redis-server PAGE-CACHE-REDIS-SERVER] [--page-cache-redis-db PAGE-CACHE-REDIS-DB] [--page-cache-redis-port PAGE-CACHE-REDIS-PORT] [--page-cache-redis-password PAGE-CACHE-REDIS-PASSWORD] [--page-cache-redis-compress-data PAGE-CACHE-REDIS-COMPRESS-DATA] [--page-cache-redis-compression-lib PAGE-CACHE-REDIS-COMPRESSION-LIB] [--page-cache-id-prefix PAGE-CACHE-ID-PREFIX] [--lock-provider LOCK-PROVIDER] [--lock-db-prefix LOCK-DB-PREFIX] [--lock-zookeeper-host LOCK-ZOOKEEPER-HOST] [--lock-zookeeper-path LOCK-ZOOKEEPER-PATH] [--lock-file-path LOCK-FILE-PATH] [--document-root-is-pub DOCUMENT-ROOT-IS-PUB] [--magento-init-params MAGENTO-INIT-PARAMS]
+bin/magento setup:config:set [--backend-frontname BACKEND-FRONTNAME] [--enable-debug-logging ENABLE-DEBUG-LOGGING] [--enable-syslog-logging ENABLE-SYSLOG-LOGGING] [--id_salt ID_SALT] [--remote-storage-driver REMOTE-STORAGE-DRIVER] [--remote-storage-prefix REMOTE-STORAGE-PREFIX] [--remote-storage-endpoint REMOTE-STORAGE-ENDPOINT] [--remote-storage-bucket REMOTE-STORAGE-BUCKET] [--remote-storage-region REMOTE-STORAGE-REGION] [--remote-storage-key REMOTE-STORAGE-KEY] [--remote-storage-secret REMOTE-STORAGE-SECRET] [--remote-storage-path-style REMOTE-STORAGE-PATH-STYLE] [--checkout-async CHECKOUT-ASYNC] [--amqp-host AMQP-HOST] [--amqp-port AMQP-PORT] [--amqp-user AMQP-USER] [--amqp-password AMQP-PASSWORD] [--amqp-virtualhost AMQP-VIRTUALHOST] [--amqp-ssl AMQP-SSL] [--amqp-ssl-options AMQP-SSL-OPTIONS] [--consumers-wait-for-messages CONSUMERS-WAIT-FOR-MESSAGES] [--queue-default-connection QUEUE-DEFAULT-CONNECTION] [--deferred-total-calculating DEFERRED-TOTAL-CALCULATING] [--key KEY] [--db-host DB-HOST] [--db-name DB-NAME] [--db-user DB-USER] [--db-engine DB-ENGINE] [--db-password DB-PASSWORD] [--db-prefix DB-PREFIX] [--db-model DB-MODEL] [--db-init-statements DB-INIT-STATEMENTS] [-s|--skip-db-validation] [--http-cache-hosts HTTP-CACHE-HOSTS] [--db-ssl-key DB-SSL-KEY] [--db-ssl-cert DB-SSL-CERT] [--db-ssl-ca DB-SSL-CA] [--db-ssl-verify] [--session-save SESSION-SAVE] [--session-save-redis-host SESSION-SAVE-REDIS-HOST] [--session-save-redis-port SESSION-SAVE-REDIS-PORT] [--session-save-redis-password SESSION-SAVE-REDIS-PASSWORD] [--session-save-redis-timeout SESSION-SAVE-REDIS-TIMEOUT] [--session-save-redis-persistent-id SESSION-SAVE-REDIS-PERSISTENT-ID] [--session-save-redis-db SESSION-SAVE-REDIS-DB] [--session-save-redis-compression-threshold SESSION-SAVE-REDIS-COMPRESSION-THRESHOLD] [--session-save-redis-compression-lib SESSION-SAVE-REDIS-COMPRESSION-LIB] [--session-save-redis-log-level SESSION-SAVE-REDIS-LOG-LEVEL] [--session-save-redis-max-concurrency SESSION-SAVE-REDIS-MAX-CONCURRENCY] [--session-save-redis-break-after-frontend SESSION-SAVE-REDIS-BREAK-AFTER-FRONTEND] [--session-save-redis-break-after-adminhtml SESSION-SAVE-REDIS-BREAK-AFTER-ADMINHTML] [--session-save-redis-first-lifetime SESSION-SAVE-REDIS-FIRST-LIFETIME] [--session-save-redis-bot-first-lifetime SESSION-SAVE-REDIS-BOT-FIRST-LIFETIME] [--session-save-redis-bot-lifetime SESSION-SAVE-REDIS-BOT-LIFETIME] [--session-save-redis-disable-locking SESSION-SAVE-REDIS-DISABLE-LOCKING] [--session-save-redis-min-lifetime SESSION-SAVE-REDIS-MIN-LIFETIME] [--session-save-redis-max-lifetime SESSION-SAVE-REDIS-MAX-LIFETIME] [--session-save-redis-sentinel-master SESSION-SAVE-REDIS-SENTINEL-MASTER] [--session-save-redis-sentinel-servers SESSION-SAVE-REDIS-SENTINEL-SERVERS] [--session-save-redis-sentinel-verify-master SESSION-SAVE-REDIS-SENTINEL-VERIFY-MASTER] [--session-save-redis-sentinel-connect-retries SESSION-SAVE-REDIS-SENTINEL-CONNECT-RETRIES] [--cache-backend CACHE-BACKEND] [--cache-backend-redis-server CACHE-BACKEND-REDIS-SERVER] [--cache-backend-redis-db CACHE-BACKEND-REDIS-DB] [--cache-backend-redis-port CACHE-BACKEND-REDIS-PORT] [--cache-backend-redis-password CACHE-BACKEND-REDIS-PASSWORD] [--cache-backend-redis-compress-data CACHE-BACKEND-REDIS-COMPRESS-DATA] [--cache-backend-redis-compression-lib CACHE-BACKEND-REDIS-COMPRESSION-LIB] [--cache-id-prefix CACHE-ID-PREFIX] [--allow-parallel-generation] [--page-cache PAGE-CACHE] [--page-cache-redis-server PAGE-CACHE-REDIS-SERVER] [--page-cache-redis-db PAGE-CACHE-REDIS-DB] [--page-cache-redis-port PAGE-CACHE-REDIS-PORT] [--page-cache-redis-password PAGE-CACHE-REDIS-PASSWORD] [--page-cache-redis-compress-data PAGE-CACHE-REDIS-COMPRESS-DATA] [--page-cache-redis-compression-lib PAGE-CACHE-REDIS-COMPRESSION-LIB] [--page-cache-id-prefix PAGE-CACHE-ID-PREFIX] [--lock-provider LOCK-PROVIDER] [--lock-db-prefix LOCK-DB-PREFIX] [--lock-zookeeper-host LOCK-ZOOKEEPER-HOST] [--lock-zookeeper-path LOCK-ZOOKEEPER-PATH] [--lock-file-path LOCK-FILE-PATH] [--document-root-is-pub DOCUMENT-ROOT-IS-PUB] [--magento-init-params MAGENTO-INIT-PARAMS]
 ```
 
 ### `--backend-frontname`
@@ -6461,6 +7232,12 @@ Foutopsporingsregistratie inschakelen
 ### `--enable-syslog-logging`
 
 Syslog-logboekregistratie inschakelen
+
+- Vereist een waarde
+
+### `--id_salt`
+
+GraphQl Salt
 
 - Vereist een waarde
 
@@ -6969,7 +7746,7 @@ Voeg aan om het even welke bevel toe om Magento initialisatieparameters aan te p
 
 ### `--help`, `-h`
 
-Dit Help-bericht weergeven
+Help weergeven voor de opgegeven opdracht. Wanneer geen bevel vertoningshulp voor wordt gegeven &lt;info>list&lt;/info> command
 
 - Standaard: `false`
 - Accepteert geen waarde
@@ -6997,14 +7774,13 @@ Deze toepassingsversie weergeven
 
 ### `--ansi`
 
-ANSI-uitvoer forceren
+ANSI-uitvoer forceren (of uitschakelen —no-ansi)
 
-- Standaard: `false`
 - Accepteert geen waarde
 
 ### `--no-ansi`
 
-ANSI-uitvoer uitschakelen
+De optie &quot;—ansi&quot; negeren
 
 - Standaard: `false`
 - Accepteert geen waarde
@@ -7033,7 +7809,7 @@ Voeg aan om het even welke bevel toe om Magento initialisatieparameters aan te p
 
 ### `--help`, `-h`
 
-Dit Help-bericht weergeven
+Help weergeven voor de opgegeven opdracht. Wanneer geen bevel vertoningshulp voor wordt gegeven &lt;info>list&lt;/info> command
 
 - Standaard: `false`
 - Accepteert geen waarde
@@ -7061,14 +7837,13 @@ Deze toepassingsversie weergeven
 
 ### `--ansi`
 
-ANSI-uitvoer forceren
+ANSI-uitvoer forceren (of uitschakelen —no-ansi)
 
-- Standaard: `false`
 - Accepteert geen waarde
 
 ### `--no-ansi`
 
-ANSI-uitvoer uitschakelen
+De optie &quot;—ansi&quot; negeren
 
 - Standaard: `false`
 - Accepteert geen waarde
@@ -7118,7 +7893,7 @@ Ontdek welk type patch moet worden gegenereerd. Beschikbare waarden: `data`, `sc
 
 ### `--help`, `-h`
 
-Dit Help-bericht weergeven
+Help weergeven voor de opgegeven opdracht. Wanneer geen bevel vertoningshulp voor wordt gegeven &lt;info>list&lt;/info> command
 
 - Standaard: `false`
 - Accepteert geen waarde
@@ -7146,14 +7921,13 @@ Deze toepassingsversie weergeven
 
 ### `--ansi`
 
-ANSI-uitvoer forceren
+ANSI-uitvoer forceren (of uitschakelen —no-ansi)
 
-- Standaard: `false`
 - Accepteert geen waarde
 
 ### `--no-ansi`
 
-ANSI-uitvoer uitschakelen
+De optie &quot;—ansi&quot; negeren
 
 - Standaard: `false`
 - Accepteert geen waarde
@@ -7183,7 +7957,7 @@ Naam van de module waar whitelist wordt gegenereerd
 
 ### `--help`, `-h`
 
-Dit Help-bericht weergeven
+Help weergeven voor de opgegeven opdracht. Wanneer geen bevel vertoningshulp voor wordt gegeven &lt;info>list&lt;/info> command
 
 - Standaard: `false`
 - Accepteert geen waarde
@@ -7211,14 +7985,13 @@ Deze toepassingsversie weergeven
 
 ### `--ansi`
 
-ANSI-uitvoer forceren
+ANSI-uitvoer forceren (of uitschakelen —no-ansi)
 
-- Standaard: `false`
 - Accepteert geen waarde
 
 ### `--no-ansi`
 
-ANSI-uitvoer uitschakelen
+De optie &quot;—ansi&quot; negeren
 
 - Standaard: `false`
 - Accepteert geen waarde
@@ -7294,7 +8067,7 @@ Voeg aan om het even welke bevel toe om Magento initialisatieparameters aan te p
 
 ### `--help`, `-h`
 
-Dit Help-bericht weergeven
+Help weergeven voor de opgegeven opdracht. Wanneer geen bevel vertoningshulp voor wordt gegeven &lt;info>list&lt;/info> command
 
 - Standaard: `false`
 - Accepteert geen waarde
@@ -7322,14 +8095,13 @@ Deze toepassingsversie weergeven
 
 ### `--ansi`
 
-ANSI-uitvoer forceren
+ANSI-uitvoer forceren (of uitschakelen —no-ansi)
 
-- Standaard: `false`
 - Accepteert geen waarde
 
 ### `--no-ansi`
 
-ANSI-uitvoer uitschakelen
+De optie &quot;—ansi&quot; negeren
 
 - Standaard: `false`
 - Accepteert geen waarde
@@ -7396,7 +8168,7 @@ Voeg aan om het even welke bevel toe om Magento initialisatieparameters aan te p
 
 ### `--help`, `-h`
 
-Dit Help-bericht weergeven
+Help weergeven voor de opgegeven opdracht. Wanneer geen bevel vertoningshulp voor wordt gegeven &lt;info>list&lt;/info> command
 
 - Standaard: `false`
 - Accepteert geen waarde
@@ -7424,14 +8196,13 @@ Deze toepassingsversie weergeven
 
 ### `--ansi`
 
-ANSI-uitvoer forceren
+ANSI-uitvoer forceren (of uitschakelen —no-ansi)
 
-- Standaard: `false`
 - Accepteert geen waarde
 
 ### `--no-ansi`
 
-ANSI-uitvoer uitschakelen
+De optie &quot;—ansi&quot; negeren
 
 - Standaard: `false`
 - Accepteert geen waarde
@@ -7498,7 +8269,7 @@ Voeg aan om het even welke bevel toe om Magento initialisatieparameters aan te p
 
 ### `--help`, `-h`
 
-Dit Help-bericht weergeven
+Help weergeven voor de opgegeven opdracht. Wanneer geen bevel vertoningshulp voor wordt gegeven &lt;info>list&lt;/info> command
 
 - Standaard: `false`
 - Accepteert geen waarde
@@ -7526,14 +8297,13 @@ Deze toepassingsversie weergeven
 
 ### `--ansi`
 
-ANSI-uitvoer forceren
+ANSI-uitvoer forceren (of uitschakelen —no-ansi)
 
-- Standaard: `false`
 - Accepteert geen waarde
 
 ### `--no-ansi`
 
-ANSI-uitvoer uitschakelen
+De optie &quot;—ansi&quot; negeren
 
 - Standaard: `false`
 - Accepteert geen waarde
@@ -7569,7 +8339,7 @@ Voeg aan om het even welke bevel toe om Magento initialisatieparameters aan te p
 
 ### `--help`, `-h`
 
-Dit Help-bericht weergeven
+Help weergeven voor de opgegeven opdracht. Wanneer geen bevel vertoningshulp voor wordt gegeven &lt;info>list&lt;/info> command
 
 - Standaard: `false`
 - Accepteert geen waarde
@@ -7597,14 +8367,13 @@ Deze toepassingsversie weergeven
 
 ### `--ansi`
 
-ANSI-uitvoer forceren
+ANSI-uitvoer forceren (of uitschakelen —no-ansi)
 
-- Standaard: `false`
 - Accepteert geen waarde
 
 ### `--no-ansi`
 
-ANSI-uitvoer uitschakelen
+De optie &quot;—ansi&quot; negeren
 
 - Standaard: `false`
 - Accepteert geen waarde
@@ -7633,7 +8402,7 @@ Voeg aan om het even welke bevel toe om Magento initialisatieparameters aan te p
 
 ### `--help`, `-h`
 
-Dit Help-bericht weergeven
+Help weergeven voor de opgegeven opdracht. Wanneer geen bevel vertoningshulp voor wordt gegeven &lt;info>list&lt;/info> command
 
 - Standaard: `false`
 - Accepteert geen waarde
@@ -7661,14 +8430,13 @@ Deze toepassingsversie weergeven
 
 ### `--ansi`
 
-ANSI-uitvoer forceren
+ANSI-uitvoer forceren (of uitschakelen —no-ansi)
 
-- Standaard: `false`
 - Accepteert geen waarde
 
 ### `--no-ansi`
 
-ANSI-uitvoer uitschakelen
+De optie &quot;—ansi&quot; negeren
 
 - Standaard: `false`
 - Accepteert geen waarde
@@ -7691,7 +8459,7 @@ bin/magento setup:di:compile
 
 ### `--help`, `-h`
 
-Dit Help-bericht weergeven
+Help weergeven voor de opgegeven opdracht. Wanneer geen bevel vertoningshulp voor wordt gegeven &lt;info>list&lt;/info> command
 
 - Standaard: `false`
 - Accepteert geen waarde
@@ -7719,14 +8487,13 @@ Deze toepassingsversie weergeven
 
 ### `--ansi`
 
-ANSI-uitvoer forceren
+ANSI-uitvoer forceren (of uitschakelen —no-ansi)
 
-- Standaard: `false`
 - Accepteert geen waarde
 
 ### `--no-ansi`
 
-ANSI-uitvoer uitschakelen
+De optie &quot;—ansi&quot; negeren
 
 - Standaard: `false`
 - Accepteert geen waarde
@@ -7744,7 +8511,7 @@ Geen interactieve vraag stellen
 Hiermee wordt de Magento-toepassing geïnstalleerd
 
 ```bash
-bin/magento setup:install [--backend-frontname BACKEND-FRONTNAME] [--enable-debug-logging ENABLE-DEBUG-LOGGING] [--enable-syslog-logging ENABLE-SYSLOG-LOGGING] [--remote-storage-driver REMOTE-STORAGE-DRIVER] [--remote-storage-prefix REMOTE-STORAGE-PREFIX] [--remote-storage-endpoint REMOTE-STORAGE-ENDPOINT] [--remote-storage-bucket REMOTE-STORAGE-BUCKET] [--remote-storage-region REMOTE-STORAGE-REGION] [--remote-storage-key REMOTE-STORAGE-KEY] [--remote-storage-secret REMOTE-STORAGE-SECRET] [--remote-storage-path-style REMOTE-STORAGE-PATH-STYLE] [--checkout-async CHECKOUT-ASYNC] [--amqp-host AMQP-HOST] [--amqp-port AMQP-PORT] [--amqp-user AMQP-USER] [--amqp-password AMQP-PASSWORD] [--amqp-virtualhost AMQP-VIRTUALHOST] [--amqp-ssl AMQP-SSL] [--amqp-ssl-options AMQP-SSL-OPTIONS] [--consumers-wait-for-messages CONSUMERS-WAIT-FOR-MESSAGES] [--queue-default-connection QUEUE-DEFAULT-CONNECTION] [--deferred-total-calculating DEFERRED-TOTAL-CALCULATING] [--key KEY] [--db-host DB-HOST] [--db-name DB-NAME] [--db-user DB-USER] [--db-engine DB-ENGINE] [--db-password DB-PASSWORD] [--db-prefix DB-PREFIX] [--db-model DB-MODEL] [--db-init-statements DB-INIT-STATEMENTS] [-s|--skip-db-validation] [--http-cache-hosts HTTP-CACHE-HOSTS] [--db-ssl-key DB-SSL-KEY] [--db-ssl-cert DB-SSL-CERT] [--db-ssl-ca DB-SSL-CA] [--db-ssl-verify] [--session-save SESSION-SAVE] [--session-save-redis-host SESSION-SAVE-REDIS-HOST] [--session-save-redis-port SESSION-SAVE-REDIS-PORT] [--session-save-redis-password SESSION-SAVE-REDIS-PASSWORD] [--session-save-redis-timeout SESSION-SAVE-REDIS-TIMEOUT] [--session-save-redis-persistent-id SESSION-SAVE-REDIS-PERSISTENT-ID] [--session-save-redis-db SESSION-SAVE-REDIS-DB] [--session-save-redis-compression-threshold SESSION-SAVE-REDIS-COMPRESSION-THRESHOLD] [--session-save-redis-compression-lib SESSION-SAVE-REDIS-COMPRESSION-LIB] [--session-save-redis-log-level SESSION-SAVE-REDIS-LOG-LEVEL] [--session-save-redis-max-concurrency SESSION-SAVE-REDIS-MAX-CONCURRENCY] [--session-save-redis-break-after-frontend SESSION-SAVE-REDIS-BREAK-AFTER-FRONTEND] [--session-save-redis-break-after-adminhtml SESSION-SAVE-REDIS-BREAK-AFTER-ADMINHTML] [--session-save-redis-first-lifetime SESSION-SAVE-REDIS-FIRST-LIFETIME] [--session-save-redis-bot-first-lifetime SESSION-SAVE-REDIS-BOT-FIRST-LIFETIME] [--session-save-redis-bot-lifetime SESSION-SAVE-REDIS-BOT-LIFETIME] [--session-save-redis-disable-locking SESSION-SAVE-REDIS-DISABLE-LOCKING] [--session-save-redis-min-lifetime SESSION-SAVE-REDIS-MIN-LIFETIME] [--session-save-redis-max-lifetime SESSION-SAVE-REDIS-MAX-LIFETIME] [--session-save-redis-sentinel-master SESSION-SAVE-REDIS-SENTINEL-MASTER] [--session-save-redis-sentinel-servers SESSION-SAVE-REDIS-SENTINEL-SERVERS] [--session-save-redis-sentinel-verify-master SESSION-SAVE-REDIS-SENTINEL-VERIFY-MASTER] [--session-save-redis-sentinel-connect-retries SESSION-SAVE-REDIS-SENTINEL-CONNECT-RETRIES] [--cache-backend CACHE-BACKEND] [--cache-backend-redis-server CACHE-BACKEND-REDIS-SERVER] [--cache-backend-redis-db CACHE-BACKEND-REDIS-DB] [--cache-backend-redis-port CACHE-BACKEND-REDIS-PORT] [--cache-backend-redis-password CACHE-BACKEND-REDIS-PASSWORD] [--cache-backend-redis-compress-data CACHE-BACKEND-REDIS-COMPRESS-DATA] [--cache-backend-redis-compression-lib CACHE-BACKEND-REDIS-COMPRESSION-LIB] [--cache-id-prefix CACHE-ID-PREFIX] [--allow-parallel-generation] [--page-cache PAGE-CACHE] [--page-cache-redis-server PAGE-CACHE-REDIS-SERVER] [--page-cache-redis-db PAGE-CACHE-REDIS-DB] [--page-cache-redis-port PAGE-CACHE-REDIS-PORT] [--page-cache-redis-password PAGE-CACHE-REDIS-PASSWORD] [--page-cache-redis-compress-data PAGE-CACHE-REDIS-COMPRESS-DATA] [--page-cache-redis-compression-lib PAGE-CACHE-REDIS-COMPRESSION-LIB] [--page-cache-id-prefix PAGE-CACHE-ID-PREFIX] [--lock-provider LOCK-PROVIDER] [--lock-db-prefix LOCK-DB-PREFIX] [--lock-zookeeper-host LOCK-ZOOKEEPER-HOST] [--lock-zookeeper-path LOCK-ZOOKEEPER-PATH] [--lock-file-path LOCK-FILE-PATH] [--document-root-is-pub DOCUMENT-ROOT-IS-PUB] [--base-url BASE-URL] [--language LANGUAGE] [--timezone TIMEZONE] [--currency CURRENCY] [--use-rewrites USE-REWRITES] [--use-secure USE-SECURE] [--base-url-secure BASE-URL-SECURE] [--use-secure-admin USE-SECURE-ADMIN] [--admin-use-security-key ADMIN-USE-SECURITY-KEY] [--admin-user [ADMIN-USER]] [--admin-password [ADMIN-PASSWORD]] [--admin-email [ADMIN-EMAIL]] [--admin-firstname [ADMIN-FIRSTNAME]] [--admin-lastname [ADMIN-LASTNAME]] [--search-engine SEARCH-ENGINE] [--elasticsearch-host ELASTICSEARCH-HOST] [--elasticsearch-port ELASTICSEARCH-PORT] [--elasticsearch-enable-auth ELASTICSEARCH-ENABLE-AUTH] [--elasticsearch-username ELASTICSEARCH-USERNAME] [--elasticsearch-password ELASTICSEARCH-PASSWORD] [--elasticsearch-index-prefix ELASTICSEARCH-INDEX-PREFIX] [--elasticsearch-timeout ELASTICSEARCH-TIMEOUT] [--cleanup-database] [--sales-order-increment-prefix SALES-ORDER-INCREMENT-PREFIX] [--use-sample-data] [--enable-modules [ENABLE-MODULES]] [--disable-modules [DISABLE-MODULES]] [--convert-old-scripts [CONVERT-OLD-SCRIPTS]] [-i|--interactive] [--safe-mode [SAFE-MODE]] [--data-restore [DATA-RESTORE]] [--dry-run [DRY-RUN]] [--magento-init-params MAGENTO-INIT-PARAMS]
+bin/magento setup:install [--backend-frontname BACKEND-FRONTNAME] [--enable-debug-logging ENABLE-DEBUG-LOGGING] [--enable-syslog-logging ENABLE-SYSLOG-LOGGING] [--id_salt ID_SALT] [--remote-storage-driver REMOTE-STORAGE-DRIVER] [--remote-storage-prefix REMOTE-STORAGE-PREFIX] [--remote-storage-endpoint REMOTE-STORAGE-ENDPOINT] [--remote-storage-bucket REMOTE-STORAGE-BUCKET] [--remote-storage-region REMOTE-STORAGE-REGION] [--remote-storage-key REMOTE-STORAGE-KEY] [--remote-storage-secret REMOTE-STORAGE-SECRET] [--remote-storage-path-style REMOTE-STORAGE-PATH-STYLE] [--checkout-async CHECKOUT-ASYNC] [--amqp-host AMQP-HOST] [--amqp-port AMQP-PORT] [--amqp-user AMQP-USER] [--amqp-password AMQP-PASSWORD] [--amqp-virtualhost AMQP-VIRTUALHOST] [--amqp-ssl AMQP-SSL] [--amqp-ssl-options AMQP-SSL-OPTIONS] [--consumers-wait-for-messages CONSUMERS-WAIT-FOR-MESSAGES] [--queue-default-connection QUEUE-DEFAULT-CONNECTION] [--deferred-total-calculating DEFERRED-TOTAL-CALCULATING] [--key KEY] [--db-host DB-HOST] [--db-name DB-NAME] [--db-user DB-USER] [--db-engine DB-ENGINE] [--db-password DB-PASSWORD] [--db-prefix DB-PREFIX] [--db-model DB-MODEL] [--db-init-statements DB-INIT-STATEMENTS] [-s|--skip-db-validation] [--http-cache-hosts HTTP-CACHE-HOSTS] [--db-ssl-key DB-SSL-KEY] [--db-ssl-cert DB-SSL-CERT] [--db-ssl-ca DB-SSL-CA] [--db-ssl-verify] [--session-save SESSION-SAVE] [--session-save-redis-host SESSION-SAVE-REDIS-HOST] [--session-save-redis-port SESSION-SAVE-REDIS-PORT] [--session-save-redis-password SESSION-SAVE-REDIS-PASSWORD] [--session-save-redis-timeout SESSION-SAVE-REDIS-TIMEOUT] [--session-save-redis-persistent-id SESSION-SAVE-REDIS-PERSISTENT-ID] [--session-save-redis-db SESSION-SAVE-REDIS-DB] [--session-save-redis-compression-threshold SESSION-SAVE-REDIS-COMPRESSION-THRESHOLD] [--session-save-redis-compression-lib SESSION-SAVE-REDIS-COMPRESSION-LIB] [--session-save-redis-log-level SESSION-SAVE-REDIS-LOG-LEVEL] [--session-save-redis-max-concurrency SESSION-SAVE-REDIS-MAX-CONCURRENCY] [--session-save-redis-break-after-frontend SESSION-SAVE-REDIS-BREAK-AFTER-FRONTEND] [--session-save-redis-break-after-adminhtml SESSION-SAVE-REDIS-BREAK-AFTER-ADMINHTML] [--session-save-redis-first-lifetime SESSION-SAVE-REDIS-FIRST-LIFETIME] [--session-save-redis-bot-first-lifetime SESSION-SAVE-REDIS-BOT-FIRST-LIFETIME] [--session-save-redis-bot-lifetime SESSION-SAVE-REDIS-BOT-LIFETIME] [--session-save-redis-disable-locking SESSION-SAVE-REDIS-DISABLE-LOCKING] [--session-save-redis-min-lifetime SESSION-SAVE-REDIS-MIN-LIFETIME] [--session-save-redis-max-lifetime SESSION-SAVE-REDIS-MAX-LIFETIME] [--session-save-redis-sentinel-master SESSION-SAVE-REDIS-SENTINEL-MASTER] [--session-save-redis-sentinel-servers SESSION-SAVE-REDIS-SENTINEL-SERVERS] [--session-save-redis-sentinel-verify-master SESSION-SAVE-REDIS-SENTINEL-VERIFY-MASTER] [--session-save-redis-sentinel-connect-retries SESSION-SAVE-REDIS-SENTINEL-CONNECT-RETRIES] [--cache-backend CACHE-BACKEND] [--cache-backend-redis-server CACHE-BACKEND-REDIS-SERVER] [--cache-backend-redis-db CACHE-BACKEND-REDIS-DB] [--cache-backend-redis-port CACHE-BACKEND-REDIS-PORT] [--cache-backend-redis-password CACHE-BACKEND-REDIS-PASSWORD] [--cache-backend-redis-compress-data CACHE-BACKEND-REDIS-COMPRESS-DATA] [--cache-backend-redis-compression-lib CACHE-BACKEND-REDIS-COMPRESSION-LIB] [--cache-id-prefix CACHE-ID-PREFIX] [--allow-parallel-generation] [--page-cache PAGE-CACHE] [--page-cache-redis-server PAGE-CACHE-REDIS-SERVER] [--page-cache-redis-db PAGE-CACHE-REDIS-DB] [--page-cache-redis-port PAGE-CACHE-REDIS-PORT] [--page-cache-redis-password PAGE-CACHE-REDIS-PASSWORD] [--page-cache-redis-compress-data PAGE-CACHE-REDIS-COMPRESS-DATA] [--page-cache-redis-compression-lib PAGE-CACHE-REDIS-COMPRESSION-LIB] [--page-cache-id-prefix PAGE-CACHE-ID-PREFIX] [--lock-provider LOCK-PROVIDER] [--lock-db-prefix LOCK-DB-PREFIX] [--lock-zookeeper-host LOCK-ZOOKEEPER-HOST] [--lock-zookeeper-path LOCK-ZOOKEEPER-PATH] [--lock-file-path LOCK-FILE-PATH] [--document-root-is-pub DOCUMENT-ROOT-IS-PUB] [--base-url BASE-URL] [--language LANGUAGE] [--timezone TIMEZONE] [--currency CURRENCY] [--use-rewrites USE-REWRITES] [--use-secure USE-SECURE] [--base-url-secure BASE-URL-SECURE] [--use-secure-admin USE-SECURE-ADMIN] [--admin-use-security-key ADMIN-USE-SECURITY-KEY] [--admin-user [ADMIN-USER]] [--admin-password [ADMIN-PASSWORD]] [--admin-email [ADMIN-EMAIL]] [--admin-firstname [ADMIN-FIRSTNAME]] [--admin-lastname [ADMIN-LASTNAME]] [--search-engine SEARCH-ENGINE] [--elasticsearch-host ELASTICSEARCH-HOST] [--elasticsearch-port ELASTICSEARCH-PORT] [--elasticsearch-enable-auth ELASTICSEARCH-ENABLE-AUTH] [--elasticsearch-username ELASTICSEARCH-USERNAME] [--elasticsearch-password ELASTICSEARCH-PASSWORD] [--elasticsearch-index-prefix ELASTICSEARCH-INDEX-PREFIX] [--elasticsearch-timeout ELASTICSEARCH-TIMEOUT] [--opensearch-host OPENSEARCH-HOST] [--opensearch-port OPENSEARCH-PORT] [--opensearch-enable-auth OPENSEARCH-ENABLE-AUTH] [--opensearch-username OPENSEARCH-USERNAME] [--opensearch-password OPENSEARCH-PASSWORD] [--opensearch-index-prefix OPENSEARCH-INDEX-PREFIX] [--opensearch-timeout OPENSEARCH-TIMEOUT] [--cleanup-database] [--sales-order-increment-prefix SALES-ORDER-INCREMENT-PREFIX] [--use-sample-data] [--enable-modules [ENABLE-MODULES]] [--disable-modules [DISABLE-MODULES]] [--convert-old-scripts [CONVERT-OLD-SCRIPTS]] [-i|--interactive] [--safe-mode [SAFE-MODE]] [--data-restore [DATA-RESTORE]] [--dry-run [DRY-RUN]] [--magento-init-params MAGENTO-INIT-PARAMS]
 ```
 
 ### `--backend-frontname`
@@ -7762,6 +8529,12 @@ Foutopsporingsregistratie inschakelen
 ### `--enable-syslog-logging`
 
 Syslog-logboekregistratie inschakelen
+
+- Vereist een waarde
+
+### `--id_salt`
+
+GraphQl Salt
 
 - Vereist een waarde
 
@@ -8348,7 +9121,7 @@ Achternaam beheerder
 
 ### `--search-engine`
 
-Zoekprogramma. Waarden: elasticsearch5, elasticsearch6, elasticsearch7
+Zoekprogramma. Waarden: elasticsearch5, elasticsearch7, elasticsearch8, openssearch
 
 - Vereist een waarde
 
@@ -8391,6 +9164,48 @@ Elasticsearch-indexvoorvoegsel.
 ### `--elasticsearch-timeout`
 
 Time-out Elasticsearch-server.
+
+- Vereist een waarde
+
+### `--opensearch-host`
+
+OpenSearch-serverhost.
+
+- Vereist een waarde
+
+### `--opensearch-port`
+
+OpenSearch-serverpoort.
+
+- Vereist een waarde
+
+### `--opensearch-enable-auth`
+
+Stel dit in op 1 om verificatie in te schakelen. (standaardwaarde is 0, uitgeschakeld)
+
+- Vereist een waarde
+
+### `--opensearch-username`
+
+OpenSearch gebruikersnaam. Alleen van toepassing als HTTP-auth is ingeschakeld
+
+- Vereist een waarde
+
+### `--opensearch-password`
+
+Wachtwoord voor OpenSearch. Alleen van toepassing als HTTP-auth is ingeschakeld
+
+- Vereist een waarde
+
+### `--opensearch-index-prefix`
+
+Prefix van de OpenSearch-index.
+
+- Vereist een waarde
+
+### `--opensearch-timeout`
+
+Time-out van OpenSearch-server.
 
 - Vereist een waarde
 
@@ -8467,7 +9282,7 @@ Voeg aan om het even welke bevel toe om Magento initialisatieparameters aan te p
 
 ### `--help`, `-h`
 
-Dit Help-bericht weergeven
+Help weergeven voor de opgegeven opdracht. Wanneer geen bevel vertoningshulp voor wordt gegeven &lt;info>list&lt;/info> command
 
 - Standaard: `false`
 - Accepteert geen waarde
@@ -8495,14 +9310,13 @@ Deze toepassingsversie weergeven
 
 ### `--ansi`
 
-ANSI-uitvoer forceren
+ANSI-uitvoer forceren (of uitschakelen —no-ansi)
 
-- Standaard: `false`
 - Accepteert geen waarde
 
 ### `--no-ansi`
 
-ANSI-uitvoer uitschakelen
+De optie &quot;—ansi&quot; negeren
 
 - Standaard: `false`
 - Accepteert geen waarde
@@ -8539,7 +9353,7 @@ Herindexeren overslaan
 
 ### `--help`, `-h`
 
-Dit Help-bericht weergeven
+Help weergeven voor de opgegeven opdracht. Wanneer geen bevel vertoningshulp voor wordt gegeven &lt;info>list&lt;/info> command
 
 - Standaard: `false`
 - Accepteert geen waarde
@@ -8567,14 +9381,13 @@ Deze toepassingsversie weergeven
 
 ### `--ansi`
 
-ANSI-uitvoer forceren
+ANSI-uitvoer forceren (of uitschakelen —no-ansi)
 
-- Standaard: `false`
 - Accepteert geen waarde
 
 ### `--no-ansi`
 
-ANSI-uitvoer uitschakelen
+De optie &quot;—ansi&quot; negeren
 
 - Standaard: `false`
 - Accepteert geen waarde
@@ -8621,7 +9434,7 @@ Voeg aan om het even welke bevel toe om Magento initialisatieparameters aan te p
 
 ### `--help`, `-h`
 
-Dit Help-bericht weergeven
+Help weergeven voor de opgegeven opdracht. Wanneer geen bevel vertoningshulp voor wordt gegeven &lt;info>list&lt;/info> command
 
 - Standaard: `false`
 - Accepteert geen waarde
@@ -8649,14 +9462,13 @@ Deze toepassingsversie weergeven
 
 ### `--ansi`
 
-ANSI-uitvoer forceren
+ANSI-uitvoer forceren (of uitschakelen —no-ansi)
 
-- Standaard: `false`
 - Accepteert geen waarde
 
 ### `--no-ansi`
 
-ANSI-uitvoer uitschakelen
+De optie &quot;—ansi&quot; negeren
 
 - Standaard: `false`
 - Accepteert geen waarde
@@ -8848,7 +9660,7 @@ Bovenliggende thema&#39;s niet compileren. Alleen ondersteund in snelle en stand
 
 ### `--help`, `-h`
 
-Dit Help-bericht weergeven
+Help weergeven voor de opgegeven opdracht. Wanneer geen bevel vertoningshulp voor wordt gegeven &lt;info>list&lt;/info> command
 
 - Standaard: `false`
 - Accepteert geen waarde
@@ -8876,14 +9688,13 @@ Deze toepassingsversie weergeven
 
 ### `--ansi`
 
-ANSI-uitvoer forceren
+ANSI-uitvoer forceren (of uitschakelen —no-ansi)
 
-- Standaard: `false`
 - Accepteert geen waarde
 
 ### `--no-ansi`
 
-ANSI-uitvoer uitschakelen
+De optie &quot;—ansi&quot; negeren
 
 - Standaard: `false`
 - Accepteert geen waarde
@@ -8966,7 +9777,7 @@ Voeg aan om het even welke bevel toe om Magento initialisatieparameters aan te p
 
 ### `--help`, `-h`
 
-Dit Help-bericht weergeven
+Help weergeven voor de opgegeven opdracht. Wanneer geen bevel vertoningshulp voor wordt gegeven &lt;info>list&lt;/info> command
 
 - Standaard: `false`
 - Accepteert geen waarde
@@ -8994,14 +9805,13 @@ Deze toepassingsversie weergeven
 
 ### `--ansi`
 
-ANSI-uitvoer forceren
+ANSI-uitvoer forceren (of uitschakelen —no-ansi)
 
-- Standaard: `false`
 - Accepteert geen waarde
 
 ### `--no-ansi`
 
-ANSI-uitvoer uitschakelen
+De optie &quot;—ansi&quot; negeren
 
 - Standaard: `false`
 - Accepteert geen waarde
@@ -9030,7 +9840,7 @@ Voeg aan om het even welke bevel toe om Magento initialisatieparameters aan te p
 
 ### `--help`, `-h`
 
-Dit Help-bericht weergeven
+Help weergeven voor de opgegeven opdracht. Wanneer geen bevel vertoningshulp voor wordt gegeven &lt;info>list&lt;/info> command
 
 - Standaard: `false`
 - Accepteert geen waarde
@@ -9058,14 +9868,13 @@ Deze toepassingsversie weergeven
 
 ### `--ansi`
 
-ANSI-uitvoer forceren
+ANSI-uitvoer forceren (of uitschakelen —no-ansi)
 
-- Standaard: `false`
 - Accepteert geen waarde
 
 ### `--no-ansi`
 
-ANSI-uitvoer uitschakelen
+De optie &quot;—ansi&quot; negeren
 
 - Standaard: `false`
 - Accepteert geen waarde
@@ -9127,7 +9936,7 @@ Voeg aan om het even welke bevel toe om Magento initialisatieparameters aan te p
 
 ### `--help`, `-h`
 
-Dit Help-bericht weergeven
+Help weergeven voor de opgegeven opdracht. Wanneer geen bevel vertoningshulp voor wordt gegeven &lt;info>list&lt;/info> command
 
 - Standaard: `false`
 - Accepteert geen waarde
@@ -9155,14 +9964,13 @@ Deze toepassingsversie weergeven
 
 ### `--ansi`
 
-ANSI-uitvoer forceren
+ANSI-uitvoer forceren (of uitschakelen —no-ansi)
 
-- Standaard: `false`
 - Accepteert geen waarde
 
 ### `--no-ansi`
 
-ANSI-uitvoer uitschakelen
+De optie &quot;—ansi&quot; negeren
 
 - Standaard: `false`
 - Accepteert geen waarde
@@ -9185,7 +9993,7 @@ bin/magento store:list
 
 ### `--help`, `-h`
 
-Dit Help-bericht weergeven
+Help weergeven voor de opgegeven opdracht. Wanneer geen bevel vertoningshulp voor wordt gegeven &lt;info>list&lt;/info> command
 
 - Standaard: `false`
 - Accepteert geen waarde
@@ -9213,14 +10021,13 @@ Deze toepassingsversie weergeven
 
 ### `--ansi`
 
-ANSI-uitvoer forceren
+ANSI-uitvoer forceren (of uitschakelen —no-ansi)
 
-- Standaard: `false`
 - Accepteert geen waarde
 
 ### `--no-ansi`
 
-ANSI-uitvoer uitschakelen
+De optie &quot;—ansi&quot; negeren
 
 - Standaard: `false`
 - Accepteert geen waarde
@@ -9243,7 +10050,7 @@ bin/magento store:website:list
 
 ### `--help`, `-h`
 
-Dit Help-bericht weergeven
+Help weergeven voor de opgegeven opdracht. Wanneer geen bevel vertoningshulp voor wordt gegeven &lt;info>list&lt;/info> command
 
 - Standaard: `false`
 - Accepteert geen waarde
@@ -9271,14 +10078,13 @@ Deze toepassingsversie weergeven
 
 ### `--ansi`
 
-ANSI-uitvoer forceren
+ANSI-uitvoer forceren (of uitschakelen —no-ansi)
 
-- Standaard: `false`
 - Accepteert geen waarde
 
 ### `--no-ansi`
 
-ANSI-uitvoer uitschakelen
+De optie &quot;—ansi&quot; negeren
 
 - Standaard: `false`
 - Accepteert geen waarde
@@ -9320,7 +10126,7 @@ Logbestanden opnemen
 
 ### `--help`, `-h`
 
-Dit Help-bericht weergeven
+Help weergeven voor de opgegeven opdracht. Wanneer geen bevel vertoningshulp voor wordt gegeven &lt;info>list&lt;/info> command
 
 - Standaard: `false`
 - Accepteert geen waarde
@@ -9348,14 +10154,13 @@ Deze toepassingsversie weergeven
 
 ### `--ansi`
 
-ANSI-uitvoer forceren
+ANSI-uitvoer forceren (of uitschakelen —no-ansi)
 
-- Standaard: `false`
 - Accepteert geen waarde
 
 ### `--no-ansi`
 
-ANSI-uitvoer uitschakelen
+De optie &quot;—ansi&quot; negeren
 
 - Standaard: `false`
 - Accepteert geen waarde
@@ -9404,7 +10209,7 @@ ontsmetten negeren
 
 ### `--help`, `-h`
 
-Dit Help-bericht weergeven
+Help weergeven voor de opgegeven opdracht. Wanneer geen bevel vertoningshulp voor wordt gegeven &lt;info>list&lt;/info> command
 
 - Standaard: `false`
 - Accepteert geen waarde
@@ -9432,14 +10237,13 @@ Deze toepassingsversie weergeven
 
 ### `--ansi`
 
-ANSI-uitvoer forceren
+ANSI-uitvoer forceren (of uitschakelen —no-ansi)
 
-- Standaard: `false`
 - Accepteert geen waarde
 
 ### `--no-ansi`
 
-ANSI-uitvoer uitschakelen
+De optie &quot;—ansi&quot; negeren
 
 - Standaard: `false`
 - Accepteert geen waarde
@@ -9469,7 +10273,7 @@ Alleen vereiste consolehulpprogramma&#39;s controleren
 
 ### `--help`, `-h`
 
-Dit Help-bericht weergeven
+Help weergeven voor de opgegeven opdracht. Wanneer geen bevel vertoningshulp voor wordt gegeven &lt;info>list&lt;/info> command
 
 - Standaard: `false`
 - Accepteert geen waarde
@@ -9497,14 +10301,13 @@ Deze toepassingsversie weergeven
 
 ### `--ansi`
 
-ANSI-uitvoer forceren
+ANSI-uitvoer forceren (of uitschakelen —no-ansi)
 
-- Standaard: `false`
 - Accepteert geen waarde
 
 ### `--no-ansi`
 
-ANSI-uitvoer uitschakelen
+De optie &quot;—ansi&quot; negeren
 
 - Standaard: `false`
 - Accepteert geen waarde
@@ -9534,7 +10337,7 @@ Kracht
 
 ### `--help`, `-h`
 
-Dit Help-bericht weergeven
+Help weergeven voor de opgegeven opdracht. Wanneer geen bevel vertoningshulp voor wordt gegeven &lt;info>list&lt;/info> command
 
 - Standaard: `false`
 - Accepteert geen waarde
@@ -9562,14 +10365,13 @@ Deze toepassingsversie weergeven
 
 ### `--ansi`
 
-ANSI-uitvoer forceren
+ANSI-uitvoer forceren (of uitschakelen —no-ansi)
 
-- Standaard: `false`
 - Accepteert geen waarde
 
 ### `--no-ansi`
 
-ANSI-uitvoer uitschakelen
+De optie &quot;—ansi&quot; negeren
 
 - Standaard: `false`
 - Accepteert geen waarde
@@ -9616,7 +10418,7 @@ Gegenereerde statische weergavebestanden wissen.
 
 ### `--help`, `-h`
 
-Dit Help-bericht weergeven
+Help weergeven voor de opgegeven opdracht. Wanneer geen bevel vertoningshulp voor wordt gegeven &lt;info>list&lt;/info> command
 
 - Standaard: `false`
 - Accepteert geen waarde
@@ -9644,14 +10446,13 @@ Deze toepassingsversie weergeven
 
 ### `--ansi`
 
-ANSI-uitvoer forceren
+ANSI-uitvoer forceren (of uitschakelen —no-ansi)
 
-- Standaard: `false`
 - Accepteert geen waarde
 
 ### `--no-ansi`
 
-ANSI-uitvoer uitschakelen
+De optie &quot;—ansi&quot; negeren
 
 - Standaard: `false`
 - Accepteert geen waarde
@@ -9715,7 +10516,7 @@ Pad naar het bestand om vcl te schrijven
 
 ### `--help`, `-h`
 
-Dit Help-bericht weergeven
+Help weergeven voor de opgegeven opdracht. Wanneer geen bevel vertoningshulp voor wordt gegeven &lt;info>list&lt;/info> command
 
 - Standaard: `false`
 - Accepteert geen waarde
@@ -9743,14 +10544,13 @@ Deze toepassingsversie weergeven
 
 ### `--ansi`
 
-ANSI-uitvoer forceren
+ANSI-uitvoer forceren (of uitschakelen —no-ansi)
 
-- Standaard: `false`
 - Accepteert geen waarde
 
 ### `--no-ansi`
 
-ANSI-uitvoer uitschakelen
+De optie &quot;—ansi&quot; negeren
 
 - Standaard: `false`
 - Accepteert geen waarde

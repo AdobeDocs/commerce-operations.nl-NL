@@ -1,8 +1,8 @@
 ---
-source-git-commit: d263e412022a89255b7d33b267b696a8bb1bc8a2
+source-git-commit: 4c18f00e0b92e49924676274c4ed462a175a7e4b
 workflow-type: tm+mt
-source-wordcount: '147'
-ht-degree: 1%
+source-wordcount: '146'
+ht-degree: 0%
 
 ---
 # Controleren of communicatie veilig is
@@ -68,8 +68,8 @@ Connection: keep-alive
 
 ## HTTP Basic-verificatie configureren in de beheerfunctie
 
-Voer de zelfde taken uit zoals die in worden besproken [Configuratie van zoekmachine](../configuration/search/configure-search-engine.md) *behalve* klikken **[!UICONTROL Yes]** van de **[!UICONTROL Enable Elasticsearch HTTP Auth]** en voer uw gebruikersnaam en wachtwoord in de opgegeven velden in.
+Voer de zelfde taken uit zoals die in worden besproken [Configuratie van zoekmachine](../configuration/search/configure-search-engine.md) *behalve* klikken **[!UICONTROL Yes]** van de **[!UICONTROL Enable HTTP Auth]** en voer uw gebruikersnaam en wachtwoord in de opgegeven velden in.
 
 Klikken **[!UICONTROL Test Connection]** om ervoor te zorgen dat het werkt en klik vervolgens op **[!UICONTROL Save Config]**.
 
-U moet de cache van Magento leegmaken en opnieuw indexeren voordat u verdergaat.
+U moet de cache leegmaken en opnieuw indexeren voordat u verdergaat.

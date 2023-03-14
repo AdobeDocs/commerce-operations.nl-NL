@@ -2,9 +2,9 @@
 title: Prestaties optimaliseren, Recommendations
 description: Optimaliseer de prestaties van uw Adobe Commerce-implementatie met deze aanbevelingen.
 exl-id: c5d62e23-be43-4eea-afdb-bb1b156848f9
-source-git-commit: 065c56f20ba5b1eef8c331c5c2f5649902f1442b
+source-git-commit: 821ef18c1b0f00a6b9574be968ad76f0c230335c
 workflow-type: tm+mt
-source-wordcount: '1288'
+source-wordcount: '1290'
 ht-degree: 0%
 
 ---
@@ -107,7 +107,7 @@ Het testen van prestaties vóór elke productielevering wordt altijd geadviseerd
 
 ### Zoeken {#search-heading}
 
-Elasticsearch is vereist vanaf Adobe Commerce versie 2.4, maar het is ook aan te raden dit in te schakelen voor versies ouder dan 2.4.
+Elasticsearch (of OpenSearch) is vereist vanaf Adobe Commerce versie 2.4, maar het is ook aan te raden dit in te schakelen voor versies ouder dan 2.4.
 
 ## Operationele modellen
 

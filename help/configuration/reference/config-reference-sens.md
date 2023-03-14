@@ -1,9 +1,9 @@
 ---
 title: Gevoelige en systeemspecifieke paden
 description: Zie een lijst van systeem-specifieke en gevoelige configuratiewaarden.
-source-git-commit: 019d638403f2dc3e170a56842335da203126d8a6
+source-git-commit: 4c18f00e0b92e49924676274c4ed462a175a7e4b
 workflow-type: tm+mt
-source-wordcount: '3711'
+source-wordcount: '3702'
 ht-degree: 0%
 
 ---
@@ -53,7 +53,7 @@ Deze configuratiewaarden zijn beschikbaar in de Admin in **Winkels** > Instellin
 | Alleen HTTP gebruiken | `web/cookie/cookie_httponly` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |  | ![Sys-specifiek](/help/assets/configuration/cloud-env.png) |
 | Modus Cookie-beperking | `web/cookie/cookie_restriction` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |  | ![Sys-specifiek](/help/assets/configuration/cloud-env.png) |
 
-{style=&quot;table-layout:auto&quot;}
+{style="table-layout:auto"}
 
 ### De opstelling van de valuta gevoelige en systeemspecifieke wegen
 
@@ -63,7 +63,7 @@ Deze configuratiewaarden zijn beschikbaar in de Admin in **Winkels** > Instellin
 |--------------|--------------|--------------|--------------|--------------|--------------|
 | Fout bij e-mailontvanger | `currency/import/error_email` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |  |  | ![Gevoelig](/help/assets/configuration/cloud-sens.png) |
 
-{style=&quot;table-layout:auto&quot;}
+{style="table-layout:auto"}
 
 ### E-mailadresgevoelige en systeemspecifieke paden opslaan
 
@@ -82,7 +82,7 @@ Deze configuratiewaarden zijn beschikbaar in de Admin in **Winkels** > Instellin
 | Naam afzender | `trans_email/ident_custom2/name` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |  |  | ![Gevoelig](/help/assets/configuration/cloud-sens.png) |
 | E-mail afzender | `trans_email/ident_custom2/email` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |  |  | ![Gevoelig](/help/assets/configuration/cloud-sens.png) |
 
-{style=&quot;table-layout:auto&quot;}
+{style="table-layout:auto"}
 
 ### Contacteert gevoelige en systeem-specifieke wegen
 
@@ -94,22 +94,22 @@ Deze configuratiewaarden zijn beschikbaar in de Admin in **Winkels** > Instellin
 | E-mailafzender | `contact/email/sender_email_identity` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |  |  | ![Gevoelig](/help/assets/configuration/cloud-sens.png) |
 | E-mailsjabloon | `contact/email/email_template` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |  |  | ![Gevoelig](/help/assets/configuration/cloud-sens.png) |
 
-{style=&quot;table-layout:auto&quot;}
+{style="table-layout:auto"}
 
-### Nieuwe Relic die gevoelige en systeemspecifieke wegen meldt
+### New Relic die gevoelige en systeemspecifieke wegen meldt
 
-Deze configuratiewaarden zijn beschikbaar in de Admin in **Winkels** > Instellingen > **Configuratie** > **Algemeen** > **Nieuwe Relic Reporting**.
+Deze configuratiewaarden zijn beschikbaar in de Admin in **Winkels** > Instellingen > **Configuratie** > **Algemeen** > **New Relic Reporting**.
 
 | Naam | Config-pad | Alleen handel? | Versleuteld? | Systeemspecifiek? | Gevoelig? |
 |--------------|--------------|--------------|--------------|--------------|--------------|
-| Nieuwe account-id voor Relic | `newrelicreporting/general/account_id` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |  |  | ![Gevoelig](/help/assets/configuration/cloud-sens.png) |
-| Nieuwe toepassings-id Relic | `newrelicreporting/general/app_id` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |  |  | ![Gevoelig](/help/assets/configuration/cloud-sens.png) |
-| Nieuwe API-sleutel voor Relic | `newrelicreporting/general/api` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> | ![Gecodeerd](/help/assets/configuration/cloud-enc.png) |  | ![Gevoelig](/help/assets/configuration/cloud-sens.png) |
+| New Relic-account-id | `newrelicreporting/general/account_id` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |  |  | ![Gevoelig](/help/assets/configuration/cloud-sens.png) |
+| New Relic-toepassings-id | `newrelicreporting/general/app_id` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |  |  | ![Gevoelig](/help/assets/configuration/cloud-sens.png) |
+| New Relic API-sleutel | `newrelicreporting/general/api` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> | ![Gecodeerd](/help/assets/configuration/cloud-enc.png) |  | ![Gevoelig](/help/assets/configuration/cloud-sens.png) |
 | API-sleutel voor inzichten | `newrelicreporting/general/insights_insert_key` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> | ![Gecodeerd](/help/assets/configuration/cloud-enc.png) |  | ![Gevoelig](/help/assets/configuration/cloud-sens.png) |
-| Nieuwe URL voor Relic API | `newrelicreporting/general/api_url` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |  | ![Sys-specifiek](/help/assets/configuration/cloud-env.png) | ![Gevoelig](/help/assets/configuration/cloud-sens.png) |
+| New Relic API-URL | `newrelicreporting/general/api_url` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |  | ![Sys-specifiek](/help/assets/configuration/cloud-env.png) | ![Gevoelig](/help/assets/configuration/cloud-sens.png) |
 | Insights-API-URL | `newrelicreporting/general/insights_api_url` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |  | ![Sys-specifiek](/help/assets/configuration/cloud-env.png) | ![Gevoelig](/help/assets/configuration/cloud-sens.png) |
 
-{style=&quot;table-layout:auto&quot;}
+{style="table-layout:auto"}
 
 ## De categorie van klanten gevoelige en systeemspecifieke wegen
 
@@ -123,7 +123,7 @@ Deze configuratiewaarden zijn beschikbaar in de Admin in **Winkels** > Instellin
 |--------------|--------------|--------------|--------------|--------------|--------------|
 | Standaard-e-maildomein | `customer/create_account/email_domain` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |  | ![Sys-specifiek](/help/assets/configuration/cloud-env.png) |
 
-{style=&quot;table-layout:auto&quot;}
+{style="table-layout:auto"}
 
 ## Cataloguscategorie
 
@@ -149,8 +149,22 @@ Deze configuratiewaarden zijn beschikbaar in de Admin in **Winkels** > Instellin
 | Elasticsearch HTTP-gebruikersnaam | `catalog/search/elasticsearch_username` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |  | ![Sys-specifiek](/help/assets/configuration/cloud-env.png) |
 | Elasticsearch HTTP-wachtwoord | `catalog/search/elasticsearch_password` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |  | ![Sys-specifiek](/help/assets/configuration/cloud-env.png) |
 | Time-out Elasticsearch-server | `catalog/search/elasticsearch_server_timeout` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |  | ![Sys-specifiek](/help/assets/configuration/cloud-env.png) |
+| Elasticsearch HTTP-gebruikersnaam | `catalog/search/elasticsearch_username` | <!-- ![Not EE-only](/help/assets/configuration/red-x.png) --> |  | !![Sys-specific]({{ site.baseurl }}/common/images/cloud_env.png) |
+| Elasticsearch HTTP-wachtwoord | `catalog/search/elasticsearch_password` | <!-- ![Not EE-only](/help/assets/configuration/red-x.png) --> |  | !![Sys-specific]({{ site.baseurl }}/common/images/cloud_env.png) |
+| Time-out Elasticsearch-server | `catalog/search/elasticsearch_server_timeout` | <!-- ![Not EE-only](/help/assets/configuration/red-x.png) --> |  | !![Sys-specific]({{ site.baseurl }}/common/images/cloud_env.png) |
+| Hostnaam van OpenSearch-server | `catalog/search/opensearch_server_hostname` | <!-- ![Not EE-only](/help/assets/configuration/red-x.png) --> |  | !![Sys-specific]({{ site.baseurl }}/common/images/cloud_env.png) | ![Gevoelig](/help/assets/configuration/cloud-sens.png) |
+| OpenSearch-serverpoort | `catalog/search/opensearch_server_port` | <!-- ![Not EE-only](/help/assets/configuration/red-x.png) --> |  | !![Sys-specific]({{ site.baseurl }}/common/images/cloud_env.png) | ![Gevoelig](/help/assets/configuration/cloud-sens.png) |
+| Voorvoegsel van OpenSearch-index | `catalog/search/opensearch_index_prefix` | <!-- ![Not EE-only](/help/assets/configuration/red-x.png) --> |  | !![Sys-specific]({{ site.baseurl }}/common/images/cloud_env.png) | ![Gevoelig](/help/assets/configuration/cloud-sens.png) |
+| OpenSearch HTTP Auth inschakelen | `catalog/search/opensearch_enable_auth` | <!-- ![Not EE-only](/help/assets/configuration/red-x.png) --> |  | !![Sys-specific]({{ site.baseurl }}/common/images/cloud_env.png) |
+| HTTP-gebruikersnaam van OpenSearch | `catalog/search/opensearch_username` | <!-- ![Not EE-only](/help/assets/configuration/red-x.png) --> |  | !![Sys-specific]({{ site.baseurl }}/common/images/cloud_env.png) |
+| HTTP-wachtwoord voor OpenSearch | `catalog/search/opensearch_password` | <!-- ![Not EE-only](/help/assets/configuration/red-x.png) --> |  | !![Sys-specific]({{ site.baseurl }}/common/images/cloud_env.png) |
+| Time-out voor OpenSearch-server | `catalog/search/opensearch_server_timeout` | <!-- ![Not EE-only](/help/assets/configuration/red-x.png) --> |  | !![Sys-specific]({{ site.baseurl }}/common/images/cloud_env.png) |
 
-{style=&quot;table-layout:auto&quot;}
+{style="table-layout:auto"}
+
+>[!NOTE]
+>
+>OpenSearch-instellingen zijn geïntroduceerd in Adobe Commerce 2.4.6.
 
 ### Overzichtsgevoelige en systeemspecifieke paden
 
@@ -160,7 +174,7 @@ Deze configuratiewaarden zijn beschikbaar in de Admin in **Winkels** > Instellin
 |--------------|--------------|--------------|--------------|--------------|--------------|
 | Google API-sleutel | `cataloginventory/source_selection_distance_based_google/api_key` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> | ![Gecodeerd](/help/assets/configuration/cloud-enc.png) |  | ![Gevoelig](/help/assets/configuration/cloud-sens.png) |
 
-{style=&quot;table-layout:auto&quot;}
+{style="table-layout:auto"}
 
 ### XML sitemap-gevoelige en systeemspecifieke paden
 
@@ -170,7 +184,7 @@ Deze configuratiewaarden zijn beschikbaar in de Admin in **Winkels** > Instellin
 |--------------|--------------|--------------|--------------|--------------|--------------|
 | Fout bij e-mailontvanger | `sitemap/generate/error_email` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |  |  | ![Gevoelig](/help/assets/configuration/cloud-sens.png) |
 
-{style=&quot;table-layout:auto&quot;}
+{style="table-layout:auto"}
 
 ## Verkoopcategorie
 
@@ -190,7 +204,7 @@ Deze configuratiewaarden zijn beschikbaar in de Admin in **Winkels** > Instellin
 | Straatadres, regel 2 | `shipping/origin/street_line2` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |  |  | ![Gevoelig](/help/assets/configuration/cloud-sens.png) |
 | Liveaccount | `carriers/ups/is_account_live` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |  | ![Sys-specifiek](/help/assets/configuration/cloud-env.png) |
 
-{style=&quot;table-layout:auto&quot;}
+{style="table-layout:auto"}
 
 ### Verkoop e-mailgevoelige en systeemspecifieke paden
 
@@ -208,7 +222,7 @@ Deze configuratiewaarden zijn beschikbaar in de Admin in **Winkels** > Instellin
 | E-mailkopie van opmerking over creditcard verzenden naar | `sales_email/creditmemo_comment/copy_to` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |  |  | ![Gevoelig](/help/assets/configuration/cloud-sens.png) |
 | E-mailkopie voor afhalen naar | `sales_email/temando_pickup/copy_to` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |  |  | ![Gevoelig](/help/assets/configuration/cloud-sens.png) |
 
-{style=&quot;table-layout:auto&quot;}
+{style="table-layout:auto"}
 
 ### Uitchecken van gevoelige en systeemspecifieke paden
 
@@ -218,7 +232,7 @@ Deze configuratiewaarden zijn beschikbaar in de Admin in **Winkels** > Instellin
 |--------------|--------------|--------------|--------------|--------------|--------------|
 | Betaling is mislukt Kopie e-mail verzenden naar | `checkout/payment_failed/copy_to` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |  |  | ![Gevoelig](/help/assets/configuration/cloud-sens.png) |
 
-{style=&quot;table-layout:auto&quot;}
+{style="table-layout:auto"}
 
 ### Voor Google API gevoelige en systeemspecifieke paden
 
@@ -228,7 +242,7 @@ Deze configuratiewaarden zijn beschikbaar in de Admin in **Winkels** > Instellin
 |--------------|--------------|--------------|--------------|--------------|--------------|
 | Container-id | `google/analytics/container_id` | ![Alleen handel](/help/assets/configuration/cloud-ee.png) |  |  | ![Gevoelig](/help/assets/configuration/cloud-sens.png) |
 
-{style=&quot;table-layout:auto&quot;}
+{style="table-layout:auto"}
 
 ### Bezorgingsmethoden, gevoelige en systeemspecifieke paden
 
@@ -259,7 +273,7 @@ Deze configuratiewaarden zijn beschikbaar in de Admin in **Winkels** > Instellin
 | Gateway-URL | `carriers/dhl/gateway_url` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |  |  | ![Gevoelig](/help/assets/configuration/cloud-sens.png) |
 | Sandbox-modus | `carriers/fedex/sandbox_mode` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |  |  | ![Gevoelig](/help/assets/configuration/cloud-sens.png) |
 
-{style=&quot;table-layout:auto&quot;}
+{style="table-layout:auto"}
 
 ### Verkoopgevoelige en systeemspecifieke paden
 
@@ -279,7 +293,7 @@ Deze configuratiewaarden zijn beschikbaar in de Admin in **Winkels** > Instellin
 | E-mailkopie van RMA-opmerking verzenden naar | `sales_email/magento_rma_comment/copy_to` | ![Alleen handel](/help/assets/configuration/cloud-ee.png) |  |  | ![Gevoelig](/help/assets/configuration/cloud-sens.png) |
 | E-mailkopie van RMA-opmerking verzenden naar | `sales_email/magento_rma_customer_comment/copy_to` | ![Alleen handel](/help/assets/configuration/cloud-ee.png) |  |  | ![Gevoelig](/help/assets/configuration/cloud-sens.png) |
 
-{style=&quot;table-layout:auto&quot;}
+{style="table-layout:auto"}
 
 ### Google API-paden
 
@@ -289,7 +303,7 @@ Deze configuratiewaarden zijn beschikbaar in de Admin in **Winkels** > Instellin
 |--------------|--------------|--------------|--------------|--------------|--------------|
 | Rekeningnummer | `google/analytics/account` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |  |  | ![Gevoelig](/help/assets/configuration/cloud-sens.png) |
 
-{style=&quot;table-layout:auto&quot;}
+{style="table-layout:auto"}
 
 ## Geavanceerde categorie
 
@@ -304,7 +318,7 @@ Deze configuratiewaarden zijn beschikbaar in de Admin in **Winkels** > Instellin
 | Aangepaste beheerdersURL | `admin/url/custom` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |  |  | ![Gevoelig](/help/assets/configuration/cloud-sens.png) |
 | Aangepast beheerpad | `admin/url/custom_path` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |  |  | ![Gevoelig](/help/assets/configuration/cloud-sens.png) |
 
-{style=&quot;table-layout:auto&quot;}
+{style="table-layout:auto"}
 
 ### Systeemgevoelige en systeemspecifieke paden
 
@@ -316,7 +330,7 @@ Deze configuratiewaarden zijn beschikbaar in de Admin in **Winkels** > Instellin
 | Toegangslijst | `system/full_page_cache/varnish/access_list` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |  |  | ![Gevoelig](/help/assets/configuration/cloud-sens.png) |
 | Fout in e-mailafzender | `system/magento_scheduled_import_export_log/error_email_identity` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |  |  | ![Gevoelig](/help/assets/configuration/cloud-sens.png) |
 
-{style=&quot;table-layout:auto&quot;}
+{style="table-layout:auto"}
 
 ### Beheerbare en systeemspecifieke paden voor ontwikkelaars
 
@@ -326,7 +340,7 @@ Deze configuratiewaarden zijn beschikbaar in de Admin in **Winkels** > Instellin
 |--------------|--------------|--------------|--------------|--------------|--------------|
 | Toegestane IPs (komma&#39;s gescheiden) | `dev/restrict/allow_ips` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |  | ![Sys-specifiek](/help/assets/configuration/cloud-env.png) | ![Gevoelig](/help/assets/configuration/cloud-sens.png) |
 
-{style=&quot;table-layout:auto&quot;}
+{style="table-layout:auto"}
 
 ## Geavanceerde categorie
 
@@ -343,7 +357,7 @@ Deze configuratiewaarden zijn beschikbaar in de Admin in **Winkels** > Instellin
 | Backend-host | `system/full_page_cache/varnish/backend_host` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |  | ![Sys-specifiek](/help/assets/configuration/cloud-env.png) | ![Gevoelig](/help/assets/configuration/cloud-sens.png) |
 | Backend-poort | `system/full_page_cache/varnish/backend_port` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |  | ![Sys-specifiek](/help/assets/configuration/cloud-env.png) | ![Gevoelig](/help/assets/configuration/cloud-sens.png) |
 
-{style=&quot;table-layout:auto&quot;}
+{style="table-layout:auto"}
 
 ### Paden voor ontwikkelaars
 
@@ -353,7 +367,7 @@ Deze configuratiewaarden zijn beschikbaar in de Admin in **Winkels** > Instellin
 |--------------|--------------|--------------|--------------|--------------|--------------|
 | Logbestand JS-fouten in opslagsleutel voor sessie | `dev/js/session_storage_key` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |  | ![Sys-specifiek](/help/assets/configuration/cloud-env.png) |
 
-{style=&quot;table-layout:auto&quot;}
+{style="table-layout:auto"}
 
 ## Betalingsgevoelige en systeemspecifieke paden
 
@@ -365,7 +379,7 @@ In deze sectie worden de namen van variabelen en configuratiepaden weergegeven d
 |--------------|--------------|--------------|--------------|
 | Land van koophandel | `paypal/general/merchant_country` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |  |  | ![Gevoelig](/help/assets/configuration/cloud-sens.png) |
 
-{style=&quot;table-layout:auto&quot;}
+{style="table-layout:auto"}
 
 >[!INFO]
 >
@@ -386,7 +400,7 @@ In deze sectie worden de namen van variabelen en configuratiepaden weergegeven d
 | Foutopsporingsmodus | `payment/paypal_billing_agreement/debug` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |  | ![Sys-specifiek](/help/assets/configuration/cloud-env.png) |
 | SFTP-referenties | `payment_all_paypal/express_checkout/settings_ec/settings_ec_advanced/express_checkout_settlement_report/heading_sftp` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |  |  | ![Gevoelig](/help/assets/configuration/cloud-sens.png) |
 
-{style=&quot;table-layout:auto&quot;}
+{style="table-layout:auto"}
 
 ### PayPal Payflow Pro-gevoelige en systeemspecifieke paden
 
@@ -405,7 +419,7 @@ In deze sectie worden de namen van variabelen en configuratiepaden weergegeven d
 | SFTP-referenties | `payment_all_paypal/paypal_payflowpro/settings_paypal_payflow/settings_paypal_payflow_advanced/paypal_payflow_settlement_report/heading_sftp` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |  | ![Sys-specifiek](/help/assets/configuration/cloud-env.png) |
 | Creditcardinstellingen | `payment_all_paypal/paypal_payflowpro/settings_paypal_payflow/heading_cc` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |  |  | ![Gevoelig](/help/assets/configuration/cloud-sens.png) |
 
-{style=&quot;table-layout:auto&quot;}
+{style="table-layout:auto"}
 
 ### PayPal Payflow Link-gevoelige en systeemspecifieke paden
 
@@ -422,7 +436,7 @@ In deze sectie worden de namen van variabelen en configuratiepaden weergegeven d
 | Foutopsporingsmodus | `payment/payflow_express/debug` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |  | ![Sys-specifiek](/help/assets/configuration/cloud-env.png) |
 | SFTP-referenties | `payment_all_paypal/payflow_link/settings_payflow_link/settings_payflow_link_advanced/payflow_link_settlement_report/heading_sftp` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |  |  | ![Gevoelig](/help/assets/configuration/cloud-sens.png) |
 
-{style=&quot;table-layout:auto&quot;}
+{style="table-layout:auto"}
 
 ### PayPal Payments Pro gevoelige en systeemspecifieke paden
 
@@ -437,7 +451,7 @@ In deze sectie worden de namen van variabelen en configuratiepaden weergegeven d
 | Sandbox-modus | `paypal/wpp/sandbox_flag` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |  | ![Sys-specifiek](/help/assets/configuration/cloud-env.png) |
 | SFTP-referenties | `payment_all_paypal/payments_pro_hosted_solution_without_bml/pphs_settings/pphs_settings_advanced/pphs_settlement_report/heading_sftp` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |  |  | ![Gevoelig](/help/assets/configuration/cloud-sens.png) |
 
-{style=&quot;table-layout:auto&quot;}
+{style="table-layout:auto"}
 
 ### PayPal Payments Pro Gehoste gevoelige en systeemspecifieke paden
 
@@ -447,7 +461,7 @@ In deze sectie worden de namen van variabelen en configuratiepaden weergegeven d
 | SFTP-referenties | `payment_all_paypal/payments_pro_hosted_solution/pphs_settings/pphs_settings_advanced/pphs_settlement_report/heading_sftp` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |  |  | ![Gevoelig](/help/assets/configuration/cloud-sens.png) |
 | SFTP-referenties | `payment_au/paypal_group_all_in_one/payments_pro_hosted_solution_au/pphs_settings/pphs_settings_advanced/pphs_settlement_report/heading_sftp` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |  |  | ![Gevoelig](/help/assets/configuration/cloud-sens.png) |
 
-{style=&quot;table-layout:auto&quot;}
+{style="table-layout:auto"}
 
 ### Braintree-gevoelige en systeemspecifieke paden
 
@@ -462,7 +476,7 @@ In deze sectie worden de namen van variabelen en configuratiepaden weergegeven d
 | Telefoon | `payment/braintree/descriptor_phone` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |  |  | ![Gevoelig](/help/assets/configuration/cloud-sens.png) |
 | URL | `payment/braintree/descriptor_url` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |  | ![Sys-specifiek](/help/assets/configuration/cloud-env.png) |
 
-{style=&quot;table-layout:auto&quot;}
+{style="table-layout:auto"}
 
 ### Paden voor cheque- en postwissel
 
@@ -471,7 +485,7 @@ In deze sectie worden de namen van variabelen en configuratiepaden weergegeven d
 | Controle verzenden naar | `payment/checkmo/mailing_address` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |  |  | ![Gevoelig](/help/assets/configuration/cloud-sens.png) |
 | Controle verzenden naar | `payment_us/checkmo/mailing_address` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |  |  | ![Gevoelig](/help/assets/configuration/cloud-sens.png) |
 
-{style=&quot;table-layout:auto&quot;}
+{style="table-layout:auto"}
 
 ### Internationale paden
 
@@ -864,4 +878,4 @@ In deze sectie worden de namen van variabelen en configuratiepaden weergegeven d
 | Installatie-id voor extern beheer | `payment_it/worldpay/admin_installation_id` | ![Alleen handel](/help/assets/configuration/cloud-ee.png) |  |  | ![Gevoelig](/help/assets/configuration/cloud-sens.png) |
 | MD5 Secret for Transactions | `payment_it/worldpay/md5_secret` | ![Alleen handel](/help/assets/configuration/cloud-ee.png) |  |  | ![Gevoelig](/help/assets/configuration/cloud-sens.png) |
 
-{style=&quot;table-layout:auto&quot;}
+{style="table-layout:auto"}

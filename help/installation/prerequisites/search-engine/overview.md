@@ -1,9 +1,9 @@
 ---
 title: Voorwaarden voor zoekmachines
 description: Voer de volgende stappen uit om ondersteunde software voor zoekprogramma's te installeren en te configureren voor installaties op locatie van Adobe Commerce en Magento Open Source.
-source-git-commit: 61638d373408d9a7c3c3a935eee61927acfac7a6
+source-git-commit: d3cfd97450164d38fd340b538099739601573d64
 workflow-type: tm+mt
-source-wordcount: '788'
+source-wordcount: '789'
 ht-degree: 0%
 
 ---
@@ -19,7 +19,7 @@ Vanaf Adobe Commerce en Magento Open Source 2.4 moeten alle installaties zodanig
 
 ## Ondersteunde versies
 
-U moet Elasticsearch of OpenSearch installeren en configureren voordat u Adobe Commerce of Magento Open Source 2.4.4 installeert.
+U moet Elasticsearch of OpenSearch installeren en configureren voordat u Adobe Commerce 2.4.4 en hoger installeert.
 
 Zie de [Systeemvereisten](../../system-requirements.md) voor specifieke versiegegevens.
 
@@ -164,4 +164,4 @@ Elasticsearch vereist JDK 1.8 of hoger. Zie [De Java Software Development Kit in
 
 ## Aanvullende bronnen
 
-Zie voor meer informatie [Elasticsearch-documentatie](https://www.elastic.co/guide/en/elasticsearch/reference/current/index.html).
+Zie de [Elasticsearch](https://www.elastic.co/guide/en/elasticsearch/reference/current/index.html) of [OpenSearch](https://opensearch.org/docs/latest/) documentatie.

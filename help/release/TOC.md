@@ -1,9 +1,9 @@
 ---
 user-guide-title: Gegevens vrijgeven
-user-guide-description: Meer informatie over Adobe Commerce en Magento Open Source-releases.
-source-git-commit: 841c6861c6b7a7341f334ba449b6270b31a34e94
+user-guide-description: Open op één locatie alle releasegegevens voor Adobe Commerce-patches en -services.
+source-git-commit: 1ca3d530051b0f59084bf370951f8f0b03dcfc28
 workflow-type: tm+mt
-source-wordcount: '90'
+source-wordcount: '92'
 ht-degree: 15%
 
 ---
@@ -43,8 +43,7 @@ ht-degree: 15%
 - [Uitgebrachte versies](versions.md)
 - [Functies op versie](features.md)
 - [Beschikbaarheid van producten](product-availability.md)
-- [Routekaart voor producten](product-roadmap.md)
-- [Bètaprogramma](beta-program.md)
+- [Bèta-releases](beta.md)
 - Planning en beleid {#planning}
    - [Levenscyclusbeleid](lifecycle-policy.md)
    - [Versionbeleid](versioning-policy.md)

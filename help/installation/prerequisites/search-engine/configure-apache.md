@@ -1,9 +1,9 @@
 ---
 title: Apache configureren voor uw zoekmachine
 description: Voer de volgende stappen uit om een zoekmachine te configureren met de Apache-webserver voor installaties in de bedrijfsruimten van Adobe Commerce en Magento Open Source.
-source-git-commit: f6f438b17478505536351fa20a051d355f5b157a
+source-git-commit: d3cfd97450164d38fd340b538099739601573d64
 workflow-type: tm+mt
-source-wordcount: '662'
+source-wordcount: '651'
 ht-degree: 0%
 
 ---
@@ -17,9 +17,9 @@ ht-degree: 0%
 
 >[!NOTE]
 >
->Ondersteuning voor OpenSearch is toegevoegd in 2.4.4. OpenSearch is een compatibele vork van Elasticsearch. Alle instructies voor het configureren van Elasticsearch 7 zijn van toepassing op OpenSearch. Zie [Elasticsearch migreren naar OpenSearch](../../../upgrade/prepare/opensearch-migration.md) voor meer informatie .
+>Ondersteuning voor OpenSearch is toegevoegd in 2.4.4. OpenSearch is een compatibele vork van Elasticsearch. Zie [Elasticsearch migreren naar OpenSearch](../../../upgrade/prepare/opensearch-migration.md) voor meer informatie .
 
-In deze sectie wordt besproken hoe u Apache kunt configureren als een *onveilig* zodat Adobe Commerce of Magento Open Source een zoekprogramma kan gebruiken dat op deze server wordt uitgevoerd. In deze sectie wordt het instellen van HTTP Basic-verificatie niet besproken. dat wordt besproken in [Beveiligde communicatie met Apache](#secure-communication-with-apache).
+In deze sectie wordt besproken hoe u Apache kunt configureren als een *onveilig* zodat Adobe Commerce een zoekprogramma kan gebruiken dat op deze server wordt uitgevoerd. In deze sectie wordt het instellen van HTTP Basic-verificatie niet besproken. dat wordt besproken in [Beveiligde communicatie met Apache](#secure-communication-with-apache).
 
 >[!NOTE]
 >
@@ -174,7 +174,7 @@ htpasswd /usr/local/apache/password/.htpasswd <username>
 
 ### Beveiligde communicatie met Apache
 
-In deze sectie wordt beschreven hoe u de installatie instelt [HTTP Basic-verificatie](https://httpd.apache.org/docs/2.2/howto/auth.html). Door het gebruik van TLS en HTTP Basic-verificatie wordt voorkomen dat iedereen communicatie onderschept met Elasticsearch of met uw toepassingsserver.
+In deze sectie wordt beschreven hoe u de installatie instelt [HTTP Basic-verificatie](https://httpd.apache.org/docs/2.2/howto/auth.html). Als u TLS en HTTP Basic-verificatie gebruikt, kan niemand communicatie met Elasticsearch of OpenSearch of met uw toepassingsserver onderscheppen.
 
 In deze sectie wordt besproken hoe u kunt opgeven wie toegang heeft tot de Apache-server.
 
@@ -188,7 +188,7 @@ In deze sectie wordt besproken hoe u kunt opgeven wie toegang heeft tot de Apach
        Allow from all
    
        AuthType Basic
-       AuthName "Elastic Server"
+       AuthName "Elasticsearch Server" # or OpenSearch Server
        AuthBasicProvider file
        AuthUserFile /usr/local/apache/password/.htpasswd_elasticsearch
        Require valid-user

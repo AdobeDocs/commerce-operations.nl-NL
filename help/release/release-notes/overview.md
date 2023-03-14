@@ -1,9 +1,9 @@
 ---
 title: Opmerkingen bij de release Adobe Commerce en Magento Open Source
 description: Leer waar u informatie kunt vinden voor specifieke Adobe Commerce- en Magento Open Source-releases.
-source-git-commit: d63d1dd03cbf166f6fbce1df7113d1e861363f28
+source-git-commit: da6741586d0fb8e029ee5a9342e1299176df298e
 workflow-type: tm+mt
-source-wordcount: '400'
+source-wordcount: '413'
 ht-degree: 0%
 
 ---
@@ -63,6 +63,7 @@ Gebruik de volgende lijst om versienota&#39;s en belangrijke informatie met betr
         <p>Leer over de recentste verbeteringen aan hulpmiddelen die worden ontworpen om het voor u gemakkelijker te maken om Adobe Commerce en software van de Magento Open Source te vinden en te gebruiken.</p>
           <ul>
             <li><a href="https://developer.adobe.com/graphql-mesh-gateway/">API-net voor Adobe APP Builder-ontwikkelaar</a></li>
+            <li><a href="https://developer.adobe.com/commerce/events/get-started/release-notes/">Adobe I/O Events voor Adobe Commerce</a></li>
             <li><a href="../../tools/quality-patches-tool/release-notes.md">Kwaliteitspatches</a></li>
             <li><a href="../../tools/site-wide-analysis-tool/intro.md">Analyse voor de hele site</a></li>
             <li><a href="../../upgrade/upgrade-compatibility-tool/overview.md">Compatibiliteit upgraden</a></li>

@@ -1,9 +1,9 @@
 ---
 title: Best practices voor configuratie
 description: Optimaliseer de reactietijd van uw Adobe Commerce- of Magento Open Source-implementatie met deze best practices.
-source-git-commit: d263e412022a89255b7d33b267b696a8bb1bc8a2
+source-git-commit: 5b455cb1285ce764a0517008fb8b692f3899066d
 workflow-type: tm+mt
-source-wordcount: '938'
+source-wordcount: '1348'
 ht-degree: 0%
 
 ---
@@ -21,10 +21,9 @@ Alle asynchrone bewerkingen in [!DNL Commerce] worden uitgevoerd met behulp van 
 
 Een indexeerprogramma kan worden uitgevoerd in **[!UICONTROL Update on Save]** of **[!UICONTROL Update on Schedule]** in. De **[!UICONTROL Update on Save]** wordt onmiddellijk geïndexeerd wanneer uw catalogus of andere gegevens veranderen. In deze modus wordt ervan uitgegaan dat de update- en bladerbewerkingen in uw winkel weinig intensief zijn. Dit kan leiden tot aanzienlijke vertragingen en onbeschikbaarheid van gegevens tijdens hoge belastingen. We raden u aan **Bijwerken in schema** in productie, omdat het informatie over gegevensupdates opslaat en indexatie door gedeelten op de achtergrond door een specifieke kroonbaan uitvoert. U kunt de modus van elk [!DNL Commerce] indexeer afzonderlijk op de  **[!UICONTROL System]** > [!UICONTROL Tools] > **[!UICONTROL Index Management]** configuratiepagina.
 
-Het opnieuw indexeren van MariaDB 10.4 kost meer tijd dan andere MariaDB of [!DNL MySQL] versies. Als tussenoplossing, stellen wij voor om de standaardconfiguratie te wijzigen MariaDB en de volgende parameters te plaatsen:
-
-* [`optimizer_switch='rowid_filter=off'`](https://mariadb.com/kb/en/optimizer-switch/)
-* [`optimizer_use_condition_selectivity = 1`](https://mariadb.com/products/skysql/docs/reference/es/system-variables/optimizer_use_condition_selectivity/)
+>[!TIP]
+>
+>Het opnieuw indexeren van MariaDB 10.4 en 10.6 kost meer tijd dan andere MariaDB of [!DNL MySQL] versies. Wij stellen voor de standaard MariaDB-configuratie-instelling te wijzigen. Deze instelling wordt beschreven in het dialoogvenster [installatievereisten](../installation/prerequisites/database/mysql.md).
 
 ## Cursussen
 
@@ -49,6 +48,10 @@ In tijden van intensieve verkoop [!DNL Commerce] kan voorraadupdates met betrekk
 >[!INFO]
 >
 >Deze optie is alleen beschikbaar als **[!UICONTROL Backorder with any mode]** is geactiveerd.
+
+>[!INFO]
+>
+>Deze optie werkt ook met [Asynchrone orderplaatsing](high-throughput-order-processing.md#asynchronous-order-placement) in combinatie met [Inventory management](https://experienceleague.adobe.com/docs/commerce-admin/inventory/guide-overview.html).
 
 ## Optimalisatie-instellingen aan de clientzijde
 
@@ -80,6 +83,18 @@ Wanneer u het dialoogvenster **[!UICONTROL Enable [!DNL JavaScript] Bundling]** 
 * Het activeren van het HTTP2-protocol kan een goed alternatief zijn voor het gebruik van JS-bundeling. Het protocol biedt vrijwel dezelfde voordelen.
 * We raden u niet aan vervangen instellingen te gebruiken, zoals het samenvoegen van JS- en CSS-bestanden, omdat deze alleen zijn ontworpen voor JS die synchroon zijn geladen in de sectie HEAD van de pagina. Het gebruik van deze techniek kan het bundelen veroorzaken en requireJS logica om verkeerd te werken.
 
+## Validatie van klantsegmenten
+
+Handelaren met een groot aantal [klantsegmenten](https://docs.magento.com/user-guide/marketing/customer-segments.html) kan aanzienlijke prestatievermindering ervaren met acties van klanten, zoals aanmelding bij klanten en het toevoegen van producten aan het winkelwagentje.
+
+De acties van de klant brengen een bevestigingsproces voor klantensegmenten teweeg, wat prestatiesdegradatie kan veroorzaken. Standaard valideert Adobe Commerce elk segment in real-time om te bepalen welke klantsegmenten overeenkomen en welke niet.
+
+U voorkomt een verslechtering van de prestaties door de **[!UICONTROL Real-time Check if Customer is Matched by Segment]** systeemconfiguratieoptie voor **Nee** om klantensegmenten door één enkele gecombineerde voorwaardeSQL vraag te bevestigen.
+
+Ga naar **[!UICONTROL Stores]> [!UICONTROL Settings] > [!UICONTROL Configuration] > [!UICONTROL Customers] > [!UICONTROL Customer Configuration] > [!UICONTROL Customer Segments] >[!UICONTROL Real-time Check if Customer is Matched by Segment]**.
+
+Dit het plaatsen verbetert de prestaties van de bevestiging van het klantensegment als er vele klantensegmenten in het systeem zijn. Het werkt echter niet met [gesplitste database](../configuration/storage/multi-master.md) implementaties of wanneer er geen geregistreerde klanten zijn.
+
 ## Onderhoudsschema voor databases {#database}
 
 We raden u aan periodieke databaseback-ups uit te voeren voor uw instanties van Staging en Productie. Vanwege de I/O-intensieve aard van back-upbewerkingen kunnen er langzamere back-ups en potentiële problemen optreden. Als databaseprocessen voor meerdere omgevingen tegelijkertijd worden uitgevoerd, kan dit mogelijk trager verlopen als gevolg van conflicten met beschikbare bronnen.
@@ -87,3 +102,24 @@ We raden u aan periodieke databaseback-ups uit te voeren voor uw instanties van 
 Voor betere prestaties, planning uw steunen om achtereenvolgens, één voor één, op off-piektijden te lopen. Met deze methode vermijdt u I/O-conflicten en verkort u de tijd om deze te voltooien, vooral voor kleinere exemplaren, grotere databases, enzovoort.
 
 Bijvoorbeeld, adviseren wij het plannen van een steun van uw gegevensbestand van de Productie die door het Staging gegevensbestand wordt gevolgd wanneer uw opslag lagere bezoeken ontmoet.
+
+## Limiet voor het aantal producten in het raster
+
+Om de prestaties van het productnet voor grote catalogi te verbeteren, adviseren wij het beperken van het aantal producten in het net met **[!UICONTROL Stores]> [!UICONTROL Settings] > [!UICONTROL Configuration] > [!UICONTROL Advanced] > [!UICONTROL Admin] > [!UICONTROL Admin Grids] >[!UICONTROL Limit Number of Products in Grid]** systeemconfiguratie-instelling.
+
+Deze instelling voor systeemconfiguratie is standaard uitgeschakeld. Door het toe te laten, kunt u het aantal producten in het net tot een specifieke waarde beperken. **[!UICONTROL Records Limit]** is een aanpasbare instelling met een standaard minimumwaarde van `20000`.
+Wanneer de **[!UICONTROL Limit Number of Products in Grid]** het plaatsen wordt toegelaten en het aantal producten in het net is groter dan de verslaggrens, dan is de beperkte inzameling van verslagen teruggekeerd. Wanneer de limiet is bereikt, worden de totale gevonden records, het aantal geselecteerde records en de pagineringselementen verborgen achter de rasterkop.
+
+Wanneer het totale aantal producten in het raster beperkt is, heeft dit geen invloed op de massaacties van het productraster. Het heeft alleen invloed op de presentatielaag van het productraster. Er is bijvoorbeeld een beperkt aantal `20000` producten in het raster, klikt de gebruiker op **[!UICONTROL Select All]** selecteert u de **[!UICONTROL Update attributes]** massaactie, en werkt sommige attributen bij. Als gevolg hiervan worden alle producten bijgewerkt, niet de beperkte verzameling van `20000` records.
+
+De beperking van het productraster is alleen van toepassing op productverzamelingen die worden gebruikt door UI-componenten. Deze beperking geldt dus niet voor alle productrasters. Alleen die welke `Magento\Catalog\Ui\DataProvider\Product\ProductCollection`.
+U kunt verzamelingen van productrasters alleen op de volgende pagina&#39;s beperken:
+
+* Catalogusproductraster
+* Raster Verwante/Up-Sell/Cross-Sell-producten toevoegen
+* Producten toevoegen aan bundelproduct
+* Producten toevoegen aan productgroep
+* Beheerderspagina voor bestelling maken
+
+Als u niet wilt dat het productraster wordt beperkt, raden we u aan om filters nauwkeuriger te gebruiken zodat de resultaatverzameling minder items bevat dan **[!UICONTROL Records Limit]**.
+

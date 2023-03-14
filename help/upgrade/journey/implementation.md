@@ -1,9 +1,9 @@
 ---
 title: Upgrade uitvoeren
-description: Leer over de verschillende fasen van verbeteringsimplementatie voor Adobe Commerce en Magento Open Source projecten.
-source-git-commit: 639dca9ee715f2f9ca7272d3b951d3315a85346c
+description: Leer over de verschillende fasen van verbeteringsimplementatie voor de projecten van Adobe Commerce.
+source-git-commit: 5e02f300bb0b5601c653fdea1dd5b85f4e18ed9c
 workflow-type: tm+mt
-source-wordcount: '869'
+source-wordcount: '824'
 ht-degree: 1%
 
 ---
@@ -25,7 +25,7 @@ Analyse is waarschijnlijk het belangrijkste onderdeel van het upgradeproces. Een
 
 De volgende punten kunnen u in een grondige analyse willen omvatten:
 
-- **Toepassingsgebied van doelversie**—Documentatie over [Handelsversie DevDocs](https://devdocs.magento.com) en de informatie van de partnerversie webinars verstrekt alle details u over uw doelverbetering moet weten.
+- **Toepassingsgebied van doelversie**—Documentatie over [Experience League](../../release/release-notes/overview.md) en de informatie van de partnerversie webinars verstrekt alle details u over uw doelverbetering moet weten.
 
 - **[!DNL Upgrade Compatibility Tool]resultaten**—Dit hulpmiddel maakt om het even welke verbetering sneller en gemakkelijker door uw huidige code met de code van de doelversie te vergelijken en een rapport van alle kwesties te produceren die moeten worden behandeld. Zie de [[!DNL Upgrade Compatibility Tool]](../upgrade-compatibility-tool/overview.md). Belangrijkste details uit het verslag zijn:
 
@@ -38,29 +38,29 @@ De volgende punten kunnen u in een grondige analyse willen omvatten:
 
    | Service | Huidige versie | Upgrade uitvoeren naar | Notities |
    |-----------------|-----------------|------------|----------------------------------------------------------|
-   | PHP | 7.2.33. | 8,1 |  |
-   | Redis | 5,05 | 6,0 |  |
-   | [!DNL RabbitMQ] | 3,7 | 3,8 | Momenteel niet gebruikt, maar we moeten overwegen het te gebruiken |
-   | MariaDB (cloud) | 10.2.33. | 10,4 |  |
-   | MySQL | 8,0 |  |  |
-   | Composer | 1.9.2. | 2,0 |  |
-   | Elasticsearch | 7,7 | 7,10 |  |
+   | PHP | 7.4 | 8.1 |  |
+   | Redis | 6.0 | 6.2 |  |
+   | [!DNL RabbitMQ] | 3.8 | 3.9 | Momenteel niet gebruikt, maar we moeten overwegen het te gebruiken |
+   | MariaDB (cloud) | 10.4 | 10.6 |  |
+   | MySQL | 8.0 | -/-/ |  |
+   | Composer | 1.9.2 | 2.2 |  |
+   | Elasticsearch | 7.10 | 7.17 |  |
 
 - **Uitbreidingen en modules van derden**—Gebruik deze tabelsjabloon om u te helpen de status van uw extensies en aanpassingen te begrijpen, zodat u strategische beslissingen kunt nemen en acties kunt definiëren. Dit is een gelegenheid om extensies te vervangen die native zijn voor Adobe Commerce of Magento Open Source om de complexiteit van uw project te minimaliseren. Gebruik de `bin/magento module:status` gebruiken om een lijst met modules en extensies weer te geven.
 
-   | Aantal | Extensie/<br>modulenaam | Composer-pakket | Leverancier | Huidige versie | Functionaliteit | Compatibel met nieuwste<br>Handelsversie? | Problemen | Inheems voor handel? | Handeling | Notities |
+   | # | Extensie/<br>modulenaam | Composer-pakket | Leverancier | Huidige versie | Functionaliteit | Compatibel met nieuwste<br>Handelsversie? | Problemen | Inheems voor handel? | Handeling | Notities |
    |---|-----------------------------|------------------------------------|-------------|-------------------|-----------------------|---------------------------------------------|--------------------------------------------------|---------------------|-------------------------|-------|
    | 1 | Naam en koppeling van extensie | extension/<br>extensionx-magento-2 | Naam leverancier | Versie geïnstalleerd | Bedrijfsvereisten | Ja/Nee | Lijst met geïdentificeerde problemen waarmee deze extensie wordt geconfronteerd | Ja/Nee | Behouden/vervangen/<br>Verwijderen |  |
 
 - **Aangepaste modules**—Vergelijkbaar met de lijst van derdemodules, helpt dit malplaatje u de status en de acties volgen en begrijpen die voor de bevordering van douanemodules worden vereist.
 
-   | Aantal | Modulenaam | Functionaliteit | Vereist? | Inheems voor handel? | Handeling | Notities |
+   | # | Modulenaam | Functionaliteit | Vereist? | Inheems voor handel? | Handeling | Notities |
    |---|--------------|-----------------------|-----------|---------------------|---------------------|-------|
    | 1 | Modulenaam | Bedrijfsvereisten | Ja/Nee | Ja/Nee | Behouden/vervangen/verwijderen |  |
 
 - **Composer-pakketten en afhankelijkheden in composer.json die een update vereisen.**
 
-Daarnaast kunnen partners deelnemen aan de [Adobe Commerce Beta-programma](https://devdocs.magento.com/release/beta-program.html) en gebruik pre-releasemogelijkheden om vroege toegang tot de code voor een aanstaande versie te krijgen. Als ontwikkelaars vroegtijdig toegang krijgen tot de code, kunnen ze zich voorbereiden op voldoende tijd om de upgrade te voltooien op de datum van de algemene beschikbaarheid (GA). De bètacode wordt doorgaans vijf weken vóór de GA-datum vrijgegeven en de pre-releases worden twee weken van tevoren vrijgegeven. Voor versie 2.4.4, begon Adobe bètecode vijf maanden vóór de datum GA (8 Maart, 2022) vrij te geven, zodat kunnen de partners beginnen nu voor die verbetering voor te bereiden [aanmelden voor het programma](https://community.magento.com/t5/Magento-DevBlog/BREAKING-NEWS-2-4-4-beta-releases-are-coming-soon/ba-p/484310).
+Daarnaast kunnen partners deelnemen aan [Adobe Commerce bèta-releases](../../release/beta.md) en gebruik pre-releasemogelijkheden om vroege toegang tot de code voor een aanstaande versie te krijgen. Als ontwikkelaars vroegtijdig toegang krijgen tot de code, kunnen ze zich voorbereiden op voldoende tijd om de upgrade te voltooien op de datum van de algemene beschikbaarheid (GA). De bètacode wordt doorgaans vijf weken vóór de GA-datum vrijgegeven en de pre-releases worden twee weken van tevoren vrijgegeven.
 
 ## Ontwikkeling en kwaliteitscontrole
 
@@ -84,4 +84,4 @@ Tot slot wil u uw team vragen lessen te leren en valkuilen te bepalen. Deze teru
 
 Nadat uw site is gestart, controleert u de analysegegevens, de Google Search Console en andere bronnen om te controleren of er geen onverwachte problemen zijn en of alles werkt zoals u had verwacht.
 
-Het is altijd een goed idee om de prestaties in de gaten te houden door middel van goed ontworpen controlemiddelen. U kunt de prestaties van uw site op veel verschillende manieren controleren, dus kies er een die goed overeenkomt met uw organisatie. We raden Adobe Commerce-klanten die ons beheersysteem voor cloudinfrastructuur gebruiken aan gebruik te maken van services zoals [Nieuw bericht](https://devdocs.magento.com/cloud/project/new-relic.html) om de prestaties van de site te controleren.
+Het is altijd een goed idee om de prestaties in de gaten te houden door middel van goed ontworpen controlemiddelen. U kunt de prestaties van uw site op veel verschillende manieren controleren, dus kies er een die goed overeenkomt met uw organisatie. We raden Adobe Commerce-klanten die ons beheersysteem voor cloudinfrastructuur gebruiken aan gebruik te maken van services zoals [New Relic](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/monitor/new-relic.html) om de prestaties van de site te controleren.

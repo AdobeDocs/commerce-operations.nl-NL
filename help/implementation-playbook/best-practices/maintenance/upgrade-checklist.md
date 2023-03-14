@@ -4,7 +4,7 @@ description: Leer hoe u een upgradecontrolelijst maakt en gebruikt om uw Adobe C
 role: Leader
 feature: Best Practices
 feature-set: Commerce
-source-git-commit: 644970b350c7591896f7c00d4c94661c76495c73
+source-git-commit: 5e02f300bb0b5601c653fdea1dd5b85f4e18ed9c
 workflow-type: tm+mt
 source-wordcount: '498'
 ht-degree: 0%
@@ -61,7 +61,7 @@ Gebruik deze controlelijst tijdens uw jaarlijkse en driemaandelijkse gesprekken 
 
 ▢
 
-- Partner neemt deel aan [Beta](../../../release/beta-program.md)
+- Partner neemt deel aan [Beta](../../../release/beta.md)
 - Opmerking bètarelease.
 
 ▢ overeenstemming bereiken over begroting, tijdschema, toepassingsgebied.

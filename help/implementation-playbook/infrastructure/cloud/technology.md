@@ -2,9 +2,9 @@
 title: Cloud Infrastructure Technologies
 description: Bekijk de verzameling van technologie die we voor Adobe Commerce gebruiken op cloudinfrastructuur nader.
 exl-id: de1b3a64-d32b-455f-bdb0-ad883dedd6d4
-source-git-commit: e76f101df47116f7b246f21f0fe0fa72769d2776
+source-git-commit: 683ce0a72aca0319ade2e4ccfd7a8e541a228156
 workflow-type: tm+mt
-source-wordcount: '221'
+source-wordcount: '229'
 ht-degree: 0%
 
 ---
@@ -28,6 +28,8 @@ Zoals we al hebben opgemerkt, gebruikt Adobe Commerce een aantal softwareoplossi
 - **Redis**—Eén server per VM met slechts één actief en de andere twee als replica&#39;s.
 
 - **Elasticsearch**—Zoeken naar Adobe Commerce versie 2.2.x en hoger.
+
+- **OpenSearch**—Zoeken naar Adobe Commerce versie 2.4.6 en hoger.
 
 - **Galera**—Databasecluster met één MariaDB MySQL-database per knooppunt met een instelling voor automatisch verhogen van drie voor unieke id&#39;s in elke database.
 

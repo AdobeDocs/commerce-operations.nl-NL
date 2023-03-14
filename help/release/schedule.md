@@ -1,9 +1,9 @@
 ---
 title: Releaseplanning
 description: Leer wanneer specifieke versies van Adobe Commerce zijn gepland voor bèta, pre-release en algemene beschikbaarheid.
-source-git-commit: 18338316c78e9c2ef87614044e65517b1f11b16d
+source-git-commit: 5e02f300bb0b5601c653fdea1dd5b85f4e18ed9c
 workflow-type: tm+mt
-source-wordcount: '504'
+source-wordcount: '500'
 ht-degree: 0%
 
 ---
@@ -26,7 +26,7 @@ De volgende tabel bevat de datums voor geplande releases (datums kunnen worden g
 | Augustus 2023 Uitgave van de eigenschap + van de veiligheidspatch | 2.4.6-p2<br>2.4.5-p4<br>2.4.4-p5 | 25 juli 2023 | 8 augustus 2023 |
 | Oktober 2023 de Versie van de Eigenschap + van de bètaflard + van de veiligheidsflard | 2.4.7-bèta2<br>2.4.6-p3<br>2.4.5-p5<br>2.4.4-p6 | 26 september 2023 | 10 oktober 2023 |
 
-{style=&quot;table-layout:auto&quot;}
+{style="table-layout:auto"}
 
 <sup>\-\- wijst op punten die niet op deze versie van toepassing zijn.</sup><br>
 <sup>1 Beta gepland voor januari 2023</sup><br>
@@ -39,7 +39,7 @@ De volgende tabel bevat de datums voor geplande releases (datums kunnen worden g
 
 De pre-versie is de Algemene code van de Beschikbaarheid die aan de verkopers van Adobe Commerce en alle partners twee weken vóór Algemene Beschikbaarheid beschikbaar is. Het staat voor snellere plaatsing van code vóór Algemene Beschikbaarheid toe.
 
-Raadpleeg voor meer informatie de [Bètaprogramma](beta-program.md).
+Raadpleeg voor meer informatie [bèta-releases](beta.md).
 
 ## Releasetypen
 

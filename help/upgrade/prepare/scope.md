@@ -1,9 +1,9 @@
 ---
 title: Bereik voor upgrade
 description: Leer over achterwaartse onverenigbare veranderingen in een versie die Adobe Commerce of Magento Open Source douanemodules of derdeuitbreidingen zou kunnen beïnvloeden.
-source-git-commit: d263e412022a89255b7d33b267b696a8bb1bc8a2
+source-git-commit: 682963fb66519097e54f14f2b84ed71528030054
 workflow-type: tm+mt
-source-wordcount: '930'
+source-wordcount: '928'
 ht-degree: 0%
 
 ---
@@ -38,7 +38,7 @@ Zie de volgende secties om aan de slag te gaan met de [!DNL Upgrade Compatibilit
 
 ### Het gereedschap downloaden
 
-Gebruik Composer om het gereedschap te downloaden. Hiervoor is PHP 7.3 of hoger vereist, ten minste 2 GB RAM, Node.js (als u de GraphQL-compatibiliteit controleert) en een Adobe Commerce-licentie.
+Gebruik Composer om het gereedschap te downloaden. Hiervoor is PHP 7.3 of hoger vereist, ten minste 2 GB RAM, Node.js (als u de compatibiliteit met GraphQL controleert) en een Adobe Commerce-licentie.
 
 ```bash
 composer create-project magento/upgrade-compatibility-tool uct --repository https://repo.magento.com
@@ -54,7 +54,7 @@ bin/uct upgrade:check <dir> -c <coming version>
 
 >[!NOTE]
 >
-> De `<dir>` argument is de folder waar uw codebasis wordt opgeslagen. De `-c` vergelijkt uw codebasis met de gespecificeerde versie (bijvoorbeeld, 2.4.4).
+> De `<dir>` argument is de folder waar uw codebasis wordt opgeslagen. De `-c` vergelijkt uw codebasis met de gespecificeerde versie.
 
 Om de meest kritieke kwesties voor uw team te identificeren om te richten:
 

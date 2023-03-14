@@ -1,9 +1,9 @@
 ---
 user-guide-title: Upgradehandleiding
-user-guide-description: Leer waarom het upgraden van uw Adobe Commerce- of Magento Open Source-toepassing zo belangrijk is en hoe u een upgrade succesvol kunt plannen en uitvoeren.
-source-git-commit: f5fadcae219dce9d3aa19cb916d08a104377f22e
+user-guide-description: Leer waarom het upgraden van uw Adobe Commerce-toepassing zo belangrijk is en hoe u een upgrade kunt plannen en uitvoeren.
+source-git-commit: 6965e8213a7293f55c9b51e3e556715ccdad9daf
 workflow-type: tm+mt
-source-wordcount: '148'
+source-wordcount: '144'
 ht-degree: 0%
 
 ---
@@ -51,5 +51,5 @@ ht-degree: 0%
    - [Opties voor de onderhoudsmodus voor upgrade](troubleshooting/maintenance-mode-options.md)
 - Bronnen {#resources}
    - [Aanbevolen lezen](resources/recommended-reading.md)
-   - [Modernisering van uw platform met Adobe Commerce 2.4.4+](resources/recommended-upgrade-paths-2022.md)
+   - [Modernisering van uw platform met Adobe Commerce](resources/recommended-upgrade-paths.md)
 - [Terugkeren naar operationele hulplijnen](https://experienceleague.adobe.com/docs/commerce-operations/operational-guides/home.html)

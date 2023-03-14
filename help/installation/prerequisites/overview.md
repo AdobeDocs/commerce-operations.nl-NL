@@ -1,10 +1,10 @@
 ---
 title: Voorwaarden voor installatie op locatie
 description: Meer informatie over de softwareafhankelijkheden die vereist zijn voor installaties op locatie van Adobe Commerce en Magento Open Source.
-source-git-commit: 8f05fb6fc212c2b3fda80457bbf27ecf16fb1194
+source-git-commit: 4c18f00e0b92e49924676274c4ed462a175a7e4b
 workflow-type: tm+mt
-source-wordcount: '325'
-ht-degree: 1%
+source-wordcount: '334'
+ht-degree: 0%
 
 ---
 
@@ -100,7 +100,15 @@ Enter `exit` bij de `mysql>` wordt gevraagd af te sluiten.
 
 Ga voor het installeren of upgraden van MySQL naar [MySQL](database/mysql.md).
 
-### Elasticsearch of OpenSearch
+### Zoekmachine
+
+Om uw installatie van OpenSearch te verifiëren:
+
+```bash
+curl -XGET '<opensearch-hostname>:<opensearch-port>'
+```
+
+Om uw Elasticsearch installatie te verifiëren:
 
 ```bash
 curl -XGET '<elasticsearch-hostname>:<elasticsearch-port>'

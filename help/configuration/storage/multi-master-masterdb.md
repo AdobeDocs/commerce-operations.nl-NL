@@ -1,10 +1,10 @@
 ---
 title: Master databases automatisch configureren
 description: Zie begeleiding bij het automatisch vormen van de gespleten gegevensbestandoplossing.
-source-git-commit: d263e412022a89255b7d33b267b696a8bb1bc8a2
+source-git-commit: d029d1ac66bff2ac34b22b2d3b8aafbfc062e082
 workflow-type: tm+mt
 source-wordcount: '358'
-ht-degree: 1%
+ht-degree: 0%
 
 ---
 
@@ -125,6 +125,10 @@ Bijvoorbeeld:
 
 ```bash
 bin/magento setup:db-schema:split-sales --host="localhost" --dbname="magento_sales" --username="magento_sales" --password="magento_sales"
+```
+
+```bash
+bin/magento setup:upgrade
 ```
 
 Het volgende bericht wordt weergegeven ter bevestiging van een geslaagde installatie:

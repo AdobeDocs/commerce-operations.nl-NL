@@ -1,9 +1,9 @@
 ---
 title: MySQL-richtlijnen
 description: Voer de volgende stappen uit om MySQL en MariaDB te installeren en te configureren voor installaties op locatie van Adobe Commerce en Magento Open Source.
-source-git-commit: 8f05fb6fc212c2b3fda80457bbf27ecf16fb1194
+source-git-commit: c65217cd277be5226681ef239d6a3cf34c251a9f
 workflow-type: tm+mt
-source-wordcount: '1179'
+source-wordcount: '1142'
 ht-degree: 0%
 
 ---
@@ -22,7 +22,7 @@ Adobe _krachtig_ raadt u aan de volgende standaard in acht te nemen wanneer u uw
 
 >[!WARNING]
 >
->Adobe Commerce en Magento Open Source worden momenteel gebruikt `CREATE TEMPORARY TABLE` instructies binnen transacties, die [incompatibel](https://dev.mysql.com/doc/refman/5.7/en/replication-gtids-restrictions.html) met gegevensbestandimplementaties gebruiken op GTID-Gebaseerde replicatie, zoals [Google Cloud SQL-instanties van de tweede generatie](https://cloud.google.com/sql/docs/features#differences). Bekijk MySQL voor Cloud SQL 8.0 als alternatief.
+>Adobe Commerce gebruikt momenteel `CREATE TEMPORARY TABLE` instructies binnen transacties, die [incompatibel](https://dev.mysql.com/doc/refman/5.7/en/replication-gtids-restrictions.html) met gegevensbestandimplementaties gebruiken op GTID-Gebaseerde replicatie, zoals [Google Cloud SQL-instanties van de tweede generatie](https://cloud.google.com/sql/docs/features#differences). Bekijk MySQL voor Cloud SQL 8.0 als alternatief.
 
 >[!NOTE]
 >
@@ -198,7 +198,4 @@ Om een MySQL gegevensbestandinstantie te vormen:
 >
 >Voor Adobe Commerce over infrastructuurprojecten in de cloud `explicit_defaults_for_timestamp` instellen voor MySQL (MariaDB) wordt standaard ingesteld op _UIT_.
 
-Het opnieuw indexeren op MariaDB 10.4 neemt meer tijd in vergelijking met andere versies MariaDB of MySQL. Om het opnieuw indexeren te versnellen, adviseren wij plaatsend deze MariaDB configuratieparameters:
-
-* optimizer_switch=&#39;rowid_filter=off&#39;
-* optimizer_use_condition_selectivity = 1
+{{$include /help/_includes/maria-db-config.md}}

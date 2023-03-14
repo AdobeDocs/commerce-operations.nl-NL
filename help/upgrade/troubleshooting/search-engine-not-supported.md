@@ -1,9 +1,9 @@
 ---
 title: Huidige zoekengine wordt niet ondersteund
 description: Los uw Adobe Commerce of verbetering van de Magento Open Source na het ontmoeten van een fout over een niet gestaafde onderzoeksmotor problemen op.
-source-git-commit: d263e412022a89255b7d33b267b696a8bb1bc8a2
+source-git-commit: 4c18f00e0b92e49924676274c4ed462a175a7e4b
 workflow-type: tm+mt
-source-wordcount: '424'
+source-wordcount: '416'
 ht-degree: 0%
 
 ---
@@ -28,7 +28,7 @@ Gebruik de volgende opdracht om de huidige zoekfunctie te controleren:
 bin/magento config:show catalog/search/engine
 ```
 
-De fout treedt op als de geretourneerde waarde `mysql` of `elasticsearch`.
+De fout treedt op als de geretourneerde waarde `mysql`, `elasticsearch`, of `elasticsearch6`.
 
 >[!WARNING]
 >
@@ -44,7 +44,7 @@ De fout treedt op als de geretourneerde waarde `mysql` of `elasticsearch`.
 >composer require-commerce magento/product-community-edition=<version>
 >```
 >
->Wanneer `<version>` is de versie van de Magento die u hebt uitgevoerd **voor** de upgrade. Bijvoorbeeld, `2.3.5`.
+>Wanneer `<version>` is de versie van de Magento die u hebt uitgevoerd **voor** de upgrade. Bijvoorbeeld: `2.3.5`.
 
 Volg de richtlijnen die in de volgende secties worden beschreven om van een inconsistente staat terug te krijgen.
 
@@ -54,14 +54,14 @@ In eerdere versies dan 2.4 was MySQL de standaardzoekengine voor catalogi, maar 
 
 Gebruik de volgende bronnen om u door dit proces te begeleiden:
 
-- [Elasticsearch installeren en configureren](../../configuration/search/overview-search.md)
-- [Elasticsearch installeren](https://www.elastic.co/guide/en/elasticsearch/reference/current/install-elasticsearch.html)
-- Elasticsearch configureren om mee te werken [nginx](../../installation/prerequisites/search-engine/configure-nginx.md) of [Apache](../../installation/prerequisites/search-engine/configure-apache.md)
-- [Elasticsearch configureren](../../configuration/search/configure-search-engine.md)
+- [De zoekengine installeren en configureren](../../configuration/search/overview-search.md)
+- [Configuratie van zoekmachine](../../configuration/search/configure-search-engine.md)
 
 Nadat u de zoekmachine en de herindex hebt geconfigureerd, kunt u een upgrade uitvoeren naar 2.4.
 
 ## Als uw zoekmachine `elasticsearch`
+
+Elasticsearch 6 en eerder worden niet meer ondersteund.
 
 Een waarde van `elasticsearch` Hiermee geeft u aan dat uw versie op downniveau van Adobe Commerce of Magento Open Source is geconfigureerd voor gebruik van Elasticsearch 2.x. Deze versie van Elasticsearch wordt niet meer ondersteund.
 

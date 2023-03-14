@@ -2,9 +2,9 @@
 title: Platforms
 description: Kies de aanbevolen platformgereedschappen voor uw Adobe Commerce-implementatie.
 exl-id: 3fc164f9-a0fc-46e7-a54e-08ce101ccae7
-source-git-commit: 639dca9ee715f2f9ca7272d3b951d3315a85346c
+source-git-commit: ea912c48176fb060e48654d05ae6b533436a2432
 workflow-type: tm+mt
-source-wordcount: '730'
+source-wordcount: '732'
 ht-degree: 0%
 
 ---
@@ -30,7 +30,7 @@ De volgende tabel bevat oplossingen die wij aanbevelen en die in Adobe Commerce 
 
 ## Database
 
-Er zijn drie verschillende instrumenten die we gebruiken afhankelijk van de behoeften van het merk. MySQL is een fantastische basisoplossing als de Adobe Commerce-database als u niet verwacht dat uw winkel extreme belastingen kan verwerken.
+Er zijn drie verschillende instrumenten die we gebruiken afhankelijk van de behoeften van het merk. MySQL is een geweldige basislijnoplossing als de Adobe Commerce-database als u niet verwacht dat uw winkel extreme belastingen kan verwerken.
 
 MariaDB is meer gericht op de gemeenschap en werkt beter voor gebruikers die meer om eigenschappen dan zuivere prestaties geven. MariaDB ondersteunt een groot aantal database-engines, schijfcodering, complexe horizontale interconnectiviteit en schaalfuncties, wat interessant kan zijn voor grote Adobe Commerce-winkels.
 
@@ -57,7 +57,7 @@ Wij adviseren hoogst gebruikend Varnish als full-page geheim voorgeheugenserver 
 
 ## Zoeken in services
 
-Voor Adobe Commerce versie 2.4 en hoger moeten alle installaties zo zijn geconfigureerd dat Elasticsearch als zoekoplossing voor catalogi wordt gebruikt. Elasticsearch biedt snelle en geavanceerde zoekopdrachten naar producten in de catalogus. Elasticsearch is optioneel voor versies ouder dan 2.4, maar wordt aangeraden.
+Voor Adobe Commerce versie 2.4 en hoger moeten alle installaties zo zijn geconfigureerd dat Elasticsearch of OpenSearch als zoekoplossing voor catalogi wordt gebruikt. Elasticsearch biedt snelle en geavanceerde zoekopdrachten naar producten in de catalogus. Elasticsearch is optioneel voor releases vóór 2.4, maar wordt aangeraden.
 
 ## Berichtenrijservices
 
@@ -67,6 +67,6 @@ De rijen van het bericht verstrekken een asynchroon communicatie mechanisme waar
 
 De [Adobe Commerce Security Scan](https://docs.magento.com/user-guide/magento/security-scan.html) kunt u regelmatig uw winkelwebsites controleren en updates ontvangen voor bekende beveiligingsrisico&#39;s, malware en verouderde software. Doorgaans gebruikt u dit gereedschap wanneer u met het testen van gebruikersacceptatie (UAT) begint. Naast het Adobe Commerce Security Scan-hulpprogramma, dat gratis is en beschikbaar is voor alle implementaties en versies van Adobe Commerce, zijn er andere opties die kunnen worden gebruikt tijdens het CI/CD-proces en voor elke release.
 
-SonarQube is een open-source platform voor kwaliteitsbeheer, dat is ontworpen om de technische kwaliteit van uw code te analyseren en te meten. SonarQube biedt niet alleen een volledig rapport van codefouten, syntaxisfouten en kwetsbaarheden, maar ook suggesties en voorbeelden voor het corrigeren van de code. SonarQube is ideaal om in een CI/CD-omgeving te gebruiken als hulpmiddel om de code te analyseren voordat deze wordt geïmplementeerd.
+SonarQube is een open-source platform voor kwaliteitsbeheer, ontworpen om de technische kwaliteit van uw code te analyseren en te meten. SonarQube biedt niet alleen een volledig rapport van codefouten, syntaxisfouten en kwetsbaarheden, maar ook suggesties en voorbeelden voor het corrigeren van de code. SonarQube is perfect voor gebruik in een CI/CD-omgeving als hulpmiddel om de code te analyseren voordat deze wordt geïmplementeerd.
 
 Zed Attack Proxy (ZAP) is een gratis hulpprogramma voor het testen van de beveiliging dat door duizenden pentesters over de hele wereld wordt gebruikt. ZAP wordt ontwikkeld door OWASP en is een van de meest geschikte hulpmiddelen voor handmatige beveiligingstests.

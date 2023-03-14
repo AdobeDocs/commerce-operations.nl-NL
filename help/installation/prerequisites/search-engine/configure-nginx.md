@@ -1,9 +1,9 @@
 ---
 title: Nginx voor uw zoekmachine configureren
 description: Voer de volgende stappen uit om een zoekmachine te configureren met de Nginx-webserver voor installaties in de bedrijfsruimten van Adobe Commerce en Magento Open Source.
-source-git-commit: a0f2c6480edcda5540ca83835580d18f401de72f
+source-git-commit: d3cfd97450164d38fd340b538099739601573d64
 workflow-type: tm+mt
-source-wordcount: '652'
+source-wordcount: '636'
 ht-degree: 0%
 
 ---
@@ -17,9 +17,9 @@ ht-degree: 0%
 
 >[!NOTE]
 >
->Ondersteuning voor OpenSearch is toegevoegd in 2.4.4. OpenSearch is een compatibele vork van Elasticsearch. Alle instructies voor het configureren van Elasticsearch 7 zijn van toepassing op OpenSearch. Zie [Elasticsearch migreren naar OpenSearch](../../../upgrade/prepare/opensearch-migration.md) voor meer informatie .
+>Ondersteuning voor OpenSearch is toegevoegd in 2.4.4. OpenSearch is een compatibele vork van Elasticsearch. Zie [Elasticsearch migreren naar OpenSearch](../../../upgrade/prepare/opensearch-migration.md) voor meer informatie .
 
-Deze sectie bespreekt hoe te om nginx als een te vormen *onveilig* zodat Adobe Commerce of Magento Open Source een zoekprogramma kan gebruiken dat op deze server wordt uitgevoerd. In deze sectie wordt het instellen van HTTP Basic-verificatie niet besproken. dat wordt besproken in [Beveiligde communicatie met nginx](#secure-communication-with-nginx).
+Deze sectie bespreekt hoe te om nginx als een te vormen *onveilig* zodat Adobe Commerce een zoekprogramma kan gebruiken dat op deze server wordt uitgevoerd. In deze sectie wordt het instellen van HTTP Basic-verificatie niet besproken. dat wordt besproken in [Beveiligde communicatie met nginx](#secure-communication-with-nginx).
 
 >[!NOTE]
 >
@@ -80,7 +80,7 @@ In deze sectie wordt besproken hoe u kunt opgeven wie toegang heeft tot het dial
 
 ## Beveiligde communicatie met nginx
 
-In deze sectie wordt beschreven hoe u de installatie instelt [HTTP Basic-verificatie](https://nginx.org/en/docs/http/ngx_http_auth_basic_module.html) met uw veilige proxy. Door het gebruik van TLS en HTTP Basic-verificatie wordt voorkomen dat iedereen communicatie onderschept met Elasticsearch of met uw Adobe Commerce- of Magento Open Source-server.
+In deze sectie wordt beschreven hoe u de installatie instelt [HTTP Basic-verificatie](https://nginx.org/en/docs/http/ngx_http_auth_basic_module.html) met uw veilige proxy. Als u TLS en HTTP Basic-verificatie gebruikt, kan niemand communicatie met Elasticsearch of OpenSearch of met uw toepassingsserver onderscheppen.
 
 Omdat nginx native de Basisauthentificatie van HTTP steunt, adviseren wij het over, bijvoorbeeld [Digest-verificatie](https://www.nginx.com/resources/wiki/modules/auth_digest/), wat niet wordt aanbevolen in de productie.
 

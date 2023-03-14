@@ -1,9 +1,9 @@
 ---
 title: Modules en extensies upgraden
 description: Gebruik de bevel-lijn interface en Composer om Adobe Commerce en Magento Open Source modules en uitbreidingen te bevorderen.
-source-git-commit: c619bff9785d22298bc49e2ac9874480ff7a320b
+source-git-commit: 682963fb66519097e54f14f2b84ed71528030054
 workflow-type: tm+mt
-source-wordcount: '195'
+source-wordcount: '191'
 ht-degree: 0%
 
 ---
@@ -49,7 +49,7 @@ Een module of extensie bijwerken of bijwerken:
 
 Adobe alle verwijderd [VBEs](https://devdocs.magento.com/extensions/vendor/) in 2.4.4. Leveranciers blijven deze extensies ondersteunen op de Adobe Commerce Marketplace.
 
-Als u deze extensies wilt blijven gebruiken met Adobe Commerce en Magento Open Source 2.4.4 en hoger, moet u de bijbehorende pakketafhankelijkheden bijwerken in uw `composer.json` file _voor_ opwaardering tot 2.4.4. Neem contact op met de leverancier voor de pakketnaam en -versie die u wilt gebruiken.
+Als u deze extensies wilt blijven gebruiken met Adobe Commerce 2.4.4 en hoger, moet u de bijbehorende pakketafhankelijkheden bijwerken in uw `composer.json` file _voor_ opwaardering tot 2.4.4. Neem contact op met de leverancier voor de pakketnaam en -versie die u wilt gebruiken.
 
 Zie de volgende Adobe Commerce Marketplace-aanbiedingen voor meer informatie:
 

@@ -1,9 +1,9 @@
 ---
 title: Volledige voorwaarden
-description: Bereid uw Adobe Commerce- of Magento Open Source-project voor op een upgrade door deze vereiste stappen uit te voeren.
-source-git-commit: 6782498985d4fd6540b0481e2567499f74d04d97
+description: Bereid uw Adobe Commerce-project voor op een upgrade door deze vereiste stappen uit te voeren.
+source-git-commit: 45c544a5ec9a17ad631fce55e322e2949ecdd3c2
 workflow-type: tm+mt
-source-wordcount: '1401'
+source-wordcount: '1639'
 ht-degree: 0%
 
 ---
@@ -11,23 +11,23 @@ ht-degree: 0%
 
 # Volledige upgradevoorwaarden
 
-Het is belangrijk om te begrijpen wat nodig is om Adobe Commerce of Magento Open Source te leiden. U moet eerst de [systeemvereisten](../../installation/system-requirements.md) voor de versie waarnaar u wilt upgraden.
+Het is belangrijk te begrijpen wat nodig is om Adobe Commerce te runnen. U moet eerst de [systeemvereisten](../../installation/system-requirements.md) voor de versie waarnaar u wilt upgraden.
 
 Nadat u de systeemvereisten hebt gecontroleerd, moet u aan de volgende voorwaarden voldoen voordat u de upgrade van uw systeem uitvoert:
 
-- Alle software bijwerken
-- Controleren of een ondersteund zoekprogramma is geïnstalleerd
-- Database-tabelindeling converteren
-- Limiet voor geopende bestanden instellen
-- Controleren of uitsnijdtaken worden uitgevoerd
-- Set `DATA_CONVERTER_BATCH_SIZE`
-- Controleren op bestandssysteemmachtigingen
-- Stel de `pub/` mapbasis
-- De plug-in Composer-update installeren
+* Alle software bijwerken
+* Controleren of een ondersteund zoekprogramma is geïnstalleerd
+* Database-tabelindeling converteren
+* Limiet voor geopende bestanden instellen
+* Controleren of uitsnijdtaken worden uitgevoerd
+* Set `DATA_CONVERTER_BATCH_SIZE`
+* Controleren op bestandssysteemmachtigingen
+* Stel de `pub/` mapbasis
+* De plug-in Composer-update installeren
 
 ## Alle software bijwerken
 
-De [systeemvereisten](../../installation/system-requirements.md) exact beschrijven welke versies van software van derden zijn getest met Adobe Commerce en Magento Open Source.
+De [systeemvereisten](../../installation/system-requirements.md) exact beschrijven welke versies van software van derden zijn getest met Adobe Commerce-releases.
 
 Zorg ervoor dat u alle systeemvereisten en afhankelijkheden in uw omgeving hebt bijgewerkt. Zie PHP [7,4](https://www.php.net/manual/en/migration74.php), PHP [8,0](https://www.php.net/manual/en/migration80.php), PHP [8,1](https://www.php.net/manual/en/migration81.php), en [vereiste PHP-instellingen](../../installation/prerequisites/php-settings.md#php-settings).
 
@@ -37,7 +37,7 @@ Zorg ervoor dat u alle systeemvereisten en afhankelijkheden in uw omgeving hebt 
 
 ## Controleren of een ondersteund zoekprogramma is geïnstalleerd
 
-Adobe Commerce en Magento Open Source vereisen dat Elasticsearch of OpenSearch is geïnstalleerd om de software te kunnen gebruiken.
+Adobe Commerce vereist dat Elasticsearch of OpenSearch is geïnstalleerd om de software te kunnen gebruiken.
 
 **Als u een upgrade uitvoert van 2.3.x naar 2.4**, moet u controleren of u MySQL, Elasticsearch, of een derdextensie als uw motor van de catalogusonderzoek in uw 2.3.x instantie gebruikt. Het resultaat bepaalt wat u moet doen _voor_ opwaardering tot 2.4.
 
@@ -45,9 +45,9 @@ Adobe Commerce en Magento Open Source vereisen dat Elasticsearch of OpenSearch i
 
 U kunt de opdrachtregel of de beheerder gebruiken om de zoekengine voor de catalogus te bepalen:
 
-- Voer de `bin/magento config:show catalog/search/engine` gebruiken. De opdracht retourneert een waarde van `mysql`, `elasticsearch` (wat erop wijst dat Elasticsearch 2 wordt gevormd), `elasticsearch5`, `elasticsearch6`, `elasticsearch7`of een aangepaste waarde die aangeeft dat u een zoekprogramma van derden hebt geïnstalleerd. Een waarde van `elasticsearch7` geeft aan dat Elasticsearch 7 of OpenSearch is geïnstalleerd.
+* Voer de `bin/magento config:show catalog/search/engine` gebruiken. De opdracht retourneert een waarde van `mysql`, `elasticsearch` (wat erop wijst dat Elasticsearch 2 wordt gevormd), `elasticsearch5`, `elasticsearch6`, `elasticsearch7`of een aangepaste waarde die aangeeft dat u een zoekprogramma van derden hebt geïnstalleerd. Voor versies ouder dan 2.4.6 gebruikt u de opdracht `elasticsearch7` waarde voor de Elasticsearch 7- of OpenSearch-engine. Voor versie 2.4.6 en hoger gebruikt u de opdracht `opensearch` waarde voor de OpenSearch-engine.
 
-- Controleer vanuit de beheerder de waarde van de **[!UICONTROL Stores]** > [!UICONTROL Settings] > **[!UICONTROL Configuration]** > **[!UICONTROL Catalog]** > **[!UICONTROL Catalog]** > **[!UICONTROL Catalog Search]** > **[!UICONTROL Search Engine]** veld.
+* Controleer vanuit de beheerder de waarde van de **[!UICONTROL Stores]** > [!UICONTROL Settings] > **[!UICONTROL Configuration]** > **[!UICONTROL Catalog]** > **[!UICONTROL Catalog]** > **[!UICONTROL Catalog Search]** > **[!UICONTROL Search Engine]** veld.
 
 In de volgende secties wordt beschreven welke handelingen u moet uitvoeren voordat u de upgrade naar 2.4.0 uitvoert.
 
@@ -55,40 +55,120 @@ In de volgende secties wordt beschreven welke handelingen u moet uitvoeren voord
 
 Vanaf 2.4, is MySQL niet meer een gesteunde motor van de catalogusonderzoek. U moet Elasticsearch of OpenSearch installeren en configureren voordat u een upgrade uitvoert. Gebruik de volgende bronnen om u door dit proces te begeleiden:
 
-- [Elasticsearch installeren en configureren](../../configuration/search/overview-search.md)
-- [Elasticsearch installeren](https://www.elastic.co/guide/en/elasticsearch/reference/current/install-elasticsearch.html)
-- Configureren [nginx](../../installation/prerequisites/search-engine/configure-nginx.md) of [Apache](../../installation/prerequisites/search-engine/configure-apache.md) om met uw zoekmachine te werken
-- [Handel configureren om Elasticsearch te gebruiken](../../configuration/search/configure-search-engine.md) en opnieuw indexeren
+* [Elasticsearch installeren en configureren](../../configuration/search/overview-search.md)
+* [Elasticsearch installeren](https://www.elastic.co/guide/en/elasticsearch/reference/current/install-elasticsearch.html)
+* Configureren [nginx](../../installation/prerequisites/search-engine/configure-nginx.md) of [Apache](../../installation/prerequisites/search-engine/configure-apache.md) om met uw zoekmachine te werken
+* [Handel configureren om Elasticsearch te gebruiken](../../configuration/search/configure-search-engine.md) en opnieuw indexeren
 
 Bepaalde zoekprogramma&#39;s voor catalogi van derden worden boven op de zoekfunctie van Adobe Commerce uitgevoerd. Neem contact op met de leverancier om te bepalen of u de extensie moet bijwerken.
 
-### Elasticsearch
+#### MariaDB
 
-U moet Elasticsearch 7.6 of hoger of OpenSearch 1.2 installeren en configureren voordat u de upgrade naar 2.4.0 uitvoert. Adobe ondersteunt geen Elasticsearch 2.x, 5.x en 6.x meer.
+{{$include /help/_includes/maria-db-config.md}}
+
+### Zoekmachine
+
+U moet Elasticsearch 7.6 of hoger of OpenSearch 1.2 installeren en configureren voordat u de upgrade naar 2.4.0 uitvoert. Adobe ondersteunt geen Elasticsearch 2.x, 5.x en 6.x meer. [Configuratie van zoekmachine](../../configuration/search/configure-search-engine.md) in de _Configuratiegids_ beschrijft de taken u na bevordering van Elasticsearch aan een gesteunde versie moet uitvoeren.
 
 Zie [Elasticsearch bijwerken](https://www.elastic.co/guide/en/elasticsearch/reference/current/setup-upgrade.html) voor volledige instructies voor het maken van back-ups van uw gegevens, het opsporen van potentiële migratiekwesties en het testen van upgrades voordat u deze implementeert naar de productie. Afhankelijk van uw huidige versie van Elasticsearch, is het mogelijk dat een volledige clusterherstart al dan niet vereist is.
 
 Voor Elasticsearch is Java Development Kit (JDK) 1.8 of hoger vereist. Zie [De JDK (Java Software Development Kit) installeren](../../installation/prerequisites/search-engine/overview.md#install-the-java-software-development-kit-jdk) om te controleren welke versie van JDK is geïnstalleerd.
 
-[Elasticsearch configureren](../../configuration/search/configure-search-engine.md) beschrijft de taken u na het bijwerken van Elasticsearch 2 aan een gesteunde versie moet uitvoeren.
+#### OpenSearch
 
-### OpenSearch
+OpenSearch is een open-source vork van Elasticsearch 7.1.2, na een licentiewijziging van Elasticsearch. In de volgende versies van Adobe Commerce wordt ondersteuning voor OpenSearch geïntroduceerd:
 
-OpenSearch is een open-source vork van Elasticsearch 7.1.2, na een licentiewijziging van Elasticsearch. In de volgende versies van Adobe Commerce en Magento Open Source wordt ondersteuning voor OpenSearch geïntroduceerd:
+* 2.4.6 (OpenSearch heeft een aparte module en instellingen)
+* 2.4.5
+* 2.4.4
+* 2.4.3-p2
+* 2.3.7-p3
 
-- 2.4.4.
-- 2.4.3-p2
-- 2.3.7-p3
-
-U kunt [migreren van Elasticsearch naar OpenSearch](opensearch-migration.md) alleen als u een upgrade uitvoert naar een hierboven vermelde versie van Adobe Commerce of Magento Open Source (of hoger).
+U kunt [migreren van Elasticsearch naar OpenSearch](opensearch-migration.md) alleen als u een upgrade uitvoert naar een hierboven vermelde versie van Adobe Commerce (of hoger).
 
 Voor OpenSearch is JDK 1.8 of hoger vereist. Zie [De JDK (Java Software Development Kit) installeren](../../installation/prerequisites/search-engine/overview.md#install-the-java-software-development-kit-jdk) om te controleren welke versie van JDK is geïnstalleerd.
 
-[Configuratie van zoekmachine](../../configuration/search/configure-search-engine.md) beschrijft de taken die u na het veranderen van onderzoeksmotoren moet uitvoeren.
+[Configuratie van zoekmachine](../../configuration/search/configure-search-engine.md) beschrijft de taken u na veranderende onderzoeksmotoren moet uitvoeren.
+
+#### Upgrade Elasticsearch
+
+In Adobe Commerce 2.4.6 is ondersteuning voor Elasticsearch 8.x geïntroduceerd. De volgende instructies tonen een voorbeeld van het upgraden van Elasticsearch van 7.x naar 8.x:
+
+1. Voer een upgrade uit van de Elasticsearch 7.x-server naar 8.x en zorg ervoor dat deze actief is. Zie de [Elasticsearch-documentatie](https://www.elastic.co/guide/en/elasticsearch/reference/current/install-elasticsearch.html).
+
+1. De optie `id_field_data` veld door de volgende configuratie aan uw `elasticsearch.yml` en opnieuw starten van de Elasticsearch 8.x-service.
+
+   ```yaml
+   indices:
+     id_field_data:
+       enabled: true
+   ```
+
+   >[!INFO]
+   >
+   >Om Elasticsearch 8.x te ondersteunen, maakt Adobe Commerce 2.4.6 het `indices.id_field_data` eigenschap standaard in en gebruikt de `_id` in het `docvalue_fields` eigenschap.
+
+1. Werk in de hoofdmap van uw Adobe Commerce-project uw Composer-afhankelijkheden bij om de `Magento_Elasticsearch7` en installeer de `Magento_Elasticsearch8` module.
+
+   ```bash
+   composer update magento/module-elasticsearch-8 --update-with-all-dependencies
+   ```
+
+1. Werk uw projectcomponenten bij.
+
+   ```bash
+   bin/magento setup:upgrade
+   ```
+
+1. [Elasticsearch configureren](../../configuration/search/configure-search-engine.md#configure-your-search-engine-from-the-admin) in de [!DNL Admin].
+
+1. Indexeer de catalogusindex opnieuw.
+
+   ```bash
+   bin/magento indexer:reindex catalogsearch_fulltext
+   ```
+
+1. Verwijder alle items uit de ingeschakelde cachetypen.
+
+   ```bash
+   bin/magento cache:clean
+   ```
+
+#### Downgrade Elasticsearch
+
+Als u onbedoeld de versie van Elasticsearch op uw server bevordert of bepaalt dat u om een andere reden moet degraderen, moet u uw het projectgebiedsdelen van Adobe Commerce ook bijwerken. Bijvoorbeeld om van Elasticsearch 8.x tot 7.x te degraderen
+
+1. Verlaag de Elasticsearch 8.x-server naar 7.x en zorg ervoor dat deze actief is. Zie de [Elasticsearch-documentatie](https://www.elastic.co/guide/en/elasticsearch/reference/current/install-elasticsearch.html).
+
+1. Werk in de hoofdmap van uw Adobe Commerce-project uw Composer-afhankelijkheden bij om de `Magento_Elasticsearch8` en de bijbehorende Composer-afhankelijkheden en installeer de `Magento_Elasticsearch7` module.
+
+   ```bash
+   composer remove magento/module-elasticsearch-8
+   ```
+
+1. Werk uw projectcomponenten bij.
+
+   ```bash
+   bin/magento setup:upgrade
+   ```
+
+1. [Elasticsearch configureren](../../configuration/search/configure-search-engine.md#configure-your-search-engine-from-the-admin) in de [!DNL Admin].
+
+1. Indexeer de catalogusindex opnieuw.
+
+   ```bash
+   bin/magento indexer:reindex catalogsearch_fulltext
+   ```
+
+1. Verwijder alle items uit de ingeschakelde cachetypen.
+
+   ```bash
+   bin/magento cache:clean
+   ```
 
 ### Extensies van derden
 
-We raden u aan contact op te nemen met de leverancier van de zoekmachine om te bepalen of uw extensie volledig compatibel is met versie 2.4.
+We raden u aan contact op te nemen met uw leverancier van zoekprogramma&#39;s om te bepalen of uw extensie volledig compatibel is met een Adobe Commerce-versie.
 
 ## Database-tabelindeling converteren
 
@@ -127,7 +207,7 @@ De waarde in de Bash-shell instellen:
 
 ## Controleren of uitsnijdtaken worden uitgevoerd
 
-De de taakplanner van UNIX `cron` is essentieel voor dagelijkse Adobe Commerce- en Magento Open Source-bewerkingen. Het plant dingen zoals het opnieuw indexeren, nieuwsbrieven, e-mail, en sitemaps. Voor verschillende functies is minstens één snijtaak vereist die wordt uitgevoerd als de eigenaar van het bestandssysteem.
+De de taakplanner van UNIX `cron` is essentieel voor dagelijkse Adobe Commerce-bewerkingen. Het plant dingen zoals het opnieuw indexeren, nieuwsbrieven, e-mail, en sitemaps. Voor verschillende functies is minstens één snijtaak vereist die wordt uitgevoerd als de eigenaar van het bestandssysteem.
 
 Als u wilt controleren of de uitsnijdtaak op de juiste wijze is ingesteld, controleert u de tab door de volgende opdracht in te voeren als de eigenaar van het bestandssysteem:
 
@@ -163,15 +243,15 @@ Adobe Commerce 2.4 bevat beveiligingsverbeteringen waarvoor bepaalde gegevens mo
 
 De volgende tabellen worden het meest beïnvloed:
 
-- `catalogrule`
-- `core_config_data`
-- `magento_reward_history`
-- `quote_payment`
-- `quote`
-- `sales_order_payment`
-- `sales_order`
-- `salesrule`
-- `url_rewrite`
+* `catalogrule`
+* `core_config_data`
+* `magento_reward_history`
+* `quote_payment`
+* `quote`
+* `sales_order_payment`
+* `sales_order`
+* `salesrule`
+* `url_rewrite`
 
 Als u een grote hoeveelheid gegevens hebt, kunt u de prestaties verbeteren door de waarde van een omgevingsvariabele in te stellen, `DATA_CONVERTER_BATCH_SIZE`. Standaard is de waarde ingesteld op `50,000`.
 
@@ -196,7 +276,7 @@ De omgevingsvariabele instellen:
 
 ## Controleren op bestandssysteemmachtigingen
 
-Om veiligheidsredenen hebben Adobe Commerce en Magento Open Source bepaalde machtigingen voor het bestandssysteem nodig. Machtigingen verschillen van _[eigendom](../../upgrade/prepare/prerequisites.md#verify-file-system-permissions)_. De eigendom bepaalt wie acties op het dossiersysteem kan uitvoeren; machtigingen bepalen wat de gebruiker kan doen.
+Om veiligheidsredenen vereist Adobe Commerce bepaalde machtigingen voor het bestandssysteem. Machtigingen verschillen van _[eigendom](../../upgrade/prepare/prerequisites.md#verify-file-system-permissions)_. De eigendom bepaalt wie acties op het dossiersysteem kan uitvoeren; machtigingen bepalen wat de gebruiker kan doen.
 
 Mappen in het bestandssysteem moeten door de [eigenaar van bestandssysteem](../../installation/prerequisites/file-system/overview.md) groep.
 
@@ -246,10 +326,10 @@ drwxrws---. 29 magento_user apache   4096 Jun  7 07:53 vendor
 
 Zie het volgende voor een verklaring van de steekproefoutput:
 
-- De meeste bestanden zijn `-rw-rw----`, die `660`
-- `drwxrwx---` = `770`
-- `-rw-rw-rw-` = `666`
-- De eigenaar van het bestandssysteem is `magento_user`
+* De meeste bestanden zijn `-rw-rw----`, die `660`
+* `drwxrwx---` = `770`
+* `-rw-rw-rw-` = `666`
+* De eigenaar van het bestandssysteem is `magento_user`
 
 Als u meer gedetailleerde informatie wilt, voert u de volgende opdracht in:
 
@@ -257,7 +337,7 @@ Als u meer gedetailleerde informatie wilt, voert u de volgende opdracht in:
 ls -la /var/www/html/magento2/pub
 ```
 
-Omdat Adobe Commerce en Magento Open Source de statische dossieractiva aan subdirectories van `pub`, is het een goed idee om ook daar toestemmingen en eigendom te verifiëren.
+Omdat Adobe Commerce statische bestandselementen implementeert in submappen van `pub`, is het een goed idee om ook daar toestemmingen en eigendom te verifiëren.
 
 Zie voor meer informatie [Machtigingen en eigendom van bestandssystemen](../../installation/prerequisites/file-system/overview.md).
 
