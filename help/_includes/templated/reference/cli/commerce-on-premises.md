@@ -1,7 +1,7 @@
 ---
-source-git-commit: 177f301802e1ab1d0560ee98594b8128440efa7c
+source-git-commit: a1f99f839f11ab42356b87a69398999bb03cd544
 workflow-type: tm+mt
-source-wordcount: '19444'
+source-wordcount: '19443'
 ht-degree: 0%
 
 ---
@@ -11,7 +11,7 @@ ht-degree: 0%
 
 <!-- The template to render with above values -->
 
-**Versie**: 2.4.6-bèta2
+**Versie**: 2.4.6.
 
 Deze verwijzing bevat 130 bevelen beschikbaar door `bin/magento` opdrachtregelprogramma.
 De eerste lijst wordt automatisch gegenereerd met de opdracht `bin/magento list` in de editie.
