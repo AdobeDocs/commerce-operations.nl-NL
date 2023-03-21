@@ -1,7 +1,7 @@
 ---
 title: Volledige voorwaarden
 description: Bereid uw Adobe Commerce-project voor op een upgrade door deze vereiste stappen uit te voeren.
-source-git-commit: 45c544a5ec9a17ad631fce55e322e2949ecdd3c2
+source-git-commit: 5f86717d79569cac3f95a4c10a55b48f92858466
 workflow-type: tm+mt
 source-wordcount: '1639'
 ht-degree: 0%
@@ -111,7 +111,7 @@ In Adobe Commerce 2.4.6 is ondersteuning voor Elasticsearch 8.x geïntroduceerd.
 1. Werk in de hoofdmap van uw Adobe Commerce-project uw Composer-afhankelijkheden bij om de `Magento_Elasticsearch7` en installeer de `Magento_Elasticsearch8` module.
 
    ```bash
-   composer update magento/module-elasticsearch-8 --update-with-all-dependencies
+   composer require magento/module-elasticsearch-8 --update-with-all-dependencies
    ```
 
 1. Werk uw projectcomponenten bij.
