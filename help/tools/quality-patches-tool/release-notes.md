@@ -1,9 +1,9 @@
 ---
 title: Opmerkingen bij de release
 description: Meer informatie over de patches die beschikbaar zijn voor Adobe Commerce en de problemen die ze oplossen.
-source-git-commit: f1c6c816695e01fc30d0ab0a7a9c43122a130cb5
+source-git-commit: b71819d123856d03dab872a1652b325ffe7178a6
 workflow-type: tm+mt
-source-wordcount: '11145'
+source-wordcount: '11561'
 ht-degree: 0%
 
 ---
@@ -19,6 +19,27 @@ De [[!DNL Quality Patches Tool]](https://github.com/magento/quality-patches) lev
 >[!INFO]
 >
 >Voor informatie over [!DNL quality patches] die door de Gemeenschap voor Magento Open Source zijn opgericht, [releaseopmerkingen](https://github.com/magento/quality-patches/blob/master/community-release-notes.md).
+
+## v1.1.29 {#v1-1-29}
+
+* **ACSD-49389** (voor Adobe Commerce en Magento Open Source >=2.4.0 &lt;2.4.7) - Hiermee wordt het probleem verholpen waarbij een e-mailbericht met de mogelijkheid om op te halen wordt verzonden door de API wanneer de bestelling niet klaar is om te worden opgehaald.
+* **ACSD-49822** (voor Adobe Commerce >=2.3.7 &lt;2.4.7) - Hiermee wordt het probleem opgelost waarbij updates in het dialoogvenster [!UICONTROL Requisition List] pagina&#39;s niet worden weergegeven op de [!UICONTROL Print Requisition List].
+* **ACSD-48771** (voor Adobe Commerce en Magento Open Source >=2.4.5 &lt;2.4.7) - Hiermee kunt u het probleem verhelpen door het inhoudstype voor kolomblokken te upgraden vanaf een lagere pagina [!DNL Page Builder] versies.
+* **ACSD-49464** (voor Adobe Commerce >=2.3.7 &lt;2.4.7) - Hiermee wordt de kwestie opgelost waarbij facturen, verzendingen en creditnota&#39;s niet uit het archief worden verplaatst wanneer orderId anders is.
+* **ACSD-49773** (voor Adobe Commerce en Magento Open Source >=2.4.2 &lt;2.4.6) - Hiermee wordt het probleem opgelost waarbij het exporteren van producten mislukt wanneer AWS S3 wordt gebruikt als externe opslag.
+* **ACSD-49748** (voor Adobe Commerce >=2.3.7 &lt;2.4.7) - Hiermee wordt het probleem opgelost waarbij geen uitnodigingen kunnen worden verzonden.
+* **ACSD-49502** (voor Adobe Commerce >=2.4.3 &lt;2.4.7) - Hiermee wordt het probleem verholpen waarbij de downloadbare koppeling niet correct wordt bijgewerkt nadat een testupdate op het downloadbare product is toegepast.
+* **ACSD-49527** (voor Adobe Commerce >=2.4.2 &lt;2.4.7) - Hiermee wordt het probleem verholpen waarbij de paginering niet correct wordt weergegeven in GraphQL-bedrijfsrollen.
+* **ACSD-49706** (voor Adobe Commerce en Magento Open Source >=2.3.7 &lt;2.4.7) - Hiermee wordt het probleem verholpen waarbij de standaardwaarde wordt opgeslagen voor een visueel staalkenmerk wanneer geen waarde is geselecteerd.
+* **ACSD-49835** (voor Adobe Commerce en Magento Open Source >=2.4.5 &lt;2.4.7) - Hiermee wordt het probleem verholpen waarbij de standaardwaarde van het selectievakje Gebruik niet correct wordt opgeslagen op archiefniveau voor een kenmerk met meerdere selecties.
+* **ACSD-49898** (voor Adobe Commerce en Magento Open Source >=2.4.4 &lt;2.4.6) - Hiermee wordt het probleem verholpen waarbij het productraster een uitzondering genereert wanneer een gebundeld product een speciale prijs heeft die hoger is dan 1000.
+* **ACSD-50234** (voor Adobe Commerce en Magento Open Source >=2.3.7 &lt;2.4.5) - Hiermee kunt u het probleem oplossen met de verkeerde naam van de klant in het bevestigingsbericht als u een bestelling plaatst met [!DNL PayPal].
+* **ACSD-49960** (voor Adobe Commerce en Magento Open Source >=2.4.5 &lt;2.4.7) - Hiermee wordt het probleem opgelost waarbij filtering op datum niet werkt voor het orderraster van de klant.
+* **ACSD-49849** (voor Adobe Commerce en Magento Open Source >=2.3.7 &lt;2.4.6) - Hiermee kunt u het probleem verhelpen waarbij de e-mail van de klant is vervangen door [!DNL PayPal] e-mail wanneer u een bestelling plaatst met [!DNL PayPal Express] via GraphQL.
+* **ACSD-49839** (voor Adobe Commerce >=2.3.7 &lt;2.4.7) - Hiermee wordt het probleem opgelost waarbij Prijsbepaling en structuur van gedeelde catalogus een fout veroorzaakt in Admin wanneer producten enkele of dubbele aanhalingstekens in SKU hebben.
+* **ACSD-49970** (voor Adobe Commerce en Magento Open Source >=2.4.5 &lt;2.4.7) - Hiermee wordt een onjuiste afhandeling van GraphQL-fouten gecorrigeerd wanneer [!DNL New Relic] rapportage is ingeschakeld.
+* **ACSD-50260** (voor Adobe Commerce en Magento Open Source >=2.4.5 &lt;2.4.7) - Hiermee wordt het probleem opgelost waarbij de zoekresultaten van GraphQL-producten beperkt blijven tot 10.000 resultaten.
+* **ACSD-48813** (voor Adobe Commerce en Magento Open Source >=2.4.3 &lt;2.4.7) - Hiermee wordt het probleem verholpen waarbij de zoekopdracht geen relevante resultaten oplevert op basis van het zoekgewicht van de kenmerken.
 
 ## v1.1.28 {#v1-1-28}
 
