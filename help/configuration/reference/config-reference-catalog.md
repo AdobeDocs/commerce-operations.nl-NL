@@ -1,9 +1,9 @@
 ---
 title: Verwijzing naar catalogusconfiguratiepaden
 description: Zie een lijst met configuratiewaarden voor de catalogus.
-source-git-commit: bd1bf6edd131ec93902246e95ce857b509f2a619
+source-git-commit: e4b7ea70b96143629b245409537459ad259393e0
 workflow-type: tm+mt
-source-wordcount: '827'
+source-wordcount: '814'
 ht-degree: 0%
 
 ---
@@ -72,6 +72,7 @@ Deze configuratiewaarden zijn beschikbaar in de Admin in **Winkels** > Instellin
 | Recommendations-telling zoeken | `catalog/search/search_recommendations_count` | ![Alleen handel](/help/assets/configuration/cloud-ee.png) |
 | Aantal resultaten tonen voor elke aanbeveling | `catalog/search/search_recommendations_count_results_enabled` | ![Alleen handel](/help/assets/configuration/cloud-ee.png) |
 | Minimale voorwaarden | `catalog/search/minimum_should_match` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
+| URL voor &quot;categorie/product&quot; genereren Herschrijvingen | `catalog/seo/generate_category_product_rewrites` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 | Algemene zoektermen | `catalog/seo/search_terms` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 | Achtervoegsel URL product | `catalog/seo/product_url_suffix` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 | Achtervoegsel categorie-URL | `catalog/seo/category_url_suffix` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
@@ -115,7 +116,7 @@ Deze configuratiewaarden zijn beschikbaar in de Admin in **Winkels** > Instellin
 | Upselproducten weergeven | `catalog/magento_targetrule/upsell_position_behavior` | ![Alleen handel](/help/assets/configuration/cloud-ee.png) |
 | Rotatiemodus voor producten in Upsell-productlijst | `catalog/magento_targetrule/upsell_rotation_mode` | ![Alleen handel](/help/assets/configuration/cloud-ee.png) |
 
-{style=&quot;table-layout:auto&quot;}
+{style="table-layout:auto"}
 
 ## Inventarisatiepaden
 
@@ -145,7 +146,7 @@ Deze configuratiewaarden zijn beschikbaar in de Admin in **Winkels** > Instellin
 | Rekenmodus | `cataloginventory/source_selection_distance_based_google/mode` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 | Waarde | `cataloginventory/source_selection_distance_based_google/value` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 
-{style=&quot;table-layout:auto&quot;}
+{style="table-layout:auto"}
 
 ## Visuele Merchandiserpaden
 
@@ -158,7 +159,7 @@ Deze configuratiewaarden zijn beschikbaar in de Admin in **Winkels** > Instellin
 | Kleurkenmerkcode | `visualmerchandiser/options/color_attribute_code` | ![Alleen handel](/help/assets/configuration/cloud-ee.png) |
 | Kleurvolgorde | `visualmerchandiser/options/color_order` | ![Alleen handel](/help/assets/configuration/cloud-ee.png) |
 
-{style=&quot;table-layout:auto&quot;}
+{style="table-layout:auto"}
 
 ## XML-sitemappaden
 
@@ -182,7 +183,7 @@ Deze configuratiewaarden zijn beschikbaar in de Admin in **Winkels** > Instellin
 | Maximale bestandsgrootte | `sitemap/limit/max_file_size` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 | Verzending naar Robots.txt inschakelen | `sitemap/search_engines/submission_robots` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 
-{style=&quot;table-layout:auto&quot;}
+{style="table-layout:auto"}
 
 ## RSS feeds, paden
 
@@ -198,7 +199,7 @@ Deze configuratiewaarden zijn beschikbaar in de Admin in **Winkels** > Instellin
 | Categorie op hoofdniveau | `rss/catalog/category` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 | Kennisgeving van status van klant | `rss/order/status` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 
-{style=&quot;table-layout:auto&quot;}
+{style="table-layout:auto"}
 
 ## E-mailen naar vriendenpaden
 
@@ -213,4 +214,4 @@ Deze configuratiewaarden zijn beschikbaar in de Admin in **Winkels** > Instellin
 | Maximaal aantal verzonden producten binnen 1 uur | `sendfriend/email/max_per_hour` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 | Verzenden beperken met | `sendfriend/email/check_by` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 
-{style=&quot;table-layout:auto&quot;}
+{style="table-layout:auto"}
