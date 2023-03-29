@@ -1,9 +1,9 @@
 ---
 title: "Voer de [!DNL Upgrade Compatibility Tool]"
 description: Voer de volgende stappen uit [!DNL Upgrade Compatibility Tool] in een opdrachtregelinterface voor uw Adobe Commerce-project.
-source-git-commit: e704748a7ceaa58a5a8d7004c81ac766dec4e7f1
+source-git-commit: 653d755023f96c0a6acc312f74fd4a0292f13a73
 workflow-type: tm+mt
-source-wordcount: '1090'
+source-wordcount: '1116'
 ht-degree: 0%
 
 ---
@@ -39,7 +39,7 @@ Beschikbare opdrachten voor de [!DNL Upgrade Compatibility Tool] in een opdracht
 | `dbschema:diff` | Met deze opdracht worden alle verschillen tussen de twee opgegeven Adobe Commerce-versies van het databaseschema weergegeven. |
 | `core:code:changes` | Met deze opdracht vergelijkt u de huidige Adobe Commerce-installatie met een schone vanilleinstallatie. |
 | `refactor` | Met deze opdracht corrigeert u automatisch een beperkte set problemen. |
-| `graphql:compare` | Dit bevel verstrekt de optie om twee eindpunten te introspecteren GraphQL en hun schema&#39;s te vergelijken. |
+| `graphql:compare` | Dit bevel verstrekt de optie om twee eindpunten van GraphQL in te voeren en hun schema&#39;s te vergelijken. |
 | `list` | Deze opdracht geeft een lijst met alle [!DNL Upgrade Compatibility Tool] beschikbare opdrachten. |
 | `help` | Deze opdracht retourneert alle beschikbare `help`opties voor de [!DNL Upgrade Compatibility Tool]. Dit bevel kan evenals een optie met de vorige bevelen in werking worden gesteld. |
 
@@ -182,7 +182,7 @@ Beschikbare opties voor de `refactor` opdracht:
 
 ## Gebruik de `graphql:compare` command
 
-Deze opdracht biedt de optie voor de [!DNL Upgrade Compatibility Tool] om twee eindpunten GraphQL in te voeren en hun schema&#39;s te vergelijken die breken en gevaarlijke veranderingen tussen hen zoeken:
+Deze opdracht biedt de optie voor de [!DNL Upgrade Compatibility Tool] om twee GraphQL eindpunten te introduceren en hun schema&#39;s te vergelijken die breken en gevaarlijke veranderingen tussen hen zoeken:
 
 ```bash
 bin/uct graphql:compare <schema1> <schema2>
@@ -207,7 +207,7 @@ Om een lijst van terug te keren [!DNL Upgrade Compatibility Tool] beschikbare op
 bin/uct list
 ```
 
-## Gebruik de `--help` command
+## Gebruik de `help` command
 
 Als u de [!DNL Upgrade Compatibility Tool] algemene opties en Help gebruiken, uitvoeren:
 
@@ -260,6 +260,7 @@ Hiermee worden specifieke opties geretourneerd die kunnen worden uitgevoerd voor
 - Vermijd het gebruik van twee modules met dezelfde naam.
 - Adobe Commerce volgen [coderingsnormen](https://developer.adobe.com/commerce/php/coding-standards/).
 - Adobe Commerce 2.4 [Upgradehulplijn](https://experienceleague.adobe.com/docs/commerce-operations/assets/adobe-commerce-2-4-upgrade-guide.pdf) beste praktijken.
+- Voer de [!DNL Upgrade Compatibility Tool] van de [[!DNL Site-Wide Analysis Tool]](https://experienceleague.adobe.com/docs/commerce-operations/upgrade-guide/upgrade-compatibility-tool/use-upgrade-compatibility-tool/integrate-analysis-tool.html) for [Adobe Commerce over cloudinfrastructuur](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/project/overview.html){target=_blank} projecten.
 
 ## De resultaten optimaliseren
 
