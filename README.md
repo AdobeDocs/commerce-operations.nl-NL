@@ -1,17 +1,17 @@
 ---
-source-git-commit: d17847a7151c5e88f763b334e1ee659ca3ca6bcf
+source-git-commit: 4b767014f325bef7e07cea11d01089206bf44caf
 workflow-type: tm+mt
-source-wordcount: '532'
-ht-degree: 5%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
-# Adobe Commerce-gebruikersdocumentatie
+# Technische documentatie van Adobe Commerce
 
 Wij verwelkomen de bijdragen van onze gemeenschap en van Adobe werknemers van buiten de documentatieteams.
 
 ## Adobe Open-Source-gedragscode
 
-Dit project heeft de [Adobe-gedragscode voor open source](code-of-conduct.md) of de [.NET Foundation-gedragscode](https://dotnetfoundation.org/code-of-conduct) overgenomen. Zie het artikel [Bijdragen](contributing.md) voor meer informatie.
+Dit project heeft het [Adobe Open-Source-gedragscode](code-of-conduct.md) of de [.NET de Gedragscode van de Stichting](https://dotnetfoundation.org/code-of-conduct). Zie voor meer informatie de [Bijdragen](contributing.md) artikel.
 
 ## Over uw bijdragen aan Adobe-inhoud
 
@@ -33,7 +33,7 @@ Als u deel uitmaakt van de gemeenschap van de Adobe en u een nieuw artikel wilt 
 If you submit a pull request with significant changes to documentation and code examples, you'll see a message in the pull request asking you to submit an online contribution license agreement (CLA). We need you to complete the online form before we can review your pull request.
 -->
 
-### Belangrijke wijzigingen van Adobe-medewerkers
+### Belangrijkste veranderingen ten opzichte van Adobe-werknemers
 
 Als u een technisch schrijver, programmamanager, of ontwikkelaar van het productteam voor een oplossing van Adobe Experience Cloud bent en het uw baan is om aan of auteur technische artikelen bij te dragen, zou u de privé bewaarplaats op moeten gebruiken `https://git.corp.adobe.com/AdobeDocs`.
 
@@ -51,13 +51,6 @@ Alle artikelen in deze repository gebruiken GitHub gearomatiseerde prijsopgave. 
 
 * [Grondbeginselen van markeringen](https://help.github.com/articles/getting-started-with-writing-and-formatting-on-github/)
 * [Afdrukbare opmaakmodel](https://guides.github.com/pdfs/markdown-cheatsheet-online.pdf)
-
-## Labels
-
-In de openbare bewaarplaats, worden de geautomatiseerde etiketten toegewezen om verzoeken te trekken om ons te helpen de werkschema van het trekkingsverzoek beheren en u te helpen laten weten wat aan de hand is uw trekkrachtverzoek:
-
-* **Wijziging verzonden naar auteur**: De auteur is op de hoogte gesteld van het aanloopverzoek.
-* **samenvoegen**: Klaar voor overzicht door ons team van het trekpleonderzoek.
 
 ## Sjablonen
 
