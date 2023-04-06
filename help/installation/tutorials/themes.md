@@ -1,9 +1,9 @@
 ---
 title: Thema's verwijderen
 description: Voer de volgende stappen uit om een Adobe Commerce- of Magento Open Source-thema te verwijderen.
-source-git-commit: f6f438b17478505536351fa20a051d355f5b157a
+source-git-commit: 5e072a87480c326d6ae9235cf425e63ec9199684
 workflow-type: tm+mt
-source-wordcount: '491'
+source-wordcount: '473'
 ht-degree: 0%
 
 ---
@@ -11,9 +11,9 @@ ht-degree: 0%
 
 # Thema&#39;s verwijderen
 
-Voordat u deze opdracht gebruikt, moet u weten welk relatief pad naar het thema is ingesteld. Thema&#39;s bevinden zich in een submap van `<magento_root>/app/design/<area name>`. U moet het pad naar het thema opgeven dat begint met het gebied: `frontend` (voor thema&#39;s van de winkel) of `adminhtml` (for [Beheer](https://glossary.magento.com/magento-admin) thema&#39;s).
+Voordat u deze opdracht gebruikt, moet u weten welk relatief pad naar het thema is ingesteld. Thema&#39;s bevinden zich in een submap van `<magento_root>/app/design/<area name>`. U moet het pad naar het thema opgeven dat begint met het gebied: `frontend` (voor thema&#39;s van de winkel) of `adminhtml` (voor Admin-thema&#39;s).
 
-Het pad naar de Luma [thema](https://glossary.magento.com/theme) voorzien van Adobe Commerce en Magento Open Source is `frontend/Magento/luma`.
+Het pad naar het thema Luma dat bij Adobe Commerce en Magento Open Source wordt geleverd, is bijvoorbeeld `frontend/Magento/luma`.
 
 Zie voor meer informatie over thema&#39;s [themastructuur](https://developer.adobe.com/commerce/frontend-core/guide/themes/structure/).
 
@@ -21,7 +21,7 @@ Zie voor meer informatie over thema&#39;s [themastructuur](https://developer.ado
 
 In deze sectie wordt beschreven hoe u een of meer thema&#39;s kunt verwijderen. U kunt desgewenst ook de themacode uit het bestandssysteem opnemen. U kunt eerst back-ups maken, zodat u de gegevens later kunt herstellen.
 
-Deze opdracht wordt verwijderd *alleen* thema&#39;s die worden opgegeven in `composer.json`; met andere woorden, de thema&#39;s die worden vermeld als [Composer](https://glossary.magento.com/composer) pakketten. Als uw thema geen Composer-pakket is, moet u de toepassing handmatig verwijderen door:
+Deze opdracht wordt verwijderd *alleen* thema&#39;s die worden opgegeven in `composer.json`; met andere woorden, thema&#39;s die als Composer-pakketten worden aangeboden. Als uw thema geen Composer-pakket is, moet u de toepassing handmatig verwijderen door:
 
 * Het bijwerken van `parent` knooppuntinformatie in `theme.xml` om verwijzingen naar het thema te verwijderen.
 * Themacode verwijderen uit het bestandssysteem.
@@ -61,7 +61,7 @@ De opdracht voert de volgende taken uit:
 
 1. Hiermee verwijdert u thema&#39;s uit het dialoogvenster `theme` databasetabel.
 1. Thema&#39;s uit de basis van code verwijderen met `composer remove`.
-1. Hiermee wist u de [cachegeheugen](https://glossary.magento.com/cache).
+1. Wist de cache.
 1. Hiermee worden gegenereerde klassen gewist
 1. Indien `--clear-static-content` is opgegeven, cleans [gegenereerde statische weergavebestanden](../../configuration/cli/static-view-file-deployment.md).
 
@@ -102,4 +102,4 @@ Disabling maintenance mode
 
 >[!NOTE]
 >
->Als u een [Beheer](https://glossary.magento.com/admin) thema, moet u het uit uw component ook verwijderen [afhankelijkheidsinjectie](https://glossary.magento.com/dependency-injection) configuratie, `<component root directory>/etc/di.xml`.
+>Als u een beheerthema wilt verwijderen, moet u het ook verwijderen uit de configuratie voor injectie van afhankelijkheden van de component. `<component root directory>/etc/di.xml`.

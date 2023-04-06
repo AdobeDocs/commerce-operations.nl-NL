@@ -1,9 +1,9 @@
 ---
 title: Laatste verificatie
 description: Controleer of uw Varnish-configuratie op de juiste wijze is ingesteld voor gebruik met de Adobe Commerce-toepassing.
-source-git-commit: 80abb0180fcd8ecc275428c23b68feb5883cbc28
+source-git-commit: 5e072a87480c326d6ae9235cf425e63ec9199684
 workflow-type: tm+mt
-source-wordcount: '354'
+source-wordcount: '345'
 ht-degree: 0%
 
 ---
@@ -39,7 +39,7 @@ X-Magento-Cache-Debug: MISS
 
 ## De laadtijden van de pagina controleren
 
-Als Varnish werkt, zou om het even welke pagina van de Handel met cacheable blokken binnen minder dan 150 ms moeten laden. Voorbeelden van dergelijke pagina&#39;s zijn de voordeur en [storefront](https://glossary.magento.com/storefront) [categorie](https://glossary.magento.com/category) pagina&#39;s.
+Als Varnish werkt, zou om het even welke pagina van de Handel met cacheable blokken binnen minder dan 150 ms moeten laden. Voorbeelden van dergelijke pagina&#39;s zijn de pagina&#39;s van de eerste en de winkelcategorie.
 
 Met een browsercontrole kunt u de laadtijden van de pagina meten.
 
@@ -66,7 +66,7 @@ U kunt bijvoorbeeld als volgt de Chrome-controle gebruiken:
 
 Zorg ervoor dat de `<magento_root>/var/page_cache` directory is leeg:
 
-1. Meld u aan bij de Commerce-server of schakel over naar de [eigenaar van bestandssysteem](https://glossary.magento.com/magento-file-system-owner).
+1. Meld u aan bij de Commerce-server of schakel over naar de eigenaar van het bestandssysteem.
 1. Voer de volgende opdracht in:
 
    ```bash

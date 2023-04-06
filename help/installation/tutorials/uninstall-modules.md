@@ -1,9 +1,9 @@
 ---
 title: Modules verwijderen
 description: Voer de volgende stappen uit om een Adobe Commerce- of Magento Open Source-module te verwijderen.
-source-git-commit: f6f438b17478505536351fa20a051d355f5b157a
+source-git-commit: 5e072a87480c326d6ae9235cf425e63ec9199684
 workflow-type: tm+mt
-source-wordcount: '753'
+source-wordcount: '741'
 ht-degree: 0%
 
 ---
@@ -17,7 +17,7 @@ Verwijder een module alleen als u zeker weet dat u deze niet wilt gebruiken. In 
 
 >[!NOTE]
 >
->Dit bevel controleert dat slechts gebiedsdelen die in worden verklaard `composer.json` bestand. Als u een [module](https://glossary.magento.com/module) dat _niet_ in de `composer.json` bestand, wordt met deze opdracht de module verwijderd zonder te controleren op afhankelijkheden. Deze opdracht doet _niet_, echter, verwijder de code van de module uit het dossiersysteem. U moet de hulpmiddelen van het dossiersysteem gebruiken om de code van de module te verwijderen (bijvoorbeeld, `rm -rf <path to module>`). Als alternatief kunt u [disable](manage-modules.md) niet-composermodules.
+>Dit bevel controleert dat slechts gebiedsdelen die in worden verklaard `composer.json` bestand. Als u een module verwijdert die _niet_ in de `composer.json` bestand, wordt met deze opdracht de module verwijderd zonder te controleren op afhankelijkheden. Deze opdracht doet _niet_, echter, verwijder de code van de module uit het dossiersysteem. U moet de hulpmiddelen van het dossiersysteem gebruiken om de code van de module te verwijderen (bijvoorbeeld, `rm -rf <path to module>`). Als alternatief kunt u [disable](manage-modules.md) niet-composermodules.
 
 Opdrachtgebruik:
 
@@ -30,7 +30,7 @@ Wanneer `{ModuleName}` geeft de modulenaam op in `<VendorName>_<ModuleName>` geb
 
 Met de opdracht Module verwijderen worden de volgende taken uitgevoerd:
 
-1. Verifieert dat de gespecificeerde modules in de codebasis bestaan en pakketten zijn die door worden geïnstalleerd [Composer](https://glossary.magento.com/composer).
+1. Verifieert dat de gespecificeerde modules in de codebasis bestaan en pakketten zijn die door Composer worden geïnstalleerd.
 
    Deze opdracht werkt _alleen_ met modules die zijn gedefinieerd als Composer-pakketten.
 
@@ -60,7 +60,7 @@ Met de opdracht Module verwijderen worden de volgende taken uitgevoerd:
    >
    >Een module verwijderen _altijd_ run `composer remove`. De `--remove-data` optie verwijdert gegevensbestandgegevens en schema dat door de module wordt bepaald `Uninstall` klasse.
 
-1. Hiermee wist u de [cachegeheugen](https://glossary.magento.com/cache).
+1. Wist de cache.
 1. Werkt gegenereerde klassen bij.
 1. Indien `--clear-static-content` is opgegeven, cleans [gegenereerde statische weergavebestanden](../../configuration/cli/static-view-file-deployment.md).
 1. Neemt de opslag uit onderhoudswijze.
@@ -73,7 +73,7 @@ magento module:uninstall Magento_SampleMinimal
         Magento_SampleModifyContent
 ```
 
-Eén mogelijkheid is om beide modules te verwijderen nadat u een back-up hebt gemaakt van het bestandssysteem van de module. `pub/media` bestanden en databasetabellen, maar _niet_ het verwijderen van module&#39;s [databaseschema](https://glossary.magento.com/database-schema) of gegevens:
+Eén mogelijkheid is om beide modules te verwijderen nadat u een back-up hebt gemaakt van het bestandssysteem van de module. `pub/media` bestanden en databasetabellen, maar _niet_ het verwijderen van het de gegevensbestandschema of gegevens van de module:
 
 ```bash
 bin/magento module:uninstall Magento_SampleMinimal Magento_SampleModifyContent --backup-code --backup-media --backup-db

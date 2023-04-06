@@ -1,9 +1,9 @@
 ---
 title: Webserver configureren
 description: Leer hoe u uw webserver configureert voor gebruik met Varnish.
-source-git-commit: ee2e446edf79efcd7cbbd67248f8e7ece06bfefd
+source-git-commit: 5e072a87480c326d6ae9235cf425e63ec9199684
 workflow-type: tm+mt
-source-wordcount: '746'
+source-wordcount: '740'
 ht-degree: 0%
 
 ---
@@ -196,7 +196,7 @@ backend default {
 
 ## HTTP-antwoordheaders verifiëren
 
-Nu kunt u controleren of Varnish pagina&#39;s voorstelt door te kijken naar [HTML](https://glossary.magento.com/html) antwoordheaders die door een pagina zijn geretourneerd.
+Nu kunt u verifiëren dat Varnish pagina&#39;s door HTML antwoordkopballen te bekijken die van om het even welke pagina zijn teruggekeerd.
 
 Alvorens u kopballen kunt bekijken, moet u Handel voor ontwikkelaarwijze plaatsen. Er zijn verschillende manieren om het te doen, het eenvoudigste is te wijzigen `.htaccess` in de hoofdmap van de toepassing Commerce. U kunt ook de opdracht [`magento deploy:mode:set`](../cli/set-mode.md) gebruiken.
 
@@ -235,7 +235,7 @@ Als kopteksten zoals deze _niet_ weergave, vernis stoppen, controleer uw `defaul
 
 ### HTML-antwoordheaders bekijken
 
-Er zijn verschillende manieren om naar antwoordheaders te kijken, waaronder het gebruik van een browser [insteekmodule](https://glossary.magento.com/plug-in) of een browsercontrole.
+Er zijn verschillende manieren om naar antwoordheaders te kijken, bijvoorbeeld met een browserplug-in of een browsercontrole.
 
 In het volgende voorbeeld wordt `curl`. U kunt dit bevel van om het even welke machine ingaan die tot de server van de Handel kan toegang hebben gebruikend HTTP.
 

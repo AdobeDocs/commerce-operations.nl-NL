@@ -1,9 +1,9 @@
 ---
 title: Meerdere websites instellen met Nginx
 description: Volg deze zelfstudie om meerdere websites in te stellen met Nginx.
-source-git-commit: 8102c083bb0216bbdcad2882f39f7711b9cee52b
+source-git-commit: 5e072a87480c326d6ae9235cf425e63ec9199684
 workflow-type: tm+mt
-source-wordcount: '962'
+source-wordcount: '959'
 ht-degree: 0%
 
 ---
@@ -53,7 +53,7 @@ Zie [Meerdere websites instellen, weergaven opslaan en opslaan in de beheerfunct
 
 ## Stap 2: Nginx virtuele hosts maken
 
-In deze stap wordt besproken hoe u websites kunt laden op de [storefront](https://glossary.magento.com/storefront). U kunt websites gebruiken of meningen opslaan; als u opslagweergaven gebruikt, moet u de parameterwaarden dienovereenkomstig aanpassen. U moet de taken in deze sectie voltooien als gebruiker met `sudo` rechten.
+In deze stap wordt beschreven hoe u websites op de winkel kunt laden. U kunt websites gebruiken of meningen opslaan; als u opslagweergaven gebruikt, moet u de parameterwaarden dienovereenkomstig aanpassen. U moet de taken in deze sectie voltooien als gebruiker met `sudo` rechten.
 
 Door slechts één te gebruiken [nginx virtueel hostbestand](#step-2-create-nginx-virtual-hosts), kunt u uw nginx-configuratie eenvoudig en schoon houden. Door meerdere virtuele hostbestanden te gebruiken, kunt u elke winkel aanpassen (om een aangepaste locatie te gebruiken voor `french.mysite.mg` bijvoorbeeld).
 

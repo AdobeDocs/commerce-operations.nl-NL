@@ -1,9 +1,9 @@
 ---
 title: Codecompiler
 description: Leer hoe te om de codecompiler van de bevellijn in werking te stellen.
-source-git-commit: d263e412022a89255b7d33b267b696a8bb1bc8a2
+source-git-commit: 5e072a87480c326d6ae9235cf425e63ec9199684
 workflow-type: tm+mt
-source-wordcount: '183'
+source-wordcount: '174'
 ht-degree: 0%
 
 ---
@@ -16,11 +16,11 @@ ht-degree: 0%
 De compilatie van de code omvat het volgende (in geen bepaalde orde):
 
 - Toepassingscode genereren (fabrieken, proxy&#39;s)
-- Samenvoeging van gebiedconfiguratie (geoptimaliseerd [afhankelijkheidsinjectie](https://glossary.magento.com/dependency-injection) configuraties per gebied)
+- Samenvoeging van gebiedconfiguratie (geoptimaliseerde configuraties voor afhankelijkheidsinjectie per gebied)
 - Interceptorgeneratie (geoptimaliseerde codering van interceptoren)
 - Het produceren van de interceptiecache
 - Opslagplaatsen voor het genereren van code (gegenereerde code voor API&#39;s)
-- Genereren van servicekenmerken (gegenereerd) [extension](https://glossary.magento.com/extension) klassen voor gegevensobjecten)
+- De gegevensattributen van de dienst produceren (geproduceerde uitbreidingsklassen voor gegevensvoorwerpen)
 
 U kunt de klassen van de codecompilatie in vinden [\Magento\Setup\Module\Di\App\Task\Operation][operation] naamruimte.
 
@@ -44,7 +44,7 @@ In sommige gevallen, zou u code kunnen willen compileren alvorens u de toepassin
    bin/magento module:enable --all [-c|--clear-static-content]
    ```
 
-   Gebruik de `[-c|--clear-static-content]` optie voor wissen [statische inhoud](https://glossary.magento.com/static-content). Dit is nodig als u eerder modules hebt in- of uitgeschakeld en u de statische inhoud moet wissen die eerder voor deze modules is gegenereerd.
+   Gebruik de `[-c|--clear-static-content]` optie om statische inhoud te wissen. Dit is nodig als u eerder modules hebt in- of uitgeschakeld en u de statische inhoud moet wissen die eerder voor deze modules is gegenereerd.
 
    Zie [Modules inschakelen](../../installation/tutorials/manage-modules.md).
 

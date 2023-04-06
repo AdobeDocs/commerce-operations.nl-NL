@@ -1,9 +1,9 @@
 ---
 title: Systeemvereisten
 description: Gebruik deze naslaggids om vereiste softwareafhankelijkheden te identificeren die zijn getest met Adobe Commerce- en Magento Open Source-releases.
-source-git-commit: 61a477ec6118e4a228ddbb956e613fa3bec9c91c
+source-git-commit: 5e072a87480c326d6ae9235cf425e63ec9199684
 workflow-type: tm+mt
-source-wordcount: '525'
+source-wordcount: '522'
 ht-degree: 0%
 
 ---
@@ -79,7 +79,7 @@ Voor sommige bewerkingen zijn voor Adobe Commerce en Magento Open Source de volg
 
 ### SSL
 
-- Een geldige [beveiligingscertificaat](https://glossary.magento.com/security-certificate) is vereist voor HTTPS.
+- Een geldig beveiligingscertificaat is vereist voor HTTPS.
 - Zelfondertekende SSL-certificaten worden niet ondersteund.
 - Vereiste voor TLS (Transport Layer Security) - PayPal en `repo.magento.com` beide vereisen TLS 1.2 of hoger.
 

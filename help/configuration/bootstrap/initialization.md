@@ -1,9 +1,9 @@
 ---
 title: Initialisatie en bootstrap van toepassingen
 description: Lees over initialisatie en bootstrap logica voor de toepassing van de Handel.
-source-git-commit: 5c0d285717a79d654af769cb734ec385d2d4046f
+source-git-commit: 5e072a87480c326d6ae9235cf425e63ec9199684
 workflow-type: tm+mt
-source-wordcount: '866'
+source-wordcount: '863'
 ht-degree: 0%
 
 ---
@@ -104,7 +104,7 @@ Wanneer het verzoek aan het ingangspunt opnieuw wordt gericht, ontleedt de toepa
 
 ### Invoerpunt van mediabron
 
-[Magento\MediaStorage\App\Media][media] wint media middelen (d.w.z. om het even welke dossiers die aan media opslag worden geupload) van het gegevensbestand terug. Het wordt gebruikt wanneer het gegevensbestand als a wordt gevormd [media-opslag](https://glossary.magento.com/media-storage).
+[Magento\MediaStorage\App\Media][media] wint media middelen (d.w.z. om het even welke dossiers die aan media opslag worden geupload) van het gegevensbestand terug. Het wordt gebruikt wanneer het gegevensbestand als media opslag wordt gevormd.
 
 `\Magento\Core\App\Media` pogingen om het mediabestand te vinden in de geconfigureerde databaseopslag en het naar de `pub/static` en retourneert vervolgens de inhoud ervan. Als er een fout optreedt, wordt er een HTTP 404 (Not Found)-statuscode zonder inhoud in de header geretourneerd.
 

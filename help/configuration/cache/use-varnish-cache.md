@@ -1,9 +1,9 @@
 ---
 title: Cache wissen met Varnish
 description: Leer hoe het leegmaken van cache werkt met Varnish en hoe u dit gebruikt als een web-caching accelerator voor de Adobe Commerce-toepassing.
-source-git-commit: d263e412022a89255b7d33b267b696a8bb1bc8a2
+source-git-commit: 5e072a87480c326d6ae9235cf425e63ec9199684
 workflow-type: tm+mt
-source-wordcount: '388'
+source-wordcount: '382'
 ht-degree: 0%
 
 ---
@@ -15,13 +15,13 @@ Dit onderwerp bespreekt de grondbeginselen van het gebruiken van Varnish als web
 
 ## Varnish puring
 
-Volgens [Varnish-documentatie](https://www.varnish-cache.org/docs/trunk/users-guide/purging.html), &quot;A *zuiveren* is wat er gebeurt wanneer u een object kiest uit het [cachegeheugen](https://glossary.magento.com/cache) en samen met de varianten te verwijderen.&quot; Een vernis is vergelijkbaar met een opdracht voor het opschonen van een cache (of klikken op **Magento-cache leegmaken** in de Admin).
+Volgens [Varnish-documentatie](https://www.varnish-cache.org/docs/trunk/users-guide/purging.html), &quot;A *zuiveren* Dit is wat er gebeurt als u een object uit de cache haalt en het samen met de varianten verwijdert.&quot; Een vernis is vergelijkbaar met een opdracht voor het opschonen van een cache (of klikken op **Magento-cache leegmaken** in de Admin).
 
 In feite, wanneer u schoonmaakt, spoelt, of verfrist het geheime voorgeheugen van de Handel, zuivert Varnish ook.
 
 Nadat u hebt geïnstalleerd en Varnish gevormd om met Handel te werken, kunnen de volgende acties in een zuivering van Varnish resulteren:
 
-- Een [website](https://glossary.magento.com/website).
+- Een website onderhouden.
 
    Alles wat u bijvoorbeeld doet in de Admin in:
 

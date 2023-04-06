@@ -1,9 +1,9 @@
 ---
 title: Follow-up gegevensmigratie
 description: Leer hoe u kunt controleren of de gegevensmigratie tussen Magento 1 en Magento 2 is gelukt en of alle functies naar behoren werken.
-source-git-commit: d609c497fdf00c5e5f975a5679b1d072cec4f8a2
+source-git-commit: 5e072a87480c326d6ae9235cf425e63ec9199684
 workflow-type: tm+mt
-source-wordcount: '304'
+source-wordcount: '301'
 ht-degree: 0%
 
 ---
@@ -31,7 +31,7 @@ Referentienummers voor bestellingen, facturen, verzendingen, creditmemo&#39;s en
 
 ### Klantsegmenten opnieuw opslaan [Alleen Adobe Commerce]
 
-Na de migratie moeten de segmenten van de Klant van het [Beheer](https://glossary.magento.com/admin) Deelvenster om ze weer aan de slag te krijgen.
+Na de migratie moeten de segmenten van de Klant van het Admin Comité worden opnieuw bewaard om hen op en in werking te stellen.
 
 ### Tijdzone configureren
 

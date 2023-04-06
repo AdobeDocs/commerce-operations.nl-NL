@@ -1,9 +1,9 @@
 ---
 title: Configuratietypen
 description: Creeer of breid configuratietypen uit.
-source-git-commit: 6a3995dd24f8e3e8686a8893be9693581d31712b
+source-git-commit: 5e072a87480c326d6ae9235cf425e63ec9199684
 workflow-type: tm+mt
-source-wordcount: '597'
+source-wordcount: '591'
 ht-degree: 0%
 
 ---
@@ -13,7 +13,7 @@ ht-degree: 0%
 
 ## Configuratietypen uitbreiden
 
-Om een bestaand configuratietype uit te breiden, moet u slechts een configuratiedossier in uw creëren [module](https://glossary.magento.com/module).
+Om een bestaand configuratietype uit te breiden, moet u slechts een configuratiedossier in uw module tot stand brengen.
 
 Als u bijvoorbeeld een gebeurteniswaarnemer wilt toevoegen, maakt u `app/code/{VendorName}/{ModuleName}/etc/events.xml` en een nieuwe waarnemer te verklaren.
 
@@ -29,11 +29,11 @@ Om een configuratietype tot stand te brengen, moet u minstens toevoegen:
 - XSD-validatieschema
 - XML-configuratiebestanden
 
-Als u bijvoorbeeld een [adapter](https://glossary.magento.com/adapter) voor een nieuwe onderzoeksserver die uitbreidingen toelaat om te vormen hoe zijn entiteiten in die server worden geïndexeerd, creeer:
+Als u bijvoorbeeld een adapter wilt introduceren voor een nieuwe zoekserver waarmee extensies kunnen configureren hoe de entiteiten op die server worden geïndexeerd, maakt u:
 
 - Een lader
 - Een XSD-schemabestand
-- Een correct benoemd configuratiebestand. Bijvoorbeeld, `search.xml`. Dit bestand wordt op basis van uw schema gelezen en gevalideerd.
+- Een correct benoemd configuratiebestand. Bijvoorbeeld: `search.xml`. Dit bestand wordt op basis van uw schema gelezen en gevalideerd.
 - Alle andere klassen die vereist zijn voor uw werk.
 
 >[!INFO]

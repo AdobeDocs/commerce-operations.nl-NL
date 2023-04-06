@@ -1,9 +1,9 @@
 ---
 title: Database-replicatie
 description: Zie de voordelen van het vormen van gegevensbestandreplicatie.
-source-git-commit: 52f92ef79586d618fd4ac51c00eaa1446a2dc98f
+source-git-commit: 5e072a87480c326d6ae9235cf425e63ec9199684
 workflow-type: tm+mt
-source-wordcount: '178'
+source-wordcount: '175'
 ht-degree: 0%
 
 ---
@@ -121,7 +121,7 @@ Het volgende is geavanceerder en wordt slechts ter informatie verstrekt:
 
 ## Prestatieverbetering
 
-Om de prestaties van master-slave replicatie te verbeteren, kunt u sommige lijsten op slave instanties filtreren. We raden u aan alle tijdelijke tabellen te filteren met een naampatroon `search\_tmp\_%` die worden gebruikt voor [catalogus](https://glossary.magento.com/catalog) zoeken.
+Om de prestaties van master-slave replicatie te verbeteren, kunt u sommige lijsten op slave instanties filtreren. We raden u aan alle tijdelijke tabellen te filteren met een naampatroon `search\_tmp\_%` die worden gebruikt voor het zoeken naar catalogi.
 
 Hiervoor voegt u de volgende regel toe aan uw `my.cnf` bestand op uw slave-exemplaren:
 

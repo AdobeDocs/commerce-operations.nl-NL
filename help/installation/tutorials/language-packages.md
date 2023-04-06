@@ -1,9 +1,9 @@
 ---
 title: Taalpakketten verwijderen
 description: Voer de volgende stappen uit om een Adobe Commerce- of Magento Open Source-taalpakket te verwijderen.
-source-git-commit: f6f438b17478505536351fa20a051d355f5b157a
+source-git-commit: 5e072a87480c326d6ae9235cf425e63ec9199684
 workflow-type: tm+mt
-source-wordcount: '222'
+source-wordcount: '213'
 ht-degree: 0%
 
 ---
@@ -13,7 +13,7 @@ ht-degree: 0%
 
 In deze sectie wordt besproken hoe u een of meer taalpakketten kunt verwijderen, waarbij u eventueel de code van de taalpakketten uit het bestandssysteem kunt opnemen. U kunt eerst back-ups maken, zodat u de gegevens later kunt herstellen.
 
-Deze opdracht wordt verwijderd *alleen* taalpakketten die zijn opgegeven in `composer.json`; met andere woorden, taalpakketten die worden geleverd als [Composer](https://glossary.magento.com/composer) pakketten. Als uw [taalpakket](https://glossary.magento.com/language-package) is geen Composer-pakket, moet u de toepassing handmatig verwijderen door de code van het taalpakket uit het bestandssysteem te verwijderen.
+Deze opdracht wordt verwijderd *alleen* taalpakketten die zijn opgegeven in `composer.json`; met andere woorden taalpakketten die als Composer-pakketten worden aangeboden. Als uw taalpakket geen Composer-pakket is, moet u het handmatig verwijderen door de code van het taalpakket uit het bestandssysteem te verwijderen.
 
 U kunt back-ups op elk gewenst moment herstellen met de [`magento setup:rollback`](uninstall-modules.md#roll-back-the-file-system-database-or-media-files) gebruiken.
 
@@ -31,7 +31,7 @@ Met de opdracht Taalpakket verwijderen kunt u de volgende taken uitvoeren:
 
 1. Indien `--backup code` is opgegeven, maakt u een back-up van het bestandssysteem (exclusief `var` en `pub/static` mappen) naar `var/backups/<timestamp>_filesystem.tgz`
 1. Hiermee verwijdert u bestanden met taalpakketten uit de codebase met `composer remove`.
-1. Hiermee wist u de [cachegeheugen](https://glossary.magento.com/cache).
+1. Wist de cache.
 
 Als u bijvoorbeeld probeert een taalpakket te verwijderen waarvan een ander taalpakket afhankelijk is, wordt het volgende bericht weergegeven:
 

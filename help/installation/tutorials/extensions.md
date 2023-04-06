@@ -1,9 +1,9 @@
 ---
 title: Een extensie installeren
 description: Voer de volgende stappen uit om een Adobe Commerce- of Magento Open Source-extensie te installeren.
-source-git-commit: 61638d373408d9a7c3c3a935eee61927acfac7a6
+source-git-commit: 5e072a87480c326d6ae9235cf425e63ec9199684
 workflow-type: tm+mt
-source-wordcount: '651'
+source-wordcount: '645'
 ht-degree: 0%
 
 ---
@@ -16,12 +16,12 @@ Code die het gedrag Adobe Commerce uitbreidt of aanpast, wordt een extensie geno
 Extensies zijn:
 
 - Modules (breid Adobe Commerce- en Magento Open Source-mogelijkheden uit)
-- Thema&#39;s (wijzig de vormgeving van uw [storefront](https://glossary.magento.com/storefront) en beheerder)
+- Thema&#39;s (wijzig de vormgeving van uw winkel en Admin)
 - Taalpakketten (lokaliseer de winkel en Admin)
 
 >[!TIP]
 >
->Dit onderwerp verklaart hoe te om de bevellijn te gebruiken om uitbreidingen te installeren u van de Commerce Marketplace koopt. U kunt dezelfde procedure gebruiken om te installeren _alle_ uitbreiding; alleen de extensie [Composer](https://glossary.magento.com/composer) naam en versie. Open de extensies om deze te zoeken `composer.json` en noteer de waarden voor `"name"` en `"version"`.
+>Dit onderwerp verklaart hoe te om de bevellijn te gebruiken om uitbreidingen te installeren u van de Commerce Marketplace koopt. U kunt dezelfde procedure gebruiken om te installeren _alle_ uitbreiding; u hebt alleen de Composer-naam en -versie van de extensie nodig. Open de extensies om deze te zoeken `composer.json` en noteer de waarden voor `"name"` en `"version"`.
 
 Voordat u gaat installeren, kunt u het volgende doen:
 

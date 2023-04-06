@@ -1,9 +1,9 @@
 ---
 title: Caching configureren
 description: Leer over caching en hoe te om geheim voorgeheugenmechanismen voor de toepassing van Adobe Commerce en van de Magento Open Source te vormen.
-source-git-commit: ee2e446edf79efcd7cbbd67248f8e7ece06bfefd
+source-git-commit: 5e072a87480c326d6ae9235cf425e63ec9199684
 workflow-type: tm+mt
-source-wordcount: '251'
+source-wordcount: '245'
 ht-degree: 0%
 
 ---
@@ -12,7 +12,7 @@ ht-degree: 0%
 
 [!DNL Commerce] laat u toe om alternatieven aan het standaarddossiersysteem caching te vormen. In deze gids worden enkele van deze alternatieven besproken; namelijk:
 
-- Het volgende instellen [cachegeheugen](https://glossary.magento.com/cache) in de [!DNL Commerce] configuratie:
+- De volgende cachemechanismen instellen in het dialoogvenster [!DNL Commerce] configuratie:
 
    - [Database](https://developer.adobe.com/commerce/php/development/cache/partial/database-caching/)
    - [Redis](config-redis.md)
@@ -37,7 +37,7 @@ ht-degree: 0%
 
 - De verstrekte gegevens wijzigen `default` cachefront—
 
-   U wijzigt alleen de `<magento_root>/app/etc/di.xml` bestand, de algemene toepassing van de Commerce [afhankelijkheidsinjectie](https://glossary.magento.com/dependency-injection) configuratie.
+   U wijzigt alleen de `<magento_root>/app/etc/di.xml` bestand, de algemene configuratie voor injectie van afhankelijkheden van de toepassing Commerce.
 
 - Uw eigen voorste cache configureren—
 

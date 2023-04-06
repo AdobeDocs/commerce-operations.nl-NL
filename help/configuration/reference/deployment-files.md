@@ -1,9 +1,9 @@
 ---
 title: Configuratiebestanden voor implementatie
 description: Begrijp hoe de configuratiedossiers voor het installeren van de toepassing van de Handel werken.
-source-git-commit: d263e412022a89255b7d33b267b696a8bb1bc8a2
+source-git-commit: 5e072a87480c326d6ae9235cf425e63ec9199684
 workflow-type: tm+mt
-source-wordcount: '487'
+source-wordcount: '478'
 ht-degree: 0%
 
 ---
@@ -39,7 +39,7 @@ Op het hoogste niveau van deze array zijn _configuratiesegmenten_. Een segment h
 
 [Magento\Framework\App\DeploymentConfig](https://github.com/magento/magento2/blob/2.4/lib/internal/Magento/Framework/App/DeploymentConfig.php) verleent slechts toegang tot deze secties maar staat u niet toe om hen uit te breiden.
 
-Op het volgende hiërarchieniveau, worden de punten in elk segment bevolen volgens [module](https://glossary.magento.com/module) Reeksdefinitie, die door de configuratiedossiers van alle modules, behalve gehandicapte modules wordt verkregen samen te voegen.
+Op het volgende hiërarchieniveau, worden de punten in elk segment bevolen volgens de definitie van de moduleopeenvolging, die door de configuratiedossiers van alle modules samen te voegen, behalve gehandicapte modules wordt verkregen.
 
 De volgende secties bespreken de structuur en de inhoud van de plaatsingsconfiguratie:
 
@@ -78,6 +78,6 @@ return array (
 
 De waarde `1` of `0` Hiermee wordt aangegeven of een module is in- of uitgeschakeld.
 
-Uitgeschakelde modules worden niet erkend door de toepassing van de Handel; met andere woorden, zij nemen niet deel aan het samenvoegen van configuraties, aan afhankelijkheidsinjectie, gebeurtenissen, plug-ins, enzovoort. Uitgeschakelde modules wijzigen het [storefront](https://glossary.magento.com/storefront) of [Beheer](https://glossary.magento.com/admin) en beïnvloedt het verpletteren niet.
+Uitgeschakelde modules worden niet erkend door de toepassing van de Handel; met andere woorden, zij nemen niet deel aan het samenvoegen van configuraties, aan afhankelijkheidsinjectie, gebeurtenissen, plug-ins, enzovoort. Uitgeschakelde modules wijzigen de storefront of Admin niet en beïnvloeden het verpletteren niet.
 
 Het enige praktische verschil tussen een uitgeschakelde module en een afwezige module in de codebasis is dat een uitgeschakelde module door de autoloader wordt gevonden, en zijn klassen en constanten zijn beschikbaar voor hergebruik in andere code.

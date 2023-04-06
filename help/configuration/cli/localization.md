@@ -1,9 +1,9 @@
 ---
 title: Vertaalwoordenboeken en taalpakketten
 description: Leer hoe u vertaalwoordenboeken kunt genereren en taalpakketten kunt maken.
-source-git-commit: d263e412022a89255b7d33b267b696a8bb1bc8a2
+source-git-commit: 5e072a87480c326d6ae9235cf425e63ec9199684
 workflow-type: tm+mt
-source-wordcount: '1509'
+source-wordcount: '1503'
 ht-degree: 0%
 
 ---
@@ -22,7 +22,7 @@ Zie [Overzicht van vertalingen].
 
 ## Een vertaalwoordenboek genereren
 
-U kunt een [vertaalwoordenboek] bestaande tekenreeksen aanpassen, woorden en woordgroepen vertalen in een aangepaste module, een thema lokaliseren of [taalpakketten](https://glossary.magento.com/language-package).
+U kunt een [vertaalwoordenboek] als u bestaande tekenreeksen wilt aanpassen, vertaalt u woorden en woordgroepen in een aangepaste module, lokaliseert u een thema of maakt u taalpakketten.
 
 Als u wilt beginnen met het vertalen, gebruikt u een opdracht om een CSV-woordenboekbestand te genereren met een verzamelde lijst van alle bestaande woordgroepen en woorden.
 
@@ -139,7 +139,7 @@ U kunt als volgt deze bestanden maken:
 
 Bij het declareren van een taalpakket in de `language.xml` configuratiebestand, moet u de volgorde van de taalovererving voor dit pakket opgeven.
 
-Met talenovererving kunt u een vertaling maken die een _onderliggend_ op basis van een bestaande vertaling die een _parent_. De onderliggende vertalingen overschrijven het bovenliggende element. Als de onderliggende vertaling echter niet kan worden geüpload of weergegeven of een woordgroep of woord ontbreekt, gebruikt de Handel de bovenliggende vertaling [landinstelling](https://glossary.magento.com/locale). [Voorbeelden van taalpakketovererving](#example-of-language-inheritance).
+Met talenovererving kunt u een vertaling maken die een _onderliggend_ op basis van een bestaande vertaling die een _parent_. De onderliggende vertalingen overschrijven het bovenliggende element. Als de onderliggende vertaling echter niet kan worden geüpload of weergegeven of als er een woordgroep of woord ontbreekt, wordt de bovenliggende landinstelling gebruikt. [Voorbeelden van taalpakketovererving](#example-of-language-inheritance).
 
 Geef de volgende informatie op om een pakket te declareren:
 

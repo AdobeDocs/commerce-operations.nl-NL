@@ -1,9 +1,9 @@
 ---
 title: Modules in- of uitschakelen
 description: Voer de volgende stappen uit om Adobe Commerce- of Magento Open Source-modules te beheren.
-source-git-commit: f6f438b17478505536351fa20a051d355f5b157a
+source-git-commit: 5e072a87480c326d6ae9235cf425e63ec9199684
 workflow-type: tm+mt
-source-wordcount: '557'
+source-wordcount: '551'
 ht-degree: 0%
 
 ---
@@ -25,7 +25,7 @@ Wanneer
 
 * `--enabled` maakt een lijst van alle toegelaten modules.
 * `--disabled` Hiermee geeft u alle uitgeschakelde modules weer.
-* `<module-list>` is een door spaties gescheiden lijst met modules om de status te controleren. Indien [module](https://glossary.magento.com/module) name contains special characters, enclose the name in either single or double quotes.
+* `<module-list>` is een door spaties gescheiden lijst met modules om de status te controleren. Als een modulenaam speciale tekens bevat, plaatst u de naam tussen enkele of dubbele aanhalingstekens.
 
 ## Module in-/uitschakelen
 
@@ -41,12 +41,12 @@ bin/magento module:disable [-c|--clear-static-content] [-f|--force] [--all] <mod
 
 Wanneer
 
-* `<module-list>` is een door spaties gescheiden lijst met modules die moeten worden in- of uitgeschakeld. Indien [module](https://glossary.magento.com/module) name contains special characters, enclose the name in either single or double quotes.
+* `<module-list>` is een door spaties gescheiden lijst met modules die moeten worden in- of uitgeschakeld. Als een modulenaam speciale tekens bevat, plaatst u de naam tussen enkele of dubbele aanhalingstekens.
 * `--all` om alle modules tezelfdertijd in of onbruikbaar te maken.
 * `-f` of `--force` om een module te dwingen om ondanks gebiedsdelen worden toegelaten of worden onbruikbaar gemaakt. Voordat u deze optie gebruikt, raadpleegt u [Modules in- en uitschakelen](#about-enabling-and-disabling-modules).
 * `-c` of `--clear-static-content` cleans [gegenereerde statische weergavebestanden](../../configuration/cli/static-view-file-deployment.md).
 
-   Als u statische weergavebestanden niet wist, kunnen er problemen optreden als er meerdere bestanden met dezelfde naam zijn en u niet alle bestanden wist.
+   Als u statische weergavebestanden niet wist, kunnen er problemen optreden als er meerdere bestanden met dezelfde naam zijn en u ze niet allemaal wist.
 
    Met andere woorden, vanwege de [fallback van statische bestanden](../../configuration/cli/static-view-file-deployment.md) regels, als u statische bestanden niet wist en er meerdere bestanden zijn met de naam `logo.svg` anders, zou de reserve het verkeerde dossier kunnen veroorzaken om te tonen.
 

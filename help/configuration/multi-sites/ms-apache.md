@@ -1,9 +1,9 @@
 ---
 title: Meerdere websites instellen met Apache
 description: Volg deze zelfstudie om meerdere websites in te stellen met Apache.
-source-git-commit: 8102c083bb0216bbdcad2882f39f7711b9cee52b
+source-git-commit: 5e072a87480c326d6ae9235cf425e63ec9199684
 workflow-type: tm+mt
-source-wordcount: '508'
+source-wordcount: '505'
 ht-degree: 0%
 
 ---
@@ -13,7 +13,7 @@ ht-degree: 0%
 
 Wij gaan ervan uit dat:
 
-Kopieer, indien nodig, de bestaande `index.php` script voor het ingangspunt voor uw website of [winkelweergave](https://glossary.magento.com/store-view) en voeg hieraan het volgende toe:
+Kopieer, indien nodig, de bestaande `index.php` script voor het ingangspunt voor uw website- of opslagweergave en voeg hieraan het volgende toe:
 
 - U werkt op een ontwikkelcomputer (laptop, virtuele machine, enzovoort)
 

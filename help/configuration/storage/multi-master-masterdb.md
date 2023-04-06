@@ -1,9 +1,9 @@
 ---
 title: Master databases automatisch configureren
 description: Zie begeleiding bij het automatisch vormen van de gespleten gegevensbestandoplossing.
-source-git-commit: d029d1ac66bff2ac34b22b2d3b8aafbfc062e082
+source-git-commit: 5e072a87480c326d6ae9235cf425e63ec9199684
 workflow-type: tm+mt
-source-wordcount: '358'
+source-wordcount: '355'
 ht-degree: 0%
 
 ---
@@ -18,7 +18,7 @@ ht-degree: 0%
 Dit onderwerp bespreekt hoe te beginnen met de gespleten gegevensbestandoplossing door:
 
 1. Adobe Commerce installeren met één master database (genaamd `magento`)
-1. Twee extra master databases maken voor [uitchecken](https://glossary.magento.com/checkout) en OMS (benoemd `magento_quote` en `magento_sales`)
+1. Het creëren van twee extra master gegevensbestanden voor checkout en OMS (genoemd `magento_quote` en `magento_sales`)
 1. Adobe Commerce configureren voor het gebruik van de databases voor uitchecken en verkopen
 
 >[!INFO]

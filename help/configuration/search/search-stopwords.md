@@ -1,9 +1,9 @@
 ---
 title: Zoekstopwoorden configureren
 description: Leer hoe u stopwords voor Adobe Commerce kunt beheren met gebruik van CSV-bestanden.
-source-git-commit: d263e412022a89255b7d33b267b696a8bb1bc8a2
+source-git-commit: 5e072a87480c326d6ae9235cf425e63ec9199684
 workflow-type: tm+mt
-source-wordcount: '658'
+source-wordcount: '652'
 ht-degree: 0%
 
 ---
@@ -28,7 +28,7 @@ Zie de volgende bronnen voor meer informatie over hoe Elasticsearch en OpenSearc
 
 Stopwoorden bevinden zich in de `<magento_root>/vendor/magento/module-elasticsearch/etc/stopwords` directory. Adobe Commerce en Magento Open Source worden geleverd met één CSV-bestand met stopwords voor de standaardlandinstellingen en een extra bestand. `stopwords.csv`, met stopwoorden voor elke landinstelling die niet wordt vertegenwoordigd door een ander CSV-bestand.
 
-De standaardlevensduur voor het stopwoordenbestand [cachegeheugen](https://glossary.magento.com/cache) is 15 minuten.
+De standaardlevensduur voor de cache van stopwords-bestanden is 15 minuten.
 
 ### stopwoorden bewerken voor een bestaande landinstelling
 
@@ -54,7 +54,7 @@ De standaardlevensduur voor het stopwoordenbestand [cachegeheugen](https://gloss
       php <magento_root>/bin/magento cache:clean config
       ```
 
-1. Controleer de resultaten door te zoeken naar termen op uw [storefront](https://glossary.magento.com/storefront).
+1. Controleer de resultaten door te zoeken naar termen in je winkel.
 
 ### stopwoorden maken voor een nieuwe landinstelling
 

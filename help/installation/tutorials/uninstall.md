@@ -1,9 +1,9 @@
 ---
 title: Adobe Commerce verwijderen of opnieuw installeren
 description: Voer de volgende stappen uit om installaties in de bedrijfsruimten van Adobe Commerce en Magento Open Source te verwijderen en opnieuw te installeren.
-source-git-commit: f6f438b17478505536351fa20a051d355f5b157a
+source-git-commit: 5e072a87480c326d6ae9235cf425e63ec9199684
 workflow-type: tm+mt
-source-wordcount: '287'
+source-wordcount: '281'
 ht-degree: 0%
 
 ---
@@ -47,7 +47,7 @@ Het volgende bericht wordt weergegeven om te bevestigen dat het verwijderen is g
 
 Standaard, `bin/magento setup:upgrade` Wist gecompileerde code en het geheime voorgeheugen. Meestal gebruikt u `bin/magento setup:upgrade` om componenten bij te werken en elke component kan verschillende gecompileerde klassen vereisen.
 
-Nochtans, in sommige situaties (in het bijzonder, opstellend aan productie), zou u kunnen willen vermijden ontruimend gecompileerde code omdat het wat tijd kan vergen. (De [cachegeheugen](https://glossary.magento.com/cache) is nog steeds gewist.) Als u het dialoogvenster [databaseschema](https://glossary.magento.com/database-schema) en gegevens *zonder* het ontruimen van gecompileerde code, ga binnen:
+Nochtans, in sommige situaties (in het bijzonder, opstellend aan productie), zou u kunnen willen vermijden ontruimend gecompileerde code omdat het wat tijd kan vergen. (De cache wordt nog steeds gewist.) Het databaseschema en de gegevens bijwerken *zonder* het ontruimen van gecompileerde code, ga binnen:
 
 ```bash
 bin/magento setup:upgrade --keep-generated

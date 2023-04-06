@@ -1,9 +1,9 @@
 ---
 title: Varnish configureren en gebruiken
 description: Begrijp hoe Varnish dossiers opslaat en het verkeer van HTTP verbetert.
-source-git-commit: 974c3480ccf5d1e1a5308e1bd2b27fcfaf3c72b2
+source-git-commit: 5e072a87480c326d6ae9235cf425e63ec9199684
 workflow-type: tm+mt
-source-wordcount: '1088'
+source-wordcount: '1079'
 ht-degree: 0%
 
 ---
@@ -35,7 +35,7 @@ In de bovenstaande afbeelding resulteren HTTP-aanvragen van gebruikers via inter
 
 Wanneer de webserver elementen retourneert, worden cacheable elementen in het Varnish opgeslagen. Elke volgende aanvraag voor deze elementen wordt door Varnish ingewilligd (de aanvragen bereiken dus niet de webserver). Varnish retourneert bijzonder snel inhoud in de cache. De resultaten zijn snellere reactietijden om de inhoud aan gebruikers en een verminderd aantal verzoeken terug te keren die door de Handel moeten worden vervuld.
 
-Elementen die in het cachegeheugen van Varnish zijn geplaatst, verlopen met een configureerbaar interval of worden vervangen door nieuwere versies van dezelfde elementen. U kunt de cache ook handmatig wissen met de [Beheer](https://glossary.magento.com/magento-admin) of de [`magento cache:clean`](../cli/manage-cache.md#clean-and-flush-cache-types) gebruiken.
+Elementen die in het cachegeheugen van Varnish zijn geplaatst, verlopen met een configureerbaar interval of worden vervangen door nieuwere versies van dezelfde elementen. U kunt de cache ook handmatig wissen met de beheerfunctie of de [`magento cache:clean`](../cli/manage-cache.md#clean-and-flush-cache-types) gebruiken.
 
 ## Procesoverzicht
 
@@ -97,7 +97,7 @@ Dit onderwerp behandelt slechts de standaardopties in de voorafgaande lijst. Er 
 
 Op het eerste browser verzoek, worden de cacheable activa geleverd aan cliëntbrowser van Varnish en caching op browser.
 
-Daarnaast gebruikt Varnish een [Entiteit](https://glossary.magento.com/entity) Tag (ETag) voor statische elementen. ETag verstrekt een manier om te bepalen wanneer [statische bestanden](https://glossary.magento.com/static-files) wijzigen op de server. Hierdoor worden statische elementen naar de client verzonden wanneer deze op de server worden gewijzigd. Dit kan op een nieuw verzoek van een browser of wanneer de client het cachegeheugen van de browser vernieuwt, meestal door op F5 of Control+F5 te drukken.
+Daarnaast gebruikt Varnish een eenheidtag (ETag) voor statische activa. Met ETag kunt u bepalen wanneer statische bestanden op de server veranderen. Hierdoor worden statische elementen naar de client verzonden wanneer deze op de server worden gewijzigd. Dit kan op een nieuw verzoek van een browser of wanneer de client het cachegeheugen van de browser vernieuwt, meestal door op F5 of Control+F5 te drukken.
 
 De volgende secties bevatten meer details.
 

@@ -1,9 +1,9 @@
 ---
 title: Het databaseschema en de gegevens bijwerken
 description: Voer de volgende stappen uit om uw Adobe Commerce- of Magento Open Source-databaseschema bij te werken.
-source-git-commit: f6f438b17478505536351fa20a051d355f5b157a
+source-git-commit: 5e072a87480c326d6ae9235cf425e63ec9199684
 workflow-type: tm+mt
-source-wordcount: '176'
+source-wordcount: '173'
 ht-degree: 0%
 
 ---
@@ -15,7 +15,7 @@ Voordat u deze opdracht gebruikt, moet u [de toepassing installeren](../advanced
 
 ## Het databaseschema en de gegevens bijwerken
 
-Op elk moment voert u een actie uit die de [databaseschema](https://glossary.magento.com/database-schema) Voor gegevens die moeten worden gewijzigd, moet u hen bijwerken door het bevel in werking te stellen dat in deze sectie wordt besproken. Hieronder volgt een gedeeltelijke motivering:
+Telkens wanneer u een actie uitvoert die het gegevensbestandschema of de gegevens om veroorzaakt te veranderen, moet u hen bijwerken door het bevel in werking te stellen dat in deze sectie wordt besproken. Hieronder volgt een gedeeltelijke motivering:
 
 * U hebt de toepassing bijgewerkt via de opdrachtregel
 * U hebt een component geïnstalleerd of bijgewerkt via de opdrachtregel

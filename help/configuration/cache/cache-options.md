@@ -1,16 +1,16 @@
 ---
 title: Cacheopties
 description: Toegang tot cache op laag niveau configureren.
-source-git-commit: 6a3995dd24f8e3e8686a8893be9693581d31712b
+source-git-commit: 5e072a87480c326d6ae9235cf425e63ec9199684
 workflow-type: tm+mt
-source-wordcount: '134'
+source-wordcount: '125'
 ht-degree: 0%
 
 ---
 
 # Cacheopties op laag niveau
 
-De toepassing Commerce gebruikt een laag niveau [cachegeheugen](https://glossary.magento.com/cache) [voorzijde](https://glossary.magento.com/frontend) en [achterste](https://glossary.magento.com/backend) om toegang te verlenen tot de cacheopslag.
+De toepassing van de Handel gebruikt een laag-vlakke voorzijde van het geheime voorgeheugen en achterkant om toegang tot de geheim voorgeheugenopslag te verlenen.
 
 ## Voorste cache op laag niveau
 

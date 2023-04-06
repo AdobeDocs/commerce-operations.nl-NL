@@ -1,9 +1,9 @@
 ---
 title: Configuratiewaarden instellen
 description: Leer hoe u configuratiewaarden instelt en waarden wijzigt die zijn vergrendeld in Beheer.
-source-git-commit: cb8edb8de8f8419e9992b180ea927ba55cbd839b
+source-git-commit: 5e072a87480c326d6ae9235cf425e63ec9199684
 workflow-type: tm+mt
-source-wordcount: '985'
+source-wordcount: '982'
 ht-degree: 0%
 
 ---
@@ -30,7 +30,7 @@ U kunt waarden instellen op de volgende tijdstippen:
 
 - Alvorens u Handel installeert, kunt u configuratiewaarden voor het standaardwerkingsgebied slechts plaatsen, omdat het het enige geldige werkingsgebied is.
 
-- Nadat u Commerce hebt geïnstalleerd, kunt u configuratiewaarden instellen voor elke website of [winkelweergave](https://glossary.magento.com/store-view) bereik.
+- Nadat u Commerce hebt geïnstalleerd, kunt u configuratiewaarden instellen voor elke website of weergavebereik opslaan.
 
 Gebruik de volgende opdrachten:
 

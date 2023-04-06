@@ -1,9 +1,9 @@
 ---
 title: Meerdere websites instellen, weergaven opslaan en opslaan in de beheerfunctie
 description: Vorm extra websites, opslag, en opslagmeningen in Admin van de Handel.
-source-git-commit: 6a3995dd24f8e3e8686a8893be9693581d31712b
+source-git-commit: 5e072a87480c326d6ae9235cf425e63ec9199684
 workflow-type: tm+mt
-source-wordcount: '1016'
+source-wordcount: '1013'
 ht-degree: 0%
 
 ---
@@ -24,7 +24,7 @@ Voor deze taak moet u een hoofdcategorie (en desgewenst extra categorieën) voor
 
 ## Stap 1: Hoofdcategorieën maken
 
-Het maken van een hoofdcategorie is optioneel, maar in deze zelfstudie in het dialoogvenster [event](https://glossary.magento.com/event) u wilt dat elke website een unieke hoofdcategorie heeft. U kunt desgewenst extra categorieën maken.
+Het maken van een hoofdcategorie is optioneel, maar in deze zelfstudie wordt getoond hoe u dit kunt doen als u wilt dat elke website een unieke hoofdcategorie heeft. U kunt desgewenst extra categorieën maken.
 
 Een hoofdcategorie maken:
 

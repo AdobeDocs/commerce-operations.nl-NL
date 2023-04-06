@@ -1,9 +1,9 @@
 ---
 title: Configureer de [!DNL Data Migration Tool]
 description: Meer informatie over de twee methoden voor het configureren van de [!DNL Data Migration Tool] gegevens tussen Magento 1 en Magento 2 over te dragen.
-source-git-commit: d263e412022a89255b7d33b267b696a8bb1bc8a2
+source-git-commit: 5e072a87480c326d6ae9235cf425e63ec9199684
 workflow-type: tm+mt
-source-wordcount: '792'
+source-wordcount: '789'
 ht-degree: 0%
 
 ---
@@ -203,7 +203,7 @@ Toewijzingsbestanden voor ondersteunde Magento-versies bevinden zich in submappe
 
 De toewijzingsbestanden gebruiken:
 
-1. Kopiëren van `<your Magento 2 install dir>/vendor/magento/data-migration-tool/etc/<migration edition>/<ce or version>/` tot `<your Magento 2 install dir>/app/code/Vendor/Migration/etc/<migration edition>/<ce or version>/` en verwijder de `.dist` [extension](https://glossary.magento.com/extension).
+1. Kopiëren van `<your Magento 2 install dir>/vendor/magento/data-migration-tool/etc/<migration edition>/<ce or version>/` tot `<your Magento 2 install dir>/app/code/Vendor/Migration/etc/<migration edition>/<ce or version>/` en verwijder de `.dist` extensie.
 
 1. Het pad naar het zojuist gekopieerde bestand in het dialoogvenster `<options>` knooppunt van `config.xml`. Het bijgewerkte pad moet een van de volgende zijn:
 

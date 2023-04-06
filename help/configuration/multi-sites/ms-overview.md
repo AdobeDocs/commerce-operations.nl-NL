@@ -1,9 +1,9 @@
 ---
 title: Meerdere websites of winkels
 description: Leer hoe u meerdere websites kunt starten of winkelweergaven kunt implementeren met verschillende opties, domeinen en inhoud.
-source-git-commit: 6a3995dd24f8e3e8686a8893be9693581d31712b
+source-git-commit: 5e072a87480c326d6ae9235cf425e63ec9199684
 workflow-type: tm+mt
-source-wordcount: '439'
+source-wordcount: '433'
 ht-degree: 0%
 
 ---
@@ -19,11 +19,11 @@ Met één exemplaar van de Adobe Commerce-software kunt u meerdere websites star
 - Producten
 - Valuta
 
-Deze flexibele oplossing maakt één commerciële codebase mogelijk en [Beheer](https://glossary.magento.com/magento-admin) om verschillende winkels te beheren en weer te geven. U configureert de websites, winkels en opslagweergaven in de beheerfunctie. Gebruik bepaalde variabelen in virtuele gastheren om de toepassing van de Handel te beginnen gebruikend deze websites of opslagmeningen.
+Deze flexibele oplossing laat één Koophandel codebase en Admin toe om verschillende opslag te beheren en te tonen. U configureert de websites, winkels en opslagweergaven in de beheerfunctie. Gebruik bepaalde variabelen in virtuele gastheren om de toepassing van de Handel te beginnen gebruikend deze websites of opslagmeningen.
 
 Doorgaans worden winkels met verschillende opties in verschillende domeinen ingesteld. U kunt bijvoorbeeld een set categorieën en producten op een bepaald domein plaatsen en een andere set categorieën en producten op een afzonderlijk domein in een andere taal.
 
-U vormt de websites, de opslag, en de opslagmeningen in de Handel [Beheer](https://glossary.magento.com/admin). Gebruik de `MAGE_RUN_TYPE` en `MAGE_RUN_CODE` variabelen in virtuele gastheren om de toepassing van de Handel te beginnen gebruikend deze websites of opslagmeningen.
+U vormt de websites, de opslag, en de opslagmeningen in Admin van de Handel. Gebruik de `MAGE_RUN_TYPE` en `MAGE_RUN_CODE` variabelen in virtuele gastheren om de toepassing van de Handel te beginnen gebruikend deze websites of opslagmeningen.
 
 Overweeg de volgende termen:
 

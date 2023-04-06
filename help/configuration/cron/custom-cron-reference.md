@@ -1,9 +1,9 @@
 ---
 title: Referentie aangepaste uitsnijdtaak en uitsnijdgroep
 description: Leer hoe u crons aanpast met gebruik van uitsnijdgroepen.
-source-git-commit: 24f6d30fb42c2bed6dbb85a4ce7acf9145a74162
+source-git-commit: 5e072a87480c326d6ae9235cf425e63ec9199684
 workflow-type: tm+mt
-source-wordcount: '535'
+source-wordcount: '529'
 ht-degree: 0%
 
 ---
@@ -11,7 +11,7 @@ ht-degree: 0%
 
 # Referentie voor curven aanpassen
 
-Dit onderwerp helpt u opstellings manuscripten en naar keuze bouwgroepen voor douanemodules. Als uw [module](https://glossary.magento.com/module) moet taken periodiek plannen, moet u opstelling een contab voor die module. A _crontab_ is een uitsnijdtaakconfiguratie.
+Dit onderwerp helpt u opstellings manuscripten en naar keuze bouwgroepen voor douanemodules. Als uw douanemodule taken periodiek moet plannen, moet u opstelling een contab voor die module. A _crontab_ is een uitsnijdtaakconfiguratie.
 
 U kunt desgewenst een aangepaste groep instellen, waarmee u onder andere snijtaken die in die groep zijn gedefinieerd, onafhankelijk van andere snijtaken kunt uitvoeren.
 
@@ -86,7 +86,7 @@ Zie als voorbeeld [Magento_Customer crontab.xml](https://github.com/magento/mage
 
 ### Opties voor de groep Uitsnijden opgeven
 
-U kunt een nieuwe groep declareren en de configuratieopties ervan opgeven (die allemaal worden uitgevoerd) [winkelweergave](https://glossary.magento.com/store-view) bereik) via de `cron_groups.xml` bestand, bevindt zich in:
+U kunt een nieuwe groep declareren en de configuratieopties ervan opgeven (die allemaal worden uitgevoerd in het bereik van de winkelweergave) via het dialoogvenster `cron_groups.xml` bestand, bevindt zich in:
 
 ```text
 <your component base dir>/<vendorname>/module-<name>/etc/cron_groups.xml

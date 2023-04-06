@@ -1,9 +1,9 @@
 ---
 title: Onderhoudsmodusopties voor upgrade
 description: Maak een aangepaste pagina voor de onderhoudsmodus die uw klanten op uw Adobe Commerce- of Magento Open Source-winkel zien wanneer u een upgrade uitvoert.
-source-git-commit: bbc412f1ceafaa557d223aabfd4b2a381d6ab04a
+source-git-commit: 5e072a87480c326d6ae9235cf425e63ec9199684
 workflow-type: tm+mt
-source-wordcount: '384'
+source-wordcount: '381'
 ht-degree: 0%
 
 ---
@@ -104,7 +104,7 @@ Deze sectie bespreekt hoe te om een pagina van het douaneonderhoud tot stand te 
 
 Verkeer omleiden naar een aangepaste onderhoudspagina:
 
-1. Een teksteditor gebruiken om het dialoogvenster [nginx](https://glossary.magento.com/nginx) configuratiebestand dat uw serverblok bevat.
+1. Gebruik een tekstverwerker om het configuratiebestand van de nginx te openen dat uw serverblok bevat.
 1. Voeg het volgende toe aan het serverblok (`server` uitsluitend ter verduidelijking wordt vermeld; voeg geen tweede serverblok toe).
 
    De volgende lijsten van gewenste personen IP adres 192.0.2.110 en 192.0.2.115 op een systeem waar Magento binnen geïnstalleerd is `/var/www/html/magento2`:

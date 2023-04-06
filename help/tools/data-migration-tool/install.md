@@ -1,9 +1,9 @@
 ---
 title: Installeer de [!DNL Data Migration Tool]
 description: Leer hoe u de [!DNL Data Migration Tool] gegevens tussen Magento 1 en Magento 2 over te dragen.
-source-git-commit: d263e412022a89255b7d33b267b696a8bb1bc8a2
+source-git-commit: 5e072a87480c326d6ae9235cf425e63ec9199684
 workflow-type: tm+mt
-source-wordcount: '378'
+source-wordcount: '375'
 ht-degree: 0%
 
 ---
@@ -27,7 +27,7 @@ U kunt de volgende methoden gebruiken om uw versie van Magento te verifiëren:
 
 ### Composer-pakket
 
-Als u de Magento-software hebt gedownload met een [Composer](https://glossary.magento.com/composer) de metapack, gaat het volgende bevel in:
+Als u de Magento-software hebt gedownload met een Composer-metapakket, voert u de volgende opdracht in:
 
 ```bash
 php <magento_root>/bin/magento --version

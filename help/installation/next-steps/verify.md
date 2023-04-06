@@ -1,9 +1,9 @@
 ---
 title: De installatie controleren
 description: Voer de volgende stappen uit om te bevestigen dat uw installatie op de locatie van Adobe Commerce of Magento Open Source is gelukt.
-source-git-commit: f6f438b17478505536351fa20a051d355f5b157a
+source-git-commit: 5e072a87480c326d6ae9235cf425e63ec9199684
 workflow-type: tm+mt
-source-wordcount: '271'
+source-wordcount: '259'
 ht-degree: 0%
 
 ---
@@ -11,7 +11,7 @@ ht-degree: 0%
 
 # De installatie controleren
 
-Ga naar de [storefront](https://glossary.magento.com/storefront) in een webbrowser. Stel bijvoorbeeld dat uw installatielocatie [URL](https://glossary.magento.com/url) is `http://www.example.com`, typt u deze in het adres of de locatiebalk van uw browser.
+Ga naar de winkel in een webbrowser. Als de basis-URL van de installatie bijvoorbeeld `http://www.example.com`, typt u deze in het adres of de locatiebalk van uw browser.
 
 In de volgende afbeelding ziet u een voorbeeldwinkelpagina. Als het als volgt toont, was uw installatie een succes!
 
@@ -29,9 +29,9 @@ Als de pagina een `404 (Not Found)` fout of geeft geen stijlen weer, zie [proble
 
 ## De beheerder controleren
 
-Ga naar de [Beheer](https://glossary.magento.com/magento-admin) in een webbrowser. Als de basis-URL van de installatie bijvoorbeeld `http://www.example.com`, en de Admin URI is `admin_au1nT`, enter `http://www.example.com/admin_au1nT` in het adres of de locatiebalk van uw browser.
+Ga naar Admin in een webbrowser. Als de basis-URL van de installatie bijvoorbeeld `http://www.example.com`, en de Admin URI is `admin_au1nT`, enter `http://www.example.com/admin_au1nT` in het adres of de locatiebalk van uw browser.
 
-(De [Beheer](https://glossary.magento.com/admin) URI wordt opgegeven door de waarde van de `backend-frontname` installatieparameter.)
+(De Admin-URI wordt opgegeven door de waarde van de `backend-frontname` installatieparameter.)
 
 Meld u desgevraagd aan als beheerder.
 

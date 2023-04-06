@@ -1,9 +1,9 @@
 ---
 title: Instellingen voor gegevensmigratie
 description: Leer hoe u begint met het migreren van instellingen van Magento 1 naar Magento 2 met de opdracht [!DNL Data Migration Tool].
-source-git-commit: d263e412022a89255b7d33b267b696a8bb1bc8a2
+source-git-commit: 5e072a87480c326d6ae9235cf425e63ec9199684
 workflow-type: tm+mt
-source-wordcount: '298'
+source-wordcount: '295'
 ht-degree: 0%
 
 ---
@@ -44,7 +44,7 @@ Waar:
 
 >[!NOTE]
 >
->Dit bevel migreert niet alle configuratiemontages. Alle instellingen in de Magento 2 controleren [Beheer](https://glossary.magento.com/admin) voordat u verdergaat.
+>Dit bevel migreert niet alle configuratiemontages. Verifieer alle montages in Magento 2 Admin alvorens te werk te gaan.
 
 
 De `Migration completed` bericht wordt weergegeven nadat de instellingen zijn overgebracht.

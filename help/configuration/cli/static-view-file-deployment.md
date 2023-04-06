@@ -1,9 +1,9 @@
 ---
 title: Statische weergavebestanden gebruiken
 description: Leer om statische dossiers aan het het dossiersysteem van de Handel tijdens productiemodus te schrijven.
-source-git-commit: 0d106b36f479ecf2eda3fecf6740b28d4b6793eb
+source-git-commit: 5e072a87480c326d6ae9235cf425e63ec9199684
 workflow-type: tm+mt
-source-wordcount: '1135'
+source-wordcount: '1132'
 ht-degree: 0%
 
 ---
@@ -13,7 +13,7 @@ ht-degree: 0%
 
 {{file-system-owner}}
 
-Met de opdracht voor de implementatie van statische weergavebestanden kunt u schrijven [statische bestanden](https://glossary.magento.com/static-files) aan het systeem van het dossier van de Handel wanneer de software van de Handel wordt geplaatst [productiemodus](../bootstrap/application-modes.md#production-mode).
+Het statische bevel van de de plaatsing van meningsdossiers laat u toe om statische dossiers aan het het dossiersysteem van de Handel te schrijven wanneer de software van de Handel wordt geplaatst voor [productiemodus](../bootstrap/application-modes.md#production-mode).
 
 De term _statisch weergavebestand_ verwijst naar het volgende:
 
@@ -57,7 +57,7 @@ De volgende lijst verklaart de parameters en de waarden van dit bevel.
 | `--language (-l)` | Genereer bestanden alleen voor de opgegeven talen. Als er geen optie is opgegeven, worden standaard bestanden voor alle ISO-639-taalcodes gegenereerd. U kunt de naam van één taalcode tegelijk opgeven. Standaardwaarde is **alles**.<br>Bijvoorbeeld: `--language en_US --language es_ES` | Nee |
 | `--exclude-language` | Genereer bestanden voor de opgegeven taalcodes. Als er geen optie is opgegeven, wordt standaard niets uitgesloten. U kunt de naam van één taalcode of een komma-gescheiden lijst van taalcodes specificeren. Standaardwaarde is **none**. | Nee |
 | `--theme <theme>` | Thema&#39;s waarvoor statische inhoud moet worden geïmplementeerd. Standaardwaarde is **alles**.<br>Bijvoorbeeld: `--theme Magento/blank --theme Magento/luma` | Nee |
-| `--exclude-theme <theme>` | Thema&#39;s die moeten worden uitgesloten bij het implementeren van statische inhoud. Standaardwaarde is **none**.<br>Bijvoorbeeld, `--exclude-theme Magento/blank` | Nee |
+| `--exclude-theme <theme>` | Thema&#39;s die moeten worden uitgesloten bij het implementeren van statische inhoud. Standaardwaarde is **none**.<br>Bijvoorbeeld: `--exclude-theme Magento/blank` | Nee |
 | `--area (-a)` | Alleen bestanden genereren voor de opgegeven gebieden. Als er geen optie is opgegeven, worden standaard bestanden voor alle gebieden gegenereerd. Geldige waarden zijn `adminhtml` en `frontend`. Standaardwaarde is **alles**.<br>Bijvoorbeeld: `--area adminhtml` | Nee |
 | `--exclude-area` | Genereer geen bestanden voor de opgegeven gebieden. Als er geen optie is opgegeven, wordt standaard niets uitgesloten. Standaardwaarde is **none**. | Nee |
 | `--jobs (-j)` | Schakel parallelle verwerking in met het opgegeven aantal taken. De standaardwaarde is 0 (niet in parallelle processen). Standaardwaarde is **0**. | Nee |

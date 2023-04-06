@@ -1,9 +1,9 @@
 ---
 title: Stappen voor migratie na gegevens
 description: Leer welke stappen u moet ondernemen nadat u de opdracht [!DNL Data Migration Tool] om gegevens te migreren van Magento 1 naar Magento 2.
-source-git-commit: d263e412022a89255b7d33b267b696a8bb1bc8a2
+source-git-commit: 5e072a87480c326d6ae9235cf425e63ec9199684
 workflow-type: tm+mt
-source-wordcount: '77'
+source-wordcount: '74'
 ht-degree: 0%
 
 ---
@@ -13,7 +13,7 @@ ht-degree: 0%
 
 Nadat u de migratie hebt voltooid en uw nieuwe Magento 2-site grondig hebt getest, voert u de volgende taken uit:
 
-* Magento 1 in de onderhoudsmodus plaatsen en alles permanent stoppen [Beheer](https://glossary.magento.com/admin) activiteiten
+* Magento 1 in onderhoudsmodus plaatsen en alle beheeractiviteiten permanent stopzetten
 
 * Magento 2-cron-taken starten
 

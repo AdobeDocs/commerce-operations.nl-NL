@@ -1,9 +1,9 @@
 ---
 title: Wijzigingen migreren
 description: Leer hoe u alleen gegevens kunt migreren die zijn gewijzigd sinds de laatste Magento 1-gegevensmigratie met de [!DNL Data Migration Tool].
-source-git-commit: d263e412022a89255b7d33b267b696a8bb1bc8a2
+source-git-commit: 5e072a87480c326d6ae9235cf425e63ec9199684
 workflow-type: tm+mt
-source-wordcount: '359'
+source-wordcount: '350'
 ht-degree: 0%
 
 ---
@@ -13,9 +13,9 @@ ht-degree: 0%
 
 Met het gereedschap Incrementele migratie installeert u catalogustabellen (met voorvoegsel) `m2_cl_*`) en triggers (voor het bijhouden van wijzigingen) in de Magento 1-database tijdens de [migratie van gegevens](data.md). Deze overzichtstabellen en trekkers zijn essentieel om ervoor te zorgen dat u slechts de veranderingen migreert die in Magento 1 worden aangebracht sinds de laatste tijd u gegevens migreerde. Deze wijzigingen zijn:
 
-* Gegevens die klanten hebben toegevoegd via [storefront](https://glossary.magento.com/storefront) (gemaakte bestellingen, revisies en wijzigingen in klantprofielen)
+* Gegevens die klanten via winkel hebben toegevoegd (bestellingen, revisies en wijzigingen in klantprofielen)
 
-* Alle bewerkingen met bestellingen, producten en categorieën in de [Beheer](https://glossary.magento.com/magento-admin) deelvenster
+* Alle bewerkingen met bestellingen, producten en categorieën in het deelvenster Beheer
 
 >[!NOTE]
 >
@@ -54,7 +54,7 @@ Waar:
 
 In de `Delta` de [!DNL Data Migration Tool] migreert gegevens die slechts door Magento-modules worden gecreeerd en is niet verantwoordelijk voor de code of de uitbreidingen die door derdeontwikkelaars worden gemaakt. Als deze uitbreidingen gegevens in het storefront gegevensbestand creeerden en de handelaar deze gegevens in Magento 2 willen hebben — config dossiers van [!DNL Data Migration Tool] moeten worden gecreëerd en dienovereenkomstig worden gewijzigd.
 
-Als een [extension](https://glossary.magento.com/extension) heeft zijn eigen lijsten, en u moet hun veranderingen voor delta migratie volgen, deze stappen volgen:
+Als een extensie eigen tabellen heeft en u de wijzigingen voor deltabigratie moet bijhouden, voert u de volgende stappen uit:
 
 1. Voeg de te volgen tabellen toe aan de `deltalog.xml` file
 1. Maak een extra delta-klasse die de `Migration\App\Step\AbstractDelta`

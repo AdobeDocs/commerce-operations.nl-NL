@@ -1,9 +1,9 @@
 ---
 title: Optionele software
 description: Meer informatie over optionele software die u kunt installeren voor ondersteuning van installaties op locatie van Adobe Commerce en Magento Open Source.
-source-git-commit: f6f438b17478505536351fa20a051d355f5b157a
+source-git-commit: 5e072a87480c326d6ae9235cf425e63ec9199684
 workflow-type: tm+mt
-source-wordcount: '641'
+source-wordcount: '635'
 ht-degree: 0%
 
 ---
@@ -41,7 +41,7 @@ NTP installeren en configureren:
    yum search ntp
    ```
 
-1. Selecteer het pakket dat u wilt installeren. Bijvoorbeeld, `ntp.x86_64`.
+1. Selecteer het pakket dat u wilt installeren. Bijvoorbeeld: `ntp.x86_64`.
 
 1. Installeer het pakket.
 
@@ -99,7 +99,7 @@ U kunt poolservers selecteren. Als u NTP poolservers gebruikt, adviseert ntp.org
 
 ## phpinfo.php maken
 
-De [`phpinfo.php`](https://www.php.net/manual/en/function.phpinfo.php) bestand bevat een grote hoeveelheid informatie over [PHP](https://glossary.magento.com/php) en de verlengingen ervan.
+De [`phpinfo.php`](https://www.php.net/manual/en/function.phpinfo.php) bestand bevat een grote hoeveelheid informatie over PHP en zijn extensies.
 
 >[!NOTE]
 >
@@ -115,7 +115,7 @@ phpinfo();
 
 Zie voor meer informatie de [pagina met fpinfo-handleiding](https://www.php.net/manual/en/function.phpinfo.php).
 
-Voer het volgende in om de resultaten weer te geven [URL](https://glossary.magento.com/url) in het locatie- of adresveld van uw browser:
+Als u de resultaten wilt bekijken, voert u de volgende URL in het locatie- of adresveld van uw browser in:
 
 ```http
 http://<web server host or IP>/phpinfo.php

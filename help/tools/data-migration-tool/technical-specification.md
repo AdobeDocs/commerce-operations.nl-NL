@@ -1,9 +1,9 @@
 ---
 title: "[!DNL Data Migration Tool] technische specificatie"
 description: "Meer informatie over de implementatiedetails van de [!DNL Data Migration Tool] en hoe u de gegevensoverdracht tussen Magento 1 en Magento 2 kunt uitbreiden."
-source-git-commit: c56cc6d97f69770aa718333c02514ab3cfce774c
+source-git-commit: 5e072a87480c326d6ae9235cf425e63ec9199684
 workflow-type: tm+mt
-source-wordcount: '2085'
+source-wordcount: '2079'
 ht-degree: 0%
 
 ---
@@ -63,7 +63,7 @@ Het volgende diagram vertegenwoordigt de mappenstructuur van [!DNL Data Migratio
 │       │   ├── Data.php
 │       │   ├── Delta.php
 │       │   └── Settings.php
-│       ├── ResourceModel                   --- contains [adapter](https://glossary.magento.com/adapter) for connection to data storage and classes to work with structured data
+│       ├── ResourceModel                   --- contains adapter for connection to data storage and classes to work with structured data
 │       │   ├── Adapter
 │       │   │   └── Mysql.php
 │       │   ├── AbstractCollection.php
@@ -75,7 +75,7 @@ Het volgende diagram vertegenwoordigt de mappenstructuur van [!DNL Data Migratio
 │       │   ├── Source.php
 │       │   └── Structure.php
 │       ├── Config.php
-│       ├── [Exception](https://glossary.magento.com/exception).php
+│       ├── Exception.php
 │       └── Step                            --- functionality for migrating specific data
 │           ├── Eav
 │           │   ├── Data.php
@@ -342,7 +342,7 @@ In deze modus worden de meeste gegevens gemigreerd. Vóór gegevensmigratie word
 
 #### Kaartstap
 
-De stap van de kaart is verantwoordelijk voor het overbrengen van de meeste gegevens van Magento 1 aan Magento 2. Deze stap leest instructies van map.xml- dossier (in `etc/` directory). In het bestand worden de verschillen beschreven tussen gegevensstructuren van bron (Magento 1) en doel (Magento 2). Als Magento 1 tabellen of velden bevat die bij sommige horen [extension](https://glossary.magento.com/extension) die niet in Magento 2 bestaat, dan kunnen deze entiteiten hier worden geplaatst om hen door de Stap van de Kaart te negeren. Anders wordt een foutbericht weergegeven.
+De stap van de kaart is verantwoordelijk voor het overbrengen van de meeste gegevens van Magento 1 aan Magento 2. Deze stap leest instructies van map.xml- dossier (in `etc/` directory). In het bestand worden de verschillen beschreven tussen gegevensstructuren van bron (Magento 1) en doel (Magento 2). Als Magento 1 lijsten of gebieden bevat die tot één of andere uitbreiding behoren die niet in Magento 2 bestaat, dan kunnen deze entiteiten hier worden geplaatst om hen door de Stap van de Kaart te negeren. Anders wordt een foutbericht weergegeven.
 
 Kaartbestand heeft de volgende indeling:
 
@@ -464,7 +464,7 @@ Hier volgt een klassediagram van deze klassen:
 
 ## Logboekregistratie
 
-Om output van migratieproces uit te voeren en alle mogelijke niveausPSR registreerapparaat te controleren, dat in Magento wordt gebruikt, wordt toegepast. `\Migration\Logger\Logger` -klasse is geïmplementeerd om logboekfunctionaliteit te bieden. Als u het logger wilt gebruiken, moet u het injecteren via een constructor. [afhankelijkheidsinjectie](https://glossary.magento.com/dependency-injection).
+Om output van migratieproces uit te voeren en alle mogelijke niveausPSR registreerapparaat te controleren, dat in Magento wordt gebruikt, wordt toegepast. `\Migration\Logger\Logger` -klasse is geïmplementeerd om logboekfunctionaliteit te bieden. Om het logger te gebruiken, moet u het injecteren via een constructorafhankelijke injectie.
 
 ```php
 class SomeClass

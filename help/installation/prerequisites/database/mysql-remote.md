@@ -1,9 +1,9 @@
 ---
 title: Een externe MySQL-databaseverbinding instellen
 description: Voer de volgende stappen uit om een externe databaseverbinding te configureren voor installaties op locatie van Adobe Commerce en Magento Open Source.
-source-git-commit: 61638d373408d9a7c3c3a935eee61927acfac7a6
+source-git-commit: 5e072a87480c326d6ae9235cf425e63ec9199684
 workflow-type: tm+mt
-source-wordcount: '746'
+source-wordcount: '743'
 ht-degree: 0%
 
 ---
@@ -154,7 +154,7 @@ Als uw webserver is geclusterd, voert u de opdracht in op elke host van de webse
 
 Wanneer u Adobe Commerce of Magento Open Source installeert, moet u het volgende opgeven:
 
-* De basis [URL](https://glossary.magento.com/url) (ook aangeduid als de *opslagadres*) geeft de hostnaam of het IP-adres van het *webknooppunt*
+* De basis-URL (ook wel de *opslagadres*) geeft de hostnaam of het IP-adres van het *webknooppunt*
 * De host van de database is de *externe databaseserver* IP-adres (of taakverdelingsmechanisme als de databaseserver geclusterd is)
 * Gebruikersnaam database is de *lokaal webknooppunt* databasegebruiker waartoe u toegang hebt verleend
 * Databasewachtwoord is het wachtwoord van de gebruiker van het lokale webknooppunt

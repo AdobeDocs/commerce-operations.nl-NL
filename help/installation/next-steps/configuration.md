@@ -1,9 +1,9 @@
 ---
 title: De toepassing configureren
 description: Meer informatie over de configuratie na installatie die vereist is voor Adobe Commerce- en Magento Open Source-implementaties op locatie.
-source-git-commit: 639dca9ee715f2f9ca7272d3b951d3315a85346c
+source-git-commit: 5e072a87480c326d6ae9235cf425e63ec9199684
 workflow-type: tm+mt
-source-wordcount: '731'
+source-wordcount: '728'
 ht-degree: 0%
 
 ---
@@ -42,7 +42,7 @@ Als u de Apache-webserver gebruikt, moet u de weergave van herschrijvingen van p
 
 Als u meerdere webknooppunten hebt, kunt u *kan* de standaardbestandcache van de toepassing gebruiken omdat er geen synchronisatie tussen de webknooppunten is. Met andere woorden, de activiteit op één webknooppunt wordt alleen naar het bestandssysteem van dat webknooppunt geschreven. Als een volgende activiteit wordt uitgevoerd op een ander webknooppunt, kunnen er onnodige bestanden worden geschreven of kunnen er fouten optreden.
 
-Gebruik in plaats daarvan [Redis](../../configuration/cache/config-redis.md) voor beide standaardinstellingen [cachegeheugen](https://glossary.magento.com/cache) en de paginacache.
+Gebruik in plaats daarvan [Redis](../../configuration/cache/config-redis.md) voor zowel de standaardcache als de paginacache.
 
 ## Serverinstellingen
 

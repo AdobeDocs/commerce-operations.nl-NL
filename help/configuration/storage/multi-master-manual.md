@@ -1,9 +1,9 @@
 ---
 title: Master databases handmatig configureren
 description: Zie begeleiding bij het manueel vormen van de gespleten gegevensbestandoplossing.
-source-git-commit: d263e412022a89255b7d33b267b696a8bb1bc8a2
+source-git-commit: 5e072a87480c326d6ae9235cf425e63ec9199684
 workflow-type: tm+mt
-source-wordcount: '1388'
+source-wordcount: '1379'
 ht-degree: 0%
 
 ---
@@ -19,7 +19,7 @@ Als de toepassing van de Handel reeds in productie is of als u reeds douanecode 
 
 Het handmatig splitsen van databases omvat:
 
-- Maak de [uitchecken](https://glossary.magento.com/checkout) en gegevensbanken voor het beheer van bestellingen
+- De OMS-databases (Checkout and Order Management System) maken
 - Voer een reeks SQL-scripts uit die:
 
    - Externe toetsen
@@ -62,7 +62,7 @@ Adobe raadt u ten zeerste aan een back-up te maken van uw huidige database en be
 
 ## Aanvullende master databases instellen
 
-In deze sectie wordt besproken hoe u databaseinstanties voor verkoop en [aanhalingsteken](https://glossary.magento.com/quote) tabellen.
+Deze sectie bespreekt hoe te om gegevensbestandinstanties voor verkoop en citaatlijsten tot stand te brengen.
 
 **Om verkoop en OMS citaatgegevensbestanden te creëren**:
 
@@ -549,7 +549,7 @@ Zoek het blok dat begint met `'resource'` en toevoegen `'checkout'` en `'sales'`
 
 ## Referentiescripts
 
-Deze sectie bevat scripts die u kunt uitvoeren en waarmee een volledige lijst met desbetreffende tabellen wordt afgedrukt zonder dat er handelingen op worden uitgevoerd. U kunt ze gebruiken om te zien welke tabellen worden beïnvloed voordat u handmatig databases splitst. Dit kan handig zijn als u extensies gebruikt die de [databaseschema](https://glossary.magento.com/database-schema).
+Deze sectie bevat scripts die u kunt uitvoeren en waarmee een volledige lijst met desbetreffende tabellen wordt afgedrukt zonder dat er handelingen op worden uitgevoerd. U kunt ze gebruiken om te zien welke tabellen worden beïnvloed voordat u handmatig databases splitst. Dit kan handig zijn als u extensies gebruikt die het databaseschema aanpassen.
 
 Deze scripts gebruiken:
 

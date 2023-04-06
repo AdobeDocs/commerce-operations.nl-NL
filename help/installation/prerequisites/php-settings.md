@@ -1,9 +1,9 @@
 ---
 title: PHP-instellingen
 description: Volg deze stappen om vereiste PHP uitbreidingen te installeren en vereiste PHP montages voor op-gebouw installaties van Adobe Commerce en Magento Open Source te vormen.
-source-git-commit: df8240b71efe992bc1c0655aa30c32778297a3c6
+source-git-commit: 5e072a87480c326d6ae9235cf425e63ec9199684
 workflow-type: tm+mt
-source-wordcount: '810'
+source-wordcount: '804'
 ht-degree: 0%
 
 ---
@@ -11,7 +11,7 @@ ht-degree: 0%
 
 # PHP-instellingen
 
-In dit onderwerp wordt besproken hoe u de vereiste instellingen moet instellen [PHP](https://glossary.magento.com/php) opties.
+In dit onderwerp wordt besproken hoe u vereiste PHP-opties kunt instellen.
 
 >[!NOTE]
 >
@@ -25,7 +25,7 @@ Bij de meeste Linux-versies is PHP standaard geïnstalleerd. In dit onderwerp wo
 php -v
 ```
 
-Indien [PHP](https://glossary.magento.com/php) is geïnstalleerd, een bericht gelijkend op de volgende vertoningen:
+Als PHP is geïnstalleerd, wordt een bericht weergegeven dat lijkt op het volgende:
 
 ```terminal
 PHP 7.4.0 (cli) (built: Aug 14 2019 16:42:46) ( NTS )

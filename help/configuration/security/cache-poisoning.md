@@ -1,9 +1,9 @@
 ---
 title: Cachevergiftiging voorkomen
 description: Leer hoe te om paginacachevergiftiging voor uw handels winkel te verhinderen.
-source-git-commit: 6a3995dd24f8e3e8686a8893be9693581d31712b
+source-git-commit: 5e072a87480c326d6ae9235cf425e63ec9199684
 workflow-type: tm+mt
-source-wordcount: '266'
+source-wordcount: '260'
 ht-degree: 0%
 
 ---
@@ -11,7 +11,7 @@ ht-degree: 0%
 
 # Cachevergiftiging voorkomen
 
-In dit onderwerp wordt besproken hoe u kunt voorkomen [cachegeheugen](https://glossary.magento.com/cache) vergiftiging als u de Microsoft Internet Information Server (IIS)-webserver gebruikt. _Cachevergiftiging_ is een methode om de inhoud van het cachegeheugen te wijzigen en verschillende pagina&#39;s van dezelfde site op te nemen. Het is bijvoorbeeld mogelijk om een HTTP 404 (Niet gevonden) foutpagina te injecteren in plaats van een goedaardige pagina (bijvoorbeeld de [storefront](https://glossary.magento.com/storefront) homepage), die tot een potentiële ontkenning-van-dienst (Dos) kan leiden. De URL&#39;s van de kwaadaardige pagina worden in het cachegeheugen opgeslagen door Varnish of Redis, vandaar de naam _paginacache vergiftigt_.
+Dit onderwerp bespreekt hoe te om geheim voorgeheugenvergiftiging te verhinderen als u de Webserver van de Informatie van Microsoft Internet van de Server (IIS) gebruikt. _Cachevergiftiging_ is een methode om de inhoud van het cachegeheugen te wijzigen en verschillende pagina&#39;s van dezelfde site op te nemen. Het is bijvoorbeeld mogelijk om een HTTP 404 (Niet gevonden) foutenpagina in plaats van één of andere goedaardige pagina (bijvoorbeeld, de storefront homepage) te injecteren, die tot een potentiële ontkenning-van-dienst (DoS) kan leiden. De URL&#39;s van de kwaadaardige pagina worden in het cachegeheugen opgeslagen door Varnish of Redis, vandaar de naam _paginacache vergiftigt_.
 
 Deze typen aanvallen kunnen moeilijk te detecteren zijn omdat ze niet resulteren in fouten in webserverlogbestanden.
 

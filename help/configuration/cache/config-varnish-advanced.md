@@ -1,9 +1,9 @@
 ---
 title: Geavanceerde Varnish-configuratie
 description: Veelzijdige functies configureren, zoals health check, respijtmodi en verfmodi.
-source-git-commit: 974c3480ccf5d1e1a5308e1bd2b27fcfaf3c72b2
+source-git-commit: 5e072a87480c326d6ae9235cf425e63ec9199684
 workflow-type: tm+mt
-source-wordcount: '907'
+source-wordcount: '892'
 ht-degree: 0%
 
 ---
@@ -31,7 +31,7 @@ De handel bepaalt de volgende standaardgezondheidscontrole:
     }
 ```
 
-Elke 5 seconden, roept deze gezondheidscontrole `pub/health_check.php` script. Dit script controleert de beschikbaarheid van de server, elke database en Redis (indien geïnstalleerd). Het script moet een reactie binnen 2 seconden retourneren. Wanneer het script bepaalt dat een van deze bronnen is ingedrukt, wordt een 500 HTTP-foutcode geretourneerd. Als deze foutcode wordt ontvangen in zes van de tien pogingen, wordt de [achterste](https://glossary.magento.com/backend) wordt als ongezond beschouwd.
+Elke 5 seconden, roept deze gezondheidscontrole `pub/health_check.php` script. Dit script controleert de beschikbaarheid van de server, elke database en Redis (indien geïnstalleerd). Het script moet een reactie binnen 2 seconden retourneren. Wanneer het script bepaalt dat een van deze bronnen is ingedrukt, wordt een 500 HTTP-foutcode geretourneerd. Als deze foutcode wordt ontvangen in zes van de tien pogingen, wordt de backend als ongezond beschouwd.
 
 De `health_check.php` het script bevindt zich in het dialoogvenster `pub` directory. Als de hoofdmap van de handel `pub`en zorg ervoor dat u het pad in het dialoogvenster `url` parameter van `/pub/health_check.php` tot `health_check.php`.
 
@@ -39,7 +39,7 @@ Zie voor meer informatie de [Varnish health checks](https://varnish-cache.org/do
 
 ## Respijtmodus
 
-Met de modus Grace kan Varnish een object in [cachegeheugen](https://glossary.magento.com/cache) boven de TTL-waarde. Varnish kan dan de verlopen (verouderd) inhoud dienen terwijl het een nieuwe versie haalt. Dit verbetert de stroom van verkeer en vermindert ladingstijden. Het wordt in de volgende situaties gebruikt:
+Met de modus Grace kan Varnish een object in cache boven de TTL-waarde houden. Varnish kan dan de verlopen (verouderd) inhoud dienen terwijl het een nieuwe versie haalt. Dit verbetert de stroom van verkeer en vermindert ladingstijden. Het wordt in de volgende situaties gebruikt:
 
 - Wanneer de achtergrond van de Handel gezond is maar een verzoek langer duurt dan normaal
 - Als de terugval van de Handel niet gezond is.
@@ -48,7 +48,7 @@ De `vcl_hit` subroutine definieert hoe Varnish reageert op een aanvraag voor obj
 
 ### Wanneer de steun van de Handel gezond is
 
-Wanneer uit de gezondheidscontroles blijkt dat de handelsachterstand gezond is, controleert Varnish of de tijd in de respijtperiode blijft. De standaardrespijtperiode is 300 seconden, maar een handelaar kan de waarde van de [Beheer](https://glossary.magento.com/admin) zoals beschreven in [Handel configureren voor gebruik van Varnish](configure-varnish-commerce.md). Als de respijtperiode niet is verlopen, levert Varnish de schaalinhoud en vernieuwt asynchroon het object van de Commerce-server. Als de respijtperiode is verlopen, levert Varnish de schaalinhoud en wordt het object synchroon vernieuwd vanaf de achtergrond van de Handel.
+Wanneer uit de gezondheidscontroles blijkt dat de handelsachterstand gezond is, controleert Varnish of de tijd in de respijtperiode blijft. De standaardrespijtperiode is 300 seconden, maar een handelaar kan de waarde van Admin instellen zoals beschreven in [Handel configureren voor gebruik van Varnish](configure-varnish-commerce.md). Als de respijtperiode niet is verlopen, levert Varnish de schaalinhoud en vernieuwt asynchroon het object van de Commerce-server. Als de respijtperiode is verlopen, levert Varnish de schaalinhoud en wordt het object synchroon vernieuwd vanaf de achtergrond van de Handel.
 
 De maximumhoeveelheid tijd dat Varnish een stapelvoorwerp dient is de som respijtperiode (300 seconden door gebrek) en de waarde van TTL (86400 seconden door gebrek).
 
@@ -74,7 +74,7 @@ Eén computer aanwijzen als primaire installatie. Installeer op deze computer de
 
 Op alle andere machines, moet de instantie van de Handel toegang hebben tot het primaire gegevensbestand mySQL van de machine. De secundaire machines moeten ook toegang hebben tot de bestanden van de primaire instantie van de Handel.
 
-Alternatief, [statische bestanden](https://glossary.magento.com/static-files) versioning kan op alle computers worden uitgeschakeld. Dit is toegankelijk via de beheerder onder **Winkels** > Instellingen > **Configuratie** > **Geavanceerd** > **Ontwikkelaar** > **Instellingen Statische bestanden** > **Statische bestanden ondertekenen** = **Nee**.
+U kunt het versieren van statische bestanden ook op alle computers uitschakelen. Dit is toegankelijk via de beheerder onder **Winkels** > Instellingen > **Configuratie** > **Geavanceerd** > **Ontwikkelaar** > **Instellingen Statische bestanden** > **Statische bestanden ondertekenen** = **Nee**.
 
 Tot slot moeten alle instanties van de Handel in productiemodus zijn. Voordat Varnish begint, wist u de cache bij elke instantie. Ga in Beheer naar **Systeem** > Gereedschappen > **Cachebeheer** en klik op **Magento-cache leegmaken**. U kunt ook de volgende opdracht uitvoeren om de cache te wissen:
 
@@ -89,7 +89,7 @@ De Saint-mode maakt geen deel uit van het grootste Varnish-pakket. Het is een ap
 - [Varnish 6.4 installeren](https://varnish-cache.org/docs/6.4/installation/install.html)
 - [Varnish 6.0 installeren](https://varnish-cache.org/docs/6.0/installation/install.html) (LTS)
 
-Nadat u opnieuw compileert, kunt u de wijze van Saint installeren [module](https://glossary.magento.com/module). Voer in het algemeen de volgende stappen uit:
+Nadat u opnieuw compileert, kunt u de Sint-modusmodule installeren. Voer in het algemeen de volgende stappen uit:
 
 1. De broncode ophalen uit [Varnish modules](https://github.com/varnish/varnish-modules). Kloont de Git-versie (master versie) omdat de 0.9.x-versie een broncodefout bevat.
 1. Bouw de broncode met autotools:

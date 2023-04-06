@@ -1,9 +1,9 @@
 ---
 title: Installatie van productiesysteem
 description: Leer hoe u een productiesysteem instelt voor de toepassing Commerce.
-source-git-commit: d263e412022a89255b7d33b267b696a8bb1bc8a2
+source-git-commit: 5e072a87480c326d6ae9235cf425e63ec9199684
 workflow-type: tm+mt
-source-wordcount: '379'
+source-wordcount: '376'
 ht-degree: 0%
 
 ---
@@ -29,7 +29,7 @@ Je kunt één productiesysteem hebben. Alle volgende waarden moeten waar zijn:
 
 Een productiemachine instellen:
 
-1. Na het installeren van Handel of het trekken van het uit broncontrole, login aan de productieserver als, of schakelaar aan [eigenaar van bestandssysteem](https://glossary.magento.com/magento-file-system-owner).
+1. Na het installeren van Handel of het trekken van het uit broncontrole, login aan de productieserver als, of schakelaar aan, de eigenaar van het dossiersysteem.
 1. Maken `~/.ssh/.composer/auth.json` als u dat nog niet hebt gedaan.
 
    Maak de map:

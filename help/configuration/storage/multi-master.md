@@ -1,9 +1,9 @@
 ---
 title: Oplossing voor gesplitste databaseprestaties
 description: Lees over de gesplitste databaseoplossing voor Adobe Commerce en Magento Open Source.
-source-git-commit: d263e412022a89255b7d33b267b696a8bb1bc8a2
+source-git-commit: 5e072a87480c326d6ae9235cf425e63ec9199684
 workflow-type: tm+mt
-source-wordcount: '632'
+source-wordcount: '626'
 ht-degree: 0%
 
 ---
@@ -46,7 +46,7 @@ Adobe Commerce gebruikt drie master databases en een configureerbaar aantal slav
 Vanwege de manier waarop de gesplitste oplossing voor databaseprestaties is ontworpen, zijn uw aangepaste code en geïnstalleerde componenten _kan_ Voer een van de volgende handelingen uit:
 
 - Rechtstreeks naar de database schrijven (in plaats daarvan moet u de Adobe Commerce-databaseinterface gebruiken)
-- JOINs gebruiken die de verkoop beïnvloeden of [aanhalingsteken](https://glossary.magento.com/quote) databases
+- JOINs van het gebruik die de verkoop of citaatgegevensbestanden beïnvloeden
 - Externe sleutels gebruiken voor tabellen in de databases voor uitchecken, verkopen of hoofddatabases
 
 >[!WARNING]
@@ -76,7 +76,7 @@ Dit betekent ook dat u:
 
 De gespleten gegevensbestand vereist u aan opstelling drie master gegevensbestanden MySQL op om het even welke gastheer (alle drie op de server van de Handel, elk gegevensbestand op een afzonderlijke server, etc.). Dit zijn de _master_ databanken en worden als volgt gebruikt:
 
-- Eén master database voor [uitchecken](https://glossary.magento.com/checkout) tabellen
+- Eén master database voor uitchecktabellen
 - Eén master database voor verkooptabellen (ook wel _Orderbeheersysteem_, of _OMS_, tabellen)
 - Één master gegevensbestand voor de rest van Commerce 2 toepassingslijsten
 

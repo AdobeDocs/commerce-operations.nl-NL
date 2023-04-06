@@ -1,9 +1,9 @@
 ---
 title: Vereisten voor implementatie
 description: Zie een lijst van eerste vereisten voor het opstellen van Handel in een ontwikkeling, bouwt, of productiesysteem.
-source-git-commit: 6a3995dd24f8e3e8686a8893be9693581d31712b
+source-git-commit: 5e072a87480c326d6ae9235cf425e63ec9199684
 workflow-type: tm+mt
-source-wordcount: '164'
+source-wordcount: '161'
 ht-degree: 0%
 
 ---
@@ -15,7 +15,7 @@ Bestandsmachtigingen en eigendom moeten consistent zijn in alle ontwikkelings-, 
 
 - Alle volgende kenmerken:
 
-   - Dezelfde instelling [eigenaar van bestandssysteem](https://glossary.magento.com/magento-file-system-owner) gebruikersnaam op alle systemen
+   - Dezelfde gebruikersnaam voor de eigenaar van het bestandssysteem instellen op alle systemen
    - Zorg ervoor dat de webserver op alle systemen op dezelfde gebruiker wordt uitgevoerd
    - Zorg ervoor dat de eigenaar van het bestandssysteem deel uitmaakt van de webservergroep op alle systemen
 

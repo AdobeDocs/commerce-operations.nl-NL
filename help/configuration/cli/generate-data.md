@@ -1,10 +1,10 @@
 ---
 title: Gegevens genereren voor het testen van prestaties
 description: Leer hoe u een grote hoeveelheid gegevens genereert die u kunt gebruiken voor het testen van de prestaties.
-source-git-commit: ee2e446edf79efcd7cbbd67248f8e7ece06bfefd
+source-git-commit: 5e072a87480c326d6ae9235cf425e63ec9199684
 workflow-type: tm+mt
-source-wordcount: '764'
-ht-degree: 9%
+source-wordcount: '749'
+ht-degree: 8%
 
 ---
 
@@ -32,18 +32,18 @@ De volgende tabel bevat details over de profielen van de gegevensgenerator: klei
 | `websites` | 1 | 3 | 25 | 5 | 5 |
 | `store_groups` | 1 | 3 | 25 | 5 | 5 |
 | `store_views` | 1 | 3 | 50 | 5 | 5 |
-| `simple_products` | 800 | 24 000 | 4 000 | 300 000 | 600 000 |
+| `simple_products` | 800 | 24,000 | 4,000 | 300,000 | 600,000 |
 | `configurable_products` | 16 met 24 opties | 640 met 24 opties | 800 met 24 opties en 79 met 200 opties | 8.000 met 24 opties | 16.000 met 24 opties |
 | `product_images` | 100 afbeeldingen / 3 afbeeldingen per product | 1000 afbeeldingen / 3 afbeeldingen per product | 1000 afbeeldingen / 3 afbeeldingen per product | 2000 afbeeldingen / 3 afbeeldingen per product | 2000 afbeeldingen / 3 afbeeldingen per product |
-| `categories` | 30 | 300 | 100 | 3 000 | 6 000 |
+| `categories` | 30 | 300 | 100 | 3,000 | 6,000 |
 | `categories_nesting_level` | 3 | 3 | 3 | 5 | 5 |
 | `catalog_price_rules` | 20 | 20 | 20 | 20 | 20 |
 | `catalog_target_rules` | 5 | 5 | 5 | 5 | 5 |
 | `cart_price_rules` | 20 | 20 | 20 | 20 | 20 |
 | `cart_price_rules_floor` | 2 | 2 | 2 | 2 | 2 |
-| `customers` | 200 | 2 000 | 2 000 | 5 000 | 10 000 |
-| `tax rates` | 130 | 40 000 | 40 000 | 40 000 | 40 000 |
-| `orders` | 80 | 50 000 | 50 000 | 100 000 | 150 000 |
+| `customers` | 200 | 2,000 | 2,000 | 5,000 | 10,000 |
+| `tax rates` | 130 | 40,000 | 40,000 | 40,000 | 40,000 |
+| `orders` | 80 | 50,000 | 50,000 | 100,000 | 150,000 |
 
 ### De gegevensgenerator uitvoeren
 
@@ -100,7 +100,7 @@ Generating simple products...  done in <time>
 
 ### Admin-gebruikers
 
-Genereert [beheerder](https://glossary.magento.com/admin) gebruikers. [XML](https://glossary.magento.com/xml) profielknooppunt:
+Hiermee genereert u beheergebruikers. XML-profielknooppunt:
 
 ```xml
 <!-- Number of admin users -->
@@ -124,7 +124,7 @@ Hiermee genereert u kenmerksets met de opgegeven configuratie. XML-profielknoopp
 
 ### Bundel
 
-Genereert bundelproducten. Gegenereerde bundelselecties worden niet afzonderlijk weergegeven in het dialoogvenster [catalogus](https://glossary.magento.com/catalog). Producten worden gelijkmatig verdeeld over categorieën en websites. Indien  `assign_entities_to_all_websites` uit het profiel is ingesteld op `1`. Producten worden toegewezen aan alle websites.
+Genereert bundelproducten. Gegenereerde bundelselecties worden niet afzonderlijk weergegeven in de catalogus. Producten worden gelijkmatig verdeeld over categorieën en websites. Indien  `assign_entities_to_all_websites` uit het profiel is ingesteld op `1`. Producten worden toegewezen aan alle websites.
 
 XML-profielknooppunt:
 
@@ -162,7 +162,7 @@ Genereert prijsregels voor catalogi. XML-profielknooppunt:
 
 ### Categorieën
 
-Hiermee genereert u categorieën. Indien `assign_entities_to_all_websites` is ingesteld op `0`alle categorieën gelijkmatig over de basiscategorieën worden verdeeld; anders, worden alle categorieën toegewezen aan één wortel [categorie](https://glossary.magento.com/category).
+Hiermee genereert u categorieën. Indien `assign_entities_to_all_websites` is ingesteld op `0`alle categorieën gelijkmatig over de basiscategorieën worden verdeeld; anders, worden alle categorieën toegewezen aan één wortelcategorie.
 
 XML-profielknooppunt:
 
@@ -231,7 +231,7 @@ De volgende XML-knooppuntindelingen worden ondersteund:
    </configurable_products>
    ```
 
-- Producten genereren op basis van een dynamisch gemaakte [kenmerkset](https://glossary.magento.com/attribute-set) met een opgegeven aantal kenmerken en opties:
+- Produceren op basis van een dynamisch gemaakt kenmerk ingesteld met een opgegeven aantal kenmerken en opties:
 
    ```xml
    <configurable_products>

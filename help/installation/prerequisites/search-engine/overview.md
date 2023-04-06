@@ -1,9 +1,9 @@
 ---
 title: Voorwaarden voor zoekmachines
 description: Voer de volgende stappen uit om ondersteunde software voor zoekprogramma's te installeren en te configureren voor installaties op locatie van Adobe Commerce en Magento Open Source.
-source-git-commit: d3cfd97450164d38fd340b538099739601573d64
+source-git-commit: 5e072a87480c326d6ae9235cf425e63ec9199684
 workflow-type: tm+mt
-source-wordcount: '789'
+source-wordcount: '786'
 ht-degree: 0%
 
 ---
@@ -11,7 +11,7 @@ ht-degree: 0%
 
 # Voorwaarden voor zoekmachines
 
-Vanaf Adobe Commerce en Magento Open Source 2.4 moeten alle installaties zodanig zijn geconfigureerd dat ze worden gebruikt [Elasticsearch](https://www.elastic.co) of [OpenSearch](https://opensearch.org/) als de [catalogus](https://glossary.magento.com/catalog) zoekoplossing.
+Vanaf Adobe Commerce en Magento Open Source 2.4 moeten alle installaties zodanig zijn geconfigureerd dat ze worden gebruikt [Elasticsearch](https://www.elastic.co) of [OpenSearch](https://opensearch.org/) als zoekoplossing voor de catalogus.
 
 >[!NOTE]
 >

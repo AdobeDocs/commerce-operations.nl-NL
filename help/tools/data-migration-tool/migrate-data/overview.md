@@ -1,9 +1,9 @@
 ---
 title: Migratieoverzicht
 description: Leer hoe u begint met het migreren van gegevens van Magento 1 naar Magento 2 met de [!DNL Data Migration Tool].
-source-git-commit: d263e412022a89255b7d33b267b696a8bb1bc8a2
+source-git-commit: 5e072a87480c326d6ae9235cf425e63ec9199684
 workflow-type: tm+mt
-source-wordcount: '306'
+source-wordcount: '303'
 ht-degree: 0%
 
 ---
@@ -17,7 +17,7 @@ Volg tijdens het migratieproces de volgende algemene regels voor een geslaagde m
 
 1. **Niet gebruiken** Breng wijzigingen aan in de Magento 1 Admin, behalve voor orderbeheer (verzending, het maken van facturen en creditnota&#39;s).
 1. **Niet gebruiken** elke code wijzigen
-1. **Niet gebruiken** wijzigingen aanbrengen in de Magento 2 Admin en [storefront](https://glossary.magento.com/storefront)
+1. **Niet gebruiken** wijzigingen aanbrengen in de Magento 2 Admin en storefront
 
 >[!TIP]
 >

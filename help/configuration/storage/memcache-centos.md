@@ -1,9 +1,9 @@
 ---
 title: In cache plaatsen op CentOS
 description: In cache geplaatst op CentOS installeren en configureren.
-source-git-commit: 65060d067bbbfe139736df3800688ce897cb17be
+source-git-commit: 5e072a87480c326d6ae9235cf425e63ec9199684
 workflow-type: tm+mt
-source-wordcount: '564'
+source-wordcount: '561'
 ht-degree: 0%
 
 ---
@@ -113,7 +113,7 @@ Als het geheugen niet wordt weergegeven, start u de webserver opnieuw en vernieu
 
 ### Een memcache-test maken die bestaat uit een MySQL-database en PHP-script
 
-De test gebruikt een gegevensbestand MySQL, een lijst, en gegevens om te verifiëren u de gegevensbestandgegevens kunt terugwinnen en het in geheugen opslaan. Een PHP-script zoekt eerst naar de [cachegeheugen](https://glossary.magento.com/cache). Als het resultaat niet bestaat, vraagt het manuscript gegevensbestand. Nadat de vraag door het originele gegevensbestand is vervuld, slaat het manuscript het resultaat in memcache op, gebruikend `set` gebruiken.
+De test gebruikt een gegevensbestand MySQL, een lijst, en gegevens om te verifiëren u de gegevensbestandgegevens kunt terugwinnen en het in geheugen opslaan. Een PHP script zoekt eerst naar de cache. Als het resultaat niet bestaat, vraagt het manuscript gegevensbestand. Nadat de vraag door het originele gegevensbestand is vervuld, slaat het manuscript het resultaat in memcache op, gebruikend `set` gebruiken.
 
 [Meer informatie over deze test](https://www.digitalocean.com/community/tutorials/how-to-install-and-use-memcache-on-ubuntu-12-04)
 

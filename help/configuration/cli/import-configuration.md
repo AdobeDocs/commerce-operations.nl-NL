@@ -1,9 +1,9 @@
 ---
 title: Gegevens importeren uit configuratiebestanden
 description: Importeer Adobe Commerce-configuratie-instellingen uit configuratiebestanden.
-source-git-commit: 5c0d285717a79d654af769cb734ec385d2d4046f
+source-git-commit: 5e072a87480c326d6ae9235cf425e63ec9199684
 workflow-type: tm+mt
-source-wordcount: '515'
+source-wordcount: '503'
 ht-degree: 0%
 
 ---
@@ -66,7 +66,7 @@ In de volgende secties wordt in detail besproken welke gegevens we importeren.
 
 De handel gebruikt direct waarden in `system` in de `config.php` of `env.php` bestanden in plaats van deze in de database te importeren, omdat hiervoor enkele handelingen voor en na de verwerking nodig zijn.
 
-De waarde van het configuratiepad `web/secure/base_url` moet worden gevalideerd met [achterste](https://glossary.magento.com/backend) modellen.
+De waarde van het configuratiepad `web/secure/base_url` moet worden gevalideerd met backend-modellen.
 
 #### Achterste modellen
 
@@ -94,7 +94,7 @@ De voorgaande configuraties kunnen in de volgende modi worden geïmporteerd:
 
 >[!INFO]
 >
->We importeren de basis niet [categorie](https://glossary.magento.com/category) gekoppeld aan winkels. U moet een wortelcategorie met een opslag associëren gebruikend de Handel [Beheer](https://glossary.magento.com/admin).
+>De hoofdcategorie die aan winkels is gekoppeld, wordt niet geïmporteerd. U moet een wortelcategorie met een opslag associëren gebruikend Commerce Admin.
 
 ### Themaconfiguratie
 
@@ -104,8 +104,8 @@ De themaconfiguratie omvat alle thema&#39;s die in uw systeem van de Handel word
 
 De sleutel van serie is volledig themaweg: `area` + `theme path`
 
-Bijvoorbeeld, `frontend/Magento/luma`.
-`frontend` is gebied en `Magento/luma` is [thema](https://glossary.magento.com/theme) pad.
+Bijvoorbeeld: `frontend/Magento/luma`.
+`frontend` is gebied en `Magento/luma` is themapad.
 
 De waarde van array is gegevens over thema: code, titel, pad, bovenliggende id
 

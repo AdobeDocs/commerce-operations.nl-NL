@@ -1,9 +1,9 @@
 ---
 title: De Adobe Commerce-software ophalen
 description: Leer hoe u de Adobe Commerce- en Magento Open Source-software downloadt.
-source-git-commit: 8f05fb6fc212c2b3fda80457bbf27ecf16fb1194
+source-git-commit: 5e072a87480c326d6ae9235cf425e63ec9199684
 workflow-type: tm+mt
-source-wordcount: '377'
+source-wordcount: '374'
 ht-degree: 0%
 
 ---
@@ -62,4 +62,4 @@ UNIX-systemen vereisen `root` rechten om software zoals een webserver, PHP, te i
 
 Do *niet* installeer de toepassing in de webserverhoofdmap als de `root` omdat de webserver mogelijk niet kan communiceren met deze bestanden.
 
-U hebt `root` rechten om de [eigenaar van bestandssysteem](file-system/overview.md) en voeg die eigenaar toe aan de groep van de webserver. U gebruikt de [eigenaar van bestandssysteem](https://glossary.magento.com/magento-file-system-owner) om te worden uitgevoerd `bin/magento` opdrachten van de opdrachtregel en van insteltaken, die taken voor u plannen.
+U hebt `root` rechten om de [eigenaar van bestandssysteem](file-system/overview.md) en voeg die eigenaar toe aan de groep van de webserver. U gebruikt de eigenaar van het bestandssysteem om het bestand uit te voeren `bin/magento` opdrachten van de opdrachtregel en van insteltaken, die taken voor u plannen.

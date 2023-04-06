@@ -1,9 +1,9 @@
 ---
 title: Een beheerdersaccount maken, bewerken of ontgrendelen
 description: Voer de volgende stappen uit om de beheerdersaccount van uw Adobe Commerce- of Magento Open Source-beheertoepassing te beheren.
-source-git-commit: f6f438b17478505536351fa20a051d355f5b157a
+source-git-commit: 5e072a87480c326d6ae9235cf425e63ec9199684
 workflow-type: tm+mt
-source-wordcount: '327'
+source-wordcount: '324'
 ht-degree: 0%
 
 ---
@@ -15,7 +15,7 @@ Voordat u deze opdracht kunt gebruiken, moet u het volgende doen:
 
 - [De implementatieconfiguratie maken](deployment.md)
 - [Laat minstens de Magento_Authorization en Magento_User modules toe](manage-modules.md)
-- Maak de [databaseschema](https://glossary.magento.com/database-schema)
+- Het databaseschema maken
 
 >[!NOTE]
 >

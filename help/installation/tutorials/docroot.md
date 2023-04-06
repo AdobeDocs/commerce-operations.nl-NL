@@ -1,9 +1,9 @@
 ---
 title: Documenthoofdmap wijzigen om de beveiliging te verbeteren
 description: Ongeoorloofde browsertoegang tot Adobe Commerce- of Magento Open Source-bestandssysteem op locatie voorkomen.
-source-git-commit: 8f05fb6fc212c2b3fda80457bbf27ecf16fb1194
+source-git-commit: 5e072a87480c326d6ae9235cf425e63ec9199684
 workflow-type: tm+mt
-source-wordcount: '595'
+source-wordcount: '592'
 ht-degree: 0%
 
 ---
@@ -165,9 +165,9 @@ Het schakelen tussen wijzen is een belangrijke stap om te verifiëren dat uw ser
 
 ## 5. De winkel controleren
 
-Ga naar de [storefront](https://glossary.magento.com/storefront) in een webbrowser om te controleren of alles werkt.
+Ga naar de winkel in webbrowser om te controleren of alles werkt.
 
-1. Open een webbrowser en voer op de adresbalk de hostnaam of het IP-adres van de server in. Bijvoorbeeld, `http://192.168.33.10`.
+1. Open een webbrowser en voer op de adresbalk de hostnaam of het IP-adres van de server in. Bijvoorbeeld: `http://192.168.33.10`.
 
    In de volgende afbeelding ziet u een voorbeeldwinkelpagina. Als het als volgt toont, was uw installatie een succes!
 

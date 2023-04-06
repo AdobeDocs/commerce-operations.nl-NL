@@ -1,9 +1,9 @@
 ---
 title: Snelle start van de installatie op locatie
 description: Voer de volgende stappen uit om Adobe Commerce of Magento Open Source op uw eigen infrastructuur te installeren.
-source-git-commit: 4c18f00e0b92e49924676274c4ed462a175a7e4b
+source-git-commit: 5e072a87480c326d6ae9235cf425e63ec9199684
 workflow-type: tm+mt
-source-wordcount: '993'
+source-wordcount: '990'
 ht-degree: 0%
 
 ---
@@ -11,7 +11,7 @@ ht-degree: 0%
 
 # Snelle start van de installatie op locatie
 
-We gebruiken [Composer](https://getcomposer.org/) om Adobe Commerce en Magento Open Source-componenten en hun afhankelijkheden te beheren. Composer gebruiken om de Adobe Commerce en de Magento Open Source op te halen [pakket](https://glossary.magento.com/metapackage) biedt de volgende voordelen:
+We gebruiken [Composer](https://getcomposer.org/) om Adobe Commerce en Magento Open Source-componenten en hun afhankelijkheden te beheren. Het gebruik van Composer voor het ophalen van het metapakket Adobe Commerce en Magento Open Source biedt de volgende voordelen:
 
 - Bibliotheken van derden opnieuw gebruiken zonder deze te bundelen met broncode
 - Verminder uitbreidingsconflicten en compatibiliteitskwesties door een op componenten-gebaseerde architectuur met robuust gebiedsbeheer te gebruiken

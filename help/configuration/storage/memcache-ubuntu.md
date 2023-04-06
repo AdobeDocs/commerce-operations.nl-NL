@@ -1,9 +1,9 @@
 ---
 title: In cache plaatsen op Ubuntu
 description: Installeer en configureer de gedeponeerde gegevens in Ubuntu.
-source-git-commit: 80abb0180fcd8ecc275428c23b68feb5883cbc28
+source-git-commit: 5e072a87480c326d6ae9235cf425e63ec9199684
 workflow-type: tm+mt
-source-wordcount: '452'
+source-wordcount: '449'
 ht-degree: 0%
 
 ---
@@ -94,7 +94,7 @@ Om te controleren of het in een cache plaatsen wordt herkend door de webserver:
 
 ### Controleren of geheugen gegevens in cache kan plaatsen
 
-In deze test wordt een PHP-script gebruikt om te controleren of in een cache opgeslagen en opgehaald kan worden [cachegeheugen](https://glossary.magento.com/cache) gegevens.
+Deze test gebruikt een PHP script om te controleren of in een cache opgeslagen en opgehaalde cachegegevens kunnen worden opgeslagen.
 
 Voor meer informatie over deze test raadpleegt u [Memcache installeren en gebruiken in Ubuntu-zelfstudie](https://www.digitalocean.com/community/tutorials/how-to-install-and-use-memcache-on-ubuntu-14-04).
 
