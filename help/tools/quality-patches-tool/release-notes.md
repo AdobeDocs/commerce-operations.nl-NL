@@ -1,9 +1,9 @@
 ---
 title: Opmerkingen bij de release
 description: Meer informatie over de patches die beschikbaar zijn voor Adobe Commerce en de problemen die ze oplossen.
-source-git-commit: b71819d123856d03dab872a1652b325ffe7178a6
+source-git-commit: ef501b34947f24f8028bd5876bd4a167551e03ec
 workflow-type: tm+mt
-source-wordcount: '11561'
+source-wordcount: '11914'
 ht-degree: 0%
 
 ---
@@ -19,6 +19,25 @@ De [[!DNL Quality Patches Tool]](https://github.com/magento/quality-patches) lev
 >[!INFO]
 >
 >Voor informatie over [!DNL quality patches] die door de Gemeenschap voor Magento Open Source zijn opgericht, [releaseopmerkingen](https://github.com/magento/quality-patches/blob/master/community-release-notes.md).
+
+## v1.1.30 {#v1-1-30}
+
+* **ACSD-50336** (voor Adobe Commerce en Magento Open Source >=2.4.4-p1 &lt;2.4.4-p3) - Hiermee wordt het probleem verholpen waarbij e-mails met productwaarschuwingen niet worden verzonden wanneer een product weer in voorraad is of de prijs wordt gewijzigd.
+* **ACSD-50367** (voor Adobe Commerce en Magento Open Source >=2.3.7 &lt;2.4.7) - Hiermee wordt het probleem verholpen waarbij het exporteren van het adres van de klant niet werkt wanneer een kenmerk voor een adres van een klant met meerdere keuze zonder waarden wordt gemaakt.
+* **ACSD-49877** (voor Adobe Commerce en Magento Open Source >=2.3.7 &lt;2.4.7) - Hiermee wordt het probleem verholpen waarbij automatisch afspelen van video niet werkt op mobiele apparaten [!DNL Safari] wanneer de video rechtstreeks aan een extern videobestand is gekoppeld en niet aan een streaming service.
+* **ACSD-50165** (voor Adobe Commerce en Magento Open Source >=2.4.0 &lt;2.4.7) - Hiermee wordt de fout gecorrigeerd *Het bestand kan niet worden verwijderd. Waarschuwing!ontkoppelen: Bestand of map bestaat niet* bij het leegmaken van de JS/CSS-cache uit de Admin.
+* **ACSD-49737** (voor Adobe Commerce en Magento Open Source >=2.4.1-p1 &lt;2.4.7) - Hiermee wordt de emissie gecorrigeerd wanneer een coupon onjuist is gemarkeerd als gebruikt na een mislukte kaartbetaling.
+* **ACSD-50814** (voor Adobe Commerce en Magento Open Source >=2.4.6 &lt;2.4.7) - Hiermee wordt het probleem verholpen waarbij een beheerder geen creditnota kan maken.
+* **ACSD-50116** (voor Adobe Commerce en Magento Open Source >=2.3.7 &lt;2.4.7) - Hiermee wordt het probleem verholpen waarbij een beheerder geen URL kan maken die herschrijft voor subcategorieën niveau 3 of lager.
+* **ACSD-49513** (voor Adobe Commerce en Magento Open Source >=2.4.3 &lt;2.4.5) - Hiermee wordt het probleem verholpen waarbij de synchronisatie van externe opslag mislukt als gevolg van bestanden van 0 byte.
+* **ACSD-46683** (voor Adobe Commerce en Magento Open Source >=2.4.2 &lt;2.4.7) - Hiermee wordt het probleem opgelost waarbij de verzendprijs wordt weergegeven *Nog niet berekend*.
+* **ACSD-49129** (voor Adobe Commerce en Magento Open Source >=2.4.2 &lt;2.4.6) - Hiermee wordt het probleem opgelost waarbij de *[!UICONTROL content]* attribute (base64 image code) is not returned in `rest/V1/products/sku/media` API-reacties voor productmedia.
+* **ACSD-50276** (voor Adobe Commerce >=2.4.0 &lt;2.4.7) - Hiermee wordt het probleem verholpen waarbij het registratieformulier van de klant niet in de winkel werkt als een kenmerk van een klant met meerdere selecties wordt gemaakt.
+* **ACSD-50527** (voor Adobe Commerce >=2.3.7 &lt;2.4.7) - Hiermee wordt de fout gecorrigeerd die optreedt bij het opslaan van een pagina met een leeg dynamisch blok.
+* **ACSD-49973** (voor Adobe Commerce en Magento Open Source >=2.4.4 &lt;2.4.5) - verbetert de prestaties van het ophalen van gebundelde producten via GraphQL.
+* **BB2B-2598** (voor Adobe Commerce en Magento Open Source >=2.4.4 &lt;2.4.7) - Voeg caching mogelijkheden aan toe [!UICONTROL availableStores], [!UICONTROL countries], [!UICONTROL country], [!UICONTROL currency], en [!UICONTROL storeConfig] GraphQL query&#39;s.
+* Nieuwe versies toegevoegd voor MDVA-42806, ACSD-48627, ACSD-46815.
+* Bijgewerkte patches, metagegevens voor ACSD-49773, ACSD-47179, ACSD-48300.
 
 ## v1.1.29 {#v1-1-29}
 
