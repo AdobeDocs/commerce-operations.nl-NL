@@ -1,9 +1,9 @@
 ---
 title: De indexen beheren
 description: Zie voorbeelden van hoe te om de indexen van de Handel te bekijken en te beheren.
-source-git-commit: 8102c083bb0216bbdcad2882f39f7711b9cee52b
+source-git-commit: a7ead687c681914d90e9ed2680c8f7494eba74d4
 workflow-type: tm+mt
-source-wordcount: '626'
+source-wordcount: '638'
 ht-degree: 0%
 
 ---
@@ -120,6 +120,10 @@ U kunt de volgende indexen parallel uitvoeren:
 - `Category Product` kan door archiefmeningen worden parallel gelopen.
 - `Catalog Price` kan worden gekoppeld door website- en klantengroepen.
 - `Catalog Permissions` kan door klantengroepen worden geëvenaard.
+
+>[!INFO]
+>
+>Parallelization voor Catalog Search Fulltext en het Product van de Categorie wordt toegelaten door gebrek.
 
 Als u parallellisatie wilt gebruiken, stelt u een van de beschikbare afmetingen in voor de indexeer van de productprijs:
 
