@@ -2,9 +2,9 @@
 title: Cloud-infrastructuurregio's
 description: Bekijk diagrammen die de AWS- en Azure-regio's weergeven die beschikbaar zijn voor Adobe Commerce.
 exl-id: d8f59845-8281-4c9f-8101-51f9c35a0455
-source-git-commit: e76f101df47116f7b246f21f0fe0fa72769d2776
+source-git-commit: d387ca9f3c7ce3b0c8ce254cc1c056e5b244ed34
 workflow-type: tm+mt
-source-wordcount: '62'
+source-wordcount: '72'
 ht-degree: 0%
 
 ---
@@ -15,7 +15,7 @@ De volgende secties bevatten informatie over de verschillende AWS- en Azure-regi
 
 ## AWS-regio&#39;s
 
-![Diagram met AWS-gebieden](../../../assets/playbooks/aws-regions.svg)
+![Diagram met AWS-gebieden](../../../assets/playbooks/aws-regions.png)
 
 >[!NOTE]
 >
@@ -23,8 +23,8 @@ De volgende secties bevatten informatie over de verschillende AWS- en Azure-regi
 
 ## Azure-gebieden
 
-![Diagram met Azure-gebieden](../../../assets/playbooks/azure-regions.svg)
+![Diagram met Azure-gebieden](../../../assets/playbooks/azure-regions.png)
 
 >[!NOTE]
 >
-> Alleen ter plaatse in China en Rusland.
+> Alleen ter plaatse in China en Rusland. Alle handelaren die integratieomgevingen nodig hebben, moeten Amerikaanse regio&#39;s gebruiken.
