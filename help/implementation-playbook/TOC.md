@@ -2,9 +2,9 @@
 user-guide-title: Afspeelmap voor implementatie
 user-guide-description: Leer meer over strategieën voor het plannen en implementeren van een geslaagde Adobe Commerce-site.
 mini-toc-levels: 3
-source-git-commit: 5559d412ab58d392098cfff7a4cabb473c38cb0d
+source-git-commit: 5aa1669e556e5b7bf5ed3777db0f026ccfff5e70
 workflow-type: tm+mt
-source-wordcount: '255'
+source-wordcount: '0'
 ht-degree: 0%
 
 ---
@@ -46,7 +46,13 @@ ht-degree: 0%
       - [Hoofdloze architectuur](architecture/headless/adobe-commerce.md)
 - Infrastructuur en implementatie {#infrastructure}
    - [Overzicht](infrastructure/overview.md)
-   - [Infrastructuur ter plaatse](infrastructure/on-premises.md)
+   - Zelf hosten {#self-hosting}
+      - [Overzicht](infrastructure/self-hosting/overview.md)
+      - [Infrastructuur ter plaatse](infrastructure/self-hosting/on-premises.md)
+      - [Beveiligingsconcepten](infrastructure/self-hosting/security-concepts.md)
+      - [Bewaking van telemetrie en tools](infrastructure/self-hosting/monitoring-tools.md)
+      - [Ideeën voor noodherstel](infrastructure/self-hosting/disaster-recovery-ideas.md)
+      - [Tips voor prestaties](infrastructure/self-hosting/performance-tips.md)
    - Cloud-infrastructuur {#cloud}
       - [Overzicht](infrastructure/cloud/overview.md)
       - [Regio&#39;s](infrastructure/cloud/regions.md)
