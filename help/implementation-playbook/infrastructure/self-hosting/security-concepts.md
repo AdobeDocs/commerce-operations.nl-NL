@@ -7,7 +7,7 @@ kt: 11420
 doc-type: tutorial
 audience: all
 last-substantial-update: 2023-04-13T00:00:00Z
-source-git-commit: 0d5c2d3ae44008142797c7ac91530a9df98ae004
+source-git-commit: cca195c20ddcba634a8fc39c0867e0ae28f43683
 workflow-type: tm+mt
 source-wordcount: '1571'
 ht-degree: 0%
@@ -23,7 +23,7 @@ De volgende concepten zijn niet in een bepaalde volgorde. Ze zijn bedoeld om ide
 
 ## Alleen-lezen bestandssysteem
 
-Het concept van het alleen-lezen bestandssysteem is geleend van [Adobe Commerce op luide infrastructuur](https://experienceleague.adobe.com/docs/commerce-learn/tutorials/getting-started/cloud/1-overview.html){target="_blank"}. Hierdoor wordt één belangrijk gebied verwijderd dat door een slechte acteur wordt gebruikt. Vele exploits hebben voordeel gehaald uit het veranderen van een dossier dat naar verwachting in de toepassing van de Handel zal zijn om opsporing te vermijden. In plaats van er een te maken, wijzigt de slechte actor de inhoud van een bestaand bestand om een onverwachte actie uit te voeren. Als u het bestandssysteem alleen-lezen maakt, wordt deze aanvalsvector aanzienlijk kleiner.
+Het concept van het alleen-lezen bestandssysteem is geleend van [Adobe Commerce over cloudinfrastructuur](https://experienceleague.adobe.com/docs/commerce-learn/tutorials/getting-started/cloud/1-overview.html){target="_blank"}. Hierdoor wordt één belangrijk gebied verwijderd dat door een slechte acteur wordt gebruikt. Vele exploits hebben voordeel gehaald uit het veranderen van een dossier dat naar verwachting in de toepassing van de Handel zal zijn om opsporing te vermijden. In plaats van er een te maken, wijzigt de slechte actor de inhoud van een bestaand bestand om een onverwachte actie uit te voeren. Als u het bestandssysteem alleen-lezen maakt, wordt deze aanvalsvector aanzienlijk kleiner.
 
 ## Gebruik TWO Factor Authentificatie en wachtwoordmanagers
 

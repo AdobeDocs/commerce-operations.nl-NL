@@ -7,9 +7,9 @@ kt: 11420
 doc-type: tutorial
 audience: all
 last-substantial-update: 2023-04-13T00:00:00Z
-source-git-commit: 66abe9f234aa44f7e07cc024607eeb6591a99d07
+source-git-commit: ab099b2a8a353c2462424831cf8100e7e281b1be
 workflow-type: tm+mt
-source-wordcount: '1308'
+source-wordcount: '1304'
 ht-degree: 0%
 
 ---
@@ -51,7 +51,7 @@ Voordat u ongebruikte modules uitschakelt, moet u ervoor zorgen dat u geen tests
 
 ## Adobe Commerce- en PHP-coderingsstandaarden moeten worden gevolgd voor elke pull-aanvraag
 
-Adobe Commerce heeft een set [Codeerstandaarden](https://developer.adobe.com/commerce/php/coding-standards/){target="_blank"}. Deze hulp zorgt ervoor dat een gelijkaardig patroon, een stijl, en een verwacht ontwerp ongeacht het type van softwareontwikkeling worden gevolgd. Waar dit een absolute vereiste is om bij te dragen aan de Adobe Commerce-codebase. Het volgen van deze methodologie voor aangepaste ontwikkeling zorgt echter ook voor een solide hoeksteen voor alle ontwikkelaars, huidige en toekomstige verwachtingen. Wanneer u alle pull-aanvragen nodig hebt om een codestandaard door te geven, zorgt u ervoor dat iedereen dezelfde consistente ontwikkelingspatronen kan begrijpen en verwachten.
+Adobe Commerce heeft een set [Codeerstandaarden](https://developer.adobe.com/commerce/php/coding-standards/){target="_blank"}. Deze hulp zorgt ervoor dat een gelijkaardig patroon, een stijl, en een verwacht ontwerp ongeacht het type van softwareontwikkeling worden gevolgd. Dit is een vereiste wanneer we bijdragen aan de Adobe Commerce-codebase. Maar als u ervoor kiest om deze methode voor aangepaste ontwikkeling te volgen, wordt een stevige hoeksteen voor alle ontwikkelaars, zowel de huidige als de toekomstige. Wanneer u alle pull-aanvragen nodig hebt om een codestandaard door te geven, zorgt u ervoor dat iedereen dezelfde consistente ontwikkelingspatronen kan begrijpen en verwachten.
 
 De andere basis die wordt gebruikt bij de Adobe Commerce-coderingsnormen is PHP-basiscoderingsnormen. In de ontwikkelaarsgidsen moet duidelijk worden gedefinieerd welke standaarden u moet volgen en welke afwijkingen acceptabel zijn. Een fallback dient echter plaats te vinden op de algemeen bewaarde gids die te vinden is op [PHP-FIG](https://www.php-fig.org){target="_blank"}.
 
