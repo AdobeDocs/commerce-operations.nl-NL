@@ -1,9 +1,9 @@
 ---
 title: "De [!UICONTROL Summary] tab"
 description: Meer informatie over de [!UICONTROL Summary] tabblad van [!DNL Observation for Adobe Commerce].
-source-git-commit: 61d0de370cbfa02f5fcc7d20ad283c54357294a3
+source-git-commit: 1d4e6ee745b656f0bc291a479e1d5bac5c8504e3
 workflow-type: tm+mt
-source-wordcount: '2653'
+source-wordcount: '0'
 ht-degree: 0%
 
 ---
@@ -57,7 +57,7 @@ De **[!UICONTROL Swap memory free in bytes]** Het kader toont, door knoop, de ho
 
 ![CPU-percentage per host](../../assets/tools/cpu-percent-by-host.jpg)
 
-Het geheel van alle milieu&#39;s en knopen wordt getoond in **[!UICONTROL CPU % by host]** frame. Schakel de niet-productieomgevingen uit. Let ook op gevallen waarin niet alle knooppunten voor de productieomgeving aanwezig zijn. Voor meer tips over een hoog CPU-gebruik raadpleegt u [Prestaties oplossen met behulp van New Relic op Adobe Commerce](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/troubleshoot-performance-using-new-relic-on-magento-commerce.html).
+Het geheel van alle milieu&#39;s en knopen wordt getoond in **[!UICONTROL CPU % by host]** frame. Schakel de niet-productieomgevingen uit. Let ook op gevallen waarin niet alle knooppunten voor de productieomgeving aanwezig zijn. Voor meer tips over een hoog CPU-gebruik raadpleegt u [Prestaties oplossen met New Relic op Adobe Commerce](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/troubleshoot-performance-using-new-relic-on-magento-commerce.html).
 
 ## [!UICONTROL Alerts during timeframe]
 
@@ -363,7 +363,7 @@ De **[!UICONTROL Order transactions (default?)]** frame zoekt naar transacties `
 
 ## [!UICONTROL Elasticsearch Index information]
 
-![indexgegevens van elasticzoekopdrachten](../../assets/tools/elasticsearch-index-information.jpg)
+![indexgegevens van elasticzoekopdrachten](../../assets/tools/elasticsearch-tab-elasticsearch-index-information-image-1.jpg)
 
 **[Elasticsearch statussen:](https://www.elastic.co/guide/en/elasticsearch/reference/current/cluster-health.html)**
 
