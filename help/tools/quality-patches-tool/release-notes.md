@@ -1,7 +1,7 @@
 ---
 title: Opmerkingen bij de release
 description: Meer informatie over de patches die beschikbaar zijn voor Adobe Commerce en de problemen die ze oplossen.
-source-git-commit: ab9d80140833e2d21feffe04a73fcd8ac5f1e980
+source-git-commit: 760f7f5e2e27dba8e77e564230ab3f1cf374dac2
 workflow-type: tm+mt
 source-wordcount: '11946'
 ht-degree: 0%
@@ -36,7 +36,7 @@ De [[!DNL Quality Patches Tool]](https://github.com/magento/quality-patches) lev
 * **ACSD-50527** (voor Adobe Commerce >=2.3.7 &lt;2.4.7) - Hiermee wordt de fout gecorrigeerd die optreedt bij het opslaan van een pagina met een leeg dynamisch blok.
 * **ACSD-49973** (voor Adobe Commerce en Magento Open Source >=2.4.4 &lt;2.4.5) - verbetert de prestaties van het ophalen van gebundelde producten via GraphQL.
 * **ACSD-51114** (voor Adobe Commerce en Magento Open Source >=2.4.3 &lt;2.4.7) - Hiermee wordt het probleem verholpen waarbij een willekeurig product uit grote catalogi verdwijnt wanneer asynchrone indexering is ingeschakeld. Verbetert de prestaties van asynchrone herindexering voor grote catalogi.
-* **BB2B-2598** (voor Adobe Commerce en Magento Open Source >=2.4.4 &lt;2.4.7) - Voeg caching mogelijkheden aan toe [!UICONTROL availableStores], [!UICONTROL countries], [!UICONTROL country], [!UICONTROL currency], en [!UICONTROL storeConfig] GraphQL query&#39;s.
+* **B2B-2598** (voor Adobe Commerce en Magento Open Source >=2.4.4 &lt;2.4.7) - Voeg caching mogelijkheden aan toe [!UICONTROL availableStores], [!UICONTROL countries], [!UICONTROL country], [!UICONTROL currency], en [!UICONTROL storeConfig] GraphQL query&#39;s.
 * Nieuwe versies toegevoegd voor MDVA-42806, ACSD-48627, ACSD-46815.
 * Bijgewerkte patches, metagegevens voor ACSD-49773, ACSD-47179, ACSD-48300.
 
