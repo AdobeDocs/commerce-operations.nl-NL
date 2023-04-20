@@ -1,7 +1,7 @@
 ---
-source-git-commit: 7dca677d6bde3f2700de5dc527a0f581e06032ad
+source-git-commit: 8bf5cb032671bbb1cd6ff05d4a26c699592d33db
 workflow-type: tm+mt
-source-wordcount: '889'
+source-wordcount: '1058'
 ht-degree: 0%
 
 ---
@@ -10,6 +10,72 @@ ht-degree: 0%
 ## Nieuwe functies
 
 Meer informatie over nieuwe documentatie en belangrijke updates voor bestaande documentatie.
+
+### 19 april 2023
+
+<table style="table-layout:auto;">
+  <thead>
+    <tr>
+      <th>Beschrijving</th>
+      <th>Type</th>
+      <th>Bron</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><p>Toegevoegde informatie over een onlangs vrijgegeven patch voor een bekende uitgave van 2.4.6. Zie <a href="https://experienceleague.adobe.com/docs/commerce-operations/release/notes/overview.html">Opmerkingen bij de release voor Adobe Commerce en Magento Open Source</a>.</p>
+</td>
+      <td>technisch</td>
+      <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/fdbb0959b615689eba3068bc93c4c9876c7a7972">fdbb09</a> (toewijzen)</td>
+    </tr>
+    <tr>
+      <td><p>Extra informatie over de <a href="https://experienceleague.adobe.com/docs/commerce-operations/tools/site-wide-analysis-tool/dashboard.html">Widget Beveiligingscentrum</a> in het dashboard voor het hulpprogramma voor evaluatie voor de hele site.</p>
+</td>
+      <td>belangrijke update</td>
+      <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/1e84ee6db07ec9080971de22a24fe8a7d8705916">1e84ee</a> (toewijzen)</td>
+    </tr>
+  </tbody>
+</table>
+
+### 17 april 2023
+
+<table style="table-layout:auto;">
+  <thead>
+    <tr>
+      <th>Beschrijving</th>
+      <th>Type</th>
+      <th>Bron</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><p>Toegevoegde <a href="https://experienceleague.adobe.com/docs/commerce-operations/implementation-playbook/infrastructure/self-hosting/overview.html">nieuwe sectie</a> over zelfhostingconcepten, zoals prestaties, beveiliging, bewaking en noodherstel.</p>
+</td>
+      <td>nieuw onderwerp</td>
+      <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/699c512de9c6d28ba354f02b4db76975eb5410a9">699c51</a> (toewijzen)</td>
+    </tr>
+  </tbody>
+</table>
+
+### 12 april 2023
+
+<table style="table-layout:auto;">
+  <thead>
+    <tr>
+      <th>Beschrijving</th>
+      <th>Type</th>
+      <th>Bron</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><p>Gepubliceerd <a href="https://experienceleague.adobe.com/docs/commerce-operations/tools/quality-patches-tool/release-notes.html">releaseopmerkingen</a> voor de pakketrelease van het 1.1.30 Quality Patches Tool (QPT).</p>
+</td>
+      <td>belangrijke update</td>
+      <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/84ed7dd2c24eef437d6719d9758da43423347eeb">84ed7d</a> (toewijzen)</td>
+    </tr>
+  </tbody>
+</table>
 
 ### 5 april 2023
 
