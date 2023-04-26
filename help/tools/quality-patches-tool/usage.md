@@ -1,9 +1,10 @@
 ---
 title: Gebruik
 description: Leer hoe u de [!DNL Quality Patches Tool].
-source-git-commit: e35469adb1b3278cf787416e1bc829fae9979efc
+exl-id: f9ad37e9-2d0f-4bc8-a98b-6d60b6f56d42
+source-git-commit: 786be8bfa915fe82d9316f51662b20bde71abbaa
 workflow-type: tm+mt
-source-wordcount: '901'
+source-wordcount: '0'
 ht-degree: 0%
 
 ---
@@ -17,7 +18,7 @@ Dit bekijken [technische video](https://experienceleague.adobe.com/docs/commerce
 
 >[!INFO]
 >
->Zie [Afzonderlijke patches toepassen](#apply-individual-patches) voor instructies voor het toepassen van patches op uw Adobe Commerce- of Magento Open Source-projecten. Zie [Beschikbare patches](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html) om een volledige lijst met vrijgegeven patches te bekijken.
+>Zie [Afzonderlijke patches toepassen](#apply-individual-patches) voor instructies voor het toepassen van patches op uw Adobe Commerce- of Magento Open Source-projecten. Zie [[!DNL Quality Patches Tool]: Zoeken naar patches](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html) om een volledige lijst met vrijgegeven patches te bekijken.
 
 >[!WARNING]
 >
@@ -60,7 +61,7 @@ Adobe Commerce 2.3.5.
 De statustabel bevat:
 
 - **Type**:
-   - `Optional` — Alle patches van de [!DNL Quality Patches Tool] en de [Cloudpatches](https://devdocs.magento.com/cloud/project/project-patch.html) -pakket is optioneel voor Adobe Commerce- en Magento Open Source-installaties.
+   - `Optional` — Alle patches van de [!DNL Quality Patches Tool] en de [Commerce on Cloud Infrastructure Guide > Patches toepassen](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html) -pakket is optioneel voor Adobe Commerce- en Magento Open Source-installaties.
    - `Deprecated` - Adobe heeft de afzonderlijke pleister vervangen. Als u de pleister hebt aangebracht, raden wij u aan deze weer in te voeren. De herstelbewerking verwijdert de patch ook uit de statustabel.
 
 - **Status**:
@@ -81,7 +82,7 @@ De statustabel bevat:
 
 >[!WARNING]
 >
->Het is aan te raden om alle patches in een testomgeving of ontwikkelomgeving te testen voordat ze worden geïmplementeerd. Het wordt ook aanbevolen een back-up van uw gegevens te maken voordat u een patch toepast. Zie [Een back-up van het bestandssysteem maken en terugdraaien](https://devdocs.magento.com/guides/v2.4/install-gde/install/cli/install-cli-backup.html).
+>Het is aan te raden om alle patches in een testomgeving of ontwikkelomgeving te testen voordat ze worden geïmplementeerd. Het wordt ook aanbevolen een back-up van uw gegevens te maken voordat u een patch toepast. Zie [Back-up maken van het bestandssysteem, de media en de database en deze terugdraaien](https://experienceleague.adobe.com/docs/commerce-operations/installation-guide/tutorials/backup.html).
 
 Als u één patch wilt toepassen, voert u de volgende opdracht uit, waarbij `MAGETWO-XXXX` is de patch-id die is opgegeven in de statustabel:
 
@@ -109,7 +110,7 @@ U moet de cache wissen nadat u patches hebt toegepast om de wijzigingen in de Ad
 
 >[!WARNING]
 >
->Het is aan te raden om alle patches in een testomgeving of ontwikkelomgeving te testen voordat ze worden geïmplementeerd. Het wordt ook aanbevolen een back-up van uw gegevens te maken voordat u een patch toepast. Zie [Een back-up van het bestandssysteem maken en terugdraaien](https://devdocs.magento.com/guides/v2.4/install-gde/install/cli/install-cli-backup.html).
+>Het is aan te raden om alle patches in een testomgeving of ontwikkelomgeving te testen voordat ze worden geïmplementeerd. Het wordt ook aanbevolen een back-up van uw gegevens te maken voordat u een patch toepast. Zie [Back-up maken van het bestandssysteem, de media en de database en deze terugdraaien](https://experienceleague.adobe.com/docs/commerce-operations/installation-guide/tutorials/backup.html).
 
 Om één enkel flard terug te keren, stel het volgende bevel in werking waar `MAGETWO-XXXX` is de patch-id die is opgegeven in de statustabel:
 

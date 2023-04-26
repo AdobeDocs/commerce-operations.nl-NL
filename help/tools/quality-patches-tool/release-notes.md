@@ -1,9 +1,10 @@
 ---
 title: Opmerkingen bij de release
 description: Meer informatie over de patches die beschikbaar zijn voor Adobe Commerce en de problemen die ze oplossen.
-source-git-commit: 760f7f5e2e27dba8e77e564230ab3f1cf374dac2
+exl-id: 22262555-f5ea-49ad-98ad-ea8428ef66d5
+source-git-commit: 786be8bfa915fe82d9316f51662b20bde71abbaa
 workflow-type: tm+mt
-source-wordcount: '11946'
+source-wordcount: '11947'
 ht-degree: 0%
 
 ---
@@ -14,7 +15,7 @@ De [[!DNL Quality Patches Tool]](https://github.com/magento/quality-patches) lev
 
 >[!INFO]
 >
->Zie [Patches toepassen](https://experienceleague.adobe.com/docs/commerce-operations/tools/quality-patches-tool/usage.html#apply-individual-patches) voor instructies voor het toepassen van patches op uw Adobe Commerce- of Magento Open Source-projecten. Zie [Beschikbare patches](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html) in de Software Update Guide om een volledige lijst met vrijgegeven patches te bekijken.
+>Zie [Patches toepassen](https://experienceleague.adobe.com/docs/commerce-operations/tools/quality-patches-tool/usage.html#apply-individual-patches) voor instructies voor het toepassen van patches op uw Adobe Commerce- of Magento Open Source-projecten. Zie [[!DNL Quality Patches Tool]: Zoeken naar patches](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html) in de Software Update Guide om een volledige lijst met vrijgegeven patches te bekijken.
 
 >[!INFO]
 >
