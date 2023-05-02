@@ -1,13 +1,13 @@
 ---
 title: De indexen beheren
 description: Zie voorbeelden van hoe te om de indexen van de Handel te bekijken en te beheren.
-source-git-commit: a7ead687c681914d90e9ed2680c8f7494eba74d4
+exl-id: d2cd1399-231e-4c42-aa0c-c2ed5d7557a0
+source-git-commit: beee479caeb4145d759c105012ffc8b6b55a6e39
 workflow-type: tm+mt
-source-wordcount: '638'
+source-wordcount: '663'
 ht-degree: 0%
 
 ---
-
 
 # De indexen beheren
 
@@ -37,6 +37,9 @@ catalog_product_price                    Product Price
 catalogsearch_fulltext                   Catalog Search
 salesrule_rule                           Sales Rule
 ```
+
+>[!NOTE]
+> Handelaren van Adobe Commerce die Live Search, Catalog Service of Product Recommendations gebruiken, hebben de mogelijkheid om [Prijsindexering op basis van SaaS](https://experienceleague.adobe.com/docs/commerce-merchant-services/price-index/index.html).
 
 ## Indexstatus weergeven
 
