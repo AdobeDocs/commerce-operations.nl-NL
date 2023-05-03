@@ -1,9 +1,10 @@
 ---
-title: "De [!UICONTROL bots] tab"
+title: De [!UICONTROL bots] tab
 description: Meer informatie over de [!UICONTROL bots] tabblad van [!DNL Observation for Adobe Commerce].
-source-git-commit: e135b8ab8b4f13de614299dd3c41c0cab52fefb2
+exl-id: 741310ca-28fb-4b08-95c7-e8d1fb952018
+source-git-commit: 043389dc6d86228e459ac2c3592f391e85aa8f68
 workflow-type: tm+mt
-source-wordcount: '1657'
+source-wordcount: '1862'
 ht-degree: 0%
 
 ---
@@ -150,3 +151,11 @@ Dit tabblad bevat informatie die aangeeft hoe u kunt bepalen of en wat [!DNL bot
 ![De Latentie van de voorvertoning wordt weergegeven als punten in deze grafiek:](../../assets/tools/observation-for-adobe-commerce/pageview-latency.png)
 
 * De **[!UICONTROL Pageview Latency will show as spikes on this graph:]** frame bevat een vertraging in de paginabelasting / API-reactie die mogelijk overeenkomt met de [!DNL bot] verkeer.
+
+## [!UICONTROL Experimental Potential Malicious Bots] frame
+
+![Experimentele potentiële kwaadwillige Bots-frame](../../assets/tools/observation-for-adobe-commerce/experimental-potential-malicious-bots-frame.jpg)
+
+De **[!UICONTROL Experimental Potential Malicious Bots]** frame voert tien afzonderlijke , complexe query &#39; s uit . Het ontdekt kwaadwillige IP verzoekhandtekeningen en voegt dan de resultaten samen, sommen en sorteert hen door telling in dalende orde. De query&#39;s bevatten een groot aantal gegevenshandtekeningen van CVE-misbruiken en andere kwaadaardige verzoeken. Zelfs wanneer de explosies worden geblokkeerd door beveiligingsoplossingen/patches en een niet-bedreiging vormen voor de site, moet het verzoek nog steeds door de website worden afgehandeld. Het aantal verzoeken kan in een korte periode aanzienlijk worden. Dit kader toont niet de totale verzoeken van het IP adres, maar eerder de verzoeken die signalen hebben die erop wijzen dat de verzoeken verdachte bedoeling hadden.
+
+Zorg ervoor om te verifiëren dat het verkeer verdacht is en het verkeer niet uit een Inhoud Verspreid adres van het Netwerk (CDN) voortkomt die ook geldige verzoeken kan leveren. Als de verzoeken om van een adres CDN IP worden bepaald, gelieve te contacteren die dienstverlener om te helpen met het blokkeren van het verdachte verkeer door hun netwerk. Als u het adres of verzoek-URL moet blokkeren, raadpleegt u [Blok kwaadwillig verkeer voor Adobe Commerce op [!DNL Fastly] niveau](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/block-malicious-traffic-for-magento-commerce-on-fastly-level.html) in Adobe Commerce Support Knowledge Base.
