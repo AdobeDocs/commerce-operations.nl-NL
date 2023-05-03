@@ -1,13 +1,13 @@
 ---
 title: Opmerkingen bij de release Adobe Commerce en Magento Open Source
 description: Leer waar u informatie kunt vinden voor specifieke Adobe Commerce- en Magento Open Source-releases.
-source-git-commit: 14724592f7dbc116b0fa71b755d7f4f711d94fb2
+exl-id: f6385e12-5c3d-425f-939c-9dfd7ef6c4f5
+source-git-commit: 95ffff39d82cc9027fa633dffedf15193040802d
 workflow-type: tm+mt
-source-wordcount: '0'
+source-wordcount: '413'
 ht-degree: 0%
 
 ---
-
 
 # Opmerkingen bij de release voor Adobe Commerce en Magento Open Source
 
