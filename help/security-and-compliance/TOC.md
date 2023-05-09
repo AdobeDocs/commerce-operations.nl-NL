@@ -1,7 +1,8 @@
 ---
 user-guide-title: Beveiliging en naleving
 user-guide-description: Leer hoe Adobe Commerce en Magento Open Source-verkopers verantwoordelijk zijn voor het onderhouden van een veilige omgeving en voldoen aan de wettelijke vereisten en beste praktijken voor onlinehandelaren in hun rechtsgebied.
-source-git-commit: 338a99f4f047640ac4bb944ac8599301cba5f646
+feature: Security
+source-git-commit: 68c4cfc29735d2ea296f579ed0a0ff52db3fdd9f
 workflow-type: tm+mt
 source-wordcount: '72'
 ht-degree: 0%
