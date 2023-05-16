@@ -1,18 +1,18 @@
 ---
 keywords: Adobe Commerce;home;populaire onderwerpen
 title: Home
-description: Blader door een index van de Adobe Commerce-documentatie van het operationele product.
-source-git-commit: a1e74edb232b818dea9a2723bf506fac49acbd9f
+description: Blader door een index van het systeembeheer en de documentatie van het operationele product van Adobe Commerce.
+exl-id: 45ec4948-338f-4276-8a70-d0db720322d9
+source-git-commit: 9e010b68f6458bafda5119308531e62477f046a9
 workflow-type: tm+mt
-source-wordcount: '109'
+source-wordcount: '243'
 ht-degree: 0%
 
 ---
 
-
 # Operationele Adobe Commerce-hulplijnen
 
-Krijg praktische informatie over concepten, processen, hulpmiddelen, en beste praktijken om handelsprojecten te ontwikkelen op Adobe Commerce en de platforms van de Magento Open Source op te stellen en te handhaven.
+Krijg praktische informatie over concepten, processen, hulpmiddelen, en beste praktijken om, Adobe Commerce projecten te ontwikkelen op te stellen en te handhaven.
 
 <table>
 <tr>
@@ -22,6 +22,7 @@ Krijg praktische informatie over concepten, processen, hulpmiddelen, en beste pr
     </a>
     <div>
       <a href="https://experienceleague.adobe.com/docs/commerce-operations/release/versions.html"><strong>Geen informatie</strong></a>
+      <p>Bekijk alle releasegegevens voor Adobe Commerce-patches en -services.</p>
     </div>
   </td>
   <td valign="top">
@@ -30,6 +31,7 @@ Krijg praktische informatie over concepten, processen, hulpmiddelen, en beste pr
     </a>
     <div>
       <a href="../installation/overview.md"><strong>Installatie</strong></a>
+      <p>Leer hoe u Adobe Commerce installeert voor implementaties op locatie.</p>
     </div>
   </td>
   <td valign="top">
@@ -38,6 +40,7 @@ Krijg praktische informatie over concepten, processen, hulpmiddelen, en beste pr
     </a>
     <div>
       <a href="../configuration/overview.md"><strong>Configuratie</strong></a>
+      <p>Configureer functies en services voor uw Adobe Commerce-toepassing.</p>
     </div>
   </td>
   <td valign="top">
@@ -46,6 +49,7 @@ Krijg praktische informatie over concepten, processen, hulpmiddelen, en beste pr
     </a>
     <div>
       <a href="../tools/data-migration-tool/how-migration-works.md"><strong>Gegevensmigratie</strong></a>
+      <p>Leer over het proces van de gegevensmigratie tussen Magento 1 en Magento 2.</p>
     </div>
   </td>
 </tr>
@@ -56,6 +60,7 @@ Krijg praktische informatie over concepten, processen, hulpmiddelen, en beste pr
     </a>
     <div>
       <a href="../upgrade/overview.md"><strong>Upgrade</strong></a>
+      <p>Leer hoe u uw Adobe Commerce-project kunt upgraden om uw winkel veilig en efficiënt te laten werken.</p>
     </div>
   </td>
   <td valign="top">
@@ -64,6 +69,7 @@ Krijg praktische informatie over concepten, processen, hulpmiddelen, en beste pr
     </a>
     <div>
       <a href="https://experienceleague.adobe.com/docs/commerce-operations/reference/commerce.html"><strong>Referentie voor opdrachtregelprogramma's</strong></a>
+      <p>Meer informatie over opdrachten, argumenten en opties voor de opdrachtregelprogramma's van Adobe Commerce.</p>
     </div>
   </td>
   <td valign="top">
@@ -72,6 +78,7 @@ Krijg praktische informatie over concepten, processen, hulpmiddelen, en beste pr
     </a>
     <div>
       <a href="../performance/overview.md"><strong>Aanbevolen werkwijzen voor prestaties</strong></a>
+      <p>Gebruik deze aanbevelingen om de prestaties van uw Adobe Commerce-implementatie te optimaliseren.</p>
     </div>
   </td>
   <td valign="top">
@@ -80,6 +87,7 @@ Krijg praktische informatie over concepten, processen, hulpmiddelen, en beste pr
     </a>
     <div>
       <a href="../tools/overview.md"><strong>Gereedschappen</strong></a>
+      <p>Meer informatie over tools die je met Adobe Commerce kunt gebruiken.</p>
     </div>
   </td>
 </tr>
@@ -90,6 +98,7 @@ Krijg praktische informatie over concepten, processen, hulpmiddelen, en beste pr
     </a>
     <div>
       <a href="../implementation-playbook/overview.md"><strong>Afspeelmap voor implementatie</strong></a>
+      <p>Leer meer over strategieën voor het plannen en implementeren van een geslaagde Adobe Commerce-site.</p>
     </div>
   </td>
   <td valign="top">
@@ -98,6 +107,7 @@ Krijg praktische informatie over concepten, processen, hulpmiddelen, en beste pr
     </a>
     <div>
       <a href="../operational-playbook/overview.md"><strong>Operationeel afspelen</strong></a>
+      <p>Leer hoe te om uw ondernemingen operationeel klaar te krijgen om een succesvolle e-commercesite in werking te stellen.</p>
     </div>
   </td>
   <td valign="top">
@@ -106,6 +116,7 @@ Krijg praktische informatie over concepten, processen, hulpmiddelen, en beste pr
     </a>
     <div>
       <a href="../commerce-at-scale/overview.md"><strong>Handel op schaal</strong></a>
+      <p>Leer hoe u op schaal ervaringen kunt bieden met Adobe Commerce met Adobe Experience Manager.</p>
     </div>
   </td>
   <td valign="top">
@@ -114,6 +125,7 @@ Krijg praktische informatie over concepten, processen, hulpmiddelen, en beste pr
     </a>
     <div>
       <a href="../security-and-compliance/overview.md"><strong>Beveiliging en naleving</strong></a>
+      <p>Leer hoe Adobe Commerce-verkopers verantwoordelijk zijn voor het onderhouden van een veilige omgeving.</p>
     </div>
   </td>
 </tr>
