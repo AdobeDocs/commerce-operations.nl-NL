@@ -1,13 +1,13 @@
 ---
 title: Berichtenrijen beheren
 description: Leer hoe u berichtrijen van de bevellijn voor Adobe Commerce kunt beheren.
-source-git-commit: 0d106b36f479ecf2eda3fecf6740b28d4b6793eb
+exl-id: 619e5df1-39cb-49b6-b636-618b12682d32
+source-git-commit: caca8df48c498977f830082ef27d9afb6220ae92
 workflow-type: tm+mt
-source-wordcount: '411'
+source-wordcount: '416'
 ht-degree: 0%
 
 ---
-
 
 # Berichtenrijen beheren
 
@@ -74,7 +74,7 @@ Bewerk de `/app/etc/env.php` bestand om de uitsnijdtaak te configureren `consume
 - `cron_run` - Een Booleaanse waarde die de `consumers_runner` uitsnijdtaak (standaard = `true`).
 - `max_messages` - Het maximumaantal berichten dat elke consument moet verwerken voordat deze wordt beëindigd (standaardwaarde = `10000`). Hoewel wij het niet adviseren, kunt u 0 gebruiken om de consument te verhinderen te eindigen. Zie [`consumers_wait_for_messages`](../reference/config-reference-envphp.md#consumerswaitformessages) om te vormen hoe de consumenten berichten van de berichtrij verwerken.
 - `consumers` - Een array van tekenreeksen die aangeven welke consumenten moeten worden uitgevoerd. Een lege array wordt uitgevoerd *alles* consumenten.
-- `multiple_processes` - Een array van sleutelwaardeparen die aangeven welke consument moet werken in hoeveel processen.
+- `multiple_processes` - Een array van sleutelwaardeparen die aangeven welke consument moet werken in hoeveel processen. Ondersteund in Commerce 2.4.4 of hoger.
 
    >[!INFO]
    >
