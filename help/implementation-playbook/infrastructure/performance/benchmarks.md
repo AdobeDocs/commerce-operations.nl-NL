@@ -2,9 +2,9 @@
 title: Prestatiebenchmarks
 description: Resultaten van de prestatiebenchmark bekijken voor Adobe Commerce-implementaties die worden gehost op de Adobe-cloudinfrastructuur.
 exl-id: cc9b090a-a504-4df3-aa32-81882f431dd9
-source-git-commit: 09a42dc68836b34eab2c9d90879b897729cd1b09
+source-git-commit: eeb7146a8051e8692ebf974d65db75a4999cf2e6
 workflow-type: tm+mt
-source-wordcount: '589'
+source-wordcount: '594'
 ht-degree: 0%
 
 ---
@@ -79,6 +79,7 @@ Adobe Commerce 2.4.5 werd op een [schaalbare infrastructuur](https://experiencel
    - vCPU 216 (72 x 3 knooppunten)
    - Geheugen 432 GiB (144 x 3 knooppunten)
    - Netwerkbandbreedte 768 Gbps (256 x 3 knooppunten)
+   - EBS-bandbreedte 57000 Mbps (19000 x 3 knooppunten)
    - Voorziene opslag 100 GB
 
 - **Specificaties voor serviceknooppunten**
