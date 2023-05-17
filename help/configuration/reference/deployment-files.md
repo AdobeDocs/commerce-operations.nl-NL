@@ -1,13 +1,13 @@
 ---
 title: Configuratiebestanden voor implementatie
 description: Begrijp hoe de configuratiedossiers voor het installeren van de toepassing van de Handel werken.
-source-git-commit: 5e072a87480c326d6ae9235cf425e63ec9199684
+exl-id: 772a6814-6b18-4f8f-b31e-72faf790ff37
+source-git-commit: dd990800551dd2ba35ebc7d2bc04edeb1b183d6f
 workflow-type: tm+mt
-source-wordcount: '478'
+source-wordcount: '457'
 ht-degree: 0%
 
 ---
-
 
 # Configuratiebestanden voor implementatie
 
@@ -17,9 +17,6 @@ Adobe Commerce biedt configuratiebestanden waarmee u een component eenvoudig kun
 Dit bestand bevat een lijst met geïnstalleerde modules, thema&#39;s en taalpakketten. en gedeelde configuratie-instellingen.
 
    Controleer dit bestand om het te kunnen gebruiken in uw ontwikkelings-, staging- en productiesystemen.
-
-   Vanaf de release van 2.2 kunt u `app/etc/config.php` bestand is geen item meer in het dialoogvenster `.gitignore` bestand.
-Dit is gebeurd om [pijplijnimplementatie](../deployment/technical-details.md).
 
 - `app/etc/env.php` bevat instellingen die specifiek zijn voor de installatieomgeving.
 
