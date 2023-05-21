@@ -1,7 +1,8 @@
 ---
-title: "Beginnen met: Account en tijdframe selecteren"
+title: 'Beginnen met: Account en tijdframe selecteren'
 description: Leer hoe u begint met het gebruik van de [!DNL Observation for Adobe Commerce] door het account en het tijdframe te selecteren.
-source-git-commit: 86e990e18955cce8ed0917c72ddbe99d8cb3f333
+exl-id: f2364fa4-ef83-42f2-992f-e37ff1ac96a1
+source-git-commit: 95ffff39d82cc9027fa633dffedf15193040802d
 workflow-type: tm+mt
 source-wordcount: '169'
 ht-degree: 0%

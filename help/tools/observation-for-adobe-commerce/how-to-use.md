@@ -1,7 +1,8 @@
 ---
-title: "Hoe wordt het [!DNL Observation for Adobe Commerce] nerdlet"
+title: Hoe wordt de [!DNL Observation for Adobe Commerce] nerdlet
 description: Leer hoe u de [!DNL Observation for Adobe Commerce] nerdlet.
-source-git-commit: e6038d6f0add9d01d650914b35a1daba885fa7f8
+exl-id: 3c368814-0786-4e8f-ac81-9a77cec94677
+source-git-commit: 95ffff39d82cc9027fa633dffedf15193040802d
 workflow-type: tm+mt
 source-wordcount: '626'
 ht-degree: 0%

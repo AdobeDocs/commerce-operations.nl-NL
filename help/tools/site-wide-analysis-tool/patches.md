@@ -1,7 +1,8 @@
 ---
-title: "[!DNL Patches]"
+title: '[!DNL Patches]'
 description: Meer informatie over de [!UICONTROL Patches] in de [!DNL Site-Wide Analysis Tool], wanneer en de voordelen ervan.
-source-git-commit: 9ee2e49de83c23386de624eff9515fd59923e987
+exl-id: 40bc9b38-2a70-40ec-8278-231c78193248
+source-git-commit: 95ffff39d82cc9027fa633dffedf15193040802d
 workflow-type: tm+mt
 source-wordcount: '121'
 ht-degree: 0%
@@ -25,4 +26,3 @@ Gebruik de [!UICONTROL Patches] om de beschikbare patches voor uw Adobe Commerce
 * Alle relevante informatie over patches op één locatie opvragen.
 
 * Problemen verhelpen met de patches die beschikbaar zijn in het dialoogvenster [!UICONTROL Patches] tab.
-

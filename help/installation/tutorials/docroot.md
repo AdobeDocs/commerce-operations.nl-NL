@@ -1,13 +1,13 @@
 ---
 title: Documenthoofdmap wijzigen om de beveiliging te verbeteren
 description: Ongeoorloofde browsertoegang tot Adobe Commerce- of Magento Open Source-bestandssysteem op locatie voorkomen.
-source-git-commit: 5e072a87480c326d6ae9235cf425e63ec9199684
+exl-id: aabe148d-00c8-4011-a629-aa5abfa6c682
+source-git-commit: 95ffff39d82cc9027fa633dffedf15193040802d
 workflow-type: tm+mt
 source-wordcount: '592'
 ht-degree: 0%
 
 ---
-
 
 # Documenthoofdmap wijzigen om de beveiliging te verbeteren
 

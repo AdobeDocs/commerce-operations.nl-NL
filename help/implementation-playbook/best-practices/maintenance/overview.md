@@ -1,13 +1,13 @@
 ---
 title: Onderhoudsfase implementatie
 description: Leer over implementatie beste praktijken voor de onderhoudsfase van projecten van Adobe Commerce.
-source-git-commit: ae9573f3766c59887aea177cb85bf889c2161bfc
+exl-id: bd052412-a41c-4dbd-9aba-ba2fcac31f2d
+source-git-commit: 95ffff39d82cc9027fa633dffedf15193040802d
 workflow-type: tm+mt
 source-wordcount: '277'
 ht-degree: 0%
 
 ---
-
 
 # Onderhoudsfase
 

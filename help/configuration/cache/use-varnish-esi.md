@@ -2,13 +2,13 @@
 title: Varnish ESI-blok
 description: Leer meer over Edge Side Includes en hoe u deze kunt gebruiken om webpagina's in te sluiten.
 badge: label="Medegedragen door Konstantin G." type="Informatief" url="https://github.com/goivvy" tooltip="Konstantin G."
-source-git-commit: 90544452f5f0834e096ead6ea3df64dcb5eaea11
+exl-id: 7dccafa5-df79-4690-be5c-ff774c66bb2a
+source-git-commit: 95ffff39d82cc9027fa633dffedf15193040802d
 workflow-type: tm+mt
 source-wordcount: '135'
 ht-degree: 0%
 
 ---
-
 
 # Varnish ESI-blok
 

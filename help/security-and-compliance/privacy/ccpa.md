@@ -1,13 +1,13 @@
 ---
 title: California Consumer Privacy Act (CCPA)
 description: Leer over de Wet van de Privacy van de Consumentenprivacy van Californië (CCPA), die de rechten van consumenten in Californië uitbreidt om te bepalen hoe hun persoonlijke informatie wordt verzameld, opgeslagen, en gebruikt.
-source-git-commit: 2120e5bb912a89c58611ef9e23661a54e40a14f1
+exl-id: 5df0e745-fb2c-438e-aedd-17fb72be1350
+source-git-commit: 95ffff39d82cc9027fa633dffedf15193040802d
 workflow-type: tm+mt
 source-wordcount: '413'
 ht-degree: 0%
 
 ---
-
 
 # California Consumer Privacy Act (CCPA)
 

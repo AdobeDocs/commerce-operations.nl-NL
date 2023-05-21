@@ -4,13 +4,13 @@ description: Identificeer en richt kwesties die de plaatsprestaties negatief be√
 role: Admin, User, Developer
 feature: Best Practices
 feature-set: Commerce
-source-git-commit: e156fcafc5792036b37d9b199b870f1888c3f1ff
+exl-id: bafae565-9d09-4cc0-8507-e89a11dbd915
+source-git-commit: 95ffff39d82cc9027fa633dffedf15193040802d
 workflow-type: tm+mt
 source-wordcount: '203'
 ht-degree: 0%
 
 ---
-
 
 # Aanbevolen werkwijzen voor prestaties vooraf
 
@@ -40,5 +40,3 @@ Om de frontend prestaties van uw websiteopslag te controleren:
 - [Indexbeheer voor Admin-gebruikers](../../../configuration/cli/manage-indexers.md#configure-indexers)
 - [Indexbeheer met behulp van de CLI](https://experienceleague.adobe.com/docs/commerce-operations/configuration-guide/cli/manage-indexers.html)
 - [Overzicht van indexering voor ontwikkelaars](https://developer.adobe.com/commerce/php/development/components/indexing/)
-
-

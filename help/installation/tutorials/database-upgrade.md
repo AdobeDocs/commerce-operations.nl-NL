@@ -1,13 +1,13 @@
 ---
 title: Het databaseschema en de gegevens bijwerken
 description: Voer de volgende stappen uit om uw Adobe Commerce- of Magento Open Source-databaseschema bij te werken.
-source-git-commit: 5e072a87480c326d6ae9235cf425e63ec9199684
+exl-id: bef04561-6c6b-4636-a8ab-a1ade44f5a8f
+source-git-commit: 95ffff39d82cc9027fa633dffedf15193040802d
 workflow-type: tm+mt
 source-wordcount: '173'
 ht-degree: 0%
 
 ---
-
 
 # Het databaseschema en de gegevens bijwerken
 

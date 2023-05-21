@@ -1,13 +1,13 @@
 ---
 title: Verwijzing naar verkoopconfiguratiepaden
 description: Zie een lijst van waarden van de verkoopconfiguratie.
-source-git-commit: bd1bf6edd131ec93902246e95ce857b509f2a619
+exl-id: 7981f78a-5e5f-422c-9bff-54022e1fb9f3
+source-git-commit: 95ffff39d82cc9027fa633dffedf15193040802d
 workflow-type: tm+mt
-source-wordcount: '1500'
+source-wordcount: '1473'
 ht-degree: 0%
 
 ---
-
 
 # Verwijzing naar verkoopconfiguratiepaden
 
@@ -66,7 +66,7 @@ Deze configuratiewaarden zijn beschikbaar in de Admin in **Winkels** > Instellin
 | RMA inschakelen op productniveau | `sales/magento_rma/enabled_on_product` | ![Alleen handel](/help/assets/configuration/cloud-ee.png) |
 | Winkeladres gebruiken | `sales/magento_rma/use_store_address` | ![Alleen handel](/help/assets/configuration/cloud-ee.png) |
 
-{style=&quot;table-layout:auto&quot;}
+{style="table-layout:auto"}
 
 ## E-mailpaden verkopen
 
@@ -139,7 +139,7 @@ Deze configuratiewaarden zijn beschikbaar in de Admin in **Winkels** > Instellin
 | Volgorde-id weergeven in koptekst | `sales_pdf/shipment/put_order_id` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 | Volgorde-id weergeven in koptekst | `sales_pdf/creditmemo/put_order_id` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 
-{style=&quot;table-layout:auto&quot;}
+{style="table-layout:auto"}
 
 ## Belastingpaden
 
@@ -188,7 +188,7 @@ Deze configuratiewaarden zijn beschikbaar in de Admin in **Winkels** > Instellin
 | Belasting toepassen op FPT | `tax/weee/apply_vat` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 | FPT opnemen in subtotaal | `tax/weee/include_in_subtotal` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 
-{style=&quot;table-layout:auto&quot;}
+{style="table-layout:auto"}
 
 ## Paden uitchecken
 
@@ -213,7 +213,7 @@ Deze configuratiewaarden zijn beschikbaar in de Admin in **Winkels** > Instellin
 | Betalingssjabloon mislukt | `checkout/payment_failed/template` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 | Verzenden van e-mailkopieermethode met betalingsfout | `checkout/payment_failed/copy_method` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 
-{style=&quot;table-layout:auto&quot;}
+{style="table-layout:auto"}
 
 ## Paden met instellingen voor verzending
 
@@ -224,7 +224,7 @@ Deze configuratiewaarden zijn beschikbaar in de Admin in **Winkels** > Instellin
 | Aangepast verzendbeleid toepassen | `shipping/shipping_policy/enable_shipping_policy` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 | Verzendbeleid | `shipping/shipping_policy/shipping_policy_content` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 
-{style=&quot;table-layout:auto&quot;}
+{style="table-layout:auto"}
 
 ## Paden met meerdere instellingen
 
@@ -235,7 +235,7 @@ Deze configuratiewaarden zijn beschikbaar in de Admin in **Winkels** > Instellin
 | Verzending naar meerdere adressen toestaan | `multishipping/options/checkout_multiple` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 | Maximale toegestane hoeveelheid voor verzending naar meerdere adressen | `multishipping/options/checkout_multiple_maximum_qty` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 
-{style=&quot;table-layout:auto&quot;}
+{style="table-layout:auto"}
 
 ## Paden van leveringsmethoden
 
@@ -381,7 +381,7 @@ Deze configuratiewaarden zijn beschikbaar in de Admin in **Winkels** > Instellin
 | Methode tonen indien niet van toepassing | `carriers/dhl/showmethod` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 | Sorteervolgorde | `carriers/dhl/sort_order` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 
-{style=&quot;table-layout:auto&quot;}
+{style="table-layout:auto"}
 
 ## Google API-paden
 
@@ -407,7 +407,7 @@ Deze configuratiewaarden zijn beschikbaar in de Admin in **Winkels** > Instellin
 | Type omzetwaarde | `google/adwords/conversion_value_type` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 | Conversiewaarde | `google/adwords/conversion_value` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 
-{style=&quot;table-layout:auto&quot;}
+{style="table-layout:auto"}
 
 ## Cadeaupaden
 
@@ -432,4 +432,4 @@ Deze configuratiewaarden zijn beschikbaar in de Admin in **Winkels** > Instellin
 | Nieuwe groepsgrootte | `giftcard/giftcardaccount_general/pool_size` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 | Drempel lage codepool | `giftcard/giftcardaccount_general/pool_threshold` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 
-{style=&quot;table-layout:auto&quot;}
+{style="table-layout:auto"}

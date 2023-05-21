@@ -1,13 +1,13 @@
 ---
 title: Stappen voor migratie na gegevens
 description: Leer welke stappen u moet ondernemen nadat u de opdracht [!DNL Data Migration Tool] om gegevens te migreren van Magento 1 naar Magento 2.
-source-git-commit: 5e072a87480c326d6ae9235cf425e63ec9199684
+exl-id: 00171c41-ccea-4ebe-8958-becb9aa09973
+source-git-commit: 95ffff39d82cc9027fa633dffedf15193040802d
 workflow-type: tm+mt
 source-wordcount: '74'
 ht-degree: 0%
 
 ---
-
 
 # Stappen voor migratie na gegevens
 

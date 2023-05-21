@@ -1,13 +1,13 @@
 ---
 title: Een upgrade uitvoeren van een op een kit gebaseerde installatie
 description: Voer een upgrade uit van een Adobe Commerce- of Magento Open Source-installatie die u hebt gekloond vanuit een it-opslagplaats.
-source-git-commit: 7bcfbc4483f4b6d4c1a5e852adbd1cd81bc136b7
+exl-id: a8c42857-7221-4b21-8377-4bfb6308c418
+source-git-commit: 95ffff39d82cc9027fa633dffedf15193040802d
 workflow-type: tm+mt
 source-wordcount: '122'
 ht-degree: 0%
 
 ---
-
 
 # Een op een git gebaseerde installatie upgraden
 

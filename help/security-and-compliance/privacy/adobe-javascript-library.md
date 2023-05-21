@@ -3,13 +3,13 @@ title: Adobe Privacy JavaScript-bibliotheek
 description: Leer hoe u aangepaste gereedschappen kunt gebruiken om persoonlijke gegevens van klanten die zijn verzameld door Adobe Commerce en Magento Open Source, te openen en te verwijderen.
 hide: true
 hidefromtoc: true
-source-git-commit: 495dfd515759e4df507479de57118586eac14fda
+exl-id: 5080e03b-0a83-405c-a232-b93311e284a3
+source-git-commit: 95ffff39d82cc9027fa633dffedf15193040802d
 workflow-type: tm+mt
 source-wordcount: '341'
 ht-degree: 0%
 
 ---
-
 
 # Adobe Privacy JavaScript-bibliotheek
 

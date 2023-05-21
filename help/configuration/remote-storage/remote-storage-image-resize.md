@@ -1,10 +1,11 @@
 ---
 title: Afbeeldingsgrootte configureren voor externe opslag
 description: U kunt schijfbronnen optimaliseren door de grootte van afbeeldingen op de server te configureren.
-source-git-commit: 7fc5d561baa3c2a4aab160a35a1c8a302a62a3b1
+exl-id: 51c2b9b3-0f5f-4868-9191-911d5df341ec
+source-git-commit: 95ffff39d82cc9027fa633dffedf15193040802d
 workflow-type: tm+mt
 source-wordcount: '247'
-ht-degree: 1%
+ht-degree: 0%
 
 ---
 
@@ -34,7 +35,7 @@ Als u het formaat van afbeeldingen aan de serverzijde wilt wijzigen, moet u Adob
 
 1. Selecteer `Image optimization based on query parameters` URL in de **_URL-indeling van catalogusmedia_** veld.
 
-1. Klik op **[!UICONTROL Save Config]**.
+1. Klikken **[!UICONTROL Save Config]**.
 
 1. Doorgaan naar de [Nginx-configuratie](#configure-nginx).
 

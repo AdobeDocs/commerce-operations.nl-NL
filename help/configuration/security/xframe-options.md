@@ -1,13 +1,13 @@
 ---
 title: X-Frame-Options header
 description: Gebruik X-Frame-Opties om paginaweergaven te besturen.
-source-git-commit: db696b8ca501d128db655c5ebb161c654c6378a7
+exl-id: 83cf5fd2-3eb8-4bd9-99e2-1c701dcd1382
+source-git-commit: 95ffff39d82cc9027fa633dffedf15193040802d
 workflow-type: tm+mt
 source-wordcount: '225'
 ht-degree: 0%
 
 ---
-
 
 # X-Frame-Options header
 

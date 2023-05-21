@@ -1,13 +1,13 @@
 ---
-title: "De [!DNL Infra] tab"
+title: De [!DNL Infra] tab
 description: De [!DNL Infra] -tabblad isoleert problemen en oorzaken van infrastructuurproblemen.
-source-git-commit: 5e4ab9e62f395b0967c3a632659c70a22770e9db
+exl-id: 45f24177-3264-4848-99bc-951be32c1f7b
+source-git-commit: 95ffff39d82cc9027fa633dffedf15193040802d
 workflow-type: tm+mt
 source-wordcount: '252'
 ht-degree: 0%
 
 ---
-
 
 # De [!DNL Infra] tab
 

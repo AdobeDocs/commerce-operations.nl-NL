@@ -1,7 +1,8 @@
 ---
 title: Toegang krijgen [!DNL Site-Wide Analysis Tool]
 description: Leer hoe u toegang krijgt tot de [!DNL Site-Wide Analysis Tool]
-source-git-commit: c7fabdd83e03a288d627b70d48cdf57184d43603
+exl-id: b691fb2c-8d66-4cf9-8612-bbcb4df5b95f
+source-git-commit: 95ffff39d82cc9027fa633dffedf15193040802d
 workflow-type: tm+mt
 source-wordcount: '410'
 ht-degree: 0%
@@ -34,7 +35,7 @@ Voor de aangepaste rol die nodig is [!DNL Site-Wide Analysis Tool] toegang, doe 
    ![Analysedashboard voor de hele site](../../assets/tools/swat-role-access.png)
    *[!DNL Site-Wide Analysis Tool]machtiging geselecteerd voor de rol*
 
-1. Klik op **[!UICONTROL Save Role]**.
+1. Klikken **[!UICONTROL Save Role]**.
 
 1. Melden aan gebruikers aan wie die rol is toegewezen om zich af te melden bij de [!DNL Admin]en meld u opnieuw aan.
 
@@ -64,7 +65,7 @@ Voor de aangepaste rol die nodig is [!DNL Site-Wide Analysis Tool] toegang, doe 
 
 1. Schakel het selectievakje voor elk **[!UICONTROL Type]** en **[!UICONTROL Priority]** het plaatsen die u in het rapport wilt omvatten.
 
-1. Klik op **[!UICONTROL Generate Report]**.
+1. Klikken **[!UICONTROL Generate Report]**.
 
    ![Analysedashboard voor de hele site](../../assets/tools/swat-report-settings.png)
    *Rapportinstellingen*

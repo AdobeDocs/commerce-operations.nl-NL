@@ -1,13 +1,13 @@
 ---
 title: Ontwikkelingsomgeving Recommendations
 description: Meer informatie over prestatieaanbevelingen voor het instellen van uw lokale Adobe Commerce- of Magento Open Source-ontwikkelomgeving.
-source-git-commit: 2e1a06b59fda7db4a9b32d000e1b2a3ca88926d3
+exl-id: f57396c0-86be-4933-8066-eb51c42fb9e4
+source-git-commit: 95ffff39d82cc9027fa633dffedf15193040802d
 workflow-type: tm+mt
 source-wordcount: '235'
 ht-degree: 0%
 
 ---
-
 
 # Aanbevelingen voor de ontwikkelomgeving
 

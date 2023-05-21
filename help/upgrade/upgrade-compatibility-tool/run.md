@@ -1,13 +1,13 @@
 ---
-title: "Voer de [!DNL Upgrade Compatibility Tool]"
+title: Voer de [!DNL Upgrade Compatibility Tool]
 description: Voer de volgende stappen uit [!DNL Upgrade Compatibility Tool] in een opdrachtregelinterface voor uw Adobe Commerce-project.
-source-git-commit: 653d755023f96c0a6acc312f74fd4a0292f13a73
+exl-id: ea467a74-18eb-476b-96e2-23f4fc257d73
+source-git-commit: 95ffff39d82cc9027fa633dffedf15193040802d
 workflow-type: tm+mt
 source-wordcount: '1116'
 ht-degree: 0%
 
 ---
-
 
 # Download de [!DNL Upgrade Compatibility Tool]
 

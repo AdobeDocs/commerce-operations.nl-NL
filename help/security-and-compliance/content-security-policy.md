@@ -1,13 +1,13 @@
 ---
 title: Overzicht van het inhoudsbeveiligingsbeleid
 description: Leer hoe u de beveiligingspositie van uw Adobe Commerce- of Magento Open Source-winkel kunt verbeteren met behulp van een beleid voor inhoudsbeveiliging.
-source-git-commit: 1a608e8a5986026d5a187dc8cbd358fed2db5d9e
+exl-id: 81070a09-5f8f-48b1-b542-1443dbd43f5f
+source-git-commit: 95ffff39d82cc9027fa633dffedf15193040802d
 workflow-type: tm+mt
 source-wordcount: '429'
 ht-degree: 0%
 
 ---
-
 
 # Overzicht van het inhoudsbeveiligingsbeleid
 

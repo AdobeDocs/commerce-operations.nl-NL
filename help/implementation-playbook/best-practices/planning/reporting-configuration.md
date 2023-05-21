@@ -4,13 +4,13 @@ description: Optimaliseer siteprestaties door de rapportmodule te verwijderen al
 role: Admin
 feature: Best Practices
 feature-set: Commerce
-source-git-commit: 85f9355d0e8c704be3760334b07414d3e15b3b97
+exl-id: 8c991b8a-affb-4a9e-9383-671f595ff89e
+source-git-commit: 95ffff39d82cc9027fa633dffedf15193040802d
 workflow-type: tm+mt
 source-wordcount: '133'
 ht-degree: 0%
 
 ---
-
 
 # Beste praktijken voor rapportconfiguratie
 

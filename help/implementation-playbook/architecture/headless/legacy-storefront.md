@@ -31,7 +31,7 @@ De huidige standaardimplementatieoptie voor de meeste commerciële klanten omvat
 
 Voordat we in eindeloze opties geraken, moeten we beginnen met de meer bekende archiefront-architectuur. Als er geen kop wordt losgekoppeld, zou dit de gekoppelde opslagarchitectuur zijn, die het meest wordt gezien bij onze Luma-demo&#39;s.
 
-Dit is waar de storefront mogelijkheden strak met de kernhandelsdiensten worden geïntegreerd, niet door die laag GraphQL API wordt gescheiden. Er is dus veel bedrijfslogica gekoppeld aan dat thema. Deze aanpak is niet zonder kop en is niet PWA.
+Dit is waar de storefront mogelijkheden strak met de kernhandelsdiensten worden geïntegreerd, niet door die laag van GraphQL API worden gescheiden. Er is dus veel bedrijfslogica gekoppeld aan dat thema. Deze aanpak is niet zonder kop en is niet PWA.
 
 Dit is momenteel de gemeenschappelijkste optie koopt handelaars omdat het 100% eigenschapsteun met zowel B2B als B2C de mogelijkheden van de Handel heeft. De gemeenschap is er bekend mee, er is een volwassen ecosysteem van deskundigheid rond en het is in ruime mate compatibel met Adobe Commerce Marketplace-extensies.
 

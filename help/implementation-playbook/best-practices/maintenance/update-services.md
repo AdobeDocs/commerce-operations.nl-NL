@@ -4,13 +4,13 @@ description: Leer hoe u uw Adobe Commerce op de technologiestapel voor cloudinfr
 role: Developer
 feature: Best Practices
 feature-set: Commerce
-source-git-commit: cf8626bfab170a1e12cc72f0bc344c9beb9349a7
+exl-id: 62aeffe3-b5a6-49f8-a39b-3219b46cd486
+source-git-commit: 95ffff39d82cc9027fa633dffedf15193040802d
 workflow-type: tm+mt
 source-wordcount: '264'
 ht-degree: 0%
 
 ---
-
 
 # Beste werkwijzen voor services bijwerken
 

@@ -1,13 +1,13 @@
 ---
 title: Bereik voor upgrade
 description: Leer over achterwaartse onverenigbare veranderingen in een versie die Adobe Commerce of Magento Open Source douanemodules of derdeuitbreidingen zou kunnen beïnvloeden.
-source-git-commit: 682963fb66519097e54f14f2b84ed71528030054
+exl-id: dab2a14f-dbf0-422e-afb4-642e2220ec7a
+source-git-commit: 95ffff39d82cc9027fa633dffedf15193040802d
 workflow-type: tm+mt
 source-wordcount: '928'
 ht-degree: 0%
 
 ---
-
 
 # Begrijp het werkingsgebied van verbetering
 

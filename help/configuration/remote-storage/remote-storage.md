@@ -1,7 +1,8 @@
 ---
 title: Externe opslag configureren
 description: Leer hoe te om de Verre module van de Opslag voor de toepassing van de Handel op-gebouw te vormen.
-source-git-commit: 9a5993c9a65ad210f1a9682734730f235bbc3d44
+exl-id: 0428f889-46b0-44c9-8bd9-98c1be797011
+source-git-commit: 95ffff39d82cc9027fa633dffedf15193040802d
 workflow-type: tm+mt
 source-wordcount: '524'
 ht-degree: 0%

@@ -1,13 +1,13 @@
 ---
 title: Varnish configureren voor handel
 description: Leer om uw Varnish configuratiedossier voor de toepassing van de Handel bij te werken en te beheren.
-source-git-commit: d451ea025a6f4fc8a4a9f15ca83896a63058a3a0
+exl-id: 6c007ff9-493f-4df2-b7b4-438b41fd7e37
+source-git-commit: 95ffff39d82cc9027fa633dffedf15193040802d
 workflow-type: tm+mt
 source-wordcount: '377'
 ht-degree: 0%
 
 ---
-
 
 # Vorm de toepassing van de Handel om Varnish te gebruiken
 

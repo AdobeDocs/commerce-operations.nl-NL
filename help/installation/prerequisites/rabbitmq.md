@@ -1,13 +1,13 @@
 ---
 title: Berichtenmakelaar
 description: Voer de volgende stappen uit om de vereiste berichtbrokersoftware te installeren en te configureren (zoals [!DNL RabbitMQ]) voor installaties in Adobe Commerce en Magento Open Source.
-source-git-commit: 1233d2e1d80a3228626be3e20f1bd826b1283523
+exl-id: ae6200d6-540f-46b3-92ba-7df7f6bb6fae
+source-git-commit: 95ffff39d82cc9027fa633dffedf15193040802d
 workflow-type: tm+mt
 source-wordcount: '581'
 ht-degree: 0%
 
 ---
-
 
 # Berichtenmakelaar
 

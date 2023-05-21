@@ -1,7 +1,8 @@
 ---
 title: Caching configureren
 description: Leer over caching en hoe te om geheim voorgeheugenmechanismen voor de toepassing van Adobe Commerce en van de Magento Open Source te vormen.
-source-git-commit: 5e072a87480c326d6ae9235cf425e63ec9199684
+exl-id: 6effa069-c043-411a-b161-01210be17391
+source-git-commit: 95ffff39d82cc9027fa633dffedf15193040802d
 workflow-type: tm+mt
 source-wordcount: '245'
 ht-degree: 0%

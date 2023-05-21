@@ -1,13 +1,13 @@
 ---
 title: Releasebeleid
 description: Leer meer over de verschillende typen Adobe Commerce-releases, zoals kleine patches, beveiligingspatches, functies, hotfix, afzonderlijke patches en aangepaste patches.
-source-git-commit: 1705e930b7ab0176722c4f911dd06f448f992373
+exl-id: 61a83de6-6a7b-4a88-8fff-1638b4fe472a
+source-git-commit: 95ffff39d82cc9027fa633dffedf15193040802d
 workflow-type: tm+mt
 source-wordcount: '818'
 ht-degree: 0%
 
 ---
-
 
 # Adobe Commerce-releasebeleid
 

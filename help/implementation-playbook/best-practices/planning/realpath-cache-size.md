@@ -4,13 +4,13 @@ description: Leer hoe u de Adobe Commerce-prestaties kunt optimaliseren door de 
 role: Developer
 feature: Best Practices
 feature-set: Commerce
-source-git-commit: 510f2d4cdaec1034cb04a01fab0948c4261c6d10
+exl-id: 1cd48155-5d60-48b2-b07b-9b5784b81681
+source-git-commit: 95ffff39d82cc9027fa633dffedf15193040802d
 workflow-type: tm+mt
 source-wordcount: '181'
 ht-degree: 0%
 
 ---
-
 
 # Aanbevolen werkwijzen voor configuratie van cache in realpath
 
@@ -39,4 +39,3 @@ Als de de configuratiewaarden van het geheime voorgeheugen Realpath te laag of t
    - [Best practices voor databases](database-on-cloud.md)
    - [Meest voorkomende databaseproblemen in Magento Commerce Cloud](../maintenance/resolve-database-performance-issues.md)
 - [Met indexeerprogramma&#39;s &quot;Update On Schedule&quot; worden de Magento-prestaties geoptimaliseerd](../maintenance/indexer-configuration.md)
-

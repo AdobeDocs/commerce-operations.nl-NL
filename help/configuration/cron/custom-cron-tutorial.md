@@ -1,13 +1,13 @@
 ---
 title: Een aangepaste uitsnijdtaak en uitsnijdgroep configureren (zelfstudie)
 description: Gebruik deze stapsgewijze zelfstudie om een aangepaste uitsnijdtaak te maken.
-source-git-commit: d263e412022a89255b7d33b267b696a8bb1bc8a2
+exl-id: d8efcafc-3ae1-4c2d-a8ad-4a806fb48932
+source-git-commit: 95ffff39d82cc9027fa633dffedf15193040802d
 workflow-type: tm+mt
 source-wordcount: '808'
 ht-degree: 0%
 
 ---
-
 
 # Een aangepaste uitsnijdtaak configureren
 

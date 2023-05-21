@@ -7,7 +7,7 @@ hide: true
 hidefromtoc: true
 source-git-commit: 4360a3436f013c1b2a8b95a876d2037a6987acac
 workflow-type: tm+mt
-source-wordcount: '78'
+source-wordcount: '89'
 ht-degree: 0%
 
 ---
@@ -43,7 +43,7 @@ Available features: https://git.corp.adobe.com/AdobeDocs/exl-config/blob/master/
 
 Adobe Commerce op cloudinfrastructuur met Adobe Commerce versie 2.3.4 of lager en MariaDB versie 10.0 of lager.
 
-<!-- Business type: B2C and B2B -- specify only if needed/)-->
+&lt;!— Bedrijfstype: B2C en B2B — alleen vermelden indien nodig/—>
 
 ## Koptekst...
 

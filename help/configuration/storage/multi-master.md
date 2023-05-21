@@ -1,13 +1,13 @@
 ---
 title: Oplossing voor gesplitste databaseprestaties
 description: Lees over de gesplitste databaseoplossing voor Adobe Commerce en Magento Open Source.
-source-git-commit: 5e072a87480c326d6ae9235cf425e63ec9199684
+exl-id: 922a9af7-2c46-4bf3-b1ad-d966f5564ec0
+source-git-commit: 95ffff39d82cc9027fa633dffedf15193040802d
 workflow-type: tm+mt
 source-wordcount: '626'
 ht-degree: 0%
 
 ---
-
 
 # Overzicht van de gesplitste databaseoplossing
 

@@ -4,13 +4,13 @@ description: Leer hoe u instructies over uw Adobe Commerce-site doorgeeft aan we
 role: Developer
 feature-set: Commerce
 feature: Best Practices
-source-git-commit: cf8626bfab170a1e12cc72f0bc344c9beb9349a7
+exl-id: f3a81bab-a47a-46ad-b334-920df98c87ab
+source-git-commit: 95ffff39d82cc9027fa633dffedf15193040802d
 workflow-type: tm+mt
 source-wordcount: '596'
 ht-degree: 0%
 
 ---
-
 
 # Aanbevolen procedures voor het configureren `robots.txt` en `sitemap.xml` bestanden
 

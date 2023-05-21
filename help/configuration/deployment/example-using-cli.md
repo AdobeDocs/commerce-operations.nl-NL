@@ -1,13 +1,13 @@
 ---
 title: Voorbeeld met CLI-opdrachten
 description: Zie een voorbeeld van hoe te om gedeelde, systeem-specifieke, en gevoelige waarden in uw ontwikkelingssysteem te plaatsen gebruikend de bevellijn.
-source-git-commit: 6a3995dd24f8e3e8686a8893be9693581d31712b
+exl-id: d0058e9f-a5a9-48a6-9c66-c61515666335
+source-git-commit: 95ffff39d82cc9027fa633dffedf15193040802d
 workflow-type: tm+mt
 source-wordcount: '1019'
 ht-degree: 0%
 
 ---
-
 
 # Voorbeeld met CLI-opdrachten
 

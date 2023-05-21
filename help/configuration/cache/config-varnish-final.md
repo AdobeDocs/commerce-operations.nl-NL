@@ -1,13 +1,13 @@
 ---
 title: Laatste verificatie
 description: Controleer of uw Varnish-configuratie op de juiste wijze is ingesteld voor gebruik met de Adobe Commerce-toepassing.
-source-git-commit: 5e072a87480c326d6ae9235cf425e63ec9199684
+exl-id: 01f28c93-75cd-4969-9142-b8dac0aa2adb
+source-git-commit: 95ffff39d82cc9027fa633dffedf15193040802d
 workflow-type: tm+mt
 source-wordcount: '345'
 ht-degree: 0%
 
 ---
-
 
 # Laatste verificatie van de Varnish-configuratie
 

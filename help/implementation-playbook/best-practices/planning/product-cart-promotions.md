@@ -4,13 +4,13 @@ description: Leer beste praktijken voor het vormen van verkoopregels en couponco
 role: User
 feature: Best Practices
 feature-set: Commerce
-source-git-commit: 510f2d4cdaec1034cb04a01fab0948c4261c6d10
+exl-id: 6e177836-b8da-4e55-842c-e12ff54ffaf5
+source-git-commit: 95ffff39d82cc9027fa633dffedf15193040802d
 workflow-type: tm+mt
 source-wordcount: '252'
 ht-degree: 0%
 
 ---
-
 
 # Aanbevolen procedures voor het configureren van promoties
 

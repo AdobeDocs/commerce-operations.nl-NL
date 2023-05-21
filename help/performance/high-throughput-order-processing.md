@@ -1,13 +1,13 @@
 ---
 title: Verwerking van bestellingen met hoge doorvoer
 description: Optimaliseer de plaatsing van bestellingen en het afrekenen van bestellingen voor uw Adobe Commerce- of Magento Open Source-implementatie.
-source-git-commit: 45ffa6487d94feba3d6c2a6d5d938108b1fef91d
+exl-id: dc2d0399-0d7f-42d8-a6cf-ce126e0b052d
+source-git-commit: 95ffff39d82cc9027fa633dffedf15193040802d
 workflow-type: tm+mt
 source-wordcount: '1048'
 ht-degree: 0%
 
 ---
-
 
 # Bestelverwerking met hoge doorvoer
 
@@ -88,7 +88,7 @@ De volgende functies zijn **niet** ondersteund door AsyncOrder, maar blijft sync
 
 #### Ondersteuning voor web-API
 
-Wanneer de module AsyncOrder wordt toegelaten, de volgende REST eindpunten en de mutaties GraphQL asynchroon lopen:
+Wanneer de module AsyncOrder is ingeschakeld, worden de volgende REST-eindpunten en GraphQL-mutaties asynchroon uitgevoerd:
 
 **REST:**
 
@@ -103,7 +103,7 @@ Wanneer de module AsyncOrder wordt toegelaten, de volgende REST eindpunten en de
 
 >[!INFO]
 >
->GraphQL biedt geen ondersteuning voor het asynchroon plaatsen van verhandelbare aanhalingstekenorders.
+>GraphQL biedt geen ondersteuning voor het asynchroon plaatsen van verhandelbare aanhalingstekens.
 
 #### Uitgezonderd betalingsmethoden
 

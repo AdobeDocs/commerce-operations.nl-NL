@@ -1,13 +1,13 @@
 ---
 title: Verwijzing naar configuratiepaden voor B2B-extensie
 description: Zie een lijst met B2B-gerelateerde configuratiewaarden.
-source-git-commit: ee2e446edf79efcd7cbbd67248f8e7ece06bfefd
+exl-id: 3414dea1-17c9-4462-8b8a-51a6045b0bc9
+source-git-commit: 95ffff39d82cc9027fa633dffedf15193040802d
 workflow-type: tm+mt
-source-wordcount: '859'
+source-wordcount: '841'
 ht-degree: 0%
 
 ---
-
 
 # Verwijzing naar configuratiepaden voor B2B-extensie
 
@@ -44,7 +44,7 @@ Deze configuratiewaarden zijn beschikbaar in de Admin in **[!UICONTROL Stores]**
 | Toepasselijke betalingsmethoden | `btob/default_b2b_payment_methods/applicable_payment_methods` |  |  |  |
 | Betalingsmethoden | `btob/default_b2b_payment_methods/available_payment_methods` |  |  |  |
 
-{style=&quot;table-layout:auto&quot;}
+{style="table-layout:auto"}
 
 ## Categorie Klanten
 
@@ -88,7 +88,7 @@ Deze configuratiewaarden zijn beschikbaar in de Admin in **[!UICONTROL Stores]**
 | Geretourneerde e-mailsjabloon | `company/email/credit_refunded_email_template` |  |  |  |
 | Omgekeerde e-mailsjabloon | `company/email/credit_reverted_email_template` |  |  |  |
 
-{style=&quot;table-layout:auto&quot;}
+{style="table-layout:auto"}
 
 ### Bij aanvraag worden paden weergegeven
 
@@ -98,7 +98,7 @@ Deze configuratiewaarden zijn beschikbaar in de Admin in **Winkels** > Instellin
 | -------------- | -------------- | -------------- | -------------- | -------------- |
 | Aantal aanvraaglijsten | `requisitionlist/general/number_requisition_lists` |  |  |  |
 
-{style=&quot;table-layout:auto&quot;}
+{style="table-layout:auto"}
 
 ## Verkoopcategorie
 
@@ -121,7 +121,7 @@ Deze configuratiewaarden zijn beschikbaar in de Admin in **Winkels** > Instellin
 | E-mailkopie van offerte verzenden naar | `sales_email/quote/copy_to` |  |  | ![Gevoelig](/help/assets/configuration/cloud-sens.png) |
 | Methode voor e-mail met offerte verzenden | `sales_email/quote/copy_method` |  |  |  |
 
-{style=&quot;table-layout:auto&quot;}
+{style="table-layout:auto"}
 
 ### Aanhalingspaden
 
@@ -140,7 +140,7 @@ Deze configuratiewaarden zijn beschikbaar in de Admin in **Winkels** > Instellin
 | Bestandsindelingen voor uploaden | `quote/attached_files/file_formats` |  |  |  |
 | Maximale bestandsgrootte | `quote/attached_files/maximum_file_size` |  |  |  |
 
-{style=&quot;table-layout:auto&quot;}
+{style="table-layout:auto"}
 
 ## Paden voor betalingsmethoden
 
@@ -257,4 +257,4 @@ Deze configuratiewaarden zijn beschikbaar in de Admin in **Winkels** > Instellin
 | Maximum aantal bestellingen | `payment/it/companycredit/max_order_total` |  |  |  |
 | Sorteervolgorde | `payment/it/companycredit/sort_order` |  |  |  |
 
-{style=&quot;table-layout:auto&quot;}
+{style="table-layout:auto"}

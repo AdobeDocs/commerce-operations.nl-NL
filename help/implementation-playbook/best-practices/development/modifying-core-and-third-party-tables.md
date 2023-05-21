@@ -5,9 +5,10 @@ role: Developer, Architect
 feature: Best Practices
 feature-set: Commerce
 last-substantial-update: 2022-11-15T00:00:00Z
-source-git-commit: 570fa4877f578f636736f0404169ed215fd06b24
+exl-id: 9e7adaaa-b165-4293-aa98-5dc4b8c23022
+source-git-commit: 95ffff39d82cc9027fa633dffedf15193040802d
 workflow-type: tm+mt
-source-wordcount: '1469'
+source-wordcount: '1438'
 ht-degree: 0%
 
 ---
@@ -22,7 +23,7 @@ Migreren van [!DNL Magento 1] en andere e-commerceplatforms, of het werken met m
 
 De belangrijkste reden om het wijzigen van kernlijsten te vermijden is dat Adobe Commerce onderliggende logica omvat die ruwe SQL vragen bevat. Wijzigingen in de structuur van de tabel kunnen leiden tot onverwachte bijwerkingen die moeilijk zijn op te lossen. De wijziging kan ook invloed hebben op bewerkingen met DDL (Data Definition Language) die onverwachte en onvoorspelbare gevolgen voor de prestaties hebben.
 
-Een andere reden om te vermijden veranderend de structuur van de gegevensbestandlijst is dat uw veranderingen kwesties kunnen veroorzaken als het team van de kernontwikkeling of derdeontwikkelaars de structuur van hun gegevensbestandlijsten veranderen. Er zijn bijvoorbeeld een paar kerndatabasetabellen die een kolom hebben met de naam `additional_data`. Dit is altijd een `text` kolomtype. Nochtans, voor prestatiesredenen, zou het kernteam de kolom kunnen veranderen in `longtext`. Dit type kolom is een alias voor JSON. Door in dit kolomtype om te zetten, worden er prestatiewinst en zoekbaarheid toegevoegd aan die kolom, die niet als a bestaat `text` type. Meer informatie over dit onderwerp vindt u in [JSON-gegevenstype](https://mariadb.com/kb/en/json-data-type/){target=&quot;_blank&quot;}.
+Een andere reden om te vermijden veranderend de structuur van de gegevensbestandlijst is dat uw veranderingen kwesties kunnen veroorzaken als het team van de kernontwikkeling of derdeontwikkelaars de structuur van hun gegevensbestandlijsten veranderen. Er zijn bijvoorbeeld een paar kerndatabasetabellen die een kolom hebben met de naam `additional_data`. Dit is altijd een `text` kolomtype. Nochtans, voor prestatiesredenen, zou het kernteam de kolom kunnen veranderen in `longtext`. Dit type kolom is een alias voor JSON. Door in dit kolomtype om te zetten, worden er prestatiewinst en zoekbaarheid toegevoegd aan die kolom, die niet als a bestaat `text` type. Meer informatie over dit onderwerp vindt u in [JSON-gegevenstype](https://mariadb.com/kb/en/json-data-type/){target="_blank"}.
 
 ## Weet wanneer gegevens moeten worden opgeslagen of verwijderd
 
@@ -34,15 +35,15 @@ Als uw project erfenisgegevens, zoals oude orden of klantenverslagen bevat, over
 
 Deze situatie zou vereisen dat de database naar een server wordt gemigreerd, waarbij een webinterface wordt aangeboden om de gegevens te lezen, of een training in het gebruik van MySQL Workbench of vergelijkbare tools. Als u deze gegevens niet in de nieuwe database opneemt, wordt de migratie versneld doordat het ontwikkelingsteam zich kan richten op de nieuwe site in plaats van problemen met de migratie van gegevens op te lossen.
 
-Een andere verwante optie om de gegevens buiten de handel te houden maar het toestaan van u om het in echt te gebruiken - tijd zou andere hulpmiddelen, zoals het net gebruiken GraphQL hefboomwerkend zijn. Deze optie combineert verschillende gegevensbronnen en retourneert deze als één reactie.
+Een andere verwante optie voor het houden van de gegevens extern aan handel maar het toestaan van u om het in echt te gebruiken - tijd zou hefboomwerking andere hulpmiddelen, zoals het netwerk van GraphQL zijn. Deze optie combineert verschillende gegevensbronnen en retourneert deze als één reactie.
 
-U kunt bijvoorbeeld `stitch` oude bestellingen van een externe database samen te voegen, bijvoorbeeld de oude Magento 1-site die is ontmanteld. Dan gebruikend het net GraphQL, toon hen als deel van de de ordegeschiedenis van de klanten. Deze oude bestellingen kunnen worden gecombineerd met de bestellingen van uw huidige [!DNL Adobe Commerce] milieu.
+U kunt bijvoorbeeld `stitch` oude bestellingen van een externe database samen te voegen, bijvoorbeeld de oude Magento 1-site die is ontmanteld. Dan gebruikend het net van GraphQL, toon hen als deel van de klantenorde geschiedenis. Deze oude bestellingen kunnen worden gecombineerd met de bestellingen van uw huidige [!DNL Adobe Commerce] milieu.
 
-Voor meer informatie over het gebruiken van API netwerk met GraphQL, zie [Wat is API-net](https://developer.adobe.com/graphql-mesh-gateway/gateway/overview/){target=&quot;_blank&quot;}) en [GraphQL-netgateway](https://developer.adobe.com/graphql-mesh-gateway/){target=&quot;_blank&quot;}.
+Ga voor meer informatie over het gebruik van API-netten met GraphQL naar [Wat is API-net](https://developer.adobe.com/graphql-mesh-gateway/gateway/overview/){target="_blank"}) and [GraphQL Mesh Gateway](https://developer.adobe.com/graphql-mesh-gateway/){target="_blank"}.
 
 ## Oudere gegevens migreren met extensiekenmerken
 
-Als u vaststelt dat oudere gegevens moeten worden gemigreerd of dat nieuwe gegevens moeten worden opgeslagen in [!DNL Adobe Commerce], Adobe raadt u aan [extensiekenmerken](https://developer.adobe.com/commerce/php/development/components/add-attributes/){target=&quot;_blank&quot;}. Het gebruik van extensiekenmerken voor het opslaan van aanvullende gegevens biedt de volgende voordelen:
+Als u vaststelt dat oudere gegevens moeten worden gemigreerd of dat nieuwe gegevens moeten worden opgeslagen in [!DNL Adobe Commerce], Adobe raadt u aan [extensiekenmerken](https://developer.adobe.com/commerce/php/development/components/add-attributes/){target="_blank"}. Het gebruik van extensiekenmerken voor het opslaan van aanvullende gegevens biedt de volgende voordelen:
 
 - U kunt de gegevens controleren die en de gegevensbestandstructuur worden voortgeduurd, die ervoor zorgt dat het gegeven met het correcte kolomtype en juiste indexen wordt bewaard.
 - Meeste entiteiten in [!DNL Adobe Commerce] en [!DNL Magento Open Source] het gebruik van extensiekenmerken ondersteunen.
@@ -52,9 +53,9 @@ Twee voorbeelden van opslagplaatsen zijn gegevensbestandlijsten en [!DNL Redis].
 
 ### Andere alternatieven overwegen
 
-Als ontwikkelaar is het van essentieel belang om altijd te overwegen om hulpmiddelen buiten uw te gebruiken [!DNL Adobe Commerce] omgeving, zoals GraphQL-net en Adobe App Builder. Deze hulpmiddelen kunnen u helpen toegang tot de gegevens behouden maar hebben geen invloed op de kernhandelstoepassing of zijn onderliggende gegevensbestandlijsten. Met deze aanpak maakt u uw gegevens beschikbaar via een API. Dan, voegt u een gegevensbron aan uw configuratie van de Bouwer van de App toe. Gebruikend GrafiekQL Net, kunt u die gegevensbronnen combineren en één enkele reactie produceren zoals vermeld in [oudere gegevens](#legacy-data).
+Als ontwikkelaar is het van essentieel belang om altijd te overwegen om hulpmiddelen buiten uw te gebruiken [!DNL Adobe Commerce] omgeving, zoals GraphQL mesh en Adobe App Builder. Deze hulpmiddelen kunnen u helpen toegang tot de gegevens behouden maar hebben geen invloed op de kernhandelstoepassing of zijn onderliggende gegevensbestandlijsten. Met deze aanpak maakt u uw gegevens beschikbaar via een API. Dan, voegt u een gegevensbron aan uw configuratie van de Bouwer van de App toe. Met GraphQL Mesh kunt u die gegevensbronnen combineren en één reactie produceren, zoals vermeld in [oudere gegevens](#legacy-data).
 
-Zie voor meer informatie over het GraphQL-net [GraphQL-netgateway](https://developer.adobe.com/graphql-mesh-gateway/){target=&quot;_blank&quot;}. Voor informatie over de Adobe App Builder raadpleegt u [Introductie van App Builder](https://experienceleague.adobe.com/docs/adobe-developers-live-events/events/2021/oct2021/introduction-app-builder.html?lang=en){target=&quot;_blank&quot;}.
+Zie voor meer informatie over GraphQL mesh [GraphQL Mesh Gateway](https://developer.adobe.com/graphql-mesh-gateway/){target="_blank"}. For information about the Adobe App Builder,  see [Introducing App Builder](https://experienceleague.adobe.com/docs/adobe-developers-live-events/events/2021/oct2021/introduction-app-builder.html?lang=en){target="_blank"}.
 
 ## Een kerntabel of tabel van derden wijzigen
 
@@ -73,11 +74,11 @@ Adobe raadt u aan deze stappen te volgen wanneer u een kolom toevoegt aan een ke
 
    Bijvoorbeeld: `app/code/YourCompany/Customer`
 
-1. Maak de juiste bestanden om de module in te schakelen (zie [Een module maken](https://experienceleague.adobe.com/docs/commerce-learn/tutorials/backend-development/create-module.html){target=&quot;_blank&quot;}.
+1. Maak de juiste bestanden om de module in te schakelen (zie [Een module maken](https://experienceleague.adobe.com/docs/commerce-learn/tutorials/backend-development/create-module.html){target="_blank"}.
 
 1. Een bestand maken met de naam `db_schema.xml` in de `etc` en breng de gewenste wijzigingen aan.
 
-   Indien van toepassing, een `db_schema_whitelist.json` bestand. Zie [Declarative Schema](https://developer.adobe.com/commerce/php/development/components/declarative-schema/configuration/){target=&quot;_blank&quot;} voor meer informatie.
+   Indien van toepassing, een `db_schema_whitelist.json` bestand. Zie [Declarative Schema](https://developer.adobe.com/commerce/php/development/components/declarative-schema/configuration/){target="_blank"} voor meer informatie .
 
 ### Mogelijke effecten
 

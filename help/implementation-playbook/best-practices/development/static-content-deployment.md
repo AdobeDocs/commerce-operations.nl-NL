@@ -4,13 +4,13 @@ description: Leer hoe u problemen met statische inhoud kunt voorkomen die niet o
 role: Developer
 feature: Best Practices
 feature-set: Commerce
-source-git-commit: 48c5666ee9b83bbf8a5c6375ec53762d918bcece
+exl-id: 9f521963-6fe4-4844-b2d1-fd457b706900
+source-git-commit: 95ffff39d82cc9027fa633dffedf15193040802d
 workflow-type: tm+mt
 source-wordcount: '501'
 ht-degree: 0%
 
 ---
-
 
 # Aanbevolen werkwijzen voor implementatie van statische inhoud
 
@@ -54,4 +54,3 @@ In onze documentatie voor ontwikkelaars:
 * [Implementatiestroom](../../../performance/deployment-flow.md)
 * [Implementatie zonder downtime](https://devdocs.magento.com/cloud/deploy/reduce-downtime.html)
 * [cloudimplementatie optimaliseren](https://devdocs.magento.com/cloud/deploy/optimize-cloud-deployment.html)
-

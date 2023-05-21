@@ -1,19 +1,19 @@
 ---
 title: Patches toepassen
 description: Leer hoe u patches kunt toepassen op een Adobe Commerce- of Magento Open Source-project.
-source-git-commit: e2ddb30da8dd86236e1dcf33a3f911b67384a6d7
+exl-id: 1d5d81ad-0115-4575-adfd-dde7c2826d85
+source-git-commit: 95ffff39d82cc9027fa633dffedf15193040802d
 workflow-type: tm+mt
-source-wordcount: '330'
+source-wordcount: '326'
 ht-degree: 0%
 
 ---
-
 
 # Patches toepassen
 
 U kunt patches op een van de volgende manieren toepassen:
 
-- [[!DNL Quality Patches Tool]](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html){target=&quot;_blank&quot;}
+- [[!DNL Quality Patches Tool]](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html){target="_blank"}
 - [Opdrachtregel](../patches/apply.md#command-line)
 - [Composer](../patches/apply.md#composer)
 
@@ -21,7 +21,7 @@ U kunt patches op een van de volgende manieren toepassen:
 
 >[!IMPORTANT]
 >
->Als u officiële kwaliteitspatches wilt toepassen, gebruikt u de optie [[!DNL Quality Patches Tool]](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html){target=&quot;_blank&quot;}. Voer altijd uitgebreide tests uit voordat u een aangepaste patch implementeert.
+>Als u officiële kwaliteitspatches wilt toepassen, gebruikt u de optie [[!DNL Quality Patches Tool]](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html){target="_blank"}. Voer altijd uitgebreide tests uit voordat u een aangepaste patch implementeert.
 
 Een aangepaste patch toepassen met Composer:
 

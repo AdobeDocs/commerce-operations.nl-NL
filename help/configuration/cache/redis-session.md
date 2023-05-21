@@ -1,13 +1,13 @@
 ---
 title: Redis gebruiken voor sessieopslag
 description: Leer hoe u Redis voor sessieopslag configureert.
-source-git-commit: c65c065c5f9ac2847caa8898535afdacf089006a
+exl-id: f93f500d-65b0-4788-96ab-f1c3d2d40a38
+source-git-commit: 95ffff39d82cc9027fa633dffedf15193040802d
 workflow-type: tm+mt
 source-wordcount: '724'
 ht-degree: 1%
 
 ---
-
 
 # Redis gebruiken voor sessieopslag
 
@@ -35,7 +35,7 @@ waar
 | session-save-redis-host | host | Volledig - gekwalificeerde hostname, IP adres, of absolute weg als het gebruiken van de contactdozen van UNIX. | localhost |
 | session-save-redis-port | poort | Redis server listen port. | 6379 |
 | session-save-redis-password | password | Hiermee geeft u een wachtwoord op als uw Redis-server verificatie vereist. | leeg |
-| session-save-redis-timeout | timeout | Time-out verbinding, in seconden. | 2,5 |
+| session-save-redis-timeout | timeout | Time-out verbinding, in seconden. | 2.5 |
 | session-save-redis-persistent-id | persistent_identifier | Unieke tekenreeks om permanente verbindingen in te schakelen (bijvoorbeeld sess-db0).<br>[Bekende problemen met phpredis en php-fpm](https://github.com/phpredis/phpredis/issues/70). |
 | session-save-redis-db | database | Uniek Redis-databasenummer, dat wordt aanbevolen om te beschermen tegen gegevensverlies.<br><br>**Belangrijk**: Als u Redis voor meer dan één type caching gebruikt, moeten de gegevensbestandaantallen verschillend zijn. U wordt aangeraden het standaard cachedatabasenummer aan 0, het databasenummer voor het in cache plaatsen van pagina&#39;s aan 1 en het databasenummer voor de sessieopslag aan 2 toe te wijzen. | 0 |
 | session-save-hers-compression-threshold | compression_threshold | Instellen op 0 om compressie uit te schakelen (aanbevolen als `suhosin.session.encrypt = On`).<br>[Bekende uitgave met tekenreeksen van meer dan 64 KB](https://github.com/colinmollenhour/Cm_Cache_Backend_Redis/issues/18). | 2048 |
@@ -133,4 +133,3 @@ Als beide opdrachten zijn uitgevoerd, wordt Redis op de juiste wijze ingesteld.
 ### Gecomprimeerde gegevens controleren
 
 Als u gecomprimeerde sessiegegevens en paginacache wilt inspecteren, [RESP.app](https://flathub.org/apps/details/app.resp.RESP) ondersteunt de automatische decompressie van het cachegeheugen voor 2 sessies en pagina&#39;s van Handel en geeft PHP-sessiegegevens weer in een leesbare vorm.
-

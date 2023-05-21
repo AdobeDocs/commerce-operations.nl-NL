@@ -1,13 +1,13 @@
 ---
 title: Voorbeeld met omgevingsvariabelen
 description: Zie een voorbeeld van hoe te om gedeelde, systeem-specifieke, en gevoelige waarden in uw ontwikkelingssysteem te plaatsen gebruikend omgevingsvariabelen.
-source-git-commit: 6a3995dd24f8e3e8686a8893be9693581d31712b
+exl-id: 98438674-e7f8-4143-9a76-3cc8bf0a73dc
+source-git-commit: 95ffff39d82cc9027fa633dffedf15193040802d
 workflow-type: tm+mt
 source-wordcount: '1085'
 ht-degree: 0%
 
 ---
-
 
 # Voorbeeld met omgevingsvariabelen
 

@@ -1,13 +1,13 @@
 ---
 title: Logbestand inschakelen
 description: Leer hoe te om types van registreren toe te laten en onbruikbaar te maken.
-source-git-commit: 6a3995dd24f8e3e8686a8893be9693581d31712b
+exl-id: 78b0416a-5bad-42a9-a918-603600e98928
+source-git-commit: 95ffff39d82cc9027fa633dffedf15193040802d
 workflow-type: tm+mt
 source-wordcount: '252'
 ht-degree: 0%
 
 ---
-
 
 # Logbestand inschakelen
 

@@ -1,13 +1,13 @@
 ---
 title: Verwijzing naar catalogusconfiguratiepaden
 description: Zie een lijst met configuratiewaarden voor de catalogus.
-source-git-commit: e4b7ea70b96143629b245409537459ad259393e0
+exl-id: 19451443-228e-437d-a3eb-7dc968b9fb0d
+source-git-commit: 95ffff39d82cc9027fa633dffedf15193040802d
 workflow-type: tm+mt
 source-wordcount: '814'
 ht-degree: 0%
 
 ---
-
 
 # Verwijzing naar catalogusconfiguratiepaden
 

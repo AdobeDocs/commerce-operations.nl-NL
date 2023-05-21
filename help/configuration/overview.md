@@ -1,13 +1,13 @@
 ---
 title: Overzicht van de configuratiehandleiding
 description: Meer informatie over alle configureerbare functies en services voor uw Adobe Commerce- of Magento Open Source-toepassing.
-source-git-commit: 8102c083bb0216bbdcad2882f39f7711b9cee52b
+exl-id: c4997792-5a47-4ae5-903a-7e5d7235e42e
+source-git-commit: 95ffff39d82cc9027fa633dffedf15193040802d
 workflow-type: tm+mt
 source-wordcount: '163'
 ht-degree: 0%
 
 ---
-
 
 # Configuratiegids
 

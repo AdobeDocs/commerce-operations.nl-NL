@@ -1,13 +1,13 @@
 ---
 title: Hardware Recommendations
 description: Bekijk een lijst met aanbevolen hardware voor optimale prestaties van Adobe Commerce- en Magento Open Source-implementaties.
-source-git-commit: d263e412022a89255b7d33b267b696a8bb1bc8a2
+exl-id: ab548c4b-6f56-4409-a4ed-5c959939e04b
+source-git-commit: 95ffff39d82cc9027fa633dffedf15193040802d
 workflow-type: tm+mt
 source-wordcount: '475'
 ht-degree: 0%
 
 ---
-
 
 # Aanbevelingen voor hardware
 

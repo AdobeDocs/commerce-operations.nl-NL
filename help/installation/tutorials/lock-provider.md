@@ -1,13 +1,13 @@
 ---
 title: De vergrendelingsprovider configureren
 description: Voer de volgende stappen uit om te voorkomen dat de dubbele uitsnijdtaken en uitsnijdgroepen worden uitgevoerd op uw Adobe Commerce- of Magento Open Source-implementatie.
-source-git-commit: 46302eb8e8fd9bb7c9e7fbf990abb149bedd0ff4
+exl-id: c54e05b7-38fd-4731-bc77-a873b44d0ae8
+source-git-commit: 95ffff39d82cc9027fa633dffedf15193040802d
 workflow-type: tm+mt
 source-wordcount: '236'
 ht-degree: 0%
 
 ---
-
 
 # De vergrendelingsprovider configureren
 

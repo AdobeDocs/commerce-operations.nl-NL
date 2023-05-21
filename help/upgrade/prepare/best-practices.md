@@ -1,13 +1,13 @@
 ---
 title: Aanbevolen werkwijzen
 description: Gebruik de door de Adobe aanbevolen aanbevolen aanbevolen werkwijze om het upgradeproces voor uw Adobe Commerce- en Magento Open Source-projecten te beheren.
-source-git-commit: d263e412022a89255b7d33b267b696a8bb1bc8a2
+exl-id: 53c505a3-8b99-4fc3-b1b4-f2f75208a51b
+source-git-commit: 95ffff39d82cc9027fa633dffedf15193040802d
 workflow-type: tm+mt
 source-wordcount: '1089'
 ht-degree: 0%
 
 ---
-
 
 # Aanbevolen procedures voor upgraden
 

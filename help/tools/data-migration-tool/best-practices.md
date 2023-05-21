@@ -1,13 +1,13 @@
 ---
 title: Aanbevolen werkwijzen voor gegevensmigratie
 description: Volg deze best practices voor gegevensmigratie om een geslaagde upgrade van Magento 1 naar Magento 2 te garanderen.
-source-git-commit: d609c497fdf00c5e5f975a5679b1d072cec4f8a2
+exl-id: 0cd51987-a514-434d-b21e-2739ada2ce85
+source-git-commit: 95ffff39d82cc9027fa633dffedf15193040802d
 workflow-type: tm+mt
 source-wordcount: '201'
 ht-degree: 0%
 
 ---
-
 
 # Aanbevolen werkwijzen voor gegevensmigratie
 

@@ -1,13 +1,13 @@
 ---
 title: Een extensie installeren
 description: Voer de volgende stappen uit om een Adobe Commerce- of Magento Open Source-extensie te installeren.
-source-git-commit: 5e072a87480c326d6ae9235cf425e63ec9199684
+exl-id: b564662a-2e5f-4fa9-bae1-ca7498478fa9
+source-git-commit: 95ffff39d82cc9027fa633dffedf15193040802d
 workflow-type: tm+mt
 source-wordcount: '645'
 ht-degree: 0%
 
 ---
-
 
 # Een extensie installeren
 

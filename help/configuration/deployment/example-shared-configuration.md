@@ -1,13 +1,13 @@
 ---
 title: Voorbeeld met een gedeelde configuratie
 description: Zie een voorbeeld van hoe te om montages in een ontwikkelingssysteem met een gedeeld configuratiedossier te veranderen.
-source-git-commit: 6a3995dd24f8e3e8686a8893be9693581d31712b
+exl-id: c980ec01-ca2d-43db-b68d-8e9435e07e6a
+source-git-commit: 95ffff39d82cc9027fa633dffedf15193040802d
 workflow-type: tm+mt
 source-wordcount: '460'
 ht-degree: 0%
 
 ---
-
 
 # Voorbeeld met een gedeelde configuratie
 

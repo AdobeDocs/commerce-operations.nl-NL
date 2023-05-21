@@ -1,7 +1,8 @@
 ---
-title: "De [!DNL Cron] tab"
+title: De [!DNL Cron] tab
 description: Meer informatie over de [!DNL Cron] tabblad van [!DNL Observation for Adobe Commerce].
-source-git-commit: 38467ebd2ec29f9e1679182fb1ee7076d738664b
+exl-id: 66f5ffd6-4118-4534-b2d6-09c7a30e5e13
+source-git-commit: 95ffff39d82cc9027fa633dffedf15193040802d
 workflow-type: tm+mt
 source-wordcount: '298'
 ht-degree: 0%

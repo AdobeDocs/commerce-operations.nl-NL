@@ -1,13 +1,13 @@
 ---
 title: Uitvoeringsfasen
 description: Leer over beste praktijken voor de implementatiefasen van de projecten van Adobe Commerce.
-source-git-commit: bb49e4f239d49393b5b8c82deabe15f6f53c26f7
+exl-id: c5272f79-7315-46dc-a191-a40004aaa812
+source-git-commit: 95ffff39d82cc9027fa633dffedf15193040802d
 workflow-type: tm+mt
 source-wordcount: '157'
 ht-degree: 0%
 
 ---
-
 
 # Best practices implementeren
 

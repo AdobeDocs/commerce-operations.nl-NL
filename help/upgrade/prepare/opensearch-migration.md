@@ -1,13 +1,13 @@
 ---
 title: Migreren van Elasticsearch naar OpenSearch
 description: Meer informatie over het vervangen van de zoekmachine die wordt gebruikt voor installaties in Adobe Commerce en Magento Open Source.
-source-git-commit: 682963fb66519097e54f14f2b84ed71528030054
+exl-id: 56f1e609-83d2-4705-99d8-b395bb511411
+source-git-commit: 95ffff39d82cc9027fa633dffedf15193040802d
 workflow-type: tm+mt
 source-wordcount: '197'
 ht-degree: 0%
 
 ---
-
 
 # Migreren naar OpenSearch
 

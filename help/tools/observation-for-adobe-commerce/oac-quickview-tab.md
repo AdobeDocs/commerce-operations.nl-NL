@@ -1,13 +1,13 @@
 ---
-title: "De [!DNL QuickView] tab"
+title: De [!DNL QuickView] tab
 description: De [!DNL QuickView] tabblad geeft uitleg over de verschillende soorten waarschuwingen die u kunt zien, waaronder die op een laag schijfruimte en servergebruik.
-source-git-commit: 38467ebd2ec29f9e1679182fb1ee7076d738664b
+exl-id: 34405f9b-30de-4fab-acca-64a8e308ca90
+source-git-commit: 95ffff39d82cc9027fa633dffedf15193040802d
 workflow-type: tm+mt
 source-wordcount: '128'
 ht-degree: 0%
 
 ---
-
 
 # De [!DNL QuickView] tab
 

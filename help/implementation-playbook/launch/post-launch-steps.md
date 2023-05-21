@@ -13,7 +13,7 @@ ht-degree: 0%
 
 Zodra de website live is, worden deze activiteiten zo snel mogelijk uitgevoerd om ervoor te zorgen dat de site correct wordt gestart:
 
-- Het controlehulpmiddel van de up-time (Nieuwe Relic) toelaten, controles activeren, en de plaats controleren om alle diensten en de toegang in groen te verzekeren
+- Het controlehulpmiddel voor uptime inschakelen (New Relic), controles activeren en de site controleren om te controleren of alle services en toegang in het groen zijn
 - De Adobe Commerce-beveiligingsscan periodiek inschakelen
 - Codeer de cluster als live en maak een ondersteuningsticket om High SLA-controle te activeren
 - De CSE (Customer Success Engineer) en TAM (Technical Account Manager) voeren de volgende taken uit zodra de cutover is voltooid:

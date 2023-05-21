@@ -1,13 +1,13 @@
 ---
 title: Overzicht berichtenrijen
 description: Lees meer over het framework voor de wachtrij van berichten en hoe dit werkt met de Adobe Commerce- en Magento Open Source-toepassing.
-source-git-commit: 5e072a87480c326d6ae9235cf425e63ec9199684
+exl-id: 21e7bc3e-6265-4399-9d47-d3b9f03dfef6
+source-git-commit: 95ffff39d82cc9027fa633dffedf15193040802d
 workflow-type: tm+mt
 source-wordcount: '299'
 ht-degree: 0%
 
 ---
-
 
 # Overzicht van wachtrij met berichten
 

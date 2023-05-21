@@ -1,13 +1,13 @@
 ---
-title: "[!DNL Upgrade Compatibility Tool] Gerelateerde gereedschappen"
+title: '[!DNL Upgrade Compatibility Tool] Gerelateerde gereedschappen'
 description: Meer informatie over verwante tools van de [!DNL Upgrade Compatibility Tool] op uw Adobe Commerce-project.
-source-git-commit: e2ddb30da8dd86236e1dcf33a3f911b67384a6d7
+exl-id: a8cebb74-fba9-42ce-914b-b8fb6c7f53bf
+source-git-commit: 95ffff39d82cc9027fa633dffedf15193040802d
 workflow-type: tm+mt
-source-wordcount: '218'
+source-wordcount: '216'
 ht-degree: 0%
 
 ---
-
 
 # [!DNL Upgrade Compatibility Tool] verwante gereedschappen
 
@@ -25,4 +25,4 @@ Er zijn gereedschappen voor de [!DNL Upgrade Compatibility Tool], die voor verge
    >
    >[!DNL AmpersandHQ] is geen officieel Adobe-instrument.
 
-- **[!DNL Quality Patches Tool]**: Een opdrachtregelprogramma dat patches van hoge kwaliteit levert voor Adobe Commerce en Magento Open Source. Zie de [[!DNL Quality patches tool] gebruikershandleiding](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html){target=&quot;_blank&quot;} voor meer informatie.
+- **[!DNL Quality Patches Tool]**: Een opdrachtregelprogramma dat patches van hoge kwaliteit levert voor Adobe Commerce en Magento Open Source. Zie de [[!DNL Quality patches tool] gebruikershandleiding](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html){target="_blank"} voor meer informatie .

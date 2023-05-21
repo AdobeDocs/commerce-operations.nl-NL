@@ -1,13 +1,13 @@
 ---
 title: Follow-up gegevensmigratie
 description: Leer hoe u kunt controleren of de gegevensmigratie tussen Magento 1 en Magento 2 is gelukt en of alle functies naar behoren werken.
-source-git-commit: 5e072a87480c326d6ae9235cf425e63ec9199684
+exl-id: a55f357b-6c95-49d6-b2f1-c2e403a8c85f
+source-git-commit: 95ffff39d82cc9027fa633dffedf15193040802d
 workflow-type: tm+mt
 source-wordcount: '301'
 ht-degree: 0%
 
 ---
-
 
 # Follow-up gegevensmigratie
 

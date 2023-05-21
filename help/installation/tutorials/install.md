@@ -1,13 +1,13 @@
 ---
 title: Adobe Commerce installeren
 description: Voer de volgende stappen uit om Adobe Commerce of Magento Open Source op uw eigen infrastructuur te installeren.
-source-git-commit: 639dca9ee715f2f9ca7272d3b951d3315a85346c
+exl-id: 25f3c56e-0654-4f8b-a69d-f4152f68aca3
+source-git-commit: 95ffff39d82cc9027fa633dffedf15193040802d
 workflow-type: tm+mt
 source-wordcount: '2106'
 ht-degree: 0%
 
 ---
-
 
 # Adobe Commerce installeren
 

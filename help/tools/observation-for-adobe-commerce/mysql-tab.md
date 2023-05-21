@@ -1,7 +1,8 @@
 ---
-title: "De [!UICONTROL MySQL] tab"
+title: De [!UICONTROL MySQL] tab
 description: Meer informatie over de [!UICONTROL MySQL] tabblad van [!DNL Observation for Adobe Commerce].
-source-git-commit: 8c9753fe5b9038978859cc101d53f897267ecfe9
+exl-id: 1d8dd07c-15fd-4ffd-ad10-0d886bf1579e
+source-git-commit: 95ffff39d82cc9027fa633dffedf15193040802d
 workflow-type: tm+mt
 source-wordcount: '2030'
 ht-degree: 0%
@@ -76,7 +77,7 @@ De **[!UICONTROL Galera Log by Host]** frame is gelijk aan **[!UICONTROL Galera 
 
 ![Databaseprestaties](../../assets/tools/observation-for-adobe-commerce/mysql-tab-8.jpg)
 
-De **[!UICONTROL Database performance]** het kader toont gegevensbestandprestaties tijdens specifieke verzoeken. U kunt elke meting zien door erop te klikken in de gekleurde pictogrammen onder de grafiek. Veel van de meetgegevens die worden aangeroepen in [De Prestaties van het Gegevensbestand MySQL met Nieuw Relic controleren](https://newrelic.com/blog/how-to-relic/how-to-monitor-mysql) vindt u in dit frame.
+De **[!UICONTROL Database performance]** het kader toont gegevensbestandprestaties tijdens specifieke verzoeken. U kunt elke meting zien door erop te klikken in de gekleurde pictogrammen onder de grafiek. Veel van de meetgegevens die worden aangeroepen in [MySQL-databaseprestaties controleren met New Relic](https://newrelic.com/blog/how-to-relic/how-to-monitor-mysql) vindt u in dit frame.
 
 * average(query.queryPerSecond)
 * average(query.slowQueriesPerSecond)
@@ -280,4 +281,3 @@ De **[!UICONTROL MySQL mem used by node]** het kader toont het knoopgebruik van 
 ![Database mysql-slow.log](../../assets/tools/observation-for-adobe-commerce/mysql-tab-24.jpg)
 
 De **[!UICONTROL Database mysql-slow.log]** het kader toont de types van vraagverklaring die in `mysql-slow.log` bestand over de geselecteerde tijdlijn.
-

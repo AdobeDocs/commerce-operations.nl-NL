@@ -1,13 +1,13 @@
 ---
 title: Apache
 description: Voer de volgende stappen uit om de Apache-webserver te installeren en configureren voor installaties in de bedrijfsruimten van Adobe Commerce en Magento Open Source.
-source-git-commit: 61638d373408d9a7c3c3a935eee61927acfac7a6
+exl-id: a9a394c9-389f-42ef-9029-dd22c979cfb8
+source-git-commit: 95ffff39d82cc9027fa633dffedf15193040802d
 workflow-type: tm+mt
 source-wordcount: '844'
 ht-degree: 0%
 
 ---
-
 
 # Apache
 

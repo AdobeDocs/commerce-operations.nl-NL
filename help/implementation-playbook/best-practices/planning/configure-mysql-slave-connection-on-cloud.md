@@ -4,13 +4,13 @@ description: Leer hoe u de MySQL-slave-verbinding configureert voor Adobe Commer
 role: Developer
 feature-set: Commerce
 feature: Best Practices
-source-git-commit: cb86772e9ceabc580ec32ad6ae1206a71ea03946
+exl-id: d65bc80a-c4ec-4ea4-aff1-110592838201
+source-git-commit: 95ffff39d82cc9027fa633dffedf15193040802d
 workflow-type: tm+mt
 source-wordcount: '313'
 ht-degree: 0%
 
 ---
-
 
 # Beste praktijken om de MySQL slave verbinding te vormen
 

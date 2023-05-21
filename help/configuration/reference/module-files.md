@@ -1,13 +1,13 @@
 ---
 title: Moduleconfiguratiebestanden
 description: Leer hoe te om een module aan te passen gebruikend configuratietypen.
-source-git-commit: d263e412022a89255b7d33b267b696a8bb1bc8a2
+exl-id: 87433c28-8e3d-43d0-b77e-3ff9a680af5f
+source-git-commit: 95ffff39d82cc9027fa633dffedf15193040802d
 workflow-type: tm+mt
 source-wordcount: '2024'
 ht-degree: 0%
 
 ---
-
 
 # Overzicht van moduleconfiguratiebestanden
 

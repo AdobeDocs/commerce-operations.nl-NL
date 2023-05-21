@@ -17,9 +17,9 @@ Het voordeel van de architectuur van Adobe Commerce is dat het geen alles-of-nie
 
 Elke aanpak sluit elkaar niet uit. Klanten kunnen hun eigen front-end (head) maken, PWA Studio gebruiken voor web/mobiele ervaringen en/of Adobe Experience Manager gebruiken voor het glas (in een volledige of hybride implementatie).
 
-Adobe Commerce heeft altijd toestemming gegeven voor headless-implementaties met REST API&#39;s. Terwijl REST krachtig is, met name voor bulkverwerking, als het op hoofdloos aankomt, laten GraphQL APIs snellere ontwikkeling door een intuïtieve ontwikkelaarservaring toe, grotere flexibiliteit door voor veranderingen toe te staan die geen invloed op bestaande APIs hebben, en betere prestaties door de hoeveelheid gegevens te minimaliseren die aan slechts precies wordt teruggewonnen wat nodig is.
+Adobe Commerce heeft altijd toestemming gegeven voor headless-implementaties met REST API&#39;s. Terwijl REST krachtig is, vooral voor bulkverwerking, als het op hoofdloos aankomt, laten GraphQL APIs snellere ontwikkeling door een intuïtieve ontwikkelaarservaring toe, grotere flexibiliteit door voor veranderingen toe te staan die geen invloed op bestaande APIs hebben, en betere prestaties door de hoeveelheid gegevens te minimaliseren die aan precies wat wordt teruggewonnen slechts wordt vereist.
 
-GraphQL is een industriestandaard voor presterende APIs, die door veel van de hoogste elektronische handelsplatforms wordt gebruikt. Dat is een goede zaak, omdat dit betekent dat het een bewezen oplossing is en dat er deskundigheid bestaat op de markt.
+GraphQL is een industriestandaard voor presterende API&#39;s, die wordt gebruikt door veel van de topplatforms voor e-commerce. Dat is een goede zaak, omdat dit betekent dat het een bewezen oplossing is en dat er deskundigheid bestaat op de markt.
 
 Hoewel Adobe Commerce een gekoppelde opslagruimte als optie heeft, is het geenszins verplicht dat een handelaar die Adobe Commerce erfenis vooraf gebruikt. Een handelaar kan uit de best-in-klasse handelsdiensten van Adobe Commerce voordeel halen om de achterste bedrijfsprocessen te behandelen en, gebruikend onze opslag APIs, hun eigen ontkoppelde opslagruimte te integreren om de frontend ervaring te drijven.
 

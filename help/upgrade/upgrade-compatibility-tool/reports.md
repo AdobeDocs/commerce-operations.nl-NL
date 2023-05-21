@@ -1,13 +1,13 @@
 ---
-title: "[!DNL Upgrade Compatibility Tool] rapporten"
+title: '''[!DNL Upgrade Compatibility Tool] rapporten'
 description: Voer de volgende stappen uit [!DNL Upgrade Compatibility Tool] op uw Adobe Commerce-project.
-source-git-commit: 147ecbc66eaf370e7ffaad0b6fce8b41f40b70df
+exl-id: a2272339-46d6-443b-bd53-286b72f13d4e
+source-git-commit: 95ffff39d82cc9027fa633dffedf15193040802d
 workflow-type: tm+mt
 source-wordcount: '583'
 ht-degree: 0%
 
 ---
-
 
 # Rapporten
 

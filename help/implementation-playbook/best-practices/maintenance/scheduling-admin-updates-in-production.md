@@ -4,13 +4,13 @@ description: Leer beste praktijken voor het plannen van kritieke updates aan Ado
 role: Admin, User
 feature: Best Practices
 feature-set: Commerce
-source-git-commit: 510f2d4cdaec1034cb04a01fab0948c4261c6d10
+exl-id: 41c0cb87-3371-48a7-9913-264f3eea8d8d
+source-git-commit: 95ffff39d82cc9027fa633dffedf15193040802d
 workflow-type: tm+mt
 source-wordcount: '148'
 ht-degree: 0%
 
 ---
-
 
 # Aanbevolen procedures voor het plannen van Admin-updates op productiesites
 
@@ -36,4 +36,3 @@ Kritieke acties leiden tot invalidatie en herindexering van het cachegeheugen, w
 - [Persoonlijke inhoud: Persoonlijke inhoud ongeldig maken](https://developer.adobe.com/commerce/php/development/cache/page/private-content/#invalidate-private-content)
 - [Hardware aanbevelingen: Cursussen](../../../performance/hardware.md#caches)
 - [Geavanceerde instellingen: Redis instellen](../../../performance/advanced-setup.md#set-up-redis)
-

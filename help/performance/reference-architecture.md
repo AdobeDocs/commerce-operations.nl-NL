@@ -1,13 +1,13 @@
 ---
 title: Referentiearchitectuur
 description: Controleer diagrammen van de aanbevolen referentiearchitectuur voor Adobe Commerce- en Magento Open Source-implementaties.
-source-git-commit: 065c56f20ba5b1eef8c331c5c2f5649902f1442b
+exl-id: 85a6d3d6-f47f-4806-97bd-fa7a73605f4c
+source-git-commit: 95ffff39d82cc9027fa633dffedf15193040802d
 workflow-type: tm+mt
 source-wordcount: '426'
 ht-degree: 0%
 
 ---
-
 
 # Referentiearchitectuur
 

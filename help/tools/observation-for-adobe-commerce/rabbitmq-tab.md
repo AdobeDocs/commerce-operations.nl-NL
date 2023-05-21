@@ -1,7 +1,8 @@
 ---
-title: "De [!UICONTROL [!DNL RabbitMQ]] tab"
+title: De [!UICONTROL [!DNL RabbitMQ]], tabblad
 description: Meer informatie over de [!UICONTROL [!DNL RabbitMQ]] tabblad van [!DNL Observation for Adobe Commerce].
-source-git-commit: e59b8db21c449fcf91466df7482849a0454bfe3e
+exl-id: c5370c30-fed8-4f45-89c3-ef0d6ad41a89
+source-git-commit: 95ffff39d82cc9027fa633dffedf15193040802d
 workflow-type: tm+mt
 source-wordcount: '225'
 ht-degree: 0%

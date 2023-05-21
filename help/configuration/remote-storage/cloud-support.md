@@ -1,13 +1,13 @@
 ---
 title: Externe opslag voor handel in cloudinfrastructuur
 description: Zie de richtlijnen voor het instellen van externe opslag voor Adobe Commerce op cloudinfrastructuur.
-source-git-commit: 4c89ef65ffb559ad4ad3f3fc45bd73079fbacd1b
+exl-id: da352466-13f2-42e4-a589-3b0a89728467
+source-git-commit: 95ffff39d82cc9027fa633dffedf15193040802d
 workflow-type: tm+mt
 source-wordcount: '630'
 ht-degree: 0%
 
 ---
-
 
 # Externe opslag configureren voor handel op Cloud-infrastructuur
 

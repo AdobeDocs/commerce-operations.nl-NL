@@ -1,13 +1,13 @@
 ---
 title: Hoe reparaties werken
 description: Leer meer over de verschillende typen patches voor Adobe Commerce en Magento Open Source en hoe ze werken.
-source-git-commit: 1a18a445cb104420dd9b853b7c4d42ce3bddf2ac
+exl-id: d7072ed4-7d51-41fe-881a-aae3b2000b55
+source-git-commit: 95ffff39d82cc9027fa633dffedf15193040802d
 workflow-type: tm+mt
-source-wordcount: '606'
+source-wordcount: '602'
 ht-degree: 0%
 
 ---
-
 
 # Hoe patches werken
 
@@ -43,7 +43,7 @@ U kunt hotfixes in [Beveiligingscentrum](https://magento.com/security/patches). 
 
 Afzonderlijke patches bevatten oplossingen voor een bepaalde kwestie met een lage-effectkwaliteit. Deze correcties worden toegepast op de meest recente ondersteunde secundaire versie (bijvoorbeeld 2.4.x), maar kunnen ontbreken in de vorige ondersteunde secundaire versie (bijvoorbeeld 2.3.x). Adobe geeft zonodig afzonderlijke pleisters af.
 
-Gebruik de [[!DNL Quality Patches Tool]](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html){target=&quot;_blank&quot;} om afzonderlijke patches toe te passen.
+Gebruik de [[!DNL Quality Patches Tool]](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html){target="_blank"} om afzonderlijke pleisters toe te passen.
 
 >[!NOTE]
 >
@@ -62,7 +62,7 @@ Een aangepaste patch maken:
 1. Een `patches/composer` in uw lokale project.
 1. Identificeer GitHub begaat of trekt verzoek om voor het flard te gebruiken. In dit voorbeeld wordt het [`2d31571`](https://github.com/magento/magento2/commit/2d31571f1bacd11aa2ec795180abf682e0e9aede) commit, verbonden aan GitHub kwestie [#6474](https://github.com/magento/magento2/issues/6474).
 1. Voeg de `.patch` of de `.diff` extensies voor de URL toewijzen. Gebruiken `.diff` voor een kleinere bestandsgrootte. Bijvoorbeeld: [https://github.com/magento/magento2/commit/2d31571f1bacd11aa2ec795180abf682e0e9aede.diff](https://github.com/magento/magento2/commit/2d31571f1bacd11aa2ec795180abf682e0e9aede.diff)
-1. De pagina opslaan als een bestand in het dialoogvenster `patches/composer` directory. Bijvoorbeeld, `github-issue-6474.diff`.
+1. De pagina opslaan als een bestand in het dialoogvenster `patches/composer` directory. Bijvoorbeeld: `github-issue-6474.diff`.
 1. Bewerk het bestand en verwijder `app/code/<VENDOR>/<PACKAGE>` van alle paden, zodat deze relatief zijn ten opzichte van de `vendor/<VENDOR>/<PACKAGE>` directory.
 
    >[!NOTE]
@@ -90,7 +90,7 @@ index c8a6fef58d31..7d01c195791e 100644
 
 U kunt patches op een van de volgende manieren toepassen:
 
-- [[!DNL Quality Patches Tool]](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html){target=&quot;_blank&quot;}
+- [[!DNL Quality Patches Tool]](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html){target="_blank"}
 - [Opdrachtregel](/help/upgrade/patches/apply.md#command-line)
 - [Composer](/help/upgrade/patches/apply.md#composer)
 

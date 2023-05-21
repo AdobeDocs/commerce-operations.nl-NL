@@ -72,7 +72,7 @@ Naast betalingsopties kunnen detailhandelaren ook opties bieden zoals [klikken e
 
 ## Betalingsgegevens
 
-Betalingsgegevens moeten aan het einde worden geplaatst, vlak voordat wordt bevestigd dat een bestelling moet worden geplaatst.
+Betalingsgegevens moeten aan het einde worden geplaatst, vlak voordat wordt bevestigd dat een bestelling wordt geplaatst.
 
 U kunt op eenvoudige wijze betalingsgegevens invoeren, zoals de naam op de kaart en het nummer van de kaart.
 

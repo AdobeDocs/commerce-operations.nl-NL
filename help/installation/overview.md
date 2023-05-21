@@ -1,13 +1,13 @@
 ---
 title: Overzicht van installatie op locatie
 description: Leer over het installatieproces voor plaatsingen op-gebouw van Adobe Commerce en Magento Open Source.
-source-git-commit: f6f438b17478505536351fa20a051d355f5b157a
+exl-id: a9f5b241-d05d-462c-8c7f-479a264c988f
+source-git-commit: 95ffff39d82cc9027fa633dffedf15193040802d
 workflow-type: tm+mt
 source-wordcount: '166'
 ht-degree: 0%
 
 ---
-
 
 # Overzicht van installatie op locatie
 
@@ -36,4 +36,3 @@ De algemene installatiestroom is als volgt:
    Als de stap mislukt omdat de vereiste software niet correct is ingesteld, controleert u de [voorwaarden](prerequisites/overview.md).
 
 1. [Verifiëren](next-steps/verify.md) de installatie door uw winkel en Admin te bekijken.
-

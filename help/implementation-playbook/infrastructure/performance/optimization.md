@@ -56,4 +56,4 @@ Er zijn ook belangrijke factoren die de schaal van de handel stimuleren, die ook
 
 Voor gelaagde en cacheable architecturen die voor schaal worden gebouwd, kunt u deze grafiek als verwijzing gebruiken.
 
-![Diagram dat laat zien hoe de Adobe Commerce GraphQL API in een cachebare architectuur kan worden gebruikt](../../../assets/playbooks/cacheable-architecture.svg)
+![Diagram dat laat zien hoe de Adobe Commerce GraphQL API in een cachebare architectuur wordt gebruikt](../../../assets/playbooks/cacheable-architecture.svg)

@@ -1,7 +1,8 @@
 ---
-title: "[!DNL Site-Wide Analysis Tool]"
+title: '[!DNL Site-Wide Analysis Tool]'
 description: Meer informatie over de [!DNL Site-Wide Analysis] Gereedschap, het gebruik ervan, het installatieproces en de manier waarop toegang kan worden verkregen
-source-git-commit: 3801cb9cf8cdf00d450347e8fd023a18ec60bf54
+exl-id: 32774040-d322-43d6-9c26-c340a0ab58a9
+source-git-commit: 95ffff39d82cc9027fa633dffedf15193040802d
 workflow-type: tm+mt
 source-wordcount: '501'
 ht-degree: 0%

@@ -1,7 +1,8 @@
 ---
-title: "De [!DNL WAF] tab"
+title: De [!DNL WAF] tab
 description: Meer informatie over de [!DNL WAF] tabblad van [!DNL Observation for Adobe Commerce].
-source-git-commit: d3d178c333e6f1436a96993611930cb12cd66a71
+exl-id: e36986d7-d903-4154-bb09-6962b99ae35f
+source-git-commit: 95ffff39d82cc9027fa633dffedf15193040802d
 workflow-type: tm+mt
 source-wordcount: '160'
 ht-degree: 0%

@@ -1,13 +1,13 @@
 ---
 title: Statische weergavebestanden gebruiken
 description: Leer om statische dossiers aan het het dossiersysteem van de Handel tijdens productiemodus te schrijven.
-source-git-commit: 5e072a87480c326d6ae9235cf425e63ec9199684
+exl-id: 51954738-b999-4982-954b-70f7a70c5a17
+source-git-commit: 95ffff39d82cc9027fa633dffedf15193040802d
 workflow-type: tm+mt
 source-wordcount: '1132'
 ht-degree: 0%
 
 ---
-
 
 # Statische weergavebestanden gebruiken
 

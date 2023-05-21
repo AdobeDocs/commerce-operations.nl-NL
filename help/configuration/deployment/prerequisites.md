@@ -1,13 +1,13 @@
 ---
 title: Vereisten voor implementatie
 description: Zie een lijst van eerste vereisten voor het opstellen van Handel in een ontwikkeling, bouwt, of productiesysteem.
-source-git-commit: 5e072a87480c326d6ae9235cf425e63ec9199684
+exl-id: 9ea0eeff-e0f8-4532-887c-5d7f07d89ddd
+source-git-commit: 95ffff39d82cc9027fa633dffedf15193040802d
 workflow-type: tm+mt
 source-wordcount: '161'
 ht-degree: 0%
 
 ---
-
 
 # Vereisten voor ontwikkeling, bouw, en productiesystemen
 

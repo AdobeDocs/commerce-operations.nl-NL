@@ -1,13 +1,13 @@
 ---
-title: "[!DNL Upgrade Compatibility Tool] Foutberichten"
+title: '[!DNL Upgrade Compatibility Tool] Foutberichten'
 description: Meer informatie over foutberichten die u tegenkomt bij het gebruik van de [!DNL Upgrade Compatibility Tool] op uw Adobe Commerce-project.
-source-git-commit: 038cb256cb19c253ae9c0375258a555601428847
+exl-id: fe4a17a9-a807-4315-b3cd-e35f34e39f6d
+source-git-commit: 95ffff39d82cc9027fa633dffedf15193040802d
 workflow-type: tm+mt
-source-wordcount: '4140'
+source-wordcount: '4113'
 ht-degree: 4%
 
 ---
-
 
 # [!DNL Upgrade Compatibility Tool] foutberichten
 
@@ -15,7 +15,7 @@ ht-degree: 4%
 
 Deze naslaggids voor foutberichten bevat informatie over fouten die kunnen optreden tijdens het uitvoeren van de opdracht [!DNL Upgrade Compatibility Tool].
 
-Foutberichten worden gecategoriseerd op niveau (kritieke problemen, fouten en waarschuwingen) en type (kerncode, aangepaste code en GraphQL-schema&#39;s). Elk type bevat de volgende informatie:
+Foutberichten worden ingedeeld op niveau (kritieke problemen, fouten en waarschuwingen) en type (kerncode, aangepaste code en GraphQL-schema&#39;s). Elk type bevat de volgende informatie:
 
 - **Foutcode**: De door Adobe Commerce toegewezen id voor het foutbericht.
 - **Foutbeschrijving**: Een beschrijving die de oorzaak van de fout samenvat.
@@ -34,7 +34,7 @@ Deze fouten worden gerapporteerd wanneer sommige kernbestanden ontbreken of niet
 | 2003 | Composerafhankelijkheid is niet geïnstalleerd | Ontbrekende composerafhankelijkheid kan mogelijk problemen opleveren. Afhankelijkheid herstellen door uit te voeren `composer require package_name`. |
 | 2005 | Kernmap niet gevonden | Voer de `composer install` opdracht uit de hoofdmap van het project. |
 
-{style=&quot;table-layout:auto&quot;}
+{style="table-layout:auto"}
 
 ### Aangepaste code
 
@@ -42,11 +42,11 @@ Er treden kritieke fouten op wanneer de aangepaste code verwijst naar entiteiten
 
 | Foutcode | Foutbeschrijving | Voorgestelde actie |
 | --- | --- | --- |
-| 110 | Niet-bestaande Adobe Commerce-klasse/interface instantiëren | Code bijwerken voor het gebruik van een klasse die is gemarkeerd als `@api`. Niet-bestaande Adobe Commerce-klasse/interface instantiëren. |
-| 111 | Uitbreiden vanaf een niet-bestaande Adobe Commerce-klasse | De uitgebreide klasse is niet meer aanwezig in de codebase. Overerving wordt niet aanbevolen voor het uitbreiden van de Adobe Commerce-functionaliteit. Code bijwerken voor het gebruik van een klasse die is gemarkeerd als `@api`. |
-| 112 | Niet-bestaande Adobe Commerce-klasse importeren | Code bijwerken voor het gebruik van een klasse die is gemarkeerd als `@api`. |
-| 113 | Niet-bestaande Adobe Commerce-klasse laden | Code bijwerken voor het gebruik van een klasse die is gemarkeerd als `@api`. |
-| 114 | Niet-bestaande Adobe Commerce-klasse gebruiken | Code bijwerken voor het gebruik van een klasse die is gemarkeerd als `@api`. |
+| 1110 | Niet-bestaande Adobe Commerce-klasse/interface instantiëren | Code bijwerken voor het gebruik van een klasse die is gemarkeerd als `@api`. Niet-bestaande Adobe Commerce-klasse/interface instantiëren. |
+| 1111 | Uitbreiden vanaf een niet-bestaande Adobe Commerce-klasse | De uitgebreide klasse is niet meer aanwezig in de codebase. Overerving wordt niet aanbevolen voor het uitbreiden van de Adobe Commerce-functionaliteit. Code bijwerken voor het gebruik van een klasse die is gemarkeerd als `@api`. |
+| 1112 | Niet-bestaande Adobe Commerce-klasse importeren | Code bijwerken voor het gebruik van een klasse die is gemarkeerd als `@api`. |
+| 1113 | Niet-bestaande Adobe Commerce-klasse laden | Code bijwerken voor het gebruik van een klasse die is gemarkeerd als `@api`. |
+| 1114 | Niet-bestaande Adobe Commerce-klasse gebruiken | Code bijwerken voor het gebruik van een klasse die is gemarkeerd als `@api`. |
 | 1214 | Niet-bestaande Adobe Commerce-constante gebruiken | Overweeg in plaats hiervan een privéconstante van de vereiste waarde in de aangepaste code te introduceren en te gebruiken. |
 | 1215 | Niet-bestaande Adobe Commerce-constante overschrijven | Overweeg in plaats hiervan een privéconstante van de vereiste waarde in de aangepaste code te introduceren en te gebruiken. |
 | 1216 | Toewijzing van een niet-bestaande Adobe Commerce-constante | Overweeg in plaats hiervan een privéconstante van de vereiste waarde in de aangepaste code te introduceren en te gebruiken. |
@@ -65,7 +65,7 @@ Er treden kritieke fouten op wanneer de aangepaste code verwijst naar entiteiten
 | 5076 | Kan niet gebruiken in naamruimte zoals deze is gereserveerd sinds PHP 7 | Vervang het gereserveerde woord in de naamruimte door een niet-gereserveerd trefwoord. |
 | 5077 | Kan niet gebruiken als klassenaam omdat deze is gereserveerd sinds PHP 7 | Vervang de gereserveerde klassenaam door een niet-gereserveerde naam. |
 
-{style=&quot;table-layout:auto&quot;}
+{style="table-layout:auto"}
 
 ### DB-schema
 
@@ -76,19 +76,19 @@ Kritieke problemen met het DB-schema worden gerapporteerd als verwijderde kernta
 | 7009 | De beperking van de douane verwijst naar een kernlijst die in de doelversie werd verwijderd | De kenmerken constraint of update referenceTable en referenceColumn verwijderen |
 | 7010 | De beperking van de douane verwijst naar een kernkolom die in de doelversie werd verwijderd | De beperking verwijderen of het kenmerk referenceColumn bijwerken |
 
-{style=&quot;table-layout:auto&quot;}
+{style="table-layout:auto"}
 
-### GraphQL-schema
+### GraphQL Schema
 
-Kritieke kwesties van het Schema GraphQL worden opgeheven als de schemapunten niet in de doelversie aanwezig zijn.
+De kritieke kwesties van het Schema van GraphQL worden opgeheven als de schemapunten niet aanwezig in de doelversie zijn.
 
 | Foutcode | Foutbeschrijving | Voorgestelde actie |
 | --- | --- | --- |
 | 3101 | Type is verwijderd | Maak een lijst van alle vragen die naar dit gebied van verwijzingen voorzien. Controleer of deze query&#39;s door de aanpassingsimplementatie worden gebruikt. Werk de cliëntcode bij om de veranderde vraaginterface te behandelen. |
-| 3102 | Type verwijderd uit samenvoeging | Als het unietype in het GraphQL- verzoekconstructie of reactieverwerkingsimplementatie wordt gebruikt kan het moeten worden bijgewerkt. |
+| 3102 | Type verwijderd uit samenvoeging | Als het union-type wordt gebruikt in de GraphQL-aanvraag voor constructie of verwerking van reacties, moet het mogelijk worden bijgewerkt. |
 | 3103 | Veld verwijderd | Controleer of naar het veld wordt verwezen in de aanpassingscodebase. Pas de implementatie aan om het nieuwe veldtype correct af te handelen. |
 | 3105 | Geïmplementeerde interface verwijderd | Controleer of het type dat de verwijderde interface implementeert, wordt gebruikt in de aanpassing. De implementatie moet mogelijk worden bijgewerkt als deze afhankelijk is van de verwijderde interface. |
-| 3106 | Waarde verwijderd uit opsommingsteken | Als de verwijderde enum waarde in het GraphQL- verzoekconstructie of de implementatie van de reactieverwerking wordt gebruikt kan het moeten worden bijgewerkt. |
+| 3106 | Waarde verwijderd uit opsommingsteken | Als de verwijderde enum-waarde wordt gebruikt in de GraphQL-aanvraagconstructie of -implementatie voor reactieverwerking, moet deze mogelijk worden bijgewerkt. |
 | 3107 | Argument verwijderd | Controleer of het veld wordt gebruikt in de aanpassingscodebase. Verwijder het argument voor dit veld. |
 | 3109 | Richtlijn verwijderd | Controleer of de instructie wordt gebruikt in de aanpassingscodebase. Pas de implementatie aan om de verwijzing naar de richtlijn te verwijderen. |
 | 3110 | Het argument Directive is verwijderd | Controleer of de instructie wordt gebruikt in de aanpassingscodebase. Verwijder het argument van de compilerinstructie. |
@@ -101,7 +101,7 @@ Kritieke kwesties van het Schema GraphQL worden opgeheven als de schemapunten ni
 | 3307 | Vereist argument toegevoegd | Controleer of het veld wordt gebruikt in de aanpassingscodebase. Het nieuwe vereiste argument moet worden opgegeven wanneer het veld wordt gebruikt. |
 | 3310 | Vereist argument voor compilatie toegevoegd | Controleer of de instructie wordt gebruikt in de aanpassingscodebase. Voeg het argument van de compilerinstructie toe. |
 
-{style=&quot;table-layout:auto&quot;}
+{style="table-layout:auto"}
 
 ## Fouten
 
@@ -113,7 +113,7 @@ Er worden aangepaste codefouten gegenereerd wanneer aangepaste code gebruikmaakt
 | --- | --- | --- |
 | 1104 | De niet-API-klasse gebruiken die de API-interface overerft | Klassen die niet zijn gemarkeerd als `@api` kan worden gewijzigd. U kunt overwegen de code bij te werken om te vertrouwen op de interface die is gemarkeerd als `@api` in plaats daarvan. Anders, zou de functionaliteit die op deze implementatie baseert na de verbetering moeten worden getest. |
 | 1121 | Uitbreiden vanaf niet-Adobe Commerce API-klasse | De uitgebreide klasse is niet meer aanwezig in de codebase. Overerving wordt niet aanbevolen voor het uitbreiden van de Adobe Commerce-functionaliteit. Code bijwerken voor het gebruik van een klasse die is gemarkeerd als `@api`. |
-| 122 | Niet-Adobe Commerce API-klasse importeren | De uitgebreide klasse is niet meer aanwezig in de codebase. Code bijwerken voor het gebruik van een klasse die is gemarkeerd als `@api`. Anders, zou de functionaliteit die op deze implementatie baseert na de verbetering moeten worden getest. |
+| 1122 | Niet-Adobe Commerce API-klasse importeren | De uitgebreide klasse is niet meer aanwezig in de codebase. Code bijwerken voor het gebruik van een klasse die is gemarkeerd als `@api`. Anders, zou de functionaliteit die op deze implementatie baseert na de verbetering moeten worden getest. |
 | 1123 | Niet-Adobe Commerce API-klasse laden | De uitgebreide klasse is niet meer aanwezig in de codebase. Code bijwerken voor het gebruik van een klasse die is gemarkeerd als `@api`. Anders, zou de functionaliteit die op deze implementatie baseert na de verbetering moeten worden getest. |
 | 1124 | Niet-Adobe Commerce API-klasse gebruiken | De uitgebreide klasse is niet meer aanwezig in de codebase. Code bijwerken voor het gebruik van een klasse die is gemarkeerd als `@api`. Anders, zou de functionaliteit die op deze implementatie baseert na de verbetering moeten worden getest. |
 | 1224 | Niet-Adobe Commerce API-constante gebruiken | Constanten die niet zijn gemarkeerd als `@api` kan worden gewijzigd. Overweeg in plaats hiervan een privéconstante van de vereiste waarde in de aangepaste code te introduceren en te gebruiken. |
@@ -211,7 +211,7 @@ Er worden aangepaste codefouten gegenereerd wanneer aangepaste code gebruikmaakt
 | 6009 | `jQuery.parseJSON()` is afgekeurd | Als u JSON-tekenreeksen wilt parseren, gebruikt u in plaats daarvan de native JSON.parse-methode. |
 | 6010 | (`jQuery.expr[":"]`, `jQuery.expr.filters`) is afgekeurd | Gebruik in plaats hiervan jQuery.expr.pseudo. |
 
-{style=&quot;table-layout:auto&quot;}
+{style="table-layout:auto"}
 
 ### DB-schema
 
@@ -228,7 +228,7 @@ De fouten van het schema van OB worden opgeheven als de gegevensbestandlijsten, 
 | 7007 | De doelkernversie introduceert een beperking met dezelfde naam als een beperking die is gedeclareerd door een aangepaste module | Verwijderen (als deze waarde wordt gedupliceerd naar de nieuwe kernbeperking) of de naam van de aangepaste restrictie wijzigen |
 | 7008 | De kernbeperking die door een douanemodule wordt uitgebreid werd verwijderd in de doelversie | Gebruik de nieuwe kernbeperking (indien van toepassing) of wijzig de naam van de aangepaste restrictie |
 
-{style=&quot;table-layout:auto&quot;}
+{style="table-layout:auto"}
 
 ## Waarschuwingen
 
@@ -240,7 +240,7 @@ Deze waarschuwingen worden gemeld wanneer er kleine inconsistenties zijn in de k
 | --- | --- | --- |
 | 2004 | Versie composerafhankelijkheid komt niet overeen | De kwestie wijst erop dat de versie van de afhankelijkheid van Composer in metalon en daadwerkelijke project verschillend is. Afhankelijkheid bijwerken door uit te voeren `composer update <package_name>`. |
 
-{style=&quot;table-layout:auto&quot;}
+{style="table-layout:auto"}
 
 ### Aangepaste code
 
@@ -250,7 +250,7 @@ Aangepaste waarschuwingen voor de code worden weergegeven wanneer verwijzingen n
 | --- | --- | --- |
 | 1131 | Uitbreiding vanuit Adobe Commerce ``@deprecated`` class | De uitgebreide klasse wordt in toekomstige versies verwijderd. Overerving wordt niet aanbevolen voor het uitbreiden van de Adobe Commerce-functionaliteit. Code bijwerken voor het gebruik van een klasse die is gemarkeerd als `@api`. |
 | 1132 | Adobe Commerce importeren `@deprecated` class | De uitgebreide klasse wordt in toekomstige versies verwijderd. Gebruik Adobe Commerce-klasse die is gemarkeerd als `@api` in plaats daarvan. |
-| 133 | Adobe Commerce laden `@deprecated` class | De uitgebreide klasse wordt in toekomstige versies verwijderd. Gebruik Adobe Commerce-klasse die is gemarkeerd als `@api` in plaats daarvan. |
+| 1133 | Adobe Commerce laden `@deprecated` class | De uitgebreide klasse wordt in toekomstige versies verwijderd. Gebruik Adobe Commerce-klasse die is gemarkeerd als `@api` in plaats daarvan. |
 | 1134 | Adobe Commerce gebruiken `@deprecated` class | De uitgebreide klasse wordt in toekomstige versies verwijderd. Gebruik Adobe Commerce-klasse die is gemarkeerd als `@api` in plaats daarvan. |
 | 1234 | Adobe Commerce gebruiken `@deprecated` constante | De vervangen constante wordt in de volgende versies verwijderd. Gebruik een constante die is gemarkeerd als `@api` of een privéconstante in uw implementatie. |
 | 1235 | Adobe Commerce overschrijven `@deprecated` constante | De vervangen constante wordt in de volgende versies verwijderd. Gebruik een constante die is gemarkeerd als `@api` of een privéconstante in uw implementatie. |
@@ -269,11 +269,11 @@ Aangepaste waarschuwingen voor de code worden weergegeven wanneer verwijzingen n
 | 5074 | Gebruik van afgekeurde methode `getResource()` aan (sparen / laden / verwijderen) gegevens gedetecteerd. | Gebruik in plaats hiervan een repository. |
 | 5086 | Zichtbaarheid wordt niet gedeclareerd op een constante | Declareer de zichtbaarheid van alle constanten. |
 
-{style=&quot;table-layout:auto&quot;}
+{style="table-layout:auto"}
 
-### GraphQL-schema
+### GraphQL Schema
 
-De waarschuwingen van het Schema GraphQL worden opgeheven wanneer de extra punten aan het schema in de nieuwe versie worden toegevoegd. Het wordt aanbevolen de implementatie te herzien om te zien of deze voor verzoeken moeten worden gebruikt.
+De waarschuwingen van het Schema van GraphQL worden opgeheven wanneer de extra punten aan het schema in de nieuwe versie worden toegevoegd. Het wordt aanbevolen de implementatie te herzien om te zien of deze voor verzoeken moeten worden gebruikt.
 
 | Foutcode | Foutbeschrijving | Voorgestelde actie |
 | --- | --- | --- |
@@ -284,4 +284,4 @@ De waarschuwingen van het Schema GraphQL worden opgeheven wanneer de extra punte
 | 3306 | Waarde toegevoegd aan opsommingswaarde | Er is een waarde toegevoegd aan een opsomming. Als de cliënten een schakelaarverklaring op de waarde van de opsomming bevatten en geen standaardgeval omvatten, zou deze verandering onverwacht gedrag kunnen veroorzaken. |
 | 3308 | Optioneel argument toegevoegd | Als de vraag een nieuw argument in de aanpassing gebruikt kan het aan het verzoek moeten worden toegevoegd. |
 
-{style=&quot;table-layout:auto&quot;}
+{style="table-layout:auto"}

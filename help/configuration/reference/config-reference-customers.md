@@ -1,13 +1,13 @@
 ---
 title: Verwijzing naar configuratiepaden van klanten
 description: Zie een lijst van de waarden van de klantenconfiguratie.
-source-git-commit: bd1bf6edd131ec93902246e95ce857b509f2a619
+exl-id: a0571423-6fbd-4cfc-9797-a13c0c24bb53
+source-git-commit: 95ffff39d82cc9027fa633dffedf15193040802d
 workflow-type: tm+mt
-source-wordcount: '907'
+source-wordcount: '883'
 ht-degree: 0%
 
 ---
-
 
 # Verwijzing naar configuratiepaden van klanten
 
@@ -30,7 +30,7 @@ Deze configuratiewaarden zijn beschikbaar in de Admin in **Winkels** > Instellin
 | Abonnement op e-mailafzender opzeggen | `newsletter/subscription/un_email_identity` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 | E-mailsjabloon voor abonnement opzeggen | `newsletter/subscription/un_email_template` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 
-{style=&quot;table-layout:auto&quot;}
+{style="table-layout:auto"}
 
 ## Configuratiepaden van de klant
 
@@ -100,7 +100,7 @@ Deze configuratiewaarden zijn beschikbaar in de Admin in **Winkels** > Instellin
 | In CAPTCHA gebruikte symbolen | `customer/captcha/symbols` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 | Hoofdlettergevoelig | `customer/captcha/case_sensitive` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 
-{style=&quot;table-layout:auto&quot;}
+{style="table-layout:auto"}
 
 ## Lijstpaden wissen
 
@@ -117,7 +117,7 @@ Deze configuratiewaarden zijn beschikbaar in de Admin in **Winkels** > Instellin
 | Lengtelimiet e-mailtekst | `wishlist/email/text_limit` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 | Overzicht van wenslijsten weergeven | `wishlist/wishlist_link/use_qty` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 
-{style=&quot;table-layout:auto&quot;}
+{style="table-layout:auto"}
 
 ## Uitnodigingspaden
 
@@ -134,7 +134,7 @@ Deze configuratiewaarden zijn beschikbaar in de Admin in **Winkels** > Instellin
 | E-mailafzender Klantenuitnodiging | `magento_invitation/email/identity` | ![Alleen handel](/help/assets/configuration/cloud-ee.png) |
 | E-mailsjabloon voor klantuitnodiging | `magento_invitation/email/template` | ![Alleen handel](/help/assets/configuration/cloud-ee.png) |
 
-{style=&quot;table-layout:auto&quot;}
+{style="table-layout:auto"}
 
 ## Padpaden achterwaarts
 
@@ -168,7 +168,7 @@ Deze configuratiewaarden zijn beschikbaar in de Admin in **Winkels** > Instellin
 | Waarschuwing: e-mail vervalt punten | `magento_reward/notification/expiry_warning_template` | ![Alleen handel](/help/assets/configuration/cloud-ee.png) |
 | Vervalwaarschuwing voor (dagen) | `magento_reward/notification/expiry_day_before` | ![Alleen handel](/help/assets/configuration/cloud-ee.png) |
 
-{style=&quot;table-layout:auto&quot;}
+{style="table-layout:auto"}
 
 ## Promotiepaden
 
@@ -190,7 +190,7 @@ Deze configuratiewaarden zijn beschikbaar in de Admin in **Winkels** > Instellin
 | Codeachtervoegsel | `promo/auto_generated_coupon_codes/suffix` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 | Streep om de X-tekens | `promo/auto_generated_coupon_codes/dash` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 
-{style=&quot;table-layout:auto&quot;}
+{style="table-layout:auto"}
 
 ## Cadeauregisterpaden
 
@@ -208,7 +208,7 @@ Deze configuratiewaarden zijn beschikbaar in de Admin in **Winkels** > Instellin
 | E-mailsjabloon | `magento_giftregistry/update_email/template` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 | E-mailafzender | `magento_giftregistry/update_email/identity` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 
-{style=&quot;table-layout:auto&quot;}
+{style="table-layout:auto"}
 
 ## Blijvende winkelwagentjes
 
@@ -229,4 +229,4 @@ Deze configuratiewaarden zijn beschikbaar in de Admin in **Winkels** > Instellin
 | Onlangs bekeken producten behouden | `persistent/options/recently_viewed` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 | Lidmaatschap en segmentatie van klantgroep behouden | `persistent/options/customer` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 
-{style=&quot;table-layout:auto&quot;}
+{style="table-layout:auto"}

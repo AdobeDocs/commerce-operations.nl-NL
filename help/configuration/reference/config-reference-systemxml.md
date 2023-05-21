@@ -2,13 +2,13 @@
 title: system.xml reference
 description: Leer hoe het systeemXML- dossier de de toepassingsconfiguratie van de Handel beheert.
 badge: label="Bijgedragen door David Lambauer" type="Informatief" url="https://github.com/DavidLambauer" tooltip="David Lambauer"
-source-git-commit: d7f32690b25c61fa31a99e6d02f9f1025de2bb99
+exl-id: a6c5de6c-e8da-4eca-bbfb-592904b2c53f
+source-git-commit: 95ffff39d82cc9027fa633dffedf15193040802d
 workflow-type: tm+mt
 source-wordcount: '2685'
 ht-degree: 0%
 
 ---
-
 
 # system.xml reference
 

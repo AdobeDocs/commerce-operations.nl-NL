@@ -1,7 +1,8 @@
 ---
 title: Hulplijn installeren
-description: "Gebruik deze handleiding om te installeren [!DNL Site-Wide Analysis Tool] voor uw website"
-source-git-commit: 0c27d4cf5854161e14a482912941cd144ca654f7
+description: Deze handleiding gebruiken om te installeren [!DNL Site-Wide Analysis Tool] voor uw website
+exl-id: ba36dc74-806d-49c5-b4d1-ba53ed4076fb
+source-git-commit: 95ffff39d82cc9027fa633dffedf15193040802d
 workflow-type: tm+mt
 source-wordcount: '1074'
 ht-degree: 0%
@@ -87,7 +88,7 @@ Als u de extensie hebt geïnstalleerd en geconfigureerd met een bestaande API-sl
    >
    > Als u problemen hebt met het openen van uw account, raadpleegt u [Aanmelden bij Adobe Commerce-ondersteuning of cloudaccount is niet mogelijk](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/unable-to-log-in-to-support-or-cloud-project.html) voor hulp bij het oplossen van problemen.
 
-1. Klik op **[!UICONTROL API Portal]**.
+1. Klikken **[!UICONTROL API Portal]**.
 
 1. Klikken **[!UICONTROL Delete]** naast de bestaande API-sleutel.
 

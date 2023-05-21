@@ -4,13 +4,13 @@ description: Meer informatie over het veilig verwerken en opslaan van betalingsg
 role: Developer
 feature-set: Commerce
 feature: Best Practices
-source-git-commit: cf8626bfab170a1e12cc72f0bc344c9beb9349a7
+exl-id: 635f38d3-0199-4d96-ba75-9edd0cb94b5c
+source-git-commit: 95ffff39d82cc9027fa633dffedf15193040802d
 workflow-type: tm+mt
 source-wordcount: '529'
 ht-degree: 0%
 
 ---
-
 
 # Aanbevolen procedures voor betalingsverwerking en -opslag
 

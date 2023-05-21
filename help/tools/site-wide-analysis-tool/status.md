@@ -1,7 +1,8 @@
 ---
 title: Statuskenmerken
 description: Meer informatie over de verschillende statusgegevens vindt u in het dialoogvenster [!DNL Site-Wide Analysis Tool].
-source-git-commit: 01d4e800c31615494e6e3f20adfbf3d35fabcce9
+exl-id: 3135f5f2-ce09-4118-bfff-30801cc86ec8
+source-git-commit: 95ffff39d82cc9027fa633dffedf15193040802d
 workflow-type: tm+mt
 source-wordcount: '154'
 ht-degree: 0%

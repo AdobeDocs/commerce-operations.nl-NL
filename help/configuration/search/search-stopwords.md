@@ -1,13 +1,13 @@
 ---
 title: Zoekstopwoorden configureren
 description: Leer hoe u stopwords voor Adobe Commerce kunt beheren met gebruik van CSV-bestanden.
-source-git-commit: 5e072a87480c326d6ae9235cf425e63ec9199684
+exl-id: 75320868-9939-4a6e-8dbb-73ca68c9f0ee
+source-git-commit: 95ffff39d82cc9027fa633dffedf15193040802d
 workflow-type: tm+mt
 source-wordcount: '652'
 ht-degree: 0%
 
 ---
-
 
 # Zoekstopwoorden configureren
 

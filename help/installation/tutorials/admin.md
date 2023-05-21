@@ -1,13 +1,13 @@
 ---
 title: Een beheerdersaccount maken, bewerken of ontgrendelen
 description: Voer de volgende stappen uit om de beheerdersaccount van uw Adobe Commerce- of Magento Open Source-beheertoepassing te beheren.
-source-git-commit: 5e072a87480c326d6ae9235cf425e63ec9199684
+exl-id: d87871a1-717d-4662-b84d-98a018518286
+source-git-commit: 95ffff39d82cc9027fa633dffedf15193040802d
 workflow-type: tm+mt
 source-wordcount: '324'
 ht-degree: 0%
 
 ---
-
 
 # Een beheerdersaccount maken, bewerken of ontgrendelen
 

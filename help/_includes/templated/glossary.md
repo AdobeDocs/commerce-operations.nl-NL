@@ -7,7 +7,7 @@ ht-degree: 0%
 ---
 # Adobe Commerce Verklarende woordenlijst
 
-## A
+## Geen
 
 ### boven de vouw
 
@@ -35,7 +35,7 @@ _Term-kenmerken:_
 
 * _Veld: wolk_
 
-### adapter
+### 10/100/1000-adapter
 
 _zelfstandig_
 
@@ -114,16 +114,16 @@ Elk gebied kan volledig verschillende code bevatten om URLs en verzoeken te verw
 
 Adobe Commerce-gebieden zijn:
 
-* Admin (adminhtml)
-* Storefront
-* Web API REST (webapi_rest)
+* Beheer (adminhtml)
+* Introductie
+* Web-API-rust (webapi_rest)
 
 _Term-kenmerken:_
 
 * _Veld: handelssoftware_
 * _Verwante termen: handelscomponent, winkel_
 
-### attribute
+### wijt
 
 _zelfstandig_
 
@@ -134,7 +134,7 @@ Voorbeelden: kleur, grootte, gewicht, prijs, leeftijd, geslacht, enzovoort.
 
 Aangepaste kenmerken zijn een type kenmerk Entiteit-Attribute-Value (EAV).
 
-Voor integratie zoals Google Shopping-advertenties Channel en Amazon-Sales Channel kunt u de kenmerken van Handel toewijzen aan kenmerken in de externe toepassing om producten correct weer te geven en te verkopen, advertenties weer te geven.
+Voor integratie zoals Google Shopping Ads en het verkoopkanaal van Amazon wijst u Commerce kenmerken toe aan kenmerken in de derde partij om producten correct weer te geven en te verkopen, zodat u advertenties kunt weergeven en verkopen.
 
 Meer informatie: [EAV en extension_attributes](https://developer.adobe.com/commerce/php/development/components/attributes/)
 
@@ -178,7 +178,7 @@ _Term-kenmerken:_
 
 * _Veld: product, prijs, voorraad_
 
-## B
+## BB
 
 ### basisvaluta
 
@@ -475,7 +475,7 @@ _Term-kenmerken:_
 
 * _Veld: programmeren_
 
-### component
+### bestanddeel
 
 _zelfstandig_
 
@@ -585,7 +585,7 @@ _Term-kenmerken:_
 * _Synoniemen: Verificatiemethode vergunninghouder_
 * _Verwante termen: beveiligingscode_
 
-## D
+## Ontwikkeling
 
 ### databaseschema
 
@@ -680,7 +680,7 @@ _Term-kenmerken:_
 * _Veld: programmeren_
 * _Verwante termen: netwerk voor levering van inhoud, url_
 
-## E
+## B
 
 ### ece-tools-pakket
 
@@ -733,7 +733,7 @@ _Term-kenmerken:_
 
 * _Veld: zakendoen_
 
-### extension
+### nummer
 
 _zelfstandig_
 
@@ -759,7 +759,7 @@ _Term-kenmerken:_
 * _Veld: handelssoftware_
 * _Verwante termen: attribuut, entiteitskenmerkwaarde_
 
-## F
+## L
 
 ### vracht aan boord
 
@@ -811,7 +811,7 @@ _Term-kenmerken:_
 
 * _Veld: zakendoen_
 
-## G
+## Financieel
 
 ### cadeaukaart
 
@@ -863,7 +863,7 @@ _Term-kenmerken:_
 * _Veld: handelssoftware, product_
 * _Verwante termen: eenvoudige producten, productsoorten_
 
-## H
+## Kosten
 
 ### handgreep
 
@@ -890,7 +890,7 @@ _Term-kenmerken:_
 
 * _Veld: wolk_
 
-## I
+## Er
 
 ### onderschepping
 
@@ -907,9 +907,9 @@ _Term-kenmerken:_
 * _Veld: programmeren_
 * _Verwante termen: insteekmodule_
 
-## L
+## Grootboekbudgetten
 
-### layout
+### lay
 
 _zelfstandig_
 
@@ -958,7 +958,7 @@ _Term-kenmerken:_
 
 * _Veld: zakendoen_
 
-## M
+## Maateenheidschema
 
 ### MAGEID
 
@@ -1079,7 +1079,7 @@ _Term-kenmerken:_
 * _Veld: beveiliging_
 * _Verwante termen: webtoepassingsfirewall_
 
-## P
+## W
 
 ### Page Builder
 
@@ -1108,7 +1108,7 @@ _Term-kenmerken:_
 
 * _Veld: zaken, orde, programmering_
 
-## R
+## Le
 
 ### verwant product
 
@@ -1121,7 +1121,7 @@ _Term-kenmerken:_
 
 * _Veld: handelssoftware, product_
 
-## S
+## Zijn
 
 ### verkoopregels
 
@@ -1253,7 +1253,7 @@ _Term-kenmerken:_
 * _Veld: handelssoftware, product_
 * _Verwante termen: productsoorten_
 
-### SKU
+### PRODUCT
 
 _zelfstandig_
 
@@ -1336,7 +1336,7 @@ _Term-kenmerken:_
 * _Veld: handelssoftware, product_
 * _Verwante termen: winkel, website_
 
-### storefront
+### introductie
 
 _zelfstandig_
 
@@ -1346,7 +1346,7 @@ _Term-kenmerken:_
 
 * _Veld: handelssoftware, product_
 
-## T
+## Nettowinst
 
 ### belastingregel
 
@@ -1358,7 +1358,7 @@ _Term-kenmerken:_
 
 * _Veld: zakendoen_
 
-### template
+### Temp
 
 _zelfstandig_
 
@@ -1386,7 +1386,7 @@ _Term-kenmerken:_
 
 * _Veld: handelssoftware_
 
-## U
+## Maateenheidschema
 
 ### UI-component
 
@@ -1409,7 +1409,7 @@ _Term-kenmerken:_
 * _Veld: programmeren_
 * _Verwante termen: JavaScript, layout, component, page builder_
 
-### UPWARD
+### SNELLE
 
 _zelfstandig_
 
@@ -1431,7 +1431,7 @@ _Term-kenmerken:_
 * _Synoniemen: PWA Studio, Unified Progressive Web App Response Definition_
 * _Verwante termen: pwa_
 
-## V
+## Versus
 
 ### Gebundelde extensie van leverancier
 
@@ -1488,7 +1488,7 @@ _Term-kenmerken:_
 * _Veld: programmeren_
 * _Verwante termen: php_
 
-## W
+## V
 
 ### website
 
@@ -1503,7 +1503,7 @@ _Term-kenmerken:_
 * _Veld: handelssoftware, ontwerp, product_
 * _Verwante termen: opslaan, winkelweergave_
 
-### widget
+### wenst
 
 _zelfstandig_
 

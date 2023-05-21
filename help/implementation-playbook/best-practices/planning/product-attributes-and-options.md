@@ -4,13 +4,13 @@ description: Leer hoe u de Adobe Commerce-prestaties kunt optimaliseren door het
 role: User, Admin
 feature: Best Practices
 feature-set: Commerce
-source-git-commit: e156fcafc5792036b37d9b199b870f1888c3f1ff
+exl-id: 81783a4c-bc82-4733-bee3-0154cf03079a
+source-git-commit: 95ffff39d82cc9027fa633dffedf15193040802d
 workflow-type: tm+mt
 source-wordcount: '564'
 ht-degree: 0%
 
 ---
-
 
 # Aanbevolen procedures voor de configuratie van productkenmerken
 
@@ -96,4 +96,3 @@ Veel configureren **kenmerkopties** kan de prestaties van de site op de volgende
 - [Kenmerksets](https://experienceleague.adobe.com/docs/commerce-admin/catalog/product-attributes/create/attribute-sets.html)
 - [Een product maken](https://experienceleague.adobe.com/docs/commerce-admin/catalog/products/product-create.html)
 - [Aanpassingszelfstudies > Formulier voor het maken van producten aanpassen](https://developer.adobe.com/commerce/php/tutorials/admin/custom-product-creation-form/)
-

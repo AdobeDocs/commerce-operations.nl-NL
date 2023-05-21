@@ -1,13 +1,13 @@
 ---
 title: Overzicht
 description: Volg deze aanbevolen procedures om de prestaties van uw Adobe Commerce- of Magento Open Source-implementatie te optimaliseren.
-source-git-commit: d263e412022a89255b7d33b267b696a8bb1bc8a2
+exl-id: 5381a477-bacd-4e74-a150-7f98abc2f744
+source-git-commit: 95ffff39d82cc9027fa633dffedf15193040802d
 workflow-type: tm+mt
 source-wordcount: '98'
 ht-degree: 0%
 
 ---
-
 
 # Best practices voor prestaties
 

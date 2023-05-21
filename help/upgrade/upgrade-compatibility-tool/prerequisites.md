@@ -1,13 +1,13 @@
 ---
-title: "[!DNL Upgrade Compatibility Tool] vereisten"
+title: '''[!DNL Upgrade Compatibility Tool] vereisten"'
 description: Controleer of uw systeem voldoet aan de vereisten voor het uitvoeren van de [!DNL Upgrade Compatibility Tool] in een opdrachtregelinterface voor uw Adobe Commerce-project.
-source-git-commit: 653d755023f96c0a6acc312f74fd4a0292f13a73
+exl-id: b8af2e07-3d28-4937-bb88-b0a1c88a2938
+source-git-commit: 95ffff39d82cc9027fa633dffedf15193040802d
 workflow-type: tm+mt
-source-wordcount: '0'
+source-wordcount: '302'
 ht-degree: 0%
 
 ---
-
 
 # Adobe Commerce-toegangstoetsen
 

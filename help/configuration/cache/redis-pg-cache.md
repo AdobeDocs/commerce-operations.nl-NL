@@ -1,13 +1,13 @@
 ---
 title: Redis gebruiken voor standaardcache
 description: Leer Redis te configureren als de standaardcache voor Adobe Commerce en Magento Open Source.
-source-git-commit: 47d513e7ca51ad7dbc149d0f1e076f673452918c
+exl-id: 8c097cfc-85d0-4e96-b56e-284fde40d459
+source-git-commit: 95ffff39d82cc9027fa633dffedf15193040802d
 workflow-type: tm+mt
 source-wordcount: '1067'
 ht-degree: 0%
 
 ---
-
 
 # Redis gebruiken voor standaardcache
 

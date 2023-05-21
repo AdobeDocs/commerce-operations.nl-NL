@@ -1,7 +1,8 @@
 ---
-title: "[!DNL Extensions]"
+title: '[!DNL Extensions]'
 description: Meer informatie over de [!DNL Extensions] in de [!DNL Site-Wide Analysis Tool], wanneer deze wordt gebruikt, de voordelen ervan en de beste praktijken.
-source-git-commit: 8b14dc7e30f4dd487fdb37bb9984346021fcba14
+exl-id: e0ddc158-b268-44cc-8998-6b853d92b835
+source-git-commit: 95ffff39d82cc9027fa633dffedf15193040802d
 workflow-type: tm+mt
 source-wordcount: '199'
 ht-degree: 0%
@@ -31,4 +32,3 @@ De [!DNL Extensions] in de [!DNL Site-Wide Analysis Tool] verstrekt informatie o
 * Als u uw derde niet kunt behouden [!DNL extensions] up-to-date zijn tot de meest recente versies, gebruik verschillende versies [!DNL extensions].
 
 * Download/koop derden om potentiële problemen te voorkomen [!DNL extensions] van een vertrouwde bron, zoals [Commerce Marketplace](https://marketplace.magento.com/extensions.html).
-

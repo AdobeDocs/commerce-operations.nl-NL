@@ -1,13 +1,13 @@
 ---
 title: Huidige zoekengine wordt niet ondersteund
 description: Los uw Adobe Commerce of verbetering van de Magento Open Source na het ontmoeten van een fout over een niet gestaafde onderzoeksmotor problemen op.
-source-git-commit: 4c18f00e0b92e49924676274c4ed462a175a7e4b
+exl-id: 11479d23-53a5-4086-9f9a-c3420ccad073
+source-git-commit: 95ffff39d82cc9027fa633dffedf15193040802d
 workflow-type: tm+mt
 source-wordcount: '416'
 ht-degree: 0%
 
 ---
-
 
 # Huidige zoekengine wordt niet ondersteund
 

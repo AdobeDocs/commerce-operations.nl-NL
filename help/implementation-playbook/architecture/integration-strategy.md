@@ -13,7 +13,7 @@ ht-degree: 0%
 
 Over de mogelijkheid om uw platform te integreren kan niet worden onderhandeld. Bedrijven willen dat hun elektronische handelsplatforms toegankelijk zijn vanuit verschillende aanraakpunten en naadloos geïntegreerd zijn in hun technologiesystemen, met name hun ERP. Aanpasbaarheid, globale schaalbaarheid en betaalbaarheid spelen ook een rol bij de uiteindelijke platformaanschaf.
 
-Een holistische integratieaanpak voor zowel opslag- als back-endsystemen wordt ondersteund door krachtige GraphQL API&#39;s, uitgebreide REST API&#39;s en het importeren van batchbestanden tussen Adobe Commerce en andere systemen of services.
+Een holistische integratieaanpak voor zowel opslag- als back-endsystemen wordt ondersteund door presterende GraphQL API&#39;s, uitgebreide REST API&#39;s en het importeren van batchbestanden tussen Adobe Commerce en andere systemen of services.
 
 De Adobe Commerce GraphQL API biedt uitgebreide storefront-dekking die u kunt gebruiken om te integreren met andere winkeliers, zoals:
 
@@ -21,7 +21,7 @@ De Adobe Commerce GraphQL API biedt uitgebreide storefront-dekking die u kunt ge
 - Inhoudsbeheersystemen zoals Drupal en WordPress
 - Moderne aangepaste winkeltoepassing zoals Adobe Commerce, PWA Studio en Vue Storefront
 
-GraphQL verstrekt een efficiënte, kanaalspecifieke reactie, geen overwinning van gegevens, en een flexibele plaatsing van nieuwe aanraakpunteigenschappen. Het wordt ook vaak gekozen om met verkoopkanalen zoals mobiele inheemse apps, POS, IoT, sociale kanalen, en livestreamhandelkanalen zoals Facebook, Google, Instagram, WeChat, en TikTok te integreren.
+GraphQL biedt een efficiënte, kanaalspecifieke respons, geen overhalen van gegevens en een flexibele implementatie van nieuwe aanraakpuntfuncties. Het wordt ook vaak gekozen om met verkoopkanalen zoals mobiele inheemse apps, POS, IoT, sociale kanalen, en livestreamhandelkanalen zoals Facebook, Google, Instagram, WeChat, en TikTok te integreren.
 
 De Adobe Commerce REST API biedt uitgebreide systeemconfiguratieredekking en functies voor gegevensbeheer, waaronder product en catalogus; kar, citaat, en kassa; klanten, accounts en bedrijven; en bestellingen en retourneert. REST API&#39;s ondersteunen bulkbewerkingen, meerdere verificatiemodi en korrelige autorisatie, zodat REST API&#39;s vaak worden gekozen voor integratie met bedrijfssystemen, waaronder:
 

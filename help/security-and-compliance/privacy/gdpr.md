@@ -1,13 +1,13 @@
 ---
 title: Algemene verordening inzake gegevensbescherming (GDPR)
 description: Leer over de algemene verordening inzake gegevensbescherming (GDPR), die wetgeving is die gegevensbescherming en privacy regelt voor alle individuen in de Europese Unie en de Europese Economische Ruimte.
-source-git-commit: 2120e5bb912a89c58611ef9e23661a54e40a14f1
+exl-id: 30e60601-f4f7-419e-b2dd-8c82c8a2ed33
+source-git-commit: 95ffff39d82cc9027fa633dffedf15193040802d
 workflow-type: tm+mt
 source-wordcount: '292'
 ht-degree: 0%
 
 ---
-
 
 # Algemene verordening inzake gegevensbescherming (GDPR)
 

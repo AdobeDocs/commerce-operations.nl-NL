@@ -1,13 +1,13 @@
 ---
 title: Implementatiestroom
 description: Meer informatie over de stappen die nodig zijn voor de implementatie van Adobe Commerce of Magento Open Source in een productieomgeving.
-source-git-commit: d263e412022a89255b7d33b267b696a8bb1bc8a2
+exl-id: 88da0b1b-5aa7-4f1c-9d01-ae58324b2754
+source-git-commit: 95ffff39d82cc9027fa633dffedf15193040802d
 workflow-type: tm+mt
 source-wordcount: '468'
 ht-degree: 0%
 
 ---
-
 
 # Implementatiestroom
 

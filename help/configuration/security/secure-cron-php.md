@@ -1,13 +1,13 @@
 ---
 title: Beveiligde uitsnede PHP
 description: Beperk wie het bestand cron.php in een browser kan uitvoeren.
-source-git-commit: 80abb0180fcd8ecc275428c23b68feb5883cbc28
+exl-id: c81fcab2-1ee3-4ec7-a300-0a416db98614
+source-git-commit: 95ffff39d82cc9027fa633dffedf15193040802d
 workflow-type: tm+mt
 source-wordcount: '938'
-ht-degree: 1%
+ht-degree: 0%
 
 ---
-
 
 # Beveiligde uitsnede PHP
 

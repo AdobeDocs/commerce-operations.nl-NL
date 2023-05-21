@@ -1,13 +1,13 @@
 ---
 title: Verwijzing naar betalingspaden
 description: Zie een lijst met configureerbare waarden voor betalingsmethoden.
-source-git-commit: bd1bf6edd131ec93902246e95ce857b509f2a619
+exl-id: f3e356aa-7262-4d99-9ed4-d77cbd93708c
+source-git-commit: 95ffff39d82cc9027fa633dffedf15193040802d
 workflow-type: tm+mt
-source-wordcount: '4133'
+source-wordcount: '4100'
 ht-degree: 0%
 
 ---
-
 
 # Verwijzing naar betalingspaden
 
@@ -84,7 +84,7 @@ De instellingen worden verder geordend via betalingsmethode.
 | Gepland ophalen | `payment_all_paypal/express_checkout/settings_ec/settings_ec_advanced/express_checkout_settlement_report/heading_schedule` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 | PayPal Merchant Pages Style | `payment_all_paypal/express_checkout/settings_ec/settings_ec_advanced/express_checkout_frontend/paypal_pages` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 
-{style=&quot;table-layout:auto&quot;}
+{style="table-layout:auto"}
 
 ## PayPal Payments Pro
 
@@ -95,7 +95,7 @@ De instellingen worden verder geordend via betalingsmethode.
 | Gepland ophalen | `payment_all_paypal/payments_pro_hosted_solution/pphs_settings/pphs_settings_advanced/pphs_settlement_report/heading_schedule` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 | Gepland ophalen | `payment_all_paypal/payments_pro_hosted_solution_without_bml/pphs_settings/pphs_settings_advanced/pphs_settlement_report/heading_schedule` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 
-{style=&quot;table-layout:auto&quot;}
+{style="table-layout:auto"}
 
 ## Payments Pro Hosted Solution (Verenigd Koninkrijk)
 
@@ -112,7 +112,7 @@ Deze opties zijn alleen beschikbaar als u het Verenigd Koninkrijk als de [handel
 | Betalingen in landen van toepassing uit | `payment/hosted_pro/specificcountry` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 | SSL-verificatie inschakelen | `payment/hosted_pro/verify_peer` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 
-{style=&quot;table-layout:auto&quot;}
+{style="table-layout:auto"}
 
 ## PayPal Payflow Pro
 
@@ -154,7 +154,7 @@ Deze opties zijn alleen beschikbaar als u het Verenigd Koninkrijk als de [handel
 | CVV-item vereisen | `payment/payflow_advanced/csc_required` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 | E-mailbevestiging verzenden | `payment/payflow_advanced/email_confirmation` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 
-{style=&quot;table-layout:auto&quot;}
+{style="table-layout:auto"}
 
 ## PayPal Payflow Link
 
@@ -176,7 +176,7 @@ Deze opties zijn alleen beschikbaar als u het Verenigd Koninkrijk als de [handel
 | Sorteervolgorde | `payment/payflow_link/sort_order` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 | Betalingsactie | `payment/payflow_link/payment_action` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 
-{style=&quot;table-layout:auto&quot;}
+{style="table-layout:auto"}
 
 ## Paden voor subtotaal uitchecken nul
 
@@ -190,7 +190,7 @@ Deze opties zijn alleen beschikbaar als u het Verenigd Koninkrijk als de [handel
 | Betaling door specifieke landen | `payment/free/specificcountry` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 | Sorteervolgorde | `payment/free/sort_order` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 
-{style=&quot;table-layout:auto&quot;}
+{style="table-layout:auto"}
 
 ## Betalingspaden onder rembours
 
@@ -206,7 +206,7 @@ Deze opties zijn alleen beschikbaar als u het Verenigd Koninkrijk als de [handel
 | Maximum aantal bestellingen | `payment/cashondelivery/max_order_total` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 | Sorteervolgorde | `payment/cashondelivery/sort_order` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 
-{style=&quot;table-layout:auto&quot;}
+{style="table-layout:auto"}
 
 ## Betalingspaden voor overschrijvingen
 
@@ -222,7 +222,7 @@ Deze opties zijn alleen beschikbaar als u het Verenigd Koninkrijk als de [handel
 | Maximum aantal bestellingen | `payment/banktransfer/max_order_total` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 | Sorteervolgorde | `payment/banktransfer/sort_order` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 
-{style=&quot;table-layout:auto&quot;}
+{style="table-layout:auto"}
 
 ## Paden voor cheque of postwissel
 
@@ -238,7 +238,7 @@ Deze opties zijn alleen beschikbaar als u het Verenigd Koninkrijk als de [handel
 | Maximum aantal bestellingen | `payment/checkmo/max_order_total` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 | Sorteervolgorde | `payment/checkmo/sort_order` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 
-{style=&quot;table-layout:auto&quot;}
+{style="table-layout:auto"}
 
 ## Paden inkooporder
 
@@ -253,7 +253,7 @@ Deze opties zijn alleen beschikbaar als u het Verenigd Koninkrijk als de [handel
 | Maximum aantal bestellingen | `payment/purchaseorder/max_order_total` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 | Sorteervolgorde | `payment/purchaseorder/sort_order` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 
-{style=&quot;table-layout:auto&quot;}
+{style="table-layout:auto"}
 
 ## Internationale paden
 
@@ -1401,4 +1401,4 @@ Deze opties zijn alleen beschikbaar als u het Verenigd Koninkrijk als de [handel
 | Betaling door specifieke landen | `payment_us/eway/specificcountry` | ![Alleen handel](/help/assets/configuration/cloud-ee.png) |
 | Sorteervolgorde | `payment_us/eway/sort_order` |  |
 
-{style=&quot;table-layout:auto&quot;}
+{style="table-layout:auto"}

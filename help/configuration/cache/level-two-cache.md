@@ -1,7 +1,8 @@
 ---
 title: L2-cacheconfiguratie
 description: Leer om het L2 geheime voorgeheugen te vormen.
-source-git-commit: 8102c083bb0216bbdcad2882f39f7711b9cee52b
+exl-id: 0504c6fd-188e-46eb-be8e-968238571f4e
+source-git-commit: 95ffff39d82cc9027fa633dffedf15193040802d
 workflow-type: tm+mt
 source-wordcount: '431'
 ht-degree: 0%

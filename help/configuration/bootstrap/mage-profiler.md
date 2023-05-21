@@ -1,13 +1,13 @@
 ---
 title: Profielen inschakelen
 description: Meer informatie over het inschakelen van de MAGE Profiler om met uw analysehulpmiddelen te gebruiken.
-source-git-commit: 6a3995dd24f8e3e8686a8893be9693581d31712b
+exl-id: a46289ed-16dc-4a72-84ff-85fe825dac11
+source-git-commit: 95ffff39d82cc9027fa633dffedf15193040802d
 workflow-type: tm+mt
 source-wordcount: '410'
 ht-degree: 0%
 
 ---
-
 
 # Profielen inschakelen
 

@@ -1,13 +1,13 @@
 ---
 title: Gebruikers in de wachtrij met berichten starten
 description: Leer hoe u een consument in een wachtrij met berichten kunt starten.
-source-git-commit: 3e3dac0c75622b210cf1168639b8804003f3c538
+exl-id: fd6edb24-8ebe-4b67-8a03-6cc759b60fa8
+source-git-commit: 95ffff39d82cc9027fa633dffedf15193040802d
 workflow-type: tm+mt
 source-wordcount: '189'
 ht-degree: 0%
 
 ---
-
 
 # Gebruikers in de wachtrij met berichten starten
 

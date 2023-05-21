@@ -1,13 +1,13 @@
 ---
 title: Uw verificatietoetsen ophalen
 description: Voer de volgende stappen uit om referenties op repo.magento.com op te halen en toegang te krijgen tot Adobe Commerce- en Magento Open Source Composer-pakketten.
-source-git-commit: d209d3f7fde55f7495488f2cbeeebf21024875ed
+exl-id: 7ec2a410-d81f-476a-bf6a-f3c61982a734
+source-git-commit: 95ffff39d82cc9027fa633dffedf15193040802d
 workflow-type: tm+mt
 source-wordcount: '512'
 ht-degree: 0%
 
 ---
-
 
 # Uw verificatietoetsen ophalen
 

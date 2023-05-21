@@ -1,13 +1,13 @@
 ---
 title: Voorwaarden voor zoekmachines
 description: Voer de volgende stappen uit om ondersteunde software voor zoekprogramma's te installeren en te configureren voor installaties op locatie van Adobe Commerce en Magento Open Source.
-source-git-commit: 5e072a87480c326d6ae9235cf425e63ec9199684
+exl-id: 44ea638a-7200-4269-be1b-b0851de2c4f4
+source-git-commit: 95ffff39d82cc9027fa633dffedf15193040802d
 workflow-type: tm+mt
 source-wordcount: '786'
 ht-degree: 0%
 
 ---
-
 
 # Voorwaarden voor zoekmachines
 

@@ -1,13 +1,13 @@
 ---
 title: Configuratie van zoekmachine
 description: Configureer een zoekmachine voor on-premisse implementaties van Adobe Commerce en Magento Open Source.
-source-git-commit: 4c18f00e0b92e49924676274c4ed462a175a7e4b
+exl-id: 61fbe0c2-bdd5-4f57-a518-23e180401804
+source-git-commit: 95ffff39d82cc9027fa633dffedf15193040802d
 workflow-type: tm+mt
 source-wordcount: '652'
 ht-degree: 0%
 
 ---
-
 
 # Configuratie van zoekmachine
 
@@ -114,4 +114,3 @@ Herindexeren met behulp van de opdrachtregel:
    >[!INFO]
    >
    >In tegenstelling tot de cache worden indexeerders bijgewerkt door een uitsnijdtaak. Controleer of [uitsnijden is ingeschakeld](../cli/configure-cron-jobs.md) voordat u de zoekfunctie gaat gebruiken.
-

@@ -4,13 +4,13 @@ description: Leer over beste praktijken om veiligheidsincidenten in uw Adobe Com
 role: Admin, Developer, Leader, User
 feature-set: Commerce
 feature: Best Practices
-source-git-commit: bb9b8cc9993a70ea50667f08c8260759ab0f91dc
+exl-id: 77275d37-4f1d-462d-ba11-29432791da6a
+source-git-commit: 95ffff39d82cc9027fa633dffedf15193040802d
 workflow-type: tm+mt
-source-wordcount: '0'
+source-wordcount: '1073'
 ht-degree: 0%
 
 ---
-
 
 # Tips en trucs om een beveiligingsincident te helpen voorkomen en erop te reageren
 
@@ -62,10 +62,10 @@ In het rapport Handelingenlogs wordt een gedetailleerd overzicht weergegeven van
 - Gebeurtenissen analyseren met de [Waarneming voor Adobe Commerce](https://experienceleague.adobe.com/docs/commerce-operations/tools/observation-for-adobe-commerce/intro.html?lang=en).
 Met het gereedschap Waarnemen voor Adobe Commerce kunt u complexe problemen analyseren om de onderliggende oorzaken te achterhalen. In plaats van het bijhouden van ongelijke gegevens kunt u tijd besteden aan het correleren van gebeurtenissen en fouten om dieper inzicht te krijgen in de oorzaken van knelpunten in de prestaties.
 Het hulpmiddel is bedoeld om een duidelijk beeld van enkele potentiële plaatkwesties te geven om u te helpen de worteloorzaak identificeren en plaatsen te houden optimaal presteert. Klik op de koppeling naar de bovenstaande documentatie voor het gereedschap Waarneming voor Adobe Commerce voor toegang tot de documentatie van het gereedschap. Er is een sectie in de documentatie waarin alle informatie wordt beschreven die op de **Beveiliging** tab.
-- Logbestanden analyseren met [Nieuwe Relic Logs](https://devdocs.magento.com/cloud/project/new-relic.html#new-relic-logs). Tot de Adobe Commerce on cloud Infrastructure Pro-projecten behoren [Nieuwe Relic Logs](https://docs.newrelic.com/docs/logs/new-relic-logs/get-started/introduction-new-relic-logs) service. De dienst wordt pre-gevormd om alle logboekgegevens van uw het Opvoeren en milieu&#39;s van de Productie samen te voegen om het in een gecentraliseerd logboekbeheersdashboard te tonen.
-U kunt de Nieuwe Relische dienst van Logboeken gebruiken om de volgende taken te voltooien:
-   - Gebruiken [Nieuwe vragen over Relic](https://docs.newrelic.com/docs/logs/new-relic-logs/ui-data/query-syntax-logs) om geaggregeerde loggegevens te zoeken.
-   - Visualiseer logboekgegevens door de Nieuwe Relische toepassing van Logboeken.
+- Logbestanden analyseren met [New Relic Logs](https://devdocs.magento.com/cloud/project/new-relic.html#new-relic-logs). Tot de Adobe Commerce on cloud Infrastructure Pro-projecten behoren [New Relic Logs](https://docs.newrelic.com/docs/logs/new-relic-logs/get-started/introduction-new-relic-logs) service. De dienst wordt pre-gevormd om alle logboekgegevens van uw het Opvoeren en milieu&#39;s van de Productie samen te voegen om het in een gecentraliseerd logboekbeheersdashboard te tonen.
+U kunt de New Relic Logs-service gebruiken om de volgende taken uit te voeren:
+   - Gebruiken [New Relic-query&#39;s](https://docs.newrelic.com/docs/logs/new-relic-logs/ui-data/query-syntax-logs) om geaggregeerde loggegevens te zoeken.
+   - Loggegevens visualiseren via de toepassing New Relic Logs.
 
 ## Aanvullende informatie
 

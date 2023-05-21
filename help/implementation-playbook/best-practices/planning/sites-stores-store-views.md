@@ -4,13 +4,13 @@ description: Leer beste praktijken voor het vormen van plaatsen, opslag, en opsl
 role: Admin
 feature: Best Practices
 feature-set: Commerce
-source-git-commit: 510f2d4cdaec1034cb04a01fab0948c4261c6d10
+exl-id: 3ea0c6c5-15a9-4e77-b4d0-ce15721c7167
+source-git-commit: 95ffff39d82cc9027fa633dffedf15193040802d
 workflow-type: tm+mt
 source-wordcount: '280'
 ht-degree: 0%
 
 ---
-
 
 # Beste praktijken voor het vormen van plaatsen, opslag en opslagmening
 
@@ -48,4 +48,3 @@ Websites en winkels zijn multipliers voor catalogusgegevens, zodat het hebben va
 
 - [Werken met websites, winkels en winkelweergaven](https://devdocs.magento.com/cloud/configure/configure-best-practices.html#sites)
 - [Meerdere websites of winkels instellen](https://devdocs.magento.com/cloud/project/project-multi-sites.html)
-

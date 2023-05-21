@@ -1,13 +1,13 @@
 ---
 title: Geavanceerde instellingen
 description: Bekijk best practices en aanbevelingen voor grote bedrijfssystemen die zijn ontworpen om grote hoeveelheden gegevens te verwerken.
-source-git-commit: d263e412022a89255b7d33b267b696a8bb1bc8a2
+exl-id: eb9ca9fa-b099-4e77-ab33-16cd0f382ffe
+source-git-commit: 95ffff39d82cc9027fa633dffedf15193040802d
 workflow-type: tm+mt
 source-wordcount: '1192'
 ht-degree: 0%
 
 ---
-
 
 # Geavanceerde instellingen
 

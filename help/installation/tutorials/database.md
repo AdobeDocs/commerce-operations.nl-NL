@@ -1,13 +1,13 @@
 ---
 title: Het databaseschema maken
 description: Ga als volgt te werk om een database voor uw Adobe Commerce of Magento Open Source te maken.
-source-git-commit: f6f438b17478505536351fa20a051d355f5b157a
+exl-id: 860c9918-44c4-4ef1-88a5-12614566307c
+source-git-commit: 95ffff39d82cc9027fa633dffedf15193040802d
 workflow-type: tm+mt
 source-wordcount: '52'
 ht-degree: 0%
 
 ---
-
 
 # Het databaseschema maken
 

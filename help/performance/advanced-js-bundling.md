@@ -1,13 +1,13 @@
 ---
 title: Geavanceerd [!DNL JavaScript] Bundling
 description: Meer informatie over hoe JavaScript-pakketten de grootte en frequentie van serveraanvragen kunnen verminderen.
-source-git-commit: c65c065c5f9ac2847caa8898535afdacf089006a
+exl-id: 81a313f8-e541-4da6-801b-8bbd892d6252
+source-git-commit: 95ffff39d82cc9027fa633dffedf15193040802d
 workflow-type: tm+mt
 source-wordcount: '2137'
 ht-degree: 0%
 
 ---
-
 
 # Geavanceerd [!DNL JavaScript] bundeling
 

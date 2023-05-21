@@ -1,7 +1,8 @@
 ---
 title: Statische inhoudcache
 description: Krijg inzicht in het ondertekenen van statische inhoud en hoe u de functie kunt in- of uitschakelen.
-source-git-commit: 5e072a87480c326d6ae9235cf425e63ec9199684
+exl-id: b54ceea2-b3a1-4dbb-ba87-743f2af0d2fb
+source-git-commit: 95ffff39d82cc9027fa633dffedf15193040802d
 workflow-type: tm+mt
 source-wordcount: '433'
 ht-degree: 0%
@@ -14,7 +15,7 @@ Om de prestaties te verbeteren, stelt de Handel `Expires` headers voor statische
 De instelling `Expires` header op een statische resource vertelt de browser dat de resource op die URL in cache moet worden geplaatst en dat de versie in de cache moet worden verzonden totdat deze verloopt.
 Dit is een algemene [beste praktijken](https://developer.yahoo.com/performance/rules.html#expires=) voor het in cache plaatsen van statische bronnen.
 
-Wanneer de browser een statische bron in cache plaatst en die resource op de server verandert, moet u het cachegeheugen van de browser wissen zodat de nieuwe versie kan worden gedownload.
+Wanneer de browser een statische bron in cache plaatst en die resource op de server verandert, moet u het cachegeheugen van de browser wissen, zodat de nieuwe versie kan worden gedownload.
 Het handmatig wissen van het cachegeheugen van de browser werkt als u een websitebeheerder bent, maar dit is geen geschikte aanvraag om van uw gebruikers te maken wanneer u ze nieuwe versies van een statische bron wilt downloaden.
 
 ## Statische ondertekening van inhoud

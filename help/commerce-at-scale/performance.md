@@ -17,7 +17,7 @@ In de volgende secties wordt op hoog niveau het aanbevolen technische aandachtsg
 
 ## Op TTL gebaseerde caching op AEM verzenders
 
-Het in cache plaatsen van zoveel mogelijk van de site op de verzenders is de beste manier voor elk AEM project. Als u op tijd gebaseerde cachevalidatie gebruikt, worden aan de serverzijde gerenderde CIF-pagina&#39;s voor een bepaalde beperkte tijd in cache opgeslagen. Nadat de ingestelde tijd is verlopen, zal het volgende verzoek de pagina van de AEM uitgever en Adobe Commerce GraphQL opnieuw opbouwen en zal het in het berichtkergeheime voorgeheugen opnieuw opslaan tot de volgende ongeldigverklaring.
+Het in cache plaatsen van zoveel mogelijk van de site op de verzenders is de beste manier voor elk AEM project. Als u op tijd gebaseerde cachevalidatie gebruikt, worden aan de serverzijde gerenderde CIF-pagina&#39;s voor een bepaalde beperkte tijd in cache opgeslagen. Nadat de ingestelde tijd is verlopen, wordt de pagina met het volgende verzoek opnieuw opgebouwd vanaf de AEM uitgever en Adobe Commerce GraphQL en wordt deze opnieuw opgeslagen in de verzendingscache tot de volgende validatie.
 
 De het caching van TTL eigenschap kan in AEM met het gebruiken van de &quot;Dispatcher TTL&quot;component binnen het pakket van de Commons ACS AEM en het plaatsen van /enableTTL &quot;1&quot;in de dispatcher.any configuratiedossier worden gevormd.
 
@@ -68,11 +68,11 @@ Een andere verzender die plaatst om te optimaliseren wanneer het vormen van stat
 >
 > Meer gedetailleerde informatie over dit onderwerp is te vinden in de [aem-dispatcher-experimenten](https://github.com/adobe/aem-dispatcher-experiments/tree/main/experiments/gracePeriod) GitHub-opslagplaats.
 
-## CIF - GrafiekQL caching via componenten
+## CIF - GraphQL caching via componenten
 
-De individuele componenten binnen AEM kunnen worden geplaatst om in het voorgeheugen onder te brengen, betekenend dat het verzoek GraphQL aan Adobe Commerce eens wordt geroepen en dan verdere verzoeken, tot de gevormde tijdslimiet, worden teruggewonnen van het AEM geheime voorgeheugen en zouden geen verdere lading op Adobe Commerce plaatsen. Voorbeelden zijn sitenavigatie op basis van een categoriestructuur die op elke pagina wordt weergegeven en opties binnen een beperkte zoekfunctionaliteit. Dit zijn slechts twee gebieden waarvoor op Adobe Commerce veeleisende query&#39;s moeten worden gemaakt, maar die waarschijnlijk niet regelmatig worden gewijzigd en daarom zijn goede keuzes voor caching. Op deze manier, bijvoorbeeld, zelfs wanneer een PDP of PLP door de uitgever wordt herbouwd, zou het middel intensieve verzoek GraphQL voor de navigatierebuild Adobe Commerce niet raken en kon uit het geheime voorgeheugen GraphQL op AEM CIF worden teruggewonnen.
+De individuele componenten binnen AEM kunnen worden geplaatst om in het voorgeheugen onder te brengen, betekenend dat het verzoek van GraphQL aan Adobe Commerce één keer wordt geroepen en dan verdere verzoeken, tot de gevormde tijdslimiet, worden teruggewonnen van het AEM geheime voorgeheugen en zouden geen verdere lading op Adobe Commerce plaatsen. Voorbeelden zijn sitenavigatie op basis van een categoriestructuur die op elke pagina wordt weergegeven en opties binnen een beperkte zoekfunctionaliteit. Dit zijn slechts twee gebieden waarvoor op Adobe Commerce veeleisende query&#39;s moeten worden gemaakt, maar die waarschijnlijk niet regelmatig worden gewijzigd en daarom zijn goede keuzes voor caching. Op deze manier, bijvoorbeeld, zelfs wanneer een PDP of PLP door de uitgever wordt herbouwd, zou het middel intensieve verzoek van GraphQL voor de navigatiereeks Adobe Commerce niet raken en kon uit het geheime voorgeheugen van GraphQL op AEM CIF worden teruggewonnen.
 
-Een voorbeeld hieronder is voor de navigatiecomponent om in het voorgeheugen onder te brengen omdat het de zelfde vraag GraphQL op alle pagina&#39;s in de plaats verzendt. In de onderstaande aanvraag worden de afgelopen 100 items gedurende 10 minuten in cache opgeslagen voor de navigatiestructuur:
+Een voorbeeld hieronder is dat de navigatiecomponent in de cache wordt geplaatst omdat het dezelfde GraphQL-query op alle pagina&#39;s in de site verzendt. In de onderstaande aanvraag worden de afgelopen 100 items gedurende 10 minuten in cache opgeslagen voor de navigatiestructuur:
 
 ```
 venia/components/structure/navigation:true:100:600
@@ -84,9 +84,9 @@ In het onderstaande voorbeeld worden de afgelopen 100 beperkte zoekopties gedure
 com.adobe.cq.commerce.core.search.services.SearchFilterService:true:100:3600
 ```
 
-De aanvraag, inclusief alle aangepaste http-headers en -variabelen, moet exact overeenkomen om de cache te kunnen aanslaan en te voorkomen dat Adobe Commerce nogmaals wordt aangeroepen. Hier moet worden opgemerkt dat er geen eenvoudige manier is om deze cache handmatig ongeldig te maken. Dit zou kunnen betekenen, daarom dat als een nieuwe categorie in Adobe Commerce wordt toegevoegd, het niet in de navigatie zou beginnen te verschijnen tot de vervaltijd die in het geheime voorgeheugen hierboven wordt geplaatst is verlopen en het GraphQL- verzoek wordt verfrist. Hetzelfde geldt voor zoekfacetten. Gezien de prestatievoordelen die deze caching kan opleveren, is dit echter meestal een aanvaardbaar compromis.
+De aanvraag, inclusief alle aangepaste http-headers en -variabelen, moet exact overeenkomen om de cache te kunnen aanslaan en te voorkomen dat Adobe Commerce nogmaals wordt aangeroepen. Hier moet worden opgemerkt dat er geen eenvoudige manier is om deze cache handmatig ongeldig te maken. Dit kan dus betekenen dat als een nieuwe categorie wordt toegevoegd in Adobe Commerce, deze pas in de navigatie wordt weergegeven als de vervaltijd die in de cache hierboven is ingesteld, is verlopen en het GraphQL-verzoek is vernieuwd. Hetzelfde geldt voor zoekfacetten. Gezien de prestatievoordelen die deze caching kan opleveren, is dit echter meestal een aanvaardbaar compromis.
 
-De bovenstaande caching opties kunnen worden geplaatst gebruikend de AEM OSGi configuratieconsole in &quot;Factory van de Configuratie van de Cliënt GraphQL&quot;. Elke ingang van de geheim voorgeheugenconfiguratie kan met het volgende formaat worden gespecificeerd:
+De bovenstaande cacheopties kunnen worden ingesteld met de AEM OSGi-configuratieconsole in &quot;GraphQL Client Configuration Factory&quot;. Elke ingang van de geheim voorgeheugenconfiguratie kan met het volgende formaat worden gespecificeerd:
 
 ```
 • NAME:ENABLE:MAXSIZE:TIMEOUT like for example mycache:true:1000:60 where each attribute is defined as:
@@ -96,19 +96,19 @@ De bovenstaande caching opties kunnen worden geplaatst gebruikend de AEM OSGi co
     › TIMEOUT (Integer): timeout for each cache entry (in seconds)
 ```
 
-## Hybride caching-cliënt kant GraphQL- verzoeken binnen caching dispatcherpagina&#39;s
+## Hybride caching-client-side GraphQL-verzoeken binnen in cache geplaatste verzendingspagina&#39;s
 
-Het is ook mogelijk om pagina&#39;s op een hybride manier in cache te plaatsen: het is mogelijk dat een CIF-pagina componenten bevat die altijd rechtstreeks vanuit de browser van de klant de meest recente informatie van Adobe Commerce opvragen. Dit kan handig zijn voor specifieke gebieden van de pagina in een sjabloon die belangrijk zijn om te worden bijgewerkt met real-time informatie: Productprijzen binnen een PDP, bijvoorbeeld. Wanneer de prijzen vaak veranderen toe te schrijven aan dynamische prijsaanpassing, kan die informatie worden gevormd om niet in het voorgeheugen ondergebracht op de verzender, eerder kunnen de prijzen cliënt-kant in browser van de klant van Adobe Commerce direct via GraphQL APIs met AEM CIF Webcomponenten worden gehaald.
+Het is ook mogelijk om pagina&#39;s op een hybride manier in cache te plaatsen: het is mogelijk dat een CIF-pagina componenten bevat die altijd rechtstreeks vanuit de browser van de klant de meest recente informatie van Adobe Commerce opvragen. Dit kan handig zijn voor specifieke gebieden van de pagina in een sjabloon die belangrijk zijn om te worden bijgewerkt met real-time informatie: Productprijzen binnen een PDP, bijvoorbeeld. Wanneer de prijzen vaak veranderen door dynamische prijsaanpassing, kan die informatie worden gevormd om niet in het voorgeheugen ondergebracht op de verzender worden, eerder kunnen de prijzen cliënt-kant in browser van de klant van Adobe Commerce direct via GraphQL APIs met AEM CIF Webcomponenten worden gehaald.
 
 Dit kan worden geconfigureerd via de instellingen voor AEM componenten. Voor Prijsinformatie op pagina&#39;s met productlijsten kunt u dit configureren in de sjabloon voor productlijsten, waarbij u de component met productlijsten op de pagina-instellingen selecteert en de optie &quot;Ladingsprijzen&quot; controleert. Hetzelfde geldt voor de voorraadniveaus.
 
 Bovenstaande methoden mogen alleen worden gebruikt in het geval dat actuele en actuele informatie vereist is. In het voorbeeld hierboven met tarifering, kon het met bedrijfsbelanghebbenden worden overeengekomen om prijzen slechts dagelijks bij lage verkeerstijden bij te werken en geheim voorgeheugenspoelverrichting toen uit te voeren. Dit zou de behoefte aan de de prijsinformatieverzoeken in real time en de verdere extra lading aan Adobe Commerce wanneer het bouwen van elke pagina verwijderen die prijsinformatie toont.
 
-## Niet-cacheable GraphQL-verzoeken
+## GraphQL-aanvragen zonder cache
 
-Specifieke dynamische gegevenscomponenten binnen pagina&#39;s zouden niet in het voorgeheugen ondergebracht moeten zijn en zullen altijd een vraag GraphQL aan Adobe Commerce, zoals voor het winkelwagentje en vraag door de controlepagina&#39;s vereisen. Deze informatie is specifiek voor een gebruiker en verandert voortdurend als gevolg van de activiteiten van de klant op de site, bijvoorbeeld door producten aan hun winkelwagentje toe te voegen.
+Specifieke dynamische gegevenscomponenten binnen pagina&#39;s moeten niet in het cachegeheugen worden opgeslagen en vereisen altijd een GraphQL-aanroep naar Adobe Commerce, zoals voor het winkelwagentje en aanroepen gedurende de hele afrekenpagina&#39;s. Deze informatie is specifiek voor een gebruiker en verandert voortdurend als gevolg van de activiteiten van de klant op de site, bijvoorbeeld door producten aan hun winkelwagentje toe te voegen.
 
-De resultaten van de Vraag GraphQL zouden niet voor geregistreerde klanten in het voorgeheugen ondergebracht moeten worden als het ontwerp van de plaats verschillende reacties zou geven die op de rol van de gebruiker worden gebaseerd. U kunt bijvoorbeeld meerdere klantgroepen maken en verschillende productprijzen of een andere zichtbaarheid van de productcategorie voor elke groep instellen. Caching resultaten als deze kunnen klanten ertoe brengen om de prijzen van een andere klantengroep te zien of onjuiste categorieën te hebben tonen.
+De resultaten van de Vraag van GraphQL zouden niet voor geregistreerde klanten in het voorgeheugen ondergebracht moeten worden als het ontwerp van de plaats verschillende reacties zou geven die op de rol van de gebruiker worden gebaseerd. U kunt bijvoorbeeld meerdere klantgroepen maken en verschillende productprijzen of een andere zichtbaarheid van de productcategorie voor elke groep instellen. Caching resultaten als deze kunnen klanten ertoe brengen om de prijzen van een andere klantengroep te zien of onjuiste categorieën te hebben tonen.
 
 ## Trackingparameters worden genegeerd bij AEM verzendercache
 

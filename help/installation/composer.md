@@ -1,13 +1,13 @@
 ---
 title: Snelle start van de installatie op locatie
 description: Voer de volgende stappen uit om Adobe Commerce of Magento Open Source op uw eigen infrastructuur te installeren.
-source-git-commit: 5e072a87480c326d6ae9235cf425e63ec9199684
+exl-id: a93476e8-2b30-461a-91df-e73eb1a14d3c
+source-git-commit: 95ffff39d82cc9027fa633dffedf15193040802d
 workflow-type: tm+mt
 source-wordcount: '990'
 ht-degree: 0%
 
 ---
-
 
 # Snelle start van de installatie op locatie
 

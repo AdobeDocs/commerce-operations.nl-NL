@@ -4,7 +4,7 @@ description: Bepaal in welk stadium uw bedrijf zich bevindt op basis van dit ont
 exl-id: 5cf9f080-0ac4-4426-837f-3c245d10e504
 source-git-commit: e76f101df47116f7b246f21f0fe0fa72769d2776
 workflow-type: tm+mt
-source-wordcount: '1048'
+source-wordcount: '1045'
 ht-degree: 0%
 
 ---
@@ -29,7 +29,7 @@ De volgende tabel geeft een overzicht van de verschillende looptijdniveaus:
 | Lopen | Op dit niveau, beginnen de organisaties aan hefboomwerking voorbij klantengegevens die uit veelvoudige bronnen komen, die multi-departementale samenwerking vereisen.  Organisaties op dit niveau kunnen het volledige potentieel van door mensen beheerde campagnes benutten en beschikken over een uitgebreide reeks beste praktijken, processen en ontwikkelingsstreams. |
 | Uitvoeren | Het hoogste niveau van rijpheid maakt door AI aangedreven campagnes mogelijk over verschillende kanalen en gebruikt voorspellend voorraadbeheer om te voorkomen dat churn en productinformatiebeheersinstrumenten producten verrijken. Het wordt het best bereikt door organisaties met een geëvolueerde gegevenscultuur, ontwikkelingsvaardigheden, en processen in huis en offshore. |
 
-{style=&quot;table-layout:auto&quot;}
+{style="table-layout:auto"}
 
 ### Gekruist
 

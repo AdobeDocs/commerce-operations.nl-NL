@@ -1,13 +1,13 @@
 ---
 title: Implementatieconfiguratie maken of bijwerken
 description: Voer de volgende stappen uit om uw Adobe Commerce- of Magento Open Source-implementatieconfiguratie te beheren.
-source-git-commit: f6f438b17478505536351fa20a051d355f5b157a
+exl-id: 2cdde735-0c70-44e8-b2ee-ffb874c1c443
+source-git-commit: 95ffff39d82cc9027fa633dffedf15193040802d
 workflow-type: tm+mt
 source-wordcount: '708'
 ht-degree: 0%
 
 ---
-
 
 # Implementatieconfiguratie maken of bijwerken
 
@@ -42,7 +42,7 @@ In de volgende tabel worden de betekenis van installatieparameters en -waarden b
 | `--session-save` | Voer een van de volgende handelingen uit:<br><br>- `db` om sessiegegevens op te slaan in het dialoogvenster [database](https://developer.adobe.com/commerce/php/development/cache/partial/database-caching/). Kies gegevensbestandopslag als u een gegroepeerd gegevensbestand hebt; anders, zou er niet veel voordeel over op dossier-gebaseerde opslag kunnen zijn.<br><br>- `files` om sessiegegevens op te slaan in het bestandssysteem. De op dossier-gebaseerde zittingsopslag is aangewezen tenzij de toegang van het dossiersysteem langzaam is, hebt u een gegroepeerd gegevensbestand, of u wilt zittingsgegevens in Redis opslaan.<br><br>- `redis` om sessiegegevens op te slaan in [Redis gebruiken voor sessieopslag](../../configuration/cache/config-redis.md). Als u Redis gebruikt als standaardinstelling of als u pagina&#39;s in cache plaatst, moet Redis al zijn geïnstalleerd. | Nee |
 | `--key` | Als u er een hebt, geeft u een sleutel op die u wilt versleutelen [vertrouwelijke gegevens](#sensitive-data) in de database. Als u er geen hebt, genereert de toepassing er een voor u. | Nee |
 | `--db-init-statements` | Geavanceerde MySQL-configuratieparameter. Gebruikt de verklaringen van de gegevensbestandinitialisatie om te lopen wanneer het verbinden met het gegevensbestand MySQL.<br><br>Standaard is `SET NAMES utf8;`.<br><br>Raadpleeg een verwijzing die vergelijkbaar is met [deze](https://dev.mysql.com/doc/refman/5.6/en/server-options.html) voordat u waarden instelt. | Nee |
-| `--http-cache-hosts` | Lijst met komma&#39;s als scheidingstekens van HTTP-cachegatewayhosts waarnaar purge-aanvragen moeten worden verzonden. (Bijvoorbeeld Varnish-servers.) Gebruik deze parameter om de host(s) op te geven die in dezelfde aanvraag moeten worden gewist. (Het maakt niet uit of u slechts één host of veel hosts hebt.)<br><br>Formaat moet `<hostname or ip>:<listen port>`, waar u kunt weglaten `<listen port>` als het poort 80 is. Bijvoorbeeld, `--http-cache-hosts=192.0.2.100,192.0.2.155:6081`. Plaats geen spatie tussen de hosts. | Nee |
+| `--http-cache-hosts` | Lijst met komma&#39;s als scheidingstekens van HTTP-cachegatewayhosts waarnaar purge-aanvragen moeten worden verzonden. (Bijvoorbeeld Varnish-servers.) Gebruik deze parameter om de host(s) op te geven die in dezelfde aanvraag moeten worden gewist. (Het maakt niet uit of u slechts één host of veel hosts hebt.)<br><br>Formaat moet `<hostname or ip>:<listen port>`, waar u kunt weglaten `<listen port>` als het poort 80 is. Bijvoorbeeld: `--http-cache-hosts=192.0.2.100,192.0.2.155:6081`. Plaats geen spatie tussen de hosts. | Nee |
 
 ## Configuratiegegevens importeren
 

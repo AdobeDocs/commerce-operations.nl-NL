@@ -1,8 +1,8 @@
 ---
 source-git-commit: 89c3b0bf5e70ef10708ace403c073a64dadf9903
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '501'
+ht-degree: 14%
 
 ---
 # Uitgebrachte versies

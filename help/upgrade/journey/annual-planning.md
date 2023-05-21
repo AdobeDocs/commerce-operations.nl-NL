@@ -1,13 +1,13 @@
 ---
 title: Jaarlijkse planning voor upgrades
 description: Lees tips voor het maken van een jaarlijks upgradeplan voor uw Adobe Commerce- of Magento Open Source-project.
-source-git-commit: bbc412f1ceafaa557d223aabfd4b2a381d6ab04a
+exl-id: f28e5ad1-28ac-4419-a507-63d79dbd6376
+source-git-commit: 95ffff39d82cc9027fa633dffedf15193040802d
 workflow-type: tm+mt
 source-wordcount: '232'
 ht-degree: 0%
 
 ---
-
 
 # Jaarlijkse planning voor upgrades
 

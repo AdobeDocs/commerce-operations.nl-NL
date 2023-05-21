@@ -2,13 +2,13 @@
 title: Naar aangepast logbestand schrijven
 description: Leer aangepaste logbestanden instellen.
 badge: label="Bijgedragen door Atwix" type="Informatief" url="https://www.atwix.com/" tooltip="Atwix"
-source-git-commit: d7f32690b25c61fa31a99e6d02f9f1025de2bb99
+exl-id: 875f45e7-30c9-4b1b-afe9-d1a8d51ccdf0
+source-git-commit: 95ffff39d82cc9027fa633dffedf15193040802d
 workflow-type: tm+mt
 source-wordcount: '405'
 ht-degree: 0%
 
 ---
-
 
 # Naar een aangepast logbestand schrijven
 

@@ -1,13 +1,13 @@
 ---
 title: Voorbeeldgegevensopslagruimten klonen
 description: Voer de volgende stappen uit om Adobe Commerce- en Magento Open Source-voorbeeldgegevens te installeren door Git-opslagruimten te klonen.
-source-git-commit: 3692dcfd5b50c2f036b005d40a22db061b9ea5fd
+exl-id: 748eee30-2821-457d-9c1c-62ede8bc0510
+source-git-commit: 95ffff39d82cc9027fa633dffedf15193040802d
 workflow-type: tm+mt
 source-wordcount: '764'
 ht-degree: 0%
 
 ---
-
 
 # Voorbeeldgegevensopslagruimten klonen
 

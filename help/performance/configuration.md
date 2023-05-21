@@ -1,13 +1,13 @@
 ---
 title: Best practices voor configuratie
 description: Optimaliseer de reactietijd van uw Adobe Commerce- of Magento Open Source-implementatie met deze best practices.
-source-git-commit: 5b455cb1285ce764a0517008fb8b692f3899066d
+exl-id: 4cb0f5e7-49d5-4343-a8c7-b8e351170f91
+source-git-commit: 95ffff39d82cc9027fa633dffedf15193040802d
 workflow-type: tm+mt
 source-wordcount: '1348'
 ht-degree: 0%
 
 ---
-
 
 # Best practices voor configuratie
 
@@ -122,4 +122,3 @@ U kunt verzamelingen van productrasters alleen op de volgende pagina&#39;s beper
 * Beheerderspagina voor bestelling maken
 
 Als u niet wilt dat het productraster wordt beperkt, raden we u aan om filters nauwkeuriger te gebruiken zodat de resultaatverzameling minder items bevat dan **[!UICONTROL Records Limit]**.
-

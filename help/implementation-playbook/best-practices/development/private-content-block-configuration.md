@@ -4,7 +4,8 @@ description: Leer beste praktijken voor het vormen van privé inhoudsblokken om 
 role: Developer
 feature: Best Practices
 feature-set: Commerce
-source-git-commit: 5e072a87480c326d6ae9235cf425e63ec9199684
+exl-id: a6d2f324-f9b9-4b2b-997f-36df02c37465
+source-git-commit: 95ffff39d82cc9027fa633dffedf15193040802d
 workflow-type: tm+mt
 source-wordcount: '200'
 ht-degree: 0%
@@ -32,5 +33,3 @@ Sites met persoonlijke inhoudsblokken die de `_isScopePrivate` variabelen brenge
 
 - [Persoonlijke inhoud](../../../performance/configuration.md#client-side-optimization-settings)
 - [De hoge productie AJAX verzoeken veroorzaken slechte prestaties](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/high-throughput-ajax-requests-cause-poor-performance.html)
-
-

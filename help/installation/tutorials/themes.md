@@ -1,13 +1,13 @@
 ---
 title: Thema's verwijderen
 description: Voer de volgende stappen uit om een Adobe Commerce- of Magento Open Source-thema te verwijderen.
-source-git-commit: 5e072a87480c326d6ae9235cf425e63ec9199684
+exl-id: 73150e8c-2d83-4479-b96b-75f41fd9c842
+source-git-commit: 95ffff39d82cc9027fa633dffedf15193040802d
 workflow-type: tm+mt
 source-wordcount: '473'
 ht-degree: 0%
 
 ---
-
 
 # Thema&#39;s verwijderen
 

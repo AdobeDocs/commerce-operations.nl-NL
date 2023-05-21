@@ -1,13 +1,13 @@
 ---
 title: Onderhoudsmodus in- of uitschakelen
 description: Voer de volgende stappen uit om aan te passen wat klanten zien wanneer uw Adobe Commerce- of Magento Open Source-implementatie niet beschikbaar is voor onderhoud.
-source-git-commit: bc025217ed7bc2195c0a2d919139abe13d184259
+exl-id: 5d9f1493-e771-47b4-b906-3771026cf07a
+source-git-commit: 95ffff39d82cc9027fa633dffedf15193040802d
 workflow-type: tm+mt
 source-wordcount: '553'
 ht-degree: 0%
 
 ---
-
 
 # Onderhoudsmodus in- of uitschakelen
 

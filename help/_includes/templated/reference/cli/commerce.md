@@ -9486,7 +9486,7 @@ De uitvoerindeling: table, csv, tsv of plain
 
 ### `--columns`, `-c`
 
-Weer te geven kolommen. Beschikbare kolommen: timestamp*, used*, limit*, percent*, ipercent*, ilimit, interval, used (* = default columns). Het teken &quot;+&quot; kan worden gebruikt als plaatsaanduiding voor de standaardkolommen. Als een lijst als één waarde wordt gegeven (bijv. &quot;a,b,c&quot;) wordt gesplitst in komma&#39;s en/of spaties.
+Weer te geven kolommen. Beschikbare kolommen: timestamp*, used*, limit*, percent*, ipercent*, ilimit, interval, used (* = default columns). Het teken &quot;+&quot; kan worden gebruikt als tijdelijke aanduiding voor de standaardkolommen. Als een lijst als één waarde wordt gegeven (bv. &quot;a,b,c&quot;) wordt gesplitst in komma&#39;s en/of witruimte.
 
 - Standaard: `[]`
 - Vereist een waarde
@@ -9500,7 +9500,7 @@ De tabelkoptekst niet uitvoeren
 
 ### `--date-fmt`
 
-De datumnotatie (als een PHP-tekenreeks voor de datumnotatie)
+De datumnotatie (als een PHP-datumnotatietekenreeks)
 
 - Standaard: `c`
 - Vereist een waarde
@@ -12040,7 +12040,7 @@ De uitvoerindeling: table, csv, tsv of plain
 
 ### `--columns`
 
-Weer te geven kolommen. Beschikbare kolommen: middel, datum, downloads, release. Als een lijst als één waarde wordt gegeven (bijv. &quot;a,b,c&quot;) wordt gesplitst in komma&#39;s en/of spaties.
+Weer te geven kolommen. Beschikbare kolommen: element, datum, downloads, release. Als een lijst als één waarde wordt gegeven (bv. &quot;a,b,c&quot;) wordt gesplitst in komma&#39;s en/of witruimte.
 
 - Standaard: `[]`
 - Vereist een waarde
@@ -12054,7 +12054,7 @@ De tabelkoptekst niet uitvoeren
 
 ### `--date-fmt`
 
-De datumnotatie (als een PHP-tekenreeks voor de datumnotatie)
+De datumnotatie (als een PHP-datumnotatietekenreeks)
 
 - Standaard: `c`
 - Vereist een waarde

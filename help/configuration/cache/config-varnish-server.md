@@ -1,13 +1,13 @@
 ---
 title: Webserver configureren
 description: Leer hoe u uw webserver configureert voor gebruik met Varnish.
-source-git-commit: 5e072a87480c326d6ae9235cf425e63ec9199684
+exl-id: b31179ef-3c0e-4a6b-a118-d3be1830ba4e
+source-git-commit: 95ffff39d82cc9027fa633dffedf15193040802d
 workflow-type: tm+mt
 source-wordcount: '740'
 ht-degree: 0%
 
 ---
-
 
 # Uw webserver configureren
 

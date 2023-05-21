@@ -4,13 +4,13 @@ description: Leer over implementatie beste praktijken voor de planningsfase van 
 role: Developer, Admin, User
 feature: Best Practices
 feature-set: Commerce
-source-git-commit: 78308f9cb3d2ebe8af41c42f9bb146409367ab6c
+exl-id: 6baeac79-8dc3-45b4-bb25-8f2add8b3443
+source-git-commit: 95ffff39d82cc9027fa633dffedf15193040802d
 workflow-type: tm+mt
 source-wordcount: '248'
 ht-degree: 0%
 
 ---
-
 
 # Planning
 
@@ -43,7 +43,7 @@ De volgende secties omvatten beste praktijkinformatie voor de planningsfase.
 
 - **Services configureren**
    - [Snel instellen](https://devdocs.magento.com/cloud/cdn/configure-fastly.html)
-   - [Nieuw Relic - vorm berichtkanalen](https://devdocs.magento.com/cloud/project/new-relic.html#configure-notification-channels)
+   - [New Relic - Meldingskanalen configureren](https://devdocs.magento.com/cloud/project/new-relic.html#configure-notification-channels)
    - [Aanbevolen werkwijzen voor &#x200B; van Redis-services](redis-service-configuration.md)
    - [Aanbevolen procedures voor het omzetten van cachegrootte in paden](realpath-cache-size.md)
 

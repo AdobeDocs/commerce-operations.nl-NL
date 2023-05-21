@@ -1,13 +1,13 @@
 ---
 title: Bestandseigendom en machtigingen
 description: Leer over het belang van de toestemmingen van het dossiersysteem wanneer het werken met op-gebouw installaties van Adobe Commerce en Magento Open Source.
-source-git-commit: 8f05fb6fc212c2b3fda80457bbf27ecf16fb1194
+exl-id: a84784bf-afd6-4dba-9745-3fefc0ecafcb
+source-git-commit: 95ffff39d82cc9027fa633dffedf15193040802d
 workflow-type: tm+mt
 source-wordcount: '457'
 ht-degree: 0%
 
 ---
-
 
 # Bestandseigendom en machtigingen
 

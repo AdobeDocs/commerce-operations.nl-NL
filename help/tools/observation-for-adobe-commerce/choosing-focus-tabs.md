@@ -1,7 +1,8 @@
 ---
-title: "De [!UICONTROL focus] tabs"
+title: De optie [!UICONTROL focus] tabs
 description: Leer hoe u de [!UICONTROL focus] tabs om gebieden waar problemen optreden te observeren.
-source-git-commit: bcb0746f3428a29a6ef03ca2dcf29347fa1b7dbd
+exl-id: 6c0a7d81-09cf-49ce-888a-9ecaaad2b7ae
+source-git-commit: 95ffff39d82cc9027fa633dffedf15193040802d
 workflow-type: tm+mt
 source-wordcount: '221'
 ht-degree: 0%

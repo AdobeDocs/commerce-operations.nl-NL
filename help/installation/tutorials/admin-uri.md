@@ -1,13 +1,13 @@
 ---
 title: De Admin-URI weergeven of wijzigen
 description: Voer de volgende stappen uit om de URI van uw Adobe Commerce- of Magento Open Source-beheertoepassing weer te geven en te wijzigen.
-source-git-commit: 5e072a87480c326d6ae9235cf425e63ec9199684
+exl-id: 768f9ab4-7123-4460-9df8-a6c98ae55d95
+source-git-commit: 95ffff39d82cc9027fa633dffedf15193040802d
 workflow-type: tm+mt
 source-wordcount: '103'
 ht-degree: 0%
 
 ---
-
 
 # De Admin-URI weergeven of wijzigen
 

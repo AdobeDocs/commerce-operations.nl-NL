@@ -1,13 +1,13 @@
 ---
 title: Configuratiewaarden instellen
 description: Leer hoe u configuratiewaarden instelt en waarden wijzigt die zijn vergrendeld in Beheer.
-source-git-commit: 5e072a87480c326d6ae9235cf425e63ec9199684
+exl-id: 1dc2412d-50b3-41fb-ab22-3eccbb086302
+source-git-commit: 95ffff39d82cc9027fa633dffedf15193040802d
 workflow-type: tm+mt
 source-wordcount: '982'
 ht-degree: 0%
 
 ---
-
 
 # Configuratiewaarden instellen
 

@@ -1,13 +1,13 @@
 ---
 title: Modules in- of uitschakelen
 description: Voer de volgende stappen uit om Adobe Commerce- of Magento Open Source-modules te beheren.
-source-git-commit: 5e072a87480c326d6ae9235cf425e63ec9199684
+exl-id: 7155950a-a66a-4254-a71c-1a9aeab47606
+source-git-commit: 95ffff39d82cc9027fa633dffedf15193040802d
 workflow-type: tm+mt
 source-wordcount: '551'
 ht-degree: 0%
 
 ---
-
 
 # Modules in- of uitschakelen
 

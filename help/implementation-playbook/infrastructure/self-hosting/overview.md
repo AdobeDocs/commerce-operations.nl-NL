@@ -7,13 +7,13 @@ kt: 11420
 doc-type: tutorial
 audience: all
 last-substantial-update: 2023-04-13T00:00:00Z
-source-git-commit: ef89ace2f03d5010384ba759e81695b6ae7e630b
+exl-id: 63f552f3-836c-4a07-96c3-c0e00614fe39
+source-git-commit: 95ffff39d82cc9027fa633dffedf15193040802d
 workflow-type: tm+mt
 source-wordcount: '738'
 ht-degree: 0%
 
 ---
-
 
 # Adobe Commerce-overzicht met zelfhosting
 

@@ -4,13 +4,13 @@ description: Leer de stappen voor het optimaliseren van afbeeldingen en het gebr
 role: Developer, Admin
 feature: Best Practices
 feature-set: Commerce
-source-git-commit: e156fcafc5792036b37d9b199b870f1888c3f1ff
+exl-id: ada8b987-97ed-4232-9e1b-7e0a791a0807
+source-git-commit: 95ffff39d82cc9027fa633dffedf15193040802d
 workflow-type: tm+mt
 source-wordcount: '210'
 ht-degree: 0%
 
 ---
-
 
 # Afbeeldingen optimaliseren voor een meer responsieve site
 
