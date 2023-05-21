@@ -38,7 +38,7 @@ Voor sessies raadt Adobe u aan de persistentie in te schakelen om Redis-gegevens
 
 - **Alleen bestand toevoegen** (AOF) slaat elke schrijfbewerking die naar Redis is verzonden op in een dagboekbestand. Redis leest dit dossier bij nieuw begin slechts en gebruikt het om de originele dataset te herstellen.
 
-U kunt zowel de opties RDB als AOF tegelijkertijd inschakelen. Zie voor meer informatie, waaronder de voor- en nadelen van de opties voor persistentie [Redis Persistence-documentatie](https://redis.io/topics/persistence).
+U kunt zowel de opties RDB als AOF tegelijkertijd inschakelen. Zie voor meer informatie, waaronder de voor- en nadelen van de persistentieopties, de [Redis Persistence-documentatie](https://redis.io/topics/persistence).
 
 Voor de geheim voorgeheugeninstantie, opstelling de instantie zodat het groot genoeg is om uw volledige geheime voorgeheugen van de Handel op te slaan. De groottevereisten zijn afhankelijk van verschillende factoren, zoals het aantal producten en de winkelweergave. Als uitgangspunt kunt u de grootte van de cachemap op uw bestandssysteem gebruiken. Als de `var/cache` De map op uw bestandssysteem is 5 GB. Stel uw Redis-exemplaar in met ten minste 5 GB om te starten. Persistence is not required for the cache instance because the Commerce cache can be restore. Zie [Cache-hulplijn opnieuw weergeven](https://redis.io/docs/manual/eviction/).
 
