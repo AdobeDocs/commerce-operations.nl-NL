@@ -7,7 +7,7 @@ ht-degree: 0%
 ---
 # Adobe Commerce Verklarende woordenlijst
 
-## Geen
+## A
 
 ### boven de vouw
 
@@ -35,7 +35,7 @@ _Term-kenmerken:_
 
 * _Veld: wolk_
 
-### 10/100/1000-adapter
+### adapter
 
 _zelfstandig_
 
@@ -114,16 +114,16 @@ Elk gebied kan volledig verschillende code bevatten om URLs en verzoeken te verw
 
 Adobe Commerce-gebieden zijn:
 
-* Beheer (adminhtml)
-* Introductie
-* Web-API-rust (webapi_rest)
+* Admin (adminhtml)
+* Storefront
+* Web API REST (webapi_rest)
 
 _Term-kenmerken:_
 
 * _Veld: handelssoftware_
 * _Verwante termen: handelscomponent, winkel_
 
-### wijt
+### attribute
 
 _zelfstandig_
 
@@ -134,7 +134,7 @@ Voorbeelden: kleur, grootte, gewicht, prijs, leeftijd, geslacht, enzovoort.
 
 Aangepaste kenmerken zijn een type kenmerk Entiteit-Attribute-Value (EAV).
 
-Voor integratie zoals Google Shopping Ads en het verkoopkanaal van Amazon wijst u Commerce kenmerken toe aan kenmerken in de derde partij om producten correct weer te geven en te verkopen, zodat u advertenties kunt weergeven en verkopen.
+Voor integraties zoals Google Shopping-advertenties Channel en Amazon Sales Channel, kun je de Commerce-kenmerken toewijzen aan kenmerken in de derde partij om producten correct weer te geven en te verkopen, advertenties weer te geven.
 
 Meer informatie: [EAV en extension_attributes](https://developer.adobe.com/commerce/php/development/components/attributes/)
 
@@ -146,21 +146,21 @@ _Term-kenmerken:_
 
 ### kenmerkgroep
 
-_zelfstandig_
+_naam_
 
-Een logische groepering van kenmerken binnen een kenmerkset.
+Een logische groep met kenmerken binnen een kenmerkset.
 
-_Term-kenmerken:_
+_Termen kenmerken:_
 
 * _Veld: handelssoftware_
 * _Verwante termen: attribute_
 
 ### kenmerkset
 
-_zelfstandig_
+_naamwoord_
 
 Een verzameling kenmerkgroepen, aangepast voor een specifiek product.
-Voorbeeld: Een set T-shirtkenmerken kan kleur, grootte, geslacht en merk bevatten.
+Voorbeeld: Een kenmerkset voor T-shirts kan kleur, grootte, geslacht en merk bevatten.
 
 _Term-kenmerken:_
 
@@ -178,7 +178,7 @@ _Term-kenmerken:_
 
 * _Veld: product, prijs, voorraad_
 
-## BB
+## B
 
 ### basisvaluta
 
@@ -322,9 +322,9 @@ _Term-kenmerken:_
 
 ### cachetype
 
-_zelfstandig_
+_naam_
 
-In een cache worden gegevens opgeslagen zodat toekomstige aanroepen voor die gegevens sneller worden geladen.
+In de cache worden gegevens opgeslagen, zodat toekomstige gegevens sneller worden geladen.
 
 Adobe Commerce bevat de volgende typen:
 * Configuratie
@@ -345,7 +345,7 @@ Adobe Commerce bevat de volgende typen:
 * Google-productcache
 * Vertex
 
-Andere typen kunnen worden gemaakt en gedefinieerd.
+U kunt andere typen maken en definiëren.
 
 _Term-kenmerken:_
 
@@ -356,26 +356,26 @@ _Term-kenmerken:_
 _werkwoord_
 
 Het proces waarbij een geautoriseerd orderbedrag wordt omgezet in een factureerbare transactie.
-Transacties kunnen pas worden vastgelegd als daarvoor toestemming is gegeven en vergunningen pas kunnen worden vastgelegd nadat de goederen of diensten zijn verzonden.
+Transacties kunnen pas worden vastgelegd na toestemming en vergunningen kunnen pas worden vastgelegd nadat de goederen of diensten zijn verzonden.
 
 _Term-kenmerken:_
 
-* _Veld: zakendoen_
-* _Verwante termen: machtiging, orderstatus_
+* _Veld: Business_
+* _Verwante termen: autorisatie, status van bestelling_
 
 ### kaarthouder
 
-_zelfstandig_
+_naam_
 
 Een persoon die van een financiële instelling een vergunning heeft gekregen om op een creditcardrekening aankopen te doen.
 
 _Term-kenmerken:_
 
-* _Veld: bedrijf, bestelling_
+* _Veld: bedrijf, bestellen_
 
-### kartelregels
+### winkelwagentjes
 
-_zelfstandig_
+_naamwoord_
 
 Prijsregels die worden toegepast op het winkelwagentje en die een actie in reactie op een reeks voorwaarden in gang zetten.
 Wordt gebruikt om promoties te maken.
@@ -475,7 +475,7 @@ _Term-kenmerken:_
 
 * _Veld: programmeren_
 
-### bestanddeel
+### component
 
 _zelfstandig_
 
@@ -506,25 +506,25 @@ Vervolgens worden alle varianten toegevoegd aan een configureerbaar product, waa
 _Term-kenmerken:_
 
 * _Veld: handelssoftware, product_
-* _Verwante termen: productsoorten_
+* _Gerelateerde voorwaarden: producttypen_
 
-### omrekeningskoers
+### conversie tarief
 
-_zelfstandig_
+_naam_
 
-Het percentage bezoekers dat wordt omgezet in kopers.
+Het percentage bezoekers dat is omgezet in kopers.
 
-_Term-kenmerken:_
+_Termen kenmerken:_
 
 * _Veld: bedrijf, bestelling_
 
-### schalen van kernniveau
+### schaal van kern lagen
 
-_zelfstandig_
+_naam_
 
-De de rijschrapping van de kern bestaat uit drie de dienstknopen voor gegevensopslag, geheime voorgeheugen en de diensten, zoals OpenSearch, Elasticsearch, MariaDB, Redis.
+Schaal van kern lagen bestaat uit drie service knooppunten voor gegevensopslag, cache en services, zoals opensearch, Elasticsearch, MariaDB, redis.
 
-_Term-kenmerken:_
+_Termen kenmerken:_
 
 * _Veld: wolk_
 
@@ -537,11 +537,11 @@ Het memo herstelt de gelden naar de rekening van de klant.
 
 _Term-kenmerken:_
 
-* _Veld: bedrijf, bestelling_
+* _Veld: bedrijf, order_
 
-### opmerking over creditnota
+### Opmerking creditnota
 
-_zelfstandig_
+_naam_
 
 Details waarom een creditnota aan de klant is gecrediteerd.
 
@@ -581,11 +581,11 @@ Een manier om de identiteit van de klant te verifiëren door bij de betalingsver
 
 _Term-kenmerken:_
 
-* _Veld: bedrijf, bestelling_
+* _Veld: bedrijf, bestellen_
 * _Synoniemen: Verificatiemethode vergunninghouder_
 * _Verwante termen: beveiligingscode_
 
-## Ontwikkeling
+## D
 
 ### databaseschema
 
@@ -680,41 +680,41 @@ _Term-kenmerken:_
 * _Veld: programmeren_
 * _Verwante termen: netwerk voor levering van inhoud, url_
 
-## B
+## E
 
 ### ece-tools-pakket
 
-_zelfstandig_
+_naamwoord_
 
-Een reeks manuscripten en hulpmiddelen die worden ontworpen om de toepassing van de Handel te beheren en op te stellen. Dit pakket vereenvoudigt veel Adobe Commerce op cloudinfrastructuuroplossingen, zoals implementatie in een Docker-omgeving, het beheren van crons, het controleren van de projectconfiguratie en het toepassen van Adobe-patches.
+Een set scripts en tools die is ontworpen om de Commerce-toepassing te beheren en implementeren. Dit pakket vereenvoudigt veel Adobe Commerce op cloudinfrastructuurprocessen, zoals implementatie in een Docker-omgeving, beheer van crons, verificatie van projectconfiguratie en toepassing van Adobe-patches.
 
-Meer informatie: [ece-tools-pakket](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/dev-tools/ece-tools/package-overview.html)
+Meer informatie: [ ECE-tools pakket](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/dev-tools/ece-tools/package-overview.html)
 
-_Term-kenmerken:_
+_Termen kenmerken:_
 
-* _Veld: cli, cloud, implementatie_
+* _Veld: CLI, Cloud, distribueren_
 
-### entiteit
+### onderneming
 
-_zelfstandig_
+_naam_
 
 Een unieke eenheid of object in programmering.
 Bevat kenmerken of parameters die kunnen worden gewijzigd.
-Voorbeelden zijn staging — waarbij een update entiteiten zoals prijsregels, producten of categorieën kan wijzigen — en databaserecords — waarbij servicecontracten gegevensstructuren bevatten die worden verzonden en ontvangen.
+Voorbeelden zijn staging — waarbij een update entiteiten zoals prijsregels, producten of categorieën kan wijzigen — en databaserecords — waarbij servicecontracten datastructuren bevatten die worden verzonden en ontvangen.
 
 _Term-kenmerken:_
 
-* _Veld: handelssoftware_
-* _Verwante termen: kenmerk, regels voor winkelwagentjes, catalogusregels_
+* _Veld: verkoopsoftware_
+* _Verwante termen: kenmerken, winkelwagentjes, catalogusregels_
 
 ### kenmerkwaarde van entiteit
 
-_zelfstandig_
+_naamwoord_
 
 Voor database-entiteiten is dit een gegevensmodel waarmee entiteiten efficiënt worden gecodeerd.
-Hiermee slaat u de id van de entiteit, de kenmerknaam en de waarde op als een drievoud, zodat u op elk gewenst moment nieuwe entiteitskenmerknamen kunt maken.
-Bij het coderen kan het aantal kenmerken dat kan worden gebruikt om entiteiten te beschrijven, uitgebreid worden geschaald, maar het aantal dat van toepassing is op een bepaalde entiteit wordt tot een minimum beperkt.
-Dit gegevensmodel is flexibel, maar kan langzaam zijn.
+Hiermee slaat u de entiteit-id, de kenmerknaam en de waarde op als een drievoud, zodat op elk moment nieuwe entiteitskenmerknamen kunnen worden gemaakt.
+Bij het coderen kan het aantal kenmerken dat kan worden gebruikt om entiteiten te beschrijven, uitgebreid worden geschaald, maar is het aantal dat van toepassing is op een bepaalde entiteit tot een minimum beperkt.
+Dit gegevensmodel is flexibel, maar kan traag zijn.
 
 Meer informatie: [EAV en extension_attributes](https://developer.adobe.com/commerce/php/development/components/attributes/)
 
@@ -733,44 +733,44 @@ _Term-kenmerken:_
 
 * _Veld: zakendoen_
 
-### nummer
+### extension
 
 _zelfstandig_
 
-Code die het gedrag van Adobe Commerce uitbreidt of aanpast.
-U kunt een extensie optioneel verpakken en distribueren op Commerce Marketplace of een ander distributiesysteem voor extensies.
-Een uitbreiding van de Handel kan modules, thema&#39;s, en taalpakken omvatten.
+Code waarmee Adobe commerce-gedrag wordt uitgebreid of aangepast.
+U kunt desgewenst een uitbreiding verpakken en distribueren op Commerce Marketplace of een ander uitbreidings distributiesysteem.
+Een Commerce-uitbreiding kan modules, Thema&#39;s en taalpakketten bevatten.
 
-_Term-kenmerken:_
+_Termen kenmerken:_
 
-* _Veld: handelssoftware_
-* _Verwante termen: component, module, pakket_
+* _Veld: commerce software_
+* _Verwante voorwaarden: component, module, pakket_
 
-### extension, kenmerk
+### extensie kenmerk
 
-_zelfstandig_
+_naam_
 
-Breid functionaliteit uit en gebruik vaak complexere gegevenstypes dan douaneattributen. Deze kenmerken worden niet weergegeven in de GUI.
+U kunt de functionaliteit uitbreiden en vaak complexe gegevenstypen gebruiken dan aangepaste kenmerken. Deze kenmerken worden niet weergegeven in de GUI.
 
-Meer informatie: [Extensiekenmerken toevoegen aan entiteit](https://developer.adobe.com/commerce/php/development/components/add-attributes/)
+Meer informatie: [ extensie kenmerken aan de entiteit toevoegen](https://developer.adobe.com/commerce/php/development/components/add-attributes/)
 
 _Term-kenmerken:_
 
 * _Veld: handelssoftware_
 * _Verwante termen: attribuut, entiteitskenmerkwaarde_
 
-## L
+## F
 
 ### vracht aan boord
 
 _zelfstandig_
 
-In de internationale scheepvaart betekent deze term dat de ontvangende partij verantwoordelijk is voor de verzendkosten.
-FOB kan worden gebaseerd op de plaats van oorsprong of bestemming en worden aangeduid als vracht die wordt afgenomen of als vracht die vooraf wordt betaald.
+Bij internationale verzending betekent deze term dat de ontvangende partij verantwoordelijk is voor de verzendkosten.
+FOB kan worden gebaseerd op de positie van oorsprong of bestemming en moet worden aangemerkt als vracht collect of vracht vooruitbetaling.
 
-_Term-kenmerken:_
+_Termen kenmerken:_
 
-* _Veld: zaken, orde, tarifering_
+* _Veld: bedrijf, order, prijzen_
 * _Synoniemen: fob_
 
 ### voorzijde
@@ -811,7 +811,7 @@ _Term-kenmerken:_
 
 * _Veld: zakendoen_
 
-## Financieel
+## G
 
 ### cadeaukaart
 
@@ -863,7 +863,7 @@ _Term-kenmerken:_
 * _Veld: handelssoftware, product_
 * _Verwante termen: eenvoudige producten, productsoorten_
 
-## Kosten
+## H
 
 ### handgreep
 
@@ -890,7 +890,7 @@ _Term-kenmerken:_
 
 * _Veld: wolk_
 
-## Er
+## I
 
 ### onderschepping
 
@@ -907,9 +907,9 @@ _Term-kenmerken:_
 * _Veld: programmeren_
 * _Verwante termen: insteekmodule_
 
-## Grootboekbudgetten
+## L
 
-### lay
+### layout
 
 _zelfstandig_
 
@@ -958,7 +958,7 @@ _Term-kenmerken:_
 
 * _Veld: zakendoen_
 
-## Maateenheidschema
+## M
 
 ### MAGEID
 
@@ -1079,7 +1079,7 @@ _Term-kenmerken:_
 * _Veld: beveiliging_
 * _Verwante termen: webtoepassingsfirewall_
 
-## W
+## P
 
 ### Page Builder
 
@@ -1108,7 +1108,7 @@ _Term-kenmerken:_
 
 * _Veld: zaken, orde, programmering_
 
-## Le
+## R
 
 ### verwant product
 
@@ -1121,7 +1121,7 @@ _Term-kenmerken:_
 
 * _Veld: handelssoftware, product_
 
-## Zijn
+## S
 
 ### verkoopregels
 
@@ -1146,7 +1146,7 @@ Toepassingsgebied kan van toepassing zijn op:
 * Winkel: de geselecteerde winkel en alle winkelweergaven eronder
 * Winkelweergave — de geselecteerde winkelweergave.
 
-Binnen de hiërarchie, kunnen de montages die op een lager niveau worden toegepast sommige montages op hoger niveau met voeten treden.
+Binnen de hiërarchie kunnen instellingen die op een lager niveau worden toegepast, sommige instellingen op een hoger niveau overschrijven.
 
 _Term-kenmerken:_
 
@@ -1157,23 +1157,23 @@ _Term-kenmerken:_
 _zelfstandig_
 
 Een set PHP-interfaces die zijn gedefinieerd voor een module.
-Een de dienstcontract omvat gegevensinterfaces, die gegevensintegriteit, en de dienstinterfaces bewaren, die bedrijfslogische details van de dienstaanvrager zoals controlemechanismen, de Webdiensten, en andere modules verbergen.
+Een servicecontract bevat gegevens interfaces, die gegevensintegriteit behouden, en Service interfaces, die de details van de bedrijfslogica verbergen voor klantenservice aanvragers, zoals controllers, webservices en andere modules.
 Web APIs kan aan de dienstcontracten via configuratiedossiers worden gebonden.
 
-_Term-kenmerken:_
+_Termen kenmerken:_
 
 * _Veld: programmeren_
-* _Verwante termen: php, web api_
+* _Verwante termen: PHP, Web-API_
 
 ### schikking
 
-_zelfstandig_
+_naamwoord_
 
-Afwikkeling vindt plaats wanneer de overnemende bank en de omrekeningsfondsen van de emittent en de opbrengsten op de handelsrekening worden gedeponeerd.
+Afwikkeling vindt plaats wanneer de overnemende bank en de emitterende wisselkoersfondsen en de opbrengsten op de handelsrekening worden gedeponeerd.
 
 _Term-kenmerken:_
 
-* _Veld: zakendoen_
+* _Veld: bedrijf_
 
 ### Gedeelde catalogus
 
@@ -1253,7 +1253,7 @@ _Term-kenmerken:_
 * _Veld: handelssoftware, product_
 * _Verwante termen: productsoorten_
 
-### PRODUCT
+### SKU
 
 _zelfstandig_
 
@@ -1331,12 +1331,12 @@ Het het werkingsgebiedniveau van de Handel van &quot;archiefmening&quot;verwijst
 In winkelweergaven wordt de winkel gewoonlijk in een andere landinstelling en taal weergegeven.
 Als u de weergaven van de winkel wilt wijzigen, gebruikt u de winkelkiezer in de koptekst.
 
-_Term-kenmerken:_
+_Termen kenmerken:_
 
-* _Veld: handelssoftware, product_
+* _Veld: commerce software, product_
 * _Verwante termen: winkel, website_
 
-### introductie
+### storefront
 
 _zelfstandig_
 
@@ -1346,7 +1346,7 @@ _Term-kenmerken:_
 
 * _Veld: handelssoftware, product_
 
-## Nettowinst
+## T
 
 ### belastingregel
 
@@ -1358,7 +1358,7 @@ _Term-kenmerken:_
 
 * _Veld: zakendoen_
 
-### Temp
+### template
 
 _zelfstandig_
 
@@ -1369,7 +1369,7 @@ In de sjablonen voor beheer, e-mail en nieuwsbrief combineren tekst, afbeeldinge
 
 _Term-kenmerken:_
 
-* _Veld: handelssoftware_
+* _Veld: verkoopsoftware_
 * _Verwante termen: blok_
 
 ### thema
@@ -1379,12 +1379,12 @@ _zelfstandig_
 Bevat afbeeldingen en weergave-informatie.
 Hiermee past u de vormgeving van de winkel aan.
 Adobe Commerce kan thema&#39;s verzenden in (Composer)-pakketten.
-Thema&#39;s kunnen echter onder app/design worden geplaatst, dat niet in een pakket wordt verzonden.
-Pakketten zijn de eenheid van download voor Composer, en — via Commerce Marketplace — de gebruikers van de Handel kunnen CE of EE als reeks pakketten downloaden, waar de pakketten modules, thema&#39;s, of taalpakketten bevatten.
+Maar thema&#39;s kunnen onder een app/ontwerp worden geplaatst, dat niet in een pakket wordt geleverd.
+Pakketten vormen de downloadeenheid voor Composer en — via Commerce Marketplace — Commerce-gebruikers kunnen CE of EE downloaden als een reeks pakketten, waarbij pakketten modules, thema&#39;s of taalpakketten bevatten.
 
 _Term-kenmerken:_
 
-* _Veld: handelssoftware_
+* _Veld: commerce software_
 
 ## Maateenheidschema
 
@@ -1392,12 +1392,12 @@ _Term-kenmerken:_
 
 _zelfstandig_
 
-Een tag die is ontworpen voor Adobe Commerce-software om eenvoudiger en flexibeler weergave van gebruikersinterface (UI) mogelijk te maken.
+Een tag die is ontworpen voor Adobe Commerce-software om eenvoudigere en flexibelere rendering van gebruikersinterfaces (UI) mogelijk te maken.
 De doelstellingen van het UI componentensysteem omvatten het volgende:
 
-* XML-bestanden met layouthandgrepen vereenvoudigen
-* Admin-gebruikersinterface-elementen verplaatsen van HTML+JavaScript naar een aangepast JavaScript-widgetsysteem
-* Het toelaten van de verwezenlijking van complexere componenten UI uit kleinere componenten
+* XML-bestanden voor lay-outverwerking vereenvoudigen
+* Het verplaatsen van de elementen van de Admin-gebruikersinterface van HTML+JavaScript naar een &quot;zuiver JavaScript&quot;-widgetsysteem
+* Het maken van complexere UI-componenten mogelijk maken uit kleinere componenten
 * Gegevens voor UI-componenten renderen als JSON, nauw binden aan back-end gegevensobjecten
 * AJAX gebruiken om componentgegevens bij te werken
 * Introductie van een nieuwe DSL voor het creëren van de bovengenoemde punten
@@ -1409,7 +1409,7 @@ _Term-kenmerken:_
 * _Veld: programmeren_
 * _Verwante termen: JavaScript, layout, component, page builder_
 
-### SNELLE
+### UPWARD
 
 _zelfstandig_
 
@@ -1431,7 +1431,7 @@ _Term-kenmerken:_
 * _Synoniemen: PWA Studio, Unified Progressive Web App Response Definition_
 * _Verwante termen: pwa_
 
-## Versus
+## V
 
 ### Gebundelde extensie van leverancier
 
@@ -1488,7 +1488,7 @@ _Term-kenmerken:_
 * _Veld: programmeren_
 * _Verwante termen: php_
 
-## V
+## W
 
 ### website
 
@@ -1503,7 +1503,7 @@ _Term-kenmerken:_
 * _Veld: handelssoftware, ontwerp, product_
 * _Verwante termen: opslaan, winkelweergave_
 
-### wenst
+### widget
 
 _zelfstandig_
 
