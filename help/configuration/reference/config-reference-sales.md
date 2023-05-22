@@ -1,8 +1,9 @@
 ---
 title: Verwijzing naar verkoopconfiguratiepaden
 description: Zie een lijst van waarden van de verkoopconfiguratie.
+feature: Configuration, Checkout, Gift, Shipping/Delivery, Taxes
 exl-id: 7981f78a-5e5f-422c-9bff-54022e1fb9f3
-source-git-commit: 95ffff39d82cc9027fa633dffedf15193040802d
+source-git-commit: 16e9396f19693436dfc7bdac78d84624a78f0c21
 workflow-type: tm+mt
 source-wordcount: '1473'
 ht-degree: 0%
@@ -397,7 +398,7 @@ Deze configuratiewaarden zijn beschikbaar in de Admin in **Winkels** > Instellin
 | De bezit van de lijst voor het up-sell blok | `google/analytics/upsell_block_list_value` | ![Alleen handel](/help/assets/configuration/cloud-ee.png) |
 | Eigenschap List voor het verwante productblok | `google/analytics/related_block_list_value` | ![Alleen handel](/help/assets/configuration/cloud-ee.png) |
 | De eigenschap List voor de pagina met zoekresultaten | `google/analytics/search_page_list_value` | ![Alleen handel](/help/assets/configuration/cloud-ee.png) |
-| ’Interne promoties’ voor het promotieveld ‘Label’. | `google/analytics/promotions_list_value` | ![Alleen handel](/help/assets/configuration/cloud-ee.png) |
+| &#39;Interne promoties&#39; voor promoties in het veld &#39;Label&#39;. | `google/analytics/promotions_list_value` | ![Alleen handel](/help/assets/configuration/cloud-ee.png) |
 | Inschakelen | `google/adwords/active` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 | Conversie-id | `google/adwords/conversion_id` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 | Conversietaal | `google/adwords/conversion_language` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |

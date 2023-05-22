@@ -1,8 +1,9 @@
 ---
 title: Varnish configureren voor handel
 description: Leer om uw Varnish configuratiedossier voor de toepassing van de Handel bij te werken en te beheren.
+feature: Configuration, Cache, SCD
 exl-id: 6c007ff9-493f-4df2-b7b4-438b41fd7e37
-source-git-commit: 95ffff39d82cc9027fa633dffedf15193040802d
+source-git-commit: a2bd4139aac1044e7e5ca8fcf2114b7f7e9e9b68
 workflow-type: tm+mt
 source-wordcount: '377'
 ht-degree: 0%

@@ -1,9 +1,10 @@
 ---
 title: Security.txt
 description: Leer hoe u informatie verstrekt om beveiligingsonderzoekers te helpen kwetsbaarheden te melden.
+feature: Configuration, Security
 badge: label="Medewerkers van Kalpesh Mehta van Corra" type="Informatief" url="https://solutionpartners.adobe.com/s/directory/detail/corra" tooltip="Kalpesh Mehta"
 exl-id: ddafd03c-77b2-42e8-b593-7d655d08e9c3
-source-git-commit: 95ffff39d82cc9027fa633dffedf15193040802d
+source-git-commit: 56a2461edea2799a9d569bd486f995b0fe5b5947
 workflow-type: tm+mt
 source-wordcount: '155'
 ht-degree: 0%

@@ -1,8 +1,9 @@
 ---
 title: Toegangsrechten voor bestandssystemen
 description: Zie hoe u de eigenaar of eigenaars van het bestandssysteem voor de toepassing Commerce instelt voor een ontwikkelings- en productiesysteem.
+feature: Configuration, Roles/Permissions
 exl-id: 95b27db9-5247-4f58-a9af-1590897d73db
-source-git-commit: 95ffff39d82cc9027fa633dffedf15193040802d
+source-git-commit: dcc283b901917e3681863370516771763ae87462
 workflow-type: tm+mt
 source-wordcount: '866'
 ht-degree: 0%

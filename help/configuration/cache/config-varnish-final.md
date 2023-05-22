@@ -1,10 +1,11 @@
 ---
 title: Laatste verificatie
 description: Controleer of uw Varnish-configuratie op de juiste wijze is ingesteld voor gebruik met de Adobe Commerce-toepassing.
+feature: Configuration, Cache
 exl-id: 01f28c93-75cd-4969-9142-b8dac0aa2adb
-source-git-commit: 95ffff39d82cc9027fa633dffedf15193040802d
+source-git-commit: a2bd4139aac1044e7e5ca8fcf2114b7f7e9e9b68
 workflow-type: tm+mt
-source-wordcount: '345'
+source-wordcount: '349'
 ht-degree: 0%
 
 ---
@@ -82,4 +83,4 @@ Zorg ervoor dat de `<magento_root>/var/page_cache` directory is leeg:
 
 >[!TIP]
 >
->Als er 503 (Backend Fetch Failed) fouten optreden, raadpleegt u [Problemen oplossen met 503 (service niet beschikbaar) fouten](https://support.magento.com/hc/en-us/articles/360034631211) in de _Adobe Commerce Help Center_.
+>Als er 503 (Backend Fetch Failed) fouten optreden, raadpleegt u [Problemen oplossen met 503 (service niet beschikbaar) fouten](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/troubleshooting-503-errors.html) in de _Adobe Commerce Help Center_.

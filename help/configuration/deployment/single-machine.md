@@ -1,8 +1,9 @@
 ---
 title: Implementatie van één computer
 description: Leer hoe te om updates aan Handel op een productieserver op te stellen gebruikend de bevellijn.
+feature: Configuration, Deploy
 exl-id: ca73309c-7584-4506-99de-dd933651eeb6
-source-git-commit: 95ffff39d82cc9027fa633dffedf15193040802d
+source-git-commit: dcc283b901917e3681863370516771763ae87462
 workflow-type: tm+mt
 source-wordcount: '186'
 ht-degree: 0%
