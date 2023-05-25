@@ -1,26 +1,26 @@
 ---
-title: Adobe Commerce 2.3.5-upgradevoorwaarden voor MariaDB
-description: Leer hoe u uw Adobe Commerce-database voorbereidt voor een upgrade vanaf Adobe Commerce 2.3.5.
+title: Voorwaarden voor Adobe Commerce-upgrade voor MariaDB
+description: Leer hoe u uw Adobe Commerce-database voorbereidt voor het upgraden van MariaDB vanaf een eerdere versie.
 role: Developer
 feature-set: Commerce
 feature: Best Practices
 exl-id: b86e471f-e81f-416b-a321-7aa1ac73d27c
-source-git-commit: 95ffff39d82cc9027fa633dffedf15193040802d
+source-git-commit: 73663659dd1b3305bf8c9a167852b24dc1016e7d
 workflow-type: tm+mt
-source-wordcount: '641'
+source-wordcount: '627'
 ht-degree: 0%
 
 ---
 
 # Voorwaarden voor upgrades voor MariaDB
 
-Voor een upgrade van Adobe Commerce 2.3.4 of eerder naar een nieuwere versie moet de MariaDB-service op de cloudinfrastructuur worden bijgewerkt van versie 10.0 of 10.2 naar versie 10.3 of 10.4. Voor MariaDB-versie 10.3 en hoger moet de database de dynamische indeling voor tabelrijen gebruiken en voor Adobe Commerce moet de InnoDB-opslagengine voor tabellen worden gebruikt. In dit artikel wordt uitgelegd hoe u uw database kunt bijwerken om aan deze MariaDB-vereisten te voldoen.
+De MariaDB-service in de cloudinfrastructuur wordt bijgewerkt van versie 10.0 of 10.2 naar versie 10.3, 10.4 of 10.5. Voor MariaDB-versie 10.3 en hoger moet de database de dynamische indeling voor tabelrijen gebruiken en voor Adobe Commerce is het gebruik van de InnoDB-opslagengine voor tabellen vereist. In dit artikel wordt uitgelegd hoe u uw database kunt bijwerken om aan deze MariaDB-vereisten te voldoen.
 
 Nadat u de database hebt voorbereid, dient u een Adobe Commerce-ondersteuningsticket in om de versie van de MariaDB-service op uw cloudinfrastructuur bij te werken voordat u verdergaat met het Adobe Commerce-upgradeproces.
 
 ## Betrokken product en versies
 
-Adobe Commerce op cloudinfrastructuur met Adobe Commerce versie 2.3.4 of lager en MariaDB versie 10.0 of lager.
+Adobe Commerce op cloudinfrastructuur met MariaDB versie 10.3 of lager.
 
 ## Uw database voorbereiden voor de upgrade
 
@@ -119,7 +119,7 @@ Het converteren van de opslagindeling is anders voor Adobe Commerce Starter- en 
 
 ### De databaseconversie controleren
 
-De dag vóór de geplande upgrade naar MariaDB-versie 10.2 controleert u of alle tabellen de juiste rijindeling en opslagengine hebben. De controle wordt vereist omdat de code plaatsingen die nadat u de omzetting wordt gemaakt sommige lijsten zouden kunnen veroorzaken om aan hun originele configuratie worden teruggezet.
+De dag vóór de geplande upgrade naar MariaDB-versie 10.3, 10.4 of 10.6 controleert u of alle tabellen de juiste rijindeling en opslagengine hebben. De controle wordt vereist omdat de code plaatsingen die nadat u de omzetting wordt gemaakt sommige lijsten zouden kunnen veroorzaken om aan hun originele configuratie worden teruggezet.
 
 1. Meld u aan bij uw database.
 
