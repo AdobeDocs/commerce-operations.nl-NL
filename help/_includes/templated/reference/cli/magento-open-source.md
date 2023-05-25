@@ -1,7 +1,7 @@
 ---
-source-git-commit: a1f99f839f11ab42356b87a69398999bb03cd544
+source-git-commit: ad7f05eaa5f144b5a8616307d65be635a0c499eb
 workflow-type: tm+mt
-source-wordcount: '17238'
+source-wordcount: '17239'
 ht-degree: 0%
 
 ---
@@ -13,7 +13,7 @@ ht-degree: 0%
 **Versie**: 2.4.6.
 
 Deze verwijzing bevat 114 bevelen beschikbaar door `bin/magento` opdrachtregelprogramma.
-De eerste lijst wordt automatisch gegenereerd met de opdracht `bin/magento list` in de editie.
+De eerste lijst wordt automatisch gegenereerd met de opdracht `bin/magento list` gebruiken bij Magento Open Source.
 Gebruik de [&quot;CLI-opdrachten toevoegen&quot;](https://developer.adobe.com/commerce/php/development/cli-commands/) gids om een douane CLI bevel toe te voegen.
 
 >[!NOTE]

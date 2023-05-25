@@ -1,7 +1,7 @@
 ---
-source-git-commit: 27e7a262fd1d8092045f5ebe2f88caaec37a6b0d
+source-git-commit: ad7f05eaa5f144b5a8616307d65be635a0c499eb
 workflow-type: tm+mt
-source-wordcount: '29783'
+source-wordcount: '29786'
 ht-degree: 0%
 
 ---
@@ -13,7 +13,7 @@ ht-degree: 0%
 **Versie**: 1.42.0.
 
 Deze verwijzing bevat 134 bevelen beschikbaar door `magento-cloud` opdrachtregelprogramma.
-De eerste lijst wordt automatisch gegenereerd met de opdracht `magento-cloud list` in de editie.
+De eerste lijst wordt automatisch gegenereerd met de opdracht `magento-cloud list` in Adobe Commerce op cloudinfrastructuur.
 
 >[!NOTE]
 >
