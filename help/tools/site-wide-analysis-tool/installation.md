@@ -2,9 +2,9 @@
 title: Hulplijn installeren
 description: Deze handleiding gebruiken om te installeren [!DNL Site-Wide Analysis Tool] voor uw website
 exl-id: ba36dc74-806d-49c5-b4d1-ba53ed4076fb
-source-git-commit: 95ffff39d82cc9027fa633dffedf15193040802d
+source-git-commit: 4210746509be99bb3c943906c99f70ea420ba74a
 workflow-type: tm+mt
-source-wordcount: '1074'
+source-wordcount: '1168'
 ht-degree: 0%
 
 ---
@@ -184,7 +184,7 @@ Als u onze [shellscript](https://github.com/magento-swat/install-agent-helpers/b
    1. Download het archief van de startprogramma&#39;s.
 
       ```bash
-      curl -O https://updater.swat.magento.com/launcher/launcher.linux-amd64.tar.gz
+      curl -O https://updater.supportinsights.adobe.com/launcher/launcher.linux-amd64.tar.gz
       ```
 
    1. Pak het archief van de draagprogramma&#39;s uit.
@@ -197,7 +197,7 @@ Als u onze [shellscript](https://github.com/magento-swat/install-agent-helpers/b
    1. Download het archief van de startprogramma&#39;s.
 
       ```bash
-      curl -O https://updater.swat.magento.com/launcher/launcher.linux-arm64.tar.gz
+      curl -O https://updater.supportinsights.adobe.com/launcher/launcher.linux-arm64.tar.gz
       ```
 
    1. Pak het archief van de draagprogramma&#39;s uit.
@@ -390,7 +390,7 @@ U ziet mogelijk de volgende fout als uw toegangstoetsen niet correct worden gepa
 
 ```terminal
 ERRO[2022-10-10 00:01:41] Error while refreshing token: error while getting jwt from magento: invalid character 'M' looking for beginning of value
-FATA[2022-12-10 20:38:44] bad http status from https://updater.swat.magento.com/linux-amd64.json: 403 Forbidden
+FATA[2022-12-10 20:38:44] bad http status from https://updater.supportinsights.adobe.com/linux-amd64.json: 403 Forbidden
 ```
 
 Voer de volgende stappen uit om deze fout op te lossen:
@@ -403,6 +403,12 @@ Voer de volgende stappen uit om deze fout op te lossen:
 1. Stel de planner in werking en zie of ontvangt u nog de zelfde fout.
 1. Als u nog steeds dezelfde fout krijgt, verhoogt u het logniveau in het dialoogvenster `config.yaml` om te zuiveren en een kaartje van de Steun te openen.
 
+### *SIGFAULT* Fout
+
+Als u een *SIGFAULT* Als binair bestand wordt uitgevoerd, wordt dit waarschijnlijk niet uitgevoerd als de eigenaar van Adobe Commerce- en Agent-bestanden.
+Om op te lossen, gelieve te controleren of alle dossiers binnen de agentenfolder die de zelfde gebruiker hebben zoals de fileowner die de dossiers van Adobe Commerce hebben, en binair zou ook onder die gebruiker moeten worden in werking gesteld.
+U kunt de `chown` om de eigenaar van de bestanden te wijzigen en over te schakelen op de juiste gebruiker.
+Zorg ervoor dat het proces onder de juiste gebruiker wordt uitgevoerd met het mechanisme voor demonisatie (Cron of System.d).
 
 >[!INFO]
 >
