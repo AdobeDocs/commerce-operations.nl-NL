@@ -2,9 +2,9 @@
 title: Berichtenrijen beheren
 description: Leer hoe u berichtrijen van de bevellijn voor Adobe Commerce kunt beheren.
 exl-id: 619e5df1-39cb-49b6-b636-618b12682d32
-source-git-commit: caca8df48c498977f830082ef27d9afb6220ae92
+source-git-commit: 8dce1f1e961ec02d7783a7423a51a7d4567dce79
 workflow-type: tm+mt
-source-wordcount: '416'
+source-wordcount: '417'
 ht-degree: 0%
 
 ---
@@ -37,7 +37,7 @@ In het volgende voorbeeld wordt het `crontab` configuratie voor het runnen van c
 >
 >Zie [Uitsnede configureren en uitvoeren](../cli/configure-cron-jobs.md) voor meer informatie over het gebruik `cron` met Commerce.
 
-U kunt ook procesbeheer gebruiken, zoals [Supervisor](http://supervisord.org/index.html) de status van processen te controleren. De manager kan de bevellijn gebruiken om de processen opnieuw te beginnen zoals nodig.
+U kunt ook procesbeheer gebruiken, zoals [Supervisor](https://supervisord.readthedocs.io/en/latest/) de status van processen te controleren. De manager kan de bevellijn gebruiken om de processen opnieuw te beginnen zoals nodig.
 
 ## Configuratie
 
@@ -76,12 +76,12 @@ Bewerk de `/app/etc/env.php` bestand om de uitsnijdtaak te configureren `consume
 - `consumers` - Een array van tekenreeksen die aangeven welke consumenten moeten worden uitgevoerd. Een lege array wordt uitgevoerd *alles* consumenten.
 - `multiple_processes` - Een array van sleutelwaardeparen die aangeven welke consument moet werken in hoeveel processen. Ondersteund in Commerce 2.4.4 of hoger.
 
-   >[!INFO]
-   >
-   >Het wordt niet geadviseerd om veelvoudige consumenten op een MySQL-Bediende rij in werking te stellen. Zie [Berichtwachtrij wijzigen van MySQL in AMQP](https://developer.adobe.com/commerce/php/development/components/message-queues/#change-message-queue-from-mysql-to-amqp) voor meer informatie .
+  >[!INFO]
+  >
+  >Het wordt niet geadviseerd om veelvoudige consumenten op een MySQL-Bediende rij in werking te stellen. Zie [Berichtwachtrij wijzigen van MySQL in AMQP](https://developer.adobe.com/commerce/php/development/components/message-queues/#change-message-queue-from-mysql-to-amqp) voor meer informatie .
 
-   >[!INFO]
-   >
-   >Als uw Adobe Commerce-winkel op het Cloud-platform wordt gehost, gebruikt u de [`CONSUMERS_WAIT_FOR_MAX_MESSAGES`](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure/env/stage/variables-deploy.html#consumers_wait_for_max_messages) om te vormen hoe de consumenten berichten van de berichtrij verwerken.
+  >[!INFO]
+  >
+  >Als uw Adobe Commerce-winkel op het Cloud-platform wordt gehost, gebruikt u de [`CONSUMERS_WAIT_FOR_MAX_MESSAGES`](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure/env/stage/variables-deploy.html#consumers_wait_for_max_messages) om te vormen hoe de consumenten berichten van de berichtrij verwerken.
 
 Zie [Gebruikers in de wachtrij met berichten starten](../cli/start-message-queues.md).
