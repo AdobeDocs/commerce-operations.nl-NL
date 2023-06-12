@@ -2,9 +2,9 @@
 title: Opmerkingen bij de release
 description: Meer informatie over de patches die beschikbaar zijn voor Adobe Commerce en de problemen die ze oplossen.
 exl-id: 22262555-f5ea-49ad-98ad-ea8428ef66d5
-source-git-commit: 205a0b67fab14a313d28355eed668d60ce477e64
+source-git-commit: 86f95d8fff53ab0857a3a276ba785ad26eb71241
 workflow-type: tm+mt
-source-wordcount: '12066'
+source-wordcount: '12426'
 ht-degree: 0%
 
 ---
@@ -20,6 +20,25 @@ De [[!DNL Quality Patches Tool]](https://github.com/magento/quality-patches) lev
 >[!INFO]
 >
 >Voor informatie over [!DNL quality patches] die door de Gemeenschap voor Magento Open Source zijn opgericht, [releaseopmerkingen](https://github.com/magento/quality-patches/blob/master/community-release-notes.md).
+
+## v1.1.32 {#v1-1-32}
+
+* **ACSD-49628** (voor Adobe Commerce en Magento Open Source >=2.4.2 &lt;2.4.7) - Hiermee wordt het probleem opgelost waarbij de [!UICONTROL Page Builder's] meerdere fouten verhinderen dat beheerders een product opslaan zonder inhoudsmachtigingen.
+* **ACSD-51305** (voor Adobe Commerce en Magento Open Source >=2.4.6 &lt;2.4.7) - Hiermee wordt het probleem verholpen waarbij configureerbare onderliggende producten uit de voorraad niet beschikbaar zijn in de GraphQL-reactie.
+* **ACSD-50621** (voor Adobe Commerce >=2.3.7 &lt;2.4.7) - Hiermee wordt het probleem opgelost waarbij [!UICONTROL Tier Prices] voor verschillende websites in de gedeelde catalogus zijn niet zichtbaar wanneer u probeert deze te bewerken in een omgeving met meerdere websites.
+* **ACSD-51041** (voor Adobe Commerce en Magento Open Source >=2.3.7 &lt;2.4.0 || >=2.4.1 &lt;2.4.6) - Verbetert de prestaties van de prijsindexer.
+* **ACSD-51379** (voor Adobe Commerce en Magento Open Source >=2.3.7 &lt;2.4.7) - Hiermee wordt het probleem opgelost waarbij wijzigingen worden aangebracht in de inhoud van paginatekst via [!UICONTROL Page Builder] niet worden opgeslagen.
+* **ACSD-49480** (voor Adobe Commerce en Magento Open Source >=2.4.4 &lt;2.4.6) - Hiermee wordt het probleem opgelost waarbij slechts één regel van de winkelwagenprijs op de winkelwagen wordt toegepast.
+* **ACSD-51230** (voor Adobe Commerce >=2.3.7 &lt;2.4.7) - Hiermee wordt de kwestie opgelost waarbij de rekening van de cadeaukaart wordt verwijderd wanneer een gedeeltelijke terugbetaling van een eenvoudig product wordt verwerkt uit een bestelling.
+* **ACSD-51238** (voor Adobe Commerce en Magento Open Source >=2.4.4 &lt;2.4.7) - Hiermee wordt het probleem opgelost waarbij de inventarisbron wordt verwijderd wanneer configureerbare producten worden bijgewerkt en de prijs wordt bewerkt.
+* **ACSD-50794** (voor Adobe Commerce >=2.4.1 &lt;2.4.7) - Hiermee wordt het probleem verholpen waarbij het cadeaubericht of de informatie over het inpakken van cadeaus niet in de database worden bijgewerkt wanneer het bericht of de cadeau via GraphQL wordt verwijderd.
+* **ACSD-51528** (voor Adobe Commerce en Magento Open Source >=2.4.5 &lt;2.4.7) - Hiermee wordt het probleem opgelost waarbij de *x_forward_for* de kolom heeft ongeldige waarden in *sales_order* tabel.
+* **ACSD-50849** (voor Adobe Commerce >=2.4.4 &lt;2.4.6) - Hiermee wordt het probleem opgelost dat het toevoegen van een nieuw product aan de categorie na het wissen van de cache resulteert in een onjuiste weergave van posities en selecties van de bestaande producten.
+* **ACSD-51294** (voor Adobe Commerce en Magento Open Source >=2.4.5 &lt;2.4.7) - Hiermee wordt het probleem opgelost waarbij GTM/GA-prijs, -hoeveelheid, -belasting, -verzending en -inkomsten als een tekenreeks worden verzonden naar [!DNL Google Analytics] en GTM.
+* **ACSD-51204** (voor Adobe Commerce en Magento Open Source >=2.4.3 &lt;2.4.7) - Hiermee wordt het probleem opgelost waarbij een volledig verkocht product na het maken van een creditmemo niet opnieuw in voorraad terugkeert.
+* **ACSD-51291** (voor Adobe Commerce en Magento Open Source >=2.4.4 &lt;2.4.4-p4 || >=2.4.5 &lt;2.4.5-p3) - Hiermee wordt het probleem opgelost dat beperkte beheerders met toegang tot één website afbeeldingen/video&#39;s kunnen toevoegen aan het product dat aan meerdere websites is toegewezen.
+* Nieuwe versies toegevoegd voor ACSD-50336.
+* Vervangen patches ACSD-49970.
 
 ## v1.1.31 {#v1-1-31}
 
