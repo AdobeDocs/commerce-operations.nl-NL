@@ -1,9 +1,9 @@
 ---
 user-guide-title: Aanbevolen werkwijzen voor prestaties
 user-guide-description: Optimaliseer de prestaties van uw Adobe Commerce- of Magento Open Source-productieimplementatie aan de hand van onze aanbevelingen.
-source-git-commit: 338a99f4f047640ac4bb944ac8599301cba5f646
+source-git-commit: c61f33a7159424e5f9018ebf37b9d17072246536
 workflow-type: tm+mt
-source-wordcount: '56'
+source-wordcount: '61'
 ht-degree: 0%
 
 ---
@@ -22,4 +22,5 @@ ht-degree: 0%
 - Geavanceerde concepten {#performance-best-practices}
    - [Geavanceerde instellingen](advanced-setup.md)
    - [Geavanceerd [!DNL JavaScript] bundeling](advanced-js-bundling.md)
+   - [Toepassingsserver voor GraphQL API&#39;s](application-server.md)
 - [Terugkeren naar operationele hulplijnen](https://experienceleague.adobe.com/docs/commerce-operations/operational-guides/home.html)

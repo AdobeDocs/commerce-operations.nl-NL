@@ -3,7 +3,7 @@ keywords: Adobe Commerce;home;populaire onderwerpen
 title: Home
 description: Blader door een index van het systeembeheer en de documentatie van het operationele product van Adobe Commerce.
 exl-id: 45ec4948-338f-4276-8a70-d0db720322d9
-source-git-commit: 9e010b68f6458bafda5119308531e62477f046a9
+source-git-commit: 2b1fa24471cda7cc01ef5fdafeedbec0315d68c7
 workflow-type: tm+mt
 source-wordcount: '243'
 ht-degree: 0%
@@ -64,11 +64,11 @@ Krijg praktische informatie over concepten, processen, hulpmiddelen, en beste pr
     </div>
   </td>
   <td valign="top">
-    <a href="https://experienceleague.adobe.com/docs/commerce-operations/reference/commerce.html">
-       <img alt="Verwijzing naar opdrachtregelprogramma's" src="../assets/icons/page-rule.svg" width="40" height="40"/>
+    <a href="https://experienceleague.adobe.com/docs/commerce-operations/reference/commerce-on-premises.html">
+       <img alt="Verwijzing naar opdrachtregelprogramma&apos;s" src="../assets/icons/page-rule.svg" width="40" height="40"/>
     </a>
     <div>
-      <a href="https://experienceleague.adobe.com/docs/commerce-operations/reference/commerce.html"><strong>Referentie voor opdrachtregelprogramma's</strong></a>
+      <a href="https://experienceleague.adobe.com/docs/commerce-operations/reference/commerce-on-premises.html"><strong>Referentie voor opdrachtregelprogramma's</strong></a>
       <p>Meer informatie over opdrachten, argumenten en opties voor de opdrachtregelprogramma's van Adobe Commerce.</p>
     </div>
   </td>
