@@ -2,7 +2,7 @@
 title: Jaarlijkse planning voor upgrades
 description: Lees tips voor het maken van een jaarlijks upgradeplan voor uw Adobe Commerce- of Magento Open Source-project.
 exl-id: f28e5ad1-28ac-4419-a507-63d79dbd6376
-source-git-commit: 95ffff39d82cc9027fa633dffedf15193040802d
+source-git-commit: d81283491447dcad5f38ddf55acea7d94889ef35
 workflow-type: tm+mt
 source-wordcount: '232'
 ht-degree: 0%
@@ -21,4 +21,4 @@ Tijdens de planning, kunt u zich willen vragen:
 - Verifieer ik dat deze aanpassingen en uitbreidingen niet native door Adobe worden verstrekt en niet in een aanstaande versie zijn? Als dat zo is, kan ik mijn bedrijf misschien zowel tijd als geld besparen.
 - Beschikt ik over integratie van derden die het komende jaar onderhoud nodig kan hebben?
 
-Om ervoor te zorgen dat uw team op het juiste spoor is, plan halverwege het jaar voor een verbeteringscontrolepunt om uw plannen, begroting, chronologie, en de capaciteit van het team te herzien.
+Om ervoor te zorgen dat uw team op het juiste spoor is, plant halverwege het jaar voor een verbeteringscontrolepunt om uw plannen, begroting, chronologie, en de capaciteit van het team te herzien.
