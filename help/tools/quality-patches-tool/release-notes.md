@@ -2,9 +2,9 @@
 title: Opmerkingen bij de release
 description: Meer informatie over de patches die beschikbaar zijn voor Adobe Commerce en de problemen die ze oplossen.
 exl-id: 22262555-f5ea-49ad-98ad-ea8428ef66d5
-source-git-commit: 86f95d8fff53ab0857a3a276ba785ad26eb71241
+source-git-commit: 28358ee2ebadfcbf12c67e667cbbd27599a28a80
 workflow-type: tm+mt
-source-wordcount: '12426'
+source-wordcount: '12912'
 ht-degree: 0%
 
 ---
@@ -20,6 +20,29 @@ De [[!DNL Quality Patches Tool]](https://github.com/magento/quality-patches) lev
 >[!INFO]
 >
 >Voor informatie over [!DNL quality patches] die door de Gemeenschap voor Magento Open Source zijn opgericht, [releaseopmerkingen](https://github.com/magento/quality-patches/blob/master/community-release-notes.md).
+
+## v1.1.33 {#v1-1-33}
+
+* **ACSD-50478** (voor Adobe Commerce en Magento Open Source >=2.4.0 &lt;2.4.5) - lost het gegevensbestandterugschroeven bevel voor een geval op wanneer de stortplaats van DB trekkers en een *scheidingsteken* SQL-opdracht.
+* **ACSD-50512** (voor Adobe Commerce >=2.4.5 &lt;2.4.7) - Hiermee wordt het *Fout: De downloadbare koppeling heeft geen betrekking op het product. Controleer de koppeling en probeer het opnieuw.* fout die optreedt bij het bijwerken van de begindatum voor een downloadbare update voor productplaatsing.
+* **ACSD-50949** (voor Adobe Commerce en Magento Open Source >=2.4.2 &lt;2.4.7) - Hiermee wordt het probleem verholpen waarbij het prijsfilter in Geavanceerd zoeken geen goede resultaten oplevert wanneer het wordt gebruikt langs het SKU-filter.
+* **ACSD-51645** (voor Adobe Commerce en Magento Open Source >=2.4.6 &lt;2.4.7) - Hiermee wordt de gegenereerde fout gecorrigeerd wanneer een nieuwe regel voor winkelprijzen wordt opgeslagen als de extensie `Magento_OfflineShipping` is uitgeschakeld.
+* **ACSD-50895** (voor Adobe Commerce >=2.4.5 &lt;2.4.7) - Hiermee wordt het probleem opgelost waarbij [!DNL Google Analytics] 3 GTM-tags worden niet geactiveerd als [!DNL Google Analytics] 4 GTM is niet geconfigureerd.
+* **ACSD-51102** (voor Adobe Commerce >=2.4.2 &lt;2.4.7) - Hiermee wordt het probleem verholpen waarbij een catalogusregel die op een groot aantal producten wordt toegepast, niet correct wordt geïndexeerd wanneer de regel wordt ingeschakeld door een geplande update.
+* **ACSD-50368** (voor Adobe Commerce en Magento Open Source >= 2.4.3 &lt;2.4.5) - Hiermee wordt het probleem opgelost waarbij de klant `group_id` wordt genegeerd wanneer een klant wordt gemaakt via de Async REST API of de Async Bulk REST API.
+* **ACSD-51497** (voor Adobe Commerce en Magento Open Source >=2.3.7 &lt;2.4.0 || >= 2.4.1 &lt;2.4.7) - Hiermee wordt het probleem verholpen waarbij een klant een cataloguspagina niet kan sorteren op Aangepast kenmerk van het vervolgkeuzetype.
+* **ACSD-51408** (voor Adobe Commerce en Magento Open Source >=2.3.7 &lt; 2.4.7) - Hiermee wordt het probleem verholpen waarbij de status van het orderitem onjuist is ingesteld op *[!UICONTROL Backordered]*.
+* **ACSD-51735** (voor Adobe Commerce en Magento Open Source >=2.4.4 &lt;2.4.5) - Hiermee wordt het probleem verholpen waarbij de status van het orderitem onjuist is ingesteld op *[!UICONTROL Ordered]* wanneer de productvoorraad *0*.
+* **ACSD-51792** (voor Adobe Commerce en Magento Open Source >=2.4.5 &lt;2.4.6) - Hiermee wordt het probleem verholpen waarbij een pagina niet de immateriële gebeurtenis heeft wanneer [!DNL Google Tag Manager] 4 is ingeschakeld.
+* **ACSD-51471** (voor Adobe Commerce >=2.4.3 &lt;2.4.7) - Hiermee wordt het probleem verholpen waarbij een gebruiker met beheerdersrechten geen geplande update kan opslaan voor een gebundeld product dat gebruikmaakt van een eenvoudig product met een geplande update.
+* **ACSD-51700** (voor Adobe Commerce en Magento Open Source >=2.4.3 &lt;2.4.7) - Hiermee wordt de fout gecorrigeerd die optreedt wanneer wordt geschakeld naar een andere winkelweergave op een downloadbare productbewerkingspagina in de beheerder.
+* **ACSD-51120** (voor Adobe Commerce >=2.3.7 &lt;2.4.3) - Hiermee wordt het probleem verholpen waarbij de GraphQL-GET cache niet wordt gewist voor CMS-pagina&#39;s die CMS-blokken bevatten die via een testupdate worden bijgewerkt.
+* **ACSD-51240** (voor Adobe Commerce >=2.4.4 &lt;2.4.6) - Hiermee wordt het probleem opgelost waarbij het geüploade bestand ontbreekt als de registratie wordt uitgevoerd via het bedrijfsregistratieformulier.
+* **ACSD-51907** (voor Adobe Commerce >=2.4.2 &lt;2.4.3) - Hiermee wordt het probleem verholpen waarbij een gebruiker met beperkte beheerdersrechten geen creditnota met een offlinerestitutie kan maken.
+* **ACSD-52148** (voor Adobe Commerce en Magento Open Source >=2.4.0 &lt;2.4.4) - Hiermee wordt het probleem opgelost waarbij de [!DNL Google V3 reCAPTCHA] Aanmelden bij Admin mislukt soms.
+* **ACSD-51431** (voor Adobe Commerce en Magento Open Source >=2.3.7 &lt;2.4.7) - Hiermee wordt het probleem verholpen waarbij de status van een indexeerder is *werken* zelfs als er geen nieuwe ingangen in de verandering zijn.
+* **ACSD-51892** (voor Adobe Commerce en Magento Open Source >=2.4.6 &lt;2.4.7) - Hiermee wordt het prestatieprobleem verholpen waarbij configuratiebestanden meerdere keren worden geladen tijdens de implementatie.
+* Vervangen ACSD-51114.
 
 ## v1.1.32 {#v1-1-32}
 
