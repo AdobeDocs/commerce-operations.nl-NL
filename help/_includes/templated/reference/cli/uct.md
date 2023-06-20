@@ -1,5 +1,5 @@
 ---
-source-git-commit: adb585771fb1353614ea600117f18ba8b55b65f0
+source-git-commit: 64c453adabb092075854b2c20bf7da73c4a5146e
 workflow-type: tm+mt
 source-wordcount: '1529'
 ht-degree: 0%
@@ -56,7 +56,7 @@ De versie van het voltooiingsscript
 
 ### `--help`, `-h`
 
-Help weergeven voor de opgegeven opdracht. Wanneer geen bevel vertoningshulp voor wordt gegeven &lt;info>list&lt;/info> command
+Help weergeven voor de opgegeven opdracht. Wanneer geen opdracht is gegeven, wordt de Help weergegeven voor de \&lt;info>list\&lt;/info> command
 
 - Standaard: `false`
 - Accepteert geen waarde
@@ -126,7 +126,7 @@ Tik op het logbestand voor foutopsporing bij voltooien
 
 ### `--help`, `-h`
 
-Help weergeven voor de opgegeven opdracht. Wanneer geen bevel vertoningshulp voor wordt gegeven &lt;info>list&lt;/info> command
+Help weergeven voor de opgegeven opdracht. Wanneer geen opdracht is gegeven, wordt de Help weergegeven voor de \&lt;info>list\&lt;/info> command
 
 - Standaard: `false`
 - Accepteert geen waarde
@@ -205,7 +205,7 @@ Help bij de opdracht Uitvoeren
 
 ### `--help`, `-h`
 
-Help weergeven voor de opgegeven opdracht. Wanneer geen bevel vertoningshulp voor wordt gegeven &lt;info>list&lt;/info> command
+Help weergeven voor de opgegeven opdracht. Wanneer geen opdracht is gegeven, wordt de Help weergegeven voor de \&lt;info>list\&lt;/info> command
 
 - Standaard: `false`
 - Accepteert geen waarde
@@ -289,7 +289,7 @@ Om het beschrijven van de argumenten van bevelen over te slaan
 
 ### `--help`, `-h`
 
-Help weergeven voor de opgegeven opdracht. Wanneer geen bevel vertoningshulp voor wordt gegeven &lt;info>list&lt;/info> command
+Help weergeven voor de opgegeven opdracht. Wanneer geen opdracht is gegeven, wordt de Help weergegeven voor de \&lt;info>list\&lt;/info> command
 
 - Standaard: `false`
 - Accepteert geen waarde
@@ -353,7 +353,7 @@ Pad om problemen op te lossen in.
 
 ### `--help`, `-h`
 
-Help weergeven voor de opgegeven opdracht. Wanneer geen bevel vertoningshulp voor wordt gegeven &lt;info>list&lt;/info> command
+Help weergeven voor de opgegeven opdracht. Wanneer geen opdracht is gegeven, wordt de Help weergegeven voor de \&lt;info>list\&lt;/info> command
 
 - Standaard: `false`
 - Accepteert geen waarde
@@ -428,7 +428,7 @@ Pad van het bestand waarnaar de uitvoer wordt geëxporteerd (JSON-indeling)
 
 ### `--help`, `-h`
 
-Help weergeven voor de opgegeven opdracht. Wanneer geen bevel vertoningshulp voor wordt gegeven &lt;info>list&lt;/info> command
+Help weergeven voor de opgegeven opdracht. Wanneer geen opdracht is gegeven, wordt de Help weergegeven voor de \&lt;info>list\&lt;/info> command
 
 - Standaard: `false`
 - Accepteert geen waarde
@@ -499,7 +499,7 @@ doelversie (bijvoorbeeld 2.4.5).
 
 ### `--help`, `-h`
 
-Help weergeven voor de opgegeven opdracht. Wanneer geen bevel vertoningshulp voor wordt gegeven &lt;info>list&lt;/info> command
+Help weergeven voor de opgegeven opdracht. Wanneer geen opdracht is gegeven, wordt de Help weergegeven voor de \&lt;info>list\&lt;/info> command
 
 - Standaard: `false`
 - Accepteert geen waarde
@@ -575,7 +575,7 @@ Pad van het bestand waarnaar de uitvoer wordt geëxporteerd (JSON-indeling)
 
 ### `--help`, `-h`
 
-Help weergeven voor de opgegeven opdracht. Wanneer geen bevel vertoningshulp voor wordt gegeven &lt;info>list&lt;/info> command
+Help weergeven voor de opgegeven opdracht. Wanneer geen opdracht is gegeven, wordt de Help weergegeven voor de \&lt;info>list\&lt;/info> command
 
 - Standaard: `false`
 - Accepteert geen waarde
@@ -683,7 +683,7 @@ Uitvoeringcontext. Deze optie is bedoeld voor integratiedoeleinden en heeft geen
 
 ### `--help`, `-h`
 
-Help weergeven voor de opgegeven opdracht. Wanneer geen bevel vertoningshulp voor wordt gegeven &lt;info>list&lt;/info> command
+Help weergeven voor de opgegeven opdracht. Wanneer geen opdracht is gegeven, wordt de Help weergegeven voor de \&lt;info>list\&lt;/info> command
 
 - Standaard: `false`
 - Accepteert geen waarde
