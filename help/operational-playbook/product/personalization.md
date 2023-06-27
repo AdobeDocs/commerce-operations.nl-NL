@@ -2,7 +2,8 @@
 title: Personalisatie
 description: Leer over het soort ervaring die de verpersoonlijking uw klanten zou moeten verstrekken.
 exl-id: ea829c53-1f98-4e23-90ee-5424a4ef0324
-source-git-commit: e76f101df47116f7b246f21f0fe0fa72769d2776
+feature: Best Practices, Personalization
+source-git-commit: e83e2359377f03506178c28f8b30993c172282c7
 workflow-type: tm+mt
 source-wordcount: '338'
 ht-degree: 0%
@@ -11,7 +12,7 @@ ht-degree: 0%
 
 # Personalisatie
 
-De basislijn van de bedrijfstoename van de e-commerce is klantenloyaliteit. Het houden van de klanten gelukkig is een combinatie van vele factoren van producten, inhoud, kassa, klant, en de dienstervaring. Personalisatie is afhankelijk van AI, die klantgegevens in real-time bijhoudt en een unieke, gepersonaliseerde ervaring biedt. Personalisatie werkt mogelijk niet voor alle typen bedrijven, maar het is een extra functie waarmee u het verkeer naar uw site kunt sturen.
+De basislijn van de bedrijfstoename van de e-commerce is klantenloyaliteit. Het houden van de klanten gelukkig is een combinatie van vele factoren van producten, inhoud, kassa, klant, en de dienstervaring. Personalisatie is afhankelijk van AI, die klantgegevens in real-time bijhoudt en een unieke, gepersonaliseerde ervaring biedt. Personalisatie werkt mogelijk niet voor alle typen bedrijven, maar het is een extra functie die verkeer naar uw site kan helpen sturen.
 
 Personalisatie dient onder meer te omvatten:
 
@@ -25,7 +26,7 @@ Personalisatie dient onder meer te omvatten:
 
 Voorbeelden van personalisatie zijn:
 
-- **Belang van de klant**—Website en navigatie wijzigen op basis van het profiel van de klant. Als een gebruiker bijvoorbeeld de site eerder heeft bezocht en de sectie voor vrouwen heeft doorzocht, navigeert hij de volgende keer dat hij of zij de URL invoert naar de homepage van de vrouw.
+- **Belang van de klant**—Website en navigatie wijzigen op basis van het profiel van de klant. Als een gebruiker bijvoorbeeld de site eerder heeft bezocht en de sectie Vrouwen heeft doorzocht, navigeert hij de volgende keer dat hij of zij de URL invoert naar de homepage van de vrouw.
 
 - **Aanbevolen producten**—Aanbevolen producten op basis van het browsergedrag van klanten.
 

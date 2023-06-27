@@ -2,7 +2,8 @@
 title: Hulplijn installeren
 description: Deze handleiding gebruiken om te installeren [!DNL Site-Wide Analysis Tool] voor uw website
 exl-id: ba36dc74-806d-49c5-b4d1-ba53ed4076fb
-source-git-commit: 4210746509be99bb3c943906c99f70ea420ba74a
+feature: Configuration, Install
+source-git-commit: e83e2359377f03506178c28f8b30993c172282c7
 workflow-type: tm+mt
 source-wordcount: '1168'
 ht-degree: 0%
@@ -46,9 +47,10 @@ Uw infrastructuur ter plaatse moet aan de volgende vereisten voldoen alvorens de
 - Besturingssystemen
 
    - [!DNL Linux x86-64] distributies, zoals [!DNL Red Hat® Enterprise Linux (RHEL)], [!DNL CentOS], [!DNL Ubuntu], [!DNL Debian], en soortgelijke
-   >[!IMPORTANT]
-   >
-   >Adobe Commerce wordt niet ondersteund op [!DNL Microsoft Windows] of [!DNL macOS].
+
+  >[!IMPORTANT]
+  >
+  >Adobe Commerce wordt niet ondersteund op [!DNL Microsoft Windows] of [!DNL macOS].
 
 - Adobe Commerce 2.4.1 of hoger
 
@@ -192,6 +194,7 @@ Als u onze [shellscript](https://github.com/magento-swat/install-agent-helpers/b
       ```bash
       tar -xf launcher.linux-amd64.tar.gz
       ```
+
    Voor de **ARM64** architectuur:
 
    1. Download het archief van de startprogramma&#39;s.
@@ -205,7 +208,6 @@ Als u onze [shellscript](https://github.com/magento-swat/install-agent-helpers/b
       ```bash
       tar -xf launcher.linux-arm64.tar.gz
       ```
-
 
 1. *(Optioneel)* Verifieer de handtekening voor het controlesombestand.
 

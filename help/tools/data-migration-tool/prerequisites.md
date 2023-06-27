@@ -2,7 +2,8 @@
 title: '''[!DNL Data Migration Tool] voorwaarden "'
 description: Leer wat u moet doen alvorens u begint te gebruiken [!DNL Data Migration Tool] gegevens tussen Magento 1 en Magento 2 over te dragen.
 exl-id: 42dfa1ca-41ed-453d-a3e4-41ff36817ca3
-source-git-commit: 95ffff39d82cc9027fa633dffedf15193040802d
+topic: Commerce, Migration
+source-git-commit: e83e2359377f03506178c28f8b30993c172282c7
 workflow-type: tm+mt
 source-wordcount: '249'
 ht-degree: 0%
@@ -17,7 +18,7 @@ Voordat u de migratie start, moet u controleren of aan de volgende vereisten is 
 
 * Stel uw Magento 2-systeem zo in dat het voldoet aan de [systeemvereisten](../../installation/system-requirements.md).
 
-   Gebruik een topologie en een ontwerp dat minstens uw bestaand Magento 1 systeem aanpast.
+  Gebruik een topologie en een ontwerp dat minstens uw bestaand Magento 1 systeem aanpast.
 
 * [Magento 2 installeren](../../installation/overview.md).
 
@@ -31,7 +32,7 @@ Start geen Magento 2-cron-taken.
 
 * Controleren of de [!DNL Data Migration Tool] heeft netwerktoegang om de Magento 1 en Magento 2 gegevensbestanden te verbinden.
 
-   Open poorten in uw firewall zodat het migratiehulpprogramma kan communiceren met de databases.
+  Open poorten in uw firewall zodat het migratiehulpprogramma kan communiceren met de databases.
 
 * Zorg ervoor uw rekeningen MySQL alle noodzakelijke voorrechten hebben om tot gegevensbestanden van Magento toegang te hebben.
 

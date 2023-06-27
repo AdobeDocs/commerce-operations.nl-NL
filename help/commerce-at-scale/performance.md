@@ -2,7 +2,9 @@
 title: Optimalisatie van AEM prestaties
 description: Optimaliseer uw standaard Adobe Experience Manager configuratie om hoge belastingen op Adobe Commerce te steunen.
 exl-id: 923a709f-9048-4e67-a5b0-ece831d2eb91
-source-git-commit: e76f101df47116f7b246f21f0fe0fa72769d2776
+feature: Integration, Cache
+topic: Commerce, Performance
+source-git-commit: 76ccc5aa8e5e3358dc52a88222fd0da7c4eb9ccb
 workflow-type: tm+mt
 source-wordcount: '2248'
 ht-degree: 0%
@@ -25,7 +27,7 @@ Indien toegelaten, zal de verzender de antwoordkopballen van het achtereind eval
 
 ## Browser in cache plaatsen
 
-De hierboven vermelde benadering van de verzender TTL zal verzoeken en lading op de uitgever zeer verminderen, nochtans zijn er sommige activa die zeer onwaarschijnlijk zullen veranderen en daarom kunnen zelfs de verzoeken aan de verzender worden verminderd door relevante dossiers plaatselijk op browser van een gebruiker in het voorgeheugen onder te brengen. Het logo van de site, dat op elke pagina van de site in de sitesjabloon wordt weergegeven, hoeft bijvoorbeeld niet telkens te worden aangevraagd bij de verzender. Dit kan in plaats daarvan worden opgeslagen in de browsercache van de gebruiker. De vermindering van bandbreedtevereisten voor elke paginading zou een grote invloed hebben op de reactiesnelheid van de site en de laadtijden van de pagina.
+De hierboven vermelde benadering van de verzender TTL zal verzoeken en lading op de uitgever zeer verminderen, nochtans zijn er sommige activa die zeer onwaarschijnlijk zijn om te veranderen en daarom kunnen zelfs de verzoeken aan de verzender worden verminderd door relevante dossiers plaatselijk op browser van een gebruiker in het voorgeheugen onder te brengen. Het logo van de site, dat op elke pagina van de site in de sitesjabloon wordt weergegeven, hoeft bijvoorbeeld niet telkens te worden aangevraagd bij de verzender. Dit kan in plaats daarvan worden opgeslagen in de browsercache van de gebruiker. De vermindering van bandbreedtevereisten voor elke paginading zou een grote invloed hebben op de reactiesnelheid van de site en de laadtijden van de pagina.
 
 Het cachegeheugen op browserniveau wordt doorgaans gebruikt via &#39;Cache-Control&#39;: max-age=&quot; responsheader. De maxage-instelling vertelt de browser hoeveel seconden het bestand in cache moet plaatsen voordat wordt geprobeerd het opnieuw te valideren of opnieuw van de site te vragen. Dit concept cache max-age wordt meestal &#39;Cache Expiration&#39; of TTL (&#39;Time to Live&#39;) genoemd. Op grote schaal handelservaring bieden - met Adobe Experience Manager, Commerce Integration Framework, Adobe Commerce 7
 
@@ -44,13 +46,13 @@ Voor om het even welke plaats, vooral handelsplaatsen met zware lading, zou dit 
 
 In plaats daarvan, kan het statfileniveau plaatsen aan een hogere waarde worden gewijzigd, die aan de diepte van subdirectories in de htdocs folder van de folder van de documentwortel beantwoordt zodat wanneer een dossier dat op een bepaald niveau wordt gevestigd ongeldig wordt gemaakt dan slechts de dossiers op dat .stat folderniveau en hieronder worden bijgewerkt.
 
-Bijvoorbeeld: Hier vindt u een sjabloon voor de productpagina op:
+Bijvoorbeeld: je hebt een productpaginasjabloon op:
 
 ```
 content/ecommerce/us/en/products/product-page.html
 ```
 
-Elk mapniveau heeft een &quot;statusniveau&quot;, zoals weergegeven in de bovenstaande tabel.
+Elk mapniveau heeft &#39;basisniveau&#39;, zoals weergegeven in de bovenstaande tabel.
 
 | inhoud (docroot) | elektronische | ons | en | producten | product-page.tml |
 |-------------------|-----------|----|----|----------|------------------|
@@ -60,7 +62,7 @@ Als u in dit geval de eigenschap statusLevel op de standaardwaarde &quot;0&quot;
 
 Als de eigenschap statusFileLevel echter is ingesteld op niveau 4 en de productpagina.html wordt gewijzigd, wordt alleen het .stat-bestand in de productmap voor die specifieke website/land/taal aangeraakt.
 
-Houd er rekening mee dat het .stat-bestandsniveau niet op een te hoog niveau moet worden ingesteld. Een waarde van meer dan 20 kan van invloed zijn op de prestaties. Als u een bulkbestandsactivering uitvoert terwijl u een prestatietest uitvoert, krijgt u het juiste niveau waarop u het statusniveau wilt instellen.
+Houd er rekening mee dat het .stat-bestandsniveau niet op een te hoog niveau moet worden ingesteld. Als de waarde groter is dan 20, kan dit van invloed zijn op de prestaties. Als u een bulkbestandsactivering uitvoert terwijl u een prestatietest uitvoert, krijgt u het juiste niveau waarop u het statusniveau wilt instellen.
 
 Een andere verzender die plaatst om te optimaliseren wanneer het vormen van statfillevel is het plaatsen GracePeriod. Dit bepaalt het aantal seconden dat een autoongeldig gemaakte bron nog uit het geheime voorgeheugen kan worden gediend nadat de laatste activering plaatsvond. Auto-ongeldig gemaakte middelen worden ongeldig gemaakt door om het even welke activering (wanneer hun weg de verzender /invalidate sectie aanpast, en aan het niveau dat in het statfileslevel bezit wordt gespecificeerd). Het plaatsen van de alignmentPeriod aan 2 seconden kan worden gebruikt om een scenario te verhinderen waar de veelvoudige verzoeken voortdurend naar de uitgever worden verzonden, zelfs terwijl de uitgever nog bezig is de nieuwe pagina te bouwen.
 
@@ -84,12 +86,12 @@ In het onderstaande voorbeeld worden de afgelopen 100 beperkte zoekopties gedure
 com.adobe.cq.commerce.core.search.services.SearchFilterService:true:100:3600
 ```
 
-De aanvraag, inclusief alle aangepaste http-headers en -variabelen, moet exact overeenkomen om de cache te kunnen aanslaan en te voorkomen dat Adobe Commerce nogmaals wordt aangeroepen. Hier moet worden opgemerkt dat er geen eenvoudige manier is om deze cache handmatig ongeldig te maken. Dit kan dus betekenen dat als een nieuwe categorie wordt toegevoegd in Adobe Commerce, deze pas in de navigatie wordt weergegeven als de vervaltijd die in de cache hierboven is ingesteld, is verlopen en het GraphQL-verzoek is vernieuwd. Hetzelfde geldt voor zoekfacetten. Gezien de prestatievoordelen die deze caching kan opleveren, is dit echter meestal een aanvaardbaar compromis.
+De aanvraag, inclusief alle aangepaste http-headers en -variabelen, moet exact overeenkomen voordat de cache wordt &#39;aangeraakt&#39; en om te voorkomen dat Adobe Commerce nogmaals wordt aangeroepen. Hier moet worden opgemerkt dat er geen eenvoudige manier is om deze cache handmatig ongeldig te maken. Dit kan dus betekenen dat als een nieuwe categorie wordt toegevoegd in Adobe Commerce, deze pas in de navigatie wordt weergegeven als de vervaltijd die in de cache hierboven is ingesteld, is verlopen en het GraphQL-verzoek is vernieuwd. Hetzelfde geldt voor zoekfacetten. Gezien de prestatievoordelen die deze caching kan opleveren, is dit echter meestal een aanvaardbaar compromis.
 
 De bovenstaande cacheopties kunnen worden ingesteld met de AEM OSGi-configuratieconsole in &quot;GraphQL Client Configuration Factory&quot;. Elke ingang van de geheim voorgeheugenconfiguratie kan met het volgende formaat worden gespecificeerd:
 
 ```
-• NAME:ENABLE:MAXSIZE:TIMEOUT like for example mycache:true:1000:60 where each attribute is defined as:
+* NAME:ENABLE:MAXSIZE:TIMEOUT like for example mycache:true:1000:60 where each attribute is defined as:
     › NAME (String): name of the cache
     › ENABLE (true|false): enables or disables that cache entry
     › MAXSIZE (Integer): maximum size of the cache (in number of entries)
@@ -98,7 +100,7 @@ De bovenstaande cacheopties kunnen worden ingesteld met de AEM OSGi-configuratie
 
 ## Hybride caching-client-side GraphQL-verzoeken binnen in cache geplaatste verzendingspagina&#39;s
 
-Het is ook mogelijk om pagina&#39;s op een hybride manier in cache te plaatsen: het is mogelijk dat een CIF-pagina componenten bevat die altijd rechtstreeks vanuit de browser van de klant de meest recente informatie van Adobe Commerce opvragen. Dit kan handig zijn voor specifieke gebieden van de pagina in een sjabloon die belangrijk zijn om te worden bijgewerkt met real-time informatie: Productprijzen binnen een PDP, bijvoorbeeld. Wanneer de prijzen vaak veranderen door dynamische prijsaanpassing, kan die informatie worden gevormd om niet in het voorgeheugen ondergebracht op de verzender worden, eerder kunnen de prijzen cliënt-kant in browser van de klant van Adobe Commerce direct via GraphQL APIs met AEM CIF Webcomponenten worden gehaald.
+Het is ook mogelijk om pagina&#39;s op een hybride manier in cache te plaatsen: het is mogelijk dat een CIF-pagina componenten bevat die Adobe Commerce altijd rechtstreeks via de browser van de klant om de meest recente informatie vragen. Dit kan handig zijn voor specifieke gebieden van de pagina in een sjabloon die belangrijk zijn om te worden bijgewerkt met real-time informatie: Productprijzen binnen een PDP, bijvoorbeeld. Wanneer de prijzen vaak veranderen als gevolg van dynamische prijsafstemming, kan die informatie zodanig worden geconfigureerd dat ze niet in de cache van de verzender wordt geplaatst, maar kunnen de prijzen rechtstreeks via GraphQL API&#39;s via AEM CIF-webcomponenten in de browser van de klant worden opgehaald vanuit Adobe Commerce.
 
 Dit kan worden geconfigureerd via de instellingen voor AEM componenten. Voor Prijsinformatie op pagina&#39;s met productlijsten kunt u dit configureren in de sjabloon voor productlijsten, waarbij u de component met productlijsten op de pagina-instellingen selecteert en de optie &quot;Ladingsprijzen&quot; controleert. Hetzelfde geldt voor de voorraadniveaus.
 
@@ -132,6 +134,6 @@ Het zou daarom moeten worden gevormd om alle parameters door gebrek in &quot;ign
 
 ## Grenswaarden voor MPM-workers voor verzenders
 
-De MPM-workers-instellingen zijn een geavanceerde Apache HTTP-serverconfiguratie die grondig moet worden getest om te worden geoptimaliseerd op basis van de beschikbare CPU en het RAM van de Dispatcher. Nochtans, in het werkingsgebied van dit whitepaper zouden wij suggereren dat ServerLimit en MaxRequestWorkers, tot een niveau zouden moeten worden verhoogd dat de beschikbare cpu en RAM van de server zouden steunen, en dan MinSpareThreads en MaxSpareThreads allebei worden verhoogd tot een niveau dat de MaxRequestWorkers aanpast.
+De MPM-workers-instellingen zijn een geavanceerde Apache HTTP-serverconfiguratie die grondig moet worden getest om te worden geoptimaliseerd op basis van de beschikbare CPU en RAM van uw Dispatcher. Nochtans, in het werkingsgebied van dit whitepaper zouden wij suggereren dat ServerLimit en MaxRequestWorkers, tot een niveau zouden moeten worden verhoogd dat de beschikbare cpu en RAM van de server zouden steunen, en dan MinSpareThreads en MaxSpareThreads allebei worden verhoogd tot een niveau dat de MaxRequestWorkers aanpast.
 
 Deze configuratie zou Apache HTTP op een &quot;volledige bereidheid plaatsen&quot;verlaten die een krachtige configuratie voor servers met significant RAM en veelvoudige cores van cpu is. Deze configuratie zal de best mogelijke reactietijden van Apache HTTP veroorzaken door blijvende open verbindingen te handhaven klaar om verzoeken te dienen en om het even welke vertraging in het paaien van nieuwe processen in reactie op plotselinge verkeerspieken, zoals tijdens flitsverkoop te verwijderen.

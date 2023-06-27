@@ -2,7 +2,8 @@
 title: '''[!DNL Data Migration Tool] technische specificatie"'
 description: Meer informatie over de implementatiedetails van de [!DNL Data Migration Tool] en hoe de gegevensoverdracht tussen Magento 1 en Magento 2 moet worden uitgebreid.
 exl-id: fec3ac3a-dd67-4533-a29f-db917f54d606
-source-git-commit: 95ffff39d82cc9027fa633dffedf15193040802d
+topic: Commerce, Migration
+source-git-commit: e83e2359377f03506178c28f8b30993c172282c7
 workflow-type: tm+mt
 source-wordcount: '2079'
 ht-degree: 0%

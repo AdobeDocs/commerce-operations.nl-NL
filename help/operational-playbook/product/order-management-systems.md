@@ -2,7 +2,8 @@
 title: Orderbeheersystemen
 description: Voltooi uw e-commerce project met een systeem voor verpakking, verzending, en terugkeer.
 exl-id: 2a5f19fa-e8fe-452b-9ab6-65428dda691d
-source-git-commit: e76f101df47116f7b246f21f0fe0fa72769d2776
+feature: Best Practices, Orders
+source-git-commit: e83e2359377f03506178c28f8b30993c172282c7
 workflow-type: tm+mt
 source-wordcount: '878'
 ht-degree: 0%
@@ -62,7 +63,7 @@ Het beheer van orders in B2B-ondernemingen is complex in vergelijking met B2C-ac
 
 ## Proces voor B2B
 
-- De verkoper gaat de de orderdetails van de klant in OMS in of de klant kan ook een bestelling online plaatsen, die de orderdetails naar OMS zal verzenden
+- De verkoper voert de bestelgegevens van de klant in in de OMS of de klant kan ook een bestelling online plaatsen, waardoor de ordergegevens naar de OMS worden verzonden
 
 - De klant ontvangt de bevestiging van de bestelling
 

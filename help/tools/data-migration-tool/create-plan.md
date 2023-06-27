@@ -2,7 +2,8 @@
 title: Een plan voor gegevensmigratie maken
 description: Voer de volgende stappen uit om een plan voor gegevensmigratie te maken om een geslaagde upgrade van Magento 1 naar Magento 2 te garanderen.
 exl-id: a14237f3-c5fe-4f5f-86eb-ed4c39507bff
-source-git-commit: 95ffff39d82cc9027fa633dffedf15193040802d
+topic: Commerce, Migration
+source-git-commit: e83e2359377f03506178c28f8b30993c172282c7
 workflow-type: tm+mt
 source-wordcount: '900'
 ht-degree: 0%

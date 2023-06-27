@@ -2,7 +2,8 @@
 title: Afhandelingsstromen en -verwerking
 description: Verhoog de conversiesnelheden door uw klanten een naadloze kassa te bieden.
 exl-id: 692236fd-b909-4061-8038-0db19e0ed72b
-source-git-commit: e76f101df47116f7b246f21f0fe0fa72769d2776
+feature: Best Practices, Checkout
+source-git-commit: e83e2359377f03506178c28f8b30993c172282c7
 workflow-type: tm+mt
 source-wordcount: '680'
 ht-degree: 0%
@@ -72,7 +73,7 @@ Naast betalingsopties kunnen detailhandelaren ook opties bieden zoals [klikken e
 
 ## Betalingsgegevens
 
-Betalingsgegevens moeten aan het einde worden geplaatst, vlak voordat wordt bevestigd dat een bestelling moet worden geplaatst.
+Betalingsgegevens moeten aan het einde worden geplaatst, vlak voordat wordt bevestigd dat een bestelling wordt geplaatst.
 
 U kunt op eenvoudige wijze betalingsgegevens invoeren, zoals de naam op de kaart en het nummer van de kaart.
 

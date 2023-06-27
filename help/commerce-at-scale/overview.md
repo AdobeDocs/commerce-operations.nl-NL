@@ -2,8 +2,7 @@
 title: Ervaringen op schaal leveren
 description: Leer hoe u op schaal ervaringen kunt bieden met Adobe Commerce en Adobe Experience Manager.
 exl-id: e3166c46-fc9d-4ff4-a3a9-2cd740a95e9b
-debug: true
-source-git-commit: 442bb3f2c448de2ed70a3033d399025cc39e8744
+source-git-commit: 76ccc5aa8e5e3358dc52a88222fd0da7c4eb9ccb
 workflow-type: tm+mt
 source-wordcount: '581'
 ht-degree: 0%
@@ -30,6 +29,6 @@ E-commercepagina&#39;s zoals pagina&#39;s met productdetails (PDP&#39;s) en pagi
 
 ## Rendering op de client
 
-Waar meer dynamische attributen zoals voorraadniveaus/beschikbaarheid of prijs worden getoond, bijvoorbeeld op de Pagina&#39;s van het Detail van het Product (PDP&#39;s), cliënt-zijcomponenten kunnen worden gebruikt. Hoewel de sjabloonpagina op de dispatcher kan worden gemaakt en in cache kan worden geplaatst met behulp van de hierboven beschreven rendermethode aan de serverzijde, kunnen er binnen de statische pagina zelf dynamische client-side webcomponenten zijn. Deze dynamische componenten kunnen gegevens direct in de browser van de cliënt van Adobe Commerce via GraphQL APIs ophalen om, bijvoorbeeld, huidig prijs of voorraadniveau in echt te controleren - tijd op PDP. Dit zorgt ervoor dat inhoud die doorgaans van essentieel belang is om in real-time te worden weergegeven, altijd wordt opgehaald bij het laden van de pagina. Voorbeelden hiervan worden weergegeven in de rode vakken in het bovenstaande voorbeeld.
+Waar meer dynamische attributen zoals voorraadniveaus/beschikbaarheid of prijs worden getoond, bijvoorbeeld op de Pagina&#39;s van het Detail van het Product (PDPs), cliënt-zijcomponenten kunnen worden gebruikt. Hoewel de sjabloonpagina op de dispatcher kan worden gemaakt en in cache kan worden geplaatst met behulp van de hierboven beschreven rendermethode aan de serverzijde, kunnen er binnen de statische pagina zelf dynamische client-side webcomponenten zijn. Deze dynamische componenten kunnen gegevens direct in de browser van de cliënt van Adobe Commerce via GraphQL APIs ophalen om, bijvoorbeeld, huidig prijs of voorraadniveau in echt te controleren - tijd op PDP. Dit zorgt ervoor dat inhoud die doorgaans van essentieel belang is om in real-time te worden weergegeven, altijd wordt opgehaald bij het laden van de pagina. Voorbeelden hiervan worden weergegeven in de rode vakken in het bovenstaande voorbeeld.
 
-Een combinatie van AEM sjablonen en renderen aan de clientzijde kan ook worden gebruikt tijdens het uitcheckproces: clientcartonderdelen maken het winkelwagentje, het uitcheckformulier en de integratie met de betalingsdienstaanbieder. Deze hybride aanpak kan ook worden gebruikt voor Adobe Commerce&#39;s accountbeheerfuncties, zoals het maken van een account, het aanmelden bij een account en het vergeten wachtwoord.
+Een combinatie van AEM sjablonen en renderen aan de clientzijde kan ook worden gebruikt tijdens het uitcheckproces: clientcartonderdelen maken het winkelwagentje, het uitcheckformulier en de integratie met de betalingsdienstaanbieder. Deze hybride aanpak kan ook worden gebruikt voor Adobe Commerce-functies voor accountbeheer, zoals het maken van een account, het aanmelden bij een account en het vergeten wachtwoord.

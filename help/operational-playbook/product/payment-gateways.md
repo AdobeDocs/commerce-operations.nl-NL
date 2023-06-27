@@ -2,7 +2,8 @@
 title: Betalingswegen
 description: Kies een leverancier van de betaalgateway voor uw e-commerce project dat op de behoeften van uw zaken wordt gebaseerd.
 exl-id: eab50191-0744-41da-99ba-2e06ea61da27
-source-git-commit: e76f101df47116f7b246f21f0fe0fa72769d2776
+feature: Best Practices, Payments
+source-git-commit: e83e2359377f03506178c28f8b30993c172282c7
 workflow-type: tm+mt
 source-wordcount: '554'
 ht-degree: 0%
@@ -15,7 +16,7 @@ Er was een tijd dat contant geld de belangrijkste bron van transacties was, maar
 
 ![Logo&#39;s van leveranciers van betaalkanalen](../../assets/playbooks/payment-gateways.png)
 
-Een betaalgateway is een dienstverlener die betalingen voor elektronische websites verbindt en verwerkt. Zij spelen een essentiële rol in de het kopen van klanten ervaring en omrekeningskoersen. Gecompliceerde betalingssystemen hebben de neiging om klanten hun winkelwagen te laten verlaten. Het is belangrijk om klanten een eenvoudig, gebruiksvriendelijk betalingssysteem te bieden, waarbij zelfs als één betalingsmethode uitvalt, zij een alternatieve methode hebben om hen te motiveren de aankoop te voltooien.
+Een betaalgateway is een dienstverlener die betalingen voor elektronische websites verbindt en verwerkt. Zij spelen een essentiële rol in de het kopen van klanten ervaring en omrekeningskoersen. Gecompliceerde betalingssystemen hebben de neiging om klanten hun winkelwagen te laten verlaten. Het is belangrijk om klanten van een gemakkelijk, gebruikersvriendelijk betalingssysteem te voorzien waar zelfs als één betalingsmethode ontbreekt zij een alternatieve methode hebben om hen te motiveren om de aankoop te voltooien.
 
 ## Toetsingsvereisten
 
