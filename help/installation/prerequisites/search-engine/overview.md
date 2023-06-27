@@ -1,8 +1,9 @@
 ---
 title: Voorwaarden voor zoekmachines
 description: Voer de volgende stappen uit om ondersteunde software voor zoekprogramma's te installeren en te configureren voor installaties op locatie van Adobe Commerce en Magento Open Source.
+feature: Install, Search
 exl-id: 44ea638a-7200-4269-be1b-b0851de2c4f4
-source-git-commit: 95ffff39d82cc9027fa633dffedf15193040802d
+source-git-commit: ce405a6bb548b177427e4c02640ce13149c48aff
 workflow-type: tm+mt
 source-wordcount: '786'
 ht-degree: 0%
@@ -40,15 +41,15 @@ Het voorgaande diagram toont:
 
 * De toepassing van de Handel en de onderzoeksmotor zijn geïnstalleerd op verschillende gastheren.
 
-   Als u op aparte hosts werkt, moet u de proxy opnieuw gebruiken. (Het groeperen van de onderzoeksmotor is voorbij het werkingsgebied van deze gids, maar u kunt meer informatie in vinden [Elasticsearch clustering-documentatie](https://www.elastic.co/guide/en/elasticsearch/guide/current/distributed-cluster.html).)
+  Als u op aparte hosts werkt, moet u de proxy opnieuw gebruiken. (Het groeperen van de onderzoeksmotor is voorbij het werkingsgebied van deze gids, maar u kunt meer informatie in vinden [Elasticsearch clustering-documentatie](https://www.elastic.co/guide/en/elasticsearch/guide/current/distributed-cluster.html).)
 
 * Elke host heeft een eigen webserver. de webservers hoeven niet hetzelfde te zijn .
 
-   De toepassing Commerce kan bijvoorbeeld Apache uitvoeren en de zoekfunctie kan nginx uitvoeren.
+  De toepassing Commerce kan bijvoorbeeld Apache uitvoeren en de zoekfunctie kan nginx uitvoeren.
 
 * Beide Webservers gebruiken de Veiligheid van de Laag van het Vervoer (TLS).
 
-   Het instellen van TLS valt buiten het bereik van onze documentatie.
+  Het instellen van TLS valt buiten het bereik van onze documentatie.
 
 Zoekverzoeken worden als volgt verwerkt:
 

@@ -1,8 +1,9 @@
 ---
 title: PHP-instellingen
 description: Volg deze stappen om vereiste PHP uitbreidingen te installeren en vereiste PHP montages voor op-gebouw installaties van Adobe Commerce en Magento Open Source te vormen.
+feature: Install, Configuration
 exl-id: 84064442-7053-42ab-a8a6-9b313e5efc78
-source-git-commit: 95ffff39d82cc9027fa633dffedf15193040802d
+source-git-commit: ce405a6bb548b177427e4c02640ce13149c48aff
 workflow-type: tm+mt
 source-wordcount: '804'
 ht-degree: 0%
@@ -73,7 +74,7 @@ PHP Warning:  date(): It is not safe to rely on the system's timezone settings. 
 
 - Stel de PHP-geheugenlimiet in.
 
-   Onze gedetailleerde aanbevelingen zijn:
+  Onze gedetailleerde aanbevelingen zijn:
 
    - Compileren van code of het inzetten van statische activa, `1G`
    - Foutopsporing, `2G`
@@ -81,18 +82,18 @@ PHP Warning:  date(): It is not safe to rely on the system's timezone settings. 
 
 - De waarden voor PHP verhogen `realpath_cache_size` en `realpath_cache_ttl` aan aanbevolen instellingen:
 
-   ```conf
-   realpath_cache_size=10M
-   realpath_cache_ttl=7200
-   ```
+  ```conf
+  realpath_cache_size=10M
+  realpath_cache_ttl=7200
+  ```
 
-   Met deze instellingen kunnen PHP-processen paden naar bestanden in cache plaatsen in plaats van ze elke keer weer op te zoeken wanneer een pagina wordt geladen. Zie [Prestaties afstemmen](https://www.php.net/manual/en/ini.core.php) in de PHP documentatie.
+  Met deze instellingen kunnen PHP-processen paden naar bestanden in cache plaatsen in plaats van ze elke keer weer op te zoeken wanneer een pagina wordt geladen. Zie [Prestaties afstemmen](https://www.php.net/manual/en/ini.core.php) in de PHP documentatie.
 
 - Inschakelen [`opcache.save_comments`](https://www.php.net/manual/en/opcache.configuration.php#ini.opcache.save-comments), die vereist is voor Adobe Commerce en Magento Open Source 2.1 en hoger.
 
-   We raden u aan de [PHP OPcache](https://www.php.net/manual/en/book.opcache.php) om prestatieredenen. De OPcache is in veel PHP distributies ingeschakeld.
+  We raden u aan de [PHP OPcache](https://www.php.net/manual/en/book.opcache.php) om prestatieredenen. De OPcache is in veel PHP distributies ingeschakeld.
 
-   Adobe Commerce en Magento Open Source 2.1 en hoger gebruiken PHP-codeopmerkingen voor het genereren van code.
+  Adobe Commerce en Magento Open Source 2.1 en hoger gebruiken PHP-codeopmerkingen voor het genereren van code.
 
 >[!NOTE]
 >
@@ -126,15 +127,15 @@ Gebruik de volgende richtlijnen om het te vinden:
 
 - Apache-webserver:
 
-   Voor Ubuntu met Apache bevinden de OPcache-instellingen zich doorgaans in de `php.ini` bestand.
+  Voor Ubuntu met Apache bevinden de OPcache-instellingen zich doorgaans in de `php.ini` bestand.
 
-   Voor CentOS met Apache of Nginx bevinden de OPcache-instellingen zich doorgaans in `/etc/php.d/opcache.ini`
+  Voor CentOS met Apache of Nginx bevinden de OPcache-instellingen zich doorgaans in `/etc/php.d/opcache.ini`
 
-   Als niet, gebruik het volgende bevel om van het de plaats te bepalen:
+  Als niet, gebruik het volgende bevel om van het de plaats te bepalen:
 
-   ```bash
-   sudo find / -name 'opcache.ini'
-   ```
+  ```bash
+  sudo find / -name 'opcache.ini'
+  ```
 
 - Nginx-webserver met PHP-FPM: `/etc/php/7.2/fpm/php.ini`
 

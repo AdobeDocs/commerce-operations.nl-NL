@@ -1,8 +1,9 @@
 ---
 title: Apache configureren voor uw zoekmachine
 description: Voer de volgende stappen uit om een zoekmachine te configureren met de Apache-webserver voor installaties in de bedrijfsruimten van Adobe Commerce en Magento Open Source.
+feature: Install, Search
 exl-id: b35c95a7-0c00-48e5-b37d-7c9e17feebec
-source-git-commit: 95ffff39d82cc9027fa633dffedf15193040802d
+source-git-commit: ce405a6bb548b177427e4c02640ce13149c48aff
 workflow-type: tm+mt
 source-wordcount: '651'
 ht-degree: 0%
@@ -131,10 +132,9 @@ Wanneer
 
    * Uitsnede instellen: de gebruiker van de webserver of een andere gebruiker.
 
-   In dit voorbeeld gebruiken wij de gebruiker van de Webserver, maar de keus van gebruiker is aan u.
+  In dit voorbeeld gebruiken wij de gebruiker van de Webserver, maar de keus van gebruiker is aan u.
 
    * Elasticsearch instellen: de gebruiker krijgt de naam `magento_elasticsearch` in dit voorbeeld
-
 
 * `<password file name>` moet een verborgen bestand zijn (begint met `.`) en moet de naam van de gebruiker weerspiegelen. Zie de voorbeelden verderop in deze sectie voor meer informatie.
 

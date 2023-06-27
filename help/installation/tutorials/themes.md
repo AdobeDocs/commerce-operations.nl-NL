@@ -1,8 +1,9 @@
 ---
 title: Thema's verwijderen
 description: Voer de volgende stappen uit om een Adobe Commerce- of Magento Open Source-thema te verwijderen.
+feature: Install, Themes
 exl-id: 73150e8c-2d83-4479-b96b-75f41fd9c842
-source-git-commit: 95ffff39d82cc9027fa633dffedf15193040802d
+source-git-commit: ce405a6bb548b177427e4c02640ce13149c48aff
 workflow-type: tm+mt
 source-wordcount: '473'
 ht-degree: 0%
@@ -26,7 +27,7 @@ Deze opdracht wordt verwijderd *alleen* thema&#39;s die worden opgegeven in `com
 * Het bijwerken van `parent` knooppuntinformatie in `theme.xml` om verwijzingen naar het thema te verwijderen.
 * Themacode verwijderen uit het bestandssysteem.
 
-   [Meer informatie over themaovererving](https://developer.adobe.com/commerce/frontend-core/guide/themes/inheritance/).
+  [Meer informatie over themaovererving](https://developer.adobe.com/commerce/frontend-core/guide/themes/inheritance/).
 
 ## Thema&#39;s verwijderen
 
