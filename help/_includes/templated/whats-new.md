@@ -1,7 +1,7 @@
 ---
-source-git-commit: 36ebf825705e3ffb26d595d39df8339ab1ca3c6f
+source-git-commit: 79293c564f9fcded146916e9e3bfd27a28424940
 workflow-type: tm+mt
-source-wordcount: '550'
+source-wordcount: '630'
 ht-degree: 0%
 
 ---
@@ -10,6 +10,26 @@ ht-degree: 0%
 ## Nieuwe functies
 
 Meer informatie over nieuwe documentatie en belangrijke updates voor bestaande documentatie.
+
+### 23 juni 2023
+
+<table style="table-layout:auto;">
+  <thead>
+    <tr>
+      <th>Beschrijving</th>
+      <th>Type</th>
+      <th>Bron</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><p>De <a href="https://experienceleague.adobe.com/docs/commerce-operations/installation-guide/system-requirements.html">Systeemvereisten</a> pagina in de <em>Installatiehandleiding</em> met tabbladen om te schakelen tussen afhankelijkheden in de cloud en op locatie.</p>
+</td>
+      <td>belangrijke update</td>
+      <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/3d56a01b91a71b1c615a28588e726f0b9e58abb0">3d56a0</a> (toewijzen)</td>
+    </tr>
+  </tbody>
+</table>
 
 ### 13 juni 2023
 
@@ -22,6 +42,12 @@ Meer informatie over nieuwe documentatie en belangrijke updates voor bestaande d
     </tr>
   </thead>
   <tbody>
+    <tr>
+      <td><p>Voeg de release van juni 2023 toe aan <a href="https://experienceleague.adobe.com/docs/commerce-operations/release/versions.html">Uitgebrachte versies</a>.</p>
+</td>
+      <td>technisch</td>
+      <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/8d7329c2496f4d322a83ec6bcf71ef956f4284c3">8d7329</a> (toewijzen)</td>
+    </tr>
     <tr>
       <td><p>De volgende documenten voor Beta zijn toegevoegd:<br />- <a href="https://experienceleague.adobe.com/docs/commerce-operations/reference/commerce-on-premises-beta.html">Adobe Commerce CLI (ter plaatse, bèta)</a><br />- <a href="https://experienceleague.adobe.com/docs/commerce-operations/reference/magento-open-source-beta.html">Magento Open Source CLI (bèta)</a><br />- <a href="https://experienceleague.adobe.com/docs/commerce-operations/release/packages/adobe-commerce-beta.html">Adobe Commerce-pakketten (bèta)</a><br />- <a href="https://experienceleague.adobe.com/docs/commerce-operations/release/packages/cloud-beta.html">Cloudpakketten voor Adobe Commerce (bèta)</a><br />- <a href="https://experienceleague.adobe.com/docs/commerce-operations/release/packages/magento-open-source-beta.html">Magento Open Source-pakketten (bèta)</a></p>
 </td>
