@@ -2,7 +2,8 @@
 title: Onderhoudsfase implementatie
 description: Leer over implementatie beste praktijken voor de onderhoudsfase van projecten van Adobe Commerce.
 exl-id: bd052412-a41c-4dbd-9aba-ba2fcac31f2d
-source-git-commit: 95ffff39d82cc9027fa633dffedf15193040802d
+feature: Best Practices
+source-git-commit: 94d7a57dcd006251e8eefbdb4ec3a5e140bf43f9
 workflow-type: tm+mt
 source-wordcount: '277'
 ht-degree: 0%
@@ -51,7 +52,6 @@ De volgende secties bevatten informatie over best practices voor de onderhoudsfa
 - [Hoe herindexeren](https://developer.adobe.com/commerce/php/development/components/indexing/#how-to-reindex)
 - [Aanbevolen werkwijzen voor configuratie van &#x200B; indexeerprogramma&#39;s](indexer-configuration.md)
 - [Best practices voor configuratie voor verwerking van bestellingen](order-processing-configuration.md)
-
 <!-- Asset not yet integrated from CTAG deck:
 - Plan upsizing for planned traffic increases during promotions or holidays -->
 

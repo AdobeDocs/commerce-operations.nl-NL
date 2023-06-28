@@ -2,10 +2,9 @@
 title: Voorwaarden voor Adobe Commerce-upgrade voor MariaDB
 description: Leer hoe u uw Adobe Commerce-database voorbereidt voor het upgraden van MariaDB vanaf een eerdere versie.
 role: Developer
-feature-set: Commerce
 feature: Best Practices
 exl-id: b86e471f-e81f-416b-a321-7aa1ac73d27c
-source-git-commit: 73663659dd1b3305bf8c9a167852b24dc1016e7d
+source-git-commit: 94d7a57dcd006251e8eefbdb4ec3a5e140bf43f9
 workflow-type: tm+mt
 source-wordcount: '627'
 ht-degree: 0%
@@ -88,15 +87,15 @@ Het converteren van de opslagindeling is anders voor Adobe Commerce Starter- en 
 
    - Wijzig de naam van de bestaande tabel om naamconflicten te voorkomen.
 
-      ```mysql
-      RENAME TABLE <existing_table> <table_old>;
-      ```
+     ```mysql
+     RENAME TABLE <existing_table> <table_old>;
+     ```
 
    - Een tabel maken die `InnoDB` opslag met behulp van de gegevens uit de bestaande tabel.
 
-      ```mysql
-      CREATE TABLE <existing_table> ENGINE=InnoDB SELECT * from <table_old>;
-      ```
+     ```mysql
+     CREATE TABLE <existing_table> ENGINE=InnoDB SELECT * from <table_old>;
+     ```
 
    - Controleer of de nieuwe tabel alle vereiste gegevens bevat.
 

@@ -2,7 +2,8 @@
 title: Cloud Infrastructure Technologies
 description: Bekijk de verzameling van technologie die we voor Adobe Commerce gebruiken op cloudinfrastructuur nader.
 exl-id: de1b3a64-d32b-455f-bdb0-ad883dedd6d4
-source-git-commit: 683ce0a72aca0319ade2e4ccfd7a8e541a228156
+feature: Cloud
+source-git-commit: 94d7a57dcd006251e8eefbdb4ec3a5e140bf43f9
 workflow-type: tm+mt
 source-wordcount: '229'
 ht-degree: 0%
@@ -11,7 +12,7 @@ ht-degree: 0%
 
 # Technologieën
 
-Zoals we al hebben opgemerkt, gebruikt Adobe Commerce een aantal softwareoplossingen om het platform te ondersteunen. In het bijzonder hebben we, wat de productie betreft, een aantal technische oplossingen en functies in Adobe Commerce op cloudinfrastructuur opgesplitst die u helpen uw productieomgeving optimaal te benutten.
+Zoals we al hebben gezegd, gebruikt Adobe Commerce een aantal softwareoplossingen om het platform te ondersteunen. In het bijzonder hebben we, wat de productie betreft, een aantal technische oplossingen en functies in Adobe Commerce op cloudinfrastructuur opgesplitst die u helpen uw productieomgeving optimaal te benutten.
 
 ![Diagram van de Adobe Commerce over cloudinfrastructuurtechnologie](../../../assets/playbooks/infrastructure-technology.svg)
 

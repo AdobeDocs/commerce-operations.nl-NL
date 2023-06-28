@@ -2,7 +2,9 @@
 title: Prestaties optimaliseren, Recommendations
 description: Optimaliseer de prestaties van uw Adobe Commerce-implementatie met deze aanbevelingen.
 exl-id: c5d62e23-be43-4eea-afdb-bb1b156848f9
-source-git-commit: 821ef18c1b0f00a6b9574be968ad76f0c230335c
+feature: Cloud
+topic: Performance
+source-git-commit: 7c2e2bdabf47e1367ffb6761230d3d43f0f9d0cf
 workflow-type: tm+mt
 source-wordcount: '1290'
 ht-degree: 0%
@@ -81,7 +83,7 @@ innodb-thread-concurrency = 2 * (NumCPUs+NumDisks)
 
 ### Sessie in cache plaatsen
 
-Het in cache plaatsen van sessies is een goede kandidaat om te configureren voor een afzonderlijk geval van Redis. Bij de geheugenconfiguratie voor dit cachetype moet rekening worden gehouden met de strategie voor het verlaten van het winkelwagentje van de site en met de tijd die een sessie naar verwachting in de cache zal blijven.
+Het in cache plaatsen van sessies is een goede kandidaat om te configureren voor een afzonderlijk geval van Redis. De configuratie van het geheugen voor dit geheim voorgeheugentype zou de strategie van de het kartontroeping van de plaats moeten overwegen en hoe lang een zitting zou moeten verwachten om in het geheime voorgeheugen te blijven.
 
 Redis moet voldoende geheugen hebben om alle andere cache in het geheugen te bewaren voor optimale prestaties. Het geheime voorgeheugen van het blok zal de belangrijkste factor in het bepalen van de hoeveelheid geheugen zijn te vormen. Het cachegeheugen van een blok wordt groter ten opzichte van het aantal pagina&#39;s op een site (aantal SKU-x-winkelweergaven).
 
@@ -107,7 +109,7 @@ Het testen van prestaties vóór elke productielevering wordt altijd geadviseerd
 
 ### Zoeken {#search-heading}
 
-Elasticsearch (of OpenSearch) is vereist vanaf Adobe Commerce versie 2.4, maar het is ook aan te raden dit in te schakelen voor versies ouder dan 2.4.
+Elasticsearch (of OpenSearch) is vereist vanaf Adobe Commerce versie 2.4, maar het is ook raadzaam dit in te schakelen voor versies ouder dan 2.4.
 
 ## Operationele modellen
 
@@ -127,7 +129,7 @@ In 2020 heeft Adobe bijvoorbeeld een optimalisatie uitgevoerd naar de Redis-laag
 
 Veel problemen komen voort uit gegevens, waaronder slechte gegevensmodellen, gegevens die niet goed zijn gestructureerd en gegevens die een index missen.
 
-Het ziet er goed uit als je een paar verbindingen test, maar gezien in productie wanneer het echte verkeer raakt en dit is waar de traagheid binnenkomt. Het is zeer belangrijk dat systeemintegrators weten hoe ze een gegevensmodel kunnen ontwerpen (met name voor productkenmerken), voorkomen dat ze onnodige kenmerken toevoegen en verplichte kenmerken behouden die van invloed zijn op de bedrijfslogica (zoals prijzen, beschikbaarheid van voorraden en zoeken).
+Het ziet er goed uit als je een paar verbindingen test, maar gezien in productie wanneer het echte verkeer raakt en dit is waar de traagheid binnenkomt. Het is zeer belangrijk dat systeemintegrators weten hoe te om een gegevensmodel (vooral voor productattributen) te ontwerpen, het toevoegen van onnodige attributen te vermijden, en verplichte attributen te houden die bedrijfslogica (zoals tarifering, voorraadbeschikbaarheid, en onderzoek) beïnvloeden.
 
 Voor die kenmerken die geen invloed hebben op de bedrijfslogica, maar die nog wel op de storefront aanwezig moeten zijn, combineert u ze in een paar kenmerken (bijvoorbeeld JSON-indeling).
 

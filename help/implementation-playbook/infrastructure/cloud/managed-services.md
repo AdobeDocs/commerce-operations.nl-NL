@@ -2,7 +2,8 @@
 title: Managed Services
 description: Controleer de verantwoordelijkheden van Adobe Managed Services, klanten en cloudserviceproviders voor uw Adobe Commerce voor de implementatie van cloudinfrastructuur.
 exl-id: b1442e31-06f4-4aa6-b24a-b6cda630d52f
-source-git-commit: 6509c939c7abc5462bffbe104466b2ff9e6fadc9
+feature: Cloud, Services
+source-git-commit: 7c2e2bdabf47e1367ffb6761230d3d43f0f9d0cf
 workflow-type: tm+mt
 source-wordcount: '521'
 ht-degree: 0%
@@ -65,4 +66,4 @@ De klant is primair verantwoordelijk voor de beveiliging van de aangepaste imple
 
 - De klant moet de penetratietests van zijn aangepaste toepassing uitvoeren. Deze verantwoordelijkheden kunnen door technische middelen door de klant, implementatiepartners, of de professionele diensten van Adobe Commerce worden gericht.
 
-- Klanten zijn verantwoordelijk voor de PCI-vereisten van hun aangepaste toepassing en hun eigen processen. De naleving van PCI van de klant bouwt op de certificatie PCI van AWS en Adobe Commerce voort om de gebieden te minimaliseren die moeten worden herzien.
+- Klanten zijn verantwoordelijk voor de PCI-vereisten van hun aangepaste toepassing en hun eigen processen. De PCI-compatibiliteit van de klant is gebaseerd op de PCI-certificeringen van AWS en Adobe Commerce om de gebieden die moeten worden gecontroleerd, tot een minimum te beperken.

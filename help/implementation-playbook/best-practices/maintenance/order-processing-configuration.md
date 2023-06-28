@@ -3,9 +3,8 @@ title: Best practices voor configuratie voor verwerking van bestellingen
 description: Leer best practices voor configuratie om de verwerkingsprestaties voor kassa's en bestellingen te verbeteren.
 role: Admin, User
 feature: Best Practices
-feature-set: Commerce
 exl-id: d15fe845-670f-4f7e-9645-7e111e6e809f
-source-git-commit: 95ffff39d82cc9027fa633dffedf15193040802d
+source-git-commit: 94d7a57dcd006251e8eefbdb4ec3a5e140bf43f9
 workflow-type: tm+mt
 source-wordcount: '249'
 ht-degree: 0%
@@ -33,17 +32,17 @@ De stappen om asynchrone ordeverwerking toe te laten hangen van de plaatsingswij
 
 - Voor Adobe Commerce op wolkeninfrastructuur en op gebiedsplaatsen op Productiemodus, gebruik het volgende bevel van Magento CLI om asynchrone indexering toe te laten:
 
-   ```php
-   php bin/magento config:set dev/grid/async_indexing 1
-   ```
+  ```php
+  php bin/magento config:set dev/grid/async_indexing 1
+  ```
 
 - Voor Adobe Commerce-sites op locatie in de modus Standaard of Productie schakelt u asynchrone indexering in door de configuratie Rasterinstellingen in Admin bij te werken.
 
-   Zie [Updates en opnieuw indexeren van het geplande raster inschakelen](https://experienceleague.adobe.com/docs/commerce-admin/stores-sales/order-management/orders/order-scheduled-operations.html#enable-scheduled-grid-updates-and-reindexing)
+  Zie [Updates en opnieuw indexeren van het geplande raster inschakelen](https://experienceleague.adobe.com/docs/commerce-admin/stores-sales/order-management/orders/order-scheduled-operations.html#enable-scheduled-grid-updates-and-reindexing)
 
-   >[!WARNING]
-   >
-   >Test altijd configuratiewijzigingen in de testomgeving voordat u de productieomgeving bijwerkt.
+  >[!WARNING]
+  >
+  >Test altijd configuratiewijzigingen in de testomgeving voordat u de productieomgeving bijwerkt.
 
 ## Aanvullende informatie
 

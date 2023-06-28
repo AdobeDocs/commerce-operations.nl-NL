@@ -2,7 +2,8 @@
 title: Beheerde services van Adobe
 description: Leer hoe Adobe Managed Services uw Adobe Commerce-implementatie kan ondersteunen en onderhouden.
 exl-id: b600b0e3-c6fd-4b86-ad2a-a445e599f1bd
-source-git-commit: 2affc555c2e719d0f8b8de06df3a8c080effb425
+feature: Services
+source-git-commit: 94d7a57dcd006251e8eefbdb4ec3a5e140bf43f9
 workflow-type: tm+mt
 source-wordcount: '1108'
 ht-degree: 0%
@@ -317,7 +318,7 @@ Adobe biedt een reeks services voor de levering, ontwikkeling, staging en produc
             <td></td>
         </tr>
         <tr>
-            <td>Het testen van de bescherming van de instanties van de klant van de toepassingen</td>
+            <td>Penetratietests van de exemplaren van de toepassingen van de klant</td>
             <td>Eigenaar</td>
             <td>Medewerker</td>
             <td></td>
@@ -371,7 +372,7 @@ Adobe biedt een reeks services voor de levering, ontwikkeling, staging en produc
 
 De Adobe-beveiligingsstapel voor Managed Services bouwt beveiliging op elk niveau op met behulp van automatisering en consistentie om menselijke fouten te beperken. De ontwikkelings en verrichtingenteams erven automatisch veiligheidscontroles van verschillende niveaus van de stapel.
 
-De partners van het Platform, zoals Amazon Web Services en Microsoft Azure, verzekeren maximumveiligheidsdekking wanneer het toepassen van platformaanpassingen, terwijl het team van Managed Services van Adobe de diensten van de kernveiligheid, zoals naleving, registreren, authentificatie, aftasten, en serverveiligheid en veilige toepassingsconfiguratie verleent. Zie [Adobe Commerce Security](https://business.adobe.com/products/magento/secure-ecommerce.html) voor meer informatie .
+De partners van het Platform, zoals Amazon Web Services en Microsoft Azure, verzekeren maximumveiligheidsdekking wanneer het toepassen van platform, terwijl het aangepaste team van Adobe de basisveiligheidsdiensten zoals naleving, registreren, authentificatie, aftasten, en serverveiligheid en veilige toepassingsconfiguratie verleent. Zie [Adobe Commerce Security](https://business.adobe.com/products/magento/secure-ecommerce.html) voor meer informatie .
 
 Het volgende diagram toont de de technologiestapel van de Veiligheid van de Diensten van de Beheerde van Adobe:
 

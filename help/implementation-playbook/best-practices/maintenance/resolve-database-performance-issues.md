@@ -2,10 +2,9 @@
 title: Aanbevolen procedures om prestatieproblemen met databases op te lossen
 description: Leer hoe u databaseproblemen kunt verhelpen die de prestaties vertragen op Adobe Commerce-sites die worden geïmplementeerd in de cloud-infrastructuur.
 role: Developer, Admin
-feature-set: Commerce
 feature: Best Practices
 exl-id: e40e0564-a4eb-43a8-89dd-9f6c5cedb4a7
-source-git-commit: 95ffff39d82cc9027fa633dffedf15193040802d
+source-git-commit: 94d7a57dcd006251e8eefbdb4ec3a5e140bf43f9
 workflow-type: tm+mt
 source-wordcount: '570'
 ht-degree: 0%

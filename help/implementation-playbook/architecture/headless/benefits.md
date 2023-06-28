@@ -2,7 +2,8 @@
 title: Headless Commerce
 description: Leer wat headless commerce betekent en hoe Adobe Commerce architecturen zonder kop ondersteunt.
 exl-id: acf66714-c10e-4c8b-b7ca-04cb2ca2fcf9
-source-git-commit: e76f101df47116f7b246f21f0fe0fa72769d2776
+feature: Integration
+source-git-commit: 94d7a57dcd006251e8eefbdb4ec3a5e140bf43f9
 workflow-type: tm+mt
 source-wordcount: '303'
 ht-degree: 0%
@@ -21,7 +22,7 @@ Hoofdloze handel is op API gebaseerde handel. Het ontkoppelt bedrijfslogica, eve
 
 Hoofdloze architectuur is de technische scheiding van het hoofd van de rest van de handelstoepassing. Adobe Commerce heeft een volledig ontkoppelde architectuur die alle handelsdiensten en gegevens via een GraphQL API-laag biedt. Deze architectuur staat frontend teams toe om hun frontends onafhankelijk van Adobe Commerce te ontwikkelen, die de behendigheid verstrekken om nieuwe aanraakpunten met nieuwe technologieën snel te bouwen en te testen.
 
-Adobe Commerce GraphQL-API&#39;s kunnen ook worden uitgebreid met microservices die zijn geïmplementeerd op de I/O-runtime van Adobe. Dit verstrekt ongeëvenaarde behendigheid om, omnichannel bedrijfsprocessen te integreren uit te breiden en aan te passen zonder codeaanpassingen aan het achterste eind te vereisen, die ervoor zorgt het kernplatform gemakkelijk zonder invloed aan frontend touchpoints kan worden bevorderd. Adobe Commerce GraphQL API&#39;s zijn open sourced en maken deel uit van ons engineeringprogramma voor de gemeenschap, met aanzienlijke bijdragen en toezicht van onze gemeenschap van ontwikkelaars.
+Adobe Commerce GraphQL API&#39;s kunnen ook worden uitgebreid met microservices die worden geïmplementeerd op Adobe/O Runtime. Dit verstrekt ongeëvenaarde behendigheid om, omnichannel bedrijfsprocessen te integreren uit te breiden en aan te passen zonder codeaanpassingen aan het achterste eind te vereisen, die ervoor zorgt het kernplatform gemakkelijk zonder invloed aan frontend touchpoints kan worden bevorderd. Adobe Commerce GraphQL API&#39;s zijn open sourced en maken deel uit van ons engineeringprogramma voor de gemeenschap, met aanzienlijke bijdragen en toezicht van onze gemeenschap van ontwikkelaars.
 
 ![Architectuurdiagram met koploze handel](../../../assets/playbooks/headless-diagram.svg)
 

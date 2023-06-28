@@ -2,7 +2,8 @@
 title: Projectbeheer
 description: Pas onze aanbevelingen voor projectbeheer toe op uw Adobe Commerce-implementatie.
 exl-id: adf53a2a-1673-441a-84d3-4cdda47d6aa5
-source-git-commit: e76f101df47116f7b246f21f0fe0fa72769d2776
+feature: Best Practices
+source-git-commit: 94d7a57dcd006251e8eefbdb4ec3a5e140bf43f9
 workflow-type: tm+mt
 source-wordcount: '474'
 ht-degree: 0%
@@ -11,7 +12,7 @@ ht-degree: 0%
 
 # Projectbeheer
 
-Projectbeheer is een toezichtfunctie die is afgestemd op de governancestructuur van de organisatie en de levenscyclus van het project omvat. Het voorziet de projectmanager en het team van structuur, processen, besluitvormingsmodellen, en hulpmiddelen om het project te beheren en te controleren, terwijl ook het verzekeren van de succesvolle levering van het project. Projectgovernance is een cruciaal element, met name voor complexe en strategische projecten.
+Projectbeheer is een toezichtfunctie die is afgestemd op de bestuursstructuur van de organisatie en de levenscyclus van het project omvat. Het voorziet de projectmanager en het team van structuur, processen, besluitvormingsmodellen, en hulpmiddelen om het project te beheren en te controleren, terwijl ook het verzekeren van de succesvolle levering van het project. Projectgovernance is een cruciaal element, met name voor complexe en strategische projecten.
 
 Het governancemodel definieert, documenteert en communiceert aangepaste en effectieve praktijken om een uitgebreide methode te bieden voor het beheren van het project en het periodiek zichtbaar maken op elk niveau om succes te waarborgen. Het bevat een kader voor het nemen van besluiten; omschrijft de rollen, verantwoordelijkheden en aansprakelijkheid voor de uitvoering van het project; en regelt de doeltreffendheid. De governancestructuur rolt van het uitvoeringsteam helemaal naar het uitvoerend management en definieert de activiteiten, rapportage, escalatie en informatiestroom.
 

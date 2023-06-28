@@ -2,7 +2,8 @@
 title: Prestatiebenchmarks
 description: Resultaten van de prestatiebenchmark bekijken voor Adobe Commerce-implementaties die worden gehost op de Adobe-cloudinfrastructuur.
 exl-id: cc9b090a-a504-4df3-aa32-81882f431dd9
-source-git-commit: eeb7146a8051e8692ebf974d65db75a4999cf2e6
+feature: Cloud
+source-git-commit: 94d7a57dcd006251e8eefbdb4ec3a5e140bf43f9
 workflow-type: tm+mt
 source-wordcount: '594'
 ht-degree: 0%
@@ -49,13 +50,13 @@ Prestatiemetingen zijn gebaseerd op gesimuleerde dagelijkse winkelactiviteiten v
    - 3000 gelijktijdige gebruikers op de winkel
    - Instellen op 30% CDN-cache-raaksnelheid
 
-      Als u de cachelaag op effectieve wijze gebruikt, neemt het aantal paginaweergaven per uur toe.
+     Als u de cachelaag op effectieve wijze gebruikt, neemt het aantal paginaweergaven per uur toe.
 
 - **GraphQL API**
    - 250 gelijktijdige threads
    - Instellen op 0% CDN-cache-raaksnelheid
 
-      De responstijden worden aanzienlijk verbeterd met een caching-laag voor GraphQL.
+     De responstijden worden aanzienlijk verbeterd met een caching-laag voor GraphQL.
 
 - **Admin Web**
    - 500 gelijktijdige gebruikers

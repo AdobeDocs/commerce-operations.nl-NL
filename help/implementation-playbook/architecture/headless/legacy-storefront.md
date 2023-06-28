@@ -2,7 +2,8 @@
 title: Gekoppelde opslagarchitectuur
 description: Meer weten over wat een gekoppelde winkel betekent in de context van Adobe Commerce-architecturen zonder kop.
 exl-id: 978e6853-4fbe-45b8-8e46-f491c6724fc6
-source-git-commit: e76f101df47116f7b246f21f0fe0fa72769d2776
+feature: Integration
+source-git-commit: 94d7a57dcd006251e8eefbdb4ec3a5e140bf43f9
 workflow-type: tm+mt
 source-wordcount: '315'
 ht-degree: 0%
@@ -29,10 +30,10 @@ De huidige standaardimplementatieoptie voor de meeste commerciële klanten omvat
 
 - **Front-end architectuur (Adobe Commerce UI-componenten)**—Adobe Commerce/PHP-specialisten om voort te bouwen op verouderde winkels.
 
-Voordat we in eindeloze opties geraken, moeten we beginnen met de meer bekende archiefront-architectuur. Als er geen kop wordt losgekoppeld, zou dit de gekoppelde opslagarchitectuur zijn, die het meest wordt gezien bij onze Luma-demo&#39;s.
+Voordat we in eindeloze opties geraken, beginnen we met de meer bekende winkelarchitectuur. Als er geen kop wordt losgekoppeld, zou dit de gekoppelde opslagarchitectuur zijn, die het meest wordt gezien bij onze Luma-demo&#39;s.
 
-Dit is waar de storefront mogelijkheden strak met de kernhandelsdiensten worden geïntegreerd, niet door die laag van GraphQL API worden gescheiden. Er is dus veel bedrijfslogica gekoppeld aan dat thema. Deze aanpak is niet zonder kop en is niet PWA.
+Dit is waar de storefront mogelijkheden strak met de kernhandelsdiensten worden geïntegreerd, niet door die laag van GraphQL API worden gescheiden. Er is dus veel bedrijfslogica gekoppeld aan dat thema. Deze aanpak is niet zonder kop, en het is geen PWA.
 
 Dit is momenteel de gemeenschappelijkste optie koopt handelaars omdat het 100% eigenschapsteun met zowel B2B als B2C de mogelijkheden van de Handel heeft. De gemeenschap is er bekend mee, er is een volwassen ecosysteem van deskundigheid rond en het is in ruime mate compatibel met Adobe Commerce Marketplace-extensies.
 
-Het ontbreekt echter aan de voordelen waar we eerder over hebben gesproken. Zonder scheiding van lagen, zijn er vele gebiedsdelen en potentiële punten van mislukking wanneer de veranderingen worden aangebracht. Het presteert niet zo goed als een goed geïmplementeerde PWA en als een handelaar niet beschikt over expertise op het gebied van Adobe Commerce of PHP-ontwikkeling, moeten hij of zij die bronnen zoeken.
+Het ontbreekt echter aan de voordelen waar we eerder over hebben gesproken. Zonder scheiding van lagen, zijn er vele gebiedsdelen en potentiële punten van mislukking wanneer de veranderingen worden aangebracht. Het is niet zo presterend als een goed geïmplementeerde PWA en als een handelaar geen expertise heeft op het gebied van Adobe Commerce of PHP-ontwikkeling, zullen ze die bronnen moeten vinden.

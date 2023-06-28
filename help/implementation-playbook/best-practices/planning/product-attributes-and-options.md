@@ -2,10 +2,9 @@
 title: Aanbevolen werkwijzen voor configuratie van productkenmerken
 description: Leer hoe u de Adobe Commerce-prestaties kunt optimaliseren door het aantal productkenmerken, kenmerkopties en kenmerksets te beperken
 role: User, Admin
-feature: Best Practices
-feature-set: Commerce
+feature: Best Practices, Catalogs
 exl-id: 81783a4c-bc82-4733-bee3-0154cf03079a
-source-git-commit: 95ffff39d82cc9027fa633dffedf15193040802d
+source-git-commit: 94d7a57dcd006251e8eefbdb4ec3a5e140bf43f9
 workflow-type: tm+mt
 source-wordcount: '564'
 ht-degree: 0%
@@ -21,7 +20,6 @@ ht-degree: 0%
    - Voor Adobe Commerce versie 2.4.2 en hoger kunt u maximaal 1500 productkenmerken configureren
 - **Opties voor productkenmerken**-Vorm tot 100 attributenopties voor elk attribuut
 - **Productkenmerksets**-Vorm een maximum van 1000 attributenreeksen _
-
 >[!NOTE]
 >
 >Productkenmerken geven functies aan die wereldwijd op alle producten van toepassing zijn. De kenmerkopties van het product zijn aanpassingen om eigenschappen te specificeren die op specifieke producten van toepassing zijn.

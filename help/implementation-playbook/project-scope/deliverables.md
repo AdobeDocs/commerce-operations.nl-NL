@@ -2,7 +2,8 @@
 title: Te leveren items
 description: Meer informatie over de verschillende te leveren items die aan een Adobe Commerce-implementatie zijn gekoppeld.
 exl-id: 6f5e603b-bbe5-411d-ad72-696cb4eae246
-source-git-commit: e76f101df47116f7b246f21f0fe0fa72769d2776
+feature: Best Practices
+source-git-commit: 94d7a57dcd006251e8eefbdb4ec3a5e140bf43f9
 workflow-type: tm+mt
 source-wordcount: '266'
 ht-degree: 0%
@@ -23,7 +24,7 @@ In een systeemdiagram moeten gegevens worden weergegeven (bijvoorbeeld bestellin
 
 ## Technische specificaties
 
-In dit document worden de technische implementatiebenadering en de toepasselijke details over alle integratie en systemen van derden gedefinieerd die moeten worden gewijzigd. Dit kunnen API&#39;s zijn die op dit moment niet bestaan en die moeten worden ontwikkeld.
+In dit document worden de technische implementatiebenadering en de toepasselijke details over alle integratie en systemen van derden gedefinieerd die moeten worden gewijzigd. Dit kan APIs omvatten die momenteel niet bestaan en moeten worden ontwikkeld.
 
 ## Gegevenstoewijzing
 

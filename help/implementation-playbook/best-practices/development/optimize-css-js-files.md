@@ -3,9 +3,8 @@ title: CSS- en JS-bronbestanden optimaliseren
 description: Leer hoe u CSS- en JavaScript-bestanden (JS) voor Adobe Commerce-projecten kunt samenvoegen en miniaturen via Beheer of de opdrachtregel.
 role: Developer
 feature: Best Practices
-feature-set: Commerce
 exl-id: ff0bc407-b563-418b-9d6a-7c1dc8f235df
-source-git-commit: 95ffff39d82cc9027fa633dffedf15193040802d
+source-git-commit: 94d7a57dcd006251e8eefbdb4ec3a5e140bf43f9
 workflow-type: tm+mt
 source-wordcount: '379'
 ht-degree: 0%

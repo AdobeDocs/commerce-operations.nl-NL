@@ -2,7 +2,8 @@
 title: Projectbeheertools
 description: Kies de aanbevolen tools voor projectbeheer voor uw Adobe Commerce-implementatie.
 exl-id: 5c87d762-06ce-4716-946a-f0fe5348fa18
-source-git-commit: e76f101df47116f7b246f21f0fe0fa72769d2776
+feature: System
+source-git-commit: 94d7a57dcd006251e8eefbdb4ec3a5e140bf43f9
 workflow-type: tm+mt
 source-wordcount: '373'
 ht-degree: 0%
@@ -31,7 +32,7 @@ Het Beheer van de Dienst van Jira machtigt ontwikkelings en verrichtingenteams o
 
 ## Documentbeheer
 
-Het samenleven is een fantastisch hulpmiddel om op één plaats van vrijwel overal aan het werk te bouwen, te organiseren en aan het werk samen te werken. De verbinding wordt geleverd met best practices-sjablonen, dus u hoeft het wiel niet opnieuw uit te vinden. Ga eenvoudig aan de slag en zorg voor consistentie tussen teams en projecten.
+Het samenleven is een fantastisch hulpmiddel om op één plaats van vrijwel overal aan het werk te bouwen, te organiseren en aan het werk samen te werken. Het samenspel wordt uitgerust met best-praktijksjablonen, zodat u het wiel niet opnieuw hoeft uit te vinden. Ga eenvoudig aan de slag en zorg voor consistentie tussen teams en projecten.
 
 ## Ticket-beheer
 

@@ -2,7 +2,8 @@
 title: Belangrijke belanghebbenden
 description: De belangrijkste belanghebbenden die betrokken zijn bij een Adobe Commerce-implementatie en die verschillende aspecten van het project hebben, beoordelen.
 exl-id: 04d8270f-3f68-445a-8e7a-e17905a6f77c
-source-git-commit: e76f101df47116f7b246f21f0fe0fa72769d2776
+feature: Best Practices
+source-git-commit: 94d7a57dcd006251e8eefbdb4ec3a5e140bf43f9
 workflow-type: tm+mt
 source-wordcount: '390'
 ht-degree: 0%
@@ -31,13 +32,13 @@ Dit is de persoon of het team bij de organisatie met het beste inzicht in de hui
 
 ## Wie is de eigenaar van de technologie?
 
-De meeste handelsimplementaties vereisen verscheidene verschillende platforms om heen en weer te communiceren en volledig, zoals een systeem van het ordebeheer, het platform van de klantendienst, of ERP systeem te zijn geïntegreerd. Back-office systemen die worden voorbereid voor een handelstransformatie dicteren vaak de tijdslijn voor een implementatie, zodat het absoluut noodzakelijk is contacten te hebben van het IT-team van een organisatie dat vanaf dag één betrokken is om het initiatief te ondersteunen. Deze groep omvat vaak:
+De meeste handelsimplementaties vereisen verscheidene verschillende platforms om heen en weer te communiceren en volledig, zoals een systeem van het ordebeheer, het platform van de klantendienst, of ERP systeem te zijn geïntegreerd. Back-office systemen die worden voorbereid voor een handelstransformatie dicteren vaak de tijdslijn voor een implementatie, zodat het absoluut noodzakelijk is contacten te hebben van het IT-team van een organisatie dat vanaf de eerste dag betrokken is om het initiatief te ondersteunen. Deze groep omvat vaak:
 
 - IT Systems Manager, CTO en interne technici
 - ERP (of een back-office)-engineer
 
 ## Wie is de uitvoerende sponsor?
 
-Digital Commerce 360 heeft gemeld dat organisaties nog niet hebben geïnvesteerd in een nieuwe transformatie van de handel, omdat ze geen leiderschapsondersteuning hebben. De mate waarin het leidinggevende team betrokken is, is van cruciaal belang voor het succes van een merk. Volledige steun van de volgende rollen, met inbegrip van terugkomende controlepuntvergaderingen tijdens de duur van een handelsimplementatie, wordt geadviseerd:
+Digital Commerce 360 heeft gemeld dat de belangrijkste reden dat organisaties nog niet hebben geïnvesteerd in een nieuwe transformatie in de handel, is omdat ze geen leiderschapsondersteuning hebben. De mate waarin het leidinggevende team betrokken is, is van cruciaal belang voor het succes van een merk. Volledige steun van de volgende rollen, met inbegrip van terugkomende controlepuntvergaderingen tijdens de duur van een handelsimplementatie, wordt geadviseerd:
 
 - De hele C-suite

@@ -2,7 +2,8 @@
 title: Benadering van levering en planning
 description: Gebruik onze aanbevolen aanpak voor het plannen en leveren van uw Adobe Commerce-implementatie.
 exl-id: ee2918d6-0d97-4f02-8e8f-b88bc999cd22
-source-git-commit: e76f101df47116f7b246f21f0fe0fa72769d2776
+feature: Best Practices
+source-git-commit: 94d7a57dcd006251e8eefbdb4ec3a5e140bf43f9
 workflow-type: tm+mt
 source-wordcount: '498'
 ht-degree: 0%
@@ -13,7 +14,7 @@ ht-degree: 0%
 
 Een volledig begrip van het volledige bereik van een project voordat de implementatie begint, is net zo essentieel als een plan om een oplossing op tijd, op budget te leveren en dat voldoet aan uw behoeften. Dit vereist zowel het identificeren van een onweerlegbare blauwdruk voor het ontwerp en de implementatie van de oplossing als het uitvoeren van die blauwdruk terwijl het meten van succes.
 
-Het is een verbintenis van het hele team die begint bij de eerste ideatie en pas eindigt na de introductie. En hoewel dit een detail-georiënteerd en soms vervelend aspect van het proces is, maakt het werk dat je in het plan en het bestuur zet de obstakels veel gemakkelijker om te navigeren en te overwinnen.
+Het is een verplichting van het hele team dat begint bij de eerste ideatie en niet eindigt tot na lancering. En hoewel dit een detail-georiënteerd en soms vervelend aspect van het proces is, maakt het werk dat je in het plan en het bestuur zet de obstakels veel gemakkelijker om te navigeren en te overwinnen.
 
 Strategische handelsprojecten kunnen worden uitgevoerd met verschillende benaderingen en verschillende methoden voor projectbeheer. Wij raden echter een hybride Agile-aanpak aan voor een geslaagde levering en een optimale uitvoering.
 

@@ -2,7 +2,8 @@
 title: Adobe Commerce-mogelijkheden
 description: Leer hoe Adobe Commerce mogelijkheden ons onderscheiden van concurrenten.
 exl-id: 6d2196b4-56ee-4048-b5e5-930811e7e50b
-source-git-commit: e76f101df47116f7b246f21f0fe0fa72769d2776
+feature: Paas
+source-git-commit: 94d7a57dcd006251e8eefbdb4ec3a5e140bf43f9
 workflow-type: tm+mt
 source-wordcount: '360'
 ht-degree: 0%
@@ -11,9 +12,9 @@ ht-degree: 0%
 
 # Adobe Commerce-mogelijkheden
 
-Adobe Commerce is een van de meest betrouwbare en betrouwbare elektronische handelsplatforms op de markt. Dat vertrouwen en betrouwbaarheid zijn bewezen in de groei van de ondernemingen die het gebruiken. Volgens[Hosting Tribunal](https://hostingtribunal.com/blog/magento-statistics/#gref)Merken die Adobe Commerce gebruiken als hun e-commerce platform drie keer sneller groeit dan merken op andere platforms.
+Adobe Commerce is een van de meest betrouwbare en betrouwbare elektronische handelsplatforms op de markt. Dat vertrouwen en betrouwbaarheid zijn bewezen in de groei van de ondernemingen die het gebruiken. Volgens [Hosting Tribunal](https://hostingtribunal.com/blog/magento-statistics/#gref)Merken die Adobe Commerce gebruiken als hun e-commerce platform drie keer sneller groeit dan merken op andere platforms.
 
-Het vermogen van Adobe Commerce om elke complexiteit aan te pakken waarmee uw merk wordt geconfronteerd, heeft het een populaire keuze gemaakt omdat bedrijven hun geavanceerd ontwikkelen. Of merken nu gericht zijn op één site in één regio of dat ze meerdere sites of winkels over de hele wereld moeten verbinden, Adobe Commerce beschikt over de infrastructuur om een naadloze en verbonden ervaring te creëren. Als partner gebruiken we vervolgens onze expertise om de site aan te passen aan uw unieke behoeften.
+Door het vermogen van Adobe Commerce om elke complexiteit aan te pakken waarmee je merk wordt geconfronteerd, is het een populaire keuze geworden, omdat bedrijven hun geavanceerd ontwikkelen. Of merken nu gericht zijn op één site in één regio of dat ze meerdere sites of winkels over de hele wereld moeten verbinden, Adobe Commerce beschikt over de infrastructuur om een naadloze en verbonden ervaring te creëren. Als partner gebruiken we vervolgens onze expertise om de site aan te passen aan uw unieke behoeften.
 
 Adobe is bekend met creatieve producten, maar heeft ook een belangrijke digitale onderneming die contentbeheer, analyses, campagneorchestratie, op account gebaseerde marketingpersonaliseringsmogelijkheden en natuurlijk handel biedt.
 

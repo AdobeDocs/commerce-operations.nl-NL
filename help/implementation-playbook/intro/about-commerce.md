@@ -2,7 +2,8 @@
 title: Informatie over Adobe Commerce
 description: Beschrijving van Adobe Commerce
 exl-id: a9ebd4a6-87b4-47b9-8ae8-72d99e1797eb
-source-git-commit: 219cbe839e40afa19b3754a9d5929074ed238920
+feature: Cloud, Integration, Inventory, Orders, Security, Staging, Shipping/Delivery
+source-git-commit: 94d7a57dcd006251e8eefbdb4ec3a5e140bf43f9
 workflow-type: tm+mt
 source-wordcount: '297'
 ht-degree: 0%
@@ -15,7 +16,7 @@ Adobe Commerce biedt kooplieden de kracht om unieke en boeiende boodschappenerva
 
 ## Ervaringen op het gebied van betekenisvolle handel
 
-De eigenschappen van Adobe Commerce worden altijd aangepast aan de wensen van de consument om inhoud met de handel te vergelijken en te voldoen aan de vraag van klanten naar foutloze merkinteracties. Adobe Commerce staat merken toe om eigenaar te zijn van de klantervaring, persoonlijke inhoud en promoties te verzorgen en een vloeiend aankooppad te bieden met de volgende functies:
+Door inhoud met handel te vergelijken om aan de vraag van klanten naar foutloze merkinteracties te voldoen, evolueren Adobe Commerce-functies altijd met het oog op de consument. Adobe Commerce staat merken toe om eigenaar te zijn van de klantervaring, persoonlijke inhoud en promoties te verzorgen en een vloeiend aankooppad te bieden met de volgende functies:
 
 - Page Builder
 - Product Recommendations

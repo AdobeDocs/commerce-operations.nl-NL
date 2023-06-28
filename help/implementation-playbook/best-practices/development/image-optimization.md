@@ -3,9 +3,8 @@ title: Afbeeldingen optimaliseren voor een meer responsieve site
 description: Leer de stappen voor het optimaliseren van afbeeldingen en het gebruik van Fastly Image Optimization om de responstijd op uw Adobe Commerce-sites te optimaliseren.
 role: Developer, Admin
 feature: Best Practices
-feature-set: Commerce
 exl-id: ada8b987-97ed-4232-9e1b-7e0a791a0807
-source-git-commit: 95ffff39d82cc9027fa633dffedf15193040802d
+source-git-commit: 94d7a57dcd006251e8eefbdb4ec3a5e140bf43f9
 workflow-type: tm+mt
 source-wordcount: '210'
 ht-degree: 0%

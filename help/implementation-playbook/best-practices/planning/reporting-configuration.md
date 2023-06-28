@@ -2,10 +2,9 @@
 title: Beste praktijken voor de Configuratie van het Rapport
 description: Optimaliseer siteprestaties door de rapportmodule te verwijderen als u deze niet gebruikt.
 role: Admin
-feature: Best Practices
-feature-set: Commerce
+feature: Best Practices, Configuration
 exl-id: 8c991b8a-affb-4a9e-9383-671f595ff89e
-source-git-commit: 95ffff39d82cc9027fa633dffedf15193040802d
+source-git-commit: 94d7a57dcd006251e8eefbdb4ec3a5e140bf43f9
 workflow-type: tm+mt
 source-wordcount: '133'
 ht-degree: 0%
