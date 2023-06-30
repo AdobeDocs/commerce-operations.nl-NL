@@ -2,9 +2,9 @@
 title: Opmerkingen bij de release
 description: Meer informatie over de patches die beschikbaar zijn voor Adobe Commerce en de problemen die ze oplossen.
 exl-id: 22262555-f5ea-49ad-98ad-ea8428ef66d5
-source-git-commit: 28358ee2ebadfcbf12c67e667cbbd27599a28a80
+source-git-commit: 6299aa825c04a5afd31728e763269cee46cfe513
 workflow-type: tm+mt
-source-wordcount: '12912'
+source-wordcount: '13230'
 ht-degree: 0%
 
 ---
@@ -20,6 +20,22 @@ De [[!DNL Quality Patches Tool]](https://github.com/magento/quality-patches) lev
 >[!INFO]
 >
 >Voor informatie over [!DNL quality patches] die door de Gemeenschap voor Magento Open Source zijn opgericht, [releaseopmerkingen](https://github.com/magento/quality-patches/blob/master/community-release-notes.md).
+
+## v1.1.34 {#v1-1-34}
+
+* **ACSD-52277** (voor Adobe Commerce en Magento Open Source >=2.4.0 &lt;2.4.7) - Hiermee wordt het probleem verholpen waarbij een gebruiker met beheerdersrechten niet correct wordt omgeleid nadat een winkelweergave is geselecteerd bij het maken van een nieuwe bestelling in Admin.
+* **ACSD-50813** (voor Adobe Commerce >=2.4.5 &lt;2.4.7) - Hiermee wordt het probleem opgelost dat Admin niet in staat was gebundelde producten met een schuine streep in de SKU toe te voegen met de [!UICONTROL Add Products by SKU] functionaliteit voor de beheervolgorde.
+* **ACSD-51630** (voor Adobe Commerce en Magento Open Source >=2.4.3 &lt;2.4.7) - Hiermee wordt het probleem verholpen waarbij het downloaden van beheerpagina&#39;s wordt vertraagd door een grote hoeveelheid systeemberichten.
+* **ACSD-51853** (voor Adobe Commerce en Magento Open Source >=2.4.1 &lt;2.4.7) - Hiermee wordt het probleem verholpen waarbij geen gekopieerde tekststijlen worden toegepast bij gebruik van de optie [!UICONTROL Page Builder].
+* **ACSD-52160** (voor Adobe Commerce en Magento Open Source >=2.4.4 &lt;2.4.7) - Hiermee wordt het probleem opgelost waarbij het resultaat van de productvalidatie ten opzichte van de regel van de winkelwagenprijs niet correct is geëvalueerd op basis van de regel &#39;Als een artikel in de winkelwagentje is GEVONDEN/NIET is GEVONDEN met Al/een van deze voorwaarden is waar&#39;.
+* **ACSD-51636** (voor Adobe Commerce >=2.4.5 &lt;2.4.7) - Hiermee wordt het probleem verholpen waarbij de bedrijfsbeheerder geen nieuwe gebruikers kan toevoegen uit de sectie voor de klantenaccount, ondanks dat hij over alle benodigde rollen en machtigingen beschikt.
+* **ACSD-51739** (voor Adobe Commerce >=2.4.6 &lt;2.4.7) - Hiermee wordt het probleem verholpen waarbij een fout wordt geretourneerd wanneer de fout `structure_id` wordt gevraagd in een CompanyTeam GraphQL- verzoek.
+* **ACSD-51857** (voor Adobe Commerce en Magento Open Source >=2.4.0 &lt;2.4.7) - Hiermee wordt het probleem opgelost waarbij de trage prestaties van het `aggregate_sales_report_bestsellers_data` cron report on large sales_order en `sales_order_item` databasetabellen zijn het gevolg van de manier waarop de hoofdgegevensquery is geschreven.
+* **ACSD-48448** (voor Adobe Commerce en Magento Open Source >=2.4.2 &lt;2.4.7) - Hiermee wordt het probleem verholpen waarbij zich een probleem voordoet met betrekking tot een zeldzame omstandigheid tijdens annuleringen van bestellingen, wat leidt tot een dubbele vermelding in het dialoogvenster `inventory_reservation` tabel.
+* **ACSD-52689** (voor Adobe Commerce en Magento Open Source >=2.4.3 &lt;2.4.6) - Hiermee wordt het probleem verholpen waarbij afbeeldingen niet kunnen worden geüpload naar Amazon S3-opslag met behulp van REST API.
+* **B2B-2674** (voor Adobe Commerce en Magento Open Source >=2.4.4 &lt;2.4.7) - voeg caching vermogen aan de 1customAttributeMetadata1 GraphQL vraag toe.
+* Nieuwe versies toegevoegd voor ACSD-44938.
+* Toegevoegde eisen voor ACSD-46988.
 
 ## v1.1.33 {#v1-1-33}
 
