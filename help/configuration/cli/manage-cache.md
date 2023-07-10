@@ -2,9 +2,9 @@
 title: De cache beheren
 description: Cachetypen beheren en de status van het meningsgeheime voorgeheugen bekijken.
 exl-id: bbd76c00-727b-412e-a8e5-1e013a83a29a
-source-git-commit: 95ffff39d82cc9027fa633dffedf15193040802d
+source-git-commit: 5c316ade0619603eafa7ece8a7cd8c1595dee713
 workflow-type: tm+mt
-source-wordcount: '870'
+source-wordcount: '901'
 ht-degree: 0%
 
 ---
@@ -119,15 +119,19 @@ Monsterresultaat:
 
 ## Cachetypen opschonen en leegmaken
 
+>[!NOTE]
+>
+>Cache van meerdere pagina&#39;s kan tegelijkertijd en automatisch ongeldig worden gemaakt **_zonder_** deze entiteiten bewerken. Bijvoorbeeld wanneer een product in de catalogus is toegewezen aan een categorie of wanneer er een product in de catalogus is [!UICONTROL related product rule] wordt gewijzigd.
+
 Als u verouderde items uit de cache wilt verwijderen, kunt u _schoon_ of _flush_ cachetypen:
 
 - Het schoonmaken van een geheim voorgeheugentype schrapt alle punten van toegelaten het geheim voorgeheugentypes van de Handel slechts. Met andere woorden, deze optie beïnvloedt andere processen of toepassingen niet omdat het slechts het geheime voorgeheugen wist dat de Handel gebruikt.
 
-   Uitgeschakelde cachetypen worden niet schoongemaakt.
+  Uitgeschakelde cachetypen worden niet schoongemaakt.
 
-   >[!TIP]
-   >
-   >Corrigeer altijd de cache nadat u versies van Magento Open Source of Adobe Commerce hebt bijgewerkt, Magento Open Source naar Adobe Commerce hebt geüpgraded of B2B voor Adobe Commerce of een willekeurige module hebt geïnstalleerd.
+  >[!TIP]
+  >
+  >Corrigeer altijd de cache nadat u versies van Magento Open Source of Adobe Commerce hebt bijgewerkt, Magento Open Source naar Adobe Commerce hebt geüpgraded of B2B voor Adobe Commerce of een willekeurige module hebt geïnstalleerd.
 
 - Als u een cachetype leegmaakt, wordt de cacheopslag gewist. Dit kan van invloed zijn op andere procestoepassingen die dezelfde opslag gebruiken.
 
