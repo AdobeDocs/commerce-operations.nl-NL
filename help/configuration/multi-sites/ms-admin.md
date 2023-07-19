@@ -2,9 +2,9 @@
 title: Meerdere websites instellen, weergaven opslaan en opslaan in de beheerfunctie
 description: Vorm extra websites, opslag, en opslagmeningen in Admin van de Handel.
 exl-id: e6b4d14d-7504-48f9-a2e1-7e9a1bc76ab9
-source-git-commit: 95ffff39d82cc9027fa633dffedf15193040802d
+source-git-commit: 5860f5327003372909c425c13c6d03166288d903
 workflow-type: tm+mt
-source-wordcount: '1013'
+source-wordcount: '1067'
 ht-degree: 0%
 
 ---
@@ -172,3 +172,8 @@ De standaard basis-URL van de winkelweergave wijzigen:
    >Als u een basis-URL voor Adobe Commerce instelt op cloudinfrastructuur, moet u de eerste punt vervangen door drie streepjes. Als de basis-URL bijvoorbeeld `french.branch-sbg7pPa-f3dueAiM03tpy.us.magentosite.cloud`, enter `http://french---branch-sbg7pPa-f3dueAiM03tpy.us.magentosite.cloud`
 
 1. Klikken **Config opslaan**.
+
+
+>[!INFO]
+>
+>De website-, opslag- en winkelweergavecode kan alleen letters (a-z of A-Z), getallen (0-9) en onderstrepingstekens (_) bevatten. Het eerste teken moet ook een letter zijn. Als hoofdletters of hoofdletters worden gebruikt, is de overeenkomst intern niet hoofdlettergevoelig voor overschrijvingen van configuratie-instellingen via omgevingsvariabelen. Zie [Omgevingsvariabelen gebruiken om configuratie-instellingen te overschrijven](../reference/override-config-settings.md#environment-variables).
