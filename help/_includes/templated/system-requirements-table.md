@@ -1,5 +1,5 @@
 ---
-source-git-commit: 760e03cbeebbd7b457703e224093c233f7b6bab3
+source-git-commit: 77a4ad2b6cf2a59cade5ac79584c795a112cabe1
 workflow-type: tm+mt
 source-wordcount: '284'
 ht-degree: 87%
@@ -9,7 +9,7 @@ ht-degree: 87%
 
 >[!NOTE]
 >
-><sup>*</sup>Versies 2.4.4 en 2.4.5 ondersteunen alleen MySQL 8.0.0 tot en met 8.0.28.
+><sup>*</sup>De versies 2.4.4 en 2.4.5 steunen MySQL 8.0.0 door 8.0.28 slechts.
 
 <table style="table-layout:auto">
   <thead>
@@ -278,46 +278,46 @@ ht-degree: 87%
             8.0
       </td>
       <td>
-            8.0*
+            8.0
       </td>
       <td>
-            8.0*
+            8.0
       </td>
       <td>
-            8.0*
+            8.0
       </td>
       <td>
-            8.0*
+            8.0
       </td>
       <td>
-            8.0*
+            8.0
       </td>
       <td>
-            8.0*
+            8.0
       </td>
       <td>
-            8.0*
+            8.0
       </td>
       <td>
-            8.0*
+            8.0
       </td>
       <td>
-            8.0*
+            8.0
       </td>
       <td>
-            8.0*
+            8.0
       </td>
       <td>
-            8.0*
+            8.0
       </td>
       <td>
-            8.0*
+            8.0
       </td>
       <td>
-            8.0*
+            8.0
       </td>
       <td>
-            8.0*
+            8.0
       </td>
       <td>
             5.7, 8.0
