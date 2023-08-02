@@ -3,9 +3,9 @@ title: Documenthoofdmap wijzigen om de beveiliging te verbeteren
 description: Ongeoorloofde browsertoegang tot Adobe Commerce- of Magento Open Source-bestandssysteem op locatie voorkomen.
 feature: Install, Security
 exl-id: aabe148d-00c8-4011-a629-aa5abfa6c682
-source-git-commit: ce405a6bb548b177427e4c02640ce13149c48aff
+source-git-commit: 32dd5005422b98923ce1bdf6c3fb3f55c2ec15bd
 workflow-type: tm+mt
-source-wordcount: '592'
+source-wordcount: '586'
 ht-degree: 0%
 
 ---
@@ -49,7 +49,7 @@ server {
 
 ## Voordat u begint
 
-Als u deze zelfstudie wilt voltooien, hebt u toegang nodig tot een werkende installatie die op een [LAMP](https://en.wikipedia.org/wiki/LAMP_(software_bundle)) stapel:
+Als u deze zelfstudie wilt voltooien, hebt u toegang nodig tot een werkende installatie die op een LAMP-stapel wordt uitgevoerd:
 
 - Linux
 - Apache (2.4+)
@@ -62,7 +62,7 @@ Als u deze zelfstudie wilt voltooien, hebt u toegang nodig tot een werkende inst
 >
 >Zie [Vereisten](../prerequisites/overview.md) en de [Installatiehandleiding](../overview.md) voor meer informatie .
 
-## 1. Uw serverconfiguratie bewerken
+## 1. De serverconfiguratie bewerken
 
 De naam en locatie van het virtuele hostbestand zijn afhankelijk van de versie van Apache die u uitvoert. In dit voorbeeld worden de naam en locatie van het virtuele hostbestand op Apache v2.4 weergegeven.
 
@@ -96,7 +96,7 @@ De naam en locatie van het virtuele hostbestand zijn afhankelijk van de versie v
    systemctl restart apache2
    ```
 
-## 2. De basis-URL bijwerken
+## 2. Werk uw basis-URL bij
 
 Als u een mapnaam toevoegt aan de hostnaam of het IP-adres van de server om de basis-URL te maken wanneer u de toepassing hebt geïnstalleerd (bijvoorbeeld `http://192.168.33.10/magento2`), moet u deze verwijderen.
 
@@ -122,7 +122,7 @@ Als u een mapnaam toevoegt aan de hostnaam of het IP-adres van de server om de b
    UPDATE core_config_data SET value='http://192.168.33.10' WHERE path='web/unsecure/base_url';
    ```
 
-## 3. Het bestand env.php bijwerken
+## 3. Werk het bestand env.php bij
 
 De volgende node toevoegen aan de `env.php` bestand.
 
@@ -134,14 +134,14 @@ De volgende node toevoegen aan de `env.php` bestand.
 
 Zie de [env.php reference](../../configuration/reference/config-reference-envphp.md) voor meer informatie .
 
-## 4. Schakelen tussen modi
+## 4. Overschakelmodi
 
-[Toepassingsmodi](../../configuration/bootstrap/application-modes.md), met inbegrip van `production` en `developer`, zijn bedoeld om de veiligheid te verbeteren en de ontwikkeling te vergemakkelijken. Zoals de namen suggereren, dient u over te schakelen op `developer` modus wanneer u de toepassing uitbreidt of aanpast en schakelt naar `production` in een live omgeving.
+[Toepassingsmodi](../../configuration/bootstrap/application-modes.md), met inbegrip van `production` en `developer`, zijn bedoeld om de veiligheid te verbeteren en de ontwikkeling te vergemakkelijken. Zoals de namen suggereren, dient u over te schakelen op `developer` modus wanneer u de toepassing uitbreidt of aanpast en schakelt naar `production` modus wanneer deze wordt uitgevoerd in een live omgeving.
 
 Het schakelen tussen wijzen is een belangrijke stap om te verifiëren dat uw serverconfiguratie behoorlijk werkt. U kunt tussen wijzen schakelen gebruikend het CLI hulpmiddel:
 
 1. Ga naar de installatiemap.
-1. Overschakelen op `production` in.
+1. Overschakelen op `production` -modus.
 
    ```bash
    bin/magento deploy:mode:set production
@@ -152,7 +152,7 @@ Het schakelen tussen wijzen is een belangrijke stap om te verifiëren dat uw ser
    ```
 
 1. Vernieuw de browser en controleer of de winkel goed wordt weergegeven.
-1. Overschakelen op `developer` in.
+1. Overschakelen op `developer` -modus.
 
    ```bash
    bin/magento deploy:mode:set developer
@@ -164,7 +164,7 @@ Het schakelen tussen wijzen is een belangrijke stap om te verifiëren dat uw ser
 
 1. Vernieuw de browser en controleer of de winkel goed wordt weergegeven.
 
-## 5. De winkel controleren
+## 5. Controleer de opslagplaats
 
 Ga naar de winkel in webbrowser om te controleren of alles werkt.
 
