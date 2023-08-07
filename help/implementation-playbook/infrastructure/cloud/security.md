@@ -3,9 +3,9 @@ title: Beveiliging van cloudinfrastructuur
 description: Meer informatie over hoe we Adobe Commerce veilig houden op de cloudinfrastructuur.
 exl-id: cd5d1106-c8db-4b70-b1c7-12378d7d77a7
 feature: Cloud, Security
-source-git-commit: 94d7a57dcd006251e8eefbdb4ec3a5e140bf43f9
+source-git-commit: d05629ef21608a017cfbbfcf05e9507375689fa2
 workflow-type: tm+mt
-source-wordcount: '1644'
+source-wordcount: '1689'
 ht-degree: 0%
 
 ---
@@ -16,7 +16,7 @@ De Adobe Commerce Pro-planarchitectuur is ontworpen om een zeer veilige omgeving
 
 ## Webbrowsers
 
-Het grootste deel van het verkeer dat in en uit de wolkenomgeving gaat, komt van de webbrowsers van de consument. Consumentenverkeer kan worden beveiligd met HTTPS voor alle pagina&#39;s op de website (met een gedeelde SSL-certificering of het eigen SSL-certificaat van de klant voor een extra vergoeding). Afhandelings- en accountpagina&#39;s worden altijd via HTTPS verzonden. De beste manier is om alle pagina&#39;s onder HTTPS te bedienen.
+Het grootste deel van het verkeer dat in en uit de wolkenomgeving gaat, komt van de webbrowsers van de consument. Consumentenverkeer kan worden beveiligd met HTTPS voor alle pagina&#39;s op de website (met behulp van een gedeelde SSL-certificering of het eigen SSL-certificaat van de klant voor een extra vergoeding). Afhandelings- en accountpagina&#39;s worden altijd via HTTPS verzonden. De beste manier is om alle pagina&#39;s onder HTTPS te bedienen.
 
 ## CDN (Content Delivery Network)
 
@@ -24,7 +24,7 @@ Verstrekt snel een CDN en verdeelde ontkenning van de dienst (DDoS) bescherming.
 
 ## Webtoepassingsfirewall (WAF)
 
-De Snelle Firewall van de Toepassing van het Web (WAF) wordt gebruikt om extra bescherming te verstrekken. De op wolk gebaseerde WAF van Fastly gebruikt derderegels van commerciële en open-bronbronnen zoals de Ruleset van de Kern van OWASP. Bovendien zijn er specifieke Adobe Commerce-regels. De klanten worden beschermd tegen zeer belangrijke toepassing-laag aanvallen, met inbegrip van injectieaanvallen en kwaadwillige input, dwars-plaats scripting, gegevensexfiltratie, het protocolschendingen van HTTP, en andere Hoogste 10 bedreigingen van OWASP.
+De Snelle Firewall van de Toepassing van het Web (WAF) wordt gebruikt om extra bescherming te verstrekken. De op wolk gebaseerde WAF van Fastly gebruikt derderegels van commerciële en open-bronbronnen zoals de Ruleset van de Kern OWASP. Bovendien zijn er specifieke Adobe Commerce-regels. De klanten worden beschermd tegen zeer belangrijke toepassing-laag aanvallen, met inbegrip van injectieaanvallen en kwaadwillige input, dwars-plaats scripting, gegevensexfiltratie, het protocolschendingen van HTTP, en andere Hoogste 10 bedreigingen van OWASP.
 
 De WAF-regels worden door Adobe Commerce bijgewerkt als er nieuwe kwetsbaarheden worden gedetecteerd waardoor Managed Services beveiligingsproblemen &quot;virtueel patcheert&quot; voordat softwarepatches worden uitgevoerd. De Fastly WAF biedt geen diensten voor tariefbeperking of botdetectie. Indien gewenst kunnen klanten een licentie voor een service voor botdetectie van derden verkrijgen die compatibel is met Fastly.
 
@@ -40,6 +40,10 @@ Amazon Elastic Block Store (EBS) wordt gebruikt voor opslag. Alle EBS-volumes wo
 
 De Adobe Commerce-toepassing biedt geen ondersteuning voor codering of codering op kolom- of rijniveau wanneer de gegevens niet in rust zijn of niet worden verzonden tussen servers. De klant kan coderingssleutels beheren vanuit de toepassing. Toetsen die door het systeem worden gebruikt, worden opgeslagen in het AWS Key Management System en moeten door Managed Services worden beheerd om onderdelen van de service te kunnen leveren.
 
+## Detectie van eindpunten en respons
+
+[!DNL CrowdStrike Falcon], een licht-gewicht, volgende-generatie eindpuntopsporing en reactie (EDR) agent die op alle eindpunten (met inbegrip van servers) binnen Adobe wordt geïnstalleerd, beschermt onze gegevens en onze systemen met ononderbroken controle en inzameling in real time die ons toelaat om aan bedreigingen snel te identificeren en te antwoorden.
+
 ## Penetentietests
 
 Managed Services voert regelmatig penetratietests uit van het Adobe Commerce-wolkensysteem met behulp van de out-of-the-box-toepassing. Klanten zijn verantwoordelijk voor eventuele penetratietests van hun aangepaste toepassing.
@@ -50,11 +54,11 @@ Adobe Commerce vereist integratie van betaalgateway, waarbij creditcardgegevens 
 
 ## Adobe Commerce-toepassing
 
-Adobe test regelmatig de kerntoepassingscode op veiligheidskwetsbaarheid. Patches voor defecten en beveiligingsproblemen worden aan klanten geleverd. Het team van de Veiligheid van het Product valideert de producten van Adobe Commerce volgens de richtlijnen van de toepassingsveiligheid van OWASP. Verschillende hulpprogramma&#39;s voor beveiligingskwetsbaarheidsbeoordeling en externe leveranciers worden gebruikt om de naleving te testen en te controleren. Beveiligingsgereedschappen zijn:
+Adobe test regelmatig de kerntoepassingscode op veiligheidskwetsbaarheid. Patches voor defecten en beveiligingsproblemen worden aan klanten geleverd. Het team van de Veiligheid van het Product valideert de producten van Adobe Commerce volgens de richtlijnen van de toepassingsveiligheid van OWASP. Verschillende hulpprogramma&#39;s voor beveiligingskwetsbaarheidsbeoordeling en externe leveranciers worden gebruikt om de naleving te testen en te controleren. Beveiligingsgereedschappen zijn onder meer:
 
 - Statisch en dynamisch scannen van veracode
 - Scannen naar RIPS-broncode
-- De services voor het scannen van kwetsbaarheden van Trustwave en Alert Logic
+- Trustwave en Alert Logic&#39;s kwetsbaarheidsscanservices
 - Burp Suite Pro
 - OWASPZAP
 - andSqlMap
@@ -79,7 +83,7 @@ Alle AWS-activiteiten zijn aangemeld bij AWS CloudTrail. Linux-, toepassingsserv
 
 ## Gevoelige gegevens
 
-Gevoelige gegevens kunnen betrekking hebben op persoonlijke informatie van consumenten of vertrouwelijke gegevens van Managed Services-klanten. De bescherming van gevoelige gegevens van klanten en consumenten is een essentiële verplichting voor Adobe Commerce Managed Services. Zowel Managed Services als onze klanten hebben wettelijke verplichtingen over persoonlijk identificeerbare informatie. Naast de veiligheidseigenschappen van de architectuur, zijn er andere controles om de distributie en de toegang tot gevoelige gegevens te beperken.
+Gevoelige gegevens kunnen betrekking hebben op persoonlijke informatie van consumenten of vertrouwelijke gegevens van Managed Services-klanten. De bescherming van gevoelige gegevens van klanten en consumenten is een essentiële verplichting voor Adobe Commerce Managed Services. Zowel Managed Services als onze klanten hebben wettelijke verplichtingen met betrekking tot persoonlijk identificeerbare informatie. Naast de veiligheidseigenschappen van de architectuur, zijn er andere controles om de distributie en de toegang tot gevoelige gegevens te beperken.
 
 De klanten hebben hun gegevens en hebben controle over waar die gegevens zullen worden gevestigd. De klant geeft de locatie op waar de productie- en ontwikkelingsinstanties zich bevinden. Zij geven ook aan welke locatie zal worden gebruikt voor de Adobe Commerce Reporting environment in combinatie met Commerce, en of die Adobe Commerce Reporting application al dan niet toegang heeft tot persoonlijk identificeerbare informatie. Productie-instanties kunnen zich in de meeste AWS-regio&#39;s bevinden, terwijl ontwikkelings- en Adobe Commerce-rapportageomgevingen op dit moment zowel in de Verenigde Staten als in de Europese Unie te vinden zijn.
 
@@ -109,10 +113,10 @@ De steun wordt uitgevoerd elk uur voor de laatste 24 uren van verrichting. Na de
 |----------------|-------------------------|
 | Dagen 1 t/m 3 | Elke back-up |
 | dagen 4 tot 6 | Eén back-up per dag |
-| Week 2 tot en met 6 | Eén back-up per week |
+| Week 2 tot 6 | Eén back-up per week |
 | Week 8 t/m 12 | Eén tweewekelijkse back-up |
 | Week 12 t/m 22 | Eén back-up per maand |
 
 Hierdoor wordt een onafhankelijke back-up van redundante opslag gemaakt. Omdat de EBS-volumes gecodeerd zijn, worden de back-ups ook gecodeerd. Bovendien voert Managed Services op verzoek back-ups uit.
 
-Voor uw Adobe Commerce Managed Services-back-up- en herstelbenadering wordt een architectuur met hoge beschikbaarheid gebruikt, gecombineerd met back-ups op volledig systeem. Elk project wordt herhaald—alle gegevens, code, en activa-over drie afzonderlijke de beschikbaarheidsstreken van AWS; elke zone met een afzonderlijk datacenter.
+Voor uw Adobe Commerce Managed Services-back-up- en herstelaanpak wordt een architectuur met hoge beschikbaarheid gebruikt, gecombineerd met back-ups op volledig systeem. Elk project wordt herhaald—alle gegevens, code, en activa-over drie afzonderlijke de beschikbaarheidsstreken van AWS; elke streek met een afzonderlijk gegevenscentrum.
