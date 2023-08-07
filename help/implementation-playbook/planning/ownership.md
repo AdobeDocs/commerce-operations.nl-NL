@@ -3,7 +3,7 @@ title: Verantwoordelijkheid en verantwoordelijkheid
 description: Definieer projectrollen en -verantwoordelijkheden om een geslaagde Adobe Commerce-implementatie te garanderen.
 exl-id: 206b6e3b-6dee-442e-a2ba-7867b2494b75
 feature: Best Practices
-source-git-commit: 94d7a57dcd006251e8eefbdb4ec3a5e140bf43f9
+source-git-commit: 87c1570e8d215d6eaf233d50fc7e3432f66290fc
 workflow-type: tm+mt
 source-wordcount: '205'
 ht-degree: 0%
@@ -15,7 +15,6 @@ ht-degree: 0%
 Terwijl het uitvoeren van een groot project, lijkt alles vaak prima in het begin. De routekaart voor het project is gedetailleerd en uitgebreid met duidelijke mijlpalen. Er zijn middelenplannen en toezeggingen van belanghebbenden. Binnenkort kunnen er echter dingen uit elkaar vallen met gemiste termijnen en vergeten taken.
 
 Dit gebeurt vaak als gevolg van een gebrek aan duidelijkheid over projectrollen en -verantwoordelijkheden. Duidelijke rollen en verantwoordelijkheden zijn een kritieke succesfactor voor elk project. Zonder deze projecten kunnen projecten snel ontspoord worden en de belanghebbenden blijven proberen uitzonderlijke methoden te gebruiken met een tijd-/begrotingsoverschrijding.
-
 
 ## Hoe werken we samen?
 
