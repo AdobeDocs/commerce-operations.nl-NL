@@ -2,9 +2,9 @@
 title: Hoe reparaties werken
 description: Leer meer over de verschillende typen patches voor Adobe Commerce en Magento Open Source en hoe ze werken.
 exl-id: d7072ed4-7d51-41fe-881a-aae3b2000b55
-source-git-commit: 95ffff39d82cc9027fa633dffedf15193040802d
+source-git-commit: 915cac8c8d436105c4ae25f95bcaefbe19cc50c1
 workflow-type: tm+mt
-source-wordcount: '602'
+source-wordcount: '607'
 ht-degree: 0%
 
 ---
@@ -17,7 +17,7 @@ ht-degree: 0%
 
 Patch-bestanden (of diff-bestanden) zijn tekstbestanden met de volgende notatie:
 
-- Het bestand of de bestanden die moeten worden gewijzigd.
+- De bestanden die moeten worden gewijzigd.
 - Het regelnummer waarmee de wijziging moet beginnen en het aantal regels dat moet worden gewijzigd.
 - De nieuwe code die moet worden omgewisseld.
 
@@ -31,9 +31,9 @@ Er zijn drie typen patches:
 
 ## Hotfixes
 
-Hotfixes zijn flarden die high-impact veiligheid of kwaliteitsmoeilijke situaties bevatten die vele verkopers beïnvloeden. Deze correcties worden toegepast op de volgende patchrelease voor de van toepassing zijnde secundaire versie. Adobe geeft waar nodig hotfixes vrij.
+Hotfixes zijn flarden die high-impact veiligheid of kwaliteitsmoeilijke situaties bevatten die vele verkopers beïnvloeden. Deze correcties worden toegepast op de volgende patchrelease voor de toepasselijke secundaire versie. Adobe geeft waar nodig hotfixes vrij.
 
-U kunt hotfixes in [Beveiligingscentrum](https://magento.com/security/patches). Volg de instructies op de pagina om het patchbestand te downloaden, afhankelijk van uw versie en installatietype. Gebruik de [opdrachtregel](../patches/apply.md#) of [Composer](../patches/apply.md) om hotfix-patches toe te passen.
+U kunt hotfixes in [Beveiligingscentrum](https://magento.com/security/patches). Volg de instructies op de pagina om het patchbestand te downloaden, afhankelijk van uw versie en installatietype. Gebruik de [opdrachtregel](../patches/apply.md#) of [Composer](../patches/apply.md) om hotfix toe te passen.
 
 >[!NOTE]
 >
@@ -51,11 +51,11 @@ Gebruik de [[!DNL Quality Patches Tool]](https://experienceleague.adobe.com/tool
 
 ## Aangepaste patches
 
-Soms duurt het even voor het Team van de Techniek van Adobe om een insectenmoeilijke situatie te omvatten die op GitHub in een versie van Adobe Commerce of van de Magento Open Source Composer wordt gemaakt. In de tussentijd, kunt u een flard van GitHub tot stand brengen en gebruiken [`cweagans/composer-patches`](https://github.com/cweagans/composer-patches/) insteekmodule om deze toe te passen op de op Composer gebaseerde installatie.
+Soms duurt het even voor het Team van de Techniek van Adobe om een insectenmoeilijke situatie te omvatten die op GitHub in een versie van Adobe Commerce of van de Magento Open Source Composer wordt gemaakt. Ondertussen kunt u een flard van GitHub tot stand brengen en gebruiken [`cweagans/composer-patches`](https://github.com/cweagans/composer-patches/) insteekmodule om deze toe te passen op de op Composer gebaseerde installatie.
 
-Gebruik de [opdrachtregel] of [Composer] om aangepaste patches toe te passen.
+Gebruik de [opdrachtregel](apply.md#command-line) of [Composer](apply.md#composer) om aangepaste patches toe te passen.
 
-U kunt op verschillende manieren aangepaste patchbestanden maken. In het volgende voorbeeld wordt gefocust op het maken van een patch op basis van een bekende it commit.
+U kunt op verschillende manieren aangepaste patchbestanden maken. In het volgende voorbeeld wordt gefocust op het maken van een patch op basis van een bekende it.
 
 Een aangepaste patch maken:
 
@@ -63,7 +63,7 @@ Een aangepaste patch maken:
 1. Identificeer GitHub begaat of trekt verzoek om voor het flard te gebruiken. In dit voorbeeld wordt het [`2d31571`](https://github.com/magento/magento2/commit/2d31571f1bacd11aa2ec795180abf682e0e9aede) commit, verbonden aan GitHub kwestie [#6474](https://github.com/magento/magento2/issues/6474).
 1. Voeg de `.patch` of de `.diff` extensies voor de URL toewijzen. Gebruiken `.diff` voor een kleinere bestandsgrootte. Bijvoorbeeld: [https://github.com/magento/magento2/commit/2d31571f1bacd11aa2ec795180abf682e0e9aede.diff](https://github.com/magento/magento2/commit/2d31571f1bacd11aa2ec795180abf682e0e9aede.diff)
 1. De pagina opslaan als een bestand in het dialoogvenster `patches/composer` directory. Bijvoorbeeld: `github-issue-6474.diff`.
-1. Bewerk het bestand en verwijder `app/code/<VENDOR>/<PACKAGE>` van alle paden, zodat deze relatief zijn ten opzichte van de `vendor/<VENDOR>/<PACKAGE>` directory.
+1. Het bestand bewerken en verwijderen `app/code/<VENDOR>/<PACKAGE>` van alle paden, zodat deze relatief zijn ten opzichte van de `vendor/<VENDOR>/<PACKAGE>` directory.
 
    >[!NOTE]
    >
@@ -96,4 +96,4 @@ U kunt patches op een van de volgende manieren toepassen:
 
 >[!NOTE]
 >
->Als u een patch wilt toepassen op een Adobe Commerce-project voor cloudinfrastructuur, raadpleegt u [Patches toepassen](https://devdocs.magento.com/cloud/project/project-patch.html) in de _Wolkengids_.
+>Als u een patch wilt toepassen op een Adobe Commerce-project voor cloud-infrastructuur, raadpleegt u [Patches toepassen](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html) in de _Handleiding Handel in cloud_.
