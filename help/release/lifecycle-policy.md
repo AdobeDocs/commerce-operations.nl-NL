@@ -2,10 +2,10 @@
 title: Levenscyclusbeleid voor software
 description: In deze video ziet u de belangrijkste datums voor einde softwareondersteuning voor Adobe Commerce-releases.
 exl-id: 9ee4ecc8-d893-412a-a605-5a8606a1b9a9
-source-git-commit: 95ffff39d82cc9027fa633dffedf15193040802d
+source-git-commit: f5ab11a43bb90fa96c20cea8d8c85eb2a4c98826
 workflow-type: tm+mt
-source-wordcount: '315'
-ht-degree: 10%
+source-wordcount: '326'
+ht-degree: 12%
 
 ---
 
@@ -13,19 +13,20 @@ ht-degree: 10%
 
 Voor Adobe Commerce 2.4.4 en latere versies:
 
-- Om ons levenscyclusbeleid beter te stroomlijnen en de opdracht-kritieke behoeften van klanten van Adobe Commerce te steunen, breiden wij ons steunvenster tot drie jaar van de Algemene datum van de Beschikbaarheid (GA) voor Adobe Commerce 2.4.4 en later uit. Adobe biedt kwaliteitscorrecties voor 2.4.4 en latere releases voor een periode van drie jaar. Klanten kunnen toegang krijgen tot de kwaliteitsoplossingen door contact op te nemen met [Adobe Commerce-ondersteuning](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html) of via het zelfdienen [[!DNL Quality Patches Tool]](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html) als de versie ervan nog steeds in aanmerking komt voor kwaliteitsondersteuning. Raadpleeg de onderstaande tabel voor de einddata van de softwareondersteuning voor Adobe Commerce-releaselijnen.
+- Om ons levenscyclusbeleid beter te stroomlijnen en de opdracht-kritieke behoeften van klanten van Adobe Commerce te steunen, breiden wij ons steunvenster tot drie jaar uit van de algemene beschikbaarheidsdatum (GA) voor Adobe Commerce 2.4.4 en later. Adobe biedt kwaliteitscorrecties voor 2.4.4 en latere releases voor een periode van drie jaar. Klanten kunnen toegang krijgen tot de kwaliteitsoplossingen door contact op te nemen met [Adobe Commerce-ondersteuning](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html) of via het zelfdienen [[!DNL Quality Patches Tool]](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html) als de versie ervan nog steeds in aanmerking komt voor kwaliteitsondersteuning. Raadpleeg de onderstaande tabel voor de einddata van de softwareondersteuning voor Adobe Commerce-releaselijnen.
 
 - Adobe biedt beveiligingsoplossingen via een beveiligingspatchrelease voor de ondersteuningsperiode van drie jaar.
 
-- Voor essentiële beveiligingsproblemen, zoals &#39;zero-day&#39;-kwetsbaarheden, biedt Adobe [hotfixes](https://support.magento.com/hc/en-us/sections/360003869892-Known-issues-patches-attached-) voor alle klanten op een ondersteunde versie, zelfs als ze niet op de nieuwste patch of beveiligingspatchrelease staan. Het is belangrijk om op te merken dat een hotfix geen vangst-allen is en niet alle veiligheidskwesties behandelt die door verbetering aan de recentste versie zouden worden opgelost.
+- Voor kritieke veiligheidskwesties, zoals nul-dag kwetsbaarheid, verstrekt Adobe [hotfixes](https://support.magento.com/hc/en-us/sections/360003869892-Known-issues-patches-attached-) voor alle klanten op een ondersteunde versie, zelfs als ze niet op de nieuwste patch of beveiligingspatchrelease staan. Het is belangrijk om op te merken dat een hotfix geen vangst-allen is en niet alle veiligheidskwesties behandelt die door verbetering aan de recentste versie zouden worden opgelost.
 
 ## Einde van softwareondersteuning
 
 | Geen | Algemene beschikbaarheid | Einde van softwareondersteuning<sup>1</sup> | Afhankelijke PHP-versie |
-|----------------------------|----------------------|-------------------------------------|-----------------------|
-| Adobe Commerce 2.4.4 | 12 april 2022 | 24 april 2025 | PHP 8.1 |
-| Adobe Commerce 2.4.5 | 9 augustus 2022 | 9 augustus 2025 | PHP 8.1 |
-| Adobe Commerce 2.4.6 | 14 maart 2023 | 14 maart 2026 | PHP 8.1 en PHP 8.2 |
+|----------------------|----------------------|-------------------------------------|-----------------------|
+| Adobe Commerce 2.4.7 | 19 april 2024 | 19 april 2027 | 8.2 en 8.3 |
+| Adobe Commerce 2.4.6 | 14 maart 2023 | 14 maart 2026 | 8.1 en 8.2 |
+| Adobe Commerce 2.4.5 | 9 augustus 2022 | 9 augustus 2025 | 8.1 |
+| Adobe Commerce 2.4.4 | 12 april 2022 | 24 april 2025 | 8.1 |
 
 {style="table-layout:auto"}
 
@@ -44,6 +45,7 @@ Voor Adobe Commerce 2.4.4 en latere versies:
     <th colspan="4">2024</th>
     <th colspan="4">2025</th>
     <th colspan="4">2026</th>
+    <th colspan="4">2027</th>
   </tr>
 </thead>
 <tbody>
@@ -70,32 +72,49 @@ Voor Adobe Commerce 2.4.4 en latere versies:
     <td>Q2</td>
     <td>Q3</td>
     <td>Q4</td>
+    <td>Q1</td>
+    <td>Q2</td>
+    <td>Q3</td>
+    <td>Q4</td>
   </tr>
   <tr>
     <td>2.4.4</td>
     <td>8.1</td>
     <td></td>
     <td colspan="13" style="background-color:#67ac68;"></td>
-    <td colspan="6"></td>
+    <td colspan="10"></td>
   </tr>
   <tr>
     <td>2.4.5</td>
     <td>8.1</td>
     <td colspan="2"></td>
     <td colspan="13" style="background-color:#67ac68;"></td>
-    <td colspan="5"></td>
+    <td colspan="9"></td>
   </tr>
   <tr>
     <td rowspan="2">2.4.6</td>
     <td>8.1</td>
-    <td colspan="5"></td>
+    <td colspan="4"></td>
     <td colspan="13" style="background-color:#67ac68;"></td>
-    <td colspan="2"></td>
+    <td colspan="8"></td>
   </tr>
   <tr>
     <td>8.2</td>
-    <td colspan="5"></td>
+    <td colspan="4"></td>
     <td colspan="13" style="background-color:#67ac68;"></td>
+    <td colspan="8"></td>
+  </tr>
+  <tr>
+    <td rowspan="2">2.4.7</td>
+    <td>8.2</td>
+    <td colspan="5"></td>
+    <td colspan="17" style="background-color:#67ac68;"></td>
+    <td colspan="2"></td>
+  </tr>
+  <tr>
+    <td>8.3</td>
+    <td colspan="5"></td>
+    <td colspan="17" style="background-color:#67ac68;"></td>
     <td colspan="2"></td>
   </tr>
 </tbody>

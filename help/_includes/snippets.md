@@ -1,7 +1,7 @@
 ---
-source-git-commit: 74cb55f4552bc1b2dace37d9a6f7e68939d1c262
+source-git-commit: 20add0a748e8df38dff48a779c63e1177d2a022d
 workflow-type: tm+mt
-source-wordcount: '197'
+source-wordcount: '263'
 ht-degree: 0%
 
 ---
@@ -52,3 +52,9 @@ ht-degree: 0%
 >[!NOTE]
 >
 >Vanaf de versie 2.3.2 wijzen we geïndexeerde CVE-nummers (Common Vulnerabilities and Exposure) toe aan en publiceren we deze voor elke beveiligingsfout die door externe partijen aan ons wordt gemeld. Hierdoor kunnen gebruikers gemakkelijker niet-verholpen kwetsbaarheden in hun implementatie identificeren. Meer informatie over CVE-id&#39;s vindt u op [CVE](https://cve.mitre.org/).
+
+## Overige releasegegevens {#other-release-info}
+
+>[!NOTE]
+>
+>Hoewel de code voor verhogingen en insectenmoeilijke situaties die in deze versienota&#39;s worden beschreven met Adobe Commerce worden gebundeld, worden verscheidene van deze projecten (bijvoorbeeld, B2B, de Bouwer van de Pagina, en de Studio van Progressive Webben Application (PWA) ook vrijgegeven onafhankelijk. De fixes van de insect voor deze projecten worden gedocumenteerd in de afzonderlijke, project-specifieke versieinformatie die in de documentatie voor elk project beschikbaar is. Zie [overzicht van productrelease](/help/release/release-notes/overview.md).

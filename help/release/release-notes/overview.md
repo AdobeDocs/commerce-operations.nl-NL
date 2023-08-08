@@ -2,7 +2,7 @@
 title: Opmerkingen bij de release Adobe Commerce en Magento Open Source
 description: Leer waar u informatie kunt vinden voor specifieke Adobe Commerce- en Magento Open Source-releases.
 exl-id: f6385e12-5c3d-425f-939c-9dfd7ef6c4f5
-source-git-commit: 073eec9ce841febf7653c82543eac57068576d03
+source-git-commit: c371ee59e4f1efcc947d0bbd189a892d8f32a5b7
 workflow-type: tm+mt
 source-wordcount: '430'
 ht-degree: 0%
@@ -24,16 +24,16 @@ Gebruik de volgende lijst om versienota&#39;s en belangrijke informatie met betr
         <p>Leer over de recentste verbeteringen in Adobe Commerce en Magento Open Source, met inbegrip van verhogingen, veiligheid, insectenmoeilijke situaties, en bekende kwesties.</p>
           <ul>
             <li><a href="https://developer.adobe.com/commerce/php/development/backward-incompatible-changes/">Achteruit incompatibele wijzigingen</a></li>
-            <li><a href="commerce/2-4-7.md">Adobe Commerce</a></li>
-            <li><a href="open-source/2-4-7.md">Magento Open Source</a></li>
-            <li><a href="security/2-4-6-p1.md">Beveiligingspatches</a></li>
+            <li><a href="commerce/overview.md">Adobe Commerce</a></li>
+            <li><a href="open-source/overview.md">Magento Open Source</a></li>
+            <li><a href="security/overview.md">Beveiligingspatches</a></li>
             <li><a href="https://helpx.adobe.com/security/products/magento.html">Adobe Security Bulletin</a></li>
             <li><a href="https://experienceleague.adobe.com/docs/commerce-admin/b2b/release-notes.html">B2B voor Adobe Commerce</a></li>
             <li><a href="https://experienceleague.adobe.com/docs/commerce-admin/inventory/release-notes.html">Inventory management</a></li>
           </ul>
         </td>
       <td><strong>Adobe Commerce over cloudinfrastructuur</strong>
-        <p>Leer meer over de nieuwste verbeteringen in de Cloud Suite voor Adobe Commerce-pakketten, die zijn ontworpen voor de implementatie en het beheer van Adobe Commerce-installaties en -upgrades op het cloudplatform.</p>
+        <p>Leer meer over de nieuwste verbeteringen in de Cloud Suite voor Adobe Commerce-pakketten, die zijn ontworpen om Adobe Commerce-installaties en -upgrades te implementeren en beheren op het cloudplatform.</p>
           <ul>
             <li><a href="https://devdocs.magento.com/cloud/release-notes/backward-incompatible-changes.html">Achteruit incompatibele wijzigingen</a></li>
             <li><a href="https://devdocs.magento.com/cloud/release-notes/mcp-release-notes.html">Cloud-patches voor handel</a></li>
@@ -66,7 +66,7 @@ Gebruik de volgende lijst om versienota&#39;s en belangrijke informatie met betr
             <li><a href="https://developer.adobe.com/graphql-mesh-gateway/">API-net voor Adobe APP Builder-ontwikkelaar</a></li>
             <li><a href="https://developer.adobe.com/commerce/events/get-started/release-notes/">Adobe I/O Events voor Adobe Commerce</a></li>
             <li><a href="https://developer.adobe.com/commerce/extensibility/admin-ui-sdk/release-notes/">Admin UI SDK</a></li>
-            <li><a href="../../tools/quality-patches-tool/release-notes.md">Kwaliteitspatches</a></li>
+            <li><a href="../../tools/quality-patches-tool/release-notes.md">Gereedschap Kwaliteitspatches</a></li>
             <li><a href="../../tools/site-wide-analysis-tool/intro.md">Analyse voor de hele site</a></li>
             <li><a href="../../upgrade/upgrade-compatibility-tool/overview.md">Compatibiliteit upgraden</a></li>
           </ul>
