@@ -2,7 +2,7 @@
 title: Beschikbaarheid van producten
 description: Ontdek welke Adobe Commerce-functies momenteel worden ondersteund en controleer of deze compatibel zijn met specifieke Adobe Commerce-releases.
 exl-id: 7e8e8ac2-a0b9-4023-a813-c0f1293e54c2
-source-git-commit: 376c236f6bd4979daf896e1a49d7c6092a1c2661
+source-git-commit: aadccd57794e5e1b07f6d863c2627f2a771509fc
 workflow-type: tm+mt
 source-wordcount: '517'
 ht-degree: 10%
@@ -23,10 +23,10 @@ Deze Adobe Commerce-extensies zijn losgekoppeld van de belangrijkste Adobe Comme
 
 In de volgende tabel ziet u de versieondersteuning voor elke extensie ten opzichte van de Adobe Commerce-versie.
 
-| **Adobe Commerce-versies** | 2.4.7-bèta1 | 2.4.6 | 2.4.5 | 2.4.4 | 2.4.3 | |
-|-|-|-|-|-|-|-|
+| **Adobe Commerce-versies** | 2.4.7-bèta1 | 2.4.6 | 2.4.5 | 2.4.4 | 2.4.3 |                                                                                                                                                                                                                                          |
+|----------------------------------------|-------------|--------|--------|--------|--------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | _Adobe I/O Events voor Adobe Commerce_ | 1.2.2 | 1.2.2 | 1.2.2 | 1.2.2 | - | [Composer](https://developer.adobe.com/commerce/events/get-started/installation/) <br/>[Opmerkingen bij de release](https://developer.adobe.com/commerce/events/get-started/release-notes/) |
-| _B2B_ | 1.4.0 | 1.3.5 | 1.3.4 | 1.3.3 | 1.3.2 | [Composer](https://experienceleague.adobe.com/docs/commerce-admin/b2b/install.html) <br/> [Opmerkingen bij de release](https://experienceleague.adobe.com/docs/commerce-admin/b2b/release-notes.html) |
+| _B2B_ | 1.4.0+ | 1.3.5+ | 1.3.4 | 1.3.3 | 1.3.2 | [Composer](https://experienceleague.adobe.com/docs/commerce-admin/b2b/install.html) <br/> [Opmerkingen bij de release](https://experienceleague.adobe.com/docs/commerce-admin/b2b/release-notes.html) |
 | _Kanaalbeheer_ | - | 2.0.0 | 1.0.0+ | 1.0.0+ | 1.0.0+ | [Marketplace](https://commercemarketplace.adobe.com/magento-channel-manager.html)<br/> [Opmerkingen bij de release](https://experienceleague.adobe.com/docs/commerce-channels/channel-manager/release-notes.html) |
 | _Amazon Sales Channel_ | - | 4.1.0+ | 4.3.0+ | 4.3.0+ | 4.3.0+ | [Marketplace](https://commercemarketplace.adobe.com/magento-module-amazon.html)<br/> [Opmerkingen bij de release](https://experienceleague.adobe.com/docs/commerce-channels/amazon/release-notes.html) |
 | _Experience Platform Connector_ | 3.0.0-bèta1 | 1.0.0+ | 1.0.0+ | 1.0.0+ | 1.0.0+ | [Marketplace](https://commercemarketplace.adobe.com/magento-experience-platform-connector.html)<br/>[Opmerkingen bij de release](https://experienceleague.adobe.com/docs/commerce-merchant-services/experience-platform-connector/release-notes.html) |
@@ -44,8 +44,8 @@ Aanbevolen wordt dat verkopers de meest recente versie van een service gebruiken
 
 In de volgende tabel ziet u de versieondersteuning voor elke service ten opzichte van de Adobe Commerce-versie.
 
-| **Adobe Commerce-versies** | 2.4.7-bèta1 | 2.4.6 | 2.4.5 | 2.4.4 | 2.4.3 | |
-|-|-|-|-|-|-|-|
+| **Adobe Commerce-versies** | 2.4.7-bèta1 | 2.4.6 | 2.4.5 | 2.4.4 | 2.4.3 |                                                                                                                                                                                                                                                |
+|--------------------------------------|-------------|--------|--------|--------|--------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | _Catalogusservice voor Adobe Commerce_ | 1.9 | 1.9 | 1.9 | 1.9 | - | [Overzicht](https://experienceleague.adobe.com/docs/commerce-merchant-services/catalog-service/guide-overview.html)<br/> [Opmerkingen bij de release](https://experienceleague.adobe.com/docs/commerce-merchant-services/catalog-service/release-notes.html) |
 | _Live zoeken_ | 3.01 | 3.01 | 3.01 | 3.01 | - | [Marketplace](https://commercemarketplace.adobe.com/magento-live-search.html)<br/>[Opmerkingen bij de release](https://experienceleague.adobe.com/docs/commerce-merchant-services/live-search/release-notes.html) |
 | _Betalingsdiensten_ | 2.10 | 2.10 | 2.10 | 2.10 | - | [Marketplace](https://commercemarketplace.adobe.com/magento-payment-services.html)<br/> [Opmerkingen bij de release](https://commercemarketplace.adobe.com/magento-payment-services.html) |
