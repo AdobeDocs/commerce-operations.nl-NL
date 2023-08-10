@@ -2,9 +2,9 @@
 title: Opmerkingen bij de release
 description: Meer informatie over de patches die beschikbaar zijn voor Adobe Commerce en de problemen die ze oplossen.
 exl-id: 22262555-f5ea-49ad-98ad-ea8428ef66d5
-source-git-commit: aa52895b45363ca0fb3585f603bfe66a73803427
+source-git-commit: da0c85a9f1b0ac0a3176ca5f6ef5904834e8d37e
 workflow-type: tm+mt
-source-wordcount: '13735'
+source-wordcount: '13965'
 ht-degree: 0%
 
 ---
@@ -20,6 +20,19 @@ De [[!DNL Quality Patches Tool]](https://github.com/magento/quality-patches) lev
 >[!INFO]
 >
 >Voor informatie over [!DNL quality patches] die door de Gemeenschap voor Magento Open Source zijn opgericht, [releaseopmerkingen](https://github.com/magento/quality-patches/blob/master/community-release-notes.md).
+
+## v1.1.36 {#v1-1-36}
+
+* **ACSD-53239** (voor Adobe Commerce en Magento Open Source >=2.4.3 &lt; 2.4.6) - Hiermee wordt het probleem verholpen waarbij de index van de inventaris alle caches in de modus Update on Schedule wist.
+* **ACSD-50887** (voor Adobe Commerce en Magento Open Source >=2.4.0 &lt;2.4.7) - Hiermee wordt het probleem opgelost waarbij de eigenschap van het productkenmerk *[!UICONTROL Use in Search Results Layered Navigation]* kan worden ingesteld op *Ja* zonder *[!UICONTROL Use in search]* optie ingesteld op *Ja*.
+* **ACSD-51846** (voor Adobe Commerce en Magento Open Source >=2.4.3-p2 &lt;2.4.6) - Hiermee wordt het *Interne fout* probleem dat zich voordoet omdat niet alle niveaus van REST API-payload zijn gevalideerd.
+* **ACSD-52906** (voor Adobe Commerce >=2.3.7 &lt;2.4.7) - Hiermee wordt het probleem verholpen waarbij het X-Magento-Vary-cookie onjuist is ingesteld voor aangemelde klanten die tot hetzelfde klantensegment behoren, wat leidt tot onjuiste caching voor sommige pagina&#39;s.
+* **ACSD-52736** (voor Adobe Commerce en Magento Open Source >=2.3.7 &lt;2.4.6) - Hiermee wordt het probleem verholpen waarbij een *Regel voor winkelprijs* die eisen voor configureerbare producthoeveelheid omvat, werkt niet zoals verwacht.
+* **ACSD-47875** (voor Adobe Commerce en Magento Open Source >=2.3.7 &lt;2.4.7) - Hiermee wordt het probleem verholpen dat gebruikers met beheerdersrechten geen product uit de beheerdersruimte aan een klantenkar kunnen toevoegen voor een bepaald weergavebereik met voorraadbeheer.
+* **ACSD-53176** (voor Adobe Commerce >=2.3.7 &lt;2.4.5) - Hiermee wordt het probleem opgelost waarbij *Regel voor verwante producten* with *is een van* voorwaarde komt niet overeen met producten.
+* **ACSD-51666** (voor Adobe Commerce en Magento Open Source >=2.3.7 &lt;2.4.7) - Hiermee wordt de fout gecorrigeerd *De sessie is verlopen. Meld u opnieuw aan.* dat gebeurt nadat een klant probeert aan login.
+* Nieuwe versies toegevoegd voor MDVA-39305-v2.
+* Bijgewerkte eisen voor ACSD-19640.
 
 ## v1.1.35 {#v1-1-35}
 
