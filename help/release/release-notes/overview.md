@@ -27,7 +27,7 @@ Gebruik de volgende lijst om versienota&#39;s en belangrijke informatie met betr
             <li><a href="commerce/overview.md">Adobe Commerce</a></li>
             <li><a href="open-source/overview.md">Magento Open Source</a></li>
             <li><a href="security/overview.md">Beveiligingspatches</a></li>
-            <li><a href="https://helpx.adobe.com/security/products/magento.html">Adobe Security Bulletin</a></li>
+            <li><a href="https://helpx.adobe.com/security/products/magento.html">Beveiligingsbulletin Adobe</a></li>
             <li><a href="https://experienceleague.adobe.com/docs/commerce-admin/b2b/release-notes.html">B2B voor Adobe Commerce</a></li>
             <li><a href="https://experienceleague.adobe.com/docs/commerce-admin/inventory/release-notes.html">Inventory management</a></li>
           </ul>
@@ -48,7 +48,7 @@ Gebruik de volgende lijst om versienota&#39;s en belangrijke informatie met betr
         <p>Meer informatie over de meest recente verbeteringen van de innovatieve Commerce-services die beschikbaar zijn als Adobe Commerce en Magento Open Source-extensies.</p>
           <ul>
             <li><a href="https://experienceleague.adobe.com/docs/commerce-admin/customers/audience-activation.html">Audience Activation</a></li>
-            <li><a href="https://experienceleague.adobe.com/docs/commerce-channels/amazon/release-notes.html">Amazon Sales Channel</a></li>
+            <li><a href="https://experienceleague.adobe.com/docs/commerce-channels/amazon/release-notes.html">Amazon-Sales Channel</a></li>
             <li><a href="https://experienceleague.adobe.com/docs/commerce-merchant-services/catalog-service/release-notes.html">Catalogusservice</a></li>
             <li><a href="https://experienceleague.adobe.com/docs/commerce-channels/channel-manager/release-notes.html">Kanaalmanager (Marketplace-verkoop van het merk Walmart)</a></li>
             <li><a href="https://experienceleague.adobe.com/docs/commerce-merchant-services/experience-platform-connector/release-notes.html">Experience Platform Connector</a></li>
@@ -61,9 +61,9 @@ Gebruik de volgende lijst om versienota&#39;s en belangrijke informatie met betr
           </ul>
         </td>
       <td><strong>Gereedschappen</strong>
-        <p>Leer over de recentste verbeteringen aan hulpmiddelen die worden ontworpen om het voor u gemakkelijker te maken om Adobe Commerce en software van de Magento Open Source te vinden en te gebruiken.</p>
+        <p>Leer over de recentste verbeteringen aan hulpmiddelen die worden ontworpen om het voor u gemakkelijker te maken om Adobe Commerce en Magento Open Source software te vinden en te gebruiken.</p>
           <ul>
-            <li><a href="https://developer.adobe.com/graphql-mesh-gateway/">API-net voor Adobe APP Builder-ontwikkelaar</a></li>
+            <li><a href="https://developer.adobe.com/graphql-mesh-gateway/">API-net voor APP Builder-ontwikkelaar voor Adobe</a></li>
             <li><a href="https://developer.adobe.com/commerce/events/get-started/release-notes/">Adobe I/O Events voor Adobe Commerce</a></li>
             <li><a href="https://developer.adobe.com/commerce/extensibility/admin-ui-sdk/release-notes/">Admin UI SDK</a></li>
             <li><a href="../../tools/quality-patches-tool/release-notes.md">Gereedschap Kwaliteitspatches</a></li>

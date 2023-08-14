@@ -1,6 +1,6 @@
 ---
 title: Releaseplanning
-description: Leer wanneer Adobe van plan is de release van belangrijke nieuwe functies voor Adobe Commerce aan te kondigen.
+description: Leer wanneer de Adobe van plan is de release van belangrijke nieuwe functies voor Adobe Commerce aan te kondigen.
 exl-id: ae1e09cd-966f-44a3-9e4d-b90bb838429d
 source-git-commit: 12b4f619673414f18d9697450e867681c6cb3194
 workflow-type: tm+mt
@@ -11,9 +11,9 @@ ht-degree: 0%
 
 # Releaseplanning
 
-Adobe streeft voortdurend naar het juiste evenwicht tussen het eenvoudig en voorspelbaar maken van productupgrades en het sneller aanbieden van verbeteringen en nieuwe functies voor vroege gebruikers (zie [versiebeleid](versioning-policy.md)). Het doel van dit schema is om data te geven waarop Adobe van plan is de introductie van belangrijke nieuwe functies aan te kondigen. Deze kenmerken kunnen het hele jaar door variëren. Nochtans, geeft Adobe regelmatig en onophoudelijk verbeteringen voor uitbreidingshulpmiddelen, infrastructuur, en producten SaaS (de diensten) tussen de data uit die op deze pagina worden gespecificeerd.
+Adobe streeft voortdurend naar het juiste evenwicht tussen het eenvoudig en voorspelbaar maken van productupgrades en het sneller aanbieden van verbeteringen en nieuwe functies voor vroege gebruikers (zie [versiebeleid](versioning-policy.md)). Het doel van dit schema is de data te bepalen waarop de Adobe van plan is de introductie van belangrijke nieuwe functies aan te kondigen. Deze kenmerken kunnen het hele jaar door variëren. Adobe geeft echter regelmatig en voortdurend verbeteringen door voor uitbreidbaarheidsinstrumenten, -infrastructuur en SaaS-producten (services) tussen de data die op deze pagina zijn vermeld.
 
-Adobe-releases [patches](versioning-policy.md#patch-release) voor elke ondersteunde releaselijn van de kern-Adobe Commerce PHP-toepassing. De versies van de flard zijn kansen om de kern codebase te bevorderen om uw platform veilig, betrouwbaar, en prestatieshoog te houden. Functies zijn onafhankelijk van de kerncodebase en zijn beschikbaar via [externe module, extensie, gereedschap of webservice](versioning-policy.md#extensibility-infrastructure-and-services-release).
+Adobe [patches](versioning-policy.md#patch-release) voor elke ondersteunde releaselijn van de kern-Adobe Commerce PHP-toepassing. De versies van de flard zijn kansen om de kern codebase te bevorderen om uw platform veilig, betrouwbaar, en prestatieshoog te houden. Functies zijn onafhankelijk van de kerncodebase en zijn beschikbaar via [externe module, extensie, gereedschap of webservice](versioning-policy.md#extensibility-infrastructure-and-services-release).
 
 >[!NOTE]
 >
