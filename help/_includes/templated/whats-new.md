@@ -1,7 +1,7 @@
 ---
-source-git-commit: e3d65a1dcb377d9bed9b27d16e057cfbb1522644
+source-git-commit: 34a0a124aeacce6cc905f979cf3f18cb2405f76e
 workflow-type: tm+mt
-source-wordcount: '274'
+source-wordcount: '441'
 ht-degree: 0%
 
 ---
@@ -10,6 +10,26 @@ ht-degree: 0%
 ## Nieuwe functies
 
 Meer informatie over nieuwe documentatie en belangrijke updates voor bestaande documentatie.
+
+### 10 augustus 2023
+
+<table style="table-layout:auto;">
+  <thead>
+    <tr>
+      <th>Beschrijving</th>
+      <th>Type</th>
+      <th>Bron</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><p>Gepubliceerd <a href="https://experienceleague.adobe.com/docs/commerce-operations/tools/quality-patches-tool/release-notes.html">releaseopmerkingen</a> voor de release van het pakket 1.1.36 Quality Patches Tool (QPT).</p>
+</td>
+      <td>belangrijke update</td>
+      <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/778890d5840669df958e84381c2aade70a492454">778890</a> (toewijzen)</td>
+    </tr>
+  </tbody>
+</table>
 
 ### 8 augustus 2023
 
@@ -22,6 +42,18 @@ Meer informatie over nieuwe documentatie en belangrijke updates voor bestaande d
     </tr>
   </thead>
   <tbody>
+    <tr>
+      <td><p>Bijgewerkt <a href="https://experienceleague.adobe.com/docs/commerce-operations/release/versions.html">uitgebrachte versies</a> met de beveiligingspatches van augustus 2023.</p>
+</td>
+      <td>belangrijke update</td>
+      <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/c9abed3c6ca156cdc19e7231f97cf2a8bd8ab100">c9abed</a> (toewijzen)</td>
+    </tr>
+    <tr>
+      <td><p>Informatie over de beveiligingshotfix van Adobe Commerce 8 augustus 2023 is toegevoegd aan de releaseopmerkingen voor Adobe Commerce 2.4.4-p4, 2.4.4-p5, 2.4.5-p3, 2.4.5-p4, 2.4.6-p1 en 2.4.6-p2.  Zie <a href="https://experienceleague.adobe.com/docs/commerce-operations/release/notes/overview.html">Opmerkingen bij de release voor Adobe Commerce en Magento Open Source</a>.</p>
+</td>
+      <td>belangrijke update</td>
+      <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/623ada901bad9f766451d9c9166e82f1cee85c0d">623ada</a> (toewijzen)</td>
+    </tr>
     <tr>
       <td><p>Opmerkingen bij de release toegevoegd voor Adobe Commerce 2.4.6-p2, 2.4.5-p4 en 2.4.4-p5. Zie <a href="https://experienceleague.adobe.com/docs/commerce-operations/release/notes/overview.html">Opmerkingen bij de release voor Adobe Commerce en Magento Open Source</a>.</p>
 </td>
@@ -39,6 +71,26 @@ Meer informatie over nieuwe documentatie en belangrijke updates voor bestaande d
 </td>
       <td>belangrijke update</td>
       <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/7373980a0648be5e0f7dc4a307074d934f646b24">737398</a> (toewijzen)</td>
+    </tr>
+  </tbody>
+</table>
+
+### 7 augustus 2023
+
+<table style="table-layout:auto;">
+  <thead>
+    <tr>
+      <th>Beschrijving</th>
+      <th>Type</th>
+      <th>Bron</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><p>Extra informatie over <a href="https://experienceleague.adobe.com/docs/commerce-operations/implementation-playbook/infrastructure/cloud/security.html">eindpuntdetectie en -respons</a> op cloudinfrastructuur.</p>
+</td>
+      <td>belangrijke update</td>
+      <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/fd3b93aaa79e84d356217b6adfe7181895e84f07">fd3b93</a> (toewijzen)</td>
     </tr>
   </tbody>
 </table><!-- date_group -->
