@@ -15,13 +15,13 @@ Met de Profilering van de Handel, kunt u:
 
 - Een ingebouwde analyse inschakelen.
 
-   U kunt ingebouwde profiler met Handel gebruiken om taken uit te voeren zoals het analyseren van prestaties. De aard van het profileren hangt van de analytische hulpmiddelen af die u gebruikt. We ondersteunen meerdere indelingen, waaronder HTML. Wanneer u profiler toelaat, `var/profiler.flag` bestand wordt gegenereerd om aan te geven dat profiler is ingeschakeld en configuraties. Als deze optie is uitgeschakeld, wordt dit bestand verwijderd.
+  U kunt ingebouwde profiler met Handel gebruiken om taken uit te voeren zoals het analyseren van prestaties. De aard van het profileren hangt van de analytische hulpmiddelen af die u gebruikt. We ondersteunen meerdere indelingen, waaronder HTML. Wanneer u profiler toelaat, `var/profiler.flag` bestand wordt gegenereerd om aan te geven dat profiler is ingeschakeld en configuraties. Als deze optie is uitgeschakeld, wordt dit bestand verwijderd.
 
 - U kunt afhankelijkheidsgrafieken weergeven op een pagina Handel.
 
-   A _afhankelijkheidsgrafiek_ is een lijst van objecten gebiedsdelen en al hun gebiedsdelen, en alle gebiedsdelen voor die gebiedsdelen, etc.
+  A _afhankelijkheidsgrafiek_ is een lijst van objecten gebiedsdelen en al hun gebiedsdelen, en alle gebiedsdelen voor die gebiedsdelen, etc.
 
-   U zou in het bijzonder geïnteresseerd moeten zijn in de lijst van _ongebruikte afhankelijkheden_, dit zijn objecten die zijn gemaakt omdat ze in een constructor zijn aangevraagd, maar die nooit zijn gebruikt (dat wil zeggen dat geen van de methoden ervan is aangeroepen). Dientengevolge, worden de bewerkertijd en het geheugen besteed om deze gebiedsdelen tot stand te brengen verspild.
+  U zou in het bijzonder geïnteresseerd moeten zijn in de lijst van _ongebruikte afhankelijkheden_, dit zijn objecten die zijn gemaakt omdat ze in een constructor zijn aangevraagd, maar die nooit zijn gebruikt (dat wil zeggen dat geen van de methoden ervan is aangeroepen). Dientengevolge, worden de bewerkertijd en het geheugen besteed om deze gebiedsdelen tot stand te brengen verspild.
 
 De handel verstrekt de basisfunctionaliteit in [`Magento\Framework\Profiler`][profiler].
 
@@ -35,16 +35,16 @@ U kunt de waarde instellen van `MAGE_PROFILER` op de in [De waarde van bootstrap
 
 - `1` om de uitvoer van een specifieke analyse in te schakelen.
 
-   U kunt een van de volgende waarden gebruiken om een specifieke analyse in te schakelen:
+  U kunt een van de volgende waarden gebruiken om een specifieke analyse in te schakelen:
 
    - `csvfile` die [`Magento\Framework\Profiler\Driver\Standard\Output\Csvfile`][csvfile]
    - Andere waarden (behalve `2`), met inbegrip van een lege waarde die gebruikt [`Magento\Framework\Profiler\Driver\Standard\Output\Html`][html]
 
 - `2` om afhankelijkheidsgrafieken in te schakelen.
 
-   Afhankelijkheidsgrafieken worden doorgaans onder aan een pagina weergegeven. In de volgende afbeelding ziet u een gedeelte van de uitvoer:
+  Afhankelijkheidsgrafieken worden doorgaans onder aan een pagina weergegeven. In de volgende afbeelding ziet u een gedeelte van de uitvoer:
 
-   ![Afhankelijkheidsgrafieken](../../assets/configuration/depend-graphs.png)
+  ![Afhankelijkheidsgrafieken](../../assets/configuration/depend-graphs.png)
 
 ## CLI-opdrachten
 
@@ -57,7 +57,7 @@ Gebruik de optie Variabele om afhankelijkheidsgrafieken in te schakelen.
 
 **De analyse in- of uitschakelen**:
 
-1. Meld u aan bij uw Commerce-server.
+1. Meld u aan bij uw commerciële server.
 1. Verandering in uw de installatiemap van de Handel.
 1. Als eigenaar van het bestandssysteem schakelt u de analyse in:
 

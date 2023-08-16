@@ -1,6 +1,6 @@
 ---
 title: Laatste verificatie
-description: Controleer of uw Varnish-configuratie op de juiste wijze is ingesteld voor gebruik met de Adobe Commerce-toepassing.
+description: Controleer of uw Varnish-configuratie correct is ingesteld voor gebruik met de Adobe Commerce-toepassing.
 feature: Configuration, Cache
 exl-id: 01f28c93-75cd-4969-9142-b8dac0aa2adb
 source-git-commit: a2bd4139aac1044e7e5ca8fcf2114b7f7e9e9b68
@@ -18,7 +18,7 @@ Nu gebruikt u de `default.vcl` gegenereerd voor u door Handel, kunt u enkele laa
 
 Gebruiken `curl` of een ander hulpprogramma om HTTP-antwoordheaders weer te geven wanneer u een willekeurige handelspagina in een webbrowser bezoekt.
 
-Controleer eerst of u [ontwikkelmodus](../cli/set-mode.md#change-to-developer-mode); anders ziet u de koppen niet.
+Controleer eerst of u [ontwikkelmodus](../cli/set-mode.md#change-to-developer-mode)Anders ziet u de koppen niet.
 
 Bijvoorbeeld:
 

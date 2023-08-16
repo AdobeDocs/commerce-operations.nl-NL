@@ -1,6 +1,6 @@
 ---
 title: Overzicht van installatie op locatie
-description: Leer over het installatieproces voor plaatsingen op-gebouw van Adobe Commerce en Magento Open Source.
+description: Leer over het installatieproces voor plaatsingen van Adobe Commerce en Magento Open Source op-gebouw.
 exl-id: a9f5b241-d05d-462c-8c7f-479a264c988f
 source-git-commit: 95ffff39d82cc9027fa633dffedf15193040802d
 workflow-type: tm+mt
@@ -13,7 +13,7 @@ ht-degree: 0%
 
 >[!NOTE]
 >
->Het volgende diagram biedt een overzicht op hoog niveau van _**ter plaatse**_ installaties van Adobe Commerce en Magento Open Source:
+>Het volgende diagram biedt een overzicht op hoog niveau van _**ter plaatse**_ Installaties van Adobe Commerce en Magento Open Source:
 
 ![Hoe installatie werkt](../assets/installation/install-diagram-24.svg)
 

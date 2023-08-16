@@ -61,7 +61,7 @@ In het volgende voorbeeld kunt u de bestaande cachesectie in het dialoogvenster 
 ],
 ```
 
-Waar:
+Waarbij:
 
 - `backend` is de L2 geheim voorgeheugenimplementatie.
 - `backend_options` is de L2 geheim voorgeheugenconfiguratie.
@@ -72,11 +72,11 @@ Waar:
       - `cache_dir` is een bestandcache-specifieke optie voor de map waarin de lokale cache is opgeslagen.
    - `use_stale_cache` is een vlag die het gebruik van het geheime voorgeheugen van de waliteit toelaat of onbruikbaar maakt.
 
-Adobe raadt u aan Redis te gebruiken voor externe caching (`\Magento\Framework\Cache\Backend\Redis`) en `Cm_Cache_Backend_File` voor de lokale caching van gegevens in gedeeld geheugen, die gebruiken: `'local_backend_options' => ['cache_dir' => '/dev/shm/']`
+Adobe raadt aan Redis te gebruiken voor externe caching (`\Magento\Framework\Cache\Backend\Redis`) en `Cm_Cache_Backend_File` voor de lokale caching van gegevens in gedeeld geheugen, die gebruiken: `'local_backend_options' => ['cache_dir' => '/dev/shm/']`
 
-Adobe raadt het gebruik van de [`cache preload`](redis-pg-cache.md#redis-preload-feature) Deze functie heeft een drastische vermindering van de druk op Redis tot gevolg. Vergeet niet het achtervoegsel &#39;:hash&#39; toe te voegen voor toetsen die vooraf worden geladen.
+Adobe beveelt het gebruik van de [`cache preload`](redis-pg-cache.md#redis-preload-feature) Deze functie heeft een drastische vermindering van de druk op Redis. Vergeet niet het achtervoegsel &#39;:hash&#39; toe te voegen voor toetsen die vooraf worden geladen.
 
-## Opties voor statische cache
+## Cacheopties voor stijl
 
 Beginnen met [!DNL Commerce] 2.4 `use_stale_cache` deze optie kan in bepaalde specifieke gevallen de prestaties verbeteren.
 
@@ -84,7 +84,7 @@ Over het algemeen, is de handel-off met vergrendelingswachten aanvaardbaar van d
 
 Stale cache werkt alleen met een L2-cache. Met een verouderde cache kunt u een verouderde cache verzenden, terwijl een nieuwe cache parallel wordt gegenereerd. Als u een verouderde cache wilt inschakelen, voegt u `'use_stale_cache' => true` om config van het L2 geheime voorgeheugen te hoogste.
 
-Adobe raadt aan de `use_stale_cache` optie alleen voor cachetypen die er het meest van profiteren, zoals:
+Adobe beveelt aan de `use_stale_cache` optie alleen voor cachetypen die er het meest van profiteren, zoals:
 
 - `block_html`
 - `config_integration_api`

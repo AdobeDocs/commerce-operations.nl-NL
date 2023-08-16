@@ -50,11 +50,11 @@ A: Het hangt af van het platform en de architectuur. Er zijn veel variabelen, en
 
 V: Hoeveel kost een upgrade?
 
-A: Het hangt weer af van uw huidige situatie en uw vereisten voor uw nieuwe site. Het goede nieuws is dat de partners en de ontwikkelaars over het algemeen vertrouwd en met uw platform van de Handel zijn geworden, verbeteringskosten en projectlengten zijn gedaald. Wij adviseren het raadplegen met uw Partner van de Oplossing voor een schatting.
+A: Ook hier is het afhankelijk van uw huidige situatie en uw vereisten voor uw nieuwe site. Het goede nieuws is dat de partners en de ontwikkelaars over het algemeen vertrouwd en met uw platform van de Handel zijn geworden, verbeteringskosten en projectlengten zijn gedaald. Wij adviseren het raadplegen met uw Partner van de Oplossing voor een schatting.
 
-V: Zijn Adobe Commerce 2-versies van mijn Adobe Commerce 1-extensies beschikbaar?
+V: Zijn Adobe Commerce 2 versies van mijn Adobe Commerce 1 extensies beschikbaar?
 
-A: Vrijwel alle bedrijfskritieke behoeften zijn gedekt. Van inhoud en aanpassingen, de verscheping en de vervulling aan plaatsoptimalisering, hebben wij een drastische toename van het aantal, en de diversiteit, van uitbreidingen in de Commerce Marketplace gezien aangezien de handels adoptie van, en partnervertrouwdheid met Adobe Commerce is gegroeid.
+A: Vrijwel alle bedrijfskritieke behoeften zijn gedekt. Van inhoud en aanpassingen en verzendingen en voltooiing tot optimalisering van de site, hebben we een dramatische toename gezien van het aantal en de verscheidenheid aan uitbreidingen in de Commerce Marketplace, aangezien de commerciële toepassing van Adobe Commerce en de partnervertrouwdheid met zijn toegenomen.
 
 Voorbeelden van toonaangevende wereldwijde technologiebedrijven die extensies hebben gemaakt, zijn:
 
@@ -69,7 +69,7 @@ Voorbeelden van toonaangevende wereldwijde technologiebedrijven die extensies he
 - Celebros
 - Logicbroker
 
-Bovendien zorgen kwaliteitscontroles die voor alle extensies worden uitgevoerd voor een consistente hoge productkwaliteit. Het is dus zeer waarschijnlijk dat de extensie of een alternatief van hoge kwaliteit voor de extensie al in Commerce Marketplace staat.
+Bovendien zorgen kwaliteitscontroles die voor alle extensies worden uitgevoerd voor een consistente hoge productkwaliteit. Het is dus zeer waarschijnlijk dat de extensie of een alternatief van hoge kwaliteit voor de extensie al in Commerce Marketplace is.
 
 Veel handelaren hebben vastgesteld dat de native mogelijkheden in Adobe Commerce hun behoefte aan en hun afhankelijkheid van extensies hebben verminderd, de ontwikkeling en het onderhoud hebben vereenvoudigd en de algehele prestaties hebben verbeterd. Als u niet reeds hebt, adviseren wij dat u zich in grondige verbeteringsplanning buigt om deze soorten kansen te ontdekken.
 

@@ -34,7 +34,7 @@ ht-degree: 0%
 - Strategie {#strategy}
    - [Handelsstrategie](strategy/commerce.md)
    - [Focus](strategy/focus.md)
-   - [Inhoudsstrategie](strategy/content.md)
+   - [Content strategy](strategy/content.md)
    - [Looptijd](strategy/maturity.md)
 - Proces {#process}
    - [Orderbeheer](process/order-management.md)
@@ -58,7 +58,7 @@ ht-degree: 0%
    - [Orderbeheersystemen](product/order-management-systems.md)
    - [Verzending en uitvoering](product/shipping-fulfillment.md)
    - [Betalingsgateways](product/payment-gateways.md)
-   - [Prijzen](product/pricing.md)
+   - [Prijsstelling](product/pricing.md)
    - [Productafbeeldingen](product/images.md)
    - [Uitcheckstromen en -processen](product/checkout.md)
    - [Dynamisch prijsbeheer](product/dynamic-pricing.md)

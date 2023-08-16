@@ -1,6 +1,6 @@
 ---
 title: Wijzigingen migreren
-description: Leer hoe u alleen gegevens kunt migreren die zijn gewijzigd sinds de laatste Magento 1-gegevensmigratie met de [!DNL Data Migration Tool].
+description: Leer hoe u alleen gegevens kunt migreren die zijn gewijzigd sinds uw laatste Magento 1-gegevensmigratie met de [!DNL Data Migration Tool].
 exl-id: c300c567-77d3-4c25-8b28-a7ae4ab0092e
 topic: Commerce, Migration
 source-git-commit: e83e2359377f03506178c28f8b30993c172282c7
@@ -12,7 +12,7 @@ ht-degree: 0%
 
 # Wijzigingen migreren
 
-Met het gereedschap Incrementele migratie installeert u catalogustabellen (met voorvoegsel) `m2_cl_*`) en triggers (voor het bijhouden van wijzigingen) in de Magento 1-database tijdens de [migratie van gegevens](data.md). Deze overzichtstabellen en trekkers zijn essentieel om ervoor te zorgen dat u slechts de veranderingen migreert die in Magento 1 worden aangebracht sinds de laatste tijd u gegevens migreerde. Deze wijzigingen zijn:
+Met het gereedschap Incrementele migratie installeert u catalogustabellen (met voorvoegsel) `m2_cl_*`) en triggers (voor het bijhouden van wijzigingen) in de database van Magento 1 tijdens de [migratie van gegevens](data.md). Deze overzichtstabellen en trekkers zijn essentieel om ervoor te zorgen dat u slechts de veranderingen migreert die in Magento 1 worden aangebracht sinds de laatste tijd u gegevens migreerde. Deze wijzigingen zijn:
 
 * Gegevens die klanten via winkel hebben toegevoegd (bestellingen, revisies en wijzigingen in klantprofielen)
 
@@ -38,22 +38,22 @@ Voer de volgende handelingen uit om de migratie van incrementele wijzigingen te 
 bin/magento migrate:delta [-r|--reset] [-a|--auto] {<path to config.xml>}
 ```
 
-Waar:
+Waarbij:
 
 * `[-r|--reset]` is een optioneel argument dat de migratie vanaf het begin start. U kunt dit argument gebruiken voor het testen van migratie.
 
 * `[-a|--auto]` is een optioneel argument dat voorkomt dat de migratie stopt wanneer integriteitscontroles worden uitgevoerd.
 
-* `{<path to config.xml>}` is het absolute pad van het bestandssysteem naar `config.xml`; dit argument is vereist .
+* `{<path to config.xml>}` is het absolute pad van het bestandssysteem naar `config.xml`; dit argument is vereist.
 
 >[!NOTE]
 >
->Incrementele migratie is een continu proces; deze start automatisch om de 5 seconden opnieuw op. Gebruik CTRL-C om het migratieproces af te breken.
+>De stijgende migratie is een ononderbroken proces; het begint automatisch om de 5 seconden opnieuw. Gebruik CTRL-C om het migratieproces af te breken.
 
 
 ## Gegevens migreren die door externe extensies zijn gemaakt
 
-In de `Delta` de [!DNL Data Migration Tool] migreert gegevens die slechts door Magento-modules worden gecreeerd en is niet verantwoordelijk voor de code of de uitbreidingen die door derdeontwikkelaars worden gemaakt. Als deze uitbreidingen gegevens in het storefront gegevensbestand creeerden en de handelaar deze gegevens in Magento 2 willen hebben — config dossiers van [!DNL Data Migration Tool] moeten worden gecreëerd en dienovereenkomstig worden gewijzigd.
+In de `Delta` de [!DNL Data Migration Tool] migreert gegevens die slechts door de eigen modules van het Magento worden gecreeerd en is niet verantwoordelijk voor de code of de uitbreidingen die door derdeontwikkelaars worden gemaakt. Als deze uitbreidingen gegevens in het storefront gegevensbestand creeerden en de handelaar deze gegevens in Magento 2 willen hebben — config dossiers van [!DNL Data Migration Tool] moeten worden gecreëerd en dienovereenkomstig worden gewijzigd.
 
 Als een extensie eigen tabellen heeft en u de wijzigingen voor deltabigratie moet bijhouden, voert u de volgende stappen uit:
 

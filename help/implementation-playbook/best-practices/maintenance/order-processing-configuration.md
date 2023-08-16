@@ -30,7 +30,7 @@ Naarmate het ordervolume toeneemt op uw Commerce-sites, kunt u de prestaties van
 
 De stappen om asynchrone ordeverwerking toe te laten hangen van de plaatsingswijze af:
 
-- Voor Adobe Commerce op wolkeninfrastructuur en op gebiedsplaatsen op Productiemodus, gebruik het volgende bevel van Magento CLI om asynchrone indexering toe te laten:
+- Voor Adobe Commerce op wolkeninfrastructuur en op gebiedsplaatsen op Productiemodus, gebruik het volgende Magento CLI bevel om asynchrone indexering toe te laten:
 
   ```php
   php bin/magento config:set dev/grid/async_indexing 1

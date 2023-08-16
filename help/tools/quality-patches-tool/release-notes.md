@@ -11,7 +11,7 @@ ht-degree: 0%
 
 # Opmerkingen bij de release
 
-De [[!DNL Quality Patches Tool]](https://github.com/magento/quality-patches) levert afzonderlijke patches die door Adobe en de Magento Open Source-gemeenschap zijn ontwikkeld. Hiermee kunt u algemene informatie over alle afzonderlijke patches die beschikbaar zijn voor de geïnstalleerde versie van Adobe Commerce of Magento Open Source, toepassen, herstellen en weergeven. U kunt patches toepassen op Adobe Commerce- en Magento Open Source-projecten, ongeacht wie de patch heeft ontwikkeld. U kunt bijvoorbeeld een patch toepassen die door de gemeenschap is ontwikkeld op Adobe Commerce-projecten.
+De [[!DNL Quality Patches Tool]](https://github.com/magento/quality-patches) levert afzonderlijke patches die door de Adobe en de Magento Open Source gemeenschap zijn ontwikkeld. Hiermee kunt u algemene informatie over alle afzonderlijke patches die beschikbaar zijn voor de geïnstalleerde versie van Adobe Commerce of Magento Open Source, toepassen, herstellen en bekijken. U kunt patches toepassen op Adobe Commerce- en Magento Open Source-projecten, ongeacht wie de patch heeft ontwikkeld. U kunt bijvoorbeeld een patch toepassen die door de gemeenschap is ontwikkeld op Adobe Commerce-projecten.
 
 >[!INFO]
 >
@@ -26,9 +26,9 @@ De [[!DNL Quality Patches Tool]](https://github.com/magento/quality-patches) lev
 * **ACSD-53239** (voor Adobe Commerce en Magento Open Source >=2.4.3 &lt; 2.4.6) - Hiermee wordt het probleem verholpen waarbij de index van de inventaris alle caches in de modus Update on Schedule wist.
 * **ACSD-50887** (voor Adobe Commerce en Magento Open Source >=2.4.0 &lt;2.4.7) - Hiermee wordt het probleem opgelost waarbij de eigenschap van het productkenmerk *[!UICONTROL Use in Search Results Layered Navigation]* kan worden ingesteld op *Ja* zonder *[!UICONTROL Use in search]* optie ingesteld op *Ja*.
 * **ACSD-51846** (voor Adobe Commerce en Magento Open Source >=2.4.3-p2 &lt;2.4.6) - Hiermee wordt het *Interne fout* probleem dat zich voordoet omdat niet alle niveaus van REST API-payload zijn gevalideerd.
-* **ACSD-52906** (voor Adobe Commerce >=2.3.7 &lt;2.4.7) - Hiermee wordt het probleem verholpen waarbij het X-Magento-Vary-cookie onjuist is ingesteld voor aangemelde klanten die tot hetzelfde klantensegment behoren, wat leidt tot onjuiste caching voor sommige pagina&#39;s.
+* **ACSD-52906** (voor Adobe Commerce >=2.3.7 &lt;2.4.7) - Hiermee wordt het probleem verholpen waarbij het cookie X-Magento-Vary onjuist is ingesteld voor aangemelde klanten die tot hetzelfde klantensegment behoren, waardoor sommige pagina&#39;s in het cachegeheugen worden geplaatst.
 * **ACSD-52736** (voor Adobe Commerce en Magento Open Source >=2.3.7 &lt;2.4.6) - Hiermee wordt het probleem verholpen waarbij een *Regel voor winkelprijs* die eisen voor configureerbare producthoeveelheid omvat, werkt niet zoals verwacht.
-* **ACSD-47875** (voor Adobe Commerce en Magento Open Source >=2.3.7 &lt;2.4.7) - Hiermee wordt het probleem verholpen dat gebruikers met beheerdersrechten geen product uit de beheerdersruimte aan een klantenkar kunnen toevoegen voor een bepaald weergavebereik met voorraadbeheer.
+* **ACSD-47875** (voor Adobe Commerce en Magento Open Source >=2.3.7 &lt;2.4.7) - Hiermee wordt het probleem verholpen waarbij gebruikers van de beheerder geen product uit de beheerdersruimte aan een winkelwagentje kunnen toevoegen voor een bepaald weergavebereik met voorraadbeheer.
 * **ACSD-53176** (voor Adobe Commerce >=2.3.7 &lt;2.4.5) - Hiermee wordt het probleem opgelost waarbij *Regel voor verwante producten* with *is een van* voorwaarde komt niet overeen met producten.
 * **ACSD-51666** (voor Adobe Commerce en Magento Open Source >=2.3.7 &lt;2.4.7) - Hiermee wordt de fout gecorrigeerd *De sessie is verlopen. Meld u opnieuw aan.* dat gebeurt nadat een klant probeert aan login.
 * Nieuwe versies toegevoegd voor MDVA-39305-v2.
@@ -46,9 +46,9 @@ De [[!DNL Quality Patches Tool]](https://github.com/magento/quality-patches) lev
 * **ACSD-52398** (voor Adobe Commerce en Magento Open Source >=2.4.0 &lt;2.4.7) - Hiermee wordt de fout gecorrigeerd *De gevraagde hoeveelheid is niet beschikbaar* dit gebeurt wanneer wordt geprobeerd de hoeveelheid van een gebundeld product in het winkelwagentje bij te werken.
 * **ACSD-52786** (voor Adobe Commerce en Magento Open Source >=2.4.5 &lt;2.4.6) - Hiermee wordt het probleem verholpen waarbij een catalogusregelvoorwaarde *SKU is* van toepassing op alle producten die beginnen met de gegeven SKU.
 * **ACSD-52921** (voor Adobe Commerce en Magento Open Source >=2.4.5 &lt;2.4.7) - Hiermee wordt het probleem verholpen waarbij een interne fout optreedt wanneer GraphQL om cartdetails vraagt wanneer er een product in het winkelwagentje zit dat kan worden geconfigureerd.
-* **ACSD-51683** (voor Adobe Commerce en Magento Open Source >=2.4.6 &lt;2.4.7) - Hiermee wordt het probleem opgelost waarbij een aanpasbare optie niet aan het winkelwagentje kan worden toegevoegd met GraphQL.
+* **ACSD-51683** (voor Adobe Commerce en Magento Open Source >=2.4.6 &lt;2.4.7) - Hiermee wordt het probleem verholpen waarbij een aanpasbare optie niet aan het winkelwagentje kan worden toegevoegd met GraphQL.
 * **ACSD-52133** (voor Adobe Commerce en Magento Open Source >=2.4.6 &lt;2.4.7) - Hiermee wordt het probleem verholpen waarbij een klantenaccount niet kan worden opgeslagen na een upgrade.
-* **ACSD-52202** (voor Adobe Commerce en Magento Open Source >=2.4.3 &lt;2.4.7) - Hiermee wordt het probleem opgelost waarbij de verkoopbare hoeveelheid van de standaardvoorraad ten onrechte verandert in 0 wanneer een niet-standaardvoorraad wordt gewijzigd in 0 qty op bestelling.
+* **ACSD-52202** (voor Adobe Commerce en Magento Open Source >=2.4.3 &lt;2.4.7) - Hiermee wordt het probleem opgelost waarbij de verkoopbare hoeveelheid van de standaardvoorraad ten onrechte verandert in 0 wanneer een niet-standaardvoorraad wordt gewijzigd in 0 qty als aan de order wordt voldaan.
 * **ACSD-51265** (voor Adobe Commerce en Magento Open Source >=2.4.2 &lt;2.4.7) - Het probleem verhelpen met `catalog_product_price` de prestaties te verbeteren wanneer het systeem te veel gebundelde producten bevat.
 * **ACSD-52831** (voor Adobe Commerce >=2.3.7 &lt;2.4.7) - Hiermee wordt het probleem opgelost waarbij klanten geen verhandelbare prijsbestellingen kunnen plaatsen wanneer [!DNL Google reCAPTCHA v3 Invisible] is ingeschakeld.
 * **ACSD-51845** (voor Adobe Commerce en Magento Open Source >=2.4.4 &lt;2.4.7) - Hiermee wordt het probleem verholpen waarbij volgende producten met prijzen op lagen en verschillende kenmerksets niet via asynchrone bulksgewijze REST API kunnen worden bijgewerkt.
@@ -66,7 +66,7 @@ De [[!DNL Quality Patches Tool]](https://github.com/magento/quality-patches) lev
 * **ACSD-50813** (voor Adobe Commerce >=2.4.5 &lt;2.4.7) - Hiermee wordt het probleem opgelost dat Admin niet in staat was gebundelde producten met een schuine streep in de SKU toe te voegen met de [!UICONTROL Add Products by SKU] functionaliteit voor de beheervolgorde.
 * **ACSD-51630** (voor Adobe Commerce en Magento Open Source >=2.4.3 &lt;2.4.7) - Hiermee wordt het probleem verholpen waarbij het downloaden van beheerpagina&#39;s wordt vertraagd door een grote hoeveelheid systeemberichten.
 * **ACSD-51853** (voor Adobe Commerce en Magento Open Source >=2.4.1 &lt;2.4.7) - Hiermee wordt het probleem verholpen waarbij geen gekopieerde tekststijlen worden toegepast bij gebruik van de optie [!UICONTROL Page Builder].
-* **ACSD-52160** (voor Adobe Commerce en Magento Open Source >=2.4.4 &lt;2.4.7) - Hiermee wordt het probleem opgelost waarbij het resultaat van de productvalidatie ten opzichte van de regel van de winkelwagenprijs niet correct is geëvalueerd op basis van de regel &#39;Als een artikel in de winkelwagentje is GEVONDEN/NIET is GEVONDEN met Al/een van deze voorwaarden is waar&#39;.
+* **ACSD-52160** (voor Adobe Commerce en Magento Open Source >=2.4.4 &lt;2.4.7) - Hiermee wordt het probleem opgelost waarbij het resultaat van de productvalidatie aan de hand van de regel van de kartprijs niet correct is beoordeeld op basis van de regel &quot;Als een artikel in de winkelwagentje is GEVONDEN/NIET is GEVONDEN met Al/een van deze voorwaarden true&quot;.
 * **ACSD-51636** (voor Adobe Commerce >=2.4.5 &lt;2.4.7) - Hiermee wordt het probleem verholpen waarbij de bedrijfsbeheerder geen nieuwe gebruikers kan toevoegen uit de sectie voor de klantenaccount, ondanks dat hij over alle benodigde rollen en machtigingen beschikt.
 * **ACSD-51739** (voor Adobe Commerce >=2.4.6 &lt;2.4.7) - Hiermee wordt het probleem verholpen waarbij een fout wordt geretourneerd wanneer de fout `structure_id` wordt gevraagd in een CompanyTeam GraphQL- verzoek.
 * **ACSD-51857** (voor Adobe Commerce en Magento Open Source >=2.4.0 &lt;2.4.7) - Hiermee wordt het probleem opgelost waarbij de trage prestaties van het `aggregate_sales_report_bestsellers_data` cron report on large sales_order en `sales_order_item` databasetabellen zijn het gevolg van de manier waarop de hoofdgegevensquery is geschreven.
@@ -78,15 +78,15 @@ De [[!DNL Quality Patches Tool]](https://github.com/magento/quality-patches) lev
 
 ## v1.1.33 {#v1-1-33}
 
-* **ACSD-50478** (voor Adobe Commerce en Magento Open Source >=2.4.0 &lt;2.4.5) - lost het gegevensbestandterugschroeven bevel voor een geval op wanneer de stortplaats van DB trekkers en een *scheidingsteken* SQL-opdracht.
+* **ACSD-50478** (voor Adobe Commerce en Magento Open Source >=2.4.0 &lt;2.4.5) - bevestigt het gegevensbestand terugschroeven van prijzen bevel voor een geval wanneer de stortplaats van DB trekkers en een *scheidingsteken* SQL-opdracht.
 * **ACSD-50512** (voor Adobe Commerce >=2.4.5 &lt;2.4.7) - Hiermee wordt het *Fout: de downloadbare koppeling heeft geen betrekking op het product. Controleer de koppeling en probeer het opnieuw.* fout die optreedt bij het bijwerken van de begindatum voor een downloadbare update voor productplaatsing.
-* **ACSD-50949** (voor Adobe Commerce en Magento Open Source >=2.4.2 &lt;2.4.7) - Hiermee wordt het probleem verholpen waarbij het prijsfilter in Geavanceerd zoeken geen goede resultaten oplevert wanneer het wordt gebruikt langs het SKU-filter.
+* **ACSD-50949** (voor Adobe Commerce en Magento Open Source >=2.4.2 &lt;2.4.7) - Hiermee wordt het probleem verholpen waarbij het prijsfilter in Geavanceerd zoeken geen goede resultaten oplevert bij gebruik langs het SKU-filter.
 * **ACSD-51645** (voor Adobe Commerce en Magento Open Source >=2.4.6 &lt;2.4.7) - Hiermee wordt de gegenereerde fout gecorrigeerd wanneer een nieuwe regel voor winkelprijzen wordt opgeslagen als de extensie `Magento_OfflineShipping` is uitgeschakeld.
 * **ACSD-50895** (voor Adobe Commerce >=2.4.5 &lt;2.4.7) - Hiermee wordt het probleem opgelost waarbij [!DNL Google Analytics] 3 GTM-tags worden niet geactiveerd als [!DNL Google Analytics] 4 GTM is niet geconfigureerd.
 * **ACSD-51102** (voor Adobe Commerce >=2.4.2 &lt;2.4.7) - Hiermee wordt het probleem verholpen waarbij een catalogusregel die op een groot aantal producten wordt toegepast, niet correct wordt geïndexeerd wanneer de regel wordt ingeschakeld door een geplande update.
 * **ACSD-50368** (voor Adobe Commerce en Magento Open Source >= 2.4.3 &lt;2.4.5) - Hiermee wordt het probleem opgelost waarbij de klant `group_id` wordt genegeerd wanneer een klant wordt gemaakt via de Async REST API of de Async Bulk REST API.
 * **ACSD-51497** (voor Adobe Commerce en Magento Open Source >=2.3.7 &lt;2.4.0 || >= 2.4.1 &lt;2.4.7) - Hiermee wordt het probleem verholpen waarbij een klant een cataloguspagina niet kan sorteren op Aangepast kenmerk van het vervolgkeuzetype.
-* **ACSD-51408** (voor Adobe Commerce en Magento Open Source >=2.3.7 &lt; 2.4.7) - Hiermee wordt het probleem opgelost waarbij de status van het orderitem onjuist is ingesteld op *[!UICONTROL Backordered]*.
+* **ACSD-51408** (voor Adobe Commerce en Magento Open Source >=2.3.7 &lt; 2.4.7) - Hiermee wordt het probleem verholpen waarbij de status van het orderitem onjuist is ingesteld op *[!UICONTROL Backordered]*.
 * **ACSD-51735** (voor Adobe Commerce en Magento Open Source >=2.4.4 &lt;2.4.5) - Hiermee wordt het probleem verholpen waarbij de status van het orderitem onjuist is ingesteld op *[!UICONTROL Ordered]* wanneer de productvoorraad *0*.
 * **ACSD-51792** (voor Adobe Commerce en Magento Open Source >=2.4.5 &lt;2.4.6) - Hiermee wordt het probleem verholpen waarbij een pagina niet de immateriële gebeurtenis heeft wanneer [!DNL Google Tag Manager] 4 is ingeschakeld.
 * **ACSD-51471** (voor Adobe Commerce >=2.4.3 &lt;2.4.7) - Hiermee wordt het probleem verholpen waarbij een gebruiker met beheerdersrechten geen geplande update kan opslaan voor een gebundeld product dat gebruikmaakt van een eenvoudig product met een geplande update.
@@ -121,7 +121,7 @@ De [[!DNL Quality Patches Tool]](https://github.com/magento/quality-patches) lev
 ## v1.1.31 {#v1-1-31}
 
 * **ACSD-50345** (voor Adobe Commerce en Magento Open Source >=2.4.3 &lt;2.4.4 || >=2.4.4-p1 &lt;2.4.6) - Hiermee wordt het probleem verholpen waarbij Recaptcha v2 na het indienen van een mislukte betaling niet opnieuw laadt.
-* **ACSD-50817** (voor Adobe Commerce en Magento Open Source >=2.3.7 &lt;2.4.7) - De taak van het Gewas optimaliseert `sales_clean_quotes` om sneller te werken.
+* **ACSD-50817** (voor Adobe Commerce en Magento Open Source >=2.3.7 &lt;2.4.7) - De baan van het Gewas optimaliseert `sales_clean_quotes` om sneller te werken.
 * **ACSD-49392** (voor Adobe Commerce en Magento Open Source >=2.3.7 &lt;2.4.0 || >= 2.4.1 &lt;2.4.7) - Hiermee wordt de kwestie opgelost waarbij de status van de order verandert in een gesloten order na een gedeeltelijke terugbetaling voor een gebundeld product.
 * **ACSD-51036** (voor Adobe Commerce en Magento Open Source >=2.4.4 &lt;2.4.5) - Hiermee wordt het probleem verholpen waarbij de rassenvoorwaarden tijdens gelijktijdige REST API-aanroepen resulteren in een overschrijving van de verzendstatusinformatie in het gedeelte [!UICONTROL Items Ordered] tabel.
 * **ACSD-50858** (voor Adobe Commerce en Magento Open Source >=2.4.4 &lt;2.4.7) - Verbetert de prestaties voor het laden van de inhoud van banners.
@@ -131,7 +131,7 @@ De [[!DNL Quality Patches Tool]](https://github.com/magento/quality-patches) lev
 ## v1.1.30 {#v1-1-30}
 
 * **ACSD-50336** (voor Adobe Commerce en Magento Open Source >=2.4.4-p1 &lt;2.4.4-p3) - Hiermee wordt het probleem verholpen waarbij e-mails met productwaarschuwingen niet worden verzonden wanneer een product weer in voorraad is of de prijs wordt gewijzigd.
-* **ACSD-50367** (voor Adobe Commerce en Magento Open Source >=2.3.7 &lt;2.4.7) - Hiermee wordt het probleem verholpen waarbij het exporteren van het adres van de klant niet werkt wanneer een kenmerk voor een adres van een klant met meerdere keuze zonder waarden wordt gemaakt.
+* **ACSD-50367** (voor Adobe Commerce en Magento Open Source >=2.3.7 &lt;2.4.7) - Hiermee wordt het probleem verholpen waarbij het exporteren van het adres van de klant niet werkt wanneer een attribuut van het klantenadres zonder waarden wordt gecreeerd dat uit meerdere categorieën bestaat.
 * **ACSD-4987** (voor Adobe Commerce en Magento Open Source >=2.3.7 &lt;2.4.7) - Hiermee wordt het probleem verholpen waarbij automatisch afspelen van video niet werkt op mobiele apparaten [!DNL Safari] wanneer de video rechtstreeks aan een extern videobestand is gekoppeld en niet aan een streaming service.
 * **ACSD-50165** (voor Adobe Commerce en Magento Open Source >=2.4.0 &lt;2.4.7) - Hiermee wordt de fout gecorrigeerd *Het bestand kan niet worden verwijderd. Waarschuwing!ontkoppelen: bestand of map bestaat niet* bij het leegmaken van de JS/CSS-cache uit de Admin.
 * **ACSD-49737** (voor Adobe Commerce en Magento Open Source >=2.4.1-p1 &lt;2.4.7) - Hiermee wordt de emissie gecorrigeerd wanneer een coupon onjuist is gemarkeerd als gebruikt na een mislukte kaartbetaling.
@@ -164,7 +164,7 @@ De [[!DNL Quality Patches Tool]](https://github.com/magento/quality-patches) lev
 * **ACSD-50234** (voor Adobe Commerce en Magento Open Source >=2.3.7 &lt;2.4.5) - Hiermee kunt u het probleem oplossen met de verkeerde naam van de klant in het bevestigingsbericht als u een bestelling plaatst met [!DNL PayPal].
 * **ACSD-49960** (voor Adobe Commerce en Magento Open Source >=2.4.5 &lt;2.4.7) - Hiermee wordt het probleem verholpen waarbij filtering op datum niet werkt voor het orderraster van de klant.
 * **ACSD-49849** (voor Adobe Commerce en Magento Open Source >=2.3.7 &lt;2.4.6) - Hiermee kunt u het probleem verhelpen waarbij de e-mail van de klant is vervangen door [!DNL PayPal] e-mail wanneer u een bestelling plaatst met [!DNL PayPal Express] via GraphQL.
-* **ACSD-49839** (voor Adobe Commerce >=2.3.7 &lt;2.4.7) - Hiermee wordt het probleem opgelost waarbij Prijsbepaling en structuur van gedeelde catalogus een fout in Admin veroorzaken wanneer producten enkele of dubbele aanhalingstekens in SKU hebben.
+* **ACSD-49839** (voor Adobe Commerce >=2.3.7 &lt;2.4.7) - Hiermee wordt het probleem opgelost waarbij Prijsbepaling en structuur van gedeelde catalogus een fout veroorzaakt in Admin wanneer producten enkele of dubbele aanhalingstekens in SKU hebben.
 * **ACSD-49970** (voor Adobe Commerce en Magento Open Source >=2.4.5 &lt;2.4.7) - Hiermee wordt een onjuiste afhandeling van GraphQL-fouten gecorrigeerd wanneer [!DNL New Relic] rapportage is ingeschakeld.
 * **ACSD-50260** (voor Adobe Commerce en Magento Open Source >=2.4.5 &lt;2.4.7) - Hiermee wordt het probleem opgelost waarbij de zoekresultaten van GraphQL-producten beperkt blijven tot 10.000 resultaten.
 * **ACSD-48813** (voor Adobe Commerce en Magento Open Source >=2.4.3 &lt;2.4.7) - Hiermee wordt het probleem verholpen waarbij de zoekopdracht geen relevante resultaten oplevert op basis van het zoekgewicht van de kenmerken.
@@ -175,12 +175,12 @@ De [[!DNL Quality Patches Tool]](https://github.com/magento/quality-patches) lev
 * **ACSD-47704** (voor Adobe Commerce en Magento Open Source >=2.3.7 &lt;2.4.7) - Hiermee wordt de kwestie gecorrigeerd waarbij het gebundelde product alleen de prijs van in-voorraad producten weergeeft.
 * **ACSD-49370** (voor Adobe Commerce en Magento Open Source >=2.3.7 &lt;2.4.7) - Hiermee wordt het probleem opgelost waarbij de *Datum en tijd* productkenmerk heeft een *FilterMatchTypeInput* type in GraphQL-schema.
 * **ACSD-48807** (voor Adobe Commerce en Magento Open Source >=2.4.1 &lt;2.4.7) - Hiermee wordt het probleem verholpen waarbij de Revisies van producten van de klant niet via GraphQL worden gefilterd.
-* **ACSD-4943** (voor Adobe Commerce en Magento Open Source >=2.4.3 &lt;2.4.7) - Hiermee wordt het probleem opgelost waarbij het standaardbedrag als subtotaal in het winkelwagentje wordt weergegeven voor een cadeaukaart met een open bedrag.
+* **ACSD-4943** (voor Adobe Commerce en Magento Open Source >=2.4.3 &lt;2.4.7) - Hiermee wordt het probleem opgelost waarbij het standaardbedrag in het winkelwagentje voor cadeaukaarten met een open bedrag als subtotaal wordt weergegeven.
 * **ACSD-48866** (voor Adobe Commerce en Magento Open Source >=2.3.7 &lt;2.4.7) - Hiermee wordt het probleem verholpen waarbij een fout optreedt bij het aanvragen van RSS-feed voor categorieën.
-* **ACSD-48784** (voor Adobe Commerce en Magento Open Source >=2.3.7 &lt;2.4.7) - Hiermee wordt het probleem verholpen waarbij de prijzen van het klantensegment onjuist in de cache worden geplaatst tussen klantengroepen.
+* **ACSD-48784** (voor Adobe Commerce en Magento Open Source >=2.3.7 &lt;2.4.7) - Hiermee wordt het probleem verholpen waarbij de prijzen van het klantensegment onjuist in de cache worden opgeslagen tussen klantengroepen.
 * **ACSD-48857** (voor Adobe Commerce en Magento Open Source >=2.4.3 &lt;2.4.7) - Hiermee wordt het probleem verholpen waarbij een gebruiker geen wijzigingen kan opslaan na bewerking met Page Builder.
 * **ACSD-49065** (voor Adobe Commerce en Magento Open Source >=2.3.7 &lt;2.4.7) - Hiermee wordt het probleem verholpen waarbij prijsaanhalingstekens niet zichtbaar zijn in de beheerder als deze alleen aan de aangepaste voorraad worden toegewezen.
-* **ACSD-49179** (voor Adobe Commerce en Magento Open Source >=2.4.2 &lt;2.4.7) - Hiermee wordt de emissie gecorrigeerd waarbij in het orderrapport onjuiste bedragen worden vermeld in geval van verschillende valuta&#39;s voor verschillende winkels.
+* **ACSD-49179** (voor Adobe Commerce en Magento Open Source >=2.4.2 &lt;2.4.7) - Hiermee wordt de emissie gecorrigeerd waarbij in het orderrapport onjuiste bedragen worden weergegeven in geval van verschillende valuta&#39;s voor verschillende winkels.
 * **ACSD-49286** (voor Adobe Commerce en Magento Open Source >=2.4.3 &lt;2.4.7) - Hiermee wordt het probleem verholpen waarbij een product tweemaal aan een winkelwagentje wordt toegevoegd wanneer meerdere productwidgets op de pagina aanwezig zijn.
 * **ACSD-49574** (voor Adobe Commerce >=2.4.4 &lt;2.4.7) - Hiermee voegt u functionaliteit toe ter ondersteuning van productupdates voor Cadeautjes in een winkelwagentje via GraphQL.
 * Bijgewerkte patch: ACSD-48694.
@@ -202,9 +202,9 @@ De [[!DNL Quality Patches Tool]](https://github.com/magento/quality-patches) lev
 
 ## v1.1.26 {#v1-1-26}
 
-* **ACSD-47937** (voor Adobe Commerce en Magento Open Source 2.4.4) || >=2.4.5 &lt;2.4.6) - Hiermee wordt het probleem opgelost waarbij meldingen van prijsdalingen niet altijd worden verzonden vanwege caching op toepassingsniveau.
-* **ACSD-48661** (voor Adobe Commerce en Magento Open Source >=2.3.7 &lt;2.4.7) - Hiermee wordt de kwestie opgelost waarbij als de kredietlimiet van het bedrijf groter is dan 999, het komma-scheidingsteken het opslaan van het bedrijf verhindert als gevolg van een validatiefout.
-* **ACSD-48773** (voor Adobe Commerce en Magento Open Source >=2.4.2 &lt;2.4.7) - Hiermee wordt het probleem opgelost waarbij de sjabloon voor het plaatsen van bonuspunten in de e-mailwinkel wordt opgehaald uit de verkeerde winkel.
+* **ACSD-47937** (voor Adobe Commerce en Magento Open Source 2.4.4 || >=2.4.5 &lt;2.4.6) - Hiermee wordt het probleem opgelost waarbij meldingen van prijsdalingen niet altijd worden verzonden vanwege caching op toepassingsniveau.
+* **ACSD-48661** (voor Adobe Commerce en Magento Open Source >=2.3.7 &lt;2.4.7) - Hiermee wordt de kwestie opgelost waarbij als de kredietlimiet van het bedrijf groter is dan 999, het komma-scheidingsteken het opslaan van het bedrijf verhindert vanwege een validatiefout.
+* **ACSD-48773** (voor Adobe Commerce en Magento Open Source >=2.4.2 &lt;2.4.7) - Hiermee wordt het probleem opgelost waarbij de sjabloon voor het plaatsen van bonuspunten in de verkeerde winkel wordt opgehaald.
 * **ACSD-48587** (voor Adobe Commerce en Magento Open Source >=2.3.7 &lt;2.4.7) - Hiermee wordt het probleem verholpen waarbij speciale HTML-tekens in de widgetwidgetregels voorkomen dat overeenkomende producten worden weergegeven.
 * **ACSD-48212** (voor Adobe Commerce en Magento Open Source >=2.3.7 &lt;2.4.6) - Hiermee wordt het probleem verholpen waarbij het product door het importeren aan de verkeerde bron wordt toegewezen.
 * **ACSD-4798** (voor Adobe Commerce en Magento Open Source >=2.3.7 &lt;2.4.6) - Hiermee wordt het probleem opgelost waarbij bij het exporteren van producten HTML-tags uit de productbeschrijving van de paginabuilder worden bijgesneden.
@@ -213,12 +213,12 @@ De [[!DNL Quality Patches Tool]](https://github.com/magento/quality-patches) lev
 
 ## v1.1.25 {#v1-1-25}
 
-* **ACSD-48058** (voor Adobe Commerce en Magento Open Source >=2.4.5 &lt;2.4.6) - Hiermee wordt het probleem opgelost waarbij de productprijsherindex niet werkt als het bundelproduct niet aan een website wordt toegewezen.
+* **ACSD-48058** (voor Adobe Commerce en Magento Open Source >=2.4.5 &lt;2.4.6) - Hiermee wordt het probleem opgelost waarbij de productprijsherdex niet werkt als het bundelproduct niet aan een website wordt toegewezen.
 * **ACSD-48262** (voor Adobe Commerce en Magento Open Source >=2.4.5 &lt;2.4.6) - Hiermee wordt het probleem verholpen waarbij producten niet op de voorzijde zichtbaar zijn wanneer de instelling &quot;Alle producten per pagina toestaan&quot; is ingesteld op Ja.
 * **ACSD-48293** (voor Adobe Commerce en Magento Open Source >=2.4.3 &lt;2.4.4) - Hiermee wordt het probleem opgelost waarbij de samengestelde producten uit de voorraad verdwijnen wanneer de onderliggende producten die werden verkocht naar de voorraad worden teruggestuurd.
 * **ACSD-47520** (voor Adobe Commerce en Magento Open Source >=2.4.0 &lt;2.4.6) - Hiermee wordt het probleem opgelost waarbij klanten beloningspunten verliezen wanneer een creditmemo wordt gemaakt.
 * **ACSD-4804** (voor Adobe Commerce en Magento Open Source >=2.4.0 &lt;2.4.4) - Hiermee wordt het probleem opgelost dat het toepassen van meerdere cadeaukaarten op één bestelling met meerdere verzendingen ertoe leidt dat bestellingen niet kunnen worden geplaatst.
-* **ACSD 48300** (voor Adobe Commerce en Magento Open Source >=2.4.0 &lt;2.4.6) - Hiermee wordt het probleem verholpen waarbij geen return kan worden gecreëerd als het configureerbare product wordt verwijderd.
+* **ACSD 48300** (voor Adobe Commerce en Magento Open Source >=2.4.0 &lt;2.4.6) - Hiermee wordt het probleem verholpen waarbij geen return kan worden gemaakt als het configureerbare product wordt verwijderd.
 * **ACSD-47910** (voor Adobe Commerce en Magento Open Source >=2.4.4 &lt;2.4.6) - Oplossingen voor de afgifte van ontbrekende orders, facturen, overbrengingen en creditnota&#39;s in de respectieve entiteitsnetwerken.
 * **ACSD-47292** (voor Adobe Commerce en Magento Open Source >=2.4.4 &lt;2.4.6) - Hiermee wordt het probleem opgelost waarbij gebundelde producten uit de voorraad niet beschikbaar zijn in het GraphQL-antwoord als de &quot;producten uit de voorraad&quot; op Ja is ingesteld.
 * **ACSD-48234** (voor Adobe Commerce en Magento Open Source >=2.4.5 &lt;2.4.6) - Hiermee wordt het probleem verholpen waarbij in het zoekresultaat van de catalogus een onjuist aantal items in de categorie wordt weergegeven wanneer de optie &quot;show out of stock&quot; is ingeschakeld.
@@ -228,15 +228,15 @@ De [[!DNL Quality Patches Tool]](https://github.com/magento/quality-patches) lev
 
 ## v1.1.24 {#v1-1-24}
 
-* **ACSD-45168** (voor Adobe Commerce en Magento Open Source >=2.4.2 &lt;2.4.6) - Hiermee wordt het probleem opgelost waarbij geen SEO-vriendelijke URL&#39;s worden gegenereerd voor producten die *url_key* worden genegeerd op het niveau van de store-view.
+* **ACSD-45168** (voor Adobe Commerce en Magento Open Source >=2.4.2 &lt;2.4.6) - Hiermee wordt het probleem opgelost waarbij geen SEO-vriendelijke URL&#39;s worden gegenereerd voor producten die *url_key* worden genegeerd op winkelweergaveniveau.
 * **ACSD-46865** (voor Adobe Commerce en Magento Open Source >=2.4.4 &lt;2.4.6) - Hiermee wordt het probleem verholpen waarbij het net Verzending en creditmemo niet wordt gevuld wanneer asynchrone indexering is ingeschakeld.
 * **ACSD-47004** (voor Adobe Commerce en Magento Open Source >=2.4.2 &lt;2.4.6) - Hiermee wordt het probleem opgelost dat btw niet wordt geheven op een factuuradres zonder BTW-identificatienummer.
 * **ACSD-47803** (voor Adobe Commerce en Magento Open Source >=2.4.0 &lt;2.4.6) - Hiermee wordt het probleem opgelost waarbij stalen van producten die uit de voorraad kunnen worden geconfigureerd, worden weergegeven als beschikbaar.
 * **ACSD-47137** (voor Adobe Commerce en Magento Open Source >=2.4.4 &lt;2.4.6) - Hiermee verbetert u de laadsnelheid van de afbeeldingsgalerie wanneer de map pub/media erg groot is.
-* **ACSD-46770** (voor Adobe Commerce en Magento Open Source >=2.4.0 &lt;2.4.6) - Hiermee wordt het probleem opgelost waarbij e-mails met bestellingen voor beheerders worden verzonden, zelfs als de *E-mailorderbevestiging* is uitgeschakeld.
+* **ACSD-46770** (voor Adobe Commerce en Magento Open Source >=2.4.0 &lt;2.4.6) - Hiermee kunt u het probleem verhelpen waarbij e-mails met bestellingen voor beheerders worden verzonden, zelfs als de *E-mailorderbevestiging* is uitgeschakeld.
 * **ACSD-4795** (voor Adobe Commerce en Magento Open Source >=2.4.4 &lt;2.4.6) - Hiermee wordt het probleem verholpen waarbij GraphQL de kaartkorting niet correct weergeeft.
 * **ACSD-46617** (voor Adobe Commerce en Magento Open Source >=2.4.0 &lt;2.4.6) - Hiermee wordt het probleem opgelost waarbij de *Doorgaan met afhandeling* de knoop wordt grijs uit zelfs als subtotaal groter is dan gevormd *Minimumbedrag bestelling*.
-* **ACSD-47079** (voor Adobe Commerce en Magento Open Source >=2.4.4 &lt;2.4.5) - Hiermee wordt het probleem opgelost waarbij de voorraadstatus van de voorraad van de voorraad van het subproduct (bundel, gegroepeerd en configureerbaar) niet wordt bijgewerkt wanneer de status van de voorraad van het subproduct verandert via REST API POST /rest/V1/voorraad/bron-items.
+* **ACSD-47079** (voor Adobe Commerce en Magento Open Source >=2.4.4 &lt;2.4.5) - Hiermee wordt het probleem verholpen waarbij de voorraadstatus van samengestelde producten (bundel, gegroepeerd en configureerbaar) niet wordt bijgewerkt wanneer de voorraadstatus van subproducten verandert via REST API POST /rest/V1/voorraad/bron-items.
 * **ACSD-47336** (voor Adobe Commerce en Magento Open Source >=2.4.0 &lt;2.4.6) - Oplossingen *Er is iets misgegaan.* fout bij het negeren van meldingen in Commerce Admin.
 * **ACSD-47559** (voor Adobe Commerce en Magento Open Source >=2.4.0 &lt;2.4.6) - Hiermee wordt het probleem verholpen waarbij het gebied Voorvertoning e-mailsjabloon niet volledig zichtbaar is.
 * **ACSD-47920** (voor Adobe Commerce en Magento Open Source >=2.4.0 &lt;2.4.6) - Hiermee wordt het probleem opgelost waarbij orders via de rest-API als gastgebruiker kunnen worden geplaatst, zelfs als de *Uitchecken door gasten toestaan* is uitgeschakeld.
@@ -257,7 +257,7 @@ De [[!DNL Quality Patches Tool]](https://github.com/magento/quality-patches) lev
 ## v1.1.22 {#v1-1-22}
 
 * **ACSD-4744** (voor Adobe Commerce en Magento Open Source >=2.4.0 &lt;2.4.3) - Hiermee wordt het _Arrayverschuiving benaderen bij waarde van type bool_ fout bij het openen van bepaalde niet bestaande categoriepaden voor bekende producten op PHP 7.4.
-* **ACSD-47332** (voor Adobe Commerce en Magento Open Source >=2.4.0 &lt;2.4.6) - Hiermee wordt het probleem verholpen waarbij de uitsnede mislukt door een fout die alleen wordt gerapporteerd bij een uitvoering tussen 00:00 en 00:59 UTC.
+* **ACSD-47332** (voor Adobe Commerce en Magento Open Source >=2.4.0 &lt;2.4.6) - Hiermee wordt het probleem verholpen waarbij een fout optreedt die alleen wordt gerapporteerd bij een bewerking tussen 00:00 en 00:59 UTC.
 * **ACSD-47280** (voor Adobe Commerce en Magento Open Source >=2.4.0 &lt;2.4.6) - Hiermee wordt het probleem verholpen waarbij het uitschakelen van de functie voor gedeelde catalogus in een bepaald bereik niet correct werkt.
 * **ACSD-47106** (voor Adobe Commerce en Magento Open Source >=2.4.4 &lt;2.4.6) - Hiermee wordt het probleem verholpen waarbij een waarde niet kan worden opgeslagen in een nieuw aangepast kenmerk op een pagina voor het maken van een bedrijf.
 * Bijgewerkte patch: ACSD-45143.
@@ -267,7 +267,7 @@ De [[!DNL Quality Patches Tool]](https://github.com/magento/quality-patches) lev
 * **ACSD-46809** (voor Adobe Commerce en Magento Open Source >=2.4.2 &lt;2.4.6) - Hiermee wordt het probleem opgelost waarbij een gebruiker een fout krijgt bij het toewijzen van een groot aantal productbronnen.
 * **ACSD-46856** (voor Adobe Commerce en Magento Open Source >=2.4.0 &lt;2.4.6) - Verbetert de prestaties die laagprijzen bijwerken via System > Configuration > Import > Advanced Pricing.
 * **ACSD-46541** (voor Adobe Commerce en Magento Open Source >=2.4.0 &lt;2.4.4) - Hiermee wordt het probleem verholpen waarbij een beheerder geen creditnota kan maken als een orderitem wordt verwijderd.
-* **ACSD-46581** (voor Adobe Commerce en Magento Open Source >=2.4.0 &lt;2.4.6) - Hiermee wordt het probleem opgelost waarbij het geraamde belastingtotaal niet wordt bijgewerkt nadat een land in het winkelwagentje is geselecteerd.
+* **ACSD-46581** (voor Adobe Commerce en Magento Open Source >=2.4.0 &lt;2.4.6) - Hiermee wordt het probleem opgelost waarbij het geraamde belastingtotaal niet wordt bijgewerkt na selectie van een land in het winkelwagentje.
 * **ACSD-46618** (voor Adobe Commerce en Magento Open Source >=2.4.0 &lt;2.4.6) - Hiermee wordt het probleem verholpen waarbij de widget voor de productlijst onjuiste prijzen in de cache weergeeft voor een aangemelde klant.
 * **ACSD-46674** (voor Adobe Commerce en Magento Open Source >=2.4.0 &lt;2.4.6) - Hiermee kunt u het probleem verhelpen waarbij aangepaste opties van een afbeeldingstype als HTML worden weergegeven in e-mails van de klant.
 * **ACSD-4698** (voor Adobe Commerce en Magento Open Source >=2.4.4 &lt;2.4.6) - Hiermee wordt het probleem opgelost waarbij de GraphQL &#39;currency&#39;-API-aanvraag NULL-waarden retourneert voor een aangepaste valuta.

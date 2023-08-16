@@ -13,7 +13,7 @@ ht-degree: 0%
 
 >[!NOTE]
 >
->Dit is één in een reeks onderwerpen om Adobe Commerce en Magento Open Source handelaren en ontwikkelaars te helpen de implicaties van de Wet van de Privacy van de Consumentenprivacy van Californië (CCPA) begrijpen. De informatie is uitsluitend bedoeld voor informatieve doeleinden en mag niet worden opgevat als juridisch advies. Raadpleeg uw juridisch adviseur om te bepalen of en hoe uw bedrijf aan om het even welke wettelijke verplichtingen zou moeten voldoen.
+>Dit is één in een reeks onderwerpen om Adobe Commerce en Magento Open Source handelaren en ontwikkelaars te helpen de implicaties van de Wet van de Privacy van de Consumentenprivacy van Californië (CCPA) begrijpen. De informatie is uitsluitend bedoeld voor informatieve doeleinden en mag niet worden opgevat als juridisch advies. Raadpleeg uw juridisch adviseur om te bepalen of en hoe uw bedrijf aan om het even welke wettelijke verplichtingen moet voldoen.
 
 De [CCPA](https://oag.ca.gov/privacy/ccpa) De rechten van consumenten in Californië worden uitgebreid om te bepalen hoe hun persoonlijke gegevens worden verzameld, opgeslagen en gebruikt, waarbij de nadruk ligt op de bescherming van consumenten tegen de ongeoorloofde verkoop of uitwisseling van of hun persoonlijke gegevens. De CCPA is in 2018 vastgesteld en is vanaf 1 januari 2020 van kracht.
 
@@ -26,11 +26,11 @@ De CCPA verleent de consument de volgende nieuwe rechten:
 
 ## CCPA-conformiteit
 
-De ontwikkeling en uitvoering van een plan voor naleving van de CCPA-voorschriften vereist een gecoördineerde inspanning. We moedigen handelaren aan om een interfunctioneel team samen te stellen en de routekaart te volgen die in [CCPA-compatibiliteitshandleiding](https://experienceleague.adobe.com/docs/commerce-admin/start/compliance/privacy/compliance-ccpa.html) hun bedrijf aan de verordening te onderwerpen . Als ontwikkelaar kunt u worden uitgenodigd om als belanghebbende deel te nemen met een nadruk op de stappen 2 tot en met 5 van het proces. Zie de [CCPA-compatibiliteitshandleiding](https://experienceleague.adobe.com/docs/commerce-admin/start/compliance/privacy/compliance-ccpa.html) voor meer informatie .
+De ontwikkeling en uitvoering van een plan voor de naleving van de CCPA-voorschriften vereist een gecoördineerde inspanning. We moedigen handelaren aan om een interfunctioneel team samen te stellen en de routekaart te volgen die in [CCPA-compatibiliteitshandleiding](https://experienceleague.adobe.com/docs/commerce-admin/start/compliance/privacy/compliance-ccpa.html) hun bedrijf aan de verordening te laten voldoen . Als ontwikkelaar kunt u worden uitgenodigd om als belanghebbende deel te nemen met een nadruk op de stappen 2 tot en met 5 van het proces. Zie de [CCPA-compatibiliteitshandleiding](https://experienceleague.adobe.com/docs/commerce-admin/start/compliance/privacy/compliance-ccpa.html) voor meer informatie .
 
 1. Steek een dwars-functioneel team samen om naleving CCPA te richten.
 
-1. **Maak een inventaris van digitale eigenschappen.**
+1. **Maak een inventarisatie van digitale eigenschappen.**
 
 1. **Wijs de de reis van de klant en processen van de gegevensinzameling in kaart.**
 

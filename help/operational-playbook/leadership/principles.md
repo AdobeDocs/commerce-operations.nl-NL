@@ -16,9 +16,9 @@ We raden u aan enkele kernbeginselen van leiderschap te volgen bij het uitvoeren
 ## Sponsoring
 
 ![Handvouwhart](../../assets/playbooks/sponsorship.png)
-Het hebben van een efficiënte uitvoerende sponsor helpt het project tot maximaal succes leiden. Om echt effectief te zijn, zou deze interne uitvoerend sponsor voldoende anciënniteit en invloed binnen het bedrijf moeten hebben om van andere belanghebbenden in de hele organisatie te kopen. Zij zouden ook een hoog niveau van eigenbelang in het succes van de online opslag en een passie voor digitale transformatie en elektronische handel moeten hebben; Het is ook van cruciaal belang te geloven in de manier waarop Adobe Commerce de zaken gaat transformeren.
+Het hebben van een efficiënte uitvoerende sponsor helpt het project tot maximaal succes leiden. Om echt effectief te zijn, zou deze interne uitvoerend sponsor voldoende anciënniteit en invloed binnen het bedrijf moeten hebben om van andere belanghebbenden in de hele organisatie te kopen. Zij zouden ook een hoog niveau van eigenbelang in het succes van de online opslag en een passie voor digitale transformatie en elektronische handel moeten hebben; echt geloofend in hoe Adobe Commerce de zaken gaat veranderen is ook kritiek.
 
-Een effectieve uitvoerende sponsor moet het beheer, de routekaart en de voortdurende groei van het e-commerceplatform waarborgen en in overeenstemming blijven met de bedrijfsstrategie; bescherming tegen tegenstrijdige initiatieven of interne politiek en hulp bij het aanpakken van beperkende factoren zoals hulpbronnen, een tekort aan vaardigheden of budgettaire beperkingen.
+Een effectieve opdrachtgever moet het beheer, de routekaart en de voortdurende groei van het e-commerceplatform waarborgen, in overeenstemming blijven met de bedrijfsstrategie; het beschermen tegen conflicterende initiatieven of interne politiek en helpen bij het aanpakken van eventuele beperkende factoren, zoals een tekort aan middelen, vaardigheden of budgettaire beperkingen.
 
 ## Aanschaffen
 
@@ -59,14 +59,14 @@ De volgende taken en verantwoordelijkheden op hoog niveau zijn gebaseerd op indu
 
 #### Bedrijfs of technologiesponsor
 
-Uiteindelijk verantwoordelijk voor het resultaat van het project en verantwoordelijk voor het veiligstellen van de uitgavenautoriteit en de middelen voor het project.
+Uiteindelijk verantwoordelijk voor het resultaat van het project en verantwoordelijk voor het veiligstellen van de autoriteit en middelen voor het project.
 
 - Vocale en zichtbare kampioen
 - Legitimaliseert en vergroot de geloofwaardigheid van de strategische doelstellingen
 - Is het escalatiepunt voor veranderingen en kwesties buiten de overeengekomen toleranties
 - Hulp bij de betrokkenheid van belanghebbenden waar nodig
 
-#### Bedrijfsmanagers
+#### Bedrijfsleiders
 
 Verantwoordelijk voor het waarborgen dat het project gericht is op het bereiken van zijn doelstellingen en zich houdt aan een kostenbewuste benadering, het leveren van een product dat de voorspelde voordelen bereikt, en het uitvoeren van kosten-batenanalyse voor het bedrijf.
 
@@ -117,10 +117,10 @@ Verantwoordelijkheden inzake bedrijfszekerheid:
 - Evalueert de bedrijfscase voor naleving van bedrijfsstandaarden
 - Controleert de bedrijfscase tegen externe gebeurtenissen
 - Controleert dat het bedrijfsgeval aan door het project wordt gehouden
-- Controleert of het project in overeenstemming blijft met de bedrijfsstrategie en waar blijft bieden voor geld Verantwoordelijkheden van gebruikers
+- Controleert of het project in overeenstemming blijft met de bedrijfsstrategie en waar blijft bieden voor geld Verantwoordelijkheden van de gebruiker
 - Zorgt ervoor dat de specificaties van de behoeften van de gebruikers nauwkeurig, volledig en ondubbelzinnig zijn
-- Evalueert of de oplossing voldoet aan de behoeften van de gebruikers en vordert in de richting van dat doel
-- Adviseert de gevolgen van mogelijke wijzigingen vanuit het oogpunt van de gebruikers
+- Evalueert of de oplossing voldoet aan de behoeften van de gebruikers en vordert naar dat doel
+- Adviseert over de gevolgen van mogelijke wijzigingen vanuit het oogpunt van de gebruikers
 - Zorgt ervoor dat kwaliteitsactiviteiten met betrekking tot producten in alle stadia een passende gebruikersvertegenwoordiging hebben
 - Zorgt ervoor dat de kwaliteitscontroleprocedures correct worden gebruikt om ervoor te zorgen dat de producten aan gebruikersvereisten voldoen
 
@@ -155,6 +155,6 @@ Voor een doeltreffend beheer van een site voor e-commerce moet het projectbeheer
 
 ## Communicatie
 
-Om de organisatie aan boord te krijgen, is het altijd een goed idee om de visie te delen en herhaaldelijk de reden te versterken waarom uw bedrijf in e-commercetechnologie investeert door zowel de klantenvoordelen als bedrijfsvoordelen te verwoorden.
+Om de organisatie aan boord te krijgen, is het altijd een goed idee om de visie te delen en herhaaldelijk de reden te versterken waarom uw bedrijf in e-commercetechnologie door zowel de klantenvoordelen als bedrijfsvoordelen te richten investeert.
 
 Door documentatie te delen, zoals succescasestudy&#39;s van digitale implementaties, kunt u controleren waarom en hoe deze investering de organisatie naar een nieuw niveau brengt. Als u wilt dat de organisatie digitale transformatie omarmt, is het belangrijk dat u de werknemers laat weten dat dit een prioriteit is.

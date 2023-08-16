@@ -42,9 +42,9 @@ Houd rekening met het volgende wanneer u de conversie plant en plant:
 
 U kunt tabellen op één knooppunt in uw cluster omzetten. De wijzigingen worden automatisch overgenomen in de andere serviceknoppen.
 
-1. Gebruik vanuit uw Adobe Commerce op de cloud-infrastructuur SSH om verbinding te maken met knooppunt 1.
+1. Gebruik vanuit uw Adobe Commerce op de cloud-infrastructuur SSH voor verbinding met knooppunt 1.
 
-1. Meld u aan bij MariaDB.
+1. Log in bij MariaDB.
 
 1. Tabellen identificeren die van compacte naar dynamische indeling moeten worden omgezet.
 
@@ -77,7 +77,7 @@ Het converteren van de opslagindeling is anders voor Adobe Commerce Starter- en 
 
 **Opmaak voor tabelopslag converteren voor Adobe Commerce Pro-projecten**
 
-1. Tabellen identificeren die worden gebruikt `MyISAM` opslag.
+1. Tabellen identificeren die `MyISAM` opslag.
 
    ```mysql
    SELECT table_name FROM INFORMATION_SCHEMA.TABLES WHERE engine = 'MyISAM';
@@ -91,7 +91,7 @@ Het converteren van de opslagindeling is anders voor Adobe Commerce Starter- en 
      RENAME TABLE <existing_table> <table_old>;
      ```
 
-   - Een tabel maken die `InnoDB` opslag met behulp van de gegevens uit de bestaande tabel.
+   - Een tabel maken die `InnoDB` opslag met de gegevens uit de bestaande tabel.
 
      ```mysql
      CREATE TABLE <existing_table> ENGINE=InnoDB SELECT * from <table_old>;
@@ -104,7 +104,7 @@ Het converteren van de opslagindeling is anders voor Adobe Commerce Starter- en 
 
 **Opmaak voor tabelopslag converteren voor Adobe Commerce Starter-projecten**
 
-1. Tabellen identificeren die worden gebruikt `MyISAM` opslag.
+1. Tabellen identificeren die `MyISAM` opslag.
 
    ```mysql
    SELECT table_name FROM INFORMATION_SCHEMA.TABLES WHERE engine = 'MyISAM';

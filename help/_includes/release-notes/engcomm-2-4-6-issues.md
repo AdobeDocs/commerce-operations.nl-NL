@@ -7,7 +7,7 @@ ht-degree: 0%
 ---
 # Communautaire bijdragen
 
-| Bijdragend lid van de gemeenschap | Verzoeken afstemmen | Verwante GitHub-problemen |
+| Bijdragend gemeenschapslid | Verzoeken afstemmen | Verwante GitHub-problemen |
 | ------- | ------- | ------- |
 | kreupel | [magento/magento2#36663](https://github.com/magento/magento2/pull/36663) | [magento/magento2#14495](https://github.com/magento/magento2/issues/14495) |
 | handig | [magento/magento2#36529](https://github.com/magento/magento2/pull/36529) | [magento/magento2#36726](https://github.com/magento/magento2/issues/36726) [magento/magento2#35546](https://github.com/magento/magento2/issues/35546) |
@@ -19,11 +19,11 @@ ht-degree: 0%
 | freezy-sk | [magento/magento2#36379](https://github.com/magento/magento2/pull/36379) | [magento/magento2#36640](https://github.com/magento/magento2/issues/36640) |
 | ilnytskyi | [magento/magento2#36370](https://github.com/magento/magento2/pull/36370) | [magento/magento2#36482](https://github.com/magento/magento2/issues/36482) [magento/magento2#36471](https://github.com/magento/magento2/issues/36471) |
 | pykettk | [magento/magento2#36329](https://github.com/magento/magento2/pull/36329) | [magento/magento2#36641](https://github.com/magento/magento2/issues/36641) |
-| vee | [magento/magento2#36304](https://github.com/magento/magento2/pull/36304) | [magento/magento2#36338](https://github.com/magento/magento2/issues/36338) |
+| bloesem | [magento/magento2#36304](https://github.com/magento/magento2/pull/36304) | [magento/magento2#36338](https://github.com/magento/magento2/issues/36338) |
 | asim-blueprintprep | [magento/magento2#36253](https://github.com/magento/magento2/pull/36253) | [magento/magento2#36252](https://github.com/magento/magento2/issues/36252) |
 | sms | [magento/magento2#36241](https://github.com/magento/magento2/pull/36241) | [magento/magento2#36349](https://github.com/magento/magento2/issues/36349) [magento/magento2#29448](https://github.com/magento/magento2/issues/29448) |
 | handig | [magento/magento2#36224](https://github.com/magento/magento2/pull/36224) | [magento/magento2#36334](https://github.com/magento/magento2/issues/36334) |
-| vee | [magento/magento2#36187](https://github.com/magento/magento2/pull/36187) | [magento/magento2#36554](https://github.com/magento/magento2/issues/36554) |
+| bloesem | [magento/magento2#36187](https://github.com/magento/magento2/pull/36187) | [magento/magento2#36554](https://github.com/magento/magento2/issues/36554) |
 | serbynskyi | [magento/magento2#36036](https://github.com/magento/magento2/pull/36036) | [magento/magento2#36337](https://github.com/magento/magento2/issues/36337) |
 | dshevtsov | [magento/magento2#35990](https://github.com/magento/magento2/pull/35990) | [magento/magento2#36230](https://github.com/magento/magento2/issues/36230) [magento/magento2#36651](https://github.com/magento/magento2/issues/36651) |
 | Bashev | [magento/magento2#35986](https://github.com/magento/magento2/pull/35986) | [magento/magento2#35899](https://github.com/magento/magento2/issues/35899) [magento/magento2#36055](https://github.com/magento/magento2/issues/36055) [magento/magento2#36312](https://github.com/magento/magento2/issues/36312) [Smile-SA/elasticsuite#2772](https://github.com/Smile-SA/elasticsuite/issues/2772) [plumrocket/module-layered-navigation-fix-magento-2.4.5#1](https://github.com/plumrocket/module-layered-navigation-fix-magento-2.4.5/issues/1) |
@@ -41,7 +41,7 @@ ht-degree: 0%
 | pykettk | [magento/magento2#35631](https://github.com/magento/magento2/pull/35631) | [magento/magento2#36648](https://github.com/magento/magento2/issues/36648) |
 | pmzandbergen | [magento/magento2#35572](https://github.com/magento/magento2/pull/35572) | [magento/magento2#35579](https://github.com/magento/magento2/issues/35579) [Smile-SA/magento2-module-store-locator#134](https://github.com/Smile-SA/magento2-module-store-locator/issues/134) |
 | osrecio | [magento/magento2#35564](https://github.com/magento/magento2/pull/35564) | [magento/magento2#35568](https://github.com/magento/magento2/issues/35568) |
-| vee | [magento/magento2#35540](https://github.com/magento/magento2/pull/35540) | [magento/magento2#35325](https://github.com/magento/magento2/issues/35325) [magento/magento2#35711](https://github.com/magento/magento2/issues/35711) |
+| bloesem | [magento/magento2#35540](https://github.com/magento/magento2/pull/35540) | [magento/magento2#35325](https://github.com/magento/magento2/issues/35325) [magento/magento2#35711](https://github.com/magento/magento2/issues/35711) |
 | nicka101 | [magento/magento2#35524](https://github.com/magento/magento2/pull/35524) | [magento/magento2#35719](https://github.com/magento/magento2/issues/35719) |
 | nazarklovanych | [magento/magento2#35441](https://github.com/magento/magento2/pull/35441) | [magento/magento2#35558](https://github.com/magento/magento2/issues/35558) |
 | pykettk | [magento/magento2#35436](https://github.com/magento/magento2/pull/35436) | [magento/magento2#35488](https://github.com/magento/magento2/issues/35488) |
@@ -49,7 +49,7 @@ ht-degree: 0%
 | Sental | [magento/magento2#35060](https://github.com/magento/magento2/pull/35060) | [magento/magento2#32177](https://github.com/magento/magento2/issues/32177) |
 | novakivskiy | [magento/magento2#34992](https://github.com/magento/magento2/pull/34992) | [magento/magento2#34991](https://github.com/magento/magento2/issues/34991) |
 | erfanimani | [magento/magento2#34232](https://github.com/magento/magento2/pull/34232) | [magento/magento2#34246](https://github.com/magento/magento2/issues/34246) [magento/magento2#34247](https://github.com/magento/magento2/issues/34247) |
-| vee | [magento/magento2#34186](https://github.com/magento/magento2/pull/34186) | [magento/magento2#34321](https://github.com/magento/magento2/issues/34321) |
+| bloesem | [magento/magento2#34186](https://github.com/magento/magento2/pull/34186) | [magento/magento2#34321](https://github.com/magento/magento2/issues/34321) |
 | handig | [magento/magento2#34117](https://github.com/magento/magento2/pull/34117) | [magento/magento2#36628](https://github.com/magento/magento2/issues/36628) |
 | khoimm92 | [magento/magento2#34061](https://github.com/magento/magento2/pull/34061) | [magento/magento2#35481](https://github.com/magento/magento2/issues/35481) |
 | dudzio12 | [magento/magento2#33892](https://github.com/magento/magento2/pull/33892) | [magento/magento2#33820](https://github.com/magento/magento2/issues/33820) |

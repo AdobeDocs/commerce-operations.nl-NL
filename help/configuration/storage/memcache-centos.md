@@ -16,18 +16,18 @@ In deze sectie vindt u instructies voor het installeren van een memcachegeheugen
 
 >[!INFO]
 >
->Adobe raadt u aan de nieuwste, stabiele memcacheversie te gebruiken (momenteel 3.1.3 voor memcaching).
+>Adobe raadt u aan de nieuwste, stabiele memcaching-versie te gebruiken (momenteel 3.1.3 voor memcaching).
 
 Omdat PHP geen native ondersteuning heeft voor memcache, moet je een extensie installeren voor PHP om deze te kunnen gebruiken. Er zijn twee PHP-extensies beschikbaar en het is belangrijk te decoderen welke extensie moet worden gebruikt:
 
 - `memcache` (_neen d_) - een oudere maar populaire extensie die niet regelmatig wordt onderhouden.
-De `memcache` momenteel extensie _niet_ werken met PHP 7. Zie [PHP-documentatie voor memcache](https://www.php.net/manual/en/book.memcache.php).
+De `memcache` momenteel extensie _niet_ Werken met PHP 7. Zie [PHP-documentatie voor memcache](https://www.php.net/manual/en/book.memcache.php).
 
-   De exacte naam is `php-pecl-memcache` voor CentOS.
+  De exacte naam is `php-pecl-memcache` voor CentOS.
 
 - `memcached` (_met een`d`_) - een nieuwere en onderhouden extensie die compatibel is met PHP 7. Zie [PHP-documentatie voor memcaching](https://www.php.net/manual/en/book.memcached.php).
 
-   De exacte naam is `php-pecl-memcached` voor CentOS.
+  De exacte naam is `php-pecl-memcached` voor CentOS.
 
 ## In cache geplaatst geheugen installeren en configureren op CentOS
 
@@ -86,7 +86,7 @@ Als u in een cache geplaatste bestanden wilt installeren op CentOS, voert u de v
 
 ## Controleren of er in het geheugen is opgeslagen voordat u Commerce installeert
 
-Adobe raadt aan een memcaching te testen om te controleren of deze werkt voordat u Commerce installeert. Dit duurt slechts een paar minuten en kan het oplossen van problemen later vereenvoudigen.
+Adobe raadt aan een memcachegeheugen te testen om te controleren of dit werkt voordat u Commerce installeert. Dit neemt slechts een paar minuten in beslag en kan het oplossen van problemen later vereenvoudigen.
 
 ### Controleren of het in de cache geplaatste item wordt herkend door de webserver
 
@@ -163,7 +163,7 @@ print "got result from memcached\n";
 return 0;
 ```
 
-Wanneer `<memcached hostname or ip>` is ofwel `localhost`, `127.0.0.1`of de hostnaam van de memcache of het IP-adres. De `<memcached port>` de luisterpoort is; standaard `11211`.
+Wanneer `<memcached hostname or ip>` is ofwel `localhost`, `127.0.0.1`of de hostnaam van de memcache of het IP-adres. De `<memcached port>` de luisterpoort is; standaard; `11211`.
 
 Voer het script uit vanaf de opdrachtregel.
 
@@ -185,7 +185,7 @@ Tot slot kunt u de memachetoetsen bekijken gebruikend Telnet:
 telnet localhost <memcache port>
 ```
 
-Bij de herinnering, ga binnen
+Bij de herinnering, ga
 
 ```bash
 stats items

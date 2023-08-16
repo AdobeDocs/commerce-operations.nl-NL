@@ -19,7 +19,7 @@ Voor de beste prestaties gebruikt u de volgende richtlijnen voor het beheer van 
 - Voor versies 2.4.3 en later, verhoogde de verbetering aan verkoopregelmogelijkheden het kartmaximum tot 750.
 
 
-Voor versies 2.3.x - 2.4.2, zijn de verwachte prestaties gebaseerd op de grenzen van het winkelwagentje de volgende:
+Voor versies 2.3.x - 2.4.2, zijn de verwachte prestaties gebaseerd op de grenzen van het winkelwagentje:
 
 - Tot maximaal **100** producten in een kar-het product werkt, die prestatiesdoelstellingen voor reactietijd bereiken.
 - Tot maximaal **300** producten in een winkelwagentje - het product werkt, maar de reactietijd neemt toe boven de doelen.

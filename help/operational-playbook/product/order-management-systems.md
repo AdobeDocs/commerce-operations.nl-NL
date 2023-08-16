@@ -24,7 +24,7 @@ OMS is belangrijk voor een e-commercesite omdat het merken helpt groeien. Klante
 
 - **Beperkte fouten**: Een OMS helpt menselijke fouten te verminderen. Deze fouten kunnen tijdrovend en duur zijn. Een OMS brengt het team op de hoogte wanneer de voorraadniveaus laag zijn, wanneer een product niet verkoopt, of welk product het hoogste terugkeertarief heeft. Hierdoor kunnen bedrijven de verzendfouten corrigeren en de reden voor het retourneren analyseren.
 
-- **Meer schaalbaarheid**—In tegenstelling tot oudere handmatige systemen worden OMS geschaald op basis van de behoefte van het bedrijf. OMS-software biedt bedrijven de mogelijkheid om te schalen met de markt.
+- **Meer schaalbaarheid**—In tegenstelling tot oudere handmatige systemen wordt een OMS geschaald op basis van de behoefte van het bedrijf. OMS-software biedt bedrijven de mogelijkheid om te schalen met de markt.
 
 - **Meer mogelijkheden voor meerdere kanalen**—In een tijdperk van meerkanaalsverkoop via websites, markten of partnerschappen (Facebook en Instagram) kan het volgen van bestellingen complex zijn, omdat ze naar verschillende locaties worden verzonden met behulp van een of meer verzendmethoden. Een OMS brengt het samen en verhoogt klantenervaring.
 
@@ -65,7 +65,7 @@ Het beheer van orders in B2B-ondernemingen is complex in vergelijking met B2C-ac
 
 - De verkoper voert de bestelgegevens van de klant in in de OMS of de klant kan ook een bestelling online plaatsen, waardoor de ordergegevens naar de OMS worden verzonden
 
-- De klant ontvangt de bevestiging van de bestelling
+- De klant ontvangt de orderbevestiging
 
 - De producten worden toegewezen aan de orde
 
@@ -73,7 +73,7 @@ Het beheer van orders in B2B-ondernemingen is complex in vergelijking met B2C-ac
 
 - De voorraad wordt bijgewerkt
 
-- De status van de bestelling wordt naar de klant verzonden
+- De bestelstatus wordt naar de klant verzonden
 
 - De bestelling wordt naar de klant verzonden
 
@@ -85,7 +85,7 @@ Het beheer van orders kan doeltreffend zijn voor B2B- en B2C-bedrijven waar de O
 
 - Hiermee kunt u de informatie van meerdere kanalen centraliseren
 
-- Hiermee vermindert u de complexiteit nadat deze is geïmplementeerd
+- Hiermee vermindert u de complexiteit na implementatie
 
 - Helpt bestellingen bij te houden
 

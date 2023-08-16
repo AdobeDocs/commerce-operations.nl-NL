@@ -1,6 +1,6 @@
 ---
 title: Logbestand inschakelen
-description: Leer hoe te om types van registreren toe te laten en onbruikbaar te maken.
+description: Leer hoe te om types van registreren in en onbruikbaar te maken.
 feature: Configuration, Logs
 exl-id: 78b0416a-5bad-42a9-a918-603600e98928
 source-git-commit: 403a5937561d82b02fd126c95af3f70b0ded0747
@@ -72,7 +72,7 @@ Door gebrek, schrijft de Handel de logboeken van de gegevensbestandactiviteit aa
    bin/magento cache:flush
    ```
 
-## Cron logging
+## Gekruist registreren
 
 Met de release van versie 2.3.1 creëert de Commerce nu een aparte versie `cron` log. \
 Recentelijk maakte de handel de houtkap breder, die meer informatie verstrekte maar de `system.log` aanzienlijk.
@@ -83,7 +83,7 @@ Standaard schrijft Commerce `cron` informatie aan de `<install-directory>/var/lo
 ## Syslog-logboekregistratie
 
 Standaard schrijft Commerce _syslog_ logboeken naar het besturingssysteem `syslog` bestand.
-Vanaf Handel 2.3.1 moet u `magento` bevel om syslog toe te laten of onbruikbaar te maken.
+Vanaf Handel 2.3.1 moet u `magento` bevel om syslog in of onbruikbaar te maken.
 De instelling in het beheerprogramma is verwijderd.
 
 ### Om syslog registreren toe te laten
@@ -102,7 +102,7 @@ Aanmelden bij `syslog` is standaard uitgeschakeld.
    bin/magento cache:flush
    ```
 
-### Om syslog registreren onbruikbaar te maken
+### syslog registreren onbruikbaar maken
 
 1. Gebruik de `setup:config:set` om de `dev/syslog/syslog_logging` databasewaarde naar `false`.
 

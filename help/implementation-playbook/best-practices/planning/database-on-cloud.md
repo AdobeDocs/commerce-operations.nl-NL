@@ -37,13 +37,13 @@ SELECT table_schema, CONCAT(ROUND((index_length+data_length)/1024/1024),'MB')
 
 ### De opslagengine wijzigen in InnoDB
 
-In de `db_schema.xml` bestand waarin de tabel wordt gedeclareerd, stelt u de `engine` kenmerkwaarde voor de corresponderende `table` knooppunt naar `innodb`. Zie ter referentie [declaratief schema configureren > tabelknooppunt](https://developer.adobe.com/commerce/php/development/components/declarative-schema/configuration/) in onze ontwikkelaarsdocumentatie.
+In de `db_schema.xml` bestand waarin de tabel wordt gedeclareerd, stelt u de `engine` kenmerkwaarde voor de overeenkomende `table` knooppunt naar `innodb`. Zie ter referentie [declaratief schema configureren > tabelknooppunt](https://developer.adobe.com/commerce/php/development/components/declarative-schema/configuration/) in onze ontwikkelaarsdocumentatie.
 
 De declaratieve regeling werd ingevoerd in Adobe Commerce op cloudinfrastructuur versie 2.3.
 
 ## De aanbevolen zoekmachine configureren voor native MySQL-zoekopdracht
 
-Adobe raadt u aan altijd Elasticsearch of OpenSearch voor uw Adobe Commerce-project in te stellen op een cloud-infrastructuur, zelfs als u een zoekprogramma van derden voor uw Adobe Commerce-toepassing wilt configureren. Deze configuratie biedt een fallback-optie voor het geval dat het zoekprogramma van een andere fabrikant mislukt.
+Adobe raadt u aan altijd Elasticsearch of OpenSearch voor uw Adobe Commerce in te stellen voor een infrastructuurproject in de cloud, zelfs als u een zoekprogramma van derden voor uw Adobe Commerce-toepassing wilt configureren. Deze configuratie biedt een fallback-optie voor het geval dat het zoekprogramma van een andere fabrikant mislukt.
 
 Het zoekprogramma dat u gebruikt, is afhankelijk van de geïnstalleerde Adobe Commerce-versie van de cloud:
 
@@ -67,7 +67,7 @@ Zie voor configuratieinstructies de Developer Guide for Adobe Commerce on cloud:
 
 Gebruik indien mogelijk geen aangepaste triggers.
 
-De trekkers worden gebruikt om veranderingen in controletabellen te registreren. Adobe raadt u aan de toepassing te configureren om rechtstreeks naar de audittabellen te schrijven in plaats van de triggerfunctionaliteit te gebruiken, en wel om de volgende redenen:
+De trekkers worden gebruikt om veranderingen in controletabellen te registreren. De Adobe raadt u aan de toepassing te configureren om rechtstreeks naar de audittabellen te schrijven in plaats van de triggerfunctionaliteit te gebruiken, en wel om de volgende redenen:
 
 - Triggers worden geïnterpreteerd als code en MySQL compileert ze niet vooraf. Hooking op de transactieruimte van uw vraag, voegen zij de overheadkosten aan een parser en een interpreter voor elke vraag toe die met de lijst wordt uitgevoerd.
 - De trekkers delen de zelfde transactieruimte zoals de originele vragen, en terwijl die vragen voor sloten op de lijst concurreren, concurreren de trekkers onafhankelijk op sloten op een andere lijst.

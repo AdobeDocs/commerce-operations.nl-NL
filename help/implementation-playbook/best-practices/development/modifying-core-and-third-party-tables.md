@@ -26,7 +26,7 @@ Een andere reden om te vermijden veranderend de structuur van de gegevensbestand
 
 ## Weet wanneer gegevens moeten worden opgeslagen of verwijderd
 
-Adobe raadt u aan eerst te bepalen of u deze gegevens wilt opslaan. Als u gegevens verplaatst van een verouderd systeem, bespaart gegevens die u kunt verwijderen u tijd en moeite tijdens de migratie. (Er zijn manieren om gegevens te archiveren als het later moet worden betreden.) Om een goede beheerder van de toepassing en de prestaties te zijn, is het in orde om een verzoek uit te dagen om extra gegevens te bewaren. Uw doel is ervoor te zorgen dat het bewaren van de gegevens een vereiste is om een bedrijfsbehoefte te vervullen die niet een andere manier kan worden gevuld.
+Adobe raadt u aan eerst te bepalen of u deze gegevens moet opslaan. Als u gegevens verplaatst van een verouderd systeem, bespaart gegevens die u kunt verwijderen u tijd en moeite tijdens de migratie. (Er zijn manieren om gegevens te archiveren als het later moet worden betreden.) Om een goede beheerder van de toepassing en de prestaties te zijn, is het in orde om een verzoek uit te dagen om extra gegevens te bewaren. Uw doel is ervoor te zorgen dat het bewaren van de gegevens een vereiste is om een bedrijfsbehoefte te vervullen die niet een andere manier kan worden gevuld.
 
 ### Oudere gegevens
 
@@ -34,7 +34,7 @@ Als uw project erfenisgegevens, zoals oude orden of klantenverslagen bevat, over
 
 Deze situatie zou vereisen dat de database naar een server wordt gemigreerd, waarbij een webinterface wordt aangeboden om de gegevens te lezen, of een training in het gebruik van MySQL Workbench of vergelijkbare tools. Als u deze gegevens niet in de nieuwe database opneemt, wordt de migratie versneld doordat het ontwikkelingsteam zich kan richten op de nieuwe site in plaats van problemen met de migratie van gegevens op te lossen.
 
-Een andere verwante optie voor het houden van de gegevens extern aan handel maar het toestaan van u om het in echt te gebruiken - tijd zou hefboomwerking andere hulpmiddelen, zoals het netwerk van GraphQL zijn. Deze optie combineert verschillende gegevensbronnen en retourneert deze als één reactie.
+Een andere verwante optie voor het houden van de gegevens extern aan handel maar het toestaan van u om het in echt te gebruiken - tijd zou andere hulpmiddelen, zoals het netwerk van GraphQL leveraging. Deze optie combineert verschillende gegevensbronnen en retourneert deze als één reactie.
 
 U kunt bijvoorbeeld `stitch` oude bestellingen van een externe database samen te voegen, bijvoorbeeld de oude Magento 1-site die is ontmanteld. Dan gebruikend het net van GraphQL, toon hen als deel van de klantenorde geschiedenis. Deze oude bestellingen kunnen worden gecombineerd met de bestellingen van uw huidige [!DNL Adobe Commerce] milieu.
 
@@ -42,19 +42,19 @@ Ga voor meer informatie over het gebruik van API-netten met GraphQL naar [Wat is
 
 ## Oudere gegevens migreren met extensiekenmerken
 
-Als u vaststelt dat oudere gegevens moeten worden gemigreerd of dat nieuwe gegevens moeten worden opgeslagen in [!DNL Adobe Commerce], Adobe raadt u aan [extensiekenmerken](https://developer.adobe.com/commerce/php/development/components/add-attributes/){target="_blank"}. Het gebruik van extensiekenmerken voor het opslaan van aanvullende gegevens biedt de volgende voordelen:
+Als u vaststelt dat oudere gegevens moeten worden gemigreerd of dat nieuwe gegevens moeten worden opgeslagen [!DNL Adobe Commerce], raadt Adobe aan [extensiekenmerken](https://developer.adobe.com/commerce/php/development/components/add-attributes/){target="_blank"}. Het gebruik van extensiekenmerken voor het opslaan van aanvullende gegevens biedt de volgende voordelen:
 
 - U kunt de gegevens controleren die en de gegevensbestandstructuur worden voortgeduurd, die ervoor zorgt dat het gegeven met het correcte kolomtype en juiste indexen wordt bewaard.
 - Meeste entiteiten in [!DNL Adobe Commerce] en [!DNL Magento Open Source] het gebruik van extensiekenmerken ondersteunen.
 - Extensiekenmerken zijn een agnostisch opslagmechanisme dat de flexibiliteit biedt om de gegevens op te slaan op de optimale locatie voor uw project.
 
-Twee voorbeelden van opslagplaatsen zijn gegevensbestandlijsten en [!DNL Redis]. Bij het kiezen van een locatie moet u rekening houden met de vraag of een locatie een extra complexiteit met zich meebrengt of van invloed is op de prestaties.
+Twee voorbeelden van opslagplaatsen zijn gegevensbestandlijsten en [!DNL Redis]. Bij het kiezen van een locatie moet u rekening houden met de vraag of een locatie een extra complexiteit veroorzaakt of van invloed is op de prestaties.
 
 ### Andere alternatieven overwegen
 
-Als ontwikkelaar is het van essentieel belang om altijd te overwegen om hulpmiddelen buiten uw te gebruiken [!DNL Adobe Commerce] omgeving, zoals GraphQL mesh en Adobe App Builder. Deze hulpmiddelen kunnen u helpen toegang tot de gegevens behouden maar hebben geen invloed op de kernhandelstoepassing of zijn onderliggende gegevensbestandlijsten. Met deze aanpak maakt u uw gegevens beschikbaar via een API. Dan, voegt u een gegevensbron aan uw configuratie van de Bouwer van de App toe. Met GraphQL Mesh kunt u die gegevensbronnen combineren en één reactie produceren, zoals vermeld in [oudere gegevens](#legacy-data).
+Als ontwikkelaar is het van essentieel belang om altijd te overwegen om hulpmiddelen buiten uw [!DNL Adobe Commerce] omgeving, zoals GraphQL mesh en Adobe App Builder. Deze hulpmiddelen kunnen u helpen toegang tot de gegevens behouden maar hebben geen invloed op de kernhandelstoepassing of zijn onderliggende gegevensbestandlijsten. Met deze aanpak maakt u uw gegevens beschikbaar via een API. Dan, voegt u een gegevensbron aan uw configuratie van de Bouwer van de App toe. Met GraphQL Mesh kunt u die gegevensbronnen combineren en één reactie produceren, zoals vermeld in [oudere gegevens](#legacy-data).
 
-Zie voor meer informatie over GraphQL mesh [GraphQL Mesh Gateway](https://developer.adobe.com/graphql-mesh-gateway/){target="_blank"}. For information about the Adobe App Builder,  see [Introducing App Builder](https://experienceleague.adobe.com/docs/adobe-developers-live-events/events/2021/oct2021/introduction-app-builder.html?lang=en){target="_blank"}.
+Zie voor meer informatie over GraphQL-netten [GraphQL Mesh Gateway](https://developer.adobe.com/graphql-mesh-gateway/){target="_blank"}. For information about the Adobe App Builder,  see [Introducing App Builder](https://experienceleague.adobe.com/docs/adobe-developers-live-events/events/2021/oct2021/introduction-app-builder.html?lang=en){target="_blank"}.
 
 ## Een kerntabel of tabel van derden wijzigen
 
@@ -67,7 +67,7 @@ Als u besluit om gegevens op te slaan door een kern te wijzigen [!DNL Adobe Comm
 
 ## Aanbevolen procedures voor het wijzigen van een externe databasetabel
 
-Adobe raadt u aan deze stappen te volgen wanneer u een kolom toevoegt aan een kerndatabasetabel of aan een tabel van derden:
+De Adobe raadt u aan deze stappen te volgen wanneer u een kolom toevoegt aan een kerndatabasetabel of een tabel van derden:
 
 1. Maak een module met een naam in de naamruimte die aangeeft wat u wilt bijwerken.
 

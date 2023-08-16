@@ -16,14 +16,14 @@ Om Handel te vormen om Varnish te gebruiken:
 
 1. Meld u als beheerder aan bij de beheerder.
 1. Klikken **[!UICONTROL Stores]** > Instellingen > **Configuratie** > **Geavanceerd** > **Systeem** > **Volledige paginacache**.
-1. Van de **[!UICONTROL Caching Application]** lijst, klikt u op **Varnish Caching**.
+1. Van de **[!UICONTROL Caching Application]** lijst, klik **Varnish Caching**.
 1. Voer een waarde in het dialoogvenster **[!UICONTROL TTL for public content]** veld.
 1. Uitbreiden **[!UICONTROL Varnish Configuration]** en voert u de volgende gegevens in:
 
    | Veld | Beschrijving |
    | ----- | ----------- |
-   | Toegangslijst | Ga volledig in - gekwalificeerde hostname, IP adres, of [Het klasseloze inter-domein Verpletteren (CIDR)](https://www.digitalocean.com/community/tutorials/understanding-ip-addresses-subnets-and-cidr-notation-for-networking) IP van de notatie adreswaaier waarvoor om inhoud ongeldig te maken. Zie [Varnish cache Purging](https://varnish-cache.org/docs/3.0/tutorial/purging.html). |
-   | Backend-host | Ga volledig in - gekwalificeerde hostname of IP adres en luister haven van Varnish _achterste_ of _oorspronkelijke server_; Dat wil zeggen dat de server die de inhoud levert, Varnish versnelt. Dit is doorgaans uw webserver. Zie [Varnish cache Backend-servers](https://www.varnish-cache.org/docs/trunk/users-guide/vcl-backends.html). |
+   | Toegangslijst | Ga volledig in - gekwalificeerde hostname, IP adres, of [Klasseloze inter-domein het Verpletteren (CIDR)](https://www.digitalocean.com/community/tutorials/understanding-ip-addresses-subnets-and-cidr-notation-for-networking) IP van de notatie adreswaaier waarvoor om inhoud ongeldig te maken. Zie [Varnish cache Purging](https://varnish-cache.org/docs/3.0/tutorial/purging.html). |
+   | Backend-host | Ga volledig in - gekwalificeerde hostname of IP adres en luister haven van Varnish _achterste_ of _oorspronkelijke server_ De server die de inhoud levert, Varnish versnelt. Dit is doorgaans uw webserver. Zie [Varnish cache Backend-servers](https://www.varnish-cache.org/docs/trunk/users-guide/vcl-backends.html). |
    | Backend-poort | De luisterpoort van de oorspronkelijke server. |
    | Respijtperiode | De respijtperiode bepaalt hoe lang Varnish de inhoud van de schaal dient als de backend niet reageert. De standaardwaarde is 300 seconden. |
 
@@ -61,7 +61,7 @@ Een vernis-configuratiebestand exporteren vanuit de beheerfunctie:
    cp <download_directory>/default.vcl /etc/varnish/default.vcl
    ```
 
-1. Adobe raadt u aan `default.vcl` en wijzigt u de waarde van `acl purge` aan het IP adres van de gastheer van Varnish. (U kunt meerdere hosts op aparte regels opgeven of u kunt ook CIDR-notatie gebruiken.)
+1. Adobe beveelt aan `default.vcl` en wijzigt u de waarde `acl purge` aan het IP adres van de gastheer van Varnish. (U kunt meerdere hosts op aparte regels opgeven of u kunt ook CIDR-notatie gebruiken.)
 
    Bijvoorbeeld:
 

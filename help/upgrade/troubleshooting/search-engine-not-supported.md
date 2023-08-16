@@ -1,6 +1,6 @@
 ---
 title: Huidige zoekengine wordt niet ondersteund
-description: Los uw Adobe Commerce of verbetering van de Magento Open Source na het ontmoeten van een fout over een niet gestaafde onderzoeksmotor problemen op.
+description: Los uw Adobe Commerce of Magento Open Source verbetering na het ontmoeten van een fout over een niet gestaafde onderzoeksmotor problemen op.
 feature: Upgrade, Search
 exl-id: 11479d23-53a5-4086-9f9a-c3420ccad073
 source-git-commit: 012cba58b336b032b1c911539008c1fb961c2e07
@@ -12,7 +12,7 @@ ht-degree: 0%
 
 # Huidige zoekengine wordt niet ondersteund
 
-Het volgende foutbericht geeft aan dat de Adobe Commerce- of Magento Open Source-versie waarvan u een upgrade uitvoert, is geconfigureerd voor het gebruik van een zoekprogramma voor catalogi dat niet wordt ondersteund in de versie waarnaar u de upgrade uitvoert:
+Het volgende foutbericht geeft aan dat de Adobe Commerce- of Magento Open Source-versie waarvan u een upgrade uitvoert, is geconfigureerd voor het gebruik van een zoekfunctie voor catalogi die niet wordt ondersteund in de versie waarnaar u de upgrade uitvoert:
 
 ```terminal
 Your current search engine, <Engine Name>, is not supported. You must install a supported search engine before upgrading. See the System Upgrade Guide for more information.
@@ -21,7 +21,7 @@ Your current search engine, <Engine Name>, is not supported. You must install a 
 Deze fout betekent dat een van de volgende voorwaarden geldt voor de versie op downniveau van Adobe Commerce of Magento Open Source:
 
 - Het zoekprogramma is ingesteld op MySQL.
-- Het zoekprogramma is ingesteld op een versie van Elasticsearch die niet meer wordt ondersteund.
+- De zoekmachine is ingesteld op een versie van de Elasticsearch die niet meer wordt ondersteund.
 
 Gebruik de volgende opdracht om de huidige zoekfunctie te controleren:
 
@@ -43,7 +43,7 @@ De fout treedt op als de geretourneerde waarde `mysql`, `elasticsearch`, of `ela
 >composer require-commerce magento/product-community-edition=<version>
 >```
 >
->Wanneer `<version>` is de versie van de Magento die u hebt uitgevoerd **voor** de upgrade. Bijvoorbeeld: `2.3.5`.
+>Wanneer `<version>` is de versie van het Magento dat u hebt uitgevoerd **voor** de upgrade. Bijvoorbeeld, `2.3.5`.
 
 Volg de richtlijnen die in de volgende secties worden beschreven om van een inconsistente staat terug te krijgen.
 
@@ -56,22 +56,22 @@ Gebruik de volgende bronnen om u door dit proces te begeleiden:
 - [De zoekengine installeren en configureren](../../configuration/search/overview-search.md)
 - [Configuratie van zoekmachine](../../configuration/search/configure-search-engine.md)
 
-Nadat u de zoekmachine en de herindex hebt geconfigureerd, kunt u een upgrade uitvoeren naar 2.4.
+Nadat u het onderzoeksmotor en de herindex vormt, bent u bereid aan verbetering 2.4.
 
 ## Als uw zoekmachine `elasticsearch`
 
 Elasticsearch 6 en eerder worden niet meer ondersteund.
 
-Een waarde van `elasticsearch` Hiermee geeft u aan dat uw versie op downniveau van Adobe Commerce of Magento Open Source is geconfigureerd voor gebruik van Elasticsearch 2.x. Deze versie van Elasticsearch wordt niet meer ondersteund.
+Een waarde van `elasticsearch` Hiermee wordt aangegeven dat uw versie op downniveau van Adobe Commerce of Magento Open Source is geconfigureerd voor het gebruik van Elasticsearch 2.x. Deze versie van Elasticsearch wordt niet meer ondersteund.
 
 U moet de volgende taken uitvoeren alvorens aan 2.4 te bevorderen:
 
-1. Update aan een versie van Elasticsearch die door de Handel wordt gesteund. Zie [Elasticsearch bijwerken](https://www.elastic.co/guide/en/elasticsearch/reference/current/setup-upgrade.html) voor volledige instructies voor het maken van back-ups van uw gegevens, het opsporen van potentiële migratiekwesties en het testen van upgrades voordat u deze implementeert naar de productie. Afhankelijk van uw huidige versie van Elasticsearch, is het mogelijk dat een volledige clusterherstart al dan niet vereist is.
+1. Update aan een versie van Elasticsearch die door Handel wordt gesteund. Zie [Elasticsearch bijwerken](https://www.elastic.co/guide/en/elasticsearch/reference/current/setup-upgrade.html) voor volledige instructies voor het maken van back-ups van uw gegevens, het opsporen van potentiële migratiekwesties en het testen van upgrades voordat u deze implementeert naar de productie. Afhankelijk van uw huidige versie van Elasticsearch is het mogelijk dat een volledige clusterherstart al dan niet vereist is.
 
    >[!NOTE]
    >
-   >Elasticsearch vereist JDK 1.8 of hoger. Zie [De JDK (Java Software Development Kit) installeren](../../installation/prerequisites/search-engine/overview.md#install-the-java-software-development-kit-jdk) om te controleren welke versie van JDK is geïnstalleerd.
+   >Voor Elasticsearch is JDK 1.8 of hoger vereist. Zie [De JDK (Java Software Development Kit) installeren](../../installation/prerequisites/search-engine/overview.md#install-the-java-software-development-kit-jdk) om te controleren welke versie van JDK is geïnstalleerd.
 
 1. [Elasticsearch configureren](../../configuration/search/configure-search-engine.md) en opnieuw indexeren.
 
-Nadat u de zoekmachine en de herindex hebt geconfigureerd, kunt u een upgrade uitvoeren naar 2.4.
+Nadat u het onderzoeksmotor en de herindex vormt, bent u bereid aan verbetering 2.4.

@@ -24,10 +24,10 @@ De Adobe Commerce GraphQL API biedt uitgebreide storefront-dekking die u kunt ge
 
 GraphQL biedt een efficiënte, kanaalspecifieke respons, geen overhalen van gegevens en een flexibele implementatie van nieuwe aanraakpuntfuncties. Het wordt ook vaak gekozen om met verkoopkanalen zoals mobiele inheemse apps, POS, IoT, sociale kanalen, en livestreamhandelkanalen zoals Facebook, Google, Instagram, WeChat, en TikTok te integreren.
 
-De Adobe Commerce REST API biedt uitgebreide systeemconfiguratieredekking en functies voor gegevensbeheer, waaronder product en catalogus; kar, citaat, en kassa; klanten, accounts en bedrijven; en bestellingen en retourneert. REST API&#39;s ondersteunen bulkbewerkingen, meerdere verificatiemodi en korrelige autorisatie, zodat REST API&#39;s vaak worden gekozen voor integratie met bedrijfssystemen, waaronder:
+De Adobe Commerce REST API biedt uitgebreide functies voor systeemconfiguratiedekking en gegevensbeheer, zoals product en catalogus, winkelwagentje, aanhalingstekens en kassa, klanten, account en bedrijven, en bestellingen en retourneert. REST API&#39;s ondersteunen bulkbewerkingen, meerdere verificatiemodi en korrelige autorisatie, zodat REST API&#39;s vaak worden gekozen voor integratie met bedrijfssystemen, waaronder:
 
 - ERP-systemen (Enterprise Resource Planning), zoals SAP
-- PIM-systemen (Product Information Management) zoals Akeneo
+- PIM-systemen (Product Information Management), zoals Akeneo
 - Systemen voor relatiebeheer (CRM) van klanten zoals Salesforce
 - Orderbeheersystemen (OMS) zoals MOM, Manhattan en SAP
 - Warehouse Management System (WMS) of een externe logistiek (3PL) zoals Oracle, NetSuite en SAP WM
@@ -42,9 +42,9 @@ Adobe Commerce biedt drie flexibele integratieopties:
 
 - Directe systeemintegratie met vooraf gebouwde connectors. Sommige systemen hebben mogelijk al Adobe Commerce-extensies op de Adobe Commerce Marketplace of op hun eigen website.
 
-- Systeem-aan-systeem integratie door douane middleware. De aangepaste middleware-oplossing die wordt geïmplementeerd, wordt gebruikt voor het in kaart brengen, vertalen en beheren van procesgegevens.
+- Systeem-aan-systeem integratie door douane middleware. De aangepaste middleware-oplossing die wordt geïmplementeerd, wordt gebruikt voor het toewijzen, vertalen en beheren van procesgegevens.
 
-- Systeem-aan-systeem integratie door iPaaS (Integratie Platform-als-a-Dienst), die ook als EAI (het Platform van de Integratie van de Toepassing van de Onderneming) wordt bedoeld, zoals Mulesoft, Boomi, en Software AG.
+- System-to-system integratie via iPaaS (Integratieplatform-as-a-Service), ook genoemd als EAI (Enterprise Application Integration Platform), zoals Mulesoft, Boomi en Software AG.
 
 ![Adobe Commerce-integratieopties](../../assets/playbooks/integration-options.svg)
 

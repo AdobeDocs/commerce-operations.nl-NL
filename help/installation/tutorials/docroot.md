@@ -1,6 +1,6 @@
 ---
 title: Documenthoofdmap wijzigen om de beveiliging te verbeteren
-description: Ongeoorloofde browsertoegang tot Adobe Commerce- of Magento Open Source-bestandssysteem op locatie voorkomen.
+description: Ongeautoriseerde toegang via de browser tot Adobe Commerce of Magento Open Source van het bestandssysteem op locatie voorkomen.
 feature: Install, Security
 exl-id: aabe148d-00c8-4011-a629-aa5abfa6c682
 source-git-commit: 32dd5005422b98923ce1bdf6c3fb3f55c2ec15bd
@@ -12,7 +12,7 @@ ht-degree: 0%
 
 # Documenthoofdmap wijzigen om de beveiliging te verbeteren
 
-Adobe Commerce en Magento Open Source worden in een standaardinstallatie met een Apache-webserver geïnstalleerd als de standaardhoofdmap van het web: `/var/www/html/magento2`.
+In een standaardinstallatie met een Apache-webserver worden Adobe Commerce en Magento Open Source geïnstalleerd als de standaardhoofdmap van het web: `/var/www/html/magento2`.
 
 De `magento2/` map bevat het volgende:
 
@@ -168,7 +168,7 @@ Het schakelen tussen wijzen is een belangrijke stap om te verifiëren dat uw ser
 
 Ga naar de winkel in webbrowser om te controleren of alles werkt.
 
-1. Open een webbrowser en voer op de adresbalk de hostnaam of het IP-adres van de server in. Bijvoorbeeld: `http://192.168.33.10`.
+1. Open een webbrowser en voer op de adresbalk de hostnaam of het IP-adres van de server in. Bijvoorbeeld, `http://192.168.33.10`.
 
    In de volgende afbeelding ziet u een voorbeeldwinkelpagina. Als het als volgt toont, was uw installatie een succes!
 

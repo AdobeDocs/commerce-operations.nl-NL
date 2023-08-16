@@ -1,6 +1,6 @@
 ---
 title: Cloud-infrastructuurregio's
-description: Bekijk diagrammen die de AWS- en Azure-regio's weergeven die beschikbaar zijn voor Adobe Commerce.
+description: Bekijk diagrammen die de AWS en Azure regio's weergeven die beschikbaar zijn voor Adobe Commerce.
 exl-id: d8f59845-8281-4c9f-8101-51f9c35a0455
 feature: Cloud
 source-git-commit: 94d7a57dcd006251e8eefbdb4ec3a5e140bf43f9

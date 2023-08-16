@@ -1,6 +1,6 @@
 ---
 title: PHP-instellingen
-description: Volg deze stappen om vereiste PHP uitbreidingen te installeren en vereiste PHP montages voor op-gebouw installaties van Adobe Commerce en Magento Open Source te vormen.
+description: Voer de volgende stappen uit om vereiste PHP extensies te installeren en de vereiste PHP instellingen te configureren voor installatie in de bedrijfsruimten van Adobe Commerce en Magento Open Source.
 feature: Install, Configuration
 exl-id: 84064442-7053-42ab-a8a6-9b313e5efc78
 source-git-commit: ce405a6bb548b177427e4c02640ce13149c48aff
@@ -34,14 +34,14 @@ Copyright (c) 1997-2018 The PHP Group
 Zend Engine v3.1.0, Copyright (c) 1998-2018 Zend Technologies with Zend OPcache v7.1.6, Copyright (c) 1999-2018, by Zend Technologies
 ```
 
-Adobe Commerce en Magento Open Source 2.4 zijn compatibel met PHP 7.3, maar we testen en raden je aan om PHP 7.4 te gebruiken.
+Adobe Commerce en Magento Open Source 2.4 zijn compatibel met PHP 7.3, maar we testen en raden aan om PHP 7.4 te gebruiken.
 
 Als PHP niet is geïnstalleerd of als een versie-upgrade nodig is, installeert u deze aan de hand van instructies voor uw specifieke Linux-smaak.
 Op CentOS, [eventueel zijn aanvullende stappen vereist](https://wiki.centos.org/HowTos/php7).
 
 ## Geïnstalleerde extensies verifiëren
 
-Adobe Commerce en Magento Open Source vereisen dat een set extensies wordt geïnstalleerd.
+Voor Adobe Commerce en Magento Open Source moet een set extensies zijn geïnstalleerd.
 
 {{$include /help/_includes/templated/php-extensions.md}}
 
@@ -66,7 +66,7 @@ Geïnstalleerde extensies controleren:
 >
 >Als u PHP 7.4.20 gebruikt, set `pcre.jit=0` in uw `php.ini` bestand. Dit komt rond een PHP [buigen](https://bugs.php.net/bug.php?id=81101) voorkomt dat CSS wordt geladen.
 
-- Stel de systeemtijdzone voor PHP in. anders werken fouten zoals de volgende weergave tijdens de installatie en bewerkingen met betrekking tot tijd zoals cron mogelijk niet:
+- Stel de tijdzone van het systeem in voor PHP. Anders werken fouten zoals de volgende weergave tijdens de installatie en bewerkingen met betrekking tot tijd zoals cron mogelijk niet:
 
 ```terminal
 PHP Warning:  date(): It is not safe to rely on the system's timezone settings. [more messages follow]
@@ -107,7 +107,7 @@ In deze sectie wordt beschreven hoe u de configuratiebestanden vindt die nodig z
 
 Als u de webserverconfiguratie wilt zoeken, voert u een [`phpinfo.php` file](optional-software.md#create-phpinfophp) in uw webbrowser en zoek naar `Loaded Configuration File` als volgt:
 
-![PHP-informatiepagina](../../assets/installation/config_phpini-webserver.png)
+![PHP-infopagina](../../assets/installation/config_phpini-webserver.png)
 
 Als u de PHP opdrachtregelconfiguratie wilt zoeken, typt u
 
@@ -163,7 +163,7 @@ PHP-opties instellen:
    memory_limit=2G
    ```
 
-1. Voeg de `realpath_cache` configuratie die overeenkomt met de volgende waarden:
+1. Voeg of werk de `realpath_cache` configuratie die overeenkomt met de volgende waarden:
 
    ```conf
    ;
@@ -191,7 +191,7 @@ In te stellen `opcache.ini` opties:
    - `php.ini` (Ubuntu)
    - `/etc/php/7.2/fpm/php.ini` (nginx-webserver (CentOS of Ubuntu)
 
-1. Zoeken `opcache.save_comments` en verwijder indien nodig opmerkingen.
+1. Zoeken `opcache.save_comments` en verwijder indien nodig de opmerkingen.
 1. Controleer of de waarde is ingesteld op `1`.
 1. Sla de wijzigingen op en sluit de teksteditor af.
 1. Start de webserver opnieuw:

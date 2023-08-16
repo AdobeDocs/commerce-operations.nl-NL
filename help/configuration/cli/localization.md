@@ -15,7 +15,7 @@ ht-degree: 0%
 
 De vertalingen van de handel laten u toe om uw opslag voor veelvoudige gebieden en markten aan te passen en te lokaliseren door te produceren:
 
-- **Vertaalwoordenboeken**, die een handige manier zijn om aan te passen of te vertalen _sommige_ woorden en zinnen, zoals die voor een aangepaste module of een aangepast thema.
+- **Vertaalwoordenboeken**, een handige manier om aan te passen of te vertalen _sommige_ woorden en zinnen, zoals die voor een aangepaste module of een aangepast thema.
 - **Taalpakketten** waarmee u kunt vertalen _alle_ woorden en zinsdelen in de aanvraag voor de handel.
 
 Zie [Overzicht van vertalingen].
@@ -28,7 +28,7 @@ Als u wilt beginnen met het vertalen, gebruikt u een opdracht om een CSV-woorden
 
 U genereert het woordenboek als volgt en u begint met vertalen:
 
-1. Extraheer vertaalbare woorden en woordgroepen uit ingeschakelde componenten met behulp van de opdracht Vertaalverzameling. Inhoud wordt geëxtraheerd naar een CSV-bestand.
+1. Extraheer vertaalbare woorden en woordgroepen uit ingeschakelde componenten met behulp van de opdracht Vertaalverzameling. Inhoud wordt uitgepakt in een CSV-bestand.
 1. Vertaal de bestaande woorden en woordgroepen. Desgewenst kunt u aanvullende aangepaste voorwaarden toevoegen.
 
    U hebt opties voor het gebruik van het vertaalde woordenboek:
@@ -47,13 +47,13 @@ In de volgende tabel worden parameters en waarden beschreven:
 
 | Parameter | Waarde | Vereist? |
 |--- |--- |--- |
-| `<path to directory to translate>` | Pad naar een map met vertaalbare code; met andere woorden, PHP-, PHTML- of XML-bestanden met zinnen die moeten worden vertaald.<br><br>Het gereedschap zoekt naar het pad dat u invoert en doorzoekt alle bestanden en submappen die het bevat.<br><br>Gebruik deze parameter niet als u `-m --magento`. | Ja (woordenboeken), nee (pakketten). |
-| `-m --magento` | Vereist voor het maken van een taalpakket op basis van dit vertaalwoordenboek. Indien gebruikt, zoekt naar de folders die bak/magento bevatten. Met deze optie voegt u thema&#39;s of modules toe aan elke regel in het woordenboek.<br><br>Hieronder volgt een monster:<br><br>&quot;Geen items gevonden&quot;,&quot;Geen items gevonden&quot;, module,Magento_lijst | Nee |
+| `<path to directory to translate>` | Pad naar een map met vertaalbare code, met andere woorden PHP-, PHTML- of XML-bestanden met te vertalen zinnen.<br><br>Het gereedschap zoekt naar het pad dat u invoert en doorzoekt alle bestanden en submappen die het bevat.<br><br>Gebruik deze parameter niet als u `-m --magento`. | Ja (woordenboeken), nee (pakketten). |
+| `-m --magento` | Vereist voor het maken van een taalpakket op basis van dit vertaalwoordenboek. Indien gebruikt, zoekt naar de folders die bak/magento bevatten. Met deze optie voegt u thema&#39;s of modules toe aan elke regel in het woordenboek.<br><br>Hieronder volgt een monster:<br><br>&quot;Geen items gevonden&quot;,&quot;Geen items gevonden&quot;, module,Magento_Wishlist | Nee |
 | `-o --output="<path>"` | Hier geeft u het absolute pad naar het bestandssysteem en de bestandsnaam op van het CSV-bestand voor het vertaalwoordenboek dat u wilt maken. De waarde die u invoert, is hoofdlettergevoelig. De naam van het CSV-bestand moet exact overeenkomen met de naam van de landinstelling, inclusief het hoofdlettergebruik.<br><br>Wanneer u deze parameter weglaat, wordt de uitvoer naar stdout gestuurd. | Nee |
 
 >[!INFO]
 >
->Als u een taalpakket wilt maken op basis van een vertaalwoordenboek, _moet_ gebruiken `-m|--magento` optie.
+>Als u een taalpakket wilt maken op basis van een vertaalwoordenboek, kunt u _moet_ gebruiken `-m|--magento` -optie.
 
 ### Richtlijnen voor vertaling
 
@@ -108,7 +108,7 @@ In de volgende tabel worden de parameters en waarden voor de opdracht Taalpakket
 |--- |--- |--- |
 | `<source>` | Absoluut pad naar bestandssysteem en bestandsnaam van een CSV-bestand met het gecombineerde vertaalwoordenboek en de metagegevens die nodig zijn voor de indeling in een taalpakket.<br><br>Gebruiken [`bin/magento i18n:collect-phrases`](#config-cli-subcommands-xlate-dict-dict) om het CSV-bestand te maken en vervolgens het taalpakket te maken zoals beschreven in [Mappen en bestanden maken](#m2devgde-xlate-files). | Ja |
 | `<locale>` | [ISO 639-1] (taal) en [ISO 3166] (land)-id van de taal die wordt gebruikt als bestandsnaam voor alle resulterende CSV-bestanden. Voorbeelden: `de_DE`, `pt_PT`, `pt_BR`. | Ja |
-| `-m --mode` | Als er een doelbestand bestaat, geeft u op of het bestaande taalpakket moet worden vervangen of moet worden samengevoegd met het nieuwe taalpakket. Bij het samenvoegen worden alle bestaande woordgroepen overschreven en worden er nieuwe toegevoegd.<br><br>Waarden: samenvoegen of vervangen (standaard). | Nee |
+| `-m --mode` | Als er een doelbestand bestaat, geeft u op of het bestaande taalpakket moet worden vervangen of moet worden samengevoegd met het nieuwe taalpakket. Bij het samenvoegen worden alle bestaande woordgroepen overschreven en worden er nieuwe toegevoegd.<br><br>Waarden: samenvoegen of vervangen (standaardwaarde). | Nee |
 | `-d --allow-duplicates` | Neem deze optie op als u duplicaten in het taalpakket wilt toestaan. Anders mislukt de opdracht met een fout als dezelfde woordgroep wordt aangetroffen in meerdere items met verschillende vertalingen. | Nee |
 
 ### Mappen en bestanden maken
@@ -139,7 +139,7 @@ U kunt als volgt deze bestanden maken:
 
 Bij het declareren van een taalpakket in de `language.xml` configuratiebestand, moet u de volgorde van de taalovererving voor dit pakket opgeven.
 
-Met talenovererving kunt u een vertaling maken die een _onderliggend_ op basis van een bestaande vertaling die een _parent_. De onderliggende vertalingen overschrijven het bovenliggende element. Als de onderliggende vertaling echter niet kan worden geüpload of weergegeven of als er een woordgroep of woord ontbreekt, wordt de bovenliggende landinstelling gebruikt. [Voorbeelden van taalpakketovererving](#example-of-language-inheritance).
+Met talenovererving kunt u een vertaling maken die een _kind_ op basis van een bestaande vertaling die een _parent_. De onderliggende vertalingen overschrijven het bovenliggende element. Als de onderliggende vertaling echter niet kan worden geüpload of weergegeven of als er een woordgroep of woord ontbreekt, wordt de bovenliggende landinstelling gebruikt. [Voorbeelden van taalpakketovererving](#example-of-language-inheritance).
 
 Geef de volgende informatie op om een pakket te declareren:
 
@@ -154,7 +154,7 @@ Geef de volgende informatie op om een pakket te declareren:
 </language>
 ```
 
-Waar:
+Waarbij:
 
 - `code`—Landinstelling taalpakket (vereist)
 - `vendor`—Naam leverancier van de module (vereist)
@@ -186,7 +186,7 @@ In het vorige voorbeeld:
 - `language_package_one` overerven van `en_au_package` en `en_au_package` overerven van `en_ie_package`
 - `language_package_two` overerven van `en_ca_package` en `en_ca_package` overerven van `en_us_package`
 
-Als in de toepassing Handel geen woord of woordgroep kan worden gevonden in het dialoogvenster `en_GB` pakket, zoekt het in andere pakketten in de volgende opeenvolging:
+Als de toepassing van de Handel geen woord of uitdrukking in kan vinden in `en_GB` pakket, zoekt het in andere pakketten in de volgende opeenvolging:
 
 1. `parent-package-one/language_package_one`
 1. `<vendorname>/en_au_package`
@@ -207,7 +207,7 @@ Om een extra pakket voor een bestaande taal toe te laten, noem het nieuwe pakket
 
 De volgende secties verstrekken voorbeelden van begin tot eind van het gebruiken van de bevelen die in dit onderwerp worden besproken om vertaalwoordenboeken en vertaalpakketten tot stand te brengen:
 
-### Voorbeeld: Een vertaalwoordenboek maken voor een module of thema
+### Voorbeeld: een vertaalwoordenboek maken voor een module of thema
 
 U voegt als volgt een Duitse vertaling toe aan een module of thema dat u wilt verspreiden onder andere verkopers:
 
@@ -322,7 +322,7 @@ Vergelijkbaar met het vorige voorbeeld, produceer een Csv- dossier, maar in plaa
 [ISO 639-1]: https://www.iso.org/iso-639-language-codes.html
 [ISO 3166]: https://www.iso.org/iso-3166-country-codes.html
 [registers]: https://developer.adobe.com/commerce/php/development/build/component-registration/
-[` de_de`]: https://github.com/magento/magento2/blob/2.4/app/i18n/Magento/de_DE/registration.php
+[` de_`]: https://github.com/magento/magento2/blob/2.4/app/i18n/Magento/de_DE/registration.php
 [&quot;composer.json&quot;]: https://developer.adobe.com/commerce/php/development/build/composer-integration/
 [&quot;registration.php&quot;]: https://developer.adobe.com/commerce/php/development/build/component-registration/
 [Magento\Test\Integrity\App\Language\CircularDependencyTest]: https://github.com/magento/magento2/blob/2.4/dev/tests/static/testsuite/Magento/Test/Integrity/App/Language/CircularDependencyTest.php

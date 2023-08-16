@@ -34,8 +34,8 @@ Met de volgende parameters:
 | ------------------------------ | --------- | ------- | ------------- |
 | `cache-backend-redis-server` | server | Volledig gekwalificeerde hostnaam, IP-adres of een absoluut pad naar een UNIX-socket. De standaardwaarde van 127.0.0.1 wijst op Redis is geïnstalleerd op de server van de Handel. | `127.0.0.1` |
 | `cache-backend-redis-port` | poort | Redis-poort voor luisteren naar server | `6379` |
-| `cache-backend-redis-db` | database | Vereist als u Redis gebruikt voor zowel de standaardcache als de cache van de volledige pagina. U moet het databasenummer van een van de caches opgeven. de andere cache gebruikt standaard 0.<br><br>**Belangrijk**: Als u Redis voor meer dan één type caching gebruikt, moeten de gegevensbestandaantallen verschillend zijn. U wordt aangeraden het standaard cachedatabasenummer aan 0, het databasenummer voor het in cache plaatsen van pagina&#39;s aan 1 en het databasenummer voor de sessieopslag aan 2 toe te wijzen. | `0` |
-| `cache-backend-redis-password` | password | Als u een Redis-wachtwoord configureert, wordt een van de ingebouwde beveiligingsfuncties ingeschakeld: de `auth` gebruiken, waarvoor clients moeten worden geverifieerd voor toegang tot de database. Het wachtwoord wordt direct geconfigureerd in het configuratiebestand van Redis: `/etc/redis/redis.conf` |  |
+| `cache-backend-redis-db` | database | Vereist als u Redis gebruikt voor zowel de standaardcache als de cache van de volledige pagina. U moet het databasenummer van een van de caches opgeven; de andere cache gebruikt standaard 0.<br><br>**Belangrijk**: Als u Redis voor meerdere typen caching gebruikt, moeten de databasenummers verschillend zijn. U wordt aangeraden het standaard cachedatabasenummer aan 0, het databasenummer voor het in cache plaatsen van pagina&#39;s aan 1 en het databasenummer voor de sessieopslag aan 2 toe te wijzen. | `0` |
+| `cache-backend-redis-password` | password | Als u een Redis-wachtwoord configureert, wordt een van de ingebouwde beveiligingsfuncties ingeschakeld: de `auth` gebruiken, waarvoor clients moeten worden geverifieerd voor toegang tot de database. Het wachtwoord wordt direct geconfigureerd in het configuratiebestand van Redis: `/etc/redis/redis.conf` | |
 
 ### Voorbeeld, opdracht
 
@@ -63,8 +63,8 @@ Met de volgende parameters:
 | ------------------------------ | --------- | ------- | ------------- |
 | `page-cache-redis-server` | server | Volledig gekwalificeerde hostnaam, IP-adres of een absoluut pad naar een UNIX-socket. De standaardwaarde van 127.0.0.1 wijst op Redis is geïnstalleerd op de server van de Handel. | `127.0.0.1` |
 | `page-cache-redis-port` | poort | Redis-poort voor luisteren naar server | `6379` |
-| `page-cache-redis-db` | database | Vereist als u Redis gebruikt voor zowel de standaardcache als de volledige paginacache. U moet het databasenummer van een van de caches opgeven. de andere cache gebruikt standaard 0.<br/>**Belangrijk**: Als u Redis voor meer dan één type caching gebruikt, moeten de gegevensbestandaantallen verschillend zijn. U wordt aangeraden het standaard cachedatabasenummer aan 0, het databasenummer voor het in cache plaatsen van pagina&#39;s aan 1 en het databasenummer voor de sessieopslag aan 2 toe te wijzen. | `0` |
-| `page-cache-redis-password` | password | Als u een Redis-wachtwoord configureert, wordt een van de ingebouwde beveiligingsfuncties ingeschakeld: de `auth` gebruiken, waarvoor clients moeten worden geverifieerd voor toegang tot de database. Configureer het wachtwoord in het Redis-configuratiebestand: `/etc/redis/redis.conf` |  |
+| `page-cache-redis-db` | database | Vereist als u Redis gebruikt voor zowel de standaardcache als de volledige paginacache. U moet het databasenummer van een van de caches opgeven; de andere cache gebruikt standaard 0.<br/>**Belangrijk**: Als u Redis voor meerdere typen caching gebruikt, moeten de databasenummers verschillend zijn. U wordt aangeraden het standaard cachedatabasenummer aan 0, het databasenummer voor het in cache plaatsen van pagina&#39;s aan 1 en het databasenummer voor de sessieopslag aan 2 toe te wijzen. | `0` |
+| `page-cache-redis-password` | password | Als u een Redis-wachtwoord configureert, wordt een van de ingebouwde beveiligingsfuncties ingeschakeld: de `auth` gebruiken, waarvoor clients moeten worden geverifieerd voor toegang tot de database. Configureer het wachtwoord in het Redis-configuratiebestand: `/etc/redis/redis.conf` | |
 
 ### Voorbeeld, opdracht
 
@@ -120,21 +120,21 @@ Na [Redis-cluster instellen op AWS](https://aws.amazon.com/getting-started/hands
    - Een SSH-verbinding openen naar uw EC2-instantie
    - Installeer de Redis-client op het EC2-exemplaar:
 
-      ```bash
-      sudo apt-get install redis
-      ```
+     ```bash
+     sudo apt-get install redis
+     ```
 
    - Voeg een binnenkomende regel aan de EC2 veiligheidsgroep toe: Type `- Custom TCP, port - 6379, Source - 0.0.0.0/0`
    - Voeg een binnenkomende regel aan de ElastiCache de veiligheidsgroep van de Cluster toe: Type `- Custom TCP, port - 6379, Source - 0.0.0.0/0`
    - Verbind met Redis CLI:
 
-      ```bash
-      redis-cli -h <ElastiCache Primary Endpoint host> -p <ElastiCache Primary Endpoint port>
-      ```
+     ```bash
+     redis-cli -h <ElastiCache Primary Endpoint host> -p <ElastiCache Primary Endpoint port>
+     ```
 
 ### Handel configureren om de cluster te gebruiken
 
-De handel steunt veelvoudige types van caching configuraties. Over het algemeen worden de configuraties in cache opgedeeld tussen front-end en backend. caching aan de voorzijde is geclassificeerd als `default`, wordt gebruikt voor elk type cache. U kunt caches op een lager niveau aanpassen of splitsen voor betere prestaties. Een algemene configuratie van Redis scheidt het standaardgeheime voorgeheugen en paginacache in hun eigen Gegevensbestand van Redis (RDB).
+De handel steunt veelvoudige types van caching configuraties. Over het algemeen worden de configuraties in cache opgedeeld tussen front-end en backend. caching aan de voorzijde is ingedeeld als `default`, wordt gebruikt voor elk type cache. U kunt caches op een lager niveau aanpassen of splitsen voor betere prestaties. Een algemene configuratie van Redis scheidt het standaardgeheime voorgeheugen en paginacache in hun eigen Gegevensbestand van Redis (RDB).
 
 Uitvoeren `setup` opdrachten om de eindpunten van Redis op te geven.
 
@@ -192,7 +192,7 @@ Vanaf Commerce 2.3.5, wordt het geadviseerd om de uitgebreide Redis geheim voorg
 
 Aangezien de Handel configuratiegegevens in het geheime voorgeheugen van Redis opslaat, kunnen wij gegevens vooraf laden die tussen pagina&#39;s opnieuw worden gebruikt. Om sleutels te vinden die moeten worden vooraf geladen, analyseer gegevens die van Redis aan Handel worden overgebracht. We raden aan gegevens die op elke pagina zijn geladen, vooraf te laden, zoals `SYSTEM_DEFAULT`, `EAV_ENTITY_TYPES`, `DB_IS_UP_TO_DATE`.
 
-Redis gebruikt de `pipeline` om een aanvraag voor samengestelde lading te kunnen indienen. Toetsen moeten het databasevoorvoegsel bevatten; bijvoorbeeld als het databasevoorvoegsel `061_`ziet u als volgt uit: `061_SYSTEM_DEFAULT`
+Redis gebruikt de `pipeline` om een aanvraag voor samengestelde lading te kunnen indienen. Toetsen moeten het databasevoorvoegsel bevatten, bijvoorbeeld wanneer het databasevoorvoegsel is `061_`ziet u als volgt uit: `061_SYSTEM_DEFAULT`
 
 ```php
 'cache' => [
@@ -238,7 +238,7 @@ Als u de functie voor voorladen gebruikt met de L2-cache, vergeet dan niet om de
 Vanaf de 2.4.0 release introduceerden we de `allow_parallel_generation` optie voor de gebruikers die wachten voor sloten willen elimineren.
 Deze functie is standaard uitgeschakeld en u wordt aangeraden deze uit te schakelen totdat u te veel configuraties en/of blokken hebt.
 
-**Om parallelle generatie mogelijk te maken**:
+**Parallelle generatie inschakelen**:
 
 ```bash
 bin/magento setup:config:set --allow-parallel-generation

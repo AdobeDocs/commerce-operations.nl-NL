@@ -31,7 +31,7 @@ De voordelen van een intern team zijn:
 
 De volgende lijst omvat voorbeelden van wanneer de ondernemingen besluiten om een intern team te gebruiken:
 
-- Wanneer het bedrijf een hoogst beveiligd bedrijfsklimaat heeft waar alle informatie gevoelig en vertrouwelijk is en niet met een derde kan worden gedeeld.
+- Wanneer het bedrijf een hoogst beveiligd bedrijfsmilieu heeft waar alle informatie gevoelig en vertrouwelijk is en niet met een derde kan worden gedeeld.
 
 - Technologie waaraan het bedrijf werkt, is geoctrooieerd en kan juridische problemen veroorzaken wanneer het werken met een derde.
 
@@ -55,9 +55,9 @@ Externe teams omvatten consultants, betaalgateways, SEO/SEM-gerelateerde activit
 
 - Een gespecialiseerde organisatie heeft meer ervaring in het aanbieden van soortgelijke e-commerceprojecten dan het interne team, dat schaalvoordelen oplevert.
 
-- Externe teamleden hebben meer ervaring. Experts van Platforms kennen alle platformfuncties en kunnen best practices voorstellen die het bedrijf kan gebruiken om het platform optimaal te gebruiken.
+- Externe teamleden hebben meer ervaring. De deskundigen van het platform kennen over alle platformeigenschappen en kunnen beste praktijken voorstellen die de zaken kunnen gebruiken om hun gebruik het platform te maximaliseren.
 
-- Consultancybedrijven dringen erop aan hun middelen aan te passen aan de technologische en industriële ontwikkelingen. Consultants hebben een flexibele werkstijl en hebben veel te bieden; niet alleen op het gebied van kennis en ervaring , maar ook op het gebied van cultuur .
+- Consultancybedrijven dringen erop aan hun middelen aan te passen aan de technologische en industriële ontwikkelingen. Consultants hebben een flexibele werkstijl en hebben veel te bieden, niet alleen op het gebied van kennis en ervaring, maar ook op het gebied van cultuur.
 
 - De derden kunnen mensen verstrekken om aan een project als verandering van de middelbehoeften te werken, die een scalable team verstrekt.
 

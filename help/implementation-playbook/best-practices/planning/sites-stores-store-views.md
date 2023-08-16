@@ -38,7 +38,7 @@ Als voor uw project een groot aantal sites, winkels of winkelweergaven nodig is,
 
 Websites en winkels zijn multipliers voor catalogusgegevens, zodat het hebben van veel websites en winkels de prestaties van sites op de volgende manieren negatief kan beïnvloeden:
 
-- Grotere indextabellen vergen de tijd die nodig is om indexeringsbewerkingen te voltooien [Prijsindex].
+- Grotere indextabellen vergen meer tijd om indexeringsbewerkingen te voltooien [Prijsindex].
 - De hogere tijd om toepassingsconfiguratie terug te winnen degradeert storefront reactietijd voor niet caching cataloguspagina&#39;s.
 - Er is aanzienlijk meer tijd nodig om opslagbewerkingen in de beheerder uit te voeren, aangezien de gegevens voor elke website afzonderlijk worden opgeslagen.
 

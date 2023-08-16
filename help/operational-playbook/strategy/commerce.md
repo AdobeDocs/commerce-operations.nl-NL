@@ -13,7 +13,7 @@ ht-degree: 0%
 
 Digitale handel is een snel veranderende kracht die elk jaar snel evolueert. Hoewel dit voor individuen spannend kan zijn, komt het ook met vele uitdagingen voor organisaties die proberen de legering van het land te navigeren dat e-commerce is.
 
-Aangezien de elektronische handel zich in zowel B2B als B2C blijft ontwikkelen, zien de ondernemingen drastische veranderingen in klantengedrag en verwachtingen; van de manier waarop zij een product/dienst onderzoeken, een aankoop overwegen en voltooien, of trouw aan een merk tonen, tot de manier waarop zij dit alles aan hun gelijken meedelen. Het gedrag en de verwachtingen van de klant kunnen onmiddellijk veranderen en de ondernemingen kunnen worstelen om zich aan nieuwe markttendensen aan te passen en een digitale strategie tot stand te brengen die zowel realistisch als uitvoerbaar is.
+Aangezien de elektronische handel in zowel B2B als B2C blijft evolueren, zien de ondernemingen drastische veranderingen in klantengedrag en verwachtingen; van de manier zij een product/de dienst onderzoeken, overwegen en voltooien een aankoop, of tonen loyaliteit aan een merk, aan de manier zij elk van dit aan hun gelijken meedelen. Het gedrag en de verwachtingen van de klant kunnen onmiddellijk veranderen en de ondernemingen kunnen worstelen om zich aan nieuwe markttendensen aan te passen en een digitale strategie tot stand te brengen die zowel realistisch als uitvoerbaar is.
 
 Daarom is de uitvoering en de planning van om het even welke digitale strategie essentieel aan om het even welke succesvolle e-commerce zaken.
 
@@ -77,6 +77,6 @@ De volgende lijst bevat belangrijke doelstellingen waarmee u rekening moet houde
 - Meer leveringsopties
 - Geschikt plan voor upgrades en siteonderhoud
 
-Zie het volgende diagram voor een voorgesteld strategisch kader voor e-commerce:
+Zie het volgende diagram voor een gesuggereerd strategisch kader voor e-commerce:
 
 ![Kaderschema handelsstrategie](../../assets/playbooks/commerce-strategy-framework.png)

@@ -34,8 +34,8 @@ Een aangepaste patch toepassen met Composer:
 
 1. Bewerk de `composer.json` en voeg de volgende sectie toe om op te geven:
    - **Module:** *\&quot;magento/module-payment\&quot;*
-   - **Titel:** *\&quot;MAGETWO-56934: Afhandelingspagina loopt vast bij bestellen met Authorize.net met ongeldige creditcard\&quot;*
-   - **Pad naar patch:** *\&quot;patches/composer/github-issue-6474.diff\&quot;*
+   - **Titel:** *\&quot;MAGETWO-56934: Pagina voor uitchecken bevriest bij bestellen met Authorize.net met ongeldige creditcard\&quot;*
+   - **Pad naar patch:** *patches/composer/github-issue-6474.diff\&quot;*
 
    Bijvoorbeeld:
 

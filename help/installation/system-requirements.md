@@ -1,6 +1,6 @@
 ---
 title: Systeemvereisten
-description: Gebruik deze naslaggids om vereiste softwareafhankelijkheden te identificeren die zijn getest met Adobe Commerce- en Magento Open Source-releases.
+description: Gebruik deze verwijzing om vereiste softwaregebiedsdelen te identificeren die met Adobe Commerce en de versies van de Magento Open Source zijn getest.
 exl-id: 008c9edc-7d72-403c-847f-0e3b77bbb197
 source-git-commit: ad715d1581442fa447e394d88d496ec52519a1c3
 workflow-type: tm+mt
@@ -15,7 +15,7 @@ Hieronder volgt een overzicht van softwareafhankelijkheden en services die zijn 
 
 Er zijn enkele verschillen in de afhankelijkheid van de handel op de infrastructuur van de cloud. Serviceversie en compatibiliteitsondersteuning voor Adobe Commerce op cloudinfrastructuur worden bepaald door services die worden getest en geïmplementeerd in de gehoste cloudomgevingen, en verschillen soms van versies die worden ondersteund door Adobe Commerce-implementaties op locatie. Bijvoorbeeld, wordt Elasticsearch 7.17 gesteund voor Handel 2.4.4 voor plaatsingen op-gebouw, maar OpenSearch 1.2 wordt gesteund voor Handel 2.4.4 op de infrastructuur van de Wolk.
 
-De volgende lijsten tonen versies van derdesoftwaregebiedsdelen die Adobe met specifieke versies van Adobe Commerce en van Magento Open Source heeft getest.
+De volgende lijsten tonen versies van derdesoftwaregebiedsdelen die de Adobe met specifieke versies van Adobe Commerce en van de Magento Open Source heeft getest.
 
 Adobe ondersteunt alleen de combinatie van systeemvereisten die in de volgende tabellen wordt beschreven. 2.4.5 wordt bijvoorbeeld volledig getest met MariaDB 10.4. Adobe raadt u aan een upgrade naar MariaDB 10.4 uit te voeren voordat u de upgrade uitvoert naar versie 2.4.5.
 
@@ -44,7 +44,7 @@ opensearch:
 
 Zie [Services configureren](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure/service/services-yaml.html) in de _Handel in Cloud-infrastructuur_ hulplijn.
 
->[!TAB Handel ter plaatse]
+>[!TAB Handel in verkoopruimten]
 
 {{$include /help/_includes/templated/system-requirements-table.md}}
 
@@ -74,7 +74,7 @@ De [Installatie-instructies voor PHP](prerequisites/php-settings.md) Neem een st
 
 >[!TIP]
 >
->Voor PHP-extensies in de Cloud-infrastructuur raadpleegt u [PHP-extensies inschakelen](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure/app/php-settings.html#enable-extensions) in de _Handel in Cloud-infrastructuur_ hulplijn.
+>Zie voor PHP-extensies in de Cloud-infrastructuur [PHP-extensies inschakelen](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure/app/php-settings.html#enable-extensions) in de _Handel in Cloud-infrastructuur_ hulplijn.
 
 >[!BEGINTABS]
 
@@ -84,7 +84,7 @@ In de volgende tabel worden de ondersteunde PHP-extensies weergegeven wanneer Ad
 
 {{$include /help/_includes/templated/php-extensions-cloud.md}}
 
->[!TAB Handel ter plaatse]
+>[!TAB Handel in verkoopruimten]
 
 {{$include /help/_includes/templated/php-extensions.md}}
 
@@ -92,7 +92,7 @@ Zie [officiële PHP-documentatie](https://www.php.net/manual/en/extensions.php) 
 
 >[!ENDTABS]
 
-## Diversen
+## Overige
 
 In deze sectie worden de ondersteuning en compatibiliteit voor alle andere typen vereiste en optionele software beschreven.
 
@@ -105,9 +105,9 @@ In deze sectie worden de ondersteuning en compatibiliteit voor alle andere typen
 Storefront en Admin:
 
 - Microsoft Edge (nieuwste en vorige hoofdversie)
-- Firefox (nieuwste en vorige hoofdversie); elk besturingssysteem)
-- Chrome (laatste en vorige hoofdversie) elk besturingssysteem)
-- Safari (meest recente en vorige hoofdversie); alleen macOS)
+- Firefox (nieuwste en vorige hoofdversie; elk besturingssysteem)
+- Chrome (nieuwste en vorige hoofdversie; elk besturingssysteem)
+- Safari (nieuwste en vorige hoofdversie; alleen macOS)
 - Safari Mobile voor iPad 2, iPad Mini, iPad met Retina Display (iOS 12 of hoger), voor desktopopslag
 - Safari Mobile voor iPhone 6 of hoger; iOS 12 of hoger, voor mobiele winkel
 - Chrome voor mobiele apparaten (nieuwste en vorige hoofdversie) [Android™ 4 of hoger] voor mobiele winkel)
@@ -118,7 +118,7 @@ De Agent van de Overdracht van de post (MTA) of een server SMTP. Handel in Cloud
 
 ### Geheugen
 
-Voor het upgraden van de toepassingen en extensies die u van de Commerce Marketplace en andere bronnen ontvangt, is maximaal 2 GB RAM vereist. Als u een systeem met minder dan 2 GB RAM gebruikt, creeer een [wisselbestand](https://support.magento.com/hc/en-us/articles/360032980432); anders, zou uw verbetering kunnen ontbreken.
+Voor het upgraden van de toepassingen en extensies die u van de Commerce Marketplace en andere bronnen krijgt, is maximaal 2 GB RAM vereist. Als u een systeem met minder dan 2 GB RAM gebruikt, creeer een [wisselbestand](https://support.magento.com/hc/en-us/articles/360032980432); anders, zou uw verbetering kunnen ontbreken.
 
 ### Besturingssystemen (Linux x86-64)
 
@@ -146,10 +146,10 @@ Voor Handel in Cloud-infrastructuur raadpleegt u [Snelle configuratie](https://e
 
 ### Xdebug
 
-Voor Adobe Commerce en Magento Open Source, gebruik [php_xdebug 2.5.x](https://xdebug.org/download) of later (alleen ontwikkelomgevingen; kan een negatief effect hebben op de prestaties).
+Gebruik voor Adobe Commerce en Magento Open Source [php_xdebug 2.5.x](https://xdebug.org/download) of later (alleen ontwikkelomgevingen; kan een negatief effect hebben op de prestaties).
 
 Voor Adobe Commerce on Cloud raadpleegt u [Xdebug configureren](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/test/debug.html) in de _Handel in Cloud-infrastructuur_ hulplijn.
 
 >[!NOTE]
 >
->Er is een bekend probleem met `xdebug` die van invloed kunnen zijn op Adobe Commerce of Magento Open Source, of op de toegang tot de winkel of beheerder na de installatie. Zie [Bekend probleem dat `xdebug` installatie](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/known-issues-that-affect-installation.html) in de _Kennisbank handelsondersteuning_.
+>Er is een bekend probleem met `xdebug` die invloed kunnen hebben op installaties van Adobe Commerce of Magento Open Source of op de toegang tot de winkel of beheerder na de installatie. Zie [Bekend probleem dat `xdebug` installatie](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/known-issues-that-affect-installation.html) in de _Kennisbank handelsondersteuning_.

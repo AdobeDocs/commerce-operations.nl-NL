@@ -1,6 +1,6 @@
 ---
 title: Adobe Commerce installeren
-description: Voer de volgende stappen uit om Adobe Commerce of Magento Open Source op uw eigen infrastructuur te installeren.
+description: Voer de volgende stappen uit om Adobe Commerce of Magento Open Source te installeren op uw eigen infrastructuur.
 exl-id: 25f3c56e-0654-4f8b-a69d-f4152f68aca3
 source-git-commit: 95ffff39d82cc9027fa633dffedf15193040802d
 workflow-type: tm+mt
@@ -13,7 +13,7 @@ ht-degree: 0%
 
 Voer de volgende stappen uit voordat u begint:
 
-* Controleer of uw systeem voldoet aan de vereisten die worden besproken in het dialoogvenster [systeemvereisten](../system-requirements.md).
+* Controleer of uw systeem voldoet aan de vereisten die in het dialoogvenster [systeemvereisten](../system-requirements.md).
 
 * Alles voltooien [voorwaarde](../prerequisites/overview.md) taken.
 
@@ -47,7 +47,7 @@ Zie ook [Bijwerken, opnieuw installeren, verwijderen](uninstall.md).
 
 ## Opdrachten voor Help bij de installateur
 
-U kunt de volgende opdrachten uitvoeren om waarden voor bepaalde vereiste argumenten te zoeken:
+U kunt de volgende opdrachten uitvoeren om naar waarden voor bepaalde vereiste argumenten te zoeken:
 
 | Installatieargument | Opdracht |
 | ------------------ | ------------------------------- |
@@ -81,9 +81,9 @@ In Adobe Commerce versie 2.2.8 en hoger kunt u tijdens of na de installatie de b
 
 | Naam | Waarde | Vereist? |
 |--- |--- |--- |
-| `--admin-firstname` | Voornaam beheerder. | Ja |
+| `--admin-firstname` | Voornaam van beheerder. | Ja |
 | `--admin-lastname` | Achternaam van beheerder. | Ja |
-| `--admin-email` | E-mailadres van beheerder. | Ja |
+| `--admin-email` | E-mailadres van de beheerder. | Ja |
 | `--admin-user` | Gebruikersnaam beheerder. | Ja |
 | `--admin-password` | Beheerderswachtwoord. Het wachtwoord moet ten minste 7 tekens lang zijn en ten minste één alfabetisch en numeriek teken bevatten. We raden een langer, complexer wachtwoord aan. Plaats de gehele wachtwoordtekenreeks tussen enkele aanhalingstekens. Bijvoorbeeld: `--admin-password='A0b9%t3g'` | Ja |
 
@@ -92,8 +92,8 @@ In Adobe Commerce versie 2.2.8 en hoger kunt u tijdens of na de installatie de b
 | Naam | Waarde | Vereist? |
 |--- |--- |--- |
 | `--base-url` | Baseer URL om tot uw Admin en opslag in om het even welke volgende formaten toegang te hebben:<br><br>`http[s]://<host or ip>/<your install dir>/`.<br><br>**Opmerking:** Het schema (http:// of https://) en een slash zijn beide vereist.<br><br>`<your install dir>` is het documentafhankelijke relatieve pad waarin de toepassing wordt geïnstalleerd. Afhankelijk van hoe u opstelling uw Webserver en virtuele gastheren, de weg magento2 zou kunnen zijn of het zou leeg kunnen zijn.<br><br>Als u de toepassing wilt openen op de localhost, kunt u beide `http://127.0.0.1/<your install dir>/` of `http://127.0.0.1/<your install dir>/`.<br><br>- `{{base_url}}` die een basis-URL vertegenwoordigt die wordt gedefinieerd door een virtuele host-instelling of door een virtualisatieomgeving zoals Docker. Als u bijvoorbeeld een virtuele host instelt met de hostnaam commerce.example.com, kunt u de toepassing installeren met `--base-url={{base_url}}` en heb toegang tot Admin met een URL als `http://commerce.example.com/admin`. | Ja |
-| `--backend-frontname` | Uniform Resource Identifier (URI) voor toegang tot de beheerder. U kunt deze parameter weglaten om de toepassing een willekeurige URI voor u met het volgende patroon admin_jkhgdfq te laten produceren</code>.<br><br>We raden een willekeurige URI aan voor beveiligingsdoeleinden. Willekeurige URI is moeilijker voor hakkers of kwaadwillige software om te exploiteren.<br><br>De URI wordt weergegeven aan het einde van de installatie. U kunt deze later op elk gewenst moment weergeven met de `magento info:adminuri` gebruiken.<br><br>Als u ervoor kiest een waarde in te voeren, raden we u aan geen algemeen woord te gebruiken zoals admin, backend. De Admin URI kan alfanumerieke waarden en het onderstrepingsteken (`_`alleen ). | Nee |
-| `--db-host` | Voer een van de volgende handelingen uit:<br><br>- De volledig gekwalificeerde hostnaam of IP-adres van de databaseserver.<br><br>- `localhost` (standaardwaarde) of `127.0.0.1` als uw databaseserver zich op dezelfde host bevindt als uw webserver.localhost betekent, gebruikt de MySQL-clientbibliotheek UNIX-sockets om verbinding te maken met de database. `127.0.0.1` veroorzaakt de cliëntbibliotheek om het protocol van TCP te gebruiken. Raadpleeg voor meer informatie over sockets de [PHP-documentatie over BOB_MYSQL](https://www.php.net/manual/en/ref.pdo-mysql.php).<br><br>**Opmerking:** U kunt desgewenst de poort van de databaseserver in de hostnaam opgeven, bijvoorbeeld www.example.com:9000 | Ja |
+| `--backend-frontname` | Uniform Resource Identifier (URI) voor toegang tot de beheerder. U kunt deze parameter weglaten zodat de toepassing een willekeurige URI met het volgende patroon kan genereren <code>admin_jkhgdfq</code>.<br><br>We raden een willekeurige URI aan voor beveiligingsdoeleinden. Willekeurige URI is moeilijker voor hakkers of kwaadwillige software om te exploiteren.<br><br>De URI wordt weergegeven aan het einde van de installatie. U kunt deze later op elk gewenst moment weergeven met de `magento info:adminuri` gebruiken.<br><br>Als u ervoor kiest een waarde in te voeren, raden we u aan geen algemeen woord te gebruiken zoals admin, backend. De Admin URI kan alfanumerieke waarden en het onderstrepingsteken (`_`alleen ). | Nee |
+| `--db-host` | Voer een van de volgende handelingen uit:<br><br>- De volledig gekwalificeerde hostname of IP van de databaseserver.<br><br>- `localhost` (standaardwaarde) of `127.0.0.1` als uw databaseserver zich op dezelfde host bevindt als uw webserver.localhost betekent, gebruikt de MySQL-clientbibliotheek UNIX-sockets om verbinding te maken met de database. `127.0.0.1` veroorzaakt de cliëntbibliotheek om het protocol van TCP te gebruiken. Raadpleeg voor meer informatie over sockets de [PHP-documentatie over BOB_MYSQL](https://www.php.net/manual/en/ref.pdo-mysql.php).<br><br>**Opmerking:** U kunt desgewenst de poort van de databaseserver in de hostnaam opgeven, bijvoorbeeld www.example.com:9000 | Ja |
 | `--db-name` | Naam van de database-instantie waarin u de databasetabellen wilt installeren.<br><br>Standaard is `magento2`. | Ja |
 | `--db-user` | Gebruikersnaam van de eigenaar van de databaseinstantie.<br><br>Standaard is `root`. | Ja |
 | `--db-password` | Het wachtwoord van de eigenaar van de databaseinstantie. | Ja |
@@ -103,7 +103,7 @@ In Adobe Commerce versie 2.2.8 en hoger kunt u tijdens of na de installatie de b
 | `--db-ssl-ca` | Pad naar het servercertificaat. | Nee |
 | `--language` | Taalcode die moet worden gebruikt in Admin en storefront. (Als u dit nog niet hebt gedaan, kunt u de lijst met taalcodes weergeven door `magento info:language:list` uit de map bin.) | Nee |
 | `--currency` | Standaardvaluta voor gebruik in de winkel. (Als u dit nog niet hebt gedaan, kunt u de lijst met valuta&#39;s weergeven door `magento info:currency:list` uit de map bin.) | Nee |
-| `--timezone` | Standaardtijdzone die moet worden gebruikt in Admin en storefront. (Als u dit nog niet hebt gedaan, kunt u de lijst met tijdzones weergeven door `magento info:timezone:list` uit de map bin.) | Nee |
+| `--timezone` | Standaardtijdzone die moet worden gebruikt in Admin en Storage. (Als u dit nog niet hebt gedaan, kunt u de lijst met tijdzones weergeven door `magento info:timezone:list` uit de map bin.) | Nee |
 | `--use-rewrites` | `1` betekent dat u herschrijvingen van webservers gebruikt voor gegenereerde koppelingen in de winkel en in Admin.<br><br>`0` Hiermee schakelt u het gebruik van herschrijvingen van webservers uit. Dit is de standaardinstelling. | Nee |
 | `--use-secure` | `1` laat het gebruik van de Veilige Laag van Contactdozen (SSL) in opslag URLs toe. Zorg ervoor dat uw webserver SSL ondersteunt voordat u deze optie selecteert.<br><br>`0` schakelt het gebruik van SSL uit. In dit geval wordt aangenomen dat alle andere veilige URL-opties ook 0 zijn. Dit is de standaardinstelling. | Nee |
 | `--base-url-secure` | Beveilig basis-URL voor toegang tot uw Admin en winkel in de volgende indeling: `http[s]://<host or ip>/<your install dir>/` | Nee |
@@ -148,7 +148,7 @@ In Adobe Commerce versie 2.2.8 en hoger kunt u tijdens of na de installatie de b
 
 | Naam | Beschrijving | Vereist? |
 |--- |--- |--- |
-| `remote-storage-driver` | Naam adapter<br>Mogelijke waarden:<br>**file**: Hiermee wordt externe opslag uitgeschakeld en wordt het lokale bestandssysteem gebruikt <br>**aws-s3**: Gebruik de [Amazon Simple Storage Service (Amazon S3)](https://aws.amazon.com/s3/) | Nee |
+| `remote-storage-driver` | Naam adapter<br>Mogelijke waarden:<br>**file**: Schakelt externe opslag uit en gebruikt het lokale bestandssysteem <br>**aws-s3**: Gebruik de [Amazon Simple Storage Service (Amazon S3)](https://aws.amazon.com/s3/) | Nee |
 | `remote-storage-bucket` | Objectopslag of containernaam | Nee |
 | `remote-storage-prefix` | Optioneel voorvoegsel (locatie binnen opslag van object) | Nee |
 | `remote-storage-region` | Naam regio | Nee |
@@ -161,8 +161,8 @@ In Adobe Commerce versie 2.2.8 en hoger kunt u tijdens of na de installatie de b
 |--- |--- |--- |
 | `--lock-provider` | Naam provider vergrendelen.<br><br>Beschikbare vergrendelingsproviders: `db`, `zookeeper`, `file`.<br><br>De standaardvergrendelingsprovider: `db` | Nee |
 | `--lock-db-prefix` | Het specifieke db voorvoegsel om vergrendelingsconflicten te voorkomen bij gebruik `db` vergrendelingsprovider.<br><br>De standaardwaarde: `NULL` | Nee |
-| `--lock-zookeeper-host` | Gastheer en haven om met de cluster van Zookeeper te verbinden wanneer u gebruikt `zookeeper` vergrendelingsprovider.<br><br>Bijvoorbeeld: `127.0.0.1:2181` | Ja, als u `--lock-provider=zookeeper` |
-| `--lock-zookeeper-path` | Het pad waar Zookeeper sloten opslaat.<br><br>Het standaardpad is: `/magento/locks` | Nee |
+| `--lock-zookeeper-host` | Host en poort voor verbinding met Zookeeper-cluster wanneer u `zookeeper` vergrendelingsprovider.<br><br>Bijvoorbeeld: `127.0.0.1:2181` | Ja, als u `--lock-provider=zookeeper` |
+| `--lock-zookeeper-path` | Het pad waar Zookeeper vergrendelingen opslaat.<br><br>Het standaardpad is: `/magento/locks` | Nee |
 | `--lock-file-path` | Het pad waar de bestandsvergrendelingen worden opgeslagen. | Ja, als u `--lock-provider=file` |
 
 **Configuratieopties van de consument:**
@@ -185,20 +185,20 @@ In de volgende voorbeelden ziet u de opdrachten voor het lokaal installeren van 
 
 In het volgende voorbeeld wordt de toepassing met de volgende opties geïnstalleerd:
 
-* De toepassing wordt geïnstalleerd in de `magento2` directory relatief ten opzichte van de webserverhoofdmap op `localhost` en het pad naar de beheerder is `admin`; derhalve:
+* De toepassing wordt geïnstalleerd in het dialoogvenster `magento2` directory relatief ten opzichte van de webserverhoofdmap op `localhost` en het pad naar de beheerder is `admin`; derhalve
 
-   De URL van je winkel is `http://127.0.0.1`
+  De URL van je winkel is `http://127.0.0.1`
 
 * De databaseserver bevindt zich op dezelfde host als de webserver.
 
-   De databasenaam is `magento`en de gebruikersnaam en het wachtwoord beide zijn `magento`
+  De databasenaam is `magento`en de gebruikersnaam en het wachtwoord beide zijn `magento`
 
 * Gebruikt herschrijvingen van server
 
 * De beheerder heeft de volgende eigenschappen:
 
    * Voor- en achternamen zijn `Commerce User`
-   * Gebruikersnaam is `admin` en het wachtwoord `admin123`
+   * Gebruikersnaam is `admin` en het wachtwoord is `admin123`
    * E-mailadres is `user@example.com`
 
 * Standaardtaal is `en_US` (V.S. Engels)
@@ -255,18 +255,18 @@ Na de installatie kunt u een beheerder maken met de `admin:user:create` opdracht
 
 In het volgende voorbeeld wordt de toepassing met de volgende opties geïnstalleerd:
 
-* De Magapplication wordt geïnstalleerd in `magento2` directory relatief ten opzichte van de webserverhoofdmap op `localhost` en het pad naar de beheerder is `admin`; derhalve:
+* De Magapplication wordt geïnstalleerd in `magento2` directory relatief ten opzichte van de webserverhoofdmap op `localhost` en het pad naar de beheerder is `admin`; derhalve
 
-   De URL van je winkel is `http://127.0.0.1`
+  De URL van je winkel is `http://127.0.0.1`
 
 * De databaseserver bevindt zich op dezelfde host als de webserver.
 
-   De databasenaam is `magento`en de gebruikersnaam en het wachtwoord beide zijn `magento`
+  De databasenaam is `magento`en de gebruikersnaam en het wachtwoord beide zijn `magento`
 
 * De beheerder heeft de volgende eigenschappen:
 
    * Voor- en achternamen zijn `Commerce User`
-   * Gebruikersnaam is `admin` en het wachtwoord `admin123`
+   * Gebruikersnaam is `admin` en het wachtwoord is `admin123`
    * E-mailadres is `user@example.com`
 
 * Standaardtaal is `en_US` (V.S. Engels)

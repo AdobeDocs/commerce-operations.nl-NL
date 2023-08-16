@@ -46,7 +46,7 @@ Opdrachtopties:
 bin/magento support:backup:code [--name=<file name>] [-o|--output=<path>] [-l|--logs]
 ```
 
-Waar:
+Waarbij:
 
 - **`--name`** geeft de naam van het dump-bestand op (optioneel). Als u deze parameter weglaat, is het dumpdossier tijd en datum-gestempeld.
 - **`-o|--output=<path>`** is het absolute pad van het bestandssysteem voor het opslaan van de back-up (vereist).
@@ -72,12 +72,12 @@ Opdrachtopties:
 bin/magento support:backup:db [--name=<name>] [-o|--output=<path>] [-l|--logs] [-i|--ignore-sanitize]
 ```
 
-Waar:
+Waarbij:
 
 - **`--name`** geeft de naam van het dump-bestand op (optioneel). Als u deze parameter weglaat, is het dumpdossier tijd en datum-gestempeld.
 - **`-o|--output=<path>` is het absolute pad van het bestandssysteem voor het opslaan van de back-up (vereist).
 - **`-l|--logs`** bevat logbestanden (optioneel).
-- **`-i|--ignore-sanitize`** de bewaring van gegevens; Laat de vlag weg om gevoelige gegevens te hakken die in het gegevensbestand worden opgeslagen wanneer het creëren van de steun (facultatief).
+- **`-i|--ignore-sanitize`** betekent dat gegevens behouden blijven; laat de vlag weg om gevoelige gegevens te hakken die in het gegevensbestand worden opgeslagen wanneer het creëren van de steun (facultatief).
 
 De gevoelige gegevens omvatten klanteninformatie van de volgende gegevensbestandlijsten:
 
@@ -96,7 +96,7 @@ De gevoelige gegevens omvatten klanteninformatie van de volgende gegevensbestand
 
 Nadat het bevel voltooit, verstrek de gegevensbestandsteun aan de Steun van Adobe Commerce.
 
-## Problemen oplossen: weergavehulpprogramma&#39;s en paden
+## Problemen oplossen: hulpprogramma&#39;s en paden weergeven
 
 Wij verstrekken bevelen die wegen aan nut tonen die door de Collector van Gegevens en de bevellijn worden vereist. U kunt deze opdrachten bijvoorbeeld gebruiken als er fouten optreden zoals in de volgende weergave in Beheer of op de opdrachtregel:
 

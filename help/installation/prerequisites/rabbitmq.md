@@ -1,6 +1,6 @@
 ---
 title: Berichtenmakelaar
-description: Voer de volgende stappen uit om de vereiste berichtbrokersoftware te installeren en te configureren (zoals [!DNL RabbitMQ]) voor installaties in Adobe Commerce en Magento Open Source.
+description: Voer de volgende stappen uit om de vereiste berichtbrokersoftware (zoals [!DNL RabbitMQ]) voor installaties ter plaatse in Adobe Commerce en Magento Open Source.
 exl-id: ae6200d6-540f-46b3-92ba-7df7f6bb6fae
 source-git-commit: 95ffff39d82cc9027fa633dffedf15193040802d
 workflow-type: tm+mt
@@ -32,7 +32,7 @@ Om te installeren [!DNL RabbitMQ] Voer op Ubuntu 16 de volgende opdracht in:
 sudo apt install -y rabbitmq-server
 ```
 
-Met deze opdracht installeert u ook de vereiste Erlang-pakketten.
+Deze opdracht installeert ook de vereiste Erlang-pakketten.
 
 Als u een oudere versie van Ubuntu hebt, [!DNL RabbitMQ] raadt u aan het pakket vanaf hun website te installeren.
 
@@ -49,7 +49,7 @@ Zie [Installeren op Debian/Ubuntu](https://www.rabbitmq.com/install-debian.html)
 
 Zie [Handmatige installatie](https://www.erlang-solutions.com/downloads/) voor meer informatie .
 
-Zie de [[!DNL RabbitMQ]/Erlang-versiematrix](https://www.rabbitmq.com/which-erlang.html) om de juiste versie te installeren.
+Zie de [[!DNL RabbitMQ]/Erlang version matrix](https://www.rabbitmq.com/which-erlang.html) om de juiste versie te installeren.
 
 ### Installeren [!DNL RabbitMQ]
 
@@ -77,7 +77,7 @@ Als u Adobe Commerce of Magento Open Source installeert _na_ u installeert [!DNL
 --amqp-host="<hostname>" --amqp-port="5672" --amqp-user="<user_name>" --amqp-password="<password>" --amqp-virtualhost="/"
 ```
 
-Waar:
+Waarbij:
 
 | Parameter | Beschrijving |
 |--- |--- |
@@ -112,7 +112,7 @@ U kunt ook instellen [!DNL RabbitMQ] configuratiewaarden gebruiken `bin/magento 
 bin/magento setup:config:set --amqp-host="rabbitmq.example.com" --amqp-port="11213" --amqp-user="magento" --amqp-password="magento" --amqp-virtualhost="/"
 ```
 
-Nadat u de opdracht hebt uitgevoerd of de opdracht hebt bijgewerkt `<install_directory>/app/etc/env.php` bestand met AMQP-configuratiewaarden, uitvoeren `bin/magento setup:upgrade` om de wijzigingen toe te passen en de vereiste wachtrijen en uitwisselingen te maken in [!DNL RabbitMQ].
+Nadat u de opdracht hebt uitgevoerd of de opdracht hebt bijgewerkt `<install_directory>/app/etc/env.php` bestand met AMQP-configuratiewaarden, uitvoeren `bin/magento setup:upgrade` om de veranderingen toe te passen en de vereiste rijen en de uitwisselingen tot stand te brengen binnen [!DNL RabbitMQ].
 
 ## SSL configureren
 

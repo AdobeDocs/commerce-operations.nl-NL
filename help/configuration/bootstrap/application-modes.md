@@ -24,7 +24,7 @@ Zie [De bewerkingsmodus instellen](../cli/set-mode.md) voor informatie over het 
 
 ## Ondersteuning voor cloud
 
-Het is niet nodig om de toepassingsmodi voor een project van de wolkeninfrastructuur te beheren. Vanwege het alleen-lezen bestandssysteem kunt u geen modi wijzigen in externe cloudomgevingen. Adobe Commerce on cloud Infrastructure voert de toepassing automatisch uit in _onderhoud_ wijze tijdens een plaatsing, die uw plaats offline neemt tot de plaatsing volledig is. Anders blijft de toepassing in _productie_ in. Zie [Implementatieproces](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/deploy/process.html#deploy-phase) in de _Handleiding Handel in Cloud-infrastructuur_.
+Het is niet nodig om de toepassingsmodi voor een project van de wolkeninfrastructuur te beheren. Vanwege het alleen-lezen bestandssysteem kunt u geen modi wijzigen in externe cloudomgevingen. Adobe Commerce on cloud Infrastructure voert de toepassing automatisch uit in _onderhoud_ wijze tijdens een plaatsing, die uw plaats offline neemt tot de plaatsing volledig is. Anders blijft de toepassing in _productie_ -modus. Zie [Implementatieproces](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/deploy/process.html#deploy-phase) in de _Handleiding Handel in Cloud-infrastructuur_.
 
 Als u Cloud Docker voor Handel als ontwikkelingsinstrument gebruikt, kunt u uw cloudinfrastructuurproject in een Docker-omgeving implementeren in _ontwikkelaar_ , maar de prestaties zijn trager als gevolg van extra bewerkingen voor bestandssynchronisatie. Zie [De Docker-omgeving implementeren](https://developer.adobe.com/commerce/cloud-tools/docker/deploy/#launch-mode) in de _Handleiding Cloud Docker voor handel_.
 
@@ -57,7 +57,7 @@ In de modus Ontwikkelaar:
 
 De _productie_ De wijze is best voor het opstellen van de toepassing van de Handel op een productiesysteem. Nadat u de serveromgeving, zoals de database en de webserver, hebt geoptimaliseerd, moet u de opdracht [hulpmiddel voor het implementeren van statische weergavebestanden](../cli/static-view-file-deployment.md) om statische weergavebestanden naar de `pub/static` directory. Dit verbetert prestaties door alle noodzakelijke statische dossiers bij plaatsing te verstrekken in plaats van de toepassing van de Handel te dwingen om dynamisch van statische dossiers de plaats te bepalen en te kopiëren (materialiseren) tijdens runtime.
 
-Sommige gebieden, zoals de Geavanceerde en secties van de de systeemconfiguratie van de Ontwikkelaar in Admin, zijn niet beschikbaar op productiemodus. U kunt bijvoorbeeld _kan_ Schakel cachetypen in of uit met behulp van Admin. U kunt cachetypen in- en uitschakelen _alleen_ met de [opdrachtregel](../cli/manage-cache.md#config-cli-subcommands-cache-en).
+Sommige gebieden, zoals de Geavanceerde en secties van de de systeemconfiguratie van de Ontwikkelaar in Admin, zijn niet beschikbaar op productiemodus. U kunt bijvoorbeeld _kan_ Schakel cachetypen in of uit met behulp van Admin. U kunt castypen in- en uitschakelen _alleen_ met de [opdrachtregel](../cli/manage-cache.md#config-cli-subcommands-cache-en).
 
 In de productiemodus:
 

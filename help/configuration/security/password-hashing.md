@@ -26,7 +26,7 @@ Wanneer `version<n>`...`version<n>` vertegenwoordigt alle versies van hashalgori
 a853b06f077b686f8a3af80c98acfca763cf10c0e03597c67e756f1c782d1ab0:8qnyO4H1OYIfGCUb:1:2
 ```
 
-Het eerste deel vertegenwoordigt de wachtwoordhash. De tweede, `8qnyO4H1OYIfGCUb` is het zout. De laatste twee zijn de verschillende knoeiboelalgoritmen: 1 is `SHA256` en 2 `Argon 2ID13`. Dit betekent dat het wachtwoord van de klant oorspronkelijk is gehasht met `SHA256` en daarna werd het algoritme bijgewerkt met `Argon 2ID13` en de hash werd opgepakt met Argon.
+Het eerste deel vertegenwoordigt de wachtwoordhash. De tweede, `8qnyO4H1OYIfGCUb` is het zout. De laatste twee zijn de verschillende hash-algoritmen: 1 is `SHA256` en 2 `Argon 2ID13`. Dit betekent dat het wachtwoord van de klant oorspronkelijk is gehasht met `SHA256` en daarna werd het algoritme bijgewerkt met `Argon 2ID13` en de hash werd opgepakt met Argon.
 
 ## Hash-strategie bijwerken
 
@@ -57,7 +57,7 @@ def verify(password, hash):
     return compare(restored, hash)
 ```
 
-Aangezien de Handel alle gebruikte versies van de wachtwoordknoeiboel samen met de wachtwoordknoeiboel opslaat, kunnen wij de volledige knoeiboel tijdens de wachtwoordcontrole herstellen. Het mechanisme van de knoeiboelcontrole is gelijkaardig aan de strategie van de knoeiboelverbetering: gebaseerd op versies die samen met de wachtwoordhash worden opgeslagen, produceert het algoritme hashes van het verstrekte wachtwoord en keert het vergelijkingsresultaat tussen hashed wachtwoord en het gegevensbestand-opgeslagen knoeiboel terug.
+Aangezien de Handel alle gebruikte versies van de wachtwoordknoeiboel samen met de wachtwoordknoeiboel opslaat, kunnen wij de volledige knoeiboel tijdens de wachtwoordcontrole herstellen. Het mechanisme van de knoeiboelverificatie is gelijkaardig aan de strategie van de knoeiboelverbetering: gebaseerd op versies die samen met de wachtwoordknoeiboel worden opgeslagen, produceert het algoritme hashes van het verstrekte wachtwoord en keert het vergelijkingsresultaat tussen hashed wachtwoord en de gegevensbestand-opgeslagen knoeiboel terug.
 
 ## Implementatie
 

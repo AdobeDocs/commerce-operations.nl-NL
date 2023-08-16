@@ -15,7 +15,7 @@ ht-degree: 0%
 Voordat u deze opdracht kunt gebruiken, moet u het volgende doen:
 
 - [De implementatieconfiguratie maken](deployment.md)
-- [Laat minstens de Magento_Authorization en Magento_User modules toe](manage-modules.md)
+- [Laat minstens Magento_Authorization en Magento_User modules toe](manage-modules.md)
 - Het databaseschema maken
 
 >[!NOTE]
@@ -24,7 +24,7 @@ Voordat u deze opdracht kunt gebruiken, moet u het volgende doen:
 
 ## Beheerders maken of bewerken
 
-Gebruik deze opdracht om een beheerder te maken of een bestaande beheerder te bewerken.
+Gebruik deze opdracht om een beheerder te maken of om een bestaande beheerder te bewerken.
 
 >[!NOTE]
 >
@@ -40,9 +40,9 @@ In de volgende tabel worden parameters en waarden gedefinieerd:
 
 | Naam | Waarde | Vereist? |
 |--- |--- |--- |
-| `--admin-firstname` | Voornaam beheerder. | Ja |
+| `--admin-firstname` | Voornaam van beheerder. | Ja |
 | `--admin-lastname` | Achternaam van beheerder. | Ja |
-| `--admin-email` | E-mailadres van beheerder. | Ja |
+| `--admin-email` | E-mailadres van de beheerder. | Ja |
 | `--admin-user` | Gebruikersnaam beheerder. | Ja |
 | `--admin-password` | Beheerderswachtwoord. Het wachtwoord moet ten minste 7 tekens lang zijn en ten minste één alfabetisch en numeriek teken bevatten. <br><br>We raden een langer, complexer wachtwoord aan. Als de wachtwoordtekenreeks speciale tekens bevat die letterlijke interpretatie vereisen (zoals backslashes of spaties), plaatst u het wachtwoord tussen enkele aanhalingstekens. | Ja |
 | `--magento-init-params` | Toevoegen aan elke opdracht om de initialisatieparameters van de toepassing aan te passen<br/><br/>Bijvoorbeeld: `MAGE_MODE=developer&MAGE_DIRS[base][path]=/var/www/example.com&MAGE_DIRS[cache][path]=/var/tmp/cache` | Nee |
@@ -87,7 +87,7 @@ Created Magento administrator user named j.doe
 
 ## Een beheerdersaccount ontgrendelen
 
-Gebruik deze opdracht om de account te ontgrendelen van een beheerder die is vergrendeld, meestal als gevolg van meerdere onjuiste aanmeldingspogingen.
+Gebruik deze opdracht om de account te ontgrendelen van een beheerder die is vergrendeld, meestal vanwege meerdere onjuiste aanmeldingspogingen.
 
 ```bash
 bin/magento admin:user:unlock {username}

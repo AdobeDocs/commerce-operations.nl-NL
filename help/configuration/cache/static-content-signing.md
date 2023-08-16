@@ -1,6 +1,6 @@
 ---
 title: Statische inhoudcache
-description: Krijg inzicht in het ondertekenen van statische inhoud en hoe u de functie kunt in- of uitschakelen.
+description: U krijgt inzicht in het ondertekenen van statische inhoud en in de manier waarop u de functie kunt in- of uitschakelen.
 feature: Configuration, Cache, SCD
 exl-id: b54ceea2-b3a1-4dbb-ba87-743f2af0d2fb
 source-git-commit: a2bd4139aac1044e7e5ca8fcf2114b7f7e9e9b68
@@ -13,7 +13,7 @@ ht-degree: 0%
 # Statische inhoudcache
 
 Om de prestaties te verbeteren, stelt de Handel `Expires` headers voor statische bronnen, zoals afbeeldingen, JavaScript- en CSS-bestanden.
-De instelling `Expires` header op een statische resource vertelt de browser dat de resource op die URL in cache moet worden geplaatst en dat de versie in de cache moet worden verzonden totdat deze verloopt.
+De instelling van `Expires` header op een statische resource vertelt de browser om de resource in de cache op die URL te plaatsen en de versie in de cache te leveren tot deze is verlopen.
 Dit is een algemene [beste praktijken](https://developer.yahoo.com/performance/rules.html#expires=) voor het in cache plaatsen van statische bronnen.
 
 Wanneer de browser een statische bron in cache plaatst en die resource op de server verandert, moet u het cachegeheugen van de browser wissen, zodat de nieuwe versie kan worden gedownload.
@@ -33,7 +33,7 @@ http://magento2.com/pub/static/version1475604434/frontend/Magento/luma/en_US/ima
 Wanneer u de opdracht uitvoert [`setup:static-content:deploy`](../cli/static-view-file-deployment.md) om statische inhoud op te stellen, verandert de Handel automatisch de plaatsingsversie.
 Hierdoor wordt de URL van de statische bestanden gewijzigd en wordt de browser gedwongen de nieuwe versie van de bestanden te laden.
 
-De handel laat deze eigenschap door gebrek toe, en Adobe raadt aan om deze eigenschap te houden die kwesties met betrekking tot browsers te verhinderen die omhoog oude statische middelen dienen.
+De handel laat deze eigenschap door gebrek toe, en de Adobe adviseert die eigenschap wordt toegelaten om kwesties te verhinderen met betrekking tot browsers die omhoog oude statische middelen dienen.
 
 U kunt de configuratie voor deze functie vinden in [**[!UICONTROL Stores]**> Instellingen > Configuratie >**[!UICONTROL Advanced]**>**[!UICONTROL Developer]**>**[!UICONTROL Static Files Settings]**](https://docs.magento.com/user-guide/system/static-file-signature.html).
 

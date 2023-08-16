@@ -1,12 +1,12 @@
 ---
 title: Naar aangepast logbestand schrijven
-description: Leer aangepaste logbestanden instellen.
+description: Leer aangepaste logbestanden in te stellen.
 feature: Configuration, Logs
-badge: label="Bijgedragen door Atwix" type="Informatief" url="https://www.atwix.com/" tooltip="Atwix"
+badge: label="Bijgedragen door Atwix" type="Informative" url="https://www.atwix.com/" tooltip="Atwix"
 exl-id: 875f45e7-30c9-4b1b-afe9-d1a8d51ccdf0
 source-git-commit: 991bd5fb34a2ffe61aa194ec46e2b04b4ce5b3e7
 workflow-type: tm+mt
-source-wordcount: '405'
+source-wordcount: '400'
 ht-degree: 0%
 
 ---
@@ -203,7 +203,7 @@ In dit voorbeeld wordt getoond hoe u een aangepaste logboekafhandelingsklasse ku
    ...
    ```
 
-De berichten van de uitzondering worden het programma geopend in `/var/log/my_custom_logger/error.log` bestand.
+Uitzonderingsberichten worden aangemeld bij de `/var/log/my_custom_logger/error.log` bestand.
 
 <!-- link definitions -->
 

@@ -24,7 +24,7 @@ Zie voor meer informatie over Varnish:
 
 - [De Big Varnish Picture]
 - [Opstartopties vervagen]
-- [Vernish en de Prestaties van de Website]
+- [Vernish en Websites]
 
 ## Varnish topologiediagram
 
@@ -45,56 +45,58 @@ Dit onderwerp bespreekt hoe te om Varnish met een minimale reeks parameters aanv
 Het proces kan als volgt worden samengevat:
 
 1. Installeer Varnish en test het door tot om het even welke pagina van de Handel toegang te hebben om te zien of krijgt u de antwoordkopballen van HTTP die erop wijzen Varnish werkt.
-1. Installeer de software van de Handel en gebruik Admin om een de configuratiedossier van Varnish tot stand te brengen.
+1. Installeer de software van de Handel en gebruik Admin om een de configuratiedossier van de Varnish tot stand te brengen.
 1. Vervang het bestaande Varnish-configuratiebestand door het bestand dat door de beheerder is gegenereerd.
 1. Test alles opnieuw.
 
    Als er niets in uw `<magento_root>/var/page_cache` directory, hebt u Varnish met Handel met succes gevormd!
 
 >[!NOTE]
+>
 - Behalve waar genoteerd, moet u alle bevelen ingaan die in dit onderwerp als gebruiker met worden besproken `root` rechten.
+>
 - Dit onderwerp is geschreven voor Varnish op CentOS en Apache 2.4. Als u Varnish in een verschillende omgeving instelt, kunnen sommige opdrachten anders zijn. Raadpleeg de documentatie bij Varnish voor meer informatie.
-
 
 ## Bekende problemen
 
 We kennen de volgende kwesties met Varnish:
 
-- [Varnish biedt geen ondersteuning voor SSL]
+- [Varnish ondersteunt SSL niet]
 
-   Als alternatief, gebruiksSSL beëindiging of een SSL beëindigingsvolmacht.
+  Als alternatief, gebruiksSSL beëindiging of een SSL beëindigingsvolmacht.
 
 - Als u de inhoud van het dialoogvenster `<magento_root>/var/cache` directory, moet u Varnish opnieuw beginnen.
 
 - Mogelijke fout bij het installeren van Commerce:
 
-   ```terminal
-   Error 503 Service Unavailable
-   Service Unavailable
-   XID: 303394517
-   Varnish cache server
-   ```
+  ```terminal
+  Error 503 Service Unavailable
+  Service Unavailable
+  XID: 303394517
+  Varnish cache server
+  ```
 
-   Als deze fout optreedt, bewerkt u `default.vcl` en voeg een time-out toe aan de `backend` stanza, als hieronder:
+  Als deze fout optreedt, bewerkt u `default.vcl` en voeg een onderbreking aan toe `backend` stanza, als hieronder:
 
-   ```conf
-   backend default {
-       .host = "127.0.0.1";
-       .port = "8080";
-       .first_byte_timeout = 600s;
-   }
-   ```
+  ```conf
+  backend default {
+      .host = "127.0.0.1";
+      .port = "8080";
+      .first_byte_timeout = 600s;
+  }
+  ```
 
 ## Overzicht van het in cache plaatsen van Varnish
 
 Varnish caching werkt met Commerce met behulp van:
 
-- [`nginx.conf.sample`](https://github.com/magento/magento2/blob/2.4/nginx.conf.sample) van de Magento 2 bewaarplaats van GitHub
+- [`nginx.conf.sample`](https://github.com/magento/magento2/blob/2.4/nginx.conf.sample) van Magento 2 de bewaarplaats van GitHub
 - `.htaccess` gedistribueerd configuratiebestand voor Apache dat bij de Handel wordt geleverd
-- `default.vcl` configuratie voor Varnish die wordt gegenereerd met de [Beheer](../cache/configure-varnish-commerce.md)
+- `default.vcl` configuratie voor Varnish die wordt gegenereerd met de [Beheerder](../cache/configure-varnish-commerce.md)
 
 >[!INFO]
-Dit onderwerp behandelt slechts de standaardopties in de voorafgaande lijst. Er zijn vele andere manieren om caching in complexe scenario&#39;s (bijvoorbeeld, gebruikend een Netwerk van de Levering van de Inhoud) te vormen; deze methoden vallen buiten het toepassingsgebied van deze gids .
+>
+Dit onderwerp behandelt slechts de standaardopties in de voorafgaande lijst. Er zijn vele andere manieren om caching in complexe scenario&#39;s (bijvoorbeeld, gebruikend een Netwerk van de Levering van de Inhoud) te vormen; die methodes zijn voorbij het werkingsgebied van deze gids.
 
 Op het eerste browser verzoek, worden de cacheable activa geleverd aan cliëntbrowser van Varnish en caching op browser.
 
@@ -117,6 +119,7 @@ In de volgende afbeelding ziet u een voorbeeld met een browsercontrole:
 In het voorgaande voorbeeld wordt een aanvraag voor de hoofdpagina storefront getoond (`m2_ce_my`). CSS- en JavaScript-elementen worden in cache geplaatst in de clientbrowser.
 
 >[!NOTE]
+>
 De meeste statische elementen hebben een HTTP 200 (OK)-statuscode die aangeeft dat het element van de server is opgehaald.
 
 ### Tweede browserverzoek
@@ -139,7 +142,7 @@ Daarnaast worden statische elementen geretourneerd met de HTTP-statuscode 304 (N
 
 ![De HTTP 304 (Niet Gewijzigd) antwoordcode wijst op het statische element in het lokale geheime voorgeheugen het zelfde als op de server is](../../assets/configuration/varnish-304.png)
 
-De 304-statuscode treedt op omdat de gebruiker de lokale cache ongeldig heeft gemaakt en de inhoud op de server niet is gewijzigd. Vanwege de 304-statuscode is het statische element _content_ niet wordt overgedragen; alleen HTTP-headers worden naar de browser gedownload.
+De 304-statuscode treedt op omdat de gebruiker de lokale cache ongeldig heeft gemaakt en de inhoud op de server niet is gewijzigd. Vanwege de 304-statuscode is het statische element _content_ wordt niet overgedragen. Alleen HTTP-headers worden naar de browser gedownload.
 
 Als de inhoud op de server verandert, downloadt de client het statische element met een HTTP 200 (OK)-statuscode en een nieuwe ETag.
 
@@ -149,5 +152,5 @@ Als de inhoud op de server verandert, downloadt de client het statische element 
 [De Big Varnish Picture]: https://www.varnish-cache.org/docs/trunk/users-guide/intro.html
 [Varnish Cache]: https://varnish-cache.org
 [Opstartopties vervagen]: https://www.varnish-cache.org/docs/trunk/reference/varnishd.html#ref-varnishd-options
-[Vernish en de Prestaties van de Website]: https://www.varnish-cache.org/docs/trunk/users-guide/performance.html#users-performance
-[Varnish biedt geen ondersteuning voor SSL]: https://www.varnish-cache.org/docs/3.0/phk/ssl.html
+[Vernish en Websites]: https://www.varnish-cache.org/docs/trunk/users-guide/performance.html#users-performance
+[Varnish ondersteunt SSL niet]: https://www.varnish-cache.org/docs/3.0/phk/ssl.html

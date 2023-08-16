@@ -17,15 +17,15 @@ Kopieer, indien nodig, de bestaande `index.php` script voor het ingangspunt voor
 
 - U werkt op een ontwikkelcomputer (laptop, virtuele machine, enzovoort)
 
-   Er kunnen extra taken nodig zijn om meerdere websites in een gehoste omgeving te implementeren. Raadpleeg uw hostingprovider voor meer informatie.
+  Er kunnen extra taken nodig zijn om meerdere websites in een gehoste omgeving te implementeren. Neem contact op met uw hostingprovider voor meer informatie.
 
-   Er zijn extra taken nodig om Adobe Commerce in te stellen op cloudinfrastructuur. Nadat u de taken voltooit die in dit onderwerp worden besproken, zie [Meerdere websites of winkels instellen](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure-store/multiple-sites.html) in de _Handleiding Handel in Cloud-infrastructuur_.
+  Er zijn extra taken nodig om Adobe Commerce in te stellen op cloudinfrastructuur. Nadat u de taken voltooit die in dit onderwerp worden besproken, zie [Meerdere websites of winkels instellen](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure-store/multiple-sites.html) in de _Handleiding Handel in Cloud-infrastructuur_.
 
-- U gebruikt één virtuele host per website; het virtuele hostconfiguratiebestand is `/etc/httpd/httpd.conf`
+- U gebruikt één virtuele host per website; het configuratiebestand van de virtuele host is `/etc/httpd/httpd.conf`
 
-   Met verschillende versies van Apache op verschillende besturingssystemen worden virtuele hosts op verschillende manieren ingesteld. Raadpleeg de [Apache-documentatie](https://httpd.apache.org/docs/2.4/vhosts) of een netwerkbeheerder als u niet zeker bent hoe te opstelling een virtuele gastheer.
+  Met verschillende versies van Apache op verschillende besturingssystemen worden virtuele hosts op verschillende manieren ingesteld. Raadpleeg de [Apache-documentatie](https://httpd.apache.org/docs/2.4/vhosts) of een netwerkbeheerder als u niet zeker bent hoe te opstelling een virtuele gastheer.
 
-- De software Commerce is geïnstalleerd in `/var/www/html/magento2`
+- De software van de Handel wordt geïnstalleerd in `/var/www/html/magento2`
 - U hebt twee andere websites dan de standaard:
 
    - `french.mysite.mg` met websitecode `french` en archiefweergavecode `fr`
@@ -42,11 +42,11 @@ De vestiging veelvoudige opslag bestaat uit de volgende taken:
 
 Zie [Meerdere websites instellen, weergaven opslaan en opslaan in de beheerfunctie](ms-admin.md).
 
-## Stap 2: Virtuele Apache-hosts maken
+## Stap 2: virtuele Apache-hosts maken
 
-In deze sectie wordt besproken hoe u waarden kunt instellen voor `MAGE_RUN_TYPE` en `MAGE_RUN_CODE` met de Apache-servervariabele `SetEnvIf` in een virtuele host.
+In deze sectie wordt besproken hoe u waarden kunt instellen voor `MAGE_RUN_TYPE` en `MAGE_RUN_CODE` met behulp van de Apache-servervariabele `SetEnvIf` in een virtuele host.
 
-Meer informatie over `SetEnvIf`, zie:
+Voor meer informatie over `SetEnvIf`, zie:
 
 - [Apache 2.2](https://httpd.apache.org/docs/2.2/mod/mod_setenvif.html)
 - [Apache 2.4](https://httpd.apache.org/docs/2.4/mod/mod_setenvif.html)
@@ -109,12 +109,11 @@ Tenzij u DNS opstelling voor de URL van uw opslag hebt, moet u een statische rou
 
 >[!INFO]
 >
->- Er kunnen extra taken nodig zijn om meerdere websites in een gehoste omgeving te implementeren. Raadpleeg uw hostingprovider voor meer informatie.
->- Er zijn extra taken nodig om Adobe Commerce op cloudinfrastructuur in te stellen. zie [Meerdere Cloud-websites of -winkels instellen](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure-store/multiple-sites.html) in de _Handleiding Handel in Cloud-infrastructuur_.
-
+>- Er kunnen extra taken nodig zijn om meerdere websites in een gehoste omgeving te implementeren. Neem contact op met uw hostingprovider voor meer informatie.
+>- Er zijn aanvullende taken nodig om Adobe Commerce in te stellen op cloudinfrastructuur. Zie [Meerdere Cloud-websites of -winkels instellen](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure-store/multiple-sites.html) in de _Handleiding Handel in Cloud-infrastructuur_.
 
 ### Problemen oplossen
 
-- Als uw Franse en Duitse sites 404s retourneren maar uw Admin-account wordt geladen, moet u de handeling voltooien [Stap 6: De code van de winkel toevoegen aan de basis-URL](ms-admin.md#step-6-add-the-store-code-to-the-base-url).
+- Als uw Franse en Duitse sites 404s retourneren maar uw Admin-account wordt geladen, moet u de handeling voltooien [Stap 6: Voeg de winkelcode toe aan de basis-URL](ms-admin.md#step-6-add-the-store-code-to-the-base-url).
 - Als alle URL&#39;s 404 retourneren, moet u de webserver opnieuw starten.
 - Als de beheerder niet correct werkt, zorg ervoor u opstelling uw virtuele gastheren behoorlijk.

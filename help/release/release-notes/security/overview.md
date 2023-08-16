@@ -11,7 +11,7 @@ ht-degree: 0%
 
 # Opmerkingen bij de release van beveiligingspatches
 
-Meer informatie over de meest recente verbeteringen op het gebied van beveiliging in het Adobe Commerce-product en de Magento Open Source-code in de basis.
+Meer informatie over de meest recente beveiligingsverbeteringen in de Adobe Commerce-code voor producten en Magento Open Sourcen.
 
 {{other-release-info}}
 

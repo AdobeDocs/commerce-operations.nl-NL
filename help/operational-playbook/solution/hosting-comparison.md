@@ -37,7 +37,7 @@ In de volgende tabel worden de voor- en nadelen van cloudoplossingen ten opzicht
         <tr>
             <td>Kosten</td>
             <td>Mogelijk kosteneffectiever op lange termijn</td>
-            <td>Aanzienlijke upfront-hardware- en softwarekosten (cap-ex).</td>
+            <td>Aanzienlijke hardware- en softwarekosten vooraf (cap-ex).</td>
             <td>Voorspelbare abonnementsprijzen.</td>
             <td>Er is een kostenprojectie op lange termijn nodig.</td>
         </tr>
@@ -79,19 +79,19 @@ In de volgende tabel worden de voor- en nadelen van cloudoplossingen ten opzicht
         <tr>
             <td>Upgrades</td>
             <td>De organisatie kan bepalen wanneer de upgrade plaatsvindt en welke functies als onderdeel van de uitvoer worden opgenomen/uitgesloten</td>
-            <td>Tijdrovende oefening die andere werkpijpleidingen kan beïnvloeden</td>
+            <td>Tijdrovende oefening die van invloed kan zijn op andere werkpijpleidingen</td>
             <td>Snelle en voordelige oefening met lage impact op andere werkstromen</td>
             <td>SaaS-provider beheert de upgrade en de organisatie is zich niet altijd bewust van de uiteindelijke uitvoer en de impact op de site</td>
         </tr>
         <tr>
             <td></td>
             <td></td>
-            <td>kostbare oefening indien niet naar behoren beheerd</td>
+            <td>kostbare oefening indien deze niet op de juiste wijze wordt beheerd</td>
             <td></td>
             <td></td>
         </tr>
         <tr>
-            <td>Aanpassing Platform</td>
+            <td>Platformaanpassing</td>
             <td>Het platform eenvoudig aanpassen aan unieke vereisten</td>
             <td>Aanpassingen kunnen leiden tot problemen met betrouwbaarheid en softwareondersteuning</td>
             <td>SaaS-platforms zijn vrij stabiel. Updates zijn iteratief en eenvoudig te beheren</td>

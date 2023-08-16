@@ -24,10 +24,10 @@ De statische meningsdossiers worden gevestigd in `<magento_root>/pub/static` en 
 
 De plaatsing van statische meningsdossiers wordt beïnvloed door toepassingswijzen als volgt:
 
-- [Standaard](../bootstrap/application-modes.md#default-mode) en [ontwikkelaar](../bootstrap/application-modes.md#developer-mode) modi: De handel produceert hen op bestelling, maar de rest wordt in een dossier voor snelheid van toegang in het voorgeheugen ondergebracht.
-- [Productie](../bootstrap/application-modes.md#production-mode) modus: Statische bestanden zijn _niet_ gegenereerd of in cache geplaatst.
+- [Standaard](../bootstrap/application-modes.md#default-mode) en [ontwikkelaar](../bootstrap/application-modes.md#developer-mode) modi: de handel genereert deze op verzoek, maar de rest wordt in een bestand opgeslagen om de snelheid van de toegang te verhogen.
+- [Productie](../bootstrap/application-modes.md#production-mode) modus: statische bestanden zijn _niet_ gegenereerd of in cache geplaatst.
 
-U moet statische meningsdossiers aan het het dossiersysteem van de Handel manueel schrijven gebruikend het bevel dat in dit onderwerp wordt besproken; daarna kunt u machtigingen beperken om uw kwetsbaarheden te beperken en te voorkomen dat bestanden per ongeluk of kwaadwillig worden overschreven.
+U moet statische meningsdossiers aan het het dossiersysteem van de Handel manueel schrijven gebruikend het bevel in dit onderwerp wordt besproken; daarna, kunt u toestemmingen beperken om uw kwetsbaarheid te beperken en toevallig of kwaadwillig het beschrijven van dossiers te verhinderen.
 
 >[!WARNING]
 >
@@ -41,7 +41,7 @@ U moet statische meningsdossiers aan het het dossiersysteem van de Handel manuee
 
    >[!INFO]
    >
-   >Als u samenvoeging van statische weergavebestanden inschakelt in de beheerfunctie, `pub/static` het directorysysteem moet schrijfbaar zijn.
+   >Als u het samenvoegen van statische weergavebestanden inschakelt in de beheerfunctie, `pub/static` directory system must be writable.
 
    Opdrachtopties:
 
@@ -51,13 +51,13 @@ U moet statische meningsdossiers aan het het dossiersysteem van de Handel manuee
 
 De volgende lijst verklaart de parameters en de waarden van dit bevel.
 
-| Option | Beschrijving | Vereist? |
+| Optie | Beschrijving | Vereist? |
 | ------ | ----------- | --------- |
 | `<languages>` | Lijst met door spaties gescheiden [ISO-639](https://www.loc.gov/standards/iso639-2/php/code_list.php) taalcodes waarvoor statische weergavebestanden moeten worden uitgevoerd. (Standaard is `en_US`.)<br>Zoek de lijst door deze uit te voeren: `bin/magento info:language:list` | Nee |
 | `--language (-l)` | Genereer bestanden alleen voor de opgegeven talen. Als er geen optie is opgegeven, worden standaard bestanden voor alle ISO-639-taalcodes gegenereerd. U kunt de naam van één taalcode tegelijk opgeven. Standaardwaarde is **alles**.<br>Bijvoorbeeld: `--language en_US --language es_ES` | Nee |
 | `--exclude-language` | Genereer bestanden voor de opgegeven taalcodes. Als er geen optie is opgegeven, wordt standaard niets uitgesloten. U kunt de naam van één taalcode of een komma-gescheiden lijst van taalcodes specificeren. Standaardwaarde is **none**. | Nee |
 | `--theme <theme>` | Thema&#39;s waarvoor statische inhoud moet worden geïmplementeerd. Standaardwaarde is **alles**.<br>Bijvoorbeeld: `--theme Magento/blank --theme Magento/luma` | Nee |
-| `--exclude-theme <theme>` | Thema&#39;s die moeten worden uitgesloten bij het implementeren van statische inhoud. Standaardwaarde is **none**.<br>Bijvoorbeeld: `--exclude-theme Magento/blank` | Nee |
+| `--exclude-theme <theme>` | Thema&#39;s die moeten worden uitgesloten bij het implementeren van statische inhoud. Standaardwaarde is **none**.<br>Bijvoorbeeld, `--exclude-theme Magento/blank` | Nee |
 | `--area (-a)` | Alleen bestanden genereren voor de opgegeven gebieden. Als er geen optie is opgegeven, worden standaard bestanden voor alle gebieden gegenereerd. Geldige waarden zijn `adminhtml` en `frontend`. Standaardwaarde is **alles**.<br>Bijvoorbeeld: `--area adminhtml` | Nee |
 | `--exclude-area` | Genereer geen bestanden voor de opgegeven gebieden. Als er geen optie is opgegeven, wordt standaard niets uitgesloten. Standaardwaarde is **none**. | Nee |
 | `--jobs (-j)` | Schakel parallelle verwerking in met het opgegeven aantal taken. De standaardwaarde is 0 (niet in parallelle processen). Standaardwaarde is **0**. | Nee |
@@ -71,9 +71,9 @@ De volgende lijst verklaart de parameters en de waarden van dit bevel.
 | `--no-html` | Implementeer geen HTML-bestanden. | Nee |
 | `--no-misc` | Andere bestandstypen niet implementeren: MD, JBF, CSV, JSON, TXT, HTC, SWF | Nee |
 | `--no-html-minify` | Maak geen minieme HTML-bestanden. | Nee |
-| `-s <quick\|standard\|compact>` | Definieer de implementatiestrategie. Gebruik deze opties alleen als u meerdere lokale instellingen hebt.<ul><li>Gebruik de [snelle strategie](static-view-file-strategy.md#quick-strategy) om de implementatietijd te minimaliseren. Dit is de standaardoptie van het bevel als niet gespecificeerd.</li><li>Gebruik de [standaardstrategie](static-view-file-strategy.md#standard-strategy) om alle statische meningsdossiers voor alle pakketten op te stellen.</li><li>Gebruik de [compacte strategie](static-view-file-strategy.md#compact-strategy) om schijfruimte op de server te besparen.</li></ul> | Nee |
+| `-s <quick\|standard\|compact>` | De implementatiestrategie definiëren. Gebruik deze opties alleen als u meerdere lokale instellingen hebt.<ul><li>Gebruik de [snelle strategie](static-view-file-strategy.md#quick-strategy) om de implementatietijd te minimaliseren. Dit is de standaardoptie van het bevel als niet gespecificeerd.</li><li>Gebruik de [standaardstrategie](static-view-file-strategy.md#standard-strategy) om alle statische meningsdossiers voor alle pakketten op te stellen.</li><li>Gebruik de [compacte strategie](static-view-file-strategy.md#compact-strategy) om schijfruimte op de server te besparen.</li></ul> | Nee |
 | `--no-parent` | Genereer geen bestanden voor de bovenliggende thema&#39;s van het huidige thema. Het wordt sterk geadviseerd om deze vlag te gebruiken als u niet uitdrukkelijk het ouderthema van het huidige thema gebruikt u probeert op te stellen. Dit verhoogt de snelheid van het proces aanzienlijk. Deze markering is beschikbaar in Commerce 2.4.2 | Nee |
-| `--force (-f)` | Bestanden in elke modus implementeren. (standaard kan het hulpprogramma voor het implementeren van statische inhoud alleen worden uitgevoerd in de productiemodus. Gebruik deze optie als u deze wilt uitvoeren (standaard of in de ontwikkelaarsmodus). | Nee |
+| `--force (-f)` | Bestanden in elke modus implementeren. (standaard kan het hulpprogramma voor het implementeren van statische inhoud alleen worden uitgevoerd in de productiemodus. Gebruik deze optie als u deze wilt uitvoeren in de standaard- of ontwikkelmodus.) | Nee |
 
 >[!INFO]
 >
@@ -160,7 +160,7 @@ Voer hiertoe de volgende stappen uit:
 
 [Eerst de Commerce-software installeren](../../installation/overview.md); anders, kunt u niet het statische hulpmiddel van de plaatsing van meningsdossiers in werking stellen.
 
-**Symptoom**: De volgende fout wordt getoond wanneer u het statische hulpmiddel van de plaatsing van meningsdossiers in werking stelt:
+**Symptoom**: De volgende fout wordt weergegeven wanneer u het gereedschap voor de implementatie van statische weergavebestanden uitvoert:
 
 ```terminal
 ERROR: You need to install the Commerce application before running this utility.

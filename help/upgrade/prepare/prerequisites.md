@@ -45,7 +45,7 @@ Adobe Commerce vereist dat Elasticsearch of OpenSearch is geïnstalleerd om de s
 
 U kunt de opdrachtregel of de beheerder gebruiken om de zoekengine voor de catalogus te bepalen:
 
-* Voer de `bin/magento config:show catalog/search/engine` gebruiken. De opdracht retourneert een waarde van `mysql`, `elasticsearch` (wat erop wijst dat Elasticsearch 2 wordt gevormd), `elasticsearch5`, `elasticsearch6`, `elasticsearch7`of een aangepaste waarde die aangeeft dat u een zoekprogramma van derden hebt geïnstalleerd. Voor versies ouder dan 2.4.6 gebruikt u de opdracht `elasticsearch7` waarde voor de Elasticsearch 7- of OpenSearch-engine. Voor versie 2.4.6 en hoger gebruikt u de opdracht `opensearch` waarde voor de OpenSearch-engine.
+* Voer de `bin/magento config:show catalog/search/engine` gebruiken. De opdracht retourneert een waarde van `mysql`, `elasticsearch` (wat erop wijst dat Elasticsearch 2 wordt gevormd), `elasticsearch5`, `elasticsearch6`, `elasticsearch7`of een aangepaste waarde die aangeeft dat u een zoekprogramma van derden hebt geïnstalleerd. Voor versies ouder dan 2.4.6 gebruikt u de opdracht `elasticsearch7` waarde voor Elasticsearch 7 of OpenSearch motor. Voor versie 2.4.6 en hoger gebruikt u de opdracht `opensearch` waarde voor de OpenSearch-engine.
 
 * Controleer vanuit de beheerder de waarde van de **[!UICONTROL Stores]** > [!UICONTROL Settings] > **[!UICONTROL Configuration]** > **[!UICONTROL Catalog]** > **[!UICONTROL Catalog]** > **[!UICONTROL Catalog Search]** > **[!UICONTROL Search Engine]** veld.
 
@@ -68,15 +68,15 @@ Bepaalde zoekprogramma&#39;s voor catalogi van derden worden boven op de zoekfun
 
 ### Zoekmachine
 
-U moet Elasticsearch 7.6 of hoger of OpenSearch 1.2 installeren en configureren voordat u de upgrade naar 2.4.0 uitvoert. Adobe ondersteunt geen Elasticsearch 2.x, 5.x en 6.x meer. [Configuratie van zoekmachine](../../configuration/search/configure-search-engine.md) in de _Configuratiegids_ beschrijft de taken u na bevordering van Elasticsearch aan een gesteunde versie moet uitvoeren.
+U moet of Elasticsearch 7.6 of hoger of OpenSearch 1.2 installeren en vormen alvorens aan 2.4.0 te bevorderen. Adobe ondersteunt Elasticsearch 2.x, 5.x en 6.x niet meer. [Configuratie van zoekmachine](../../configuration/search/configure-search-engine.md) in de _Configuratiegids_ beschrijft de taken u na bevordering van Elasticsearch aan een gesteunde versie moet uitvoeren.
 
-Zie [Elasticsearch bijwerken](https://www.elastic.co/guide/en/elasticsearch/reference/current/setup-upgrade.html) voor volledige instructies voor het maken van back-ups van uw gegevens, het opsporen van potentiële migratiekwesties en het testen van upgrades voordat u deze implementeert naar de productie. Afhankelijk van uw huidige versie van Elasticsearch, is het mogelijk dat een volledige clusterherstart al dan niet vereist is.
+Zie [Elasticsearch bijwerken](https://www.elastic.co/guide/en/elasticsearch/reference/current/setup-upgrade.html) voor volledige instructies voor het maken van back-ups van uw gegevens, het opsporen van potentiële migratiekwesties en het testen van upgrades voordat u deze implementeert naar de productie. Afhankelijk van uw huidige versie van Elasticsearch is het mogelijk dat een volledige clusterherstart al dan niet vereist is.
 
 Voor Elasticsearch is Java Development Kit (JDK) 1.8 of hoger vereist. Zie [De JDK (Java Software Development Kit) installeren](../../installation/prerequisites/search-engine/overview.md#install-the-java-software-development-kit-jdk) om te controleren welke versie van JDK is geïnstalleerd.
 
 #### OpenSearch
 
-OpenSearch is een open-source vork van Elasticsearch 7.1.2, na een licentiewijziging van Elasticsearch. In de volgende versies van Adobe Commerce wordt ondersteuning voor OpenSearch geïntroduceerd:
+OpenSearch is een open-source vork van Elasticsearch 7.10.2, na de licentiewijziging van de Elasticsearch. In de volgende versies van Adobe Commerce wordt ondersteuning voor OpenSearch geïntroduceerd:
 
 * 2.4.6 (OpenSearch heeft een aparte module en instellingen)
 * 2.4.5
@@ -92,9 +92,9 @@ Voor OpenSearch is JDK 1.8 of hoger vereist. Zie [De JDK (Java Software Developm
 
 #### Upgrade Elasticsearch
 
-In Adobe Commerce 2.4.6 is ondersteuning voor Elasticsearch 8.x geïntroduceerd. De volgende instructies tonen een voorbeeld van het upgraden van Elasticsearch van 7.x naar 8.x:
+Ondersteuning voor Elasticsearch 8.x werd geïntroduceerd in Adobe Commerce 2.4.6. De volgende instructies tonen een voorbeeld van het upgraden van Elasticsearch van 7.x naar 8.x:
 
-1. Voer een upgrade uit van de Elasticsearch 7.x-server naar 8.x en zorg ervoor dat deze actief is. Zie de [Elasticsearch-documentatie](https://www.elastic.co/guide/en/elasticsearch/reference/current/install-elasticsearch.html).
+1. Voer een upgrade uit van de Elasticsearch 7.x-server naar 8.x en zorg ervoor dat deze actief is. Zie de [Documentatie Elasticsearch](https://www.elastic.co/guide/en/elasticsearch/reference/current/install-elasticsearch.html).
 
 1. De optie `id_field_data` veld door de volgende configuratie aan uw `elasticsearch.yml` en opnieuw starten van de Elasticsearch 8.x-service.
 
@@ -106,9 +106,9 @@ In Adobe Commerce 2.4.6 is ondersteuning voor Elasticsearch 8.x geïntroduceerd.
 
    >[!INFO]
    >
-   >Om Elasticsearch 8.x te ondersteunen, maakt Adobe Commerce 2.4.6 het `indices.id_field_data` eigenschap standaard in en gebruikt de `_id` in het `docvalue_fields` eigenschap.
+   >Om Elasticsearch 8.x te ondersteunen, maakt Adobe Commerce 2.4.6 de `indices.id_field_data` eigenschap standaard in en gebruikt de `_id` in het veld `docvalue_fields` eigenschap.
 
-1. Werk in de hoofdmap van uw Adobe Commerce-project uw Composer-afhankelijkheden bij om de `Magento_Elasticsearch7` en installeer de `Magento_Elasticsearch8` module.
+1. Werk in de hoofdmap van uw Adobe Commerce-project uw Composer-afhankelijkheden bij om de `Magento_Elasticsearch7` en installeer de `Magento_Elasticsearch8` -module.
 
    ```bash
    composer require magento/module-elasticsearch-8 --update-with-all-dependencies
@@ -134,13 +134,13 @@ In Adobe Commerce 2.4.6 is ondersteuning voor Elasticsearch 8.x geïntroduceerd.
    bin/magento cache:clean
    ```
 
-#### Downgrade Elasticsearch
+#### Elasticsearch verlagen
 
-Als u onbedoeld de versie van Elasticsearch op uw server bevordert of bepaalt dat u om een andere reden moet degraderen, moet u uw het projectgebiedsdelen van Adobe Commerce ook bijwerken. Bijvoorbeeld om van Elasticsearch 8.x tot 7.x te degraderen
+Als u per ongeluk de versie van de Elasticsearch op uw server bijwerkt of om een andere reden wilt verlagen, moet u ook uw Adobe Commerce-projectafhankelijkheden bijwerken. Bijvoorbeeld om van Elasticsearch 8.x aan 7.x te degraderen
 
-1. Verlaag de Elasticsearch 8.x-server naar 7.x en zorg ervoor dat deze actief is. Zie de [Elasticsearch-documentatie](https://www.elastic.co/guide/en/elasticsearch/reference/current/install-elasticsearch.html).
+1. Verlaag de Elasticsearch 8.x-server naar 7.x en zorg ervoor dat deze in gebruik is. Zie de [Documentatie Elasticsearch](https://www.elastic.co/guide/en/elasticsearch/reference/current/install-elasticsearch.html).
 
-1. Werk in de hoofdmap van uw Adobe Commerce-project uw Composer-afhankelijkheden bij om de `Magento_Elasticsearch8` en de bijbehorende Composer-afhankelijkheden en installeer de `Magento_Elasticsearch7` module.
+1. Werk in de hoofdmap van uw Adobe Commerce-project uw Composer-afhankelijkheden bij om de `Magento_Elasticsearch8` en de bijbehorende Composer-afhankelijkheden en installeer de `Magento_Elasticsearch7` -module.
 
    ```bash
    composer remove magento/module-elasticsearch-8
@@ -182,7 +182,7 @@ Adobe raadt u aan de geopende bestanden in te stellen [ulimit](https://ss64.com/
 
 U stelt de limiet in vanaf de opdrachtregel:
 
-1. Naar de [eigenaar van bestandssysteem](../../installation/prerequisites/file-system/overview.md).
+1. Schakel over naar de [eigenaar van bestandssysteem](../../installation/prerequisites/file-system/overview.md).
 1. Stel de limiet in op `65536`.
 
    ```bash
@@ -191,7 +191,7 @@ U stelt de limiet in vanaf de opdrachtregel:
 
 De waarde in de Bash-shell instellen:
 
-1. Naar de [eigenaar van bestandssysteem](../../installation/prerequisites/file-system/overview.md).
+1. Schakel over naar de [eigenaar van bestandssysteem](../../installation/prerequisites/file-system/overview.md).
 1. Openen `/home/<username>/.bashrc` in een teksteditor.
 1. Voeg de volgende regel toe:
 
@@ -257,7 +257,7 @@ Als u een grote hoeveelheid gegevens hebt, kunt u de prestaties verbeteren door 
 
 De omgevingsvariabele instellen:
 
-1. Naar de [eigenaar van bestandssysteem](../../installation/prerequisites/file-system/overview.md).
+1. Schakel over naar de [eigenaar van bestandssysteem](../../installation/prerequisites/file-system/overview.md).
 1. Stel de variabele in:
 
    ```bash
@@ -266,7 +266,7 @@ De omgevingsvariabele instellen:
 
    >[!NOTE]
    >
-   > `DATA_CONVERTER_BATCH_SIZE` vereist geheugen; U moet voorkomen dat u een grote waarde (ongeveer 1 GB) instelt zonder deze eerst te testen.
+   > `DATA_CONVERTER_BATCH_SIZE` vereist geheugen; gebruik liever geen grote waarde (ongeveer 1 GB) zonder deze eerst te testen.
 
 1. Nadat de upgrade is voltooid, kunt u de instelling van de variabele ongedaan maken:
 
@@ -276,7 +276,7 @@ De omgevingsvariabele instellen:
 
 ## Controleren op bestandssysteemmachtigingen
 
-Om veiligheidsredenen vereist Adobe Commerce bepaalde machtigingen voor het bestandssysteem. Machtigingen verschillen van _[eigendom](../../upgrade/prepare/prerequisites.md#verify-file-system-permissions)_. De eigendom bepaalt wie acties op het dossiersysteem kan uitvoeren; machtigingen bepalen wat de gebruiker kan doen.
+Om veiligheidsredenen vereist Adobe Commerce bepaalde machtigingen voor het bestandssysteem. Machtigingen verschillen van _[eigendom](../../upgrade/prepare/prerequisites.md#verify-file-system-permissions)_. Eigendom bepaalt wie handelingen op het bestandssysteem kan uitvoeren; machtigingen bepalen wat de gebruiker kan doen.
 
 Mappen in het bestandssysteem moeten door de [eigenaar van bestandssysteem](../../installation/prerequisites/file-system/overview.md) groep.
 

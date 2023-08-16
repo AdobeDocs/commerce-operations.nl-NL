@@ -7,7 +7,7 @@ ht-degree: 0%
 ---
 # Beveiligde webservercommunicatie
 
-Dit onderwerp bespreekt een voorbeeld om communicatie tussen uw Webserver en onderzoeksmotor (Elasticsearch of OpenSearch) te beveiligen gebruikend een combinatie van de encryptie van de Veiligheid van de Laag van het Vervoer (TLS) en [HTTP-basisverificatie](https://datatracker.ietf.org/doc/html/rfc2617). U kunt naar keuze andere soorten authentificatie eveneens vormen; wij geven referenties aan die informatie .
+Dit onderwerp bespreekt een voorbeeld om communicatie tussen uw Webserver en onderzoeksmotor (Elasticsearch of OpenSearch) te beveiligen gebruikend een combinatie van de encryptie van de Veiligheid van de Laag van het Vervoer (TLS) en [HTTP-basisverificatie](https://datatracker.ietf.org/doc/html/rfc2617). U kunt naar keuze andere soorten authentificatie eveneens vormen; wij verstrekken verwijzingen voor die informatie.
 
 (Een oudere termijn, de Veilige Laag van Contactdozen (SSL), wordt vaak gebruikt onderling verwisselbaar met TLS. In dit onderwerp verwijzen wij naar *TLS*.)
 
@@ -21,13 +21,13 @@ We raden het volgende aan:
 
 * De webserver gebruikt TLS.
 
-   TLS valt buiten het toepassingsgebied van dit onderwerp; wij raden u echter ten zeerste aan een echt certificaat in productie te gebruiken en geen zelfondertekend certificaat.
+  TLS valt buiten het bereik van dit onderwerp. Wij raden u echter ten zeerste aan een echt certificaat te gebruiken in productie en niet een zelfondertekend certificaat.
 
 * De zoekmachine werkt op dezelfde host als een webserver. Het runnen van de onderzoeksmotor en de Webserver op verschillende gastheren is voorbij het werkingsgebied van dit onderwerp.
 
-   Het voordeel van het plaatsen van zoekmachine en de webserver op dezelfde host is dat gecodeerde communicatie hierdoor niet kan worden onderschept. De webserver van de zoekmachine hoeft niet gelijk te zijn aan de Adobe Commerce- of Magento Open Source-webserver. Adobe Commerce kan bijvoorbeeld Apache uitvoeren en Elasticsearch/OpenSearch kan nginx uitvoeren.
+  Het voordeel van het plaatsen van zoekmachine en de webserver op dezelfde host is dat gecodeerde communicatie hierdoor niet kan worden onderschept. De webserver van het zoekprogramma hoeft niet hetzelfde te zijn als de Adobe Commerce- of Magento Open Source-webserver. Adobe Commerce kan bijvoorbeeld Apache uitvoeren en Elasticsearch/OpenSearch kan nginx uitvoeren.
 
-   Als de zoekmachine wordt blootgesteld aan het openbare web, moet u verificatie configureren. Als uw zoekmachine-instantie binnen uw netwerk is beveiligd, is dit mogelijk niet nodig. Werk met uw hostingprovider om te bepalen welke beveiligingsmaatregelen u moet implementeren om uw instantie te beschermen.
+  Als de zoekmachine wordt blootgesteld aan het openbare web, moet u verificatie configureren. Als uw zoekmachine-instantie binnen uw netwerk is beveiligd, is dit mogelijk niet nodig. Werk met uw hostingprovider om te bepalen welke beveiligingsmaatregelen u moet implementeren om uw instantie te beschermen.
 
 ## Meer informatie over TLS
 

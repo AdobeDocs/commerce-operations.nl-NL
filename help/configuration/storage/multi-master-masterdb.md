@@ -1,16 +1,16 @@
 ---
-title: Master databases automatisch configureren
+title: Automatisch hoofddatabases configureren
 description: Zie begeleiding bij het automatisch vormen van de gespleten gegevensbestandoplossing.
 recommendations: noCatalog
 exl-id: a27ad097-de60-4cdd-81f9-eb1ae84587e4
 source-git-commit: af45ac46afffeef5cd613628b2a98864fd7da69b
 workflow-type: tm+mt
 source-wordcount: '355'
-ht-degree: 0%
+ht-degree: 1%
 
 ---
 
-# Master databases automatisch configureren
+# Automatisch hoofddatabases configureren
 
 {{ee-only}}
 
@@ -18,8 +18,8 @@ ht-degree: 0%
 
 Dit onderwerp bespreekt hoe te beginnen met de gespleten gegevensbestandoplossing door:
 
-1. Adobe Commerce installeren met één master database (genaamd `magento`)
-1. Het creëren van twee extra master gegevensbestanden voor checkout en OMS (genoemd `magento_quote` en `magento_sales`)
+1. Adobe Commerce installeren met één hoofddatabase (genaamd `magento`)
+1. Het creëren van twee extra hoofdgegevensbestanden voor checkout en OMS (genoemd `magento_quote` en `magento_sales`)
 1. Adobe Commerce configureren voor het gebruik van de databases voor uitchecken en verkopen
 
 >[!INFO]
@@ -28,11 +28,11 @@ Dit onderwerp bespreekt hoe te beginnen met de gespleten gegevensbestandoplossin
 
 ## De Adobe Commerce-software installeren
 
-U kunt gesplitste databases op elk gewenst moment inschakelen nadat u de Adobe Commerce-software hebt geïnstalleerd. Met andere woorden, u kunt gesplitste databases toevoegen aan een Adobe Commerce-systeem dat al gegevens voor kassa&#39;s en bestellingen heeft. Gebruik de instructies in Adobe Commerce README of in de [installatiegids](../../installation/overview.md) om de Adobe Commerce-software te installeren met behulp van één master database.
+U kunt gesplitste databases op elk gewenst moment inschakelen nadat u de Adobe Commerce-software hebt geïnstalleerd. Met andere woorden, u kunt gesplitste databases toevoegen aan een Adobe Commerce-systeem dat al gegevens voor kassa en bestelling bevat. Gebruik de instructies in Adobe Commerce README of in de [installatiegids](../../installation/overview.md) om de Adobe Commerce-software te installeren met één hoofddatabase.
 
-## Aanvullende master databases instellen
+## Extra hoofddatabases instellen
 
-Maak als volgt afrekenings- en OMS-master databases:
+Maak als volgt uitcheckdatabases en OMS-hoofddatabases:
 
 1. Meld u als elke gebruiker aan bij uw databaseserver.
 1. Ga het volgende bevel in om aan een MySQL bevelherinnering te krijgen:
@@ -86,9 +86,9 @@ Maak als volgt afrekenings- en OMS-master databases:
 
    Als de MySQL monitorvertoningen, u het gegevensbestand behoorlijk creeerde. Als er een fout wordt weergegeven, herhaalt u de voorgaande opdrachten.
 
-## Handel configureren om de master databases te gebruiken
+## Handel configureren om de hoofddatabases te gebruiken
 
-Na vestiging in totaal van drie master gegevensbestanden, gebruik de bevellijn om Handel te vormen om hen te gebruiken. (Het bevel plaatst omhoog gegevensbestandverbindingen en verspreidt lijsten onder de master gegevensbestanden.)
+Na vestiging een totaal van drie hoofdgegevensbestanden, gebruik de bevellijn om Handel te vormen om hen te gebruiken. (Het bevel plaatst omhoog gegevensbestandverbindingen en verspreidt lijsten onder de hoofdgegevensbestanden.)
 
 ### Eerste stappen
 
@@ -96,7 +96,7 @@ Zie [Opdrachten uitvoeren](../cli/config-cli.md#running-commands) aan login en l
 
 ### De database voor uitchecken configureren
 
-Opdrachtsyntaxis:
+Command syntaxis:
 
 ```bash
 bin/magento setup:db-schema:split-quote --host="<checkout db host or ip>" --dbname="<name>" --username="<checkout db username>" --password="<password>"
@@ -116,7 +116,7 @@ Migration has been finished successfully!
 
 ### De OMS-database configureren
 
-Opdrachtsyntaxis:
+Command syntaxis:
 
 ```bash
 bin/magento setup:db-schema:split-sales --host="<checkout db host or ip>" --dbname="<name>" --username="<checkout db username>" --password="<password>"

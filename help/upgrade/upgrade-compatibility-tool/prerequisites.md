@@ -1,6 +1,6 @@
 ---
 title: '''[!DNL Upgrade Compatibility Tool] vereisten"'
-description: Controleer of uw systeem voldoet aan de vereisten voor het uitvoeren van de [!DNL Upgrade Compatibility Tool] in een opdrachtregelinterface voor uw Adobe Commerce-project.
+description: Controleer of uw systeem voldoet aan de vereisten om het [!DNL Upgrade Compatibility Tool] in een opdrachtregelinterface voor uw Adobe Commerce-project.
 exl-id: b8af2e07-3d28-4937-bb88-b0a1c88a2938
 source-git-commit: 95ffff39d82cc9027fa633dffedf15193040802d
 workflow-type: tm+mt
@@ -9,11 +9,11 @@ ht-degree: 0%
 
 ---
 
-# Adobe Commerce-toegangstoetsen
+# Adobe Commerce-toegangssleutels
 
 {{commerce-only}}
 
-U moet [Adobe Commerce-toegangstoetsen](https://developer.adobe.com/commerce/marketplace/guides/sellers/profile-information/#access-keys) om de [!DNL Upgrade Compatibility Tool]. Voeg je Adobe Commerce toegangstoetsen toe aan je `auth.json` bestand, dat zich bevindt op `~/.composer` standaard.
+U moet [Adobe Commerce-toegangssleutels](https://developer.adobe.com/commerce/marketplace/guides/sellers/profile-information/#access-keys) om de [!DNL Upgrade Compatibility Tool]. Voeg je Adobe Commerce toegangstoetsen toe aan je `auth.json` bestand, dat zich bevindt op `~/.composer` standaard.
 
 >[!NOTE]
 >
@@ -21,7 +21,7 @@ U moet [Adobe Commerce-toegangstoetsen](https://developer.adobe.com/commerce/mar
 
 De **openbare sleutel** komt overeen met de _gebruikersnaam_ overwegende dat de **persoonlijke sleutel** is de _password_:
 
-## Voorbeeld van Adobe Commerce-toegangstoetsen
+## Voorbeeld van Adobe Commerce-toegangssleutels
 
 ```json
     "http-basic": {
@@ -34,7 +34,7 @@ De **openbare sleutel** komt overeen met de _gebruikersnaam_ overwegende dat de 
 
 >[!NOTE]
 >
-> Als u uw **Adobe Commerce-toegangstoetsen**, kunt u de [!DNL Upgrade Compatibility Tool] en de `composer create-project` de opdracht mislukt.
+> Als u uw **Adobe Commerce-toegangssleutels**, kunt u de [!DNL Upgrade Compatibility Tool] en de `composer create-project` de opdracht mislukt.
 
 Uitvoeren `composer install` in uw terminal om gebiedsdelen te installeren.
 
@@ -76,7 +76,7 @@ php           7.4.30    success
 
 Adobe Commerce wordt alleen ondersteund op Linux-besturingssystemen. U kunt de [!DNL Upgrade Compatibility Tool] in een Linux-besturingssysteem. U hoeft de [!DNL Upgrade Compatibility Tool] waar uw Adobe Commerce-exemplaar zich bevindt.
 
-Het is noodzakelijk [!DNL Upgrade Compatibility Tool] om toegang te hebben tot de broncode van de instantie Adobe Commerce. U kunt de toepassing bijvoorbeeld op de ene server installeren en deze op de Adobe Commerce-installatie op een andere server plaatsen.
+Het is noodzakelijk [!DNL Upgrade Compatibility Tool] om toegang te hebben tot de broncode van de Adobe Commerce-instantie. U kunt de toepassing bijvoorbeeld op de ene server installeren en deze op de Adobe Commerce-installatie op een andere server plaatsen.
 
 Als u de [!DNL Upgrade Compatibility Tool] voor een Adobe Commerce-exemplaar met grote modules en bestanden kan het nodig zijn dat er veel RAM-geheugen beschikbaar is (ten minste 2 GB).
 

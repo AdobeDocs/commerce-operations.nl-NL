@@ -20,7 +20,7 @@ Voor deze taak moet u een hoofdcategorie (en desgewenst extra categorieën) voor
 
 >[!INFO]
 >
->Alleen gebruiken we bijvoorbeeld een Franse website met webcode `french` in dit onderwerp. Voor stapsgewijze zelfstudies raadpleegt u [Zelfstudie: Meerdere websites instellen met Apache](ms-apache.md) en [Zelfstudie: Meerdere websites met nginx instellen](ms-nginx.md)
+>Alleen gebruiken we bijvoorbeeld een Franse website met webcode `french` in dit onderwerp. Zie voor stapsgewijze zelfstudies [Zelfstudie: meerdere websites instellen met Apache](ms-apache.md) en [Zelfstudie: meerdere websites instellen met nginx](ms-nginx.md)
 
 ## Stap 1: Hoofdcategorieën maken
 
@@ -32,7 +32,7 @@ Een hoofdcategorie maken:
 1. Klikken **Catalogus** > **Categorieën**.
 1. Klikken **Hoofdcategorie toevoegen**.
 1. In de **Categorienaam** Voer een unieke naam in om deze categorie te identificeren.
-1. Controleer of Categorie inschakelen is ingesteld op **Ja**.
+1. Zorg ervoor dat Categorie inschakelen is ingesteld op **Ja**.
 
    Voor informatie over de andere opties op deze pagina raadpleegt u [Basiscategorieën](https://docs.magento.com/user-guide/catalog/category-root.html).
 
@@ -49,10 +49,10 @@ Een website maken:
 
 1. Meld u aan bij de beheerder als een gebruiker die geautoriseerd is om websites te maken, weergaven op te slaan en op te slaan.
 1. Klikken **Winkels** > **Instellingen** > **Alle winkels**.
-1. Op de _Winkels_ pagina, klikt u op **Website maken**.
+1. Op de _Winkels_ pagina, klikt u **Website maken**.
 
    - **Naam**—Voer een naam in om de website te identificeren.
-   - **Code**—Voer een unieke code in; Als u bijvoorbeeld een Franse winkel hebt, kunt u `french`
+   - **Code**—Voer een unieke code in. Als u bijvoorbeeld een Franse winkel hebt, kunt u deze invoeren `french`
    - **Sorteervolgorde**—Voer een optionele numerieke sorteervolgorde in.
 
    In de volgende afbeelding ziet u een voorbeeld.
@@ -66,8 +66,8 @@ Een website maken:
 
 Een winkel maken:
 
-1. In de _Beheer_ deelvenster, klikt u op **Winkels** > **Instellingen** > **Alle winkels**.
-1. Op de _Winkels_ pagina, klikt u op **Winkel maken**.
+1. In de _Beheerder_ deelvenster, klikt u op **Winkels** > **Instellingen** > **Alle winkels**.
+1. Op de _Winkels_ pagina, klikt u **Winkel maken**.
 
    - **Website**—Klik op de naam van de website waaraan u deze winkel wilt koppelen.
    - **Naam**—Voer een naam in om de winkel te identificeren.
@@ -85,7 +85,7 @@ Een winkel maken:
 
 Een winkelweergave maken:
 
-1. In de _Beheer_ deelvenster, klikt u op **Winkels** > **Instellingen** > **Alle winkels**.
+1. In de _Beheerder_ deelvenster, klikt u op **Winkels** > **Instellingen** > **Alle winkels**.
 1. Klik op de pagina Winkels op **Winkelweergave maken**.
 
    - **Winkel**—Klik op de naam van de winkel waaraan u deze winkelweergave wilt koppelen.
@@ -100,13 +100,13 @@ Een winkelweergave maken:
 1. Klikken **Winkelweergave opslaan**.
 1. Herhaal deze taken zo vaak als nodig is om uw winkelweergaven te maken.
 
-## Stap 5: De URL van de websitebasis wijzigen
+## Stap 5: de URL van de websitebasis wijzigen
 
 Een website openen met een unieke URL als `http://french.magento.mg`, moet u de basis-URL voor elke site wijzigen in Beheer.
 
 De URL van de websitebasis wijzigen:
 
-1. In de _Beheer_ deelvenster, klikt u op **Winkels** > **Instellingen** > **Configuratie** > **Algemeen** > **Web**.
+1. In de _Beheerder_ deelvenster, klikt u op **Winkels** > **Instellingen** > **Configuratie** > **Algemeen** > **Web**.
 1. Van de **Winkelweergave** Klik boven aan de pagina op de naam van een van uw websites, zoals in de volgende afbeelding wordt getoond.
 
    ![Een bereik selecteren](../../assets/configuration/multi-site-scope.png)
@@ -119,15 +119,15 @@ De URL van de websitebasis wijzigen:
 
    >[!INFO]
    >
-   >Als u een basis-URL instelt voor de implementatie van Adobe Commerce op cloudinfrastructuur, moet u de eerste periode vervangen door drie streepjes. Als de basis-URL bijvoorbeeld `french.branch-sbg7pPa-f3dueAiM03tpy.us.magentosite.cloud`, enter `http://french---branch-sbg7pPa-f3dueAiM03tpy.us.magentosite.cloud`. Gebruik een punt als u een basis-URL instelt voor lokale tests.
+   >Als u een basis-URL instelt voor de implementatie van Adobe Commerce op een cloudinfrastructuur, moet u de eerste periode vervangen door drie streepjes. Als de basis-URL bijvoorbeeld `french.branch-sbg7pPa-f3dueAiM03tpy.us.magentosite.cloud`, enter `http://french---branch-sbg7pPa-f3dueAiM03tpy.us.magentosite.cloud`. Gebruik een punt als u een basis-URL instelt voor lokale tests.
 
 1. Klikken **Config opslaan**.
 
 1. Herhaal deze taken voor andere websites.
 
-## Stap 6: De code van de winkel toevoegen aan de basis-URL
+## Stap 6: Voeg de winkelcode toe aan de basis-URL
 
-De handel geeft u de optie om de opslagcode aan het plaatsbasis URL toe te voegen, die het proces vereenvoudigt om veelvoudige opslag te vestigen. Als u deze optie gebruikt, hoeft u geen mappen te maken in het bestandssysteem Commerce om op te slaan `index.php` en `.htaccess`.
+De handel geeft u de optie om de opslagcode aan het plaatsbasis URL toe te voegen, die het proces vereenvoudigt om veelvoudige opslag te vestigen. Als u deze optie gebruikt, hoeft u geen mappen te maken in het bestandssysteem Commerce voor opslag `index.php` en `.htaccess`.
 
 Dit voorkomt `index.php` en `.htaccess` in toekomstige upgrades niet meer synchroon te zijn met de Koophandel.
 
@@ -135,27 +135,27 @@ Zie de [Handboek voor handel](https://docs.magento.com/user-guide/stores/store-u
 
 U voegt als volgt de code van de winkel toe aan de basis-URL:
 
-1. In de _Beheer_ deelvenster, klikt u op **Winkels** > **Instellingen** > **Configuratie** > **Algemeen** > **Web**.
+1. In de _Beheerder_ deelvenster, klikt u op **Winkels** > **Instellingen** > **Configuratie** > **Algemeen** > **Web**.
 1. Van de **Winkelweergave** lijst boven aan de pagina klikt u op **Standaardconfiguratie** zoals het volgende cijfer toont.
 
    ![Selecteer het standaardconfiguratiekader](../../assets/configuration/multi-site-default.png)
 
 1. Vouw in het rechterdeelvenster uit **URL-opties**.
 1. Wis de **Systeemwaarde gebruiken** selectievakje naast _Winkelcode toevoegen aan URL&#39;s_.
-1. Van de _Winkelcode toevoegen aan URL&#39;s_ lijst, klikt u op **Ja**.
+1. Van de _Winkelcode toevoegen aan URL&#39;s_ lijst, klik **Ja**.
 
    ![Voeg de opslagcode toe aan de basis-URL van de winkel](../../assets/configuration/multi-site-add-store-url.png)
 
 1. Klikken **Config opslaan**.
-1. Maak desgevraagd de cache leeg. (**Systeem** > **Cachebeheer**).
+1. Maak de cache leeg als daarom wordt gevraagd. (**Systeem** > **Cachebeheer**).
 
-## Stap 7: De standaard basis-URL van de winkelweergave wijzigen
+## Stap 7: Wijzig de standaard-URL van de winkelweergave
 
-U moet deze stap als laatste uitvoeren omdat u de toegang tot de beheerder verliest. uw toegangswinst nadat u opstelling virtuele gastheren zoals die in de web-server-specifieke onderwerpen worden besproken.
+U moet deze stap als laatste uitvoeren omdat u toegang tot Admin zult verliezen; uw toegangswinst nadat u opstelling virtuele gastheren zoals die in de web-server-specifieke onderwerpen worden besproken.
 
 De standaard basis-URL van de winkelweergave wijzigen:
 
-1. In de _Beheer_ deelvenster, klikt u op **Winkels** > **Instellingen** > **Configuratie** > **Algemeen** > **Web**.
+1. In de _Beheerder_ deelvenster, klikt u op **Winkels** > **Instellingen** > **Configuratie** > **Algemeen** > **Web**.
 
 1. Van de _Winkelweergave_ lijst boven aan de pagina klikt u op **Standaardconfiguratie**.
 

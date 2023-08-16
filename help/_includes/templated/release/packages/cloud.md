@@ -103,14 +103,14 @@ magento/product-enterprise-edition: >=2.4.6 <2.4.7
       paypal/module-breintree
     </td>
     <td>pakket</td>
-    <td>Braintree Magento</td>
+    <td>Magento Braintree</td>
   </tr>
   <tr>
     <td>
       <a href="https://github.com/wikimedia/less.php.git">wikimedia/less.php</a>
     </td>
     <td>bibliotheek</td>
-    <td>PHP-poort van de LESS-processor</td>
+    <td>PHP poort van de LESS processor</td>
   </tr>
   </tbody>
 </table>
@@ -261,7 +261,7 @@ magento/product-enterprise-edition: >=2.4.6 <2.4.7
   </tr>
   <tr>
     <td>
-      <a href="https://github.com/laminas/laminas-feed.git">laminas/laminas-feed</a>
+      <a href="https://github.com/laminas/laminas-feed.git">laminas/diervoeder voor laminas</a>
     </td>
     <td>bibliotheek</td>
     <td>biedt functionaliteit voor het maken en gebruiken van RSS- en Atom-feeds</td>
@@ -453,14 +453,14 @@ magento/product-enterprise-edition: >=2.4.6 <2.4.7
       <a href="https://github.com/tedious/JShrink.git">tedivm/jkrimpink</a>
     </td>
     <td>bibliotheek</td>
-    <td>Javascript Minifier is ingebouwd in PHP</td>
+    <td>Javascript Minifier geïntegreerd in PHP</td>
   </tr>
   <tr>
     <td>
       <a href="https://github.com/tubalmartin/YUI-CSS-compressor-PHP-port.git">tubalmartin/cssmin</a>
     </td>
     <td>bibliotheek</td>
-    <td>Een PHP-poort van de CSS-compressor van de YUI</td>
+    <td>Een PHP-poort van de YUI CSS-compressor</td>
   </tr>
   </tbody>
 </table>
@@ -544,7 +544,7 @@ magento/product-enterprise-edition: >=2.4.6 <2.4.7
       <a href="https://github.com/brick/varexporter.git">baksteen/varexporter</a>
     </td>
     <td>bibliotheek</td>
-    <td>Een krachtig alternatief voor var_export(), dat closure en objecten zonder __set_state() kan exporteren</td>
+    <td>Een krachtig alternatief voor var_export(), dat sluitingen en objecten zonder __set_state() kan exporteren</td>
   </tr>
   <tr>
     <td>
@@ -625,7 +625,7 @@ magento/product-enterprise-edition: >=2.4.6 <2.4.7
   </tr>
   <tr>
     <td>
-      <a href="https://github.com/doctrine/deprecations.git">doctrine/afbrekingen</a>
+      <a href="https://github.com/doctrine/deprecations.git">doctrine/afgekeurde kleuren</a>
     </td>
     <td>bibliotheek</td>
     <td>Een kleine laag bovenop trigger_error (E_USER_DEPRECATED) of het registreren PSR-3 met opties om alle afwaarderingen of selectief voor pakketten onbruikbaar te maken.</td>
@@ -674,14 +674,14 @@ magento/product-enterprise-edition: >=2.4.6 <2.4.7
   </tr>
   <tr>
     <td>
-      <a href="https://github.com/guzzle/guzzle.git">guzzlehttp://guzzle</a>
+      <a href="https://github.com/guzzle/guzzle.git">guzzlehttp:</a>
     </td>
     <td>bibliotheek</td>
     <td>Guzzle is een PHP HTTP client library</td>
   </tr>
   <tr>
     <td>
-      <a href="https://github.com/guzzle/promises.git">guzzlehttp://promise</a>
+      <a href="https://github.com/guzzle/promises.git">guzzlehttp:</a>
     </td>
     <td>bibliotheek</td>
     <td>Guzzle belooft library</td>
@@ -695,7 +695,7 @@ magento/product-enterprise-edition: >=2.4.6 <2.4.7
   </tr>
   <tr>
     <td>
-      <a href="https://github.com/illuminate/collections.git">belichten/verzamelen</a>
+      <a href="https://github.com/illuminate/collections.git">verlichten/inzamelen</a>
     </td>
     <td>bibliotheek</td>
     <td>Het pakket Verzamelingen belichten.</td>
@@ -761,7 +761,7 @@ magento/product-enterprise-edition: >=2.4.6 <2.4.7
       <a href="https://github.com/jmespath/jmespath.php.git">mtdowling/jmespath.php</a>
     </td>
     <td>bibliotheek</td>
-    <td>Geef declaratief op hoe elementen uit een JSON-document moeten worden geëxtraheerd</td>
+    <td>Declaratief opgeven hoe elementen uit een JSON-document worden geëxtraheerd</td>
   </tr>
   <tr>
     <td>
@@ -943,7 +943,7 @@ magento/product-enterprise-edition: >=2.4.6 <2.4.7
       <a href="https://github.com/Spomky-Labs/otphp.git">spomky-labs/otphp</a>
     </td>
     <td>bibliotheek</td>
-    <td>Een PHP bibliotheek voor het produceren van één tijdwachtwoorden volgens RFC 4226 (het Algoritme van HOTP) en RFC 6238 (het Algoritme van TOTP) en compatibel met de Authenticator van Google</td>
+    <td>Een PHP bibliotheek voor het produceren van één tijdwachtwoorden volgens RFC 4226 (het Algoritme van HOTP) en RFC 6238 (TOTP Algorithm) en compatibel met de Authenticator van Google</td>
   </tr>
   <tr>
     <td>
@@ -1013,7 +1013,7 @@ magento/product-enterprise-edition: >=2.4.6 <2.4.7
       <a href="https://github.com/symfony/filesystem.git">symfony/filesystem</a>
     </td>
     <td>bibliotheek</td>
-    <td>Verstrekt basisnut voor het filesystem</td>
+    <td>Biedt basisfuncties voor het bestandssysteem</td>
   </tr>
   <tr>
     <td>
@@ -1062,7 +1062,7 @@ magento/product-enterprise-edition: >=2.4.6 <2.4.7
       <a href="https://github.com/symfony/polyfill-intl-idn.git">symfony/polyfill-intl-idn</a>
     </td>
     <td>bibliotheek</td>
-    <td>Symfony polyfill voor de functies idn_to_ascii en idn_to_utf8 van intl</td>
+    <td>Symfony polyfill voor de functies idn_to_ascii en idn_to_utf8</td>
   </tr>
   <tr>
     <td>
@@ -1223,7 +1223,7 @@ magento/product-enterprise-edition: >=2.4.6 <2.4.7
       paypal/module-braintree-graph-ql
     </td>
     <td>magento2-module</td>
-    <td>N.v.t.</td>
+    <td>NVT</td>
   </tr>
   <tr>
     <td>

@@ -75,7 +75,7 @@ Dit document bevat geen uitgebreide MySQL-afstemmingsinstructies omdat elke wink
 
 De Adobe Commerce-database (en elke andere database) is gevoelig voor de hoeveelheid geheugen die beschikbaar is voor het opslaan van gegevens en indexen. Om effectief hefboomwerking MySQL gegevensindexatie, zou de hoeveelheid beschikbaar geheugen, minstens, dicht aan de helft van de grootte van de gegevens moeten zijn die in het gegevensbestand worden opgeslagen.
 
-Optimaliseren `innodb_buffer_pool_instances` het plaatsen om kwesties met veelvoudige draden te vermijden die tot de zelfde instantie proberen toegang te hebben. De waarde van de `max_connections` Deze parameter moet correleren met het totale aantal PHP threads dat is geconfigureerd in de toepassingsserver. Gebruik de volgende formule om de beste waarde te berekenen voor `innodb-thread-concurrency`:
+Optimaliseren `innodb_buffer_pool_instances` het plaatsen om kwesties met veelvoudige draden te vermijden die tot de zelfde instantie proberen toegang te hebben. De waarde van `max_connections` Deze parameter moet correleren met het totale aantal PHP threads dat is geconfigureerd in de toepassingsserver. Gebruik de volgende formule om de beste waarde te berekenen voor `innodb-thread-concurrency`:
 
 ```
 innodb-thread-concurrency = 2 * (NumCPUs+NumDisks)
@@ -85,7 +85,7 @@ innodb-thread-concurrency = 2 * (NumCPUs+NumDisks)
 
 Het in cache plaatsen van sessies is een goede kandidaat om te configureren voor een afzonderlijk geval van Redis. De configuratie van het geheugen voor dit geheim voorgeheugentype zou de strategie van de het kartontroeping van de plaats moeten overwegen en hoe lang een zitting zou moeten verwachten om in het geheime voorgeheugen te blijven.
 
-Redis moet voldoende geheugen hebben om alle andere cache in het geheugen te bewaren voor optimale prestaties. Het geheime voorgeheugen van het blok zal de belangrijkste factor in het bepalen van de hoeveelheid geheugen zijn te vormen. Het cachegeheugen van een blok wordt groter ten opzichte van het aantal pagina&#39;s op een site (aantal SKU-x-winkelweergaven).
+Redis moet voldoende geheugen hebben toegewezen om alle andere cache in het geheugen te bewaren voor optimale prestaties. Het geheime voorgeheugen van het blok zal de belangrijkste factor in het bepalen van de hoeveelheid geheugen zijn te vormen. Het cachegeheugen van een blok wordt groter ten opzichte van het aantal pagina&#39;s op een site (aantal SKU-x-winkelweergaven).
 
 ### Pagina in cache plaatsen
 
@@ -117,13 +117,13 @@ Naast de eerder genoemde gemeenschappelijke aanbevelingen voor optimalisatie van
 
 ### Hoofdloze architectuur
 
-Er is een aparte sectie gewijd aan het gedetailleerd weergeven van [koploos](../../architecture/headless/adobe-commerce.md) is en verschillende opties. Samengevat wordt de storefront-laag gescheiden van het platform zelf. Het is nog steeds dezelfde achtergrond, maar Adobe Commerce verwerkt aanvragen niet meer rechtstreeks en ondersteunt in plaats daarvan alleen aangepaste winkels via de GraphQL API.
+Er is een aparte sectie gewijd aan het gedetailleerd weergeven van [krankzinnig](../../architecture/headless/adobe-commerce.md) is en verschillende opties. Samengevat wordt de storefront-laag gescheiden van het platform zelf. Het is nog steeds dezelfde achtergrond, maar Adobe Commerce verwerkt aanvragen niet meer rechtstreeks en ondersteunt in plaats daarvan alleen aangepaste winkels via de GraphQL API.
 
 ### Adobe Commerce bijwerken
 
 Adobe Commerce presteert altijd beter wanneer de nieuwste versie wordt uitgevoerd. Zelfs als het niet mogelijk is om Adobe Commerce bijgewerkt te houden nadat elke nieuwe versie is uitgebracht, wordt het nog steeds aanbevolen [upgrade](../../../upgrade/overview.md) als Adobe Commerce belangrijke prestatieoptimalisaties introduceert.
 
-In 2020 heeft Adobe bijvoorbeeld een optimalisatie uitgevoerd naar de Redis-laag, waardoor een groot aantal inefficiënties, verbindingsproblemen en onnodige gegevensoverdracht tussen Redis en Adobe Commerce zijn verholpen. De algehele prestaties tussen 2,3 en 2,4 zijn &#39;s nachts en &#39;s nachts en we zagen aanzienlijke verbeteringen in het winkelwagentje, de kassa en de gebruikers die tegelijk met elkaar werken, alleen vanwege de Redis-optimalisatie.
+In 2020 heeft Adobe bijvoorbeeld een optimalisatie voor de Redis-laag uitgebracht, waardoor een groot aantal inefficiënties, verbindingsproblemen en onnodige gegevensoverdracht tussen Redis en Adobe Commerce zijn verholpen. De algehele prestaties tussen 2,3 en 2,4 zijn &#39;s nachts en &#39;s nachts en we zagen aanzienlijke verbeteringen in het winkelwagentje, de kassa en de gebruikers die tegelijk met elkaar werken, alleen vanwege de Redis-optimalisatie.
 
 ### Gegevensmodel optimaliseren
 

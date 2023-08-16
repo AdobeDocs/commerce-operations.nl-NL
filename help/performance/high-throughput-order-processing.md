@@ -26,7 +26,7 @@ De _Async-volgorde_ de module laat asynchrone orde plaatsing toe, die de orde al
 
 Een klant voegt bijvoorbeeld een product toe aan zijn winkelwagentje en selecteert **[!UICONTROL Proceed to Checkout]**. Ze vullen de **[!UICONTROL Shipping Address]** formulier, selecteert u de gewenste **[!UICONTROL Shipping Method]**, selecteert u een betalingsmethode en plaatst u de bestelling. Het winkelwagentje wordt gewist, de bestelling wordt gemarkeerd als **[!UICONTROL Received]**, maar het aantal producten wordt nog niet aangepast en er wordt ook geen e-mail naar de klant gestuurd. De bestelling wordt ontvangen, maar de gegevens van de bestelling zijn nog niet beschikbaar omdat de bestelling niet volledig is verwerkt. Het blijft in de rij tot de `placeOrderProcess` de consument begint, verifieert de orde met [inventariscontrole](#disable-inventory-check) (standaard ingeschakeld) en werkt de volgorde als volgt bij:
 
-- **Product beschikbaar**—de orderstatus verandert in _In behandeling_, wordt het productaantal aangepast, wordt een e-mail met bestelgegevens naar de klant verzonden en worden de gegevens van de succesvolle bestelling beschikbaar voor weergave in het **Orders en retourzendingen** lijst met opties voor handelingen, zoals herschikken.
+- **Product beschikbaar**—de orderstatus verandert in _In behandeling_, wordt het productaantal aangepast, wordt een e-mail met bestelgegevens naar de klant verzonden en worden de gegevens van de succesvolle bestelling beschikbaar voor weergave in het **Orders en retourzendingen** lijst met opties die u kunt activeren, zoals Opnieuw ordenen.
 - **Product uit voorraad of lage voorraad**—de orderstatus verandert in _Geweigerd_, wordt het aantal producten niet aangepast, wordt een e-mail met bestelgegevens over de uitgave naar de klant gestuurd en worden de gegevens van de geweigerde bestelling beschikbaar in de **Orders en retourzendingen** lijst zonder opties voor handelingen.
 
 Gebruik de opdrachtregelinterface om deze functies in te schakelen of bewerk de interface `app/etc/env.php` bestand volgens de overeenkomstige README-bestanden die zijn gedefinieerd in het dialoogvenster [_Referentiehandleiding module_][mrg].
@@ -77,7 +77,7 @@ AsyncOrder ondersteunt een beperkte set [!DNL Commerce] functies.
 
 | Categorie | Ondersteunde functie |
 |------------------|--------------------------------------------------------------------------|
-| Afhandelingstypen | Afhandeling van één pagina<br>Standaard uitchecken<br>B2B-onderhandelbare offerte |
+| Afhandelingstypen | OnePage Checkout<br>Standaard uitchecken<br>B2B-onderhandelbare offerte |
 | Betalingsmethoden | Cheque/postwissel<br>Onder rembours<br>Braintree<br>PayPal PayFlow Pro |
 | Verzendmethoden | Alle verzendmethoden worden ondersteund. |
 
@@ -108,7 +108,7 @@ Wanneer de module AsyncOrder is ingeschakeld, worden de volgende REST-eindpunten
 
 #### Uitgezonderd betalingsmethoden
 
-Ontwikkelaars kunnen bepaalde betaalmethoden expliciet uitsluiten van Asynchronous Order-plaatsing door deze toe te voegen aan de `Magento\AsyncOrder\Model\OrderManagement::paymentMethods` array. Orders die gebruikmaken van uitgesloten betalingsmethoden worden synchroon verwerkt.
+Ontwikkelaars kunnen bepaalde betaalmethoden expliciet uitsluiten van Asynchronous Order-plaatsing door deze aan de `Magento\AsyncOrder\Model\OrderManagement::paymentMethods` array. Orders die gebruikmaken van uitgesloten betalingsmethoden worden synchroon verwerkt.
 
 ### Negotiable Quote Async Order
 

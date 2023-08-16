@@ -1,6 +1,6 @@
 ---
 title: Voorbeeldgegevenspakketten van Composer downloaden
-description: Voer de volgende stappen uit om Adobe Commerce- en Magento Open Source-voorbeeldgegevens te installeren met de Composer PHP Package Manager.
+description: Voer de volgende stappen uit om Adobe Commerce en Magento Open Source voorbeeldgegevens te installeren met behulp van Composer PHP Package Manager.
 feature: Install, Deploy
 exl-id: 735591af-a152-4476-9fa6-e31c4bab3ba8
 source-git-commit: ce405a6bb548b177427e4c02640ce13149c48aff
@@ -20,13 +20,13 @@ In deze sectie wordt beschreven hoe u voorbeeldgegevens kunt installeren als u d
 
 * Gebruikt `composer create-project`
 
-U kunt deze methode gebruiken om voorbeeldgegevens op te halen voor zowel Adobe Commerce als Magento Open Source, maar u moet hetzelfde gebruiken [verificatietoetsen](../prerequisites/authentication-keys.md) die u gebruikte om de toepassing te installeren.
+U kunt deze methode gebruiken om voorbeeldgegevens op te halen voor zowel Adobe Commerce als Magento Open Source, maar u moet hetzelfde doen [verificatietoetsen](../prerequisites/authentication-keys.md) die u gebruikte om de toepassing te installeren.
 
 >[!NOTE]
 >
 >Als u fouten tegenkomt, zoals `Could not find package...` of `...no matching package found...`, zorg ervoor dat er geen typos in uw bevel zijn. Als er nog steeds fouten optreden, hebt u mogelijk geen toegang tot de juiste Composer-opslagruimten, met name als u Adobe Commerce gebruikt. Contact [Adobe Commerce-ondersteuning](https://support.magento.com/hc/en-us) voor hulp.
 
-U kunt Composer gebruiken om voorbeeldgegevens te installeren voor of na de installatie van de toepassing. er kan echter [extra taken](remove-or-update.md).
+U kunt Composer gebruiken om voorbeeldgegevens te installeren voor of na de installatie van de toepassing. Het kan echter zijn dat [extra taken](remove-or-update.md).
 
 Als u een bijdragende ontwikkelaar bent, verwijs naar [Installeren door opslagplaatsen te klonen](git-repositories.md).
 

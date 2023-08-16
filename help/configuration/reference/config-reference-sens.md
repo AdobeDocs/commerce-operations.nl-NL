@@ -143,15 +143,15 @@ Deze configuratiewaarden zijn beschikbaar in de Admin in **Winkels** > Instellin
 | Gebruikersnaam server Solr | `catalog/search/solr_server_username` | ![Alleen handel](/help/assets/configuration/cloud-ee.png) | | ![Sys-specifiek](/help/assets/configuration/cloud-env.png) | ![Gevoelig](/help/assets/configuration/cloud-sens.png) |
 | Wachtwoord voor Solr-server | `catalog/search/solr_server_password` | ![Alleen handel](/help/assets/configuration/cloud-ee.png) | | ![Sys-specifiek](/help/assets/configuration/cloud-env.png) | ![Gevoelig](/help/assets/configuration/cloud-sens.png) |
 | Pad naar soleserver | `catalog/search/solr_server_path` | ![Alleen handel](/help/assets/configuration/cloud-ee.png) | | ![Sys-specifiek](/help/assets/configuration/cloud-env.png) | ![Gevoelig](/help/assets/configuration/cloud-sens.png) |
-| Hostnaam Elasticsearch-server | `catalog/search/elasticsearch_server_hostname` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> | | ![Sys-specifiek](/help/assets/configuration/cloud-env.png) | ![Gevoelig](/help/assets/configuration/cloud-sens.png) |
-| Elasticsearch-serverpoort | `catalog/search/elasticsearch_server_port` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> | | ![Sys-specifiek](/help/assets/configuration/cloud-env.png) | ![Gevoelig](/help/assets/configuration/cloud-sens.png) |
-| Elasticsearch-indexvoorvoegsel | `catalog/search/elasticsearch_index_prefix` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> | | ![Sys-specifiek](/help/assets/configuration/cloud-env.png) | ![Gevoelig](/help/assets/configuration/cloud-sens.png) |
-| Elasticsearch HTTP-auteur inschakelen | `catalog/search/elasticsearch_enable_auth` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> | | ![Sys-specifiek](/help/assets/configuration/cloud-env.png) |
-| Elasticsearch HTTP-gebruikersnaam | `catalog/search/elasticsearch_username` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> | | ![Sys-specifiek](/help/assets/configuration/cloud-env.png) |
-| Elasticsearch HTTP-wachtwoord | `catalog/search/elasticsearch_password` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> | | ![Sys-specifiek](/help/assets/configuration/cloud-env.png) |
+| Hostnaam server Elasticsearch | `catalog/search/elasticsearch_server_hostname` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> | | ![Sys-specifiek](/help/assets/configuration/cloud-env.png) | ![Gevoelig](/help/assets/configuration/cloud-sens.png) |
+| Poort Elasticsearch-server | `catalog/search/elasticsearch_server_port` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> | | ![Sys-specifiek](/help/assets/configuration/cloud-env.png) | ![Gevoelig](/help/assets/configuration/cloud-sens.png) |
+| Voorvoegsel Elasticsearch-index | `catalog/search/elasticsearch_index_prefix` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> | | ![Sys-specifiek](/help/assets/configuration/cloud-env.png) | ![Gevoelig](/help/assets/configuration/cloud-sens.png) |
+| HTTP-auteur van Elasticsearch inschakelen | `catalog/search/elasticsearch_enable_auth` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> | | ![Sys-specifiek](/help/assets/configuration/cloud-env.png) |
+| HTTP-gebruikersnaam Elasticsearch | `catalog/search/elasticsearch_username` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> | | ![Sys-specifiek](/help/assets/configuration/cloud-env.png) |
+| HTTP-wachtwoord Elasticsearch | `catalog/search/elasticsearch_password` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> | | ![Sys-specifiek](/help/assets/configuration/cloud-env.png) |
 | Time-out Elasticsearch-server | `catalog/search/elasticsearch_server_timeout` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> | | ![Sys-specifiek](/help/assets/configuration/cloud-env.png) |
-| Elasticsearch HTTP-gebruikersnaam | `catalog/search/elasticsearch_username` | <!-- ![Not EE-only](/help/assets/configuration/red-x.png) --> | | (`{{ site.baseurl }}`/common/images/cloud_env.png) |
-| Elasticsearch HTTP-wachtwoord | `catalog/search/elasticsearch_password` | <!-- ![Not EE-only](/help/assets/configuration/red-x.png) --> | | (`{{ site.baseurl }}`/common/images/cloud_env.png) |
+| HTTP-gebruikersnaam Elasticsearch | `catalog/search/elasticsearch_username` | <!-- ![Not EE-only](/help/assets/configuration/red-x.png) --> | | (`{{ site.baseurl }}`/common/images/cloud_env.png) |
+| HTTP-wachtwoord Elasticsearch | `catalog/search/elasticsearch_password` | <!-- ![Not EE-only](/help/assets/configuration/red-x.png) --> | | (`{{ site.baseurl }}`/common/images/cloud_env.png) |
 | Time-out Elasticsearch-server | `catalog/search/elasticsearch_server_timeout` | <!-- ![Not EE-only](/help/assets/configuration/red-x.png) --> | | (`{{ site.baseurl }}`/common/images/cloud_env.png) |
 | Hostnaam van OpenSearch-server | `catalog/search/opensearch_server_hostname` | <!-- ![Not EE-only](/help/assets/configuration/red-x.png) --> | | (`{{ site.baseurl }}`/common/images/cloud_env.png) | ![Gevoelig](/help/assets/configuration/cloud-sens.png) |
 | OpenSearch-serverpoort | `catalog/search/opensearch_server_port` | <!-- ![Not EE-only](/help/assets/configuration/red-x.png) --> | | (`{{ site.baseurl }}`/common/images/cloud_env.png) | ![Gevoelig](/help/assets/configuration/cloud-sens.png) |
@@ -464,7 +464,7 @@ In deze sectie worden de namen van variabelen en configuratiepaden weergegeven d
 
 {style="table-layout:auto"}
 
-### Braintree-gevoelige en systeemspecifieke paden
+### Braintree gevoelige en systeemspecifieke paden
 
 | Naam | Config-pad | Alleen handel? | Versleuteld? | Systeemspecifiek? | gevoelig? |
 |--------------|--------------|--------------|--------------|--------------|--------------|

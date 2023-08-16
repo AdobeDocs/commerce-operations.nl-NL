@@ -17,7 +17,7 @@ Als u een wachtrij met berichten in AWS wilt maken, raadpleegt u [Amazon MQ inst
 
 ## Handel configureren voor AWS MQ
 
-Voor verbinding met de AWS MQ-service configureert u de `queue.amqp` object in het `env.php` bestand.
+Als u verbinding wilt maken met de AWS MQ-service, configureert u de `queue.amqp` object in het `env.php` bestand.
 AWS Message Queue vereist een SSL/TLS-verbinding.
 
 ```php
@@ -35,9 +35,9 @@ AWS Message Queue vereist een SSL/TLS-verbinding.
 ],
 ```
 
-Waar:
+Waarbij:
 
-- `host`—de URL voor het AMQP-eindpunt; beschikbaar door op de naam van de makelaar in AWS te klikken (verwijder &quot;https://&quot; en het laatste poortnummer)
+- `host`—De URL voor het AMQP-eindpunt; beschikbaar door op de naam van de makelaar in AWS te klikken (verwijder &quot;https://&quot; en het volgpoortnummer)
 - `user`—De gebruikersnaam die wordt ingevoerd bij het maken van de AWS MQ-broker
 - `password`—De wachtwoordwaarde die wordt ingevoerd bij het maken van de AWS MQ-broker
 
@@ -65,13 +65,13 @@ async.V1.inventory.bulk-product-source-unassign.POST
 async.V1.inventory.bulk-product-source-transfer.POST
 ```
 
-De standaardconfiguratie voor `InventoryCatalog` publiceert geen berichten naar [!DNL RabbitMQ]; het standaardgedrag moet de actie in de zelfde gebruikersdraad uitvoeren. Als u `InventoryCatalog` om berichten te publiceren, laat toe `cataloginventory/bulk_operations/async`. Ga vanuit de beheerder naar **Winkels** > Configuratie > **Catalogus** > **Inventaris** > bulkbewerkingen beheren en instellen  `Run asynchronously`tot **Ja**.
+De standaardconfiguratie voor `InventoryCatalog` publiceert geen berichten naar [!DNL RabbitMQ]; het standaardgedrag is dat de handeling in dezelfde gebruikersthread wordt uitgevoerd. Als u `InventoryCatalog` om berichten te publiceren, laat toe `cataloginventory/bulk_operations/async`. Ga vanuit de beheerder naar **Winkels** > Configuratie > **Catalogus** > **Inventaris** > bulkbewerkingen beheren en instellen  `Run asynchronously`tot **Ja**.
 
 ## De wachtrij met berichten testen
 
-Om bericht te testen dat van de Handel naar [!DNL RabbitMQ]:
+Om het bericht te testen dat van de Handel naar [!DNL RabbitMQ]:
 
-1. Aanmelden bij de [!DNL RabbitMQ] webconsole in AWS om wachtrijen te controleren.
+1. Aanmelden bij de [!DNL RabbitMQ] webconsole in AWS voor het controleren van wachtrijen.
 1. Maak een product in Admin.
 1. Maak een inventarisbron.
 1. Inschakelen **Winkels** > Configuratie > **Catalogus** > **Inventaris** > Beheer bulkbewerkingen > asynchroon uitvoeren.

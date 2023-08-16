@@ -13,7 +13,7 @@ ht-degree: 0%
 
 # Beste praktijken voor rapportconfiguratie
 
-Als uw zaken geen rapportering of dynamische functionaliteit van de klantensegmenten vereisen, maak onbruikbaar [Functie voor rapporten](https://docs.magento.com/user-guide/configuration/general/reports.html) om de prestaties van de winkel te verbeteren.
+Als uw zaken geen rapportering of dynamische functionaliteit van de klantensegmenten vereisen, maak onbruikbaar [Functie voor rapporten](https://docs.magento.com/user-guide/configuration/general/reports.html) om de winkelprestaties te verbeteren.
 
 ## Betrokken producten en versies
 

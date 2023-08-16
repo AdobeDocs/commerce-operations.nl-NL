@@ -27,7 +27,7 @@ In de volgende secties wordt poort 8080 als voorbeeld gebruikt.
 
 Om de het systeemconfiguratie van Varnish te wijzigen:
 
-1. Als gebruiker met `root` rechten, opent u het Vanish-configuratiebestand in een teksteditor:
+1. Als gebruiker met `root` toegangsrechten, opent u het Vanish-configuratiebestand in een teksteditor:
 
    - CentOS 6: `/etc/sysconfig/varnish`
    - CentOS 7: `/etc/varnish/varnish.params`
@@ -58,7 +58,7 @@ Deze sectie bespreekt hoe te om minimale configuratie te verstrekken zodat keert
 
 Varnish minimaliseren:
 
-1. Back-up maken `default.vcl`:
+1. Terug `default.vcl`:
 
    ```bash
    cp /etc/varnish/default.vcl /etc/varnish/default.vcl.bak
@@ -74,11 +74,11 @@ Varnish minimaliseren:
    }
    ```
 
-1. Vervang de waarde van `.host` met volledig - gekwalificeerde hostname of IP adres en luisterhaven van Varnish _achterste_ of _oorspronkelijke server_; Dat wil zeggen dat de server die de inhoud levert Varnish zal versnellen.
+1. De waarde van `.host` met volledig - gekwalificeerde hostname of IP adres en luisterhaven van Varnish _achterste_ of _oorspronkelijke server_ De server die de inhoud levert, Varnish zal dus versnellen.
 
    Dit is doorgaans uw webserver. Zie [Backendeservers](https://varnish-cache.org/docs/trunk/users-guide/vcl-backends.html) in de _Varnish guide_.
 
-1. Vervang de waarde van `.port` met de luisterpoort van de webserver (8080 in dit voorbeeld).
+1. De waarde van `.port` met de luisterpoort van de webserver (8080 in dit voorbeeld).
 
    Voorbeeld: Apache is geïnstalleerd op host 192.0.2.55 en Apache luistert naar poort 8080:
 
@@ -91,7 +91,7 @@ Varnish minimaliseren:
 
    >[!INFO]
    >
-   >Als Varnish en Apache op de zelfde gastheer lopen, adviseert Adobe dat u een IP adres of hostname en niet gebruikt `localhost`.
+   >Als Varnish en Apache op de zelfde gastheer lopen, adviseert de Adobe dat u een IP adres of hostname en niet gebruikt `localhost`.
 
 1. Sla uw wijzigingen op in `default.vcl` en sluit de teksteditor af.
 
@@ -172,7 +172,7 @@ Als u geen uitvoer ziet voor `varnishd`, zorg ervoor dat Varnish loopt.
 
 Zie [`netstat` opties](https://tldp.org/LDP/nag2/x-087-2-iface.netstat.html).
 
-## De software Commerce installeren
+## De software voor de handel installeren
 
 Installeer de Commerce-software als u dat nog niet hebt gedaan. Wanneer ertoe aangezet voor een Basis URL, gebruik de Varnish gastheer en haven 80 (voor Varnish) omdat Varnish alle inkomende HTTP- verzoeken ontvangt.
 
@@ -185,7 +185,7 @@ XID: 303394517
 Varnish cache server
 ```
 
-Als deze fout optreedt, bewerkt u `default.vcl` en voeg een time-out toe aan de `backend` stanza, als hieronder:
+Als deze fout optreedt, bewerkt u `default.vcl` en voeg een onderbreking aan toe `backend` stanza, als hieronder:
 
 ```conf
 backend default {

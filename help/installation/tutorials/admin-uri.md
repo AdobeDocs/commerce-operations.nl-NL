@@ -30,7 +30,7 @@ Hieronder volgt een voorbeeldresultaat:
 Admin Panel URI: /admin_1wgrah
 ```
 
-U kunt ook de Admin URI bekijken in `<magento_root>/app/etc/env.php`. Een fragment volgt:
+U kunt ook de Admin-URI weergeven in `<magento_root>/app/etc/env.php`. Een fragment volgt:
 
 ```php?start_inline=1
   'backend' =>

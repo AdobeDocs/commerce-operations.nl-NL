@@ -1,5 +1,5 @@
 ---
-title: Productlimieten
+title: Productlimieten voor beste praktijken
 description: Leer beste praktijken voor het vormen van de Eenheden van het Bewaren van het Product (SKUs) om plaatsprestaties te maximaliseren.
 role: Admin
 feature: Best Practices, Catalogs
@@ -19,7 +19,7 @@ Om de prestaties te maximaliseren, is het geadviseerde maximum voor efficiënte 
 Effective SKU = N[SKUs] x N[Stores] x N[Customer groups]
 ```
 
-Waar:
+Waarbij:
 
 - N staat als het aantal artikelen voor die categorie
 - De groepen van de klant omvatten gedeelde catalogi, aangezien het een extra klantengroep creeert.
@@ -47,13 +47,13 @@ Gebruik de volgende strategieën om het aantal producten (SKU&#39;s) te verminde
 - Verstrek meer productvariaties door douaneopties te gebruiken in plaats van het creëren van afzonderlijke producten.
 - Rekening houdend met het feit dat een effectieve SKU een aantal mogelijke prijsschommelingen kan omvatten, omdat de prijzen per winkel of klantengroep verschillend kunnen worden gespecificeerd.
 - Deactiveer of verwijder ongebruikte systeemcomponenten zoals modules. (Zie  [Modules verwijderen](../../../installation/tutorials/uninstall-modules.md).)
-- Producten beheren in een extern PMS (Platform Management System).
+- Beheer producten in een extern Platform Management System (PMS).
 
 ## Aanvullende informatie
 
 - [Een product maken](https://experienceleague.adobe.com/docs/commerce-admin/catalog/products/product-create.html)
 - [Producttoewijzingen](https://experienceleague.adobe.com/docs/commerce-admin/catalog/categories/products-in-category/categories-product-assignments.html)
 - [Werken met gedeelde catalogi](https://experienceleague.adobe.com/docs/commerce-admin/b2b/shared-catalogs/catalog-shared.html)
-- Wolkeninfrastructuur: [Meerdere websites en winkels instellen](https://devdocs.magento.com/cloud/project/project-multi-sites.html)
+- Cloud-infrastructuur: [Meerdere websites en winkels instellen](https://devdocs.magento.com/cloud/project/project-multi-sites.html)
 - Op het terrein: [Meerdere websites of winkels](../../../configuration/multi-sites/ms-overview.md)
-- [Adobe Commerce op cloudinfrastructuur: Beste praktijken voor archiefconfiguratie](https://devdocs.magento.com/cloud/configure/configure-best-practices.html)
+- [Adobe Commerce op cloudinfrastructuur: aanbevolen procedures voor winkelconfiguratie](https://devdocs.magento.com/cloud/configure/configure-best-practices.html)

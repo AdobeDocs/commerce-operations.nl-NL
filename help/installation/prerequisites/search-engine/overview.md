@@ -12,11 +12,11 @@ ht-degree: 0%
 
 # Voorwaarden voor zoekmachines
 
-Vanaf Adobe Commerce en Magento Open Source 2.4 moeten alle installaties zodanig zijn geconfigureerd dat ze worden gebruikt [Elasticsearch](https://www.elastic.co) of [OpenSearch](https://opensearch.org/) als zoekoplossing voor de catalogus.
+Vanaf Adobe Commerce en Magento Open Source 2.4 moeten alle installaties zodanig zijn geconfigureerd dat [Elasticsearch](https://www.elastic.co) of [OpenSearch](https://opensearch.org/) als zoekoplossing voor de catalogus.
 
 >[!NOTE]
 >
->Ondersteuning voor OpenSearch is toegevoegd in 2.4.4. OpenSearch is een compatibele vork van Elasticsearch. Alle instructies voor het configureren van Elasticsearch 7 zijn van toepassing op OpenSearch. [Migreren van Elasticsearch naar OpenSearch](../../../upgrade/prepare/opensearch-migration.md) biedt richtlijnen voor het schakelen naar OpenSearch.
+>Ondersteuning voor OpenSearch is toegevoegd in 2.4.4. OpenSearch is een compatibele Elasticsearch. Alle instructies voor het configureren van Elasticsearch 7 zijn van toepassing op OpenSearch. [Migreren van Elasticsearch naar OpenSearch](../../../upgrade/prepare/opensearch-migration.md) biedt richtlijnen voor het schakelen naar OpenSearch.
 
 ## Ondersteunde versies
 
@@ -41,9 +41,9 @@ Het voorgaande diagram toont:
 
 * De toepassing van de Handel en de onderzoeksmotor zijn geïnstalleerd op verschillende gastheren.
 
-  Als u op aparte hosts werkt, moet u de proxy opnieuw gebruiken. (Het groeperen van de onderzoeksmotor is voorbij het werkingsgebied van deze gids, maar u kunt meer informatie in vinden [Elasticsearch clustering-documentatie](https://www.elastic.co/guide/en/elasticsearch/guide/current/distributed-cluster.html).)
+  Als u op aparte hosts werkt, is proxy vereist. (Het groeperen van de onderzoeksmotor is voorbij het werkingsgebied van deze gids, maar u kunt meer informatie in vinden [Elasticsearch clustering documentatie](https://www.elastic.co/guide/en/elasticsearch/guide/current/distributed-cluster.html).)
 
-* Elke host heeft een eigen webserver. de webservers hoeven niet hetzelfde te zijn .
+* Elke host heeft een eigen webserver. De webservers hoeven niet hetzelfde te zijn.
 
   De toepassing Commerce kan bijvoorbeeld Apache uitvoeren en de zoekfunctie kan nginx uitvoeren.
 
@@ -63,7 +63,7 @@ Zoekverzoeken worden als volgt verwerkt:
 
 1. Het zoekprogramma verwerkt het verzoek.
 
-1. De mededeling keert langs de zelfde route terug, met de Webserver die van Elasticsearch als veilige omgekeerde volmacht dienst doet.
+1. De mededeling keert langs de zelfde route terug, met de server die van het Web van de Elasticsearch als veilige omgekeerde volmacht dienst doet.
 
 ## Vereisten
 
@@ -106,7 +106,7 @@ Zie een van de volgende secties:
 
 Zie dit [Lesbestand digitale oceaan](https://www.digitalocean.com/community/tutorials/how-to-install-java-on-centos-and-fedora#install-oracle-java-8).
 
-Zorg ervoor dat u de JDK installeert en *niet* de JRE.
+Installeer de JDK en *niet* de JRE.
 
 ```bash
 yum -y install java-1.8.0-openjdk
@@ -128,13 +128,13 @@ apt-get -y update
 apt-get install -y openjdk-8-jdk
 ```
 
-Voor andere opties raadpleegt u [Documentatie oracle](https://docs.oracle.com/javase/8/docs/technotes/guides/install/install_overview.html).
+Zie voor andere opties [Documentatie oracle](https://docs.oracle.com/javase/8/docs/technotes/guides/install/install_overview.html).
 
 ### De zoekfunctie installeren
 
-Volg [Elasticsearch installeren](https://www.elastic.co/guide/en/elasticsearch/reference/current/install-elasticsearch.html) of [OpenSearch installeren en configureren](https://opensearch.org/docs/latest/opensearch/install/index/) voor uw platformspecifieke stappen.
+Volgen [Elasticsearch installeren](https://www.elastic.co/guide/en/elasticsearch/reference/current/install-elasticsearch.html) of [OpenSearch installeren en configureren](https://opensearch.org/docs/latest/opensearch/install/index/) voor uw platformspecifieke stappen.
 
-Om te verifiëren dat Elasticsearch werkt, ga het volgende bevel op de server in waarop het loopt:
+Om te verifiëren dat de Elasticsearch werkt, ga het volgende bevel op de server in waarop het loopt:
 
 ```bash
 curl -XGET '<host>:9200/_cat/health?v&pretty'
@@ -159,9 +159,9 @@ curl -XGET https://<host>:9200/_cat/plugins?v -u 'admin:admin' --insecure
 
 ## Elasticsearch bijwerken
 
-Zie [Elasticsearch bijwerken](https://www.elastic.co/guide/en/elasticsearch/reference/current/setup-upgrade.html) voor volledige instructies voor het maken van back-ups van uw gegevens, het opsporen van potentiële migratiekwesties en het testen van upgrades voordat u deze implementeert naar de productie. Afhankelijk van uw huidige versie van Elasticsearch, is het mogelijk dat een volledige clusterherstart al dan niet vereist is.
+Zie [Elasticsearch bijwerken](https://www.elastic.co/guide/en/elasticsearch/reference/current/setup-upgrade.html) voor volledige instructies voor het maken van back-ups van uw gegevens, het opsporen van potentiële migratiekwesties en het testen van upgrades voordat u deze implementeert naar de productie. Afhankelijk van uw huidige versie van Elasticsearch is het mogelijk dat een volledige clusterherstart al dan niet vereist is.
 
-Elasticsearch vereist JDK 1.8 of hoger. Zie [De Java Software Development Kit installeren](#install-the-java-software-development-kit) om te controleren welke versie van JDK is geïnstalleerd.
+Voor Elasticsearch is JDK 1.8 of hoger vereist. Zie [De Java Software Development Kit installeren](#install-the-java-software-development-kit) om te controleren welke versie van JDK is geïnstalleerd.
 
 ## Aanvullende bronnen
 

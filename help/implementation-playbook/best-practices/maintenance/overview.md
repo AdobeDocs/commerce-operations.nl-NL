@@ -30,7 +30,7 @@ De volgende secties bevatten informatie over best practices voor de onderhoudsfa
 - [Voorwaartse controle](frontend-performance.md)
 - [Gereed, Instellen, Onderhouden](https://business.adobe.com/blog/basics/ready-set-maintain)
 - [SWAT-gereedschap gebruiken om de beveiliging en de werking van Adobe Commerce te garanderen](https://experienceleague.adobe.com/docs/commerce-operations/tools/site-wide-analysis-tool/intro.html?lang=en#integrations-with-other-adobe-commerce-support-tools) - CTAG-dek
-- [Gebruik New Relic- en Health-meldingen voor het bewaken van prestaties, schijfruimte en logbestanden voor Adobe Commerce-sites die worden geïmplementeerd op een cloud-infrastructuur](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/monitor/performance.html)
+- [Gebruik New Relic- en Health-meldingen voor het bewaken van prestaties, schijfruimte en logbestanden voor Adobe Commerce-sites die worden geïmplementeerd op cloudinfrastructuur](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/monitor/performance.html)
 
 ## Databasebeheer
 

@@ -1,6 +1,6 @@
 ---
 title: Prestatiebenchmarks
-description: Resultaten van de prestatiebenchmark bekijken voor Adobe Commerce-implementaties die worden gehost op de Adobe-cloudinfrastructuur.
+description: Bekijk de resultaten van benchmarkprestaties voor Adobe Commerce-implementaties die worden gehost op de Adobe cloud-infrastructuur.
 exl-id: cc9b090a-a504-4df3-aa32-81882f431dd9
 feature: Cloud
 source-git-commit: 94d7a57dcd006251e8eefbdb4ec3a5e140bf43f9
@@ -22,7 +22,7 @@ Er zijn geen aanvullende aanpassingen.
 
 De volgende informatie geeft een overzicht van de benchmarkresultaten en geeft informatie over de omgeving en de gegevens die tijdens het testen worden gebruikt.
 
-## Belangrijkste prestatiewaarden
+## Belangrijkste prestatiemetingen
 
 Het volgende cijfer toont de de opslagconfiguratie van de Handel voor de prestatiesbenchmark en de belangrijkste prestatiesmetriek van de testresultaten.
 
@@ -52,7 +52,7 @@ Prestatiemetingen zijn gebaseerd op gesimuleerde dagelijkse winkelactiviteiten v
 
      Als u de cachelaag op effectieve wijze gebruikt, neemt het aantal paginaweergaven per uur toe.
 
-- **GraphQL API**
+- **GRAPHQL API**
    - 250 gelijktijdige threads
    - Instellen op 0% CDN-cache-raaksnelheid
 

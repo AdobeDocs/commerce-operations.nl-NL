@@ -46,7 +46,7 @@ De **[!UICONTROL POST activities summary table]** frame toont overzicht `POST` a
 
 ## [!UICONTROL POST activities details table]
 
-De **[!UICONTROL POST activities details table]** frame toont de `POST` activiteiten voor de locatie vanuit de [!DNL Fastly] logboeken. Het toont ook alle details van [!DNL Fastly] logboek voor deze verzoeken. Het is beperkt tot de laatste 2000 verzoeken.
+De **[!UICONTROL POST activities details table]** frame toont de `POST` activiteiten voor de locatie vanuit de [!DNL Fastly] logboeken. Het toont ook alle details van het [!DNL Fastly] logboek voor deze verzoeken. Het is beperkt tot de laatste 2000 verzoeken.
 ![POST-activiteiten-details](../../assets/tools/observation-for-adobe-commerce/POST-activities-details.jpg)
 
 ## [!UICONTROL Guest Carts activities]

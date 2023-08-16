@@ -14,7 +14,7 @@ ht-degree: 0%
 
 ## Waarom zonder hoofd?
 
-Om te beginnen is de handel in oudere ondernemingen duur en moeilijk te schalen door siloes; verouderde structuren worden versterkt door perronbeperkingen; en innovatie wordt een uitdaging .
+Om te beginnen is de handel in bestaande ondernemingen duur en moeilijk te schalen als gevolg van siloes; verouderde structuren worden versterkt door platformbeperkingen; en innovatie wordt een uitdaging.
 
 De klanten verwachten een zaken om met hen in wisselwerking te staan en met hen over alle kanalen in dienst te nemen. Klantgerichte organisaties willen toekomstbestendige platforms bouwen die zich kunnen aanpassen aan veranderende verwachtingen van klanten.
 
@@ -22,7 +22,7 @@ Hoofdloze handel is op API gebaseerde handel. Het ontkoppelt bedrijfslogica, eve
 
 Hoofdloze architectuur is de technische scheiding van het hoofd van de rest van de handelstoepassing. Adobe Commerce heeft een volledig ontkoppelde architectuur die alle handelsdiensten en gegevens via een GraphQL API-laag biedt. Deze architectuur staat frontend teams toe om hun frontends onafhankelijk van Adobe Commerce te ontwikkelen, die de behendigheid verstrekken om nieuwe aanraakpunten met nieuwe technologieën snel te bouwen en te testen.
 
-Adobe Commerce GraphQL API&#39;s kunnen ook worden uitgebreid met microservices die worden geïmplementeerd op Adobe/O Runtime. Dit verstrekt ongeëvenaarde behendigheid om, omnichannel bedrijfsprocessen te integreren uit te breiden en aan te passen zonder codeaanpassingen aan het achterste eind te vereisen, die ervoor zorgt het kernplatform gemakkelijk zonder invloed aan frontend touchpoints kan worden bevorderd. Adobe Commerce GraphQL API&#39;s zijn open sourced en maken deel uit van ons engineeringprogramma voor de gemeenschap, met aanzienlijke bijdragen en toezicht van onze gemeenschap van ontwikkelaars.
+Adobe Commerce GraphQL API&#39;s kunnen ook worden uitgebreid met microservices die worden geïmplementeerd in de I/O-runtime van Adobe. Dit verstrekt ongeëvenaarde behendigheid om, omnichannel bedrijfsprocessen te integreren uit te breiden en aan te passen zonder codeaanpassingen aan het achterste eind te vereisen, die ervoor zorgt het kernplatform gemakkelijk zonder invloed aan frontend touchpoints kan worden bevorderd. Adobe Commerce GraphQL API&#39;s zijn open sourced en maken deel uit van ons engineeringprogramma voor de gemeenschap, met aanzienlijke bijdragen en toezicht van onze gemeenschap van ontwikkelaars.
 
 ![Architectuurdiagram met koploze handel](../../../assets/playbooks/headless-diagram.svg)
 

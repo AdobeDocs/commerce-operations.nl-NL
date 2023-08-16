@@ -1,5 +1,5 @@
 ---
-title: Verzending en afhandeling
+title: Verzending
 description: Bepaal verzendmethoden en -kosten voordat u uw e-mailproject voltooit.
 exl-id: 07d303ab-f229-4b6a-b35a-b6d2a3be89b3
 feature: Best Practices, Shipping/Delivery
@@ -18,9 +18,9 @@ Er wordt veel moeite gedaan om klanten de beste online ervaring te bieden. Wat d
 
 ## Basisfactoren
 
-De scheepvaart en de naleving van de regels zijn gebaseerd op enkele basisfactoren, waaronder:
+De scheepvaart en de naleving van de regels zijn gebaseerd op een aantal basisfactoren, waaronder:
 
-- **Verzendmethoden en -kosten**—De ondernemingen moeten de volledige kosten van de verzending analyseren en verdelen en bepalen of om verzendkosten te absorberen, kosten aan klanten, of de kosten te delen? Hoe zal het bedrijf gratis verzendservices of verzendvoorstellen aanbieden? Hoe worden producten verzonden? Zijn er meerdere verzendmethoden en verzendkosten?
+- **Verzendmethoden en -kosten**—De ondernemingen moeten de volledige kosten van de verzending analyseren en verdelen en bepalen of om verzendkosten te absorberen, kosten aan klanten, of de kosten te delen? Hoe zal het bedrijf gratis verzendservices of verzendvoorstellen aanbieden? Hoe worden producten verzonden? Zijn er meer dan één verzendmethode en verzendkosten?
 
 - **Product**—Elk product verschilt qua aantal artikelen, gewicht, bestemming en duurzaamheid. Bedrijven moeten deze gegevens analyseren om inzicht te krijgen in de totale verzendkosten, omdat verschillende producten verschillende verzendkosten hebben.
 
@@ -55,7 +55,7 @@ Gebruik de volgende aanbevolen procedures bij het kiezen van een verzend- en afh
 
 ## B2B versus B2C
 
-In de volgende tabel worden de verschillen beschreven tussen B2B- en B2C-scheepvaart en -naleving:
+In de volgende tabel worden de verschillen beschreven tussen B2B- en B2C-scheepvaart en -afhandeling:
 
 | B2B | B2C |
 |----------------------------------------------------------------------------------------------|------------------------------------------------------|

@@ -12,11 +12,11 @@ ht-degree: 0%
 
 # AWS S3-emmertje voor externe opslag configureren
 
-De [Amazon Simple Storage Service (Amazon S3)][AWS S3] is een service voor objectopslag die toonaangevende schaalbaarheid, beschikbaarheid van gegevens, beveiliging en prestaties biedt. De AWS S3-service gebruikt emmers, of containers, voor gegevensopslag. Voor deze configuratie moet u een _privé_ emmertje. Voor Adobe Commerce over cloudinfrastructuur raadpleegt u [Externe opslag configureren voor handel op Cloud-infrastructuur](cloud-support.md).
+De [Amazon Simple Storage Service (Amazon S3)][AWS S3] is een service voor objectopslag die toonaangevende schaalbaarheid, beschikbaarheid van gegevens, beveiliging en prestaties biedt. De AWS S3-service gebruikt emmers, of containers, voor gegevensopslag. Voor deze configuratie moet u een _privé_ emmertje. Voor Adobe Commerce over cloud-infrastructuur raadpleegt u [Externe opslag configureren voor handel op Cloud-infrastructuur](cloud-support.md).
 
 >[!WARNING]
 >
->Adobe ontmoedigt het gebruik van openbare emmers ten zeerste omdat het een ernstig veiligheidsrisico vormt.
+>Adobe ontmoedigt het gebruik van openbare emmers sterk, omdat het een ernstig veiligheidsrisico vormt.
 
 **Externe opslag inschakelen met de AWS S3-adapter**:
 
@@ -75,7 +75,7 @@ De S3-integratie is afhankelijk van de mogelijkheid om cacheafbeeldingen te gene
 
 ### Bestandsbewerkingen
 
-Het wordt ten zeerste aanbevolen [!DNL Commerce] bestandsadaptermethoden in de ontwikkeling van codering of extensie, ongeacht het type bestandsopslag. Gebruik geen native I/O-bewerkingen van PHP-bestanden, zoals `copy`, `rename`, of `file_put_contents`, omdat S3-bestanden zich niet in het bestandssysteem bevinden. Zie [DriverInterface.php](https://github.com/magento/magento2/blob/2.4-develop/lib/internal/Magento/Framework/Filesystem/DriverInterface.php#L18) voor codevoorbeelden.
+Het wordt ten zeerste aanbevolen om [!DNL Commerce] bestandsadaptermethoden in de ontwikkeling van codering of extensie, ongeacht het type bestandsopslag. Gebruik geen native I/O-bewerkingen van PHP-bestanden, zoals `copy`, `rename`, of `file_put_contents`, omdat S3-bestanden zich niet in het bestandssysteem bevinden. Zie [DriverInterface.php](https://github.com/magento/magento2/blob/2.4-develop/lib/internal/Magento/Framework/Filesystem/DriverInterface.php#L18) voor codevoorbeelden.
 
 <!-- link definitions -->
 

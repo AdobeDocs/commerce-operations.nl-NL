@@ -23,7 +23,7 @@ De volgende tabel bevat aanbevolen projectbeheertools:
 | Documentbeheer | Atlassiaanse confluentie |
 | Broncodebeheer | Atlassiaanse bitmap, GitHub |
 | Continuous Integration (CI)/Continuous Delivery (CD) | Jenkins |
-| Communicatie | E-mail, Microsoft Teams, telefoon, Slack |
+| Communicatie | E-mail, Microsoft Teams, Telefoon, Slack |
 | Vergadering | Zoomen, Microsoft Teams |
 
 ## SLA-beheer
@@ -51,7 +51,7 @@ GitHub is gelijkaardig aan Bitbucket, die ook in sommige projecten wordt gebruik
 
 ## Communicatie
 
-Voor verschillende cliënten, kunnen wij een verscheidenheid van hulpmiddelen voor mededeling gebruiken: e-mail, Microsoft Teams, en Slack zijn alle gemeenschappelijke hulpmiddelen die wij voor project-verwante mededelingen leveraged hebben.
+Voor verschillende cliënten, kunnen wij een verscheidenheid van hulpmiddelen voor mededeling gebruiken: e-mail, Microsoft Teams, en Slack zijn alle gemeenschappelijke hulpmiddelen die wij voor op project betrekking hebbende mededelingen leveraged hebben.
 
 ## Vergadering
 

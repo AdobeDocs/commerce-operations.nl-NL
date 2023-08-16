@@ -1,10 +1,11 @@
 ---
 title: Toepassingsserver voor GraphQL API's
 description: Volg deze instructies voor het inschakelen van de toepassingsserver voor GraphQL API's in uw Adobe Commerce-implementatie.
-badgeCoreBeta: label="2.4.7-beta1" type="informative"
-source-git-commit: 28bfc54e0f15ba4f4f941acc7d1fb4825702cdf3
+badgeCoreBeta: label="2.4.7-bèta1" type="informative"
+exl-id: 346cc722-131e-4ed0-bc8c-23c3a1e58258
+source-git-commit: f085c0a77fe59ff3b2d76abbd6965b6bc8ee69db
 workflow-type: tm+mt
-source-wordcount: '532'
+source-wordcount: '533'
 ht-degree: 0%
 
 ---
@@ -15,7 +16,7 @@ Met de Commerce Application Server voor GraphQL API&#39;s kan Adobe Commerce de 
 
 Deze bètaversie van Application Server is alleen beschikbaar voor implementaties op locatie met PHP 8.1 of 8.2. Implementaties op basis van cloud&#39;s worden niet ondersteund. B2B GraphQL-functionaliteit wordt nog niet ondersteund. GraphQL-aanvragen werken mogelijk niet zoals wordt verwacht in implementaties op locatie wanneer deze versie van de PHP-toepassingsserver is geconfigureerd.
 
-## Wie kan toepassingsserver gebruiken?
+## Wie kan de Server van de Toepassing gebruiken?
 
 De Server van de toepassing is beschikbaar voor de plaatsingen van de Handel op-gebouw slechts.
 
@@ -68,7 +69,7 @@ Deze procedure laat zien hoe u de Open Swoole extensie installeert op PHP 8.2 vo
 
 U kunt zowel de Open Swoole uitbreiding voor PHP (v22) als de Composer pakketten installeren die deze uitbreiding met één bevel vereist.
 
-### Open Kolom installeren
+### Open-wisselaar installeren
 
 Enter:
 
@@ -131,4 +132,3 @@ pecl install openswoole-22.0.0
 #### Problemen met pcre2.h oplossen
 
 Om problemen op te lossen met betrekking tot `pcre2.h`, de `pcre2.h` pad naar de geïnstalleerde map voor PHP-extensies. Uw specifieke geïnstalleerde versie van PHP en `pcr2.h` bepaalt de specifieke versie van het bevel dat u zou moeten gebruiken.
-

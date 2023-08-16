@@ -1,6 +1,6 @@
 ---
 title: Instellingen voor gegevensmigratie
-description: Leer hoe u begint met het migreren van instellingen van Magento 1 naar Magento 2 met de opdracht [!DNL Data Migration Tool].
+description: Leer hoe u de migratie van instellingen van Magento 1 naar Magento 2 kunt starten met de [!DNL Data Migration Tool].
 exl-id: 6fc8285a-9f26-48a5-9034-49a6a1b66b40
 topic: Commerce, Migration
 source-git-commit: e83e2359377f03506178c28f8b30993c172282c7
@@ -22,7 +22,7 @@ Voer de volgende stappen uit om voor te bereiden voordat u begint:
 
 >[!NOTE]
 >
->Zorg ervoor dat Magento 2 wordt geïmplementeerd in `default` in. In de ontwikkelmodus kunnen validatiefouten optreden in het migratiehulpprogramma.
+>Zorg ervoor dat Magento 2 wordt geïmplementeerd in `default` -modus. In de ontwikkelmodus kunnen validatiefouten optreden in het migratiehulpprogramma.
 
 
 Zie de [eerste stappen](overview.md#first-steps) voor meer informatie.
@@ -35,17 +35,17 @@ Voer de volgende handelingen uit om de migratie-instellingen te starten:
 bin/magento migrate:settings [-r|--reset] [-a|--auto] {<path to config.xml>}
 ```
 
-Waar:
+Waarbij:
 
 * `[-r|--reset]` is een optioneel argument dat de migratie vanaf het begin start. U kunt dit argument gebruiken voor het testen van migratie
 
 * `[-a|--auto]` is een optioneel argument dat voorkomt dat de migratie stopt wanneer integriteitscontroles worden uitgevoerd.
 
-* `{<path to config.xml>}` is het absolute pad van het bestandssysteem naar het migratiehulpprogramma [`config.xml`](../configure.md#configure-migration-in-vendor-folder) bestand; dit argument is vereist .
+* `{<path to config.xml>}` is het absolute pad van het bestandssysteem naar het migratiehulpprogramma [`config.xml`](../configure.md#configure-migration-in-vendor-folder) bestand; dit argument is vereist.
 
 >[!NOTE]
 >
->Dit bevel migreert niet alle configuratiemontages. Verifieer alle montages in Magento 2 Admin alvorens te werk te gaan.
+>Dit bevel migreert niet alle configuratiemontages. Controleer alle instellingen in Magento 2 Admin voordat u verdergaat.
 
 
 De `Migration completed` bericht wordt weergegeven nadat de instellingen zijn overgebracht.
@@ -70,7 +70,7 @@ U kunt de systeemconfiguraties negeren, hernoemen of wijzigen tijdens het migrer
 
    * `/var/www/html/vendor/magento/data-migration-tool/etc/opensource-to-opensource`
 
-1. Als u een `settings.xml` bestand uit het opgegeven voorbeeld, voert u uit:
+1. Een `settings.xml` bestand uit het opgegeven voorbeeld, voert u uit:
 
    ```bash
    cp settings.xml.dist settings.xml

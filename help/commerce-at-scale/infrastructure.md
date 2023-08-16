@@ -19,7 +19,7 @@ Voor de time-outinstellingen moeten de instellingen worden gecontroleerd en uitg
 
 ![Genummerd diagram dat de onderbrekingen en verbindingsgrenzen voor AEM beschrijft](../assets/commerce-at-scale/timeout-settings.svg)
 
-## AEM
+## AEM taakverdelingsmechanisme
 
 Ervan uitgaande dat er een taakverdelingsmechanisme voor AWS-toepassingen in de infrastructuur en meerdere verzenders/uitgevers is, moet voor het taakverdelingsmechanisme rekening worden gehouden met de volgende instellingen:
 
@@ -41,7 +41,7 @@ Als er geen taakverdelingsmechanisme in de infrastructuur is, zouden de onderbre
 
 ## Uitgevers
 
-Limieten en time-outs voor GraphQL-verbinding van uitgever: Aanvankelijk, zouden de Max verbindingen van HTTP in Adobe Commerce CIF de montages van de Configuratie van de Cliënt van de Fabriek OSGI van de Cliënt van de Cliënt van GraphQL aan de standaard snelste maximumverbindingsgrens moeten worden geplaatst, die momenteel aan 200 wordt geplaatst. Zelfs als er meerdere uitgevers in het AEM bedrijf zijn, moet de limiet voor elke uitgever hetzelfde zijn, overeenkomstig de instelling Snelst. De reden hiervoor is dat in sommige gevallen één uitgever meer verkeer zou kunnen verwerken dan de andere uitgevers, als een verbonden verzender bijvoorbeeld uit het landbouwbedrijf wordt gehaald. Dit zou betekenen dat al verkeer door de enige resterende verzender en uitgevers zou worden verpletterd, in dit geval kan één enkele uitgever alle verbindingen van HTTP dan nodig hebben.
+GraphQL-verbindingslimieten en time-outs voor uitgevers: aanvankelijk zouden de Max HTTP-verbindingen in de Adobe Commerce CIF GraphQL Client Configuration Factory OSGI-instellingen moeten worden ingesteld op de standaard snelste maximale verbindingslimiet, die momenteel is ingesteld op 200. Zelfs als er meerdere uitgevers in het AEM bedrijf zijn, moet de limiet voor elke uitgever hetzelfde zijn, overeenkomstig de instelling Snelst. De reden hiervoor is dat in sommige gevallen één uitgever meer verkeer zou kunnen verwerken dan de andere uitgevers, als een verbonden verzender bijvoorbeeld uit het landbouwbedrijf wordt gehaald. Dit zou betekenen dat al verkeer door de enige resterende verzender en uitgevers zou worden verpletterd, in dit geval kan één enkele uitgever alle verbindingen van HTTP dan nodig hebben.
 
 De &quot;standaardmethode van HTTP&quot;zou van POST aan GET moeten worden geplaatst. Alleen aanvragen van GET worden in de cache van Adobe Commerce GraphQL opgeslagen en daarom moet de standaardmethode altijd worden ingesteld op GET.
 
@@ -53,4 +53,4 @@ De volgende afbeelding toont de Magento CIF GraphQL Client Configuration Factory
 
 In de volgende afbeeldingen ziet u de snelste achtergrondconfiguraties. De hier getoonde instellingen zijn alleen voorbeelden en moeten per geval worden aangepast:
 
-![Schermafbeelding van de configuratie-instellingen voor Admin-handelsbeheer voor snel](../assets/commerce-at-scale/cif-config-advanced.png)
+![Schermafbeelding van de configuratie-instellingen voor Admin-beheer voor handel voor snel](../assets/commerce-at-scale/cif-config-advanced.png)

@@ -28,7 +28,7 @@ De [!UICONTROL Summary] tabblad van [!DNL Observation for Adobe Commerce] is bed
 
 **Niet-web:** Niet-webtransacties worden niet gestart met een webaanvraag. Ze kunnen processen van niet-webworkers, achtergrondprocessen, scripts, activiteit in de wachtrij van berichten en andere taken omvatten.
 
-Als u naar de **[!UICONTROL Transaction Overview]** in het bovenstaande kader waren er bijna 53.000 transacties met een gemiddelde APDEX score van 0,76, en 95% van deze transacties gebeurde in minder dan 2,313 seconden. Dit zou een kader zijn waarin een strakkere tijdslijn kan wijzen op een afwijking van dat huidige gemiddelde als er een APDEX-hit is tijdens een korte periode.
+Als u kijkt naar de **[!UICONTROL Transaction Overview]** in het bovenstaande kader waren er bijna 53.000 transacties met een gemiddelde APDEX score van 0,76, en 95% van deze transacties gebeurde in minder dan 2,313 seconden. Dit zou een kader zijn waarin een strakkere tijdslijn kan wijzen op een afwijking van dat huidige gemiddelde als er een APDEX-hit is tijdens een korte periode.
 
 ## [!UICONTROL 404 page errors frame]
 
@@ -112,11 +112,11 @@ De **[!UICONTROL Deployment State]** frame facets bepaalde plaatsingsfasen van o
 
 * &#39;%Starten genereert opdracht%&#39;) als &#39;start_gen&#39;
 * &#39;%git apply /app/vendor/magento/ece-tools/patches%&#39;) as &#39;apply_patches&#39;
-* markering %Set: .static_content_Implementeren%&#39;) als &#39;SCD&#39;
-* %NOTICE: Opdracht genereren voltooid%&#39;) als &#39;gen_compl&#39;
-* %NOTICE: Implementatie voltooid%&#39;) als &#39;implementatie_compl&#39;
-* %NOTICE: Na implementatie starten.%&#39;) als &#39;start_implementatie&#39;
-* %NOTICE: Na implementatie is complete%&#39;) als &#39;implementatie&#39;
+* &#39;%vlag instellen: .static_content_implementatie%&#39;) als &#39;SCD&#39;
+* &#39;%NOTICE: opdracht genereren voltooid%&#39;) als &#39;gen_compl&#39;
+* &#39;%NOTICE: Implementatie voltooid%&#39;) als &#39;implementatie_compl&#39;
+* &#39;%NOTICE: Na implementatie starten.%&#39;) als &#39;start_implementatie&#39;
+* &#39;%NOTICE: PostImplementation is complete%&#39;) als &#39;implementatie&#39;
 * &#39;%implementatie-complete%&#39;) als &#39;cl_implementatie_compl&#39;
 
 ## [!UICONTROL IP Frequency]
@@ -176,9 +176,9 @@ De **[!UICONTROL Nginx access by node]** frame bekijkt de tellingen van de `acce
 **Lijst van [!UICONTROL Galera] statuswijzigingen:**
 
 * &#39;%1047 WSREP heeft nog geen knooppunt voor toepassingsgebruik%&#39;) als &#39;node_not_prep_for_use&#39; voorbereid
-* WSREP &#39;%\[ERROR\]: Kan niet lezen van: wsrep_sst_xtrabackup-v2%&#39;) als &#39;xtrabackup_read_fail&#39;
-* WSREP &#39;%\[ERROR\]: Proces voltooid met fout: wsrep_sst_xtrabackup-v2 %&#39;) als &#39;xtrabackup_compl_w_err&#39;
-* WSREP &#39;%\[ERROR\]: rbr write fail%&#39;) als &#39;rbr_write_fail&#39;
+* &#39;%\[ERROR\] WSREP: Kan niet lezen van: wsrep_sst_xtrabackup-v2%&#39;) als &#39;xtrabackup_read_fail&#39;
+* &#39;%\[ERROR\] WSREP: Proces voltooid met fout: wsrep_sst_xtrabackup-v2 %&#39;) als &#39;xtrabackup_compl_w_err&#39;
+* &#39;%\[ERROR\] WSREP: rbr write fail%&#39;) als &#39;rbr_write_fail&#39;
 * &#39;%self-leave%&#39;) als &#39;susp_node&#39;
 * &#39;%members = 3/3 (join/total)%&#39;) als &#39;3of3&#39;
 * &#39;%members = 2/3 (join/total)%&#39;) als &#39;2of3&#39;
@@ -186,12 +186,12 @@ De **[!UICONTROL Nginx access by node]** frame bekijkt de tellingen van de `acce
 * &#39;%members = 1/1%&#39;) als &#39;1of1&#39;
 * &quot;%\[Opmerking\] /usr/sbin/mysqld (mysqld 10.%&#39;) als &#39;sql_start&#39;
 * &#39;%Quorum: Geen knooppunt met volledige status:%&#39;) als &#39;no_node_count&#39;
-* &#39;%WSREP: Lid 0%&#39;) als &#39;mem_0&#39;
-* &#39;%WSREP: Lid 1,0%&quot;) als &quot;mem_1&quot;
-* &#39;%WSREP: Lid 2%&quot;) als &quot;mem2&quot;
-* &#39;%WSREP: Gesynchroniseerd met groep, gereed voor verbindingen%&#39;) als &#39;ready&#39;
+* &#39;%WSREP: lid 0%&#39;) als &#39;mem_0&#39;
+* &#39;%WSREP: Lid 1.0%&#39;) als &#39;mem_1&#39;
+* &#39;%WSREP: lid 2%&#39;) als &#39;mem2&#39;
+* &#39;%WSREP: gesynchroniseerd met groep, gereed voor verbindingen%&#39;) als &#39;ready&#39;
 * &#39;%/usr/sbin/mysqld, Version:%&#39;) als &#39;mysql_start_mysql.slow&#39;
-* &quot;%\[Nota\] WSREP: Nieuwe clusterweergave: globale status:%&#39;) als &#39;galera_cluster_view_chng&#39;
+* &#39;%\[Opmerking\] WSREP: Nieuwe clusterweergave: globale status:%&#39;) als &#39;galera_cluster_view_change&#39;
 
 Deze signalen kunnen op opslag, geheugen, of vraagkwesties wijzen als de staat vaak verandert.
 
@@ -202,36 +202,36 @@ Deze signalen kunnen op opslag, geheugen, of vraagkwesties wijzen als de staat v
 **Lijst met aangetroffen databasefouten of -berichten:**
 
 * &#39;%Geheugengrootte toegewezen voor de tijdelijke tabel is meer dan 20% van de waarde van onschuldig_buffer_pool_size%&#39;) als &#39;temp_tbl_buff_pool&#39;
-* WSREP &#39;%\[ERROR\]: rbr write fail%&#39;) als &#39;rbr_write_fail&#39;
+* &#39;%\[ERROR\] WSREP: rbr write fail%&#39;) als &#39;rbr_write_fail&#39;
 * &#39;%mysqld: Schijf vol%&#39;) als &#39;disk_full&#39;
 * &#39;%Error number 28%&#39;) als &#39;err_28&#39;
 * &#39;%rollback%&#39;) als &#39;rollback&#39;
 * &#39;%Foreign key-beperking mislukt voor table%&#39;) als &#39;foreign_key_constraint&#39;
 * &#39;%Error_code: 1114%&#39;) als &#39;sql_1114_full&#39;
-* &#39;%CRITICAL: SQLSTATE\[HY000\] \[2006\] MySQL server has away%&#39;) als &#39;sql_went&#39;
+* &#39;%CRITICAL: SQLSTATE\[HY000\] \[2006\] MySQL-server has away%&#39;) als &#39;sql_went&#39;
 * &#39;%SQLSTATE\[HY000\] \[1040\] Te veel verbindingen%&#39;) als &#39;sql_1040&#39;
 * &#39;%CRITICAL: SQLSTATE\[HY000\] \[2002\]%&#39;) als &#39;sql_2002&#39;
 * &#39;%SQLSTATE\[08S01\]:%&#39;) als &#39;sql_1047&#39;
 * &#39;%\[Waarschuwing\] Afgebroken verbinding%&#39;) als &#39;aborted_conn&#39;
-* &#39;%SQLSTATE\[23000\]: Schending van integriteitsbeperking:%&#39;) als &#39;sql_23000&#39;
+* &#39;%SQLSTATE\[23000\]: schending van integriteitsbeperking:%&#39;) als &#39;sql_23000&#39;
 * &#39;%1205 Lock wait timeout%&#39;) als &#39;sql_1205&#39;
 * &#39;%SQLSTATE\[HY000\] \[1049\] Onbekende database%&#39;) als &#39;sql_1049&#39;
-* &#39;%SQLSTATE\[42S02\]: Basistabel of -weergave niet gevonden:%&#39;) als &#39;sql_42S02&#39;
+* &#39;%SQLSTATE\[42S02\]: Basistabel of weergave niet gevonden:%&#39;) als &#39;sql_42S02&#39;
 * &#39;%Algemene fout: 1114%&#39;) als &#39;sql_1114&#39;
 * &#39;%SQLSTATE\[40001\]%&#39;) als &#39;sql_1213&#39;
-* &#39;%SQLSTATE\[42S22\]: Kolom niet gevonden: 1054 Onbekende kolom%&#39;) als &#39;sq1_1054&#39;
-* &#39;%SQLSTATE\[42000\]: Syntaxisfout of toegangsfout:%&#39;) als &#39;sql_42000&#39;
-* &#39;%SQLSTATE\[21000\]: Kardinaliteitsovertreding:%&#39;) als &#39;sql_1241&#39;
+* &#39;%SQLSTATE\[42S22\]: kolom niet gevonden: 1054 Onbekende kolom%&#39;) als &#39;sq1_1054&#39;
+* &#39;%SQLSTATE\[42000\]: syntaxisfout of toegangsfout:%&#39;) als &#39;sql_42000&#39;
+* &#39;%SQLSTATE\[21000\]: schending van kardinaliteit:%&#39;) als &#39;sql_1241&#39;
 * &#39;%SQLSTATE\[2003\]:%&#39;) als &#39;sql_2003&#39;
 * &#39;%SQLSTATE\[HY000\] \[9000\] Client with IP address%&#39;) als &#39;sql_9000&#39;
 * &#39;%SQLSTATE\[HY000\]: Algemene fout: 2014%&#39;) als &#39;sql_2014&#39;
 * &#39;%1927 Verbinding is gedood%&#39;) als &#39;sql_1927&#39;
 * &#39;%1062 \[\ERROR\] InnoDB:%&#39;) als &#39;sql_1062_e&#39;
-* &quot;%\[Nota\] WSREP: Geheugenkaart naar schijf spoelen...%&#39;) als &#39;mem_map_flush&#39;
-* &#39;%Internal MariaDB error code: 1146%&#39;) als &#39;sql_1146&#39;
-* &#39;%Internal MariaDB error code: 1062%&#39;) als &#39;sql_1062&#39; * &#39;%1062 \[Waarschuwing\] InnoDB:%&#39;) als &#39;sql_1062_w&#39;
-* &#39;%Internal MariaDB error code: 1064%&#39;) als &#39;sql_1064&#39;
-* &#39;%InnoDB: Bevestigingsfout in bestand%&#39;) als &#39;assertion_err&#39;
+* &quot;%\[Nota\] WSREP: Het leegmaken van geheugenkaart aan schijf..%&quot;) als &quot;mem_map_flush&quot;
+* &#39;%Internal MariaDB error code: 1146%&#39;) as &#39;sql_1146&#39;
+* &#39;%Internal MariaDB error code: 1062%&#39;) as &#39;sql_1062&#39; * &#39;%1062 \[Warning\] InnoDB:%&#39;) as &#39;sql_1062_w&#39;
+* &#39;%Internal MariaDB error code: 1064%&#39;) as &#39;sql_1064&#39;
+* &#39;%InnoDB: bevestiging mislukt in bestand%&#39;) als &#39;assertion_err&#39;
 * &#39;%mysqld_safe Aantal processen dat nu wordt uitgevoerd: 0%&#39;) als &#39;mysql_oom&#39;
 * &#39;%\[ERROR\] mysqld heeft signaal%&#39;) als &#39;mysql_sigterm&#39;
 * &#39;%1452 Cannot add%&#39;) as &#39;sql_1452&#39;
@@ -245,13 +245,13 @@ Deze signalen kunnen op opslag, geheugen, of vraagkwesties wijzen als de staat v
 
 ![databasesporen](../../assets/tools/database-traces.jpg)
 
-De **[!UICONTROL Database traces]** frame bekijkt gegevens van de [sql-spoor](https://docs.newrelic.com/docs/apm/transactions/transaction-traces/transaction-traces-database-queries-page/) entiteit [!DNL New Relic] en retourneert het pad van de trace.
+De **[!UICONTROL Database traces]** frame bekijkt gegevens van de [sql-spoor](https://docs.newrelic.com/docs/apm/transactions/transaction-traces/transaction-traces-database-queries-page/) entiteit van [!DNL New Relic] en retourneert het pad van de trace.
 
 ## [!UICONTROL Database mysql-slow.log]
 
 ![database mysql-slow.log](../../assets/tools/database-mysql-slow-log.jpg)
 
-De **[!UICONTROL Database mysql-slow.log]** frame bevat een aantal items in het dialoogvenster [mysql-slow.log](https://dev.mysql.com/doc/refman/5.7/en/slow-query-log.html) door type van vraagverzoek. Tijdframes worden visueel geïsoleerd die van belang kunnen zijn voor het mysql-slow.log (traag querylogboek). De vragen van lijsten zonder indexen of vragen die grote lijsten bijwerken kunnen andere vragen blokkeren.
+De **[!UICONTROL Database mysql-slow.log]** frame telt items in het [mysql-slow.log](https://dev.mysql.com/doc/refman/5.7/en/slow-query-log.html) door type van vraagverzoek. Tijdframes worden visueel geïsoleerd die van belang kunnen zijn voor het mysql-slow.log (traag querylogboek). De vragen van lijsten zonder indexen of vragen die grote lijsten bijwerken kunnen andere vragen blokkeren.
 
 ## [!UICONTROL Redis synchronization from Log]
 
@@ -261,22 +261,22 @@ De **[!UICONTROL Database mysql-slow.log]** frame bevat een aantal items in het 
 
 **[!DNL Redis]fouten en berichten:**
 
-* %SLAVE-synchronisatie: Geen ruimte meer op apparaat%&#39;) als &#39;spatie&#39;
+* &#39;%SLAVE-synchronisatie: Geen ruimte meer over op apparaat%&#39;) als &#39;spatie&#39;
 * &#39;%Server gestart, Redis version%&#39;) als &#39;serv_start&#39;
 * &#39;%De server is nu klaar om verbindingen te accepteren (%&#39;) als &#39;ready&#39;
-* &#39;%Verbinding met master verbroken.%&#39;) als &#39;mstr_lost&#39;
+* &#39;%Verbinding met stramien verbroken.%&#39;) als &#39;mstr_lost&#39;
 * &#39;%+sdown sentinel%&#39;) als &#39;+sentinal&#39;
 * &#39;%-sdown sentinel%&#39;) als &#39;-sentinal&#39;
 * &#39;%-sdown slave%&#39;) als &#39;-slave&#39;, &#39;%+sdown slave%&#39;) als &#39;+slave&#39;
 * &#39;%-failover-abort-not-selected master mymaster%&#39;) als &#39;-failover&#39;
 * &#39;%+failover-abort-not-selected master mymaster%&#39;) als &#39;+failover&#39;
-* &#39;%Partiële resynchronisatie niet mogelijk (niet in cache master)%&#39;) als &#39;part_sync_err&#39;
-* &#39;%MASTER afgebroken replicatie met een fout: ERR Can%&#39;) als &#39;mstr_sync_err&#39;
+* &#39;%Partiële resynchronisatie niet mogelijk (geen hoofdmap in cache)%&#39;) als &#39;part_sync_err&#39;
+* &#39;%MASTER heeft replicatie afgebroken met een fout: ERR Can%&#39;) als &#39;mstr_sync_err&#39;
 * &#39;%Master biedt geen ondersteuning voor PSYNC of heeft een foutstatus (%&#39;) als &#39;mstr_psync_err&#39;
-* %SLAVE-synchronisatie: Voltooid met success%&#39;) als &#39; slv_sync_suc&#39;
-* &#39;%MASTER afgebroken replicatie met een fout: ERR Can%&#39;) als &#39;mstr_sync_err,coun&#39;
+* &#39;%SLAVE sync: Voltooid met success%&#39;) als &#39; slv_sync_suc&#39;
+* &#39;%MASTER heeft replicatie afgebroken met een fout: ERR Can%&#39;) als &#39;mstr_sync_err,coun&#39;
 * &#39;%OOM opdracht niet toegestaan bij gebruik van geheugen%&#39;) als &#39; max_mem_err&#39;
-* &#39;%CredisException(code: 0): leesfout bij connection%&#39;) als &#39;credits_read_error&#39;
+* &#39;%CredisException(code: 0): read error on connection%&#39;) as &#39;credits_read_error&#39;
 * &#39;%Uncaught RedisException:%&#39;) as &#39;redis_excp_err&#39;
 * &#39;%psync gepland om te sluiten ASAP voor het overwinnen van outputbuffer%&#39;) als &#39;output_buf_err&#39;
 
@@ -284,7 +284,7 @@ De **[!UICONTROL Database mysql-slow.log]** frame bevat een aantal items in het 
 
 ![PHP-processtatussen](../../assets/tools/php-process-states.jpg)
 
-De manier waarop PHP-proces(sen) zich gedraagt, is afhankelijk van de [configuratie](https://www.php.net/manual/en/install.fpm.configuration.php). De configuratie is complex, met vele variabelen en opties. De **[!UICONTROL PHP process states]** frame helpt u te begrijpen wanneer PHP processen worden beëindigd en opnieuw gestart.
+De manier waarop PHP-proces(sen) zich gedraagt, is afhankelijk van de [configuratie](https://www.php.net/manual/en/install.fpm.configuration.php). De configuratie is complex, met vele variabelen en opties. De **[!UICONTROL PHP process states]** frame helpt u te begrijpen wanneer PHP processen worden beëindigd en opnieuw worden gestart.
 
 ### [!UICONTROL PHP errors]
 
@@ -295,22 +295,22 @@ De **[!UICONTROL PHP errors]** frame toont het aantal PHP fouten met workers ove
 **PHP fouten en berichten:**
 
 * &#39;%worker_connections are not genoeg%&#39;) als &#39;worker&#39;
-* &#39;%PHP Fatale fout: Geheugengrootte toegestaan!%&#39;) als &#39;mem_size&#39;
+* &#39;%PHP Fatale error: Allowed memory size!%&#39;) als &#39;mem_size&#39;
 * &#39;%exited on signaal 11 (SIGSEGV)%&#39;) as &#39;sig_11&#39;
 * &#39;%exited on signaal 7 (SIGBUS)%&#39;) as &#39;sig_7&#39;
 * &#39;%rise pm.start_servers%&#39;) als &#39;pmstart_serv&#39;
 * &#39;%max_children%&#39;) als &#39;max_children_cnt&#39;
-* &#39;%PHP Fatale fout: Toegestane geheugengrootte van%&#39;) als &#39;mem_exhst_coun&#39;
+* &#39;%PHP Fatale error: allowed memory size of%&#39;) as &#39;mem_exhst_coun&#39;
 * &#39;%Kan geheugen voor pool%&#39;) niet toewijzen als &#39;opc_mem_count&#39;
 * &#39;%Warning Interned String buffer overflow%&#39;) als &#39;opc_str_buf&#39;
 * &#39;%Illegal string offsetl%&#39;) als &#39;opc_sv_comments&#39;
-* &#39;%PHP Fatale fout: Uncaught RedisException: leesfout bij verbinding%&#39;) als &#39;php_exc&#39;
+* &#39;%PHP Fatal error: Uncaught RedisException: read error on connection%&#39;) as &#39;php_exc&#39;
 
 ## [!UICONTROL PHP processes]
 
 ![php-processen](../../assets/tools/php-processes.jpg)
 
-[PHP-FPM](https://php-fpm.org/) is een [!UICONTROL FastCGI Process Manager] gebruikt door [!DNL Nginx]. Voor meer informatie over systeemvereisten raadpleegt u [PHP-versievereisten toegewezen aan Adobe Commerce-versies](../../installation/system-requirements.md). De **[!UICONTROL PHP processes]** frame toont het aantal PHP-processen dat op een bepaald moment in de geselecteerde tijdlijn wordt uitgevoerd.
+[PHP-FPM](https://php-fpm.org/) is een [!UICONTROL FastCGI Process Manager] gebruikt door [!DNL Nginx]. Raadpleeg voor meer informatie over systeemvereisten [PHP-versievereisten toegewezen aan Adobe Commerce-versies](../../installation/system-requirements.md). De **[!UICONTROL PHP processes]** frame toont het aantal PHP-processen dat op een bepaald moment in de geselecteerde tijdlijn wordt uitgevoerd.
 
 ## [!UICONTROL Secondary processes]
 
@@ -328,11 +328,11 @@ De **[!UICONTROL Traffic vs Week Ago]** frame bekijkt het websiteverkeer (verzoe
 
 ![faire cache](../../assets/tools/fastly-cache.jpg)
 
-De **[!UICONTROL Fastly Cache]** frame toont een geaggregeerde weergave van de cachestatus van aanvragen van de [!DNL Fastly] logboeken. Als u FOUT selecteert, wordt het percentage fouten in de aanvragen weergegeven. Dit neemt doorgaans toe wanneer de oorspronkelijke server niet snel genoeg reageert op paginaverzoeken.
+De **[!UICONTROL Fastly Cache]** frame toont een geaggregeerde weergave van de cachestatus van aanvragen van de [!DNL Fastly] logboeken. Als u ERROR selecteert, zal het het percentage fouten in de verzoeken tonen. Dit neemt doorgaans toe wanneer de oorspronkelijke server niet snel genoeg reageert op paginaverzoeken.
 
 ## [!UICONTROL Page Rendering]
 
-![pagina&#39;s renderen](../../assets/tools/page-rendering.jpg)
+![pagina weergeven](../../assets/tools/page-rendering.jpg)
 
 De **[!UICONTROL Page Rendering]** frame geeft de gemiddelde weergaveduur van de pagina in de huidige week weer vanuit de bron van de paginaweergave van [!DNL New Relic] vergeleken met de voorafgaande week gedurende dezelfde periode.
 
@@ -366,11 +366,11 @@ De **[!UICONTROL Order transactions (default?)]** frame zoekt naar transacties `
 
 ![indexgegevens van elasticzoekopdrachten](../../assets/tools/elasticsearch-tab-elasticsearch-index-information-image-1.jpg)
 
-**[Elasticsearch statussen:](https://www.elastic.co/guide/en/elasticsearch/reference/current/cluster-health.html)**
+**[Status van Elasticsearch:](https://www.elastic.co/guide/en/elasticsearch/reference/current/cluster-health.html)**
 
-* Groen: Alle schachten worden toegewezen.
-* Geel: Alle primaire planken worden toegewezen, maar een of meer replicaplanken zijn niet toegewezen. Als een knooppunt in de cluster uitvalt, zijn sommige gegevens mogelijk niet beschikbaar totdat dat knooppunt wordt gerepareerd.
-* Rood: Een of meer primaire kaarten zijn niet toegewezen, dus sommige gegevens zijn niet beschikbaar. Dit kan kort tijdens clusteropstarten voorkomen aangezien de primaire plaatsen worden toegewezen.
+* Groen: alle schachten worden toegewezen.
+* Geel: alle primaire schaden worden toegewezen, maar een of meer replicaweerten worden niet toegewezen. Als een knooppunt in de cluster uitvalt, zijn sommige gegevens mogelijk niet beschikbaar totdat dat knooppunt wordt gerepareerd.
+* Rood: een of meer primaire kaarten zijn niet toegewezen, dus sommige gegevens zijn niet beschikbaar. Dit kan kort tijdens clusteropstarten voorkomen aangezien de primaire plaatsen worden toegewezen.
 
 ## [!UICONTROL Elasticsearch Errors]
 
@@ -380,8 +380,8 @@ De **[!UICONTROL Order transactions (default?)]** frame zoekt naar transacties `
 
 * &#39;%all shards failed%&#39; as &#39;all_shards_failed&#39;
 * &#39;%NoNodesAvailableException%&#39; as &#39;no_live_nodes&#39;
-* &#39;%PHP Fatale fout: Uncaught Error: Onjuiste parameters voor Elasticsearch%&#39; als &#39;incorrect_param&#39;
-* &#39;%U kunt dit probleem verhelpen door de Elasticsearch-service op uw Magento Cloud-infrastructuur te upgraden naar versie%&#39; als &#39;ver_err&#39;
+* &#39;%PHP Fatale error: Uncaught Error: Wrong parameters for Elasticsearch%&#39; as &#39;wrong_param&#39;
+* &#39;%U kunt dit probleem verhelpen door de service Elasticsearch op uw Magento Cloud-infrastructuur te upgraden naar versie%&#39; als &#39;ver_err&#39;
 * &#39;%clusterstatus gewijzigd van \[YELLOW\] in \[RED\] (reason:%&#39; als &#39;yel_red&#39;
 * &#39;%No space left on device%&#39; as &#39;no_space&#39;
 * &#39;% Kan [SearchRequest{searchType=%&#39; niet uitvoeren als &#39;failed_query&#39;
@@ -395,15 +395,15 @@ De **[!UICONTROL Cron view]** frame zoekt in het uitsnijdlog naar evenwicht tuss
 
 ## [!UICONTROL Cron error]
 
-![snijfout](../../assets/tools/cron-error.png)
+![uitsnijdfout](../../assets/tools/cron-error.png)
 
 **Fouten bij uitsnijden van cron.log:**
 
 * &#39;%_stg%&#39; als &#39;stg_crons&#39;
 * &#39;%Could not get lock for cron job%&#39; as &#39;cron_lock&#39;
-* &#39;%Algemene fout: 2006 MySQL server has away%&#39; as &#39;mysql_has_away_away&#39;
+* &#39;%General error: 2006 MySQL server has away%&#39; as &#39;mysql_has_away_away&#39;
 * &#39;%error%&#39; als &#39;error&#39;
-* &#39;%Algemene fout: 1205 De time-out voor vergrendelen is overschreden%&#39; als sql_1205_cron
+* &#39;%Algemene fout: 1205 Vergrendeltijd overschreden%&#39; als sql_1205_cron
 
 ## [!UICONTROL cron_schedule table updates]
 
@@ -419,7 +419,7 @@ Dit **[!UICONTROL Datastore Operations Tables]** frame geeft de bovenste 25 bewe
 
 ## [!UICONTROL Cache Flush]
 
-![cacheleegmaken](../../assets/tools/cache-flush.jpg)
+![cachegeheugen leegmaken](../../assets/tools/cache-flush.jpg)
 
 **Cachegroesjes gedetecteerd:**
 

@@ -25,7 +25,7 @@ bin/magento i18n:uninstall [-b|--backup-code] {language package name} ... {langu
 
 Met de opdracht Taalpakket verwijderen kunt u de volgende taken uitvoeren:
 
-1. controles op afhankelijkheden; als zo, eindigt het bevel.
+1. Controleert op gebiedsdelen; als zo, eindigt het bevel.
 
    Om dit te omzeilen, kunt u of alle afhankelijke taalpakketten tezelfdertijd verwijderen of u kunt de afhankelijke taalpakketten eerst desinstalleren.
 

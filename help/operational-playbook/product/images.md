@@ -57,13 +57,13 @@ De verschillende types van beelden kunnen worden gebruikt volgens de vereisten v
 
 - **360 graden van het product**—Het uploaden van een video of GIF van 360 graden van het product kan de klant een gedetailleerd beeld verstrekken en hen motiveren om het product te kopen.
 
-- **Naamgevingsconventie**—Maak het een regel om een naamgevingsconventie voor de productafbeelding te volgen, die helpt de fout bij het uploaden van een onjuiste afbeelding voor een product tot een minimum te beperken en het team helpt om afbeeldingen eenvoudig te beheren.
+- **Naamgevingsconventie**—Maak het een regel om een naamgevingsconventie voor de productafbeelding te volgen, die helpt de fout bij het uploaden van een onjuiste afbeelding voor een product te minimaliseren en het team helpt om afbeeldingen eenvoudig te beheren.
 
 - **Pagina laden**—Upload geen afbeeldingen waardoor de laadtijd van de pagina langer wordt. Als een klant moet wachten tot het image wordt weergegeven, kan het zijn dat de klant de site verlaat.
 
 - **Eenvoudige inhoud**—Maak de inhoud niet al te ingewikkeld. Probeer de inhoud eenvoudig en aantrekkelijk te houden op plaatsen waar het product de focus heeft. U kunt het product bijvoorbeeld het beste op een witte achtergrond plaatsen om de afbeelding van het product te verbeteren.
 
-- **Real product image**—Wanneer een klant een product online aanschaft, wordt verwacht dat het product op de website wordt weergegeven. Pas geen filters toe of verbeter de afbeelding om het uiterlijk van het product te wijzigen. Het is belangrijk om transparant met de klant te zijn, anders zou u een hoog tarief van rendementen kunnen hebben.
+- **Real product image**—Wanneer een klant een product online aanschaft, wordt verwacht dat het product wordt weergegeven zoals het op de website staat. Pas geen filters toe of verbeter de afbeelding om het uiterlijk van het product te wijzigen. Het is belangrijk om transparant met de klant te zijn, anders zou u een hoog tarief van rendementen kunnen hebben.
 
 >[!TIP]
 >

@@ -1,6 +1,6 @@
 ---
 title: Snelle start van de installatie op locatie
-description: Voer de volgende stappen uit om Adobe Commerce of Magento Open Source op uw eigen infrastructuur te installeren.
+description: Voer de volgende stappen uit om Adobe Commerce of Magento Open Source te installeren op uw eigen infrastructuur.
 exl-id: a93476e8-2b30-461a-91df-e73eb1a14d3c
 source-git-commit: 95ffff39d82cc9027fa633dffedf15193040802d
 workflow-type: tm+mt
@@ -11,7 +11,7 @@ ht-degree: 0%
 
 # Snelle start van de installatie op locatie
 
-We gebruiken [Composer](https://getcomposer.org/) om Adobe Commerce en Magento Open Source-componenten en hun afhankelijkheden te beheren. Het gebruik van Composer voor het ophalen van het metapakket Adobe Commerce en Magento Open Source biedt de volgende voordelen:
+We gebruiken [Composer](https://getcomposer.org/) om Adobe Commerce en Magento Open Source componenten en hun gebiedsdelen te beheren. Het gebruik van Composer om het metapakket voor Adobe Commerce en Magento Open Source op te halen, biedt de volgende voordelen:
 
 - Bibliotheken van derden opnieuw gebruiken zonder deze te bundelen met broncode
 - Verminder uitbreidingsconflicten en compatibiliteitskwesties door een op componenten-gebaseerde architectuur met robuust gebiedsbeheer te gebruiken
@@ -21,7 +21,7 @@ We gebruiken [Composer](https://getcomposer.org/) om Adobe Commerce en Magento O
 
 >[!NOTE]
 >
->Ontwikkelaars die bijdragen aan Magento Open Source moeten de [op basis van git](https://developer.adobe.com/commerce/contributor/guides/install/) installatiemethode.
+>Ontwikkelaars die bijdragen aan de Magento Open Source moeten de [op basis van git](https://developer.adobe.com/commerce/contributor/guides/install/) installatiemethode.
 
 ## Vereisten
 
@@ -29,11 +29,11 @@ Voordat u verdergaat, moet u het volgende doen:
 
 - Alles voltooien [vereiste taken](system-requirements.md).
 - [Composer installeren](https://getcomposer.org/download/).
-- Get [verificatietoetsen](prerequisites/authentication-keys.md) naar de Adobe Commerce en de Magento Open Source Composer-opslagplaats.
+- Get [verificatietoetsen](prerequisites/authentication-keys.md) naar de Adobe Commerce en Magento Open Source Composer-opslagplaats.
 
 ## Aanmelden als eigenaar van bestandssysteem
 
-Meer informatie over eigendom, machtigingen en de eigenaar van het bestandssysteem vindt u in onze [Overzicht van het onderwerp van eigendom en toestemmingen](prerequisites/file-system/overview.md).
+Meer informatie over eigendom, machtigingen en de eigenaar van het bestandssysteem vindt u in [Overzicht van het onderwerp eigendom en machtigingen](prerequisites/file-system/overview.md).
 
 Ga naar de eigenaar van het bestandssysteem:
 
@@ -69,11 +69,11 @@ Ga naar de eigenaar van het bestandssysteem:
 
 ## De metapakket ophalen
 
-Zo krijgt u het metapakket Adobe Commerce of Magento Open Source:
+U kunt als volgt het metapakket Adobe Commerce of Magento Open Source ophalen:
 
 1. Meld u aan bij de toepassingsserver als of schakel over naar de [eigenaar van bestandssysteem](prerequisites/file-system/overview.md).
 1. Wijzig de hoofdmap van de webserver of een map die u hebt geconfigureerd als een virtueel hoofddocument van de host.
-1. Maak een Composer-project met het Adobe Commerce- of Magento Open Source-pakket.
+1. Maak een Composer-project met het metapakket Adobe Commerce of Magento Open Source.
 
    **Magento Open Source**
 
@@ -91,7 +91,7 @@ Zo krijgt u het metapakket Adobe Commerce of Magento Open Source:
 
    Als u fouten tegenkomt, zoals `Could not find package...` of `...no matching package found`, zorg ervoor dat er geen typos in uw bevel zijn. Als er nog steeds fouten optreden, kunt u geen Adobe Commerce downloaden. Contact [Adobe Commerce-ondersteuning](https://support.magento.com/hc/en-us) voor hulp.
 
-   Zie [Problemen oplossen](https://support.magento.com/hc/en-us/articles/360033818091) voor hulp bij meer fouten.
+   Zie [Problemen oplossen](https://support.magento.com/hc/en-us/articles/360033818091) voor meer fouten.
 
    >[!NOTE]
    >
@@ -139,7 +139,7 @@ chmod u+x bin/magento
 
 U moet de opdrachtregel gebruiken om Adobe Commerce of Magento Open Source te installeren.
 
-In dit voorbeeld wordt ervan uitgegaan dat de naam van de installatiemap is `magento2ee`de `db-host` bevindt zich op dezelfde computer (`localhost`en dat de `db-name`, `db-user`, en `db-password` alles `magento`:
+In dit voorbeeld wordt ervan uitgegaan dat de naam van de installatiemap is `magento2ee`de `db-host` bevindt zich op dezelfde computer (`localhost`en dat de `db-name`, `db-user`, en `db-password` zijn allen `magento`:
 
 ```bash
 bin/magento setup:install \
@@ -166,11 +166,11 @@ bin/magento setup:install \
 
 >[!TIP]
 >
->U kunt de Admin URI aanpassen met de `--backend-frontname` optie. Nochtans, adviseren wij het weglaten van deze optie en het toestaan van het installatiebevel om een willekeurige URI automatisch te produceren. Willekeurige URI is moeilijker voor hakkers of kwaadwillige software om te exploiteren. De URI wordt in uw console weergegeven wanneer de installatie is voltooid.
+>U kunt de Admin URI aanpassen met de `--backend-frontname` -optie. Nochtans, adviseren wij het weglaten van deze optie en het toestaan van het installatiebevel om een willekeurige URI automatisch te produceren. Willekeurige URI is moeilijker voor hakkers of kwaadwillige software om te exploiteren. De URI wordt in uw console weergegeven wanneer de installatie is voltooid.
 
 >[!TIP]
 >
->Voor een volledige beschrijving van de CLI-installatieopties raadpleegt u [De toepassing installeren vanaf de opdrachtregel](advanced.md).
+>Zie voor een volledige beschrijving van de CLI-installatieopties [De toepassing installeren vanaf de opdrachtregel](advanced.md).
 
 ## Overzicht van Command
 
@@ -210,7 +210,7 @@ De volgende tabel geeft een overzicht van de beschikbare opdrachten. Opdrachten 
 | `magento setup:db-schema:upgrade` | Werkt het databaseschema bij. | Implementatieconfiguratie |
 | `magento setup:db-data:upgrade` | Werkt de databasegegevens bij. | Implementatieconfiguratie |
 | `magento setup:db:status` | Controleert of de database up-to-date is met de code. | Implementatieconfiguratie |
-| `magento admin:user:create` | Maakt een beheerdersgebruiker. | U kunt gebruikers maken voor het volgende:<br><br>Implementatieconfiguratie<br><br>Schakel minimaal de optie `Magento_User` en `Magento_Authorization` modules<br><br>Database (eenvoudigste manier is om te gebruiken) `bin/magento setup:upgrade`) |
+| `magento admin:user:create` | Maakt een beheerdersgebruiker. | U kunt gebruikers maken voor het volgende:<br><br>Implementatieconfiguratie<br><br>minimaal inschakelen `Magento_User` en `Magento_Authorization` modules<br><br>Database (de eenvoudigste manier is om te gebruiken) `bin/magento setup:upgrade`) |
 | `magento list` | Hiermee geeft u alle beschikbare opdrachten weer. | Geen |
 | `magento help` | Biedt hulp voor de opgegeven opdracht. | Geen |
 
@@ -221,12 +221,12 @@ De volgende argumenten gelden voor alle opdrachten. Deze opdrachten kunnen worde
 | Lange versie | Korte versie | Betekenis |
 |--- |--- |--- |
 | `--help` | `-h` | Krijg hulp voor om het even welk bevel. Bijvoorbeeld: `./magento help setup:install` of `./magento help setup:config:set`. |
-| `--quiet` | `-q` | stille modus; geen uitvoer. |
+| `--quiet` | `-q` | Stille modus; geen uitvoer. |
 | `--no-interaction` | `-n` | Geen interactieve vragen. |
 | `--verbose=1,2,3` | `-v, -vv, -vvv` | Verbositeitsniveau. Bijvoorbeeld: `--verbose=3` of `-vvv` vertoningen zuiveren breedtegraad, die de breedste output is. Standaard is `--verbose=1` of `-v`. |
 | `--version` | `-V` | Deze toepassingsversie weergeven |
-| `--ansi` | n.v.t. | ANSI-uitvoer forceren |
-| `--no-ansi` | n.v.t. | ANSI-uitvoer uitschakelen |
+| `--ansi` | nvt | ANSI-uitvoer forceren |
+| `--no-ansi` | nvt | ANSI-uitvoer uitschakelen |
 
 >[!NOTE]
 >

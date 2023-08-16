@@ -29,14 +29,14 @@ bin/magento help <command>
 bin/magento help cache:enable
 ```
 
-Opdrachten worden alleen in samengevatte vorm weergegeven. voor meer informatie over een bevel, klik de verbinding in de kolom van het Bevel.
+De bevelen worden getoond in summiere vorm slechts; voor meer informatie over een bevel, klik de verbinding in de kolom van het Bevel.
 
 | Opdracht | Beschrijving |
 |--- |--- |
 | [`magento cache:{enable/disable/clean/flush/status}`](../cli/manage-cache.md) | De cache beheren |
 | [`magento indexer:{status/show-mode/set-mode/reindex/info/reset/show-dimensions-mode/set-dimensions-mode}`](../cli/manage-indexers.md) | Beheert de indexen |
-| [`magento cron:run`](../cli/configure-cron-jobs.md) | Hiermee worden Cron-banen uitgevoerd |
-| [`magento setup:di:compile`](../cli/code-compiler.md) | alle niet-bestaande proxy&#39;s en fabrieken samenstelt; en compileert vooraf klassendefinities, overervingsinformatie, en insteekdefinities voor één opslag en website. |
+| [`magento cron:run`](../cli/configure-cron-jobs.md) | Hiermee worden Cron-banen voor Handel uitgevoerd |
+| [`magento setup:di:compile`](../cli/code-compiler.md) | Hiermee worden alle niet-bestaande proxy&#39;s en fabrieken gecompileerd en worden klassendefinities, overervingsgegevens en plug-indefinities voor één winkel en website vooraf gecompileerd. |
 | [`magento info:dependencies:{show-modules/show-modules-circular/show-framework}`](../cli/dependency-reports.md) | De gebiedsdelen van de module, kringafhankelijkheden, en het kadergebiedsdelen van de Handel. |
 | [`magento i18n:{collect-phrases/pack/uninstall}`](../cli/localization.md) | Maakt een vertaalwoordenboek of een vertaalpakket |
 | [`magento setup:static-content:deploy`](../cli/static-view-file-deployment.md) | Statische weergavebestanden gebruiken |
@@ -56,9 +56,9 @@ De volgende argumenten gelden voor alle opdrachten. Deze bevelen kunnen of vóó
 | Lange versie | Korte versie | Betekenis |
 |--- |--- |--- |
 | `--help` | `-h` | Krijg hulp voor om het even welk bevel. Bijvoorbeeld: `./magento help setup:install` of `./magento help setup:config:set`. |
-| `--quiet` | `-q` | stille modus; geen uitvoer. |
+| `--quiet` | `-q` | Stille modus; geen uitvoer. |
 | `--no-interaction` | `-n` | Geen interactieve vragen. |
 | `--verbose=1,2,3` | `-v, -vv, -vvv` | Verbositeitsniveau. Bijvoorbeeld: `--verbose=3` of `-vvv` vertoningen zuiveren breedtegraad, die de breedste output is. Standaard is `--verbose=1` of `-v`. |
 | `--version` | `-V` | Deze toepassingsversie weergeven |
-| `--ansi` | n.v.t. | ANSI-uitvoer forceren |
-| `--no-ansi` | n.v.t. | ANSI-uitvoer uitschakelen |
+| `--ansi` | nvt | ANSI-uitvoer forceren |
+| `--no-ansi` | nvt | ANSI-uitvoer uitschakelen |

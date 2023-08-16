@@ -36,27 +36,27 @@ De volgende punten kunnen u in een grondige analyse willen omvatten:
 - De diensten van de verbetering om doelversie te steunen. Gebruik het volgende lijstmalplaatje om uit in kaart te brengen welke diensten u moet bevorderen. Gebruik de [systeemvereisten](../../installation/system-requirements.md) om te bepalen wat u aan de _Upgrade uitvoeren naar_ kolom.
 
 
-   | Service | Huidige versie | Upgrade uitvoeren naar | Notities |
-   |-----------------|-----------------|------------|----------------------------------------------------------|
-   | PHP | 7.4 | 8.1 |  |
-   | Redis | 6.0 | 6.2 |  |
-   | [!DNL RabbitMQ] | 3.8 | 3.9 | Momenteel niet gebruikt, maar we moeten overwegen het te gebruiken |
-   | MariaDB (cloud) | 10.4 | 10.6 |  |
-   | MySQL | 8.0 | -/-/ |  |
-   | Composer | 1.9.2 | 2.2 |  |
-   | Elasticsearch | 7.10 | 7.17 |  |
+  | Service | Huidige versie | Upgrade uitvoeren naar | Notities |
+  |-----------------|-----------------|------------|----------------------------------------------------------|
+  | PHP | 7.4 | 8.1 |                                                          |
+  | Redis | 6.0 | 6.2 |                                                          |
+  | [!DNL RabbitMQ] | 3.8 | 3.9 | Momenteel niet gebruikt, maar we moeten overwegen het te gebruiken |
+  | MariaDB (cloud) | 10.4 | 10.6 |                                                          |
+  | MySQL | 8.0 | -/-/ |                                                          |
+  | Composer | 1.9.2 | 2.2 |                                                          |
+  | Elasticsearch | 7.10 | 7.17 |                                                          |
 
 - **Uitbreidingen en modules van derden**—Gebruik deze tabelsjabloon om u te helpen de status van uw extensies en aanpassingen te begrijpen, zodat u strategische beslissingen kunt nemen en acties kunt definiëren. Dit is een gelegenheid om extensies te vervangen die native zijn voor Adobe Commerce of Magento Open Source om de complexiteit van uw project te minimaliseren. Gebruik de `bin/magento module:status` gebruiken om een lijst met modules en extensies weer te geven.
 
-   | # | Extensie/<br>modulenaam | Composer-pakket | Leverancier | Huidige versie | Functionaliteit | Compatibel met nieuwste<br>Handelsversie? | Problemen | Inheems voor handel? | Handeling | Notities |
-   |---|-----------------------------|------------------------------------|-------------|-------------------|-----------------------|---------------------------------------------|--------------------------------------------------|---------------------|-------------------------|-------|
-   | 1 | Naam en koppeling van extensie | extension/<br>extensionx-magento-2 | Naam leverancier | Versie geïnstalleerd | Bedrijfsvereisten | Ja/Nee | Lijst met geïdentificeerde problemen waarmee deze extensie wordt geconfronteerd | Ja/Nee | Behouden/vervangen/<br>Verwijderen |  |
+  | # | Extensie/<br>modulenaam | Composer-pakket | Leverancier | Huidige versie | Functionaliteit | Compatibel met nieuwste<br>Handelsversie? | Problemen | Inheems voor handel? | Handeling | Notities |
+  |---|-----------------------------|------------------------------------|-------------|-------------------|-----------------------|---------------------------------------------|--------------------------------------------------|---------------------|-------------------------|-------|
+  | 1 | Naam en koppeling van extensie | extension/<br>extensionx-magento-2 | Naam leverancier | Versie geïnstalleerd | Zakelijke vereisten | Ja/Nee | Lijst met geïdentificeerde problemen waarmee deze extensie wordt geconfronteerd | Ja/Nee | Behouden/Vervangen/<br>Verwijderen |       |
 
 - **Aangepaste modules**—Vergelijkbaar met de lijst van derdemodules, helpt dit malplaatje u de status en de acties volgen en begrijpen die voor de bevordering van douanemodules worden vereist.
 
-   | # | Modulenaam | Functionaliteit | Vereist? | Inheems voor handel? | Handeling | Notities |
-   |---|--------------|-----------------------|-----------|---------------------|---------------------|-------|
-   | 1 | Modulenaam | Bedrijfsvereisten | Ja/Nee | Ja/Nee | Behouden/vervangen/verwijderen |  |
+  | # | Modulenaam | Functionaliteit | Vereist? | Inheems voor handel? | Handeling | Notities |
+  |---|--------------|-----------------------|-----------|---------------------|---------------------|-------|
+  | 1 | Modulenaam | Zakelijke vereisten | Ja/Nee | Ja/Nee | Behouden/Vervangen/verwijderen |       |
 
 - **Composer-pakketten en afhankelijkheden in composer.json die een update vereisen.**
 

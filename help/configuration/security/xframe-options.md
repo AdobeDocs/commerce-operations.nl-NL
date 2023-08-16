@@ -16,8 +16,8 @@ helpen voorkomen [Klikjacking](https://owasp.org/www-community/attacks/Clickjack
 
 De `X-Frame-Options` kunt u opgeven of een browser een pagina in een `<frame>`, `<iframe>`, of `<object>` als volgt:
 
-- `DENY`: De pagina kan niet in een kader worden weergegeven.
-- `SAMEORIGIN`: (standaard) Pagina kan alleen worden weergegeven in een kader dat zich op dezelfde oorsprong bevindt als de pagina zelf.
+- `DENY`: De pagina kan niet in een frame worden weergegeven.
+- `SAMEORIGIN`: (standaard) Pagina kan alleen worden weergegeven in een frame dat zich op dezelfde oorsprong bevindt als de pagina zelf.
 
 >[!WARNING]
 >
@@ -25,7 +25,7 @@ De `X-Frame-Options` kunt u opgeven of een browser een pagina in een `<frame>`, 
 
 >[!WARNING]
 >
->Om veiligheidsredenen, adviseert Adobe sterk tegen het runnen van de de opslagplaats van de Handel in een kader.
+>Om veiligheidsredenen raadt de Adobe sterk aan om de handelsafront niet in een kader uit te voeren.
 
 ## Implementeren `X-Frame-Options`
 
@@ -35,7 +35,7 @@ Een waarde instellen voor `X-Frame-Options` in `<project-root>/app/etc/env.php`.
 'x-frame-options' => 'SAMEORIGIN',
 ```
 
-Opnieuw implementeren voor wijzigingen in de `env.php` in te voeren.
+Opnieuw implementeren voor wijzigingen in de `env.php` bestand dat van kracht wordt.
 
 >[!TIP]
 >

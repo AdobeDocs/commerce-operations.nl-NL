@@ -27,19 +27,19 @@ U vormt de websites, de opslag, en de opslagmeningen in Admin van de Handel. Geb
 
 Overweeg de volgende termen:
 
-- **Website**—is de container op hoofdniveau voor sites, leveringsmethoden, betalingsmethoden en meer. Als u volledig aparte sites wilt maken die geen winkelwagentje, bezorgmethoden of andere sites delen, moet u afzonderlijke websites maken.
+- **Website**—is de container van het hoogste niveau voor plaatsen, leveringsmethodes, betalingsmethodes, en meer. Als u volledig aparte sites wilt maken die geen winkelwagentje, bezorgmethoden of andere sites delen, moet u afzonderlijke websites maken.
 
-   De de klantenrekeningen van de website kunnen tussen veelvoudige websites binnen één enkele instantie van de Handel worden gedeeld. Een website bevat minstens één winkel. Catalogusprijzen moeten op het niveau van de website worden beheerd.
+  De de klantenrekeningen van de website kunnen tussen veelvoudige websites binnen één enkele instantie van de Handel worden gedeeld. Een website bevat minstens één winkel. Catalogusprijzen moeten op het niveau van de website worden beheerd.
 
 - **Winkel**—is opgenomen door een website. Een winkel bevat op zijn beurt ten minste één *winkelweergave*.
 
-   Meerdere winkels kunnen winkelwagentjes, gebruikerssessies, betaalgateways en nog veel meer delen, maar ze hebben aparte catalogusstructuren en catalogusprijs.
+  Meerdere winkels kunnen winkelwagentjes, gebruikerssessies, betaalgateways en nog veel meer delen, maar ze hebben aparte catalogusstructuren en catalogusprijs.
 
-   De catalogushoeveelheid (voorraad) kan niet op archiefniveau worden beheerd. De inventarisatie wordt alleen op website- of wereldwijd niveau beheerd.
+  De catalogushoeveelheid (voorraad) kan niet op archiefniveau worden beheerd. De inventarisatie wordt alleen op website- of wereldwijd niveau beheerd.
 
-   De mening van de opslag verandert de manier pagina&#39;s worden voorgesteld, en typisch gebruikt om een opslag met verschillende lay-outs of talen te tonen. U kunt verschillende valuta&#39;s per winkelweergave beheren.
+  De mening van de opslag verandert de manier pagina&#39;s worden voorgesteld, en typisch gebruikt om een opslag met verschillende lay-outs of talen te tonen. U kunt verschillende valuta&#39;s per winkelweergave beheren.
 
-   Elke website en elke winkelweergave moet een unieke id hebben. Deze id is vereist voor het gebruik van de `MAGE_RUN_TYPE` en `MAGE_RUN_CODE` variabelen, als hieronder:
+  Elke website en elke winkelweergave moet een unieke id hebben. Deze id is vereist voor het gebruik van de `MAGE_RUN_TYPE` en `MAGE_RUN_CODE` variabelen, als hieronder:
 
 - `MAGE_RUN_TYPE` kan `store` of `website`
 

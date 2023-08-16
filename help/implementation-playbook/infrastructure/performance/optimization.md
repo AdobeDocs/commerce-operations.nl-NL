@@ -40,7 +40,7 @@ De hoge tijd-aan-eerste-byte (TTFB) wordt gewoonlijk beschouwd als indicator die
 - Afhankelijkheid van trage servicerespons van derden
 - Architectuur zonder schaalbaarheid
 
-Lagere bronnen worden meestal beschouwd als een indicator die de statische bron definieert (CSS, JavaScript, afbeeldingen, video&#39;s, Ajax-aanroepreactie van derden).
+Lagere bronnen worden meestal beschouwd als een indicator die de statische bron definieert (CSS, JavaScript, afbeeldingen, video&#39;s, Ajax-callrespons van derden).
 
 Adobe Commerce kan met uw bedrijf schalen dankzij de mogelijkheden:
 

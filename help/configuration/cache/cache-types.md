@@ -14,15 +14,15 @@ ht-degree: 0%
 
 De volgende stappen lopen door het associëren van geheim voorste voorkant van het geheime voorgeheugen met een geheim voorgeheugentype.
 
-## Stap 1: Een voorkant van een cache definiëren
+## Stap 1: Definieer een voorkant van een cache
 
-De aanvraag voor handel bevat een `default` cachefront dat u kunt gebruiken voor elke [cachetype](../cli/manage-cache.md#clean-and-flush-cache-types). In deze sectie wordt beschreven hoe u desgewenst een voorkant van een cache met een andere naam kunt definiëren. Dit is aan te raden als u uw voorkant wilt aanpassen.
+De aanvraag voor de handel bevat een `default` cachefront dat u kunt gebruiken voor elke [cachetype](../cli/manage-cache.md#clean-and-flush-cache-types). In deze sectie wordt beschreven hoe u desgewenst een voorkant van een cache met een andere naam kunt definiëren. Dit is aan te raden als u uw voorkant wilt aanpassen.
 
 >[!INFO]
 >
->Als u de opdracht `default` cachetype, hoeft u niet te wijzigen `env.php` überhaupt; u wijzigt de globale handels `di.xml`. Zie [Cacheopties op laag niveau](cache-options.md).
+>Als u de opdracht `default` cachetype, hoeft u niet te wijzigen `env.php` überhaupt; u wijzigt de wereldwijde handel `di.xml`. Zie [Cacheopties op laag niveau](cache-options.md).
 
-U moet een voorinstelling voor een aangepaste cache opgeven of `app/etc/env.php` of wereldwijde handel `app/etc/di.xml`.
+U moet een aangepaste voorzijde voor de cache opgeven of `app/etc/env.php` of de wereldwijde handel `app/etc/di.xml`.
 
 In het volgende voorbeeld wordt getoond hoe u dit kunt definiëren in het dialoogvenster `env.php` bestand, dat het `di.xml` bestand:
 
@@ -48,7 +48,7 @@ In het volgende voorbeeld wordt getoond hoe u dit kunt definiëren in het dialoo
 
 Wanneer `<unique frontend id>` is een unieke naam om uw voorzijde te identificeren en `<cache options>` zijn opties besproken in de onderwerpen specifiek voor elk type van caching (gegevensbestand, Redis, etc.).
 
-## Stap 2: De cache configureren
+## Stap 2: Vorm het geheime voorgeheugen
 
 U kunt de opties voor de configuratie van de front- en back-end cache opgeven in `env.php` of `di.xml`. Deze taak is optioneel.
 

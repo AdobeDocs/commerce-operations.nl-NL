@@ -32,6 +32,6 @@ Kritieke acties leiden tot invalidatie en herindexering van het cachegeheugen, w
 ## Aanvullende informatie
 
 - [Aanbevolen procedures voor het in cache plaatsen](https://docs.magento.com/user-guide/system/cache-management.html#best-practices-for-caching)
-- [Persoonlijke inhoud: Persoonlijke inhoud ongeldig maken](https://developer.adobe.com/commerce/php/development/cache/page/private-content/#invalidate-private-content)
-- [Hardware aanbevelingen: Cursussen](../../../performance/hardware.md#caches)
+- [Persoonlijke inhoud: persoonlijke inhoud ongeldig maken](https://developer.adobe.com/commerce/php/development/cache/page/private-content/#invalidate-private-content)
+- [Hardware-aanbevelingen: Caches](../../../performance/hardware.md#caches)
 - [Geavanceerde instellingen: Redis instellen](../../../performance/advanced-setup.md#set-up-redis)

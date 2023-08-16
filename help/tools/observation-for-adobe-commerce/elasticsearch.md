@@ -16,7 +16,7 @@ ht-degree: 0%
 
 ![Overzicht clusterstatus](../../assets/tools/cluster-status-summary.jpg)
 
-Over de geselecteerde tijdlijn **[!UICONTROL Cluster Status Summary]** frame geeft de kleurstatus weer van de [!DNL Elasticsearch] cluster is voorbij. In dit voorbeeld was de cluster tijdens het geselecteerde tijdframe één keer groen en één keer geel in de status Geel tijdens het geselecteerde tijdframe.
+Tijdens de geselecteerde periode wordt de **[!UICONTROL Cluster Status Summary]** frame geeft de kleurstatus weer van de [!DNL Elasticsearch] cluster is voorbij. In dit voorbeeld was de cluster tijdens het geselecteerde tijdframe één keer groen en één keer geel in de status Geel tijdens het geselecteerde tijdframe.
 
 ## [!UICONTROL Active Primary Shards]
 
@@ -28,7 +28,7 @@ Van [!DNL Elasticsearch]: De definitieve gids [2,x]:
 
 &quot;In [Dynamisch bijwerken van indexen](https://www.elastic.co/guide/en/elasticsearch/guide/2.x/dynamic-indices.html), hebben we uitgelegd dat een spek een Lucene-index is en dat een [!DNL Elasticsearch] index is een verzameling van scheepskaarten. Uw toepassing praat met een index, en [!DNL Elasticsearch] leidt uw verzoeken naar de aangewezen plaatsen. Een plank is de schaaleenheid. De kleinste index die u kunt hebben, is één met één enkele ruit. Dit kan meer dan voldoende zijn voor je behoeften — één enkele kaart kan veel gegevens bevatten — maar het beperkt je mogelijkheden om te schalen.&quot;
 
-Wanneer een index wordt gecreeerd, zijn er verscheidene kaarten gecreeerd met die index. Door gebrek, worden vijf primaire plaatsen toegewezen aan elke nieuwe index, die betekent dat een index over vijf knopen (één shard per knoop) kan worden verspreid. Er zijn ook replicaplanken. Deze zijn hoofdzakelijk voor failover. Replica-kaarten kunnen worden gebruikt voor leesverzoeken.
+Wanneer een index wordt gecreeerd, zijn er verscheidene kaarten die met die index worden gecreeerd. Door gebrek, worden vijf primaire plaatsen toegewezen aan elke nieuwe index, die betekent dat een index over vijf knopen (één shard per knoop) kan worden verspreid. Er zijn ook replicaplanken. Deze zijn hoofdzakelijk voor failover. Replica-kaarten kunnen worden gebruikt voor leesverzoeken.
 
 ## [!UICONTROL Active Shards in Cluster]
 
@@ -44,7 +44,7 @@ In dit frame worden de naam van de index en het aantal statussen van de indexkle
 
 ## [!UICONTROL Elasticsearch Status by node information]
 
-![Elasticsearch-status](../../assets/tools/elasticsearch-status-by-node.jpg)
+![Status van Elasticsearch](../../assets/tools/elasticsearch-status-by-node.jpg)
 
 De **[!UICONTROL Elasticsearch Status by node information]** frame toont de [!DNL Elasticsearch] clusterstatus per kleur en per knooppunt. Hiermee kunt u aangeven welk knooppunt in het dialoogvenster [!DNL Elasticsearch] wordt de status van de geselecteerde tijdlijn geretourneerd.
 
@@ -56,36 +56,36 @@ De **[!UICONTROL Elasticsearch index information]** de lijst toont de indexnaam,
 
 ## [!UICONTROL Elasticsearch process CPU %]
 
-![Elasticsearch-processor](../../assets/tools/elasticsearch-process-cpu.jpg)
+![CPU voor verwerking van Elasticsearch](../../assets/tools/elasticsearch-process-cpu.jpg)
 
 De **[!UICONTROL Elasticsearch process CPU %]** frame toont het CPU-percentage van het proces door de [!DNL Elasticsearch] proces over het geselecteerde tijdkader.
 
 ## [!UICONTROL Elasticsearch Memory garbage collection]
 
-![Elasticsearch Geheugenafval](../../assets/tools/elasticsearch-memory-garbage.jpg)
+![Elasticsearch Memory garbage](../../assets/tools/elasticsearch-memory-garbage.jpg)
 
 [!DNL Elasticsearch] is een Java-proces. Als het op toegewezen geheugen laag loopt, zal het huisvuilinzameling in werking stellen om geheugen vrij te maken. Als de huisvuilinzameling frequent is, is het een aanwijzing dat er teveel indexen of schepen voor het toegewezen geheugen kunnen zijn. Er kan een mogelijkheid zijn om de indices en de borden op te schonen of [!DNL Elasticsearch] heeft mogelijk meer geheugen nodig.
 
 ## [!UICONTROL Elasticsearch Index information]
 
-![Elasticsearch-indexgegevens](../../assets/tools/elasticsearch-index-information-2.jpg)
+![Elasticsearch-indexinformatie](../../assets/tools/elasticsearch-index-information-2.jpg)
 
 Wanneer indexen worden gemaakt en bijgewerkt, kan de indexstatus veranderen.
 
 ## [!UICONTROL Elasticsearch Index Size]
 
-![Elasticsearch-indexgrootte](../../assets/tools/elasticsearch-index-size.jpg)
+![Indexgrootte Elasticsearch](../../assets/tools/elasticsearch-index-size.jpg)
 
 De **[!UICONTROL Elasticsearch Index Size]** frame geeft de naam en de grootte van de index voor het geselecteerde tijdframe aan. Het kan problemen met de manier aangeven waarop een site wordt geïndexeerd.
 
 ## [!UICONTROL Elasticsearch Errors]
 
-![Elasticsearch-fouten](../../assets/tools/elasticsearch-tab-elasticsearch-errors.jpg)
+![Fouten in Elasticsearch](../../assets/tools/elasticsearch-tab-elasticsearch-errors.jpg)
 
 De **[!UICONTROL Elasticsearch Errors]** frame geeft fouten weer met [!DNL Elasticsearch] Net als wanneer er onvoldoende ruimte is, schakelt u over van de status Geel naar Rood, wanneer alle kaarten mislukken, wanneer er parameterproblemen zijn met zoekopdrachten, versiefouten en wanneer alle knooppunten niet beschikbaar zijn.
 
 ## [!UICONTROL Elasticsearch Unassigned Shards]:
 
-![Elasticsearch Niet toegewezen delen](../../assets/tools/elasticsearch-unassigned-shards.jpg)
+![Niet toegewezen delen van Elasticsearch](../../assets/tools/elasticsearch-unassigned-shards.jpg)
 
 Niet toegewezen planken zorgen ervoor dat een cluster overschakelt van de status Groen naar de status Geel.

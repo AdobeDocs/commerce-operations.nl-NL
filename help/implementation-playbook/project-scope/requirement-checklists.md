@@ -64,9 +64,9 @@ De volgende vragen kunnen als uitgangspunt dienen om te zien welke informatie mo
 
 ## Huidig platform
 
-- Hoe wordt het huidige platform gehost: Interne, hostingprovider, privécloudservers of gehoste cloudservers?
+- Hoe wordt het huidige platform gehost: intern, hostingprovider, privécloudservers of gehoste cloudservers?
 
-- Welke milieu&#39;s het huidige platform hebben: ontwikkeling, kwaliteitscontrole, preproductie, productie?
+- Welke omgevingen heeft het huidige platform: ontwikkeling, QA, preproductie, productie?
 
 - Hoeveel web- en databaseservers bevinden zich in de ontwikkelomgeving?
 
@@ -88,7 +88,7 @@ De volgende vragen kunnen als uitgangspunt dienen om te zien welke informatie mo
 
 - Gemiddelde aantal gelijktijdige sessies per uur?
 
-- Gemiddelde paginaweergaven per dag?
+- Gemiddelde weergave per dag?
 
 - Gemiddelde bestellingen per uur en per dag?
 
@@ -96,9 +96,9 @@ De volgende vragen kunnen als uitgangspunt dienen om te zien welke informatie mo
 
 - Welke Adobe Commerce-versie gaat u gebruiken?
 
-- Hoe zal het toekomstige platform worden gehost? Interne, hostingprovider, privécloudservers of gehoste cloudservers?
+- Hoe wordt het toekomstige platform gehost: intern, hostingprovider, privécloudservers of gehoste cloudservers?
 
-- Welke milieu&#39;s het toekomstige platform zullen hebben: ontwikkeling, kwaliteitscontrole, preproductie, productie?
+- Welke omgevingen zal het toekomstige platform hebben: ontwikkeling, kwaliteitscontrole, preproductie, productie?
 
 - Hoeveel web- en databaseservers bevinden zich in de ontwikkelomgeving?
 
@@ -156,7 +156,7 @@ De volgende vragen kunnen als uitgangspunt dienen om te zien welke informatie mo
 
 - Worden productgegevens op alle sites gedeeld?
 
-- Zijn er veranderingen in het ontwerp van plaats aan plaats?
+- Zijn er wijzigingen in het ontwerp van de ene site naar de andere?
 
 - Zijn er abonnementsopties en hoe worden de abonnees beheerd?
 
@@ -164,7 +164,7 @@ De volgende vragen kunnen als uitgangspunt dienen om te zien welke informatie mo
 
 ## Integraties
 
-- Welk CMS-systeem wordt geïntegreerd met Adobe Commerce? (Voorbeelden: WordPress, Drupal, Concrete (5)
+- Welk CMS-systeem wordt geïntegreerd met Adobe Commerce? (Voorbeelden: WordPress, Drupal, Concrete5)
 
 Zijn er bestaande API&#39;s die kunnen worden gebruikt?
 
@@ -192,7 +192,7 @@ Zijn er bestaande API&#39;s die kunnen worden gebruikt?
 
 - Frequentie van het laden van geëxporteerde ordergegevens?
 
-- Welk analyseplatform wordt gebruikt? (Voorbeelden: Adobe Analytics, Google Analytics)
+- Welk analyseplatform wordt gebruikt? (Voorbeelden: Adobe Analytics, Googles Analytics)
 
 - Zal er één enkel teken en sociaal netwerk het delen zijn? Zo ja, welke sociale netwerken?
 
@@ -292,7 +292,7 @@ Zijn er bestaande API&#39;s die kunnen worden gebruikt?
 
 - Zal functionaliteit om verschillende producten te vergelijken worden vereist?
 
-- Welke producten gaat u verkopen?
+- Welke soorten producten gaat u verkopen?
 
 - Hoe vaak worden nieuwe producten toegevoegd?
 
@@ -304,17 +304,17 @@ Zijn er bestaande API&#39;s die kunnen worden gebruikt?
 
 - Staat u klanten toe om een product aan te bevelen?
 
-- Verkoop: Bestellingen, belastingen, gefactureerd, verzending, terugbetalingen, coupons, PayPal-afwikkelingsrapporten
+- Verkoop: bestellingen, belasting, gefactureerd, verzending, terugbetalingen, coupons, PayPal-afwikkelingsrapporten
 
 - Winkelwagentje: Producten in karretjes, verlaten kunsten
 
-- Producten: Bestsellers, bestelde producten, meest bekeken, lage voorraad, downloads
+- Producten: Bestsellers, bestelde producten, het meest bekeken, lage voorraad, downloads
 
-- Klanten: Nieuwe accounts, klanten op ordertotaal, klanten op aantal orders, klantsegmenten, klantbeoordelingen
+- Klanten: Nieuwe accounts, klanten op ordertotaal, klanten op aantal bestellingen, klantsegmenten, revisies van klanten
 
 - Productbeoordelingen
 
-- Tags: Klanten, producten, populair
+- Tags: klanten, producten, populaire
 
 - Zoektermen
 

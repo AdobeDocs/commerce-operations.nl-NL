@@ -1,5 +1,5 @@
 ---
-title: Realpath-cachegrootte
+title: Realpath cache-grootte
 description: Leer hoe u de Adobe Commerce-prestaties kunt optimaliseren door de PHP readlpath-cacheconfiguratie bij te werken en aanbevolen instellingen te gebruiken.
 role: Developer
 feature: Best Practices, Cache
@@ -15,7 +15,7 @@ ht-degree: 0%
 
 De cache van Realpath slaat de echte bestandssysteempaden van bestandsnamen waarnaar wordt verwezen in in plaats van ze elke keer weer op te zoeken. Telkens wanneer verschillende bestandfuncties worden uitgevoerd of een bestand nodig hebben en een relatief pad gebruiken, moet PHP zoeken waar dat bestand echt bestaat.
 
-Om de prestaties van de Handel te verbeteren, gebruik de volgende geadviseerde montages om te vormen `realpath_cache` in de `php.ini` bestand:
+Om de prestaties van de Handel te verbeteren, gebruik de volgende geadviseerde montages om `realpath_cache` in de `php.ini` bestand:
 
 - De cachegrootte instellen op 10 MB (`realpath cache_size=10M`)
 - Tijd instellen op live (ttl) tot 7200 seconden (`realpath_cache_ttl=7200`)
@@ -33,8 +33,8 @@ Als de de configuratiewaarden van het geheime voorgeheugen Realpath te laag of t
 
 ## Aanvullende informatie
 
-- [Op het terrein: PHP-instellingen](../../../performance/software.md#php-settings)
+- [Op locatie: PHP-instellingen](../../../performance/software.md#php-settings)
 - Op cloudinfrastructuur:
    - [Best practices voor databases](database-on-cloud.md)
    - [Meest voorkomende databaseproblemen in Magento Commerce Cloud](../maintenance/resolve-database-performance-issues.md)
-- [Met indexeerprogramma&#39;s &quot;Update On Schedule&quot; worden de Magento-prestaties geoptimaliseerd](../maintenance/indexer-configuration.md)
+- [Indexers &quot;Update On Schedule&quot; optimaliseren de prestaties van het Magento](../maintenance/indexer-configuration.md)

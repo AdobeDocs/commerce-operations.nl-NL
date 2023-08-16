@@ -11,7 +11,7 @@ ht-degree: 0%
 
 # Handelsverrichtingen
 
-Bij handelstransacties gaat het om het centraliseren van back-endbewerkingen, zodat deze slimmer, sneller en efficiënter werken. Een succesvolle operationele strategie vereist een sterke infrastructuur van IT die de verrichtingen van de elektronische handel van begin tot eind kan steunen; productcatalogus, voorraadbeheer, kassa en verzending. E-commercebewerkingen zijn gebaseerd op verschillende zaken, zoals een gebruiksvriendelijke winkel, een grote verscheidenheid aan producten, een goed beheer van de voorraad, promoties, een eenvoudige kassa en handige betalings- en verzendmethoden.
+Bij handelstransacties gaat het om het centraliseren van back-endbewerkingen, zodat deze slimmer, sneller en efficiënter werken. Voor een geslaagde operationele strategie is een sterke IT-infrastructuur nodig die end-to-end e-commerce-activiteiten kan ondersteunen, zoals productcatalogus, voorraadbeheer, kassa en verzending. E-commercebewerkingen zijn gebaseerd op verschillende zaken, zoals een gebruiksvriendelijke winkel, een grote verscheidenheid aan producten, een goed beheer van de voorraad, promoties, een eenvoudige kassa en handige betalings- en verzendmethoden.
 
 ## Waarom is een strategie voor elektronische handel belangrijk?
 

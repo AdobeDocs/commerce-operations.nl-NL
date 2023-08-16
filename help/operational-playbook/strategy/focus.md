@@ -11,7 +11,7 @@ ht-degree: 0%
 
 # Algemene handelsmaatstaven
 
-De meest succesvolle e-commerce teams volgen en omarmen metriek om geïnformeerde besluiten over achterste verrichtingen, gebruikerservaring, en (het belangrijkste) klantengedrag te nemen.
+De meest succesvolle e-commerce teams volgen en omarmen metriek om geïnformeerde besluiten over achterste verrichtingen, gebruikerservaring, en (het belangrijkst) klantengedrag te nemen.
 
 ## B2C-meetwaarden
 
@@ -20,7 +20,7 @@ De volgende lijst omvat de belangrijkste elektronische handelmetriek die alle on
 - Omrekeningskoers verkoop
 - Websiteverkeer
 - Levensduurwaarde van klant
-- Aanmeldingsfrequentie e-mail
+- Aanmeldingsfrequentie voor e-mail
 - Gemiddelde orderwaarde
 - Kosten voor aanschaf door klant
 - Afschaffing van winkelwagentje

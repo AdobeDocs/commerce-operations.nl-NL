@@ -24,7 +24,7 @@ Opdrachtopties:
 bin/magento dev:xml:convert [-o|--overwrite] {xml file} {xslt stylesheet}
 ```
 
-Waar:
+Waarbij:
 
 - `{xml file}`—is het volledige pad en de bestandsnaam van een XML-indelingsbestand dat moet worden omgezet (vereist)
 - `{xslt stylesheet}`—is het volledige pad en de bestandsnaam van een XSLT-stijlbladbestand dat moet worden gebruikt voor conversie (vereist)

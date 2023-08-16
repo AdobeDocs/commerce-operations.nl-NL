@@ -12,7 +12,7 @@ ht-degree: 0%
 
 # Gebruik
 
-De [[!DNL Quality Patches Tool]](https://github.com/magento/quality-patches) levert afzonderlijke patches die door Adobe en de Magento Open Source-gemeenschap zijn ontwikkeld. Hiermee kunt u algemene informatie over alle afzonderlijke patches die beschikbaar zijn voor de geïnstalleerde versie van Adobe Commerce of Magento Open Source, toepassen, herstellen en weergeven. U kunt patches toepassen op Adobe Commerce- en Magento Open Source-projecten, ongeacht wie de patch heeft ontwikkeld. U kunt bijvoorbeeld een patch toepassen die door de gemeenschap is ontwikkeld op Adobe Commerce-projecten.
+De [[!DNL Quality Patches Tool]](https://github.com/magento/quality-patches) levert afzonderlijke patches die door de Adobe en de Magento Open Source gemeenschap zijn ontwikkeld. Hiermee kunt u algemene informatie over alle afzonderlijke patches die beschikbaar zijn voor de geïnstalleerde versie van Adobe Commerce of Magento Open Source, toepassen, herstellen en bekijken. U kunt patches toepassen op Adobe Commerce- en Magento Open Source-projecten, ongeacht wie de patch heeft ontwikkeld. U kunt bijvoorbeeld een patch toepassen die door de gemeenschap is ontwikkeld op Adobe Commerce-projecten.
 
 
 Dit bekijken [technische video](https://experienceleague.adobe.com/docs/commerce-learn/tutorials/tools/quality-patch-tool.html?lang=en) en leer hoe u het gereedschap Kwaliteitspatches kunt gebruiken voor Adobe Commerce en Magento Open Source.
@@ -29,7 +29,7 @@ Dit bekijken [technische video](https://experienceleague.adobe.com/docs/commerce
 
 >[!INFO]
 >
->Als dit nog niet het geval is, moet u de installatie [[!DNL Git]](https://github.com/git-guides/install-git) of [Reparatie](https://man7.org/linux/man-pages/man1/patch.1.html) voordat u de [!DNL Quality Patches Tool]. Voeg de `magento/quality-patches` Composer-pakket naar uw `composer.json` bestand:
+>Als dit nog niet het geval is, moet u [[!DNL Git]](https://github.com/git-guides/install-git) of [Reparatie](https://man7.org/linux/man-pages/man1/patch.1.html) voordat u de [!DNL Quality Patches Tool]. Voeg de `magento/quality-patches` Composer-pakket naar uw `composer.json` bestand:
 
 ```bash
 composer require magento/quality-patches
@@ -49,13 +49,13 @@ De uitvoer ziet er ongeveer als volgt uit:
 |--- |--- |--- |--- |--- |
 | MAGECLOUD-5069 | FPC wordt uitgeschakeld tijdens implementaties | Optioneel | Niet toegepast | Betrokken onderdelen:<br> - magento/module-page-cache |
 | MCLOUD-5650 | Implementatieconfiguratie bewaren na lezen van bestand | Optioneel | Niet toegepast | Betrokken onderdelen:<br> - magento/framework |
-| MCLOUD-5684 | Paginering werkt niet - product_list_limit=all | Optioneel | Niet toegepast | Betrokken onderdelen: - magento/module-elasticsearch |
+| MCLOUD-5684 | Paginering werkt niet - product_list_limit=all | Optioneel | Niet toegepast | Betrokken componenten: - magento/module-elasticsearch |
 | MCLOUD-5837 | Probleem met taakverdelingsmechanisme verhelpen | Vervangen | Toegepast | Aanbevolen vervanging: MC-1 <br> Betrokken onderdelen: - magento/framework |
 | BUNDLE-2554 | Fout in betalingsgegevens instellen | Optioneel | Niet toegepast | Betrokken onderdelen: <br>- amzn/amazon-pay-module |
 | MC-1 | Opgeloste problemen 1 | Optioneel | Toegepast | Betrokken onderdelen: <br> - magento/module-cms |
 | MC-2 | Opgeloste problemen 2 | Optioneel | Niet toegepast | Betrokken onderdelen: <br> - magento/module-cms |
 | MC-3 | Opgeloste problemen 3 | Optioneel | Niet toegepast | Vereiste patches:<br> - MC-2 <br>Betrokken onderdelen: <br>- magento/module-cms |
-| MC-3-V2 | Bijgewerkte oplossing voor probleem 3; vervangt MC-3-patch | Optioneel | N.v.t. | Betrokken onderdelen:  <br>- magento/module-cms |
+| MC-3-V2 | Bijgewerkte oplossing voor probleem 3; vervangt MC-3-patch | Optioneel | NVT | Betrokken onderdelen:  <br>- magento/module-cms |
 
 Adobe Commerce 2.3.5.
 

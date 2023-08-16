@@ -1,5 +1,5 @@
 ---
-title: Systeeminstellingen samenstellen
+title: System Setup (Systeeminstellingen) bouwen
 description: Leer hoe te om Handel in een bouwstijlsysteem op te stellen.
 feature: Configuration, Build, Deploy
 exl-id: f6daf5c6-6d12-46b0-b775-76791bacea53
@@ -18,10 +18,10 @@ U kunt één bouwstijlsysteem hebben dat aan de volgende vereisten voldoet:
 - Controleer of alle volgende elementen aanwezig zijn: _inbegrepen_ bij broncontrole:
 
    - `app/etc/config.php`
-   - `generated` directory (en subdirectory&#39;s)
+   - `generated` map (en submappen)
    - `pub/media` directory
-   - `pub/media/wysiwyg` directory (en subdirectory&#39;s)
-   - `pub/static` directory (en subdirectory&#39;s)
+   - `pub/media/wysiwyg` map (en submappen)
+   - `pub/static` map (en submappen)
 
 - Hiervoor moet een compatibele PHP-versie zijn geïnstalleerd
 - Composer moet zijn geïnstalleerd
@@ -51,7 +51,7 @@ Voer een van de volgende opdrachten in voor een opdrachtprompt:
 
 Als de hulp van het bevel vertoningen, Composer reeds geïnstalleerd is.
 
-Als een fout wordt weergegeven, voert u de volgende stappen uit om Composer te installeren.
+Als er een fout wordt weergegeven, voert u de volgende stappen uit om Composer te installeren.
 
 Composer installeren:
 

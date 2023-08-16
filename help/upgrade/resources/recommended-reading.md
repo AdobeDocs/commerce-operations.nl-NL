@@ -5,13 +5,13 @@ exl-id: 24ca57c0-1a68-46c4-b2fa-4a114250d0e3
 source-git-commit: 83ee645269b4fb0b63bb11f6d2255ef7fa52bc4f
 workflow-type: tm+mt
 source-wordcount: '383'
-ht-degree: 0%
+ht-degree: 2%
 
 ---
 
 # Aanbevolen lezen voor upgradeplanning
 
-Ga verder met het leren van upgrades voor Adobe Commerce en Magento Open Source door de bronnen op deze pagina te gebruiken.
+Ga verder met het leren van upgrades voor Adobe Commerce en Magento Open Source met de bronnen op deze pagina.
 
 <table>
   <tbody>
@@ -19,9 +19,9 @@ Ga verder met het leren van upgrades voor Adobe Commerce en Magento Open Source 
       <td><strong>Opmerkingen en aankondigingen bij de release</strong>
         <p>Leer over de recentste ontwikkelingen in Adobe Commerce en Magento Open Source, met inbegrip van productstrategie, veiligheid, insectenmoeilijke situaties, en bekende kwesties.</p>
           <ul>
-            <li><a href="https://blog.adobe.com/">Adobe Blog</a></li>
+            <li><a href="https://blog.adobe.com/">Adobe-blog</a></li>
             <li><a href="https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/overview.html">Adobe Help Center</a></li>
-            <li><a href="https://helpx.adobe.com/security/security-bulletin.html">Adobe Security Bulletin</a></li>
+            <li><a href="https://helpx.adobe.com/security/security-bulletin.html">Beveiligingsbulletin Adobe</a></li>
             <li><a href="https://community.magento.com/t5/Magento-DevBlog/bg-p/devblog">Devblog</a></li>
             <li><a href="https://experienceleague.adobe.com/docs/commerce-operations/release/notes/overview.html">Opmerkingen bij de release</a></li>
             <li><a href="https://solutionpartners.adobe.com/solution-partners.html">Partnerportal voor oplossingen</a></li>
@@ -32,17 +32,17 @@ Ga verder met het leren van upgrades voor Adobe Commerce en Magento Open Source 
           <ul>
             <li><a href="https://experienceleague.adobe.com/docs/commerce-learn/tutorials/uct-phpstorm.html">PhpStorm-plug-in Compatibiliteit bijwerken</a> (video)</li>
             <li><a href="../upgrade-compatibility-tool/overview.md">Compatibiliteit upgraden</a></li>
-            <li><a href="https://magentocommeng.slack.com/archives/C019Y143U9F">#UpgradeCompatibilityTool Slack-kanaal</a></li>
-            <li><a href="../../tools/quality-patches-tool/usage.md">Kwaliteitspatches</a></li>
+            <li><a href="https://magentocommeng.slack.com/archives/C019Y143U9F">#UpgradeCompatibilityTool Slack channel</a></li>
+            <li><a href="../../tools/quality-patches-tool/usage.md">Gereedschap Kwaliteitspatches</a></li>
           </ul>
       </td>
     </tr>
     <tr>
       <td><strong>Kalenders en beleid</strong>
-        <p>Bekijk details over Adobe Commerce en Magento Open Source-releases en beleid.</p>
+        <p>Bekijk details over Adobe Commerce en Magento Open Source releases en beleid.</p>
           <ul>
             <li><a href="https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/faq/adobe-commerce-eos-policy-faq.html">Veelgestelde vragen over einde Adobe Commerce-software</a></li>
-            <li><a href="https://marketplacesupport.magento.com/hc/en-us/articles/4413722432653">Commerce Marketplace-beleid</a></li>
+            <li><a href="https://marketplacesupport.magento.com/hc/en-us/articles/4413722432653">Beleid inzake Commerce Marketplace</a></li>
             <li><a href="https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/faq/adobe-commerce-release-strategy-lifecycle-policy.html">Veelgestelde vragen over de nieuwe Adobe Commerce-releasestrategie, het bijgewerkte levenscyclusbeleid en de uitgebreide ondersteuning</a></li>
             <li><a href="https://www.adobe.com/content/dam/cc/en/legal/terms/enterprise/pdfs/Adobe-Commerce-Software-Lifecycle-Policy.pdf">Levenscyclusbeleid</a></li>
             <li><a href="../../release/schedule.md">Releaseplanning</a></li>
@@ -50,7 +50,7 @@ Ga verder met het leren van upgrades voor Adobe Commerce en Magento Open Source 
           </ul>
         </td>
       <td><strong>Functies en onafhankelijke services</strong>
-        <p>Ontdek de innovatieve Commerce-services die beschikbaar zijn als Adobe Commerce- en Magento Open Source-extensies en waar u ze kunt ophalen.</p>
+        <p>Ontdek de innovatieve Commerce-services die beschikbaar zijn als Adobe Commerce en Magento Open Source-extensies en waar u ze kunt ophalen.</p>
           <ul>
             <li><a href="https://marketplace.magento.com/">Commerce Marketplace</a></li>
             <li><a href="https://marketplace.magento.com/magento-live-search.html">Live zoeken</a></li>
@@ -61,7 +61,7 @@ Ga verder met het leren van upgrades voor Adobe Commerce en Magento Open Source 
     </tr>
     <tr>
       <td><strong>Upgradebronnen</strong>
-        <p>Houd uw winkel veilig en efficiënt. Bereid uw upgrade voor op Adobe Commerce door de uitgebreide technische documentatie van Adobe of Magento Open Source te bekijken.</p>
+        <p>Behoud uw winkel veilig en efficiënt. Voorbereiden op de upgrade van Adobe Commerce of Magento Open Source door de uitgebreide technische documentatie van de Adobe te bekijken.</p>
           <ul>
             <li><a href="recommended-upgrade-paths.md">Aanbevolen upgradepaden</a></li>
             <li><a href="https://experienceleague.adobe.com/docs/commerce-learn/tutorials/upgrade-workshop.html?lang=en">2.4 Workshop over technische upgrade</a></li>
@@ -70,7 +70,7 @@ Ga verder met het leren van upgrades voor Adobe Commerce en Magento Open Source 
             <li><a href="https://developer.adobe.com/commerce/contributor/guides/code-contributions/backward-compatibility-policy/">Achterwaartse incompatibele ontwikkeling</a></li>
             <li><a href="https://developer.adobe.com/commerce/php/development/backward-incompatible-changes/highlights/">Achterwaartse incompatibele wijzigingen</a></li>
             <li><a href="../../implementation-playbook/best-practices/maintenance/upgrade-checklist.md">Checklist upgradeplan</a></li>
-            <li><a href="../prepare/best-practices.md">Aanbevolen werkwijzen upgraden</a></li>
+            <li><a href="../prepare/best-practices.md">Beste werkwijzen bijwerken</a></li>
             <li><a href="../../release/product-availability.md">Beschikbaarheid van software</a></li>
           </ul>
       </td>

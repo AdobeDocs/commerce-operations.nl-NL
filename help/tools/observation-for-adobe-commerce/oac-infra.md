@@ -1,6 +1,6 @@
 ---
 title: De [!DNL Infra] tab
-description: De [!DNL Infra] -tabblad isoleert problemen en oorzaken van infrastructuurproblemen.
+description: De [!DNL Infra] op het tabblad worden problemen en oorzaken van infrastructuurproblemen geïsoleerd.
 exl-id: 45f24177-3264-4848-99bc-951be32c1f7b
 feature: Configuration, Observability
 source-git-commit: e83e2359377f03506178c28f8b30993c172282c7
@@ -12,7 +12,7 @@ ht-degree: 0%
 
 # De [!DNL Infra] tab
 
-De **[!DNL Infra]** -tabblad isoleert problemen en oorzaken van infrastructuurproblemen. Verder worden de frames beschreven die u op het tabblad kunt zien.
+De **[!DNL Infra]** op het tabblad worden problemen en oorzaken van infrastructuurproblemen geïsoleerd. Verder worden de frames beschreven die u op het tabblad kunt zien.
 
 ## [!UICONTROL Service Alerts – Infrastructure Alerts by Application name]
 
@@ -24,7 +24,7 @@ De **[!UICONTROL Service Alerts – Infrastructure Alerts by Application name]**
 
 ![Gebruik van knooppunt door koppelen](../../assets/tools/observation-for-adobe-commerce/inode-usage-mount.jpg)
 
-De **[!UICONTROL Inode usage by mount]** frame shows [!DNL inode] het gebruik door over het geselecteerde tijdkader te koppelen. Ook al is er misschien veel opslagruimte vrij, als een knooppunt op is [!DNL inodes], zal er een gebrek aan beschikbare opslag zijn. Als u bestanden verwijdert (vooral kleine bestanden), wordt er ruimte vrijgemaakt en wordt [!DNL inodes] beschikbaar.
+De **[!UICONTROL Inode usage by mount]** frame shows [!DNL inode] het gebruik door over het geselecteerde tijdkader te koppelen. Ook al is er misschien veel opslagruimte vrij, als een knooppunt op is [!DNL inodes], zal er een gebrek aan beschikbare opslagruimte zijn. Als u bestanden verwijdert (vooral kleine bestanden), wordt er ruimte vrijgemaakt en wordt [!DNL inodes] beschikbaar.
 
 ## [!UICONTROL vCPU tier view over timeline GREATER 2 weeks]
 

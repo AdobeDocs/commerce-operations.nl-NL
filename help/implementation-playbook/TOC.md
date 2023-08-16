@@ -23,7 +23,7 @@ ht-degree: 0%
    - [Te leveren items](project-scope/deliverables.md)
    - [Vereiste controlelijsten](project-scope/requirement-checklists.md)
 - Ontwikkeling {#development}
-   - [Gereedschappen voor Platforms](development/platform-tools.md)
+   - [Platformgereedschappen](development/platform-tools.md)
    - [Projectbeheertools](development/project-management-tools.md)
    - [Methode voor projectuitvoering](development/delivery.md)
    - [Kwaliteitscontrole](development/quality-control.md)
@@ -71,7 +71,7 @@ ht-degree: 0%
    - [Stappen na het starten](launch/post-launch-steps.md)
 - Onderhoud en ondersteuning {#maintenance}
    - [Overzicht](maintenance/overview.md)
-   - [Beheerde services van Adobe](maintenance/adobe-managed-services.md)
+   - [Adobe Managed Services](maintenance/adobe-managed-services.md)
 - Aanbevolen procedures {#best-practices}
    - [Overzicht](best-practices/phases.md)
    - Planning {#planning}
@@ -83,7 +83,7 @@ ht-degree: 0%
       - [MySQL triggergebruik](best-practices/planning/mysql-triggers-usage.md)
       - [Redis-serviceconfiguratie](best-practices/planning/redis-service-configuration.md)
       - [OPcache-geheugengrootte](best-practices/planning/opcache-memory-size.md)
-      - [Realpath-cachegrootte](best-practices/planning/realpath-cache-size.md)
+      - [Realpath cache-grootte](best-practices/planning/realpath-cache-size.md)
       - [Categorieën](best-practices/planning/category-limits.md)
       - [Product](best-practices/planning/product-sku-limits.md)
       - [Productvariaties](best-practices/planning/product-variations.md)
@@ -105,7 +105,7 @@ ht-degree: 0%
       - [Databasetabellen wijzigen](best-practices/development/modifying-core-and-third-party-tables.md)
    - Starten {#launch}
       - [Overzicht](best-practices/launch/overview.md)
-      - [Adobe Security Notification Service](best-practices/launch/security-notification-service.md)
+      - [Service voor beveiligingskennisgeving van Adobe](best-practices/launch/security-notification-service.md)
       - [Het bestand robots.txt configureren](best-practices/launch/robots-txt.md)
       - [Beveiligingsincidenten voorkomen en erop reageren](best-practices/launch/prevent-respond-security-incident.md)
    - Onderhoud {#maintenance}

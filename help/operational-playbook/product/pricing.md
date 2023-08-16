@@ -1,5 +1,5 @@
 ---
-title: Prijzen
+title: Prijsstelling
 description: Meer informatie over verschillende elektronische betalingsmethoden en de voordelen van online betalingen in het algemeen.
 exl-id: d2dd1a6d-0a75-433e-88cd-74bffcc47594
 feature: Best Practices, Payments
@@ -10,13 +10,13 @@ ht-degree: 0%
 
 ---
 
-# Prijzen
+# Prijsstelling
 
-Het belang van de elektronische handel neemt snel toe. Consumenten kopen liever online producten omdat ze dat op elk gewenst moment kunnen doen. Om een plaats van de Handel te laten groeien, is het essentieel om een goed tariferingssysteem in werking te hebben. Wanneer een klant online probeert te betalen en de transactie mislukt, kiezen klanten vaak een andere betalingsmethode, terwijl sommige klanten hun winkelwagentje verlaten. Klanten die hun winkelwagen verlaten, doen dit omdat ze een negatieve ervaring hebben omdat ze de betalingsmethode ingewikkeld en verwarrend vinden. Als een bedrijf ervoor kiest slechts één soort betalingsmethode te hebben, zal het hoogstwaarschijnlijk niet het verwachte niveau van de klantendienst aanbieden. Door verschillende betalingsmethoden aan te bieden kunnen potentiële kopers de betalingsmethode selecteren die het beste aansluit bij hun behoeften en uw investeringsrendement verhogen.
+Het belang van de elektronische handel neemt snel toe. Consumenten kopen liever online producten omdat ze dat op elk gewenst moment kunnen doen. Om een plaats van de Handel te laten groeien, is het essentieel om een goed tariferingssysteem in werking te hebben. Wanneer een klant online probeert te betalen en de transactie mislukt, kiezen klanten vaak een andere betalingsmethode, terwijl sommige klanten hun winkelwagentje verlaten. Klanten die hun winkelwagen verlaten, doen dit omdat ze een negatieve ervaring hebben omdat ze de betalingsmethode ingewikkeld en verwarrend vinden. Als een bedrijf ervoor kiest slechts één soort betalingsmethode te hebben, zal het hoogstwaarschijnlijk niet het verwachte niveau van de klantendienst aanbieden. Door verschillende betalingsmethoden aan te bieden, kunnen potentiële kopers de betalingsmethode selecteren die het beste aansluit bij hun behoeften en uw investeringsrendement verhogen.
 
 ## Betalingsgateways
 
-Er zijn vele derde betaalgateways, zoals Braintree, Stripe, en Vierkant, die de online transactieverwerking voor ondernemingen beheren. Bedrijven kunnen samenwerken met betaalgatewayproviders om hun transacties te beheren.
+Er zijn vele derdebetaalgateways, zoals Braintree, Stripe, en Vierkant, die de online transactieverwerking voor ondernemingen beheren. Bedrijven kunnen samenwerken met betaalgatewayproviders om hun transacties te beheren.
 
 >[!NOTE]
 >

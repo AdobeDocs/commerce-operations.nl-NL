@@ -30,7 +30,7 @@ Dit **[!UICONTROL HIT processing]** toont het aantal cacheable verzoeken dat in 
 
 ![MISS-snelheid](../../assets/tools/observation-for-adobe-commerce/cdn-tab-3.png)
 
-Dit **[!UICONTROL MISS rate]** het aantal aanvragen dat op het laatste moment door cachegeheugen kan worden opgevraagd. Een fout is wanneer het verzoek niet in het voorgeheugen ondergebracht is, en het verzoek moet aan de oorsprongserver worden overgegaan om de inhoud te dienen. De waarde aan het recht is de vergelijking van verhoging/daling aan het aantal minuten per minuut één week voorafgaand.
+Dit **[!UICONTROL MISS rate]** het aantal aanvragen dat op het laatste moment door cachegeheugen kan worden opgevraagd. Een fout is wanneer het verzoek niet in het voorgeheugen ondergebracht is, en het verzoek moet aan de oorsprongserver worden overgegaan om de inhoud te dienen. De waarde aan het recht is de vergelijking van verhoging/daling aan het aantal minuten per minuut één week voorafgaand aan.
 
 ## [!UICONTROL MISS time]
 

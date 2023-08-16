@@ -14,7 +14,7 @@ ht-degree: 0%
 
 In deze sectie worden de namen van variabelen en configuratiepaden weergegeven die beschikbaar zijn voor opties in de beheerdersruimte onder **Winkels** > Instellingen > **Configuratie** > **Klanten**.
 
-De [`magento app:config:dump` command](../cli/export-configuration.md) deze waarden naar het gedeelde configuratiebestand schrijft, `app/etc/config.php`, die onder broncontrole moeten staan. Om naar keuze om het even welke configuratiemontages met voeten te treden of gevoelige montages te plaatsen, zie [Omgevingsvariabelen gebruiken om configuratie-instellingen te overschrijven](override-config-settings.md#environment-variables). Dit onderwerp doet _niet_ list [gevoelige en systeemspecifieke waarden](config-reference-sens.md).
+De [`magento app:config:dump` command](../cli/export-configuration.md) deze waarden naar het gedeelde configuratiebestand schrijft, `app/etc/config.php`, die onder broncontrole moeten staan. Om naar keuze om het even welke configuratiemontages met voeten te treden of gevoelige montages te plaatsen, zie [Omgevingsvariabelen gebruiken om configuratie-instellingen te overschrijven](override-config-settings.md#environment-variables). Dit onderwerp doet het _niet_ list [gevoelige en systeemspecifieke waarden](config-reference-sens.md).
 
 ## Paden voor nieuwsbrief
 
@@ -57,10 +57,10 @@ Deze configuratiewaarden zijn beschikbaar in de Admin in **Winkels** > Instellin
 | E-mailbevestiging vereisen | `customer/create_account/confirm` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 | E-mailadres voor bevestiging | `customer/create_account/email_confirmation_template` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 | Welkom-e-mail | `customer/create_account/email_confirmed_template` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
-| Persoonlijke gebruikersnaam genereren | `customer/create_account/generate_human_friendly_id` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
+| Persoonlijke klantvriendelijke id genereren | `customer/create_account/generate_human_friendly_id` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 | Beveiligingstype wachtwoord opnieuw instellen | `customer/password/password_reset_protection_type` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 | Max. aantal aanvragen voor opnieuw instellen van wachtwoord | `customer/password/max_number_password_reset_requests` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
-| Min. tijd tussen verzoeken om het opnieuw instellen van wachtwoorden | `customer/password/min_time_between_password_reset_requests` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
+| Min. tijd tussen verzoeken om opnieuw wachtwoord instellen | `customer/password/min_time_between_password_reset_requests` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 | E-mailsjabloon vergeten | `customer/password/forgot_email_template` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 | E-mailsjabloon onthouden | `customer/password/remind_email_template` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 | Wachtwoordsjabloon opnieuw instellen | `customer/password/reset_password_template` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
@@ -105,7 +105,7 @@ Deze configuratiewaarden zijn beschikbaar in de Admin in **Winkels** > Instellin
 
 ## Lijstpaden wissen
 
-Deze configuratiewaarden zijn beschikbaar in de Admin in **Winkels** > Instellingen > **Configuratie** > **Klanten** > **Wish List**.
+Deze configuratiewaarden zijn beschikbaar in de Admin in **Winkels** > Instellingen > **Configuratie** > **Klanten** > **Gewenste lijst**.
 
 | Naam | Config-pad | Alleen handel? |
 |--------------|--------------|--------------|
@@ -115,7 +115,7 @@ Deze configuratiewaarden zijn beschikbaar in de Admin in **Winkels** > Instellin
 | E-mailafzender | `wishlist/email/email_identity` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 | E-mailsjabloon | `wishlist/email/email_template` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 | Maximumaantal e-mails toegestaan om te worden verzonden | `wishlist/email/number_limit` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
-| Lengtelimiet e-mailtekst | `wishlist/email/text_limit` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
+| Limiet e-mailtekst | `wishlist/email/text_limit` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 | Overzicht van wenslijsten weergeven | `wishlist/wishlist_link/use_qty` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 
 {style="table-layout:auto"}
@@ -149,7 +149,7 @@ Deze configuratiewaarden zijn beschikbaar in de Admin in **Winkels** > Instellin
 | Drempel voor saldoverlaging beloningspunten | `magento_reward/general/min_points_balance` | ![Alleen handel](/help/assets/configuration/cloud-ee.png) |
 | Punten in omgekeerde richting bij | `magento_reward/general/max_points_balance` | ![Alleen handel](/help/assets/configuration/cloud-ee.png) |
 | Punten omkeren verloopt over (dagen) | `magento_reward/general/expiration_days` | ![Alleen handel](/help/assets/configuration/cloud-ee.png) |
-| Berekening van de vervalpunten van de punten met terugwerkende kracht | `magento_reward/general/expiry_calculation` | ![Alleen handel](/help/assets/configuration/cloud-ee.png) |
+| Berekening van de vervalpunten van de punten naar achteren | `magento_reward/general/expiry_calculation` | ![Alleen handel](/help/assets/configuration/cloud-ee.png) |
 | Punten terugbetalen automatisch | `magento_reward/general/refund_automatically` | ![Alleen handel](/help/assets/configuration/cloud-ee.png) |
 | Terugbetalingspunten automatisch van restitutiebedrag aftrekken | `magento_reward/general/deduct_automatically` | ![Alleen handel](/help/assets/configuration/cloud-ee.png) |
 | Openingspagina | `magento_reward/general/landing_page` | ![Alleen handel](/help/assets/configuration/cloud-ee.png) |
@@ -166,7 +166,7 @@ Deze configuratiewaarden zijn beschikbaar in de Admin in **Winkels** > Instellin
 | E-mailafzender | `magento_reward/notification/email_sender` | ![Alleen handel](/help/assets/configuration/cloud-ee.png) |
 | Abonneren op klanten standaard | `magento_reward/notification/subscribe_by_default` | ![Alleen handel](/help/assets/configuration/cloud-ee.png) |
 | Update-e-mail balanceren | `magento_reward/notification/balance_update_template` | ![Alleen handel](/help/assets/configuration/cloud-ee.png) |
-| Waarschuwing: e-mail vervalt punten | `magento_reward/notification/expiry_warning_template` | ![Alleen handel](/help/assets/configuration/cloud-ee.png) |
+| Waarschuwing: e-mail verlooppunten terugsturen | `magento_reward/notification/expiry_warning_template` | ![Alleen handel](/help/assets/configuration/cloud-ee.png) |
 | Vervalwaarschuwing voor (dagen) | `magento_reward/notification/expiry_day_before` | ![Alleen handel](/help/assets/configuration/cloud-ee.png) |
 
 {style="table-layout:auto"}
@@ -220,7 +220,7 @@ Deze configuratiewaarden zijn beschikbaar in de Admin in **Winkels** > Instellin
 | Persistentie inschakelen | `persistent/options/enabled` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 | Levensduur (seconden) | `persistent/options/lifetime` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 | &quot;Onthoud mijn gegevens&quot; inschakelen | `persistent/options/remember_enabled` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
-| Standaardwaarde &quot;Onthouden&quot; | `persistent/options/remember_default` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
+| Standaardwaarde &quot;onthouden&quot; | `persistent/options/remember_default` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 | Persistentie bij afmelden wissen | `persistent/options/logout_clear` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 | Winkelwagentje behouden | `persistent/options/shopping_cart` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 | Gewenste lijst behouden | `persistent/options/wishlist` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |

@@ -1,5 +1,5 @@
 ---
-title: Aanbevolen werkwijzen voor productvariaties
+title: Aanbevolen werkwijzen voor configuratie van productvariaties
 description: Leer hoe u de Adobe Commerce-prestaties kunt optimaliseren door het aantal geconfigureerde productvariaties te beperken.
 role: Admin
 feature: Best Practices, Catalogs
@@ -27,7 +27,7 @@ Voor de beste prestaties configureert u maximaal 50 variaties per product.
 Gebruik de volgende strategieën om het aantal productvariaties te verminderen voor de beste prestaties van de site:
 
 - Herstructureer de catalogus door het aantal variaties over verschillende producten te verdelen.
-- Hiermee verwijdert u configureerbare kenmerkopties die niet in voorraad zijn.
+- Verwijder configureerbare kenmerkopties die niet in voorraad zijn.
 - U kunt variaties beheren met alternatieve functies, zoals aangepaste opties, categorieën, verwante, gegroepeerde en bundelproducten.
 
 ## Mogelijke gevolgen voor de prestaties

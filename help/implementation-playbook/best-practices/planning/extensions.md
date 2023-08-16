@@ -18,7 +18,7 @@ Adobe Commerce-extensies (modules) van derden kunnen verschillende problemen ver
 - Extensies van derden downloaden en aanschaffen bij een vertrouwde bron, zoals de [Commerce Marketplace](https://marketplace.magento.com/extensions.html).
 - Werk alle extensies van derden bij naar de meest recente versie.
 - Als u extensies van derden niet kunt bijwerken, kunt u wellicht verschillende extensies gebruiken.
-- Wanneer u een upgrade naar een nieuwe versie van Adobe Commerce wilt uitvoeren, controleert u of de geïnstalleerde extensies van derden compatibel zijn met de nieuwe versie en voert u indien nodig een upgrade uit.
+- Wanneer u een upgrade naar een nieuwe versie van Adobe Commerce wilt uitvoeren, controleert u of de geïnstalleerde extensies van derden compatibel zijn met de nieuwe versie. Voer desgewenst een upgrade uit van de extensies.
 
 >[!NOTE]
 >
@@ -35,5 +35,5 @@ Adobe Commerce-extensies (modules) van derden kunnen verschillende problemen ver
 
 - [Aanbevolen procedures voor het plannen van upgrades](../../../upgrade/prepare/best-practices.md)
 - Extensies van derden gebruiken met Adobe Commerce op cloudinfrastructuur
-   - [Technologieën en vereisten - Ontwikkeling en testen](https://devdocs.magento.com/cloud/requirements/cloud-requirements.html#cloud-req-devtest)
+   - [Technologieën en vereisten - Ontwikkeling en beproeving](https://devdocs.magento.com/cloud/requirements/cloud-requirements.html#cloud-req-devtest)
    - [Waarom volledig testen in Integratie en Staging?](https://devdocs.magento.com/cloud/live/live.html#whytest)

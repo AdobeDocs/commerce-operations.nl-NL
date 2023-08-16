@@ -20,7 +20,7 @@ U moet de stopwoorden beheren met gebruik van CSV-bestanden in het dialoogvenste
 
 Zie de volgende bronnen voor meer informatie over hoe Elasticsearch en OpenSearch gebruik maken van stopwords:
 
-- [Stopwoorden: Prestaties versus precisie](https://www.elastic.co/guide/en/elasticsearch/guide/current/stopwords.html)
+- [Stopwords: prestaties versus precisie](https://www.elastic.co/guide/en/elasticsearch/guide/current/stopwords.html)
 - [Pros en klokken van stopwords](https://www.elastic.co/guide/en/elasticsearch/guide/current/pros-cons-stopwords.html)
 - [Stopwoorden gebruiken](https://www.elastic.co/guide/en/elasticsearch/guide/current/using-stopwords.html)
 - [Stopwoorden en prestaties](https://www.elastic.co/guide/en/elasticsearch/guide/current/stopwords-performance.html)
@@ -47,13 +47,13 @@ De standaardlevensduur voor de cache van stopwords-bestanden is 15 minuten.
 1. Sla de wijzigingen op en sluit de teksteditor af.
 1. Reinig de configuratiecache.
 
-   - Beheerder: **Systeem** > Gereedschappen > **Cachebeheer**. Selecteer **Configuratie** en klikt u in de bovenstaande lijst op **Vernieuwen**. Klikken **Verzenden** om de actie te voltooien.
+   - Beheerder: **Systeem** > Gereedschappen > **Cachebeheer**. Selecteer de **Configuratie** en klikt u in de bovenstaande lijst op **Vernieuwen**. Klikken **Verzenden** om de actie te voltooien.
 
-   - Opdrachtregel: Voer als eigenaar van het bestandssysteem de volgende opdracht in:
+   - Opdrachtregel: Voer de volgende opdracht in als de eigenaar van het bestandssysteem:
 
-      ```bash
-      php <magento_root>/bin/magento cache:clean config
-      ```
+     ```bash
+     php <magento_root>/bin/magento cache:clean config
+     ```
 
 1. Controleer de resultaten door te zoeken naar termen in je winkel.
 
@@ -67,7 +67,7 @@ De standaardlevensduur voor de cache van stopwords-bestanden is 15 minuten.
 
    Als u bijvoorbeeld stopwoorden voor de landinstelling in Italië wilt maken, geeft u het bestand een naam `stopwords_it_IT.csv`.
 
-1. Zorg ervoor dat elk stopword in het stopword-bestand op een aparte regel staat.
+1. Zorg ervoor dat elk stopword in het stopword-bestand zich op een aparte regel bevindt.
 1. Sla de wijzigingen op en sluit de teksteditor af.
 1. In dezelfde map opent u `esconfig.xml` in een teksteditor.
 1. Een regel toevoegen aan `esconfig.xml` als volgt:
@@ -82,16 +82,16 @@ De standaardlevensduur voor de cache van stopwords-bestanden is 15 minuten.
    <it_IT>stopwords_it_IT.csv</it_IT>
    ```
 
-1. Wijzigingen opslaan in `esconfig.xml` en sluit de teksteditor af.
+1. De wijzigingen opslaan in `esconfig.xml` en sluit de teksteditor af.
 1. Reinig de configuratiecache.
 
-   - Beheerder: **Systeem** > Gereedschappen > **Cachebeheer**. Selecteer **Configuratie** en klikt u in de bovenstaande lijst op **Vernieuwen**. Klikken **Verzenden** om de actie te voltooien.
+   - Beheerder: **Systeem** > Gereedschappen > **Cachebeheer**. Selecteer de **Configuratie** en klikt u in de bovenstaande lijst op **Vernieuwen**. Klikken **Verzenden** om de actie te voltooien.
 
-   - Opdrachtregel: Voer als eigenaar van het bestandssysteem de volgende opdracht in:
+   - Opdrachtregel: Voer de volgende opdracht in als de eigenaar van het bestandssysteem:
 
-      ```bash
-      php <magento_root>/bin/magento magento cache:clean config
-      ```
+     ```bash
+     php <magento_root>/bin/magento magento cache:clean config
+     ```
 
 1. Controleer de resultaten door te zoeken naar termen in je winkel.
 
@@ -102,11 +102,11 @@ In deze sectie wordt beschreven hoe u de standaardmap stopword optioneel kunt wi
 - `<magento_root>/vendor/magento/module-elasticsearch/etc/stopwords`
 - `<magento_root>/app/code/Magento/Elasticsearch/etc/stopwords/`
 
-De locatie is afhankelijk van de manier waarop u de software Commerce hebt geïnstalleerd. Als u de Magento 2 bewaarplaats GitHub kloond, is de weg onder `app/code`. Als u een gecomprimeerd archief of een pakket hebt geïnstalleerd, is het pad lager dan `vendor`.
+De locatie is afhankelijk van de manier waarop u de software Commerce hebt geïnstalleerd. Als u Magento 2 de bewaarplaats van GitHub kloond, is de weg onder `app/code`. Als u een gecomprimeerd archief of een pakket hebt geïnstalleerd, is het pad lager dan `vendor`.
 
 **De map wijzigen**:
 
-1. Als eigenaar van het bestandssysteem opent u de Elasticsearch `di.xml` in een teksteditor.
+1. Open als eigenaar van het bestandssysteem de Elasticsearch `di.xml` in een teksteditor.
 
    Als u de opslagplaats hebt gekloond, bevindt deze zich op `app/code/Magento/Elasticsearch/etc/di.xml`
 

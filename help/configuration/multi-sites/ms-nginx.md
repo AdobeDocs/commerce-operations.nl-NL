@@ -15,13 +15,13 @@ Wij gaan ervan uit dat:
 
 - U werkt op een ontwikkelcomputer (laptop, virtuele machine of dergelijke).
 
-   Er kunnen extra taken nodig zijn om meerdere websites in een gehoste omgeving te implementeren. Raadpleeg uw hostingprovider voor meer informatie.
+  Er kunnen extra taken nodig zijn om meerdere websites in een gehoste omgeving te implementeren. Neem contact op met uw hostingprovider voor meer informatie.
 
-   Er zijn extra taken nodig om Adobe Commerce in te stellen op cloudinfrastructuur. Nadat u de taken voltooit die in dit onderwerp worden besproken, zie [Meerdere websites of winkels instellen](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure-store/multiple-sites.html) in de _Handleiding Handel in Cloud-infrastructuur_.
+  Er zijn extra taken nodig om Adobe Commerce in te stellen op cloudinfrastructuur. Nadat u de taken voltooit die in dit onderwerp worden besproken, zie [Meerdere websites of winkels instellen](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure-store/multiple-sites.html) in de _Handleiding Handel in Cloud-infrastructuur_.
 
-- U accepteert meerdere domeinen in één virtueel hostbestand of gebruikt één virtuele host per website. de virtuele dossiers van de gastheerconfiguratie in worden gevestigd `/etc/nginx/sites-available`.
+- U accepteert meerdere domeinen in één virtueel hostbestand of gebruikt één virtuele host per website; de configuratiebestanden van de virtuele host bevinden zich in `/etc/nginx/sites-available`.
 - U gebruikt de `nginx.conf.sample` verstrekt door de Handel met slechts de wijzigingen die in deze zelfstudie worden besproken.
-- De software Commerce is geïnstalleerd in `/var/www/html/magento2`.
+- De software van de Handel wordt geïnstalleerd in `/var/www/html/magento2`.
 - U hebt twee andere websites dan de standaard:
 
    - `french.mysite.mg` met websitecode `french` en archiefweergavecode `fr`
@@ -36,14 +36,14 @@ Hieronder volgt een routekaart voor het instellen van meerdere websites met ngin
 
 1. [Websites, winkels en winkels instellen](ms-admin.md) in de Admin.
 1. Een [Nginx virtuele host](#step-2-create-nginx-virtual-hosts)) om een groot aantal websites of één virtuele Nginx-host per Commerce-website toe te wijzen (hieronder beschreven stappen).
-1. Geef de waarden van de [MAGE variabelen](ms-overview.md) `$MAGE_RUN_TYPE` en `$MAGE_RUN_CODE` naar nginx met behulp van de door Magento geleverde `nginx.conf.sample` (zie de onderstaande stappen).
+1. Geef de waarden van de [MAGE variabelen](ms-overview.md) `$MAGE_RUN_TYPE` en `$MAGE_RUN_CODE` aan nginx gebruikend het Magento verstrekt `nginx.conf.sample` (zie de onderstaande stappen).
 
    - `$MAGE_RUN_TYPE` kan `store` of `website`:
 
       - Gebruiken `website` om uw website in uw winkel te laden.
       - Gebruiken `store` om een winkelweergave in uw winkel te laden.
-   - `$MAGE_RUN_CODE` is de unieke website- of opslagweergavecode die overeenkomt met `$MAGE_RUN_TYPE`.
 
+   - `$MAGE_RUN_CODE` is de unieke website- of opslagweergavecode die overeenkomt met `$MAGE_RUN_TYPE`.
 
 1. Werk de configuratie van Basis URL op Commerce admin bij.
 
@@ -53,7 +53,7 @@ Zie [Meerdere websites instellen, weergaven opslaan en opslaan in de beheerfunct
 
 ## Stap 2: Nginx virtuele hosts maken
 
-In deze stap wordt beschreven hoe u websites op de winkel kunt laden. U kunt websites gebruiken of meningen opslaan; als u opslagweergaven gebruikt, moet u de parameterwaarden dienovereenkomstig aanpassen. U moet de taken in deze sectie voltooien als gebruiker met `sudo` rechten.
+In deze stap wordt beschreven hoe u websites op de winkel kunt laden. U kunt websites of opslagweergaven gebruiken. Als u opslagweergaven gebruikt, moet u de parameterwaarden dienovereenkomstig aanpassen. U moet de taken in deze sectie voltooien als gebruiker met `sudo` rechten.
 
 Door slechts één te gebruiken [nginx virtueel hostbestand](#step-2-create-nginx-virtual-hosts), kunt u uw nginx-configuratie eenvoudig en schoon houden. Door meerdere virtuele hostbestanden te gebruiken, kunt u elke winkel aanpassen (om een aangepaste locatie te gebruiken voor `french.mysite.mg` bijvoorbeeld).
 
@@ -124,7 +124,7 @@ Zie voor meer informatie over de kaartenrichtlijn [nginx - documentatie over de 
    }
    ```
 
-1. Een ander bestand met de naam `german.mysite.mg` in dezelfde map met de volgende inhoud:
+1. Een ander bestand maken met de naam `german.mysite.mg` in dezelfde map met de volgende inhoud:
 
    ```conf
    server {
@@ -167,17 +167,17 @@ Zie voor meer informatie over de kaartenrichtlijn [nginx - documentatie over de 
    ln -s /etc/nginx/sites-available/german.mysite.mg german.mysite.mg
    ```
 
-## Stap 3: nginx.conf.sample wijzigen
+## Stap 3: Nginx.conf.sample wijzigen
 
 >[!TIP]
 >
->Bewerk de `nginx.conf.sample` bestand; het is een kernbestand voor Handel dat bij elke nieuwe release kan worden bijgewerkt. In plaats daarvan kopieert u de `nginx.conf.sample` en wijzigt u de naam van het bestand en bewerkt u het gekopieerde bestand.
+>Bewerk de `nginx.conf.sample` bestand; dit is een kernbestand voor Handel dat bij elke nieuwe release kan worden bijgewerkt. In plaats daarvan kopieert u de `nginx.conf.sample` en wijzigt u de naam van het bestand en bewerkt u het gekopieerde bestand.
 
 **Het PHP-ingangspunt voor de hoofdtoepassing bewerken**:
 
 Als u de `nginx.conf.sample` bestand**:
 
-1. Een teksteditor openen en de `nginx.conf.sample` bestand,`<magento2_installation_directory>/nginx.conf.sample`. Zoek de volgende sectie:
+1. Open een teksteditor en bekijk de `nginx.conf.sample` bestand,`<magento2_installation_directory>/nginx.conf.sample`. Zoek de volgende sectie:
 
    ```conf
    # PHP entry point for main application
@@ -229,13 +229,13 @@ location ~ (index|get|static|report|404|503|health_check)\.php$ {
 }
 ```
 
-## Stap 4: De configuratie voor basis-URL bijwerken
+## Stap 4: Werk de basis-URL-configuratie bij
 
 U moet de basis-URL bijwerken voor het dialoogvenster `french` en de `german` websites in de Commerce-administratie.
 
 ### Basis-URL Franse website bijwerken
 
-1. Meld u aan bij de Commerce-beheerder en navigeer naar **Winkels** > **Instellingen** > **Configuratie** > **Algemeen** > **Web**.
+1. Meld u aan bij de Commerce-beheerder en ga naar **Winkels** > **Instellingen** > **Configuratie** > **Algemeen** > **Web**.
 1. Wijzig de _configuratiebereik_ aan de `french` website.
 1. Uitbreiden **Basis-URL&#39;s** en werkt de **Basis-URL** en **URL basiskoppeling** waarde aan `http://french.magento24.com/`.
 1. Uitbreiden **Basis-URL&#39;s (veilig)** en werkt de **Beveiligde basis-URL** en **Secure Base Link URL** waarde aan `https://french.magento24.com/`.
@@ -243,7 +243,7 @@ U moet de basis-URL bijwerken voor het dialoogvenster `french` en de `german` we
 
 ### URL van basis Duitse website bijwerken
 
-1. Meld u aan bij de Commerce-beheerder en navigeer naar **Winkels** > **Instellingen** > **Configuratie** > **Algemeen** > **Web**.
+1. Meld u aan bij de Commerce-beheerder en ga naar **Winkels** > **Instellingen** > **Configuratie** > **Algemeen** > **Web**.
 1. Wijzig de _configuratiebereik_ aan de `german` website.
 1. Uitbreiden **Basis-URL&#39;s** en werkt de **Basis-URL** en **URL basiskoppeling** waarde aan `http://german.magento24.com/`.
 1. Uitbreiden **Basis-URL&#39;s (veilig)** en werkt de **Beveiligde basis-URL** en **Secure Base Link URL** waarde aan `https://german.magento24.com/`.
@@ -279,12 +279,11 @@ Tenzij u DNS opstelling voor de URL van uw opslag hebt, moet u een statische rou
 
 >[!INFO]
 >
->- Er kunnen extra taken nodig zijn om meerdere websites in een gehoste omgeving te implementeren. Raadpleeg uw hostingprovider voor meer informatie.
->- Er zijn extra taken nodig om Adobe Commerce op cloudinfrastructuur in te stellen. zie [Meerdere Cloud-websites of -winkels instellen](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure-store/multiple-sites.html) in de _Handleiding Handel in Cloud-infrastructuur_.
-
+>- Er kunnen extra taken nodig zijn om meerdere websites in een gehoste omgeving te implementeren. Neem contact op met uw hostingprovider voor meer informatie.
+>- Er zijn aanvullende taken nodig om Adobe Commerce in te stellen op cloudinfrastructuur. Zie [Meerdere Cloud-websites of -winkels instellen](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure-store/multiple-sites.html) in de _Handleiding Handel in Cloud-infrastructuur_.
 
 ### Problemen oplossen
 
-- Als uw Franse en Duitse sites 404s retourneren maar uw Admin-account wordt geladen, moet u de handeling voltooien [Stap 6: De code van de winkel toevoegen aan de basis-URL](ms-admin.md#step-6-add-the-store-code-to-the-base-url).
+- Als uw Franse en Duitse sites 404s retourneren maar uw Admin-account wordt geladen, moet u de handeling voltooien [Stap 6: Voeg de winkelcode toe aan de basis-URL](ms-admin.md#step-6-add-the-store-code-to-the-base-url).
 - Als alle URL&#39;s 404 retourneren, moet u de webserver opnieuw starten.
 - Als de beheerder niet correct werkt, zorg ervoor u opstelling uw virtuele gastheren behoorlijk.

@@ -18,7 +18,7 @@ De sectie Beveiliging bevat instellingen voor beveiligingsfuncties, zoals wachtw
 
 De onderwerpen in de sectie van de Veiligheid van de gids van de Configuratie zijn niet uitvoerig over alle functionaliteit van de Handel. Er zijn vele belangrijke veiligheidsgerelateerde onderwerpen in andere gidsen van de Handel, zoals:
 
-- [PHP Developer Guide](https://developer.adobe.com/commerce/php/development/security/) voor informatie die ontwikkelaars van Adobe Commerce en Magento Open Source kunnen gebruiken om de veiligheid van de componenten te verbeteren die zij bouwen.
+- [PHP Developer Guide](https://developer.adobe.com/commerce/php/development/security/) voor informatie die ontwikkelaars van Adobe Commerce en Magento Open Sourcen kunnen gebruiken om de veiligheid van de componenten te verbeteren die zij bouwen.
 - [Handleiding voor beveiliging en naleving](https://devdocs.magento.com/security/security-and-compliance.html) voor informatie over veiligheid, privacy, en regelgevende naleving, met verbindingen aan technische middelen.
 
 Verscheidene op veiligheid betrekking hebbende onderwerpen die in de gids van de Configuratie in één keer inbegrepen waren, worden nu gevestigd in de volgende gidsen:

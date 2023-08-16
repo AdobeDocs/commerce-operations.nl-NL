@@ -12,11 +12,11 @@ ht-degree: 0%
 
 # AWS OpenSearch
 
-Adobe Commerce en Magento Open Source 2.4.5 ondersteunen het gebruik van Amazon OpenSearch Service-clusters. Deze service is de opvolger van Amazon Elasticsearch Service. Dit onderwerp beschrijft hoe te om Handel te vormen om AWS OpenSearch te gebruiken, en hoe te om gegevens van een lokale instantie te migreren Elasticsearch of OpenSearch aan een cluster OpenSearch van AWS.
+Adobe Commerce en Magento Open Source 2.4.5 ondersteunen het gebruik van Amazon OpenSearch Service-clusters. Deze service is de opvolger van Amazon Elasticsearch Service. Dit onderwerp beschrijft hoe te om Handel te vormen om AWS OpenSearch te gebruiken, en hoe te om gegevens van een lokale Elasticsearch of instantie te migreren OpenSearch aan een cluster van AWS OpenSearch.
 
 ## Een AWS OpenSearch-servicedomein maken
 
-U moet eerst een OpenSearch-instantie in AWS tot stand brengen.
+U moet eerst een OpenSearch-instantie in AWS maken.
 Lezen [Amazon OpenSearch Service-domeinen maken en beheren](https://docs.aws.amazon.com/opensearch-service/latest/developerguide/createupdatedomains.html) voor gedetailleerde instructies.
 
 ## Gegevens ophalen naar AWS OpenSearch
@@ -28,10 +28,10 @@ Voor kleinere installaties raden we u aan om indices rechtstreeks op de AWS-inst
 * Het opnieuw maken van indexen is een snelle bewerking.
 * Er kunnen versionverenigbaarheden tussen de oude instantie en de instantie AWS zijn, en deze kunnen worden vermeden door rechtstreeks op de instantie AWS voort te bouwen.
 
-Grotere installaties willen mogelijk overwegen hun gegevensindexen van de bestaande instantie naar AWS te migreren. Hoewel dit downtime kan verminderen, is er nog steeds een klein risico op incompatibiliteitsproblemen als gevolg van verschillende versies tussen de oude Elasticsearch-server en AWS.
+Grotere installaties willen mogelijk overwegen hun gegevensindexen van de bestaande instantie naar AWS te migreren. Hoewel dit downtime kan verminderen, is er nog steeds een klein risico op incompatibiliteitsproblemen als gevolg van verschillende versies tussen de oude Elasticsearch server en AWS.
 
 Het is niet nodig om indexen te migreren, omdat deze gemakkelijk opnieuw kunnen worden gemaakt op het AWS-exemplaar.
-Zorg er echter voor dat de versies van Elasticsearch/OpenSearch compatibel zijn wanneer u gegevensindices migreert.
+Wanneer u echter gegevensindexen migreert, moet u ervoor zorgen dat de versies van Elasticsearch/OpenSearch compatibel zijn.
 
 Zie Amazon [Migreren naar Amazon OpenSearch Service](https://docs.aws.amazon.com/opensearch-service/latest/developerguide/migration.html) instructies voor meer informatie .
 
@@ -41,7 +41,7 @@ Stappen voor het configureren van OpenSearch worden behandeld in de [Geavanceerd
 
 Om te testen dat de nieuwe configuratie werkt, test direct het eindpunt OpenSearch:
 
-1. Een product maken in de beheerfunctie (bijvoorbeeld: sku=&quot;testproduct1&quot;).
+1. Maak een product in de Admin (bijvoorbeeld: sku=&quot;testproduct1&quot;).
 1. Opnieuw indexeren via de beheerder.
 1. Vraag het eindpunt OpenSearch (gevonden in AWS UI):
 

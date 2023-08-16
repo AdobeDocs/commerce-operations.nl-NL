@@ -11,7 +11,7 @@ ht-degree: 0%
 
 # [!DNL Patches]
 
-De [!DNL Site-Wide Analysis Tool's] [!UICONTROL Patches] worden alle beschikbare patches voor uw Adobe Commerce-winkel weergegeven. Deze patches helpen problemen op te lossen die u met Adobe Commerce kunt ervaren. Zie de [Gereedschap Kwaliteitspatches uitgebracht: nieuwe tool voor het zelf bedienen van patches van hoge kwaliteit](https://support.magento.com/hc/en-us/articles/360047139492) artikel in [!DNL support knowledge base].
+De [!DNL Site-Wide Analysis Tool's] [!UICONTROL Patches] worden alle beschikbare patches voor uw Adobe Commerce-winkel weergegeven. Deze patches helpen problemen op te lossen die u met Adobe Commerce kunt ervaren. Zie de [Gereedschap Kwaliteitspatches uitgebracht: nieuw gereedschap voor het zelf bedienen van kwaliteitspatches](https://support.magento.com/hc/en-us/articles/360047139492) artikel in onze [!DNL support knowledge base].
 
 >[!NOTE]
 >

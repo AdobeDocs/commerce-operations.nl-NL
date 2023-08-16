@@ -1,6 +1,6 @@
 ---
 user-guide-title: Verwijzing naar opdrachtregelprogramma's
-user-guide-description: Meer informatie over alle beschikbare opdrachten, argumenten en opties voor Adobe Commerce en Magento Open Source-opdrachtregelprogramma's.
+user-guide-description: Meer informatie over alle beschikbare opdrachten, argumenten en opties voor Adobe Commerce en Magento Open Source opdrachtregelprogramma's.
 feature: Configuration
 source-git-commit: 3b8b9d88e72722e5c72ab94f7d3e61b78a2cb136
 workflow-type: tm+mt

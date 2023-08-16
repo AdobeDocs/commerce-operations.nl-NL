@@ -1,5 +1,5 @@
 ---
-title: Inhoudsstrategie
+title: Content Strategy
 description: Gebruik uw inhoud om aansprekende campagnes op te zetten die uw klanten aangaan.
 exl-id: fabfed9e-63ff-4be3-8bb7-192ccdb9dde6
 feature: Best Practices, Page Content
@@ -10,7 +10,7 @@ ht-degree: 0%
 
 ---
 
-# Inhoudsstrategie
+# Content strategy
 
 Succesvolle marketingplannen voor inhoud via e-mail zijn niet afkomstig van brainstormsessies, jagers of geërfde gewoonten. De ondernemingen moeten kwantitatieve en kwalitatieve gegevens (sommige van bronnen verzamelen die zij reeds hebben en sommige gecreeerd of aangekocht) om voor inhoud te plannen die de klanten zullen vinden en waarderen. Met Adobe Experience Manager kunt u inhoud die in de AEM ontwerpomgeving wordt beheerd, gebruiken om bijzonder aantrekkelijke campagnes te maken. U kunt gemakkelijk marketingmiddelen publiceren die u ontwerpt, beheert en valideert in Adobe Experience Manager op verschillende kanalen.
 

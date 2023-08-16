@@ -12,19 +12,19 @@ ht-degree: 0%
 
 # Overzicht van aangepaste logboekregistratie
 
-Logboeken geven zichtbaarheid in systeemprocessen; bijvoorbeeld, het zuiveren informatie die u met inzicht helpt wanneer een fout voorkwam of wat tot de fout leidt.
+Logs verstrekken zicht in systeemprocessen; bijvoorbeeld, het zuiveren informatie die u met begrip helpt wanneer een fout voorkwam of wat tot de fout leidt.
 
 Dit onderwerp concentreert zich op dossier-gebaseerd registreren, hoewel de Handel de flexibiliteit verstrekt om logboeken in het gegevensbestand eveneens op te slaan.
 
-Adobe raadt u aan om de volgende redenen gecentraliseerde registratie van toepassingen te gebruiken:
+Adobe raadt u aan om gecentraliseerde toepassingsregistratie te gebruiken om de volgende redenen:
 
 - Hierdoor kunnen logbestanden worden opgeslagen op een andere server dan de toepassingsserver en worden I/O-bewerkingen op de schijf verminderd, waardoor de ondersteuning van de toepassingsserver wordt vereenvoudigd.
 
 - Het maakt de verwerking van logboekgegevens effectiever door speciale hulpmiddelen-zulke te gebruiken [Logstash], [Logplex], of [vloeiend]—zonder gevolgen voor een productieserver.
 
-   >[!INFO]
-   >
-   >Adobe adviseert of bevestigt geen bepaalde registrerenoplossing.
+  >[!INFO]
+  >
+  >De Adobe adviseert of steunt geen bepaalde registrerenoplossing.
 
 ## Compatibiliteit met PSR-3
 

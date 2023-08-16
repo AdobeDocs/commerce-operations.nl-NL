@@ -10,7 +10,7 @@ ht-degree: 0%
 
 ---
 
-# Operationele Adobe Commerce-hulplijnen
+# Adobe Commerce-handleidingen
 
 Krijg praktische informatie over concepten, processen, hulpmiddelen, en beste praktijken om, Adobe Commerce projecten te ontwikkelen op te stellen en te handhaven.
 
@@ -18,10 +18,10 @@ Krijg praktische informatie over concepten, processen, hulpmiddelen, en beste pr
 <tr>
   <td valign="top">
     <a href="https://experienceleague.adobe.com/docs/commerce-operations/release/versions.html">
-      <img alt="Geen informatie" src="../assets/icons/promote.svg" width="40" height="40"/>
+      <img alt="Gegevens vrijgeven" src="../assets/icons/promote.svg" width="40" height="40"/>
     </a>
     <div>
-      <a href="https://experienceleague.adobe.com/docs/commerce-operations/release/versions.html"><strong>Geen informatie</strong></a>
+      <a href="https://experienceleague.adobe.com/docs/commerce-operations/release/versions.html"><strong>Gegevens vrijgeven</strong></a>
       <p>Bekijk alle releasegegevens voor Adobe Commerce-patches en -services.</p>
     </div>
   </td>

@@ -1,6 +1,6 @@
 ---
 title: Belangrijke belanghebbenden
-description: De belangrijkste belanghebbenden die betrokken zijn bij een Adobe Commerce-implementatie en die verschillende aspecten van het project hebben, beoordelen.
+description: De belangrijkste belanghebbenden die betrokken zijn bij een Adobe Commerce-implementatie en die verschillende aspecten van het project in handen hebben, beoordelen.
 exl-id: 04d8270f-3f68-445a-8e7a-e17905a6f77c
 feature: Best Practices
 source-git-commit: 94d7a57dcd006251e8eefbdb4ec3a5e140bf43f9

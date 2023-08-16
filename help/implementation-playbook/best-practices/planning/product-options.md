@@ -1,5 +1,5 @@
 ---
-title: Aanbevolen werkwijzen voor productopties
+title: Aanbevolen werkwijzen voor configuratie van productopties
 description: Optimaliseer de Adobe Commerce-prestaties door het aantal productopties te beperken.
 role: Admin
 feature: Best Practices, Catalogs

@@ -13,7 +13,7 @@ ht-degree: 0%
 
 >[!NOTE]
 >
->Dit is een van de onderwerpen die Adobe Commerce en Magento Open Source-handelaren en -ontwikkelaars helpen zich voor te bereiden op de naleving van privacyregels. Raadpleeg uw juridisch adviseur om te bepalen of en hoe uw bedrijf aan om het even welke wettelijke verplichtingen zou moeten voldoen.
+>Dit is een van de onderwerpen die Adobe Commerce en Magento Open Source handelaren en ontwikkelaars helpen zich voor te bereiden op naleving van privacyregels. Raadpleeg uw juridisch adviseur om te bepalen of en hoe uw bedrijf aan om het even welke wettelijke verplichtingen moet voldoen.
 
 Gebruik de volgende dataflow diagrammen en de afbeeldingen van de gegevensbestandentiteit ter referentie wanneer het ontwikkelen van nalevingsprogramma&#39;s voor privacyverordeningen zoals:
 
@@ -42,11 +42,11 @@ Een handelaar kan klantinformatie, adresgegevens, en betalingsgegevens ingaan wa
 
 ![Punten voor achtergrondgegevensinvoer](../../assets/security-compliance/backend-data-entry-points.svg)
 
-### De toegangspunten van achtergrondgegevens
+### Gegevenstoegangspunten op de achtergrond
 
 Adobe Commerce en Magento Open Source laden klantgegevens wanneer een handelaar verschillende typen rasters weergeeft, op een raster klikt om gedetailleerde informatie weer te geven en diverse andere taken uitvoert.
 
-![De toegangspunten van achtergrondgegevens](../../assets/security-compliance/backend-data-access-points.svg)
+![Gegevenstoegangspunten op de achtergrond](../../assets/security-compliance/backend-data-access-points.svg)
 
 ## Database-entiteiten
 
@@ -61,7 +61,7 @@ Adobe Commerce en Magento Open Source kunnen worden geconfigureerd om de volgend
 - Voornaam
 - Geslacht
 - Achternaam
-- Tweede voornaam/Initiaal
+- Middennaam/Initiaal
 - Voorvoegsel naam
 - Achtervoegsel naam
 
@@ -127,7 +127,7 @@ Adobe Commerce en Magento Open Source slaan de volgende klantkenmerken op:
 - Fax
 - Voornaam
 - Achternaam
-- Tweede voornaam/Initiaal
+- Middennaam/Initiaal
 - Voorvoegsel naam
 - Achtervoegsel naam
 - Telefoonnummer

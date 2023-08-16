@@ -22,7 +22,7 @@ Adobe Commerce Support-medewerkers werken met u door het proces, controleren de 
    - Werk uw A en CNAME verslagen voor uw domeinen en hostnames bij
    - Wacht op de tijd van TTL om tot uw opslag over te gaan en toegang te hebben
 
-- Volledige test in productie
+- Volledig testen in productie
    - Alle functies van de website controleren
    - CDN-cache verifiëren
    - Alle geïntegreerde services van derden controleren

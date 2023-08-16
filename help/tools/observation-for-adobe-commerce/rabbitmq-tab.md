@@ -90,28 +90,28 @@ De **[!UICONTROL [!DNL RabbitMQ] Message High-Level Summary status by Queue]** g
 
 ![[!DNL RabbitMQ] Wachtrijverbruik MB](../../assets/tools/observation-for-adobe-commerce/rabbitmq-tab-7.jpeg)
 
-De **[!UICONTROL [!DNL RabbitMQ] Queue Consumption MB]** grafiek toont het aantal bytes dat door elk wordt verbruikt [!DNL RabbitMQ] een wachtrij over het geselecteerde tijdkader.
+De **[!UICONTROL [!DNL RabbitMQ] Queue Consumption MB]** grafiek toont het aantal bytes dat door elk wordt verbruikt [!DNL RabbitMQ] een wachtrij voor de geselecteerde tijdlijn.
 
 ## [!UICONTROL [!DNL RabbitMQ] Published Messages by Queue]
 
 ![[!DNL RabbitMQ] Gepubliceerde Berichten door Wachtrij](../../assets/tools/observation-for-adobe-commerce/rabbitmq-tab-8.jpeg)
 
-De **[!UICONTROL [!DNL RabbitMQ] Published Messages by Queue]** grafiek toont het aantal bytes dat door elk wordt verbruikt [!DNL RabbitMQ] een wachtrij over het geselecteerde tijdkader.
+De **[!UICONTROL [!DNL RabbitMQ] Published Messages by Queue]** grafiek toont het aantal bytes dat door elk wordt verbruikt [!DNL RabbitMQ] een wachtrij voor de geselecteerde tijdlijn.
 
 ## [!UICONTROL [!DNL RabbitMQ] Published Message Throughput by Queue]
 
 ![[!DNL RabbitMQ] Gepubliceerde Doorvoer van Bericht door Rij](../../assets/tools/observation-for-adobe-commerce/rabbitmq-tab-9.jpeg)
 
-De **[!UICONTROL [!DNL RabbitMQ] Published Message Throughput by Queue]** grafiek geeft het gemiddelde aantal gepubliceerde berichten per seconde weer [!DNL RabbitMQ] een wachtrij over het geselecteerde tijdkader.
+De **[!UICONTROL [!DNL RabbitMQ] Published Message Throughput by Queue]** grafiek geeft het gemiddelde aantal gepubliceerde berichten per seconde weer [!DNL RabbitMQ] een wachtrij voor de geselecteerde tijdlijn.
 
 ## [!UICONTROL [!DNL RabbitMQ] Total Message Throughput by Queue]
 
 ![[!DNL RabbitMQ] Totale Doorvoer van bericht door Wachtrij](../../assets/tools/observation-for-adobe-commerce/rabbitmq-tab-10.jpeg)
 
-De **[!UICONTROL [!DNL RabbitMQ] Total Message Throughput by Queue]** grafiek toont het gemiddelde totale aantal berichten per seconde [!DNL RabbitMQ] een wachtrij over het geselecteerde tijdkader.
+De **[!UICONTROL [!DNL RabbitMQ] Total Message Throughput by Queue]** grafiek toont het gemiddelde totale aantal berichten per seconde [!DNL RabbitMQ] een wachtrij voor de geselecteerde tijdlijn.
 
 ## [!UICONTROL [!DNL RabbitMQ] Consumers by Queue]
 
 ![[!DNL RabbitMQ] Consumenten op Wachtrij](../../assets/tools/observation-for-adobe-commerce/rabbitmq-tab-11.jpeg)
 
-De **[!UICONTROL [!DNL RabbitMQ] Consumers by Queue]** grafiek geeft het gemiddelde totale aantal consumenten per [!DNL RabbitMQ] een wachtrij over het geselecteerde tijdkader.
+De **[!UICONTROL [!DNL RabbitMQ] Consumers by Queue]** grafiek geeft het gemiddelde totale aantal consumenten per [!DNL RabbitMQ] een wachtrij voor de geselecteerde tijdlijn.

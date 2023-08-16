@@ -12,7 +12,7 @@ ht-degree: 0%
 
 # Best practices implementeren
 
-Er zijn veel manieren om een Adobe Commerce-project uit te voeren. De beste praktijken die in deze sectie worden verstrekt beschrijven de manier Adobe klanten en partners verwacht om specifieke gebruiksgevallen uit te voeren. Deze aanbevelingen worden ontworpen helpen gemeenschappelijke problemen en potentiële kwesties met betrekking tot plaatsconfiguratie en aanpassing, plaatsing, verrichtingen, prestaties, en verbeteringen verhinderen.
+Er zijn veel manieren om een Adobe Commerce-project uit te voeren. De beste praktijken die in deze sectie worden verstrekt beschrijven de manier de Adobe klanten en partners verwacht om specifieke gebruiksgevallen uit te voeren. Deze aanbevelingen worden ontworpen helpen gemeenschappelijke problemen en potentiële kwesties met betrekking tot plaatsconfiguratie en aanpassing, plaatsing, verrichtingen, prestaties, en verbeteringen verhinderen.
 
 Deze beste praktijken worden georganiseerd door implementatiefase zodat kunt u de aanbevelingen vinden die op uw gebruiksgeval van toepassing zijn.
 

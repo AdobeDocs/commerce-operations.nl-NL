@@ -87,7 +87,7 @@ Opdrachtopties:
 bin/magento indexer:reindex [indexer]
 ```
 
-Wanneer `[indexer]` is een door spaties gescheiden lijst met indexen. Weglaten `[indexer]` om alle indexen opnieuw te indexeren.
+Wanneer `[indexer]` is een door spaties gescheiden lijst met indexen. Weglaten `[indexer]` alle indexen opnieuw indexeren.
 
 Monsterresultaat:
 
@@ -117,7 +117,7 @@ In dit verband `dimension` de reikwijdte van de herindexering is, bijvoorbeeld `
 
 De parallellisering van de index beïnvloedt scoped slechts indexeerders, wat betekent de Handel de gegevens in veelvoudige lijsten verdeelt gebruikend indexer als zijn werkingsgebied in plaats van het houden van alle gegevens in één lijst.
 
-U kunt de volgende indexen parallel uitvoeren:
+U kunt de volgende indexen in parallelle modus uitvoeren:
 
 - `Catalog Search Fulltext` kan door archiefmeningen worden parallel gelopen.
 - `Category Product` kan door archiefmeningen worden parallel gelopen.
@@ -126,7 +126,7 @@ U kunt de volgende indexen parallel uitvoeren:
 
 >[!INFO]
 >
->Parallelization voor Catalog Search Fulltext en het Product van de Categorie wordt toegelaten door gebrek.
+>Parallelization voor Catalog Search Fulltext en Categorie Product wordt toegelaten door gebrek.
 
 Als u parallellisatie wilt gebruiken, stelt u een van de beschikbare afmetingen in voor de indexeer van de productprijs:
 
@@ -152,7 +152,7 @@ Of om de huidige modus te controleren:
 bin/magento indexer:show-dimensions-mode
 ```
 
-Als u opnieuw wilt indexeren in parallelle modus, voert u de opdracht opnieuw uitvoeren met behulp van de omgevingsvariabele `MAGE_INDEXER_THREADS_COUNT`of voeg een omgevingsvariabele toe aan de `env.php` bestand. Met deze variabele wordt het aantal threads voor de herindexverwerking ingesteld.
+Als u opnieuw wilt indexeren in parallelle modus, voert u de opdracht opnieuw uitvoeren met de omgevingsvariabele `MAGE_INDEXER_THREADS_COUNT`of voeg een omgevingsvariabele toe aan de `env.php` bestand. Met deze variabele wordt het aantal threads voor de herindexverwerking ingesteld.
 
 Met de volgende opdracht voert u bijvoorbeeld de opdracht `Catalog Search Fulltext` indexeer over drie draden:
 
@@ -235,7 +235,7 @@ De indexeerconfiguratie opgeven:
 bin/magento indexer:set-mode {realtime|schedule} [indexer]
 ```
 
-Waar:
+Waarbij:
 
 - `realtime`—Hiermee stelt u de geselecteerde indexen in om bij te werken bij het opslaan.
 - `schedule`—Stelt de opgegeven indexen in om op te slaan volgens het bijsnijdschema.

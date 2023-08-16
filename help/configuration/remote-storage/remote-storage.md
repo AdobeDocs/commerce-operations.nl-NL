@@ -12,7 +12,7 @@ ht-degree: 0%
 
 # Externe opslag configureren
 
-De module Externe opslag biedt de optie om mediabestanden op te slaan en de import en export te plannen in een permanente, externe opslagcontainer met een opslagservice, zoals AWS S3. Standaard worden mediabestanden in de Adobe Commerce-toepassing opgeslagen in hetzelfde bestandssysteem dat de toepassing bevat. Dit is inefficiënt voor complexe configuraties met meerdere servers en kan leiden tot verminderde prestaties bij het delen van bronnen. Met de module Externe opslag kunt u mediabestanden opslaan in het dialoogvenster `pub/media` map en bestanden importeren/exporteren in de `var` van de externe objectopslag om te profiteren van het vergroten of verkleinen van afbeeldingen op de server.
+De module Externe opslag biedt de optie om mediabestanden op te slaan en de import en export te plannen in een permanente, externe opslagcontainer met behulp van een opslagservice, zoals AWS S3. Standaard worden mediabestanden in de Adobe Commerce-toepassing opgeslagen in hetzelfde bestandssysteem dat de toepassing bevat. Dit is inefficiënt voor complexe configuraties met meerdere servers en kan leiden tot verminderde prestaties bij het delen van bronnen. Met de module Externe opslag kunt u mediabestanden opslaan in het dialoogvenster `pub/media` map en bestanden importeren/exporteren in de `var` van de externe objectopslag om te profiteren van het vergroten of verkleinen van afbeeldingen op de server.
 
 >[!INFO]
 >
@@ -20,7 +20,7 @@ De module Externe opslag biedt de optie om mediabestanden op te slaan en de impo
 
 >[!INFO]
 >
->De externe opslagmodule heeft _beperkt_ ondersteuning voor Adobe Commerce op cloudinfrastructuur. Adobe kan de service voor opslagadapters van derden niet volledig oplossen. Zie [Externe opslag configureren voor handel op Cloud-infrastructuur](cloud-support.md) voor begeleiding bij de implementatie van externe opslag voor cloudprojecten.
+>De externe opslagmodule heeft _beperkt_ ondersteuning voor Adobe Commerce op cloudinfrastructuur. Adobe kan de service van de externe opslagadapter niet volledig oplossen. Zie [Externe opslag configureren voor handel op Cloud-infrastructuur](cloud-support.md) voor begeleiding bij de implementatie van externe opslag voor cloudprojecten.
 
 ![schemaafbeelding](../../assets/configuration/remote-storage-schema.png)
 
@@ -36,7 +36,7 @@ De `parameter-name` verwijst naar de specifieke naam van de parameter voor exter
 
 | Opdrachtregelparameter | Parameternaam | Beschrijving | Standaardwaarde |
 |--- |--- |--- |--- |
-| `remote-storage-driver` | chauffeur | Naam adapter<br>Mogelijke waarden:<br>**file**: Hiermee wordt externe opslag uitgeschakeld en wordt het lokale bestandssysteem gebruikt <br>**aws-s3**: Gebruik de [Amazon Simple Storage Service (Amazon S3)](remote-storage-aws-s3.md) | none |
+| `remote-storage-driver` | chauffeur | Naam adapter<br>Mogelijke waarden:<br>**file**: Schakelt externe opslag uit en gebruikt het lokale bestandssysteem <br>**aws-s3**: Gebruik de [Amazon Simple Storage Service (Amazon S3)](remote-storage-aws-s3.md) | none |
 | `remote-storage-bucket` | emmer | Objectopslag of containernaam | none |
 | `remote-storage-prefix` | prefix | Optioneel voorvoegsel (locatie binnen opslag van object) | leeg |
 | `remote-storage-region` | regio | Naam regio | none |
@@ -55,19 +55,19 @@ U kunt externe opslag installeren tijdens een Adobe Commerce-installatie of exte
 
 - Voorbeeld: Koophandel installeren met externe opslag
 
-   ```bash
-   bin/magento setup:install --remote-storage-driver="aws-s3" --remote-storage-bucket="myBucket" --remote-storage-region="us-east-1"
-   ```
+  ```bash
+  bin/magento setup:install --remote-storage-driver="aws-s3" --remote-storage-bucket="myBucket" --remote-storage-region="us-east-1"
+  ```
 
-- Voorbeeld: Externe opslag inschakelen bij bestaande handel
+- Voorbeeld: externe opslag inschakelen bij bestaande handel
 
-   ```bash
-   bin/magento setup:config:set --remote-storage-driver="aws-s3" --remote-storage-bucket="myBucket" --remote-storage-region="us-east-1"
-   ```
+  ```bash
+  bin/magento setup:config:set --remote-storage-driver="aws-s3" --remote-storage-bucket="myBucket" --remote-storage-region="us-east-1"
+  ```
 
 >[!TIP]
 >
->Voor Adobe Commerce over cloudinfrastructuur raadpleegt u [Externe opslag configureren voor handel op Cloud-infrastructuur](cloud-support.md).
+>Voor Adobe Commerce over cloud-infrastructuur raadpleegt u [Externe opslag configureren voor handel op Cloud-infrastructuur](cloud-support.md).
 
 ## Beperkingen
 

@@ -15,7 +15,7 @@ Dit onderwerp helpt u opstellings manuscripten en naar keuze bouwgroepen voor do
 
 U kunt desgewenst een aangepaste groep instellen, waarmee u onder andere snijtaken die in die groep zijn gedefinieerd, onafhankelijk van andere snijtaken kunt uitvoeren.
 
-Voor een stapsgewijze zelfstudie raadpleegt u [Aangepaste uitsnijdtaken en uitsnijdgroepen configureren (zelfstudie)](custom-cron-tutorial.md).
+Voor een geleidelijke zelfstudie raadpleegt u [Aangepaste uitsnijdtaken en uitsnijdgroepen configureren (zelfstudie)](custom-cron-tutorial.md).
 
 Zie voor een overzicht van cron-taken [Cron-taken configureren](../cli/configure-cron-jobs.md).
 
@@ -23,7 +23,7 @@ Zie voor een overzicht van cron-taken [Cron-taken configureren](../cli/configure
 
 In deze sectie wordt beschreven hoe u desgewenst een uitsnijdgroep voor een aangepaste module kunt maken. Als u dit niet hoeft te doen, gaat u verder met de volgende sectie.
 
-A _uitsnijdgroep_ is een logische groep waarmee u de uitsnede eenvoudig voor meerdere processen tegelijk kunt uitvoeren. De meeste modules van de Handel gebruiken `default` kroongroep; sommige modules gebruiken `index` groep.
+A _uitsnijdgroep_ is een logische groep waarmee u de uitsnede eenvoudig voor meerdere processen tegelijk kunt uitvoeren. De meeste modules van de Handel gebruiken `default` cron-groep; sommige modules gebruiken de `index` groep.
 
 Als u een uitsnede voor een aangepaste module implementeert, kunt u ervoor kiezen om de `default` groep of een andere groep.
 
@@ -48,7 +48,7 @@ Voor één groep moet het bestand de volgende inhoud hebben:
 </config>
 ```
 
-Waar:
+Waarbij:
 
 | Waarde | Beschrijving |
 |---|---|
@@ -109,12 +109,12 @@ Hieronder ziet u een voorbeeld van het `cron_groups.xml` bestand:
 </config>
 ```
 
-Waar:
+Waarbij:
 
-| Option | Beschrijving |
+| Optie | Beschrijving |
 | -------------------------- | ------------------------------------------------------------------------------------------------------ |
 | `schedule_generate_every` | Frequentie (in minuten) die planningen worden geschreven naar de `cron_schedule` tabel. |
-| `schedule_ahead_for` | Tijdstip (in minuten) van tevoren dat de schema&#39;s naar de `cron_schedule` tabel. |
+| `schedule_ahead_for` | Tijdstip (in minuten) van tevoren dat de schema&#39;s worden geschreven naar de `cron_schedule` tabel. |
 | `schedule_lifetime` | Tijdsvenster (in minuten) waarin een uitsnijdtaak moet worden gestart of waarin de uitsnijdtaak als gemist wordt beschouwd (te laat om te worden uitgevoerd). |
 | `history_cleanup_every` | Tijd (in minuten) waarop de uitsnijdgeschiedenis in de database wordt bewaard. |
 | `history_success_lifetime` | Tijd (in minuten) waarop de record van voltooide snijtaken in de database wordt opgeslagen. |
@@ -149,4 +149,4 @@ Om het `visitor_clean` taak uitsnijden, een aangepaste module maken en de `visit
 ...
 ```
 
-De `visitor_clean` de bouwbaan is ingesteld om 00:00 op 30 februari - op de datum die nooit zal plaatsvinden.
+Nu, `visitor_clean` de bouwbaan is ingesteld om 00:00 op 30 februari - op de datum die nooit zal plaatsvinden.

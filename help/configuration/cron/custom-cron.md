@@ -13,7 +13,7 @@ ht-degree: 0%
 
 In deze onderwerpen wordt besproken hoe u een aangepaste uitsnijdtaak en eventueel een aangepaste uitsnijdgroep instelt. Als uw uitbreiding van de Handel geplande taken vereist om periodiek te lopen, kunt u deze onderwerpen aan opstelling gebruiken cron _baan_ (de geplande taak) en optioneel een uitsnede _groep_, die tegelijkertijd aangepaste taken uitvoert.
 
-Als u een handel-Geleverde kroongroep gebruikt, moet u geen aangepaste kroongroep bepalen; als u echter wilt dat de taken voor uitsnijden volgens een ander schema worden uitgevoerd of dat ze allemaal tegelijk worden uitgevoerd, moet u een uitsnijdgroep definiëren
+Als u een handel-Geleide kroongroep gebruikt, moet u geen aangepaste kroongroep bepalen; nochtans als u uw kroonbanen wilt lopen bij een verschillend programma of u wilt allen hen samen lopen, zou u een kroongroep moeten bepalen
 
 De toepassing van de Handel verstrekt de volgende kroongroepen:
 

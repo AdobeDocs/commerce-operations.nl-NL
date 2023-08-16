@@ -19,7 +19,7 @@ Nu u een beter idee hebt van de instrumenten die hierbij betrokken zijn, zullen 
 Bij voortdurend integreren worden automatisch de volgende handelingen uitgevoerd:
 
 - Bouw de broncode om compilatiefouten te controleren.
-- Voer tests uit wanneer een trekkingsverzoek wordt gecreeerd/bijgewerkt. Momenteel worden PHP eenheidstests uitgevoerd.
+- Voer tests uit wanneer een trekkingsverzoek wordt gecreeerd/bijgewerkt. Op dit moment worden PHP eenheidstests uitgevoerd.
 
 De baan plaatst zijn uitvoeringsstatus aan het trekkingsverzoek. Ontwikkelaars kunnen de details van de uitvoering van de taak weergeven, zodat ze bestaande code kunnen herstellen of verbeteren.
 

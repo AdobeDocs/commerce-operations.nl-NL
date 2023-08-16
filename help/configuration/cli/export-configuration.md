@@ -29,19 +29,19 @@ Als resultaat van de beveluitvoering, worden de volgende configuratiedossiers bi
 
 - `app/etc/config.php`
 
-   Dit is het gedeelde configuratiedossier voor al uw instanties van de Handel.
+  Dit is het gedeelde configuratiedossier voor al uw instanties van de Handel.
 Neem dit op in de broncontrole zodat het kan worden gedeeld tussen de ontwikkelings-, bouw- en productiesystemen.
 
-   Zie [config.php reference](../reference/config-reference-configphp.md).
+  Zie [config.php reference](../reference/config-reference-configphp.md).
 
 - `app/etc/env.php`
 
-   Dit is het milieu-specifieke configuratiedossier.
+  Dit is het milieu-specifieke configuratiedossier.
 Het bevat gevoelige en systeemspecifieke instellingen voor afzonderlijke omgevingen.
 
-   Do _niet_ neem dit dossier in broncontrole op.
+  Do _niet_ neem dit dossier in broncontrole op.
 
-   Zie [env.php reference](../reference/config-reference-envphp.md).
+  Zie [env.php reference](../reference/config-reference-envphp.md).
 
 ## Gevoelige of systeemspecifieke instellingen
 

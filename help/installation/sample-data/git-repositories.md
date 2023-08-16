@@ -1,6 +1,6 @@
 ---
 title: Voorbeeldgegevensopslagruimten klonen
-description: Voer de volgende stappen uit om Adobe Commerce- en Magento Open Source-voorbeeldgegevens te installeren door Git-opslagruimten te klonen.
+description: Voer de volgende stappen uit om Adobe Commerce te installeren en voorbeeldgegevens te Magento Open Sourcen door Git-opslagplaatsen te klonen.
 exl-id: 748eee30-2821-457d-9c1c-62ede8bc0510
 source-git-commit: 95ffff39d82cc9027fa633dffedf15193040802d
 workflow-type: tm+mt
@@ -11,7 +11,7 @@ ht-degree: 0%
 
 # Voorbeeldgegevensopslagruimten klonen
 
-Dit onderwerp bespreekt hoe te om steekproefgegevens te klonen en toe te voegen als u de bewaarplaats van Magento Open Source GitHub kloond. Deze methode is alleen bedoeld voor ontwikkelaars die een bijdrage leveren (dat wil zeggen ontwikkelaars die een bijdrage willen leveren aan de codebase Magento Open Source).
+Dit onderwerp bespreekt hoe te om steekproefgegevens te klonen en toe te voegen als u de bewaarplaats van Magento Open Source GitHub kloond. Deze methode is alleen bedoeld voor ontwikkelaars die een bijdrage leveren (dat wil zeggen ontwikkelaars die een bijdrage willen leveren aan de codebase van de Magento Open Source).
 
 Als u geen bijdragende ontwikkelaar bent, kies één van de andere opties die in de inhoudstafel op de linkerkant van de pagina worden getoond.
 
@@ -26,7 +26,7 @@ Medewerkers kunnen deze methode gebruiken om voorbeeldgegevens te installeren *a
 
 ## De gegevensopslagplaats van de voorbeeldgegevens klonen
 
-In deze sectie wordt beschreven hoe u voorbeeldgegevens kunt installeren door de gegevensopslagruimte voor voorbeeldgegevens te klonen. U kunt de gegevensopslagruimte van het voorbeeld op de volgende manieren klonen:
+In deze sectie wordt beschreven hoe u voorbeeldgegevens kunt installeren door de gegevensopslagruimte voor voorbeeldgegevens te klonen. U kunt de gegevensopslagplaats van de steekproef op om het even welke volgende manieren klonen:
 
 * Klonen met de opdracht [SSH-protocol](#clone-with-ssh)
 * Klonen met de opdracht [HTTPS-protocol](#clone-with-https)
@@ -47,7 +47,7 @@ Om de bewaarplaats van GitHub van steekproefgegevens te klonen gebruikend het pr
 
    Voor Ubuntu is het meestal `/var/www` en voor CentOS is dit `/var/www/html`.
 
-1. Enter `git clone` en plak de eerder verkregen waarde.
+1. Enter `git clone` en plak de waarde die u eerder hebt verkregen.
 
    Hier volgt een voorbeeld:
 
@@ -71,7 +71,7 @@ Om de bewaarplaats van GitHub van steekproefgegevens te klonen gebruikend het pr
 
    Bijvoorbeeld:
 
-   Als u het `2.4-develop` vertakking van de Magento Open Source GitHub bewaarplaats, zou de tak van Gegevens van de Steekproef moeten zijn `2.4-develop`.
+   Als u het `2.4-develop` tak van de bewaarplaats van GitHub van de Magento Open Source, zou de tak van Gegevens van de Steekproef moeten zijn `2.4-develop`.
 
    Als u de juiste vertakking wilt uitchecken, voert u de volgende opdracht uit vanuit de hoofdmap van de gegevensopslagruimte van het voorbeeld (ervan uitgaande dat u de opdracht `2.4-develop` vertakking):
 
@@ -112,7 +112,7 @@ U kunt als volgt de GitHub-voorbeeldgegevens klonen met behulp van het HTTPS-pro
 
    Voor Ubuntu is het meestal `/var/www` en voor CentOS is dit `/var/www/html`.
 
-1. Enter `git clone` en plak de eerder verkregen waarde.
+1. Enter `git clone` en plak de waarde die u eerder hebt verkregen.
 
    Hier volgt een voorbeeld:
 
@@ -125,7 +125,7 @@ U kunt als volgt de GitHub-voorbeeldgegevens klonen met behulp van het HTTPS-pro
 
    Bijvoorbeeld:
 
-   Als u het `2.4-develop` vertakking van de Magento Open Source GitHub bewaarplaats, zou de tak van Gegevens van de Steekproef moeten zijn `2.4-develop`.
+   Als u het `2.4-develop` tak van de bewaarplaats van GitHub van de Magento Open Source, zou de tak van Gegevens van de Steekproef moeten zijn `2.4-develop`.
 
    Als u de juiste vertakking wilt uitchecken, voert u de volgende opdracht uit vanuit de hoofdmap van de gegevensopslagruimte van het voorbeeld (ervan uitgaande dat u de opdracht `2.4-develop` vertakking):
 
@@ -151,16 +151,15 @@ U kunt als volgt de GitHub-voorbeeldgegevens klonen met behulp van het HTTPS-pro
 
 >[!WARNING]
 >
->Als u voorbeeldgegevens installeert *na* wanneer u Adobe Commerce of Magento Open Source installeert, moet u ook de volgende opdracht uitvoeren om de database en het schema bij te werken:
+>Als u voorbeeldgegevens installeert *na* Als u Adobe Commerce of Magento Open Source installeert, moet u ook de volgende opdracht uitvoeren om de database en het schema bij te werken:
 >
->
-```bash
+>```bash
 ><magento_root>/bin/magento setup:upgrade
 >```
 
 ## Eigendom en machtigingen van bestandssysteem instellen
 
-Omdat `php build-sample-data.php` het script zorgt voor symlinks tussen de gegevensopslagplaats van het voorbeeld en uw gegevensopslagplaats van de Magento Open Source. U moet de machtigingen en het eigendom van het bestandssysteem instellen in de gegevensopslagplaats van het voorbeeld. Als u dit niet doet, treedt de storefront op in fouten.
+Omdat de `php build-sample-data.php` Met script worden koppelingen tot stand gebracht tussen de gegevensopslagplaats voor voorbeeldgegevens en uw gegevensopslagruimte voor Magento Open Sourcen. U moet de machtigingen voor en het eigendom van het bestandssysteem instellen in de gegevensopslagruimte van het voorbeeld. Als u dit niet doet, treedt de storefront op in fouten.
 
 U kunt als volgt de machtigingen en het eigendom van het bestandssysteem instellen in de gegevensopslagruimte van het voorbeeld:
 
@@ -177,7 +176,7 @@ U kunt als volgt de machtigingen en het eigendom van het bestandssysteem instell
 
    * Ubuntu: `chown -R :www-data .`
 
-1. Machtigingen instellen:
+1. Rechten instellen:
 
    ```bash
    find . -type d -exec chmod g+ws {} +

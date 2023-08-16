@@ -193,7 +193,7 @@ https://github.com/AdobeDocs/commerce-operations.en/blob/main/README.md#template
   </tbody>
   <tbody>
     <tr style="background:lightgray;">
-      <th style="border-style:none;">Verbeteringen op het gebied van Platform, prestaties en beveiliging</th>
+      <th style="border-style:none;">Verbeteringen op het gebied van platform, prestaties en beveiliging</th>
       <th style="border-style:none;">2.0</th>
       <th style="border-style:none;">2.1</th>
       <th style="border-style:none;">2.2</th>

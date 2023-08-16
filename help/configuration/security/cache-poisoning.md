@@ -12,7 +12,7 @@ ht-degree: 0%
 
 # Cachevergiftiging voorkomen
 
-Dit onderwerp bespreekt hoe te om geheim voorgeheugenvergiftiging te verhinderen als u de Webserver van de Informatie van Microsoft Internet van de Server (IIS) gebruikt. _Cachevergiftiging_ is een methode om de inhoud van het cachegeheugen te wijzigen en verschillende pagina&#39;s van dezelfde site op te nemen. Het is bijvoorbeeld mogelijk om een HTTP 404 (Niet gevonden) foutenpagina in plaats van één of andere goedaardige pagina (bijvoorbeeld, de storefront homepage) te injecteren, die tot een potentiële ontkenning-van-dienst (DoS) kan leiden. De URL&#39;s van de kwaadaardige pagina worden in het cachegeheugen opgeslagen door Varnish of Redis, vandaar de naam _paginacache vergiftigt_.
+Dit onderwerp bespreekt hoe te om geheim voorgeheugenvergiftiging te verhinderen als u de Webserver van de Informatie van Microsoft Internet van de Server (IIS) gebruikt. _Cachevergiftiging_ is een methode om de inhoud van het cachegeheugen te wijzigen en verschillende pagina&#39;s van dezelfde site op te nemen. Het is bijvoorbeeld mogelijk om een HTTP 404 (Niet gevonden) foutenpagina in plaats van één of andere goedaardige pagina (bijvoorbeeld, de storefront homepage) te injecteren, die tot een potentiële ontkenning-van-dienst (DoS) kan leiden. De URL&#39;s van de kwaadaardige pagina worden door Varnish of Redis in de cache geplaatst, vandaar de naam _paginacache vergiftigt_.
 
 Deze typen aanvallen kunnen moeilijk te detecteren zijn omdat ze niet resulteren in fouten in webserverlogbestanden.
 

@@ -12,17 +12,17 @@ ht-degree: 0%
 
 # Migratieoverzicht
 
-Voordat u de migratie start, moet u alle Magento 1-banen voor kronen stoppen.
+Voordat u de migratie start, moet u alle taken voor Magento 1 voor uitsnijden stoppen.
 
 Volg tijdens het migratieproces de volgende algemene regels voor een geslaagde migratie:
 
-1. **Niet gebruiken** Breng wijzigingen aan in de Magento 1 Admin, behalve voor orderbeheer (verzending, het maken van facturen en creditnota&#39;s).
+1. **Niet gebruiken** Breng wijzigingen aan in Magento 1 Admin, behalve voor orderbeheer (verzending, aanmaakfactuur en creditnota&#39;s).
 1. **Niet gebruiken** elke code wijzigen
-1. **Niet gebruiken** wijzigingen aanbrengen in de Magento 2 Admin en storefront
+1. **Niet gebruiken** wijzigingen aanbrengen in Magento 2 Admin en storefront
 
 >[!TIP]
 >
->Alle bewerkingen in de opslagruimte Magento 1 zijn toegestaan.
+>Alle verrichtingen in Magento 1 storefront worden toegestaan.
 
 ## Voer de [!DNL Data Migration Tool]
 
@@ -44,7 +44,7 @@ In deze sectie ziet u hoe u de [!DNL Data Migration Tool] om instellingen, gegev
    sudo -u <file system owner>  <command>
    ```
 
-1. Als u Magento-opdrachten vanuit een willekeurige map wilt uitvoeren, voegt u `<magento_root>/bin` op uw systeem `PATH`.
+1. Als u opdrachten voor Magento&#39;s vanuit een willekeurige map wilt uitvoeren, voegt u `<magento_root>/bin` op uw systeem `PATH`.
 
    Omdat de syntaxis van schelpen verschilt, raadpleegt u een referentie zoals [unix.stackexchange.com](https://unix.stackexchange.com/questions/117467/how-to-permanently-set-environmental-variables).
 
@@ -68,12 +68,12 @@ Hieronder ziet u een typisch opdrachtvoorbeeld:
 bin/magento migrate:<mode> [-r|--reset] [-a|--auto] {<path to config.xml>}
 ```
 
-Waar:
+Waarbij:
 
 - `<mode>` kan: [`settings`](settings.md), [`data`](data.md), of [`delta`](delta.md)
 - `[-r|--reset]` is een optioneel argument dat de migratie vanaf het begin start. U kunt dit argument gebruiken voor het testen van migratie.
 - `[-a|--auto]` is een optioneel argument dat voorkomt dat de migratie stopt wanneer integriteitscontroles worden uitgevoerd.
-- `{<path to config.xml>}` is het absolute pad van het bestandssysteem naar `config.xml`; dit argument is vereist .
+- `{<path to config.xml>}` is het absolute pad van het bestandssysteem naar `config.xml`; dit argument is vereist.
 
 >[!NOTE]
 >

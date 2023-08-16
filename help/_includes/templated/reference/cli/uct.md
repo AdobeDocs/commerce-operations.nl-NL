@@ -10,7 +10,7 @@ ht-degree: 0%
 <!-- All the assigned and captured content is used in the included template -->
 
 <!-- The template to render with above values -->
-**Versie**: 3.0.3.
+**Versie**: 3.0.3
 
 Deze verwijzing bevat 9 opdrachten die beschikbaar zijn via het `bin/uct` opdrachtregelprogramma.
 De eerste lijst wordt automatisch gegenereerd met de opdracht `bin/uct list` op Adobe Commerce.
@@ -19,7 +19,7 @@ Meer informatie over het gereedschap in [Overzicht](/help/upgrade/upgrade-compat
 
 >[!NOTE]
 >
->Deze verwijzing wordt gegenereerd op basis van de codebase van de toepassing. Als u de inhoud wilt wijzigen, kunt u de broncode voor de corresponderende opdrachtimplementatie bijwerken in het dialoogvenster [codebase](https://github.com/magento) opslaan en uw wijzigingen ter controle verzenden. Een andere manier is om _Feedback geven_ (zoek de koppeling in de rechterbovenhoek). Zie voor richtsnoeren voor bijdragen [Codebijdragen](https://developer.adobe.com/commerce/contributor/guides/code-contributions/).
+>Deze verwijzing wordt gegenereerd op basis van de toepassingscodebase. Als u de inhoud wilt wijzigen, kunt u de broncode voor de corresponderende opdrachtimplementatie bijwerken in het dialoogvenster [codebase](https://github.com/magento) opslaan en uw wijzigingen ter controle verzenden. Een andere manier is om _Feedback geven_ (zoek de koppeling in de rechterbovenhoek). Zie voor richtsnoeren voor bijdragen [Codebijdragen](https://developer.adobe.com/commerce/contributor/guides/code-contributions/).
 
 ## `_complete`
 
@@ -70,7 +70,7 @@ Geen bericht uitvoeren
 
 ### `--verbose`, `-v|-vv|-vvv`
 
-Verhoog de breedheid van berichten: 1 voor normale output, 2 voor meer uitgebreide output en 3 voor zuiveren
+Verhoog de breedheid van berichten: 1 voor normale output, 2 voor meer uitgebreide output en 3 voor zuivert
 
 - Standaard: `false`
 - Accepteert geen waarde
@@ -114,7 +114,7 @@ bin/uct completion [--debug] [--] [<shell>]
 
 ### `shell`
 
-Het shell-type (bijvoorbeeld &quot;bash&quot;), wordt de waarde van &quot;$SHELL&quot; env var gebruikt als dit niet wordt gegeven
+Het shell type (bijvoorbeeld &quot;bash&quot;), de waarde van &quot;$SHELL&quot; env var zal worden gebruikt als dit niet wordt gegeven
 
 
 ### `--debug`
@@ -140,7 +140,7 @@ Geen bericht uitvoeren
 
 ### `--verbose`, `-v|-vv|-vvv`
 
-Verhoog de breedheid van berichten: 1 voor normale output, 2 voor meer uitgebreide output en 3 voor zuiveren
+Verhoog de breedheid van berichten: 1 voor normale output, 2 voor meer uitgebreide output en 3 voor zuivert
 
 - Standaard: `false`
 - Accepteert geen waarde
@@ -219,7 +219,7 @@ Geen bericht uitvoeren
 
 ### `--verbose`, `-v|-vv|-vvv`
 
-Verhoog de breedheid van berichten: 1 voor normale output, 2 voor meer uitgebreide output en 3 voor zuiveren
+Verhoog de breedheid van berichten: 1 voor normale output, 2 voor meer uitgebreide output en 3 voor zuivert
 
 - Standaard: `false`
 - Accepteert geen waarde
@@ -303,7 +303,7 @@ Geen bericht uitvoeren
 
 ### `--verbose`, `-v|-vv|-vvv`
 
-Verhoog de breedheid van berichten: 1 voor normale output, 2 voor meer uitgebreide output en 3 voor zuiveren
+Verhoog de breedheid van berichten: 1 voor normale output, 2 voor meer uitgebreide output en 3 voor zuivert
 
 - Standaard: `false`
 - Accepteert geen waarde
@@ -367,7 +367,7 @@ Geen bericht uitvoeren
 
 ### `--verbose`, `-v|-vv|-vvv`
 
-Verhoog de breedheid van berichten: 1 voor normale output, 2 voor meer uitgebreide output en 3 voor zuiveren
+Verhoog de breedheid van berichten: 1 voor normale output, 2 voor meer uitgebreide output en 3 voor zuivert
 
 - Standaard: `false`
 - Accepteert geen waarde
@@ -442,7 +442,7 @@ Geen bericht uitvoeren
 
 ### `--verbose`, `-v|-vv|-vvv`
 
-Verhoog de breedheid van berichten: 1 voor normale output, 2 voor meer uitgebreide output en 3 voor zuiveren
+Verhoog de breedheid van berichten: 1 voor normale output, 2 voor meer uitgebreide output en 3 voor zuivert
 
 - Standaard: `false`
 - Accepteert geen waarde
@@ -478,7 +478,7 @@ Geen interactieve vraag stellen
 ## `dbschema:diff`
 
 Adobe Commerce DB-schemaverschillen tussen twee geselecteerde versies weergeven.
-Beschikbare versies: 2.3.0. | 2.3.1 | 2.3.2 | 2.3.2-p2 | 2.3.3 | 2.3.3-p1 | 2.3.4 | 2.3.4-p1 | 2.3.4-p2 | 2.3.5 | 2.3.5-p1 | 2.3.5-p2 | 2,3,6 | 2.3.6-p1 | 2,3,7 | 2.3.7-p1 | 2.3.7-p2 | 2.3.7-p3 | 2.3.7-p4 | 2,4,0 | 2.4.0-p1 | 2.4.1 | 2.4.1-p1 | 2.4.2 | 2.4.2-p1 | 2.4.2-p2 | 2.4.3 | 2.4.3-p1 | 2.4.3-p2 | 2.4.3-p3 | 2,4,4 | 2.4.4-p1 | 2,4,5 | 2.4.4-p2 | 2.4.5-p1 | 2.4.4-p3 | 2.4.5-p2 | 2,4,6
+Beschikbare versies: 2.3.0 | 2.3.1 | 2.3.2 | 2.3.2-p2 | 2.3.3 | 2.3.3-p1 | 2.3.4 | 2.3.4-p1 | 2.3.4-p2 | 2.3.5 | 2.3.5-p1 | 2.3.5-p2 | 2,3,6 | 2.3.6-p1 | 2,3,7 | 2.3.7-p1 | 2.3.7-p2 | 2.3.7-p3 | 2.3.7-p4 | 2,4,0 | 2.4.0-p1 | 2.4.1 | 2.4.1-p1 | 2.4.2 | 2.4.2-p1 | 2.4.2-p2 | 2.4.3 | 2.4.3-p1 | 2.4.3-p2 | 2.4.3-p3 | 2,4,4 | 2.4.4-p1 | 2,4,5 | 2.4.4-p2 | 2.4.5-p1 | 2.4.4-p3 | 2.4.5-p2 | 2,4,6
 
 ```bash
 bin/uct dbschema:diff <current-version> <target-version>
@@ -513,7 +513,7 @@ Geen bericht uitvoeren
 
 ### `--verbose`, `-v|-vv|-vvv`
 
-Verhoog de breedheid van berichten: 1 voor normale output, 2 voor meer uitgebreide output en 3 voor zuiveren
+Verhoog de breedheid van berichten: 1 voor normale output, 2 voor meer uitgebreide output en 3 voor zuivert
 
 - Standaard: `false`
 - Accepteert geen waarde
@@ -589,7 +589,7 @@ Geen bericht uitvoeren
 
 ### `--verbose`, `-v|-vv|-vvv`
 
-Verhoog de breedheid van berichten: 1 voor normale output, 2 voor meer uitgebreide output en 3 voor zuiveren
+Verhoog de breedheid van berichten: 1 voor normale output, 2 voor meer uitgebreide output en 3 voor zuivert
 
 - Standaard: `false`
 - Accepteert geen waarde
@@ -639,13 +639,13 @@ Adobe Commerce-installatiemap.
 
 ### `--current-version`, `-a`
 
-Huidige Adobe Commerce-versie, versie van de Adobe Commerce-installatie wordt gebruikt als deze wordt weggelaten.
+De huidige Adobe Commerce-versie, versie van de Adobe Commerce-installatie, wordt gebruikt als deze wordt weggelaten.
 
 - Accepteert een waarde
 
 ### `--coming-version`, `-c`
 
-Adobe Commerce-doelversie, nieuwste releaseversie van Adobe Commerce wordt gebruikt als deze wordt weggelaten. Beschikbare Adobe Commerce-versies: 2.3.0 \| 2.3.1 \| 2.3.2 \| 2.3.2-p2 \| 2.3.3 \| 2.3.3-p1 \| 2.3.4 \| 2.3.4-p1 \| 2.3.4-p2 \| 2.3.5 \| 2.3.5-p1 \| 2.3.5-p2 \| 2.3.6 \| 2.3.6-p1 \| 2.3.7 \| 2.3.7-p1 \| 2.3.7-p2 \| 2.3.7-p3 \| 2.3.7-p4 \| 2.4.0 \| 2.4.0-p1 \| 2.4.1 \| 2.4.1-p1 2.4.2 \| 2.4.2-p1 \| 2.4.2-p2 \| 2.4.3 \| 2.4.3-p1 \| 2.4.3-p2 \| 2.4.3-p3 \| 2.4.4 \| 2.4.4-p1 \| 2.4.5 \| 2.4.4-p2 \| 2 4.5-p1 \| 2.4.4-p3 \| 2.4.5-p2 \| 2.4.6
+Adobe Commerce-doelversie, nieuwste releaseversie van Adobe Commerce wordt gebruikt als deze wordt weggelaten. Beschikbare Adobe Commerce-versies: 2.3.0 \| 2.3.1 \| 2.3.2 \| 2.3.2-p2 \| 2.3.3 \| 2.3.3-p1 \| 2.3.4 \| 2.3.4-p1 \| 2.3.4-p2 \| 2.3.5 \| 2.3.5-p1 \| 2.3 5-p2 \| 2.3.6 \| 2.3.6-p1 \| 2.3.7 \| 2.3.7-p1 \| 2.3.7-p2 \| 2.3.7-p3 \| 2.3.7-p4 \| 2.4.0 \| 2.4.0-p1 \| 2.4.1 \| 2.4.1 p1 \| 2.4.2 \| 2.4.2-p1 \| 2.4.2-p2 \| 2.4.3 \| 2.4.3-p1 \| 2.4.3-p2 \| 2.4.3-p3 \| 2.4.4 \| 2.4.4-p1 \| 2.4.5 \| 2.4.4-p2 \| 2.4.5-p1 \| 2.4.4-p3 \| 2.4.5-p2 \| 2.4.6
 
 - Accepteert een waarde
 
@@ -697,7 +697,7 @@ Geen bericht uitvoeren
 
 ### `--verbose`, `-v|-vv|-vvv`
 
-Verhoog de breedheid van berichten: 1 voor normale output, 2 voor meer uitgebreide output en 3 voor zuiveren
+Verhoog de breedheid van berichten: 1 voor normale output, 2 voor meer uitgebreide output en 3 voor zuivert
 
 - Standaard: `false`
 - Accepteert geen waarde

@@ -11,7 +11,7 @@ ht-degree: 0%
 
 # Loodgeneratie
 
-In de sector van de elektronische handel is iedereen die belangstelling toont voor het merk en zijn producten. of ze nu op de website klikt , een advertentie op sociale media controleert of producten verzoekt . Het produceren van een lood in de e-commerce industrie is een kritiek deel van de zaken omdat een lood vandaag een klant morgen kan zijn. Loodgeneratie is een lang proces dat tijd kost en geduld vereist.
+In de sector van de elektronische handel is iedereen die belangstelling toont voor het merk en zijn producten, of het nu op de website klikt, een advertentie op sociale media bekijkt of producten verzoekt. Het produceren van een lood in de e-commerce industrie is een kritiek deel van de zaken omdat een lood vandaag een klant morgen kan zijn. Loodgeneratie is een lang proces dat tijd kost en geduld vereist.
 
 In het volgende diagram ziet u een eenvoudige workflow die detailhandelaren kunnen gebruiken voor het genereren van leads:
 
@@ -41,7 +41,7 @@ Hoewel de productie van lood niet gemakkelijk zou kunnen zijn, is het noodzakeli
 
 Loodproductie verschilt tussen B2B- en B2C-bedrijven:
 
-- **Verkoopcyclus**—Loodproductie voor B2B-ondernemingen is veel langer dan voor B2C-ondernemingen omdat B2B-contracten voor lange termijn gelden in vergelijking met B2C-transacties. De prijzen, tijd en middelen die voor B2B-transacties zijn toegewezen, zijn groter. De verkoopcycli van B2C zijn veel korter en impliceren minder tijd, geld, en middelen.
+- **Verkoopcyclus**—Loodproductie voor B2B-ondernemingen is veel langer dan voor B2C-ondernemingen omdat B2B-contracten voor lange termijn gelden in vergelijking met B2C-transacties. De prijzen, de tijd en de middelen die voor B2B-transacties worden toegewezen, zijn groter. De verkoopcycli van B2C zijn veel korter en impliceren minder tijd, geld, en middelen.
 
 - **Inhoud**—B2B-klanten hebben doorgaans meer kennis over producten omdat zij meer productonderzoek doen, terwijl B2C-klanten doorgaans producten kopen op basis van de markttrendcontent.
 

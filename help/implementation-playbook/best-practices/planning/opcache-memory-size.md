@@ -22,11 +22,11 @@ Voor Adobe Commerce on cloud Infrastructure Pro-planarchitectuur 2.3.x wordt aan
 
 ## Geheugen configureren
 
-Minstens toewijzen **2 GB** van geheugen voor de [OPcache PHP-module](https://www.php.net/manual/en/book.opcache.php). De OPcache-module is geconfigureerd in de `php.ini` bestand. Om 2048 MB geheugen toe te wijzen, reeks `opcache.memory_consumption = 2048`.
+minimaal toewijzen **2 GB** van geheugen voor de [OPcache PHP-module](https://www.php.net/manual/en/book.opcache.php). De OPcache-module is geconfigureerd in het dialoogvenster `php.ini` bestand. Om 2048 MB geheugen toe te wijzen, reeks `opcache.memory_consumption = 2048`.
 
 ## Aanvullende informatie
 
-* [Best practices voor prestaties - PHP-instellingen](../../../performance/software.md#php-settings)
+* [Aanbevolen werkwijzen voor prestaties - PHP-instellingen](../../../performance/software.md#php-settings)
 * [PHP-opties configureren](https://devdocs.magento.com/cloud/project/project-conf-files_magento-app.html#customize-phpini-settings)
 * [Best practices voor databases voor Adobe Commerce op cloudinfrastructuur](database-on-cloud.md)
 * [Meest voorkomende databaseproblemen in Adobe Commerce met cloudinfrastructuur](../maintenance/resolve-database-performance-issues.md)

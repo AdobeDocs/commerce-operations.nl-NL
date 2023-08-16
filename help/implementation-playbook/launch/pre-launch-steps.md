@@ -22,7 +22,7 @@ De checklist vóór de lancering is vereist om voorafgaand aan lanceringsstaat t
 - Databases zijn allemaal opgezet en zijn identiek tussen Staging- en Productieomgevingen
 - SSL-certificaten (TLS) worden gevalideerd voor testomgevingen/productieomgevingen
 - E-mailservices zijn goed geconfigureerd en werken goed voor transactie-e-mails
-- CDN is geconfigureerd voor productieomgevingen voor staging/productie
+- CDN is geconfigureerd voor productieomgevingen voor Staging/Productie
 - Beveiligingsscan instellen voor Staging-/Productieomgevingen
    - Adobe Commerce-beveiligingsscan
 - Prestatiebeoordeling uitvoeren met
@@ -32,15 +32,15 @@ De checklist vóór de lancering is vereist om voorafgaand aan lanceringsstaat t
    - Google-paginasnelheid
 - Alle integratie van derden valideren die in de toepassing zal functioneren (OMS, CRM)
 - Gereedschap voor prestatiebewaking inschakelen (nieuwe relais)
-- Activiteiten op het gebied van gegevensmigratie tijdens een repetitie (indien van toepassing)
+- Activiteiten op het gebied van gegevensmigratie tijdens de (eventuele) repetitie
 
 ![Diagram van fase 1 van het startproces](../../assets/playbooks/launch-steps-1.svg)
 
 De belangrijkste verschillen tussen Adobe Commerce-implementaties op locatie en in de cloud zijn de implementatiescripts en -gereedschappen en de installatie voor SSL, Mail-service en CDN. Het proces is echter nog steeds hetzelfde.
 
-Voor het SSL-certificaat (TLS) biedt Adobe Commerce op de cloudinfrastructuur een snel jokertekencertificaat. Als u het wilt gaan gebruiken, moet u de validatie doorgeven: Voeg de Fastly TXT-record toe aan een ex-domeinnaam binnen uw DNS-instellingen. De Fastly TXT-record kan worden gevonden in de spreadsheet aan boord, anders moet u een ticket indienen om het te verkrijgen. Vervang deze tekst door uw vragen/opmerkingen hier. Als u uw eigen SSL(TLS)-certificaat gebruikt in plaats van een snelvervangingscertificaat, verzendt u een ondersteuningsticket met het certificaat dat u aan de installatie hebt gekoppeld.
+Voor het SSL-certificaat (TLS) biedt Adobe Commerce op de cloudinfrastructuur een snel jokertekencertificaat. Om het te beginnen gebruiken, moet u de bevestiging overgaan: voeg het Fastly TXT- verslag aan apex domeinnaam binnen uw DNS montages toe. De Fastly TXT-record kan worden gevonden in de spreadsheet aan boord, anders moet u een ticket indienen om het te verkrijgen. Vervang deze tekst door uw vragen/opmerkingen hier. Als u uw eigen SSL(TLS)-certificaat gebruikt in plaats van een snelvervangingscertificaat, verzendt u een ondersteuningsticket met het certificaat dat u aan de installatie hebt gekoppeld.
 
-Adobe Commerce on cloud Infrastructure biedt de functionaliteit SendGrid Mail voor uw transactie-e-mails. Voor Pro plannen, moet u verslagen SendGrid aan uw DNS montages toevoegen. De verslagen SendGrid kunnen in het aan boord gaan spreadsheet worden gevonden, anders zou SI of de handelaar steunkaartjes moeten voorleggen om hen te verkrijgen. Om te beginnen, te hoeven u om het even welke veranderingen in uw DNS niet aan te brengen; SendGrid is vooraf geconfigureerd voor u.
+Adobe Commerce on cloud Infrastructure biedt de functionaliteit SendGrid Mail voor uw transactie-e-mails. Voor Pro plannen, moet u verslagen SendGrid aan uw DNS montages toevoegen. De verslagen SendGrid kunnen in het aan boord gaan spreadsheet worden gevonden, anders zou SI of de handelaar steunkaartjes moeten voorleggen om hen te verkrijgen. Om te beginnen, te hoeven u om het even welke veranderingen in uw DNS aan te brengen; SendGrid wordt pre-gevormd voor u.
 
 ## Volledige checklist voor het starten
 
@@ -51,7 +51,7 @@ De volledige checklist vóór de lancering toont alle belangrijke activiteiten w
 - Uitgaande e-mailberichten zijn getest
 - SSL-certificaat is ingericht en geconfigureerd
 - De zeer belangrijke configuratie van de toepassing van Adobe Commerce wordt correct bijgewerkt
-- Basis-URL&#39;s en Basis-Admin-URL worden op de juiste wijze ingesteld op de uiteindelijke hostnaam
+- Basis-URL&#39;s en Basis-Admin-URL worden correct ingesteld op de uiteindelijke hostnaam
 - Beheerderswachtwoorden worden gewijzigd
 - Alle gebruikers met toegang tot een toepassing die geen toegang meer nodig heeft, worden verwijderd
 - Betalingsconfiguratie voor productieomgeving (voor sommige gebruikers wordt de sandboxmodus gebruikt voor het testen)

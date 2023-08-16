@@ -6,7 +6,7 @@ exl-id: c81fcab2-1ee3-4ec7-a300-0a416db98614
 source-git-commit: 56a2461edea2799a9d569bd486f995b0fe5b5947
 workflow-type: tm+mt
 source-wordcount: '938'
-ht-degree: 0%
+ht-degree: 1%
 
 ---
 
@@ -32,11 +32,11 @@ U kunt een uitsnijdtaak op de volgende manieren uitvoeren:
 
 >[!INFO]
 >
->U hoeft niets te doen als u de [`magento cron:run`](../cli/configure-cron-jobs.md#run-cron-from-the-command-line) gebruiken om een bewerking uit te voeren die al veilig is.
+>Als u de opdracht [`magento cron:run`](../cli/configure-cron-jobs.md#run-cron-from-the-command-line) gebruiken om een bewerking uit te voeren die al veilig is.
 
 ## Beveiligde uitsnede met Apache
 
-In deze sectie wordt beschreven hoe u de afbeelding kunt beveiligen met HTTP Basic-verificatie met Apache. Deze instructies zijn gebaseerd op Apache 2.2 met CentOS 6. Raadpleeg een van de volgende bronnen voor meer informatie:
+In deze sectie wordt beschreven hoe u de uitsnede kunt beveiligen met HTTP Basic-verificatie met Apache. Deze instructies zijn gebaseerd op Apache 2.2 met CentOS 6. Raadpleeg een van de volgende bronnen voor meer informatie:
 
 - [Zelfstudie over verificatie en autorisatie voor Apache 2.2](https://httpd.apache.org/docs/2.2/howto/auth.html)
 - [Zelfstudie over verificatie en autorisatie voor Apache 2.4](https://httpd.apache.org/docs/2.4/howto/auth.html)
@@ -87,7 +87,7 @@ Inhoud van het bestand:
 MagentoCronGroup: <username1> ... <usernameN>
 ```
 
-### Beveiligde uitsnede in `.htaccess`
+### Beveiligde uitsnede `.htaccess`
 
 Uitsnede beveiligen `.htaccess` bestand:
 
@@ -133,10 +133,10 @@ In deze sectie wordt besproken hoe u de uitsnede kunt beveiligen met behulp van 
 
 Raadpleeg een van de volgende bronnen om een wachtwoordbestand te maken voordat u doorgaat:
 
-- [Hoe te om de Authentificatie van het Wachtwoord met Nginx op Ubuntu 14.04 (DigitaleOceaan) op te zetten](https://www.digitalocean.com/community/tutorials/how-to-set-up-password-authentication-with-nginx-on-ubuntu-14-04)
+- [Hoe te om de Authentificatie van het Wachtwoord van de Opstelling met Nginx op Ubuntu 14.04 (DigitaleOceaan) te vestigen](https://www.digitalocean.com/community/tutorials/how-to-set-up-password-authentication-with-nginx-on-ubuntu-14-04)
 - [Standaard HTTP-verificatie met Nginx (howtoforge)](https://www.howtoforge.com/basic-http-authentication-with-nginx)
 
-### Beveiligde uitsnede in `nginx.conf.sample`
+### Beveiligde uitsnede `nginx.conf.sample`
 
 De handel verstrekt een geoptimaliseerd de configuratiedossier van steekproefNginx uit de doos. We raden u aan het te wijzigen om de afbeelding te beveiligen.
 
@@ -175,9 +175,9 @@ De eenvoudigste manier om te controleren of `pub/cron.php` is veilig is om te ve
 
 >[!INFO]
 >
->De `default` uitsnijden die u uitvoert in dit voorbeeld, wordt uitgevoerd volgens het schema dat is gedefinieerd in `crontab.xml`. Een aantal snijtaken wordt slechts eenmaal per dag uitgevoerd. De eerste keer dat u de afbeelding uit de browser start, `cron_schedule` tabel wordt bijgewerkt, maar volgende `pub/cron.php` verzoeken lopen bij het gevormde programma.
+>De `default` uitsnijden die u uitvoert in dit voorbeeld, wordt uitgevoerd volgens het schema dat is gedefinieerd in `crontab.xml`. Een aantal snijtaken wordt slechts eenmaal per dag uitgevoerd. De eerste keer dat u de afbeelding uit de browser start, `cron_schedule` tabel wordt bijgewerkt, maar volgende `pub/cron.php` de verzoeken lopen bij het gevormde programma.
 
-**Controleren of de kroon veilig is**:
+**Om te controleren dat de kroon veilig is**:
 
 1. Meld u aan bij de database als gebruiker van de Commerce-database of als `root`.
 
@@ -294,12 +294,12 @@ Als u een Apache-webserver gebruikt, moet u de beperking verwijderen uit de `.ht
    <your hostname or IP>/<Commerce root>/pub/cron.php[?group=<group name>]
    ```
 
-Waar:
+Waarbij:
 
 - `<your hostname or IP>` is hostname of IP adres van uw installatie van de Handel
 - `<Commerce root>` is de documentafhankelijke relatieve map van de webserver waarop u de Commerce-software hebt geïnstalleerd
 
-   De exacte URL die u gebruikt om de toepassing van de Handel in werking te stellen hangt van af hoe u uw Webserver en virtuele gastheer vormde.
+  De exacte URL die u gebruikt om de toepassing van de Handel in werking te stellen hangt van af hoe u uw Webserver en virtuele gastheer vormde.
 
 - `<group name>` is een geldige naam voor een uitsnijdgroep (optioneel)
 
@@ -311,4 +311,4 @@ https://magento.example.com/magento2/pub/cron.php?group=index
 
 >[!INFO]
 >
->U moet de bewerking tweemaal uitvoeren: eerst om taken te ontdekken om te lopen en opnieuw om de taken zelf in werking te stellen. Zie [Uitsnede configureren en uitvoeren](../cli/configure-cron-jobs.md) voor meer informatie over kroongroepen .
+>U moet tweemaal uitsnijden uitvoeren: eerst om taken te ontdekken en opnieuw om de taken zelf uit te voeren. Zie [Uitsnede configureren en uitvoeren](../cli/configure-cron-jobs.md) voor meer informatie over kroongroepen .

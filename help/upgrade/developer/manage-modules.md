@@ -6,15 +6,15 @@ exl-id: 447eb317-83e1-4900-83a5-9ac1a008e752
 source-git-commit: 012cba58b336b032b1c911539008c1fb961c2e07
 workflow-type: tm+mt
 source-wordcount: '139'
-ht-degree: 0%
+ht-degree: 2%
 
 ---
 
 # Modules en extensies beheren
 
-Deelnemers aan upgrademodules en extensies helpen door hun versies op te geven in de Adobe Commerce of Magento Open Source `composer.json` bestand. Als u geen bijdragende ontwikkelaar bent, zie [Een upgrade uitvoeren](../implementation/perform-upgrade.md).
+Ontwikkelaars helpen modules en extensies bij te werken door hun versies op te geven in de Adobe Commerce of Magento Open Source `composer.json` bestand. Als u geen bijdragende ontwikkelaar bent, zie [Een upgrade uitvoeren](../implementation/perform-upgrade.md).
 
-U kunt een van de `require` aan de `composer.json` of u kunt de `composer require` als volgt:
+U kunt een `require` aan de `composer.json` of u kunt de `composer require` als volgt:
 
 {{$include /help/_includes/server-login.md}}
 

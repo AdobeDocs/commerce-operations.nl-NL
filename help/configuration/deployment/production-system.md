@@ -17,10 +17,10 @@ Je kunt één productiesysteem hebben. Alle volgende waarden moeten waar zijn:
 - Controleer of alle volgende elementen aanwezig zijn: _inbegrepen_ bij broncontrole:
 
    - `app/etc/config.php`
-   - `generated` directory (en subdirectory&#39;s)
+   - `generated` map (en submappen)
    - `pub/media` directory
-   - `pub/media/wysiwyg` directory (en subdirectory&#39;s)
-   - `pub/static` directory (en subdirectory&#39;s)
+   - `pub/media/wysiwyg` map (en submappen)
+   - `pub/static` map (en submappen)
 
 - Handel 2.2 of later moet worden geïnstalleerd en ingesteld voor [productiemodus](../bootstrap/application-modes.md#production-mode)
 - De eigenaar en machtigingen van het bestandssysteem zijn ingesteld zoals beschreven in [Vereiste voor uw ontwikkeling, bouw, en productiesystemen](../deployment/prerequisites.md).

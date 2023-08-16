@@ -43,7 +43,7 @@ ht-degree: 0%
 
    >[!WARNING]
    >
-   >Do _niet_ brengt wijzigingen aan in de `generated`, `pub/media`, of `pub/static` directory&#39;s aan broncontrole. U genereert deze bestanden op uw bouwsysteem. Het ontwikkelingssysteem heeft waarschijnlijk code, thema&#39;s, enzovoort, die niet klaar zijn voor gebruik op het productiesysteem.
+   >Do _niet_ brengt wijzigingen aan in de `generated`, `pub/media`, of `pub/static` directory&#39;s aan broncontrole. U genereert deze bestanden op uw buildsysteem. Het ontwikkelingssysteem heeft waarschijnlijk code, thema&#39;s, enzovoort, die niet klaar zijn voor gebruik op het productiesysteem.
 
 1. Breng uw wijzigingen aan in `app/etc/config.php` alleen aan broncontrole.
 

@@ -10,7 +10,7 @@ ht-degree: 0%
 
 ---
 
-# Zoekmachine optimaliseren (SEO)
+# Optimalisatie zoekmachine (SEO)
 
 SEO (Search Engine Optimization, optimalisatie van zoekprogramma&#39;s) is een hulpprogramma waarmee u uw website kunt optimaliseren op basis van specifieke trefwoorden, zodat de site een hogere positie inneemt in de zoekresultaten van Google. Google rangschikt de websites op basis van de vraag of het merk alle zoekvragen van klanten heeft beantwoord. Wanneer klanten iets zoeken op Google, vinden ze verschillende soorten resultaten. In de volgende secties worden deze resultaten beschreven.
 
@@ -42,6 +42,6 @@ SEO-strategie omvat:
 
 - **SEO op pagina**—Metatags en inhoud worden gebruikt om klanten aan te trekken
 
-- **Analyse**—Hulpmiddelen, zoals Google Analytics, worden gebruikt om SEO te volgen
+- **Analyse**—Hulpmiddelen, zoals Googles Analytics, worden gebruikt om SEO te volgen
 
 B2B SEO-campagnes zijn gericht op het vergroten van het bewustzijn van merken en het genereren van lood, wat leidt tot een verhoging van de omrekeningskoers. B2C SEO-campagnes zijn erop gericht bezoekers aan te trekken om direct aankopen te doen. SEO heeft verschillende toepassingen en effecten in B2B- versus B2C-bedrijven. SEO kan helpen verkeer op uw plaats verhogen, die beurtelings verkoop en ROI zal verhogen. Plaats een eenvoudige strategie SEO om concurrerend voordeel te bereiken.

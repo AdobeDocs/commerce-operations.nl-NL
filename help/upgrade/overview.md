@@ -13,7 +13,7 @@ ht-degree: 0%
 
 Het upgraden van uw Adobe Commerce-project is van essentieel belang om ervoor te zorgen dat uw winkel veilig blijft, voldoet aan PCI en optimaal functioneert. Deze gids begeleidt u door zeer belangrijke overwegingen wanneer het voorbereiden van een verbetering.
 
-De gids geeft een overzicht van de typische Adobe Commerce upgrade-reis en de beste praktijken om die reis te volgen. Het beschrijft ook technische details van het verbeteringsproces met een geschikte voorbeeld en geleidelijke instructies voor verbetering aan de recentste versie van Adobe Commerce. Het is belangrijk om de Adobe Commerce te beoordelen [releaseplanning](../release/schedule.md) en begin vroegtijdig voor verbeteringen voor te bereiden. Adobe publiceert de releaseplanning jaarlijks om het planningsproces van verkopers te vergemakkelijken en raadt aan elke patchreleasecyclus te upgraden. Om PCI-compatibel te blijven, moeten handelaren op de nieuwste patch of beveiligingspatch zitten.
+De gids geeft een overzicht van de typische Adobe Commerce upgrade-reis en de beste praktijken om die reis te volgen. Het beschrijft ook technische details van het verbeteringsproces met een geschikte voorbeeld en geleidelijke instructies voor verbetering aan de recentste versie van Adobe Commerce. Het is belangrijk om de Adobe Commerce te beoordelen [releaseplanning](../release/schedule.md) en begin vroegtijdig voor verbeteringen voor te bereiden. Adobe publiceert jaarlijks de releaseplanning om het planningsproces van verkopers te vergemakkelijken en raadt aan elke patchreleasecyclus te upgraden. Om PCI-compatibel te blijven, moeten handelaren op de nieuwste patch of beveiligingspatch zitten.
 
 ## Voor wie is deze gids?
 
@@ -33,7 +33,7 @@ Een van de redenen die je hebt gekozen voor Adobe Commerce, is waarschijnlijk:
 
 Het voordeel van een zeer uitbreidbaar en aanpasbaar product, echter, kan potentiële verbeteringskwesties veroorzaken wanneer de aanpassingen niet aan beste praktijken worden gecodeerd, die tot hoger-dan-verwachte verbeteringskosten leiden.
 
-_Dus... waarom een upgrade ?_
+_Dus... waarom upgraden überhaupt?_
 
 Door een upgrade uit te voeren, kunt u uw bedrijf in de razendsnelle en voortdurend veranderende e-commercesector blijven werken en kunt u uw platform compatibel maken met de nieuwste Adobe Commerce-functies die u helpen uw verkoop en conversies te maximaliseren. Het opnemen van upgrades in uw reguliere onderhoudsplannen is van essentieel belang om ervoor te zorgen dat uw winkel veilig blijft, voldoet aan PCI en zo efficiënt mogelijk werkt.
 
@@ -41,7 +41,7 @@ Door een upgrade uit te voeren, kunt u uw bedrijf in de razendsnelle en voortdur
 
 Beveiliging is een van de belangrijkste redenen voor een upgrade omdat 83% van de beveiligingsincidenten met verouderde software plaatsvindt. Volgens [IBM](https://www.ibm.com/reports/data-breach)De gemiddelde kosten van een inbreuk op gegevens zijn $ 3,86 miljoen, veel hoger dan wat het kost om dit risico te beperken door een upgrade. Adobe biedt twee manieren om uw winkel het hele jaar veilig te houden:
 
-- **Patchreleases**—Neem oplossingen voor beveiligingsproblemen, prestaties, kwaliteit en problemen met hoge prioriteit op.
+- **Patchreleases**—Neem oplossingen voor beveiligingsproblemen, prestaties, kwaliteit en hoge prioriteit op.
 - **Beveiligingspatchreleases**—Neem correcties en verbeteringen op om uw site veilig te houden en de site is eenvoudiger te implementeren.
 
 ### Prestaties
@@ -63,6 +63,6 @@ Enkele algemene factoren die van invloed zijn op de mate van inspanning om uw pr
 | Omvang van aanpassingen | Duidelijkheid van vereisten, het nemen van beslissingen en bereik |
 | Aantal extensies | Uw upgradfrequentie |
 | Aantal integraties met derden (OMS, ERP) | Uw teststrategie |
-| Codering naar beste praktijken |  |
+| Codering naar beste praktijken |                                                              |
 
 De voortdurende groei in de digitale handelruimte heeft verhoogde druk op ondernemingen toegepast om sneller, vaker, en op onvoorspelbare manieren te evolueren. Als de klant zijn aankoopgedrag niet kon bijhouden en niet kon anticiperen, heeft het speelveld zelfs voor de grootste, meest gevestigde merken gelijk gemaakt. U moet robuuste, gepersonaliseerde ervaringen op alle aanraakpunten kunnen bieden, zonder prestatieverlies en uptime. Je moet sneller kunnen innoveren, zonder beperkingen, om voor de mondiale concurrenten te blijven. Door een upgrade uit te voeren, kunt u uw bedrijf in de toekomst controleren en uzelf instellen op betere service en dynamische behoeften van klanten.

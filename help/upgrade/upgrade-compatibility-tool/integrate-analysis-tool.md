@@ -19,11 +19,11 @@ Zie de [[!DNL Site-Wide Analysis Tool] gebruikershandleiding](https://docs.magen
 
 ## Voer de [!DNL Upgrade Compatibility Tool] van de [!DNL Site-Wide Analysis Tool]
 
-Ga naar de [!DNL Site-Wide Analysis Tool] het dashboard voor uw project en bepaal de plaats van [!DNL Upgrade Compatibility Tool] widget.
+Ga naar de [!DNL Site-Wide Analysis Tool] dashboard voor uw project en zoek het [!DNL Upgrade Compatibility Tool] widget.
 
 ![UCT SWAT-widget - Oorspronkelijk](../../assets/upgrade-guide/uct-swat-initial.png)
 
-Klikken **[!UICONTROL Run Upgrade Scan]**. Afhankelijk van de grootte van het project kan het scannen enige tijd in beslag nemen. Een spinner geeft aan dat de scan wordt uitgevoerd.
+Klik op **[!UICONTROL Run Upgrade Scan]**. Afhankelijk van de grootte van het project kan de scan enige tijd duren. Een spinner geeft aan dat de scan wordt uitgevoerd.
 
 ![UCT SWAT-widget - Bezig](../../assets/upgrade-guide/uct-swat-progress.png)
 

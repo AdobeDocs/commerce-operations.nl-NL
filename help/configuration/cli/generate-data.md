@@ -6,7 +6,7 @@ exl-id: 2f54701d-88c4-464a-b4dc-56db14d54160
 source-git-commit: 403a5937561d82b02fd126c95af3f70b0ded0747
 workflow-type: tm+mt
 source-wordcount: '749'
-ht-degree: 8%
+ht-degree: 9%
 
 ---
 
@@ -99,7 +99,7 @@ Generating simple products...  done in <time>
 
 ## Prestatiecorrecties
 
-### Admin-gebruikers
+### Beheergebruikers
 
 Hiermee genereert u beheergebruikers. XML-profielknooppunt:
 
@@ -110,7 +110,7 @@ Hiermee genereert u beheergebruikers. XML-profielknooppunt:
 
 ### Kenmerksets
 
-Hiermee genereert u kenmerksets met de opgegeven configuratie. XML-profielknooppunt:
+Genereert kenmerkreeksen met gespecificeerde configuratie. XML-profielknooppunt:
 
 ```xml
 <!-- Number of product attribute sets -->
@@ -123,7 +123,7 @@ Hiermee genereert u kenmerksets met de opgegeven configuratie. XML-profielknoopp
 <product_attribute_sets_attributes_values>{int}</product_attribute_sets_attributes_values>
 ```
 
-### Bundel
+### Bundelproducten
 
 Genereert bundelproducten. Gegenereerde bundelselecties worden niet afzonderlijk weergegeven in de catalogus. Producten worden gelijkmatig verdeeld over categorieën en websites. Indien  `assign_entities_to_all_websites` uit het profiel is ingesteld op `1`. Producten worden toegewezen aan alle websites.
 
@@ -163,7 +163,7 @@ Genereert prijsregels voor catalogi. XML-profielknooppunt:
 
 ### Categorieën
 
-Hiermee genereert u categorieën. Indien `assign_entities_to_all_websites` is ingesteld op `0`alle categorieën gelijkmatig over de basiscategorieën worden verdeeld; anders, worden alle categorieën toegewezen aan één wortelcategorie.
+Hiermee genereert u categorieën. Indien `assign_entities_to_all_websites` is ingesteld op `0`, worden alle categorieën gelijkmatig verdeeld per wortelcategorieën; anders, worden alle categorieën toegewezen aan één wortelcategorie.
 
 XML-profielknooppunt:
 
@@ -201,106 +201,106 @@ De volgende XML-knooppuntindelingen worden ondersteund:
 
 - Distributie per standaard en vooraf gedefinieerde kenmerksets:
 
-   ```xml
-   <!-- Number of configurable products -->
-   <configurable_products>{int}</configurable_products>
-   ```
+  ```xml
+  <!-- Number of configurable products -->
+  <configurable_products>{int}</configurable_products>
+  ```
 
 - Producten genereren op basis van een bestaande kenmerkset:
 
-   ```xml
-   <configurable_products>
-   
-       <config>
-               <!-- Existing attribute set name -->
-               <attributeSet>{string}</attributeSet>
-   
-               <!-- Configurable sku pattern with %s -->
-               <sku>{string}</sku>
-   
-               <!-- Number of configurable products -->
-               <products>{int}</products>
-   
-               <!-- Category Name. Optional. By default category name from Categories fixture will be used -->
-               <category>[{string}]</category>
-   
-               <!-- Type of Swatch attribute e.g. color|image -->
-               <swatches>{string}</swatches>
-       </config>
-   
-   <!-- ... more entries ... -->
-   </configurable_products>
-   ```
+  ```xml
+  <configurable_products>
+  
+      <config>
+              <!-- Existing attribute set name -->
+              <attributeSet>{string}</attributeSet>
+  
+              <!-- Configurable sku pattern with %s -->
+              <sku>{string}</sku>
+  
+              <!-- Number of configurable products -->
+              <products>{int}</products>
+  
+              <!-- Category Name. Optional. By default category name from Categories fixture will be used -->
+              <category>[{string}]</category>
+  
+              <!-- Type of Swatch attribute e.g. color|image -->
+              <swatches>{string}</swatches>
+      </config>
+  
+  <!-- ... more entries ... -->
+  </configurable_products>
+  ```
 
 - Produceren op basis van een dynamisch gemaakt kenmerk ingesteld met een opgegeven aantal kenmerken en opties:
 
-   ```xml
-   <configurable_products>
-   
-       <config>
-           <!-- Number of attributes in configurable product -->
-           <attributes>{int}</attributes>
-   
-           <!-- Number of options per attribute -->
-           <options>{int}</options>
-   
-           <!-- Configurable sku pattern with %s -->
-           <sku>{string}</sku>
-   
-           <!-- Number of configurable products -->
-           <products>{int}</products>
-   
-           <!-- Category Name. Optional. By default category name from Categories fixture will be used -->
-           <category>[{string}]</category>
-   
-           <!-- Type of Swatch attribute e.g. color|image -->
-           <swatches>{string}</swatches>
-       </config>
-   
-       <!-- ... more entries ... -->
-   </configurable_products>
-   ```
+  ```xml
+  <configurable_products>
+  
+      <config>
+          <!-- Number of attributes in configurable product -->
+          <attributes>{int}</attributes>
+  
+          <!-- Number of options per attribute -->
+          <options>{int}</options>
+  
+          <!-- Configurable sku pattern with %s -->
+          <sku>{string}</sku>
+  
+          <!-- Number of configurable products -->
+          <products>{int}</products>
+  
+          <!-- Category Name. Optional. By default category name from Categories fixture will be used -->
+          <category>[{string}]</category>
+  
+          <!-- Type of Swatch attribute e.g. color|image -->
+          <swatches>{string}</swatches>
+      </config>
+  
+      <!-- ... more entries ... -->
+  </configurable_products>
+  ```
 
 - Produceer producten die op een dynamisch gecreeerd attribuut worden gebaseerd dat met een gespecificeerde configuratie per elk attribuut wordt geplaatst:
 
-   ```xml
-   <configurable_products>
-   
-       <config>
-           <attributes>
-               <!-- Configuration for a first attribute -->
-               <attribute>
-                   <!-- Amount of options per attribute -->
-                   <options>{int}</options>
-   
-                   <!-- Type of Swatch attribute -->
-                   <swatches>{string}</swatches>
-               </attribute>
-   
-               <!-- Configuration for a second attribute -->
-               <attribute>
-                   <!-- Amount of options per attribute -->
-                   <options>{int}</options>
-               </attribute>
-           </attributes>
-   
-           <!-- Configurable sku pattern with %s -->
-           <sku>{string}</sku>
-   
-           <!-- Number of configurable products -->
-           <products>{int}</products>
-   
-           <!-- Category Name. Optional. By default, the category name from Categories fixture will be used -->
-           <category>[{string}]</category>
-       </config>
-   
-       <!-- ... more entries ... -->
-   </configurable_products>
-   ```
+  ```xml
+  <configurable_products>
+  
+      <config>
+          <attributes>
+              <!-- Configuration for a first attribute -->
+              <attribute>
+                  <!-- Amount of options per attribute -->
+                  <options>{int}</options>
+  
+                  <!-- Type of Swatch attribute -->
+                  <swatches>{string}</swatches>
+              </attribute>
+  
+              <!-- Configuration for a second attribute -->
+              <attribute>
+                  <!-- Amount of options per attribute -->
+                  <options>{int}</options>
+              </attribute>
+          </attributes>
+  
+          <!-- Configurable sku pattern with %s -->
+          <sku>{string}</sku>
+  
+          <!-- Number of configurable products -->
+          <products>{int}</products>
+  
+          <!-- Category Name. Optional. By default, the category name from Categories fixture will be used -->
+          <category>[{string}]</category>
+      </config>
+  
+      <!-- ... more entries ... -->
+  </configurable_products>
+  ```
 
 ### Klanten
 
-Genereert klanten. Klanten hebben een normale distributie op alle beschikbare websites. Elke klant heeft dezelfde gegevens, met uitzondering van de e-mail van de klant, de klantengroep en de klantadressen.
+Hiermee genereert u klanten. Klanten hebben een normale distributie op alle beschikbare websites. Elke klant heeft dezelfde gegevens, met uitzondering van de e-mail van de klant, de klantengroep en de klantadressen.
 
 XML-profielknooppunt:
 
@@ -440,10 +440,10 @@ Hiermee genereert u belastingtarieven. XML-profielknooppunt:
 
 - `<Commerce root dir>/setup/performance-toolkit/config/description.xml`—Configuratie van volledige productbeschrijving
 
-- `<Commerce root dir>/setup/performance-toolkit/config/shortDescription.xml`—Configuratie met korte beschrijving van het product
+- `<Commerce root dir>/setup/performance-toolkit/config/shortDescription.xml`—Configuratie van productkorte beschrijving
 
 - `<Commerce root dir>/setup/performance-toolkit/config/searchConfig.xml`—Configuratie voor korte en volledige beschrijving van het product. Deze oudere implementatie is beschikbaar voor achterwaartse compatibiliteit.
 
 - `<Commerce root dir>/setup/performance-toolkit/config/searchTerms.xml`—Klein aantal zoektermen tot in korte en volledige beschrijvingen
 
-- `<Commerce root dir>/setup/performance-toolkit/config/searchTermsLarge.xml`—Groter aantal zoektermen dat in korte en volledige beschrijving moet worden gebruikt.
+- `<Commerce root dir>/setup/performance-toolkit/config/searchTermsLarge.xml`—Groter aantal zoektermen dat moet worden gebruikt in korte en volledige beschrijving.

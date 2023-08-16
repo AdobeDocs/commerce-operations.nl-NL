@@ -1,6 +1,6 @@
 ---
 title: Implementatieconfiguratie maken of bijwerken
-description: Voer de volgende stappen uit om uw Adobe Commerce- of Magento Open Source-implementatieconfiguratie te beheren.
+description: Voer de volgende stappen uit om uw configuratie voor implementatie van Adobe Commerce of Magento Open Source te beheren.
 feature: Install, Deploy, Configuration
 exl-id: 2cdde735-0c70-44e8-b2ee-ffb874c1c443
 source-git-commit: ce405a6bb548b177427e4c02640ce13149c48aff
@@ -35,7 +35,7 @@ In de volgende tabel worden de betekenis van installatieparameters en -waarden b
 | Parameter | Waarde | Vereist? |
 |--- |--- |--- |
 | `--backend-frontname` | Uniform Resource Identifier ([URI](https://www.w3.org/Protocols/rfc2616/rfc2616-sec3.html#sec3.2)) om toegang te krijgen tot de beheerder.<br><br>Om misbruik te voorkomen, adviseren wij u geen gemeenschappelijk woord zoals admin, backend te gebruiken. De Admin URI kan alfanumerieke waarden en het onderstrepingsteken (`_`alleen ). | Nee |
-| `--db-host` | Voer een van de volgende handelingen uit:<br><br>- De volledig gekwalificeerde hostnaam of IP-adres van de databaseserver.<br><br>- `localhost` (standaardwaarde) of `127.0.0.1` als uw databaseserver zich op dezelfde host bevindt als uw webserver. localhost betekent dat de MySQL-clientbibliotheek gebruikmaakt van UNIX-sockets om verbinding te maken met de database. `127.0.0.1` veroorzaakt de cliëntbibliotheek om het protocol van TCP te gebruiken. Raadpleeg voor meer informatie over sockets de [PHP-documentatie over BOB_MYSQL](https://www.php.net/manual/en/ref.pdo-mysql.php).<br><br>**Opmerking:** U kunt optioneel de poort van de databaseserver in de hostnaam opgeven, zoals `www.example.com:9000` | Nee |
+| `--db-host` | Voer een van de volgende handelingen uit:<br><br>- De volledig gekwalificeerde hostname of IP van de databaseserver.<br><br>- `localhost` (standaardwaarde) of `127.0.0.1` als uw databaseserver zich op dezelfde host bevindt als uw webserver. localhost betekent dat de MySQL-clientbibliotheek gebruikmaakt van UNIX-sockets om verbinding te maken met de database. `127.0.0.1` veroorzaakt de cliëntbibliotheek om het protocol van TCP te gebruiken. Raadpleeg voor meer informatie over sockets de [PHP-documentatie over BOB_MYSQL](https://www.php.net/manual/en/ref.pdo-mysql.php).<br><br>**Opmerking:** U kunt optioneel de poort van de databaseserver in de hostnaam opgeven, zoals `www.example.com:9000` | Nee |
 | `--db-name` | Naam van de database-instantie waarin u de databasetabellen wilt installeren.<br><br>Standaard is `magento2`. | Nee |
 | `--db-user` | Gebruikersnaam van de eigenaar van de databaseinstantie.<br><br>Standaard is `root`. | Nee |
 | `--db-password` | Het wachtwoord van de eigenaar van de databaseinstantie. | Nee |
@@ -43,7 +43,7 @@ In de volgende tabel worden de betekenis van installatieparameters en -waarden b
 | `--session-save` | Voer een van de volgende handelingen uit:<br><br>- `db` om sessiegegevens op te slaan in het dialoogvenster [database](https://developer.adobe.com/commerce/php/development/cache/partial/database-caching/). Kies gegevensbestandopslag als u een gegroepeerd gegevensbestand hebt; anders, zou er niet veel voordeel over op dossier-gebaseerde opslag kunnen zijn.<br><br>- `files` om sessiegegevens op te slaan in het bestandssysteem. De op dossier-gebaseerde zittingsopslag is aangewezen tenzij de toegang van het dossiersysteem langzaam is, hebt u een gegroepeerd gegevensbestand, of u wilt zittingsgegevens in Redis opslaan.<br><br>- `redis` om sessiegegevens op te slaan in [Redis gebruiken voor sessieopslag](../../configuration/cache/config-redis.md). Als u Redis gebruikt als standaardinstelling of als u pagina&#39;s in cache plaatst, moet Redis al zijn geïnstalleerd. | Nee |
 | `--key` | Als u er een hebt, geeft u een sleutel op die u wilt versleutelen [vertrouwelijke gegevens](#sensitive-data) in de database. Als u er geen hebt, genereert de toepassing er een voor u. | Nee |
 | `--db-init-statements` | Geavanceerde MySQL-configuratieparameter. Gebruikt de verklaringen van de gegevensbestandinitialisatie om te lopen wanneer het verbinden met het gegevensbestand MySQL.<br><br>Standaard is `SET NAMES utf8;`.<br><br>Raadpleeg een verwijzing die vergelijkbaar is met [deze](https://dev.mysql.com/doc/refman/5.6/en/server-options.html) voordat u waarden instelt. | Nee |
-| `--http-cache-hosts` | Lijst met komma&#39;s als scheidingstekens van HTTP-cachegatewayhosts waarnaar purge-aanvragen moeten worden verzonden. (Bijvoorbeeld Varnish-servers.) Gebruik deze parameter om de host(s) op te geven die in dezelfde aanvraag moeten worden gewist. (Het maakt niet uit of u slechts één host of veel hosts hebt.)<br><br>Formaat moet `<hostname or ip>:<listen port>`, waar u kunt weglaten `<listen port>` als het poort 80 is. Bijvoorbeeld: `--http-cache-hosts=192.0.2.100,192.0.2.155:6081`. Plaats geen spatie tussen de hosts. | Nee |
+| `--http-cache-hosts` | Lijst met komma&#39;s als scheidingstekens van HTTP-cachegatewayhosts waarnaar purge-aanvragen moeten worden verzonden. (Bijvoorbeeld Varnish-servers.) Gebruik deze parameter om de host(s) op te geven die in dezelfde aanvraag moeten worden gewist. (Het maakt niet uit of u slechts één host of veel hosts hebt.)<br><br>Formaat moet `<hostname or ip>:<listen port>`, waar u kunt weglaten `<listen port>` als het poort 80 is. Bijvoorbeeld, `--http-cache-hosts=192.0.2.100,192.0.2.155:6081`. Plaats geen spatie tussen de hosts. | Nee |
 
 ## Configuratiegegevens importeren
 
@@ -52,7 +52,7 @@ Deze instellingen zijn onder andere configuratiepaden en -waarden, websites, win
 
 Nadat u websites, winkels, weergaven en thema&#39;s hebt geïmporteerd, kunt u productkenmerken maken en deze toepassen op websites, winkels en winkelweergaven op het productiesysteem.
 
-Voer in het productiesysteem de volgende opdracht uit om gegevens uit de configuratiebestanden te importeren (`config.php` en `env.php`) aan de database:
+Voor het productiesysteem, stel het volgende bevel in werking om gegevens van de configuratiedossiers in te voeren (`config.php` en `env.php`) aan de database:
 
 ```bash
 bin/magento app:config:import [-n, --no-interaction]

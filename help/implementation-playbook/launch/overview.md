@@ -10,7 +10,7 @@ ht-degree: 0%
 
 ---
 
-# Overzicht gereedheid voor starten
+# Overzicht van gereedheid voor starten
 
 Tegen dit punt in uw reis van de e-commerce, hebben uw teams en organisatie maanden gewijd aan het organiseren, plannen, en het bouwen van een oplossing die aan de behoeften van uw merk past en uw zaken zal groeien. Nu het punt van lancering eindelijk hier is, betekent het niet dat het werk nu gedaan is.
 

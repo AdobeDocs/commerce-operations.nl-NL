@@ -55,11 +55,11 @@ De gevoelige configuratie wordt ook opgeslagen in `app/etc/env.php`.
 U kunt de gevoelige configuratie op om het even welke volgende manieren beheren:
 
 - Omgevingsvariabelen
-- Sla de vertrouwelijke configuratie op in `env.php` op uw productiesysteem met behulp van de [`magento config:set:sensitive` command](../cli/set-configuration-values.md)
+- Sla de vertrouwelijke configuratie op in `env.php` op uw productiesysteem met [`magento config:set:sensitive` command](../cli/set-configuration-values.md)
 
 ### Configuratie-instellingen vergrendeld in de beheerder
 
-Willekeurige configuratie-instellingen in `config.php` of `env.php` zijn vergrendeld in de beheerder; Dat wil zeggen dat deze instellingen niet kunnen worden gewijzigd in Admin.
+Alle configuratie-instellingen in `config.php` of `env.php` zijn vergrendeld in de beheerdersinstelling. Deze instellingen kunnen dus niet worden gewijzigd in de beheerdersinstelling.
 Gebruik de [`magento config:set` of `magento config:set --lock`](../cli/export-configuration.md#config-cli-config-set) om de instellingen in het dialoogvenster `config.php` of `env.php` bestanden.
 
 ## Admin Commerce
@@ -67,7 +67,7 @@ Gebruik de [`magento config:set` of `magento config:set --lock`](../cli/export-c
 Admin vertoont het volgende gedrag terwijl in productiemodus:
 
 - U kunt cavetypen niet in- of uitschakelen in Beheer
-- Ontwikkelinstellingen zijn niet beschikbaar (**Winkels** > Instellingen > **Configuratie** > Geavanceerd > **Ontwikkelaar**), met inbegrip van:
+- Ontwikkelinstellingen zijn niet beschikbaar (**Winkels** > Instellingen > **Configuratie** > Geavanceerd > **Ontwikkelaar**), waaronder:
 
    - CSS, JavaScript en HTML miniaturen
    - CSS en JavaScript samenvoegen
@@ -76,21 +76,21 @@ Admin vertoont het volgende gedrag terwijl in productiemodus:
    - Zoals eerder besproken, elke configuratie die in `config.php` of `env.php` is vergrendeld en kan niet worden bewerkt in Beheer.
    - U kunt de beheerlandinstelling alleen wijzigen in talen die worden gebruikt door geïmplementeerde thema&#39;s
 
-      In de volgende afbeelding ziet u een voorbeeld van de **Accountinstelling** > **Landinstelling interface** lijst in Admin die slechts twee opgestelde scènes toont:
+     In de volgende afbeelding ziet u een voorbeeld van de **Accountinstelling** > **Landinstelling interface** lijst in Admin die slechts twee opgestelde scènes toont:
 
-      ![U kunt de beheerlandinstelling alleen wijzigen in geïmplementeerde landinstellingen](../../assets/configuration/split-deploy-admin-locale.png)
+     ![U kunt de beheerlandinstelling alleen wijzigen in geïmplementeerde landinstellingen](../../assets/configuration/split-deploy-admin-locale.png)
 
-- U kunt de configuratie van de landinstelling voor een bereik niet wijzigen met de beheerfunctie.
+- U kunt de configuratie van de landinstelling voor geen enkel bereik wijzigen met de beheerfunctie.
 
-   Wij adviseren makend deze veranderingen alvorens op de wijze van de Productie over te schakelen.
+  Wij adviseren makend deze veranderingen alvorens op de wijze van de Productie over te schakelen.
 
-   U kunt de landinstelling nog steeds configureren met behulp van omgevingsvariabelen of de `config:set` CLI-opdracht met het pad `general/locale/code`.
+  U kunt de landinstelling nog steeds configureren met behulp van omgevingsvariabelen of de `config:set` CLI-opdracht met het pad `general/locale/code`.
 
 ## Uitsnede installeren en verwijderen
 
 In versie 2.2 helpen we u voor het eerst uw snijtaak in te stellen door de [`magento cron:install` command](../cli/configure-cron-jobs.md). Met deze opdracht stelt u een tab in als de gebruiker die de opdracht uitvoert.
 
-U kunt ook de tab verwijderen met de `magento cron:remove` gebruiken.
+U kunt ook de tab verwijderen met de opdracht `magento cron:remove` gebruiken.
 
 ## Aanbevolen workflow voor distributie van pijpleidingen
 
@@ -106,7 +106,7 @@ U zou uitbreidingen ook moeten installeren en de code van de Handel op het ontwi
 
 Op uw ontwikkelingssysteem:
 
-1. Stel de configuratie in de beheerder in.
+1. Stel de configuratie in de beheerfunctie in.
 
 1. Gebruik de `magento app:config:dump` bevel om de configuratie aan het dossiersysteem te schrijven.
 
@@ -131,7 +131,7 @@ Nadat de bevelen in werking stellen om de activa te ontruimen, produceert de Han
 
 ### Systeem bouwen
 
-Het bouwstijlsysteem compileert code en produceert statische meningsdossiers voor thema&#39;s die in Handel worden geregistreerd. Er is geen verbinding met de gegevensbank Handel nodig; zij heeft alleen de handelscodebase nodig.
+Het bouwstijlsysteem compileert code en produceert statische meningsdossiers voor thema&#39;s die in Handel worden geregistreerd. Er is geen verbinding nodig met de database van de handel, maar alleen met de codebase van de handel.
 
 Op uw bouwstijlsysteem:
 
@@ -167,7 +167,7 @@ Wij verstrekken de volgende bevelen om u te helpen de configuratie beheren:
 - [`magento app:config:dump`](../cli/export-configuration.md) om beheerinstellingen te schrijven naar `config.php` en `env.php` (behalve voor gevoelige instellingen)
 - [`magento config:set`](../cli/set-configuration-values.md) om de waarden van systeemspecifieke instellingen op het productiesysteem in te stellen.
 
-   De optionele `--lock` Hiermee vergrendelt u de optie in Beheer (de instelling kan dus niet worden bewerkt). Als een instelling al is vergrendeld, gebruikt u de opdracht `--lock` om de instelling te wijzigen.
+  De optionele `--lock` Hiermee vergrendelt u de optie in Beheer (de instelling kan dus niet worden bewerkt). Als een instelling al is vergrendeld, gebruikt u de opdracht `--lock` de instelling wijzigen.
 
 - [`magento config:sensitive:set`](../cli/set-configuration-values.md) om de waarden van gevoelige montages op het productiesysteem te plaatsen.
 - [`magento app:config:import`](../cli/import-configuration.md) om configuratiewijzigingen te importeren van `config.php` en `env.php` aan het productiesysteem.
@@ -202,7 +202,7 @@ Deze sectie bespreekt het aanbrengen van de volgende configuratieveranderingen:
 - Het standaard-e-maildomein wijzigen (**Winkels** > Instellingen > **Configuratie** > Klanten > **Klantconfiguratie**)
 - Gebruikersnaam en API-wachtwoord voor PayPal-API instellen (**Winkels** > Instellingen > **Configuratie** > Verkoop > **Betalingsmethoden** > **PayPal** > **Vereiste PayPal-instellingen**)
 
-Nadat u de wijziging hebt aangebracht in Beheer, voert u deze uit `bin/magento app:config:dump` op uw ontwikkelingssysteem. Deze keer worden niet al uw wijzigingen doorgevoerd in `config.php`; in feite worden alleen de website-, opslag- en winkelweergave naar dat bestand geschreven, zoals in de volgende fragmenten wordt getoond.
+Nadat u de wijziging hebt aangebracht in Beheer, voert u deze uit `bin/magento app:config:dump` op uw ontwikkelingssysteem. Deze keer worden niet al uw wijzigingen doorgevoerd in `config.php`In feite worden alleen de website-, opslag- en opslagweergave naar dat bestand geschreven, zoals in de volgende fragmenten wordt getoond.
 
 ### config.php
 

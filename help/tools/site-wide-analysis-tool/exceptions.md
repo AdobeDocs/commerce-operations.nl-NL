@@ -27,4 +27,4 @@ Gebruik de [!UICONTROL Exceptions] pagina om logbestandsfouten/uitzonderingen-lo
 
 ## Aanbevolen procedures
 
-De [!DNL Site-Wide Analysis Tool’s] [!UICONTROL Exceptions] pagina om te zien welke uitzonderingen voorkomen. Zie voor meer informatie [Logbestanden weergeven en beheren](https://devdocs.magento.com/cloud/project/log-locations.html) in onze ontwikkelaarsdocumentatie.
+Controleer de [!DNL Site-Wide Analysis Tool’s] [!UICONTROL Exceptions] pagina om te zien welke uitzonderingen voorkomen. Zie voor meer informatie [Logbestanden weergeven en beheren](https://devdocs.magento.com/cloud/project/log-locations.html) in onze ontwikkelaarsdocumentatie.

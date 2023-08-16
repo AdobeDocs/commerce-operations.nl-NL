@@ -17,7 +17,7 @@ Deze sectie bevat de beste aanbevelingen om uw migratie te versnellen en te vere
 
 * **Een kopie van de database uit een Magento 1-instantie gebruiken** bij het uitvoeren van migratietests. Gebruik niet de productieinstantie van uw Magento 1 opslaggegevensbestand.
 
-* **Verouderde en overtollige gegevens verwijderen** van uw Magento 1-database vóór de migratie.
+* **Verouderde en overtollige gegevens verwijderen** van uw Magento 1 gegevensbestand vóór migratie.
 
 Dergelijke gegevens kunnen logboeken, orderaanhalingstekens, onlangs bekeken of vergeleken producten, bezoekers, gebeurtenisspecifieke categorieën, en promotieregels omvatten.
 
@@ -33,7 +33,7 @@ Dergelijke gegevens kunnen logboeken, orderaanhalingstekens, onlangs bekeken of 
 >
 >Zowel moeten Magento 1 als Magento 2 gegevensbestanden op de zelfde server worden gevestigd MySQL en de gegevensbestandrekening moet toegang tot beide gegevensbestanden hebben.
 
-## Benchmarking
+## Benchmarkingsramingen
 
 Adobe heeft de gegevensmigratie op het volgende systeem getest:
 
@@ -42,6 +42,6 @@ Adobe heeft de gegevensmigratie op het volgende systeem getest:
 
 ## Prestatieresultaten
 
-* Migratietijd instellingen: ~10 minuten
-* Tijdstip gegevensmigratie: ~9 uur (alle gegevens behalve URL herschrijven, ~85% van het totaal aan gegevens)
-* Schatting van downtime van site: enkele minuten om DNS-instellingen opnieuw te definiëren en te wijzigen. Er is meer tijd nodig om de cache van de pagina op te warmen.
+* Migratietijd voor instellingen: ~10 minuten
+* Tijd van gegevensmigratie: ~9 uur (alle gegevens behalve URL herschrijven, ~85% van het totaal aan gegevens)
+* Raming van downtime van site: enkele minuten om DNS-instellingen opnieuw te definiëren en te wijzigen. Er is meer tijd nodig om de cache van de pagina op te warmen.

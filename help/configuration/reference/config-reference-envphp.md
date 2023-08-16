@@ -36,7 +36,7 @@ De `env.php` bestand bevat de volgende secties:
 
 ## achterste
 
-Configureer de **frontName** voor de admin-URL van de Commerce met behulp van de `backend` knooppunt in env.php.
+Vorm **frontName** voor de admin-URL van de Commerce met behulp van de `backend` knooppunt in env.php.
 
 ```conf
 'backend' => [
@@ -46,7 +46,7 @@ Configureer de **frontName** voor de admin-URL van de Commerce met behulp van de
 
 ## cachegeheugen
 
-Nieuwe pagina&#39;s en standaardcaching configureren door `cache` knooppunt in `env.php` bestand.
+Nieuwe pagina&#39;s en standaardcaching configureren door `cache` knooppunt in de `env.php` bestand.
 
 ```conf
 'cache' => [
@@ -114,11 +114,11 @@ De volgende opties zijn beschikbaar:
 
 - `1`—De consumenten blijven berichten van de berichtrij verwerken tot het bereiken van `max_messages` waarde opgegeven in het dialoogvenster `env.php` dossier alvorens de verbinding van TCP te sluiten en het consumentenproces te beëindigen. Als de wachtrij wordt leeggemaakt voordat de wachtrij wordt bereikt `max_messages` waarde , de consument wacht op meer berichten .
 
-   Wij adviseren dit het plaatsen voor grote handelaren omdat een constante berichtstroom wordt verwacht en de vertragingen in verwerking ongewenst zijn.
+  Wij adviseren dit het plaatsen voor grote handelaren omdat een constante berichtstroom wordt verwacht en de vertragingen in verwerking ongewenst zijn.
 
 - `0`—De consumenten verwerken beschikbare berichten in de rij, sluiten de verbinding van TCP, en eindigen. De consumenten wachten niet op extra berichten om de rij in te gaan, zelfs als het aantal verwerkte berichten minder dan is `max_messages` waarde opgegeven in het dialoogvenster `env.php` bestand. Dit kan helpen problemen met uitsnijdtaken voorkomen die worden veroorzaakt door lange vertragingen bij de verwerking van de wachtrij met berichten.
 
-   Wij adviseren dit het plaatsen voor kleinere handelaren die geen constante berichtstroom verwachten en verkiezen gegevensverwerkingsmiddelen in ruil voor kleine verwerkingsvertragingen te besparen wanneer er geen berichten voor dagen zouden kunnen zijn.
+  Wij adviseren dit het plaatsen voor kleinere handelaren die geen constante berichtstroom verwachten en verkiezen gegevensverwerkingsmiddelen in ruil voor kleine verwerkingsvertragingen te besparen wanneer er geen berichten voor dagen zouden kunnen zijn.
 
 ## kraan
 
@@ -150,7 +150,7 @@ Meer informatie over [Coderingssleutel](https://docs.magento.com/user-guide/syst
 
 ## db
 
-Alle databaseconfiguraties zijn beschikbaar in dit knooppunt.
+Alle gegevensbestandconfiguraties zijn beschikbaar in deze knoop.
 
 ```conf
 'db' => [
@@ -172,7 +172,7 @@ Alle databaseconfiguraties zijn beschikbaar in dit knooppunt.
 
 ## default_connection
 
-Bepaalt de standaardverbinding voor berichtrijen. De waarde kan `db`, `amqp`of een aangepast wachtrijsysteem zoals `redismq`. Als u een andere waarde opgeeft dan `db`, moet de software van de berichtrij eerst worden geïnstalleerd en worden gevormd. Anders worden berichten niet correct verwerkt.
+Bepaalt de standaardverbinding voor berichtrijen. De waarde kan `db`, `amqp`of een aangepast wachtrijsysteem zoals `redismq`. Als u een andere waarde dan `db`, moet de software van de berichtrij eerst worden geïnstalleerd en worden gevormd. Anders worden berichten niet correct verwerkt.
 
 ```conf
 'queue' => [

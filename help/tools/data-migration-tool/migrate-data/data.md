@@ -14,7 +14,7 @@ ht-degree: 0%
 
 Voer de volgende stappen uit om voor te bereiden voordat u begint:
 
-1. Meld u aan bij uw toepassingsserver als [de eigenaar van het bestandssysteem](../../../installation/prerequisites/file-system/overview.md).
+1. Aanmelden bij uw toepassingsserver als [de eigenaar van het bestandssysteem](../../../installation/prerequisites/file-system/overview.md).
 1. Wijzigen in de installatiemap van de toepassing of controleren of deze aan uw systeem is toegevoegd `PATH`.
 
 Zie de [eerste stappen](overview.md#first-steps) voor meer informatie.
@@ -27,7 +27,7 @@ Voer de volgende handelingen uit om het migreren van gegevens te starten:
 bin/magento migrate:data [-r|--reset] [-a|--auto] {<path to config.xml>}
 ```
 
-Waar:
+Waarbij:
 
 * `[-a|--auto]` is een optioneel argument dat voorkomt dat de migratie stopt wanneer integriteitscontroles worden uitgevoerd.
 
@@ -35,7 +35,7 @@ Waar:
 
 * `{<path to config.xml>}` is het absolute pad van het bestandssysteem naar `config.xml`; dit argument is vereist
 
-In deze stap worden de [!DNL Data Migration Tool] leidt tot extra lijsten en trekkers voor de migratietabellen in het gegevensbestand van Magento 1. Zij worden gebruikt in [incrementele/delta](delta.md) migratie. Aanvullende tabellen bevatten informatie over gewijzigde records na de laatste migratieuitvoering. De trekkers van het gegevensbestand worden gebruikt om deze extra lijsten te bevolken, zodat als een nieuwe verrichting op de bepaalde lijst (een verslag wordt toegevoegd/gewijzigd/verwijderd) wordt uitgevoerd, deze gegevensbestandtrekker sparen informatie over deze verrichting aan de extra lijst. Als we een delta-migratieproces uitvoeren, [!DNL Data Migration Tool] controleert deze lijsten voor de onverwerkte verslagen en migreert de noodzakelijke inhoud in het gegevensbestand van Magento 2.
+In deze stap worden de [!DNL Data Migration Tool] leidt tot extra lijsten en trekkers voor de migratietabellen in het gegevensbestand van Magento 1. Ze worden gebruikt in de [incrementele/delta](delta.md) migratie. Aanvullende tabellen bevatten informatie over gewijzigde records na de laatste migratieuitvoering. De trekkers van het gegevensbestand worden gebruikt om deze extra lijsten te bevolken, zodat als een nieuwe verrichting op de bepaalde lijst (een verslag wordt toegevoegd/gewijzigd/verwijderd) wordt uitgevoerd, deze gegevensbestandtrekker sparen informatie over deze verrichting aan de extra lijst. Als we een delta-migratieproces uitvoeren, [!DNL Data Migration Tool] controleert deze lijsten voor de onverwerkte verslagen en migreert de noodzakelijke inhoud in het gegevensbestand van Magento 2.
 
 Elke nieuwe tabel bevat:
 

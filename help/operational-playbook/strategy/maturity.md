@@ -26,7 +26,7 @@ De volgende tabel geeft een overzicht van de verschillende looptijdniveaus:
 | Variabele | B2B |
 -----------|----------|
 | Gekruist | Het ingangsniveau voor de volwassenheid van de elektronische handel omvat de gemakkelijkste taken om door één enkele marktspeler te verwezenlijken. De zaken vorderen gewoonlijk door om op de grondbeginselen voort te bouwen om de klantenervaring verder te verbeteren. |
-| Lopen | Op dit niveau, beginnen de organisaties aan hefboomwerking voorbij klantengegevens die uit veelvoudige bronnen komen, die multi-departementale samenwerking vereisen.  Organisaties op dit niveau kunnen het volledige potentieel van door mensen beheerde campagnes benutten en beschikken over een uitgebreide reeks beste praktijken, processen en ontwikkelingsstreams. |
+| Wandelen | Op dit niveau, beginnen de organisaties aan hefboomwerking voorbij klantengegevens die uit veelvoudige bronnen komen, die multi-departementale samenwerking vereisen.  Organisaties op dit niveau kunnen het volledige potentieel van door mensen beheerde campagnes benutten en beschikken over een uitgebreide reeks beste praktijken, processen en ontwikkelingsstreams. |
 | Uitvoeren | Het hoogste niveau van rijpheid maakt door AI aangedreven campagnes mogelijk over verschillende kanalen en gebruikt voorspellend voorraadbeheer om te voorkomen dat churn en productinformatiebeheersinstrumenten producten verrijken. Het wordt het best bereikt door organisaties met een geëvolueerde gegevenscultuur, ontwikkelingsvaardigheden, en processen in huis en offshore. |
 
 {style="table-layout:auto"}
@@ -41,7 +41,7 @@ Nadat u een betalingsgatewayprovider hebt gekozen, moet u de vereiste betalingsm
 
 Over het algemeen, zouden de ondernemingen in de kruipfase een goed-geïntegreerd e-commerce systeem moeten ontwikkelen om het te beginnen en van de grond te krijgen alvorens zij uitbreiden om meer eigenschappen toe te voegen.
 
-### Lopen
+### Wandelen
 
 De ondernemingen in de loopbaanfase beginnen de plaats te ontwikkelen die op bestaande klanten, inzichten, en ervaring wordt gebaseerd zij met een bestaande e-commerce plaats hebben. In deze fase, kunnen de ondernemingen beginnen complexere eigenschappen uit te voeren om nieuw dienstenaanbod aan hun klanten te verstrekken om klantenervaring en klantenloyaliteit te verhogen.
 
@@ -92,7 +92,7 @@ Analyseert, tendensen, en gegevens teweeggebrachte alarm:
 
 ### Methodologie
 
-Verwerkt de zaken als volgt:
+Verwerkt de zaken:
 
 Probeert u gewoon uw geluk met ad-hoccampagnes of zijn ze gebaseerd op klantengedrag, historische aankopen en voorspellingen?
 

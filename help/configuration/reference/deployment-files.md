@@ -15,9 +15,9 @@ ht-degree: 0%
 Adobe Commerce biedt configuratiebestanden waarmee u een component eenvoudig kunt aanpassen en configuratietypen kunt maken om de standaardfunctionaliteit uit te breiden. Het proces van plaatsingsconfiguratie bestaat uit de gedeelde en systeem-specifieke configuratie voor uw installatie. De de plaatsingsconfiguratie van de handel is verdeeld tussen [`app/etc/config.php`](../reference/config-reference-configphp.md) en [`app/etc/env.php`](../reference/config-reference-envphp.md).
 
 - `app/etc/config.php` is de _gedeeld_ configuratiebestand.
-Dit bestand bevat een lijst met geïnstalleerde modules, thema&#39;s en taalpakketten. en gedeelde configuratie-instellingen.
+Dit bestand bevat een lijst met geïnstalleerde modules, thema&#39;s en taalpakketten en gedeelde configuratie-instellingen.
 
-   Controleer dit bestand om het te kunnen gebruiken in uw ontwikkelings-, staging- en productiesystemen.
+  Controleer dit bestand om het te kunnen gebruiken in uw ontwikkelings-, staging- en productiesystemen.
 
 - `app/etc/env.php` bevat instellingen die specifiek zijn voor de installatieomgeving.
 
@@ -76,6 +76,6 @@ return array (
 
 De waarde `1` of `0` Hiermee wordt aangegeven of een module is in- of uitgeschakeld.
 
-Uitgeschakelde modules worden niet erkend door de toepassing van de Handel; met andere woorden, zij nemen niet deel aan het samenvoegen van configuraties, aan afhankelijkheidsinjectie, gebeurtenissen, plug-ins, enzovoort. Uitgeschakelde modules wijzigen de storefront of Admin niet en beïnvloeden het verpletteren niet.
+Uitgeschakelde modules worden niet herkend door de toepassing Commerce, met andere woorden, ze nemen niet deel aan het samenvoegen van configuraties, aan afhankelijkheidsinjectie, gebeurtenissen, plug-ins enzovoort. Uitgeschakelde modules wijzigen de storefront of Admin niet en beïnvloeden het verpletteren niet.
 
 Het enige praktische verschil tussen een uitgeschakelde module en een afwezige module in de codebasis is dat een uitgeschakelde module door de autoloader wordt gevonden, en zijn klassen en constanten zijn beschikbaar voor hergebruik in andere code.

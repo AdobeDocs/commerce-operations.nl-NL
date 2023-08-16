@@ -18,13 +18,13 @@ ht-degree: 0%
 
 >[!NOTE]
 >
->Ondersteuning voor OpenSearch is toegevoegd in 2.4.4. OpenSearch is een compatibele vork van Elasticsearch. Zie [Elasticsearch migreren naar OpenSearch](../../../upgrade/prepare/opensearch-migration.md) voor meer informatie .
+>Ondersteuning voor OpenSearch is toegevoegd in 2.4.4. OpenSearch is een compatibele Elasticsearch. Zie [Elasticsearch migreren naar OpenSearch](../../../upgrade/prepare/opensearch-migration.md) voor meer informatie .
 
-Deze sectie bespreekt hoe te om nginx als een te vormen *onveilig* zodat Adobe Commerce een zoekprogramma kan gebruiken dat op deze server wordt uitgevoerd. In deze sectie wordt het instellen van HTTP Basic-verificatie niet besproken. dat wordt besproken in [Beveiligde communicatie met nginx](#secure-communication-with-nginx).
+Deze sectie bespreekt hoe te om nginx als een te vormen *onveilig* zodat Adobe Commerce een zoekprogramma kan gebruiken dat op deze server wordt uitgevoerd. In deze sectie wordt het instellen van de HTTP Basic-verificatie niet besproken. Dit wordt besproken in [Beveiligde communicatie met nginx](#secure-communication-with-nginx).
 
 >[!NOTE]
 >
->De reden dat de proxy in dit voorbeeld niet is beveiligd, is dat het makkelijker is om een proxy in te stellen en te verifiëren. U kunt TLS desgewenst gebruiken met deze proxy. om dit te doen, zorg ervoor u de volmachtsinformatie aan uw veilige configuratie van het serverblok toevoegt.
+>De reden dat de proxy in dit voorbeeld niet is beveiligd, is dat het makkelijker is om een proxy in te stellen en te verifiëren. U kunt TLS desgewenst gebruiken met deze proxy. Hiervoor moet u de proxygegevens toevoegen aan de configuratie van het beveiligde serverblok.
 
 ### Geef aanvullende configuratiebestanden op in uw algemene configuratie
 
@@ -112,7 +112,7 @@ Een wachtwoord maken:
 
    Als een pad wordt weergegeven, wordt het geïnstalleerd; als de opdracht geen uitvoer retourneert, `htpasswd` is niet geïnstalleerd.
 
-1. Indien nodig, installeert u `htpasswd`:
+1. Indien nodig, installeren `htpasswd`:
 
    * Ubuntu: `apt-get -y install apache2-utils`
    * CentOS: `yum -y install httpd-tools`
@@ -129,7 +129,7 @@ Een wachtwoord maken:
 
    >[!WARNING]
    >
-   >Om veiligheidsredenen `<filename>` moeten verborgen zijn; dat wil zeggen dat het met een periode moet beginnen .
+   >Om veiligheidsredenen `<filename>` moet verborgen zijn, dat wil zeggen dat het moet beginnen met een periode.
 
 1. *(Optioneel).* Als u nog een gebruiker aan het wachtwoordbestand wilt toevoegen, voert u dezelfde opdracht in zonder de opdracht `-c` (maken) optie:
 

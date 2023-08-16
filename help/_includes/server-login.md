@@ -2,13 +2,13 @@
 source-git-commit: d263e412022a89255b7d33b267b696a8bb1bc8a2
 workflow-type: tm+mt
 source-wordcount: '24'
-ht-degree: 0%
+ht-degree: 8%
 
 ---
-# Serveraanmelding
+# Aanmelden bij server
 
 1. Meld u aan bij uw server.
-1. Naar de [eigenaar van bestandssysteem](../installation/prerequisites/file-system/overview.md).
+1. Schakel over naar de [eigenaar van bestandssysteem](../installation/prerequisites/file-system/overview.md).
 1. Ga naar de map waarin u de toepassing hebt gekloond. Bijvoorbeeld:
 
    ```bash

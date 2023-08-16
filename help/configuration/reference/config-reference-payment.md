@@ -14,7 +14,7 @@ ht-degree: 0%
 
 Deze configuratiewaarden zijn beschikbaar in de Admin in **Winkels** > Instellingen > **Configuratie** > **Verkoop** > **Betalingsmethoden**.
 
-De [`magento app:config:dump` command](../cli/export-configuration.md) deze waarden naar het gedeelde configuratiebestand schrijft, `app/etc/config.php`, die onder broncontrole moeten staan. Om naar keuze om het even welke configuratiemontages met voeten te treden of gevoelige montages te plaatsen, zie [Omgevingsvariabelen gebruiken om configuratie-instellingen te overschrijven](override-config-settings.md#environment-variables). Dit onderwerp doet _niet_ list [gevoelige en systeemspecifieke waarden](config-reference-sens.md).
+De [`magento app:config:dump` command](../cli/export-configuration.md) deze waarden naar het gedeelde configuratiebestand schrijft, `app/etc/config.php`, die onder broncontrole moeten staan. Om naar keuze om het even welke configuratiemontages met voeten te treden of gevoelige montages te plaatsen, zie [Omgevingsvariabelen gebruiken om configuratie-instellingen te overschrijven](override-config-settings.md#environment-variables). Dit onderwerp doet het _niet_ list [gevoelige en systeemspecifieke waarden](config-reference-sens.md).
 
 De instellingen worden verder geordend via betalingsmethode.
 
@@ -1400,6 +1400,6 @@ Deze opties zijn alleen beschikbaar als u het Verenigd Koninkrijk als de [handel
 | Typen creditcard | `payment_us/eway/cctypes` | ![Alleen handel](/help/assets/configuration/cloud-ee.png) |
 | Betaling door de kandidaat-lidstaten | `payment_us/eway/allowspecific` | ![Alleen handel](/help/assets/configuration/cloud-ee.png) |
 | Betaling door specifieke landen | `payment_us/eway/specificcountry` | ![Alleen handel](/help/assets/configuration/cloud-ee.png) |
-| Sorteervolgorde | `payment_us/eway/sort_order` |  |
+| Sorteervolgorde | `payment_us/eway/sort_order` | |
 
 {style="table-layout:auto"}

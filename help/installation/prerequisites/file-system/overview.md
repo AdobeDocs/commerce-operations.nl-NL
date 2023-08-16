@@ -11,7 +11,7 @@ ht-degree: 0%
 
 # Bestandseigendom en machtigingen
 
-Het is belangrijk om uw installatie van Adobe Commerce of van de Magento Open Source in een ontwikkelomgeving te beveiligen helpen kwesties met betrekking tot onbevoegde mensen of processen die tot toegang hebben-en potentieel schadelijk-uw systeem. Gebruik de volgende richtlijnen voor eigendom en machtigingen van het bestandssysteem om uw installatie te beschermen.
+Het is belangrijk om uw installatie van Adobe Commerce of Magento Open Source in een ontwikkelomgeving te beveiligen om problemen met betrekking tot onbevoegde personen of processen die toegang hebben tot uw systeem (en mogelijk schade toebrengen) te helpen voorkomen. Gebruik de volgende richtlijnen voor eigendom van en machtigingen voor het bestandssysteem om uw installatie te beveiligen.
 
 ## Eigenaar van bestandssysteem
 
@@ -21,16 +21,17 @@ Er zijn twee typen bestandssysteemeigenaars:
 
 - **Gedeeld hosten met één gebruiker**
 
-   Via gedeelde hostingproviders kunt u zich als één gebruiker aanmelden bij de toepassingsserver. Als enkele gebruiker kunt u zich aanmelden, bestanden overbrengen met FTP en de webserver uitvoeren. U kunt een [`umask`](#restrict-access-with-a-umask) de toegang verder te beperken , met name in een productieomgeving .
+  Via gedeelde hostingproviders kunt u zich als één gebruiker aanmelden bij de toepassingsserver. Als enkele gebruiker kunt u zich aanmelden, bestanden overbrengen met FTP en de webserver uitvoeren. U kunt een [`umask`](#restrict-access-with-a-umask) de toegang verder te beperken , met name in een productieomgeving .
 
 - **Privéhosting met twee gebruikers**
 
-   Persoonlijk hosten is nuttig als u een toepassingsserver beheert. Elke gebruiker heeft een specifieke verantwoordelijkheid:
+  Persoonlijk hosten is nuttig als u een toepassingsserver beheert. Elke gebruiker heeft een specifieke verantwoordelijkheid:
 
    - De _webservergebruiker_ voert Admin en storefront uit.
 
    - De _opdrachtregelgebruiker_ Hiermee worden uitsnijdtaken en opdrachtregelprogramma&#39;s uitgevoerd.
-   Beide gebruikers vereisen de zelfde toestemmingen aan het dossiersysteem, zodat is het best te gebruiken [gedeelde groep](configure-permissions.md#set-ownership-and-permissions-for-two-users) en stelt een [`umask`](#restrict-access-with-a-umask).
+
+  Beide gebruikers vereisen de zelfde toestemmingen aan het dossiersysteem, zodat is het best te gebruiken [gedeelde groep](configure-permissions.md#set-ownership-and-permissions-for-two-users) en stelt een [`umask`](#restrict-access-with-a-umask).
 
 ### Toegang beperken met een masker
 
@@ -52,13 +53,13 @@ Voor meer informatie over het maken van een `magento_umask` bestand, zie [Een ma
 
 ## Machtigingen, eigendom en toepassingsmodi
 
-We raden verschillende machtigingen en eigendom aan wanneer u de verschillende Adobe Commerce- en Magento Open Source-toepassingsmodi gebruikt:
+We raden verschillende machtigingen en eigendom aan wanneer u de verschillende toepassingsmodi Adobe Commerce en Magento Open Source gebruikt:
 
 - Standaard
 - Ontwikkelaar
 - Productie
 
-Zie [Informatie over modi](../../../configuration/bootstrap/application-modes.md) in de _Configuratiegids_.
+Zie [Modus Info](../../../configuration/bootstrap/application-modes.md) in de _Configuratiegids_.
 
 We bespreken verder machtigingsaanbevelingen in [Toegangsrechten voor bestandssystemen](../../../configuration/deployment/file-system-permissions.md) in de _Configuratiegids_.
 

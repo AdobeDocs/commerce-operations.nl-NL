@@ -16,7 +16,7 @@ Er was een tijd dat contant geld de belangrijkste bron van transacties was, maar
 
 ![Logo&#39;s van leveranciers van betaalkanalen](../../assets/playbooks/payment-gateways.png)
 
-Een betaalgateway is een dienstverlener die betalingen voor elektronische websites verbindt en verwerkt. Zij spelen een essentiële rol in de het kopen van klanten ervaring en omrekeningskoersen. Gecompliceerde betalingssystemen hebben de neiging om klanten hun winkelwagen te laten verlaten. Het is belangrijk om klanten van een gemakkelijk, gebruikersvriendelijk betalingssysteem te voorzien waar zelfs als één betalingsmethode ontbreekt zij een alternatieve methode hebben om hen te motiveren om de aankoop te voltooien.
+Een betaalgateway is een dienstverlener die betalingen voor elektronische websites verbindt en verwerkt. Zij spelen een essentiële rol in de het kopen van klanten ervaring en omrekeningskoersen. Gecompliceerde betalingssystemen hebben de neiging om klanten hun winkelwagentjes op te geven. Het is belangrijk om klanten van een gemakkelijk, gebruikersvriendelijk betalingssysteem te voorzien waar zelfs als één betalingsmethode ontbreekt zij een alternatieve methode hebben om hen te motiveren om de aankoop te voltooien.
 
 ## Toetsingsvereisten
 

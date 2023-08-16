@@ -5,11 +5,11 @@ exl-id: 4e1e4e5e-e1bc-49a5-8a2a-2e6b91ca9175
 source-git-commit: 95ffff39d82cc9027fa633dffedf15193040802d
 workflow-type: tm+mt
 source-wordcount: '594'
-ht-degree: 0%
+ht-degree: 1%
 
 ---
 
-# Bootstrap-parameters
+# Parameters Bootstrap
 
 Dit onderwerp toont aan hoe te om de waarden van de toepassings laarzentrekkerparameters van de Handel te plaatsen. Zie [Overzicht van initialisatie en bootstrapping van toepassingen](initialization.md).
 
@@ -17,7 +17,7 @@ De volgende lijst bespreekt de laarzentrekkerparameters die u kunt plaatsen:
 
 | Bootstrap, parameter | Beschrijving |
 | ------------------- | -------------------------------------------- |
-| MAGE_DIRS | Hiermee geeft u aangepaste map- en URL-paden op |
+| MAGE_DIRS | Aangepaste map- en URL-paden opgeven |
 | MAGE_PROFILER | Maakt afhankelijkheidsgrafieken en HTML-profilering mogelijk |
 
 >[!INFO]
@@ -25,10 +25,9 @@ De volgende lijst bespreekt de laarzentrekkerparameters die u kunt plaatsen:
 >- Niet alle laarzentrekkerparameters worden gedocumenteerd.
 >- U stelt nu de toepassingsmodus (ontwikkelaar, standaard, productie) in met de opdracht [`magento deploy:mode:set {mode}`](../cli/set-mode.md) gebruiken.
 
-
 ## Parameters instellen met een omgevingsvariabele
 
-In deze sectie wordt beschreven hoe u de waarden van bootstrap-parameters instelt met behulp van omgevingsvariabelen.
+In deze sectie wordt beschreven hoe u de waarden van bootstrap-parameters instelt met omgevingsvariabelen.
 
 ### De toepassingsmodus instellen
 
@@ -87,7 +86,7 @@ U kunt `.htaccess` in om het even welke volgende plaatsen, afhankelijk van uw in
    <custom value>
    ```
 
-1. Sla uw wijzigingen op in `.htaccess`; U hoeft Apache niet opnieuw te starten om de wijziging van kracht te laten worden.
+1. Sla uw wijzigingen op in `.htaccess`; u hoeft Apache niet opnieuw te starten om de wijziging van kracht te laten worden.
 
 ### Apache-instelling
 
@@ -95,7 +94,7 @@ De Apache-webserver ondersteunt het instellen van de toepassingsmodus met `mod_e
 
 De Apache `mod_env` richtlijn verschilt enigszins in [Apache versie 2.2] en [Apache versie 2.4].
 
-De volgende procedures tonen hoe u de toepassingsmodus instelt in een virtuele Apache-host. Dit is niet de enige manier om te gebruiken `mod_env` richtlijnen; Raadpleeg de documentatie bij Apache voor meer informatie.
+De volgende procedures tonen hoe u de toepassingsmodus instelt in een virtuele Apache-host. Dit is niet de enige manier om te gebruiken `mod_env` richtlijnen; raadpleeg de documentatie van Apache voor meer informatie.
 
 >[!TIP]
 >

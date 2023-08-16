@@ -13,7 +13,7 @@ ht-degree: 0%
 
 # Beste werkwijzen voor de checklist voor upgrades
 
-Gebruik deze controlelijst tijdens uw jaarlijkse en driemaandelijkse gesprekken met uw eCommerce-team. Veel bedrijven werken met jaarlijkse begrotingen en routekaarten. Het is absoluut noodzakelijk, tijdens deze jaarlijkse besprekingen, dat u over de gezondheid van uw platform, richting, en verbeteringsstrategie voor het jaar, samen met hoe het in de algemene doelstellingen en KPIs van de zaken past. Zorg er tijdens driemaandelijkse gesprekken voor dat het jaarabonnement dat u hebt gemaakt, nog steeds is afgestemd op uw huidige situatie of schuif het plan als dat niet het geval is. Het doel van deze Checklist voor upgradeplannen is om u te helpen bij het plannen en plannen van Adobe Commerce-upgrades om ervoor te zorgen dat het upgradeproces gedurende het jaar succesvol verloopt. Deze checklist moet door het volgende publiek worden gebruikt voor jaarlijkse planning en driemaandelijkse herziening:
+Gebruik deze controlelijst tijdens uw jaarlijkse en driemaandelijkse gesprekken met uw eCommerce-team. Veel bedrijven werken met jaarlijkse begrotingen en routekaarten. Het is absoluut noodzakelijk, tijdens deze jaarlijkse besprekingen, dat u over de gezondheid van uw platform, richting, en verbeteringsstrategie voor het jaar, samen met hoe het in de algemene doelstellingen en KPIs van de zaken past. Zorg er tijdens driemaandelijkse gesprekken voor dat het jaarabonnement dat u hebt gemaakt, nog steeds is afgestemd op uw huidige situatie of schuif het plan zo niet. Het doel van deze Checklist voor upgradeplannen is om u te helpen bij het plannen en plannen van Adobe Commerce-upgrades om ervoor te zorgen dat het upgradeproces gedurende het jaar succesvol verloopt. Deze checklist moet door het volgende publiek worden gebruikt voor jaarlijkse planning en driemaandelijkse herziening:
 
 - Director/Manager IT
 - eCommerce Manager
@@ -58,7 +58,7 @@ Gebruik deze controlelijst tijdens uw jaarlijkse en driemaandelijkse gesprekken 
 
 ## Toepassingsgebied en implementatieplanning
 
-▢
+▢ vroege toegang
 
 - Partner neemt deel aan [Beta](../../../release/beta.md)
 - Opmerking bètarelease.
@@ -77,11 +77,11 @@ Gebruik deze controlelijst tijdens uw jaarlijkse en driemaandelijkse gesprekken 
 
 ▢ het onderhoudsvenster van het Plan als de onderbreking wordt voorzien.
 
-▢ de teststrategie te beoordelen en goed te keuren; overwegen de Adobe Commerce te gebruiken [testkader](https://developer.adobe.com/commerce/testing/) of een automatiseringssuite van derden.
+▢ de teststrategie te beoordelen en goed te keuren; gebruik de Adobe Commerce [testkader](https://developer.adobe.com/commerce/testing/) of een automatiseringssuite van derden.
 
 ▢ Bevestig dat alle extensies en aanpassingen compatibel zijn.
 
-▢ het afspeelboek na de introductie bekijken en bijwerken; te gebruiken als de kwesties tijdens of na de verbetering worden ontdekt.
+▢ het afspeelboek na de introductie bekijken en bijwerken; gebruiken als tijdens of na de upgrade problemen zijn ontdekt.
 
 ## Post Deployment
 

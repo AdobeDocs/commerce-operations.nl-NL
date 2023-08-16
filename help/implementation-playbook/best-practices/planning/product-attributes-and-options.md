@@ -45,7 +45,7 @@ Voor de beste prestaties bij het beheren van producten bij de beheerder en het o
 
 Voor de beste prestaties bij het beheren van producten bij de beheerder en het ophalen van productgegevens in de winkel:
 
-- Verschillende variatiemechanismen gebruiken om producten te maken: complexe producten, aangepaste opties als bron van productvariaties.
+- Gebruik verschillende variatiemechanismen om producten te maken: complexe producten, aangepaste opties als bron van productvariaties.
 - Stel specifieke productsjablonen samen met doelkenmerken en -opties om algemene productsjablonen en optiecontainers te voorkomen.
 - Een lijst met werkelijke kenmerkopties bijhouden.
 - Productinformatie beheren via een extern productbeheersysteem (PMS).
@@ -83,7 +83,7 @@ De verhogingen van productgegevens en indexgrootte kunnen plaatsprestaties op de
 
 Veel configureren **kenmerkopties** kan de prestaties van de site op de volgende manieren beïnvloeden:
 
-- Langdurige verzoek- en weergavetijden voor productdetails (PDP) en categoriepagina&#39;s die complexe producten bevatten.
+- Langdurige verzoek- en renderingtijden voor productdetails (PDP) en categoriepagina&#39;s die complexe producten bevatten.
 - Bewerkingen voor het opslaan van beheerproducten reactietijd neemt toe boven optimale prestatiedoelen.
 - Verhoging van de rendertijd in Product Edit.
 - Langzaam uitchecken.
@@ -93,4 +93,4 @@ Veel configureren **kenmerkopties** kan de prestaties van de site op de volgende
 - [Overzicht van productkenmerken](https://experienceleague.adobe.com/docs/commerce-admin/catalog/product-attributes/product-attributes.html)
 - [Kenmerksets](https://experienceleague.adobe.com/docs/commerce-admin/catalog/product-attributes/create/attribute-sets.html)
 - [Een product maken](https://experienceleague.adobe.com/docs/commerce-admin/catalog/products/product-create.html)
-- [Aanpassingszelfstudies > Formulier voor het maken van producten aanpassen](https://developer.adobe.com/commerce/php/tutorials/admin/custom-product-creation-form/)
+- [Aanpassingszelfstudies > Productontwerpformulier aanpassen](https://developer.adobe.com/commerce/php/tutorials/admin/custom-product-creation-form/)

@@ -12,13 +12,13 @@ ht-degree: 0%
 
 # Projectbeheer
 
-Projectbeheer is een toezichtfunctie die is afgestemd op de bestuursstructuur van de organisatie en de levenscyclus van het project omvat. Het voorziet de projectmanager en het team van structuur, processen, besluitvormingsmodellen, en hulpmiddelen om het project te beheren en te controleren, terwijl ook het verzekeren van de succesvolle levering van het project. Projectgovernance is een cruciaal element, met name voor complexe en strategische projecten.
+Projectbeheer is een toezichtfunctie die is afgestemd op de governancestructuur van de organisatie en de levenscyclus van het project omvat. Het voorziet de projectmanager en het team van structuur, processen, besluitvormingsmodellen, en hulpmiddelen om het project te beheren en te controleren, terwijl ook het verzekeren van de succesvolle levering van het project. Projectgovernance is een cruciaal element, met name voor complexe en strategische projecten.
 
-Het governancemodel definieert, documenteert en communiceert aangepaste en effectieve praktijken om een uitgebreide methode te bieden voor het beheren van het project en het periodiek zichtbaar maken op elk niveau om succes te waarborgen. Het bevat een kader voor het nemen van besluiten; omschrijft de rollen, verantwoordelijkheden en aansprakelijkheid voor de uitvoering van het project; en regelt de doeltreffendheid. De governancestructuur rolt van het uitvoeringsteam helemaal naar het uitvoerend management en definieert de activiteiten, rapportage, escalatie en informatiestroom.
+Het governancemodel definieert, documenteert en communiceert aangepaste en effectieve praktijken om een uitgebreide methode te bieden voor het beheren van het project en het periodiek zichtbaar maken op elk niveau om succes te waarborgen. Het bevat een kader voor het nemen van besluiten; bepaalt rollen, verantwoordelijkheden, en aansprakelijkheid voor de verwezenlijking van het project; en regelt de doeltreffendheid. De governancestructuur rolt van het uitvoeringsteam helemaal naar het uitvoerend management en definieert de activiteiten, rapportage, escalatie en informatiestroom.
 
 ![Infografisch projectbeheer](../../assets/playbooks/project-governance.svg)
 
-Op diverse niveaus, onderzoeken de teams specifieke sprint en projectmetriek om de vooruitgang te begrijpen en correctieve acties te nemen zonodig. Deze gegevens op sprintniveau kunnen de snelheid en uitbarsting van elke sprint omvatten.
+Op diverse niveaus, onderzoeken de teams specifieke sprint en projectmetriek om de vooruitgang te begrijpen en correctieve acties te nemen zoals nodig. Deze gegevens op sprintniveau kunnen de snelheid en uitbarsting van elke sprint omvatten.
 
 ## Regelmatige vergaderdetails
 
@@ -26,7 +26,7 @@ Op diverse niveaus, onderzoeken de teams specifieke sprint en projectmetriek om 
 
    - Bespreek groeiescalatiestrategieën
 
-   - Huidig succes en doelen benadrukken
+   - Huidig succes en doelen markeren
 
    - Uitlijnen op gewenste resultaten voor de komende kwartalen
 

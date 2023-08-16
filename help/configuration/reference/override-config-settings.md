@@ -13,7 +13,7 @@ ht-degree: 0%
 
 Dit onderwerp bespreekt hoe te om een milieu veranderlijke naam af te leiden die een configuratiepad kent. U kunt de configuratie-instellingen van Adobe Commerce overschrijven met behulp van omgevingsvariabelen. U kunt bijvoorbeeld de waarde van de live URL van een betalingsprocessor overschrijven op uw productiesysteem.
 
-U kunt de waarde van _alle_ configuratie-instelling met behulp van omgevingsvariabelen; Adobe raadt u echter aan consistente instellingen te behouden met behulp van het gedeelde configuratiebestand, `config.php`en het systeemspecifieke configuratiebestand, `env.php`, zoals besproken in [Algemeen overzicht van implementatie](../deployment/overview.md).
+U kunt de waarde van _alle_ configuratie het plaatsen gebruikend omgevingsvariabelen; nochtans, adviseert de Adobe u verenigbare montages gebruikend het gedeelde configuratiedossier handhaven, `config.php`en het systeemspecifieke configuratiebestand, `env.php`, zoals besproken in [Algemeen overzicht van implementatie](../deployment/overview.md).
 
 >[!TIP]
 >
@@ -49,29 +49,29 @@ De algemene indeling van namen van systeeminstellingenvariabelen is als volgt:
 
 - Globaal bereik (dat wil zeggen de globale instelling voor _alles_ bereik)
 
-   Algemene bereikvariabelen hebben de volgende indeling:
+  Algemene bereikvariabelen hebben de volgende indeling:
 
-   `CONFIG__DEFAULT__<SYSTEM__VARIABLE__NAME>`
+  `CONFIG__DEFAULT__<SYSTEM__VARIABLE__NAME>`
 
-- Een specifiek bereik (de instelling heeft alleen invloed op een opgegeven winkelweergave of website)
+- Een specifiek bereik (de instelling heeft dus alleen invloed op een opgegeven winkelweergave of website)
 
-   De variabelen van het het meningswerkingsgebied van de opslag, bijvoorbeeld, hebben het volgende formaat:
+  De variabelen van het het meningswerkingsgebied van de opslag, bijvoorbeeld, hebben het volgende formaat:
 
-   `CONFIG__STORES__ <STORE_VIEW_CODE>__<SYSTEM__VARIABLE__NAME>`
+  `CONFIG__STORES__ <STORE_VIEW_CODE>__<SYSTEM__VARIABLE__NAME>`
 
-   Zie voor meer informatie over het bereik:
+  Zie voor meer informatie over het bereik:
 
-   - [Stap 1: De waarde van het bereik van de website- of winkelweergave zoeken](#step-1-find-the-website-or-store-view-scope-value)
+   - [Stap 1: Zoek de waarde van het bereik van de website- of winkelweergave](#step-1-find-the-website-or-store-view-scope-value)
    - [Onderwerp van de Handleiding voor handel in bereik](https://docs.magento.com/user-guide/configuration/scope.html)
    - [Snelle naslaggids voor bereik](https://docs.magento.com/user-guide/stores/store-scope-reference.html)
 
-`<SYSTEM__VARIABLE__NAME>` is het configuratiepad met dubbele onderstrepingstekens die worden vervangen door `/`. Zie voor meer informatie [Stap 2: Systeemvariabelen instellen](#step-2-set-global-website-or-store-view-variables).
+`<SYSTEM__VARIABLE__NAME>` is het configuratiepad met dubbele onderstrepingstekens die worden vervangen door `/`. Zie voor meer informatie [Stap 2: systeemvariabelen instellen](#step-2-set-global-website-or-store-view-variables).
 
 ### Variabele-indeling
 
 `<SCOPE>` wordt gescheiden van `<SYSTEM__VARIABLE__NAME>` met twee onderstrepingstekens.
 
-`<SYSTEM__VARIABLE__NAME>` is afgeleid van een configuratie die plaatsen _configuratiepad_, die `/` afgebakende tekenreeks die een bepaalde instelling uniek identificeert. Elke vervangen `/` in het configuratiepad met twee onderstrepingstekens om de systeemvariabele te maken.
+`<SYSTEM__VARIABLE__NAME>` is afgeleid van een configuratie die plaatsen _configuratiepad_, die een `/` afgebakende tekenreeks die een bepaalde instelling uniek identificeert. Elke vervangen `/` in het configuratiepad met twee onderstrepingstekens om de systeemvariabele te maken.
 
 Als een configuratiepad een onderstrepingsteken bevat, blijft het onderstrepingsteken in de variabele.
 
@@ -82,9 +82,9 @@ Een volledige lijst met configuratiepaden vindt u in:
 - [Bron voor configuratiepaden van de extensie Commerce Enterprise B2B](config-reference-b2b.md)
 - [Verwijzing naar andere configuratiepaden](config-reference-general.md)
 
-## Stap 1: De waarde van het bereik van de website- of winkelweergave zoeken
+## Stap 1: Zoek de waarde van het bereik van de website- of winkelweergave
 
-Deze sectie bespreekt hoe u de waarden van de systeemconfiguratie per kunt vinden en plaatsen _bereik_ (Winkelweergave of website). Zie voor het instellen van globale bereikvariabelen [Stap 2: Algemene weergavevariabelen, websites of opslagruimten instellen](#step-2-set-global-website-or-store-view-variables).
+Deze sectie bespreekt hoe u de waarden van de systeemconfiguratie per kunt vinden en plaatsen _bereik_ (Winkelweergave of website). Zie voor het instellen van globale bereikvariabelen [Stap 2: globale variabelen, website- of opslagweergavevariabelen instellen](#step-2-set-global-website-or-store-view-variables).
 
 De waarden voor het bereik zijn afkomstig van `store`, `store_group`, en `store_website` tabellen.
 
@@ -93,20 +93,20 @@ De waarden voor het bereik zijn afkomstig van `store`, `store_group`, en `store_
 
 U kunt de codewaarden ook vinden gebruikend Admin.
 
-Hoe de tabel te lezen:
+De tabel lezen:
 
 - `Path in Admin` kolom
 
-   Waarden vóór de komma zijn paden in de beheerdersnavigatie. Waarden na de komma zijn opties in het rechterdeelvenster.
+  Waarden vóór de komma zijn paden in de beheerdersnavigatie. Waarden na de komma zijn opties in het rechterdeelvenster.
 
 - `Variable name` kolom is de naam van de overeenkomstige omgevingsvariabele.
 
-   U kunt desgewenst systeemwaarden voor deze configuratieparameters opgeven als omgevingsvariabelen.
+  U kunt desgewenst systeemwaarden voor deze configuratieparameters opgeven als omgevingsvariabelen.
 
    - De volledige variabelenaam is altijd ALL CAPS
-   - Een variabelenaam starten met `CONFIG__` (twee onderstrepingstekens)
+   - Een variabelenaam starten met `CONFIG__` (let op twee onderstrepingstekens)
    - U kunt de `<STORE_VIEW_CODE>` of `<WEBSITE_CODE>` gedeelte van een veranderlijke naam in of Admin of het gegevensbestand van de Handel, zoals die in de volgende secties wordt vermeld.
-   - U kunt zoeken `<SYSTEM__VARIABLE__NAME>` zoals besproken in [Stap 2: Algemene weergavevariabelen, websites of opslagruimten instellen](#step-2-set-global-website-or-store-view-variables).
+   - U kunt zoeken `<SYSTEM__VARIABLE__NAME>` zoals besproken in [Stap 2: globale variabelen, website- of opslagweergavevariabelen instellen](#step-2-set-global-website-or-store-view-variables).
 
 ### Een website of weergavebereik van de winkel zoeken in Admin
 
@@ -128,7 +128,7 @@ Als u bijvoorbeeld een website wilt zoeken of een waarde voor het weergavebereik
    ![Websitecode zoeken](../../assets/configuration/website-code.png)
 
 1. De bereiknaam wordt weergegeven in het dialoogvenster **[!UICONTROL Code]** veld.
-1. Doorgaan met [Stap 2: Algemene weergavevariabelen, websites of opslagruimten instellen](#step-2-set-global-website-or-store-view-variables).
+1. Doorgaan met [Stap 2: globale variabelen, website- of opslagweergavevariabelen instellen](#step-2-set-global-website-or-store-view-variables).
 
 ### Een website zoeken of weergavebereik in de database opslaan
 
@@ -177,13 +177,13 @@ Deze waarden ophalen uit de database:
 
    waar `<SYSTEM__VARIABLE__NAME>` komt uit de volgende sectie.
 
-## Stap 2: Algemene weergavevariabelen, websites of opslagruimten instellen
+## Stap 2: globale variabelen, website- of opslagweergavevariabelen instellen
 
 In deze sectie wordt besproken hoe systeemvariabelen moeten worden ingesteld.
 
 - Als u waarden wilt instellen voor het algemene bereik (dat wil zeggen alle websites, winkels en winkelweergaven), start u de variabelenaam met `CONFIG__DEFAULT__`.
 
-- Als u een waarde voor een bepaalde winkelweergave of website wilt instellen, start u de variabelenaam zoals beschreven in [Stap 1: De bereikwaarde zoeken](#step-1-find-the-website-or-store-view-scope-value):
+- Als u een waarde voor een bepaalde winkelweergave of website wilt instellen, start u de variabelenaam zoals beschreven in [Stap 1: Zoek de waarde van het bereik](#step-1-find-the-website-or-store-view-scope-value):
 
    - `CONFIG__WEBSITES`
    - `CONFIG__STORES`
@@ -196,17 +196,17 @@ In de volgende tabel staan enkele voorbeeldvariabelen.
 
 | Beschrijving | Pad in Admin (weglaten) **Winkels** > **Instellingen** > **Configuratie**) | Naam variabele |
 |--------------|--------------|----------------------|
-| hostnaam Elasticsearch-server | Catalogus > **Catalogus**, **Hostnaam Elasticsearch-server** | `<SCOPE>__CATALOG__SEARCH__ELASTICSEARCH_SERVER_HOSTNAME` |
-| Elasticsearch-serverpoort | Catalogus > **Catalogus**, **Elasticsearch-serverpoort** | `<SCOPE>__CATALOG__SEARCH__ELASTICSEARCH_SERVER_PORT` |
-| Oorsprong land van verzending | Verkoop > **Verzendinstellingen** | `<SCOPE>__SHIPPING__ORIGIN__COUNTRY_ID` |
-| Aangepaste beheerdersURL | Geavanceerd > **Beheer** | `<SCOPE>__ADMIN__URL__CUSTOM` |
-| Aangepast beheerpad | Geavanceerd > **Beheer** | `<SCOPE>__ADMIN__URL__CUSTOM_PATH` |
+| hostnaam server Elasticsearch | Catalogus > **Catalogus**, **Hostnaam server Elasticsearch** | `<SCOPE>__CATALOG__SEARCH__ELASTICSEARCH_SERVER_HOSTNAME` |
+| poort Elasticsearch-server | Catalogus > **Catalogus**, **Poort Elasticsearch-server** | `<SCOPE>__CATALOG__SEARCH__ELASTICSEARCH_SERVER_PORT` |
+| Land van verzending | Verkoop > **Verzendinstellingen** | `<SCOPE>__SHIPPING__ORIGIN__COUNTRY_ID` |
+| Aangepaste Admin-URL | Geavanceerd > **Beheerder** | `<SCOPE>__ADMIN__URL__CUSTOM` |
+| Aangepast beheerpad | Geavanceerd > **Beheerder** | `<SCOPE>__ADMIN__URL__CUSTOM_PATH` |
 
 ## Voorbeelden
 
 In deze sectie ziet u hoe u waarden van bepaalde voorbeeldvariabelen kunt vinden.
 
-### hostnaam Elasticsearch-server
+### hostnaam server Elasticsearch
 
 U kunt als volgt de variabelenaam zoeken voor globale minificatie van HTML:
 
@@ -218,13 +218,13 @@ U kunt als volgt de variabelenaam zoeken voor globale minificatie van HTML:
 
    **Resultaat**: De variabelenaam is `CONFIG__DEFAULT__CATALOG__SEARCH__ELASTICSEARCH_SERVER_HOSTNAME`
 
-### Oorsprong land van verzending
+### Land van verzending
 
 U kunt als volgt de variabelenaam zoeken voor de oorsprong van het verzendland:
 
 1. Bepaal het bereik.
 
-   Zoek het bereik in het dialoogvenster [database](#find-a-website-or-store-view-scope-in-the-database) zoals besproken in Stap 1: Zoek de waarde van het bereik van de website- of winkelweergave. (U kunt de waarde ook vinden in Admin zoals weergegeven in het dialoogvenster [tabel in stap 2: Algemene weergavevariabelen, websites of opslagruimten instellen](#step-2-set-global-website-or-store-view-variables).
+   Zoek het bereik in het dialoogvenster [database](#find-a-website-or-store-view-scope-in-the-database) zoals beschreven in Stap 1: Zoek de waarde van het bereik van de website- of winkelweergave. (U kunt de waarde ook vinden in Admin zoals weergegeven in het dialoogvenster [tabel in stap 2: globale variabelen, website- of opslagweergavevariabelen instellen](#step-2-set-global-website-or-store-view-variables).
 
    Het bereik kan bijvoorbeeld `CONFIG__WEBSITES__DEFAULT`.
 
@@ -240,7 +240,7 @@ Configuratiewaarden instellen als variabelen met PHP&#39;s [`$_ENV`](https://php
 >
 >Variabelewaarden instellen in `index.php` of `pub/index.php` werkt niet altijd zoals verwacht, aangezien verschillende ingangspunten van de toepassing afhankelijk van de configuratie van de Webserver kunnen worden gebruikt. Door `$_ENV` in de `app/bootstrap.php` bestand, ongeacht de verschillende ingangspunten van de toepassing, de `$_ENV` instructies worden altijd uitgevoerd sinds de `app/bootstrap.php` bestanden worden geladen als onderdeel van de architectuur Commerce.
 
-Een voorbeeld van het instellen van twee `$_ENV` waarden:
+Een voorbeeld van twee instellen `$_ENV` volgende waarden:
 
 ```php
 $_ENV['CONFIG__DEFAULT__CATALOG__SEARCH__ELASTICSEARCH_SERVER_HOSTNAME'] = 'http://search.example.com';

@@ -16,7 +16,7 @@ ht-degree: 0%
 + Algemene instelling {#setup}
    + [Initialisatie en bootstrap van toepassingen](bootstrap/initialization.md)
    + [Toepassingsmodi](bootstrap/application-modes.md)
-   + [Bootstrap-parameters](bootstrap/set-parameters.md)
+   + [Parameters Bootstrap](bootstrap/set-parameters.md)
    + [Profielen](bootstrap/mage-profiler.md)
    + [Basismappaden](bootstrap/mage-directory.md)
 + Implementatie {#deployment}
@@ -97,7 +97,7 @@ ht-degree: 0%
    + [Gevoelige en systeemspecifieke instellingen](reference/config-reference-sens.md)
    + [Configuratie-instellingen overschrijven](reference/override-config-settings.md)
 + Cron Jobs {#crons}
-   + [Cron-banen en -groepen](cron/custom-cron.md)
+   + [Cron jobs and groups](cron/custom-cron.md)
    + [Referentie voor curven aanpassen](cron/custom-cron-reference.md)
    + [Een aangepaste uitsnijdtaak configureren](cron/custom-cron-tutorial.md)
 + Logboeken {#logs}

@@ -1,6 +1,6 @@
 ---
 title: Follow-up gegevensmigratie
-description: Leer hoe u kunt controleren of de gegevensmigratie tussen Magento 1 en Magento 2 is gelukt en of alle functies naar behoren werken.
+description: Leer hoe u kunt controleren of de gegevensmigratie tussen Magento 1 en Magento 2 is gelukt en of alle functionaliteit naar behoren functioneert.
 exl-id: a55f357b-6c95-49d6-b2f1-c2e403a8c85f
 topic: Commerce, Migration
 source-git-commit: e83e2359377f03506178c28f8b30993c172282c7
@@ -12,7 +12,7 @@ ht-degree: 0%
 
 # Follow-up gegevensmigratie
 
-Sommige gedragingen en logica van Magento 1 zijn anders geïmplementeerd in Magento 2. De [!DNL Data Migration Tool] zorgt ervoor. Er zijn enkele migratieaspecten die u bekend moet maken, en soms moet u kleine stappen nemen om sommige functies na migratie probleemloos te laten werken.
+Sommige gedragingen en logica van Magento 1 zijn in Magento 2 anders geïmplementeerd. De [!DNL Data Migration Tool] zorgt ervoor. Er zijn enkele migratieaspecten die u bekend moet maken, en soms moet u kleine stappen nemen om sommige functies na migratie probleemloos te laten werken.
 
 ## Informatie
 
@@ -26,7 +26,7 @@ Alle groepsprijzen worden tijdens de migratie automatisch omgezet in Tier-prijze
 
 ### Nieuwe nummering voor verkoopentiteiten
 
-Referentienummers voor bestellingen, facturen, verzendingen, creditmemo&#39;s en RMA migreren naar de huidige vorm. Na migratie zijn de nieuwe regels voor de toewijzing van Magento 2-nummers van toepassing. De nummering voor de nieuwe verkoopeenheden is anders.
+Referentienummers voor bestellingen, facturen, verzendingen, creditmemo&#39;s en RMA migreren naar de huidige vorm. Na de migratie zijn de nieuwe Magento 2 regels voor nummertoewijzing van toepassing. De nummering voor de nieuwe verkoopeenheden is anders.
 
 ## Stappen
 
@@ -38,11 +38,11 @@ Na de migratie moeten de segmenten van de Klant van het Admin Comité worden opn
 
 Het hulpmiddel migreert timezone geen montages, zodat moet u de timezone na migratie manueel vormen bij **Winkels** > **Configuratie** > **Landinstellingen** > **Tijdzone**.
 
-Standaard slaat Magento tijdgegevens op in de UTC-0-zone in de database en wordt deze weergegeven volgens de huidige tijdzone-instellingen. Als de tijdgegevens al in het gegevensbestand in een andere streek dan UTC-0 zijn opgeslagen, moet u de bestaande tijd in UTC-0 omzetten gebruikend [!DNL Data Migration Tool]s `\Migration\Handler\Timezone` handler.
+Door gebrek, slaat het Magento tijdgegevens in UTC-0 streek in het gegevensbestand op en toont het volgens de huidige tijdzonemontages. Als de tijdgegevens al in het gegevensbestand in een andere streek dan UTC-0 zijn opgeslagen, moet u de bestaande tijd in UTC-0 omzetten gebruikend [!DNL Data Migration Tool]s `\Migration\Handler\Timezone` handler.
 
-In het volgende voorbeeld bespaart Magento 1 ten onrechte tijd in de UTC-7-zone in de database (bijvoorbeeld als gevolg van een onjuiste extensie van derden). Voer de volgende stappen uit om de aanmaaktijd van de klantenaccount correct om te zetten in de UTC-0-zone bij migratie:
+In het volgende voorbeeld bespaart Magento 1 verkeerd tijd in de streek UTC-7 in het gegevensbestand (bijvoorbeeld, wegens een defecte derdeuitbreiding). Voer de volgende stappen uit om de aanmaaktijd van de klantenaccount correct om te zetten in de UTC-0-zone bij migratie:
 
-1. Kopieer de `map-customer.xml.dist` configuratiebestand uit de desbetreffende map van het [!DNL Data Migration Tool] (`<your Magento 2 install dir>/vendor/magento/data-migration-tool/etc/<migration edition>`) in de `<your Magento 2 install dir>/app/code/Vendor/Migration/etc/<migration edition>/map-customer.xml` bestand.
+1. De `map-customer.xml.dist` configuratiebestand uit de desbetreffende map van het [!DNL Data Migration Tool] (`<your Magento 2 install dir>/vendor/magento/data-migration-tool/etc/<migration edition>`) in de `<your Magento 2 install dir>/app/code/Vendor/Migration/etc/<migration edition>/map-customer.xml` bestand.
 
 1. Werk de `<customer_map_file>` node in `config.xml` en verwijder de `.dist` verlenging van `map-customer.xml.dist`
 

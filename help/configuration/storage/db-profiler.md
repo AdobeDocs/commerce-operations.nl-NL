@@ -2,11 +2,11 @@
 title: De databaseanalyse configureren
 description: Zie een voorbeeld van hoe te om output voor gegevensbestand te vormen profiler.
 feature: Configuration, Storage
-badge: label="Contributed by Atish Goswami" type="Informative" url="https://github.com/atishgoswami" tooltip="Atish Goswami"
+badge: label="Bijgedragen door Atish Goswami" type="Informative" url="https://github.com/atishgoswami" tooltip="Atish Goswami"
 exl-id: 87780db5-6e50-4ebb-9591-0cf22ab39af5
 source-git-commit: af45ac46afffeef5cd613628b2a98864fd7da69b
 workflow-type: tm+mt
-source-wordcount: '198'
+source-wordcount: '193'
 ht-degree: 0%
 
 ---
@@ -15,7 +15,7 @@ ht-degree: 0%
 
 De het gegevensbestandanalyse van de Handel toont alle vragen die op een pagina worden uitgevoerd, met inbegrip van de tijd voor elke vraag en welke parameters werden toegepast.
 
-## Stap 1: De implementatieconfiguratie wijzigen
+## Stap 1: Wijzig de plaatsingsconfiguratie
 
 Wijzigen `<magento_root>/app/etc/env.php` om de volgende verwijzing naar de [databaseanalyseklasse](https://github.com/magento/magento2/tree/2.4/lib/internal/Magento/Framework/DB/Profiler.php):
 
@@ -53,14 +53,14 @@ Hier volgt een voorbeeld:
   ),
 ```
 
-## Stap 2: De uitvoer configureren
+## Stap 2: Vorm de output
 
-Vorm de output in uw toepassing van de Handel bootstrap dossier; dit kan `<magento_root>/pub/index.php` of de locatie kan zich bevinden in een virtuele hostconfiguratie van een webserver.
+Vorm de output in uw toepassing van de Handel bootstrap dossier; dit zou kunnen zijn `<magento_root>/pub/index.php` of de locatie kan zich bevinden in een virtuele hostconfiguratie van een webserver.
 
 In het volgende voorbeeld worden de resultaten in een tabel met drie kolommen weergegeven:
 
 - Totale tijd (geeft de totale hoeveelheid tijd weer om alle query&#39;s op de pagina uit te voeren)
-- SQL (geeft alle SQL-query&#39;s weer; de rijkopbal toont de telling van vragen)
+- SQL (toont alle SQL vragen; de rijkopbal toont de telling van vragen)
 - De Params van de vraag (toont de parameters voor elke SQL vraag)
 
 Om de output te vormen, voeg het volgende na toe `$bootstrap->run($app);` lijn in uw laarzentrekkerbestand:
@@ -87,7 +87,7 @@ foreach ($profiler->getQueryProfiles() as $query) {
 echo "</table>";
 ```
 
-## Stap 3: De resultaten weergeven
+## Stap 3: de resultaten bekijken
 
 Ga naar een willekeurige pagina in uw winkel of Admin om de resultaten weer te geven. Hieronder volgt een monster:
 

@@ -21,11 +21,11 @@ Voordat u deze opdracht uitvoert, moet u het volgende doen _moet_ waar zijn:
 
 - De `Magento_Developer` moet zijn ingeschakeld. U kunt deze als volgt inschakelen:
 
-   ```bash
-   bin/magento module:enable [--force] Magento_Developer
-   ```
+  ```bash
+  bin/magento module:enable [--force] Magento_Developer
+  ```
 
-   Gebruik de `--force` alleen indien dit noodzakelijk is.
+  Gebruik de `--force` alleen indien nodig.
 
 - Uw systeem moet zijn ingesteld om de gewenste tests uit te voeren.
 

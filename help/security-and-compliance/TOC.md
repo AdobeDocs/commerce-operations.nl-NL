@@ -1,6 +1,6 @@
 ---
 user-guide-title: Beveiliging en naleving
-user-guide-description: Leer hoe Adobe Commerce en Magento Open Source-verkopers verantwoordelijk zijn voor het onderhouden van een veilige omgeving en voldoen aan de wettelijke vereisten en beste praktijken voor onlinehandelaren in hun rechtsgebied.
+user-guide-description: Leer hoe Adobe Commerce en Magento Open Source verkopers verantwoordelijk zijn voor het onderhouden van een veilige omgeving en voldoen aan de wettelijke vereisten en beste praktijken voor online handelaren in hun rechtsgebied.
 feature: Security
 source-git-commit: 68c4cfc29735d2ea296f579ed0a0ff52db3fdd9f
 workflow-type: tm+mt
@@ -17,7 +17,7 @@ ht-degree: 0%
 - Privacyregels {#privacy}
    - [CCPA](privacy/ccpa.md)
    - [GDPR](privacy/gdpr.md)
-   - [Adobe Privacy JavaScript-bibliotheek](privacy/adobe-javascript-library.md)
+   - [Privacy JavaScript-bibliotheek Adobe](privacy/adobe-javascript-library.md)
    - [Privacy JavaScript-bibliotheek](privacy/javascript-library.md)
 - Referentie {#reference}
    - [Persoonlijke gegevens van de klant (versie 2.x)](privacy/data-m2.md)

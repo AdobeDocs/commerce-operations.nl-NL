@@ -7,7 +7,7 @@ ht-degree: 13%
 ---
 # Communautaire bijdragen
 
-| Bijdragend lid van de gemeenschap | Verzoeken afstemmen | Verwante GitHub-problemen |
+| Bijdragend gemeenschapslid | Verzoeken afstemmen | Verwante GitHub-problemen |
 | ------- | ------- | ------- |
 | Nazar Klovanych | [#28048](https://github.com/magento/magento2/pull/28048) |  |
 | Volodymyr Zaets | [#27948](https://github.com/magento/magento2/pull/27948) |  |
@@ -274,7 +274,7 @@ ht-degree: 13%
 | Nazar Klovanych | [#29475](https://github.com/magento/magento2/pull/29475) |  |
 | Oleh Usik | [#29472](https://github.com/magento/magento2/pull/29472) | [29539](https://github.com/magento/magento2/issues/29539) |
 | Vadim Malesh | [#29455](https://github.com/magento/magento2/pull/29455) | [25211](https://github.com/magento/magento2/issues/25211) |
-| yolouees | [#29398](https://github.com/magento/magento2/pull/29398) | [1684](https://github.com/magento/magento2/issues/1684) |
+| yolouiaans | [#29398](https://github.com/magento/magento2/pull/29398) | [1684](https://github.com/magento/magento2/issues/1684) |
 | Lukasz Bajsarowicz | [#29376](https://github.com/magento/magento2/pull/29376) | [29453](https://github.com/magento/magento2/issues/29453) |
 | Gerchak | [#29291](https://github.com/magento/magento2/pull/29291) | [29286](https://github.com/magento/magento2/issues/29286) |
 | Nikita Sarychev | [#29214](https://github.com/magento/magento2/pull/29214) | [29213](https://github.com/magento/magento2/issues/29213) |

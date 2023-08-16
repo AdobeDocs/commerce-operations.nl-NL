@@ -11,9 +11,9 @@ ht-degree: 0%
 
 # Back-up maken van het bestandssysteem, de media en de database en deze terugdraaien
 
-Met deze opdracht kunt u een back-up maken van:
+Met deze opdracht kunt u back-ups maken:
 
-* Het bestandssysteem (met uitzondering van `var` en `pub/static` mappen)
+* Het bestandssysteem (exclusief `var` en `pub/static` mappen)
 * De `pub/media` directory
 * De database
 
@@ -36,17 +36,17 @@ bin/magento config:set system/backup/functionality_enabled 1
 >[!WARNING]
 >
 >**Waarschuwing:**
->Back-upfunctionaliteit is vanaf 2.1.16, 2.2.7 en 2.3.0 verouderd. Wij adviseren het onderzoeken van extra reservetechnologieën en binaire reservehulpmiddelen (zoals Percona XtraBackup).
+>Back-upfunctionaliteit is vanaf 2.1.16, 2.2.7 en 2.3.0 verouderd. We raden u aan aanvullende back-uptechnologieën en binaire back-uptools (zoals Percona XtraBackup) te onderzoeken.
 
 ## Limiet voor geopende bestanden instellen
 
-Terugdraaien naar een vorige back-up kan zonder toezicht mislukken, wat ertoe leidt dat onvolledige gegevens naar het bestandssysteem of de database worden geschreven met behulp van de [`magento setup:rollback`](uninstall-modules.md#roll-back-the-file-system-database-or-media-files) gebruiken.
+Terugdraaien naar een vorige back-up kan zonder toezicht mislukken, waardoor onvolledige gegevens naar het bestandssysteem of de database worden geschreven met de [`magento setup:rollback`](uninstall-modules.md#roll-back-the-file-system-database-or-media-files) gebruiken.
 
 Soms, veroorzaakt een lange vraagkoord de toegewezen geheugenruimte van de gebruiker om uit geheugen wegens teveel recursieve vraag te lopen.
 
 ## Openen van bestanden instellen `ulimit`
 
-We raden u aan de geopende bestanden in te stellen [`ulimit`](https://ss64.com/bash/ulimit.html) voor de gebruiker van het bestandssysteem een waarde van `65536` of meer.
+We raden u aan de geopende bestanden in te stellen [`ulimit`](https://ss64.com/bash/ulimit.html) voor de gebruiker van het bestandssysteem naar een waarde van `65536` of meer.
 
 U kunt dit doen of op de bevellijn of u kunt het een permanent het plaatsen voor de gebruiker door hun shell manuscript uit te geven maken.
 
@@ -62,7 +62,7 @@ Indien nodig kunt u dit wijzigen in een hogere waarde.
 
 >[!NOTE]
 >
->De syntaxis voor geopende bestanden `ulimit` is afhankelijk van de UNIX-shell die u gebruikt. De voorgaande instelling werkt alleen met CentOS en Ubuntu met Bash-shell. Voor macOS is de juiste instelling echter `ulimit -S 65532`. Raadpleeg een hoofdpagina of referentie van het besturingssysteem voor meer informatie.
+>De syntaxis voor geopende bestanden `ulimit` is afhankelijk van de UNIX-shell die u gebruikt. De voorgaande instelling werkt alleen met CentOS en Ubuntu met de Bash-shell. Voor macOS is de juiste instelling echter `ulimit -S 65532`. Raadpleeg een hoofdpagina of referentie van het besturingssysteem voor meer informatie.
 
 U kunt als volgt de waarde in de Bash-shell van de gebruiker instellen:
 
@@ -93,9 +93,9 @@ De opdracht voert de volgende taken uit:
 1. Hiermee plaatst u de winkel in de onderhoudsmodus.
 1. Voert een van de volgende opdrachtopties uit.
 
-   | Option | Betekenis | Back-upbestandsnaam en -locatie |
+   | Optie | Betekenis | Back-upbestandsnaam en -locatie |
    |--- |--- |--- |
-   | `--code` | Hiermee maakt u een back-up van het bestandssysteem (met uitzondering van directory&#39;s var en pub/static). | `var/backups/<timestamp>/_filesystem.tgz` |
+   | `--code` | Hiermee maakt u een back-up van het bestandssysteem (behalve directory&#39;s var en pub/static). | `var/backups/<timestamp>/_filesystem.tgz` |
    | `--media` | Maak een back-up van de map pub/media. | `var/backups/<timestamp>/_filesystem_media.tgz` |
    | `--db` | Maak een back-up van de database. | `var/backups/<timestamp>/_db.sql` |
 

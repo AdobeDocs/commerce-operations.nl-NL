@@ -13,7 +13,7 @@ ht-degree: 0%
 
 Een module of extensie bijwerken of bijwerken:
 
-1. Download het bijgewerkte bestand van Marketplace of een andere ontwikkelaar van extensies. Noteer de modulenaam en -versie.
+1. Download het bijgewerkte bestand van Marketplace of een andere ontwikkelaar van extensies. Noteer de naam en de versie van de module.
 
 1. Exporteer de inhoud naar de Adobe Commerce- of Magento Open Source-hoofdinstallatiemap.
 
@@ -47,7 +47,7 @@ Een module of extensie bijwerken of bijwerken:
 
 ## Door leverancier gebundelde extensies (VBE&#39;s)
 
-Adobe alle verwijderd [VBEs](https://devdocs.magento.com/extensions/vendor/) in 2.4.4. Leveranciers blijven deze extensies ondersteunen op de Adobe Commerce Marketplace.
+Alle Adobe verwijderd [VBEs](https://devdocs.magento.com/extensions/vendor/) in 2.4.4. Leveranciers blijven deze extensies ondersteunen op de Adobe Commerce Marketplace.
 
 Als u deze extensies wilt blijven gebruiken met Adobe Commerce 2.4.4 en hoger, moet u de bijbehorende pakketafhankelijkheden bijwerken in uw `composer.json` file _voor_ opwaardering tot 2.4.4. Neem contact op met de leverancier voor de pakketnaam en -versie die u wilt gebruiken.
 

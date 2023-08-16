@@ -1,11 +1,11 @@
 ---
 title: Releaseplanning
-description: Leer wanneer de Adobe van plan is de release van belangrijke nieuwe functies voor Adobe Commerce aan te kondigen.
+description: Ontdek wanneer Adobe de release van belangrijke nieuwe functies voor Adobe Commerce gaat aankondigen.
 exl-id: ae1e09cd-966f-44a3-9e4d-b90bb838429d
 source-git-commit: 12b4f619673414f18d9697450e867681c6cb3194
 workflow-type: tm+mt
 source-wordcount: '752'
-ht-degree: 0%
+ht-degree: 1%
 
 ---
 
@@ -63,7 +63,7 @@ De volgende tabel bevat de datums voor geplande releases (de datums kunnen worde
   </tr>
   <tr>
     <td>19 maart 2024</td>
-    <td>--</td>
+    <td>—</td>
     <td><img alt="Patchvrijgavepictogram" src="../assets/icons/file-code.svg"></img> <a href="release-notes/commerce/overview.md">Beta-patch</a>: 2.4.7-bèta3</td>
   </tr>
   <tr>

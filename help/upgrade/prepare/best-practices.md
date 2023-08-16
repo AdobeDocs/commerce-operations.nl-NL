@@ -1,6 +1,6 @@
 ---
-title: Aanbevolen werkwijzen
-description: Gebruik de door de Adobe aanbevolen aanbevolen aanbevolen werkwijze om het upgradeproces voor uw Adobe Commerce- en Magento Open Source-projecten te beheren.
+title: Aanbevolen procedures
+description: Gebruik de Adobe-geadviseerde beste praktijken om het verbeteringsproces voor uw projecten van Adobe Commerce en van de Magento Open Source te beheren.
 feature: Upgrade, Best Practices
 exl-id: 53c505a3-8b99-4fc3-b1b4-f2f75208a51b
 source-git-commit: 012cba58b336b032b1c911539008c1fb961c2e07
@@ -16,7 +16,7 @@ Dit onderwerp maakt een lijst van de acties u zou moeten nemen om de ingewikkeld
 
 >[!TIP]
 >
->Deze aanbevelingen zijn gebaseerd op beste praktijken die worden ondersteund door bewijs voor de impact en doeltreffendheid ervan van partners, handelaren, Adobe-deskundigen en de gemeenschap.
+>Deze aanbevelingen zijn gebaseerd op beste praktijken die worden ondersteund door bewijs voor de impact en doeltreffendheid ervan van partners, handelaren, deskundigen van de Adobe en de gemeenschap.
 
 ## Welke gevolgen heeft een upgrade?
 
@@ -26,9 +26,9 @@ De mate van moeite om uw Adobe Commerce-exemplaar te upgraden, is afhankelijk va
 
 - **Hoe hebt u uw site gemaakt?** De hoeveelheid douanewerk en het aantal geïnstalleerde derdemodules beïnvloeden sterk de ingewikkeldheid van een verbetering. De kwaliteit van het aangepaste werk en de aangepaste modules kan bepalen of een upgrade probleemloos wordt uitgevoerd.
 
-- **Overslaat u meerdere releases?** Door releases over te slaan wordt de volgende upgrade complexer en wordt het proces eenvoudiger en goedkoper.
+- **Slaat u meerdere releases over?** Door releases over te slaan wordt de volgende upgrade complexer en wordt het proces eenvoudiger en goedkoper.
 
-- **Welk type van verbetering presteert u?** Een upgrade naar een kleine release (bijvoorbeeld van 2.3.x naar 2.4.0) is uitgebreider dan een upgrade tussen patchreleases (bijvoorbeeld van 2.4.2 naar 2.4.3). Beveiligingsupdates zijn het eenvoudigste type dat u kunt implementeren.
+- **Welk type upgrade voert u uit?** Een upgrade naar een kleine release (bijvoorbeeld van 2.3.x naar 2.4.0) is uitgebreider dan een upgrade tussen patchreleases (bijvoorbeeld van 2.4.2 naar 2.4.3). Beveiligingsupdates zijn het eenvoudigste type dat u kunt implementeren.
 
 ## Aanbevolen procedures voor het plannen van upgrades
 
@@ -51,9 +51,9 @@ Begin met het aannemen van het Adobe Commerce Extenability Platform, als u dit n
 
 - **API-uitbreidbaarheid**. Gebruiken [GraphQL](https://devdocs.magento.com/guides/v2.4/graphql/index.html) om Web API laag uit te breiden door het model van grafiekgegevens te evolueren en lambdafuncties direct van de grafieklaag uit te voeren.
 
-- **Adobe I/O middleware en diensten**. Sluit uw systemen aan op Adobe Commerce met behulp van Adobe middleware en een reeks toepassingsverbindingen die zijn gebaseerd op [Adobe I/O](https://www.adobe.io/). Bovendien kunt u de mogelijkheden van het kernplatform uitbreiden door het standaardgedrag met uw eigen bedrijfslogica te beschrijven die op Adobe I/O loopt.
+- **Adobe I/O middleware en diensten**. Sluit uw systemen aan op Adobe Commerce met behulp van de middleware van de Adobe en een reeks toepassingsverbindingen die op [Adobe I/O](https://www.adobe.io/). Bovendien kunt u de mogelijkheden van het kernplatform uitbreiden door het standaardgedrag met uw eigen bedrijfslogica te beschrijven die op Adobe I/O loopt.
 
-### Upgrade plannen
+### Upgrades plannen
 
 Aangezien wij de mogelijkheden van Adobe Commerce voortdurend uitbreiden, is het essentieel dat u zich op de recentste beschikbare versie ontwikkelt en een verbeteringsstrategie in uw projectplannen bepaalt. Dit helpt u veilig, volgzaam, en bijgewerkt op de recentste verhogingen blijven die u toestaan om verkoop sneller te groeien, effectiever te werken, en uw concurrentie nu en in de toekomst voor te blijven.
 
@@ -85,4 +85,4 @@ Het testen is de fase van een verbetering die de meeste tijd vereist. Dit proces
 
 Gebruik een testomgeving om de upgrade te testen en te valideren voordat u overschakelt naar de productie.
 
-Gebruik van een **onderhoudspagina**. Als u deze pagina vooraf voorbereidt, kunt u communiceren met uw klanten en hen op de hoogte stellen van het werk op de achtergrond. Deze pagina moet een paar minuten zichtbaar zijn, maar als er een probleem is, moet u deze mogelijk langer gebruiken. De juiste inhoud en het juiste ontwerp voor uw onderhoudspagina bieden uw gebruikers een goede ervaring, zelfs als uw winkel niet beschikbaar is.
+Maak gebruik van een **onderhoudspagina**. Als u deze pagina vooraf voorbereidt, kunt u communiceren met uw klanten en hen op de hoogte stellen van het werk op de achtergrond. Deze pagina moet een paar minuten zichtbaar zijn, maar als er een probleem is, moet u deze mogelijk langer gebruiken. De juiste inhoud en het juiste ontwerp voor uw onderhoudspagina bieden uw gebruikers een goede ervaring, zelfs als uw winkel niet beschikbaar is.

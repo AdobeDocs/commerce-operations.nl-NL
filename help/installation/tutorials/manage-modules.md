@@ -46,11 +46,11 @@ Wanneer
 * `-f` of `--force` om een module te dwingen om ondanks gebiedsdelen worden toegelaten of worden onbruikbaar gemaakt. Voordat u deze optie gebruikt, raadpleegt u [Modules in- en uitschakelen](#about-enabling-and-disabling-modules).
 * `-c` of `--clear-static-content` cleans [gegenereerde statische weergavebestanden](../../configuration/cli/static-view-file-deployment.md).
 
-   Als u statische weergavebestanden niet wist, kunnen er problemen optreden als er meerdere bestanden met dezelfde naam zijn en u niet alle bestanden wist.
+  Als u statische weergavebestanden niet wist, kunnen er problemen optreden als er meerdere bestanden met dezelfde naam zijn en u niet alle bestanden wist.
 
-   Met andere woorden, vanwege de [fallback van statische bestanden](../../configuration/cli/static-view-file-deployment.md) regels, als u statische bestanden niet wist en er meerdere bestanden zijn met de naam `logo.svg` anders, zou de reserve het verkeerde dossier kunnen veroorzaken om te tonen.
+  Met andere woorden, vanwege de [fallback van statische bestanden](../../configuration/cli/static-view-file-deployment.md) regels, als u statische bestanden niet wist en er meerdere bestanden zijn met de naam `logo.svg` anders, zou de reserve het verkeerde dossier kunnen veroorzaken om te tonen.
 
-Als u bijvoorbeeld de opdracht `Magento_Weee` voert u in:
+Als u bijvoorbeeld de opdracht `Magento_Weee` -module, voert u in:
 
 ```bash
 bin/magento module:disable Magento_Weee
@@ -74,7 +74,7 @@ bin/magento cache:clean
 
 ## Modules in- en uitschakelen
 
-Met Adobe Commerce en Magento Open Source kunt u de momenteel beschikbare modules in- of uitschakelen. met andere woorden, een module die door Adobe wordt geleverd of een module van een derde die momenteel beschikbaar is.
+Met Adobe Commerce en Magento Open Source kunt u de momenteel beschikbare modules in- of uitschakelen, met andere woorden elke module die door Adoben wordt geleverd of elke andere module die momenteel beschikbaar is.
 
 Bepaalde modules hebben gebiedsdelen op andere modules, in welk geval u een module zou kunnen niet toelaten of onbruikbaar maken omdat het gebiedsdelen op andere modules heeft.
 
@@ -88,7 +88,7 @@ Voorbeelden:
 
 * Module A veroorzaakt een conflict met module B. U kunt Module A en Module B onbruikbaar maken, of u kunt één van beide module onbruikbaar maken maar u *kan* Module A en Module B tegelijkertijd inschakelen.
 
-* Afhankelijkheden worden gedeclareerd in het dialoogvenster `require` veld in Adobe Commerce en Magento Open Source `composer.json` bestand voor elke module. Conflicten worden gedeclareerd in het dialoogvenster `conflict` veld in modules&quot; `composer.json` bestanden. Wij gebruiken die informatie om een gebiedsdeelgrafiek te bouwen: `A->B` module A is afhankelijk van module B.
+* Afhankelijkheden worden gedeclareerd in het dialoogvenster `require` veld in Adobe Commerce en Magento Open Source `composer.json` bestand voor elke module. Conflicten worden gedeclareerd in de `conflict` veld in modules&quot; `composer.json` bestanden. Wij gebruiken die informatie om een gebiedsdeelgrafiek te bouwen: `A->B` betekent module A afhankelijk is van module B.
 
 * A *afhankelijkheidsketen* Dit is het pad van een module naar een andere module. Bijvoorbeeld, als module A van module B en module B van module C afhangt, dan is de gebiedsdeelketen `A->B->C`.
 

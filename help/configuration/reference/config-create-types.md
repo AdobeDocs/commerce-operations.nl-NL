@@ -33,14 +33,14 @@ Als u bijvoorbeeld een adapter wilt introduceren voor een nieuwe zoekserver waar
 
 - Een lader
 - Een XSD-schemabestand
-- Een correct benoemd configuratiebestand. Bijvoorbeeld: `search.xml`. Dit bestand wordt op basis van uw schema gelezen en gevalideerd.
+- Een correct benoemd configuratiebestand. Bijvoorbeeld, `search.xml`. Dit bestand wordt op basis van uw schema gelezen en gevalideerd.
 - Alle andere klassen die vereist zijn voor uw werk.
 
 >[!INFO]
 >
 >Als nieuwe modules een `search.xml` worden deze bij het laden met uw bestand samengevoegd.
 
-### Voorbeelden van het gebruik
+### Voorbeelden van gebruik
 
 Een configuratietype maken:
 
@@ -77,8 +77,8 @@ Een configuratietype maken:
    ```
 
    - Het eerste type knooppunt stelt de bestandsnaam van de Reader in, gekoppeld `Converter` en `SchemaLocator` klassen.
-   - Dan, `pdfConfigDataStorage` Virtual Type-knooppunt koppelt de Reader-klasse aan een instantie van [Magento\Framework\Config\Data](https://github.com/magento/magento2/blob/2.4/lib/internal/Magento/Framework/Config/Data.php).
-   - Tot slot koppelt de laatste typeknoopknoop dat config gegevens virtueel type aan het [Magento\Sales\Model\Order\Pdf\Config](https://github.com/magento/magento2/blob/2.4/app/code/Magento/Sales/Model/Order/Pdf/Config.php) klasse, die wordt gebruikt voor het lezen van waarden in [pdf.xml](https://github.com/magento/magento2/blob/2.4/app/code/Magento/Sales/etc/pdf.xml) bestanden.
+   - Vervolgens worden de `pdfConfigDataStorage` Virtual Type-knooppunt koppelt de Reader-klasse aan een instantie van [Magento\Framework\Config\Data](https://github.com/magento/magento2/blob/2.4/lib/internal/Magento/Framework/Config/Data.php).
+   - Tot slot koppelt de laatste typeknoopknoop dat config gegevens virtueel type aan [Magento\Sales\Model\Order\Pdf\Config](https://github.com/magento/magento2/blob/2.4/app/code/Magento/Sales/Model/Order/Pdf/Config.php) klasse, die wordt gebruikt voor het lezen van waarden in [pdf.xml](https://github.com/magento/magento2/blob/2.4/app/code/Magento/Sales/etc/pdf.xml) bestanden.
 
 1. Een lezer definiëren door deze uit te breiden [Magento\Framework\Config\Reader\Filesystem](https://github.com/magento/magento2/blob/2.4/lib/internal/Magento/Framework/Config/Reader/Filesystem.php) klasse en herschrijf de volgende parameters:
 
@@ -117,11 +117,11 @@ class Reader extends Filesystem
 >
 >Als u liever uw eigen versie van de lezer maakt, kunt u dit doen door `\Magento\Framework\Config\ReaderInterface`. Zie [Magento_Analytics config-lezer](https://github.com/magento/magento2/blob/2.4/app/code/Magento/Analytics/ReportXml/Config/Reader.php)
 
-Nadat u de lezer hebt gedefinieerd, gebruikt u deze om de configuratiebestanden te verzamelen, samen te voegen, te valideren en om te zetten in een interne arrayrepresentatie.
+Nadat u de lezer hebt gedefinieerd, kunt u deze gebruiken voor het verzamelen, samenvoegen, valideren en omzetten van de configuratiebestanden in een interne arrayrepresentatie.
 
 ## Een configuratietype valideren
 
-Elk configuratiedossier wordt bevestigd tegen een schema specifiek voor zijn configuratietype. Voorbeeld: gebeurtenissen, die, in vroegere versies van de Handel werden gevormd in `config.xml`, zijn nu geconfigureerd in `events.xml`.
+Elk configuratiedossier wordt bevestigd tegen een schema specifiek voor zijn configuratietype. Voorbeeld: gebeurtenissen, die in eerdere versies van de Handel werden geconfigureerd in `config.xml`, zijn nu geconfigureerd in `events.xml`.
 
 Configuratiebestanden kunnen zowel voor (optioneel) als na het samenvoegen van meerdere bestanden met hetzelfde configuratietype worden gevalideerd. Tenzij de validatieregels voor de afzonderlijke en samengevoegde bestanden identiek zijn, moet u twee schema&#39;s opgeven voor het valideren van de configuratiebestanden:
 

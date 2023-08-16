@@ -12,7 +12,7 @@ ht-degree: 0%
 
 # Aanmeldingsinterface
 
-Als u met een registreerapparaat wilt gaan werken, moet u een instantie maken van `\Psr\Log\LoggerInterface`. Met deze interface kunt u de volgende functies aanroepen om gegevens naar logbestanden te schrijven:
+Als u met een logger wilt gaan werken, moet u een instantie maken van `\Psr\Log\LoggerInterface`. Met deze interface kunt u de volgende functies aanroepen om gegevens naar logbestanden te schrijven:
 
 - [alert()](https://github.com/php-fig/log/blob/master/src/LoggerInterface.php#L43)
 - [kritiek()](https://github.com/php-fig/log/blob/master/src/LoggerInterface.php#L55)

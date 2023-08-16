@@ -1,5 +1,5 @@
 ---
-title: Ontvangst op locatie
+title: Ontvangst op locatie bij de handel
 description: Cloudgebaseerde hostingoplossingen zijn erg populair, maar hosting in verkoopruimten kan zinvol zijn voor uw e-commerceproject.
 exl-id: e505c216-2d6c-4ca4-a4ec-4853cd9347fe
 feature: Best Practices, Install

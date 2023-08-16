@@ -1,6 +1,6 @@
 ---
 title: Modules verwijderen
-description: Voer de volgende stappen uit om een Adobe Commerce- of Magento Open Source-module te verwijderen.
+description: Ga als volgt te werk om een Adobe Commerce of Magento Open Source module te verwijderen.
 exl-id: 66879ef5-47c7-4b61-8c7e-78b60441980a
 source-git-commit: 95ffff39d82cc9027fa633dffedf15193040802d
 workflow-type: tm+mt
@@ -17,7 +17,7 @@ Verwijder een module alleen als u zeker weet dat u deze niet wilt gebruiken. In 
 
 >[!NOTE]
 >
->Dit bevel controleert dat slechts gebiedsdelen die in worden verklaard `composer.json` bestand. Als u een module verwijdert die _niet_ in de `composer.json` bestand, wordt met deze opdracht de module verwijderd zonder te controleren op afhankelijkheden. Deze opdracht doet _niet_, echter, verwijder de code van de module uit het dossiersysteem. U moet de hulpmiddelen van het dossiersysteem gebruiken om de code van de module te verwijderen (bijvoorbeeld, `rm -rf <path to module>`). Als alternatief kunt u [disable](manage-modules.md) niet-composermodules.
+>Dit bevel controleert dat slechts gebiedsdelen die in worden verklaard `composer.json` bestand. Als u een module verwijdert die _niet_ in de `composer.json` bestand, verwijdert deze opdracht de module zonder afhankelijkheden te controleren. Deze opdracht doet _niet_, echter, verwijder de code van de module uit het dossiersysteem. U moet bestandssysteemgereedschappen gebruiken om de code van de module te verwijderen (bijvoorbeeld `rm -rf <path to module>`). Als alternatief kunt u [disable](manage-modules.md) niet-composer-modules.
 
 Opdrachtgebruik:
 
@@ -32,9 +32,9 @@ Met de opdracht Module verwijderen worden de volgende taken uitgevoerd:
 
 1. Verifieert dat de gespecificeerde modules in de codebasis bestaan en pakketten zijn die door Composer worden geïnstalleerd.
 
-   Deze opdracht werkt _alleen_ met modules die zijn gedefinieerd als Composer-pakketten.
+   Deze opdracht werkt _alleen_ met modules gedefinieerd als Composer-pakketten.
 
-1. Controleert gebiedsdelen met andere modules en beëindigt het bevel als er om het even welke onvolkomengebiedsdelen zijn.
+1. Controleert gebiedsdelen met andere modules en beëindigt het bevel als er om het even welke onvolkomenheden gebiedsdelen zijn.
 
    Om rond dit te werken, kunt u of alle modules tezelfdertijd desinstalleren of u kunt de afhankelijke modules eerst desinstalleren.
 
@@ -42,7 +42,7 @@ Met de opdracht Module verwijderen worden de volgende taken uitgevoerd:
 1. Hiermee plaatst u de winkel in de onderhoudsmodus.
 1. Verwerkt de volgende bevelopties.
 
-   | Option | Betekenis | Back-upbestandsnaam en -locatie |
+   | Optie | Betekenis | Back-upbestandsnaam en -locatie |
    | ---------------- | -------------------------------------------------------------------------------- | -------------------------------------------- |
    | `--backup-code` | Back-ups maken van het bestandssysteem (exclusief `var` en `pub/static` mappen). | `var/backups/<timestamp>_filesystem.tgz` |
    | `--backup-media` | Hiermee maakt u een back-up van de map pub/media. | `var/backups/<timestamp>_filesystem_media.tgz` |
@@ -58,7 +58,7 @@ Met de opdracht Module verwijderen worden de volgende taken uitgevoerd:
 
    >[!NOTE]
    >
-   >Een module verwijderen _altijd_ run `composer remove`. De `--remove-data` optie verwijdert gegevensbestandgegevens en schema dat door de module wordt bepaald `Uninstall` klasse.
+   >Een module verwijderen _altijd_ looppas `composer remove`. De `--remove-data` optie verwijdert gegevensbestandgegevens en schema dat door de module wordt bepaald `Uninstall` klasse.
 
 1. Wist de cache.
 1. Werkt gegenereerde klassen bij.
@@ -116,7 +116,7 @@ Disabling maintenance mode
 
 >[!NOTE]
 >
->De vertoning van fouten als u probeert om een module met een gebiedsdeel van een andere module te desinstalleren. In dat geval kunt u één module niet verwijderen. u moet beide verwijderen.
+>De vertoning van fouten als u probeert om een module met een gebiedsdeel van een andere module te desinstalleren. In dat geval kunt u één module niet verwijderen. U moet beide verwijderen.
 
 ## Bestandssysteem, database of mediabestanden terugdraaien
 
@@ -130,7 +130,7 @@ Wanneer `<filename>` is de naam van het back-upbestand in het dialoogvenster `<a
 
 >[!WARNING]
 >
->Met deze opdracht verwijdert u de opgegeven bestanden of de database voordat u ze herstelt. De `--media-file` verwijdert media-elementen onder de optie `pub/media` map voordat het terugdraaibestand wordt hersteld. Zorg ervoor dat u het bestandssysteem of de database die u wilt behouden niet hebt gewijzigd voordat u deze opdracht gebruikt.
+>Met deze opdracht verwijdert u de opgegeven bestanden of de database voordat u ze herstelt. Bijvoorbeeld de `--media-file` Hiermee verwijdert u media-elementen onder de optie `pub/media` map voordat het terugdraaibestand wordt teruggezet uit het opgegeven terugdraaibestand. Zorg ervoor dat u het bestandssysteem of de database die u wilt behouden niet hebt gewijzigd voordat u deze opdracht gebruikt.
 
 >[!NOTE]
 >
@@ -142,23 +142,23 @@ Deze opdracht voert de volgende taken uit:
 1. Controleert de naam van het back-upbestand.
 1. Als u een bestand voor het terugdraaien van code opgeeft:
 
-   a. Verifieert dat de het terugschroeven van prijzenbestemmingsplaatsen beschrijfbaar zijn (merk op dat de `pub/static` en `var` mappen worden genegeerd).
+   a. verifieert dat de het terugschroeven van prijzenbestemmingsplaatsen beschrijfbaar zijn (merk op dat `pub/static` en `var` mappen worden genegeerd).
 
-   b. Hiermee verwijdert u alle bestanden en mappen in de installatiemap van de toepassing.
+   b. Verwijdert alle bestanden en mappen in de installatiemap van de toepassing.
 
    c. Extraheert het archiefbestand naar de doellocaties.
 
 1. Als u een terugdraaibestand voor de database opgeeft:
 
-   a. Zet de gehele database neer.
+   a. De gehele database wordt verwijderd.
 
-   b. Hiermee herstelt u de database met behulp van de back-up van de database.
+   b. Herstelt de database met behulp van de back-up van de database.
 
 1. Als u een terugdraaibestand voor media opgeeft:
 
-   a. Verifieert dat de het terugschroeven van prijzenbestemmingsplaatsen schrijfbaar zijn.
+   a. Verifieert dat de het terugschroeven van prijzenbestemmingsplaatsen beschrijfbaar zijn.
 
-   b. Hiermee verwijdert u alle bestanden en mappen onder `pub/media`
+   b. Hiermee worden alle bestanden en mappen verwijderd onder `pub/media`
 
    c. Extraheert het archiefbestand naar de doellocaties.
 
@@ -168,26 +168,26 @@ Als u bijvoorbeeld een back-up van een code (dat wil zeggen bestandssysteem) wil
 
 * Een lijst met back-ups weergeven:
 
-   ```bash
-   magento info:backups:list
-   ```
+  ```bash
+  magento info:backups:list
+  ```
 
 * Een back-up van een bestand met de naam `1433876616_filesystem.tgz`:
 
-   ```bash
-   magento setup:rollback --code-file="1433876616_filesystem.tgz"
-   ```
+  ```bash
+  magento setup:rollback --code-file="1433876616_filesystem.tgz"
+  ```
 
-   Berichten die lijken op de volgende weergave:
+  Berichten die lijken op de volgende weergave:
 
-   ```terminal
-   Enabling maintenance mode
-   Code rollback is starting ...
-   Code rollback filename: 1433876616_filesystem.tgz
-   Code rollback file path: /var/www/html/magento2/var/backups/1433876616_filesystem.tgz
-   [SUCCESS]: Code rollback has completed successfully.
-   Disabling maintenance mode
-   ```
+  ```terminal
+  Enabling maintenance mode
+  Code rollback is starting ...
+  Code rollback filename: 1433876616_filesystem.tgz
+  Code rollback file path: /var/www/html/magento2/var/backups/1433876616_filesystem.tgz
+  [SUCCESS]: Code rollback has completed successfully.
+  Disabling maintenance mode
+  ```
 
 >[!NOTE]
 >

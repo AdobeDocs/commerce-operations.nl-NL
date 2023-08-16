@@ -11,7 +11,7 @@ ht-degree: 0%
 
 # Een extensie installeren
 
-Code die het gedrag Adobe Commerce uitbreidt of aanpast, wordt een extensie genoemd. U kunt desgewenst extensies verpakken en distribueren op het tabblad [Commerce Marketplace](https://marketplace.magento.com) of een ander extensiedistributiesysteem.
+Code waarmee het gedrag van Adobe Commerce en Magento Open Sourcen wordt uitgebreid of aangepast, wordt een extensie genoemd. U kunt desgewenst extensies verpakken en distribueren op het tabblad [Commerce Marketplace](https://marketplace.magento.com) of een ander extensiedistributiesysteem.
 
 Extensies zijn:
 
@@ -21,7 +21,7 @@ Extensies zijn:
 
 >[!TIP]
 >
->Dit onderwerp verklaart hoe te om de bevellijn te gebruiken om uitbreidingen te installeren u van de Commerce Marketplace koopt. U kunt dezelfde procedure gebruiken om te installeren _alle_ uitbreiding; u hebt alleen de Composer-naam en -versie van de extensie nodig. Open de extensies om deze te zoeken `composer.json` en noteer de waarden voor `"name"` en `"version"`.
+>Dit onderwerp verklaart hoe te om de bevellijn te gebruiken om uitbreidingen te installeren u van de Commerce Marketplace koopt. U kunt dezelfde procedure gebruiken om te installeren _alle_ extensie; u hebt alleen de Composer-naam en -versie van de extensie nodig. Open de extensies om deze te zoeken `composer.json` en noteer de waarden voor `"name"` en `"version"`.
 
 Voordat u gaat installeren, kunt u het volgende doen:
 
@@ -35,7 +35,7 @@ Voordat u gaat installeren, kunt u het volgende doen:
 Als u een extensie wilt installeren, moet u:
 
 1. Haal een extensie op van de Commerce Marketplace of een andere extensieontwikkelaar.
-1. Als u een extensie van de Commerce Marketplace installeert, moet u ervoor zorgen dat de extensie `repo.magento.com` de opslagplaats bestaat in uw `composer.json` bestand:
+1. Als u een extensie installeert via de Commerce Marketplace, moet u ervoor zorgen dat de extensie `repo.magento.com` de opslagplaats bestaat in uw `composer.json` bestand:
 
    ```bash
    "repositories": [
@@ -73,7 +73,7 @@ De naam en versie van de componist van de extensie ophalen uit de Commerce Marke
 
 >[!TIP]
 >
->U kunt ook de naam en versie van de Composer vinden van _alle_ extensie (aangeschaft op Commerce Marketplace of ergens anders) in de extensie `composer.json` bestand.
+>U kunt ook de naam en versie van de Composer vinden van _alle_ extensie (of u de extensie hebt aangeschaft op Commerce Marketplace of op een andere locatie) in de extensie `composer.json` bestand.
 
 ## Uw Composer-bestand bijwerken
 
@@ -117,7 +117,7 @@ Standaard is de extensie waarschijnlijk uitgeschakeld:
 Module is disabled
 ```
 
-De extensienaam heeft de notatie `<VendorName>_<ComponentName>`; Dit is een andere indeling dan de naam van de componist. Gebruik deze indeling om de extensie in te schakelen. Voer de volgende handelingen uit als u niet zeker bent van de extensienaam:
+De extensienaam heeft de notatie `<VendorName>_<ComponentName>`; dit is een andere indeling dan de naam van de componist. Gebruik deze indeling om de extensie in te schakelen. Voer de volgende handelingen uit als u niet zeker bent van de naam van de extensie:
 
 ```bash
 bin/magento module:status
@@ -135,7 +135,7 @@ Sommige extensies werken alleen correct als u gegenereerde statische weergavebes
    bin/magento module:enable J2t_Payplug --clear-static-content
    ```
 
-   De volgende uitvoer wordt weergegeven:
+   U zou de volgende output moeten zien:
 
    ```terminal
    The following modules have been enabled:
@@ -153,7 +153,7 @@ Sommige extensies werken alleen correct als u gegenereerde statische weergavebes
    bin/magento setup:upgrade
    ```
 
-1. Uw project opnieuw compileren: In de productiemodus ontvangt u mogelijk het bericht &quot;Voer de opdracht Magento opnieuw samen&quot;. De toepassing vraagt u niet om het compileerbevel op de wijze van de Ontwikkelaar in werking te stellen.
+1. Uw project opnieuw compileren: in de productiemodus ontvangt u mogelijk het bericht &quot;Voer de compilatieopdracht van het Magento opnieuw uit&quot;. De toepassing vraagt u niet om het compileerbevel op de wijze van de Ontwikkelaar in werking te stellen.
 
    ```bash
    bin/magento setup:di:compile
@@ -187,7 +187,7 @@ Sommige extensies werken alleen correct als u gegenereerde statische weergavebes
 
 Een module of extensie bijwerken of bijwerken:
 
-1. Download het bijgewerkte bestand van Marketplace of een andere ontwikkelaar van extensies. Noteer de modulenaam en -versie.
+1. Download het bijgewerkte bestand van Marketplace of een andere ontwikkelaar van extensies. Noteer de naam en de versie van de module.
 
 1. Exporteer de inhoud naar de hoofdmap van de toepassing.
 

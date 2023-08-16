@@ -24,6 +24,6 @@ In het algemeen werkt de toepassing Commerce met elke back-end cache die [Zend_c
 
 - [Redis](config-redis.md)
 - [Database](https://developer.adobe.com/commerce/php/development/cache/partial/database-caching/)
-- Bestandssysteem (standaard): Er is geen configuratie nodig om het in cache plaatsen van bestandssystemen te gebruiken.
+- Bestandssysteem (standaard): er is geen configuratie nodig om het in cache plaatsen van bestandssystemen te gebruiken.
 
 [Varnish](config-varnish.md) hoeft u geen cache-backend op laag niveau in te stellen.

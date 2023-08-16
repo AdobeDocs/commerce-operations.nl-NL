@@ -22,7 +22,7 @@ Het volgende diagram beschrijft een monolithische benadering die Adobe Commerce 
 
 ## Koploos
 
-In het volgende diagram wordt een benadering zonder kop beschreven waarbij Adobe Commerce wordt gebruikt als back-endsysteem dat is geïntegreerd met een DXP/CMS/aangepaste toepassing als storefront-toepassing:
+In het volgende diagram wordt een benadering zonder kop beschreven waarbij Adobe Commerce wordt gebruikt als back-endsysteem dat is geïntegreerd met een aangepaste toepassing DXP/CMS als storefront:
 
 ![Adobe Commerce-headless-diagram](../../assets/playbooks/integration-headless.svg)
 
@@ -30,7 +30,7 @@ Het enige verschil tussen de monolithische en headless benadering is storefront 
 
 ## Systemen van derden
 
-Sommige populaire services hebben al een groot aantal extensies die ondersteuning bieden voor Adobe Commerce of veelgebruikte winkeloplossingen, zoals PWA Studio, Adobe Experience Manager en Vue Storefront, die u kunt vinden op hun website voor extensies of op websites van verwante derden. Zelfs als er geen uitbreiding bestaat, zijn de inspanningen om de integratie tussen Adobe Commerce en andere koploze winkelcentra ten uitvoer te leggen vergelijkbaar. Alle derdediensten hebben gewoonlijk documenten om te verklaren hoe te met hen te integreren. Deze diensten zijn slechts enkele voorbeelden; verschillende landen en markten kunnen verschillende keuzes hebben .
+Sommige populaire services hebben al een groot aantal extensies die ondersteuning bieden voor Adobe Commerce of veelgebruikte winkeloplossingen, zoals PWA Studio, Adobe Experience Manager en Vue Storefront, die u kunt vinden op hun website voor extensies of op websites van verwante derden. Zelfs als er geen uitbreiding bestaat, zijn de inspanningen om de integratie tussen Adobe Commerce en andere koploze winkelcentra ten uitvoer te leggen vergelijkbaar. Alle derdediensten hebben gewoonlijk documenten om te verklaren hoe te met hen te integreren. Deze diensten zijn slechts enkele voorbeelden; verschillende landen en markten kunnen verschillende keuzes hebben.
 
 ## Enterprise-integratie
 

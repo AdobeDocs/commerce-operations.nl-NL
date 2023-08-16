@@ -11,7 +11,7 @@ ht-degree: 0%
 
 # Een aangepaste uitsnijdtaak configureren
 
-In deze stapsgewijze zelfstudie wordt getoond hoe u een aangepaste uitsnijdtaak en eventueel een uitsnijdgroep in een voorbeeldmodule kunt maken. U kunt een module gebruiken u reeds hebt of u kunt een steekproefmodule van gebruiken [`magento2-samples` opslagplaats][samples].
+Deze geleidelijke zelfstudie laat zien hoe u een aangepaste uitsnijdtaak en eventueel een uitsnijdgroep in een voorbeeldmodule kunt maken. U kunt een module gebruiken u reeds hebt of u kunt een steekproefmodule van gebruiken [`magento2-samples` opslagplaats][samples].
 
 Als de uitsnijdtaak wordt uitgevoerd, wordt een rij toegevoegd aan de opdracht `cron_schedule` tabel met de naam van de snijtaak, `custom_cron`.
 
@@ -25,9 +25,9 @@ In deze zelfstudie gaan we uit van het volgende:
 
 ## Stap 1: Een voorbeeldmodule ophalen
 
-Als u een aangepaste uitsnijdtaak wilt instellen, hebt u een voorbeeldmodule nodig. Wij stellen voor `magento-module-minimal` module.
+Als u een aangepaste uitsnijdtaak wilt instellen, hebt u een voorbeeldmodule nodig. Wij stellen voor `magento-module-minimal` -module.
 
-Als u reeds een steekproefmodule hebt, kunt u het gebruiken; Sla deze stap en de volgende stap over en ga verder met stap 3: Maak een klasse om af te snijden.
+Als u reeds een steekproefmodule hebt, kunt u het gebruiken; sla deze stap en de volgende stap over en ga met Stap 3 verder: creeer een klasse om kroon in werking te stellen.
 
 **Een voorbeeldmodule ophalen**:
 
@@ -39,7 +39,7 @@ Als u reeds een steekproefmodule hebt, kunt u het gebruiken; Sla deze stap en de
    git clone git@github.com:magento/magento2-samples.git
    ```
 
-   Als de opdracht mislukt met de fout `Permission denied (publickey).`moet u [voeg uw openbare sleutel van SSH aan GitHub.com toe][git-ssh].
+   Als de opdracht mislukt met de fout `Permission denied (publickey).`, moet u [Voeg uw openbare sleutel van SSH aan GitHub.com toe][git-ssh].
 
 1. Maak een map waarnaar de voorbeeldcode moet worden gekopieerd:
 
@@ -85,7 +85,7 @@ Als u reeds een steekproefmodule hebt, kunt u het gebruiken; Sla deze stap en de
    bin/magento cache:clean
    ```
 
-## Stap 2: De voorbeeldmodule controleren
+## Stap 2: Verifieer de steekproefmodule
 
 Controleer voordat u verdergaat of de voorbeeldmodule is geregistreerd en ingeschakeld.
 
@@ -103,9 +103,9 @@ Controleer voordat u verdergaat of de voorbeeldmodule is geregistreerd en ingesc
 
 >[!TIP]
 >
->Als de uitvoer aangeeft dat de `Module does not exist`, evaluatie [Stap 1](#step-1-get-a-sample-module) zorgvuldig. Zorg ervoor dat de code in de juiste map staat. Spelling en case zijn belangrijk; als om het even wat verschillend is, zal de module niet laden. Vergeet ook niet om te starten `magento setup:upgrade`.
+>Als de uitvoer aangeeft dat de `Module does not exist`, evaluatie [Stap 1](#step-1-get-a-sample-module) zorgvuldig. Zorg ervoor dat de code in de juiste map staat. Spelling en hoofdletters/kleine letters zijn belangrijk. Als iets anders is, wordt de module niet geladen. Vergeet ook niet om te starten `magento setup:upgrade`.
 
-## Stap 3: Een klasse maken om af te snijden
+## Stap 3: Een klasse maken om afsnijden uit te voeren
 
 In deze stap wordt een eenvoudige klasse weergegeven voor het maken van een uitsnijdtaak. De klasse schrijft alleen een rij naar de `cron_schedule` tabel waarin wordt bevestigd dat deze is ingesteld.
 
@@ -145,7 +145,7 @@ Een klasse maken:
 
 ## Stap 4: Maken `crontab.xml`
 
-De `crontab.xml` Hiermee stelt u een schema in voor het uitvoeren van uw aangepaste uitsnijdcode.
+De `crontab.xml` een schema voor het uitvoeren van uw aangepaste uitsnijdcode instellen.
 
 Maken `crontab.xml` als volgt in de `/var/www/html/magento2/app/code/Magento/SampleMinimal/etc` map:
 
@@ -191,7 +191,7 @@ En maak de cache schoon met deze opdracht:
 bin/magento cache:clean
 ```
 
-## Stap 6: De uitsnijdtaak controleren
+## Stap 6: De uitsnijdtaak verifiëren
 
 In deze stap ziet u hoe u de aangepaste uitsnijdtaak kunt verifiëren met een SQL-query op het tabblad `cron_schedule` databasetabel.
 
@@ -205,7 +205,7 @@ Uitsnijden verifiëren:
 
 1. Voer de `magento cron:run` twee of drie keer gebruiken.
 
-   De eerste keer dat u het bevel ingaat, vormt het banen een rij; vervolgens worden de banen in de kron gerund . U moet de opdracht invoeren _ten minste_ twee keer.
+   De eerste keer dat u de opdracht invoert, worden de taken in de wachtrij geplaatst en daarna worden de uitsnijdtaken uitgevoerd. U moet de opdracht invoeren _ten minste_ twee keer.
 
 1. SQL-query uitvoeren `SELECT * from cron_schedule WHERE job_code like '%custom%'` als volgt:
 
@@ -273,9 +273,9 @@ Een aangepaste uitsnijdgroep instellen:
    </config>
    ```
 
-Voor een beschrijving van wat de opties betekenen, raadpleegt u [Referentie voor curven aanpassen](custom-cron-reference.md).
+Zie voor een beschrijving van de betekenis van de opties [Referentie voor curven aanpassen](custom-cron-reference.md).
 
-## Stap 8: Aangepaste uitsnijdgroep verifiëren
+## Stap 8: De aangepaste uitsnijdgroep verifiëren
 
 Dit _optioneel_ toont u hoe u uw aangepaste uitsnijdgroep kunt verifiëren met de beheerfunctie.
 

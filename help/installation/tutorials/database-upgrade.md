@@ -15,7 +15,7 @@ Voordat u deze opdracht gebruikt, moet u [de toepassing installeren](../advanced
 
 ## Het databaseschema en de gegevens bijwerken
 
-Telkens wanneer u een actie uitvoert die het gegevensbestandschema of de gegevens om veroorzaakt te veranderen, moet u hen bijwerken door het bevel in werking te stellen dat in deze sectie wordt besproken. Hieronder volgt een gedeeltelijke motivering:
+Telkens wanneer u een actie uitvoert die het gegevensbestandschema of de gegevens om veroorzaakt te veranderen, moet u hen bijwerken door het bevel in werking te stellen dat in deze sectie wordt besproken. Hieronder volgt een gedeeltelijke lijst van redenen:
 
 * U hebt de toepassing bijgewerkt via de opdrachtregel
 * U hebt een component geïnstalleerd of bijgewerkt via de opdrachtregel
@@ -23,7 +23,7 @@ Telkens wanneer u een actie uitvoert die het gegevensbestandschema of de gegeven
 
 >[!NOTE]
 >
->A *component* kan een module, thema, of taalpak zijn; het maakt niet uit of de component uit de Commerce Marketplace komt of niet.
+>A *component* kan een module, een thema, of een taalpak zijn; het maakt niet uit of de component uit de Commerce Marketplace of niet komt.
 
 1. Start de upgrade:
 

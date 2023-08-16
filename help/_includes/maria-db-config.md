@@ -2,7 +2,7 @@
 source-git-commit: 631735eceb3609edd743c682291f373f6b01b399
 workflow-type: tm+mt
 source-wordcount: '143'
-ht-degree: 0%
+ht-degree: 1%
 
 ---
 # MariaDB-configuratie-instellingen
@@ -12,7 +12,7 @@ Het opnieuw indexeren op MariaDB 10.4 en 10.6 vergt meer tijd in vergelijking me
 * [`optimizer_switch='rowid_filter=off'`](https://mariadb.com/kb/en/optimizer-switch/)
 * [`optimizer_use_condition_selectivity = 1`](https://mariadb.com/products/skysql/docs/reference/es/system-variables/optimizer_use_condition_selectivity/)
 
-Als de prestaties achteruitgaan die niet samenhangen met indexering na de upgrade naar MariaDB 10.6, kunt u overwegen om [`--query-cache-type`](https://mariadb.com/kb/en/server-system-variables/#query_cache_type) instellen. Bijvoorbeeld: `--query-cache-type=ON`.
+Als de prestaties achteruitgaan die niet samenhangen met indexering na de upgrade naar MariaDB 10.6, kunt u overwegen om [`--query-cache-type`](https://mariadb.com/kb/en/server-system-variables/#query_cache_type) instellen. Bijvoorbeeld, `--query-cache-type=ON`.
 
 Naast deze aanbevelingen, zou u met uw gegevensbestandbeheerder over het vormen van de volgende parameters moeten raadplegen:
 

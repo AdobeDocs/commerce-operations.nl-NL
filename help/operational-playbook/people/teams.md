@@ -35,7 +35,7 @@ Als er geen communicatie of samenwerking is, zouden er kwesties kunnen zijn die 
 
 Sommige ondernemingen nemen het team van IT (technisch team) met de ontwikkelaars - front-end, backend, en testers-als deel van het team van de Handel, terwijl sommige ondernemingen hen afzonderlijk houden. Sommige ondernemingen verkiezen om het volledige team van IT in huis toe te schrijven aan veiligheidszorgen, kosten, cultuur, milieu, of productbeheer.
 
-Alternatief, verkiezen sommige ondernemingen om het team van IT (ontwikkeling) aan adviesbureaus uit te besteden die meer deskundigheid op dat gebied hebben en kunnen helpen het interne team effectiever toelaten. Sommige bedrijven hebben er de voorkeur aan beide te combineren.
+Alternatief, verkiezen sommige ondernemingen om het team van IT (ontwikkeling) aan adviesbureaus uit te besteden die meer deskundigheid op dat gebied hebben en kunnen helpen het interne team effectiever toelaten. Ook, hebben sommige ondernemingen verkiezen een mengeling van beide.
 
 Idealiter blijven de ontwikkelings- en e-commerceteams gescheiden, maar werken ze samen als het gaat om het bepalen van doelen, het plannen van spritten en het implementeren van nieuwe functies.
 
@@ -54,11 +54,11 @@ In het ideale geval hebben de meeste organisaties een speciaal e-commerceteam da
 Een typisch team van de Handel omvat:
 
 - Handelsleider
-- Platform KMO
+- Platform MKB
 - Productspecialist
 - Zakelijke analist
 - SEO/SEM-specialist
-- Inhoudsbeheer
+- Inhoud beheren
 - Inventaris
 
 In sommige ondernemingen, overlappen deze rollen met andere teamrollen of zij zitten binnen het team van de Handel (afhankelijk van grootte, opbrengst, en de groeidoelstellingen).
@@ -75,7 +75,7 @@ De managers op C-niveau willen altijd dat hun organisaties op het optimale nivea
 
 C-niveau en andere topmanagement buy-in is essentieel voor het succes van een groot project voor e-commerce. Het vereist directe betrokkenheid en juiste communicatie over alle teams.
 
-Aangezien de e-commerceprojecten vaak met de technologie eerder dan de zaken beginnen, is het zeldzaam dat zij op C-niveau voortkomen. Daarom is het belangrijk om het C-niveau zo snel mogelijk te betrekken en hen tot het eind te houden betrokken. Het helpt verwachtingen in de hele organisatie in te stellen en belanghebbenden te informeren.
+Aangezien de e-commerceprojecten vaak met de technologie eerder dan de zaken beginnen, is het zeldzaam dat zij op C-niveau voortkomen. Daarom is het belangrijk om het C-niveau zo snel mogelijk te betrekken en hen tot het eind bij het proces te houden. Het helpt verwachtingen in de hele organisatie in te stellen en belanghebbenden te informeren.
 
 Wanneer u een e-commerce-project begint, houd het C-niveau en de zaken in mening. Ze zijn vooral geïnteresseerd in de KPI&#39;s en ROI, maar door ze vanaf het begin op de reis te brengen, kunnen ze het doel begrijpen en wat de organisatie te winnen heeft.
 
@@ -91,4 +91,4 @@ Er zijn andere teams die of deel van een bestaand team uitmaken of een stand-alo
 
 - **Gegevensteam**—De plaatsen van de e-commerce produceren veel gegevens die u kunt verzamelen en analyseren, met inbegrip van klanteninformatie, bestedingsgewoonten, populaire producten, en tijd de plaats het meeste verkeer heeft. Het team van Gegevens verwerkt al deze informatie om inzicht te verstrekken over hoe de plaats functioneert en waar de plaats meer verbetering nodig heeft. Het team van Gegevens kan adviseren welke tendensen aanstaande zijn en waar de zaken zich moeten concentreren.
 
-- **Financieel team**—Sommige ondernemingen hebben een klein team van Financiën en Boekhouding, dat of intern of extern kan zijn. Zij richten zich op het begroten, het voorspellen, en het beheren van het financiële aspect van het opzetten en het runnen van een e-commercesite.
+- **Financieel en boekhoudteam**—Sommige ondernemingen hebben een klein team van Financiën en Boekhouding, dat of intern of extern kan zijn. Zij richten zich op het begroten, het voorspellen, en het beheren van het financiële aspect van het opzetten en het runnen van een e-commercesite.

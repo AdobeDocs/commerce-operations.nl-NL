@@ -17,7 +17,7 @@ U kunt de volgende typen rapporten uitvoeren:
 
 - **Modulafhankelijkheden**: Toont het totale aantal gebiedsdelen tussen modules en of de gebiedsdelen hard of zacht zijn.
 - **Cirkelafhankelijkheden**: Toont het totale aantal gebiedsketens en het aantal en de lijst van kringafhankelijkheden voor elke module.
-- **Framework-afhankelijkheden**: Toont het totale aantal gebiedsdelen op het kader van de Handel door module (met inbegrip van het totale aantal kaderingangen voor elke bibliotheek).
+- **Framework-afhankelijkheden**: geeft het totale aantal afhankelijkheden van het kader voor handel per module weer (inclusief het totale aantal kaderitems voor elke bibliotheek).
 
 Een afhankelijkheid in een opmerking is ook een afhankelijkheid.
 
@@ -35,8 +35,8 @@ In de volgende tabel worden de opties, parameters en waarden van deze opdracht u
 | ----------------------- | -------------------------------------------------------------------------------------------------------------------- | --------- |
 | `show-modules` | Rapport voor moduleafhankelijkheden. | Ja |
 | `show-modules-circular` | Cirkelafhankelijkheidsrapport. | Ja |
-| `show-framework` | Framework-afhankelijkheidsrapport. | Ja |
-| `-d --directory` | Pad naar de basismap om te beginnen met zoeken naar rapportgegevens. | Nee |
+| `show-framework` | Rapport over frameafhankelijkheden. | Ja |
+| `-d --directory` | Pad naar de basismap om te zoeken naar rapportgegevens. | Nee |
 | `-o --output` | Specificeert de absolute weg van het dossiersysteem en de dossiernaam van het komma-gescheiden waarde (csv) outputdossier voor het rapport. | Nee |
 
 Als er geen map of bestandsnaam als argument wordt doorgegeven, wordt de volgende hoofdmap van de toepassing gebruikt als de standaardmap en worden de volgende standaardbestandsnamen gebruikt:

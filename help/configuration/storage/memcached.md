@@ -56,7 +56,7 @@ De handel gebruikt getelegrafeerd voor zittingsopslag maar niet voor pagina cach
 
 1. Meld u aan bij de beheerder en blader naar meerdere pagina&#39;s.
 
-   Als er geen fouten worden weergegeven, feliciteert u! memcaching werkt! U kunt naar keuze naar in het geheugen opgeslagen gegevens kijken zoals in de volgende stap wordt besproken.
+   Als er geen fouten worden weergegeven, feliciteert u dit! memcaching werkt! U kunt naar keuze naar in het geheugen opgeslagen gegevens kijken zoals in de volgende stap wordt besproken.
 
    Als de foutenvertoning (zoals HTTP 500 (de Interne Fout van de Server)), laat ontwikkelaarwijze toe en diagnoseer de kwestie. Zorg ervoor dat de in de cache opgeslagen gegevens worden uitgevoerd, correct zijn geconfigureerd en dat `env.php` heeft geen syntaxisfouten.
 

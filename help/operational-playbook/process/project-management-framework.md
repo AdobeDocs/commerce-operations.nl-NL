@@ -1,5 +1,5 @@
 ---
-title: Project Management Framework
+title: Projectbeheerframework
 description: Gebruik het DACI-projectbeheerframework om uw e-commerce-project te beheren.
 exl-id: 370793eb-e60b-43eb-bf7a-3c780538f280
 source-git-commit: e76f101df47116f7b246f21f0fe0fa72769d2776

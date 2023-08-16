@@ -33,11 +33,11 @@ In het volgende voorbeeld wordt het `crontab` configuratie voor het runnen van c
 >
 >Hoe vaak u berichtrijen controleert kan van uw bedrijfslogica en beschikbare systeemmiddelen afhangen. Over het algemeen wilt u wellicht meer controleren op nieuwe klanten en welkomste-mails verzenden dan een proces dat veel resources vergt, zoals het bijwerken van uw catalogus. U moet `cron` programma&#39;s volgens uw bedrijfsbehoeften.
 >
->U kunt deze configuratie configureren in de beheerderwinkels > Instellingen > Configuratie > Geavanceerd > Systeem > Cron-configuratieopties voor de groep: consumenten.
+>U kunt deze configuratie configureren in de beheerwinkels > Instellingen > Configuratie > Geavanceerd > Systeem > Cron-configuratieopties voor de groep: consumenten.
 >
 >Zie [Uitsnede configureren en uitvoeren](../cli/configure-cron-jobs.md) voor meer informatie over het gebruik `cron` met Commerce.
 
-U kunt ook procesbeheer gebruiken, zoals [Supervisor](https://supervisord.readthedocs.io/en/latest/) de status van processen te controleren. De manager kan de bevellijn gebruiken om de processen opnieuw te beginnen zoals nodig.
+U kunt ook procesbeheer gebruiken, zoals [Toezichthouder](https://supervisord.readthedocs.io/en/latest/) de status van processen te controleren. De manager kan de bevellijn gebruiken om de processen opnieuw te beginnen zoals nodig.
 
 ## Configuratie
 

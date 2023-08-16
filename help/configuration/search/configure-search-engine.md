@@ -30,20 +30,20 @@ Voor meer informatie over het configureren van uw zoekmachine raadpleegt u de [H
 Om uw systeem te vormen om Elasticsearch of OpenSearch te gebruiken:
 
 1. Meld u als beheerder aan bij de beheerder.
-1. Klikken **[!UICONTROL Stores]** > [!UICONTROL Settings] > **[!UICONTROL Configuration]** > **[!UICONTROL Catalog]** > **[!UICONTROL Catalog]** > **[!UICONTROL Catalog Search]**.
+1. Klik op **[!UICONTROL Stores]** > [!UICONTROL Settings] > **[!UICONTROL Configuration]** > **[!UICONTROL Catalog]** > **[!UICONTROL Catalog]** > **[!UICONTROL Catalog Search]**.
 1. Van de **[!UICONTROL Search Engine]** selecteert u de bijbehorende versie van uw zoekprogramma.
 
    De volgende lijst maakt een lijst van de vereiste opties om de verbinding met Handel te vormen en te testen. Tenzij u de serverinstellingen van uw zoekmachine hebt gewijzigd, werken de standaardwaarden beter. Ga verder met de volgende stap.
 
-   | Option | Beschrijving |
+   | Optie | Beschrijving |
    |--- |--- |
-   | **[!UICONTROL Server Hostname]** | Voer de volledig gekwalificeerde hostnaam of het IP-adres in van de computer waarop Elasticsearch of OpenSearch wordt uitgevoerd.<br>Adobe Commerce op cloudinfrastructuur: Haal deze waarde op van uw integratiesysteem. |
-   | **[!UICONTROL Server Port]** | Voer de proxypoort van de webserver in. De standaardwaarde is 9200<br>Adobe Commerce op cloudinfrastructuur: Haal deze waarde op van uw integratiesysteem. |
+   | **[!UICONTROL Server Hostname]** | Voer de volledig gekwalificeerde hostnaam of het IP-adres in van de computer waarop de Elasticsearch of OpenSearch wordt uitgevoerd.<br>Adobe Commerce op cloudinfrastructuur: haal deze waarde van uw integratiesysteem. |
+   | **[!UICONTROL Server Port]** | Voer de proxypoort van de webserver in. De standaardwaarde is 9200<br>Adobe Commerce op cloudinfrastructuur: haal deze waarde van uw integratiesysteem. |
    | **[!UICONTROL Index Prefix]** | Voer het voorvoegsel van de index van het zoekprogramma in. Als u één instantie voor meer dan één installatie van de Handel (het Opvoeren en de milieu&#39;s van de Productie) gebruikt, moet u een uniek voorvoegsel voor elke installatie specificeren. Anders kunt u het standaardvoorvoegsel magento2 gebruiken. |
    | **[!UICONTROL Enable HTTP Auth]** | Klikken **[!UICONTROL Yes]** alleen als u verificatie hebt ingeschakeld voor uw zoekmachineserver. Geef in dat geval een gebruikersnaam en wachtwoord op in de opgegeven velden. |
-   | **[!UICONTROL Server Timeout]** | Voer de hoeveelheid tijd (in seconden) in die moet worden gewacht wanneer u probeert verbinding te maken met de Elasticsearch- of OpenSearch-server. |
+   | **[!UICONTROL Server Timeout]** | Voer de hoeveelheid tijd (in seconden) in die moet worden gewacht wanneer u probeert verbinding te maken met de Elasticsearch of de OpenSearch-server. |
 
-1. Klikken **[!UICONTROL Test Connection]**.
+1. Klik op **[!UICONTROL Test Connection]**.
 
    Monsterrespons:
 
@@ -64,20 +64,20 @@ Zo ja, probeer dan het volgende:
 - Als de server op een verschillende gastheer van Handel is, login aan de server van de Handel en pingel de gastheer van de onderzoeksmotor. Los de kwesties van de netwerkconnectiviteit op en test opnieuw de verbinding.
 - Onderzoek het bevelvenster waarin u Elasticsearch of OpenSearch voor stapelsporen en uitzonderingen begon. U moet deze oplossen voordat u verdergaat. Zorg er met name voor dat u de zoekfunctie hebt gestart als een gebruiker met `root` rechten.
 - Controleer of [UNIX-firewall en SELinux](../../installation/prerequisites/search-engine/overview.md#firewall-and-selinux) zijn beide uitgeschakeld, of stel regels in waarmee je zoekmachine en handel met elkaar kunnen communiceren.
-- Controleer de waarde van de **[!UICONTROL Server Hostname]** veld. Controleer of de server beschikbaar is. U kunt het IP-adres van de server proberen.
+- Controleer de waarde van de **[!UICONTROL Server Hostname]** veld. Controleer of de server beschikbaar is. U kunt in plaats daarvan het IP-adres van de server proberen.
 - Gebruik de `netstat -an | grep <listen-port>` bevel om te verifiëren dat de haven in wordt gespecificeerd **[!UICONTROL Server Port]** wordt niet door een ander proces gebruikt.
 
-   Als u bijvoorbeeld wilt zien of de zoekmachine op de standaardpoort wordt uitgevoerd, gebruikt u de volgende opdracht:
+  Als u bijvoorbeeld wilt zien of de zoekmachine op de standaardpoort wordt uitgevoerd, gebruikt u de volgende opdracht:
 
-   ```bash
-   netstat -an | grep 9200
-   ```
+  ```bash
+  netstat -an | grep 9200
+  ```
 
-   Als het op haven 9200 loopt, toont het gelijkaardig aan het volgende:
+  Als het op haven 9200 loopt, toont het gelijkaardig aan het volgende:
 
-   ```terminal
-   `tcp        0      0 :::9200            :::-         LISTEN`
-   ```
+  ```terminal
+  `tcp        0      0 :::9200            :::-         LISTEN`
+  ```
 
 ## Zoekopdracht in catalogus opnieuw indexeren en de cache van de volledige pagina vernieuwen
 
@@ -93,7 +93,7 @@ De cache vernieuwen met behulp van Admin:
 
 De cache reinigen met de opdrachtregel: [`bin/magento cache:clean`](../cli/manage-cache.md#clean-and-flush-cache-types)
 
-Herindexeren met behulp van de opdrachtregel:
+Herindexeren met de opdrachtregel:
 
 1. Meld u aan bij de Commerce-server als of schakel over naar de [eigenaar van bestandssysteem](../../installation/prerequisites/file-system/overview.md).
 1. Voer een van de volgende opdrachten in:

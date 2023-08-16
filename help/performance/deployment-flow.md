@@ -1,6 +1,6 @@
 ---
 title: Implementatiestroom
-description: Meer informatie over de stappen die nodig zijn voor de implementatie van Adobe Commerce of Magento Open Source in een productieomgeving.
+description: Meer informatie over de stappen die nodig zijn voor het implementeren van Adobe Commerce of Magento Open Source in een productieomgeving.
 feature: Best Practices, Deploy
 exl-id: 88da0b1b-5aa7-4f1c-9d01-ae58324b2754
 source-git-commit: 012cba58b336b032b1c911539008c1fb961c2e07
@@ -16,9 +16,9 @@ De [!DNL Commerce] de stroom van de productieleiding helpt een opslag maximumpre
 
 ## Afhankelijkheden installeren
 
-De `composer.json` en `composer.lock` bestanden beheren [!DNL Commerce] afhankelijkheden en installeer de juiste versie voor elk pakket. U moet afhankelijkheden installeren voordat [instructies voor injectie van afhankelijkheid bij voorbewerking](#preprocess-dependency-injection-instructions) als u de [autoloader](#update-the-autoloader).
+De `composer.json` en `composer.lock` bestanden beheren [!DNL Commerce] afhankelijkheden en installeer de juiste versie voor elk pakket. U moet afhankelijkheden installeren voordat [instructies voor injectie van afhankelijkheid bij voorbewerking](#preprocess-dependency-injection-instructions) als u van plan bent de [autoloader](#update-the-autoloader).
 
-Om te installeren [!DNL Commerce] afhankelijkheden:
+Om te installeren [!DNL Commerce] afhankelijkheid:
 
 ```bash
 composer install --no-dev

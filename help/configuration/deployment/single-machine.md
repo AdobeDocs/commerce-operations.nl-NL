@@ -6,15 +6,15 @@ exl-id: ca73309c-7584-4506-99de-dd933651eeb6
 source-git-commit: dcc283b901917e3681863370516771763ae87462
 workflow-type: tm+mt
 source-wordcount: '186'
-ht-degree: 0%
+ht-degree: 1%
 
 ---
 
-# Eén computer implementeren
+# Implementatie van één computer
 
 Dit onderwerp verstrekt instructies voor het opstellen van updates aan Handel op een productieserver gebruikend de bevellijn. Dit proces is van toepassing op technische gebruikers die verantwoordelijk zijn voor winkels die op één computer worden uitgevoerd en waarop een aantal thema&#39;s en landinstellingen zijn geïnstalleerd.
 
-## Aannames
+## Veronderstellingen
 
 - U hebt Commerce geïnstalleerd met [Composer](../../installation/composer.md).
 - U past rechtstreeks updates toe op de server.

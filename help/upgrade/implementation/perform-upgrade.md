@@ -11,7 +11,7 @@ ht-degree: 0%
 
 # Een upgrade uitvoeren
 
-U kunt uw Adobe Commerce- of Magento Open Source-toepassing upgraden vanaf de opdrachtregel als u de software hebt geïnstalleerd door:
+U kunt de Adobe Commerce- of Magento Open Source-toepassing upgraden vanaf de opdrachtregel als u de software hebt geïnstalleerd door:
 
 - Het pakket met de `composer create-project` gebruiken.
 - Het gecomprimeerde archief installeren.
@@ -34,7 +34,7 @@ U moet de opdracht [upgradevoorwaarden](../prepare/prerequisites.md) om uw omgev
 
 >[!NOTE]
 >
->Zie de voorbeelden aan het eind van deze sectie voor hulp met het specificeren van verschillende versieniveaus. Bijvoorbeeld kleine release, kwaliteitspatch en beveiligingspatch. Adobe Commerce-klanten hebben twee weken voor de datum van algemene beschikbaarheid (GA) toegang tot patches. Pakketten met pre-release zijn alleen beschikbaar via Composer. U kunt hen niet op het Portaal van Downloads of GitHub tot GA vinden. Neem contact op met Adobe Commerce Support als u deze pakketten niet kunt vinden in Composer.
+>Zie de voorbeelden aan het einde van deze sectie voor hulp bij het opgeven van verschillende releaseniveaus. Bijvoorbeeld kleine release, kwaliteitspatch en beveiligingspatch. Adobe Commerce-klanten hebben twee weken voor de datum van algemene beschikbaarheid (GA) toegang tot patches. Pakketten met pre-release zijn alleen beschikbaar via Composer. U kunt hen niet op het Portaal van Downloads of GitHub tot GA vinden. Neem contact op met Adobe Commerce Support als u deze pakketten niet kunt vinden in Composer.
 
 1. Schakel over naar de onderhoudsmodus om toegang tot uw winkel tijdens het upgradeproces te voorkomen.
 
@@ -74,7 +74,7 @@ U moet de opdracht [upgradevoorwaarden](../prepare/prerequisites.md) om uw omgev
 
 1. Voeg specifieke pakketten toe of verwijder deze op basis van uw behoeften.
 
-   Als u bijvoorbeeld een upgrade uitvoert van Magento Open Source naar Adobe Commerce, verwijdert u het Magento Open Source-pakket.
+   Als u bijvoorbeeld een upgrade uitvoert van de Magento Open Source naar Adobe Commerce, verwijdert u het pakket Magento Open Source.
 
    ```bash
    composer remove magento/product-community-edition --no-update
@@ -88,15 +88,15 @@ U moet de opdracht [upgradevoorwaarden](../prepare/prerequisites.md) om uw omgev
 
    - _Adobe Commerce:_
 
-      ```bash
-      composer require magento/module-bundle-sample-data:100.4.* magento/module-widget-sample-data:100.4.* magento/module-theme-sample-data:100.4.* magento/module-catalog-sample-data:100.4.* magento/module-customer-sample-data:100.4.* magento/module-cms-sample-data:100.4.*  magento/module-catalog-rule-sample-data:100.4.* magento/module-sales-rule-sample-data:100.4.* magento/module-review-sample-data:100.4.* magento/module-tax-sample-data:100.4.* magento/module-sales-sample-data:100.4.* magento/module-grouped-product-sample-data:100.4.* magento/module-downloadable-sample-data:100.4.* magento/module-msrp-sample-data:100.4.* magento/module-configurable-sample-data:100.4.* magento/module-product-links-sample-data:100.4.* magento/module-wishlist-sample-data:100.4.* magento/module-swatches-sample-data:100.4.* magento/sample-data-media:100.4.* magento/module-offline-shipping-sample-data:100.4.* magento/module-gift-card-sample-data:100.4.* magento/module-customer-balance-sample-data:100.4.* magento/module-target-rule-sample-data:100.4.* magento/module-gift-registry-sample-data:100.4.* magento/module-multiple-wishlist-sample-data:100.4.* --no-update
-      ```
+     ```bash
+     composer require magento/module-bundle-sample-data:100.4.* magento/module-widget-sample-data:100.4.* magento/module-theme-sample-data:100.4.* magento/module-catalog-sample-data:100.4.* magento/module-customer-sample-data:100.4.* magento/module-cms-sample-data:100.4.*  magento/module-catalog-rule-sample-data:100.4.* magento/module-sales-rule-sample-data:100.4.* magento/module-review-sample-data:100.4.* magento/module-tax-sample-data:100.4.* magento/module-sales-sample-data:100.4.* magento/module-grouped-product-sample-data:100.4.* magento/module-downloadable-sample-data:100.4.* magento/module-msrp-sample-data:100.4.* magento/module-configurable-sample-data:100.4.* magento/module-product-links-sample-data:100.4.* magento/module-wishlist-sample-data:100.4.* magento/module-swatches-sample-data:100.4.* magento/sample-data-media:100.4.* magento/module-offline-shipping-sample-data:100.4.* magento/module-gift-card-sample-data:100.4.* magento/module-customer-balance-sample-data:100.4.* magento/module-target-rule-sample-data:100.4.* magento/module-gift-registry-sample-data:100.4.* magento/module-multiple-wishlist-sample-data:100.4.* --no-update
+     ```
 
    - _Magento Open Source:_
 
-      ```bash
-      composer require magento/module-bundle-sample-data:100.4.* magento/module-widget-sample-data:100.4.* magento/module-theme-sample-data:100.4.* magento/module-catalog-sample-data:100.4.* magento/module-customer-sample-data:100.4.* magento/module-cms-sample-data:100.4.*  magento/module-catalog-rule-sample-data:100.4.* magento/module-sales-rule-sample-data:100.4.* magento/module-review-sample-data:100.4.* magento/module-tax-sample-data:100.4.* magento/module-sales-sample-data:100.4.* magento/module-grouped-product-sample-data:100.4.* magento/module-downloadable-sample-data:100.4.* magento/module-msrp-sample-data:100.4.* magento/module-configurable-sample-data:100.4.* magento/module-product-links-sample-data:100.4.* magento/module-wishlist-sample-data:100.4.* magento/module-swatches-sample-data:100.4.* magento/sample-data-media:100.4.* magento/module-offline-shipping-sample-data:100.4.* --no-update
-      ```
+     ```bash
+     composer require magento/module-bundle-sample-data:100.4.* magento/module-widget-sample-data:100.4.* magento/module-theme-sample-data:100.4.* magento/module-catalog-sample-data:100.4.* magento/module-customer-sample-data:100.4.* magento/module-cms-sample-data:100.4.*  magento/module-catalog-rule-sample-data:100.4.* magento/module-sales-rule-sample-data:100.4.* magento/module-review-sample-data:100.4.* magento/module-tax-sample-data:100.4.* magento/module-sales-sample-data:100.4.* magento/module-grouped-product-sample-data:100.4.* magento/module-downloadable-sample-data:100.4.* magento/module-msrp-sample-data:100.4.* magento/module-configurable-sample-data:100.4.* magento/module-product-links-sample-data:100.4.* magento/module-wishlist-sample-data:100.4.* magento/module-swatches-sample-data:100.4.* magento/sample-data-media:100.4.* magento/module-offline-shipping-sample-data:100.4.* --no-update
+     ```
 
 1. Voer een upgrade uit op uw exemplaar met behulp van het volgende `composer require-commerce` opdrachtsyntaxis:
 
@@ -108,16 +108,17 @@ U moet de opdracht [upgradevoorwaarden](../prepare/prerequisites.md) om uw omgev
 
    - `<product>` —(Vereist) Het pakket dat moet worden bijgewerkt. Voor installaties ter plaatse moet deze waarde ofwel `product-community-edition` of `product-enterprise-edition`.
 
-   - `<version>` —(Vereist) De versie van Adobe Commerce of Magento Open Source waarnaar u een upgrade uitvoert. Bijvoorbeeld: `2.4.3`.
+   - `<version>` —(Vereist) De versie van Adobe Commerce of Magento Open Source waarnaar u een upgrade uitvoert. Bijvoorbeeld, `2.4.3`.
 
    - `--no-update` — (Vereist) maakt de automatische update van de gebiedsdelen onbruikbaar.
 
    - `--interactive-root-conflicts` — (Optioneel) Hiermee kunt u op interactieve wijze verouderde waarden uit eerdere versies of aangepaste waarden die niet overeenkomen met de versie waarnaar u de upgrade uitvoert, weergeven en bijwerken.
 
-   - `--force-root-updates` — (Optioneel) Hiermee worden alle conflicterende aangepaste waarden genegeerd met de verwachte Magento-waarden.
+   - `--force-root-updates` — (Optioneel) Hiermee worden alle conflicterende aangepaste waarden genegeerd met de verwachte Magento&#39;s.
 
    - `--help` —(Optioneel) Bevat gebruiksgegevens voor de plug-in.
-   Als beide `--interactive-root-conflicts` noch `--force-root-updates` opgegeven, behoudt de opdracht de bestaande waarden in conflict en geeft een waarschuwingsbericht weer. Raadpleeg voor meer informatie over de plug-in de [README voor gebruik van insteekmodule](https://github.com/magento/composer-root-update-plugin/blob/develop/src/Magento/ComposerRootUpdatePlugin/README.md).
+
+   Als geen van beide `--interactive-root-conflicts` noch `--force-root-updates` opgegeven, behoudt de opdracht de bestaande waarden in conflict en geeft een waarschuwingsbericht weer. Raadpleeg voor meer informatie over de plug-in de [README voor gebruik van insteekmodule](https://github.com/magento/composer-root-update-plugin/blob/develop/src/Magento/ComposerRootUpdatePlugin/README.md).
 
 1. Werk de gebiedsdelen bij.
 
@@ -143,7 +144,7 @@ composer show magento/product-enterprise-edition 2.4.* --available | grep -m 1 v
 
 ### Voorbeeld - kleine release
 
-Kleine versies bevatten nieuwe functies, oplossingen voor de kwaliteit en beveiligingsoplossingen. Gebruik Composer om een kleine release op te geven. U kunt bijvoorbeeld als volgt het metapakket Magento Open Source 2.4.3 opgeven:
+Kleine versies bevatten nieuwe functies, oplossingen voor de kwaliteit en beveiligingsoplossingen. Gebruik Composer om een kleine release op te geven. U kunt bijvoorbeeld het metapakket Magento Open Source 2.4.3 opgeven:
 
 _Magento Open Source_:
 
@@ -159,7 +160,7 @@ composer require-commerce magento/product-enterprise-edition 2.4.0 --no-update
 
 ### Voorbeeld - Kwaliteitspatch
 
-Kwaliteitspatches bevatten voornamelijk functionele _en_ beveiligingsoplossingen. Soms kunnen ze echter wel nieuwe, achterwaartse compatibele functies bevatten. Gebruik Composer om een kwaliteitspatch te downloaden. U kunt bijvoorbeeld als volgt het metapakket Magento Open Source 2.4.1 opgeven:
+Kwaliteitspatches bevatten voornamelijk functionele _en_ beveiligingsoplossingen. Soms kunnen ze echter wel nieuwe, achterwaartse compatibele functies bevatten. Gebruik Composer om een kwaliteitspatch te downloaden. U kunt bijvoorbeeld het metapakket Magento Open Source 2.4.1 opgeven:
 
 ```bash
 composer require-commerce magento/product-community-edition 2.4.3 --no-update

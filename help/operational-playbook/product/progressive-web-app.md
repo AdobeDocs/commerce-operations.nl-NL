@@ -11,7 +11,7 @@ ht-degree: 0%
 
 # Progressieve webtoepassing (PWA)
 
-Progressieve webtoepassingen (PWA) zijn de toekomst van winkelervaringen. PWA zijn de next-generation webtechnologiestandaard die toepassingen als winkelen op mobiele apparaten en desktopapparaten biedt. Met behulp van PWA kunnen handelaren hun eigen krachtige PWA boven op hun handelsplatform bouwen, waarvan is bewezen dat ze de betrokkenheid van gebruikers verhogen, conversietarieven verhogen en inkomstenstromen diversifiëren.
+Progressieve webtoepassingen (PWA) zijn de toekomst van winkelervaringen. PWA zijn de volgende generatie webtechnologiestandaard die toepassingen als winkelen op mobiele en desktopapparaten biedt. Met behulp van PWA kunnen handelaren hun eigen krachtige PWA boven op hun handelsplatform bouwen, waarvan is bewezen dat ze de betrokkenheid van gebruikers verhogen, conversietarieven verhogen en inkomstenstromen diversifiëren.
 
 ## Functies
 

@@ -1,6 +1,6 @@
 ---
 title: Gegevens importeren uit configuratiebestanden
-description: Importeer Adobe Commerce-configuratie-instellingen uit configuratiebestanden.
+description: Adobe Commerce-configuratie-instellingen importeren uit configuratiebestanden.
 exl-id: 7d9f156c-e8d3-4888-b359-5d9aa8c4ea05
 source-git-commit: 95ffff39d82cc9027fa633dffedf15193040802d
 workflow-type: tm+mt
@@ -13,7 +13,7 @@ ht-degree: 0%
 
 {{file-system-owner}}
 
-Wanneer u een productiesysteem instelt met behulp van Commerce 2.2 [implementatiemodel voor pijpleidingen](../deployment/technical-details.md)moet u _import_ configuratie-instellingen van `config.php` en `env.php` in de database.
+Wanneer u een productiesysteem instelt met behulp van Commerce 2.2 [implementatiemodel voor pijpleidingen](../deployment/technical-details.md), moet u _import_ configuratie-instellingen van `config.php` en `env.php` in de database.
 Deze instellingen zijn onder andere configuratiepaden en -waarden, websites, winkels, winkelweergaven en thema&#39;s.
 
 Nadat u websites, winkels, weergaven en thema&#39;s hebt geïmporteerd, kunt u productkenmerken maken en deze toepassen op websites, winkels en winkelweergaven op het productiesysteem.
@@ -82,32 +82,32 @@ Wanneer wij achterste modellen invoeren, bewaren wij niet de configuratiewaarden
 De volgende typen configuraties worden geïmporteerd.
 (Deze configuraties staan onder de `scopes` array in `config.php`.)
 
-- `websites`: Configuratie van websites
-- `groups`: aan opslag gerelateerde configuratie
+- `websites`: Configuratie met betrekking tot websites
+- `groups`: hiermee wordt de gerelateerde configuratie opgeslagen
 - `stores`: verwante configuratie van weergaven opslaan
 
 De voorgaande configuraties kunnen in de volgende modi worden geïmporteerd:
 
-- `create`: `config.php` bevat nieuwe entiteiten (`websites`, `groups`, `stores`) die niet aanwezig zijn in de productieomgeving
+- `create`: `config.php` bevat nieuwe entiteiten (`websites`, `groups`, `stores`) die ontbreken in de productieomgeving
 - `update`: `config.php` bevat entiteiten (`websites`, `groups`, `stores`) die verschillen van de productieomgeving
 - `delete`: `config.php` doet _niet_ bevatten entiteiten (`websites`, `groups`, `stores`) die aanwezig zijn in de productieomgeving
 
 >[!INFO]
 >
->De hoofdcategorie die aan winkels is gekoppeld, wordt niet geïmporteerd. U moet een wortelcategorie met een opslag associëren gebruikend Commerce Admin.
+>We importeren de hoofdcategorie die aan winkels is gekoppeld niet. U moet een wortelcategorie met een opslag associëren gebruikend Commerce Admin.
 
 ### Themaconfiguratie
 
-De themaconfiguratie omvat alle thema&#39;s die in uw systeem van de Handel worden geregistreerd; de gegevens rechtstreeks afkomstig zijn van `theme` databasetabel. (Themaconfiguratie bevindt zich in de `themes` array in `config.php`.)
+De themaconfiguratie omvat alle thema&#39;s die in uw systeem van de Handel worden geregistreerd; de gegevens komen direct uit `theme` databasetabel. (Themaconfiguratie bevindt zich in de `themes` array in `config.php`.)
 
 #### Structuur van themagegevens
 
 De sleutel van serie is volledig themaweg: `area` + `theme path`
 
-Bijvoorbeeld: `frontend/Magento/luma`.
+Bijvoorbeeld, `frontend/Magento/luma`.
 `frontend` is gebied en `Magento/luma` is themapad.
 
-De waarde van array is gegevens over thema: code, titel, pad, bovenliggende id
+De waarde van een array is gegevens over thema: code, titel, pad, bovenliggende id
 
 Volledig voorbeeld:
 
@@ -128,4 +128,3 @@ Volledig voorbeeld:
 >
 >- _Themaregistratie_. Als een themagegevens zijn gedefinieerd in `config.php` maar de broncode van het thema is niet aanwezig in het bestandssysteem, het thema wordt genegeerd (dat wil zeggen, niet geregistreerd).
 >- _Thema verwijderen_. Als een thema niet aanwezig is in `config.php` maar de broncode staat in het bestandssysteem, het thema wordt niet verwijderd.
-

@@ -13,7 +13,7 @@ Adobe Commerce en Magento Open Source gebruiken uw coderingssleutel om het volge
 * Gebruikersnamen en wachtwoorden die zijn opgegeven in de beheerconfiguratie (bijvoorbeeld aanmelden bij betaalgateways)
 * CAPTCHA-waarden die via het netwerk worden verzonden
 
-Adobe Commerce en Magento Open Source do *niet* versleutelen:
+Adobe Commerce en Magento Open Source doen *niet* versleutelen:
 
 * Administratieve en klantengebruikersnamen en wachtwoorden (deze wachtwoorden worden gehakt)
 * Adres

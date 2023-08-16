@@ -29,7 +29,7 @@ Indien toegelaten, zal de verzender de antwoordkopballen van het achtereind eval
 
 De hierboven vermelde benadering van de verzender TTL zal verzoeken en lading op de uitgever zeer verminderen, nochtans zijn er sommige activa die zeer onwaarschijnlijk zijn om te veranderen en daarom kunnen zelfs de verzoeken aan de verzender worden verminderd door relevante dossiers plaatselijk op browser van een gebruiker in het voorgeheugen onder te brengen. Het logo van de site, dat op elke pagina van de site in de sitesjabloon wordt weergegeven, hoeft bijvoorbeeld niet telkens te worden aangevraagd bij de verzender. Dit kan in plaats daarvan worden opgeslagen in de browsercache van de gebruiker. De vermindering van bandbreedtevereisten voor elke paginading zou een grote invloed hebben op de reactiesnelheid van de site en de laadtijden van de pagina.
 
-Het cachegeheugen op browserniveau wordt doorgaans gebruikt via &#39;Cache-Control&#39;: max-age=&quot; responsheader. De maxage-instelling vertelt de browser hoeveel seconden het bestand in cache moet plaatsen voordat wordt geprobeerd het opnieuw te valideren of opnieuw van de site te vragen. Dit concept cache max-age wordt meestal &#39;Cache Expiration&#39; of TTL (&#39;Time to Live&#39;) genoemd. Op grote schaal handelservaring bieden - met Adobe Experience Manager, Commerce Integration Framework, Adobe Commerce 7
+Het in cache plaatsen op browserniveau gebeurt doorgaans via de responsheader &#39;Cache-Control: max-age=&#39;. De maxage-instelling vertelt de browser hoeveel seconden het bestand in cache moet plaatsen voordat wordt geprobeerd het opnieuw te valideren of opnieuw van de site te vragen. Dit concept cache max-age wordt meestal &#39;Cache Expiration&#39; of TTL (&#39;Time to Live&#39;) genoemd. Op grote schaal handelservaringen bieden - met Adobe Experience Manager, Commerce Integration Framework, Adobe Commerce 7
 
 Enkele gebieden van een AEM-/CIF-/Adobe Commerce-site die in de browser van de client in cache kunnen worden geplaatst, zijn:
 
@@ -42,11 +42,11 @@ Enkele gebieden van een AEM-/CIF-/Adobe Commerce-site die in de browser van de c
 
 De standaarddispatcherconfiguratie gebruikt /statfillevel &quot;0&quot;het plaatsen - dit betekent dat één enkel &quot;.stat&quot;dossier bij de wortel van htdocs folder (de folder van de documentwortel) wordt geplaatst. Als een wijziging in een pagina of bestand in AEM wordt aangebracht, wordt de wijzigingstijd van dit ene statusbestand bijgewerkt naar de tijd van de wijziging. Als de tijd nieuwer is dan wijzigingstijd van de bron, dan zal de verzender overwegen alle middelen ongeldig worden verklaard en om het even welk verder verzoek om een ongeldig gemaakt middel zal een vraag aan de Publish instantie teweegbrengen. Met deze instelling maakt elke activering de gehele cache ongeldig.
 
-Voor om het even welke plaats, vooral handelsplaatsen met zware lading, zou dit een onnodige hoeveelheid lading op de AEM publiceren rij voor de volledige plaatsstructuur om met slechts één enkele paginaupdate ongeldig te worden.
+Voor om het even welke plaats, vooral handelsplaatsen met zware lading, zou dit een onnodige hoeveelheid lading op de AEM Publish rij voor de volledige plaatsstructuur plaatsen om met slechts één enkele paginaupdate ongeldig te worden.
 
 In plaats daarvan, kan het statfileniveau plaatsen aan een hogere waarde worden gewijzigd, die aan de diepte van subdirectories in de htdocs folder van de folder van de documentwortel beantwoordt zodat wanneer een dossier dat op een bepaald niveau wordt gevestigd ongeldig wordt gemaakt dan slechts de dossiers op dat .stat folderniveau en hieronder worden bijgewerkt.
 
-Bijvoorbeeld: je hebt een productpaginasjabloon op:
+Bijvoorbeeld: laten we zeggen dat u een sjabloon voor een productpagina hebt op:
 
 ```
 content/ecommerce/us/en/products/product-page.html
@@ -100,7 +100,7 @@ De bovenstaande cacheopties kunnen worden ingesteld met de AEM OSGi-configuratie
 
 ## Hybride caching-client-side GraphQL-verzoeken binnen in cache geplaatste verzendingspagina&#39;s
 
-Het is ook mogelijk om pagina&#39;s op een hybride manier in cache te plaatsen: het is mogelijk dat een CIF-pagina componenten bevat die Adobe Commerce altijd rechtstreeks via de browser van de klant om de meest recente informatie vragen. Dit kan handig zijn voor specifieke gebieden van de pagina in een sjabloon die belangrijk zijn om te worden bijgewerkt met real-time informatie: Productprijzen binnen een PDP, bijvoorbeeld. Wanneer de prijzen vaak veranderen als gevolg van dynamische prijsafstemming, kan die informatie zodanig worden geconfigureerd dat ze niet in de cache van de verzender wordt geplaatst, maar kunnen de prijzen rechtstreeks via GraphQL API&#39;s via AEM CIF-webcomponenten in de browser van de klant worden opgehaald vanuit Adobe Commerce.
+Het is ook mogelijk om pagina&#39;s op een hybride manier in cache te plaatsen: het is mogelijk dat een CIF-pagina componenten bevat die altijd rechtstreeks vanuit de browser van de klant de meest recente informatie van Adobe Commerce opvragen. Dit kan handig zijn voor specifieke gebieden van de pagina in een sjabloon die belangrijk zijn om te worden bijgewerkt met real-time informatie: bijvoorbeeld productprijzen binnen een PDP. Wanneer de prijzen vaak veranderen als gevolg van dynamische prijsafstemming, kan die informatie zodanig worden geconfigureerd dat ze niet in de cache van de verzender wordt geplaatst, maar kunnen de prijzen rechtstreeks via GraphQL API&#39;s via AEM CIF-webcomponenten in de browser van de klant worden opgehaald vanuit Adobe Commerce.
 
 Dit kan worden geconfigureerd via de instellingen voor AEM componenten. Voor Prijsinformatie op pagina&#39;s met productlijsten kunt u dit configureren in de sjabloon voor productlijsten, waarbij u de component met productlijsten op de pagina-instellingen selecteert en de optie &quot;Ladingsprijzen&quot; controleert. Hetzelfde geldt voor de voorraadniveaus.
 
@@ -128,7 +128,7 @@ Tijdens een drukke gebeurtenis kan dit er zelfs toe leiden dat de AEM uitgevers 
 
 >[!NOTE]
 >
->Verdere lezing over het belang van het vaststellen van `ignoreUrlParams` is beschikbaar in het dialoogvenster [aem-dispatcher-experimenten](https://github.com/adobe/aem-dispatcher-experiments/tree/main/experiments/ignoreUrlParams) GitHub-opslagplaats.
+>Verdere lezing over het belang van het vaststellen van `ignoreUrlParams` is beschikbaar in [aem-dispatcher-experimenten](https://github.com/adobe/aem-dispatcher-experiments/tree/main/experiments/ignoreUrlParams) GitHub-opslagplaats.
 
 Het zou daarom moeten worden gevormd om alle parameters door gebrek in &quot;ignoreUrlParams&quot;te negeren, behalve waar een parameter van de GET wordt gebruikt die de structuur van HTML van een pagina zou veranderen. Een voorbeeld hiervan zou met een onderzoekspagina zijn waar de onderzoekstermijn in URL als parameter van de GET is - in dit geval zou u ignoreUrlParams dan manueel moeten vormen om parameters zoals gclid, fbclid en om het even welke andere het volgen parameters te negeren uw reclamekanalen gebruiken, verlatend de GET parameters die voor normale plaatsverrichtingen worden vereist onaangetast.
 

@@ -16,7 +16,7 @@ ht-degree: 0%
 Voor een meer reagerende plaats van de Handel, optimaliseer CSS en JavaScript (JS) middeldossiers en elimineer render-blokkerende middelen.
 
 - **CSS- en JS-bestanden optimaliseren**—Verminder de tijd die nodig is om CSS- en JavaScript-bestanden (JS) te laden door Adobe Commerce te configureren voor het samenvoegen, miniaturen en bundelen van afzonderlijke bestanden in één bestand.
-- **Renderblokkeringsbronnen elimineren**—Overweeg inline kritieke JS- en CSS-functies te leveren en alle niet-kritieke JS/CSS-stijlen uit te stellen. Zie voor richtsnoeren [Renderblokkeringsbronnen elimineren](https://web.dev/render-blocking-resources/).
+- **Renderblokkeringsbronnen elimineren**—Overweeg inline kritieke JS- en CSS-functies te leveren en alle niet-kritieke JS/CSS-stijlen uit te stellen. Voor richtsnoeren, zie [Renderblokkeringsbronnen elimineren](https://web.dev/render-blocking-resources/).
 
 ## Betrokken producten en versies
 
@@ -26,7 +26,7 @@ Voor een meer reagerende plaats van de Handel, optimaliseer CSS en JavaScript (J
 - Adobe Commerce ter plaatse
 - Magento Open Source
 
-## CSS-bestanden samenvoegen of miniaturen
+## CSS-bestanden samenvoegen of beperken
 
 De tijd die nodig is om CSS- en JavaScript-bestanden (JS) te laden, kan worden verkort door afzonderlijke bestanden samen te voegen, te miniaturen en te bundelen in één bestand.
 
@@ -36,7 +36,7 @@ De tijd die nodig is om CSS- en JavaScript-bestanden (JS) te laden, kan worden v
 
 ### Admin gebruiken
 
-Als u CSS samenvoegen of miniaturen wilt inschakelen, gaat u naar de [!UICONTROL **Beheer** > **Winkels** > **Instelling** > **Configuratie** > **Geavanceerd** > **Ontwikkelaar** > **CSS-instellingen**].
+Als u CSS samenvoegen of miniaturen wilt inschakelen, gaat u naar de [!UICONTROL **Beheerder** > **Winkels** > **Instelling** > **Configuratie** > **Geavanceerd** > **Ontwikkelaar** > **CSS-instellingen**].
 
 ### De opdrachtregel gebruiken
 
@@ -64,7 +64,7 @@ CSS-minificatie inschakelen in Adobe Commerce op cloudinfrastructuur:
 
 ### Admin gebruiken
 
-Op de *Beheer* zijbalk, ga naar **Winkels** > **Instellingen** > **Configuratie** > **Geavanceerd** > **Ontwikkelaar** > **JavaScript-instellingen**.
+Op de *Beheerder* zijbalk, ga naar **Winkels** > **Instellingen** > **Configuratie** > **Geavanceerd** > **Ontwikkelaar** > **JavaScript-instellingen**.
 
 ### De opdrachtregel gebruiken
 
@@ -91,6 +91,6 @@ php -f bin/magento config:set dev/js/enable_js_bundling 1
 ## Aanvullende informatie
 
 - [Optimalisatie-instellingen aan de clientzijde](../../../performance/configuration.md#client-side-optimization-settings)
-- [Handboek: Bronbestanden optimaliseren](https://docs.magento.com/user-guide/system/file-optimization.html)
-- [Frontend Developer Guide: Samenvoegen, miniaturen en siteprestaties van CSS](https://developer.adobe.com/commerce/frontend-core/guide/css/#css-merging-minification-and-performance)
+- [Gebruikershandleiding: Bronbestanden optimaliseren](https://docs.magento.com/user-guide/system/file-optimization.html)
+- [Frontend Developer Guide: CSS samenvoegen, miniaturen en siteprestaties](https://developer.adobe.com/commerce/frontend-core/guide/css/#css-merging-minification-and-performance)
 - [Geavanceerde JavaScript-bundeling](../../../performance/advanced-js-bundling.md)

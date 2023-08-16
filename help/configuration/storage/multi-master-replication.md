@@ -19,17 +19,17 @@ ht-degree: 0%
 De replicatie van het gegevensbestand van de vestiging verstrekt de volgende voordelen:
 
 - Biedt gegevensback-up
-- Hiermee wordt gegevensanalyse ingeschakeld zonder dat dit van invloed is op de master database
+- Hiermee wordt gegevensanalyse ingeschakeld zonder dat dit van invloed is op de hoofddatabase
 - Schaalbaarheid
 
-MySQL-databases worden asynchroon gerepliceerd. Dit betekent dat slaven niet permanent hoeven te zijn verbonden om updates van de master databases te ontvangen.
+MySQL-databases worden asynchroon gerepliceerd. Dit betekent dat slaven niet permanent hoeven te zijn verbonden om updates van de master te ontvangen.
 
 ## Database-replicatie configureren
 
 Een diepgaande bespreking van gegevensbestandreplicatie is voorbij het werkingsgebied van deze gids. Als u dit wilt instellen, kunt u een bron raadplegen zoals:
 
 - [MySQL-documentatie](https://dev.mysql.com/doc/refman/5.6/en/replication.html)
-- [Master slave-replicatie instellen in MySQL (digitalocean)](https://www.digitalocean.com/community/tutorials/how-to-set-up-replication-in-mysql)
+- [Masterslave-replicatie instellen in MySQL (digitalocean)](https://www.digitalocean.com/community/tutorials/how-to-set-up-replication-in-mysql)
 
 De handel verstrekt steekproefMySQL configuraties voor uw slave gegevensbestanden. Een eenvoudige configuratie wordt verstrekt met `ResourceConnections` class `README.md`.
 

@@ -22,7 +22,7 @@ Voordat u deze opdracht uitvoert, moet u het volgende doen: *of* u moet [de toep
 
 ## De vergrendeling configureren
 
-Configureer een vergrendelingsprovider om te voorkomen dat dubbele uitsnijdtaken en uitsnijdgroepen worden gestart. (Vereist Adobe Commerce of Magento Open Source 2.2.x, 2.2.5 en hoger, en 2.3.3 en hoger.)
+Configureer een vergrendelingsprovider om te voorkomen dat dubbele uitsnijdtaken en uitsnijdgroepen worden gestart. (Adobe Commerce of Magento Open Source 2.2.x, 2.2.5 en hoger en 2.3.3 en hoger vereist.)
 
 Adobe Commerce en Magento Open Source gebruiken de database om vergrendelingen standaard op te slaan. Als u meerdere knooppunten op uw servers hebt, raden we u aan Zookeeper als vergrendelingsprovider te gebruiken.
 
@@ -40,6 +40,6 @@ bin/magento setup:config:set [--<parameter_name>=<value>, ...]
 |--- |--- |--- |
 | `--lock-provider` | Naam provider vergrendelen: `db`, `zookeeper`, of `file`.<br><br>De standaardvergrendelingsprovider: `db` | Nee |
 | `--lock-db-prefix` | Het specifieke db voorvoegsel om vergrendelingsconflicten te voorkomen bij het gebruik van het `db` vergrendelingsprovider.<br><br>De standaardwaarde: `NULL` | Nee |
-| `--lock-zookeeper-host` | Host en poort om verbinding te maken met de Zookeeper-cluster wanneer u de `zookeeper` vergrendelingsprovider.<br><br>Bijvoorbeeld: `127.0.0.1:2181` | Ja, als u `--lock-provider=zookeeper` |
-| `--lock-zookeeper-path` | Het pad waar Zookeeper sloten opslaat.<br><br>Het standaardpad is: `/magento/locks` | Nee |
+| `--lock-zookeeper-host` | Gastheer en poort om verbinding te maken met de Zookeeper-cluster wanneer u de `zookeeper` vergrendelingsprovider.<br><br>Bijvoorbeeld: `127.0.0.1:2181` | Ja, als u `--lock-provider=zookeeper` |
+| `--lock-zookeeper-path` | Het pad waar Zookeeper vergrendelingen opslaat.<br><br>Het standaardpad is: `/magento/locks` | Nee |
 | `--lock-file-path` | Het pad waar de bestandsvergrendelingen worden opgeslagen. | Ja, als u `--lock-provider=file` |

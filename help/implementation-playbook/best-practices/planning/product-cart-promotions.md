@@ -37,13 +37,13 @@ Als u meer dan het aanbevolen maximumaantal regels of coupons voor de kartonprij
 - Hogere responstijd wanneer producten aan het winkelwagentje worden toegevoegd.
 - Meer tijd om de miniaturen te laden en weer te geven.
 - Meer tijd om de winkelwagenpagina weer te geven.
-- Meer tijd om de **Totalen** op de pagina Afhandeling.
+- Verhoogde tijd om de **Totalen** op de pagina Afhandeling.
 - Het toepassen van coupons kan meer dan 2 seconden duren.
 
 ## Aanvullende informatie
 
 - [Informatie over marketingcampagnes en promoties](https://devdocs.magento.com/cloud/configure/configure-best-practices.html#campaigns)
 - [Lijnen met winkelprijzen](https://experienceleague.adobe.com/docs/commerce-admin/marketing/promotions/cart-rules/price-rules-cart.html)
-- [Zelfstudie: Een regel voor een winkelwagenprijs maken](https://experienceleague.adobe.com/docs/commerce-learn/tutorials/marketing/cart-price-rules.html)
+- [Lesbestand: een regel voor de prijs van een winkelwagentje maken](https://experienceleague.adobe.com/docs/commerce-learn/tutorials/marketing/cart-price-rules.html)
 - [Couponcodes](https://experienceleague.adobe.com/docs/commerce-admin/marketing/promotions/cart-rules/price-rules-cart-coupon.html)
-- [Adobe Commerce op cloudinfrastructuur: Beste praktijken voor archiefconfiguratie](https://devdocs.magento.com/cloud/configure/configure-best-practices.html)
+- [Adobe Commerce op cloudinfrastructuur: aanbevolen procedures voor winkelconfiguratie](https://devdocs.magento.com/cloud/configure/configure-best-practices.html)

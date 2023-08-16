@@ -18,15 +18,15 @@ In dit voorbeeld worden de volgende configuratie-instellingen gebruikt:
 
 - **BTW-nummer** en **Winkelnaam** voor de gedeelde configuratie-instellingen.
 
-   Deze vindt u onder **Winkels** > Instellingen > **Configuratie** > Algemeen > **Algemeen**.
+  Deze vindt u onder **Winkels** > Instellingen > **Configuratie** > Algemeen > **Algemeen**.
 
 - **E-mails verzenden naar** voor de gevoelige configuratiewaarde.
 
-   Deze vindt u onder **Winkels** > Instellingen > **Configuratie** > Algemeen > **Contactpersonen**.
+  Deze vindt u onder **Winkels** > Instellingen > **Configuratie** > Algemeen > **Contactpersonen**.
 
 - **Standaard-e-maildomein** voor de systeemspecifieke configuratiewaarde.
 
-   Deze vindt u onder **Winkels** > Instellingen > **Configuratie** > Klanten > **Klantconfiguratie** > **Nieuwe accountopties maken**.
+  Deze vindt u onder **Winkels** > Instellingen > **Configuratie** > Klanten > **Klantconfiguratie** > **Nieuwe accountopties maken**.
 
 U kunt de zelfde procedure gebruiken in dit voorbeeld wordt getoond om het even welke montages in de volgende verwijzingen te vormen die:
 
@@ -39,17 +39,17 @@ U kunt de zelfde procedure gebruiken in dit voorbeeld wordt getoond om het even 
 
 Voordat u begint, stelt u de machtigingen en het eigendom van het bestandssysteem in zoals beschreven in [Vereiste voor ontwikkeling, bouw, en productiesystemen](../deployment/prerequisites.md).
 
-## Aannames
+## Veronderstellingen
 
 Dit onderwerp verstrekt een voorbeeld om de configuratie van het productiesysteem te wijzigen. U kunt desgewenst verschillende configuratieopties kiezen.
 
-In dit voorbeeld gaan we ervan uit dat:
+In dit voorbeeld gaan we uit van het volgende:
 
 - U gebruikt Git-bronbesturingselement
 - Het ontwikkelingssysteem is beschikbaar in een Git-opslagplaats op afstand met de naam `mconfig`
 - Uw Git-werkvertakking krijgt de naam `m2.2_deploy`
 
-## Stap 1: De configuratie instellen in het ontwikkelingssysteem
+## Stap 1: Plaats de configuratie in het ontwikkelingssysteem
 
 U kunt als volgt de standaardwaarden voor landinstelling en gewicht in uw ontwikkelingssysteem instellen:
 
@@ -71,16 +71,16 @@ U kunt als volgt de standaardwaarden voor landinstelling en gewicht in uw ontwik
 1. Klikken **Config opslaan**.
 1. Gebruik de **Winkelweergave** te selecteren **Standaardconfiguratie** zoals het volgende cijfer toont.
 
-   ![Overschakelen naar de standaardconfiguratie](../../assets/configuration/split-deploy-default-config.png)
+   ![Naar de standaardconfiguratie schakelen](../../assets/configuration/split-deploy-default-config.png)
 
 1. Klik in het linkerdeelvenster op Klanten > **Klantconfiguratie**.
 1. Vouw in het rechterdeelvenster uit **Nieuwe accountopties maken**.
 1. Indien nodig de **Systeemwaarde gebruiken** selectievakje naast **Standaard-e-maildomein** veld.
 1. Voer een domeinnaam in het veld in.
 1. Klikken **Config opslaan**.
-1. Maak desgevraagd de cache leeg.
+1. Maak de cache leeg als daarom wordt gevraagd.
 
-## Stap 2: De configuratie bijwerken
+## Stap 2: Werk de configuratie bij
 
 Nu u de configuratie in Admin hebt veranderd, schrijf de gedeelde configuratie aan een dossier zoals gebruikend de volgende stappen:
 
@@ -89,7 +89,7 @@ Nu u de configuratie in Admin hebt veranderd, schrijf de gedeelde configuratie a
 Alhoewel `app/etc/env.php` (de systeem-specifieke configuratie) werd bijgewerkt, controleer het niet aan broncontrole.
 U zult de zelfde configuratiemontages op uw productiesysteem later in deze procedure tot stand brengen.
 
-## Stap 3: Uw constructiesysteem bijwerken en bestanden genereren
+## Stap 3: Werk uw bouwstijlsysteem bij en produceer dossiers
 
 Nu u uw veranderingen in de gedeelde configuratie aan broncontrole hebt geëngageerd, kunt u die veranderingen in uw bouwstijlsysteem trekken, de code compileren, en statische dossiers produceren.
 
@@ -108,20 +108,20 @@ Als u de gevoelige en systeemspecifieke instellingen wilt instellen met omgeving
 
 - Bereik voor elke instelling
 
-   Als u de instructies in Stap 1 volgde, het werkingsgebied voor **E-mails verzenden naar** is website en het toepassingsgebied voor **Standaard-e-maildomein** is globaal (dat wil zeggen, het bereik Default Config).
+  Als u de instructies in Stap 1 volgde, het werkingsgebied voor **E-mails verzenden naar** is website en het toepassingsgebied voor **Standaard-e-maildomein** is globaal (dat wil zeggen, het bereik Default Config).
 
-   U hebt de websitecode nodig om de **E-mails verzenden naar** configuratiewaarde.
+  U hebt de websitecode nodig om de **E-mails verzenden naar** configuratiewaarde.
 
-   Zie voor meer informatie over het vinden van deze waarde: [Omgevingsvariabelen gebruiken om configuratie-instellingen te overschrijven](../reference/override-config-settings.md#environment-variables).
+  Zie voor meer informatie over het vinden van deze waarde: [Omgevingsvariabelen gebruiken om configuratie-instellingen te overschrijven](../reference/override-config-settings.md#environment-variables).
 
 - Configuratiepaden voor de instellingen die in dit voorbeeld worden gebruikt:
 
-   | Naam instellen | Configuratiepad |
-   | -------------------- | -------------------------------------- |
-   | E-mails verzenden naar | `contact/email/recipient_email` |
-   | Standaard-e-maildomein | `customer/create_account/email_domain` |
+  | Naam instellen | Configuratiepad |
+  | -------------------- | -------------------------------------- |
+  | E-mails verzenden naar | `contact/email/recipient_email` |
+  | Standaard-e-maildomein | `customer/create_account/email_domain` |
 
-   Voor alle gevoelige en systeem-specifieke configuratiewegen, zie: [Verwijzing naar gevoelige en systeemspecifieke configuratiepaden](../reference/config-reference-sens.md).
+  Voor alle gevoelige en systeem-specifieke configuratiewegen, zie: [Verwijzing naar gevoelige en systeemspecifieke configuratiepaden](../reference/config-reference-sens.md).
 
 ### De variabelen instellen met CLI-opdrachten
 
@@ -136,9 +136,9 @@ De systeemspecifieke instelling instellen **Standaard-e-maildomein**, dat zich i
 bin/magento config:set customer/create_account/email_domain <email domain>
 ```
 
-U te hoeven niet om het werkingsgebied in het bevel te gebruiken omdat het het standaardwerkingsgebied is.
+U hoeft het bereik niet in de opdracht te gebruiken omdat dit het standaardbereik is.
 
-Waarden instellen voor **E-mails verzenden naar** u moet echter wel weten welk type bereik (`website`) en de bereikcode, die op elke site waarschijnlijk anders is.
+Waarden instellen voor **E-mails verzenden naar**, echter, moet u het werkingsgebiedtype (`website`) en de bereikcode, die op elke site waarschijnlijk anders is.
 
 Voorbeeld:
 
@@ -178,6 +178,6 @@ Om de configuratiemontages te verifiëren:
 1. Klik in het linkerdeelvenster op Klanten > **Klantconfiguratie**.
 1. Vouw in het rechterdeelvenster uit **Nieuwe accountopties maken**.
 
-   De waarde van de **Standaard-e-maildomein** wordt als volgt weergegeven. Dit is een systeemspecifieke instelling.
+   De waarde van **Standaard-e-maildomein** wordt als volgt weergegeven. Dit is een systeemspecifieke instelling.
 
    ![Instellingen controleren in het productiesysteem](../../assets/configuration/split-default-domain.png)

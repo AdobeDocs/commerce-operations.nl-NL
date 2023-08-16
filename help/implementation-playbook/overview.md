@@ -10,7 +10,7 @@ ht-degree: 0%
 
 ---
 
-# Afspeelboek implementeren
+# Afspeelboek voor implementatie
 
 Het doel van dit afspeelboek is om het meest holistische overzicht te bieden van een standaard Adobe Commerce-implementatie.
 
@@ -21,7 +21,7 @@ Bovendien zijn deze processen en overwegingen van toepassing op elk soort Adobe 
 - Kleine, middelgrote of grote implementaties
 - B2C-, B2B- en B2B2C-bedrijfsmodellen
 - Monolithische of headless architecturen
-- Wederzijdse marktintroductie
+- Wederopneming op de interne markt of meerdere markten
 - Uitgebreide integratie met of zonder middleware
 
 Wij hopen dat dit playbook inzichten en begeleiding aan een verscheidenheid van belanghebbenden verstrekt die typisch aan een e-commerce projectinitiatief zouden betrokken zijn, die omvatten:

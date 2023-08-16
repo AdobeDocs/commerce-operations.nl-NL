@@ -6,7 +6,7 @@ exl-id: 51c2b9b3-0f5f-4868-9191-911d5df341ec
 source-git-commit: af45ac46afffeef5cd613628b2a98864fd7da69b
 workflow-type: tm+mt
 source-wordcount: '247'
-ht-degree: 0%
+ht-degree: 1%
 
 ---
 
@@ -14,7 +14,7 @@ ht-degree: 0%
 
 Adobe Commerce biedt standaard ondersteuning voor het vergroten of verkleinen van afbeeldingen aan de toepassingszijde. Door de externe opslagmodule in te schakelen kunt u Nginx echter gebruiken om de grootte van de afbeelding te verschuiven naar de serverzijde, waar u schijfbronnen kunt opslaan en schijfgebruik kunt optimaliseren.
 
-In het volgende diagram ziet u hoe Nginx afbeeldingen in het cachegeheugen ophaalt, vergroot of verkleint en opslaat. Het formaat wordt bepaald door de parameters inbegrepen in URL, zoals hoogte en breedte.
+In het volgende diagram ziet u hoe Nginx afbeeldingen in het cachegeheugen ophaalt, vergroot of verkleint en opslaat. Het formaat wordt bepaald door de parameters die in de URL zijn opgenomen, zoals hoogte en breedte.
 
 ![afbeelding vergroten/verkleinen](../../assets/configuration/remote-storage-nginx-image-resize.png)
 
@@ -28,21 +28,21 @@ Als u het formaat van afbeeldingen aan de serverzijde wilt wijzigen, moet u Adob
 
 **Om Commerce voor server-kant beeld resizing te vormen**:
 
-1. In de _Beheer_ deelvenster, klikt u op **[!UICONTROL Stores]** > **[!UICONTROL Settings]** > **[!UICONTROL Configuration]** > **[!UICONTROL General]** > **[!UICONTROL Web]**.
+1. In de _Beheerder_ deelvenster, klikt u op **[!UICONTROL Stores]** > **[!UICONTROL Settings]** > **[!UICONTROL Configuration]** > **[!UICONTROL General]** > **[!UICONTROL Web]**.
 
 1. Vouw in het rechterdeelvenster uit **[!UICONTROL Url options]**.
 
-1. In de _URL-indeling van catalogusmedia_ sectie, duidelijk **[!UICONTROL Use system value]**.
+1. In de _De URL-indeling van catalogusmedia_ sectie, duidelijk **[!UICONTROL Use system value]**.
 
-1. Selecteer `Image optimization based on query parameters` URL in de **_URL-indeling van catalogusmedia_** veld.
+1. Selecteer de `Image optimization based on query parameters` URL in de **_De URL-indeling van catalogusmedia_** veld.
 
-1. Klikken **[!UICONTROL Save Config]**.
+1. Klik op **[!UICONTROL Save Config]**.
 
 1. Doorgaan naar de [Nginx-configuratie](#configure-nginx).
 
 ## Nginx configureren
 
-Als u de grootte van afbeeldingen op de server wilt blijven configureren, moet u de knop `nginx.conf` en een `proxy_pass` waarde voor de door u gekozen adapter.
+Als u de grootte van afbeeldingen op de server wilt blijven configureren, moet u de knop `nginx.conf` en een `proxy_pass` waarde voor de gekozen adapter.
 
 **Nginx inschakelen om het formaat van afbeeldingen te wijzigen**:
 

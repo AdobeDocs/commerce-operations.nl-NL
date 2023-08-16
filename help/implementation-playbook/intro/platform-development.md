@@ -1,5 +1,5 @@
 ---
-title: Beginselen van de ontwikkeling van Platforms
+title: Beginselen van platformontwikkeling
 description: Begrijp fundamentele beginselen voor platformontwikkeling wanneer u met Adobe Commerce werkt.
 exl-id: 3d822a8c-0e81-4a80-a820-46cf2702e0bf
 feature: Cloud
@@ -14,7 +14,7 @@ ht-degree: 0%
 
 In dit afspeelboek duiken we dieper in een aantal van de belangrijkste normen voor Adobe Commerce-ontwikkeling, waaronder:
 
-- Functionele en technische bereikregels in overeenstemming met het ontwikkelingsproces
+- Functionele en technische verruiming in overeenstemming met het ontwikkelingsproces
 - De beste praktijken van de ontwikkeling die op de architectuur MVC worden gericht
 - Architectuuroverwegingen, met inbegrip van GRA
 - Beveiligingsnormen tegen scripts en misbruik
@@ -29,10 +29,10 @@ Net als bij elk groot IT-project is Adobe Commerce gebaseerd op coderingsstandaa
 
 ## Adobe Commerce over cloudinfrastructuur
 
-Adobe Commerce on cloud Infrastructure is een beheerd, geautomatiseerd hostplatform voor de Adobe Commerce-software. Adobe Commerce op cloudinfrastructuur wordt geleverd met een aantal aanvullende functies die deze infrastructuur onderscheiden van Adobe Commerce- en Magento Open Source-implementaties in de bedrijfsruimten:
+Adobe Commerce on cloud Infrastructure is een beheerd, geautomatiseerd hostplatform voor de Adobe Commerce-software. Adobe Commerce op cloudinfrastructuur wordt geleverd met een aantal aanvullende functies die deze infrastructuur onderscheiden van Adobe Commerce op locatie en implementaties van Magento Open Sourcen:
 
 ![Adobe Commerce-componentgegevens](../../assets/playbooks/commerce-cloud.svg)
 
-Adobe Commerce on cloud Infrastructure biedt een vooraf ingerichte infrastructuur, waaronder PHP, MySQL, Redis, [!DNL RabbitMQ], en Elasticsearch-technologieën; een op Git-Gebaseerde werkschema met automatische bouwt en opstelt verrichtingen voor efficiënte snelle ontwikkeling en ononderbroken plaatsing telkens als de codeveranderingen in een Platform als milieu van de Dienst (PaaS) worden geduwd; zeer aanpasbare milieu-configuratiedossiers en hulpmiddelen; en AWS hosting die een schaalbare en veilige omgeving biedt voor online verkoop en detailhandel.
+Adobe Commerce on cloud Infrastructure biedt een vooraf ingerichte infrastructuur, waaronder PHP, MySQL, Redis, [!DNL RabbitMQ], en technologieën van de Elasticsearch; een Git-based werkschema met automatische bouw en stel verrichtingen voor efficiënte snelle ontwikkeling en ononderbroken plaatsing in elke tijd de veranderingen van de code in een Platform als milieu van de Dienst (PaaS) worden geduwd; hoogst klantgerichte milieu-configuratiedossiers en hulpmiddelen; en AWS het ontvangen dat een scalable en veilige milieu voor online verkoop en detailhandel aanbiedt.
 
 ![Adobe Commerce-componentgegevens](../../assets/playbooks/cloud-tech-stack.svg)

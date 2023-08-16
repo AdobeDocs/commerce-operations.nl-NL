@@ -30,7 +30,7 @@ De volgende lijst verklaart de parameters en de waarden van dit bevel.
 | Parameter | Waarde | Vereist? |
 | --------- | ----- | --------- |
 | `--type` | Type bronbestanden: [minder] (standaard: &quot;less&quot;)<br>Momenteel wordt alleen LESS ondersteund. | Nee |
-| `--locale` | Landinstellingscode.<br>Als u de lijst met landinstellingscodes wilt weergeven, voert u `bin/magento info:language:list` | Nee |
+| `--locale` | Landcode.<br>Als u de lijst met landinstellingscodes wilt weergeven, voert u `bin/magento info:language:list` | Nee |
 | `--area` | Gebied (`adminhtml` voor het administratieve gebied, `frontend` voor de opslagplaats). | Nee |
 | `--theme` | Themanaam in `<VendorName>/<theme-name>` gebruiken. Bijvoorbeeld: `Magento/blank` of `Magento/backend`. | Nee |
 | `<file>` | Lijst met door spaties gescheiden CSS-bestanden die zonder de CSS-extensie naar LESS moeten worden geconverteerd. (Standaard is `css/styles-m css/styles-l`, voor adminhtml type `css/styles css/styles-old`) | Nee |
@@ -49,7 +49,7 @@ Processed Area: frontend, Locale: en_US, Theme: VendorName/themeName, File type:
 Successfully processed.
 ```
 
-U kunt als volgt LESS-bestanden voor de beheerder maken:
+LESS-bestanden maken voor de beheerder:
 
 ```bash
 bin/magento dev:source-theme:deploy --locale="en_US" --area="adminhtml" --theme="Magento/backend" css/styles css/styles-old

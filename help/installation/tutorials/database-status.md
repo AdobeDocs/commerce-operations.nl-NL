@@ -1,6 +1,6 @@
 ---
 title: De databasestatus controleren
-description: Ga als volgt te werk om de Adobe Commerce- of Magento Open Source-databasestatus te controleren.
+description: Ga als volgt te werk om de status van uw Adobe Commerce- of Magento Open Source-database te controleren.
 exl-id: 33d9b30a-4504-4955-b11a-0a642f23209b
 source-git-commit: 95ffff39d82cc9027fa633dffedf15193040802d
 workflow-type: tm+mt
@@ -34,5 +34,5 @@ De opdracht retourneert een van de volgende afsluitcodes:
 | Afsluitcode | Beschrijving | Voorgestelde actie |
 |--------------|--------------|---------------|
 | 0 | Normaal | Geen |
-| 1 | Sommige modules gebruiken codeversies die nieuwer of ouder zijn dan de database | Uitvoeren [`magento setup:upgrade`](database-upgrade.md) om het gegevensbestandschema bij te werken en in werking te stellen `composer update` in de hoofdmap van de toepassing om componentafhankelijkheden bij te werken |
-| 2 | `magento setup:upgrade` is vereist | [`magento setup:upgrade`](database-upgrade.md) om het databaseschema bij te werken |
+| 1 | Sommige modules gebruiken codeversies die nieuwer of ouder zijn dan de database | Uitvoeren [`magento setup:upgrade`](database-upgrade.md) om het gegevensbestandschema bij te werken en te lopen `composer update` in de hoofdmap van de toepassing om componentafhankelijkheden bij te werken |
+| 2 | `magento setup:upgrade` is vereist | [`magento setup:upgrade`](database-upgrade.md) het databaseschema bijwerken |

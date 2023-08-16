@@ -14,7 +14,7 @@ ht-degree: 0%
 
 Het detectieproces identificeert specifieke Adobe Commerce-implementatieproducten. Bekijk de volgende secties voor meer informatie.
 
-## Bedrijfsvereisten
+## Zakelijke vereisten
 
 In dit document worden goedkeuringen van bedrijfsvereisten voor functionele specificaties en de bruikbaarheid van de ervaring van de klant beschreven. Deze wordt gebruikt om de gebruikerservaring, het visuele ontwerp en gedetailleerde testplannen te verbeteren.
 

@@ -31,7 +31,7 @@ Deze fouten worden gerapporteerd wanneer sommige kernbestanden ontbreken of niet
 | --- | --- | --- |
 | 2001 | Kernbestand niet gevonden | Voer de `composer install` opdracht uit de hoofdmap van het project. |
 | 2002 | Het kernbestand is gewijzigd | Voer de `composer install` opdracht uit de hoofdmap van het project. |
-| 2003 | Composerafhankelijkheid is niet geïnstalleerd | Ontbrekende composerafhankelijkheid kan mogelijk problemen opleveren. Afhankelijkheid herstellen door uit te voeren `composer require package_name`. |
+| 2003 | Composerafhankelijkheid is niet geïnstalleerd | Ontbrekende composer-afhankelijkheid kan mogelijk problemen veroorzaken. Afhankelijkheid herstellen door uit te voeren `composer require package_name`. |
 | 2005 | Kernmap niet gevonden | Voer de `composer install` opdracht uit de hoofdmap van het project. |
 
 {style="table-layout:auto"}
@@ -54,7 +54,7 @@ Er treden kritieke fouten op wanneer de aangepaste code verwijst naar entiteiten
 | 1314 | Gebruikte niet-bestaande Adobe Commerce-interface | Overweeg de overerving te verwijderen of het te vervangen met de interface die in het werkingsgebied van de aanpassing wordt geïntroduceerd. |
 | 1317 | Overgenomen, niet-bestaande Adobe Commerce-interface | Overweeg de overerving te verwijderen of het te vervangen met de interface die in het werkingsgebied van de aanpassing wordt geïntroduceerd. |
 | 1318 | Niet-bestaande Adobe Commerce-interface geïmplementeerd | Overweeg de overerving te verwijderen of het te vervangen met de interface die in het werkingsgebied van de aanpassing wordt geïntroduceerd. |
-| 1410 | Niet-bestaande Adobe Commerce-methode aanroepen | Code bijwerken voor het gebruik van een klasse die is gemarkeerd als `@api`. |
+| 1410 | Adobe Commerce-methode zonder aanroep | Code bijwerken voor het gebruik van een klasse die is gemarkeerd als `@api`. |
 | 1514 | Niet-bestaande Adobe Commerce-eigenschap gebruiken | Code bijwerken voor het gebruik van een klasse die is gemarkeerd als `@api`. |
 | 1515 | Niet-bestaande Adobe Commerce-eigenschap overschrijven | Code bijwerken voor het gebruik van een klasse die is gemarkeerd als `@api`. |
 | 1516 | Toewijzing van niet-bestaande Adobe Commerce-eigenschap | Code bijwerken voor het gebruik van een klasse die is gemarkeerd als `@api`. Werk het toegangsniveau van het bezit aan privé bij als het binnen één enkele klasse slechts kan worden gebruikt. |
@@ -73,8 +73,8 @@ Kritieke problemen met het DB-schema worden gerapporteerd als verwijderde kernta
 
 | Foutcode | Foutbeschrijving | Voorgestelde actie |
 | --- | --- | --- |
-| 7009 | De beperking van de douane verwijst naar een kernlijst die in de doelversie werd verwijderd | De kenmerken constraint of update referenceTable en referenceColumn verwijderen |
-| 7010 | De beperking van de douane verwijst naar een kernkolom die in de doelversie werd verwijderd | De beperking verwijderen of het kenmerk referenceColumn bijwerken |
+| 7009 | Aangepaste beperking verwijst naar een kerntabel die is verwijderd in de doelversie | De kenmerken constraint of update referenceTable en referenceColumn verwijderen |
+| 7010 | Aangepaste beperking verwijst naar een kernkolom die is verwijderd in de doelversie | De beperking verwijderen of het kenmerk referenceColumn bijwerken |
 
 {style="table-layout:auto"}
 
@@ -111,7 +111,7 @@ Er worden aangepaste codefouten gegenereerd wanneer aangepaste code gebruikmaakt
 
 | Foutcode | Foutbeschrijving | Voorgestelde actie |
 | --- | --- | --- |
-| 1104 | De niet-API-klasse gebruiken die de API-interface overerft | Klassen die niet zijn gemarkeerd als `@api` kan worden gewijzigd. U kunt overwegen de code bij te werken om te vertrouwen op de interface die is gemarkeerd als `@api` in plaats daarvan. Anders, zou de functionaliteit die op deze implementatie baseert na de verbetering moeten worden getest. |
+| 1104 | De niet-API-klasse gebruiken die de API-interface overerft | Klassen die niet zijn gemarkeerd als `@api` kan worden gewijzigd. U kunt overwegen de code bij te werken om te vertrouwen op de interface die als `@api` in plaats daarvan. Anders, zou de functionaliteit die op deze implementatie baseert na de verbetering moeten worden getest. |
 | 1121 | Uitbreiden vanaf niet-Adobe Commerce API-klasse | De uitgebreide klasse is niet meer aanwezig in de codebase. Overerving wordt niet aanbevolen voor het uitbreiden van de Adobe Commerce-functionaliteit. Code bijwerken voor het gebruik van een klasse die is gemarkeerd als `@api`. |
 | 1122 | Niet-Adobe Commerce API-klasse importeren | De uitgebreide klasse is niet meer aanwezig in de codebase. Code bijwerken voor het gebruik van een klasse die is gemarkeerd als `@api`. Anders, zou de functionaliteit die op deze implementatie baseert na de verbetering moeten worden getest. |
 | 1123 | Niet-Adobe Commerce API-klasse laden | De uitgebreide klasse is niet meer aanwezig in de codebase. Code bijwerken voor het gebruik van een klasse die is gemarkeerd als `@api`. Anders, zou de functionaliteit die op deze implementatie baseert na de verbetering moeten worden getest. |
@@ -119,12 +119,12 @@ Er worden aangepaste codefouten gegenereerd wanneer aangepaste code gebruikmaakt
 | 1224 | Niet-Adobe Commerce API-constante gebruiken | Constanten die niet zijn gemarkeerd als `@api` kan worden gewijzigd. Overweeg in plaats hiervan een privéconstante van de vereiste waarde in de aangepaste code te introduceren en te gebruiken. |
 | 1225 | Niet-Adobe Commerce API-constante overschrijven | Constanten die niet zijn gemarkeerd als `@api` kan worden gewijzigd. Overweeg in plaats hiervan een privéconstante van de vereiste waarde in de aangepaste code te introduceren en te gebruiken. |
 | 1226 | Toewijzing van een niet-Adobe Commerce API-constante | Constanten die niet zijn gemarkeerd als `@api` kan worden gewijzigd. Overweeg in plaats hiervan een privéconstante van de vereiste waarde in de aangepaste code te introduceren en te gebruiken. |
-| 1322 | Geïmporteerde niet-Adobe Commerce API-interface | Interfaces die niet zijn gemarkeerd als `@api` kan worden gewijzigd. U kunt overwegen deze overerving te verwijderen of te vervangen door overerving van de Adobe Commerce-interface die is gemarkeerd als `@api` of een interface die in het werkingsgebied van aanpassingscode wordt geïntroduceerd. |
-| 1324 | Gebruikte niet-Adobe Commerce API-interface | Interfaces die niet zijn gemarkeerd als `@api` kan worden gewijzigd. U kunt overwegen deze overerving te verwijderen of te vervangen door overerving van de Adobe Commerce-interface die is gemarkeerd als `@api` of een interface die in het werkingsgebied van aanpassingscode wordt geïntroduceerd. |
+| 1322 | Geïmporteerde niet-Adobe Commerce API interface | Interfaces niet gemarkeerd als `@api` kan worden gewijzigd. U kunt deze overerving verwijderen of vervangen door overerving van de Adobe Commerce-interface die is gemarkeerd als `@api` of een interface die in het werkingsgebied van aanpassingscode wordt geïntroduceerd. |
+| 1324 | Gebruikte niet-Adobe Commerce API-interface | Interfaces niet gemarkeerd als `@api` kan worden gewijzigd. U kunt deze overerving verwijderen of vervangen door overerving van de Adobe Commerce-interface die is gemarkeerd als `@api` of een interface die in het werkingsgebied van aanpassingscode wordt geïntroduceerd. |
 | 1327 | Overgenomen niet-Adobe Commerce API-interface | Constanten die niet zijn gemarkeerd als `@api` kan worden gewijzigd. Overweeg in plaats hiervan een privéconstante van de vereiste waarde in de aangepaste code te introduceren en te gebruiken. |
-| 1328 | Geïmplementeerde niet-Adobe Commerce API-interface | Interfaces die niet zijn gemarkeerd als `@api` kan worden gewijzigd. U kunt overwegen deze overerving te verwijderen of te vervangen door overerving van de Adobe Commerce-interface die is gemarkeerd als `@api` of een interface die in het werkingsgebied van aanpassingscode wordt geïntroduceerd. |
-| 1420 | Niet-Adobe Commerce API-klasse/interface instantiëren | Klassen die niet zijn gemarkeerd als `@api` kan worden gewijzigd. U kunt overwegen de code bij te werken om te vertrouwen op de interface die is gemarkeerd als `@api` in plaats daarvan. Anders, zou de functionaliteit die op deze implementatie baseert na de verbetering moeten worden getest. De aanbevolen manier om een instantie van de klasse op te halen, is ook het gebruik van DI. U kunt een factory gebruiken als een nieuwe instantie van de klasse is vereist. |
-| 1428 | Mogelijke afhankelijkheid van implementatiedetails. | Klassen die niet zijn gemarkeerd als `@api` kan worden gewijzigd. U kunt overwegen de code bij te werken om te vertrouwen op de interface die is gemarkeerd als `@api` in plaats daarvan. Anders, zou de functionaliteit die op deze implementatie baseert na de verbetering moeten worden getest. |
+| 1328 | Geïmplementeerde niet-Adobe Commerce API-interface | Interfaces niet gemarkeerd als `@api` kan worden gewijzigd. U kunt deze overerving verwijderen of vervangen door overerving van de Adobe Commerce-interface die is gemarkeerd als `@api` of een interface die in het werkingsgebied van aanpassingscode wordt geïntroduceerd. |
+| 1420 | Niet-Adobe Commerce API-klasse/interface instantiëren | Klassen die niet zijn gemarkeerd als `@api` kan worden gewijzigd. U kunt overwegen de code bij te werken om te vertrouwen op de interface die als `@api` in plaats daarvan. Anders, zou de functionaliteit die op deze implementatie baseert na de verbetering moeten worden getest. De aanbevolen manier om een instantie van de klasse op te halen, is ook het gebruik van DI. U kunt een factory gebruiken als een nieuwe instantie van de klasse is vereist. |
+| 1428 | Mogelijke afhankelijkheid van uitvoeringsdetails. | Klassen die niet zijn gemarkeerd als `@api` kan worden gewijzigd. U kunt overwegen de code bij te werken om te vertrouwen op de interface die als `@api` in plaats daarvan. Anders, zou de functionaliteit die op deze implementatie baseert na de verbetering moeten worden getest. |
 | 1429 | Niet-Adobe Commerce API-methoden aanroepen | Methoden die niet zijn gemarkeerd als `@api` of niet zijn gedeclareerd binnen de API-klasse/interface, kunnen worden gewijzigd. Zelfs als de interface van de methode niet in de nieuwe versie wordt bijgewerkt, kan zijn gedrag of output verschillend zijn. U kunt ook op een interfacemethode vertrouwen. Anders, zou de functionaliteit die op deze implementatie baseert na de verbetering moeten worden getest. |
 | 1449 | Oproep aan niet-interfacemethode (die in implementatie aanwezig is) | Methoden die niet in de interface worden gedeclareerd, kunnen worden gewijzigd. U kunt ook op een interfacemethode vertrouwen. Anders, zou de functionaliteit die op deze implementatie baseert na de verbetering moeten worden getest. |
 | 1524 | Niet-Adobe Commerce API-eigenschap gebruiken | Waarden van de eigenschappen die niet zijn gemarkeerd als `@api` kan worden gewijzigd. U kunt in plaats daarvan ook de API-interfacemethode gebruiken. |
@@ -146,9 +146,9 @@ Er worden aangepaste codefouten gegenereerd wanneer aangepaste code gebruikmaakt
 | 5020 | Verouderd knooppunt: `<supported_blocks>` | Te vervangen door `<supported_containers>`. |
 | 5021 | Verouderd knooppunt: `<block_name>` | Te vervangen door `<container_name>`. |
 | 5022 | Fabrieksnaam gedetecteerd | Het type widget mag niet beginnen met /. |
-| 5023 | Verouderde ACL structuur die in lijn wordt ontdekt | Controleer lib/internal/Magento/Framework/Acl/etc/acl.xsd. |
-| 5024 | Achterhaalde menustructuur aangetroffen in regel | Controleer app/code/Magento/Backend/etc/menu.xsd. |
-| 5025 | Verouderde systeemconfiguratiestructuur aangetroffen in bestand | Controleer app/code/Magento/Config/etc/system_file.xsd. |
+| 5023 | Verouderde ACL structuur die in lijn wordt ontdekt | Ga naar lib/internal/Magento/Framework/Acl/etc/acl.xsd. |
+| 5024 | Achterhaalde menustructuur aangetroffen in regel | Ga naar app/code/Magento/Backend/etc/menu.xsd. |
+| 5025 | Verouderde systeemconfiguratiestructuur aangetroffen in bestand | Ga naar app/code/Magento/Config/etc/system_file.xsd. |
 | 5026 | Niet gebruiken `"text/javascript"` type, kenmerk | Gebruik alleen leden van het type public. |
 | 5028 | Toegang tot beschermde en particuliere leden van `Block` klasse is verouderd in HTML-sjablonen | Gebruik alleen leden van het type public. |
 | 5031 | Bevat verouderde methode | Gebruiken `getConnection()` in plaats daarvan. |
@@ -157,11 +157,11 @@ Er worden aangepaste codefouten gegenereerd wanneer aangepaste code gebruikmaakt
 | 5044 | Klasse `Zend_Db_Select` is beperkt | Voorgestelde vervanging: `\Magento\Framework\DB\Select`. |
 | 5045 | Klasse `Zend_Db_Adapter_Pdo_Mysql` is beperkt | Voorgestelde vervanging: `\Magento\Framework\DB\Adapter\Pdo\Mysql`. |
 | 5046 | Klasse `Magento\Framework\Serialize\Serializer\Serialize` is beperkt | Voorgestelde vervanging: `Magento\Framework\Serialize\SerializerInterface`. |
-| 5047 | Klasse `ArrayObject` is beperkt | Voorgestelde vervanging: Aangepaste klasse, uitgebreid van `ArrayObject` met overschreven serialize/unserialize methodes. |
-| 5048 | Klasse `Magento\Framework\View\Element\UiComponent\ArrayObjectFactory` is beperkt | Voorgestelde vervanging: Fabriek die aangepaste klasse maakt, uitgebreid van `ArrayObject` met overschreven serialize/unserialize methodes. |
+| 5047 | Klasse `ArrayObject` is beperkt | Suggesties voor vervanging: aangepaste klasse, uitgebreid van `ArrayObject` met overschreven serialize/unserialize methodes. |
+| 5048 | Klasse `Magento\Framework\View\Element\UiComponent\ArrayObjectFactory` is beperkt | Suggesties voor vervanging: in de fabriek wordt een aangepaste klasse gemaakt, uitgebreid van `ArrayObject` met overschreven serialize/unserialize methodes. |
 | 5050 | Het blok waarnaar wordt verwezen, wordt verwijderd | Verwijzing naar blok verwijderen. |
 | 5051 | `output="toHtml"` is verouderd | Gebruiken `output="1"`. |
-| 5052 | De klasse `\Magento\Framework\View\Element\Text\ListText` wordt niet geacht meer in lay-out te worden gebruikt | Klasse verwijderen `\Magento\Framework\View\Element\Text\ListText` van layout. |
+| 5052 | De klasse `\Magento\Framework\View\Element\Text\ListText` niet meer in layout wordt gebruikt | Klasse verwijderen `\Magento\Framework\View\Element\Text\ListText` van layout. |
 | 5053 | Aanroep van methode via indelingsinstructie `<action>` is niet toegestaan | Vermijd het gebruik van de desbetreffende methode in `<action>`. |
 | 5054 | `helper` attribute contains `/` | Verwijderen `/` van helperkenmerk. |
 | 5055 | `helper` attribute does not contain `::` | Toevoegen `::` naar helper, kenmerk. |
@@ -173,7 +173,7 @@ Er worden aangepaste codefouten gegenereerd wanneer aangepaste code gebruikmaakt
 | 5061 | UpgradeSchema-scripts zijn verouderd | Gebruik declaratieve schemabenadering in module \&#39;s etc/db_schema.xml- dossier. |
 | 5062 | UpgradeData-scripts zijn verouderd | Gebruik gegevenspatches in de map Setup/Patch/Data van module. |
 | 5063 | Upgradescripts zijn verouderd | De de flardbenadering van het gebruik van gegevenspatches in de module \ van de Opstelling/van het Patch/van Gegevens dir. |
-| 5064 | Terugkerende scripts zijn verouderd | Maak een klasse Recurring in de map Setup van de module. |
+| 5064 | Terugkerende scripts zijn verouderd | Klasse Terugkeren maken in de map Setup van de module. |
 | 5065 | &#39;data&#39; staat in een ongeldige map | Creeer een gegevenspatch binnen de omslag van de Opstelling/van het Patch/van Gegevens van de module voor gegevensverbeteringen of gebruik verklarende schemabenadering in het dossier van module etc/db_schema.xml voor schemaveranderingen. |
 | 5066 | &#39;sql&#39; staat in een ongeldige map | Creeer een gegevenspatch binnen de omslag van de Opstelling/van het Patch/van Gegevens van de module voor gegevensverbeteringen of gebruik verklarende schemabenadering in het dossier van module etc/db_schema.xml voor schemaveranderingen. |
 | 5067 | Knooppunten die door XPath worden geïdentificeerd zijn verouderd | Verouderde XML-code die in de fout is vermeld, moet worden bijgewerkt. Volg de suggesties in het foutbericht. |
@@ -190,7 +190,7 @@ Er worden aangepaste codefouten gegenereerd wanneer aangepaste code gebruikmaakt
 | 5082 | Het gebruik van $this in sjablonen is afgekeurd | Gebruik in plaats hiervan $block. |
 | 5083 | Constanten zijn niet toegestaan als het eerste argument van een vertaalfunctie | Gebruik in plaats hiervan letterlijke tekenreeks. |
 | 5085 | Het gebruik van bepaalde functies wordt afgeraden | Gebruik in plaats hiervan de alternatieve functie die op het bericht wordt geadviseerd. |
-| 5087 | Probleem met compatibiliteit met PHP-kruisversies | Volg de suggesties uit het bericht en controleer [migratiegids](https://www.php.net/manual/en/migration81.php). |
+| 5087 | Probleem met compatibiliteit met PHP-kruisversies | Volg de suggesties in het bericht en controleer de [migratiehulplijn](https://www.php.net/manual/en/migration81.php). |
 | 5088 | Optionele parameters gevonden na vereiste parameters | Verplaats vereiste parameters na optionele parameters. |
 | 5089 | Zichtbaarheid van methode `final private` gevonden | Zichtbaarheid methode wijzigen vanuit `final private` alleen `private`. |
 | 5090 | Magisch, methode `__set_state` is niet gedefinieerd als `static` | Magisch, methode `__set_state` moet worden gedefinieerd als `static`. |
@@ -203,13 +203,13 @@ Er worden aangepaste codefouten gegenereerd wanneer aangepaste code gebruikmaakt
 | 6004 | jQuery `$.delegate` en `$.undelegate` zijn afgekeurd | Gebruiken `$.on` en `$.off` in plaats daarvan. |
 | 6005 | (`jQuery.load()` / `jQuery.unload()` / `jQuery.error()`) is verwijderd | Gebruik (`.on("load", fn)` / `.on("unload", fn)` / `.on("error", fn)`). |
 | 6006 | `jQuery.size()` verwijderd | Gebruiken `jQuery.length`. |
-| 6007 | `jQuery.trim` is afgekeurd | Gebruiken `String.prototype.trim`. |
+| 6007 | `jQuery.trim` is vervangen | Gebruiken `String.prototype.trim`. |
 | 6008 | (`addButton`, `addContextToolbar`, `addMenuItem`, `addSidebar`, `file_browser_callback`, `insert_button_items`, thema &#39;inlite&#39;, thema &#39;mobile&#39;, thema &#39;modern&#39;) is verwijderd | Code bijwerken om compatibel te zijn met tinymce5. |
-| 6009 | `jQuery.isFunction()` is afgekeurd | In de meeste gevallen kan het worden vervangen door [typeof x == &quot;function&quot;]. |
-| 6009 | `jQuery.type()` is afgekeurd | Vervangen door een typecontrole zoals [typeof x == &quot;function&quot;]. |
-| 6009 | `jQuery.isArray()` is afgekeurd | Gebruik in plaats hiervan de methode native Array.isArray. |
-| 6009 | `jQuery.parseJSON()` is afgekeurd | Als u JSON-tekenreeksen wilt parseren, gebruikt u in plaats daarvan de native JSON.parse-methode. |
-| 6010 | (`jQuery.expr[":"]`, `jQuery.expr.filters`) is afgekeurd | Gebruik in plaats hiervan jQuery.expr.pseudo. |
+| 6009 | `jQuery.isFunction()` is vervangen | In de meeste gevallen kan het worden vervangen door [typeof x == &quot;function&quot;]. |
+| 6009 | `jQuery.type()` is vervangen | Vervangen door een typecontrole zoals [typeof x == &quot;function&quot;]. |
+| 6009 | `jQuery.isArray()` is vervangen | Gebruik in plaats hiervan de methode native Array.isArray. |
+| 6009 | `jQuery.parseJSON()` is vervangen | Als u JSON-tekenreeksen wilt parseren, gebruikt u in plaats daarvan de native JSON.parse-methode. |
+| 6010 | (`jQuery.expr[":"]`, `jQuery.expr.filters`) is vervangen | Gebruik in plaats hiervan jQuery.expr.pseudo. |
 
 {style="table-layout:auto"}
 
@@ -225,7 +225,7 @@ De fouten van het schema van OB worden opgeheven als de gegevensbestandlijsten, 
 | 7004 | De kernkolom die door een douanemodule wordt uitgebreid werd verwijderd in de doelversie | Alle verwijderde verwijzingen naar kernkolommen moeten uit de codebase worden verwijderd |
 | 7005 | De doelkernversie introduceert een index met zelfde referenceId zoals een index die door een douanemodule wordt verklaard | Verwijderen (als gedupliceerd naar de nieuwe kernindex) of de naam van de aangepaste index wijzigen |
 | 7006 | De kernindex die met een aangepaste module is uitgebreid, is verwijderd uit de doelversie | Alle verwijderde verwijzingen naar de kernindex moeten uit de codebase worden verwijderd |
-| 7007 | De doelkernversie introduceert een beperking met dezelfde naam als een beperking die is gedeclareerd door een aangepaste module | Verwijderen (als deze waarde wordt gedupliceerd naar de nieuwe kernbeperking) of de naam van de aangepaste restrictie wijzigen |
+| 7007 | De doelkernversie introduceert een beperking met dezelfde naam als een beperking die is gedeclareerd door een aangepaste module | Verwijderen (als deze waarde gelijk is aan de nieuwe kernbeperking) of de naam van de aangepaste restrictie wijzigen |
 | 7008 | De kernbeperking die door een douanemodule wordt uitgebreid werd verwijderd in de doelversie | Gebruik de nieuwe kernbeperking (indien van toepassing) of wijzig de naam van de aangepaste restrictie |
 
 {style="table-layout:auto"}
@@ -257,8 +257,8 @@ Aangepaste waarschuwingen voor de code worden weergegeven wanneer verwijzingen n
 | 1236 | Toewijzing van Adobe Commerce `@deprecated` constante | De vervangen constante wordt in de volgende versies verwijderd. Gebruik een constante die is gemarkeerd als `@api` of een privéconstante in uw implementatie. |
 | 1332 | Geïmporteerde Adobe Commerce `@deprecated` interface | De vervangen interface wordt in de volgende versies verwijderd. Gebruik een interface of klasse die is gemarkeerd als `@api` in plaats daarvan. |
 | 1334 | Gebruikte Adobe Commerce `@deprecated` interface | De vervangen interface wordt in de volgende versies verwijderd. Gebruik een interface of klasse die is gemarkeerd als `@api` in plaats daarvan. |
-| 1337 | Overgenomen uit Adobe Commerce `@deprecated` interface | De vervangen interface wordt in de volgende versies verwijderd. U kunt overwegen de interfaceovererving te verwijderen door een interface te gebruiken die is gemarkeerd als `@api` of een interface die in plaats daarvan binnen uw implementatie wordt geïntroduceerd. |
-| 1338 | Geïmplementeerde Adobe Commerce `@deprecated` interface | De vervangen interface wordt in de volgende versies verwijderd. U kunt overwegen de interfaceovererving te verwijderen door een interface te gebruiken die is gemarkeerd als `@api` of een interface die in plaats daarvan binnen uw implementatie wordt geïntroduceerd. |
+| 1337 | Overgenomen uit Adobe Commerce `@deprecated` interface | De vervangen interface wordt in de volgende versies verwijderd. U kunt overwegen de interfaceovererving te verwijderen door een interface te gebruiken die als `@api` of een interface die in plaats daarvan binnen uw implementatie wordt geïntroduceerd. |
+| 1338 | Geïmplementeerde Adobe Commerce `@deprecated` interface | De vervangen interface wordt in de volgende versies verwijderd. U kunt overwegen de interfaceovererving te verwijderen door een interface te gebruiken die als `@api` of een interface die in plaats daarvan binnen uw implementatie wordt geïntroduceerd. |
 | 1430 | Niet-gedeclareerde gegevensobjectmethode aanroepen | De magische methoden die niet worden gedeclareerd, kunnen worden gewijzigd. U kunt in plaats daarvan ook op interfacemethoden vertrouwen. |
 | 1439 | Adobe Commerce bellen `@deprecated` methode | De vervangen methode wordt in de volgende versies verwijderd. U kunt in plaats daarvan ook vertrouwen op methoden die zijn gedeclareerd in API-interfaces. |
 | 1440 | Verkeerde methodehandtekening | Een aanroep of overschrijving van de kernmethode wordt gedetecteerd met parameters, argumenten of retourneringstype die niet overeenkomen met de methodehandtekening. |

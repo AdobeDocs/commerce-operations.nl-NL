@@ -21,7 +21,7 @@ Een A/B-test is het proces waarbij twee verschillende versies van de website wor
 
 Nadat u de website hebt gemaakt, kunt u met behulp van A/B testen welke woorden, woordgroepen, afbeeldingen en inhoud het meest effectief zijn bij het verhogen van de conversiesnelheid. Bijvoorbeeld A/B die een groene knoop CTA en rode knoop CTA testen om te begrijpen welke kleurenklanten verkiezen.
 
-Over het algemeen raden we u aan om twee keer per jaar A/B-tests uit te voeren bij grote release, functies en optimalisaties vooraf.
+Over het algemeen raden we u aan om twee keer per jaar A/B-tests uit te voeren bij grote release, functies en frontend-optimalisaties.
 
 ## Implementatietests
 

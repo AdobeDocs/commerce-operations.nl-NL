@@ -67,6 +67,6 @@ In dit voorbeeld, login aan alle drie gegevensbestanden, die op de zelfde gasthe
 
 Om te controleren of de implementatie van één database goed werkt, voert u de volgende taken uit en controleert u of er gegevens zijn toegevoegd aan de `magento_main` databasetabellen met behulp van databasegereedschappen, zoals [phpMyAdmin](../../installation/prerequisites/optional-software.md#phpmyadmin):
 
-1. Controleer of vreemde sleutels zijn hersteld. De `QUOTE_STORE_ID_STORE_STORE_ID` in de `quote` databasetabel.
-1. Controleer of klanten bestellingen kunnen plaatsen vanuit de winkel.
+1. Controleer of vreemde sleutels zijn hersteld. Bijvoorbeeld de `QUOTE_STORE_ID_STORE_STORE_ID` in de `quote` databasetabel.
+1. Verifieer dat de klanten orden van de opslagront kunnen plaatsen.
 1. Controleer of de orders die zijn gemaakt voordat de gesplitste database wordt teruggezet naar één database, beschikbaar zijn in de Admin.

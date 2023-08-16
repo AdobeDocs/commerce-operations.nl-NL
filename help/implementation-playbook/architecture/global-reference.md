@@ -1,6 +1,6 @@
 ---
 title: Adobe Commerce Global Reference Architecture
-description: Profiteer optimaal van onze Adobe Commerce-implementatie door gebruik te maken van een wereldwijde referentiearchitectuur.
+description: Profiteer optimaal van onze Adobe Commerce-implementatie door een wereldwijde referentiearchitectuur te gebruiken.
 exl-id: a18529a3-da9b-4e1b-8048-0a906e65c740
 feature: Deploy
 source-git-commit: 94d7a57dcd006251e8eefbdb4ec3a5e140bf43f9
@@ -22,7 +22,7 @@ Wanneer het runnen van ondernemingen die veelvoudige plaatsen voor veelvoudige m
 
 GRA is:
 
-- Een uitvoeringsaanpak
+- Een implementatieaanpak
 - Een implementatiestrategie
 - Een model voor procesbeheer
 
@@ -36,7 +36,7 @@ GRA-effecten:
 
 - Hoe code wordt geleverd
 
-   - Gebouwd rond specifieke codebronnen, die verschillende ervaringen leveren.
+   - Gebouwd rond doelspecifieke codebronnen, die verschillende ervaringen leveren.
 
 - Hoe bedrijfssystemen worden geïntegreerd
 
@@ -48,4 +48,4 @@ GRA-effecten:
 
 - Hoe nieuwe markten worden ingeschakeld
 
-   - Vereenvoudigt de vrijgave van meerdere kanalen en markten die anders aanzienlijk meer tijd en geld zouden kosten.
+   - Vereenvoudigt het vrijgeven van meerdere kanalen en markten die anders aanzienlijk meer tijd en geld zouden kosten.

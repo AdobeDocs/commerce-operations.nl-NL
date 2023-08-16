@@ -17,9 +17,9 @@ Dit onderwerp bespreekt geavanceerde configuratiebevelen die u kunt gebruiken aa
 
 - Een configuratieoptie instellen via de opdrachtregel
 - Optioneel elke configuratieoptie vergrendelen zodat de waarde ervan niet kan worden gewijzigd in de beheerfunctie
-- Een configuratieoptie wijzigen die is vergrendeld in de beheerfunctie
+- Een configuratieoptie wijzigen die is vergrendeld in Beheer
 
-U kunt deze bevelen gebruiken om de configuratie van de Handel manueel te plaatsen of manuscripten te gebruiken. U stelt configuratieopties in met een _configuratiepad_, die `/`-delimited string die uniek die configuratieoptie identificeert. U kunt configuratiepaden vinden in de volgende verwijzingen:
+U kunt deze bevelen gebruiken om de configuratie van de Handel manueel te plaatsen of manuscripten te gebruiken. U stelt configuratieopties in met een _configuratiepad_, die een `/`-delimited string die uniek die configuratieoptie identificeert. U kunt configuratiepaden vinden in de volgende verwijzingen:
 
 - [Verwijzing naar gevoelige en systeemspecifieke configuratiepaden](../reference/config-reference-sens.md)
 - [Verwijzing naar betalingspaden](../reference/config-reference-payment.md)
@@ -74,7 +74,7 @@ U kunt de werkingsgebiedcode of in het gegevensbestand van de Handel of in Admin
 
 **De bereikcode zoeken in de database**:
 
-De codes van het werkingsgebied voor websites en opslagmeningen worden opgeslagen in het gegevensbestand van de Handel in `store_website` en `store` tabellen, respectievelijk.
+De codes van het werkingsgebied voor websites en opslagmeningen worden opgeslagen in het gegevensbestand van de Handel in `store_website` en `store` tabellen.
 
 1. Maak verbinding met de Commerce-database.
 
@@ -140,7 +140,7 @@ In de volgende tabel worden de `set` opdrachtparameters:
 
 >[!INFO]
 >
->Vanaf 2.2.4 `--lock-env` en `--lock-config` vervangen de opties `--lock` optie.
+>Vanaf 2.2.4 `--lock-env` en `--lock-config` vervangen `--lock` -optie.
 >
 >Als u het `--lock-env` of `--lock-config` als u een waarde wilt instellen of wijzigen, moet u de optie [`bin/magento app:config:import` command](../cli/import-configuration.md) om de instelling te importeren voordat u toegang krijgt tot Admin of Storage.
 
@@ -231,7 +231,7 @@ waar
 bin/magento config:show
 ```
 
-Resultaat:
+Resultaat
 
 ```terminal
 web/unsecure/base_url - http://example.com/
@@ -247,7 +247,7 @@ analytics/subscription/enabled - 1
 bin/magento config:show --scope=websites --scope-code=base
 ```
 
-Resultaat:
+Resultaat
 
 ```terminal
 web/unsecure/base_url - http://example-for-website.com/
@@ -260,7 +260,7 @@ general/region/state_required - AT,BR,CA
 bin/magento config:show web/unsecure/base_url
 ```
 
-Resultaat:
+Resultaat
 
 ```terminal
 web/unsecure/base_url - http://example.com/
@@ -272,7 +272,7 @@ web/unsecure/base_url - http://example.com/
 bin/magento config:show --scope=websites --scope-code=base web/unsecure/base_url
 ```
 
-Resultaat:
+Resultaat
 
 ```terminal
 web/unsecure/base_url - http://example-for-website.com/
@@ -284,7 +284,7 @@ web/unsecure/base_url - http://example-for-website.com/
 bin/magento config:show --scope=stores --scope-code=default web/unsecure/base_url
 ```
 
-Resultaat:
+Resultaat
 
 ```terminal
 web/unsecure/base_url - http://example-for-store.com/

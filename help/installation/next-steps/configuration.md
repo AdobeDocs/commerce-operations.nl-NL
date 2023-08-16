@@ -1,6 +1,6 @@
 ---
 title: De toepassing configureren
-description: Meer informatie over de configuratie na installatie die vereist is voor Adobe Commerce- en Magento Open Source-implementaties op locatie.
+description: Meer informatie over de configuratie na installatie die vereist is voor Adobe Commerce en Magento Open Source op locatie.
 feature: Install, Configuration
 exl-id: b1808664-10ec-4147-8251-a99f8b58f4be
 source-git-commit: ce405a6bb548b177427e4c02640ce13149c48aff
@@ -12,7 +12,7 @@ ht-degree: 0%
 
 # De toepassing configureren
 
-Nu u Adobe Commerce of Magento Open Source hebt geïnstalleerd, moet u het configureren. Dit onderwerp verstrekt sommige geadviseerde configuratiemontages.
+Nu u klaar bent met het installeren van Adobe Commerce of Magento Open Source, moet u het vormen. Dit onderwerp verstrekt sommige geadviseerde configuratiemontages.
 
 ## Uitsnede instellen
 
@@ -29,7 +29,7 @@ Na de installatie raden we het volgende aan:
 * Zorg ervoor dat de eigendom van het bestand en de machtigingen correct zijn ingesteld.
 * We raden u sterk aan [de standaardbeheerderURI wijzigen](../tutorials/admin-uri.md) van `admin` aan iets anders
 * Zorg ervoor dat de [`X-Frame-Option` HTTP-header](../../configuration/security/xframe-options.md) wordt op de juiste wijze ingesteld.
-* Voorzorgsmaatregelen nemen tegen XSS (cross-site scripting) door [uw sjablonen beveiligen](https://developer.adobe.com/commerce/php/development/security/cross-site-scripting/)
+* Wees voorzichtig met XSS (cross-site scripting) door [uw sjablonen beveiligen](https://developer.adobe.com/commerce/php/development/security/cross-site-scripting/)
 
 Als u door [het klonen van de bewaarplaats van GitHub](https://developer.adobe.com/commerce/contributor/guides/install/clone-repository/), zorgt u ervoor dat wanneer u de toepassing implementeert, u alleen bestanden en mappen opneemt die vereist zijn voor de productieomgeving. Bestanden en mappen die niet vereist zijn, kunnen beveiligingsrisico&#39;s opleveren.
 
@@ -41,21 +41,21 @@ Als u de Apache-webserver gebruikt, moet u de weergave van herschrijvingen van p
 
 ## In cache plaatsen in een omgeving met meerdere webknooppunten
 
-Als u meerdere webknooppunten hebt, kunt u *kan* de standaardbestandcache van de toepassing gebruiken omdat er geen synchronisatie tussen de webknooppunten is. Met andere woorden, de activiteit op één webknooppunt wordt alleen naar het bestandssysteem van dat webknooppunt geschreven. Als een volgende activiteit wordt uitgevoerd op een ander webknooppunt, kunnen er onnodige bestanden worden geschreven of kunnen er fouten optreden.
+Als u meerdere webknooppunten hebt, *kan* de standaardbestandcache van de toepassing gebruiken omdat er geen synchronisatie tussen de webknooppunten is. Met andere woorden, de activiteit op één webknooppunt wordt alleen naar het bestandssysteem van dat webknooppunt geschreven. Als een volgende activiteit wordt uitgevoerd op een ander webknooppunt, kunnen er onnodige bestanden worden geschreven of kunnen er fouten optreden.
 
 Gebruik in plaats daarvan [Redis](../../configuration/cache/config-redis.md) voor zowel de standaardcache als de paginacache.
 
 ## Serverinstellingen
 
-Deze sectie bespreekt kort montages die wij u adviseren voor de server overwegen waarop de toepassing loopt. Sommige van deze instellingen zijn niet rechtstreeks gerelateerd aan de toepassing. deze worden alleen als suggesties gegeven .
+Deze sectie bespreekt kort montages die wij u adviseren voor de server overwegen waarop de toepassing loopt. Sommige van deze instellingen houden niet rechtstreeks verband met de toepassing. Deze instellingen worden alleen als suggesties geleverd.
 
 ### Logrotatie
 
-UNIX `logrotate` Het nut laat u toe om systemen te beheren die grote aantallen logboekdossiers produceren. Hiermee kunnen logbestanden automatisch worden geroteerd, gecomprimeerd, verwijderd en gemaild. Elk logbestand kan dagelijks, wekelijks, maandelijks of wanneer het logbestand een bepaalde grootte overschrijdt, worden afgehandeld.
+UNIX `logrotate` Het nut laat u toe om systemen te beheren die grote aantallen logboekdossiers produceren. Hiermee kunt u logbestanden automatisch roteren, comprimeren, verwijderen en verzenden. Elk logbestand kan dagelijks, wekelijks, maandelijks of wanneer het logbestand een bepaalde grootte overschrijdt, worden afgehandeld.
 
 Zie een van de volgende bronnen voor meer informatie:
 
-* [Procedure: De ultieme opdrachtzelfstudie voor het roteren van logbestanden met tien voorbeelden](https://www.thegeekstuff.com/2010/07/logrotate-examples)
+* [Hoe kan ik: de ultieme opdrachtzelfstudie voor het roteren van logbestanden met tien voorbeelden](https://www.thegeekstuff.com/2010/07/logrotate-examples)
 * [Stapeluitwisseling](https://unix.stackexchange.com/questions/85662/how-to-properly-automatically-manually-rotate-log-files-for-production-rails-app)
 * [`logrotate` man page](https://linuxconfig.org/logrotate-8-manual-page)
 
@@ -70,7 +70,7 @@ Meer informatie:
 
 ### Security Enhanced Linux (SELinux)-regels
 
-We hebben geen aanbeveling voor het gebruik van SELinux. nochtans, als u het gebruikt, moet u de diensten vormen om met elkaar te communiceren gelijkend op het vormen iptables.
+Wij hebben geen aanbeveling voor of u SELinux gebruikt; nochtans, als u het gebruikt, moet u de diensten vormen om met elkaar gelijkend op het vormen van iptables te communiceren.
 
 Meer informatie:
 
@@ -79,7 +79,7 @@ Meer informatie:
 
 ### Een e-mailserver instellen
 
-Adobe Commerce en Magento Open Source hebben een e-mailserver nodig. Wij adviseren geen bepaalde server, maar u kunt om het even welke volgend proberen:
+Voor Adobe Commerce en Magento Open Source is een e-mailserver vereist. Wij adviseren geen bepaalde server, maar u kunt om het even welke volgend proberen:
 
 * Postfix voor CentOS ([Lesbestand digitale oceaan](https://www.digitalocean.com/community/tutorials/how-to-install-postfix-on-centos-6), [CentOS-documentatie](https://www.centos.org))
 * Postfix voor Ubuntu ([Lesbestand digitale oceaan](https://www.digitalocean.com/community/tutorials/how-to-install-and-setup-postfix-on-ubuntu-14-04), [Ubuntu-documentatie](https://help.ubuntu.com/community/MailServer))
@@ -92,7 +92,7 @@ Elasticsearch of OpenSearch is vereist voor alle installaties vanaf 2.4.0.
 
 ### Een wachtrij met berichten instellen
 
-Sinds versie 2.3.0 bevatten Adobe Commerce en Magento Open Source een functionaliteit voor een wachtrij met berichten. In eerdere versies is deze alleen beschikbaar voor Adobe Commerce.
+Sinds versie 2.3.0 bevatten Adobe Commerce en Magento Open Source functionaliteit voor wachtrij met berichten. In eerdere versies is deze alleen beschikbaar voor Adobe Commerce.
 
 * [[!DNL RabbitMQ]](../../configuration/queues/message-queue-framework.md)
 

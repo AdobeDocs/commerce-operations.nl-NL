@@ -17,10 +17,10 @@ In het volgende diagram worden de vijf fasen van projectbeheer en de levenscyclu
 
 ![Levenscyclusdiagram voor projectbeheer](../../assets/playbooks/project-management-lifecycle.png)
 
-De levenscyclus van het projectbeheer biedt een tijdig en gecontroleerd leveringsproces dat voordelen oplevert voor een; belanghebbenden. De eerste stap in het leveren van een succesvol e-commerceproject is projectbeheer. De juiste aanpak en methodologie is nodig om het team in staat te stellen het project effectief en efficiënt te leveren.
+De levenscyclus van het projectbeheer biedt een tijdig en gecontroleerd leveringsproces dat ten goede komt aan a;; projectbelanghebbenden. De eerste stap in het leveren van een succesvol e-commerceproject is projectbeheer. De juiste aanpak en methodologie is nodig om het team in staat te stellen het project effectief en efficiënt te leveren.
 
 
-Sommige teams kiezen de methodiek van het projectbeheer van de Trommel voor hun e-commerce projecten. De hieronder vermelde functies van de trommel helpen het project te vergemakkelijken en te beheren:
+Sommige teams kiezen de het projectbeheersmethodologie van het Trommel voor hun e-commerceprojecten. De hieronder vermelde functies van de trommel helpen het project te vergemakkelijken en te beheren:
 
 - Periodiek uitvoeren van taken
 - Periodiek uitvoeren van taken met betrekking tot achterstand vóór en tijdens de sprint
@@ -38,11 +38,11 @@ Een elementair projectbeheerplan voor e-commerce omvat:
 
 - **Analyse**—In de eerste fase van een project moet het bedrijf een analyse uitvoeren, met inbegrip van een zakelijke analyse van de markt en de concurrenten, om inzicht te krijgen in de sterke en zwakke punten van de organisatie.
 
-- **Vereisten**—Gedetailleerde vereisten definiëren voor wat de organisatie aan het eind van het project wil bereiken met betrekking tot het verbeteren van bestaande vaardigheden en/of het implementeren van nieuwe functies en/of integratie.
+- **Vereisten**—Gedetailleerde vereisten definiëren voor wat de organisatie aan het einde van het project wil, in termen van het verbeteren van bestaande vaardigheden en/of het implementeren van nieuwe functies en/of integratie.
 
-- **Leveranciers van derden**—In deze fase geeft u de vereiste integratie van derden (bijvoorbeeld betaling, verzending, beoordelingen en revisies) in kaart.
+- **Andere leveranciers**—In deze fase geeft u de vereiste integratie van derden (bijvoorbeeld betaling, verzending, beoordelingen en revisies) in kaart.
 
-- **Ontwerp**—Ontwerpspecifieke vereisten voor brainstorm voor sjablonen en het merkboek van het bedrijf.
+- **Ontwerp**—Ontwerpspecifieke vereisten voor brainstormmodellen en het merkboek van het bedrijf.
 
 - **Migratie**—Plan de stappen voor het migreren van inhoud en gegevens.
 
@@ -59,4 +59,4 @@ Sommige beste praktijken die de ondernemingen naar voor projectbeheer kunnen ver
 - Trackingbudget
 - Bereik zichtbaar houden
 
-Er zijn vele verschillende aspecten om te overwegen wanneer het ontwikkelen van een e-commercesite. Projectbeheer biedt de structuur die u nodig hebt om projectdoelstellingen, tijdlijnen en te leveren items bij te houden en teamleden op voortgang uit te lijnen.
+Er zijn vele verschillende aspecten om te overwegen wanneer het ontwikkelen van een elektronische plaats. Projectbeheer biedt de structuur die u nodig hebt om projectdoelstellingen, tijdlijnen en te leveren items bij te houden en teamleden op voortgang uit te lijnen.

@@ -24,7 +24,7 @@ De **[!UICONTROL Alerts]** frame bevat verschillende waarschuwingen, zoals waars
 
 ![Upsize/Downsize per knoop](../../assets/tools/observation-for-adobe-commerce/quickview_upsize_by_node.jpg)
 
-De **[!UICONTROL Upsize / Downsize by node]** frame toont upsizes en downsizes per knooppunt over een geselecteerd tijdframe. Dit wordt gebruikt om te beoordelen of er een verandering in clustergrootte tijdens de geselecteerde tijdspanne was.
+De **[!UICONTROL Upsize / Downsize by node]** frame toont de upgrootten en downgrootten per knooppunt over een geselecteerd tijdframe. Dit wordt gebruikt om te beoordelen of er een verandering in clustergrootte tijdens de geselecteerde tijdspanne was.
 
 ## [!UICONTROL CPU Utilization]
 

@@ -27,6 +27,6 @@ De _Configuratie_ de gids verstrekt verwijzingsmateriaal en beperkte begeleiding
 
 Er zijn overeenkomstige onderwerpen in [Handboek voor handel](https://docs.magento.com/user-guide/stores/configuration.html) dat u kan helpen om gebiedsbeschrijvingen voor elke configuratie te begrijpen die in Admin van de Handel plaatst.
 
-## Cloudconfiguratie
+## Cloud-configuratie
 
-[!DNL Commerce on cloud infrastructure] gebruikt een [set configuratiebestanden](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure/overview.html) om de de toepassingseigenschappen en diensten van de Handel in de ontvangen milieu&#39;s bij te werken. Vanwege de unieke aard van de door de Adobe cloud gehoste omgevingen moet u altijd de [Wolkengids](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/overview.html) voor extra configuratievereisten.
+[!DNL Commerce on cloud infrastructure] gebruikt een [set configuratiebestanden](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure/overview.html) om de de toepassingseigenschappen en diensten van de Handel in de ontvangen milieu&#39;s bij te werken. Vanwege de unieke aard van de Adobe cloudgehoste omgevingen moet u altijd de [Wolkengids](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/overview.html) voor extra configuratievereisten.

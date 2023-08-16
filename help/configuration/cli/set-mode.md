@@ -19,7 +19,7 @@ De productiemodus biedt betere prestaties omdat statische weergavebestanden word
 
 >[!INFO]
 >
->In versie 2.0.6 en recenter, plaatst de Handel niet uitdrukkelijk dossier of foldertoestemmingen wanneer u tussen gebrek, ontwikkelt, en productiemodi schakelt. In tegenstelling tot andere modi worden de ontwikkelaar- en productiemodus ingesteld in de `env.php` bestand. Adobe Commerce op cloudinfrastructuur ondersteunt alleen productie- en onderhoudsmodi.
+>In versie 2.0.6 en recenter, plaatst de Handel niet uitdrukkelijk dossier of foldertoestemmingen wanneer u tussen gebrek, ontwikkelt, en productiemodi schakelt. In tegenstelling tot andere modi worden de ontwikkelaar- en productiemodus ingesteld in de `env.php` bestand. Adobe Commerce on cloud Infrastructure ondersteunt alleen productie- en onderhoudsmodi.
 >
 >Zie [Eigendom en machtigingen van de handel in ontwikkeling en productie](../deployment/file-system-permissions.md).
 
@@ -36,7 +36,7 @@ pub/static
 Uitzonderingen:
 
 - `.htaccess` bestanden worden niet verwijderd
-- `pub/static` bevat een bestand dat de versie van statische inhoud aangeeft; dit bestand is niet verwijderd
+- `pub/static` bevat een bestand dat de versie van de statische inhoud aangeeft. Dit bestand wordt niet verwijderd
 
 >[!INFO]
 >
@@ -62,7 +62,7 @@ waarbij:
 
 - **`{mode}`** kan `default`, `developer`, of `production`
 
-## Wijzigingsmodi
+## Modus wijzigen
 
 Opdrachtgebruik:
 

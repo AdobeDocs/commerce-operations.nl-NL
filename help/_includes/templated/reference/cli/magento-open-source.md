@@ -10,7 +10,7 @@ ht-degree: 0%
 <!-- All the assigned and captured content is used in the included template -->
 
 <!-- The template to render with above values -->
-**Versie**: 2.4.6.
+**Versie**: 2.4.6
 
 Deze verwijzing bevat 114 bevelen beschikbaar door `bin/magento` opdrachtregelprogramma.
 De eerste lijst wordt automatisch gegenereerd met de opdracht `bin/magento list` gebruiken bij Magento Open Source.
@@ -22,7 +22,7 @@ Gebruik de [&quot;CLI-opdrachten toevoegen&quot;](https://developer.adobe.com/co
 
 >[!NOTE]
 >
->Deze verwijzing wordt gegenereerd op basis van de codebase van de toepassing. Als u de inhoud wilt wijzigen, kunt u de broncode voor de corresponderende opdrachtimplementatie bijwerken in het dialoogvenster [codebase](https://github.com/magento) opslaan en uw wijzigingen ter controle verzenden. Een andere manier is om _Feedback geven_ (zoek de koppeling in de rechterbovenhoek). Zie voor richtsnoeren voor bijdragen [Codebijdragen](https://developer.adobe.com/commerce/contributor/guides/code-contributions/).
+>Deze verwijzing wordt gegenereerd op basis van de toepassingscodebase. Als u de inhoud wilt wijzigen, kunt u de broncode voor de corresponderende opdrachtimplementatie bijwerken in het dialoogvenster [codebase](https://github.com/magento) opslaan en uw wijzigingen ter controle verzenden. Een andere manier is om _Feedback geven_ (zoek de koppeling in de rechterbovenhoek). Zie voor richtsnoeren voor bijdragen [Codebijdragen](https://developer.adobe.com/commerce/contributor/guides/code-contributions/).
 
 ## `_complete`
 
@@ -73,7 +73,7 @@ Geen bericht uitvoeren
 
 ### `--verbose`, `-v|-vv|-vvv`
 
-Verhoog de breedheid van berichten: 1 voor normale output, 2 voor meer uitgebreide output en 3 voor zuiveren
+Verhoog de breedheid van berichten: 1 voor normale output, 2 voor meer uitgebreide output en 3 voor zuivert
 
 - Standaard: `false`
 - Accepteert geen waarde
@@ -117,7 +117,7 @@ bin/magento completion [--debug] [--] [<shell>]
 
 ### `shell`
 
-Het shell-type (bijvoorbeeld &quot;bash&quot;), wordt de waarde van &quot;$SHELL&quot; env var gebruikt als dit niet wordt gegeven
+Het shell type (bijvoorbeeld &quot;bash&quot;), de waarde van &quot;$SHELL&quot; env var zal worden gebruikt als dit niet wordt gegeven
 
 
 ### `--debug`
@@ -143,7 +143,7 @@ Geen bericht uitvoeren
 
 ### `--verbose`, `-v|-vv|-vvv`
 
-Verhoog de breedheid van berichten: 1 voor normale output, 2 voor meer uitgebreide output en 3 voor zuiveren
+Verhoog de breedheid van berichten: 1 voor normale output, 2 voor meer uitgebreide output en 3 voor zuivert
 
 - Standaard: `false`
 - Accepteert geen waarde
@@ -222,7 +222,7 @@ Geen bericht uitvoeren
 
 ### `--verbose`, `-v|-vv|-vvv`
 
-Verhoog de breedheid van berichten: 1 voor normale output, 2 voor meer uitgebreide output en 3 voor zuiveren
+Verhoog de breedheid van berichten: 1 voor normale output, 2 voor meer uitgebreide output en 3 voor zuivert
 
 - Standaard: `false`
 - Accepteert geen waarde
@@ -306,7 +306,7 @@ Geen bericht uitvoeren
 
 ### `--verbose`, `-v|-vv|-vvv`
 
-Verhoog de breedheid van berichten: 1 voor normale output, 2 voor meer uitgebreide output en 3 voor zuiveren
+Verhoog de breedheid van berichten: 1 voor normale output, 2 voor meer uitgebreide output en 3 voor zuivert
 
 - Standaard: `false`
 - Accepteert geen waarde
@@ -363,7 +363,7 @@ Geen bericht uitvoeren
 
 ### `--verbose`, `-v|-vv|-vvv`
 
-Verhoog de breedheid van berichten: 1 voor normale output, 2 voor meer uitgebreide output en 3 voor zuiveren
+Verhoog de breedheid van berichten: 1 voor normale output, 2 voor meer uitgebreide output en 3 voor zuivert
 
 - Standaard: `false`
 - Accepteert geen waarde
@@ -444,7 +444,7 @@ Geen bericht uitvoeren
 
 ### `--verbose`, `-v|-vv|-vvv`
 
-Verhoog de breedheid van berichten: 1 voor normale output, 2 voor meer uitgebreide output en 3 voor zuiveren
+Verhoog de breedheid van berichten: 1 voor normale output, 2 voor meer uitgebreide output en 3 voor zuivert
 
 - Standaard: `false`
 - Accepteert geen waarde
@@ -501,7 +501,7 @@ Geen bericht uitvoeren
 
 ### `--verbose`, `-v|-vv|-vvv`
 
-Verhoog de breedheid van berichten: 1 voor normale output, 2 voor meer uitgebreide output en 3 voor zuiveren
+Verhoog de breedheid van berichten: 1 voor normale output, 2 voor meer uitgebreide output en 3 voor zuivert
 
 - Standaard: `false`
 - Accepteert geen waarde
@@ -558,7 +558,7 @@ Geen bericht uitvoeren
 
 ### `--verbose`, `-v|-vv|-vvv`
 
-Verhoog de breedheid van berichten: 1 voor normale output, 2 voor meer uitgebreide output en 3 voor zuiveren
+Verhoog de breedheid van berichten: 1 voor normale output, 2 voor meer uitgebreide output en 3 voor zuivert
 
 - Standaard: `false`
 - Accepteert geen waarde
@@ -651,7 +651,7 @@ Geen bericht uitvoeren
 
 ### `--verbose`, `-v|-vv|-vvv`
 
-Verhoog de breedheid van berichten: 1 voor normale output, 2 voor meer uitgebreide output en 3 voor zuiveren
+Verhoog de breedheid van berichten: 1 voor normale output, 2 voor meer uitgebreide output en 3 voor zuivert
 
 - Standaard: `false`
 - Accepteert geen waarde
@@ -715,7 +715,7 @@ Geen bericht uitvoeren
 
 ### `--verbose`, `-v|-vv|-vvv`
 
-Verhoog de breedheid van berichten: 1 voor normale output, 2 voor meer uitgebreide output en 3 voor zuiveren
+Verhoog de breedheid van berichten: 1 voor normale output, 2 voor meer uitgebreide output en 3 voor zuivert
 
 - Standaard: `false`
 - Accepteert geen waarde
@@ -781,7 +781,7 @@ Geen bericht uitvoeren
 
 ### `--verbose`, `-v|-vv|-vvv`
 
-Verhoog de breedheid van berichten: 1 voor normale output, 2 voor meer uitgebreide output en 3 voor zuiveren
+Verhoog de breedheid van berichten: 1 voor normale output, 2 voor meer uitgebreide output en 3 voor zuivert
 
 - Standaard: `false`
 - Accepteert geen waarde
@@ -838,7 +838,7 @@ Geen bericht uitvoeren
 
 ### `--verbose`, `-v|-vv|-vvv`
 
-Verhoog de breedheid van berichten: 1 voor normale output, 2 voor meer uitgebreide output en 3 voor zuiveren
+Verhoog de breedheid van berichten: 1 voor normale output, 2 voor meer uitgebreide output en 3 voor zuivert
 
 - Standaard: `false`
 - Accepteert geen waarde
@@ -895,7 +895,7 @@ Geen bericht uitvoeren
 
 ### `--verbose`, `-v|-vv|-vvv`
 
-Verhoog de breedheid van berichten: 1 voor normale output, 2 voor meer uitgebreide output en 3 voor zuiveren
+Verhoog de breedheid van berichten: 1 voor normale output, 2 voor meer uitgebreide output en 3 voor zuivert
 
 - Standaard: `false`
 - Accepteert geen waarde
@@ -976,7 +976,7 @@ Geen bericht uitvoeren
 
 ### `--verbose`, `-v|-vv|-vvv`
 
-Verhoog de breedheid van berichten: 1 voor normale output, 2 voor meer uitgebreide output en 3 voor zuiveren
+Verhoog de breedheid van berichten: 1 voor normale output, 2 voor meer uitgebreide output en 3 voor zuivert
 
 - Standaard: `false`
 - Accepteert geen waarde
@@ -1011,7 +1011,7 @@ Geen interactieve vraag stellen
 
 ## `cache:clean`
 
-Hiermee worden cachetype(s) gewist
+Cachetype(s) wissen
 
 ```bash
 bin/magento cache:clean [--bootstrap BOOTSTRAP] [--] [<types>...]
@@ -1048,7 +1048,7 @@ Geen bericht uitvoeren
 
 ### `--verbose`, `-v|-vv|-vvv`
 
-Verhoog de breedheid van berichten: 1 voor normale output, 2 voor meer uitgebreide output en 3 voor zuiveren
+Verhoog de breedheid van berichten: 1 voor normale output, 2 voor meer uitgebreide output en 3 voor zuivert
 
 - Standaard: `false`
 - Accepteert geen waarde
@@ -1120,7 +1120,7 @@ Geen bericht uitvoeren
 
 ### `--verbose`, `-v|-vv|-vvv`
 
-Verhoog de breedheid van berichten: 1 voor normale output, 2 voor meer uitgebreide output en 3 voor zuiveren
+Verhoog de breedheid van berichten: 1 voor normale output, 2 voor meer uitgebreide output en 3 voor zuivert
 
 - Standaard: `false`
 - Accepteert geen waarde
@@ -1192,7 +1192,7 @@ Geen bericht uitvoeren
 
 ### `--verbose`, `-v|-vv|-vvv`
 
-Verhoog de breedheid van berichten: 1 voor normale output, 2 voor meer uitgebreide output en 3 voor zuiveren
+Verhoog de breedheid van berichten: 1 voor normale output, 2 voor meer uitgebreide output en 3 voor zuivert
 
 - Standaard: `false`
 - Accepteert geen waarde
@@ -1264,7 +1264,7 @@ Geen bericht uitvoeren
 
 ### `--verbose`, `-v|-vv|-vvv`
 
-Verhoog de breedheid van berichten: 1 voor normale output, 2 voor meer uitgebreide output en 3 voor zuiveren
+Verhoog de breedheid van berichten: 1 voor normale output, 2 voor meer uitgebreide output en 3 voor zuivert
 
 - Standaard: `false`
 - Accepteert geen waarde
@@ -1327,7 +1327,7 @@ Geen bericht uitvoeren
 
 ### `--verbose`, `-v|-vv|-vvv`
 
-Verhoog de breedheid van berichten: 1 voor normale output, 2 voor meer uitgebreide output en 3 voor zuiveren
+Verhoog de breedheid van berichten: 1 voor normale output, 2 voor meer uitgebreide output en 3 voor zuivert
 
 - Standaard: `false`
 - Accepteert geen waarde
@@ -1398,7 +1398,7 @@ Geen bericht uitvoeren
 
 ### `--verbose`, `-v|-vv|-vvv`
 
-Verhoog de breedheid van berichten: 1 voor normale output, 2 voor meer uitgebreide output en 3 voor zuiveren
+Verhoog de breedheid van berichten: 1 voor normale output, 2 voor meer uitgebreide output en 3 voor zuivert
 
 - Standaard: `false`
 - Accepteert geen waarde
@@ -1455,7 +1455,7 @@ Geen bericht uitvoeren
 
 ### `--verbose`, `-v|-vv|-vvv`
 
-Verhoog de breedheid van berichten: 1 voor normale output, 2 voor meer uitgebreide output en 3 voor zuiveren
+Verhoog de breedheid van berichten: 1 voor normale output, 2 voor meer uitgebreide output en 3 voor zuivert
 
 - Standaard: `false`
 - Accepteert geen waarde
@@ -1490,7 +1490,7 @@ Geen interactieve vraag stellen
 
 ## `cms:wysiwyg:restrict`
 
-Instellen of validatie van HTML-inhoud van gebruiker moet worden afgedwongen of een waarschuwing moet worden weergegeven
+Instellen of validatie van HTML-inhoud van gebruiker moet worden afgedwongen of dat een waarschuwing moet worden weergegeven
 
 ```bash
 bin/magento cms:wysiwyg:restrict <restrict>
@@ -1519,7 +1519,7 @@ Geen bericht uitvoeren
 
 ### `--verbose`, `-v|-vv|-vvv`
 
-Verhoog de breedheid van berichten: 1 voor normale output, 2 voor meer uitgebreide output en 3 voor zuiveren
+Verhoog de breedheid van berichten: 1 voor normale output, 2 voor meer uitgebreide output en 3 voor zuivert
 
 - Standaard: `false`
 - Accepteert geen waarde
@@ -1608,7 +1608,7 @@ Geen bericht uitvoeren
 
 ### `--verbose`, `-v|-vv|-vvv`
 
-Verhoog de breedheid van berichten: 1 voor normale output, 2 voor meer uitgebreide output en 3 voor zuiveren
+Verhoog de breedheid van berichten: 1 voor normale output, 2 voor meer uitgebreide output en 3 voor zuivert
 
 - Standaard: `false`
 - Accepteert geen waarde
@@ -1712,7 +1712,7 @@ Geen bericht uitvoeren
 
 ### `--verbose`, `-v|-vv|-vvv`
 
-Verhoog de breedheid van berichten: 1 voor normale output, 2 voor meer uitgebreide output en 3 voor zuiveren
+Verhoog de breedheid van berichten: 1 voor normale output, 2 voor meer uitgebreide output en 3 voor zuivert
 
 - Standaard: `false`
 - Accepteert geen waarde
@@ -1789,7 +1789,7 @@ Geen bericht uitvoeren
 
 ### `--verbose`, `-v|-vv|-vvv`
 
-Verhoog de breedheid van berichten: 1 voor normale output, 2 voor meer uitgebreide output en 3 voor zuiveren
+Verhoog de breedheid van berichten: 1 voor normale output, 2 voor meer uitgebreide output en 3 voor zuivert
 
 - Standaard: `false`
 - Accepteert geen waarde
@@ -1860,7 +1860,7 @@ Geen bericht uitvoeren
 
 ### `--verbose`, `-v|-vv|-vvv`
 
-Verhoog de breedheid van berichten: 1 voor normale output, 2 voor meer uitgebreide output en 3 voor zuiveren
+Verhoog de breedheid van berichten: 1 voor normale output, 2 voor meer uitgebreide output en 3 voor zuivert
 
 - Standaard: `false`
 - Accepteert geen waarde
@@ -1917,7 +1917,7 @@ Geen bericht uitvoeren
 
 ### `--verbose`, `-v|-vv|-vvv`
 
-Verhoog de breedheid van berichten: 1 voor normale output, 2 voor meer uitgebreide output en 3 voor zuiveren
+Verhoog de breedheid van berichten: 1 voor normale output, 2 voor meer uitgebreide output en 3 voor zuivert
 
 - Standaard: `false`
 - Accepteert geen waarde
@@ -1986,7 +1986,7 @@ Geen bericht uitvoeren
 
 ### `--verbose`, `-v|-vv|-vvv`
 
-Verhoog de breedheid van berichten: 1 voor normale output, 2 voor meer uitgebreide output en 3 voor zuiveren
+Verhoog de breedheid van berichten: 1 voor normale output, 2 voor meer uitgebreide output en 3 voor zuivert
 
 - Standaard: `false`
 - Accepteert geen waarde
@@ -2043,7 +2043,7 @@ Geen bericht uitvoeren
 
 ### `--verbose`, `-v|-vv|-vvv`
 
-Verhoog de breedheid van berichten: 1 voor normale output, 2 voor meer uitgebreide output en 3 voor zuiveren
+Verhoog de breedheid van berichten: 1 voor normale output, 2 voor meer uitgebreide output en 3 voor zuivert
 
 - Standaard: `false`
 - Accepteert geen waarde
@@ -2093,7 +2093,7 @@ De toepassingsmodus die moet worden ingesteld. Beschikbare opties zijn &quot;dev
 
 ### `--skip-compilation`, `-s`
 
-Hiermee slaat u het wissen en opnieuw genereren van statische inhoud (gegenereerde code, vooraf verwerkte CSS en elementen in pub/static/) over.
+Verwijdert het wissen en opnieuw genereren van statische inhoud (gegenereerde code, vooraf verwerkte CSS en elementen in pub/static/)
 
 - Standaard: `false`
 - Accepteert geen waarde
@@ -2114,7 +2114,7 @@ Geen bericht uitvoeren
 
 ### `--verbose`, `-v|-vv|-vvv`
 
-Verhoog de breedheid van berichten: 1 voor normale output, 2 voor meer uitgebreide output en 3 voor zuiveren
+Verhoog de breedheid van berichten: 1 voor normale output, 2 voor meer uitgebreide output en 3 voor zuivert
 
 - Standaard: `false`
 - Accepteert geen waarde
@@ -2171,7 +2171,7 @@ Geen bericht uitvoeren
 
 ### `--verbose`, `-v|-vv|-vvv`
 
-Verhoog de breedheid van berichten: 1 voor normale output, 2 voor meer uitgebreide output en 3 voor zuiveren
+Verhoog de breedheid van berichten: 1 voor normale output, 2 voor meer uitgebreide output en 3 voor zuivert
 
 - Standaard: `false`
 - Accepteert geen waarde
@@ -2235,7 +2235,7 @@ Geen bericht uitvoeren
 
 ### `--verbose`, `-v|-vv|-vvv`
 
-Verhoog de breedheid van berichten: 1 voor normale output, 2 voor meer uitgebreide output en 3 voor zuiveren
+Verhoog de breedheid van berichten: 1 voor normale output, 2 voor meer uitgebreide output en 3 voor zuivert
 
 - Standaard: `false`
 - Accepteert geen waarde
@@ -2292,7 +2292,7 @@ Geen bericht uitvoeren
 
 ### `--verbose`, `-v|-vv|-vvv`
 
-Verhoog de breedheid van berichten: 1 voor normale output, 2 voor meer uitgebreide output en 3 voor zuiveren
+Verhoog de breedheid van berichten: 1 voor normale output, 2 voor meer uitgebreide output en 3 voor zuivert
 
 - Standaard: `false`
 - Accepteert geen waarde
@@ -2349,7 +2349,7 @@ Geen bericht uitvoeren
 
 ### `--verbose`, `-v|-vv|-vvv`
 
-Verhoog de breedheid van berichten: 1 voor normale output, 2 voor meer uitgebreide output en 3 voor zuiveren
+Verhoog de breedheid van berichten: 1 voor normale output, 2 voor meer uitgebreide output en 3 voor zuivert
 
 - Standaard: `false`
 - Accepteert geen waarde
@@ -2384,7 +2384,7 @@ Geen interactieve vraag stellen
 
 ## `dev:profiler:disable`
 
-De analyse uitschakelen.
+Maak profiler onbruikbaar.
 
 ```bash
 bin/magento dev:profiler:disable
@@ -2406,7 +2406,7 @@ Geen bericht uitvoeren
 
 ### `--verbose`, `-v|-vv|-vvv`
 
-Verhoog de breedheid van berichten: 1 voor normale output, 2 voor meer uitgebreide output en 3 voor zuiveren
+Verhoog de breedheid van berichten: 1 voor normale output, 2 voor meer uitgebreide output en 3 voor zuivert
 
 - Standaard: `false`
 - Accepteert geen waarde
@@ -2450,7 +2450,7 @@ bin/magento dev:profiler:enable [<type>]
 
 ### `type`
 
-Het type Profiler
+Type analyse
 
 
 ### `--help`, `-h`
@@ -2469,7 +2469,7 @@ Geen bericht uitvoeren
 
 ### `--verbose`, `-v|-vv|-vvv`
 
-Verhoog de breedheid van berichten: 1 voor normale output, 2 voor meer uitgebreide output en 3 voor zuiveren
+Verhoog de breedheid van berichten: 1 voor normale output, 2 voor meer uitgebreide output en 3 voor zuivert
 
 - Standaard: `false`
 - Accepteert geen waarde
@@ -2504,7 +2504,7 @@ Geen interactieve vraag stellen
 
 ## `dev:query-log:disable`
 
-Logbestand van DB-query uitschakelen
+Logboekregistratie van DB-query uitschakelen
 
 ```bash
 bin/magento dev:query-log:disable
@@ -2526,7 +2526,7 @@ Geen bericht uitvoeren
 
 ### `--verbose`, `-v|-vv|-vvv`
 
-Verhoog de breedheid van berichten: 1 voor normale output, 2 voor meer uitgebreide output en 3 voor zuiveren
+Verhoog de breedheid van berichten: 1 voor normale output, 2 voor meer uitgebreide output en 3 voor zuivert
 
 - Standaard: `false`
 - Accepteert geen waarde
@@ -2604,7 +2604,7 @@ Geen bericht uitvoeren
 
 ### `--verbose`, `-v|-vv|-vvv`
 
-Verhoog de breedheid van berichten: 1 voor normale output, 2 voor meer uitgebreide output en 3 voor zuiveren
+Verhoog de breedheid van berichten: 1 voor normale output, 2 voor meer uitgebreide output en 3 voor zuivert
 
 - Standaard: `false`
 - Accepteert geen waarde
@@ -2698,7 +2698,7 @@ Geen bericht uitvoeren
 
 ### `--verbose`, `-v|-vv|-vvv`
 
-Verhoog de breedheid van berichten: 1 voor normale output, 2 voor meer uitgebreide output en 3 voor zuiveren
+Verhoog de breedheid van berichten: 1 voor normale output, 2 voor meer uitgebreide output en 3 voor zuivert
 
 - Standaard: `false`
 - Accepteert geen waarde
@@ -2733,7 +2733,7 @@ Geen interactieve vraag stellen
 
 ## `dev:template-hints:disable`
 
-Tips voor frontend-sjablonen uitschakelen. Wellicht is een cache-leegloop vereist.
+Tips voor frontend-sjablonen uitschakelen. Wellicht is het leegmaken van de cache vereist.
 
 ```bash
 bin/magento dev:template-hints:disable
@@ -2755,7 +2755,7 @@ Geen bericht uitvoeren
 
 ### `--verbose`, `-v|-vv|-vvv`
 
-Verhoog de breedheid van berichten: 1 voor normale output, 2 voor meer uitgebreide output en 3 voor zuiveren
+Verhoog de breedheid van berichten: 1 voor normale output, 2 voor meer uitgebreide output en 3 voor zuivert
 
 - Standaard: `false`
 - Accepteert geen waarde
@@ -2790,7 +2790,7 @@ Geen interactieve vraag stellen
 
 ## `dev:template-hints:enable`
 
-Tips voor frontend sjablonen inschakelen. Wellicht is een cache-leegloop vereist.
+Tips voor frontendsjablonen inschakelen. Wellicht is het leegmaken van de cache vereist.
 
 ```bash
 bin/magento dev:template-hints:enable
@@ -2812,7 +2812,7 @@ Geen bericht uitvoeren
 
 ### `--verbose`, `-v|-vv|-vvv`
 
-Verhoog de breedheid van berichten: 1 voor normale output, 2 voor meer uitgebreide output en 3 voor zuiveren
+Verhoog de breedheid van berichten: 1 voor normale output, 2 voor meer uitgebreide output en 3 voor zuivert
 
 - Standaard: `false`
 - Accepteert geen waarde
@@ -2869,7 +2869,7 @@ Geen bericht uitvoeren
 
 ### `--verbose`, `-v|-vv|-vvv`
 
-Verhoog de breedheid van berichten: 1 voor normale output, 2 voor meer uitgebreide output en 3 voor zuiveren
+Verhoog de breedheid van berichten: 1 voor normale output, 2 voor meer uitgebreide output en 3 voor zuivert
 
 - Standaard: `false`
 - Accepteert geen waarde
@@ -2913,7 +2913,7 @@ bin/magento dev:tests:run [-c|--arguments ARGUMENTS] [--] [<type>]
 
 ### `type`
 
-Type test dat moet worden uitgevoerd. Beschikbare typen: all, unit, integration, integration-all, static, static-all, integriteit, legacy, default
+Type test dat moet worden uitgevoerd. Beschikbare types: allen, eenheid, integratie, integratie-allen, statisch, statisch-allen, integriteit, erfenis, gebrek
 
 - Standaard: `default`
 
@@ -2941,7 +2941,7 @@ Geen bericht uitvoeren
 
 ### `--verbose`, `-v|-vv|-vvv`
 
-Verhoog de breedheid van berichten: 1 voor normale output, 2 voor meer uitgebreide output en 3 voor zuiveren
+Verhoog de breedheid van berichten: 1 voor normale output, 2 voor meer uitgebreide output en 3 voor zuivert
 
 - Standaard: `false`
 - Accepteert geen waarde
@@ -2976,7 +2976,7 @@ Geen interactieve vraag stellen
 
 ## `dev:urn-catalog:generate`
 
-Hiermee genereert u de catalogus van URL&#39;s naar *.xsd-toewijzingen voor de IDE om xml te markeren.
+Genereert de catalogus van URNs aan *.xsd- afbeeldingen voor winde om xml te benadrukken.
 
 ```bash
 bin/magento dev:urn-catalog:generate [--ide IDE] [--] <path>
@@ -2985,7 +2985,7 @@ bin/magento dev:urn-catalog:generate [--ide IDE] [--] <path>
 
 ### `path`
 
-Pad naar bestand om de catalogus uit te voeren. Voor PHPStorm-gebruik .idea/misc.xml
+Pad naar bestand voor uitvoer van catalogus. Voor PHPStorm-gebruik .idea/misc.xml
 
 - Vereist
 
@@ -3012,7 +3012,7 @@ Geen bericht uitvoeren
 
 ### `--verbose`, `-v|-vv|-vvv`
 
-Verhoog de breedheid van berichten: 1 voor normale output, 2 voor meer uitgebreide output en 3 voor zuiveren
+Verhoog de breedheid van berichten: 1 voor normale output, 2 voor meer uitgebreide output en 3 voor zuivert
 
 - Standaard: `false`
 - Accepteert geen waarde
@@ -3089,7 +3089,7 @@ Geen bericht uitvoeren
 
 ### `--verbose`, `-v|-vv|-vvv`
 
-Verhoog de breedheid van berichten: 1 voor normale output, 2 voor meer uitgebreide output en 3 voor zuiveren
+Verhoog de breedheid van berichten: 1 voor normale output, 2 voor meer uitgebreide output en 3 voor zuivert
 
 - Standaard: `false`
 - Accepteert geen waarde
@@ -3155,7 +3155,7 @@ Geen bericht uitvoeren
 
 ### `--verbose`, `-v|-vv|-vvv`
 
-Verhoog de breedheid van berichten: 1 voor normale output, 2 voor meer uitgebreide output en 3 voor zuiveren
+Verhoog de breedheid van berichten: 1 voor normale output, 2 voor meer uitgebreide output en 3 voor zuivert
 
 - Standaard: `false`
 - Accepteert geen waarde
@@ -3190,7 +3190,7 @@ Geen interactieve vraag stellen
 
 ## `downloadable:domains:remove`
 
-Domeinen verwijderen uit de whitelist van downloadbare domeinen
+Verwijder domeinen uit de downloadbare whitelist van domeinen
 
 ```bash
 bin/magento downloadable:domains:remove [<domains>...]
@@ -3221,7 +3221,7 @@ Geen bericht uitvoeren
 
 ### `--verbose`, `-v|-vv|-vvv`
 
-Verhoog de breedheid van berichten: 1 voor normale output, 2 voor meer uitgebreide output en 3 voor zuiveren
+Verhoog de breedheid van berichten: 1 voor normale output, 2 voor meer uitgebreide output en 3 voor zuivert
 
 - Standaard: `false`
 - Accepteert geen waarde
@@ -3278,7 +3278,7 @@ Geen bericht uitvoeren
 
 ### `--verbose`, `-v|-vv|-vvv`
 
-Verhoog de breedheid van berichten: 1 voor normale output, 2 voor meer uitgebreide output en 3 voor zuiveren
+Verhoog de breedheid van berichten: 1 voor normale output, 2 voor meer uitgebreide output en 3 voor zuivert
 
 - Standaard: `false`
 - Accepteert geen waarde
@@ -3335,7 +3335,7 @@ Geen bericht uitvoeren
 
 ### `--verbose`, `-v|-vv|-vvv`
 
-Verhoog de breedheid van berichten: 1 voor normale output, 2 voor meer uitgebreide output en 3 voor zuiveren
+Verhoog de breedheid van berichten: 1 voor normale output, 2 voor meer uitgebreide output en 3 voor zuivert
 
 - Standaard: `false`
 - Accepteert geen waarde
@@ -3390,7 +3390,7 @@ Pad (inclusief bestandsnaam) naar een uitvoerbestand. Als er geen bestand is opg
 
 ### `--magento`, `-m`
 
-Gebruik de parameter —magento om de huidige Magento-codebase te parseren. Laat de parameter weg als een folder wordt gespecificeerd.
+Gebruik de parameter —magento om de huidige codebase van het Magento te parseren. Laat de parameter weg als een folder wordt gespecificeerd.
 
 - Standaard: `false`
 - Accepteert geen waarde
@@ -3411,7 +3411,7 @@ Geen bericht uitvoeren
 
 ### `--verbose`, `-v|-vv|-vvv`
 
-Verhoog de breedheid van berichten: 1 voor normale output, 2 voor meer uitgebreide output en 3 voor zuiveren
+Verhoog de breedheid van berichten: 1 voor normale output, 2 voor meer uitgebreide output en 3 voor zuivert
 
 - Standaard: `false`
 - Accepteert geen waarde
@@ -3495,7 +3495,7 @@ Geen bericht uitvoeren
 
 ### `--verbose`, `-v|-vv|-vvv`
 
-Verhoog de breedheid van berichten: 1 voor normale output, 2 voor meer uitgebreide output en 3 voor zuiveren
+Verhoog de breedheid van berichten: 1 voor normale output, 2 voor meer uitgebreide output en 3 voor zuivert
 
 - Standaard: `false`
 - Accepteert geen waarde
@@ -3548,7 +3548,7 @@ Taalpakketnaam
 
 ### `--backup-code`, `-b`
 
-Back-up maken van code- en configuratiebestanden (met uitzondering van tijdelijke bestanden)
+Back-up maken van code- en configuratiebestanden (behalve tijdelijke bestanden)
 
 - Standaard: `false`
 - Accepteert geen waarde
@@ -3569,7 +3569,7 @@ Geen bericht uitvoeren
 
 ### `--verbose`, `-v|-vv|-vvv`
 
-Verhoog de breedheid van berichten: 1 voor normale output, 2 voor meer uitgebreide output en 3 voor zuiveren
+Verhoog de breedheid van berichten: 1 voor normale output, 2 voor meer uitgebreide output en 3 voor zuivert
 
 - Standaard: `false`
 - Accepteert geen waarde
@@ -3626,7 +3626,7 @@ Geen bericht uitvoeren
 
 ### `--verbose`, `-v|-vv|-vvv`
 
-Verhoog de breedheid van berichten: 1 voor normale output, 2 voor meer uitgebreide output en 3 voor zuiveren
+Verhoog de breedheid van berichten: 1 voor normale output, 2 voor meer uitgebreide output en 3 voor zuivert
 
 - Standaard: `false`
 - Accepteert geen waarde
@@ -3692,7 +3692,7 @@ Geen bericht uitvoeren
 
 ### `--verbose`, `-v|-vv|-vvv`
 
-Verhoog de breedheid van berichten: 1 voor normale output, 2 voor meer uitgebreide output en 3 voor zuiveren
+Verhoog de breedheid van berichten: 1 voor normale output, 2 voor meer uitgebreide output en 3 voor zuivert
 
 - Standaard: `false`
 - Accepteert geen waarde
@@ -3758,7 +3758,7 @@ Geen bericht uitvoeren
 
 ### `--verbose`, `-v|-vv|-vvv`
 
-Verhoog de breedheid van berichten: 1 voor normale output, 2 voor meer uitgebreide output en 3 voor zuiveren
+Verhoog de breedheid van berichten: 1 voor normale output, 2 voor meer uitgebreide output en 3 voor zuivert
 
 - Standaard: `false`
 - Accepteert geen waarde
@@ -3793,7 +3793,7 @@ Geen interactieve vraag stellen
 
 ## `indexer:set-dimensions-mode`
 
-Modus Dimension indexeren instellen
+Modus IndexerDimensionen instellen
 
 ```bash
 bin/magento indexer:set-dimensions-mode [<indexer> [<mode>]]
@@ -3826,7 +3826,7 @@ Geen bericht uitvoeren
 
 ### `--verbose`, `-v|-vv|-vvv`
 
-Verhoog de breedheid van berichten: 1 voor normale output, 2 voor meer uitgebreide output en 3 voor zuiveren
+Verhoog de breedheid van berichten: 1 voor normale output, 2 voor meer uitgebreide output en 3 voor zuivert
 
 - Standaard: `false`
 - Accepteert geen waarde
@@ -3897,7 +3897,7 @@ Geen bericht uitvoeren
 
 ### `--verbose`, `-v|-vv|-vvv`
 
-Verhoog de breedheid van berichten: 1 voor normale output, 2 voor meer uitgebreide output en 3 voor zuiveren
+Verhoog de breedheid van berichten: 1 voor normale output, 2 voor meer uitgebreide output en 3 voor zuivert
 
 - Standaard: `false`
 - Accepteert geen waarde
@@ -3932,7 +3932,7 @@ Geen interactieve vraag stellen
 
 ## `indexer:show-dimensions-mode`
 
-Modus Dimension van index weergeven
+Modus Dimension indexeren tonen
 
 ```bash
 bin/magento indexer:show-dimensions-mode [<indexer>...]
@@ -3963,7 +3963,7 @@ Geen bericht uitvoeren
 
 ### `--verbose`, `-v|-vv|-vvv`
 
-Verhoog de breedheid van berichten: 1 voor normale output, 2 voor meer uitgebreide output en 3 voor zuiveren
+Verhoog de breedheid van berichten: 1 voor normale output, 2 voor meer uitgebreide output en 3 voor zuivert
 
 - Standaard: `false`
 - Accepteert geen waarde
@@ -4029,7 +4029,7 @@ Geen bericht uitvoeren
 
 ### `--verbose`, `-v|-vv|-vvv`
 
-Verhoog de breedheid van berichten: 1 voor normale output, 2 voor meer uitgebreide output en 3 voor zuiveren
+Verhoog de breedheid van berichten: 1 voor normale output, 2 voor meer uitgebreide output en 3 voor zuivert
 
 - Standaard: `false`
 - Accepteert geen waarde
@@ -4095,7 +4095,7 @@ Geen bericht uitvoeren
 
 ### `--verbose`, `-v|-vv|-vvv`
 
-Verhoog de breedheid van berichten: 1 voor normale output, 2 voor meer uitgebreide output en 3 voor zuiveren
+Verhoog de breedheid van berichten: 1 voor normale output, 2 voor meer uitgebreide output en 3 voor zuivert
 
 - Standaard: `false`
 - Accepteert geen waarde
@@ -4130,7 +4130,7 @@ Geen interactieve vraag stellen
 
 ## `info:adminuri`
 
-Hiermee wordt de URI voor Magento-beheer weergegeven
+Hiermee wordt de Magento Admin URI weergegeven
 
 ```bash
 bin/magento info:adminuri
@@ -4152,7 +4152,7 @@ Geen bericht uitvoeren
 
 ### `--verbose`, `-v|-vv|-vvv`
 
-Verhoog de breedheid van berichten: 1 voor normale output, 2 voor meer uitgebreide output en 3 voor zuiveren
+Verhoog de breedheid van berichten: 1 voor normale output, 2 voor meer uitgebreide output en 3 voor zuivert
 
 - Standaard: `false`
 - Accepteert geen waarde
@@ -4209,7 +4209,7 @@ Geen bericht uitvoeren
 
 ### `--verbose`, `-v|-vv|-vvv`
 
-Verhoog de breedheid van berichten: 1 voor normale output, 2 voor meer uitgebreide output en 3 voor zuiveren
+Verhoog de breedheid van berichten: 1 voor normale output, 2 voor meer uitgebreide output en 3 voor zuivert
 
 - Standaard: `false`
 - Accepteert geen waarde
@@ -4266,7 +4266,7 @@ Geen bericht uitvoeren
 
 ### `--verbose`, `-v|-vv|-vvv`
 
-Verhoog de breedheid van berichten: 1 voor normale output, 2 voor meer uitgebreide output en 3 voor zuiveren
+Verhoog de breedheid van berichten: 1 voor normale output, 2 voor meer uitgebreide output en 3 voor zuivert
 
 - Standaard: `false`
 - Accepteert geen waarde
@@ -4301,7 +4301,7 @@ Geen interactieve vraag stellen
 
 ## `info:dependencies:show-framework`
 
-Geeft het aantal afhankelijkheden weer van het Magento-framework
+Geeft aantal afhankelijkheden weer van raamwerk voor Magento&#39;s
 
 ```bash
 bin/magento info:dependencies:show-framework [-o|--output OUTPUT]
@@ -4330,7 +4330,7 @@ Geen bericht uitvoeren
 
 ### `--verbose`, `-v|-vv|-vvv`
 
-Verhoog de breedheid van berichten: 1 voor normale output, 2 voor meer uitgebreide output en 3 voor zuiveren
+Verhoog de breedheid van berichten: 1 voor normale output, 2 voor meer uitgebreide output en 3 voor zuivert
 
 - Standaard: `false`
 - Accepteert geen waarde
@@ -4394,7 +4394,7 @@ Geen bericht uitvoeren
 
 ### `--verbose`, `-v|-vv|-vvv`
 
-Verhoog de breedheid van berichten: 1 voor normale output, 2 voor meer uitgebreide output en 3 voor zuiveren
+Verhoog de breedheid van berichten: 1 voor normale output, 2 voor meer uitgebreide output en 3 voor zuivert
 
 - Standaard: `false`
 - Accepteert geen waarde
@@ -4458,7 +4458,7 @@ Geen bericht uitvoeren
 
 ### `--verbose`, `-v|-vv|-vvv`
 
-Verhoog de breedheid van berichten: 1 voor normale output, 2 voor meer uitgebreide output en 3 voor zuiveren
+Verhoog de breedheid van berichten: 1 voor normale output, 2 voor meer uitgebreide output en 3 voor zuivert
 
 - Standaard: `false`
 - Accepteert geen waarde
@@ -4493,7 +4493,7 @@ Geen interactieve vraag stellen
 
 ## `info:language:list`
 
-Hiermee geeft u de lijst met beschikbare taallandinstellingen weer
+Geeft de lijst met beschikbare taallandinstellingen weer
 
 ```bash
 bin/magento info:language:list
@@ -4515,7 +4515,7 @@ Geen bericht uitvoeren
 
 ### `--verbose`, `-v|-vv|-vvv`
 
-Verhoog de breedheid van berichten: 1 voor normale output, 2 voor meer uitgebreide output en 3 voor zuiveren
+Verhoog de breedheid van berichten: 1 voor normale output, 2 voor meer uitgebreide output en 3 voor zuivert
 
 - Standaard: `false`
 - Accepteert geen waarde
@@ -4572,7 +4572,7 @@ Geen bericht uitvoeren
 
 ### `--verbose`, `-v|-vv|-vvv`
 
-Verhoog de breedheid van berichten: 1 voor normale output, 2 voor meer uitgebreide output en 3 voor zuiveren
+Verhoog de breedheid van berichten: 1 voor normale output, 2 voor meer uitgebreide output en 3 voor zuivert
 
 - Standaard: `false`
 - Accepteert geen waarde
@@ -4645,7 +4645,7 @@ Geen bericht uitvoeren
 
 ### `--verbose`, `-v|-vv|-vvv`
 
-Verhoog de breedheid van berichten: 1 voor normale output, 2 voor meer uitgebreide output en 3 voor zuiveren
+Verhoog de breedheid van berichten: 1 voor normale output, 2 voor meer uitgebreide output en 3 voor zuivert
 
 - Standaard: `false`
 - Accepteert geen waarde
@@ -4730,7 +4730,7 @@ Geen bericht uitvoeren
 
 ### `--verbose`, `-v|-vv|-vvv`
 
-Verhoog de breedheid van berichten: 1 voor normale output, 2 voor meer uitgebreide output en 3 voor zuiveren
+Verhoog de breedheid van berichten: 1 voor normale output, 2 voor meer uitgebreide output en 3 voor zuivert
 
 - Standaard: `false`
 - Accepteert geen waarde
@@ -4797,7 +4797,7 @@ Geen bericht uitvoeren
 
 ### `--verbose`, `-v|-vv|-vvv`
 
-Verhoog de breedheid van berichten: 1 voor normale output, 2 voor meer uitgebreide output en 3 voor zuiveren
+Verhoog de breedheid van berichten: 1 voor normale output, 2 voor meer uitgebreide output en 3 voor zuivert
 
 - Standaard: `false`
 - Accepteert geen waarde
@@ -4883,7 +4883,7 @@ Geen bericht uitvoeren
 
 ### `--verbose`, `-v|-vv|-vvv`
 
-Verhoog de breedheid van berichten: 1 voor normale output, 2 voor meer uitgebreide output en 3 voor zuiveren
+Verhoog de breedheid van berichten: 1 voor normale output, 2 voor meer uitgebreide output en 3 voor zuivert
 
 - Standaard: `false`
 - Accepteert geen waarde
@@ -4953,7 +4953,7 @@ Geen bericht uitvoeren
 
 ### `--verbose`, `-v|-vv|-vvv`
 
-Verhoog de breedheid van berichten: 1 voor normale output, 2 voor meer uitgebreide output en 3 voor zuiveren
+Verhoog de breedheid van berichten: 1 voor normale output, 2 voor meer uitgebreide output en 3 voor zuivert
 
 - Standaard: `false`
 - Accepteert geen waarde
@@ -5023,7 +5023,7 @@ Geen bericht uitvoeren
 
 ### `--verbose`, `-v|-vv|-vvv`
 
-Verhoog de breedheid van berichten: 1 voor normale output, 2 voor meer uitgebreide output en 3 voor zuiveren
+Verhoog de breedheid van berichten: 1 voor normale output, 2 voor meer uitgebreide output en 3 voor zuivert
 
 - Standaard: `false`
 - Accepteert geen waarde
@@ -5086,7 +5086,7 @@ Geen bericht uitvoeren
 
 ### `--verbose`, `-v|-vv|-vvv`
 
-Verhoog de breedheid van berichten: 1 voor normale output, 2 voor meer uitgebreide output en 3 voor zuiveren
+Verhoog de breedheid van berichten: 1 voor normale output, 2 voor meer uitgebreide output en 3 voor zuivert
 
 - Standaard: `false`
 - Accepteert geen waarde
@@ -5143,7 +5143,7 @@ Geen bericht uitvoeren
 
 ### `--verbose`, `-v|-vv|-vvv`
 
-Verhoog de breedheid van berichten: 1 voor normale output, 2 voor meer uitgebreide output en 3 voor zuiveren
+Verhoog de breedheid van berichten: 1 voor normale output, 2 voor meer uitgebreide output en 3 voor zuivert
 
 - Standaard: `false`
 - Accepteert geen waarde
@@ -5200,7 +5200,7 @@ Geen bericht uitvoeren
 
 ### `--verbose`, `-v|-vv|-vvv`
 
-Verhoog de breedheid van berichten: 1 voor normale output, 2 voor meer uitgebreide output en 3 voor zuiveren
+Verhoog de breedheid van berichten: 1 voor normale output, 2 voor meer uitgebreide output en 3 voor zuivert
 
 - Standaard: `false`
 - Accepteert geen waarde
@@ -5257,7 +5257,7 @@ Geen bericht uitvoeren
 
 ### `--verbose`, `-v|-vv|-vvv`
 
-Verhoog de breedheid van berichten: 1 voor normale output, 2 voor meer uitgebreide output en 3 voor zuiveren
+Verhoog de breedheid van berichten: 1 voor normale output, 2 voor meer uitgebreide output en 3 voor zuivert
 
 - Standaard: `false`
 - Accepteert geen waarde
@@ -5350,7 +5350,7 @@ Geen bericht uitvoeren
 
 ### `--verbose`, `-v|-vv|-vvv`
 
-Verhoog de breedheid van berichten: 1 voor normale output, 2 voor meer uitgebreide output en 3 voor zuiveren
+Verhoog de breedheid van berichten: 1 voor normale output, 2 voor meer uitgebreide output en 3 voor zuivert
 
 - Standaard: `false`
 - Accepteert geen waarde
@@ -5443,7 +5443,7 @@ Geen bericht uitvoeren
 
 ### `--verbose`, `-v|-vv|-vvv`
 
-Verhoog de breedheid van berichten: 1 voor normale output, 2 voor meer uitgebreide output en 3 voor zuiveren
+Verhoog de breedheid van berichten: 1 voor normale output, 2 voor meer uitgebreide output en 3 voor zuivert
 
 - Standaard: `false`
 - Accepteert geen waarde
@@ -5529,7 +5529,7 @@ Geen bericht uitvoeren
 
 ### `--verbose`, `-v|-vv|-vvv`
 
-Verhoog de breedheid van berichten: 1 voor normale output, 2 voor meer uitgebreide output en 3 voor zuiveren
+Verhoog de breedheid van berichten: 1 voor normale output, 2 voor meer uitgebreide output en 3 voor zuivert
 
 - Standaard: `false`
 - Accepteert geen waarde
@@ -5589,7 +5589,7 @@ Gegevens verwijderen die zijn geïnstalleerd door module(s)
 
 ### `--backup-code`
 
-Back-up maken van code- en configuratiebestanden (met uitzondering van tijdelijke bestanden)
+Back-up maken van code- en configuratiebestanden (behalve tijdelijke bestanden)
 
 - Standaard: `false`
 - Accepteert geen waarde
@@ -5644,7 +5644,7 @@ Geen bericht uitvoeren
 
 ### `--verbose`, `-v|-vv|-vvv`
 
-Verhoog de breedheid van berichten: 1 voor normale output, 2 voor meer uitgebreide output en 3 voor zuiveren
+Verhoog de breedheid van berichten: 1 voor normale output, 2 voor meer uitgebreide output en 3 voor zuivert
 
 - Standaard: `false`
 - Accepteert geen waarde
@@ -5724,7 +5724,7 @@ Geen bericht uitvoeren
 
 ### `--verbose`, `-v|-vv|-vvv`
 
-Verhoog de breedheid van berichten: 1 voor normale output, 2 voor meer uitgebreide output en 3 voor zuiveren
+Verhoog de breedheid van berichten: 1 voor normale output, 2 voor meer uitgebreide output en 3 voor zuivert
 
 - Standaard: `false`
 - Accepteert geen waarde
@@ -5781,7 +5781,7 @@ Geen bericht uitvoeren
 
 ### `--verbose`, `-v|-vv|-vvv`
 
-Verhoog de breedheid van berichten: 1 voor normale output, 2 voor meer uitgebreide output en 3 voor zuiveren
+Verhoog de breedheid van berichten: 1 voor normale output, 2 voor meer uitgebreide output en 3 voor zuivert
 
 - Standaard: `false`
 - Accepteert geen waarde
@@ -5838,7 +5838,7 @@ Geen bericht uitvoeren
 
 ### `--verbose`, `-v|-vv|-vvv`
 
-Verhoog de breedheid van berichten: 1 voor normale output, 2 voor meer uitgebreide output en 3 voor zuiveren
+Verhoog de breedheid van berichten: 1 voor normale output, 2 voor meer uitgebreide output en 3 voor zuivert
 
 - Standaard: `false`
 - Accepteert geen waarde
@@ -5939,7 +5939,7 @@ Geen bericht uitvoeren
 
 ### `--verbose`, `-v|-vv|-vvv`
 
-Verhoog de breedheid van berichten: 1 voor normale output, 2 voor meer uitgebreide output en 3 voor zuiveren
+Verhoog de breedheid van berichten: 1 voor normale output, 2 voor meer uitgebreide output en 3 voor zuivert
 
 - Standaard: `false`
 - Accepteert geen waarde
@@ -5996,7 +5996,7 @@ Geen bericht uitvoeren
 
 ### `--verbose`, `-v|-vv|-vvv`
 
-Verhoog de breedheid van berichten: 1 voor normale output, 2 voor meer uitgebreide output en 3 voor zuiveren
+Verhoog de breedheid van berichten: 1 voor normale output, 2 voor meer uitgebreide output en 3 voor zuivert
 
 - Standaard: `false`
 - Accepteert geen waarde
@@ -6031,7 +6031,7 @@ Geen interactieve vraag stellen
 
 ## `sampledata:deploy`
 
-Stel steekproefgegevensmodules voor op composer-gebaseerde Magento installaties op
+Stel steekproefgegevensmodules voor op composer-gebaseerde Magento&#39;s installaties op
 
 ```bash
 bin/magento sampledata:deploy [--no-update]
@@ -6039,7 +6039,7 @@ bin/magento sampledata:deploy [--no-update]
 
 ### `--no-update`
 
-Composer.json bijwerken zonder composer-update uit te voeren
+Composer.json bijwerken zonder componentupdate uit te voeren
 
 - Standaard: `false`
 - Accepteert geen waarde
@@ -6060,7 +6060,7 @@ Geen bericht uitvoeren
 
 ### `--verbose`, `-v|-vv|-vvv`
 
-Verhoog de breedheid van berichten: 1 voor normale output, 2 voor meer uitgebreide output en 3 voor zuiveren
+Verhoog de breedheid van berichten: 1 voor normale output, 2 voor meer uitgebreide output en 3 voor zuivert
 
 - Standaard: `false`
 - Accepteert geen waarde
@@ -6103,7 +6103,7 @@ bin/magento sampledata:remove [--no-update]
 
 ### `--no-update`
 
-Composer.json bijwerken zonder composer-update uit te voeren
+Composer.json bijwerken zonder componentupdate uit te voeren
 
 - Standaard: `false`
 - Accepteert geen waarde
@@ -6124,7 +6124,7 @@ Geen bericht uitvoeren
 
 ### `--verbose`, `-v|-vv|-vvv`
 
-Verhoog de breedheid van berichten: 1 voor normale output, 2 voor meer uitgebreide output en 3 voor zuiveren
+Verhoog de breedheid van berichten: 1 voor normale output, 2 voor meer uitgebreide output en 3 voor zuivert
 
 - Standaard: `false`
 - Accepteert geen waarde
@@ -6181,7 +6181,7 @@ Geen bericht uitvoeren
 
 ### `--verbose`, `-v|-vv|-vvv`
 
-Verhoog de breedheid van berichten: 1 voor normale output, 2 voor meer uitgebreide output en 3 voor zuiveren
+Verhoog de breedheid van berichten: 1 voor normale output, 2 voor meer uitgebreide output en 3 voor zuivert
 
 - Standaard: `false`
 - Accepteert geen waarde
@@ -6238,7 +6238,7 @@ Geen bericht uitvoeren
 
 ### `--verbose`, `-v|-vv|-vvv`
 
-Verhoog de breedheid van berichten: 1 voor normale output, 2 voor meer uitgebreide output en 3 voor zuiveren
+Verhoog de breedheid van berichten: 1 voor normale output, 2 voor meer uitgebreide output en 3 voor zuivert
 
 - Standaard: `false`
 - Accepteert geen waarde
@@ -6295,7 +6295,7 @@ Geen bericht uitvoeren
 
 ### `--verbose`, `-v|-vv|-vvv`
 
-Verhoog de breedheid van berichten: 1 voor normale output, 2 voor meer uitgebreide output en 3 voor zuiveren
+Verhoog de breedheid van berichten: 1 voor normale output, 2 voor meer uitgebreide output en 3 voor zuivert
 
 - Standaard: `false`
 - Accepteert geen waarde
@@ -6365,7 +6365,7 @@ Geen bericht uitvoeren
 
 ### `--verbose`, `-v|-vv|-vvv`
 
-Verhoog de breedheid van berichten: 1 voor normale output, 2 voor meer uitgebreide output en 3 voor zuiveren
+Verhoog de breedheid van berichten: 1 voor normale output, 2 voor meer uitgebreide output en 3 voor zuivert
 
 - Standaard: `false`
 - Accepteert geen waarde
@@ -6422,7 +6422,7 @@ Geen bericht uitvoeren
 
 ### `--verbose`, `-v|-vv|-vvv`
 
-Verhoog de breedheid van berichten: 1 voor normale output, 2 voor meer uitgebreide output en 3 voor zuiveren
+Verhoog de breedheid van berichten: 1 voor normale output, 2 voor meer uitgebreide output en 3 voor zuivert
 
 - Standaard: `false`
 - Accepteert geen waarde
@@ -6492,7 +6492,7 @@ Geen bericht uitvoeren
 
 ### `--verbose`, `-v|-vv|-vvv`
 
-Verhoog de breedheid van berichten: 1 voor normale output, 2 voor meer uitgebreide output en 3 voor zuiveren
+Verhoog de breedheid van berichten: 1 voor normale output, 2 voor meer uitgebreide output en 3 voor zuivert
 
 - Standaard: `false`
 - Accepteert geen waarde
@@ -6527,7 +6527,7 @@ Geen interactieve vraag stellen
 
 ## `setup:backup`
 
-Maakt een back-up van de Magento Application Code base, media en database
+Maakt een back-up van de codebasis, media en database van Magento Application
 
 ```bash
 bin/magento setup:backup [--code] [--media] [--db] [--magento-init-params MAGENTO-INIT-PARAMS]
@@ -6535,7 +6535,7 @@ bin/magento setup:backup [--code] [--media] [--db] [--magento-init-params MAGENT
 
 ### `--code`
 
-Back-up maken van code- en configuratiebestanden (met uitzondering van tijdelijke bestanden)
+Back-up maken van code- en configuratiebestanden (behalve tijdelijke bestanden)
 
 - Standaard: `false`
 - Accepteert geen waarde
@@ -6576,7 +6576,7 @@ Geen bericht uitvoeren
 
 ### `--verbose`, `-v|-vv|-vvv`
 
-Verhoog de breedheid van berichten: 1 voor normale output, 2 voor meer uitgebreide output en 3 voor zuiveren
+Verhoog de breedheid van berichten: 1 voor normale output, 2 voor meer uitgebreide output en 3 voor zuivert
 
 - Standaard: `false`
 - Accepteert geen waarde
@@ -6625,7 +6625,7 @@ Foutopsporingsregistratie inschakelen
 
 ### `--enable-syslog-logging`
 
-Syslog-logboekregistratie inschakelen
+syslog inschakelen
 
 - Vereist een waarde
 
@@ -6681,14 +6681,14 @@ Toegangstoets externe opslag
 
 ### `--remote-storage-secret`
 
-Externe geheim van opslagsleutel
+Sleutel voor geheim opslagruimte
 
 - Standaard: &quot;
 - Vereist een waarde
 
 ### `--remote-storage-path-style`
 
-Padstijl externe opslag
+Padstijl voor externe opslag
 
 - Standaard: `0`
 - Vereist een waarde
@@ -6798,7 +6798,7 @@ Voorvoegsel databasetabel
 
 ### `--db-model`
 
-Type database
+Databasetype
 
 - Vereist een waarde
 
@@ -6810,7 +6810,7 @@ Eerste set opdrachten database
 
 ### `--skip-db-validation`, `-s`
 
-Indien opgegeven, wordt de validatie van de db-verbinding overgeslagen
+Indien opgegeven, wordt de db-verbindingsvalidatie overgeslagen
 
 - Standaard: `false`
 - Accepteert geen waarde
@@ -6953,7 +6953,7 @@ Schakel vergrendeling opnieuw uit. Waarden: false (standaardwaarde), true
 
 ### `--session-save-redis-min-lifetime`
 
-Herdis min sessieduur, in seconden
+Standaardsessielevensduur van Redis, in seconden
 
 - Vereist een waarde
 
@@ -6965,7 +6965,7 @@ Maximale sessielevensduur van Redis, in seconden
 
 ### `--session-save-redis-sentinel-master`
 
-Redis Sentinel master
+Redis Sentinel Master
 
 - Vereist een waarde
 
@@ -6977,7 +6977,7 @@ Redis Sentinel-servers, gescheiden door komma&#39;s
 
 ### `--session-save-redis-sentinel-verify-master`
 
-Redis Sentinel verifieert master. Waarden: false (standaard), true
+Redis Sentinel verify master. Waarden: false (standaardwaarde), true
 
 - Vereist een waarde
 
@@ -7148,7 +7148,7 @@ Geen bericht uitvoeren
 
 ### `--verbose`, `-v|-vv|-vvv`
 
-Verhoog de breedheid van berichten: 1 voor normale output, 2 voor meer uitgebreide output en 3 voor zuiveren
+Verhoog de breedheid van berichten: 1 voor normale output, 2 voor meer uitgebreide output en 3 voor zuivert
 
 - Standaard: `false`
 - Accepteert geen waarde
@@ -7211,7 +7211,7 @@ Geen bericht uitvoeren
 
 ### `--verbose`, `-v|-vv|-vvv`
 
-Verhoog de breedheid van berichten: 1 voor normale output, 2 voor meer uitgebreide output en 3 voor zuiveren
+Verhoog de breedheid van berichten: 1 voor normale output, 2 voor meer uitgebreide output en 3 voor zuivert
 
 - Standaard: `false`
 - Accepteert geen waarde
@@ -7267,7 +7267,7 @@ Patchnaam
 
 ### `--revertable`
 
-Controleer of de patch kan worden teruggedraaid of niet.
+Controleer of de patch teruggedraaid kan worden.
 
 - Standaard: `false`
 - Accepteert een waarde
@@ -7295,7 +7295,7 @@ Geen bericht uitvoeren
 
 ### `--verbose`, `-v|-vv|-vvv`
 
-Verhoog de breedheid van berichten: 1 voor normale output, 2 voor meer uitgebreide output en 3 voor zuiveren
+Verhoog de breedheid van berichten: 1 voor normale output, 2 voor meer uitgebreide output en 3 voor zuivert
 
 - Standaard: `false`
 - Accepteert geen waarde
@@ -7359,7 +7359,7 @@ Geen bericht uitvoeren
 
 ### `--verbose`, `-v|-vv|-vvv`
 
-Verhoog de breedheid van berichten: 1 voor normale output, 2 voor meer uitgebreide output en 3 voor zuiveren
+Verhoog de breedheid van berichten: 1 voor normale output, 2 voor meer uitgebreide output en 3 voor zuivert
 
 - Standaard: `false`
 - Accepteert geen waarde
@@ -7429,7 +7429,7 @@ Geen bericht uitvoeren
 
 ### `--verbose`, `-v|-vv|-vvv`
 
-Verhoog de breedheid van berichten: 1 voor normale output, 2 voor meer uitgebreide output en 3 voor zuiveren
+Verhoog de breedheid van berichten: 1 voor normale output, 2 voor meer uitgebreide output en 3 voor zuivert
 
 - Standaard: `false`
 - Accepteert geen waarde
@@ -7492,7 +7492,7 @@ Geen bericht uitvoeren
 
 ### `--verbose`, `-v|-vv|-vvv`
 
-Verhoog de breedheid van berichten: 1 voor normale output, 2 voor meer uitgebreide output en 3 voor zuiveren
+Verhoog de breedheid van berichten: 1 voor normale output, 2 voor meer uitgebreide output en 3 voor zuivert
 
 - Standaard: `false`
 - Accepteert geen waarde
@@ -7549,7 +7549,7 @@ Geen bericht uitvoeren
 
 ### `--verbose`, `-v|-vv|-vvv`
 
-Verhoog de breedheid van berichten: 1 voor normale output, 2 voor meer uitgebreide output en 3 voor zuiveren
+Verhoog de breedheid van berichten: 1 voor normale output, 2 voor meer uitgebreide output en 3 voor zuivert
 
 - Standaard: `false`
 - Accepteert geen waarde
@@ -7584,7 +7584,7 @@ Geen interactieve vraag stellen
 
 ## `setup:install`
 
-Hiermee wordt de Magento-toepassing geïnstalleerd
+Hiermee wordt de toepassing Magento geïnstalleerd
 
 ```bash
 bin/magento setup:install [--enable-debug-logging ENABLE-DEBUG-LOGGING] [--enable-syslog-logging ENABLE-SYSLOG-LOGGING] [--backend-frontname BACKEND-FRONTNAME] [--id_salt ID_SALT] [--remote-storage-driver REMOTE-STORAGE-DRIVER] [--remote-storage-prefix REMOTE-STORAGE-PREFIX] [--remote-storage-endpoint REMOTE-STORAGE-ENDPOINT] [--remote-storage-bucket REMOTE-STORAGE-BUCKET] [--remote-storage-region REMOTE-STORAGE-REGION] [--remote-storage-key REMOTE-STORAGE-KEY] [--remote-storage-secret REMOTE-STORAGE-SECRET] [--remote-storage-path-style REMOTE-STORAGE-PATH-STYLE] [--amqp-host AMQP-HOST] [--amqp-port AMQP-PORT] [--amqp-user AMQP-USER] [--amqp-password AMQP-PASSWORD] [--amqp-virtualhost AMQP-VIRTUALHOST] [--amqp-ssl AMQP-SSL] [--amqp-ssl-options AMQP-SSL-OPTIONS] [--consumers-wait-for-messages CONSUMERS-WAIT-FOR-MESSAGES] [--queue-default-connection QUEUE-DEFAULT-CONNECTION] [--key KEY] [--db-host DB-HOST] [--db-name DB-NAME] [--db-user DB-USER] [--db-engine DB-ENGINE] [--db-password DB-PASSWORD] [--db-prefix DB-PREFIX] [--db-model DB-MODEL] [--db-init-statements DB-INIT-STATEMENTS] [-s|--skip-db-validation] [--http-cache-hosts HTTP-CACHE-HOSTS] [--db-ssl-key DB-SSL-KEY] [--db-ssl-cert DB-SSL-CERT] [--db-ssl-ca DB-SSL-CA] [--db-ssl-verify] [--session-save SESSION-SAVE] [--session-save-redis-host SESSION-SAVE-REDIS-HOST] [--session-save-redis-port SESSION-SAVE-REDIS-PORT] [--session-save-redis-password SESSION-SAVE-REDIS-PASSWORD] [--session-save-redis-timeout SESSION-SAVE-REDIS-TIMEOUT] [--session-save-redis-persistent-id SESSION-SAVE-REDIS-PERSISTENT-ID] [--session-save-redis-db SESSION-SAVE-REDIS-DB] [--session-save-redis-compression-threshold SESSION-SAVE-REDIS-COMPRESSION-THRESHOLD] [--session-save-redis-compression-lib SESSION-SAVE-REDIS-COMPRESSION-LIB] [--session-save-redis-log-level SESSION-SAVE-REDIS-LOG-LEVEL] [--session-save-redis-max-concurrency SESSION-SAVE-REDIS-MAX-CONCURRENCY] [--session-save-redis-break-after-frontend SESSION-SAVE-REDIS-BREAK-AFTER-FRONTEND] [--session-save-redis-break-after-adminhtml SESSION-SAVE-REDIS-BREAK-AFTER-ADMINHTML] [--session-save-redis-first-lifetime SESSION-SAVE-REDIS-FIRST-LIFETIME] [--session-save-redis-bot-first-lifetime SESSION-SAVE-REDIS-BOT-FIRST-LIFETIME] [--session-save-redis-bot-lifetime SESSION-SAVE-REDIS-BOT-LIFETIME] [--session-save-redis-disable-locking SESSION-SAVE-REDIS-DISABLE-LOCKING] [--session-save-redis-min-lifetime SESSION-SAVE-REDIS-MIN-LIFETIME] [--session-save-redis-max-lifetime SESSION-SAVE-REDIS-MAX-LIFETIME] [--session-save-redis-sentinel-master SESSION-SAVE-REDIS-SENTINEL-MASTER] [--session-save-redis-sentinel-servers SESSION-SAVE-REDIS-SENTINEL-SERVERS] [--session-save-redis-sentinel-verify-master SESSION-SAVE-REDIS-SENTINEL-VERIFY-MASTER] [--session-save-redis-sentinel-connect-retries SESSION-SAVE-REDIS-SENTINEL-CONNECT-RETRIES] [--cache-backend CACHE-BACKEND] [--cache-backend-redis-server CACHE-BACKEND-REDIS-SERVER] [--cache-backend-redis-db CACHE-BACKEND-REDIS-DB] [--cache-backend-redis-port CACHE-BACKEND-REDIS-PORT] [--cache-backend-redis-password CACHE-BACKEND-REDIS-PASSWORD] [--cache-backend-redis-compress-data CACHE-BACKEND-REDIS-COMPRESS-DATA] [--cache-backend-redis-compression-lib CACHE-BACKEND-REDIS-COMPRESSION-LIB] [--cache-id-prefix CACHE-ID-PREFIX] [--allow-parallel-generation] [--page-cache PAGE-CACHE] [--page-cache-redis-server PAGE-CACHE-REDIS-SERVER] [--page-cache-redis-db PAGE-CACHE-REDIS-DB] [--page-cache-redis-port PAGE-CACHE-REDIS-PORT] [--page-cache-redis-password PAGE-CACHE-REDIS-PASSWORD] [--page-cache-redis-compress-data PAGE-CACHE-REDIS-COMPRESS-DATA] [--page-cache-redis-compression-lib PAGE-CACHE-REDIS-COMPRESSION-LIB] [--page-cache-id-prefix PAGE-CACHE-ID-PREFIX] [--lock-provider LOCK-PROVIDER] [--lock-db-prefix LOCK-DB-PREFIX] [--lock-zookeeper-host LOCK-ZOOKEEPER-HOST] [--lock-zookeeper-path LOCK-ZOOKEEPER-PATH] [--lock-file-path LOCK-FILE-PATH] [--document-root-is-pub DOCUMENT-ROOT-IS-PUB] [--base-url BASE-URL] [--language LANGUAGE] [--timezone TIMEZONE] [--currency CURRENCY] [--use-rewrites USE-REWRITES] [--use-secure USE-SECURE] [--base-url-secure BASE-URL-SECURE] [--use-secure-admin USE-SECURE-ADMIN] [--admin-use-security-key ADMIN-USE-SECURITY-KEY] [--admin-user [ADMIN-USER]] [--admin-password [ADMIN-PASSWORD]] [--admin-email [ADMIN-EMAIL]] [--admin-firstname [ADMIN-FIRSTNAME]] [--admin-lastname [ADMIN-LASTNAME]] [--search-engine SEARCH-ENGINE] [--elasticsearch-host ELASTICSEARCH-HOST] [--elasticsearch-port ELASTICSEARCH-PORT] [--elasticsearch-enable-auth ELASTICSEARCH-ENABLE-AUTH] [--elasticsearch-username ELASTICSEARCH-USERNAME] [--elasticsearch-password ELASTICSEARCH-PASSWORD] [--elasticsearch-index-prefix ELASTICSEARCH-INDEX-PREFIX] [--elasticsearch-timeout ELASTICSEARCH-TIMEOUT] [--opensearch-host OPENSEARCH-HOST] [--opensearch-port OPENSEARCH-PORT] [--opensearch-enable-auth OPENSEARCH-ENABLE-AUTH] [--opensearch-username OPENSEARCH-USERNAME] [--opensearch-password OPENSEARCH-PASSWORD] [--opensearch-index-prefix OPENSEARCH-INDEX-PREFIX] [--opensearch-timeout OPENSEARCH-TIMEOUT] [--cleanup-database] [--sales-order-increment-prefix SALES-ORDER-INCREMENT-PREFIX] [--use-sample-data] [--enable-modules [ENABLE-MODULES]] [--disable-modules [DISABLE-MODULES]] [--convert-old-scripts [CONVERT-OLD-SCRIPTS]] [-i|--interactive] [--safe-mode [SAFE-MODE]] [--data-restore [DATA-RESTORE]] [--dry-run [DRY-RUN]] [--magento-init-params MAGENTO-INIT-PARAMS]
@@ -7598,7 +7598,7 @@ Foutopsporingsregistratie inschakelen
 
 ### `--enable-syslog-logging`
 
-Syslog-logboekregistratie inschakelen
+syslog inschakelen
 
 - Vereist een waarde
 
@@ -7654,14 +7654,14 @@ Toegangstoets externe opslag
 
 ### `--remote-storage-secret`
 
-Externe geheim van opslagsleutel
+Sleutel voor geheim opslagruimte
 
 - Standaard: &quot;
 - Vereist een waarde
 
 ### `--remote-storage-path-style`
 
-Padstijl externe opslag
+Padstijl voor externe opslag
 
 - Standaard: `0`
 - Vereist een waarde
@@ -7771,7 +7771,7 @@ Voorvoegsel databasetabel
 
 ### `--db-model`
 
-Type database
+Databasetype
 
 - Vereist een waarde
 
@@ -7783,7 +7783,7 @@ Eerste set opdrachten database
 
 ### `--skip-db-validation`, `-s`
 
-Indien opgegeven, wordt de validatie van de db-verbinding overgeslagen
+Indien opgegeven, wordt de db-verbindingsvalidatie overgeslagen
 
 - Standaard: `false`
 - Accepteert geen waarde
@@ -7926,7 +7926,7 @@ Schakel vergrendeling opnieuw uit. Waarden: false (standaardwaarde), true
 
 ### `--session-save-redis-min-lifetime`
 
-Herdis min sessieduur, in seconden
+Standaardsessielevensduur van Redis, in seconden
 
 - Vereist een waarde
 
@@ -7938,7 +7938,7 @@ Maximale sessielevensduur van Redis, in seconden
 
 ### `--session-save-redis-sentinel-master`
 
-Redis Sentinel master
+Redis Sentinel Master
 
 - Vereist een waarde
 
@@ -7950,7 +7950,7 @@ Redis Sentinel-servers, gescheiden door komma&#39;s
 
 ### `--session-save-redis-sentinel-verify-master`
 
-Redis Sentinel verifieert master. Waarden: false (standaard), true
+Redis Sentinel verify master. Waarden: false (standaardwaarde), true
 
 - Vereist een waarde
 
@@ -8137,7 +8137,7 @@ Gebruik veilige URL&#39;s. Schakel deze optie alleen in als SSL beschikbaar is. 
 
 ### `--base-url-secure`
 
-Basis-URL voor SSL-verbinding. Vervangen, gebruik config:reeks met weg web/secure/base_url
+Basis-URL voor SSL-verbinding Vervangen, gebruik config:reeks met weg web/secure/base_url
 
 - Vereist een waarde
 
@@ -8149,13 +8149,13 @@ Voer de beheerdersinterface uit met SSL. Vervangen, gebruik config:reeks met weg
 
 ### `--admin-use-security-key`
 
-Of een functie &#39;beveiligingssleutel&#39; moet worden gebruikt in URL&#39;s en formulieren voor Magento Admin. Vervangen, gebruik config:reeks met weg admin/security/use_form_key
+Of een functie &#39;beveiligingssleutel&#39; moet worden gebruikt in URL&#39;s en formulieren voor beheer van Magento&#39;s. Vervangen, gebruik config:reeks met weg admin/security/use_form_key
 
 - Vereist een waarde
 
 ### `--admin-user`
 
-Admin-gebruiker
+Admin user
 
 - Accepteert een waarde
 
@@ -8167,7 +8167,7 @@ Wachtwoord beheerder
 
 ### `--admin-email`
 
-E-mail beheerder
+E-mailadres beheerder
 
 - Accepteert een waarde
 
@@ -8191,13 +8191,13 @@ Zoekprogramma. Waarden: elasticsearch5, elasticsearch7, elasticsearch8, openssea
 
 ### `--elasticsearch-host`
 
-Elasticsearch-serverhost.
+Server-host van Elasticsearch.
 
 - Vereist een waarde
 
 ### `--elasticsearch-port`
 
-Elasticsearch-serverpoort.
+De serverhaven van de Elasticsearch.
 
 - Vereist een waarde
 
@@ -8209,25 +8209,25 @@ Stel dit in op 1 om verificatie in te schakelen. (standaardwaarde is 0, uitgesch
 
 ### `--elasticsearch-username`
 
-Elasticsearch-gebruikersnaam. Alleen van toepassing als HTTP-auth is ingeschakeld
+Gebruikersnaam Elasticsearch. Alleen van toepassing als HTTP-auth is ingeschakeld
 
 - Vereist een waarde
 
 ### `--elasticsearch-password`
 
-Elasticsearch-wachtwoord. Alleen van toepassing als HTTP-auth is ingeschakeld
+Wachtwoord Elasticsearch. Alleen van toepassing als HTTP-auth is ingeschakeld
 
 - Vereist een waarde
 
 ### `--elasticsearch-index-prefix`
 
-Elasticsearch-indexvoorvoegsel.
+Prefix van Elasticsearch-index.
 
 - Vereist een waarde
 
 ### `--elasticsearch-timeout`
 
-Time-out Elasticsearch-server.
+Time-out server Elasticsearch.
 
 - Vereist een waarde
 
@@ -8314,7 +8314,7 @@ Hiermee kunt u oude scripts (InstallSchema, UpgradeSchema) converteren naar de i
 
 ### `--interactive`, `-i`
 
-Interactieve Magento-installatie
+Installatie van interactief Magento
 
 - Standaard: `false`
 - Accepteert geen waarde
@@ -8333,7 +8333,7 @@ Verwijderde gegevens van dumps herstellen
 
 ### `--dry-run`
 
-De Magento-installatie wordt uitgevoerd in de modus voor droog uitvoeren
+De installatie van het Magento wordt uitgevoerd in de droge-uitvoeringsmodus
 
 - Standaard: `false`
 - Accepteert een waarde
@@ -8360,7 +8360,7 @@ Geen bericht uitvoeren
 
 ### `--verbose`, `-v|-vv|-vvv`
 
-Verhoog de breedheid van berichten: 1 voor normale output, 2 voor meer uitgebreide output en 3 voor zuiveren
+Verhoog de breedheid van berichten: 1 voor normale output, 2 voor meer uitgebreide output en 3 voor zuivert
 
 - Standaard: `false`
 - Accepteert geen waarde
@@ -8431,7 +8431,7 @@ Geen bericht uitvoeren
 
 ### `--verbose`, `-v|-vv|-vvv`
 
-Verhoog de breedheid van berichten: 1 voor normale output, 2 voor meer uitgebreide output en 3 voor zuiveren
+Verhoog de breedheid van berichten: 1 voor normale output, 2 voor meer uitgebreide output en 3 voor zuivert
 
 - Standaard: `false`
 - Accepteert geen waarde
@@ -8512,7 +8512,7 @@ Geen bericht uitvoeren
 
 ### `--verbose`, `-v|-vv|-vvv`
 
-Verhoog de breedheid van berichten: 1 voor normale output, 2 voor meer uitgebreide output en 3 voor zuiveren
+Verhoog de breedheid van berichten: 1 voor normale output, 2 voor meer uitgebreide output en 3 voor zuivert
 
 - Standaard: `false`
 - Accepteert geen waarde
@@ -8599,7 +8599,7 @@ Genereer statische weergavebestanden voor alleen de opgegeven thema&#39;s.
 
 ### `--exclude-theme`
 
-Genereer geen bestanden voor de opgegeven thema&#39;s.
+Geen bestanden voor de opgegeven thema&#39;s genereren.
 
 - Standaard: `none`
 - Accepteert meerdere waarden
@@ -8738,7 +8738,7 @@ Geen bericht uitvoeren
 
 ### `--verbose`, `-v|-vv|-vvv`
 
-Verhoog de breedheid van berichten: 1 voor normale output, 2 voor meer uitgebreide output en 3 voor zuiveren
+Verhoog de breedheid van berichten: 1 voor normale output, 2 voor meer uitgebreide output en 3 voor zuivert
 
 - Standaard: `false`
 - Accepteert geen waarde
@@ -8817,7 +8817,7 @@ Gebruik veilige URL&#39;s. Schakel deze optie alleen in als SSL beschikbaar is. 
 
 ### `--base-url-secure`
 
-Basis-URL voor SSL-verbinding. Vervangen, gebruik config:reeks met weg web/secure/base_url
+Basis-URL voor SSL-verbinding Vervangen, gebruik config:reeks met weg web/secure/base_url
 
 - Vereist een waarde
 
@@ -8829,7 +8829,7 @@ Voer de beheerdersinterface uit met SSL. Vervangen, gebruik config:reeks met weg
 
 ### `--admin-use-security-key`
 
-Of een functie &#39;beveiligingssleutel&#39; moet worden gebruikt in URL&#39;s en formulieren voor Magento Admin. Vervangen, gebruik config:reeks met weg admin/security/use_form_key
+Of een functie &#39;beveiligingssleutel&#39; moet worden gebruikt in URL&#39;s en formulieren voor beheer van Magento&#39;s. Vervangen, gebruik config:reeks met weg admin/security/use_form_key
 
 - Vereist een waarde
 
@@ -8855,7 +8855,7 @@ Geen bericht uitvoeren
 
 ### `--verbose`, `-v|-vv|-vvv`
 
-Verhoog de breedheid van berichten: 1 voor normale output, 2 voor meer uitgebreide output en 3 voor zuiveren
+Verhoog de breedheid van berichten: 1 voor normale output, 2 voor meer uitgebreide output en 3 voor zuivert
 
 - Standaard: `false`
 - Accepteert geen waarde
@@ -8890,7 +8890,7 @@ Geen interactieve vraag stellen
 
 ## `setup:uninstall`
 
-Hiermee wordt de Magento-toepassing verwijderd
+Hiermee wordt de toepassing Magento verwijderd
 
 ```bash
 bin/magento setup:uninstall [--magento-init-params MAGENTO-INIT-PARAMS]
@@ -8918,7 +8918,7 @@ Geen bericht uitvoeren
 
 ### `--verbose`, `-v|-vv|-vvv`
 
-Verhoog de breedheid van berichten: 1 voor normale output, 2 voor meer uitgebreide output en 3 voor zuiveren
+Verhoog de breedheid van berichten: 1 voor normale output, 2 voor meer uitgebreide output en 3 voor zuivert
 
 - Standaard: `false`
 - Accepteert geen waarde
@@ -8953,7 +8953,7 @@ Geen interactieve vraag stellen
 
 ## `setup:upgrade`
 
-Hiermee worden de Magento-toepassing, DB-gegevens en het schema bijgewerkt
+Hiermee werkt u de toepassing van het Magento, de DB-gegevens en het schema bij
 
 ```bash
 bin/magento setup:upgrade [--keep-generated] [--convert-old-scripts [CONVERT-OLD-SCRIPTS]] [--safe-mode [SAFE-MODE]] [--data-restore [DATA-RESTORE]] [--dry-run [DRY-RUN]] [--magento-init-params MAGENTO-INIT-PARAMS]
@@ -8987,7 +8987,7 @@ Verwijderde gegevens van dumps herstellen
 
 ### `--dry-run`
 
-De Magento-installatie wordt uitgevoerd in de modus voor droog uitvoeren
+De installatie van het Magento wordt uitgevoerd in de droge-uitvoeringsmodus
 
 - Standaard: `false`
 - Accepteert een waarde
@@ -9014,7 +9014,7 @@ Geen bericht uitvoeren
 
 ### `--verbose`, `-v|-vv|-vvv`
 
-Verhoog de breedheid van berichten: 1 voor normale output, 2 voor meer uitgebreide output en 3 voor zuiveren
+Verhoog de breedheid van berichten: 1 voor normale output, 2 voor meer uitgebreide output en 3 voor zuivert
 
 - Standaard: `false`
 - Accepteert geen waarde
@@ -9071,7 +9071,7 @@ Geen bericht uitvoeren
 
 ### `--verbose`, `-v|-vv|-vvv`
 
-Verhoog de breedheid van berichten: 1 voor normale output, 2 voor meer uitgebreide output en 3 voor zuiveren
+Verhoog de breedheid van berichten: 1 voor normale output, 2 voor meer uitgebreide output en 3 voor zuivert
 
 - Standaard: `false`
 - Accepteert geen waarde
@@ -9128,7 +9128,7 @@ Geen bericht uitvoeren
 
 ### `--verbose`, `-v|-vv|-vvv`
 
-Verhoog de breedheid van berichten: 1 voor normale output, 2 voor meer uitgebreide output en 3 voor zuiveren
+Verhoog de breedheid van berichten: 1 voor normale output, 2 voor meer uitgebreide output en 3 voor zuivert
 
 - Standaard: `false`
 - Accepteert geen waarde
@@ -9172,7 +9172,7 @@ bin/magento theme:uninstall [--backup-code] [-c|--clear-static-content] [--] <th
 
 ### `theme`
 
-Pad van het thema. Het themapad moet worden opgegeven als een volledig pad dat gebied/leverancier/naam is. Voorkant/Magento/leeg
+Pad van het thema. Het themapad moet worden opgegeven als een volledig pad dat gebied/leverancier/naam is. Voorkant/Magento/blanco
 
 - Standaard: `[]`
 
@@ -9181,7 +9181,7 @@ Pad van het thema. Het themapad moet worden opgegeven als een volledig pad dat g
 
 ### `--backup-code`
 
-Back-up van code maken (met uitzondering van tijdelijke bestanden)
+Back-up van code maken (behalve tijdelijke bestanden)
 
 - Standaard: `false`
 - Accepteert geen waarde
@@ -9209,7 +9209,7 @@ Geen bericht uitvoeren
 
 ### `--verbose`, `-v|-vv|-vvv`
 
-Verhoog de breedheid van berichten: 1 voor normale output, 2 voor meer uitgebreide output en 3 voor zuiveren
+Verhoog de breedheid van berichten: 1 voor normale output, 2 voor meer uitgebreide output en 3 voor zuivert
 
 - Standaard: `false`
 - Accepteert geen waarde
@@ -9307,7 +9307,7 @@ Geen bericht uitvoeren
 
 ### `--verbose`, `-v|-vv|-vvv`
 
-Verhoog de breedheid van berichten: 1 voor normale output, 2 voor meer uitgebreide output en 3 voor zuiveren
+Verhoog de breedheid van berichten: 1 voor normale output, 2 voor meer uitgebreide output en 3 voor zuivert
 
 - Standaard: `false`
 - Accepteert geen waarde

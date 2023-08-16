@@ -12,7 +12,7 @@ ht-degree: 0%
 
 # Thema&#39;s verwijderen
 
-Voordat u deze opdracht gebruikt, moet u weten welk relatief pad naar het thema is ingesteld. Thema&#39;s bevinden zich in een submap van `<magento_root>/app/design/<area name>`. U moet het pad naar het thema opgeven dat begint met het gebied: `frontend` (voor thema&#39;s van de winkel) of `adminhtml` (voor Admin-thema&#39;s).
+Voordat u deze opdracht gebruikt, moet u weten welk relatief pad naar het thema is ingesteld. Thema&#39;s bevinden zich in een submap van `<magento_root>/app/design/<area name>`. U moet het pad naar het thema opgeven dat begint met het gebied: `frontend` (voor thema&#39;s van de winkel) of `adminhtml` (voor beheerthema&#39;s).
 
 Het pad naar het thema Luma dat bij Adobe Commerce en Magento Open Source wordt geleverd, is bijvoorbeeld `frontend/Magento/luma`.
 
@@ -22,9 +22,9 @@ Zie voor meer informatie over thema&#39;s [themastructuur](https://developer.ado
 
 In deze sectie wordt beschreven hoe u een of meer thema&#39;s kunt verwijderen. U kunt desgewenst ook de themacode uit het bestandssysteem opnemen. U kunt eerst back-ups maken, zodat u de gegevens later kunt herstellen.
 
-Deze opdracht wordt verwijderd *alleen* thema&#39;s die worden opgegeven in `composer.json`; met andere woorden, thema&#39;s die als Composer-pakketten worden aangeboden. Als uw thema geen Composer-pakket is, moet u de toepassing handmatig verwijderen door:
+Deze opdracht wordt verwijderd *alleen* thema&#39;s die worden opgegeven in `composer.json`Met andere woorden, thema&#39;s die als Composer-pakketten worden aangeboden. Als uw thema geen Composer-pakket is, moet u de toepassing handmatig verwijderen door:
 
-* Het bijwerken van `parent` knooppuntinformatie in `theme.xml` om verwijzingen naar het thema te verwijderen.
+* De `parent` knooppuntinformatie in `theme.xml` om verwijzingen naar het thema te verwijderen.
 * Themacode verwijderen uit het bestandssysteem.
 
   [Meer informatie over themaovererving](https://developer.adobe.com/commerce/frontend-core/guide/themes/inheritance/).
@@ -45,16 +45,16 @@ Wanneer
 
 De opdracht voert de volgende taken uit:
 
-1. Controleert of de opgegeven themapaden bestaan; als niet, eindigt het bevel.
-1. Controleert of het thema een Composer-pakket is; als niet, eindigt het bevel.
+1. Verifieert dat de gespecificeerde themawegen bestaan; als niet, eindigt het bevel.
+1. Verifieert dat het thema een pakket Composer is; als niet, eindigt het bevel.
 1. Controleert op gebiedsdelen en beëindigt het bevel als er om het even welke onvervulde gebiedsdelen zijn.
 
    Als u dit probleem wilt verhelpen, kunt u alle thema&#39;s tegelijkertijd verwijderen of de installatie van de thema&#39;s eerst ongedaan maken.
 
-1. Controleert of het thema niet wordt gebruikt; als het wordt gebruikt, eindigt het bevel.
+1. Verifieert dat het thema niet wordt gebruikt; als het wordt gebruikt, eindigt het bevel.
 1. Verifieert dat het thema niet de basis van het virtuele thema is; als het de basis van een virtueel thema is, eindigt het bevel.
 1. Hiermee plaatst u de winkel in de onderhoudsmodus.
-1. Indien `--backup-code` is opgegeven, maakt u een back-up van de codebase, met uitzondering van de `pub/static`, `pub/media`, en `var` directory&#39;s.
+1. Indien `--backup-code` is opgegeven, maakt u een back-up van de codebase, exclusief de `pub/static`, `pub/media`, en `var` mappen.
 
    De naam van het back-upbestand is `var/backups/<timestamp>_filesystem.tgz`
 

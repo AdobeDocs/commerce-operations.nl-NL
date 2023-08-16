@@ -16,11 +16,11 @@ Deze sectie beschrijft [!DNL Data Migration Tool] implementatiedetails en hoe de
 
 ## Opslagplaatsen
 
-Om toegang te krijgen tot [!DNL Data Migration Tool] broncode, zie GitHub [opslagplaats](https://github.com/magento/data-migration-tool).
+Als u toegang wilt krijgen tot [!DNL Data Migration Tool] broncode, zie GitHub [opslagplaats](https://github.com/magento/data-migration-tool).
 
 ## Systeemvereisten
 
-De [systeemvereisten](../../installation/system-requirements.md) voor de [!DNL Data Migration Tool] zijn dezelfde als voor Magento 2.
+De [systeemvereisten](../../installation/system-requirements.md) voor de [!DNL Data Migration Tool] dezelfde zijn als voor Magento 2.
 
 ## Interne structuur
 
@@ -162,7 +162,7 @@ Het configuratiebestand heeft de volgende structuur:
 
 * opties - lijst met parameters. Bevat zowel verplichte (map_file, settings_map_file, bulk_size) als optionele (custom_option, resource_adapter_class_name, prefix_source, prefix_dest, log_file) parameters
 
-Voorvoegseloptie wijzigen voor het geval dat Magento met voorvoegsel in databasetabellen is geïnstalleerd. Deze kan worden ingesteld voor databases van Magento 1 en Magento 2. Gebruik de configuratieopties &quot;source_prefix&quot; en &quot;dest_prefix&quot; dienovereenkomstig.
+Voorvoegseloptie wijzigen voor het geval dat Magento met voorvoegsel in databasetabellen is geïnstalleerd. Dit kan worden ingesteld voor databases van Magento 1 en Magento 2. Gebruik de configuratieopties &quot;source_prefix&quot; en &quot;dest_prefix&quot; dienovereenkomstig.
 
 De gegevens van de configuratie zijn toegankelijk met `\Migration\Config` klasse.
 
@@ -171,20 +171,20 @@ De gegevens van de configuratie zijn toegankelijk met `\Migration\Config` klasse
 | Document | Veld |
 |---|---|
 | `step` | Knooppunt op het tweede niveau binnen het knooppunt Stappen. In de `title` kenmerk. |
-| `integrity` | Geeft de PHP-klasse op die verantwoordelijk is voor de integriteitscontrole. Vergelijkt de namen, types, en andere info van de lijstgebieden om verenigbaarheid tussen Magento 1 en 2 gegevensstructuren te verifiëren. |
-| `data` | Geeft de PHP-klasse op die verantwoordelijk is voor de gegevenscontrole. Hiermee worden de gegevens, tabel voor tabel, overgedragen van Magento 1 naar Magento 2. |
+| `integrity` | Geeft de PHP-klasse op die verantwoordelijk is voor de integriteitscontrole. Vergelijkt de namen, de types, en andere info van de lijstgebieden om verenigbaarheid tussen Magento 1 en 2 gegevensstructuren te verifiëren. |
+| `data` | Geeft de PHP-klasse op die verantwoordelijk is voor de gegevenscontrole. Brengt de gegevens, lijst door lijst van Magento 1 aan Magento 2 over. |
 | `volume` | Geeft de PHP-klasse op die verantwoordelijk is voor de volumecontrole. Vergelijkt het aantal verslagen tussen lijsten om te verifiëren dat de overdracht succesvol was. |
-| `delta` | Geeft de PHP-klasse op die verantwoordelijk is voor de deltacontrole. Brengt de delta van Magento 1 naar Magento 2 na de volledige gegevensmigratie over. |
+| `delta` | Geeft de PHP-klasse op die verantwoordelijk is voor de deltacontrole. Brengt de delta van Magento 1 naar Magento 2 over na de volledige gegevensmigratie. |
 
 ## Kenmerken van de brondatabasegegevens
 
 | Document | Veld | Vereist? |
 |---|---|---|
 | `name` | Databasenaam van de Magento 1-server. | ja |
-| `host` | IP van de gastheer adres van de server Magento 1. | ja |
+| `host` | IP van de gastheer adres van Magento 1 server. | ja |
 | `port` | Poortnummer van de Magento 1-server. | nee |
-| `user` | Gebruikersnaam van de Magento 1-databaseserver. | ja |
-| `password` | Wachtwoord van de Magento 1-databaseserver. | ja |
+| `user` | Gebruikersnaam van Magento 1 gegevensbestandserver. | ja |
+| `password` | Wachtwoord van Magento 1 gegevensbestandserver. | ja |
 | `ssl_ca` | Pad naar SSL Certificate Authority-bestand. | nee |
 | `ssl_cert` | Pad naar SSL-certificaatbestand. | nee |
 | `ssl_key` | Pad naar SSL-sleutelbestand. | nee |
@@ -194,10 +194,10 @@ De gegevens van de configuratie zijn toegankelijk met `\Migration\Config` klasse
 | Document | Veld | Vereist? |
 |---|---|---|
 | `name` | Databasenaam van de Magento 2-server. | ja |
-| `host` | IP van de gastheer adres van de server van Magento 2. | ja |
+| `host` | IP van de gastheer adres van Magento 2 server. | ja |
 | `port` | Poortnummer van de Magento 2-server. | nee |
-| `user` | Gebruikersnaam van de Magento 2-databaseserver. | ja |
-| `password` | Wachtwoord van de Magento 2-databaseserver. | ja |
+| `user` | Gebruikersnaam van Magento 2 gegevensbestandserver. | ja |
+| `password` | Wachtwoord van Magento 2 gegevensbestandserver. | ja |
 | `ssl_ca` | Pad naar SSL Certificate Authority-bestand. | nee |
 | `ssl_cert` | Pad naar SSL-certificaatbestand. | nee |
 | `ssl_key` | Pad naar SSL-sleutelbestand. | nee |
@@ -279,11 +279,11 @@ $this->progress->finish();
 
 ### Integriteitscontrole
 
-Elke stap moet controleren of de structuur van de gegevensbron (standaard Magento 1) en de structuur van de gegevensbestemming (Magento 2) compatibel zijn. Zo niet, dan wordt een fout weergegeven met entiteiten die niet compatibel zijn. Als velden verschillende datatypen hebben (hetzelfde veld heeft een decimaal gegevenstype in Magento 1 en een geheel getal in Magento 2), wordt een waarschuwingsbericht weergegeven (behalve wanneer het veld is opgenomen in het Kaartenbestand).
+Elke stap moet controleren dat de structuur van gegevensbron (Magento 1 door gebrek) en de structuur van gegevensbestemming (Magento 2) compatibel zijn. Als dat niet het geval is, wordt een fout weergegeven met entiteiten die niet compatibel zijn. Als velden verschillende datatypen hebben (hetzelfde veld heeft een decimaal gegevenstype in Magento 1 en een geheel getal in Magento 2), wordt een waarschuwingsbericht weergegeven (behalve wanneer het veld is opgenomen in het Kaartenbestand).
 
 ### Gegevensoverdracht
 
-Als de integriteitscontrole wordt doorgegeven, worden gegevens overgedragen. Als er fouten optreden, wordt het terugdraaien uitgevoerd om terug te keren naar de vorige status van Magento 2. Als een stapklasse de klasse `RollbackInterface` en wordt de terugdraaimethode uitgevoerd wanneer er een fout optreedt.
+Als de integriteitscontrole wordt doorgegeven, worden de gegevens overgedragen. Als er fouten optreden, wordt het terugdraaien uitgevoerd om terug te keren naar de vorige status van Magento 2. Als een stapklasse de klasse `RollbackInterface` en wordt de terugdraaimethode uitgevoerd wanneer er een fout optreedt.
 
 ### Volume controleren
 
@@ -333,17 +333,17 @@ Al opslagconfiguratie houdt zijn gegevens in core_config_data lijst in gegevensb
 </settings>
 ```
 
-Onder het knooppunt `<key>` er zijn regels die werken met de kolom &#39;path&#39; in het dialoogvenster `core_config_data` tabel. `<ignore>` voorkomt dat het gereedschap bepaalde instellingen overbrengt. Jokertekens kunnen in dit knooppunt worden gebruikt. Alle andere instellingen die niet worden vermeld in het dialoogvenster `<ignore>` knooppunt wordt gemigreerd. Als het pad naar een instelling is gewijzigd in Magento 2, moet dit worden toegevoegd aan `//key/rename` knooppunt, waarbij het oude pad aangeeft in `//key/rename/path` knooppunt en nieuw pad wordt aangegeven in `//key/rename/to` knooppunt.
+Onder het knooppunt `<key>` er zijn regels die werken met de kolom &#39;path&#39; in het dialoogvenster `core_config_data` tabel. `<ignore>` voorkomt dat het gereedschap bepaalde instellingen overbrengt. Jokertekens kunnen in dit knooppunt worden gebruikt. Alle andere instellingen die niet in het dialoogvenster `<ignore>` knooppunt wordt gemigreerd. Als het pad naar een instelling is gewijzigd in Magento 2, moet dit worden toegevoegd aan `//key/rename` knooppunt, waarbij het oude pad aangeeft in `//key/rename/path` knooppunt en nieuw pad wordt aangegeven in `//key/rename/to` knooppunt.
 
-Onder het knooppunt `<value>`, zijn er regels die werken met de kolom &#39;value&#39; in het dialoogvenster `core_config_data` tabel. Deze regels zijn bedoeld om de waarde van instellingen te transformeren door handlers (klassen die `Migration\Handler\HandlerInterface`) en aanpassen voor Magento 2.
+Onder het knooppunt `<value>`, zijn er regels die werken met de kolom &#39;value&#39; in het dialoogvenster `core_config_data` tabel. Deze regels zijn bedoeld om de waarde van instellingen te transformeren door handlers (klassen die `Migration\Handler\HandlerInterface`) en aan te passen voor Magento 2.
 
 ### Gegevensmigratiemodus
 
-In deze modus worden de meeste gegevens gemigreerd. Vóór gegevensmigratie worden de integriteitscontrolefasen voor elke stap uitgevoerd. Als de integriteitscontrole slaagt, kan de [!DNL Data Migration Tool] Hiermee installeert u Deltalog-tabellen (met voorvoegsel) `m2_cl_*`) en de bijbehorende triggers naar de Magento 1-database en voert de gegevensmigratiefase van stappen uit. Wanneer de migratie zonder fouten wordt voltooid, controleert de volumecontrole de gegevensconsistentie. Er kan een waarschuwingsbericht worden weergegeven als u de live winkel migreert. Maak u geen zorgen, delta migratie zorgt voor deze stijgende gegevens. De meest waardevolle migratiestappen zijn Kaart, URL herschrijft, en EAV.
+In deze modus worden de meeste gegevens gemigreerd. Vóór gegevensmigratie worden de integriteitscontrolefasen voor elke stap uitgevoerd. Als de integriteitscontrole slaagt, kan de [!DNL Data Migration Tool] Hiermee installeert u Deltalog-tabellen (met voorvoegsel) `m2_cl_*`) en de bijbehorende triggers naar de database Magento 1 en voert de gegevensmigratiefase van stappen uit. Wanneer de migratie zonder fouten wordt voltooid, controleert de volumecontrole de gegevensconsistentie. Er kan een waarschuwingsbericht worden weergegeven als u de live winkel migreert. Maak u geen zorgen, delta migratie zorgt voor deze stijgende gegevens. De meest waardevolle migratiestappen zijn Kaart, URL herschrijft, en EAV.
 
 #### Kaartstap
 
-De stap van de kaart is verantwoordelijk voor het overbrengen van de meeste gegevens van Magento 1 aan Magento 2. Deze stap leest instructies van map.xml- dossier (in `etc/` directory). In het bestand worden de verschillen beschreven tussen gegevensstructuren van bron (Magento 1) en doel (Magento 2). Als Magento 1 lijsten of gebieden bevat die tot één of andere uitbreiding behoren die niet in Magento 2 bestaat, dan kunnen deze entiteiten hier worden geplaatst om hen door de Stap van de Kaart te negeren. Anders wordt een foutbericht weergegeven.
+De stap van de kaart is verantwoordelijk voor het overbrengen van de meeste gegevens van Magento 1 aan Magento 2. Deze stap leest instructies van map.xml- dossier (in `etc/` directory). Het bestand beschrijft de verschillen tussen gegevensstructuren van bron (Magento 1) en doel (Magento 2). Als Magento 1 lijsten of gebieden bevat die tot één of andere uitbreiding behoren die niet in Magento 2 bestaat, dan kunnen deze entiteiten hier worden geplaatst om hen door de Stap van de Kaart te negeren. Anders wordt een foutbericht weergegeven.
 
 Kaartbestand heeft de volgende indeling:
 
@@ -411,11 +411,11 @@ Opties:
 
 * *naam wijzigen* - een beschrijving van de naamrelaties tussen documenten met een andere naam. Als de naam van het doeldocument niet gelijk is aan de naam van het brondocument, kunt u de optie Naam wijzigen gebruiken om de naam van het brondocument gelijk te stellen aan de naam van de doeltabel
 
-* *move* - stelt de regel in om het opgegeven veld van het brondocument naar het doeldocument te verplaatsen. OPMERKING: de naam van het doeldocument moet gelijk zijn aan de naam van het brondocument. Als de naam van het bron- en doeldocument anders is, moet u de optie Naam wijzigen gebruiken voor het document dat het verplaatste veld bevat
+* *move* - stelt de regel in om het opgegeven veld van het brondocument naar het doeldocument te verplaatsen. OPMERKING: de naam van het doeldocument moet gelijk zijn aan de naam van het brondocument. Als de naam van het bron- en doeldocument anders is, moet u de optie Naam wijzigen gebruiken voor documenten die een verplaatst veld bevatten
 
 * *transformeren* - is een optie waarmee de gebruiker velden kan migreren volgens het gedrag dat in handlers wordt beschreven
 
-* *handler* - beschrijft het transformatiegedrag voor velden. Om de manager te roepen, moet u een naam van de managerklasse in specificeren `<handler>` tag. Gebruik de `<param>` -tag met de parameternaam en -waardengegevens om deze door te geven aan de handler
+* *handler* - beschrijft het transformatiegedrag voor velden. Om de manager te roepen, moet u een naam van de managerklasse in specificeren `<handler>` -tag. Gebruik de `<param>` -tag met de parameternaam en -waardengegevens om deze door te geven aan de handler
 
 **Bron** beschikbare bewerkingen:
 
@@ -433,11 +433,11 @@ Opties:
 
 Documenten met vergelijkbare onderdelen negeren (`document_name_1`, `document_name_2`) kunt u jokertekens gebruiken. Put `*` symbool in plaats van herhalend deel (`document_name_*`) en dit masker geldt voor alle bron- of doeldocumenten die aan dit masker voldoen.
 
-#### Stap voor herschrijven van URL
+#### URL herschrijven stap
 
-Deze stap is complex omdat er veel verschillende algoritmen zijn ontwikkeld in Magento 1 die niet compatibel zijn met Magento 2. Voor verschillende versies van Magento 1 kunnen er verschillende algoritmen zijn. Aldus onder de omslag Step/UrlRewrite zijn er klassen die voor sommige bepaalde versies van Magento en Migration\Step\UrlRewrite\Version191to2000 is one of them werden ontwikkeld. URL kan URL overbrengen herschrijft gegevens van Magento 1.9.1 aan Magento 2.
+Deze stap is complex omdat er in Magento 1 veel verschillende algoritmen zijn ontwikkeld die niet compatibel zijn met Magento 2. Voor verschillende versies van Magento 1 kunnen er verschillende algoritmen zijn. Aldus onder de omslag Step/UrlRewrite zijn er klassen die voor sommige bepaalde versies van Magento werden ontwikkeld en Migration\Step\UrlRewrite\Version191to2000 is één van hen. URL kan URL overbrengen herschrijft gegevens van Magento 1.9.1 aan Magento 2.
 
-#### EAV-stap
+#### EAV
 
 Deze stap brengt alle attributen (product, klant, RMA) van Magento 1 aan Magento 2 over. Het gebruikt map-eav.xml- dossier dat regels gelijkend op degenen in map.xml- dossier voor specifieke gevallen van het verwerken van gegevens bevat.
 
@@ -453,7 +453,7 @@ Enkele tabellen die in de stap worden verwerkt:
 
 ### Delta-migratiemodus
 
-Na de hoofdmigratie hadden extra gegevens kunnen worden toegevoegd aan de Magento 1-database (bijvoorbeeld door klanten op de winkel). Om deze gegevens te volgen, plaatst het Hulpmiddel omhoog de gegevensbestandtrekkers voor lijsten in het begin van migratieproces. Zie voor meer informatie [Gegevens migreren die door externe extensies zijn gemaakt](migrate-data/delta.md#migrate-data-created-by-third-party-extensions).
+Na hoofdmigratie, konden de extra gegevens aan het Magento 1 gegevensbestand (bijvoorbeeld, door klanten op opslag) worden toegevoegd. Om deze gegevens te volgen, plaatst het Hulpmiddel omhoog de gegevensbestandtrekkers voor lijsten in het begin van migratieproces. Zie voor meer informatie [Gegevens migreren die door externe extensies zijn gemaakt](migrate-data/delta.md#migrate-data-created-by-third-party-extensions).
 
 ## Gegevensbronnen
 
@@ -465,7 +465,7 @@ Hier volgt een klassediagram van deze klassen:
 
 ## Logboekregistratie
 
-Om output van migratieproces uit te voeren en alle mogelijke niveausPSR registreerapparaat te controleren, dat in Magento wordt gebruikt, wordt toegepast. `\Migration\Logger\Logger` -klasse is geïmplementeerd om logboekfunctionaliteit te bieden. Om het logger te gebruiken, moet u het injecteren via een constructorafhankelijke injectie.
+Om output van migratieproces uit te voeren en alle mogelijke niveaus te controleren PSR registreerapparaat, dat in Magento wordt gebruikt, wordt toegepast. `\Migration\Logger\Logger` -klasse is geïmplementeerd om logboekfunctionaliteit te bieden. Om het logger te gebruiken, moet u het injecteren via een constructorafhankelijke injectie.
 
 ```php
 class SomeClass
@@ -492,9 +492,9 @@ $this->logger->warning("Some warning message");
 
 Het is mogelijk aan te passen waar de logboekinformatie moet worden geschreven. U kunt dat doen door handler aan logboekregistratie toe te voegen met de methode pushHandler() van het logger. Elke handler moet `\Monolog\Handler\HandlerInterface` interface. Er zijn nu twee handlers:
 
-* ConsoleHandler: schrijft berichten aan console
+* ConsoleHandler: schrijft berichten naar console
 
-* FileHandler: schrijft berichten aan logboekdossier dat in &quot;log_file&quot;configuratieoptie is geplaatst
+* FileHandler: schrijft berichten naar logbestand dat is ingesteld in de configuratieoptie &quot;log_file&quot;
 
 Het is ook mogelijk om het even welke extra manager uit te voeren. Er is een reeks managers in het kader van Magento. Voorbeeld van het toevoegen van handlers aan registreerapparaat:
 
@@ -523,7 +523,7 @@ Het niveau van het transparantielogboek kan voor elke manager afzonderlijk worde
 
 U kunt logberichten opmaken met de monoloog formatter. Om de formatterfunctionaliteit te laten werken, moet u de logboekmanager specificeren gebruikend `setFormatter()` methode. We hebben momenteel één opmaakklasse (`MessageFormatter`) die bepaalde indeling instelt (afhankelijk van het breedtepunt) tijdens berichtverwerking (via de `format()` methode uitgevoerd vanuit de handler).
 
-Het manipuleren van de logger (het toevoegen van managers en bewerkers) en verwerking op uitgebreide wijze wordt uitgevoerd in `process()` methode `Migration\Logger\Manager` klasse. De methode wordt aangeroepen wanneer de toepassing wordt gestart.
+Het manipuleren van de logger (het toevoegen van managers en bewerkers) en verwerking op uitgebreide wijze wordt uitgevoerd in `process()` van de `Migration\Logger\Manager` klasse. De methode wordt aangeroepen wanneer de toepassing wordt gestart.
 
 ## Automatische tests
 

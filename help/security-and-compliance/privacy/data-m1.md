@@ -1,6 +1,6 @@
 ---
 title: Referentie persoonlijke gegevens van klant (versie 1.x)
-description: Leer over dataflow en gegevensbestandentiteitafbeeldingen voor klantenpersoonlijke informatie in Magento 1.x.
+description: Leer over dataflow en gegevensbestandentiteitafbeeldingen voor klant persoonlijke informatie in Magento 1.x.
 exl-id: 8b01418d-8ca1-48fc-9577-a324ed3109d1
 source-git-commit: 95ffff39d82cc9027fa633dffedf15193040802d
 workflow-type: tm+mt
@@ -13,7 +13,7 @@ ht-degree: 0%
 
 >[!NOTE]
 >
->Dit is een van de onderwerpen die Adobe Commerce en Magento Open Source-handelaren en -ontwikkelaars helpen zich voor te bereiden op de naleving van privacyregels. Raadpleeg uw juridisch adviseur om te bepalen of en hoe uw bedrijf aan om het even welke wettelijke verplichtingen zou moeten voldoen.
+>Dit is een van de onderwerpen die Adobe Commerce en Magento Open Source handelaren en ontwikkelaars helpen zich voor te bereiden op naleving van privacyregels. Raadpleeg uw juridisch adviseur om te bepalen of en hoe uw bedrijf aan om het even welke wettelijke verplichtingen moet voldoen.
 
 Gebruik de volgende dataflow diagrammen en de afbeeldingen van de gegevensbestandentiteit ter referentie wanneer het ontwikkelen van nalevingsprogramma&#39;s voor privacyverordeningen zoals:
 
@@ -42,11 +42,11 @@ Een handelaar kan klant, adres, en betalingsinformatie van Admin ingaan om een k
 
 ![Punten voor achtergrondgegevensinvoer](../../assets/security-compliance/backend-data-entry-points.svg)
 
-### De toegangspunten van achtergrondgegevens
+### Gegevenstoegangspunten op de achtergrond
 
 De handel laadt klanteninformatie wanneer een handelaar verscheidene types van netten bekijkt, op een net klikt om gedetailleerde informatie te zien, en diverse andere taken uitvoert.
 
-![De toegangspunten van achtergrondgegevens](../../assets/security-compliance/backend-data-access-points.svg)
+![Gegevenstoegangspunten op de achtergrond](../../assets/security-compliance/backend-data-access-points.svg)
 
 ## Database-entiteiten
 

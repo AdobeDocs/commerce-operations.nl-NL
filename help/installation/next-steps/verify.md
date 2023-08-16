@@ -1,6 +1,6 @@
 ---
 title: De installatie controleren
-description: Voer de volgende stappen uit om te bevestigen dat uw installatie op de locatie van Adobe Commerce of Magento Open Source is gelukt.
+description: Voer de volgende stappen uit om te bevestigen dat de installatie van uw Adobe Commerce- of Magento Open Source in uw bedrijf is gelukt.
 exl-id: 0bd7ec01-c616-4384-ae26-db2ce3668caf
 source-git-commit: 95ffff39d82cc9027fa633dffedf15193040802d
 workflow-type: tm+mt

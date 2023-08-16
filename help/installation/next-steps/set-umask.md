@@ -12,13 +12,13 @@ ht-degree: 0%
 
 # Een masker instellen (optioneel)
 
-De webservergroep moet schrijfmachtigingen hebben voor bepaalde mappen in het bestandssysteem. maar u wilt misschien een betere beveiliging , vooral in de productie . We bieden u de flexibiliteit om deze machtigingen verder te beperken met behulp van een [umask](https://www.cyberciti.biz/tips/understanding-linux-unix-umask-value-usage.html).
+De webservergroep moet schrijfmachtigingen hebben voor bepaalde mappen in het bestandssysteem. Het is echter verstandig de beveiliging te verbeteren, met name in de productie. Wij bieden u de flexibiliteit om die toestemmingen verder te beperken gebruikend [umask](https://www.cyberciti.biz/tips/understanding-linux-unix-umask-value-usage.html).
 
 Onze oplossing is u in staat te stellen naar keuze een bestand te maken met de naam `magento_umask` in de hoofdmap van de toepassing die machtigingen beperkt voor de webservergroep en voor alle andere gebruikers.
 
 >[!NOTE]
 >
->We raden u aan het masker alleen te wijzigen op een hostsysteem voor één gebruiker of een gedeeld hostsysteem. Als u een privétoepassingsserver hebt, moet de groep schrijftoegang hebben tot het bestandssysteem. Met het masker verwijdert u schrijftoegang uit de groep.
+>We raden u aan het masker alleen te wijzigen op een hostsysteem voor één gebruiker of een gedeeld hostsysteem. Als u een privétoepassingsserver hebt, moet de groep schrijftoegang tot het bestandssysteem hebben. Het masker verwijdert schrijftoegang van de groep.
 
 Het standaardmasker (zonder `magento_umask` gespecificeerd) is `002`, hetgeen betekent:
 
@@ -28,13 +28,13 @@ Het standaardmasker (zonder `magento_umask` gespecificeerd) is `002`, hetgeen be
 
 Een algemene suggestie is om een waarde van `022` in de `magento_umask` bestand, dat wil zeggen:
 
-* 755 voor directory&#39;s: de volledige controle voor de gebruiker, en iedereen anders kan folders oversteken.
-* 644 voor bestanden: lees-schrijf toestemmingen voor de gebruiker, en read-only voor iedereen anders.
+* 755 voor directory&#39;s: volledige controle voor de gebruiker, en alle anderen kunnen folders doorlopen.
+* 644 voor bestanden: lees- en schrijfmachtigingen voor de gebruiker en alleen-lezen voor alle anderen.
 
 In te stellen `magento_umask`:
 
 1. In een bevel-lijn terminal, login aan uw toepassingsserver als [eigenaar van bestandssysteem](../prerequisites/file-system/overview.md).
-1. Ga naar de installatiemap van de toepassing:
+1. Navigeer naar de installatiemap van de toepassing:
 
    ```bash
    cd <Application install directory>

@@ -1,6 +1,6 @@
 ---
 title: Software Recommendations
-description: Bekijk een lijst met aanbevolen software voor optimale prestaties van Adobe Commerce- en Magento Open Source-implementaties.
+description: Bekijk een lijst met aanbevolen software voor optimale prestaties van Adobe Commerce en Magento Open Source implementaties.
 feature: Best Practices, Install
 exl-id: b091a733-7655-4e91-a988-93271872c5d5
 source-git-commit: 012cba58b336b032b1c911539008c1fb961c2e07
@@ -29,7 +29,7 @@ Zie [systeemvereisten](../installation/system-requirements.md) voor informatie o
 
 ## Besturingssysteem
 
-Configuraties en optimalisaties van besturingssystemen zijn vergelijkbaar voor [!DNL Commerce] in vergelijking met andere webtoepassingen met een hoge belasting. Naarmate het aantal gelijktijdige verbindingen dat door de server wordt afgehandeld toeneemt, kan het aantal beschikbare sockets volledig worden toegewezen. De Linux-kernel ondersteunt een mechanisme voor het &quot;hergebruiken&quot; van TCP-verbindingen. Als u dit mechanisme wilt inschakelen, stelt u de volgende waarde in in `/etc/sysctl.conf`:
+Configuraties en optimalisaties van besturingssystemen zijn vergelijkbaar voor [!DNL Commerce] in vergelijking met andere webtoepassingen met een hoge belasting. Naarmate het aantal gelijktijdige verbindingen dat door de server wordt afgehandeld toeneemt, kan het aantal beschikbare sockets volledig worden toegewezen. De Linux-kernel ondersteunt een mechanisme voor het &quot;hergebruiken&quot; van TCP-verbindingen. Stel de volgende waarde in om dit mechanisme in te schakelen `/etc/sysctl.conf`:
 
 >[!INFO]
 >
@@ -47,7 +47,7 @@ net.core.somaxconn = 1024
 
 ## PHP
 
-Magento biedt volledige ondersteuning voor PHP 7.3 en 7.4. Er zijn verschillende factoren waarmee rekening moet worden gehouden bij het configureren van PHP voor maximale snelheid en efficiëntie bij het verwerken van aanvragen.
+Magento ondersteunt PHP 7.3 en 7.4 volledig. Er zijn verschillende factoren waarmee rekening moet worden gehouden bij het configureren van PHP voor maximale snelheid en efficiëntie bij het verwerken van aanvragen.
 
 ### PHP-extensies
 
@@ -114,7 +114,7 @@ Als u meer extensies toevoegt, duurt het laden van de bibliotheek langer.
 
 >[!INFO]
 >
->`php-mcrypt` is verwijderd uit PHP 7.2 en vervangen door de [`sodium` bibliotheek](https://www.php.net/manual/en/book.sodium.php). Zorg ervoor dat [natrium](https://www.php.net/manual/en/sodium.installation.php) is correct ingeschakeld bij het upgraden van PHP.
+>`php-mcrypt` is verwijderd uit PHP 7.2 en vervangen door de [`sodium` bibliotheek](https://www.php.net/manual/en/book.sodium.php). Zorg ervoor dat [natrium](https://www.php.net/manual/en/sodium.installation.php) is correct ingeschakeld wanneer PHP wordt bijgewerkt.
 
 >[!INFO]
 >
@@ -151,7 +151,7 @@ opcache.validate_timestamps=0
 opcache.enable_cli=1
 ```
 
-Wanneer u de geheugentoewijzing voor opcache precies afstemt, houdt u rekening met de grootte van de Magento base en al uw extensies. Het voorgaande Magento gebruikt de waarden in het voorgaande voorbeeld voor testdoeleinden, omdat er voldoende ruimte in de cache is voor het gemiddelde aantal geïnstalleerde extensies.
+Wanneer u de geheugentoewijzing voor opcache precies afstemt, moet u rekening houden met de grootte van de codebasis van het Magento en al uw extensies. Het prestatieteam van het Magento gebruikt de waarden in het vorige voorbeeld voor het testen omdat het genoeg ruimte in opcache voor het gemiddelde aantal geïnstalleerde extensies verstrekt.
 
 Als u een computer met weinig geheugen hebt en u niet veel extensies of aanpassingen hebt geïnstalleerd, gebruikt u de volgende instellingen voor een vergelijkbaar resultaat:
 
@@ -162,7 +162,7 @@ opcache.max_accelerated_files=60000
 
 #### APCU
 
-We raden u aan de [PHP APCu-extensie](https://getcomposer.org/doc/articles/autoloader-optimization.md#optimization-level-2-b-apcu-cache) en [configureren `composer` ter ondersteuning van](../performance/deployment-flow.md#preprocess-dependency-injection-instructions) optimaliseren voor maximale prestaties. Met deze extensie worden bestandslocaties voor geopende bestanden in cache geplaatst, waardoor de prestaties voor [!DNL Commerce] serveraanroepen inclusief pagina&#39;s, Ajax-aanroepen en eindpunten.
+We raden u aan de [PHP APCu extension](https://getcomposer.org/doc/articles/autoloader-optimization.md#optimization-level-2-b-apcu-cache) en [configureren `composer` ter ondersteuning van](../performance/deployment-flow.md#preprocess-dependency-injection-instructions) optimaliseren voor maximale prestaties. Met deze extensie worden bestandslocaties voor geopende bestanden in cache geplaatst, waardoor de prestaties voor [!DNL Commerce] serveraanroepen inclusief pagina&#39;s, Ajax-aanroepen en eindpunten.
 
 Bewerk uw `apcu.ini` bestand dat het volgende bevat:
 
@@ -174,7 +174,7 @@ apc.enabled = 1
 
 ## Webserver
 
-Magento biedt volledige ondersteuning voor de Nginx- en Apache-webservers. [!DNL Commerce] verstrekt steekproef geadviseerde configuratiedossiers in  `<magento_home>/nginx.conf.sample` (Nginx) en  `<magento_home>.htaccess.sample` (Apache)-bestanden.  Het Nginx-voorbeeld bevat instellingen voor betere prestaties en is zo ontworpen dat weinig herconfiguratie nodig is. Enkele van de belangrijkste die configuratiebeste praktijken in het steekproefdossier worden bepaald omvatten:
+Magento biedt volledige ondersteuning voor de Nginx- en Apache-webservers. [!DNL Commerce] verstrekt steekproef geadviseerde configuratiedossiers in de  `<magento_home>/nginx.conf.sample` (Nginx) en  `<magento_home>.htaccess.sample` (Apache).  Het Nginx-voorbeeld bevat instellingen voor betere prestaties en is zo ontworpen dat weinig herconfiguratie nodig is. Enkele van de belangrijkste die configuratiebeste praktijken in het steekproefdossier worden bepaald omvatten:
 
 * Instellingen voor het in cache plaatsen van statische inhoud in een browser
 * Instellingen voor geheugen en uitvoertijd voor PHP
@@ -198,14 +198,14 @@ Er zijn veel verbeteringen aangebracht in [!DNL MySQL] 5.7.9 We vertrouwen erop 
 |--- | --- | ---|
 | `innodb_buffer_pool_instances` | 8 | De standaardwaarde is ingesteld op 8 om problemen te voorkomen met meerdere threads die toegang proberen te krijgen tot dezelfde instantie. |
 | `innodb_buffer_pool_size` | 128MB | Gecombineerd met de veelvoudige hierboven beschreven groepsinstanties, betekent dit een standaardgeheugentoewijzing van 1024MB. De totale grootte wordt over alle bufferpools verdeeld. Geef voor de beste efficiëntie een combinatie van `innodb_buffer_pool_instances` en `innodb_buffer_pool_size` zodat elke instantie van de bufferpool minstens 1 GB is. |
-| `max_connections` | 150 | De waarde van de `max_connections` Deze parameter moet correleren met het totale aantal PHP threads dat is geconfigureerd in de toepassingsserver. Een algemene aanbeveling zou 300 zijn voor een klein milieu en 1000 voor een middelgroot milieu. |
+| `max_connections` | 150 | De waarde van `max_connections` Deze parameter moet correleren met het totale aantal PHP threads dat is geconfigureerd in de toepassingsserver. Een algemene aanbeveling zou 300 zijn voor een klein milieu en 1000 voor een middelgroot milieu. |
 | `innodb_thread_concurrency` | 0 | De beste waarde voor deze configuratie zou door de formule moeten worden berekend: `innodb_thread_concurrency = 2 * (NumCPUs + NumDisks)` |
 
 ## [!DNL Varnish]
 
 Magento raadt u ten zeerste aan [!DNL Varnish] als de volledige paginacacheserver voor uw winkel. De module PageCache is nog steeds aanwezig in de codebase, maar moet alleen voor ontwikkelingsdoeleinden worden gebruikt. Het mag niet samen met of in plaats van [!DNL Varnish].
 
-Installeren [!DNL Varnish] op een aparte server vóór de weblaag. Het zou alle inkomende verzoeken moeten goedkeuren en in het voorgeheugen ondergebrachte paginaaKopieën verstrekken. Om toe te staan [!DNL Varnish] om effectief met beveiligde pagina&#39;s te werken, kan een SSL beëindigingsvolmacht vóór worden geplaatst [!DNL Varnish]. Nginx kan voor dit doel worden gebruikt.
+Installeren [!DNL Varnish] op een aparte server vóór de weblaag. Het zou alle inkomende verzoeken moeten goedkeuren en in het voorgeheugen ondergebrachte paginaaKopieën verstrekken. Toestaan [!DNL Varnish] om effectief met beveiligde pagina&#39;s te werken, kan een SSL beëindigingsvolmacht vóór worden geplaatst [!DNL Varnish]. Nginx kan voor dit doel worden gebruikt.
 
 [!DNL Commerce] verspreidt een dossier van de steekproefconfiguratie voor [!DNL Varnish] (versies 4 en 5) die alle aanbevolen instellingen voor de prestaties bevat. De meest kritieke prestaties zijn onder andere:
 
@@ -219,7 +219,7 @@ Zie [Geavanceerd [!DNL Varnish] configuratie](../configuration/cache/config-varn
 
 Over het algemeen raden we u aan uw elementen (afbeeldingen, JS, CSS, enzovoort) op te slaan op een CDN voor optimale prestaties.
 
-Als voor uw site geen groot aantal landinstellingen nodig is en uw servers zich in hetzelfde gebied bevinden als de meeste klanten, levert het opslaan van uw middelen mogelijk aanzienlijke prestatiewinsten op tegen lagere kosten [!DNL Varnish] in plaats van een CDN te gebruiken.
+Als voor uw site geen groot aantal landinstellingen nodig is en uw servers zich in hetzelfde gebied bevinden als de meeste klanten, levert het opslaan van uw middelen mogelijk aanzienlijke prestatiewinsten op tegen lagere kosten [!DNL Varnish] in plaats van een CDN.
 
 Uw elementen opslaan in [!DNL Varnish]voegt u de volgende VCL-items toe aan uw `default.vcl` bestand gegenereerd door [!DNL Commerce] for [!DNL Varnish] 5.
 
@@ -252,11 +252,11 @@ if (bereq.url !~ "\.(ico|css|js|jpg|jpeg|png|gif|tiff|bmp|gz|tgz|bz2|tbz|mp3|ogg
 }
 ```
 
-Start de [!DNL Varnish] om in cache opgeslagen middelen te verwijderen wanneer u uw site upgradet of elementen implementeert/bijwerkt.
+De opdracht opnieuw starten [!DNL Varnish] om in cache opgeslagen middelen te verwijderen wanneer u uw site upgradet of elementen implementeert/bijwerkt.
 
 ## In cache plaatsen en sessieservers
 
-Magento biedt een aantal opties voor het opslaan van uw cache- en sessiegegevens, waaronder Redis, Memcache, bestandssysteem en database. Enkele van deze opties worden hieronder besproken.
+Magento biedt een aantal opties voor het opslaan van de cache en sessiegegevens, waaronder Redis, Memcache, bestandssysteem en database. Enkele van deze opties worden hieronder besproken.
 
 ### Eén webknooppunt instellen
 

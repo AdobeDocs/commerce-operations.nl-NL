@@ -11,7 +11,7 @@ ht-degree: 0%
 
 # Adobe Commerce-releasebeleid
 
-Adobe Commerce en Magento Open Source gebruiken [semantische versie](https://semver.org/) op het niveau van de afzonderlijke modules (bijvoorbeeld `magento/framework 101.1.1`), maar niet voor het versienummer van de marketingversie. Bijvoorbeeld:
+Adobe Commerce en gebruik van Magento Open Source [semantische versie](https://semver.org/) op het niveau van de afzonderlijke modules (bijvoorbeeld `magento/framework 101.1.1`), maar niet voor het versienummer van de marketingversie. Bijvoorbeeld:
 
 - **MAJOR release**—2
 - **MINOR release**—2,4
@@ -60,7 +60,7 @@ Voor instructies over het downloaden en toepassen van beveiligingspatches raadpl
 
 De pre-algemene beschikbaarheidsversies van de eigenschappen van Adobe Commerce worden openbaar gemaakt aan alle klanten van Adobe Commerce en Adobe partners. Het staat voor extra tijd vóór Algemene Beschikbaarheid toe om code en beïnvloede componenten te herzien.
 
-Bètareleases kunnen defecten bevatten en worden geleverd als &quot;AS IS&quot; zonder enige garantie. Adobe is niet verplicht om de bètareleases te onderhouden, te corrigeren, bij te werken, te wijzigen, te wijzigen of anderszins te ondersteunen (via Adobe Support Services of anderszins). Klanten wordt aangeraden voorzichtig te zijn en op geen enkele wijze te vertrouwen op de correcte werking of prestaties van de bètareleases en/of begeleidende documentatie of materialen. Daarom is elk gebruik van de bètareleases volledig op eigen risico van de klant.
+Bètareleases kunnen defecten bevatten en worden geleverd als &quot;AS IS&quot; zonder enige garantie. De Adobe zal niet verplicht zijn om (via de Diensten van de Steun van de Adobe of anderszins) de Versies van Beta te handhaven, te verbeteren, bij te werken, te veranderen, te wijzigen, of anders te steunen. Klanten wordt aangeraden voorzichtig te zijn en op geen enkele wijze te vertrouwen op de correcte werking of prestaties van de bètareleases en/of begeleidende documentatie of materialen. Daarom is elk gebruik van de bètareleases volledig op eigen risico van de klant.
 
 ## Uitzetbaarheid, Infrastructuur en de versie van de Diensten
 
@@ -68,7 +68,7 @@ De versies van de eigenschap die nieuwe eigenschappen en eigenschapupdates bevat
 
 ## Hotfix
 
-Hotfixes zijn flarden die high-impact veiligheid of kwaliteitsmoeilijke situaties, zoals moeilijke situaties aan nul-dag kwetsbaarheid bevatten, die vele verkopers beïnvloeden. Adobe geeft hotfixes voor Adobe Commerce-versies uit die nog steeds worden ondersteund en waar nodig worden beïnvloed door kritieke beveiligings- of kwaliteitsproblemen. Hotfixes worden gepubliceerd naar de [Sectie Bekende problemen](https://support.magento.com/hc/en-us/sections/360003869892-Known-issues-patches-attached-) van onze kennisbasis. Deze correcties zijn opgenomen in de volgende geplande patchrelease.
+Hotfixes zijn flarden die high-impact veiligheid of kwaliteitsmoeilijke situaties, zoals moeilijke situaties aan nul-dag kwetsbaarheid bevatten, die vele verkopers beïnvloeden. Adobe geeft hotfixes voor Adobe Commerce-versies vrij die nog steeds worden ondersteund en waar nodig worden beïnvloed door kritieke beveiligings- of kwaliteitsproblemen. Hotfixes worden gepubliceerd naar de [Sectie Bekende problemen](https://support.magento.com/hc/en-us/sections/360003869892-Known-issues-patches-attached-) van onze kennisbasis. Deze correcties zijn opgenomen in de volgende geplande patchrelease.
 
 >[!NOTE]
 >
@@ -76,7 +76,7 @@ Hotfixes zijn flarden die high-impact veiligheid of kwaliteitsmoeilijke situatie
 
 ## Individuele patch
 
-Afzonderlijke patches bevatten oplossingen voor een bepaalde kwestie met een lage-effectkwaliteit. Deze correcties worden toegepast op de ondersteunde kleine versies van Adobe Commerce. Adobe geeft individuele pleisters vrij zoals nodig voor Adobe Commerce in overeenstemming met onze [Levenscyclusbeleid software](https://www.adobe.com/content/dam/cc/en/legal/terms/enterprise/pdfs/Adobe-Commerce-Software-Lifecycle-Policy.pdf).
+Afzonderlijke patches bevatten oplossingen voor een bepaalde kwestie met een lage-effectkwaliteit. Deze correcties worden toegepast op de ondersteunde kleine versies van Adobe Commerce. Adobe geeft individuele pleisters vrij zoals nodig voor Adobe Commerce overeenkomstig onze [Levenscyclusbeleid software](https://www.adobe.com/content/dam/cc/en/legal/terms/enterprise/pdfs/Adobe-Commerce-Software-Lifecycle-Policy.pdf).
 
 >[!NOTE]
 >
@@ -84,7 +84,7 @@ Afzonderlijke patches bevatten oplossingen voor een bepaalde kwestie met een lag
 
 ## Aangepaste patch
 
-Gemaakt door niet-Adobe-personeel om een probleem op te lossen of om verschillende redenen de Adobe Commerce-code te wijzigen. Aangepaste patches worden geleverd via de [Gereedschap Kwaliteitspatches](https://experienceleague.adobe.com/docs/commerce-operations/tools/quality-patches-tool/usage.html).
+Gemaakt door personeel van een andere Adobe om een probleem op te lossen of de Adobe Commerce-code om verschillende redenen te wijzigen. Aangepaste patches worden geleverd via de [Gereedschap Kwaliteitspatches](https://experienceleague.adobe.com/docs/commerce-operations/tools/quality-patches-tool/usage.html).
 
 ## Verwante onderwerpen
 

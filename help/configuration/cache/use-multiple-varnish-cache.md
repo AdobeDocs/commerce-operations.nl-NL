@@ -6,7 +6,7 @@ exl-id: 289a4e54-9e73-454c-bfb9-e78e405af56c
 source-git-commit: a2bd4139aac1044e7e5ca8fcf2114b7f7e9e9b68
 workflow-type: tm+mt
 source-wordcount: '179'
-ht-degree: 0%
+ht-degree: 1%
 
 ---
 
@@ -32,6 +32,6 @@ bin/magento setup:config:set --http-cache-hosts=192.0.2.100,192.0.2.155:8080
 
 U kunt dan alle Varnish gastheren leegmaken wanneer u het geheime voorgeheugen van de Handel verfrist (ook genoemd _schoonmaken_ (de cache) in de beheerfunctie of via de opdrachtregel.
 
-Als u de cache wilt vernieuwen met behulp van de beheerfunctie, klikt u op **SYSTEEM** > Gereedschappen > **Cachebeheer** en klik vervolgens op **Magento-cache leegmaken** boven aan de pagina. (U kunt ook afzonderlijke cachetypen vernieuwen.)
+Als u de cache wilt vernieuwen met behulp van de beheerfunctie, klikt u op **SYSTEEM** > Gereedschappen > **Cachebeheer** en klik vervolgens op **Cache van Magento leegmaken** boven aan de pagina. (U kunt ook afzonderlijke cachetypen vernieuwen.)
 
-Als u het cachegeheugen van meerdere instanties Varnish wilt vernieuwen vanuit de cli, gebruikt u de opdracht [`magento cache:clean <type>`](../cli/manage-cache.md#clean-and-flush-cache-types) als de [eigenaar van bestandssysteem](../../installation/prerequisites/file-system/overview.md).
+Als u het cachegeheugen van meerdere instanties Varnish wilt vernieuwen vanuit de cli, gebruikt u de opdracht [`magento cache:clean <type>`](../cli/manage-cache.md#clean-and-flush-cache-types) gebruiken als de [eigenaar van bestandssysteem](../../installation/prerequisites/file-system/overview.md).

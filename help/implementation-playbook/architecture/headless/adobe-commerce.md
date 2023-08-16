@@ -18,7 +18,7 @@ Het voordeel van de Adobe Commerce-architectuur is dat het geen alles-of-niets-v
 
 Elke aanpak sluit elkaar niet uit. Klanten kunnen hun eigen front-end (head) maken, PWA Studio gebruiken voor web/mobiele ervaringen en/of Adobe Experience Manager gebruiken voor het glas (in een volledige of hybride implementatie).
 
-Adobe Commerce heeft altijd toestemming gegeven voor headless-implementaties met REST API&#39;s. Terwijl REST krachtig is, vooral voor bulkverwerking, als het op hoofdloze producten komt, laten GraphQL APIs snellere ontwikkeling door een intuïtieve ontwikkelaarservaring toe, grotere flexibiliteit door voor veranderingen toe te staan die geen invloed op bestaande APIs hebben, en betere prestaties door de hoeveelheid gegevens te minimaliseren die aan slechts precies wordt teruggewonnen wat nodig is.
+Adobe Commerce heeft altijd een headless-implementatie met REST API&#39;s toegestaan. Terwijl REST krachtig is, vooral voor bulkverwerking, als het op hoofdloze producten komt, laten GraphQL APIs snellere ontwikkeling door een intuïtieve ontwikkelaarservaring toe, grotere flexibiliteit door voor veranderingen toe te staan die geen invloed op bestaande APIs hebben, en betere prestaties door de hoeveelheid gegevens te minimaliseren die aan slechts precies wordt teruggewonnen wat nodig is.
 
 GraphQL is een industriestandaard voor presterende API&#39;s, die wordt gebruikt door veel van de topplatforms voor e-commerce. Dat is een goede zaak, omdat dit betekent dat het een bewezen oplossing is en dat er deskundigheid bestaat op de markt.
 

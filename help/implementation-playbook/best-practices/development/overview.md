@@ -1,5 +1,5 @@
 ---
-title: Ontwikkelingsfase van de implementatie
+title: Ontwikkelingsfase implementatie
 description: Leer over implementatie beste praktijken voor de ontwikkelingsfase van projecten van Adobe Commerce.
 exl-id: 499c16df-0e4d-4950-8169-96356bdff1a7
 feature: Best Practices

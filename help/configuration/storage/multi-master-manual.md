@@ -1,5 +1,5 @@
 ---
-title: Master databases handmatig configureren
+title: Hoofddatabases handmatig configureren
 description: Zie begeleiding bij het manueel vormen van de gespleten gegevensbestandoplossing.
 recommendations: noCatalog
 exl-id: 2c357486-4a8a-4a36-9e13-b53c83f69456
@@ -10,7 +10,7 @@ ht-degree: 0%
 
 ---
 
-# Master databases handmatig configureren
+# Hoofddatabases handmatig configureren
 
 {{ee-only}}
 
@@ -36,11 +36,11 @@ Dit onderwerp gebruikt de volgende noemende overeenkomsten:
 - De hoofddatabasenaam is `magento` en de gebruikersnaam en het wachtwoord beide zijn `magento`
 - De naam van de quotadatabase is `magento_quote` en de gebruikersnaam en het wachtwoord beide zijn `magento_quote`
 
-   De citaatdatabase wordt ook wel de _uitchecken_ database.
+  De citaatdatabase wordt ook wel de _uitchecken_ database.
 
 - De naam van de verkoopdatabase is `magento_sales` en de gebruikersnaam en het wachtwoord beide zijn `magento_sales`
 
-   Het verkoopgegevensbestand wordt ook bedoeld als OMS gegevensbestand.
+  Het verkoopgegevensbestand wordt ook bedoeld als OMS gegevensbestand.
 
 >[!INFO]
 >
@@ -61,7 +61,7 @@ Adobe raadt u ten zeerste aan een back-up te maken van uw huidige database en be
 
 1. Ga verder met de volgende sectie.
 
-## Aanvullende master databases instellen
+## Extra hoofddatabases instellen
 
 Deze sectie bespreekt hoe te om gegevensbestandinstanties voor verkoop en citaatlijsten tot stand te brengen.
 
@@ -229,7 +229,7 @@ Als u momenteel bij `mysql>` prompt, enter `exit` om naar bevelshell terug te ke
 Voer het volgende uit `mysqldump` opdrachten, één voor één, uit de opdrachtshell. Vervang in elke sectie het volgende:
 
 - `<your database root username>` met de naam van de basisgebruiker van de database
-- `<your database root user password>` met het wachtwoord van de gebruiker
+- `<your database root user password>` met het gebruikerswachtwoord
 - `<your main Commerce DB name>` met de naam van uw Commerce-database
 - `<path>` met een schrijfbaar bestandssysteempad
 
@@ -297,10 +297,10 @@ Wanneer
 
 - `<your sales DB name>` met de naam van uw verkoopdatabase.
 
-   In dit onderwerp, is de naam van het steekproefgegevensbestand `magento_sales`.
+  In dit onderwerp, is de naam van het steekproefgegevensbestand `magento_sales`.
 
 - `<root username>` met uw MySQL hoofdgebruikersnaam
-- `<root user password>` met het wachtwoord van de gebruiker
+- `<root user password>` met het gebruikerswachtwoord
 - Controleer de locatie van de back-upbestanden die u eerder hebt gemaakt (bijvoorbeeld `/var/sales.sql`)
 
 ## De quotedatabase configureren
@@ -484,7 +484,7 @@ Om de plaatsingsconfiguratie bij te werken:
    cp <magento_root>/app/etc/env.php <magento_root>/app/etc/env.php.orig
    ```
 
-1. Openen `<magento_root>/app/etc/env.php` in een teksteditor en deze bij te werken aan de hand van de richtlijnen die in de volgende secties worden besproken.
+1. Openen `<magento_root>/app/etc/env.php` in een teksteditor en werk deze bij met behulp van de richtlijnen die in de volgende secties worden besproken.
 
 ### Databaseverbindingen bijwerken
 

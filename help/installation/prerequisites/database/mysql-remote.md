@@ -13,13 +13,13 @@ ht-degree: 0%
 
 Soms wilt u de database op een aparte server hosten in plaats van de databaseserver en de webserver op dezelfde computer uit te voeren.
 
-Adobe heeft een manier verstrekt om met een server MySQL op een verschillende machine te verbinden. Vanaf Adobe Commerce en Magento Open Source 2.4.3 kunt u de toepassing ook zodanig configureren dat deze een Amazon Web Services (AWS) Aurora-database zonder codewijzigingen gebruikt.
+Adobe biedt een manier om verbinding te maken met een MySQL-server op een andere computer. Vanaf Adobe Commerce en Magento Open Source 2.4.3 kunt u de toepassing ook zodanig configureren dat deze een Amazon Web Services (AWS) Aurora-database zonder codewijzigingen gebruikt.
 
 Aurora is een krachtige, volledig compatibele MySQL-server die op AWS wordt gehost.
 
 ## Verbinding maken met een AWS Aurora-database
 
-Het gebruiken van Aurora als gegevensbestand is zo gemakkelijk zoals specificerend het gegevensbestand in de regelmatige configuratie van Adobe Commerce en van de Magento Open Source opstelling, gebruikend de standaardgegevensbestandschakelaar.
+Het gebruiken van Aurora als gegevensbestand is zo gemakkelijk zoals specificerend het gegevensbestand in de regelmatige configuratie van de de opstellingsconfiguratie van Adobe Commerce en van de Magento Open Source, gebruikend de standaardgegevensbestandschakelaar.
 
 Bij uitvoering `bin/magento setup:install`, gebruikt u de Aurora-informatie in de `db-` velden:
 
@@ -48,9 +48,9 @@ Voordat u begint, moet u:
 Gebruik de volgende richtlijnen om externe databaseverbindingen te configureren als uw webserver of databaseserver geclusterd is:
 
 * U moet een verbinding voor elke knoop van de Webserver vormen.
-* Meestal configureert u een databaseverbinding met het taakverdelingsmechanisme van de database. nochtans, gegevensbestand dat zich groepeert kan complex zijn en het vormen is aan u. Adobe doet geen specifieke aanbevelingen voor gegevensbestand zich groeperen.
+* Typisch, vormt u een gegevensbestandverbinding aan het taakverdelingsmechanisme van het gegevensbestand; nochtans, kan het gegevensbestand zich groeperen complex zijn en het vormen is aan u. De Adobe doet geen specifieke aanbevelingen voor gegevensbestand zich groeperen.
 
-   Zie voor meer informatie [MySQL-documentatie](https://dev.mysql.com/doc/refman/5.6/en/mysql-cluster.html).
+  Zie voor meer informatie [MySQL-documentatie](https://dev.mysql.com/doc/refman/5.6/en/mysql-cluster.html).
 
 ### Verbindingsproblemen oplossen
 
@@ -97,6 +97,7 @@ Een externe verbinding maken:
    * CentOS: `service mysqld restart`
 
    * Ubuntu: `service mysql restart`
+
    >[!NOTE]
    >
    >Als MySQL er niet in slaagt om te beginnen, zoek in syslog naar de bron van de kwestie. Los het probleem op met [MySQL-documentatie](https://dev.mysql.com/doc/refman/5.6/en/server-options.html#option_mysqld_bind-address) of een andere gezaghebbende bron.
@@ -109,7 +110,7 @@ In dit voorbeeld wordt het `root` databasegebruiker volledige toegang tot de dat
 
 Toegang verlenen aan een databasegebruiker:
 
-1. Meld u aan bij de databaseserver.
+1. Log in bij de databaseserver.
 1. Maak verbinding met de MySQL-database als de `root` gebruiker.
 1. Voer de volgende opdracht in:
 
@@ -152,10 +153,10 @@ Als uw webserver is geclusterd, voert u de opdracht in op elke host van de webse
 
 ## Adobe Commerce of Magento Open Source installeren
 
-Wanneer u Adobe Commerce of Magento Open Source installeert, moet u het volgende opgeven:
+Wanneer u Adobe Commerce of Magento Open Source installeert, moet u het volgende specificeren:
 
 * De basis-URL (ook wel de *opslagadres*) geeft de hostnaam of het IP-adres van het *webknooppunt*
-* De host van de database is de *externe databaseserver* IP-adres (of taakverdelingsmechanisme als de databaseserver geclusterd is)
+* De host van de database is *externe databaseserver* IP-adres (of taakverdelingsmechanisme als de databaseserver geclusterd is)
 * Gebruikersnaam database is de *lokaal webknooppunt* databasegebruiker waartoe u toegang hebt verleend
 * Databasewachtwoord is het wachtwoord van de gebruiker van het lokale webknooppunt
 * Databasenaam is de naam van de database op de externe server

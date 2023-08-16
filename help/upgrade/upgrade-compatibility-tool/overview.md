@@ -25,7 +25,7 @@ U kunt de [!DNL Upgrade Compatibility Tool] via:
 
 - Als zelfstandig [opdrachtregelinterface](../upgrade-compatibility-tool/run.md) gebruiken. Voor de volledige lijst van beschikbare bevelen, zie [`bin/uct` referentie](/help/reference/uct.md).
 - De [!DNL Upgrade Compatibility Tool] met de [[!DNL Site-Wide Analysis Tool]](../upgrade-compatibility-tool/integrate-analysis-tool.md).
-- Een uitvoeringsconfiguratie binnen de [Magento PHPStorm-plug-in](../upgrade-compatibility-tool/run-configuration-phpstorm-plugin.md).
+- Een uitvoeringsconfiguratie binnen de [PHPStorm-plug-in voor Magento](../upgrade-compatibility-tool/run-configuration-phpstorm-plugin.md).
 
 ## Workflow
 
@@ -53,7 +53,7 @@ Zie de [Contribute](https://developer.adobe.com/commerce/php/coding-standards/co
 
 Raadpleeg de volgende bronnen voor meer informatie over upgrades voor Adobe Commerce:
 
-- De [upgradehulplijn](../overview.md) biedt een overzicht van de gebruikelijke Adobe Commerce- of Magento Open Source-upgradereis en van de beste praktijken om deze reis te volgen.
-- De [komende releases](https://devdocs.magento.com/release/) bevat de datums voor geplande en komende releases.
+- De [upgradehulplijn](../overview.md) biedt een overzicht van de typische Adobe Commerce- of Magento Open Source-upgrade en de beste praktijken om die reis te volgen.
+- De [komende releases](https://devdocs.magento.com/release/) Deze pagina bevat de datums voor geplande en komende releases.
 - De [communautaire middelen](https://developer.adobe.com/commerce/contributor/community/) Deze pagina is bedoeld om discussies te starten of om meer informatie te zoeken.
 - Controleer de [verwante gereedschappen](../upgrade-compatibility-tool/related-tools.md) pagina voor nuttige hulpmiddelen in uw typisch verbeteringsreis.

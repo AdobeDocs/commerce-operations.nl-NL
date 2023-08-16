@@ -23,10 +23,10 @@ Handel 2 heeft de volgende geheim voorgeheugentypes:
 | Layout | layout | Gecompileerde paginalay-outs (dat wil zeggen de lay-outcomponenten van alle componenten). Reinig of verwijder dit cachetype na het wijzigen van lay-outbestanden. |
 | HTML-uitvoer blokkeren | block_html | HTML-paginafragmenten per blok. Reinig of verwijder dit cachetype na het wijzigen van de meningslaag. |
 | Gegevens van verzamelingen | verzamelingen | Resultaten van databasequery&#39;s. Indien nodig, ontruimt de Handel automatisch dit geheime voorgeheugen, maar de derdeontwikkelaars kunnen om het even welke gegevens in om het even welk segment van het geheime voorgeheugen zetten. Reinig of verwijder dit cachetype als uw douanemodule logica gebruikt die in geheim voorgeheugeningangen resulteert die de Handel niet kan schoonmaken. |
-| DDL | db_ddl | Databaseschema. Indien nodig, ontruimt de Handel automatisch dit geheime voorgeheugen, maar de derdeontwikkelaars kunnen om het even welke gegevens in om het even welk segment van het geheime voorgeheugen zetten. Reinig of verwijder dit cachetype nadat u douaneveranderingen in het gegevensbestandschema aanbrengt. (Met andere woorden, updates die de Handel niet zelf maakt.) Een manier om het databaseschema automatisch bij te werken is met de `magento setup:db-schema:upgrade` gebruiken. |
+| DDL | db_ddl | Databaseschema Indien nodig, ontruimt de Handel automatisch dit geheime voorgeheugen, maar de derdeontwikkelaars kunnen om het even welke gegevens in om het even welk segment van het geheime voorgeheugen zetten. Reinig of verwijder dit cachetype nadat u douaneveranderingen in het gegevensbestandschema aanbrengt. (Met andere woorden, updates die de Handel niet zelf maakt.) Een manier om het databaseschema automatisch bij te werken is met de `magento setup:db-schema:upgrade` gebruiken. |
 | Gecompileerde configuratie | compiled_config | Compilatieconfiguratie |
 | Waarde van kenmerk Entiteit (EAV) | eav | Metagegevens die betrekking hebben op EAV-kenmerken (zoals winkellabels, koppelingen naar gerelateerde PHP-code, kenmerkrendering, zoekinstellingen enzovoort). U moet dit cachetype gewoonlijk niet opschonen of verwijderen. |
-| Paginacache | full_page | Gegenereerde HTML pagina&#39;s. Indien nodig, ontruimt de Handel automatisch dit geheime voorgeheugen, maar de derdeontwikkelaars kunnen om het even welke gegevens in om het even welk segment van het geheime voorgeheugen zetten. Reinig of verwijder dit cachetype na het wijzigen van het codeniveau dat de uitvoer van de HTML beïnvloedt. Het wordt aangeraden deze cache ingeschakeld te houden, omdat de HTML in cache de prestaties aanzienlijk verbetert. |
+| Paginacache | full_page | Gegenereerde HTML pagina&#39;s. Indien nodig, ontruimt de Handel automatisch dit geheime voorgeheugen, maar de derdeontwikkelaars kunnen om het even welke gegevens in om het even welk segment van het geheime voorgeheugen zetten. Reinig of verwijder dit cachetype na het wijzigen van het codeniveau dat HTML output beïnvloedt. Het wordt aangeraden deze cache ingeschakeld te houden, omdat de HTML in cache de prestaties aanzienlijk verbetert. |
 | Reflectie | spiegeling | Verwijdert een afhankelijkheid tussen de module Webapi en de module van de Klant. |
 | Vertalingen | vertalen | Na het samenvoegen van vertalingen van alle modules, zal het fusiecache worden schoongemaakt. |
 | Integratieconfiguratie | config_integration | Gecompileerde integratie. Maak deze cache leeg of maak deze leeg nadat u integraties hebt gewijzigd of toegevoegd. |
@@ -67,13 +67,13 @@ Current status:
 
 ## Cachetypen in- of uitschakelen
 
-Met deze opdracht kunt u alle cachetypen of alleen de door u opgegeven typen in- of uitschakelen. Het onbruikbaar maken van geheim voorgeheugentypes is nuttig tijdens ontwikkeling omdat u de resultaten van uw veranderingen ziet zonder het moeten het geheime voorgeheugen leegmaken; echter, heeft het onbruikbaar maken van geheim voorgeheugentypes een nadelig effect op prestaties.
+Met deze opdracht kunt u alle cachetypen of alleen de door u opgegeven typen in- of uitschakelen. Het onbruikbaar maken van geheim voorgeheugentypes is nuttig tijdens ontwikkeling omdat u de resultaten van uw veranderingen ziet zonder het moeten het geheime voorgeheugen leegmaken; nochtans, heeft het onbruikbaar maken van geheim voorgeheugentypes een nadelig effect op prestaties.
 
 >[!INFO]
 >
->Beginnend in versie 2.2, kunt u geheim voorgeheugentypes slechts toelaten of onbruikbaar maken gebruikend de bevellijn terwijl het runnen van Handel op productiemodus. Als het runnen van Handel op ontwikkelaarwijze, kunt u geheim voorgeheugentypes toelaten of onbruikbaar maken gebruikend de bevellijn of manueel. Voordat u dit doet, moet u handmatig `<magento_root>/app/etc/env.php` door de [eigenaar van bestandssysteem](../../installation/prerequisites/file-system/overview.md).
+>Beginnend in versie 2.2, kunt u geheim voorgeheugentypes slechts toelaten of onbruikbaar maken gebruikend de bevellijn terwijl het runnen van Handel op productiemodus. Als het runnen van Handel op ontwikkelaarwijze, kunt u geheim voorgeheugentypes toelaten of onbruikbaar maken gebruikend de bevellijn of manueel. Voordat u dit doet, moet u handmatig `<magento_root>/app/etc/env.php` schriftelijk door de [eigenaar van bestandssysteem](../../installation/prerequisites/file-system/overview.md).
 
-U kunt schoonmaken (ook wel _flush_ of _vernieuwen_) gebruikt.
+U kunt schoonmaken (ook wel _flush_ of _vernieuwen_) gebruikt via de opdrachtregel of de beheerder.
 
 Opdrachtopties:
 
@@ -85,7 +85,7 @@ bin/magento cache:enable [type] ... [type]
 bin/magento cache:disable [type] ... [type]
 ```
 
-Indien weggelaten `[type]` schakelt alle cachetypen tegelijkertijd in of uit. De `type` Deze optie is een door spaties gescheiden lijst met cachetypen.
+Indien weggelaten `[type]` schakelt alle cachetypen tegelijkertijd in of uit. De `type` Deze optie is een lijst met cachetypen die door spaties worden gescheiden.
 
 <!-- `--bootstrap=` is a URL-encoded associative array of Commerce [application bootstrap parameters](../bootstrap/set-parameters.md#bootstrap-parameters) and values. -->
 
@@ -115,7 +115,7 @@ Monsterresultaat:
 
 >[!INFO]
 >
->Vanaf versie 2.3.4 plaatst de Handel alle systeemEAV attributen in het voorgeheugen aangezien zij worden teruggewonnen. Op deze manier verbetert het in cache plaatsen van EAV-kenmerken de prestaties, omdat hierdoor minder aanvragen voor invoegen/selecteren naar de DB worden ingediend. Nochtans, verhoogt het ook de grootte van het geheim voorgeheugennetwerk. Ontwikkelaars kunnen aangepaste EAV-kenmerken in cache plaatsen door het `bin/magento config:set dev/caching/cache_user_defined_attributes 1` gebruiken. Dit kan ook worden gedaan bij de beheerder [Modus Ontwikkelaar](../bootstrap/application-modes.md) door instellen **Winkels** > Instellingen **Configuratie** > **Geavanceerd** > **Ontwikkelaar** > **Instellingen in cache** > **Door gebruiker gedefinieerde kenmerken in cache opslaan** tot **Ja**.
+>Vanaf versie 2.3.4 plaatst de Handel alle systeemEAV attributen in het voorgeheugen aangezien zij worden teruggewonnen. Op deze manier verbetert het in cache plaatsen van EAV-kenmerken de prestaties, omdat hierdoor minder aanvragen voor invoegen/selecteren naar de DB worden ingediend. Nochtans, verhoogt het ook de grootte van het geheim voorgeheugennetwerk. Ontwikkelaars kunnen aangepaste EAV-kenmerken in cache plaatsen door het `bin/magento config:set dev/caching/cache_user_defined_attributes 1` gebruiken. Dit kan ook worden gedaan bij de beheerder [Modus Ontwikkelaar](../bootstrap/application-modes.md) door instellen **Winkels** > Instellingen **Configuratie** > **Geavanceerd** > **Ontwikkelaar** > **Instellingen voor caching** > **Door gebruiker gedefinieerde kenmerken in cache opslaan** tot **Ja**.
 
 ## Cachetypen opschonen en leegmaken
 
@@ -131,7 +131,7 @@ Als u verouderde items uit de cache wilt verwijderen, kunt u _schoon_ of _flush_
 
   >[!TIP]
   >
-  >Corrigeer altijd de cache nadat u versies van Magento Open Source of Adobe Commerce hebt bijgewerkt, Magento Open Source naar Adobe Commerce hebt geüpgraded of B2B voor Adobe Commerce of een willekeurige module hebt geïnstalleerd.
+  >Maak de cache altijd schoon nadat u versies van Magento Open Source of Adobe Commerce hebt bijgewerkt, een upgrade van Magento Open Source naar Adobe Commerce hebt uitgevoerd of B2B voor Adobe Commerce of een willekeurige module hebt geïnstalleerd.
 
 - Als u een cachetype leegmaakt, wordt de cacheopslag gewist. Dit kan van invloed zijn op andere procestoepassingen die dezelfde opslag gebruiken.
 
@@ -175,4 +175,4 @@ Monsterresultaat:
 
 >[!TIP]
 >
->U kunt de cachetypen ook opschonen en leegmaken in de beheerfunctie. Ga naar **Systeem** > **Gereedschappen** > **Cachebeheer**. **Opslag in één cache** is gelijk aan `bin/magento cache:flush`. **Magento-cache leegmaken** is gelijk aan `bin/magento cache:clean`.
+>U kunt de cachetypen ook opschonen en leegmaken in de beheerfunctie. Ga naar **Systeem** > **Gereedschappen** > **Cachebeheer**. **Opslag in één cache** is gelijk aan `bin/magento cache:flush`. **Cache van Magento leegmaken** is gelijk aan `bin/magento cache:clean`.

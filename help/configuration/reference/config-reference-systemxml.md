@@ -2,11 +2,11 @@
 title: system.xml reference
 description: Leer hoe het systeemXML- dossier de de toepassingsconfiguratie van de Handel beheert.
 feature: Configuration, System
-badge: label="Bijgedragen door David Lambauer" type="Informatief" url="https://github.com/DavidLambauer" tooltip="David Lambauer"
+badge: label="Bijdrage van David Lambauer" type="Informative" url="https://github.com/DavidLambauer" tooltip="David Lambauer"
 exl-id: a6c5de6c-e8da-4eca-bbfb-592904b2c53f
 source-git-commit: 16e9396f19693436dfc7bdac78d84624a78f0c21
 workflow-type: tm+mt
-source-wordcount: '2685'
+source-wordcount: '2680'
 ht-degree: 0%
 
 ---
@@ -30,7 +30,7 @@ Het volgende codefragment toont het blote skelet van het dossier:
 >
 >Als u onmiddellijke *XSD bevestiging in uw winde wilt, kunt u lopen `bin/magento dev:urn-catalog:generate [--ide IDE] [--] <path>`.
 
-## Tabs // Secties // Groepen // Velden
+## Tabs // secties // groepen // velden
 
 In de `system.xml` , is het mogelijk vier verschillende typen entiteiten te definiëren, die met elkaar verwant zijn. In de volgende sectie wordt de relatie beschreven tussen tabbladen, secties, groepen en velden. Het volgende screenshot toont de Configuratie van het Systeem van de Handel 2 in Admin achterste.
 De rode vierkantjes geven de verschillende typen aan die in het dialoogvenster `system.xml` bestand:
@@ -53,7 +53,7 @@ A `<tab>`-Tag kan de volgende kenmerken hebben:
 | `id` | Definieert de id die wordt gebruikt bij het verwijzen naar de sectie. | `typeId` | vereist |
 | `translate` | Hiermee definieert u het veld dat moet kunnen worden vertaald. Verlenen `label` om het label vertaalbaar te maken. | `string` | optioneel |
 | `type` | Bepaalt het inputtype van het teruggegeven HTML element-gebrek aan `text`. | `string` | optioneel |
-| `sortOrder` | Hiermee definieert u de sorteervolgorde van de sectie. Met een hoge waarde wordt de sectie onder aan de pagina geplaatst. met een lage waarde wordt de sectie naar boven verplaatst. | `float` | optioneel |
+| `sortOrder` | Hiermee definieert u de sorteervolgorde van de sectie. Met een hoge waarde wordt de sectie naar de onderkant van de pagina verplaatst en met een lage waarde wordt de sectie naar de bovenkant verschoven. | `float` | optioneel |
 | `class` | Voegt een gedefinieerde CSS-klasse toe aan het gerenderde tab HTML-element. | `string` | optioneel |
 
 ### Referentie tabknooppunt
@@ -95,12 +95,12 @@ A `<section>`-Tag kan de volgende kenmerken hebben:
 | `id` | Definieert de id die wordt gebruikt bij het verwijzen naar de sectie. | `typeId` | vereist |
 | `translate` | Hiermee definieert u het veld dat moet kunnen worden vertaald. Verlenen `label` om het label vertaalbaar te maken. | `string` | optioneel |
 | `type` | Definieert het invoertype van het gerenderde HTML-element. Standaardwaarden: `text`. | `string` | optioneel |
-| `sortOrder` | Hiermee definieert u de sorteervolgorde van de sectie. Bij een hoge waarde wordt de sectie onder aan de pagina geplaatst. met een lage waarde wordt de sectie naar de bovenkant verschoven . | `float` | optioneel |
+| `sortOrder` | Hiermee definieert u de sorteervolgorde van de sectie. Bij een hoge waarde wordt de sectie onder aan de pagina geplaatst. Bij een lage waarde wordt de sectie naar de bovenkant verschoven. | `float` | optioneel |
 | `showInDefault` | Bepaalt of de sectie in het standaardconfiguratiewerkingsgebied wordt getoond. Opgeven `1` om de sectie en `0` om de sectie te verbergen. | `int` | optioneel |
 | `showInStore` | Bepaalt of de sectie op archiefniveau wordt getoond. Opgeven `1` om de sectie en `0` om de sectie te verbergen. | `int` | optioneel |
 | `showInWebsite` | Bepaalt of de sectie op websiteniveau wordt getoond. Opgeven `1` om de sectie en `0` om de sectie te verbergen. | `int` | optioneel |
 | `canRestore` | Definieert of de sectie kan worden teruggezet op de standaardwaarde. | `int` | optioneel |
-| `advanced` | Vervangen vanaf 100.0.2. | `bool` | optioneel |
+| `advanced` | Vervangen vanaf 10.0.2. | `bool` | optioneel |
 | `extends` | Door een id van een andere sectie op te geven, breidt de inhoud van dit knooppunt de sectie uit waarnaar u verwijst. | `string` | optioneel |
 
 ### Verwijzing naar knooppunt
@@ -154,12 +154,12 @@ A `<group>`-Tag kan de volgende kenmerken hebben:
 | `id` | Definieert de id die wordt gebruikt bij het verwijzen naar de groep. | `typeId` | vereist |
 | `translate` | Hiermee definieert u de velden die u wilt vertalen. Verlenen `label` om het label vertaalbaar te maken. Meerdere velden moeten worden gescheiden door een spatie. | `string` | optioneel |
 | `type` | Definieert het invoertype van het gerenderde HTML-element. Standaardwaarden: `text`. | `string` | optioneel |
-| `sortOrder` | Hiermee definieert u de sorteervolgorde van de sectie. Bij een hoge waarde wordt de sectie onder aan de pagina geplaatst. met een lage waarde wordt de sectie naar de bovenkant verschoven . | `float` | optioneel |
-| `showInDefault` | Bepaalt of de groep in het standaardconfiguratiewerkingsgebied wordt getoond. Opgeven `1` om de groep en `0` om de groep te verbergen. | `int` | optioneel |
-| `showInStore` | Bepaalt of de groep op archiefniveau wordt getoond. Opgeven `1` om de groep en `0` om de groep te verbergen. | `int` | optioneel |
-| `showInWebsite` | Bepaalt of de groep op websiteniveau wordt getoond. Opgeven `1` om de groep en `0` om de groep te verbergen. | `int` | optioneel |
+| `sortOrder` | Hiermee definieert u de sorteervolgorde van de sectie. Bij een hoge waarde wordt de sectie onder aan de pagina geplaatst. Bij een lage waarde wordt de sectie naar de bovenkant verschoven. | `float` | optioneel |
+| `showInDefault` | Bepaalt of de groep in het standaardconfiguratiewerkingsgebied wordt getoond. Opgeven `1` om de groep en `0` de groep verbergen. | `int` | optioneel |
+| `showInStore` | Bepaalt of de groep op archiefniveau wordt getoond. Opgeven `1` om de groep en `0` de groep verbergen. | `int` | optioneel |
+| `showInWebsite` | Bepaalt of de groep op websiteniveau wordt getoond. Opgeven `1` om de groep en `0` de groep verbergen. | `int` | optioneel |
 | `canRestore` | Definieert of de standaardgroep kan worden hersteld. | `int` | optioneel |
-| `advanced` | Vervangen vanaf 100.0.2. | `bool` | optioneel |
+| `advanced` | Vervangen vanaf 10.0.2. | `bool` | optioneel |
 | `extends` | Door een id van een andere groep op te geven, breidt de inhoud van dit knooppunt de sectie uit waarnaar u verwijst. | `string` | optioneel |
 
 ### Referentie van knooppunt groeperen
@@ -180,7 +180,7 @@ A `<group>`-Tag kan de volgende onderliggende elementen hebben:
 | `hide_in_single_store_mode` | Of de groep op enige opslagwijze zichtbaar zou moeten zijn. `1` de groep verbergt; `0` geeft de groep weer. | `int` |
 | `field` | Definieer een of meer velden die beschikbaar moeten zijn onder deze groep. | `field` |
 | `group` | Definieer een of meer subgroepen. | `unbounded` |
-| `depends` | Kan worden gebruikt om gebiedsdelen op andere gebieden te verklaren. Wordt alleen gebruikt om specifieke velden/groepen weer te geven wanneer een bepaald veld een waarde heeft van `1`. Deze node verwacht een `section/group/field`-string. | `depends` |
+| `depends` | Kan worden gebruikt om gebiedsdelen op andere gebieden te verklaren. Wordt alleen gebruikt om specifieke velden/groepen weer te geven wanneer een veld de waarde `1`. Deze node verwacht een `section/group/field`-string. | `depends` |
 | `attribute` | Aangepaste kenmerken kunnen worden gebruikt door frontend-modellen. Wordt meestal gebruikt om een bepaald frontend model dynamischer te maken. | `attribute` |
 | `include` | Wordt gebruikt om extra gegevens op te nemen `system_include.xsd` compatibele bestanden. Wordt meestal gebruikt om grote structuren te maken `system.xml` bestanden. | `includeType` |
 
@@ -188,7 +188,7 @@ A `<group>`-Tag kan de volgende onderliggende elementen hebben:
 >
 >De knooppunten `more_url`, `demo_url` en `help_url` worden gedefinieerd door een PayPal frontend-model dat slechts eenmaal wordt gebruikt. Deze knooppunten kunnen niet opnieuw worden gebruikt.
 
-### Voorbeeld: Een groep maken voor een bepaalde sectie
+### Voorbeeld: een groep maken voor een bepaalde sectie
 
 In het volgende codefragment ziet u het basisgebruik van het maken van een nieuwe groep.
 
@@ -229,12 +229,12 @@ A `<field>`-Tag kan de volgende kenmerken hebben:
 | `id` | Definieert de id die wordt gebruikt bij het verwijzen naar het veld. | `typeId` | vereist |
 | `translate` | Hiermee definieert u de velden die u wilt vertalen. Verlenen `label` om het label vertaalbaar te maken. Meerdere velden moeten worden gescheiden door een spatie. | `string` | optioneel |
 | `type` | Definieert het invoertype van het gerenderde HTML-element. Standaardwaarden: `text`. | `string` | optioneel |
-| `sortOrder` | Hiermee definieert u de sorteervolgorde van de sectie. Met een hoge waarde wordt de sectie onder aan de pagina geplaatst. met een lage waarde wordt de sectie naar boven verplaatst. | `float` | optioneel |
+| `sortOrder` | Hiermee definieert u de sorteervolgorde van de sectie. Met een hoge waarde wordt de sectie naar de onderkant van de pagina verplaatst en met een lage waarde wordt de sectie naar de bovenkant verschoven. | `float` | optioneel |
 | `showInDefault` | Bepaalt of het gebied in het standaardconfiguratiewerkingsgebied wordt getoond. Opgeven `1` om het veld te tonen en `0` om het veld te verbergen. | `int` | optioneel |
 | `showInStore` | Bepaalt of het gebied op archiefniveau wordt getoond. Opgeven `1` om het veld te tonen en `0` om het veld te verbergen. | `int` | optioneel |
 | `showInWebsite` | Hiermee wordt gedefinieerd of het veld op websiteniveau wordt weergegeven. Opgeven `1` om het veld te tonen en `0` om het veld te verbergen. | `int` | optioneel |
 | `canRestore` | Definieert of de standaardinstelling van het veld kan worden hersteld. | `int` | optioneel |
-| `advanced` | Vervangen vanaf 100.0.2. | `bool` | optioneel |
+| `advanced` | Vervangen vanaf 10.0.2. | `bool` | optioneel |
 | `extends` | Door een id van een ander veld op te geven, breidt de inhoud van dit knooppunt de sectie uit waarnaar u verwijst. | `string` | optioneel |
 
 ### Verwijzing naar veldtype
@@ -253,16 +253,16 @@ A `<field>`-Tag kan de volgende waarden hebben voor de `type=""` kenmerk:
 | `file` | Hiermee kan een bestand worden geüpload voor verwerking. |
 | `label` | Hiermee geeft u een label weer in plaats van een bewerkbaar veld. Gebruik dit type wanneer een veld alleen binnen een bepaald bereik kan worden bewerkt, bijvoorbeeld alleen in de weergave Winkel. |
 | `time` | Controle om tijd te plaatsen gebruikend drie dropdowns-Uur, minuut en seconde. |
-| `allowspecific` | Een multiselect overzicht van specifieke landen. Vereist een `source_model` zoals `Magento\Shipping\Model\Config\Source\Allspecificcountries` |
-| `image` | Hiermee kan een afbeelding worden geüpload. |
+| `allowspecific` | Een lijst met meerdere landen. Vereist een `source_model` zoals `Magento\Shipping\Model\Config\Source\Allspecificcountries` |
+| `image` | Hiermee kunt u een afbeelding uploaden. |
 | `note` | Hiermee kunt u een informatieve notitie aan de pagina toevoegen. Voor dit type is een `frontend_model` om de notitie te renderen. |
 
 Het is ook mogelijk een aangepast veldtype te maken. Dit wordt vaak gedaan wanneer een speciale knoop, met een actie, wordt vereist. Hiervoor zijn twee hoofdelementen nodig:
 
 - Een blok maken in het dialoogvenster `adminhtml` gebied
-- De instelling `type=""` naar het pad naar dit blok
+- De instelling van `type=""` naar het pad naar dit blok
 
-Het blok zelf vereist ten minste een `__construct` en `getElementHtml()` methode. De [Magento_OfflineShipping](https://github.com/magento/magento2/blob/2.4/app/code/Magento/OfflineShipping) is een eenvoudig voorbeeld van een aangepast type.
+Het blok zelf vereist ten minste een `__construct` methode en `getElementHtml()` methode. De [Magento_OfflineShipping](https://github.com/magento/magento2/blob/2.4/app/code/Magento/OfflineShipping) is een eenvoudig voorbeeld van een aangepast type.
 
 In de module OfflineShipping wordt bijvoorbeeld de knop Exporteren gedefinieerd in `Magento\OfflineShipping\Block\Adminhtml\Form\Field\Export` en de velddefinitie ziet er als volgt uit:
 
@@ -307,7 +307,7 @@ A `<field>`-Tag kan de volgende onderliggende elementen hebben:
 >
 >De knooppunten `more_url`, `demo_url`, `requires` en `options` worden gedefinieerd door een ander basisbetalingsmodel en worden slechts eenmaal gebruikt. Deze knooppunten kunnen niet opnieuw worden gebruikt.
 
-### Voorbeeld: Twee velden maken in een bepaalde groep
+### Voorbeeld: twee velden maken in een bepaalde groep
 
 ```xml
 <config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Config:etc/system_file.xsd">
@@ -350,11 +350,11 @@ A `<field>`-Tag kan de volgende onderliggende elementen hebben:
 
 In het bovenstaande voorbeeld worden twee velden gemaakt, zowel in de standaardweergave als in de winkelweergave zichtbaar/configureerbaar. Beide velden hebben een opmerking en knopinfo waarin het doel voor de gebruiker wordt beschreven. De `label`-node is translatable.
 Het veld met de id `ANOTHER_UNIQUE_FIELD_ID` is zichtbaar wanneer de opgegeven module in de `if_module_enabled` is globaal ingeschakeld. Het veld valideert ook de waarde ervan aan de hand van de regels `required-entry` en `no-whitespace`.
-Het veld met de id `A_UNIQUE_FIELD_ID` definieert een ander bronmodel met de volgende waarden `Yes` en `No`.
+Het veld met de id `A_UNIQUE_FIELD_ID` definieert een ander bronmodel met de volgende waarden: `Yes` en `No`.
 
 ### Gemeenschappelijke bronmodellen
 
-De volgende bronmodellen worden verstrekt door Commerce 2 Core. In het algemeen zijn er veel meer bronmodellen. in de volgende lijst worden de meest voorkomende beschreven . Houd er rekening mee dat deze bronmodellen het veldkenmerk nodig hebben `type` in te stellen op `select` om goed te werken.
+De volgende bronmodellen worden verstrekt door Commerce 2 Core. Over het algemeen zijn er veel meer bronmodellen. In de volgende lijst worden de meest voorkomende modellen beschreven. Let erop dat deze bronmodellen het veldkenmerk nodig hebben `type` in te stellen `select` om goed te werken.
 
 | Bronmodel | Beschrijving |
 |-----------------------------------------------------------|------------------------------------------------------------------------------------------------------------|
@@ -385,26 +385,26 @@ De volgende validatieregels zijn beschikbaar:
 | `integer` | Hiermee wordt een positief of negatief getal zonder decimaal getal toegestaan. |
 | `ipv4` | Staat een geldig IP v4 adres toe. |
 | `ipv6` | Hiermee wordt een geldig IP v6-adres toegestaan. |
-| `letters-only` | Hiermee worden alleen letters toegestaan. Bijvoorbeeld: `abcABC`. |
+| `letters-only` | Hiermee worden alleen letters toegestaan. Bijvoorbeeld, `abcABC`. |
 | `letters-with-basic-punc` | Hiermee worden alleen letters of interpunctie toegestaan.<br>Moet de volgende expressie doorgeven: `/^[a-z\-.,()\u0027\u0022\s]+$/i`. |
 | `mobileUK` | Hiermee wordt een (VK) mobiel telefoonnummer toegestaan. |
 | `no-marginal-whitespace` | Hiermee worden witruimten aan het begin of einde van de waarde uitgeschakeld. |
 | `no-whitespace` | Hiermee worden witruimten uitgeschakeld. |
 | `phoneUK` | Staat een (VK) telefoonaantal toe. |
 | `phoneUS` | Hiermee wordt een (Amerikaans) telefoonnummer toegestaan. |
-| `required-entry` | Hiermee wordt een lege waarde uitgeschakeld (equivalente validatie als `validate-no-empty`).<br>Foutbericht voor validatie: &quot;Dit is een verplicht veld.&quot; |
+| `required-entry` | Hiermee wordt een lege waarde uitgeschakeld (equivalente validatie als `validate-no-empty`).<br>Bericht van validatiefout: &quot;Dit is een verplicht veld.&quot; |
 | `time` | Hiermee wordt een geldige tijd in 24-uursnotatie toegestaan, tussen 00:00 en 23:59. Bijvoorbeeld `15`, `15:05` of `15:05:48`. |
 | `time12h` | Hiermee wordt een geldige tijd van 12 uur tussen 12.00 en 11 uur toegestaan:59:17:00 Bijvoorbeeld `3 am`, `11:30 pm`, `02:15:00 pm`. |
 | `validate-admin-password` | Hiermee staat u 7 of meer tekens toe, zowel numeriek als alfabetisch. |
 | `validate-alphanum-with-spaces` | Hiermee wordt het gebruik van letters (a-z of A-Z), getallen (0-9) of alleen spaties toegestaan. |
 | `validate-clean-url` | Hiermee wordt een geldige URL toegestaan. Bijvoorbeeld: `https://www.example.com` of `www.example.com`. |
 | `validate-currency-dollar` | Hiermee wordt een geldig bedrag (in dollar) toegestaan. Bijvoorbeeld $100.00. |
-| `validate-data` | Hiermee wordt het gebruik van letters (a-z of A-Z), getallen (0-9) of onderstrepingstekens (\_) alleen toegestaan.<br>Het eerste teken moet een letter zijn.<br>(Moet overeenkomen met expressie: `/^[A-Za-z]+[A-Za-z0-9_]+$/`)<br>Foutbericht voor validatie: &quot;Gebruik in dit veld alleen letters (a-z of A-Z), cijfers (0-9) of onderstrepingsteken (\_) en het eerste teken moet een letter zijn.&quot; |
+| `validate-data` | Hiermee wordt het gebruik van letters (a-z of A-Z), getallen (0-9) of onderstrepingstekens (\_) alleen toegestaan.<br>Het eerste teken moet een letter zijn.<br>(Moet overeenkomen met expressie: `/^[A-Za-z]+[A-Za-z0-9_]+$/`)<br>Bericht van validatiefout: &quot;Gebruik in dit veld alleen letters (a-z of A-Z), getallen (0-9) of onderstrepingsteken (\_) en het eerste teken moet een letter zijn.&quot; |
 | `validate-date-au` | Hiermee wordt de volgende datumnotatie ingeschakeld: dd/mm/jjjj. Bijvoorbeeld 17/03/2006 voor 17 maart 2006. |
 | `validate-email` | Hiermee wordt een geldig e-mailadres toegestaan. Bijvoorbeeld johndoe@domain.com. |
 | `validate-emailSender` | Hiermee wordt een geldig e-mailadres toegestaan. Bijvoorbeeld johndoe@domain.com. |
 | `validate-fax` | Hiermee wordt een geldig faxnummer toegestaan. Bijvoorbeeld 123-456-7890. |
-| `validate-no-empty` | Hiermee wordt een lege waarde uitgeschakeld (equivalente validatie als `requried-entry`).<br>Foutbericht voor validatie: &quot;Lege waarde.&quot; |
+| `validate-no-empty` | Hiermee wordt een lege waarde uitgeschakeld (equivalente validatie als `requried-entry`).<br>Bericht van validatiefout: &quot;Lege waarde&quot;. |
 | `validate-no-html-tags` | Hiermee wordt het gebruik van HTML-tags uitgeschakeld. |
 | `validate-password` | Hiermee worden 6 of meer tekens toegestaan. Voorloopspaties en navolgende spaties worden genegeerd. |
 | `validate-phoneLax` | Staat een geldig telefoonaantal toe. Bijvoorbeeld (123) 456-7890 of 123-456-7890. |
@@ -421,7 +421,7 @@ De volgende validatieregels zijn beschikbaar:
 
 De standaardwaarden voor velden kunnen worden ingesteld in de module `etc/config.xml` door de standaardwaarde in het dialoogvenster `section/group/field_ID` knooppunt.
 
-#### Voorbeeld: De standaardwaarde instellen voor `ANOTHER_UNIQUE_FIELD_ID` (Standaardbereik)
+#### Voorbeeld: de standaardwaarde instellen voor `ANOTHER_UNIQUE_FIELD_ID` (Standaardbereik)
 
 ```xml
 <config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Store:etc/config.xsd">
@@ -435,7 +435,7 @@ De standaardwaarden voor velden kunnen worden ingesteld in de module `etc/config
 </config>
 ```
 
-#### Voorbeeld: De standaardwaarde instellen voor `ANOTHER_UNIQUE_FIELD_ID` (Websitebereik)
+#### Voorbeeld: de standaardwaarde instellen voor `ANOTHER_UNIQUE_FIELD_ID` (Toepassingsgebied website)
 
 Met de `websites` -tag, geeft u de standaardwaarde voor een specifieke website op.
 

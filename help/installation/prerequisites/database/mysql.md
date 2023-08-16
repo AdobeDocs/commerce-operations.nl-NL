@@ -15,10 +15,10 @@ Zie [Systeemvereisten](../../system-requirements.md) voor ondersteunde versies v
 
 Adobe _krachtig_ raadt u aan de volgende standaard in acht te nemen wanneer u uw database instelt:
 
-* Adobe Commerce en Magento Open Source gebruiken [MySQL-databasetriggers](https://dev.mysql.com/doc/refman/8.0/en/triggers.html) de toegang tot de database tijdens het opnieuw indexeren te verbeteren. Deze worden gemaakt wanneer de indexeermodus is ingesteld op [schema](../../../configuration/cli/manage-indexers.md#configure-indexers). De toepassing ondersteunt geen aangepaste triggers in de database, omdat aangepaste triggers incompatibiliteiten met toekomstige Adobe Commerce- en Magento Open Source-versies kunnen introduceren.
-* U vertrouwd maken met [Deze potentiële MySQL triggerbeperkingen](https://dev.mysql.com/doc/mysql-reslimits-excerpt/8.0/en/stored-program-restrictions.html) voordat u verdergaat.
+* Adobe Commerce en gebruik van Magento Open Source [MySQL-databasetriggers](https://dev.mysql.com/doc/refman/8.0/en/triggers.html) de toegang tot de database tijdens het opnieuw indexeren te verbeteren. Deze worden gemaakt wanneer de indexeermodus is ingesteld op [schema](../../../configuration/cli/manage-indexers.md#configure-indexers). De toepassing ondersteunt geen aangepaste triggers in de database, omdat aangepaste triggers incompatibiliteiten met toekomstige Adobe Commerce- en Magento Open Source-versies kunnen introduceren.
+* Verken uzelf met [Deze potentiële MySQL triggerbeperkingen](https://dev.mysql.com/doc/mysql-reslimits-excerpt/8.0/en/stored-program-restrictions.html) voordat u verdergaat.
 * Om uw houding van de gegevensbestandveiligheid te verbeteren, laat toe [`STRICT_ALL_TABLES`](https://dev.mysql.com/doc/refman/5.7/en/sql-mode.html#sqlmode_strict_all_tables) SQL-modus om te voorkomen dat ongeldige gegevenswaarden worden opgeslagen, wat tot ongewenste databaseinteracties kan leiden.
-* Adobe Commerce en Magento Open Source do _niet_ op instructies gebaseerde replicatie van MySQL ondersteunen. Zorg ervoor dat u _alleen_ [op rijen gebaseerde replicatie](https://dev.mysql.com/doc/refman/8.0/en/replication-formats.html).
+* Adobe Commerce en Magento Open Source doen _niet_ op instructies gebaseerde replicatie van MySQL ondersteunen. Zorg ervoor dat u _alleen_ [op rijen gebaseerde replicatie](https://dev.mysql.com/doc/refman/8.0/en/replication-formats.html).
 
 >[!WARNING]
 >
@@ -49,7 +49,7 @@ Om naar keuze de waarde te verifiëren die u plaatst, ga het volgende bevel bij 
 SHOW VARIABLES LIKE 'max_allowed_packet';
 ```
 
-Vervolgens [De database-instantie configureren](#configuring-the-database-instance).
+Dan, [De database-instantie configureren](#configuring-the-database-instance).
 
 ## Wijzigingen in MySQL 8
 
@@ -58,7 +58,7 @@ Deze sectie beschrijft belangrijke veranderingen in MySQL 8 die de ontwikkelaars
 
 ### Verwijderde breedte voor typen gehele getallen (opvulling)
 
-De weergavebreedtespecificatie voor gegevenstypen met gehele getallen (TINYINT, SMALLINT, MEDIUMINT, INT, BIGINT) is afgekeurd in MySQL 8.0.17. Instructies die definities van gegevenstypen in de uitvoer bevatten, geven niet langer de weergavebreedte voor typen gehele getallen weer, behalve voor TINYINT(1). MySQL-connectors gaan ervan uit dat TINYINT(1)-kolommen als BOOLEAN-kolommen zijn ontstaan. Deze uitzondering stelt hen in staat om die veronderstelling te blijven maken.
+De specificatie van de vertoningsbreedte voor geheelgegevenstypes (TINYINT, SMALLINT, MEDIUMINT, INT, BIGINT) is verouderd in MySQL 8.0.17. Instructies die definities van gegevenstypen in de uitvoer bevatten, geven niet langer de weergavebreedte voor typen gehele getallen weer, behalve voor TINYINT(1). MySQL-connectors gaan ervan uit dat TINYINT(1)-kolommen als BOOLEAN-kolommen zijn ontstaan. Deze uitzondering stelt hen in staat om die veronderstelling te blijven maken.
 
 #### Voorbeeld
 
@@ -67,15 +67,15 @@ Beschrijf admin_user op mysql 8.19
 | Veld | Type | Null | Sleutel | Standaard | Extra |
 | :--- | :--- | :--- | :--- | :--- | :--- |
 | user\_id | `int unsigned` | NEE | PRI | `NULL` | `auto_increment` |
-| `firstname` | `varchar(32)` | JA |  | `NULL` |  |
-| `lastname` | `varchar(32`) | JA |  | `NULL` |  |
-| `email` | `varchar(128)` | JA |  | `NULL` |  |
-| `username` | `varchar(40)` | JA | UNI | `NULL` |  |
-| `password` | `varchar(255)` | NEE |  | `NULL` |  |
-| `created` | `timestamp` | NEE |  | `CURRENT_TIMESTAMP` | `DEFAULT_GENERATED` |
-| `modified` | `timestamp` | NEE |  | `CURRENT_TIMESTAMP` | `DEFAULT_GENERATED` bij update `CURRENT_TIMESTAMP` |
-| `logdate` | `timestamp` | JA |  | `NULL` |  |
-| `lognum` | `smallint unsigned` | NEE |  | `0` |  |
+| `firstname` | `varchar(32)` | JA | | `NULL` | |
+| `lastname` | `varchar(32`) | JA | | `NULL` | |
+| `email` | `varchar(128)` | JA | | `NULL` | |
+| `username` | `varchar(40)` | JA | UNI | `NULL` | |
+| `password` | `varchar(255)` | NEE | | `NULL` | |
+| `created` | `timestamp` | NEE | | `CURRENT_TIMESTAMP` | `DEFAULT_GENERATED` |
+| `modified` | `timestamp` | NEE | | `CURRENT_TIMESTAMP` | `DEFAULT_GENERATED` bij update `CURRENT_TIMESTAMP` |
+| `logdate` | `timestamp` | JA | | `NULL` | |
+| `lognum` | `smallint unsigned` | NEE | | `0` | |
 
 Met uitzondering van _TINYINT(1)_, moet alle opvulling van gehele getallen (TINYINT > 1, SMALLINT, MEDIUMINT, INT, BIGINT) worden verwijderd uit de `db_schema.xml` bestand.
 
@@ -84,7 +84,7 @@ Zie voor meer informatie [https://dev.mysql.com/doc/relnotes/mysql/8.0/en/news-8
 ### Standaardvolgorde OP, gedrag
 
 Vóór 8.0 werden items gesorteerd op de buitenlandse sleutel. De standaardsorteervolgorde is afhankelijk van de gebruikte engine.
-Geef altijd een sorteervolgorde op als uw code afhankelijk is van een specifieke sortering.
+Geef altijd een sorteervolgorde op als de code afhankelijk is van een specifieke sortering.
 
 ### Vervangen ASC- en DESC-kwalificatietoetsen voor GROUP BY
 
@@ -96,7 +96,7 @@ Er zijn enkele wijzigingen aangebracht in Adobe Commerce en Magento Open Source 
 
 ### Werking query en invoegen
 
-Adobe Commerce en Magento Open Source hebben het normale validatiegedrag uitgeschakeld door SET SQL_MODE=&#39; in te stellen in `/lib/internal/Magento/Framework/DB/Adapter/Pdo/Mysql.php:424.`. Als validatie is uitgeschakeld, is het mogelijk dat MySQL gegevens afkapt. In MySQL is het gedrag Query gewijzigd: `Select * on my_table where IP='127.0.0.1'` retourneert niet langer resultaten omdat het IP-adres nu correct als een tekenreeks wordt beschouwd in plaats van als een geheel getal.
+Adobe Commerce en Magento Open Source hebben het normale validatiegedrag uitgeschakeld door SQL_MODE=&#39; in te stellen in `/lib/internal/Magento/Framework/DB/Adapter/Pdo/Mysql.php:424.`. Als validatie is uitgeschakeld, is het mogelijk dat MySQL gegevens afkapt. In MySQL is het gedrag Query gewijzigd: `Select * on my_table where IP='127.0.0.1'` retourneert niet langer resultaten omdat het IP-adres nu correct als een tekenreeks wordt beschouwd in plaats van als een geheel getal.
 
 ## Upgrade uitvoeren van MySQL 5.7 naar MySQL 8
 
@@ -192,7 +192,7 @@ Om een MySQL gegevensbestandinstantie te vormen:
 
 >[!NOTE]
 >
->De `explicit_defaults_for_timestamp` instelling is vervangen. Deze instelling bestuurt verouderde TIMESTAMP-gedragingen die in een toekomstige MySQL-release zullen worden verwijderd. Wanneer deze gedragingen worden verwijderd, worden de `explicit_defaults_for_timestamp` de instelling wordt ook verwijderd.
+>De `explicit_defaults_for_timestamp` deze instelling is vervangen. Deze instelling bestuurt verouderde TIMESTAMP-gedragingen die in een toekomstige MySQL-release zullen worden verwijderd. Wanneer deze gedragingen worden verwijderd, worden de `explicit_defaults_for_timestamp` de instelling wordt ook verwijderd.
 
 >[!WARNING]
 >

@@ -11,7 +11,7 @@ ht-degree: 0%
 
 # Adobe Commerce bèta-releases
 
-Vanaf juni 2023 zal Adobe openbare bèta&#39;s voor patchreleases (bètareleases) publiceren. De bètareleases zijn beschikbaar voor alle Adobe Commerce-klanten en -partners voordat ze algemeen beschikbaar zijn (GA) en omvatten oplossingen voor beveiliging, naleving, prestaties en hoge prioriteit.
+Vanaf juni 2023 zal de Adobe openbare bèta&#39;s voor patchreleases (bètareleases) publiceren. De bètareleases zijn beschikbaar voor alle Adobe Commerce-klanten en -partners voordat ze algemeen beschikbaar zijn (GA) en omvatten oplossingen voor beveiliging, naleving, prestaties en hoge prioriteit.
 
 >[!IMPORTANT]
 >
@@ -19,18 +19,18 @@ Vanaf juni 2023 zal Adobe openbare bèta&#39;s voor patchreleases (bètareleases
 
 ## Geen inhoud
 
-Elke Adobe Commerce beta-release bevat alle wijzigingen die op de geplande releasedatum aan de Adobe Commerce Core-code zijn geleverd, inclusief maar niet beperkt tot de volgende functionele gebieden:
+Elke Adobe Commerce beta-release bevat alle wijzigingen die op de geplande releasedatum aan de Adobe Commerce Core-code zijn geleverd, inclusief, maar niet beperkt tot, de volgende functionele gebieden:
 
 - Laatste beveiligingsoplossingen
 - Prestatieverbeteringen
 - GraphQL-verbeteringen
-- Oplossingen voor algemene problemen
+- Oplossingen voor algemene problemen met kwaliteit
 - Communautaire bijdragen
 - Wijzigingen die vereist zijn ter ondersteuning van compatibiliteit met [Adobe Commerce-services](https://experienceleague.adobe.com/docs/commerce-merchant-services/user-guides/home.html)
 
 ## Naamgevingsconventie en -schema
 
-Adobe geeft twee keer per jaar bètapatches af. De eerste bètapatch wordt doorgaans drie maanden na de algemene beschikbaarheid van een nieuwe hoofdpatchrelease uitgebracht.
+Adobe geeft twee keer per jaar bètapatches uit. De eerste bètapatch wordt doorgaans drie maanden na de algemene beschikbaarheid van een nieuwe hoofdpatchrelease uitgebracht.
 
 Beta-releasepakketten hebben een `-betaX` achtervoegsel. Voor de release van Adobe Commerce 2.4.7 beta wordt bijvoorbeeld de volgende naamgevingsconventie gebruikt:
 
@@ -47,7 +47,7 @@ Terwijl de dingen kunnen veranderen, zal het in dienst nemen van de bètaversies
 
 ## Toegang tot bètaversie
 
-Adobe Commerce beta-releases worden op dezelfde manier gedistribueerd als elke andere Adobe Commerce patch-release: als Composer-metapakketten op `https://repo.magento.com`. De broncode is beschikbaar op [GitHub](https://github.com/magento/magento2).
+Adobe Commerce beta-releases worden op dezelfde manier gedistribueerd als elke andere Adobe Commerce patch-release: zoals Composer-metapakketten op `https://repo.magento.com`. De broncode is beschikbaar op [GitHub](https://github.com/magento/magento2).
 
 Zie [Snelle start voor installatie van composer](../installation/composer.md) voor meer informatie .
 

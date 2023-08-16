@@ -34,7 +34,7 @@ Wanneer het selecteren van een derdeleverancier, zouden de ondernemingen een een
 ## Gemeenschappelijke derde integratie voor de plaatsen van de Handel
 
 - Boekhoudsoftware
-- ERP-systeem
+- ERP
 - Product Information Management (PIM)
 - Financiën
 - Betalingswegen

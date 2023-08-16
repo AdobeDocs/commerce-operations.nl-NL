@@ -33,17 +33,17 @@ U kunt de zelfde procedure gebruiken om het even welke montages in de volgende v
 
 Voordat u begint, stelt u de machtigingen en het eigendom van het bestandssysteem in zoals beschreven in [Vereiste voor ontwikkeling, bouw, en productiesystemen](../deployment/prerequisites.md).
 
-## Aannames
+## Veronderstellingen
 
 Dit onderwerp verstrekt een voorbeeld om de configuratie van het productiesysteem te wijzigen. U kunt desgewenst verschillende configuratieopties kiezen.
 
-In dit voorbeeld gaan we ervan uit dat:
+In dit voorbeeld gaan we uit van het volgende:
 
 - U gebruikt Git-bronbesturingselement
 - Het ontwikkelingssysteem is beschikbaar in een Git-opslagplaats op afstand met de naam `mconfig`
 - Uw Git-werkvertakking krijgt de naam `m2.2_deploy`
 
-## Stap 1: De configuratie instellen in het ontwikkelingssysteem
+## Stap 1: Plaats de configuratie in het ontwikkelingssysteem
 
 U kunt als volgt de standaardwaarden voor landinstelling en gewicht in uw ontwikkelingssysteem instellen:
 
@@ -60,7 +60,7 @@ U kunt als volgt de standaardwaarden voor landinstelling en gewicht in uw ontwik
 1. Klikken **Config opslaan**.
 1. Gebruik de **Winkelweergave** te selecteren **Standaardconfiguratie** zoals het volgende cijfer toont.
 
-   ![Overschakelen naar de standaardconfiguratie](../../assets/configuration/split-deploy-default-config.png)
+   ![Naar de standaardconfiguratie schakelen](../../assets/configuration/split-deploy-default-config.png)
 
 1. Klik in de linkernavigatie onder Algemeen op **Contactpersonen**.
 1. Wis de **Standaardinstellingen gebruiken** selectievakje naast **E-mails verzenden naar** veld.
@@ -71,9 +71,9 @@ U kunt als volgt de standaardwaarden voor landinstelling en gewicht in uw ontwik
 1. Wis de **Systeemwaarde gebruiken** selectievakje naast **Standaard-e-maildomein** veld.
 1. Voer een domeinnaam in het veld in.
 1. Klikken **Config opslaan**.
-1. Maak desgevraagd de cache leeg.
+1. Maak de cache leeg als daarom wordt gevraagd.
 
-## Stap 2: De configuratie bijwerken
+## Stap 2: Werk de configuratie bij
 
 Nu u de configuratie in Admin hebt veranderd, schrijf de gedeelde configuratie aan een dossier zoals die in deze sectie wordt besproken.
 
@@ -81,7 +81,7 @@ Nu u de configuratie in Admin hebt veranderd, schrijf de gedeelde configuratie a
 
 Houd er rekening mee dat `app/etc/env.php` (de systeem-specifieke configuratie) werd bijgewerkt, controleer het niet aan broncontrole. U zult de zelfde configuratiemontages op uw productiesysteem later in deze procedure tot stand brengen.
 
-## Stap 3: Uw constructiesysteem bijwerken en bestanden genereren
+## Stap 3: Werk uw bouwstijlsysteem bij en produceer dossiers
 
 Nu u uw veranderingen in de gedeelde configuratie aan broncontrole hebt geëngageerd, kunt u die veranderingen in uw bouwstijlsysteem trekken, code compileren, en statische dossiers produceren. De laatste stap is om die veranderingen in uw productiesysteem te trekken.
 
@@ -100,20 +100,20 @@ Als u de gevoelige en systeemspecifieke instellingen wilt instellen met omgeving
 
 - Bereik voor elke instelling
 
-   Als u de instructies in Stap 1 volgde, is het werkingsgebied voor het verzenden van e-mails naar globaal (namelijk het werkingsgebied Standaard Config) en het werkingsgebied voor Standaard e-maildomein is website.
+  Als u de instructies in Stap 1 volgde, is het werkingsgebied voor het verzenden van e-mails naar globaal (namelijk het werkingsgebied Standaard Config) en het werkingsgebied voor Standaard e-maildomein is website.
 
-   U moet de code van de website kennen om de configuratiewaarde van het StandaardE-maildomein te plaatsen. Zie [Omgevingsvariabelen gebruiken om configuratie-instellingen te overschrijven](../reference/override-config-settings.md#environment-variables) voor meer informatie over het vinden ervan .
+  U moet de code van de website kennen om de configuratiewaarde van het StandaardE-maildomein te plaatsen. Zie [Omgevingsvariabelen gebruiken om configuratie-instellingen te overschrijven](../reference/override-config-settings.md#environment-variables) voor meer informatie over het vinden ervan .
 
 - Configuratiepad voor elke instelling
 
-   De configuratiepaden die in dit voorbeeld worden gebruikt, zijn als volgt:
+  De configuratiepaden in dit voorbeeld zijn als volgt:
 
-   | Naam instellen | Configuratiepad |
-   |--------------|--------------|
-   | E-mails verzenden naar | `contact/email/recipient_email` |
-   | Standaard-e-maildomein | `customer/create_account/email_domain` |
+  | Naam instellen | Configuratiepad |
+  |--------------|--------------|
+  | E-mails verzenden naar | `contact/email/recipient_email` |
+  | Standaard-e-maildomein | `customer/create_account/email_domain` |
 
-   U kunt alle gevoelige en systeemspecifieke configuratiewegen in vinden [Verwijzing naar gevoelige en systeemspecifieke configuratiepaden](../reference/config-reference-sens.md).
+  U kunt alle gevoelige en systeemspecifieke configuratiewegen in vinden [Verwijzing naar gevoelige en systeemspecifieke configuratiepaden](../reference/config-reference-sens.md).
 
 #### Configuratiepaden omzetten in variabelenamen
 
@@ -194,6 +194,6 @@ Deze sectie bespreekt hoe u de configuratiemontages in uw Admin van het producti
 1. Klik in het linkerdeelvenster op Klanten > **Klantconfiguratie**.
 1. Vouw in het rechterdeelvenster uit **Nieuwe accountopties maken**.
 
-   De waarde van de **Standaard-e-maildomein** wordt als volgt weergegeven. Dit is een systeemspecifieke instelling.
+   De waarde van **Standaard-e-maildomein** wordt als volgt weergegeven. Dit is een systeemspecifieke instelling.
 
    ![Instellingen controleren in het productiesysteem](../../assets/configuration/split-default-domain.png)

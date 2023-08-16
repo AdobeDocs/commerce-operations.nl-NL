@@ -15,8 +15,8 @@ ht-degree: 0%
 Bij het implementeren van statische weergavebestanden kunt u een van de drie beschikbare strategieën kiezen. Elk van hen verstrekt optimale plaatsingsresultaten voor verschillende gebruiksgevallen:
 
 - [Standaard](#standard-strategy): het reguliere implementatieproces.
-- [Snel](#quick-strategy) (_default_): Minimaliseert de tijd die voor plaatsing wordt vereist wanneer de dossiers voor meer dan één scène worden opgesteld.
-- [Compact](#compact-strategy): Hiermee minimaliseert u de ruimte die door de gepubliceerde weergavebestanden wordt ingenomen.
+- [Snel](#quick-strategy) (_default_): minimaliseert de tijd die nodig is voor de implementatie wanneer bestanden voor meerdere landinstellingen worden geïmplementeerd.
+- [Compact](#compact-strategy)Met : wordt de ruimte die door de gepubliceerde weergavebestanden wordt ingenomen, geminimaliseerd.
 
 In de volgende secties worden de implementatiedetails en -kenmerken van elke strategie beschreven.
 
@@ -33,7 +33,7 @@ De snelle strategie voert de volgende acties uit:
 1. Voor elk thema wordt één willekeurige landinstelling gekozen en worden alle bestanden voor deze landinstelling geïmplementeerd, zoals in de standaardstrategie.
 1. Voor alle andere landinstellingen van het thema:
 
-   1. Bestanden die de geïmplementeerde landinstelling overschrijven, worden gedefinieerd en geïmplementeerd.
+   1. De dossiers die de opgestelde scène met voeten treden worden bepaald en opgesteld.
    1. Alle andere bestanden worden beschouwd als vergelijkbaar voor alle landinstellingen en worden gekopieerd van de geïmplementeerde landinstelling.
 
 >[!INFO]
@@ -46,9 +46,9 @@ Deze benadering minimaliseert de plaatsingstijd die voor veelvoudige scènes wor
 
 Met de compacte strategie vermijdt u dubbele bestanden door vergelijkbare bestanden op te slaan in `base` submappen.
 
-Voor het meest geoptimaliseerde resultaat worden drie bereiken voor mogelijke gelijkenis toegewezen: gebied, thema en landinstelling. De `base` subdirectory&#39;s worden gemaakt voor alle combinaties van deze bereiken.
+Voor het geoptimaliseerde resultaat worden drie bereiken voor mogelijke gelijkenis toegewezen: gebied, thema en landinstelling. De `base` subdirectory&#39;s worden gemaakt voor alle combinaties van deze bereiken.
 
-De bestanden worden volgens de volgende patronen naar deze submappen geïmplementeerd.
+De bestanden worden op basis van de volgende patronen naar deze submappen geïmplementeerd.
 
 | Patroon | Beschrijving |
 | ------- | ----------- |

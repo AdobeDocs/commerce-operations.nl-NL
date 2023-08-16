@@ -22,7 +22,7 @@ Wanneer u de overstap naar een e-commerceplatform als Adobe Commerce overweegt, 
 
 Wanneer u niet met Adobe Commerce gaat op cloudinfrastructuur, zijn de gebruikte termen zelfhosting of on-premise, of zelfs on-prem wordt gebruikt. Op-gebouw betekent niet alleen in een datacenter in een gebouw dat eigendom is van een bedrijf. Deze term staat voor alles wat Adobe Commerce op zijn infrastructuur niet beheert. Er zijn hostingbedrijven die zich bezighouden met Adobe Commerce, maar die worden ook beschouwd als zelfstandige of on-prem.
 
-Voor Adobe Commerce en Magento Open-source werken de meeste adviezen en tips voor beide versies. Hoewel het niet direct kan aangeven, is de verwachting dat het voor beide van toepassing is. Binnen dit onderwerp van zelf-ontvangende opties voor Adobe Commerce, worden beide versies overwogen. En tot slot zijn de meeste onderwerpen relevant voor [Adobe Commerce over cloudinfrastructuur](https://experienceleague.adobe.com/docs/commerce-learn/tutorials/getting-started/cloud/1-overview.html){target="_blank"} is geselecteerd als de hostingprovider.
+Wat Adobe Commerce en Magento Open-source betreft, werken de meeste adviezen en tips voor beide versies. Hoewel het niet direct kan aangeven, is de verwachting dat het voor beide van toepassing is. Binnen dit onderwerp van zelf-ontvangende opties voor Adobe Commerce, worden beide versies overwogen. En tot slot zijn de meeste onderwerpen relevant voor [Adobe Commerce over cloudinfrastructuur](https://experienceleague.adobe.com/docs/commerce-learn/tutorials/getting-started/cloud/1-overview.html){target="_blank"} is geselecteerd als de hostingprovider.
 
 ## Vastgestelde terminalniveau
 
@@ -44,7 +44,7 @@ De volgende termijnen worden algemeen gebruikt door de artikelen van het Experie
 
 * **Distributed Denial of Service** (DDoS) is een methode van aanval om de servers die de website leiden te dwingen om met vals verzoeken met genoeg volume worden verbruikt dat zij niet meer op wettig verzoek kunnen antwoorden.
 
-## Wat nu?
+## Wat is de volgende?
 
 Deze onderwerpen staan niet in een speciale volgorde of volgorde. Ze zijn bedoeld om gesprekspartners te voorzien van een DevOps-engineer, de Commerce Architect, en iedereen die betrokken is bij het nemen van deze belangrijke beslissing over waar en hoe Adobe Commerce moet worden gehost.
 

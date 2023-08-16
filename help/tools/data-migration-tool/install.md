@@ -1,6 +1,6 @@
 ---
 title: Installeer de [!DNL Data Migration Tool]
-description: Leer hoe u de [!DNL Data Migration Tool] gegevens tussen Magento 1 en Magento 2 over te dragen.
+description: Leer hoe u de [!DNL Data Migration Tool] gegevens over te dragen tussen Magento 1 en Magento 2.
 exl-id: 5f57067b-3ce8-4b51-b9ae-f60ae089c4ba
 topic: Commerce, Migration
 feature: Configuration, Install
@@ -22,14 +22,14 @@ Zorg ervoor dat u *dezelfde uitgebrachte versie* van zowel Magento 2 als [!DNL D
 
 ## Uw versie controleren
 
-U kunt de volgende methoden gebruiken om uw versie van Magento te verifiëren:
+U kunt als volgt uw versie van het Magento controleren:
 
 - [Composer](#composer-metapackage)
 - [GitHub-opslagplaats](#github-repository)
 
 ### Composer-pakket
 
-Als u de Magento-software hebt gedownload met een Composer-metapakket, voert u de volgende opdracht in:
+Als u de software van het Magento gebruikend een pakket Composer hebt gedownload, ga het volgende bevel in:
 
 ```bash
 php <magento_root>/bin/magento --version
@@ -37,7 +37,7 @@ php <magento_root>/bin/magento --version
 
 ### GitHub-opslagplaats
 
-Als u de Magento 2 bewaarplaats GitHub kloond, ga de volgende bevelen in:
+Als u Magento 2 de bewaarplaats GitHub kloond, ga de volgende bevelen in:
 
 ```bash
 cd <your Magento 2 clone directory>
@@ -47,9 +47,9 @@ cd <your Magento 2 clone directory>
 git branch
 ```
 
-Als u momenteel in `develop` vertakt, moet u in [vrijgegeven vertakking](https://developer.adobe.com/commerce/contributor/guides/install/change-version/) voordat u verdergaat.
+Als u momenteel in `develop` vertakt, moet u in [vrijgegeven afdeling](https://developer.adobe.com/commerce/contributor/guides/install/change-version/) voordat u verdergaat.
 
-Als u de Adobe Commerce- of Magento Open Source-software nog niet hebt geïnstalleerd, [nu installeren](../../installation/prerequisites/commerce.md).
+Als u nog geen Adobe Commerce of Magento Open Source software hebt geïnstalleerd, [nu installeren](../../installation/prerequisites/commerce.md).
 Als u de bewaarplaats GitHub kloont, zorg ervoor u een versiemarkering zoals besproken in controleert [(Medewerker) Kloon de GitHub-opslagplaats](https://developer.adobe.com/commerce/contributor/guides/install/clone-repository/).
 
 ## Gepubliceerde versies van [!DNL Data Migration Tool]
@@ -66,11 +66,11 @@ U kunt de [!DNL Data Migration Tool] van:
 Controleer voordat u gaat installeren of:
 
 - Alle taken die in de [Voorwaarden](prerequisites.md) sectie
-- [De versie is geverifieerd](install.md#check-your-version) van de Magento 2-software
+- [De versie is geverifieerd](install.md#check-your-version) van de software van Magento 2
 
 ### Installeren vanaf `repo.magento.com`
 
-Als u het dialoogvenster [!DNL Data Migration Tool], moet u bijwerken `composer.json` in de hoofdinstallatiemap van de Magento om de locatie van de [!DNL Data Migration Tool] pakket.
+Als u het dialoogvenster [!DNL Data Migration Tool], moet u bijwerken `composer.json` in de hoofdinstallatiemap van het Magento om de locatie van de [!DNL Data Migration Tool] pakket.
 
 1. Meld u aan bij de toepassingsserver als of schakel over naar de [eigenaar van bestandssysteem](../../installation/prerequisites/file-system/overview.md).
 1. Wijzig de hoofdmap van de toepassing.

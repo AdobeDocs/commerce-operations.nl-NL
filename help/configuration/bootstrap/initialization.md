@@ -19,19 +19,19 @@ Om de toepassing van de Handel in werking te stellen, worden de volgende acties 
 - Maak een instantie van een Commerce-toepassing: [\Magento\Framework\AppInterface][app-face]
 - Commerce uitvoeren
 
-## Bootstrap-logica
+## Bootstrap run logic
 
 [Het bootstrap-object][bootinitial] gebruikt het volgende algoritme om de toepassing van de Handel in werking te stellen:
 
 1. Initialiseert de fouthandler.
 1. Hiermee maakt u de [objectbeheer][object] en gedeelde basisdiensten die overal worden gebruikt en door het milieu worden beïnvloed. De omgevingsparameters worden op de juiste wijze in deze objecten geïnjecteerd.
-1. Hiermee wordt bevestigd dat de onderhoudsmodus _niet_ ingeschakeld; anders, beëindigt.
-1. bevestigt dat de toepassing Commerce is geïnstalleerd; anders, beëindigt.
+1. Hiermee wordt bevestigd dat de onderhoudsmodus _niet_ enabled; anders, eindigt.
+1. Bevestigt dat de toepassing van de Handel geïnstalleerd is; anders, beëindigt.
 1. Start de toepassing Commerce.
 
    Alle niet-afgevangen uitzonderingen tijdens het starten van de toepassing worden automatisch doorgestuurd naar de afdeling Handel in het dialoogvenster `catchException()` methode die u kunt gebruiken om de uitzondering af te handelen. Deze moet ofwel `true` of `false`:
 
-   - Indien `true`: De handel behandelde met succes uitzondering. U hoeft niets anders te doen.
+   - Indien `true`: Handel heeft de uitzondering met succes afgehandeld. U hoeft niets anders te doen.
    - Indien `false`: (of een ander leeg resultaat) De uitzondering is niet door de Handel afgehandeld. Het bootstrap-object voert de standaardsubroutine voor de afhandeling van uitzonderingen uit.
 
 1. Verstuurt de reactie die door het toepassingsobject wordt geboden.
@@ -82,7 +82,7 @@ Wij hebben de volgende toepassingen van het ingangspunt (die, toepassingen door 
       - Als de toepassing van de Handel niet geïnstalleerd is, richt aan de Tovenaar van de Opstelling opnieuw.
       - Als de toepassing van de Handel geïnstalleerd is, toon een fout en de statuscode 500 van HTTP (de Interne Fout van de Server).
    1. Als de toepassing van de Handel op onderhoudswijze is, toon een gebruikersvriendelijke &quot;Dienst niet beschikbaar&quot;landingspagina met de statuscode van HTTP 503 (de Dienst niet beschikbaar).
-   1. Als de aanvraag voor de handel _niet_ geïnstalleerd, omleiding naar de wizard Setup.
+   1. Als de aanvraag voor de handel _niet_ geïnstalleerd, omleiding naar de Tovenaar van de Opstelling.
    1. Als de sessie ongeldig is, leidt u deze om naar de startpagina.
    1. Als er een andere toepassingsinitialisatiefout is, geeft u een gebruikersvriendelijke pagina &quot;Pagina niet gevonden&quot; weer met HTTP-statuscode 404 (Niet gevonden).
    1. Voor een andere fout, toon een gebruikersvriendelijke &quot;Dienst niet beschikbaar&quot;pagina met reactie 503 van HTTP en produceer een foutenrapport en toon zijn identiteitskaart op de pagina.
@@ -101,7 +101,7 @@ Wanneer het verzoek aan het ingangspunt opnieuw wordt gericht, ontleedt de toepa
 - In [ontwikkelaar](application-modes.md#developer-mode) in de modus, wordt de inhoud van het bestand geretourneerd, zodat de geretourneerde inhoud bijgewerkt is wanneer de bron wordt opgevraagd.
 - In [default](application-modes.md#default-mode) in de modus, wordt de opgehaalde bron gepubliceerd zodat deze toegankelijk is via de eerder aangevraagde URL.
 
-   Alle toekomstige verzoeken om het statische middel worden verwerkt door de server het zelfde als statische dossiers; dat wil zeggen, zonder daarbij het ingangspunt te betrekken. Als gepubliceerde bestanden moeten worden gesynchroniseerd met de originele bestanden, worden de `pub/static` directory moet worden verwijderd; als gevolg hiervan worden bestanden automatisch opnieuw gepubliceerd met de volgende aanvraag.
+  Alle toekomstige verzoeken om het statische middel worden verwerkt door de server het zelfde als statische dossiers; namelijk zonder het ingangspunt te impliceren. Als gepubliceerde bestanden moeten worden gesynchroniseerd met de originele bestanden, worden de `pub/static` directory moet worden verwijderd, waardoor bestanden automatisch opnieuw worden gepubliceerd met het volgende verzoek.
 
 ### Invoerpunt van mediabron
 

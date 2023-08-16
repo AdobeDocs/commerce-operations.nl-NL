@@ -16,7 +16,7 @@ Een implementatie van eCommerce is evolutie-het is nooit echt gebeëindigd. Uw b
 - Snellere toegang tot innovatieve functies die worden geleverd als SaaS-services
 - Eenvoudiger en voordeliger onderhoud en upgrades
 - Doorlopende flexibiliteit en aanpassing om aan unieke bedrijfsbehoeften te voldoen
-- Aanzienlijke prestatieverbeteringen en schaalbaarheid
+- Aanzienlijke verbeteringen in prestaties en schaalbaarheid
 - Betere ontwikkelaarservaring en beter gereedschap
 - Vermogen om dieper met andere toepassingen van Adobe Experience Cloud te integreren
 

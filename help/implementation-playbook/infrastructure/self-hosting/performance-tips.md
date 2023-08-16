@@ -36,11 +36,11 @@ Door een goede oplossing voor uw project betreffende Varnish te kiezen, plaatst 
 
 ## CDN
 
-Naast Varnish die een waardevol goed voor uw Adobe Commerce-project zijn, is daarna een CDN. Samen met uw Varnish kan een CDN caching instanties voor uw CSS verstrekken, pagina activa zoals beelden helpen bandbreedte verminderen die aan uw toepassing van Adobe Commerce komt. Het kan GraphQL-antwoorden in de cache plaatsen om de voordelen van een Adobe Commerce-site zonder kop te verbeteren. Sommige CDN&#39;s bieden optimalisatie van afbeeldingen, een webtoepassingsfirewall en andere functies.
+Naast Varnish die een waardevol goed voor uw Adobe Commerce-project zijn, is daarna een CDN. Samen met uw Varnish kan een CDN caching instanties voor uw CSS verstrekken, pagina activa zoals beelden helpen bandbreedte verminderen die aan uw toepassing van Adobe Commerce komt. Het kan GraphQL-antwoorden in de cache plaatsen om de voordelen van een Adobe Commerce-site zonder koppen te vergroten. Sommige CDN&#39;s bieden optimalisatie van afbeeldingen, een webtoepassingsfirewall en andere functies.
 
-Adobe Commerce op cloud koos ervoor om Fastly te gebruiken voor de Varnish cache, maar ook als CDN. Deze enkele oplossing biedt een groot aantal functies die een geweldige ervaring bieden voor de Adobe Commerce op cloudklanten. U kunt het Snelle overzicht van de diensten in Experience League lezen [Overzicht van snelle services](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/cdn/fastly.html){target="_blank"}
+Adobe Commerce op cloud koos ervoor om Fastly te gebruiken voor zijn Varnish cache, maar ook als zijn CDN. Deze enkele oplossing biedt een groot aantal functies die een geweldige ervaring bieden voor de Adobe Commerce op cloudklanten. U kunt het Snelle overzicht van de diensten in Experience League lezen [Overzicht van snelle services](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/cdn/fastly.html){target="_blank"}
 
-Een CDN biedt geoptimaliseerde en veilige leveringsinhoud voor het Adobe Commerce-project. Als dit geen vereist onderdeel voor uw project is, moet u dit in overweging nemen omdat uw site steeds groter wordt en het aantal bezoekers toeneemt. Door een CDN op te geven, kunt u het toevoegen van extra hardware aan de infrastructuur vertragen of de bestaande infrastructuur schalen vanwege de belasting die uit elke aanvraag is verwijderd.
+Een CDN biedt geoptimaliseerde en veilige leveringsinhoud voor het Adobe Commerce-project. Als dit geen vereist onderdeel voor uw project is, moet u dit in overweging nemen omdat uw site steeds rijker wordt en het aantal bezoekers toeneemt. Door een CDN op te geven, kunt u het toevoegen van extra hardware aan de infrastructuur vertragen of de bestaande infrastructuur schalen vanwege de belasting die uit elke aanvraag is verwijderd.
 
 ## Modules uitschakelen
 

@@ -23,7 +23,7 @@ De [!DNL Extensions] in de [!DNL Site-Wide Analysis Tool] verstrekt informatie o
 
 * Informatie opvragen over de geïnstalleerde versies [!DNL extensions] en deze bij te werken naar de meest recente versies.
 
-## Aanbevolen werkwijzen
+## Aanbevolen procedures
 
 * Houd uw derde partij [!DNL extensions] up-to-date aan hun recentste versies.
 

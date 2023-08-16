@@ -88,9 +88,9 @@ Als u de extensie hebt geïnstalleerd en geconfigureerd met een bestaande API-sl
 
    >[!NOTE]
    >
-   > Als u problemen hebt met het openen van uw account, raadpleegt u [Aanmelden bij Adobe Commerce-ondersteuning of cloudaccount is niet mogelijk](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/unable-to-log-in-to-support-or-cloud-project.html) voor hulp bij het oplossen van problemen.
+   > Als u problemen hebt met het openen van uw account, raadpleegt u [Kan niet aanmelden bij Adobe Commerce-ondersteuning of cloudaccount](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/unable-to-log-in-to-support-or-cloud-project.html) voor hulp bij probleemoplossing.
 
-1. Klikken **[!UICONTROL API Portal]**.
+1. Klik op **[!UICONTROL API Portal]**.
 
 1. Klikken **[!UICONTROL Delete]** naast de bestaande API-sleutel.
 
@@ -183,7 +183,7 @@ Als u onze [shellscript](https://github.com/magento-swat/install-agent-helpers/b
 
    Voor de **AMD64** architectuur:
 
-   1. Download het archief van de startprogramma&#39;s.
+   1. Download het archief van de startprogramma.
 
       ```bash
       curl -O https://updater.supportinsights.adobe.com/launcher/launcher.linux-amd64.tar.gz
@@ -197,7 +197,7 @@ Als u onze [shellscript](https://github.com/magento-swat/install-agent-helpers/b
 
    Voor de **ARM64** architectuur:
 
-   1. Download het archief van de startprogramma&#39;s.
+   1. Download het archief van de startprogramma.
 
       ```bash
       curl -O https://updater.supportinsights.adobe.com/launcher/launcher.linux-arm64.tar.gz

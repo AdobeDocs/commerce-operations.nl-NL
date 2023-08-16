@@ -18,7 +18,7 @@ Adobe Commerce on cloud Infrastructure is een platform-as-a-service (PaaS) die e
 
 Adobe Commerce is klaar voor de cloud met een volledig redundante hostinginfrastructuur voor meerdere cloud&#39;s die geoptimaliseerde prestaties, veerkracht en elastische schaalbaarheid biedt. U kunt uw handelsplatform op het netwerk van de inhoudslevering van Fastly efficiënt in werking stellen, en met New Relic voor controle en beheer kunt u uw opslagmilieu houden lopend regelmatig.
 
-Adobe Commerce biedt alle voordelen van moderne cloud computing die het meest worden geassocieerd met SaaS-oplossingen: elastische schaalbaarheid, hoge veerkracht en beschikbaarheid, PCI-compatibiliteit en wereldwijde beschikbaarheid en geautomatiseerde patching, terwijl de flexibiliteit in softwareaanpassing die onze handelaren nodig hebben, behouden blijft.
+Adobe Commerce biedt alle voordelen van moderne cloud computing die het meest worden geassocieerd met SaaS-oplossingen: elastische schaalbaarheid, hoge veerkracht en beschikbaarheid, PCI-compatibiliteit en wereldwijde beschikbaarheid en geautomatiseerde patches, terwijl de flexibiliteit in softwareaanpassing die onze handelaren nodig hebben, behouden blijft.
 
 ![Diagram met architecturale elementen van Adobe Commerce op cloudinfrastructuur](../../../assets/playbooks/adobe-commerce-cloud-infrastructure.svg)
 
@@ -42,9 +42,9 @@ Laten we ook eens kijken naar de software die Adobe Commerce voordelen oplevert.
 
 ![Diagram van Adobe Commerce op de technologiestapel voor cloudinfrastructuur](../../../assets/playbooks/cloud-tech-stack.svg)
 
-- Fastly CDN: Wanneer klanten toegang krijgen tot uw site en winkels, kunnen ze sneller in cache geplaatste pagina&#39;s laden. Fastly WAF verleent ook de beschermingsdienst DDoS.
+- Snelle CDN: als klanten toegang krijgen tot uw site en winkels, worden de aanvragen snel ingedrukt om pagina&#39;s in de cache sneller te laden. Fastly WAF verleent ook de beschermingsdienst DDoS.
 
-- New Relic geeft u een volledige weergave van uw toepassingen en werkomgeving. Zo kunt u belangrijke metriek van mobiele en browsertoepassingen combineren met ondersteunende services, gegevensopslag en hosts, zodat u de prestaties holistisch kunt optimaliseren en elk initiatief tot een goed einde kunt brengen.
+- New Relic geeft u een volledige weergave van uw toepassingen en werkomgeving. Hiermee kunt u belangrijke metriek van mobiele en browsertoepassingen combineren met ondersteunende services, gegevensopslag en hosts, zodat u de prestaties holistisch kunt optimaliseren en elk initiatief tot een goed einde kunt brengen.
 
 - Composer beheert afhankelijkheden en upgrades in Adobe Commerce en biedt context over de opgenomen pakketten, wat de pakketten doen en hoe ze bij elkaar passen.
 

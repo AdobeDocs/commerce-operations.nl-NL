@@ -13,7 +13,7 @@ ht-degree: 0%
 
 Elke baksteen-en-mortierij heeft een team nodig en het is hetzelfde voor een online e-commerce winkel. Het is belangrijk om mensen in uw team te hebben die de rol met de vereiste vaardigheden passen. Voor zowel B2B als B2C-e-commerce is het van essentieel belang dat elke afdeling van de organisatie betrokken is bij het e-commerce-project.
 
-Er zijn directe en indirecte afhankelijkheden tussen afdelingen die helpen de doelstellingen van het projectteam te bereiken. Het is van essentieel belang dat elk individu begrijpt wat het doel van het team is en hoe het moet worden bereikt. Wanneer een teamlid dat het platform niet goed kent of die niet is uitgelijnd, het betreden van het platform vertraagt en de druk op de andere teamleden verhoogt.
+Er zijn directe en indirecte afhankelijkheden tussen afdelingen die helpen de doelstellingen van het projectteam te bereiken. Het is van essentieel belang dat elk individu begrijpt wat het doel van het team is en hoe het moet worden bereikt. Wanneer een teamlid dat het platform niet goed kent of die niet is uitgelijnd, aan boord gaat, wordt de druk op de andere teamleden meestal vertraagd.
 
 De grootte van uw team is afhankelijk van de complexiteit van uw project.
 

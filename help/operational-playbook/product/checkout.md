@@ -50,7 +50,7 @@ Klanten die online winkelen maken zich altijd zorgen over beveiliging. Geef het 
 
 - Geloofsgoedkeuringen zoals Norton Secure, MacAfee Secure en Google Trusted Store
 - SSL-certificaten
-- Logo&#39;s betalingsmethode
+- Logo&#39;s van betalingsmethoden
 - Waarderingen en beoordelingen
 - Beleid
 - Voorwaarden en bepalingen
@@ -73,7 +73,7 @@ Naast betalingsopties kunnen detailhandelaren ook opties bieden zoals [klikken e
 
 ## Betalingsgegevens
 
-Betalingsgegevens moeten aan het einde worden geplaatst, vlak voordat wordt bevestigd dat een bestelling wordt geplaatst.
+Betalingsgegevens moeten aan het einde worden geplaatst, vlak voordat wordt bevestigd dat een bestelling moet worden geplaatst.
 
 U kunt op eenvoudige wijze betalingsgegevens invoeren, zoals de naam op de kaart en het nummer van de kaart.
 
@@ -93,7 +93,7 @@ Sommige detailhandelaren leveren ook promotieberichten als de gebruiker zich als
 
 Volg altijd de bevestiging van de bestelling op met een bevestigingsbericht voor bestellingen waarin alle gegevens van de bestelling en de functie voor het bijhouden van de bestelling worden beschreven.
 
-Afhandeling is een drijvende kracht om de omrekeningskoers te verhogen naar een verhoging van het rendement. Het afrekenproces moet worden gestroomlijnd om een gebruiksvriendelijke, snelle en handige afrekenervaring te bieden. Het is niet één maat voor iedereen als het gaat om de afrekenstroom en het proces. Het is dus van essentieel belang dat detailhandelaren de beste opties onderzoeken, analyseren en testen.
+Afhandeling is een drijvende kracht om de omrekeningskoers te verhogen naar een verhoging van het rendement. Het afrekenproces moet worden gestroomlijnd om een gebruiksvriendelijke, snelle en handige afrekenervaring te bieden. Het is niet één maat voor iedereen wat betreft de kassa en het proces, zodat het voor detailhandelaren van essentieel belang is om de beste opties te onderzoeken, te analyseren en te testen.
 
 ## B2C- en B2B-uitchecksysteem
 

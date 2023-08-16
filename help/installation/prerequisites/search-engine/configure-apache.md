@@ -18,9 +18,9 @@ ht-degree: 0%
 
 >[!NOTE]
 >
->Ondersteuning voor OpenSearch is toegevoegd in 2.4.4. OpenSearch is een compatibele vork van Elasticsearch. Zie [Elasticsearch migreren naar OpenSearch](../../../upgrade/prepare/opensearch-migration.md) voor meer informatie .
+>Ondersteuning voor OpenSearch is toegevoegd in 2.4.4. OpenSearch is een compatibele Elasticsearch. Zie [Elasticsearch migreren naar OpenSearch](../../../upgrade/prepare/opensearch-migration.md) voor meer informatie .
 
-In deze sectie wordt besproken hoe u Apache kunt configureren als een *onveilig* zodat Adobe Commerce een zoekprogramma kan gebruiken dat op deze server wordt uitgevoerd. In deze sectie wordt het instellen van HTTP Basic-verificatie niet besproken. dat wordt besproken in [Beveiligde communicatie met Apache](#secure-communication-with-apache).
+In deze sectie wordt besproken hoe u Apache als een *onveilig* zodat Adobe Commerce een zoekprogramma kan gebruiken dat op deze server wordt uitgevoerd. In deze sectie wordt het instellen van de HTTP Basic-verificatie niet besproken. Dit wordt besproken in [Beveiligde communicatie met Apache](#secure-communication-with-apache).
 
 >[!NOTE]
 >
@@ -109,7 +109,7 @@ Ga eerst na of je de Apache hebt `htpasswd` Het hulpprogramma wordt als volgt ge
 
    Als een pad wordt weergegeven, wordt het geïnstalleerd; als de opdracht geen uitvoer retourneert, `htpasswd` is niet geïnstalleerd.
 
-1. Indien nodig, installeert u `htpasswd`:
+1. Indien nodig, installeren `htpasswd`:
 
    * Ubuntu: `apt-get -y install apache2-utils`
    * CentOS: `yum -y install httpd-tools`
@@ -130,7 +130,7 @@ Wanneer
 
 * `<username>` kan:
 
-   * Uitsnede instellen: de gebruiker van de webserver of een andere gebruiker.
+   * Uitsnijden instellen: de gebruiker van de webserver of een andere gebruiker.
 
   In dit voorbeeld gebruiken wij de gebruiker van de Webserver, maar de keus van gebruiker is aan u.
 
@@ -142,8 +142,8 @@ Volg de aanwijzingen op het scherm om een wachtwoord voor de gebruiker te maken.
 
 #### Voorbeelden
 
-**Voorbeeld 1: kraan**
-U moet authentificatie voor slechts één gebruiker voor cron plaatsen; in dit voorbeeld gebruiken we de webservergebruiker. Voer de volgende opdrachten in om een wachtwoordbestand voor de gebruiker van de webserver te maken:
+**Voorbeeld 1: uitsnijden**
+U moet verificatie instellen voor slechts één gebruiker voor uitsnijden; in dit voorbeeld gebruiken we de gebruiker van de webserver. Voer de volgende opdrachten in om een wachtwoordbestand voor de gebruiker van de webserver te maken:
 
 ```bash
 mkdir -p /usr/local/apache/password
@@ -154,7 +154,7 @@ htpasswd -c /usr/local/apache/password/.htpasswd apache
 ```
 
 **Voorbeeld 2: Elasticsearch**
-U moet verificatie instellen voor twee gebruikers: één met toegang tot nginx en één met toegang tot Elasticsearch. Voer de volgende opdrachten in om wachtwoordbestanden voor deze gebruikers te maken:
+U moet authentificatie voor twee gebruikers instellen: met toegang tot nginx en met toegang tot Elasticsearch. Voer de volgende opdrachten in om wachtwoordbestanden voor deze gebruikers te maken:
 
 ```bash
 mkdir -p /usr/local/apache/password

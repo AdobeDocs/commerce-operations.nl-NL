@@ -1,6 +1,6 @@
 ---
 title: Uw verificatietoetsen ophalen
-description: Voer de volgende stappen uit om referenties op repo.magento.com op te halen en toegang te krijgen tot Adobe Commerce- en Magento Open Source Composer-pakketten.
+description: Ga als volgt te werk om referenties op te halen voor toegang tot de pakketten Adobe Commerce en Magento Open Source Composer op repo.magento.com.
 exl-id: 7ec2a410-d81f-476a-bf6a-f3c61982a734
 source-git-commit: 95ffff39d82cc9027fa633dffedf15193040802d
 workflow-type: tm+mt
@@ -11,7 +11,7 @@ ht-degree: 0%
 
 # Uw verificatietoetsen ophalen
 
-De `repo.magento.com` In de opslagplaats worden Adobe Commerce- en Magento Open Source- en Composer-pakketten van derden opgeslagen en vereist verificatie. Gebruik uw Commerce Marketplace-account om een paar van 32 tekens te genereren *verificatietoetsen* om toegang te krijgen tot de repository.
+De `repo.magento.com` opslagplaats is waar Adobe Commerce- en Magento Open Source- en Composer-pakketten van derden worden opgeslagen en verificatie vereisen. Gebruik uw rekening van de Commerce Marketplace om een paar van 32 karakter te produceren *verificatietoetsen* om toegang te krijgen tot de gegevensopslagruimte.
 
 Voor toegangsrechten voor Adobe Commerce- en Magento Open Source-pakketten moet u sleutels gebruiken die zijn gekoppeld aan een MAGEID die toegang heeft gekregen tot deze pakketten. De MAGEID is doorgaans de primaire contactpersoon op de Adobe Commerce-account en is mogelijk niet altijd de projecteigenaar van de Adobe Commerce voor het infrastructuurproject in de cloud.
 
@@ -22,33 +22,32 @@ Voor toegangsrechten voor Adobe Commerce- en Magento Open Source-pakketten moet 
 >* Als je de primaire contactpersoon voor de account bent, zorg er dan voor dat er geen openstaande factuur op de account wordt vermeld.
 >* Als de sleutels die door de Primaire Contact worden verstrekt niet werken en er geen uitstaande facturen op de rekening zijn, contacteer [Adobe Commerce-ondersteuning](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html#submit-ticket) voor hulp met behulp van de MAGEID van de primaire contactpersoon.
 
-
 Zo maakt u verificatietoetsen:
 
 1. Aanmelden bij de [Commerce Marketplace](https://marketplace.magento.com). Als u geen account hebt, klikt u op **Registreren**.
 1. Klik op de naam van uw account rechtsboven op de pagina en selecteer **Mijn profiel**.
 
-1. Klikken **Toegangstoetsen** op het tabblad Marktplaats.
+1. Klikken **Toegangssleutels** op het tabblad Marktplaats.
 
    ![Krijg uw veilige toegangstoetsen op Commerce Marketplace](../../assets/installation/cloud_access-key.png)
 
 1. Klikken **Een nieuwe toegangstoets maken**. Voer een specifieke naam in voor de toetsen (bijvoorbeeld de naam van de ontwikkelaar die de toetsen ontvangt) en klik op **OK**.
 
-1. Nieuwe openbare en persoonlijke sleutels zijn nu gekoppeld aan uw account waarop u kunt klikken om te kopiëren. Sla deze gegevens op of open de pagina wanneer u met uw project werkt. Gebruik de **Openbare sleutel** als uw gebruikersnaam en **Persoonlijke sleutel** als uw wachtwoord.
+1. Nieuwe openbare en persoonlijke sleutels zijn nu gekoppeld aan uw account waarop u kunt klikken om te kopiëren. Sla deze gegevens op of open de pagina wanneer u met uw project werkt. Gebruik de **Openbare sleutel** als uw gebruikersnaam en de **Persoonlijke sleutel** als uw wachtwoord.
 
 ## De verificatietoetsen beheren
 
 U kunt verificatietoetsen ook uitschakelen of verwijderen. U kunt bijvoorbeeld toetsen uit veiligheidsoverwegingen uitschakelen of verwijderen nadat iemand uw organisatie heeft verlaten.
 
-* Toetsen uitschakelen: Klikken **Uitschakelen**. U kunt dit doen als u het gebruik van uw sleutels wilt onderbreken.
-* Een eerder uitgeschakelde toets inschakelen: Klikken **Inschakelen**.
-* Toetsen verwijderen: Klikken **Verwijderen**.
+* Om toetsen uit te schakelen: klik **Uitschakelen**. U kunt dit doen als u het gebruik van uw sleutels wilt onderbreken.
+* Een eerder uitgeschakelde toets inschakelen: klik op **Inschakelen**.
+* Als u toetsen wilt verwijderen, klikt u op **Verwijderen**.
 
 ### SSH-toegangstoken beheren
 
 Als u Adobe Commerce-releases wilt downloaden met behulp van SSH, moet u een Toegangstoken voor downloads genereren. Een token genereren:
 
-1. Meld u aan bij uw [magento.com-account](https://account.magento.com/customer/account/login).
+1. Aanmelden bij uw [magento.com](https://account.magento.com/customer/account/login).
 1. Klikken **Mijn account** boven aan de pagina.
 1. Klikken **Accountinstellingen** > **Downloadtoken**.
 

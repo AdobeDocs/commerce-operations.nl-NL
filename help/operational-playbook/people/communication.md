@@ -15,7 +15,7 @@ Communicatie is cruciaal voor het succes van een e-commerce-project.
 
 ## Communicatieprocessen
 
-Het creëren van een sterk communicatie proces binnen om het even welk team van de Handel is over het beheren van alle activa en processen zo efficiënt mogelijk en het investeren in de mensen die van belang zijn. Een deel van de strategie die bedrijven moeten aannemen, gaat over het delegeren van taken aan de juiste mensen, of software, in hun teams. In het algemeen moet elke handel in elektronische producten drie hoofdgebieden aanpakken:
+Het creëren van een sterk communicatie proces binnen om het even welk team van de Handel is over het beheren van alle activa en processen zo efficiënt mogelijk en het investeren in de mensen die van belang zijn. Een deel van de strategie die bedrijven moeten aannemen gaat over het delegeren van taken aan de juiste mensen, of software, in hun teams. In het algemeen moet elke handel in elektronische producten drie hoofdgebieden aanpakken:
 
 - Product
 - Klantenovername

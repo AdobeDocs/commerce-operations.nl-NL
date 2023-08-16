@@ -23,7 +23,7 @@ Adobe Commerce op cloudinfrastructuur 2.4.x en hoger
 
 Upgrade de services en onderdelen die door Adobe Commerce worden gebruikt voordat ze de einddatum bereiken of bijna halen. Dit helpt om gelijke tred te houden met de naleving van PCI en veiligheidskwetsbaarheid te verminderen.
 
-De klanten op de plannen van de Aanzet kunnen zelf-dienen op de dienstverbeteringen. Zie [Serviceversie wijzigen](https://devdocs.magento.com/cloud/project/services.html#change-service-version) voor meer informatie over hoe dit te doen.
+De klanten op de plannen van de Aanzet kunnen zelf-dienen op de dienstverbeteringen. Zie [Serviceversie wijzigen](https://devdocs.magento.com/cloud/project/services.html#change-service-version) voor meer informatie over hoe u dit kunt doen.
 
 Klanten met Pro-plannen kunnen alleen zelf hun eigen upgrades voor services uitvoeren in hun [Integratieomgeving](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/announcements/commerce-announcements/integration-environment-enhancement-request-pro-and-starter.html). Voor services-upgrades op Productie moet u [een ondersteuningsticket indienen](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html#submit-ticket) de upgrade aanvragen.
 

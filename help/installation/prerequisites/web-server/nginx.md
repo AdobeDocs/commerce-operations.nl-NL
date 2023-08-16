@@ -25,7 +25,7 @@ In de volgende sectie wordt beschreven hoe u Adobe Commerce en Magento Open Sour
 sudo apt -y install nginx
 ```
 
-U kunt ook [nginx maken van bron](https://www.armanism.com/blog/install-nginx-on-ubuntu)
+U kunt [nginx maken van bron](https://www.armanism.com/blog/install-nginx-on-ubuntu)
 
 Nadat u de volgende secties hebt voltooid en de toepassing hebt geïnstalleerd, gebruiken we een voorbeeldconfiguratiebestand om [nginx configureren](#configure-nginx).
 
@@ -33,7 +33,7 @@ Nadat u de volgende secties hebt voltooid en de toepassing hebt geïnstalleerd, 
 
 Adobe Commerce en Magento Open Source vereisen verschillende [PHP-extensies](../php-settings.md) om goed te werken. Naast deze extensies moet u ook de extensies installeren en configureren `php-fpm` extensie gebruiken als u nginx gebruikt.
 
-Om te installeren en te vormen `php-fpm`:
+Installeren en configureren `php-fpm`:
 
 1. Installeren `php-fpm` en `php-cli`:
 
@@ -69,7 +69,7 @@ Om te installeren en te vormen `php-fpm`:
 
 1. Sla de editor op en sluit deze af.
 
-1. Start de `php-fpm` service:
+1. De opdracht opnieuw starten `php-fpm` service:
 
    ```bash
    systemctl restart php7.2-fpm
@@ -81,7 +81,7 @@ Zie [MySQL](../database/mysql.md) voor meer informatie .
 
 ### Installeren en configureren
 
-U kunt Adobe Commerce en Magento Open Source op verschillende manieren downloaden, zoals:
+Er zijn verschillende manieren om Adobe Commerce en Magento Open Source te downloaden, zoals:
 
 * [De Composer-metapakket ophalen](../../composer.md)
 
@@ -89,7 +89,7 @@ U kunt Adobe Commerce en Magento Open Source op verschillende manieren downloade
 
 In dit voorbeeld ziet u een op composers gebaseerde installatie die de opdrachtregel gebruikt.
 
-1. Als de [eigenaar van bestandssysteem](../file-system/overview.md), meldt u zich aan bij uw toepassingsserver.
+1. Als de [eigenaar van bestandssysteem](../file-system/overview.md), meld u aan bij uw toepassingsserver.
 
 1. Wijzig de hoofdmap van de webserver of een map die u hebt geconfigureerd als een virtueel hoofddocument van de host. In dit voorbeeld gebruiken we de standaard Ubuntu `/var/www/html`.
 
@@ -97,13 +97,13 @@ In dit voorbeeld ziet u een op composers gebaseerde installatie die de opdrachtr
    cd /var/www/html
    ```
 
-1. Composer wereldwijd installeren. Composer moet afhankelijkheden bijwerken voordat Adobe Commerce of Magento Open Source wordt geïnstalleerd:
+1. Composer wereldwijd installeren. Composer moet afhankelijkheden bijwerken voordat Adobe Commerce of Magento Open Source kan worden geïnstalleerd:
 
    ```bash
    curl -sS https://getcomposer.org/installer | sudo php -- --install-dir=/usr/bin --filename=composer
    ```
 
-1. Maak een Composer-project met gebruik van het Magento Open Source- of Adobe Commerce-pakket.
+1. Maak een Composer-project met de Magento Open Source of het Adobe Commerce-pakket.
 
    **Magento Open Source**
 
@@ -141,7 +141,7 @@ In dit voorbeeld ziet u een op composers gebaseerde installatie die de opdrachtr
    chmod u+x bin/magento
    ```
 
-1. Installeren vanaf de [opdrachtregel](../../advanced.md). In dit voorbeeld wordt ervan uitgegaan dat de naam van de installatiemap is `magento2ee`de `db-host` bevindt zich op dezelfde computer (`localhost`en dat de `db-name`, `db-user`, en `db-password` alles `magento`:
+1. Installeren vanaf de [opdrachtregel](../../advanced.md). In dit voorbeeld wordt ervan uitgegaan dat de naam van de installatiemap is `magento2ee`de `db-host` bevindt zich op dezelfde computer (`localhost`en dat de `db-name`, `db-user`, en `db-password` zijn allen `magento`:
 
    ```bash
    bin/magento setup:install \
@@ -179,7 +179,7 @@ In dit voorbeeld ziet u een op composers gebaseerde installatie die de opdrachtr
 
 Wij adviseren vormend nginx gebruikend `nginx.conf.sample` configuratiebestand in de installatiemap en de virtuele nginx-host.
 
-Deze instructies veronderstellen u de standaardplaats van Ubuntu voor de virtuele gastheer nginx (bijvoorbeeld gebruikt, `/etc/nginx/sites-available`) en Ubuntu standaard docroot (bijvoorbeeld `/var/www/html`), echter, kunt u deze plaatsen veranderen om uw milieu aan te passen.
+Deze instructies veronderstellen u de standaardplaats van Ubuntu voor de virtuele gastheer nginx (bijvoorbeeld gebruikt, `/etc/nginx/sites-available`) en Ubuntu standaard docroot (bijvoorbeeld `/var/www/html`) kunt u deze locaties echter aanpassen aan uw omgeving.
 
 1. Maak een nieuwe virtuele host voor uw site:
 
@@ -318,7 +318,7 @@ Adobe Commerce en Magento Open Source vereisen verschillende [PHP](../php-settin
 
 1. Sla de editor op en sluit deze af.
 
-1. Maak een directory voor het PHP-sessiepad en wijzig de eigenaar in `apache` gebruiker en groep:
+1. Een directory maken voor het PHP-sessiepad en de eigenaar wijzigen in de `apache` gebruiker en groep:
 
    ```bash
    mkdir -p /var/lib/php/session/
@@ -328,7 +328,7 @@ Adobe Commerce en Magento Open Source vereisen verschillende [PHP](../php-settin
    chown -R apache:apache /var/lib/php/
    ```
 
-1. Maak een directory voor het PHP-sessiepad en wijzig de eigenaar in `apache` gebruiker en groep:
+1. Een directory maken voor het PHP-sessiepad en de eigenaar wijzigen in de `apache` gebruiker en groep:
 
    ```bash
    mkdir -p /run/php-fpm/
@@ -368,7 +368,7 @@ U kunt de Adobe Commerce en de Magento Open Source op verschillende manieren dow
 
 In dit voorbeeld ziet u een op composers gebaseerde installatie die de opdrachtregel gebruikt.
 
-1. Als de [eigenaar van bestandssysteem](../file-system/overview.md), meldt u zich aan bij uw toepassingsserver.
+1. Als de [eigenaar van bestandssysteem](../file-system/overview.md), meld u aan bij uw toepassingsserver.
 
 1. Wijzig de hoofdmap van de webserver of een map die u hebt geconfigureerd als een virtueel hoofddocument van de host. In dit voorbeeld gebruiken we de standaard Ubuntu `/var/www/html`.
 
@@ -376,13 +376,13 @@ In dit voorbeeld ziet u een op composers gebaseerde installatie die de opdrachtr
    cd /var/www/html
    ```
 
-1. Composer wereldwijd installeren. Composer moet afhankelijkheden bijwerken voordat Adobe Commerce of Magento Open Source wordt geïnstalleerd:
+1. Composer wereldwijd installeren. Composer moet afhankelijkheden bijwerken voordat Adobe Commerce of Magento Open Source kan worden geïnstalleerd:
 
    ```bash
    curl -sS https://getcomposer.org/installer | sudo php -- --install-dir=/usr/bin --filename=composer
    ```
 
-1. Maak een Composer-project met gebruik van het Magento Open Source- of Adobe Commerce-pakket.
+1. Maak een Composer-project met de Magento Open Source of het Adobe Commerce-pakket.
 
    **Magento Open Source**
 
@@ -420,7 +420,7 @@ In dit voorbeeld ziet u een op composers gebaseerde installatie die de opdrachtr
    chmod u+x bin/magento
    ```
 
-1. Installeren vanaf de [opdrachtregel](../../advanced.md). In dit voorbeeld wordt ervan uitgegaan dat de naam van de installatiemap is `magento2ee`de `db-host` bevindt zich op dezelfde computer (`localhost`en dat de `db-name`, `db-user`, en `db-password` alles `magento`:
+1. Installeren vanaf de [opdrachtregel](../../advanced.md). In dit voorbeeld wordt ervan uitgegaan dat de naam van de installatiemap is `magento2ee`de `db-host` bevindt zich op dezelfde computer (`localhost`en dat de `db-name`, `db-user`, en `db-password` zijn allen `magento`:
 
    ```bash
    bin/magento setup:install \
@@ -455,7 +455,7 @@ In dit voorbeeld ziet u een op composers gebaseerde installatie die de opdrachtr
 
 Wij adviseren vormend nginx gebruikend `nginx.conf.sample` configuratiebestand in de installatiemap en de virtuele nginx-host.
 
-Deze instructies veronderstellen u de CentOS standaardplaats voor de virtuele gastheer nginx gebruikt (bijvoorbeeld, `/etc/nginx/conf.d`) en standaard docroot (bijvoorbeeld `/usr/share/nginx/html`), echter, kunt u deze plaatsen veranderen om uw milieu aan te passen.
+Deze instructies veronderstellen u de CentOS standaardplaats voor de virtuele gastheer nginx gebruikt (bijvoorbeeld, `/etc/nginx/conf.d`) en standaard docroot (bijvoorbeeld `/usr/share/nginx/html`) kunt u deze locaties echter aanpassen aan uw omgeving.
 
 1. Maak een nieuwe virtuele host voor uw site:
 
@@ -509,7 +509,7 @@ sestatus
 
 Om SELinux en firewalld te vormen:
 
-1. SELinux-beheerprogramma&#39;s installeren:
+1. SELinux-beheertools installeren:
 
    ```bash
    yum -y install policycoreutils-python

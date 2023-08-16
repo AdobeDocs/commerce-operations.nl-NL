@@ -13,11 +13,11 @@ ht-degree: 0%
 
 De verantwoordelijkheden van de `config.xml` Het configuratiedossier dat in vroegere versies van de Handel wordt gebruikt wordt nu verdeeld over verscheidene dossiers, die in diverse modulefolders worden gevestigd. De veelvoudige configuratiedossiers van de handel laden op bestelling slechts wanneer een module om een specifiek configuratietype verzoekt.
 
-U kunt deze bestanden gebruiken, ook wel _configuratietypen_—om specifieke aspecten van het gedrag van uw module aan te passen.
+U kunt deze bestanden gebruiken, ook wel _configuratietype_—specifieke aspecten van het gedrag van uw module aanpassen.
 
 De veelvoudige modules kunnen configuratiedossiers verklaren die het zelfde configuratietype (bijvoorbeeld, gebeurtenissen) beïnvloeden, en deze veelvoudige configuratiedossiers worden samengevoegd.
 
-Hieronder volgen algemene termen die in dit onderwerp worden gebruikt:
+Hieronder vindt u algemene termen die in dit onderwerp worden gebruikt:
 
 - **Configuration-object**—De bibliotheek of klasse van de Handel die voor het bepalen van en het bevestigen van het configuratietype verantwoordelijk is. Het configuratieobject voor `config.xml` is [Magento\Framework\App\Config](https://github.com/magento/magento2/blob/2.4/lib/internal/Magento/Framework/App/Config.php).
 
@@ -40,8 +40,8 @@ De handel laadt configuratiedossiers in de volgende orde (alle wegen zijn met be
 waar
 
 - `<your component base dir>` is de basismap waarin de component zich bevindt. Typische waarden zijn `app/code` of `vendor` ten opzichte van de installatiemap Handel.
-- `<vendorname>` de leveranciersnaam van de component is; zo is de naam van de leverancier van Commerce `magento`.
-- `<component-type>` is een van de volgende:
+- `<vendorname>` is de leveranciersnaam van de component; bijvoorbeeld, is de verkopersnaam van de Handel `magento`.
+- `<component-type>` is één van het volgende:
 
    - `module-`: Een extensie of module.
    - `theme-`: Thema.
@@ -55,7 +55,7 @@ waar
 
 ### Samenvoegen van configuratiebestand
 
-Knooppunten in configuratiebestanden worden samengevoegd op basis van hun volledig gekwalificeerde XPath, waarvoor een speciaal kenmerk is gedefinieerd in `$idAttributes` array gedeclareerd als id. Deze id moet uniek zijn voor alle knooppunten die onder hetzelfde bovenliggende knooppunt zijn genest.
+Knooppunten in configuratiebestanden worden samengevoegd op basis van hun volledig gekwalificeerde XPath, waarvoor een speciaal kenmerk is gedefinieerd in `$idAttributes` array gedeclareerd als id. Deze id moet uniek zijn voor alle geneste knooppunten onder hetzelfde bovenliggende knooppunt.
 
 Samenvoegalgoritme voor handelingstoepassing:
 
@@ -87,7 +87,7 @@ De volgende lijst toont elk configuratietype en het de configuratievoorwerp van 
 | `config.php` en `env.php` | [Implementatieconfiguratie](../reference/deployment-files.md) | Deze bestanden zijn leesbaar/schrijfbaar door de interne configuratieprocessor. | Heeft geen object, kan niet worden aangepast |
 | `config.xml` | Systeemconfiguratie | primair, wereldwijd | [\Magento\Framework\App\Config](https://github.com/magento/magento2/blob/2.4/lib/internal/Magento/Framework/App/Config.php) |
 | `communication.xml` | [Bepaalt aspecten van het systeem van de berichtrij](https://developer.adobe.com/commerce/php/development/components/message-queues/configuration/#communicationxml) | globaal | [\Magento\WebapiAsync\Code\Generator\Config\RemoteServiceReader\Communication](https://github.com/magento/magento2/blob/2.4/app/code/Magento/WebapiAsync/Code/Generator/Config/RemoteServiceReader/Communication.php) |
-| `crontab.xml` | [Hiermee configureert u afdekgroepen](../cron/custom-cron-reference.md#configure-cron-groups) | globaal | [\Magento\Cron\Model\Config\Data](https://github.com/magento/magento2/blob/2.4/app/code/Magento/Cron/Model/Config/Data.php) |
+| `crontab.xml` | [Hiermee configureert u groepen voor uitsnijden](../cron/custom-cron-reference.md#configure-cron-groups) | globaal | [\Magento\Cron\Model\Config\Data](https://github.com/magento/magento2/blob/2.4/app/code/Magento/Cron/Model/Config/Data.php) |
 | `cron_groups.xml` | [Hiermee geeft u opties voor de uitsnijdgroep op](../cron/custom-cron-reference.md) | globaal | [\Magento\Cron\Model\Groups\Config\Data](https://github.com/magento/magento2/blob/2.4/app/code/Magento/Cron/Model/Groups/Config/Data.php) |
 | `db_schema.xml` | [Declaratief schema](https://developer.adobe.com/commerce/php/development/components/declarative-schema/configuration/) | globaal | [Magento\Framework\Setup\Declaration\Schema](https://github.com/magento/magento2/blob/2.4/lib/internal/Magento/Framework/Setup/Declaration/Schema/SchemaConfig.php) |
 | `di.xml` | [Injectie van afhankelijkheid](https://developer.adobe.com/commerce/php/development/components/dependency-injection/) configuratie | primair, wereldwijd, gebied | [\Magento\Framework\ObjectManager\Config](https://github.com/magento/magento2/blob/2.4/lib/internal/Magento/Framework/ObjectManager/Config/Config.php) |
@@ -103,10 +103,10 @@ De volgende lijst toont elk configuratietype en het de configuratievoorwerp van 
 | `menu.xml` | Hiermee worden menu-items voor de beheerder gedefinieerd | adminhtml | [\Magento\Backend\Model\Menu\Config\Reader](https://github.com/magento/magento2/blob/2.4/app/code/Magento/Backend/Model/Menu/Config/Reader.php) |
 | `module.xml` | Bepaalt module configuratiegegevens en zachte gebiedsafhankelijkheid | primair, wereldwijd | [\Magento\Framework\Module\ModuleList\Loader](https://github.com/magento/magento2/blob/2.4/lib/internal/Magento/Framework/Module/ModuleList/Loader.php) |
 | `mview.xml` | [MView-configuratie](https://developer.adobe.com/commerce/php/development/components/indexing/custom-indexer/#mview-configuration) | primair, wereldwijd | [\Magento\Framework\Mview\Config\Data](https://github.com/magento/magento2/blob/2.4/lib/internal/Magento/Framework/Mview/Config/Data.php) |
-| `payment.xml` | Configuratie van betalingsmodule | primair, wereldwijd | [\Magento\Payment\Model\Config](https://github.com/magento/magento2/blob/2.4/app/code/Magento/Payment/Model/Config.php) |
+| `payment.xml` | Configuratie van de betalingsmodule | primair, wereldwijd | [\Magento\Payment\Model\Config](https://github.com/magento/magento2/blob/2.4/app/code/Magento/Payment/Model/Config.php) |
 | `persistent.xml` | [Magento_Blijvend](https://developer.adobe.com/commerce/php/module-reference/module-persistent/) configuratiebestand | globaal | [\Magento\Persistent\Helper\Data](https://github.com/magento/magento2/blob/2.4/app/code/Magento/Persistent/Helper/Data.php) |
 | `pdf.xml` | PDF-instellingen | globaal | [\Magento\Sales\Model\Order\Pdf\Config\Reader](https://github.com/magento/magento2/blob/2.4/app/code/Magento/Sales/Model/Order/Pdf/Config/Reader.php) |
-| `product_options.xml` | Biedt productoptieconfiguratie | globaal | [\Magento\Catalog\Model\ProductOptions\Config](https://github.com/magento/magento2/blob/2.4/app/code/Magento/Catalog/Model/ProductOptions/Config.php) |
+| `product_options.xml` | Biedt productconfiguratie | globaal | [\Magento\Catalog\Model\ProductOptions\Config](https://github.com/magento/magento2/blob/2.4/app/code/Magento/Catalog/Model/ProductOptions/Config.php) |
 | `product_types.xml` | Hiermee wordt het producttype gedefinieerd | globaal | [\Magento\Catalog\Model\ProductTypes\Config](https://github.com/magento/magento2/blob/2.4/app/code/Magento/Catalog/Model/ProductTypes/Config.php) |
 | `queue_consumer.xml` | [Bepaalt de verhouding tussen een bestaande rij en zijn consument](https://developer.adobe.com/commerce/php/development/components/message-queues/configuration/#queue_consumerxml) | globaal | [\Magento\Framework\MessageQueue\Consumer\Config\Xml\Reader](https://github.com/magento/magento2/blob/2.4/lib/internal/Magento/Framework/MessageQueue/Consumer/Config/Xml/Reader.php) |
 | `queue_publisher.xml` | [Bepaalt de uitwisseling waar een onderwerp wordt gepubliceerd.](https://developer.adobe.com/commerce/php/development/components/message-queues/configuration/#queue_publisherxml) | globaal | [\Magento\WebapiAsync\Code\Generator\Config\RemoteServiceReader\Publisher](https://github.com/magento/magento2/blob/2.4/app/code/Magento/WebapiAsync/Code/Generator/Config/RemoteServiceReader/Publisher.php) |
@@ -114,7 +114,7 @@ De volgende lijst toont elk configuratietype en het de configuratievoorwerp van 
 | `reports.xml` | [Geavanceerde rapporten](https://devdocs.magento.com/guides/v2.4/advanced-reporting/report-xml.html) | globaal | [\Magento\Analytics\ReportXml\Config](https://github.com/magento/magento2/blob/2.4/app/code/Magento/Analytics/ReportXml/Config.php) |
 | `resources.xml` | Definieert module resource | globaal | [\Magento\Framework\App\ResourceConnection\Config\Reader](https://github.com/magento/magento2/blob/2.4/lib/internal/Magento/Framework/App/ResourceConnection/Config/Reader.php) |
 | `routes.xml` | [Route](https://developer.adobe.com/commerce/php/development/components/routing/) configuratie | gebied | [Magento\Framework\App\Route\Config](https://github.com/magento/magento2/blob/2.4/lib/internal/Magento/Framework/App/Route/Config.php) |
-| `sales.xml` | Definieert totale configuratie van verkoop | globaal | [\Magento\Sales\Model\Config\Data](https://github.com/magento/magento2/blob/2.4/app/code/Magento/Sales/Model/Config/Data.php) |
+| `sales.xml` | Definieert totale configuratie verkoop | globaal | [\Magento\Sales\Model\Config\Data](https://github.com/magento/magento2/blob/2.4/app/code/Magento/Sales/Model/Config/Data.php) |
 | `search_engine.xml` | Biedt configuratie van zoekprogramma&#39;s | globaal | [Magento\Search\Model\SearchEngine\Config](https://github.com/magento/magento2/blob/2.4/app/code/Magento/Search/Model/SearchEngine/Config.php) |
 | `search_request.xml` | Definieert de zoekconfiguratie voor de catalogus | globaal | [\Magento\Framework\Search\Request\Config](https://github.com/magento/magento2/blob/2.4/lib/internal/Magento/Framework/Search/Request/Config.php) |
 | `sections.xml` | Definieert handelingen die cachevalidatie voor blokken met persoonlijke inhoud activeren | voorzijde | [SectionInvalidationConfigReader](https://github.com/magento/magento2/blob/2.4/app/code/Magento/Customer/etc/di.xml#L137-L148) |
@@ -128,7 +128,7 @@ De volgende lijst toont elk configuratietype en het de configuratievoorwerp van 
 
 ### Configuratieinterfaces
 
-U kunt met configuratiedossiers in wisselwerking staan gebruikend interfaces onder [Magento\Framework\Config](https://github.com/magento/magento2/tree/2.4/lib/internal/Magento/Framework/Config).
+U kunt met configuratiedossiers interactie aangaan gebruikend interfaces onder [Magento\Framework\Config](https://github.com/magento/magento2/tree/2.4/lib/internal/Magento/Framework/Config).
 
 U kunt deze interfaces gebruiken als u [een configuratietype maken](../reference/config-create-types.md#create-configuration-types).
 

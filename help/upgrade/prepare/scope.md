@@ -1,5 +1,5 @@
 ---
-title: Bereik voor upgrade
+title: Omgaan met upgradebereik
 description: Leer over achterwaartse onverenigbare veranderingen in een versie die Adobe Commerce of Magento Open Source douanemodules of derdeuitbreidingen zou kunnen beïnvloeden.
 exl-id: dab2a14f-dbf0-422e-afb4-642e2220ec7a
 source-git-commit: 95ffff39d82cc9027fa633dffedf15193040802d
@@ -34,7 +34,7 @@ De [!DNL Upgrade Compatibility Tool] is een bevel-lijn hulpmiddel dat uw geval v
 
 Het gebruik van dit hulpmiddel vermindert de inspanning die van uw team wordt vereist om het werkingsgebied en het effect van een verbetering te begrijpen. Het helpt u gemeenschappelijke codekwesties te vermijden wanneer bevordering en verstrekt duidelijke richting op hoe te om geïdentificeerde kwesties op te lossen. Het helpt ook om voorrang te geven aan de meest kritieke kwesties noodzakelijk om een succesvolle verbetering te verzekeren, die zowel tijd als kosten bespaart wanneer het bevorderen.
 
-Zie de volgende secties om aan de slag te gaan met de [!DNL Upgrade Compatibility Tool]. Zie de [!DNL Upgrade Compatibility Tool] [hulplijn](../upgrade-compatibility-tool/overview.md) voor meer technische details en gevallen van geavanceerd gebruik.
+Zie de volgende secties om te beginnen met de [!DNL Upgrade Compatibility Tool]. Zie de [!DNL Upgrade Compatibility Tool] [hulplijn](../upgrade-compatibility-tool/overview.md) voor meer technische details en geavanceerde gebruiksgevallen.
 
 ### Het gereedschap downloaden
 
@@ -72,9 +72,9 @@ U kunt deze opdracht ook gebruiken met de volgende opties:
 
 - `--vanilla-dir`—Staat u toe om kerncode voor om het even welke niet standaardimplementatie van eigenschappen of aanpassingen te controleren. Het is belangrijk dat deze van tevoren worden opgeruimd. Een vanilla-exemplaar van uw versie wordt automatisch ter referentie gedownload.
 
-   >[!NOTE]
-   >
-   > Dit kan ook gebeuren met de `core:code:changes` in het gereedschap).
+  >[!NOTE]
+  >
+  > Dit kan ook worden gedaan met de `core:code:changes` in het gereedschap).
 
 ### De uitvoer analyseren
 
@@ -103,7 +103,7 @@ De volgende output toont een voorbeeld samenvattingsrapport:
 
 ### Tips en advies
 
-Alle kwesties die het geïdentificeerde hulpmiddel zijn vermeld zijn in het rapport met specifieke foutencodes. Gebruik de [error message reference](../upgrade-compatibility-tool/error-messages.md) voor meer informatie over elk onderwerp. Adobe geeft ook suggesties om elk type probleem te verhelpen, zodat u uw verholpen kunt plannen.
+Alle kwesties die het geïdentificeerde hulpmiddel zijn vermeld zijn in het rapport met specifieke foutencodes. Gebruik de [error message reference](../upgrade-compatibility-tool/error-messages.md) voor meer informatie over elk onderwerp. De Adobe biedt ook suggesties om elk type probleem te verhelpen, zodat u de stappen voor het verhelpen van problemen kunt plannen.
 
 Gebruik het rapport om te schatten hoeveel moeite het zal vergen om uw code voor de verbetering bij te werken. Op basis van uw ervaring kunt u een schatting maken van de vereiste inspanning om een upgrade uit te voeren op basis van het totale aantal geïdentificeerde problemen en de ernst van de problemen. Aangezien dit een opdrachtregelprogramma is, kunt u dit opnemen in automatische test- en codeselecties en de JSON-uitvoer gebruiken om uw rapporten te genereren.
 

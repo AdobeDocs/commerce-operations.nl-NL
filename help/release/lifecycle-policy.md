@@ -1,11 +1,11 @@
 ---
 title: Levenscyclusbeleid voor software
-description: In deze video ziet u de belangrijkste datums voor einde softwareondersteuning voor Adobe Commerce-releases.
+description: In deze video ziet u de belangrijkste datums voor het einde van de softwareondersteuning voor Adobe Commerce-releases.
 exl-id: 9ee4ecc8-d893-412a-a605-5a8606a1b9a9
 source-git-commit: c1f490d98dd74bd5f33f35c5ff7bedeeb0e6f7e4
 workflow-type: tm+mt
 source-wordcount: '326'
-ht-degree: 12%
+ht-degree: 16%
 
 ---
 
@@ -17,7 +17,7 @@ Voor Adobe Commerce 2.4.4 en latere versies:
 
 - Adobe biedt beveiligingsoplossingen via een beveiligingspatchrelease voor de ondersteuningsperiode van drie jaar.
 
-- Voor kritieke veiligheidskwesties, zoals nul-dag kwetsbaarheid, verstrekt Adobe [hotfixes](https://support.magento.com/hc/en-us/sections/360003869892-Known-issues-patches-attached-) voor alle klanten op een ondersteunde versie, zelfs als ze niet op de nieuwste patch of beveiligingspatchrelease staan. Het is belangrijk om op te merken dat een hotfix geen vangst-allen is en niet alle veiligheidskwesties behandelt die door verbetering aan de recentste versie zouden worden opgelost.
+- Voor belangrijke beveiligingsproblemen, zoals &#39;zero-day&#39;-kwetsbaarheden, biedt Adobe [hotfixes](https://support.magento.com/hc/en-us/sections/360003869892-Known-issues-patches-attached-) voor alle klanten op een ondersteunde versie, zelfs als ze niet op de nieuwste patch of beveiligingspatchrelease staan. Het is belangrijk om op te merken dat een hotfix geen vangst-allen is en niet alle veiligheidskwesties behandelt die door verbetering aan de recentste versie zouden worden opgelost.
 
 ## Einde van softwareondersteuning
 

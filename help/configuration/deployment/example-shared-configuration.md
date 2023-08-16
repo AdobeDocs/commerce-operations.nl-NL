@@ -16,7 +16,7 @@ In dit voorbeeld wordt getoond hoe u de volgende instellingen in uw ontwikkeling
 - Tijdzone
 - Gewichtseenheid
 
-Deze instellingen zijn beschikbaar in de beheerfunctie **Winkels** > Instellingen > **Configuratie** > Algemeen > **Algemeen**.
+Deze instellingen zijn beschikbaar in de beheerfunctie. **Winkels** > Instellingen > **Configuratie** > Algemeen > **Algemeen**.
 
 U kunt de zelfde procedure gebruiken om het even welke niet gevoelige, niet systeem-specifieke montages in de volgende verwijzingen te vormen:
 
@@ -28,17 +28,17 @@ U kunt de zelfde procedure gebruiken om het even welke niet gevoelige, niet syst
 
 Voordat u begint, stelt u de machtigingen en het eigendom van het bestandssysteem in zoals beschreven in [Vereisten voor ontwikkeling, bouw, en productiesystemen](../deployment/prerequisites.md).
 
-## Aannames
+## Veronderstellingen
 
 Dit onderwerp verstrekt een voorbeeld om de configuratie van het productiesysteem te wijzigen. U kunt desgewenst verschillende configuratieopties kiezen.
 
-In dit voorbeeld gaan we ervan uit dat:
+In dit voorbeeld gaan we uit van het volgende:
 
 - U gebruikt Git-bronbesturingselement
 - Het ontwikkelingssysteem is beschikbaar in een Git-opslagplaats op afstand met de naam `mconfig`
 - Uw Git-werkvertakking krijgt de naam `m2.2_deploy`
 
-## Stap 1: De configuratie instellen in het ontwikkelingssysteem
+## Stap 1: Plaats de configuratie in het ontwikkelingssysteem
 
 U kunt als volgt de tijdzone- en gewichtseenheden in uw ontwikkelingssysteem instellen:
 
@@ -50,19 +50,19 @@ U kunt als volgt de tijdzone- en gewichtseenheden in uw ontwikkelingssysteem ins
 
    ![Opties voor landinstellingen instellen in het ontwikkelingssysteem](../../assets/configuration/split-deploy-set-locale.png)
 
-1. Van de **Tijdzone** lijst, klikt u op **GMT+00:00 (UTC)**.
+1. Van de **Tijdzone** lijst, klik **GMT+00:00 (UTC)**.
 1. Wis de **Systeemwaarde gebruiken** selectievakje naast **Gewichtseenheid** veld.
-1. Van de **Gewichtseenheid** lijst, klikt u op **kgs**.
+1. Van de **Gewichtseenheid** lijst, klik **kgs**.
 1. Klikken **Config opslaan**.
-1. Maak desgevraagd de cache leeg.
+1. Maak de cache leeg als daarom wordt gevraagd.
 
-## Stap 2: De gedeelde configuratie bijwerken
+## Stap 2: Werk de gedeelde configuratie bij
 
 Genereer het gedeelde configuratiebestand, `app/etc/config.php`, in uw ontwikkelingssysteem en breng het over gebruikend broncontrole aan uw bouwstijlsysteem zoals die in deze sectie wordt besproken.
 
 {{$include /help/_includes/config-save-config.md}}
 
-## Stap 3: Uw constructiesysteem bijwerken en bestanden genereren
+## Stap 3: Werk uw bouwstijlsysteem bij en produceer dossiers
 
 Nu u uw veranderingen in de gedeelde configuratie aan broncontrole hebt geëngageerd, kunt u die veranderingen in uw bouwstijlsysteem trekken, code compileren, en statische dossiers produceren. De laatste stap is om die veranderingen in uw productiesysteem te trekken. Dientengevolge, zal de configuratie van uw productiesysteem uw ontwikkelingssysteem aanpassen.
 

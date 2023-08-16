@@ -5,7 +5,7 @@ exl-id: dd4694e7-5437-440c-bb67-804ae36149de
 source-git-commit: 95ffff39d82cc9027fa633dffedf15193040802d
 workflow-type: tm+mt
 source-wordcount: '334'
-ht-degree: 0%
+ht-degree: 1%
 
 ---
 
@@ -14,12 +14,12 @@ ht-degree: 0%
 Voordat u Adobe Commerce of Magento Open Source installeert, moet u het volgende doen:
 
 * Stel een of meer hosts in die voldoen aan de [systeemvereisten](../system-requirements.md).
-* Als u meerdere webknooppunten instelt met taakverdeling, stelt u dat gedeelte van uw systeem in en test u dit _voor_ installeert u de toepassing.
+* Als u meerdere webknooppunten instelt met taakverdeling, stelt u dat deel van uw systeem in en test u dit _voor_ installeert u de toepassing.
 * Zorg ervoor dat u op verschillende punten tijdens de installatie een back-up van het gehele systeem kunt maken, zodat u het systeem kunt terugdraaien als er problemen zijn.
 
 >[!NOTE]
 >
->We gaan ervan uit dat u de Adobe Commerce of de Magento Open Source in een **ontwikkelomgeving**, dat u toegang hebt tot de computer voor de basisgebruiker, **en** dat de machine niet zeer veilig hoeft te zijn. Als u opstelling een veiliger machine bent, adviseren wij sterk u een netwerkbeheerder voor extra hulp raadplegen.
+>We gaan ervan uit dat u de Adobe Commerce of Magento Open Source installeert in een **ontwikkelomgeving**, dat u toegang hebt tot de computer voor de basisgebruiker, **en** dat de machine niet zeer veilig hoeft te zijn. Als u opstelling een veiliger machine bent, adviseren wij sterk u een netwerkbeheerder voor extra hulp raadplegen.
 
 We raden u ten zeerste aan uw besturingssysteemsoftware bij te werken en bij te werken. Deze verbeteringen kunnen veiligheid en softwaremoeilijke situaties verstrekken die toekomstige problemen zouden kunnen verhinderen. Weet u niet wat dit betekent? Bekijk onze [overzichtspagina voor installatie](../overview.md).
 
@@ -27,23 +27,23 @@ Voer de volgende opdrachten in als een gebruiker met `root` rechten:
 
 * Ubuntu
 
-   ```bash
-   apt-get update
-   ```
+  ```bash
+  apt-get update
+  ```
 
-   ```bash
-   apt-get upgrade
-   ```
+  ```bash
+  apt-get upgrade
+  ```
 
 * CentOS
 
-   ```bash
-   yum -y update
-   ```
+  ```bash
+  yum -y update
+  ```
 
-   ```bash
-   yum -y upgrade
-   ```
+  ```bash
+  yum -y upgrade
+  ```
 
 ## Vereiste controle
 
@@ -94,7 +94,7 @@ affiliates. Other names may be trademarks of their respective
 owners.
 ```
 
-Type `help` of `\h` voor hulp. Type `\c` om de huidige invoerinstructie te wissen.
+Type `help` of `\h` voor hulp. Type `\c` de huidige invoerinstructie wissen.
 
 Enter `exit` bij de `mysql>` wordt gevraagd af te sluiten.
 
@@ -108,7 +108,7 @@ Om uw installatie van OpenSearch te verifiëren:
 curl -XGET '<opensearch-hostname>:<opensearch-port>'
 ```
 
-Om uw Elasticsearch installatie te verifiëren:
+Om de installatie van uw Elasticsearch te verifiëren:
 
 ```bash
 curl -XGET '<elasticsearch-hostname>:<elasticsearch-port>'

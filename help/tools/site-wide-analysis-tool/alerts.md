@@ -11,7 +11,7 @@ ht-degree: 0%
 
 # [!DNL Alerts]
 
-De [!DNL Site-Wide Analysis Tool's] [!UICONTROL Alerts] op de pagina worden door Adobe Commerce beheerde waarschuwingspatches voor handelaren weergegeven. Adobe biedt de [!DNL Managed Alerts] om prestatiesmetriek te volgen gebruikend industrie beste praktijken. Verwijs naar de [Beheerde waarschuwingen voor de Adobe Commerce](https://support.magento.com/hc/en-us/articles/360045806832-Managed-alerts-for-Adobe-Commerce) artikel in [!DNL support knowledge base].
+De [!DNL Site-Wide Analysis Tool's] [!UICONTROL Alerts] op de pagina worden door Adobe Commerce beheerde waarschuwingspatches voor handelaren weergegeven. Adobe biedt de [!DNL Managed Alerts] om prestatiesmetriek te volgen gebruikend industrie beste praktijken. Verwijs naar de [Beheerde waarschuwingen voor de Adobe Commerce](https://support.magento.com/hc/en-us/articles/360045806832-Managed-alerts-for-Adobe-Commerce) artikel in onze [!DNL support knowledge base].
 
 ## Wanneer gebruiken
 

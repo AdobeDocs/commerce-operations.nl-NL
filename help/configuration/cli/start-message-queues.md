@@ -27,7 +27,7 @@ Gebruikers in de wachtrij met berichten starten:
 bin/magento queue:consumers:start [--max-messages=<value>] [--batch-size=<value>] [--single-thread] [--area-code=<value>] [--multi-process=<value>] <consumer_name>
 ```
 
-Na het verbruiken van alle beschikbare berichten, eindigt het bevel. U kunt de opdracht opnieuw handmatig of met een uitsnijdtaak uitvoeren. U kunt ook meerdere instanties van de `magento queue:consumers:start` bevel om grote berichtrijen te verwerken. U kunt bijvoorbeeld `&` aan het bevel om het op de achtergrond in werking te stellen, aan een herinnering terug te keren, en bevelen te blijven uitvoeren:
+Na het verbruiken van alle beschikbare berichten, eindigt het bevel. U kunt de opdracht opnieuw handmatig of met een uitsnijdtaak uitvoeren. U kunt ook meerdere instanties van het dialoogvenster `magento queue:consumers:start` bevel om grote berichtrijen te verwerken. U kunt bijvoorbeeld `&` aan het bevel om het op de achtergrond in werking te stellen, aan een herinnering terug te keren, en bevelen te blijven uitvoeren:
 
 ```bash
 bin/magento queue:consumers:start <consumer_name> &

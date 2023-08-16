@@ -25,8 +25,8 @@ Gebruik de [!UICONTROL Information] om alle bovenstaande details in één oogops
 
 * Snelle en eenvoudige toegang tot account- en opslaggegevens.
 
-* Zoek en controleer de gegevens van de winkel, instellingen, services en de versies van de componenten op één locatie.
+* Zoek en controleer de gegevens van de winkel, instellingen, services en de versies van de componenten allemaal op één locatie.
 
 ## Aanbevolen procedures
 
-Aangezien [!DNL Site-Wide Analysis Tool’s] [!UICONTROL Information] Deze pagina bevat overzichtsgegevens voor uw site. Onthoud deze pagina om snel toegang te krijgen tot uw gegevens voor planning, onderhoud of ondersteuning van uw winkel of account.
+Aangezien de [!DNL Site-Wide Analysis Tool’s] [!UICONTROL Information] Deze pagina bevat overzichtsgegevens voor uw site. Onthoud deze pagina om snel toegang te krijgen tot uw gegevens voor planning, onderhoud of ondersteuning van uw winkel of account.

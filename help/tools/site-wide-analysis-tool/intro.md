@@ -1,6 +1,6 @@
 ---
 title: '[!DNL Site-Wide Analysis Tool]'
-description: Meer informatie over de [!DNL Site-Wide Analysis] Gereedschap, het gebruik ervan, het installatieproces en de manier waarop toegang kan worden verkregen
+description: Meer informatie over de [!DNL Site-Wide Analysis] Het hulpmiddel, zijn gebruik, het installatieproces, en hoe te om toegang te krijgen
 exl-id: 32774040-d322-43d6-9c26-c340a0ab58a9
 source-git-commit: 95ffff39d82cc9027fa633dffedf15193040802d
 workflow-type: tm+mt
@@ -26,7 +26,7 @@ Zie dit [inleidende video](https://www.youtube.com/watch?v=KW2R8ki_RG4) voor mee
 Het bevat ook een historisch overzicht waarin wordt bijgehouden hoe de gezondheid van uw website in de loop der tijd verandert.
    - Hiermee wordt het dialoogvenster **[!UICONTROL Security Center Widget]** die u toegang geeft tot:
       - [Tech [!DNL Stack] Versienormen met [!DNL end of life (EOL)]](https://experienceleague.adobe.com/docs/commerce-operations/installation-guide/system-requirements.html)
-      - [Adobe Security Bulletin](https://helpx.adobe.com/security/security-bulletin.html)
+      - [Beveiligingsbulletin Adobe](https://helpx.adobe.com/security/security-bulletin.html)
       - [Recommendations van de [!DNL Security Scan Tool]](https://experienceleague.adobe.com/docs/commerce-admin/systems/security/security-scan.html)
       - [[!DNL Site-Wide Analysis Tool] Best Practice Security Recommendations](https://experienceleague.adobe.com/docs/commerce-operations/tools/site-wide-analysis-tool/recommendations.html)
 
@@ -46,7 +46,7 @@ Bekijk alle belangrijke inzichten van uw site op één plaats. [!DNL Site-Wide A
 
 - [**[!UICONTROL Security Center Widget]**] - Hiermee geeft u beveiligingsinzichten voor uw site weer.<br>
 De weergegeven beveiligingsinformatie omvat [Tech [!DNL Stack] Versienormen met [!DNL end of life (EOL)]](https://experienceleague.adobe.com/docs/commerce-operations/installation-guide/system-requirements.html), [Adobe Security Bulletin](https://helpx.adobe.com/security/security-bulletin.html), [Recommendations from the [!DNL Security Scan Tool]](https://experienceleague.adobe.com/docs/commerce-admin/systems/security/security-scan.html), and [[!DNL Site-Wide Analysis Tool] Best Practice Security Recommendations](https://experienceleague.adobe.com/docs/commerce-operations/tools/site-wide-analysis-tool/recommendations.html).<br>
-De [[!DNL Security Scan Tool]](https://experienceleague.adobe.com/docs/commerce-admin/systems/security/security-scan.html) biedt klanten van Adobe Commerce en Magento Open Source realtime inzicht in de beveiligingsstatus van hun winkel door malware proactief op te sporen en hen op de hoogte te stellen als hun winkel in gevaar is.
+De [[!DNL Security Scan Tool]](https://experienceleague.adobe.com/docs/commerce-admin/systems/security/security-scan.html) biedt Adobe Commerce en Magento Open-Source-klanten in real-time inzicht in de beveiligingsstatus van hun winkel door malware proactief op te sporen en hen op de hoogte te stellen als hun winkel in gevaar is.
 
 - [**[!DNL Upgrade Compatability Tool]**](../../upgrade/upgrade-compatibility-tool/overview.md) - Hiermee wordt een aangepaste Adobe Commerce-instantie uitgevoerd op basis van de upgradeversie van het doel en wordt een overzicht gegeven van de kritieke problemen, fouten en waarschuwingen die moeten worden opgelost, zodat de upgrade sneller, sneller en goedkoper kan worden geanalyseerd.
 

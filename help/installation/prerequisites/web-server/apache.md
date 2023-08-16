@@ -11,7 +11,7 @@ ht-degree: 0%
 
 # Apache
 
-Adobe Commerce biedt ondersteuning voor Apache 2.4.x.
+Adobe Commerce ondersteunt Apache 2.4.x.
 
 ## Vereiste richtlijnen Apache
 
@@ -28,11 +28,11 @@ Adobe Commerce biedt ondersteuning voor Apache 2.4.x.
 
 Dit onderwerp bespreekt hoe te om Apache 2.4 toe te laten herschrijft en het plaatsen voor te specificeren [gedistribueerd configuratiebestand, `.htaccess`](https://httpd.apache.org/docs/current/howto/htaccess.html).
 
-Adobe Commerce en Magento Open Source gebruiken server herschrijft en `.htaccess` instructies op directoryniveau voor Apache te geven. De volgende instructies zijn ook inbegrepen in alle andere secties in dit onderwerp.
+Adobe Commerce en Magento Open Source gebruiken herschrijven en `.htaccess` instructies op directoryniveau voor Apache te geven. De volgende instructies zijn ook inbegrepen in alle andere secties in dit onderwerp.
 
-Gebruik deze sectie om herschrijvingen van Apache 2.4 in te schakelen en een instelling op te geven voor de [gedistribueerd configuratiebestand, `.htaccess`](https://httpd.apache.org/docs/current/howto/htaccess.html)
+Gebruik deze sectie om herschrijvingen van Apache 2.4 in te schakelen en een instelling voor de [gedistribueerd configuratiebestand, `.htaccess`](https://httpd.apache.org/docs/current/howto/htaccess.html)
 
-Adobe Commerce en Magento Open Source gebruiken server herschrijft en `.htaccess` instructies op directoryniveau voor Apache te geven.
+Adobe Commerce en Magento Open Source gebruiken herschrijven en `.htaccess` instructies op directoryniveau voor Apache te geven.
 
 >[!NOTE]
 >
@@ -60,7 +60,7 @@ Adobe Commerce en Magento Open Source gebruiken server herschrijft en `.htaccess
 
    >[!NOTE]
    >
-   >Soms zijn aanvullende parameters vereist. Zie voor meer informatie de [Documentatie Apache 2.4](https://httpd.apache.org/docs/2.4/mod/mod_access_compat.html#order).
+   >Soms zijn aanvullende parameters vereist. Zie de klasse [Documentatie Apache 2.4](https://httpd.apache.org/docs/2.4/mod/mod_access_compat.html#order).
 
 1. Als u Apache-instellingen hebt gewijzigd, start u Apache opnieuw:
 
@@ -73,14 +73,13 @@ Adobe Commerce en Magento Open Source gebruiken server herschrijft en `.htaccess
    >- Als u een upgrade hebt uitgevoerd vanaf een eerdere Apache-versie, zoekt u eerst naar `<Directory "/var/www/html">` of `<Directory "/var/www">` in `000-default.conf`.
    >- U moet de waarde wijzigen van `AllowOverride` in de instructie voor de directory waarin u de Adobe Commerce- of Magento Open Source-software wilt installeren. Als u bijvoorbeeld wilt installeren in de webserverhoofdmap, bewerkt u de instructie in `<Directory /var/www>`.
 
-
 >[!NOTE]
 >
 >Als u deze instellingen niet inschakelt, worden stijlen meestal niet weergegeven in de winkel of in Admin.
 
 ## Vereiste modules voor Apache
 
-Adobe Commerce en Magento Open Source vereisen dat de volgende Apache-modules worden geïnstalleerd:
+Adobe Commerce en Magento Open Source vereisen de installatie van de volgende Apache-modules:
 
 - [mod_deflate.c](https://httpd.apache.org/docs/2.4/mod/mod_deflate.html)
 - [mod_expired.c](https://httpd.apache.org/docs/2.4/mod/mod_expires.html)
@@ -144,7 +143,7 @@ De standaardversie van Apache installeren:
 
 Ga als volgt te werk om bij te werken naar Apache 2.4:
 
-1. Voeg de `ppa:ondrej` gegevensopslagruimte met Apache 2.4:
+1. Voeg de `ppa:ondrej` gegevensopslagruimte, met Apache 2.4:
 
    ```bash
    apt-get -y update
@@ -187,7 +186,7 @@ Ga als volgt te werk om bij te werken naar Apache 2.4:
 
 Voor Adobe Commerce en Magento Open Source is herschrijven van de Apache-gebruiksserver vereist. U moet ook het type instructies opgeven waarin u `.htaccess`, die de toepassing gebruikt om herschrijfregels op te geven.
 
-Apache installeren en configureren is in feite een proces in drie stappen: de software installeren, herschrijven inschakelen en opgeven `.htaccess` richtlijnen.
+Het installeren en configureren van Apache is in principe een proces in drie stappen: de software installeren, herschrijven inschakelen en opgeven `.htaccess` richtlijnen.
 
 ### Apache installeren
 
@@ -323,4 +322,4 @@ Bijvoorbeeld:
 
 >[!NOTE]
 >
->De voorgaande waarden voor `Order` werkt mogelijk niet in alle gevallen. Zie voor meer informatie de [Apache-documentatie](https://httpd.apache.org/docs/2.4/mod/mod_access_compat.html#order).
+>De voorgaande waarden voor `Order` werkt mogelijk niet in alle gevallen. Zie de klasse [Apache-documentatie](https://httpd.apache.org/docs/2.4/mod/mod_access_compat.html#order).

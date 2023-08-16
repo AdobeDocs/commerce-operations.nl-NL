@@ -1,6 +1,6 @@
 ---
-title: Configureer de [!DNL Data Migration Tool]
-description: Meer informatie over de twee methoden voor het configureren van de [!DNL Data Migration Tool] gegevens tussen Magento 1 en Magento 2 over te dragen.
+title: Vorm [!DNL Data Migration Tool]
+description: Meer informatie over de twee methoden voor het configureren van de [!DNL Data Migration Tool] gegevens over te dragen tussen Magento 1 en Magento 2.
 exl-id: 273be997-8085-4488-a455-f6005a85b406
 topic: Commerce, Migration
 source-git-commit: e83e2359377f03506178c28f8b30993c172282c7
@@ -10,12 +10,12 @@ ht-degree: 0%
 
 ---
 
-# Configureer de [!DNL Data Migration Tool]
+# Vorm [!DNL Data Migration Tool]
 
 Nadat u de [!DNL Data Migration Tool], bevat de volgende map toewijzingsbestanden en configuratiebestanden:
 
 * Magento Open Source:
-   * `<your Magento 2 install dir>/vendor/magento/data-migration-tool/etc/opensource-to-opensource`: Configuratie en scripts voor migreren van Magento Open Source 1 naar Magento Open Source 2
+   * `<your Magento 2 install dir>/vendor/magento/data-migration-tool/etc/opensource-to-opensource`: Configuratie en scripts voor migratie van Magento Open Source 1 naar Magento Open Source 2
 
 * Adobe Commerce:
    * `<your Magento 2 install dir>/vendor/magento/data-migration-tool/etc/opensource-to-commerce`: Configuratie en scripts voor migratie van Magento Open Source 1 naar Adobe Commerce 2
@@ -27,7 +27,7 @@ De voorgaande mappen bevatten submappen voor elke ondersteunde versie.
 
 Er zijn twee manieren om te vormen [!DNL Data Migration Tool]:
 
-* Configureer de [!DNL Data Migration Tool] in een aparte module (aanbevolen)
+* Vorm [!DNL Data Migration Tool] in een aparte module (aanbevolen)
 * Wijzig de [!DNL Data Migration Tool] in de `<your Magento 2 install dir>/vendor/magento/data-migration-tool/etc/` directory.
 
 Om broncontrole te gebruiken om uw migratieconfiguratie te beheren en het voor plaatsing te gebruiken, moet u een afzonderlijke module tot stand brengen.
@@ -35,7 +35,7 @@ Als u van plan bent de [!DNL Data Migration Tool] alleen lokaal kunt u bestanden
 
 ### Migratie configureren in een aparte module
 
-Voordat u gegevens migreert, moet u een module Magento 2 maken.
+Voordat u gegevens migreert, moet u een Magento 2-module maken.
 
 1. Maak een Magento 2-module.
 
@@ -92,7 +92,7 @@ Voordat u gegevens migreert, moet u een module Magento 2 maken.
    </config>
    ```
 
-1. Kopieer de `config.xml.dist` configuratiebestand uit de desbetreffende map van het [!DNL Data Migration Tool] (`<your Magento 2 install dir>/vendor/magento/data-migration-tool/etc/<migration edition>/<ce or version>`) in de `<your Magento 2 install dir>/app/code/Vendor/Migration/etc/<migration edition>/<ce or version>/config.xml` bestand.
+1. De `config.xml.dist` configuratiebestand uit de desbetreffende map van het [!DNL Data Migration Tool] (`<your Magento 2 install dir>/vendor/magento/data-migration-tool/etc/<migration edition>/<ce or version>`) in de `<your Magento 2 install dir>/app/code/Vendor/Migration/etc/<migration edition>/<ce or version>/config.xml` bestand.
 
    Als u bijvoorbeeld migreert `Magento 1.9.3.6 Community Edition` tot `Magento 2 Open Source`:
 
@@ -106,13 +106,13 @@ Voordat u gegevens migreert, moet u een module Magento 2 maken.
 
 1. In de `config.xml` bestand, moet u toegangsgegevens instellen voor M1- en M2-databases en coderingssleutel.
 
-1. Als uw opslag M1 douaneveranderingen heeft, zou u de rest configuratiedossiers aan uw Magento 1 opslagaanpassingen moeten in kaart brengen. Zie [Werken met configuratie- en toewijzingsbestanden](#migration-config).
+1. Als uw opslag M1 douaneveranderingen heeft, zou u de rest van uw configuratiedossiers aan uw Magento 1 opslagaanpassingen moeten in kaart brengen. Zie [Werken met configuratie- en toewijzingsbestanden](#migration-config).
 
 ### Migratie configureren in `vendor` map
 
 Voordat u gegevens kunt migreren, moet u een `config.xml` configuratiebestand uit het opgegeven voorbeeld.
 
-Om het [!DNL Data Migration Tool] voor migratie:
+Om te vormen [!DNL Data Migration Tool] voor migratie:
 
 1. Meld u aan bij de toepassingsserver als of schakel over naar de [eigenaar van bestandssysteem](../../installation/prerequisites/file-system/overview.md).
 
@@ -148,11 +148,11 @@ Om het [!DNL Data Migration Tool] voor migratie:
 
    Optionele parameters:
 
-   * Wachtwoord databasegebruiker: `password=<password>`
+   * Gebruikerswachtwoord database: `password=<password>`
    * Aangepaste poort database: `port=<port>`
    * Tabelvoorvoegsel: `<source_prefix>`, `<dest_prefix>`
 
-   Als de gebruikersnaam van de eigenaar van de database bijvoorbeeld `root` met wachtwoord `pass` en u gebruikt het voorvoegsel `magento1` in uw Magento 1-database gebruikt u het volgende in `config.xml`:
+   Als de gebruikersnaam van de eigenaar van de database bijvoorbeeld `root` met wachtwoord `pass` en u gebruikt het voorvoegsel `magento1` in uw Magento 1- gegevensbestand, gebruik het volgende in `config.xml`:
 
    ```xml
    <source>
@@ -198,23 +198,23 @@ De [!DNL Data Migration Tool] gebruik *toewijzingsbestanden* om u toe te laten o
 
 * Tabellen of velden negeren
 
-* Gegevens van een veld aanpassen aan de indeling Magento 2
+* De overdracht van gegevens van een veld aanpassen aan de indeling Magento 2
 
-Toewijzingsbestanden voor ondersteunde Magento-versies bevinden zich in submappen van `<your Magento 2 install dir>/vendor/magento/data-migration-tool/etc`
+Toewijzingsbestanden voor ondersteunde versies van Magento&#39;s bevinden zich in submappen van `<your Magento 2 install dir>/vendor/magento/data-migration-tool/etc`
 
 De toewijzingsbestanden gebruiken:
 
-1. Kopiëren van `<your Magento 2 install dir>/vendor/magento/data-migration-tool/etc/<migration edition>/<ce or version>/` tot `<your Magento 2 install dir>/app/code/Vendor/Migration/etc/<migration edition>/<ce or version>/` en verwijder de `.dist` extensie.
+1. Kopieer ze van `<your Magento 2 install dir>/vendor/magento/data-migration-tool/etc/<migration edition>/<ce or version>/` tot `<your Magento 2 install dir>/app/code/Vendor/Migration/etc/<migration edition>/<ce or version>/` en verwijder de `.dist` extensie.
 
 1. Het pad naar het zojuist gekopieerde bestand in het dialoogvenster `<options>` knooppunt van `config.xml`. Het bijgewerkte pad moet een van de volgende zijn:
 
-   1. Absoluut bestandspad, bijv. g. `/var/www/html/app/code/Vendor/Migration/etc/opensource-to-opensource/1.9.4.1/map.xml`
+   1. Absoluut bestandspad, bijv. `/var/www/html/app/code/Vendor/Migration/etc/opensource-to-opensource/1.9.4.1/map.xml`
    1. relatief bestandspad magento/data-migration-tool module: `etc/opensource-to-opensource/1.9.4.1/map.xml`
-   1. Hoofdmapafhankelijk relatief bestandspad Magento: `app/code/Vendor/Migration/etc/opensource-to-opensource/1.9.4.1/map.xml`
+   1. Hoofdmapafhankelijk relatief bestandspad van Magento: `app/code/Vendor/Migration/etc/opensource-to-opensource/1.9.4.1/map.xml`
 
 De `<Magento 2 dir>/vendor/magento/data-migration-tool/etc` en `<Magento 2 dir>/vendor/magento/data-migration-tool/etc/<ce version>` mappen bevatten de volgende configuratiebestanden:
 
-Hoewel u met de `map.xml.dist` in de volgende tabel wordt meestal elke toewijzing en andere bestanden besproken.
+Ook al werkt u met de `map.xml.dist` in de volgende tabel wordt meestal elke toewijzing en andere bestanden besproken.
 
 | Bestandsnaam toewijzen | Beschrijving |
 | --- | --- |
@@ -223,14 +223,14 @@ Hoewel u met de `map.xml.dist` in de volgende tabel wordt meestal elke toewijzin
 | *Alleen Adobe Commerce*. `customer-attr-document-groups.xml.dist` | Lijst van lijsten die in de stap van de attributen van de douaneklanten worden gebruikt. |
 | *Alleen Adobe Commerce*. `customer-attr-map.xml.dist` | Het dossier van de kaart dat in de Stap van de Attributen van de Klant van de Douane wordt gebruikt. |
 | `deltalog.xml.dist` | Bevat de lijst van lijsten die voor de opstelling van gegevensbestandroutines worden vereist. |
-| `eav-attribute-groups.xml.dist` | Bevat een lijst met kenmerken die in Eav Step worden gebruikt. |
+| `eav-attribute-groups.xml.dist` | Bevat een lijst met kenmerken die worden gebruikt in Eav-stap. |
 | `eav-document-groups.xml.dist` | Bevat een lijst van lijsten die in Stap Eav worden gebruikt. |
 | `log-document-groups.xml.dist` | Bevat een lijst van lijsten die in de Stap van het Logboek worden gebruikt. |
 | `map-eav.xml.dist` | Het dossier van de kaart dat in Stap EAV wordt gebruikt. |
 | `map-log.xml.dist` | Logboektoewijzingsbestand. |
 | *Alleen Adobe Commerce*. `map-sales.xml.dist` | Het dossier van de kaart dat in Stap SalesOrder wordt gebruikt. |
 | `map.xml.dist` | Toewijzingsbestand vereist voor de kaartstap. |
-| `settings.xml.dist` | Het migratieconfiguratiedossier plaatsen dat regels vereist voor migratie specificeert `core_config_data` tabel. |
+| `settings.xml.dist` | Het migratieconfiguratiedossier plaatsen dat regels vereist voor het migreren van `core_config_data` tabel. |
 | `customer-attribute-groups.xml.dist` | Bevat een lijst van attributen die in de Stap van Attributen van de Klant worden gebruikt. |
 | `customer-document-groups.xml.dist` | Bevat lijst van lijsten die in de Stap van Attributen van de Klant worden gebruikt. |
 | `map-customer.xml.dist` | Het dossier van de kaart dat in de Stap van Attributen van de Klant wordt gebruikt. |

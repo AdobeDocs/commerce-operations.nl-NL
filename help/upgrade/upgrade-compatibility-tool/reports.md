@@ -36,10 +36,10 @@ Dit verslag bevat ook een gedetailleerde samenvatting die het volgende laat zien
 - *Uitvoeringstijd*: de hoeveelheid tijd die de analyse nodig had om het rapport op te stellen (mm:ss).
 - *Modules die update vereisen*: het percentage modules dat compatibiliteitsproblemen bevat en moet worden bijgewerkt.
 - *Bestanden die moeten worden bijgewerkt*: het percentage bestanden dat compatibiliteitsproblemen bevat en moet worden bijgewerkt.
-- *Totaal aantal kritieke fouten*: het aantal aangetroffen kritieke fouten.
+- *Totaal aantal kritieke fouten*: het aantal gevonden kritieke fouten.
 - *Totaal aantal fouten*: het aantal gevonden fouten.
 - *Totaal aantal waarschuwingen*: het aantal gevonden waarschuwingen.
-- *piekgebruik van geheugen*: de maximale hoeveelheid geheugen [!DNL Upgrade Compatibility Tool] is bereikt tijdens de uitvoering.
+- *piekgebruik van geheugen*: de maximale hoeveelheid geheugen die [!DNL Upgrade Compatibility Tool] is bereikt tijdens de uitvoering.
 
 Zie het volgende bevel-lijn interfacevoorbeeld:
 
@@ -59,7 +59,7 @@ Zie het volgende bevel-lijn interfacevoorbeeld:
 
 ## JSON-bestand
 
-U kunt de uitvoer van het JSON-bestand ophalen terwijl u het dialoogvenster [!DNL Upgrade Compatibility Tool] op een opdrachtregelinterface. De `JSON` het bestand bevat exact dezelfde gegevens als worden weergegeven op het tabblad [!DNL Upgrade Compatibility Tool] uitvoer:
+U kunt de uitvoer van het JSON-bestand ophalen terwijl u het dialoogvenster [!DNL Upgrade Compatibility Tool] op een opdrachtregelinterface. De `JSON` het bestand bevat exact dezelfde informatie als in het dialoogvenster [!DNL Upgrade Compatibility Tool] uitvoer:
 
 - Een lijst met geïdentificeerde problemen.
 - Een samenvatting van de analyse.
@@ -75,7 +75,7 @@ bin/uct upgrade:check <dir> --json-output-path[=JSON-OUTPUT-PATH]
 Waar de argumenten als volgt zijn:
 
 - `<dir>`: Adobe Commerce-installatiemap.
-- `[=JSON-OUTPUT-PATH]`: Padmap om het pad te exporteren `JSON` uitvoerbestand.
+- `[=JSON-OUTPUT-PATH]`: Padmap voor het exporteren van de map `JSON` uitvoerbestand.
 
 >[!NOTE]
 >
@@ -102,10 +102,10 @@ In de rechterbovenhoek bevindt zich een vervolgkeuzelijst waarin u een ander niv
 >
 > De kwesties met lager uitgifteniveau worden geschrapt maar u krijgt een bericht zodat bent u altijd op de hoogte van de geïdentificeerde kwesties per module.
 
-Het rapport HTML bevat ook vier verschillende grafieken:
+Het verslag-HTML bevat ook vier verschillende grafieken:
 
 - **Modules naar uitgifteernst**: Toont strengheidsverdeling door modules.
-- **Bestanden met de ernst van de uitgave**: Hiermee geeft u de verdeling van de ernst per bestand weer.
+- **Bestanden met de ernst van de uitgave**: geeft de verdeling naar bestandsgrootte weer.
 - **Modules geordend op totaal aantal emissies**: Toont de 10 meest gecompromitteerde modules rekening houdend met waarschuwingen, fouten, en kritieke fouten.
 - **Modules met relatieve grootten en problemen**: Hoe meer bestanden een module bevat, hoe groter de cirkel. Hoe meer problemen een module heeft, hoe meer rood de cirkel wordt weergegeven.
 
@@ -115,7 +115,7 @@ Deze grafieken staan u toe om de modules te identificeren die het meest gecompro
 
 De diagrammen van het HTML-rapport worden eveneens dienovereenkomstig bijgewerkt, met uitzondering van de `Modules with relative sizes and issues`, die met de `min-issue-level` die oorspronkelijk was opgezet.
 
-Als u verschillende resultaten wilt zien voor de `Modules with relative sizes and issues` diagram, moet u het bevel opnieuw in werking stellen die een andere waarde voor het verstrekken `--min-issue-level` optie.
+Als u verschillende resultaten wilt zien voor de `Modules with relative sizes and issues` diagram, moet u het bevel opnieuw in werking stellen die een andere waarde voor het verstrekken `--min-issue-level` -optie.
 
 ![Rapport HTML - Bubble Chart Diagram](../../assets/upgrade-guide/uct-html-filtered-diagrams.png)
 
@@ -128,7 +128,7 @@ bin/uct upgrade:check <dir> --html-output-path[=HTML-OUTPUT-PATH]
 Waar de argumenten als volgt zijn:
 
 - `<dir>`: Adobe Commerce-installatiemap.
-- `[=HTML-OUTPUT-PATH]`: Padmap om het pad te exporteren `.html` uitvoerbestand.
+- `[=HTML-OUTPUT-PATH]`: Padmap voor het exporteren van de map `.html` uitvoerbestand.
 
 >[!NOTE]
 >

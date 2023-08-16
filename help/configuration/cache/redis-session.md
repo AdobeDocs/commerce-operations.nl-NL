@@ -38,10 +38,10 @@ waar
 | session-save-redis-password | password | Hiermee geeft u een wachtwoord op als uw Redis-server verificatie vereist. | leeg |
 | session-save-redis-timeout | timeout | Time-out verbinding, in seconden. | 2.5 |
 | session-save-redis-persistent-id | persistent_identifier | Unieke tekenreeks om permanente verbindingen in te schakelen (bijvoorbeeld sess-db0).<br>[Bekende problemen met phpredis en php-fpm](https://github.com/phpredis/phpredis/issues/70). |
-| session-save-redis-db | database | Uniek Redis-databasenummer, dat wordt aanbevolen om te beschermen tegen gegevensverlies.<br><br>**Belangrijk**: Als u Redis voor meer dan één type caching gebruikt, moeten de gegevensbestandaantallen verschillend zijn. U wordt aangeraden het standaard cachedatabasenummer aan 0, het databasenummer voor het in cache plaatsen van pagina&#39;s aan 1 en het databasenummer voor de sessieopslag aan 2 toe te wijzen. | 0 |
+| session-save-redis-db | database | Uniek Redis-databasenummer, dat wordt aanbevolen om te beschermen tegen gegevensverlies.<br><br>**Belangrijk**: Als u Redis voor meerdere typen caching gebruikt, moeten de databasenummers verschillend zijn. U wordt aangeraden het standaard cachedatabasenummer aan 0, het databasenummer voor het in cache plaatsen van pagina&#39;s aan 1 en het databasenummer voor de sessieopslag aan 2 toe te wijzen. | 0 |
 | session-save-hers-compression-threshold | compression_threshold | Instellen op 0 om compressie uit te schakelen (aanbevolen als `suhosin.session.encrypt = On`).<br>[Bekende uitgave met tekenreeksen van meer dan 64 KB](https://github.com/colinmollenhour/Cm_Cache_Backend_Redis/issues/18). | 2048 |
 | session-save-redis-compression-lib | compression_library | Opties: gzip, lzf, lz4 of snappy. | gzip |
-| session-save-redis-log-level | log_level | Stel de volgende waarden in op een van de volgende volgorde, van minimale breedtegraad tot breedste breedte:<ul><li>0 (noodsituatie: alleen de ernstigste fouten)<li>1 (waarschuwing: onmiddellijke actie vereist)<li>2 (kritiek: toepassingscomponent niet beschikbaar)<li>3 (fout: fouten bij uitvoering, niet kritiek, maar moet worden gecontroleerd)<li>4 (waarschuwing: aanvullende informatie, aanbevolen)<li>5 (kennisgeving): normale maar significante toestand)<li>6 (info: informatieberichten)<li>7 (foutopsporing: de meeste informatie (alleen voor ontwikkeling of testen)</ul> | 1 |
+| session-save-redis-log-level | log_level | Stel de volgende waarden in op een van de volgende volgorde, van minimale breedtegraad tot breedste breedte:<ul><li>0 (noodsituatie: alleen de ernstigste fouten)<li>1 (waarschuwing: onmiddellijke actie vereist)<li>2 (kritiek: toepassingscomponent niet beschikbaar)<li>3 (fout: fouten bij uitvoering, niet kritiek, maar moet worden gecontroleerd)<li>4 (waarschuwing: aanvullende informatie, aanbevolen)<li>5 (mededeling: normale maar significante toestand)<li>6 (info: informatieve berichten)<li>7 (foutopsporing: de meeste informatie die u alleen kunt ontwikkelen of testen)</ul> | 1 |
 | session-save-redis-max-gelijktijdige | max_concurrency | Maximum aantal processen dat op een slot op één zitting kan wachten. Voor grote productieclusters stelt u dit in op ten minste 10% van het aantal PHP-processen. | 6 |
 | session-save-break-after-frontend | break_after_frontend | Aantal seconden dat moet worden gewacht voordat wordt geprobeerd de vergrendeling voor de voorste (dat wil zeggen: storefront) sessie te verbreken. | 5 |
 | session-save-redis-break-after-adminhtml | break_after_adminhtml | Aantal seconden dat moet worden gewacht voordat wordt geprobeerd de vergrendeling te verbreken voor een beheersessie (dat wil zeggen Admin). | 30 |
@@ -51,9 +51,9 @@ waar
 | session-save-redis-disable-locking | disable_locking | Sessievergrendeling volledig uitschakelen. | 0 (false) |
 | session-save-redis-min-life | min_life | Minimale sessielevensduur, in seconden. | 60 |
 | session-save-redis-max-life | max_life | Maximale sessielevensduur, in seconden. | 2592000 (720 uur) |
-| session-save-redis-sentinel-master | sentinel_master | Redis Sentinel master naam | leeg |
+| session-save-redis-sentinel-master | sentinel_master | Redis Sentinel Master Name | leeg |
 | session-save-redis-sentinel-servers | sentinel_servers | Lijst met Redis Sentinel-servers, gescheiden door komma&#39;s | leeg |
-| session-save-redis-sentinel-verify-master | sentinel_verify_master | Controleer de master statusvlag Redis Sentinel | 0 (false) |
+| session-save-redis-sentinel-verify-master | sentinel_verify_master | Redis Sentinel-masterstatusvlag verifiëren | 0 (false) |
 | session-save-redis-sentinel-connect-retry | sentinel_connect_retry | Verbindingspogingen voor verklikkers | 5 |
 
 ## Voorbeeld

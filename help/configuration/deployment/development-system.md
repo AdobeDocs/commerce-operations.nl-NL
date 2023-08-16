@@ -19,9 +19,9 @@ U kunt een willekeurig aantal ontwikkelingssystemen hebben, op voorwaarde dat he
 - De eigenaar en machtigingen van het bestandssysteem zijn ingesteld zoals beschreven in [Vereiste voor uw ontwikkeling, bouw, en productiesystemen](../deployment/technical-details.md).
 - Controleer of alle volgende elementen aanwezig zijn: _uitgesloten_ van broncontrole:
 
-   - `vendor` directory (en subdirectory&#39;s)
-   - `generated` directory (en subdirectory&#39;s)
-   - `pub/static` directory (en subdirectory&#39;s)
+   - `vendor` map (en submappen)
+   - `generated` map (en submappen)
+   - `pub/static` map (en submappen)
    - `app/etc/env.php` file
 
 - Controleer of `app/etc/config.php` is _inbegrepen_ in broncontrole

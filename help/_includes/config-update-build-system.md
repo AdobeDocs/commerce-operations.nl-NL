@@ -5,9 +5,9 @@ source-wordcount: '49'
 ht-degree: 0%
 
 ---
-# Builsysteem bijwerken
+# Systeem voor bijwerken van build
 
-**Om het bouwstijlsysteem bij te werken**:
+**Het constructiesysteem bijwerken**:
 
 1. Meld u aan bij het constructiesysteem als de eigenaar van het bestandssysteem.
 1. Wijzig de hoofdmap van de toepassing.

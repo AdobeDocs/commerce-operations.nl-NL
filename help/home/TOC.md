@@ -1,19 +1,19 @@
 ---
-user-guide-title: Operationele hulplijnen
-user-guide-description: Meer informatie over de operationele aspecten van het onderhoud van uw Adobe Commerce- of Magento Open Source-toepassing.
+user-guide-title: Operationele richtlijnen
+user-guide-description: Leer meer over de operationele aspecten van het onderhoud van uw Adobe Commerce- of Magento Open Source-applicatie.
 feature: Configuration, Best Practices, Install, Integration, Security, Release Notes, Upgrade
 source-git-commit: e8b41f25cfd5b707d701016e65db43826a7f26d6
 workflow-type: tm+mt
 source-wordcount: '118'
-ht-degree: 0%
+ht-degree: 14%
 
 ---
 
 
-# Operationele Adobe Commerce-hulplijnen {#operational-guides}
+# Adobe Commerce-handleidingen {#operational-guides}
 
 - [Home](home.md)
-- [Geen informatie](https://experienceleague.adobe.com/docs/commerce-operations/release/versions.html)
+- [Gegevens vrijgeven](https://experienceleague.adobe.com/docs/commerce-operations/release/versions.html)
 - [Installatie](https://experienceleague.adobe.com/docs/commerce-operations/installation-guide/overview.html)
 - [Configuratie](https://experienceleague.adobe.com/docs/commerce-operations/configuration-guide/overview.html)
 - [Gegevensmigratie](https://experienceleague.adobe.com/docs/commerce-operations/tools/data-migration/how-migration-works.html)

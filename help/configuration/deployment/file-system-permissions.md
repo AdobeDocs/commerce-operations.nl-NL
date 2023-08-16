@@ -20,9 +20,9 @@ De volgende secties bespreken vereisten voor één of twee eigenaars van bestand
 
 - **Eén gebruiker**—Gewoonlijk is dit vereist voor gedeelde hostingproviders, waarmee u slechts toegang hebt tot één gebruiker op de server. Deze gebruiker kan zich aanmelden, bestanden overdragen via FTP en deze gebruiker kan ook de webserver uitvoeren.
 
-- **Twee gebruikers**—Wij adviseren twee gebruikers als u uw eigen server van de Handel in werking stelt: één om bestanden over te brengen en opdrachtregelprogramma&#39;s uit te voeren, en een afzonderlijke gebruiker voor de webserversoftware. Dit verdient de voorkeur wanneer dat mogelijk is, omdat het veiliger is.
+- **Twee gebruikers**—Wij adviseren twee gebruikers als u uw eigen server van de Handel in werking stelt: één om dossiers over te brengen en bevel-lijn nut in werking te stellen, en een afzonderlijke gebruiker voor de software van de Webserver. Dit verdient de voorkeur wanneer dat mogelijk is, omdat het veiliger is.
 
-   In plaats daarvan hebt u verschillende gebruikers:
+  In plaats daarvan hebt u verschillende gebruikers:
 
    - De gebruiker van de Webserver, die Admin en opslag in werking stelt.
 
@@ -68,7 +68,7 @@ Om componenten bij te werken, nieuwe componenten te installeren, of de software 
 
 U verwijdert schrijfmachtigingen voor bestanden en mappen uit de gebruikersgroep van de webserver als volgt:
 
-1. Meld u aan bij uw Commerce-server.
+1. Meld u aan bij uw commerciële server.
 
 1. Verandering in uw de installatiemap van de Handel.
 
@@ -94,7 +94,7 @@ U verwijdert schrijfmachtigingen voor bestanden en mappen uit de gebruikersgroep
 
 Bestanden en mappen schrijfbaar maken, zodat u componenten kunt bijwerken en de software voor de handel kunt upgraden:
 
-1. Meld u aan bij uw Commerce-server.
+1. Meld u aan bij uw commerciële server.
 1. Verandering in uw de installatiemap van de Handel.
 1. Voer de volgende opdrachten in:
 
@@ -106,21 +106,21 @@ Bestanden en mappen schrijfbaar maken, zodat u componenten kunt bijwerken en de 
 
 Zie [Optioneel een masker instellen](../../installation/next-steps/set-umask.md) in de _Installatiehandleiding_.
 
-## Eigendom van productiesysteem voor privéhosting (twee gebruikers)
+## Eigendom van productiebestandssysteem voor privéhosting (twee gebruikers)
 
 Als u uw eigen server gebruikt (inclusief de privéserverinstallatie van een hostprovider), zijn er twee gebruikers:
 
 - De **webservergebruiker**, die de beheerfunctie en de storefront uitvoert.
 
-   Linux-systemen bieden doorgaans geen shell voor deze gebruiker; u kunt zich niet bij de server van de Handel als, of schakelaar aan, de gebruiker van de Webserver aanmelden.
+  De systemen van Linux verstrekken typisch geen shell voor deze gebruiker; u kunt niet login aan de server van de Handel als, of schakelaar aan, de gebruiker van de Webserver.
 
 - De **opdrachtregelgebruiker**, die u bij uw server van de Handel als of schakelaar aan login.
 
-   De handel gebruikt deze gebruiker om CLI bevelen en kromme in werking te stellen.
+  De handel gebruikt deze gebruiker om CLI bevelen en kromme in werking te stellen.
 
-   >[!INFO]
-   >
-   >De opdrachtregelgebruiker wordt ook wel de _eigenaar van bestandssysteem_.
+  >[!INFO]
+  >
+  >De opdrachtregelgebruiker wordt ook wel de _eigenaar van bestandssysteem_.
 
 Omdat deze gebruikers toegang tot de zelfde dossiers vereisen, adviseren wij u tot een [gedeelde groep](../../installation/prerequisites/file-system/configure-permissions.md#about-the-shared-group) waartoe zij beide behoren. De volgende procedures gaan ervan uit dat u dit al hebt gedaan.
 
@@ -143,13 +143,13 @@ Stel de [`setgid`](https://linuxg.net/how-to-set-the-setuid-and-setgid-bit-for-f
 
 >[!INFO]
 >
->`setgid` alleen van toepassing is op mappen, _niet_ naar bestanden.
+>`setgid` alleen van toepassing is op directory&#39;s; _niet_ naar bestanden.
 
 Daarnaast moeten de mappen kunnen worden geschreven door de groep met webservers. Omdat de inhoud in deze folders zou kunnen bestaan, voeg recursief de toestemmingen toe.
 
-#### Machtigingen instellen en `setgid`
+#### Machtigingen en `setgid`
 
-In te stellen `setgid` en machtigingen voor de ontwikkelaarsmodus:
+In te stellen `setgid` en machtigingen voor de ontwikkelingsmodus:
 
 1. Meld u aan bij de Commerce-server als of schakel over naar de eigenaar van het bestandssysteem.
 1. Voer de volgende opdrachten in de getoonde volgorde in:
@@ -184,7 +184,7 @@ Als u klaar bent om uw site te implementeren voor productie, moet u voor betere 
 
 U verwijdert schrijfbare machtigingen voor bestanden en mappen uit de gebruikersgroep van de webserver als volgt:
 
-1. Meld u aan bij uw Commerce-server.
+1. Meld u aan bij uw commerciële server.
 1. Verandering in uw de installatiemap van de Handel.
 1. Als eigenaar van het bestandssysteem voert u de volgende opdracht in om over te schakelen op de productiemodus:
 
@@ -202,7 +202,7 @@ U verwijdert schrijfbare machtigingen voor bestanden en mappen uit de gebruikers
 
 Bestanden en mappen schrijfbaar maken, zodat u componenten kunt bijwerken en de software voor de handel kunt upgraden:
 
-1. Meld u aan bij uw Commerce-server.
+1. Meld u aan bij uw commerciële server.
 1. Verandering in uw de installatiemap van de Handel.
 1. Voer de volgende opdracht in:
 

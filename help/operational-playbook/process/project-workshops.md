@@ -44,7 +44,7 @@ Het is van essentieel belang om de deelnemers voor de start van het project te s
 
 ### Onderwerpen die moeten worden afgedekt
 
-Onderwerpen die u in de start van het project moet behandelen, zijn afhankelijk van de grootte van het project, de vereisten en de technologie. Veelvoorkomende onderwerpen zijn:
+Onderwerpen die u in de start van het project moet behandelen, zijn afhankelijk van de projectgrootte, vereisten en technologie. Veelvoorkomende onderwerpen zijn:
 
 - Projectbudget
 - Teamintroductie

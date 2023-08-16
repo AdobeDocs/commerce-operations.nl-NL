@@ -13,7 +13,7 @@ ht-degree: 0%
 
 # Aanbevolen procedures voor indexeerconfiguratie
 
-Als u de prestaties van de site wilt optimaliseren en behouden, bekijkt en werkt u de indexeerconfiguratie bij met de best practices voor prestaties die in dit artikel worden beschreven.
+Als u de prestaties van de site wilt optimaliseren en behouden, bekijkt en werkt u de indexeerconfiguratie bij met behulp van de best practices voor prestaties die in dit artikel worden beschreven.
 
 ## Betrokken producten en versies
 
@@ -36,14 +36,14 @@ Volg de volgende aanbevolen procedures voor indexering om de prestaties van de s
 
 - Controleer de indexconfiguratie.
 - Indexeerders instellen op _[!UICONTROL Update on Schedule]_voor grote plaatsen, en plaatsen met frequente updates en zwaar verkeer. Zie [Indexbeheer](https://docs.magento.com/user-guide/system/index-management.html#change-the-index-mode).
-- Volg [best practices voor prestaties](../../../performance/configuration.md) voor het beheren van indexen.
+- Volgen [best practices voor prestaties](../../../performance/configuration.md) voor het beheren van indexen.
 
 >[!IMPORTANT]
 >
->De [!DNL Customer Grid] kan alleen opnieuw worden gedexeerd met de opdracht [!UICONTROL Update on Save] optie. Deze index ondersteunt het `Update by Schedule` optie.
+>De [!DNL Customer Grid] kan alleen opnieuw worden gedexeerd met de opdracht [!UICONTROL Update on Save] -optie. Deze index ondersteunt het `Update by Schedule` -optie.
 
 ## Aanvullende informatie
 
 - [Indexbeheer voor Admin-gebruikers](../../../configuration/cli/manage-indexers.md#configure-indexers)
-- [Indexbeheer met gebruik van de Magento CLI](https://experienceleague.adobe.com/docs/commerce-operations/configuration-guide/cli/manage-indexers.html)
+- [Indexbeheer met behulp van de Magento CLI](https://experienceleague.adobe.com/docs/commerce-operations/configuration-guide/cli/manage-indexers.html)
 - [Overzicht van indexering voor ontwikkelaars](https://developer.adobe.com/commerce/php/development/components/indexing/)

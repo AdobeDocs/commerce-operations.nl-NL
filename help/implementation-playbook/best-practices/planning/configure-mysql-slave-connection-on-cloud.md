@@ -17,9 +17,9 @@ ht-degree: 0%
 >
 >Dit artikel bevat industriestandaard softwaretermen die sommigen racistisch, seksistisch of onderdrukkend vinden en die de lezer kunnen kwetsen, traumatiseren of onwelkom maken. Adobe werkt eraan deze termen te verwijderen uit code, documentatie en gebruikerservaring.
 
-Adobe Commerce kan meerdere databases asynchroon lezen. Als u een hoge lading voor het gegevensbestand MySQL van een plaats van de Handel verwacht die op de architectuur van de wolkeninfrastructuur Pro wordt opgesteld, adviseert Adobe het toelaten van de slave MYSQL verbinding.
+Adobe Commerce kan meerdere databases asynchroon lezen. Als u een hoge lading voor het gegevensbestand MySQL van een plaats van de Handel verwacht die op de architectuur van de wolkeninfrastructuur Pro wordt opgesteld, adviseert de Adobe toelatend de slave MYSQL verbinding.
 
-Wanneer u de MYSQL slave verbinding toelaat, gebruikt Adobe Commerce een read-only verbinding aan het gegevensbestand om read-only verkeer op een niet-master knoop te ontvangen. De prestaties verbeteren door lading het in evenwicht brengen wanneer slechts één knoop lees-schrijf verkeer behandelt.
+Wanneer u de MYSQL slave verbinding toelaat, gebruikt Adobe Commerce een read-only verbinding aan het gegevensbestand om read-only verkeer op een niet hoofdknoop te ontvangen. De prestaties verbeteren door lading het in evenwicht brengen wanneer slechts één knoop lees-schrijf verkeer behandelt.
 
 ## Betrokken versies
 

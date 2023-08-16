@@ -16,11 +16,11 @@ ht-degree: 0%
 
 {{deprecate-split-db}}
 
-Na configuratie, worden de master gegevensbestanden gevormd als volgt:
+Na configuratie, worden de hoofdgegevensbestanden gevormd als volgt:
 
-- Hoofddatabase voor handel: 369 tabellen
-- Commerce-offerte: 11 tabellen
-- Database van de handel: 55 tabellen
+- Hoofdgegevensbestand van de Handel: 369 tabellen
+- Commerce quote-database: 11 tabellen
+- Database van de verkoop van de handel: 55 tabellen
 
 Om te verifiëren dat uw gesplitste gegevensbestanden behoorlijk werken, voer de volgende taken uit en verifieer dat het gegeven aan de gegevensbestandlijsten gebruikend een gegevensbestandhulpmiddel als wordt toegevoegd [fpmyadmin](../../installation/prerequisites/optional-software.md#phpmyadmin):
 

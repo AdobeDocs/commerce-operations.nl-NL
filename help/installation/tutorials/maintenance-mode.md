@@ -13,14 +13,14 @@ ht-degree: 0%
 
 De volgende handleiding verwijst naar een pagina voor de standaardonderhoudsmodus. Als u een aangepaste onderhoudspagina moet gebruiken, raadpleegt u [De aangepaste onderhoudspagina maken](../../upgrade/troubleshooting/maintenance-mode-options.md) onderwerp.
 
-Adobe Commerce en Magento Open Source gebruiken [onderhoudsmodus](../../configuration/bootstrap/application-modes.md#maintenance-mode) om bootstrapping uit te schakelen. Het uitschakelen van bootstrapping is handig als u uw site onderhoudt, bijwerkt of opnieuw configureert.
+Adobe Commerce en gebruik van Magento Open Source [onderhoudsmodus](../../configuration/bootstrap/application-modes.md#maintenance-mode) om bootstrapping uit te schakelen. Het uitschakelen van bootstrapping is handig als u uw site onderhoudt, bijwerkt of opnieuw configureert.
 
 De toepassing detecteert de onderhoudsmodus als volgt:
 
 * Indien `var/.maintenance.flag` bestaat niet, de onderhoudsmodus is uitgeschakeld en de toepassing werkt normaal.
 * Anders is de onderhoudsmodus ingeschakeld, tenzij `var/.maintenance.ip` bestaat.
 
-   `var/.maintenance.ip` kan een lijst van IP adressen bevatten. Als een ingangspunt wordt betreden gebruikend HTTP en het cliëntIP adres beantwoordt aan één van de ingangen in die lijst, dan is de onderhoudswijze weg.
+  `var/.maintenance.ip` kan een lijst van IP adressen bevatten. Als een ingangspunt wordt betreden gebruikend HTTP en het cliëntIP adres beantwoordt aan één van de ingangen in die lijst, dan is de onderhoudswijze weg.
 
 ## De toepassing installeren
 
@@ -44,7 +44,7 @@ bin/magento maintenance:disable [--ip=<ip address> ... --ip=<ip address>] | [ip=
 bin/magento maintenance:status
 ```
 
-De `--ip=<ip address>` Deze optie is een IP-adres dat wordt vrijgesteld van de onderhoudsmodus (bijvoorbeeld ontwikkelaars die het onderhoud uitvoeren). Om meer dan één IP adres in het zelfde bevel vrij te stellen, gebruik de optie veelvoudige tijden.
+De `--ip=<ip address>` is een IP-adres dat wordt vrijgesteld van de onderhoudsmodus (bijvoorbeeld ontwikkelaars die het onderhoud uitvoeren). Om meer dan één IP adres in het zelfde bevel vrij te stellen, gebruik de optie veelvoudige tijden.
 
 >[!NOTE]
 >

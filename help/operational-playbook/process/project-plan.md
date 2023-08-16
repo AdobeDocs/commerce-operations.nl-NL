@@ -11,7 +11,7 @@ ht-degree: 0%
 
 # Projectplan
 
-Om een project succesvol te laten verlopen, is het niet alleen nodig een gedetailleerd projectplan op te stellen, maar is het ook van belang dat de organisatie haar bedrijfsplan goed heeft uitgevoerd met haar producten, diensten, prijzen, modaal, markt, klanten en hun Geo-locatie. Zonder dit plan zou het moeilijk zijn een projectplan op te stellen.
+Om een project succesvol te laten verlopen, is het niet alleen nodig een gedetailleerd projectplan op te stellen, maar is het ook van belang dat de organisatie haar bedrijfsplan goed heeft uitgevoerd met haar producten, diensten, prijzen, modaal, markt, klanten en hun Geo-locatie. Zonder dit plan zou een projectplan moeilijk zijn.
 
 Het projectplan is het eerste document waarover het projectteam, de eigenaar van het product en de belanghebbenden het eens zijn. Het projectplan moet het volgende omvatten:
 

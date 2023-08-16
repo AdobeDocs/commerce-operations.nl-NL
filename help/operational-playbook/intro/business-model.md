@@ -47,7 +47,7 @@ Klantenservice voor B2B:
 - Levende chats
 - Veelgestelde vragen
 - Na verkoop
-- Opnieuw ordenen
+- Opnieuw
 
 Klantenservice voor B2C:
 
@@ -62,9 +62,9 @@ Klantenservice voor B2C:
 | Variabele | B2B | B2C |
 |----------|-----|-----|
 | Publiek | Ondernemingen | Individuele consumenten |
-| Belanghebbenden die bij de besluitvorming betrokken zijn | Verkoopvertegenwoordigers, managers | Individuele eindverbruikers |
+| Belanghebbenden die bij de besluitvorming betrokken zijn | Verkoopvertegenwoordigers, managers | Individuele eindgebruikers |
 | Aankoopvolume | Opsommingsopdrachten | Klein volume |
 | Prijs | Dynamische prijswijzigingen per cliënt, productaantal en/of betalingstermijn | Consistente prijzen |
 | Klantenservice | 24/7-ondersteuning gedurende het gehele aankoopproces | 24/7-ondersteuning voor en na aankoop. Meestal vereist |
 | Productdetails | Productafbeeldingen, video&#39;s, handleiding, casestudy&#39;s, demonstratie | Productvideo&#39;s, afbeeldingen, functies, promoties |
-| CTA | Zakelijk gericht | Gebruikergericht |
+| CTA | Bedrijfs-gericht | Gebruikergericht |

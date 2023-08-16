@@ -13,7 +13,7 @@ ht-degree: 0%
 
 Dit onderwerp bespreekt hoe te om lees-schrijf toestemmingen voor de groep van de Webserver te plaatsen alvorens u Adobe Commerce of Magento Open Source installeert. Dit is nodig, zodat de opdrachtregel bestanden naar het bestandssysteem kan schrijven.
 
-De procedure die u gebruikt, is anders, afhankelijk van het feit of u [gedeelde hosting](#set-permissions-for-one-user-on-shared-hosting) en één gebruiker hebben of [privéserver](#set-ownership-and-permissions-for-two-users) en hebben twee gebruikers.
+De procedure die u gebruikt, is anders, afhankelijk van het feit of u [gedeelde hosting](#set-permissions-for-one-user-on-shared-hosting) en één gebruiker hebben of als u een [privéserver](#set-ownership-and-permissions-for-two-users) en hebben twee gebruikers.
 
 ## Machtigingen instellen voor één gebruiker bij gedeelde hosting
 
@@ -49,7 +49,7 @@ U kunt als volgt machtigingen instellen voordat u de toepassing installeert:
    chmod u+x bin/magento
    ```
 
-   Als u desgewenst alle opdrachten op één regel wilt invoeren, voert u het volgende in, ervan uitgaande dat de toepassing is geïnstalleerd in `/var/www/html/magento2`:
+   Als u alle opdrachten op één regel wilt invoeren, voert u het volgende in, ervan uitgaande dat de toepassing is geïnstalleerd in `/var/www/html/magento2`:
 
    ```bash
    cd /var/www/html/magento2 && find var generated vendor pub/static pub/media app/etc -type f -exec chmod u+w {} + && find var generated vendor pub/static pub/media app/etc -type d -exec chmod u+w {} + && chmod u+x bin/magento
@@ -85,7 +85,7 @@ Voltooi de volgende taken in de getoonde orde:
 
 De webserver in staat stellen bestanden en mappen in het bestandssysteem te schrijven, maar ook te onderhouden *eigendom* door de eigenaar van het bestandssysteem, moeten beide gebruikers in dezelfde groep staan. Dit is nodig, zodat beide gebruikers toegang kunnen delen tot bestanden (inclusief bestanden die zijn gemaakt met de beheerfunctie of andere hulpprogramma&#39;s op het web).
 
-In deze sectie wordt besproken hoe u een eigenaar van een bestandssysteem kunt maken en deze gebruiker in de groep van de webserver kunt plaatsen. U kunt desgewenst een bestaande gebruikersaccount gebruiken; wij adviseren dat de gebruiker een sterk wachtwoord om veiligheidsredenen heeft.
+In deze sectie wordt besproken hoe u een eigenaar van een bestandssysteem kunt maken en deze gebruiker in de groep van de webserver kunt plaatsen. U kunt desgewenst een bestaande gebruikersaccount gebruiken. Om veiligheidsredenen raden we de gebruiker aan een sterk wachtwoord in te voeren.
 
 >[!NOTE]
 >
@@ -101,7 +101,7 @@ Als u een gebruiker wilt maken op CentOS of Ubuntu, voert u de volgende opdracht
 adduser <username>
 ```
 
-Als u de gebruiker een wachtwoord wilt geven, voert u de volgende opdracht in als een gebruiker met `root` rechten:
+Als u de gebruiker een wachtwoord wilt geven, voert u de volgende opdracht in als gebruiker met `root` rechten:
 
 ```bash
 passwd <username>
@@ -133,15 +133,15 @@ De gebruikersgroep van de webserver zoeken:
 
 * CentOS:
 
-   ```bash
-   grep -E -i '^user|^group' /etc/httpd/conf/httpd.conf
-   ```
+  ```bash
+  grep -E -i '^user|^group' /etc/httpd/conf/httpd.conf
+  ```
 
-   of
+  of
 
-   ```bash
-   grep -Ei '^user|^group' /etc/httpd/conf/httpd.conf
-   ```
+  ```bash
+  grep -Ei '^user|^group' /etc/httpd/conf/httpd.conf
+  ```
 
 De naam van de gebruiker en de groep zijn doorgaans beide `apache`.
 
@@ -158,7 +158,7 @@ Als u de eigenaar van het bestandssysteem in de primaire groep van de webserver 
 
 >[!NOTE]
 >
->De `-a -G` opties zijn belangrijk omdat ze toevoegen `apache` of `www-data` als *secundair* groep aan de gebruikersrekening, die de gebruiker bewaart *primair* groep. Het toevoegen van een secundaire groep aan een gebruikersrekening helpt [bestandseigendom en -machtigingen beperken](#set-ownership-and-permissions-for-two-users) om ervoor te zorgen dat leden van een gedeelde groep alleen toegang hebben tot bepaalde bestanden.
+>De `-a -G` opties zijn belangrijk omdat ze toevoegen `apache` of `www-data` als *secundair* groep aan de gebruikersrekening, die de gebruiker bewaart *primair* groep. Een secundaire groep toevoegen aan een gebruikersaccount helpt [bestandseigendom en -machtigingen beperken](#set-ownership-and-permissions-for-two-users) om ervoor te zorgen dat leden van een gedeelde groep alleen toegang hebben tot bepaalde bestanden.
 
 Bijvoorbeeld om de gebruiker toe te voegen `magento_user` aan de `apache` primaire groep op CentOS:
 
@@ -221,7 +221,7 @@ U stelt de eigendom en machtigingen in voordat u de toepassing installeert:
    chmod u+x bin/magento
    ```
 
-Als u desgewenst alle opdrachten op één regel wilt invoeren, voert u het volgende in, ervan uitgaande dat de toepassing is geïnstalleerd in `/var/www/html/magento2` en de naam van de webservergroep is `apache`:
+Als u alle opdrachten op één regel wilt invoeren, voert u het volgende in, ervan uitgaande dat de toepassing is geïnstalleerd in `/var/www/html/magento2` en de naam van de webservergroep is `apache`:
 
 ```bash
 cd /var/www/html/magento2 && find var generated vendor pub/static pub/media app/etc -type f -exec chmod g+w {} + && find var generated vendor pub/static pub/media app/etc -type d -exec chmod g+ws {} + && chown -R :apache . && chmod u+x bin/magento

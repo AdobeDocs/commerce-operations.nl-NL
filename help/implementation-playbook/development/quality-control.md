@@ -89,7 +89,7 @@ Het kwaliteitscontroleproces in het vorige diagram kan als volgt kort worden bes
   <tr>
     <td></td>
     <td>Evaluatie en rapportage</td>
-    <td>Voortgang van de test rapporteren naar lood voor QC en PM</td>
+    <td>Voortgang van de test rapporteren naar lood en PM voor QC</td>
     <td>Evaluatie van testresultaten en voortgang</td>
   </tr>
   <tr>
@@ -101,7 +101,7 @@ Het kwaliteitscontroleproces in het vorige diagram kan als volgt kort worden bes
   <tr>
     <td>UAT</td>
     <td>UAT</td>
-    <td>Feedback van klant of wijzigingsverzoeken controleren</td>
+    <td>Feedback van klant of wijzigingsverzoeken (CR's) controleren</td>
     <td>Follow-up</td>
   </tr>
   <tr>
@@ -131,7 +131,7 @@ Het kwaliteitscontroleproces in het vorige diagram kan als volgt kort worden bes
   <tr>
     <td></td>
     <td></td>
-    <td>Test uitvoeren voor deze taken</td>
+    <td>Tests uitvoeren voor deze taken</td>
     <td></td>
   </tr>
   <tr>
@@ -181,7 +181,7 @@ BrowserStack is een testplatform voor cloud&#39;s en mobiele apparaten waarmee o
 
 Postman is het samenwerkingsplatform voor API-ontwikkeling. Postman vereenvoudigt elke stap voor het samenstellen van een API en stroomlijnt de samenwerking zodat u betere API&#39;s kunt maken.
 
-SoapUI is een open-source webservice testtoepassing voor Simple Object Access Protocol (SOAP) en overdracht van representationele status (REST). De functionaliteit ervan omvat webservicecontrole; aanroepen, ontwikkelen, simuleren en roken; functionele tests; belasting- en conformiteitstests.
+SoapUI is een open-source webservice testtoepassing voor Simple Object Access Protocol (SOAP) en overdracht van representationele status (REST). De functionaliteit ervan omvat webservicecontrole, het aanroepen, ontwikkelen, simuleren en rokken, functionele tests, belasting- en compatibiliteitstests.
 
 ## Automatiseringstests
 

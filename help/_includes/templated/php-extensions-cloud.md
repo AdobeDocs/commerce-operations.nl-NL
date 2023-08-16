@@ -88,7 +88,7 @@ ht-degree: 0%
                 raphf<br>
                 recoderen<br>
                 redis<br>
-                shmop-sockets<br>
+                shmop sockets<br>
                 natrium<br>
                 ssh2<br>
                 gespannen<br>

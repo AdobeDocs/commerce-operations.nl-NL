@@ -1,6 +1,6 @@
 ---
 title: Beveiliging van installatie op locatie
-description: Meer informatie over manieren om de beveiligingspositie van uw Adobe Commerce- of Magento Open Source-installatie op locatie te verbeteren.
+description: Meer informatie over manieren om de beveiligingspositie van uw Adobe Commerce of Magento Open Source op locatie te verbeteren.
 feature: Install, Security
 exl-id: 56724a72-c64d-44d4-a886-90d97ae5fb6d
 source-git-commit: ce405a6bb548b177427e4c02640ce13149c48aff
@@ -16,11 +16,11 @@ ht-degree: 0%
 
 >[!NOTE]
 >
->Adobe heeft geen aanbeveling over het gebruik van SELinux; U kunt deze desgewenst gebruiken voor uitgebreide beveiliging. Als u SELinux gebruikt, moet u het correct vormen of Adobe Commerce en Magento Open Source kunnen onvoorspelbaar functioneren. Als u ervoor kiest SELinux te gebruiken, raadpleeg dan een bron zoals de [CentOS wiki](https://wiki.centos.org/HowTos/SELinux) regels op te stellen om communicatie mogelijk te maken.
+>Adobe heeft geen aanbeveling over het gebruik van SELinux; u kunt het voor verbeterde veiligheid gebruiken als u wilt. Als u SELinux gebruikt, moet u het op de juiste wijze configureren, anders kunnen de Adobe Commerce en de Magento Open Source onvoorspelbaar werken. Als u ervoor kiest SELinux te gebruiken, raadpleeg dan een bron zoals de [CentOS wiki](https://wiki.centos.org/HowTos/SELinux) regels op te stellen om communicatie mogelijk te maken.
 
 ## Suggesties voor installatie met Apache
 
-Als u SELinux inschakelt, kunnen er problemen optreden met het uitvoeren van het installatieprogramma, tenzij u het *beveiligingscontext* van sommige directory&#39;s, als volgt:
+Als u SELinux inschakelt, kunnen er problemen optreden met het uitvoeren van het installatieprogramma, tenzij u het *beveiligingscontext* van een aantal directory&#39;s, als volgt:
 
 ```bash
 chcon -R --type httpd_sys_rw_content_t <magento_root>/app/etc
@@ -65,7 +65,7 @@ Om Apache in staat te stellen een verbinding met een andere gastheer met toegela
 
 ## Poorten openen in uw firewall
 
-Afhankelijk van uw veiligheidsvereisten, zou u het noodzakelijk kunnen vinden om haven 80 en andere havens in uw firewall te openen. Wegens de gevoelige aard van voorzien van een netwerkveiligheid, adviseert Adobe sterk dat u met uw afdeling van IT alvorens te werk te gaan raadpleegt. Hier volgen enkele suggesties voor verwijzingen:
+Afhankelijk van uw veiligheidsvereisten, zou u het noodzakelijk kunnen vinden om haven 80 en andere havens in uw firewall te openen. Wegens de gevoelige aard van voorzien van een netwerkveiligheid, adviseert de Adobe sterk dat u met uw afdeling van IT alvorens te werk te gaan raadpleegt. Hier volgen enkele suggesties voor verwijzingen:
 
 * Ubuntu: [Documentatiepagina Ubuntu](https://help.ubuntu.com/community/IptablesHowTo)
 * CentOS: [Hoe-kan-ik-bestand voor CentOS](https://wiki.centos.org/HowTos/Network/IPTables).

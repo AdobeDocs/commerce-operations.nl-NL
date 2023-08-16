@@ -17,9 +17,9 @@ Er zijn twee versies [!DNL Commerce]:
 
 _Magento Open Source_ is de gratis versie, voorheen Magento Community genoemd. U kunt het platform downloaden, aanpassen en uitvoeren op uw eigen server of hostingprovider van uw keuze.
 
-De meeste handelaren gebruiken Magento Open Source vanwege de lage kosten en de open aard. Voor ontwikkelaars maakt het niet echt uit of ze zich ontwikkelen op Magento Open Source of Adobe Commerce. Adobe Commerce beschikt echter over meer ingebouwde functies die uit de verpakking kunnen worden gebruikt.
+De meeste handelaren gebruiken Magento Open Source vanwege de lage kosten en het open karakter. Voor ontwikkelaars maakt het niet echt uit of ze zich ontwikkelen op Magento Open Source of Adobe Commerce. Adobe Commerce beschikt echter over meer ingebouwde functies die uit de verpakking kunnen worden gebruikt.
 
-_Adobe Commerce_ is de betaalde versie, voorheen bekend als Magento Enterprise. De premiumversie is een groot aantal extra functies.
+_Adobe Commerce_ is de betaalde versie, die vroeger als Onderneming van het Magento wordt bekend. De premiumversie is een groot aantal extra functies.
 
 Adobe Commerce kan op locatie worden gehost. Zo host en ontwikkelt u zich lokaal op uw eigen server of kunt u een hostingprovider kiezen. Er is ook Adobe Commerce op cloudinfrastructuur, de cloudgehoste oplossing van Adobe. In de sectie van de Oplossing, kijken wij dieper in de verschillen tussen ontvangen (b.v., SaaS, op-gebouw) en PaaS het ontvangen oplossingen.
 

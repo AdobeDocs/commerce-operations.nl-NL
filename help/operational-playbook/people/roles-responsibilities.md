@@ -15,7 +15,7 @@ Een succesvol e-commerceproject vereist verscheidene rollen met verschillende ni
 
 ## Hoofd van Digital
 
-Het hoofd van Digital is verantwoordelijk voor het beheer van de elektronische handel en voor het toezicht op elk team om ervoor te zorgen dat iedereen naar behoren functioneert en naar het beoogde doel werkt. Enkele taken die het hoofd van Digital moet uitvoeren zijn:
+Het hoofd van Digital is verantwoordelijk voor het beheer van de elektronische handel en voor het toezicht op elk team om ervoor te zorgen dat iedereen naar behoren functioneert en naar het beoogde doel werkt. Enkele taken die het hoofd van Digital moet uitvoeren zijn onder meer:
 
 - Beheer van contracten
 - Partnerschappen
@@ -68,7 +68,7 @@ Ze moeten meerdere taken kunnen uitvoeren, de vereisten, de tijdlijnen, de taakv
 
 De ontwikkelaars zitten gewoonlijk onder het ecommerce team, maar soms zijn zij onder een afzonderlijk team van IT. Er kunnen verschillende soorten ontwikkelaars zijn, zoals:
 
-- Voorzijde
+- Frontend
 - Achtergrond
 - Volledige stapel
 
@@ -85,12 +85,12 @@ Het is van essentieel belang dat het team de basis van de site op de juiste mani
 - De interactie van de klant met de plaats
 - Inhoud
 - categorie
-- Prijzen
+- Prijsstelling
 - Inventaris
 
 Het IT-team bevat ook testers. De belangrijkste rol van testers is elk mogelijk scenario te testen dat zou kunnen breken wat de ontwikkelaars bouwen. Het grondig testen vermindert de waarschijnlijkheid inconsistenties, insecten, en prestatieskwesties wanneer de plaats lanceert, die klantenervaring kunnen beïnvloeden. In ecommerce, krijgt u één kans met de klant en het moet de eerste keer juist zijn.
 
-## Warehouse-team
+## Warehouse Team
 
 Hoewel de hele ervaring online plaatsvindt, is er nog steeds een fysieke wereld die het beheren van voorraden, het verpakken van de bestelling en het verzenden naar klanten omvat.
 
@@ -102,7 +102,7 @@ De verantwoordelijkheid van Logistics Manager is in de eerste plaats ervoor te z
 
 ### Inventarisbeheer
 
-De manager van de Inventaris moet de inventaris in één of meerdere pakhuizen controleren om ervoor te zorgen dat de producten de klanten opdracht geven de producten zijn die worden verscheept. Zij zijn verantwoordelijk voor het toezicht op de juiste verpakking van het product. Geen enkel bedrijf wil dat zijn klanten producten in onbevredigende staat ontvangen. presentatie is de sleutel.
+De manager van de Inventaris moet de inventaris in één of meerdere pakhuizen controleren om ervoor te zorgen dat de producten de klanten opdracht geven de producten zijn die worden verscheept. Zij zijn verantwoordelijk voor het toezicht op de juiste verpakking van het product. Geen enkel bedrijf wil dat zijn klanten producten in een onbevredigende situatie ontvangen; presentatie is essentieel.
 
 ## Team voor klantenservice
 
@@ -114,7 +114,7 @@ De teams van de Dienst van de klant gebruiken verschillende hulpmiddelen om met 
 - Live chat gebruiken
 - Chatbots beheren
 
-Het team van de Dienst van de Klant is ook verantwoordelijk voor het volgende:
+Het team van de klantenservice is ook verantwoordelijk voor het volgende:
 
 - Vragen en zorgen van klanten beantwoorden
 - Bezig met verwerken

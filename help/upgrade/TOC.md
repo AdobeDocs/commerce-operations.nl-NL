@@ -39,12 +39,12 @@ ht-degree: 0%
    - Gebruik de [!DNL Upgrade Compatibility Tool] {#use-upgrade-compatibility-tool}
       - [Het gereedschap uitvoeren in een opdrachtregelinterface](upgrade-compatibility-tool/run.md)
       - [Integreer met de [!DNL Site-Wide Analysis Tool]](upgrade-compatibility-tool/integrate-analysis-tool.md)
-      - [Het gereedschap uitvoeren in de Magento PHPStorm-insteekmodule](upgrade-compatibility-tool/run-configuration-phpstorm-plugin.md)
+      - [Het gereedschap uitvoeren in de PHPStorm-insteekmodule van het Magento](upgrade-compatibility-tool/run-configuration-phpstorm-plugin.md)
    - Rapportage {#reporting}
       - [Rapporten](upgrade-compatibility-tool/reports.md)
       - [Foutberichten](upgrade-compatibility-tool/error-messages.md)
    - [Gerelateerde gereedschappen](upgrade-compatibility-tool/related-tools.md)
-- Medewerkers {#developer}
+- Ontwikkelaars helpen {#developer}
    - [Een op een git gebaseerde installatie upgraden](developer/git-installs.md)
    - [Modules beheren](developer/manage-modules.md)
 - Problemen oplossen {#troubleshooting}

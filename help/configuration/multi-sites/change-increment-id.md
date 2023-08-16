@@ -15,16 +15,16 @@ In dit artikel wordt besproken hoe u de increment-id voor een entiteit in een ha
 
 ## Betrokken versies
 
-- Adobe Commerce (ter plaatse): 2.x.x
-- Adobe Commerce op cloudinfrastructuur: 2.x.x
+- Adobe Commerce (op locatie): 2.x.x
+- Adobe Commerce op cloud-infrastructuur: 2.x.x
 - MySQL: [elke ondersteunde versie](../../installation/prerequisites/database/mysql.md)
 
-## Wanneer moet u de increment-id wijzigen
+## Wanneer moet u de increment-id wijzigen?
 
 In de volgende gevallen moet u mogelijk de increment-id wijzigen voor nieuwe DB-entiteiten:
 
 - Na een harde back-up herstellen op een live site
-- Sommige transactiebestanden zijn verloren gegaan, maar hun id&#39;s worden al gebruikt door betalingsgateways (zoals PayPal) voor uw huidige Merchant-account. In dat geval verwerken de betaalgateways geen nieuwe orders die dezelfde id&#39;s hebben, en wordt de fout &#39;&#39;Dubbele factuur-id&#39;&#39; geretourneerd
+- Sommige transactiebestanden zijn verloren gegaan, maar hun id&#39;s worden al gebruikt door betalingsgateways (zoals PayPal) voor uw huidige Merchant-account. In dat geval verwerken de betaalgateways geen nieuwe orders die dezelfde id&#39;s hebben, en wordt de fout &quot;Dubbele factuur-id&quot; geretourneerd
 
 >[!INFO]
 >
@@ -54,7 +54,8 @@ ALTER TABLE sequence_{entity_type}_{store_id} AUTO_INCREMENT = {new_increment_va
 ```
 
 >[!INFO]
-Belangrijk: De nieuwe toenamewaarde moet groter zijn dan de huidige waarde.
+>
+Belangrijk: de nieuwe toenamewaarde moet groter zijn dan de huidige.
 
 Na het uitvoeren van de volgende query:
 
@@ -62,7 +63,7 @@ Na het uitvoeren van de volgende query:
 ALTER TABLE sequence_order_1 AUTO_INCREMENT = 2000;
 ```
 
-De volgende volgorde die bij de winkel wordt geplaatst `ID=1` zal de ID &#39;#100002000&#39; hebben.
+De volgende volgorde in de winkel `ID=1` zal de ID &#39;#100002000&#39; hebben.
 
 ## Aanvullende aanbevolen stappen voor cloudproductieomgevingen
 

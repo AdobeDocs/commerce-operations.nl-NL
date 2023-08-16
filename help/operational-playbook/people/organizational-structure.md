@@ -22,7 +22,7 @@ De voordelen van deze vorm van gecentraliseerd model in een digitaal implementat
 - Bevorderen van controle en consistentie
 - Uniforme begroting en strategie
 - Helpt schaalbaarheid
-- Biedt ondersteuning voor bredere bedrijven
+- Biedt ondersteuning voor bredere bedrijfsactiviteiten
 
 ## Projectstructuur
 

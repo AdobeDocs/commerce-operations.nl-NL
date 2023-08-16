@@ -34,7 +34,7 @@ stage:
     REDIS_BACKEND: '\Magento\Framework\Cache\Backend\Redis'
 ```
 
-Zie voor meer informatie de [`REDIS_BACKEND`](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure/env/stage/variables-deploy.html#redis_backend) variabele beschrijving in de _Handel in de infrastructuurgids voor de cloud_.
+Zie voor meer informatie de [`REDIS_BACKEND`](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure/env/stage/variables-deploy.html#redis_backend) variabele beschrijving in de _Handleiding voor handel in Cloud-infrastructuur_.
 
 >[!NOTE]
 >

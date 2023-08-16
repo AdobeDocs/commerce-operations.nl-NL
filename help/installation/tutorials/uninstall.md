@@ -1,6 +1,6 @@
 ---
 title: Adobe Commerce verwijderen of opnieuw installeren
-description: Voer de volgende stappen uit om installaties in de bedrijfsruimten van Adobe Commerce en Magento Open Source te verwijderen en opnieuw te installeren.
+description: Voer de volgende stappen uit om installaties van Adobe Commerce en Magento Open Source op locatie te verwijderen en opnieuw te installeren.
 exl-id: fbaeee2c-8da0-4c89-a6d1-882a65014520
 source-git-commit: 95ffff39d82cc9027fa633dffedf15193040802d
 workflow-type: tm+mt

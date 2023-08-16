@@ -66,11 +66,11 @@ Volg deze beste praktijken wanneer het vormen van `robots.txt` en `sitemap.xml` 
 >Zie [Robots voor site-toewijzing en zoekprogramma&#39;s toevoegen](https://devdocs.magento.com/cloud/trouble/robots-sitemap.html) voor gedetailleerde instructies.
 
 
-### Meerdere winkelcentra
+### Meerdere winkelvoorkeuren
 
 U kunt meerdere winkels instellen en uitvoeren met één Adobe Commerce-implementatie op een cloudinfrastructuur. Zie [Meerdere websites of winkels instellen](https://devdocs.magento.com/cloud/project/project-multi-sites.html).
 
-Dezelfde aanbevolen procedures voor het configureren van de `robots.txt` en `sitemap.xml` bestanden voor [één-plaatsopslag](#single-site-storefronts) is van toepassing op meerdere winkelcentra met twee belangrijke verschillen:
+Dezelfde aanbevolen procedures voor het configureren van de `robots.txt` en `sitemap.xml` bestanden voor [één-plaatsopslag](#single-site-storefronts) is van toepassing op multi-site winkelcentra met twee belangrijke verschillen:
 
 - Zorg ervoor dat de `robots.txt` en `sitemap.xml` bestandsnamen bevatten de namen van de overeenkomstige sites. Bijvoorbeeld:
    - `domaineone_robots.txt`
@@ -96,7 +96,7 @@ Gebruik de beheertoepassing om de `robots.txt` en `sitemap.xml` bestanden om te 
 
 >[!TIP]
 >
->Voor implementaties op locatie, waarbij u de bestanden schrijft, is afhankelijk van de manier waarop u Adobe Commerce hebt geïnstalleerd. Bestanden schrijven naar `/path/to/commerce/pub/media/` of `/path/to/commerce/media`, afhankelijk van wat voor installatie geschikt is.
+>Voor implementaties op locatie, waarbij u de bestanden schrijft, is afhankelijk van de manier waarop u Adobe Commerce hebt geïnstalleerd. Bestanden schrijven naar `/path/to/commerce/pub/media/` of `/path/to/commerce/media`, afhankelijk van wat het meest geschikt is voor uw installatie.
 
 ## Beveiliging
 

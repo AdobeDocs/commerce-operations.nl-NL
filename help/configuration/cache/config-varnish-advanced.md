@@ -14,7 +14,7 @@ ht-degree: 0%
 
 Varnish verstrekt verscheidene eigenschappen die klanten verhinderen lange vertragingen en onderbrekingen te ervaren wanneer de server van de Handel niet behoorlijk functioneert. Deze eigenschappen kunnen in worden gevormd `default.vcl` bestand. Dit onderwerp beschrijft de toevoegingen die de Handel in het VCL (de Taal van de Configuratie van de Varnish) dossier verstrekt u van Admin downloadt.
 
-Zie de [Varnish Reference Manual](https://varnish-cache.org/docs/6.3/reference/index.html) voor details over het gebruiken van de Taal van de Configuratie van de Varnish.
+Zie de [Naslaghandleiding voor vernis](https://varnish-cache.org/docs/6.3/reference/index.html) voor details over het gebruiken van de Taal van de Configuratie van de Varnish.
 
 ## Health check
 
@@ -36,7 +36,7 @@ Elke 5 seconden, roept deze gezondheidscontrole `pub/health_check.php` script. D
 
 De `health_check.php` het script bevindt zich in het dialoogvenster `pub` directory. Als de hoofdmap van de handel `pub`en zorg ervoor dat u het pad in het dialoogvenster `url` parameter van `/pub/health_check.php` tot `health_check.php`.
 
-Zie voor meer informatie de [Varnish health checks](https://varnish-cache.org/docs/6.3/users-guide/vcl-backends.html?highlight=health%20check#health-checks) documentatie.
+Zie de klasse [Varnish health checks](https://varnish-cache.org/docs/6.3/users-guide/vcl-backends.html?highlight=health%20check#health-checks) documentatie.
 
 ## Respijtmodus
 
@@ -53,7 +53,7 @@ Wanneer uit de gezondheidscontroles blijkt dat de handelsachterstand gezond is, 
 
 De maximumhoeveelheid tijd dat Varnish een stapelvoorwerp dient is de som respijtperiode (300 seconden door gebrek) en de waarde van TTL (86400 seconden door gebrek).
 
-De standaardrespijtperiode wijzigen vanuit de `default.vcl` bestand, bewerkt u de volgende regel in het dialoogvenster `vcl_hit` subroutine:
+De standaardrespijtperiode wijzigen vanuit de `default.vcl` bestand, bewerkt u de volgende regel in de `vcl_hit` subroutine:
 
 ```conf
 if (obj.ttl + 300s > 0s) {
@@ -77,7 +77,7 @@ Op alle andere machines, moet de instantie van de Handel toegang hebben tot het 
 
 U kunt het versieren van statische bestanden ook op alle computers uitschakelen. Dit is toegankelijk via de beheerder onder **Winkels** > Instellingen > **Configuratie** > **Geavanceerd** > **Ontwikkelaar** > **Instellingen Statische bestanden** > **Statische bestanden ondertekenen** = **Nee**.
 
-Tot slot moeten alle instanties van de Handel in productiemodus zijn. Voordat Varnish begint, wist u de cache bij elke instantie. Ga in Beheer naar **Systeem** > Gereedschappen > **Cachebeheer** en klik op **Magento-cache leegmaken**. U kunt ook de volgende opdracht uitvoeren om de cache te wissen:
+Tot slot moeten alle instanties van de Handel in productiemodus zijn. Voordat Varnish begint, wist u de cache bij elke instantie. Ga in Beheer naar **Systeem** > Gereedschappen > **Cachebeheer** en klik op **Cache van Magento leegmaken**. U kunt ook de volgende opdracht uitvoeren om de cache te wissen:
 
 ```bash
 bin/magento cache:flush
@@ -85,14 +85,14 @@ bin/magento cache:flush
 
 ### Installatie
 
-De Saint-mode maakt geen deel uit van het grootste Varnish-pakket. Het is een apart versienummer `vmod` die moeten worden gedownload en geïnstalleerd. Dientengevolge, zou u Varnish van bron, zoals die in de volgende artikelen wordt beschreven opnieuw moeten compileren:
+Saint mode maakt geen deel uit van het grootste Varnish-pakket. Het is een apart versienummer `vmod` die moeten worden gedownload en geïnstalleerd. Dientengevolge, zou u Varnish van bron, zoals die in de volgende artikelen wordt beschreven opnieuw moeten compileren:
 
 - [Varnish 6.4 installeren](https://varnish-cache.org/docs/6.4/installation/install.html)
 - [Varnish 6.0 installeren](https://varnish-cache.org/docs/6.0/installation/install.html) (LTS)
 
 Nadat u opnieuw compileert, kunt u de Sint-modusmodule installeren. Voer in het algemeen de volgende stappen uit:
 
-1. De broncode ophalen uit [Varnish modules](https://github.com/varnish/varnish-modules). Kloont de Git-versie (master versie) omdat de 0.9.x-versie een broncodefout bevat.
+1. De broncode ophalen uit [Varnish modules](https://github.com/varnish/varnish-modules). Kloont de Git-versie (hoofdversie) omdat de 0.9.x-versie een broncodecout bevat.
 1. Bouw de broncode met autotools:
 
    ```bash

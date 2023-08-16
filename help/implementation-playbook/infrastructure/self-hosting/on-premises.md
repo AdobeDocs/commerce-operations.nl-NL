@@ -35,19 +35,19 @@ Laten we dieper ingaan op de rollen en functies van elk aspect van de infrastruc
 
 1. Installeer de nieuwste versie van Magento Open Source of Adobe Commerce op Amazon EC2-exemplaren. De installatie bestaat uit de Adobe Commerce-toepassing, Nginx-webserver en PHP. Bouw het Amazon Machine Image (AMI) om nieuwe exemplaren in een Auto Scaling-groep te lanceren.
 
-1. Amazon Elasticsearch Service is een beheerde Elasticsearch-service voor het zoeken naar catalogi in Adobe Commerce.
+1. Amazon Elasticsearch Service is een beheerde Elasticsearch voor het zoeken naar catalogi in Adobe Commerce.
 
 1. Amazon ElastiCache voor Redis biedt een cachelaag voor de database.
 
-1. Gebruik Amazon Aurora of AmazonRDS om databasebeheer te vereenvoudigen (inclusief hoge beschikbaarheid en multi-master configuratie).
+1. Gebruik Amazon Aurora of AmazonRDS om het databasebeheer te vereenvoudigen (inclusief hoge beschikbaarheid en configuratie met meerdere hoofdmappen).
 
 1. EFSMount Target maakt het mogelijk om het Amazon Elastic File System (AmazonEFS) toe te wijzen aan instanties van Varnish en Adobe Commerce.
 
 1. Gebruik Amazon EFS om toegang te krijgen tot gedeelde configuratie in verschillende versies en gedeelde media-elementen in Adobe Commerce-instanties.
 
-## Cloudservices
+## Cloud-services
 
-Naast het verstrekken van een ondersteunend technologieplatform voor het inschakelen van processen DevOps op AWS rond uw milieu van Adobe Commerce, verstrekt AWS een inzameling van de diensten die (bij afwezigheid van) uw bestaande oplossingen van het het beheer van de softwareconfiguratie (SCM) kunnen verstrekken of verbeteren. Dit omvat AWSCodeCommit, AWSCodeBuild, AWSCodePipeline, en AWSCodeDeploy, die voor een beheerde broncontrole, bouwstijl, ononderbroken integratie/ononderbroken plaatsing (CI/CD), en plaatsingsdiensten toestaat.
+Naast het verstrekken van een ondersteunend technologieplatform voor het inschakelen van processen DevOps op AWS rond uw milieu van Adobe Commerce, verstrekt AWS een inzameling van de diensten die (bij afwezigheid van) uw bestaande oplossingen van het het beheer van de softwareconfiguratie (SCM) kunnen verstrekken of uitbreiden. Dit omvat AWSCodeCommit, AWSCodeBuild, AWSCodePipeline, en AWSCodeDeploy, die voor een beheerde broncontrole, bouwstijl, ononderbroken integratie/ononderbroken plaatsing (CI/CD), en plaatsingsdiensten toestaat.
 
 ## Cloud-migratie
 

@@ -1,5 +1,5 @@
 ---
-title: Platforms
+title: Platform Tools
 description: Kies de aanbevolen platformgereedschappen voor uw Adobe Commerce-implementatie.
 exl-id: 3fc164f9-a0fc-46e7-a54e-08ce101ccae7
 feature: Configuration
@@ -10,9 +10,9 @@ ht-degree: 0%
 
 ---
 
-# Gereedschappen voor Platforms
+# Platformgereedschappen
 
-Er is geen gebrek aan aspecten die goed doordacht en streng getest moeten zijn om een elektronische plaats te houden die zonder interferentie loopt. Niet alleen moet u de juiste oplossingen identificeren om elk aspect van de plaats-van gegevensopslag en programmering aan caching en veiligheid aan te pakken—maar u hebt het juiste proces nodig om de levering van een platform te verzekeren dat zowel regelmatig loopt en efficiënt kan worden gebouwd en worden geoptimaliseerd.
+Er is geen gebrek aan aspecten die goed doordacht en streng getest moeten zijn om een elektronische plaats te houden die zonder interferentie loopt. Niet alleen moet u de juiste oplossingen identificeren om elk aspect van de plaats-van gegevensopslag en programmering aan caching en veiligheid aan te pakken-maar u hebt het juiste proces nodig om de levering van een platform te verzekeren dat zowel regelmatig loopt en efficiënt kan worden gebouwd en worden geoptimaliseerd.
 
 Deze sectie biedt niet alleen een overzicht van de hulpmiddelen, de oplossingen, de processen, en de methodologieën die over een aantal implementaties van Adobe Commerce zijn getest en geperfectioneerd, maar ook onze aanbevelingen waarvoor de oplossingen specifieke bedrijfsbehoeften en doelstellingen het best passen.
 
@@ -66,7 +66,7 @@ De rijen van het bericht verstrekken een asynchroon communicatie mechanisme waar
 
 ## Beveiligingsgereedschappen
 
-De [Adobe Commerce Security Scan](https://docs.magento.com/user-guide/magento/security-scan.html) kunt u regelmatig uw winkelwebsites controleren en updates ontvangen voor bekende beveiligingsrisico&#39;s, malware en verouderde software. Doorgaans gebruikt u dit gereedschap wanneer u met het testen van gebruikersacceptatie (UAT) begint. Naast het Adobe Commerce Security Scan-hulpprogramma, dat gratis is en beschikbaar is voor alle implementaties en versies van Adobe Commerce, zijn er andere opties die kunnen worden gebruikt tijdens het CI/CD-proces en voor elke release.
+De [Adobe Commerce Security Scan](https://docs.magento.com/user-guide/magento/security-scan.html) biedt u de mogelijkheid om uw websites van uw winkel regelmatig te controleren en updates te ontvangen voor bekende beveiligingsrisico&#39;s, malware en verouderde software. Doorgaans gebruikt u dit gereedschap wanneer u met het testen van gebruikersacceptatie (UAT) begint. Naast het Adobe Commerce Security Scan-hulpprogramma, dat gratis is en beschikbaar is voor alle implementaties en versies van Adobe Commerce, zijn er andere opties die kunnen worden gebruikt tijdens het CI/CD-proces en voor elke release.
 
 SonarQube is een open-source platform voor kwaliteitsbeheer, ontworpen om de technische kwaliteit van uw code te analyseren en te meten. SonarQube biedt niet alleen een volledig rapport van codefouten, syntaxisfouten en kwetsbaarheden, maar ook suggesties en voorbeelden voor het corrigeren van de code. SonarQube is perfect voor gebruik in een CI/CD-omgeving als hulpmiddel om de code te analyseren voordat deze wordt geïmplementeerd.
 

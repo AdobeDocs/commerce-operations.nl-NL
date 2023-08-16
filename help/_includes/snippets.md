@@ -19,7 +19,7 @@ ht-degree: 0%
 
 >[!WARNING]
 >
->Alle bevelen van Magento CLI moeten door de [eigenaar van bestandssysteem](/help/configuration/cli/config-cli.md#prerequisites).
+>Alle Magento CLI bevelen moeten door worden in werking gesteld [eigenaar van bestandssysteem](/help/configuration/cli/config-cli.md#prerequisites).
 
 ## Back-upopdrachten {#tip-backup-command}
 

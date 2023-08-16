@@ -1,6 +1,6 @@
 ---
 title: Referentiearchitectuur
-description: Controleer diagrammen van de aanbevolen referentiearchitectuur voor Adobe Commerce- en Magento Open Source-implementaties.
+description: Diagrammen van de geadviseerde verwijzingsarchitectuur voor Adobe Commerce en de plaatsingen van de Magento Open Source herzien.
 exl-id: 85a6d3d6-f47f-4806-97bd-fa7a73605f4c
 source-git-commit: 95ffff39d82cc9027fa633dffedf15193040802d
 workflow-type: tm+mt
@@ -22,7 +22,7 @@ De [!DNL Commerce] Referentie-architectuurdiagram geeft de beste praktijkbenader
 De kleur van elk element in het diagram geeft aan of het element deel uitmaakt van Magento Open Source of Adobe Commerce en of dit vereist is.
 
 * Oranje elementen zijn vereist voor Magento Open Source
-* Grijselementen zijn optioneel voor Magento Open Source
+* Grijswaarden zijn optioneel voor Magento Open Source
 * Blauwe elementen zijn optioneel voor Adobe Commerce
 
 ![Referentiediagram voor de handel](../assets/performance/images/ref-architecture-2.3.png)
@@ -33,12 +33,12 @@ De volgende secties verstrekken aanbevelingen en overwegingen voor elke sectie v
 
 * A [!DNL Varnish] de cluster kan aan het verkeer van een plaats schrapen
 * Instantiegrootte afstemmen op basis van het aantal benodigde cachepagina&#39;s
-* Voor een hoge verkeersplaats, gebruik een [!DNL Varnish] Master om ervoor te zorgen dat één aanvraag (hoogstens) per weblaag op de cache wordt verwijderd
+* Voor een hoge verkeersplaats, gebruik een [!DNL Varnish] Master om ervoor te zorgen dat één aanvraag (maximaal) per weblaag op de cache wordt verwijderd
 
 ### Web
 
 * De schaal van knooppunten voor verkeer en redundantie inschakelen
-* Eén knooppunt is master en wordt afgesneden
+* Eén knooppunt is master en voert uitsnede uit
 * U kunt ook een toegewezen beheerdersknooppunten en werkbalkknooppunten gebruiken
 
 ### Cache
@@ -64,11 +64,11 @@ De volgende secties verstrekken aanbevelingen en overwegingen voor elke sectie v
 
 ### Aanbevolen [!DNL Varnish] referentiearchitectuur
 
-Magento biedt ondersteuning voor verschillende engines voor het in cache plaatsen van volledige pagina&#39;s (File, Memcache, Redis, Redis, [!DNL Varnish]) uit de doos, samen met uitgebreide dekking door uitbreidingen. [!DNL Varnish] is de aanbevolen cache-engine voor de volledige pagina.  [!DNL Commerce] ondersteunt veel verschillende [!DNL Varnish] configuraties.
+Magento ondersteunt meerdere engines voor het in cache plaatsen van volledige pagina&#39;s (File, Memcache, Redis, Redis, [!DNL Varnish]) uit de doos, samen met uitgebreide dekking door uitbreidingen. [!DNL Varnish] is de aanbevolen cache-engine voor de volledige pagina.  [!DNL Commerce] ondersteunt veel verschillende [!DNL Varnish] configuraties.
 
 Voor plaatsen die geen hoge beschikbaarheid vereisen, adviseren wij het gebruiken van eenvoudig [!DNL Varnish] installatie met Nginx SSL-beëindiging.
 
-![Eenvoudig [!DNL Varnish] Configuratie met SSL-beëindiging](../assets/performance/images/single-varnish-with-ssl-termination.png)
+![eenvoudig [!DNL Varnish] Configuratie met SSL-beëindiging](../assets/performance/images/single-varnish-with-ssl-termination.png)
 
 Voor plaatsen die hoge beschikbaarheid vereisen, adviseren wij gebruikend een 2 rij [!DNL Varnish] configuratie met een SSL-afsluitend taakverdelingsmechanisme.
 

@@ -1,5 +1,5 @@
 ---
-title: Onderwerptitel over tips en best practices
+title: Onderwerptitel van best practices
 description: Leer hoe u ...
 role: Developer
 feature: Best Practices
@@ -43,7 +43,7 @@ Available features: https://git.corp.adobe.com/AdobeDocs/exl-config/blob/master/
 
 Adobe Commerce op cloudinfrastructuur met Adobe Commerce versie 2.3.4 of lager en MariaDB versie 10.0 of lager.
 
-&lt;!— Bedrijfstype: B2C en B2B — alleen vermelden indien nodig/—>
+&lt;!— Bedrijfstype: B2C en B2B — alleen vermelden indien nodig/)—>
 
 ## Koptekst...
 

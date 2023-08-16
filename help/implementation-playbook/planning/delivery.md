@@ -34,7 +34,7 @@ Met het hybride model kunt u gebruikmaken van de kracht van de Agile-methode, wa
 
 - **Het juiste idee krijgen**—Dit is een pre-implementatiefase om ervoor te zorgen dat de vereisten, het ontwerp, en de technologieoplossing worden strategisch, gedocumenteerd, en over belanghebbenden samenwerken. De achterstand bij de implementatie wordt gegroeid en opgebouwd, er worden ontwikkelingspunten gepland en er wordt een sequentiële strategie voor de bouw van het product vastgesteld.
 
-- **Het idee op de juiste manier weergeven**—Dit is de implementatiefase om het product interactief te bouwen, grondig te testen en op de juiste wijze vrij te geven. De eerste stap is de ontwikkeling van de code door middel van meerdere sprints; elke sprint bevat in-sprint-ontwikkeling en -tests, gevolgd door systeemintegratietests, prestatie- en beveiligingstests, gebruikeracceptatietests en releaseactiviteiten.
+- **Het idee op de juiste manier weergeven**—Dit is de implementatiefase om het product interactief te bouwen, grondig te testen en op de juiste wijze vrij te geven. De eerste stap bestaat uit het ontwikkelen van de code via meerdere sprints. Elke sprint bevat in-sprint-ontwikkeling en -testen, gevolgd door systeemintegratietests, prestatie- en beveiligingstests, gebruikersacceptatietests en releaseactiviteiten.
 
 Projectplanning is een kritieke activiteit. Het leidt de belanghebbenden, de teams, de sponsors, en de projectmanagers op hoe te om, projectfasen te controleren te beheren en te controleren. Het helpt ook doelstellingen te identificeren, ontbrekende termijnen te vermijden, essentiële taken voorrang te geven, risico&#39;s te verminderen, en gewenste resultaten te leveren.
 

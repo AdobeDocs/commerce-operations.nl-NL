@@ -39,7 +39,7 @@ Het hebben van meer dan het geadviseerde maximum aantal categorieën kan plaatsp
 
 - Toekenbare verlenging van de responstijd voor cataloguspagina&#39;s die niet in de cache zijn geplaatst
 - Lange uitvoering en time-outs terwijl categorieën van de beheerder worden beheerd
-- Grotere grootte van corresponderende databasetabellen
+- Grotere grootte van overeenkomstige gegevensbestandlijsten
 - De grotere indexlijsten vergen tijd wordt vereist om indexeringsverrichtingen voor te voltooien `[category/product relation index\]`
 - Verhoogde verwerkingstijd om de bouw van de categorieboom, menuherwinning, en het beheersverrichtingen van categorieregels te voltooien
 
@@ -48,4 +48,4 @@ Het hebben van meer dan het geadviseerde maximum aantal categorieën kan plaatsp
 - [Overzicht van rubrieken](https://experienceleague.adobe.com/docs/commerce-admin/catalog/categories/categories.html)
 - [Overzicht van navigatie](https://experienceleague.adobe.com/docs/commerce-admin/catalog/catalog/navigation/navigation.html)
 - [Producttoewijzingen](https://experienceleague.adobe.com/docs/commerce-admin/catalog/categories/products-in-category/categories-product-assignments.html)
-- [Adobe Commerce op cloudinfrastructuur: Beste praktijken voor archiefconfiguratie](https://devdocs.magento.com/cloud/configure/configure-best-practices.html)
+- [Adobe Commerce op cloudinfrastructuur: aanbevolen procedures voor winkelconfiguratie](https://devdocs.magento.com/cloud/configure/configure-best-practices.html)

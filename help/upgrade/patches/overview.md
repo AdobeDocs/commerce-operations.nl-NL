@@ -31,7 +31,7 @@ Er zijn drie typen patches:
 
 ## Hotfixes
 
-Hotfixes zijn flarden die high-impact veiligheid of kwaliteitsmoeilijke situaties bevatten die vele verkopers beïnvloeden. Deze correcties worden toegepast op de volgende patchrelease voor de toepasselijke secundaire versie. Adobe geeft waar nodig hotfixes vrij.
+Hotfixes zijn flarden die high-impact veiligheid of kwaliteitsmoeilijke situaties bevatten die vele verkopers beïnvloeden. Deze correcties worden toegepast op de volgende patchrelease voor de toepasselijke secundaire versie. De Adobe geeft hotfixes terug zoals nodig.
 
 U kunt hotfixes in [Beveiligingscentrum](https://magento.com/security/patches). Volg de instructies op de pagina om het patchbestand te downloaden, afhankelijk van uw versie en installatietype. Gebruik de [opdrachtregel](../patches/apply.md#) of [Composer](../patches/apply.md) om hotfix toe te passen.
 
@@ -41,7 +41,7 @@ U kunt hotfixes in [Beveiligingscentrum](https://magento.com/security/patches). 
 
 ## Afzonderlijke patches
 
-Afzonderlijke patches bevatten oplossingen voor een bepaalde kwestie met een lage-effectkwaliteit. Deze correcties worden toegepast op de meest recente ondersteunde secundaire versie (bijvoorbeeld 2.4.x), maar kunnen ontbreken in de vorige ondersteunde secundaire versie (bijvoorbeeld 2.3.x). Adobe geeft zonodig afzonderlijke pleisters af.
+Afzonderlijke patches bevatten oplossingen voor een bepaalde kwestie met een lage-effectkwaliteit. Deze correcties worden toegepast op de meest recente ondersteunde secundaire versie (bijvoorbeeld 2.4.x), maar kunnen ontbreken in de vorige ondersteunde secundaire versie (bijvoorbeeld 2.3.x). Adobe geeft individuele pleisters vrij waar nodig.
 
 Gebruik de [[!DNL Quality Patches Tool]](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html){target="_blank"} om afzonderlijke pleisters toe te passen.
 
@@ -51,7 +51,7 @@ Gebruik de [[!DNL Quality Patches Tool]](https://experienceleague.adobe.com/tool
 
 ## Aangepaste patches
 
-Soms duurt het even voor het Team van de Techniek van Adobe om een insectenmoeilijke situatie te omvatten die op GitHub in een versie van Adobe Commerce of van de Magento Open Source Composer wordt gemaakt. Ondertussen kunt u een flard van GitHub tot stand brengen en gebruiken [`cweagans/composer-patches`](https://github.com/cweagans/composer-patches/) insteekmodule om deze toe te passen op de op Composer gebaseerde installatie.
+Soms duurt het even voor het Team van de Techniek van de Adobe om een insectenmoeilijke situatie te omvatten die op GitHub in een versie van Adobe Commerce of van de Composer van de Magento Open Source wordt gemaakt. Ondertussen kunt u een flard van GitHub tot stand brengen en gebruiken [`cweagans/composer-patches`](https://github.com/cweagans/composer-patches/) insteekmodule om deze toe te passen op de op Composer gebaseerde installatie.
 
 Gebruik de [opdrachtregel](apply.md#command-line) of [Composer](apply.md#composer) om aangepaste patches toe te passen.
 
@@ -62,7 +62,7 @@ Een aangepaste patch maken:
 1. Een `patches/composer` in uw lokale project.
 1. Identificeer GitHub begaat of trekt verzoek om voor het flard te gebruiken. In dit voorbeeld wordt het [`2d31571`](https://github.com/magento/magento2/commit/2d31571f1bacd11aa2ec795180abf682e0e9aede) commit, verbonden aan GitHub kwestie [#6474](https://github.com/magento/magento2/issues/6474).
 1. Voeg de `.patch` of de `.diff` extensies voor de URL toewijzen. Gebruiken `.diff` voor een kleinere bestandsgrootte. Bijvoorbeeld: [https://github.com/magento/magento2/commit/2d31571f1bacd11aa2ec795180abf682e0e9aede.diff](https://github.com/magento/magento2/commit/2d31571f1bacd11aa2ec795180abf682e0e9aede.diff)
-1. De pagina opslaan als een bestand in het dialoogvenster `patches/composer` directory. Bijvoorbeeld: `github-issue-6474.diff`.
+1. De pagina opslaan als een bestand in het dialoogvenster `patches/composer` directory. Bijvoorbeeld, `github-issue-6474.diff`.
 1. Het bestand bewerken en verwijderen `app/code/<VENDOR>/<PACKAGE>` van alle paden, zodat deze relatief zijn ten opzichte van de `vendor/<VENDOR>/<PACKAGE>` directory.
 
    >[!NOTE]

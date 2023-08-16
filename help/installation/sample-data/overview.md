@@ -1,6 +1,6 @@
 ---
 title: Overzicht van voorbeeldgegevens
-description: Meer informatie over het gebruik van voorbeeldgegevens voor Adobe Commerce- en Magento Open Source-projecten.
+description: Leer over het gebruiken van steekproefgegevens voor Adobe Commerce en Magento Open Source projecten.
 exl-id: 828b009d-a6ff-4db2-aa1a-838f6f55a194
 source-git-commit: 95ffff39d82cc9027fa633dffedf15193040802d
 workflow-type: tm+mt
@@ -24,4 +24,4 @@ U kunt optionele voorbeeldgegevens op een van de volgende manieren installeren:
 | Installatiemethode | Beschrijving | Vereist vaardigheidsniveau |
 |--- |--- |--- |
 | Composer gebruiken | [Uitvoeren `magento sampledata:deploy` om de hoofdmap van de toepassing te wijzigen `composer.json`](composer-packages.md) steekproefgegevensmodules in te schakelen. | Vereist Composer kennis en toegang tot het systeem van het Dossier van de Handel. |
-| Bewerkingen klonen | [Clone the GitHub repository](git-repositories.md) en de gegevensopslagplaats van de steekproef, dan verbind hen samen. | Alleen voor bijdragende ontwikkelaars. Iedereen anders zou één van de voorafgaande methodes moeten gebruiken. |
+| Bewaarruimten klonen | [Clone the GitHub repository](git-repositories.md) en de gegevensopslagplaats van de steekproef, dan verbind hen samen. | Alleen voor bijdragende ontwikkelaars. Iedereen anders zou één van de voorafgaande methodes moeten gebruiken. |

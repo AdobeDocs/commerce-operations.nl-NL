@@ -42,7 +42,7 @@ De Adobe Commerce-toepassing biedt geen ondersteuning voor codering of codering 
 
 ## Detectie van eindpunten en respons
 
-[!DNL CrowdStrike Falcon], een licht-gewicht, volgende-generatie eindpuntopsporing en reactie (EDR) agent die op alle eindpunten (met inbegrip van servers) binnen Adobe wordt geïnstalleerd, beschermt onze gegevens en onze systemen met ononderbroken controle en inzameling in real time die ons toelaat om aan bedreigingen snel te identificeren en te antwoorden.
+[!DNL CrowdStrike Falcon], een licht-gewicht, volgende-generatie eindpuntopsporing en reactie (EDR) agent die op alle eindpunten (met inbegrip van servers) binnen Adobe geïnstalleerd is, beschermt onze gegevens en onze systemen met ononderbroken controle en inzameling in real time die ons toelaat om aan bedreigingen snel te identificeren en te antwoorden.
 
 ## Penetentietests
 
@@ -54,7 +54,7 @@ Adobe Commerce vereist integratie van betaalgateway, waarbij creditcardgegevens 
 
 ## Adobe Commerce-toepassing
 
-Adobe test regelmatig de kerntoepassingscode op veiligheidskwetsbaarheid. Patches voor defecten en beveiligingsproblemen worden aan klanten geleverd. Het team van de Veiligheid van het Product valideert de producten van Adobe Commerce volgens de richtlijnen van de toepassingsveiligheid van OWASP. Verschillende hulpprogramma&#39;s voor beveiligingskwetsbaarheidsbeoordeling en externe leveranciers worden gebruikt om de naleving te testen en te controleren. Beveiligingsgereedschappen zijn onder meer:
+De Adobe test regelmatig de kerntoepassingscode op veiligheidskwetsbaarheid. Patches voor defecten en beveiligingsproblemen worden aan klanten geleverd. Het team van de Veiligheid van het Product valideert de producten van Adobe Commerce volgens de richtlijnen van de toepassingsveiligheid van OWASP. Verschillende hulpprogramma&#39;s voor beveiligingskwetsbaarheidsbeoordeling en externe leveranciers worden gebruikt om de naleving te testen en te controleren. Beveiligingsgereedschappen zijn onder meer:
 
 - Statisch en dynamisch scannen van veracode
 - Scannen naar RIPS-broncode

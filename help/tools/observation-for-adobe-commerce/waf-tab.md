@@ -36,7 +36,7 @@ De **[!DNL WAF Top 10 countries for blocked requests]** frame toont een aantal g
 
 ![WAF top 10 geregistreerde IP adressen](../../assets/tools/observation-for-adobe-commerce/waf-4.jpg)
 
-De **[!DNL WAF Top 10 logged IP Addresses]** het kader toont IP adressen in top 10 geregistreerde IP adressen door [!DNL firewall].
+De **[!DNL WAF Top 10 logged IP Addresses]** het kader toont IP adressen in de top 10 geregistreerde IP adressen door [!DNL firewall].
 
 ## [!DNL Top 10 WAF Rules Executed and Logged by IP address]
 

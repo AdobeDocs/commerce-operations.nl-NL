@@ -26,7 +26,7 @@ Voor verschillende functies voor de handel is minstens één snijbaan vereist, d
 
 >[!WARNING]
 >
->U kunt niet meer werken `dev/tools/cron.sh` omdat het script is verwijderd.
+>U kunt niet meer uitvoeren `dev/tools/cron.sh` omdat het script is verwijderd.
 
 >[!INFO]
 >
@@ -42,13 +42,12 @@ Deze sectie bespreekt hoe te om uw Commerce contab (namelijk de configuratie voo
 
 De _crontab_ Dit is de configuratie die wordt gebruikt om taken voor uitsnijden uit te voeren.
 
-De toepassing van de Handel gebruikt kroontaken die met verschillende configuraties kunnen lopen. De PHP bevel-lijn configuratie controleert de algemene kroonbaan die indexen opnieuw indexeert, e-mail produceert, sitemap, etc. produceert.
+De toepassing van de Handel gebruikt kroontaken die met verschillende configuraties kunnen lopen. De PHP bevel-lijn configuratie controleert de algemene kroonbaan die indexeerders opnieuw indexeert, e-mail produceert, sitemap, etc. produceert.
 
 >[!WARNING]
 >
 >- Om problemen tijdens installatie en verbetering te vermijden, adviseren wij sterk u om de zelfde PHP montages op zowel de PHP bevel-lijn configuratie als op de configuratie van de PHP Webserver stop-in toe te passen. Zie voor meer informatie [Vereiste PHP-instellingen](../../installation/prerequisites/php-settings.md).
 >- In een systeem met meerdere knooppunten kan de tab op slechts één knooppunt worden uitgevoerd. Dit geldt alleen voor u als u meer dan één webnode instelt om redenen die te maken hebben met prestaties of schaalbaarheid.
-
 
 ### De tab Handelsverkeer maken
 
@@ -72,7 +71,6 @@ Gebruiken `--force` om een bestaande tab te herschrijven.
 >
 >- `magento cron:install` herschrijft geen bestaande tab binnen `#~ MAGENTO START` en `#~ MAGENTO END` opmerkingen op uw tabblad.
 >- `magento cron:install --force` heeft geen invloed op banen in de bouwsector die buiten de opmerkingen van de Commerce vallen.
-
 
 Als u het tabblad wilt weergeven, voert u de volgende opdracht in als de eigenaar van het bestandssysteem:
 
@@ -138,7 +136,7 @@ Als u aangepaste uitsnijdtaken en -groepen wilt instellen, raadpleegt u [Aangepa
 
 >[!INFO]
 >
->U moet de bewerking tweemaal uitvoeren: de eerste keer om taken te ontdekken die moeten worden uitgevoerd en de tweede keer — om de taken zelf uit te voeren. De tweede uitsnijding moet op of na de `scheduled_at` tijd voor elke taak.
+>Je moet twee keer uitsnijden: de eerste keer dat je taken ontdekt die je moet uitvoeren en de tweede keer — om de taken zelf uit te voeren. De tweede uitsnijding moet op of na de `scheduled_at` tijd voor elke taak.
 
 ## Logboekregistratie
 

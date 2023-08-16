@@ -1,5 +1,5 @@
 ---
-title: Planning van implementatie
+title: Planning van de implementatie
 description: Leer over implementatie beste praktijken voor de planningsfase van projecten van Adobe Commerce.
 role: Developer, Admin, User
 feature: Best Practices
@@ -11,7 +11,7 @@ ht-degree: 0%
 
 ---
 
-# Planning
+# Planningsfase
 
 De planningsfase omvat de volgende activiteiten:
 
@@ -31,7 +31,7 @@ De volgende secties omvatten beste praktijkinformatie voor de planningsfase.
    - [Aanbevolen procedures voor het configureren van sites, winkels en winkelweergaven (cloudinfrastructuur)](sites-stores-store-views.md)
    - [Hoe te om te verhinderen-en te bevestigen-de vijf gemeenschappelijkste configuratiekwesties voor de plaatsen van Adobe Commerce](https://business.adobe.com/blog/how-to/usual-suspects-five-configuration-fixes-maximize-your-peak-sales)
    - [Aanbevolen procedures voor in cache plaatsen](https://docs.magento.com/user-guide/system/cache-management.html#best-practices-for-caching)
-   - [Volledige paginacache](https://developer.adobe.com/commerce/php/development/cache/page/public-content/)
+   - [Volledige pagina&#39;s in cache plaatsen](https://developer.adobe.com/commerce/php/development/cache/page/public-content/)
    - [OPcache-geheugengrootte](opcache-memory-size.md)
    - [Rapportageconfiguratie](reporting-configuration.md)
 

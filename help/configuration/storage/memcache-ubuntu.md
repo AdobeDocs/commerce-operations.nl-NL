@@ -21,13 +21,13 @@ In deze sectie vindt u instructies voor het installeren van een memcached op Ubu
 Omdat PHP geen native ondersteuning heeft voor memcache, moet je een extensie installeren voor PHP om deze te kunnen gebruiken. Er zijn twee PHP-extensies beschikbaar en het is belangrijk te decoderen welke extensie moet worden gebruikt:
 
 - `memcache` (_neen d_) - een oudere maar populaire extensie die niet regelmatig wordt onderhouden.
-De `memcache` momenteel extensie _niet_ werken met PHP 7. Zie [PHP-documentatie voor memcache](https://www.php.net/manual/en/book.memcache.php).
+De `memcache` momenteel extensie _niet_ Werken met PHP 7. Zie [PHP-documentatie voor memcache](https://www.php.net/manual/en/book.memcache.php).
 
-   De exacte naam is `php5-memcache` voor Ubuntu.
+  De exacte naam is `php5-memcache` voor Ubuntu.
 
 - `memcached` (_met een`d`_) - een nieuwere en onderhouden extensie die compatibel is met PHP 7. Zie [PHP-documentatie voor memcaching](https://www.php.net/manual/en/book.memcached.php).
 
-   De exacte naam is `php5-memcached` voor Ubuntu.
+  De exacte naam is `php5-memcached` voor Ubuntu.
 
 ## In de Ubuntu-cache plaatsen en configureren
 
@@ -65,7 +65,7 @@ De `memcache` momenteel extensie _niet_ werken met PHP 7. Zie [PHP-documentatie 
 
 ## Controleren of de cache werkt voordat Magento wordt geïnstalleerd
 
-Adobe raadt aan een memcaching te testen om te controleren of deze werkt voordat u Commerce installeert. Dit duurt slechts een paar minuten en kan het oplossen van problemen later vereenvoudigen.
+Adobe raadt aan een memcachegeheugen te testen om te controleren of dit werkt voordat u Commerce installeert. Dit neemt slechts een paar minuten in beslag en kan het oplossen van problemen later vereenvoudigen.
 
 ### Controleren of het in de cache geplaatste item wordt herkend door de webserver
 
@@ -97,7 +97,7 @@ Om te controleren of het in een cache plaatsen wordt herkend door de webserver:
 
 Deze test gebruikt een PHP script om te controleren of in een cache opgeslagen en opgehaalde cachegegevens kunnen worden opgeslagen.
 
-Voor meer informatie over deze test raadpleegt u [Memcache installeren en gebruiken in Ubuntu-zelfstudie](https://www.digitalocean.com/community/tutorials/how-to-install-and-use-memcache-on-ubuntu-14-04).
+Zie voor meer informatie over deze test [Memcache installeren en gebruiken in Ubuntu-zelfstudie](https://www.digitalocean.com/community/tutorials/how-to-install-and-use-memcache-on-ubuntu-14-04).
 
 Maken `cache-test.php` in de hoofdmap van de webserver met de volgende inhoud:
 
@@ -116,7 +116,7 @@ if ($result) {
 }
 ```
 
-Wanneer `<memcached hostname or ip>` is ofwel `localhost`, `127.0.0.1`of de hostnaam van de memcache of het IP-adres. De `<memcached port>` de luisterpoort is; standaard `11211`.
+Wanneer `<memcached hostname or ip>` is ofwel `localhost`, `127.0.0.1`of de hostnaam van de memcache of het IP-adres. De `<memcached port>` de luisterpoort is; standaard; `11211`.
 
 Ga naar die pagina in een webbrowser. Bijvoorbeeld
 
@@ -134,7 +134,7 @@ Tot slot kunt u de memachetoetsen bekijken gebruikend Telnet:
 telnet localhost <memcache port>
 ```
 
-Bij de herinnering, ga binnen
+Bij de herinnering, ga
 
 ```shell
 stats items
