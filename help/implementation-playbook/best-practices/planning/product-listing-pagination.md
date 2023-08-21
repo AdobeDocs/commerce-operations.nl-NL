@@ -2,9 +2,9 @@
 title: Aanbevolen procedures voor paginering van productaanbiedingen
 description: Leer hoe u de Adobe Commerce-prestaties kunt optimaliseren door het aantal producten te beheren dat op elke pagina van de winkelcatalogus wordt weergegeven.
 role: User, Admin
-feature: Best Practices, Catalogs
+feature: Best Practices, Catalog Management
 exl-id: 473f23a9-53fb-41a6-9b3a-af7bd1208be0
-source-git-commit: 94d7a57dcd006251e8eefbdb4ec3a5e140bf43f9
+source-git-commit: df8878a3fea19b8f1780b5037273e18b5a3f1373
 workflow-type: tm+mt
 source-wordcount: '176'
 ht-degree: 0%
