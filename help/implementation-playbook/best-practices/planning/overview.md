@@ -4,9 +4,9 @@ description: Leer over implementatie beste praktijken voor de planningsfase van 
 role: Developer, Admin, User
 feature: Best Practices
 exl-id: 6baeac79-8dc3-45b4-bb25-8f2add8b3443
-source-git-commit: 94d7a57dcd006251e8eefbdb4ec3a5e140bf43f9
+source-git-commit: 3e0187b7eeb6475ea9c20bc1da11c496b57853d1
 workflow-type: tm+mt
-source-wordcount: '248'
+source-wordcount: '243'
 ht-degree: 0%
 
 ---
@@ -37,8 +37,7 @@ De volgende secties omvatten beste praktijkinformatie voor de planningsfase.
 
 - **Databaseconfiguratie**
    - [Best practices voor databaseconfiguratie voor cloudimplementatie &#x200B;](database-on-cloud.md)
-   - [MySQL-&#x200B; voor slave-verbinding](configure-mysql-slave-connection-on-cloud.md)
-   - [MySQL triggergebruik](mysql-triggers-usage.md)
+   - [MySQL-&#x200B;](mysql-configuration.md)
 
 - **Services configureren**
    - [Snel instellen](https://devdocs.magento.com/cloud/cdn/configure-fastly.html)
@@ -57,17 +56,17 @@ De volgende secties omvatten beste praktijkinformatie voor de planningsfase.
 
 De volgende onderwerpen beschrijven best practices voor het optimaliseren van prestaties voor het configureren van uw Adobe Commerce-catalogus, inclusief aanbevolen maximumwaarden voor het aantal categorieën, producteffectieve SKU&#39;s, productvariaties, productkenmerken en opties, en meer.
 
-- [Categorieconfiguratie](category-limits.md)
-- [&#x200B;](product-sku-limits.md)
-- [Configuratie productvariatie](product-variations.md)
-- [Configuratie van productopties](product-options.md)
-- [&#x200B; productkenmerken](product-attributes-and-options.md)
-- [Pagineringsconfiguratie voor productaanbiedingen](product-listing-pagination.md)
+- [Categorieconfiguratie](catalog-management.md#category-limits)
+- [&#x200B;](catalog-management.md#product-sku-limits)
+- [Configuratie productvariatie](catalog-management.md#product-variations)
+- [Configuratie van productopties](catalog-management.md#product-options)
+- [&#x200B; productkenmerken](catalog-management.md#product-attributes)
+- [Pagineringsconfiguratie voor productaanbiedingen](catalog-management.md#product-listing-pagination)
 
 ## **Verkoop en marketing**
 
-- [Aanbevolen werkwijzen voor productkartongrens](product-cart.md)
-- [Aanbevolen procedures voor het configureren van promoties](product-cart-promotions.md)
+- [Aanbevolen werkwijzen voor productkartongrens](catalog-management.md#cart-limits)
+- [Aanbevolen procedures voor het configureren van promoties](catalog-management.md#promotions)
 
 ## **Projectbereikregels**
 

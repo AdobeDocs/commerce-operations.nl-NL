@@ -4,9 +4,9 @@ description: Leer hoe u database- en toepassingsinstellingen configureert om de 
 role: Developer, Admin
 feature: Best Practices
 exl-id: ca377dc8-c8bd-4f77-a24b-22a298e2bba4
-source-git-commit: 94d7a57dcd006251e8eefbdb4ec3a5e140bf43f9
+source-git-commit: 3e0187b7eeb6475ea9c20bc1da11c496b57853d1
 workflow-type: tm+mt
-source-wordcount: '687'
+source-wordcount: '680'
 ht-degree: 0%
 
 ---
@@ -72,7 +72,7 @@ De trekkers worden gebruikt om veranderingen in controletabellen te registreren.
 - Triggers worden geïnterpreteerd als code en MySQL compileert ze niet vooraf. Hooking op de transactieruimte van uw vraag, voegen zij de overheadkosten aan een parser en een interpreter voor elke vraag toe die met de lijst wordt uitgevoerd.
 - De trekkers delen de zelfde transactieruimte zoals de originele vragen, en terwijl die vragen voor sloten op de lijst concurreren, concurreren de trekkers onafhankelijk op sloten op een andere lijst.
 
-Zie voor meer informatie over alternatieven voor het gebruik van aangepaste triggers [MySQL-triggers effectief gebruiken](mysql-triggers-usage.md) in onze kennisbasis voor ondersteuning.
+Zie voor meer informatie over alternatieven voor het gebruik van aangepaste triggers [MySQL-triggers](mysql-configuration.md#triggers).
 
 ## Upgrade [!DNL ECE-Tools] naar versie 2002.0.21 of hoger {#ece-tools-version}
 

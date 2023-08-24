@@ -2,9 +2,9 @@
 user-guide-title: Afspeelmap voor implementatie
 user-guide-description: Leer meer over strategieën voor het plannen en implementeren van een geslaagde Adobe Commerce-site.
 mini-toc-levels: 3
-source-git-commit: 5aa1669e556e5b7bf5ed3777db0f026ccfff5e70
+source-git-commit: 3e0187b7eeb6475ea9c20bc1da11c496b57853d1
 workflow-type: tm+mt
-source-wordcount: '269'
+source-wordcount: '254'
 ht-degree: 0%
 
 ---
@@ -76,22 +76,14 @@ ht-degree: 0%
    - [Overzicht](best-practices/phases.md)
    - Planning {#planning}
       - [Overzicht](best-practices/planning/overview.md)
+      - [Catalogusbeheer](best-practices/planning/catalog-management.md)
       - [Configuratie van sites, winkels en winkelweergave](best-practices/planning/sites-stores-store-views.md)
       - [Rapportageconfiguratie](best-practices/planning/reporting-configuration.md)
       - [Databaseconfiguratie voor cloud-implementaties &#x200B;](best-practices/planning/database-on-cloud.md)
-      - [MySQL-&#x200B; voor slave-verbinding](best-practices/planning/configure-mysql-slave-connection-on-cloud.md)
-      - [MySQL triggergebruik](best-practices/planning/mysql-triggers-usage.md)
+      - [MySQL-configuratie](best-practices/planning/mysql-configuration.md)
       - [Redis-serviceconfiguratie](best-practices/planning/redis-service-configuration.md)
       - [OPcache-geheugengrootte](best-practices/planning/opcache-memory-size.md)
       - [Realpath cache-grootte](best-practices/planning/realpath-cache-size.md)
-      - [Categorieën](best-practices/planning/category-limits.md)
-      - [Product](best-practices/planning/product-sku-limits.md)
-      - [Productvariaties](best-practices/planning/product-variations.md)
-      - [Productopties](best-practices/planning/product-options.md)
-      - [Productkenmerken](best-practices/planning/product-attributes-and-options.md)
-      - [Paginering van productaanbiedingen](best-practices/planning/product-listing-pagination.md)
-      - [Productkartonnen limiet](best-practices/planning/product-cart.md)
-      - [Aanbiedingen](best-practices/planning/product-cart-promotions.md)
       - [Extensies](best-practices/planning/extensions.md)
       - [Partnerescalaties](best-practices/planning/partner-escalation.md)
       - [Betalingsopslagverwerking](best-practices/planning/payment-processing-storage.md)
@@ -112,10 +104,11 @@ ht-degree: 0%
       - [Overzicht](best-practices/maintenance/overview.md)
       - [Voorwaartse controle](best-practices/maintenance/frontend-performance.md)
       - [Indexeerconfiguratie](best-practices/maintenance/indexer-configuration.md)
+      - [Repareren op schaal](best-practices/maintenance/patching-at-scale.md)
       - [Bestelverwerking](best-practices/maintenance/order-processing-configuration.md)
+      - [Problemen met databaseprestaties oplossen](best-practices/maintenance/resolve-database-performance-issues.md)
       - [Admin-updates plannen op productiesites](best-practices/maintenance/scheduling-admin-updates-in-production.md)
       - [Services bijwerken](best-practices/maintenance/update-services.md)
       - [Controlelijst voor upgraden](best-practices/maintenance/upgrade-checklist.md)
-      - [Problemen met databaseprestaties oplossen](best-practices/maintenance/resolve-database-performance-issues.md)
       - [Voorwaarden voor upgrades voor MariaDB](best-practices/maintenance/commerce-235-upgrade-prerequisites-mariadb.md)
 - [Terugkeren naar operationele hulplijnen](https://experienceleague.adobe.com/docs/commerce-operations/operational-guides/home.html)
