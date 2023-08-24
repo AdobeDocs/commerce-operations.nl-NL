@@ -3,9 +3,9 @@ title: Onderhoudsfase implementatie
 description: Leer over implementatie beste praktijken voor de onderhoudsfase van projecten van Adobe Commerce.
 exl-id: bd052412-a41c-4dbd-9aba-ba2fcac31f2d
 feature: Best Practices
-source-git-commit: 94d7a57dcd006251e8eefbdb4ec3a5e140bf43f9
+source-git-commit: d0cb3b81ee50ebd7cbf65a4dddbf5c58acf04f0d
 workflow-type: tm+mt
-source-wordcount: '277'
+source-wordcount: '0'
 ht-degree: 0%
 
 ---
@@ -73,5 +73,6 @@ De volgende secties bevatten informatie over best practices voor de onderhoudsfa
 
 ### Upgrades
 
+- [Repareren op schaal](patching-at-scale.md)
 - [Services en onderdelen bijwerken naar de nieuwste &#x200B;](update-services.md)
 - [Controlelijst voor upgrades voor Adobe Commerce &#x200B;](upgrade-checklist.md)

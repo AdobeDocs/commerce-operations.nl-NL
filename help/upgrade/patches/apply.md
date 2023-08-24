@@ -2,9 +2,9 @@
 title: Patches toepassen
 description: Leer hoe u patches kunt toepassen op een Adobe Commerce- of Magento Open Source-project.
 exl-id: 1d5d81ad-0115-4575-adfd-dde7c2826d85
-source-git-commit: 95ffff39d82cc9027fa633dffedf15193040802d
+source-git-commit: 454f586737292341b3e6dd9a57cc92b3472c4b31
 workflow-type: tm+mt
-source-wordcount: '326'
+source-wordcount: '0'
 ht-degree: 0%
 
 ---
@@ -16,6 +16,11 @@ U kunt patches op een van de volgende manieren toepassen:
 - [[!DNL Quality Patches Tool]](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html){target="_blank"}
 - [Opdrachtregel](../patches/apply.md#command-line)
 - [Composer](../patches/apply.md#composer)
+
+
+>[!TIP]
+>
+>Zie [best practices](../../implementation-playbook/best-practices/maintenance/patching-at-scale.md) voor informatie over gecentraliseerde patches voor Adobe Commerce op bedrijfsniveau.
 
 ## Composer
 
