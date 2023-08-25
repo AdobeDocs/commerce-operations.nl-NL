@@ -2,9 +2,9 @@
 user-guide-title: Afspeelmap voor implementatie
 user-guide-description: Leer meer over strategieën voor het plannen en implementeren van een geslaagde Adobe Commerce-site.
 mini-toc-levels: 3
-source-git-commit: 7ab0342e3897e2804f5a43876197308c69ac1bb7
+source-git-commit: 42d027a3aedb8d395097d872a97998e76e547966
 workflow-type: tm+mt
-source-wordcount: '250'
+source-wordcount: '253'
 ht-degree: 0%
 
 ---
@@ -102,6 +102,7 @@ ht-degree: 0%
    - Onderhoud {#maintenance}
       - [Overzicht](best-practices/maintenance/overview.md)
       - [Voorwaartse controle](best-practices/maintenance/frontend-performance.md)
+      - [Optimaliseer de prestaties van de backend](best-practices/maintenance/backend-performance.md)
       - [Indexeerconfiguratie](best-practices/maintenance/indexer-configuration.md)
       - [Repareren op schaal](best-practices/maintenance/patching-at-scale.md)
       - [Bestelverwerking](best-practices/maintenance/order-processing-configuration.md)
