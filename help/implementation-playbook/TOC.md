@@ -2,9 +2,9 @@
 user-guide-title: Afspeelmap voor implementatie
 user-guide-description: Leer meer over strategieën voor het plannen en implementeren van een geslaagde Adobe Commerce-site.
 mini-toc-levels: 3
-source-git-commit: 42d027a3aedb8d395097d872a97998e76e547966
+source-git-commit: d33d1e24c38984d0abf0c7f8f5ad2eb804ff621d
 workflow-type: tm+mt
-source-wordcount: '253'
+source-wordcount: '278'
 ht-degree: 0%
 
 ---
@@ -36,7 +36,13 @@ ht-degree: 0%
    - [Integratiestrategie](architecture/integration-strategy.md)
    - [Uitbreidingsstrategie](architecture/extensibility-strategy.md)
    - [Integratieopties](architecture/integration-options.md)
-   - [Algemene referentiearchitectuur](architecture/global-reference.md)
+   - Algemene referentiearchitectuur {#global-reference-architecture}
+      - [Overzicht](architecture/global-reference/overview.md)
+      - [Voorbeelden](architecture/global-reference/examples.md)
+      - Composerontwikkeling {#composer}
+         - [Overzicht](architecture/global-reference/composer/overview.md)
+         - [Projectstructuur](architecture/global-reference/composer/project-structure.md)
+         - [Tips en trucs](architecture/global-reference/composer/tips-and-tricks.md)
    - Hoofdhandel {#headless}
       - [Voordelen](architecture/headless/benefits.md)
       - [Reizen zonder kop](architecture/headless/journey-to-headless.md)
@@ -89,6 +95,13 @@ ht-degree: 0%
       - [Betalingsopslagverwerking](best-practices/planning/payment-processing-storage.md)
    - Ontwikkeling {#development}
       - [Overzicht](best-practices/development/overview.md)
+      - [Algemene beste praktijken](best-practices/development/general.md)
+      - [Codebeheer](best-practices/development/code-management.md)
+      - [Codeherziening](best-practices/development/code-review.md)
+      - [Foutopsporing](best-practices/development/debugging.md)
+      - [Uitzonderingsafhandeling](best-practices/development/exception-handling.md)
+      - [Vertakkingen opvangen](best-practices/development/git-branching.md)
+      - [Grootte van catalogusafbeelding wijzigen](best-practices/development/catalog-image-resizing.md)
       - [Optimalisatie van afbeeldingen](best-practices/development/image-optimization.md)
       - [Problemen oplossen](best-practices/development/troubleshooting.md)
       - [CSS- en JS-bestanden optimaliseren](best-practices/development/optimize-css-js-files.md)

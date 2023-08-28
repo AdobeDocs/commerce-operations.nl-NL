@@ -4,9 +4,9 @@ description: Leer hoe gecentraliseerde patches voor Adobe Commerce u kunnen help
 role: Developer
 feature: Best Practices
 badge: label="Bijgedragen door Anton Evers, Sr. Technical Architect, Adobe" type="Informative" url="https://www.linkedin.com/in/anton-evers/" tooltip="Bijgedragen door Anton Evers"
-source-git-commit: d8ee656b4b1741b39f2eef1f5628a299377e774c
+source-git-commit: 9cda88a4aeb4cc58d8ec9c4417e3107885a6cdb8
 workflow-type: tm+mt
-source-wordcount: '0'
+source-wordcount: '1309'
 ht-degree: 0%
 
 ---
@@ -14,7 +14,7 @@ ht-degree: 0%
 
 # Aanbevolen procedures voor het distribueren van Adobe Commerce-patches op schaal
 
-Als u meerdere Adobe Commerce-installaties beheert, [patches](../../../upgrade/patches/apply.md) Dit kan een complex proces zijn. _Gecentraliseerde patches_ is een essentieel onderdeel van [algemene verwijzingsarchitectuur](../../architecture/global-reference.md) en een goede praktijk voor ondernemingen. Hiermee kunt u de juiste patches toepassen op al uw Adobe Commerce-installaties. Dit onderwerp verklaart hoe te om gecentraliseerde patchdistributie voor alle types van Adobe Commerce te bereiken [patches](../../../upgrade/patches/overview.md).
+Als u meerdere Adobe Commerce-installaties beheert, [patches](../../../upgrade/patches/apply.md) Dit kan een complex proces zijn. _Gecentraliseerde patches_ is een essentieel onderdeel van [algemene verwijzingsarchitectuur](../../architecture/global-reference/overview.md) en een goede praktijk voor ondernemingen. Hiermee kunt u de juiste patches toepassen op al uw Adobe Commerce-installaties. Dit onderwerp verklaart hoe te om gecentraliseerde patchdistributie voor alle types van Adobe Commerce te bereiken [patches](../../../upgrade/patches/overview.md).
 
 >[!NOTE]
 >
