@@ -2,10 +2,10 @@
 title: Beschikbaarheid van producten
 description: Ontdek welke Adobe Commerce-functies momenteel worden ondersteund en controleer of deze compatibel zijn met specifieke Adobe Commerce-releases.
 exl-id: 7e8e8ac2-a0b9-4023-a813-c0f1293e54c2
-source-git-commit: aadccd57794e5e1b07f6d863c2627f2a771509fc
+source-git-commit: 846d20fb0c973e4e7eccc41cfe26f877fffc561b
 workflow-type: tm+mt
-source-wordcount: '517'
-ht-degree: 14%
+source-wordcount: '540'
+ht-degree: 15%
 
 ---
 
@@ -30,7 +30,8 @@ In de volgende tabel ziet u de versieondersteuning voor elke extensie ten opzich
 | _Kanaalbeheer_ | - | 2.0.0 | 1.0.0+ | 1.0.0+ | 1.0.0+ | [Marketplace](https://commercemarketplace.adobe.com/magento-channel-manager.html)<br/> [Aanvullende informatie](https://experienceleague.adobe.com/docs/commerce-channels/channel-manager/release-notes.html) |
 | _Amazon Sales Channel_ | - | 4.1.0+ | 4.3.0+ | 4.3.0+ | 4.3.0+ | [Marketplace](https://commercemarketplace.adobe.com/magento-module-amazon.html)<br/> [Aanvullende informatie](https://experienceleague.adobe.com/docs/commerce-channels/amazon/release-notes.html) |
 | _Experience Platform Connector_ | 3.0.0-bèta1 | 1.0.0+ | 1.0.0+ | 1.0.0+ | 1.0.0+ | [Marketplace](https://commercemarketplace.adobe.com/magento-experience-platform-connector.html)<br/>[Opmerkingen bij de release](https://experienceleague.adobe.com/docs/commerce-merchant-services/experience-platform-connector/release-notes.html) |
-| _Store Fulfillment voor Adobe Commerce_ | - | 1.4.0 | 1.2.0+ | 1.2.0+ | 1.2.0+ | [Marketplace](https://commercemarketplace.adobe.com/store-fulfillment-magento-walmart.html)<br/> [Aanvullende informatie](https://experienceleague.adobe.com/docs/commerce-merchant-services/store-fulfillment/release-notes.html) |
+| _Page Builder_ | - | - | 1.7.2 | 1.7.1 | - | [Gebruikershandleiding](https://experienceleague.adobe.com/docs/commerce-admin/page-builder/guide-overview.html)<br/> [Aanvullende informatie](https://experienceleague.adobe.com/docs/commerce-admin/page-builder/release-notes.html) |              |
+| _Store Fulfillment voor Adobe Commerce_ | - | 1.5.0 | 1.2.0+ | 1.2.0+ | 1.2.0+ | [Marketplace](https://commercemarketplace.adobe.com/store-fulfillment-magento-walmart.html)<br/> [Aanvullende informatie](https://experienceleague.adobe.com/docs/commerce-merchant-services/store-fulfillment/release-notes.html) |
 
 ## Commerciële diensten
 
@@ -46,8 +47,8 @@ In de volgende tabel ziet u de versieondersteuning voor elke service ten opzicht
 
 | **Adobe Commerce-versies** | 2.4.7-bèta1 | 2.4.6 | 2.4.5 | 2.4.4 | 2.4.3 |                                                                                                                                                                                                                                                |
 |--------------------------------------|-------------|--------|--------|--------|--------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| _Catalogusservice voor Adobe Commerce_ | 1.9 | 1.9 | 1.9 | 1.9 | - | [Overzicht](https://experienceleague.adobe.com/docs/commerce-merchant-services/catalog-service/guide-overview.html)<br/> [Aanvullende informatie](https://experienceleague.adobe.com/docs/commerce-merchant-services/catalog-service/release-notes.html) |
-| _Live zoeken_ | 3.01 | 3.01 | 3.01 | 3.01 | - | [Marketplace](https://commercemarketplace.adobe.com/magento-live-search.html)<br/>[Opmerkingen bij de release](https://experienceleague.adobe.com/docs/commerce-merchant-services/live-search/release-notes.html) |
-| _Betalingsdiensten_ | 2.10 | 2.10 | 2.10 | 2.10 | - | [Marketplace](https://commercemarketplace.adobe.com/magento-payment-services.html)<br/> [Aanvullende informatie](https://commercemarketplace.adobe.com/magento-payment-services.html) |
+| _Catalogusservice voor Adobe Commerce_ | 1.1.2 | 1.1.2 | 1.1.2 | 1.1.2 | - | [Overzicht](https://experienceleague.adobe.com/docs/commerce-merchant-services/catalog-service/guide-overview.html)<br/> [Aanvullende informatie](https://experienceleague.adobe.com/docs/commerce-merchant-services/catalog-service/release-notes.html) |
+| _Live zoeken_ | 3.0.2 | 3.0.2 | 3.0.2 | 3.0.2 | - | [Marketplace](https://commercemarketplace.adobe.com/magento-live-search.html)<br/>[Opmerkingen bij de release](https://experienceleague.adobe.com/docs/commerce-merchant-services/live-search/release-notes.html) |
+| _Betalingsdiensten_ | 2.1.1 | 2.1.1 | 2.1.1 | 2.1.1 | - | [Marketplace](https://commercemarketplace.adobe.com/magento-payment-services.html)<br/> [Aanvullende informatie](https://experienceleague.adobe.com/docs/commerce-merchant-services/payment-services/release-notes.html) |
 | _Product Recommendations_ | 5.0 | 5.0 | 5.0 | 5.0 | - | [Marketplace](https://commercemarketplace.adobe.com/magento-product-recommendations.html)<br/> [Aanvullende informatie](https://experienceleague.adobe.com/docs/commerce-merchant-services/product-recommendations/release-notes.html) |
 | _Snelle afhandeling_ | - | 1.0.0+ | 1.2.0+ | 1.0.0+ | 1.2.0+ | [Marketplace](https://commercemarketplace.adobe.com/magento-quick-checkout.html)<br/> [Aanvullende informatie](https://experienceleague.adobe.com/docs/commerce-merchant-services/product-recommendations/release-notes.html) |
