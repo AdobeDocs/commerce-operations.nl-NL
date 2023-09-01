@@ -2,9 +2,9 @@
 user-guide-title: Afspeelmap voor implementatie
 user-guide-description: Leer meer over strategieën voor het plannen en implementeren van een geslaagde Adobe Commerce-site.
 mini-toc-levels: 3
-source-git-commit: d33d1e24c38984d0abf0c7f8f5ad2eb804ff621d
+source-git-commit: c737a8e902c960c933e54e2521107475bb1e5a22
 workflow-type: tm+mt
-source-wordcount: '278'
+source-wordcount: '275'
 ht-degree: 0%
 
 ---
@@ -63,8 +63,6 @@ ht-degree: 0%
       - [Overzicht](infrastructure/cloud/overview.md)
       - [Regio&#39;s](infrastructure/cloud/regions.md)
       - [Technologieën](infrastructure/cloud/technology.md)
-      - [Omgevingen](infrastructure/cloud/environments.md)
-      - [Beheerde services](infrastructure/cloud/managed-services.md)
       - [Beveiliging en naleving](infrastructure/cloud/security.md)
    - Optimalisatie van prestaties {#performance}
       - [Typische problemen](infrastructure/performance/optimization.md)
