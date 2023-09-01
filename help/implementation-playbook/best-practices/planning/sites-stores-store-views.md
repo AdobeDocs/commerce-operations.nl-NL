@@ -4,20 +4,16 @@ description: Leer beste praktijken voor het vormen van plaatsen, opslag, en opsl
 role: Admin
 feature: Best Practices
 exl-id: 3ea0c6c5-15a9-4e77-b4d0-ce15721c7167
-source-git-commit: 94d7a57dcd006251e8eefbdb4ec3a5e140bf43f9
+source-git-commit: a81e88a4293880ae90cd531ce60c5a2b177188f2
 workflow-type: tm+mt
-source-wordcount: '280'
+source-wordcount: '237'
 ht-degree: 0%
 
 ---
 
 # Beste praktijken voor het vormen van plaatsen, opslag en opslagmening
 
-Voor de beste prestaties van de site configureert u maximaal 50 sites, 50 winkels en 50 winkelweergaven voor Adobe Commerce op projecten met cloudinfrastructuur.
-
->[!NOTE]
->
->Voor Adobe Commerce op cloudinfrastructuur zijn de beste werkwijzen specifiek van toepassing op de productieomgeving (en mogelijk op de Pro-architectuur, afhankelijk van de beperkingen van de resources), die meer middelen zou hebben dan de integratie- en ontwikkelomgevingen. Voor integratie (Pro en Starter) en het Opvoeren milieu&#39;s (Starter), verminder het aantal opslagmeningen tot minder dan 5 of 10 (onderworpen aan technische controle).
+Voor Adobe Commerce op cloudinfrastructuur zijn de beste werkwijzen specifiek van toepassing op de productieomgeving (en mogelijk op de Pro-architectuur, afhankelijk van de beperkingen van de resources), die meer middelen zou hebben dan de integratie- en ontwikkelomgevingen.
 
 ## Betrokken producten en versies
 

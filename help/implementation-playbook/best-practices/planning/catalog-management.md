@@ -3,9 +3,9 @@ title: Best practices voor catalogusbeheer
 description: Meer informatie over aanbevelingen voor het configureren van kartlimieten en productkenmerken, het aanbieden van paginering, opties, promoties en variaties.
 role: Developer
 feature: Best Practices, Catalog Management
-source-git-commit: 3e0187b7eeb6475ea9c20bc1da11c496b57853d1
+source-git-commit: a81e88a4293880ae90cd531ce60c5a2b177188f2
 workflow-type: tm+mt
-source-wordcount: '1876'
+source-wordcount: '1420'
 ht-degree: 0%
 
 ---
@@ -25,16 +25,7 @@ De best practices voor catalogusbeheer die hier worden beschreven, hebben betrek
 
 ## Grenswaarden voor winkelwagentjes
 
-Voor de beste prestaties gebruikt u de volgende richtlijnen voor het beheer van de kartellimieten voor Adobe Commerce en Magento Open Source:
-
-- Voor versies 2.3.x - 2.4.2, sta een maximum van 100 producten in een kar toe.
-- Voor versies 2.4.3 en later, verhoogde de verbetering aan verkoopregelmogelijkheden het kartmaximum tot 750.
-
-Voor versies 2.3.x - 2.4.2, zijn de verwachte prestaties gebaseerd op de grenzen van het winkelwagentje:
-
-- Tot maximaal **100** producten in een kar-het product werkt, die prestatiesdoelstellingen voor reactietijd bereiken.
-- Tot maximaal **300** producten in een winkelwagentje - het product werkt, maar de reactietijd neemt toe boven de doelen.
-- Boven **500** producten in een winkelwagentje - de winkelwagentjes en de kassa werken niet altijd
+Voor de beste prestaties gebruikt u de volgende richtlijnen voor het beheer van de kartellimieten voor Adobe Commerce en Magento Open Source.
 
 ### Betrokken producten en versies
 
@@ -50,20 +41,9 @@ Gebruik de volgende strategieën om het aantal winkelwagentjes te beheren
 - Hiermee splitst u ordes in verschillende kleinere bestellingen met een kleiner aantal rijen met behulp van de optie [!UICONTROL Add Item by SKU] gebruiken.
 - Voeg alleen de aangepaste logica en aanpassing van het winkelwagentje toe die zijn vereist om een lijst met items te laden.
 
-### Mogelijke gevolgen voor de prestaties
-
-Als u meer dan het aanbevolen maximumaantal producten in de kar hebt, kan dit de prestaties van de site op de volgende manieren beïnvloeden:
-
-- Verhoogde responstijd voor het opvragen van gegevens, validatie van winkelwagentjes, controles voor het toepassen van prijsregels, en belasting en totale berekeningen.
-- Verhoogde responstijd voor minicart-rendering, inclusief rendering van cartweergaven, uitcheckflow en uitvoering.
-- Verhoogde laadtijd voor alle sitepagina&#39;s waarin het minicart aanwezig is.
-
 ## Categoriebeperkingen
 
-Configureer voor de beste prestaties niet meer dan het maximale aanbevolen aantal categorieën voor Adobe Commerce-sites.
-
-- Voor Adobe Commerce versie 2.4.2 en hoger configureert u maximaal 6000 categorieën
-- Voor Adobe Commerce versie 2.3.x en 2.4.0 tot 2.4.1-p1 configureert u maximaal 3000 categorieën
+Het vormen van een groot aantal categorieën kan prestaties beïnvloeden.
 
 ### Betrokken producten en versies
 
@@ -80,25 +60,9 @@ Gebruik de volgende strategieën om het aantal categorieën te verminderen:
 - Niet-actieve categorieën verwijderen
 - Catalogusdiepte optimaliseren in de navigatie
 
-### Mogelijke gevolgen voor de prestaties
-
-Het hebben van meer dan het geadviseerde maximum aantal categorieën kan plaatsprestaties op de volgende manieren beïnvloeden:
-
-- Toekenbare verlenging van de responstijd voor cataloguspagina&#39;s die niet in de cache zijn geplaatst
-- Lange uitvoering en time-outs terwijl categorieën van de beheerder worden beheerd
-- Grotere grootte van overeenkomstige gegevensbestandlijsten
-- De grotere indexlijsten vergen tijd wordt vereist om indexeringsverrichtingen voor te voltooien `[category/product relation index\]`
-- Verhoogde verwerkingstijd om de bouw van de categorieboom, menuherwinning, en het beheersverrichtingen van categorieregels te voltooien
-
 ## Productkenmerken
 
-- Voor de beste prestaties, vorm niet meer dan het maximum geadviseerde aantal productattributen of opties van productattributen.
-
-- **Productkenmerken**—
-   - Voor Adobe Commerce versie 2.3.x en 2.4.0 tot 2.4.1-p1 configureert u maximaal 500 kenmerken
-   - Voor Adobe Commerce versie 2.4.2 en hoger kunt u maximaal 1500 productkenmerken configureren
-- **Opties voor productkenmerken**-Vorm tot 100 attributenopties voor elk attribuut
-- **Productkenmerksets**-Vorm een maximum van 1000 attributenreeksen
+Het configureren van te veel productkenmerken of productkenmerkopties kan de prestaties beïnvloeden.
 
 >[!NOTE]
 >
@@ -170,7 +134,7 @@ Veel configureren **kenmerkopties** kan de prestaties van de site op de volgende
 
 ## Productopties
 
-Voor de beste prestaties configureert u maximaal 100 productopties per product.
+Het configureren van te veel productopties per product kan de prestaties beïnvloeden.
 
 ### Betrokken producten en versies
 
@@ -181,7 +145,7 @@ Voor de beste prestaties configureert u maximaal 100 productopties per product.
 
 ### Het aantal opties verminderen
 
-Gebruik de volgende strategieën om het aantal productopties te verminderen voor de beste prestaties van de site:
+Gebruik de volgende strategieën om het aantal productopties per product te verminderen:
 
 - Complexe producten en aangepaste opties configureren als bron van productvariaties.
 - In plaats van globale productmalplaatjes en optiecontainers te creëren die op alle producten van toepassing zijn, gebruik attributenreeksen om specifieke productmalplaatjes met gerichte attributen en opties te bouwen.
@@ -202,9 +166,7 @@ De hierboven vermelde verhogingen beïnvloeden mogelijk de prestaties van de sit
 
 ## Paginering van productaanbiedingen
 
-Geef voor de beste prestaties maximaal 48 producten per pagina weer.
-
-U kunt Adobe Commerce zodanig configureren dat kopers alle producten van de categorie op één pagina kunnen bekijken. Als het aantal categorieproducten beduidend meer dan 48 producten is, werk de configuratie van de Catalogus voor de controles van de paginering van de opslagruimte bij.
+Het weergeven van te veel producten per pagina kan de prestaties beïnvloeden.
 
 ### Betrokken producten en versies
 
@@ -215,24 +177,13 @@ U kunt Adobe Commerce zodanig configureren dat kopers alle producten van de cate
 
 ### Configuratie van productlijsten bijwerken
 
-Als u meer dan 48 producten in om het even welke categorie hebt, werk de configuratie van de archiefcatalogus bij om de optie onbruikbaar te maken om **Alle producten per pagina toestaan**.
+Als een categorie te veel producten bevat, werkt u de configuratie van de winkelcatalogus bij om de optie voor **Alle producten per pagina toestaan**.
 
 Nadat u deze optie hebt uitgeschakeld, gebruikt Adobe Commerce de besturingselementen voor de paginering van de winkelpagina van het product om het aantal producten te beheren dat in winkelcomponenten wordt weergegeven. Zie voor instructies [Pagineringsbesturingselementen configureren](https://experienceleague.adobe.com/docs/commerce-admin/catalog/catalog/navigation/navigation-product-listings.html#configure-the-pagination-controls).
 
 ## SKU-limieten voor producten
 
-Om de prestaties te maximaliseren, is het geadviseerde maximum voor efficiënte product het Houting Units (SKUs) 242 miljoen. Dit effectieve SKU-maximum wordt berekend als:
-
-```text
-Effective SKU = N[SKUs] x N[Stores] x N[Customer groups]
-```
-
-Waarbij:
-
-- N staat als het aantal artikelen voor die categorie
-- De groepen van de klant omvatten gedeelde catalogi, aangezien het een extra klantengroep creeert.
-
-Als u meer dan het maximale aantal effectieve SKU&#39;s hebt, vertraagt u het ophalen van productgegevens en neemt de tijd voor het voltooien van bewerkingen of indexaties in het deelvenster Beheer toe.
+Het vormen van teveel product SKUs kan prestaties beïnvloeden door de terugwinning van productgegevens te vertragen en de tijd te verhogen om verrichtingen Admin of indexaties te voltooien.
 
 ### Betrokken producten en versies
 
@@ -246,7 +197,7 @@ Als u meer dan het maximale aantal effectieve SKU&#39;s hebt, vertraagt u het op
 Gebruik de volgende strategieën om het aantal producten (SKU&#39;s) te verminderen:
 
 - Multipliers minimaliseren—
-   - Door websites te consolideren vermindert u de vermenigvuldiger. Als u 50.000 SKUs, tien Websites, en tien Groepen van de Klant hebt, is het Effectieve Aantal SKUs 5 miljoen. Het verwijderen van vijf Klantengroepen vermindert Effectieve SKUs tot 2.5 miljoen.
+   - Door websites te consolideren vermindert u de vermenigvuldiger.
    - Gebruik alternatieve productfuncties voor aangepaste prijzen om gedeelde catalogus en klantgroepvermenigvuldigers te vervangen.
    - Zowel de klantengroepen als de gedeelde catalogusfunctie als vermenigvuldigers voor het aantal efficiënte SKUs in een opslag.
 - De catalogus herstructureren—
@@ -259,7 +210,7 @@ Gebruik de volgende strategieën om het aantal producten (SKU&#39;s) te verminde
 
 ## Productvariaties
 
-Voor de beste prestaties configureert u maximaal 50 variaties per product.
+Het configureren van te veel variaties per product kan de prestaties beïnvloeden.
 
 ### Betrokken producten en versies
 
@@ -287,13 +238,12 @@ Het overschrijden van het aanbevolen aantal productvariaties kan op de volgende 
 
 ## Aanbiedingen
 
-Voor de beste prestaties, volg deze beste praktijken om verkoop en promoties voor punten in een winkelwagentje te vormen:
+Volg deze aanbevolen procedures om verkoop en promoties voor objecten in een winkelwagentje te configureren:
 
-- **Verkoopregels (regels betreffende de kartprijs)**-Configureer niet meer dan 1000 regels voor winkelwagenprijzen voor alle websites
+- **Verkoopregels (regels betreffende de kartprijs)**
    - Ongebruikte regels beheren en verwijderen.
    - Voeg strikte regelvoorwaarden (zoals kenmerk- of categoriefilter) toe voor de meest efficiënte overeenkomst.
-- **Coupons**—
-   - Controleer of het totale aantal coupons in de database kleiner is dan 250.000.
+- **Coupons**
    - Ongebruikte en verlopen coupons verwijderen.
    - Alleen het aantal coupons genereren dat nodig is om te voldoen aan de vereisten voor campagnes.
 
@@ -312,4 +262,4 @@ Als u meer dan het aanbevolen maximumaantal regels of coupons voor de kartonprij
 - Meer tijd om de miniaturen te laden en weer te geven.
 - Meer tijd om de winkelwagenpagina weer te geven.
 - Verhoogde tijd om de **Totalen** op de pagina Afhandeling.
-- Het toepassen van coupons kan meer dan 2 seconden duren.
+
