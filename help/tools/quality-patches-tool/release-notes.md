@@ -2,9 +2,9 @@
 title: Opmerkingen bij de release
 description: Meer informatie over de patches die beschikbaar zijn voor Adobe Commerce en de problemen die ze oplossen.
 exl-id: 22262555-f5ea-49ad-98ad-ea8428ef66d5
-source-git-commit: da0c85a9f1b0ac0a3176ca5f6ef5904834e8d37e
+source-git-commit: 19d41495f95ae707be1db8446ac77eb5ead6375e
 workflow-type: tm+mt
-source-wordcount: '13965'
+source-wordcount: '14327'
 ht-degree: 0%
 
 ---
@@ -20,6 +20,25 @@ De [[!DNL Quality Patches Tool]](https://github.com/magento/quality-patches) lev
 >[!INFO]
 >
 >Voor informatie over [!DNL quality patches] die door de Gemeenschap voor Magento Open Source zijn opgericht, [releaseopmerkingen](https://github.com/magento/quality-patches/blob/master/community-release-notes.md).
+
+## v1.1.37 {#v1-1-37}
+
+* **ACSD-52613** (voor Adobe Commerce en Magento Open Source >=2.4.6 &lt;2.4.7) - Hiermee wordt het probleem opgelost waarbij caches en indexen worden vernieuwd, zelfs als er geen updates worden uitgevoerd naar `Inventory_source` items door REST API.
+* **ACSD-51884** (voor Adobe Commerce en Magento Open Source >=2.3.7 &lt;2.4.7) - Hiermee wordt het probleem verholpen waarbij het cachepad voor de productafbeelding onjuist wordt nadat de opdracht voor vergroten/verkleinen is uitgevoerd.
+* **ACSD-53628** (voor Adobe Commerce en Magento Open Source >=2.3.7 &lt;2.4.7) - Hiermee wordt het probleem verholpen waarbij in het CSV-rapport onjuiste speciale tekens worden weergegeven.
+* **ACSD-53148** (voor Adobe Commerce en Magento Open Source >=2.4.4 &lt;2.4.7) - Hiermee wordt het probleem opgelost dat twee parallelle verzoeken in GraphQL om hetzelfde configureerbare product aan het winkelwagentje toe te voegen, resulteerden in twee afzonderlijke artikelen op het winkelwagentje met hetzelfde product-SKU.
+* **ACSD-52606** (voor Adobe Commerce en Magento Open Source >=2.4.0 &lt;2.4.7) - Hiermee wordt het probleem opgelost waarbij het foutbericht *Uw bestelling kan niet worden opgehaald* wordt weergegeven wanneer de gebruiker klikt **[!UICONTROL Notify Order is Ready for Pickup]**.
+* **ACSD-51574** (voor Adobe Commerce en Magento Open Source >=2.4.2 &lt;2.4.7) - Hiermee wordt het probleem verholpen waarbij de afbeelding niet op de voorzijde wordt bijgewerkt nadat deze is vervangen door een andere afbeelding met dezelfde naam.
+* **ACSD-53728** (voor Adobe Commerce en Magento Open Source >=2.3.7 &lt;2.4.7) - Hiermee wordt het probleem opgelost waarbij het voltooien van de EAV-indexeerfunctie van het product langer duurt.
+* **ACSD-53979** (voor Adobe Commerce en Magento Open Source >=2.4.6 &lt;2.4.7) - Hiermee wordt het JS-probleem op de startpagina opgelost als het welkomstbericht één enkel aanhalingsteken bevat.
+* **ACSD-52085** (voor Adobe Commerce en Magento Open Source >=2.4.5 &lt;2.4.7) - Hiermee wordt het probleem opgelost waarbij een configureerbaar product met een speciale prijs niet zichtbaar is in de carrousel van het product.
+* **ACSD-53795** (voor Adobe Commerce en Magento Open Source >=2.4.2 &lt;2.4.7) - Hiermee wordt het probleem verholpen met een ongeldig gegevenstype in `indexer_update_all_views` snijtaak.
+* **ACSD-52143** (voor Adobe Commerce en Magento Open Source >=2.4.6 &lt;2.4.7) - Hiermee wordt het probleem opgelost waarbij aangepaste opties worden verwijderd na het importeren van het product.
+* **ACSD-53750** (voor Adobe Commerce en Magento Open Source >=2.4.4 &lt;2.4.7) - Hiermee wordt het *Gebroken pijp of gesloten verbinding* fout tijdens multi-threaded `catalog_product_price` redex.
+* **ACSD-49843** (voor Adobe Commerce en Magento Open Source >=2.3.7 &lt;2.4.0 || >=2.4.1 &lt;2.4.7) - Hiermee wordt het probleem verholpen waarbij de koppeling bij het downloaden van het product niet beschikbaar is nadat het bestelde item automatisch via een online betalingsmethode is gefactureerd met de **[!UICONTROL Payment Action]** = **[!UICONTROL Sale]** instelling ingeschakeld.
+* **ACSD-47054** (voor Adobe Commerce >=2.4.2 &lt;2.4.6) - Hiermee wordt het probleem verholpen waarbij de voorvertoning van de herindex voor alle winkels opnieuw wordt gecompileerd, wat tot vertraging leidt.
+* Nieuwe versies toegevoegd voor ACSD-46541, ACSD-47079.
+* ACSD-49970-v3 vervangen door ACSD-54095.
 
 ## v1.1.36 {#v1-1-36}
 
