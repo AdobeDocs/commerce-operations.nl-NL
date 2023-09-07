@@ -4,9 +4,9 @@ description: Meer informatie over het optimaliseren van de backendprestaties van
 badge: label="Bijgedragen door objectbron" type="Informative" url="https://objectsource.co.uk/" tooltip="objectbron"
 role: Admin, User, Developer
 feature: Best Practices
-source-git-commit: 2416357d8cacb5627fd24f92b16c2d9839f91082
+source-git-commit: 1ba9325feaa47d767ec7991919fd5ecd53ae6226
 workflow-type: tm+mt
-source-wordcount: '1074'
+source-wordcount: '1075'
 ht-degree: 0%
 
 ---
@@ -55,7 +55,7 @@ Meer informatie over het testen van Adobe Commerce-projecten:
 
 ### Prestatieproblemen identificeren en oplossen
 
-Prestatieproblemen aanpakken met behulp van verschillende tools, zoals New Relic en Observation voor Adobe Commerce, om knelpunten op te sporen en handelsplaatsen effectief te optimaliseren. [New Relic](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/monitor/new-relic.html) wordt opgenomen in Adobe Commerce op cloudinfrastructuur, en [Waarneming voor Adobe Commerce](/help/tools/observation-for-adobe-commerce/intro.md) is inbegrepen voor zowel wolk als op-gebouw plaatsingen.
+Prestatieproblemen aanpakken met behulp van verschillende tools, zoals New Relic en Observation voor Adobe Commerce, om knelpunten op te sporen en handelsplaatsen effectief te optimaliseren. [New Relic](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/monitor/new-relic/new-relic-service.html) wordt opgenomen in Adobe Commerce op cloudinfrastructuur, en [Waarneming voor Adobe Commerce](/help/tools/observation-for-adobe-commerce/intro.md) is inbegrepen voor zowel wolk als op-gebouw plaatsingen.
 
 Gebruik deze gereedschappen om de prestaties van de site te analyseren en prestatieproblemen op te sporen met betrekking tot:
 

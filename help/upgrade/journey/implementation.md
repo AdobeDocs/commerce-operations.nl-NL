@@ -2,9 +2,9 @@
 title: Upgrade uitvoeren
 description: Leer over de verschillende fasen van verbeteringsimplementatie voor de projecten van Adobe Commerce.
 exl-id: d64855a7-73ee-463f-a314-6a8d4ebe4726
-source-git-commit: 95ffff39d82cc9027fa633dffedf15193040802d
+source-git-commit: 1ba9325feaa47d767ec7991919fd5ecd53ae6226
 workflow-type: tm+mt
-source-wordcount: '824'
+source-wordcount: '825'
 ht-degree: 1%
 
 ---
@@ -84,4 +84,4 @@ Tot slot wil u uw team vragen lessen te leren en valkuilen te bepalen. Deze teru
 
 Nadat uw site is gestart, controleert u de analysegegevens, de Google Search Console en andere bronnen om te controleren of er geen onverwachte problemen zijn en of alles werkt zoals u had verwacht.
 
-Het is altijd een goed idee om de prestaties in de gaten te houden door middel van goed ontworpen controlemiddelen. U kunt de prestaties van uw site op veel verschillende manieren controleren, dus kies er een die goed overeenkomt met uw organisatie. We raden Adobe Commerce-klanten die ons beheersysteem voor cloudinfrastructuur gebruiken aan gebruik te maken van services zoals [New Relic](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/monitor/new-relic.html) om de prestaties van de site te controleren.
+Het is altijd een goed idee om de prestaties in de gaten te houden door middel van goed ontworpen controlemiddelen. U kunt de prestaties van uw site op veel verschillende manieren controleren, dus kies er een die goed overeenkomt met uw organisatie. We raden Adobe Commerce-klanten die ons beheersysteem voor cloudinfrastructuur gebruiken aan gebruik te maken van services zoals [New Relic](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/monitor/new-relic/new-relic-service.html) om de prestaties van de site te controleren.
