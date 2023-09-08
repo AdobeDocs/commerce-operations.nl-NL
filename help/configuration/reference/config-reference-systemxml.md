@@ -4,9 +4,9 @@ description: Leer hoe het systeemXML- dossier de de toepassingsconfiguratie van 
 feature: Configuration, System
 badge: label="Bijdrage van David Lambauer" type="Informative" url="https://github.com/DavidLambauer" tooltip="David Lambauer"
 exl-id: a6c5de6c-e8da-4eca-bbfb-592904b2c53f
-source-git-commit: 16e9396f19693436dfc7bdac78d84624a78f0c21
+source-git-commit: 37c23d7a410cdb664710880d3d89cb72efa164e9
 workflow-type: tm+mt
-source-wordcount: '2680'
+source-wordcount: '2669'
 ht-degree: 0%
 
 ---
@@ -52,7 +52,6 @@ A `<tab>`-Tag kan de volgende kenmerken hebben:
 |-------------|------------------------------------------------------------------------------------------------------------------------------------------|----------|----------|
 | `id` | Definieert de id die wordt gebruikt bij het verwijzen naar de sectie. | `typeId` | vereist |
 | `translate` | Hiermee definieert u het veld dat moet kunnen worden vertaald. Verlenen `label` om het label vertaalbaar te maken. | `string` | optioneel |
-| `type` | Bepaalt het inputtype van het teruggegeven HTML element-gebrek aan `text`. | `string` | optioneel |
 | `sortOrder` | Hiermee definieert u de sorteervolgorde van de sectie. Met een hoge waarde wordt de sectie naar de onderkant van de pagina verplaatst en met een lage waarde wordt de sectie naar de bovenkant verschoven. | `float` | optioneel |
 | `class` | Voegt een gedefinieerde CSS-klasse toe aan het gerenderde tab HTML-element. | `string` | optioneel |
 
