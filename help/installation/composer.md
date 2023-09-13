@@ -2,16 +2,18 @@
 title: Snelle start van de installatie op locatie
 description: Voer de volgende stappen uit om Adobe Commerce of Magento Open Source te installeren op uw eigen infrastructuur.
 exl-id: a93476e8-2b30-461a-91df-e73eb1a14d3c
-source-git-commit: 95ffff39d82cc9027fa633dffedf15193040802d
+source-git-commit: 3d9b7c5352f91308dd315a7195ee2cb1c4b191ee
 workflow-type: tm+mt
-source-wordcount: '990'
+source-wordcount: '975'
 ht-degree: 0%
 
 ---
 
 # Snelle start van de installatie op locatie
 
-We gebruiken [Composer](https://getcomposer.org/) om Adobe Commerce en Magento Open Source componenten en hun gebiedsdelen te beheren. Het gebruik van Composer om het metapakket voor Adobe Commerce en Magento Open Source op te halen, biedt de volgende voordelen:
+In de instructies op deze pagina wordt beschreven hoe Adobe Commerce en Magento Open Source op [zelfgehoopt](../implementation-playbook/infrastructure/self-hosting/overview.md) infrastructuur. Raadpleeg voor hulp bij het upgraden van een bestaande installatie de [_Upgradehandleiding_](../upgrade/overview.md).
+
+Adobe gebruikt [Composer](https://getcomposer.org/) om Adobe Commerce en Magento Open Source componenten en hun gebiedsdelen te beheren. Het gebruik van Composer om het metapakket voor Adobe Commerce en Magento Open Source op te halen, biedt de volgende voordelen:
 
 - Bibliotheken van derden opnieuw gebruiken zonder deze te bundelen met broncode
 - Verminder uitbreidingsconflicten en compatibiliteitskwesties door een op componenten-gebaseerde architectuur met robuust gebiedsbeheer te gebruiken
@@ -33,7 +35,7 @@ Voordat u verdergaat, moet u het volgende doen:
 
 ## Aanmelden als eigenaar van bestandssysteem
 
-Meer informatie over eigendom, machtigingen en de eigenaar van het bestandssysteem vindt u in [Overzicht van het onderwerp eigendom en machtigingen](prerequisites/file-system/overview.md).
+Meer informatie over eigendom, machtigingen en de eigenaar van het bestandssysteem in de [Overzicht van het onderwerp eigendom en machtigingen](prerequisites/file-system/overview.md).
 
 Ga naar de eigenaar van het bestandssysteem:
 
@@ -53,7 +55,7 @@ Ga naar de eigenaar van het bestandssysteem:
 
 1. Om CLI bevelen van om het even welke folder in werking te stellen, voeg toe `<app_root>/bin` op uw systeem `PATH`.
 
-   Omdat de syntaxis van schelpen verschilt, raadpleegt u een referentie zoals [unix.stackexchange.com](https://unix.stackexchange.com/questions/117467/how-to-permanently-set-environmental-variables).
+   Omdat schelpen verschillende syntaxis hebben, raadpleegt u een verwijzing zoals [unix.stackexchange.com](https://unix.stackexchange.com/questions/117467/how-to-permanently-set-environmental-variables).
 
    Voorbeeld van bash-shell voor CentOS:
 
@@ -73,7 +75,7 @@ U kunt als volgt het metapakket Adobe Commerce of Magento Open Source ophalen:
 
 1. Meld u aan bij de toepassingsserver als of schakel over naar de [eigenaar van bestandssysteem](prerequisites/file-system/overview.md).
 1. Wijzig de hoofdmap van de webserver of een map die u hebt geconfigureerd als een virtueel hoofddocument van de host.
-1. Maak een Composer-project met het metapakket Adobe Commerce of Magento Open Source.
+1. Maak een Composer-project met gebruik van het pakket Adobe Commerce of Magento Open Source.
 
    **Magento Open Source**
 
@@ -87,40 +89,36 @@ U kunt als volgt het metapakket Adobe Commerce of Magento Open Source ophalen:
    composer create-project --repository-url=https://repo.magento.com/ magento/project-enterprise-edition <install-directory-name>
    ```
 
-   Voer desgevraagd uw verificatietoetsen in. De openbare en privé sleutels worden gecreeerd en in uw gevormd [Commerce Marketplace](https://marketplace.magento.com/customer/account/login/).
+   Voer desgevraagd uw verificatietoetsen in. De openbare en privé sleutels worden gecreeerd en in uw gevormd [Commerce Marketplace](https://commercemarketplace.adobe.com/customer/account/login/).
 
    Als u fouten tegenkomt, zoals `Could not find package...` of `...no matching package found`, zorg ervoor dat er geen typos in uw bevel zijn. Als er nog steeds fouten optreden, kunt u geen Adobe Commerce downloaden. Contact [Adobe Commerce-ondersteuning](https://support.magento.com/hc/en-us) voor hulp.
 
    Zie [Problemen oplossen](https://support.magento.com/hc/en-us/articles/360033818091) voor meer fouten.
 
-   >[!NOTE]
-   >
-   >Adobe Commerce-klanten hebben twee weken voor de datum van algemene beschikbaarheid (GA) toegang tot patches. Pakketten met pre-release zijn alleen beschikbaar via Composer. U kunt tot pre-versies op het Portaal van de Ontwikkelaar of GitHub tot GA niet toegang hebben. Neem contact op met Adobe Commerce Support als u deze pakketten niet kunt vinden in Composer.
-
 ### Voorbeeld - kleine release
 
-Kleine versies bevatten nieuwe functies, oplossingen voor de kwaliteit en beveiligingsoplossingen. Gebruik Composer om een kleine release op te geven. U kunt bijvoorbeeld als volgt het metapakket Adobe Commerce 2.4.5 opgeven:
+Kleine versies bevatten nieuwe functies, oplossingen voor de kwaliteit en beveiligingsoplossingen. Gebruik Composer om een kleine release op te geven. U kunt bijvoorbeeld als volgt het metapakket Adobe Commerce 2.4.6 opgeven:
 
 ```bash
-composer create-project --repository-url=https://repo.magento.com/ magento/project-enterprise-edition=2.4.5 <install-directory-name>
+composer create-project --repository-url=https://repo.magento.com/ magento/project-enterprise-edition=2.4.6 <install-directory-name>
 ```
 
 ### Voorbeeld - Kwaliteitspatch
 
-Kwaliteitspatches bevatten voornamelijk functionele _en_ beveiligingsoplossingen. Soms kunnen ze echter ook nieuwe, achterwaartse compatibele functies bevatten. Gebruik Composer om een kwaliteitspatch te downloaden. U kunt bijvoorbeeld als volgt het metapakket Adobe Commerce 2.4.5 opgeven:
+Kwaliteitspatches bevatten voornamelijk functionele _en_ beveiligingsoplossingen. Soms kunnen ze echter ook nieuwe, achterwaartse compatibele functies bevatten. Gebruik Composer om een kwaliteitspatch te downloaden. U kunt bijvoorbeeld als volgt het metapakket Adobe Commerce 2.4.6 opgeven:
 
 ```bash
-composer create-project --repository-url=https://repo.magento.com/ magento/project-enterprise-edition=2.4.5 <install-directory-name>
+composer create-project --repository-url=https://repo.magento.com/ magento/project-enterprise-edition=2.4.6 <install-directory-name>
 ```
 
 ### Voorbeeld - Beveiligingspatch
 
 Beveiligingspatches bevatten alleen beveiligingsoplossingen. Ze zijn ontworpen om het upgradeproces sneller en eenvoudiger te maken.
 
-Beveiligingspatches gebruiken de naamgevingsconventie van Composer `2.4.5-px`. Gebruik Composer om een patch op te geven. Als u bijvoorbeeld het pakket met Adobe Commerce 2.4.5-p1 wilt downloaden:
+Beveiligingspatches gebruiken de naamgevingsconventie van Composer `2.4.6-px`. Gebruik Composer om een patch op te geven. Als u bijvoorbeeld het pakket met Adobe Commerce 2.4.6-p1 wilt downloaden:
 
 ```bash
-composer create-project --repository-url=https://repo.magento.com/ magento/project-enterprise-edition=2.4.5-p1 <install-directory-name>
+composer create-project --repository-url=https://repo.magento.com/ magento/project-enterprise-edition=2.4.6-p1 <install-directory-name>
 ```
 
 ## Bestandsmachtigingen instellen
@@ -166,7 +164,7 @@ bin/magento setup:install \
 
 >[!TIP]
 >
->U kunt de Admin URI aanpassen met de `--backend-frontname` -optie. Nochtans, adviseren wij het weglaten van deze optie en het toestaan van het installatiebevel om een willekeurige URI automatisch te produceren. Willekeurige URI is moeilijker voor hakkers of kwaadwillige software om te exploiteren. De URI wordt in uw console weergegeven wanneer de installatie is voltooid.
+>U kunt de Admin URI aanpassen met de `--backend-frontname` -optie. Adobe raadt echter aan deze optie weg te laten en de installatieopdracht toe te staan automatisch een willekeurige URI te genereren. Willekeurige URI is moeilijker voor hakkers of kwaadwillige software om te exploiteren. De URI wordt in uw console weergegeven wanneer de installatie is voltooid.
 
 >[!TIP]
 >
@@ -230,4 +228,4 @@ De volgende argumenten gelden voor alle opdrachten. Deze opdrachten kunnen worde
 
 >[!NOTE]
 >
->Gefeliciteerd! U hebt de snelle installatie voltooid. Hebt u meer geavanceerde hulp nodig? Bekijk onze [Geavanceerde installatie](advanced.md) hulplijn.
+>Gefeliciteerd! U hebt de snelle installatie voltooid. Hebt u meer geavanceerde hulp nodig? Kijk uit de [Geavanceerde installatie](advanced.md) hulplijn.

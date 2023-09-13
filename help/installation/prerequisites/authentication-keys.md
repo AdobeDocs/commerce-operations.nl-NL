@@ -2,9 +2,9 @@
 title: Uw verificatietoetsen ophalen
 description: Ga als volgt te werk om referenties op te halen voor toegang tot de pakketten Adobe Commerce en Magento Open Source Composer op repo.magento.com.
 exl-id: 7ec2a410-d81f-476a-bf6a-f3c61982a734
-source-git-commit: 95ffff39d82cc9027fa633dffedf15193040802d
+source-git-commit: 3d9b7c5352f91308dd315a7195ee2cb1c4b191ee
 workflow-type: tm+mt
-source-wordcount: '512'
+source-wordcount: '516'
 ht-degree: 0%
 
 ---
@@ -24,7 +24,8 @@ Voor toegangsrechten voor Adobe Commerce- en Magento Open Source-pakketten moet 
 
 Zo maakt u verificatietoetsen:
 
-1. Aanmelden bij de [Commerce Marketplace](https://marketplace.magento.com). Als u geen account hebt, klikt u op **Registreren**.
+1. Aanmelden bij de [Commerce Marketplace](https://commercemarketplace.adobe.com/). Als u geen account hebt, klikt u op **Registreren**.
+
 1. Klik op de naam van uw account rechtsboven op de pagina en selecteer **Mijn profiel**.
 
 1. Klikken **Toegangssleutels** op het tabblad Marktplaats.
@@ -45,7 +46,7 @@ U kunt verificatietoetsen ook uitschakelen of verwijderen. U kunt bijvoorbeeld t
 
 ### SSH-toegangstoken beheren
 
-Als u Adobe Commerce-releases wilt downloaden met behulp van SSH, moet u een Toegangstoken voor downloads genereren. Een token genereren:
+Als u Adobe Commerce- en Magento Open Source-releases wilt downloaden met behulp van SSH, moet u een Toegangstoken voor downloads genereren. Een token genereren:
 
 1. Aanmelden bij uw [magento.com](https://account.magento.com/customer/account/login).
 1. Klikken **Mijn account** boven aan de pagina.

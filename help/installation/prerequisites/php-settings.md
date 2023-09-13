@@ -3,12 +3,13 @@ title: PHP-instellingen
 description: Voer de volgende stappen uit om vereiste PHP extensies te installeren en de vereiste PHP instellingen te configureren voor installatie in de bedrijfsruimten van Adobe Commerce en Magento Open Source.
 feature: Install, Configuration
 exl-id: 84064442-7053-42ab-a8a6-9b313e5efc78
-source-git-commit: ce405a6bb548b177427e4c02640ce13149c48aff
+source-git-commit: aacc4332cecec0cb9b0f5c23d60b7abd1c63feea
 workflow-type: tm+mt
-source-wordcount: '804'
+source-wordcount: '790'
 ht-degree: 0%
 
 ---
+
 
 # PHP-instellingen
 
@@ -16,11 +17,11 @@ In dit onderwerp wordt besproken hoe u vereiste PHP-opties kunt instellen.
 
 >[!NOTE]
 >
->Zie [systeemvereisten](../system-requirements.md) voor ondersteunde versies van PHP.
+>De nieuwste versie van Adobe Commerce en Magento Open Source vereist minimaal PHP 8.1. Zie [systeemvereisten](../system-requirements.md) voor alle ondersteunde versies van PHP.
 
 ## Controleren of PHP is geïnstalleerd
 
-Bij de meeste Linux-versies is PHP standaard geïnstalleerd. In dit onderwerp wordt ervan uitgegaan dat u PHP al hebt geïnstalleerd. Als u wilt controleren of PHP al is geïnstalleerd, typt u op de opdrachtregel:
+PHP is standaard geïnstalleerd op de meeste Linux distributies. In dit onderwerp wordt ervan uitgegaan dat u PHP al hebt geïnstalleerd. Om te controleren of PHP is geïnstalleerd, voert u het volgende in op de opdrachtregel:
 
 ```bash
 php -v
@@ -29,19 +30,17 @@ php -v
 Als PHP is geïnstalleerd, wordt een bericht weergegeven dat lijkt op het volgende:
 
 ```terminal
-PHP 7.4.0 (cli) (built: Aug 14 2019 16:42:46) ( NTS )
-Copyright (c) 1997-2018 The PHP Group
-Zend Engine v3.1.0, Copyright (c) 1998-2018 Zend Technologies with Zend OPcache v7.1.6, Copyright (c) 1999-2018, by Zend Technologies
+PHP 8.1.2-1ubuntu2.14 (cli) (built: Aug 18 2023 11:41:11) (NTS)
+Copyright (c) The PHP Group
+Zend Engine v4.1.2, Copyright (c) Zend Technologies
+    with Zend OPcache v8.1.2-1ubuntu2.14, Copyright (c), by Zend Technologies
 ```
 
-Adobe Commerce en Magento Open Source 2.4 zijn compatibel met PHP 7.3, maar we testen en raden aan om PHP 7.4 te gebruiken.
-
-Als PHP niet is geïnstalleerd of als een versie-upgrade nodig is, installeert u deze aan de hand van instructies voor uw specifieke Linux-smaak.
-Op CentOS, [eventueel zijn aanvullende stappen vereist](https://wiki.centos.org/HowTos/php7).
+Als PHP niet is geïnstalleerd (of een upgrade nodig heeft), installeert u het door de instructies voor de Linux-distributie te volgen.
 
 ## Geïnstalleerde extensies verifiëren
 
-Voor Adobe Commerce en Magento Open Source moet een set extensies zijn geïnstalleerd.
+Adobe Commerce en Magento Open Source vereisen bepaalde PHP extensies. De volgende lijsten specificeren vereiste uitbreidingen voor elke uitgave van de Handel. De lijsten worden automatisch geproduceerd van een plaatsing die de recentste versie van elke uitgave in werking stelt.
 
 {{$include /help/_includes/templated/php-extensions.md}}
 
@@ -54,11 +53,7 @@ Geïnstalleerde extensies controleren:
    ```
 
 1. Controleer of alle vereiste extensies zijn geïnstalleerd.
-1. Voeg ontbrekende modules toe aan de hand van dezelfde workflow die gebruikt wordt voor de installatie van PHP. Als u bijvoorbeeld `yum` Voor de installatie van PHP kunnen de PHP 7.4 modules worden toegevoegd met:
-
-   ```bash
-    yum -y install php74u-pdo php74u-mysqlnd php74u-opcache php74u-xml php74u-gd php74u-devel php74u-mysql php74u-intl php74u-mbstring php74u-bcmath php74u-json php74u-iconv php74u-soap
-   ```
+1. Voeg ontbrekende modules toe aan de hand van dezelfde workflow die gebruikt wordt voor de installatie van PHP.
 
 ## PHP-instellingen controleren
 
@@ -74,7 +69,7 @@ PHP Warning:  date(): It is not safe to rely on the system's timezone settings. 
 
 - Stel de PHP-geheugenlimiet in.
 
-  Onze gedetailleerde aanbevelingen zijn:
+  Adobe beveelt het volgende aan:
 
    - Compileren van code of het inzetten van statische activa, `1G`
    - Foutopsporing, `2G`
@@ -87,17 +82,17 @@ PHP Warning:  date(): It is not safe to rely on the system's timezone settings. 
   realpath_cache_ttl=7200
   ```
 
-  Met deze instellingen kunnen PHP-processen paden naar bestanden in cache plaatsen in plaats van ze elke keer weer op te zoeken wanneer een pagina wordt geladen. Zie [Prestaties afstemmen](https://www.php.net/manual/en/ini.core.php) in de PHP documentatie.
+  Met deze instellingen kunnen PHP-processen paden naar bestanden in cache plaatsen in plaats van ze te bekijken bij het laden van de pagina. Zie [Prestaties afstemmen](https://www.php.net/manual/en/ini.core.php) in de PHP documentatie.
 
 - Inschakelen [`opcache.save_comments`](https://www.php.net/manual/en/opcache.configuration.php#ini.opcache.save-comments), die vereist is voor Adobe Commerce en Magento Open Source 2.1 en hoger.
 
-  We raden u aan de [PHP OPcache](https://www.php.net/manual/en/book.opcache.php) om prestatieredenen. De OPcache is in veel PHP distributies ingeschakeld.
+  Adobe beveelt aan de [PHP OPcache](https://www.php.net/manual/en/book.opcache.php) om prestatieredenen. De OPcache is in veel PHP distributies ingeschakeld.
 
   Adobe Commerce en Magento Open Source 2.1 en hoger gebruiken PHP-codeopmerkingen voor het genereren van code.
 
 >[!NOTE]
 >
->Om problemen tijdens installatie en verbetering te vermijden, adviseren wij sterk u om de zelfde PHP montages op zowel de PHP bevel-lijn configuratie als de PHP configuratie van de Webserver stop - in toe te passen. Zie de volgende sectie voor meer informatie.
+>Om problemen tijdens installatie en verbetering te vermijden, adviseert de Adobe sterk dat u de zelfde montages PHP op zowel de PHP bevel-lijn configuratie als de PHP configuratie van de Webserver stop - in configuratie toepast. Zie de volgende sectie voor meer informatie.
 
 ## PHP-configuratiebestanden zoeken
 
@@ -117,7 +112,7 @@ php --ini | grep "Loaded Configuration File"
 
 >[!NOTE]
 >
->Als u slechts één `php.ini` , brengt u de wijzigingen aan in dat bestand. Als u twee `php.ini` bestanden, breng de wijzigingen aan in *alles* bestanden. Als u dit niet doet, kunnen er onvoorspelbare prestaties optreden.
+>Als u slechts één `php.ini` bestand, wijzigt u dat bestand. Als u twee `php.ini` bestanden, wijzigen *beide* bestanden. Als u dit niet doet, kunnen er onvoorspelbare prestaties optreden.
 
 ### Configuratie-instellingen voor OPcache zoeken
 
@@ -137,7 +132,7 @@ Gebruik de volgende richtlijnen om het te vinden:
   sudo find / -name 'opcache.ini'
   ```
 
-- Nginx-webserver met PHP-FPM: `/etc/php/7.2/fpm/php.ini`
+- Nginx-webserver met PHP-FPM: `/etc/php/8.1/fpm/php.ini`
 
 Als u meer dan één `opcache.ini`en wijzigt u ze allemaal.
 
@@ -189,7 +184,7 @@ In te stellen `opcache.ini` opties:
 
    - `opcache.ini` (CentOS)
    - `php.ini` (Ubuntu)
-   - `/etc/php/7.2/fpm/php.ini` (nginx-webserver (CentOS of Ubuntu)
+   - `/etc/php/8.1/fpm/php.ini` (nginx-webserver (CentOS of Ubuntu)
 
 1. Zoeken `opcache.save_comments` en verwijder indien nodig de opmerkingen.
 1. Controleer of de waarde is ingesteld op `1`.
@@ -204,7 +199,7 @@ In te stellen `opcache.ini` opties:
 
 Raadpleeg de volgende Adobe Commerce Support-artikelen voor hulp bij het oplossen van problemen met PHP:
 
-- [PHP-versiefout of 404-fout bij toegang tot Adobe Commerce in browser](https://support.magento.com/hc/en-us/articles/360033117152-PHP-version-error-or-404-error-when-accessing-Magento-in-browser)
+- [PHP-versiefout of 404-fout bij toegang tot Adobe Commerce in een browser](https://support.magento.com/hc/en-us/articles/360033117152-PHP-version-error-or-404-error-when-accessing-Magento-in-browser)
 - [Fouten in PHP-instellingen](https://support.magento.com/hc/en-us/articles/360034599631-PHP-settings-errors)
 - [PHP-coderingsextensie is niet correct geïnstalleerd](https://support.magento.com/hc/en-us/articles/360034280132-PHP-mcrypt-extension-not-installed-properly-)
 - [Problemen met gereedheid voor PHP-versie](https://support.magento.com/hc/en-us/articles/360033546411)
