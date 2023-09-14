@@ -2,9 +2,9 @@
 title: Opmerkingen bij de release
 description: Meer informatie over de patches die beschikbaar zijn voor Adobe Commerce en de problemen die ze oplossen.
 exl-id: 22262555-f5ea-49ad-98ad-ea8428ef66d5
-source-git-commit: 19d41495f95ae707be1db8446ac77eb5ead6375e
+source-git-commit: 7e6e8f1ed15d88fc79e9a3ad5a4505b612564f71
 workflow-type: tm+mt
-source-wordcount: '14327'
+source-wordcount: '14539'
 ht-degree: 0%
 
 ---
@@ -20,6 +20,17 @@ De [[!DNL Quality Patches Tool]](https://github.com/magento/quality-patches) lev
 >[!INFO]
 >
 >Voor informatie over [!DNL quality patches] die door de Gemeenschap voor Magento Open Source zijn opgericht, [releaseopmerkingen](https://github.com/magento/quality-patches/blob/master/community-release-notes.md).
+
+## v1.1.38 {#v1-1-38}
+
+* **ACSD-53098** (voor Adobe Commerce en Magento Open Source >=2.4.3 &lt;2.4.4) - Hiermee wordt het probleem verholpen waarbij producten die zijn toegewezen aan een gedeelde catalogus niet in de winkel worden weergegeven wanneer een gedeeltelijke index wordt uitgevoerd.
+* **ACSD-54018** (voor Adobe Commerce en Magento Open Source >=2.3.7 &lt;2.4.6) - Hiermee worden de prestatieproblemen opgelost met de [!UICONTROL Product List] widget die een niet-globaal kenmerk in de widgetvoorwaarde gebruikt.
+* **ACSD-54111** (voor Adobe Commerce en Magento Open Source >=2.4.2 &lt;2.4.6) - Hiermee wordt het probleem verholpen waarbij de miniatuurafbeeldingen van het product niet worden weergegeven op de winkel wanneer de hoogte-breedteverhouding van de watermerkafbeelding niet overeenkomt met de productafbeelding.
+* **ACSD-47669** (voor Adobe Commerce en Magento Open Source >=2.4.2 &lt;2.4.6) - Oplossingen *Schending van integriteitsbeperking: 1452 Kan geen onderliggende rij toevoegen of bijwerken: een beperking in een externe sleutel mislukt* fout bij het importeren van CSV-producten.
+* **ACSD-53347** (voor Adobe Commerce en Magento Open Source >=2.3.7 &lt;2.4.7) - Hiermee wordt het probleem opgelost waarbij de prijsindexer te veel tijd nodig heeft om uit te voeren.
+* **ACSD-52287** (voor Adobe Commerce >=2.3.7 &lt;2.4.7) - Hiermee wordt het probleem verholpen met een onjuiste orderstatus in het raster van de gearchiveerde volgorde als asynchrone rasterindexering is ingeschakeld.
+* **ACSD-52929** (voor Adobe Commerce en Magento Open Source >=2.3.7 &lt;2.4.7) - lost het probleem met overtollige verzoeken op om standaardbronpunten opnieuw te indexeren wanneer de inventarisindexeerder op async wijze wordt gevormd.
+* **ACSD-53824** (voor Adobe Commerce en Magento Open Source >=2.4.4 &lt;2.4.7) - Hiermee wordt het probleem opgelost waarbij `UpdateMultiselectAttributesBackendTypes` de flard van migratiegegevens overschrijdt de grens van de gegevensbestandtransactie tijdens `setup:upgrade`.
 
 ## v1.1.37 {#v1-1-37}
 
