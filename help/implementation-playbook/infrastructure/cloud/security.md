@@ -3,7 +3,7 @@ title: Beveiliging van de cloudinfrastructuur
 description: Leer hoe Adobe Adobe Commerce veilig houdt op de cloudinfrastructuur.
 exl-id: cd5d1106-c8db-4b70-b1c7-12378d7d77a7
 feature: Cloud, Security
-source-git-commit: afe70569796c056cd0ecab82898f0dec016e7a3f
+source-git-commit: 8d8cd0d33c1a3a95186948e670df6d9865b9a871
 workflow-type: tm+mt
 source-wordcount: '1739'
 ht-degree: 0%
@@ -41,7 +41,7 @@ De klanten kunnen de tunnels van SSH gebruiken om mededelingen met de toepassing
 
 ## Versleuteling
 
-Amazon Elastic Block Store (EBS) wordt gebruikt voor opslag. Alle EBS-volumes worden gecodeerd met het algoritme AES-265, wat betekent dat de gegevens in rust worden gecodeerd. Het systeem codeert ook gegevens in doorvoer tussen CDN en de oorsprong, en tussen de oorspronkelijke servers. De wachtwoorden van de klant worden opgeslagen als knoeiboel. Gevoelige geloofsbrieven, met inbegrip van de geloofsbrieven van de betaalgateway, worden gecodeerd gebruikend het algoritme SHA-256.
+Amazon Elastic Block Store (EBS) wordt gebruikt voor opslag. Alle EBS-volumes worden gecodeerd met het algoritme AES-256, wat betekent dat de gegevens in rust worden gecodeerd. Het systeem codeert ook gegevens in doorvoer tussen CDN en de oorsprong, en tussen de oorspronkelijke servers. De wachtwoorden van de klant worden opgeslagen als knoeiboel. Gevoelige geloofsbrieven, met inbegrip van de geloofsbrieven van de betaalgateway, worden gecodeerd gebruikend het algoritme SHA-256.
 
 De Adobe Commerce-toepassing biedt geen ondersteuning voor codering of codering op kolom- of rijniveau wanneer de gegevens niet in rust zijn of niet worden verzonden tussen servers. De klant kan coderingssleutels beheren vanuit de toepassing. Toetsen die door het systeem worden gebruikt, worden opgeslagen in het AWS Key Management System en moeten door Managed Services worden beheerd om onderdelen van de service te kunnen leveren.
 
