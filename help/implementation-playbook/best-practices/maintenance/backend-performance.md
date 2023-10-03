@@ -4,7 +4,8 @@ description: Meer informatie over het optimaliseren van de backendprestaties van
 badge: label="Bijgedragen door objectbron" type="Informative" url="https://objectsource.co.uk/" tooltip="objectbron"
 role: Admin, User, Developer
 feature: Best Practices
-source-git-commit: 1ba9325feaa47d767ec7991919fd5ecd53ae6226
+exl-id: 18bc97a0-3d34-4d48-a3e2-84af2da7d0d3
+source-git-commit: e5df5a7242dbe8ceff548257daeb39f7c9fc5c69
 workflow-type: tm+mt
 source-wordcount: '1075'
 ht-degree: 0%
@@ -38,7 +39,7 @@ U kunt GTmetrix gebruiken voor stresstests. Bereidheid van de plaats van de pagi
 
 Meer informatie over het voorbereiden van Commerce-projecten voor periodes met veel verkeer:
 
-- [Gereedheid voor feestdagen](https://experienceleague.adobe.com/docs/events/mbi-webinars-recordings/2021/holiday-readiness.html)
+- [Gereedheid voor feestdagen](https://experienceleague.adobe.com/docs/events/commerce-intelligence-webinar-recordings/2021/holiday-readiness.html)
 - [Winkelanalyse vakantie](https://experienceleague.adobe.com/docs/commerce-business-intelligence/mbi/analyze/performance/holiday-season-perf.html)
 - [Toename piekcapaciteit](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/announcements/commerce-announcements/2021-holiday-surge-capacity-requests-for-magento-commerce-cloud.html)
 
