@@ -2,9 +2,9 @@
 title: Configuratiewaarden instellen
 description: Leer hoe u configuratiewaarden instelt en waarden wijzigt die zijn vergrendeld in Beheer.
 exl-id: 1dc2412d-50b3-41fb-ab22-3eccbb086302
-source-git-commit: 78a7e99ecaba6a6f7982123f5bd67efc740ec2ef
+source-git-commit: 473ab09f83a4cfc1809adff854d52a11ad49d3af
 workflow-type: tm+mt
-source-wordcount: '982'
+source-wordcount: '1038'
 ht-degree: 0%
 
 ---
@@ -289,3 +289,8 @@ Resultaat
 ```terminal
 web/unsecure/base_url - http://example-for-store.com/
 ```
+
+>[!INFO]
+>
+>De bereikcode kan alleen letters (a-z of A-Z), getallen (0-9) en onderstrepingstekens (_) bevatten. Het eerste teken moet ook een letter zijn. Als hoofdletters of hoofdletters worden gebruikt bij het maken van een website- of winkelweergave, is de overeenkomst intern niet hoofdlettergevoelig voor overschrijvingen van configuratie-instellingen via omgevingsvariabelen. Zie [Omgevingsvariabelen gebruiken om configuratie-instellingen te overschrijven](../reference/override-config-settings.md#environment-variables).
+

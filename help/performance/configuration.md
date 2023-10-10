@@ -3,7 +3,7 @@ title: Best practices voor configuratie
 description: Optimaliseer de responstijd van uw Adobe Commerce- of Magento Open Source-implementatie met deze best practices.
 feature: Best Practices, Configuration
 exl-id: 4cb0f5e7-49d5-4343-a8c7-b8e351170f91
-source-git-commit: 62a37d5f83b4cc6efef8bddba16e44151e91a8d0
+source-git-commit: 11ccc59230a7a0d1768c043c39df43c7df031efd
 workflow-type: tm+mt
 source-wordcount: '1448'
 ht-degree: 0%
@@ -42,7 +42,7 @@ Er kunnen momenten zijn dat intensieve verkoop op een winkel plaatsvindt op hetz
 >
 >De **[!UICONTROL Developer]** tab en opties zijn alleen beschikbaar in [Modus Ontwikkelaar](../configuration/cli/set-mode.md). [Adobe Commerce over cloudinfrastructuur](https://devdocs.magento.com/cloud/requirements/cloud-requirements.html#cloud-req-test) ondersteunt niet `Developer` -modus.
 
-## Asynchrone configuratie opslaan [!BADGE 2.4.7-bèta1]{type=Informative url="/help/release/release-notes/commerce/2-4-7.md" tooltip="Alleen beschikbaar in 2.4.7 bèta1"}
+## Asynchrone configuratie opslaan [!BADGE 2.4.7-bèta]{type=Informative url="/help/release/release-notes/commerce/2-4-7.md" tooltip="Alleen beschikbaar in 2.4.7 bèta"}
 
 Voor projecten met een groot aantal opslag-vlakke configuraties, kan het bewaren van een opslagconfiguratie een ongeordende hoeveelheid tijd nemen of in een onderbreking resulteren. De _Async Config_ de module laat asynchrone configuratiebesparingen door een hulpbaan toe in werking te stellen die een consument gebruikt om sparen in een berichtrij te verwerken. AsyncConfig is **uitgeschakeld** standaard.
 

@@ -1,7 +1,7 @@
 ---
-source-git-commit: 64c453adabb092075854b2c20bf7da73c4a5146e
+source-git-commit: d720b64f315d1e4b6fb7868d911eb3af089e3fa4
 workflow-type: tm+mt
-source-wordcount: '19899'
+source-wordcount: '20131'
 ht-degree: 0%
 
 ---
@@ -11,9 +11,9 @@ ht-degree: 0%
 
 <!-- The template to render with above values -->
 
-**Versie**: 2.4.7-bèta1
+**Versie**: 2.4.7-bèta2
 
-Deze verwijzing bevat 132 bevelen beschikbaar door `bin/magento` opdrachtregelprogramma.
+Deze verwijzing bevat 134 bevelen beschikbaar door `bin/magento` opdrachtregelprogramma.
 De eerste lijst wordt automatisch gegenereerd met de opdracht `bin/magento list` op Adobe Commerce.
 Gebruik de [&quot;CLI-opdrachten toevoegen&quot;](https://developer.adobe.com/commerce/php/development/cli-commands/) gids om een douane CLI bevel toe te voegen.
 
@@ -3756,6 +3756,120 @@ Geen interactieve vraag stellen
 - Accepteert geen waarde
 
 
+## `events:provider:info`
+
+Hiermee worden gegevens over de geconfigureerde gebeurtenisprovider geretourneerd
+
+```bash
+bin/magento events:provider:info
+```
+
+### `--help`, `-h`
+
+Help weergeven voor de opgegeven opdracht. Wanneer geen opdracht is gegeven, wordt de Help weergegeven voor de \&lt;info>list\&lt;/info> command
+
+- Standaard: `false`
+- Accepteert geen waarde
+
+### `--quiet`, `-q`
+
+Geen bericht uitvoeren
+
+- Standaard: `false`
+- Accepteert geen waarde
+
+### `--verbose`, `-v|-vv|-vvv`
+
+Verhoog de breedheid van berichten: 1 voor normale output, 2 voor meer uitgebreide output en 3 voor zuivert
+
+- Standaard: `false`
+- Accepteert geen waarde
+
+### `--version`, `-V`
+
+Deze toepassingsversie weergeven
+
+- Standaard: `false`
+- Accepteert geen waarde
+
+### `--ansi`
+
+ANSI-uitvoer forceren (of uitschakelen —no-ansi)
+
+- Accepteert geen waarde
+
+### `--no-ansi`
+
+De optie &quot;—ansi&quot; negeren
+
+- Standaard: `false`
+- Accepteert geen waarde
+
+### `--no-interaction`, `-n`
+
+Geen interactieve vraag stellen
+
+- Standaard: `false`
+- Accepteert geen waarde
+
+
+## `events:registrations:list`
+
+Maakt een lijst van gebeurtenisregistraties in uw project App Builder
+
+```bash
+bin/magento events:registrations:list
+```
+
+### `--help`, `-h`
+
+Help weergeven voor de opgegeven opdracht. Wanneer geen opdracht is gegeven, wordt de Help weergegeven voor de \&lt;info>list\&lt;/info> command
+
+- Standaard: `false`
+- Accepteert geen waarde
+
+### `--quiet`, `-q`
+
+Geen bericht uitvoeren
+
+- Standaard: `false`
+- Accepteert geen waarde
+
+### `--verbose`, `-v|-vv|-vvv`
+
+Verhoog de breedheid van berichten: 1 voor normale output, 2 voor meer uitgebreide output en 3 voor zuivert
+
+- Standaard: `false`
+- Accepteert geen waarde
+
+### `--version`, `-V`
+
+Deze toepassingsversie weergeven
+
+- Standaard: `false`
+- Accepteert geen waarde
+
+### `--ansi`
+
+ANSI-uitvoer forceren (of uitschakelen —no-ansi)
+
+- Accepteert geen waarde
+
+### `--no-ansi`
+
+De optie &quot;—ansi&quot; negeren
+
+- Standaard: `false`
+- Accepteert geen waarde
+
+### `--no-interaction`, `-n`
+
+Geen interactieve vraag stellen
+
+- Standaard: `false`
+- Accepteert geen waarde
+
+
 ## `events:subscribe`
 
 Abonneren op de gebeurtenis
@@ -7221,7 +7335,7 @@ Geen interactieve vraag stellen
 Toepassingsserver uitvoeren
 
 ```bash
-bin/magento server:run [-p|--port [PORT]] [-b|--background [BACKGROUND]] [-a|--area [AREA]] [-mip|--magento-init-params [MAGENTO-INIT-PARAMS]]
+bin/magento server:run [-p|--port [PORT]] [-b|--background [BACKGROUND]] [-a|--area [AREA]] [-mip|--magento-init-params [MAGENTO-INIT-PARAMS]] [-mwt|--maxWaitTime [MAXWAITTIME]]
 ```
 
 ### `--port`, `-p`
@@ -7250,6 +7364,13 @@ toepassingsservergebied
 magento bootstrap init params
 
 - Standaard: &quot;
+- Accepteert een waarde
+
+### `--maxWaitTime`, `-mwt`
+
+hoe lang moet worden gewacht op workers na herladen (bijv. config verandering) alvorens hen te doden
+
+- Standaard: `3600`
 - Accepteert een waarde
 
 ### `--help`, `-h`
@@ -9417,7 +9538,7 @@ Achternaam beheerder
 
 ### `--search-engine`
 
-Zoekprogramma. Waarden: elasticsearch5, elasticsearch7, elasticsearch8, openssearch
+Zoekprogramma. Waarden: elasticsearch7, elasticsearch8, openssearch
 
 - Vereist een waarde
 
