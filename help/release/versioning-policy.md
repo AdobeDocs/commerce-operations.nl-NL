@@ -2,7 +2,7 @@
 title: Releasebeleid
 description: Leer meer over de verschillende typen Adobe Commerce-releases, zoals kleine patches, beveiligingspatches, functies, hotfix, afzonderlijke patches en aangepaste patches.
 exl-id: 61a83de6-6a7b-4a88-8fff-1638b4fe472a
-source-git-commit: f5ab11a43bb90fa96c20cea8d8c85eb2a4c98826
+source-git-commit: 9a74f87e0da5a7f11cd0930c8265556d80e3d1de
 workflow-type: tm+mt
 source-wordcount: '832'
 ht-degree: 0%
@@ -19,7 +19,7 @@ Adobe Commerce en gebruik van Magento Open Source [semantische versie](https://s
    - **VEILIGHEIDSpatchrelease**—2.4.5-p1
       - Beveiligingsfout verhelpen
       - Verbeterde beveiliging
-- **BÈTA-patchrelease**—2.4.7-bèta1
+- **BÈTA-patchrelease**—2.4.7-bèta2
 - **Uitzetbaarheid, Infrastructuur en de versie van de Diensten**
 - **Hotfix**
 - **Individuele patch**

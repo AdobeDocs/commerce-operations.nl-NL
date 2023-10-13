@@ -2,10 +2,10 @@
 title: Releaseplanning
 description: Ontdek wanneer Adobe de release van belangrijke nieuwe functies voor Adobe Commerce gaat aankondigen.
 exl-id: ae1e09cd-966f-44a3-9e4d-b90bb838429d
-source-git-commit: 12b4f619673414f18d9697450e867681c6cb3194
+source-git-commit: 7edf6d5a8dfe58a86f27e97816e4d850bc21babc
 workflow-type: tm+mt
-source-wordcount: '752'
-ht-degree: 1%
+source-wordcount: '623'
+ht-degree: 2%
 
 ---
 
@@ -17,10 +17,7 @@ Adobe [patches](versioning-policy.md#patch-release) voor elke ondersteunde relea
 
 >[!NOTE]
 >
->Vanaf 2024 biedt Adobe geen &quot;pre-release&quot;-toegang meer tot patches. In plaats daarvan kunnen Adobe Commerce-klanten voor 2.4.7 en hoger [bèta-releases](beta.md) toegang tot de algemene beschikbaarheidscode voor test- en ontwikkelingsdoeleinden. De toegang van de pre-versie is nog gepland voor de volgende 2023 versies:
->
-> - 8 augustus 2023 is de pre-release toegang 25 juli 2023
-> - Op 10 oktober 2023 is de pre-release toegang 26 september 2023
+>Vanaf 2024 biedt Adobe geen &quot;pre-release&quot;-toegang meer tot patches. In plaats daarvan kunnen Adobe Commerce-klanten voor 2.4.7 en hoger [bèta-releases](beta.md) toegang tot de algemene beschikbaarheidscode voor test- en ontwikkelingsdoeleinden.
 
 De volgende tabel bevat de datums voor geplande releases (de datums kunnen worden gewijzigd):
 
@@ -46,16 +43,6 @@ De volgende tabel bevat de datums voor geplande releases (de datums kunnen worde
    </tr>
 </tfoot>
 <tbody>
-  <tr>
-    <td>8 augustus 2023</td>
-    <td><img alt="B2B-functiepictogram" src="../assets/icons/enterprise.svg"></img> <a href="https://experienceleague.adobe.com/docs/commerce-admin/b2b/release-notes.html">B2B</a><br><img alt="Pictogram voor uitbreidbaarheidsfunctie" src="../assets/icons/brackets.svg"></img> <a href="https://developer.adobe.com/commerce/extensibility/">Uitbreidbaarheid</a><br><img alt="Pictogram Infrastructuurfunctie" src="../assets/icons/servers.svg"></img> <a href="https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/release-notes/cloud-tools-suite.html">Infrastructuur</a><br><img alt="Pictogram voor de functie Services" src="../assets/icons/feature.svg"></img> <a href="https://experienceleague.adobe.com/docs/commerce-merchant-services/user-guides/release-information/release-notes-all.html">Services</a></td>
-    <td><img alt="Patchvrijgavepictogram" src="../assets/icons/file-code.svg"></img> <a href="release-notes/security/overview.md">Beveiligingspatches</a>: 2.4.6-p2, 2.4.5-p4, 2.4.4-p5</td>
-  </tr>
-  <tr>
-    <td>10 oktober 2023</td>
-    <td><img alt="B2B-functiepictogram" src="../assets/icons/enterprise.svg"></img> <a href="https://experienceleague.adobe.com/docs/commerce-admin/b2b/release-notes.html">B2B</a><br><img alt="Pictogram voor uitbreidbaarheidsfunctie" src="../assets/icons/brackets.svg"></img> <a href="https://developer.adobe.com/commerce/extensibility/">Uitbreidbaarheid</a><br><img alt="Pictogram Infrastructuurfunctie" src="../assets/icons/servers.svg"></img> <a href="https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/release-notes/cloud-tools-suite.html">Infrastructuur</a><br><img alt="Pictogram voor de functie Services" src="../assets/icons/feature.svg"></img> <a href="https://experienceleague.adobe.com/docs/commerce-merchant-services/user-guides/release-information/release-notes-all.html">Services</a></td>
-    <td><img alt="Patchvrijgavepictogram" src="../assets/icons/file-code.svg"></img> <a href="release-notes/commerce/overview.md">Beta-patch</a>: 2.4.7-bèta2<br> <img alt="Patchvrijgavepictogram" src="../assets/icons/file-code.svg"></img> <a href="release-notes/security/overview.md">Beveiligingspatches</a>: 2.4.6-p3, 2.4.5-p5, 2.4.4-p6</td>
-  </tr>
   <tr>
     <td>13 februari 2024</td>
     <td><img alt="B2B-functiepictogram" src="../assets/icons/enterprise.svg"></img> <a href="https://experienceleague.adobe.com/docs/commerce-admin/b2b/release-notes.html">B2B</a><br><img alt="Pictogram voor uitbreidbaarheidsfunctie" src="../assets/icons/brackets.svg"></img> <a href="https://developer.adobe.com/commerce/extensibility/">Uitbreidbaarheid</a><br><img alt="Pictogram Infrastructuurfunctie" src="../assets/icons/servers.svg"></img> <a href="https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/release-notes/cloud-tools-suite.html">Infrastructuur</a><br><img alt="Pictogram voor de functie Services" src="../assets/icons/feature.svg"></img> <a href="https://experienceleague.adobe.com/docs/commerce-merchant-services/user-guides/release-information/release-notes-all.html">Services</a></td>
