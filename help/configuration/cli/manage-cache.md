@@ -2,9 +2,9 @@
 title: De cache beheren
 description: Cachetypen beheren en de status van het meningsgeheime voorgeheugen bekijken.
 exl-id: bbd76c00-727b-412e-a8e5-1e013a83a29a
-source-git-commit: 5c316ade0619603eafa7ece8a7cd8c1595dee713
+source-git-commit: 9476a8ee2ce49e635e17fbb25c74656ba30bf930
 workflow-type: tm+mt
-source-wordcount: '901'
+source-wordcount: '926'
 ht-degree: 0%
 
 ---
@@ -33,6 +33,7 @@ Handel 2 heeft de volgende geheim voorgeheugentypes:
 | Integratie API-configuratie | config_integration_api | Gecompileerde integratie APIs configuratie van de Integraties van de Opslag. |
 | Webserviceconfiguratie | config_webservice | Caching the Web API Structure. |
 | Klantenmelding | customer_notification | Tijdelijke meldingen die worden weergegeven in de gebruikersinterface. |
+| Admin UI SDK-cache | admin_ui_sdk | Hiermee worden beheerdersaanpassingen bijgehouden die zijn toegevoegd met het dialoogvenster [Adobe Commerce Admin UI SDK](https://developer.adobe.com/commerce/extensibility/admin-ui-sdk/). |
 
 ## De status van de cache weergeven
 
