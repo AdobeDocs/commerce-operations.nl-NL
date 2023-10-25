@@ -2,9 +2,9 @@
 title: Opmerkingen bij de release
 description: Meer informatie over de patches die beschikbaar zijn voor Adobe Commerce en de problemen die ze oplossen.
 exl-id: 22262555-f5ea-49ad-98ad-ea8428ef66d5
-source-git-commit: 67d4f2dd6b3aedae51c9b81268f2ced12369becc
+source-git-commit: 6e82738ab9b3ea106b7987fac2f6f4a026ddc4f0
 workflow-type: tm+mt
-source-wordcount: '14811'
+source-wordcount: '15145'
 ht-degree: 0%
 
 ---
@@ -20,6 +20,24 @@ De [[!DNL Quality Patches Tool]](https://github.com/magento/quality-patches) lev
 >[!INFO]
 >
 >Voor informatie over [!DNL quality patches] die door de Gemeenschap voor Magento Open Source zijn opgericht, [releaseopmerkingen](https://github.com/magento/quality-patches/blob/master/community-release-notes.md).
+
+## v1.1.40 {#v1-1-40}
+
+* **ACSD-54680** (voor Adobe Commerce >=2.4.0 &lt;2.4.6) - Hiermee wordt het probleem verholpen waarbij het niet mogelijk is een B2B-offerte te verwerken die is ingediend voor een product met Meerdere toegewezen bronnen.
+* **ACSD-54040** (voor Adobe Commerce >=2.4.4-p5 &lt;2.4.5 || >=2.4.5-p4 &lt;2.4.6) - Hiermee wordt het probleem opgelost waarbij de *[!UICONTROL Created]* veld is leeg in de volgorde waarin de B2B-modules zijn ingeschakeld.
+* **ACSD-54319** (voor Adobe Commerce en Magento Open Source >=2.4.2 &lt;2.4.6) - Hiermee wordt het probleem opgelost waarbij de prijs van het product nul toont in het dialoogvenster *[!UICONTROL Product in Cart]* verslag.
+* **ACSD-53378** (voor Adobe Commerce en Magento Open Source >=2.4.5 &lt;2.4.7) - verbetert de laadtijd van de afhandelingspagina voor klanten die grote adresboeken hebben.
+* **ACSD-52657** (voor Adobe Commerce en Magento Open Source >=2.4.5 &lt;2.4.7) - Hiermee wordt het probleem verholpen waarbij de minicart niet wordt bijgewerkt in de secundaire storeview, die een subdomein gebruikt.
+* **ACSD-53414** (voor Adobe Commerce >=2.4.6 &lt;2.4.7) - Hiermee wordt het probleem verholpen waarbij een gebruiker met beperkte beheerdersrechten CMS-pagina&#39;s buiten het bereik van machtigingen kan zien.
+* **ACSD-54472** (voor Adobe Commerce >=2.4.6 &lt;2.4.7) - Hiermee wordt het probleem verholpen waarbij klanten van een afgewezen onderneming nog steeds kunnen verifiëren en klanten van een geblokkeerd bedrijf en een afgewezen bedrijf nog steeds orders kunnen plaatsen. De patch voegt extra validatie toe voor GraphQL-eindpunten.
+* **ACSD-52801** (voor Adobe Commerce en Magento Open Source >=2.4.4 &lt;2.4.7) - Hiermee voegt u de optie toe om een gedeeltelijke overeenkomst uit te voeren bij het zoeken naar producten in GraphQL.
+* **ACSD-55004** (voor Adobe Commerce en Magento Open Source >=2.4.6 &lt;2.4.7) - Hiermee wordt het probleem opgelost waarbij de validator vastloopt tijdens het uploaden van een importbestand dat groter is dan de waarde die is geconfigureerd in `php.ini`.
+* **ACSD-54989** (voor Adobe Commerce >=2.4.4-p5 &lt;2.4.5 || >=2.4.5-p4 &lt;2.4.6 || >=2.4.6-p2 &lt;2.4.7) - Hiermee wordt de kwestie opgelost waarbij een bedrijfsbeheerder geen order kan plaatsen wanneer *[!UICONTROL Enable Purchase Orders]* is ingesteld op *[!UICONTROL Yes]* en *[!UICONTROL Purchase Order]* is ingesteld op *[!UICONTROL No]*.
+* **ACSD-54007** (voor Adobe Commerce en Magento Open Source >=2.4.0 &lt;2.4.7) - Hiermee wordt de fout gecorrigeerd *&quot;Niet-gedefinieerde arraysleutel &quot;_scope&quot;* bij het importeren van klantgegevens.
+* **ACSD-55031** (voor Adobe Commerce en Magento Open Source >=2.4.5 &lt;2.4.6) - Hiermee wordt het *Tekst &quot;gemengd&quot; kan niet ongeldig worden gemaakt* fout tijdens compilatie.
+* **ACSD-54961** (voor Adobe Commerce en Magento Open Source >=2.4.0 &lt;2.4.7) - Hiermee wordt het probleem verholpen waarbij een gebruiker met beperkte beheerdersrechten geen massa kan bijwerken *Productbeoordeling* status.
+* **ACSD-55256** (voor Adobe Commerce en Magento Open Source >=2.4.6 &lt;2.4.7) - Hiermee wordt het probleem verholpen waarbij alleen de eerste afbeelding correct wordt weergegeven met de schuifregelaar voor de afbeelding.
+* Bijgewerkte patches: ACSD-52041, ACSD-54106
 
 ## v1.1.39 {#v1-1-39}
 
