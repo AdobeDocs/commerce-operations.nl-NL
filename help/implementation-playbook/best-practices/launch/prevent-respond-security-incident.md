@@ -4,16 +4,16 @@ description: Leer over beste praktijken voor het vermijden van en het antwoorden
 role: Admin, Developer, Leader, User
 feature: Best Practices
 exl-id: 77275d37-4f1d-462d-ba11-29432791da6a
-source-git-commit: 94d7a57dcd006251e8eefbdb4ec3a5e140bf43f9
+source-git-commit: 19ff1fee74e3c5ece13da49648252b32e549eafd
 workflow-type: tm+mt
-source-wordcount: '1073'
+source-wordcount: '1060'
 ht-degree: 0%
 
 ---
 
 # Tips en trucs om een beveiligingsincident te helpen voorkomen en erop te reageren
 
-Adobe Commerce security werkt onder een [Gedeelde verantwoordelijkheid](https://www.adobe.com/content/dam/cc/en/trust-center/ungated/whitepapers/experience-cloud/adobe-commerce-shared-responsibility-guide.pdf) model. Het is van essentieel belang om te begrijpen waarvoor Adobe en uw technische teams verantwoordelijk zijn. Hieronder geven we een overzicht [Aanbevolen werkwijzen voor beveiliging](https://www.adobe.com/content/dam/cc/en/security/pdfs/Adobe-Magento-Commerce-Best-Practices-Guide.pdf) om ervoor te zorgen dat uw project de beste beveiligingscontroles heeft en hoe u het beste kunt reageren op een beveiligingsincident.
+Adobe Commerce security werkt onder een [Gedeelde verantwoordelijkheid](https://www.adobe.com/content/dam/cc/en/trust-center/ungated/whitepapers/experience-cloud/adobe-commerce-shared-responsibilities-guide.pdf) model. Het is van essentieel belang om te begrijpen waarvoor Adobe en uw technische teams verantwoordelijk zijn. Het volgende artikel vat best practices op het gebied van beveiliging samen om ervoor te zorgen dat uw project de beste beveiligingscontroles heeft ingesteld en dat u de beste reactie op beveiligingsincidenten kunt plannen.
 
 ## Betrokken producten en versies
 
@@ -43,14 +43,14 @@ Adobe raadt u aan een unieke, aangepaste Admin-URL te gebruiken in plaats van de
 - Stel de [Adobe Commerce Security Scan](https://docs.magento.com/user-guide/magento/security-scan.html).
 Met de verbeterde beveiligingsscan kunt u elk van uw Adobe Commerce-sites, inclusief PWA, controleren op bekende beveiligingsrisico&#39;s en malware en patchupdates en beveiligingsmeldingen ontvangen.
 - [Toegang van Admin-gebruikers controleren en bijwerken](https://docs.magento.com/user-guide/system/permissions-users-all.html) en [beveiligingsinstellingen](https://docs.magento.com/user-guide/stores/security-admin.html).
-   - We raden u aan oude, ongebruikte of verdachte accounts te verwijderen en wachtwoorden voor alle Admin-gebruikers te roteren.
-   - Bekijk en werk de Geavanceerde beveiligingsinstellingen&lt; voor uw project bij. Met de beveiligingsconfiguratie Admin kunt u een geheime sleutel aan URL&#39;s toevoegen, opgeven dat wachtwoorden hoofdlettergevoelig moeten zijn en kunt u de duur van beheersessies beperken, inclusief de levensduur van wachtwoorden, en het aantal aanmeldingspogingen dat kan worden uitgevoerd voordat de beheergebruikersaccount is vergrendeld. Voor verhoogde veiligheid, kunt u de lengte van toetsenbordinactiviteit vormen alvorens de huidige zitting verloopt, en vereisen de gebruikersbenaming en het wachtwoord om case-sensitive te zijn.
+   - Verwijder oude, ongebruikte of verdachte accounts en roteer wachtwoorden voor alle Admin-gebruikers.
+   - Bekijk en werk de Geavanceerde beveiligingsinstellingen&lt; voor uw project bij. Met de beveiligingsconfiguratie Admin kunt u een geheime sleutel aan URL&#39;s toevoegen, opgeven dat wachtwoorden hoofdlettergevoelig moeten zijn en kunt u de duur van beheersessies beperken, inclusief de levensduur van wachtwoorden, en het aantal aanmeldingspogingen dat is toegestaan voordat de Admin-gebruikersaccount is vergrendeld. Voor verhoogde veiligheid, kunt u de lengte van toetsenbordinactiviteit vormen alvorens de huidige zitting verloopt, en vereisen de gebruikersbenaming en het wachtwoord om case-sensitive te zijn.
 - Adobe Commerce controleren op [wolkenprojectgebruikers](https://devdocs.magento.com/cloud/project/user-admin.html).
-We raden u aan oude, ongebruikte of verdachte accounts te verwijderen en gebruikers te vragen hun wachtwoorden te wijzigen.
+Verwijder oude, ongebruikte of verdachte accounts en verzoek gebruikers hun wachtwoorden te wijzigen.
 - Audit [SSH-toetsen](https://devdocs.magento.com/cloud/before/before-workspace-ssh.html) voor Adobe Commerce over cloudinfrastructuur.
-We raden u aan SSH-toetsen te bekijken, te verwijderen en te roteren.
+SSH-toetsen controleren, verwijderen en roteren.
 - Voer de Lijst van het Toegangsbeheer (ACL) voor Admin uit.
-U kunt een Snelle ACL van de Rand in combinatie met een douane gebruiken [VCL-codefragment](https://devdocs.magento.com/cloud/cdn/fastly-vcl-allowlist.html#vcl) om inkomende verzoeken te filtreren en toegang door IP adres aan Admin toe te staan.
+U kunt inkomende verzoeken filtreren en toegang Admin door IP adres vormen door een Snelle ACL van de Rand in combinatie met een douane uit te voeren [VCL-codefragment](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/cdn/custom-vcl-snippets/fastly-vcl-allowlist.html).
 
 ## Een incident analyseren
 
