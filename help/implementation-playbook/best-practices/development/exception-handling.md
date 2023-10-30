@@ -3,13 +3,13 @@ title: Aanbevolen werkwijzen voor het verwerken van uitzonderingen
 description: Leer de geadviseerde methodes om uitzonderingen te registreren wanneer het ontwikkelen van de projecten van Adobe Commerce.
 feature: Best Practices
 role: Developer
-source-git-commit: 94d37b6a95cae93f465daf8eb96363a198833e27
+exl-id: e7ad685b-3eaf-485b-8ab1-702f2e7ab89e
+source-git-commit: 4bf8dd5c5320cc9a34cfaa552ec5e91d517d3617
 workflow-type: tm+mt
 source-wordcount: '571'
 ht-degree: 0%
 
 ---
-
 
 # Aanbevolen werkwijzen voor het verwerken van uitzonderingen
 
@@ -88,7 +88,7 @@ In de volgende voorbeelden wordt een onjuiste afhandeling van uitzonderingen get
 
 ### ![onjuist](../../../assets/no.svg) Logica voor logboekregistratie
 
-De logica vóór registreren kan tot een andere uitzondering of fatale fout leiden, die de uitzondering verhindert worden geregistreerd en zou moeten worden vervangen door [correct voorbeeld](#correct-logging-always-comes-first).
+De logica vóór registreren kan tot een andere uitzondering of fatale fout leiden, die de uitzondering verhindert worden geregistreerd en zou moeten worden vervangen door [correct voorbeeld](#logging-always-comes-first).
 
 ```php
 try {
@@ -101,7 +101,7 @@ try {
 
 ### ![onjuist](../../../assets/no.svg) Leeg `catch`
 
-Leeg `catch` blokken kunnen een teken zijn van onbedoeld dempen en moeten worden vervangen door de [correct voorbeeld](#correct-mute-signals).
+Leeg `catch` blokken kunnen een teken zijn van onbedoeld dempen en moeten worden vervangen door de [correct voorbeeld](#mute-signals).
 
 ```php
 try {
@@ -137,11 +137,11 @@ try {
 
 Deze benadering introduceert lijnonderbrekingen in het bericht, dat niet volgzaam met PSR-3 is. De uitzondering, met inbegrip van stapelspoor, moet deel van de berichtcontext uitmaken om ervoor te zorgen dat het correct met het bericht in New Relic of andere PSR-3 monolog-compatibele logboekopslag wordt bewaard.
 
-Los dit probleem door de code te vervangen die de correcte die voorbeelden volgt in worden getoond [Schrijf aan het uitzonderingslogboek](#correct-write-to-the-exception-log) of [Uitzonderingen downgraden](#correct-downgrade-exceptions).
+Los dit probleem door de code te vervangen die de correcte die voorbeelden volgt in worden getoond [Schrijf aan het uitzonderingslogboek](#write-to-the-exception-log) of [Uitzonderingen downgraden](#downgrade-exceptions).
 
 ### ![onjuist](../../../assets/no.svg) Uitzonderingen downgraden zonder context
 
-De uitzondering wordt gedowngraded naar een fout, die niet toestaat dat een object wordt doorgegeven, maar alleen een tekenreeks, vandaar de `getMessage()`. Hierdoor gaat het spoor verloren en moet het worden vervangen door de juiste voorbeelden in [Schrijf aan het uitzonderingslogboek](#correct-write-to-the-exception-log) of [Uitzonderingen downgraden](#correct-downgrade-exceptions).
+De uitzondering wordt gedowngraded naar een fout, die niet toestaat dat een object wordt doorgegeven, maar alleen een tekenreeks, vandaar de `getMessage()`. Hierdoor gaat het spoor verloren en moet het worden vervangen door de juiste voorbeelden in [Schrijf aan het uitzonderingslogboek](#write-to-the-exception-log) of [Uitzonderingen downgraden](#downgrade-exceptions).
 
 ```php
 try {
@@ -153,7 +153,7 @@ try {
 
 ### ![onjuist](../../../assets/no.svg) Logboek slechts het bericht aan het uitzonderingslogboek
 
-In plaats van het object door te geven `$e`, alleen `$e->getMessage()` wordt doorgegeven. Dit veroorzaakt dat het spoor wordt verloren en zou door de correcte getoonde voorbeelden moeten worden vervangen [Schrijf aan het uitzonderingslogboek](#correct-write-to-the-exception-log) of [Uitzonderingen downgraden](#correct-downgrade-exceptions).
+In plaats van het object door te geven `$e`, alleen `$e->getMessage()` wordt doorgegeven. Dit veroorzaakt dat het spoor wordt verloren en zou door de correcte getoonde voorbeelden moeten worden vervangen [Schrijf aan het uitzonderingslogboek](#write-to-the-exception-log) of [Uitzonderingen downgraden](#downgrade-exceptions).
 
 ```php
 try {
@@ -165,7 +165,7 @@ try {
 
 ### ![onjuist](../../../assets/no.svg) Ontbreekt `// phpcs:ignore Magento2.CodeAnalysis.EmptyBlock.DetectedCatch`
 
-Het weglaten van `phpcs:ignore` De lijn brengt een waarschuwing in PHPCS teweeg en zou niet uw CI moeten overgaan. Deze moet worden vervangen door het juiste voorbeeld in [Signalen dempen](#correct-mute-signals).
+Het weglaten van `phpcs:ignore` De lijn brengt een waarschuwing in PHPCS teweeg en zou niet uw CI moeten overgaan. Deze moet worden vervangen door het juiste voorbeeld in [Signalen dempen](#mute-signals).
 
 ```php
 try {
