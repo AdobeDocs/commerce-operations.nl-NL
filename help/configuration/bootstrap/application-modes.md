@@ -2,9 +2,9 @@
 title: Toepassingsmodi
 description: De toepassing van de Handel kan op verschillende wijzen afhankelijk van uw behoeften werken. Bekijk een gedetailleerde lijst met de beschikbare toepassingsmodi.
 exl-id: a2a71f43-682f-4fa4-940a-1f6a4d441c41
-source-git-commit: 95ffff39d82cc9027fa633dffedf15193040802d
+source-git-commit: 982c478f73bdd1301210db5a89fb09edf69a6c42
 workflow-type: tm+mt
-source-wordcount: '719'
+source-wordcount: '740'
 ht-degree: 0%
 
 ---
@@ -24,7 +24,9 @@ Zie [De bewerkingsmodus instellen](../cli/set-mode.md) voor informatie over het 
 
 ## Ondersteuning voor cloud
 
-Het is niet nodig om de toepassingsmodi voor een project van de wolkeninfrastructuur te beheren. Vanwege het alleen-lezen bestandssysteem kunt u geen modi wijzigen in externe cloudomgevingen. Adobe Commerce on cloud Infrastructure voert de toepassing automatisch uit in _onderhoud_ wijze tijdens een plaatsing, die uw plaats offline neemt tot de plaatsing volledig is. Anders blijft de toepassing in _productie_ -modus. Zie [Implementatieproces](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/deploy/process.html#deploy-phase) in de _Handleiding Handel in Cloud-infrastructuur_.
+Het is niet nodig om de toepassingsmodi voor een project van de wolkeninfrastructuur te beheren. Vanwege het alleen-lezen bestandssysteem kunt u geen modi wijzigen in externe cloudomgevingen. Probeer niet om modi te wijzigen door de `app/etc/env.php` bestand omdat de `ece-tools` het pakket overschrijft het bestand op basis van meerdere configuratiebronnen.
+
+Adobe Commerce on cloud Infrastructure voert de toepassing automatisch uit in _onderhoud_ wijze tijdens een plaatsing, die uw plaats offline neemt tot de plaatsing volledig is. Anders blijft de toepassing in _productie_ -modus. Zie [Implementatieproces](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/deploy/process.html#deploy-phase) in de _Handleiding Handel in Cloud-infrastructuur_.
 
 Als u Cloud Docker voor Handel als ontwikkelingsinstrument gebruikt, kunt u uw cloudinfrastructuurproject in een Docker-omgeving implementeren in _ontwikkelaar_ , maar de prestaties zijn trager als gevolg van extra bewerkingen voor bestandssynchronisatie. Zie [De Docker-omgeving implementeren](https://developer.adobe.com/commerce/cloud-tools/docker/deploy/#launch-mode) in de _Handleiding Cloud Docker voor handel_.
 
