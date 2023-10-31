@@ -1,19 +1,20 @@
 ---
-title: Aanbevolen procedures voor het configureren van de bestanden "robots.txt" en "sitemap.xml"
-description: Leer hoe u instructies over uw Adobe Commerce-site doorgeeft aan webcrawlers.
+title: Aanbevolen procedures voor het configureren van webcrawlers
+description: Leer hoe u instructies over uw Adobe Commerce-site doorgeeft aan webcrawlers met de bestanden 'robots.txt' en 'sitemap.xml'.
 role: Developer
 feature: Best Practices
 exl-id: f3a81bab-a47a-46ad-b334-920df98c87ab
-source-git-commit: 94d7a57dcd006251e8eefbdb4ec3a5e140bf43f9
+source-git-commit: e1e7ad76b1df8e920ab7f9740fd4be8dc7335954
 workflow-type: tm+mt
-source-wordcount: '596'
+source-wordcount: '599'
 ht-degree: 0%
 
 ---
 
-# Aanbevolen procedures voor het configureren `robots.txt` en `sitemap.xml` bestanden
 
-Dit artikel biedt tips en trucs voor het gebruik van `robots.txt` en `sitemap.xml` bestanden in Adobe Commerce, inclusief configuratie en beveiliging. Met deze bestanden wordt aan webrobots (meestal robots met zoekmachines) uitgelegd hoe u door pagina&#39;s op een website kunt bladeren. Door deze bestanden te configureren, kunt u de prestaties van de site verbeteren en de zoekmachine optimaliseren.
+# Aanbevolen procedures voor het configureren van webcrawlers
+
+Dit artikel biedt tips en trucs voor het gebruik van `robots.txt` en `sitemap.xml` bestanden in Adobe Commerce, inclusief configuratie en beveiliging. Deze bestanden geven webcrawlers (meestal robots met zoekmachines) de opdracht door pagina&#39;s op een website te bladeren. Door deze bestanden te configureren, kunt u de prestaties van de site verbeteren en de zoekmachine optimaliseren.
 
 >[!NOTE]
 >
