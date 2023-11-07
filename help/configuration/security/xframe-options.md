@@ -1,20 +1,20 @@
 ---
-title: X-Frame-Options header
-description: Gebruik X-Frame-Opties om paginaweergaven te besturen.
+title: Klickjackingexplosies voorkomen
+description: Voorkomen dat klikaanvallen worden misbruikt door de header 'X-Frame-Options' te gebruiken om paginaweergaven te beheren.
 feature: Configuration, Security
 exl-id: 83cf5fd2-3eb8-4bd9-99e2-1c701dcd1382
-source-git-commit: 56a2461edea2799a9d569bd486f995b0fe5b5947
+source-git-commit: 6cc04211fedddab68087bcf2f3603ae0403862b9
 workflow-type: tm+mt
-source-wordcount: '225'
+source-wordcount: '226'
 ht-degree: 0%
 
 ---
 
-# X-Frame-Options header
+# Klickjackingexplosies voorkomen
 
-helpen voorkomen [Klikjacking](https://owasp.org/www-community/attacks/Clickjacking) misbruiken, hebben we een optie toegevoegd om de [X-frame-opties](https://datatracker.ietf.org/doc/html/rfc7034) HTTP- aanvraagkopbal in verzoeken aan uw storefront.
+Voorkomen [Klikjacking](https://owasp.org/www-community/attacks/Clickjacking) exploiteert door de [X-frame-opties](https://datatracker.ietf.org/doc/html/rfc7034) HTTP- aanvraagkopbal in verzoeken aan uw storefront.
 
-De `X-Frame-Options` kunt u opgeven of een browser een pagina in een `<frame>`, `<iframe>`, of `<object>` als volgt:
+De `X-Frame-Options` kunt u opgeven of een browser een pagina mag weergeven in een `<frame>`, `<iframe>`, of `<object>` als volgt:
 
 - `DENY`: De pagina kan niet in een frame worden weergegeven.
 - `SAMEORIGIN`: (standaard) Pagina kan alleen worden weergegeven in een frame dat zich op dezelfde oorsprong bevindt als de pagina zelf.

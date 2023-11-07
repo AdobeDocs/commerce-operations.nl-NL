@@ -2,9 +2,9 @@
 user-guide-title: Configuratiegids
 user-guide-description: Configureer uw Adobe Commerce- of Magento Open Source-toepassingsfuncties en -services.
 feature: Configuration
-source-git-commit: 68c4cfc29735d2ea296f579ed0a0ff52db3fdd9f
+source-git-commit: b61a2726e1a26229515d28332bbd88ba3d416a98
 workflow-type: tm+mt
-source-wordcount: '363'
+source-wordcount: '364'
 ht-degree: 0%
 
 ---
@@ -126,7 +126,7 @@ ht-degree: 0%
    + [Cachevergiftiging](security/cache-poisoning.md)
    + [Beveiligde uitsnede PHP](security/secure-cron-php.md)
    + [BeveiligingstXT](security/security-txt.md)
-   + [X-Frame-Options header](security/xframe-options.md)
+   + [Klik op Explosies oppakken](security/xframe-options.md)
 + Opslag {#storage}
    + [Databaseanalyse](storage/db-profiler.md)
    + Externe opslag {#remote-storage}

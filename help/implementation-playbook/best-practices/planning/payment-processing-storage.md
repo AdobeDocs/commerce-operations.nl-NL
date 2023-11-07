@@ -4,9 +4,9 @@ description: Meer informatie over het veilig verwerken en opslaan van betalingsg
 role: Developer
 feature: Best Practices
 exl-id: 635f38d3-0199-4d96-ba75-9edd0cb94b5c
-source-git-commit: 1887d7b285008fc98579955274bbc4affb766d0c
+source-git-commit: db0fce79b22d409e8d639b959dc5a04693e72659
 workflow-type: tm+mt
-source-wordcount: '522'
+source-wordcount: '500'
 ht-degree: 0%
 
 ---
@@ -17,7 +17,7 @@ Een van de belangrijkste beginselen bij het handhaven van [PCI-compatibiliteit](
 
 Gegevens van kaarthouders opslaan in Adobe Commerce is **strikt verboden** en dit zou een schending van uw verplichtingen als handelaar onder de Norm van de Veiligheid van Gegevens van de Industrie van de Bedrijfs van de Betalingskaart (PCI-DSS) kunnen zijn. Meer informatie over het model van gedeelde verantwoordelijkheid en de richtsnoeren voor handelsverplichtingen is te vinden in de [Adobe Commerce Handleiding voor gedeeld verantwoordelijkheidsmodel](https://www.adobe.com/content/dam/cc/en/trust-center/ungated/whitepapers/experience-cloud/adobe-commerce-shared-responsibilities-guide.pdf) op het Adobe Trust Center.
 
-Volg de onderstaande aanbevolen procedures om ervoor te zorgen dat je de betalingsgegevens op je eCommerce-site correct verwerkt. Aanvullende richtlijnen over algemene best practices op het gebied van beveiliging vindt u in onze [Tips voor best practices voor beveiliging voor Adobe Commerce](https://www.adobe.com/content/dam/cc/en/trust-center/ungated/whitepapers/experience-cloud/adobe-commerce-best-practices-guide.pdf) over het Adobe Vertrouwenscentrum
+Volg de onderstaande aanbevolen procedures om ervoor te zorgen dat je de betalingsgegevens op je eCommerce-site correct verwerkt. Zie voor aanvullende richtlijnen over best practices op het gebied van beveiliging [Uw site en infrastructuur beveiligen](../launch/security-best-practices.md).
 
 ## Betrokken producten en versies
 

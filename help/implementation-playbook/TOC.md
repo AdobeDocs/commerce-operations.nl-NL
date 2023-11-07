@@ -2,9 +2,9 @@
 user-guide-title: Afspeelmap voor implementatie
 user-guide-description: Leer meer over strategieën voor het plannen en implementeren van een geslaagde Adobe Commerce-site.
 mini-toc-levels: 3
-source-git-commit: e1e7ad76b1df8e920ab7f9740fd4be8dc7335954
+source-git-commit: db0fce79b22d409e8d639b959dc5a04693e72659
 workflow-type: tm+mt
-source-wordcount: '274'
+source-wordcount: '277'
 ht-degree: 0%
 
 ---
@@ -109,7 +109,7 @@ ht-degree: 0%
    - Starten {#launch}
       - [Overzicht](best-practices/launch/overview.md)
       - [Webcrawlers configureren](best-practices/launch/robots-txt.md)
-      - [Beveiligingsincidenten voorkomen en erop reageren](best-practices/launch/prevent-respond-security-incident.md)
+      - [Uw site en infrastructuur beveiligen](best-practices/launch/security-best-practices.md)
    - Onderhoud {#maintenance}
       - [Overzicht](best-practices/maintenance/overview.md)
       - [Voorwaartse controle](best-practices/maintenance/frontend-performance.md)
@@ -118,6 +118,7 @@ ht-degree: 0%
       - [Repareren op schaal](best-practices/maintenance/patching-at-scale.md)
       - [Bestelverwerking](best-practices/maintenance/order-processing-configuration.md)
       - [Problemen met databaseprestaties oplossen](best-practices/maintenance/resolve-database-performance-issues.md)
+      - [Reageren op beveiligingsincidenten](best-practices/maintenance/respond-to-security-incident.md)
       - [Admin-updates plannen op productiesites](best-practices/maintenance/scheduling-admin-updates-in-production.md)
       - [Services bijwerken](best-practices/maintenance/update-services.md)
       - [Controlelijst voor upgraden](best-practices/maintenance/upgrade-checklist.md)
