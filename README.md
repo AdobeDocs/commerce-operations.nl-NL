@@ -1,8 +1,8 @@
 ---
-source-git-commit: 8b82081057af7d134528988d3f9f7cf53f4d7525
+source-git-commit: 2727ddb18995ac2163276a0aa8573161add48971
 workflow-type: tm+mt
-source-wordcount: '475'
-ht-degree: 5%
+source-wordcount: '760'
+ht-degree: 3%
 
 ---
 # Technische documentatie van Adobe Commerce
@@ -54,25 +54,75 @@ Alle artikelen in deze repository gebruiken GitHub gearomatiseerde prijsopgave. 
 
 ## Sjablonen
 
-De `_jekyll` map bevat sjabloononderwerpen en vereiste elementen.
-De sjablonen die de taal voor vloeiende sjablonen gebruiken, bevinden zich in de `_jekyll/templated` als HTML-bestanden.
-De `_jekyll/_data` map bevat bestanden met de gegevens die worden gebruikt om de sjablonen te renderen.
+Voor sommige onderwerpen, gebruiken wij gegevensdossiers en malplaatjes om gepubliceerde inhoud te produceren. De gevallen van het gebruik voor deze benadering omvatten:
 
-Alle sjablonen renderen:
+* Grote sets met programmatisch gegenereerde inhoud publiceren
+* Het verstrekken van één enkele bron van waarheid voor klanten over veelvoudige systemen die machine-leesbare dossierformaten, zoals YAML, voor integratie vereisen (b.v., het Hulpmiddel van de Analyse van de Plaats-Brede)
+
+Voorbeelden van sjablooninhoud zijn onder andere:
+
+* [CLI-gereedschapsverwijzing](https://experienceleague.adobe.com/docs/commerce-operations/reference/commerce-on-premises.html)
+* [Beschikbaarstellingstabellen voor producten](https://experienceleague.adobe.com/docs/commerce-operations/release/product-availability.html)
+* [Tabellen met systeemvereisten](https://experienceleague.adobe.com/docs/commerce-operations/installation-guide/system-requirements.html)
+
+### Sjablooninhoud genereren
+
+In het algemeen, moeten de meeste schrijvers slechts een versieversie aan de de productbeschikbaarheid en lijsten van de systeemvereisten toevoegen. Het onderhoud voor alle andere sjablooninhoud wordt automatisch of beheerd door een toegewezen teamlid. Deze instructies zijn bedoeld voor de meeste schrijvers.
+
+>**OPMERKING:**
+>
+>* Voor het genereren van gesjabloonde inhoud moet u op de opdrachtregel in een terminal werken.
+>* Ruby moet zijn geïnstalleerd om het renderscript uit te voeren. Zie [_jekyll/.ruby-version](_jekyll/.ruby-version) voor de vereiste versie.
+
+Zie het volgende voor een beschrijving van de bestandsstructuur voor sjablooninhoud:
+
+* `_jekyll`—Bevat sjablonen voor onderwerpen en vereiste elementen
+* `_jekyll/_data`—Bevat de machineleesbare bestandsindelingen die worden gebruikt om sjablonen te renderen
+* `_jekyll/templated`—Bevat op HTML gebaseerde sjabloonbestanden die de taal voor vloeiende sjablonen gebruiken
+* `help/_includes/templated`—Bevat de gegenereerde uitvoer voor sjablooninhoud in `.md` bestandsindeling zodat deze kan worden gepubliceerd in onderwerpen over Experiencen League; het renderscript schrijft automatisch gegenereerde uitvoer naar deze map voor u
+
+Sjablooninhoud bijwerken:
+
+1. Open in de teksteditor een gegevensbestand in het dialoogvenster `/jekyll/_data` directory. Bijvoorbeeld:
+
+   * [Beschikbaarstellingstabellen voor producten](https://experienceleague.adobe.com/docs/commerce-operations/release/product-availability.html): `/jekyll/_data/product-availability.yml`
+   * [Tabellen met systeemvereisten](https://experienceleague.adobe.com/docs/commerce-operations/installation-guide/system-requirements.html): `/jekyll/_data/system-requirements.yml`
+
+1. Gebruik de bestaande YAML-structuur om items te maken.
+
+   Als u bijvoorbeeld een versie van Adobe Commerce wilt toevoegen aan de tabellen voor productbeschikbaarheid, voegt u het volgende toe aan elk item in het dialoogvenster `extensions` en `services` van de `/jekyll/_data/product-availability.yml` bestand (wijzig zo nodig versienummers):
+
+   ```
+   support:
+      - core: 1.2.3
+        version: 4.5.6
+   ```
 
 1. Ga naar de `_jekyll` directory.
 
-   cd_jekyll
+   ```
+   cd _jekyll
+   ```
 
-1. Voer het renderscript uit.
+1. Genereer sjablooninhoud en schrijf de uitvoer naar de `help/_includes/templated` directory.
 
-```
-_scripts/render
-```
+   ```
+   rake render
+   ```
 
-> **OPMERKING:** U moet het script uitvoeren vanuit het dialoogvenster `_jekyll` directory.
-> **OPMERKING:** U moet Ruby hebben geïnstalleerd om dit manuscript in werking te stellen.
+   >**OPMERKING:** U moet het script uitvoeren vanuit het dialoogvenster `_jekyll` directory. Als dit uw eerste keer is om het manuscript in werking te stellen, moet u de gebiedsdelen van Ruby eerst met installeren `bundle install` gebruiken.
 
-Het script voert rendering uit en schrijft gerenderde sjablonen naar de `help/_includes/templated` directory.
+1. Controleren of de verwachte `help/_includes/templated` bestanden zijn gewijzigd.
+
+   ```
+   git status
+   ```
+
+   U zou output gelijkend op het volgende moeten zien:
+
+   ```
+   modified:   _data/product-availability.yml
+   modified:   ../help/_includes/templated/product-availability-extensions.md
+   ```
 
 Raadpleeg de documentatie bij Jekyll voor meer informatie over [Gegevensbestanden](https://jekyllrb.com/docs/datafiles), [Vloeibare filters](https://jekyllrb.com/docs/liquid/filters/)en andere functies.
