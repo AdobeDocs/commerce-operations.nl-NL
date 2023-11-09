@@ -4,7 +4,7 @@ description: Leer hoe u CSS- en JavaScript-bestanden (JS) voor Adobe Commerce-pr
 role: Developer
 feature: Best Practices
 exl-id: ff0bc407-b563-418b-9d6a-7c1dc8f235df
-source-git-commit: 409bd4795704b9daec7773459e5a1f9f42ef5128
+source-git-commit: 2662ced484fb42bf2d32609e4e82364c1e47c8f0
 workflow-type: tm+mt
 source-wordcount: '407'
 ht-degree: 0%
@@ -34,7 +34,7 @@ De tijd die nodig is om CSS- en JavaScript-bestanden (JS) te laden, kan worden v
 >
 >Adobe Commerce op wolkeninfrastructuur loopt altijd op de wijze van de Productie en het is niet mogelijk om het anders te plaatsen, daarom moet u de bevel-lijn methode gebruiken om het samenvoegen, het minimaliseren, en het bundelen toe te laten.
 
-Voeg of bundel geen dossiers samen als uw plaatsing HTTP2 gebruikt. HTTP2 downloadt asynchroon statische dossiers. Browsers moeten een volledig samengevoegd bestand downloaden voordat de bestandsinhoud kan worden verwerkt.
+Voeg of bundel geen dossiers samen als uw plaatsing HTTP/2 gebruikt. HTTP/2 downloadt statische bestanden asynchroon. Browsers moeten een volledig samengevoegd bestand downloaden voordat de bestandsinhoud kan worden verwerkt.
 
 ### Admin gebruiken
 
