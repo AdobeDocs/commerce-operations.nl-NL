@@ -2,9 +2,9 @@
 title: Opmerkingen bij de release
 description: Meer informatie over de patches die beschikbaar zijn voor Adobe Commerce en de problemen die ze oplossen.
 exl-id: 22262555-f5ea-49ad-98ad-ea8428ef66d5
-source-git-commit: 6e82738ab9b3ea106b7987fac2f6f4a026ddc4f0
+source-git-commit: b1c258b33898ec07a0d0d805843bea1b3e9de478
 workflow-type: tm+mt
-source-wordcount: '15145'
+source-wordcount: '15346'
 ht-degree: 0%
 
 ---
@@ -20,6 +20,18 @@ De [[!DNL Quality Patches Tool]](https://github.com/magento/quality-patches) lev
 >[!INFO]
 >
 >Voor informatie over [!DNL quality patches] die door de Gemeenschap voor Magento Open Source zijn opgericht, [releaseopmerkingen](https://github.com/magento/quality-patches/blob/master/community-release-notes.md).
+
+## v1.1.41 {#v1-1-41}
+
+* **ACSD-54376** (voor Adobe Commerce >=2.4.2 &lt;2.4.7) - Hiermee wordt het probleem verholpen dat optreedt in het winkelwagentje wanneer een product uit de gedeelde catalogus wordt verwijderd nadat het al aan het winkelwagentje is toegevoegd.
+* **ACSD-53722** (voor Adobe Commerce >=2.4.4 &lt;2.4.7) - Hiermee wordt het probleem verholpen waarbij de prijs van de gebundelde productopties verandert in $0 wanneer geplande updates voor verschillende bereiken actief worden.
+* **ACSD-53643** (voor Adobe Commerce >=2.4.3 &lt;2.4.7) - Hiermee wordt het probleem verholpen waarbij het totaal van de bestelling onjuist is bij het plaatsen van een kooporder met een uitgeschakeld of een out-of-stock product. Het probleem is opgelost door het *[!UICONTROL Place Order]* voor dergelijke inkooporders.
+* **ACSD-54067** (voor Adobe Commerce en Magento Open Source >=2.4.0 &lt;2.4.7) - Hiermee wordt het probleem verholpen waarbij een productvideo niet op een mobiel apparaat wordt afgespeeld.
+* **ACSD-55414** (voor Adobe Commerce en Magento Open Source >=2.4.0 &lt;2.4.6) - verbetert prestaties wanneer MariaDB probeert EAV entity_id van koord aan geheel te werpen.
+* **ACSD-51819** (voor Adobe Commerce >=2.4.4 &lt;2.4.4-p4) - Hiermee wordt het probleem opgelost waarbij meerdere bestellingen met dezelfde aanhalings-id kunnen worden geplaatst.
+* **ACSD-53118** (voor Adobe Commerce >=2.4.0 &lt;2.4.7) - Hiermee wordt het probleem opgelost waarbij de *[!UICONTROL Cart Price Rule]* wordt toegepast met behulp van couponcode terwijl het product een leeg kenmerk heeft.
+* **ACSD-54324** (voor Adobe Commerce >=2.4.5 &lt;2.4.7) - Hiermee wordt het probleem verholpen waarbij het GraphQL request_lists geen rekening houdt met pagineringsinstellingen en alle resultaten retourneert.
+* Bijgewerkte patches: MDVA-42855-v2
 
 ## v1.1.40 {#v1-1-40}
 
