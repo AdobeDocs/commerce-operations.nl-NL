@@ -2,9 +2,9 @@
 title: Optionele software
 description: Meer informatie over optionele software die u kunt installeren voor ondersteuning van installaties op locatie van Adobe Commerce en Magento Open Source.
 exl-id: 533ff52b-3301-4624-b691-3dfddde6ce0b
-source-git-commit: 95ffff39d82cc9027fa633dffedf15193040802d
+source-git-commit: 40d850add2ef8c51e9192758135768306b163780
 workflow-type: tm+mt
-source-wordcount: '635'
+source-wordcount: '637'
 ht-degree: 0%
 
 ---
@@ -128,7 +128,7 @@ Controleer het volgende als een fout van 404 (Niet gevonden) wordt weergegeven:
 
   [Help voor Ubuntu](https://help.ubuntu.com/community/UFW)
 
-  [Help voor CentOS](https://wiki.centos.org/HowTos/Network/IPTables)
+  [Help voor CentOS](https://wiki.centos.org/HowTos%282f%29Network%282f%29IPTables.html)
 
 ## phpMyAdmin
 

@@ -4,9 +4,9 @@ description: Leer hoe u aangepaste gereedschappen kunt gebruiken voor het openen
 hide: true
 hidefromtoc: true
 exl-id: 5080e03b-0a83-405c-a232-b93311e284a3
-source-git-commit: 95ffff39d82cc9027fa633dffedf15193040802d
+source-git-commit: 40d850add2ef8c51e9192758135768306b163780
 workflow-type: tm+mt
-source-wordcount: '341'
+source-wordcount: '338'
 ht-degree: 0%
 
 ---
@@ -15,7 +15,7 @@ ht-degree: 0%
 
 <!-- TODO: Remove hide metadata when the library has been integrated with Commerce. -->
 
-De [Privacy JavaScript-bibliotheek Adobe](https://developer.adobe.com/apis/experienceplatform/gdpr/services/allservices.html) Dit is een set gereedschappen waarmee u een proces kunt maken voor het openen en verwijderen van persoonlijke gegevens.
+De [Privacy JavaScript-bibliotheek Adobe](https://experienceleague.adobe.com/docs/experience-platform/privacy/js-library.html) Dit is een set gereedschappen waarmee u een proces kunt maken voor het openen en verwijderen van persoonlijke gegevens.
 
 Adobe Commerce en Magento Open Source data tracking kunnen persoonlijke informatie opslaan die van toepassing is op privacyregels zoals [Algemene verordening inzake gegevensbescherming (GDPR)](gdpr.md) en [California Consumer Privacy Act (CCPA)](ccpa.md).
 
@@ -43,7 +43,7 @@ De AdobePrivacy JS-bibliotheek bevat verschillende functies voor het beheer van 
 `retrieveThenRemoveIdentities()`
 : Deze functie is vergelijkbaar met `removeIdentities()` daarin wordt een array met identiteiten opgehaald en uit de browser verwijderd.
 
-Zie voor meer informatie en voorbeelden over het gebruik van deze functies de [officiële bibliotheekdocumentatie](https://developer.adobe.com/apis/experienceplatform/gdpr/services/allservices.html).
+Zie voor meer informatie en voorbeelden over het gebruik van deze functies de [officiële bibliotheekdocumentatie](https://experienceleague.adobe.com/docs/experience-platform/privacy/js-library.html).
 
 ### Initialisatie
 
@@ -54,4 +54,4 @@ var adobePrivacy = new AdobePrivacy({});
 ```
 
 De constructor accepteert een configuratieobject met parameters tijdens het instantiëren.
-Zie de [officiële bibliotheekdocumentatie](https://developer.adobe.com/apis/experienceplatform/gdpr/services/allservices.html) voor een lijst van deze configuratieparameters.
+Zie de [officiële bibliotheekdocumentatie](https://experienceleague.adobe.com/docs/experience-platform/privacy/js-library.html) voor een lijst van deze configuratieparameters.

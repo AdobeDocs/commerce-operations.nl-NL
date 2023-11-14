@@ -3,9 +3,9 @@ title: Beveiliging van installatie op locatie
 description: Meer informatie over manieren om de beveiligingspositie van uw Adobe Commerce of Magento Open Source op locatie te verbeteren.
 feature: Install, Security
 exl-id: 56724a72-c64d-44d4-a886-90d97ae5fb6d
-source-git-commit: ce405a6bb548b177427e4c02640ce13149c48aff
+source-git-commit: 40d850add2ef8c51e9192758135768306b163780
 workflow-type: tm+mt
-source-wordcount: '332'
+source-wordcount: '334'
 ht-degree: 0%
 
 ---
@@ -68,4 +68,4 @@ Om Apache in staat te stellen een verbinding met een andere gastheer met toegela
 Afhankelijk van uw veiligheidsvereisten, zou u het noodzakelijk kunnen vinden om haven 80 en andere havens in uw firewall te openen. Wegens de gevoelige aard van voorzien van een netwerkveiligheid, adviseert de Adobe sterk dat u met uw afdeling van IT alvorens te werk te gaan raadpleegt. Hier volgen enkele suggesties voor verwijzingen:
 
 * Ubuntu: [Documentatiepagina Ubuntu](https://help.ubuntu.com/community/IptablesHowTo)
-* CentOS: [Hoe-kan-ik-bestand voor CentOS](https://wiki.centos.org/HowTos/Network/IPTables).
+* CentOS: [Hoe-kan-ik-bestand voor CentOS](https://wiki.centos.org/HowTos%282f%29Network%282f%29IPTables.html).
