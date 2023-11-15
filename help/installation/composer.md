@@ -2,9 +2,9 @@
 title: Snelle start van de installatie op locatie
 description: Voer de volgende stappen uit om Adobe Commerce of Magento Open Source te installeren op uw eigen infrastructuur.
 exl-id: a93476e8-2b30-461a-91df-e73eb1a14d3c
-source-git-commit: 3d9b7c5352f91308dd315a7195ee2cb1c4b191ee
+source-git-commit: 3c6527e5936438d6f1f52b32082cc7dde5f87f22
 workflow-type: tm+mt
-source-wordcount: '975'
+source-wordcount: '993'
 ht-degree: 0%
 
 ---
@@ -90,6 +90,10 @@ U kunt als volgt het metapakket Adobe Commerce of Magento Open Source ophalen:
    ```
 
    Voer desgevraagd uw verificatietoetsen in. De openbare en privé sleutels worden gecreeerd en in uw gevormd [Commerce Marketplace](https://commercemarketplace.adobe.com/customer/account/login/).
+
+   >[!NOTE]
+   >
+   > Bij gebruik van een Composer `auth.json` bestand- of omgevingsvariabele, wordt u niet gevraagd om uw verificatietoetsen in te voeren.
 
    Als u fouten tegenkomt, zoals `Could not find package...` of `...no matching package found`, zorg ervoor dat er geen typos in uw bevel zijn. Als er nog steeds fouten optreden, kunt u geen Adobe Commerce downloaden. Contact [Adobe Commerce-ondersteuning](https://support.magento.com/hc/en-us) voor hulp.
 
