@@ -2,9 +2,9 @@
 title: Opmerkingen bij de release
 description: Meer informatie over de patches die beschikbaar zijn voor Adobe Commerce en de problemen die ze oplossen.
 exl-id: 22262555-f5ea-49ad-98ad-ea8428ef66d5
-source-git-commit: b1c258b33898ec07a0d0d805843bea1b3e9de478
+source-git-commit: 704c3e2934c74ee4b06499bbfc4cb68b0a007a1e
 workflow-type: tm+mt
-source-wordcount: '15346'
+source-wordcount: '15669'
 ht-degree: 0%
 
 ---
@@ -20,6 +20,23 @@ De [[!DNL Quality Patches Tool]](https://github.com/magento/quality-patches) lev
 >[!INFO]
 >
 >Voor informatie over [!DNL quality patches] die door de Gemeenschap voor Magento Open Source zijn opgericht, [releaseopmerkingen](https://github.com/magento/quality-patches/blob/master/community-release-notes.md).
+
+## v1.1.42 {#v1-1-42}
+
+* **ACSD-53658** (voor Adobe Commerce en Magento Open Source >=2.4.4 &lt;2.4.7) - Hiermee wordt het probleem opgelost waarbij *[!UICONTROL Recently Viewed]* De productgegevens worden niet correct bijgewerkt in de winkelweergave.
+* **ACSD-54626** (voor Adobe Commerce >=2.4.6 &lt;2.4.7) - Hiermee kunt u het probleem verhelpen waarbij u geen nieuwe regel voor inkooporders kunt maken (`createPurchaseOrderApprovalRule`) met de `NUMBER_OF_SKUS` kenmerk via [!DNL GraphQL].
+* **ACSD-53845** (voor Adobe Commerce en Magento Open Source >=2.4.0 &lt;2.4.7) - Hiermee wordt het [!DNL MySQL] probleem met time-out van verbinding wanneer `consumer max_messages` = 0.
+* **ACSD-54890** (voor Adobe Commerce en Magento Open Source >=2.4.0 &lt;2.4.7) - Hiermee wordt het probleem opgelost waarbij `aggregate_sales_report_bestsellers_data` oorzaken [!DNL MySQL] fouten als gevolg van `/tmp` schijf heeft onvoldoende ruimte.
+* **ACSD-55112** (voor Adobe Commerce en Magento Open Source >=2.4.0 &lt;2.4.7) - Hiermee wordt het probleem opgelost waarbij de *[!UICONTROL Submit review]* er kan meerdere keren op de knop worden geklikt zonder [!DNL Google reCAPTCHA v3] validatie.
+* **ACSD-54264** (voor Adobe Commerce >=2.4.4-p5 &lt;2.4.5 || >=2.4.5-p4 &lt;2.4.6 || >=2.4.6-p2 &lt;2.4.7) - Hiermee wordt het probleem opgelost waarbij het foutbericht *&quot;U kunt het gewenste kenmerk niet bijwerken. Rij-id: store_id&quot;* verschijnt wanneer een klant probeert uit te checken met een verhandelbaar aanhalingsteken in een andere winkelweergave.
+* **ACSD-54418** (voor Adobe Commerce en Magento Open Source >=2.4.0 &lt;2.4.7) - Hiermee wordt de kwestie opgelost waarbij een vaste korting onjuist wordt toegepast op elk onderliggend product van de dynamisch geprijsde bundel.
+* **ACSD-55238** (voor Adobe Commerce en Magento Open Source >=2.4.4 &lt;2.4.7) - Oplossingen waarmee het lege product wordt opgeslagen *[!UICONTROL Meta Description]*.
+* **ACSD-54966** (voor Adobe Commerce en Magento Open Source >=2.4.5 &lt;2.4.7) - Hiermee wordt de emissie gecorrigeerd waarbij een couponcode met een beperkt gebruik per klant niet opnieuw kan worden gebruikt als de vorige bestelling is mislukt.
+* **ACSD-54060** (voor Adobe Commerce en Magento Open Source >=2.4.3 &lt;2.4.7) - Hiermee wordt het probleem verholpen waarbij een beperkte beheerder een product niet kan opslaan als het een onderliggend product is van een ander product dat is toegewezen aan een ander bereik.
+* **ACSD-48910** (voor Adobe Commerce en Magento Open Source >=2.4.5 &lt;2.4.6) - Probleem verholpen waarbij een aan meerdere bronnen toegewezen bundelproduct uit voorraad komt nadat een bestelling is gefactureerd en verzonden, zelfs als het nog steeds een hoeveelheid van niet-nul heeft.
+* **ACSD-55381** (voor Adobe Commerce >=2.4.2 &lt;2.4.7) - Oplossing voor een interne serverfout bij het opvragen van gegevens `configurable_product_option_uid` en `configurable_product_option_value_uid` velden van een [!DNL B2B] *[!UICONTROL Requisition list]* via [!DNL GraphQL].
+* **ACSD-55628** (voor Adobe Commerce >=2.4.4-p2 &lt; 2.4.5) || >=2.4.5-p1 &lt; 2.4.6) - Oplossingen waarmee een bestand op het bedrijfsregistratieformulier wordt geüpload en een bestand voor een kenmerk van een klant in de winkel wordt vervangen.
+* Bijgewerkte patches: ACSD-51240, ACSD-51890, ACSD-53098
 
 ## v1.1.41 {#v1-1-41}
 
