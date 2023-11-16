@@ -2,22 +2,25 @@
 title: Levenscyclusbeleid voor software
 description: In deze video ziet u de belangrijkste datums voor het einde van de softwareondersteuning voor Adobe Commerce-releases.
 exl-id: 9ee4ecc8-d893-412a-a605-5a8606a1b9a9
-source-git-commit: e8222bd06b917e21513ede99d46617107dd2d847
+source-git-commit: bb90d7903eafe01b42d8c056db771769f9e4e752
 workflow-type: tm+mt
-source-wordcount: '326'
-ht-degree: 16%
+source-wordcount: '383'
+ht-degree: 12%
 
 ---
+
 
 # Adobe Commerce-levenscyclusbeleid
 
 Voor Adobe Commerce 2.4.4 en latere versies:
 
-- Om ons levenscyclusbeleid beter te stroomlijnen en de opdracht-kritieke behoeften van klanten van Adobe Commerce te steunen, breiden wij ons steunvenster tot drie jaar uit van de algemene beschikbaarheidsdatum (GA) voor Adobe Commerce 2.4.4 en later. Adobe biedt kwaliteitscorrecties voor 2.4.4 en latere releases voor een periode van drie jaar. Klanten kunnen toegang krijgen tot de kwaliteitsoplossingen door contact op te nemen met [Adobe Commerce-ondersteuning](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html) of via het zelfdienen [[!DNL Quality Patches Tool]](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html) als de versie ervan nog steeds in aanmerking komt voor kwaliteitsondersteuning. Raadpleeg de onderstaande tabel voor de einddata van de softwareondersteuning voor Adobe Commerce-releaselijnen.
+- Om het levenscyclusbeleid van Adobe Commerce te stroomlijnen en de opdracht-kritieke behoeften van klanten te steunen, breidde de Adobe het steunvenster tot drie jaar uit van de Algemene datum van de Beschikbaarheid (GA) voor Adobe Commerce 2.4.4 en later. Adobe biedt kwaliteitscorrecties voor 2.4.4 en latere releases voor een periode van drie jaar. Klanten kunnen toegang krijgen tot de kwaliteitsoplossingen door contact op te nemen met [Adobe Commerce-ondersteuning](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html) of via het zelfdienen [[!DNL Quality Patches Tool]](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html) als de versie ervan nog steeds in aanmerking komt voor kwaliteitsondersteuning. Raadpleeg de onderstaande tabel voor de einddata van de softwareondersteuning voor Adobe Commerce-releaselijnen.
 
 - Adobe biedt beveiligingsoplossingen via een beveiligingspatchrelease voor de ondersteuningsperiode van drie jaar.
 
 - Voor belangrijke beveiligingsproblemen, zoals &#39;zero-day&#39;-kwetsbaarheden, biedt Adobe [hotfixes](https://support.magento.com/hc/en-us/sections/360003869892-Known-issues-patches-attached-) voor alle klanten op een ondersteunde versie, zelfs als ze niet op de nieuwste patch of beveiligingspatchrelease staan. Het is belangrijk om op te merken dat een hotfix geen vangst-allen is en niet alle veiligheidskwesties behandelt die door verbetering aan de recentste versie zouden worden opgelost.
+
+- Adobe biedt geen beveiligings- en kwaliteitsoplossingen voor services en softwareafhankelijkheden van derden, zoals PHP. Het is uw verantwoordelijkheid om de veiligheid en naleving (bijvoorbeeld, PCI, ISO, SOC) van derdesoftwaregebiedsdelen te handhaven. Adobe raadt aan om uw omgevingen zo snel mogelijk bij te werken met de nieuwste versie van PHP die door Adobe Commerce wordt ondersteund. Gebruik geen versie van PHP die het einde van de ondersteuning heeft bereikt.
 
 ## Einde van softwareondersteuning
 
@@ -51,7 +54,6 @@ Voor Adobe Commerce 2.4.4 en latere versies:
 <tbody>
   <tr>
     <td>Handel</td>
-    <td>PHP</td>
     <td>Q1</td>
     <td>Q2</td>
     <td>Q3</td>
@@ -79,40 +81,24 @@ Voor Adobe Commerce 2.4.4 en latere versies:
   </tr>
   <tr>
     <td>2.4.4</td>
-    <td>8.1</td>
     <td></td>
     <td colspan="13" style="background-color:#67ac68;"></td>
     <td colspan="10"></td>
   </tr>
   <tr>
     <td>2.4.5</td>
-    <td>8.1</td>
     <td colspan="2"></td>
     <td colspan="13" style="background-color:#67ac68;"></td>
     <td colspan="9"></td>
   </tr>
   <tr>
-    <td rowspan="2">2.4.6</td>
-    <td>8.1</td>
+    <td>2.4.6</td>
     <td colspan="4"></td>
     <td colspan="13" style="background-color:#67ac68;"></td>
     <td colspan="8"></td>
   </tr>
   <tr>
-    <td>8.2</td>
-    <td colspan="4"></td>
-    <td colspan="13" style="background-color:#67ac68;"></td>
-    <td colspan="8"></td>
-  </tr>
-  <tr>
-    <td rowspan="2">2.4.7</td>
-    <td>8.2</td>
-    <td colspan="9"></td>
-    <td colspan="13" style="background-color:#67ac68;"></td>
-    <td colspan="2"></td>
-  </tr>
-  <tr>
-    <td>8.3</td>
+    <td>2.4.7</td>
     <td colspan="9"></td>
     <td colspan="13" style="background-color:#67ac68;"></td>
     <td colspan="2"></td>
@@ -126,7 +112,7 @@ Voor Adobe Commerce 2.4.4 en latere versies:
  <tbody>
   <tr>
    <td style="background-color:#67ac68;">Ondersteund</td>
-   <td>Beveiliging en kwaliteitspatches voor Adobe Commerce en PHP.</td>
+   <td>Beveiliging en kwaliteitspatches voor Adobe Commerce</td>
   </tr>
   <!-- <tr>
    <td style="background-color:#cd3c3c;">End of software support</td>
