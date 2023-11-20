@@ -1,7 +1,7 @@
 ---
-source-git-commit: 525ac7ae2481be8c52b32471d14ceefba7b855a2
+source-git-commit: e6bce0f8e9244d1a7c31f23687474a7dc4586c5d
 workflow-type: tm+mt
-source-wordcount: '377'
+source-wordcount: '366'
 ht-degree: 0%
 
 ---
@@ -10,6 +10,26 @@ ht-degree: 0%
 ## Nieuwe functies voor implementatie van best practices
 
 Deze pagina bevat recente wijzigingen die u wilt zien. Alle kleine updates, zoals het bewerken van kopieën, worden van deze lijst uitgesloten.
+
+### 7 november 2023
+
+<table style="table-layout:auto;">
+  <thead>
+    <tr>
+      <th>Beschrijving</th>
+      <th>Type</th>
+      <th>Bron</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><p>Toegevoegde <a href="https://experienceleague.adobe.com/docs/commerce-operations/implementation-playbook/best-practices/launch/security-best-practices.html">best practices op het gebied van beveiliging</a> aan het <em>Afspeelmap voor implementatie</em>.</p>
+</td>
+      <td>best practices</td>
+      <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/2ffda8afd118184f314e8e329a678605ac241007">2ffda8</a> (toewijzen)</td>
+    </tr>
+  </tbody>
+</table><!-- date_group -->
 
 ### 28 augustus 2023
 
@@ -73,26 +93,6 @@ Deze pagina bevat recente wijzigingen die u wilt zien. Alle kleine updates, zoal
 </td>
       <td>best practices</td>
       <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/03cb50be0cb18b6079c5c69aafc74c6099610fb0">03cb50</a> (toewijzen)</td>
-    </tr>
-  </tbody>
-</table><!-- date_group -->
-
-### 9 maart 2023
-
-<table style="table-layout:auto;">
-  <thead>
-    <tr>
-      <th>Beschrijving</th>
-      <th>Type</th>
-      <th>Bron</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td><p>Bijgewerkt <a href="https://experienceleague.adobe.com/docs/commerce-operations/implementation-playbook/best-practices/planning/redis-service-configuration.html">Aanbevolen werkwijzen voor opnieuw configureren</a> met informatie over het scheiden van de cache van de sessie en het gebruik van compressie.</p>
-</td>
-      <td>best practices</td>
-      <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/f9d46893a25569b9cb00b45ab285758b3b74b410">f9d468</a> (toewijzen)</td>
     </tr>
   </tbody>
 </table><!-- date_group --><!-- month_group --><!-- year_group -->

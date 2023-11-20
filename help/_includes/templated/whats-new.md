@@ -1,7 +1,7 @@
 ---
-source-git-commit: 965d35bfc4150230d6f4bc3b3a45c951fc13ed2b
+source-git-commit: e6bce0f8e9244d1a7c31f23687474a7dc4586c5d
 workflow-type: tm+mt
-source-wordcount: '532'
+source-wordcount: '613'
 ht-degree: 0%
 
 ---
@@ -10,6 +10,106 @@ ht-degree: 0%
 ## Nieuwe functies
 
 Meer informatie over nieuwe documentatie en belangrijke updates voor bestaande documentatie.
+
+### 20 november 2023
+
+<table style="table-layout:auto;">
+  <thead>
+    <tr>
+      <th>Beschrijving</th>
+      <th>Type</th>
+      <th>Bron</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><p>Een nieuw onderwerp toegevoegd dat het <a href="https://experienceleague.adobe.com/docs/commerce-operations/security-and-compliance/shared-responsibility.html">beveiligingsmodel gedeelde verantwoordelijkheid</a> voor Adobe Commerce over infrastructuurprojecten in de cloud.</p>
+</td>
+      <td>nieuw onderwerp</td>
+      <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/b1bf4ffa950bf426c9e769904f5587cad93add15">b1bf4f</a> (toewijzen)</td>
+    </tr>
+  </tbody>
+</table>
+
+### 16 november 2023
+
+<table style="table-layout:auto;">
+  <thead>
+    <tr>
+      <th>Beschrijving</th>
+      <th>Type</th>
+      <th>Bron</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><p>Verduidelijkt <a href="https://experienceleague.adobe.com/docs/commerce-operations/release/planning/lifecycle-policy.html">ondersteuningsbeleid</a> voor services en softwareafhankelijkheden van derden.</p>
+</td>
+      <td>belangrijke update</td>
+      <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/010c625d2a00fda022b9e56098e74bb7b690479f">010c62</a> (toewijzen)</td>
+    </tr>
+  </tbody>
+</table>
+
+### 15 november 2023
+
+<table style="table-layout:auto;">
+  <thead>
+    <tr>
+      <th>Beschrijving</th>
+      <th>Type</th>
+      <th>Bron</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><p>Gepubliceerd <a href="https://experienceleague.adobe.com/docs/commerce-operations/tools/quality-patches-tool/release-notes.html">releaseopmerkingen</a> voor de pakketrelease van het 1.1.42 Quality Patches Tool (QPT).</p>
+</td>
+      <td>belangrijke update</td>
+      <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/e89fcf5fb2aa750c34bcc9152be9ae53e673bb5c">e89fcf</a> (toewijzen)</td>
+    </tr>
+  </tbody>
+</table>
+
+### 9 november 2023
+
+<table style="table-layout:auto;">
+  <thead>
+    <tr>
+      <th>Beschrijving</th>
+      <th>Type</th>
+      <th>Bron</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><p>Gepubliceerd <a href="https://experienceleague.adobe.com/docs/commerce-operations/tools/quality-patches-tool/release-notes.html">releaseopmerkingen</a> voor de pakketrelease van het 1.1.41 Quality Patches Tool (QPT).</p>
+</td>
+      <td>belangrijke update</td>
+      <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/fbc090e5fbd70ee4d594b8a813691abdddce9e20">fbc090</a> (toewijzen)</td>
+    </tr>
+  </tbody>
+</table>
+
+### 7 november 2023
+
+<table style="table-layout:auto;">
+  <thead>
+    <tr>
+      <th>Beschrijving</th>
+      <th>Type</th>
+      <th>Bron</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><p>Toegevoegde <a href="https://experienceleague.adobe.com/docs/commerce-operations/implementation-playbook/best-practices/launch/security-best-practices.html">best practices op het gebied van beveiliging</a> aan het <em>Afspeelmap voor implementatie</em>.</p>
+</td>
+      <td>nieuw onderwerp</td>
+      <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/2ffda8afd118184f314e8e329a678605ac241007">2ffda8</a> (toewijzen)</td>
+    </tr>
+  </tbody>
+</table><!-- date_group -->
 
 ### 25 oktober 2023
 
@@ -111,66 +211,6 @@ Meer informatie over nieuwe documentatie en belangrijke updates voor bestaande d
 </td>
       <td>belangrijke update</td>
       <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/21d8d1f26e44d48c84095c539e68b34066854fda">21d8d1</a> (toewijzen)</td>
-    </tr>
-  </tbody>
-</table><!-- date_group -->
-
-### 14 september 2023
-
-<table style="table-layout:auto;">
-  <thead>
-    <tr>
-      <th>Beschrijving</th>
-      <th>Type</th>
-      <th>Bron</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td><p>Gepubliceerd <a href="https://experienceleague.adobe.com/docs/commerce-operations/tools/quality-patches-tool/release-notes.html">releaseopmerkingen</a> voor de release van het pakket 1.1.38 Quality Patches Tool (QPT).</p>
-</td>
-      <td>belangrijke update</td>
-      <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/1d1fac956ceb8f869b60accfe0180c593d659ec1">1d1fac</a> (toewijzen)</td>
-    </tr>
-  </tbody>
-</table>
-
-### 11 september 2023
-
-<table style="table-layout:auto;">
-  <thead>
-    <tr>
-      <th>Beschrijving</th>
-      <th>Type</th>
-      <th>Bron</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td><p>De <a href="https://experienceleague.adobe.com/docs/commerce-operations/implementation-playbook/architecture/extensibility-strategy.html">uitbreidingsstrategie</a> met informatie over App Builder, API Mesh en Adobe I/O Events.</p>
-</td>
-      <td>belangrijke update</td>
-      <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/f4f420cee5f9241f56107c4218793af394ba1193">f4f420</a> (toewijzen)</td>
-    </tr>
-  </tbody>
-</table>
-
-### 6 september 2023
-
-<table style="table-layout:auto;">
-  <thead>
-    <tr>
-      <th>Beschrijving</th>
-      <th>Type</th>
-      <th>Bron</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td><p>Gepubliceerd <a href="https://experienceleague.adobe.com/docs/commerce-operations/tools/quality-patches-tool/release-notes.html">releaseopmerkingen</a> voor de pakketrelease van het 1.1.37 Quality Patches Tool (QPT).</p>
-</td>
-      <td>belangrijke update</td>
-      <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/3290e58436259a7af81ed81b691a3ad032c812a5">3290e5</a> (toewijzen)</td>
     </tr>
   </tbody>
 </table><!-- date_group --><!-- month_group --><!-- year_group -->
