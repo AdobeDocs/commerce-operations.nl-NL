@@ -3,9 +3,9 @@ title: PHP-instellingen
 description: Voer de volgende stappen uit om vereiste PHP extensies te installeren en de vereiste PHP instellingen te configureren voor installatie in de bedrijfsruimten van Adobe Commerce en Magento Open Source.
 feature: Install, Configuration
 exl-id: 84064442-7053-42ab-a8a6-9b313e5efc78
-source-git-commit: aacc4332cecec0cb9b0f5c23d60b7abd1c63feea
+source-git-commit: 9fe0a27346554bca3cb635b2e7ecf175adcec54a
 workflow-type: tm+mt
-source-wordcount: '790'
+source-wordcount: '812'
 ht-degree: 0%
 
 ---
@@ -18,6 +18,8 @@ In dit onderwerp wordt besproken hoe u vereiste PHP-opties kunt instellen.
 >[!NOTE]
 >
 >De nieuwste versie van Adobe Commerce en Magento Open Source vereist minimaal PHP 8.1. Zie [systeemvereisten](../system-requirements.md) voor alle ondersteunde versies van PHP.
+
+Voor hulp bij de configuratie van de cloud raadpleegt u [PHP-instellingen](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure/app/php-settings.html) in de _Handel in Cloud-infrastructuur_ hulplijn.
 
 ## Controleren of PHP is geïnstalleerd
 

@@ -2,9 +2,9 @@
 title: Voorwaarden voor installatie op locatie
 description: Meer informatie over de softwareafhankelijkheden die vereist zijn voor installaties op locatie van Adobe Commerce en Magento Open Source.
 exl-id: dd4694e7-5437-440c-bb67-804ae36149de
-source-git-commit: 95ffff39d82cc9027fa633dffedf15193040802d
+source-git-commit: 9fe0a27346554bca3cb635b2e7ecf175adcec54a
 workflow-type: tm+mt
-source-wordcount: '334'
+source-wordcount: '335'
 ht-degree: 1%
 
 ---
@@ -66,9 +66,11 @@ Als u Apache wilt installeren of upgraden, raadpleegt u [Apache](web-server/apac
 
 ### PHP
 
-Zie [systeemvereisten](../system-requirements.md) voor ondersteunde versies van PHP en [PHP] voor PHP vereisten.
+Zie [systeemvereisten](../system-requirements.md) voor ondersteunde versies van PHP en [PHP](../system-requirements.md#php-settings) voor PHP vereisten.
 
 ### MySQL
+
+Controleer of u een compatibele versie van MySQL hebt voor de versie van Adobe Commerce of Magento Open Source die u installeert. Zie [Systeemvereisten](../system-requirements.md) voor ondersteunde versies.
 
 ```bash
 mysql -u <database root user or database owner name> -p
@@ -80,7 +82,7 @@ Bijvoorbeeld:
 mysql -u magento -p
 ```
 
-Controleer of u de juiste versie van MySQL hebt voor de versie van Adobe Commerce of Magento Open Source die u installeert ([hier controleren op ondersteunde versies](../system-requirements.md). Het volgende resultaat geeft de versie aan die u uitvoert.)
+Het volgende resultaat geeft de versie aan die u uitvoert.
 
 ```terminal
 Welcome to the MySQL monitor.  Commands end with ; or \g.
