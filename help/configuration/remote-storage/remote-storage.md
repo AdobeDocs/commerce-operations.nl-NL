@@ -3,9 +3,9 @@ title: Externe opslag configureren
 description: Leer hoe te om de Verre module van de Opslag voor de toepassing van de Handel op-gebouw te vormen.
 feature: Configuration, Storage
 exl-id: 0428f889-46b0-44c9-8bd9-98c1be797011
-source-git-commit: af45ac46afffeef5cd613628b2a98864fd7da69b
+source-git-commit: 2a45fe77d5a6fac089ae2c55d0ad047064dd07b0
 workflow-type: tm+mt
-source-wordcount: '524'
+source-wordcount: '526'
 ht-degree: 0%
 
 ---
@@ -91,7 +91,7 @@ Nadat u externe opslag voor een specifieke adapter hebt ingeschakeld, kunt u de 
 
 >[!INFO]
 >
->Met de opdracht Synchroniseren worden alleen bestanden gemigreerd in het dialoogvenster `pub/media` directory, _niet_ de import-/exportbestanden in het dialoogvenster `var` directory. Zie [Geplande import/export][import-export] in de _Handboek Handel 2.4_.
+>Met de opdracht Synchroniseren worden alleen bestanden gemigreerd in het dialoogvenster `pub/media` directory, _niet_ de import-/exportbestanden in het dialoogvenster `var` directory. Zie [Geplande import/export](https://experienceleague.adobe.com/docs/commerce-admin/systems/data-transfer/data-scheduled-import-export.html) in de _Handboek Handel 2.4_.
 
 <!-- link definitions -->
 

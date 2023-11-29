@@ -2,9 +2,9 @@
 title: Toename-id wijzigen
 description: Wijzig de increment ID voor een commercieel databaseentiteit.
 exl-id: 039fc34c-d9cf-42f4-af5d-16a26a3e8171
-source-git-commit: 95ffff39d82cc9027fa633dffedf15193040802d
+source-git-commit: 2a45fe77d5a6fac089ae2c55d0ad047064dd07b0
 workflow-type: tm+mt
-source-wordcount: '384'
+source-wordcount: '380'
 ht-degree: 0%
 
 ---
@@ -28,7 +28,7 @@ In de volgende gevallen moet u mogelijk de increment-id wijzigen voor nieuwe DB-
 
 >[!INFO]
 >
->U kunt het probleem met de betaalgateway voor PayPal ook verhelpen door meerdere betalingen per factuur-ID toe te staan in de voorkeuren voor betalingsontvangst van PayPal. Zie [PayPal-gateway afgewezen aanvraag - dubbele factuurkwestie] in de _Kennisbank_.
+>U kunt het probleem met de betaalgateway voor PayPal ook verhelpen door meerdere betalingen per factuur-ID toe te staan in de voorkeuren voor betalingsontvangst van PayPal. Zie [PayPal-gateway afgewezen aanvraag - dubbele factuurkwestie](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/payments/paypal-gateway-rejected-request-duplicate-invoice-issue.html) in de _Kennisbank_.
 
 ## Vereiste stappen
 
@@ -55,7 +55,7 @@ ALTER TABLE sequence_{entity_type}_{store_id} AUTO_INCREMENT = {new_increment_va
 
 >[!INFO]
 >
-Belangrijk: de nieuwe toenamewaarde moet groter zijn dan de huidige.
+>Belangrijk: de nieuwe toenamewaarde moet groter zijn dan de huidige.
 
 Na het uitvoeren van de volgende query:
 
@@ -74,6 +74,6 @@ Voordat u het dialoogvenster `ALTER TABLE` We raden u ten zeerste aan om de volg
 
 <!-- Link Definitions -->
 
-[PayPal-gateway afgewezen aanvraag - dubbele factuurkwestie]: https://support.magento.com/hc/en-us/articles/115002457473
+[PayPal gateway rejected request - duplicate invoice issue]: https://support.magento.com/hc/en-us/articles/115002457473
 [Een DB-back-up maken]: https://support.magento.com/hc/en-us/articles/360003254334
 [elke ondersteunde versie]
