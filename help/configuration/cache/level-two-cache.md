@@ -3,9 +3,9 @@ title: L2-cacheconfiguratie
 description: Leer om het L2 geheime voorgeheugen te vormen.
 feature: Configuration, Cache
 exl-id: 0504c6fd-188e-46eb-be8e-968238571f4e
-source-git-commit: a2bd4139aac1044e7e5ca8fcf2114b7f7e9e9b68
+source-git-commit: ba3c656566af47f16f58f476d7bc9f4781bb0234
 workflow-type: tm+mt
-source-wordcount: '431'
+source-wordcount: '430'
 ht-degree: 0%
 
 ---
@@ -47,8 +47,7 @@ In het volgende voorbeeld kunt u de bestaande cachesectie in het dialoogvenster 
                 'local_backend' => 'Cm_Cache_Backend_File',
                 'local_backend_options' => [
                     'cache_dir' => '/dev/shm/'
-                ],
-                'use_stale_cache' => false,
+                ]
             ],
             'frontend_options' => [
                 'write_control' => false,
@@ -69,8 +68,7 @@ Waarbij:
    - `remote_backend_options` is de externe cacheconfiguratie.
    - `local_backend` is de lokale geheim voorgeheugenimplementatie: `Cm_Cache_Backend_File`
    - `local_backend_options` is de lokale geheim voorgeheugenconfiguratie.
-      - `cache_dir` is een bestandcache-specifieke optie voor de map waarin de lokale cache is opgeslagen.
-   - `use_stale_cache` is een vlag die het gebruik van het geheime voorgeheugen van de waliteit toelaat of onbruikbaar maakt.
+   - `cache_dir` is een bestandcache-specifieke optie voor de map waarin de lokale cache is opgeslagen.
 
 Adobe raadt aan Redis te gebruiken voor externe caching (`\Magento\Framework\Cache\Backend\Redis`) en `Cm_Cache_Backend_File` voor de lokale caching van gegevens in gedeeld geheugen, die gebruiken: `'local_backend_options' => ['cache_dir' => '/dev/shm/']`
 
@@ -94,6 +92,8 @@ Adobe beveelt aan de `use_stale_cache` optie alleen voor cachetypen die er het m
 - `reflection`
 - `translate`
 
+Adobe adviseert niet toelatend de `use_stale_cache` voor de `default` cachetype.
+
 De volgende code toont een voorbeeldconfiguratie:
 
 ```php
@@ -114,8 +114,7 @@ De volgende code toont een voorbeeldconfiguratie:
                 'local_backend' => 'Cm_Cache_Backend_File',
                 'local_backend_options' => [
                     'cache_dir' => '/dev/shm/'
-                ],
-                'use_stale_cache' => false,
+                ]
             ],
             'frontend_options' => [
                 'write_control' => false,
