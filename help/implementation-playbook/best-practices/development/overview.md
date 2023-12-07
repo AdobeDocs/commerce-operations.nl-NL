@@ -4,9 +4,9 @@ description: Leer over implementatie beste praktijken voor de ontwikkelingsfase 
 exl-id: 499c16df-0e4d-4950-8169-96356bdff1a7
 feature: Best Practices
 role: Developer
-source-git-commit: 291c3f5ea3c58678c502d34c2baee71519a5c6dc
+source-git-commit: ce386611834c4199e34b5d95ce76254957821f46
 workflow-type: tm+mt
-source-wordcount: '340'
+source-wordcount: '349'
 ht-degree: 0%
 
 ---
@@ -48,7 +48,7 @@ De volgende secties bevatten informatie over best practices voor de ontwikkeling
 ## Bestanden optimaliseren
 
 | Beste praktijken | Beschrijving |
-|-----------------------------------------------------|----------------------------------------------------------------------------------------------------------------|
+|-----------------------------------------------------|-----------------------------------------------------------------------------------------------------------|
 | [Grootte van catalogusafbeelding wijzigen](catalog-image-resizing.md) | Biedt richtlijnen voor het vergroten of verkleinen van afbeeldingen voordat een winkel in productie wordt genomen voor optimale prestaties |
 | [CSS en JS](optimize-css-js-files.md) | Cascading Style Sheet (CSS)- en JavaScript-bestanden (JS) samenvoegen en miniaturen via Beheer of de opdrachtregel |
 | [Afbeeldingen](image-optimization.md) | Afbeeldingen optimaliseren en snel gebruiken om de responstijd te optimaliseren |
@@ -62,10 +62,11 @@ De volgende secties bevatten informatie over best practices voor de ontwikkeling
 ## PHP-ontwikkeling
 
 | Beste praktijken | Beschrijving |
-|-----------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------|
+|-----------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------|
 | [Uitzonderingsafhandeling](exception-handling.md) | Beschrijft geadviseerde methodes om uitzonderingen te registreren |
 | [Extensies](https://developer.adobe.com/commerce/php/best-practices/){target="_blank"} | Beschrijft ontwikkelingspatronen helpen verzekeren verenigbaarheid tussen uw uitbreiding, toekomstige versies van Adobe Commerce, en andere douaneuitbreidingen |
 | [Persoonlijke inhoudsblokken](private-content-block-configuration.md) | Private-inhoudsblokken configureren om de prestaties van de winkel te optimaliseren |
+| [Core- en PHP-code van derden wijzigen](modifying-core-and-third-party-code.md) | De functionaliteit, het resultaat of de invoer wijzigen van code die u niet hebt gemaakt of die u niet rechtstreeks beheert |
 
 ## Platform en diensten
 

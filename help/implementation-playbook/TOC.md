@@ -2,7 +2,7 @@
 user-guide-title: Afspeelmap voor implementatie
 user-guide-description: Leer meer over strategieën voor het plannen en implementeren van een geslaagde Adobe Commerce-site.
 mini-toc-levels: 3
-source-git-commit: db0fce79b22d409e8d639b959dc5a04693e72659
+source-git-commit: a547653046fd1926c7fd587df19cb2209e263114
 workflow-type: tm+mt
 source-wordcount: '277'
 ht-degree: 0%
@@ -106,6 +106,7 @@ ht-degree: 0%
       - [Persoonlijke inhoudsblokken](best-practices/development/private-content-block-configuration.md)
       - [Statische implementatie van inhoud](best-practices/development/static-content-deployment.md)
       - [Databasetabellen wijzigen](best-practices/development/modifying-core-and-third-party-tables.md)
+      - [Code van de kern en van de derde wijzigen](best-practices/development/modifying-core-and-third-party-code.md)
    - Starten {#launch}
       - [Overzicht](best-practices/launch/overview.md)
       - [Webcrawlers configureren](best-practices/launch/robots-txt.md)
