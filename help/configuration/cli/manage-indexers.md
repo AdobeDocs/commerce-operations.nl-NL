@@ -2,9 +2,9 @@
 title: De indexen beheren
 description: Zie voorbeelden van hoe te om de indexen van de Handel te bekijken en te beheren.
 exl-id: d2cd1399-231e-4c42-aa0c-c2ed5d7557a0
-source-git-commit: 795d4e9d1910d0ad826eb6c82ac451ac58e43063
+source-git-commit: 8b9e4de2799532e4654fce63d856c2d301025f09
 workflow-type: tm+mt
-source-wordcount: '663'
+source-wordcount: '643'
 ht-degree: 0%
 
 ---
@@ -110,6 +110,8 @@ Catalog Search index has been rebuilt successfully in <time>
 >Het opnieuw indexeren van alle indexen kan lange tijd voor opslag met grote aantallen producten, klanten, categorieën, en promotieregels vergen.
 
 ### Opnieuw indexeren in parallelle modus
+
+{{php-process-control}}
 
 Indexers zijn bereikbaar en multithread om het opnieuw indexeren in parallelle modus te ondersteunen. Het parallelleert door de afmeting van de indexeerder en voert over veelvoudige draden uit, die verwerkingstijd verminderen.
 

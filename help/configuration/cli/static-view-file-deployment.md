@@ -2,9 +2,9 @@
 title: Statische weergavebestanden gebruiken
 description: Leer om statische dossiers aan het het dossiersysteem van de Handel tijdens productiemodus te schrijven.
 exl-id: 51954738-b999-4982-954b-70f7a70c5a17
-source-git-commit: 95ffff39d82cc9027fa633dffedf15193040802d
+source-git-commit: 0a72bc492dfec0a9014a518282a97ab21e59f96d
 workflow-type: tm+mt
-source-wordcount: '1132'
+source-wordcount: '1124'
 ht-degree: 0%
 
 ---
@@ -57,10 +57,10 @@ De volgende lijst verklaart de parameters en de waarden van dit bevel.
 | `--language (-l)` | Genereer bestanden alleen voor de opgegeven talen. Als er geen optie is opgegeven, worden standaard bestanden voor alle ISO-639-taalcodes gegenereerd. U kunt de naam van één taalcode tegelijk opgeven. Standaardwaarde is **alles**.<br>Bijvoorbeeld: `--language en_US --language es_ES` | Nee |
 | `--exclude-language` | Genereer bestanden voor de opgegeven taalcodes. Als er geen optie is opgegeven, wordt standaard niets uitgesloten. U kunt de naam van één taalcode of een komma-gescheiden lijst van taalcodes specificeren. Standaardwaarde is **none**. | Nee |
 | `--theme <theme>` | Thema&#39;s waarvoor statische inhoud moet worden geïmplementeerd. Standaardwaarde is **alles**.<br>Bijvoorbeeld: `--theme Magento/blank --theme Magento/luma` | Nee |
-| `--exclude-theme <theme>` | Thema&#39;s die moeten worden uitgesloten bij het implementeren van statische inhoud. Standaardwaarde is **none**.<br>Bijvoorbeeld, `--exclude-theme Magento/blank` | Nee |
+| `--exclude-theme <theme>` | Thema&#39;s die moeten worden uitgesloten bij het implementeren van statische inhoud. Standaardwaarde is **none**.<br>Bijvoorbeeld: `--exclude-theme Magento/blank` | Nee |
 | `--area (-a)` | Alleen bestanden genereren voor de opgegeven gebieden. Als er geen optie is opgegeven, worden standaard bestanden voor alle gebieden gegenereerd. Geldige waarden zijn `adminhtml` en `frontend`. Standaardwaarde is **alles**.<br>Bijvoorbeeld: `--area adminhtml` | Nee |
 | `--exclude-area` | Genereer geen bestanden voor de opgegeven gebieden. Als er geen optie is opgegeven, wordt standaard niets uitgesloten. Standaardwaarde is **none**. | Nee |
-| `--jobs (-j)` | Schakel parallelle verwerking in met het opgegeven aantal taken. De standaardwaarde is 0 (niet in parallelle processen). Standaardwaarde is **0**. | Nee |
+| `--jobs (-j)` | Inschakelen [parallelle verwerking](manage-indexers.md#reindexing-in-parallel-mode) met het opgegeven aantal taken. De standaardwaarde is 0 (niet in parallelle processen). Standaardwaarde is **0**. | Nee |
 | `--symlink-locale` | Creeer symlinks voor de dossiers van die scènes, die voor plaatsing worden overgegaan, maar geen aanpassingen hebben. | Nee |
 | `--content-version=CONTENT-VERSION` | Aangepaste versie van statische inhoud kan worden gebruikt als implementatie op meerdere knooppunten wordt uitgevoerd om ervoor te zorgen dat de versie van statische inhoud identiek is en dat caching correct werkt. | Nee |
 | `--no-javascript` | JavaScript-bestanden niet implementeren | Nee |

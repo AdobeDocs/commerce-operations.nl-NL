@@ -2,9 +2,9 @@
 title: Systeemvereisten
 description: Gebruik deze verwijzing om vereiste softwaregebiedsdelen te identificeren die met Adobe Commerce en de versies van de Magento Open Source zijn getest.
 exl-id: 008c9edc-7d72-403c-847f-0e3b77bbb197
-source-git-commit: ad715d1581442fa447e394d88d496ec52519a1c3
+source-git-commit: 8b9e4de2799532e4654fce63d856c2d301025f09
 workflow-type: tm+mt
-source-wordcount: '871'
+source-wordcount: '788'
 ht-degree: 0%
 
 ---
@@ -63,6 +63,10 @@ U wordt aangeraden te controleren of [PHP OPcache](https://www.php.net/manual/en
 Controleer voor on-premesis of PHP OPcache is geïnstalleerd, zie [PHP-instellingen](prerequisites/php-settings.md). Voor specifieke richtlijnen over prestatiesmontages, zie de softwareaanbevelingen voor [PHP-instellingen](https://experienceleague.adobe.com/docs/commerce-operations/performance-best-practices/software.html#php-settings) in de _Aanbevolen werkwijzen voor prestaties_ hulplijn.
 
 Als u OPcache afzonderlijk moet installeren, raadpleegt u de [PHP OPcache-documentatie](https://www.php.net/manual/en/opcache.setup.php).
+
+### PHP Process Control
+
+{{php-process-control}}
 
 ### PHPUnit
 
