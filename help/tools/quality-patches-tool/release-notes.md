@@ -2,9 +2,9 @@
 title: Opmerkingen bij de release
 description: Meer informatie over de patches die beschikbaar zijn voor Adobe Commerce en de problemen die ze oplossen.
 exl-id: 22262555-f5ea-49ad-98ad-ea8428ef66d5
-source-git-commit: 704c3e2934c74ee4b06499bbfc4cb68b0a007a1e
+source-git-commit: 3364434c37935285214451a7d242ae38815f3453
 workflow-type: tm+mt
-source-wordcount: '15669'
+source-wordcount: '19210'
 ht-degree: 0%
 
 ---
@@ -20,6 +20,24 @@ De [[!DNL Quality Patches Tool]](https://github.com/magento/quality-patches) lev
 >[!INFO]
 >
 >Voor informatie over [!DNL quality patches] die door de Gemeenschap voor Magento Open Source zijn opgericht, [releaseopmerkingen](https://github.com/magento/quality-patches/blob/master/community-release-notes.md).
+
+## v1.1.43 {#v1-1-43}
+
+* **ACSD-54972** (voor Adobe Commerce en Magento Open Source >=2.4.2 &lt;2.4.7) - Hiermee wordt het probleem verholpen waarbij de URL van de canonieke categorie niet wordt bijgewerkt nadat de categorie-URL is gewijzigd.
+* **ACSD-53636** (voor Adobe Commerce en Magento Open Source >=2.4.3 &lt;2.4.5) - Hiermee wordt het probleem opgelost waarbij de normale prijs niet wordt weergegeven op pagina&#39;s met productlijsten voor configureerbare producten die onderliggende producten met speciale prijzen hebben.
+* **ACSD-54885** (voor Adobe Commerce en Magento Open Source >=2.4.2 &lt;2.4.7) - Hiermee wordt het probleem verholpen met het meervoudige adresafhandeling wanneer de beheerder de optie *Aanmelden als klant* functionaliteit.
+* **ACSD-55610** (voor Adobe Commerce en Magento Open Source >=2.4.4 &lt;2.4.7) - Hiermee wordt het probleem verholpen waarbij een gedeeltelijk geannuleerde order een onjuist kortingsbedrag heeft.
+* **ACSD-55334** (voor Adobe Commerce en Magento Open Source >=2.4.3 &lt;2.4.7) - Hiermee corrigeert u vertalingen voor labels via vertaalwoordenboeken in GraphQL-reactie.
+* **ACSD-54739** (voor Adobe Commerce >=2.4.5 &lt;2.4.7) - Hiermee wordt het probleem opgelost waarbij de status van de productvoorraad niet wordt toegepast voor gerelateerde productregels.
+* **ACSD-53925** (voor Adobe Commerce en Magento Open Source >=2.4.2 &lt;2.4.7) - Hiermee wordt het probleem verholpen waarbij de beheerder CMS-blok niet kan opslaan met productcarrousel als `catalog_product_price` afmetingen-mode is ingesteld op *website*.
+* **ACSD-52714** (voor Adobe Commerce en Magento Open Source >=2.4.2 &lt;2.4.7) - Hiermee wordt het probleem verholpen waarbij het datumfilter niet werkt in het beheerraster wanneer de datumnotatie is ingesteld op *Y-m-d*.
+* **ACSD-55055** (voor Adobe Commerce en Magento Open Source >=2.4.2 &lt;2.4.7) - Verbetert de prestaties van het laden van productkenmerken in de regels voor de winkelwagentje.
+* **ACSD-53790** (voor Adobe Commerce >=2.4.6 &lt;2.4.7) - Hiermee wordt het probleem opgelost waarbij via de REST API meerdere RMA&#39;s voor één product kunnen worden gemaakt.
+* **ACSD-56090** (voor Adobe Commerce en Magento Open Source >=2.4.2 &lt;2.4.5) - Hiermee wordt het probleem verholpen waarbij het GraphQL-verzoek reageert met de gegevens van alle winkels in plaats van met de specifiek gevraagde opslaggegevens.
+* **ACSD-54983** (voor Adobe Commerce >=2.4.2 &lt;2.4.7) - Hiermee wordt het probleem verholpen waarbij het niet mogelijk is om de bedrijfgebruiker UID met GraphQL-aanvraag te verkrijgen als de gebruikersstatus is ingesteld op *[!UICONTROL Inactive]*.
+* **ACSD-53309** (voor Adobe Commerce en Magento Open Source >=2.4.2 &lt;2.4.7) - Hiermee wordt de kwestie opgelost waarbij de belasting niet volledig wordt toegepast in de *[!UICONTROL Regular Price]* als de aanpasbare optie is geselecteerd.
+* **ACSD-55305** (voor Adobe Commerce >=2.4.4 &lt;2.4.7) - Hiermee wordt het probleem opgelost waarbij de *[!UICONTROL Edit Company User]* popup **[!UICONTROL myAccount]** > **[!UICONTROL Company Structure]** pagina loopt vast met een lader op het scherm.
+* Bijgewerkte patches: ACSD-49013
 
 ## v1.1.42 {#v1-1-42}
 
@@ -168,7 +186,7 @@ De [[!DNL Quality Patches Tool]](https://github.com/magento/quality-patches) lev
 * Nieuwe versies toegevoegd voor ACSD-44938.
 * Toegevoegde eisen voor ACSD-46988.
 
-## v1.1.33 {#v1-1-33}
+## v1.1.3 {#v1-1-33}
 
 * **ACSD-50478** (voor Adobe Commerce en Magento Open Source >=2.4.0 &lt;2.4.5) - bevestigt het gegevensbestand terugschroeven van prijzen bevel voor een geval wanneer de stortplaats van DB trekkers en een *scheidingsteken* SQL-opdracht.
 * **ACSD-50512** (voor Adobe Commerce >=2.4.5 &lt;2.4.7) - Hiermee wordt het *Fout: de downloadbare koppeling heeft geen betrekking op het product. Controleer de koppeling en probeer het opnieuw.* fout die optreedt bij het bijwerken van de begindatum voor een downloadbare update voor productplaatsing.
