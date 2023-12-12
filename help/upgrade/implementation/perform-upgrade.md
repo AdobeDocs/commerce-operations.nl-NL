@@ -1,26 +1,28 @@
 ---
 title: Een upgrade uitvoeren
-description: Voer de volgende stappen uit om een Adobe Commerce- of Magento Open Source-project bij te werken.
+description: Volg deze stappen om plaatsingen op-gebouw van Adobe Commerce te bevorderen.
 exl-id: 9183f1d2-a8dd-4232-bdee-7c431e0133df
-source-git-commit: 95ffff39d82cc9027fa633dffedf15193040802d
+source-git-commit: 0cee0ab36274758b583c04dbee8251ce3b78e559
 workflow-type: tm+mt
-source-wordcount: '805'
+source-wordcount: '742'
 ht-degree: 0%
 
 ---
 
+
 # Een upgrade uitvoeren
 
-U kunt de Adobe Commerce- of Magento Open Source-toepassing upgraden vanaf de opdrachtregel als u de software hebt geïnstalleerd door:
+U kunt een upgrade uitvoeren _ter plaatse_ implementaties van de Adobe Commerce- of Magento Open Source-toepassing vanaf de opdrachtregel als u de software hebt geïnstalleerd door:
 
-- Het pakket met de `composer create-project` gebruiken.
+- Het pakket Composer-metagegevens downloaden met de opdracht `composer create-project` gebruiken.
 - Het gecomprimeerde archief installeren.
 
 >[!NOTE]
 >
->Gebruik deze methode niet om te bevorderen als u de bewaarplaats GitHub kloond. Zie in plaats daarvan [Een op een git gebaseerde installatie upgraden](../developer/git-installs.md) voor upgradeinstructies.
+>- Voor Adobe Commerce over infrastructuurprojecten in de cloud gaat u naar [Versie voor upgradeopdracht](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/commerce-version.html) in de Cloud Guide.
+>- Gebruik deze methode niet om te bevorderen als u de bewaarplaats GitHub kloond. Zie [Een op een git gebaseerde installatie upgraden](../developer/git-installs.md).
 
-De volgende instructies tonen u hoe te om het gebruiken van Composer te bevorderen. Adobe Commerce 2.4.2 introduceerde ondersteuning voor Composer 2. Als u probeert om van &lt;2.4.1 te bevorderen, moet u eerst aan een versie bevorderen die met Composer 2 (bijvoorbeeld, 2.4.2) compatibel is gebruikend Composer 1 _voor_ upgrade naar Composer 2 voor >2.4.2 upgrades. Bovendien moet u een [ondersteunde versie](../../installation/system-requirements.md) van PHP.
+De volgende instructies tonen u hoe te om te bevorderen gebruikend Composer pakketmanager. Adobe Commerce 2.4.2 introduceerde ondersteuning voor Composer 2. Als u probeert om van &lt;2.4.1 te bevorderen, moet u eerst aan een versie bevorderen die met Composer 2 (bijvoorbeeld, 2.4.2) compatibel is gebruikend Composer 1 _voor_ upgrade naar Composer 2 voor >2.4.2 upgrades. Bovendien moet u een [ondersteunde versie](../../installation/system-requirements.md) van PHP.
 
 >[!WARNING]
 >
@@ -34,7 +36,7 @@ U moet de opdracht [upgradevoorwaarden](../prepare/prerequisites.md) om uw omgev
 
 >[!NOTE]
 >
->Zie de voorbeelden aan het einde van deze sectie voor hulp bij het opgeven van verschillende releaseniveaus. Bijvoorbeeld kleine release, kwaliteitspatch en beveiligingspatch. Adobe Commerce-klanten hebben twee weken voor de datum van algemene beschikbaarheid (GA) toegang tot patches. Pakketten met pre-release zijn alleen beschikbaar via Composer. U kunt hen niet op het Portaal van Downloads of GitHub tot GA vinden. Neem contact op met Adobe Commerce Support als u deze pakketten niet kunt vinden in Composer.
+>Zie de voorbeelden aan het einde van deze sectie voor hulp bij het opgeven van verschillende releaseniveaus. Bijvoorbeeld kwaliteitspatches en beveiligingspatches. Neem contact op met Adobe Commerce Support als u deze pakketten niet kunt vinden in Composer.
 
 1. Schakel over naar de onderhoudsmodus om toegang tot uw winkel tijdens het upgradeproces te voorkomen.
 
@@ -108,13 +110,13 @@ U moet de opdracht [upgradevoorwaarden](../prepare/prerequisites.md) om uw omgev
 
    - `<product>` —(Vereist) Het pakket dat moet worden bijgewerkt. Voor installaties ter plaatse moet deze waarde ofwel `product-community-edition` of `product-enterprise-edition`.
 
-   - `<version>` —(Vereist) De versie van Adobe Commerce of Magento Open Source waarnaar u een upgrade uitvoert. Bijvoorbeeld, `2.4.3`.
+   - `<version>` —(Vereist) De versie van Adobe Commerce of Magento Open Source waarnaar u een upgrade uitvoert. Bijvoorbeeld: `2.4.3`.
 
    - `--no-update` — (Vereist) maakt de automatische update van de gebiedsdelen onbruikbaar.
 
    - `--interactive-root-conflicts` — (Optioneel) Hiermee kunt u op interactieve wijze verouderde waarden uit eerdere versies of aangepaste waarden die niet overeenkomen met de versie waarnaar u de upgrade uitvoert, weergeven en bijwerken.
 
-   - `--force-root-updates` — (Optioneel) Hiermee worden alle conflicterende aangepaste waarden genegeerd met de verwachte Magento&#39;s.
+   - `--force-root-updates` —(Optioneel) Hiermee worden alle conflicterende aangepaste waarden genegeerd met de verwachte waarden voor Handel.
 
    - `--help` —(Optioneel) Bevat gebruiksgegevens voor de plug-in.
 
@@ -142,58 +144,36 @@ _Adobe Commerce_:
 composer show magento/product-enterprise-edition 2.4.* --available | grep -m 1 versions
 ```
 
-### Voorbeeld - kleine release
-
-Kleine versies bevatten nieuwe functies, oplossingen voor de kwaliteit en beveiligingsoplossingen. Gebruik Composer om een kleine release op te geven. U kunt bijvoorbeeld het metapakket Magento Open Source 2.4.3 opgeven:
-
-_Magento Open Source_:
-
-```bash
-composer require-commerce magento/product-community-edition 2.4.0 --no-update
-```
-
-_Adobe Commerce_:
-
-```bash
-composer require-commerce magento/product-enterprise-edition 2.4.0 --no-update
-```
-
 ### Voorbeeld - Kwaliteitspatch
 
-Kwaliteitspatches bevatten voornamelijk functionele _en_ beveiligingsoplossingen. Soms kunnen ze echter wel nieuwe, achterwaartse compatibele functies bevatten. Gebruik Composer om een kwaliteitspatch te downloaden. U kunt bijvoorbeeld het metapakket Magento Open Source 2.4.1 opgeven:
+Kwaliteitspatches bevatten voornamelijk functionele _en_ beveiligingsoplossingen. Soms kunnen ze echter wel nieuwe, achterwaartse compatibele functies bevatten. Gebruik Composer om een kwaliteitspatch te downloaden.
+
+_Adobe Commerce_:
 
 ```bash
-composer require-commerce magento/product-community-edition 2.4.3 --no-update
+composer require-commerce magento/product-enterprise-edition 2.4.6 --no-update
 ```
 
 _Magento Open Source_:
 
 ```bash
-composer require-commerce magento/product-community-edition 2.4.3 --no-update
-```
-
-_Adobe Commerce_:
-
-```bash
-composer require-commerce magento/product-enterprise-edition 2.4.3 --no-update
+composer require-commerce magento/product-community-edition 2.4.6 --no-update
 ```
 
 ### Voorbeeld - Beveiligingspatch
 
-Beveiligingspatches bevatten alleen beveiligingsoplossingen. Ze zijn ontworpen om het upgradeproces sneller en eenvoudiger te maken.
-
-Beveiligingspatches gebruiken de naamgevingsconventie van Composer `2.4.x-px`. Gebruik Composer om een patch op te geven.
-
-_Magento Open Source_:
-
-```bash
-composer require-commerce magento/product-community-edition 2.4.3-p1 --no-update
-```
+Beveiligingspatches bevatten alleen beveiligingsoplossingen. Ze zijn ontworpen om het upgradeproces sneller en eenvoudiger te maken. Beveiligingspatches gebruiken de naamgevingsconventie van Composer `2.4.x-px`.
 
 _Adobe Commerce_:
 
 ```bash
-composer require-commerce magento/product-enterprise-edition 2.4.3-p1 --no-update
+composer require-commerce magento/product-enterprise-edition 2.4.6-p3 --no-update
+```
+
+_Magento Open Source_:
+
+```bash
+composer require-commerce magento/product-community-edition 2.4.6-p3 --no-update
 ```
 
 ## Metagegevens bijwerken
@@ -250,7 +230,7 @@ composer require-commerce magento/product-enterprise-edition 2.4.3-p1 --no-updat
 
 ## Uw werk controleren
 
-Open de URL van de winkel in een webbrowser om te controleren of de upgrade is gelukt. Als de upgrade is mislukt, wordt de winkel niet correct geladen.
+Als u wilt controleren of de upgrade is gelukt, opent u de URL van de winkel in een webbrowser. Als de upgrade is mislukt, wordt de winkel niet correct geladen.
 
 Als de toepassing met een  `We're sorry, an error has occurred while generating this email.` fout:
 
