@@ -4,9 +4,9 @@ description: Leer hoe u de prestaties van caching kunt verbeteren met de uitgebr
 role: Developer, Admin
 feature: Best Practices, Cache
 exl-id: 8b3c9167-d2fa-4894-af45-6924eb983487
-source-git-commit: 156e6412b9f94b74bad040b698f466808b0360e3
+source-git-commit: 6772c4fe31cfcd18463b9112f12a2dc285b39324
 workflow-type: tm+mt
-source-wordcount: '589'
+source-wordcount: '0'
 ht-degree: 0%
 
 ---
@@ -37,6 +37,49 @@ Voor installaties ter plaatse, zie [Pagina&#39;s opnieuw weergeven in cache plaa
 >[!NOTE]
 >
 >Controleer of u de meest recente versie van het dialoogvenster `ece-tools` pakket. Zo niet, [upgrade naar de nieuwste versie](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/dev-tools/ece-tools/update-package.html). U kunt de in uw lokale omgeving geïnstalleerde versie controleren met de `composer show magento/ece-tools` CLI-opdracht.
+
+
+### L2 cache-geheugengrootte (Adobe Commerce Cloud)
+
+L2-cache gebruikt een [tijdelijk bestandssysteem](https://en.wikipedia.org/wiki/Tmpfs) als opslagmechanisme. Vergeleken met gespecialiseerde zeer belangrijke gegevensbestandsystemen, heeft een tijdelijk dossiersysteem geen zeer belangrijk verwijderingsbeleid om geheugengebruik te controleren.
+
+Het gebrek aan controle van het geheugengebruik kan het L2 geheim voorgeheugengebruik veroorzaken om in tijd te groeien door het oude geheime voorgeheugen te accumuleren.
+
+Om geheugenuitputting van L2 geheim voorgeheugenimplementaties te vermijden, ontruimt Adobe Commerce de opslag wanneer een bepaalde drempel wordt bereikt. De standaardwaarde is 95%.
+
+Het is belangrijk om het maximale gebruik van het L2-cachegeheugen aan te passen op basis van de projectvereisten voor cacheopslag. Gebruik een van de volgende methoden om de grootte van de geheugencache te configureren:
+
+- Creeer een steunkaartje om grootteveranderingen van te verzoeken `/dev/shm` koppelen.
+- Pas de `cleanup_percentage` eigenschap op toepassingsniveau om het maximale vulpercentage van de opslag te beperken. Het resterende vrije geheugen kan door andere diensten worden gebruikt.
+U kunt de configuratie in de plaatsingsconfiguratie onder de groep van de geheim voorgeheugenconfiguratie aanpassen `cache/frontend/default/backend_options/cleanup_percentage`.
+
+>[!NOTE]
+>
+>De `cleanup_percentage` De configureerbare optie werd geïntroduceerd in Adobe Commerce 2.4.4.
+
+De volgende code toont een voorbeeldconfiguratie in `.magento.env.yaml` bestand:
+
+```yaml
+stage:
+  deploy:
+    REDIS_BACKEND: '\Magento\Framework\Cache\Backend\RemoteSynchronizedCache'
+    CACHE_CONFIGURATION:
+      _merge: true
+      frontend:
+        default:
+          backend_options:
+            cleanup_percentage: 90
+```
+
+De vereisten van het geheime voorgeheugen kunnen variëren gebaseerd op projectconfiguratie en douanecode van de douanederde. Het bereik van de grootte van het L2-cachegeheugen maakt het mogelijk dat de L2-cache werkt zonder te veel drempelresultaten.
+In het ideale geval zou het geheugengebruik in de L2-cache zich op een bepaald niveau onder de drempelwaarde moeten stabiliseren, alleen om te voorkomen dat de opslagruimte vaak wordt gewist.
+
+U kunt het gebruik van het L2 geheime voorgeheugengeheugen op elke knoop van de cluster controleren gebruikend het volgende CLI bevel en het zoeken van `/dev/shm` lijn.
+Het gebruik kan per knooppunt variëren, maar het moet in dezelfde waarde worden omgezet.
+
+```bash
+df -h
+```
 
 ## Redis-slave-verbinding inschakelen
 
