@@ -2,13 +2,13 @@
 title: Beveilig uw plaats van de Handel en infrastructuur
 description: Behoud beveiliging door best practices voor beveiliging te implementeren wanneer u Adobe Commerce-installaties instelt, configureert en bijwerkt.
 feature: Best Practices
-source-git-commit: cea5868ee37317ae9adfd8b580cd38c33c19761e
+exl-id: 50d8a464-6496-4e9a-b642-0c6d0eb51ba0
+source-git-commit: cbfd19efd9f489fefa16d93cbd8116eefb57a900
 workflow-type: tm+mt
-source-wordcount: '2151'
+source-wordcount: '2008'
 ht-degree: 0%
 
 ---
-
 
 # Beveilig uw plaats van de Handel en infrastructuur
 
@@ -148,14 +148,15 @@ De Adobe heeft echter vastgesteld dat de meeste compromissen op de site niet te 
 In de meest algemeen ervaren aanvallen, wordt de kwaadwillige code geïnjecteerd in de absolute kopbal of absolute footer van een klantenopslag. In dat geval verzamelt de code formuliergegevens die een klant in de winkel invoert, waaronder aanmeldingsgegevens van de klant en gegevens van het uitcheckformulier. Vervolgens worden deze gegevens voor kwaadaardige doeleinden naar een andere locatie verzonden in plaats van naar de achtergrond van de handel. Ook kan malware de Admin in gevaar brengen om code uit te voeren die het originele betalingsformulier vervangt door een nep formulier dat de door de betalingsdienstaanbieder ingestelde bescherming vervangt.
 
 Clientside credit card-skaters zijn een type malware dat code insluit in commerciële website-inhoud die kan worden uitgevoerd in de browser van een gebruiker, zoals in de volgende afbeelding wordt getoond.
-Nadat bepaalde acties plaatsvinden zoals een gebruiker die een formulier verzendt of een veldwaarde wijzigt, serialiseert de skimmer de gegevens en verzendt het naar eindpunten van derden. Deze eindpunten zijn typisch andere gecompromitteerde websites die als relais handelen om de gegevens naar zijn definitieve bestemming te verzenden.
 
 ![De stroom van gegevens voor malware aanvallen die e-handelplaatsen richten](../../../assets/playbooks/malware-data-flow.svg)
 
 Nadat bepaalde acties plaatsvinden zoals een gebruiker die een formulier verzendt of een veldwaarde wijzigt, serialiseert de skimmer de gegevens en verzendt het naar eindpunten van derden. Deze eindpunten zijn typisch andere gecompromitteerde websites die als relais handelen om de gegevens naar zijn definitieve bestemming te verzenden.
 
 
-Als de plaats van de Handel is aangevallen, volg de beste praktijken van Adobe Commerce voor [reageren op een beveiligingsincident](../maintenance/respond-to-security-incident.md).
+>[!TIP]
+>
+>Als een plaats van de Handel door een malwareaanval wordt beïnvloed, volg de beste praktijken van Adobe Commerce voor [reageren op een beveiligingsincident](../maintenance/respond-to-security-incident.md).
 
 ### Kennis van de meest voorkomende aanvallen
 
