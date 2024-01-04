@@ -3,10 +3,10 @@ title: Gegevens genereren voor het testen van prestaties
 description: Leer hoe u een grote hoeveelheid gegevens genereert die u kunt gebruiken voor het testen van de prestaties.
 feature: Configuration, Orders
 exl-id: 2f54701d-88c4-464a-b4dc-56db14d54160
-source-git-commit: 403a5937561d82b02fd126c95af3f70b0ded0747
+source-git-commit: a2dc85232aa10761a6729fe66f5548f644cb5bd4
 workflow-type: tm+mt
-source-wordcount: '749'
-ht-degree: 9%
+source-wordcount: '788'
+ht-degree: 8%
 
 ---
 
@@ -33,24 +33,26 @@ De volgende tabel bevat details over de profielen van de gegevensgenerator: klei
 | `websites` | 1 | 3 | 25 | 5 | 5 |
 | `store_groups` | 1 | 3 | 25 | 5 | 5 |
 | `store_views` | 1 | 3 | 50 | 5 | 5 |
-| `simple_products` | 800 | 24,000 | 4,000 | 300,000 | 600,000 |
+| `simple_products` | 800 | 24.000 | 4.000 | 300.000 | 600.000 |
 | `configurable_products` | 16 met 24 opties | 640 met 24 opties | 800 met 24 opties en 79 met 200 opties | 8.000 met 24 opties | 16.000 met 24 opties |
 | `product_images` | 100 afbeeldingen / 3 afbeeldingen per product | 1000 afbeeldingen / 3 afbeeldingen per product | 1000 afbeeldingen / 3 afbeeldingen per product | 2000 afbeeldingen / 3 afbeeldingen per product | 2000 afbeeldingen / 3 afbeeldingen per product |
-| `categories` | 30 | 300 | 100 | 3,000 | 6,000 |
+| `categories` | 30 | 300 | 100 | 3.000 | 6.000 |
 | `categories_nesting_level` | 3 | 3 | 3 | 5 | 5 |
 | `catalog_price_rules` | 20 | 20 | 20 | 20 | 20 |
 | `catalog_target_rules` | 5 | 5 | 5 | 5 | 5 |
 | `cart_price_rules` | 20 | 20 | 20 | 20 | 20 |
 | `cart_price_rules_floor` | 2 | 2 | 2 | 2 | 2 |
-| `customers` | 200 | 2,000 | 2,000 | 5,000 | 10,000 |
-| `tax rates` | 130 | 40,000 | 40,000 | 40,000 | 40,000 |
-| `orders` | 80 | 50,000 | 50,000 | 100,000 | 150,000 |
+| `customers` | 200 | 2.000 | 2.000 | 5.000 | 10.000 |
+| `tax rates` | 130 | 40.000 | 40.000 | 40.000 | 40.000 |
+| `orders` | 80 | 50.000 | 50.000 | 100.000 | 150.000 |
 
 ### De gegevensgenerator uitvoeren
 
 >[!WARNING]
 >
 >Voordat u de gegevensgenerator uitvoert, schakelt u alle snijtaken uit die op de server worden uitgevoerd. Als u de functie voor uitsnijden uitschakelt, voorkomt u dat de gegevensgenerator handelingen uitvoert die een conflict veroorzaken met actieve uitsnijdtaken en dat onnodige fouten worden voorkomen.
+>
+>Als u de gebeurtenis wilt implementeren met [!DNL Adobe I/O Events for Adobe Commerce] tijdens het testen van de prestaties, voer deze opdracht uit voordat u zich abonneert [gebeurtenissen](https://developer.adobe.com/commerce/extensibility/events/). Als u zich eerst abonneert op gebeurtenissen, kunnen er fouten optreden.
 
 Voer de opdracht uit zoals in deze sectie wordt beschreven. Nadat het bevel loopt, moet u [alle indexen opnieuw indexeren](../cli/manage-indexers.md).
 
