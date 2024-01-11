@@ -3,9 +3,9 @@ title: Varnish installeren
 description: Zie advies over het installeren van Varnish.
 feature: Configuration, Cache
 exl-id: e1881a85-3965-42d9-a46f-c2f5f20fbacc
-source-git-commit: a2bd4139aac1044e7e5ca8fcf2114b7f7e9e9b68
+source-git-commit: ec3ab7e3c6c3835e73653b0d4f74aadc861016d3
 workflow-type: tm+mt
-source-wordcount: '165'
+source-wordcount: '162'
 ht-degree: 0%
 
 ---
@@ -32,12 +32,4 @@ Open een terminal en voer de volgende opdracht in om de versie van Varnish weer 
 varnishd -V
 ```
 
-Hieronder volgt een monster:
-
-```terminal
-varnishd (varnish-6.3.2 revision 199de9b)
-Copyright (c) 2006 Verdens Gang AS
-Copyright (c) 2006-2019 Varnish Software AS
-```
-
-Zorg ervoor dat de versie 6.x is voordat u doorgaat. Als u versie lager dan 6.x uitvoert, moet u een upgrade naar een ondersteunde versie uitvoeren. Raadpleeg de documentatie bij de Varnish-installatie voor meer informatie.
+Controleer of [Adobe Commerce en Magento Open Source](../../installation/system-requirements.md) de geïnstalleerde versie van Varnish alvorens verder te gaan. Als u een niet-ondersteunde versie uitvoert, moet u een upgrade uitvoeren naar een ondersteunde versie. Raadpleeg de documentatie bij de Varnish-installatie voor meer informatie.

@@ -3,9 +3,9 @@ title: Varnish configureren en gebruiken
 description: Begrijp hoe Varnish dossiers opslaat en het verkeer van HTTP verbetert.
 feature: Configuration, Cache
 exl-id: 57614878-e349-43bb-b22b-1aa321907be1
-source-git-commit: a2bd4139aac1044e7e5ca8fcf2114b7f7e9e9b68
+source-git-commit: ec3ab7e3c6c3835e73653b0d4f74aadc861016d3
 workflow-type: tm+mt
-source-wordcount: '1079'
+source-wordcount: '1049'
 ht-degree: 0%
 
 ---
@@ -14,11 +14,11 @@ ht-degree: 0%
 
 [Varnish Cache] is een open-source webtoepassingsaccelerator (ook wel een _HTTP-accelerator_ of _HTTP-reverse-proxy in cache plaatsen_). Varnish slaat (of geheime voorgeheugens) dossiers of fragmenten van dossiers in geheugen op, die Varnish toelaat om de reactietijd en het verbruik van de netwerkbandbreedte op toekomstige, gelijkwaardige verzoeken te verminderen. In tegenstelling tot webservers als Apache en nginx, werd Varnish uitsluitend ontworpen voor gebruik met het HTTP-protocol.
 
-Handel 2.4.2 wordt getest met Varnish 6.4. Handel 2.4.x is verenigbaar met Varnish 6.x
+[Systeemvereisten](../../installation/system-requirements.md) Hier worden de ondersteunde versies van Varnish weergegeven.
 
 >[!WARNING]
 >
->Wij _sterk aanbevelen_ Als u Varnish gebruikt in productie. De ingebouwde volledige paginacoching-aan of het dossiersysteem of [database]—is veel langzamer dan Varnish, en Varnish wordt ontworpen om het verkeer van HTTP te versnellen.
+>Wij _sterk aanbevelen_ Als u Varnish gebruikt in productie. De ingebouwde volledige paginacoching-aan of het dossiersysteem of [database](https://developer.adobe.com/commerce/php/development/cache/partial/database-caching/)—is veel langzamer dan Varnish, en Varnish wordt ontworpen om het verkeer van HTTP te versnellen.
 
 Zie voor meer informatie over Varnish:
 
@@ -53,9 +53,9 @@ Het proces kan als volgt worden samengevat:
 
 >[!NOTE]
 >
-- Behalve waar genoteerd, moet u alle bevelen ingaan die in dit onderwerp als gebruiker met worden besproken `root` rechten.
+>- Behalve waar genoteerd, moet u alle bevelen ingaan die in dit onderwerp als gebruiker met worden besproken `root` rechten.
 >
-- Dit onderwerp is geschreven voor Varnish op CentOS en Apache 2.4. Als u Varnish in een verschillende omgeving instelt, kunnen sommige opdrachten anders zijn. Raadpleeg de documentatie bij Varnish voor meer informatie.
+>- Dit onderwerp is geschreven voor Varnish op CentOS en Apache 2.4. Als u Varnish in een verschillende omgeving instelt, kunnen sommige opdrachten anders zijn. Raadpleeg de documentatie bij Varnish voor meer informatie.
 
 ## Bekende problemen
 
@@ -96,7 +96,7 @@ Varnish caching werkt met Commerce met behulp van:
 
 >[!INFO]
 >
-Dit onderwerp behandelt slechts de standaardopties in de voorafgaande lijst. Er zijn vele andere manieren om caching in complexe scenario&#39;s (bijvoorbeeld, gebruikend een Netwerk van de Levering van de Inhoud) te vormen; die methodes zijn voorbij het werkingsgebied van deze gids.
+>Dit onderwerp behandelt slechts de standaardopties in de voorafgaande lijst. Er zijn vele andere manieren om caching in complexe scenario&#39;s (bijvoorbeeld, gebruikend een Netwerk van de Levering van de Inhoud) te vormen; die methodes zijn voorbij het werkingsgebied van deze gids.
 
 Op het eerste browser verzoek, worden de cacheable activa geleverd aan cliëntbrowser van Varnish en caching op browser.
 
@@ -120,7 +120,7 @@ In het voorgaande voorbeeld wordt een aanvraag voor de hoofdpagina storefront ge
 
 >[!NOTE]
 >
-De meeste statische elementen hebben een HTTP 200 (OK)-statuscode die aangeeft dat het element van de server is opgehaald.
+>De meeste statische elementen hebben een HTTP 200 (OK)-statuscode die aangeeft dat het element van de server is opgehaald.
 
 ### Tweede browserverzoek
 
@@ -148,7 +148,6 @@ Als de inhoud op de server verandert, downloadt de client het statische element 
 
 <!-- Link Definitions -->
 
-[database]: https://developer.adobe.com/commerce/php/development/cache/partial/database-caching/
 [De Big Varnish Picture]: https://www.varnish-cache.org/docs/trunk/users-guide/intro.html
 [Varnish Cache]: https://varnish-cache.org
 [Opstartopties vervagen]: https://www.varnish-cache.org/docs/trunk/reference/varnishd.html#ref-varnishd-options

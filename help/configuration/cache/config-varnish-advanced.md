@@ -3,9 +3,9 @@ title: Geavanceerde Varnish-configuratie
 description: Veelzijdige functies configureren, zoals health check, respijtmodi en verfmodi.
 feature: Configuration, Cache
 exl-id: 178bd675-6ed0-40cc-9455-08a11b32c054
-source-git-commit: a2bd4139aac1044e7e5ca8fcf2114b7f7e9e9b68
+source-git-commit: ec3ab7e3c6c3835e73653b0d4f74aadc861016d3
 workflow-type: tm+mt
-source-wordcount: '892'
+source-wordcount: '871'
 ht-degree: 0%
 
 ---
@@ -14,7 +14,7 @@ ht-degree: 0%
 
 Varnish verstrekt verscheidene eigenschappen die klanten verhinderen lange vertragingen en onderbrekingen te ervaren wanneer de server van de Handel niet behoorlijk functioneert. Deze eigenschappen kunnen in worden gevormd `default.vcl` bestand. Dit onderwerp beschrijft de toevoegingen die de Handel in het VCL (de Taal van de Configuratie van de Varnish) dossier verstrekt u van Admin downloadt.
 
-Zie de [Naslaghandleiding voor vernis](https://varnish-cache.org/docs/6.3/reference/index.html) voor details over het gebruiken van de Taal van de Configuratie van de Varnish.
+Zie de [Naslaghandleiding voor vernis](https://varnish-cache.org/docs/index.html) voor details over het gebruiken van de Taal van de Configuratie van de Varnish.
 
 ## Health check
 
@@ -36,7 +36,7 @@ Elke 5 seconden, roept deze gezondheidscontrole `pub/health_check.php` script. D
 
 De `health_check.php` het script bevindt zich in het dialoogvenster `pub` directory. Als de hoofdmap van de handel `pub`en zorg ervoor dat u het pad in het dialoogvenster `url` parameter van `/pub/health_check.php` tot `health_check.php`.
 
-Zie de klasse [Varnish health checks](https://varnish-cache.org/docs/6.3/users-guide/vcl-backends.html?highlight=health%20check#health-checks) documentatie.
+Zie de klasse [Varnish health checks](https://varnish-cache.org/docs/7.4/users-guide/vcl-backends.html#health-checks) documentatie.
 
 ## Respijtmodus
 
@@ -85,10 +85,7 @@ bin/magento cache:flush
 
 ### Installatie
 
-Saint mode maakt geen deel uit van het grootste Varnish-pakket. Het is een apart versienummer `vmod` die moeten worden gedownload en geïnstalleerd. Dientengevolge, zou u Varnish van bron, zoals die in de volgende artikelen wordt beschreven opnieuw moeten compileren:
-
-- [Varnish 6.4 installeren](https://varnish-cache.org/docs/6.4/installation/install.html)
-- [Varnish 6.0 installeren](https://varnish-cache.org/docs/6.0/installation/install.html) (LTS)
+Saint mode maakt geen deel uit van het grootste Varnish-pakket. Het is een apart versienummer `vmod` die moeten worden gedownload en geïnstalleerd. Dientengevolge moet u Varnish van bron opnieuw compileren, zoals die in [installatie-instructies](https://varnish-cache.org/docs/index.html) voor uw versie van Varnish.
 
 Nadat u opnieuw compileert, kunt u de Sint-modusmodule installeren. Voer in het algemeen de volgende stappen uit:
 
