@@ -2,9 +2,9 @@
 title: Opmerkingen bij de release
 description: Meer informatie over de patches die beschikbaar zijn voor Adobe Commerce en de problemen die ze oplossen.
 exl-id: 22262555-f5ea-49ad-98ad-ea8428ef66d5
-source-git-commit: 9d75675aed671b995f7bdda43abc5a06f2c03ee8
+source-git-commit: 6f0a3434d4730b4d2bcf0aecdacfae58025824cd
 workflow-type: tm+mt
-source-wordcount: '19551'
+source-wordcount: '19799'
 ht-degree: 0%
 
 ---
@@ -20,6 +20,17 @@ De [[!DNL Quality Patches Tool]](https://github.com/magento/quality-patches) lev
 >[!INFO]
 >
 >Voor informatie over [!DNL quality patches] die door de Gemeenschap voor Magento Open Source zijn opgericht, [releaseopmerkingen](https://github.com/magento/quality-patches/blob/master/community-release-notes.md).
+
+## v1.1.45 {#v1-1-45}
+
+* **ACSD-56886** (voor Adobe Commerce en Magento Open Source >=2.4.2 &lt;2.4.7) - Hiermee wordt het probleem verholpen waarbij een configureerbaar product uit voorraad raakt wanneer een van twee onderliggende producten wordt uitgeschakeld door een geplande update.
+* **ACSD-56616** (voor Adobe Commerce en Magento Open Source >=2.4.5 &lt;2.4.6) - Hiermee wordt het probleem opgelost waarbij gebundelde producten worden weergegeven als in voorraad op de winkel wanneer hun eenvoudige producten uit voorraad zijn.
+* **ACSD-56515** (voor Adobe Commerce >=2.4.2 &lt;2.4.7) - Hiermee wordt het probleem verholpen waarbij beheerders met bevoegdheden op websiteniveau geen dynamisch blok kunnen toevoegen of bewerken.
+* **ACSD-56447** (voor Adobe Commerce en Magento Open Source >=2.4.2 &lt;2.4.7) - Hiermee wordt het probleem opgelost dat het toevoegen van hetzelfde product aan het winkelwagentje via parallelle REST web API-aanvragen resulteert in twee aparte items in het winkelwagentje.
+* **ACSD-56415** (voor Adobe Commerce en Magento Open Source >=2.4.5 &lt;2.4.7) - Hiermee wordt het probleem opgelost waarbij de prestaties van de gedeeltelijke indexering van de prijzen worden vertraagd als gevolg van een `DELETE` vraag wanneer het gegevensbestand veel gedeeltelijke prijsgegevens aan index heeft.
+* **ACSD-54965** (voor Adobe Commerce >=2.4.5 &lt;2.4.6) - Hiermee wordt het probleem verholpen waarbij het Visual Merchandising-raster niet de juiste voorraad weergeeft wanneer een product alleen aan aangepaste voorraad wordt toegewezen.
+* **ACSD-52824** (voor Adobe Commerce >=2.4.5 &lt;2.4.7) - Hiermee wordt het probleem verholpen waarbij de knoppen PayPal Express, Google Pay en Apple Pay voor zakelijke klanten worden weergegeven wanneer dergelijke betalingsmethoden in de bedrijfsinstellingen zijn uitgeschakeld.
+* Bijgewerkte patches: ACSD-56193
 
 ## v1.1.4 {#v1-1-44}
 
