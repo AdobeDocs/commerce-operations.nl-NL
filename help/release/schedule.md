@@ -1,11 +1,11 @@
 ---
 title: Releaseplanning
-description: Ontdek wanneer Adobe de release van belangrijke nieuwe functies voor Adobe Commerce gaat aankondigen.
+description: Leer wanneer de Adobe de release van nieuwe functies voor Adobe Commerce wil aankondigen.
 exl-id: ae1e09cd-966f-44a3-9e4d-b90bb838429d
-source-git-commit: 7771c4f225f7f6f9729c432ad1bcb1dcd8b2dc40
+source-git-commit: cbcc688fb5b356b99d103259e85117bda82f36b9
 workflow-type: tm+mt
-source-wordcount: '505'
-ht-degree: 2%
+source-wordcount: '504'
+ht-degree: 0%
 
 ---
 
