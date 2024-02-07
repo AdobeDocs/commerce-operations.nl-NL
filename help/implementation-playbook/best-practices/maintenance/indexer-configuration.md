@@ -4,9 +4,9 @@ description: Prestaties van sites onderhouden en optimaliseren door de best prac
 role: Admin, User
 feature: Best Practices
 exl-id: b35806f9-4bc6-407e-bedd-5ce3f09c1b9f
-source-git-commit: 94d7a57dcd006251e8eefbdb4ec3a5e140bf43f9
+source-git-commit: af66d47279245f8ee105030bbb33d77b1b35c3e5
 workflow-type: tm+mt
-source-wordcount: '280'
+source-wordcount: '298'
 ht-degree: 0%
 
 ---
@@ -28,7 +28,7 @@ Adobe Commerce heeft twee soorten indexeermodi: [!UICONTROL Update on Save] (sta
 
 - **[!UICONTROL Update on Save]** wordt de index direct bijgewerkt wanneer de catalogus of andere gegevens worden gewijzigd. Als een Admin-gebruiker bijvoorbeeld nieuwe producten aan een categorie toevoegt, wordt de index van de categorieproducten onmiddellijk opnieuw aangepast wanneer de update wordt opgeslagen.
 
-- **[!UICONTROL Update on Schedule]** de wijze slaat informatie over gegevensupdates op, en het opnieuw indexeren verrichtingen en indexupdates worden beheerd door een hulpbaan die op de achtergrond met geplande intervallen loopt.
+- **[!UICONTROL Update on Schedule]** de wijze slaat informatie over gegevensupdates op, en het opnieuw indexeren verrichtingen en indexupdates worden beheerd door een hulpbaan die op de achtergrond met geplande intervallen loopt. De snijtaak voert niet altijd een herindex uit telkens als het loopt. De index wordt alleen opnieuw toegepast als er nieuwe items staan in de logboeken voor indexwijzigingen (er is bijvoorbeeld een achterstand bij de indexen).
 
 Als u een grote winkel hebt met meerdere beheerders die op de achtergrond werken of als u veel import en export hebt, worden er regelmatig indexupdates uitgevoerd. Als de configuratie van uw site-index is ingesteld op [!UICONTROL Update on Save] in deze modus worden de databaseprestaties door veelvuldig opnieuw indexeren verminderd, waardoor de prestaties van de site worden vertraagd en het herindexeringsproces veel vertraging oploopt, vooral bij grote winkels.
 
