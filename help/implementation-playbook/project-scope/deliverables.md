@@ -3,20 +3,20 @@ title: Te leveren items
 description: Meer informatie over de verschillende te leveren items die aan een Adobe Commerce-implementatie zijn gekoppeld.
 exl-id: 6f5e603b-bbe5-411d-ad72-696cb4eae246
 feature: Best Practices
-source-git-commit: 94d7a57dcd006251e8eefbdb4ec3a5e140bf43f9
+source-git-commit: 903c8bfc7c341c46d98026f0a02fbefba22c8f5d
 workflow-type: tm+mt
-source-wordcount: '266'
+source-wordcount: '265'
 ht-degree: 0%
 
 ---
 
 # Te leveren items
 
-Het detectieproces identificeert specifieke Adobe Commerce-implementatieproducten. Bekijk de volgende secties voor meer informatie.
+Het detectieproces identificeert specifieke Adobe Commerce-implementatieproducten. Raadpleeg de volgende secties voor meer informatie.
 
 ## Zakelijke vereisten
 
-In dit document worden goedkeuringen van bedrijfsvereisten voor functionele specificaties en de bruikbaarheid van de ervaring van de klant beschreven. Deze wordt gebruikt om de gebruikerservaring, het visuele ontwerp en gedetailleerde testplannen te verbeteren.
+In een document met bedrijfsvereisten worden goedkeuringen voor functionele specificaties en de bruikbaarheid van de ervaring van de klant vastgelegd. Deze wordt gebruikt om de gebruikerservaring, het visuele ontwerp en gedetailleerde testplannen te verbeteren.
 
 ## Systeemdiagram
 
@@ -24,7 +24,7 @@ In een systeemdiagram moeten gegevens worden weergegeven (bijvoorbeeld bestellin
 
 ## Technische specificaties
 
-In dit document worden de technische implementatiebenadering en de toepasselijke details over alle integratie en systemen van derden gedefinieerd die moeten worden gewijzigd. Dit kan APIs omvatten die momenteel niet bestaan en moeten worden ontwikkeld.
+De technische specificaties bepalen de implementatiebenadering en de toepasselijke details over alle integratie en systemen van derden die moeten worden gewijzigd. Dit kan APIs omvatten die momenteel niet bestaan en moet worden ontwikkeld.
 
 ## Gegevenstoewijzing
 
@@ -36,7 +36,7 @@ Geeft de gebruikersstromen weer voor kritieke en/of unieke processen, vooral wan
 
 ## Bereik en leveranciers
 
-Dit is een definitieve lijst van genoemde derdeverkopers die in de oplossing van Adobe Commerce moeten worden geïntegreerd.
+Een bereik- en leveranciersdocument moet een uitgebreide lijst met benoemde externe leveranciers bevatten die in de Adobe Commerce-oplossing moeten worden geïntegreerd.
 
 ## Productgegevens
 
