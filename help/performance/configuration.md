@@ -3,9 +3,9 @@ title: Best practices voor configuratie
 description: Optimaliseer de responstijd van uw Adobe Commerce- of Magento Open Source-implementatie met deze best practices.
 feature: Best Practices, Configuration
 exl-id: 4cb0f5e7-49d5-4343-a8c7-b8e351170f91
-source-git-commit: 3c53efdaedea075e288d262e247bc9c42b5a2432
+source-git-commit: 2fa587557db214ed2fbeb5e6c175a9a209883f94
 workflow-type: tm+mt
-source-wordcount: '1448'
+source-wordcount: '1428'
 ht-degree: 0%
 
 ---
@@ -106,7 +106,7 @@ Wanneer u het dialoogvenster **[!UICONTROL Enable [!DNL JavaScript] Bundling]** 
 ### Bunduiteinden
 
 * Wij adviseren dat u derdehulpmiddelen voor minificatie en bundeling (zoals [r.js](https://requirejs.org/)). [!DNL Commerce] ingebouwde mechanismen zijn niet optimaal en worden verzonden als alternatieven voor alternatieven.
-* Het activeren van het HTTP/2-protocol kan een goed alternatief zijn voor het gebruik van JS-bundeling. Het protocol biedt vrijwel dezelfde voordelen.
+* Het activeren van het HTTP/2-protocol kan een goed alternatief zijn voor het gebruik van JS-bundeling. Het protocol biedt veel van dezelfde voordelen. Het wordt door gebrek toegelaten in Adobe Commerce op de projecten van de wolkeninfrastructuur.
 * We raden u niet aan vervangen instellingen te gebruiken, zoals het samenvoegen van JS- en CSS-bestanden, omdat deze alleen zijn ontworpen voor JS die synchroon zijn geladen in de sectie HEAD van de pagina. Het gebruik van deze techniek kan het bundelen veroorzaken en requireJS logica om verkeerd te werken.
 
 ## Validatie van klantsegmenten
