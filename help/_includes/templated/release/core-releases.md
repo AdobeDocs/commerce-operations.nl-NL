@@ -1,13 +1,13 @@
 ---
-source-git-commit: ac8be2ccb192765ab4633e9fce8684547a9363ac
+source-git-commit: 9f80bf4de9112cc986708266565c96515e85554c
 workflow-type: tm+mt
-source-wordcount: '633'
-ht-degree: 11%
+source-wordcount: '499'
+ht-degree: 0%
 
 ---
 # Uitgebrachte versies
 
-## 2.4.7
+## 2.4.7.
 
 De ondersteuning voor de release line van 2.4.7 eindigt op 19 april 2027.
 
@@ -34,7 +34,7 @@ De ondersteuning voor de release line van 2.4.7 eindigt op 19 april 2027.
   </tbody>
 </table>
 
-## 2.4.6
+## 2.4.6.
 
 De ondersteuning voor de release line 2.4.6 eindigt op 14 maart 2026.
 
@@ -46,6 +46,12 @@ De ondersteuning voor de release line 2.4.6 eindigt op 14 maart 2026.
     </tr>
   </thead>
   <tbody>
+    <tr>
+        <td>
+          <a href="https://experienceleague.adobe.com/docs/commerce-operations/release/notes/security-patches/2-4-6-p4.html">2.4.6-p4</a>
+        </td>
+        <td>13 februari 2024</td>
+    </tr>
     <tr>
         <td>
           <a href="https://experienceleague.adobe.com/docs/commerce-operations/release/notes/security-patches/2-4-6-p3.html">2.4.6-p3</a>
@@ -66,14 +72,14 @@ De ondersteuning voor de release line 2.4.6 eindigt op 14 maart 2026.
     </tr>
     <tr>
         <td>
-          <a href="https://experienceleague.adobe.com/docs/commerce-operations/release/notes/adobe-commerce/2-4-6.html">2.4.6</a>
+          <a href="https://experienceleague.adobe.com/docs/commerce-operations/release/notes/adobe-commerce/2-4-6.html">2.4.6.</a>
         </td>
         <td>14 maart 2023</td>
     </tr><!-- patch_releases -->
   </tbody>
 </table>
 
-## 2.4.5
+## 2.4.5.
 
 De ondersteuning voor de release line 2.4.5 eindigt op 9 augustus 2025.
 
@@ -85,6 +91,12 @@ De ondersteuning voor de release line 2.4.5 eindigt op 9 augustus 2025.
     </tr>
   </thead>
   <tbody>
+    <tr>
+        <td>
+          <a href="https://experienceleague.adobe.com/docs/commerce-operations/release/notes/security-patches/2-4-5-p6.html">2.4.5-p6</a>
+        </td>
+        <td>13 februari 2024</td>
+    </tr>
     <tr>
         <td>
           <a href="https://experienceleague.adobe.com/docs/commerce-operations/release/notes/security-patches/2-4-5-p5.html">2.4.5-p5</a>
@@ -117,14 +129,14 @@ De ondersteuning voor de release line 2.4.5 eindigt op 9 augustus 2025.
     </tr>
     <tr>
         <td>
-          <a href="https://experienceleague.adobe.com/docs/commerce-operations/release/notes/adobe-commerce/2-4-5.html">2.4.5</a>
+          <a href="https://experienceleague.adobe.com/docs/commerce-operations/release/notes/adobe-commerce/2-4-5.html">2.4.5.</a>
         </td>
         <td>9 augustus 2022</td>
     </tr><!-- patch_releases -->
   </tbody>
 </table>
 
-## 2.4.4
+## 2.4.4.
 
 De ondersteuning voor de release line van 2.4.4 eindigt op 12 april 2025.
 
@@ -136,6 +148,12 @@ De ondersteuning voor de release line van 2.4.4 eindigt op 12 april 2025.
     </tr>
   </thead>
   <tbody>
+    <tr>
+        <td>
+          <a href="https://experienceleague.adobe.com/docs/commerce-operations/release/notes/security-patches/2-4-4-p7.html">2.4.4-p7</a>
+        </td>
+        <td>13 februari 2024</td>
+    </tr>
     <tr>
         <td>
           <a href="https://experienceleague.adobe.com/docs/commerce-operations/release/notes/security-patches/2-4-4-p6.html">2.4.4-p6</a>
@@ -174,14 +192,14 @@ De ondersteuning voor de release line van 2.4.4 eindigt op 12 april 2025.
     </tr>
     <tr>
         <td>
-          <a href="https://experienceleague.adobe.com/docs/commerce-operations/release/notes/adobe-commerce/2-4-4.html">2.4.4</a>
+          <a href="https://experienceleague.adobe.com/docs/commerce-operations/release/notes/adobe-commerce/2-4-4.html">2.4.4.</a>
         </td>
         <td>12 april 2022</td>
     </tr><!-- patch_releases -->
   </tbody>
 </table>
 
-## 2.4.0-2.4.3
+## 2.4.0-2.4.3.
 
 De steun voor 2.4.0-2.4.3 versielijn eindigde op 28 november 2022.
 
@@ -213,7 +231,7 @@ De steun voor 2.4.0-2.4.3 versielijn eindigde op 28 november 2022.
     </tr>
     <tr>
         <td>
-          <a href="https://experienceleague.adobe.com/docs/commerce-operations/release/notes/adobe-commerce/2-4-3.html">2.4.3</a>
+          <a href="https://experienceleague.adobe.com/docs/commerce-operations/release/notes/adobe-commerce/2-4-3.html">2.4.3.</a>
         </td>
         <td>10 augustus 2021</td>
     </tr>
@@ -231,7 +249,7 @@ De steun voor 2.4.0-2.4.3 versielijn eindigde op 28 november 2022.
     </tr>
     <tr>
         <td>
-          <a href="https://experienceleague.adobe.com/docs/commerce-operations/release/notes/adobe-commerce/2-4-2.html">2.4.2</a>
+          <a href="https://experienceleague.adobe.com/docs/commerce-operations/release/notes/adobe-commerce/2-4-2.html">2.4.2.</a>
         </td>
         <td>9 februari 2021</td>
     </tr>
@@ -243,7 +261,7 @@ De steun voor 2.4.0-2.4.3 versielijn eindigde op 28 november 2022.
     </tr>
     <tr>
         <td>
-          <a href="https://experienceleague.adobe.com/docs/commerce-operations/release/notes/adobe-commerce/2-4-1.html">2.4.1</a>
+          <a href="https://experienceleague.adobe.com/docs/commerce-operations/release/notes/adobe-commerce/2-4-1.html">2.4.1.</a>
         </td>
         <td>15 oktober 2020</td>
     </tr>
@@ -255,14 +273,14 @@ De steun voor 2.4.0-2.4.3 versielijn eindigde op 28 november 2022.
     </tr>
     <tr>
         <td>
-          <a href="https://experienceleague.adobe.com/docs/commerce-operations/release/notes/adobe-commerce/2-4-0.html">2.4.0</a>
+          <a href="https://experienceleague.adobe.com/docs/commerce-operations/release/notes/adobe-commerce/2-4-0.html">2.4.0.</a>
         </td>
         <td>28 juli 2020</td>
     </tr><!-- patch_releases -->
   </tbody>
 </table>
 
-## 2.3
+## 2,3
 
 Ondersteuning voor de release line 2.3 eindigde op 8 september 2022.
 
@@ -300,7 +318,7 @@ Ondersteuning voor de release line 2.3 eindigde op 8 september 2022.
     </tr>
     <tr>
         <td>
-          <a href="https://devdocs.magento.com/guides/v2.3/release-notes/commerce-2-3-7.html">2.3.7</a>
+          <a href="https://devdocs.magento.com/guides/v2.3/release-notes/commerce-2-3-7.html">2.3.7.</a>
         </td>
         <td>11 mei 2021</td>
     </tr>
@@ -312,7 +330,7 @@ Ondersteuning voor de release line 2.3 eindigde op 8 september 2022.
     </tr>
     <tr>
         <td>
-          <a href="https://devdocs.magento.com/guides/v2.3/release-notes/commerce-2-3-6.html">2.3.6</a>
+          <a href="https://devdocs.magento.com/guides/v2.3/release-notes/commerce-2-3-6.html">2.3.6.</a>
         </td>
         <td>15 oktober 2020</td>
     </tr>
@@ -336,7 +354,7 @@ Ondersteuning voor de release line 2.3 eindigde op 8 september 2022.
     </tr>
     <tr>
         <td>
-          <a href="https://devdocs.magento.com/guides/v2.3/release-notes/release-notes-2-3-5-commerce.html">2.3.5</a>
+          <a href="https://devdocs.magento.com/guides/v2.3/release-notes/release-notes-2-3-5-commerce.html">2.3.5.</a>
         </td>
         <td>28 april 2020</td>
     </tr>
@@ -348,7 +366,7 @@ Ondersteuning voor de release line 2.3 eindigde op 8 september 2022.
     </tr>
     <tr>
         <td>
-          <a href="https://devdocs.magento.com/guides/v2.3/release-notes/release-notes-2-3-4-commerce.html">2.3.4</a>
+          <a href="https://devdocs.magento.com/guides/v2.3/release-notes/release-notes-2-3-4-commerce.html">2.3.4.</a>
         </td>
         <td>28 januari 2020</td>
     </tr>
@@ -360,32 +378,32 @@ Ondersteuning voor de release line 2.3 eindigde op 8 september 2022.
     </tr>
     <tr>
         <td>
-          <a href="https://devdocs.magento.com/guides/v2.3/release-notes/release-notes-2-3-3-commerce.html">2.3.3</a>
+          <a href="https://devdocs.magento.com/guides/v2.3/release-notes/release-notes-2-3-3-commerce.html">2,3,3</a>
         </td>
         <td>8 oktober 2019</td>
     </tr>
     <tr>
         <td>
-          <a href="https://devdocs.magento.com/guides/v2.3/release-notes/ReleaseNotes2.3.2Commerce.html">2.3.2</a>
+          <a href="https://devdocs.magento.com/guides/v2.3/release-notes/ReleaseNotes2.3.2Commerce.html">2.3.2.</a>
         </td>
         <td>25 juni 2019</td>
     </tr>
     <tr>
         <td>
-          <a href="https://devdocs.magento.com/guides/v2.3/release-notes/ReleaseNotes2.3.1Commerce.html">2.3.1</a>
+          <a href="https://devdocs.magento.com/guides/v2.3/release-notes/ReleaseNotes2.3.1Commerce.html">2.3.1.</a>
         </td>
         <td>26 maart 2019</td>
     </tr>
     <tr>
         <td>
-          <a href="https://devdocs.magento.com/guides/v2.3/release-notes/ReleaseNotes2.3.0Commerce.html">2.3.0</a>
+          <a href="https://devdocs.magento.com/guides/v2.3/release-notes/ReleaseNotes2.3.0Commerce.html">2.3.0.</a>
         </td>
         <td>28 november 2018</td>
     </tr><!-- patch_releases -->
   </tbody>
 </table>
 
-## 2.2
+## 2,2
 
 De ondersteuning voor de release line 2.2 eindigde op 1 december 2019.
 
@@ -411,43 +429,43 @@ De ondersteuning voor de release line 2.2 eindigde op 1 december 2019.
     </tr>
     <tr>
         <td>
-          2.2.9
+          2.2.9.
         </td>
         <td>25 juni 2019</td>
     </tr>
     <tr>
         <td>
-          2.2.8
+          2.2.8.
         </td>
         <td>26 maart 2019</td>
     </tr>
     <tr>
         <td>
-          2.2.7
+          2.2.7.
         </td>
         <td>28 november 2018</td>
     </tr>
     <tr>
         <td>
-          2.2.6
+          2.2.6.
         </td>
         <td>18 september 2018</td>
     </tr>
     <tr>
         <td>
-          2.2.5
+          2.2.5.
         </td>
         <td>27 juni 2018</td>
     </tr>
     <tr>
         <td>
-          2.2.4
+          2.2.4.
         </td>
         <td>2 mei 2018</td>
     </tr>
     <tr>
         <td>
-          2.2.3
+          2.2.3.
         </td>
         <td>27 februari 2018</td>
     </tr>
@@ -459,20 +477,20 @@ De ondersteuning voor de release line 2.2 eindigde op 1 december 2019.
     </tr>
     <tr>
         <td>
-          2.2.1
+          2.2.1.
         </td>
         <td>7 november 2017</td>
     </tr>
     <tr>
         <td>
-          2.2.0
+          2.2.0.
         </td>
         <td>26 september 2017</td>
     </tr><!-- patch_releases -->
   </tbody>
 </table>
 
-## 2.1
+## 2,1
 
 De ondersteuning voor de releaselijn 2.1 liep af op 30 juni 2019.
 
@@ -486,49 +504,49 @@ De ondersteuning voor de releaselijn 2.1 liep af op 30 juni 2019.
   <tbody>
     <tr>
         <td>
-          2.1.18
+          2.1.18.
         </td>
         <td>25 juni 2019</td>
     </tr>
     <tr>
         <td>
-          2.1.17
+          2.1.17.
         </td>
         <td>26 maart 2019</td>
     </tr>
     <tr>
         <td>
-          2.1.16
+          2.1.16.
         </td>
         <td>28 november 2018</td>
     </tr>
     <tr>
         <td>
-          2.1.15
+          2.1.15.
         </td>
         <td>18 september 2018</td>
     </tr>
     <tr>
         <td>
-          2.1.14
+          2.1.14.
         </td>
         <td>27 juni 2018</td>
     </tr>
     <tr>
         <td>
-          2.1.13
+          2.1.13.
         </td>
         <td>2 mei 2018</td>
     </tr>
     <tr>
         <td>
-          2.1.12
+          2.1.12.
         </td>
         <td>27 februari 2018</td>
     </tr>
     <tr>
         <td>
-          2.1.11
+          2.1.11.
         </td>
         <td>12 december 2017</td>
     </tr>
@@ -540,68 +558,68 @@ De ondersteuning voor de releaselijn 2.1 liep af op 30 juni 2019.
     </tr>
     <tr>
         <td>
-          2.1.9
+          2.1.9.
         </td>
         <td>14 september 2017</td>
     </tr>
     <tr>
         <td>
-          2.1.8
+          2.1.8.
         </td>
         <td>9 augustus 2017</td>
     </tr>
     <tr>
         <td>
-          2.1.7
+          2.1.7.
         </td>
         <td>31 mei 2017</td>
     </tr>
     <tr>
         <td>
-          2.1.6
+          2.1.6.
         </td>
         <td>11 april 2017</td>
     </tr>
     <tr>
         <td>
-          2.1.5
+          2.1.5.
         </td>
         <td>21 februari 2017</td>
     </tr>
     <tr>
         <td>
-          2.1.4
+          2.1.4.
         </td>
         <td>7 februari 2017</td>
     </tr>
     <tr>
         <td>
-          2.1.3
+          2.1.3.
         </td>
         <td>14 december 2016</td>
     </tr>
     <tr>
         <td>
-          2.1.2
+          2.1.2.
         </td>
         <td>12 oktober 2016</td>
     </tr>
     <tr>
         <td>
-          2.1.1
+          2.1.1.
         </td>
         <td>30 augustus 2016</td>
     </tr>
     <tr>
         <td>
-          2.1.0
+          2.1.0.
         </td>
         <td>23 juni 2016</td>
     </tr><!-- patch_releases -->
   </tbody>
 </table>
 
-## 2.0
+## 2,0
 
 De ondersteuning voor de releaselijn 2.0 liep af op 31 maart 2018.
 
@@ -615,115 +633,115 @@ De ondersteuning voor de releaselijn 2.0 liep af op 31 maart 2018.
   <tbody>
     <tr>
         <td>
-          2.0.18
+          2.0.18.
         </td>
         <td>27 februari 2018</td>
     </tr>
     <tr>
         <td>
-          2.0.17
+          2.0.17.
         </td>
         <td>7 november 2017</td>
     </tr>
     <tr>
         <td>
-          2.0.16
+          2.0.16.
         </td>
         <td>14 september 2017</td>
     </tr>
     <tr>
         <td>
-          2.0.15
+          2.0.15.
         </td>
         <td>21 juni 2017</td>
     </tr>
     <tr>
         <td>
-          2.0.14
+          2.0.14.
         </td>
         <td>31 mei 2017</td>
     </tr>
     <tr>
         <td>
-          2.0.13
+          2.0.13.
         </td>
         <td>21 februari 2017</td>
     </tr>
     <tr>
         <td>
-          2.0.12
+          2.0.12.
         </td>
         <td>7 februari 2017</td>
     </tr>
     <tr>
         <td>
-          2.0.11
+          2.0.11.
         </td>
         <td>14 december 2016</td>
     </tr>
     <tr>
         <td>
-          2.0.10
+          2.0.10.
         </td>
         <td>12 oktober 2016</td>
     </tr>
     <tr>
         <td>
-          2.0.9
+          2.0.9.
         </td>
         <td>10 augustus 2016</td>
     </tr>
     <tr>
         <td>
-          2.0.8
+          2.0.8.
         </td>
         <td>19 juli 2016</td>
     </tr>
     <tr>
         <td>
-          2.0.7
+          2.0.7.
         </td>
         <td>24 mei 2016</td>
     </tr>
     <tr>
         <td>
-          2.0.6
+          2.0.6.
         </td>
         <td>17 mei 2016</td>
     </tr>
     <tr>
         <td>
-          2.0.5
+          2.0.5.
         </td>
         <td>28 april 2016</td>
     </tr>
     <tr>
         <td>
-          2.0.4
+          2.0.4.
         </td>
         <td>31 maart 2016</td>
     </tr>
     <tr>
         <td>
-          2.0.3
+          2.0.3.
         </td>
         <td>30 maart 2016</td>
     </tr>
     <tr>
         <td>
-          2.0.2
+          2.0.2.
         </td>
         <td>28 januari 2016</td>
     </tr>
     <tr>
         <td>
-          2.0.1
+          2.0.1.
         </td>
         <td>20 januari 2016</td>
     </tr>
     <tr>
         <td>
-          2.0.0
+          2.0.0.
         </td>
         <td>17 november 2015</td>
     </tr><!-- patch_releases -->
