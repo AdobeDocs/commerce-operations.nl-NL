@@ -2,9 +2,9 @@
 title: Volledige voorwaarden
 description: Bereid uw Adobe Commerce-project voor op een upgrade door deze vereiste stappen uit te voeren.
 exl-id: f7775900-1d10-4547-8af0-3d1283d9b89e
-source-git-commit: 95ffff39d82cc9027fa633dffedf15193040802d
+source-git-commit: fb449f0ee7d503d0c7ba60bf6bfbe3f528060606
 workflow-type: tm+mt
-source-wordcount: '1639'
+source-wordcount: '1604'
 ht-degree: 0%
 
 ---
@@ -79,8 +79,8 @@ Voor Elasticsearch is Java Development Kit (JDK) 1.8 of hoger vereist. Zie [De J
 OpenSearch is een open-source vork van Elasticsearch 7.10.2, na de licentiewijziging van de Elasticsearch. In de volgende versies van Adobe Commerce wordt ondersteuning voor OpenSearch geïntroduceerd:
 
 * 2.4.6 (OpenSearch heeft een aparte module en instellingen)
-* 2.4.5
-* 2.4.4
+* 2.4.5.
+* 2.4.4.
 * 2.4.3-p2
 * 2.3.7-p3
 
@@ -172,7 +172,7 @@ We raden u aan contact op te nemen met uw leverancier van zoekprogramma&#39;s om
 
 ## Database-tabelindeling converteren
 
-U moet de indeling van alle databasetabellen omzetten vanuit `COMPACT` tot `DYNAMIC`. U moet ook het type opslagengine omzetten van `MyISAM` tot `InnoDB`. Zie [best practices](../../implementation-playbook/best-practices/maintenance/commerce-235-upgrade-prerequisites-mariadb.md).
+U moet de indeling van alle databasetabellen omzetten vanuit `COMPACT` tot `DYNAMIC`. U moet ook het type opslagengine omzetten van `MyISAM` tot `InnoDB`. Zie [best practices](../../implementation-playbook/best-practices/maintenance/mariadb-upgrade.md).
 
 ## Limiet voor geopende bestanden instellen
 

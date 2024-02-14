@@ -3,9 +3,9 @@ title: Onderhoudsfase implementatie
 description: Leer over implementatie beste praktijken voor de onderhoudsfase van projecten van Adobe Commerce.
 exl-id: bd052412-a41c-4dbd-9aba-ba2fcac31f2d
 feature: Best Practices
-source-git-commit: 00036391366625ab256a4dc682d1ecbe9e46fa23
+source-git-commit: fb449f0ee7d503d0c7ba60bf6bfbe3f528060606
 workflow-type: tm+mt
-source-wordcount: '468'
+source-wordcount: '371'
 ht-degree: 0%
 
 ---
@@ -48,7 +48,7 @@ De volgende secties bevatten informatie over best practices voor de onderhoudsfa
 | Beste praktijken | Beschrijving |
 |--------------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------|
 | [Problemen met databaseprestaties oplossen &#x200B;](resolve-database-performance-issues.md) | Los databaseproblemen op die de prestaties vertragen op Adobe Commerce-sites die op cloudinfrastructuur worden geïmplementeerd. |
-| [Adobe Commerce 2.3.5-upgradevoorwaarden voor MariaDB-&#x200B;](commerce-235-upgrade-prerequisites-mariadb.md) | Bereid uw MariaDB-database voor op een upgrade. |
+| [Adobe Commerce-upgradevoorwaarden voor MariaDB-&#x200B;](mariadb-upgrade.md) | Bereid uw MariaDB-database voor op een upgrade. |
 
 ## Verbeterde functies
 
