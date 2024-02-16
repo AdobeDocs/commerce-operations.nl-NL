@@ -2,9 +2,9 @@
 title: Opmerkingen bij de release
 description: Meer informatie over de patches die beschikbaar zijn voor Adobe Commerce en de problemen die ze oplossen.
 exl-id: 22262555-f5ea-49ad-98ad-ea8428ef66d5
-source-git-commit: 6f0a3434d4730b4d2bcf0aecdacfae58025824cd
+source-git-commit: 26bde6684b3f38ed16ede6ec9c63cc90fa849fd9
 workflow-type: tm+mt
-source-wordcount: '19799'
+source-wordcount: '19990'
 ht-degree: 0%
 
 ---
@@ -20,6 +20,16 @@ De [[!DNL Quality Patches Tool]](https://github.com/magento/quality-patches) lev
 >[!INFO]
 >
 >Voor informatie over [!DNL quality patches] die door de Gemeenschap voor Magento Open Source zijn opgericht, [releaseopmerkingen](https://github.com/magento/quality-patches/blob/master/community-release-notes.md).
+
+## v1.1.46 {#v1-1-46}
+
+* **ACSD-46767** (voor Adobe Commerce en Magento Open Source >=2.4.4 &lt;2.4.6) - Hiermee wordt het probleem verholpen waarbij de categoriepagina ongeldig wordt als de voorraadhoeveelheid verandert, zelfs als het product nog in voorraad is.
+* **ACSD-54656** (voor Adobe Commerce >=2.4.5 &lt;2.4.6) - Hiermee wordt het probleem verholpen waarbij het onzichtbare Recaptcha tijdens het afrekenen mislukt, zodat een bestelling niet kan worden geplaatst.
+* **ACSD-55100** (voor Adobe Commerce >=2.4.6 &lt;2.4.7) - Hiermee wordt het probleem opgelost waarbij GraphQL in de zoekresultaten niet meer dan 10 k producten retourneert.
+* **ACSD-56621** (voor Adobe Commerce >=2.4.2 &lt;2.4.7) - Hiermee wordt het probleem verholpen waarbij de bijgewerkte voornaam en achternaam niet worden weergegeven in de koptekstsectie voor begroetingen voor de gebruiker van het bedrijfsbeheer.
+* **ACSD-56842** (voor Adobe Commerce en Magento Open Source >=2.4.2 &lt;2.4.7) - Hiermee wordt het probleem opgelost waarbij de uitgestelde proxy&#39;s en de uitgestelde proxyfabrieken ontbreken na het uitvoeren `setup:di:compile`.
+* **ACSD-57003** (voor Adobe Commerce en Magento Open Source >=2.4.6 &lt;2.4.7) - Hiermee wordt het probleem opgelost waarbij de orderstatus wordt gewijzigd in *[!UICONTROL Complete]* in plaats van gewijzigd te worden in *[!UICONTROL Processing]* wanneer een bestelling gedeeltelijk wordt terugbetaald en gedeeltelijk wordt verzonden.
+* Bijgewerkte patches: ACSD-50260-v2, ACSD-54966
 
 ## v1.1.45 {#v1-1-45}
 
