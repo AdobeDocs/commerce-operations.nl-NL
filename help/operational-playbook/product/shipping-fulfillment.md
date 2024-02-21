@@ -3,9 +3,9 @@ title: Verzending
 description: Bepaal verzendmethoden en -kosten voordat u uw e-mailproject voltooit.
 exl-id: 07d303ab-f229-4b6a-b35a-b6d2a3be89b3
 feature: Best Practices, Shipping/Delivery
-source-git-commit: e83e2359377f03506178c28f8b30993c172282c7
+source-git-commit: 766bd4e4e6a31157836770270cc3ba310f142161
 workflow-type: tm+mt
-source-wordcount: '628'
+source-wordcount: '622'
 ht-degree: 0%
 
 ---
@@ -60,7 +60,7 @@ In de volgende tabel worden de verschillen beschreven tussen B2B- en B2C-scheepv
 | B2B | B2C |
 |----------------------------------------------------------------------------------------------|------------------------------------------------------|
 | Betaling en verzending duurt langer vanwege de kosten en de hoeveelheid | Kan op dezelfde dag worden verzonden en/of gratis verzending |
-| Vereist één op één verbinding tussen de zaken en de cliënt | Gewoonlijk, korte termijnverhoudingen |
+| Vereist één op één verbinding tussen de zaken en de cliënt | Gewoonlijk, kortetermijnrelaties |
 | Gewoonlijk, betrekkingen op lange termijn | De zaken verstrekken loyaliteitskaarten om klanten te behouden |
 | Het proces kan lang en complex zijn | Aanbiedingen voor promoties en campagnes aan klanten |
 | Er moeten strenge regels worden toegepast | Basisregels kunnen worden toegepast |
