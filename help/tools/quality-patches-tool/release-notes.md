@@ -2,9 +2,9 @@
 title: Opmerkingen bij de release
 description: Meer informatie over de patches die beschikbaar zijn voor Adobe Commerce en de problemen die ze oplossen.
 exl-id: 22262555-f5ea-49ad-98ad-ea8428ef66d5
-source-git-commit: 26bde6684b3f38ed16ede6ec9c63cc90fa849fd9
+source-git-commit: c39eb5c9328657083aea07a385531e7ad0df6e14
 workflow-type: tm+mt
-source-wordcount: '19990'
+source-wordcount: '20136'
 ht-degree: 0%
 
 ---
@@ -20,6 +20,14 @@ De [[!DNL Quality Patches Tool]](https://github.com/magento/quality-patches) lev
 >[!INFO]
 >
 >Voor informatie over [!DNL quality patches] die door de Gemeenschap voor Magento Open Source zijn opgericht, [releaseopmerkingen](https://github.com/magento/quality-patches/blob/master/community-release-notes.md).
+
+## v1.1.47 {#v1-1-47}
+
+* **ACSD-55241** (voor Adobe Commerce en Magento Open Source >=2.4.2 &lt;2.4.7) - Hiermee wordt het probleem opgelost waarbij *[!UICONTROL Used]* en *[!UICONTROL Times Used]* attributen geven onjuiste waarden voor gegenereerde coupons weer wanneer deze worden gebruikt tijdens het afrekenen met meerdere adressen.
+* **ACSD-56760** (voor Adobe Commerce >=2.4.6 &lt;2.4.7) - Hiermee wordt het probleem verholpen waarbij een tot een specifieke website beperkte gebruiker geen nieuwe producten binnen een categorie kan sorteren of toevoegen als de webwinkel een eigen hoofdcategorie heeft.
+* **ACSD-56858** (voor Adobe Commerce >=2.4.2 &lt;2.4.7) - Hiermee wordt het probleem opgelost waarbij de B2B-machtigingen voor de rol van een bedrijf met beperkte bevoegdheden onjuist worden weergegeven voor een beheerder.
+* **ACSD-57074** (voor Adobe Commerce en Magento Open Source >=2.4.6 &lt;2.4.7) - Hiermee wordt het probleem opgelost waarbij de *Ja/Nee* aangepast kenmerk met `attrbute_code` beginnen met `price_` werkt niet correct met indexering, en de producten met dergelijke attributen zijn niet beschikbaar op het vooreind.
+* Bijgewerkte patches: ACSD-53378, ACSD-51819
 
 ## v1.1.46 {#v1-1-46}
 
