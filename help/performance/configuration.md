@@ -3,9 +3,9 @@ title: Best practices voor configuratie
 description: Optimaliseer de responstijd van uw Adobe Commerce- of Magento Open Source-implementatie met deze best practices.
 feature: Best Practices, Configuration
 exl-id: 4cb0f5e7-49d5-4343-a8c7-b8e351170f91
-source-git-commit: 2fa587557db214ed2fbeb5e6c175a9a209883f94
+source-git-commit: 5a49aff28f1a7c87cd6135ca19b4436da41cbb1b
 workflow-type: tm+mt
-source-wordcount: '1428'
+source-wordcount: '1437'
 ht-degree: 0%
 
 ---
@@ -20,7 +20,7 @@ Alle asynchrone bewerkingen in [!DNL Commerce] worden uitgevoerd met behulp van 
 
 ## Indexers
 
-Een indexeerprogramma kan worden uitgevoerd in **[!UICONTROL Update on Save]** of **[!UICONTROL Update on Schedule]** -modus. De **[!UICONTROL Update on Save]** wordt onmiddellijk geïndexeerd wanneer uw catalogus of andere gegevens veranderen. In deze modus wordt ervan uitgegaan dat de update- en bladerbewerkingen in uw winkel weinig intensief zijn. Dit kan leiden tot aanzienlijke vertragingen en onbeschikbaarheid van gegevens tijdens hoge belastingen. We raden u aan **Bijwerken in schema** in productie, omdat het informatie over gegevensupdates opslaat en indexatie door gedeelten op de achtergrond door een specifieke kroonbaan uitvoert. U kunt de modus van elk [!DNL Commerce] indexeer afzonderlijk op de  **[!UICONTROL System]** > [!UICONTROL Tools] > **[!UICONTROL Index Management]** configuratiepagina
+Een indexeerprogramma kan worden uitgevoerd in **[!UICONTROL Update on Save]** of **[!UICONTROL Update on Schedule]** -modus. De **[!UICONTROL Update on Save]** wordt onmiddellijk geïndexeerd wanneer uw catalogus of andere gegevens veranderen. In deze modus wordt ervan uitgegaan dat de update- en bladerbewerkingen in uw winkel weinig intensief zijn. Dit kan leiden tot aanzienlijke vertragingen en onbeschikbaarheid van gegevens tijdens hoge belastingen. We raden u aan **Bijwerken in schema** voor prestatiedoeleinden, omdat het informatie over gegevensupdates opslaat en indexatie door gedeelten op de achtergrond door een specifieke kroonbaan uitvoert. U kunt de modus van elk [!DNL Commerce] indexeer afzonderlijk op de  **[!UICONTROL System]** > [!UICONTROL Tools] > **[!UICONTROL Index Management]** configuratiepagina De [!UICONTROL Customer Grid] index moet altijd worden ingesteld op **[!UICONTROL Update on Save]** -modus.
 
 >[!TIP]
 >
