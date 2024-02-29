@@ -2,9 +2,9 @@
 title: Modules in- of uitschakelen
 description: Voer de volgende stappen uit om Adobe Commerce- of Magento Open Source-modules te beheren.
 exl-id: 7155950a-a66a-4254-a71c-1a9aeab47606
-source-git-commit: 95ffff39d82cc9027fa633dffedf15193040802d
+source-git-commit: 6e87d68df97adf47b5a61e8b6683ac11f600806c
 workflow-type: tm+mt
-source-wordcount: '551'
+source-wordcount: '584'
 ht-degree: 0%
 
 ---
@@ -26,6 +26,10 @@ Wanneer
 * `--enabled` maakt een lijst van alle toegelaten modules.
 * `--disabled` Hiermee geeft u alle uitgeschakelde modules weer.
 * `<module-list>` is een door spaties gescheiden lijst met modules om de status te controleren. Als een modulenaam speciale tekens bevat, plaatst u de naam tussen enkele of dubbele aanhalingstekens.
+
+>[!NOTE]
+>
+>U kunt modules niet direct op wolkenprojecten toelaten of onbruikbaar maken. U moet deze opdrachten lokaal uitvoeren en vervolgens wijzigingen aanbrengen in het dialoogvenster `app/etc/config.php` bestand voor een omgeving. Zie [Workflow voor Pro-projecten: implementatieworkflow](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/architecture/pro-develop-deploy-workflow.html#deployment-workflow).
 
 ## Module in-/uitschakelen
 
