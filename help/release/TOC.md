@@ -3,9 +3,9 @@ user-guide-title: Gegevens vrijgeven
 user-guide-description: Open op één locatie alle releasegegevens voor Adobe Commerce-patches en -services.
 feature: Release Notes
 recommendations: noDisplay, noCatalog
-source-git-commit: 51b3be72fcbf3c92a133a8bdec654968a757eeac
+source-git-commit: e298c88ab0bc00216fd7d4eadfc94908779713f5
 workflow-type: tm+mt
-source-wordcount: '120'
+source-wordcount: '122'
 ht-degree: 0%
 
 ---
@@ -13,6 +13,7 @@ ht-degree: 0%
 
 # Gegevens vrijgeven {#release}
 
+- [Laatste release](latest.md)
 - Opmerkingen bij de release {#notes}
    - [Overzicht](release-notes/overview.md)
    - [Achteruit incompatibele wijzigingen](backward-incompatible-changes.md)
