@@ -4,9 +4,9 @@ description: Leer meer over de nieuwste ontwikkeltools en personalisatiemogelijk
 level: Intermediate, Experienced
 role: Admin, User, Developer
 mini-toc-levels: 1
-source-git-commit: a4738e58d8c17c17426765d6f975a2af0ce11c80
+source-git-commit: 2e17313c0a2c87ce4d2ee43e9b40277fda25edb9
 workflow-type: tm+mt
-source-wordcount: '3076'
+source-wordcount: '3078'
 ht-degree: 0%
 
 ---
@@ -118,7 +118,7 @@ Bovendien ontvangen wij ook een hands-on [laboratoriumsessie](https://reg.adobe.
 
 Adobe heeft uitgebreide ervaring met het implementeren van HIPAA-Ready Services met klanten in de gezondheidszorg van elke omvang. Adobe stelt de norm voor een verantwoord gegevensbeheer voor consumenten, van betalers tot leveranciers en leveranciers van farmaceutische en medische producten. Deze expertise strekt zich nu uit tot de snel groeiende markt voor digitale handel in de gezondheidszorg met een versie die klaar is voor HIPPA van het Adobe Commerce cloud platform.
 
-De HIPAA-Ready-aanbieding is beschikbaar voor Adobe Commerce Managed Services-klanten. Het omvat aanvullende controles op het gebied van veiligheid en privacy om de bescherming van elektronische persoonlijke gezondheidsinformatie (ePHI) te waarborgen, zodat organisaties op het gebied van gezondheidszorg en biowetenschappen gemakkelijker aan hun verplichtingen kunnen voldoen. De oplossing ondersteunt een aantal gebruiksgevallen, waaronder snelle en handige onlineverkoop van zorgdekking, recepten, voorgeschreven medische hulpmiddelen en medische benodigdheden. Adobe Commerce sluit zich nu aan bij de [Adobe Experience Cloud for Healthcare](https://business.adobe.com/solutions/industries/healthcare.html) reeks oplossingen, waarmee klanten veilige en uitzonderlijke ervaringen met de patiënt kunnen bieden en tegelijk de voorkeuren van de consument kunnen respecteren.
+De HIPAA-Ready-aanbieding is beschikbaar voor klanten van de cloud en de Managed Service van Adobe Commerce. Het omvat aanvullende controles op het gebied van veiligheid en privacy om de bescherming van elektronische persoonlijke gezondheidsinformatie (ePHI) te waarborgen, zodat organisaties op het gebied van gezondheidszorg en biowetenschappen gemakkelijker aan hun verplichtingen kunnen voldoen. De oplossing ondersteunt een aantal gebruiksgevallen, waaronder snelle en handige onlineverkoop van zorgdekking, recepten, voorgeschreven medische hulpmiddelen en medische benodigdheden. Adobe Commerce sluit zich nu aan bij de [Adobe Experience Cloud for Healthcare](https://business.adobe.com/solutions/industries/healthcare.html) reeks oplossingen, waarmee klanten veilige en uitzonderlijke ervaringen met de patiënt kunnen bieden en tegelijk de voorkeuren van de consument kunnen respecteren.
 
 >[!TIP]
 >
