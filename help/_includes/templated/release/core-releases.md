@@ -1,7 +1,7 @@
 ---
-source-git-commit: 9f80bf4de9112cc986708266565c96515e85554c
+source-git-commit: 93ec4b59b4c26e31ee117bc13f98d21ce23d586f
 workflow-type: tm+mt
-source-wordcount: '499'
+source-wordcount: '501'
 ht-degree: 0%
 
 ---
@@ -9,7 +9,7 @@ ht-degree: 0%
 
 ## 2.4.7.
 
-De ondersteuning voor de release line van 2.4.7 eindigt op 19 april 2027.
+De ondersteuning voor de release line van 2.4.7 eindigt op 9 april 2027.
 
 <table>
   <thead>
@@ -138,7 +138,7 @@ De ondersteuning voor de release line 2.4.5 eindigt op 9 augustus 2025.
 
 ## 2.4.4.
 
-De ondersteuning voor de release line van 2.4.4 eindigt op 12 april 2025.
+De ondersteuning voor de release line 2.4.4 eindigt op 24 april 2025.
 
 <table>
   <thead>
