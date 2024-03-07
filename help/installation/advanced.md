@@ -2,9 +2,9 @@
 title: Geavanceerde installatie op locatie
 description: Leer meer over geavanceerde installatiescenario's voor Adobe Commerce of Magento Open Source over infrastructuur die u bezit.
 exl-id: e16e750a-e068-4a63-8ad9-62043e2a8231
-source-git-commit: 95ffff39d82cc9027fa633dffedf15193040802d
+source-git-commit: c9e7a8926c7003d34a62d2defb62c09d58919ddd
 workflow-type: tm+mt
-source-wordcount: '2406'
+source-wordcount: '2383'
 ht-degree: 0%
 
 ---
@@ -91,9 +91,9 @@ U kunt de volgende opdrachten uitvoeren om naar waarden voor bepaalde vereiste a
 
 | Installatieargument | Opdracht |
 | ------------------ | ------------------------------- |
-| Taal | bin/magento-info:language:list |
-| Valuta | bin/magento-info:currency:list |
-| Tijdzone | bin/magento-info:timezone:list |
+| Taal | `bin/magento info:language:list` |
+| Valuta | `bin/magento info:currency:list` |
+| Tijdzone | `bin/magento info:timezone:list` |
 
 >[!NOTE]
 >
