@@ -2,9 +2,9 @@
 title: Systeemvereisten
 description: Gebruik deze verwijzing om vereiste softwaregebiedsdelen te identificeren die met Adobe Commerce en de versies van de Magento Open Source zijn getest.
 exl-id: 008c9edc-7d72-403c-847f-0e3b77bbb197
-source-git-commit: 8b9e4de2799532e4654fce63d856c2d301025f09
+source-git-commit: 56052a5777b8719d5a9257d0c48e5640a6812a5f
 workflow-type: tm+mt
-source-wordcount: '788'
+source-wordcount: '761'
 ht-degree: 0%
 
 ---
@@ -112,9 +112,8 @@ Storefront en Admin:
 - Firefox (nieuwste en vorige hoofdversie; elk besturingssysteem)
 - Chrome (nieuwste en vorige hoofdversie; elk besturingssysteem)
 - Safari (nieuwste en vorige hoofdversie; alleen macOS)
-- Safari Mobile voor iPad 2, iPad Mini, iPad met Retina Display (iOS 12 of hoger), voor desktopopslag
-- Safari Mobile voor iPhone 6 of hoger; iOS 12 of hoger, voor mobiele winkel
-- Chrome voor mobiele apparaten (nieuwste en vorige hoofdversie) [Android™ 4 of hoger] voor mobiele winkel)
+- Safari voor iOS (nieuwste en vorige hoofdversie, voor winkel)
+- Chrome voor Android (nieuwste en vorige hoofdversie, voor winkel)
 
 ### E-mailserver
 
