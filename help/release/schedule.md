@@ -2,7 +2,7 @@
 title: Releaseplanning
 description: Ontdek wanneer Adobe de release van nieuwe functies voor Adobe Commerce gaat aankondigen.
 exl-id: ae1e09cd-966f-44a3-9e4d-b90bb838429d
-source-git-commit: c9e7a8926c7003d34a62d2defb62c09d58919ddd
+source-git-commit: a7aa02cd47deaf7aebdfcf0b3e969cce990a962a
 workflow-type: tm+mt
 source-wordcount: '504'
 ht-degree: 2%
@@ -31,7 +31,7 @@ De volgende tabel bevat de datums voor geplande releases (de datums kunnen worde
 </thead>
 <tfoot>
    <tr>
-      <td colspan="3"><strong>Legenda:</strong>
+      <td colspan="3"><strong>Legenda</strong>
          <ul>
             <li><strong><img alt="B2B-functiepictogram" src="../assets/icons/enterprise.svg"></img> B2B</strong>—Nieuwe functies, verbeteringen en foutoplossingen voor de B2B-extensie voor Adobe Commerce.</li>
             <li><strong><img alt="Pictogram voor uitbreidbaarheidsfunctie" src="../assets/icons/brackets.svg"></img> Uitbreidbaarheid</strong>—Nieuwe ontwikkelaarshulpmiddelen en de diensten voor uit-van-procesrekbaarheid die onafhankelijk van flardversies worden geleverd. Bijvoorbeeld Admin UI SDK, Adobe I/O Events for Commerce, en API Mesh.</li>
