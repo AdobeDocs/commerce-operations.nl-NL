@@ -4,13 +4,13 @@ description: Leer meer over de nieuwste ontwikkeltools en personalisatiemogelijk
 level: Intermediate, Experienced
 role: Admin, User, Developer
 mini-toc-levels: 1
-source-git-commit: 2e17313c0a2c87ce4d2ee43e9b40277fda25edb9
+exl-id: 176886bc-733a-48d9-94dc-58fd8b24f54e
+source-git-commit: 1f2c2ca98ba7076cdc3512e30fdd7a8c76f86200
 workflow-type: tm+mt
 source-wordcount: '3078'
 ht-degree: 0%
 
 ---
-
 
 # Adobe Commerce - productaankondigingen februari
 
@@ -22,7 +22,7 @@ Adobe Commerce heeft nauw samengewerkt met klanten om nieuwe, op ervaring gebase
 
 Meld u aan bij deze persoonlijke en virtuele evenementen om meer te leren over Adobe Commerce van e-commerce leiders en beoefenaars:
 
-- **15 maart 2024**: Adobe Commerce: Building the Experience-led Commerce Platform, 10am PDT / 6pm GMT. [Registreren voor de live webinar](https://engage.adobe.com/BdgxpComWBR-register.html).
+- **14 maart 2024**: Adobe Commerce: Building the Experience-led Commerce Platform, 10am PDT / 5pm GMT. [Registreren voor de live webinar](https://engage.adobe.com/BdgxpComWBR-register.html).
 
 - **26 maart t/m 28 maart 2024**: Word lid van duizenden leiders en beoefenaars van e-handel in Adobe Summit in Las Vegas. Meer informatie over [Adobe Summit](https://business.adobe.com/summit/adobe-summit.html) en de [Commerce Track](https://reg.adobe.com/flow/adobe/as24/sessions/page/catalog?tab.allsessions=1643149273691001NFtR&amp;search.track=1601680652403006TXuG) met sprekers van [Hanesbrands](https://reg.adobe.com/flow/adobe/as24/sessions/page/catalog?tab.allsessions=1643149273691001NFtR&amp;search=S435), [Coca-Cola](https://reg.adobe.com/flow/adobe/as24/sessions/page/catalog?tab.allsessions=1643149273691001NFtR&amp;search=S434), [Unilever](https://reg.adobe.com/flow/adobe/as24/sessions/page/catalog?tab.allsessions=1643149273691001NFtR&amp;search=s430), en [Nestle Purina](https://reg.adobe.com/flow/adobe/as24/sessions/page/catalog?tab.allsessions=1643149273691001NFtR&amp;search=S437).
 
@@ -116,7 +116,7 @@ Bovendien ontvangen wij ook een hands-on [laboratoriumsessie](https://reg.adobe.
 
 [!BADGE Nu beschikbaar]{type=Informative tooltip="Nu beschikbaar"}
 
-Adobe heeft uitgebreide ervaring met het implementeren van HIPAA-Ready Services met klanten in de gezondheidszorg van elke omvang. Adobe stelt de norm voor een verantwoord gegevensbeheer voor consumenten, van betalers tot leveranciers en leveranciers van farmaceutische en medische producten. Deze expertise strekt zich nu uit tot de snel groeiende markt voor digitale handel in de gezondheidszorg met een versie die klaar is voor HIPPA van het Adobe Commerce cloud platform.
+Adobe heeft uitgebreide ervaring met het implementeren van HIPAA-Ready Services met klanten in de gezondheidszorg van elke omvang. Adobe stelt de norm voor een verantwoord gegevensbeheer voor consumenten, van betalers tot leveranciers en leveranciers van farmaceutische en medische producten. Deze expertise strekt zich nu uit tot de snel groeiende markt voor digitale handel in de gezondheidszorg met een HIPAA-klaar versie van het Adobe Commerce cloud platform.
 
 De HIPAA-Ready-aanbieding is beschikbaar voor klanten van de cloud en de Managed Service van Adobe Commerce. Het omvat aanvullende controles op het gebied van veiligheid en privacy om de bescherming van elektronische persoonlijke gezondheidsinformatie (ePHI) te waarborgen, zodat organisaties op het gebied van gezondheidszorg en biowetenschappen gemakkelijker aan hun verplichtingen kunnen voldoen. De oplossing ondersteunt een aantal gebruiksgevallen, waaronder snelle en handige onlineverkoop van zorgdekking, recepten, voorgeschreven medische hulpmiddelen en medische benodigdheden. Adobe Commerce sluit zich nu aan bij de [Adobe Experience Cloud for Healthcare](https://business.adobe.com/solutions/industries/healthcare.html) reeks oplossingen, waarmee klanten veilige en uitzonderlijke ervaringen met de patiënt kunnen bieden en tegelijk de voorkeuren van de consument kunnen respecteren.
 
