@@ -3,7 +3,7 @@ title: Toepassingsserver voor GraphQL API's
 description: Volg deze instructies voor het inschakelen van de toepassingsserver voor GraphQL API's in uw Adobe Commerce-implementatie.
 badgeCoreBeta: label="2.4.7-bèta" type="informative"
 exl-id: 9b223d92-0040-4196-893b-2cf52245ec33
-source-git-commit: 8e050f72f4371afb6602ae9688f22d9f24df2f0c
+source-git-commit: 1fdb29c1a6666aeeef7e546bc7d57a83a40b7542
 workflow-type: tm+mt
 source-wordcount: '1844'
 ht-degree: 0%
@@ -45,7 +45,7 @@ De `ApplicationServer` module (`Magento/ApplicationServer/`) schakelt Applicatio
 Voltooi de volgende taken voordat u Application Server op Cloud Pro implementeert:
 
 1. Bevestig dat Adobe Commerce op Commerce Cloud is geïnstalleerd met gebruik van Cloud Template versie 2.4.7 of hoger.
-1. Zorg ervoor dat al uw aanpassingen en uitbreidingen van de Handel zijn [compatibel](https://developer.adobe.com/commerce/development/components/app-server/) met toepassingsserver.
+1. Zorg ervoor dat al uw aanpassingen en uitbreidingen van de Handel zijn [compatibel](https://developer.adobe.com/commerce/php/development/components/app-server/) met toepassingsserver.
 1. Clone your Commerce Cloud project.
 1. Pas indien nodig de instellingen in het bestand &#39;application-server/nginx.conf.sample&#39; aan.
 1. Plaats de actieve sectie &#39;Web&#39; in `project_root/.magento.app.yaml` volledig.
