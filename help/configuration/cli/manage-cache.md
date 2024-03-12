@@ -2,7 +2,7 @@
 title: De cache beheren
 description: Cachetypen beheren en de status van het meningsgeheime voorgeheugen bekijken.
 exl-id: bbd76c00-727b-412e-a8e5-1e013a83a29a
-source-git-commit: 604e2a1461e2cbbcc498dfed6018ba640efe8cde
+source-git-commit: 6e0e7f209b265e5b924e0092fec020e0cefc165d
 workflow-type: tm+mt
 source-wordcount: '941'
 ht-degree: 0%
@@ -15,10 +15,10 @@ ht-degree: 0%
 
 ## Cachetypen
 
-Handel 2 heeft de volgende geheim voorgeheugentypes:
+De handel heeft de volgende geheim voorgeheugentypes:
 
 | Naam van type &#39;vriendelijk&#39; cache | Codenaam van type Cache | Beschrijving |
-|--- |--- |--- |
+|-----------------------------------------------------------------------------------------------------------------------------------------------------------------|-------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | Configuratie | config | De handel verzamelt configuratie van alle modules, voegt het samen, en bewaart het samengevoegde resultaat aan het geheime voorgeheugen. Deze cache bevat ook opslagspecifieke instellingen die zijn opgeslagen in het bestandssysteem en de database. Reinig of verwijder dit cachetype na het wijzigen van configuratiedossiers. |
 | Layout | layout | Gecompileerde paginalay-outs (dat wil zeggen de lay-outcomponenten van alle componenten). Reinig of verwijder dit cachetype na het wijzigen van lay-outbestanden. |
 | HTML-uitvoer blokkeren | block_html | HTML-paginafragmenten per blok. Reinig of verwijder dit cachetype na het wijzigen van de meningslaag. |
@@ -31,10 +31,9 @@ Handel 2 heeft de volgende geheim voorgeheugentypes:
 | Vertalingen | vertalen | Na het samenvoegen van vertalingen van alle modules, zal het fusiecache worden schoongemaakt. |
 | Integratieconfiguratie | config_integration | Gecompileerde integratie. Maak deze cache leeg of maak deze leeg nadat u integraties hebt gewijzigd of toegevoegd. |
 | Integratie API-configuratie | config_integration_api | Gecompileerde integratie APIs configuratie van de Integraties van de Opslag. |
+| Resolver van GraphQL-query [!BADGE 2.4.7-bèta]{type=Informative url=&quot;/help/release/release-notes/commerce/2-4-7.md&quot; tooltip=&quot;Alleen beschikbaar in 2.4.7-bèta&quot;} | graphql_query_resolver_result | Caches the results from GraphQL query resolvers for customer, CMS page, CMS block, and product media gallery entities. Laat deze cache ingeschakeld om de GraphQL-prestaties te verbeteren. |
 | Webserviceconfiguratie | config_webservice | Caching the Web API Structure. |
 | Klantenmelding | customer_notification | Tijdelijke meldingen die worden weergegeven in de gebruikersinterface. |
-| Admin UI SDK-cache | admin_ui_sdk | Hiermee worden beheerdersaanpassingen bijgehouden die zijn toegevoegd met het dialoogvenster [Adobe Commerce Admin UI SDK](https://developer.adobe.com/commerce/extensibility/admin-ui-sdk/). |
-| WebHks-antwoordcache | webhaks_response | Reacties in cache [webshaanvragen](https://developer.adobe.com/commerce/extensibility/webhooks/). |
 
 ## De status van de cache weergeven
 
@@ -63,6 +62,7 @@ Current status:
             config_integration: 1
         config_integration_api: 1
                    target_rule: 1
+ graphql_query_resolver_result: 1
              config_webservice: 1
                      translate: 1
 ```
@@ -171,6 +171,7 @@ Monsterresultaat:
    config_integration
    config_integration_api
    full_page
+   graphql_query_resolver_results
    config_webservice
    translate
 ```

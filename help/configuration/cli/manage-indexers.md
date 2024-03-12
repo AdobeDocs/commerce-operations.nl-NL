@@ -2,9 +2,9 @@
 title: De indexen beheren
 description: Zie voorbeelden van hoe te om de indexen van de Handel te bekijken en te beheren.
 exl-id: d2cd1399-231e-4c42-aa0c-c2ed5d7557a0
-source-git-commit: 41082413e24733dde34542a2c9cb3cabbfdd4a35
+source-git-commit: a8f845813971eb32053cc5b2e390883abf3a104e
 workflow-type: tm+mt
-source-wordcount: '690'
+source-wordcount: '955'
 ht-degree: 0%
 
 ---
@@ -263,3 +263,51 @@ Index mode for Indexer Product Categories was changed from 'Update on Save' to '
 ```
 
 De indexeerdergerelateerde databasetriggers worden toegevoegd wanneer de indexeermodus is ingesteld op `schedule` en wordt verwijderd wanneer de indexeermodus is ingesteld op `realtime`. Als de triggers ontbreken in uw database terwijl de indexen zijn ingesteld op `schedule`wijzigt u de indexen in `realtime` en verander ze vervolgens naar `schedule`. Hierdoor worden de triggers opnieuw ingesteld.
+
+### Indexeringsstatus instellen [!BADGE 2.4.7-bèta]{type=Informative url="/help/release/release-notes/commerce/2-4-7.md" tooltip="Alleen beschikbaar in 2.4.7 bèta"}
+
+Met deze opdracht kunnen beheerders de operationele status van een of meer indexen wijzigen en de systeemprestaties optimaliseren tijdens uitgebreide bewerkingen, zoals het importeren, bijwerken of onderhouden van gegevens.
+
+Command syntaxis:
+
+```bash
+bin/magento indexer:set-status {invalid|suspended|valid} [indexer]
+```
+
+Waarbij:
+
+- `invalid`—Tekent indexeerders als verouderd, waardoor opnieuw indexeren wordt gevraagd bij de volgende uitsnijdbewerking, tenzij ze worden opgeschort.
+- `suspended`—Hiermee worden tijdelijk automatische updates voor door snijden geactiveerde indexen gestopt. Deze status is van toepassing op zowel realtime- als planningsmodi, zodat automatische updates worden gepauzeerd tijdens intensieve bewerkingen.
+- `valid`—Geeft aan dat indexergegevens up-to-date zijn, zonder dat opnieuw indexeren nodig is.
+- `indexer`—Is een door spaties gescheiden lijst van indexen. Weglaten `indexer` om alle indexen te vormen de zelfde manier.
+
+Als u bijvoorbeeld bepaalde indexen wilt onderbreken, voert u het volgende in:
+
+```bash
+bin/magento indexer:set-status suspended catalog_category_product catalog_product_category
+```
+
+Monsterresultaat:
+
+```terminal
+Index status for Indexer 'Category Products' was changed from 'valid' to 'suspended'.
+Index status for Indexer 'Product Categories' was changed from 'valid' to 'suspended'.
+```
+
+#### Status geschorste index beheren
+
+Wanneer een indexeerteken op een `suspended` status, heeft dit voornamelijk invloed op automatische re-dexering en geconcretiseerde weergave-updates. Hier volgt een kort overzicht:
+
+**Opnieuw indexeren overgeslagen**: Automatisch opnieuw indexeren wordt overgeslagen voor `suspended` indexen en indexen indexen die het zelfde delen `shared_index`. Dit zorgt ervoor dat de systeembronnen behouden blijven door gegevens met betrekking tot geschorste processen niet opnieuw te indexeren.
+
+**Updates van gematerialiseerde weergave overgeslagen**: Gelijkaardig aan het opnieuw indexeren, updates aan geconcretiseerde meningen met betrekking tot `suspended` indexeerders of hun gedeelde indexen worden ook gepauzeerd. Deze actie vermindert de belasting van het systeem tijdens de ophanging.
+
+>[!INFO]
+>
+>De `indexer:reindex` alle indexen opnieuw indexeert, inclusief de indexen die zijn gemarkeerd als `suspended`, waardoor het handig wordt voor handmatige updates wanneer automatische updates worden gepauzeerd.
+
+>[!IMPORTANT]
+>
+>De status van een indexeerder wijzigen in `valid` van `suspended` of `invalid` is voorzichtigheid geboden. Deze actie kan tot prestatiesdegradatie leiden als er geaccumuleerde niet geïndexeerde gegevens zijn.
+>
+>Het is essentieel om ervoor te zorgen dat alle gegevens nauwkeurig worden geïndexeerd alvorens manueel de status aan bij te werken `valid` de systeemprestaties en gegevensintegriteit te handhaven.
