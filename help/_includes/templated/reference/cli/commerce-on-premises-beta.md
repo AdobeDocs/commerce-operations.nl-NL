@@ -1,7 +1,7 @@
 ---
-source-git-commit: d720b64f315d1e4b6fb7868d911eb3af089e3fa4
+source-git-commit: f51b6e6f5c030ed3ce5427a36bfe680667fc55ba
 workflow-type: tm+mt
-source-wordcount: '20131'
+source-wordcount: '21385'
 ht-degree: 0%
 
 ---
@@ -11,9 +11,9 @@ ht-degree: 0%
 
 <!-- The template to render with above values -->
 
-**Versie**: 2.4.7-bèta2
+**Versie**: 2.4.7-bèta3
 
-Deze verwijzing bevat 134 bevelen beschikbaar door `bin/magento` opdrachtregelprogramma.
+Deze naslaggids bevat 141 opdrachten die beschikbaar zijn via de `bin/magento` opdrachtregelprogramma.
 De eerste lijst wordt automatisch gegenereerd met de opdracht `bin/magento list` op Adobe Commerce.
 Gebruik de [&quot;CLI-opdrachten toevoegen&quot;](https://developer.adobe.com/commerce/php/development/cli-commands/) gids om een douane CLI bevel toe te voegen.
 
@@ -30,12 +30,12 @@ Gebruik de [&quot;CLI-opdrachten toevoegen&quot;](https://developer.adobe.com/co
 Interne opdracht voor suggesties voor shell-voltooiing
 
 ```bash
-bin/magento _complete [-s|--shell SHELL] [-i|--input INPUT] [-c|--current CURRENT] [-S|--symfony SYMFONY]
+bin/magento _complete [-s|--shell SHELL] [-i|--input INPUT] [-c|--current CURRENT] [-a|--api-version API-VERSION] [-S|--symfony SYMFONY]
 ```
 
 ### `--shell`, `-s`
 
-Het shell-type (&quot;bash&quot;)
+Het schelpdiertype (&quot;bash&quot;, &quot;fish&quot;, &quot;zsh&quot;)
 
 - Vereist een waarde
 
@@ -52,9 +52,15 @@ De index van de &quot;input&quot;-array waarin de cursor zich bevindt (bijvoorbe
 
 - Vereist een waarde
 
+### `--api-version`, `-a`
+
+De API-versie van het voltooiingsscript
+
+- Vereist een waarde
+
 ### `--symfony`, `-S`
 
-De versie van het voltooiingsscript
+verouderd
 
 - Vereist een waarde
 
@@ -3875,7 +3881,7 @@ Geen interactieve vraag stellen
 Abonneren op de gebeurtenis
 
 ```bash
-bin/magento events:subscribe [-f|--force] [--fields FIELDS] [--parent PARENT] [--rules RULES] [-p|--priority] [--] <event-code>
+bin/magento events:subscribe [-f|--force] [--fields FIELDS] [--parent PARENT] [--rules RULES] [-p|--priority] [-d|--destination DESTINATION] [--] <event-code>
 ```
 
 
@@ -3918,6 +3924,13 @@ Versnelt de verzending van deze gebeurtenis. Geef deze optie op voor gebeurtenis
 
 - Standaard: `false`
 - Accepteert geen waarde
+
+### `--destination`, `-d`
+
+De bestemming van deze gebeurtenis. Geef deze optie op voor de gebeurtenissen die naar de aangepaste bestemming moeten worden verzonden.
+
+- Standaard: `default`
+- Vereist een waarde
 
 ### `--help`, `-h`
 
@@ -4600,6 +4613,78 @@ bin/magento indexer:set-mode [<mode> [<index>...]]
 
 Type indexmodus [realtime|plannen]
 
+
+### `index`
+
+Lijst met door spaties gescheiden indextypen of laat toe om op alle indexen toe te passen.
+
+- Standaard: `[]`
+
+- Array
+
+### `--help`, `-h`
+
+Help weergeven voor de opgegeven opdracht. Wanneer geen opdracht is gegeven, wordt de Help weergegeven voor de \&lt;info>list\&lt;/info> command
+
+- Standaard: `false`
+- Accepteert geen waarde
+
+### `--quiet`, `-q`
+
+Geen bericht uitvoeren
+
+- Standaard: `false`
+- Accepteert geen waarde
+
+### `--verbose`, `-v|-vv|-vvv`
+
+Verhoog de breedheid van berichten: 1 voor normale output, 2 voor meer uitgebreide output en 3 voor zuivert
+
+- Standaard: `false`
+- Accepteert geen waarde
+
+### `--version`, `-V`
+
+Deze toepassingsversie weergeven
+
+- Standaard: `false`
+- Accepteert geen waarde
+
+### `--ansi`
+
+ANSI-uitvoer forceren (of uitschakelen —no-ansi)
+
+- Accepteert geen waarde
+
+### `--no-ansi`
+
+De optie &quot;—ansi&quot; negeren
+
+- Standaard: `false`
+- Accepteert geen waarde
+
+### `--no-interaction`, `-n`
+
+Geen interactieve vraag stellen
+
+- Standaard: `false`
+- Accepteert geen waarde
+
+
+## `indexer:set-status`
+
+Hiermee wordt de opgegeven indexeerstatus ingesteld
+
+```bash
+bin/magento indexer:set-status <status> [<index>...]
+```
+
+
+### `status`
+
+Type indexstatus [ongeldig|opgeschort|geldig]
+
+- Vereist
 
 ### `index`
 
@@ -6762,25 +6847,51 @@ Geen interactieve vraag stellen
 Hersynchroniseert voedergegevens aan de dienst SaaS.
 
 ```bash
-bin/magento saas:resync [--no-reindex] [--feed FEED] [--cleanup-feed]
+bin/magento saas:resync [--feed FEED] [--no-reindex] [--cleanup-feed] [--dry-run] [--thread-count THREAD-COUNT] [--batch-size BATCH-SIZE] [--continue-resync]
 ```
+
+### `--feed`
+
+Geef de feed-naam op om opnieuw te synchroniseren met SaaS-service. Beschikbare feeds: orderproductie van betalingsservices, betalingsservicesbestelsandbox, orderstatus van betalingsservices, betalingsservicestatus sandbox, betalingsservices, winkelproductie van betalingsservices, zandbak in de winkel voor betalingsservices
+
+- Vereist een waarde
 
 ### `--no-reindex`
 
-Voer de gegevens van de feed alleen opnieuw in bij de SaaS-service. Wordt niet opnieuw geindexeerd.
+Voer de gegevens van de feed alleen opnieuw in bij de SaaS-service. Wordt niet opnieuw geindexeerd. (Deze optie is niet van toepassing op de producten, de producten, de prijzen en de feeds)
 
 - Standaard: `false`
 - Accepteert geen waarde
 
-### `--feed`
-
-Geef de feed-naam op om opnieuw te synchroniseren met SaaS-service. Beschikbare feeds:
-
-- Vereist een waarde
-
 ### `--cleanup-feed`
 
 Forceer om de indextabel van de feed vóór synchronisatie op te schonen.
+
+- Standaard: `false`
+- Accepteert geen waarde
+
+### `--dry-run`
+
+Droge run. Gegevens worden niet geëxporteerd. Als u de payload wilt opslaan in het logbestand var/log/saas-export.log, voert u de variabele EXPORTER_EXTENDED_LOG=1 uit.
+
+- Standaard: `false`
+- Accepteert geen waarde
+
+### `--thread-count`
+
+Aantal synchronisatiethread instellen.
+
+- Vereist een waarde
+
+### `--batch-size`
+
+Batchgrootte voor synchronisatie instellen
+
+- Vereist een waarde
+
+### `--continue-resync`
+
+Doorgaan met opnieuw synchroniseren vanaf de laatste opgeslagen positie (deze optie is van toepassing op de producten, de producten, de prijzen en de feeds)
 
 - Standaard: `false`
 - Accepteert geen waarde
@@ -7335,7 +7446,7 @@ Geen interactieve vraag stellen
 Toepassingsserver uitvoeren
 
 ```bash
-bin/magento server:run [-p|--port [PORT]] [-b|--background [BACKGROUND]] [-a|--area [AREA]] [-mip|--magento-init-params [MAGENTO-INIT-PARAMS]] [-mwt|--maxWaitTime [MAXWAITTIME]]
+bin/magento server:run [-p|--port [PORT]] [-b|--background [BACKGROUND]] [-a|--area [AREA]] [-mip|--magento-init-params [MAGENTO-INIT-PARAMS]] [-mwt|--maxWaitTime [MAXWAITTIME]] [--state-monitor]
 ```
 
 ### `--port`, `-p`
@@ -7372,6 +7483,70 @@ hoe lang moet worden gewacht op workers na herladen (bijv. config verandering) a
 
 - Standaard: `3600`
 - Accepteert een waarde
+
+### `--state-monitor`
+
+Statusbewaking inschakelen. Gebruik dit alleen voor foutopsporingsstatusproblemen.
+
+- Standaard: `false`
+- Accepteert geen waarde
+
+### `--help`, `-h`
+
+Help weergeven voor de opgegeven opdracht. Wanneer geen opdracht is gegeven, wordt de Help weergegeven voor de \&lt;info>list\&lt;/info> command
+
+- Standaard: `false`
+- Accepteert geen waarde
+
+### `--quiet`, `-q`
+
+Geen bericht uitvoeren
+
+- Standaard: `false`
+- Accepteert geen waarde
+
+### `--verbose`, `-v|-vv|-vvv`
+
+Verhoog de breedheid van berichten: 1 voor normale output, 2 voor meer uitgebreide output en 3 voor zuivert
+
+- Standaard: `false`
+- Accepteert geen waarde
+
+### `--version`, `-V`
+
+Deze toepassingsversie weergeven
+
+- Standaard: `false`
+- Accepteert geen waarde
+
+### `--ansi`
+
+ANSI-uitvoer forceren (of uitschakelen —no-ansi)
+
+- Accepteert geen waarde
+
+### `--no-ansi`
+
+De optie &quot;—ansi&quot; negeren
+
+- Standaard: `false`
+- Accepteert geen waarde
+
+### `--no-interaction`, `-n`
+
+Geen interactieve vraag stellen
+
+- Standaard: `false`
+- Accepteert geen waarde
+
+
+## `server:state-monitor:aggregate-output`
+
+Samengevoegde output van staatsmonitor van ApplicationServer
+
+```bash
+bin/magento server:state-monitor:aggregate-output
+```
 
 ### `--help`, `-h`
 
@@ -7511,14 +7686,8 @@ Geen interactieve vraag stellen
 Creeert of wijzigt de plaatsingsconfiguratie
 
 ```bash
-bin/magento setup:config:set [--backend-frontname BACKEND-FRONTNAME] [--enable-debug-logging ENABLE-DEBUG-LOGGING] [--enable-syslog-logging ENABLE-SYSLOG-LOGGING] [--remote-storage-driver REMOTE-STORAGE-DRIVER] [--remote-storage-prefix REMOTE-STORAGE-PREFIX] [--remote-storage-endpoint REMOTE-STORAGE-ENDPOINT] [--remote-storage-bucket REMOTE-STORAGE-BUCKET] [--remote-storage-region REMOTE-STORAGE-REGION] [--remote-storage-key REMOTE-STORAGE-KEY] [--remote-storage-secret REMOTE-STORAGE-SECRET] [--remote-storage-path-style REMOTE-STORAGE-PATH-STYLE] [--id_salt ID_SALT] [--checkout-async CHECKOUT-ASYNC] [--amqp-host AMQP-HOST] [--amqp-port AMQP-PORT] [--amqp-user AMQP-USER] [--amqp-password AMQP-PASSWORD] [--amqp-virtualhost AMQP-VIRTUALHOST] [--amqp-ssl AMQP-SSL] [--amqp-ssl-options AMQP-SSL-OPTIONS] [--config-async CONFIG-ASYNC] [--consumers-wait-for-messages CONSUMERS-WAIT-FOR-MESSAGES] [--queue-default-connection QUEUE-DEFAULT-CONNECTION] [--deferred-total-calculating DEFERRED-TOTAL-CALCULATING] [--key KEY] [--db-host DB-HOST] [--db-name DB-NAME] [--db-user DB-USER] [--db-engine DB-ENGINE] [--db-password DB-PASSWORD] [--db-prefix DB-PREFIX] [--db-model DB-MODEL] [--db-init-statements DB-INIT-STATEMENTS] [-s|--skip-db-validation] [--http-cache-hosts HTTP-CACHE-HOSTS] [--db-ssl-key DB-SSL-KEY] [--db-ssl-cert DB-SSL-CERT] [--db-ssl-ca DB-SSL-CA] [--db-ssl-verify] [--session-save SESSION-SAVE] [--session-save-redis-host SESSION-SAVE-REDIS-HOST] [--session-save-redis-port SESSION-SAVE-REDIS-PORT] [--session-save-redis-password SESSION-SAVE-REDIS-PASSWORD] [--session-save-redis-timeout SESSION-SAVE-REDIS-TIMEOUT] [--session-save-redis-persistent-id SESSION-SAVE-REDIS-PERSISTENT-ID] [--session-save-redis-db SESSION-SAVE-REDIS-DB] [--session-save-redis-compression-threshold SESSION-SAVE-REDIS-COMPRESSION-THRESHOLD] [--session-save-redis-compression-lib SESSION-SAVE-REDIS-COMPRESSION-LIB] [--session-save-redis-log-level SESSION-SAVE-REDIS-LOG-LEVEL] [--session-save-redis-max-concurrency SESSION-SAVE-REDIS-MAX-CONCURRENCY] [--session-save-redis-break-after-frontend SESSION-SAVE-REDIS-BREAK-AFTER-FRONTEND] [--session-save-redis-break-after-adminhtml SESSION-SAVE-REDIS-BREAK-AFTER-ADMINHTML] [--session-save-redis-first-lifetime SESSION-SAVE-REDIS-FIRST-LIFETIME] [--session-save-redis-bot-first-lifetime SESSION-SAVE-REDIS-BOT-FIRST-LIFETIME] [--session-save-redis-bot-lifetime SESSION-SAVE-REDIS-BOT-LIFETIME] [--session-save-redis-disable-locking SESSION-SAVE-REDIS-DISABLE-LOCKING] [--session-save-redis-min-lifetime SESSION-SAVE-REDIS-MIN-LIFETIME] [--session-save-redis-max-lifetime SESSION-SAVE-REDIS-MAX-LIFETIME] [--session-save-redis-sentinel-master SESSION-SAVE-REDIS-SENTINEL-MASTER] [--session-save-redis-sentinel-servers SESSION-SAVE-REDIS-SENTINEL-SERVERS] [--session-save-redis-sentinel-verify-master SESSION-SAVE-REDIS-SENTINEL-VERIFY-MASTER] [--session-save-redis-sentinel-connect-retries SESSION-SAVE-REDIS-SENTINEL-CONNECT-RETRIES] [--cache-backend CACHE-BACKEND] [--cache-backend-redis-server CACHE-BACKEND-REDIS-SERVER] [--cache-backend-redis-db CACHE-BACKEND-REDIS-DB] [--cache-backend-redis-port CACHE-BACKEND-REDIS-PORT] [--cache-backend-redis-password CACHE-BACKEND-REDIS-PASSWORD] [--cache-backend-redis-compress-data CACHE-BACKEND-REDIS-COMPRESS-DATA] [--cache-backend-redis-compression-lib CACHE-BACKEND-REDIS-COMPRESSION-LIB] [--cache-id-prefix CACHE-ID-PREFIX] [--allow-parallel-generation] [--page-cache PAGE-CACHE] [--page-cache-redis-server PAGE-CACHE-REDIS-SERVER] [--page-cache-redis-db PAGE-CACHE-REDIS-DB] [--page-cache-redis-port PAGE-CACHE-REDIS-PORT] [--page-cache-redis-password PAGE-CACHE-REDIS-PASSWORD] [--page-cache-redis-compress-data PAGE-CACHE-REDIS-COMPRESS-DATA] [--page-cache-redis-compression-lib PAGE-CACHE-REDIS-COMPRESSION-LIB] [--page-cache-id-prefix PAGE-CACHE-ID-PREFIX] [--lock-provider LOCK-PROVIDER] [--lock-db-prefix LOCK-DB-PREFIX] [--lock-zookeeper-host LOCK-ZOOKEEPER-HOST] [--lock-zookeeper-path LOCK-ZOOKEEPER-PATH] [--lock-file-path LOCK-FILE-PATH] [--document-root-is-pub DOCUMENT-ROOT-IS-PUB] [--backpressure-logger BACKPRESSURE-LOGGER] [--backpressure-logger-redis-server BACKPRESSURE-LOGGER-REDIS-SERVER] [--backpressure-logger-redis-port BACKPRESSURE-LOGGER-REDIS-PORT] [--backpressure-logger-redis-timeout BACKPRESSURE-LOGGER-REDIS-TIMEOUT] [--backpressure-logger-redis-persistent BACKPRESSURE-LOGGER-REDIS-PERSISTENT] [--backpressure-logger-redis-db BACKPRESSURE-LOGGER-REDIS-DB] [--backpressure-logger-redis-password BACKPRESSURE-LOGGER-REDIS-PASSWORD] [--backpressure-logger-redis-user BACKPRESSURE-LOGGER-REDIS-USER] [--backpressure-logger-id-prefix BACKPRESSURE-LOGGER-ID-PREFIX] [--magento-init-params MAGENTO-INIT-PARAMS]
+bin/magento setup:config:set [--enable-debug-logging ENABLE-DEBUG-LOGGING] [--enable-syslog-logging ENABLE-SYSLOG-LOGGING] [--backend-frontname BACKEND-FRONTNAME] [--remote-storage-driver REMOTE-STORAGE-DRIVER] [--remote-storage-prefix REMOTE-STORAGE-PREFIX] [--remote-storage-endpoint REMOTE-STORAGE-ENDPOINT] [--remote-storage-bucket REMOTE-STORAGE-BUCKET] [--remote-storage-region REMOTE-STORAGE-REGION] [--remote-storage-key REMOTE-STORAGE-KEY] [--remote-storage-secret REMOTE-STORAGE-SECRET] [--remote-storage-path-style REMOTE-STORAGE-PATH-STYLE] [--id_salt ID_SALT] [--config-async CONFIG-ASYNC] [--checkout-async CHECKOUT-ASYNC] [--amqp-host AMQP-HOST] [--amqp-port AMQP-PORT] [--amqp-user AMQP-USER] [--amqp-password AMQP-PASSWORD] [--amqp-virtualhost AMQP-VIRTUALHOST] [--amqp-ssl AMQP-SSL] [--amqp-ssl-options AMQP-SSL-OPTIONS] [--consumers-wait-for-messages CONSUMERS-WAIT-FOR-MESSAGES] [--queue-default-connection QUEUE-DEFAULT-CONNECTION] [--deferred-total-calculating DEFERRED-TOTAL-CALCULATING] [--key KEY] [--db-host DB-HOST] [--db-name DB-NAME] [--db-user DB-USER] [--db-engine DB-ENGINE] [--db-password DB-PASSWORD] [--db-prefix DB-PREFIX] [--db-model DB-MODEL] [--db-init-statements DB-INIT-STATEMENTS] [-s|--skip-db-validation] [--http-cache-hosts HTTP-CACHE-HOSTS] [--db-ssl-key DB-SSL-KEY] [--db-ssl-cert DB-SSL-CERT] [--db-ssl-ca DB-SSL-CA] [--db-ssl-verify] [--session-save SESSION-SAVE] [--session-save-redis-host SESSION-SAVE-REDIS-HOST] [--session-save-redis-port SESSION-SAVE-REDIS-PORT] [--session-save-redis-password SESSION-SAVE-REDIS-PASSWORD] [--session-save-redis-timeout SESSION-SAVE-REDIS-TIMEOUT] [--session-save-redis-persistent-id SESSION-SAVE-REDIS-PERSISTENT-ID] [--session-save-redis-db SESSION-SAVE-REDIS-DB] [--session-save-redis-compression-threshold SESSION-SAVE-REDIS-COMPRESSION-THRESHOLD] [--session-save-redis-compression-lib SESSION-SAVE-REDIS-COMPRESSION-LIB] [--session-save-redis-log-level SESSION-SAVE-REDIS-LOG-LEVEL] [--session-save-redis-max-concurrency SESSION-SAVE-REDIS-MAX-CONCURRENCY] [--session-save-redis-break-after-frontend SESSION-SAVE-REDIS-BREAK-AFTER-FRONTEND] [--session-save-redis-break-after-adminhtml SESSION-SAVE-REDIS-BREAK-AFTER-ADMINHTML] [--session-save-redis-first-lifetime SESSION-SAVE-REDIS-FIRST-LIFETIME] [--session-save-redis-bot-first-lifetime SESSION-SAVE-REDIS-BOT-FIRST-LIFETIME] [--session-save-redis-bot-lifetime SESSION-SAVE-REDIS-BOT-LIFETIME] [--session-save-redis-disable-locking SESSION-SAVE-REDIS-DISABLE-LOCKING] [--session-save-redis-min-lifetime SESSION-SAVE-REDIS-MIN-LIFETIME] [--session-save-redis-max-lifetime SESSION-SAVE-REDIS-MAX-LIFETIME] [--session-save-redis-sentinel-master SESSION-SAVE-REDIS-SENTINEL-MASTER] [--session-save-redis-sentinel-servers SESSION-SAVE-REDIS-SENTINEL-SERVERS] [--session-save-redis-sentinel-verify-master SESSION-SAVE-REDIS-SENTINEL-VERIFY-MASTER] [--session-save-redis-sentinel-connect-retries SESSION-SAVE-REDIS-SENTINEL-CONNECT-RETRIES] [--cache-backend CACHE-BACKEND] [--cache-backend-redis-server CACHE-BACKEND-REDIS-SERVER] [--cache-backend-redis-db CACHE-BACKEND-REDIS-DB] [--cache-backend-redis-port CACHE-BACKEND-REDIS-PORT] [--cache-backend-redis-password CACHE-BACKEND-REDIS-PASSWORD] [--cache-backend-redis-compress-data CACHE-BACKEND-REDIS-COMPRESS-DATA] [--cache-backend-redis-compression-lib CACHE-BACKEND-REDIS-COMPRESSION-LIB] [--cache-id-prefix CACHE-ID-PREFIX] [--allow-parallel-generation] [--page-cache PAGE-CACHE] [--page-cache-redis-server PAGE-CACHE-REDIS-SERVER] [--page-cache-redis-db PAGE-CACHE-REDIS-DB] [--page-cache-redis-port PAGE-CACHE-REDIS-PORT] [--page-cache-redis-password PAGE-CACHE-REDIS-PASSWORD] [--page-cache-redis-compress-data PAGE-CACHE-REDIS-COMPRESS-DATA] [--page-cache-redis-compression-lib PAGE-CACHE-REDIS-COMPRESSION-LIB] [--page-cache-id-prefix PAGE-CACHE-ID-PREFIX] [--lock-provider LOCK-PROVIDER] [--lock-db-prefix LOCK-DB-PREFIX] [--lock-zookeeper-host LOCK-ZOOKEEPER-HOST] [--lock-zookeeper-path LOCK-ZOOKEEPER-PATH] [--lock-file-path LOCK-FILE-PATH] [--document-root-is-pub DOCUMENT-ROOT-IS-PUB] [--backpressure-logger BACKPRESSURE-LOGGER] [--backpressure-logger-redis-server BACKPRESSURE-LOGGER-REDIS-SERVER] [--backpressure-logger-redis-port BACKPRESSURE-LOGGER-REDIS-PORT] [--backpressure-logger-redis-timeout BACKPRESSURE-LOGGER-REDIS-TIMEOUT] [--backpressure-logger-redis-persistent BACKPRESSURE-LOGGER-REDIS-PERSISTENT] [--backpressure-logger-redis-db BACKPRESSURE-LOGGER-REDIS-DB] [--backpressure-logger-redis-password BACKPRESSURE-LOGGER-REDIS-PASSWORD] [--backpressure-logger-redis-user BACKPRESSURE-LOGGER-REDIS-USER] [--backpressure-logger-id-prefix BACKPRESSURE-LOGGER-ID-PREFIX] [--magento-init-params MAGENTO-INIT-PARAMS]
 ```
-
-### `--backend-frontname`
-
-Backend frontname (wordt automatisch gegenereerd als deze ontbreekt)
-
-- Vereist een waarde
 
 ### `--enable-debug-logging`
 
@@ -7529,6 +7698,12 @@ Foutopsporingsregistratie inschakelen
 ### `--enable-syslog-logging`
 
 syslog inschakelen
+
+- Vereist een waarde
+
+### `--backend-frontname`
+
+Backend frontname (wordt automatisch gegenereerd als deze ontbreekt)
 
 - Vereist een waarde
 
@@ -7590,6 +7765,12 @@ GraphQl Salt
 
 - Vereist een waarde
 
+### `--config-async`
+
+Opslaan van asynchrone beheerconfiguratie inschakelen? 1 - Ja, 0 - Nee
+
+- Vereist een waarde
+
 ### `--checkout-async`
 
 Afwisselende orderverwerking inschakelen? 1 - Ja, 0 - Nee
@@ -7643,12 +7824,6 @@ Amqp SSL
 Amqp SSL-opties (JSON)
 
 - Standaard: &quot;
-- Vereist een waarde
-
-### `--config-async`
-
-Opslaan van asynchrone beheerconfiguratie inschakelen? 1 - Ja, 0 - Nee
-
 - Vereist een waarde
 
 ### `--consumers-wait-for-messages`
@@ -8868,14 +9043,8 @@ Geen interactieve vraag stellen
 Hiermee wordt de toepassing Magento geïnstalleerd
 
 ```bash
-bin/magento setup:install [--backend-frontname BACKEND-FRONTNAME] [--enable-debug-logging ENABLE-DEBUG-LOGGING] [--enable-syslog-logging ENABLE-SYSLOG-LOGGING] [--remote-storage-driver REMOTE-STORAGE-DRIVER] [--remote-storage-prefix REMOTE-STORAGE-PREFIX] [--remote-storage-endpoint REMOTE-STORAGE-ENDPOINT] [--remote-storage-bucket REMOTE-STORAGE-BUCKET] [--remote-storage-region REMOTE-STORAGE-REGION] [--remote-storage-key REMOTE-STORAGE-KEY] [--remote-storage-secret REMOTE-STORAGE-SECRET] [--remote-storage-path-style REMOTE-STORAGE-PATH-STYLE] [--id_salt ID_SALT] [--checkout-async CHECKOUT-ASYNC] [--amqp-host AMQP-HOST] [--amqp-port AMQP-PORT] [--amqp-user AMQP-USER] [--amqp-password AMQP-PASSWORD] [--amqp-virtualhost AMQP-VIRTUALHOST] [--amqp-ssl AMQP-SSL] [--amqp-ssl-options AMQP-SSL-OPTIONS] [--config-async CONFIG-ASYNC] [--consumers-wait-for-messages CONSUMERS-WAIT-FOR-MESSAGES] [--queue-default-connection QUEUE-DEFAULT-CONNECTION] [--deferred-total-calculating DEFERRED-TOTAL-CALCULATING] [--key KEY] [--db-host DB-HOST] [--db-name DB-NAME] [--db-user DB-USER] [--db-engine DB-ENGINE] [--db-password DB-PASSWORD] [--db-prefix DB-PREFIX] [--db-model DB-MODEL] [--db-init-statements DB-INIT-STATEMENTS] [-s|--skip-db-validation] [--http-cache-hosts HTTP-CACHE-HOSTS] [--db-ssl-key DB-SSL-KEY] [--db-ssl-cert DB-SSL-CERT] [--db-ssl-ca DB-SSL-CA] [--db-ssl-verify] [--session-save SESSION-SAVE] [--session-save-redis-host SESSION-SAVE-REDIS-HOST] [--session-save-redis-port SESSION-SAVE-REDIS-PORT] [--session-save-redis-password SESSION-SAVE-REDIS-PASSWORD] [--session-save-redis-timeout SESSION-SAVE-REDIS-TIMEOUT] [--session-save-redis-persistent-id SESSION-SAVE-REDIS-PERSISTENT-ID] [--session-save-redis-db SESSION-SAVE-REDIS-DB] [--session-save-redis-compression-threshold SESSION-SAVE-REDIS-COMPRESSION-THRESHOLD] [--session-save-redis-compression-lib SESSION-SAVE-REDIS-COMPRESSION-LIB] [--session-save-redis-log-level SESSION-SAVE-REDIS-LOG-LEVEL] [--session-save-redis-max-concurrency SESSION-SAVE-REDIS-MAX-CONCURRENCY] [--session-save-redis-break-after-frontend SESSION-SAVE-REDIS-BREAK-AFTER-FRONTEND] [--session-save-redis-break-after-adminhtml SESSION-SAVE-REDIS-BREAK-AFTER-ADMINHTML] [--session-save-redis-first-lifetime SESSION-SAVE-REDIS-FIRST-LIFETIME] [--session-save-redis-bot-first-lifetime SESSION-SAVE-REDIS-BOT-FIRST-LIFETIME] [--session-save-redis-bot-lifetime SESSION-SAVE-REDIS-BOT-LIFETIME] [--session-save-redis-disable-locking SESSION-SAVE-REDIS-DISABLE-LOCKING] [--session-save-redis-min-lifetime SESSION-SAVE-REDIS-MIN-LIFETIME] [--session-save-redis-max-lifetime SESSION-SAVE-REDIS-MAX-LIFETIME] [--session-save-redis-sentinel-master SESSION-SAVE-REDIS-SENTINEL-MASTER] [--session-save-redis-sentinel-servers SESSION-SAVE-REDIS-SENTINEL-SERVERS] [--session-save-redis-sentinel-verify-master SESSION-SAVE-REDIS-SENTINEL-VERIFY-MASTER] [--session-save-redis-sentinel-connect-retries SESSION-SAVE-REDIS-SENTINEL-CONNECT-RETRIES] [--cache-backend CACHE-BACKEND] [--cache-backend-redis-server CACHE-BACKEND-REDIS-SERVER] [--cache-backend-redis-db CACHE-BACKEND-REDIS-DB] [--cache-backend-redis-port CACHE-BACKEND-REDIS-PORT] [--cache-backend-redis-password CACHE-BACKEND-REDIS-PASSWORD] [--cache-backend-redis-compress-data CACHE-BACKEND-REDIS-COMPRESS-DATA] [--cache-backend-redis-compression-lib CACHE-BACKEND-REDIS-COMPRESSION-LIB] [--cache-id-prefix CACHE-ID-PREFIX] [--allow-parallel-generation] [--page-cache PAGE-CACHE] [--page-cache-redis-server PAGE-CACHE-REDIS-SERVER] [--page-cache-redis-db PAGE-CACHE-REDIS-DB] [--page-cache-redis-port PAGE-CACHE-REDIS-PORT] [--page-cache-redis-password PAGE-CACHE-REDIS-PASSWORD] [--page-cache-redis-compress-data PAGE-CACHE-REDIS-COMPRESS-DATA] [--page-cache-redis-compression-lib PAGE-CACHE-REDIS-COMPRESSION-LIB] [--page-cache-id-prefix PAGE-CACHE-ID-PREFIX] [--lock-provider LOCK-PROVIDER] [--lock-db-prefix LOCK-DB-PREFIX] [--lock-zookeeper-host LOCK-ZOOKEEPER-HOST] [--lock-zookeeper-path LOCK-ZOOKEEPER-PATH] [--lock-file-path LOCK-FILE-PATH] [--document-root-is-pub DOCUMENT-ROOT-IS-PUB] [--backpressure-logger BACKPRESSURE-LOGGER] [--backpressure-logger-redis-server BACKPRESSURE-LOGGER-REDIS-SERVER] [--backpressure-logger-redis-port BACKPRESSURE-LOGGER-REDIS-PORT] [--backpressure-logger-redis-timeout BACKPRESSURE-LOGGER-REDIS-TIMEOUT] [--backpressure-logger-redis-persistent BACKPRESSURE-LOGGER-REDIS-PERSISTENT] [--backpressure-logger-redis-db BACKPRESSURE-LOGGER-REDIS-DB] [--backpressure-logger-redis-password BACKPRESSURE-LOGGER-REDIS-PASSWORD] [--backpressure-logger-redis-user BACKPRESSURE-LOGGER-REDIS-USER] [--backpressure-logger-id-prefix BACKPRESSURE-LOGGER-ID-PREFIX] [--base-url BASE-URL] [--language LANGUAGE] [--timezone TIMEZONE] [--currency CURRENCY] [--use-rewrites USE-REWRITES] [--use-secure USE-SECURE] [--base-url-secure BASE-URL-SECURE] [--use-secure-admin USE-SECURE-ADMIN] [--admin-use-security-key ADMIN-USE-SECURITY-KEY] [--admin-user [ADMIN-USER]] [--admin-password [ADMIN-PASSWORD]] [--admin-email [ADMIN-EMAIL]] [--admin-firstname [ADMIN-FIRSTNAME]] [--admin-lastname [ADMIN-LASTNAME]] [--search-engine SEARCH-ENGINE] [--elasticsearch-host ELASTICSEARCH-HOST] [--elasticsearch-port ELASTICSEARCH-PORT] [--elasticsearch-enable-auth ELASTICSEARCH-ENABLE-AUTH] [--elasticsearch-username ELASTICSEARCH-USERNAME] [--elasticsearch-password ELASTICSEARCH-PASSWORD] [--elasticsearch-index-prefix ELASTICSEARCH-INDEX-PREFIX] [--elasticsearch-timeout ELASTICSEARCH-TIMEOUT] [--opensearch-host OPENSEARCH-HOST] [--opensearch-port OPENSEARCH-PORT] [--opensearch-enable-auth OPENSEARCH-ENABLE-AUTH] [--opensearch-username OPENSEARCH-USERNAME] [--opensearch-password OPENSEARCH-PASSWORD] [--opensearch-index-prefix OPENSEARCH-INDEX-PREFIX] [--opensearch-timeout OPENSEARCH-TIMEOUT] [--cleanup-database] [--sales-order-increment-prefix SALES-ORDER-INCREMENT-PREFIX] [--use-sample-data] [--enable-modules [ENABLE-MODULES]] [--disable-modules [DISABLE-MODULES]] [--convert-old-scripts [CONVERT-OLD-SCRIPTS]] [-i|--interactive] [--safe-mode [SAFE-MODE]] [--data-restore [DATA-RESTORE]] [--dry-run [DRY-RUN]] [--magento-init-params MAGENTO-INIT-PARAMS]
+bin/magento setup:install [--enable-debug-logging ENABLE-DEBUG-LOGGING] [--enable-syslog-logging ENABLE-SYSLOG-LOGGING] [--backend-frontname BACKEND-FRONTNAME] [--remote-storage-driver REMOTE-STORAGE-DRIVER] [--remote-storage-prefix REMOTE-STORAGE-PREFIX] [--remote-storage-endpoint REMOTE-STORAGE-ENDPOINT] [--remote-storage-bucket REMOTE-STORAGE-BUCKET] [--remote-storage-region REMOTE-STORAGE-REGION] [--remote-storage-key REMOTE-STORAGE-KEY] [--remote-storage-secret REMOTE-STORAGE-SECRET] [--remote-storage-path-style REMOTE-STORAGE-PATH-STYLE] [--id_salt ID_SALT] [--config-async CONFIG-ASYNC] [--checkout-async CHECKOUT-ASYNC] [--amqp-host AMQP-HOST] [--amqp-port AMQP-PORT] [--amqp-user AMQP-USER] [--amqp-password AMQP-PASSWORD] [--amqp-virtualhost AMQP-VIRTUALHOST] [--amqp-ssl AMQP-SSL] [--amqp-ssl-options AMQP-SSL-OPTIONS] [--consumers-wait-for-messages CONSUMERS-WAIT-FOR-MESSAGES] [--queue-default-connection QUEUE-DEFAULT-CONNECTION] [--deferred-total-calculating DEFERRED-TOTAL-CALCULATING] [--key KEY] [--db-host DB-HOST] [--db-name DB-NAME] [--db-user DB-USER] [--db-engine DB-ENGINE] [--db-password DB-PASSWORD] [--db-prefix DB-PREFIX] [--db-model DB-MODEL] [--db-init-statements DB-INIT-STATEMENTS] [-s|--skip-db-validation] [--http-cache-hosts HTTP-CACHE-HOSTS] [--db-ssl-key DB-SSL-KEY] [--db-ssl-cert DB-SSL-CERT] [--db-ssl-ca DB-SSL-CA] [--db-ssl-verify] [--session-save SESSION-SAVE] [--session-save-redis-host SESSION-SAVE-REDIS-HOST] [--session-save-redis-port SESSION-SAVE-REDIS-PORT] [--session-save-redis-password SESSION-SAVE-REDIS-PASSWORD] [--session-save-redis-timeout SESSION-SAVE-REDIS-TIMEOUT] [--session-save-redis-persistent-id SESSION-SAVE-REDIS-PERSISTENT-ID] [--session-save-redis-db SESSION-SAVE-REDIS-DB] [--session-save-redis-compression-threshold SESSION-SAVE-REDIS-COMPRESSION-THRESHOLD] [--session-save-redis-compression-lib SESSION-SAVE-REDIS-COMPRESSION-LIB] [--session-save-redis-log-level SESSION-SAVE-REDIS-LOG-LEVEL] [--session-save-redis-max-concurrency SESSION-SAVE-REDIS-MAX-CONCURRENCY] [--session-save-redis-break-after-frontend SESSION-SAVE-REDIS-BREAK-AFTER-FRONTEND] [--session-save-redis-break-after-adminhtml SESSION-SAVE-REDIS-BREAK-AFTER-ADMINHTML] [--session-save-redis-first-lifetime SESSION-SAVE-REDIS-FIRST-LIFETIME] [--session-save-redis-bot-first-lifetime SESSION-SAVE-REDIS-BOT-FIRST-LIFETIME] [--session-save-redis-bot-lifetime SESSION-SAVE-REDIS-BOT-LIFETIME] [--session-save-redis-disable-locking SESSION-SAVE-REDIS-DISABLE-LOCKING] [--session-save-redis-min-lifetime SESSION-SAVE-REDIS-MIN-LIFETIME] [--session-save-redis-max-lifetime SESSION-SAVE-REDIS-MAX-LIFETIME] [--session-save-redis-sentinel-master SESSION-SAVE-REDIS-SENTINEL-MASTER] [--session-save-redis-sentinel-servers SESSION-SAVE-REDIS-SENTINEL-SERVERS] [--session-save-redis-sentinel-verify-master SESSION-SAVE-REDIS-SENTINEL-VERIFY-MASTER] [--session-save-redis-sentinel-connect-retries SESSION-SAVE-REDIS-SENTINEL-CONNECT-RETRIES] [--cache-backend CACHE-BACKEND] [--cache-backend-redis-server CACHE-BACKEND-REDIS-SERVER] [--cache-backend-redis-db CACHE-BACKEND-REDIS-DB] [--cache-backend-redis-port CACHE-BACKEND-REDIS-PORT] [--cache-backend-redis-password CACHE-BACKEND-REDIS-PASSWORD] [--cache-backend-redis-compress-data CACHE-BACKEND-REDIS-COMPRESS-DATA] [--cache-backend-redis-compression-lib CACHE-BACKEND-REDIS-COMPRESSION-LIB] [--cache-id-prefix CACHE-ID-PREFIX] [--allow-parallel-generation] [--page-cache PAGE-CACHE] [--page-cache-redis-server PAGE-CACHE-REDIS-SERVER] [--page-cache-redis-db PAGE-CACHE-REDIS-DB] [--page-cache-redis-port PAGE-CACHE-REDIS-PORT] [--page-cache-redis-password PAGE-CACHE-REDIS-PASSWORD] [--page-cache-redis-compress-data PAGE-CACHE-REDIS-COMPRESS-DATA] [--page-cache-redis-compression-lib PAGE-CACHE-REDIS-COMPRESSION-LIB] [--page-cache-id-prefix PAGE-CACHE-ID-PREFIX] [--lock-provider LOCK-PROVIDER] [--lock-db-prefix LOCK-DB-PREFIX] [--lock-zookeeper-host LOCK-ZOOKEEPER-HOST] [--lock-zookeeper-path LOCK-ZOOKEEPER-PATH] [--lock-file-path LOCK-FILE-PATH] [--document-root-is-pub DOCUMENT-ROOT-IS-PUB] [--backpressure-logger BACKPRESSURE-LOGGER] [--backpressure-logger-redis-server BACKPRESSURE-LOGGER-REDIS-SERVER] [--backpressure-logger-redis-port BACKPRESSURE-LOGGER-REDIS-PORT] [--backpressure-logger-redis-timeout BACKPRESSURE-LOGGER-REDIS-TIMEOUT] [--backpressure-logger-redis-persistent BACKPRESSURE-LOGGER-REDIS-PERSISTENT] [--backpressure-logger-redis-db BACKPRESSURE-LOGGER-REDIS-DB] [--backpressure-logger-redis-password BACKPRESSURE-LOGGER-REDIS-PASSWORD] [--backpressure-logger-redis-user BACKPRESSURE-LOGGER-REDIS-USER] [--backpressure-logger-id-prefix BACKPRESSURE-LOGGER-ID-PREFIX] [--base-url BASE-URL] [--language LANGUAGE] [--timezone TIMEZONE] [--currency CURRENCY] [--use-rewrites USE-REWRITES] [--use-secure USE-SECURE] [--base-url-secure BASE-URL-SECURE] [--use-secure-admin USE-SECURE-ADMIN] [--admin-use-security-key ADMIN-USE-SECURITY-KEY] [--admin-user [ADMIN-USER]] [--admin-password [ADMIN-PASSWORD]] [--admin-email [ADMIN-EMAIL]] [--admin-firstname [ADMIN-FIRSTNAME]] [--admin-lastname [ADMIN-LASTNAME]] [--search-engine SEARCH-ENGINE] [--elasticsearch-host ELASTICSEARCH-HOST] [--elasticsearch-port ELASTICSEARCH-PORT] [--elasticsearch-enable-auth ELASTICSEARCH-ENABLE-AUTH] [--elasticsearch-username ELASTICSEARCH-USERNAME] [--elasticsearch-password ELASTICSEARCH-PASSWORD] [--elasticsearch-index-prefix ELASTICSEARCH-INDEX-PREFIX] [--elasticsearch-timeout ELASTICSEARCH-TIMEOUT] [--opensearch-host OPENSEARCH-HOST] [--opensearch-port OPENSEARCH-PORT] [--opensearch-enable-auth OPENSEARCH-ENABLE-AUTH] [--opensearch-username OPENSEARCH-USERNAME] [--opensearch-password OPENSEARCH-PASSWORD] [--opensearch-index-prefix OPENSEARCH-INDEX-PREFIX] [--opensearch-timeout OPENSEARCH-TIMEOUT] [--cleanup-database] [--sales-order-increment-prefix SALES-ORDER-INCREMENT-PREFIX] [--use-sample-data] [--enable-modules [ENABLE-MODULES]] [--disable-modules [DISABLE-MODULES]] [--convert-old-scripts [CONVERT-OLD-SCRIPTS]] [-i|--interactive] [--safe-mode [SAFE-MODE]] [--data-restore [DATA-RESTORE]] [--dry-run [DRY-RUN]] [--magento-init-params MAGENTO-INIT-PARAMS]
 ```
-
-### `--backend-frontname`
-
-Backend frontname (wordt automatisch gegenereerd als deze ontbreekt)
-
-- Vereist een waarde
 
 ### `--enable-debug-logging`
 
@@ -8886,6 +9055,12 @@ Foutopsporingsregistratie inschakelen
 ### `--enable-syslog-logging`
 
 syslog inschakelen
+
+- Vereist een waarde
+
+### `--backend-frontname`
+
+Backend frontname (wordt automatisch gegenereerd als deze ontbreekt)
 
 - Vereist een waarde
 
@@ -8947,6 +9122,12 @@ GraphQl Salt
 
 - Vereist een waarde
 
+### `--config-async`
+
+Opslaan van asynchrone beheerconfiguratie inschakelen? 1 - Ja, 0 - Nee
+
+- Vereist een waarde
+
 ### `--checkout-async`
 
 Afwisselende orderverwerking inschakelen? 1 - Ja, 0 - Nee
@@ -9000,12 +9181,6 @@ Amqp SSL
 Amqp SSL-opties (JSON)
 
 - Standaard: &quot;
-- Vereist een waarde
-
-### `--config-async`
-
-Opslaan van asynchrone beheerconfiguratie inschakelen? 1 - Ja, 0 - Nee
-
 - Vereist een waarde
 
 ### `--consumers-wait-for-messages`
@@ -10930,6 +11105,332 @@ Respijtperiode in seconden
 Pad naar het bestand om vcl te schrijven
 
 - Vereist een waarde
+
+### `--help`, `-h`
+
+Help weergeven voor de opgegeven opdracht. Wanneer geen opdracht is gegeven, wordt de Help weergegeven voor de \&lt;info>list\&lt;/info> command
+
+- Standaard: `false`
+- Accepteert geen waarde
+
+### `--quiet`, `-q`
+
+Geen bericht uitvoeren
+
+- Standaard: `false`
+- Accepteert geen waarde
+
+### `--verbose`, `-v|-vv|-vvv`
+
+Verhoog de breedheid van berichten: 1 voor normale output, 2 voor meer uitgebreide output en 3 voor zuivert
+
+- Standaard: `false`
+- Accepteert geen waarde
+
+### `--version`, `-V`
+
+Deze toepassingsversie weergeven
+
+- Standaard: `false`
+- Accepteert geen waarde
+
+### `--ansi`
+
+ANSI-uitvoer forceren (of uitschakelen —no-ansi)
+
+- Accepteert geen waarde
+
+### `--no-ansi`
+
+De optie &quot;—ansi&quot; negeren
+
+- Standaard: `false`
+- Accepteert geen waarde
+
+### `--no-interaction`, `-n`
+
+Geen interactieve vraag stellen
+
+- Standaard: `false`
+- Accepteert geen waarde
+
+
+## `webhooks:dev:run`
+
+Voert een geregistreerde webhaak uit voor ontwikkelingsdoeleinden.
+
+```bash
+bin/magento webhooks:dev:run <name> <payload>
+```
+
+
+### `name`
+
+Webhaak-naam
+
+- Vereist
+
+### `payload`
+
+De payload van de webhaak in JSON-indeling
+
+- Vereist
+
+### `--help`, `-h`
+
+Help weergeven voor de opgegeven opdracht. Wanneer geen opdracht is gegeven, wordt de Help weergegeven voor de \&lt;info>list\&lt;/info> command
+
+- Standaard: `false`
+- Accepteert geen waarde
+
+### `--quiet`, `-q`
+
+Geen bericht uitvoeren
+
+- Standaard: `false`
+- Accepteert geen waarde
+
+### `--verbose`, `-v|-vv|-vvv`
+
+Verhoog de breedheid van berichten: 1 voor normale output, 2 voor meer uitgebreide output en 3 voor zuivert
+
+- Standaard: `false`
+- Accepteert geen waarde
+
+### `--version`, `-V`
+
+Deze toepassingsversie weergeven
+
+- Standaard: `false`
+- Accepteert geen waarde
+
+### `--ansi`
+
+ANSI-uitvoer forceren (of uitschakelen —no-ansi)
+
+- Accepteert geen waarde
+
+### `--no-ansi`
+
+De optie &quot;—ansi&quot; negeren
+
+- Standaard: `false`
+- Accepteert geen waarde
+
+### `--no-interaction`, `-n`
+
+Geen interactieve vraag stellen
+
+- Standaard: `false`
+- Accepteert geen waarde
+
+
+## `webhooks:generate:module`
+
+Insteekmodules genereren op basis van webharegistraties
+
+```bash
+bin/magento webhooks:generate:module
+```
+
+### `--help`, `-h`
+
+Help weergeven voor de opgegeven opdracht. Wanneer geen opdracht is gegeven, wordt de Help weergegeven voor de \&lt;info>list\&lt;/info> command
+
+- Standaard: `false`
+- Accepteert geen waarde
+
+### `--quiet`, `-q`
+
+Geen bericht uitvoeren
+
+- Standaard: `false`
+- Accepteert geen waarde
+
+### `--verbose`, `-v|-vv|-vvv`
+
+Verhoog de breedheid van berichten: 1 voor normale output, 2 voor meer uitgebreide output en 3 voor zuivert
+
+- Standaard: `false`
+- Accepteert geen waarde
+
+### `--version`, `-V`
+
+Deze toepassingsversie weergeven
+
+- Standaard: `false`
+- Accepteert geen waarde
+
+### `--ansi`
+
+ANSI-uitvoer forceren (of uitschakelen —no-ansi)
+
+- Accepteert geen waarde
+
+### `--no-ansi`
+
+De optie &quot;—ansi&quot; negeren
+
+- Standaard: `false`
+- Accepteert geen waarde
+
+### `--no-interaction`, `-n`
+
+Geen interactieve vraag stellen
+
+- Standaard: `false`
+- Accepteert geen waarde
+
+
+## `webhooks:info`
+
+Retourneert de lading van de opgegeven webhaak.
+
+```bash
+bin/magento webhooks:info [--depth [DEPTH]] [--] <webhook-name> [<webhook-type>]
+```
+
+
+### `webhook-name`
+
+Naam van de methode WebHaak
+
+- Vereist
+
+### `webhook-type`
+
+Het type Webhaak (voor, na)
+
+- Standaard: `before`
+
+
+### `--depth`
+
+Het aantal niveaus in de WebHaakshlading om terug te keren
+
+- Standaard: `3`
+- Accepteert een waarde
+
+### `--help`, `-h`
+
+Help weergeven voor de opgegeven opdracht. Wanneer geen opdracht is gegeven, wordt de Help weergegeven voor de \&lt;info>list\&lt;/info> command
+
+- Standaard: `false`
+- Accepteert geen waarde
+
+### `--quiet`, `-q`
+
+Geen bericht uitvoeren
+
+- Standaard: `false`
+- Accepteert geen waarde
+
+### `--verbose`, `-v|-vv|-vvv`
+
+Verhoog de breedheid van berichten: 1 voor normale output, 2 voor meer uitgebreide output en 3 voor zuivert
+
+- Standaard: `false`
+- Accepteert geen waarde
+
+### `--version`, `-V`
+
+Deze toepassingsversie weergeven
+
+- Standaard: `false`
+- Accepteert geen waarde
+
+### `--ansi`
+
+ANSI-uitvoer forceren (of uitschakelen —no-ansi)
+
+- Accepteert geen waarde
+
+### `--no-ansi`
+
+De optie &quot;—ansi&quot; negeren
+
+- Standaard: `false`
+- Accepteert geen waarde
+
+### `--no-interaction`, `-n`
+
+Geen interactieve vraag stellen
+
+- Standaard: `false`
+- Accepteert geen waarde
+
+
+## `webhooks:list`
+
+Lijst met geabonneerde websites weergeven
+
+```bash
+bin/magento webhooks:list
+```
+
+### `--help`, `-h`
+
+Help weergeven voor de opgegeven opdracht. Wanneer geen opdracht is gegeven, wordt de Help weergegeven voor de \&lt;info>list\&lt;/info> command
+
+- Standaard: `false`
+- Accepteert geen waarde
+
+### `--quiet`, `-q`
+
+Geen bericht uitvoeren
+
+- Standaard: `false`
+- Accepteert geen waarde
+
+### `--verbose`, `-v|-vv|-vvv`
+
+Verhoog de breedheid van berichten: 1 voor normale output, 2 voor meer uitgebreide output en 3 voor zuivert
+
+- Standaard: `false`
+- Accepteert geen waarde
+
+### `--version`, `-V`
+
+Deze toepassingsversie weergeven
+
+- Standaard: `false`
+- Accepteert geen waarde
+
+### `--ansi`
+
+ANSI-uitvoer forceren (of uitschakelen —no-ansi)
+
+- Accepteert geen waarde
+
+### `--no-ansi`
+
+De optie &quot;—ansi&quot; negeren
+
+- Standaard: `false`
+- Accepteert geen waarde
+
+### `--no-interaction`, `-n`
+
+Geen interactieve vraag stellen
+
+- Standaard: `false`
+- Accepteert geen waarde
+
+
+## `webhooks:list:all`
+
+Hiermee wordt een lijst geretourneerd met ondersteunde webhaakmethodenamen voor de opgegeven module
+
+```bash
+bin/magento webhooks:list:all <module_name>
+```
+
+
+### `module_name`
+
+Modulenaam
+
+- Vereist
 
 ### `--help`, `-h`
 
