@@ -31,7 +31,7 @@ De handel heeft de volgende geheim voorgeheugentypes:
 | Vertalingen | vertalen | Na het samenvoegen van vertalingen van alle modules, zal het fusiecache worden schoongemaakt. |
 | Integratieconfiguratie | config_integration | Gecompileerde integratie. Maak deze cache leeg of maak deze leeg nadat u integraties hebt gewijzigd of toegevoegd. |
 | Integratie API-configuratie | config_integration_api | Gecompileerde integratie APIs configuratie van de Integraties van de Opslag. |
-| Resolver van GraphQL-query [!BADGE 2.4.7-bèta]{type=Informative url=&quot;/help/release/release-notes/commerce/2-4-7.md&quot; tooltip=&quot;Alleen beschikbaar in 2.4.7-bèta&quot;} | graphql_query_resolver_result | Caches the results from GraphQL query resolvers for customer, CMS page, CMS block, and product media gallery entities. Laat deze cache ingeschakeld om de GraphQL-prestaties te verbeteren. |
+| Resolver van GraphQL-query [!BADGE 2.4.7-bèta]{type=Informative url="/help/release/release-notes/commerce/2-4-7.md" tooltip="Alleen beschikbaar in 2.4.7-bèta"} | graphql_query_resolver_result | Caches the results from GraphQL query resolvers for customer, CMS page, CMS block, and product media gallery entities. Laat deze cache ingeschakeld om de GraphQL-prestaties te verbeteren. |
 | Webserviceconfiguratie | config_webservice | Caching the Web API Structure. |
 | Klantenmelding | customer_notification | Tijdelijke meldingen die worden weergegeven in de gebruikersinterface. |
 
