@@ -3,9 +3,9 @@ title: Toepassingsserver voor GraphQL API's
 description: Volg deze instructies voor het inschakelen van de toepassingsserver voor GraphQL API's in uw Adobe Commerce-implementatie.
 badgeCoreBeta: label="2.4.7-bèta" type="informative"
 exl-id: 9b223d92-0040-4196-893b-2cf52245ec33
-source-git-commit: 1fdb29c1a6666aeeef7e546bc7d57a83a40b7542
+source-git-commit: 9d5795400880a65947b1b90c8806b9dcb14aba23
 workflow-type: tm+mt
-source-wordcount: '1844'
+source-wordcount: '1897'
 ht-degree: 0%
 
 ---
@@ -88,7 +88,7 @@ Voltooi de volgende taken voordat u Application Server in Cloud Starter implemen
 1. Zorg ervoor dat al uw aanpassingen en uitbreidingen van de Handel met de Server van de Toepassing compatibel zijn.
 1. Bevestig dat de `CRYPT_KEY` omgevingsvariabele wordt ingesteld voor uw instantie. U kunt de status van deze variabele controleren op het Cloud Project Portal (onboarding UI).
 1. Clone your Commerce Cloud project.
-1. Wijzig de naam &#39;application-server/.magento/.magento.app.yaml.sample&#39; in &#39;application-server/.magento/.magento.app.yaml&#39; en pas indien nodig de instellingen aan in .magento.app.yaml.
+1. Naam wijzigen `application-server/.magento/.magento.app.yaml.sample` tot `application-server/.magento/.magento.app.yaml` en pas indien nodig instellingen aan in .magento.app.yaml.
 1. Uncomment de configuratie van de volgende route in `project_root/.magento/routes.yaml` bestand om te leiden `/graphql` verkeer aan de Server van de Toepassing.
 
    ```yaml
@@ -108,6 +108,11 @@ Voltooi de volgende taken voordat u Application Server in Cloud Starter implemen
    ```bash
    git commit -m "AppServer Enabled"
    ```
+
+>[!NOTE]
+>
+> Zorg ervoor dat alle aangepaste instellingen die u hebt, zich in de hoofdmap bevinden `.magento.app.yaml` bestand wordt naar behoren gemigreerd naar de `application-server/.magento/.magento.app.yaml` bestand. Wanneer de `application-server/.magento/.magento.app.yaml` het dossier wordt toegevoegd aan uw project, zou u het naast de wortel moeten handhaven `.magento.app.yaml` bestand.
+> Als u bijvoorbeeld [rabbitmq configureren](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/configure/service/rabbitmq) of [webeigenschappen beheren](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/configure/app/properties/web-property) u zou de zelfde configuratie aan moeten toevoegen `application-server/.magento/.magento.app.yaml` ook.
 
 ### Toepassingsserver implementeren in de cloud
 
