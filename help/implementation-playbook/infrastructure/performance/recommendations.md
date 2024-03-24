@@ -4,9 +4,9 @@ description: Optimaliseer de prestaties van uw Adobe Commerce-implementatie met 
 exl-id: c5d62e23-be43-4eea-afdb-bb1b156848f9
 feature: Cloud
 topic: Performance
-source-git-commit: 31c71af854a59381c7793f26ed9b121cd9bcac83
+source-git-commit: 8b09d734d8ac4490cd88af5673acd0a41b6cdf66
 workflow-type: tm+mt
-source-wordcount: '1279'
+source-wordcount: '1282'
 ht-degree: 0%
 
 ---
@@ -122,7 +122,7 @@ Naast de eerder genoemde gemeenschappelijke aanbevelingen voor optimalisatie van
 
 ### Hoofdloze architectuur
 
-Er is een aparte sectie gewijd aan [krankzinnig](../../architecture/headless/adobe-commerce.md). Samengevat wordt de storefront-laag gescheiden van het platform zelf. Het is nog steeds dezelfde achtergrond, maar Adobe Commerce verwerkt aanvragen niet meer rechtstreeks en ondersteunt in plaats daarvan alleen aangepaste winkels via de GraphQL API.
+Er is een aparte sectie gewijd aan [krankzinnig](../../architecture/enterprise-blueprint.md#headless-storefront). Samengevat wordt de storefront-laag gescheiden van het platform zelf. Het is nog steeds dezelfde achtergrond, maar Adobe Commerce verwerkt aanvragen niet meer rechtstreeks en ondersteunt in plaats daarvan alleen aangepaste winkels via de GraphQL API.
 
 ### Adobe Commerce bijwerken
 

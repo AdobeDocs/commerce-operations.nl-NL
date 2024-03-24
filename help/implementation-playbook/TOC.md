@@ -2,9 +2,9 @@
 user-guide-title: Afspeelmap voor implementatie
 user-guide-description: Leer meer over strategieën voor het plannen en implementeren van een geslaagde Adobe Commerce-site.
 mini-toc-levels: 3
-source-git-commit: fb449f0ee7d503d0c7ba60bf6bfbe3f528060606
+source-git-commit: 36a2a86cbafab1e4913573b1c8431524ba43dc6a
 workflow-type: tm+mt
-source-wordcount: '277'
+source-wordcount: '257'
 ht-degree: 0%
 
 ---
@@ -32,10 +32,7 @@ ht-degree: 0%
    - [Verantwoordelijkheid en verantwoordelijkheid](planning/ownership.md)
    - [Projectbeheer](planning/governance.md)
 - Architectuur en integratie {#architecture}
-   - [Mogelijkheden](architecture/capabilities.md)
-   - [Integratiestrategie](architecture/integration-strategy.md)
-   - [Uitbreidingsstrategie](architecture/extensibility-strategy.md)
-   - [Integratieopties](architecture/integration-options.md)
+   - [Enterprise-referentie](architecture/enterprise-blueprint.md)
    - Algemene referentiearchitectuur {#global-reference-architecture}
       - [Overzicht](architecture/global-reference/overview.md)
       - [Voorbeelden](architecture/global-reference/examples.md)
@@ -43,13 +40,6 @@ ht-degree: 0%
          - [Overzicht](architecture/global-reference/composer/overview.md)
          - [Projectstructuur](architecture/global-reference/composer/project-structure.md)
          - [Tips en trucs](architecture/global-reference/composer/tips-and-tricks.md)
-   - Hoofdhandel {#headless}
-      - [Voordelen](architecture/headless/benefits.md)
-      - [Reizen zonder kop](architecture/headless/journey-to-headless.md)
-      - [Microservices](architecture/headless/microservices.md)
-      - [Evolutie zonder kop](architecture/headless/evolution.md)
-      - [Gekoppelde opslagarchitectuur](architecture/headless/legacy-storefront.md)
-      - [Hoofdloze architectuur](architecture/headless/adobe-commerce.md)
 - Infrastructuur en implementatie {#infrastructure}
    - [Overzicht](infrastructure/overview.md)
    - Zelf hosten {#self-hosting}
