@@ -2,13 +2,13 @@
 title: Enterprise-verwijzingsarchitectuur
 description: Leer hoe u Adobe Commerce implementeert met behulp van de nieuwste composable commerce technologie van de Adobe.
 feature: App Builder, Cloud, GraphQL, Integration, Paas, Saas
-source-git-commit: 96afb0ccf5ea872cb42320babfd04ba51fa7dbf6
+exl-id: d066ab43-20e2-4e0b-8348-0c52d6a7ac8a
+source-git-commit: 8eab688ed98eb1b9fcf4fc25f90fe2bbf99c02d6
 workflow-type: tm+mt
 source-wordcount: '799'
 ht-degree: 0%
 
 ---
-
 
 # Adobe Commerce Enterprise Reference Architectuur
 
@@ -78,3 +78,4 @@ De Adobe verstrekt een rijke reeks intelligente, composable merchandizing dienst
 Hoofdloze handel is API-eerste handel. Adobe Commerce heeft een volledig ontkoppelde architectuur die alle handelsdiensten en gegevens via een GraphQL API-laag biedt. Deze architectuur staat teams toe om hun frontends onafhankelijk van de kerntoepassing te ontwikkelen, die de behendigheid verstrekt om nieuwe aanraakpunten met nieuwe technologieën snel te bouwen en te testen.
 
 Adobe biedt een moderne, toonloze, toonaangevende technologie die dezelfde voordelen en mogelijkheden biedt als [Edge Delivery Services](https://www.aem.live/home) met documentgebaseerde ontwerpfuncties, een prestatiegerelateerde architectuur en native experimenteren buiten de box. Het gebruikt de schaal en de prestaties van Adobe Commerce [winkeldiensten](#storefront-services) en flexibiliteit en gemak [drop-in componenten](https://experienceleague.adobe.com/developer/commerce/storefront/) om commerciële mogelijkheden te leveren.
+
