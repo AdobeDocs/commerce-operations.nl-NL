@@ -3,14 +3,18 @@ title: Hulplijn installeren
 description: Deze handleiding gebruiken om te installeren [!DNL Site-Wide Analysis Tool] voor uw website
 exl-id: ba36dc74-806d-49c5-b4d1-ba53ed4076fb
 feature: Configuration, Install
-source-git-commit: 163d12b1f30a3098932c62e11f24784422002c67
+source-git-commit: 2501630bdbeb9a80c247fd39dcbe57c327b3244d
 workflow-type: tm+mt
-source-wordcount: '1176'
+source-wordcount: '1136'
 ht-degree: 0%
 
 ---
 
 # Hulplijn installeren
+
+>[!IMPORTANT]
+>
+>Met ingang van 23 april 2024 [!DNL Site-Wide Analysis Tool] worden buiten bedrijf gesteld voor alle Adobe Commerce On-Premise klanten.
 
 De [!DNL Site-Wide Analysis Tool] biedt 24x7 realtime prestatiebewaking, rapporten en aanbevelingen om de beveiliging en operabiliteit van Adobe Commerce op installaties van cloudinfrastructuur te garanderen. Het biedt ook gedetailleerde informatie over beschikbare en geïnstalleerde patches, extensies van derden en uw Adobe Commerce-installatie.
 
