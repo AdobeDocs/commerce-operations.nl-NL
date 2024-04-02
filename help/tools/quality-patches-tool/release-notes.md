@@ -2,9 +2,9 @@
 title: Opmerkingen bij de release
 description: Meer informatie over de patches die beschikbaar zijn voor Adobe Commerce en de problemen die ze oplossen.
 exl-id: 22262555-f5ea-49ad-98ad-ea8428ef66d5
-source-git-commit: c39eb5c9328657083aea07a385531e7ad0df6e14
+source-git-commit: f21891b1be51896efba83d36048c20119ea1edbf
 workflow-type: tm+mt
-source-wordcount: '20136'
+source-wordcount: '20493'
 ht-degree: 0%
 
 ---
@@ -20,6 +20,20 @@ De [[!DNL Quality Patches Tool]](https://github.com/magento/quality-patches) lev
 >[!INFO]
 >
 >Voor informatie over [!DNL quality patches] die door de Gemeenschap voor Magento Open Source zijn opgericht, [releaseopmerkingen](https://github.com/magento/quality-patches/blob/master/community-release-notes.md).
+
+## v1.1.48 {#v1-1-48}
+
+* **ACSD-55566** (voor Adobe Commerce en Magento Open Source >=2.4.3 &lt;2.4.7) - Hiermee wordt het probleem opgelost waarbij de `mergeCart` mutatie mislukt met een &quot;*Interne serverfout*&quot; in de [!DNL GraphQL] reactie bij het samenvoegen van bron- en doelwinkelwagentjes die dezelfde bundelitems hebben.
+* **ACSD-56546** (voor Adobe Commerce en Magento Open Source >=2.4.4 &lt;2.4.7) - Hiermee wordt het probleem opgelost waarbij configureerbare en bundelproducten worden weergegeven als **Uit voorraad** in de winkel **weergave buiten productconfiguratie** is *Uitgeschakeld*.
+* **ACSD-56635** (voor Adobe Commerce >=2.4.6 &lt;2.4.7) - Hiermee wordt het probleem opgelost waarbij de geïmporteerde klant met hetzelfde e-mailadres wordt gedupliceerd wanneer een importbewerking wordt gebruikt met **account delen** instellen op *Algemeen*.
+* **ACSD-56741** (voor Adobe Commerce en Magento Open Source >=2.4.6 &lt;2.4.7) - Hiermee wordt het foutbericht &quot;*Arrayverschuiving benaderen bij waarde van type null*&quot; die wordt weergegeven tijdens `setup:upgrade` wanneer de database een aangepaste [!DNL MySQL] trigger die geen verband houdt met het indexeringsmechanisme en [!DNL MView].
+* **ACSD-57315** (voor Adobe Commerce en Magento Open Source >=2.4.2 &lt;2.4.7) - Hiermee wordt de kwestie opgelost wanneer een nieuwe transactie wordt aangemaakt in [!DNL PayPal Payflow Pro] telkens als [!UICONTROL Fetch] op de knop wordt geklikt op de knop **[!UICONTROL View transaction]** in het beheerprogramma.
+* **ACSD-57337** (voor Adobe Commerce >=2.4.4 &lt;2.4.6) - Hiermee wordt het probleem verholpen waarbij een beheerder met toegangsbeperkingen voor specifieke websites bedrijven kan zien van alle websites in de **[!UICONTROL Companies]** raster.
+* **ACSD-57394** (voor Adobe Commerce en Magento Open Source >=2.4.4 &lt;2.4.7) - Hiermee wordt het probleem van onjuiste productsortering door meerdere sorteervelden opgelost in [!DNL GraphQL].
+* **ACSD-57565** (voor Adobe Commerce en Magento Open Source >=2.4.6 &lt;2.4.7) - Hiermee wordt het probleem opgelost waarbij de **[!UICONTROL Order]** op het dashboard worden onjuiste volgordegegevens weergegeven totdat de tijdsperiode is bijgewerkt. Op het dashboard worden nu de juiste volgordestatistieken weergegeven bij de eerste keer laden.
+* **ACSD-57854** (voor Adobe Commerce en Magento Open Source >=2.4.5 &lt;2.4.7) - Hiermee wordt het probleem verholpen wanneer het product [!DNL GraphQL] aanvragen hebben uitgeschakelde categorieën in de categorieconcentraties geretourneerd.
+* **ACSD-58008** (voor Adobe Commerce >=2.4.5 &lt;2.4.7) - Hiermee wordt het probleem opgelost waarbij bij het bijwerken van een geplande update de vorige versie van een gefaseerd item werd verwijderd als er geen einddatum was opgegeven.
+* Bijgewerkte patches: MDVA-39305-V2, ACSD-48627, ACSD-54965
 
 ## v1.1.47 {#v1-1-47}
 
