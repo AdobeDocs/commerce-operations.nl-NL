@@ -1,7 +1,7 @@
 ---
-source-git-commit: febd2aa57434ec9b959a4aff6179ae00fe0ccba8
+source-git-commit: 018c61a4ea921b4a69cc854fde355606defe1215
 workflow-type: tm+mt
-source-wordcount: '181'
+source-wordcount: '307'
 ht-degree: 0%
 
 ---
@@ -10,6 +10,78 @@ ht-degree: 0%
 ## Nieuwe functies
 
 Meer informatie over nieuwe documentatie en belangrijke updates voor bestaande documentatie.
+
+### 9 april 2024
+
+<table style="table-layout:auto;">
+  <thead>
+    <tr>
+      <th>Beschrijving</th>
+      <th>Type</th>
+      <th>Bron</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><p>Bijgewerkt <a href="https://experienceleague.adobe.com/docs/commerce-operations/release/versions.html">Uitgebrachte versies</a>.</p>
+</td>
+      <td>technisch</td>
+      <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/efd2fc4285a5cdc7ee20ead299ee16e54f9bcb83">evt2fc</a> (toewijzen)</td>
+    </tr>
+    <tr>
+      <td><ul>
+  <li>Werk de releasepakketonderwerpen bij voor <a href="https://experienceleague.adobe.com/en/docs/commerce-operations/release/packages/adobe-commerce">Adobe Commerce</a> en <a href="https://experienceleague.adobe.com/en/docs/commerce-operations/release/packages/magento-open-source">Magento OpenSource</a>.<br />- Voeg een releasepakketonderwerp toe voor <a href="https://experienceleague.adobe.com/en/docs/commerce-operations/release/packages/adobe-commerce-b2b">B2B voor handel</a>.</li>
+</ul>
+</td>
+      <td>belangrijke update</td>
+      <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/aad4b904ba95142d1d848f934c9d3702cc37ec16">aad4b9</a> (toewijzen)</td>
+    </tr>
+    <tr>
+      <td><p>De <em>bin/magento</em> CLI verwijzingsdocumentatie voor <a href="https://experienceleague.adobe.com/en/docs/commerce-operations/reference/commerce-on-premises">Adobe Commerce</a> en <a href="https://experienceleague.adobe.com/en/docs/commerce-operations/reference/magento-open-source">Magento OpenSource</a>.</p>
+</td>
+      <td>belangrijke update</td>
+      <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/b81dc87a261f128cdb572a30ff5538dae2087c49">b81dc8</a> (toewijzen)</td>
+    </tr>
+    <tr>
+      <td><p>Gepubliceerd 2.4.7 GA <a href="https://experienceleague.adobe.com/en/docs/commerce-operations/release/notes/adobe-commerce/2-4-7">releaseopmerkingen</a>.</p>
+</td>
+      <td>belangrijke update</td>
+      <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/35b7caafbef5ced52ef6e4907e0634dfb2a61e4f">35b7ca</a> (toewijzen)</td>
+    </tr>
+    <tr>
+      <td><p>Voegt releaseopmerkingen toe voor de Adobe Commerce-beveiligingsreleases van april 2024 (2.4.6-p5, 2.4.5-p7, 2.4.4-p8). Zie <a href="https://experienceleague.adobe.com/docs/commerce-operations/release/notes/overview.html">Opmerkingen bij de release voor Adobe Commerce en Magento Open Source</a></p>
+</td>
+      <td>belangrijke update</td>
+      <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/7acab1d8d3f7b11cc1387b5558521f282ba0873f">7acab1</a> (toewijzen)</td>
+    </tr>
+    <tr>
+      <td><ul>
+  <li>Werk de releasepakketonderwerpen bij voor <a href="https://experienceleague.adobe.com/en/docs/commerce-operations/release/packages/adobe-commerce">Adobe Commerce</a> en <a href="https://experienceleague.adobe.com/en/docs/commerce-operations/release/packages/magento-open-source">Magento OpenSource</a>.<br />- Voeg een releasepakketonderwerp toe voor <a href="https://experienceleague.adobe.com/en/docs/commerce-operations/release/packages/adobe-commerce-b2b">B2B voor handel</a>.</li>
+</ul>
+</td>
+      <td>belangrijke update</td>
+      <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/aad4b904ba95142d1d848f934c9d3702cc37ec16">aad4b9</a> (toewijzen)</td>
+    </tr>
+    <tr>
+      <td><p>De <em>bin/magento</em> CLI verwijzingsdocumentatie voor <a href="https://experienceleague.adobe.com/en/docs/commerce-operations/reference/commerce-on-premises">Adobe Commerce</a> en <a href="https://experienceleague.adobe.com/en/docs/commerce-operations/reference/magento-open-source">Magento OpenSource</a>.</p>
+</td>
+      <td>belangrijke update</td>
+      <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/b81dc87a261f128cdb572a30ff5538dae2087c49">b81dc8</a> (toewijzen)</td>
+    </tr>
+    <tr>
+      <td><p>Gepubliceerd 2.4.7 GA <a href="https://experienceleague.adobe.com/en/docs/commerce-operations/release/notes/adobe-commerce/2-4-7">releaseopmerkingen</a>.</p>
+</td>
+      <td>belangrijke update</td>
+      <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/35b7caafbef5ced52ef6e4907e0634dfb2a61e4f">35b7ca</a> (toewijzen)</td>
+    </tr>
+    <tr>
+      <td><p>Voegt releaseopmerkingen toe voor de Adobe Commerce-beveiligingsreleases van april 2024 (2.4.6-p5, 2.4.5-p7, 2.4.4-p8). Zie <a href="https://experienceleague.adobe.com/docs/commerce-operations/release/notes/overview.html">Opmerkingen bij de release voor Adobe Commerce en Magento Open Source</a></p>
+</td>
+      <td>belangrijke update</td>
+      <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/7acab1d8d3f7b11cc1387b5558521f282ba0873f">7acab1</a> (toewijzen)</td>
+    </tr>
+  </tbody>
+</table><!-- date_group -->
 
 ### 24 maart 2024
 
@@ -71,52 +143,6 @@ Meer informatie over nieuwe documentatie en belangrijke updates voor bestaande d
 </td>
       <td>belangrijke update</td>
       <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/acacc285f8b977b33bb27af76c971bc4015a2b45">acacc2</a> (toewijzen)</td>
-    </tr>
-  </tbody>
-</table><!-- date_group -->
-
-### 14 februari 2024
-
-<table style="table-layout:auto;">
-  <thead>
-    <tr>
-      <th>Beschrijving</th>
-      <th>Type</th>
-      <th>Bron</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td><p>Toegevoegde beste praktijken voor <a href="https://experienceleague.adobe.com/docs/commerce-operations/implementation-playbook/best-practices/maintenance/mariadb-upgrade.html">MariaDB upgraden</a> tot en met 10.5.1 en hoger.</p>
-</td>
-      <td>belangrijke update</td>
-      <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/7199e74f82cef6dd682f5e240ee2b6fc56da18c8">7199e7</a> (toewijzen)</td>
-    </tr>
-  </tbody>
-</table>
-
-### 13 februari 2024
-
-<table style="table-layout:auto;">
-  <thead>
-    <tr>
-      <th>Beschrijving</th>
-      <th>Type</th>
-      <th>Bron</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td><p>Toegevoegde beveiligingspatches van februari 2024 aan de <a href="https://experienceleague.adobe.com/docs/commerce-operations/installation-guide/system-requirements.html">systeemvereisten</a>.</p>
-</td>
-      <td>belangrijke update</td>
-      <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/068eed591b461ba6c91b0e3d517dc712215c6b33">068eed</a> (toewijzen)</td>
-    </tr>
-    <tr>
-      <td><p>Toegevoegd <a href="https://experienceleague.adobe.com/docs/commerce-operations/release/notes/overview.html">releaseopmerkingen</a> voor de beveiligingspatches van februari 2024 (2.4.4-p7, 2.4.5-p6 en 2.4.6-p4).</p>
-</td>
-      <td>belangrijke update</td>
-      <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/8e5644951114daa5d0841b7fdd32ce37b9803118">8e5644</a> (toewijzen)</td>
     </tr>
   </tbody>
 </table><!-- date_group --><!-- month_group --><!-- year_group -->
