@@ -1,7 +1,7 @@
 ---
-source-git-commit: c21077f9491d5d82f0673c5c20bec166ce843eaf
+source-git-commit: 551e3043f3f998f75c42a42f72d3e0fc6fdef149
 workflow-type: tm+mt
-source-wordcount: '93'
+source-wordcount: '96'
 ht-degree: 0%
 
 ---
@@ -31,21 +31,28 @@ ht-degree: 0%
                 gd<br>
                 gettext<br>
                 intl<br>
+                libxml<br>
                 mysqli<br>
+                opcache<br>
+                openswoofer<br>
                 pcntl<br>
                 pdo_mysql<br>
+                Reflectie<br>
                 zeep<br>
                 sockets<br>
+                SPL<br>
+                standaard<br>
                 sysvmsg<br>
                 sysvsem<br>
                 sysvshm<br>
-                opcache<br>
                 zip<br>
+                zlib<br>
             </td>
             <td>
                 ctype<br>
                 krullen<br>
                 date<br>
+                dba<br>
                 dom<br>
                 fileinfo<br>
                 filter<br>
@@ -75,7 +82,6 @@ ht-degree: 0%
                 igbinary<br>
                 verbeeldend<br>
                 imap<br>
-                ioncube<br>
                 ldap<br>
                 postpars<br>
                 mcrypt<br>

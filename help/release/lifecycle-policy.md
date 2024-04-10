@@ -2,10 +2,10 @@
 title: Levenscyclusbeleid voor software
 description: In deze video ziet u de belangrijkste datums voor het einde van de softwareondersteuning voor Adobe Commerce-releases.
 exl-id: 9ee4ecc8-d893-412a-a605-5a8606a1b9a9
-source-git-commit: bb90d7903eafe01b42d8c056db771769f9e4e752
+source-git-commit: 01e926e3cf36f27f5292a0b9ce7a6209d4960cc2
 workflow-type: tm+mt
-source-wordcount: '383'
-ht-degree: 12%
+source-wordcount: '363'
+ht-degree: 5%
 
 ---
 
@@ -20,7 +20,7 @@ Voor Adobe Commerce 2.4.4 en latere versies:
 
 - Voor belangrijke beveiligingsproblemen, zoals &#39;zero-day&#39;-kwetsbaarheden, biedt Adobe [hotfixes](https://support.magento.com/hc/en-us/sections/360003869892-Known-issues-patches-attached-) voor alle klanten op een ondersteunde versie, zelfs als ze niet op de nieuwste patch of beveiligingspatchrelease staan. Het is belangrijk om op te merken dat een hotfix geen vangst-allen is en niet alle veiligheidskwesties behandelt die door verbetering aan de recentste versie zouden worden opgelost.
 
-- Adobe biedt geen beveiligings- en kwaliteitsoplossingen voor services en softwareafhankelijkheden van derden, zoals PHP. Het is uw verantwoordelijkheid om de veiligheid en naleving (bijvoorbeeld, PCI, ISO, SOC) van derdesoftwaregebiedsdelen te handhaven. Adobe raadt aan om uw omgevingen zo snel mogelijk bij te werken met de nieuwste versie van PHP die door Adobe Commerce wordt ondersteund. Gebruik geen versie van PHP die het einde van de ondersteuning heeft bereikt.
+- Adobe biedt geen beveiligings- en kwaliteitsoplossingen voor services en softwareafhankelijkheden van derden (zoals PHP en MySQL) die het einde van de levensduur kunnen bereiken terwijl klanten de ondersteuningsperiode van drie jaar voor Adobe Commerce hebben. Zie de [systeemvereisten](../installation/system-requirements.md) voor een volledige lijst van geteste en ondersteunde technologieën van derden.
 
 ## Einde van softwareondersteuning
 
@@ -28,8 +28,8 @@ Voor Adobe Commerce 2.4.4 en latere versies:
 |----------------------|----------------------|-------------------------------------|-----------------------|
 | Adobe Commerce 2.4.7 | 9 april 2024 | 9 april 2027 | 8.2 en 8.3 |
 | Adobe Commerce 2.4.6 | 14 maart 2023 | 14 maart 2026 | 8.1 en 8.2 |
-| Adobe Commerce 2.4.5 | 9 augustus 2022 | 9 augustus 2025 | 8.1 |
-| Adobe Commerce 2.4.4 | 12 april 2022 | 24 april 2025 | 8.1 |
+| Adobe Commerce 2.4.5 | 9 augustus 2022 | 9 augustus 2025 | 8,1 |
+| Adobe Commerce 2.4.4 | 12 april 2022 | 24 april 2025 | 8,1 |
 
 {style="table-layout:auto"}
 
@@ -54,51 +54,51 @@ Voor Adobe Commerce 2.4.4 en latere versies:
 <tbody>
   <tr>
     <td>Handel</td>
-    <td>Q1</td>
-    <td>Q2</td>
-    <td>Q3</td>
-    <td>Q4</td>
-    <td>Q1</td>
-    <td>Q2</td>
-    <td>Q3</td>
-    <td>Q4</td>
-    <td>Q1</td>
-    <td>Q2</td>
-    <td>Q3</td>
-    <td>Q4</td>
-    <td>Q1</td>
-    <td>Q2</td>
-    <td>Q3</td>
-    <td>Q4</td>
-    <td>Q1</td>
-    <td>Q2</td>
-    <td>Q3</td>
-    <td>Q4</td>
-    <td>Q1</td>
-    <td>Q2</td>
-    <td>Q3</td>
-    <td>Q4</td>
+    <td>V1</td>
+    <td>V2</td>
+    <td>V3</td>
+    <td>V4</td>
+    <td>V1</td>
+    <td>V2</td>
+    <td>V3</td>
+    <td>V4</td>
+    <td>V1</td>
+    <td>V2</td>
+    <td>V3</td>
+    <td>V4</td>
+    <td>V1</td>
+    <td>V2</td>
+    <td>V3</td>
+    <td>V4</td>
+    <td>V1</td>
+    <td>V2</td>
+    <td>V3</td>
+    <td>V4</td>
+    <td>V1</td>
+    <td>V2</td>
+    <td>V3</td>
+    <td>V4</td>
   </tr>
   <tr>
-    <td>2.4.4</td>
+    <td>2.4.4.</td>
     <td></td>
     <td colspan="13" style="background-color:#67ac68;"></td>
     <td colspan="10"></td>
   </tr>
   <tr>
-    <td>2.4.5</td>
+    <td>2.4.5.</td>
     <td colspan="2"></td>
     <td colspan="13" style="background-color:#67ac68;"></td>
     <td colspan="9"></td>
   </tr>
   <tr>
-    <td>2.4.6</td>
+    <td>2.4.6.</td>
     <td colspan="4"></td>
     <td colspan="13" style="background-color:#67ac68;"></td>
     <td colspan="8"></td>
   </tr>
   <tr>
-    <td>2.4.7</td>
+    <td>2.4.7.</td>
     <td colspan="9"></td>
     <td colspan="13" style="background-color:#67ac68;"></td>
     <td colspan="2"></td>

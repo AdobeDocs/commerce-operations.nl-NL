@@ -3,9 +3,9 @@ title: Varnish configureren voor handel
 description: Leer om uw Varnish configuratiedossier voor de toepassing van de Handel bij te werken en te beheren.
 feature: Configuration, Cache, SCD
 exl-id: 6c007ff9-493f-4df2-b7b4-438b41fd7e37
-source-git-commit: 11ccc59230a7a0d1768c043c39df43c7df031efd
+source-git-commit: 602a1ef82fcb8d30ff027db0fe0aacb981c7e08e
 workflow-type: tm+mt
-source-wordcount: '421'
+source-wordcount: '396'
 ht-degree: 0%
 
 ---
@@ -26,7 +26,7 @@ Om Handel te vormen om Varnish te gebruiken:
    | Backend-host | Ga volledig in - gekwalificeerde hostname of IP adres en luister haven van Varnish _achterste_ of _oorspronkelijke server_ De server die de inhoud levert, Varnish versnelt. Dit is doorgaans uw webserver. Zie [Varnish cache Backend-servers](https://www.varnish-cache.org/docs/trunk/users-guide/vcl-backends.html). |
    | Backend-poort | De luisterpoort van de oorspronkelijke server. |
    | Respijtperiode | Hiermee bepaalt u hoe lang Varnish schaalinhoud dient als de backend niet reageert. De standaardwaarde is 300 seconden. |
-   | Hiermee wordt de grootte van params afgehandeld  [!BADGE 2.4.7-bèta]{type=Informative url="/help/release/release-notes/commerce/2-4-7.md" tooltip="Alleen beschikbaar in 2.4.7 bèta"} | Hiermee wordt het maximale aantal [layouthandgrepen](https://developer.adobe.com/commerce/frontend-core/guide/layouts/#layout-handles) om op de [`{BASE-URL}/page_cache/block/esi`](use-varnish-esi.md) HTTP-eindpunt voor het in cache plaatsen van volledige pagina. Het beperken van de grootte kan de veiligheid en de prestaties verbeteren. De standaardwaarde is 100. |
+   | Hiermee wordt de grootte van params afgehandeld | Hiermee wordt het maximale aantal [layouthandgrepen](https://developer.adobe.com/commerce/frontend-core/guide/layouts/#layout-handles) om op de [`{BASE-URL}/page_cache/block/esi`](use-varnish-esi.md) HTTP-eindpunt voor het in cache plaatsen van volledige pagina. Het beperken van de grootte kan de veiligheid en de prestaties verbeteren. De standaardwaarde is 100. |
 
 1. Klikken **Config opslaan**.
 

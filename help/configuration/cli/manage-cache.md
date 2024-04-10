@@ -1,10 +1,10 @@
 ---
 title: De cache beheren
-description: Cachetypen beheren en de status van het meningsgeheime voorgeheugen bekijken.
+description: Beheer geheim voorgeheugentypes en bekijk geheim voorgeheugenstatus van de bevellijn gebruikend Commerce CLI
 exl-id: bbd76c00-727b-412e-a8e5-1e013a83a29a
-source-git-commit: 6e0e7f209b265e5b924e0092fec020e0cefc165d
+source-git-commit: 1070291396144f866cadd5e42ebca3e77a484a9b
 workflow-type: tm+mt
-source-wordcount: '941'
+source-wordcount: '616'
 ht-degree: 0%
 
 ---
@@ -15,29 +15,17 @@ ht-degree: 0%
 
 ## Cachetypen
 
-De handel heeft de volgende geheim voorgeheugentypes:
+U kunt het Adobe Commerce-cachebeheersysteem gebruiken om de prestaties van uw site te verbeteren. Dit onderwerp verklaart hoe de beheerders of de ontwikkelaars van het Systeem met toegang tot de de toepassingsserver van de Handel geheime voorgeheugens van de bevellijn kunnen beheren.
 
-| Naam van type &#39;vriendelijk&#39; cache | Codenaam van type Cache | Beschrijving |
-|-----------------------------------------------------------------------------------------------------------------------------------------------------------------|-------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Configuratie | config | De handel verzamelt configuratie van alle modules, voegt het samen, en bewaart het samengevoegde resultaat aan het geheime voorgeheugen. Deze cache bevat ook opslagspecifieke instellingen die zijn opgeslagen in het bestandssysteem en de database. Reinig of verwijder dit cachetype na het wijzigen van configuratiedossiers. |
-| Layout | layout | Gecompileerde paginalay-outs (dat wil zeggen de lay-outcomponenten van alle componenten). Reinig of verwijder dit cachetype na het wijzigen van lay-outbestanden. |
-| HTML-uitvoer blokkeren | block_html | HTML-paginafragmenten per blok. Reinig of verwijder dit cachetype na het wijzigen van de meningslaag. |
-| Gegevens van verzamelingen | verzamelingen | Resultaten van databasequery&#39;s. Indien nodig, ontruimt de Handel automatisch dit geheime voorgeheugen, maar de derdeontwikkelaars kunnen om het even welke gegevens in om het even welk segment van het geheime voorgeheugen zetten. Reinig of verwijder dit cachetype als uw douanemodule logica gebruikt die in geheim voorgeheugeningangen resulteert die de Handel niet kan schoonmaken. |
-| DDL | db_ddl | Databaseschema Indien nodig, ontruimt de Handel automatisch dit geheime voorgeheugen, maar de derdeontwikkelaars kunnen om het even welke gegevens in om het even welk segment van het geheime voorgeheugen zetten. Reinig of verwijder dit cachetype nadat u douaneveranderingen in het gegevensbestandschema aanbrengt. (Met andere woorden, updates die de Handel niet zelf maakt.) Een manier om het databaseschema automatisch bij te werken is met de `magento setup:db-schema:upgrade` gebruiken. |
-| Gecompileerde configuratie | compiled_config | Compilatieconfiguratie |
-| Waarde van kenmerk Entiteit (EAV) | eav | Metagegevens die betrekking hebben op EAV-kenmerken (zoals winkellabels, koppelingen naar gerelateerde PHP-code, kenmerkrendering, zoekinstellingen enzovoort). U moet dit cachetype gewoonlijk niet opschonen of verwijderen. |
-| Paginacache | full_page | Gegenereerde HTML pagina&#39;s. Indien nodig, ontruimt de Handel automatisch dit geheime voorgeheugen, maar de derdeontwikkelaars kunnen om het even welke gegevens in om het even welk segment van het geheime voorgeheugen zetten. Reinig of verwijder dit cachetype na het wijzigen van het codeniveau dat HTML output beïnvloedt. Het wordt aangeraden deze cache ingeschakeld te houden, omdat de HTML in cache de prestaties aanzienlijk verbetert. |
-| Reflectie | spiegeling | Verwijdert een afhankelijkheid tussen de module Webapi en de module van de Klant. |
-| Vertalingen | vertalen | Na het samenvoegen van vertalingen van alle modules, zal het fusiecache worden schoongemaakt. |
-| Integratieconfiguratie | config_integration | Gecompileerde integratie. Maak deze cache leeg of maak deze leeg nadat u integraties hebt gewijzigd of toegevoegd. |
-| Integratie API-configuratie | config_integration_api | Gecompileerde integratie APIs configuratie van de Integraties van de Opslag. |
-| Resolver van GraphQL-query [!BADGE 2.4.7-bèta]{type=Informative url="/help/release/release-notes/commerce/2-4-7.md" tooltip="Alleen beschikbaar in 2.4.7-bèta"} | graphql_query_resolver_result | Caches the results from GraphQL query resolvers for customer, CMS page, CMS block, and product media gallery entities. Laat deze cache ingeschakeld om de GraphQL-prestaties te verbeteren. |
-| Webserviceconfiguratie | config_webservice | Caching the Web API Structure. |
-| Klantenmelding | customer_notification | Tijdelijke meldingen die worden weergegeven in de gebruikersinterface. |
+>[!NOTE]
+>
+>
+>De beheerders van de handelplaats kunnen het geheime voorgeheugen van Admin beheren gebruikend het hulpmiddel van het Systeem van het Beheer van het Geheime voorgeheugen. Zie [Cachebeheer](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/tools/cache-management) in de _Admin Systems Guide_.
+
 
 ## De status van de cache weergeven
 
-Als u de status van de cache wilt weergeven, voert u
+Van de bevellijn van de de toepassingsserver van de Handel, bekijk het statuut van het geheime voorgeheugen gebruikend `cache:status` Commerce CLI command.
 
 ```bash
    bin/magento cache:status
@@ -56,16 +44,23 @@ Current status:
                     reflection: 1
                         db_ddl: 1
                compiled_config: 1
+             webhooks_response: 1
                            eav: 1
          customer_notification: 1
-                     full_page: 1
+ graphql_query_resolver_result: 1
             config_integration: 1
         config_integration_api: 1
+                  admin_ui_sdk: 1
+                     full_page: 1
                    target_rule: 1
- graphql_query_resolver_result: 1
              config_webservice: 1
                      translate: 1
 ```
+
+>[!TIP]
+>
+>Voor een gedetailleerde beschrijving van de standaardcachetypen die door Adobe Commerce worden ondersteund, raadpleegt u [Cursussen](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/tools/cache-management#caches) in de _Admin Systems Guide_.
+
 
 ## Cachetypen in- of uitschakelen
 

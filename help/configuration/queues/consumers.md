@@ -2,9 +2,9 @@
 title: Gebruikers in de wachtrij met berichten
 description: Meer informatie over gebruikers in de wachtrij met Adobe Commerce- en Magento Open Source-berichten, inclusief de functies en systeemconfiguratie die eraan zijn gekoppeld.
 exl-id: 7fd7ab3f-581f-493c-956c-731f111d1b14
-source-git-commit: 11ccc59230a7a0d1768c043c39df43c7df031efd
+source-git-commit: 602a1ef82fcb8d30ff027db0fe0aacb981c7e08e
 workflow-type: tm+mt
-source-wordcount: '1014'
+source-wordcount: '829'
 ht-degree: 0%
 
 ---
@@ -65,7 +65,7 @@ De volgende lijst identificeert alle consumenten van de berichtrij, beschrijft w
 | Verzendt e-mails met inkooporder. Vereist wanneer de [**[!UICONTROL Purchase Order]**](https://experienceleague.adobe.com/docs/commerce-admin/b2b/purchase-orders/purchase-order-flow.html) Deze optie is ingeschakeld in de configuratie-instellingen van het beheersysteem. |                |                         |                     |
 | `purchaseorder.validation` |                | + |                     |
 | Valideert kooporder op basis van relevante [goedkeuringsregels](https://docs.magento.com/user-guide/customers/account-dashboard-approval-rules.html). Vereist wanneer de [**[!UICONTROL Purchase Order]**](https://experienceleague.adobe.com/docs/commerce-admin/b2b/purchase-orders/purchase-order-flow.html) Deze optie is ingeschakeld in de configuratie-instellingen van het beheersysteem. |                |                         |                     |
-| `saveConfigProcessor` [!BADGE 2.4.7-bèta]{type=Informative url="/help/release/release-notes/commerce/2-4-7.md" tooltip="Alleen beschikbaar in 2.4.7 bèta"} | + |                         | + |
+| `saveConfigProcessor` | + |                         | + |
 | Slaat asynchroon de veranderingen van de opslagconfiguratie door sparen banen in een berichtrij te plaatsen op, die prestaties op plaatsingen kan verbeteren die een groot aantal opslag-vlakke configuraties bevatten. Vereist om de [`AsyncConfig`](../../performance/configuration.md#asynchronous-configuration-save) -module. |                |                         |                     |
 | `sales.rule.update.coupon.usage` | + | + | + |
 | Voorkomt de [kwestie](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/coupon-code-used-more-than-once-adobe-commerce.html) waarbij coupons voor eenmalig gebruik meerdere keren kunnen worden gebruikt. |                |                         |                     |
