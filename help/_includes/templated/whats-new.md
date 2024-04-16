@@ -1,7 +1,7 @@
 ---
-source-git-commit: 018c61a4ea921b4a69cc854fde355606defe1215
+source-git-commit: 88cdf47409f45f9ba6de75701ab877c5e4604f13
 workflow-type: tm+mt
-source-wordcount: '307'
+source-wordcount: '224'
 ht-degree: 0%
 
 ---
@@ -29,41 +29,13 @@ Meer informatie over nieuwe documentatie en belangrijke updates voor bestaande d
       <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/efd2fc4285a5cdc7ee20ead299ee16e54f9bcb83">evt2fc</a> (toewijzen)</td>
     </tr>
     <tr>
-      <td><ul>
-  <li>Werk de releasepakketonderwerpen bij voor <a href="https://experienceleague.adobe.com/en/docs/commerce-operations/release/packages/adobe-commerce">Adobe Commerce</a> en <a href="https://experienceleague.adobe.com/en/docs/commerce-operations/release/packages/magento-open-source">Magento OpenSource</a>.<br />- Voeg een releasepakketonderwerp toe voor <a href="https://experienceleague.adobe.com/en/docs/commerce-operations/release/packages/adobe-commerce-b2b">B2B voor handel</a>.</li>
-</ul>
+      <td><p>Bijgewerkt de releasepakketonderwerpen voor <a href="https://experienceleague.adobe.com/en/docs/commerce-operations/release/packages/adobe-commerce">Adobe Commerce</a> en <a href="https://experienceleague.adobe.com/en/docs/commerce-operations/release/packages/magento-open-source">Magento Open Source</a>.<br /> Een releasepakketonderwerp toegevoegd voor <a href="https://experienceleague.adobe.com/en/docs/commerce-operations/release/packages/adobe-commerce-b2b">B2B voor handel</a>.</p>
 </td>
       <td>belangrijke update</td>
       <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/aad4b904ba95142d1d848f934c9d3702cc37ec16">aad4b9</a> (toewijzen)</td>
     </tr>
     <tr>
-      <td><p>De <em>bin/magento</em> CLI verwijzingsdocumentatie voor <a href="https://experienceleague.adobe.com/en/docs/commerce-operations/reference/commerce-on-premises">Adobe Commerce</a> en <a href="https://experienceleague.adobe.com/en/docs/commerce-operations/reference/magento-open-source">Magento OpenSource</a>.</p>
-</td>
-      <td>belangrijke update</td>
-      <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/b81dc87a261f128cdb572a30ff5538dae2087c49">b81dc8</a> (toewijzen)</td>
-    </tr>
-    <tr>
-      <td><p>Gepubliceerd 2.4.7 GA <a href="https://experienceleague.adobe.com/en/docs/commerce-operations/release/notes/adobe-commerce/2-4-7">releaseopmerkingen</a>.</p>
-</td>
-      <td>belangrijke update</td>
-      <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/35b7caafbef5ced52ef6e4907e0634dfb2a61e4f">35b7ca</a> (toewijzen)</td>
-    </tr>
-    <tr>
-      <td><p>Voegt releaseopmerkingen toe voor de Adobe Commerce-beveiligingsreleases van april 2024 (2.4.6-p5, 2.4.5-p7, 2.4.4-p8). Zie <a href="https://experienceleague.adobe.com/docs/commerce-operations/release/notes/overview.html">Opmerkingen bij de release voor Adobe Commerce en Magento Open Source</a></p>
-</td>
-      <td>belangrijke update</td>
-      <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/7acab1d8d3f7b11cc1387b5558521f282ba0873f">7acab1</a> (toewijzen)</td>
-    </tr>
-    <tr>
-      <td><ul>
-  <li>Werk de releasepakketonderwerpen bij voor <a href="https://experienceleague.adobe.com/en/docs/commerce-operations/release/packages/adobe-commerce">Adobe Commerce</a> en <a href="https://experienceleague.adobe.com/en/docs/commerce-operations/release/packages/magento-open-source">Magento OpenSource</a>.<br />- Voeg een releasepakketonderwerp toe voor <a href="https://experienceleague.adobe.com/en/docs/commerce-operations/release/packages/adobe-commerce-b2b">B2B voor handel</a>.</li>
-</ul>
-</td>
-      <td>belangrijke update</td>
-      <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/aad4b904ba95142d1d848f934c9d3702cc37ec16">aad4b9</a> (toewijzen)</td>
-    </tr>
-    <tr>
-      <td><p>De <em>bin/magento</em> CLI verwijzingsdocumentatie voor <a href="https://experienceleague.adobe.com/en/docs/commerce-operations/reference/commerce-on-premises">Adobe Commerce</a> en <a href="https://experienceleague.adobe.com/en/docs/commerce-operations/reference/magento-open-source">Magento OpenSource</a>.</p>
+      <td><p>De <em>bin/magento</em> CLI verwijzingsdocumentatie voor <a href="https://experienceleague.adobe.com/en/docs/commerce-operations/reference/commerce-on-premises">Adobe Commerce</a> en <a href="https://experienceleague.adobe.com/en/docs/commerce-operations/reference/magento-open-source">Magento Open Source</a>.</p>
 </td>
       <td>belangrijke update</td>
       <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/b81dc87a261f128cdb572a30ff5538dae2087c49">b81dc8</a> (toewijzen)</td>
