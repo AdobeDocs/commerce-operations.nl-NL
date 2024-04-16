@@ -1,10 +1,10 @@
 ---
 title: Gebruikers in de wachtrij met berichten
-description: Meer informatie over gebruikers in de wachtrij met Adobe Commerce- en Magento Open Source-berichten, inclusief de functies en systeemconfiguratie die eraan zijn gekoppeld.
+description: Meer informatie over gebruikers in de wachtrij met Adobe Commerce-berichten, waaronder de functies en systeemconfiguratie die aan deze gebruikers zijn gekoppeld.
 exl-id: 7fd7ab3f-581f-493c-956c-731f111d1b14
-source-git-commit: 602a1ef82fcb8d30ff027db0fe0aacb981c7e08e
+source-git-commit: 8d0d8f9822b88f2dd8cbae8f6d7e3cdb14cc4848
 workflow-type: tm+mt
-source-wordcount: '829'
+source-wordcount: '825'
 ht-degree: 0%
 
 ---

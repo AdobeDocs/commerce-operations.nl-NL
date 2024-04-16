@@ -1,11 +1,11 @@
 ---
 title: PHP-instellingen
-description: Voer de volgende stappen uit om vereiste PHP extensies te installeren en de vereiste PHP instellingen te configureren voor installatie in de bedrijfsruimten van Adobe Commerce en Magento Open Source.
+description: Volg deze stappen om vereiste PHP uitbreidingen te installeren en vereiste PHP montages voor op-gebouw installaties van Adobe Commerce te vormen.
 feature: Install, Configuration
 exl-id: 84064442-7053-42ab-a8a6-9b313e5efc78
-source-git-commit: 87e3109518fc06c655a3fc9446e2ecd648775da1
+source-git-commit: 8d0d8f9822b88f2dd8cbae8f6d7e3cdb14cc4848
 workflow-type: tm+mt
-source-wordcount: '771'
+source-wordcount: '751'
 ht-degree: 0%
 
 ---
@@ -17,7 +17,7 @@ In dit onderwerp wordt besproken hoe u vereiste PHP-opties kunt instellen.
 
 >[!NOTE]
 >
->De nieuwste versie van Adobe Commerce en Magento Open Source vereist minimaal PHP 8.1. Zie [systeemvereisten](../system-requirements.md) voor alle ondersteunde versies van PHP.
+>Voor de nieuwste versie van Adobe Commerce is minimaal PHP 8.1 vereist. Zie [systeemvereisten](../system-requirements.md) voor alle ondersteunde versies van PHP.
 
 Voor hulp bij de configuratie van de cloud raadpleegt u [PHP-instellingen](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure/app/php-settings.html) in de _Handel in Cloud-infrastructuur_ hulplijn.
 
@@ -46,7 +46,7 @@ Als PHP niet is geïnstalleerd (of een upgrade nodig heeft), installeert u het d
 
 ## Geïnstalleerde extensies verifiëren
 
-Adobe Commerce en Magento Open Source vereisen bepaalde PHP extensies. De volgende lijsten specificeren vereiste uitbreidingen voor elke uitgave van de Handel. De lijsten worden automatisch geproduceerd van een plaatsing die de recentste versie van elke uitgave in werking stelt.
+Adobe Commerce vereist bepaalde PHP extensies. In de volgende lijsten worden de vereiste extensies voor elke editie van Commerce opgegeven. De lijsten worden automatisch geproduceerd van een plaatsing die de recentste versie van elke uitgave in werking stelt.
 
 {{$include /help/_includes/templated/php-extensions.md}}
 
@@ -90,11 +90,11 @@ PHP Warning:  date(): It is not safe to rely on the system's timezone settings. 
 
   Met deze instellingen kunnen PHP-processen paden naar bestanden in cache plaatsen in plaats van ze te bekijken bij het laden van de pagina. Zie [Prestaties afstemmen](https://www.php.net/manual/en/ini.core.php) in de PHP documentatie.
 
-- Inschakelen [`opcache.save_comments`](https://www.php.net/manual/en/opcache.configuration.php#ini.opcache.save-comments), die vereist is voor Adobe Commerce en Magento Open Source 2.1 en hoger.
+- Inschakelen [`opcache.save_comments`](https://www.php.net/manual/en/opcache.configuration.php#ini.opcache.save-comments), die vereist is voor Adobe Commerce 2.1 en hoger.
 
   Adobe beveelt aan de [PHP OPcache](https://www.php.net/manual/en/book.opcache.php) om prestatieredenen. De OPcache is in veel PHP distributies ingeschakeld.
 
-  Adobe Commerce en Magento Open Source 2.1 en hoger gebruiken PHP-codeopmerkingen voor het genereren van code.
+  Adobe Commerce 2.1 en hoger gebruiken PHP-codeopmerkingen voor het genereren van code.
 
 >[!NOTE]
 >

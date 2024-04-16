@@ -1,10 +1,10 @@
 ---
 title: Hoe reparaties werken
-description: Leer meer over de verschillende typen patches voor Adobe Commerce en Magento Open Source en hoe ze werken.
+description: Leer meer over de verschillende typen patches voor Adobe Commerce en hoe ze werken.
 exl-id: d7072ed4-7d51-41fe-881a-aae3b2000b55
-source-git-commit: 915cac8c8d436105c4ae25f95bcaefbe19cc50c1
+source-git-commit: 8d0d8f9822b88f2dd8cbae8f6d7e3cdb14cc4848
 workflow-type: tm+mt
-source-wordcount: '607'
+source-wordcount: '537'
 ht-degree: 0%
 
 ---
@@ -62,7 +62,7 @@ Een aangepaste patch maken:
 1. Een `patches/composer` in uw lokale project.
 1. Identificeer GitHub begaat of trekt verzoek om voor het flard te gebruiken. In dit voorbeeld wordt het [`2d31571`](https://github.com/magento/magento2/commit/2d31571f1bacd11aa2ec795180abf682e0e9aede) commit, verbonden aan GitHub kwestie [#6474](https://github.com/magento/magento2/issues/6474).
 1. Voeg de `.patch` of de `.diff` extensies voor de URL toewijzen. Gebruiken `.diff` voor een kleinere bestandsgrootte. Bijvoorbeeld: [https://github.com/magento/magento2/commit/2d31571f1bacd11aa2ec795180abf682e0e9aede.diff](https://github.com/magento/magento2/commit/2d31571f1bacd11aa2ec795180abf682e0e9aede.diff)
-1. De pagina opslaan als een bestand in het dialoogvenster `patches/composer` directory. Bijvoorbeeld, `github-issue-6474.diff`.
+1. De pagina opslaan als een bestand in het dialoogvenster `patches/composer` directory. Bijvoorbeeld: `github-issue-6474.diff`.
 1. Het bestand bewerken en verwijderen `app/code/<VENDOR>/<PACKAGE>` van alle paden, zodat deze relatief zijn ten opzichte van de `vendor/<VENDOR>/<PACKAGE>` directory.
 
    >[!NOTE]
@@ -96,4 +96,4 @@ U kunt patches op een van de volgende manieren toepassen:
 
 >[!NOTE]
 >
->Als u een patch wilt toepassen op een Adobe Commerce-project voor cloud-infrastructuur, raadpleegt u [Patches toepassen](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html) in de _Handleiding Handel in cloud_.
+>Als u een patch wilt toepassen op een Adobe Commerce-project voor cloud-infrastructuur, raadpleegt u [Patches toepassen](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html) in de _Handleiding Commerce on Cloud_.

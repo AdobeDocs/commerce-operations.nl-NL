@@ -1,17 +1,17 @@
 ---
 title: Referentiearchitectuur
-description: Diagrammen van de geadviseerde verwijzingsarchitectuur voor Adobe Commerce en de plaatsingen van de Magento Open Source herzien.
+description: Diagrammen van de aanbevolen referentiearchitectuur voor Adobe Commerce-implementaties bekijken.
 exl-id: 85a6d3d6-f47f-4806-97bd-fa7a73605f4c
-source-git-commit: 95ffff39d82cc9027fa633dffedf15193040802d
+source-git-commit: 8d0d8f9822b88f2dd8cbae8f6d7e3cdb14cc4848
 workflow-type: tm+mt
-source-wordcount: '426'
+source-wordcount: '414'
 ht-degree: 0%
 
 ---
 
 # Referentiearchitectuur
 
-In dit onderwerp wordt een algemene aanbevolen installatie voor Adobe Commerce- en Magento Open Source-instanties beschreven met behulp van gewone servers die fysiek worden gehost in een datacenter (niet gevirtualiseerd) waarin bronnen niet met andere gebruikers worden gedeeld. Uw ontvangende leverancier, vooral als het zich in de hoge prestaties van de Handel het ontvangen specialiseert, zou een verschillende opstelling kunnen adviseren die even of effectiever voor uw vereisten is.
+In dit onderwerp wordt een algemene aanbevolen installatie voor Adobe Commerce-instanties beschreven met behulp van gewone servers die fysiek worden gehost in een datacenter (niet gevirtualiseerd) waarin bronnen niet met andere gebruikers worden gedeeld. Uw hostingprovider, met name als deze gespecialiseerd is in het hosten van hoge Commerce-prestaties, raadt mogelijk een andere instelling aan die even of effectiever is voor uw vereisten.
 
 Voor Adobe Commerce over omgevingen met cloudinfrastructuren raadpleegt u [Starter-architectuur](https://devdocs.magento.com/cloud/architecture/starter-architecture.html).
 
@@ -25,9 +25,9 @@ De kleur van elk element in het diagram geeft aan of het element deel uitmaakt v
 * Grijswaarden zijn optioneel voor Magento Open Source
 * Blauwe elementen zijn optioneel voor Adobe Commerce
 
-![Referentiediagram voor de handel](../assets/performance/images/ref-architecture-2.3.png)
+![Commerce-referentiearchitectuurdiagram](../assets/performance/images/ref-architecture-2.3.png)
 
-De volgende secties verstrekken aanbevelingen en overwegingen voor elke sectie van het diagram van de Architectuur van de Verwijzing van de Handel.
+De volgende secties geven aanbevelingen en overwegingen voor elk gedeelte van het Commerce Reference Architecture-diagram.
 
 ### [!DNL Varnish]
 

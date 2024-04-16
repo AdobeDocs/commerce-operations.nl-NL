@@ -1,18 +1,18 @@
 ---
 title: AWS OpenSearch
-description: Voer de volgende stappen uit om de AWS OpenSearch-webservice te configureren voor installaties in de bedrijfsruimten van Adobe Commerce en Magento Open Source.
+description: Voer de volgende stappen uit om de AWS OpenSearch-webservice te configureren voor installaties in de vestiging van Adobe Commerce.
 feature: Install, Search
 exl-id: 39ca7fd0-e21f-4f14-bda6-ff00a61a1a4d
-source-git-commit: ce405a6bb548b177427e4c02640ce13149c48aff
+source-git-commit: 8d0d8f9822b88f2dd8cbae8f6d7e3cdb14cc4848
 workflow-type: tm+mt
-source-wordcount: '343'
+source-wordcount: '324'
 ht-degree: 0%
 
 ---
 
 # AWS OpenSearch
 
-Adobe Commerce en Magento Open Source 2.4.5 ondersteunen het gebruik van Amazon OpenSearch Service-clusters. Deze service is de opvolger van Amazon Elasticsearch Service. Dit onderwerp beschrijft hoe te om Handel te vormen om AWS OpenSearch te gebruiken, en hoe te om gegevens van een lokale Elasticsearch of instantie te migreren OpenSearch aan een cluster van AWS OpenSearch.
+Adobe Commerce 2.4.5 ondersteunt het gebruik van Amazon OpenSearch Service-clusters. Deze service is de opvolger van Amazon Elasticsearch Service. Dit onderwerp beschrijft hoe te om Commerce te vormen om AWS OpenSearch te gebruiken, en hoe te om gegevens van een lokale Elasticsearch of instantie te migreren OpenSearch aan een cluster van AWS OpenSearch.
 
 ## Een AWS OpenSearch-servicedomein maken
 
@@ -35,7 +35,7 @@ Wanneer u echter gegevensindexen migreert, moet u ervoor zorgen dat de versies v
 
 Zie Amazon [Migreren naar Amazon OpenSearch Service](https://docs.aws.amazon.com/opensearch-service/latest/developerguide/migration.html) instructies voor meer informatie .
 
-### Handel configureren voor OpenSearch
+### Commerce for OpenSearch configureren
 
 Stappen voor het configureren van OpenSearch worden behandeld in de [Geavanceerde installatie](../../advanced.md) onderwerp.
 

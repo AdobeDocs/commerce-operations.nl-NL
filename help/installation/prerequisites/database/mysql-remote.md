@@ -1,10 +1,10 @@
 ---
 title: Een externe MySQL-databaseverbinding instellen
-description: Voer de volgende stappen uit om een externe databaseverbinding te configureren voor installaties op locatie van Adobe Commerce en Magento Open Source.
+description: Voer de volgende stappen uit om een externe databaseverbinding te configureren voor installaties op locatie van Adobe Commerce.
 exl-id: 5fe304bd-ff38-4066-a1fd-8937575e4de4
-source-git-commit: 95ffff39d82cc9027fa633dffedf15193040802d
+source-git-commit: 8d0d8f9822b88f2dd8cbae8f6d7e3cdb14cc4848
 workflow-type: tm+mt
-source-wordcount: '743'
+source-wordcount: '716'
 ht-degree: 0%
 
 ---
@@ -13,13 +13,13 @@ ht-degree: 0%
 
 Soms wilt u de database op een aparte server hosten in plaats van de databaseserver en de webserver op dezelfde computer uit te voeren.
 
-Adobe biedt een manier om verbinding te maken met een MySQL-server op een andere computer. Vanaf Adobe Commerce en Magento Open Source 2.4.3 kunt u de toepassing ook zodanig configureren dat deze een Amazon Web Services (AWS) Aurora-database zonder codewijzigingen gebruikt.
+Adobe biedt een manier om verbinding te maken met een MySQL-server op een andere computer. Vanaf Adobe Commerce 2.4.3 kunt u de toepassing ook zodanig configureren dat deze een Amazon Web Services (AWS) Aurora-database zonder codewijzigingen gebruikt.
 
 Aurora is een krachtige, volledig compatibele MySQL-server die op AWS wordt gehost.
 
 ## Verbinding maken met een AWS Aurora-database
 
-Het gebruiken van Aurora als gegevensbestand is zo gemakkelijk zoals specificerend het gegevensbestand in de regelmatige configuratie van de de opstellingsconfiguratie van Adobe Commerce en van de Magento Open Source, gebruikend de standaardgegevensbestandschakelaar.
+Het gebruiken van Aurora als gegevensbestand is zo gemakkelijk zoals specificerend het gegevensbestand in de regelmatige de opstellingsconfiguratie van Adobe Commerce, gebruikend de standaardgegevensbestandschakelaar.
 
 Bij uitvoering `bin/magento setup:install`, gebruikt u de Aurora-informatie in de `db-` velden:
 

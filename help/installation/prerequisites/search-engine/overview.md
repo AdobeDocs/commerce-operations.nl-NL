@@ -1,18 +1,18 @@
 ---
 title: Voorwaarden voor zoekmachines
-description: Voer de volgende stappen uit om ondersteunde software voor zoekprogramma's te installeren en te configureren voor installaties op locatie van Adobe Commerce en Magento Open Source.
+description: Voer de volgende stappen uit om ondersteunde software voor zoekprogramma's te installeren en te configureren voor installaties in Adobe Commerce.
 feature: Install, Search
 exl-id: 44ea638a-7200-4269-be1b-b0851de2c4f4
-source-git-commit: ce405a6bb548b177427e4c02640ce13149c48aff
+source-git-commit: 8d0d8f9822b88f2dd8cbae8f6d7e3cdb14cc4848
 workflow-type: tm+mt
-source-wordcount: '786'
+source-wordcount: '723'
 ht-degree: 0%
 
 ---
 
 # Voorwaarden voor zoekmachines
 
-Vanaf Adobe Commerce en Magento Open Source 2.4 moeten alle installaties zodanig zijn geconfigureerd dat [Elasticsearch](https://www.elastic.co) of [OpenSearch](https://opensearch.org/) als zoekoplossing voor de catalogus.
+Vanaf Adobe Commerce 2.4 moeten alle installaties zodanig zijn geconfigureerd dat ze kunnen worden gebruikt [Elasticsearch](https://www.elastic.co) of [OpenSearch](https://opensearch.org/) als zoekoplossing voor de catalogus.
 
 >[!NOTE]
 >
@@ -39,13 +39,13 @@ De volgende taken veronderstellen dat u uw systeem volgens het volgende diagram 
 
 Het voorgaande diagram toont:
 
-* De toepassing van de Handel en de onderzoeksmotor zijn geïnstalleerd op verschillende gastheren.
+* De Commerce-toepassing en het zoekprogramma zijn op verschillende hosts geïnstalleerd.
 
   Als u op aparte hosts werkt, is proxy vereist. (Het groeperen van de onderzoeksmotor is voorbij het werkingsgebied van deze gids, maar u kunt meer informatie in vinden [Elasticsearch clustering documentatie](https://www.elastic.co/guide/en/elasticsearch/guide/current/distributed-cluster.html).)
 
 * Elke host heeft een eigen webserver. De webservers hoeven niet hetzelfde te zijn.
 
-  De toepassing Commerce kan bijvoorbeeld Apache uitvoeren en de zoekfunctie kan nginx uitvoeren.
+  De Commerce-toepassing kan bijvoorbeeld Apache uitvoeren en het zoekprogramma kan nginx uitvoeren.
 
 * Beide Webservers gebruiken de Veiligheid van de Laag van het Vervoer (TLS).
 
@@ -53,7 +53,7 @@ Het voorgaande diagram toont:
 
 Zoekverzoeken worden als volgt verwerkt:
 
-1. Een onderzoeksverzoek van een gebruiker wordt ontvangen door de Webserver van de Handel, die het aan de server van de onderzoeksmotor door:sturen.
+1. Een zoekverzoek van een gebruiker wordt ontvangen door de Commerce-webserver, die het doorstuurt naar de zoekprogrammaserver.
 
    U vormt de onderzoeksmotor om met de gastheer en de haven van de volmacht te verbinden. We raden de SSL-poort van de webserver aan (standaard ingesteld op 443).
 

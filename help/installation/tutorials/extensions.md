@@ -2,20 +2,20 @@
 title: Een extensie installeren
 description: Voer de volgende stappen uit om een Adobe Commerce- of Magento Open Source-extensie te installeren.
 exl-id: b564662a-2e5f-4fa9-bae1-ca7498478fa9
-source-git-commit: 95ffff39d82cc9027fa633dffedf15193040802d
+source-git-commit: 8d0d8f9822b88f2dd8cbae8f6d7e3cdb14cc4848
 workflow-type: tm+mt
-source-wordcount: '645'
+source-wordcount: '635'
 ht-degree: 0%
 
 ---
 
 # Een extensie installeren
 
-Code waarmee het gedrag van Adobe Commerce en Magento Open Sourcen wordt uitgebreid of aangepast, wordt een extensie genoemd. U kunt desgewenst extensies verpakken en distribueren op het tabblad [Commerce Marketplace](https://marketplace.magento.com) of een ander extensiedistributiesysteem.
+Code die het gedrag van Adobe Commerce uitbreidt of aanpast, wordt een extensie genoemd. U kunt desgewenst extensies verpakken en distribueren op het tabblad [Commerce Marketplace](https://marketplace.magento.com) of een ander extensiedistributiesysteem.
 
 Extensies zijn:
 
-- Modules (breid Adobe Commerce- en Magento Open Source-mogelijkheden uit)
+- Modules (Adobe Commerce-mogelijkheden uitbreiden)
 - Thema&#39;s (wijzig de vormgeving van uw winkel en Admin)
 - Taalpakketten (lokaliseer de winkel en Admin)
 

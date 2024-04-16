@@ -1,10 +1,10 @@
 ---
 title: Overzicht van installatie op locatie
-description: Leer over het installatieproces voor plaatsingen van Adobe Commerce en Magento Open Source op-gebouw.
+description: Leer over het installatieproces voor plaatsingen op-gebouw van Adobe Commerce.
 exl-id: a9f5b241-d05d-462c-8c7f-479a264c988f
-source-git-commit: 95ffff39d82cc9027fa633dffedf15193040802d
+source-git-commit: 8d0d8f9822b88f2dd8cbae8f6d7e3cdb14cc4848
 workflow-type: tm+mt
-source-wordcount: '166'
+source-wordcount: '152'
 ht-degree: 0%
 
 ---
@@ -13,7 +13,7 @@ ht-degree: 0%
 
 >[!NOTE]
 >
->Het volgende diagram biedt een overzicht op hoog niveau van _**ter plaatse**_ Installaties van Adobe Commerce en Magento Open Source:
+>Het volgende diagram biedt een overzicht op hoog niveau van _**ter plaatse**_ Installaties van Adobe Commerce:
 
 ![Hoe installatie werkt](../assets/installation/install-diagram-24.svg)
 
@@ -23,7 +23,7 @@ De algemene installatiestroom is als volgt:
 
    Installeer de vereiste software, waaronder PHP, Apache, MySQL en de zoekmachine. Zie de [systeemvereisten](system-requirements.md) voor meer informatie .
 
-1. Get [verificatietoetsen](prerequisites/authentication-keys.md) aan de Composer van de Handel.
+1. Get [verificatietoetsen](prerequisites/authentication-keys.md) naar de Commerce Composer-opslagplaats.
 
 1. Haal de Adobe Commerce- of Magento Open Source-software op.
 

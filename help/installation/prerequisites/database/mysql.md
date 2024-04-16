@@ -1,10 +1,10 @@
 ---
 title: MySQL-richtlijnen
-description: Voer de volgende stappen uit om MySQL en MariaDB te installeren en te configureren voor installaties op locatie van Adobe Commerce en Magento Open Source.
+description: Voer de volgende stappen uit om MySQL en MariaDB te installeren en te configureren voor installaties op locatie van Adobe Commerce.
 exl-id: dc5771a8-4066-445c-b1cd-9d5f449ec9e9
-source-git-commit: 95ffff39d82cc9027fa633dffedf15193040802d
+source-git-commit: 35664c30e438305036d3cfdd1dd1924966f6ced6
 workflow-type: tm+mt
-source-wordcount: '1142'
+source-wordcount: '1053'
 ht-degree: 0%
 
 ---
@@ -15,10 +15,10 @@ Zie [Systeemvereisten](../../system-requirements.md) voor ondersteunde versies v
 
 Adobe _krachtig_ raadt u aan de volgende standaard in acht te nemen wanneer u uw database instelt:
 
-* Adobe Commerce en gebruik van Magento Open Source [MySQL-databasetriggers](https://dev.mysql.com/doc/refman/8.0/en/triggers.html) de toegang tot de database tijdens het opnieuw indexeren te verbeteren. Deze worden gemaakt wanneer de indexeermodus is ingesteld op [schema](../../../configuration/cli/manage-indexers.md#configure-indexers). De toepassing ondersteunt geen aangepaste triggers in de database, omdat aangepaste triggers incompatibiliteiten met toekomstige Adobe Commerce- en Magento Open Source-versies kunnen introduceren.
+* Adobe Commerce gebruikt [MySQL-databasetriggers](https://dev.mysql.com/doc/refman/8.0/en/triggers.html) de toegang tot de database tijdens het opnieuw indexeren te verbeteren. Deze worden gemaakt wanneer de indexeermodus is ingesteld op [schema](../../../configuration/cli/manage-indexers.md#configure-indexers). De toepassing ondersteunt geen aangepaste triggers in de database omdat aangepaste triggers incompatibiliteiten met toekomstige Adobe Commerce-versies kunnen introduceren.
 * Verken uzelf met [Deze potentiële MySQL triggerbeperkingen](https://dev.mysql.com/doc/mysql-reslimits-excerpt/8.0/en/stored-program-restrictions.html) voordat u verdergaat.
 * Om uw houding van de gegevensbestandveiligheid te verbeteren, laat toe [`STRICT_ALL_TABLES`](https://dev.mysql.com/doc/refman/5.7/en/sql-mode.html#sqlmode_strict_all_tables) SQL-modus om te voorkomen dat ongeldige gegevenswaarden worden opgeslagen, wat tot ongewenste databaseinteracties kan leiden.
-* Adobe Commerce en Magento Open Source doen _niet_ op instructies gebaseerde replicatie van MySQL ondersteunen. Zorg ervoor dat u _alleen_ [op rijen gebaseerde replicatie](https://dev.mysql.com/doc/refman/8.0/en/replication-formats.html).
+* Adobe Commerce doet _niet_ op instructies gebaseerde replicatie van MySQL ondersteunen. Zorg ervoor dat u _alleen_ [op rijen gebaseerde replicatie](https://dev.mysql.com/doc/refman/8.0/en/replication-formats.html).
 
 >[!WARNING]
 >
@@ -30,7 +30,7 @@ Adobe _krachtig_ raadt u aan de volgende standaard in acht te nemen wanneer u uw
 
 ## MySQL installeren op Ubuntu
 
-Adobe Commerce en Magento Open Source 2.4 vereisen een schone installatie van MySQL 8.0. Volg de onderstaande koppelingen voor instructies over het installeren van MySQL op uw computer.
+Adobe Commerce 2.4 vereist een schone installatie van MySQL 8.0. Volg de onderstaande koppelingen voor instructies over het installeren van MySQL op uw computer.
 
 * [Ubuntu](https://ubuntu.com/server/docs/databases-mysql)
 * [CentOS](https://dev.mysql.com/doc/refman/8.0/en/linux-installation-yum-repo.html)
@@ -53,7 +53,7 @@ Dan, [De database-instantie configureren](#configuring-the-database-instance).
 
 ## Wijzigingen in MySQL 8
 
-Voor Adobe Commerce en Magento Open Source 2.4 hebben we ondersteuning toegevoegd voor MySQL 8.
+Voor Adobe Commerce 2.4 hebben we ondersteuning toegevoegd voor MySQL 8.
 Deze sectie beschrijft belangrijke veranderingen in MySQL 8 die de ontwikkelaars zich van bewust zouden moeten zijn.
 
 ### Verwijderde breedte voor typen gehele getallen (opvulling)
@@ -90,13 +90,13 @@ Geef altijd een sorteervolgorde op als de code afhankelijk is van een specifieke
 
 Vanaf MySQL 8.0.13 is de `ASC` of `DESC` kwalificeertekens voor `GROUP BY` clausules zijn verwijderd. Vraagstukken waarop eerder was vertrouwd `GROUP BY` sorteren kan resultaten opleveren die afwijken van eerdere MySQL-versies. Als u een bepaalde sorteervolgorde wilt maken, geeft u een `ORDER BY` clausule.
 
-## Handel en MySQL 8
+## Commerce en MySQL 8
 
-Er zijn enkele wijzigingen aangebracht in Adobe Commerce en Magento Open Source om MySQL 8 goed te ondersteunen.
+Er zijn enkele wijzigingen aangebracht in Adobe Commerce om MySQL 8 correct te ondersteunen.
 
 ### Werking query en invoegen
 
-Adobe Commerce en Magento Open Source hebben het normale validatiegedrag uitgeschakeld door SQL_MODE=&#39; in te stellen in `/lib/internal/Magento/Framework/DB/Adapter/Pdo/Mysql.php:424.`. Als validatie is uitgeschakeld, is het mogelijk dat MySQL gegevens afkapt. In MySQL is het gedrag Query gewijzigd: `Select * on my_table where IP='127.0.0.1'` retourneert niet langer resultaten omdat het IP-adres nu correct als een tekenreeks wordt beschouwd in plaats van als een geheel getal.
+Adobe Commerce heeft het normale validatiegedrag uitgeschakeld door SET SQL_MODE=&#39;&#39; in te stellen in `/lib/internal/Magento/Framework/DB/Adapter/Pdo/Mysql.php:424.`. Als validatie is uitgeschakeld, is het mogelijk dat MySQL gegevens afkapt. In MySQL is het gedrag Query gewijzigd: `Select * on my_table where IP='127.0.0.1'` retourneert niet langer resultaten omdat het IP-adres nu correct als een tekenreeks wordt beschouwd in plaats van als een geheel getal.
 
 ## Upgrade uitvoeren van MySQL 5.7 naar MySQL 8
 

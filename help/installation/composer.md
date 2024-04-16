@@ -2,18 +2,18 @@
 title: Snelle start van de installatie op locatie
 description: Voer de volgende stappen uit om Adobe Commerce of Magento Open Source te installeren op uw eigen infrastructuur.
 exl-id: a93476e8-2b30-461a-91df-e73eb1a14d3c
-source-git-commit: 3c6527e5936438d6f1f52b32082cc7dde5f87f22
+source-git-commit: 8d0d8f9822b88f2dd8cbae8f6d7e3cdb14cc4848
 workflow-type: tm+mt
-source-wordcount: '993'
+source-wordcount: '958'
 ht-degree: 0%
 
 ---
 
 # Snelle start van de installatie op locatie
 
-In de instructies op deze pagina wordt beschreven hoe Adobe Commerce en Magento Open Source op [zelfgehoopt](../implementation-playbook/infrastructure/self-hosting/overview.md) infrastructuur. Raadpleeg voor hulp bij het upgraden van een bestaande installatie de [_Upgradehandleiding_](../upgrade/overview.md).
+In de instructies op deze pagina wordt beschreven hoe u Adobe Commerce kunt installeren op [zelfgehoopt](../implementation-playbook/infrastructure/self-hosting/overview.md) infrastructuur. Raadpleeg voor hulp bij het upgraden van een bestaande installatie de [_Upgradehandleiding_](../upgrade/overview.md).
 
-Adobe gebruikt [Composer](https://getcomposer.org/) om Adobe Commerce en Magento Open Source componenten en hun gebiedsdelen te beheren. Het gebruik van Composer om het metapakket voor Adobe Commerce en Magento Open Source op te halen, biedt de volgende voordelen:
+Adobe gebruikt [Composer](https://getcomposer.org/) om Adobe Commerce-componenten en hun afhankelijkheden te beheren. Het gebruik van Composer voor het ophalen van het Adobe Commerce-pakket biedt de volgende voordelen:
 
 - Bibliotheken van derden opnieuw gebruiken zonder deze te bundelen met broncode
 - Verminder uitbreidingsconflicten en compatibiliteitskwesties door een op componenten-gebaseerde architectuur met robuust gebiedsbeheer te gebruiken
@@ -31,7 +31,7 @@ Voordat u verdergaat, moet u het volgende doen:
 
 - Alles voltooien [vereiste taken](system-requirements.md).
 - [Composer installeren](https://getcomposer.org/download/).
-- Get [verificatietoetsen](prerequisites/authentication-keys.md) naar de Adobe Commerce en Magento Open Source Composer-opslagplaats.
+- Get [verificatietoetsen](prerequisites/authentication-keys.md) naar de Adobe Commerce Composer-opslagplaats.
 
 ## Aanmelden als eigenaar van bestandssysteem
 

@@ -1,11 +1,11 @@
 ---
 title: Oplossing voor gesplitste databaseprestaties
-description: Lees over de gesplitste databaseoplossing voor Adobe Commerce en Magento Open Source.
+description: Lees over de gesplitste databaseoplossing voor Adobe Commerce.
 recommendations: noCatalog
 exl-id: 922a9af7-2c46-4bf3-b1ad-d966f5564ec0
-source-git-commit: af45ac46afffeef5cd613628b2a98864fd7da69b
+source-git-commit: 8d0d8f9822b88f2dd8cbae8f6d7e3cdb14cc4848
 workflow-type: tm+mt
-source-wordcount: '626'
+source-wordcount: '623'
 ht-degree: 0%
 
 ---
@@ -16,7 +16,7 @@ ht-degree: 0%
 
 {{deprecate-split-db}}
 
-Adobe Commerce biedt verschillende schaalbaarheidsvoordelen, waaronder de mogelijkheid om drie aparte hoofddatabases te gebruiken voor verschillende functionele gebieden van de toepassing Commerce.
+Adobe Commerce biedt verschillende schaalbaarheidsvoordelen, waaronder de mogelijkheid om drie aparte hoofddatabases te gebruiken voor verschillende functionele gebieden van de Commerce-toepassing.
 
 De controle, de orden, en de productgegevens kunnen elk een afzonderlijk hoofdgegevensbestand gebruiken dat u naar keuze kunt herhalen. Afhankelijk van uw behoeften worden taken onafhankelijk van websitecontroles, activiteiten voor orderbeheer, surfen op websites en het winkelen geschaald. Deze veranderingen verstrekken aanzienlijke flexibiliteit in hoe de gegevensbestandrij kan worden geschraapt.
 
@@ -24,7 +24,7 @@ De controle, de orden, en de productgegevens kunnen elk een afzonderlijk hoofdge
 >
 >Adobe Commerce op cloud-infrastructuur doet _niet_ deze functie ondersteunen.
 
-De `ResourceConnections` klasse verstrekt de verenigde MySQL gegevensbestandverbinding aan de toepassing van de Handel. Voor vragen aan de hoofdgegevensbestanden, voeren wij het het gegevensbestandpatroon van de Segregatie van de Verantwoordelijkheid van de Vraag van het Bevel (CQRS) uit. Dit patroon behandelt de logica voor het verpletteren van gelezen en schrijft vragen aan de aangewezen gegevensbestanden. De ontwikkelaars te hoeven niet om te weten welke configuratie wordt gebruikt en er zijn geen afzonderlijke lees en schrijf gegevensbestandverbindingen.
+De `ResourceConnections` biedt de Unified MySQL-databaseverbinding met de Commerce-toepassing. Voor vragen aan de hoofdgegevensbestanden, voeren wij het het gegevensbestandpatroon van de Segregatie van de Verantwoordelijkheid van de Vraag van het Bevel (CQRS) uit. Dit patroon behandelt de logica voor het verpletteren van gelezen en schrijft vragen aan de aangewezen gegevensbestanden. De ontwikkelaars te hoeven niet om te weten welke configuratie wordt gebruikt en er zijn geen afzonderlijke lees en schrijf gegevensbestandverbindingen.
 
 Als u opstellings facultatieve gegevensbestandreplicatie, krijgt u de volgende voordelen:
 
@@ -60,25 +60,25 @@ Vanwege de manier waarop de gesplitste oplossing voor databaseprestaties is ontw
 
 Dit betekent ook dat u:
 
-- Vorm de gespleten gegevensbestandoplossing _voor_ de handel in productie te nemen.
+- Vorm de gespleten gegevensbestandoplossing _voor_ de productie van Commerce.
 
   Adobe raadt aan om gesplitste databases zo snel mogelijk te configureren nadat u de Commerce-software hebt geïnstalleerd.
 
 - [Handmatig configureren](multi-master-manual.md) de gesplitste databaseoplossing.
 
-  U moet deze taak uitvoeren als u reeds componenten hebt geïnstalleerd of als de Handel reeds in productie is. (_Niet gebruiken_ een productiesysteem bijwerken, de updates uitvoeren in een ontwikkelingssysteem en de wijzigingen synchroniseren nadat u deze hebt getest.)
+  U moet deze taak uitvoeren als u reeds componenten hebt geïnstalleerd of als Commerce reeds in productie is. (_Niet gebruiken_ een productiesysteem bijwerken, de updates uitvoeren in een ontwikkelingssysteem en de wijzigingen synchroniseren nadat u deze hebt getest.)
 
   >[!WARNING]
   >
-  >U moet de twee extra gegevensbestandinstanties manueel file. De handel steunt slechts de belangrijkste gegevensbestandinstantie. De [`magento setup:backup --db`](../../installation/tutorials/backup.md) geen back-up maken van de extra tabellen.
+  >U moet de twee extra gegevensbestandinstanties manueel file. Commerce maakt alleen een back-up van de hoofddatabase-instantie. De [`magento setup:backup --db`](../../installation/tutorials/backup.md) geen back-up maken van de extra tabellen.
 
 ## Vereisten
 
-De gespleten gegevensbestand vereist u aan opstelling drie MySQL hoofdgegevensbestanden op om het even welke gastheer (alle drie op de server van de Handel, elk gegevensbestand op een afzonderlijke server, etc.). Dit zijn de _meester_ databanken en worden als volgt gebruikt:
+De gesplitste database vereist dat u drie MySQL-hoofddatabases instelt op elke host (alle drie op de Commerce-server, elke database op een aparte server enzovoort). Dit zijn de _meester_ databanken en worden als volgt gebruikt:
 
 - Eén hoofddatabase voor uitchecktabellen
 - Eén hoofddatabase voor verkooptabellen (ook wel _Orderbeheersysteem_, of _OMS_, tabellen)
-- Één hoofdgegevensbestand voor de rest van Commerce 2 toepassingslijsten
+- Eén hoofddatabase voor de rest van de Commerce 2-toepassingstabellen
 
 Bovendien kunt u optioneel een willekeurig aantal _slaven_ databases die fungeren als taakverdelingsmechanisme en back-ups.
 

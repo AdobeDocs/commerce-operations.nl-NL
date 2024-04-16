@@ -2,9 +2,9 @@
 title: Een upgrade uitvoeren
 description: Volg deze stappen om plaatsingen op-gebouw van Adobe Commerce te bevorderen.
 exl-id: 9183f1d2-a8dd-4232-bdee-7c431e0133df
-source-git-commit: 0cee0ab36274758b583c04dbee8251ce3b78e559
+source-git-commit: 8d0d8f9822b88f2dd8cbae8f6d7e3cdb14cc4848
 workflow-type: tm+mt
-source-wordcount: '742'
+source-wordcount: '738'
 ht-degree: 0%
 
 ---
@@ -26,7 +26,7 @@ De volgende instructies tonen u hoe te om te bevorderen gebruikend Composer pakk
 
 >[!WARNING]
 >
->De procedure voor de modernisering van Adobe Commerce en Magento Open Source is gewijzigd. U moet een nieuwe versie van `magento/composer-root-update-plugin` pakket (zie [voorwaarden](../prepare/prerequisites.md)). Bovendien zijn de opdrachten voor de upgrade gewijzigd van `composer require magento/<package_name>` tot `composer require-commerce magento/<package_name>`.
+>De procedure voor de modernisering van Adobe Commerce is gewijzigd. U moet een nieuwe versie van `magento/composer-root-update-plugin` pakket (zie [voorwaarden](../prepare/prerequisites.md)). Bovendien zijn de opdrachten voor de upgrade gewijzigd van `composer require magento/<package_name>` tot `composer require-commerce magento/<package_name>`.
 
 ## Voordat u begint
 
@@ -116,7 +116,7 @@ U moet de opdracht [upgradevoorwaarden](../prepare/prerequisites.md) om uw omgev
 
    - `--interactive-root-conflicts` — (Optioneel) Hiermee kunt u op interactieve wijze verouderde waarden uit eerdere versies of aangepaste waarden die niet overeenkomen met de versie waarnaar u de upgrade uitvoert, weergeven en bijwerken.
 
-   - `--force-root-updates` —(Optioneel) Hiermee worden alle conflicterende aangepaste waarden genegeerd met de verwachte waarden voor Handel.
+   - `--force-root-updates` —(Optioneel) Hiermee worden alle conflicterende aangepaste waarden genegeerd met de verwachte Commerce-waarden.
 
    - `--help` —(Optioneel) Bevat gebruiksgegevens voor de plug-in.
 

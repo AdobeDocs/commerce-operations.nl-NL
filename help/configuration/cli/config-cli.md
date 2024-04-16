@@ -1,19 +1,19 @@
 ---
 title: Gereedschap Command-lijn
-description: Gebruik het bevel-lijn van de Handel hulpmiddel om installatie en configuratietaken in werking te stellen.
+description: Gebruik het bevel-lijn van Commerce hulpmiddel om installatie en configuratietaken in werking te stellen.
 exl-id: 44470ce1-a5a2-4c12-962e-e42d11a6bd15
-source-git-commit: 95ffff39d82cc9027fa633dffedf15193040802d
+source-git-commit: 8d0d8f9822b88f2dd8cbae8f6d7e3cdb14cc4848
 workflow-type: tm+mt
-source-wordcount: '299'
+source-wordcount: '295'
 ht-degree: 0%
 
 ---
 
 # Gereedschap Command-lijn
 
-De handel heeft één bevel-lijn interface (CLI)—`<magento_root>/bin/magento`—dat installatie- en configuratietaken uitvoert, waaronder:
+Commerce heeft één bevel-lijn interface (CLI)—`<magento_root>/bin/magento`—dat installatie- en configuratietaken uitvoert, waaronder:
 
-- De Installerende Handel (en verwante taken zoals update het gegevensbestandschema, creeer een plaatsingsconfiguratie)
+- Commerce installeren (en verwante taken zoals het databaseschema bijwerken, een implementatieconfiguratie maken)
 - De cache wissen
 - Indexen beheren, inclusief opnieuw indexeren
 - Vertaalwoordenboeken en vertaalpakketten maken
@@ -28,7 +28,7 @@ De extra voordelen omvatten:
 - CLI is verlengbaar zodat kunnen de derdeontwikkelaars &quot;binnen&quot;aan het &quot;stoppen. Dit heeft het extra voordeel om de het leren kromme van gebruikers te elimineren.
 - Opdrachten voor uitgeschakelde modules worden niet weergegeven.
 
-Dit onderwerp bespreekt het vormen van de software van Adobe Commerce en van de Magento Open Source gebruikend CLI. Voor informatie over het installeren van Handel, zie [Installatiestroom](../../installation/overview.md) in de _Installatiehandleiding_.
+Dit onderwerp bespreekt het vormen van de software van Adobe Commerce gebruikend CLI. Voor informatie over het installeren van Commerce raadpleegt u [Installatiestroom](../../installation/overview.md) in de _Installatiehandleiding_.
 
 ## Vereisten
 
@@ -36,7 +36,7 @@ Voordat u begint met het gebruik van de CLI, moet u ervoor zorgen dat:
 
 1. Uw systeem voldoet aan de vereisten die worden besproken in [Systeemvereisten](../../installation/system-requirements.md) in de _Installatiehandleiding_.
 1. U hebt alle vereiste taken uitgevoerd die zijn besproken in [Vereisten](../../installation/prerequisites/overview.md) in de _Installatiehandleiding_.
-1. Nadat u login aan de server van de Handel, schakelaar aan een gebruiker die toestemmingen heeft om aan het het dossiersysteem van de Handel te schrijven. Zie [schakelen naar de eigenaar van het bestandssysteem](../../installation/prerequisites/file-system/overview.md) in de _Installatiehandleiding_.
+1. Nadat u zich hebt aangemeld bij de Commerce-server, schakelt u over naar een gebruiker die gemachtigd is om naar het Commerce-bestandssysteem te schrijven. Zie [schakelen naar de eigenaar van het bestandssysteem](../../installation/prerequisites/file-system/overview.md) in de _Installatiehandleiding_.
 
 ## Opdrachten uitvoeren
 

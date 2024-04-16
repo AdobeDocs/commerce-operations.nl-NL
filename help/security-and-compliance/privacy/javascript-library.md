@@ -1,10 +1,10 @@
 ---
 title: Privacy JavaScript-bibliotheek
-description: Leer hoe u aangepaste gereedschappen kunt gebruiken voor het openen en verwijderen van persoonlijke gegevens van klanten die zijn verzameld door Adobe Commerce en Magento Open Source.
+description: Leer hoe u aangepaste gereedschappen kunt gebruiken voor het openen en verwijderen van persoonlijke klantgegevens die door Adobe Commerce zijn verzameld.
 exl-id: bcfea656-2cf0-48ae-9049-d91679166d05
-source-git-commit: 95ffff39d82cc9027fa633dffedf15193040802d
+source-git-commit: 8d0d8f9822b88f2dd8cbae8f6d7e3cdb14cc4848
 workflow-type: tm+mt
-source-wordcount: '298'
+source-wordcount: '274'
 ht-degree: 0%
 
 ---
@@ -13,15 +13,15 @@ ht-degree: 0%
 
 # Privacy JavaScript-bibliotheek
 
-De Privacy JavaScript Bibliotheek is een reeks hulpmiddelen helpen tot een proces leiden voor de toegang tot van en het schrappen van privé gegevens die door Adobe Commerce en Magento Open Source worden verzameld.
+De Privacy JavaScript-bibliotheek is een set gereedschappen waarmee u een proces kunt maken voor het openen en verwijderen van privégegevens die door Adobe Commerce zijn verzameld.
 
-De diensten van de gegevenspracking van de handel kunnen privé informatie opslaan die op privacyverordeningen zoals [Algemene verordening inzake gegevensbescherming (GDPR)](gdpr.md) en [California Consumer Privacy Act (CCPA)](ccpa.md).
+Commerce-services voor het bijhouden van gegevens kunnen persoonlijke gegevens opslaan die van toepassing zijn op privacyregels zoals de [Algemene verordening inzake gegevensbescherming (GDPR)](gdpr.md) en [California Consumer Privacy Act (CCPA)](ccpa.md).
 
-Deze bibliotheek bevat een set functies voor het maken van verzoeken om privacygegevens en het verzamelen van de reacties. Met deze bibliotheek kunt u de gegevens ophalen die door Adobe Commerce in de browser zijn opgeslagen en de services voor het bijhouden van gegevens Magento Open Sourcen.
+Deze bibliotheek bevat een set functies voor het maken van verzoeken om privacygegevens en het verzamelen van de reacties. Met deze bibliotheek kunt u de gegevens ophalen die in de browser zijn opgeslagen door Adobe Commerce-services voor het bijhouden van gegevens.
 
 >[!NOTE]
 >
->Indien [Modus Cookie-beperking](https://experienceleague.adobe.com/docs/commerce-admin/start/compliance/privacy/compliance-cookie-law.html) wordt toegelaten, verzamelt de Handel geen gedragsgegevens tot de verkoopster goedkeurt. Indien [!UICONTROL **Modus Cookie-beperking**] is uitgeschakeld, verzamelt Commerce standaard gedragsgegevens.
+>Indien [Modus Cookie-beperking](https://experienceleague.adobe.com/docs/commerce-admin/start/compliance/privacy/compliance-cookie-law.html) is ingeschakeld, verzamelt Commerce geen gedragsgegevens tot de klant hiermee instemt. Indien [!UICONTROL **Modus Cookie-beperking**] is uitgeschakeld, verzamelt Commerce standaard gedragsgegevens.
 
 ## Installatie
 

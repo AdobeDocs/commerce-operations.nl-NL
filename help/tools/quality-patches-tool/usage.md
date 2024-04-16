@@ -3,19 +3,18 @@ title: Gebruik
 description: Leer hoe u de [!DNL Quality Patches Tool].
 exl-id: f9ad37e9-2d0f-4bc8-a98b-6d60b6f56d42
 feature: Configuration, Install
-source-git-commit: e83e2359377f03506178c28f8b30993c172282c7
+source-git-commit: 8d0d8f9822b88f2dd8cbae8f6d7e3cdb14cc4848
 workflow-type: tm+mt
-source-wordcount: '910'
+source-wordcount: '869'
 ht-degree: 0%
 
 ---
 
 # Gebruik
 
-De [[!DNL Quality Patches Tool]](https://github.com/magento/quality-patches) levert afzonderlijke patches die door de Adobe en de Magento Open Source gemeenschap zijn ontwikkeld. Hiermee kunt u algemene informatie over alle afzonderlijke patches die beschikbaar zijn voor de geïnstalleerde versie van Adobe Commerce of Magento Open Source, toepassen, herstellen en bekijken. U kunt patches toepassen op Adobe Commerce- en Magento Open Source-projecten, ongeacht wie de patch heeft ontwikkeld. U kunt bijvoorbeeld een patch toepassen die door de gemeenschap is ontwikkeld op Adobe Commerce-projecten.
+De [[!DNL Quality Patches Tool]](https://github.com/magento/quality-patches) levert afzonderlijke patches die door de Adobe en de Magento Open Source gemeenschap zijn ontwikkeld. Hiermee kunt u algemene informatie over alle afzonderlijke patches die beschikbaar zijn voor de geïnstalleerde versie van Adobe Commerce of Magento Open Source, toepassen, herstellen en bekijken. U kunt patches toepassen op Adobe Commerce-projecten, ongeacht wie de patch heeft ontwikkeld. U kunt bijvoorbeeld een patch toepassen die door de gemeenschap is ontwikkeld op Adobe Commerce-projecten.
 
-
-Dit bekijken [technische video](https://experienceleague.adobe.com/docs/commerce-learn/tutorials/tools/quality-patch-tool.html?lang=en) en leer hoe u het gereedschap Kwaliteitspatches kunt gebruiken voor Adobe Commerce en Magento Open Source.
+Dit bekijken [technische video](https://experienceleague.adobe.com/docs/commerce-learn/tutorials/tools/quality-patch-tool.html?lang=en) en leer hoe u het gereedschap Kwaliteitspatches voor Adobe Commerce kunt gebruiken.
 
 >[!INFO]
 >
@@ -62,7 +61,7 @@ Adobe Commerce 2.3.5.
 De statustabel bevat:
 
 - **Type**:
-   - `Optional` — Alle patches van de [!DNL Quality Patches Tool] en de [Commerce on Cloud Infrastructure Guide > Patches toepassen](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html) -pakket is optioneel voor Adobe Commerce- en Magento Open Source-installaties.
+   - `Optional` — Alle patches van de [!DNL Quality Patches Tool] en de [Commerce on Cloud Infrastructure Guide > Patches toepassen](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html) -pakket is optioneel voor Adobe Commerce-installaties.
    - `Deprecated` - Adobe heeft de afzonderlijke pleister vervangen. Als u de pleister hebt aangebracht, raden wij u aan deze weer in te voeren. De herstelbewerking verwijdert de patch ook uit de statustabel.
 
 - **Status**:

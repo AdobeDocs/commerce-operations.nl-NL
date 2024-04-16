@@ -1,11 +1,11 @@
 ---
 title: Software Recommendations
-description: Bekijk een lijst met aanbevolen software voor optimale prestaties van Adobe Commerce en Magento Open Source implementaties.
+description: Bekijk een lijst met aanbevolen software voor optimale prestaties van Adobe Commerce-implementaties.
 feature: Best Practices, Install
 exl-id: b091a733-7655-4e91-a988-93271872c5d5
-source-git-commit: 012cba58b336b032b1c911539008c1fb961c2e07
+source-git-commit: 8d0d8f9822b88f2dd8cbae8f6d7e3cdb14cc4848
 workflow-type: tm+mt
-source-wordcount: '1415'
+source-wordcount: '1392'
 ht-degree: 0%
 
 ---
@@ -197,7 +197,7 @@ Er zijn veel verbeteringen aangebracht in [!DNL MySQL] 5.7.9 We vertrouwen erop 
 | Parameter | Standaard | Beschrijving |
 |--- | --- | ---|
 | `innodb_buffer_pool_instances` | 8 | De standaardwaarde is ingesteld op 8 om problemen te voorkomen met meerdere threads die toegang proberen te krijgen tot dezelfde instantie. |
-| `innodb_buffer_pool_size` | 128MB | Gecombineerd met de veelvoudige hierboven beschreven groepsinstanties, betekent dit een standaardgeheugentoewijzing van 1024MB. De totale grootte wordt over alle bufferpools verdeeld. Geef voor de beste efficiëntie een combinatie van `innodb_buffer_pool_instances` en `innodb_buffer_pool_size` zodat elke instantie van de bufferpool minstens 1 GB is. |
+| `innodb_buffer_pool_size` | 128 MB | Gecombineerd met de veelvoudige hierboven beschreven groepsinstanties, betekent dit een standaardgeheugentoewijzing van 1024MB. De totale grootte wordt over alle bufferpools verdeeld. Geef voor de beste efficiëntie een combinatie van `innodb_buffer_pool_instances` en `innodb_buffer_pool_size` zodat elke instantie van de bufferpool minstens 1 GB is. |
 | `max_connections` | 150 | De waarde van `max_connections` Deze parameter moet correleren met het totale aantal PHP threads dat is geconfigureerd in de toepassingsserver. Een algemene aanbeveling zou 300 zijn voor een klein milieu en 1000 voor een middelgroot milieu. |
 | `innodb_thread_concurrency` | 0 | De beste waarde voor deze configuratie zou door de formule moeten worden berekend: `innodb_thread_concurrency = 2 * (NumCPUs + NumDisks)` |
 

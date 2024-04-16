@@ -3,9 +3,9 @@ title: Beginselen van platformontwikkeling
 description: Begrijp fundamentele beginselen voor platformontwikkeling wanneer u met Adobe Commerce werkt.
 exl-id: 3d822a8c-0e81-4a80-a820-46cf2702e0bf
 feature: Cloud
-source-git-commit: 3c1a49c2dc3dc0d3d47e16c724d4099b6a456c77
+source-git-commit: 8d0d8f9822b88f2dd8cbae8f6d7e3cdb14cc4848
 workflow-type: tm+mt
-source-wordcount: '219'
+source-wordcount: '206'
 ht-degree: 0%
 
 ---
@@ -30,4 +30,4 @@ Net als bij elk groot IT-project is Adobe Commerce gebaseerd op coderingsstandaa
 
 ## Adobe Commerce over cloudinfrastructuur
 
-Adobe Commerce on cloud Infrastructure is een beheerd, geautomatiseerd hostplatform voor de Adobe Commerce-software. Adobe Commerce op cloudinfrastructuur wordt geleverd met verschillende functies die deze infrastructuur onderscheiden van Adobe Commerce op locatie en implementaties van Magento Open Sourcen. Zie de [Cloud Guide](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/overview.html).
+Adobe Commerce on cloud Infrastructure is een beheerd, geautomatiseerd hostplatform voor de Adobe Commerce-software. Adobe Commerce op cloudinfrastructuur wordt geleverd met verschillende functies die deze infrastructuur onderscheiden van Adobe Commerce-implementaties op locatie. Zie de [Cloud Guide](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/overview.html).

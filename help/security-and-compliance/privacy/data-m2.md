@@ -1,10 +1,10 @@
 ---
 title: Referentie persoonlijke gegevens van klant (versie 2.x)
-description: Meer informatie over dataflow-diagrammen en toewijzingen van database-entiteiten voor persoonlijke gegevens van klanten in Adobe Commerce en Magento Open Source 2.x.
+description: Meer informatie over dataflow-diagrammen en toewijzingen van database-entiteiten voor persoonlijke gegevens van klanten in Adobe Commerce 2.x.
 exl-id: f08f4f93-a7b6-4c43-bc07-f159822dc528
-source-git-commit: 95ffff39d82cc9027fa633dffedf15193040802d
+source-git-commit: 8d0d8f9822b88f2dd8cbae8f6d7e3cdb14cc4848
 workflow-type: tm+mt
-source-wordcount: '755'
+source-wordcount: '837'
 ht-degree: 0%
 
 ---
@@ -13,7 +13,7 @@ ht-degree: 0%
 
 >[!NOTE]
 >
->Dit is een van de onderwerpen die Adobe Commerce en Magento Open Source handelaren en ontwikkelaars helpen zich voor te bereiden op naleving van privacyregels. Raadpleeg uw juridisch adviseur om te bepalen of en hoe uw bedrijf aan om het even welke wettelijke verplichtingen moet voldoen.
+>Dit is een van de onderwerpen die Adobe Commerce-handelaren en -ontwikkelaars helpen zich voor te bereiden op naleving van privacyregels. Raadpleeg uw juridisch adviseur om te bepalen of en hoe uw bedrijf aan om het even welke wettelijke verplichtingen moet voldoen.
 
 Gebruik de volgende dataflow diagrammen en de afbeeldingen van de gegevensbestandentiteit ter referentie wanneer het ontwikkelen van nalevingsprogramma&#39;s voor privacyverordeningen zoals:
 
@@ -32,7 +32,7 @@ Een gebruiker kan klant-, adres- en betalingsgegevens invoeren bij het registrer
 
 ### Punten voor gegevenstoegang vóór
 
-Adobe Commerce en Magento Open Source laden klantgegevens wanneer de klant zich aanmeldt en verschillende pagina&#39;s bekijkt of uitcheckt.
+Adobe Commerce laadt klantgegevens wanneer de klant zich aanmeldt en verschillende pagina&#39;s bekijkt, of checkt deze uit.
 
 ![Punten voor gegevenstoegang vóór](../../assets/security-compliance/frontend-data-access-points.svg)
 
@@ -44,17 +44,17 @@ Een handelaar kan klantinformatie, adresgegevens, en betalingsgegevens ingaan wa
 
 ### Gegevenstoegangspunten op de achtergrond
 
-Adobe Commerce en Magento Open Source laden klantgegevens wanneer een handelaar verschillende typen rasters weergeeft, op een raster klikt om gedetailleerde informatie weer te geven en diverse andere taken uitvoert.
+Adobe Commerce laadt klanteninformatie wanneer een handelaar verscheidene types van netten bekijkt, op een net klikt om gedetailleerde informatie te zien, en diverse andere taken uitvoert.
 
 ![Gegevenstoegangspunten op de achtergrond](../../assets/security-compliance/backend-data-access-points.svg)
 
 ## Database-entiteiten
 
-Adobe Commerce en Magento Open Source slaan vooral klantspecifieke informatie op in de tabellen voor klanten, adressen, bestellingen, aanhalingstekens en betalingen. Andere tabellen bevatten verwijzingen naar de klant-id.
+Adobe Commerce slaat voornamelijk klantspecifieke informatie op in de tabellen voor klanten, adressen, bestellingen, aanhalingstekens en betalingen. Andere tabellen bevatten verwijzingen naar de klant-id.
 
 ### Klantgegevens
 
-Adobe Commerce en Magento Open Source kunnen worden geconfigureerd om de volgende klantkenmerken op te slaan:
+Adobe Commerce kan worden geconfigureerd om de volgende klantkenmerken op te slaan:
 
 - Geboortedatum
 - E-mail
@@ -119,7 +119,7 @@ De volgende kolommen in de `customer_grid_flat` tabel bevat klantgegevens:
 
 ### Adresgegevens
 
-Adobe Commerce en Magento Open Source slaan de volgende klantkenmerken op:
+Adobe Commerce slaat de volgende klantkenmerken op:
 
 - Plaats
 - Bedrijf
@@ -295,7 +295,7 @@ De `sales_order_payment` de tabel bevat creditcardgegevens en andere transactieg
 
 ### Uitnodigingsgegevens
 
-Adobe Commerce en Magento Open Source kunnen zo worden geconfigureerd dat klanten uitnodigingen kunnen verzenden naar persoonlijke verkoop en gebeurtenissen.
+Adobe Commerce kan zo worden geconfigureerd dat klanten uitnodigingen kunnen verzenden naar persoonlijke verkoop en gebeurtenissen.
 
 #### `magento_invitation` table
 

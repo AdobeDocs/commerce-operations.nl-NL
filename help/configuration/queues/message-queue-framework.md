@@ -1,10 +1,10 @@
 ---
 title: Overzicht berichtenrijen
-description: Lees meer over het framework voor de wachtrij van berichten en hoe dit werkt met de toepassing Adobe Commerce en Magento Open Source.
+description: Lees meer over het framework voor de wachtrij van berichten en hoe dit werkt met de Adobe Commerce-toepassing.
 exl-id: 21e7bc3e-6265-4399-9d47-d3b9f03dfef6
-source-git-commit: 95ffff39d82cc9027fa633dffedf15193040802d
+source-git-commit: 8d0d8f9822b88f2dd8cbae8f6d7e3cdb14cc4848
 workflow-type: tm+mt
-source-wordcount: '299'
+source-wordcount: '297'
 ht-degree: 0%
 
 ---
@@ -19,7 +19,7 @@ Het volgende diagram illustreert het Kader van de Rij van het Bericht:
 
 - Een uitgever is een component die berichten naar een uitwisseling verzendt. Het weet aan welke uitwisseling te publiceren aan en het formaat van de berichten het verzendt.
 
-- Een uitwisseling ontvangt berichten van uitgevers en verzendt hen naar rijen. Hoewel [!DNL RabbitMQ] steunt veelvoudige soorten uitwisselingen, gebruikt de Handel onderwerpuitwisseling slechts. Een onderwerp omvat een verpletterende sleutel, die tekstkoorden bevat die door punten worden gescheiden. De indeling voor een onderwerpnaam is `string1.string2`: bijvoorbeeld `customer.created` of `customer.sent.email`.
+- Een uitwisseling ontvangt berichten van uitgevers en verzendt hen naar rijen. Hoewel [!DNL RabbitMQ] steunt veelvoudige soorten uitwisselingen, gebruikt Commerce onderwerpuitwisseling slechts. Een onderwerp omvat een verpletterende sleutel, die tekstkoorden bevat die door punten worden gescheiden. De indeling voor een onderwerpnaam is `string1.string2`: bijvoorbeeld `customer.created` of `customer.sent.email`.
 
   De makelaar staat u toe om vervangingen te gebruiken wanneer het plaatsen van regels voor het door:sturen van berichten. U kunt een sterretje gebruiken (`*`) te vervangen _één_ tekenreeks of hekje (`#`) om 0 of meer tekenreeksen te vervangen. Bijvoorbeeld: `customer.*` zou filteren op `customer.create` en `customer.delete`, maar niet `customer.sent.email`. Echter `customer.#` zou filteren op `customer.create`,  `customer.delete`, en `customer.sent.email`.
 

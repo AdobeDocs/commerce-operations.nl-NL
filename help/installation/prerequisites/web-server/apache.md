@@ -1,10 +1,10 @@
 ---
 title: Apache
-description: Voer de volgende stappen uit om de Apache-webserver te installeren en configureren voor installaties in de bedrijfsruimten van Adobe Commerce en Magento Open Source.
+description: Voer de volgende stappen uit om de Apache-webserver voor installaties op locatie van Adobe Commerce te installeren en te configureren.
 exl-id: a9a394c9-389f-42ef-9029-dd22c979cfb8
-source-git-commit: 95ffff39d82cc9027fa633dffedf15193040802d
+source-git-commit: 8d0d8f9822b88f2dd8cbae8f6d7e3cdb14cc4848
 workflow-type: tm+mt
-source-wordcount: '844'
+source-wordcount: '763'
 ht-degree: 0%
 
 ---
@@ -28,11 +28,11 @@ Adobe Commerce ondersteunt Apache 2.4.x.
 
 Dit onderwerp bespreekt hoe te om Apache 2.4 toe te laten herschrijft en het plaatsen voor te specificeren [gedistribueerd configuratiebestand, `.htaccess`](https://httpd.apache.org/docs/current/howto/htaccess.html).
 
-Adobe Commerce en Magento Open Source gebruiken herschrijven en `.htaccess` instructies op directoryniveau voor Apache te geven. De volgende instructies zijn ook inbegrepen in alle andere secties in dit onderwerp.
+Adobe Commerce gebruikt herschrijvingen op de server en `.htaccess` instructies op directoryniveau voor Apache te geven. De volgende instructies zijn ook inbegrepen in alle andere secties in dit onderwerp.
 
 Gebruik deze sectie om herschrijvingen van Apache 2.4 in te schakelen en een instelling voor de [gedistribueerd configuratiebestand, `.htaccess`](https://httpd.apache.org/docs/current/howto/htaccess.html)
 
-Adobe Commerce en Magento Open Source gebruiken herschrijven en `.htaccess` instructies op directoryniveau voor Apache te geven.
+Adobe Commerce gebruikt herschrijvingen op de server en `.htaccess` instructies op directoryniveau voor Apache te geven.
 
 >[!NOTE]
 >
@@ -79,7 +79,7 @@ Adobe Commerce en Magento Open Source gebruiken herschrijven en `.htaccess` inst
 
 ## Vereiste modules voor Apache
 
-Adobe Commerce en Magento Open Source vereisen de installatie van de volgende Apache-modules:
+Adobe Commerce vereist de installatie van de volgende Apache-modules:
 
 - [mod_deflate.c](https://httpd.apache.org/docs/2.4/mod/mod_deflate.html)
 - [mod_expired.c](https://httpd.apache.org/docs/2.4/mod/mod_expires.html)
@@ -184,7 +184,7 @@ Ga als volgt te werk om bij te werken naar Apache 2.4:
 
 ## Apache installeren op CentOS
 
-Voor Adobe Commerce en Magento Open Source is herschrijven van de Apache-gebruiksserver vereist. U moet ook het type instructies opgeven waarin u `.htaccess`, die de toepassing gebruikt om herschrijfregels op te geven.
+Adobe Commerce vereist herschrijven van Apache-server. U moet ook het type instructies opgeven waarin u `.htaccess`, die de toepassing gebruikt om herschrijfregels op te geven.
 
 Het installeren en configureren van Apache is in principe een proces in drie stappen: de software installeren, herschrijven inschakelen en opgeven `.htaccess` richtlijnen.
 

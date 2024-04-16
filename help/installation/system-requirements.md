@@ -1,21 +1,21 @@
 ---
 title: Systeemvereisten
-description: Gebruik deze verwijzing om vereiste softwaregebiedsdelen te identificeren die met Adobe Commerce en de versies van de Magento Open Source zijn getest.
+description: Gebruik deze verwijzing om vereiste softwaregebiedsdelen te identificeren die met de versies van Adobe Commerce zijn getest.
 exl-id: 008c9edc-7d72-403c-847f-0e3b77bbb197
-source-git-commit: 4087d5f5de0bc11ce120d61a539800a3533893f0
+source-git-commit: 8d0d8f9822b88f2dd8cbae8f6d7e3cdb14cc4848
 workflow-type: tm+mt
-source-wordcount: '760'
+source-wordcount: '732'
 ht-degree: 0%
 
 ---
 
 # Systeemvereisten
 
-Hieronder volgt een overzicht van softwareafhankelijkheden en services die zijn getest voor Adobe Commerce en Magento Open Source.
+Hieronder volgt een overzicht van softwareafhankelijkheden en services die zijn getest voor Adobe Commerce.
 
 Er zijn enkele verschillen in de afhankelijkheid van de handel op de infrastructuur van de cloud. Serviceversie en compatibiliteitsondersteuning voor Adobe Commerce op cloudinfrastructuur worden bepaald door services die worden getest en geïmplementeerd in de gehoste cloudomgevingen, en verschillen soms van versies die worden ondersteund door Adobe Commerce-implementaties op locatie. Bijvoorbeeld, wordt Elasticsearch 7.17 gesteund voor Handel 2.4.4 voor plaatsingen op-gebouw, maar OpenSearch 1.2 wordt gesteund voor Handel 2.4.4 op de infrastructuur van de Wolk.
 
-De volgende lijsten tonen versies van derdesoftwaregebiedsdelen die de Adobe met specifieke versies van Adobe Commerce en van de Magento Open Source heeft getest.
+De volgende lijsten tonen versies van derdesoftwaregebiedsdelen die de Adobe met specifieke versies van Adobe Commerce heeft getest.
 
 Adobe ondersteunt alleen de combinatie van systeemvereisten die in de volgende tabellen wordt beschreven. 2.4.5 wordt bijvoorbeeld volledig getest met MariaDB 10.4. Adobe raadt u aan een upgrade naar MariaDB 10.4 uit te voeren voordat u de upgrade uitvoert naar versie 2.4.5.
 
@@ -52,7 +52,7 @@ Zie [Services configureren](https://experienceleague.adobe.com/docs/commerce-clo
 
 ## PHP-instellingen
 
-Er zijn bepaalde PHP configuratie montages, zoals `memory_limit` Deze instelling kan u helpen algemene problemen te voorkomen bij het gebruik van Adobe Commerce en Magento Open Source. Zie [Vereiste PHP-instellingen](prerequisites/php-settings.md).
+Er zijn bepaalde PHP configuratie montages, zoals `memory_limit` Deze instelling kan u helpen algemene problemen te voorkomen bij het gebruik van Adobe Commerce. Zie [Vereiste PHP-instellingen](prerequisites/php-settings.md).
 
 Voor hulp bij de configuratie van de cloud raadpleegt u [PHP-instellingen](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure/app/php-settings.html) in de _Handel in Cloud-infrastructuur_ hulplijn.
 
@@ -102,7 +102,7 @@ In deze sectie worden de ondersteuning en compatibiliteit voor alle andere typen
 
 >[!NOTE]
 >
->De volgende vereisten gelden voor de nieuwste 2.4.x patch-release van Adobe Commerce en Magento Open Source. Indien van toepassing, wordt de leidraad voor handel in de infrastructuur van de cloud verstrekt.
+>De volgende vereisten gelden voor de nieuwste patchrelease van Adobe Commerce met 2.4.x. Indien van toepassing, wordt de leidraad voor handel in de infrastructuur van de cloud verstrekt.
 
 ### Browsers
 
@@ -127,7 +127,7 @@ Voor het upgraden van de toepassingen en extensies die u van de Commerce Marketp
 
 Linux-distributies, zoals RedHat Enterprise Linux (RHEL), CentOS, Ubuntu, Debian en dergelijke. Microsoft Windows en macOS worden niet ondersteund.
 
-Voor sommige bewerkingen zijn voor Adobe Commerce en Magento Open Source de volgende systeemgereedschappen vereist:
+Adobe Commerce heeft voor bepaalde bewerkingen de volgende systeemgereedschappen nodig:
 
 - [[!DNL bash]](https://www.gnu.org/software/bash/)
 - [[!DNL gzip]](https://www.gzip.org/)
@@ -149,7 +149,7 @@ Voor Handel in Cloud-infrastructuur raadpleegt u [Snelle configuratie](https://e
 
 ### Xdebug
 
-Gebruik voor Adobe Commerce en Magento Open Source [php_xdebug 2.5.x](https://xdebug.org/download) of later (alleen ontwikkelomgevingen; kan een negatief effect hebben op de prestaties).
+Voor Adobe Commerce: gebruiken [php_xdebug 2.5.x](https://xdebug.org/download) of later (alleen ontwikkelomgevingen; kan een negatief effect hebben op de prestaties).
 
 Voor Adobe Commerce on Cloud raadpleegt u [Xdebug configureren](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/test/debug.html) in de _Handel in Cloud-infrastructuur_ hulplijn.
 

@@ -2,9 +2,9 @@
 title: California Consumer Privacy Act (CCPA)
 description: Leer over de Wet van de Privacy van de Consumentenprivacy van Californië (CCPA), die de rechten van consumenten in Californië uitbreidt om te bepalen hoe hun persoonlijke informatie wordt verzameld, opgeslagen, en gebruikt.
 exl-id: 5df0e745-fb2c-438e-aedd-17fb72be1350
-source-git-commit: 95ffff39d82cc9027fa633dffedf15193040802d
+source-git-commit: 8d0d8f9822b88f2dd8cbae8f6d7e3cdb14cc4848
 workflow-type: tm+mt
-source-wordcount: '413'
+source-wordcount: '396'
 ht-degree: 0%
 
 ---
@@ -13,7 +13,7 @@ ht-degree: 0%
 
 >[!NOTE]
 >
->Dit is één in een reeks onderwerpen om Adobe Commerce en Magento Open Source handelaren en ontwikkelaars te helpen de implicaties van de Wet van de Privacy van de Consumentenprivacy van Californië (CCPA) begrijpen. De informatie is uitsluitend bedoeld voor informatieve doeleinden en mag niet worden opgevat als juridisch advies. Raadpleeg uw juridisch adviseur om te bepalen of en hoe uw bedrijf aan om het even welke wettelijke verplichtingen moet voldoen.
+>Dit is één in een reeks onderwerpen om de verkopers en de ontwikkelaars van Adobe Commerce te helpen de implicaties van de Wet van de Privacy van de Consument van Californië (CCPA) begrijpen. De informatie is uitsluitend bedoeld voor informatieve doeleinden en mag niet worden opgevat als juridisch advies. Raadpleeg uw juridisch adviseur om te bepalen of en hoe uw bedrijf aan om het even welke wettelijke verplichtingen moet voldoen.
 
 De [CCPA](https://oag.ca.gov/privacy/ccpa) De rechten van consumenten in Californië worden uitgebreid om te bepalen hoe hun persoonlijke gegevens worden verzameld, opgeslagen en gebruikt, waarbij de nadruk ligt op de bescherming van consumenten tegen de ongeoorloofde verkoop of uitwisseling van of hun persoonlijke gegevens. De CCPA is in 2018 vastgesteld en is vanaf 1 januari 2020 van kracht.
 

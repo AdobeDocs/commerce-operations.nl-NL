@@ -2,16 +2,16 @@
 title: Releasebeleid
 description: Leer meer over de verschillende typen Adobe Commerce-releases, zoals kleine patches, beveiligingspatches, functies, hotfix, afzonderlijke patches en aangepaste patches.
 exl-id: 61a83de6-6a7b-4a88-8fff-1638b4fe472a
-source-git-commit: 9a74f87e0da5a7f11cd0930c8265556d80e3d1de
+source-git-commit: f7db6b65d74c605976a3a338c98eebda2dc46a43
 workflow-type: tm+mt
-source-wordcount: '832'
+source-wordcount: '799'
 ht-degree: 0%
 
 ---
 
 # Adobe Commerce-releasebeleid
 
-Adobe Commerce en gebruik van Magento Open Source [semantische versie](https://semver.org/) op het niveau van de afzonderlijke modules (bijvoorbeeld `magento/framework 101.1.1`), maar niet voor het versienummer van de marketingversie. Bijvoorbeeld:
+Adobe Commerce gebruikt [semantische versie](https://semver.org/) op het niveau van de afzonderlijke modules (bijvoorbeeld `magento/framework 101.1.1`), maar niet voor het versienummer van de marketingversie. Bijvoorbeeld:
 
 - **MAJOR release**—2
 - **MINOR release**—2,4

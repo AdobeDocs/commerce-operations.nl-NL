@@ -2,9 +2,9 @@
 title: Algemene verordening inzake gegevensbescherming (GDPR)
 description: Leer over de algemene verordening inzake gegevensbescherming (GDPR), die wetgeving is die gegevensbescherming en privacy regelt voor alle individuen in de Europese Unie en de Europese Economische Ruimte.
 exl-id: 30e60601-f4f7-419e-b2dd-8c82c8a2ed33
-source-git-commit: 95ffff39d82cc9027fa633dffedf15193040802d
+source-git-commit: 8d0d8f9822b88f2dd8cbae8f6d7e3cdb14cc4848
 workflow-type: tm+mt
-source-wordcount: '292'
+source-wordcount: '268'
 ht-degree: 0%
 
 ---
@@ -13,7 +13,7 @@ ht-degree: 0%
 
 >[!NOTE]
 >
->Dit is een van de onderwerpen die Adobe Commerce en Magento Open Source handelaren en ontwikkelaars moeten helpen de implicaties van de algemene gegevensbeschermingsverordening (GDPR) te begrijpen. De informatie is uitsluitend bedoeld voor informatieve doeleinden en mag niet worden opgevat als juridisch advies. Raadpleeg uw juridisch adviseur om te bepalen of en hoe uw bedrijf aan om het even welke wettelijke verplichtingen moet voldoen.
+>Dit is een van de onderwerpen die Adobe Commerce-handelaren en -ontwikkelaars helpen de implicaties van de algemene gegevensbeschermingsverordening (GDPR) te begrijpen. De informatie is uitsluitend bedoeld voor informatieve doeleinden en mag niet worden opgevat als juridisch advies. Raadpleeg uw juridisch adviseur om te bepalen of en hoe uw bedrijf aan om het even welke wettelijke verplichtingen moet voldoen.
 
 De Europese Unie heeft [Algemene verordening inzake gegevensbescherming](https://ec.europa.eu/info/law/law-topic/data-protection_en) (GDPR) haar burgers meer controle te geven over hun persoonsgegevens. De GDPR is van toepassing op elke organisatie die actief is binnen de EU. Het is ook van toepassing op organisaties buiten de EU die goederen of diensten aanbieden aan klanten of bedrijven in de EU.
 
@@ -29,7 +29,7 @@ Voor technische informatie, zie de dataflow diagrammen en de afbeeldingen van de
 - [Referentie persoonlijke gegevens van klant (versie 2.x)](data-m2.md)
 - [Referentie persoonlijke gegevens klant (versie) 1.x](data-m1.md)
 
-Raadpleeg de volgende bronnen voor meer informatie over hoe Adobe Commerce en Magento Open Source Help-handelaren de GDPR naleven:
+Raadpleeg het volgende voor meer informatie over hoe Adobe Commerce handelaren helpt bij het naleven van GDPR:
 
 - [GDPR-compatibiliteit](https://experienceleague.adobe.com/docs/commerce-admin/start/compliance/privacy/compliance-gdpr.html)
 - [Adobe Commerce is gereed voor GDPR](https://business.adobe.com/privacy/general-data-protection-regulation.html)

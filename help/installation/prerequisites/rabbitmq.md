@@ -1,10 +1,10 @@
 ---
 title: Berichtenmakelaar
-description: Voer de volgende stappen uit om de vereiste berichtbrokersoftware (zoals [!DNL RabbitMQ]) voor installaties ter plaatse in Adobe Commerce en Magento Open Source.
+description: Voer de volgende stappen uit om de vereiste berichtbrokersoftware (zoals [!DNL RabbitMQ]) voor installaties in Adobe Commerce.
 exl-id: ae6200d6-540f-46b3-92ba-7df7f6bb6fae
-source-git-commit: 95ffff39d82cc9027fa633dffedf15193040802d
+source-git-commit: 8d0d8f9822b88f2dd8cbae8f6d7e3cdb14cc4848
 workflow-type: tm+mt
-source-wordcount: '581'
+source-wordcount: '560'
 ht-degree: 0%
 
 ---
@@ -55,7 +55,7 @@ Zie de [[!DNL RabbitMQ]/Erlang version matrix](https://www.rabbitmq.com/which-er
 
 De [!DNL RabbitMQ] server is opgenomen in CentOS, maar de versie is vaak oud. [!DNL RabbitMQ] raadt u aan het pakket vanaf hun website te installeren.
 
-Zie de [!DNL RabbitMQ] installeer pagina om de nieuwste ondersteunde versie op te halen. Ondersteuning voor Adobe Commerce en Magento Open Source 2.3 en 2.4 [!DNL RabbitMQ] 3.8.x.
+Zie de [!DNL RabbitMQ] installeer pagina om de nieuwste ondersteunde versie op te halen. Adobe Commerce 2.3- en 2.4-ondersteuning [!DNL RabbitMQ] 3.8.x.
 
 Zie [Installeren op Linux op basis van RPM](https://www.rabbitmq.com/install-rpm.html) voor meer informatie .
 

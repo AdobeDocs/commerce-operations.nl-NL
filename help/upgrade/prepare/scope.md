@@ -2,9 +2,9 @@
 title: Omgaan met upgradebereik
 description: Leer over achterwaartse onverenigbare veranderingen in een versie die Adobe Commerce of Magento Open Source douanemodules of derdeuitbreidingen zou kunnen beïnvloeden.
 exl-id: dab2a14f-dbf0-422e-afb4-642e2220ec7a
-source-git-commit: 95ffff39d82cc9027fa633dffedf15193040802d
+source-git-commit: 8d0d8f9822b88f2dd8cbae8f6d7e3cdb14cc4848
 workflow-type: tm+mt
-source-wordcount: '928'
+source-wordcount: '901'
 ht-degree: 0%
 
 ---
@@ -15,7 +15,7 @@ Controleer de [releaseopmerkingen](https://devdocs.magento.com/guides/v2.4/relea
 
 ## Achteruit incompatibele wijzigingen
 
-Adobe Commerce- en Magento Open Source-releases kunnen niet-compatibele wijzigingen bevatten. Raadpleeg de volgende bronnen voor documentatie over achterwaartse en incompatibele wijzigingen:
+Adobe Commerce-releases kunnen niet-compatibele wijzigingen bevatten. Raadpleeg de volgende bronnen voor documentatie over achterwaartse en incompatibele wijzigingen:
 
 - **[Belangrijke wijzigingsmarkeringen](https://devdocs.magento.com/guides/v2.4/release-notes/backward-incompatible-changes/index.html)**—Wijzigingen die een grote impact hebben en gedetailleerde uitleg en speciale instructies vereisen om ervoor te zorgen dat modules van derden blijven werken.
 - **[Referentie kleine wijziging](https://devdocs.magento.com/guides/v2.4/release-notes/backward-incompatible-changes/reference.html)**—Referentiedocumentatie die is gegenereerd vanuit de codebasis en die kleine wijzigingen beschrijft in klassen, API-lidmaatschap, database, afhankelijkheidsinjectie, interfaces, lay-outs, systeem en XSD.

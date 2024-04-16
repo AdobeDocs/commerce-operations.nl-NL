@@ -2,16 +2,16 @@
 title: Overzicht van het inhoudsbeveiligingsbeleid
 description: Leer hoe u de beveiligingspositie van uw Adobe Commerce- of Magento Open Source-winkel kunt verbeteren met behulp van een beleid voor inhoudsbeveiliging.
 exl-id: 81070a09-5f8f-48b1-b542-1443dbd43f5f
-source-git-commit: 8bb692518536f5e7403ed308328e6532c020a230
+source-git-commit: 8d0d8f9822b88f2dd8cbae8f6d7e3cdb14cc4848
 workflow-type: tm+mt
-source-wordcount: '501'
+source-wordcount: '497'
 ht-degree: 0%
 
 ---
 
 # Overzicht van het inhoudsbeveiligingsbeleid
 
-Een beleid van de Veiligheid van de Inhoud (CSP) kan extra lagen defensie voor de installaties van Adobe Commerce en van de Magento Open Source verstrekken door het helpen om de Scripting van de Intersite (XSS) en verwante aanvallen van de gegevensinjectie te ontdekken en te verlichten. Deze algemene aanvalsvector werkt door kwaadaardige inhoud in te voeren waarvan ten onrechte wordt beweerd dat deze van de website afkomstig is. Nadat de kwaadaardige inhoud is geladen en uitgevoerd, kan de overdracht van gegevens door onbevoegden worden gestart.
+Een beleid van de Veiligheid van de Inhoud (CSP) kan extra lagen defensie voor de installaties van Adobe Commerce verstrekken door te helpen om de Overseinen Scripting van de Ruimte (XSS) en verwante aanvallen van de gegevensinjectie te ontdekken en te verlichten. Deze algemene aanvalsvector werkt door kwaadaardige inhoud in te voeren waarvan ten onrechte wordt beweerd dat deze van de website afkomstig is. Nadat de kwaadaardige inhoud is geladen en uitgevoerd, kan de overdracht van gegevens door onbevoegden worden gestart.
 
 CSP verstrekt een gestandaardiseerde reeks richtlijnen die browser vertelt welke inhoudsmiddelen kunnen worden vertrouwd, en die zouden moeten worden geblokkeerd. Met zorgvuldig gedefinieerde beleidsregels kan CSP de browserinhoud beperken, zodat alleen gewhitelisteerde bronnen worden weergegeven.
 

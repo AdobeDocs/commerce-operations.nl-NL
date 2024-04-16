@@ -1,13 +1,13 @@
 ---
-source-git-commit: 8b9e4de2799532e4654fce63d856c2d301025f09
+source-git-commit: f7db6b65d74c605976a3a338c98eebda2dc46a43
 workflow-type: tm+mt
-source-wordcount: '273'
+source-wordcount: '269'
 ht-degree: 0%
 
 ---
 # Fragmenten
 
-## Alleen handel {#commerce-only}
+## Alleen Commerce {#commerce-only}
 
 >[!NOTE]
 >
@@ -45,7 +45,7 @@ ht-degree: 0%
 
 >[!NOTE]
 >
->Adobe Commerce- en Magento Open Source-releases kunnen achterwaartse incompatibele wijzigingen (BIC&#39;s) bevatten. Als u wijzigingen die niet compatibel zijn met oudere versies wilt bekijken, raadpleegt u [BIC-referentie](https://developer.adobe.com/commerce/php/development/backward-incompatible-changes/reference/). Belangrijke problemen die niet compatibel zijn met oudere versies worden beschreven in [BIC-hooglichten](https://developer.adobe.com/commerce/php/development/backward-incompatible-changes/highlights/). Niet alle introducties introduceren grote BIC&#39;s.
+>Adobe Commerce-releases kunnen wijzigingen bevatten die niet compatibel zijn met oudere versies. Als u wijzigingen die niet compatibel zijn met oudere versies wilt bekijken, raadpleegt u [BIC-referentie](https://developer.adobe.com/commerce/php/development/backward-incompatible-changes/reference/). Belangrijke problemen die niet compatibel zijn met oudere versies worden beschreven in [BIC-hooglichten](https://developer.adobe.com/commerce/php/development/backward-incompatible-changes/highlights/). Niet alle introducties introduceren grote BIC&#39;s.
 
 ## CVE-kennisgeving {#cve-notice}
 

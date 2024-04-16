@@ -1,10 +1,10 @@
 ---
 user-guide-title: Installatiehandleiding
-user-guide-description: Leer hoe u Adobe Commerce en Magento Open Source voor implementaties op locatie kunt installeren.
+user-guide-description: Leer hoe u Adobe Commerce installeert voor implementaties op locatie.
 feature: Install
-source-git-commit: 68c4cfc29735d2ea296f579ed0a0ff52db3fdd9f
+source-git-commit: 8d0d8f9822b88f2dd8cbae8f6d7e3cdb14cc4848
 workflow-type: tm+mt
-source-wordcount: '178'
+source-wordcount: '169'
 ht-degree: 0%
 
 ---

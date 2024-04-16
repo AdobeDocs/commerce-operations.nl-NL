@@ -2,22 +2,22 @@
 title: Aanbevolen lezen voor upgrades
 description: Lees de aanbevolen tekst voor het plannen van uw Adobe Commerce-upgrade.
 exl-id: 24ca57c0-1a68-46c4-b2fa-4a114250d0e3
-source-git-commit: 83ee645269b4fb0b63bb11f6d2255ef7fa52bc4f
+source-git-commit: 8d0d8f9822b88f2dd8cbae8f6d7e3cdb14cc4848
 workflow-type: tm+mt
-source-wordcount: '383'
-ht-degree: 2%
+source-wordcount: '264'
+ht-degree: 3%
 
 ---
 
 # Aanbevolen lezen voor upgradeplanning
 
-Ga verder met het leren van upgrades voor Adobe Commerce en Magento Open Source met de bronnen op deze pagina.
+Gebruik de bronnen op deze pagina om meer te leren over Adobe Commerce-upgrades.
 
 <table>
   <tbody>
     <tr>
       <td><strong>Opmerkingen en aankondigingen bij de release</strong>
-        <p>Leer over de recentste ontwikkelingen in Adobe Commerce en Magento Open Source, met inbegrip van productstrategie, veiligheid, insectenmoeilijke situaties, en bekende kwesties.</p>
+        <p>Meer informatie over de meest recente ontwikkelingen in Adobe Commerce, waaronder productstrategie, beveiliging, foutoplossingen en bekende problemen.</p>
           <ul>
             <li><a href="https://blog.adobe.com/">Adobe-blog</a></li>
             <li><a href="https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/overview.html">Adobe Help Center</a></li>
@@ -28,7 +28,7 @@ Ga verder met het leren van upgrades voor Adobe Commerce en Magento Open Source 
           </ul>
         </td>
       <td><strong>Gereedschappen</strong>
-        <p>Blader door gereedschappen die zijn ontworpen om het voor u gemakkelijker te maken om Adobe Commerce- en Magento Open Source-software te zoeken en te gebruiken.</p>
+        <p>Blader door gereedschappen die zijn ontworpen om het voor u gemakkelijker te maken om Adobe Commerce-software te zoeken en te gebruiken.</p>
           <ul>
             <li><a href="https://experienceleague.adobe.com/docs/commerce-learn/tutorials/uct-phpstorm.html">PhpStorm-plug-in Compatibiliteit bijwerken</a> (video)</li>
             <li><a href="../upgrade-compatibility-tool/overview.md">Compatibiliteit upgraden</a></li>
@@ -39,7 +39,7 @@ Ga verder met het leren van upgrades voor Adobe Commerce en Magento Open Source 
     </tr>
     <tr>
       <td><strong>Kalenders en beleid</strong>
-        <p>Bekijk details over Adobe Commerce en Magento Open Source releases en beleid.</p>
+        <p>Bekijk de details over de releases en het beleid van Adobe Commerce.</p>
           <ul>
             <li><a href="https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/faq/adobe-commerce-eos-policy-faq.html">Veelgestelde vragen over einde Adobe Commerce-software</a></li>
             <li><a href="https://marketplacesupport.magento.com/hc/en-us/articles/4413722432653">Beleid inzake Commerce Marketplace</a></li>
@@ -50,7 +50,7 @@ Ga verder met het leren van upgrades voor Adobe Commerce en Magento Open Source 
           </ul>
         </td>
       <td><strong>Functies en onafhankelijke services</strong>
-        <p>Ontdek de innovatieve Commerce-services die beschikbaar zijn als Adobe Commerce en Magento Open Source-extensies en waar u ze kunt ophalen.</p>
+        <p>Ontdek de innovatieve Commerce-services die beschikbaar zijn als Adobe Commerce-extensies en waar u ze kunt ophalen.</p>
           <ul>
             <li><a href="https://marketplace.magento.com/">Commerce Marketplace</a></li>
             <li><a href="https://marketplace.magento.com/magento-live-search.html">Live zoeken</a></li>

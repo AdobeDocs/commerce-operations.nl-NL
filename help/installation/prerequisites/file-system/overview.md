@@ -1,10 +1,10 @@
 ---
 title: Bestandseigendom en machtigingen
-description: Leer over het belang van de toestemmingen van het dossiersysteem wanneer het werken met op-gebouw installaties van Adobe Commerce en Magento Open Source.
+description: Leer over het belang van de toestemmingen van het dossiersysteem wanneer het werken met op-gebouw installaties van Adobe Commerce.
 exl-id: a84784bf-afd6-4dba-9745-3fefc0ecafcb
-source-git-commit: 95ffff39d82cc9027fa633dffedf15193040802d
+source-git-commit: 8d0d8f9822b88f2dd8cbae8f6d7e3cdb14cc4848
 workflow-type: tm+mt
-source-wordcount: '457'
+source-wordcount: '449'
 ht-degree: 0%
 
 ---
@@ -41,7 +41,7 @@ Als u de beveiliging wilt verscherpen, met name in een productieomgeving op een 
 >
 >Beveiliging van bestandssystemen is complex en belangrijk. Wij adviseren sterk dat u een ervaren systeembeheerder of netwerkbeheerder raadpleegt alvorens u het niveau van toestemmingen beslist te plaatsen. Wij bieden u een mechanisme dat u kunt gebruiken, maar het maken van een machtigingsstrategie is uw verantwoordelijkheid.
 
-Adobe Commerce en Magento Open Source maken gebruik van een standaardmasker met drie bits: `002`. Trek het standaardmasker van de gebreken van UNIX van 666 voor dossiers en 777 voor folders af.
+Adobe Commerce gebruikt een 3-bits standaardmasker: `002`. Trek het standaardmasker van de gebreken van UNIX van 666 voor dossiers en 777 voor folders af.
 
 Bijvoorbeeld:
 
@@ -53,7 +53,7 @@ Voor meer informatie over het maken van een `magento_umask` bestand, zie [Een ma
 
 ## Machtigingen, eigendom en toepassingsmodi
 
-We raden verschillende machtigingen en eigendom aan wanneer u de verschillende toepassingsmodi Adobe Commerce en Magento Open Source gebruikt:
+We raden verschillende machtigingen en eigendom aan wanneer u de verschillende Adobe Commerce-toepassingsmodi gebruikt:
 
 - Standaard
 - Ontwikkelaar

@@ -2,9 +2,9 @@
 title: Onderhoudsmodus in- of uitschakelen
 description: Voer de volgende stappen uit om aan te passen wat klanten zien wanneer uw Adobe Commerce- of Magento Open Source-implementatie niet beschikbaar is voor onderhoud.
 exl-id: 5d9f1493-e771-47b4-b906-3771026cf07a
-source-git-commit: 95ffff39d82cc9027fa633dffedf15193040802d
+source-git-commit: 8d0d8f9822b88f2dd8cbae8f6d7e3cdb14cc4848
 workflow-type: tm+mt
-source-wordcount: '553'
+source-wordcount: '551'
 ht-degree: 0%
 
 ---
@@ -13,7 +13,7 @@ ht-degree: 0%
 
 De volgende handleiding verwijst naar een pagina voor de standaardonderhoudsmodus. Als u een aangepaste onderhoudspagina moet gebruiken, raadpleegt u [De aangepaste onderhoudspagina maken](../../upgrade/troubleshooting/maintenance-mode-options.md) onderwerp.
 
-Adobe Commerce en gebruik van Magento Open Source [onderhoudsmodus](../../configuration/bootstrap/application-modes.md#maintenance-mode) om bootstrapping uit te schakelen. Het uitschakelen van bootstrapping is handig als u uw site onderhoudt, bijwerkt of opnieuw configureert.
+Adobe Commerce gebruikt [onderhoudsmodus](../../configuration/bootstrap/application-modes.md#maintenance-mode) om bootstrapping uit te schakelen. Het uitschakelen van bootstrapping is handig als u uw site onderhoudt, bijwerkt of opnieuw configureert.
 
 De toepassing detecteert de onderhoudsmodus als volgt:
 

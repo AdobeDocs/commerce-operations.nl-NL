@@ -1,19 +1,19 @@
 ---
 title: Uw verificatietoetsen ophalen
-description: Ga als volgt te werk om referenties op te halen voor toegang tot de pakketten Adobe Commerce en Magento Open Source Composer op repo.magento.com.
+description: Ga als volgt te werk om referenties op te halen voor toegang tot Adobe Commerce Composer-pakketten op repo.magento.com.
 exl-id: 7ec2a410-d81f-476a-bf6a-f3c61982a734
-source-git-commit: 3d9b7c5352f91308dd315a7195ee2cb1c4b191ee
+source-git-commit: 8d0d8f9822b88f2dd8cbae8f6d7e3cdb14cc4848
 workflow-type: tm+mt
-source-wordcount: '516'
+source-wordcount: '473'
 ht-degree: 0%
 
 ---
 
 # Uw verificatietoetsen ophalen
 
-De `repo.magento.com` opslagplaats is waar Adobe Commerce- en Magento Open Source- en Composer-pakketten van derden worden opgeslagen en verificatie vereisen. Gebruik uw rekening van de Commerce Marketplace om een paar van 32 karakter te produceren *verificatietoetsen* om toegang te krijgen tot de gegevensopslagruimte.
+De `repo.magento.com` In de opslagplaats worden Adobe Commerce- en Composer-pakketten van derden opgeslagen en vereist verificatie. Gebruik uw rekening van de Commerce Marketplace om een paar van 32 karakter te produceren *verificatietoetsen* om toegang te krijgen tot de gegevensopslagruimte.
 
-Voor toegangsrechten voor Adobe Commerce- en Magento Open Source-pakketten moet u sleutels gebruiken die zijn gekoppeld aan een MAGEID die toegang heeft gekregen tot deze pakketten. De MAGEID is doorgaans de primaire contactpersoon op de Adobe Commerce-account en is mogelijk niet altijd de projecteigenaar van de Adobe Commerce voor het infrastructuurproject in de cloud.
+Voor toegangsrechten voor Adobe Commerce-pakketten moet u sleutels gebruiken die zijn gekoppeld aan een MAGEID die toegang heeft gekregen tot die pakketten. De MAGEID is doorgaans de primaire contactpersoon op de Adobe Commerce-account en is mogelijk niet altijd de projecteigenaar van de Adobe Commerce voor het infrastructuurproject in de cloud.
 
 >[!TIP]
 >
@@ -46,7 +46,7 @@ U kunt verificatietoetsen ook uitschakelen of verwijderen. U kunt bijvoorbeeld t
 
 ### SSH-toegangstoken beheren
 
-Als u Adobe Commerce- en Magento Open Source-releases wilt downloaden met behulp van SSH, moet u een Toegangstoken voor downloads genereren. Een token genereren:
+Als u Adobe Commerce-releases wilt downloaden met behulp van SSH, moet u een Toegangstoken voor downloads genereren. Een token genereren:
 
 1. Aanmelden bij uw [magento.com](https://account.magento.com/customer/account/login).
 1. Klikken **Mijn account** boven aan de pagina.

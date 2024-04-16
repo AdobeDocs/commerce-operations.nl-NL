@@ -3,9 +3,9 @@ title: Thema's verwijderen
 description: Voer de volgende stappen uit om een Adobe Commerce- of Magento Open Source-thema te verwijderen.
 feature: Install, Themes
 exl-id: 73150e8c-2d83-4479-b96b-75f41fd9c842
-source-git-commit: ce405a6bb548b177427e4c02640ce13149c48aff
+source-git-commit: 8d0d8f9822b88f2dd8cbae8f6d7e3cdb14cc4848
 workflow-type: tm+mt
-source-wordcount: '473'
+source-wordcount: '453'
 ht-degree: 0%
 
 ---
@@ -14,7 +14,7 @@ ht-degree: 0%
 
 Voordat u deze opdracht gebruikt, moet u weten welk relatief pad naar het thema is ingesteld. Thema&#39;s bevinden zich in een submap van `<magento_root>/app/design/<area name>`. U moet het pad naar het thema opgeven dat begint met het gebied: `frontend` (voor thema&#39;s van de winkel) of `adminhtml` (voor beheerthema&#39;s).
 
-Het pad naar het thema Luma dat bij Adobe Commerce en Magento Open Source wordt geleverd, is bijvoorbeeld `frontend/Magento/luma`.
+Het pad naar het thema Luma dat bij Adobe Commerce wordt geleverd, is bijvoorbeeld `frontend/Magento/luma`.
 
 Zie voor meer informatie over thema&#39;s [themastructuur](https://developer.adobe.com/commerce/frontend-core/guide/themes/structure/).
 
@@ -39,7 +39,7 @@ bin/magento theme:uninstall [--backup-code] [-c|--clear-static-content] {theme p
 
 Wanneer
 
-* `{theme path}` Dit is het relatieve pad naar het thema, te beginnen met de naam van het gebied. Het pad naar het thema Blanco dat bij Adobe Commerce en Magento Open Source wordt geleverd, is bijvoorbeeld `frontend/Magento/blank`.
+* `{theme path}` Dit is het relatieve pad naar het thema, te beginnen met de naam van het gebied. Het pad naar het lege thema dat bij Adobe Commerce wordt geleverd, is bijvoorbeeld `frontend/Magento/blank`.
 * `--backup-code` maakt een back-up van de codebase, zoals beschreven in de volgende alinea&#39;s.
 * `--clear-static-content` gegenereerde opschonen [statische weergavebestanden](../../configuration/cli/static-view-file-deployment.md), die nodig is om statische weergavebestanden correct weer te geven.
 

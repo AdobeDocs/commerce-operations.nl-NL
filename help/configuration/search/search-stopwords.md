@@ -3,9 +3,9 @@ title: Zoekstopwoorden configureren
 description: Leer hoe u stopwords voor Adobe Commerce kunt beheren met gebruik van CSV-bestanden.
 feature: Configuration, Search
 exl-id: 75320868-9939-4a6e-8dbb-73ca68c9f0ee
-source-git-commit: 789b7d9dc400b1f669de0067a59e2036c2977a19
+source-git-commit: 8d0d8f9822b88f2dd8cbae8f6d7e3cdb14cc4848
 workflow-type: tm+mt
-source-wordcount: '652'
+source-wordcount: '616'
 ht-degree: 0%
 
 ---
@@ -16,7 +16,7 @@ In het algemeen: _stopwords_ Dit zijn veelvoorkomende woorden die zoekprogramma&
 
 Hoewel we vandaag nog meer opslagruimte hebben, zijn prestaties nog steeds belangrijk. Elasticsearch en OpenSearch gebruiken, net als andere zoekprogramma&#39;s, nog steeds stopwords om de prestaties te verbeteren.
 
-U moet de stopwoorden beheren met gebruik van CSV-bestanden in het dialoogvenster `<magento_root>/vendor/magento/module-elasticsearch/etc/stopwords` of de `<magento_root>/app/code/Magento/Elasticsearch/etc/stopwords/` directory, afhankelijk van hoe u de software van de Handel installeerde.
+U moet de stopwoorden beheren met gebruik van CSV-bestanden in het dialoogvenster `<magento_root>/vendor/magento/module-elasticsearch/etc/stopwords` of de `<magento_root>/app/code/Magento/Elasticsearch/etc/stopwords/` afhankelijk van de manier waarop u de Commerce-software hebt geïnstalleerd.
 
 Zie de volgende bronnen voor meer informatie over hoe Elasticsearch en OpenSearch gebruik maken van stopwords:
 
@@ -27,7 +27,7 @@ Zie de volgende bronnen voor meer informatie over hoe Elasticsearch en OpenSearc
 
 ## Stopwoorden configureren
 
-Stopwoorden bevinden zich in de `<magento_root>/vendor/magento/module-elasticsearch/etc/stopwords` directory. Adobe Commerce en Magento Open Source worden geleverd met één CSV-bestand met stopwords voor de standaardlandinstellingen en een extra bestand. `stopwords.csv`, met stopwoorden voor elke landinstelling die niet wordt vertegenwoordigd door een ander CSV-bestand.
+Stopwoorden bevinden zich in de `<magento_root>/vendor/magento/module-elasticsearch/etc/stopwords` directory. Adobe Commerce wordt geleverd met één CSV-bestand met stopwords voor de standaardlandinstellingen en een extra bestand. `stopwords.csv`, met stopwoorden voor elke landinstelling die niet wordt vertegenwoordigd door een ander CSV-bestand.
 
 De standaardlevensduur voor de cache van stopwords-bestanden is 15 minuten.
 
@@ -35,7 +35,7 @@ De standaardlevensduur voor de cache van stopwords-bestanden is 15 minuten.
 
 **Stopwoorden bewerken**:
 
-1. Meld u aan bij de Commerce-server of schakel over naar de [eigenaar van bestandssysteem](../../installation/prerequisites/file-system/overview.md).
+1. Meld u aan bij uw Commerce-server of schakel over naar de [eigenaar van bestandssysteem](../../installation/prerequisites/file-system/overview.md).
 1. Een teksteditor gebruiken om een stopwoordbestand te openen in het dialoogvenster `<magento_root>/vendor/magento/module-elasticsearch/etc/stopwords` directory.
 
    CSV-bestanden gebruiken de naamgevingsconventie `stopwords_<locale_code>.csv`. Het Duitse stopword-bestand krijgt bijvoorbeeld de naam `stopwords_de_DE.csv`.
@@ -61,7 +61,7 @@ De standaardlevensduur voor de cache van stopwords-bestanden is 15 minuten.
 
 **Stop-woorden toevoegen voor een landinstelling**:
 
-1. Meld u aan bij de Commerce-server of schakel over naar de [eigenaar van bestandssysteem](../../installation/prerequisites/file-system/overview.md).
+1. Meld u aan bij uw Commerce-server of schakel over naar de [eigenaar van bestandssysteem](../../installation/prerequisites/file-system/overview.md).
 
 1. Een teksteditor gebruiken om een stopword-bestand met de naam `stopwords_<locale_code>.csv` in de `<magento_root>/vendor/magento/module-elasticsearch/etc/stopwords` directory.
 
@@ -102,7 +102,7 @@ In deze sectie wordt beschreven hoe u de standaardmap stopword optioneel kunt wi
 - `<magento_root>/vendor/magento/module-elasticsearch/etc/stopwords`
 - `<magento_root>/app/code/Magento/Elasticsearch/etc/stopwords/`
 
-De locatie is afhankelijk van de manier waarop u de software Commerce hebt geïnstalleerd. Als u Magento 2 de bewaarplaats van GitHub kloond, is de weg onder `app/code`. Als u een gecomprimeerd archief of een pakket hebt geïnstalleerd, is het pad lager dan `vendor`.
+De locatie is afhankelijk van de manier waarop u de Commerce-software hebt geïnstalleerd. Als u Magento 2 de bewaarplaats van GitHub kloond, is de weg onder `app/code`. Als u een gecomprimeerd archief of een pakket hebt geïnstalleerd, is het pad lager dan `vendor`.
 
 **De map wijzigen**:
 

@@ -3,9 +3,9 @@ title: Implementatieconfiguratie maken of bijwerken
 description: Voer de volgende stappen uit om uw configuratie voor implementatie van Adobe Commerce of Magento Open Source te beheren.
 feature: Install, Deploy, Configuration
 exl-id: 2cdde735-0c70-44e8-b2ee-ffb874c1c443
-source-git-commit: ce405a6bb548b177427e4c02640ce13149c48aff
+source-git-commit: 8d0d8f9822b88f2dd8cbae8f6d7e3cdb14cc4848
 workflow-type: tm+mt
-source-wordcount: '708'
+source-wordcount: '680'
 ht-degree: 0%
 
 ---
@@ -39,11 +39,11 @@ In de volgende tabel worden de betekenis van installatieparameters en -waarden b
 | `--db-name` | Naam van de database-instantie waarin u de databasetabellen wilt installeren.<br><br>Standaard is `magento2`. | Nee |
 | `--db-user` | Gebruikersnaam van de eigenaar van de databaseinstantie.<br><br>Standaard is `root`. | Nee |
 | `--db-password` | Het wachtwoord van de eigenaar van de databaseinstantie. | Nee |
-| `--db-prefix` | Gebruik dit alleen als u de databasetabellen installeert in een database-instantie waarin al Adobe Commerce- en Magento Open Source-tabellen staan.<br><br>In dat geval gebruikt u een voorvoegsel om de tabellen voor deze installatie te identificeren. Sommige klanten hebben meer dan één Adobe Commerce- of Magento Open Source-instantie die op een server met alle tabellen in dezelfde database wordt uitgevoerd.<br><br>Het voorvoegsel mag maximaal vijf tekens lang zijn. De naam moet met een letter beginnen en mag alleen letters, cijfers en onderstrepingstekens bevatten.<br><br>Met deze optie kunnen deze klanten de databaseserver delen met meerdere Adobe Commerce- of Magento Open Source-installaties. | Nee |
+| `--db-prefix` | Gebruik het slechts als u de gegevensbestandlijsten in een gegevensbestandinstantie installeert die Adobe Commerce lijsten in het reeds heeft.<br><br>In dat geval gebruikt u een voorvoegsel om de tabellen voor deze installatie te identificeren. Sommige klanten hebben meer dan één Adobe Commerce- of Magento Open Source-instantie die op een server met alle tabellen in dezelfde database wordt uitgevoerd.<br><br>Het voorvoegsel mag maximaal vijf tekens lang zijn. De naam moet met een letter beginnen en mag alleen letters, cijfers en onderstrepingstekens bevatten.<br><br>Met deze optie kunnen deze klanten de databaseserver delen met meerdere Adobe Commerce- of Magento Open Source-installaties. | Nee |
 | `--session-save` | Voer een van de volgende handelingen uit:<br><br>- `db` om sessiegegevens op te slaan in het dialoogvenster [database](https://developer.adobe.com/commerce/php/development/cache/partial/database-caching/). Kies gegevensbestandopslag als u een gegroepeerd gegevensbestand hebt; anders, zou er niet veel voordeel over op dossier-gebaseerde opslag kunnen zijn.<br><br>- `files` om sessiegegevens op te slaan in het bestandssysteem. De op dossier-gebaseerde zittingsopslag is aangewezen tenzij de toegang van het dossiersysteem langzaam is, hebt u een gegroepeerd gegevensbestand, of u wilt zittingsgegevens in Redis opslaan.<br><br>- `redis` om sessiegegevens op te slaan in [Redis gebruiken voor sessieopslag](../../configuration/cache/config-redis.md). Als u Redis gebruikt als standaardinstelling of als u pagina&#39;s in cache plaatst, moet Redis al zijn geïnstalleerd. | Nee |
 | `--key` | Als u er een hebt, geeft u een sleutel op die u wilt versleutelen [vertrouwelijke gegevens](#sensitive-data) in de database. Als u er geen hebt, genereert de toepassing er een voor u. | Nee |
 | `--db-init-statements` | Geavanceerde MySQL-configuratieparameter. Gebruikt de verklaringen van de gegevensbestandinitialisatie om te lopen wanneer het verbinden met het gegevensbestand MySQL.<br><br>Standaard is `SET NAMES utf8;`.<br><br>Raadpleeg een verwijzing die vergelijkbaar is met [deze](https://dev.mysql.com/doc/refman/5.6/en/server-options.html) voordat u waarden instelt. | Nee |
-| `--http-cache-hosts` | Lijst met komma&#39;s als scheidingstekens van HTTP-cachegatewayhosts waarnaar purge-aanvragen moeten worden verzonden. (Bijvoorbeeld Varnish-servers.) Gebruik deze parameter om de host(s) op te geven die in dezelfde aanvraag moeten worden gewist. (Het maakt niet uit of u slechts één host of veel hosts hebt.)<br><br>Formaat moet `<hostname or ip>:<listen port>`, waar u kunt weglaten `<listen port>` als het poort 80 is. Bijvoorbeeld, `--http-cache-hosts=192.0.2.100,192.0.2.155:6081`. Plaats geen spatie tussen de hosts. | Nee |
+| `--http-cache-hosts` | Lijst met komma&#39;s als scheidingstekens van HTTP-cachegatewayhosts waarnaar purge-aanvragen moeten worden verzonden. (Bijvoorbeeld Varnish-servers.) Gebruik deze parameter om de host(s) op te geven die in dezelfde aanvraag moeten worden gewist. (Het maakt niet uit of u slechts één host of veel hosts hebt.)<br><br>Formaat moet `<hostname or ip>:<listen port>`, waar u kunt weglaten `<listen port>` als het poort 80 is. Bijvoorbeeld: `--http-cache-hosts=192.0.2.100,192.0.2.155:6081`. Plaats geen spatie tussen de hosts. | Nee |
 
 ## Configuratiegegevens importeren
 

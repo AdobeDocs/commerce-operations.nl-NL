@@ -3,13 +3,13 @@ title: Best practices voor catalogusbeheer
 description: Meer informatie over aanbevelingen voor het configureren van kartlimieten en productkenmerken, het aanbieden van paginering, opties, promoties en variaties.
 role: Developer
 feature: Best Practices, Catalog Management
-source-git-commit: a81e88a4293880ae90cd531ce60c5a2b177188f2
+exl-id: 9a672017-9122-4841-a67b-a183224b67dc
+source-git-commit: 8d0d8f9822b88f2dd8cbae8f6d7e3cdb14cc4848
 workflow-type: tm+mt
-source-wordcount: '1420'
+source-wordcount: '1403'
 ht-degree: 0%
 
 ---
-
 
 # Best practices voor catalogusbeheer
 
@@ -25,7 +25,7 @@ De best practices voor catalogusbeheer die hier worden beschreven, hebben betrek
 
 ## Grenswaarden voor winkelwagentjes
 
-Voor de beste prestaties gebruikt u de volgende richtlijnen voor het beheer van de kartellimieten voor Adobe Commerce en Magento Open Source.
+Voor de beste prestaties gebruikt u de volgende richtlijnen voor het beheer van de kartellimieten voor Adobe Commerce.
 
 ### Betrokken producten en versies
 
@@ -262,4 +262,3 @@ Als u meer dan het aanbevolen maximumaantal regels of coupons voor de kartonprij
 - Meer tijd om de miniaturen te laden en weer te geven.
 - Meer tijd om de winkelwagenpagina weer te geven.
 - Verhoogde tijd om de **Totalen** op de pagina Afhandeling.
-

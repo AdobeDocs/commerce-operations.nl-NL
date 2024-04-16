@@ -1,11 +1,11 @@
 ---
 title: De toepassing configureren
-description: Meer informatie over de configuratie na installatie die vereist is voor Adobe Commerce en Magento Open Source op locatie.
+description: Meer informatie over de configuratie na installatie die vereist is voor Adobe Commerce-implementaties op locatie.
 feature: Install, Configuration
 exl-id: b1808664-10ec-4147-8251-a99f8b58f4be
-source-git-commit: 40d850add2ef8c51e9192758135768306b163780
+source-git-commit: 35664c30e438305036d3cfdd1dd1924966f6ced6
 workflow-type: tm+mt
-source-wordcount: '730'
+source-wordcount: '671'
 ht-degree: 0%
 
 ---
@@ -18,7 +18,7 @@ Nu u klaar bent met het installeren van Adobe Commerce of Magento Open Source, m
 
 De UNIX taakplanner, cron, is kritiek aan de verrichtingen van dag tot dag van de toepassing. Het plant dingen zoals het opnieuw indexeren, nieuwsbrieven, e-mail, en sitemaps. A *crontab* is een uitsnijdconfiguratie.
 
-U moet Adobe Commerce- en Magento Open Source-services installeren in het dialoogvenster *crontab* of sommige kernfuncties (en sommige extensies van derden) functioneren niet correct.
+U moet Adobe Commerce-services installeren in het dialoogvenster *crontab* of sommige kernfuncties (en sommige extensies van derden) functioneren niet correct.
 
 Zie voor meer informatie over uitsnijden, zoals hoe u een tab kunt verwijderen en een uitsnede kunt uitvoeren vanaf de opdrachtregel [Uitsnede configureren en uitvoeren](../../configuration/cli/configure-cron-jobs.md).
 
@@ -79,7 +79,7 @@ Meer informatie:
 
 ### Een e-mailserver instellen
 
-Voor Adobe Commerce en Magento Open Source is een e-mailserver vereist. Wij adviseren geen bepaalde server, maar u kunt om het even welke volgend proberen:
+Adobe Commerce heeft een e-mailserver nodig. Wij adviseren geen bepaalde server, maar u kunt om het even welke volgend proberen:
 
 * Postfix voor CentOS ([Lesbestand digitale oceaan](https://www.digitalocean.com/community/tutorials/how-to-install-postfix-on-centos-6), [CentOS-documentatie](https://www.centos.org))
 * Postfix voor Ubuntu ([Lesbestand digitale oceaan](https://www.digitalocean.com/community/tutorials/how-to-install-and-setup-postfix-on-ubuntu-14-04), [Ubuntu-documentatie](https://help.ubuntu.com/community/MailServer))
@@ -92,7 +92,7 @@ Elasticsearch of OpenSearch is vereist voor alle installaties vanaf 2.4.0.
 
 ### Een wachtrij met berichten instellen
 
-Sinds versie 2.3.0 bevatten Adobe Commerce en Magento Open Source functionaliteit voor wachtrij met berichten. In eerdere versies is deze alleen beschikbaar voor Adobe Commerce.
+Sinds versie 2.3.0 bevat Adobe Commerce functionaliteit voor een wachtrij met berichten. In eerdere versies is deze alleen beschikbaar voor Adobe Commerce.
 
 * [[!DNL RabbitMQ]](../../configuration/queues/message-queue-framework.md)
 

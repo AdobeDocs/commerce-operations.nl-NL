@@ -2,9 +2,9 @@
 title: Modules in- of uitschakelen
 description: Voer de volgende stappen uit om Adobe Commerce- of Magento Open Source-modules te beheren.
 exl-id: 7155950a-a66a-4254-a71c-1a9aeab47606
-source-git-commit: 6e87d68df97adf47b5a61e8b6683ac11f600806c
+source-git-commit: 8d0d8f9822b88f2dd8cbae8f6d7e3cdb14cc4848
 workflow-type: tm+mt
-source-wordcount: '584'
+source-wordcount: '576'
 ht-degree: 0%
 
 ---
@@ -78,7 +78,7 @@ bin/magento cache:clean
 
 ## Modules in- en uitschakelen
 
-Met Adobe Commerce en Magento Open Source kunt u de momenteel beschikbare modules in- of uitschakelen, met andere woorden elke module die door Adoben wordt geleverd of elke andere module die momenteel beschikbaar is.
+Met Adobe Commerce kunt u de momenteel beschikbare modules in- of uitschakelen, met andere woorden elke module die door een Adobe wordt geleverd of elke andere module die momenteel beschikbaar is.
 
 Bepaalde modules hebben gebiedsdelen op andere modules, in welk geval u een module zou kunnen niet toelaten of onbruikbaar maken omdat het gebiedsdelen op andere modules heeft.
 
@@ -92,7 +92,7 @@ Voorbeelden:
 
 * Module A veroorzaakt een conflict met module B. U kunt Module A en Module B onbruikbaar maken, of u kunt één van beide module onbruikbaar maken maar u *kan* Module A en Module B tegelijkertijd inschakelen.
 
-* Afhankelijkheden worden gedeclareerd in het dialoogvenster `require` veld in Adobe Commerce en Magento Open Source `composer.json` bestand voor elke module. Conflicten worden gedeclareerd in de `conflict` veld in modules&quot; `composer.json` bestanden. Wij gebruiken die informatie om een gebiedsdeelgrafiek te bouwen: `A->B` betekent module A afhankelijk is van module B.
+* Afhankelijkheden worden gedeclareerd in het dialoogvenster `require` veld in Adobe Commerce `composer.json` bestand voor elke module. Conflicten worden gedeclareerd in de `conflict` veld in modules&quot; `composer.json` bestanden. Wij gebruiken die informatie om een gebiedsdeelgrafiek te bouwen: `A->B` betekent module A afhankelijk is van module B.
 
 * A *afhankelijkheidsketen* Dit is het pad van een module naar een andere module. Bijvoorbeeld, als module A van module B en module B van module C afhangt, dan is de gebiedsdeelketen `A->B->C`.
 

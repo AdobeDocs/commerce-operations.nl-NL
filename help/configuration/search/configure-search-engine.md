@@ -1,18 +1,18 @@
 ---
 title: Configuratie van zoekmachine
-description: Configureer een zoekmachine voor on-premisse implementaties van Adobe Commerce en Magento Open Source.
+description: Configureer een zoekmachine voor on-premisse implementaties van Adobe Commerce.
 feature: Configuration, Search
 exl-id: 61fbe0c2-bdd5-4f57-a518-23e180401804
-source-git-commit: 789b7d9dc400b1f669de0067a59e2036c2977a19
+source-git-commit: 8d0d8f9822b88f2dd8cbae8f6d7e3cdb14cc4848
 workflow-type: tm+mt
-source-wordcount: '652'
+source-wordcount: '643'
 ht-degree: 0%
 
 ---
 
 # Configuratie van zoekmachine
 
-Deze sectie bespreekt de minimummontages die u moet verkiezen om Elasticsearch of OpenSearch met plaatsingen op-gebouw van Adobe Commerce en Magento Open Source te testen.
+Deze sectie bespreekt de minimummontages die u moet verkiezen om Elasticsearch of OpenSearch met plaatsingen op-gebouw van Adobe Commerce te testen.
 
 >[!TIP]
 >
@@ -30,16 +30,16 @@ Voor meer informatie over het configureren van uw zoekmachine raadpleegt u de [H
 Om uw systeem te vormen om Elasticsearch of OpenSearch te gebruiken:
 
 1. Meld u als beheerder aan bij de beheerder.
-1. Klik op **[!UICONTROL Stores]** > [!UICONTROL Settings] > **[!UICONTROL Configuration]** > **[!UICONTROL Catalog]** > **[!UICONTROL Catalog]** > **[!UICONTROL Catalog Search]**.
+1. Klikken **[!UICONTROL Stores]** > [!UICONTROL Settings] > **[!UICONTROL Configuration]** > **[!UICONTROL Catalog]** > **[!UICONTROL Catalog]** > **[!UICONTROL Catalog Search]**.
 1. Van de **[!UICONTROL Search Engine]** selecteert u de bijbehorende versie van uw zoekprogramma.
 
-   De volgende lijst maakt een lijst van de vereiste opties om de verbinding met Handel te vormen en te testen. Tenzij u de serverinstellingen van uw zoekmachine hebt gewijzigd, werken de standaardwaarden beter. Ga verder met de volgende stap.
+   In de volgende tabel staan de vereiste opties voor het configureren en testen van de verbinding met Commerce. Tenzij u de serverinstellingen van uw zoekmachine hebt gewijzigd, werken de standaardwaarden beter. Ga verder met de volgende stap.
 
    | Optie | Beschrijving |
    |--- |--- |
    | **[!UICONTROL Server Hostname]** | Voer de volledig gekwalificeerde hostnaam of het IP-adres in van de computer waarop de Elasticsearch of OpenSearch wordt uitgevoerd.<br>Adobe Commerce op cloudinfrastructuur: haal deze waarde van uw integratiesysteem. |
    | **[!UICONTROL Server Port]** | Voer de proxypoort van de webserver in. De standaardwaarde is 9200<br>Adobe Commerce op cloudinfrastructuur: haal deze waarde van uw integratiesysteem. |
-   | **[!UICONTROL Index Prefix]** | Voer het voorvoegsel van de index van het zoekprogramma in. Als u één instantie voor meer dan één installatie van de Handel (het Opvoeren en de milieu&#39;s van de Productie) gebruikt, moet u een uniek voorvoegsel voor elke installatie specificeren. Anders kunt u het standaardvoorvoegsel magento2 gebruiken. |
+   | **[!UICONTROL Index Prefix]** | Voer het voorvoegsel van de index van het zoekprogramma in. Als u één exemplaar voor meer dan één installatie van Commerce (het Opvoeren en de milieu&#39;s van de Productie) gebruikt, moet u een uniek voorvoegsel voor elke installatie specificeren. Anders kunt u het standaardvoorvoegsel magento2 gebruiken. |
    | **[!UICONTROL Enable HTTP Auth]** | Klikken **[!UICONTROL Yes]** alleen als u verificatie hebt ingeschakeld voor uw zoekmachineserver. Geef in dat geval een gebruikersnaam en wachtwoord op in de opgegeven velden. |
    | **[!UICONTROL Server Timeout]** | Voer de hoeveelheid tijd (in seconden) in die moet worden gewacht wanneer u probeert verbinding te maken met de Elasticsearch of de OpenSearch-server. |
 
@@ -61,9 +61,9 @@ Om uw systeem te vormen om Elasticsearch of OpenSearch te gebruiken:
 Zo ja, probeer dan het volgende:
 
 - Zorg ervoor dat de zoekmachine-server actief is.
-- Als de server op een verschillende gastheer van Handel is, login aan de server van de Handel en pingel de gastheer van de onderzoeksmotor. Los de kwesties van de netwerkconnectiviteit op en test opnieuw de verbinding.
+- Als de server zich op een andere host dan Commerce bevindt, meldt u zich aan bij de Commerce-server en pingelt u de host van de zoekmachine. Los de kwesties van de netwerkconnectiviteit op en test opnieuw de verbinding.
 - Onderzoek het bevelvenster waarin u Elasticsearch of OpenSearch voor stapelsporen en uitzonderingen begon. U moet deze oplossen voordat u verdergaat. Zorg er met name voor dat u de zoekfunctie hebt gestart als een gebruiker met `root` rechten.
-- Controleer of [UNIX-firewall en SELinux](../../installation/prerequisites/search-engine/overview.md#firewall-and-selinux) zijn beide uitgeschakeld, of stel regels in waarmee je zoekmachine en handel met elkaar kunnen communiceren.
+- Controleer of [UNIX-firewall en SELinux](../../installation/prerequisites/search-engine/overview.md#firewall-and-selinux) zijn beide uitgeschakeld, of stel regels in waarmee je zoekmachine en Commerce met elkaar kunnen communiceren.
 - Controleer de waarde van de **[!UICONTROL Server Hostname]** veld. Controleer of de server beschikbaar is. U kunt in plaats daarvan het IP-adres van de server proberen.
 - Gebruik de `netstat -an | grep <listen-port>` bevel om te verifiëren dat de haven in wordt gespecificeerd **[!UICONTROL Server Port]** wordt niet door een ander proces gebruikt.
 
@@ -95,7 +95,7 @@ De cache reinigen met de opdrachtregel: [`bin/magento cache:clean`](../cli/manag
 
 Herindexeren met de opdrachtregel:
 
-1. Meld u aan bij de Commerce-server als of schakel over naar de [eigenaar van bestandssysteem](../../installation/prerequisites/file-system/overview.md).
+1. Meld u aan bij uw Commerce-server als of schakel over naar de [eigenaar van bestandssysteem](../../installation/prerequisites/file-system/overview.md).
 1. Voer een van de volgende opdrachten in:
 
    Voer de volgende opdracht in om alleen de zoekindex van de catalogus opnieuw te indexeren:

@@ -2,9 +2,9 @@
 title: Adobe Commerce installeren
 description: Voer de volgende stappen uit om Adobe Commerce of Magento Open Source te installeren op uw eigen infrastructuur.
 exl-id: 25f3c56e-0654-4f8b-a69d-f4152f68aca3
-source-git-commit: 95ffff39d82cc9027fa633dffedf15193040802d
+source-git-commit: 8d0d8f9822b88f2dd8cbae8f6d7e3cdb14cc4848
 workflow-type: tm+mt
-source-wordcount: '2106'
+source-wordcount: '2102'
 ht-degree: 0%
 
 ---
@@ -97,7 +97,7 @@ In Adobe Commerce versie 2.2.8 en hoger kunt u tijdens of na de installatie de b
 | `--db-name` | Naam van de database-instantie waarin u de databasetabellen wilt installeren.<br><br>Standaard is `magento2`. | Ja |
 | `--db-user` | Gebruikersnaam van de eigenaar van de databaseinstantie.<br><br>Standaard is `root`. | Ja |
 | `--db-password` | Het wachtwoord van de eigenaar van de databaseinstantie. | Ja |
-| `--db-prefix` | Gebruik dit alleen als u de databasetabellen installeert in een database-instantie waarin al Adobe Commerce- of Magento Open Source-tabellen staan.<br><br>In dat geval gebruikt u een voorvoegsel om de tabellen voor deze installatie te identificeren. Sommige klanten hebben meer dan één Adobe Commerce- en Magento Open Source-instantie die op een server met alle tabellen in dezelfde database wordt uitgevoerd.<br><br>Het voorvoegsel mag maximaal vijf tekens lang zijn. De naam moet met een letter beginnen en mag alleen letters, cijfers en onderstrepingstekens bevatten.<br><br>Met deze optie kunnen die klanten de databaseserver delen met meerdere installaties. | Nee |
+| `--db-prefix` | Gebruik dit alleen als u de databasetabellen installeert in een database-instantie waarin al Adobe Commerce- of Magento Open Source-tabellen staan.<br><br>In dat geval gebruikt u een voorvoegsel om de tabellen voor deze installatie te identificeren. Sommige klanten hebben meer dan één Adobe Commerce-instantie die op een server met alle tabellen in dezelfde database wordt uitgevoerd.<br><br>Het voorvoegsel mag maximaal vijf tekens lang zijn. De naam moet met een letter beginnen en mag alleen letters, cijfers en onderstrepingstekens bevatten.<br><br>Met deze optie kunnen die klanten de databaseserver delen met meerdere installaties. | Nee |
 | `--db-ssl-key` | Pad naar de clientsleutel. | Nee |
 | `--db-ssl-cert` | Pad naar het clientcertificaat. | Nee |
 | `--db-ssl-ca` | Pad naar het servercertificaat. | Nee |

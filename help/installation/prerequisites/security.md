@@ -3,9 +3,9 @@ title: Beveiliging van installatie op locatie
 description: Meer informatie over manieren om de beveiligingspositie van uw Adobe Commerce of Magento Open Source op locatie te verbeteren.
 feature: Install, Security
 exl-id: 56724a72-c64d-44d4-a886-90d97ae5fb6d
-source-git-commit: 40d850add2ef8c51e9192758135768306b163780
+source-git-commit: 8d0d8f9822b88f2dd8cbae8f6d7e3cdb14cc4848
 workflow-type: tm+mt
-source-wordcount: '334'
+source-wordcount: '306'
 ht-degree: 0%
 
 ---
@@ -16,7 +16,7 @@ ht-degree: 0%
 
 >[!NOTE]
 >
->Adobe heeft geen aanbeveling over het gebruik van SELinux; u kunt het voor verbeterde veiligheid gebruiken als u wilt. Als u SELinux gebruikt, moet u het op de juiste wijze configureren, anders kunnen de Adobe Commerce en de Magento Open Source onvoorspelbaar werken. Als u ervoor kiest SELinux te gebruiken, raadpleeg dan een bron zoals de [CentOS wiki](https://wiki.centos.org/HowTos/SELinux) regels op te stellen om communicatie mogelijk te maken.
+>Adobe heeft geen aanbeveling over het gebruik van SELinux; u kunt het voor verbeterde veiligheid gebruiken als u wilt. Als u SELinux gebruikt, moet u het op de juiste wijze configureren of kan de Adobe Commerce onvoorspelbaar werken. Als u ervoor kiest SELinux te gebruiken, raadpleeg dan een bron zoals de [CentOS wiki](https://wiki.centos.org/HowTos/SELinux) regels op te stellen om communicatie mogelijk te maken.
 
 ## Suggesties voor installatie met Apache
 
