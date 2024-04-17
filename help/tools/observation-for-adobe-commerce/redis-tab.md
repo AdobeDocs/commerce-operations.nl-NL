@@ -3,9 +3,9 @@ title: De [!UICONTROL Redis] tab
 description: Meer informatie over de [!UICONTROL Redis] tabblad van [!DNL Observation for Adobe Commerce].
 exl-id: 9c52350d-45a7-4afe-9dd7-c3968bd84d71
 feature: Configuration, Observability
-source-git-commit: e83e2359377f03506178c28f8b30993c172282c7
+source-git-commit: 06f015139683f319f11317f8d7f0029cbd2548e3
 workflow-type: tm+mt
-source-wordcount: '248'
+source-wordcount: '242'
 ht-degree: 0%
 
 ---
@@ -58,7 +58,7 @@ De **[!UICONTROL Redis used memory]** frame toont het knoopgebruik van geheugen 
 
 ![Wijzigingen sinds laatste keer opslaan opnieuw verzenden](../../assets/tools/observation-for-adobe-commerce/redis-tab-8.jpg)
 
-[!DNL Redis] is een geheugeningezetene en slaat de informatie op voor opslag. De **[!UICONTROL Redis changes since last db save]** frame geeft het aantal wijzigingen in het geheugen aan dat is opgetreden sinds de laatste database naar de opslaglocatie is opgeslagen. Zie [Redis persistentie](https://redis.io/docs/manual/persistence/) voor meer uitleg over [!DNL Redis's] persistentie.
+[!DNL Redis] is een geheugeningezetene en slaat de informatie op voor opslag. De **[!UICONTROL Redis changes since last db save]** frame geeft het aantal wijzigingen in het geheugen aan dat is opgetreden sinds de laatste database naar de opslaglocatie is opgeslagen. Zie [Redis persistentie](https://redis.io/docs/latest/operate/oss_and_stack/management/persistence/) voor meer uitleg over [!DNL Redis's] persistentie.
 
 ## [!UICONTROL Redis synchronization from Log]
 
