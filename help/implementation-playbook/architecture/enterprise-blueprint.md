@@ -3,7 +3,7 @@ title: Enterprise-verwijzingsarchitectuur
 description: Leer hoe u Adobe Commerce implementeert met behulp van de nieuwste composable commerce technologie van de Adobe.
 feature: App Builder, Cloud, GraphQL, Integration, Paas, Saas
 exl-id: d066ab43-20e2-4e0b-8348-0c52d6a7ac8a
-source-git-commit: 8eab688ed98eb1b9fcf4fc25f90fe2bbf99c02d6
+source-git-commit: c2f6b7125f1a611e94f807999787fee48a0e5ece
 workflow-type: tm+mt
 source-wordcount: '799'
 ht-degree: 0%
@@ -14,19 +14,19 @@ ht-degree: 0%
 
 Adobe Commerce is het ervaringsplatform dat op unieke wijze technische flexibiliteit combineert met gebruiksgemak, in dienst van het creëren van uitzonderlijke ervaringen die bedrijfsresultaten aansturen.
 
-De handel is geëvolueerd om aan ondernemingsvereisten voor prestaties, schaal, en veiligheid te voldoen. Een moderne implementatieaanpak waarbij gebruik wordt gemaakt van de nieuwste samengestelde handelsoplossingen van de Adobe is van cruciaal belang voor het succes van het bedrijfsleven. Deze pagina beschrijft de moderne implementatiebenadering van de Handel in technische details.
+Commerce is geëvolueerd om te voldoen aan de vereisten van de onderneming op het gebied van prestaties, schaal en beveiliging. Een moderne implementatieaanpak waarbij gebruik wordt gemaakt van de nieuwste samengestelde handelsoplossingen van de Adobe is van cruciaal belang voor het succes van het bedrijfsleven. Op deze pagina wordt de moderne Commerce-implementatieaanpak in detail beschreven.
 
 Het volgende architectuurdiagram illustreert de gegevensstroom tussen Adobe Commerce en alle oplossingen van Adobe Experience Cloud.
 
-![Architecturaal diagram dat toont hoe Adobe Commerce met Experience Cloud oplossingen verbindt](../../assets/playbooks/commerce-architecture-v2.svg){zoomable=&quot;yes&quot;}
+![Architecturaal diagram dat toont hoe Adobe Commerce met Experience Cloud oplossingen verbindt](../../assets/playbooks/commerce-architecture-v3.svg){zoomable=&quot;yes&quot;}
 
 >[!NOTE]
 >
->De gegevensstromen op hoog niveau die in het diagram worden getoond zijn verenigbaar over de meeste ondernemingsimplementaties. De belangrijkste component die implementaties uniek kan maken, is de manier waarop u uw catalogus bouwt (vooral voor B2B). U moet uw catalogusarchitectuur zorgvuldig toewijzen aan de [Handelsweb-API&#39;s](https://developer.adobe.com/commerce/webapi/get-started/).
+>De gegevensstromen op hoog niveau die in het diagram worden getoond zijn verenigbaar over de meeste ondernemingsimplementaties. De belangrijkste component die implementaties uniek kan maken, is de manier waarop u uw catalogus bouwt (vooral voor B2B). U moet uw catalogusarchitectuur zorgvuldig toewijzen aan de [Commerce web-API&#39;s](https://developer.adobe.com/commerce/webapi/get-started/).
 
 ## Cloud Foundation
 
-[Adobe Commerce over cloudinfrastructuur](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/overview) is de basis van uw implementatie van de Handel. Het biedt een [beveiligen](../../security-and-compliance/shared-responsibility.md) geautomatiseerd hostingplatform met een zelfservicebenadering voor het ontwikkelen, implementeren, bewaken en beheren van uw toepassing Commerce in een cloud-native omgeving.
+[Adobe Commerce over cloudinfrastructuur](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/overview) is de basis van uw implementatie van de Handel. Het biedt een [beveiligen](../../security-and-compliance/shared-responsibility.md) geautomatiseerd hostingplatform met een zelfbedieningsbenadering voor het ontwikkelen, implementeren, bewaken en beheren van uw Commerce-toepassing in een cloud-native omgeving.
 
 Zie de volgende technische details van de cloudstichting:
 
@@ -35,7 +35,7 @@ Zie de volgende technische details van de cloudstichting:
 - [**Configuratiebeheer**](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/configure/overview)—Aanpasbare dossiers van de omgevingsconfiguratie en bevel-lijn interface (CLI) om toepassingsmontages, routes te beheren, acties, en berichten te bouwen en op te stellen.
 - [**Workflow op basis van git**](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/architecture/pro-develop-deploy-workflow)—Automatisch bouwen en implementeren na het doorvoeren van codewijzigingen voor snelle ontwikkeling en continue implementatie
 - [**Ingebouwde waarneming**](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/monitor/performance)—Hulpmiddelen die logboekgegevens van veelvoudige bronnen combineren om u te helpen de prestaties van uw plaats beheren en kwesties diagnostiseren
-- [**Uitgebreide API-dekking**](https://developer.adobe.com/commerce/webapi/get-started/)—[GraphQL](https://developer.adobe.com/commerce/webapi/graphql/) en [REST](https://developer.adobe.com/commerce/webapi/rest) API&#39;s voor de integratie van de kerntoepassing Handel met systemen van derden en de uitbreiding van de mogelijkheden van de Handel
+- [**Uitgebreide API-dekking**](https://developer.adobe.com/commerce/webapi/get-started/)—[GraphQL](https://developer.adobe.com/commerce/webapi/graphql/) en [REST](https://developer.adobe.com/commerce/webapi/rest) API&#39;s voor de integratie van de belangrijkste Commerce-toepassing met systemen van derden en de uitbreiding van Commerce-mogelijkheden
 
 ## Integratie met Experience Cloud
 
@@ -59,10 +59,10 @@ Adobe biedt ontwikkelaars uitgebreide uitbreidingspunten en tools om toepassinge
 Adobe biedt de volgende ontwikkelaarshulpmiddelen voor het bouwen van integratie en aanpassingen:
 
 - [**API-net voor Adobe Developer App Builder**](https://developer.adobe.com/graphql-mesh-gateway/)—Coördineer en combineer veelvoudige API, GraphQL, REST, en andere bronnen in één, queryable eindpunt van GraphQL.
-- [**App Builder**](https://developer.adobe.com/app-builder/docs/overview/)—Bouw en stel veilige en scalable Webtoepassingen op die de functionaliteit van de Handel uitbreiden en met derdeoplossingen integreren.
+- [**App Builder**](https://developer.adobe.com/app-builder/docs/overview/)—Bouw en stel veilige en scalable Webtoepassingen op die de functionaliteit van Commerce uitbreiden en met derdeoplossingen integreren.
 - [**Gebeurtenissen**](https://developer.adobe.com/commerce/extensibility/events/)—Gebruik aangepaste gebeurtenistriggers voor interactie met andere uitbreidbare ontwikkelingsprogramma&#39;s.
-- [**Webhaken**](https://developer.adobe.com/commerce/extensibility/webhooks/)—Gebruik webhaken om automatisch interactie tussen de handel en systemen van derden te activeren.
-- [**Admin UI SDK**](https://developer.adobe.com/commerce/extensibility/admin-ui-sdk/)—Pas en verbeter de Admin van de Handel met nieuwe pagina&#39;s en eigenschappen voor uw handelaren aan.
+- [**Webhaken**](https://developer.adobe.com/commerce/extensibility/webhooks/)—Gebruik webhaken om automatisch interactie tussen Commerce en systemen van derden te activeren.
+- [**Admin UI SDK**](https://developer.adobe.com/commerce/extensibility/admin-ui-sdk/)—Pas de Commerce Admin aan en verbeter deze met nieuwe pagina&#39;s en functies voor uw verkopers.
 
 ## Storefront-services
 
