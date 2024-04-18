@@ -1,11 +1,11 @@
 ---
 title: Beveiliging van installatie op locatie
-description: Meer informatie over manieren om de beveiligingspositie van uw Adobe Commerce of Magento Open Source op locatie te verbeteren.
+description: Meer informatie over manieren om de beveiligingspositie van uw Adobe Commerce-installatie op locatie te verbeteren.
 feature: Install, Security
 exl-id: 56724a72-c64d-44d4-a886-90d97ae5fb6d
-source-git-commit: 8d0d8f9822b88f2dd8cbae8f6d7e3cdb14cc4848
+source-git-commit: ddf988826c29b4ebf054a4d4fb5f4c285662ef4e
 workflow-type: tm+mt
-source-wordcount: '306'
+source-wordcount: '302'
 ht-degree: 0%
 
 ---

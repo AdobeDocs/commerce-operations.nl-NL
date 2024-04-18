@@ -1,10 +1,10 @@
 ---
 title: Terugdraaien na updatefout module
-description: Los uw Adobe Commerce of Magento Open Source verbetering na het ontmoeten van een fout van de moduleupdate problemen op.
+description: Los uw verbetering van Adobe Commerce na het ontmoeten van een module updatefout problemen op.
 exl-id: 1537a6b1-b450-4f90-bffb-73359fa71598
-source-git-commit: 95ffff39d82cc9027fa633dffedf15193040802d
+source-git-commit: ddf988826c29b4ebf054a4d4fb5f4c285662ef4e
 workflow-type: tm+mt
-source-wordcount: '93'
+source-wordcount: '89'
 ht-degree: 0%
 
 ---

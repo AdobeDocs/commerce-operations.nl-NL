@@ -2,9 +2,9 @@
 title: Nginx
 description: Voer de volgende stappen uit om de Nginx-webserver te installeren en te configureren voor installaties in het bedrijf van Adobe Commerce.
 exl-id: 041ddb9d-868e-4021-9388-1c9ea11bfd8f
-source-git-commit: 8d0d8f9822b88f2dd8cbae8f6d7e3cdb14cc4848
+source-git-commit: ddf988826c29b4ebf054a4d4fb5f4c285662ef4e
 workflow-type: tm+mt
-source-wordcount: '1134'
+source-wordcount: '1110'
 ht-degree: 0%
 
 ---
@@ -97,13 +97,13 @@ In dit voorbeeld ziet u een op composers gebaseerde installatie die de opdrachtr
    cd /var/www/html
    ```
 
-1. Composer wereldwijd installeren. Composer moet afhankelijkheden bijwerken voordat Adobe Commerce of Magento Open Source kan worden geïnstalleerd:
+1. Composer wereldwijd installeren. Composer moet afhankelijkheden bijwerken voordat Adobe Commerce kan worden geïnstalleerd:
 
    ```bash
    curl -sS https://getcomposer.org/installer | sudo php -- --install-dir=/usr/bin --filename=composer
    ```
 
-1. Maak een Composer-project met de Magento Open Source of het Adobe Commerce-pakket.
+1. Maak een Composer-project met het Adobe Commerce-metapakket.
 
    **Magento Open Source**
 
@@ -207,7 +207,7 @@ Deze instructies veronderstellen u de standaardplaats van Ubuntu voor de virtuel
    >
    >De `include` compilerinstructie moet verwijzen naar het voorbeeldconfiguratiebestand nginx in de installatiemap.
 
-1. Vervangen `www.magento-dev.com` met uw domeinnaam. Dit moet overeenkomen met de basis-URL die u hebt opgegeven bij de installatie van Adobe Commerce of Magento Open Source.
+1. Vervangen `www.magento-dev.com` met uw domeinnaam. Dit moet overeenkomen met de basis-URL die u hebt opgegeven bij de installatie van Adobe Commerce.
 
 1. Sla de editor op en sluit deze af.
 
@@ -283,7 +283,7 @@ Adobe Commerce vereist meerdere [PHP](../php-settings.md) extensies die correct 
 
    >[!NOTE]
    >
-   >We raden u aan de geheugenlimiet in te stellen op 2 G wanneer u Adobe Commerce of Magento Open Source test. Zie [Vereiste PHP-instellingen](../php-settings.md) voor meer informatie .
+   >We raden u aan de geheugenlimiet in te stellen op 2 G wanneer u Adobe Commerce test. Zie [Vereiste PHP-instellingen](../php-settings.md) voor meer informatie .
 
 1. Verwijder de commentaarmarkering van de map met het sessiepad en stel het pad in:
 
@@ -376,13 +376,13 @@ In dit voorbeeld ziet u een op composers gebaseerde installatie die de opdrachtr
    cd /var/www/html
    ```
 
-1. Composer wereldwijd installeren. Composer moet afhankelijkheden bijwerken voordat Adobe Commerce of Magento Open Source kan worden geïnstalleerd:
+1. Composer wereldwijd installeren. Composer moet afhankelijkheden bijwerken voordat Adobe Commerce kan worden geïnstalleerd:
 
    ```bash
    curl -sS https://getcomposer.org/installer | sudo php -- --install-dir=/usr/bin --filename=composer
    ```
 
-1. Maak een Composer-project met de Magento Open Source of het Adobe Commerce-pakket.
+1. Maak een Composer-project met het Adobe Commerce-metapakket.
 
    **Magento Open Source**
 

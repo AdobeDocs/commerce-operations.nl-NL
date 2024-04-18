@@ -2,9 +2,9 @@
 title: Apache
 description: Voer de volgende stappen uit om de Apache-webserver voor installaties op locatie van Adobe Commerce te installeren en te configureren.
 exl-id: a9a394c9-389f-42ef-9029-dd22c979cfb8
-source-git-commit: 8d0d8f9822b88f2dd8cbae8f6d7e3cdb14cc4848
+source-git-commit: ddf988826c29b4ebf054a4d4fb5f4c285662ef4e
 workflow-type: tm+mt
-source-wordcount: '763'
+source-wordcount: '759'
 ht-degree: 0%
 
 ---
@@ -71,7 +71,7 @@ Adobe Commerce gebruikt herschrijvingen op de server en `.htaccess` instructies 
    >[!NOTE]
    >
    >- Als u een upgrade hebt uitgevoerd vanaf een eerdere Apache-versie, zoekt u eerst naar `<Directory "/var/www/html">` of `<Directory "/var/www">` in `000-default.conf`.
-   >- U moet de waarde wijzigen van `AllowOverride` in de instructie voor de directory waarin u de Adobe Commerce- of Magento Open Source-software wilt installeren. Als u bijvoorbeeld wilt installeren in de webserverhoofdmap, bewerkt u de instructie in `<Directory /var/www>`.
+   >- U moet de waarde wijzigen van `AllowOverride` in de instructie voor de directory waarin u de Adobe Commerce-software wilt installeren. Als u bijvoorbeeld wilt installeren in de webserverhoofdmap, bewerkt u de instructie in `<Directory /var/www>`.
 
 >[!NOTE]
 >

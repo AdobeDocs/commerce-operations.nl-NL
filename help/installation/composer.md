@@ -1,10 +1,10 @@
 ---
 title: Snelle start van de installatie op locatie
-description: Voer de volgende stappen uit om Adobe Commerce of Magento Open Source te installeren op uw eigen infrastructuur.
+description: Voer de volgende stappen uit om Adobe Commerce te installeren op uw eigen infrastructuur.
 exl-id: a93476e8-2b30-461a-91df-e73eb1a14d3c
-source-git-commit: 8d0d8f9822b88f2dd8cbae8f6d7e3cdb14cc4848
+source-git-commit: ddf988826c29b4ebf054a4d4fb5f4c285662ef4e
 workflow-type: tm+mt
-source-wordcount: '958'
+source-wordcount: '933'
 ht-degree: 0%
 
 ---
@@ -19,7 +19,7 @@ Adobe gebruikt [Composer](https://getcomposer.org/) om Adobe Commerce-componente
 - Verminder uitbreidingsconflicten en compatibiliteitskwesties door een op componenten-gebaseerde architectuur met robuust gebiedsbeheer te gebruiken
 - Adhere to [PHP-Framework Interoperability Group (FIG)](https://www.php-fig.org/) normen
 - Magento Open Source opnieuw verpakken met andere componenten
-- De Adobe Commerce- of Magento Open Source-software gebruiken in een productieomgeving
+- De Adobe Commerce-software gebruiken in een productieomgeving
 
 >[!NOTE]
 >
@@ -71,11 +71,11 @@ Ga naar de eigenaar van het bestandssysteem:
 
 ## De metapakket ophalen
 
-U kunt als volgt het metapakket Adobe Commerce of Magento Open Source ophalen:
+Zo krijgt u het Adobe Commerce-pakket:
 
 1. Meld u aan bij de toepassingsserver als of schakel over naar de [eigenaar van bestandssysteem](prerequisites/file-system/overview.md).
 1. Wijzig de hoofdmap van de webserver of een map die u hebt geconfigureerd als een virtueel hoofddocument van de host.
-1. Maak een Composer-project met gebruik van het pakket Adobe Commerce of Magento Open Source.
+1. Maak een Composer-project met een Commerce-metapakket.
 
    **Magento Open Source**
 
@@ -127,7 +127,7 @@ composer create-project --repository-url=https://repo.magento.com/ magento/proje
 
 ## Bestandsmachtigingen instellen
 
-U moet lees-/schrijfmachtigingen instellen voor de webservergroep voordat u Adobe Commerce of Magento Open Source installeert. Dit is nodig, zodat de opdrachtregel bestanden naar het bestandssysteem kan schrijven.
+U moet lees- en schrijfmachtigingen instellen voor de webservergroep voordat u Adobe Commerce installeert. Dit is nodig, zodat de opdrachtregel bestanden naar het bestandssysteem kan schrijven.
 
 ```terminal
 cd /var/www/html/<magento install directory>
@@ -139,7 +139,7 @@ chmod u+x bin/magento
 
 ## De toepassing installeren
 
-U moet de opdrachtregel gebruiken om Adobe Commerce of Magento Open Source te installeren.
+U moet de opdrachtregel gebruiken om Adobe Commerce te installeren.
 
 In dit voorbeeld wordt ervan uitgegaan dat de naam van de installatiemap is `magento2ee`de `db-host` bevindt zich op dezelfde computer (`localhost`en dat de `db-name`, `db-user`, en `db-password` zijn allen `magento`:
 

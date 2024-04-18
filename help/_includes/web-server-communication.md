@@ -1,7 +1,7 @@
 ---
-source-git-commit: 475dbc056ac3e6a00c8f794259bb0fbf04143687
+source-git-commit: ddf988826c29b4ebf054a4d4fb5f4c285662ef4e
 workflow-type: tm+mt
-source-wordcount: '345'
+source-wordcount: '318'
 ht-degree: 0%
 
 ---
@@ -25,7 +25,7 @@ We raden het volgende aan:
 
 * De zoekmachine werkt op dezelfde host als een webserver. Het runnen van de onderzoeksmotor en de Webserver op verschillende gastheren is voorbij het werkingsgebied van dit onderwerp.
 
-  Het voordeel van het plaatsen van zoekmachine en de webserver op dezelfde host is dat gecodeerde communicatie hierdoor niet kan worden onderschept. De webserver van het zoekprogramma hoeft niet hetzelfde te zijn als de Adobe Commerce- of Magento Open Source-webserver. Adobe Commerce kan bijvoorbeeld Apache uitvoeren en Elasticsearch/OpenSearch kan nginx uitvoeren.
+  Het voordeel van het plaatsen van zoekmachine en de webserver op dezelfde host is dat gecodeerde communicatie hierdoor niet kan worden onderschept. De webserver van het zoekprogramma hoeft niet hetzelfde te zijn als de Adobe Commerce-webserver. Adobe Commerce kan bijvoorbeeld Apache uitvoeren en Elasticsearch/OpenSearch kan nginx uitvoeren.
 
   Als de zoekmachine wordt blootgesteld aan het openbare web, moet u verificatie configureren. Als uw zoekmachine-instantie binnen uw netwerk is beveiligd, is dit mogelijk niet nodig. Werk met uw hostingprovider om te bepalen welke beveiligingsmaatregelen u moet implementeren om uw instantie te beschermen.
 

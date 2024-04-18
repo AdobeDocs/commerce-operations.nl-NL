@@ -1,10 +1,10 @@
 ---
 title: De winkel configureren
-description: Voer de volgende stappen uit om uw Adobe Commerce- of Magento Open Source-winkel te configureren.
+description: Voer de volgende stappen uit om uw Adobe Commerce-winkel te configureren.
 exl-id: ab5e9c43-d914-4de9-98a9-b60d3984b23c
-source-git-commit: 95ffff39d82cc9027fa633dffedf15193040802d
+source-git-commit: ddf988826c29b4ebf054a4d4fb5f4c285662ef4e
 workflow-type: tm+mt
-source-wordcount: '440'
+source-wordcount: '437'
 ht-degree: 0%
 
 ---

@@ -1,10 +1,10 @@
 ---
 user-guide-title: Configuratiegids
-user-guide-description: Configureer uw Adobe Commerce- of Magento Open Source-toepassingsfuncties en -services.
+user-guide-description: Configureer uw Adobe Commerce-toepassingsfuncties en -services.
 feature: Configuration
-source-git-commit: b61a2726e1a26229515d28332bbd88ba3d416a98
+source-git-commit: ddf988826c29b4ebf054a4d4fb5f4c285662ef4e
 workflow-type: tm+mt
-source-wordcount: '364'
+source-wordcount: '354'
 ht-degree: 0%
 
 ---
@@ -76,7 +76,7 @@ ht-degree: 0%
    + [Eenheidstests uitvoeren](cli/unit-tests.md)
    + [Layoutbestanden converteren](cli/convert-layout-files.md)
    + [Gegevens genereren voor het testen van prestaties](cli/generate-data.md)
-   + [Ondersteuningsprogramma&#39;s uitvoeren (alleen voor handel)](cli/run-support-utilities.md)
+   + [Ondersteuningsprogramma&#39;s uitvoeren (alleen Commerce)](cli/run-support-utilities.md)
 + Configuratiebestanden {#files}
    + [Configuratiebestanden voor implementatie](reference/deployment-files.md)
    + [Configuratietypen](reference/config-create-types.md)

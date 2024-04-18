@@ -1,7 +1,7 @@
 ---
-source-git-commit: 405c1d7073e5936aefc7fb3c6eb1d5dd4d69a066
+source-git-commit: ddf988826c29b4ebf054a4d4fb5f4c285662ef4e
 workflow-type: tm+mt
-source-wordcount: '6574'
+source-wordcount: '6363'
 ht-degree: 0%
 
 ---
@@ -128,13 +128,13 @@ _Term-kenmerken:_
 _zelfstandig_
 
 Een eigenschap of eigenschap van een product die een aspect van het product beschrijft.
-Gebruikers van Adobe Commerce of Magento Open Source kunnen aangepaste kenmerken maken om deze toe te voegen aan de standaardkenmerkset of aan een aangepaste kenmerkset.
+Adobe Commerce-gebruikers kunnen aangepaste kenmerken maken om deze toe te voegen aan de standaardkenmerkset of aan een aangepaste kenmerkset.
 Maak deze kenmerken via de beheerfunctie of via programmacode.
 Voorbeelden: kleur, grootte, gewicht, prijs, leeftijd, geslacht, enzovoort.
 
 Aangepaste kenmerken zijn een type kenmerk Entiteit-Attribute-Value (EAV).
 
-Voor integratie zoals Google Shopping-advertenties Channel en Amazon-Sales Channel, wijst u de kenmerken van Handel toe aan kenmerken in de derde partij om producten correct weer te geven en te verkopen, advertenties weer te geven.
+Voor integratie zoals Google Shopping-advertenties Channel en Amazon-Sales Channel wijst u Commerce-kenmerken toe aan kenmerken in de externe toepassing om producten correct weer te geven en te verkopen, advertenties weer te geven.
 
 Meer informatie: [EAV en extension_attributes](https://developer.adobe.com/commerce/php/development/components/attributes/)
 
@@ -392,7 +392,7 @@ _zelfstandig_
 Voor handelaren geeft de catalogus hun productinventaris weer.
 In de Adobe Commerce-architectuur bestaat de catalogus uit categorieën, producten en productkenmerken.
 
-Elke winkel van de Handel heeft slechts één productcatalogus, die door alle archiefmeningen wordt gedeeld.
+Elke Commerce-winkel heeft slechts één productcatalogus, die door alle winkelweergaven wordt gedeeld.
 In een installatie met meerdere opslagruimten kan elke winkel een aparte catalogus hebben of de catalogus delen.
 De huidige opslagcatalogus wordt bepaald door de standaardhoofdcategorie, die zichtbaar is voor de gebruiker in de bovenste navigatie (hoofdmenu) van de winkel.
 (De term &#39;hoofdcategorie&#39; kan verwarrend zijn, omdat de &#39;hoofdcategorie&#39; helemaal geen categorie is, maar een container voor het menu, die bestaat uit categorieën en subcategorieën.)
@@ -686,7 +686,7 @@ _Term-kenmerken:_
 
 _zelfstandig_
 
-Een reeks manuscripten en hulpmiddelen die worden ontworpen om de toepassing van de Handel te beheren en op te stellen. Dit pakket vereenvoudigt veel Adobe Commerce op cloudinfrastructuuroplossingen, zoals implementatie in een Docker-omgeving, het beheren van crons, het controleren van de projectconfiguratie en het toepassen van patches voor Adoben.
+Een set scripts en gereedschappen die zijn ontworpen voor het beheer en de implementatie van de Commerce-toepassing. Dit pakket vereenvoudigt veel Adobe Commerce op cloudinfrastructuuroplossingen, zoals implementatie in een Docker-omgeving, het beheren van crons, het controleren van de projectconfiguratie en het toepassen van patches voor Adoben.
 
 Meer informatie: [ece-tools-pakket](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/dev-tools/ece-tools/package-overview.html)
 
@@ -739,7 +739,7 @@ _zelfstandig_
 
 Code die het gedrag van Adobe Commerce uitbreidt of aanpast.
 U kunt een extensie optioneel verpakken en distribueren op een Commerce Marketplace of een ander distributiesysteem voor extensies.
-Een uitbreiding van de Handel kan modules, thema&#39;s, en taalpakken omvatten.
+Een Commerce-extensie kan modules, thema&#39;s en taalpakketten bevatten.
 
 _Term-kenmerken:_
 
@@ -781,7 +781,7 @@ In een client-servertoepassing vindt u de achterkant en voorkant.
 De frontend component, of cliënt, is een interface die gebruikers toelaat om met de onderliggende achterste deelcode te manipuleren of in wisselwerking te staan.
 Backend-code wordt op een server uitgevoerd.
 Een gebruiker heeft niet rechtstreeks toegang tot de backendcode.
-Een gebruiker communiceert met de storefront, die op zijn beurt code gebruikt die op de server van de Handel loopt.
+Een gebruiker communiceert met de storefront, die op zijn beurt code gebruikt die op de server van Commerce loopt.
 
 Opmerking: In het verleden werd de storefront aangeduid als de &quot;frontend&quot; en de Admin werd aangeduid als de &quot;backend&quot;. Dit gebruik wordt niet meer ondersteund.
 
@@ -913,7 +913,7 @@ _Term-kenmerken:_
 
 _zelfstandig_
 
-In de bouw van een pagina van de Handel, is een lay-out een reeks blokken die in een hiërarchie worden geassembleerd, die de structuur van de pagina vertegenwoordigen.
+In de constructie van een Commerce-pagina is een lay-out een reeks blokken die in een hiërarchie zijn samengesteld en die de structuur van de pagina vertegenwoordigen.
 
 Bestanden met paginalay-outs hebben de focus op het hoogste niveau van de paginastructuur (koptekst, voettekst, hoofdinhoudsgebied, linkerzijbalk, enzovoort).
 Indelingsbestanden zetten vervolgens inhoud (blokken) samen in deze verschillende gebieden op de pagina.
@@ -1013,7 +1013,7 @@ _Term-kenmerken:_
 _zelfstandig_
 
 MFTF is [Functioneel testkader](https://developer.adobe.com/commerce/testing/functional-testing-framework/).
-Het verstrekt een testend kader voor de ontwikkelaars van de Handel en software engineers, zoals specialisten QA, PHP ontwikkelaars, en systeemintegrators.
+Het biedt een testframework voor Commerce-ontwikkelaars en -software-engineers, zoals QA-specialisten, PHP-ontwikkelaars en systeemintegrators.
 De ontwikkelaars en QA kunnen tests schrijven om gebruikersinteractie met Webtoepassingen te proberen, functionaliteit te verifiëren, en regressietests te automatiseren.
 
 _Term-kenmerken:_
@@ -1085,7 +1085,7 @@ _Term-kenmerken:_
 
 _zelfstandig_
 
-De Bouwer van de pagina is een uitbreiding van de Handel voor het creëren van inhoud-rijke pagina&#39;s door voorgebouwde controles te slepen en te laten vallen om douanelay-outs te bepalen.
+De Bouwer van de pagina is een uitbreiding van Commerce voor het creëren van inhoud-rijke pagina&#39;s door voorgebouwde controles te slepen en te laten vallen om douanelay-outs te bepalen.
 Deze besturingselementen worden ook wel &#39;inhoudstypen&#39; genoemd.
 Handelaars kunnen lay-outs en pagina&#39;s ontwerpen zonder codeerervaring.
 Ontwikkelaars krijgen nu ondersteuning voor extensies om de Page Builder uit te breiden.
@@ -1313,7 +1313,7 @@ _Term-kenmerken:_
 
 _zelfstandig_
 
-Het niveau van het bereik van de Handel van &quot;opslag&quot;is het tweede niveau van de hiërarchie van uw website, die als volgt gaat: website > opslag > opslagmening.
+Het Commerce-bereikniveau van &quot;store&quot; is het tweede niveau in de hiërarchie van uw website. Dit is als volgt: website > winkel > winkelweergave.
 Winkels kunnen in één of meerdere worden georganiseerd. Elke opslag, potentieel, heeft zijn eigen wortelcategorie, en al deelt catalogus en klantengegevens.
 
 Elke winkel kan meerdere winkelweergaven hebben. Deze worden doorgaans gebruikt om de winkel in een andere landinstelling en taal weer te geven.
@@ -1327,7 +1327,7 @@ _Term-kenmerken:_
 
 _zelfstandig_
 
-Het het werkingsgebiedniveau van de Handel van &quot;archiefmening&quot;verwijst naar het derde niveau in de hiërarchie van websites, opslag en opslagmeningen.
+Het Commerce-bereikniveau van de &quot;winkelweergave&quot; verwijst naar het derde niveau in de hiërarchie van websites, winkels en winkelweergaven.
 In winkelweergaven wordt de winkel gewoonlijk in een andere landinstelling en taal weergegeven.
 Als u de weergaven van de winkel wilt wijzigen, gebruikt u de winkelkiezer in de koptekst.
 
@@ -1340,7 +1340,7 @@ _Term-kenmerken:_
 
 _zelfstandig_
 
-De onlinewinkel die klanten ervaren wanneer ze uw Commerce-site bezoeken.
+De online winkel die klanten ervaren wanneer ze uw Commerce-site bezoeken.
 
 _Term-kenmerken:_
 
@@ -1380,7 +1380,7 @@ Bevat afbeeldingen en weergave-informatie.
 Hiermee past u de vormgeving van de winkel aan.
 Adobe Commerce kan thema&#39;s verzenden in (Composer)-pakketten.
 Thema&#39;s kunnen echter onder app/design worden geplaatst, dat niet in een pakket wordt verzonden.
-Pakketten zijn de eenheid van download voor Composer, en — via Commerce Marketplace — kunnen de gebruikers van de Handel CE of EE als reeks pakketten downloaden, waar de pakketten modules, thema&#39;s, of taalpakketten bevatten.
+Pakketten zijn de eenheid van download voor Composer, en — via Commerce Marketplace — kunnen de gebruikers van Commerce CE of EE als reeks pakketten downloaden, waar de pakketten modules, thema&#39;s, of taalpakketten bevatten.
 
 _Term-kenmerken:_
 
@@ -1437,8 +1437,8 @@ _Term-kenmerken:_
 
 _zelfstandig_
 
-Door leveranciers geproduceerde code die het gedrag van de Handel uitbreidt of aanpast en als derdeuitbreiding werkt wordt beschouwd als een  van de Verkoper Gebundelde Uitbreiding (VBE).
-VBE&#39;s worden grondig getest en bij elke ondersteunde versie van Magento Open Source en Adobe Commerce geleverd.
+Door de leverancier geproduceerde code die het gedrag van Commerce uitbreidt of aanpast en als derdeuitbreiding werkt wordt beschouwd als een  van de Leverancier Bundled van Uitbreiding (VBE).
+VBE&#39;s worden grondig getest en opgenomen in elke ondersteunde versie van Adobe Commerce.
 Een VBE kan modules, thema&#39;s, en taalpakketten omvatten.
 
 Meer informatie in het dialoogvenster [Gebundelde extensie van leverancier](https://experienceleague.adobe.com/docs/commerce-operations/upgrade-guide/modules/upgrade.html).

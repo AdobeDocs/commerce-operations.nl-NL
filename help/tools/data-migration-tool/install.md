@@ -4,9 +4,9 @@ description: Leer hoe u de [!DNL Data Migration Tool] gegevens over te dragen tu
 exl-id: 5f57067b-3ce8-4b51-b9ae-f60ae089c4ba
 topic: Commerce, Migration
 feature: Configuration, Install
-source-git-commit: e83e2359377f03506178c28f8b30993c172282c7
+source-git-commit: ddf988826c29b4ebf054a4d4fb5f4c285662ef4e
 workflow-type: tm+mt
-source-wordcount: '375'
+source-wordcount: '365'
 ht-degree: 0%
 
 ---
@@ -49,7 +49,7 @@ git branch
 
 Als u momenteel in `develop` vertakt, moet u in [vrijgegeven afdeling](https://developer.adobe.com/commerce/contributor/guides/install/change-version/) voordat u verdergaat.
 
-Als u nog geen Adobe Commerce of Magento Open Source software hebt geïnstalleerd, [nu installeren](../../installation/prerequisites/commerce.md).
+Als u de Adobe Commerce-software nog niet hebt geïnstalleerd, [nu installeren](../../installation/prerequisites/commerce.md).
 Als u de bewaarplaats GitHub kloont, zorg ervoor u een versiemarkering zoals besproken in controleert [(Medewerker) Kloon de GitHub-opslagplaats](https://developer.adobe.com/commerce/contributor/guides/install/clone-repository/).
 
 ## Gepubliceerde versies van [!DNL Data Migration Tool]

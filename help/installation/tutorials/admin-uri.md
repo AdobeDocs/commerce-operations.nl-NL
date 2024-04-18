@@ -1,11 +1,11 @@
 ---
 title: De Admin-URI weergeven of wijzigen
-description: Voer de volgende stappen uit om de URI van uw Adobe Commerce- of Magento Open Source-beheertoepassing weer te geven en te wijzigen.
+description: Voer de volgende stappen uit om de URI van uw Adobe Commerce-beheertoepassing te bekijken en te wijzigen.
 feature: Install, Configuration
 exl-id: 768f9ab4-7123-4460-9df8-a6c98ae55d95
-source-git-commit: ce405a6bb548b177427e4c02640ce13149c48aff
+source-git-commit: ddf988826c29b4ebf054a4d4fb5f4c285662ef4e
 workflow-type: tm+mt
-source-wordcount: '103'
+source-wordcount: '91'
 ht-degree: 0%
 
 ---

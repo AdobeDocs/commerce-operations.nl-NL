@@ -2,9 +2,9 @@
 title: Een upgrade uitvoeren
 description: Volg deze stappen om plaatsingen op-gebouw van Adobe Commerce te bevorderen.
 exl-id: 9183f1d2-a8dd-4232-bdee-7c431e0133df
-source-git-commit: 8d0d8f9822b88f2dd8cbae8f6d7e3cdb14cc4848
+source-git-commit: ddf988826c29b4ebf054a4d4fb5f4c285662ef4e
 workflow-type: tm+mt
-source-wordcount: '738'
+source-wordcount: '730'
 ht-degree: 0%
 
 ---
@@ -12,7 +12,7 @@ ht-degree: 0%
 
 # Een upgrade uitvoeren
 
-U kunt een upgrade uitvoeren _ter plaatse_ implementaties van de Adobe Commerce- of Magento Open Source-toepassing vanaf de opdrachtregel als u de software hebt geïnstalleerd door:
+U kunt een upgrade uitvoeren _ter plaatse_ implementaties van de Adobe Commerce-toepassing vanaf de opdrachtregel als u de software hebt geïnstalleerd door:
 
 - Het pakket Composer-metagegevens downloaden met de opdracht `composer create-project` gebruiken.
 - Het gecomprimeerde archief installeren.
@@ -110,7 +110,7 @@ U moet de opdracht [upgradevoorwaarden](../prepare/prerequisites.md) om uw omgev
 
    - `<product>` —(Vereist) Het pakket dat moet worden bijgewerkt. Voor installaties ter plaatse moet deze waarde ofwel `product-community-edition` of `product-enterprise-edition`.
 
-   - `<version>` —(Vereist) De versie van Adobe Commerce of Magento Open Source waarnaar u een upgrade uitvoert. Bijvoorbeeld: `2.4.3`.
+   - `<version>` —(Vereist) De versie van Adobe Commerce waarnaar u een upgrade uitvoert. Bijvoorbeeld: `2.4.3`.
 
    - `--no-update` — (Vereist) maakt de automatische update van de gebiedsdelen onbruikbaar.
 

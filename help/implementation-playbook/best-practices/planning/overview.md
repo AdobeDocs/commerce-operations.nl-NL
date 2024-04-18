@@ -4,9 +4,9 @@ description: Leer over implementatie beste praktijken voor de planningsfase van 
 role: Developer, Admin, User
 feature: Best Practices
 exl-id: 6baeac79-8dc3-45b4-bb25-8f2add8b3443
-source-git-commit: 40d850add2ef8c51e9192758135768306b163780
+source-git-commit: ddf988826c29b4ebf054a4d4fb5f4c285662ef4e
 workflow-type: tm+mt
-source-wordcount: '459'
+source-wordcount: '424'
 ht-degree: 0%
 
 ---
@@ -51,7 +51,7 @@ De volgende secties omvatten beste praktijkinformatie voor de planningsfase.
   </tr>
   <tr>
     <td><a href="https://developer.adobe.com/commerce/php/development/cache/page/public-content/">In cache plaatsen van volledige pagina's</a></td>
-    <td>Leer hoe u met openbare gegevens werkt wanneer u caching implementeert in uw Adobe Commerce of Magento Open Source extensie.</td>
+    <td>Leer hoe u met openbare gegevens werkt wanneer u caching implementeert in uw Adobe Commerce-extensie.</td>
   </tr>
   <tr>
     <td><a href="opcache-memory-size.md">OPcache-geheugengrootte</a></td>

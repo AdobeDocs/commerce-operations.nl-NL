@@ -2,9 +2,9 @@
 title: Upgrade uitvoeren
 description: Leer over de verschillende fasen van verbeteringsimplementatie voor de projecten van Adobe Commerce.
 exl-id: d64855a7-73ee-463f-a314-6a8d4ebe4726
-source-git-commit: 1ba9325feaa47d767ec7991919fd5ecd53ae6226
+source-git-commit: ddf988826c29b4ebf054a4d4fb5f4c285662ef4e
 workflow-type: tm+mt
-source-wordcount: '825'
+source-wordcount: '812'
 ht-degree: 1%
 
 ---
@@ -38,23 +38,23 @@ De volgende punten kunnen u in een grondige analyse willen omvatten:
 
   | Service | Huidige versie | Upgrade uitvoeren naar | Notities |
   |-----------------|-----------------|------------|----------------------------------------------------------|
-  | PHP | 7.4 | 8.1 |                                                          |
-  | Redis | 6.0 | 6.2 |                                                          |
-  | [!DNL RabbitMQ] | 3.8 | 3.9 | Momenteel niet gebruikt, maar we moeten overwegen het te gebruiken |
-  | MariaDB (cloud) | 10.4 | 10.6 |                                                          |
-  | MySQL | 8.0 | -/-/ |                                                          |
-  | Composer | 1.9.2 | 2.2 |                                                          |
-  | Elasticsearch | 7.10 | 7.17 |                                                          |
+  | PHP | 7,4 | 8,1 |                                                          |
+  | Redis | 6,0 | 6,2 |                                                          |
+  | [!DNL RabbitMQ] | 3,8 | 3,9 | Momenteel niet gebruikt, maar we moeten overwegen het te gebruiken |
+  | MariaDB (cloud) | 10,4 | 10,6 |                                                          |
+  | MySQL | 8,0 | -/-/ |                                                          |
+  | Composer | 1.9.2. | 2,2 |                                                          |
+  | Elasticsearch | 7,10 | 7,17 |                                                          |
 
-- **Uitbreidingen en modules van derden**—Gebruik deze tabelsjabloon om u te helpen de status van uw extensies en aanpassingen te begrijpen, zodat u strategische beslissingen kunt nemen en acties kunt definiëren. Dit is een gelegenheid om extensies te vervangen die native zijn voor Adobe Commerce of Magento Open Source om de complexiteit van uw project te minimaliseren. Gebruik de `bin/magento module:status` gebruiken om een lijst met modules en extensies weer te geven.
+- **Uitbreidingen en modules van derden**—Gebruik deze tabelsjabloon om u te helpen de status van uw extensies en aanpassingen te begrijpen, zodat u strategische beslissingen kunt nemen en acties kunt definiëren. Dit is een gelegenheid om extensies te vervangen die native zijn voor Adobe Commerce om de complexiteit van uw project te minimaliseren. Gebruik de `bin/magento module:status` gebruiken om een lijst met modules en extensies weer te geven.
 
-  | # | Extensie/<br>modulenaam | Composer-pakket | Leverancier | Huidige versie | Functionaliteit | Compatibel met nieuwste<br>Handelsversie? | Problemen | Inheems voor handel? | Handeling | Notities |
+  | Aantal | Extensie/<br>modulenaam | Composer-pakket | Leverancier | Huidige versie | Functionaliteit | Compatibel met nieuwste<br>Commerce-versie? | Problemen | Native voor Commerce? | Handeling | Notities |
   |---|-----------------------------|------------------------------------|-------------|-------------------|-----------------------|---------------------------------------------|--------------------------------------------------|---------------------|-------------------------|-------|
   | 1 | Naam en koppeling van extensie | extension/<br>extensionx-magento-2 | Naam leverancier | Versie geïnstalleerd | Zakelijke vereisten | Ja/Nee | Lijst met geïdentificeerde problemen waarmee deze extensie wordt geconfronteerd | Ja/Nee | Behouden/Vervangen/<br>Verwijderen |       |
 
 - **Aangepaste modules**—Vergelijkbaar met de lijst van derdemodules, helpt dit malplaatje u de status en de acties volgen en begrijpen die voor de bevordering van douanemodules worden vereist.
 
-  | # | Modulenaam | Functionaliteit | Vereist? | Inheems voor handel? | Handeling | Notities |
+  | Aantal | Modulenaam | Functionaliteit | Vereist? | Native voor Commerce? | Handeling | Notities |
   |---|--------------|-----------------------|-----------|---------------------|---------------------|-------|
   | 1 | Modulenaam | Zakelijke vereisten | Ja/Nee | Ja/Nee | Behouden/Vervangen/verwijderen |       |
 

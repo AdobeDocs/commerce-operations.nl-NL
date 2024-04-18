@@ -2,9 +2,9 @@
 title: Een externe MySQL-databaseverbinding instellen
 description: Voer de volgende stappen uit om een externe databaseverbinding te configureren voor installaties op locatie van Adobe Commerce.
 exl-id: 5fe304bd-ff38-4066-a1fd-8937575e4de4
-source-git-commit: 8d0d8f9822b88f2dd8cbae8f6d7e3cdb14cc4848
+source-git-commit: ddf988826c29b4ebf054a4d4fb5f4c285662ef4e
 workflow-type: tm+mt
-source-wordcount: '716'
+source-wordcount: '700'
 ht-degree: 0%
 
 ---
@@ -41,7 +41,7 @@ Voordat u begint, moet u:
 
 * [MySQL-server installeren](mysql.md) op de databaseserver.
 * [Een database-instantie maken](mysql.md#configuring-the-database-instance) op de databaseserver.
-* Installeer de MySQL-client op het Adobe Commerce- of Magento Open Source-webknooppunt. Raadpleeg MySQL-documentatie voor meer informatie.
+* Installeer de MySQL-client op het Adobe Commerce-webknooppunt. Raadpleeg MySQL-documentatie voor meer informatie.
 
 ### Hoge beschikbaarheid
 
@@ -136,7 +136,7 @@ Voer op de host van uw webknooppunt de volgende opdracht in om te controleren of
 mysql -u <local database username> -h <database server ip address> -p
 ```
 
-Als de MySQL monitor als volgt toont, is het gegevensbestand klaar voor Adobe Commerce of Magento Open Source:
+Als de MySQL-monitor als volgt wordt weergegeven, is de database gereed voor Adobe Commerce:
 
 ```terminal
 Welcome to the MySQL monitor.  Commands end with ; or \g.
@@ -151,9 +151,9 @@ Type 'help;' or '\h' for help. Type '\c' to clear the current input statement.
 
 Als uw webserver is geclusterd, voert u de opdracht in op elke host van de webserver.
 
-## Adobe Commerce of Magento Open Source installeren
+## De Adobe Commerce installeren
 
-Wanneer u Adobe Commerce of Magento Open Source installeert, moet u het volgende specificeren:
+Wanneer u Adobe Commerce installeert, moet u het volgende opgeven:
 
 * De basis-URL (ook wel de *opslagadres*) geeft de hostnaam of het IP-adres van het *webknooppunt*
 * De host van de database is *externe databaseserver* IP-adres (of taakverdelingsmechanisme als de databaseserver geclusterd is)

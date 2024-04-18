@@ -3,16 +3,16 @@ title: Voorbeeldgegevenspakketten van Composer downloaden
 description: Voer de volgende stappen uit om Adobe Commerce voorbeeldgegevens te installeren met behulp van Composer PHP Package Manager.
 feature: Install, Deploy
 exl-id: 735591af-a152-4476-9fa6-e31c4bab3ba8
-source-git-commit: 8d0d8f9822b88f2dd8cbae8f6d7e3cdb14cc4848
+source-git-commit: ddf988826c29b4ebf054a4d4fb5f4c285662ef4e
 workflow-type: tm+mt
-source-wordcount: '290'
+source-wordcount: '286'
 ht-degree: 0%
 
 ---
 
 # Voorbeeldgegevenspakketten van Composer downloaden
 
-In deze sectie wordt beschreven hoe u voorbeeldgegevens kunt installeren als u de Adobe Commerce- of Magento Open Source-software op een van de volgende manieren hebt geïnstalleerd:
+In deze sectie wordt beschreven hoe u voorbeeldgegevens kunt installeren als u de Adobe Commerce-software op een van de volgende manieren hebt geïnstalleerd:
 
 * Een gecomprimeerd archief downloaden van `https://magento.com/tech-resources/download`.
 

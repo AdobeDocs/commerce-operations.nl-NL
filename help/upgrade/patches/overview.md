@@ -2,9 +2,9 @@
 title: Hoe reparaties werken
 description: Leer meer over de verschillende typen patches voor Adobe Commerce en hoe ze werken.
 exl-id: d7072ed4-7d51-41fe-881a-aae3b2000b55
-source-git-commit: 8d0d8f9822b88f2dd8cbae8f6d7e3cdb14cc4848
+source-git-commit: ddf988826c29b4ebf054a4d4fb5f4c285662ef4e
 workflow-type: tm+mt
-source-wordcount: '537'
+source-wordcount: '533'
 ht-degree: 0%
 
 ---
@@ -51,7 +51,7 @@ Gebruik de [[!DNL Quality Patches Tool]](https://experienceleague.adobe.com/tool
 
 ## Aangepaste patches
 
-Soms duurt het even voor het Team van de Techniek van de Adobe om een insectenmoeilijke situatie te omvatten die op GitHub in een versie van Adobe Commerce of van de Composer van de Magento Open Source wordt gemaakt. Ondertussen kunt u een flard van GitHub tot stand brengen en gebruiken [`cweagans/composer-patches`](https://github.com/cweagans/composer-patches/) insteekmodule om deze toe te passen op de op Composer gebaseerde installatie.
+Soms duurt het even voor het Team van de Techniek van de Adobe om een insectenmoeilijke situatie te omvatten die op GitHub in een versie van de Composer van Adobe Commerce wordt gemaakt. Ondertussen kunt u een flard van GitHub tot stand brengen en gebruiken [`cweagans/composer-patches`](https://github.com/cweagans/composer-patches/) insteekmodule om deze toe te passen op de op Composer gebaseerde installatie.
 
 Gebruik de [opdrachtregel](apply.md#command-line) of [Composer](apply.md#composer) om aangepaste patches toe te passen.
 

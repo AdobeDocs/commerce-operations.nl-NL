@@ -1,11 +1,11 @@
 ---
 title: Documenthoofdmap wijzigen om de beveiliging te verbeteren
-description: Ongeautoriseerde toegang via de browser tot Adobe Commerce of Magento Open Source van het bestandssysteem op locatie voorkomen.
+description: Ongeoorloofde browsertoegang tot het Adobe Commerce-bestandssysteem op locatie voorkomen.
 feature: Install, Security
 exl-id: aabe148d-00c8-4011-a629-aa5abfa6c682
-source-git-commit: 8d0d8f9822b88f2dd8cbae8f6d7e3cdb14cc4848
+source-git-commit: ddf988826c29b4ebf054a4d4fb5f4c285662ef4e
 workflow-type: tm+mt
-source-wordcount: '585'
+source-wordcount: '578'
 ht-degree: 0%
 
 ---
@@ -56,7 +56,7 @@ Als u deze zelfstudie wilt voltooien, hebt u toegang nodig tot een werkende inst
 - MySQL (5.7+)
 - PHP (7.4)
 - Elasticsearch (7.x) of OpenSearch (1.2)
-- Adobe Commerce of Magento Open Source (2.4+)
+- Adobe Commerce (2.4+)
 
 >[!NOTE]
 >

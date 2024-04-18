@@ -2,9 +2,9 @@
 title: MySQL-richtlijnen
 description: Voer de volgende stappen uit om MySQL en MariaDB te installeren en te configureren voor installaties op locatie van Adobe Commerce.
 exl-id: dc5771a8-4066-445c-b1cd-9d5f449ec9e9
-source-git-commit: 35664c30e438305036d3cfdd1dd1924966f6ced6
+source-git-commit: ddf988826c29b4ebf054a4d4fb5f4c285662ef4e
 workflow-type: tm+mt
-source-wordcount: '1053'
+source-wordcount: '1037'
 ht-degree: 0%
 
 ---
@@ -102,7 +102,7 @@ Adobe Commerce heeft het normale validatiegedrag uitgeschakeld door SET SQL_MODE
 
 Als u MySQL van versie 5.7 naar versie 8 correct wilt bijwerken, moet u de volgende stappen uitvoeren:
 
-1. Upgrade Adobe Commerce of Magento Open Source naar 2.4.0. Test alles en controleer of uw systeem werkt zoals u had verwacht.
+1. Upgrade Adobe Commerce naar 2.4.0. Test alles en controleer of uw systeem werkt zoals u had verwacht.
 1. Onderhoudsmodus inschakelen:
 
    ```bash
@@ -131,7 +131,7 @@ Als u MySQL van versie 5.7 naar versie 8 correct wilt bijwerken, moet u de volge
 
 ## De database-instantie configureren
 
-In deze sectie wordt beschreven hoe u een database-instantie voor Adobe Commerce of Magento Open Source kunt maken. Hoewel een nieuwe database-instantie wordt aanbevolen, kunt u desgewenst Adobe Commerce of Magento Open Source met een bestaande database-instantie installeren.
+In deze sectie wordt besproken hoe u een database-instantie voor Adobe Commerce kunt maken. Hoewel een nieuwe database-instantie wordt aanbevolen, kunt u desgewenst Adobe Commerce met een bestaande database-instantie installeren.
 
 Om een MySQL gegevensbestandinstantie te vormen:
 
@@ -177,7 +177,7 @@ Om een MySQL gegevensbestandinstantie te vormen:
 
    * Indexeerders hebben hogere eisen `tmp_table_size` en `max_heap_table_size` waarden (bijvoorbeeld 64 M). Als u het `batch_size` kunt u deze waarde samen met de instellingen voor de tabelgrootte aanpassen om de indexprestaties te verbeteren. Zie de [Optimalisatiegids](../../../performance/configuration.md) voor meer informatie .
 
-   * Voor optimale prestaties moet u ervoor zorgen dat alle MySQL- en Adobe Commerce- of Magento Open Source-indextabellen in het geheugen kunnen worden opgeslagen (bijvoorbeeld `innodb_buffer_pool_size`).
+   * Voor optimale prestaties moet u ervoor zorgen dat alle MySQL- en Adobe Commerce-indextabellen in het geheugen kunnen worden opgeslagen (bijvoorbeeld `innodb_buffer_pool_size`).
 
    * Het opnieuw indexeren op MariaDB 10.4 neemt meer tijd in vergelijking met andere versies MariaDB of MySQL. Zie [Best practices voor configuratie](../../../performance/configuration.md#indexers).
 

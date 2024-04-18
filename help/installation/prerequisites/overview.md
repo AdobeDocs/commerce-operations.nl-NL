@@ -2,16 +2,16 @@
 title: Voorwaarden voor installatie op locatie
 description: Meer informatie over de softwareafhankelijkheden die vereist zijn voor installaties in Adobe Commerce op locatie.
 exl-id: dd4694e7-5437-440c-bb67-804ae36149de
-source-git-commit: 8d0d8f9822b88f2dd8cbae8f6d7e3cdb14cc4848
+source-git-commit: ddf988826c29b4ebf054a4d4fb5f4c285662ef4e
 workflow-type: tm+mt
-source-wordcount: '328'
+source-wordcount: '316'
 ht-degree: 1%
 
 ---
 
 # Voorwaarden voor installatie op locatie
 
-Voordat u Adobe Commerce of Magento Open Source installeert, moet u het volgende doen:
+Voordat u Adobe Commerce installeert, moet u het volgende doen:
 
 * Stel een of meer hosts in die voldoen aan de [systeemvereisten](../system-requirements.md).
 * Als u meerdere webknooppunten instelt met taakverdeling, stelt u dat deel van uw systeem in en test u dit _voor_ installeert u de toepassing.
@@ -19,7 +19,7 @@ Voordat u Adobe Commerce of Magento Open Source installeert, moet u het volgende
 
 >[!NOTE]
 >
->We gaan ervan uit dat u de Adobe Commerce of Magento Open Source installeert in een **ontwikkelomgeving**, dat u toegang hebt tot de computer voor de basisgebruiker, **en** dat de machine niet zeer veilig hoeft te zijn. Als u opstelling een veiliger machine bent, adviseren wij sterk u een netwerkbeheerder voor extra hulp raadplegen.
+>We gaan ervan uit dat u de Adobe Commerce in een **ontwikkelomgeving**, dat u toegang hebt tot de computer voor de basisgebruiker, **en** dat de machine niet zeer veilig hoeft te zijn. Als u opstelling een veiliger machine bent, adviseren wij sterk u een netwerkbeheerder voor extra hulp raadplegen.
 
 We raden u ten zeerste aan uw besturingssysteemsoftware bij te werken en bij te werken. Deze verbeteringen kunnen veiligheid en softwaremoeilijke situaties verstrekken die toekomstige problemen zouden kunnen verhinderen. Weet u niet wat dit betekent? Bekijk onze [overzichtspagina voor installatie](../overview.md).
 
@@ -70,7 +70,7 @@ Zie [systeemvereisten](../system-requirements.md) voor ondersteunde versies van 
 
 ### MySQL
 
-Controleer of u een compatibele versie van MySQL hebt voor de versie van Adobe Commerce of Magento Open Source die u installeert. Zie [Systeemvereisten](../system-requirements.md) voor ondersteunde versies.
+Controleer of u een compatibele versie van MySQL hebt voor de versie van Adobe Commerce die u installeert. Zie [Systeemvereisten](../system-requirements.md) voor ondersteunde versies.
 
 ```bash
 mysql -u <database root user or database owner name> -p

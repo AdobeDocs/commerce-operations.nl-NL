@@ -1,10 +1,10 @@
 ---
 title: Berichtconsumenten configureren
-description: Voer de volgende stappen uit om het gedrag van gebruikers in de wachtrij met Adobe Commerce- of Magento Open Source-berichten te configureren.
+description: Voer de volgende stappen uit om het gedrag van gebruikers in de wachtrij met Adobe Commerce-berichten te configureren.
 exl-id: df292301-f4bd-49df-a241-7467c35bf1d8
-source-git-commit: 95ffff39d82cc9027fa633dffedf15193040802d
+source-git-commit: ddf988826c29b4ebf054a4d4fb5f4c285662ef4e
 workflow-type: tm+mt
-source-wordcount: '69'
+source-wordcount: '65'
 ht-degree: 0%
 
 ---

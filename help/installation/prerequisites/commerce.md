@@ -2,9 +2,9 @@
 title: De Adobe Commerce-software ophalen
 description: Leer hoe u de Adobe Commerce-software downloadt.
 exl-id: 7a769d5b-5397-4572-8db5-7602068e6aad
-source-git-commit: 8d0d8f9822b88f2dd8cbae8f6d7e3cdb14cc4848
+source-git-commit: ddf988826c29b4ebf054a4d4fb5f4c285662ef4e
 workflow-type: tm+mt
-source-wordcount: '362'
+source-wordcount: '358'
 ht-degree: 0%
 
 ---
@@ -17,7 +17,7 @@ Je bent een van de 240.000 kooplieden wereldwijd die vertrouwen hebben in onze s
 
 Controleer de beschikbaarheid van spannende nieuwe functies en releases en leer hoe u deze op onze [pagina over productbeschikbaarheid](https://devdocs.magento.com/release/availability.html).
 
-Raadpleeg de volgende tabel om aan de slag te gaan met de installatie van Adobe Commerce of Magento Open Source.
+Raadpleeg de volgende tabel om aan de slag te gaan met de installatie van Adobe Commerce.
 
 <table>
     <tbody>

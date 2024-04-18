@@ -1,11 +1,11 @@
 ---
 user-guide-title: Operationele richtlijnen
-user-guide-description: Leer meer over de operationele aspecten van het onderhoud van uw Adobe Commerce- of Magento Open Source-applicatie.
+user-guide-description: Meer informatie over de operationele aspecten van het onderhoud van uw Adobe Commerce-toepassing.
 feature: Configuration, Best Practices, Install, Integration, Security, Release Notes, Upgrade
-source-git-commit: c8093c4575eccc1d012da0e1502eb618c9b048e5
+source-git-commit: ddf988826c29b4ebf054a4d4fb5f4c285662ef4e
 workflow-type: tm+mt
-source-wordcount: '57'
-ht-degree: 29%
+source-wordcount: '53'
+ht-degree: 3%
 
 ---
 

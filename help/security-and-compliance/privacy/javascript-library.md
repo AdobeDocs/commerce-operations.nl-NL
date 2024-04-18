@@ -2,9 +2,9 @@
 title: Privacy JavaScript-bibliotheek
 description: Leer hoe u aangepaste gereedschappen kunt gebruiken voor het openen en verwijderen van persoonlijke klantgegevens die door Adobe Commerce zijn verzameld.
 exl-id: bcfea656-2cf0-48ae-9049-d91679166d05
-source-git-commit: 8d0d8f9822b88f2dd8cbae8f6d7e3cdb14cc4848
+source-git-commit: ddf988826c29b4ebf054a4d4fb5f4c285662ef4e
 workflow-type: tm+mt
-source-wordcount: '274'
+source-wordcount: '270'
 ht-degree: 0%
 
 ---
@@ -27,7 +27,7 @@ Deze bibliotheek bevat een set functies voor het maken van verzoeken om privacyg
 
 De Privacy JavaScript-bibliotheek van de Privacy is beschikbaar op de volgende CDN-locatie: `commerce.adobe.net/magentoprivacy.js`
 
-Nadat u het bestand hebt geïnstalleerd, moet u het toevoegen aan een aangepaste module of een aangepast thema in uw Adobe Commerce- of Magento Open Source-exemplaar. Volg de instructies in de [Aangepast JavaScript gebruiken](https://developer.adobe.com/commerce/frontend-core/javascript/custom/) onderwerp om deze taak te verwezenlijken.
+Nadat u het bestand hebt geïnstalleerd, moet u het toevoegen aan een aangepaste module of een aangepast thema in uw Adobe Commerce-instantie. Volg de instructies in de [Aangepast JavaScript gebruiken](https://developer.adobe.com/commerce/frontend-core/javascript/custom/) onderwerp om deze taak te verwezenlijken.
 
 ### Initialisatie
 

@@ -4,16 +4,16 @@ description: Leer hoe u CSS- en JavaScript-bestanden (JS) voor Adobe Commerce-pr
 role: Developer
 feature: Best Practices
 exl-id: ff0bc407-b563-418b-9d6a-7c1dc8f235df
-source-git-commit: 2662ced484fb42bf2d32609e4e82364c1e47c8f0
+source-git-commit: ddf988826c29b4ebf054a4d4fb5f4c285662ef4e
 workflow-type: tm+mt
-source-wordcount: '407'
+source-wordcount: '395'
 ht-degree: 0%
 
 ---
 
 # Bronbestanden optimaliseren
 
-Voor een meer reagerende plaats van de Handel, optimaliseer CSS en JavaScript (JS) middeldossiers en elimineer render-blokkerende middelen.
+Voor een meer responsieve Commerce-site optimaliseert u CSS- en JavaScript-bronbestanden (JS) en elimineert u bronnen voor het blokkeren van renderingen.
 
 - **CSS- en JS-bestanden optimaliseren**—Verminder de tijd die nodig is om CSS- en JavaScript-bestanden (JS) te laden door Adobe Commerce te configureren voor het samenvoegen, miniaturen en bundelen van afzonderlijke bestanden in één bestand.
 - **Renderblokkeringsbronnen elimineren**—Overweeg inline kritieke JS- en CSS-functies te leveren en alle niet-kritieke JS/CSS-stijlen uit te stellen. Voor richtsnoeren, zie [Renderblokkeringsbronnen elimineren](https://web.dev/render-blocking-resources/).
@@ -24,7 +24,6 @@ Voor een meer reagerende plaats van de Handel, optimaliseer CSS en JavaScript (J
 
 - Adobe Commerce over cloudinfrastructuur
 - Adobe Commerce ter plaatse
-- Magento Open Source
 
 ## CSS-bestanden samenvoegen of beperken
 
@@ -82,7 +81,7 @@ JS-minificatie in Adobe Commerce inschakelen op cloudinfrastructuur:
 
 ## JS-bestanden samenvoegen en bundelen
 
-U kunt samenvoeging of bundeling inschakelen in de Commerce Admin (samenvoeging en bundeling kunnen niet tegelijkertijd worden ingeschakeld): [!UICONTROL **Winkels** > **Instellingen** > **Configuratie** > **Geavanceerd** > **Ontwikkelaar** > **JavaScript-instellingen**].
+U kunt samenvoeging of bundeling inschakelen in Commerce Admin (samenvoeging en bundeling kunnen niet tegelijkertijd worden ingeschakeld): [!UICONTROL **Winkels** > **Instellingen** > **Configuratie** > **Geavanceerd** > **Ontwikkelaar** > **JavaScript-instellingen**].
 
 U kunt ook ingebouwde Adobe Commerce-bundeling (basisbundeling) inschakelen via de opdrachtregel:
 

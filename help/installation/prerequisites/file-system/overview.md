@@ -2,16 +2,16 @@
 title: Bestandseigendom en machtigingen
 description: Leer over het belang van de toestemmingen van het dossiersysteem wanneer het werken met op-gebouw installaties van Adobe Commerce.
 exl-id: a84784bf-afd6-4dba-9745-3fefc0ecafcb
-source-git-commit: 8d0d8f9822b88f2dd8cbae8f6d7e3cdb14cc4848
+source-git-commit: ddf988826c29b4ebf054a4d4fb5f4c285662ef4e
 workflow-type: tm+mt
-source-wordcount: '449'
+source-wordcount: '441'
 ht-degree: 0%
 
 ---
 
 # Bestandseigendom en machtigingen
 
-Het is belangrijk om uw installatie van Adobe Commerce of Magento Open Source in een ontwikkelomgeving te beveiligen om problemen met betrekking tot onbevoegde personen of processen die toegang hebben tot uw systeem (en mogelijk schade toebrengen) te helpen voorkomen. Gebruik de volgende richtlijnen voor eigendom van en machtigingen voor het bestandssysteem om uw installatie te beveiligen.
+Het is belangrijk om uw installatie van Adobe Commerce in een ontwikkelomgeving te beveiligen om problemen met betrekking tot onbevoegde personen of processen die toegang hebben tot uw systeem (en mogelijk schade kunnen toebrengen) te helpen voorkomen. Gebruik de volgende richtlijnen voor eigendom van en machtigingen voor het bestandssysteem om uw installatie te beveiligen.
 
 ## Eigenaar van bestandssysteem
 
@@ -65,4 +65,4 @@ We bespreken verder machtigingsaanbevelingen in [Toegangsrechten voor bestandssy
 
 >[!TIP]
 >
->Voordat u Adobe Commerce of Magento Open Source installeert, moet u controleren [Eigendom en machtigingen van bestanden configureren](configure-permissions.md).
+>Voordat u Adobe Commerce installeert, moet u controleren [Eigendom en machtigingen van bestanden configureren](configure-permissions.md).

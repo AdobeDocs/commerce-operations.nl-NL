@@ -5,9 +5,9 @@ role: Developer, Architect
 feature: Best Practices
 last-substantial-update: 2022-11-15T00:00:00Z
 exl-id: 9e7adaaa-b165-4293-aa98-5dc4b8c23022
-source-git-commit: 94d7a57dcd006251e8eefbdb4ec3a5e140bf43f9
+source-git-commit: ddf988826c29b4ebf054a4d4fb5f4c285662ef4e
 workflow-type: tm+mt
-source-wordcount: '1438'
+source-wordcount: '1405'
 ht-degree: 0%
 
 ---
@@ -45,7 +45,7 @@ Ga voor meer informatie over het gebruik van API-netten met GraphQL naar [Wat is
 Als u vaststelt dat oudere gegevens moeten worden gemigreerd of dat nieuwe gegevens moeten worden opgeslagen [!DNL Adobe Commerce], raadt Adobe aan [extensiekenmerken](https://developer.adobe.com/commerce/php/development/components/add-attributes/){target="_blank"}. Het gebruik van extensiekenmerken voor het opslaan van aanvullende gegevens biedt de volgende voordelen:
 
 - U kunt de gegevens controleren die en de gegevensbestandstructuur worden voortgeduurd, die ervoor zorgt dat het gegeven met het correcte kolomtype en juiste indexen wordt bewaard.
-- Meeste entiteiten in [!DNL Adobe Commerce] en [!DNL Magento Open Source] het gebruik van extensiekenmerken ondersteunen.
+- Meeste entiteiten in [!DNL Adobe Commerce] het gebruik van extensiekenmerken ondersteunen.
 - Extensiekenmerken zijn een agnostisch opslagmechanisme dat de flexibiliteit biedt om de gegevens op te slaan op de optimale locatie voor uw project.
 
 Twee voorbeelden van opslagplaatsen zijn gegevensbestandlijsten en [!DNL Redis]. Bij het kiezen van een locatie moet u rekening houden met de vraag of een locatie een extra complexiteit veroorzaakt of van invloed is op de prestaties.

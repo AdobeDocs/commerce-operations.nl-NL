@@ -2,9 +2,9 @@
 title: De cache beheren
 description: Beheer geheim voorgeheugentypes en bekijk geheim voorgeheugenstatus van de bevellijn gebruikend Commerce CLI
 exl-id: bbd76c00-727b-412e-a8e5-1e013a83a29a
-source-git-commit: 1070291396144f866cadd5e42ebca3e77a484a9b
+source-git-commit: ddf988826c29b4ebf054a4d4fb5f4c285662ef4e
 workflow-type: tm+mt
-source-wordcount: '616'
+source-wordcount: '612'
 ht-degree: 0%
 
 ---
@@ -128,7 +128,7 @@ Als u verouderde items uit de cache wilt verwijderen, kunt u _schoon_ of _flush_
 
   >[!TIP]
   >
-  >Maak de cache altijd schoon nadat u versies van Magento Open Source of Adobe Commerce hebt bijgewerkt, een upgrade van Magento Open Source naar Adobe Commerce hebt uitgevoerd of B2B voor Adobe Commerce of een willekeurige module hebt geïnstalleerd.
+  >Maak altijd de cache schoon nadat u versies van Adobe Commerce hebt bijgewerkt, een upgrade hebt uitgevoerd van Magento Open Source naar Adobe Commerce of B2B hebt geïnstalleerd voor Adobe Commerce of een willekeurige module.
 
 - Als u een cachetype leegmaakt, wordt de cacheopslag gewist. Dit kan van invloed zijn op andere procestoepassingen die dezelfde opslag gebruiken.
 

@@ -2,9 +2,9 @@
 title: Optionele software
 description: Meer informatie over optionele software die u kunt installeren voor de ondersteuning van installaties in Adobe Commerce op locatie.
 exl-id: 533ff52b-3301-4624-b691-3dfddde6ce0b
-source-git-commit: 8d0d8f9822b88f2dd8cbae8f6d7e3cdb14cc4848
+source-git-commit: ddf988826c29b4ebf054a4d4fb5f4c285662ef4e
 workflow-type: tm+mt
-source-wordcount: '605'
+source-wordcount: '597'
 ht-degree: 0%
 
 ---
@@ -13,13 +13,13 @@ ht-degree: 0%
 
 Wij adviseren sterk u NTP installeert om ervoor te zorgen dat de cron-verwante taken behoorlijk presteren. (Serverdatums kunnen bijvoorbeeld in het verleden of in de toekomst zijn.)
 
-De andere optionele hulpprogramma&#39;s die in dit onderwerp worden besproken, kunnen u helpen bij uw installatie. Ze zijn echter niet verplicht om Adobe Commerce of Magento Open Source te installeren of te gebruiken.
+De andere optionele hulpprogramma&#39;s die in dit onderwerp worden besproken, kunnen u helpen bij uw installatie. Ze zijn echter niet verplicht om Adobe Commerce te installeren of te gebruiken.
 
 ## Het installeren van en het Vormen het Protocol van de Tijd van het Netwerk (NTP)
 
 [NTP](https://www.ntp.org/) laat servers toe om hun systeemklokken te synchroniseren gebruikend [wereldwijd beschikbare poolservers](https://www.ntppool.org/en/). Wij adviseren u servers NTP gebruikt u vertrouwt, of zij specifieke hardwareoplossingen uw intern netwerk of externe, openbare servers zijn.
 
-Als u Adobe Commerce of Magento Open Source op veelvoudige gastheren opstelt, is NTP een eenvoudige manier om hun klokken te waarborgen allen gesynchroniseerd zijn, geen kwestie welke tijdzone de servers binnen zijn. Ook, hangen de op elkaar betrekking hebbende taken (zoals het indexeren en transactie e-mail) van de serverklok af nauwkeurig is.
+Als u Adobe Commerce op veelvoudige gastheren opstelt, is NTP een eenvoudige manier om hun klokken te waarborgen allen gesynchroniseerd zijn, geen kwestie welke tijdzone de servers binnen zijn. Ook, hangen de op elkaar betrekking hebbende taken (zoals het indexeren en transactie e-mail) van de serverklok af nauwkeurig is.
 
 ### NTP installeren en configureren op Ubuntu
 

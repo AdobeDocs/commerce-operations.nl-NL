@@ -2,9 +2,9 @@
 title: Geavanceerde instellingen
 description: Bekijk best practices en aanbevelingen voor grote bedrijfssystemen die zijn ontworpen om grote hoeveelheden gegevens te verwerken.
 exl-id: eb9ca9fa-b099-4e77-ab33-16cd0f382ffe
-source-git-commit: 95ffff39d82cc9027fa633dffedf15193040802d
+source-git-commit: ddf988826c29b4ebf054a4d4fb5f4c285662ef4e
 workflow-type: tm+mt
-source-wordcount: '1192'
+source-wordcount: '1173'
 ht-degree: 0%
 
 ---
@@ -50,7 +50,7 @@ U kunt ook een Redis-cluster gebruiken die parallelle lees- en schrijfbewerkinge
 
 ## Instellen [!DNL RabbitMQ]
 
-Magento Open Source en Adobe [!DNL Commerce] de rijen van het steunbericht door worden uitgevoerd [!DNL RabbitMQ]. [!DNL Commerce] gebruikt deze service voor het uitvoeren van talloze asynchrone bewerkingen, waaronder B2B-catalogusbewerkingen en asynchrone voorraadupdates. Alle interfaces voor het toevoegen van meer banen aan de baanserver worden gedistribueerd met het product en zijn beschikbaar voor douane asynchrone logische implementatie in het werkingsgebied van derdeuitbreidingen. Zoals bij elke andere integratie, [!DNL Commerce] verstrekt een dossier van de steekproefconfiguratie voor [!DNL RabbitMQ] die alle aanbevolen instellingen bevat en volledig klaar is voor productiegebruik.
+Adobe Commerce ondersteunt berichten die via [!DNL RabbitMQ]. [!DNL Commerce] gebruikt deze service voor het uitvoeren van talloze asynchrone bewerkingen, waaronder B2B-catalogusbewerkingen en asynchrone voorraadupdates. Alle interfaces voor het toevoegen van meer banen aan de baanserver worden gedistribueerd met het product en zijn beschikbaar voor douane asynchrone logische implementatie in het werkingsgebied van derdeuitbreidingen. Zoals bij elke andere integratie, [!DNL Commerce] verstrekt een dossier van de steekproefconfiguratie voor [!DNL RabbitMQ] die alle aanbevolen instellingen bevat en volledig klaar is voor productiegebruik.
 
 ## De database splitsen
 

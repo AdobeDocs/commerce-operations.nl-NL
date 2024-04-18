@@ -1,10 +1,10 @@
 ---
 title: De vergrendelingsprovider configureren
-description: Voer de volgende stappen uit om te voorkomen dat de dubbele uitsnijdtaken en uitsnijdgroepen worden uitgevoerd op uw Adobe Commerce- of Magento Open Source-implementatie.
+description: Voer de volgende stappen uit om te voorkomen dat de dubbele uitsnijdtaken en uitsnijdgroepen worden uitgevoerd tijdens de Adobe Commerce-implementatie.
 exl-id: c54e05b7-38fd-4731-bc77-a873b44d0ae8
-source-git-commit: 8d0d8f9822b88f2dd8cbae8f6d7e3cdb14cc4848
+source-git-commit: ddf988826c29b4ebf054a4d4fb5f4c285662ef4e
 workflow-type: tm+mt
-source-wordcount: '232'
+source-wordcount: '224'
 ht-degree: 0%
 
 ---
@@ -22,7 +22,7 @@ Voordat u deze opdracht uitvoert, moet u het volgende doen: *of* u moet [de toep
 
 ## De vergrendeling configureren
 
-Configureer een vergrendelingsprovider om te voorkomen dat dubbele uitsnijdtaken en uitsnijdgroepen worden gestart. (Adobe Commerce of Magento Open Source 2.2.x, 2.2.5 en hoger en 2.3.3 en hoger vereist.)
+Configureer een vergrendelingsprovider om te voorkomen dat dubbele uitsnijdtaken en uitsnijdgroepen worden gestart. (Vereist Adobe Commerce 2.2.x, 2.2.5 en hoger, en 2.3.3 en hoger.)
 
 Adobe Commerce gebruikt de database standaard om vergrendelingen op te slaan. Als u meerdere knooppunten op uw servers hebt, raden we u aan Zookeeper als vergrendelingsprovider te gebruiken.
 

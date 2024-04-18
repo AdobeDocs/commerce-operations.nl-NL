@@ -2,9 +2,9 @@
 title: Berichtenmakelaar
 description: Voer de volgende stappen uit om de vereiste berichtbrokersoftware (zoals [!DNL RabbitMQ]) voor installaties in Adobe Commerce.
 exl-id: ae6200d6-540f-46b3-92ba-7df7f6bb6fae
-source-git-commit: 8d0d8f9822b88f2dd8cbae8f6d7e3cdb14cc4848
+source-git-commit: ddf988826c29b4ebf054a4d4fb5f4c285662ef4e
 workflow-type: tm+mt
-source-wordcount: '560'
+source-wordcount: '544'
 ht-degree: 0%
 
 ---
@@ -15,10 +15,10 @@ Adobe Commerce gebruikt de [!DNL RabbitMQ] open-source berichtenmakelaar. Het bi
 
 De rijen van het bericht verstrekken een asynchroon communicatie mechanisme waarin de afzender en de ontvanger van een bericht niet elkaar contacteren. Noch moeten zij met de berichtrij tezelfdertijd communiceren. Wanneer een afzender een bericht in een rij plaatst, wordt het opgeslagen tot de ontvanger hen ontvangt.
 
-Het systeem van de berichtrij moet worden gevestigd alvorens u Adobe Commerce of Magento Open Source installeert. De basisvolgorde is:
+Het systeem van de berichtrij moet worden gevestigd alvorens u Adobe Commerce installeert. De basisvolgorde is:
 
 1. Installeren [!DNL RabbitMQ] en eventuele voorwaarden.
-1. Verbinden [!DNL RabbitMQ] naar Adobe Commerce of Magento Open Source.
+1. Verbinden [!DNL RabbitMQ] naar Adobe Commerce.
 
 >[!NOTE]
 >
@@ -71,7 +71,7 @@ De ambtenaar controleren [!DNL RabbitMQ] documentatie om te vormen en te beheren
 
 ## Installeren met [!DNL RabbitMQ] en verbinden
 
-Als u Adobe Commerce of Magento Open Source installeert _na_ u installeert [!DNL RabbitMQ]voegt u tijdens de installatie de volgende opdrachtregelparameters toe:
+Als u Adobe Commerce installeert _na_ u installeert [!DNL RabbitMQ]voegt u tijdens de installatie de volgende opdrachtregelparameters toe:
 
 ```bash
 --amqp-host="<hostname>" --amqp-port="5672" --amqp-user="<user_name>" --amqp-password="<password>" --amqp-virtualhost="/"
@@ -90,7 +90,7 @@ Waarbij:
 
 ## Verbinden [!DNL RabbitMQ]
 
-Als Adobe Commerce of Magento Open Source al op uw computer is geïnstalleerd en u er verbinding mee wilt maken [!DNL RabbitMQ], voegt u een `queue` in de `<install_directory>/app/etc/env.php` bestand, zodat deze vergelijkbaar is met het volgende:
+Als Adobe Commerce al op uw computer is geïnstalleerd en u wilt er verbinding mee maken [!DNL RabbitMQ], voegt u een `queue` in de `<install_directory>/app/etc/env.php` bestand, zodat deze vergelijkbaar is met het volgende:
 
 ```php
 'queue' =>

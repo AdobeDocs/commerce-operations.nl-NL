@@ -1,11 +1,11 @@
 ---
 title: Best practices voor configuratie
-description: Optimaliseer de responstijd van uw Adobe Commerce- of Magento Open Source-implementatie met deze best practices.
+description: Optimaliseer de responstijd van uw Adobe Commerce-implementatie met deze best practices.
 feature: Best Practices, Configuration
 exl-id: 4cb0f5e7-49d5-4343-a8c7-b8e351170f91
-source-git-commit: 602a1ef82fcb8d30ff027db0fe0aacb981c7e08e
+source-git-commit: ddf988826c29b4ebf054a4d4fb5f4c285662ef4e
 workflow-type: tm+mt
-source-wordcount: '1425'
+source-wordcount: '1417'
 ht-degree: 0%
 
 ---
@@ -32,11 +32,11 @@ Wanneer u uw winkel in productie start, activeert u alle caches vanuit de **[!UI
 
 ## Asynchrone e-mailmeldingen
 
-Als u de instelling voor &quot;Asynchrone e-mailmeldingen&quot; inschakelt, worden processen voor het uitchecken en bestellen van e-mailmeldingen naar de achtergrond verplaatst. Ga naar **[!UICONTROL Stores]> [!UICONTROL Settings] > [!UICONTROL Configuration] > [!UICONTROL Sales] > [!UICONTROL Sales Emails] > [!UICONTROL General Settings] >[!UICONTROL Asynchronous Sending]**. Zie [Verkoop-e-mails](https://docs.magento.com/user-guide/configuration/sales/sales-emails.html) in de _Gebruikershandleiding voor Magento Open Source_ voor meer informatie .
+Als u de instelling voor &quot;Asynchrone e-mailmeldingen&quot; inschakelt, worden processen voor het uitchecken en bestellen van e-mailmeldingen naar de achtergrond verplaatst. Ga naar **[!UICONTROL Stores]> [!UICONTROL Settings] > [!UICONTROL Configuration] > [!UICONTROL Sales] > [!UICONTROL Sales Emails] > [!UICONTROL General Settings] >[!UICONTROL Asynchronous Sending]**. Zie [Verkoop-e-mails](https://docs.magento.com/user-guide/configuration/sales/sales-emails.html) in de _Gebruikershandleiding voor beheerders_ voor meer informatie .
 
 ## Asynchrone gegevensverwerking
 
-Er kunnen momenten zijn dat intensieve verkoop op een winkel plaatsvindt op hetzelfde moment dat [!DNL Commerce] voert intensieve orderverwerking uit. U kunt [!DNL Commerce] om deze twee verkeerspatronen op het gegevensbestandniveau te onderscheiden om conflicten tussen lees te vermijden en verrichtingen in de overeenkomstige lijsten te schrijven. U kunt ordegegevens asynchroon opslaan en indexeren. Orders worden in tijdelijke opslag geplaatst en in bulk naar het orderbeheerraster verplaatst zonder dat er conflicten optreden. U kunt deze optie activeren vanuit **[!UICONTROL Stores]> [!UICONTROL Settings] > [!UICONTROL Configuration] > [!UICONTROL Advanced] > [!UICONTROL Developer] > [!UICONTROL Grid Settings] >[!UICONTROL Asynchronous indexing]**. Zie [Geplande rasterupdates](https://docs.magento.com/user-guide/sales/order-grid-updates-schedule.html) in de _Gebruikershandleiding voor Magento Open Source_ voor meer informatie .
+Er kunnen momenten zijn dat intensieve verkoop op een winkel plaatsvindt op hetzelfde moment dat [!DNL Commerce] voert intensieve orderverwerking uit. U kunt [!DNL Commerce] om deze twee verkeerspatronen op het gegevensbestandniveau te onderscheiden om conflicten tussen lees te vermijden en verrichtingen in de overeenkomstige lijsten te schrijven. U kunt ordegegevens asynchroon opslaan en indexeren. Orders worden in tijdelijke opslag geplaatst en in bulk naar het orderbeheerraster verplaatst zonder dat er conflicten optreden. U kunt deze optie activeren vanuit **[!UICONTROL Stores]> [!UICONTROL Settings] > [!UICONTROL Configuration] > [!UICONTROL Advanced] > [!UICONTROL Developer] > [!UICONTROL Grid Settings] >[!UICONTROL Asynchronous indexing]**. Zie [Geplande rasterupdates](https://docs.magento.com/user-guide/sales/order-grid-updates-schedule.html) in de _Gebruikershandleiding voor beheerders_ voor meer informatie .
 
 >[!WARNING]
 >

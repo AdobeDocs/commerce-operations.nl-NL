@@ -1,7 +1,7 @@
 ---
-source-git-commit: d0304f4060080f70c079fb571210cd015407f1cf
+source-git-commit: ddf988826c29b4ebf054a4d4fb5f4c285662ef4e
 workflow-type: tm+mt
-source-wordcount: '1989'
+source-wordcount: '1986'
 ht-degree: 0%
 
 ---
@@ -21,7 +21,7 @@ ht-degree: 0%
 
 Magento Open Source gebruikt Composer om PHP-pakketten te beheren.
 
-De `composer.json` het bestand de lijst met pakketten declareert, terwijl het bestand `composer.lock` slaat een volledige lijst van de pakketten (een volledige versie van elk pakket en zijn gebiedsdelen) op die wordt gebruikt om een installatie van Adobe Commerce of Magento Open Source te bouwen.
+De `composer.json` het bestand de lijst met pakketten declareert, terwijl het bestand `composer.lock` het dossier slaat een volledige lijst van de pakketten (een volledige versie van elk pakket en zijn gebiedsdelen) op die wordt gebruikt om een installatie van Magento Open Source te bouwen.
 
 De volgende referentiedocumentatie wordt gegenereerd op basis van de `composer.lock` en omvat de in Magento Open Source 2.4.7 opgenomen vereiste pakketten.
 

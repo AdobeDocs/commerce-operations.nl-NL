@@ -2,9 +2,9 @@
 title: Overzicht van de [!DNL Upgrade Compatibility Tool]
 description: Meer informatie over de [!DNL Upgrade Compatibility Tool] en hoe u hiermee kunt helpen bij uw Adobe Commerce-project.
 exl-id: 9493406a-1690-462b-b119-1b685b026c0b
-source-git-commit: ad7f05eaa5f144b5a8616307d65be635a0c499eb
+source-git-commit: ddf988826c29b4ebf054a4d4fb5f4c285662ef4e
 workflow-type: tm+mt
-source-wordcount: '354'
+source-wordcount: '329'
 ht-degree: 0%
 
 ---
@@ -13,7 +13,7 @@ ht-degree: 0%
 
 {{commerce-only}}
 
-Deze handleiding is bedoeld voor beheerders en software-engineers van Adobe Commerce. Het omvat gedetailleerde informatie over installatie van [!DNL Upgrade Compatibility Tool], alsmede de configuratie en het beheer ervan. Het veronderstelt een basisbegrip van de kernconfiguratie en de functionaliteit van de Handel.
+Deze handleiding is bedoeld voor beheerders en software-engineers van Adobe Commerce. Het omvat gedetailleerde informatie over installatie van [!DNL Upgrade Compatibility Tool], alsmede de configuratie en het beheer ervan. Hierbij wordt uitgegaan van een basiskennis van de basisconfiguratie en -functionaliteit van Commerce.
 
 ## Overzicht van de [!DNL Upgrade Compatibility Tool]
 
@@ -53,7 +53,7 @@ Zie de [Contribute](https://developer.adobe.com/commerce/php/coding-standards/co
 
 Raadpleeg de volgende bronnen voor meer informatie over upgrades voor Adobe Commerce:
 
-- De [upgradehulplijn](../overview.md) biedt een overzicht van de typische Adobe Commerce- of Magento Open Source-upgrade en de beste praktijken om die reis te volgen.
+- De [upgradehulplijn](../overview.md) biedt een overzicht van de typische Adobe Commerce upgrade-reis en de beste praktijken om deze reis te volgen.
 - De [komende releases](https://devdocs.magento.com/release/) Deze pagina bevat de datums voor geplande en komende releases.
 - De [communautaire middelen](https://developer.adobe.com/commerce/contributor/community/) Deze pagina is bedoeld om discussies te starten of om meer informatie te zoeken.
 - Controleer de [verwante gereedschappen](../upgrade-compatibility-tool/related-tools.md) pagina voor nuttige hulpmiddelen in uw typisch verbeteringsreis.

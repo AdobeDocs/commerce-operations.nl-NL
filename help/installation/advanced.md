@@ -2,9 +2,9 @@
 title: Geavanceerde installatie op locatie
 description: Meer informatie over geavanceerde installatiescenario's voor Adobe Commerce op infrastructuren die u bezit.
 exl-id: e16e750a-e068-4a63-8ad9-62043e2a8231
-source-git-commit: 8d0d8f9822b88f2dd8cbae8f6d7e3cdb14cc4848
+source-git-commit: ddf988826c29b4ebf054a4d4fb5f4c285662ef4e
 workflow-type: tm+mt
-source-wordcount: '2375'
+source-wordcount: '2314'
 ht-degree: 0%
 
 ---
@@ -38,7 +38,7 @@ Overige uitkeringen:
 * CLI is verlengbaar zodat kunnen de derdeontwikkelaars &quot;binnen&quot;aan het &quot;stoppen. Dit heeft het extra voordeel om de het leren kromme van gebruikers te elimineren.
 * Opdrachten voor uitgeschakelde modules worden niet weergegeven.
 
-Dit onderwerp bespreekt het installeren van de software van Adobe Commerce of van de Magento Open Source gebruikend CLI. Voor informatie over configuratie, zie [Configuratiegids](../configuration/overview.md).
+Dit onderwerp bespreekt het installeren van de software van Adobe Commerce gebruikend CLI. Voor informatie over configuratie, zie [Configuratiegids](../configuration/overview.md).
 
 Het installatieprogramma kan indien nodig meerdere keren worden uitgevoerd, zodat u:
 
@@ -47,7 +47,7 @@ Het installatieprogramma kan indien nodig meerdere keren worden uitgevoerd, zoda
   Nadat u bijvoorbeeld uw webserver hebt geconfigureerd voor SSL (Secure Sockets Layer), kunt u het installatieprogramma uitvoeren om SSL-opties in te stellen.
 
 * Fouten in eerdere installaties corrigeren
-* Adobe Commerce of Magento Open Source installeren in een andere database-instantie
+* Adobe Commerce in een andere database-instantie installeren
 
 ## Voordat u de installatie start
 
@@ -65,7 +65,7 @@ Voer de volgende stappen uit voordat u begint:
 
 >[!NOTE]
 >
->U moet Adobe Commerce of Magento Open Source installeren via de `bin` subdirectory.
+>U moet Adobe Commerce installeren vanaf het tabblad `bin` subdirectory.
 
 U kunt het installatieprogramma meerdere keren uitvoeren met verschillende opties om installatietaken zoals de volgende uit te voeren:
 
@@ -73,7 +73,7 @@ U kunt het installatieprogramma meerdere keren uitvoeren met verschillende optie
 
 * Corrigeer fouten in eerdere installaties.
 
-* Installeer Adobe Commerce of Magento Open Source in een andere database-instantie.
+* Installeer Adobe Commerce in een andere database-instantie.
 
 >[!NOTE]
 >
@@ -133,13 +133,13 @@ De volgende tabellen bevatten veel, maar niet alle beschikbare installatieparame
 
 | Naam | Waarde | Vereist? |
 |--- |--- |--- |
-| `--base-url` | Baseer URL om tot uw Admin en opslag in om het even welke volgende formaten toegang te hebben:<br><br>`http[s]://<host or ip>/<your install dir>/`.<br><br>**Opmerking:** Het schema (http:// of https://) en een slash zijn beide vereist.<br><br>`<your install dir>` is het documentafhankelijke relatieve pad waarin de Adobe Commerce- of Magento Open Source-software moet worden geïnstalleerd. Afhankelijk van hoe u opstelling uw Webserver en virtuele gastheren, de weg magento2 zou kunnen zijn of het zou leeg kunnen zijn.<br><br>Als u toegang wilt tot Adobe Commerce of Magento Open Source op localhost, kunt u `http://127.0.0.1/<your install dir>/` of `http://127.0.0.1/<your install dir>/`.<br><br>- `{{base_url}}` die een basis-URL vertegenwoordigt die wordt gedefinieerd door een virtuele host-instelling of door een virtualisatieomgeving zoals Docker. Als u bijvoorbeeld een virtuele host instelt met de hostnaam `magento.example.com`, kunt u de software installeren met `--base-url={{base_url}}` en heb toegang tot Admin met een URL als `http://magento.example.com/admin`. | Ja |
+| `--base-url` | Baseer URL om tot uw Admin en opslag in om het even welke volgende formaten toegang te hebben:<br><br>`http[s]://<host or ip>/<your install dir>/`.<br><br>**Opmerking:** Het schema (http:// of https://) en een slash zijn beide vereist.<br><br>`<your install dir>` is het documentafhankelijke relatieve pad voor de installatie van de Adobe Commerce-software. Afhankelijk van hoe u opstelling uw Webserver en virtuele gastheren, de weg magento2 zou kunnen zijn of het zou leeg kunnen zijn.<br><br>Voor toegang tot Adobe Commerce of MagenAdobe COMMERuse: `http://127.0.0.1/<your install dir>/` of `http://127.0.0.1/<your install dir>/`.<br><br>- `{{base_url}}` die een basis-URL vertegenwoordigt die wordt gedefinieerd door een virtuele host-instelling of door een virtualisatieomgeving zoals Docker. Als u bijvoorbeeld een virtuele host instelt met de hostnaam `magento.example.com`, kunt u de software installeren met `--base-url={{base_url}}` en heb toegang tot Admin met een URL als `http://magento.example.com/admin`. | Ja |
 | `--backend-frontname` | Uniform Resource Identifier (URI) voor toegang tot de beheerder. U kunt deze parameter weglaten zodat de toepassing een willekeurige URI met het volgende patroon kan genereren <code>admin_jkhgdfq</code>.<br><br>We raden een willekeurige URI aan voor beveiligingsdoeleinden. Willekeurige URI is moeilijker voor hakkers of kwaadwillige software om te exploiteren.<br><br>De URI wordt weergegeven aan het einde van de installatie. U kunt deze later op elk gewenst moment weergeven met de `bin/magento info:adminuri` gebruiken.<br><br>Als u ervoor kiest een waarde in te voeren, raden we u aan geen algemeen woord te gebruiken zoals admin, backend. De Admin URI kan alfanumerieke waarden en het onderstrepingsteken (`_`alleen ). | Nee |
 | `--db-host` | Voer een van de volgende handelingen uit:<br><br>- De volledig gekwalificeerde hostname of IP van de databaseserver.<br><br>- `localhost` (standaardwaarde) of `127.0.0.1` als uw databaseserver zich op dezelfde host bevindt als uw webserver.localhost betekent, gebruikt de MySQL-clientbibliotheek UNIX-sockets om verbinding te maken met de database. `127.0.0.1` veroorzaakt de cliëntbibliotheek om het protocol van TCP te gebruiken. Raadpleeg voor meer informatie over sockets de [PHP-documentatie over BOB_MYSQL](https://www.php.net/manual/en/ref.pdo-mysql.php).<br><br>**Opmerking:** U kunt desgewenst de poort van de databaseserver in de hostnaam opgeven, bijvoorbeeld www.example.com:9000 | Ja |
 | `--db-name` | Naam van de database-instantie waarin u de databasetabellen wilt installeren.<br><br>Standaard is `magento2`. | Ja |
 | `--db-user` | Gebruikersnaam van de eigenaar van de databaseinstantie.<br><br>Standaard is `root`. | Ja |
 | `--db-password` | Het wachtwoord van de eigenaar van de databaseinstantie. | Ja |
-| `--db-prefix` | Gebruik dit alleen als u de databasetabellen installeert in een database-instantie waarin al Adobe Commerce- of Magento Open Source-tabellen staan.<br><br>In dat geval gebruikt u een voorvoegsel om de tabellen voor deze installatie te identificeren. Sommige klanten hebben meer dan één Adobe Commerce- of Magento Open Source-instantie die op een server met alle tabellen in dezelfde database wordt uitgevoerd.<br><br>Het voorvoegsel mag maximaal vijf tekens lang zijn. De naam moet met een letter beginnen en mag alleen letters, cijfers en onderstrepingstekens bevatten.<br><br>Met deze optie kunnen deze klanten de databaseserver delen met meerdere Adobe Commerce- of Magento Open Source-installaties. | Nee |
+| `--db-prefix` | Gebruik het slechts als u de gegevensbestandlijsten in een gegevensbestandinstantie installeert die Adobe Commerce lijsten in het reeds heeft.<br><br>In dat geval gebruikt u een voorvoegsel om de tabellen voor deze installatie te identificeren. Sommige klanten hebben meer dan één Adobe Commerce of MagenAdobe Commerceserver met alle tabellen in dezelfde database.<br><br>Het voorvoegsel mag maximaal vijf tekens lang zijn. De naam moet met een letter beginnen en mag alleen letters, cijfers en onderstrepingstekens bevatten.<br><br>Met deze optie kunnen die klanten de databaseserver delen met meerdere Adobe Commerce-installaties |
 | `--db-ssl-key` | Pad naar de clientsleutel. | Nee |
 | `--db-ssl-cert` | Pad naar het clientcertificaat. | Nee |
 | `--db-ssl-ca` | Pad naar het servercertificaat. | Nee |
@@ -153,7 +153,7 @@ De volgende tabellen bevatten veel, maar niet alle beschikbare installatieparame
 | `--admin-use-security-key` | 1 zorgt ervoor dat de toepassing een willekeurig gegenereerde sleutelwaarde gebruikt om toegang te krijgen tot pagina&#39;s in de Admin en in formulieren. Deze zeer belangrijke waarden helpen dwars-plaats manuscriptvervalsingsaanvallen verhinderen. Dit is de standaardinstelling.<br><br>`0` Hiermee schakelt u het gebruik van de toets uit. | Nee |
 | `--session-save` | Voer een van de volgende handelingen uit:<br><br>- `db` om sessiegegevens in de database op te slaan. Kies gegevensbestandopslag als u een gegroepeerd gegevensbestand hebt; anders, zou er niet veel voordeel over op dossier-gebaseerde opslag kunnen zijn.<br><br>- `files` om sessiegegevens op te slaan in het bestandssysteem. De op dossier-gebaseerde zittingsopslag is aangewezen tenzij de toegang van het dossiersysteem langzaam is, hebt u een gegroepeerd gegevensbestand, of u wilt zittingsgegevens in Redis opslaan.<br><br>- `redis` om sessiegegevens op te slaan in Redis. Als u Redis gebruikt als standaardinstelling of als u pagina&#39;s in cache plaatst, moet Redis al zijn geïnstalleerd. Zie Redis gebruiken voor sessieopslag voor aanvullende informatie over het configureren van ondersteuning voor Redis. | Nee |
 | `--key` | Als u er een hebt, geeft u een sleutel op om vertrouwelijke gegevens in de database te coderen. Als u er geen hebt, genereert de toepassing er een voor u. | Ja |
-| `--cleanup-database` | Als u databasetabellen wilt neerzetten voordat u Adobe Commerce of Magento Open Source installeert, geeft u deze parameter zonder waarde op. Anders blijft de database intact. | Nee |
+| `--cleanup-database` | Als u databasetabellen wilt neerzetten voordat u Adobe Commerce installeert, geeft u deze parameter zonder waarde op. Anders blijft de database intact. | Nee |
 | `--db-init-statements` | Geavanceerde MySQL-configuratieparameter. Gebruikt de verklaringen van de gegevensbestandinitialisatie om te lopen wanneer het verbinden met het gegevensbestand MySQL. Raadpleeg een verwijzing die vergelijkbaar is met deze voordat u waarden instelt.<br><br>Standaard is `SET NAMES utf8;`. | Nee |
 | `--sales-order-increment-prefix` | Geef een tekenreekswaarde op die als voorvoegsel voor verkooporders moet worden gebruikt. Dit wordt doorgaans gebruikt om unieke bestelnummers voor betalingsverwerkers te garanderen. | Nee |
 
@@ -205,7 +205,7 @@ De volgende tabellen bevatten veel, maar niet alle beschikbare installatieparame
 
 >[!NOTE]
 >
->Als u modules wilt in- of uitschakelen na de installatie van Adobe Commerce of Magento Open Source, raadpleegt u [Modules in- en uitschakelen](tutorials/manage-modules.md).
+>Als u modules wilt in- of uitschakelen na de installatie van Adobe Commerce, raadpleegt u [Modules in- en uitschakelen](tutorials/manage-modules.md).
 
 **Gevoelige gegevens:**
 
@@ -217,7 +217,7 @@ In de volgende voorbeelden ziet u de opdrachten voor het lokaal installeren van 
 
 #### Voorbeeld 1—Basisinstallatie met beheergebruikersaccount
 
-In het volgende voorbeeld wordt Adobe Commerce of Magento Open Source met de volgende opties geïnstalleerd:
+In het volgende voorbeeld wordt Adobe Commerce geïnstalleerd met de volgende opties:
 
 * De toepassing wordt geïnstalleerd in het dialoogvenster `magento2` directory relatief ten opzichte van de webserverhoofdmap op `localhost` en het pad naar de beheerder is `admin`; derhalve
 
@@ -262,7 +262,7 @@ For security, remove write permissions from these directories: '/var/www/html/ma
 
 #### Voorbeeld 2— Basisinstallatie zonder beheergebruikersaccount
 
-U kunt Adobe Commerce of Magento Open Source installeren zonder de beheerdersgebruiker te maken, zoals in het volgende voorbeeld wordt getoond.
+U kunt Adobe Commerce installeren zonder de beheerdersgebruiker te maken, zoals in het volgende voorbeeld wordt getoond.
 
 ```bash
 magento setup:install --base-url=http://127.0.0.1/magento2/ \
@@ -287,7 +287,7 @@ Na de installatie kunt u een beheerder maken met de `admin:user:create` opdracht
 
 #### Voorbeeld 3—Installeren met extra opties
 
-In het volgende voorbeeld wordt Adobe Commerce of Magento Open Source met de volgende opties geïnstalleerd:
+In het volgende voorbeeld wordt Adobe Commerce geïnstalleerd met de volgende opties:
 
 * De toepassing wordt geïnstalleerd in het dialoogvenster `magento2` directory relatief ten opzichte van de webserverhoofdmap op `localhost` en het pad naar de beheerder is `admin`; derhalve
 

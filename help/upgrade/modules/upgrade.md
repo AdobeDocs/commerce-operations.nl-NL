@@ -2,9 +2,9 @@
 title: Modules en extensies upgraden
 description: Gebruik de opdrachtregelinterface en de Composer om Adobe Commerce-modules en -extensies te upgraden.
 exl-id: 017d75df-fd21-4fb4-abc9-80a35fc47d0f
-source-git-commit: 8d0d8f9822b88f2dd8cbae8f6d7e3cdb14cc4848
+source-git-commit: ddf988826c29b4ebf054a4d4fb5f4c285662ef4e
 workflow-type: tm+mt
-source-wordcount: '177'
+source-wordcount: '173'
 ht-degree: 0%
 
 ---
@@ -15,7 +15,7 @@ Een module of extensie bijwerken of bijwerken:
 
 1. Download het bijgewerkte bestand van Marketplace of een andere ontwikkelaar van extensies. Noteer de naam en de versie van de module.
 
-1. Exporteer de inhoud naar de Adobe Commerce- of Magento Open Source-hoofdinstallatiemap.
+1. Exporteer de inhoud naar de Adobe Commerce-hoofdinstallatiemap.
 
 1. Voer een van de volgende handelingen uit als er een Composer-pakket voor de module bestaat.
 

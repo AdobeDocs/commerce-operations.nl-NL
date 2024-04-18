@@ -1,17 +1,17 @@
 ---
 title: Ontwikkelingsomgeving Recommendations
-description: Meer informatie over prestatieaanbevelingen voor het instellen van uw lokale Adobe Commerce- of Magento Open Source-ontwikkelomgeving.
+description: Meer informatie over prestatieaanbevelingen voor het instellen van uw lokale Adobe Commerce-ontwikkelomgeving.
 exl-id: f57396c0-86be-4933-8066-eb51c42fb9e4
-source-git-commit: 95ffff39d82cc9027fa633dffedf15193040802d
+source-git-commit: ddf988826c29b4ebf054a4d4fb5f4c285662ef4e
 workflow-type: tm+mt
-source-wordcount: '235'
+source-wordcount: '232'
 ht-degree: 0%
 
 ---
 
 # Aanbevelingen voor de ontwikkelomgeving
 
-Deze pagina verstrekt aanbevelingen voor de ontwikkelomgevingen van de Handel.
+Deze pagina bevat aanbevelingen voor Commerce-ontwikkelomgevingen.
 
 ## De cache verwijderen in plaats van uitschakelen
 

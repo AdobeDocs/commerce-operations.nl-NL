@@ -2,16 +2,16 @@
 title: Eigendom en machtigingen van bestanden configureren
 description: Voer de volgende stappen uit om bestandssysteemmachtigingen te configureren voor installaties op locatie van Adobe Commerce.
 exl-id: 2410ee4f-978c-4b71-b3f6-0c042f9f4dc4
-source-git-commit: 8d0d8f9822b88f2dd8cbae8f6d7e3cdb14cc4848
+source-git-commit: ddf988826c29b4ebf054a4d4fb5f4c285662ef4e
 workflow-type: tm+mt
-source-wordcount: '985'
+source-wordcount: '981'
 ht-degree: 0%
 
 ---
 
 # Eigendom en machtigingen van bestanden configureren
 
-Dit onderwerp bespreekt hoe te om lees-schrijf toestemmingen voor de groep van de Webserver te plaatsen alvorens u Adobe Commerce of Magento Open Source installeert. Dit is nodig, zodat de opdrachtregel bestanden naar het bestandssysteem kan schrijven.
+Dit onderwerp bespreekt hoe te om lees-schrijf toestemmingen voor de groep van de Webserver te plaatsen alvorens u Adobe Commerce installeert. Dit is nodig, zodat de opdrachtregel bestanden naar het bestandssysteem kan schrijven.
 
 De procedure die u gebruikt, is anders, afhankelijk van het feit of u [gedeelde hosting](#set-permissions-for-one-user-on-shared-hosting) en één gebruiker hebben of als u een [privéserver](#set-ownership-and-permissions-for-two-users) en hebben twee gebruikers.
 

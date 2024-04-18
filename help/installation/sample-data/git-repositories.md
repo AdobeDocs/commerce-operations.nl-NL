@@ -2,9 +2,9 @@
 title: Voorbeeldgegevensopslagruimten klonen
 description: Voer de volgende stappen uit om Adobe Commerce-voorbeeldgegevens te installeren door Git-opslagplaatsen te klonen.
 exl-id: 748eee30-2821-457d-9c1c-62ede8bc0510
-source-git-commit: 8d0d8f9822b88f2dd8cbae8f6d7e3cdb14cc4848
+source-git-commit: ddf988826c29b4ebf054a4d4fb5f4c285662ef4e
 workflow-type: tm+mt
-source-wordcount: '737'
+source-wordcount: '733'
 ht-degree: 0%
 
 ---
@@ -151,7 +151,7 @@ U kunt als volgt de GitHub-voorbeeldgegevens klonen met behulp van het HTTPS-pro
 
 >[!WARNING]
 >
->Als u voorbeeldgegevens installeert *na* Als u Adobe Commerce of Magento Open Source installeert, moet u ook de volgende opdracht uitvoeren om de database en het schema bij te werken:
+>Als u voorbeeldgegevens installeert *na* Als u Adobe Commerce installeert, moet u ook de volgende opdracht uitvoeren om de database en het schema bij te werken:
 >
 >```bash
 ><magento_root>/bin/magento setup:upgrade

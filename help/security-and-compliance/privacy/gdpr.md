@@ -2,9 +2,9 @@
 title: Algemene verordening inzake gegevensbescherming (GDPR)
 description: Leer over de algemene verordening inzake gegevensbescherming (GDPR), die wetgeving is die gegevensbescherming en privacy regelt voor alle individuen in de Europese Unie en de Europese Economische Ruimte.
 exl-id: 30e60601-f4f7-419e-b2dd-8c82c8a2ed33
-source-git-commit: 8d0d8f9822b88f2dd8cbae8f6d7e3cdb14cc4848
+source-git-commit: ddf988826c29b4ebf054a4d4fb5f4c285662ef4e
 workflow-type: tm+mt
-source-wordcount: '268'
+source-wordcount: '264'
 ht-degree: 0%
 
 ---
@@ -24,7 +24,7 @@ De integrators van het systeem kunnen de dataflow diagrammen en gegevensbestandi
 
 ## Verwijzing naar persoonsgegevens
 
-Voor technische informatie, zie de dataflow diagrammen en de afbeeldingen van de gegevensbestandentiteit in de Persoonlijke Verwijzing van de Informatie die op elke versie van Adobe Commerce of Magento Open Source van toepassing is die u steunt.
+Voor technische informatie, zie de dataflow diagrammen en de afbeeldingen van de gegevensbestandentiteit in de Persoonlijke Verwijzing van de Informatie die op elke versie van Adobe Commerce van toepassing is die u steunt.
 
 - [Referentie persoonlijke gegevens van klant (versie 2.x)](data-m2.md)
 - [Referentie persoonlijke gegevens klant (versie) 1.x](data-m1.md)

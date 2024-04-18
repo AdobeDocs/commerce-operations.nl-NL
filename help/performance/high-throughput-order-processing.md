@@ -1,11 +1,11 @@
 ---
 title: Verwerking van bestellingen met hoge doorvoer
-description: Optimaliseer de plaatsing van bestellingen en het afrekenen van bestellingen voor uw Adobe Commerce- of Magento Open Source-implementatie.
+description: Optimaliseer de plaatsing van bestellingen en het afrekenen van bestellingen voor uw Adobe Commerce-implementatie.
 feature: Best Practices, Orders
 exl-id: dc2d0399-0d7f-42d8-a6cf-ce126e0b052d
-source-git-commit: 012cba58b336b032b1c911539008c1fb961c2e07
+source-git-commit: ddf988826c29b4ebf054a4d4fb5f4c285662ef4e
 workflow-type: tm+mt
-source-wordcount: '1048'
+source-wordcount: '983'
 ht-degree: 0%
 
 ---
@@ -172,7 +172,7 @@ Indien uitgeschakeld, wordt de inventariscontrole niet uitgevoerd wanneer een pr
 
 U kunt helpen lading over verschillende knopen in evenwicht brengen door secundaire verbindingen voor het gegevensbestand MySQL en instantie Redis toe te laten.
 
-Adobe Commerce kan meerdere databases of Redis-instanties asynchroon lezen. Als u Handel op wolkeninfrastructuur gebruikt, kunt u de secundaire verbindingen vormen door uit te geven [MYSQL_USE_SLAVE_CONNECTION](https://devdocs.magento.com/cloud/env/variables-deploy.html#mysql_use_slave_connection) en [REDIS_USE_SLAVE_CONNECTION](https://devdocs.magento.com/cloud/env/variables-deploy.html#redis_use_slave_connection) waarden in de `.magento.env.yaml` bestand. Slechts één knoop moet read-write verkeer behandelen, zo plaatsend de variabelen aan `true` resulteert in het creëren van een secundaire verbinding voor read-only verkeer. De waarden instellen op `false` om een bestaande alleen-lezen-verbindingsarray te verwijderen uit de `env.php` bestand.
+Adobe Commerce kan meerdere databases of Redis-instanties asynchroon lezen. Als u Commerce gebruikt op cloudinfrastructuur, kunt u de secundaire verbindingen configureren door de [MYSQL_USE_SLAVE_CONNECTION](https://devdocs.magento.com/cloud/env/variables-deploy.html#mysql_use_slave_connection) en [REDIS_USE_SLAVE_CONNECTION](https://devdocs.magento.com/cloud/env/variables-deploy.html#redis_use_slave_connection) waarden in de `.magento.env.yaml` bestand. Slechts één knoop moet read-write verkeer behandelen, zo plaatsend de variabelen aan `true` resulteert in het creëren van een secundaire verbinding voor read-only verkeer. De waarden instellen op `false` om een bestaande alleen-lezen-verbindingsarray te verwijderen uit de `env.php` bestand.
 
 Voorbeeld van het `.magento.env.yaml` bestand:
 

@@ -1,11 +1,11 @@
 ---
 title: Een masker instellen (optioneel)
-description: Verbeter de veiligheidshouding van uw Adobe Commerce of Magento Open Source op-gebouw installatie door de toestemmingen van het dossiersysteem te beperken.
+description: Verbeter de beveiligingspositie van uw Adobe Commerce-installatie op locatie door de machtigingen voor het bestandssysteem te beperken.
 feature: Install, Configuration
 exl-id: 18d65d75-7be0-4488-bf35-4b058e4ae5ea
-source-git-commit: ce405a6bb548b177427e4c02640ce13149c48aff
+source-git-commit: ddf988826c29b4ebf054a4d4fb5f4c285662ef4e
 workflow-type: tm+mt
-source-wordcount: '299'
+source-wordcount: '296'
 ht-degree: 0%
 
 ---

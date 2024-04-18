@@ -2,9 +2,9 @@
 title: Systeemvereisten
 description: Gebruik deze verwijzing om vereiste softwaregebiedsdelen te identificeren die met de versies van Adobe Commerce zijn getest.
 exl-id: 008c9edc-7d72-403c-847f-0e3b77bbb197
-source-git-commit: 8d0d8f9822b88f2dd8cbae8f6d7e3cdb14cc4848
+source-git-commit: ddf988826c29b4ebf054a4d4fb5f4c285662ef4e
 workflow-type: tm+mt
-source-wordcount: '732'
+source-wordcount: '728'
 ht-degree: 0%
 
 ---
@@ -155,4 +155,4 @@ Voor Adobe Commerce on Cloud raadpleegt u [Xdebug configureren](https://experien
 
 >[!NOTE]
 >
->Er is een bekend probleem met `xdebug` die invloed kunnen hebben op installaties van Adobe Commerce of Magento Open Source of op de toegang tot de winkel of beheerder na de installatie. Zie [Bekend probleem dat `xdebug` installatie](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/known-issues-that-affect-installation.html) in de _Kennisbank handelsondersteuning_.
+>Er is een bekend probleem met `xdebug` die invloed kunnen hebben op Adobe Commerce-installaties of op de toegang tot de winkel of beheerder na de installatie. Zie [Bekend probleem dat `xdebug` installatie](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/known-issues-that-affect-installation.html) in de _Kennisbank handelsondersteuning_.

@@ -3,22 +3,22 @@ title: Gebruik
 description: Leer hoe u de [!DNL Quality Patches Tool].
 exl-id: f9ad37e9-2d0f-4bc8-a98b-6d60b6f56d42
 feature: Configuration, Install
-source-git-commit: 8d0d8f9822b88f2dd8cbae8f6d7e3cdb14cc4848
+source-git-commit: ddf988826c29b4ebf054a4d4fb5f4c285662ef4e
 workflow-type: tm+mt
-source-wordcount: '869'
+source-wordcount: '845'
 ht-degree: 0%
 
 ---
 
 # Gebruik
 
-De [[!DNL Quality Patches Tool]](https://github.com/magento/quality-patches) levert afzonderlijke patches die door de Adobe en de Magento Open Source gemeenschap zijn ontwikkeld. Hiermee kunt u algemene informatie over alle afzonderlijke patches die beschikbaar zijn voor de geïnstalleerde versie van Adobe Commerce of Magento Open Source, toepassen, herstellen en bekijken. U kunt patches toepassen op Adobe Commerce-projecten, ongeacht wie de patch heeft ontwikkeld. U kunt bijvoorbeeld een patch toepassen die door de gemeenschap is ontwikkeld op Adobe Commerce-projecten.
+De [[!DNL Quality Patches Tool]](https://github.com/magento/quality-patches) levert afzonderlijke patches die door de Adobe en de Magento Open Source gemeenschap zijn ontwikkeld. Hiermee kunt u algemene informatie over alle afzonderlijke patches die beschikbaar zijn voor de geïnstalleerde versie van Adobe Commerce, toepassen, herstellen en weergeven. U kunt patches toepassen op Adobe Commerce-projecten, ongeacht wie de patch heeft ontwikkeld. U kunt bijvoorbeeld een patch toepassen die door de gemeenschap is ontwikkeld op Adobe Commerce-projecten.
 
 Dit bekijken [technische video](https://experienceleague.adobe.com/docs/commerce-learn/tutorials/tools/quality-patch-tool.html?lang=en) en leer hoe u het gereedschap Kwaliteitspatches voor Adobe Commerce kunt gebruiken.
 
 >[!INFO]
 >
->Zie [Afzonderlijke patches toepassen](#apply-individual-patches) voor instructies voor het toepassen van patches op uw Adobe Commerce- of Magento Open Source-projecten. Zie [[!DNL Quality Patches Tool]: Zoeken naar patches](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html) om een volledige lijst met vrijgegeven patches te bekijken.
+>Zie [Afzonderlijke patches toepassen](#apply-individual-patches) voor instructies over het toepassen van patches op uw Adobe Commerce-projecten. Zie [[!DNL Quality Patches Tool]: Zoeken naar patches](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html) om een volledige lijst met vrijgegeven patches te bekijken.
 
 >[!WARNING]
 >
@@ -36,7 +36,7 @@ composer require magento/quality-patches
 
 ## Afzonderlijke patches weergeven
 
-U kunt als volgt de lijst met afzonderlijke patches weergeven die beschikbaar zijn voor uw versie van Adobe Commerce of Magento Open Source:
+U kunt als volgt de lijst met afzonderlijke patches voor uw versie van Adobe Commerce weergeven:
 
 ```bash
 ./vendor/bin/magento-patches status
@@ -76,7 +76,7 @@ De statustabel bevat:
 
 >[!INFO]
 >
->Nadat u een upgrade hebt uitgevoerd naar een nieuwe versie van Adobe Commerce of Magento Open Source, moet u de patches opnieuw toepassen als de patches niet in de nieuwe versie zijn opgenomen. Zie [Patches opnieuw toepassen na een upgrade](#re-apply-patches-after-an-upgrade).
+>Nadat u de upgrade naar een nieuwe versie van Adobe Commerce hebt uitgevoerd, moet u de patches opnieuw toepassen als de patches niet in de nieuwe versie zijn opgenomen. Zie [Patches opnieuw toepassen na een upgrade](#re-apply-patches-after-an-upgrade).
 
 ## Afzonderlijke patches toepassen {#apply-individual-patches}
 
@@ -104,7 +104,7 @@ U moet de cache wissen nadat u patches hebt toegepast om de wijzigingen in de Ad
 
 >[!INFO]
 >
->Bewaar een lijst met toegepaste patches op een aparte locatie. Mogelijk moet u een aantal van deze toepassingen opnieuw toepassen nadat u een upgrade hebt uitgevoerd naar een nieuwe versie van Adobe Commerce of Magento Open Source. Zie [Patches opnieuw toepassen na een upgrade](#re-apply-patches-after-an-upgrade).
+>Bewaar een lijst met toegepaste patches op een aparte locatie. Mogelijk moet u een aantal van deze programma&#39;s opnieuw toepassen nadat u een upgrade hebt uitgevoerd naar een nieuwe versie van Adobe Commerce. Zie [Patches opnieuw toepassen na een upgrade](#re-apply-patches-after-an-upgrade).
 
 ## Afzonderlijke patches herstellen
 
@@ -156,7 +156,7 @@ De toegevoegde patches weergeven:
 
 ## Patches opnieuw toepassen na een upgrade {#re-apply-patches-after-an-upgrade}
 
-Wanneer u een upgrade uitvoert naar een nieuwe versie van Adobe Commerce of Magento Open Source, moet u de patches opnieuw toepassen als de patches niet in de nieuwe versie zijn opgenomen.
+Wanneer u een upgrade uitvoert naar een nieuwe versie van Adobe Commerce, moet u de patches opnieuw toepassen als de patches niet in de nieuwe versie zijn opgenomen.
 
 Patches opnieuw toepassen:
 

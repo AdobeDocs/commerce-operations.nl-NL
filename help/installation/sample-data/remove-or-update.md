@@ -2,9 +2,9 @@
 title: Voorbeeldgegevensmodules verwijderen of bijwerken
 description: Voer de volgende stappen uit om Adobe Commerce-voorbeeldgegevensmodules te beheren.
 exl-id: d23f999f-18bf-449b-be23-bdf392dda539
-source-git-commit: 8d0d8f9822b88f2dd8cbae8f6d7e3cdb14cc4848
+source-git-commit: ddf988826c29b4ebf054a4d4fb5f4c285662ef4e
 workflow-type: tm+mt
-source-wordcount: '115'
+source-wordcount: '107'
 ht-degree: 0%
 
 ---
@@ -13,7 +13,7 @@ ht-degree: 0%
 
 Dit onderwerp bespreekt hoe te:
 
-* [Voorbeeldgegevensmodules verwijderen](#remove-sample-data-modules) van een Adobe Commerce of Magento Open Source installatie `composer.json`. Deze optie doet *niet* voorbeeldgegevens uit de database verwijderen.
+* [Voorbeeldgegevensmodules verwijderen](#remove-sample-data-modules) vanuit een Adobe Commerce-installatie `composer.json`. Deze optie doet *niet* voorbeeldgegevens uit de database verwijderen.
 
 * [Voorbeeldgegevens bijwerken voorbereiden](#prepare-to-update-sample-data) (bijvoorbeeld voordat u de toepassing Magento bijwerkt).
 
@@ -51,7 +51,7 @@ De volledige lijst van modules met steekproefgegevens volgt:
 
 ## Voorbeeldgegevens bijwerken voorbereiden
 
-Met deze opdracht kunt u voorbeeldgegevens bijwerken voordat u Adobe Commerce of Magento Open Source bijwerkt.
+Met deze opdracht kunt u voorbeeldgegevens bijwerken voordat u Adobe Commerce bijwerkt.
 
 Voer de volgende opdracht in om voorbeeldgegevens voor te bereiden voor het bijwerken:
 
