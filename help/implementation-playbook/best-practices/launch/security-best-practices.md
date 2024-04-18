@@ -3,9 +3,9 @@ title: Uw Commerce-site en -infrastructuur beveiligen
 description: Behoud beveiliging door best practices voor beveiliging te implementeren wanneer u Adobe Commerce-installaties instelt, configureert en bijwerkt.
 feature: Best Practices
 exl-id: 50d8a464-6496-4e9a-b642-0c6d0eb51ba0
-source-git-commit: 8d0d8f9822b88f2dd8cbae8f6d7e3cdb14cc4848
+source-git-commit: a00b7b66beb6499f7fb19fda2dfd450799f73728
 workflow-type: tm+mt
-source-wordcount: '2004'
+source-wordcount: '2006'
 ht-degree: 0%
 
 ---
@@ -18,7 +18,7 @@ Hoewel u niet alle veiligheidsrisico&#39;s kunt elimineren, verhardt het toepass
 
 >[!NOTE]
 >
->Voor informatie over de rollen en verantwoordelijkheden voor het beveiligen en onderhouden van Adobe Commerce-projecten op het gebied van cloudinfrastructuur raadpleegt u de [Gids voor gedeelde verantwoordelijkheid](https://www.adobe.com/content/dam/cc/en/trust-center/ungated/whitepapers/experience-cloud/adobe-commerce-shared-responsibilities-guide.pdf) in het Adobe Trust Center.
+>Voor informatie over de rollen en verantwoordelijkheden voor het beveiligen en onderhouden van Adobe Commerce-projecten op het gebied van cloudinfrastructuur raadpleegt u [Model voor gedeelde verantwoordelijkheid](https://experienceleague.adobe.com/en/docs/commerce-operations/security-and-compliance/shared-responsibility#security-responsibilities-chart)) in de _Adobe Commerce-handleiding voor beveiliging en naleving_.
 
 [Alle ondersteunde versies](../../../release/versions.md) van:
 
