@@ -2,9 +2,9 @@
 title: Bèta-releases
 description: Leer meer over de bètareleases van Adobe Commerce en hoe u hieraan kunt deelnemen.
 exl-id: 662cb061-995f-4e09-a2ef-9e607cc0000b
-source-git-commit: 07e616b26784a6e2e8994efc5816a5005619b5bb
+source-git-commit: 1dd4b44c6aa685795e16dccebfaf073dcc0062f2
 workflow-type: tm+mt
-source-wordcount: '709'
+source-wordcount: '690'
 ht-degree: 0%
 
 ---
@@ -14,7 +14,7 @@ ht-degree: 0%
 bètaprogramma&#39;s van Adobe Commerce zijn een manier voor handelaren om toegang te krijgen tot pre-releasefuncties en -code, feedback te geven en de toekomst van Adobe Commerce te begeleiden. Er zijn twee typen bètaprogramma&#39;s:
 
 - Openbare bètaprogramma&#39;s zijn beschikbaar voor alle Adobe Commerce-klanten en -partners
-- Private Bata: een private bètaprogramma kan goedkeuring vereisen op basis van kwalificatiecriteria om deel te kunnen nemen
+- Private bèta: een private bètaprogramma kan goedkeuring vereisen op basis van kwalificatiecriteria om deel te kunnen nemen
 
 >[!IMPORTANT]
 >
@@ -70,7 +70,7 @@ Elke bètaversie van Adobe Commerce Foundation bevat alle wijzigingen die tegen 
 
 #### Naamgevingsconventie en -schema
 
-Adobe geeft twee keer per jaar bètapatches uit. De eerste bètapatch wordt doorgaans drie maanden na de algemene beschikbaarheid van een nieuwe hoofdpatchrelease uitgebracht.
+Adobe geeft gewoonlijk twee keer per jaar bètapatches uit.
 
 Beta-releasepakketten hebben een `-betaX` achtervoegsel. Voor de release van Adobe Commerce 2.4.7 beta wordt bijvoorbeeld de volgende naamgevingsconventie gebruikt:
 
