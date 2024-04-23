@@ -3,7 +3,7 @@ user-guide-title: Gegevens vrijgeven
 user-guide-description: Open op één locatie alle releasegegevens voor Adobe Commerce-patches en -services.
 feature: Release Notes
 recommendations: noDisplay, noCatalog
-source-git-commit: d0304f4060080f70c079fb571210cd015407f1cf
+source-git-commit: 5b294d586b58689a576f411b33d95e4dfa76076e
 workflow-type: tm+mt
 source-wordcount: '124'
 ht-degree: 0%
@@ -63,14 +63,14 @@ ht-degree: 0%
       - [2.4.3-p2](release-notes/security/2-4-3-p2.md)
       - [2.4.3-p1](release-notes/security/2-4-3-p1.md)
       - [2.4.2-p2](release-notes/security/2-4-2-p2.md)
-- [Uitgebrachte versies](versions.md)
-- [Functies op versie](features.md)
 - [Productbeschikbaarheid](product-availability.md)
 - [Bèta-releases](beta.md)
 - Planning en beleid {#planning}
    - [Levenscyclusbeleid](lifecycle-policy.md)
    - [Versionbeleid](versioning-policy.md)
    - [Releaseplanning](schedule.md)
+- [Functies op versie](features.md)
+- [Uitgebrachte versies](versions.md)
 - Pakketten {#packages}
    - [Adobe Commerce](packages/adobe-commerce.md)
    - [B2B voor Adobe Commerce](packages/adobe-commerce-b2b.md)
