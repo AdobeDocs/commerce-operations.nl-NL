@@ -1,6 +1,6 @@
 ---
 title: Levenscyclusbeleid voor software
-description: In deze video ziet u de belangrijkste datums voor het einde van de softwareondersteuning voor Adobe Commerce-releases.
+description: Leer meer over de belangrijkste datums voor het einde van de softwareondersteuning voor Adobe Commerce-releases.
 exl-id: 9ee4ecc8-d893-412a-a605-5a8606a1b9a9
 source-git-commit: 01e926e3cf36f27f5292a0b9ce7a6209d4960cc2
 workflow-type: tm+mt
