@@ -2,9 +2,9 @@
 title: Uw verificatietoetsen ophalen
 description: Ga als volgt te werk om referenties op te halen voor toegang tot Adobe Commerce Composer-pakketten op repo.magento.com.
 exl-id: 7ec2a410-d81f-476a-bf6a-f3c61982a734
-source-git-commit: 8d0d8f9822b88f2dd8cbae8f6d7e3cdb14cc4848
+source-git-commit: fc63ca58cd2ff7c5ec597751980a39bfbe68aa5f
 workflow-type: tm+mt
-source-wordcount: '473'
+source-wordcount: '470'
 ht-degree: 0%
 
 ---
@@ -20,7 +20,7 @@ Voor toegangsrechten voor Adobe Commerce-pakketten moet u sleutels gebruiken die
 >Als u [fouten](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/deployment/magento-commerce-cloud-repo-could-not-be-accessed-403-forbidden-or-404-not-found-error-when-deploying.html), hebt u mogelijk geen toestemming om het pakket te openen of de toegangsrechten zijn verlopen vanwege een openstaande factuur op uw account.
 >
 >* Als je de primaire contactpersoon voor de account bent, zorg er dan voor dat er geen openstaande factuur op de account wordt vermeld.
->* Als de sleutels die door de Primaire Contact worden verstrekt niet werken en er geen uitstaande facturen op de rekening zijn, contacteer [Adobe Commerce-ondersteuning](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html#submit-ticket) voor hulp met behulp van de MAGEID van de primaire contactpersoon.
+>* Als de sleutels die door de Primaire Contact worden verstrekt niet werken en er geen uitstaande facturen op de rekening zijn, zou de Primaire Contact [Adobe Commerce-ondersteuning](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html#submit-ticket) voor hulp.
 
 Zo maakt u verificatietoetsen:
 
