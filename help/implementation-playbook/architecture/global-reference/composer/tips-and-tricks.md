@@ -3,13 +3,15 @@ title: Tips en trucs voor composers
 description: Meer informatie over algemene Composer-ontwikkelingstaken en richtlijnen voor het snel oplossen van problemen.
 feature: Best Practices
 role: Developer
-source-git-commit: b4213c40fdf903fd962a15fc99b143f31aedbcde
+hide: true
+hidefromtoc: true
+exl-id: 5ead5fb1-3bb3-4e77-a4f1-8e10c4f91efb
+source-git-commit: 80cf4dc2b5c9dd690aee1b224fbe6c766fe8f2ab
 workflow-type: tm+mt
-source-wordcount: '564'
+source-wordcount: '535'
 ht-degree: 0%
 
 ---
-
 
 # Tips en trucs voor composers
 
