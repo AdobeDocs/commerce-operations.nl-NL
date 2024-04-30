@@ -2,7 +2,7 @@
 title: Startpagina operationele hulplijnen
 description: Blader door een index van het systeembeheer en de documentatie van het operationele product van Adobe Commerce.
 exl-id: 45ec4948-338f-4276-8a70-d0db720322d9
-source-git-commit: 0e3d5c0f7c0636bb690eea8643afdace074f0ffd
+source-git-commit: a33d12a055db0cb4a4c8f64992d6ebf77842cbe7
 workflow-type: tm+mt
 source-wordcount: '198'
 ht-degree: 0%
@@ -19,11 +19,11 @@ Gebruik deze volgende inzameling van gidsen om over de concepten van het systeem
 <table>
 <tr>
   <td valign="top">
-    <a href="../release/latest.md">
+    <a href="../release/release-notes/overview.md">
       <img alt="Gegevens vrijgeven" src="../assets/icons/promote.svg" width="40"/>
     </a>
     <div>
-      <a href="../release/latest.md"><strong>Gegevens vrijgeven</strong></a>
+      <a href="../release/release-notes/overview.md"><strong>Gegevens vrijgeven</strong></a>
       <p>Bekijk alle releasegegevens voor Adobe Commerce-patches en -services.</p>
     </div>
   </td>
