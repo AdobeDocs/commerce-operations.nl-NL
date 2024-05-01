@@ -2,9 +2,9 @@
 title: GraphQL Application Server
 description: Volg deze instructies om de GraphQL Application Server in te schakelen bij uw Adobe Commerce-implementatie.
 exl-id: 9b223d92-0040-4196-893b-2cf52245ec33
-source-git-commit: 81320626a83e26a55f9ec14ce8cb706753b44269
+source-git-commit: 9ffcbaa9a16315fe9c7d8ac4c4351ebe3fb27612
 workflow-type: tm+mt
-source-wordcount: '2293'
+source-wordcount: '2079'
 ht-degree: 0%
 
 ---
@@ -391,13 +391,3 @@ Deze bestanden kunnen worden geïnspecteerd met elk gereedschap dat u gebruikt o
 >[!NOTE]
 >
 >`--state-monitor` is niet compatibel met PHP versies `8.3.0` - `8.3.4` vanwege een bug in de opschoonfunctie voor PHP. Als u PHP 8.3 gebruikt, moet u upgraden naar `8.3.5` of hoger is om deze functie te kunnen gebruiken.
-
-## Bekende problemen
-
-### Verzoeken die verloren gaan bij het beëindigen van een thread.
-
-Als er een probleem met een arbeidersdraad is die de arbeidersdraad om veroorzaakt te beëindigen, dan zullen om het even welke HTTP- verzoeken die reeds aan die zelfde arbeidersdraad een rij worden gevormd een teruggestelde van de de contactdoosverbinding van TCP krijgen. Bij een reverse-proxy, zoals NGINX, vóór de server worden deze fouten weergegeven als `502` fouten. Workers kunnen sterven door vastlopen, door geheugengebruik of door PHP-fouten in extensies van derden. Dit probleem wordt veroorzaakt door het standaardgedrag van de HTTP-server van SWOLE. Standaard wordt de HTTP-server gestart in `SWOOLE_BASE` -modus. Op deze wijze, worden de HTTP- verzoeken die binnen komen toegewezen aan arbeidersdraden in een rij, zelfs als de arbeidersdraad nog een vorige verzoek verwerkt. Als u dit wijzigt in de `SWOOLE_PROCESS` in de modus, worden de verbindingen onderhouden door het hoofdproces en wordt aanzienlijk meer communicatie tussen processen gebruikt. De negatieve kant op `SWOOLE_PROCESS` PHP ZTS wordt niet ondersteund. Lees de [Brooddocumentatie](https://wiki.swoole.com/en/#/learn?id=swoole_process) voor meer informatie .
-
-### Toepassingsserver kan onder bepaalde omstandigheden de vorige configuratie van kenmerken gebruiken.
-
-De `CatalogGraphQl\Model\Config\AttributeReader` in `2.4.7` bevat een zeldzame fout die een GraphQL-verzoek kan veroorzaken om een reactie te krijgen met behulp van de vorige status van de configuratie Attributen. Er is een oplossing voor dit probleem geleverd in `2.4-develop`, maar niet op tijd voor `2.4.7` vrijgeven.
