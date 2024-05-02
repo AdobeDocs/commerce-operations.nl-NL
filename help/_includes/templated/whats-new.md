@@ -1,7 +1,7 @@
 ---
-source-git-commit: 88cdf47409f45f9ba6de75701ab877c5e4604f13
+source-git-commit: ccc1c6451556ac721d331adebf02db8226e75699
 workflow-type: tm+mt
-source-wordcount: '224'
+source-wordcount: '0'
 ht-degree: 0%
 
 ---
@@ -10,6 +10,72 @@ ht-degree: 0%
 ## Nieuwe functies
 
 Meer informatie over nieuwe documentatie en belangrijke updates voor bestaande documentatie.
+
+### 29 april 2024
+
+<table style="table-layout:auto;">
+  <thead>
+    <tr>
+      <th>Beschrijving</th>
+      <th>Type</th>
+      <th>Bron</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><p>De <a href="https://experienceleague.adobe.com/en/docs/commerce-operations/reference/uct">UCT CLI-verwijzing</a>.</p>
+</td>
+      <td>technisch</td>
+      <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/ae9b29601953f25ca28f253f557d547b200616a0">ae9b29</a> (toewijzen)</td>
+    </tr>
+  </tbody>
+</table>
+
+### 26 april 2024
+
+<table style="table-layout:auto;">
+  <thead>
+    <tr>
+      <th>Beschrijving</th>
+      <th>Type</th>
+      <th>Bron</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><p>De <em>Operationele hulplijnen</em> homepage (deze pagina) en verplaatst de <em><a href="https://experienceleague.adobe.com/en/docs/commerce-operations/tools/cli-reference/commerce-on-premises">Referentie voor opdrachtregelprogramma's</a></em> gids voor de <em><a href="https://experienceleague.adobe.com/en/docs/commerce-operations/tools/overview">Gereedschappen</a></em> hulplijn.</p>
+</td>
+      <td>belangrijke update</td>
+      <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/839b4e26a7c5d662093c7c1eec3fd5883ed7706a">839b4e</a> (toewijzen)</td>
+    </tr>
+    <tr>
+      <td><p>Een nieuwe <a href="https://experienceleague.adobe.com/docs/commerce-operations/events/summit/2024.html">overzichtspagina</a> voor Adobe Summit.</p>
+</td>
+      <td>nieuw onderwerp</td>
+      <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/1c2c75da7cda0e3c38ea904c98932472b618a3e5">1c2c75</a> (toewijzen)</td>
+    </tr>
+  </tbody>
+</table>
+
+### 15 april 2024
+
+<table style="table-layout:auto;">
+  <thead>
+    <tr>
+      <th>Beschrijving</th>
+      <th>Type</th>
+      <th>Bron</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><p>De <a href="https://experienceleague.adobe.com/en/docs/commerce-operations/release/beta">bèta</a> pagina voor informatie over alle beschikbare bèta's voor Adobe Commerce.</p>
+</td>
+      <td>belangrijke update</td>
+      <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/a362cad66d38a89bacda656d1520047e22262179">a362ca</a> (toewijzen)</td>
+    </tr>
+  </tbody>
+</table>
 
 ### 9 april 2024
 
