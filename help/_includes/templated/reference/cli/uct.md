@@ -1,7 +1,7 @@
 ---
-source-git-commit: 68ea73d407dd3e6daf880a66de8ef4b7bbef2360
+source-git-commit: 19d19ef385cf4aaee3a255930af8e6d3b81de23a
 workflow-type: tm+mt
-source-wordcount: '1656'
+source-wordcount: '1638'
 ht-degree: 0%
 
 ---
@@ -23,11 +23,12 @@ Meer informatie over het gereedschap in [Overzicht](/help/upgrade/upgrade-compat
 
 ## `_complete`
 
-Interne opdracht voor suggesties voor shell-voltooiing
-
 ```bash
 bin/uct _complete [-s|--shell SHELL] [-i|--input INPUT] [-c|--current CURRENT] [-S|--symfony SYMFONY]
 ```
+
+Interne opdracht voor suggesties voor shell-voltooiing
+
 
 ### `--shell`, `-s`
 
@@ -56,7 +57,7 @@ De versie van het voltooiingsscript
 
 ### `--help`, `-h`
 
-Help weergeven voor de opgegeven opdracht. Wanneer geen opdracht is gegeven, wordt de Help weergegeven voor de \&lt;info>list\&lt;/info> command
+Help weergeven voor de opgegeven opdracht. Wanneer geen bevel vertoningshulp voor het lijstbevel wordt gegeven
 
 - Standaard: `false`
 - Accepteert geen waarde
@@ -105,10 +106,40 @@ Geen interactieve vraag stellen
 
 ## `completion`
 
-Het shell-voltooiingsscript dumpen
-
 ```bash
 bin/uct completion [--debug] [--] [<shell>]
+```
+
+Het shell-voltooiingsscript dumpen
+
+
+```
+The completion command dumps the shell completion script required
+to use shell autocompletion (currently only bash completion is supported).
+
+Static installation
+-------------------
+
+Dump the script to a global completion file and restart your shell:
+
+    uct/bin/uct completion bash | sudo tee /etc/bash_completion.d/uct
+
+Or dump the script to a local file and source it:
+
+    uct/bin/uct completion bash > completion.sh
+
+    # source the file whenever you use the project
+    source completion.sh
+
+    # or add this line at the end of your "~/.bashrc" file:
+    source /path/to/completion.sh
+
+Dynamic installation
+--------------------
+
+Add this to the end of your shell configuration file (e.g. "~/.bashrc"):
+
+    eval "$(/var/jenkins/workspace/gendocs-uct-cli/uct/bin/uct completion bash)"
 ```
 
 
@@ -126,7 +157,7 @@ Tik op het logbestand voor foutopsporing bij voltooien
 
 ### `--help`, `-h`
 
-Help weergeven voor de opgegeven opdracht. Wanneer geen opdracht is gegeven, wordt de Help weergegeven voor de \&lt;info>list\&lt;/info> command
+Help weergeven voor de opgegeven opdracht. Wanneer geen bevel vertoningshulp voor het lijstbevel wordt gegeven
 
 - Standaard: `false`
 - Accepteert geen waarde
@@ -175,10 +206,23 @@ Geen interactieve vraag stellen
 
 ## `help`
 
-Help weergeven voor een opdracht
-
 ```bash
 bin/uct help [--format FORMAT] [--raw] [--] [<command_name>]
+```
+
+Help weergeven voor een opdracht
+
+
+```
+The help command displays help for a given command:
+
+  uct/bin/uct help list
+
+You can also output the help in other formats by using the --format option:
+
+  uct/bin/uct help --format=xml list
+
+To display the list of available commands, please use the list command.
 ```
 
 
@@ -205,7 +249,7 @@ Help bij de opdracht Uitvoeren
 
 ### `--help`, `-h`
 
-Help weergeven voor de opgegeven opdracht. Wanneer geen opdracht is gegeven, wordt de Help weergegeven voor de \&lt;info>list\&lt;/info> command
+Help weergeven voor de opgegeven opdracht. Wanneer geen bevel vertoningshulp voor het lijstbevel wordt gegeven
 
 - Standaard: `false`
 - Accepteert geen waarde
@@ -254,10 +298,29 @@ Geen interactieve vraag stellen
 
 ## `list`
 
-Lijstopdrachten
-
 ```bash
 bin/uct list [--raw] [--format FORMAT] [--short] [--] [<namespace>]
+```
+
+Lijstopdrachten
+
+
+```
+The list command lists all commands:
+
+  uct/bin/uct list
+
+You can also display the commands for a specific namespace:
+
+  uct/bin/uct list test
+
+You can also output the information in other formats by using the --format option:
+
+  uct/bin/uct list --format=xml
+
+It's also possible to get raw list of commands (useful for embedding command runner):
+
+  uct/bin/uct list --raw
 ```
 
 
@@ -289,7 +352,7 @@ Om het beschrijven van de argumenten van bevelen over te slaan
 
 ### `--help`, `-h`
 
-Help weergeven voor de opgegeven opdracht. Wanneer geen opdracht is gegeven, wordt de Help weergegeven voor de \&lt;info>list\&lt;/info> command
+Help weergeven voor de opgegeven opdracht. Wanneer geen bevel vertoningshulp voor het lijstbevel wordt gegeven
 
 - Standaard: `false`
 - Accepteert geen waarde
@@ -338,11 +401,12 @@ Geen interactieve vraag stellen
 
 ## `refactor`
 
-Hiermee lost u de problemen op die automatisch kunnen worden opgelost. De code in het opgegeven pad wordt bijgewerkt.
-
 ```bash
 bin/uct refactor <path>
 ```
+
+Hiermee lost u de problemen op die automatisch kunnen worden opgelost. De code in het opgegeven pad wordt bijgewerkt.
+
 
 
 ### `path`
@@ -353,7 +417,7 @@ Pad om problemen op te lossen in.
 
 ### `--help`, `-h`
 
-Help weergeven voor de opgegeven opdracht. Wanneer geen opdracht is gegeven, wordt de Help weergegeven voor de \&lt;info>list\&lt;/info> command
+Help weergeven voor de opgegeven opdracht. Wanneer geen bevel vertoningshulp voor het lijstbevel wordt gegeven
 
 - Standaard: `false`
 - Accepteert geen waarde
@@ -402,11 +466,12 @@ Geen interactieve vraag stellen
 
 ## `core:code:changes`
 
-Het hulpmiddel van de Verenigbaarheid van de Verbetering is een bevel-lijn hulpmiddel dat een instantie van Adobe Commerce tegen een specifieke versie door alle niet-Adobe Commerce modules controleert te analyseren die in het worden geïnstalleerd. Retourneert een lijst met fouten en waarschuwingen die u moet oplossen voordat u een upgrade naar een nieuwe versie van Adobe Commerce-code uitvoert.
-
 ```bash
 bin/uct core:code:changes [-o|--output [OUTPUT]] [--] <dir> [<vanilla-dir>]
 ```
+
+Het hulpmiddel van de Verenigbaarheid van de Verbetering is een bevel-lijn hulpmiddel dat een instantie van Adobe Commerce tegen een specifieke versie door alle niet-Adobe Commerce modules controleert te analyseren die in het worden geïnstalleerd. Retourneert een lijst met fouten en waarschuwingen die u moet oplossen voordat u een upgrade naar een nieuwe versie van Adobe Commerce-code uitvoert.
+
 
 
 ### `dir`
@@ -428,7 +493,7 @@ Pad van het bestand waarnaar de uitvoer wordt geëxporteerd (JSON-indeling)
 
 ### `--help`, `-h`
 
-Help weergeven voor de opgegeven opdracht. Wanneer geen opdracht is gegeven, wordt de Help weergegeven voor de \&lt;info>list\&lt;/info> command
+Help weergeven voor de opgegeven opdracht. Wanneer geen bevel vertoningshulp voor het lijstbevel wordt gegeven
 
 - Standaard: `false`
 - Accepteert geen waarde
@@ -477,11 +542,12 @@ Geen interactieve vraag stellen
 
 ## `dbschema:diff`
 
-Adobe Commerce DB-schemaverschillen tussen twee geselecteerde versies weergeven. Beschikbare versies: 2.3.0 | 2.3.1. | 2.3.2. | 2.3.2-p2 | 2,3,3 | 2.3.3-p1 | 2.3.4. | 2.3.4-p1 | 2.3.4-p2 | 2.3.5. | 2.3.5-p1 | 2.3.5-p2 | 2.3.6. | 2.3.6-p1 | 2.3.7. | 2.3.7-p1 | 2.3.7-p2 | 2.3.7-p3 | 2.3.7-p4 | 2.4.0. | 2.4.0-p1 | 2.4.1. | 2.4.1-p1 | 2.4.2. | 2.4.2-p1 | 2.4.2-p2 | 2.4.3. | 2.4.3-p1 | 2.4.3-p2 | 2.4.3-p3 | 2.4.4. | 2.4.4-p1 | 2.4.5. | 2.4.4-p2 | 2.4.5-p1 | 2.4.4-p3 | 2.4.4-p4 | 2.4.4-p5 | 2.4.5-p2 | 2.4.5-p3 | 2.4.5-p4 | 2.4.6. | 2.4.6-p1 | 2.4.6-p2 | 2.4.7-bèta1 | 2.4.4-p6 | 2.4.5-p5 | 2.4.6-p3 | 2.4.7-bèta2 | 2.4.4-p7 | 2.4.5-p6 | 2.4.6-p4 | 2.4.7-bèta3 | 2.4.7. | 2.4.6-p5 | 2.4.5-p7 | 2.4.4-p8
-
 ```bash
 bin/uct dbschema:diff <current-version> <target-version>
 ```
+
+Adobe Commerce DB-schemaverschillen tussen twee geselecteerde versies weergeven. Beschikbare versies: 2.3.0 | 2.3.1. | 2.3.2. | 2.3.2-p2 | 2,3,3 | 2.3.3-p1 | 2.3.4. | 2.3.4-p1 | 2.3.4-p2 | 2.3.5. | 2.3.5-p1 | 2.3.5-p2 | 2.3.6. | 2.3.6-p1 | 2.3.7. | 2.3.7-p1 | 2.3.7-p2 | 2.3.7-p3 | 2.3.7-p4 | 2.4.0. | 2.4.0-p1 | 2.4.1. | 2.4.1-p1 | 2.4.2. | 2.4.2-p1 | 2.4.2-p2 | 2.4.3. | 2.4.3-p1 | 2.4.3-p2 | 2.4.3-p3 | 2.4.4. | 2.4.4-p1 | 2.4.5. | 2.4.4-p2 | 2.4.5-p1 | 2.4.4-p3 | 2.4.4-p4 | 2.4.4-p5 | 2.4.5-p2 | 2.4.5-p3 | 2.4.5-p4 | 2.4.6. | 2.4.6-p1 | 2.4.6-p2 | 2.4.7-bèta1 | 2.4.4-p6 | 2.4.5-p5 | 2.4.6-p3 | 2.4.7-bèta2 | 2.4.4-p7 | 2.4.5-p6 | 2.4.6-p4 | 2.4.7-bèta3 | 2.4.7. | 2.4.6-p5 | 2.4.5-p7 | 2.4.4-p8
+
 
 
 ### `current-version`
@@ -498,7 +564,7 @@ doelversie (bijvoorbeeld 2.4.5).
 
 ### `--help`, `-h`
 
-Help weergeven voor de opgegeven opdracht. Wanneer geen opdracht is gegeven, wordt de Help weergegeven voor de \&lt;info>list\&lt;/info> command
+Help weergeven voor de opgegeven opdracht. Wanneer geen bevel vertoningshulp voor het lijstbevel wordt gegeven
 
 - Standaard: `false`
 - Accepteert geen waarde
@@ -547,11 +613,12 @@ Geen interactieve vraag stellen
 
 ## `graphql:compare`
 
-Compatibiliteitsverificatie GraphQL-schema
-
 ```bash
 bin/uct graphql:compare [-o|--output [OUTPUT]] [--] <schema1> <schema2>
 ```
+
+Compatibiliteitsverificatie GraphQL-schema
+
 
 
 ### `schema1`
@@ -574,7 +641,7 @@ Pad van het bestand waarnaar de uitvoer wordt geëxporteerd (JSON-indeling)
 
 ### `--help`, `-h`
 
-Help weergeven voor de opgegeven opdracht. Wanneer geen opdracht is gegeven, wordt de Help weergegeven voor de \&lt;info>list\&lt;/info> command
+Help weergeven voor de opgegeven opdracht. Wanneer geen bevel vertoningshulp voor het lijstbevel wordt gegeven
 
 - Standaard: `false`
 - Accepteert geen waarde
@@ -623,11 +690,12 @@ Geen interactieve vraag stellen
 
 ## `upgrade:check`
 
-Het hulpmiddel van de Verenigbaarheid van de Verbetering is een bevel-lijn hulpmiddel dat een Adobe Commerce aangepaste instantie tegen een specifieke versie controleert door alle modules te analyseren die in het worden geïnstalleerd. Retourneert een lijst met fouten en waarschuwingen die moeten worden opgelost voordat u de upgrade naar de nieuwste versie van Adobe Commerce uitvoert.
-
 ```bash
 bin/uct upgrade:check [-a|--current-version [CURRENT-VERSION]] [-c|--coming-version [COMING-VERSION]] [--json-output-path [JSON-OUTPUT-PATH]] [--html-output-path [HTML-OUTPUT-PATH]] [--min-issue-level [MIN-ISSUE-LEVEL]] [-i|--ignore-current-version-compatibility-issues] [--context CONTEXT] [--] <dir>
 ```
+
+Het hulpmiddel van de Verenigbaarheid van de Verbetering is een bevel-lijn hulpmiddel dat een Adobe Commerce aangepaste instantie tegen een specifieke versie controleert door alle modules te analyseren die in het worden geïnstalleerd. Retourneert een lijst met fouten en waarschuwingen die moeten worden opgelost voordat u de upgrade naar de nieuwste versie van Adobe Commerce uitvoert.
+
 
 
 ### `dir`
@@ -682,7 +750,7 @@ Uitvoeringcontext. Deze optie is bedoeld voor integratiedoeleinden en heeft geen
 
 ### `--help`, `-h`
 
-Help weergeven voor de opgegeven opdracht. Wanneer geen opdracht is gegeven, wordt de Help weergegeven voor de \&lt;info>list\&lt;/info> command
+Help weergeven voor de opgegeven opdracht. Wanneer geen bevel vertoningshulp voor het lijstbevel wordt gegeven
 
 - Standaard: `false`
 - Accepteert geen waarde

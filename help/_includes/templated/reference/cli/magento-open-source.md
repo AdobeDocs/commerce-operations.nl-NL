@@ -1,7 +1,7 @@
 ---
-source-git-commit: 755ea50a75924cc16f690ff888367abd305565e9
+source-git-commit: 19d19ef385cf4aaee3a255930af8e6d3b81de23a
 workflow-type: tm+mt
-source-wordcount: '18031'
+source-wordcount: '17795'
 ht-degree: 0%
 
 ---
@@ -26,11 +26,12 @@ Gebruik de [&quot;CLI-opdrachten toevoegen&quot;](https://developer.adobe.com/co
 
 ## `_complete`
 
-Interne opdracht voor suggesties voor shell-voltooiing
-
 ```bash
 bin/magento _complete [-s|--shell SHELL] [-i|--input INPUT] [-c|--current CURRENT] [-a|--api-version API-VERSION] [-S|--symfony SYMFONY]
 ```
+
+Interne opdracht voor suggesties voor shell-voltooiing
+
 
 ### `--shell`, `-s`
 
@@ -65,7 +66,7 @@ verouderd
 
 ### `--help`, `-h`
 
-Help weergeven voor de opgegeven opdracht. Wanneer geen opdracht is gegeven, wordt de Help weergegeven voor de \&lt;info>list\&lt;/info> command
+Help weergeven voor de opgegeven opdracht. Wanneer geen bevel vertoningshulp voor het lijstbevel wordt gegeven
 
 - Standaard: `false`
 - Accepteert geen waarde
@@ -114,10 +115,40 @@ Geen interactieve vraag stellen
 
 ## `completion`
 
-Het shell-voltooiingsscript dumpen
-
 ```bash
 bin/magento completion [--debug] [--] [<shell>]
+```
+
+Het shell-voltooiingsscript dumpen
+
+
+```
+The completion command dumps the shell completion script required
+to use shell autocompletion (currently, bash, fish, zsh completion are supported).
+
+Static installation
+-------------------
+
+Dump the script to a global completion file and restart your shell:
+
+    bin/magento completion  | sudo tee /etc/bash_completion.d/magento
+
+Or dump the script to a local file and source it:
+
+    bin/magento completion  > completion.sh
+
+    # source the file whenever you use the project
+    source completion.sh
+
+    # or add this line at the end of your "~/.bashrc" file:
+    source /path/to/completion.sh
+
+Dynamic installation
+--------------------
+
+Add this to the end of your shell configuration file (e.g. "~/.bashrc"):
+
+    eval "$(/var/www/html/magento2/bin/magento completion )"
 ```
 
 
@@ -135,7 +166,7 @@ Tik op het logbestand voor foutopsporing bij voltooien
 
 ### `--help`, `-h`
 
-Help weergeven voor de opgegeven opdracht. Wanneer geen opdracht is gegeven, wordt de Help weergegeven voor de \&lt;info>list\&lt;/info> command
+Help weergeven voor de opgegeven opdracht. Wanneer geen bevel vertoningshulp voor het lijstbevel wordt gegeven
 
 - Standaard: `false`
 - Accepteert geen waarde
@@ -184,10 +215,23 @@ Geen interactieve vraag stellen
 
 ## `help`
 
-Help weergeven voor een opdracht
-
 ```bash
 bin/magento help [--format FORMAT] [--raw] [--] [<command_name>]
+```
+
+Help weergeven voor een opdracht
+
+
+```
+The help command displays help for a given command:
+
+  bin/magento help list
+
+You can also output the help in other formats by using the --format option:
+
+  bin/magento help --format=xml list
+
+To display the list of available commands, please use the list command.
 ```
 
 
@@ -214,7 +258,7 @@ Help bij de opdracht Uitvoeren
 
 ### `--help`, `-h`
 
-Help weergeven voor de opgegeven opdracht. Wanneer geen opdracht is gegeven, wordt de Help weergegeven voor de \&lt;info>list\&lt;/info> command
+Help weergeven voor de opgegeven opdracht. Wanneer geen bevel vertoningshulp voor het lijstbevel wordt gegeven
 
 - Standaard: `false`
 - Accepteert geen waarde
@@ -263,10 +307,29 @@ Geen interactieve vraag stellen
 
 ## `list`
 
-Lijstopdrachten
-
 ```bash
 bin/magento list [--raw] [--format FORMAT] [--short] [--] [<namespace>]
+```
+
+Lijstopdrachten
+
+
+```
+The list command lists all commands:
+
+  bin/magento list
+
+You can also display the commands for a specific namespace:
+
+  bin/magento list test
+
+You can also output the information in other formats by using the --format option:
+
+  bin/magento list --format=xml
+
+It's also possible to get raw list of commands (useful for embedding command runner):
+
+  bin/magento list --raw
 ```
 
 
@@ -298,7 +361,7 @@ Om het beschrijven van de argumenten van bevelen over te slaan
 
 ### `--help`, `-h`
 
-Help weergeven voor de opgegeven opdracht. Wanneer geen opdracht is gegeven, wordt de Help weergegeven voor de \&lt;info>list\&lt;/info> command
+Help weergeven voor de opgegeven opdracht. Wanneer geen bevel vertoningshulp voor het lijstbevel wordt gegeven
 
 - Standaard: `false`
 - Accepteert geen waarde
@@ -347,15 +410,16 @@ Geen interactieve vraag stellen
 
 ## `admin:adobe-ims:disable`
 
-Adobe IMS-module uitschakelen
-
 ```bash
 bin/magento admin:adobe-ims:disable
 ```
 
+Adobe IMS-module uitschakelen
+
+
 ### `--help`, `-h`
 
-Help weergeven voor de opgegeven opdracht. Wanneer geen opdracht is gegeven, wordt de Help weergegeven voor de \&lt;info>list\&lt;/info> command
+Help weergeven voor de opgegeven opdracht. Wanneer geen bevel vertoningshulp voor het lijstbevel wordt gegeven
 
 - Standaard: `false`
 - Accepteert geen waarde
@@ -404,11 +468,12 @@ Geen interactieve vraag stellen
 
 ## `admin:adobe-ims:enable`
 
-Schakel Adobe IMS Module in.
-
 ```bash
 bin/magento admin:adobe-ims:enable [-o|--organization-id [ORGANIZATION-ID]] [-c|--client-id [CLIENT-ID]] [-s|--client-secret [CLIENT-SECRET]] [-t|--2fa [2FA]]
 ```
+
+Schakel Adobe IMS Module in.
+
 
 ### `--organization-id`, `-o`
 
@@ -436,7 +501,7 @@ Controleer of 2FA is ingeschakeld voor Organisatie in Adobe Admin Console. Verei
 
 ### `--help`, `-h`
 
-Help weergeven voor de opgegeven opdracht. Wanneer geen opdracht is gegeven, wordt de Help weergegeven voor de \&lt;info>list\&lt;/info> command
+Help weergeven voor de opgegeven opdracht. Wanneer geen bevel vertoningshulp voor het lijstbevel wordt gegeven
 
 - Standaard: `false`
 - Accepteert geen waarde
@@ -485,15 +550,16 @@ Geen interactieve vraag stellen
 
 ## `admin:adobe-ims:info`
 
-Informatie over de configuratie van de Adobe IMS-module
-
 ```bash
 bin/magento admin:adobe-ims:info
 ```
 
+Informatie over de configuratie van de Adobe IMS-module
+
+
 ### `--help`, `-h`
 
-Help weergeven voor de opgegeven opdracht. Wanneer geen opdracht is gegeven, wordt de Help weergegeven voor de \&lt;info>list\&lt;/info> command
+Help weergeven voor de opgegeven opdracht. Wanneer geen bevel vertoningshulp voor het lijstbevel wordt gegeven
 
 - Standaard: `false`
 - Accepteert geen waarde
@@ -542,15 +608,16 @@ Geen interactieve vraag stellen
 
 ## `admin:adobe-ims:status`
 
-Status van de Adobe IMS-module
-
 ```bash
 bin/magento admin:adobe-ims:status
 ```
 
+Status van de Adobe IMS-module
+
+
 ### `--help`, `-h`
 
-Help weergeven voor de opgegeven opdracht. Wanneer geen opdracht is gegeven, wordt de Help weergegeven voor de \&lt;info>list\&lt;/info> command
+Help weergeven voor de opgegeven opdracht. Wanneer geen bevel vertoningshulp voor het lijstbevel wordt gegeven
 
 - Standaard: `false`
 - Accepteert geen waarde
@@ -599,11 +666,12 @@ Geen interactieve vraag stellen
 
 ## `admin:user:create`
 
-Hiermee wordt een beheerder gemaakt
-
 ```bash
 bin/magento admin:user:create [--admin-user ADMIN-USER] [--admin-password ADMIN-PASSWORD] [--admin-email ADMIN-EMAIL] [--admin-firstname ADMIN-FIRSTNAME] [--admin-lastname ADMIN-LASTNAME] [--magento-init-params MAGENTO-INIT-PARAMS]
 ```
+
+Hiermee wordt een beheerder gemaakt
+
 
 ### `--admin-user`
 
@@ -643,7 +711,7 @@ Voeg aan om het even welke bevel toe om Magento initialisatieparameters aan te p
 
 ### `--help`, `-h`
 
-Help weergeven voor de opgegeven opdracht. Wanneer geen opdracht is gegeven, wordt de Help weergegeven voor de \&lt;info>list\&lt;/info> command
+Help weergeven voor de opgegeven opdracht. Wanneer geen bevel vertoningshulp voor het lijstbevel wordt gegeven
 
 - Standaard: `false`
 - Accepteert geen waarde
@@ -692,10 +760,17 @@ Geen interactieve vraag stellen
 
 ## `admin:user:unlock`
 
-Beheerdersaccount ontgrendelen
-
 ```bash
 bin/magento admin:user:unlock <username>
+```
+
+Beheerdersaccount ontgrendelen
+
+
+```
+This command unlocks an admin account by its username.
+To unlock:
+      bin/magento admin:user:unlock username
 ```
 
 
@@ -707,7 +782,7 @@ De te ontgrendelen admin-gebruikersnaam
 
 ### `--help`, `-h`
 
-Help weergeven voor de opgegeven opdracht. Wanneer geen opdracht is gegeven, wordt de Help weergegeven voor de \&lt;info>list\&lt;/info> command
+Help weergeven voor de opgegeven opdracht. Wanneer geen bevel vertoningshulp voor het lijstbevel wordt gegeven
 
 - Standaard: `false`
 - Accepteert geen waarde
@@ -756,11 +831,12 @@ Geen interactieve vraag stellen
 
 ## `app:config:dump`
 
-Stortplaats van toepassing maken
-
 ```bash
 bin/magento app:config:dump [<config-types>...]
 ```
+
+Stortplaats van toepassing maken
+
 
 
 ### `config-types`
@@ -773,7 +849,7 @@ Lijst met door spaties gescheiden configuratietypen of het weglaten om alles te 
 
 ### `--help`, `-h`
 
-Help weergeven voor de opgegeven opdracht. Wanneer geen opdracht is gegeven, wordt de Help weergegeven voor de \&lt;info>list\&lt;/info> command
+Help weergeven voor de opgegeven opdracht. Wanneer geen bevel vertoningshulp voor het lijstbevel wordt gegeven
 
 - Standaard: `false`
 - Accepteert geen waarde
@@ -822,15 +898,16 @@ Geen interactieve vraag stellen
 
 ## `app:config:import`
 
-Gegevens uit gedeelde configuratiebestanden importeren naar de juiste gegevensopslag
-
 ```bash
 bin/magento app:config:import
 ```
 
+Gegevens uit gedeelde configuratiebestanden importeren naar de juiste gegevensopslag
+
+
 ### `--help`, `-h`
 
-Help weergeven voor de opgegeven opdracht. Wanneer geen opdracht is gegeven, wordt de Help weergegeven voor de \&lt;info>list\&lt;/info> command
+Help weergeven voor de opgegeven opdracht. Wanneer geen bevel vertoningshulp voor het lijstbevel wordt gegeven
 
 - Standaard: `false`
 - Accepteert geen waarde
@@ -879,15 +956,16 @@ Geen interactieve vraag stellen
 
 ## `app:config:status`
 
-Controleert of config-propagatie update vereist
-
 ```bash
 bin/magento app:config:status
 ```
 
+Controleert of config-propagatie update vereist
+
+
 ### `--help`, `-h`
 
-Help weergeven voor de opgegeven opdracht. Wanneer geen opdracht is gegeven, wordt de Help weergegeven voor de \&lt;info>list\&lt;/info> command
+Help weergeven voor de opgegeven opdracht. Wanneer geen bevel vertoningshulp voor het lijstbevel wordt gegeven
 
 - Standaard: `false`
 - Accepteert geen waarde
@@ -936,11 +1014,12 @@ Geen interactieve vraag stellen
 
 ## `braintree:migrate`
 
-Opgeslagen kaarten migreren vanuit een Magento 1-database
-
 ```bash
 bin/magento braintree:migrate [--host HOST] [--dbname DBNAME] [--username USERNAME] [--password PASSWORD]
 ```
+
+Opgeslagen kaarten migreren vanuit een Magento 1-database
+
 
 ### `--host`
 
@@ -968,7 +1047,7 @@ Wachtwoord
 
 ### `--help`, `-h`
 
-Help weergeven voor de opgegeven opdracht. Wanneer geen opdracht is gegeven, wordt de Help weergegeven voor de \&lt;info>list\&lt;/info> command
+Help weergeven voor de opgegeven opdracht. Wanneer geen bevel vertoningshulp voor het lijstbevel wordt gegeven
 
 - Standaard: `false`
 - Accepteert geen waarde
@@ -1017,11 +1096,12 @@ Geen interactieve vraag stellen
 
 ## `cache:clean`
 
-Cachetype(s) wissen
-
 ```bash
 bin/magento cache:clean [--bootstrap BOOTSTRAP] [--] [<types>...]
 ```
+
+Cachetype(s) wissen
+
 
 
 ### `types`
@@ -1040,7 +1120,7 @@ parameters van de bootstrap toevoegen of overschrijven
 
 ### `--help`, `-h`
 
-Help weergeven voor de opgegeven opdracht. Wanneer geen opdracht is gegeven, wordt de Help weergegeven voor de \&lt;info>list\&lt;/info> command
+Help weergeven voor de opgegeven opdracht. Wanneer geen bevel vertoningshulp voor het lijstbevel wordt gegeven
 
 - Standaard: `false`
 - Accepteert geen waarde
@@ -1089,11 +1169,12 @@ Geen interactieve vraag stellen
 
 ## `cache:disable`
 
-Cachetype(s) uitschakelen
-
 ```bash
 bin/magento cache:disable [--bootstrap BOOTSTRAP] [--] [<types>...]
 ```
+
+Cachetype(s) uitschakelen
+
 
 
 ### `types`
@@ -1112,7 +1193,7 @@ parameters van de bootstrap toevoegen of overschrijven
 
 ### `--help`, `-h`
 
-Help weergeven voor de opgegeven opdracht. Wanneer geen opdracht is gegeven, wordt de Help weergegeven voor de \&lt;info>list\&lt;/info> command
+Help weergeven voor de opgegeven opdracht. Wanneer geen bevel vertoningshulp voor het lijstbevel wordt gegeven
 
 - Standaard: `false`
 - Accepteert geen waarde
@@ -1161,11 +1242,12 @@ Geen interactieve vraag stellen
 
 ## `cache:enable`
 
-Cachetype(s) inschakelen
-
 ```bash
 bin/magento cache:enable [--bootstrap BOOTSTRAP] [--] [<types>...]
 ```
+
+Cachetype(s) inschakelen
+
 
 
 ### `types`
@@ -1184,7 +1266,7 @@ parameters van de bootstrap toevoegen of overschrijven
 
 ### `--help`, `-h`
 
-Help weergeven voor de opgegeven opdracht. Wanneer geen opdracht is gegeven, wordt de Help weergegeven voor de \&lt;info>list\&lt;/info> command
+Help weergeven voor de opgegeven opdracht. Wanneer geen bevel vertoningshulp voor het lijstbevel wordt gegeven
 
 - Standaard: `false`
 - Accepteert geen waarde
@@ -1233,11 +1315,12 @@ Geen interactieve vraag stellen
 
 ## `cache:flush`
 
-Cacheopslag wordt gebruikt door cachetype(s)
-
 ```bash
 bin/magento cache:flush [--bootstrap BOOTSTRAP] [--] [<types>...]
 ```
+
+Cacheopslag wordt gebruikt door cachetype(s)
+
 
 
 ### `types`
@@ -1256,7 +1339,7 @@ parameters van de bootstrap toevoegen of overschrijven
 
 ### `--help`, `-h`
 
-Help weergeven voor de opgegeven opdracht. Wanneer geen opdracht is gegeven, wordt de Help weergegeven voor de \&lt;info>list\&lt;/info> command
+Help weergeven voor de opgegeven opdracht. Wanneer geen bevel vertoningshulp voor het lijstbevel wordt gegeven
 
 - Standaard: `false`
 - Accepteert geen waarde
@@ -1305,11 +1388,12 @@ Geen interactieve vraag stellen
 
 ## `cache:status`
 
-Hiermee wordt de cachestatus gecontroleerd
-
 ```bash
 bin/magento cache:status [--bootstrap BOOTSTRAP]
 ```
+
+Hiermee wordt de cachestatus gecontroleerd
+
 
 ### `--bootstrap`
 
@@ -1319,7 +1403,7 @@ parameters van de bootstrap toevoegen of overschrijven
 
 ### `--help`, `-h`
 
-Help weergeven voor de opgegeven opdracht. Wanneer geen opdracht is gegeven, wordt de Help weergegeven voor de \&lt;info>list\&lt;/info> command
+Help weergeven voor de opgegeven opdracht. Wanneer geen bevel vertoningshulp voor het lijstbevel wordt gegeven
 
 - Standaard: `false`
 - Accepteert geen waarde
@@ -1368,11 +1452,12 @@ Geen interactieve vraag stellen
 
 ## `catalog:images:resize`
 
-Hiermee maakt u productafbeeldingen waarvan het formaat is gewijzigd
-
 ```bash
 bin/magento catalog:images:resize [-a|--async] [--skip_hidden_images]
 ```
+
+Hiermee maakt u productafbeeldingen waarvan het formaat is gewijzigd
+
 
 ### `--async`, `-a`
 
@@ -1390,7 +1475,7 @@ Afbeeldingen die als verborgen op de productpagina zijn gemarkeerd, niet verwerk
 
 ### `--help`, `-h`
 
-Help weergeven voor de opgegeven opdracht. Wanneer geen opdracht is gegeven, wordt de Help weergegeven voor de \&lt;info>list\&lt;/info> command
+Help weergeven voor de opgegeven opdracht. Wanneer geen bevel vertoningshulp voor het lijstbevel wordt gegeven
 
 - Standaard: `false`
 - Accepteert geen waarde
@@ -1439,15 +1524,16 @@ Geen interactieve vraag stellen
 
 ## `catalog:product:attributes:cleanup`
 
-Verwijdert ongebruikte productkenmerken.
-
 ```bash
 bin/magento catalog:product:attributes:cleanup
 ```
 
+Verwijdert ongebruikte productkenmerken.
+
+
 ### `--help`, `-h`
 
-Help weergeven voor de opgegeven opdracht. Wanneer geen opdracht is gegeven, wordt de Help weergegeven voor de \&lt;info>list\&lt;/info> command
+Help weergeven voor de opgegeven opdracht. Wanneer geen bevel vertoningshulp voor het lijstbevel wordt gegeven
 
 - Standaard: `false`
 - Accepteert geen waarde
@@ -1496,11 +1582,12 @@ Geen interactieve vraag stellen
 
 ## `cms:wysiwyg:restrict`
 
-Instellen of validatie van HTML-inhoud van gebruiker moet worden afgedwongen of dat een waarschuwing moet worden weergegeven
-
 ```bash
 bin/magento cms:wysiwyg:restrict <restrict>
 ```
+
+Instellen of validatie van HTML-inhoud van gebruiker moet worden afgedwongen of dat een waarschuwing moet worden weergegeven
+
 
 
 ### `restrict`
@@ -1511,7 +1598,7 @@ y\n
 
 ### `--help`, `-h`
 
-Help weergeven voor de opgegeven opdracht. Wanneer geen opdracht is gegeven, wordt de Help weergegeven voor de \&lt;info>list\&lt;/info> command
+Help weergeven voor de opgegeven opdracht. Wanneer geen bevel vertoningshulp voor het lijstbevel wordt gegeven
 
 - Standaard: `false`
 - Accepteert geen waarde
@@ -1560,11 +1647,12 @@ Geen interactieve vraag stellen
 
 ## `config:sensitive:set`
 
-Gevoelige configuratiewaarden instellen
-
 ```bash
 bin/magento config:sensitive:set [-i|--interactive] [--scope [SCOPE]] [--scope-code [SCOPE-CODE]] [--] [<path> [<value>]]
 ```
+
+Gevoelige configuratiewaarden instellen
+
 
 
 ### `path`
@@ -1600,7 +1688,7 @@ Toepassingscode voor configuratie, standaard lege tekenreeks
 
 ### `--help`, `-h`
 
-Help weergeven voor de opgegeven opdracht. Wanneer geen opdracht is gegeven, wordt de Help weergegeven voor de \&lt;info>list\&lt;/info> command
+Help weergeven voor de opgegeven opdracht. Wanneer geen bevel vertoningshulp voor het lijstbevel wordt gegeven
 
 - Standaard: `false`
 - Accepteert geen waarde
@@ -1649,11 +1737,12 @@ Geen interactieve vraag stellen
 
 ## `config:set`
 
-Systeemconfiguratie wijzigen
-
 ```bash
 bin/magento config:set [--scope SCOPE] [--scope-code SCOPE-CODE] [-e|--lock-env] [-c|--lock-config] [-l|--lock] [--] <path> <value>
 ```
+
+Systeemconfiguratie wijzigen
+
 
 
 ### `path`
@@ -1704,7 +1793,7 @@ Vervangen, gebruik in plaats hiervan de optie —lock-env.
 
 ### `--help`, `-h`
 
-Help weergeven voor de opgegeven opdracht. Wanneer geen opdracht is gegeven, wordt de Help weergegeven voor de \&lt;info>list\&lt;/info> command
+Help weergeven voor de opgegeven opdracht. Wanneer geen bevel vertoningshulp voor het lijstbevel wordt gegeven
 
 - Standaard: `false`
 - Accepteert geen waarde
@@ -1753,11 +1842,12 @@ Geen interactieve vraag stellen
 
 ## `config:show`
 
-Toont configuratiewaarde voor bepaalde weg. Als het pad niet is opgegeven, worden alle opgeslagen waarden weergegeven
-
 ```bash
 bin/magento config:show [--scope [SCOPE]] [--scope-code [SCOPE-CODE]] [--] [<path>]
 ```
+
+Toont configuratiewaarde voor bepaalde weg. Als het pad niet is opgegeven, worden alle opgeslagen waarden weergegeven
+
 
 
 ### `path`
@@ -1781,7 +1871,7 @@ Code bereik (alleen vereist als het bereik niet is ingesteld) `default`)
 
 ### `--help`, `-h`
 
-Help weergeven voor de opgegeven opdracht. Wanneer geen opdracht is gegeven, wordt de Help weergegeven voor de \&lt;info>list\&lt;/info> command
+Help weergeven voor de opgegeven opdracht. Wanneer geen bevel vertoningshulp voor het lijstbevel wordt gegeven
 
 - Standaard: `false`
 - Accepteert geen waarde
@@ -1830,11 +1920,12 @@ Geen interactieve vraag stellen
 
 ## `cron:install`
 
-Genereert en installeert een tab voor de huidige gebruiker
-
 ```bash
 bin/magento cron:install [-f|--force] [-d|--non-optional]
 ```
+
+Genereert en installeert een tab voor de huidige gebruiker
+
 
 ### `--force`, `-f`
 
@@ -1852,7 +1943,7 @@ Alleen de niet-optionele (standaard)taken installeren
 
 ### `--help`, `-h`
 
-Help weergeven voor de opgegeven opdracht. Wanneer geen opdracht is gegeven, wordt de Help weergegeven voor de \&lt;info>list\&lt;/info> command
+Help weergeven voor de opgegeven opdracht. Wanneer geen bevel vertoningshulp voor het lijstbevel wordt gegeven
 
 - Standaard: `false`
 - Accepteert geen waarde
@@ -1901,15 +1992,16 @@ Geen interactieve vraag stellen
 
 ## `cron:remove`
 
-Hiermee worden taken uit het tabblad Crontab verwijderd
-
 ```bash
 bin/magento cron:remove
 ```
 
+Hiermee worden taken uit het tabblad Crontab verwijderd
+
+
 ### `--help`, `-h`
 
-Help weergeven voor de opgegeven opdracht. Wanneer geen opdracht is gegeven, wordt de Help weergegeven voor de \&lt;info>list\&lt;/info> command
+Help weergeven voor de opgegeven opdracht. Wanneer geen bevel vertoningshulp voor het lijstbevel wordt gegeven
 
 - Standaard: `false`
 - Accepteert geen waarde
@@ -1958,11 +2050,12 @@ Geen interactieve vraag stellen
 
 ## `cron:run`
 
-Hiermee worden taken volgens schema uitgevoerd
-
 ```bash
 bin/magento cron:run [--group GROUP] [--exclude-group [EXCLUDE-GROUP]] [--bootstrap BOOTSTRAP]
 ```
+
+Hiermee worden taken volgens schema uitgevoerd
+
 
 ### `--group`
 
@@ -1985,7 +2078,7 @@ Parameters van de bootstrap toevoegen of overschrijven
 
 ### `--help`, `-h`
 
-Help weergeven voor de opgegeven opdracht. Wanneer geen opdracht is gegeven, wordt de Help weergegeven voor de \&lt;info>list\&lt;/info> command
+Help weergeven voor de opgegeven opdracht. Wanneer geen bevel vertoningshulp voor het lijstbevel wordt gegeven
 
 - Standaard: `false`
 - Accepteert geen waarde
@@ -2034,15 +2127,16 @@ Geen interactieve vraag stellen
 
 ## `customer:hash:upgrade`
 
-De hash van de klant bijwerken volgens het meest recente algoritme
-
 ```bash
 bin/magento customer:hash:upgrade
 ```
 
+De hash van de klant bijwerken volgens het meest recente algoritme
+
+
 ### `--help`, `-h`
 
-Help weergeven voor de opgegeven opdracht. Wanneer geen opdracht is gegeven, wordt de Help weergegeven voor de \&lt;info>list\&lt;/info> command
+Help weergeven voor de opgegeven opdracht. Wanneer geen bevel vertoningshulp voor het lijstbevel wordt gegeven
 
 - Standaard: `false`
 - Accepteert geen waarde
@@ -2091,11 +2185,12 @@ Geen interactieve vraag stellen
 
 ## `deploy:mode:set`
 
-Toepassingsmodus instellen.
-
 ```bash
 bin/magento deploy:mode:set [-s|--skip-compilation] [--] <mode>
 ```
+
+Toepassingsmodus instellen.
+
 
 
 ### `mode`
@@ -2113,7 +2208,7 @@ Verwijdert het wissen en opnieuw genereren van statische inhoud (gegenereerde co
 
 ### `--help`, `-h`
 
-Help weergeven voor de opgegeven opdracht. Wanneer geen opdracht is gegeven, wordt de Help weergegeven voor de \&lt;info>list\&lt;/info> command
+Help weergeven voor de opgegeven opdracht. Wanneer geen bevel vertoningshulp voor het lijstbevel wordt gegeven
 
 - Standaard: `false`
 - Accepteert geen waarde
@@ -2162,15 +2257,16 @@ Geen interactieve vraag stellen
 
 ## `deploy:mode:show`
 
-Geeft de huidige toepassingsmodus weer.
-
 ```bash
 bin/magento deploy:mode:show
 ```
 
+Geeft de huidige toepassingsmodus weer.
+
+
 ### `--help`, `-h`
 
-Help weergeven voor de opgegeven opdracht. Wanneer geen opdracht is gegeven, wordt de Help weergegeven voor de \&lt;info>list\&lt;/info> command
+Help weergeven voor de opgegeven opdracht. Wanneer geen bevel vertoningshulp voor het lijstbevel wordt gegeven
 
 - Standaard: `false`
 - Accepteert geen waarde
@@ -2219,11 +2315,12 @@ Geen interactieve vraag stellen
 
 ## `dev:di:info`
 
-Verstrekt informatie over de configuratie van de Injectie van de Afhankelijkheid voor het Bevel.
-
 ```bash
 bin/magento dev:di:info <class>
 ```
+
+Verstrekt informatie over de configuratie van de Injectie van de Afhankelijkheid voor het Bevel.
+
 
 
 ### `class`
@@ -2234,7 +2331,7 @@ Klassenaam
 
 ### `--help`, `-h`
 
-Help weergeven voor de opgegeven opdracht. Wanneer geen opdracht is gegeven, wordt de Help weergegeven voor de \&lt;info>list\&lt;/info> command
+Help weergeven voor de opgegeven opdracht. Wanneer geen bevel vertoningshulp voor het lijstbevel wordt gegeven
 
 - Standaard: `false`
 - Accepteert geen waarde
@@ -2283,15 +2380,16 @@ Geen interactieve vraag stellen
 
 ## `dev:email:newsletter-compatibility-check`
 
-Scant nieuwsbrieven sjablonen voor mogelijke compatibiliteitsproblemen met variabeleverbruik
-
 ```bash
 bin/magento dev:email:newsletter-compatibility-check
 ```
 
+Scant nieuwsbrieven sjablonen voor mogelijke compatibiliteitsproblemen met variabeleverbruik
+
+
 ### `--help`, `-h`
 
-Help weergeven voor de opgegeven opdracht. Wanneer geen opdracht is gegeven, wordt de Help weergegeven voor de \&lt;info>list\&lt;/info> command
+Help weergeven voor de opgegeven opdracht. Wanneer geen bevel vertoningshulp voor het lijstbevel wordt gegeven
 
 - Standaard: `false`
 - Accepteert geen waarde
@@ -2340,15 +2438,16 @@ Geen interactieve vraag stellen
 
 ## `dev:email:override-compatibility-check`
 
-Scant e-mailsjabloonoverschrijvingen voor mogelijke compatibiliteitsproblemen met variabelengebruik
-
 ```bash
 bin/magento dev:email:override-compatibility-check
 ```
 
+Scant e-mailsjabloonoverschrijvingen voor mogelijke compatibiliteitsproblemen met variabelengebruik
+
+
 ### `--help`, `-h`
 
-Help weergeven voor de opgegeven opdracht. Wanneer geen opdracht is gegeven, wordt de Help weergegeven voor de \&lt;info>list\&lt;/info> command
+Help weergeven voor de opgegeven opdracht. Wanneer geen bevel vertoningshulp voor het lijstbevel wordt gegeven
 
 - Standaard: `false`
 - Accepteert geen waarde
@@ -2397,15 +2496,16 @@ Geen interactieve vraag stellen
 
 ## `dev:profiler:disable`
 
-Maak profiler onbruikbaar.
-
 ```bash
 bin/magento dev:profiler:disable
 ```
 
+Maak profiler onbruikbaar.
+
+
 ### `--help`, `-h`
 
-Help weergeven voor de opgegeven opdracht. Wanneer geen opdracht is gegeven, wordt de Help weergegeven voor de \&lt;info>list\&lt;/info> command
+Help weergeven voor de opgegeven opdracht. Wanneer geen bevel vertoningshulp voor het lijstbevel wordt gegeven
 
 - Standaard: `false`
 - Accepteert geen waarde
@@ -2454,11 +2554,12 @@ Geen interactieve vraag stellen
 
 ## `dev:profiler:enable`
 
-De analyse inschakelen.
-
 ```bash
 bin/magento dev:profiler:enable [<type>]
 ```
+
+De analyse inschakelen.
+
 
 
 ### `type`
@@ -2468,7 +2569,7 @@ Type analyse
 
 ### `--help`, `-h`
 
-Help weergeven voor de opgegeven opdracht. Wanneer geen opdracht is gegeven, wordt de Help weergegeven voor de \&lt;info>list\&lt;/info> command
+Help weergeven voor de opgegeven opdracht. Wanneer geen bevel vertoningshulp voor het lijstbevel wordt gegeven
 
 - Standaard: `false`
 - Accepteert geen waarde
@@ -2517,15 +2618,16 @@ Geen interactieve vraag stellen
 
 ## `dev:query-log:disable`
 
-Logboekregistratie van DB-query uitschakelen
-
 ```bash
 bin/magento dev:query-log:disable
 ```
 
+Logboekregistratie van DB-query uitschakelen
+
+
 ### `--help`, `-h`
 
-Help weergeven voor de opgegeven opdracht. Wanneer geen opdracht is gegeven, wordt de Help weergegeven voor de \&lt;info>list\&lt;/info> command
+Help weergeven voor de opgegeven opdracht. Wanneer geen bevel vertoningshulp voor het lijstbevel wordt gegeven
 
 - Standaard: `false`
 - Accepteert geen waarde
@@ -2574,11 +2676,12 @@ Geen interactieve vraag stellen
 
 ## `dev:query-log:enable`
 
-Logbestand van DB-query inschakelen
-
 ```bash
 bin/magento dev:query-log:enable [--include-all-queries [INCLUDE-ALL-QUERIES]] [--query-time-threshold [QUERY-TIME-THRESHOLD]] [--include-call-stack [INCLUDE-CALL-STACK]]
 ```
+
+Logbestand van DB-query inschakelen
+
 
 ### `--include-all-queries`
 
@@ -2603,7 +2706,7 @@ Inclusief aanroepstack. [true\|false]
 
 ### `--help`, `-h`
 
-Help weergeven voor de opgegeven opdracht. Wanneer geen opdracht is gegeven, wordt de Help weergegeven voor de \&lt;info>list\&lt;/info> command
+Help weergeven voor de opgegeven opdracht. Wanneer geen bevel vertoningshulp voor het lijstbevel wordt gegeven
 
 - Standaard: `false`
 - Accepteert geen waarde
@@ -2652,11 +2755,12 @@ Geen interactieve vraag stellen
 
 ## `dev:source-theme:deploy`
 
-Hiermee worden bronbestanden voor thema verzameld en gepubliceerd.
-
 ```bash
 bin/magento dev:source-theme:deploy [--type TYPE] [--locale LOCALE] [--area AREA] [--theme THEME] [--] [<file>...]
 ```
+
+Hiermee worden bronbestanden voor thema verzameld en gepubliceerd.
+
 
 
 ### `file`
@@ -2697,7 +2801,7 @@ Thema: [Leverancier/thema]
 
 ### `--help`, `-h`
 
-Help weergeven voor de opgegeven opdracht. Wanneer geen opdracht is gegeven, wordt de Help weergegeven voor de \&lt;info>list\&lt;/info> command
+Help weergeven voor de opgegeven opdracht. Wanneer geen bevel vertoningshulp voor het lijstbevel wordt gegeven
 
 - Standaard: `false`
 - Accepteert geen waarde
@@ -2746,15 +2850,16 @@ Geen interactieve vraag stellen
 
 ## `dev:template-hints:disable`
 
-Tips voor frontend-sjablonen uitschakelen. Wellicht is het leegmaken van de cache vereist.
-
 ```bash
 bin/magento dev:template-hints:disable
 ```
 
+Tips voor frontend-sjablonen uitschakelen. Wellicht is het leegmaken van de cache vereist.
+
+
 ### `--help`, `-h`
 
-Help weergeven voor de opgegeven opdracht. Wanneer geen opdracht is gegeven, wordt de Help weergegeven voor de \&lt;info>list\&lt;/info> command
+Help weergeven voor de opgegeven opdracht. Wanneer geen bevel vertoningshulp voor het lijstbevel wordt gegeven
 
 - Standaard: `false`
 - Accepteert geen waarde
@@ -2803,15 +2908,16 @@ Geen interactieve vraag stellen
 
 ## `dev:template-hints:enable`
 
-Tips voor frontendsjablonen inschakelen. Wellicht is het leegmaken van de cache vereist.
-
 ```bash
 bin/magento dev:template-hints:enable
 ```
 
+Tips voor frontendsjablonen inschakelen. Wellicht is het leegmaken van de cache vereist.
+
+
 ### `--help`, `-h`
 
-Help weergeven voor de opgegeven opdracht. Wanneer geen opdracht is gegeven, wordt de Help weergegeven voor de \&lt;info>list\&lt;/info> command
+Help weergeven voor de opgegeven opdracht. Wanneer geen bevel vertoningshulp voor het lijstbevel wordt gegeven
 
 - Standaard: `false`
 - Accepteert geen waarde
@@ -2860,15 +2966,16 @@ Geen interactieve vraag stellen
 
 ## `dev:template-hints:status`
 
-Toon de status van frontend malplaatjewenken.
-
 ```bash
 bin/magento dev:template-hints:status
 ```
 
+Toon de status van frontend malplaatjewenken.
+
+
 ### `--help`, `-h`
 
-Help weergeven voor de opgegeven opdracht. Wanneer geen opdracht is gegeven, wordt de Help weergegeven voor de \&lt;info>list\&lt;/info> command
+Help weergeven voor de opgegeven opdracht. Wanneer geen bevel vertoningshulp voor het lijstbevel wordt gegeven
 
 - Standaard: `false`
 - Accepteert geen waarde
@@ -2917,11 +3024,12 @@ Geen interactieve vraag stellen
 
 ## `dev:tests:run`
 
-Tests bij uitvoering
-
 ```bash
 bin/magento dev:tests:run [-c|--arguments ARGUMENTS] [--] [<type>]
 ```
+
+Tests bij uitvoering
+
 
 
 ### `type`
@@ -2940,7 +3048,7 @@ Aanvullende argumenten voor PHPUnit. Voorbeeld: &quot;-c&#39;—filter=MyTest&#3
 
 ### `--help`, `-h`
 
-Help weergeven voor de opgegeven opdracht. Wanneer geen opdracht is gegeven, wordt de Help weergegeven voor de \&lt;info>list\&lt;/info> command
+Help weergeven voor de opgegeven opdracht. Wanneer geen bevel vertoningshulp voor het lijstbevel wordt gegeven
 
 - Standaard: `false`
 - Accepteert geen waarde
@@ -2989,11 +3097,12 @@ Geen interactieve vraag stellen
 
 ## `dev:urn-catalog:generate`
 
-Genereert de catalogus van URNs aan *.xsd- afbeeldingen voor winde om xml te benadrukken.
-
 ```bash
 bin/magento dev:urn-catalog:generate [--ide IDE] [--] <path>
 ```
+
+Genereert de catalogus van URNs aan *.xsd- afbeeldingen voor winde om xml te benadrukken.
+
 
 
 ### `path`
@@ -3011,7 +3120,7 @@ Indeling waarin de catalogus wordt gegenereerd. Ondersteund: [phpstorm, vscode]
 
 ### `--help`, `-h`
 
-Help weergeven voor de opgegeven opdracht. Wanneer geen opdracht is gegeven, wordt de Help weergegeven voor de \&lt;info>list\&lt;/info> command
+Help weergeven voor de opgegeven opdracht. Wanneer geen bevel vertoningshulp voor het lijstbevel wordt gegeven
 
 - Standaard: `false`
 - Accepteert geen waarde
@@ -3060,11 +3169,12 @@ Geen interactieve vraag stellen
 
 ## `dev:xml:convert`
 
-Hiermee wordt een XML-bestand geconverteerd met XSL-stijlpagina&#39;s
-
 ```bash
 bin/magento dev:xml:convert [-o|--overwrite] [--] <xml-file> <processor>
 ```
+
+Hiermee wordt een XML-bestand geconverteerd met XSL-stijlpagina&#39;s
+
 
 
 ### `xml-file`
@@ -3088,7 +3198,7 @@ XML-bestand overschrijven
 
 ### `--help`, `-h`
 
-Help weergeven voor de opgegeven opdracht. Wanneer geen opdracht is gegeven, wordt de Help weergegeven voor de \&lt;info>list\&lt;/info> command
+Help weergeven voor de opgegeven opdracht. Wanneer geen bevel vertoningshulp voor het lijstbevel wordt gegeven
 
 - Standaard: `false`
 - Accepteert geen waarde
@@ -3137,11 +3247,12 @@ Geen interactieve vraag stellen
 
 ## `downloadable:domains:add`
 
-Domeinen toevoegen aan de whitelist van downloadbare domeinen
-
 ```bash
 bin/magento downloadable:domains:add [<domains>...]
 ```
+
+Domeinen toevoegen aan de whitelist van downloadbare domeinen
+
 
 
 ### `domains`
@@ -3154,7 +3265,7 @@ Naam van domein
 
 ### `--help`, `-h`
 
-Help weergeven voor de opgegeven opdracht. Wanneer geen opdracht is gegeven, wordt de Help weergegeven voor de \&lt;info>list\&lt;/info> command
+Help weergeven voor de opgegeven opdracht. Wanneer geen bevel vertoningshulp voor het lijstbevel wordt gegeven
 
 - Standaard: `false`
 - Accepteert geen waarde
@@ -3203,11 +3314,12 @@ Geen interactieve vraag stellen
 
 ## `downloadable:domains:remove`
 
-Verwijder domeinen uit de downloadbare whitelist van domeinen
-
 ```bash
 bin/magento downloadable:domains:remove [<domains>...]
 ```
+
+Verwijder domeinen uit de downloadbare whitelist van domeinen
+
 
 
 ### `domains`
@@ -3220,7 +3332,7 @@ Domeinnamen
 
 ### `--help`, `-h`
 
-Help weergeven voor de opgegeven opdracht. Wanneer geen opdracht is gegeven, wordt de Help weergegeven voor de \&lt;info>list\&lt;/info> command
+Help weergeven voor de opgegeven opdracht. Wanneer geen bevel vertoningshulp voor het lijstbevel wordt gegeven
 
 - Standaard: `false`
 - Accepteert geen waarde
@@ -3269,15 +3381,16 @@ Geen interactieve vraag stellen
 
 ## `downloadable:domains:show`
 
-Downloadbare whitelist van domeinen weergeven
-
 ```bash
 bin/magento downloadable:domains:show
 ```
 
+Downloadbare whitelist van domeinen weergeven
+
+
 ### `--help`, `-h`
 
-Help weergeven voor de opgegeven opdracht. Wanneer geen opdracht is gegeven, wordt de Help weergegeven voor de \&lt;info>list\&lt;/info> command
+Help weergeven voor de opgegeven opdracht. Wanneer geen bevel vertoningshulp voor het lijstbevel wordt gegeven
 
 - Standaard: `false`
 - Accepteert geen waarde
@@ -3326,15 +3439,16 @@ Geen interactieve vraag stellen
 
 ## `encryption:payment-data:update`
 
-Codeert gecodeerde creditcardgegevens opnieuw met de nieuwste coderingssleutel.
-
 ```bash
 bin/magento encryption:payment-data:update
 ```
 
+Codeert gecodeerde creditcardgegevens opnieuw met de nieuwste coderingssleutel.
+
+
 ### `--help`, `-h`
 
-Help weergeven voor de opgegeven opdracht. Wanneer geen opdracht is gegeven, wordt de Help weergegeven voor de \&lt;info>list\&lt;/info> command
+Help weergeven voor de opgegeven opdracht. Wanneer geen bevel vertoningshulp voor het lijstbevel wordt gegeven
 
 - Standaard: `false`
 - Accepteert geen waarde
@@ -3383,11 +3497,12 @@ Geen interactieve vraag stellen
 
 ## `i18n:collect-phrases`
 
-Neemt zinnen op in de codebase
-
 ```bash
 bin/magento i18n:collect-phrases [-o|--output OUTPUT] [-m|--magento] [--] [<directory>]
 ```
+
+Neemt zinnen op in de codebase
+
 
 
 ### `directory`
@@ -3410,7 +3525,7 @@ Gebruik de parameter —magento om de huidige codebase van het Magento te parser
 
 ### `--help`, `-h`
 
-Help weergeven voor de opgegeven opdracht. Wanneer geen opdracht is gegeven, wordt de Help weergegeven voor de \&lt;info>list\&lt;/info> command
+Help weergeven voor de opgegeven opdracht. Wanneer geen bevel vertoningshulp voor het lijstbevel wordt gegeven
 
 - Standaard: `false`
 - Accepteert geen waarde
@@ -3459,11 +3574,12 @@ Geen interactieve vraag stellen
 
 ## `i18n:pack`
 
-Slaat taalpakket op
-
 ```bash
 bin/magento i18n:pack [-m|--mode MODE] [-d|--allow-duplicates] [--] <source> <locale>
 ```
+
+Slaat taalpakket op
+
 
 
 ### `source`
@@ -3494,7 +3610,7 @@ Gebruik de parameter —allow-duplicates om het opslaan van duplicaten van trans
 
 ### `--help`, `-h`
 
-Help weergeven voor de opgegeven opdracht. Wanneer geen opdracht is gegeven, wordt de Help weergegeven voor de \&lt;info>list\&lt;/info> command
+Help weergeven voor de opgegeven opdracht. Wanneer geen bevel vertoningshulp voor het lijstbevel wordt gegeven
 
 - Standaard: `false`
 - Accepteert geen waarde
@@ -3543,11 +3659,12 @@ Geen interactieve vraag stellen
 
 ## `i18n:uninstall`
 
-Verwijdert taalpakketten
-
 ```bash
 bin/magento i18n:uninstall [-b|--backup-code] [--] <package>...
 ```
+
+Verwijdert taalpakketten
+
 
 
 ### `package`
@@ -3568,7 +3685,7 @@ Back-up maken van code- en configuratiebestanden (behalve tijdelijke bestanden)
 
 ### `--help`, `-h`
 
-Help weergeven voor de opgegeven opdracht. Wanneer geen opdracht is gegeven, wordt de Help weergegeven voor de \&lt;info>list\&lt;/info> command
+Help weergeven voor de opgegeven opdracht. Wanneer geen bevel vertoningshulp voor het lijstbevel wordt gegeven
 
 - Standaard: `false`
 - Accepteert geen waarde
@@ -3617,15 +3734,16 @@ Geen interactieve vraag stellen
 
 ## `indexer:info`
 
-Toegestane indexen weergeven
-
 ```bash
 bin/magento indexer:info
 ```
 
+Toegestane indexen weergeven
+
+
 ### `--help`, `-h`
 
-Help weergeven voor de opgegeven opdracht. Wanneer geen opdracht is gegeven, wordt de Help weergegeven voor de \&lt;info>list\&lt;/info> command
+Help weergeven voor de opgegeven opdracht. Wanneer geen bevel vertoningshulp voor het lijstbevel wordt gegeven
 
 - Standaard: `false`
 - Accepteert geen waarde
@@ -3674,11 +3792,12 @@ Geen interactieve vraag stellen
 
 ## `indexer:reindex`
 
-Gegevens opnieuw indexeren
-
 ```bash
 bin/magento indexer:reindex [<index>...]
 ```
+
+Gegevens opnieuw indexeren
+
 
 
 ### `index`
@@ -3691,7 +3810,7 @@ Lijst met door spaties gescheiden indextypen of laat toe om op alle indexen toe 
 
 ### `--help`, `-h`
 
-Help weergeven voor de opgegeven opdracht. Wanneer geen opdracht is gegeven, wordt de Help weergegeven voor de \&lt;info>list\&lt;/info> command
+Help weergeven voor de opgegeven opdracht. Wanneer geen bevel vertoningshulp voor het lijstbevel wordt gegeven
 
 - Standaard: `false`
 - Accepteert geen waarde
@@ -3740,11 +3859,12 @@ Geen interactieve vraag stellen
 
 ## `indexer:reset`
 
-Hiermee wordt de status van de indexeerder opnieuw ingesteld op ongeldig
-
 ```bash
 bin/magento indexer:reset [<index>...]
 ```
+
+Hiermee wordt de status van de indexeerder opnieuw ingesteld op ongeldig
+
 
 
 ### `index`
@@ -3757,7 +3877,7 @@ Lijst met door spaties gescheiden indextypen of laat toe om op alle indexen toe 
 
 ### `--help`, `-h`
 
-Help weergeven voor de opgegeven opdracht. Wanneer geen opdracht is gegeven, wordt de Help weergegeven voor de \&lt;info>list\&lt;/info> command
+Help weergeven voor de opgegeven opdracht. Wanneer geen bevel vertoningshulp voor het lijstbevel wordt gegeven
 
 - Standaard: `false`
 - Accepteert geen waarde
@@ -3806,11 +3926,12 @@ Geen interactieve vraag stellen
 
 ## `indexer:set-dimensions-mode`
 
-Modus IndexerDimensionen instellen
-
 ```bash
 bin/magento indexer:set-dimensions-mode [<indexer> [<mode>]]
 ```
+
+Modus IndexerDimensionen instellen
+
 
 
 ### `indexer`
@@ -3825,7 +3946,7 @@ Dimensiemodi van indexeermodule catalog_product_price none,website,customer_grou
 
 ### `--help`, `-h`
 
-Help weergeven voor de opgegeven opdracht. Wanneer geen opdracht is gegeven, wordt de Help weergegeven voor de \&lt;info>list\&lt;/info> command
+Help weergeven voor de opgegeven opdracht. Wanneer geen bevel vertoningshulp voor het lijstbevel wordt gegeven
 
 - Standaard: `false`
 - Accepteert geen waarde
@@ -3874,11 +3995,12 @@ Geen interactieve vraag stellen
 
 ## `indexer:set-mode`
 
-Hiermee wordt het type indexmodus ingesteld
-
 ```bash
 bin/magento indexer:set-mode [<mode> [<index>...]]
 ```
+
+Hiermee wordt het type indexmodus ingesteld
+
 
 
 ### `mode`
@@ -3896,7 +4018,7 @@ Lijst met door spaties gescheiden indextypen of laat toe om op alle indexen toe 
 
 ### `--help`, `-h`
 
-Help weergeven voor de opgegeven opdracht. Wanneer geen opdracht is gegeven, wordt de Help weergegeven voor de \&lt;info>list\&lt;/info> command
+Help weergeven voor de opgegeven opdracht. Wanneer geen bevel vertoningshulp voor het lijstbevel wordt gegeven
 
 - Standaard: `false`
 - Accepteert geen waarde
@@ -3945,11 +4067,12 @@ Geen interactieve vraag stellen
 
 ## `indexer:set-status`
 
-Hiermee wordt de opgegeven indexeerstatus ingesteld
-
 ```bash
 bin/magento indexer:set-status <status> [<index>...]
 ```
+
+Hiermee wordt de opgegeven indexeerstatus ingesteld
+
 
 
 ### `status`
@@ -3968,7 +4091,7 @@ Lijst met door spaties gescheiden indextypen of laat toe om op alle indexen toe 
 
 ### `--help`, `-h`
 
-Help weergeven voor de opgegeven opdracht. Wanneer geen opdracht is gegeven, wordt de Help weergegeven voor de \&lt;info>list\&lt;/info> command
+Help weergeven voor de opgegeven opdracht. Wanneer geen bevel vertoningshulp voor het lijstbevel wordt gegeven
 
 - Standaard: `false`
 - Accepteert geen waarde
@@ -4017,11 +4140,12 @@ Geen interactieve vraag stellen
 
 ## `indexer:show-dimensions-mode`
 
-Modus Dimension indexeren tonen
-
 ```bash
 bin/magento indexer:show-dimensions-mode [<indexer>...]
 ```
+
+Modus Dimension indexeren tonen
+
 
 
 ### `indexer`
@@ -4034,7 +4158,7 @@ Lijst met door spaties gescheiden indextypen of laat deze weg om toe te passen o
 
 ### `--help`, `-h`
 
-Help weergeven voor de opgegeven opdracht. Wanneer geen opdracht is gegeven, wordt de Help weergegeven voor de \&lt;info>list\&lt;/info> command
+Help weergeven voor de opgegeven opdracht. Wanneer geen bevel vertoningshulp voor het lijstbevel wordt gegeven
 
 - Standaard: `false`
 - Accepteert geen waarde
@@ -4083,11 +4207,12 @@ Geen interactieve vraag stellen
 
 ## `indexer:show-mode`
 
-Indexmodus weergeven
-
 ```bash
 bin/magento indexer:show-mode [<index>...]
 ```
+
+Indexmodus weergeven
+
 
 
 ### `index`
@@ -4100,7 +4225,7 @@ Lijst met door spaties gescheiden indextypen of laat toe om op alle indexen toe 
 
 ### `--help`, `-h`
 
-Help weergeven voor de opgegeven opdracht. Wanneer geen opdracht is gegeven, wordt de Help weergegeven voor de \&lt;info>list\&lt;/info> command
+Help weergeven voor de opgegeven opdracht. Wanneer geen bevel vertoningshulp voor het lijstbevel wordt gegeven
 
 - Standaard: `false`
 - Accepteert geen waarde
@@ -4149,11 +4274,12 @@ Geen interactieve vraag stellen
 
 ## `indexer:status`
 
-Hiermee wordt de status van Indexer weergegeven
-
 ```bash
 bin/magento indexer:status [<index>...]
 ```
+
+Hiermee wordt de status van Indexer weergegeven
+
 
 
 ### `index`
@@ -4166,7 +4292,7 @@ Lijst met door spaties gescheiden indextypen of laat toe om op alle indexen toe 
 
 ### `--help`, `-h`
 
-Help weergeven voor de opgegeven opdracht. Wanneer geen opdracht is gegeven, wordt de Help weergegeven voor de \&lt;info>list\&lt;/info> command
+Help weergeven voor de opgegeven opdracht. Wanneer geen bevel vertoningshulp voor het lijstbevel wordt gegeven
 
 - Standaard: `false`
 - Accepteert geen waarde
@@ -4215,15 +4341,16 @@ Geen interactieve vraag stellen
 
 ## `info:adminuri`
 
-Hiermee wordt de Magento Admin URI weergegeven
-
 ```bash
 bin/magento info:adminuri
 ```
 
+Hiermee wordt de Magento Admin URI weergegeven
+
+
 ### `--help`, `-h`
 
-Help weergeven voor de opgegeven opdracht. Wanneer geen opdracht is gegeven, wordt de Help weergegeven voor de \&lt;info>list\&lt;/info> command
+Help weergeven voor de opgegeven opdracht. Wanneer geen bevel vertoningshulp voor het lijstbevel wordt gegeven
 
 - Standaard: `false`
 - Accepteert geen waarde
@@ -4272,15 +4399,16 @@ Geen interactieve vraag stellen
 
 ## `info:backups:list`
 
-Lijst met beschikbare back-upbestanden afdrukken
-
 ```bash
 bin/magento info:backups:list
 ```
 
+Lijst met beschikbare back-upbestanden afdrukken
+
+
 ### `--help`, `-h`
 
-Help weergeven voor de opgegeven opdracht. Wanneer geen opdracht is gegeven, wordt de Help weergegeven voor de \&lt;info>list\&lt;/info> command
+Help weergeven voor de opgegeven opdracht. Wanneer geen bevel vertoningshulp voor het lijstbevel wordt gegeven
 
 - Standaard: `false`
 - Accepteert geen waarde
@@ -4329,15 +4457,16 @@ Geen interactieve vraag stellen
 
 ## `info:currency:list`
 
-Geeft de lijst met beschikbare valuta&#39;s weer
-
 ```bash
 bin/magento info:currency:list
 ```
 
+Geeft de lijst met beschikbare valuta&#39;s weer
+
+
 ### `--help`, `-h`
 
-Help weergeven voor de opgegeven opdracht. Wanneer geen opdracht is gegeven, wordt de Help weergegeven voor de \&lt;info>list\&lt;/info> command
+Help weergeven voor de opgegeven opdracht. Wanneer geen bevel vertoningshulp voor het lijstbevel wordt gegeven
 
 - Standaard: `false`
 - Accepteert geen waarde
@@ -4386,11 +4515,12 @@ Geen interactieve vraag stellen
 
 ## `info:dependencies:show-framework`
 
-Geeft aantal afhankelijkheden weer van raamwerk voor Magento&#39;s
-
 ```bash
 bin/magento info:dependencies:show-framework [-o|--output OUTPUT]
 ```
+
+Geeft aantal afhankelijkheden weer van raamwerk voor Magento&#39;s
+
 
 ### `--output`, `-o`
 
@@ -4401,7 +4531,7 @@ Bestandsnaam rapport
 
 ### `--help`, `-h`
 
-Help weergeven voor de opgegeven opdracht. Wanneer geen opdracht is gegeven, wordt de Help weergegeven voor de \&lt;info>list\&lt;/info> command
+Help weergeven voor de opgegeven opdracht. Wanneer geen bevel vertoningshulp voor het lijstbevel wordt gegeven
 
 - Standaard: `false`
 - Accepteert geen waarde
@@ -4450,11 +4580,12 @@ Geen interactieve vraag stellen
 
 ## `info:dependencies:show-modules`
 
-Toont aantal gebiedsdelen tussen modules
-
 ```bash
 bin/magento info:dependencies:show-modules [-o|--output OUTPUT]
 ```
+
+Toont aantal gebiedsdelen tussen modules
+
 
 ### `--output`, `-o`
 
@@ -4465,7 +4596,7 @@ Bestandsnaam rapport
 
 ### `--help`, `-h`
 
-Help weergeven voor de opgegeven opdracht. Wanneer geen opdracht is gegeven, wordt de Help weergegeven voor de \&lt;info>list\&lt;/info> command
+Help weergeven voor de opgegeven opdracht. Wanneer geen bevel vertoningshulp voor het lijstbevel wordt gegeven
 
 - Standaard: `false`
 - Accepteert geen waarde
@@ -4514,11 +4645,12 @@ Geen interactieve vraag stellen
 
 ## `info:dependencies:show-modules-circular`
 
-Toont aantal kringafhankelijkheden tussen modules
-
 ```bash
 bin/magento info:dependencies:show-modules-circular [-o|--output OUTPUT]
 ```
+
+Toont aantal kringafhankelijkheden tussen modules
+
 
 ### `--output`, `-o`
 
@@ -4529,7 +4661,7 @@ Bestandsnaam rapport
 
 ### `--help`, `-h`
 
-Help weergeven voor de opgegeven opdracht. Wanneer geen opdracht is gegeven, wordt de Help weergegeven voor de \&lt;info>list\&lt;/info> command
+Help weergeven voor de opgegeven opdracht. Wanneer geen bevel vertoningshulp voor het lijstbevel wordt gegeven
 
 - Standaard: `false`
 - Accepteert geen waarde
@@ -4578,15 +4710,16 @@ Geen interactieve vraag stellen
 
 ## `info:language:list`
 
-Geeft de lijst met beschikbare taallandinstellingen weer
-
 ```bash
 bin/magento info:language:list
 ```
 
+Geeft de lijst met beschikbare taallandinstellingen weer
+
+
 ### `--help`, `-h`
 
-Help weergeven voor de opgegeven opdracht. Wanneer geen opdracht is gegeven, wordt de Help weergegeven voor de \&lt;info>list\&lt;/info> command
+Help weergeven voor de opgegeven opdracht. Wanneer geen bevel vertoningshulp voor het lijstbevel wordt gegeven
 
 - Standaard: `false`
 - Accepteert geen waarde
@@ -4635,15 +4768,16 @@ Geen interactieve vraag stellen
 
 ## `info:timezone:list`
 
-Hiermee geeft u de lijst met beschikbare tijdzones weer
-
 ```bash
 bin/magento info:timezone:list
 ```
 
+Hiermee geeft u de lijst met beschikbare tijdzones weer
+
+
 ### `--help`, `-h`
 
-Help weergeven voor de opgegeven opdracht. Wanneer geen opdracht is gegeven, wordt de Help weergegeven voor de \&lt;info>list\&lt;/info> command
+Help weergeven voor de opgegeven opdracht. Wanneer geen bevel vertoningshulp voor het lijstbevel wordt gegeven
 
 - Standaard: `false`
 - Accepteert geen waarde
@@ -4692,16 +4826,17 @@ Geen interactieve vraag stellen
 
 ## `inventory:reservation:create-compensations`
 
-Maak punten van voorbehoud door middel van opgegeven compensatieargumenten
-
 ```bash
 bin/magento inventory:reservation:create-compensations [-r|--raw] [--] [<compensations>...]
 ```
 
+Maak punten van voorbehoud door middel van opgegeven compensatieargumenten
+
+
 
 ### `compensations`
 
-Lijst met compensatieargumenten in de notatie &quot;\&lt;order_increment_id>:\&lt;sku>:\&lt;quantity>:\&lt;stock-id>&quot;
+Lijst met argumenten voor compensatie in de notatie &quot;:::&quot;
 
 - Standaard: `[]`
 
@@ -4716,7 +4851,7 @@ Onbewerkte uitvoer
 
 ### `--help`, `-h`
 
-Help weergeven voor de opgegeven opdracht. Wanneer geen opdracht is gegeven, wordt de Help weergegeven voor de \&lt;info>list\&lt;/info> command
+Help weergeven voor de opgegeven opdracht. Wanneer geen bevel vertoningshulp voor het lijstbevel wordt gegeven
 
 - Standaard: `false`
 - Accepteert geen waarde
@@ -4765,11 +4900,12 @@ Geen interactieve vraag stellen
 
 ## `inventory:reservation:list-inconsistencies`
 
-Alle bestellingen en producten met inconsistenties in verkoopbare hoeveelheid tonen
-
 ```bash
 bin/magento inventory:reservation:list-inconsistencies [-c|--complete-orders] [-i|--incomplete-orders] [-b|--bunch-size [BUNCH-SIZE]] [-r|--raw]
 ```
+
+Alle bestellingen en producten met inconsistenties in verkoopbare hoeveelheid tonen
+
 
 ### `--complete-orders`, `-c`
 
@@ -4801,7 +4937,7 @@ Onbewerkte uitvoer
 
 ### `--help`, `-h`
 
-Help weergeven voor de opgegeven opdracht. Wanneer geen opdracht is gegeven, wordt de Help weergegeven voor de \&lt;info>list\&lt;/info> command
+Help weergeven voor de opgegeven opdracht. Wanneer geen bevel vertoningshulp voor het lijstbevel wordt gegeven
 
 - Standaard: `false`
 - Accepteert geen waarde
@@ -4850,11 +4986,12 @@ Geen interactieve vraag stellen
 
 ## `inventory-geonames:import`
 
-Geo-namen downloaden en importeren voor het algoritme van de bronselectie
-
 ```bash
 bin/magento inventory-geonames:import <countries>...
 ```
+
+Geo-namen downloaden en importeren voor het algoritme van de bronselectie
+
 
 
 ### `countries`
@@ -4868,7 +5005,7 @@ Lijst van landcodes die moeten worden ingevoerd
 
 ### `--help`, `-h`
 
-Help weergeven voor de opgegeven opdracht. Wanneer geen opdracht is gegeven, wordt de Help weergegeven voor de \&lt;info>list\&lt;/info> command
+Help weergeven voor de opgegeven opdracht. Wanneer geen bevel vertoningshulp voor het lijstbevel wordt gegeven
 
 - Standaard: `false`
 - Accepteert geen waarde
@@ -4917,11 +5054,12 @@ Geen interactieve vraag stellen
 
 ## `maintenance:allow-ips`
 
-Plaatst onderhoudswijze vrijgestelde IPs
-
 ```bash
 bin/magento maintenance:allow-ips [--none] [--add] [--magento-init-params MAGENTO-INIT-PARAMS] [--] [<ip>...]
 ```
+
+Plaatst onderhoudswijze vrijgestelde IPs
+
 
 
 ### `ip`
@@ -4954,7 +5092,7 @@ Voeg aan om het even welke bevel toe om Magento initialisatieparameters aan te p
 
 ### `--help`, `-h`
 
-Help weergeven voor de opgegeven opdracht. Wanneer geen opdracht is gegeven, wordt de Help weergegeven voor de \&lt;info>list\&lt;/info> command
+Help weergeven voor de opgegeven opdracht. Wanneer geen bevel vertoningshulp voor het lijstbevel wordt gegeven
 
 - Standaard: `false`
 - Accepteert geen waarde
@@ -5003,11 +5141,12 @@ Geen interactieve vraag stellen
 
 ## `maintenance:disable`
 
-Onderhoudsmodus uitschakelen
-
 ```bash
 bin/magento maintenance:disable [--ip IP] [--magento-init-params MAGENTO-INIT-PARAMS]
 ```
+
+Onderhoudsmodus uitschakelen
+
 
 ### `--ip`
 
@@ -5024,7 +5163,7 @@ Voeg aan om het even welke bevel toe om Magento initialisatieparameters aan te p
 
 ### `--help`, `-h`
 
-Help weergeven voor de opgegeven opdracht. Wanneer geen opdracht is gegeven, wordt de Help weergegeven voor de \&lt;info>list\&lt;/info> command
+Help weergeven voor de opgegeven opdracht. Wanneer geen bevel vertoningshulp voor het lijstbevel wordt gegeven
 
 - Standaard: `false`
 - Accepteert geen waarde
@@ -5073,11 +5212,12 @@ Geen interactieve vraag stellen
 
 ## `maintenance:enable`
 
-Onderhoudsmodus inschakelen
-
 ```bash
 bin/magento maintenance:enable [--ip IP] [--magento-init-params MAGENTO-INIT-PARAMS]
 ```
+
+Onderhoudsmodus inschakelen
+
 
 ### `--ip`
 
@@ -5094,7 +5234,7 @@ Voeg aan om het even welke bevel toe om Magento initialisatieparameters aan te p
 
 ### `--help`, `-h`
 
-Help weergeven voor de opgegeven opdracht. Wanneer geen opdracht is gegeven, wordt de Help weergegeven voor de \&lt;info>list\&lt;/info> command
+Help weergeven voor de opgegeven opdracht. Wanneer geen bevel vertoningshulp voor het lijstbevel wordt gegeven
 
 - Standaard: `false`
 - Accepteert geen waarde
@@ -5143,11 +5283,12 @@ Geen interactieve vraag stellen
 
 ## `maintenance:status`
 
-De status van de onderhoudsmodus weergeven
-
 ```bash
 bin/magento maintenance:status [--magento-init-params MAGENTO-INIT-PARAMS]
 ```
+
+De status van de onderhoudsmodus weergeven
+
 
 ### `--magento-init-params`
 
@@ -5157,7 +5298,7 @@ Voeg aan om het even welke bevel toe om Magento initialisatieparameters aan te p
 
 ### `--help`, `-h`
 
-Help weergeven voor de opgegeven opdracht. Wanneer geen opdracht is gegeven, wordt de Help weergegeven voor de \&lt;info>list\&lt;/info> command
+Help weergeven voor de opgegeven opdracht. Wanneer geen bevel vertoningshulp voor het lijstbevel wordt gegeven
 
 - Standaard: `false`
 - Accepteert geen waarde
@@ -5206,15 +5347,16 @@ Geen interactieve vraag stellen
 
 ## `media-content:sync`
 
-Inhoud synchroniseren met elementen
-
 ```bash
 bin/magento media-content:sync
 ```
 
+Inhoud synchroniseren met elementen
+
+
 ### `--help`, `-h`
 
-Help weergeven voor de opgegeven opdracht. Wanneer geen opdracht is gegeven, wordt de Help weergegeven voor de \&lt;info>list\&lt;/info> command
+Help weergeven voor de opgegeven opdracht. Wanneer geen bevel vertoningshulp voor het lijstbevel wordt gegeven
 
 - Standaard: `false`
 - Accepteert geen waarde
@@ -5263,15 +5405,16 @@ Geen interactieve vraag stellen
 
 ## `media-gallery:sync`
 
-Mediaopslag en media-elementen in de database synchroniseren
-
 ```bash
 bin/magento media-gallery:sync
 ```
 
+Mediaopslag en media-elementen in de database synchroniseren
+
+
 ### `--help`, `-h`
 
-Help weergeven voor de opgegeven opdracht. Wanneer geen opdracht is gegeven, wordt de Help weergegeven voor de \&lt;info>list\&lt;/info> command
+Help weergeven voor de opgegeven opdracht. Wanneer geen bevel vertoningshulp voor het lijstbevel wordt gegeven
 
 - Standaard: `false`
 - Accepteert geen waarde
@@ -5320,15 +5463,16 @@ Geen interactieve vraag stellen
 
 ## `module:config:status`
 
-Controleert de moduleconfiguratie in het &quot;app/etc/config.php&quot;dossier en rapporteert als zij of niet bijgewerkt zijn
-
 ```bash
 bin/magento module:config:status
 ```
 
+Controleert de moduleconfiguratie in het &quot;app/etc/config.php&quot;dossier en rapporteert als zij of niet bijgewerkt zijn
+
+
 ### `--help`, `-h`
 
-Help weergeven voor de opgegeven opdracht. Wanneer geen opdracht is gegeven, wordt de Help weergegeven voor de \&lt;info>list\&lt;/info> command
+Help weergeven voor de opgegeven opdracht. Wanneer geen bevel vertoningshulp voor het lijstbevel wordt gegeven
 
 - Standaard: `false`
 - Accepteert geen waarde
@@ -5377,11 +5521,12 @@ Geen interactieve vraag stellen
 
 ## `module:disable`
 
-Hiermee worden opgegeven modules uitgeschakeld
-
 ```bash
 bin/magento module:disable [-f|--force] [--all] [-c|--clear-static-content] [--magento-init-params MAGENTO-INIT-PARAMS] [--] [<module>...]
 ```
+
+Hiermee worden opgegeven modules uitgeschakeld
+
 
 
 ### `module`
@@ -5421,7 +5566,7 @@ Voeg aan om het even welke bevel toe om Magento initialisatieparameters aan te p
 
 ### `--help`, `-h`
 
-Help weergeven voor de opgegeven opdracht. Wanneer geen opdracht is gegeven, wordt de Help weergegeven voor de \&lt;info>list\&lt;/info> command
+Help weergeven voor de opgegeven opdracht. Wanneer geen bevel vertoningshulp voor het lijstbevel wordt gegeven
 
 - Standaard: `false`
 - Accepteert geen waarde
@@ -5470,11 +5615,12 @@ Geen interactieve vraag stellen
 
 ## `module:enable`
 
-Hiermee worden opgegeven modules ingeschakeld
-
 ```bash
 bin/magento module:enable [-f|--force] [--all] [-c|--clear-static-content] [--magento-init-params MAGENTO-INIT-PARAMS] [--] [<module>...]
 ```
+
+Hiermee worden opgegeven modules ingeschakeld
+
 
 
 ### `module`
@@ -5514,7 +5660,7 @@ Voeg aan om het even welke bevel toe om Magento initialisatieparameters aan te p
 
 ### `--help`, `-h`
 
-Help weergeven voor de opgegeven opdracht. Wanneer geen opdracht is gegeven, wordt de Help weergegeven voor de \&lt;info>list\&lt;/info> command
+Help weergeven voor de opgegeven opdracht. Wanneer geen bevel vertoningshulp voor het lijstbevel wordt gegeven
 
 - Standaard: `false`
 - Accepteert geen waarde
@@ -5563,11 +5709,12 @@ Geen interactieve vraag stellen
 
 ## `module:status`
 
-Geeft de status van modules weer
-
 ```bash
 bin/magento module:status [--enabled] [--disabled] [--magento-init-params MAGENTO-INIT-PARAMS] [--] [<module-names>...]
 ```
+
+Geeft de status van modules weer
+
 
 
 ### `module-names`
@@ -5600,7 +5747,7 @@ Voeg aan om het even welke bevel toe om Magento initialisatieparameters aan te p
 
 ### `--help`, `-h`
 
-Help weergeven voor de opgegeven opdracht. Wanneer geen opdracht is gegeven, wordt de Help weergegeven voor de \&lt;info>list\&lt;/info> command
+Help weergeven voor de opgegeven opdracht. Wanneer geen bevel vertoningshulp voor het lijstbevel wordt gegeven
 
 - Standaard: `false`
 - Accepteert geen waarde
@@ -5649,11 +5796,12 @@ Geen interactieve vraag stellen
 
 ## `module:uninstall`
 
-Hiermee verwijdert u modules die door de composer zijn geïnstalleerd
-
 ```bash
 bin/magento module:uninstall [-r|--remove-data] [--backup-code] [--backup-media] [--backup-db] [--non-composer] [-c|--clear-static-content] [--magento-init-params MAGENTO-INIT-PARAMS] [--] <module>...
 ```
+
+Hiermee verwijdert u modules die door de composer zijn geïnstalleerd
+
 
 
 ### `module`
@@ -5715,7 +5863,7 @@ Voeg aan om het even welke bevel toe om Magento initialisatieparameters aan te p
 
 ### `--help`, `-h`
 
-Help weergeven voor de opgegeven opdracht. Wanneer geen opdracht is gegeven, wordt de Help weergegeven voor de \&lt;info>list\&lt;/info> command
+Help weergeven voor de opgegeven opdracht. Wanneer geen bevel vertoningshulp voor het lijstbevel wordt gegeven
 
 - Standaard: `false`
 - Accepteert geen waarde
@@ -5764,11 +5912,12 @@ Geen interactieve vraag stellen
 
 ## `newrelic:create:deploy-marker`
 
-Controleer de opstellen rij voor ingangen en creeer aangewezen plaatsingsteller.
-
 ```bash
 bin/magento newrelic:create:deploy-marker <message> <change_log> [<user> [<revision>]]
 ```
+
+Controleer de opstellen rij voor ingangen en creeer aangewezen plaatsingsteller.
+
 
 
 ### `message`
@@ -5795,7 +5944,7 @@ Herziening
 
 ### `--help`, `-h`
 
-Help weergeven voor de opgegeven opdracht. Wanneer geen opdracht is gegeven, wordt de Help weergegeven voor de \&lt;info>list\&lt;/info> command
+Help weergeven voor de opgegeven opdracht. Wanneer geen bevel vertoningshulp voor het lijstbevel wordt gegeven
 
 - Standaard: `false`
 - Accepteert geen waarde
@@ -5844,15 +5993,20 @@ Geen interactieve vraag stellen
 
 ## `queue:consumers:list`
 
-Lijst met consumenten van MessageQueue
-
 ```bash
 bin/magento queue:consumers:list
 ```
 
+Lijst met consumenten van MessageQueue
+
+
+```
+This command shows list of MessageQueue consumers.
+```
+
 ### `--help`, `-h`
 
-Help weergeven voor de opgegeven opdracht. Wanneer geen opdracht is gegeven, wordt de Help weergegeven voor de \&lt;info>list\&lt;/info> command
+Help weergeven voor de opgegeven opdracht. Wanneer geen bevel vertoningshulp voor het lijstbevel wordt gegeven
 
 - Standaard: `false`
 - Accepteert geen waarde
@@ -5901,15 +6055,20 @@ Geen interactieve vraag stellen
 
 ## `queue:consumers:restart`
 
-Gebruikers van MessageQueue opnieuw starten
-
 ```bash
 bin/magento queue:consumers:restart
 ```
 
+Gebruikers van MessageQueue opnieuw starten
+
+
+```
+Command put poison pill for MessageQueue consumers and force to restart them after next status check.
+```
+
 ### `--help`, `-h`
 
-Help weergeven voor de opgegeven opdracht. Wanneer geen opdracht is gegeven, wordt de Help weergegeven voor de \&lt;info>list\&lt;/info> command
+Help weergeven voor de opgegeven opdracht. Wanneer geen bevel vertoningshulp voor het lijstbevel wordt gegeven
 
 - Standaard: `false`
 - Accepteert geen waarde
@@ -5958,10 +6117,43 @@ Geen interactieve vraag stellen
 
 ## `queue:consumers:start`
 
-MessageQueue-consument starten
-
 ```bash
 bin/magento queue:consumers:start [--max-messages MAX-MESSAGES] [--batch-size BATCH-SIZE] [--area-code AREA-CODE] [--single-thread] [--multi-process [MULTI-PROCESS]] [--pid-file-path PID-FILE-PATH] [--] <consumer>
+```
+
+MessageQueue-consument starten
+
+
+```
+This command starts MessageQueue consumer by its name.
+
+To start consumer which will process all queued messages and terminate execution:
+
+    bin/magento queue:consumers:start someConsumer
+
+To specify the number of messages which should be processed by consumer before its termination:
+
+    bin/magento queue:consumers:start someConsumer --max-messages=50
+
+To specify the number of messages per batch for the batch consumer:
+
+    bin/magento queue:consumers:start someConsumer --batch-size=500
+
+To specify the preferred area:
+
+    bin/magento queue:consumers:start someConsumer --area-code='adminhtml'
+
+To do not run multiple copies of one consumer simultaneously:
+
+    bin/magento queue:consumers:start someConsumer --single-thread
+
+To save PID enter path (This option is deprecated, use --single-thread instead):
+
+    bin/magento queue:consumers:start someConsumer --pid-file-path='/var/someConsumer.pid'
+
+To define the number of processes per consumer:
+
+    bin/magento queue:consumers:start someConsumer --multi-process=4
 ```
 
 
@@ -6010,7 +6202,7 @@ Het bestandspad voor het opslaan van PID (deze optie is afgekeurd, gebruik —en
 
 ### `--help`, `-h`
 
-Help weergeven voor de opgegeven opdracht. Wanneer geen opdracht is gegeven, wordt de Help weergegeven voor de \&lt;info>list\&lt;/info> command
+Help weergeven voor de opgegeven opdracht. Wanneer geen bevel vertoningshulp voor het lijstbevel wordt gegeven
 
 - Standaard: `false`
 - Accepteert geen waarde
@@ -6059,15 +6251,16 @@ Geen interactieve vraag stellen
 
 ## `remote-storage:sync`
 
-Mediabestanden synchroniseren met externe opslag.
-
 ```bash
 bin/magento remote-storage:sync
 ```
 
+Mediabestanden synchroniseren met externe opslag.
+
+
 ### `--help`, `-h`
 
-Help weergeven voor de opgegeven opdracht. Wanneer geen opdracht is gegeven, wordt de Help weergegeven voor de \&lt;info>list\&lt;/info> command
+Help weergeven voor de opgegeven opdracht. Wanneer geen bevel vertoningshulp voor het lijstbevel wordt gegeven
 
 - Standaard: `false`
 - Accepteert geen waarde
@@ -6116,11 +6309,12 @@ Geen interactieve vraag stellen
 
 ## `saas:resync`
 
-Hersynchroniseert voedergegevens aan de dienst SaaS.
-
 ```bash
 bin/magento saas:resync [--feed FEED] [--no-reindex] [--cleanup-feed] [--dry-run] [--thread-count THREAD-COUNT] [--batch-size BATCH-SIZE] [--continue-resync]
 ```
+
+Hersynchroniseert voedergegevens aan de dienst SaaS.
+
 
 ### `--feed`
 
@@ -6170,7 +6364,7 @@ Doorgaan met opnieuw synchroniseren vanaf de laatste opgeslagen positie (deze op
 
 ### `--help`, `-h`
 
-Help weergeven voor de opgegeven opdracht. Wanneer geen opdracht is gegeven, wordt de Help weergegeven voor de \&lt;info>list\&lt;/info> command
+Help weergeven voor de opgegeven opdracht. Wanneer geen bevel vertoningshulp voor het lijstbevel wordt gegeven
 
 - Standaard: `false`
 - Accepteert geen waarde
@@ -6219,11 +6413,12 @@ Geen interactieve vraag stellen
 
 ## `sampledata:deploy`
 
-Stel steekproefgegevensmodules voor op composer-gebaseerde Magento&#39;s installaties op
-
 ```bash
 bin/magento sampledata:deploy [--no-update]
 ```
+
+Stel steekproefgegevensmodules voor op composer-gebaseerde Magento&#39;s installaties op
+
 
 ### `--no-update`
 
@@ -6234,7 +6429,7 @@ Composer.json bijwerken zonder componentupdate uit te voeren
 
 ### `--help`, `-h`
 
-Help weergeven voor de opgegeven opdracht. Wanneer geen opdracht is gegeven, wordt de Help weergegeven voor de \&lt;info>list\&lt;/info> command
+Help weergeven voor de opgegeven opdracht. Wanneer geen bevel vertoningshulp voor het lijstbevel wordt gegeven
 
 - Standaard: `false`
 - Accepteert geen waarde
@@ -6283,11 +6478,12 @@ Geen interactieve vraag stellen
 
 ## `sampledata:remove`
 
-Alle pakketten met voorbeeldgegevens verwijderen uit composer.json
-
 ```bash
 bin/magento sampledata:remove [--no-update]
 ```
+
+Alle pakketten met voorbeeldgegevens verwijderen uit composer.json
+
 
 ### `--no-update`
 
@@ -6298,7 +6494,7 @@ Composer.json bijwerken zonder componentupdate uit te voeren
 
 ### `--help`, `-h`
 
-Help weergeven voor de opgegeven opdracht. Wanneer geen opdracht is gegeven, wordt de Help weergegeven voor de \&lt;info>list\&lt;/info> command
+Help weergeven voor de opgegeven opdracht. Wanneer geen bevel vertoningshulp voor het lijstbevel wordt gegeven
 
 - Standaard: `false`
 - Accepteert geen waarde
@@ -6347,15 +6543,16 @@ Geen interactieve vraag stellen
 
 ## `sampledata:reset`
 
-Alle modules met voorbeeldgegevens opnieuw instellen voor herinstallatie
-
 ```bash
 bin/magento sampledata:reset
 ```
 
+Alle modules met voorbeeldgegevens opnieuw instellen voor herinstallatie
+
+
 ### `--help`, `-h`
 
-Help weergeven voor de opgegeven opdracht. Wanneer geen opdracht is gegeven, wordt de Help weergegeven voor de \&lt;info>list\&lt;/info> command
+Help weergeven voor de opgegeven opdracht. Wanneer geen bevel vertoningshulp voor het lijstbevel wordt gegeven
 
 - Standaard: `false`
 - Accepteert geen waarde
@@ -6404,15 +6601,16 @@ Geen interactieve vraag stellen
 
 ## `security:recaptcha:disable-for-user-forgot-password`
 
-reCAPTCHA uitschakelen voor wachtwoordformulier voor vergeten gebruiker van beheerder
-
 ```bash
 bin/magento security:recaptcha:disable-for-user-forgot-password
 ```
 
+reCAPTCHA uitschakelen voor wachtwoordformulier voor vergeten gebruiker van beheerder
+
+
 ### `--help`, `-h`
 
-Help weergeven voor de opgegeven opdracht. Wanneer geen opdracht is gegeven, wordt de Help weergegeven voor de \&lt;info>list\&lt;/info> command
+Help weergeven voor de opgegeven opdracht. Wanneer geen bevel vertoningshulp voor het lijstbevel wordt gegeven
 
 - Standaard: `false`
 - Accepteert geen waarde
@@ -6461,15 +6659,16 @@ Geen interactieve vraag stellen
 
 ## `security:recaptcha:disable-for-user-login`
 
-reCAPTCHA uitschakelen voor aanmeldingsformulier voor beheerder
-
 ```bash
 bin/magento security:recaptcha:disable-for-user-login
 ```
 
+reCAPTCHA uitschakelen voor aanmeldingsformulier voor beheerder
+
+
 ### `--help`, `-h`
 
-Help weergeven voor de opgegeven opdracht. Wanneer geen opdracht is gegeven, wordt de Help weergegeven voor de \&lt;info>list\&lt;/info> command
+Help weergeven voor de opgegeven opdracht. Wanneer geen bevel vertoningshulp voor het lijstbevel wordt gegeven
 
 - Standaard: `false`
 - Accepteert geen waarde
@@ -6518,11 +6717,12 @@ Geen interactieve vraag stellen
 
 ## `security:tfa:google:set-secret`
 
-Stel het geheim in dat voor Google OTP-generatie wordt gebruikt.
-
 ```bash
 bin/magento security:tfa:google:set-secret <user> <secret>
 ```
+
+Stel het geheim in dat voor Google OTP-generatie wordt gebruikt.
+
 
 
 ### `user`
@@ -6539,7 +6739,7 @@ Geheim
 
 ### `--help`, `-h`
 
-Help weergeven voor de opgegeven opdracht. Wanneer geen opdracht is gegeven, wordt de Help weergegeven voor de \&lt;info>list\&lt;/info> command
+Help weergeven voor de opgegeven opdracht. Wanneer geen bevel vertoningshulp voor het lijstbevel wordt gegeven
 
 - Standaard: `false`
 - Accepteert geen waarde
@@ -6588,15 +6788,16 @@ Geen interactieve vraag stellen
 
 ## `security:tfa:providers`
 
-Alle beschikbare providers weergeven
-
 ```bash
 bin/magento security:tfa:providers
 ```
 
+Alle beschikbare providers weergeven
+
+
 ### `--help`, `-h`
 
-Help weergeven voor de opgegeven opdracht. Wanneer geen opdracht is gegeven, wordt de Help weergegeven voor de \&lt;info>list\&lt;/info> command
+Help weergeven voor de opgegeven opdracht. Wanneer geen bevel vertoningshulp voor het lijstbevel wordt gegeven
 
 - Standaard: `false`
 - Accepteert geen waarde
@@ -6645,11 +6846,12 @@ Geen interactieve vraag stellen
 
 ## `security:tfa:reset`
 
-Configuratie voor één gebruiker opnieuw instellen
-
 ```bash
 bin/magento security:tfa:reset <user> <provider>
 ```
+
+Configuratie voor één gebruiker opnieuw instellen
+
 
 
 ### `user`
@@ -6666,7 +6868,7 @@ Providercode
 
 ### `--help`, `-h`
 
-Help weergeven voor de opgegeven opdracht. Wanneer geen opdracht is gegeven, wordt de Help weergegeven voor de \&lt;info>list\&lt;/info> command
+Help weergeven voor de opgegeven opdracht. Wanneer geen bevel vertoningshulp voor het lijstbevel wordt gegeven
 
 - Standaard: `false`
 - Accepteert geen waarde
@@ -6715,11 +6917,12 @@ Geen interactieve vraag stellen
 
 ## `setup:backup`
 
-Maakt een back-up van de codebasis, media en database van Magento Application
-
 ```bash
 bin/magento setup:backup [--code] [--media] [--db] [--magento-init-params MAGENTO-INIT-PARAMS]
 ```
+
+Maakt een back-up van de codebasis, media en database van Magento Application
+
 
 ### `--code`
 
@@ -6750,7 +6953,7 @@ Voeg aan om het even welke bevel toe om Magento initialisatieparameters aan te p
 
 ### `--help`, `-h`
 
-Help weergeven voor de opgegeven opdracht. Wanneer geen opdracht is gegeven, wordt de Help weergegeven voor de \&lt;info>list\&lt;/info> command
+Help weergeven voor de opgegeven opdracht. Wanneer geen bevel vertoningshulp voor het lijstbevel wordt gegeven
 
 - Standaard: `false`
 - Accepteert geen waarde
@@ -6799,11 +7002,12 @@ Geen interactieve vraag stellen
 
 ## `setup:config:set`
 
-Creeert of wijzigt de plaatsingsconfiguratie
-
 ```bash
 bin/magento setup:config:set [--backend-frontname BACKEND-FRONTNAME] [--enable-debug-logging ENABLE-DEBUG-LOGGING] [--enable-syslog-logging ENABLE-SYSLOG-LOGGING] [--remote-storage-driver REMOTE-STORAGE-DRIVER] [--remote-storage-prefix REMOTE-STORAGE-PREFIX] [--remote-storage-endpoint REMOTE-STORAGE-ENDPOINT] [--remote-storage-bucket REMOTE-STORAGE-BUCKET] [--remote-storage-region REMOTE-STORAGE-REGION] [--remote-storage-key REMOTE-STORAGE-KEY] [--remote-storage-secret REMOTE-STORAGE-SECRET] [--remote-storage-path-style REMOTE-STORAGE-PATH-STYLE] [--id_salt ID_SALT] [--config-async CONFIG-ASYNC] [--amqp-host AMQP-HOST] [--amqp-port AMQP-PORT] [--amqp-user AMQP-USER] [--amqp-password AMQP-PASSWORD] [--amqp-virtualhost AMQP-VIRTUALHOST] [--amqp-ssl AMQP-SSL] [--amqp-ssl-options AMQP-SSL-OPTIONS] [--consumers-wait-for-messages CONSUMERS-WAIT-FOR-MESSAGES] [--queue-default-connection QUEUE-DEFAULT-CONNECTION] [--key KEY] [--db-host DB-HOST] [--db-name DB-NAME] [--db-user DB-USER] [--db-engine DB-ENGINE] [--db-password DB-PASSWORD] [--db-prefix DB-PREFIX] [--db-model DB-MODEL] [--db-init-statements DB-INIT-STATEMENTS] [-s|--skip-db-validation] [--http-cache-hosts HTTP-CACHE-HOSTS] [--db-ssl-key DB-SSL-KEY] [--db-ssl-cert DB-SSL-CERT] [--db-ssl-ca DB-SSL-CA] [--db-ssl-verify] [--session-save SESSION-SAVE] [--session-save-redis-host SESSION-SAVE-REDIS-HOST] [--session-save-redis-port SESSION-SAVE-REDIS-PORT] [--session-save-redis-password SESSION-SAVE-REDIS-PASSWORD] [--session-save-redis-timeout SESSION-SAVE-REDIS-TIMEOUT] [--session-save-redis-persistent-id SESSION-SAVE-REDIS-PERSISTENT-ID] [--session-save-redis-db SESSION-SAVE-REDIS-DB] [--session-save-redis-compression-threshold SESSION-SAVE-REDIS-COMPRESSION-THRESHOLD] [--session-save-redis-compression-lib SESSION-SAVE-REDIS-COMPRESSION-LIB] [--session-save-redis-log-level SESSION-SAVE-REDIS-LOG-LEVEL] [--session-save-redis-max-concurrency SESSION-SAVE-REDIS-MAX-CONCURRENCY] [--session-save-redis-break-after-frontend SESSION-SAVE-REDIS-BREAK-AFTER-FRONTEND] [--session-save-redis-break-after-adminhtml SESSION-SAVE-REDIS-BREAK-AFTER-ADMINHTML] [--session-save-redis-first-lifetime SESSION-SAVE-REDIS-FIRST-LIFETIME] [--session-save-redis-bot-first-lifetime SESSION-SAVE-REDIS-BOT-FIRST-LIFETIME] [--session-save-redis-bot-lifetime SESSION-SAVE-REDIS-BOT-LIFETIME] [--session-save-redis-disable-locking SESSION-SAVE-REDIS-DISABLE-LOCKING] [--session-save-redis-min-lifetime SESSION-SAVE-REDIS-MIN-LIFETIME] [--session-save-redis-max-lifetime SESSION-SAVE-REDIS-MAX-LIFETIME] [--session-save-redis-sentinel-master SESSION-SAVE-REDIS-SENTINEL-MASTER] [--session-save-redis-sentinel-servers SESSION-SAVE-REDIS-SENTINEL-SERVERS] [--session-save-redis-sentinel-verify-master SESSION-SAVE-REDIS-SENTINEL-VERIFY-MASTER] [--session-save-redis-sentinel-connect-retries SESSION-SAVE-REDIS-SENTINEL-CONNECT-RETRIES] [--cache-backend CACHE-BACKEND] [--cache-backend-redis-server CACHE-BACKEND-REDIS-SERVER] [--cache-backend-redis-db CACHE-BACKEND-REDIS-DB] [--cache-backend-redis-port CACHE-BACKEND-REDIS-PORT] [--cache-backend-redis-password CACHE-BACKEND-REDIS-PASSWORD] [--cache-backend-redis-compress-data CACHE-BACKEND-REDIS-COMPRESS-DATA] [--cache-backend-redis-compression-lib CACHE-BACKEND-REDIS-COMPRESSION-LIB] [--cache-backend-redis-use-lua CACHE-BACKEND-REDIS-USE-LUA] [--cache-id-prefix CACHE-ID-PREFIX] [--allow-parallel-generation] [--page-cache PAGE-CACHE] [--page-cache-redis-server PAGE-CACHE-REDIS-SERVER] [--page-cache-redis-db PAGE-CACHE-REDIS-DB] [--page-cache-redis-port PAGE-CACHE-REDIS-PORT] [--page-cache-redis-password PAGE-CACHE-REDIS-PASSWORD] [--page-cache-redis-compress-data PAGE-CACHE-REDIS-COMPRESS-DATA] [--page-cache-redis-compression-lib PAGE-CACHE-REDIS-COMPRESSION-LIB] [--page-cache-id-prefix PAGE-CACHE-ID-PREFIX] [--lock-provider LOCK-PROVIDER] [--lock-db-prefix LOCK-DB-PREFIX] [--lock-zookeeper-host LOCK-ZOOKEEPER-HOST] [--lock-zookeeper-path LOCK-ZOOKEEPER-PATH] [--lock-file-path LOCK-FILE-PATH] [--document-root-is-pub DOCUMENT-ROOT-IS-PUB] [--backpressure-logger BACKPRESSURE-LOGGER] [--backpressure-logger-redis-server BACKPRESSURE-LOGGER-REDIS-SERVER] [--backpressure-logger-redis-port BACKPRESSURE-LOGGER-REDIS-PORT] [--backpressure-logger-redis-timeout BACKPRESSURE-LOGGER-REDIS-TIMEOUT] [--backpressure-logger-redis-persistent BACKPRESSURE-LOGGER-REDIS-PERSISTENT] [--backpressure-logger-redis-db BACKPRESSURE-LOGGER-REDIS-DB] [--backpressure-logger-redis-password BACKPRESSURE-LOGGER-REDIS-PASSWORD] [--backpressure-logger-redis-user BACKPRESSURE-LOGGER-REDIS-USER] [--backpressure-logger-id-prefix BACKPRESSURE-LOGGER-ID-PREFIX] [--magento-init-params MAGENTO-INIT-PARAMS]
 ```
+
+Creeert of wijzigt de plaatsingsconfiguratie
+
 
 ### `--backend-frontname`
 
@@ -7388,7 +7592,7 @@ Voeg aan om het even welke bevel toe om Magento initialisatieparameters aan te p
 
 ### `--help`, `-h`
 
-Help weergeven voor de opgegeven opdracht. Wanneer geen opdracht is gegeven, wordt de Help weergegeven voor de \&lt;info>list\&lt;/info> command
+Help weergeven voor de opgegeven opdracht. Wanneer geen bevel vertoningshulp voor het lijstbevel wordt gegeven
 
 - Standaard: `false`
 - Accepteert geen waarde
@@ -7437,11 +7641,12 @@ Geen interactieve vraag stellen
 
 ## `setup:db-data:upgrade`
 
-Hiermee installeert en verbetert u gegevens in de database
-
 ```bash
 bin/magento setup:db-data:upgrade [--magento-init-params MAGENTO-INIT-PARAMS]
 ```
+
+Hiermee installeert en verbetert u gegevens in de database
+
 
 ### `--magento-init-params`
 
@@ -7451,7 +7656,7 @@ Voeg aan om het even welke bevel toe om Magento initialisatieparameters aan te p
 
 ### `--help`, `-h`
 
-Help weergeven voor de opgegeven opdracht. Wanneer geen opdracht is gegeven, wordt de Help weergegeven voor de \&lt;info>list\&lt;/info> command
+Help weergeven voor de opgegeven opdracht. Wanneer geen bevel vertoningshulp voor het lijstbevel wordt gegeven
 
 - Standaard: `false`
 - Accepteert geen waarde
@@ -7500,11 +7705,12 @@ Geen interactieve vraag stellen
 
 ## `setup:db-declaration:generate-patch`
 
-Patch genereren en in specifieke map plaatsen.
-
 ```bash
 bin/magento setup:db-declaration:generate-patch [--revertable [REVERTABLE]] [--type [TYPE]] [--] <module> <patch>
 ```
+
+Patch genereren en in specifieke map plaatsen.
+
 
 
 ### `module`
@@ -7535,7 +7741,7 @@ Ontdek welk type patch moet worden gegenereerd. Beschikbare waarden: `data`, `sc
 
 ### `--help`, `-h`
 
-Help weergeven voor de opgegeven opdracht. Wanneer geen opdracht is gegeven, wordt de Help weergegeven voor de \&lt;info>list\&lt;/info> command
+Help weergeven voor de opgegeven opdracht. Wanneer geen bevel vertoningshulp voor het lijstbevel wordt gegeven
 
 - Standaard: `false`
 - Accepteert geen waarde
@@ -7584,11 +7790,12 @@ Geen interactieve vraag stellen
 
 ## `setup:db-declaration:generate-whitelist`
 
-Een whitelist genereren van tabellen en kolommen die door het installatieprogramma van de declaratie mogen worden bewerkt
-
 ```bash
 bin/magento setup:db-declaration:generate-whitelist [--module-name [MODULE-NAME]]
 ```
+
+Een whitelist genereren van tabellen en kolommen die door het installatieprogramma van de declaratie mogen worden bewerkt
+
 
 ### `--module-name`
 
@@ -7599,7 +7806,7 @@ Naam van de module waar whitelist wordt gegenereerd
 
 ### `--help`, `-h`
 
-Help weergeven voor de opgegeven opdracht. Wanneer geen opdracht is gegeven, wordt de Help weergegeven voor de \&lt;info>list\&lt;/info> command
+Help weergeven voor de opgegeven opdracht. Wanneer geen bevel vertoningshulp voor het lijstbevel wordt gegeven
 
 - Standaard: `false`
 - Accepteert geen waarde
@@ -7648,11 +7855,12 @@ Geen interactieve vraag stellen
 
 ## `setup:db-schema:upgrade`
 
-Installeert en verbetert het schema van DB
-
 ```bash
 bin/magento setup:db-schema:upgrade [--convert-old-scripts [CONVERT-OLD-SCRIPTS]] [--magento-init-params MAGENTO-INIT-PARAMS]
 ```
+
+Installeert en verbetert het schema van DB
+
 
 ### `--convert-old-scripts`
 
@@ -7669,7 +7877,7 @@ Voeg aan om het even welke bevel toe om Magento initialisatieparameters aan te p
 
 ### `--help`, `-h`
 
-Help weergeven voor de opgegeven opdracht. Wanneer geen opdracht is gegeven, wordt de Help weergegeven voor de \&lt;info>list\&lt;/info> command
+Help weergeven voor de opgegeven opdracht. Wanneer geen bevel vertoningshulp voor het lijstbevel wordt gegeven
 
 - Standaard: `false`
 - Accepteert geen waarde
@@ -7718,11 +7926,12 @@ Geen interactieve vraag stellen
 
 ## `setup:db:status`
 
-Controleert of het schema of de gegevens van DB verbetering vereisen
-
 ```bash
 bin/magento setup:db:status [--magento-init-params MAGENTO-INIT-PARAMS]
 ```
+
+Controleert of het schema of de gegevens van DB verbetering vereisen
+
 
 ### `--magento-init-params`
 
@@ -7732,7 +7941,7 @@ Voeg aan om het even welke bevel toe om Magento initialisatieparameters aan te p
 
 ### `--help`, `-h`
 
-Help weergeven voor de opgegeven opdracht. Wanneer geen opdracht is gegeven, wordt de Help weergegeven voor de \&lt;info>list\&lt;/info> command
+Help weergeven voor de opgegeven opdracht. Wanneer geen bevel vertoningshulp voor het lijstbevel wordt gegeven
 
 - Standaard: `false`
 - Accepteert geen waarde
@@ -7781,15 +7990,16 @@ Geen interactieve vraag stellen
 
 ## `setup:di:compile`
 
-Genereert DI-configuratie en alle ontbrekende klassen die automatisch kunnen worden gegenereerd
-
 ```bash
 bin/magento setup:di:compile
 ```
 
+Genereert DI-configuratie en alle ontbrekende klassen die automatisch kunnen worden gegenereerd
+
+
 ### `--help`, `-h`
 
-Help weergeven voor de opgegeven opdracht. Wanneer geen opdracht is gegeven, wordt de Help weergegeven voor de \&lt;info>list\&lt;/info> command
+Help weergeven voor de opgegeven opdracht. Wanneer geen bevel vertoningshulp voor het lijstbevel wordt gegeven
 
 - Standaard: `false`
 - Accepteert geen waarde
@@ -7838,11 +8048,12 @@ Geen interactieve vraag stellen
 
 ## `setup:install`
 
-Hiermee wordt de toepassing Magento geïnstalleerd
-
 ```bash
 bin/magento setup:install [--backend-frontname BACKEND-FRONTNAME] [--enable-debug-logging ENABLE-DEBUG-LOGGING] [--enable-syslog-logging ENABLE-SYSLOG-LOGGING] [--remote-storage-driver REMOTE-STORAGE-DRIVER] [--remote-storage-prefix REMOTE-STORAGE-PREFIX] [--remote-storage-endpoint REMOTE-STORAGE-ENDPOINT] [--remote-storage-bucket REMOTE-STORAGE-BUCKET] [--remote-storage-region REMOTE-STORAGE-REGION] [--remote-storage-key REMOTE-STORAGE-KEY] [--remote-storage-secret REMOTE-STORAGE-SECRET] [--remote-storage-path-style REMOTE-STORAGE-PATH-STYLE] [--id_salt ID_SALT] [--config-async CONFIG-ASYNC] [--amqp-host AMQP-HOST] [--amqp-port AMQP-PORT] [--amqp-user AMQP-USER] [--amqp-password AMQP-PASSWORD] [--amqp-virtualhost AMQP-VIRTUALHOST] [--amqp-ssl AMQP-SSL] [--amqp-ssl-options AMQP-SSL-OPTIONS] [--consumers-wait-for-messages CONSUMERS-WAIT-FOR-MESSAGES] [--queue-default-connection QUEUE-DEFAULT-CONNECTION] [--key KEY] [--db-host DB-HOST] [--db-name DB-NAME] [--db-user DB-USER] [--db-engine DB-ENGINE] [--db-password DB-PASSWORD] [--db-prefix DB-PREFIX] [--db-model DB-MODEL] [--db-init-statements DB-INIT-STATEMENTS] [-s|--skip-db-validation] [--http-cache-hosts HTTP-CACHE-HOSTS] [--db-ssl-key DB-SSL-KEY] [--db-ssl-cert DB-SSL-CERT] [--db-ssl-ca DB-SSL-CA] [--db-ssl-verify] [--session-save SESSION-SAVE] [--session-save-redis-host SESSION-SAVE-REDIS-HOST] [--session-save-redis-port SESSION-SAVE-REDIS-PORT] [--session-save-redis-password SESSION-SAVE-REDIS-PASSWORD] [--session-save-redis-timeout SESSION-SAVE-REDIS-TIMEOUT] [--session-save-redis-persistent-id SESSION-SAVE-REDIS-PERSISTENT-ID] [--session-save-redis-db SESSION-SAVE-REDIS-DB] [--session-save-redis-compression-threshold SESSION-SAVE-REDIS-COMPRESSION-THRESHOLD] [--session-save-redis-compression-lib SESSION-SAVE-REDIS-COMPRESSION-LIB] [--session-save-redis-log-level SESSION-SAVE-REDIS-LOG-LEVEL] [--session-save-redis-max-concurrency SESSION-SAVE-REDIS-MAX-CONCURRENCY] [--session-save-redis-break-after-frontend SESSION-SAVE-REDIS-BREAK-AFTER-FRONTEND] [--session-save-redis-break-after-adminhtml SESSION-SAVE-REDIS-BREAK-AFTER-ADMINHTML] [--session-save-redis-first-lifetime SESSION-SAVE-REDIS-FIRST-LIFETIME] [--session-save-redis-bot-first-lifetime SESSION-SAVE-REDIS-BOT-FIRST-LIFETIME] [--session-save-redis-bot-lifetime SESSION-SAVE-REDIS-BOT-LIFETIME] [--session-save-redis-disable-locking SESSION-SAVE-REDIS-DISABLE-LOCKING] [--session-save-redis-min-lifetime SESSION-SAVE-REDIS-MIN-LIFETIME] [--session-save-redis-max-lifetime SESSION-SAVE-REDIS-MAX-LIFETIME] [--session-save-redis-sentinel-master SESSION-SAVE-REDIS-SENTINEL-MASTER] [--session-save-redis-sentinel-servers SESSION-SAVE-REDIS-SENTINEL-SERVERS] [--session-save-redis-sentinel-verify-master SESSION-SAVE-REDIS-SENTINEL-VERIFY-MASTER] [--session-save-redis-sentinel-connect-retries SESSION-SAVE-REDIS-SENTINEL-CONNECT-RETRIES] [--cache-backend CACHE-BACKEND] [--cache-backend-redis-server CACHE-BACKEND-REDIS-SERVER] [--cache-backend-redis-db CACHE-BACKEND-REDIS-DB] [--cache-backend-redis-port CACHE-BACKEND-REDIS-PORT] [--cache-backend-redis-password CACHE-BACKEND-REDIS-PASSWORD] [--cache-backend-redis-compress-data CACHE-BACKEND-REDIS-COMPRESS-DATA] [--cache-backend-redis-compression-lib CACHE-BACKEND-REDIS-COMPRESSION-LIB] [--cache-backend-redis-use-lua CACHE-BACKEND-REDIS-USE-LUA] [--cache-id-prefix CACHE-ID-PREFIX] [--allow-parallel-generation] [--page-cache PAGE-CACHE] [--page-cache-redis-server PAGE-CACHE-REDIS-SERVER] [--page-cache-redis-db PAGE-CACHE-REDIS-DB] [--page-cache-redis-port PAGE-CACHE-REDIS-PORT] [--page-cache-redis-password PAGE-CACHE-REDIS-PASSWORD] [--page-cache-redis-compress-data PAGE-CACHE-REDIS-COMPRESS-DATA] [--page-cache-redis-compression-lib PAGE-CACHE-REDIS-COMPRESSION-LIB] [--page-cache-id-prefix PAGE-CACHE-ID-PREFIX] [--lock-provider LOCK-PROVIDER] [--lock-db-prefix LOCK-DB-PREFIX] [--lock-zookeeper-host LOCK-ZOOKEEPER-HOST] [--lock-zookeeper-path LOCK-ZOOKEEPER-PATH] [--lock-file-path LOCK-FILE-PATH] [--document-root-is-pub DOCUMENT-ROOT-IS-PUB] [--backpressure-logger BACKPRESSURE-LOGGER] [--backpressure-logger-redis-server BACKPRESSURE-LOGGER-REDIS-SERVER] [--backpressure-logger-redis-port BACKPRESSURE-LOGGER-REDIS-PORT] [--backpressure-logger-redis-timeout BACKPRESSURE-LOGGER-REDIS-TIMEOUT] [--backpressure-logger-redis-persistent BACKPRESSURE-LOGGER-REDIS-PERSISTENT] [--backpressure-logger-redis-db BACKPRESSURE-LOGGER-REDIS-DB] [--backpressure-logger-redis-password BACKPRESSURE-LOGGER-REDIS-PASSWORD] [--backpressure-logger-redis-user BACKPRESSURE-LOGGER-REDIS-USER] [--backpressure-logger-id-prefix BACKPRESSURE-LOGGER-ID-PREFIX] [--base-url BASE-URL] [--language LANGUAGE] [--timezone TIMEZONE] [--currency CURRENCY] [--use-rewrites USE-REWRITES] [--use-secure USE-SECURE] [--base-url-secure BASE-URL-SECURE] [--use-secure-admin USE-SECURE-ADMIN] [--admin-use-security-key ADMIN-USE-SECURITY-KEY] [--admin-user [ADMIN-USER]] [--admin-password [ADMIN-PASSWORD]] [--admin-email [ADMIN-EMAIL]] [--admin-firstname [ADMIN-FIRSTNAME]] [--admin-lastname [ADMIN-LASTNAME]] [--search-engine SEARCH-ENGINE] [--elasticsearch-host ELASTICSEARCH-HOST] [--elasticsearch-port ELASTICSEARCH-PORT] [--elasticsearch-enable-auth ELASTICSEARCH-ENABLE-AUTH] [--elasticsearch-username ELASTICSEARCH-USERNAME] [--elasticsearch-password ELASTICSEARCH-PASSWORD] [--elasticsearch-index-prefix ELASTICSEARCH-INDEX-PREFIX] [--elasticsearch-timeout ELASTICSEARCH-TIMEOUT] [--opensearch-host OPENSEARCH-HOST] [--opensearch-port OPENSEARCH-PORT] [--opensearch-enable-auth OPENSEARCH-ENABLE-AUTH] [--opensearch-username OPENSEARCH-USERNAME] [--opensearch-password OPENSEARCH-PASSWORD] [--opensearch-index-prefix OPENSEARCH-INDEX-PREFIX] [--opensearch-timeout OPENSEARCH-TIMEOUT] [--cleanup-database] [--sales-order-increment-prefix SALES-ORDER-INCREMENT-PREFIX] [--use-sample-data] [--enable-modules [ENABLE-MODULES]] [--disable-modules [DISABLE-MODULES]] [--convert-old-scripts [CONVERT-OLD-SCRIPTS]] [-i|--interactive] [--safe-mode [SAFE-MODE]] [--data-restore [DATA-RESTORE]] [--dry-run [DRY-RUN]] [--magento-init-params MAGENTO-INIT-PARAMS]
 ```
+
+Hiermee wordt de toepassing Magento geïnstalleerd
+
 
 ### `--backend-frontname`
 
@@ -8666,7 +8877,7 @@ Voeg aan om het even welke bevel toe om Magento initialisatieparameters aan te p
 
 ### `--help`, `-h`
 
-Help weergeven voor de opgegeven opdracht. Wanneer geen opdracht is gegeven, wordt de Help weergegeven voor de \&lt;info>list\&lt;/info> command
+Help weergeven voor de opgegeven opdracht. Wanneer geen bevel vertoningshulp voor het lijstbevel wordt gegeven
 
 - Standaard: `false`
 - Accepteert geen waarde
@@ -8715,11 +8926,12 @@ Geen interactieve vraag stellen
 
 ## `setup:performance:generate-fixtures`
 
-Genereert correcties
-
 ```bash
 bin/magento setup:performance:generate-fixtures [-s|--skip-reindex] [--] <profile>
 ```
+
+Genereert correcties
+
 
 
 ### `profile`
@@ -8737,7 +8949,7 @@ Herindexeren overslaan
 
 ### `--help`, `-h`
 
-Help weergeven voor de opgegeven opdracht. Wanneer geen opdracht is gegeven, wordt de Help weergegeven voor de \&lt;info>list\&lt;/info> command
+Help weergeven voor de opgegeven opdracht. Wanneer geen bevel vertoningshulp voor het lijstbevel wordt gegeven
 
 - Standaard: `false`
 - Accepteert geen waarde
@@ -8786,11 +8998,12 @@ Geen interactieve vraag stellen
 
 ## `setup:rollback`
 
-Draait codebase, media en database van Magento Application terug
-
 ```bash
 bin/magento setup:rollback [-c|--code-file CODE-FILE] [-m|--media-file MEDIA-FILE] [-d|--db-file DB-FILE] [--magento-init-params MAGENTO-INIT-PARAMS]
 ```
+
+Draait codebase, media en database van Magento Application terug
+
 
 ### `--code-file`, `-c`
 
@@ -8818,7 +9031,7 @@ Voeg aan om het even welke bevel toe om Magento initialisatieparameters aan te p
 
 ### `--help`, `-h`
 
-Help weergeven voor de opgegeven opdracht. Wanneer geen opdracht is gegeven, wordt de Help weergegeven voor de \&lt;info>list\&lt;/info> command
+Help weergeven voor de opgegeven opdracht. Wanneer geen bevel vertoningshulp voor het lijstbevel wordt gegeven
 
 - Standaard: `false`
 - Accepteert geen waarde
@@ -8867,11 +9080,12 @@ Geen interactieve vraag stellen
 
 ## `setup:static-content:deploy`
 
-Statische weergavebestanden gebruiken
-
 ```bash
 bin/magento setup:static-content:deploy [-f|--force] [-s|--strategy [STRATEGY]] [-a|--area [AREA]] [--exclude-area [EXCLUDE-AREA]] [-t|--theme [THEME]] [--exclude-theme [EXCLUDE-THEME]] [-l|--language [LANGUAGE]] [--exclude-language [EXCLUDE-LANGUAGE]] [-j|--jobs [JOBS]] [--max-execution-time [MAX-EXECUTION-TIME]] [--symlink-locale] [--content-version CONTENT-VERSION] [--refresh-content-version-only] [--no-javascript] [--no-js-bundle] [--no-css] [--no-less] [--no-images] [--no-fonts] [--no-html] [--no-misc] [--no-html-minify] [--no-parent] [--] [<languages>...]
 ```
+
+Statische weergavebestanden gebruiken
+
 
 
 ### `languages`
@@ -9044,7 +9258,7 @@ Bovenliggende thema&#39;s niet compileren. Alleen ondersteund in snelle en stand
 
 ### `--help`, `-h`
 
-Help weergeven voor de opgegeven opdracht. Wanneer geen opdracht is gegeven, wordt de Help weergegeven voor de \&lt;info>list\&lt;/info> command
+Help weergeven voor de opgegeven opdracht. Wanneer geen bevel vertoningshulp voor het lijstbevel wordt gegeven
 
 - Standaard: `false`
 - Accepteert geen waarde
@@ -9093,11 +9307,12 @@ Geen interactieve vraag stellen
 
 ## `setup:store-config:set`
 
-Installeert de opslagconfiguratie. Vervangen vanaf 2.2.0. Configureren gebruiken:instellen
-
 ```bash
 bin/magento setup:store-config:set [--base-url BASE-URL] [--language LANGUAGE] [--timezone TIMEZONE] [--currency CURRENCY] [--use-rewrites USE-REWRITES] [--use-secure USE-SECURE] [--base-url-secure BASE-URL-SECURE] [--use-secure-admin USE-SECURE-ADMIN] [--admin-use-security-key ADMIN-USE-SECURITY-KEY] [--magento-init-params MAGENTO-INIT-PARAMS]
 ```
+
+Installeert de opslagconfiguratie. Vervangen vanaf 2.2.0. Configureren gebruiken:instellen
+
 
 ### `--base-url`
 
@@ -9161,7 +9376,7 @@ Voeg aan om het even welke bevel toe om Magento initialisatieparameters aan te p
 
 ### `--help`, `-h`
 
-Help weergeven voor de opgegeven opdracht. Wanneer geen opdracht is gegeven, wordt de Help weergegeven voor de \&lt;info>list\&lt;/info> command
+Help weergeven voor de opgegeven opdracht. Wanneer geen bevel vertoningshulp voor het lijstbevel wordt gegeven
 
 - Standaard: `false`
 - Accepteert geen waarde
@@ -9210,11 +9425,12 @@ Geen interactieve vraag stellen
 
 ## `setup:uninstall`
 
-Hiermee wordt de toepassing Magento verwijderd
-
 ```bash
 bin/magento setup:uninstall [--magento-init-params MAGENTO-INIT-PARAMS]
 ```
+
+Hiermee wordt de toepassing Magento verwijderd
+
 
 ### `--magento-init-params`
 
@@ -9224,7 +9440,7 @@ Voeg aan om het even welke bevel toe om Magento initialisatieparameters aan te p
 
 ### `--help`, `-h`
 
-Help weergeven voor de opgegeven opdracht. Wanneer geen opdracht is gegeven, wordt de Help weergegeven voor de \&lt;info>list\&lt;/info> command
+Help weergeven voor de opgegeven opdracht. Wanneer geen bevel vertoningshulp voor het lijstbevel wordt gegeven
 
 - Standaard: `false`
 - Accepteert geen waarde
@@ -9273,11 +9489,12 @@ Geen interactieve vraag stellen
 
 ## `setup:upgrade`
 
-Hiermee werkt u de toepassing van het Magento, de DB-gegevens en het schema bij
-
 ```bash
 bin/magento setup:upgrade [--keep-generated] [--convert-old-scripts [CONVERT-OLD-SCRIPTS]] [--safe-mode [SAFE-MODE]] [--data-restore [DATA-RESTORE]] [--dry-run [DRY-RUN]] [--magento-init-params MAGENTO-INIT-PARAMS]
 ```
+
+Hiermee werkt u de toepassing van het Magento, de DB-gegevens en het schema bij
+
 
 ### `--keep-generated`
 
@@ -9320,7 +9537,7 @@ Voeg aan om het even welke bevel toe om Magento initialisatieparameters aan te p
 
 ### `--help`, `-h`
 
-Help weergeven voor de opgegeven opdracht. Wanneer geen opdracht is gegeven, wordt de Help weergegeven voor de \&lt;info>list\&lt;/info> command
+Help weergeven voor de opgegeven opdracht. Wanneer geen bevel vertoningshulp voor het lijstbevel wordt gegeven
 
 - Standaard: `false`
 - Accepteert geen waarde
@@ -9369,15 +9586,16 @@ Geen interactieve vraag stellen
 
 ## `store:list`
 
-Hiermee wordt de lijst met winkels weergegeven
-
 ```bash
 bin/magento store:list
 ```
 
+Hiermee wordt de lijst met winkels weergegeven
+
+
 ### `--help`, `-h`
 
-Help weergeven voor de opgegeven opdracht. Wanneer geen opdracht is gegeven, wordt de Help weergegeven voor de \&lt;info>list\&lt;/info> command
+Help weergeven voor de opgegeven opdracht. Wanneer geen bevel vertoningshulp voor het lijstbevel wordt gegeven
 
 - Standaard: `false`
 - Accepteert geen waarde
@@ -9426,15 +9644,16 @@ Geen interactieve vraag stellen
 
 ## `store:website:list`
 
-De lijst met websites weergeven
-
 ```bash
 bin/magento store:website:list
 ```
 
+De lijst met websites weergeven
+
+
 ### `--help`, `-h`
 
-Help weergeven voor de opgegeven opdracht. Wanneer geen opdracht is gegeven, wordt de Help weergegeven voor de \&lt;info>list\&lt;/info> command
+Help weergeven voor de opgegeven opdracht. Wanneer geen bevel vertoningshulp voor het lijstbevel wordt gegeven
 
 - Standaard: `false`
 - Accepteert geen waarde
@@ -9483,11 +9702,12 @@ Geen interactieve vraag stellen
 
 ## `theme:uninstall`
 
-Thema wordt verwijderd
-
 ```bash
 bin/magento theme:uninstall [--backup-code] [-c|--clear-static-content] [--] <theme>...
 ```
+
+Thema wordt verwijderd
+
 
 
 ### `theme`
@@ -9515,7 +9735,7 @@ Gegenereerde statische weergavebestanden wissen.
 
 ### `--help`, `-h`
 
-Help weergeven voor de opgegeven opdracht. Wanneer geen opdracht is gegeven, wordt de Help weergegeven voor de \&lt;info>list\&lt;/info> command
+Help weergeven voor de opgegeven opdracht. Wanneer geen bevel vertoningshulp voor het lijstbevel wordt gegeven
 
 - Standaard: `false`
 - Accepteert geen waarde
@@ -9564,11 +9784,12 @@ Geen interactieve vraag stellen
 
 ## `varnish:vcl:generate`
 
-Genereert Varnish VCL en echo het aan de bevellijn
-
 ```bash
 bin/magento varnish:vcl:generate [--access-list ACCESS-LIST] [--backend-host BACKEND-HOST] [--backend-port BACKEND-PORT] [--export-version EXPORT-VERSION] [--grace-period GRACE-PERIOD] [--input-file INPUT-FILE] [--output-file OUTPUT-FILE]
 ```
+
+Genereert Varnish VCL en echo het aan de bevellijn
+
 
 ### `--access-list`
 
@@ -9619,7 +9840,7 @@ Pad naar het bestand om vcl te schrijven
 
 ### `--help`, `-h`
 
-Help weergeven voor de opgegeven opdracht. Wanneer geen opdracht is gegeven, wordt de Help weergegeven voor de \&lt;info>list\&lt;/info> command
+Help weergeven voor de opgegeven opdracht. Wanneer geen bevel vertoningshulp voor het lijstbevel wordt gegeven
 
 - Standaard: `false`
 - Accepteert geen waarde
