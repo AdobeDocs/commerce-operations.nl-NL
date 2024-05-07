@@ -2,9 +2,9 @@
 title: Beveiliging en operationeel model van gedeelde verantwoordelijkheid
 description: Leer meer over de beveiligingsverantwoordelijkheden van elke partij die betrokken is bij uw Adobe Commerce-project voor cloudinfrastructuur.
 exl-id: f3cc1685-e469-4e30-b18e-55ce10dd69ce
-source-git-commit: 75eafe97a69668e43818f1c01639956e9b677a69
+source-git-commit: e188dad17ccb7d6ae10ed1457e86cc4551deaa75
 workflow-type: tm+mt
-source-wordcount: '2804'
+source-wordcount: '2805'
 ht-degree: 0%
 
 ---
@@ -900,6 +900,6 @@ Merchants zijn verantwoordelijk voor het synchroniseren van gegevens tussen prod
 | Beschikbaarheid van CPU-bronnen, datacenter, schijfruimte | R |   |
 | Beschikbaarheid en uitvoering van piekcapaciteit of opwaardering van noodsituaties | R |   |
 | Vulcapaciteit aanvragen |     | R |
-| vCPU-gebruik op limieten controleren | R |   |
+| Het vCPU-gebruik op de limieten controleren | R |   |
 
 {style="table-layout:auto"}
