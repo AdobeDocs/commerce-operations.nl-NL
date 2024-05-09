@@ -2,9 +2,9 @@
 title: Opmerkingen bij de release van Adobe Commerce
 description: Ontdek waar u informatie kunt vinden over specifieke Adobe Commerce-releases.
 exl-id: f6385e12-5c3d-425f-939c-9dfd7ef6c4f5
-source-git-commit: 466256a0dfd915fe0f0c02d377ce724cd311463c
+source-git-commit: 7edf0d26be64b4583d0a4d6ce313d25077662637
 workflow-type: tm+mt
-source-wordcount: '291'
+source-wordcount: '288'
 ht-degree: 3%
 
 ---
@@ -55,7 +55,6 @@ Gebruik de volgende lijst om versienota&#39;s en belangrijke informatie met betr
             <li><a href="https://experienceleague.adobe.com/docs/commerce-merchant-services/live-search/release-notes.html">Live zoeken</a></li>
             <li><a href="https://experienceleague.adobe.com/docs/commerce-merchant-services/payment-services/release-notes.html">Betalingsdiensten</a></li>
             <li><a href="https://experienceleague.adobe.com/docs/commerce-merchant-services/product-recommendations/release-notes.html">Product Recommendations</a></li>
-            <li><a href="https://experienceleague.adobe.com/docs/commerce-merchant-services/quick-checkout/release-notes.html?lang=en">Snelle afhandeling</a></li>
             <li><a href="https://experienceleague.adobe.com/docs/commerce-merchant-services/user-guides/integration-services/saas.html">Services Connector</a></li>
             <li><a href="https://experienceleague.adobe.com/docs/commerce-merchant-services/store-fulfillment/release-notes.html?lang=en">Afhandeling van winkel</a></li>
           </ul>
