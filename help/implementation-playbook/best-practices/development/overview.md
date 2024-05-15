@@ -4,9 +4,9 @@ description: Leer over implementatie beste praktijken voor de ontwikkelingsfase 
 exl-id: 499c16df-0e4d-4950-8169-96356bdff1a7
 feature: Best Practices
 role: Developer
-source-git-commit: ce386611834c4199e34b5d95ce76254957821f46
+source-git-commit: cca301a72b972d843b878fae28901a47c8fc0489
 workflow-type: tm+mt
-source-wordcount: '349'
+source-wordcount: '336'
 ht-degree: 0%
 
 ---
@@ -37,7 +37,15 @@ De volgende secties bevatten informatie over best practices voor de ontwikkeling
 | [Codeherziening](code-review.md) | Aanbevolen validatieproces om ervoor te zorgen dat de geïmplementeerde functionaliteit voldoet aan de vereisten |
 | [Composer vs. kit](code-management.md) | Bepaal hoe te om douanecode met aandacht voor versiebeheer, codeingewikkeldheid, en gebiedsdeelbeheer te verdelen |
 | [Vertakkingsstrategie](git-branching.md) | Broncode beheren in Git-opslagruimten |
-| [GRA-voorbeelden](../../architecture/global-reference/examples.md) | Begrijp gemeenschappelijke methodes om te organiseren [algemene verwijzingsarchitectuur](../../architecture/global-reference/overview.md) codebasis |
+
+## Platform en diensten
+
+| Beste praktijken | Beschrijving |
+|--------------------------------------------------------------------------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------|
+| [Builds en implementatie](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/deploy/best-practices.html){target="_blank"} | Beschrijft beste praktijken voor de bouw en stel stadia van Adobe Commerce op de projecten van de wolkeninfrastructuur in |
+| Foutopsporing | Fouten systematisch en effectief opsporen in het Adobe Commerce-kader |
+| [Statische implementatie van inhoud](static-content-deployment.md) | Vermijd problemen met statische inhoud die niet in uw winkelruimte wordt weergegeven |
+| [Problemen oplossen](troubleshooting.md) | Problemen met algemene Adobe Commerce-implementatie oplossen |
 
 ## Database
 
@@ -67,12 +75,3 @@ De volgende secties bevatten informatie over best practices voor de ontwikkeling
 | [Extensies](https://developer.adobe.com/commerce/php/best-practices/){target="_blank"} | Beschrijft ontwikkelingspatronen helpen verzekeren verenigbaarheid tussen uw uitbreiding, toekomstige versies van Adobe Commerce, en andere douaneuitbreidingen |
 | [Persoonlijke inhoudsblokken](private-content-block-configuration.md) | Private-inhoudsblokken configureren om de prestaties van de winkel te optimaliseren |
 | [Core- en PHP-code van derden wijzigen](modifying-core-and-third-party-code.md) | De functionaliteit, het resultaat of de invoer wijzigen van code die u niet hebt gemaakt of die u niet rechtstreeks beheert |
-
-## Platform en diensten
-
-| Beste praktijken | Beschrijving |
-|--------------------------------------------------------------------------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------|
-| [Builds en implementatie](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/deploy/best-practices.html){target="_blank"} | Beschrijft beste praktijken voor de bouw en stel stadia van Adobe Commerce op de projecten van de wolkeninfrastructuur in |
-| Foutopsporing | Fouten systematisch en effectief opsporen in het Adobe Commerce-kader |
-| [Statische implementatie van inhoud](static-content-deployment.md) | Vermijd problemen met statische inhoud die niet in uw winkelruimte wordt weergegeven |
-| [Problemen oplossen](troubleshooting.md) | Problemen met algemene Adobe Commerce-implementatie oplossen |

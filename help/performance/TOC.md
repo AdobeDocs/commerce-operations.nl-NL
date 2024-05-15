@@ -1,11 +1,11 @@
 ---
 user-guide-title: Aanbevolen werkwijzen voor prestaties
-user-guide-description: Optimaliseer de prestaties van uw Adobe Commerce-productieimplementatie aan de hand van onze aanbevelingen.
+user-guide-description: Optimaliseer de prestaties van uw Adobe Commerce-productieimplementatie met deze aanbevelingen.
 feature: Best Practices
 topic: Administration, Commerce, Development, Performance
-source-git-commit: ddf988826c29b4ebf054a4d4fb5f4c285662ef4e
+source-git-commit: cca301a72b972d843b878fae28901a47c8fc0489
 workflow-type: tm+mt
-source-wordcount: '50'
+source-wordcount: '46'
 ht-degree: 0%
 
 ---
@@ -17,10 +17,10 @@ ht-degree: 0%
 - [Aanbevelingen voor hardware](hardware.md)
 - [Aanbevelingen voor software](software.md)
 - [Referentiearchitectuur](reference-architecture.md)
-- [Aanbevelingen voor de ontwikkelomgeving](development-environment.md)
-- [Best practices voor configuratie](configuration.md)
+- [Ontwikkelingsomgeving](development-environment.md)
+- [Afhandelingsproces](high-throughput-order-processing.md)
+- [Configuratie](configuration.md)
 - [Implementatiestroom](deployment-flow.md)
-- [Bestelverwerking met hoge doorvoer](high-throughput-order-processing.md)
 - Geavanceerde concepten {#concepts}
    - [Geavanceerde instellingen](advanced-setup.md)
    - [Geavanceerd [!DNL JavaScript] bundeling](advanced-js-bundling.md)
