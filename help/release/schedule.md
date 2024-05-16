@@ -2,7 +2,7 @@
 title: Releaseplanning
 description: Ontdek wanneer Adobe de release van nieuwe functies voor Adobe Commerce gaat aankondigen.
 exl-id: ae1e09cd-966f-44a3-9e4d-b90bb838429d
-source-git-commit: 4d57c979e8e65e1463f4f16829104cfbde730cb2
+source-git-commit: 1eac85dd1cf90f6cb064dc68a4622a6343c84b4d
 workflow-type: tm+mt
 source-wordcount: '498'
 ht-degree: 2%
@@ -33,7 +33,7 @@ De volgende tabel bevat de datums voor geplande releases (de datums kunnen worde
    <tr>
       <td colspan="3"><strong>Legenda</strong>
          <ul>
-           <li><strong><img alt="B2B-functiepictogram" src="../assets/icons/enterprise.svg"></img> B2B</strong>—Nieuwe functies, verbeteringen en foutoplossingen voor de B2B-extensie voor Adobe Commerce. Zie de [Opmerkingen bij de release B2B] (https://experienceleague.adobe.com/en/docs/commerce-admin/b2b/release-notes) voor meer informatie over releases van de B2B-extensie.</li>
+           <li><strong><img alt="B2B-functiepictogram" src="../assets/icons/enterprise.svg"></img> B2B</strong>—Nieuwe functies, verbeteringen en foutoplossingen voor de B2B-extensie voor Adobe Commerce. Zie de [Opmerkingen bij de release B2B] (https://experienceleague.adobe.com/docs/commerce-admin/b2b/release-notes.html) voor meer informatie over releases van de B2B-extensie.</li>
             <li><strong><img alt="Pictogram voor uitbreidbaarheidsfunctie" src="../assets/icons/brackets.svg"></img> Uitbreidbaarheid</strong>—Nieuwe ontwikkelaarshulpmiddelen en de diensten voor uit-van-procesrekbaarheid die onafhankelijk van flardversies worden geleverd. Bijvoorbeeld Admin UI SDK, Adobe I/O Events for Commerce en API Mesh.</li>
             <li><strong><img alt="Pictogram Infrastructuurfunctie" src="../assets/icons/servers.svg"></img> Infrastructuur</strong>—Nieuwe functies en verbeteringen voor Adobe Commerce op cloudinfrastructuur en de Cloud Tools Suite voor Commerce-pakketten, die zijn ontworpen voor de implementatie en het beheer van Adobe Commerce-installaties en -upgrades op het Cloud-platform.</li>
             <li><strong><img alt="Patchvrijgavepictogram" src="../assets/icons/file-code.svg"></img> Patches</strong>—Updates voor de belangrijkste Adobe Commerce PHP-toepassing die oplossingen voor beveiliging, compatibiliteit, prestaties en hoge prioriteit bevatten.</li>
