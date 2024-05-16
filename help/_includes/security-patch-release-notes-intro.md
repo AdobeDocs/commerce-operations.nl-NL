@@ -1,0 +1,21 @@
+---
+source-git-commit: 1eaf2329c16e6dbe3e93cb7fff3a6920b4b8379d
+workflow-type: tm+mt
+source-wordcount: '85'
+ht-degree: 0%
+
+---
+# Opmerkingen bij de release met beveiligingspatches
+
+In deze release met beveiligingspatches worden updates vastgelegd om de beveiliging van uw Adobe Commerce-implementatie te verbeteren. De informatie omvat onder meer, maar is niet beperkt tot:
+
+* Oplossingen voor beveiligingsproblemen
+* De hoogtepunten van de veiligheid die meer detail over verhogingen en updates inbegrepen in het veiligheidspatch verstrekken
+* Bekende problemen
+* Instructies voor het aanbrengen van extra pleisters indien nodig
+* Informatie over hotfixes die in de release zijn opgenomen
+
+Meer informatie over beveiligingspatchreleases:
+
+* [Overzicht van Adobe Commerce Security Patch Release](/help/release/release-notes/security/overview.md#about-adobe-commerce-security-patch-releases)
+* [Instructies voor het downloaden en toepassen van beveiligingspatches](/help/installation/composer.md)

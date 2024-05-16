@@ -1,5 +1,5 @@
 ---
-source-git-commit: f7db6b65d74c605976a3a338c98eebda2dc46a43
+source-git-commit: 1eaf2329c16e6dbe3e93cb7fff3a6920b4b8379d
 workflow-type: tm+mt
 source-wordcount: '269'
 ht-degree: 0%
@@ -45,7 +45,7 @@ ht-degree: 0%
 
 >[!NOTE]
 >
->Adobe Commerce-releases kunnen wijzigingen bevatten die niet compatibel zijn met oudere versies. Als u wijzigingen die niet compatibel zijn met oudere versies wilt bekijken, raadpleegt u [BIC-referentie](https://developer.adobe.com/commerce/php/development/backward-incompatible-changes/reference/). Belangrijke problemen die niet compatibel zijn met oudere versies worden beschreven in [BIC-hooglichten](https://developer.adobe.com/commerce/php/development/backward-incompatible-changes/highlights/). Niet alle introducties introduceren grote BIC&#39;s.
+>Adobe Commerce-releases kunnen niet-compatibele wijzigingen (BIC&#39;s) bevatten. Als u wijzigingen die niet compatibel zijn met oudere versies wilt bekijken, raadpleegt u [BIC-referentie](https://developer.adobe.com/commerce/php/development/backward-incompatible-changes/reference/). Belangrijke problemen die niet compatibel zijn met oudere versies worden beschreven in [BIC-hooglichten](https://developer.adobe.com/commerce/php/development/backward-incompatible-changes/highlights/). Niet alle introducties introduceren grote BIC&#39;s.
 
 ## CVE-kennisgeving {#cve-notice}
 
