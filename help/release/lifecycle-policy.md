@@ -2,9 +2,9 @@
 title: Levenscyclusbeleid voor software
 description: Leer meer over de belangrijkste datums voor het einde van de softwareondersteuning voor Adobe Commerce-releases.
 exl-id: 9ee4ecc8-d893-412a-a605-5a8606a1b9a9
-source-git-commit: 01e926e3cf36f27f5292a0b9ce7a6209d4960cc2
+source-git-commit: 7df5edf2acba706fb01f58cc3749c4a2bf136fc5
 workflow-type: tm+mt
-source-wordcount: '363'
+source-wordcount: '426'
 ht-degree: 5%
 
 ---
@@ -22,22 +22,25 @@ Voor Adobe Commerce 2.4.4 en latere versies:
 
 - Adobe biedt geen beveiligings- en kwaliteitsoplossingen voor services en softwareafhankelijkheden van derden (zoals PHP en MySQL) die het einde van de levensduur kunnen bereiken terwijl klanten de ondersteuningsperiode van drie jaar voor Adobe Commerce hebben. Zie de [systeemvereisten](../installation/system-requirements.md) voor een volledige lijst van geteste en ondersteunde technologieën van derden.
 
+- Adobe biedt compatibiliteit met services en softwareafhankelijkheden van derden, terwijl klanten de ondersteuningsperiode van drie jaar voor Adobe Commerce hebben in het bereik van patchreleases die alleen betrekking hebben op beveiliging, maar alleen wanneer dit mogelijk is zonder de wijzigingen die achteraf incompatibel zijn, in te voeren.
+
 ## Einde van softwareondersteuning
 
-| Geen | Algemene beschikbaarheid | Einde van softwareondersteuning<sup>1</sup> | Afhankelijke PHP-versie |
-|----------------------|----------------------|-------------------------------------|-----------------------|
-| Adobe Commerce 2.4.7 | 9 april 2024 | 9 april 2027 | 8.2 en 8.3 |
-| Adobe Commerce 2.4.6 | 14 maart 2023 | 14 maart 2026 | 8.1 en 8.2 |
-| Adobe Commerce 2.4.5 | 9 augustus 2022 | 9 augustus 2025 | 8,1 |
-| Adobe Commerce 2.4.4 | 12 april 2022 | 24 april 2025 | 8,1 |
+| Geen | Algemene beschikbaarheid | Einde van softwareondersteuning<sup>1</sup> | Afhankelijke PHP-versie | Afhankelijke MariaDB-versie |
+|----------------------|----------------------|-------------------------------------|-----------------------|------------------------------|
+| Adobe Commerce 2.4.7 | 9 april 2024 | 9 april 2027 | 8.2 en 8.3 | 10,6 |
+| Adobe Commerce 2.4.6 | 14 maart 2023 | 14 maart 2026 | 8.1 en 8.2 | 10,6 |
+| Adobe Commerce 2.4.5 | 9 augustus 2022 | 9 augustus 2025 | 8,1 | 10,5<sup>2</sup> |
+| Adobe Commerce 2.4.4 | 12 april 2022 | 24 april 2025 | 8,1 | 10,5<sup>3</sup> |
 
 {style="table-layout:auto"}
 
-<sup>1 Tot einde van de softwareondersteuning behoren zowel oplossingen voor einde van kwaliteit als oplossingen voor einde van de beveiliging.</sup><br>
-
 >[!NOTE]
 >
->Zie [Levenscyclusbeleid software](https://www.adobe.com/content/dam/cc/en/legal/terms/enterprise/pdfs/Adobe-Commerce-Software-Lifecycle-Policy.pdf).
+>- <sup>1</sup> Tot einde van de softwareondersteuning behoren zowel oplossingen voor einde van kwaliteit als oplossingen voor einde van de beveiliging.
+>- <sup>2</sup> Vanaf de beveiligingspatch 2.4.5-p8.
+>- <sup>3</sup> Vanaf de beveiligingspatch 2.4.4-p9.
+>- Zie [Levenscyclusbeleid software](https://www.adobe.com/content/dam/cc/en/legal/terms/enterprise/pdfs/Adobe-Commerce-Software-Lifecycle-Policy.pdf).
 
 <table style="table-layout:auto">
 <thead>
