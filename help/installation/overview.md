@@ -1,11 +1,11 @@
 ---
 title: Overzicht van installatie op locatie
-description: Leer over het installatieproces voor plaatsingen op-gebouw van Adobe Commerce.
+description: Leer meer over het installatieproces voor een Adobe Commerce-uitrol op locatie.
 exl-id: a9f5b241-d05d-462c-8c7f-479a264c988f
 source-git-commit: ddf988826c29b4ebf054a4d4fb5f4c285662ef4e
 workflow-type: tm+mt
 source-wordcount: '148'
-ht-degree: 0%
+ht-degree: 7%
 
 ---
 

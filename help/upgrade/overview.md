@@ -1,11 +1,11 @@
 ---
 title: Overzicht van het upgradeproces
-description: Leer hoe u uw Adobe Commerce-project kunt upgraden om uw winkel veilig en efficiënt te laten werken.
+description: Meer informatie over hoe u uw Adobe Commerce-project kunt upgraden om uw winkel te beveiligen en efficiënt te laten werken.
 exl-id: 40bd97ca-6648-40d4-9c61-7d159391976a
 source-git-commit: 95ffff39d82cc9027fa633dffedf15193040802d
 workflow-type: tm+mt
 source-wordcount: '895'
-ht-degree: 0%
+ht-degree: 1%
 
 ---
 

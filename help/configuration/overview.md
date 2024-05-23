@@ -1,11 +1,11 @@
 ---
 title: Overzicht van de configuratiehandleiding
-description: Meer informatie over alle configureerbare functies en services voor uw Adobe Commerce-toepassing.
+description: Ontdek meer over alle configureerbare functies en services voor uw Adobe Commerce-applicatie.
 exl-id: c4997792-5a47-4ae5-903a-7e5d7235e42e
 source-git-commit: ddf988826c29b4ebf054a4d4fb5f4c285662ef4e
 workflow-type: tm+mt
 source-wordcount: '144'
-ht-degree: 0%
+ht-degree: 9%
 
 ---
 
