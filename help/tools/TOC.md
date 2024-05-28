@@ -2,9 +2,9 @@
 user-guide-title: Gereedschappen
 user-guide-description: Leer meer over de verschillende gereedschappen die u met Adobe Commerce kunt gebruiken, hun gebruik, het installatieproces en hoe u toegang krijgt.
 feature: Configuration
-source-git-commit: 9527ce1983340c6438c33b1d07acf4b4b699ccc8
+source-git-commit: 7cdaeec902235898bb27914a1b39a551f26d26e2
 workflow-type: tm+mt
-source-wordcount: '182'
+source-wordcount: '179'
 ht-degree: 0%
 
 ---
@@ -32,7 +32,6 @@ ht-degree: 0%
    - [Opmerkingen bij de release](quality-patches-tool/release-notes.md)
 - Verwijzing naar opdrachtregelprogramma&#39;s {#cli-reference}
    - [Adobe Commerce (ter plaatse)](reference/commerce-on-premises.md)
-   - [Magento Open Source](reference/magento-open-source.md)
    - [Compatibiliteit upgraden](reference/uct.md)
 - Waarneming voor Adobe Commerce {#observation-for-adobe-commerce}
    - [Inleiding](observation-for-adobe-commerce/intro.md)
