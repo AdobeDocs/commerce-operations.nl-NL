@@ -1,7 +1,7 @@
 ---
-source-git-commit: 580a15c908fc8ac4ef5d62582dfdd87d75dde994
+source-git-commit: 7dd6322370b976d8edea51fd94099e6dc4c082b7
 workflow-type: tm+mt
-source-wordcount: '766'
+source-wordcount: '719'
 ht-degree: 3%
 
 ---
@@ -112,6 +112,12 @@ Sjablooninhoud bijwerken:
 
    >**OPMERKING:** U moet het script uitvoeren vanuit het dialoogvenster `_jekyll` directory. Als dit uw eerste keer is om het manuscript in werking te stellen, moet u de gebiedsdelen van Ruby eerst met installeren `bundle install` gebruiken.
 
+1. Ga terug naar de `root` directory.
+
+   ```
+   cd ..
+   ```
+
 1. Controleren of de verwachte `help/_includes/templated` bestanden zijn gewijzigd.
 
    ```
@@ -122,7 +128,15 @@ Sjablooninhoud bijwerken:
 
    ```
    modified:   _data/product-availability.yml
-   modified:   ../help/_includes/templated/product-availability-extensions.md
+   modified:   help/_includes/templated/product-availability-extensions.md
+   ```
+
+1. Druk op de wijzigingen.
+
+   ```
+   git add
+   git commit -m "_descriptive message of the intended commit_"
+   git push
    ```
 
 Raadpleeg de documentatie bij Jekyll voor meer informatie over [Gegevensbestanden](https://jekyllrb.com/docs/datafiles), [Vloeibare filters](https://jekyllrb.com/docs/liquid/filters/)en andere functies.
