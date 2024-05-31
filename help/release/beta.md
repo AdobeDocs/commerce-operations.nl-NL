@@ -2,9 +2,9 @@
 title: Bèta-releases
 description: Leer meer over de bètareleases van Adobe Commerce en hoe u hieraan kunt deelnemen.
 exl-id: 662cb061-995f-4e09-a2ef-9e607cc0000b
-source-git-commit: 1dd4b44c6aa685795e16dccebfaf073dcc0062f2
+source-git-commit: d761bd089fbd2046e993d4652e9e0e2b3c4d2777
 workflow-type: tm+mt
-source-wordcount: '690'
+source-wordcount: '596'
 ht-degree: 0%
 
 ---
@@ -47,15 +47,6 @@ Uitgebreide gegevensuitwisseling tussen Adobe Commerce en Adobe Experience Platf
 - Meerdere gegevenssets en gegevensstromen ondersteunen
 
 Als u wilt deelnemen aan deze bètaversie, stuurt u een e-mailverzoek naar [DataConnection@adobe.com](mailto:DataConnection@adobe.com).
-
-### Backoffice Integration Starter Kit (Private Beta)
-
-De rugzak [integratiestartkit](https://developer-stage.adobe.com/commerce/extensibility/app-development/starter-kit/) biedt ontwikkelaars een accelerator om gebeurtenisgestuurde integratie te maken met systemen zoals ERP&#39;s, CRM&#39;s en OMS&#39;s. Met de startkit kunt u de ontwikkelingskosten met maximaal 50% verlagen. De startkit volgt ook de best practices van Adobe Commerce die de onderhoudskosten aanzienlijk verlagen. Tot de kenmerken van de startkit behoren:
-- Gegevenssynchronisatie voor veelgebruikte objecten zoals product, bestelling, klant, voorraad en verzending
-- Architectuurblauwdrukken volgens best practices
-- Onboarding scripts om ontwikkeling te versnellen
-
-Als u wilt deelnemen aan deze bètaversie, voltooit u de [inschrijvingsformulier](https://forms.office.com/r/YbYArqE3DT).
 
 ### Adobe Commerce Foundation (openbare bètaversie)
 
