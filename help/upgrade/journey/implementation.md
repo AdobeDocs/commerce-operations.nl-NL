@@ -2,9 +2,9 @@
 title: Upgrade uitvoeren
 description: Leer over de verschillende fasen van verbeteringsimplementatie voor de projecten van Adobe Commerce.
 exl-id: d64855a7-73ee-463f-a314-6a8d4ebe4726
-source-git-commit: ddf988826c29b4ebf054a4d4fb5f4c285662ef4e
+source-git-commit: a81d2c0b6526c2c8c8c5c4652c83595667985543
 workflow-type: tm+mt
-source-wordcount: '812'
+source-wordcount: '826'
 ht-degree: 1%
 
 ---
@@ -32,6 +32,10 @@ De volgende punten kunnen u in een grondige analyse willen omvatten:
    - Huidige geïnstalleerde versie
    - Doelversie van upgrade
    - Aantal en details van aangetroffen kritieke fouten
+
+  >[!TIP]
+  >
+  >Al deze informatie (en meer) is beschikbaar in het hulpmiddel van de Analyse voor de hele Plaats [dashboard](../../tools/site-wide-analysis-tool/dashboard.md).
 
 - De diensten van de verbetering om doelversie te steunen. Gebruik het volgende lijstmalplaatje om uit in kaart te brengen welke diensten u moet bevorderen. Gebruik de [systeemvereisten](../../installation/system-requirements.md) om te bepalen wat u aan de _Upgrade uitvoeren naar_ kolom.
 
