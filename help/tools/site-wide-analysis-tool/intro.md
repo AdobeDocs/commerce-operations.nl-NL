@@ -2,9 +2,9 @@
 title: '[!DNL Site-Wide Analysis Tool]'
 description: Meer informatie over de [!DNL Site-Wide Analysis] Het hulpmiddel, zijn gebruik, het installatieproces, en hoe te om toegang te krijgen
 exl-id: 32774040-d322-43d6-9c26-c340a0ab58a9
-source-git-commit: 7b6413c4fdc26b73dda74bcf7cd3a3acdd587abc
+source-git-commit: 5f39a2d8440225b3a2e463894e2bd866196fbac2
 workflow-type: tm+mt
-source-wordcount: '461'
+source-wordcount: '503'
 ht-degree: 0%
 
 ---
@@ -38,7 +38,10 @@ Het bevat ook een historisch overzicht waarin wordt bijgehouden hoe de gezondhei
 
 - **Informatie** - Verstrekt de informatie van het klantencontact en een samenvatting van huidige kaartjes, met gedetailleerde informatie over elk geïnstalleerd product van Adobe Commerce.
 
-- **Recommendations** - Hier worden aanbevelingen weergegeven op basis van best practices voor het aanpakken van problemen die op uw site zijn aangetroffen.
+- **Recommendations** - Hier worden aanbevelingen weergegeven op basis van best practices voor het aanpakken van problemen die op uw site zijn aangetroffen:
+   - Voor wijzigingen die een infrastructuurupdate vereisen, dient u een supportverzoek in.
+   - Breng de wijzigingen zelf aan voor wijzigingen die een toepassingsupdate vereisen.
+   - Voor wijzigingen die handmatige ingrepen vereisen, zoals een [code-implementatie](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/architecture/pro-develop-deploy-workflow.html#deployment-workflow), vraag uw systeembeheerder of ontwikkelaars om hulp.
 
 - **Uitzonderingen** - Hiermee worden fouten weergegeven die door de toepassing worden gegenereerd als gevolg van abnormale omstandigheden zonder een fouthandler.
 
