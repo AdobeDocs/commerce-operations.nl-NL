@@ -1,17 +1,18 @@
 ---
-title: Een extensie installeren
-description: Voer de volgende stappen uit om een Adobe Commerce-extensie te installeren.
+title: Extensies van derden beheren
+description: Voer de volgende stappen uit om Adobe Commerce-extensies te installeren, in te schakelen, te upgraden en te verwijderen.
 exl-id: b564662a-2e5f-4fa9-bae1-ca7498478fa9
-source-git-commit: ddf988826c29b4ebf054a4d4fb5f4c285662ef4e
+source-git-commit: 6da0e70acc77d2171d6336ab632e6a9a8dd16c67
 workflow-type: tm+mt
-source-wordcount: '631'
+source-wordcount: '785'
 ht-degree: 0%
 
 ---
 
-# Een extensie installeren
 
-Code die het gedrag van Adobe Commerce uitbreidt of aanpast, wordt een extensie genoemd. U kunt desgewenst extensies verpakken en distribueren op het tabblad [Commerce Marketplace](https://marketplace.magento.com) of een ander extensiedistributiesysteem.
+# Extensies van derden beheren
+
+Code die het gedrag van Adobe Commerce uitbreidt of aanpast, wordt een extensie genoemd. U kunt desgewenst extensies verpakken en distribueren op het tabblad [Commerce Marketplace](https://commercemarketplace.adobe.com/) of een ander extensiedistributiesysteem.
 
 Extensies zijn:
 
@@ -21,7 +22,9 @@ Extensies zijn:
 
 >[!TIP]
 >
->Dit onderwerp verklaart hoe te om de bevellijn te gebruiken om uitbreidingen te installeren u van de Commerce Marketplace koopt. U kunt dezelfde procedure gebruiken om te installeren _alle_ extensie; u hebt alleen de Composer-naam en -versie van de extensie nodig. Open de extensies om deze te zoeken `composer.json` en noteer de waarden voor `"name"` en `"version"`.
+>Dit onderwerp verklaart hoe te om de bevel-lijn interface te gebruiken om derdextensies te beheren die u van de Commerce Marketplace koopt. U kunt dezelfde procedure gebruiken om te installeren _alle_ extensie; u hebt alleen de Composer-naam en -versie van de extensie nodig. Open de extensies om deze te zoeken `composer.json` en noteer de waarden voor `"name"` en `"version"`.
+
+## Installeren
 
 Voordat u gaat installeren, kunt u het volgende doen:
 
@@ -51,13 +54,13 @@ Als u een extensie wilt installeren, moet u:
 1. Controleer of de extensie correct is geïnstalleerd.
 1. De extensie inschakelen en configureren.
 
-## De naam en versie van de extensiecomposer ophalen
+### Extensiegegevens ophalen
 
-Als u de Composer-naam en -versie van de extensie al kent, slaat u deze stap over en gaat u verder met [Werk uw `composer.json` file](#update-your-composer-file).
+Als u de Composer-naam en -versie van de extensie al kent, slaat u deze stap over en gaat u verder met [Werk uw `composer.json` file](#update-composer-dependencies).
 
 De naam en versie van de componist van de extensie ophalen uit de Commerce Marketplace:
 
-1. Aanmelden bij [Commerce Marketplace](https://marketplace.magento.com) met de gebruikersnaam en het wachtwoord waarmee u de extensie hebt aangeschaft.
+1. Aanmelden bij [Commerce Marketplace](https://commercemarketplace.adobe.com/) met de gebruikersnaam en het wachtwoord waarmee u de extensie hebt aangeschaft.
 
 1. Klik in de rechterbovenhoek op **Uw naam** > **Mijn profiel**.
 
@@ -75,7 +78,7 @@ De naam en versie van de componist van de extensie ophalen uit de Commerce Marke
 >
 >U kunt ook de naam en versie van de Composer vinden van _alle_ extensie (of u de extensie hebt aangeschaft op Commerce Marketplace of op een andere locatie) in de extensie `composer.json` bestand.
 
-## Uw Composer-bestand bijwerken
+### Composerafhankelijkheden bijwerken
 
 De naam en versie van de extensie toevoegen aan uw `composer.json` bestand:
 
@@ -103,7 +106,7 @@ De naam en versie van de extensie toevoegen aan uw `composer.json` bestand:
    Generating autoload files
    ```
 
-## De extensie verifiëren
+### Installatie controleren
 
 Voer de volgende opdracht uit om te controleren of de extensie correct is geïnstalleerd:
 
@@ -125,7 +128,7 @@ bin/magento module:status
 
 En zoek de extensie onder &quot;Lijst met uitgeschakelde modules&quot;.
 
-## De extensie inschakelen
+### Inschakelen
 
 Sommige extensies werken alleen correct als u gegenereerde statische weergavebestanden wist. Gebruik de `--clear-static-content` om statische weergavebestanden te wissen wanneer u een extensie inschakelt.
 
@@ -183,7 +186,7 @@ Sommige extensies werken alleen correct als u gegenereerde statische weergavebes
 >
 >Als u fouten tegenkomt bij het laden van de storefront in een browser, gebruikt u de volgende opdracht om de cache te wissen: `bin/magento cache:flush`.
 
-## Een extensie upgraden
+## Upgrade
 
 Een module of extensie bijwerken of bijwerken:
 
@@ -218,3 +221,39 @@ Een module of extensie bijwerken of bijwerken:
    ```bash
    bin/magento cache:clean
    ```
+
+## Verwijderen
+
+Neem contact op met de leverancier van extensies voor instructies om een extensie van een andere fabrikant te verwijderen. De instructies moeten de volgende informatie bevatten:
+
+- Hoe te om de veranderingen van de gegevensbestandlijst terug te keren
+- Hoe te om de veranderingen van gegevensbestandgegevens terug te keren
+- Welke bestanden moeten worden verwijderd of teruggezet
+
+>[!CAUTION]
+>
+>Stappen voor verwijderen uitvoeren in een niet-productieomgeving _first_ en test grondig voordat u gaat implementeren in uw productieomgeving.
+
+De volgende instructies bevatten algemene informatie voor het verwijderen van extensies van derden:
+
+1. Verwijder de extensie uit de Adobe Commerce-projectopslagplaats.
+
+   - Voor op Composer gebaseerde extensies verwijdert u de extensie uit uw Adobe Commerce `composer.json` bestand.
+
+     ```bash
+     composer remove <package-name>
+     ```
+
+   - Voor extensies die niet op Composer zijn gebaseerd, verwijdert u de fysieke bestanden uit de Adobe Commerce-projectopslagplaats.
+
+     ```bash
+     rm -rf app/code/<vendor-name>/<module-name>
+     ```
+
+1. Als de `config.php` bestand staat onder broncontrole in de Adobe Commerce-projectopslagplaats. Verwijder de extensie uit de `config.php` bestand.
+
+1. Test uw lokale gegevensbestand om ervoor te zorgen dat de verkoper-geleverde instructies zoals verwacht werken.
+
+1. Controleer of de extensie correct is uitgeschakeld en of uw website naar behoren werkt in uw testomgeving.
+
+1. Implementeer de wijzigingen in uw productieomgeving.
