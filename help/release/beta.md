@@ -2,9 +2,9 @@
 title: Bèta-releases
 description: Leer meer over de bètareleases van Adobe Commerce en hoe u hieraan kunt deelnemen.
 exl-id: 662cb061-995f-4e09-a2ef-9e607cc0000b
-source-git-commit: d761bd089fbd2046e993d4652e9e0e2b3c4d2777
+source-git-commit: 0e2dfc376a049a47348a7a913bd5181436227cc2
 workflow-type: tm+mt
-source-wordcount: '596'
+source-wordcount: '818'
 ht-degree: 0%
 
 ---
@@ -14,7 +14,7 @@ ht-degree: 0%
 bètaprogramma&#39;s van Adobe Commerce zijn een manier voor handelaren om toegang te krijgen tot pre-releasefuncties en -code, feedback te geven en de toekomst van Adobe Commerce te begeleiden. Er zijn twee typen bètaprogramma&#39;s:
 
 - Openbare bètaprogramma&#39;s zijn beschikbaar voor alle Adobe Commerce-klanten en -partners
-- Private bèta: een private bètaprogramma kan goedkeuring vereisen op basis van kwalificatiecriteria om deel te kunnen nemen
+- Private bèta: een private bètaprogramma kan goedkeuring vereisen op basis van kwalificatiecriteria om deel te nemen
 
 >[!IMPORTANT]
 >
@@ -27,6 +27,22 @@ Het krijgen van vroege toegang tot eigenschappen die de Adobe ontwikkelt verstre
 ## Huidige bètaprogramma&#39;s
 
 Zie de volgende secties voor een lijst van actieve bètaprogramma&#39;s.
+
+### Experience Manager Assets Integration for Commerce (Private Beta)
+
+De Experience Manager Assets Integration for Commerce maakt een efficiënt beheer en levering mogelijk van een groot aantal productafbeeldingen van Experience Manager Assets naar Adobe Commerce, waarbij weinig of geen operationele inspanningen vereist zijn.
+
+Belangrijkste kenmerken:
+
+- Integratie met plug-and-play-technologie — Verstrek een Adobe die Experience Manager Assets en Adobe Commerce de mogelijkheid biedt om hun producten te laten focussen op wat het belangrijkst is, met lagere bedrijfskosten en verbeterde efficiëntie.
+
+- Pas productafbeeldingen aan op schaal-Gebruik Experience Manager Assets om miljoenen productvariaties te genereren voor gepersonaliseerde Commerce-ervaringen met eenvoudige bewerkingsgereedschappen op basis van de gebruikersinterface, creatieve inhoud maken met behulp van Adobe Firefly en toegewezen workflows voor bedrijfsmiddelen om de consistentie van merken te garanderen. Als u tevreden bent met de middelen, kunt u deze naadloos leveren aan uw Commerce-winkeliers via de Experience Manager Assets Integration.
+
+- Eenvoudig aan boord nemen - Vereenvoudig uw zakelijke instaptoegang met een configureerbaar synchronisatieproces dat volledige synchronisatie tussen de Experience Manager Assets-opslagplaats en de Commerce-catalogus mogelijk maakt.
+
+- Flexibele matchingstrategie - De integratie omvat standaardalgoritmen voor middelenmatching op basis van product-SKU&#39;s die afbeeldingen synchroniseren tussen AEM Assets en Commerce, en het is uitbreidbaar met Adobe Developer App Builder. Werk samen met uw partner van de oplossing om een aangepaste strategie voor het afstemmen van bedrijfsmiddelen bovenop de integratie te bouwen om elke structuur van opslagplaatsen voor middelenbeheer te kunnen gebruiken.
+
+Als u wilt deelnemen aan de bètaversie, stuurt u een e-mailverzoek naar [Shaun McCran](mailto:mccran@adobe.com).
 
 ### IBM Sterling Order Management System Integration (Private Bèta)
 
