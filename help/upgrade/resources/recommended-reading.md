@@ -2,7 +2,7 @@
 title: Aanbevolen lezen voor upgrades
 description: Lees de aanbevolen tekst voor het plannen van uw Adobe Commerce-upgrade.
 exl-id: 24ca57c0-1a68-46c4-b2fa-4a114250d0e3
-source-git-commit: ddf988826c29b4ebf054a4d4fb5f4c285662ef4e
+source-git-commit: 9542084e6ed1a4ebbbb33373d9c7bc9b463b9d5d
 workflow-type: tm+mt
 source-wordcount: '260'
 ht-degree: 3%
@@ -42,7 +42,7 @@ Gebruik de bronnen op deze pagina om meer te leren over Adobe Commerce-upgrades.
         <p>Bekijk de details over de releases en het beleid van Adobe Commerce.</p>
           <ul>
             <li><a href="https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/faq/adobe-commerce-eos-policy-faq.html">Veelgestelde vragen over einde Adobe Commerce-software</a></li>
-            <li><a href="https://marketplacesupport.magento.com/hc/en-us/articles/4413722432653">Beleid inzake Commerce Marketplace</a></li>
+            <li><a href="https://developer.adobe.com/commerce/marketplace/guides/sellers/compatibility/requirements/">Beleid inzake Commerce Marketplace</a></li>
             <li><a href="https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/faq/adobe-commerce-release-strategy-lifecycle-policy.html">Veelgestelde vragen over de nieuwe Adobe Commerce-releasestrategie, het bijgewerkte levenscyclusbeleid en de uitgebreide ondersteuning</a></li>
             <li><a href="https://www.adobe.com/content/dam/cc/en/legal/terms/enterprise/pdfs/Adobe-Commerce-Software-Lifecycle-Policy.pdf">Levenscyclusbeleid</a></li>
             <li><a href="../../release/schedule.md">Releaseplanning</a></li>
