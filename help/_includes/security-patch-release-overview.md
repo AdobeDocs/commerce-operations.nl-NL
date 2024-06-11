@@ -1,11 +1,11 @@
 ---
-source-git-commit: 1eaf2329c16e6dbe3e93cb7fff3a6920b4b8379d
+source-git-commit: d532402e2d65a1f34558fc3c283d4291be5b006b
 workflow-type: tm+mt
 source-wordcount: '184'
 ht-degree: 0%
 
 ---
-# Informatie over Adobe Commerce Security patch-releases
+# Informatie over Adobe Commerce-beveiligingspatchreleases
 
 **Opgeloste beveiligingsproblemen**: Een wijziging in de softwarecode die een geïdentificeerd beveiligingsprobleem verhelpt en verwachte resultaten oplevert in een betrokken productgebied. Deze correcties zijn over het algemeen compatibel met oudere versies.
 

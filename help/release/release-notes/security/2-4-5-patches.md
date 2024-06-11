@@ -2,17 +2,27 @@
 title: Opmerkingen bij de release Adobe Commerce 2.4.5 Security Patch
 description: Leer meer over oplossingen voor beveiligingsproblemen, beveiligingsverbeteringen en andere beveiligingsupdates die zijn opgenomen in de beveiligingspatchreleases voor Adobe Commerce versie 2.4.5.
 exl-id: 1b5f6d84-877a-45ea-8ff5-db83e3d360dd
-source-git-commit: e1c5b5e5c1a8800aa5aa2657060f61c16743cbda
+source-git-commit: 7705e750a466ab134ae2616a40a32880ee0c45de
 workflow-type: tm+mt
-source-wordcount: '1001'
+source-wordcount: '1092'
 ht-degree: 0%
 
 ---
 
 
-# Opmerkingen bij de release voor Adobe Commerce 2.4.5-beveiligingspatches
+# Opmerkingen bij de release voor beveiligingspatches van Adobe Commerce 2.4.5
 
 {{$include /help/_includes/security-patch-release-notes-intro.md}}
+
+## Adobe Commerce 2.4.5-p8
+
+De Adobe Commerce 2.4.5-p7 veiligheidsversie verstrekt veiligheidsinsectenmoeilijke situaties voor kwetsbaarheid die in vorige versies van 2.4.5 zijn geïdentificeerd.
+
+Voor de recentste informatie over de veiligheidsinsectenmoeilijke situaties, zie [Beveiligingsbulletin APSB24-40 Adobe](https://helpx.adobe.com/security/products/magento/apsb24-40.html).
+
+### Platformupgrades
+
+* **Ondersteuning voor MariaDB 10.5**. Deze patchrelease introduceert compatibiliteit met MariaDB versie 10.5. Adobe Commerce is nog steeds compatibel met MariaDB-versie 10.4, maar de Adobe raadt u aan Adobe Commerce 2.4.5-p8 en alle aanstaande patchreleases (alleen voor de beveiliging van 2.4.5) alleen te gebruiken met MariaDB-versie 10.5 omdat het onderhoud van MariaDB 10.4 eindigt op 18 juni 2024. <!--AC-11530-->
 
 ## Adobe Commerce 2.4.5-p7
 
@@ -107,5 +117,3 @@ De Adobe Commerce 2.4.5-p1-beveiligingsrelease biedt oplossingen voor beveiligin
 Voor de recentste informatie over de veiligheidsinsectenmoeilijke situaties, zie [Beveiligingsbulletin APSB22-48 Adobe](https://helpx.adobe.com/security/products/magento/apsb22-48.html).
 
 Één van de veiligheidsinsectenmoeilijke situaties omvatte de verwezenlijking van een nieuwe configuratie het plaatsen. De **E-mailbevestiging vereisen als e-mail is gewijzigd** Met configuratie-instelling kunnen beheerders een e-mailbevestiging vereisen wanneer een Admin-gebruiker zijn e-mailadres wijzigt. <!-- AC-6292-->
-
-

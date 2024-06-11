@@ -2,23 +2,23 @@
 title: Opmerkingen bij de release van Adobe Commerce 2.4.3 Beveiligingspatches
 description: Leer meer over oplossingen voor beveiligingsproblemen, beveiligingsverbeteringen en andere beveiligingsupdates die zijn opgenomen in de beveiligingspatchreleases voor Adobe Commerce versie 2.4.3.
 exl-id: 72d343cd-83d7-48ce-976a-e26ba1b8db27
-source-git-commit: 1eaf2329c16e6dbe3e93cb7fff3a6920b4b8379d
+source-git-commit: d532402e2d65a1f34558fc3c283d4291be5b006b
 workflow-type: tm+mt
-source-wordcount: '938'
+source-wordcount: '931'
 ht-degree: 0%
 
 ---
 
-# Opmerkingen bij de release Adobe Commerce 2.4.3 Security Patch
+
+# Opmerkingen bij de release voor beveiligingspatches van Adobe Commerce 2.4.3
 
 {{$include /help/_includes/security-patch-release-notes-intro.md}}
 
 ## Adobe Commerce 2.4.3-p3
 
-De Adobe Commerce 2.4.3-p3-beveiligingsrelease biedt beveiligingsoplossingen voor kwetsbaarheden die zijn geïdentificeerd in de vorige release (Adobe Commerce 2.4.3 en Magento Open Source 2.4.3). Deze release bevat ook beveiligingsverbeteringen die de naleving van de meest recente best practices op het gebied van beveiliging verbeteren.
+Het beveiligingsrelease van Adobe Commerce 2.4.3-p3 biedt beveiligingsoplossingen voor kwetsbaarheden die zijn geïdentificeerd in eerdere versies van 2.4.3. Deze release bevat ook beveiligingsverbeteringen die de naleving van de meest recente best practices op het gebied van beveiliging verbeteren.
 
 Voor de recentste informatie over de veiligheidsinsectenmoeilijke situaties, zie [Beveiligingsbulletin APSB22-38 van de Adobe](https://helpx.adobe.com/security/products/magento/apsb22-38.html).
-
 
 ### Toepassen `AC-3022.patch` DHL blijft aanbieden als scheepvaartmaatschappij
 
@@ -39,7 +39,6 @@ Voor de recentste informatie over de veiligheidsinsectenmoeilijke situaties, zie
 ### Toepassen `AC-3022.patch` DHL blijft aanbieden als scheepvaartmaatschappij
 
 DHL heeft schemaversie 6.2 geïntroduceerd en zal schemaversie 6.0 in de nabije toekomst verwerpen. Adobe Commerce 2.4.4 en eerdere versies die de integratie van DHL steunen slechts versie 6.0. Merchants die deze versies opstellen zouden moeten toepassen `AC-3022.patch` zo snel mogelijk DHL als scheepvaartmaatschappij aan te bieden. Zie de [Een patch toepassen om DHL als scheepvaartmaatschappij te blijven aanbieden](https://support.magento.com/hc/en-us/articles/7707818131597-Apply-a-patch-to-continue-offering-DHL-as-shipping-carrier) Het artikel van de Kennisbank voor informatie over het downloaden en het installeren van de flard.
-
 
 ### Beveiligingsmarkeringen
 
@@ -65,7 +64,6 @@ De Adobe Commerce 2.4.3-p1-beveiligingsrelease biedt oplossingen voor beveiligin
 
 Voor de recentste informatie over de veiligheidsinsectenmoeilijke situaties, zie [Beveiligingsbulletin APSB21-86 van de Adobe](https://helpx.adobe.com/security/products/magento/apsb21-86.html). De flardversie verstrekt ook insectenmoeilijke situaties voor [Braintree](https://experienceleague.adobe.com/docs/commerce-admin/stores-sales/payments/braintree.html), [Klarna](https://marketplace.magento.com/klarna-m2-klarna.html), en [Vertex](https://marketplace.magento.com/vertexinc-vertex-tax-module.html) door de leverancier ontwikkelde extensies.
 
-
 ### Toepassen `AC-3022.patch` DHL blijft aanbieden als scheepvaartmaatschappij
 
 DHL heeft schemaversie 6.2 geïntroduceerd en zal schemaversie 6.0 in de nabije toekomst verwerpen. Adobe Commerce 2.4.4 en eerdere versies die de integratie van DHL steunen slechts versie 6.0. Merchants die deze versies opstellen zouden moeten toepassen `AC-3022.patch` zo snel mogelijk DHL als scheepvaartmaatschappij aan te bieden. Zie de [Een patch toepassen om DHL als scheepvaartmaatschappij te blijven aanbieden](https://support.magento.com/hc/en-us/articles/7707818131597-Apply-a-patch-to-continue-offering-DHL-as-shipping-carrier) Het artikel van de Kennisbank voor informatie over het downloaden en het installeren van de flard.
@@ -87,4 +85,3 @@ Deze release bevat de volgende hotfix en alle hotfixes die zijn vrijgegeven voor
 **Onlangs gebruikte kwetsbaarheden voor penetratietest** zijn in deze release opgelost. <!-- MC-42431-->
 
 De niet-ondersteunde bronexpressie `unsafe-inline` is verwijderd uit het inhoudsbeveiligingsbeleid `frame-ancestors` richtlijn. [GitHub-33101](https://github.com/magento/magento2/issues/33101)<!-- MC-42632-->
-
