@@ -1,7 +1,7 @@
 ---
-source-git-commit: 19d19ef385cf4aaee3a255930af8e6d3b81de23a
+source-git-commit: 1f8fda87e0d39fdcf2372f72373a0b2ea486d25a
 workflow-type: tm+mt
-source-wordcount: '21169'
+source-wordcount: '21185'
 ht-degree: 0%
 
 ---
@@ -11,7 +11,7 @@ ht-degree: 0%
 
 <!-- The template to render with above values -->
 
-**Versie**: 2.4.7
+**Versie**: 2.4.7-p1
 
 Deze naslaggids bevat 141 opdrachten die beschikbaar zijn via de `bin/magento` opdrachtregelprogramma.
 De eerste lijst wordt automatisch gegenereerd met de opdracht `bin/magento list` op Adobe Commerce.
@@ -3996,7 +3996,7 @@ Geen interactieve vraag stellen
 ## `events:subscribe`
 
 ```bash
-bin/magento events:subscribe [-f|--force] [--fields FIELDS] [--parent PARENT] [--rules RULES] [-p|--priority] [-d|--destination DESTINATION] [--] <event-code>
+bin/magento events:subscribe [-f|--force] [--fields FIELDS] [--parent PARENT] [--rules RULES] [-p|--priority] [-d|--destination DESTINATION] [--hipaaAuditRequired] [--] <event-code>
 ```
 
 Abonneren op de gebeurtenis
@@ -4049,6 +4049,13 @@ De bestemming van deze gebeurtenis. Geef deze optie op voor de gebeurtenissen di
 
 - Standaard: `default`
 - Vereist een waarde
+
+### `--hipaaAuditRequired`
+
+Geeft aan dat de gebeurtenis gegevens bevat die worden gecontroleerd door HIPAA.
+
+- Standaard: `false`
+- Accepteert geen waarde
 
 ### `--help`, `-h`
 
