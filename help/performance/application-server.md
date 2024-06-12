@@ -2,9 +2,9 @@
 title: GraphQL Application Server
 description: Volg deze instructies om de GraphQL Application Server in te schakelen bij uw Adobe Commerce-implementatie.
 exl-id: 9b223d92-0040-4196-893b-2cf52245ec33
-source-git-commit: 70d86569bef5c656fff3a8c6b4af142c81c81f10
+source-git-commit: c2f48db87f40498a84b2bf41569bb46202565701
 workflow-type: tm+mt
-source-wordcount: '2079'
+source-wordcount: '2088'
 ht-degree: 0%
 
 ---
@@ -12,7 +12,7 @@ ht-degree: 0%
 
 # GraphQL Application Server
 
-Met de Commerce GraphQL Application Server kan Adobe Commerce de status handhaven bij de Commerce GraphQL API-aanvragen. De Server van de Toepassing van GraphQL, die op de uitbreiding van de Steekproef wordt voortgebouwd, werkt als proces met arbeidersdraden die verzoekverwerking behandelen. GraphQL Application Server bewaart de status van een bootstrapped toepassing bij GraphQL API-aanvragen en verbetert de verwerking van aanvragen en de algehele productprestaties. API-aanvragen worden aanzienlijk efficiënter.
+Met de Commerce GraphQL Application Server kan Adobe Commerce de status onderhouden van Commerce GraphQL API-aanvragen. De Server van de Toepassing van GraphQL, die op de uitbreiding van de Steekproef wordt voortgebouwd, werkt als proces met arbeidersdraden die verzoekverwerking behandelen. GraphQL Application Server bewaart de status van een bootstrapped toepassing bij GraphQL API-aanvragen en verbetert de verwerking van aanvragen en de algehele productprestaties. API-aanvragen worden aanzienlijk efficiënter.
 
 GraphQL Application Server is alleen beschikbaar voor Adobe Commerce. Het is niet beschikbaar voor Magento Open Source. U moet [een Adobe Commerce-ondersteuning verzenden](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide) ticket om GraphQL Application Server in te schakelen voor Pro-projecten.
 
@@ -22,7 +22,7 @@ GraphQL Application Server is alleen beschikbaar voor Adobe Commerce. Het is nie
 
 ## Architectuur
 
-GraphQL Application Server onderhoudt de status tussen GraphQL API-aanvragen voor handel en elimineert de noodzaak van bootstrapping. Door de status van de toepassing over alle processen te delen, worden GraphQL-verzoeken aanzienlijk efficiënter, waardoor de responstijden met maximaal 30% afnemen.
+GraphQL Application Server onderhoudt de status tussen Commerce GraphQL API-aanvragen en maakt bootstrapping overbodig. Door de status van de toepassing over alle processen te delen, worden GraphQL-verzoeken aanzienlijk efficiënter, waardoor de responstijden met maximaal 30% afnemen.
 
 Het PHP-uitvoeringsmodel zonder delen biedt een uitdaging vanuit het perspectief van latentie, omdat voor elke aanvraag de overvulling van het framework vereist is. Dit bootstrapping proces omvat tijdrovende taken zoals lezingsconfiguratie, vestiging het laarzentrekkerproces, en het creëren van de voorwerpen van de de dienstklasse.
 
@@ -53,7 +53,7 @@ De `ApplicationServer` module (`Magento/ApplicationServer/`) schakelt GraphQL Ap
 Nadat de eigenschap van de Server van de Toepassing op uw Proproject wordt toegelaten, voltooi de volgende stappen alvorens de Server van de Toepassing van GraphQL op te stellen:
 
 1. Adobe Commerce implementeren op cloudinfrastructuur met behulp van de cloudsjabloon van de [2.4.7 Aangepaste vertakking](https://github.com/magento/magento-cloud/tree/2.4.7-appserver).
-1. Zorg ervoor dat al uw aanpassingen en uitbreidingen van de Handel zijn [compatibel](https://developer.adobe.com/commerce/php/development/components/app-server/) met GraphQL Application Server.
+1. Zorg ervoor dat al uw Commerce-aanpassingen en -extensies [compatibel](https://developer.adobe.com/commerce/php/development/components/app-server/) met GraphQL Application Server.
 1. Clone your Commerce Cloud project.
 1. Pas indien nodig de instellingen in het bestand &#39;application-server/nginx.conf.sample&#39; aan.
 1. Plaats de actieve sectie &#39;Web&#39; in `project_root/.magento.app.yaml` volledig.
@@ -66,6 +66,12 @@ Nadat de eigenschap van de Server van de Toepassing op uw Proproject wordt toege
            protocol: http
        commands:
            start: ./application-server/start.sh > var/log/application-server-status.log 2>&1
+   ```
+
+1. Zorg ervoor dat `/application-server/start.sh` is uitvoerbaar door het volgende bevel in werking te stellen:
+
+   ```bash
+   chmod +x application-server/start.sh
    ```
 
 1. Voeg met deze opdracht bijgewerkte bestanden toe aan de git-index:
@@ -93,7 +99,7 @@ git push
 Voltooi de volgende stappen alvorens de Server van de Toepassing van GraphQL op de projecten van de Aanzet op te stellen:
 
 1. Adobe Commerce implementeren op cloudinfrastructuur met behulp van de cloudsjabloon van de [2.4.7 Aangepaste vertakking](https://github.com/magento/magento-cloud/tree/2.4.7-appserver).
-1. Zorg ervoor dat al uw aanpassingen en uitbreidingen van de Handel met de Server van de Toepassing van GraphQL compatibel zijn.
+1. Zorg ervoor dat al uw Commerce-aanpassingen en -extensies compatibel zijn met GraphQL Application Server.
 1. Bevestig dat de `CRYPT_KEY` omgevingsvariabele wordt ingesteld voor uw instantie. U kunt de status van deze variabele controleren op het Cloud Project Portal (onboarding UI).
 1. Clone your Commerce Cloud project.
 1. Naam wijzigen `application-server/.magento/.magento.app.yaml.sample` tot `application-server/.magento/.magento.app.yaml` en pas indien nodig instellingen aan in .magento.app.yaml.
@@ -176,7 +182,7 @@ Voer de volgende stappen uit voordat u de `ApplicationServer` module:
 
 #### Nginx configureren
 
-Uw specifieke plaatsing van de Handel bepaalt hoe te om Nginx te vormen. In het algemeen wordt het Nginx-configuratiebestand standaard benoemd `nginx.conf` en wordt in een van deze directory&#39;s geplaatst: `/usr/local/nginx/conf`, `/etc/nginx`, of `/usr/local/etc/nginx`. Zie [Beginnerengids](https://nginx.org/en/docs/beginners_guide.html) voor meer informatie over het configureren van Nginx.
+Uw specifieke Commerce-implementatie bepaalt hoe u Nginx kunt configureren. In het algemeen wordt het Nginx-configuratiebestand standaard benoemd `nginx.conf` en wordt in een van deze directory&#39;s geplaatst: `/usr/local/nginx/conf`, `/etc/nginx`, of `/usr/local/etc/nginx`. Zie [Beginnerengids](https://nginx.org/en/docs/beginners_guide.html) voor meer informatie over het configureren van Nginx.
 
 Voorbeeld-Nginxconfiguratie:
 
