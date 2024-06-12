@@ -1,9 +1,9 @@
 ---
 title: Opmerkingen bij de release Adobe Commerce 2.4.7 Security Patch
 description: Leer meer over oplossingen voor beveiligingsproblemen, beveiligingsverbeteringen en andere beveiligingsupdates die zijn opgenomen in de beveiligingspatchreleases voor Adobe Commerce versie 2.4.7.
-source-git-commit: e7557f6eb32bec377f426b6de3bd00ab6cc4113c
+source-git-commit: 59a5306c8329ddc3ca2a2e086f5ebe81b49eab3a
 workflow-type: tm+mt
-source-wordcount: '210'
+source-wordcount: '213'
 ht-degree: 0%
 
 ---
@@ -19,10 +19,14 @@ De Adobe Commerce 2.4.7-p1 veiligheidsversie verstrekt veiligheidsinsectenmoeili
 
 Voor de recentste informatie over de veiligheidsinsectenmoeilijke situaties, zie [Beveiligingsbulletin APSB24-40 Adobe](https://helpx.adobe.com/security/products/magento/apsb24-40.html).
 
-## Beveiligingsmarkering
+### Beveiligingsmarkering
 
 Deze release bevat een update van de [instellingen voor eenmalige wachtwoorden (OTP)](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/security/2fa/security-two-factor-authentication#google) voor Google Authenticator om een fout op te lossen die door een [achterwaartse incompatibele wijziging](https://developer.adobe.com/commerce/php/development/backward-incompatible-changes/highlights/#new-system-configuration-validation-for-two-factor-authentication-otp_window-value) in 2.4.7. De beschrijving van de **[!UICONTROL OTP Window]** veld bevat nu een nauwkeurige uitleg van de instelling en de standaardwaarde is gewijzigd van `1` tot `29`.
 
-## Hotfixes die in deze release zijn opgenomen
+### Aanvullende beveiligingsverbeteringen
+
+{{$include /help/_includes/release-notes/2-4-7-security.md}}
+
+### Hotfixes die in deze release zijn opgenomen
 
 Adobe Commerce 2.4.7-p1 verhelpt een probleem dat is ontstaan in het bereik van de migratie van UPS-integratie van SOAP naar REST API. Dit probleem betrof klanten die buiten de VS verschepen en belette hen de Metric System/SI-metingen van kilo en centimeters voor pakketten te gebruiken om zendingen met UPS te maken. Zie de [Integratie van UPS-verzendmethoden van SOAP naar RESTful API](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/troubleshooting/known-issues-patches-attached/ups-shipping-method-integration-migration-from-soap-to-restful-api) kennisbank voor meer informatie .

@@ -2,9 +2,9 @@
 title: Opmerkingen bij de release van Adobe Commerce 2.4.4 Beveiligingspatches
 description: Leer meer over oplossingen voor beveiligingsproblemen, beveiligingsverbeteringen en andere beveiligingsupdates die zijn opgenomen in de beveiligingspatchreleases voor Adobe Commerce versie 2.4.4.
 exl-id: 136d7090-6bf2-41e3-8445-b07bdc67f12b
-source-git-commit: 7705e750a466ab134ae2616a40a32880ee0c45de
+source-git-commit: 59a5306c8329ddc3ca2a2e086f5ebe81b49eab3a
 workflow-type: tm+mt
-source-wordcount: '1429'
+source-wordcount: '1432'
 ht-degree: 0%
 
 ---
@@ -23,6 +23,10 @@ Voor de recentste informatie over de veiligheidsinsectenmoeilijke situaties, zie
 ### Platformupgrades
 
 * **Ondersteuning voor MariaDB 10.5**. Deze patchrelease introduceert compatibiliteit met MariaDB versie 10.5. Adobe Commerce is nog steeds compatibel met MariaDB-versie 10.4, maar de Adobe raadt u aan Adobe Commerce 2.4.4-p9 te gebruiken en alle aanstaande patchreleases (alleen voor de beveiliging van 2.4.4) alleen met MariaDB-versie 10.5, omdat het onderhoud van MariaDB 10.4 eindigt op 18 juni 2024. <!--AC-11530-->
+
+### Aanvullende beveiligingsverbeteringen
+
+{{$include /help/_includes/release-notes/2-4-7-security.md}}
 
 ## 2.4.4-p8
 
