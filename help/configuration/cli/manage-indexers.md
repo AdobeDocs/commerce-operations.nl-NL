@@ -1,10 +1,10 @@
 ---
 title: De indexen beheren
-description: Zie voorbeelden van hoe te om de indexen van de Handel te bekijken en te beheren.
+description: Zie voorbeelden van Commerce-indexen weergeven en beheren.
 exl-id: d2cd1399-231e-4c42-aa0c-c2ed5d7557a0
-source-git-commit: 602a1ef82fcb8d30ff027db0fe0aacb981c7e08e
+source-git-commit: 5e1684d4d910f2ea52e12eeccdc291a54372f8d6
 workflow-type: tm+mt
-source-wordcount: '943'
+source-wordcount: '951'
 ht-degree: 0%
 
 ---
@@ -117,7 +117,7 @@ Indexers zijn bereikbaar en multithread om het opnieuw indexeren in parallelle m
 
 In dit verband `dimension` de reikwijdte van de herindexering is, bijvoorbeeld `website` of slechts een specifieke `customer_group`.
 
-De parallellisering van de index beïnvloedt scoped slechts indexeerders, wat betekent de Handel de gegevens in veelvoudige lijsten verdeelt gebruikend indexer als zijn werkingsgebied in plaats van het houden van alle gegevens in één lijst.
+De parallellisering van de index beïnvloedt scoped slechts indexeerders, wat betekent Commerce de gegevens in veelvoudige lijsten splitst gebruikend indexer als zijn werkingsgebied in plaats van het houden van alle gegevens in één lijst.
 
 U kunt de volgende indexen in parallelle modus uitvoeren:
 
@@ -266,7 +266,7 @@ De indexeerdergerelateerde databasetriggers worden toegevoegd wanneer de indexee
 
 ### Indexeringsstatus instellen
 
-Met deze opdracht kunnen beheerders de operationele status van een of meer indexen wijzigen en de systeemprestaties optimaliseren tijdens uitgebreide bewerkingen, zoals het importeren, bijwerken of onderhouden van gegevens.
+De `bin/magento indexer:set-status` werd geïntroduceerd in Adobe Commerce 2.4.7. Hiermee kunnen beheerders de operationele status van een of meer indexen wijzigen en de systeemprestaties optimaliseren tijdens uitgebreide bewerkingen, zoals het importeren, bijwerken of onderhouden van gegevens.
 
 Command syntaxis:
 
