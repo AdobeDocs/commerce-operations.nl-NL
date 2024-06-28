@@ -2,9 +2,9 @@
 title: Opmerkingen bij de release Adobe Commerce 2.4.6 Security Patch
 description: Leer meer over oplossingen voor beveiligingsproblemen, beveiligingsverbeteringen en andere beveiligingsupdates die zijn opgenomen in de beveiligingspatchreleases voor Adobe Commerce versie 2.4.6.
 exl-id: cde096ac-d192-490d-873a-475996c474ff
-source-git-commit: 59a5306c8329ddc3ca2a2e086f5ebe81b49eab3a
+source-git-commit: e5f659cc3bee2d116222c15549fb3d6094644531
 workflow-type: tm+mt
-source-wordcount: '1137'
+source-wordcount: '1160'
 ht-degree: 0%
 
 ---
@@ -19,6 +19,11 @@ ht-degree: 0%
 De beveiligingsrelease van Adobe Commerce 2.4.6-p6 biedt oplossingen voor beveiligingsproblemen voor kwetsbaarheden die zijn geïdentificeerd in eerdere versies van 2.4.6.
 
 Voor de recentste informatie over de veiligheidsinsectenmoeilijke situaties, zie [Beveiligingsbulletin APSB24-40 Adobe](https://helpx.adobe.com/security/products/magento/apsb24-40.html).
+
+### Beveiligingsmarkering
+
+Voor compatibiliteit met Commerce versie 2.4.6-p6 moeten handelaren met de Adobe Commerce B2B-extensie een upgrade uitvoeren naar [B2B versie 1.4.2-p1](https://experienceleague.adobe.com/docs/commerce-admin/b2b/release-notes#b2b-v142p1.html).
+
 
 ### Aanvullende beveiligingsverbeteringen
 
@@ -55,7 +60,7 @@ Voor de recentste informatie over de veiligheidsmoeilijke situaties, zie [Beveil
 
 ### Beveiligingsmarkeringen
 
-Deze versie introduceert een nieuwe instelling voor de volledige paginacacheconfiguratie die helpt de risico&#39;s te beperken die aan de `{BASE-URL}/page_cache/block/esi HTTP` eindpunt. Dit eindpunt steunt onbeperkte, dynamisch geladen inhoudsfragmenten van de de lay-outhandvatten van de Handel en blokstructuren. De nieuwe **[!UICONTROL Handles Param]** configuratie het plaatsen plaatst de waarde van dit eindpunt `handles` parameter, die het maximaal toegestane aantal handgrepen per API bepaalt. De standaardwaarde van deze eigenschap is 100. Handelaren kunnen deze waarde wijzigen via de beheerfunctie (**[!UICONTROL Stores]** > **[!UICONTROL Settings:Configuration]** > **[!UICONTROL System]** > **[!UICONTROL Full Page Cache]** > **[!UICONTROL Handles Param]**. <!-- AC-9113 -->
+Deze versie introduceert een nieuwe instelling voor de volledige paginacacheconfiguratie die helpt de risico&#39;s te beperken die aan de `{BASE-URL}/page_cache/block/esi HTTP` eindpunt. Dit eindpunt steunt onbeperkte, dynamisch geladen inhoudsfragmenten van de lay-outhandvatten van Commerce en blokstructuren. De nieuwe **[!UICONTROL Handles Param]** configuratie het plaatsen plaatst de waarde van dit eindpunt `handles` parameter, die het maximaal toegestane aantal handgrepen per API bepaalt. De standaardwaarde van deze eigenschap is 100. Handelaren kunnen deze waarde wijzigen via de beheerfunctie (**[!UICONTROL Stores]** > **[!UICONTROL Settings:Configuration]** > **[!UICONTROL System]** > **[!UICONTROL Full Page Cache]** > **[!UICONTROL Handles Param]**. <!-- AC-9113 -->
 
 ### Hotfixes die in deze release zijn opgenomen
 
