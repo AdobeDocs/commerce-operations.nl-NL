@@ -2,7 +2,7 @@
 title: Opmerkingen bij de release Adobe Commerce 2.4.6 Security Patch
 description: Leer meer over oplossingen voor beveiligingsproblemen, beveiligingsverbeteringen en andere beveiligingsupdates die zijn opgenomen in de beveiligingspatchreleases voor Adobe Commerce versie 2.4.6.
 exl-id: cde096ac-d192-490d-873a-475996c474ff
-source-git-commit: e5f659cc3bee2d116222c15549fb3d6094644531
+source-git-commit: 5c361b0cdd0f06aed394acf2d811db35ec1d8471
 workflow-type: tm+mt
 source-wordcount: '1160'
 ht-degree: 0%
@@ -22,8 +22,7 @@ Voor de recentste informatie over de veiligheidsinsectenmoeilijke situaties, zie
 
 ### Beveiligingsmarkering
 
-Voor verenigbaarheid met versie 2.4.6-p6 van Commerce, moeten de handelaren die de uitbreiding hebben van Adobe Commerce B2B aan [ B2B versie 1.4.2-p1 ](https://experienceleague.adobe.com/docs/commerce-admin/b2b/release-notes#b2b-v142p1.html) bevorderen.
-
+Voor verenigbaarheid met versie 2.4.6-p6 van Commerce, moeten de handelaren die de uitbreiding hebben van Adobe Commerce B2B aan [ B2B versie 1.4.2-p1 ](https://experienceleague.adobe.com/en/docs/commerce-admin/b2b/release-notes#b2b-v142-p1) bevorderen.
 
 ### Aanvullende beveiligingsverbeteringen
 
