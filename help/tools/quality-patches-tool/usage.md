@@ -1,6 +1,6 @@
 ---
 title: Gebruik
-description: Leer hoe u de [!DNL Quality Patches Tool].
+description: Leer hoe te om  [!DNL Quality Patches Tool] te gebruiken.
 exl-id: f9ad37e9-2d0f-4bc8-a98b-6d60b6f56d42
 feature: Configuration, Install
 source-git-commit: ddf988826c29b4ebf054a4d4fb5f4c285662ef4e
@@ -12,23 +12,23 @@ ht-degree: 0%
 
 # Gebruik
 
-De [[!DNL Quality Patches Tool]](https://github.com/magento/quality-patches) levert afzonderlijke patches die door de Adobe en de Magento Open Source gemeenschap zijn ontwikkeld. Hiermee kunt u algemene informatie over alle afzonderlijke patches die beschikbaar zijn voor de geïnstalleerde versie van Adobe Commerce, toepassen, herstellen en weergeven. U kunt patches toepassen op Adobe Commerce-projecten, ongeacht wie de patch heeft ontwikkeld. U kunt bijvoorbeeld een patch toepassen die door de gemeenschap is ontwikkeld op Adobe Commerce-projecten.
+[[!DNL Quality Patches Tool] ](https://github.com/magento/quality-patches) levert individuele die flarden door Adobe en de gemeenschap van de Magento Open Source worden ontwikkeld. Hiermee kunt u algemene informatie over alle afzonderlijke patches die beschikbaar zijn voor de geïnstalleerde versie van Adobe Commerce, toepassen, herstellen en weergeven. U kunt patches toepassen op Adobe Commerce-projecten, ongeacht wie de patch heeft ontwikkeld. U kunt bijvoorbeeld een patch toepassen die door de gemeenschap is ontwikkeld op Adobe Commerce-projecten.
 
-Dit bekijken [technische video](https://experienceleague.adobe.com/docs/commerce-learn/tutorials/tools/quality-patch-tool.html?lang=en) en leer hoe u het gereedschap Kwaliteitspatches voor Adobe Commerce kunt gebruiken.
+Bekijk deze [ technische video ](https://experienceleague.adobe.com/docs/commerce-learn/tutorials/tools/quality-patch-tool.html?lang=en) en leer hoe te om het Hulpmiddel van de Patches van de Kwaliteit voor Adobe Commerce te gebruiken.
 
 >[!INFO]
 >
->Zie [Afzonderlijke patches toepassen](#apply-individual-patches) voor instructies over het toepassen van patches op uw Adobe Commerce-projecten. Zie [[!DNL Quality Patches Tool]: Zoeken naar patches](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html) om een volledige lijst met vrijgegeven patches te bekijken.
+>Zie [ individuele flarden ](#apply-individual-patches) voor instructies op het toepassen van flarden op uw projecten van Adobe Commerce toepassen. Zie [[!DNL Quality Patches Tool]: Zoeken naar patches ](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html) voor een volledige lijst met vrijgegeven patches.
 
 >[!WARNING]
 >
->Het wordt niet aanbevolen om de [!DNL Quality Patches Tool] om grote aantallen patches toe te passen, omdat hierdoor de code complexer wordt en de upgrade naar een nieuwe versie moeilijker wordt.
+>Het wordt afgeraden de [!DNL Quality Patches Tool] te gebruiken om grote aantallen patches toe te passen, omdat hierdoor de code complexer wordt en de upgrade naar een nieuwe versie moeilijker wordt.
 
 ## Installeren
 
 >[!INFO]
 >
->Als dit nog niet het geval is, moet u [[!DNL Git]](https://github.com/git-guides/install-git) of [Reparatie](https://man7.org/linux/man-pages/man1/patch.1.html) voordat u de [!DNL Quality Patches Tool]. Voeg de `magento/quality-patches` Composer-pakket naar uw `composer.json` bestand:
+>Als het niet reeds geïnstalleerd is, moet u [[!DNL Git] installeren ](https://github.com/git-guides/install-git) of [ Reparatie ](https://man7.org/linux/man-pages/man1/patch.1.html) alvorens [!DNL Quality Patches Tool] te installeren. Voeg het `magento/quality-patches` Composer-pakket toe aan uw `composer.json` -bestand:
 
 ```bash
 composer require magento/quality-patches
@@ -46,45 +46,45 @@ De uitvoer ziet er ongeveer als volgt uit:
 
 | Id | Titel | Type | Status | Details |
 |--- |--- |--- |--- |--- |
-| MAGECLOUD-5069 | FPC wordt uitgeschakeld tijdens implementaties | Optioneel | Niet toegepast | Betrokken onderdelen:<br> - magento/module-page-cache |
-| MCLOUD-5650 | Implementatieconfiguratie bewaren na lezen van bestand | Optioneel | Niet toegepast | Betrokken onderdelen:<br> - magento/framework |
+| MAGECLOUD-5069 | FPC wordt uitgeschakeld tijdens implementaties | Optioneel | Niet toegepast | Betrokken componenten:<br> - magento/module-page-cache |
+| MCLOUD-5650 | Implementatieconfiguratie bewaren na lezen van bestand | Optioneel | Niet toegepast | Betrokken componenten:<br> - magento/framework |
 | MCLOUD-5684 | Paginering werkt niet - product_list_limit=all | Optioneel | Niet toegepast | Betrokken componenten: - magento/module-elasticsearch |
-| MCLOUD-5837 | Probleem met taakverdelingsmechanisme verhelpen | Vervangen | Toegepast | Aanbevolen vervanging: MC-1 <br> Betrokken onderdelen: - magento/framework |
-| BUNDLE-2554 | Fout in betalingsgegevens instellen | Optioneel | Niet toegepast | Betrokken onderdelen: <br>- amzn/amazon-pay-module |
-| MC-1 | Opgeloste problemen 1 | Optioneel | Toegepast | Betrokken onderdelen: <br> - magento/module-cms |
-| MC-2 | Opgeloste problemen 2 | Optioneel | Niet toegepast | Betrokken onderdelen: <br> - magento/module-cms |
-| MC-3 | Opgeloste problemen 3 | Optioneel | Niet toegepast | Vereiste patches:<br> - MC-2 <br>Betrokken onderdelen: <br>- magento/module-cms |
-| MC-3-V2 | Bijgewerkte oplossing voor probleem 3; vervangt MC-3-patch | Optioneel | NVT | Betrokken onderdelen:  <br>- magento/module-cms |
+| MCLOUD-5837 | Probleem met taakverdelingsmechanisme verhelpen | Vervangen | Toegepast | Aanbevolen vervanging: MC-1 <br> Betrokken componenten: - magento/framework |
+| BUNDLE-2554 | Fout in betalingsgegevens instellen | Optioneel | Niet toegepast | Betrokken componenten: <br>- amzn/amazon-pay-module |
+| MC-1 | Opgeloste problemen 1 | Optioneel | Toegepast | Betrokken componenten: <br> - magento/module-cms |
+| MC-2 | Opgeloste problemen 2 | Optioneel | Niet toegepast | Betrokken componenten: <br> - magento/module-cms |
+| MC-3 | Opgeloste problemen 3 | Optioneel | Niet toegepast | Vereiste flarden:<br> - mc-2 <br> Betrokken componenten: <br> - magento/module-cms |
+| MC-3-V2 | Bijgewerkte oplossing voor probleem 3; vervangt MC-3-patch | Optioneel | NVT | Betrokken componenten: <br> magento/module-cms |
 
 Adobe Commerce 2.3.5.
 
 De statustabel bevat:
 
 - **Type**:
-   - `Optional` — Alle patches van de [!DNL Quality Patches Tool] en de [Commerce on Cloud Infrastructure Guide > Patches toepassen](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html) -pakket is optioneel voor Adobe Commerce-installaties.
-   - `Deprecated` - Adobe heeft de afzonderlijke pleister vervangen. Als u de pleister hebt aangebracht, raden wij u aan deze weer in te voeren. De herstelbewerking verwijdert de patch ook uit de statustabel.
+   - `Optional` — Alle flarden van [!DNL Quality Patches Tool] en [ Commerce op de Gids van de Infrastructuur van de Wolk > passen flarden ](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html) pakket toe zijn facultatief voor de installaties van Adobe Commerce.
+   - `Deprecated` — Adobe heeft de afzonderlijke patch vervangen. Als u de pleister hebt aangebracht, raden wij u aan deze weer in te voeren. De herstelbewerking verwijdert de patch ook uit de statustabel.
 
 - **Status**:
-   - `Applied` — De pleister is aangebracht.
-   - `Not applied` — De pleister is niet aangebracht.
+   - `Applied` — De patch is toegepast.
+   - `Not applied` — De patch is niet toegepast.
    - `N/A` — De status van de patch kan niet worden gedefinieerd vanwege conflicten.
 
 - **Details**:
-   - `Affected components` — De lijst van betrokken modules.
-   - `Required patches` — De lijst van flarden die voor een aangewezen flard moeten worden toegepast behoorlijk (gebiedsdelen) te werken.
-   - `Recommended replacement` — De pleister die een aanbevolen vervanging voor een vervangen pleister is.
+   - `Affected components` — De lijst met betrokken modules.
+   - `Required patches` — De lijst met patches die moeten worden toegepast om een aangegeven patch correct te laten werken (afhankelijkheden).
+   - `Recommended replacement` — De patch die een aanbevolen vervanging voor een vervangen patch is.
 
 >[!INFO]
 >
->Nadat u de upgrade naar een nieuwe versie van Adobe Commerce hebt uitgevoerd, moet u de patches opnieuw toepassen als de patches niet in de nieuwe versie zijn opgenomen. Zie [Patches opnieuw toepassen na een upgrade](#re-apply-patches-after-an-upgrade).
+>Nadat u de upgrade naar een nieuwe versie van Adobe Commerce hebt uitgevoerd, moet u de patches opnieuw toepassen als de patches niet in de nieuwe versie zijn opgenomen. Zie [ passen flarden na een verbetering ](#re-apply-patches-after-an-upgrade) opnieuw toe.
 
 ## Afzonderlijke patches toepassen {#apply-individual-patches}
 
 >[!WARNING]
 >
->Het is aan te raden om alle patches in een testomgeving of ontwikkelomgeving te testen voordat ze worden geïmplementeerd. Het wordt ook aanbevolen een back-up van uw gegevens te maken voordat u een patch toepast. Zie [Back-up maken van het bestandssysteem, de media en de database en deze terugdraaien](https://experienceleague.adobe.com/docs/commerce-operations/installation-guide/tutorials/backup.html).
+>Het is aan te raden om alle patches in een testomgeving of ontwikkelomgeving te testen voordat ze worden geïmplementeerd. Het wordt ook aanbevolen een back-up van uw gegevens te maken voordat u een patch toepast. Zie [ Steun en terugdraaiend het dossiersysteem, media, en gegevensbestand ](https://experienceleague.adobe.com/docs/commerce-operations/installation-guide/tutorials/backup.html).
 
-Als u één patch wilt toepassen, voert u de volgende opdracht uit, waarbij `MAGETWO-XXXX` is de patch-id die is opgegeven in de statustabel:
+Als u één patch wilt toepassen, voert u de volgende opdracht uit, waarbij `MAGETWO-XXXX` de patch-id is die in de statustabel is opgegeven:
 
 ```bash
 ./vendor/bin/magento-patches apply MAGETWO-XXXX
@@ -104,15 +104,15 @@ U moet de cache wissen nadat u patches hebt toegepast om de wijzigingen in de Ad
 
 >[!INFO]
 >
->Bewaar een lijst met toegepaste patches op een aparte locatie. Mogelijk moet u een aantal van deze programma&#39;s opnieuw toepassen nadat u een upgrade hebt uitgevoerd naar een nieuwe versie van Adobe Commerce. Zie [Patches opnieuw toepassen na een upgrade](#re-apply-patches-after-an-upgrade).
+>Bewaar een lijst met toegepaste patches op een aparte locatie. Mogelijk moet u een aantal van deze programma&#39;s opnieuw toepassen nadat u een upgrade hebt uitgevoerd naar een nieuwe versie van Adobe Commerce. Zie [ passen flarden na een verbetering ](#re-apply-patches-after-an-upgrade) opnieuw toe.
 
 ## Afzonderlijke patches herstellen
 
 >[!WARNING]
 >
->Het is aan te raden om alle patches in een testomgeving of ontwikkelomgeving te testen voordat ze worden geïmplementeerd. Het wordt ook aanbevolen een back-up van uw gegevens te maken voordat u een patch toepast. Zie [Back-up maken van het bestandssysteem, de media en de database en deze terugdraaien](https://experienceleague.adobe.com/docs/commerce-operations/installation-guide/tutorials/backup.html).
+>Het is aan te raden om alle patches in een testomgeving of ontwikkelomgeving te testen voordat ze worden geïmplementeerd. Het wordt ook aanbevolen een back-up van uw gegevens te maken voordat u een patch toepast. Zie [ Steun en terugdraaiend het dossiersysteem, media, en gegevensbestand ](https://experienceleague.adobe.com/docs/commerce-operations/installation-guide/tutorials/backup.html).
 
-Om één enkel flard terug te keren, stel het volgende bevel in werking waar `MAGETWO-XXXX` is de patch-id die is opgegeven in de statustabel:
+Als u één patch wilt herstellen, voert u de volgende opdracht uit, waarbij `MAGETWO-XXXX` de patch-id is die in de statustabel is opgegeven:
 
 ```bash
 ./vendor/bin/magento-patches revert MAGETWO-XXXX
@@ -138,7 +138,7 @@ U moet de cache wissen nadat u de patches hebt teruggedraaid om de wijzigingen i
 
 ## Updates ophalen
 
-Adobe Commerce brengt regelmatig nieuwe afzonderlijke patches uit. U moet de [!DNL Quality Patches Tool] voor nieuwe afzonderlijke patches:
+Adobe Commerce brengt regelmatig nieuwe afzonderlijke patches uit. U moet de [!DNL Quality Patches Tool] bijwerken voor nieuwe afzonderlijke patches:
 
 ```bash
 composer update magento/quality-patches
@@ -160,13 +160,13 @@ Wanneer u een upgrade uitvoert naar een nieuwe versie van Adobe Commerce, moet u
 
 Patches opnieuw toepassen:
 
-1. Werk de [!DNL Quality Patches Tool]:
+1. Werk [!DNL Quality Patches Tool] bij:
 
    ```bash
    composer update magento/quality-patches.
    ```
 
-1. Open de lijst met eerder toegepaste pleisters, die werd aanbevolen in [Afzonderlijke patches toepassen](#apply-individual-patches).
+1. Open de lijst van eerder toegepaste flarden, die in [ werd geadviseerd individuele flarden ](#apply-individual-patches) toepassen.
 
 1. Pas de pleisters toe:
 
@@ -184,8 +184,8 @@ Patches opnieuw toepassen:
 
    >[!INFO]
    >
-   >Wanneer u de `status` , worden de patches die in de nieuwe versie waren opgenomen niet meer weergegeven in de tabel met beschikbare patches.
+   >Wanneer u de opdracht `status` uitvoert, worden de patches die in de nieuwe versie zijn opgenomen, niet meer weergegeven in de tabel met beschikbare patches.
 
 ## Logboekregistratie
 
-De [!DNL Quality Patches Tool] Hiermee worden alle bewerkingen in het dialoogvenster `<Magento_root>/var/log/patch.log` bestand.
+In [!DNL Quality Patches Tool] worden alle bewerkingen in het `<Magento_root>/var/log/patch.log` -bestand geregistreerd.

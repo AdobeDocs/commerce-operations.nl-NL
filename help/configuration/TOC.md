@@ -13,7 +13,7 @@ ht-degree: 0%
 # Configuratiegids {#configuration-guide}
 
 + [Overzicht](overview.md)
-+ Algemene instelling {#setup}
++ Algemene instellingen {#setup}
    + [Initialisatie en bootstrap van toepassingen](bootstrap/initialization.md)
    + [Toepassingsmodi](bootstrap/application-modes.md)
    + [Parameters Bootstrap](bootstrap/set-parameters.md)
@@ -100,7 +100,7 @@ ht-degree: 0%
    + [Cron jobs and groups](cron/custom-cron.md)
    + [Referentie voor curven aanpassen](cron/custom-cron-reference.md)
    + [Een aangepaste uitsnijdtaak configureren](cron/custom-cron-tutorial.md)
-+ Logboeken {#logs}
++ Logs {#logs}
    + [Aangepaste logbestanden](logs/custom-logging.md)
    + [Aanmeldingsinterface](logs/logger-interface.md)
    + [Logboekdatabaseactiviteit](logs/database-activity.md)
@@ -146,4 +146,4 @@ ht-degree: 0%
       + [Gesplitste database verifiëren](storage/multi-master-verify.md)
       + [Database-replicatie](storage/multi-master-replication.md)
       + [Eén database herstellen](storage/revert-split-database.md)
-+ [Terugkeren naar operationele hulplijnen](https://experienceleague.adobe.com/docs/commerce-operations/operational-guides/home.html)
++ [ Terugkeer aan Operationele Gidsen ](https://experienceleague.adobe.com/docs/commerce-operations/operational-guides/home.html)

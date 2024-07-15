@@ -6,7 +6,7 @@ feature: Best Practices
 exl-id: 41c0cb87-3371-48a7-9913-264f3eea8d8d
 source-git-commit: 94d7a57dcd006251e8eefbdb4ec3a5e140bf43f9
 workflow-type: tm+mt
-source-wordcount: '148'
+source-wordcount: '135'
 ht-degree: 0%
 
 ---
@@ -24,14 +24,14 @@ Kritieke acties leiden tot invalidatie en herindexering van het cachegeheugen, w
 
 ## Betrokken producten en versies
 
-[Alle ondersteunde versies](../../../release/versions.md) van:
+[ Alle gesteunde versies ](../../../release/versions.md) van:
 
 - Adobe Commerce over cloudinfrastructuur
 - Adobe Commerce ter plaatse
 
 ## Aanvullende informatie
 
-- [Aanbevolen procedures voor het in cache plaatsen](https://docs.magento.com/user-guide/system/cache-management.html#best-practices-for-caching)
-- [Persoonlijke inhoud: persoonlijke inhoud ongeldig maken](https://developer.adobe.com/commerce/php/development/cache/page/private-content/#invalidate-private-content)
+- [ Beste praktijken voor caching ](https://docs.magento.com/user-guide/system/cache-management.html#best-practices-for-caching)
+- [ Privé inhoud: Valideer privé inhoud ](https://developer.adobe.com/commerce/php/development/cache/page/private-content/#invalidate-private-content)
 - [Hardware-aanbevelingen: Caches](../../../performance/hardware.md#caches)
 - [Geavanceerde instellingen: Redis instellen](../../../performance/advanced-setup.md#set-up-redis)

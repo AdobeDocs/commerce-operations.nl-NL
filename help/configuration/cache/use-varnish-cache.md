@@ -16,7 +16,7 @@ Dit onderwerp bespreekt de grondbeginselen van het gebruiken van Varnish als web
 
 ## Varnish puring
 
-Volgens [Varnish-documentatie](https://www.varnish-cache.org/docs/trunk/users-guide/purging.html), *zuiveren* Dit is wat er gebeurt als u een object uit de cache haalt en het samen met de varianten verwijdert.&quot; Een vernis is vergelijkbaar met een opdracht voor het opschonen van een cache (of klikken op **Cache van Magento leegmaken** in de Admin).
+Volgens [ de documentatie van Varnish ](https://www.varnish-cache.org/docs/trunk/users-guide/purging.html), &quot;A *zuivering* is wat gebeurt wanneer u een voorwerp uit het geheime voorgeheugen plukt en het samen met zijn varianten verwerpen.&quot; Een lade van de Varkenshaar is gelijkaardig aan een geheim voorgeheugenschoon bevel (of het klikken van **Ontruim Geheime voorgeheugen van het Magento** in Admin).
 
 Als u de Commerce cache schoonmaakt, leegmaakt of vernieuwt, wordt Varnish ook gezuiverd.
 
@@ -26,9 +26,9 @@ Nadat u Varnish hebt geïnstalleerd en geconfigureerd om met Commerce te werken,
 
   Alles wat u bijvoorbeeld doet in de Admin in:
 
-   - **VOORRADEN** > **Instellingen** > **Configuratie** > ALGEMEEN **Algemeen**
-   - **VOORRADEN** > **Instellingen** > **Configuratie** > ALGEMEEN **Valuta-instelling**
-   - **VOORRADEN** > **Instellingen** > **Configuratie** > ALGEMEEN **E-mailadressen van winkel**
+   - **BEWAART** > **Montages** > **Configuratie** > ALGEMEEN > **Algemeen**
+   - **BEWAART** > **Montages** > **Configuratie** > ALGEMEEN > **Opstelling van de Valuta**
+   - **BEWAART** > **Montages** > **Configuratie** > ALGEMEEN > **E-mailadressen van de opslag**
 
   Wanneer Commerce een dergelijke wijziging detecteert, wordt een bericht weergegeven waarin u wordt geïnformeerd de cache te vernieuwen.
 
@@ -38,15 +38,15 @@ Nadat u Varnish hebt geïnstalleerd en geconfigureerd om met Commerce te werken,
 
 - Broncode onderhouden.
 
-  U moet het cachegeheugen vernieuwen en ook regelmatig alles verwijderen in het dialoogvenster `generated/code` en `generated/metadata` mappen. Zie de volgende sectie voor informatie over het vernieuwen van de cache.
+  Vernieuw de cache en verwijder regelmatig alles in de mappen `generated/code` en `generated/metadata` . Zie de volgende sectie voor informatie over het vernieuwen van de cache.
 
 ## Commerce configureren om vernis te zuiveren
 
-Commerce zuivert Varnish gastheren nadat u de gastheren van Varnish gebruikend vormt [`magento setup:config:set`](https://devdocs.magento.com/guides/v2.4/reference/cli/magento.html#setupconfigset) gebruiken.
+Commerce zuivert de gastheren van Varnish nadat u de gastheren van Varnish gebruikend het [`magento setup:config:set` ](https://devdocs.magento.com/guides/v2.4/reference/cli/magento.html#setupconfigset) bevel vormt.
 
-U kunt de optionele parameter `--http-cache-hosts` parameter om een komma-gescheiden lijst van Varnish gastheren te specificeren en havens te luisteren. Vorm alle gastheren van Varnish, of u één of vele hebt. (Plaats geen spatie tussen de hosts.)
+U kunt de optionele parameter `--http-cache-hosts` gebruiken om een door komma&#39;s gescheiden lijst met varens-hosts op te geven en poorten te beluisteren. Vorm alle gastheren van Varnish, of u één of vele hebt. (Plaats geen spatie tussen de hosts.)
 
-De parameternotatie moet `<hostname or ip>:<listen port>`, waar u kunt weglaten `<listen port>` als het poort 80 is.
+De parameterindeling moet `<hostname or ip>:<listen port>` zijn, waarbij u `<listen port>` kunt weglaten als dit poort 80 is.
 
 Bijvoorbeeld:
 
@@ -54,8 +54,8 @@ Bijvoorbeeld:
 bin/magento setup:config:set --http-cache-hosts=192.0.2.100,192.0.2.155:6081
 ```
 
-U kunt Varnish gastheren dan zuiveren wanneer u het geheime voorgeheugen van Commerce (ook genoemd *schoonmaken* (de cache) in de beheerfunctie of via de opdrachtregel.
+U kunt Varnish gastheren dan zuiveren wanneer u het geheime voorgeheugen van Commerce (die ook als *wordt bedoeld schoonmaken* het geheime voorgeheugen) in Admin of het gebruiken van de bevellijn verfrist.
 
-Als u de cache wilt vernieuwen met behulp van de beheerfunctie, klikt u op **[!UICONTROL SYSTEM]** > Gereedschappen > **Cachebeheer** en klik vervolgens op **Cache van Magento leegmaken** boven aan de pagina. (U kunt ook afzonderlijke cachetypen vernieuwen.)
+Om het geheime voorgeheugen te verfrissen dat Admin gebruikt, klik **[!UICONTROL SYSTEM]** > Hulpmiddelen > **Beheer van het Geheime voorgeheugen**, dan klik **het Geheime voorgeheugen van het Magento** bij de bovenkant van de pagina. (U kunt ook afzonderlijke cachetypen vernieuwen.)
 
-Als u de cache wilt vernieuwen met behulp van de opdrachtregel, gebruikt u doorgaans de opdracht [`magento cache:clean <type>`](../cli/manage-cache.md#clean-and-flush-cache-types) gebruiken als de [eigenaar van bestandssysteem](../../installation/prerequisites/file-system/overview.md).
+Om het geheime voorgeheugen te verfrissen gebruikend de bevellijn, gebruikt u typisch het [`magento cache:clean <type>`](../cli/manage-cache.md#clean-and-flush-cache-types) bevel als [ eigenaar van het dossiersysteem ](../../installation/prerequisites/file-system/overview.md).

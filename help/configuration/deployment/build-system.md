@@ -1,11 +1,11 @@
 ---
 title: System Setup (Systeeminstellingen) bouwen
-description: Leer hoe te om Handel in een bouwstijlsysteem op te stellen.
+description: Leer hoe u Commerce in een build-systeem kunt implementeren.
 feature: Configuration, Build, Deploy
 exl-id: f6daf5c6-6d12-46b0-b775-76791bacea53
 source-git-commit: dcc283b901917e3681863370516771763ae87462
 workflow-type: tm+mt
-source-wordcount: '376'
+source-wordcount: '367'
 ht-degree: 0%
 
 ---
@@ -14,8 +14,8 @@ ht-degree: 0%
 
 U kunt één bouwstijlsysteem hebben dat aan de volgende vereisten voldoet:
 
-- Alle code van de Handel is onder broncontrole in de zelfde bewaarplaats zoals de ontwikkeling en productiesystemen
-- Controleer of alle volgende elementen aanwezig zijn: _inbegrepen_ bij broncontrole:
+- Alle Commerce-code staat onder broncontrole in dezelfde opslagplaats als de ontwikkelings- en productiesystemen
+- Zorg ervoor elk van het volgende _inbegrepen_ in broncontrole is:
 
    - `app/etc/config.php`
    - `generated` map (en submappen)
@@ -25,16 +25,16 @@ U kunt één bouwstijlsysteem hebben dat aan de volgende vereisten voldoet:
 
 - Hiervoor moet een compatibele PHP-versie zijn geïnstalleerd
 - Composer moet zijn geïnstalleerd
-- De eigenaar en machtigingen van het bestandssysteem zijn ingesteld zoals beschreven in [Vereiste voor uw ontwikkeling, bouw, en productiesystemen](../deployment/technical-details.md).
-- Het bouwstijlsysteem vereist geen Handel om worden geïnstalleerd, maar de code moet aan het beschikbaar zijn.
+- Het heeft bezit van het dossiersysteem en toestemmingen die zoals in [ worden besproken Vereiste voor uw ontwikkeling, bouwt, en productiesystemen ](../deployment/technical-details.md).
+- Voor het constructiesysteem hoeft Commerce niet te worden geïnstalleerd, maar de code moet wel beschikbaar zijn.
 
 >[!WARNING]
 >
->De databaseverbinding is niet vereist als deze al in `config.php`; zie [De configuratie exporteren](../cli/export-configuration.md). Anders is de databaseverbinding vereist.
+>De gegevensbestandverbinding wordt niet vereist als het reeds in `config.php` bevat is; zie [ de configuratie ](../cli/export-configuration.md) uitvoeren. Anders is de databaseverbinding vereist.
 
 >[!INFO]
 >
->De bouwstijlmachine kan op zijn eigen gastheer of op de zelfde gastheer zijn zoals een geïnstalleerd systeem van de Handel.
+>De bouwstijlmachine kan op zijn eigen gastheer of op de zelfde gastheer zijn zoals een geïnstalleerd systeem van Commerce.
 
 ## De ontwikkelcomputer configureren
 
@@ -55,7 +55,7 @@ Als er een fout wordt weergegeven, voert u de volgende stappen uit om Composer t
 
 Composer installeren:
 
-1. Verandering in of creeer een lege folder op uw server van de Handel.
+1. Wijzig of maak een lege map op uw Commerce-server.
 
 1. Voer de volgende opdrachten in:
 
@@ -67,18 +67,18 @@ Composer installeren:
    mv composer.phar /usr/local/bin/composer
    ```
 
-Voor extra installatieopties raadpleegt u de [Installatiedocumentatie van composer][composer].
+Voor extra installatieopties, zie de [ documentatie van de de installatieinstallatie van Composer ][composer].
 
 ### PHP installeren
 
-PHP installeren op [CentOS] of [Ubuntu].
+Installeer PHP op [ CentOS ] of [ Ubuntu ].
 
 ### Het constructiesysteem instellen
 
 Het constructiesysteem instellen:
 
 1. Meld u aan bij het constructiesysteem als of schakel over naar de eigenaar van het bestandssysteem.
-1. Haal de code van de Handel van broncontrole terug.
+1. Haal de Commerce-code op van het bronbesturingselement.
 
    Gebruik de volgende opdracht als u Git gebruikt:
 
@@ -86,7 +86,7 @@ Het constructiesysteem instellen:
    git clone [-b <branch name>] <repository URL>
    ```
 
-1. Ga naar de hoofdmap van de handel en voer de volgende gegevens in:
+1. Ga naar de Commerce-hoofdmap en voer de volgende gegevens in:
 
    ```bash
    composer install
@@ -106,7 +106,7 @@ Het constructiesysteem instellen:
    ```
 
 1. Als u Git gebruikt, opent u `.gitignore` in een teksteditor.
-1. Begin elk van de volgende lijnen met a `#` teken om opmerkingen toe te voegen:
+1. Begin elk van de volgende regels met een `#` -teken om er opmerkingen over te maken:
 
    ```conf
    # app/etc/config.php
@@ -117,22 +117,22 @@ Het constructiesysteem instellen:
    # pub/static/*
    ```
 
-1. Sla uw wijzigingen op in `.gitignore` en sluit de teksteditor af.
+1. Sla de wijzigingen in `.gitignore` op en sluit de teksteditor af.
 1. Als u Git gebruikt, gebruik de volgende bevelen om de verandering vast te leggen:
 
    ```bash
    git add .gitignore && git commit -m "Modify .gitignore for build and production"
    ```
 
-   Zie de [`.gitignore` referentie](../reference/config-reference-gitignore.md) voor meer informatie .
+   Zie [`.gitignore` verwijzing ](../reference/config-reference-gitignore.md) voor meer informatie.
 
-1. Het constructiesysteem moet [standaardmodus](../bootstrap/application-modes.md#default-mode) of [ontwikkelmodus](../bootstrap/application-modes.md#developer-mode):
+1. Het bouwstijlsysteem zou [ standaardwijze ](../bootstrap/application-modes.md#default-mode) of [ ontwikkelaarwijze ](../bootstrap/application-modes.md#developer-mode) moeten gebruiken:
 
    ```bash
    bin/magento deploy:mode:set <mode>
    ```
 
-   `<mode>` is vereist. Het kan `default` of `developer`.
+   `<mode>` is vereist. Dit kan `default` of `developer` zijn.
 
 <!-- Link Definitions -->
 

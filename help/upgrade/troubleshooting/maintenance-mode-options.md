@@ -17,7 +17,7 @@ Door een aangepaste pagina te maken waarnaar gebruikers kunnen omleiden, wordt g
 
 >[!NOTE]
 >
->U moet de taken in deze sectie als gebruiker uitvoeren met `root` rechten. Aangepaste onderhoudspagina&#39;s kunnen niet worden ingesteld in de modus Ontwikkelaar.
+>U moet de taken in deze sectie uitvoeren als een gebruiker met `root` rechten. Aangepaste onderhoudspagina&#39;s kunnen niet worden ingesteld in de modus Ontwikkelaar.
 
 ## De aangepaste onderhoudspagina maken
 
@@ -59,7 +59,7 @@ Deze sectie bespreekt hoe te om een pagina van het douaneonderhoud tot stand te 
 In het voorbeeld in deze sectie ziet u hoe u de volgende bestanden kunt wijzigen. Dit is een manier om uw onderhoudspagina in te stellen:
 
 - Apache 2.4: `/etc/apache2/sites-available/000-default.conf`
-- Apache 2.2: `/etc/apache2/sites-available/default` Ubuntu, `/etc/httpd/conf/httpd.conf` (CentOS)
+- Apache 2.2: `/etc/apache2/sites-available/default` (Ubuntu), `/etc/httpd/conf/httpd.conf` (CentOS)
 
 Verkeer omleiden naar een aangepaste onderhoudspagina:
 
@@ -94,9 +94,9 @@ Verkeer omleiden naar een aangepaste onderhoudspagina:
    touch <web server docroot>/maintenance.enable
    ```
 
-1. [Upgrade uw systeem](../implementation/perform-upgrade.md).
+1. [ bevorder uw systeem ](../implementation/perform-upgrade.md).
 1. Test uw site om te controleren of deze correct werkt.
-1. Nadat de upgrade is voltooid, verwijdert u `maintenance.enable`.
+1. Verwijder `maintenance.enable` nadat de upgrade is voltooid.
 
 ## Aangepaste onderhoudspagina voor nginx
 
@@ -105,9 +105,9 @@ Deze sectie bespreekt hoe te om een pagina van het douaneonderhoud tot stand te 
 Verkeer omleiden naar een aangepaste onderhoudspagina:
 
 1. Gebruik een tekstverwerker om het configuratiebestand van de nginx te openen dat uw serverblok bevat.
-1. Voeg het volgende toe aan het serverblok (`server` wordt alleen ter verduidelijking weergegeven; voeg geen tweede serverblok toe).
+1. Voeg het volgende aan het serverblok toe (`server` wordt getoond voor duidelijkheid slechts; voeg geen tweede serverblok toe).
 
-   De volgende lijsten van gewenste personen IP adres 192.0.2.110 en 192.0.2.115 op een systeem waar het Magento geïnstalleerd in is `/var/www/html/magento2`:
+   De volgende lijsten van gewenste personen IP adres 192.0.2.110 en 192.0.2.115 op een systeem waar het Magento in `/var/www/html/magento2` wordt geïnstalleerd:
 
    ```conf
    server {
@@ -154,9 +154,9 @@ Verkeer omleiden naar een aangepaste onderhoudspagina:
    service nginx reload
    ```
 
-1. [Upgrade uw systeem](../implementation/perform-upgrade.md).
+1. [ bevorder uw systeem ](../implementation/perform-upgrade.md).
 1. Test uw site om te controleren of deze correct werkt.
-1. Nadat de upgrade is uitgevoerd, verwijdert u de upgrade of wijzigt u de naam ervan `maintenance.enable`
+1. Nadat de upgrade is voltooid, verwijdert u de upgrade of wijzigt u de naam van de toepassing `maintenance.enable`
 1. Laad de configuratie nginx opnieuw:
 
    ```bash

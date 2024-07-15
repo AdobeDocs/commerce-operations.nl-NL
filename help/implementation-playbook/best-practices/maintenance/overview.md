@@ -29,57 +29,57 @@ De volgende secties bevatten informatie over best practices voor de onderhoudsfa
 
 | Beste praktijken | Beschrijving |
 |-----------------------------------------------------------------------------------|-------------------------------------------------------------------------------|
-| [[!DNL Quality Patches Tool] gebruiken](../../../tools/quality-patches-tool/usage.md) | Algemene informatie over alle Adobe Commerce-patches toepassen, herstellen en weergeven. |
+| [[!DNL Quality Patches Tool]  gebruik ](../../../tools/quality-patches-tool/usage.md) | Algemene informatie over alle Adobe Commerce-patches toepassen, herstellen en weergeven. |
 
 ## Catalogusbeheer
 
 | Beste praktijken | Beschrijving |
 |------------------------------------------------------------------------------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------|
-| [Catalogusbeheer voor producten](https://www.gotostage.com/channel/fca90f7960be436f9b849215d9e06026/recording/2eea2782fc874047a020391000519f8b/watch?source=CHANNEL) | Commerce &amp; Coffee-opname die strategieën beschrijft voor het beheer van productcatalogi. |
+| [ Beheer van de Catalogus van het Product ](https://www.gotostage.com/channel/fca90f7960be436f9b849215d9e06026/recording/2eea2782fc874047a020391000519f8b/watch?source=CHANNEL) | Commerce &amp; Coffee-opname waarin strategieën voor het beheer van productcatalogi worden beschreven. |
 
 ## Configuratie
 
 | Beste praktijken | Beschrijving |
 |-------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------|
-| [Admin-updates plannen op productiesites](scheduling-admin-updates-in-production.md) | Beheer kritieke Adobe Commerce-updates om trage prestaties en storingen te voorkomen. |
+| [ plannend Admin updates op productiesites ](scheduling-admin-updates-in-production.md) | Beheer kritieke Adobe Commerce-updates om trage prestaties en storingen te voorkomen. |
 
 ## Databasebeheer
 
 | Beste praktijken | Beschrijving |
 |--------------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------|
-| [Problemen met databaseprestaties oplossen &#x200B;](resolve-database-performance-issues.md) | Los databaseproblemen op die de prestaties vertragen op Adobe Commerce-sites die op cloudinfrastructuur worden geïmplementeerd. |
-| [Adobe Commerce-upgradevoorwaarden voor MariaDB-&#x200B;](mariadb-upgrade.md) | Bereid uw MariaDB-database voor op een upgrade. |
+| [ los de kwesties van gegevensbestandprestaties &#x200B;](resolve-database-performance-issues.md) op | Los databaseproblemen op die de prestaties vertragen op Adobe Commerce-sites die op cloudinfrastructuur worden geïmplementeerd. |
+| [ de verbeteringseerste vereisten van Adobe Commerce voor &#x200B; MariaDB ](mariadb-upgrade.md) | Bereid uw MariaDB-database voor op een upgrade. |
 
 ## Verbeterde functies
 
 | Beste praktijken | Beschrijving |
 |---------------------------------------------------------------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------|
-| [Personalisatie](https://www.gotostage.com/channel/fca90f7960be436f9b849215d9e06026/recording/e218545a77de490fb5102eca07d0580a/watch?source=CHANNEL) | Commerce &amp; Coffee-opnamen die personalisatiestrategieën beschrijven. |
-| [E-Commerce-trends](https://www.gotostage.com/channel/fca90f7960be436f9b849215d9e06026/recording/9a772468d7b64409a3d5dff4d67e656d/watch?source=CHANNEL) | Commerce &amp; Coffee-opnamen die trends op het gebied van e-commerce beschrijven. |
-| [AI-automatisering](https://www.gotostage.com/channel/fca90f7960be436f9b849215d9e06026/recording/27ae23699c2847be981a23ca098e548f/watch?source=CHANNEL) | Commerce &amp; Coffee-registratie die mogelijkheden voor personalisatie beschrijft met kunstmatige intelligentie en automatisering. |
+| [ Personalization ](https://www.gotostage.com/channel/fca90f7960be436f9b849215d9e06026/recording/e218545a77de490fb5102eca07d0580a/watch?source=CHANNEL) | Commerce &amp; Koffee-opnamen die de verpersoonlijkingsstrategieën beschrijven. |
+| [ e-Commerce Trends ](https://www.gotostage.com/channel/fca90f7960be436f9b849215d9e06026/recording/9a772468d7b64409a3d5dff4d67e656d/watch?source=CHANNEL) | Commerce &amp; Coffee-opnamen die trends op het gebied van e-commerce beschrijven. |
+| [ AI Automatisering ](https://www.gotostage.com/channel/fca90f7960be436f9b849215d9e06026/recording/27ae23699c2847be981a23ca098e548f/watch?source=CHANNEL) | Commerce &amp; Coffee-opname die mogelijkheden voor personalisatie beschrijft met behulp van kunstmatige intelligentie en automatisering. |
 
 ## Indexeren
 
 | Beste praktijken | Beschrijving |
 |------------------------------------------------------------------------------------------------------------|----------------------------------------------------------------------------------|
-| [Hoe herindexeren](https://developer.adobe.com/commerce/php/development/components/indexing/#how-to-reindex) | Gebruik snijtaken of het CLI-gereedschap om opnieuw te indexeren. |
-| [&#x200B; indexeerprogramma&#39;s configureren](indexer-configuration.md) | Optimaliseer plaatsprestaties door beste praktijken voor indexeerconfiguratie te volgen. |
-| [Bestelverwerking](order-processing-configuration.md) | Verbeter de prestaties van de kassa en de bestelling. |
+| [ hoe te opnieuw te indexeren ](https://developer.adobe.com/commerce/php/development/components/indexing/#how-to-reindex) | Gebruik snijtaken of het CLI-gereedschap om opnieuw te indexeren. |
+| [ vorm indexeerders &#x200B; ](indexer-configuration.md) | Optimaliseer plaatsprestaties door beste praktijken voor indexeerconfiguratie te volgen. |
+| [ de verwerking van de Orde ](order-processing-configuration.md) | Verbeter de prestaties van de kassa en de bestelling. |
 
 ## Sitebewaking en -beveiliging
 
 | Beste praktijken | Beschrijving |
 |-------------------------------------------------------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------|
-| [Voorwaartse controle](frontend-performance.md) | Identificeer en verhelp problemen die de prestaties van de site negatief beïnvloeden met behulp van webprestatiegereedschappen. |
-| [Gereed, Instellen, Onderhouden](https://business.adobe.com/blog/basics/ready-set-maintain) | Tips voor het onderhoud van uw Adobe Commerce-sites om uw bedrijfswaarde en uptime te maximaliseren. |
-| [Gebruik de [!DNL Site-Wide Analysis Tool]](../../../tools/site-wide-analysis-tool/intro.md#integrations-with-other-adobe-commerce-support-tools) | Bekijk op één plaats belangrijke inzichten over je Adobe Commerce-site. |
-| [Prestaties, schijfruimte en logbestanden van de monitor](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/monitor/performance.html) | Gebruik New Relic om belangrijke prestatiegegevens van uw Adobe Commerce op de cloudinframesite te controleren. |
-| [Reageren op beveiligingsincidenten](respond-to-security-incident.md) | Gebruik New Relic om belangrijke prestatiegegevens van uw Adobe Commerce op de cloudinframesite te controleren. |
+| [ controle frontend prestaties ](frontend-performance.md) | Identificeer en verhelp problemen die de prestaties van de site negatief beïnvloeden met behulp van webprestatiegereedschappen. |
+| [ Klaar, Reeks, handhaaf ](https://business.adobe.com/blog/basics/ready-set-maintain) | Tips voor het onderhoud van uw Adobe Commerce-sites om uw bedrijfswaarde en uptime te maximaliseren. |
+| [ gebruik  [!DNL Site-Wide Analysis Tool]](../../../tools/site-wide-analysis-tool/intro.md#integrations-with-other-adobe-commerce-support-tools) | Bekijk op één plaats belangrijke inzichten over je Adobe Commerce-site. |
+| [ de prestaties van de Monitor, schijfruimte, en logboeken ](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/monitor/performance.html) | Gebruik New Relic om belangrijke prestatiegegevens van uw Adobe Commerce op de cloudinframesite te controleren. |
+| [ Reageer op veiligheidsincidenten ](respond-to-security-incident.md) | Gebruik New Relic om belangrijke prestatiegegevens van uw Adobe Commerce op de cloudinframesite te controleren. |
 
 ### Upgrades
 
 | Beste praktijken | Beschrijving |
 |-----------------------------------------------------------------------|--------------------------------------------------------------------------------------------|
-| [Repareren op schaal](patching-at-scale.md) | Leer hoe gecentraliseerde patches voor Adobe Commerce u kunnen helpen bij het beheren van bedrijfsprojecten. |
-| [Services en onderdelen bijwerken naar de nieuwste &#x200B;](update-services.md) | uw Adobe Commerce op de technologiestapel voor de cloud-infrastructuur up-to-date houden. |
-| [Controlelijst voor upgrades voor Adobe Commerce &#x200B;](upgrade-checklist.md) | Maak en gebruik een checklist voor upgrades om uw Adobe Commerce-upgradestrategie te plannen. |
+| [ het Patching bij schaal ](patching-at-scale.md) | Leer hoe gecentraliseerde patches voor Adobe Commerce u kunnen helpen bij het beheren van bedrijfsprojecten. |
+| [ de diensten en de componenten van de Update aan recentste versie &#x200B;](update-services.md) | uw Adobe Commerce op de technologiestapel voor de cloud-infrastructuur up-to-date houden. |
+| [ checklist van de Verbetering voor de &#x200B; van Adobe Commerce ](upgrade-checklist.md) | Maak en gebruik een checklist voor upgrades om uw Adobe Commerce-upgradestrategie te plannen. |

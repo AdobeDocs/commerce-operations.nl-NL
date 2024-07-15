@@ -4,7 +4,7 @@ description: Een concurrentievoordeel behalen door een strategie te ontwikkelen 
 exl-id: 913dba96-d939-4e9a-b382-f22c6669fed1
 source-git-commit: e76f101df47116f7b246f21f0fe0fa72769d2776
 workflow-type: tm+mt
-source-wordcount: '486'
+source-wordcount: '480'
 ht-degree: 0%
 
 ---
@@ -15,15 +15,15 @@ Dynamische prijsstelling is een responsieve prijsstrategie waarbij de prijswijzi
 
 Er zijn drie factoren die de dynamische prijs drijven, die omvatten:
 
-- **Industrie**—Detailhandelaars moeten controleren wat de meest elementaire prijs van een product onder andere merken is.
+- **Industrie** - detailhandelaars moeten controleren wat de meest basisprijs van een product onder andere merken is.
 
-- **Markt**—Wat is het huidige aanbod en de huidige vraag? Wat is de voorspelde vraag en aanbod?
+- **Markt** - wat is de huidige vraag en de vraag? Wat is de voorspelde vraag en aanbod?
 
-- **Klanten**—Wat is het aankoopgedrag van de klant? Wat is de prijs die de klant bereid is voor een product te betalen.
+- **Klanten** - wat is de klant die gedrag koopt? Wat is de prijs die de klant bereid is voor een product te betalen.
 
 U moet elk aspect bekijken wanneer het werken aan een dynamische prijsstellingsstrategie.
 
-![Dynamisch prijsdiagram](../../assets/playbooks/dynamic-pricing-diagram.png)
+![ Dynamisch het tarief diagram ](../../assets/playbooks/dynamic-pricing-diagram.png)
 
 ## Voordelen
 

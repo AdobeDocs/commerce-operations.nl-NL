@@ -4,7 +4,7 @@ description: Verstrek uw klanten van kwalitatief hoogstaande productbeelden en v
 exl-id: 080f177e-f668-4154-8a05-ea4724c29c5f
 source-git-commit: e76f101df47116f7b246f21f0fe0fa72769d2776
 workflow-type: tm+mt
-source-wordcount: '490'
+source-wordcount: '488'
 ht-degree: 0%
 
 ---
@@ -19,51 +19,51 @@ De verschillende types van beelden kunnen worden gebruikt volgens de vereisten v
 
 ## Afbeelding van product op vlak oppervlak
 
-![Afbeelding van product op vlak oppervlak](../../assets/playbooks/product-image-flat.png)
+![ beeld van het Product op vlakke oppervlakte ](../../assets/playbooks/product-image-flat.png)
 
 ## Afbeeldingen van producten met modellen
 
-![Afbeelding van product met model](../../assets/playbooks/product-image-model.png)
+![ beeld van het Product met model ](../../assets/playbooks/product-image-model.png)
 
 ## Aanbevolen productafbeeldingen
 
-![Aanbevolen productafbeelding](../../assets/playbooks/product-image-feature.png)
+![ Aanbevolen productbeeld ](../../assets/playbooks/product-image-feature.png)
 
 ## Afbeeldingen in levensstijl
 
-![Afbeelding van product met model](../../assets/playbooks/product-image-lifestyle.png)
+![ beeld van het Product met model ](../../assets/playbooks/product-image-lifestyle.png)
 
 ## Door gebruiker geüploade afbeeldingen
 
-![Afbeelding van product met model](../../assets/playbooks/product-image-user-upload.png)
+![ beeld van het Product met model ](../../assets/playbooks/product-image-user-upload.png)
 
 ## Afbeeldingen in productverpakking
 
-![Aanbevolen productafbeelding](../../assets/playbooks/product-image-packaging.png)
+![ Aanbevolen productbeeld ](../../assets/playbooks/product-image-packaging.png)
 
 ## Afbeeldingen zonder vak
 
-![Afbeelding voor uitpakken van producten](../../assets/playbooks/product-image-unboxing.png)
+![ product unboxing beeld ](../../assets/playbooks/product-image-unboxing.png)
 
 ## Productvideo
 
-![Productvideo](../../assets/playbooks/product-video.png)
+![ video van het Product ](../../assets/playbooks/product-video.png)
 
 ## Aanbevolen procedures
 
-- **Het product demo**—Als het product een bepaald doel heeft, demo dan het product om zijn functies en eigenschappen te tonen.
+- **demo het product** - als het product een bepaald doel heeft, dan demo het product om zijn functies en eigenschappen te tonen.
 
-- **Door de gebruiker gegenereerde afbeeldingen promoten**—Gebruikers uploaden hun afbeeldingen met het product als een review, wat andere kopers motiveert het product aan te schaffen.
+- **bevordert gebruiker-geproduceerde beelden** - De gebruikers die hun beelden met het product als overzicht uploaden, dat andere kopers motiveert om het product te kopen.
 
-- **360 graden van het product**—Het uploaden van een video of GIF van 360 graden van het product kan de klant een gedetailleerd beeld verstrekken en hen motiveren om het product te kopen.
+- **360 gradenmening van het product** - Uploadend een video of een GIF van 360 gradegradatie van het product kan een gedetailleerde mening aan de klant verstrekken en hen motiveren om het product te kopen.
 
-- **Naamgevingsconventie**—Maak het een regel om een naamgevingsconventie voor de productafbeelding te volgen, die helpt de fout bij het uploaden van een onjuiste afbeelding voor een product te minimaliseren en het team helpt om afbeeldingen eenvoudig te beheren.
+- **Naming overeenkomst** - maak het een regel om een noemende overeenkomst voor het productbeeld te volgen, die helpt de fout om een onjuist beeld voor een product te uploaden minimaliseren en helpt het team gemakkelijk beelden beheren.
 
-- **Pagina laden**—Upload geen afbeeldingen waardoor de laadtijd van de pagina langer wordt. Als een klant moet wachten tot het image wordt weergegeven, kan het zijn dat de klant de site verlaat.
+- **laden van de Pagina** - upload geen beelden die de tijd van de paginading zullen verhogen. Als een klant moet wachten tot het image wordt weergegeven, kan het zijn dat de klant de site verlaat.
 
-- **Eenvoudige inhoud**—Maak de inhoud niet al te ingewikkeld. Probeer de inhoud eenvoudig en aantrekkelijk te houden op plaatsen waar het product de focus heeft. U kunt het product bijvoorbeeld het beste op een witte achtergrond plaatsen om de afbeelding van het product te verbeteren.
+- **Eenvoudige inhoud** - overcompliceer niet de inhoud. Probeer de inhoud eenvoudig en aantrekkelijk te houden op plaatsen waar het product de focus heeft. U kunt het product bijvoorbeeld het beste op een witte achtergrond plaatsen om de afbeelding van het product te verbeteren.
 
-- **Real product image**—Wanneer een klant een product online aanschaft, wordt verwacht dat het product wordt weergegeven zoals het op de website staat. Pas geen filters toe of verbeter de afbeelding om het uiterlijk van het product te wijzigen. Het is belangrijk om transparant met de klant te zijn, anders zou u een hoog tarief van rendementen kunnen hebben.
+- **Echte productbeeld** - wanneer een klant een product online koopt, verwachten zij om het product te zien aangezien het op de website is. Pas geen filters toe of verbeter de afbeelding om het uiterlijk van het product te wijzigen. Het is belangrijk om transparant met de klant te zijn, anders zou u een hoog tarief van rendementen kunnen hebben.
 
 >[!TIP]
 >

@@ -5,35 +5,35 @@ feature: Configuration, B2B, Companies, Payments, Quotes
 exl-id: 3414dea1-17c9-4462-8b8a-51a6045b0bc9
 source-git-commit: 16e9396f19693436dfc7bdac78d84624a78f0c21
 workflow-type: tm+mt
-source-wordcount: '841'
+source-wordcount: '837'
 ht-degree: 0%
 
 ---
 
 # Verwijzing naar configuratiepaden voor B2B-extensie
 
-_Dit is beschikbaar voor instanties waarop B2B voor Adobe Commerce is geïnstalleerd._
+_dit is beschikbaar voor instanties met B2B voor geïnstalleerde Adobe Commerce._
 
-Dit onderwerp maakt een lijst van configuratiepaden voor de Uitbreiding van de Onderneming B2B van de Handel. De [`magento app:config:dump` command](../cli/export-configuration.md) deze waarden naar het gedeelde configuratiebestand schrijft, `app/etc/config.php`, die onder broncontrole moeten staan.
+Dit onderwerp maakt een lijst van configuratiepaden voor de Uitbreiding van de Onderneming B2B van Commerce. Het [`magento app:config:dump` bevel ](../cli/export-configuration.md) schrijft deze waarden aan het gedeelde configuratiedossier, `app/etc/config.php`, dat in broncontrole zou moeten zijn.
 
 >[!INFO]
 >
->Deze referentielijsten _alleen_ configuratiepaden die uniek zijn voor B2B voor Adobe Commerce. Deze extensie bevat alle configuratiepaden voor Adobe Commerce.
+>Deze verwijzing maakt een lijst van _slechts_ configuratiepaden uniek aan B2B voor Adobe Commerce. Deze extensie bevat alle configuratiepaden voor Adobe Commerce.
 
 Zie voor deze configuratiepaden:
 
 - [Paden voor betalingsconfiguratie](config-reference-payment.md)
 - [Verwijzing naar gevoelige en systeemspecifieke configuratiepaden](config-reference-sens.md)
 
-Om naar keuze om het even welke configuratiemontages met voeten te treden of gevoelige montages te plaatsen, zie [Omgevingsvariabelen gebruiken om configuratie-instellingen te overschrijven](override-config-settings.md#environment-variables).
+Om naar keuze om het even welke configuratiemontages met voeten te treden of gevoelige montages te plaatsen, zie [ de milieuvariabelen van het Gebruik om configuratiemontages ](override-config-settings.md#environment-variables) met voeten te treden.
 
 ## Algemene categorie
 
-In deze sectie worden de namen van variabelen en de configuratiepaden weergegeven die beschikbaar zijn voor opties onder Beheer **[!UICONTROL Stores]** > Instellingen > **[!UICONTROL Configuration]** > **[!UICONTROL General]**.
+In deze sectie vindt u namen van variabelen en configuratiepaden die beschikbaar zijn voor opties in Beheer onder **[!UICONTROL Stores]** > Instellingen > **[!UICONTROL Configuration]** > **[!UICONTROL General]** .
 
 ### B2B-functies, paden
 
-Deze configuratiewaarden zijn beschikbaar in de Admin in **[!UICONTROL Stores]** > Instellingen > **[!UICONTROL Configuration]** > **[!UICONTROL General]** > **[!UICONTROL B2B Features]**.
+Deze configuratiewaarden zijn beschikbaar in Beheer in **[!UICONTROL Stores]** > Instellingen > **[!UICONTROL Configuration]** > **[!UICONTROL General]** > **[!UICONTROL B2B Features]** .
 
 | Naam | Config-pad | Versleuteld? | Systeemspecifiek? | gevoelig? |
 | -------------- | -------------- | -------------- | -------------- | -------------- |
@@ -49,17 +49,17 @@ Deze configuratiewaarden zijn beschikbaar in de Admin in **[!UICONTROL Stores]**
 
 ## Categorie Klanten
 
-In deze sectie worden de namen van variabelen en configuratiepaden weergegeven die beschikbaar zijn voor opties in de beheerdersruimte onder **[!UICONTROL Stores]** > Instellingen > **[!UICONTROL Configuration]** > **[!UICONTROL Customers]**.
+In deze sectie vindt u namen van variabelen en configuratiepaden die beschikbaar zijn voor opties in Beheer onder **[!UICONTROL Stores]** > Instellingen > **[!UICONTROL Configuration]** > **[!UICONTROL Customers]** .
 
 ### Bedrijfsconfiguratiepaden
 
-Deze configuratiewaarden zijn beschikbaar in de Admin in **[!UICONTROL Stores]** > Instellingen > **[!UICONTROL Configuration]** > **[!UICONTROL Customers]** > **[!UICONTROL Company Configuration]**.
+Deze configuratiewaarden zijn beschikbaar in Beheer in **[!UICONTROL Stores]** > Instellingen > **[!UICONTROL Configuration]** > **[!UICONTROL Customers]** > **[!UICONTROL Company Configuration]** .
 
 | Naam | Config-pad | Versleuteld? | Systeemspecifiek? | gevoelig? |
 |--------------|--------------|--------------|--------------|--------------|
 | Bedrijfsregistratie toestaan vanuit de Storefront | `company/general/allow_company_registration` | | | |
-| E-mailontvanger bedrijfsinschrijving | `company/email/company_registration` | | | ![Gevoelig](/help/assets/configuration/cloud-sens.png) |
-| E-mailkopie van bedrijfsregistratie verzenden naar | `company/email/company_registration_copy` | | | ![Gevoelig](/help/assets/configuration/cloud-sens.png) |
+| E-mailontvanger bedrijfsinschrijving | `company/email/company_registration` | | | ![ Gevoelig ](/help/assets/configuration/cloud-sens.png) |
+| E-mailkopie van bedrijfsregistratie verzenden naar | `company/email/company_registration_copy` | | | ![ Gevoelig ](/help/assets/configuration/cloud-sens.png) |
 | E-mailkopieermethode verzenden | `company/email/company_copy_method` | | | |
 | Standaard bedrijfsregistratie-e-mail | `company/email/company_notify_admin_template` | | | |
 | Aan klanten gerelateerde e-mails | `company/email/heading_customer` | | | |
@@ -72,7 +72,7 @@ Deze configuratiewaarden zijn beschikbaar in de Admin in **[!UICONTROL Stores]**
 | Standaard-e-mail met status van klant | `company/email/customer_account_locked_template` | | | |
 | Wijziging van bedrijfsstatus | `company/email/heading_company_status` | | | |
 | E-mailontvanger bedrijfstatus wijzigen | `company/email/company_status_change` | | | |
-| E-mailkopie van wijziging bedrijfsstatus verzenden naar | `company/email/company_status_change_copy` | | | ![Gevoelig](/help/assets/configuration/cloud-sens.png) |
+| E-mailkopie van wijziging bedrijfsstatus verzenden naar | `company/email/company_status_change_copy` | | | ![ Gevoelig ](/help/assets/configuration/cloud-sens.png) |
 | E-mailkopieermethode verzenden | `company/email/company_status_copy_method` | | | |
 | Standaardbedrijfstatus wijzigen in Active 1-e-mail | `company/email/company_status_pending_approval_to_active_template` | | | |
 | Standaardbedrijfstatus wijzigen in Active 2-e-mail | `company/email/company_status_rejected_blocked_to_active_template` | | | |
@@ -80,7 +80,7 @@ Deze configuratiewaarden zijn beschikbaar in de Admin in **[!UICONTROL Stores]**
 | Standaardwijziging bedrijfsstatus in geblokkeerde e-mail | `company/email/company_status_blocked_template` | | | |
 | Standaardwijziging bedrijfsstatus in afwachting van goedkeuring-e-mail | `company/email/company_status_pending_approval_template` | | | |
 | Bedrijfskrediet | `company/email/heading_company_credit` | | | |
-| E-mailafzender bedrijfskrediet wijzigen | `company/email/company_credit_change` |  | | ![Gevoelig](/help/assets/configuration/cloud-sens.png) |
+| E-mailafzender bedrijfskrediet wijzigen | `company/email/company_credit_change` |  | | ![ Gevoelig ](/help/assets/configuration/cloud-sens.png) |
 | E-mailkopie van wijziging bedrijfskrediet verzenden naar | `company/email/company_credit_change_copy` | | | |
 | E-mailkopieermethode verzenden | `company/email/company_credit_copy_method` | | | |
 | Toegewezen e-mailsjabloon | `company/email/credit_allocated_email_template` | | | |
@@ -93,7 +93,7 @@ Deze configuratiewaarden zijn beschikbaar in de Admin in **[!UICONTROL Stores]**
 
 ### Bij aanvraag worden paden weergegeven
 
-Deze configuratiewaarden zijn beschikbaar in de Admin in **Winkels** > Instellingen > **Configuratie** > **Klanten** > **Aanvraaglijsten**.
+Deze configuratiewaarden zijn beschikbaar in Admin in **Slaat** > Montages > **Configuratie** > **Klanten** > **de Lijsten van de Aanvraag**.
 
 | Naam | Config-pad | Versleuteld? | Systeemspecifiek? | gevoelig? |
 | -------------- | -------------- | -------------- | -------------- | -------------- |
@@ -103,11 +103,11 @@ Deze configuratiewaarden zijn beschikbaar in de Admin in **Winkels** > Instellin
 
 ## Verkoopcategorie
 
-In deze sectie worden de namen van variabelen en configuratiepaden weergegeven die beschikbaar zijn voor opties in de beheerdersruimte onder **Winkels** > Instellingen > **Configuratie** > **Verkoop**.
+Deze sectie maakt een lijst van veranderlijke namen en config wegen beschikbaar voor opties in Admin onder **Slaat** > Montages > **Configuratie** > **Verkoop**.
 
 ### E-mailpaden voor verkoop
 
-Deze configuratiewaarden zijn beschikbaar in de Admin in **Winkels** > Instellingen > **Configuratie** > **Verkoop** > **Verkoop-e-mails**.
+Deze configuratiewaarden zijn beschikbaar in Admin in **Opslag** > Montages > **Configuratie** > **Verkoop** > **Verkoop E-mail van de Verkoop**.
 
 | Naam | Config-pad | Versleuteld? | Systeemspecifiek? | gevoelig? |
 | -------------- | -------------- | -------------- | -------------- | -------------- |
@@ -119,14 +119,14 @@ Deze configuratiewaarden zijn beschikbaar in de Admin in **Winkels** > Instellin
 | Vervaldatum offerte (in 48 uur) | `sales_email/quote/expire_two_days_template` | | | |
 | Vervaldatum offerte (in 24 uur) | `sales_email/quote/expire_one_day_template` | | | |
 | Vervaldatum opnieuw instellen | `sales_email/quote/expire_reset_template` | | | |
-| E-mailkopie van offerte verzenden naar | `sales_email/quote/copy_to` | | | ![Gevoelig](/help/assets/configuration/cloud-sens.png) |
+| E-mailkopie van offerte verzenden naar | `sales_email/quote/copy_to` | | | ![ Gevoelig ](/help/assets/configuration/cloud-sens.png) |
 | Methode voor e-mail met offerte verzenden | `sales_email/quote/copy_method` | | | |
 
 {style="table-layout:auto"}
 
 ### Aanhalingspaden
 
-Deze configuratiewaarden zijn beschikbaar in de Admin in **Winkels** > Instellingen > **Configuratie** > **Verkoop** > **Aanhalingen**.
+Deze configuratiewaarden zijn beschikbaar in Admin in **Opslag** > Montages > **Configuratie** > **Verkoop** > **Citaten**.
 
 | Naam | Config-pad | Versleuteld? | Systeemspecifiek? | gevoelig? |
 | -------------- | -------------- | -------------- | -------------- | -------------- |
@@ -145,7 +145,7 @@ Deze configuratiewaarden zijn beschikbaar in de Admin in **Winkels** > Instellin
 
 ## Paden voor betalingsmethoden
 
-Deze configuratiewaarden zijn beschikbaar in de Admin in **Winkels** > Instellingen > **Configuratie** > **Verkoop** > **Betalingsmethoden**.
+Deze configuratiewaarden zijn beschikbaar in Admin in **Opslag** > Montages > **Configuratie** > **Verkoop** > **de Methoden van de Betaling**.
 
 >[!INFO]
 >

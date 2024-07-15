@@ -1,44 +1,44 @@
 ---
 title: Initialisatie en bootstrap van toepassingen
-description: Lees over initialisatie en bootstrap logica voor de toepassing van de Handel.
+description: Lees meer over initialisatie en bootstrap-logica voor de Commerce-toepassing.
 feature: Configuration, Install, Media
 exl-id: 46d1ffc0-7870-4dd1-beec-0a9ff858ab62
 source-git-commit: 403a5937561d82b02fd126c95af3f70b0ded0747
 workflow-type: tm+mt
-source-wordcount: '863'
+source-wordcount: '792'
 ht-degree: 0%
 
 ---
 
 # Overzicht van initialisatie en bootstrap
 
-Om de toepassing van de Handel in werking te stellen, worden de volgende acties uitgevoerd in [pub/index.php][index]:
+Om de toepassing van Commerce in werking te stellen, worden de volgende acties uitgevoerd in [ pub/index.php ][index]:
 
-- Inclusief [app/bootstrap.php][bootinitial], die essentiële initialisatieroutines uitvoert zoals foutafhandeling, het initialiseren van de autoloader, het instellen van profielopties en het instellen van de standaardtijdzone.
-- Een instantie maken van [\Magento\Framework\App\Bootstrap.php][bootstrap] <!-- It requires initialization parameters to be specified in constructor. Normally, the $_SERVER super-global variable is supposed to be passed there. -->
-- Maak een instantie van een Commerce-toepassing: [\Magento\Framework\AppInterface][app-face]
+- Omvat [ app/bootstrap.php ][bootinitial], die essentiële initialiseringsroutines zoals fout behandeling, initialiserend autoloader, plaatsend het profileren opties, en het plaatsen van standaardtimezone uitvoert.
+- Creeer een geval van [ \Magento\Framework\App\Bootstrap.php ][bootstrap] <!-- It requires initialization parameters to be specified in constructor. Normally, the $_SERVER super-global variable is supposed to be passed there. -->
+- Creeer een de toepassingsinstantie van Commerce: [ \Magento\Framework\AppInterface][app-face]
 - Commerce uitvoeren
 
 ## Bootstrap run logic
 
-[Het bootstrap-object][bootinitial] gebruikt het volgende algoritme om de toepassing van de Handel in werking te stellen:
+[ het bootstrap voorwerp ][bootinitial] gebruikt het volgende algoritme om de toepassing van Commerce in werking te stellen:
 
 1. Initialiseert de fouthandler.
-1. Hiermee maakt u de [objectbeheer][object] en gedeelde basisdiensten die overal worden gebruikt en door het milieu worden beïnvloed. De omgevingsparameters worden op de juiste wijze in deze objecten geïnjecteerd.
-1. Hiermee wordt bevestigd dat de onderhoudsmodus _niet_ enabled; anders, eindigt.
-1. Bevestigt dat de toepassing van de Handel geïnstalleerd is; anders, beëindigt.
-1. Start de toepassing Commerce.
+1. Creeert de [ objecten manager ][object] en de basis gedeelde diensten die overal worden gebruikt en door het milieu worden beïnvloed. De omgevingsparameters worden op de juiste wijze in deze objecten geïnjecteerd.
+1. Bevestigt dat de onderhoudswijze _niet_ wordt toegelaten; anders, eindigt.
+1. Hiermee wordt bevestigd dat de Commerce-toepassing is geïnstalleerd; anders wordt de toepassing beëindigd.
+1. Start de Commerce-toepassing.
 
-   Alle niet-afgevangen uitzonderingen tijdens het starten van de toepassing worden automatisch doorgestuurd naar de afdeling Handel in het dialoogvenster `catchException()` methode die u kunt gebruiken om de uitzondering af te handelen. Deze moet ofwel `true` of `false`:
+   Alle niet-afgevangen uitzonderingen tijdens het starten van de toepassing worden automatisch aan Commerce doorgegeven via de methode `catchException()` die u kunt gebruiken om de uitzondering af te handelen. De laatste functie moet `true` of `false` retourneren:
 
-   - Indien `true`: Handel heeft de uitzondering met succes afgehandeld. U hoeft niets anders te doen.
-   - Indien `false`: (of een ander leeg resultaat) De uitzondering is niet door de Handel afgehandeld. Het bootstrap-object voert de standaardsubroutine voor de afhandeling van uitzonderingen uit.
+   - Als `true`: Commerce heeft de uitzondering verwerkt. U hoeft niets anders te doen.
+   - Als `false`: (of een ander leeg resultaat), heeft Commerce de uitzondering niet afgehandeld. Het bootstrap-object voert de standaardsubroutine voor de afhandeling van uitzonderingen uit.
 
 1. Verstuurt de reactie die door het toepassingsobject wordt geboden.
 
    >[!INFO]
    >
-   >De beweringen dat de toepassing van de Handel en niet op onderhoudswijze geïnstalleerd is zijn het standaardgedrag van `\Magento\Framework\App\Bootstrap` klasse. U kunt het wijzigen met een script voor het ingangspunt wanneer u het bootstrap-object maakt.
+   >De bewering dat de Commerce-toepassing is geïnstalleerd en niet in de onderhoudsmodus is het standaardgedrag van de `\Magento\Framework\App\Bootstrap` -klasse. U kunt het wijzigen met een script voor het ingangspunt wanneer u het bootstrap-object maakt.
 
    Voorbeeld van een berichtpuntscript waarmee het bootstrap-object wordt gewijzigd:
 
@@ -59,55 +59,55 @@ Om de toepassing van de Handel in werking te stellen, worden de volgende acties 
 
 ## Standaarduitzonderingsbehandeling
 
-Het bootstrap-object geeft als volgt aan hoe de toepassing Commerce niet-afgevangen uitzonderingen verwerkt:
+Met het bootstrap-object wordt als volgt aangegeven hoe de Commerce-toepassing niet-afgevangen uitzonderingen verwerkt:
 
-- In [ontwikkelmodus](../bootstrap/application-modes.md#developer-mode)wordt de uitzondering ongewijzigd weergegeven.
+- Op [ ontwikkelaarwijze ](../bootstrap/application-modes.md#developer-mode), toont de uitzondering zoals-is.
 - Op een andere wijze, probeert om uitzondering te registreren en een generisch foutenbericht te tonen.
-- Beëindigt Handel met foutencode `1`
+- Beëindigt Commerce met foutcode `1`
 
 ## Toepassingen voor instappunten
 
-Wij hebben de volgende toepassingen van het ingangspunt (die, toepassingen door Handel worden bepaald die door de Webserver als folderindex worden gebruikt):
+Er zijn de volgende toepassingen voor ingangspunten (toepassingen die door Commerce zijn gedefinieerd en die door de webserver worden gebruikt als een directoryindex):
 
 ### HTTP-ingangspunt
 
-[\Magento\Framework\App\Http][http] werkt als volgt:
+[ \Magento\Framework\App\Http ][http] werkt als volgt:
 
-1. Hiermee bepaalt u de [toepassingsgebied](https://developer.adobe.com/commerce/php/architecture/modules/areas/).
+1. Bepaalt het [ toepassingsgebied ](https://developer.adobe.com/commerce/php/architecture/modules/areas/).
 1. Begint het voorcontrolemechanisme en het verpletteren van systemen om een controlemechanismeactie te vinden en uit te voeren.
 1. Gebruikt een HTTP-reactieobject om het resultaat van de controlleractie te retourneren.
 1. Foutafhandeling (in de volgende prioriteitsvolgorde):
 
-   1. Als u [ontwikkelmodus](../bootstrap/application-modes.md#developer-mode):
-      - Als de toepassing van de Handel niet geïnstalleerd is, richt aan de Tovenaar van de Opstelling opnieuw.
-      - Als de toepassing van de Handel geïnstalleerd is, toon een fout en de statuscode 500 van HTTP (de Interne Fout van de Server).
-   1. Als de toepassing van de Handel op onderhoudswijze is, toon een gebruikersvriendelijke &quot;Dienst niet beschikbaar&quot;landingspagina met de statuscode van HTTP 503 (de Dienst niet beschikbaar).
-   1. Als de aanvraag voor de handel _niet_ geïnstalleerd, omleiding naar de Tovenaar van de Opstelling.
+   1. Als u [ ontwikkelaarwijze ](../bootstrap/application-modes.md#developer-mode) gebruikt:
+      - Als de Commerce-toepassing niet is geïnstalleerd, stuurt u deze om naar de wizard Setup.
+      - Als de Commerce-toepassing is geïnstalleerd, geeft u een fout en HTTP-statuscode 500 weer (Interne serverfout).
+   1. Als de Commerce-toepassing in de onderhoudsmodus staat, geeft u een gebruikersvriendelijke landingspagina met HTTP-statuscode 503 (Service Unavailable) weer.
+   1. Als de toepassing van Commerce _niet_ geïnstalleerd is, richt aan de Tovenaar van de Opstelling opnieuw.
    1. Als de sessie ongeldig is, leidt u deze om naar de startpagina.
    1. Als er een andere toepassingsinitialisatiefout is, geeft u een gebruikersvriendelijke pagina &quot;Pagina niet gevonden&quot; weer met HTTP-statuscode 404 (Niet gevonden).
    1. Voor een andere fout, toon een gebruikersvriendelijke &quot;Dienst niet beschikbaar&quot;pagina met reactie 503 van HTTP en produceer een foutenrapport en toon zijn identiteitskaart op de pagina.
 
 ### Statisch invoerpunt voor bron
 
-[\Magento\Framework\App\StaticResource][static-resource] is een toepassing voor het ophalen van statische bronnen (bijvoorbeeld CSS, JavaScript en afbeeldingen). Het stelt om het even welke acties met een statische middel uit tot het middel wordt gevraagd.
+[ \Magento\Framework\App\StaticResource ][static-resource] is een toepassing voor het terugwinnen van statische middelen (bijvoorbeeld, CSS, JavaScript, en beelden). Het stelt om het even welke acties met een statische middel uit tot het middel wordt gevraagd.
 
 >[!INFO]
 >
->Het ingangspunt voor statische weergavebestanden wordt niet gebruikt in [productiemodus](application-modes.md#production-mode) om potentiële misbruiken op de server te voorkomen. In de productiemodus verwacht de toepassing van de Handel dat alle noodzakelijke middelen in de `<your Commerce install dir>/pub/static` directory.
+>Het ingangspunt voor statische meningsdossiers wordt niet gebruikt op [ productiemodus ](application-modes.md#production-mode) om potentiële exploitaties op de server te vermijden. In de productiemodus verwacht de Commerce-toepassing dat de map `<your Commerce install dir>/pub/static` alle benodigde bronnen bevat.
 
-In gebrek of ontwikkelaarwijze, wordt een verzoek om een niet bestaande statische middel opnieuw gericht aan het statische ingangspunt volgens de herschrijfregels die door aangewezen worden gespecificeerd `.htaccess`.
-Wanneer het verzoek aan het ingangspunt opnieuw wordt gericht, ontleedt de toepassing van de Handel gevraagde URL die op teruggewonnen parameters wordt gebaseerd en vindt het gevraagde middel.
+In de standaard- of ontwikkelaarsmodus wordt een aanvraag voor een niet-bestaande statische bron omgeleid naar het statische ingangspunt volgens de herschrijfregels die door de betreffende `.htaccess` zijn opgegeven.
+Wanneer de aanvraag naar het ingangspunt wordt omgeleid, parseert de Commerce-toepassing de gevraagde URL op basis van opgehaalde parameters en zoekt de gevraagde bron.
 
-- In [ontwikkelaar](application-modes.md#developer-mode) in de modus, wordt de inhoud van het bestand geretourneerd, zodat de geretourneerde inhoud bijgewerkt is wanneer de bron wordt opgevraagd.
-- In [default](application-modes.md#default-mode) in de modus, wordt de opgehaalde bron gepubliceerd zodat deze toegankelijk is via de eerder aangevraagde URL.
+- Op [ ontwikkelaar ](application-modes.md#developer-mode) wijze, is de inhoud van het dossier teruggekeerd zodat telkens als het middel wordt gevraagd, de teruggekeerde inhoud bijgewerkt is.
+- Op [ gebrek ](application-modes.md#default-mode) wijze, wordt het teruggewonnen middel gepubliceerd zodat is het toegankelijk door eerder gevraagde URL.
 
-  Alle toekomstige verzoeken om het statische middel worden verwerkt door de server het zelfde als statische dossiers; namelijk zonder het ingangspunt te impliceren. Als gepubliceerde bestanden moeten worden gesynchroniseerd met de originele bestanden, worden de `pub/static` directory moet worden verwijderd, waardoor bestanden automatisch opnieuw worden gepubliceerd met het volgende verzoek.
+  Alle toekomstige verzoeken om het statische middel worden verwerkt door de server het zelfde als statische dossiers; namelijk zonder het ingangspunt te impliceren. Als gepubliceerde bestanden moeten worden gesynchroniseerd met de originele bestanden, moet de map `pub/static` worden verwijderd. Als gevolg hiervan worden bestanden automatisch opnieuw gepubliceerd met de volgende aanvraag.
 
 ### Invoerpunt van mediabron
 
-[Magento\MediaStorage\App\Media][media] wint media middelen (d.w.z. om het even welke dossiers die aan media opslag worden geupload) van het gegevensbestand terug. Het wordt gebruikt wanneer het gegevensbestand als media opslag wordt gevormd.
+[ Magento\MediaStorage\App\Media ][media] wint media middelen (namelijk om het even welke dossiers terug die aan media opslag) van het gegevensbestand worden geupload. Het wordt gebruikt wanneer het gegevensbestand als media opslag wordt gevormd.
 
-`\Magento\Core\App\Media` pogingen om het mediabestand te vinden in de geconfigureerde databaseopslag en het naar de `pub/static` en retourneert vervolgens de inhoud ervan. Als er een fout optreedt, wordt er een HTTP 404 (Not Found)-statuscode zonder inhoud in de header geretourneerd.
+`\Magento\Core\App\Media` probeert het mediabestand te zoeken in de geconfigureerde databaseopslag en het naar de map `pub/static` te schrijven en vervolgens de inhoud ervan te retourneren. Als er een fout optreedt, wordt er een HTTP 404 (Not Found)-statuscode zonder inhoud in de header geretourneerd.
 
 <!-- Link Definitions -->
 

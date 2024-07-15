@@ -4,7 +4,7 @@ description: Leer hoe te om de codecompiler van de bevellijn in werking te stell
 exl-id: 08dbf808-ea79-4956-a0bc-f464bb80eee7
 source-git-commit: 95ffff39d82cc9027fa633dffedf15193040802d
 workflow-type: tm+mt
-source-wordcount: '174'
+source-wordcount: '161'
 ht-degree: 0%
 
 ---
@@ -22,7 +22,7 @@ De compilatie van de code omvat het volgende (in geen bepaalde orde):
 - Opslagplaatsen voor het genereren van code (gegenereerde code voor API&#39;s)
 - De gegevensattributen van de dienst produceren (geproduceerde uitbreidingsklassen voor gegevensvoorwerpen)
 
-U kunt de klassen van de codecompilatie in vinden [\Magento\Setup\Module\Di\App\Task\Operation][operation] naamruimte.
+U kunt de klassen van de codecompilatie in [ \Magento\Setup\Module\Di\App\Task\Operation ][operation] namespace vinden.
 
 Om de enig-huurderscompiler in werking te stellen:
 
@@ -34,9 +34,9 @@ bin/magento setup:di:compile
 Generated code and dependency injection configuration successfully.
 ```
 
-Code compileren voordat de toepassing Commerce wordt geïnstalleerd:
+U kunt als volgt de code compileren voordat u de Commerce-toepassing installeert:
 
-In sommige gevallen, zou u code kunnen willen compileren alvorens u de toepassing van de Handel installeert.
+In sommige gevallen kunt u code compileren voordat u de Commerce-toepassing installeert.
 
 1. Schakel de modules in.
 
@@ -44,9 +44,9 @@ In sommige gevallen, zou u code kunnen willen compileren alvorens u de toepassin
    bin/magento module:enable --all [-c|--clear-static-content]
    ```
 
-   Gebruik de `[-c|--clear-static-content]` optie om statische inhoud te wissen. Dit is nodig als u eerder modules hebt in- of uitgeschakeld en u de statische inhoud moet wissen die eerder voor deze modules is gegenereerd.
+   Gebruik de optie `[-c|--clear-static-content]` om statische inhoud te wissen. Dit is nodig als u eerder modules hebt in- of uitgeschakeld en u de statische inhoud moet wissen die eerder voor deze modules is gegenereerd.
 
-   Zie [Modules inschakelen](../../installation/tutorials/manage-modules.md).
+   Zie [ modules ](../../installation/tutorials/manage-modules.md) toelaten.
 
 1. Compileer de code.
 
@@ -58,7 +58,7 @@ In sommige gevallen, zou u code kunnen willen compileren alvorens u de toepassin
    Generated code and dependency injection configuration successfully.
    ```
 
-Als u code zonder database wilt compileren, raadpleegt u [Statische weergavebestanden implementeren zonder Magento te installeren](../cli/static-view-file-deployment.md).
+Om code zonder een gegevensbestand te compileren, zie [ statische meningsdossiers opstellen zonder Magento ](../cli/static-view-file-deployment.md) te installeren.
 
 <!-- link definitions -->
 

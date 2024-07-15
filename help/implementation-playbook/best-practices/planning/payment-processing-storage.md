@@ -6,22 +6,22 @@ feature: Best Practices
 exl-id: 635f38d3-0199-4d96-ba75-9edd0cb94b5c
 source-git-commit: db0fce79b22d409e8d639b959dc5a04693e72659
 workflow-type: tm+mt
-source-wordcount: '500'
+source-wordcount: '478'
 ht-degree: 0%
 
 ---
 
 # Aanbevolen procedures voor betalingsverwerking en -opslag
 
-Een van de belangrijkste beginselen bij het handhaven van [PCI-compatibiliteit](https://experienceleague.adobe.com/docs/commerce-admin/start/compliance/payments/compliance-pci.html) heeft een strategie om creditcardbetalingen correct te verwerken en op te slaan.
+Één van de belangrijkste principes in het handhaven van [ naleving PCI ](https://experienceleague.adobe.com/docs/commerce-admin/start/compliance/payments/compliance-pci.html) heeft een strategie om creditcardbetalingen behoorlijk te verwerken en op te slaan.
 
-Gegevens van kaarthouders opslaan in Adobe Commerce is **strikt verboden** en dit zou een schending van uw verplichtingen als handelaar onder de Norm van de Veiligheid van Gegevens van de Industrie van de Bedrijfs van de Betalingskaart (PCI-DSS) kunnen zijn. Meer informatie over het model van gedeelde verantwoordelijkheid en de richtsnoeren voor handelsverplichtingen is te vinden in de [Adobe Commerce Handleiding voor gedeeld verantwoordelijkheidsmodel](https://www.adobe.com/content/dam/cc/en/trust-center/ungated/whitepapers/experience-cloud/adobe-commerce-shared-responsibilities-guide.pdf) op het Adobe Trust Center.
+Het opslaan van kaarthoudergegevens in Adobe Commerce is **strikt verboden** en het doen van dit zou een schending van uw verplichtingen als handelaar onder de Norm van de Veiligheid van de Gegevens van de Industrie van de Bedrijfs van de Kaart van de Betalingskaart (PCI-DSS) kunnen zijn. Meer informatie over het gedeelde verantwoordelijkheidsmodel en de richtlijnen voor handelsverplichtingen is beschikbaar in de [ Adobe Commerce Gedeelde Gids van het ModelVerantwoordelijkheidsmodel ](https://www.adobe.com/content/dam/cc/en/trust-center/ungated/whitepapers/experience-cloud/adobe-commerce-shared-responsibilities-guide.pdf) op het Centrum van het Vertrouwen van de Adobe.
 
-Volg de onderstaande aanbevolen procedures om ervoor te zorgen dat je de betalingsgegevens op je eCommerce-site correct verwerkt. Zie voor aanvullende richtlijnen over best practices op het gebied van beveiliging [Uw site en infrastructuur beveiligen](../launch/security-best-practices.md).
+Volg de onderstaande aanbevolen procedures om ervoor te zorgen dat je de betalingsgegevens op je eCommerce-site correct verwerkt. Voor extra begeleiding op veiligheid beste praktijken, zie [ uw plaats en infrastructuur ](../launch/security-best-practices.md) beveiligen.
 
 ## Betrokken producten en versies
 
-[Alle ondersteunde versies](../../../release/versions.md) van:
+[ Alle gesteunde versies ](../../../release/versions.md) van:
 
 * Adobe Commerce over cloudinfrastructuur
 * Adobe Commerce ter plaatse
@@ -32,7 +32,7 @@ Als het opslaan van gegevens van kaarthouders nodig is, moeten kaarthoudergegeve
 
 Beschermingen voor cryptografische sleutels zijn van essentieel belang voor gegevensbeschermingsstrategieën. Het is essentieel om ervaren en betrouwbare bewaarnemers te hebben die deze sleutels controleren.
 
-Ten slotte moet een primair rekeningnummer (PAN) tijdens de opslag onleesbaar zijn, bijvoorbeeld met `XXX`. Dit omvat draagbare opslag- en back-upmedia zoals flash drives, USB en externe harde schijven en zelfs auditlogs.
+Ten slotte moet een primair rekeningnummer (PAN) tijdens de opslag onleesbaar zijn, bijvoorbeeld gemaskeerd met `XXX` . Dit omvat draagbare opslag- en back-upmedia zoals flash drives, USB en externe harde schijven en zelfs auditlogs.
 
 ## Verzending van kaarthoudergegevens versleutelen
 
@@ -53,4 +53,4 @@ De aanbevolen methode voor het verwerken van gegevens van een kaarthouder is het
 
 ## Aanvullende informatie
 
-Als u op zoek bent naar aanbevolen betalingsoplossingen per Adobe, kunt u [Betalingsdiensten Adobe](https://experienceleague.adobe.com/docs/commerce-merchant-services/payment-services/overview.html).
+Als u geadviseerde betalingsoplossingen door Adobe zoekt, overweeg {de Diensten van de Betaling van 0} Adobe ](https://experienceleague.adobe.com/docs/commerce-merchant-services/payment-services/overview.html).[

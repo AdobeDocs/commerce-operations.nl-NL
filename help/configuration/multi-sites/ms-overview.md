@@ -19,19 +19,19 @@ Met één exemplaar van de Adobe Commerce-software kunt u meerdere websites star
 - Producten
 - Valuta
 
-Deze flexibele oplossing laat één Koophandel codebase en Admin toe om verschillende opslag te beheren en te tonen. U configureert de websites, winkels en opslagweergaven in de beheerfunctie. Gebruik bepaalde variabelen in virtuele gastheren om de toepassing van de Handel te beginnen gebruikend deze websites of opslagmeningen.
+Met deze flexibele oplossing kunnen één Commerce-codebase en -beheerder verschillende winkels beheren en weergeven. U configureert de websites, winkels en opslagweergaven in de beheerfunctie. Gebruik bepaalde variabelen in virtuele hosts om de Commerce-toepassing te starten met deze websites of om weergaven op te slaan.
 
 Doorgaans worden winkels met verschillende opties in verschillende domeinen ingesteld. U kunt bijvoorbeeld een set categorieën en producten op een bepaald domein plaatsen en een andere set categorieën en producten op een afzonderlijk domein in een andere taal.
 
-U vormt de websites, de opslag, en de opslagmeningen in Admin van de Handel. Gebruik de `MAGE_RUN_TYPE` en `MAGE_RUN_CODE` variabelen in virtuele gastheren om de toepassing van de Handel te beginnen gebruikend deze websites of opslagmeningen.
+U configureert de websites, winkels en opslagweergaven in Commerce Admin. Gebruik de variabelen `MAGE_RUN_TYPE` en `MAGE_RUN_CODE` in virtuele hosts om de Commerce-toepassing te starten met deze websites of om weergaven op te slaan.
 
 Overweeg de volgende termen:
 
-- **Website**—is de container van het hoogste niveau voor plaatsen, leveringsmethodes, betalingsmethodes, en meer. Als u volledig aparte sites wilt maken die geen winkelwagentje, bezorgmethoden of andere sites delen, moet u afzonderlijke websites maken.
+- **Website** - is de top-level container voor plaatsen, leveringsmethodes, betalingsmethodes, en meer. Als u volledig aparte sites wilt maken die geen winkelwagentje, bezorgmethoden of andere sites delen, moet u afzonderlijke websites maken.
 
-  De de klantenrekeningen van de website kunnen tussen veelvoudige websites binnen één enkele instantie van de Handel worden gedeeld. Een website bevat minstens één winkel. Catalogusprijzen moeten op het niveau van de website worden beheerd.
+  Klantenaccounts van websites kunnen worden gedeeld tussen meerdere websites in één Commerce-exemplaar. Een website bevat minstens één winkel. Catalogusprijzen moeten op het niveau van de website worden beheerd.
 
-- **Winkel**—is opgenomen door een website. Een winkel bevat op zijn beurt ten minste één *winkelweergave*.
+- **opslag** - is bevat door een website. beurtelings, bevat een opslag minstens één *opslagmening*.
 
   Meerdere winkels kunnen winkelwagentjes, gebruikerssessies, betaalgateways en nog veel meer delen, maar ze hebben aparte catalogusstructuren en catalogusprijs.
 
@@ -39,17 +39,17 @@ Overweeg de volgende termen:
 
   De mening van de opslag verandert de manier pagina&#39;s worden voorgesteld, en typisch gebruikt om een opslag met verschillende lay-outs of talen te tonen. U kunt verschillende valuta&#39;s per winkelweergave beheren.
 
-  Elke website en elke winkelweergave moet een unieke id hebben. Deze id is vereist voor het gebruik van de `MAGE_RUN_TYPE` en `MAGE_RUN_CODE` variabelen, als hieronder:
+  Elke website en elke winkelweergave moet een unieke id hebben. Deze id is vereist om de variabelen `MAGE_RUN_TYPE` en `MAGE_RUN_CODE` als volgt te kunnen gebruiken:
 
-- `MAGE_RUN_TYPE` kan `store` of `website`
+- `MAGE_RUN_TYPE` kan `store` of `website` zijn
 
-   - Gebruiken `website` om een website in uw winkel te laden.
-   - Gebruiken `store` om een winkelweergave in uw winkel te laden.
+   - Gebruik `website` om een website in uw winkel te laden.
+   - Gebruik `store` om een winkelweergave in uw winkelvoorkeuren te laden.
 
-- `MAGE_RUN_CODE` is de unieke website- of opslagweergavecode die overeenkomt met `MAGE_RUN_TYPE`
+- `MAGE_RUN_CODE` is de unieke code van de website- of opslagweergave die overeenkomt met `MAGE_RUN_TYPE`
 
 Hieronder volgt een overzicht van de taken die u moet uitvoeren:
 
 1. [Stel websites in, sla weergaven op en sla deze op in de beheerfunctie.](ms-admin.md)
-1. Maak een virtuele host om een groot aantal websites of één virtuele host per website van Commerce te laden of stel de weergave van de winkel in om specifieke instructies voor elke winkel toe te staan.
-1. Geef de waarden van `MAGE_RUN_TYPE` en `MAGE_RUN_CODE` naar de webserver.
+1. Maak een virtuele host om veel websites of één virtuele host per Commerce-website te laden of stel de weergave van de winkel in om specifieke instructies voor elke winkel toe te staan.
+1. Geef de waarden van `MAGE_RUN_TYPE` en `MAGE_RUN_CODE` door aan de webserver.

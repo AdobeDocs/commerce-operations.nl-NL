@@ -5,7 +5,7 @@ feature: Configuration, Storage
 exl-id: 51c2b9b3-0f5f-4868-9191-911d5df341ec
 source-git-commit: af45ac46afffeef5cd613628b2a98864fd7da69b
 workflow-type: tm+mt
-source-wordcount: '247'
+source-wordcount: '238'
 ht-degree: 1%
 
 ---
@@ -16,43 +16,43 @@ Adobe Commerce biedt standaard ondersteuning voor het vergroten of verkleinen va
 
 In het volgende diagram ziet u hoe Nginx afbeeldingen in het cachegeheugen ophaalt, vergroot of verkleint en opslaat. Het formaat wordt bepaald door de parameters die in de URL zijn opgenomen, zoals hoogte en breedte.
 
-![afbeelding vergroten/verkleinen](../../assets/configuration/remote-storage-nginx-image-resize.png)
+![ beeld resize ](../../assets/configuration/remote-storage-nginx-image-resize.png)
 
 >[!TIP]
 >
->Voor Adobe Commerce over infrastructuurprojecten in de cloud gaat u naar [Externe opslag configureren voor handel op Cloud-infrastructuur](cloud-support.md)
+>Voor Adobe Commerce op de projecten van de wolkeninfrastructuur, zie [ verre opslag voor Commerce op de infrastructuur van de Wolk vormen ](cloud-support.md)
 
 ## URL-indeling configureren in Adobe Commerce
 
 Als u het formaat van afbeeldingen aan de serverzijde wilt wijzigen, moet u Adobe Commerce zodanig configureren dat er argumenten worden opgegeven voor de hoogte, breedte en locatie (URL) van de afbeelding.
 
-**Om Commerce voor server-kant beeld resizing te vormen**:
+**om Commerce voor server-zijbeeld te vormen resizing**:
 
-1. In de _Beheerder_ deelvenster, klikt u op **[!UICONTROL Stores]** > **[!UICONTROL Settings]** > **[!UICONTROL Configuration]** > **[!UICONTROL General]** > **[!UICONTROL Web]**.
+1. In het _Admin_ paneel, klik **[!UICONTROL Stores]** > **[!UICONTROL Settings]** > **[!UICONTROL Configuration]** > **[!UICONTROL General]** > **[!UICONTROL Web]**.
 
-1. Vouw in het rechterdeelvenster uit **[!UICONTROL Url options]**.
+1. Vouw **[!UICONTROL Url options]** uit in het rechterdeelvenster.
 
-1. In de _De URL-indeling van catalogusmedia_ sectie, duidelijk **[!UICONTROL Use system value]**.
+1. In de _media URL van de Catalogus formaat_ sectie, ontruim **[!UICONTROL Use system value]**.
 
-1. Selecteer de `Image optimization based on query parameters` URL in de **_De URL-indeling van catalogusmedia_** veld.
+1. Selecteer `Image optimization based on query parameters` URL in het **_media URL formaat van de Catalogus_** gebied.
 
 1. Klik op **[!UICONTROL Save Config]**.
 
-1. Doorgaan naar de [Nginx-configuratie](#configure-nginx).
+1. Ga aan de [ configuratie Nginx ](#configure-nginx) verder.
 
 ## Nginx configureren
 
-Als u de grootte van afbeeldingen op de server wilt blijven configureren, moet u de knop `nginx.conf` en een `proxy_pass` waarde voor de gekozen adapter.
+Als u de grootte van afbeeldingen aan de serverzijde wilt blijven configureren, moet u het `nginx.conf` -bestand voorbereiden en een `proxy_pass` -waarde voor de door u gekozen adapter opgeven.
 
-**Nginx inschakelen om het formaat van afbeeldingen te wijzigen**:
+**om Nginx toe te laten om beelden** resize:
 
-1. Installeer de [Filtermodule Nginx-afbeelding][nginx-module].
+1. Installeer de [ Nginx module van de beeldfilter ][nginx-module].
 
    ```shell
    load_module /etc/nginx/modules/ngx_http_image_filter_module.so;
    ```
 
-1. Een `nginx.conf` bestand op basis van de opgenomen sjabloon `nginx.conf.sample` bestand. Bijvoorbeeld:
+1. Maak een `nginx.conf` -bestand op basis van het opgenomen sjabloon `nginx.conf.sample` -bestand. Bijvoorbeeld:
 
    ```conf
    location ~* \.(jpg|jpeg|png|gif|webp)$ {
@@ -69,7 +69,7 @@ Als u de grootte van afbeeldingen op de server wilt blijven configureren, moet u
    }
    ```
 
-1. [_Optioneel_] Een `proxy_pass` waarde voor uw specifieke adapter.
+1. [_Facultatieve_] vorm een `proxy_pass` waarde voor uw specifieke adapter.
 
    - [Amazon Simple Storage Service (Amazon S3)](remote-storage-aws-s3.md)
 

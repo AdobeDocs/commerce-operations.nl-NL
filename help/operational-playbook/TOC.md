@@ -4,7 +4,7 @@ user-guide-description: Leer hoe te om uw ondernemingen operationeel klaar te kr
 feature: Best Practices
 source-git-commit: e83e2359377f03506178c28f8b30993c172282c7
 workflow-type: tm+mt
-source-wordcount: '143'
+source-wordcount: '138'
 ht-degree: 0%
 
 ---
@@ -13,12 +13,12 @@ ht-degree: 0%
 # Operationeel afspelen {#operational-playbook}
 
 - [Overzicht](overview.md)
-- Handel {#intro}
+- Commerce {#intro}
    - [Adobe Commerce](intro/commerce.md)
    - [Wat is e-commerce?](intro/ecommerce.md)
    - [Bedrijfsmodel](intro/business-model.md)
-   - [Handelsverrichtingen](intro/operations.md)
-   - [Handelskenmerken](intro/features.md)
+   - [Commerce-bewerkingen](intro/operations.md)
+   - [Commerce-functies](intro/features.md)
 - Leiderschap {#leadership}
    - [Beginselen](leadership/principles.md)
    - [Doelen](leadership/goals.md)
@@ -32,7 +32,7 @@ ht-degree: 0%
    - [Integraties van derden](solution/integrations.md)
    - [Upgrades, back-ups en onderhoud](solution/maintenance.md)
 - Strategie {#strategy}
-   - [Handelsstrategie](strategy/commerce.md)
+   - [Commerce-strategie](strategy/commerce.md)
    - [Focus](strategy/focus.md)
    - [Content strategy](strategy/content.md)
    - [Looptijd](strategy/maturity.md)
@@ -45,7 +45,7 @@ ht-degree: 0%
    - [Methode voor Agile Scrum](process/agile-scrum.md)
    - [Gemeenschappelijke projectworkshops](process/project-workshops.md)
    - [Testen](process/testing.md)
-- Mensen {#people}
+- Personen {#people}
    - [Teams](people/teams.md)
    - [Teamstructuur](people/team-structure.md)
    - [Organisatiestructuur](people/organizational-structure.md)
@@ -69,9 +69,9 @@ ht-degree: 0%
    - [Online klantenservice](product/customer-service.md)
    - [SEO](product/search-engine-optimization.md)
    - [E-mailmarketing](product/marketing.md)
-   - [Personalisatie](product/personalization.md)
+   - [Personalization](product/personalization.md)
    - [Klikken en verzamelen](product/click-collect.md)
    - [PWA](product/progressive-web-app.md)
 - [Controlelijsten en sjablonen](checklists-templates/home.md)
 - [Verklarende woordenlijst](glossary.md)
-- [Terugkeren naar operationele hulplijnen](https://experienceleague.adobe.com/docs/commerce-operations/operational-guides/home.html)
+- [ Terugkeer aan Operationele Gidsen ](https://experienceleague.adobe.com/docs/commerce-operations/operational-guides/home.html)

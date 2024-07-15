@@ -12,48 +12,48 @@ ht-degree: 0%
 
 # Varnish configureren
 
-[Varnish Cache] is een open-source webtoepassingsaccelerator (ook wel een _HTTP-accelerator_ of _HTTP-reverse-proxy in cache plaatsen_). Varnish slaat (of geheime voorgeheugens) dossiers of fragmenten van dossiers in geheugen op, die Varnish toelaat om de reactietijd en het verbruik van de netwerkbandbreedte op toekomstige, gelijkwaardige verzoeken te verminderen. In tegenstelling tot webservers als Apache en nginx, werd Varnish uitsluitend ontworpen voor gebruik met het HTTP-protocol.
+[ Varnish Geheime voorgeheugen ] is een open-bron de toepassingsaccelerator van het Web (die ook als a _wordt bedoeld de accelerator van HTTP_ of _caching de omgekeerde volmacht van HTTP_). Varnish slaat (of geheime voorgeheugens) dossiers of fragmenten van dossiers in geheugen op, die Varnish toelaat om de reactietijd en het verbruik van de netwerkbandbreedte op toekomstige, gelijkwaardige verzoeken te verminderen. In tegenstelling tot webservers als Apache en nginx, werd Varnish uitsluitend ontworpen voor gebruik met het HTTP-protocol.
 
-[Systeemvereisten](../../installation/system-requirements.md) Hier worden de ondersteunde versies van Varnish weergegeven.
+[ de vereisten van het Systeem ](../../installation/system-requirements.md) maakt een lijst van de gesteunde versies van Varnish.
 
 >[!WARNING]
 >
->Wij _sterk aanbevelen_ Als u Varnish gebruikt in productie. De ingebouwde volledige paginacoching-aan of het dossiersysteem of [database](https://developer.adobe.com/commerce/php/development/cache/partial/database-caching/)—is veel langzamer dan Varnish, en Varnish wordt ontworpen om het verkeer van HTTP te versnellen.
+>Wij _adviseren sterk_ u Varnish in productie gebruikt. Ingebouwd volledig-pagina caching-aan of het dossiersysteem of [ gegevensbestand ](https://developer.adobe.com/commerce/php/development/cache/partial/database-caching/) - is veel langzamer dan Varnish, en Varnish wordt ontworpen om het verkeer van HTTP te versnellen.
 
 Zie voor meer informatie over Varnish:
 
-- [De Big Varnish Picture]
-- [Opstartopties vervagen]
-- [Vernish en Websites]
+- [ het Grote Vierige Beeld ]
+- [ Varnish startopties ]
+- [ Varnish en de Prestaties van de Website ]
 
 ## Varnish topologiediagram
 
-Het volgende cijfer toont een basismening van Varnish in uw topologie van de Handel.
+Het volgende cijfer toont een basismening van Varnish in uw topologie van Commerce.
 
-![Standaardvernis](../../assets/configuration/varnish-basic.png)
+![ Basis Varnish diagram ](../../assets/configuration/varnish-basic.png)
 
-In de bovenstaande afbeelding resulteren HTTP-aanvragen van gebruikers via internet in een groot aantal aanvragen voor CSS, HTML, JavaScript en afbeeldingen (gezamenlijk aangeduid als _elementen_). Varnish bevindt zich vóór de webserver en verzendt deze aanvragen bij de webserver.
+In het voorafgaande cijfer, resulteren de verzoeken van HTTP van gebruikers over Internet in talrijke verzoeken om CSS, HTML, JavaScript, en beelden (die collectief als _worden bedoeld activa_). Varnish bevindt zich vóór de webserver en verzendt deze aanvragen bij de webserver.
 
-Wanneer de webserver elementen retourneert, worden cacheable elementen in het Varnish opgeslagen. Elke volgende aanvraag voor deze elementen wordt door Varnish ingewilligd (de aanvragen bereiken dus niet de webserver). Varnish retourneert bijzonder snel inhoud in de cache. De resultaten zijn snellere reactietijden om de inhoud aan gebruikers en een verminderd aantal verzoeken terug te keren die door de Handel moeten worden vervuld.
+Wanneer de webserver elementen retourneert, worden cacheable elementen in het Varnish opgeslagen. Elke volgende aanvraag voor deze elementen wordt door Varnish ingewilligd (de aanvragen bereiken dus niet de webserver). Varnish retourneert bijzonder snel inhoud in de cache. De resultaten zijn snellere reactietijden om de inhoud aan gebruikers en een verminderd aantal verzoeken terug te keren die door Commerce moeten worden vervuld.
 
-Elementen die in het cachegeheugen van Varnish zijn geplaatst, verlopen met een configureerbaar interval of worden vervangen door nieuwere versies van dezelfde elementen. U kunt de cache ook handmatig wissen met de beheerfunctie of de [`magento cache:clean`](../cli/manage-cache.md#clean-and-flush-cache-types) gebruiken.
+Assets in cache geplaatst door Varnish verloopt met een configureerbaar interval of wordt vervangen door nieuwere versies van dezelfde elementen. U kunt de cache ook handmatig wissen met de opdracht Admin of [`magento cache:clean`](../cli/manage-cache.md#clean-and-flush-cache-types) .
 
 ## Procesoverzicht
 
-Dit onderwerp bespreekt hoe te om Varnish met een minimale reeks parameters aanvankelijk te installeren en te testen dat het werkt. Vervolgens exporteert u een Varnish-configuratie vanuit Commerce Admin en test u deze opnieuw.
+Dit onderwerp bespreekt hoe te om Varnish met een minimale reeks parameters aanvankelijk te installeren en te testen dat het werkt. Vervolgens exporteert u een vernis-configuratie vanuit de Commerce-beheerder en test u deze opnieuw.
 
 Het proces kan als volgt worden samengevat:
 
-1. Installeer Varnish en test het door tot om het even welke pagina van de Handel toegang te hebben om te zien of krijgt u de antwoordkopballen van HTTP die erop wijzen Varnish werkt.
-1. Installeer de software van de Handel en gebruik Admin om een de configuratiedossier van de Varnish tot stand te brengen.
+1. Installeer Varnish en test het door tot om het even welke pagina van Commerce toegang te hebben om te zien of krijgt u de antwoordkopballen van HTTP die erop wijzen Varnish werkt.
+1. Installeer de Commerce-software en gebruik Admin om een Varnish-configuratiebestand te maken.
 1. Vervang het bestaande Varnish-configuratiebestand door het bestand dat door de beheerder is gegenereerd.
 1. Test alles opnieuw.
 
-   Als er niets in uw `<magento_root>/var/page_cache` directory, hebt u Varnish met Handel met succes gevormd!
+   Als er niets in uw `<magento_root>/var/page_cache` folder is, hebt u met succes Varnish met Commerce gevormd!
 
 >[!NOTE]
 >
->- Behalve waar genoteerd, moet u alle bevelen ingaan die in dit onderwerp als gebruiker met worden besproken `root` rechten.
+>- Behalve waar genoteerd, moet u alle bevelen ingaan die in dit onderwerp als gebruiker met `root` voorrechten worden besproken.
 >
 >- Dit onderwerp is geschreven voor Varnish op CentOS en Apache 2.4. Als u Varnish in een verschillende omgeving instelt, kunnen sommige opdrachten anders zijn. Raadpleeg de documentatie bij Varnish voor meer informatie.
 
@@ -61,11 +61,11 @@ Het proces kan als volgt worden samengevat:
 
 We kennen de volgende kwesties met Varnish:
 
-- [Varnish ondersteunt SSL niet]
+- [ Varnish steunt geen SSL ]
 
   Als alternatief, gebruiksSSL beëindiging of een SSL beëindigingsvolmacht.
 
-- Als u de inhoud van het dialoogvenster `<magento_root>/var/cache` directory, moet u Varnish opnieuw beginnen.
+- Als u de inhoud van de map `<magento_root>/var/cache` handmatig verwijdert, moet u Varnish opnieuw starten.
 
 - Mogelijke fout bij het installeren van Commerce:
 
@@ -76,7 +76,7 @@ We kennen de volgende kwesties met Varnish:
   Varnish cache server
   ```
 
-  Als deze fout optreedt, bewerkt u `default.vcl` en voeg een onderbreking aan toe `backend` stanza, als hieronder:
+  Als deze fout optreedt, bewerkt u `default.vcl` en voegt u als volgt een time-out toe aan de `backend` stanza:
 
   ```conf
   backend default {
@@ -90,9 +90,9 @@ We kennen de volgende kwesties met Varnish:
 
 Varnish caching werkt met Commerce met behulp van:
 
-- [`nginx.conf.sample`](https://github.com/magento/magento2/blob/2.4/nginx.conf.sample) van Magento 2 de bewaarplaats van GitHub
-- `.htaccess` gedistribueerd configuratiebestand voor Apache dat bij de Handel wordt geleverd
-- `default.vcl` configuratie voor Varnish die wordt gegenereerd met de [Beheerder](../cache/configure-varnish-commerce.md)
+- [`nginx.conf.sample` ](https://github.com/magento/magento2/blob/2.4/nginx.conf.sample) van Magento 2 de bewaarplaats van GitHub
+- `.htaccess` gedistribueerd configuratiebestand voor Apache dat bij Commerce wordt geleverd
+- `default.vcl` configuratie voor Varnish produceerde gebruikend [ Admin ](../cache/configure-varnish-commerce.md)
 
 >[!INFO]
 >
@@ -114,9 +114,9 @@ In deze sectie wordt een browsercontrole gebruikt om te tonen hoe elementen in d
 
 In de volgende afbeelding ziet u een voorbeeld met een browsercontrole:
 
-![De eerste keer dat een aanvraag voor een cacheable object wordt ingediend, levert Varnish het object aan de browser](../../assets/configuration/varnish-apache-first-visit.png)
+![ de eerste keer een verzoek voor een cacheable voorwerp wordt gemaakt, levert Varnish het aan browser ](../../assets/configuration/varnish-apache-first-visit.png)
 
-In het voorgaande voorbeeld wordt een aanvraag voor de hoofdpagina storefront getoond (`m2_ce_my`). CSS- en JavaScript-elementen worden in cache geplaatst in de clientbrowser.
+Het voorgaande voorbeeld toont een verzoek om de hoofdpagina van de storefront (`m2_ce_my`). CSS- en JavaScript-elementen worden in cache geplaatst in de clientbrowser.
 
 >[!NOTE]
 >
@@ -126,23 +126,23 @@ In het voorgaande voorbeeld wordt een aanvraag voor de hoofdpagina storefront ge
 
 Als dezelfde browser dezelfde pagina opnieuw opvraagt, worden deze elementen geleverd vanuit de lokale browsercache, zoals in de volgende afbeelding wordt getoond.
 
-![De volgende keer dat hetzelfde object wordt opgevraagd, worden de elementen geladen uit de lokale browsercache](../../assets/configuration/varnish-apache-second-visit.png)
+![ de volgende tijd het zelfde voorwerp wordt gevraagd, laden de activa van het lokale browser geheime voorgeheugen ](../../assets/configuration/varnish-apache-second-visit.png)
 
 Let op het verschil in responstijd tussen het eerste en het tweede verzoek. Ook hier hebben statische elementen een antwoordcode van 200 (OK), omdat ze voor het eerst worden geleverd via de lokale cache.
 
-## Hoe de Handel Etag gebruikt
+## Hoe Commerce Etag gebruikt
 
 In het volgende voorbeeld worden responsheaders voor een bepaald statisch element weergegeven.
 
-![Met ETag kunt u gemakkelijker bepalen of een statisch element is gewijzigd](../../assets/configuration/varnish-etag.png)
+![ ETag maakt het gemakkelijker om te bepalen of een statisch element of niet is veranderd ](../../assets/configuration/varnish-etag.png)
 
 `calendar.css` heeft een ETag- antwoordkopbal wat betekent het CSS dossier op cliëntbrowser kan worden vergeleken met die op de server.
 
 Daarnaast worden statische elementen geretourneerd met de HTTP-statuscode 304 (Niet gewijzigd), zoals in de volgende afbeelding wordt getoond.
 
-![De HTTP 304 (Niet Gewijzigd) antwoordcode wijst op het statische element in het lokale geheime voorgeheugen het zelfde als op de server is](../../assets/configuration/varnish-304.png)
+![ HTTP 304 (Gewijzigd niet) antwoordcode wijst op het statische element in het lokale geheime voorgeheugen het zelfde als op de server ](../../assets/configuration/varnish-304.png) is
 
-De 304-statuscode treedt op omdat de gebruiker de lokale cache ongeldig heeft gemaakt en de inhoud op de server niet is gewijzigd. Vanwege de 304-statuscode is het statische element _content_ wordt niet overgedragen. Alleen HTTP-headers worden naar de browser gedownload.
+De 304-statuscode treedt op omdat de gebruiker de lokale cache ongeldig heeft gemaakt en de inhoud op de server niet is gewijzigd. Wegens de 304 statuscode, wordt de statische activa _inhoud_ niet overgebracht; slechts worden de kopballen van HTTP gedownload aan browser.
 
 Als de inhoud op de server verandert, downloadt de client het statische element met een HTTP 200 (OK)-statuscode en een nieuwe ETag.
 

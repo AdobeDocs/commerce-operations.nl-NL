@@ -14,17 +14,17 @@ ht-degree: 9%
 
 ## Profielen
 
-U kunt de hoeveelheid gegevens aanpassen die u maakt met _profielen_ (klein, middelgroot, groot en extra groot). Profielen bevinden zich in de `<magento_root>/setup/performance-toolkit/profiles/<ce|ee>` directory.
+U kunt de hoeveelheid gegevens aanpassen u gebruikend _profielen_ (klein, middelgroot, groot, en extra groot) creeert. Profielen bevinden zich in de map `<magento_root>/setup/performance-toolkit/profiles/<ce|ee>` .
 
 Bijvoorbeeld: `/var/www/html/magento2/setup/performance-toolkit/profiles/ce`
 
-Het volgende cijfer toont hoe een product op de winkel gebruikend wordt getoond _klein_ profiel:
+Het volgende cijfer toont aan hoe een product op de storefront gebruikend het _kleine_ profiel wordt getoond:
 
-![Voorbeeld van opslag met gegenereerde gegevens](../../assets/configuration/generate-data.png)
+![ opslag van de Steekproef met geproduceerde gegevens ](../../assets/configuration/generate-data.png)
 
 De volgende tabel bevat details over de profielen van de gegevensgenerator: klein, middelgroot, groot en extra groot.
 
-| Parameter | Klein profiel | Normaal profiel | Normaal profiel voor meerdere sites | Groot profiel | Extra groot profiel |
+| Parameter | Klein profiel | Medium-profiel | Medium-profiel voor meerdere sites | Groot profiel | Extra groot profiel |
 | --- | --- | --- | --- | --- | --- |
 | `websites` | 1 | 3 | 25 | 5 | 5 |
 | `store_groups` | 1 | 3 | 25 | 5 | 5 |
@@ -50,9 +50,9 @@ De volgende tabel bevat details over de profielen van de gegevensgenerator: klei
 >
 >Voordat u de gegevensgenerator uitvoert, schakelt u alle snijtaken uit die op de server worden uitgevoerd. Als u de functie voor uitsnijden uitschakelt, voorkomt u dat de gegevensgenerator handelingen uitvoert die een conflict veroorzaken met actieve uitsnijdtaken en dat onnodige fouten worden voorkomen.
 >
->Als u de gebeurtenis wilt implementeren met [!DNL Adobe I/O Events for Adobe Commerce] tijdens het testen van de prestaties, voer deze opdracht uit voordat u zich abonneert [gebeurtenissen](https://developer.adobe.com/commerce/extensibility/events/). Als u zich eerst abonneert op gebeurtenissen, kunnen er fouten optreden.
+>Als u gebeurtenis met [!DNL Adobe I/O Events for Adobe Commerce] terwijl het testen van prestaties van plan bent uit te voeren, stel dit bevel in werking alvorens [ gebeurtenissen ](https://developer.adobe.com/commerce/extensibility/events/) in te tekenen. Als u zich eerst abonneert op gebeurtenissen, kunnen er fouten optreden.
 
-Voer de opdracht uit zoals in deze sectie wordt beschreven. Nadat het bevel loopt, moet u [alle indexen opnieuw indexeren](../cli/manage-indexers.md).
+Voer de opdracht uit zoals in deze sectie wordt beschreven. Na de bevellooppas, moet u [ alle indexeerders ](../cli/manage-indexers.md) opnieuw indexeren.
 
 Opdrachtopties:
 
@@ -60,7 +60,7 @@ Opdrachtopties:
 bin/magento setup:perf:generate-fixtures <path-to-profile>
 ```
 
-Wanneer `<path-to-profile>` geeft het absolute pad van het bestandssysteem naar en de naam van een profiel op.
+Hier geeft `<path-to-profile>` het absolute pad van het bestandssysteem op naar en de naam van een profiel.
 
 Bijvoorbeeld:
 
@@ -125,7 +125,7 @@ Genereert kenmerkreeksen met gespecificeerde configuratie. XML-profielknooppunt:
 
 ### Bundelproducten
 
-Genereert bundelproducten. Gegenereerde bundelselecties worden niet afzonderlijk weergegeven in de catalogus. Producten worden gelijkmatig verdeeld over categorieën en websites. Indien  `assign_entities_to_all_websites` uit het profiel is ingesteld op `1`. Producten worden toegewezen aan alle websites.
+Genereert bundelproducten. Gegenereerde bundelselecties worden niet afzonderlijk weergegeven in de catalogus. Producten worden gelijkmatig verdeeld over categorieën en websites. Als `assign_entities_to_all_websites` uit het profiel is ingesteld op `1` . Producten worden toegewezen aan alle websites.
 
 XML-profielknooppunt:
 
@@ -163,7 +163,7 @@ Genereert prijsregels voor catalogi. XML-profielknooppunt:
 
 ### Categorieën
 
-Hiermee genereert u categorieën. Indien `assign_entities_to_all_websites` is ingesteld op `0`, worden alle categorieën gelijkmatig verdeeld per wortelcategorieën; anders, worden alle categorieën toegewezen aan één wortelcategorie.
+Hiermee genereert u categorieën. Als `assign_entities_to_all_websites` is ingesteld op `0` , worden alle categorieën gelijkmatig verdeeld per hoofdcategorie. Als dit niet het geval is, worden alle categorieën toegewezen aan één hoofdcategorie.
 
 XML-profielknooppunt:
 
@@ -195,7 +195,7 @@ Stelt waarden in voor configuratievelden. XML-profielknooppunt:
 
 ### Configureerbare producten
 
-Hiermee genereert u configureerbare producten. Gegenereerde configureerbare opties worden niet afzonderlijk weergegeven in de catalogus. Producten worden gelijkmatig verdeeld over categorieën en websites. Indien `assign_entities_to_all_websites` is ingesteld op `1`, worden producten aan alle websites toegewezen.
+Hiermee genereert u configureerbare producten. Gegenereerde configureerbare opties worden niet afzonderlijk weergegeven in de catalogus. Producten worden gelijkmatig verdeeld over categorieën en websites. Als `assign_entities_to_all_websites` is ingesteld op `1` , worden producten toegewezen aan alle websites.
 
 De volgende XML-knooppuntindelingen worden ondersteund:
 
@@ -380,9 +380,9 @@ XML-profielknooppunt:
 
 ### Eenvoudige producten
 
-Hiermee genereert u eenvoudige producten. De producten worden verdeeld per gebrek en vooraf bepaalde attributenreeksen. Als extra kenmerksets in profiel worden opgegeven als: `<product_attribute_sets>{int}</product_attribute_sets>`, worden de producten ook verdeeld per extra attributenreeksen.
+Hiermee genereert u eenvoudige producten. De producten worden verdeeld per gebrek en vooraf bepaalde attributenreeksen. Als extra kenmerkenreeksen in profiel als: `<product_attribute_sets>{int}</product_attribute_sets>` worden gespecificeerd, worden de producten ook verdeeld per extra attributenreeksen.
 
-Producten worden gelijkmatig verdeeld over categorieën en websites. Indien `assign_entities_to_all_websites` is ingesteld op `1`, worden producten aan alle websites toegewezen.
+Producten worden gelijkmatig verdeeld over categorieën en websites. Als `assign_entities_to_all_websites` is ingesteld op `1` , worden producten toegewezen aan alle websites.
 
 XML-profielknooppunt:
 
@@ -402,7 +402,7 @@ Genereert websites. XML-profielknooppunt:
 
 ### Winkelgroepen
 
-Genereert opslaggroepen (in de beheerder wordt verwezen naar _winkelen_). Winkelgroepen worden normaal over websites verdeeld.
+Produceert opslaggroepen (die in Admin als _worden bedoeld opslag_). Winkelgroepen worden normaal over websites verdeeld.
 
 XML-profielknooppunt:
 
@@ -436,14 +436,14 @@ Hiermee genereert u belastingtarieven. XML-profielknooppunt:
 
 - `<Commerce root dir>/setup/performance-toolkit/config/attributeSets.xml`—Standaardkenmerksets
 
-- `<Commerce root dir>/setup/performance-toolkit/config/customerConfig.xml`—Klantenconfiguratie
+- `<Commerce root dir>/setup/performance-toolkit/config/customerConfig.xml`—Configuratie van de klant
 
-- `<Commerce root dir>/setup/performance-toolkit/config/description.xml`—Configuratie van volledige productbeschrijving
+- `<Commerce root dir>/setup/performance-toolkit/config/description.xml`—Configuratie met volledige beschrijving van product
 
-- `<Commerce root dir>/setup/performance-toolkit/config/shortDescription.xml`—Configuratie van productkorte beschrijving
+- `<Commerce root dir>/setup/performance-toolkit/config/shortDescription.xml`—Configuratie met productkorte beschrijving
 
-- `<Commerce root dir>/setup/performance-toolkit/config/searchConfig.xml`—Configuratie voor korte en volledige beschrijving van het product. Deze oudere implementatie is beschikbaar voor achterwaartse compatibiliteit.
+- `<Commerce root dir>/setup/performance-toolkit/config/searchConfig.xml` - Configuratie voor product korte en volledige beschrijving. Deze oudere implementatie is beschikbaar voor achterwaartse compatibiliteit.
 
-- `<Commerce root dir>/setup/performance-toolkit/config/searchTerms.xml`—Klein aantal zoektermen tot in korte en volledige beschrijvingen
+- `<Commerce root dir>/setup/performance-toolkit/config/searchTerms.xml` - Kleine aantallen zoektermen tot in korte en volledige beschrijvingen
 
-- `<Commerce root dir>/setup/performance-toolkit/config/searchTermsLarge.xml`—Groter aantal zoektermen dat moet worden gebruikt in korte en volledige beschrijving.
+- `<Commerce root dir>/setup/performance-toolkit/config/searchTermsLarge.xml` - Groter aantal zoektermen voor gebruik in korte en volledige beschrijving.

@@ -26,8 +26,8 @@ Dit onderwerp gaat dieper in op enkele van de belangrijkste normen voor de ontwi
 
 Terwijl sommige oplossingsimplementators hun eigen voorkeur in methodologieën, processen, en hulpmiddelen kunnen hebben, richt dit playbook zich op erkende beste praktijken en methodologieën die over de meeste implementaties kunnen worden gedeeld.
 
-Net als bij elk groot IT-project is Adobe Commerce gebaseerd op coderingsstandaarden die gebruikmaken van best practices en standaardisering, en standaarden die binnen de Adobe Commerce zijn ontwikkeld [Codeerstandaard](https://developer.adobe.com/commerce/php/coding-standards/). Het naleven van deze normen is belangrijk om insecten te elimineren en de kwaliteit en het onderhoud van douane-gebouwde code te verbeteren.
+Als om het even welk groot project van IT, Adobe Commerce wordt voortgebouwd op coderingsnormen die beste praktijken en normalisatie, en normen gebruiken die binnen de Norm van de Codering van Adobe Commerce [ ](https://developer.adobe.com/commerce/php/coding-standards/) zijn gevestigd. Het naleven van deze normen is belangrijk om insecten te elimineren en de kwaliteit en het onderhoud van douane-gebouwde code te verbeteren.
 
 ## Adobe Commerce over cloudinfrastructuur
 
-Adobe Commerce on cloud Infrastructure is een beheerd, geautomatiseerd hostplatform voor de Adobe Commerce-software. Adobe Commerce op cloudinfrastructuur wordt geleverd met verschillende functies die deze infrastructuur onderscheiden van Adobe Commerce-implementaties op locatie. Zie de [Cloud Guide](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/overview.html).
+Adobe Commerce on cloud Infrastructure is een beheerd, geautomatiseerd hostplatform voor de Adobe Commerce-software. Adobe Commerce op cloudinfrastructuur wordt geleverd met verschillende functies die deze infrastructuur onderscheiden van Adobe Commerce-implementaties op locatie. Zie de [ Gids van de Wolk ](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/overview.html).

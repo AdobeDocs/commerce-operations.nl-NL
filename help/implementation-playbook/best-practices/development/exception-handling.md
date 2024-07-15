@@ -6,20 +6,20 @@ role: Developer
 exl-id: e7ad685b-3eaf-485b-8ab1-702f2e7ab89e
 source-git-commit: 4bf8dd5c5320cc9a34cfaa552ec5e91d517d3617
 workflow-type: tm+mt
-source-wordcount: '571'
+source-wordcount: '565'
 ht-degree: 0%
 
 ---
 
 # Aanbevolen werkwijzen voor het verwerken van uitzonderingen
 
-Als een uitzondering niet naar de `exception.log` bestand met als uitzondering het model context, wordt het niet herkend en correct geanalyseerd in New Relic of andere PSR-3 monoloog-compatibele logboekopslag. Het registreren slechts een deel van de uitzondering (of het registreren van het aan het verkeerde dossier) leidt tot insecten in productie wanneer de uitzonderingen worden genegeerd.
+Als een uitzondering niet naar het `exception.log` dossier met het uitzonderingsmodel als context wordt geschreven, wordt het niet erkend en correct geanalyseerd in New Relic of andere PSR-3 monolog-compatibele logboekopslag. Het registreren slechts een deel van de uitzondering (of het registreren van het aan het verkeerde dossier) leidt tot insecten in productie wanneer de uitzonderingen worden genegeerd.
 
 ## Uitzonderingsverwerking corrigeren
 
 De volgende controlelijst verstrekt voorbeelden om correcte uitzonderingsbehandeling aan te tonen.
 
-### ![correct](../../../assets/yes.svg) Schrijf aan het uitzonderingslogboek
+### ![ correct ](../../../assets/yes.svg) schrijft aan het uitzonderingslogboek
 
 Schrijf aan het uitzonderingslogboek gebruikend het volgende patroon, ongeacht verdere acties, tenzij er een dwingende reden is om niet te doen.
 
@@ -31,11 +31,11 @@ try {
 }
 ```
 
-Deze aanpak slaat automatisch de `$e->getMessage` aan het logboekbericht en de `$e` object naar de context, na de [PSR-3 contextstandaard](https://www.php-fig.org/psr/psr-3/#13-context). Dit wordt gedaan in `\Magento\Framework\Logger\Monolog::addRecord`.
+Deze benadering bewaart automatisch `$e->getMessage` aan het logboekbericht en het `$e` voorwerp aan de context, na [ PSR-3 contextstandaard ](https://www.php-fig.org/psr/psr-3/#13-context). Dit gebeurt in `\Magento\Framework\Logger\Monolog::addRecord` .
 
-### ![correct](../../../assets/yes.svg) Signalen dempen
+### ![ correcte ](../../../assets/yes.svg) Geluidssignalen dempen
 
-De signalen van de demping door uitzonderingen niet te registreren die deel van de voorgenomen verrichtingenstroom uitmaken. Er is geen follow-upactie nodig wanneer de uitzondering wordt aangetroffen, dus deze hoeft niet te worden geregistreerd en geanalyseerd wanneer deze zich voordoet. Voeg een opmerking toe die de reden voor het dempen van signalen aangeeft en die aangeeft dat dit opzettelijk is. Combineren met `phpcs:ignore`.
+De signalen van de demping door uitzonderingen niet te registreren die deel van de voorgenomen verrichtingenstroom uitmaken. Er is geen follow-upactie nodig wanneer de uitzondering wordt aangetroffen, dus deze hoeft niet te worden geregistreerd en geanalyseerd wanneer deze zich voordoet. Voeg een opmerking toe die de reden voor het dempen van signalen aangeeft en die aangeeft dat dit opzettelijk is. Combineer met `phpcs:ignore` .
 
 ```php
 try {
@@ -45,9 +45,9 @@ try {
 }
 ```
 
-### ![correct](../../../assets/yes.svg) Uitzonderingen downgraden
+### ![ correcte ](../../../assets/yes.svg) uitzonderingen van de Ondergraving
 
-De uitzonderingen van de downgrade door te volgen [PSR-3 contextstandaard](https://www.php-fig.org/psr/psr-3/#13-context).
+De uitzonderingen van de daling door [ PSR-3 contextstandaard ](https://www.php-fig.org/psr/psr-3/#13-context) te volgen.
 
 ```php
 try {
@@ -57,7 +57,7 @@ try {
 }
 ```
 
-### ![correct](../../../assets/yes.svg) Logboekregistratie is altijd de eerste
+### ![ correct ](../../../assets/yes.svg) het Registreren komt altijd eerst
 
 Als beste praktijk komt het registreren altijd eerst in de code om gevallen te verhinderen waar een andere uitzondering of een fatale fout alvorens aan het logboek wordt geworpen.
 
@@ -70,9 +70,9 @@ try {
 }
 ```
 
-### ![correct](../../../assets/yes.svg) Logberichten en het volledige uitzonderingsspoor
+### ![ correcte ](../../../assets/yes.svg) berichten van het Logboek en het volledige uitzonderingsspoor
 
-De berichten van het logboek en het volledige uitzonderingsspoor door te volgen [PSR-3 contextstandaard](https://www.php-fig.org/psr/psr-3/#13-context).
+De berichten van het logboek en het volledige uitzonderingsspoor door [ PSR-3 contextstandaard ](https://www.php-fig.org/psr/psr-3/#13-context) te volgen.
 
 ```php
 try {
@@ -86,9 +86,9 @@ try {
 
 In de volgende voorbeelden wordt een onjuiste afhandeling van uitzonderingen getoond.
 
-### ![onjuist](../../../assets/no.svg) Logica voor logboekregistratie
+### ![ onjuiste ](../../../assets/no.svg) Logica alvorens te registreren
 
-De logica vóór registreren kan tot een andere uitzondering of fatale fout leiden, die de uitzondering verhindert worden geregistreerd en zou moeten worden vervangen door [correct voorbeeld](#logging-always-comes-first).
+De logica vóór het registreren kan tot een andere uitzondering of fatale fout leiden, die de uitzondering verhindert worden geregistreerd en zou door [ correct voorbeeld ](#logging-always-comes-first) moeten worden vervangen.
 
 ```php
 try {
@@ -99,9 +99,9 @@ try {
 }
 ```
 
-### ![onjuist](../../../assets/no.svg) Leeg `catch`
+### ![ onjuist ](../../../assets/no.svg) Leeg `catch`
 
-Leeg `catch` blokken kunnen een teken zijn van onbedoeld dempen en moeten worden vervangen door de [correct voorbeeld](#mute-signals).
+Lege `catch` blokken kunnen een teken van onbedoeld dempen zijn en zouden door het [ correcte voorbeeld ](#mute-signals) moeten worden vervangen.
 
 ```php
 try {
@@ -110,7 +110,7 @@ try {
 }
 ```
 
-### ![onjuist](../../../assets/no.svg) Dubbele lokalisatie
+### ![ onjuiste ](../../../assets/no.svg) dubbele lokalisatie
 
 Als de gevangen gelokaliseerde uitzondering nog niet wordt vertaald, los het probleem op de plaats op waar de uitzondering de eerste keer wordt geworpen.
 
@@ -122,7 +122,7 @@ try {
 }
 ```
 
-### ![onjuist](../../../assets/no.svg) Logberichten en tracering naar verschillende logbestanden
+### ![ onjuiste ](../../../assets/no.svg) de berichten van het Logboek en spoor aan verschillende logboekdossiers
 
 In de volgende code wordt de stacktracering voor een uitzondering verkeerd als een tekenreeks naar een logbestand geregistreerd.
 
@@ -137,11 +137,11 @@ try {
 
 Deze benadering introduceert lijnonderbrekingen in het bericht, dat niet volgzaam met PSR-3 is. De uitzondering, met inbegrip van stapelspoor, moet deel van de berichtcontext uitmaken om ervoor te zorgen dat het correct met het bericht in New Relic of andere PSR-3 monolog-compatibele logboekopslag wordt bewaard.
 
-Los dit probleem door de code te vervangen die de correcte die voorbeelden volgt in worden getoond [Schrijf aan het uitzonderingslogboek](#write-to-the-exception-log) of [Uitzonderingen downgraden](#downgrade-exceptions).
+Los dit probleem door de code na de correcte die voorbeelden te vervangen in [ worden getoond schrijven aan het uitzonderingslogboek ](#write-to-the-exception-log) of [ uitzonderingen van de Ondergraving ](#downgrade-exceptions).
 
-### ![onjuist](../../../assets/no.svg) Uitzonderingen downgraden zonder context
+### ![ onjuiste ](../../../assets/no.svg) de uitzonderingen van de Downgrade zonder context
 
-De uitzondering wordt gedowngraded naar een fout, die niet toestaat dat een object wordt doorgegeven, maar alleen een tekenreeks, vandaar de `getMessage()`. Hierdoor gaat het spoor verloren en moet het worden vervangen door de juiste voorbeelden in [Schrijf aan het uitzonderingslogboek](#write-to-the-exception-log) of [Uitzonderingen downgraden](#downgrade-exceptions).
+De uitzondering wordt gedowngraded naar een fout, die niet toestaat dat een object wordt doorgegeven, maar alleen een tekenreeks, vandaar de `getMessage()` . Dit veroorzaakt het spoor dat moet worden verloren en door de correcte die voorbeelden worden vervangen in [ worden getoond schrijven aan het uitzonderingslogboek ](#write-to-the-exception-log) of [ uitzonderingen van de Ondergraving ](#downgrade-exceptions).
 
 ```php
 try {
@@ -151,9 +151,9 @@ try {
 }
 ```
 
-### ![onjuist](../../../assets/no.svg) Logboek slechts het bericht aan het uitzonderingslogboek
+### ![ onjuist ](../../../assets/no.svg) Logboek slechts het bericht aan het uitzonderingslogboek
 
-In plaats van het object door te geven `$e`, alleen `$e->getMessage()` wordt doorgegeven. Dit veroorzaakt dat het spoor wordt verloren en zou door de correcte getoonde voorbeelden moeten worden vervangen [Schrijf aan het uitzonderingslogboek](#write-to-the-exception-log) of [Uitzonderingen downgraden](#downgrade-exceptions).
+In plaats van het object `$e` door te geven, wordt alleen `$e->getMessage()` doorgegeven. Dit veroorzaakt het spoor dat moet worden verloren en door de correcte getoonde voorbeelden [ worden vervangen schrijft aan het uitzonderingslogboek ](#write-to-the-exception-log) of [ uitzonderingen van de Ondergraving ](#downgrade-exceptions).
 
 ```php
 try {
@@ -163,9 +163,9 @@ try {
 }
 ```
 
-### ![onjuist](../../../assets/no.svg) Ontbreekt `// phpcs:ignore Magento2.CodeAnalysis.EmptyBlock.DetectedCatch`
+### ![ onjuist ](../../../assets/no.svg) Ontbrekend `// phpcs:ignore Magento2.CodeAnalysis.EmptyBlock.DetectedCatch`
 
-Het weglaten van `phpcs:ignore` De lijn brengt een waarschuwing in PHPCS teweeg en zou niet uw CI moeten overgaan. Deze moet worden vervangen door het juiste voorbeeld in [Signalen dempen](#mute-signals).
+Als u de regel `phpcs:ignore` weglaat, wordt een waarschuwing in PHPCS gegenereerd en wordt uw CI niet doorgegeven. Dit zou door het correcte voorbeeld moeten worden vervangen dat in [ wordt getoond signalen van de Dempen ](#mute-signals).
 
 ```php
 try {

@@ -20,7 +20,7 @@ Deze gids is ontworpen voor handelaren, ontwikkelaars en integrators om de optim
 ## Wat staat er in de gids?
 
 * [[!DNL Site-Wide Analysis Tool]](../tools/site-wide-analysis-tool/intro.md)
-* [[!DNL Quality Patches Tool]: Zoeken naar patches](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html){target="_blank"}
+* [[!DNL Quality Patches Tool]: Onderzoek naar flarden ](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html) {target="_blank"}
 * [&quot;bin/magento&quot;](reference/commerce-on-premises.md)
 * [&quot;bin/uct&quot;](reference/commerce-on-premises.md)
 * [[!DNL Observation for Adobe Commerce]](../tools/observation-for-adobe-commerce/intro.md)

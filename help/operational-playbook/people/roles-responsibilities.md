@@ -4,7 +4,7 @@ description: Leer over de verschillende rollen en verantwoordelijkheden betrokke
 exl-id: 6e61dcce-ad71-4380-bae4-48be1a3d88b9
 source-git-commit: e76f101df47116f7b246f21f0fe0fa72769d2776
 workflow-type: tm+mt
-source-wordcount: '1170'
+source-wordcount: '1166'
 ht-degree: 0%
 
 ---
@@ -130,12 +130,12 @@ Het team van de Inhoud of zit binnen het team van de Marketing, het team van de 
 
 Het inhoudsteam is verantwoordelijk voor:
 
-- **De inhoud ordenen**—Elementen, URL&#39;s, navigatie en paginastructuur moeten eenvoudig en gebruiksvriendelijk zijn. Als de site te ingewikkeld is, gaan klanten verloren.
+- **Organiserend de inhoud** - Elementen, URLs, navigatie, en paginastructuur moeten ongecompliceerd en gebruikersvriendelijk zijn. Als de site te ingewikkeld is, gaan klanten verloren.
 
-- **Gebroken inhoud herstellen**—Door verbroken afbeeldingen, pagina&#39;s, ontbrekende pagina&#39;s, een gebroken afrekenstroom en foutberichten verlaten klanten uw site en krijgen ze een negatieve indruk.
+- **Vast het bevestigen gebroken inhoud** - Gebroken beelden, pagina&#39;s, ontbrekende pagina&#39;s, gebroken controlestroom, en foutenmeldingen maken klanten uw plaats verlaten en een negatieve indruk verlaten.
 
-- **Inhoud bijwerken**—Inhoud op de website moet up-to-date zijn. Als de site uit verouderde inhoud bestaat, is dit van invloed op de ervaring van de klant en neemt de werklast voor het team van de klantenservice toe. Ze moeten bijvoorbeeld vragen van klanten beantwoorden die hadden moeten worden beantwoord door inhoud op de website.
+- **het Bijwerken inhoud** - de inhoud op de website moet bijgewerkt zijn. Als de site uit verouderde inhoud bestaat, is dit van invloed op de ervaring van de klant en neemt de werklast voor het team van de klantenservice toe. Ze moeten bijvoorbeeld vragen van klanten beantwoorden die hadden moeten worden beantwoord door inhoud op de website.
 
-- **Inhoud vereenvoudigen**—Het inhoudsteam moet eenvoudige en rechte-voorwaartse inhoud maken. Eenvoudige taal werkt het beste als u communiceert met klanten.
+- **het Vereenvoudigen van inhoud** - het team van de Inhoud moet eenvoudige en rechte voorwaartse inhoud tot stand brengen. Eenvoudige taal werkt het beste als u communiceert met klanten.
 
 Het team Inhoud maakt, test, beheert en optimaliseert alle inhoud van de website, wat het rendement op het rendement van investeringen oplevert.

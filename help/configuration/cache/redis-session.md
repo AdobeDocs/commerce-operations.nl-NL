@@ -5,7 +5,7 @@ feature: Configuration, Cache
 exl-id: f93f500d-65b0-4788-96ab-f1c3d2d40a38
 source-git-commit: a2bd4139aac1044e7e5ca8fcf2114b7f7e9e9b68
 workflow-type: tm+mt
-source-wordcount: '724'
+source-wordcount: '712'
 ht-degree: 1%
 
 ---
@@ -14,12 +14,12 @@ ht-degree: 1%
 
 >[!IMPORTANT]
 >
->U moet [Redis installeren](config-redis.md#install-redis) voordat u verdergaat.
+>U moet [ Redis ](config-redis.md#install-redis) installeren alvorens verder te gaan.
 
 
-De handel verstrekt nu bevel-lijn opties om Redis zittingsopslag te vormen. In vorige versies hebt u de opdracht `<Commerce install dir>app/etc/env.php` bestand. De bevellijn verstrekt bevestiging en is de geadviseerde configuratiemethode, maar u kunt nog uitgeven `env.php` bestand.
+Commerce biedt nu opdrachtregelopties voor het configureren van Redis-sessieopslag. In vorige versies hebt u het bestand `<Commerce install dir>app/etc/env.php` bewerkt. De opdrachtregel biedt validatie en dit is de aanbevolen configuratiemethode, maar u kunt het `env.php` -bestand wel bewerken.
 
-Voer de `setup:config:set` en geef Redis-specifieke parameters op.
+Voer de opdracht `setup:config:set` uit en geef Redis-specifieke parameters op.
 
 ```bash
 bin/magento setup:config:set --session-save=redis --session-save-redis-<parameter_name>=<parameter_value>...
@@ -27,7 +27,7 @@ bin/magento setup:config:set --session-save=redis --session-save-redis-<paramete
 
 waar
 
-`--session-save=redis` Hiermee schakelt u Redis-sessieopslag in. Laat deze parameter weg als deze functie reeds is toegelaten.
+`--session-save=redis` schakelt de opslag van Redis-sessies in. Laat deze parameter weg als deze functie reeds is toegelaten.
 
 `--session-save-redis-<parameter_name>=<parameter_value>` is een lijst van parameter/waardeparen die zittingsopslag vormen:
 
@@ -36,10 +36,10 @@ waar
 | session-save-redis-host | host | Volledig - gekwalificeerde hostname, IP adres, of absolute weg als het gebruiken van de contactdozen van UNIX. | localhost |
 | session-save-redis-port | poort | Redis server listen port. | 6379 |
 | session-save-redis-password | password | Hiermee geeft u een wachtwoord op als uw Redis-server verificatie vereist. | leeg |
-| session-save-redis-timeout | timeout | Time-out verbinding, in seconden. | 2.5 |
-| session-save-redis-persistent-id | persistent_identifier | Unieke tekenreeks om permanente verbindingen in te schakelen (bijvoorbeeld sess-db0).<br>[Bekende problemen met phpredis en php-fpm](https://github.com/phpredis/phpredis/issues/70). |
-| session-save-redis-db | database | Uniek Redis-databasenummer, dat wordt aanbevolen om te beschermen tegen gegevensverlies.<br><br>**Belangrijk**: Als u Redis voor meerdere typen caching gebruikt, moeten de databasenummers verschillend zijn. U wordt aangeraden het standaard cachedatabasenummer aan 0, het databasenummer voor het in cache plaatsen van pagina&#39;s aan 1 en het databasenummer voor de sessieopslag aan 2 toe te wijzen. | 0 |
-| session-save-hers-compression-threshold | compression_threshold | Instellen op 0 om compressie uit te schakelen (aanbevolen als `suhosin.session.encrypt = On`).<br>[Bekende uitgave met tekenreeksen van meer dan 64 KB](https://github.com/colinmollenhour/Cm_Cache_Backend_Redis/issues/18). | 2048 |
+| session-save-redis-timeout | timeout | Time-out verbinding, in seconden. | 2,5 |
+| session-save-redis-persistent-id | persistent_identifier | Unieke tekenreeks om permanente verbindingen in te schakelen (bijvoorbeeld sess-db0).<br>[ Bekende kwesties met phpredis en php-fpm ](https://github.com/phpredis/phpredis/issues/70). |
+| session-save-redis-db | database | Uniek Redis-databasenummer, dat wordt aanbevolen om te beschermen tegen gegevensverlies.<br><br>**Belangrijk**: Als u Redis voor meer dan één type van caching gebruikt, moeten de gegevensbestandaantallen verschillend zijn. U wordt aangeraden het standaard cachedatabasenummer aan 0, het databasenummer voor het in cache plaatsen van pagina&#39;s aan 1 en het databasenummer voor de sessieopslag aan 2 toe te wijzen. | 0 |
+| session-save-hers-compression-threshold | compression_threshold | Stel de waarde in op 0 om compressie uit te schakelen (aanbevolen bij `suhosin.session.encrypt = On`).<br>[ Bekende kwestie met koorden van meer dan 64 KB ](https://github.com/colinmollenhour/Cm_Cache_Backend_Redis/issues/18). | 2048 |
 | session-save-redis-compression-lib | compression_library | Opties: gzip, lzf, lz4 of snappy. | gzip |
 | session-save-redis-log-level | log_level | Stel de volgende waarden in op een van de volgende volgorde, van minimale breedtegraad tot breedste breedte:<ul><li>0 (noodsituatie: alleen de ernstigste fouten)<li>1 (waarschuwing: onmiddellijke actie vereist)<li>2 (kritiek: toepassingscomponent niet beschikbaar)<li>3 (fout: fouten bij uitvoering, niet kritiek, maar moet worden gecontroleerd)<li>4 (waarschuwing: aanvullende informatie, aanbevolen)<li>5 (mededeling: normale maar significante toestand)<li>6 (info: informatieve berichten)<li>7 (foutopsporing: de meeste informatie die u alleen kunt ontwikkelen of testen)</ul> | 1 |
 | session-save-redis-max-gelijktijdige | max_concurrency | Maximum aantal processen dat op een slot op één zitting kan wachten. Voor grote productieclusters stelt u dit in op ten minste 10% van het aantal PHP-processen. | 6 |
@@ -58,7 +58,7 @@ waar
 
 ## Voorbeeld
 
-In het volgende voorbeeld wordt Redis ingesteld als opslaglocatie voor sessiegegevens. De host wordt ingesteld op `127.0.0.1`stelt het logniveau in op 4 en stelt het databasenummer in op 2. Alle andere parameters worden ingesteld op de standaardwaarde.
+In het volgende voorbeeld wordt Redis ingesteld als opslaglocatie voor sessiegegevens, wordt de host ingesteld op `127.0.0.1` , wordt het logniveau ingesteld op 4 en wordt het databasenummer ingesteld op 2. Alle andere parameters worden ingesteld op de standaardwaarde.
 
 ```bash
 bin/magento setup:config:set --session-save=redis --session-save-redis-host=127.0.0.1 --session-save-redis-log-level=4 --session-save-redis-db=2
@@ -66,7 +66,7 @@ bin/magento setup:config:set --session-save=redis --session-save-redis-host=127.
 
 ### Resultaat
 
-De handel voegt lijnen toe gelijkend op het volgende: `<magento_root>app/etc/env.php`:
+Commerce voegt soortgelijke regels toe aan `<magento_root>app/etc/env.php` :
 
 ```php
     'session' =>
@@ -102,7 +102,7 @@ De handel voegt lijnen toe gelijkend op het volgende: `<magento_root>app/etc/env
 
 ## Redis-verbinding verifiëren
 
-Om te verifiëren dat Redis en de Handel samenwerken, login aan de server die Redis in werking stelt, een terminal openen, en Redis monitorbevel gebruiken of pingel bevel.
+Om te verifiëren dat Redis en Commerce samenwerken, login aan de server die Redis in werking stelt, een terminal openen, en Redis monitorbevel gebruiken of pingel bevel.
 
 ### Redis-monitor, opdracht
 
@@ -133,4 +133,4 @@ Als beide opdrachten zijn uitgevoerd, wordt Redis op de juiste wijze ingesteld.
 
 ### Gecomprimeerde gegevens controleren
 
-Als u gecomprimeerde sessiegegevens en paginacache wilt inspecteren, [RESP.app](https://flathub.org/apps/details/app.resp.RESP) ondersteunt de automatische decompressie van het cachegeheugen voor 2 sessies en pagina&#39;s van Handel en geeft PHP-sessiegegevens weer in een leesbare vorm.
+Om de samengeperste gegevens van de Zitting en het Geheime voorgeheugen van de Pagina te inspecteren, [ RESP.app ](https://flathub.org/apps/details/app.resp.RESP) steunt de automatische decompressie van Commerce 2 Sessie en het geheime voorgeheugen van de Pagina en toont PHP zittingsgegevens in een mens-leesbare vorm.

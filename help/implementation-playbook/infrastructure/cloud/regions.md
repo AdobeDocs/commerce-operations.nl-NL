@@ -16,7 +16,7 @@ De volgende secties bevatten informatie over de verschillende AWS- en Azure-regi
 
 ## AWS-regio&#39;s
 
-![Diagram met AWS-gebieden](../../../assets/playbooks/aws-regions.png)
+![ Diagram die de gebieden van AWS tonen ](../../../assets/playbooks/aws-regions.png)
 
 >[!NOTE]
 >
@@ -24,7 +24,7 @@ De volgende secties bevatten informatie over de verschillende AWS- en Azure-regi
 
 ## Azure-gebieden
 
-![Diagram met Azure-gebieden](../../../assets/playbooks/azure-regions.png)
+![ Diagram die Azure gebieden ](../../../assets/playbooks/azure-regions.png) tonen
 
 >[!NOTE]
 >

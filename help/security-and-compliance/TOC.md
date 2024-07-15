@@ -4,7 +4,7 @@ user-guide-description: Leer over naleving van de regelgeving en commerciële ve
 feature: Security
 source-git-commit: 28b94fe2fd4f976ad48fa9c59e7e1559db8ba35e
 workflow-type: tm+mt
-source-wordcount: '58'
+source-wordcount: '53'
 ht-degree: 0%
 
 ---
@@ -18,9 +18,9 @@ ht-degree: 0%
 - Privacyregels {#privacy}
    - [CCPA](privacy/ccpa.md)
    - [GDPR](privacy/gdpr.md)
-   - [Privacy JavaScript-bibliotheek Adobe](privacy/adobe-javascript-library.md)
-   - [Privacy JavaScript-bibliotheek](privacy/javascript-library.md)
+   - [Adobe Privacy JavaScript Library](privacy/adobe-javascript-library.md)
+   - [Privacy JavaScript Library](privacy/javascript-library.md)
 - Referentie {#reference}
    - [Persoonlijke gegevens van de klant (versie 2.x)](privacy/data-m2.md)
    - [Persoonlijke gegevens van de klant (versie 1.x)](privacy/data-m1.md)
-- [Terugkeren naar operationele hulplijnen](https://experienceleague.adobe.com/docs/commerce-operations/operational-guides/home.html)
+- [ Terugkeer aan Operationele Gidsen ](https://experienceleague.adobe.com/docs/commerce-operations/operational-guides/home.html)

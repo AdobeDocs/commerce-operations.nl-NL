@@ -4,7 +4,7 @@ description: Beschrijving van de elektronische handel
 exl-id: b418d36b-7dc6-49c7-95a8-03a55c69cb6f
 source-git-commit: e76f101df47116f7b246f21f0fe0fa72769d2776
 workflow-type: tm+mt
-source-wordcount: '490'
+source-wordcount: '494'
 ht-degree: 0%
 
 ---
@@ -50,7 +50,7 @@ De elektronische handel maakt het voor mensen mogelijk om de deuren van hun eige
 - De overheadkosten voor de handel zijn laag in vergelijking met bakstenen en mortieren
 - Online winkels zijn 24/7 geopend
 - Direct aanschaffen
-- Personalisatie en aangepaste gebruikerservaring
+- Personalization en aangepaste ervaringen van gebruikers
 - Wereldwijde mogelijkheden voor klantbereik
 
 ### Nadelen
@@ -71,8 +71,8 @@ Hier zijn sommige gemeenschappelijke e-commerce uitdagingen organisaties tegenko
 
 De verwachtingen van de klant stijgen en er zijn altijd nieuwe groeitechnieken om uw omrekeningskoers te verhogen. Dit playbook zal kijken om in detail te schetsen en te verklaren hoe te om sommige van deze klantenuitdagingen aan te pakken en met succes een e-commercesite in werking te stellen aan zijn volledig potentieel.
 
-![De waarde van de handelstechnologie](../../assets/playbooks/commerce-tech.png)
+![ De waarde van handelstechnologie ](../../assets/playbooks/commerce-tech.png)
 
-## Commerciële industrie
+## Commerce-industrie
 
-![De waarde van de handelstechnologie](../../assets/playbooks/commerce-industries.png)
+![ De waarde van handelstechnologie ](../../assets/playbooks/commerce-industries.png)

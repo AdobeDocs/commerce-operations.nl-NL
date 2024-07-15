@@ -21,11 +21,11 @@ Gebruik deze controlelijst tijdens uw jaarlijkse en driemaandelijkse gesprekken 
 
 >[!NOTE]
 >
->Voor een gedetailleerde beschrijving van de technische stappen voor een geslaagde upgrade raadpleegt u [Volledige upgradevoorwaarden](../../../upgrade/prepare/prerequisites.md) in onze gebruikersdocumentatie.
+>Voor een gedetailleerde beschrijving van de technische stappen om met succes te bevorderen, verwijs naar [ Volledige verbeteringseerste vereisten ](../../../upgrade/prepare/prerequisites.md) in onze gebruikersdocumentatie.
 
 ## Betrokken producten en versies
 
-[Alle ondersteunde versies](../../../release/versions.md) van:
+[ Alle gesteunde versies ](../../../release/versions.md) van:
 
 - Adobe Commerce over cloudinfrastructuur
 - Adobe Commerce ter plaatse
@@ -46,7 +46,7 @@ Gebruik deze controlelijst tijdens uw jaarlijkse en driemaandelijkse gesprekken 
 
 ## Begroting en timing
 
-▢ Adobe Commerce gebruiken [releaseplanning](../../../release/schedule.md) om uw volgende upgrade te plannen en op tijd voor te bereiden.
+▢ Gebruik het de versieschema van Adobe Commerce [ ](../../../release/schedule.md) om uw volgende verbetering te plannen en voor tijd voor te bereiden.
 
 ▢ Bespreek welke versie u (volledig of veiligheid-slechts) zult goedkeuren gebaseerd op verwachte behoeften.
 
@@ -60,14 +60,14 @@ Gebruik deze controlelijst tijdens uw jaarlijkse en driemaandelijkse gesprekken 
 
 ▢ vroege toegang
 
-- Partner neemt deel aan [Beta](../../../release/beta.md)
-- Opmerking bètarelease.
+- De partner neemt aan [ Beta ](../../../release/beta.md) deel
+- Opmerking bij Beta-release.
 
 ▢ overeenstemming bereiken over begroting, tijdschema, toepassingsgebied.
 
-▢ Voer de [Compatibiliteit upgraden](../../../upgrade/upgrade-compatibility-tool/overview.md)
+▢ stel het [ Hulpmiddel van de Verenigbaarheid van de Verbetering ](../../../upgrade/upgrade-compatibility-tool/overview.md) in werking
 
-▢ overwegen de upgrade te gebruiken om problemen aan te pakken die door de [Site-brede analyse](../../../tools/site-wide-analysis-tool/intro.md).
+▢ denk na gebruikend de verbetering om kwesties te richten die door het [ Wide Hulpmiddel van de Analyse van de Plaats ](../../../tools/site-wide-analysis-tool/intro.md) worden geïdentificeerd.
 
 ▢ Documentafhankelijkheden en vereiste technische stackwijzigingen, zoals PHP- of Elastic Search-versies.
 
@@ -77,17 +77,17 @@ Gebruik deze controlelijst tijdens uw jaarlijkse en driemaandelijkse gesprekken 
 
 ▢ het onderhoudsvenster van het Plan als de onderbreking wordt voorzien.
 
-▢ de teststrategie te beoordelen en goed te keuren; gebruik de Adobe Commerce [testkader](https://developer.adobe.com/commerce/testing/) of een automatiseringssuite van derden.
+▢ het Overzicht en keurt de het testen strategie goed; denk na gebruikend het de testkader van Adobe Commerce [ ](https://developer.adobe.com/commerce/testing/) of een derde automatiseringsreeks.
 
 ▢ Bevestig dat alle extensies en aanpassingen compatibel zijn.
 
 ▢ het afspeelboek na de introductie bekijken en bijwerken; gebruiken als tijdens of na de upgrade problemen zijn ontdekt.
 
-## Post Deployment
+## Post-implementatie
 
 ▢ Monitor site voor problemen - prestaties, orderverwerking, analyses en andere problemen.
 
-▢ Adobe Commerce uitvoeren [beveiligingsscan](https://account.magento.com/scanner/dashboard/) of een andere externe scan uitvoeren en mogelijke beveiligingsproblemen controleren.
+▢ voer een de veiligheidsaftasten van Adobe Commerce [ ](https://account.magento.com/scanner/dashboard/) of andere derdeaftasten uit en herzie potentiële veiligheidskwetsbaarheid.
 
 ▢ Een retrospectief uitvoeren met alle belanghebbenden en documenteren wat goed is gegaan en wat niet en hoe te verbeteren.
 

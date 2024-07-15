@@ -21,7 +21,7 @@ Adobe Commerce over cloudinfrastructuur
 
 ## Alle MyISAM-tabellen converteren naar InnoDB
 
-Adobe raadt u aan de InnoDB-database-engine te gebruiken. In een standaard Adobe Commerce-installatie worden alle tabellen in de database opgeslagen met de InnoDB-engine. Nochtans, kunnen sommige derdemodules (uitbreidingen) lijsten in het formaat introduceren MyISAM. Nadat u een module van derden hebt geïnstalleerd, controleert u de database om eventuele tabellen in `myisam` formatteren en omzetten in `innodb` gebruiken.
+Adobe raadt u aan de InnoDB-database-engine te gebruiken. In een standaard Adobe Commerce-installatie worden alle tabellen in de database opgeslagen met de InnoDB-engine. Nochtans, kunnen sommige derdemodules (uitbreidingen) lijsten in het formaat introduceren MyISAM. Nadat u een externe module hebt geïnstalleerd, controleert u de database om eventuele tabellen in `myisam` -indeling te identificeren en converteert u deze naar `innodb` -indeling.
 
 ### Bepaal als een module lijsten MyISAM omvat
 
@@ -37,7 +37,7 @@ SELECT table_schema, CONCAT(ROUND((index_length+data_length)/1024/1024),'MB')
 
 ### De opslagengine wijzigen in InnoDB
 
-In de `db_schema.xml` bestand waarin de tabel wordt gedeclareerd, stelt u de `engine` kenmerkwaarde voor de overeenkomende `table` knooppunt naar `innodb`. Zie ter referentie [declaratief schema configureren > tabelknooppunt](https://developer.adobe.com/commerce/php/development/components/declarative-schema/configuration/) in onze ontwikkelaarsdocumentatie.
+In het `db_schema.xml` -bestand dat de tabel declareert, stelt u de `engine` kenmerkwaarde voor het corresponderende `table` -knooppunt in op `innodb` . Voor verwijzing, zie [ declaratief schema > lijstknoop ](https://developer.adobe.com/commerce/php/development/components/declarative-schema/configuration/) in onze ontwikkelaarsdocumentatie vormen.
 
 De declaratieve regeling werd ingevoerd in Adobe Commerce op cloudinfrastructuur versie 2.3.
 
@@ -59,9 +59,9 @@ Voer de volgende opdracht uit om te bepalen welke zoekengine momenteel wordt geb
 
 Zie voor configuratieinstructies de Developer Guide for Adobe Commerce on cloud:
 
-- [De OpenSearch-service instellen](https://devdocs.magento.com/cloud/project/services-opensearch.html)
+- [ Opstelling de dienst OpenSearch ](https://devdocs.magento.com/cloud/project/services-opensearch.html)
 
-- [De service Elasticsearch instellen](https://devdocs.magento.com/cloud/project/services-elastic.html)
+- [ Opstelling de dienst van de Elasticsearch ](https://devdocs.magento.com/cloud/project/services-elastic.html)
 
 ## Aangepaste triggers voorkomen
 
@@ -72,22 +72,22 @@ De trekkers worden gebruikt om veranderingen in controletabellen te registreren.
 - Triggers worden geïnterpreteerd als code en MySQL compileert ze niet vooraf. Hooking op de transactieruimte van uw vraag, voegen zij de overheadkosten aan een parser en een interpreter voor elke vraag toe die met de lijst wordt uitgevoerd.
 - De trekkers delen de zelfde transactieruimte zoals de originele vragen, en terwijl die vragen voor sloten op de lijst concurreren, concurreren de trekkers onafhankelijk op sloten op een andere lijst.
 
-Zie voor meer informatie over alternatieven voor het gebruik van aangepaste triggers [MySQL-triggers](mysql-configuration.md#triggers).
+Om over alternatieven te leren om douanetriggers te gebruiken, zie [ trekkers MySQL ](mysql-configuration.md#triggers).
 
 ## Upgrade [!DNL ECE-Tools] naar versie 2002.0.21 of hoger {#ece-tools-version}
 
-Om potentiële problemen met kroonsloten te vermijden, bevorder ECE-Hulpmiddelen aan versie 2002.0.21 of hoger. Zie voor instructies [Bijwerken `ece-tools` versie](https://devdocs.magento.com/cloud/project/ece-tools-update.html) in onze ontwikkelaarsdocumentatie.
+Om potentiële problemen met kroonsloten te vermijden, bevorder ECE-Hulpmiddelen aan versie 2002.0.21 of hoger. Voor instructies, zie `ece-tools` versie ](https://devdocs.magento.com/cloud/project/ece-tools-update.html) van de Update 0} {in onze ontwikkelaarsdocumentatie.[
 
 ## Veilig overschakelen op indexmodus
 
 <!--This best practice might belong in the Maintenance phase. Database lock prevention might be consolidated under a single heading-->
 
-De omschakeling indexeert produceert [!DNL data definition language] (DDL) verklaringen om trekkers tot stand te brengen die gegevensbestandsloten kunnen veroorzaken. U kunt dit probleem voorkomen door uw website in de onderhoudsmodus te plaatsen en de taken voor uitsnijden uit te schakelen voordat u de configuratie wijzigt.
-Zie voor instructies [Indexeerders configureren](https://experienceleague.adobe.com/docs/commerce-operations/configuration-guide/cli/manage-indexers.html#configure-indexers-1) in de *Adobe Commerce-configuratiegids*.
+Als u overschakelt op indexen, worden [!DNL data definition language] (DDL)-instructies gegenereerd om triggers te maken die databaseslokken kunnen veroorzaken. U kunt dit probleem voorkomen door uw website in de onderhoudsmodus te plaatsen en de taken voor uitsnijden uit te schakelen voordat u de configuratie wijzigt.
+Voor instructies, zie [ indexeerders ](https://experienceleague.adobe.com/docs/commerce-operations/configuration-guide/cli/manage-indexers.html#configure-indexers-1) in de *Gids van de Configuratie van Adobe Commerce* vormen.
 
 ## DDL-instructies niet uitvoeren in productie
 
-Vermijd het uitvoeren van verklaringen DDL in het milieu van de Productie om conflicten (zoals lijstwijzigingen en creaties) te verhinderen. De `setup:upgrade` -proces is een uitzondering.
+Vermijd het uitvoeren van verklaringen DDL in het milieu van de Productie om conflicten (zoals lijstwijzigingen en creaties) te verhinderen. Het `setup:upgrade` -proces is een uitzondering.
 
 Als u een DDL-instructie moet uitvoeren, zet u de website in de onderhoudsmodus en schakelt u de uitsnede uit (zie de instructies voor het veilig omschakelen van indexen in de vorige sectie).
 
@@ -95,10 +95,10 @@ Als u een DDL-instructie moet uitvoeren, zet u de website in de onderhoudsmodus 
 
 Archivering van bestellingen via de beheerder inschakelen om de benodigde ruimte voor verkooptabellen te verkleinen naarmate de gegevens van uw bestelling toenemen. Met archivering bespaart u MySQL-schijfruimte en verbetert u de afrekenprestaties.
 
-Zie [Archivering inschakelen](https://experienceleague.adobe.com/docs/commerce-admin/stores-sales/order-management/orders/order-archive.html) in de documentatie van Adobe Commerce Merchant.
+Zie [ archivering ](https://experienceleague.adobe.com/docs/commerce-admin/stores-sales/order-management/orders/order-archive.html) in de documentatie van de Merchant van Adobe Commerce toelaten.
 
 ## Aanvullende informatie
 
-- [MySQL-opslagengines](https://dev.mysql.com/doc/refman/8.0/en/storage-engines.html)
+- [ MySQL de Motoren van de Opslag ](https://dev.mysql.com/doc/refman/8.0/en/storage-engines.html)
 - [Adobe Commerce 2.3.5-upgradevoorwaarden voor MariaDB](../maintenance/mariadb-upgrade.md)
 - [Aanbevolen procedures om prestatieproblemen met databases op te lossen](../maintenance/resolve-database-performance-issues.md)

@@ -23,7 +23,7 @@ Gebruik deze volgende inzameling van gidsen om over de concepten van het systeem
       <img alt="Gegevens vrijgeven" src="../assets/icons/promote.svg" width="40"/>
     </a>
     <div>
-      <a href="../release/release-notes/overview.md"><strong>Gegevens vrijgeven</strong></a>
+      <a href="../release/release-notes/overview.md"><strong> de Informatie van de Versie </strong></a>
       <p>Bekijk alle releasegegevens voor Adobe Commerce-patches en -services.</p>
     </div>
   </td>
@@ -32,7 +32,7 @@ Gebruik deze volgende inzameling van gidsen om over de concepten van het systeem
        <img alt="Prestaties" src="../assets/icons/gauge.svg" width="40"/>
     </a>
     <div>
-      <a href="../performance/overview.md"><strong>Aanbevolen werkwijzen voor prestaties</strong></a>
+      <a href="../performance/overview.md"><strong> Beste praktijken van Prestaties </strong></a>
       <p>Gebruik deze aanbevelingen om de prestaties van uw Adobe Commerce-implementatie te optimaliseren.</p>
     </div>
   </td>
@@ -41,7 +41,7 @@ Gebruik deze volgende inzameling van gidsen om over de concepten van het systeem
        <img alt="Enterprise" src="../assets/icons/alert-circle.svg" width="40"/>
     </a>
     <div>
-      <a href="../security-and-compliance/overview.md"><strong>Beveiliging en naleving</strong></a>
+      <a href="../security-and-compliance/overview.md"><strong> Veiligheid en Naleving </strong></a>
       <p>Leer hoe Adobe Commerce-verkopers verantwoordelijk zijn voor het onderhouden van een veilige omgeving.</p>
     </div>
   </td>
@@ -52,7 +52,7 @@ Gebruik deze volgende inzameling van gidsen om over de concepten van het systeem
       <img alt="Implementatie" src="../assets/icons/play.svg" width="40"/>
     </a>
     <div>
-      <a href="../implementation-playbook/overview.md"><strong>Afspeelmap voor implementatie</strong></a>
+      <a href="../implementation-playbook/overview.md"><strong> Playbook van de Implementatie </strong></a>
       <p>Leer meer over strategieën voor het plannen en implementeren van een geslaagde Adobe Commerce-site.</p>
     </div>
   </td>
@@ -61,7 +61,7 @@ Gebruik deze volgende inzameling van gidsen om over de concepten van het systeem
        <img alt="Bewerkingen" src="../assets/icons/refresh.svg" width="40"/>
     </a>
     <div>
-      <a href="../operational-playbook/overview.md"><strong>Operationeel afspelen</strong></a>
+      <a href="../operational-playbook/overview.md"><strong> Operationeel Playbook </strong></a>
       <p>Leer hoe te om uw ondernemingen operationeel klaar te krijgen om een succesvolle e-commercesite in werking te stellen.</p>
     </div>
   </td>
@@ -70,7 +70,7 @@ Gebruik deze volgende inzameling van gidsen om over de concepten van het systeem
        <img alt="Enterprise" src="../assets/icons/enterprise.svg" width="40"/>
     </a>
     <div>
-      <a href="../commerce-at-scale/overview.md"><strong>Handel op schaal</strong></a>
+      <a href="../commerce-at-scale/overview.md"><strong> Commerce bij Schaal </strong></a>
       <p>Leer hoe u op schaal ervaringen kunt bieden met Adobe Commerce met Adobe Experience Manager.</p>
     </div>
   </td>
@@ -86,7 +86,7 @@ Gebruik deze volgende inzameling van gidsen om over de concepten van het systeem
       <img alt="Installatie (op de locatie)" src="../assets/icons/servers.svg" width="40"/>
     </a>
     <div>
-      <a href="../installation/overview.md"><strong>Installatie</strong></a>
+      <a href="../installation/overview.md"><strong> Installatie </strong></a>
       <p>Leer hoe u Adobe Commerce installeert voor implementaties op locatie.</p>
     </div>
   </td>
@@ -95,7 +95,7 @@ Gebruik deze volgende inzameling van gidsen om over de concepten van het systeem
       <img alt="Configuratie" src="../assets/icons/settings.svg" width="40"/>
     </a>
     <div>
-      <a href="../configuration/overview.md"><strong>Configuratie</strong></a>
+      <a href="../configuration/overview.md"><strong> Configuratie </strong></a>
       <p>Configureer functies en services voor uw Adobe Commerce-toepassing.</p>
     </div>
   </td>
@@ -104,7 +104,7 @@ Gebruik deze volgende inzameling van gidsen om over de concepten van het systeem
       <img alt="Upgrade" src="../assets/icons/upload-cloud.svg" width="40"/>
     </a>
     <div>
-      <a href="../upgrade/overview.md"><strong>Upgrade</strong></a>
+      <a href="../upgrade/overview.md"><strong> Verbetering </strong></a>
       <p>Leer hoe u uw Adobe Commerce-project kunt upgraden om uw winkel veilig en efficiënt te laten werken.</p>
     </div>
   </td>
@@ -113,7 +113,7 @@ Gebruik deze volgende inzameling van gidsen om over de concepten van het systeem
        <img alt="Gereedschappen" src="../assets/icons/wrench.svg" width="40"/>
     </a>
     <div>
-      <a href="../tools/overview.md"><strong>Gereedschappen</strong></a>
+      <a href="../tools/overview.md"><strong> Hulpmiddelen </strong></a>
       <p>Meer informatie over tools die je met Adobe Commerce kunt gebruiken.</p>
     </div>
   </td>

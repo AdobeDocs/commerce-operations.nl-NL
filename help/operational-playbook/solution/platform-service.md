@@ -1,5 +1,5 @@
 ---
-title: Commerciële platformdiensten
+title: Commerce Platform Services
 description: Herzie de voordelen en de nadelen van het gebruiken van oplossingen PaaS voor uw het ontvangen infrastructuur om te bepalen wat voor uw e-commerceproject geschikt is.
 exl-id: 071e6e9b-6874-4d08-90b4-036d6cdca4c2
 feature: Best Practices, Paas
@@ -18,9 +18,9 @@ PaaS wordt aangeboden als een service die wordt gehost op de infrastructuur van 
 
 PaaS werkt op particuliere, openbare en hybride wolken:
 
-- **Privécloud**—PaaS wordt geleverd binnen de firewall van de cliënt voor veiligheid, waar het gegeven op-gebouw wordt opgeslagen.
-- **Openbare cloud**—De cliënt is in controle van de plaatsingen en de leverancier is verantwoordelijk voor alle andere componenten zoals netwerk en werkend systeem.
-- **Hybride wolk**—Hybride mengt de functies van zowel privé als openbaar zodat de cliënt flexibiliteit kan hebben.
+- **Privé wolk** - PaaS wordt geleverd binnen de firewall van de cliënt voor veiligheid, waar het gegeven op-gebouw wordt opgeslagen.
+- **Openbare wolk** - de cliënt is in controle van de plaatsingen en de leverancier is verantwoordelijk voor alle andere componenten zoals netwerk en werkend systeem.
+- **Hybride wolk** - Hybride mengt de functies van zowel privé als openbaar zodat de cliënt flexibiliteit kan hebben.
 
 ## Voordelen
 
@@ -40,7 +40,8 @@ PaaS werkt op particuliere, openbare en hybride wolken:
 
 - Kan leiden tot een bedreiging van de beveiliging omdat alles in de cloud is opgeslagen
 - Afhankelijk van de dienstverlener
-- Als de leverancier een onderbreking ervaart, zou het een kwestie voor de cliënt zijn
+- Als de leverancier een onderbreking ervaart, zou het een kwestie voor de
+client
 - Hiermee kunt u eenvoudig en snel updates uitvoeren
 
 Wanneer de cliënt PaS in e-commerce gebruikt, te hoeven zij niet om het systeem en werkende software te beheren. De cliënt wordt voorzien van een platform aan opstelling hun elektronische handelplaats waar zij inhoud, codegegevens, en producten bouwen en vormen. die los staat van de toedieningszijde van zaken die verband houden met PaaS.

@@ -12,24 +12,24 @@ ht-degree: 0%
 
 # Caching configureren
 
-[!DNL Commerce] laat u toe om alternatieven aan het standaarddossiersysteem caching te vormen. In deze gids worden enkele van die alternatieven besproken, namelijk:
+Met [!DNL Commerce] kunt u alternatieven configureren voor het in cache plaatsen van het standaardbestandssysteem. In deze gids worden enkele van die alternatieven besproken, namelijk:
 
-- De volgende cachemechanismen instellen in het dialoogvenster [!DNL Commerce] configuratie:
+- Stel de volgende cachemechanismen in de [!DNL Commerce] -configuratie in:
 
-   - [Database](https://developer.adobe.com/commerce/php/development/cache/partial/database-caching/)
+   - [ Gegevensbestand ](https://developer.adobe.com/commerce/php/development/cache/partial/database-caching/)
    - [Redis](config-redis.md)
    - Bestandssysteem (standaard): Er is geen configuratie nodig om standaardcaching van het bestandssysteem te gebruiken.
 
-- Stel de [Varnish](config-varnish.md) zonder de [!DNL Commerce] configuratie.
+- Opstelling de [ Vlek ](config-varnish.md) zonder de [!DNL Commerce] configuratie te wijzigen.
 
 ## Caching terminologie
 
-[!DNL Commerce] gebruikt de volgende caching terminologie:
+[!DNL Commerce] gebruikt de volgende terminologie in cache:
 
-- **Frontend**—Gelijkaardig aan een interface of gateway om opslag in het voorgeheugen onder te brengen, die door wordt uitgevoerd [Magento\Framework\Cache\Frontend](https://github.com/magento/magento2/tree/2.4/lib/internal/Magento/Framework/Cache/Frontend).
-- **Cachetypen**—Kan één van de types zijn die met worden verstrekt [!DNL Commerce] of u kunt [uw eigen](https://developer.adobe.com/commerce/php/development/cache/partial/cache-type/).
-- **Achtergrond**—Geeft details over [cacheopslag](https://framework.zend.com/manual/1.12/en/zend.cache.backends.html), geïmplementeerd door [Magento\Framework\Cache\Backend](https://github.com/magento/magento2/tree/2.4/lib/internal/Magento/Framework/Cache/Backend)
-- **Achtergrond met twee niveaus**—Hiermee slaat u cacherecords op in twee achtergronden: een snellere en een langzamere.
+- **Frontend** - Gelijkaardig aan een interface of een gateway aan geheim voorgeheugenopslag, die door [ Magento\Framework\Cache\Frontend ](https://github.com/magento/magento2/tree/2.4/lib/internal/Magento/Framework/Cache/Frontend) wordt uitgevoerd.
+- **types van Geheime voorgeheugen** - kan één van de types zijn die van [!DNL Commerce] worden voorzien of u kunt [ uw eigen ](https://developer.adobe.com/commerce/php/development/cache/partial/cache-type/) creëren.
+- **Achtergrond** - specificeert details over [ geheim voorgeheugenopslag ](https://framework.zend.com/manual/1.12/en/zend.cache.backends.html), die door [ Magento\Framework\Cache\Backend ](https://github.com/magento/magento2/tree/2.4/lib/internal/Magento/Framework/Cache/Backend) wordt uitgevoerd
+- **dubbel-vlakke achtergrond** - slaat geheim voorgeheugenverslagen in twee achtergronden op: snellere en langzamere.
 
   >[!INFO]
   >
@@ -37,14 +37,14 @@ ht-degree: 0%
 
 ## Configuratieopties
 
-- De verstrekte gegevens wijzigen `default` cachefront—
+- De meegeleverde voorzijde van de `default` cache wijzigen—
 
-  U wijzigt alleen de `<magento_root>/app/etc/di.xml` , de algemene configuratie voor injectie van afhankelijkheid van de Commerce-toepassing.
+  U wijzigt alleen het `<magento_root>/app/etc/di.xml` -bestand, de algemene configuratie voor het injecteren van afhankelijkheden van de Commerce-toepassing.
 
 - Uw eigen voorste cache configureren—
 
-  U wijzigt alleen de `<magento_root>/app/etc/env.php` bestand omdat dit de equivalente configuratie in het dialoogvenster `di.xml` bestand.
+  U wijzigt alleen het `<magento_root>/app/etc/env.php` -bestand omdat dit de equivalente configuratie in het `di.xml` -bestand overschrijft.
 
 >[!TIP]
 >
->Varnish vereist geen wijzigingen in de [!DNL Commerce] configuratie. Zie [Varnish configureren en gebruiken](config-varnish.md).
+>Voor vernis hoeft de configuratie van [!DNL Commerce] niet te worden gewijzigd. Zie [ vormen en gebruiken Vierkant ](config-varnish.md).

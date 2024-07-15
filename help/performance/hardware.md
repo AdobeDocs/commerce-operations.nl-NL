@@ -14,7 +14,7 @@ ht-degree: 0%
 
 ## CPU&#39;s
 
-[!DNL Commerce] Webknooppunten dienen voor alle aanvragen die niet in de cache zijn opgeslagen of die niet in de cache kunnen worden opgeslagen via de toepassing. Eén CPU-core kan ongeveer twee (soms maximaal vier) processors gebruiken [!DNL Commerce] verzoeken effectief. Gebruik de volgende vergelijking om te bepalen hoeveel Webknopen/cores u alle inkomende verzoeken moet verwerken zonder hen in rij te zetten:
+[!DNL Commerce] -webknooppunten dienen voor alle aanvragen die niet in de cache zijn opgeslagen of die niet in de cache kunnen worden opgeslagen via de toepassing. Eén CPU-core kan twee (soms wel vier) [!DNL Commerce] -verzoeken effectief verwerken. Gebruik de volgende vergelijking om te bepalen hoeveel Webknopen/cores u alle inkomende verzoeken moet verwerken zonder hen in rij te zetten:
 
 ```
 N[Cores] = (N[Expected Requests] / 2) + N [Expected Cron Processes]
@@ -32,22 +32,22 @@ Scenario&#39;s en verwachte PHP-geheugenvereisten:
 
 * Webnode die alleen winkelpagina&#39;s bedient: 256 MB
 * Webnode die beheerpagina&#39;s bedient met een grote catalogus: 1 GB
-* [!DNL Commerce] een site met een grote catalogus indexeren: >256 MB (Zie [geavanceerd instellen](../performance/advanced-setup.md) voor optimale prestaties.)
-* [!DNL Commerce] Statische elementen compileren en implementeren: 756 MB
-* [!DNL Commerce] Krachtige toolkit profile generation: >1 GB PHP RAM, >16 MB [!DNL MySQL] TMP_TABLE_SIZE &amp; MAX_HEAP_TABLE_SIZE-instellingen
+* [!DNL Commerce] begin het indexeren van een plaats met een grote catalogus: >256 MB (Zie [ geavanceerd-opstelling ](../performance/advanced-setup.md) om voor optimale prestaties te stemmen.)
+* [!DNL Commerce] statische elementen compileren en implementeren: 756 MB
+* [!DNL Commerce] krachtige toolkit profile generation: > 1 GB PHP RAM, > 16 MB [!DNL MySQL] TMP_TABLE_SIZE &amp; MAX_HEAP_TABLE_SIZE settings
 
 ### [!DNL MySQL]
 
-De [!DNL Commerce] database (en elke andere database) is gevoelig voor de hoeveelheid geheugen die beschikbaar is voor het opslaan van gegevens en indexen. Efficiënt benutten [!DNL MySQL] de gegevensindexatie, zou de hoeveelheid beschikbaar geheugen, minstens, dicht bij de helft van de grootte van de gegevens moeten zijn die in het gegevensbestand worden opgeslagen.
+De [!DNL Commerce] -database (en elke andere database) is gevoelig voor de hoeveelheid geheugen die beschikbaar is voor het opslaan van gegevens en indexen. Als u [!DNL MySQL] -gegevensindexatie effectief wilt benutten, moet de hoeveelheid beschikbaar geheugen minimaal ongeveer de helft van de grootte van de gegevens die in de database zijn opgeslagen, bedragen.
 
 ### Cursussen
 
-Als u veelvoudige opstelt [!DNL Commerce] en met Redis of [!DNL Varnish] voor uw geheime voorgeheugens , let op de volgende beginselen :
+Als u meerdere [!DNL Commerce] implementeert en Redis of [!DNL Varnish] voor uw cache gebruikt, moet u de volgende principes in acht nemen:
 
-* [!DNL Varnish] volledige ongeldigmaking van het paginacachegeheugen is effectief, raadt u aan voldoende geheugen toe te wijzen aan [!DNL Varnish] om uw populairste pagina&#39;s in het geheugen te houden
+* [!DNL Varnish] De validatie van het cachegeheugen van de volledige pagina is effectief. U kunt het beste voldoende geheugen toewijzen aan [!DNL Varnish] om de populairste pagina&#39;s in het geheugen op te slaan
 * Het geheime voorgeheugen van de zitting is een goede kandidaat om voor een afzonderlijk geval van Redis te vormen.  De configuratie van het geheugen voor dit geheim voorgeheugentype zou de strategie van de het kartafstand van de plaats moeten overwegen en hoe lang een zitting in het geheime voorgeheugen zou moeten blijven
 * Redis moet voldoende geheugen hebben toegewezen om alle andere cache in het geheugen te bewaren voor optimale prestaties.  Het geheime voorgeheugen van het blok zal de belangrijkste factor in het bepalen van de hoeveelheid geheugen zijn te vormen.  Het cachegeheugen van een blok wordt groter ten opzichte van het aantal pagina&#39;s op een site (aantal skus x aantal winkelweergaven)
 
 ## Netwerkbandbreedte
 
-Voldoende netwerkbandbreedte is een van de belangrijkste vereisten voor gegevensuitwisseling tussen webknooppunten, database(s), caching/session-servers en andere services. Omdat [!DNL Commerce] effectief gebruikt caching voor hoge prestaties, kan uw systeem actief gegevens met caching servers zoals Redis uitwisselen. Als Redis zich op een externe server bevindt, moet u een voldoende netwerkkanaal tussen webknooppunten en de caching-server opgeven om knelpunten bij lees- en schrijfbewerkingen te voorkomen.
+Voldoende netwerkbandbreedte is een van de belangrijkste vereisten voor gegevensuitwisseling tussen webknooppunten, database(s), caching/session-servers en andere services. Omdat [!DNL Commerce] effectief caching voor hoge prestaties gebruikt, kan uw systeem actief gegevens met caching servers zoals Redis uitwisselen. Als Redis zich op een externe server bevindt, moet u een voldoende netwerkkanaal tussen webknooppunten en de caching-server opgeven om knelpunten bij lees- en schrijfbewerkingen te voorkomen.

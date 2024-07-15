@@ -1,7 +1,7 @@
 ---
 source-git-commit: 4c18f00e0b92e49924676274c4ed462a175a7e4b
 workflow-type: tm+mt
-source-wordcount: '146'
+source-wordcount: '147'
 ht-degree: 1%
 
 ---
@@ -9,10 +9,10 @@ ht-degree: 1%
 
 Deze sectie bespreekt twee manieren om te verifiëren dat de Basisauthentificatie van HTTP werkt:
 
-* Een `curl` om te verifiëren moet u een gebruikersbenaming en wachtwoord ingaan om clusterstatus te krijgen
+* Een `curl` -opdracht gebruiken om te verifiëren dat u een gebruikersnaam en wachtwoord moet invoeren om de clusterstatus op te halen
 * HTTP Basic-verificatie configureren in de beheerfunctie
 
-## Een `curl` bevel om clusterstatus te verifiëren
+## Een opdracht `curl` gebruiken om de clusterstatus te verifiëren
 
 Voer de volgende opdracht in:
 
@@ -68,8 +68,8 @@ Connection: keep-alive
 
 ## HTTP Basic-verificatie configureren in de beheerfunctie
 
-Voer de zelfde taken uit zoals die in worden besproken [Configuratie van zoekmachine](../configuration/search/configure-search-engine.md) *behalve* klikken **[!UICONTROL Yes]** van de **[!UICONTROL Enable HTTP Auth]** en voer uw gebruikersnaam en wachtwoord in de opgegeven velden in.
+Voer de zelfde taken uit zoals die in [ de motorconfiguratie van het Onderzoek ](../configuration/search/configure-search-engine.md) *worden besproken behalve* klik **[!UICONTROL Yes]** van de **[!UICONTROL Enable HTTP Auth]** lijst en ga uw gebruikersbenaming en wachtwoord op de verstrekte gebieden in.
 
-Klikken **[!UICONTROL Test Connection]** om ervoor te zorgen dat het werkt en klik vervolgens op **[!UICONTROL Save Config]**.
+Klik op **[!UICONTROL Test Connection]** om te controleren of het werkt en klik vervolgens op **[!UICONTROL Save Config]** .
 
 U moet de cache leegmaken en opnieuw indexeren voordat u verdergaat.

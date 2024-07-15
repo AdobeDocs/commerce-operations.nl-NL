@@ -79,7 +79,7 @@ Het doel van de ontwerpworkshop is om te brainstormen hoe de klant verwacht dat 
 - Doel instellen
 - Herstel de behoeften
 - De resultaten definiëren
-- Schetsschets!
+- Sketch Sketch Sketch!
 - Teams binnen de client maken om feedback te krijgen over elkaars werk
 - Noteer &#39;like&#39; en &#39;dislike&#39;
 - Tracktijd

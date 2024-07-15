@@ -27,8 +27,8 @@ ht-degree: 0%
           <td>1,5+</td>
           <td>1,5+</td>
           <td>
-              <a href="https://developer.adobe.com/commerce/extensibility/events/installation/">Composer</a><br/>
-              <a href="https://developer.adobe.com/commerce/extensibility/events/release-notes/">Opmerkingen bij de release</a><br/>
+              <a href="https://developer.adobe.com/commerce/extensibility/events/installation/"> Composer </a><br/>
+              <a href="https://developer.adobe.com/commerce/extensibility/events/release-notes/"> Nota's van de Versie </a><br/>
           </td>
       </tr>
       <tr>
@@ -38,8 +38,8 @@ ht-degree: 0%
           <td>1.3+</td>
           <td>-</td>
           <td>
-              <a href="https://developer.adobe.com/commerce/extensibility/admin-ui-sdk/installation/">Composer</a><br/>
-              <a href="https://developer.adobe.com/commerce/extensibility/admin-ui-sdk/release-notes/">Opmerkingen bij de release</a><br/>
+              <a href="https://developer.adobe.com/commerce/extensibility/admin-ui-sdk/installation/"> Composer </a><br/>
+              <a href="https://developer.adobe.com/commerce/extensibility/admin-ui-sdk/release-notes/"> Nota's van de Versie </a><br/>
           </td>
       </tr>
       <tr>
@@ -49,8 +49,8 @@ ht-degree: 0%
           <td>1.2+</td>
           <td>1.2+</td>
           <td>
-              <a href="https://developer.adobe.com/commerce/extensibility/webhooks/installation/">Composer</a><br/>
-              <a href="https://developer.adobe.com/commerce/extensibility/webhooks/release-notes/">Opmerkingen bij de release</a><br/>
+              <a href="https://developer.adobe.com/commerce/extensibility/webhooks/installation/"> Composer </a><br/>
+              <a href="https://developer.adobe.com/commerce/extensibility/webhooks/release-notes/"> Nota's van de Versie </a><br/>
           </td>
       </tr>
       <tr>
@@ -60,8 +60,8 @@ ht-degree: 0%
           <td>1.3.4.</td>
           <td>1.3.3.</td>
           <td>
-              <a href="https://experienceleague.adobe.com/docs/commerce-admin/b2b/install.html">Composer</a><br/>
-              <a href="https://experienceleague.adobe.com/docs/commerce-admin/b2b/release-notes.html">Opmerkingen bij de release</a><br/>
+              <a href="https://experienceleague.adobe.com/docs/commerce-admin/b2b/install.html"> Composer </a><br/>
+              <a href="https://experienceleague.adobe.com/docs/commerce-admin/b2b/release-notes.html"> Nota's van de Versie </a><br/>
           </td>
       </tr>
       <tr>
@@ -71,8 +71,8 @@ ht-degree: 0%
           <td>1.0.0+</td>
           <td>1.0.0+</td>
           <td>
-              <a href="https://commercemarketplace.adobe.com/magento-experience-platform-connector.html">Marketplace</a><br/>
-              <a href="https://experienceleague.adobe.com/docs/commerce-merchant-services/data-connection/release-notes.html">Opmerkingen bij de release</a><br/>
+              <a href="https://commercemarketplace.adobe.com/magento-experience-platform-connector.html"> Marketplace </a><br/>
+              <a href="https://experienceleague.adobe.com/docs/commerce-merchant-services/data-connection/release-notes.html"> Nota's van de Versie </a><br/>
           </td>
       </tr>
       <tr>
@@ -82,8 +82,8 @@ ht-degree: 0%
           <td>1.7.2.</td>
           <td>1.7.1.</td>
           <td>
-              <a href="https://experienceleague.adobe.com/docs/commerce-admin/page-builder/guide-overview.html">Handboek</a><br/>
-              <a href="https://experienceleague.adobe.com/docs/commerce-admin/page-builder/release-notes.html">Opmerkingen bij de release</a><br/>
+              <a href="https://experienceleague.adobe.com/docs/commerce-admin/page-builder/guide-overview.html"> Gids van de Gebruiker </a><br/>
+              <a href="https://experienceleague.adobe.com/docs/commerce-admin/page-builder/release-notes.html"> Nota's van de Versie </a><br/>
           </td>
       </tr>
   </tbody>

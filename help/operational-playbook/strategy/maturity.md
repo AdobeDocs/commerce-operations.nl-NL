@@ -4,7 +4,7 @@ description: Bepaal in welk stadium uw bedrijf zich bevindt op basis van dit ont
 exl-id: 5cf9f080-0ac4-4426-837f-3c245d10e504
 source-git-commit: e76f101df47116f7b246f21f0fe0fa72769d2776
 workflow-type: tm+mt
-source-wordcount: '1045'
+source-wordcount: '1044'
 ht-degree: 0%
 
 ---
@@ -17,7 +17,7 @@ Beschouw een ontwikkelingsmodel als een robuust rapport dat u helpt bepalen hoe 
 
 In het volgende diagram wordt een overzicht gegeven van de verschillende behoeften in looptijdniveaus:
 
-![Behoefte aan alle looptijdniveaus diagram](../../assets/playbooks/maturity-levels.png)
+![ behoeften over het diagram van looptijdenniveaus ](../../assets/playbooks/maturity-levels.png)
 
 ## Rijpheidsniveaus
 

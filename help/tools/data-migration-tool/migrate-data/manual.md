@@ -5,7 +5,7 @@ exl-id: 830abd81-4c6d-418b-9da4-b6acd95f5ec8
 topic: Commerce, Migration
 source-git-commit: e83e2359377f03506178c28f8b30993c172282c7
 workflow-type: tm+mt
-source-wordcount: '278'
+source-wordcount: '287'
 ht-degree: 0%
 
 ---
@@ -33,25 +33,25 @@ In deze sectie wordt beschreven hoe u mediabestanden handmatig kunt migreren.
 >De opslagmethode voor databasemedia wordt vanaf Magento 2.4.3 afgekeurd.
 
 
-Deze sectie is op u van toepassing *alleen* als u mediabestanden opslaat in de database Magento. Deze stap moet worden uitgevoerd vóór [migratie van gegevens](data.md):
+Deze sectie is op u *slechts* van toepassing als u media dossiers in het gegevensbestand van het Magento opslaat. Deze stap zou vóór [ migratie van gegevens ](data.md) moeten worden uitgevoerd:
 
 1. Meld u als beheerder aan bij het deelvenster Beheer Magento 1.
 
-1. Klikken **Systeem** > **Configuratie** > GEAVANCEERD > **Systeem**.
+1. Klik **Systeem** > **Configuratie** > GEAVANCEERD > **Systeem**.
 
-1. Blader in het rechterdeelvenster naar **Opslagconfiguratie voor media**.
+1. In de juiste ruit, rol aan **Configuratie van de Opslag voor Media**.
 
-1. Van de **Mediabase selecteren** klikt u op de naam van de database voor mediaopslag.
+1. Van de **Uitgezochte Lijst van het Gegevensbestand van Media**, klik de naam van uw gegevensbestand van de media opslag.
 
-1. Klikken **Synchroniseren**.
+1. Klik **synchroniseren**.
 
 Herhaal vervolgens dezelfde stappen in het deelvenster Beheer van Magento 2.
 
 ### Mediabestanden in het bestandssysteem
 
-Alle mediabestanden (afbeeldingen voor producten, categorieën, de WYSIWYG-editor, enzovoort) moeten handmatig worden gekopieerd van `<your Magento 1 install dir>/media` tot `<your Magento 2 install dir>/pub/media`.
+Alle mediabestanden (afbeeldingen voor producten, categorieën, de WYSIWYG-editor, enzovoort) moeten handmatig van `<your Magento 1 install dir>/media` naar `<your Magento 2 install dir>/pub/media` worden gekopieerd.
 
-Maar *niet* kopieer de `.htaccess` bestanden in Magento 1 `media` map. Magento 2 heeft zijn eigen `.htaccess` dat moet worden gehandhaafd .
+Nochtans, kopieer ** niet de `.htaccess` dossiers die in Magento 1 `media` worden gevestigd omslag. Magento 2 heeft een eigen `.htaccess` die behouden moet blijven.
 
 ## Storefront-ontwerp
 
@@ -69,4 +69,4 @@ U moet alle handmatig opnieuw maken:
 
 >[!NOTE]
 >
->U kunt de tijdzone voor een databaseentiteit aanpassen met de `\Migration\Handler\Timezone` handler. Zie de [follow-up](follow-up.md) voor meer informatie.
+>U kunt de tijdzone voor een database-entiteit aanpassen met de handler `\Migration\Handler\Timezone` . Zie de [ follow-up ](follow-up.md) sectie voor meer details.

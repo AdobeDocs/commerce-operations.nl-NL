@@ -1,10 +1,10 @@
 ---
-title: Planning van handel
+title: Commerce Planning
 description: Maak een stapsgewijs plan om uw Adobe Commerce-projectdoelstellingen te verwezenlijken.
 exl-id: b3f7de65-8630-4c5e-8b3b-2ea8c4e1b20a
 source-git-commit: e76f101df47116f7b246f21f0fe0fa72769d2776
 workflow-type: tm+mt
-source-wordcount: '101'
+source-wordcount: '102'
 ht-degree: 0%
 
 ---

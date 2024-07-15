@@ -5,14 +5,14 @@ feature: Configuration, Cache, Storage
 exl-id: fc4ad18b-7e99-496e-aebc-1d7640d8716c
 source-git-commit: af45ac46afffeef5cd613628b2a98864fd7da69b
 workflow-type: tm+mt
-source-wordcount: '561'
+source-wordcount: '550'
 ht-degree: 0%
 
 ---
 
 # In cache plaatsen op CentOS
 
-In deze sectie vindt u instructies voor het installeren van een memcachegeheugen op CentOS. Voor meer informatie raadpleegt u de [opgesloten wiki](https://github.com/memcached/old-wiki).
+In deze sectie vindt u instructies voor het installeren van een memcachegeheugen op CentOS. Voor extra informatie, raadpleeg [ memcached wiki ](https://github.com/memcached/old-wiki).
 
 >[!INFO]
 >
@@ -20,18 +20,18 @@ In deze sectie vindt u instructies voor het installeren van een memcachegeheugen
 
 Omdat PHP geen native ondersteuning heeft voor memcache, moet je een extensie installeren voor PHP om deze te kunnen gebruiken. Er zijn twee PHP-extensies beschikbaar en het is belangrijk te decoderen welke extensie moet worden gebruikt:
 
-- `memcache` (_neen d_) - een oudere maar populaire extensie die niet regelmatig wordt onderhouden.
-De `memcache` momenteel extensie _niet_ Werken met PHP 7. Zie [PHP-documentatie voor memcache](https://www.php.net/manual/en/book.memcache.php).
+- `memcache` (_geen d_) - een oudere maar populaire uitbreiding die niet regelmatig wordt gehandhaafd.
+De `memcache` uitbreiding momenteel _werkt niet_ met PHP 7. Zie [ PHP documentatie voor memcache ](https://www.php.net/manual/en/book.memcache.php).
 
   De exacte naam is `php-pecl-memcache` voor CentOS.
 
-- `memcached` (_met een`d`_) - een nieuwere en onderhouden extensie die compatibel is met PHP 7. Zie [PHP-documentatie voor memcaching](https://www.php.net/manual/en/book.memcached.php).
+- `memcached` (_met a`d`_) - een nieuwere en bewaarde uitbreiding die met PHP 7 compatibel is. Zie [ PHP documentatie voor in het geheugen ondergebracht ](https://www.php.net/manual/en/book.memcached.php).
 
   De exacte naam is `php-pecl-memcached` voor CentOS.
 
 ## In cache geplaatst geheugen installeren en configureren op CentOS
 
-Als u in een cache geplaatste bestanden wilt installeren op CentOS, voert u de volgende taken uit als een gebruiker met `root` rechten:
+Als u in een cache geplaatste bestanden wilt installeren op CentOS, voert u de volgende taken uit als een gebruiker met `root` -rechten:
 
 1. Installeer in het geheugen opgeslagen onderdelen en de afhankelijkheden ervan:
 
@@ -53,21 +53,21 @@ Als u in een cache geplaatste bestanden wilt installeren op CentOS, voert u de v
 
    >[!INFO]
    >
-   >De syntaxis van de voorgaande opdrachten kan afhankelijk zijn van de opslagplaatsen voor pakketten die u gebruikt. Als u bijvoorbeeld webtatic en PHP 5.6 gebruikt, voert u `yum install -y php56w-pecl-memcache`. Gebruiken `yum search memcache|grep php` om de juiste pakketnaam te zoeken.
+   >De syntaxis van de voorgaande opdrachten kan afhankelijk zijn van de opslagplaatsen voor pakketten die u gebruikt. Als u bijvoorbeeld webtatisch en PHP 5.6 gebruikt, voert u `yum install -y php56w-pecl-memcache` in. Gebruik `yum search memcache|grep php` om de juiste pakketnaam te zoeken.
 
 
-1. Wijzig de instelling voor de configuratie-instelling in de cache voor `CACHESIZE` en `OPTIONS`:
+1. Wijzig de instelling voor de configuratie-instellingen voor `CACHESIZE` en `OPTIONS` in de cache:
 
-   1. Openen `/etc/sysconfig/memcached` in een teksteditor.
-   1. De waarde zoeken voor `CACHESIZE` en verander het in minstens 1 GB. Bijvoorbeeld:
+   1. Open `/etc/sysconfig/memcached` in een teksteditor.
+   1. Zoek de waarde voor `CACHESIZE` en verander deze in ten minste 1 GB. Bijvoorbeeld:
 
       ```config
       CACHESIZE="1GB"
       ```
 
-   1. De waarde zoeken voor `OPTIONS` en wijzig deze in `localhost` of `127.0.0.1`
+   1. Zoek de waarde voor `OPTIONS` en wijzig deze in `localhost` of `127.0.0.1`
 
-1. Sla uw wijzigingen op in `memcached` en sluit de teksteditor af.
+1. Sla de wijzigingen in `memcached` op en sluit de teksteditor af.
 1. Start de cache opnieuw.
 
    ```bash
@@ -84,7 +84,7 @@ Als u in een cache geplaatste bestanden wilt installeren op CentOS, voert u de v
 
 1. Ga verder met de volgende sectie.
 
-## Controleren of er in het geheugen is opgeslagen voordat u Commerce installeert
+## De werking van een geheugen controleren voordat u Commerce installeert
 
 Adobe raadt aan een memcachegeheugen te testen om te controleren of dit werkt voordat u Commerce installeert. Dit neemt slechts een paar minuten in beslag en kan het oplossen van problemen later vereenvoudigen.
 
@@ -92,7 +92,7 @@ Adobe raadt aan een memcachegeheugen te testen om te controleren of dit werkt vo
 
 Om te controleren dat het in een cache plaatsen wordt herkend door de webserver:
 
-1. Een `phpinfo.php` bestand in de hoofdmap van de webserver:
+1. Maak een `phpinfo.php` -bestand in de hoofdmap van de webserver:
 
    ```php
    <?php
@@ -106,17 +106,17 @@ Om te controleren dat het in een cache plaatsen wordt herkend door de webserver:
 
 1. Controleer of de geheugencache als volgt wordt weergegeven:
 
-![Bevestig dat het geheugencache door de webserver wordt herkend](../../assets/configuration/memcache.png)
+![ Bevestig memcache wordt erkend door de Webserver ](../../assets/configuration/memcache.png)
 
 Controleer of u versie 3.0.5 of hoger uit het geheugen gebruikt.
 
-Als het geheugen niet wordt weergegeven, start u de webserver opnieuw en vernieuwt u de browserpagina. Als het nog steeds niet wordt weergegeven, controleert u of u de `php-pecl-memcache` extensie.
+Als het geheugen niet wordt weergegeven, start u de webserver opnieuw en vernieuwt u de browserpagina. Als de extensie nog steeds niet wordt weergegeven, controleert u of u de extensie `php-pecl-memcache` hebt geïnstalleerd.
 
 ### Een memcache-test maken die bestaat uit een MySQL-database en PHP-script
 
-De test gebruikt een gegevensbestand MySQL, een lijst, en gegevens om te verifiëren u de gegevensbestandgegevens kunt terugwinnen en het in geheugen opslaan. Een PHP script zoekt eerst naar de cache. Als het resultaat niet bestaat, vraagt het manuscript gegevensbestand. Nadat de vraag door het originele gegevensbestand is vervuld, slaat het manuscript het resultaat in memcache op, gebruikend `set` gebruiken.
+De test gebruikt een gegevensbestand MySQL, een lijst, en gegevens om te verifiëren u de gegevensbestandgegevens kunt terugwinnen en het in geheugen opslaan. Een PHP script zoekt eerst naar de cache. Als het resultaat niet bestaat, vraagt het manuscript gegevensbestand. Nadat de query door de oorspronkelijke database is uitgevoerd, slaat het script het resultaat op in het geheugen, met de opdracht `set` .
 
-[Meer informatie over deze test](https://www.digitalocean.com/community/tutorials/how-to-install-and-use-memcache-on-ubuntu-12-04)
+[ Meer details over deze test ](https://www.digitalocean.com/community/tutorials/how-to-install-and-use-memcache-on-ubuntu-12-04)
 
 Maak de MySQL-database:
 
@@ -124,7 +124,7 @@ Maak de MySQL-database:
 mysql -u root -p
 ```
 
-Bij de `mysql` vraag, ga de volgende bevelen in:
+Voer bij de aanwijzing `mysql` de volgende opdrachten in:
 
 ```sql
 create database memcache_test;
@@ -135,7 +135,7 @@ insert into example values (1, "new_data");
 exit
 ```
 
-Maken `cache-test.php` in de hoofdmap van uw webserver:
+Maak `cache-test.php` in de hoofdmap van uw webserver:
 
 ```php
 $meminstance = new Memcached();
@@ -163,7 +163,7 @@ print "got result from memcached\n";
 return 0;
 ```
 
-Wanneer `<memcached hostname or ip>` is ofwel `localhost`, `127.0.0.1`of de hostnaam van de memcache of het IP-adres. De `<memcached port>` de luisterpoort is; standaard; `11211`.
+Waar `<memcached hostname or ip>` `localhost` , `127.0.0.1` of de hostnaam of het IP-adres van de memcache is. De `<memcached port>` is de listen poort; standaard is dit `11211` .
 
 Voer het script uit vanaf de opdrachtregel.
 
@@ -175,9 +175,9 @@ cd <web server docroot>
 php cache-test.php
 ```
 
-Het eerste resultaat is `got result from mysql`. Dit betekent dat de sleutel niet in het geheugen werd opgeslagen maar uit MySQL werd teruggewonnen.
+Het eerste resultaat is `got result from mysql` . Dit betekent dat de sleutel niet in het geheugen werd opgeslagen maar uit MySQL werd teruggewonnen.
 
-Het tweede resultaat is `got result from memcached`, waarmee wordt gecontroleerd of de waarde is opgeslagen in het geheugen.
+Het tweede resultaat is `got result from memcached` , waarmee wordt gecontroleerd of de waarde is opgeslagen in de cache.
 
 Tot slot kunt u de memachetoetsen bekijken gebruikend Telnet:
 
@@ -213,4 +213,4 @@ flush_all
 quit
 ```
 
-[Aanvullende informatie over de Telnet-test](https://darkcoding.net/software/memcached-list-all-keys/)
+[ Aanvullende informatie over de test van Telnet ](https://darkcoding.net/software/memcached-list-all-keys/)

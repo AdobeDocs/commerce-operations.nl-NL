@@ -5,20 +5,20 @@ feature: Configuration, Cache
 exl-id: 01f28c93-75cd-4969-9142-b8dac0aa2adb
 source-git-commit: a2bd4139aac1044e7e5ca8fcf2114b7f7e9e9b68
 workflow-type: tm+mt
-source-wordcount: '349'
+source-wordcount: '345'
 ht-degree: 0%
 
 ---
 
 # Laatste verificatie van de Varnish-configuratie
 
-Nu gebruikt u de `default.vcl` gegenereerd voor u door Handel, kunt u enkele laatste controles uitvoeren om ervoor te zorgen dat Varnish werkt.
+Nu u `default.vcl` gebruikt die voor u door Commerce wordt geproduceerd, kunt u sommige definitieve controles uitvoeren om ervoor te zorgen dat Varnish werkt.
 
 ## HTTP-antwoordheaders verifiëren
 
-Gebruiken `curl` of een ander hulpprogramma om HTTP-antwoordheaders weer te geven wanneer u een willekeurige handelspagina in een webbrowser bezoekt.
+Gebruik `curl` of een ander hulpprogramma om HTTP-antwoordheaders weer te geven wanneer u een Commerce-pagina in een webbrowser bezoekt.
 
-Controleer eerst of u [ontwikkelmodus](../cli/set-mode.md#change-to-developer-mode)Anders ziet u de koppen niet.
+Eerst, zorg ervoor u [ ontwikkelaarwijze ](../cli/set-mode.md#change-to-developer-mode) gebruikt; anders, zult u niet de kopballen zien.
 
 Bijvoorbeeld:
 
@@ -36,26 +36,26 @@ X-Magento-Cache-Debug: MISS
 
 >[!INFO]
 >
->Deze waarde is ook acceptabel: `X-Magento-Cache-Debug: HIT`.
+>Deze waarde is ook acceptabel: `X-Magento-Cache-Debug: HIT` .
 
 ## De laadtijden van de pagina controleren
 
-Als Varnish werkt, zou om het even welke pagina van de Handel met cacheable blokken binnen minder dan 150 ms moeten laden. Voorbeelden van dergelijke pagina&#39;s zijn de pagina&#39;s van de eerste en de winkelcategorie.
+Als Varnish werkt, moet een Commerce-pagina met cacheable blokken binnen 150 ms worden geladen. Voorbeelden van dergelijke pagina&#39;s zijn de pagina&#39;s van de eerste en de winkelcategorie.
 
 Met een browsercontrole kunt u de laadtijden van de pagina meten.
 
-U kunt bijvoorbeeld als volgt de Chrome-controle gebruiken:
+Als u bijvoorbeeld de Chrome-controle wilt gebruiken:
 
-1. Heb toegang tot om het even welke cacheable pagina van de Handel in Chrome.
+1. Open Commerce-pagina&#39;s die in de cache kunnen worden opgeslagen in Chrome.
 1. Klik met de rechtermuisknop ergens op de pagina.
 1. Klik in het pop-upmenu op **[!UICONTROL Inspect Element]**
-1. Klik in het deelvenster Inspecteur op de knop **[!UICONTROL Network]** tab.
+1. Klik in het deelvenster Inspecteur op de tab **[!UICONTROL Network]** .
 1. Vernieuw de pagina.
 1. Blader naar de bovenkant van het deelvenster met de controle, zodat u de URL kunt zien van de pagina die u bekijkt.
 
-   In de volgende afbeelding ziet u een voorbeeld van het laden van de `magento2` indexpagina.
+   In de volgende afbeelding ziet u een voorbeeld van het laden van de indexpagina `magento2` .
 
-   ![Klik op de pagina die u weergeeft](../../assets/configuration/varnish-inspector.png)
+   ![ klik de pagina u ](../../assets/configuration/varnish-inspector.png) bekijkt
 
    De laadtijd van de pagina wordt weergegeven naast de pagina-URL. In dit geval is de laadtijd 5 ms. Zo kunt u bevestigen dat Varnish de pagina in het cachegeheugen heeft opgeslagen.
 
@@ -63,24 +63,24 @@ U kunt bijvoorbeeld als volgt de Chrome-controle gebruiken:
 
    U kunt de kopballen van HTTP bekijken die meer in detail in de Verify sectie van de reactiekoppen van HTTP worden besproken.
 
-## De cache van Commerce controleren
+## De Commerce-cache controleren
 
-Zorg ervoor dat de `<magento_root>/var/page_cache` directory is leeg:
+Controleer of de map `<magento_root>/var/page_cache` leeg is:
 
-1. Meld u aan bij de Commerce-server of schakel over naar de eigenaar van het bestandssysteem.
+1. Meld u aan bij uw Commerce-server of schakel over naar de eigenaar van het bestandssysteem.
 1. Voer de volgende opdracht in:
 
    ```bash
    rm -rf <magento_root>/var/page_cache/*
    ```
 
-1. Heb toegang tot één of meerdere cacheable pagina&#39;s van de Handel.
-1. Controleer de `var/page_cache/` directory.
+1. Open een of meer cacheable Commerce-pagina&#39;s.
+1. Controleer de map `var/page_cache/` .
 
    Als de directory leeg is, gefeliciteerd! U hebt Varnish en Commerce geconfigureerd om samen te werken!
 
-1. Als u de `var/page_cache/` directory, begin Varnish opnieuw.
+1. Als u de map `var/page_cache/` hebt gewist, start u Varnish opnieuw.
 
 >[!TIP]
 >
->Als er 503 (Backend Fetch Failed) fouten optreden, raadpleegt u [Problemen oplossen met 503 (service niet beschikbaar) fouten](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/troubleshooting-503-errors.html) in de _Adobe Commerce Help Center_.
+>Als u 503 (Ontbroken de Ophalen van de Achterkant) fouten ontmoet, zie [ het Oplossen van problemen 503 (de Dienst niet beschikbaar) fouten ](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/troubleshooting-503-errors.html) in het _Adobe Commerce Help Center_.

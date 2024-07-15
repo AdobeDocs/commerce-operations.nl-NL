@@ -11,7 +11,7 @@ ht-degree: 9%
 
 # Configuratiegids
 
-De _Configuratie_ Deze handleiding bevat referentiemateriaal en beperkte richtlijnen voor het beheer van de configureerbare functies en services van Commerce-toepassingen. Technische gebruikers die verantwoordelijk zijn voor het configureren van de Commerce-toepassing kunnen hulp vinden bij de volgende onderdelen:
+De _gids van de Configuratie_ verstrekt verwijzingsmateriaal en beperkte begeleiding voor het beheren van de configureerbare de toepassingseigenschappen en diensten van Commerce. Technische gebruikers die verantwoordelijk zijn voor het configureren van de Commerce-toepassing kunnen hulp vinden bij de volgende onderdelen:
 
 - [Installatie](../configuration/bootstrap/initialization.md)
 - [Implementatiemethoden](../configuration/deployment/overview.md)
@@ -25,8 +25,8 @@ De _Configuratie_ Deze handleiding bevat referentiemateriaal en beperkte richtli
 
 ## Commerce Admin-configuratie
 
-Er zijn overeenkomstige onderwerpen in [Commerce-gebruikershandleiding](https://docs.magento.com/user-guide/stores/configuration.html) die u kunnen helpen bij het begrijpen van veldbeschrijvingen voor elke configuratie-instelling in Commerce Admin.
+Er zijn overeenkomstige onderwerpen in de [ Gids van de Gebruiker van Commerce ](https://docs.magento.com/user-guide/stores/configuration.html) die u kan helpen om gebiedsbeschrijvingen voor elke configuratie te begrijpen die in Commerce Admin plaatst.
 
 ## Cloud-configuratie
 
-[!DNL Commerce on cloud infrastructure] gebruikt een [set configuratiebestanden](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure/overview.html) om de Commerce-toepassingsfuncties en -services in de gehoste omgevingen bij te werken. Vanwege de unieke aard van de Adobe cloudgehoste omgevingen moet u altijd de [Wolkengids](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/overview.html) voor extra configuratievereisten.
+[!DNL Commerce on cloud infrastructure] gebruikt a [ reeks configuratiedossiers ](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure/overview.html) om de de toepassingseigenschappen en diensten van Commerce in de ontvangen milieu&#39;s bij te werken. Wegens de unieke aard van de Adobe wolk-ontvangen milieu&#39;s, zou u de [ gids van de Wolk ](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/overview.html) voor extra configuratievereisten altijd moeten herzien.

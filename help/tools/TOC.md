@@ -27,7 +27,7 @@ ht-degree: 0%
    - [Waarschuwingen](site-wide-analysis-tool/alerts.md)
    - [Patches](site-wide-analysis-tool/patches.md)
 - Gereedschap Kwaliteitspatches {#quality-patches-tool}
-   - [[!DNL Quality Patches Tool]: Zoeken naar patches](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html){target="_blank"}
+   - [[!DNL Quality Patches Tool]: Onderzoek naar flarden ](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html) {target="_blank"}
    - [Gebruik](quality-patches-tool/usage.md)
    - [Opmerkingen bij de release](quality-patches-tool/release-notes.md)
 - Verwijzing naar opdrachtregelprogramma&#39;s {#cli-reference}
@@ -40,7 +40,7 @@ ht-degree: 0%
    - [De focustabs kiezen](observation-for-adobe-commerce/choosing-focus-tabs.md)
    - [Het tabblad Overzicht](observation-for-adobe-commerce/summary.md)
    - [Het tabblad Elasticsearch](observation-for-adobe-commerce/elasticsearch.md)
-   - [Het tabblad Redis](observation-for-adobe-commerce/redis-tab.md)
+   - [ Redis lusje ](observation-for-adobe-commerce/redis-tab.md)
    - [Het tabblad MySQL](observation-for-adobe-commerce/mysql-tab.md)
    - [Het tabblad PHP](observation-for-adobe-commerce/php-tab.md)
    - [Het tabblad Bots](observation-for-adobe-commerce/bots.md)
@@ -48,14 +48,14 @@ ht-degree: 0%
    - [Het tabblad Waarschuwingen](observation-for-adobe-commerce/alerts-tab.md)
    - [Het tabblad WAF](observation-for-adobe-commerce/waf-tab.md)
    - [Het tabblad CDN](observation-for-adobe-commerce/cdn-tab.md)
-   - [De [!DNL RabbitMQ] tab](observation-for-adobe-commerce/rabbitmq-tab.md)
+   - [Het  [!DNL RabbitMQ]  lusje](observation-for-adobe-commerce/rabbitmq-tab.md)
    - [Het tabblad Uitsnijden](observation-for-adobe-commerce/cron-tab.md)
    - [Het tabblad Indexering](observation-for-adobe-commerce/indexing-tab.md)
    - [Het tabblad QuickView](observation-for-adobe-commerce/oac-quickview-tab.md)
-   - [Het tabblad Beveiliging](observation-for-adobe-commerce/security-tab.md)
+   - [ het lusje van de Veiligheid ](observation-for-adobe-commerce/security-tab.md)
    - [Het tabblad Infra](observation-for-adobe-commerce/oac-infra.md)
    - [Hoe wordt Observatie voor Adobe Commerce gebruikt](observation-for-adobe-commerce/how-to-use.md)
-- Gegevensmigratie {#data-migration}
+- Gereedschap voor gegevensmigratie {#data-migration}
    - [Hoe migratie werkt](data-migration-tool/how-migration-works.md)
    - [Aanbevolen procedures](data-migration-tool/best-practices.md)
    - [Ondersteunde versies](data-migration-tool/supported-versions.md)
@@ -74,8 +74,8 @@ ht-degree: 0%
       - [Wijzigingen](data-migration-tool/migrate-data/delta.md)
       - [Follow-up](data-migration-tool/migrate-data/follow-up.md)
       - [Gegevens die handmatige migratie vereisen](data-migration-tool/migrate-data/manual.md)
-      - [Stappen voor migratie na gegevens](data-migration-tool/migrate-data/post-migration.md)
+      - [Post-stappen voor gegevensmigratie](data-migration-tool/migrate-data/post-migration.md)
    - Bronnen {#resources}
-      - [Problemen oplossen](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/data-migration-tool-troubleshooting.html)
-      - [Changelog](https://github.com/magento/data-migration-tool/blob/2.4/CHANGELOG.md)
-- [Terugkeren naar operationele hulplijnen](https://experienceleague.adobe.com/docs/commerce-operations/operational-guides/home.html)
+      - [ het Oplossen van problemen ](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/data-migration-tool-troubleshooting.html)
+      - [ Changelog ](https://github.com/magento/data-migration-tool/blob/2.4/CHANGELOG.md)
+- [ Terugkeer aan Operationele Gidsen ](https://experienceleague.adobe.com/docs/commerce-operations/operational-guides/home.html)

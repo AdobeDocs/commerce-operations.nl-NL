@@ -12,14 +12,14 @@ ht-degree: 0%
 <!-- The template to render with above values -->
 **Versie**: 3.0.17
 
-Deze verwijzing bevat 9 opdrachten die beschikbaar zijn via het `bin/uct` opdrachtregelprogramma.
-De eerste lijst wordt automatisch gegenereerd met de opdracht `bin/uct list` op Adobe Commerce.
+Deze verwijzing bevat 9 opdrachten die beschikbaar zijn via het opdrachtregelprogramma van `bin/uct` .
+De eerste lijst wordt automatisch gegenereerd met de opdracht `bin/uct list` in Adobe Commerce.
 
-Meer informatie over het gereedschap in [Overzicht](/help/upgrade/upgrade-compatibility-tool/overview.md).
+Leer meer over het hulpmiddel in [ Overzicht ](/help/upgrade/upgrade-compatibility-tool/overview.md).
 
 >[!NOTE]
 >
->Deze verwijzing wordt gegenereerd op basis van de toepassingscodebase. Als u de inhoud wilt wijzigen, kunt u de broncode voor de corresponderende opdrachtimplementatie bijwerken in het dialoogvenster [codebase](https://github.com/magento) opslaan en uw wijzigingen ter controle verzenden. Een andere manier is om _Feedback geven_ (zoek de koppeling in de rechterbovenhoek). Zie voor richtsnoeren voor bijdragen [Codebijdragen](https://developer.adobe.com/commerce/contributor/guides/code-contributions/).
+>Deze verwijzing wordt gegenereerd op basis van de toepassingscodebase. Om de inhoud te veranderen, kunt u de broncode voor de overeenkomstige bevelimplementatie in de [ codebase ](https://github.com/magento) bewaarplaats bijwerken en uw veranderingen voor overzicht voorleggen. Een andere manier is ons _geven terugkoppelt_ (vind de verbinding bij het hogere recht). Voor bijdragerichtsnoeren, zie {de Bijdragen van de Code 0} ](https://developer.adobe.com/commerce/contributor/guides/code-contributions/).[
 
 ## `_complete`
 
@@ -38,7 +38,7 @@ Het shell-type (&quot;bash&quot;)
 
 ### `--input`, `-i`
 
-Een array van invoertokens (bv. COMP_WORDS of argv)
+Een array van invoertokens (bijvoorbeeld COMP_WORDS of argv)
 
 - Standaard: `[]`
 - Vereist een waarde

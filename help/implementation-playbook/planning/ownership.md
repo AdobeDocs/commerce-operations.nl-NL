@@ -18,6 +18,6 @@ Dit gebeurt vaak als gevolg van een gebrek aan duidelijkheid over projectrollen 
 
 ## Hoe werken we samen?
 
-Een Verantwoordelijke, Verantwoordelijke, Geconsulteerde, en Informed (RACI) matrijs-als wij in [projectbereikbaarheid](../project-scope/deliverables.md) sectie—is een nuttig hulpmiddel dat het bezit en de verantwoordelijkheid in elke fase van het project bepaalt en documenteert. Binnen de matrix worden elke taak, mijlpaal en beslissing in het project toegewezen aan specifieke rollen of personen. Het helpt projectbeheer om de processen te stroomlijnen door ervoor te zorgen elk teamlid en elke belanghebbende hun specifieke rollen begrijpen. Dit moet in de planningsfase van het project worden gedefinieerd en door elke belanghebbende worden aanvaard.
+Een Verantwoordelijke, Verantwoordelijke, Geconsulteerde, en Informele (RACI) matrijs-als wij in het [ project het scoping ](../project-scope/deliverables.md) sectie-zijn een nuttig hulpmiddel dat bepaalt en bezit en verantwoordelijkheid in elk stadium van het project documenteert. Binnen de matrix worden elke taak, mijlpaal en beslissing in het project toegewezen aan specifieke rollen of personen. Het helpt projectbeheer om de processen te stroomlijnen door ervoor te zorgen elk teamlid en elke belanghebbende hun specifieke rollen begrijpen. Dit moet in de planningsfase van het project worden gedefinieerd en door elke belanghebbende worden aanvaard.
 
-![Tabel die het RACI-kader beschrijft](../../assets/playbooks/raci.svg)
+![ Lijst beschrijvend het RACI kader ](../../assets/playbooks/raci.svg)

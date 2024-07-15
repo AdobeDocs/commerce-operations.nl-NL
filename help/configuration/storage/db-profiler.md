@@ -6,18 +6,18 @@ badge: label="Bijgedragen door Atish Goswami" type="Informative" url="https://gi
 exl-id: 87780db5-6e50-4ebb-9591-0cf22ab39af5
 source-git-commit: af45ac46afffeef5cd613628b2a98864fd7da69b
 workflow-type: tm+mt
-source-wordcount: '193'
+source-wordcount: '184'
 ht-degree: 0%
 
 ---
 
 # De databaseanalyse configureren
 
-De het gegevensbestandanalyse van de Handel toont alle vragen die op een pagina worden uitgevoerd, met inbegrip van de tijd voor elke vraag en welke parameters werden toegepast.
+De Commerce-databaseanalyse geeft alle query&#39;s weer die op een pagina zijn geïmplementeerd, inclusief de tijd voor elke query en de parameters die zijn toegepast.
 
 ## Stap 1: Wijzig de plaatsingsconfiguratie
 
-Wijzigen `<magento_root>/app/etc/env.php` om de volgende verwijzing naar de [databaseanalyseklasse](https://github.com/magento/magento2/tree/2.4/lib/internal/Magento/Framework/DB/Profiler.php):
+Wijzig `<magento_root>/app/etc/env.php` om de volgende verwijzing naar de [ klasse van gegevensbestandanalyse ](https://github.com/magento/magento2/tree/2.4/lib/internal/Magento/Framework/DB/Profiler.php) toe te voegen:
 
 ```php?start_inline=1
         'profiler' => [
@@ -55,7 +55,7 @@ Hier volgt een voorbeeld:
 
 ## Stap 2: Vorm de output
 
-Vorm de output in uw toepassing van de Handel bootstrap dossier; dit zou kunnen zijn `<magento_root>/pub/index.php` of de locatie kan zich bevinden in een virtuele hostconfiguratie van een webserver.
+Configureer de uitvoer in het opstartbestand van de Commerce-toepassing. Dit kan `<magento_root>/pub/index.php` zijn of zich bevinden in een virtuele hostconfiguratie van de webserver.
 
 In het volgende voorbeeld worden de resultaten in een tabel met drie kolommen weergegeven:
 
@@ -63,7 +63,7 @@ In het volgende voorbeeld worden de resultaten in een tabel met drie kolommen we
 - SQL (toont alle SQL vragen; de rijkopbal toont de telling van vragen)
 - De Params van de vraag (toont de parameters voor elke SQL vraag)
 
-Om de output te vormen, voeg het volgende na toe `$bootstrap->run($app);` lijn in uw laarzentrekkerbestand:
+Als u de uitvoer wilt configureren, voegt u de volgende code toe na de regel `$bootstrap->run($app);` in het opstartbestand:
 
 ```php?start_inline=1
 /** @var \Magento\Framework\App\ResourceConnection $res */
@@ -91,4 +91,4 @@ echo "</table>";
 
 Ga naar een willekeurige pagina in uw winkel of Admin om de resultaten weer te geven. Hieronder volgt een monster:
 
-![Voorbeeld van databaseanalyseresultaten](../../assets/configuration/db-profiler-results.png)
+![ Resultaten van het gegevensbestandanalyse van de Steekproef ](../../assets/configuration/db-profiler-results.png)

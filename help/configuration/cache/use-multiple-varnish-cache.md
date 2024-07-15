@@ -18,11 +18,11 @@ Dit onderwerp toont de grondbeginselen van het vormen van veelvoudige instanties
 
 ## Configuratie om meerdere instanties van Varnish te zuiveren
 
-Commerce zuivert Varnish gastheren nadat u de gastheren van Varnish gebruikend vormt [`magento setup:config:set`](../../installation/tutorials/deployment.md) gebruiken.
+Commerce zuivert Varnish gastheren nadat u de gastheren van Varnish gebruikend het [`magento setup:config:set`](../../installation/tutorials/deployment.md) bevel vormt.
 
-U moet de opdracht `--http-cache-hosts` parameter om een komma-gescheiden lijst van Varnish gastheren te specificeren en havens te luisteren. (Plaats geen spatie tussen de hosts.)
+Gebruik de parameter `--http-cache-hosts` om een door komma&#39;s gescheiden lijst met varens-hosts op te geven en poorten te beluisteren. (Plaats geen spatie tussen de hosts.)
 
-De parameternotatie moet `<hostname or ip>:<listen port>`, waar u kunt weglaten `<listen port>` als het poort 80 is.
+De parameterindeling moet `<hostname or ip>:<listen port>` zijn, waarbij u `<listen port>` kunt weglaten als dit poort 80 is.
 
 Bijvoorbeeld:
 
@@ -30,8 +30,8 @@ Bijvoorbeeld:
 bin/magento setup:config:set --http-cache-hosts=192.0.2.100,192.0.2.155:8080
 ```
 
-Vervolgens kunt u alle Varnish-hosts leegmaken wanneer u de Commerce-cache vernieuwt (ook wel bekend als _schoonmaken_ (de cache) in de beheerfunctie of via de opdrachtregel.
+U kunt alle Versijke gastheren dan zuiveren wanneer u het geheime voorgeheugen van Commerce (die ook als _wordt bedoeld schoonmaken_ het geheime voorgeheugen) in Admin of het gebruiken van de bevellijn verfrist.
 
-Als u de cache wilt vernieuwen met behulp van de beheerfunctie, klikt u op **SYSTEEM** > Gereedschappen > **Cachebeheer** en klik vervolgens op **Cache van Magento leegmaken** boven aan de pagina. (U kunt ook afzonderlijke cachetypen vernieuwen.)
+Om het geheime voorgeheugen te verfrissen dat Admin gebruikt, klik **> Hulpmiddelen >** het Beheer van het Geheime voorgeheugen **, dan klik** het Geheime voorgeheugen van het Magento **bij de bovenkant van de pagina.** (U kunt ook afzonderlijke cachetypen vernieuwen.)
 
-Als u het cachegeheugen van meerdere instanties Varnish wilt vernieuwen vanuit de cli, gebruikt u de opdracht [`magento cache:clean <type>`](../cli/manage-cache.md#clean-and-flush-cache-types) gebruiken als de [eigenaar van bestandssysteem](../../installation/prerequisites/file-system/overview.md).
+Om het geheime voorgeheugen van veelvoudige instanties van Varnish van cli te verfrissen gebruik het [`magento cache:clean <type>`](../cli/manage-cache.md#clean-and-flush-cache-types) bevel als [ eigenaar van het dossiersysteem ](../../installation/prerequisites/file-system/overview.md).

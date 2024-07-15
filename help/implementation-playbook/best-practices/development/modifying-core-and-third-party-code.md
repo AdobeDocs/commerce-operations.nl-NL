@@ -4,7 +4,8 @@ description: Leer hoe en wanneer u Adobe Commerce en PHP-code van derden wijzigt
 role: Developer, Architect
 feature: Best Practices
 last-substantial-update: 2023-12-8
-source-git-commit: ab02552939d595627f0de83b8508c7cd21777642
+exl-id: 32b3137d-fc00-4be8-ba02-5d8d48a51fe1
+source-git-commit: d47567a8d69ccdae3db01e964f1db12e8ae26717
 workflow-type: tm+mt
 source-wordcount: '1747'
 ht-degree: 0%
@@ -46,7 +47,7 @@ index 51b68411d40..ac4a3468322 100644
 
 #### Wat kan worden veranderd met een pleister
 
-Alles. Letterlijk, kan om het even welk karakter binnen om het even welk gericht dossier worden veranderd. Patches zijn niet beperkt tot een bepaald bestandstype of een bepaalde codetaal. Doorgaans gebruikt u een patch om bestanden binnen het `vendor` directory. 
+Alles. Letterlijk, kan om het even welk karakter binnen om het even welk gericht dossier worden veranderd. Patches zijn niet beperkt tot een bepaald bestandstype of een bepaalde codetaal. Gewoonlijk gebruikt u een patch om bestanden in de map `vendor` als doel in te stellen. 
 
 #### Wanneer gebruikt u een pleister
 
@@ -69,7 +70,7 @@ Opgemerkt moet worden dat (gewoonlijk) de nieuwe PHP klasse die de oorspronkelij
 
 #### Een voorkeur declareren
 
-Het is een vrij eenvoudig proces om een voorkeur te verklaren. Er moet één regel code worden toegevoegd aan een `di.xml` in een module. Dit kan globaal of binnen om het even welk Adobe Commerce &quot;gebied&quot;worden gedaan, zoals `frontend`, `adminhtml`, `graphql`, `webapi_rest`, en `crontab`.
+Het is een vrij eenvoudig proces om een voorkeur te verklaren. Er moet één regel code worden toegevoegd aan een `di.xml` -bestand in een module. Dit kan globaal of binnen om het even welk Adobe Commerce &quot;gebied&quot;, zoals `frontend`, `adminhtml`, `graphql`, `webapi_rest`, en `crontab` worden gedaan.
 
 ```xml
 <preference for="Magento\Elasticsearch7\SearchAdapter\Adapter" type="Vendor\Namespace\Adapter\AlgoliaElasticSearch7Adapter"/>
@@ -105,11 +106,11 @@ Voorkeuren zijn een vloeiende manier om code te wijzigen en moeten alleen worden
 
 Een waarnemer is het concept van een gebeurtenisluisteraar, zoals die in vele toepassingen, platforms, bibliotheken, en coderingstalen wordt gevonden. Het concept is niet uniek voor het Adobe Commerce-platform. Waarnemers zijn sinds de dagen van Magento 1 op het platform geborgen en worden beschouwd als een primaire keuze voor het wijzigen van de kerncode en code van derden. 
 
-De kerncodebase en alle modules van derden kunnen een gebeurtenis verzenden op een gekozen plaats in de code. De waarnemer, die in een `events.xml` bestand en luistert naar de verzonden gebeurtenis op naam, kan op globaal niveau werken of beperkt zijn tot elk Adobe Commerce-&quot;gebied&quot;, zoals `frontend`, `adminhtml`, `graphql`, `webapi_rest`, en `crontab`.
+De kerncodebase en alle modules van derden kunnen een gebeurtenis verzenden op een gekozen plaats in de code. De waarnemer, die wordt gedeclareerd in een `events.xml` -bestand en luistert naar de verzonden gebeurtenis op naam, kan op globaal niveau werken of worden beperkt tot elk Adobe Commerce-&quot;gebied&quot;, zoals `frontend` , `adminhtml` , `graphql` , `webapi_rest` en `crontab` .
 
 #### Hoe een waarnemer te declareren
 
-Waarnemers kunnen globaal of gebiedsspecifiek worden geconfigureerd `events.xml` bestand.
+Waarnemers kunnen worden geconfigureerd in een globaal of gebiedspecifiek `events.xml` -bestand.
 
 ```xml
     <event name="sales_model_service_quote_submit_before">
@@ -164,11 +165,11 @@ Een andere beperkende factor van waarnemers is dat de verzonden gebeurtenis alle
 
 ### Insteekmodule
 
-Een plug-in is een flexibel concept dat is geïntroduceerd in het Adobe Commerce-platform. Het staat u toe om het even welke openbare PHP methodes te onderscheppen, te vervangen en te wijzigen. Met behulp van insteekmodules kunt u de argumenten wijzigen die naar een methode gaan voordat de doelmethode wordt uitgevoerd, het resultaat wijzigen nadat de doelmethode is uitgevoerd of de doelmethode volledig vervangen. U kunt vele methoden van een bepaalde PHP-klasse wijzigen in één insteekmodulebestand. U kunt ook de opdracht `$subject` argument om openbare methodes uit te voeren die in de gerichte klasse PHP bestaan.
+Een plug-in is een flexibel concept dat is geïntroduceerd in het Adobe Commerce-platform. Het staat u toe om het even welke openbare PHP methodes te onderscheppen, te vervangen en te wijzigen. Met behulp van insteekmodules kunt u de argumenten wijzigen die naar een methode gaan voordat de doelmethode wordt uitgevoerd, het resultaat wijzigen nadat de doelmethode is uitgevoerd of de doelmethode volledig vervangen. U kunt vele methoden van een bepaalde PHP-klasse wijzigen in één insteekmodulebestand. U kunt ook het argument `$subject` gebruiken om openbare methoden uit te voeren die in de beoogde PHP-klasse bestaan.
 
 #### Een plug-in declareren
 
-Insteekmodules kunnen worden geconfigureerd in een algemene of gebiedspecifieke `di.xml` bestand.
+Plug-ins kunnen worden geconfigureerd in een globaal of gebiedspecifiek `di.xml` bestand.
 
 ```xml
     <type name="Magento\Catalog\Api\CategoryRepositoryInterface">

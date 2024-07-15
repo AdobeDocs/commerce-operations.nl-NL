@@ -17,7 +17,7 @@ De redenen voor het starten van een nieuwe Adobe Commerce-implementatie of het v
 
 Het volgende diagram toont de verwijzingsarchitectuur voor het opstellen van Adobe Commerce op-gebouw op de infrastructuur van AWS. Andere cloudproviders zoals Azure, Google Cloud en Alibaba Cloud delen een vergelijkbaar infrastructuurontwerp en homologe services.
 
-![Diagram met zelfgehoorzame Adobe Commerce-infrastructuur op cloudservices van derden](/help/assets/playbooks/on-premises-infrastructure.svg)
+![ Diagram die zelf-ontvangende infrastructuur van Adobe Commerce op de diensten van de derdewolk tonen ](/help/assets/playbooks/on-premises-infrastructure.svg)
 
 Laten we dieper ingaan op de rollen en functies van elk aspect van de infrastructuur die hierboven wordt getoond:
 

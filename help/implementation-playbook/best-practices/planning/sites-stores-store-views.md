@@ -6,7 +6,7 @@ feature: Best Practices
 exl-id: 3ea0c6c5-15a9-4e77-b4d0-ce15721c7167
 source-git-commit: a81e88a4293880ae90cd531ce60c5a2b177188f2
 workflow-type: tm+mt
-source-wordcount: '237'
+source-wordcount: '228'
 ht-degree: 0%
 
 ---
@@ -17,7 +17,7 @@ Voor Adobe Commerce op cloudinfrastructuur zijn de beste werkwijzen specifiek va
 
 ## Betrokken producten en versies
 
-[Alle ondersteunde versies](../../../release/versions.md) van:
+[ Alle gesteunde versies ](../../../release/versions.md) van:
 
 - Adobe Commerce over cloudinfrastructuur
 - Adobe Commerce ter plaatse
@@ -34,12 +34,12 @@ Als voor uw project een groot aantal sites, winkels of winkelweergaven nodig is,
 
 Websites en winkels zijn multipliers voor catalogusgegevens, zodat het hebben van veel websites en winkels de prestaties van sites op de volgende manieren negatief kan beïnvloeden:
 
-- Grotere indextabellen vergen meer tijd om indexeringsbewerkingen te voltooien [Prijsindex].
+- De grotere indexlijsten verhogen tijd die wordt vereist om indexerende verrichtingen [ index van de Prijs ] te voltooien.
 - De hogere tijd om toepassingsconfiguratie terug te winnen degradeert storefront reactietijd voor niet caching cataloguspagina&#39;s.
 - Er is aanzienlijk meer tijd nodig om opslagbewerkingen in de beheerder uit te voeren, aangezien de gegevens voor elke website afzonderlijk worden opgeslagen.
 
 
 ## Aanvullende informatie
 
-- [Werken met websites, winkels en winkelweergaven](https://devdocs.magento.com/cloud/configure/configure-best-practices.html#sites)
-- [Meerdere websites of winkels instellen](https://devdocs.magento.com/cloud/project/project-multi-sites.html)
+- [ Begrip websites, opslag, en opslagmeningen ](https://devdocs.magento.com/cloud/configure/configure-best-practices.html#sites)
+- [ Opstelling veelvoudige websites of opslag ](https://devdocs.magento.com/cloud/project/project-multi-sites.html)

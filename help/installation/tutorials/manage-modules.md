@@ -23,13 +23,13 @@ bin/magento module:status [--enabled] [--disabled] <module-list>
 
 Wanneer
 
-* `--enabled` maakt een lijst van alle toegelaten modules.
-* `--disabled` Hiermee geeft u alle uitgeschakelde modules weer.
+* In `--enabled` worden alle ingeschakelde modules weergegeven.
+* In `--disabled` worden alle uitgeschakelde modules weergegeven.
 * `<module-list>` is een door spaties gescheiden lijst met modules om de status te controleren. Als een modulenaam speciale tekens bevat, plaatst u de naam tussen enkele of dubbele aanhalingstekens.
 
 >[!NOTE]
 >
->U kunt modules niet direct op wolkenprojecten toelaten of onbruikbaar maken. U moet deze opdrachten lokaal uitvoeren en vervolgens wijzigingen aanbrengen in het dialoogvenster `app/etc/config.php` bestand voor een omgeving. Zie [Workflow voor Pro-projecten: implementatieworkflow](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/architecture/pro-develop-deploy-workflow.html#deployment-workflow).
+>U kunt modules niet direct op wolkenprojecten toelaten of onbruikbaar maken. U moet deze opdrachten lokaal uitvoeren en vervolgens wijzigingen in het `app/etc/config.php` -bestand doorvoeren voor een omgeving. Zie [ Pro projectwerkschema: Het werkschema van de Plaatsing ](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/architecture/pro-develop-deploy-workflow.html#deployment-workflow).
 
 ## Module in-/uitschakelen
 
@@ -46,21 +46,21 @@ bin/magento module:disable [-c|--clear-static-content] [-f|--force] [--all] <mod
 Wanneer
 
 * `<module-list>` is een door spaties gescheiden lijst met modules die moeten worden in- of uitgeschakeld. Als een modulenaam speciale tekens bevat, plaatst u de naam tussen enkele of dubbele aanhalingstekens.
-* `--all` om alle modules tezelfdertijd in of onbruikbaar te maken.
-* `-f` of `--force` om een module te dwingen om ondanks gebiedsdelen worden toegelaten of worden onbruikbaar gemaakt. Voordat u deze optie gebruikt, raadpleegt u [Modules in- en uitschakelen](#about-enabling-and-disabling-modules).
-* `-c` of `--clear-static-content` cleans [gegenereerde statische weergavebestanden](../../configuration/cli/static-view-file-deployment.md).
+* `--all` om alle modules tegelijkertijd in of uit te schakelen.
+* `-f` of `--force` gebruiken om een module in- of uit te schakelen ondanks afhankelijkheden. Alvorens u deze optie gebruikt, zie [ Ongeveer toelatend en onbruikbaar makend modules ](#about-enabling-and-disabling-modules).
+* `-c` of `--clear-static-content` ontruimt [ geproduceerde statische meningsdossiers ](../../configuration/cli/static-view-file-deployment.md).
 
   Als u statische weergavebestanden niet wist, kunnen er problemen optreden als er meerdere bestanden met dezelfde naam zijn en u niet alle bestanden wist.
 
-  Met andere woorden, vanwege de [fallback van statische bestanden](../../configuration/cli/static-view-file-deployment.md) regels, als u statische bestanden niet wist en er meerdere bestanden zijn met de naam `logo.svg` anders, zou de reserve het verkeerde dossier kunnen veroorzaken om te tonen.
+  Met andere woorden, wegens de [ statische dossierreserve ](../../configuration/cli/static-view-file-deployment.md) regels, als u geen statische dossiers ontruimt en er meer dan één dossier genoemd `logo.svg` is die verschillend zijn, zou de reserve het verkeerde dossier aan vertoning kunnen veroorzaken.
 
-Als u bijvoorbeeld de opdracht `Magento_Weee` -module, voert u in:
+Als u bijvoorbeeld de module `Magento_Weee` wilt uitschakelen, voert u het volgende in:
 
 ```bash
 bin/magento module:disable Magento_Weee
 ```
 
-Voor belangrijke informatie over het toelaten van en het onbruikbaar maken van modules, zie [Modules in- en uitschakelen](#about-enabling-and-disabling-modules).
+Voor belangrijke informatie over het toelaten van en het onbruikbaar maken van modules, zie [ over het toelaten van en het onbruikbaar maken van modules ](#about-enabling-and-disabling-modules).
 
 ## De database bijwerken
 
@@ -82,7 +82,7 @@ Met Adobe Commerce kunt u de momenteel beschikbare modules in- of uitschakelen, 
 
 Bepaalde modules hebben gebiedsdelen op andere modules, in welk geval u een module zou kunnen niet toelaten of onbruikbaar maken omdat het gebiedsdelen op andere modules heeft.
 
-Bovendien kunnen er *conflicteren* modules die niet tegelijkertijd kunnen worden ingeschakeld.
+Bovendien zou er *het in conflict brengen* modules kunnen zijn die niet allebei kunnen tezelfdertijd worden toegelaten.
 
 Voorbeelden:
 
@@ -90,20 +90,20 @@ Voorbeelden:
 
 * Module A is afhankelijk van module B, die beide zijn uitgeschakeld. U moet module B toelaten alvorens u module A kunt toelaten.
 
-* Module A veroorzaakt een conflict met module B. U kunt Module A en Module B onbruikbaar maken, of u kunt één van beide module onbruikbaar maken maar u *kan* Module A en Module B tegelijkertijd inschakelen.
+* Module A veroorzaakt een conflict met module B. U kunt Module A en Module B onbruikbaar maken, of u kunt één van beide module onbruikbaar maken maar u *kunt niet* module A en Module B tezelfdertijd toelaten.
 
-* Afhankelijkheden worden gedeclareerd in het dialoogvenster `require` veld in Adobe Commerce `composer.json` bestand voor elke module. Conflicten worden gedeclareerd in de `conflict` veld in modules&quot; `composer.json` bestanden. Wij gebruiken die informatie om een gebiedsdeelgrafiek te bouwen: `A->B` betekent module A afhankelijk is van module B.
+* Afhankelijkheden worden voor elke module gedeclareerd in het veld `require` in het Adobe Commerce `composer.json` -bestand. Conflicten worden gedeclareerd in het veld `conflict` in de `composer.json` -bestanden van modules. Deze informatie wordt gebruikt om een afhankelijkheidsgrafiek samen te stellen: `A->B` betekent dat module A afhankelijk is van module B.
 
-* A *afhankelijkheidsketen* Dit is het pad van een module naar een andere module. Bijvoorbeeld, als module A van module B en module B van module C afhangt, dan is de gebiedsdeelketen `A->B->C`.
+* A *gebiedsdeelketen* is de weg van een module aan een andere. Als module A bijvoorbeeld afhankelijk is van module B en module B van module C, is de afhankelijkheidsketen `A->B->C` .
 
 Als u probeert om een module toe te laten of onbruikbaar te maken die van andere modules afhangt, toont de gebiedsdeelgrafiek in het foutenbericht.
 
 >[!NOTE]
 >
->Het is mogelijk dat module A&#39;s `composer.json` declareert een conflict met module B, maar niet omgekeerd.
+>Het is mogelijk dat module A `composer.json` een conflict met module B maar niet omgekeerd verklaart.
 
-*Alleen opdrachtregel:* Als u een module wilt inschakelen of uitschakelen, ongeacht de afhankelijkheden, gebruikt u de optie `--force` argument.
+*lijn van het Bevel slechts:* om een module te dwingen om ongeacht zijn gebiedsdelen worden toegelaten of worden onbruikbaar gemaakt, gebruik het facultatieve `--force` argument.
 
 >[!NOTE]
 >
->Gebruiken `--force` kan uw winkel uitschakelen en problemen met de beheerfunctie veroorzaken.
+>Als u `--force` gebruikt, kan de winkel worden uitgeschakeld en kunnen er problemen optreden bij de toegang tot de beheerder.

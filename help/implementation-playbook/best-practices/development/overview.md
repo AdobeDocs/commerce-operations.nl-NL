@@ -26,7 +26,7 @@ De ontwikkelingsfase omvat de volgende activiteiten:
 
 >[!TIP]
 >
->Zie [algemene beste praktijken](general.md) aanbevelingen op hoog niveau over het algemene beheer van het ontwikkelingsproces.
+>Zie [ algemene beste praktijken ](general.md) voor aanbevelingen op hoog niveau over algemeen beheer van het ontwikkelingsproces.
 
 De volgende secties bevatten informatie over best practices voor de ontwikkelingsfase.
 
@@ -34,44 +34,44 @@ De volgende secties bevatten informatie over best practices voor de ontwikkeling
 
 | Beste praktijken | Beschrijving |
 |-----------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------|
-| [Codeherziening](code-review.md) | Aanbevolen validatieproces om ervoor te zorgen dat de geïmplementeerde functionaliteit voldoet aan de vereisten |
-| [Composer vs. kit](code-management.md) | Bepaal hoe te om douanecode met aandacht voor versiebeheer, codeingewikkeldheid, en gebiedsdeelbeheer te verdelen |
-| [Vertakkingsstrategie](git-branching.md) | Broncode beheren in Git-opslagruimten |
+| [ overzicht van de Code ](code-review.md) | Aanbevolen validatieproces om ervoor te zorgen dat de geïmplementeerde functionaliteit voldoet aan de vereisten |
+| [ Composer vs Git ](code-management.md) | Bepaal hoe te om douanecode met aandacht voor versiebeheer, codeingewikkeldheid, en gebiedsdeelbeheer te verdelen |
+| [ Vertakkende strategie ](git-branching.md) | Broncode beheren in Git-opslagruimten |
 
 ## Platform en diensten
 
 | Beste praktijken | Beschrijving |
 |--------------------------------------------------------------------------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------|
-| [Builds en implementatie](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/deploy/best-practices.html){target="_blank"} | Beschrijft beste praktijken voor de bouw en stel stadia van Adobe Commerce op de projecten van de wolkeninfrastructuur in |
+| [ bouwt en plaatsing ](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/deploy/best-practices.html) {target="_blank"} | Beschrijft beste praktijken voor de bouw en stel stadia van Adobe Commerce op de projecten van de wolkeninfrastructuur in |
 | Foutopsporing | Fouten systematisch en effectief opsporen in het Adobe Commerce-kader |
-| [Statische implementatie van inhoud](static-content-deployment.md) | Vermijd problemen met statische inhoud die niet in uw winkelruimte wordt weergegeven |
-| [Problemen oplossen](troubleshooting.md) | Problemen met algemene Adobe Commerce-implementatie oplossen |
+| [ Statische inhoudsplaatsing ](static-content-deployment.md) | Vermijd problemen met statische inhoud die niet in uw winkelruimte wordt weergegeven |
+| [ het Oplossen van problemen ](troubleshooting.md) | Problemen met algemene Adobe Commerce-implementatie oplossen |
 
 ## Database
 
 | Beste praktijken | Beschrijving |
 |----------------------------------------------------------------|---------------------------------------------------------------------------------|
-| [Tabelwijziging](modifying-core-and-third-party-tables.md) | Bepaal hoe en wanneer om Adobe Commerce en derdegegevensbestandlijsten te wijzigen |
+| [ de wijziging van de Lijst ](modifying-core-and-third-party-tables.md) | Bepaal hoe en wanneer om Adobe Commerce en derdegegevensbestandlijsten te wijzigen |
 
 ## Bestanden optimaliseren
 
 | Beste praktijken | Beschrijving |
 |-----------------------------------------------------|-----------------------------------------------------------------------------------------------------------|
-| [Grootte van catalogusafbeelding wijzigen](catalog-image-resizing.md) | Biedt richtlijnen voor het vergroten of verkleinen van afbeeldingen voordat een winkel in productie wordt genomen voor optimale prestaties |
-| [CSS en JS](optimize-css-js-files.md) | Cascading Style Sheet (CSS)- en JavaScript-bestanden (JS) samenvoegen en miniaturen via Beheer of de opdrachtregel |
-| [Afbeeldingen](image-optimization.md) | Afbeeldingen optimaliseren en snel gebruiken om de responstijd te optimaliseren |
+| [ het beeld van de Catalogus resizing ](catalog-image-resizing.md) | Biedt richtlijnen voor het vergroten of verkleinen van afbeeldingen voordat een winkel in productie wordt genomen voor optimale prestaties |
+| [ CSS en JS ](optimize-css-js-files.md) | Cascading Style Sheet (CSS)- en JavaScript-bestanden (JS) samenvoegen en miniaturen via Beheer of de opdrachtregel |
+| [ Beelden ](image-optimization.md) | Afbeeldingen optimaliseren en snel gebruiken om de responstijd te optimaliseren |
 
 ## Frontendement
 
 | Beste praktijken | Beschrijving |
 |----------------------------------------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------|
-| [Themaontwikkeling](https://developer.adobe.com/commerce/frontend-core/guide/best-practices/){target="_blank"} | Beschrijft ontwikkelingspatronen helpen verzekeren verenigbaarheid tussen uw thema, toekomstige versies van Adobe Commerce, en douanetoevoegdheden |
+| [ de ontwikkeling van het Thema ](https://developer.adobe.com/commerce/frontend-core/guide/best-practices/) {target="_blank"} | Beschrijft ontwikkelingspatronen helpen verzekeren verenigbaarheid tussen uw thema, toekomstige versies van Adobe Commerce, en douanetoevoegdheden |
 
 ## PHP-ontwikkeling
 
 | Beste praktijken | Beschrijving |
 |-----------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------|
-| [Uitzonderingsafhandeling](exception-handling.md) | Beschrijft geadviseerde methodes om uitzonderingen te registreren |
-| [Extensies](https://developer.adobe.com/commerce/php/best-practices/){target="_blank"} | Beschrijft ontwikkelingspatronen helpen verzekeren verenigbaarheid tussen uw uitbreiding, toekomstige versies van Adobe Commerce, en andere douaneuitbreidingen |
-| [Persoonlijke inhoudsblokken](private-content-block-configuration.md) | Private-inhoudsblokken configureren om de prestaties van de winkel te optimaliseren |
-| [Core- en PHP-code van derden wijzigen](modifying-core-and-third-party-code.md) | De functionaliteit, het resultaat of de invoer wijzigen van code die u niet hebt gemaakt of die u niet rechtstreeks beheert |
+| [ Uitzondering behandeling ](exception-handling.md) | Beschrijft geadviseerde methodes om uitzonderingen te registreren |
+| [ Uitbreidingen ](https://developer.adobe.com/commerce/php/best-practices/) {target="_blank"} | Beschrijft ontwikkelingspatronen helpen verzekeren verenigbaarheid tussen uw uitbreiding, toekomstige versies van Adobe Commerce, en andere douaneuitbreidingen |
+| [ Privé inhoudsblokken ](private-content-block-configuration.md) | Private-inhoudsblokken configureren om de prestaties van de winkel te optimaliseren |
+| [ wijzig kern en derde PHP code ](modifying-core-and-third-party-code.md) | De functionaliteit, het resultaat of de invoer wijzigen van code die u niet hebt gemaakt of die u niet rechtstreeks beheert |

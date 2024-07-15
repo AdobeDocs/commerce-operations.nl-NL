@@ -5,7 +5,7 @@ exl-id: cd5d1106-c8db-4b70-b1c7-12378d7d77a7
 feature: Cloud, Security
 source-git-commit: 8d8cd0d33c1a3a95186948e670df6d9865b9a871
 workflow-type: tm+mt
-source-wordcount: '1739'
+source-wordcount: '1691'
 ht-degree: 0%
 
 ---
@@ -13,7 +13,7 @@ ht-degree: 0%
 
 # Beveiliging
 
-De Adobe Commerce [Pro-planarchitectuur](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/architecture/pro-architecture.html) is ontworpen om een zeer veilige omgeving te bieden. Elke klant wordt opgesteld in hun eigen geïsoleerde servermilieu, gescheiden van andere klanten. De beveiligingsdetails van de productieomgeving worden hieronder beschreven.
+De het planarchitectuur van Adobe Commerce [ Pro ](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/architecture/pro-architecture.html) wordt ontworpen om een hoogst veilig milieu te verstrekken. Elke klant wordt opgesteld in hun eigen geïsoleerde servermilieu, gescheiden van andere klanten. De beveiligingsdetails van de productieomgeving worden hieronder beschreven.
 
 ## Webbrowsers
 
@@ -23,7 +23,7 @@ Het grootste deel van het verkeer dat in en uit de wolkenomgeving gaat, komt van
 
 Verstrekt snel een Netwerk van de Levering van de Inhoud (CDN) en verdeelde ontkenning van de dienstbescherming (DDoS). De snelste CDN helpt directe toegang tot de oorspronkelijke servers te isoleren. Openbare DNS richt slechts aan het Fastly Netwerk. De snelste oplossing DDoS beschermt tegen hoogst ontwrichtende Laag 3 en Laag 4 aanvallen, en complexere Laag 7 aanvallen. Laag 7 de aanvallen kan worden geblokkeerd gebruikend douaneregels die op de volledige HTTP/HTTPS- verzoeken worden gebaseerd en op cliënt en verzoekcriteria, met inbegrip van kopballen, koekjes, verzoekweg, en cliëntIP, of indicatoren zoals geolocatie worden gebaseerd.
 
-Zie [Overzicht van snelle services](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/cdn/fastly.html) in de _Cloud Guide_.
+Zie [ het Snelle overzicht van de diensten ](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/cdn/fastly.html) in de _Gids van de Wolk_.
 
 ## Web Application Firewall
 
@@ -31,7 +31,7 @@ De Snelle Firewall van de Toepassing van het Web (WAF) wordt gebruikt om extra b
 
 De WAF-regels worden door Adobe Commerce bijgewerkt als nieuwe kwetsbaarheden worden gedetecteerd, zodat Managed Services beveiligingsproblemen voor softwarepatches zo goed mogelijk kan verhelpen. De Fastly WAF biedt geen diensten voor tariefbeperking of botdetectie. Indien gewenst kunnen klanten een licentie voor een service voor botdetectie van derden verkrijgen die compatibel is met Fastly.
 
-Zie [Web Application Firewall (WAF)](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/cdn/fastly-waf-service.html) in de _Cloud Guide_.
+Zie {de Firewall van de Toepassing van 0} Web (WAF) ](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/cdn/fastly-waf-service.html) in de _Gids van de Wolk_.[
 
 ## Virtuele privécloud
 
@@ -47,7 +47,7 @@ De Adobe Commerce-toepassing biedt geen ondersteuning voor codering of codering 
 
 ## Detectie van eindpunten en respons
 
-[!DNL CrowdStrike Falcon], wordt een licht-gewicht, volgende-generatie de agent van het Eindpunt van de Opsporing en van de Reactie (EDR) geïnstalleerd op alle eindpunten (met inbegrip van servers) binnen Adobe. EDR-agenten beschermen de gegevens en systemen van de Adobe met permanente controle en verzameling in real time, die snelle identificatie en reactie van de dreiging mogelijk maken.
+[!DNL CrowdStrike Falcon], wordt een lichte, volgende-generatie agent van het Eindpunt van de Opsporing en van de Reactie (EDR) geïnstalleerd op alle eindpunten (met inbegrip van servers) binnen Adobe. EDR-agenten beschermen de gegevens en systemen van de Adobe met permanente controle en verzameling in real time, die snelle identificatie en reactie van de dreiging mogelijk maken.
 
 ## Penetentietests
 
@@ -68,11 +68,11 @@ De Adobe test regelmatig de kerntoepassingscode op veiligheidskwetsbaarheid. Pat
 - OWASPZAP
 - andSqlMap
 
-De volledige codebasis wordt gescand met deze hulpmiddelen op een tweewekelijkse basis. Klanten worden via directe e-mail op de hoogte gesteld van beveiligingspatches, via meldingen in de toepassing en in de [Beveiligingscentrum](https://helpx.adobe.com/security.html).
+De volledige codebasis wordt gescand met deze hulpmiddelen op een tweewekelijkse basis. De klanten worden op de hoogte gebracht van veiligheidspatches door directe e-mail, berichten in de toepassing, en in het [ Centrum van de Veiligheid ](https://helpx.adobe.com/security.html).
 
-Klanten moeten ervoor zorgen dat deze patches binnen 30 dagen na de release op hun aangepaste toepassing worden toegepast, volgens de PCI-richtlijnen. Adobe biedt ook een [Beveiligingsscan](https://docs.magento.com/user-guide/magento/security-scan.html) dat verkopers toelaat om hun plaatsen regelmatig te controleren en updates over bekende veiligheidsrisico&#39;s, malware, en onbevoegde toegang te ontvangen. Het hulpprogramma Beveiligingsscan is gratis en kan worden uitgevoerd op elke versie van Adobe Commerce.
+Klanten moeten ervoor zorgen dat deze patches binnen 30 dagen na de release op hun aangepaste toepassing worden toegepast, volgens de PCI-richtlijnen. De Adobe verstrekt ook het Hulpmiddel van het Scannen van de a [ Veiligheid ](https://docs.magento.com/user-guide/magento/security-scan.html) dat verkopers toelaat om hun plaatsen regelmatig te controleren en updates over bekende veiligheidsrisico&#39;s, malware, en onbevoegde toegang te ontvangen. Het hulpprogramma Beveiligingsscan is gratis en kan worden uitgevoerd op elke versie van Adobe Commerce.
 
-Adobe Commerce heeft een [programma voor foutopsporing](https://hackerone.com/magento) naast interne tests. Bovendien wordt de klant de volledige broncode van de toepassing verstrekt voor hun eigen overzicht indien gewenst.
+Om veiligheidsonderzoekers aan te moedigen om kwetsbaarheid te identificeren en te melden, heeft Adobe Commerce a [ insect-hinderlijk programma ](https://hackerone.com/magento) naast interne het testen. Bovendien wordt de klant de volledige broncode van de toepassing verstrekt voor hun eigen overzicht indien gewenst.
 
 ## Alleen-lezen bestandssysteem
 
@@ -84,15 +84,15 @@ De enige manier om uitvoerbare code in de de productieomgeving van Managed Servi
 
 ## Logboekregistratie
 
-Alle AWS-activiteiten zijn aangemeld bij AWS CloudTrail. Besturingssysteem-, toepassingsserver- en databaselogboeken worden opgeslagen op de productieservers en opgeslagen in back-ups. Alle wijzigingen in de broncode worden vastgelegd in een Git-opslagplaats. Implementatiegeschiedenis is beschikbaar in de Adobe Commerce [Projectwebinterface](https://devdocs.magento.com/cloud/project/projects.html#login). Alle ondersteuningstoegang wordt geregistreerd en de steunzittingen worden geregistreerd.
+Alle AWS-activiteiten zijn aangemeld bij AWS CloudTrail. Besturingssysteem-, toepassingsserver- en databaselogboeken worden opgeslagen op de productieservers en opgeslagen in back-ups. Alle wijzigingen in de broncode worden vastgelegd in een Git-opslagplaats. De geschiedenis van de plaatsing is beschikbaar in de Interface van het Web van het Project van Adobe Commerce [ ](https://devdocs.magento.com/cloud/project/projects.html#login). Alle ondersteuningstoegang wordt geregistreerd en de steunzittingen worden geregistreerd.
 
-Zie [Logbestanden weergeven en beheren](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/test/log-locations.html) in de _Cloud Guide_.
+Zie [ Logboeken van de Mening en van het beheer ](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/test/log-locations.html) in de _Gids van de Wolk_.
 
 ## Gevoelige gegevens
 
 Gevoelige gegevens kunnen betrekking hebben op persoonlijke informatie van consumenten of vertrouwelijke gegevens van Managed Services-klanten. De bescherming van gevoelige gegevens van klanten en consumenten is een essentiële verplichting voor Adobe Commerce Managed Services. Zowel Managed Services- als Adobe-klanten hebben wettelijke verplichtingen met betrekking tot persoonlijk identificeerbare informatie. Naast de veiligheidseigenschappen van de architectuur, zijn er andere controles om de distributie en de toegang tot gevoelige gegevens te beperken.
 
-De klanten hebben hun gegevens en hebben controle over waar dat gegeven wordt gevestigd. De klant geeft de locatie op waar de productie- en ontwikkelingsinstanties zich bevinden. Zij geven ook aan welke locatie wordt gebruikt voor de Adobe Commerce Reporting environment with Commerce, en of die Adobe Commerce Reporting application toegang heeft tot persoonlijk identificeerbare informatie of niet. Productie-instanties kunnen zich in de meeste AWS-regio&#39;s bevinden, terwijl ontwikkelings- en Adobe Commerce-rapportageomgevingen zich momenteel in de Verenigde Staten of in de Europese Unie bevinden.
+De klanten hebben hun gegevens en hebben controle over waar dat gegeven wordt gevestigd. De klant geeft de locatie op waar de productie- en ontwikkelingsinstanties zich bevinden. Zij geven ook aan welke locatie wordt gebruikt voor de Adobe Commerce Reporting-omgeving met Commerce en of die Adobe Commerce Reporting-toepassing toegang heeft tot persoonlijk identificeerbare informatie of niet. Productie-instanties kunnen zich in de meeste AWS-regio&#39;s bevinden, terwijl ontwikkelings- en Adobe Commerce-rapportageomgevingen zich momenteel in de Verenigde Staten of in de Europese Unie bevinden.
 
 Gevoelige gegevens kunnen door het Fastly CDN servernetwerk overgaan maar worden niet opgeslagen in het Fastly netwerk. Alle partners die deel uitmaken van het Managed Services-aanbod hebben contractuele verplichtingen om de bescherming van gevoelige gegevens te waarborgen. Managed Services verplaatst geen gevoelige klant- of consumentengegevens van de door de klant opgegeven locaties.
 
@@ -110,14 +110,14 @@ GDPR dringt erop aan dat alle persoonlijk identificeerbare informatie (zoals nam
 
 >[!NOTE]
 >
->Deze pagina biedt een algemeen overzicht van wat u in overweging kunt nemen voor GDPR. Zie de _[Handleiding voor beveiliging en naleving](../../../security-and-compliance/privacy/gdpr.md)_ voor meer informatie over hoe Adobe Commerce persoonlijke gegevens opslaat. Als u wilt bepalen hoe uw bedrijf aan wettelijke verplichtingen moet voldoen, raadpleegt u uw juridisch adviseur of raadpleegt u de [officiële tekst](https://eur-lex.europa.eu/eli/reg/2016/679/oj).
+>Deze pagina biedt een algemeen overzicht van wat u in overweging kunt nemen voor GDPR. Zie de _[Gids van de Veiligheid en van de Naleving](../../../security-and-compliance/privacy/gdpr.md)_ voor details over hoe Adobe Commerce persoonlijke informatie opslaat. Om te bepalen hoe uw zaken om het even welke wettelijke verplichtingen zouden moeten naleven, raadpleeg uw wettelijke raadsman of verwijs naar de [ officiële tekst ](https://eur-lex.europa.eu/eli/reg/2016/679/oj).
 
 ## Back-ups
 
-De steun wordt uitgevoerd elk uur voor de laatste 24 uren van verrichting. Na de periode van 24 uur worden back-ups volgens een schema bewaard met behulp van de AWS EBS Snapshot-service. Zie [Retentiebeleid](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/architecture/pro-architecture.html#retention-policy) in de _Cloud Guide_.
+De steun wordt uitgevoerd elk uur voor de laatste 24 uren van verrichting. Na de periode van 24 uur worden back-ups volgens een schema bewaard met behulp van de AWS EBS Snapshot-service. Zie [ Beleid van het Behoud ](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/architecture/pro-architecture.html#retention-policy) in de _Gids van de Wolk_.
 
 De service maakt een onafhankelijke back-up van redundante opslag. Omdat de EBS-volumes gecodeerd zijn, worden de back-ups ook gecodeerd. Bovendien voert Managed Services op verzoek back-ups uit.
 
 Bij uw Managed Services-aanpak voor back-up en herstel wordt gebruikgemaakt van een architectuur met hoge beschikbaarheid in combinatie met back-ups op het volledige systeem. Elk project wordt herhaald—alle gegevens, code, en activa-over drie afzonderlijke de beschikbaarheidsstreken van AWS; elke streek met een afzonderlijk gegevenscentrum.
 
-Zie [Momentopnamen en back-upbeheer](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/storage/snapshots.html) in de _Cloud Guide_.
+Zie [ Momentopnamen en reservebeheer ](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/storage/snapshots.html) in de _Gids van de Wolk_.

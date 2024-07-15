@@ -1,11 +1,11 @@
 ---
 title: Migratieoverzicht
-description: Leer hoe u begint met het migreren van gegevens van Magento 1 naar Magento 2 met de [!DNL Data Migration Tool].
+description: Leer hoe te beginnen migrerend gegevens van Magento 1 aan Magento 2 met  [!DNL Data Migration Tool].
 exl-id: b775ede1-9d1d-49d5-ad0f-763404b48278
 topic: Commerce, Migration
 source-git-commit: e83e2359377f03506178c28f8b30993c172282c7
 workflow-type: tm+mt
-source-wordcount: '303'
+source-wordcount: '306'
 ht-degree: 0%
 
 ---
@@ -16,21 +16,21 @@ Voordat u de migratie start, moet u alle taken voor Magento 1 voor uitsnijden st
 
 Volg tijdens het migratieproces de volgende algemene regels voor een geslaagde migratie:
 
-1. **Niet gebruiken** Breng wijzigingen aan in Magento 1 Admin, behalve voor orderbeheer (verzending, aanmaakfactuur en creditnota&#39;s).
-1. **Niet gebruiken** elke code wijzigen
-1. **Niet gebruiken** wijzigingen aanbrengen in Magento 2 Admin en storefront
+1. **maak geen** veranderingen in Magento 1 Admin, behalve ordebeheer (het verschepen, het creëren van factuur, en creditmemo&#39;s)
+1. **verander geen code**
+1. **maak geen** veranderingen in Magento 2 Admin en storefront
 
 >[!TIP]
 >
 >Alle verrichtingen in Magento 1 storefront worden toegestaan.
 
-## Voer de [!DNL Data Migration Tool]
+## Voer de [!DNL Data Migration Tool] uit
 
-In deze sectie ziet u hoe u de [!DNL Data Migration Tool] om instellingen, gegevens of incrementele wijzigingen te migreren.
+In deze sectie ziet u hoe u de [!DNL Data Migration Tool] uitvoert om instellingen, gegevens of incrementele wijzigingen te migreren.
 
 ### Eerste stappen
 
-1. Meld u aan bij de toepassingsserver of schakel over naar een gebruiker met schrijfmachtigingen naar het bestandssysteem. Zie [schakelen naar de eigenaar van het bestandssysteem](../../../installation/prerequisites/file-system/overview.md).
+1. Meld u aan bij de toepassingsserver of schakel over naar een gebruiker met schrijfmachtigingen naar het bestandssysteem. Zie [ schakelaar aan de eigenaar van het dossiersysteem ](../../../installation/prerequisites/file-system/overview.md).
 
    Als u bash shell gebruikt, kunt u de volgende syntaxis gebruiken om aan de eigenaar van het dossiersysteem over te schakelen en het bevel tezelfdertijd in te gaan:
 
@@ -44,9 +44,9 @@ In deze sectie ziet u hoe u de [!DNL Data Migration Tool] om instellingen, gegev
    sudo -u <file system owner>  <command>
    ```
 
-1. Als u opdrachten voor Magento&#39;s vanuit een willekeurige map wilt uitvoeren, voegt u `<magento_root>/bin` op uw systeem `PATH`.
+1. Als u opdrachten voor Magento&#39;s vanuit een willekeurige map wilt uitvoeren, voegt u `<magento_root>/bin` toe aan uw systeem `PATH` .
 
-   Omdat de syntaxis van schelpen verschilt, raadpleegt u een referentie zoals [unix.stackexchange.com](https://unix.stackexchange.com/questions/117467/how-to-permanently-set-environmental-variables).
+   Omdat de cellen verschillende syntaxis hebben, raadpleeg een verwijzing als [ unix.stackexchange.com ](https://unix.stackexchange.com/questions/117467/how-to-permanently-set-environmental-variables).
 
    Voorbeeld van bash-shell voor CentOS:
 
@@ -56,7 +56,7 @@ In deze sectie ziet u hoe u de [!DNL Data Migration Tool] om instellingen, gegev
 
    U kunt de opdrachten optioneel op de volgende manieren uitvoeren:
 
-   - `cd <magento_root>/bin` en uitvoeren als `./magento <command name>`
+   - `cd <magento_root>/bin` en voer ze als `./magento <command name>` uit
    - `<magento_root>/bin/magento <command name>`
    - `<magento_root>` is een submap van de hoofdmap van de webserver.
 
@@ -70,19 +70,19 @@ bin/magento migrate:<mode> [-r|--reset] [-a|--auto] {<path to config.xml>}
 
 Waarbij:
 
-- `<mode>` kan: [`settings`](settings.md), [`data`](data.md), of [`delta`](delta.md)
+- `<mode>` may be: [`settings`](settings.md) , [`data`](data.md) of [`delta`](delta.md)
 - `[-r|--reset]` is een optioneel argument dat de migratie vanaf het begin start. U kunt dit argument gebruiken voor het testen van migratie.
 - `[-a|--auto]` is een optioneel argument dat voorkomt dat de migratie stopt wanneer integriteitscontroles worden uitgevoerd.
-- `{<path to config.xml>}` is het absolute pad van het bestandssysteem naar `config.xml`; dit argument is vereist.
+- `{<path to config.xml>}` is het absolute bestandsysteempad naar `config.xml` . Dit argument is vereist.
 
 >[!NOTE]
 >
->Logbestanden worden geschreven naar de `<magento_root>/var/` directory.
+>Logbestanden worden naar de map `<magento_root>/var/` geschreven.
 
 
 ## Migratievolgorde
 
-Toen wij [!DNL Data Migration Tool]We hebben de volgende gegevensoverdrachtsequentie gebruikt:
+Toen wij [!DNL Data Migration Tool] creeerden, veronderstelden wij de volgende opeenvolging van de gegevensoverdracht:
 
 1. [Instellingen](settings.md)
 1. [Gegevens](data.md)

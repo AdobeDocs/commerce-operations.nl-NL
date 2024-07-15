@@ -1,34 +1,34 @@
 ---
 title: Implementatie van één computer
-description: Leer hoe te om updates aan Handel op een productieserver op te stellen gebruikend de bevellijn.
+description: Leer hoe u updates voor Commerce op een productieserver kunt implementeren via de opdrachtregel.
 feature: Configuration, Deploy
 exl-id: ca73309c-7584-4506-99de-dd933651eeb6
 source-git-commit: dcc283b901917e3681863370516771763ae87462
 workflow-type: tm+mt
-source-wordcount: '186'
+source-wordcount: '180'
 ht-degree: 1%
 
 ---
 
 # Implementatie van één computer
 
-Dit onderwerp verstrekt instructies voor het opstellen van updates aan Handel op een productieserver gebruikend de bevellijn. Dit proces is van toepassing op technische gebruikers die verantwoordelijk zijn voor winkels die op één computer worden uitgevoerd en waarop een aantal thema&#39;s en landinstellingen zijn geïnstalleerd.
+Dit onderwerp verstrekt instructies voor het opstellen van updates aan Commerce op een productieserver gebruikend de bevellijn. Dit proces is van toepassing op technische gebruikers die verantwoordelijk zijn voor winkels die op één computer worden uitgevoerd en waarop een aantal thema&#39;s en landinstellingen zijn geïnstalleerd.
 
 ## Veronderstellingen
 
-- U hebt Commerce geïnstalleerd met [Composer](../../installation/composer.md).
+- U installeerde Commerce gebruikend [ Composer ](../../installation/composer.md).
 - U past rechtstreeks updates toe op de server.
 
 >[!WARNING]
 >
->Deze handleiding is niet van toepassing als u `git clone` om Commerce te installeren.
->Medewerkers moeten [deze handleiding][install] om hun installatie van de Handel bij te werken.
+>Deze handleiding is niet van toepassing als u Commerce hebt geïnstalleerd met `git clone` .
+>De bijdragende ontwikkelaars zouden [ deze gids ][install] moeten gebruiken om hun installatie van Commerce bij te werken.
 
 ## Implementatiestappen
 
-1. Meld u aan bij uw productieserver als of schakel over naar de [eigenaar van bestandssysteem](../../installation/prerequisites/file-system/overview.md).
+1. Login aan uw productieserver als, of schakelaar aan, de [ eigenaar van het dossiersysteem ](../../installation/prerequisites/file-system/overview.md).
 
-1. Map wijzigen in de basismap Commerce:
+1. Map wijzigen in de basismap van Commerce:
 
    ```bash
    cd <Commerce base directory>
@@ -40,20 +40,20 @@ Dit onderwerp verstrekt instructies voor het opstellen van updates aan Handel op
    bin/magento maintenance:enable
    ```
 
-1. Pas updates op Handel of zijn componenten toe gebruikend het volgende bevelpatroon:
+1. Pas updates toe op Commerce of de componenten ervan met behulp van het volgende opdrachtpatroon:
 
    ```bash
    composer require-commerce <package> <version> --no-update
    ```
 
-   **package**: De naam van het pakket dat u wilt bijwerken.
+   **pakket**: De naam van het pakket u wilt bijwerken.
 
    Bijvoorbeeld:
 
    - `magento/product-community-edition`
    - `magento/product-enterprise-edition`
 
-   **versie**: De doelversie van het pakket dat u wilt bijwerken.
+   **versie**: De doelversie van het pakket u wilt bijwerken.
 
 1. Componenten bijwerken met Composer:
 

@@ -11,9 +11,9 @@ ht-degree: 0%
 
 # Best practices voor prestaties
 
-De _Aanbevolen werkwijzen voor prestaties_ Deze handleiding bevat aanbevelingen en instructies voor het optimaliseren van de prestaties van uw productieimplementatie. Technische gebruikers die verantwoordelijk zijn voor het onderhoud van winkels in de productiemodus, moeten de beste praktijken gebruiken die in deze handleiding worden beschreven om ervoor te zorgen dat hun winkels altijd op maximale efficiëntie draaien.
+De _gids van Beste praktijken van Prestaties_ verstrekt aanbevelingen en instructies voor het optimaliseren van de prestaties van uw productieleiding. Technische gebruikers die verantwoordelijk zijn voor het onderhoud van winkels in de productiemodus, moeten de beste praktijken gebruiken die in deze handleiding worden beschreven om ervoor te zorgen dat hun winkels altijd op maximale efficiëntie draaien.
 
 ## Veronderstellingen
 
-* Adobe Commerce is geïnstalleerd met [Composer](../installation/composer.md).
+* U installeerde Adobe Commerce gebruikend [ Composer ](../installation/composer.md).
 * U gebruikt deze installatie om een live productie-instantie van Adobe Commerce uit te voeren.

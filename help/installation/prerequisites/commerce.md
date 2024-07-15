@@ -15,7 +15,7 @@ Je bent een van de 240.000 kooplieden wereldwijd die vertrouwen hebben in onze s
 
 ## De software ophalen
 
-Controleer de beschikbaarheid van spannende nieuwe functies en releases en leer hoe u deze op onze [pagina over productbeschikbaarheid](https://devdocs.magento.com/release/availability.html).
+Controleer de beschikbaarheid van opwindende nieuwe eigenschappen en versies en leer hoe u hen op onze [ pagina van de productbeschikbaarheid ](https://devdocs.magento.com/release/availability.html) kunt krijgen.
 
 Raadpleeg de volgende tabel om aan de slag te gaan met de installatie van Adobe Commerce.
 
@@ -31,22 +31,22 @@ Raadpleeg de volgende tabel om aan de slag te gaan met de installatie van Adobe 
         <td><p>Integrator, packager</p></td>
         <td><p>Wil volledige controle over alle geïnstalleerde componenten, heeft toegang tot de toepassingsserver, hoogst technisch, zou Magento Open Source met andere componenten kunnen herverpakken.</p>
         </td>
-        <td><ol><li>Maakt een Composer <em>project</em> die de lijst met te gebruiken componenten bevat.</li>
-            <li>Gebruikt Composer om pakketafhankelijkheden bij te werken; gebruikt <code>composer create-project</code> om de Composer-metapakket te verkrijgen.</li>
-            <li>De toepassing wordt geïnstalleerd met de <a href="../advanced.md">opdrachtregel</a>.</li>
-        <li>Hiermee werkt u de toepassing en extensies bij met de  <a href="../../upgrade/implementation/perform-upgrade.md">opdrachtregel</a>.</li></ol></td>
+        <td><ol><li>Creeert een Composer <em> project </em> dat de lijst van te gebruiken componenten bevat.</li>
+            <li>Gebruikt Composer om pakketafhankelijkheden bij te werken; gebruikt <code>composer create-project</code> om het pakket Composer-metagegevens op te halen.</li>
+            <li>Installeert de toepassing gebruikend de <a href="../advanced.md"> bevellijn </a>.</li>
+        <li>Verbetert de toepassing en de uitbreidingen gebruikend de <a href="../../upgrade/implementation/perform-upgrade.md"> bevellijn </a>.</li></ol></td>
         <td><p><a href="../composer.md">De metapakket ophalen</a></p></td>
     </tr>
     <tr>
         <td><p>Medewerkende ontwikkelaar</p></td>
         <td><p>Hiermee wordt een bijdrage geleverd aan de codebase van de Magento Open Source, fouten in bestanden en wordt de toepassing aangepast. Zeer technisch, heeft hun eigen ontwikkelingsserver, begrijpt Composer en GitHub.</p>
-            <p>U <em>kan</em> de toepassing gebruiken in een productieomgeving.</p>
-      <p>U moet een upgrade uitvoeren met <a href="../../upgrade/developer/git-installs.md">Opdrachten Composer en Git</a>.</p></td>
+            <p>U <em> kunt niet </em> de toepassing in een productiemilieu gebruiken.</p>
+      <p>U moet bevorderen gebruikend <a href="../../upgrade/developer/git-installs.md"> Composer en de bevelen van het Git </a>.</p></td>
         <td><ol><li>Klonen de bewaarplaats GitHub.</li>
             <li>Gebruikt Composer om pakketafhankelijkheden bij te werken.</li>
-            <li>De toepassing installeren met <a href="../advanced.md">opdrachtregel</a>.</li>
-            <li>Hiermee wordt de toepassing bijgewerkt met <a href="../../upgrade/developer/git-installs.md">Opdrachten Composer en Git</a>.</li>
-            <li>Hiermee wordt code onder de <code>app/code</code> directory.</li></ol></td>
+            <li>Installeert de toepassing gebruikend <a href="../advanced.md"> bevellijn </a>.</li>
+            <li>Verbetert de toepassing gebruikend <a href="../../upgrade/developer/git-installs.md"> Composer en de bevelen van het Git </a>.</li>
+            <li>Past code onder de <code>app/code</code> folder aan.</li></ol></td>
         <td><p><a href="https://developer.adobe.com/commerce/contributor/guides/install/clone-repository/">Clone the GitHub repository</a></p></td>
     </tr>
     </tbody>
@@ -58,8 +58,8 @@ Gebruik de koppelingen aan de linkerkant van de pagina om door onderwerpen in el
 
 ## Vereiste servermachtigingen
 
-UNIX-systemen vereisen `root` rechten om software zoals een webserver, PHP, te installeren en te configureren. Als u deze software moet installeren, controleert u of u `root` toegang.
+UNIX-systemen vereisen `root` privileges om software als een webserver, PHP, te installeren en te configureren. Als u deze software moet installeren, zorg ervoor u `root` toegang hebt.
 
-Do *niet* installeer de toepassing in de webserverhoofdmap als de `root` omdat de webserver mogelijk niet kan communiceren met deze bestanden.
+Installeer *niet* de toepassing in de documentwortel van de Webserver als `root` gebruiker omdat de Webserver niet met die dossiers zou kunnen in wisselwerking staan.
 
-U hebt `root` rechten om de [eigenaar van bestandssysteem](file-system/overview.md) en voeg die eigenaar toe aan de webservergroep. U gebruikt de eigenaar van het bestandssysteem om het bestand uit te voeren `bin/magento` opdrachten van de opdrachtregel en van insteltaken, die taken voor u plannen.
+U hebt `root` voorrechten nodig om de [ eigenaar van het dossiersysteem ](file-system/overview.md) tot stand te brengen en die eigenaar aan de groep van de Webserver toe te voegen. Met de eigenaar van het bestandssysteem kunt u `bin/magento` -opdrachten uitvoeren vanaf de opdrachtregel en snijtaken instellen, die taken voor u plannen.

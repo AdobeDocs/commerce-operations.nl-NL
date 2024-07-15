@@ -4,7 +4,7 @@ description: Aanbevelingen bekijken voor het plannen van uw Adobe Commerce-upgra
 exl-id: f776b000-0085-4b77-860f-623837c3c902
 source-git-commit: 95ffff39d82cc9027fa633dffedf15193040802d
 workflow-type: tm+mt
-source-wordcount: '211'
+source-wordcount: '228'
 ht-degree: 0%
 
 ---
@@ -20,18 +20,18 @@ Een implementatie van eCommerce is evolutie-het is nooit echt gebeëindigd. Uw b
 - Betere ontwikkelaarservaring en beter gereedschap
 - Vermogen om dieper met andere toepassingen van Adobe Experience Cloud te integreren
 
-Om onze handelaren meer flexibiliteit te bieden bij het plannen van upgrades, hebben we de Adobe Commerce onlangs bijgewerkt [releaseplanning](../../release/schedule.md), verlengde de datum van 2.3 Einde van de Steun (EOS), en kondigde nieuwe uitgebreide steunopties voor bepaalde versies van onze software aan. Zie voor meer informatie over deze updates [Uitgebreide ondersteuning voor Adobe Commerce](https://business.adobe.com/blog/the-latest/adobe-announces-expanded-support).
+Om onze handelaren van meer flexibiliteit te voorzien wanneer het plannen van verbeteringen, hebben wij onlangs het Adobe Commerce [ versieschema ](../../release/schedule.md) bijgewerkt, het 2.3 Eind van Steun (EOS) datum, uitgebreid en nieuwe uitgebreide steunopties voor geselecteerde versies van onze software aangekondigd. Voor meer informatie over deze updates, zie [ Uitgebreide steun voor Adobe Commerce ](https://business.adobe.com/blog/the-latest/adobe-announces-expanded-support).
 
 Hieronder vindt u upgradepaden die door Adobe Commerce worden aanbevolen om uw site veilig en presterend te houden terwijl u een upgrade uitvoert naar een van de meest recente versies.
 
 ## Upgrade uitvoeren vanaf 2.3.7
 
-![Upgradepad vanaf 2.3.7](../../assets/upgrade-guide/2.3.7.png)
+![ weg van de Verbetering van 2.3.7 ](../../assets/upgrade-guide/2.3.7.png)
 
 ## Upgrade uitvoeren vanaf 2.4.0-2.4.3
 
-![Upgradepad van 2.4.0 tot en met 2.4.3](../../assets/upgrade-guide/2.4.0-2.4.3.png)
+![ weg van de Verbetering van 2.4.0 door 2.4.3 ](../../assets/upgrade-guide/2.4.0-2.4.3.png)
 
 ## Bijwerken vanaf 2.4.4 en 2.4.5
 
-![Upgradepad van 2.4.4 en 2.4.5](../../assets/upgrade-guide/2.4.4-and-2.4.5.png)
+![ weg van de Verbetering van 2.4.4 en 2.4.5 ](../../assets/upgrade-guide/2.4.4-and-2.4.5.png)

@@ -21,7 +21,7 @@ Voordat u Adobe Commerce op de cloudinfrastructuur kunt upgraden, moet u mogelij
 
 ## Adobe Commerce 2.4.6
 
-Vanaf MariaDB 10.5.1 worden kolommen met oude tijdelijke indelingen gemarkeerd met een `/* mariadb-5.3 */` opmerking in de uitvoer van de `SHOW CREATE TABLE`, `SHOW COLUMNS`, `DESCRIBE` en in de `COLUMN_TYPE` kolom van de `INFORMATION_SCHEMA.COLUMNS` tabel. [Zie MariaDB-documentatie](https://mariadb.com/kb/en/datetime/#internal-format).
+Vanaf MariaDB 10.5.1 worden kolommen met oude tijdelijke indelingen gemarkeerd met een `/* mariadb-5.3 */` -commentaar in de uitvoer van de instructies `SHOW CREATE TABLE` , `SHOW COLUMNS` , `DESCRIBE` en in de kolom `COLUMN_TYPE` van de tabel `INFORMATION_SCHEMA.COLUMNS` . [ zie documentatie MariaDB ](https://mariadb.com/kb/en/datetime/#internal-format).
 
 Adobe Commerce kan de datumkolommen niet toewijzen aan een juist gegevenstype vanwege de MariaDB-opmerking. Dit kan leiden tot onverwacht gedrag in aangepaste code.
 
@@ -29,7 +29,7 @@ Om onverwacht gedrag te voorkomen wanneer het bevorderen van MariaDB van oudere 
 
 ### Standaardconfiguratie
 
-In MariaDB 10.1.2, werd een nieuw tijdelijk formaat geïntroduceerd van MySQL 5.6. De `mysql56_temporal_format` met een systeemvariabele kan de database de oude datumnotatie automatisch naar de nieuwe converteren wanneer een andere tabel wordt uitgevoerd of een database wordt geïmporteerd. De standaardconfiguratie voor `mysql56_temporal_format` is altijd ingeschakeld op Adobe Commerce op cloudinfrastructuur.
+In MariaDB 10.1.2, werd een nieuw tijdelijk formaat geïntroduceerd van MySQL 5.6. Met de systeemvariabele `mysql56_temporal_format` kan de database de oude datumnotatie automatisch omzetten naar de nieuwe als een tabel wordt gewijzigd of een database wordt geïmporteerd. De standaardconfiguratie voor `mysql56_temporal_format` is altijd ingeschakeld in Adobe Commerce op de cloudinfrastructuur.
 
 ### Datumkolommen migreren
 
@@ -47,7 +47,7 @@ SELECT CONCAT( 'ALTER TABLE `', COALESCE(TABLE_NAME), '`', ' MODIFY ', '`', COAL
 
 >[!NOTE]
 >
->Het is belangrijk dat u de kolommen migreert naar de nieuwe interne datumnotatie _voor_ de nieuwe code implementeren om onverwacht gedrag te voorkomen.
+>Het is belangrijk om de kolommen aan het nieuwe interne datumformaat te migreren _alvorens_ het opstellen van de nieuwe code om onverwacht gedrag te vermijden.
 
 ## Adobe Commerce 2.3.5
 
@@ -59,18 +59,18 @@ Nadat u de database hebt voorbereid, dient u een Adobe Commerce-ondersteuningsti
 
 Voordat het Adobe Commerce-ondersteuningsteam met het upgradeproces begint, moet u uw database voorbereiden door uw databasetabellen te converteren:
 
-- De rijindeling omzetten van `COMPACT` tot `DYNAMIC`
-- De opslagengine wijzigen van `MyISAM` tot `InnoDB`
+- De rijnotatie omzetten van `COMPACT` in `DYNAMIC`
+- De opslagengine wijzigen van `MyISAM` in `InnoDB`
 
 Houd rekening met het volgende wanneer u de conversie plant en plant:
 
-- Converteren vanuit `COMPACT` tot `DYNAMIC` tabellen kunnen enkele uren duren met een grote database.
+- Het converteren van `COMPACT` naar `DYNAMIC` -tabellen kan enkele uren duren met een grote database.
 
 - Als u gegevensbeschadiging wilt voorkomen, voltooit u de conversiewerkzaamheden op een livesite niet.
 
 - Voltooi het omzettingswerk tijdens een lage verkeersperiode op uw plaats.
 
-- Ga van site naar [onderhoudsmodus](../../../installation/tutorials/maintenance-mode.md) voordat u de opdrachten uitvoert om databasetabellen om te zetten.
+- Schakelaar uw plaats aan [ onderhoudswijze ](../../../installation/tutorials/maintenance-mode.md) alvorens de bevelen in werking te stellen om gegevensbestandlijsten om te zetten.
 
 #### Opmaak databasetabelrij converteren
 
@@ -106,18 +106,18 @@ U kunt tabellen op één knooppunt in uw cluster omzetten. De wijzigingen worden
 
 Het converteren van de opslagindeling is anders voor Adobe Commerce Starter- en Adobe Commerce Pro-projecten.
 
-- Voor Starter architectuur, gebruik MySQL `ALTER` gebruiken om de indeling te converteren.
-- Bij Pro architectuur, gebruik MySQL `CREATE` en `SELECT` opdrachten om een databasetabel te maken met `InnoDB` de gegevens uit de bestaande tabel opslaan en kopiëren naar de nieuwe tabel. Deze methode zorgt ervoor dat de wijzigingen worden gerepliceerd naar alle knooppunten in uw cluster.
+- Voor Starter-architectuur gebruikt u de opdracht MySQL `ALTER` om de indeling om te zetten.
+- Op Pro-architectuur gebruikt u de opdrachten MySQL `CREATE` en `SELECT` om een databasetabel te maken met `InnoDB` -opslag en kopieert u de gegevens van de bestaande tabel naar de nieuwe tabel. Deze methode zorgt ervoor dat de wijzigingen worden gerepliceerd naar alle knooppunten in uw cluster.
 
-**Opmaak voor tabelopslag converteren voor Adobe Commerce Pro-projecten**
+**zet lijstopslagformaat voor de projecten van Adobe Commerce Pro om**
 
-1. Tabellen identificeren die `MyISAM` opslag.
+1. Identificeer tabellen die `MyISAM` -opslag gebruiken.
 
    ```mysql
    SELECT table_name FROM INFORMATION_SCHEMA.TABLES WHERE engine = 'MyISAM';
    ```
 
-1. Alle tabellen converteren naar `InnoDB` opslagindeling één voor één.
+1. Zet alle tabellen één voor één om in de `InnoDB` -opslagindeling.
 
    - Wijzig de naam van de bestaande tabel om naamconflicten te voorkomen.
 
@@ -125,7 +125,7 @@ Het converteren van de opslagindeling is anders voor Adobe Commerce Starter- en 
      RENAME TABLE <existing_table> <table_old>;
      ```
 
-   - Een tabel maken die `InnoDB` opslag met de gegevens uit de bestaande tabel.
+   - Maak een tabel die `InnoDB` -opslag gebruikt met de gegevens uit de bestaande tabel.
 
      ```mysql
      CREATE TABLE <existing_table> ENGINE=InnoDB SELECT * from <table_old>;
@@ -136,15 +136,15 @@ Het converteren van de opslagindeling is anders voor Adobe Commerce Starter- en 
    - Verwijder de oorspronkelijke tabel waarvan u de naam hebt gewijzigd.
 
 
-**Opmaak voor tabelopslag converteren voor Adobe Commerce Starter-projecten**
+**zet lijstopslagformaat voor de projecten van de Aanzet van Adobe Commerce** om
 
-1. Tabellen identificeren die `MyISAM` opslag.
+1. Identificeer tabellen die `MyISAM` -opslag gebruiken.
 
    ```mysql
    SELECT table_name FROM INFORMATION_SCHEMA.TABLES WHERE engine = 'MyISAM';
    ```
 
-1. Tabellen omzetten die `MyISAM` opslag naar `InnoDB` opslag.
+1. Tabellen die gebruikmaken van `MyISAM` -opslag converteren naar `InnoDB` -opslag.
 
    ```mysql
    ALTER TABLE [ table name here ] ENGINE=InnoDB;
@@ -156,13 +156,13 @@ De dag vóór de geplande upgrade naar MariaDB-versie 10.3, 10.4 of 10.6 control
 
 1. Meld u aan bij uw database.
 
-1. Controleren op alle tabellen die nog steeds de `COMPACT` rijindeling.
+1. Controleer of er tabellen zijn met de indeling `COMPACT` rij.
 
    ```mysql
    SELECT table_name, row_format FROM information_schema.tables WHERE table_schema=DATABASE() and row_format = 'Compact';
    ```
 
-1. Controleren op alle tabellen die nog steeds gebruikmaken van de `MyISAM` opslagindeling
+1. Controleren op tabellen die nog steeds de opslagindeling `MyISAM` gebruiken
 
    ```mysql
    SELECT table_name FROM INFORMATION_SCHEMA.TABLES WHERE engine = 'MyISAM';
@@ -172,4 +172,4 @@ De dag vóór de geplande upgrade naar MariaDB-versie 10.3, 10.4 of 10.6 control
 
 ### De opslagengine wijzigen
 
-Zie [MyISAM-tabellen converteren naar InnoDB](../planning/database-on-cloud.md).
+Zie [ lijsten MyISAM in InnoDB ](../planning/database-on-cloud.md) omzetten.

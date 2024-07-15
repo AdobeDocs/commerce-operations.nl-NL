@@ -13,7 +13,7 @@ ht-degree: 0%
 
 Veel bedrijven werken met jaarlijkse begrotingen en routekaarten. Het is tijdens deze jaarlijkse besprekingen absoluut noodzakelijk dat u over uw platformgezondheid, richting, en verbeteringsstrategie voor het jaar, samen met hoe het in de algemene doelstellingen en belangrijkste prestatiesindicatoren (KPIs) van de zaken past.
 
-Na de [releaseplanning](https://devdocs.magento.com/release/), kunt u begrotings- en releaseperioden voor upgrades toewijzen, waarbij u geen feestdagen, bedrijfssluitingen en piektijden hoeft te gebruiken. Door het schema van de release van de Adobe te begrijpen en op de hoogte te blijven van de wijzigingen en verbeteringen die deel uitmaken van elke release via de [releaseopmerkingen](https://devdocs.magento.com/guides/v2.4/release-notes/bk-release-notes.html), je kunt je jaar beter plannen.
+Na het [ versieschema ](https://devdocs.magento.com/release/), wijs begroting en vrijgavevensters voor verbeteringen toe, vermijdend vakanties, bedrijfssluitingen, en piektijden. Door het begrip van het de versieschema van de Adobe en het blijven geïnformeerd over welke veranderingen en verbeteringen deel van elke versie door de [ versienota&#39;s ](https://devdocs.magento.com/guides/v2.4/release-notes/bk-release-notes.html) uitmaken, kunt u beter uw jaar plannen.
 
 Tijdens de planning, kunt u zich willen vragen:
 

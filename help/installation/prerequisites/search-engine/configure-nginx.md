@@ -18,9 +18,9 @@ ht-degree: 0%
 
 >[!NOTE]
 >
->Ondersteuning voor OpenSearch is toegevoegd in 2.4.4. OpenSearch is een compatibele Elasticsearch. Zie [Elasticsearch migreren naar OpenSearch](../../../upgrade/prepare/opensearch-migration.md) voor meer informatie .
+>Ondersteuning voor OpenSearch is toegevoegd in 2.4.4. OpenSearch is een compatibele Elasticsearch. Zie [ Elasticsearch migreren aan OpenSearch ](../../../upgrade/prepare/opensearch-migration.md) voor meer informatie.
 
-Deze sectie bespreekt hoe te om nginx als een te vormen *onveilig* zodat Adobe Commerce een zoekprogramma kan gebruiken dat op deze server wordt uitgevoerd. In deze sectie wordt het instellen van de HTTP Basic-verificatie niet besproken. Dit wordt besproken in [Beveiligde communicatie met nginx](#secure-communication-with-nginx).
+Deze sectie bespreekt hoe te om nginx als *onveilige* volmacht te vormen zodat Adobe Commerce een onderzoeksmotor kan gebruiken die op deze server loopt. Deze sectie bespreekt vestigingHTTP Basis geen authentificatie; dat in [ Veilige mededeling met nginx ](#secure-communication-with-nginx) wordt besproken.
 
 >[!NOTE]
 >
@@ -28,7 +28,7 @@ Deze sectie bespreekt hoe te om nginx als een te vormen *onveilig* zodat Adobe C
 
 ### Geef aanvullende configuratiebestanden op in uw algemene configuratie
 
-Zorg ervoor dat je global `/etc/nginx/nginx.conf` bevat de volgende lijn zodat laadt het de andere configuratiedossiers die in de volgende secties worden besproken:
+Zorg ervoor dat uw globale `/etc/nginx/nginx.conf` de volgende regel bevat, zodat de andere configuratiebestanden die in de volgende secties worden besproken, worden geladen:
 
 ```conf
 include /etc/nginx/conf.d/*.conf;
@@ -38,7 +38,7 @@ include /etc/nginx/conf.d/*.conf;
 
 In deze sectie wordt besproken hoe u kunt opgeven wie toegang heeft tot de nginx-server.
 
-1. Een teksteditor gebruiken om een bestand te maken `/etc/nginx/conf.d/magento_es_auth.conf` met de volgende inhoud:
+1. Gebruik een teksteditor om een bestand `/etc/nginx/conf.d/magento_es_auth.conf` met de volgende inhoud te maken:
 
    ```conf
    server {
@@ -81,15 +81,15 @@ In deze sectie wordt besproken hoe u kunt opgeven wie toegang heeft tot de nginx
 
 ## Beveiligde communicatie met nginx
 
-In deze sectie wordt beschreven hoe u de installatie instelt [HTTP Basic-verificatie](https://nginx.org/en/docs/http/ngx_http_auth_basic_module.html) met uw veilige proxy. Als u TLS en HTTP Basic-verificatie gebruikt, kan niemand communicatie met Elasticsearch of OpenSearch of met uw toepassingsserver onderscheppen.
+Deze sectie bespreekt hoe te opstelling [ de Basisauthentificatie van HTTP ](https://nginx.org/en/docs/http/ngx_http_auth_basic_module.html) met uw veilige volmacht. Als u TLS en HTTP Basic-verificatie gebruikt, kan niemand communicatie met Elasticsearch of OpenSearch of met uw toepassingsserver onderscheppen.
 
-Omdat nginx native de Basisauthentificatie van HTTP steunt, adviseren wij het over, bijvoorbeeld [Digest-verificatie](https://www.nginx.com/resources/wiki/modules/auth_digest/), wat niet wordt aanbevolen in de productie.
+Omdat nginx nationaal authentificatie steunt van HTTP Basis, adviseren wij het over, bijvoorbeeld, [ de authentificatie van de Samenvatting ](https://www.nginx.com/resources/wiki/modules/auth_digest/), die niet in productie wordt geadviseerd.
 
 Aanvullende bronnen:
 
-* [Hoe te om de Authentificatie van het Wachtwoord met Nginx op Ubuntu 14.04 (Digitale Oceaan) op te zetten](https://www.digitalocean.com/community/tutorials/how-to-set-up-password-authentication-with-nginx-on-ubuntu-14-04)
-* [Standaard HTTP-verificatie met Nginx (HowtoForge)](https://www.howtoforge.com/basic-http-authentication-with-nginx)
-* [Voorbeeld van Nginx-configuraties voor Elasticsearch](https://gist.github.com/karmi/b0a9b4c111ed3023a52d)
+* [ hoe te Authentificatie van het Wachtwoord van de opstelling met Nginx op Ubuntu 14.04 (Digitale Oceaan) ](https://www.digitalocean.com/community/tutorials/how-to-set-up-password-authentication-with-nginx-on-ubuntu-14-04)
+* [ BasisHTTP Authentificatie met Nginx (HowtoForge) ](https://www.howtoforge.com/basic-http-authentication-with-nginx)
+* [ de Configuraties van Nginx van het Voorbeeld voor Elasticsearch ](https://gist.github.com/karmi/b0a9b4c111ed3023a52d)
 
 Zie de volgende secties voor meer informatie:
 
@@ -100,24 +100,24 @@ Zie de volgende secties voor meer informatie:
 
 ### Een wachtwoord maken
 
-We raden je aan de Apache te gebruiken `htpasswd` gebruiken om wachtwoorden te coderen voor een gebruiker met toegang tot Elasticsearch of OpenSearch (benoemd `magento_elasticsearch` in dit voorbeeld).
+We raden u aan de opdracht Apache `htpasswd` te gebruiken om wachtwoorden te coderen voor een gebruiker met toegang tot Elasticsearch of OpenSearch (genoemd `magento_elasticsearch` in dit voorbeeld).
 
 Een wachtwoord maken:
 
-1. Voer de volgende opdracht in om te bepalen of `htpasswd` is al geïnstalleerd:
+1. Voer de volgende opdracht in om te bepalen of `htpasswd` al is geïnstalleerd:
 
    ```bash
    which htpasswd
    ```
 
-   Als een pad wordt weergegeven, wordt het geïnstalleerd; als de opdracht geen uitvoer retourneert, `htpasswd` is niet geïnstalleerd.
+   Als een pad wordt weergegeven, wordt dit geïnstalleerd. Als de opdracht geen uitvoer retourneert, wordt `htpasswd` niet geïnstalleerd.
 
-1. Indien nodig, installeren `htpasswd`:
+1. Indien nodig installeert u `htpasswd` :
 
    * Ubuntu: `apt-get -y install apache2-utils`
    * CentOS: `yum -y install httpd-tools`
 
-1. Een `/etc/nginx/passwd` directory voor het opslaan van wachtwoorden:
+1. Maak een map `/etc/nginx/passwd` waarin wachtwoorden worden opgeslagen:
 
    ```bash
    mkdir -p /etc/nginx/passwd
@@ -129,15 +129,15 @@ Een wachtwoord maken:
 
    >[!WARNING]
    >
-   >Om veiligheidsredenen `<filename>` moet verborgen zijn, dat wil zeggen dat het moet beginnen met een periode.
+   >Om veiligheidsredenen moet `<filename>` verborgen zijn, dat wil zeggen dat het moet beginnen met een punt.
 
-1. *(Optioneel).* Als u nog een gebruiker aan het wachtwoordbestand wilt toevoegen, voert u dezelfde opdracht in zonder de opdracht `-c` (maken) optie:
+1. *(Optioneel).* Als u nog een gebruiker aan het wachtwoordbestand wilt toevoegen, voert u dezelfde opdracht in zonder de optie `-c` (Maken):
 
    ```bash
    htpasswd /etc/nginx/passwd/.<filename> <username>
    ```
 
-1. Controleren of de inhoud van `/etc/nginx/passwd` is correct.
+1. Controleer of de inhoud van `/etc/nginx/passwd` correct is.
 
 ### Toegang tot nginx instellen
 
@@ -145,9 +145,9 @@ In deze sectie wordt besproken hoe u kunt opgeven wie toegang heeft tot de nginx
 
 >[!WARNING]
 >
->Het weergegeven voorbeeld is voor een *onveilig* proxy. Als u een veilige proxy wilt gebruiken, voegt u de volgende inhoud (behalve de listen-poort) toe aan uw beveiligde serverblok.
+>Het getoonde voorbeeld is voor een *onveilige* volmacht. Als u een veilige proxy wilt gebruiken, voegt u de volgende inhoud (behalve de listen-poort) toe aan uw beveiligde serverblok.
 
-Een teksteditor gebruiken om een van deze te wijzigen `/etc/nginx/conf.d/magento_es_auth.conf` (niet veilig) of uw beveiligde serverblok met de volgende inhoud:
+Gebruik een teksteditor om `/etc/nginx/conf.d/magento_es_auth.conf` (onbeveiligd) of het beveiligde serverblok met de volgende inhoud te wijzigen:
 
 ```conf
 server {
@@ -192,7 +192,7 @@ In deze sectie wordt besproken hoe u kunt opgeven wie toegang heeft tot de zoekm
    mkdir /etc/nginx/auth/
    ```
 
-1. Een teksteditor gebruiken om een bestand te maken `/etc/nginx/auth/magento_elasticsearch.conf` met de volgende inhoud:
+1. Gebruik een teksteditor om een bestand `/etc/nginx/auth/magento_elasticsearch.conf` met de volgende inhoud te maken:
 
    ```conf
    location /elasticsearch {
@@ -206,7 +206,7 @@ In deze sectie wordt besproken hoe u kunt opgeven wie toegang heeft tot de zoekm
    }
    ```
 
-1. Als u een veilige proxy instelt, verwijdert u `/etc/nginx/conf.d/magento_es_auth.conf`.
+1. Als u een veilige proxy instelt, verwijdert u `/etc/nginx/conf.d/magento_es_auth.conf` .
 1. Start de engine opnieuw en ga verder met de volgende sectie:
 
    ```bash

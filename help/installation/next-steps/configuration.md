@@ -16,22 +16,22 @@ Nu u Adobe Commerce hebt geïnstalleerd, moet u het configureren. Dit onderwerp 
 
 ## Uitsnede instellen
 
-De UNIX taakplanner, cron, is kritiek aan de verrichtingen van dag tot dag van de toepassing. Het plant dingen zoals het opnieuw indexeren, nieuwsbrieven, e-mail, en sitemaps. A *crontab* is een uitsnijdconfiguratie.
+De UNIX taakplanner, cron, is kritiek aan de verrichtingen van dag tot dag van de toepassing. Het plant dingen zoals het opnieuw indexeren, nieuwsbrieven, e-mail, en sitemaps. A *crontab* is een kroonconfiguratie.
 
-U moet Adobe Commerce-services installeren in het dialoogvenster *crontab* of sommige kernfuncties (en sommige extensies van derden) functioneren niet correct.
+U moet de diensten van Adobe Commerce in *contab* installeren, of sommige kernfunctionaliteit (en sommige derdeuitbreidingen) functioneren niet behoorlijk.
 
-Zie voor meer informatie over uitsnijden, zoals hoe u een tab kunt verwijderen en een uitsnede kunt uitvoeren vanaf de opdrachtregel [Uitsnede configureren en uitvoeren](../../configuration/cli/configure-cron-jobs.md).
+Voor meer informatie over kroon, met inbegrip van hoe te om een krontab te verwijderen en kroon in werking te stellen van de bevellijn, zie [ kroon ](../../configuration/cli/configure-cron-jobs.md) vormen en in werking stellen.
 
 ## Beveiligingsinstellingen en aanbevelingen
 
 Na de installatie raden we het volgende aan:
 
 * Zorg ervoor dat de eigendom van het bestand en de machtigingen correct zijn ingesteld.
-* We raden u sterk aan [de standaardbeheerderURI wijzigen](../tutorials/admin-uri.md) van `admin` aan iets anders
-* Zorg ervoor dat de [`X-Frame-Option` HTTP-header](../../configuration/security/xframe-options.md) wordt op de juiste wijze ingesteld.
-* Wees voorzichtig met XSS (cross-site scripting) door [uw sjablonen beveiligen](https://developer.adobe.com/commerce/php/development/security/cross-site-scripting/)
+* Wij adviseren sterk [ veranderend standaardAdmin URI ](../tutorials/admin-uri.md) van `admin` in iets anders
+* Zorg ervoor dat de [`X-Frame-Option` HTTP-header ](../../configuration/security/xframe-options.md) juist is ingesteld.
+* Neem voorzorgsmaatregelen tegen dwars-plaats scripting (XSS) door [ uw malplaatjes ](https://developer.adobe.com/commerce/php/development/security/cross-site-scripting/) te beveiligen
 
-Als u door [het klonen van de bewaarplaats van GitHub](https://developer.adobe.com/commerce/contributor/guides/install/clone-repository/), zorgt u ervoor dat wanneer u de toepassing implementeert, u alleen bestanden en mappen opneemt die vereist zijn voor de productieomgeving. Bestanden en mappen die niet vereist zijn, kunnen beveiligingsrisico&#39;s opleveren.
+Als u door [ het klonen van de bewaarplaats GitHub ](https://developer.adobe.com/commerce/contributor/guides/install/clone-repository/) installeerde, zorg ervoor dat wanneer u de toepassing opstelt, u slechts dossiers en omslagen omvat die voor het productiemilieu worden vereist. Bestanden en mappen die niet vereist zijn, kunnen beveiligingsrisico&#39;s opleveren.
 
 ## Herschrijvingen van Apache-servers inschakelen
 
@@ -41,9 +41,9 @@ Als u de Apache-webserver gebruikt, moet u de weergave van herschrijvingen van p
 
 ## In cache plaatsen in een omgeving met meerdere webknooppunten
 
-Als u meerdere webknooppunten hebt, *kan* de standaardbestandcache van de toepassing gebruiken omdat er geen synchronisatie tussen de webknooppunten is. Met andere woorden, de activiteit op één webknooppunt wordt alleen naar het bestandssysteem van dat webknooppunt geschreven. Als een volgende activiteit wordt uitgevoerd op een ander webknooppunt, kunnen er onnodige bestanden worden geschreven of kunnen er fouten optreden.
+Als u veelvoudige Webknopen hebt, kunt u *niet* het standaard dossier caching van de toepassing gebruiken omdat er geen synchronisatie tussen Webknopen is. Met andere woorden, de activiteit op één webknooppunt wordt alleen naar het bestandssysteem van dat webknooppunt geschreven. Als een volgende activiteit wordt uitgevoerd op een ander webknooppunt, kunnen er onnodige bestanden worden geschreven of kunnen er fouten optreden.
 
-Gebruik in plaats daarvan [Redis](../../configuration/cache/config-redis.md) voor zowel de standaardcache als de paginacache.
+In plaats daarvan, gebruikt [ opnieuw ](../../configuration/cache/config-redis.md) voor zowel het standaardgeheime voorgeheugen als het paginacache.
 
 ## Serverinstellingen
 
@@ -51,13 +51,13 @@ Deze sectie bespreekt kort montages die wij u adviseren voor de server overwegen
 
 ### Logrotatie
 
-UNIX `logrotate` Het nut laat u toe om systemen te beheren die grote aantallen logboekdossiers produceren. Hiermee kunt u logbestanden automatisch roteren, comprimeren, verwijderen en verzenden. Elk logbestand kan dagelijks, wekelijks, maandelijks of wanneer het logbestand een bepaalde grootte overschrijdt, worden afgehandeld.
+Met het hulpprogramma UNIX `logrotate` kunt u systemen beheren die een groot aantal logbestanden genereren. Hiermee kunt u logbestanden automatisch roteren, comprimeren, verwijderen en verzenden. Elk logbestand kan dagelijks, wekelijks, maandelijks of wanneer het logbestand een bepaalde grootte overschrijdt, worden afgehandeld.
 
 Zie een van de volgende bronnen voor meer informatie:
 
-* [Hoe kan ik: de ultieme opdrachtzelfstudie voor het roteren van logbestanden met tien voorbeelden](https://www.thegeekstuff.com/2010/07/logrotate-examples)
-* [Stapeluitwisseling](https://unix.stackexchange.com/questions/85662/how-to-properly-automatically-manually-rotate-log-files-for-production-rails-app)
-* [`logrotate` man page](https://linuxconfig.org/logrotate-8-manual-page)
+* [ HowTo: Het uiteindelijke logboek roteert bevelleerprogramma met tien voorbeelden ](https://www.thegeekstuff.com/2010/07/logrotate-examples)
+* [ Uitwisseling van de Stapel ](https://unix.stackexchange.com/questions/85662/how-to-properly-automatically-manually-rotate-log-files-for-production-rails-app)
+* [`logrotate` man page ](https://linuxconfig.org/logrotate-8-manual-page)
 
 ### Opstelling iptables regels om de diverse diensten toe te laten om mee te delen
 
@@ -65,8 +65,8 @@ Of u één server of vele hebt, moet u havens in de firewall openen om de dienst
 
 Meer informatie:
 
-* Ubuntu: [Documentatiepagina Ubuntu](https://help.ubuntu.com/community/IptablesHowTo).
-* CentOS: [Hoe-kan-ik-bestand voor CentOS](https://wiki.centos.org/HowTos%282f%29Network%282f%29IPTables.html).
+* Ubuntu: [ Ubuntu documentatiepagina ](https://help.ubuntu.com/community/IptablesHowTo).
+* CentOS: [ CentOS hoe-aan ](https://wiki.centos.org/HowTos%282f%29Network%282f%29IPTables.html).
 
 ### Security Enhanced Linux (SELinux)-regels
 
@@ -74,15 +74,15 @@ Wij hebben geen aanbeveling voor of u SELinux gebruikt; nochtans, als u het gebr
 
 Meer informatie:
 
-* Ubuntu: [Debian-handboek](https://debian-handbook.info/browse/stable/sect.selinux.html)
-* CentOS: [CentOS wiki](https://wiki.centos.org/HowTos/SELinux)
+* Ubuntu: [ Debian handboek ](https://debian-handbook.info/browse/stable/sect.selinux.html)
+* CentOS: [ wiki CentOS ](https://wiki.centos.org/HowTos/SELinux)
 
 ### Een e-mailserver instellen
 
 Adobe Commerce heeft een e-mailserver nodig. Wij adviseren geen bepaalde server, maar u kunt om het even welke volgend proberen:
 
-* Postfix voor CentOS ([Lesbestand digitale oceaan](https://www.digitalocean.com/community/tutorials/how-to-install-postfix-on-centos-6), [CentOS-documentatie](https://www.centos.org))
-* Postfix voor Ubuntu ([Lesbestand digitale oceaan](https://www.digitalocean.com/community/tutorials/how-to-install-and-setup-postfix-on-ubuntu-14-04), [Ubuntu-documentatie](https://help.ubuntu.com/community/MailServer))
+* Postfix voor CentOS ([ Digital Ocean tutorial ](https://www.digitalocean.com/community/tutorials/how-to-install-postfix-on-centos-6), [ documentatie CentOS ](https://www.centos.org))
+* Postfix voor Ubuntu ([ Digital Ocean tutorial ](https://www.digitalocean.com/community/tutorials/how-to-install-and-setup-postfix-on-ubuntu-14-04), [ documentatie Ubuntu ](https://help.ubuntu.com/community/MailServer))
 
 ### Verfijn de zoekmachine voor verbeterde prestaties:
 

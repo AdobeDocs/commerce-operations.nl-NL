@@ -5,7 +5,7 @@ exl-id: eab50191-0744-41da-99ba-2e06ea61da27
 feature: Best Practices, Payments
 source-git-commit: e83e2359377f03506178c28f8b30993c172282c7
 workflow-type: tm+mt
-source-wordcount: '554'
+source-wordcount: '541'
 ht-degree: 0%
 
 ---
@@ -14,7 +14,7 @@ ht-degree: 0%
 
 Er was een tijd dat contant geld de belangrijkste bron van transacties was, maar de online wereld heeft het overgenomen en online betalingsmethoden vervangen oude betalingsmethoden. Alles is nu online, wat het makkelijker en toegankelijker maakt, zoals creditcards, e-portemonnees en bankoverschrijvingen.
 
-![Logo&#39;s van leveranciers van betaalkanalen](../../assets/playbooks/payment-gateways.png)
+![ Logo&#39;s van de de gatewayleverancier van de Betaling ](../../assets/playbooks/payment-gateways.png)
 
 Een betaalgateway is een dienstverlener die betalingen voor elektronische websites verbindt en verwerkt. Zij spelen een essentiële rol in de het kopen van klanten ervaring en omrekeningskoersen. Gecompliceerde betalingssystemen hebben de neiging om klanten hun winkelwagentjes op te geven. Het is belangrijk om klanten van een gemakkelijk, gebruikersvriendelijk betalingssysteem te voorzien waar zelfs als één betalingsmethode ontbreekt zij een alternatieve methode hebben om hen te motiveren om de aankoop te voltooien.
 
@@ -43,7 +43,8 @@ Wanneer een bedrijf besluit om een betaalgateway met hun platform te integreren,
 
 B2B- en B2C-bedrijven hebben vergelijkbare betalingssystemen, maar B2B-bedrijven hebben meer regels, regels en processen. B2B-ondernemingen hebben de neiging om in grotere hoeveelheden te handelen dan B2C-ondernemingen.
 
-B2C-klanten kopen producten of diensten voor individueel gebruik. Klanten betalen doorgaans dezelfde prijs als andere klanten en er is geen sprake van onderhandeling. B2B-klanten hebben verschillende belanghebbenden, waardoor goedkeuring complexer en duurder wordt.
+B2C-klanten kopen producten of diensten voor individueel gebruik. Klanten betalen doorgaans dezelfde prijs als andere klanten en er is geen sprake van onderhandeling. B2B-klanten omvatten verschillende
+belanghebbenden, waardoor goedkeuring complexer en duurder wordt.
 
 B2B-klanten hebben verschillende bestellingen en vereisten die door de verkoper of een verkoper moeten worden verwerkt en goedgekeurd wanneer een klant online een aanvraag voor een voorstel (BFP) of een inkooporder (PO) aanschaft.
 

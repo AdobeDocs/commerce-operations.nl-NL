@@ -4,7 +4,7 @@ description: Zie een voorbeeld van hoe te om gedeelde, systeem-specifieke, en ge
 exl-id: d0058e9f-a5a9-48a6-9c66-c61515666335
 source-git-commit: 95ffff39d82cc9027fa633dffedf15193040802d
 workflow-type: tm+mt
-source-wordcount: '1019'
+source-wordcount: '1023'
 ht-degree: 0%
 
 ---
@@ -12,32 +12,32 @@ ht-degree: 0%
 # Voorbeeld met CLI-opdrachten
 
 Dit voorbeeld toont hoe te om gedeelde, systeem-specifieke, en gevoelige waarden in uw ontwikkelingssysteem te plaatsen, dan die waarden in uw productiesysteem op te stellen.
-Dit wordt gedaan door een combinatie gedeelde configuraties te gebruiken, `config.php` bestand en de CLI-opdracht Handel.
+Dit wordt gedaan door een combinatie gedeelde configuraties, het `config.php` dossier, en het bevel van Commerce CLI te gebruiken.
 
 In dit voorbeeld worden de volgende configuratie-instellingen gebruikt:
 
-- **BTW-nummer** en **Winkelnaam** voor de gedeelde configuratie-instellingen.
+- **Vat Aantal** en **Naam van de Opslag** voor de gedeelde configuratiemontages.
 
-  Deze vindt u onder **Winkels** > Instellingen > **Configuratie** > Algemeen > **Algemeen**.
+  Deze worden gevonden onder **Slaat** > Montages > **Configuratie** > Algemeen > **Algemeen**.
 
-- **E-mails verzenden naar** voor de gevoelige configuratiewaarde.
+- **verzendt E-mail naar** voor de gevoelige configuratiewaarde.
 
-  Deze vindt u onder **Winkels** > Instellingen > **Configuratie** > Algemeen > **Contactpersonen**.
+  Dit wordt gevonden onder **Slaat** > Montages > **Configuratie** > Algemeen > **Contacten**.
 
-- **Standaard-e-maildomein** voor de systeemspecifieke configuratiewaarde.
+- **Standaard E-mailDomein** voor de systeem-specifieke configuratiewaarde.
 
-  Deze vindt u onder **Winkels** > Instellingen > **Configuratie** > Klanten > **Klantconfiguratie** > **Nieuwe accountopties maken**.
+  Dit wordt gevonden onder **Opslag** > Montages > **Configuratie** > Klanten > **de Configuratie van de Klant** > **creeer Nieuwe Opties van de Rekening**.
 
 U kunt de zelfde procedure gebruiken in dit voorbeeld wordt getoond om het even welke montages in de volgende verwijzingen te vormen die:
 
 - [Verwijzing naar gevoelige en systeemspecifieke configuratiepaden](../reference/config-reference-sens.md)
 - [Verwijzing naar betalingspaden](../reference/config-reference-payment.md)
 - [Verwijzing naar andere configuratiepaden](../reference/config-reference-general.md)
-- [Bron voor configuratiepaden van de extensie Commerce Enterprise B2B](../reference/config-reference-b2b.md)
+- [Referentie voor configuratiepaden voor Commerce Enterprise B2B-extensies](../reference/config-reference-b2b.md)
 
 ## Voordat u begint
 
-Voordat u begint, stelt u de machtigingen en het eigendom van het bestandssysteem in zoals beschreven in [Vereiste voor ontwikkeling, bouw, en productiesystemen](../deployment/prerequisites.md).
+Alvorens u begint, de toestemmingen en de eigendom van het opstellingssysteem zoals besproken in [ Vereiste voor ontwikkeling, bouwt, en productiesystemen ](../deployment/prerequisites.md).
 
 ## Veronderstellingen
 
@@ -54,30 +54,30 @@ In dit voorbeeld gaan we uit van het volgende:
 U kunt als volgt de standaardwaarden voor landinstelling en gewicht in uw ontwikkelingssysteem instellen:
 
 1. Meld u aan bij de beheerder.
-1. Klikken **Winkels** > Instellingen > **Configuratie** > Algemeen > **Algemeen**.
-1. Als u meer dan één website beschikbaar hebt, gebruikt u **Winkelweergave** in de linkerbovenhoek om naar een andere website te schakelen zoals in de volgende afbeelding wordt getoond.
+1. Klik **Slaat** op > Montages > **Configuratie** > Algemeen > **Algemeen**.
+1. Als u meer dan één beschikbare website hebt, gebruik de **lijst van de Mening van de Opslag** in de hogere linkerhoek om naar een verschillende website te schakelen aangezien het volgende cijfer toont.
 
-   ![Andere websites](../../assets/configuration/split-deploy-switch-website.png)
+   ![ de websites van de Schakelaar ](../../assets/configuration/split-deploy-switch-website.png)
 
-1. Vouw in het rechterdeelvenster uit **Opslaggegevens**.
-1. Indien nodig de **Standaardinstellingen gebruiken** selectievakje naast **BTW-nummer** en **Winkelnaam** velden.
-1. Voer een getal in het veld in (bijvoorbeeld `12345`).
-1. In de **Winkelnaam** veld, geef een waarde op (zoals `My Store`).
-1. Klikken **Config opslaan**.
-1. Klik in de linkernavigatie onder Algemeen op **Contactpersonen**.
-1. Vouw in het rechterdeelvenster uit **E-mailopties**.
-1. Indien nodig de **Standaardinstellingen gebruiken** selectievakje naast **E-mails verzenden naar** veld.
+1. In de juiste ruit, breid **Informatie van de Opslag** uit.
+1. Indien nodig, ontruim het **Standaardvakje van het Gebruik** naast het **BTW Aantal** en **de gebieden van de Naam van de Opslag**.
+1. Voer een getal in het veld in (bijvoorbeeld `12345` ).
+1. Op het **gebied van de Naam van de Opslag**, ga een waarde (als `My Store`) in.
+1. Klik **sparen Config**.
+1. In de linkernavigatie, onder Algemeen, klik **Contacten**.
+1. In de juiste ruit, breid **E-mailOpties** uit.
+1. Indien nodig, ontruim het **Gebruik Standaard** checkbox naast **verzendt E-mail naar** gebied.
 1. Voer een e-mailadres in het veld in.
-1. Klikken **Config opslaan**.
-1. Gebruik de **Winkelweergave** te selecteren **Standaardconfiguratie** zoals het volgende cijfer toont.
+1. Klik **sparen Config**.
+1. Gebruik de **lijst van de Mening van de Opslag** om **StandaardConfig** te selecteren aangezien het volgende cijfer toont.
 
-   ![Naar de standaardconfiguratie schakelen](../../assets/configuration/split-deploy-default-config.png)
+   ![ Schakelaar aan het gebrek config ](../../assets/configuration/split-deploy-default-config.png)
 
-1. Klik in het linkerdeelvenster op Klanten > **Klantconfiguratie**.
-1. Vouw in het rechterdeelvenster uit **Nieuwe accountopties maken**.
-1. Indien nodig de **Systeemwaarde gebruiken** selectievakje naast **Standaard-e-maildomein** veld.
+1. In de linkerruit, klik Klanten > **Configuratie van de Klant**.
+1. In de juiste ruit, breid **uit tot Nieuwe Opties van de Rekening**.
+1. Indien noodzakelijk, ontruim het **checkbox van de systeemwaarde van het 0} Gebruik naast het** Standaard e-mailgebied **gebied.**
 1. Voer een domeinnaam in het veld in.
-1. Klikken **Config opslaan**.
+1. Klik **sparen Config**.
 1. Maak de cache leeg als daarom wordt gevraagd.
 
 ## Stap 2: Werk de configuratie bij
@@ -86,7 +86,7 @@ Nu u de configuratie in Admin hebt veranderd, schrijf de gedeelde configuratie a
 
 {{$include /help/_includes/config-save-config.md}}
 
-Alhoewel `app/etc/env.php` (de systeem-specifieke configuratie) werd bijgewerkt, controleer het niet aan broncontrole.
+Hoewel `app/etc/env.php` (de systeem-specifieke configuratie) werd bijgewerkt, controleer het niet aan broncontrole.
 U zult de zelfde configuratiemontages op uw productiesysteem later in deze procedure tot stand brengen.
 
 ## Stap 3: Werk uw bouwstijlsysteem bij en produceer dossiers
@@ -108,11 +108,11 @@ Als u de gevoelige en systeemspecifieke instellingen wilt instellen met omgeving
 
 - Bereik voor elke instelling
 
-  Als u de instructies in Stap 1 volgde, het werkingsgebied voor **E-mails verzenden naar** is website en het toepassingsgebied voor **Standaard-e-maildomein** is globaal (dat wil zeggen, het bereik Default Config).
+  Als u de instructies in Stap 1 volgde, verzendt het werkingsgebied voor **E-mail naar** website en het werkingsgebied voor **Standaard E-maildomein** is globaal (namelijk het werkingsgebied Standaard Config).
 
-  U hebt de websitecode nodig om de **E-mails verzenden naar** configuratiewaarde.
+  U hebt de websitecode nodig om **te plaatsen verzendt E-mail naar** configuratiewaarde.
 
-  Zie voor meer informatie over het vinden van deze waarde: [Omgevingsvariabelen gebruiken om configuratie-instellingen te overschrijven](../reference/override-config-settings.md#environment-variables).
+  Voor meer informatie bij het vinden van deze waarde, zie: [ de milieuvariabelen van het Gebruik om configuratiemontages ](../reference/override-config-settings.md#environment-variables) met voeten te treden.
 
 - Configuratiepaden voor de instellingen die in dit voorbeeld worden gebruikt:
 
@@ -121,7 +121,7 @@ Als u de gevoelige en systeemspecifieke instellingen wilt instellen met omgeving
   | E-mails verzenden naar | `contact/email/recipient_email` |
   | Standaard-e-maildomein | `customer/create_account/email_domain` |
 
-  Voor alle gevoelige en systeem-specifieke configuratiewegen, zie: [Verwijzing naar gevoelige en systeemspecifieke configuratiepaden](../reference/config-reference-sens.md).
+  Voor alle gevoelige en systeem-specifieke configuratiewegen, zie: [ Gevoelige en systeem-specifieke verwijzing van configuratiepaden ](../reference/config-reference-sens.md).
 
 ### De variabelen instellen met CLI-opdrachten
 
@@ -130,7 +130,7 @@ Gebruik de volgende CLI bevelen om systeem-specifieke en gevoelige configuratiem
 - `magento config:set` voor systeemspecifieke instellingen
 - `magento config:sensitive:set` voor gevoelige instellingen
 
-De systeemspecifieke instelling instellen **Standaard-e-maildomein**, dat zich in het standaardwerkingsgebied bevindt, gebruikt het volgende bevel:
+Om het systeem-specifieke plaatsen **Standaard E-mailDomein** te plaatsen, dat in het standaardwerkingsgebied is, gebruik het volgende bevel:
 
 ```bash
 bin/magento config:set customer/create_account/email_domain <email domain>
@@ -138,7 +138,7 @@ bin/magento config:set customer/create_account/email_domain <email domain>
 
 U hoeft het bereik niet in de opdracht te gebruiken omdat dit het standaardbereik is.
 
-Waarden instellen voor **E-mails verzenden naar**, echter, moet u het werkingsgebiedtype (`website`) en de bereikcode, die op elke site waarschijnlijk anders is.
+Om waarden voor **te plaatsen verzendt E-mail naar**, echter, moet u het werkingsgebiedtype (`website`) en de werkingsgebiedcode kennen, die waarschijnlijk verschillend op elke plaats is.
 
 Voorbeeld:
 
@@ -157,27 +157,27 @@ Deze sectie bespreekt hoe te om alle veranderingen te trekken u op uw ontwikkeli
 Om de configuratiemontages te verifiëren:
 
 1. Meld u aan bij de beheerder van het productiesysteem.
-1. Klikken **Winkels** > Instellingen > **Configuratie** > Algemeen > **Algemeen**.
-1. Gebruik de **Winkelweergave** in de linkerbovenhoek om naar een andere website te schakelen.
+1. Klik **Slaat** op > Montages > **Configuratie** > Algemeen > **Algemeen**.
+1. Gebruik de **lijst van de Mening van de Opslag** in de hogere linkerhoek om aan een verschillende website over te schakelen.
 
    De gedeelde configuratieopties die u in het ontwikkelingssysteem instelt, worden als volgt weergegeven.
 
-   ![Instellingen controleren in het productiesysteem](../../assets/configuration/split-deploy-verify-storeinfo.png)
+   ![ de montages van de Controle in het productiesysteem ](../../assets/configuration/split-deploy-verify-storeinfo.png)
 
    >[!INFO]
    >
-   >De **Winkelnaam** Het veld kan worden bewerkt in het bereik van de website, maar als u overschakelt naar het bereik Standaard configuratie, kan het niet worden bewerkt. Dit is het resultaat van hoe u de opties in het ontwikkelingssysteem plaatst. De waarde van **BTW-nummer** kan niet worden bewerkt in het bereik van de website.
+   >Het **gebied van de Naam van de Opslag** is editable in het websitewerkingsgebied maar als u op het Gebrek Config schakelt, is het niet editable. Dit is het resultaat van hoe u de opties in het ontwikkelingssysteem plaatst. De waarde van **het Aantal van BTW** is niet editable in websitewerkingsgebied.
 
 1. Als u dit nog niet hebt gedaan, schakelaar aan het werkingsgebied Standaard Config.
-1. Klik in de linkernavigatie onder Algemeen op **Contactpersonen**.
+1. In de linkernavigatie, onder Algemeen, klik **Contacten**.
 
-   De **E-mails verzenden naar** kan niet worden bewerkt, zoals in de volgende afbeelding wordt getoond. Dit is een gevoelige instelling.
+   **verzendt E-mail naar** gebied is niet editable, aangezien het volgende cijfer toont. Dit is een gevoelige instelling.
 
-   ![Instellingen controleren in het productiesysteem](../../assets/configuration/split-deploy-verify-contacts.png)
+   ![ de montages van de Controle in het productiesysteem ](../../assets/configuration/split-deploy-verify-contacts.png)
 
-1. Klik in het linkerdeelvenster op Klanten > **Klantconfiguratie**.
-1. Vouw in het rechterdeelvenster uit **Nieuwe accountopties maken**.
+1. In de linkerruit, klik Klanten > **Configuratie van de Klant**.
+1. In de juiste ruit, breid **uit tot Nieuwe Opties van de Rekening**.
 
-   De waarde van **Standaard-e-maildomein** wordt als volgt weergegeven. Dit is een systeemspecifieke instelling.
+   De waarde van het **StandaardE-mailDomein** gebied wordt getoond als volgt. Dit is een systeemspecifieke instelling.
 
-   ![Instellingen controleren in het productiesysteem](../../assets/configuration/split-default-domain.png)
+   ![ de montages van de Controle in het productiesysteem ](../../assets/configuration/split-default-domain.png)

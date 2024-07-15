@@ -14,7 +14,7 @@ topic: Administration, Commerce, Development
 type: Documentation
 source-git-commit: aaca7ead9923b676718f6e371caa797d6c0d412f
 workflow-type: tm+mt
-source-wordcount: '131'
+source-wordcount: '129'
 ht-degree: 0%
 
 ---
@@ -22,7 +22,7 @@ ht-degree: 0%
 
 # Metagegevens voor intern gebruik
 
-De `metadata.md` Het bestand bevat metagegevens op repo-niveau die worden doorgegeven aan de gebruikershandleiding `TOC.md` in de revisie. Als u de inhoud metadata.md voor een gebruikersgids wilt wijzigen, doet u dit in om het even welke `TOC.md` bestand.
+Het `metadata.md` -bestand bevat metagegevens op repo-niveau die worden doorgegeven aan `TOC.md` -bestanden in de revisie. Als u de inhoud metadata.md voor een gebruikershandleiding wilt wijzigen, doet u dit in elk `TOC.md` -bestand.
 
 | metagegevens | wat het doet |
 |--- |--- |

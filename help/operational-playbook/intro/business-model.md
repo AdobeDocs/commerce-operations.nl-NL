@@ -1,11 +1,11 @@
 ---
 title: Wat zijn B2B en B2C?
-description: Meer informatie over de verschillende bedrijfsmodellen van de Handel.
+description: Meer informatie over de verschillende Commerce-bedrijfsmodellen.
 exl-id: d66b4a7f-d54b-4902-8791-7a8f67fa4b43
 source-git-commit: e76f101df47116f7b246f21f0fe0fa72769d2776
 workflow-type: tm+mt
-source-wordcount: '274'
-ht-degree: 1%
+source-wordcount: '266'
+ht-degree: 0%
 
 ---
 
@@ -52,9 +52,9 @@ Klantenservice voor B2B:
 Klantenservice voor B2C:
 
 - 24x7 klantenservice
-- Retourzendingen na verkoop
-- Uitwisseling na verkoop
-- Aangelegenheden na de verkoop
+- Post-sale retourneert
+- Post-verkoop
+- Post-verkoopkwesties
 - Beschikbaarheid
 
 ## Samenvatting van de verschillen tussen B2B en B2C

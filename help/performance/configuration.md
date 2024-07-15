@@ -12,39 +12,39 @@ ht-degree: 0%
 
 # Best practices voor configuratie
 
-De handel verstrekt vele montages en hulpmiddelen die u kunt gebruiken om reactietijd op de pagina&#39;s te verbeteren evenals hogere productie te verstrekken.
+Commerce biedt veel instellingen en gereedschappen waarmee u de responstijd op de pagina&#39;s kunt verbeteren en een hogere doorvoer kunt garanderen.
 
 ## Cron Jobs
 
-Alle asynchrone bewerkingen in [!DNL Commerce] worden uitgevoerd met behulp van Linux `cron` gebruiken. Zie [Uitsnede configureren en uitvoeren](../configuration/cli/configure-cron-jobs.md) om het correct te vormen.
+Alle asynchrone bewerkingen in [!DNL Commerce] worden uitgevoerd met de Linux-opdracht `cron` . Zie [ uitsnijden vormen en in werking stellen ](../configuration/cli/configure-cron-jobs.md) om het correct te vormen.
 
 ## Indexers
 
-Een indexeerprogramma kan worden uitgevoerd in **[!UICONTROL Update on Save]** of **[!UICONTROL Update on Schedule]** -modus. De **[!UICONTROL Update on Save]** wordt onmiddellijk geïndexeerd wanneer uw catalogus of andere gegevens veranderen. In deze modus wordt ervan uitgegaan dat de update- en bladerbewerkingen in uw winkel weinig intensief zijn. Dit kan leiden tot aanzienlijke vertragingen en onbeschikbaarheid van gegevens tijdens hoge belastingen. We raden u aan **Bijwerken in schema** voor prestatiedoeleinden, omdat het informatie over gegevensupdates opslaat en indexatie door gedeelten op de achtergrond door een specifieke kroonbaan uitvoert. U kunt de modus van elk [!DNL Commerce] indexeer afzonderlijk op de  **[!UICONTROL System]** > [!UICONTROL Tools] > **[!UICONTROL Index Management]** configuratiepagina De [!UICONTROL Customer Grid] index moet altijd worden ingesteld op **[!UICONTROL Update on Save]** -modus.
+Een indexeerprogramma kan in de modus **[!UICONTROL Update on Save]** of **[!UICONTROL Update on Schedule]** worden uitgevoerd. De modus **[!UICONTROL Update on Save]** wordt direct geïndexeerd wanneer de catalogus of andere gegevens veranderen. In deze modus wordt ervan uitgegaan dat de update- en bladerbewerkingen in uw winkel weinig intensief zijn. Dit kan leiden tot aanzienlijke vertragingen en onbeschikbaarheid van gegevens tijdens hoge belastingen. Wij adviseren gebruikend **Update op Programma** voor prestatiesdoeleinden, omdat het informatie over gegevensupdates opslaat en indexatie door gedeelten op de achtergrond door een specifieke kroonbaan uitvoert. U kunt de modus van elke [!DNL Commerce] -index afzonderlijk wijzigen op de configuratiepagina **[!UICONTROL System]** > [!UICONTROL Tools] > **[!UICONTROL Index Management]** . De [!UICONTROL Customer Grid] -index moet altijd worden ingesteld op de **[!UICONTROL Update on Save]** -modus.
 
 >[!TIP]
 >
->Het opnieuw indexeren van MariaDB 10.4 en 10.6 kost meer tijd dan andere MariaDB of [!DNL MySQL] versies. Wij stellen voor de standaard MariaDB-configuratie-instelling te wijzigen. Deze instelling wordt beschreven in het dialoogvenster [installatievereisten](../installation/prerequisites/database/mysql.md).
+>Het opnieuw indexeren van MariaDB 10.4 en 10.6 kost meer tijd dan andere MariaDB- of [!DNL MySQL] -versies. Wij stellen voor het gebrek MariaDB configuratie het plaatsen te wijzigen, die in de [ installatieeerste vereisten ](../installation/prerequisites/database/mysql.md) wordt beschreven.
 
 ## Cursussen
 
-Wanneer u uw winkel in productie start, activeert u alle caches vanuit de **[!UICONTROL System]** > [!UICONTROL Tools] > **[!UICONTROL Cache Management]** pagina. We raden u aan het gebruik van [!DNL Varnish], omdat dit een efficiënte cacheoplossing voor productiepagina is.
+Wanneer u de winkel in productie start, activeert u alle cache op de pagina **[!UICONTROL System]** > [!UICONTROL Tools] > **[!UICONTROL Cache Management]** . We raden u aan [!DNL Varnish] te gebruiken, omdat dit een efficiënte cacheoplossing voor productiepagina&#39;s is.
 
 ## Asynchrone e-mailmeldingen
 
-Als u de instelling voor &quot;Asynchrone e-mailmeldingen&quot; inschakelt, worden processen voor het uitchecken en bestellen van e-mailmeldingen naar de achtergrond verplaatst. Ga naar **[!UICONTROL Stores]> [!UICONTROL Settings] > [!UICONTROL Configuration] > [!UICONTROL Sales] > [!UICONTROL Sales Emails] > [!UICONTROL General Settings] >[!UICONTROL Asynchronous Sending]**. Zie [Verkoop-e-mails](https://docs.magento.com/user-guide/configuration/sales/sales-emails.html) in de _Gebruikershandleiding voor beheerders_ voor meer informatie .
+Als u de instelling voor &quot;Asynchrone e-mailmeldingen&quot; inschakelt, worden processen voor het uitchecken en bestellen van e-mailmeldingen naar de achtergrond verplaatst. Ga naar **[!UICONTROL Stores]> [!UICONTROL Settings] > [!UICONTROL Configuration] > [!UICONTROL Sales] > [!UICONTROL Sales Emails] > [!UICONTROL General Settings] >[!UICONTROL Asynchronous Sending]** om deze functie in te schakelen. Zie [ Verkoop E-mail ](https://docs.magento.com/user-guide/configuration/sales/sales-emails.html) in de _Gids van de Gebruiker Admin_ voor meer informatie.
 
 ## Asynchrone gegevensverwerking
 
-Er kunnen momenten zijn dat intensieve verkoop op een winkel plaatsvindt op hetzelfde moment dat [!DNL Commerce] voert intensieve orderverwerking uit. U kunt [!DNL Commerce] om deze twee verkeerspatronen op het gegevensbestandniveau te onderscheiden om conflicten tussen lees te vermijden en verrichtingen in de overeenkomstige lijsten te schrijven. U kunt ordegegevens asynchroon opslaan en indexeren. Orders worden in tijdelijke opslag geplaatst en in bulk naar het orderbeheerraster verplaatst zonder dat er conflicten optreden. U kunt deze optie activeren vanuit **[!UICONTROL Stores]> [!UICONTROL Settings] > [!UICONTROL Configuration] > [!UICONTROL Advanced] > [!UICONTROL Developer] > [!UICONTROL Grid Settings] >[!UICONTROL Asynchronous indexing]**. Zie [Geplande rasterupdates](https://docs.magento.com/user-guide/sales/order-grid-updates-schedule.html) in de _Gebruikershandleiding voor beheerders_ voor meer informatie .
+Er kunnen momenten zijn dat intensieve verkoop op een winkel plaatsvindt terwijl [!DNL Commerce] intensieve verwerking van bestellingen uitvoert. U kunt [!DNL Commerce] zo configureren dat deze twee verkeerspatronen worden onderscheiden op databaseniveau, zodat er geen conflicten ontstaan tussen lees- en schrijfbewerkingen in de corresponderende tabellen. U kunt ordegegevens asynchroon opslaan en indexeren. Bestellingen worden tijdelijk opgeslagen en in bulk naar het Order Management-raster verplaatst zonder botsingen. U kunt deze optie activeren via **[!UICONTROL Stores]> [!UICONTROL Settings] > [!UICONTROL Configuration] > [!UICONTROL Advanced] > [!UICONTROL Developer] > [!UICONTROL Grid Settings] >[!UICONTROL Asynchronous indexing]** . Zie [ Geplande Updates van het Net ](https://docs.magento.com/user-guide/sales/order-grid-updates-schedule.html) in de _Gids van de Gebruiker Admin_ voor meer informatie.
 
 >[!WARNING]
 >
->De **[!UICONTROL Developer]** tab en opties zijn alleen beschikbaar in [Modus Ontwikkelaar](../configuration/cli/set-mode.md). [Adobe Commerce over cloudinfrastructuur](https://devdocs.magento.com/cloud/requirements/cloud-requirements.html#cloud-req-test) ondersteunt niet `Developer` -modus.
+>Het **[!UICONTROL Developer]** lusje en de opties zijn slechts beschikbaar op [ wijze van de Ontwikkelaar ](../configuration/cli/set-mode.md). [ Adobe Commerce op wolkeninfrastructuur ](https://devdocs.magento.com/cloud/requirements/cloud-requirements.html#cloud-req-test) steunt niet `Developer` wijze.
 
 ## Asynchrone configuratie opslaan
 
-Voor projecten met een groot aantal opslag-vlakke configuraties, kan het bewaren van een opslagconfiguratie een ongeordende hoeveelheid tijd nemen of in een onderbreking resulteren. De _Async Config_ de module laat asynchrone configuratiebesparingen door een hulpbaan toe in werking te stellen die een consument gebruikt om sparen in een berichtrij te verwerken. AsyncConfig is **uitgeschakeld** standaard.
+Voor projecten met een groot aantal opslag-vlakke configuraties, kan het bewaren van een opslagconfiguratie een ongeordende hoeveelheid tijd nemen of in een onderbreking resulteren. De _module Async Config_ laat asynchrone configuratie toe bewaart door een kroonbaan in werking te stellen die een consument gebruikt om sparen in een berichtrij te verwerken. AsyncConfig is **gehandicapt** door gebrek.
 
 U kunt AsyncConfig toelaten gebruikend de bevel-lijn interface:
 
@@ -52,7 +52,7 @@ U kunt AsyncConfig toelaten gebruikend de bevel-lijn interface:
 bin/magento setup:config:set --config-async 1
 ```
 
-De `set` opdracht schrijft het volgende naar de `app/etc/env.php` bestand:
+Met de opdracht `set` schrijft u het volgende naar het `app/etc/env.php` -bestand:
 
 ```conf
 ...
@@ -69,7 +69,7 @@ bin/magento queue:consumers:start saveConfigProcessor --max-messages=1
 
 ## Uitgestelde voorraadupdate
 
-In tijden van intensieve verkoop [!DNL Commerce] kan beursupdates met betrekking tot orders uitstellen. Dit minimaliseert het aantal verrichtingen en versnelt het proces van de orderplaatsing. Deze optie is echter riskant en kan alleen worden gebruikt wanneer Backorders in de winkel worden geactiveerd, omdat deze optie tot negatieve voorraadhoeveelheden kan leiden. Deze optie kan de prestaties van de afhandelingsstromen aanzienlijk verbeteren voor winkels die hun voorraad gemakkelijk op aanvraag kunnen hervullen. Als u uitgestelde voorraadupdates op uw site wilt activeren, gaat u naar **[!UICONTROL Stores]> [!UICONTROL Settings] > [!UICONTROL Configuration] > [!UICONTROL Catalog] > [!UICONTROL Inventory] > [!UICONTROL Product Stock Options] >[!UICONTROL Use Deferred Stock Update]**. Zie [Inventaris beheren](https://docs.magento.com/user-guide/catalog/inventory.html) in de _Adobe Commerce-gebruikershandleiding_ voor meer informatie .
+In tijden van intensieve verkoop, [!DNL Commerce] kan voorraadupdates met betrekking tot orden vertragen. Dit minimaliseert het aantal verrichtingen en versnelt het proces van de orderplaatsing. Deze optie is echter riskant en kan alleen worden gebruikt wanneer Backorders in de winkel worden geactiveerd, omdat deze optie tot negatieve voorraadhoeveelheden kan leiden. Deze optie kan de prestaties van de afhandelingsstromen aanzienlijk verbeteren voor winkels die hun voorraad gemakkelijk op aanvraag kunnen hervullen. Als u uitgestelde stock-updates op uw site wilt activeren, gaat u naar **[!UICONTROL Stores]> [!UICONTROL Settings] > [!UICONTROL Configuration] > [!UICONTROL Catalog] > [!UICONTROL Inventory] > [!UICONTROL Product Stock Options] >[!UICONTROL Use Deferred Stock Update]** . Zie [ Leidend Inventaris ](https://docs.magento.com/user-guide/catalog/inventory.html) in de _Gids van de Gebruiker van Adobe Commerce_ voor meer informatie.
 
 >[!INFO]
 >
@@ -77,11 +77,11 @@ In tijden van intensieve verkoop [!DNL Commerce] kan beursupdates met betrekking
 
 >[!INFO]
 >
->Deze optie werkt ook met [Asynchrone orderplaatsing](high-throughput-order-processing.md#asynchronous-order-placement) in combinatie met [Inventory management](https://experienceleague.adobe.com/docs/commerce-admin/inventory/guide-overview.html).
+>Deze optie werkt ook met [ Asynchrone ordeplaatsing ](high-throughput-order-processing.md#asynchronous-order-placement) in combinatie met [ Inventory management ](https://experienceleague.adobe.com/docs/commerce-admin/inventory/guide-overview.html).
 
 ## Optimalisatie-instellingen aan de clientzijde
 
-De responsiviteit van uw winkel verbeteren [!DNL Commerce] Ga bijvoorbeeld naar de modus Standaard of Ontwikkelaar en wijzig de volgende instellingen:
+Als u de responsiviteit van de winkel van uw [!DNL Commerce] -instantie wilt verbeteren, gaat u naar Beheer in de modus Standaard of Ontwikkelaar en wijzigt u de volgende instellingen:
 
 **[!UICONTROL Stores]-> [!UICONTROL Configuration] -> [!UICONTROL Advanced] -> [!UICONTROL Developer]:**
 
@@ -89,37 +89,37 @@ De responsiviteit van uw winkel verbeteren [!DNL Commerce] Ga bijvoorbeeld naar 
 | ------------------- | -------------------------- | ------ |
 | Rasterinstellingen | Asynchrone indexering | Inschakelen |
 | CSS-instellingen | CSS-bestanden miniaturen | Ja |
-| [!DNL JavaScript] Instellingen | Minieren [!DNL JavaScript] Bestanden | Ja |
-| [!DNL JavaScript] Instellingen | Inschakelen [!DNL JavaScript] Bundling | Ja |
+| [!DNL JavaScript] Instellingen | [!DNL JavaScript] Bestanden miniaturen | Ja |
+| [!DNL JavaScript] Instellingen | [!DNL JavaScript] Bundelen inschakelen | Ja |
 | Sjablooninstellingen | Minify HTML | Ja |
 
 >[!INFO]
 >
->De **[!UICONTROL Developer]** tab en opties zijn alleen beschikbaar in [Modus Ontwikkelaar](../configuration/cli/set-mode.md). [Adobe [!DNL Commerce] over cloudinfrastructuur](https://devdocs.magento.com/cloud/requirements/cloud-requirements.html#cloud-req-test) ondersteunt niet `Developer` -modus.
+>Het **[!UICONTROL Developer]** lusje en de opties zijn slechts beschikbaar op [ wijze van de Ontwikkelaar ](../configuration/cli/set-mode.md). [ Adobe  [!DNL Commerce]  op wolkeninfrastructuur ](https://devdocs.magento.com/cloud/requirements/cloud-requirements.html#cloud-req-test) steunt niet `Developer` wijze.
 
-Wanneer u het dialoogvenster **[!UICONTROL Enable [!DNL JavaScript] Bundling]** toestaan, staat u de Handel toe om alle middelen JS in één of een reeks bundels samen te voegen die in storefront pagina&#39;s worden geladen. Het bundelen van JS resulteert in minder verzoeken aan de server, wat paginaprestaties verbetert. Het helpt de browser JS middelen van het geheime voorgeheugen op de eerste vraag en hergebruik hen voor allen verder het doorbladeren. Deze optie brengt ook luie evaluatie, aangezien al JS als tekst wordt geladen. Het initieert analyse en evaluatie van code slechts nadat de specifieke acties op de pagina worden teweeggebracht. Nochtans, wordt dit het plaatsen niet geadviseerd voor opslag waar de eerste tijd van de paginading uiterst kritiek is, omdat al inhoud JS op de eerste vraag zal worden geladen.
+Wanneer u de optie **[!UICONTROL Enable [!DNL JavaScript] Bundling]** activeert, kunt u Commerce toestaan alle JS-bronnen samen te voegen tot één of een set bundels die in winkelpagina&#39;s worden geladen. Het bundelen van JS resulteert in minder verzoeken aan de server, wat paginaprestaties verbetert. Het helpt de browser JS middelen van het geheime voorgeheugen op de eerste vraag en hergebruik hen voor allen verder het doorbladeren. Deze optie brengt ook luie evaluatie, aangezien al JS als tekst wordt geladen. Het initieert analyse en evaluatie van code slechts nadat de specifieke acties op de pagina worden teweeggebracht. Nochtans, wordt dit het plaatsen niet geadviseerd voor opslag waar de eerste tijd van de paginading uiterst kritiek is, omdat al inhoud JS op de eerste vraag zal worden geladen.
 
 >[!INFO]
 >
->Zie [CSS- en JavaScript-bestandsoptimalisatie op Adobe Commerce op cloudinfrastructuur en Adobe Commerce](https://support.magento.com/hc/en-us/articles/360044482152) in Adobe Commerce Help Center_ voor meer informatie over het optimaliseren van CSS en Javascript.
+>Zie [ CSS en Javascript dossieroptimalisering op Adobe Commerce op wolkeninfrastructuur en Adobe Commerce ](https://support.magento.com/hc/en-us/articles/360044482152) in Adobe Commerce Help Center_ voor meer informatie over het optimaliseren van CSS en Javascript.
 
 ### Bunduiteinden
 
-* Wij adviseren dat u derdehulpmiddelen voor minificatie en bundeling (zoals [r.js](https://requirejs.org/)). [!DNL Commerce] ingebouwde mechanismen zijn niet optimaal en worden verzonden als alternatieven voor alternatieven.
+* Wij adviseren dat u derdehulpmiddelen voor minificatie en bundeling (als [ r.js ](https://requirejs.org/)) gebruikt. [!DNL Commerce] ingebouwde mechanismen zijn niet optimaal en worden verzonden als alternatieven voor fallback.
 * Het activeren van het HTTP/2-protocol kan een goed alternatief zijn voor het gebruik van JS-bundeling. Het protocol biedt veel van dezelfde voordelen. Het wordt door gebrek toegelaten in Adobe Commerce op de projecten van de wolkeninfrastructuur.
 * We raden u niet aan vervangen instellingen te gebruiken, zoals het samenvoegen van JS- en CSS-bestanden, omdat deze alleen zijn ontworpen voor JS die synchroon zijn geladen in de sectie HEAD van de pagina. Het gebruik van deze techniek kan het bundelen veroorzaken en requireJS logica om verkeerd te werken.
 
 ## Validatie van klantsegmenten
 
-Handelaren met een groot aantal [klantsegmenten](https://docs.magento.com/user-guide/marketing/customer-segments.html) kan aanzienlijke prestatievermindering ervaren met acties van klanten, zoals aanmeldingsgegevens van klanten en het toevoegen van producten aan het winkelwagentje.
+De handelaren die een groot aantal [ klantensegmenten ](https://docs.magento.com/user-guide/marketing/customer-segments.html) hebben kunnen significante prestatiesdegradatie met klantenacties, zoals klantenlogin ervaren en producten toevoegen aan de kar.
 
 De acties van de klant brengen een bevestigingsproces voor klantensegmenten teweeg, wat prestatiesdegradatie kan veroorzaken. Standaard valideert Adobe Commerce elk segment in real-time om te bepalen welke klantsegmenten overeenkomen en welke niet.
 
-U voorkomt een verslechtering van de prestaties door de **[!UICONTROL Real-time Check if Customer is Matched by Segment]** systeemconfiguratieoptie voor **Nee** om klantensegmenten door één enkele gecombineerde voorwaardeSQL vraag te bevestigen.
+Om prestatiesdegradatie te vermijden, kunt u de **[!UICONTROL Real-time Check if Customer is Matched by Segment]** optie van de systeemconfiguratie aan **Nr** plaatsen om klantensegmenten door één enkele gecombineerde voorwaardeSQL vraag te bevestigen.
 
-Ga voor het inschakelen van deze optimalisatie naar **[!UICONTROL Stores]> [!UICONTROL Settings] > [!UICONTROL Configuration] > [!UICONTROL Customers] > [!UICONTROL Customer Configuration] > [!UICONTROL Customer Segments] >[!UICONTROL Real-time Check if Customer is Matched by Segment]**.
+Ga naar **[!UICONTROL Stores]> [!UICONTROL Settings] > [!UICONTROL Configuration] > [!UICONTROL Customers] > [!UICONTROL Customer Configuration] > [!UICONTROL Customer Segments] >[!UICONTROL Real-time Check if Customer is Matched by Segment]** om deze optimalisatie in te schakelen.
 
-Dit het plaatsen verbetert de prestaties van de bevestiging van het klantensegment als er vele klantensegmenten in het systeem zijn. Het werkt echter niet met [gesplitste database](../configuration/storage/multi-master.md) implementaties of wanneer er geen geregistreerde klanten zijn.
+Dit het plaatsen verbetert de prestaties van de bevestiging van het klantensegment als er vele klantensegmenten in het systeem zijn. Nochtans, werkt het niet met [ gespleten gegevensbestand ](../configuration/storage/multi-master.md) implementaties of wanneer er geen geregistreerde klanten zijn.
 
 ## Onderhoudsschema voor databases {#database}
 
@@ -131,14 +131,14 @@ Bijvoorbeeld, adviseren wij het plannen van een steun van uw gegevensbestand van
 
 ## Limiet voor het aantal producten in het raster
 
-Om de prestaties van het productnet voor grote catalogi te verbeteren, adviseren wij het beperken van het aantal producten in het net met **[!UICONTROL Stores]> [!UICONTROL Settings] > [!UICONTROL Configuration] > [!UICONTROL Advanced] > [!UICONTROL Admin] > [!UICONTROL Admin Grids] >[!UICONTROL Limit Number of Products in Grid]** systeemconfiguratie-instelling.
+Als u de prestaties van het productraster voor grote catalogi wilt verbeteren, kunt u het beste het aantal producten in het raster beperken met de instelling **[!UICONTROL Stores]> [!UICONTROL Settings] > [!UICONTROL Configuration] > [!UICONTROL Advanced] > [!UICONTROL Admin] > [!UICONTROL Admin Grids] >[!UICONTROL Limit Number of Products in Grid]** voor de systeemconfiguratie.
 
-Deze instelling voor systeemconfiguratie is standaard uitgeschakeld. Door het toe te laten, kunt u het aantal producten in het net tot een specifieke waarde beperken. **[!UICONTROL Records Limit]** is een aanpasbare instelling met een standaard minimumwaarde van `20000`.
-Wanneer de **[!UICONTROL Limit Number of Products in Grid]** het plaatsen wordt toegelaten en het aantal producten in het net is groter dan de verslaggrens, dan is de beperkte inzameling van verslagen teruggekeerd. Wanneer de limiet is bereikt, worden de totale gevonden records, het aantal geselecteerde records en de pagineringselementen verborgen achter de rasterkop.
+Deze instelling voor systeemconfiguratie is standaard uitgeschakeld. Door het toe te laten, kunt u het aantal producten in het net tot een specifieke waarde beperken. **[!UICONTROL Records Limit]** is een aanpasbare instelling met de standaardwaarde `20000` .
+Wanneer de instelling **[!UICONTROL Limit Number of Products in Grid]** is ingeschakeld en het aantal producten in het raster groter is dan de recordlimiet, wordt de beperkte verzameling records geretourneerd. Wanneer de limiet is bereikt, worden de totale gevonden records, het aantal geselecteerde records en de pagineringselementen verborgen achter de rasterkop.
 
-Wanneer het totale aantal producten in het raster beperkt is, heeft dit geen invloed op de massaacties van het productraster. Het beïnvloedt slechts de presentatielaag van het productnet. Er is bijvoorbeeld een beperkt aantal `20000` producten in het raster, klikt de gebruiker op **[!UICONTROL Select All]** selecteert u de **[!UICONTROL Update attributes]** massaactie, en werkt sommige attributen bij. Als gevolg hiervan worden alle producten bijgewerkt, niet de beperkte verzameling van `20000` records.
+Wanneer het totale aantal producten in het raster beperkt is, heeft dit geen invloed op de massaacties van het productraster. Het beïnvloedt slechts de presentatielaag van het productnet. Het raster bevat bijvoorbeeld een beperkt aantal `20000` -producten, de gebruiker klikt op **[!UICONTROL Select All]** , selecteert de **[!UICONTROL Update attributes]** -massaactie en werkt een aantal kenmerken bij. Hierdoor worden alle producten bijgewerkt, niet de beperkte verzameling van `20000` -records.
 
-De beperking van het productraster is alleen van toepassing op productverzamelingen die worden gebruikt door UI-componenten. Deze beperking geldt dus niet voor alle productrasters. Alleen die welke `Magento\Catalog\Ui\DataProvider\Product\ProductCollection`.
+De beperking van het productraster is alleen van toepassing op productverzamelingen die worden gebruikt door UI-componenten. Deze beperking geldt dus niet voor alle productrasters. Alleen diegenen die `Magento\Catalog\Ui\DataProvider\Product\ProductCollection` gebruiken.
 U kunt verzamelingen van productrasters alleen op de volgende pagina&#39;s beperken:
 
 * Catalogusproductraster
@@ -147,4 +147,4 @@ U kunt verzamelingen van productrasters alleen op de volgende pagina&#39;s beper
 * Producten toevoegen aan productgroep
 * Beheerderspagina voor bestelling maken
 
-Als u niet wilt dat het productraster wordt beperkt, raden we u aan om filters nauwkeuriger te gebruiken zodat de resultatenverzameling minder items bevat dan **[!UICONTROL Records Limit]**.
+Als u niet wilt dat het productraster wordt beperkt, raden we u aan om filters nauwkeuriger te gebruiken zodat de resultatenverzameling minder items bevat dan **[!UICONTROL Records Limit]** .

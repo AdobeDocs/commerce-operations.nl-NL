@@ -28,25 +28,25 @@ In de dataflow-diagrammen worden de typen gegevens weergegeven die klanten en be
 
 Een gebruiker kan klant-, adres- en betalingsgegevens invoeren bij het registreren voor een account, tijdens het afrekenen en vergelijkbare gebeurtenissen.
 
-![Punten voor gegevensinvoer vóór](../../assets/security-compliance/frontend-data-entry-points.svg)
+![ Voorste punten van de gegevensingang ](../../assets/security-compliance/frontend-data-entry-points.svg)
 
 ### Punten voor gegevenstoegang vóór
 
 Adobe Commerce laadt klantgegevens wanneer de klant zich aanmeldt en verschillende pagina&#39;s bekijkt, of checkt deze uit.
 
-![Punten voor gegevenstoegang vóór](../../assets/security-compliance/frontend-data-access-points.svg)
+![ de toegangspunten van de voorste gegevens ](../../assets/security-compliance/frontend-data-access-points.svg)
 
 ### Punten voor achtergrondgegevensinvoer
 
 Een handelaar kan klantinformatie, adresgegevens, en betalingsgegevens ingaan wanneer het creëren van een klant of een orde van Admin.
 
-![Punten voor achtergrondgegevensinvoer](../../assets/security-compliance/backend-data-entry-points.svg)
+![ De punten van de de gegevensingang van het achtereind ](../../assets/security-compliance/backend-data-entry-points.svg)
 
 ### Gegevenstoegangspunten op de achtergrond
 
 Adobe Commerce laadt klanteninformatie wanneer een handelaar verscheidene types van netten bekijkt, op een net klikt om gedetailleerde informatie te zien, en diverse andere taken uitvoert.
 
-![Gegevenstoegangspunten op de achtergrond](../../assets/security-compliance/backend-data-access-points.svg)
+![ de toegangspunten van de achterste gegevens ](../../assets/security-compliance/backend-data-access-points.svg)
 
 ## Database-entiteiten
 
@@ -71,7 +71,7 @@ Adobe Commerce kan worden geconfigureerd om de volgende klantkenmerken op te sla
 
 #### `customer_entity` en &#39;customer_entity&#39;-verwijzingen
 
-De volgende kolommen in de `customer_entity` tabel bevat klantgegevens:
+De volgende kolommen in de tabel `customer_entity` bevatten klantgegevens:
 
 | Kolom | Gegevenstype |
 | ------------ | ------------ |
@@ -84,7 +84,7 @@ De volgende kolommen in de `customer_entity` tabel bevat klantgegevens:
 | `dob` | date |
 | `gender` | small(5) |
 
-Deze tabellen verwijzen naar `customer_entity` en kan aangepaste klantkenmerken bevatten:
+Deze tabellen verwijzen naar `customer_entity` en kunnen aangepaste klantkenmerken bevatten:
 
 | Tabel | Kolom | Gegevenstype |
 | -------------------------- | ------- | ------------- |
@@ -96,7 +96,7 @@ Deze tabellen verwijzen naar `customer_entity` en kan aangepaste klantkenmerken 
 
 #### `customer_grid_flat` table
 
-De volgende kolommen in de `customer_grid_flat` tabel bevat klantgegevens:
+De volgende kolommen in de tabel `customer_grid_flat` bevatten klantgegevens:
 
 | Kolom | Gegevenstype |
 | -------------------- | ------------ |
@@ -139,7 +139,7 @@ Adobe Commerce slaat de volgende klantkenmerken op:
 
 #### `customer_address_entity` en `customer_address_entity` verwijzingen
 
-De volgende kolommen in de `customer_address_entity` tabel bevat klantgegevens:
+De volgende kolommen in de tabel `customer_address_entity` bevatten klantgegevens:
 
 | Kolom | Gegevenstype |
 | ------------ | ------------ |
@@ -158,7 +158,7 @@ De volgende kolommen in de `customer_address_entity` tabel bevat klantgegevens:
 | `telephone` | varchar(255) |
 | `vat_id` | varchar(255) |
 
-Deze tabellen verwijzen naar `customer_address_entity` en kan aangepaste klantkenmerken bevatten:
+Deze tabellen verwijzen naar `customer_address_entity` en kunnen aangepaste klantkenmerken bevatten:
 
 | Tabel | Kolom | Gegevenstype |
 | ---------------------------------- | ------- | ------------- |
@@ -170,11 +170,11 @@ Deze tabellen verwijzen naar `customer_address_entity` en kan aangepaste klantke
 
 ### Ordergegevens
 
-De `sales_order` en verwante tabellen bevatten de naam van de klant, het factuuradres en het verzendadres, en de bijbehorende gegevens.
+De tabellen `sales_order` en verwante tabellen bevatten de naam, het facturerings- en verzendadres van de klant en verwante gegevens.
 
 #### `sales_order` table
 
-De volgende kolommen in de `sales_order` tabel bevat klantgegevens:
+De volgende kolommen in de tabel `sales_order` bevatten klantgegevens:
 
 | Kolom | Gegevenstype |
 | --------------------- | ------------ |
@@ -195,7 +195,7 @@ De volgende kolommen in de `sales_order` tabel bevat klantgegevens:
 
 #### `sales_order_address` table
 
-De `sales_order_address` de tabel bevat het adres van de klant.
+De tabel `sales_order_address` bevat het adres van de klant.
 
 | Kolom | Gegevenstype |
 | --------------------- | ------------ |
@@ -218,7 +218,7 @@ De `sales_order_address` de tabel bevat het adres van de klant.
 
 #### `sales_order_grid` table
 
-De volgende kolommen in de `sales_order_grid` tabel bevat klantgegevens:
+De volgende kolommen in de tabel `sales_order_grid` bevatten klantgegevens:
 
 | Kolom | Gegevenstype |
 | ---------------------- | ------------ |
@@ -237,7 +237,7 @@ Aanhalingstekens bevatten de naam, het e-mailadres, het adres en verwante gegeve
 
 #### `quote` table
 
-De volgende kolommen in de `quote` tabel bevat klantgegevens:
+De volgende kolommen in de tabel `quote` bevatten klantgegevens:
 
 | Kolom | Gegevenstype |
 | --------------------- | ------------ |
@@ -254,7 +254,7 @@ De volgende kolommen in de `quote` tabel bevat klantgegevens:
 
 #### `quote_address` table
 
-De volgende kolommen in de `quote_address` tabel bevat klantgegevens:
+De volgende kolommen in de tabel `quote_address` bevatten klantgegevens:
 
 | Kolom | Gegevenstype |
 | ------------- | ------------ |
@@ -277,7 +277,7 @@ De volgende kolommen in de `quote_address` tabel bevat klantgegevens:
 
 ### Betalingsgegevens
 
-De `sales_order_payment` de tabel bevat creditcardgegevens en andere transactiegegevens.
+De tabel `sales_order_payment` bevat creditcardgegevens en andere transactiegegevens.
 
 | Kolom | Gegevenstype |
 | ------------------------ | ------------ |
@@ -299,7 +299,7 @@ Adobe Commerce kan zo worden geconfigureerd dat klanten uitnodigingen kunnen ver
 
 #### `magento_invitation` table
 
-De `magento_invitation` de tabel bevat de klant-id, de e-mail en de referentie-id.
+De tabel `magento_invitation` bevat de klant-id, e-mail en referentie-id.
 
 | Kolom | Gegevenstype |
 | ------------- | ------------ |
@@ -309,7 +309,7 @@ De `magento_invitation` de tabel bevat de klant-id, de e-mail en de referentie-i
 
 #### `magento_invitation_track` table
 
-De `magento_invitation_track` de lijst bevat ook klanteninformatie.
+De tabel `magento_invitation_track` bevat ook klantgegevens.
 
 | Kolom | Gegevenstype |
 | ------------- | --------- |
@@ -318,7 +318,7 @@ De `magento_invitation_track` de lijst bevat ook klanteninformatie.
 
 ### Diverse tabellen die verwijzen naar klant
 
-De volgende tabellen bevatten een `customer_id` kolom:
+De volgende tabellen bevatten een kolom `customer_id` :
 
 - `catalog_compare_item`
 - `catalog_product_frontend_action`

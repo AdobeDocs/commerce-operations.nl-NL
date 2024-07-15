@@ -4,7 +4,7 @@ description: Volg deze tien tips om een prachtige klik te leveren en ervaringen 
 exl-id: 5f5743ac-75a5-41f1-8819-2de088f56387
 source-git-commit: e76f101df47116f7b246f21f0fe0fa72769d2776
 workflow-type: tm+mt
-source-wordcount: '802'
+source-wordcount: '798'
 ht-degree: 0%
 
 ---
@@ -13,7 +13,7 @@ ht-degree: 0%
 
 Klik en verzamel is een integraal onderdeel geworden van omni-channel strategieën omdat dit de toename van het verbruik, de ervaring van de klant en het investeringsrendement bevordert. Klikken en verzamelen is niet meer alleen voor grote supermarkten, maar maakt ook deel uit van zowel B2B- als B2C-organisaties.
 
-![Afbeeldingen in een cirkel](../../assets/playbooks/shoes.png)
+![ tonen in een cirkel ](../../assets/playbooks/shoes.png)
 
 ## Tips
 
@@ -34,13 +34,13 @@ De ondernemingen zouden deze tien uiteinden moeten volgen om de goede klik te le
 
 Wanneer het beslissen om te voeren klik en verzamelt, moeten de ondernemingen overwegen hoe zij van plan zijn om te leveren klik en aan klanten, zoals de diensttypes verzamelen:
 
-- **Online betaling en in-store verzamelen**—De gebruiker betaalt het product online en nadat de betaling is bevestigd, brengt de winkel de klant op de hoogte wanneer het product gereed is om te worden ingezameld op basis van de keuze van de winkel van de klant. Als u de betaling int, kunt u het product beter reserveren.
+- **Online betaling en verzamelen in-opslag** - de gebruiker betaalt voor het product online en nadat de betaling wordt bevestigd de opslag brengt de klant op de hoogte wanneer het product klaar is om te worden verzameld gebaseerd op de selectie van de klantenopslag. Als u de betaling int, kunt u het product beter reserveren.
 
-- **Onlineproduct, betaling en inzameling in de winkel reserveren**—In dit servicetype betaalt de klant niet online bij het reserveren van een product. In dit type van dienst, kan de klant hun mening veranderen en zou niet het product kunnen kopen.
+- **het product van de Reserve online, betaling en inzameling in opslag** - In dit de diensttype betaalt de klant niet online wanneer het reserveren van een product. In dit type van dienst, kan de klant hun mening veranderen en zou niet het product kunnen kopen.
 
-- **Integratie**—Nadat het leveringstype wordt geselecteerd, moeten de ondernemingen over integratiestructuur beslissen (waar de orden worden verzonden, waar de orden worden vervuld). De voorraad kan worden aangelegd vanuit een centraal entrepot of rechtstreeks vanuit afzonderlijke opslagplaatsen.
+- **Integratie** - nadat het leveringstype wordt geselecteerd, moeten de ondernemingen op integratiestructuur beslissen (waar de orden worden verzonden, waar de orden worden vervuld). De voorraad kan worden aangelegd vanuit een centraal entrepot of rechtstreeks vanuit afzonderlijke opslagplaatsen.
 
-- **Retourneert**—Retourneert kan complex zijn. De ondernemingen moeten een duidelijke strategie hebben om rendementen voor geleverde producten en producten te beheren die gebruikend klikken en worden bevolen te verzamelen. De ondernemingen moeten klanten toestaan om producten terug te keren die zij door te klikken en ontvangen om de klantendienst van begin tot eind te verlenen.
+- **Keert terug** - de terugkeer kan complex zijn. De ondernemingen moeten een duidelijke strategie hebben om rendementen voor geleverde producten en producten te beheren die gebruikend klikken en worden bevolen te verzamelen. De ondernemingen moeten klanten toestaan om producten terug te keren die zij door te klikken en ontvangen om de klantendienst van begin tot eind te verlenen.
 
 ## Aanbieding
 

@@ -18,7 +18,7 @@ Zelfs als prestatiesoptimalisering uit vele aspecten kan komen, zijn er sommige 
 
 >[!TIP]
 >
->Zie de [_Best practices voor prestaties_](../../../performance/overview.md) voor meer informatie over optimalisatie van prestaties.
+>Zie de [_Gids van Beste praktijken van Prestaties_](../../../performance/overview.md) voor meer informatie over prestatiesoptimalisering.
 
 ## Infrastructuur
 
@@ -58,15 +58,15 @@ N[Cores] = (N [Expected Requests] / 2) + N [Expected Cron Processes])
 
 Het optimaliseren van deze instellingen is afhankelijk van de resultaten van de prestatietest voor verschillende projecten.
 
-- **ByteCode**—Als u de maximale snelheid van Adobe Commerce wilt bereiken op PHP 7, moet u de `opcache` en het behoorlijk vormen.
+- **ByteCode** - om maximumsnelheid uit Adobe Commerce op PHP 7 te krijgen, moet u de `opcache` module activeren en het behoorlijk vormen.
 
-- **APCU**—Adobe raadt aan om de PHP APCu-extensie en de configuratie van Composer in te schakelen voor optimale prestaties. Deze extensie plaatst bestandslocaties voor geopende bestanden in cache, waardoor de prestaties van Adobe Commerce-serveraanroepen, zoals pagina&#39;s, Ajax-aanroepen en eindpunten, worden verhoogd.
+- **APCU** - Adobe adviseert toelatend de uitbreiding PHP APCu en het vormen Composer om voor maximumprestaties te optimaliseren. Deze extensie plaatst bestandslocaties voor geopende bestanden in cache, waardoor de prestaties van Adobe Commerce-serveraanroepen, zoals pagina&#39;s, Ajax-aanroepen en eindpunten, worden verhoogd.
 
-- **Realpath_cacheconfiguration**—Optimaliseren `realpath_cache` PHP kan paden naar bestanden in cache plaatsen in plaats van ze elke keer dat een pagina wordt geladen, op te zoeken.
+- **Realpath_cacheconfiguration** - het optimaliseren `realpath_cache` staat PHP processen toe om wegen aan dossiers in het voorgeheugen onder te brengen in plaats van hen te kijken telkens als een pagina laadt.
 
 ### Webserver
 
-Slechts is een lichte herconfiguratie nodig om nginx als Webserver te gebruiken. De nginx-webserver biedt betere prestaties en is eenvoudig te configureren met het voorbeeldconfiguratiebestand van Adobe Commerce ([`nginx.conf.sample`](https://github.com/magento/magento2/blob/2.4/nginx.conf.sample)).
+Slechts is een lichte herconfiguratie nodig om nginx als Webserver te gebruiken. De nginx Webserver verstrekt betere prestaties en is gemakkelijk te vormen gebruikend het dossier van de steekproefconfiguratie van Adobe Commerce ([`nginx.conf.sample` ](https://github.com/magento/magento2/blob/2.4/nginx.conf.sample)).
 
 - PHP-FPM correct instellen met TCP
 
@@ -80,7 +80,7 @@ Dit document bevat geen uitgebreide MySQL-afstemmingsinstructies omdat elke wink
 
 De Adobe Commerce-database (en elke andere database) is gevoelig voor de hoeveelheid geheugen die beschikbaar is voor het opslaan van gegevens en indexen. Om MySQL gegevensindexatie effectief te gebruiken, zou de beschikbare hoeveelheid geheugen, minstens, dicht aan de helft van de grootte van de gegevens moeten zijn die in het gegevensbestand worden opgeslagen.
 
-Optimaliseren `innodb_buffer_pool_instances` het plaatsen om kwesties met veelvoudige draden te vermijden die tot de zelfde instantie proberen toegang te hebben. De waarde van `max_connections` Deze parameter moet correleren met het totale aantal PHP threads dat is geconfigureerd in de toepassingsserver. Gebruik de volgende formule om de beste waarde te berekenen voor `innodb-thread-concurrency`:
+Optimaliseer `innodb_buffer_pool_instances` plaatsen om kwesties met veelvoudige draden te vermijden die tot de zelfde instantie proberen toegang te hebben. De waarde van de parameter `max_connections` moet correleren met het totale aantal PHP threads dat is geconfigureerd in de toepassingsserver. Gebruik de volgende formule om de beste waarde voor `innodb-thread-concurrency` te berekenen:
 
 ```
 innodb-thread-concurrency = 2 * (NumCPUs+NumDisks)
@@ -94,7 +94,7 @@ Redis moet voldoende geheugen hebben toegewezen om alle andere cache in het gehe
 
 ### Pagina in cache plaatsen
 
-Adobe raadt u ten zeerste aan Varnish te gebruiken voor het cachegeheugen van volledige pagina&#39;s in uw Adobe Commerce-winkel. De `PageCache` de module is nog steeds aanwezig in de codebase, maar mag alleen voor ontwikkelingsdoeleinden worden gebruikt.
+Adobe raadt u ten zeerste aan Varnish te gebruiken voor het cachegeheugen van volledige pagina&#39;s in uw Adobe Commerce-winkel. De module `PageCache` is nog steeds aanwezig in de codebase, maar moet alleen worden gebruikt voor ontwikkelingsdoeleinden.
 
 Varnish installeren op een aparte server vóór de weblaag. Het zou alle inkomende verzoeken moeten goedkeuren en in het voorgeheugen ondergebrachte paginaaKopieën verstrekken. Om Varnish toe te staan om effectief met beveiligde pagina&#39;s te werken, kan een SSL beëindigingsvolmacht vóór Varnish worden geplaatst. Nginx kan voor dit doel worden gebruikt.
 
@@ -102,7 +102,7 @@ Hoewel validatie van het volledige paginacachegeheugen van Varnish effectief is,
 
 ### Berichtenrijen
 
-Het Kader van de Rij van het Bericht (MQF) is een systeem dat een module toestaat om berichten aan rijen te publiceren. Het bepaalt ook de consumenten die de berichten asynchroon ontvangen. Adobe Commerce-ondersteuning [!DNL RabbitMQ] als overseinenmakelaar, die een scalable platform voor het verzenden van en het ontvangen van berichten verstrekt.
+Het Kader van de Rij van het Bericht (MQF) is een systeem dat een module toestaat om berichten aan rijen te publiceren. Het bepaalt ook de consumenten die de berichten asynchroon ontvangen. Adobe Commerce ondersteunt [!DNL RabbitMQ] als de berichtenmakelaar, die een schaalbaar platform biedt voor het verzenden en ontvangen van berichten.
 
 ### Prestatietests en -bewaking
 
@@ -122,11 +122,11 @@ Naast de eerder genoemde gemeenschappelijke aanbevelingen voor optimalisatie van
 
 ### Hoofdloze architectuur
 
-Er is een aparte sectie gewijd aan [krankzinnig](../../architecture/enterprise-blueprint.md#headless-storefront). Samengevat wordt de storefront-laag gescheiden van het platform zelf. Het is nog steeds dezelfde achtergrond, maar Adobe Commerce verwerkt aanvragen niet meer rechtstreeks en ondersteunt in plaats daarvan alleen aangepaste winkels via de GraphQL API.
+Er is een afzonderlijke sectie gewijd aan [ zonder kop ](../../architecture/enterprise-blueprint.md#headless-storefront). Samengevat wordt de storefront-laag gescheiden van het platform zelf. Het is nog steeds dezelfde achtergrond, maar Adobe Commerce verwerkt aanvragen niet meer rechtstreeks en ondersteunt in plaats daarvan alleen aangepaste winkels via de GraphQL API.
 
 ### Adobe Commerce bijwerken
 
-Adobe Commerce presteert altijd beter wanneer de nieuwste versie wordt uitgevoerd. Zelfs als het niet mogelijk is om Adobe Commerce up-to-date te houden nadat elke nieuwe versie is uitgebracht, wordt het nog steeds aanbevolen [upgrade](../../../upgrade/overview.md) als Adobe Commerce belangrijke prestatieoptimalisaties introduceert.
+Adobe Commerce presteert altijd beter wanneer de nieuwste versie wordt uitgevoerd. Zelfs als het niet mogelijk is om Adobe Commerce bijgewerkt te houden nadat elke nieuwe versie wordt vrijgegeven, wordt het nog geadviseerd om [ te bevorderen ](../../../upgrade/overview.md) wanneer Adobe Commerce significante prestatiesoptimalisaties introduceert.
 
 In 2020 heeft Adobe bijvoorbeeld een optimalisatie voor de Redis-laag uitgebracht, waardoor veel inefficiënties, verbindingsproblemen en onnodige gegevensoverdracht tussen Redis en Adobe Commerce zijn verholpen. De algehele prestaties tussen 2,3 en 2,4 zijn &#39;s nachts en &#39;s nachts en leverden aanzienlijke verbeteringen op in het winkelwagentje, de kassa en de gebruikers tegelijk, alleen vanwege de Redis-optimalisatie.
 

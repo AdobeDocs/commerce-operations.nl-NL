@@ -4,20 +4,20 @@ description: Gebruik de variabele MAGE_DIRS om een array van absolute paden in t
 exl-id: ee8e1a3a-f1d4-412c-8767-16447113f0cd
 source-git-commit: 95ffff39d82cc9027fa633dffedf15193040802d
 workflow-type: tm+mt
-source-wordcount: '129'
+source-wordcount: '116'
 ht-degree: 0%
 
 ---
 
 # Basismappaden
 
-De `MAGE_DIRS` Met een omgevingsvariabele kunt u aangepaste basismappaden en fragmenten van basis-URL&#39;s opgeven die door de toepassing Commerce worden gebruikt om absolute paden naar verschillende bestanden te maken of om URL&#39;s te genereren.
+Met de omgevingsvariabele `MAGE_DIRS` kunt u aangepaste basismappaden en fragmenten van basis-URL&#39;s opgeven die door de Commerce-toepassing worden gebruikt om absolute paden naar verschillende bestanden te maken of om URL&#39;s te genereren.
 
 ## MAGE_DIRS instellen
 
-Een associatieve array opgeven waarvan de sleutels constanten zijn [\\Magento\\App\\Filesystem\\DirectoryList][directory-list] en waarden zijn absolute paden van mappen of hun URL-paden.
+Specificeer een associatieve serie waar de sleutels constanten van [ \\Magento\\App\\Filesystem\\DirectoryList ][directory-list] zijn en de waarden zijn absolute wegen van folders of hun wegen URL, respectievelijk.
 
-U kunt instellen `MAGE_DIRS` op een van de volgende manieren:
+U kunt `MAGE_DIRS` op een van de volgende manieren instellen:
 
 - [De waarde van bootstrap-parameters instellen](../bootstrap/set-parameters.md)
 - Gebruik een aangepast script voor het ingangspunt, zoals:
@@ -48,7 +48,7 @@ U kunt instellen `MAGE_DIRS` op een van de volgende manieren:
   $bootstrap->run($app);
   ```
 
-In het voorgaande voorbeeld worden paden ingesteld voor `[cache]` en `[media]` mappen naar `/mnt/nfs/cache` en `/mnt/nfs/media`, respectievelijk.
+In het voorgaande voorbeeld worden paden voor `[cache]` - en `[media]` -mappen ingesteld op `/mnt/nfs/cache` respectievelijk `/mnt/nfs/media` .
 
 <!-- link definitions -->
 

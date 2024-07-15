@@ -6,7 +6,7 @@ feature: Best Practices
 exl-id: ada8b987-97ed-4232-9e1b-7e0a791a0807
 source-git-commit: 94d7a57dcd006251e8eefbdb4ec3a5e140bf43f9
 workflow-type: tm+mt
-source-wordcount: '210'
+source-wordcount: '197'
 ht-degree: 0%
 
 ---
@@ -17,7 +17,7 @@ Voor Adobe Commerce op implementaties van cloudinfrastructuren kunt u de respons
 
 ## Betrokken producten en versies
 
-[Alle ondersteunde versies](../../../release/versions.md) van:
+[ Alle gesteunde versies ](../../../release/versions.md) van:
 
 Adobe Commerce over cloudinfrastructuur
 
@@ -32,9 +32,9 @@ Voordat u afbeeldingen uploadt naar uw Commerce-sites, optimaliseert en comprime
 
 ## Snelle optimalisatie van afbeeldingen inschakelen en configureren
 
-Nadat u de snelservice voor uw Adobe Commerce Cloud-project hebt ingesteld, raadpleegt u [Snelle optimalisatie van afbeeldingen](https://devdocs.magento.com/cloud/cdn/fastly-image-optimization.html) voor instructies voor het inschakelen en configureren van optimalisatie van images.
+Nadat u opstelling de Snelle dienst voor uw project van Adobe Commerce Cloud, zie [ Snelle beeldoptimalisering ](https://devdocs.magento.com/cloud/cdn/fastly-image-optimization.html) voor instructies om beeldoptimalisering toe te laten en te vormen.
 
 ## Aanvullende informatie
 
-- [Snel instellen](https://devdocs.magento.com/cloud/cdn/configure-fastly.html)
-- [Slecht geoptimaliseerde afbeeldingen kunnen prestatieproblemen veroorzaken](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/file-storage-low-specific-page-loads-are-slow.html)
+- [ Opstelling snel ](https://devdocs.magento.com/cloud/cdn/configure-fastly.html)
+- [ slecht geoptimaliseerde beelden kunnen tot prestatieskwesties leiden ](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/file-storage-low-specific-page-loads-are-slow.html)

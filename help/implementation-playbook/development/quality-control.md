@@ -12,7 +12,7 @@ ht-degree: 0%
 
 # Kwaliteitscontroleproces en -instrumenten
 
-![Diagram kwaliteitscontroleproces](../../assets/playbooks/quality-control-diagram.svg)
+![ diagram van het het controleproces van de Kwaliteit ](../../assets/playbooks/quality-control-diagram.svg)
 
 Het kwaliteitscontroleproces in het vorige diagram kan als volgt kort worden beschreven.
 
@@ -77,7 +77,7 @@ Het kwaliteitscontroleproces in het vorige diagram kan als volgt kort worden bes
   <tr>
     <td></td>
     <td></td>
-    <td>Fouten posten voor het trackingsysteem voor fouten (Jira/Redmine/Trello)</td>
+    <td>Post bugs to bug Tracking system (Jira/Redmine/Trello)</td>
     <td>Prioriteit geven aan/plannen tests om zich aan te sluiten bij de projectplanning die door PM wordt bepaald</td>
   </tr>
   <tr>
@@ -143,7 +143,7 @@ Het kwaliteitscontroleproces in het vorige diagram kan als volgt kort worden bes
 </tbody>
 </table>
 
-Vergelijkbaar met de [gereedschappen](project-management-tools.md) wij hebben voor het ontwikkelingsproces een handvol gekozen oplossingen en platforms gekozen die wij vaak gebruiken voor het testen van de kwaliteitscontrole .
+Gelijkaardig aan de [ hulpmiddelen ](project-management-tools.md) wij identificeerden voor het ontwikkelingsproces, hebben wij een handvol keuzeoplossingen en platforms geselecteerd die wij vaak voor het testen van de kwaliteitscontrole gebruiken.
 
 | Doel | Gereedschap |
 |---------------------------|---------------------------------------------------|
@@ -181,7 +181,7 @@ BrowserStack is een testplatform voor cloud&#39;s en mobiele apparaten waarmee o
 
 Postman is het samenwerkingsplatform voor API-ontwikkeling. Postman vereenvoudigt elke stap voor het samenstellen van een API en stroomlijnt de samenwerking zodat u betere API&#39;s kunt maken.
 
-SoapUI is een open-source webservice testtoepassing voor Simple Object Access Protocol (SOAP) en overdracht van representationele status (REST). De functionaliteit ervan omvat webservicecontrole, het aanroepen, ontwikkelen, simuleren en rokken, functionele tests, belasting- en compatibiliteitstests.
+SoapUI is een open-source webservicetesttoepassing voor Simple Object Access Protocol (SOAP) en REST (Representational State Transfer). De functionaliteit ervan omvat webservicecontrole, het aanroepen, ontwikkelen, simuleren en rokken, functionele tests, belasting- en compatibiliteitstests.
 
 ## Automatiseringstests
 

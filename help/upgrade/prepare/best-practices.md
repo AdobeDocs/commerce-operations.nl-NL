@@ -24,11 +24,11 @@ Het is belangrijk om de variabelen te begrijpen die de ingewikkeldheid van een v
 
 De mate van moeite om uw Adobe Commerce-exemplaar te upgraden, is afhankelijk van de volgende factoren:
 
-- **Hoe hebt u uw site gemaakt?** De hoeveelheid douanewerk en het aantal geïnstalleerde derdemodules beïnvloeden sterk de ingewikkeldheid van een verbetering. De kwaliteit van het aangepaste werk en de aangepaste modules kan bepalen of een upgrade probleemloos wordt uitgevoerd.
+- **Hoe bouwde u uw plaats?** De hoeveelheid aangepast werk en het aantal geïnstalleerde modules van derden zijn van grote invloed op de complexiteit van een upgrade. De kwaliteit van het aangepaste werk en de aangepaste modules kan bepalen of een upgrade probleemloos wordt uitgevoerd.
 
-- **Slaat u meerdere releases over?** Door releases over te slaan wordt de volgende upgrade complexer en wordt het proces eenvoudiger en goedkoper.
+- **overslaat u veelvoudige versies?** Door releases over te slaan wordt de volgende upgrade complexer en eenvoudiger dan de daaropvolgende versies. Hierdoor verloopt het proces eenvoudiger en goedkoper.
 
-- **Welk type upgrade voert u uit?** Een upgrade naar een kleine release (bijvoorbeeld van 2.3.x naar 2.4.0) is uitgebreider dan een upgrade tussen patchreleases (bijvoorbeeld van 2.4.2 naar 2.4.3). Beveiligingsupdates zijn het eenvoudigste type dat u kunt implementeren.
+- **Welk type van verbetering presteert u?** Een upgrade naar een secundaire release (bijvoorbeeld van 2.3.x naar 2.4.0) is uitgebreider dan een upgrade tussen patchreleases (bijvoorbeeld van 2.4.2 naar 2.4.3). Beveiligingsupdates zijn het eenvoudigste type dat u kunt implementeren.
 
 ## Aanbevolen procedures voor het plannen van upgrades
 
@@ -42,26 +42,26 @@ Als uw project live is, raden we u aan een controle uit te voeren om de kwalitei
 
 Vanaf het moment dat u aan een project begint te werken, dient u te overwegen wat de gevolgen zullen zijn voor toekomstige upgrades van uw huidige werk. Volg altijd best practices voor Adobe Commerce-ontwikkeling zoals hier beschreven:
 
-- [Best practices voor ontwikkeling](https://developer.adobe.com/commerce/php/best-practices/)
-- [Codeerstandaarden](https://developer.adobe.com/commerce/php/coding-standards/)
+- [ Beste praktijken van de Ontwikkeling ](https://developer.adobe.com/commerce/php/best-practices/)
+- [ Coderingsnormen ](https://developer.adobe.com/commerce/php/coding-standards/)
 
 Begin met het aannemen van het Adobe Commerce Extenability Platform, als u dit nog niet hebt gedaan. Met het platform kunt u processen efficiënt aanpassen, systemen integreren en nieuwe mogelijkheden implementeren terwijl u SaaS-achtige upgradebaarheid behoudt. De volgende functies zijn beschikbaar:
 
-- **UI-uitbreidbaarheid**. Breid en evolueer uw storefront onafhankelijk van uw backend en middleware uit gebruikend [PWA Studio](https://developer.adobe.com/commerce/pwa-studio/).
+- **Uitbreidbaarheid UI**. Breid en evolueer uw storefront onafhankelijk van uw backend en middleware gebruikend [ PWA Studio ](https://developer.adobe.com/commerce/pwa-studio/) uit.
 
-- **API-uitbreidbaarheid**. Gebruiken [GraphQL](https://devdocs.magento.com/guides/v2.4/graphql/index.html) om Web API laag uit te breiden door het model van grafiekgegevens te evolueren en lambdafuncties direct van de grafieklaag uit te voeren.
+- **API Rekbaarheid**. Het gebruik [ GraphQL ](https://devdocs.magento.com/guides/v2.4/graphql/index.html) om Web API laag uit te breiden door het model van grafiekgegevens te evolueren en lambdafuncties direct van de grafieklaag uit te voeren.
 
-- **Adobe I/O middleware en diensten**. Sluit uw systemen aan op Adobe Commerce met behulp van de middleware van de Adobe en een reeks toepassingsverbindingen die op [Adobe I/O](https://www.adobe.io/). Bovendien kunt u de mogelijkheden van het kernplatform uitbreiden door het standaardgedrag met uw eigen bedrijfslogica te beschrijven die op Adobe I/O loopt.
+- **Adobe I/O middleware en de diensten**. Verbind uw systemen met Adobe Commerce gebruikend middleware van de Adobe en een reeks toepassingsverbindingen die op [ Adobe I/O ](https://www.adobe.io/) worden voortgebouwd. Bovendien kunt u de mogelijkheden van het kernplatform uitbreiden door het standaardgedrag met uw eigen bedrijfslogica te beschrijven die op Adobe I/O loopt.
 
 ### Upgrades plannen
 
 Aangezien wij de mogelijkheden van Adobe Commerce voortdurend uitbreiden, is het essentieel dat u zich op de recentste beschikbare versie ontwikkelt en een verbeteringsstrategie in uw projectplannen bepaalt. Dit helpt u veilig, volgzaam, en bijgewerkt op de recentste verhogingen blijven die u toestaan om verkoop sneller te groeien, effectiever te werken, en uw concurrentie nu en in de toekomst voor te blijven.
 
-Om u te helpen plannen en budgetteren voor upgrades, moet u onze [releaseplanning](https://devdocs.magento.com/release). De verbeteringstaken van het plan binnen de achterstand van uw team van tevoren. Doel om dit werk met GA te voltooien.
+Om u te helpen plannen en begroting voor verbeteringen, zou u ons [ versieschema ](https://devdocs.magento.com/release) moeten controleren. De verbeteringstaken van het plan binnen de achterstand van uw team van tevoren. Doel om dit werk met GA te voltooien.
 
 - Gebruik de pre-versieversie om over elke nieuwe versie te leren. De pre-versie is de Algemene code van de Beschikbaarheid die aan de verkopers van Adobe Commerce en alle partners twee weken vóór Algemene Beschikbaarheid beschikbaar is. Als u veelvoudige opslag hebt, gebruik pre-versie op uw basisopslag en verifieer dat uw douanemodules en thema&#39;s met het compatibel zijn.
 
-- Controleer de [Controlelijst voor upgradeplan](https://support.magento.com/hc/en-us/articles/360057968951) voor Adobe Commerce om u te helpen uw upgrade te plannen.
+- Herzie de [ checklist van het Plan van de Verbetering ](https://support.magento.com/hc/en-us/articles/360057968951) voor Adobe Commerce om u te helpen voor uw verbetering plannen.
 
 - Plan voor verbeteringen aan het begin van het jaar. U moet een budget en middelen boeken om elke verbetering te voltooien. Herinner me, zou de verbeteringsinspanning van project aan project beduidend kunnen variëren. Gebruik uw ervaringen en kennis om een plan zo accuraat mogelijk te maken.
 
@@ -73,16 +73,16 @@ Upgrades moeten regelmatig en binnen een vooraf bepaalde begroting plaatsvinden.
 
 Evalueer het werk dat moet worden gedaan voor de upgrade:
 
-- Controleer de [releaseopmerkingen](https://devdocs.magento.com/guides/v2.4/release-notes/bk-release-notes.html) inzicht te krijgen in de reikwijdte en de gevolgen van de nieuwe versie.
+- Herzie de [ versienota&#39;s ](https://devdocs.magento.com/guides/v2.4/release-notes/bk-release-notes.html) om het werkingsgebied en het effect van de nieuwe versie te begrijpen.
 
-- Gebruik de [[!DNL Upgrade Compatibility Tool]](../upgrade-compatibility-tool/overview.md) om potentiële problemen te identificeren die in uw douanecode moeten worden opgelost alvorens te proberen om aan een nieuwere versie te bevorderen.
+- Gebruik [[!DNL Upgrade Compatibility Tool]](../upgrade-compatibility-tool/overview.md) om potentiële problemen te identificeren die in uw douanecode moeten worden opgelost alvorens te proberen om aan een nieuwere versie te bevorderen.
 
 - Als u extensies van derden gebruikt, valideert u de compatibiliteit van deze extensies met de doelversie waarnaar u wilt upgraden.
 
 ### Post-upgrade testen
 
-Het testen is de fase van een verbetering die de meeste tijd vereist. Dit proces moet daarom zo geautomatiseerd mogelijk zijn. U kunt profiteren van de belangrijkste testgereedschappen. De [Testhandleiding voor toepassingen](https://developer.adobe.com/commerce/testing/guide/) bevat details.
+Het testen is de fase van een verbetering die de meeste tijd vereist. Dit proces moet daarom zo geautomatiseerd mogelijk zijn. U kunt profiteren van de belangrijkste testgereedschappen. De [ het Testen Gids van de Toepassing ](https://developer.adobe.com/commerce/testing/guide/) verstrekt details.
 
 Gebruik een testomgeving om de upgrade te testen en te valideren voordat u overschakelt naar de productie.
 
-Maak gebruik van een **onderhoudspagina**. Als u deze pagina vooraf voorbereidt, kunt u communiceren met uw klanten en hen op de hoogte stellen van het werk op de achtergrond. Deze pagina moet een paar minuten zichtbaar zijn, maar als er een probleem is, moet u deze mogelijk langer gebruiken. De juiste inhoud en het juiste ontwerp voor uw onderhoudspagina bieden uw gebruikers een goede ervaring, zelfs als uw winkel niet beschikbaar is.
+Maak gebruik van a **onderhoudspagina**. Als u deze pagina vooraf voorbereidt, kunt u communiceren met uw klanten en hen op de hoogte stellen van het werk op de achtergrond. Deze pagina moet een paar minuten zichtbaar zijn, maar als er een probleem is, moet u deze mogelijk langer gebruiken. De juiste inhoud en het juiste ontwerp voor uw onderhoudspagina bieden uw gebruikers een goede ervaring, zelfs als uw winkel niet beschikbaar is.

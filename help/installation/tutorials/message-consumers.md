@@ -11,7 +11,7 @@ ht-degree: 0%
 
 # Berichtconsumenten configureren
 
-Voordat u deze opdracht uitvoert, moet u het volgende doen: *of* u moet [de toepassing installeren](../advanced.md):
+Alvorens u dit bevel in werking stelt, moet u het volgende *doen of* u moet [ de toepassing ](../advanced.md) installeren:
 
 * [Implementatieconfiguratie maken of bijwerken](deployment.md)
 * [Het databaseschema maken](database.md)

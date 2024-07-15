@@ -1,10 +1,10 @@
 ---
-title: Onderhoud van handelsprojecten
+title: Commerce-projectonderhoud
 description: Vaststelling van hoge kwaliteitsnormen en vaststelling van mechanismen om deze normen in de loop der tijd te handhaven.
 exl-id: 8f394ae0-02c4-4efc-a313-40b8c48aecbb
 source-git-commit: e76f101df47116f7b246f21f0fe0fa72769d2776
 workflow-type: tm+mt
-source-wordcount: '709'
+source-wordcount: '712'
 ht-degree: 0%
 
 ---
@@ -29,17 +29,18 @@ Door te bevorderen, bent u toekomstbestendig uw zaken en het geven van de capaci
 
 Hier volgt een korte lijst met vragen die u moet stellen wanneer u de upgrade wilt uitvoeren:
 
-- **Site opschonen**—Wat kan ik behouden en wat kan veranderen? Welke nieuwe dingen wil ik implementeren? Bijvoorbeeld, welke veranderingen wil ik in taxonomie en productstructuur, of veranderingen in inhoud aanbrengen?
+- **Schoonmaak van de Plaats** - wat kan ik houden en wat kan veranderen? Welke nieuwe dingen wil ik implementeren? Bijvoorbeeld, welke veranderingen wil ik in taxonomie en productstructuur, of veranderingen in inhoud aanbrengen?
 
-- **Analysecontrole**—Wat zijn mijn huidige KPIs? Wat vertellen mijn gegevens mij over hoe mijn site verbeterd kan worden? Zijn er nieuwe KPIs die ik voor mijn nieuwe plaats uitgevoerd wil?
+- **de controle van Analytics** - wat zijn mijn huidige KPIs? Wat vertellen mijn gegevens mij over hoe mijn site verbeterd kan worden? Zijn er nieuwe KPIs die ik voor mijn nieuwe plaats uitgevoerd wil?
 
-- **Extensies**—Heb ik ze nog steeds nodig? Welke uitbreidingen van derden dekken mijn behoeften?
+- **Uitbreidingen** - heb ik nog hen nodig? Welke uitbreidingen van derden dekken mijn behoeften?
 
-- **Integraties**—Met welke systemen van derden, zoals ERP en boekhouding, moet ik integreren? Hebben zij specifieke schakelaars of zijn douaneintegratie nodig?
+- **Integraties** - welke derdesystemen, zoals ERP en boekhouding, moet ik integreren met? Hebben zij specifieke schakelaars of zijn douaneintegratie nodig?
 
-- **Training**—Beschikt het verbeteringsteam over de juiste kennis en opleiding? Wat is mijn plan om eindgebruikers op te leiden hoe te om nieuwe admin te gebruiken alvorens het live gaat?
+- **Opleiding** - heeft het verbeteringsteam de juiste kennis en de opleiding? Wat is
+mijn plan om eindgebruikers op te leiden hoe ze de nieuwe beheerder kunnen gebruiken voordat deze live gaat ?
 
-- **Upgradeteam**—Wie is gewijd aan het verbeteringsproject (zowel interne als externe deskundigen)? Hebben zij de nodige steun van leiders en andere interne teams?
+- **het team van de Verbetering** - Who wordt gewijd aan het verbeteringsproject (zowel interne als externe deskundigen)? Hebben zij de nodige steun van leiders en andere interne teams?
 
 ## Algemene upgradevragen
 
@@ -50,7 +51,7 @@ A: Het hangt af van het platform en de architectuur. Er zijn veel variabelen, en
 
 V: Hoeveel kost een upgrade?
 
-A: Ook hier is het afhankelijk van uw huidige situatie en uw vereisten voor uw nieuwe site. Het goede nieuws is dat de partners en de ontwikkelaars over het algemeen vertrouwd en met uw platform van de Handel zijn geworden, verbeteringskosten en projectlengten zijn gedaald. Wij adviseren het raadplegen met uw Partner van de Oplossing voor een schatting.
+A: Ook hier is het afhankelijk van uw huidige situatie en uw vereisten voor uw nieuwe site. Het goede nieuws is dat, nu partners en ontwikkelaars vertrouwd zijn geraakt en met uw Commerce-platform kunnen samenwerken, de upgrades en de projecten minder lang duren. Wij adviseren het raadplegen met uw Partner van de Oplossing voor een schatting.
 
 V: Zijn Adobe Commerce 2 versies van mijn Adobe Commerce 1 extensies beschikbaar?
 

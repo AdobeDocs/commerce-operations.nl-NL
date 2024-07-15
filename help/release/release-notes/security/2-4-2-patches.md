@@ -18,8 +18,8 @@ ht-degree: 0%
 
 De veiligheidsversie van Adobe Commerce 2.4.2-p2 verstrekt veiligheidsinsectenmoeilijke situaties voor kwetsbaarheid die in vorige versies van 2.4.2 zijn geïdentificeerd.
 
-Voor de recentste informatie over de veiligheidsinsectenmoeilijke situaties, zie [Beveiligingsbulletin APSB21-64 van de Adobe](https://helpx.adobe.com/security/products/magento/apsb21-64.html).
+Voor de recentste informatie over de veiligheidsinsectenmoeilijke situaties, zie {het Bulletin van de Veiligheid van de Adobe APSB21-64 ](https://helpx.adobe.com/security/products/magento/apsb21-64.html).[
 
-## Toepassen `AC-3022.patch` DHL blijft aanbieden als scheepvaartmaatschappij
+## Toepassen op `AC-3022.patch` om DHL als scheepvaartmaatschappij te blijven aanbieden
 
-DHL heeft schemaversie 6.2 geïntroduceerd en zal schemaversie 6.0 in de nabije toekomst verwerpen. Adobe Commerce 2.4.4 en eerdere versies die de integratie van DHL steunen slechts versie 6.0. Merchants die deze versies opstellen zouden moeten toepassen `AC-3022.patch` zo snel mogelijk DHL als scheepvaartmaatschappij aan te bieden. Zie de [Een patch toepassen om DHL als scheepvaartmaatschappij te blijven aanbieden](https://support.magento.com/hc/en-us/articles/7707818131597-Apply-a-patch-to-continue-offering-DHL-as-shipping-carrier) Het artikel van de Kennisbank voor informatie over het downloaden en het installeren van de flard.
+DHL heeft schemaversie 6.2 geïntroduceerd en zal schemaversie 6.0 in de nabije toekomst verwerpen. Adobe Commerce 2.4.4 en eerdere versies die de integratie van DHL steunen slechts versie 6.0. Handelaren die deze releases implementeren, moeten `AC-3022.patch` zo snel mogelijk toepassen om DHL als scheepvaartmaatschappij te blijven aanbieden. Zie [ een flard toepassen om DHL als het verschepen drager ](https://support.magento.com/hc/en-us/articles/7707818131597-Apply-a-patch-to-continue-offering-DHL-as-shipping-carrier) artikel van de Kennisbank voor informatie over het downloaden en het installeren van het flard te blijven aanbieden.

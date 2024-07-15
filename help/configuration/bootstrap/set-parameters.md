@@ -1,17 +1,17 @@
 ---
 title: De waarde van bootstrap-parameters instellen
-description: Leer hoe te om laarzentrekkerparameters voor de toepassing van de Handel te plaatsen.
+description: Leer hoe u opstartparameters instelt voor de Commerce-toepassing.
 exl-id: 4e1e4e5e-e1bc-49a5-8a2a-2e6b91ca9175
 source-git-commit: 95ffff39d82cc9027fa633dffedf15193040802d
 workflow-type: tm+mt
-source-wordcount: '594'
+source-wordcount: '568'
 ht-degree: 1%
 
 ---
 
 # Parameters Bootstrap
 
-Dit onderwerp toont aan hoe te om de waarden van de toepassings laarzentrekkerparameters van de Handel te plaatsen. Zie [Overzicht van initialisatie en bootstrapping van toepassingen](initialization.md).
+Dit onderwerp toont aan hoe te om de waarden van de parameters van de toepassingslaarzentrekker van Commerce te plaatsen. Zie [ Overzicht van toepassingsinitialisatie en bootstrapping ](initialization.md).
 
 De volgende lijst bespreekt de laarzentrekkerparameters die u kunt plaatsen:
 
@@ -23,7 +23,7 @@ De volgende lijst bespreekt de laarzentrekkerparameters die u kunt plaatsen:
 >[!INFO]
 >
 >- Niet alle laarzentrekkerparameters worden gedocumenteerd.
->- U stelt nu de toepassingsmodus (ontwikkelaar, standaard, productie) in met de opdracht [`magento deploy:mode:set {mode}`](../cli/set-mode.md) gebruiken.
+>- U kunt nu de toepassingsmodus (ontwikkelaar, standaard, productie) instellen met de opdracht [`magento deploy:mode:set {mode}`](../cli/set-mode.md) .
 
 ## Parameters instellen met een omgevingsvariabele
 
@@ -33,13 +33,13 @@ In deze sectie wordt beschreven hoe u de waarden van bootstrap-parameters instel
 
 U kunt bootstrap-variabelen opgeven als systeembrede omgevingsvariabelen, zodat alle processen deze kunnen gebruiken.
 
-U kunt bijvoorbeeld de opdracht `MAGE_PROFILER` systeemomgevingsvariabele om een modus als volgt op te geven:
+U kunt bijvoorbeeld de systeemomgevingsvariabele `MAGE_PROFILER` als volgt gebruiken om een modus op te geven:
 
 ```terminal
 MAGE_PROFILER={firebug|csv|<custom value>}
 ```
 
-Stel de variabele in met behulp van een shell-specifieke opdracht. Omdat de syntaxis van schelpen verschilt, raadpleegt u een referentie zoals [unix.stackexchange.com][unix-stackx].
+Stel de variabele in met behulp van een shell-specifieke opdracht. Omdat de cellen verschillende syntaxis hebben, raadpleeg een verwijzing als [ unix.stackexchange.com ][unix-stackx].
 
 Bash shell voorbeeld voor CentOS:
 
@@ -49,7 +49,7 @@ export MAGE_PROFILER=firebug
 
 >[!INFO]
 >
->Indien een `PHP Fatal error` wordt weergegeven in de browser nadat u een profilerwaarde hebt ingesteld en de webserver opnieuw hebt gestart. De reden kan gerelateerd zijn aan het in cache plaatsen van PHP bytecode, waardoor bytecodes en PHP klassenpaden in cache worden geplaatst.
+>Als een `PHP Fatal error` in de browser wordt weergegeven nadat u een waarde voor de analyse hebt ingesteld, start u de webserver opnieuw. De reden kan gerelateerd zijn aan het in cache plaatsen van PHP bytecode, waardoor bytecodes en PHP klassenpaden in cache worden geplaatst.
 
 ## Parameters instellen voor Apache of Nginx
 
@@ -57,28 +57,28 @@ In deze sectie wordt besproken hoe u de modus voor Apache of Nginx kunt opgeven.
 
 ### Nginx-instelling
 
-Zie de [Nginx-voorbeeldconfiguratie] op _GitHub_.
+Zie de [ Nginx steekproefconfiguratie ] op _GitHub_.
 
 ### Instelling Apache.htaccess
 
-U kunt de toepassingsmodus onder andere instellen door te bewerken `.htaccess`. Op deze manier hoeft u de Apache-instellingen niet te wijzigen.
+U kunt de toepassingsmodus bijvoorbeeld instellen door `.htaccess` te bewerken. Op deze manier hoeft u de Apache-instellingen niet te wijzigen.
 
-U kunt `.htaccess` in om het even welke volgende plaatsen, afhankelijk van uw ingangspunt aan de toepassing van de Handel:
+U kunt `.htaccess` op elk van de volgende locaties wijzigen, afhankelijk van het toegangspunt tot de Commerce-toepassing:
 
 - `<magento_root>/.htaccess`
 - `<magento_root>/pub/.htaccess`
 
-**Een variabele instellen**:
+**om een variabele** te plaatsen:
 
 1. Open de voorgaande bestanden in een teksteditor en voeg de gewenste instelling toe of verwijder de commentaarmarkering.
 
-   Als u bijvoorbeeld een [mode](application-modes.md)Verwijder de commentaarmarkering uit:
+   Bijvoorbeeld, om a [ wijze ](application-modes.md) te specificeren, verwijder commentaar het volgende:
 
    ```conf
    #   SetEnv MAGE_PROFILER firebug
    ```
 
-1. Stel de waarde in van `MAGE_PROFILER` op een van de volgende wijzen:
+1. Stel de waarde van `MAGE_PROFILER` in op een van de volgende opties:
 
    ```terminal
    firebug
@@ -86,25 +86,25 @@ U kunt `.htaccess` in om het even welke volgende plaatsen, afhankelijk van uw in
    <custom value>
    ```
 
-1. Sla uw wijzigingen op in `.htaccess`; u hoeft Apache niet opnieuw te starten om de wijziging van kracht te laten worden.
+1. Sla uw wijzigingen in `.htaccess` op. U hoeft Apache niet opnieuw te starten om de wijziging van kracht te laten worden.
 
 ### Apache-instelling
 
-De Apache-webserver ondersteunt het instellen van de toepassingsmodus met `mod_env` richtlijnen.
+De Apache-webserver ondersteunt het instellen van de toepassingsmodus met `mod_env` -instructies.
 
-De Apache `mod_env` richtlijn verschilt enigszins in [Apache versie 2.2] en [Apache versie 2.4].
+De Apache `mod_env` richtlijn is lichtjes verschillend in [ Apache versie 2.2 ] en [ Apache versie 2.4 ].
 
-De volgende procedures tonen hoe u de toepassingsmodus instelt in een virtuele Apache-host. Dit is niet de enige manier om te gebruiken `mod_env` richtlijnen; raadpleeg de documentatie van Apache voor meer informatie.
+De volgende procedures tonen hoe u de toepassingsmodus instelt in een virtuele Apache-host. Dit is niet de enige manier om `mod_env` richtlijnen te gebruiken; raadpleeg de documentatie van Apache voor details.
 
 >[!TIP]
 >
->In de volgende sectie wordt ervan uitgegaan dat u uw virtuele host al hebt ingesteld. Als u dat niet hebt gedaan, raadpleegt u een bron zoals [deze DigitalOcean-zelfstudie](https://www.digitalocean.com/community/tutorials/how-to-set-up-apache-virtual-hosts-on-ubuntu-14-04-lts).
+>In de volgende sectie wordt ervan uitgegaan dat u uw virtuele host al hebt ingesteld. Als u niet hebt, raadpleeg een middel zoals [ dit leerprogramma DigitalOcean ](https://www.digitalocean.com/community/tutorials/how-to-set-up-apache-virtual-hosts-on-ubuntu-14-04-lts).
 
-**Een bootstrap-variabele opgeven voor Apache op Ubuntu**:
+**om een bootstrap variabele voor Apache op Ubuntu** te specificeren:
 
 1. Als gebruiker met `root` voorrechten, open uw virtueel dossier van de gastheerconfiguratie in een tekstredacteur.
 
-   Als uw virtuele host bijvoorbeeld een naam heeft `my.magento`,
+   Als uw virtuele host bijvoorbeeld de naam `my.magento` heeft,
 
    - Apache 2.4: `vim /etc/apache2/sites-available/my.magento.conf`
    - Apache 2.2: `vim /etc/apache2/sites-available/my.magento`
@@ -141,11 +141,11 @@ De volgende procedures tonen hoe u de toepassingsmodus instelt in een virtuele A
 
 >[!TIP]
 >
->In deze sectie wordt ervan uitgegaan dat u al een virtuele host hebt ingesteld. Als u dat niet hebt gedaan, raadpleegt u een bron zoals [deze DigitalOcean-zelfstudie](https://www.digitalocean.com/community/tutorials/how-to-set-up-apache-virtual-hosts-on-centos-6).
+>In deze sectie wordt ervan uitgegaan dat u al een virtuele host hebt ingesteld. Als u niet hebt, raadpleeg een middel zoals [ dit leerprogramma DigitalOcean ](https://www.digitalocean.com/community/tutorials/how-to-set-up-apache-virtual-hosts-on-centos-6).
 
-**Een bootstrap-variabele opgeven voor Apache op CentOS**:
+**om een bootstrap variabele voor Apache op CentOS** te specificeren:
 
-1. Als gebruiker met `root` rechten, openen `/etc/httpd/conf/httpd.conf` in een teksteditor.
+1. Als gebruiker met `root` rechten, opent u `/etc/httpd/conf/httpd.conf` in een teksteditor.
 
 1. Voeg overal in de virtuele gastheerconfiguratie de volgende lijn toe:
 

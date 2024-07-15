@@ -5,7 +5,7 @@ feature: Configuration, Storage
 exl-id: 43cab98a-5b68-492e-b891-8db4cc99184e
 source-git-commit: af45ac46afffeef5cd613628b2a98864fd7da69b
 workflow-type: tm+mt
-source-wordcount: '260'
+source-wordcount: '257'
 ht-degree: 0%
 
 ---
@@ -14,8 +14,8 @@ ht-degree: 0%
 
 In dit onderwerp wordt besproken hoe u kunt bepalen waar uw sessiebestanden worden opgeslagen. Het systeem gebruikt de volgende logica om zittingsdossiers op te slaan:
 
-- Als u in het geheugen opgeslagen informatie hebt geconfigureerd, worden de sessies opgeslagen in het RAM-geheugen; zie [In cache geplaatste bestanden voor sessieopslag gebruiken](memcached.md).
-- Als u Redis hebt geconfigureerd, worden de sessies opgeslagen op de Redis-server; zie [Redis gebruiken voor sessieopslag](../cache/redis-session.md).
+- Als u in het geheugen ondergebracht gevormde, de zittingen in RAM worden opgeslagen; zie [ Gebruik in het geheugen ondergebracht voor zittingsopslag ](memcached.md).
+- Als u Redis vormde, worden de zittingen opgeslagen op de Redis server; zie [ Redis van het Gebruik voor zittingsopslag ](../cache/redis-session.md).
 - Als u de standaard op een bestand gebaseerde sessieopslag gebruikt, slaan we sessies op de volgende locaties op in de weergegeven volgorde:
 
    1. Map gedefinieerd in [`env.php`](#example-in-envphp)
@@ -24,7 +24,7 @@ In dit onderwerp wordt besproken hoe u kunt bepalen waar uw sessiebestanden word
 
 ## Voorbeeld in `env.php`
 
-Een voorbeeldfragment uit `<magento_root>/app/etc/env.php` volgt:
+Hieronder volgt een voorbeeldfragment uit `<magento_root>/app/etc/env.php` :
 
 ```php
  'session' => [
@@ -37,21 +37,21 @@ In het voorgaande voorbeeld worden sessiebestanden opgeslagen in `/var/www/sessi
 
 ## Voorbeeld in `php.ini`
 
-Als gebruiker met `root` rechten, opent u uw `php.ini` en zoek naar de waarde van `session.save_path`. Hiermee geeft u aan waar de sessies worden opgeslagen.
+Als gebruiker met `root` rechten opent u het `php.ini` -bestand en zoekt u naar de waarde van `session.save_path` . Hiermee geeft u aan waar de sessies worden opgeslagen.
 
 ## Sessiegrootte beheren
 
-Zie de [Sessiebeheer](https://docs.magento.com/user-guide/stores/security-session-management.html) in de _Gebruikershandleiding_.
+Zie het [ beheer van de Zitting ](https://docs.magento.com/user-guide/stores/security-session-management.html) in de _gids van de Gebruiker_.
 
 ## Configuratie van afvalophaling
 
-Om verlopen zittingen op te schonen, roept het systeem `gc` (_opschonen_) op willekeurige wijze afhandelen op basis van een waarschijnlijkheid die wordt berekend door de `gc_probability / gc_divisor` richtlijn. Als u deze richtlijnen bijvoorbeeld instelt op `1/100` wordt verstaan onder: `1%` (_waarschijnlijkheid van één vraag van huisvuilinzameling per 100 verzoeken_).
+Om verlopen zittingen schoon te maken, roept het systeem de `gc` (_huisvuilinzameling_) manager willekeurig volgens een waarschijnlijkheid die door de `gc_probability / gc_divisor` richtlijn wordt berekend. Bijvoorbeeld, als u deze richtlijnen aan `1/100` respectievelijk plaatst, betekent het een waarschijnlijkheid van `1%` (_waarschijnlijkheid van één vraag van huisvuilinzameling per 100 verzoeken_).
 
-De handler voor de afvalophaling gebruikt de optie `gc_maxlifetime` compilerinstructie—het aantal seconden waarna de sessies worden gezien als _vuilnis_ en mogelijk opgeruimd.
+De manager van de huisvuilinzameling gebruikt `gc_maxlifetime` richtlijn-het aantal seconden waarna de zittingen als _huisvuil_ worden gezien en potentieel omhoog schoongemaakt.
 
-Bij sommige besturingssystemen (Debian/Ubuntu) is de standaardwaarde `session.gc_probability` richtlijn `0`, waardoor de handler voor afvalophaling niet kan worden uitgevoerd.
+Op sommige besturingssystemen (Debian/Ubuntu) is de standaard `session.gc_probability` instructie `0` , die voorkomt dat de handler voor afvalophaling wordt uitgevoerd.
 
-U kunt de `session.gc_` richtlijnen van de `php.ini` in het `<magento_root>/app/etc/env.php` bestand:
+U kunt de instructies `session.gc_` uit het `php.ini` -bestand in het `<magento_root>/app/etc/env.php` -bestand overschrijven:
 
 ```php
  'session' => [

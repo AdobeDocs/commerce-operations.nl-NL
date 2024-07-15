@@ -18,9 +18,9 @@ Hoewel u niet alle veiligheidsrisico&#39;s kunt elimineren, verhardt het toepass
 
 >[!NOTE]
 >
->Voor informatie over de rollen en verantwoordelijkheden voor het beveiligen en onderhouden van Adobe Commerce-projecten op het gebied van cloudinfrastructuur raadpleegt u [Model voor gedeelde verantwoordelijkheid](https://experienceleague.adobe.com/en/docs/commerce-operations/security-and-compliance/shared-responsibility#security-responsibilities-chart)) in de _Adobe Commerce-handleiding voor beveiliging en naleving_.
+>Voor informatie over de rollen en de verantwoordelijkheden om de projecten van Adobe Commerce op wolkeninfrastructuur te beveiligen en te handhaven, zie [ Gedeeld Verantwoordelijkheidsmodel ](https://experienceleague.adobe.com/en/docs/commerce-operations/security-and-compliance/shared-responsibility#security-responsibilities-chart)) in de _Gids van de Veiligheid en van de Naleving van Adobe Commerce_.
 
-[Alle ondersteunde versies](../../../release/versions.md) van:
+[ Alle gesteunde versies ](../../../release/versions.md) van:
 
 - Adobe Commerce over cloudinfrastructuur
 - Adobe Commerce ter plaatse
@@ -29,45 +29,45 @@ Hoewel u niet alle veiligheidsrisico&#39;s kunt elimineren, verhardt het toepass
 
 Adobe beschouwt de volgende aanbevelingen als van de hoogste prioriteit voor alle klanten. Implementeer deze belangrijke best practices voor beveiliging in alle Commerce-implementaties:
 
-![Checklist](/help/assets/icons/Smock_CheckmarkCircleOutline_18_N.svg) **Twee-factor verificatie inschakelen voor uw Admin en alle SSH-verbindingen**
+![ Checklist ](/help/assets/icons/Smock_CheckmarkCircleOutline_18_N.svg) **laat twee-factor authentificatie voor uw Admin en alle verbindingen van SSH** toe
 
-- [Beveiliging voor Commerce Admin](https://experienceleague.adobe.com/docs/commerce-admin/systems/security/2fa/security-two-factor-authentication.html)
+- [ Veiligheid voor Admin van Commerce ](https://experienceleague.adobe.com/docs/commerce-admin/systems/security/2fa/security-two-factor-authentication.html)
 
-- [Beveiligde SSH-verbindingen](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/project/multi-factor-authentication.html) (cloudinfrastructuur)
+- [ Veilige verbindingen SSH ](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/project/multi-factor-authentication.html) (wolkeninfrastructuur)
 
 Wanneer MFA op een project wordt toegelaten, moet alle Adobe Commerce op de rekeningen van de wolkeninfrastructuur met de toegang van SSH een authentificatiewerkschema volgen. Voor deze workflow is een tweevoudige verificatie (2FA)-code of een API-token en SSH-certificaat vereist om toegang te krijgen tot de omgeving.
 
-![Checklist](/help/assets/icons/Smock_CheckmarkCircleOutline_18_N.svg) **De beheerder beveiligen**
+![ Checklist ](/help/assets/icons/Smock_CheckmarkCircleOutline_18_N.svg) **Beveilig Admin**
 
-- [Een niet-standaard beheer-URL configureren](https://experienceleague.adobe.com/docs/commerce-admin/stores-sales/site-store/store-urls.html#use-a-custom-admin-url) in plaats van de standaardinstelling `admin` of een gemeenschappelijke term zoals `backend`. Deze configuratie beperkt de blootstelling aan manuscripten die proberen om onbevoegde toegang tot uw plaats te krijgen.
+- [ vorm een niet-gebrek admin URL ](https://experienceleague.adobe.com/docs/commerce-admin/stores-sales/site-store/store-urls.html#use-a-custom-admin-url) in plaats van het gebruiken van het gebrek `admin` of een gemeenschappelijke termijn zoals `backend`. Deze configuratie beperkt de blootstelling aan manuscripten die proberen om onbevoegde toegang tot uw plaats te krijgen.
 
-- [Geavanceerde beveiligingsinstellingen configureren](https://experienceleague.adobe.com/docs/commerce-admin/systems/security/security-admin.html)—Voeg een geheime sleutel aan URLs toe, vereist wachtwoorden om case-sensitive te zijn, en beperk de zittingslengte Admin, het interval van het wachtwoordleven, en het aantal login pogingen toegestaan alvorens een Admin gebruikersrekening te sluiten. Voor verhoogde veiligheid, vorm de lengte van toetsenbordinactiviteit alvorens de huidige zitting verloopt, en vereist de gebruikersbenaming en het wachtwoord om case-sensitive te zijn.
+- [ vorm Geavanceerde veiligheidsmontages ](https://experienceleague.adobe.com/docs/commerce-admin/systems/security/security-admin.html) - voeg een geheime sleutel aan URLs toe, vereisen wachtwoorden om case-sensitive te zijn, en grens de zittingslengte van Admin, het interval van het wachtwoordleven, en het aantal login toegestane pogingen alvorens een Admin gebruikersrekening te sluiten. Voor verhoogde veiligheid, vorm de lengte van toetsenbordinactiviteit alvorens de huidige zitting verloopt, en vereist de gebruikersbenaming en het wachtwoord om case-sensitive te zijn.
 
-- [ReCAPTCHA inschakelen](https://experienceleague.adobe.com/docs/commerce-admin/systems/security/captcha/security-google-recaptcha.html) om de Admin te beschermen tegen geautomatiseerde aanvallen van bloedvergieten.
+- [ laat ReCAPTCHA ](https://experienceleague.adobe.com/docs/commerce-admin/systems/security/captcha/security-google-recaptcha.html) toe om Admin tegen geautomatiseerde brutekrachtaanvallen te beschermen.
 
-- Volg het beginsel van minst voorrecht wanneer het toewijzen [Beheerdersmachtigingen](https://experienceleague.adobe.com/docs/commerce-admin/systems/user-accounts/permissions.html) aan rollen en rollen aan Admin gebruikersrekeningen.
+- Volg het beginsel van minste voorrecht wanneer het toewijzen van [ toestemmingen Admin ](https://experienceleague.adobe.com/docs/commerce-admin/systems/user-accounts/permissions.html) aan rollen en rollen aan Admin gebruikersrekeningen.
 
-![Checklist](/help/assets/icons/Smock_CheckmarkCircleOutline_18_N.svg) **Upgrade naar de nieuwste versie van Adobe Commerce**
+![ Checklist ](/help/assets/icons/Smock_CheckmarkCircleOutline_18_N.svg) **Verbetering aan de recentste versie van Adobe Commerce**
 
-Uw code laten bijwerken door [Commerce-project upgraden naar de nieuwste release](#upgrade-to-the-latest-release) van Adobe Commerce, Commerce Services en extensies, waaronder beveiligingspatches, hotfixes en andere patches die door Adobe worden geleverd.
+Houd uw code die door [ wordt bijgewerkt bevordert uw project van Commerce aan de recentste versie ](#upgrade-to-the-latest-release) van Adobe Commerce, de Diensten van Commerce, en uitbreidingen, met inbegrip van veiligheidspatches, hotfixes, en andere die flarden door Adobe worden verstrekt.
 
-![Checklist](/help/assets/icons/Smock_CheckmarkCircleOutline_18_N.svg) **Beveilig gevoelige configuratiewaarden**
+![ Checklist ](/help/assets/icons/Smock_CheckmarkCircleOutline_18_N.svg) **Veilige gevoelige configuratiewaarden**
 
-Gebruiken [configuratiebeheer](../../../configuration/cli/set-configuration-values.md) om kritieke configuratiewaarden te sluiten.
+Gebruik [ configuratiebeheer ](../../../configuration/cli/set-configuration-values.md) om kritieke configuratiewaarden te sluiten.
 
-De `lock config` en `lock env` CLI-opdrachten configureren omgevingsvariabelen om te voorkomen dat deze worden bijgewerkt via de Admin. De opdracht schrijft de waarde naar de `<Commerce base dir>/app/etc/env.php` bestand. (Voor Commerce over infrastructuurprojecten in de cloud gaat u naar [Beheer van winkelconfiguratie](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure-store/store-settings.html#sensitive-data).)
+Met de opdrachten `lock config` en `lock env` CLI worden omgevingsvariabelen geconfigureerd om te voorkomen dat deze worden bijgewerkt via de beheerfunctie. De opdracht schrijft de waarde naar het `<Commerce base dir>/app/etc/env.php` -bestand. (Voor Commerce op de projecten van de wolkeninfrastructuur, zie [ het Beheer van de Configuratie van de Opslag ](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure-store/store-settings.html#sensitive-data).)
 
-![Checklist](/help/assets/icons/Smock_CheckmarkCircleOutline_18_N.svg) **Beveiligingsscans uitvoeren**
+![ Checklist ](/help/assets/icons/Smock_CheckmarkCircleOutline_18_N.svg) **de veiligheidsscans van de Looppas**
 
-Gebruik de [Commerce Security Scan-service](https://experienceleague.adobe.com/docs/commerce-admin/systems/security/security-scan.html) om alle Adobe Commerce-sites te controleren op bekende beveiligingsrisico&#39;s en malware en u aan te melden voor patchupdates en beveiligingsmeldingen.
+Gebruik de [ dienst van het Scannen van de Veiligheid van Commerce ](https://experienceleague.adobe.com/docs/commerce-admin/systems/security/security-scan.html) om alle plaatsen van Adobe Commerce voor bekende veiligheidsrisico&#39;s en malware te controleren, en zich aan te melden om flardupdates en veiligheidsberichten te ontvangen.
 
 ## Beveiliging van extensies en aangepaste code
 
 Wanneer u Adobe Commerce uitbreidt door extensies van derden toe te voegen vanuit de Adobe Commerce Marketplace of door aangepaste code toe te voegen, dient u de beveiliging van deze aanpassingen te garanderen door de volgende aanbevolen procedures toe te passen:
 
-![Checklist](/help/assets/icons/Smock_CheckmarkCircleOutline_18_N.svg) **Kies een partner of oplossingsintegrator (SI) goed verdraaid in veiligheid**—Zorgen voor veilige integratie en veilige levering van aangepaste code door organisaties te selecteren die veilige ontwikkelingspraktijken volgen en een solide staat van dienst hebben bij het voorkomen en aanpakken van beveiligingsproblemen.
+![ Checklist ](/help/assets/icons/Smock_CheckmarkCircleOutline_18_N.svg) **kies een partner of oplossingsintegrator (SI) goed in veiligheid** wordt overgestoken - verzeker veilige integratie en veilige levering van douanecode door organisaties te selecteren die veilige ontwikkelingspraktijken volgen en een stevig spoorverslag hebben van het verhinderen van en het richten van veiligheidskwesties.
 
-![Checklist](/help/assets/icons/Smock_CheckmarkCircleOutline_18_N.svg) **Beveiligde extensies gebruiken**—Identificeer de meest aangewezen en veilige uitbreidingen voor de plaatsingen van Commerce door met uw oplossingsintegrator of ontwikkelaar en volgende te overleggen [Aanbevolen werkwijzen voor extensies voor Adoben](../planning/extensions.md).
+![ Checklist ](/help/assets/icons/Smock_CheckmarkCircleOutline_18_N.svg) **Gebruik veilige uitbreidingen** - identificeer de meest aangewezen en veilige uitbreidingen voor de plaatsingen van Commerce door met uw oplossingsintegrator of ontwikkelaar en volgende [ beste praktijken van de Uitbreidingen van de Adobe te raadplegen ](../planning/extensions.md).
 
 - Alleen bronextensies van de Adobe Commerce Marketplace of via de integrator van de oplossing. Als de extensie via een integrator wordt aangeschaft, moet u ervoor zorgen dat de eigendom van de extensievergunning overdraagbaar is, voor het geval de integrator verandert.
 
@@ -75,9 +75,9 @@ Wanneer u Adobe Commerce uitbreidt door extensies van derden toe te voegen vanui
 
 - Controleer indien mogelijk de beveiligingscode van de extensie voordat u deze integreert met de Commerce-toepassing.
 
-- Ervoor zorgen dat ontwikkelaars van PHP-extensies de Adobe Commerce-ontwikkelrichtlijnen, -processen en best practices op het gebied van beveiliging volgen. Concreet moeten ontwikkelaars het gebruik van PHP-mogelijkheden vermijden die tot de uitvoering van een externe code of een zwakke cryptografie kunnen leiden. Zie [Beveiliging](https://developer.adobe.com/commerce/php/best-practices/security/) in de *Aanbevolen werkwijzen voor de Handleiding voor ontwikkelaars van extensies*.
+- Ervoor zorgen dat ontwikkelaars van PHP-extensies de Adobe Commerce-ontwikkelrichtlijnen, -processen en best practices op het gebied van beveiliging volgen. Concreet moeten ontwikkelaars het gebruik van PHP-mogelijkheden vermijden die tot de uitvoering van een externe code of een zwakke cryptografie kunnen leiden. Zie [ Veiligheid ](https://developer.adobe.com/commerce/php/best-practices/security/) in de *Beste praktijken voor de Gids van de Ontwikkelaars van de Uitbreiding*.
 
-![Checklist](/help/assets/icons/Smock_CheckmarkCircleOutline_18_N.svg) **Controlecode**—Controleer uw server en broncodeopslagplaats voor ontwikkelingsleftovers. Zorg ervoor dat er geen toegankelijke logboekdossiers, openbaar zichtbare.git folders, tunnels zijn om SQL verklaringen, gegevensbestanddumps, php- informatiedossiers, of andere onbeschermde dossiers uit te voeren die niet worden vereist, en die in een aanval zouden kunnen worden gebruikt.
+![ Checklist ](/help/assets/icons/Smock_CheckmarkCircleOutline_18_N.svg) **code van de Controle** - herzie uw server en broncodebewaarplaats voor ontwikkelingsleftovers. Zorg ervoor dat er geen toegankelijke logboekdossiers, openbaar zichtbare.git folders, tunnels zijn om SQL verklaringen, gegevensbestanddumps, php- informatiedossiers, of andere onbeschermde dossiers uit te voeren die niet worden vereist, en die in een aanval zouden kunnen worden gebruikt.
 
 ## Upgrade naar de nieuwste versie
 
@@ -88,14 +88,14 @@ Commerce geeft typisch veiligheidsupdates op een driemaandelijkse basis vrij maa
 Zie de volgende bronnen voor informatie over beschikbare Adobe Commerce-versies, releasecycli en het upgrade- en patchproces:
 
 - [Uitgebrachte versies](../../../release/versions.md)
-- [Beschikbaarheid van producten](../../../release/product-availability.md) (Adobe Commerce-services en extensies die door de Adobe zijn gemaakt)
+- [ Beschikbaarheid van het Product ](../../../release/product-availability.md) (de diensten van Adobe Commerce en Adobe-Authored uitbreidingen)
 - [Adobe Commerce-levenscyclusbeleid](../../../release/lifecycle-policy.md)
 - [Upgradehandleiding](../../../upgrade/overview.md)
 - [Patches toepassen](../../../upgrade/patches/overview.md)
 
 >[!TIP]
 >
->Krijg de recentste veiligheidsinformatie en verlicht tegen bekende veiligheidskwesties door aan te tekenen aan [Service voor beveiligingskennisgeving van Adobe](https://www.adobe.com/subscription/adbeSecurityNotifications.html).
+>Krijg de recentste veiligheidsinformatie en verlicht tegen bekende veiligheidskwesties door aan de [ Dienst van het Bericht van de Veiligheid van de Adobe in te tekenen ](https://www.adobe.com/subscription/adbeSecurityNotifications.html).
 
 ## Een noodherstelplan ontwikkelen
 
@@ -103,17 +103,17 @@ Als uw Commerce-site in gevaar is, kunt u schade snel beheersen en normale bedri
 
 Als een klant bij een noodsituatie een Commerce-instantie moet herstellen, kan de Adobe de klant back-upbestanden verschaffen. De klant en de oplossingenintegrator, indien van toepassing, kunnen herstellen.
 
-Als onderdeel van een noodherstelplan raadt Adobe klanten ten zeerste aan [hun Adobe Commerce-toepassingsconfiguratie exporteren](../../../configuration/cli/export-configuration.md) om de herschikking te vergemakkelijken indien dit nodig is voor bedrijfscontinuïteitsdoeleinden. De primaire reden om de configuratie naar het dossiersysteem uit te voeren is dat de systeemconfiguratie belangrijkheid over de gegevensbestandconfiguratie neemt. In een alleen-lezen bestandssysteem moet de toepassing opnieuw worden geïmplementeerd om gevoelige configuratie-instellingen te wijzigen, waardoor een extra laag van beveiliging wordt geboden.
+Als deel van een rampenherstelplan, adviseert de Adobe hoogst dat de klanten [ hun de toepassingsconfiguratie van Adobe Commerce ](../../../configuration/cli/export-configuration.md) uitvoeren om herplaatsing te verlichten als het voor bedrijfscontinuïteitsdoeleinden wordt vereist. De primaire reden om de configuratie naar het dossiersysteem uit te voeren is dat de systeemconfiguratie belangrijkheid over de gegevensbestandconfiguratie neemt. In een alleen-lezen bestandssysteem moet de toepassing opnieuw worden geïmplementeerd om gevoelige configuratie-instellingen te wijzigen, waardoor een extra laag van beveiliging wordt geboden.
 
 ### Aanvullende informatie
 
-**Adobe Commerce geïmplementeerd op cloudinfrastructuur**
+**Adobe Commerce die op wolkeninfrastructuur wordt opgesteld**
 
-- [Back-up en noodherstel](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/architecture/pro-architecture.html#backup-and-disaster-recovery)
+- [ Steun en rampenterugwinning ](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/architecture/pro-architecture.html#backup-and-disaster-recovery)
 
-- [Configuratiebeheer voor opslag voor Adobe Commerce op cloudinfrastructuur](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure-store/store-settings.html)
+- [ het configuratiebeheer van de opslag voor Adobe Commerce op wolkeninfrastructuur ](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure-store/store-settings.html)
 
-**Adobe Commerce ter plaatse ingezet**
+**Adobe Commerce die op gebouw** wordt opgesteld
 
 - [Ideeën voor noodherstel](../../infrastructure/self-hosting/disaster-recovery-ideas.md)
 
@@ -129,15 +129,15 @@ Als onderdeel van een noodherstelplan raadt Adobe klanten ten zeerste aan [hun A
 
 Deze sectie vat beste praktijken voor het handhaven van plaats en infrastructuurveiligheid voor een installatie van Adobe Commerce samen. Veel van deze beste praktijken richten zich op het beveiligen van de computerinfrastructuur in het algemeen, zodat zouden sommige van de aanbevelingen reeds kunnen worden uitgevoerd.
 
-![Checklist](/help/assets/icons/Smock_CheckmarkCircleOutline_18_N.svg) **Onbevoegde toegang blokkeren**—Werk met uw het ontvangen partner aan opstelling een tunnel van VPN om onbevoegde toegang tot de plaats en klantengegevens van Commerce te blokkeren. Stel een SSH-tunnel in om onbevoegde toegang tot de Commerce-toepassing te blokkeren.
+![ Checklist ](/help/assets/icons/Smock_CheckmarkCircleOutline_18_N.svg) **Blok onbevoegde toegang** - het Werk met uw het ontvangen partner aan opstelling een tunnel van VPN om onbevoegde toegang tot de plaats van Commerce en klantengegevens te blokkeren. Stel een SSH-tunnel in om onbevoegde toegang tot de Commerce-toepassing te blokkeren.
 
-![Checklist](/help/assets/icons/Smock_CheckmarkCircleOutline_18_N.svg) **Een webtoepassingsfirewall gebruiken**—Analyseer verkeer en ontdek verdachte patronen, zoals creditcardinformatie die naar een onbekend IP adres wordt verzonden door een Firewall van de Toepassing van het Web te gebruiken.
+![ Checklist ](/help/assets/icons/Smock_CheckmarkCircleOutline_18_N.svg) **Gebruik een Firewall van de Toepassing van het Web** - analyseer verkeer en ontdek verdachte patronen, zoals creditcardinformatie die naar een onbekend IP adres wordt verzonden door een Firewall van de Toepassing van het Web te gebruiken.
 
-Adobe Commerce-installaties die op cloudinfrastructuur worden geïmplementeerd, kunnen gebruikmaken van ingebouwde WAF-services die beschikbaar zijn via de [Snelle integratie van diensten](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/cdn/fastly.html)
+De installaties van Adobe Commerce die op wolkeninfrastructuur worden opgesteld kunnen de ingebouwde diensten van WAF gebruiken beschikbaar met de [ Vaste de dienstenintegratie ](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/cdn/fastly.html)
 
-![Checklist](/help/assets/icons/Smock_CheckmarkCircleOutline_18_N.svg) **Geavanceerde beveiligingsinstellingen voor wachtwoorden configureren**—Stel sterke wachtwoorden in en wijzig deze ten minste elke 90 dagen, zoals wordt aanbevolen door de PCI-gegevensbeveiligingsstandaard in sectie 8.2.4. Zie [Beveiligingsinstellingen voor Admin configureren](https://experienceleague.adobe.com/docs/commerce-admin/systems/security/security-admin.html).
+![ Checklist ](/help/assets/icons/Smock_CheckmarkCircleOutline_18_N.svg) **vormt geavanceerde montages van de wachtwoordveiligheid** - opstelling sterke wachtwoorden en verander hen minstens om de 90 dagen, zoals die door de Standaard van de Veiligheid van Gegevens PCI in sectie 8.2.4 worden geadviseerd. Zie [ Admin veiligheidsmontages ](https://experienceleague.adobe.com/docs/commerce-admin/systems/security/security-admin.html) vormen.
 
-![Checklist](/help/assets/icons/Smock_CheckmarkCircleOutline_18_N.svg) **HTTPS gebruiken**—Als de Commerce-site nieuw is geïmplementeerd, start u de hele site met HTTPS. Niet alleen gebruikt Google HTTPS als een waarderingsfactor, maar veel gebruikers overwegen zelfs niet om van een site aan te schaffen, tenzij deze is beveiligd met HTTPS.
+![ Checklist ](/help/assets/icons/Smock_CheckmarkCircleOutline_18_N.svg) **Gebruik HTTPS** - als de plaats van Commerce nieuw wordt uitgevoerd, lanceer de volledige plaats gebruikend HTTPS. Niet alleen gebruikt Google HTTPS als een waarderingsfactor, maar veel gebruikers overwegen zelfs niet om van een site aan te schaffen, tenzij deze is beveiligd met HTTPS.
 
 ## Protect tegen malware
 
@@ -149,28 +149,28 @@ In de meest algemeen ervaren aanvallen, wordt de kwaadwillige code geïnjecteerd
 
 Clientside credit card-skaters zijn een type malware dat code insluit in commerciële website-inhoud die kan worden uitgevoerd in de browser van een gebruiker, zoals in de volgende afbeelding wordt getoond.
 
-![De stroom van gegevens voor malware aanvallen die e-handelplaatsen richten](../../../assets/playbooks/malware-data-flow.svg)
+![ stroom van Gegevens voor malware aanvallen gericht op e-commercesites ](../../../assets/playbooks/malware-data-flow.svg)
 
 Nadat bepaalde acties plaatsvinden zoals een gebruiker die een formulier verzendt of een veldwaarde wijzigt, serialiseert de skimmer de gegevens en verzendt het naar eindpunten van derden. Deze eindpunten zijn typisch andere gecompromitteerde websites die als relais handelen om de gegevens naar zijn definitieve bestemming te verzenden.
 
 
 >[!TIP]
 >
->Als een Commerce-site wordt beïnvloed door een malware-aanval, volgt u de Adobe Commerce best practices voor [reageren op een beveiligingsincident](../maintenance/respond-to-security-incident.md).
+>Als een plaats van Commerce door een malware aanval wordt beïnvloed, volg de beste praktijken van Adobe Commerce voor [ antwoordend aan een veiligheidsincident ](../maintenance/respond-to-security-incident.md).
 
 ### Kennis van de meest voorkomende aanvallen
 
 Hieronder volgt een lijst van gemeenschappelijke categorieën aanvallen die de Adobe alle klanten van Commerce adviseert om zich van bewust te zijn en maatregelen te nemen tegen:
 
-- **Site is defect**—Een aanvaller beschadigt een website door de visuele weergave van de site te wijzigen of eigen berichten toe te voegen. Hoewel de toegang tot de site en gebruikersaccounts in gevaar is gebracht, blijven betalingsgegevens vaak veilig.
+- **plaats deOnder ogen ziet** - een aanvaller beschadigt een website door de visuele verschijning van de plaats te veranderen of hun eigen berichten toe te voegen. Hoewel de toegang tot de site en gebruikersaccounts in gevaar is gebracht, blijven betalingsgegevens vaak veilig.
 
-- **Botnets**—De Commerce-server van de klant wordt onderdeel van een onderkant die spam-e-mail verzendt. Hoewel gebruikersgegevens typisch niet gecompromitteerd zijn, zou de het domeinnaam van de klant door spamfilters kunnen worden gevoegd op lijst van gewenste personen, verhinderend levering van om het even welke e-mail van het domein. Alternatief, wordt de plaats van de klant deel van een botnet die een verdeelde ontkenning van de dienst (DDoS) aanval op een andere plaats/s veroorzaakt. Botnet kan binnenkomend IP verkeer aan de server van Commerce blokkeren, verhinderend klanten om te kunnen winkelen.
+- **Botnets** - de server van Commerce van de klant wordt deel van een botnet die spame-mail verzendt. Hoewel gebruikersgegevens typisch niet gecompromitteerd zijn, zou de het domeinnaam van de klant door spamfilters kunnen worden gevoegd op lijst van gewenste personen, verhinderend levering van om het even welke e-mail van het domein. Alternatief, wordt de plaats van de klant deel van een botnet die een verdeelde ontkenning van de dienst (DDoS) aanval op een andere plaats/s veroorzaakt. Botnet kan binnenkomend IP verkeer aan de server van Commerce blokkeren, verhinderend klanten om te kunnen winkelen.
 
-- **Directe serveraanvallen**—Gegevens worden gecompromitteerd, achterdeuren en malware worden geïnstalleerd, en plaatshandelingen worden beïnvloed. De betalingsinformatie die niet op de server wordt opgeslagen zal minder waarschijnlijk door deze aanvallen worden gecompromitteerd.
+- **Directe serveraanvallen** - het Gegevens wordt gecompromitteerd, achterdeuren en malware worden geïnstalleerd, en de plaatsverrichtingen worden beïnvloed. De betalingsinformatie die niet op de server wordt opgeslagen zal minder waarschijnlijk door deze aanvallen worden gecompromitteerd.
 
-- **Geluidskaart vastleggen**—In deze meest rampzalige aanval, installeren indringers verborgen malware of kaartvangsoftware, of erger, wijzigen het controleproces om creditcardgegevens te verzamelen. Vervolgens worden de gegevens naar een andere site verzonden en op het donkere web te koop aangeboden. Dergelijke aanvallen kunnen voor een langere periode onopgemerkt blijven en in groot compromis van klantenrekeningen en financiële informatie resulteren.
+- **Silent kaart vangt** - in deze rampzalige aanval, installeren indringers verborgen malware of kaart vangt software, of erger, wijzigen het controleproces om creditcardgegevens te verzamelen. Vervolgens worden de gegevens naar een andere site verzonden en op het donkere web te koop aangeboden. Dergelijke aanvallen kunnen voor een langere periode onopgemerkt blijven en in groot compromis van klantenrekeningen en financiële informatie resulteren.
 
-- **Stil sleutelregistreren**—De bedreigingsactor installeert zeer belangrijke registrerencode op de klantenserver om gebruikersgeloofsbrieven te verzamelen Admin zodat kunnen zij login en andere aanvallen lanceren zonder worden ontdekt.
+- **Onmiddellijke keylogging** - de bedreigingsactor installeert zeer belangrijke registrerende code op de klantenserver om Admin gebruikersgeloofsbrieven te verzamelen zodat kunnen zij login en andere aanvallen lanceren zonder worden ontdekt.
 
 ### Protect tegen aanvallen met een wachtwoord
 
@@ -178,11 +178,11 @@ Het wachtwoord van de brute macht die aanvallen veronderstelt kan in onbevoegde 
 
 - Identificeer en bescherm alle punten waar de installatie van Commerce van de buitenwereld kan worden betreden.
 
-  U kunt toegang tot Admin, die over het algemeen de meeste bescherming vereist, beveiligen door de Adobe te volgen [prioritaire aanbevelingen](#priority-recommendations) wanneer u uw Commerce-project configureert.
+  U kunt toegang tot Admin beveiligen, die over het algemeen de meeste bescherming vereist, door Adobe [ prioritaire aanbevelingen ](#priority-recommendations) te volgen wanneer het vormen van uw project van Commerce.
 
 - De toegang van de controle tot de plaats van Commerce door opstelling een toegangsbeheerlijst die slechts toegang tot gebruikers toestaat die uit een gespecificeerd IP adres of netwerk komen.
 
-  U kunt Snelle Rand ACL met een codefragment van douaneVCL gebruiken om inkomende verzoeken te filtreren en toegang door IP adres toe te staan. Zie [Aangepaste VCL voor het toestaan van aanvragen](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/cdn/custom-vcl-snippets/fastly-vcl-allowlist.html).
+  U kunt snel Edge ACL met een codefragment van douaneVCL gebruiken om inkomende verzoeken te filtreren en toegang door IP adres toe te staan. Zie [ Douane VCL voor het toestaan van verzoeken ](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/cdn/custom-vcl-snippets/fastly-vcl-allowlist.html).
 
 
   >[!TIP]
@@ -191,4 +191,4 @@ Het wachtwoord van de brute macht die aanvallen veronderstelt kan in onbevoegde 
 
 ### Klikaanvallen voorkomen
 
-De Adobe beschermt uw opslag tegen klikaanvallen door te verstrekken `X-Frame-Options` HTTP- verzoekkopbal die u in verzoeken aan uw winkel kunt omvatten. Zie [Klikaanvallen voorkomen](../../../configuration/security/xframe-options.md) in de *Adobe Commerce-configuratiegids*.
+De Adobe beschermt uw opslag tegen klikjacking aanvallen door de `X-Frame-Options` HTTP- verzoekkopbal te verstrekken die u in verzoeken aan uw winkel kunt omvatten. Zie [ verhinderen klikjacking exploiteert ](../../../configuration/security/xframe-options.md) in de *Gids van de Configuratie van Adobe Commerce*.

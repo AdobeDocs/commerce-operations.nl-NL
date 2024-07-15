@@ -4,7 +4,7 @@ description: Pas bekende kaders toe om uw e-commerce project te beheren.
 exl-id: 514e2317-f409-4079-bdee-1596f6635467
 source-git-commit: e76f101df47116f7b246f21f0fe0fa72769d2776
 workflow-type: tm+mt
-source-wordcount: '378'
+source-wordcount: '377'
 ht-degree: 0%
 
 ---
@@ -15,7 +15,7 @@ Projectbeheer is de toepassing van kennis, vaardigheden, instrumenten en technie
 
 In het volgende diagram worden de vijf fasen van projectbeheer en de levenscyclus van het projectbeheer beschreven:
 
-![Levenscyclusdiagram voor projectbeheer](../../assets/playbooks/project-management-lifecycle.png)
+![ het diagram van de het beheerslevenscyclus van het Project ](../../assets/playbooks/project-management-lifecycle.png)
 
 De levenscyclus van het projectbeheer biedt een tijdig en gecontroleerd leveringsproces dat ten goede komt aan a;; projectbelanghebbenden. De eerste stap in het leveren van een succesvol e-commerceproject is projectbeheer. De juiste aanpak en methodologie is nodig om het team in staat te stellen het project effectief en efficiënt te leveren.
 
@@ -28,7 +28,7 @@ Sommige teams kiezen de het projectbeheersmethodologie van het Trommel voor hun 
 - Planningssessie voor elke sprint
 - Sprint retrospectives
 
-![Scrum Agile-levenscyclusdiagram](../../assets/playbooks/scrum-lifecycle.png)
+![ het diagram van de Levenscyclus van de Agile van het Trommel ](../../assets/playbooks/scrum-lifecycle.png)
 
 De hulp van het scherm beheert veranderingen tijdens het project, staat teams toe om snelle resultaten te tonen, is flexibel, en verhoogt samenwerking.
 
@@ -36,17 +36,17 @@ De hulp van het scherm beheert veranderingen tijdens het project, staat teams to
 
 Een elementair projectbeheerplan voor e-commerce omvat:
 
-- **Analyse**—In de eerste fase van een project moet het bedrijf een analyse uitvoeren, met inbegrip van een zakelijke analyse van de markt en de concurrenten, om inzicht te krijgen in de sterke en zwakke punten van de organisatie.
+- **Analyse** - in het aanvankelijke stadium van een project, moet de zaken analyse, met inbegrip van markt en concurrent bedrijfsanalyse leiden om de sterke punten en de zwakheden van de organisatie te begrijpen.
 
-- **Vereisten**—Gedetailleerde vereisten definiëren voor wat de organisatie aan het einde van het project wil, in termen van het verbeteren van bestaande vaardigheden en/of het implementeren van nieuwe functies en/of integratie.
+- **Vereisten** - bepaal gedetailleerde vereisten van wat de organisatie aan het eind van het project in termen van het verbeteren van bestaande vaardigheden en/of het uitvoeren van nieuwe eigenschappen en/of integratie wil.
 
-- **Andere leveranciers**—In deze fase geeft u de vereiste integratie van derden (bijvoorbeeld betaling, verzending, beoordelingen en revisies) in kaart.
+- **Verleners van de Derde** - in dit stadium, kaart de vereiste derdeintegratie (bijvoorbeeld, betaling, verschepen, classificaties, en overzichten).
 
-- **Ontwerp**—Ontwerpspecifieke vereisten voor brainstormmodellen en het merkboek van het bedrijf.
+- **Ontwerp** - Brainstorm ontwerp-specifieke vereisten voor malplaatjes en het het merkboek van het bedrijf.
 
-- **Migratie**—Plan de stappen voor het migreren van inhoud en gegevens.
+- **migratie** - Plan uit de stappen voor het migreren van inhoud en gegevens.
 
-- **E-commerceplatform**—Analyseer en voltooi het platform dat voor de zaken wordt vereist om aan de vereisten te voldoen.
+- **e-commerceplatform** - analyseer en voltooi het platform dat voor de zaken wordt vereist om aan de vereisten te voldoen.
 
 ## Aanbevolen procedures
 

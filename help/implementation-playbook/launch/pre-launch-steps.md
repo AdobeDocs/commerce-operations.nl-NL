@@ -5,7 +5,7 @@ exl-id: bd10881f-0336-4aa4-82ad-4d635010e2e4
 feature: Deploy
 source-git-commit: 94d7a57dcd006251e8eefbdb4ec3a5e140bf43f9
 workflow-type: tm+mt
-source-wordcount: '520'
+source-wordcount: '522'
 ht-degree: 0%
 
 ---
@@ -34,7 +34,7 @@ De checklist vóór de lancering is vereist om voorafgaand aan lanceringsstaat t
 - Gereedschap voor prestatiebewaking inschakelen (nieuwe relais)
 - Activiteiten op het gebied van gegevensmigratie tijdens de (eventuele) repetitie
 
-![Diagram van fase 1 van het startproces](../../assets/playbooks/launch-steps-1.svg)
+![ Diagram die fase 1 van het lanceringsproces tonen ](../../assets/playbooks/launch-steps-1.svg)
 
 De belangrijkste verschillen tussen Adobe Commerce-implementaties op locatie en in de cloud zijn de implementatiescripts en -gereedschappen en de installatie voor SSL, Mail-service en CDN. Het proces is echter nog steeds hetzelfde.
 
@@ -57,4 +57,4 @@ De volledige checklist vóór de lancering toont alle belangrijke activiteiten w
 - Betalingsconfiguratie voor productieomgeving (voor sommige gebruikers wordt de sandboxmodus gebruikt voor het testen)
 - Testgegevens (klant, wenslijst, revisies, orders en verwante gegevens) uit de productiedatabase worden gewist
 
-![Diagram van fase 2 van het startproces](../../assets/playbooks/launch-steps-2.svg)
+![ Diagram die fase 2 van het lanceringsproces tonen ](../../assets/playbooks/launch-steps-2.svg)

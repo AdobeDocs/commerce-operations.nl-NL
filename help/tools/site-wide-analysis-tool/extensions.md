@@ -1,34 +1,34 @@
 ---
 title: '[!DNL Extensions]'
-description: Meer informatie over de [!DNL Extensions] in de [!DNL Site-Wide Analysis Tool], wanneer deze wordt gebruikt, de voordelen ervan en de beste praktijken.
+description: Leer over het  [!DNL Extensions]  lusje in  [!DNL Site-Wide Analysis Tool], wanneer om het, zijn voordelen, en beste praktijken te gebruiken.
 exl-id: e0ddc158-b268-44cc-8998-6b853d92b835
 source-git-commit: 95ffff39d82cc9027fa633dffedf15193040802d
 workflow-type: tm+mt
-source-wordcount: '199'
+source-wordcount: '195'
 ht-degree: 0%
 
 ---
 
 # [!DNL Extensions]
 
-An [!DNL extension] is een aangepaste module, taalpakket of combinatie van aangepaste modules en taalpakketten die nieuwe functionaliteit toevoegen aan het Adobe Commerce-kernproduct. [Commerce Marketplace](https://marketplace.magento.com/extensions.html) biedt een selectie van [!DNL extensions] die gratis beschikbaar zijn en die welke te koop zijn. U kunt de lijst met [!DNL extensions] geïnstalleerd op uw Adobe Commerce-exemplaar in het dialoogvenster [!DNL Site-Wide Analysis Tool].
+Een [!DNL extension] is een aangepaste module, een taalpakket of een combinatie van aangepaste modules en taalpakketten die nieuwe functionaliteit toevoegen aan het basis-Adobe Commerce-product. [ Commerce Marketplace ](https://marketplace.magento.com/extensions.html) biedt een selectie van [!DNL extensions] aan die voor vrij en die beschikbaar zijn te koop. De lijst met [!DNL extensions] die op uw Adobe Commerce-exemplaar is geïnstalleerd, vindt u in [!DNL Site-Wide Analysis Tool] .
 
 ## Wanneer gebruiken
 
-De [!DNL Extensions] in de [!DNL Site-Wide Analysis Tool] verstrekt informatie over [!DNL extensions] die op uw Adobe Commerce-exemplaar zijn geïnstalleerd. U kunt dit tabblad gebruiken om de lijst met [!DNL extensions] u gebruikt, hun versies, en andere gedetailleerde informatie zoals beschrijving, eigenschappen, en gebruik.
+Het tabblad [!DNL Extensions] in [!DNL Site-Wide Analysis Tool] biedt informatie over de [!DNL extensions] die op uw Adobe Commerce-instantie zijn geïnstalleerd. Op dit tabblad kunt u de lijst controleren van [!DNL extensions] die u gebruikt, de versies ervan en andere gedetailleerde informatie zoals een beschrijving, functies en toepassingen.
 
 ## Voordelen
 
-* Bespaar tijd met een snel overzicht van alles [!DNL extensions] op uw Adobe Commerce-exemplaar geïnstalleerd.
+* Bespaar tijd met een snel overzicht van alle geïnstalleerde [!DNL extensions] op uw Adobe Commerce-exemplaar.
 
-* Informatie opvragen over de geïnstalleerde versies [!DNL extensions] en deze bij te werken naar de meest recente versies.
+* Haal informatie op over de geïnstalleerde versies van [!DNL extensions] en werk deze bij naar de meest recente versies.
 
 ## Aanbevolen procedures
 
-* Houd uw derde partij [!DNL extensions] up-to-date aan hun recentste versies.
+* Houd [!DNL extensions] van derden up-to-date met de meest recente versies.
 
-* Zorg ervoor dat de [!DNL extensions] u kiest, zijn compatibel met uw Adobe Commerce-exemplaar.
+* Controleer of de [!DNL extensions] die u kiest, compatibel is met uw Adobe Commerce-instantie.
 
-* Als u uw derde niet kunt behouden [!DNL extensions] up-to-date zijn tot de meest recente versies, gebruik verschillende versies [!DNL extensions].
+* Als u [!DNL extensions] van derden niet up-to-date kunt houden met de meest recente versies, kunt u wellicht andere [!DNL extensions] gebruiken.
 
-* Download/koop derden om potentiële problemen te voorkomen [!DNL extensions] van een vertrouwde bron, zoals [Commerce Marketplace](https://marketplace.magento.com/extensions.html).
+* Om potentiële kwesties te vermijden, download/koop derde [!DNL extensions] van een vertrouwde op bron, als [ Commerce Marketplace ](https://marketplace.magento.com/extensions.html).

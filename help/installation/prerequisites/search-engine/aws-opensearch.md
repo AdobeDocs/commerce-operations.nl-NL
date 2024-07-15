@@ -17,7 +17,7 @@ Adobe Commerce 2.4.5 ondersteunt het gebruik van Amazon OpenSearch Service-clust
 ## Een AWS OpenSearch-servicedomein maken
 
 U moet eerst een OpenSearch-instantie in AWS maken.
-Lezen [Amazon OpenSearch Service-domeinen maken en beheren](https://docs.aws.amazon.com/opensearch-service/latest/developerguide/createupdatedomains.html) voor gedetailleerde instructies.
+Lees [ Creërend en het leiden de domeinen van de Dienst van Amazon OpenSearch ](https://docs.aws.amazon.com/opensearch-service/latest/developerguide/createupdatedomains.html) voor gedetailleerde instructies.
 
 ## Gegevens ophalen naar AWS OpenSearch
 
@@ -33,11 +33,11 @@ Grotere installaties willen mogelijk overwegen hun gegevensindexen van de bestaa
 Het is niet nodig om indexen te migreren, omdat deze gemakkelijk opnieuw kunnen worden gemaakt op het AWS-exemplaar.
 Wanneer u echter gegevensindexen migreert, moet u ervoor zorgen dat de versies van Elasticsearch/OpenSearch compatibel zijn.
 
-Zie Amazon [Migreren naar Amazon OpenSearch Service](https://docs.aws.amazon.com/opensearch-service/latest/developerguide/migration.html) instructies voor meer informatie .
+Zie Amazon [ migrerend aan de instructies van de Dienst OpenSearch van Amazon ](https://docs.aws.amazon.com/opensearch-service/latest/developerguide/migration.html) voor meer informatie.
 
 ### Commerce for OpenSearch configureren
 
-Stappen voor het configureren van OpenSearch worden behandeld in de [Geavanceerde installatie](../../advanced.md) onderwerp.
+De stappen voor het vormen OpenSearch worden behandeld in [ Geavanceerd installeert ](../../advanced.md) onderwerp.
 
 Om te testen dat de nieuwe configuratie werkt, test direct het eindpunt OpenSearch:
 
@@ -45,12 +45,12 @@ Om te testen dat de nieuwe configuratie werkt, test direct het eindpunt OpenSear
 1. Opnieuw indexeren via de beheerder.
 1. Vraag het eindpunt OpenSearch (gevonden in AWS UI):
 
-   Als u indexen wilt ophalen, voegt u het volgende toe: `/_cat/indices/*?v=true` naar de URL:
+   Als u indexen wilt ophalen, voegt u het volgende toe: `/_cat/indices/*?v=true` aan de URL:
    `<AWS OS endpoint>/_cat/indices/*?v=true`
 
-Om producten van index te krijgen, voeg toe: `/magento2docker_product_1/_search?q=*` naar de URL:
+Als u producten wilt ophalen uit index, voegt u het volgende toe: `/magento2docker_product_1/_search?q=*` aan de URL:
 `<AWS OS endpoint>/magento2docker_product_1/_search?q=testproduct1`
 
 ## Aanvullende bronnen
 
-Zie voor meer informatie de [OpenSearch AWS-documentatie](https://docs.aws.amazon.com/opensearch-service/index.html).
+Voor extra informatie, zie de [ documentatie van OpenSearch AWS ](https://docs.aws.amazon.com/opensearch-service/index.html).

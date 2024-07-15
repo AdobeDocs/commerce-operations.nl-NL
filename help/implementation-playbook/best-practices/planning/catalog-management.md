@@ -29,7 +29,7 @@ Voor de beste prestaties gebruikt u de volgende richtlijnen voor het beheer van 
 
 ### Betrokken producten en versies
 
-[Alle ondersteunde versies](../../../release/versions.md) van:
+[ Alle gesteunde versies ](../../../release/versions.md) van:
 
 - Adobe Commerce over cloudinfrastructuur
 - Adobe Commerce ter plaatse
@@ -38,7 +38,7 @@ Voor de beste prestaties gebruikt u de volgende richtlijnen voor het beheer van 
 
 Gebruik de volgende strategieën om het aantal winkelwagentjes te beheren
 
-- Hiermee splitst u ordes in verschillende kleinere bestellingen met een kleiner aantal rijen met behulp van de optie [!UICONTROL Add Item by SKU] gebruiken.
+- U kunt met de functie [!UICONTROL Add Item by SKU] orders splitsen in verschillende kleinere bestellingen met een kleiner aantal rijen.
 - Voeg alleen de aangepaste logica en aanpassing van het winkelwagentje toe die zijn vereist om een lijst met items te laden.
 
 ## Categoriebeperkingen
@@ -47,7 +47,7 @@ Het vormen van een groot aantal categorieën kan prestaties beïnvloeden.
 
 ### Betrokken producten en versies
 
-[Alle ondersteunde versies](../../../release/versions.md) van:
+[ Alle gesteunde versies ](../../../release/versions.md) van:
 
 - Adobe Commerce over cloudinfrastructuur
 - Adobe Commerce ter plaatse
@@ -70,7 +70,7 @@ Het configureren van te veel productkenmerken of productkenmerkopties kan de pre
 
 ### Betrokken producten en versies
 
-[Alle ondersteunde versies](../../../release/versions.md) van:
+[ Alle gesteunde versies ](../../../release/versions.md) van:
 
 - Adobe Commerce over cloudinfrastructuur
 - Adobe Commerce ter plaatse
@@ -100,7 +100,7 @@ Verwijder ongebruikte productkenmerksets met MySQL.
 
 #### Configuratie kenmerkenset controleren
 
-1. [Verbinding maken met de sitedatabase](https://devdocs.magento.com/cloud/project/services-mysql.html#connect-to-the-database).
+1. [ verbind met het plaatsgegevensbestand ](https://devdocs.magento.com/cloud/project/services-mysql.html#connect-to-the-database).
 
 1. Het aantal kenmerksets zoeken met MySQL
 
@@ -112,7 +112,7 @@ Verwijder ongebruikte productkenmerksets met MySQL.
 
 ### Mogelijke gevolgen voor de prestaties
 
-Veel configureren **productkenmerken** Hiermee wordt de productsjabloongrootte voor elk product (EAV-structuur) verhoogd en de hoeveelheid gegevens die moet worden opgehaald. Deze verhoging beïnvloedt verrichtingen op de volgende manieren:
+Vormend vele **productattributen** verhoogt de grootte van het productmalplaatje voor elk product (structuur EAV) en de hoeveelheid gegevens die moeten worden teruggewonnen. Deze verhoging beïnvloedt verrichtingen op de volgende manieren:
 
 - Verhoging van SQL vraagverkeer met betrekking tot EAV gegevensherwinning en de hoeveelheid verwerkte gegevens die in verminderde productie van DB resulteert
 - Significante toename van de grootte van Adobe Commerce-indexen en de full-text zoekindex
@@ -125,7 +125,7 @@ De verhogingen van productgegevens en indexgrootte kunnen plaatsprestaties op de
 - Functionaliteit voor productomassa kan worden geblokkeerd.
 - De de herbouwingstijd van de index voor middelgrote en grote catalogi kan niet op een dagelijkse basis wegens lange uitvoeringstijden worden uitgevoerd.
 
-Veel configureren **kenmerkopties** kan de prestaties van de site op de volgende manieren beïnvloeden:
+Vormend vele **attributenopties** kan plaatsprestaties op de volgende manieren beïnvloeden:
 
 - Langdurige verzoek- en renderingtijden voor productdetails (PDP) en categoriepagina&#39;s die complexe producten bevatten.
 - Bewerkingen voor het opslaan van beheerproducten reactietijd neemt toe boven optimale prestatiedoelen.
@@ -138,7 +138,7 @@ Het configureren van te veel productopties per product kan de prestaties beïnvl
 
 ### Betrokken producten en versies
 
-[Alle ondersteunde versies](../../../release/versions.md) van:
+[ Alle gesteunde versies ](../../../release/versions.md) van:
 
 - Adobe Commerce over cloudinfrastructuur
 - Adobe Commerce ter plaatse
@@ -155,7 +155,7 @@ Gebruik de volgende strategieën om het aantal productopties per product te verm
 
 Als u veel productopties configureert, neemt de hoeveelheid gegevens die voor elk product wordt opgehaald bij alle lees- en schrijfbewerkingen toe. Dit resulteert in:
 
-- Verhoogd SQL vraagverkeer en zwaarder `JOIN` De verrichtingen verhogen gegevensbestandproductie.
+- Verhoogd SQL vraagverkeer en zwaardere `JOIN` verrichtingen verhogen gegevensbestandproductie.
 - Grotere grootte voor Adobe Commerce-indexen en de zoekindex met volledige tekst.
 
 De hierboven vermelde verhogingen beïnvloeden mogelijk de prestaties van de site op de volgende manieren:
@@ -170,16 +170,16 @@ Het weergeven van te veel producten per pagina kan de prestaties beïnvloeden.
 
 ### Betrokken producten en versies
 
-[Alle ondersteunde versies](../../../release/versions.md) van:
+[ Alle gesteunde versies ](../../../release/versions.md) van:
 
 - Adobe Commerce over cloudinfrastructuur
 - Adobe Commerce ter plaatse
 
 ### Configuratie van productlijsten bijwerken
 
-Als een categorie te veel producten bevat, werkt u de configuratie van de winkelcatalogus bij om de optie voor **Alle producten per pagina toestaan**.
+Als u teveel producten in een categorie hebt, werk de configuratie van de storefrontcatalogus bij om de optie onbruikbaar te maken om **Alle Producten per pagina** toe te staan.
 
-Nadat u deze optie hebt uitgeschakeld, gebruikt Adobe Commerce de besturingselementen voor de paginering van de winkelpagina van het product om het aantal producten te beheren dat in winkelcomponenten wordt weergegeven. Zie voor instructies [Pagineringsbesturingselementen configureren](https://experienceleague.adobe.com/docs/commerce-admin/catalog/catalog/navigation/navigation-product-listings.html#configure-the-pagination-controls).
+Nadat u deze optie hebt uitgeschakeld, gebruikt Adobe Commerce de besturingselementen voor de paginering van de winkelpagina van het product om het aantal producten te beheren dat in winkelcomponenten wordt weergegeven. Voor instructies, zie [ pagineringscontroles ](https://experienceleague.adobe.com/docs/commerce-admin/catalog/catalog/navigation/navigation-product-listings.html#configure-the-pagination-controls) vormen.
 
 ## SKU-limieten voor producten
 
@@ -187,7 +187,7 @@ Het vormen van teveel product SKUs kan prestaties beïnvloeden door de terugwinn
 
 ### Betrokken producten en versies
 
-[Alle ondersteunde versies](../../../release/versions.md) van:
+[ Alle gesteunde versies ](../../../release/versions.md) van:
 
 - Adobe Commerce over cloudinfrastructuur
 - Adobe Commerce ter plaatse
@@ -205,7 +205,7 @@ Gebruik de volgende strategieën om het aantal producten (SKU&#39;s) te verminde
    - Verlaag het aantal SKU&#39;s door het aantal websites, klantengroepen, gedeelde catalogi, het aantal producten of het aantal configureerbare productopties te verminderen
 - Verstrek meer productvariaties door douaneopties te gebruiken in plaats van het creëren van afzonderlijke producten.
 - Rekening houdend met het feit dat een effectieve SKU een aantal mogelijke prijsschommelingen kan omvatten, omdat de prijzen per winkel of klantengroep verschillend kunnen worden gespecificeerd.
-- Deactiveer of verwijder ongebruikte systeemcomponenten zoals modules. Zie  [Modules verwijderen](../../../installation/tutorials/uninstall-modules.md).
+- Deactiveer of verwijder ongebruikte systeemcomponenten zoals modules. Zie [ modules ](../../../installation/tutorials/uninstall-modules.md) desinstalleren.
 - Beheer producten in een extern Platform Management System (PMS).
 
 ## Productvariaties
@@ -214,7 +214,7 @@ Het configureren van te veel variaties per product kan de prestaties beïnvloede
 
 ### Betrokken producten en versies
 
-[Alle ondersteunde versies](../../../release/versions.md) van:
+[ Alle gesteunde versies ](../../../release/versions.md) van:
 
 - Adobe Commerce over cloudinfrastructuur
 - Adobe Commerce ter plaatse
@@ -240,7 +240,7 @@ Het overschrijden van het aanbevolen aantal productvariaties kan op de volgende 
 
 Volg deze aanbevolen procedures om verkoop en promoties voor objecten in een winkelwagentje te configureren:
 
-- **Verkoopregels (regels betreffende de kartprijs)**
+- **Regels van de Verkoop (de regels van de kartprijs)**
    - Ongebruikte regels beheren en verwijderen.
    - Voeg strikte regelvoorwaarden (zoals kenmerk- of categoriefilter) toe voor de meest efficiënte overeenkomst.
 - **Coupons**
@@ -249,7 +249,7 @@ Volg deze aanbevolen procedures om verkoop en promoties voor objecten in een win
 
 ### Betrokken producten en versies
 
-[Alle ondersteunde versies](../../../release/versions.md) van:
+[ Alle gesteunde versies ](../../../release/versions.md) van:
 
 - Adobe Commerce over cloudinfrastructuur
 - Adobe Commerce ter plaatse
@@ -261,4 +261,4 @@ Als u meer dan het aanbevolen maximumaantal regels of coupons voor de kartonprij
 - Hogere responstijd wanneer producten aan het winkelwagentje worden toegevoegd.
 - Meer tijd om de miniaturen te laden en weer te geven.
 - Meer tijd om de winkelwagenpagina weer te geven.
-- Verhoogde tijd om de **Totalen** op de pagina Afhandeling.
+- Verhoogde tijd om het **1} blok van Totalen {op de pagina van de Controle terug te geven.**

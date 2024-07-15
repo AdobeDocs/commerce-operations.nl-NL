@@ -7,7 +7,7 @@ ht-degree: 0%
 ---
 # Productiesysteem bijwerken
 
-**Het productiesysteem bijwerken**:
+**om het productiesysteem** bij te werken:
 
 1. Meld u als eigenaar van het bestandssysteem aan bij het productiesysteem.
 1. Schakel over naar de hoofdmap van de toepassing en schakel de onderhoudsmodus in.
@@ -20,9 +20,9 @@ ht-degree: 0%
    bin/magento maintenance:enable
    ```
 
-   Voor extra opties, zoals de capaciteit om een IP adres te plaatsen whitelist, zie [`magento maintenance:enable`](../installation/tutorials/maintenance-mode.md).
+   Zie [`magento maintenance:enable`](../installation/tutorials/maintenance-mode.md) voor extra opties, zoals de mogelijkheid om een IP-adreslijst in te stellen.
 
-1. Stop om het even welke lopende rijarbeiders door te plaatsen `cron_run` tot `false` in `app/etc/env.php` als volgt:
+1. Stop alle actieve workers in de wachtrij door `cron_run` als volgt in te stellen op `false` in `app/etc/env.php` :
 
    ```php?start_inline=1
    'cron_consumers_runner' => [
@@ -36,13 +36,13 @@ ht-degree: 0%
    bin/magento app:config:import
    ```
 
-1. Tot slot: `kill` actieve consumentenprocessen.
+1. Tot slot `kill` alle actieve consumentenprocessen.
 
    ```bash
    kill <PID>
    ```
 
-   Wanneer `PID` is de proces-id die moet worden gedood, bijvoorbeeld:
+   Waar `PID` de proces-id is die moet worden gedood, bijvoorbeeld:
 
    ```bash
    kill 1234

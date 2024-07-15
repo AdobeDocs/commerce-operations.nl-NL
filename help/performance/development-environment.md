@@ -15,15 +15,15 @@ Deze pagina bevat aanbevelingen voor Commerce-ontwikkelomgevingen.
 
 ## De cache verwijderen in plaats van uitschakelen
 
-Vele ontwikkelaars neigen om alle geheime voorgeheugens op hun ontwikkelaarinstanties onbruikbaar te maken. We raden u alleen aan caches te reinigen zonder alle caches uit te schakelen. [!DNL Commerce] efficiënter werkt wanneer u [schoonmaken van de cache](../configuration/cli/manage-cache.md#clean-and-flush-cache-types) in plaats van ze volledig uit te schakelen. De meeste typen caches worden zelden ongeldig gemaakt tijdens de ontwikkeling.
+Vele ontwikkelaars neigen om alle geheime voorgeheugens op hun ontwikkelaarinstanties onbruikbaar te maken. We raden u alleen aan caches te reinigen zonder alle caches uit te schakelen. [!DNL Commerce] loopt efficiënter wanneer u [ de geheime voorgeheugens ](../configuration/cli/manage-cache.md#clean-and-flush-cache-types) zuivert in plaats van hen volledig onbruikbaar te maken. De meeste typen caches worden zelden ongeldig gemaakt tijdens de ontwikkeling.
 
-Als u [de caches uitschakelen](../configuration/cli/manage-cache.md#enable-or-disable-cache-types), adviseren wij slechts het onbruikbaar maken van de geheime voorgeheugens van de Pagina en van het Blok in ontwikkelingsinstanties. Vergeet niet alle caches tijdens het testen in te schakelen.
+Als u [ de geheime voorgeheugens ](../configuration/cli/manage-cache.md#enable-or-disable-cache-types) onbruikbaar maakt, adviseren wij slechts het onbruikbaar maken van de geheime voorgeheugens van de Pagina en van het Blok in ontwikkelingsinstanties. Vergeet niet alle caches tijdens het testen in te schakelen.
 
 ## Opdrachten om te voorkomen in de ontwikkelingsmodus
 
 In de ontwikkelingswijze, stel geen bevelen voor compilatie, codegeneratie en statische inhoudsplaatsing in werking. Deze bevelen werden gebouwd voor gebruik op productiemodus slechts.
 
-**Niet uitvoeren** productieopdrachten in ontwikkelingsmodus:
+**stel** productiebevelen op ontwikkelingswijze niet in werking:
 
 * `setup:di:compile` genereert automatisch gegenereerde klassen en geoptimaliseerde configuratiekaarten.
 
@@ -31,7 +31,7 @@ In de ontwikkelingswijze, stel geen bevelen voor compilatie, codegeneratie en st
   bin/magento setup:di:compile
   ```
 
-  In de ontwikkelingsmodus voert het Magento de generatie op aanvraag uit; u hoeft deze niet uit te voeren. Als u een handtekening van een klasse hebt gewijzigd en de automatisch gegenereerde klasse opnieuw moet genereren `factories/proxies/interceptors`, verwijdert u deze klassen of de _gegenereerd_ map.
+  In de ontwikkelingsmodus voert het Magento de generatie op aanvraag uit; u hoeft deze niet uit te voeren. Als u een handtekening van een klasse wijzigde en zijn auto-geproduceerde `factories/proxies/interceptors` opnieuw moet produceren, verwijder die klassen of de _geproduceerde_ omslag.
 
 * `setup:static-content:deploy` implementeert statische inhoud voor een winkel.
 

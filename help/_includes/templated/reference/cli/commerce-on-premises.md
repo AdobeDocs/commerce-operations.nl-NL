@@ -13,17 +13,17 @@ ht-degree: 0%
 
 **Versie**: 2.4.7-p1
 
-Deze naslaggids bevat 141 opdrachten die beschikbaar zijn via de `bin/magento` opdrachtregelprogramma.
-De eerste lijst wordt automatisch gegenereerd met de opdracht `bin/magento list` op Adobe Commerce.
-Gebruik de [&quot;CLI-opdrachten toevoegen&quot;](https://developer.adobe.com/commerce/php/development/cli-commands/) gids om een douane CLI bevel toe te voegen.
+Deze verwijzing bevat 141 opdrachten die beschikbaar zijn via het opdrachtregelprogramma van `bin/magento` .
+De eerste lijst wordt automatisch gegenereerd met de opdracht `bin/magento list` in Adobe Commerce.
+Gebruik [ &quot;voeg CLI bevelen&quot;](https://developer.adobe.com/commerce/php/development/cli-commands/) gids toe om een douanebevel CLI toe te voegen.
 
 >[!NOTE]
 >
->U kunt bellen `bin/magento` CLI bevelen die kortere weg in plaats van de volledige bevelnaam gebruiken. U kunt bijvoorbeeld `bin/magento setup:upgrade` gebruiken `bin/magento s:up`, `bin/magento s:upg`. Zie [sneltoetssyntaxis](https://symfony.com/doc/current/components/console/usage.html#shortcut-syntax) om te begrijpen hoe te om kortere weg met om het even welk bevel CLI te gebruiken.
+>U kunt `bin/magento` CLI bevelen roepen gebruikend kortere weg in plaats van de volledige bevelnaam. U kunt bijvoorbeeld `bin/magento setup:upgrade` aanroepen met `bin/magento s:up` , `bin/magento s:upg` . Zie [ kortere wegsyntaxis ](https://symfony.com/doc/current/components/console/usage.html#shortcut-syntax) om te begrijpen hoe te om kortere weg met om het even welk bevel te gebruiken CLI.
 
 >[!NOTE]
 >
->Deze verwijzing wordt gegenereerd op basis van de toepassingscodebase. Als u de inhoud wilt wijzigen, kunt u de broncode voor de corresponderende opdrachtimplementatie bijwerken in het dialoogvenster [codebase](https://github.com/magento) opslaan en uw wijzigingen ter controle verzenden. Een andere manier is om _Feedback geven_ (zoek de koppeling in de rechterbovenhoek). Zie voor richtsnoeren voor bijdragen [Codebijdragen](https://developer.adobe.com/commerce/contributor/guides/code-contributions/).
+>Deze verwijzing wordt gegenereerd op basis van de toepassingscodebase. Om de inhoud te veranderen, kunt u de broncode voor de overeenkomstige bevelimplementatie in de [ codebase ](https://github.com/magento) bewaarplaats bijwerken en uw veranderingen voor overzicht voorleggen. Een andere manier is ons _geven terugkoppelt_ (vind de verbinding bij het hogere recht). Voor bijdragerichtsnoeren, zie {de Bijdragen van de Code 0} ](https://developer.adobe.com/commerce/contributor/guides/code-contributions/).[
 
 ## `_complete`
 
@@ -42,7 +42,7 @@ Het schelpdiertype (&quot;bash&quot;, &quot;fish&quot;, &quot;zsh&quot;)
 
 ### `--input`, `-i`
 
-Een array van invoertokens (bv. COMP_WORDS of argv)
+Een array van invoertokens (bijvoorbeeld COMP_WORDS of argv)
 
 - Standaard: `[]`
 - Vereist een waarde
@@ -706,7 +706,7 @@ Hiermee wordt een beheerder gemaakt
 
 ### `--magento-init-params`
 
-Voeg aan om het even welke bevel toe om Magento initialisatieparameters aan te passen Bijvoorbeeld: &quot;MAGE_MODE=developer&amp;MAGE_DIRS[basis][path]=/var/www/example.com&amp;MAGE_DIRS[cachegeheugen][path]=/var/tmp/cache&quot;
+Voeg aan om het even welk bevel toe om Magento initialisatieparameters aan te passen bijvoorbeeld: &quot;MAGE_MODE=developer&amp;MAGE_DIRS [ basis ][path]=/var/www/example.com&amp;MAGE_DIRS [ geheime voorgeheugen ][path]=/var/tmp/cache&quot;
 
 - Vereist een waarde
 
@@ -842,7 +842,7 @@ Stortplaats van toepassing maken
 
 ### `config-types`
 
-Lijst met door spaties gescheiden configuratietypen of het weglaten om alles te dumpen [bereik, systeem, thema&#39;s, i18n]
+De ruimte-gescheiden lijst van configuratietypen of laat weg om alle [ werkingsgebied, systeem, thema&#39;s, i18n ] te dumpen
 
 - Standaard: `[]`
 
@@ -1865,7 +1865,7 @@ Bereik voor configuratie, als niet gespecificeerd, dan &quot;gebrek&quot;werking
 
 ### `--scope-code`
 
-Code bereik (alleen vereist als het bereik niet is ingesteld) `default`)
+Code bereik (alleen vereist als bereik niet `default` is)
 
 - Standaard: &quot;
 - Accepteert een waarde
@@ -2686,7 +2686,7 @@ Logbestand van DB-query inschakelen
 
 ### `--include-all-queries`
 
-Log alle query&#39;s. [true\|false]
+Log alle query&#39;s. [ waar \|vals ]
 
 - Standaard: `true`
 - Accepteert een waarde
@@ -2700,7 +2700,7 @@ Drempelwaarden voor zoektijd.
 
 ### `--include-call-stack`
 
-Inclusief aanroepstack. [true\|false]
+Inclusief aanroepstack. [ waar \|vals ]
 
 - Standaard: `true`
 - Accepteert een waarde
@@ -2774,28 +2774,28 @@ Bestanden die vooraf moeten worden verwerkt (bestand moet worden opgegeven zonde
 
 ### `--type`
 
-Type bronbestanden: [minder]
+Type van brondossiers: [ minder ]
 
 - Standaard: `less`
 - Vereist een waarde
 
 ### `--locale`
 
-Landinstelling: [nl_NL]
+Landinstelling: [ nl_NL ]
 
 - Standaard: `en_US`
 - Vereist een waarde
 
 ### `--area`
 
-Gebied: [frontEnd\|adminhtml]
+Gebied: [ front\|adminhtml ]
 
 - Standaard: `frontend`
 - Vereist een waarde
 
 ### `--theme`
 
-Thema: [Leverancier/thema]
+Thema: [ Verkoper/thema ]
 
 - Standaard: `Magento/luma`
 - Vereist een waarde
@@ -3114,7 +3114,7 @@ Pad naar bestand voor uitvoer van catalogus. Voor PHPStorm-gebruik .idea/misc.xm
 
 ### `--ide`
 
-Indeling waarin de catalogus wordt gegenereerd. Ondersteund: [phpstorm, vscode]
+Indeling waarin de catalogus wordt gegenereerd. Ondersteund: [ phpstorm, vscode ]
 
 - Standaard: `phpstorm`
 - Vereist een waarde
@@ -3941,7 +3941,7 @@ Geen interactieve vraag stellen
 bin/magento events:registrations:list
 ```
 
-Maakt een lijst van gebeurtenisregistraties in uw project App Builder
+Somt gebeurtenisregistraties in uw App Builder-project op
 
 
 ### `--help`, `-h`
@@ -4677,12 +4677,12 @@ Modus IndexerDimensionen instellen
 
 ### `indexer`
 
-Indexnaam [catalog_product_price|catalogispermissions_category]
+Indexernaam [ catalog_product_price|catalogispermissions_category ]
 
 
 ### `mode`
 
-Indexer-dimensie-modi catalog_product_price none,website,customer_group,website_and_customer_group catalogispermissions_category none,customer_group
+Index_dimensiemodi catalog_product_price          none,website,klant_groep,website_and_customer_group catalogi_category    none,customer_group
 
 
 ### `--help`, `-h`
@@ -4746,7 +4746,7 @@ Hiermee wordt het type indexmodus ingesteld
 
 ### `mode`
 
-Type indexmodus [realtime|plannen]
+Het type van wijze van de indexeer [ realtime|programma ]
 
 
 ### `index`
@@ -4818,7 +4818,7 @@ Hiermee wordt de opgegeven indexeerstatus ingesteld
 
 ### `status`
 
-Type indexstatus [ongeldig|opgeschort|geldig]
+Indexerstatus type [ ongeldig|opgeschort|geldig ]
 
 - Vereist
 
@@ -5827,7 +5827,7 @@ IP-adres toevoegen aan bestaande lijst
 
 ### `--magento-init-params`
 
-Voeg aan om het even welke bevel toe om Magento initialisatieparameters aan te passen Bijvoorbeeld: &quot;MAGE_MODE=developer&amp;MAGE_DIRS[basis][path]=/var/www/example.com&amp;MAGE_DIRS[cachegeheugen][path]=/var/tmp/cache&quot;
+Voeg aan om het even welk bevel toe om Magento initialisatieparameters aan te passen bijvoorbeeld: &quot;MAGE_MODE=developer&amp;MAGE_DIRS [ basis ][path]=/var/www/example.com&amp;MAGE_DIRS [ geheime voorgeheugen ][path]=/var/tmp/cache&quot;
 
 - Vereist een waarde
 
@@ -5898,7 +5898,7 @@ Toegestane IP adressen (gebruik &quot;niets&quot;om toegestane IP lijst te ontru
 
 ### `--magento-init-params`
 
-Voeg aan om het even welke bevel toe om Magento initialisatieparameters aan te passen Bijvoorbeeld: &quot;MAGE_MODE=developer&amp;MAGE_DIRS[basis][path]=/var/www/example.com&amp;MAGE_DIRS[cachegeheugen][path]=/var/tmp/cache&quot;
+Voeg aan om het even welk bevel toe om Magento initialisatieparameters aan te passen bijvoorbeeld: &quot;MAGE_MODE=developer&amp;MAGE_DIRS [ basis ][path]=/var/www/example.com&amp;MAGE_DIRS [ geheime voorgeheugen ][path]=/var/tmp/cache&quot;
 
 - Vereist een waarde
 
@@ -5969,7 +5969,7 @@ Toegestane IP adressen (gebruik &quot;niets&quot;om toegestane IP lijst te ontru
 
 ### `--magento-init-params`
 
-Voeg aan om het even welke bevel toe om Magento initialisatieparameters aan te passen Bijvoorbeeld: &quot;MAGE_MODE=developer&amp;MAGE_DIRS[basis][path]=/var/www/example.com&amp;MAGE_DIRS[cachegeheugen][path]=/var/tmp/cache&quot;
+Voeg aan om het even welk bevel toe om Magento initialisatieparameters aan te passen bijvoorbeeld: &quot;MAGE_MODE=developer&amp;MAGE_DIRS [ basis ][path]=/var/www/example.com&amp;MAGE_DIRS [ geheime voorgeheugen ][path]=/var/tmp/cache&quot;
 
 - Vereist een waarde
 
@@ -6033,7 +6033,7 @@ De status van de onderhoudsmodus weergeven
 
 ### `--magento-init-params`
 
-Voeg aan om het even welke bevel toe om Magento initialisatieparameters aan te passen Bijvoorbeeld: &quot;MAGE_MODE=developer&amp;MAGE_DIRS[basis][path]=/var/www/example.com&amp;MAGE_DIRS[cachegeheugen][path]=/var/tmp/cache&quot;
+Voeg aan om het even welk bevel toe om Magento initialisatieparameters aan te passen bijvoorbeeld: &quot;MAGE_MODE=developer&amp;MAGE_DIRS [ basis ][path]=/var/www/example.com&amp;MAGE_DIRS [ geheime voorgeheugen ][path]=/var/tmp/cache&quot;
 
 - Vereist een waarde
 
@@ -6301,7 +6301,7 @@ Gegenereerde statische weergavebestanden wissen. Noodzakelijk als de module(s) s
 
 ### `--magento-init-params`
 
-Voeg aan om het even welke bevel toe om Magento initialisatieparameters aan te passen Bijvoorbeeld: &quot;MAGE_MODE=developer&amp;MAGE_DIRS[basis][path]=/var/www/example.com&amp;MAGE_DIRS[cachegeheugen][path]=/var/tmp/cache&quot;
+Voeg aan om het even welk bevel toe om Magento initialisatieparameters aan te passen bijvoorbeeld: &quot;MAGE_MODE=developer&amp;MAGE_DIRS [ basis ][path]=/var/www/example.com&amp;MAGE_DIRS [ geheime voorgeheugen ][path]=/var/tmp/cache&quot;
 
 - Vereist een waarde
 
@@ -6395,7 +6395,7 @@ Gegenereerde statische weergavebestanden wissen. Noodzakelijk als de module(s) s
 
 ### `--magento-init-params`
 
-Voeg aan om het even welke bevel toe om Magento initialisatieparameters aan te passen Bijvoorbeeld: &quot;MAGE_MODE=developer&amp;MAGE_DIRS[basis][path]=/var/www/example.com&amp;MAGE_DIRS[cachegeheugen][path]=/var/tmp/cache&quot;
+Voeg aan om het even welk bevel toe om Magento initialisatieparameters aan te passen bijvoorbeeld: &quot;MAGE_MODE=developer&amp;MAGE_DIRS [ basis ][path]=/var/www/example.com&amp;MAGE_DIRS [ geheime voorgeheugen ][path]=/var/tmp/cache&quot;
 
 - Vereist een waarde
 
@@ -6482,7 +6482,7 @@ Alleen uitgeschakelde modules afdrukken
 
 ### `--magento-init-params`
 
-Voeg aan om het even welke bevel toe om Magento initialisatieparameters aan te passen Bijvoorbeeld: &quot;MAGE_MODE=developer&amp;MAGE_DIRS[basis][path]=/var/www/example.com&amp;MAGE_DIRS[cachegeheugen][path]=/var/tmp/cache&quot;
+Voeg aan om het even welk bevel toe om Magento initialisatieparameters aan te passen bijvoorbeeld: &quot;MAGE_MODE=developer&amp;MAGE_DIRS [ basis ][path]=/var/www/example.com&amp;MAGE_DIRS [ geheime voorgeheugen ][path]=/var/tmp/cache&quot;
 
 - Vereist een waarde
 
@@ -6598,7 +6598,7 @@ Gegenereerde statische weergavebestanden wissen. Noodzakelijk als de module(s) s
 
 ### `--magento-init-params`
 
-Voeg aan om het even welke bevel toe om Magento initialisatieparameters aan te passen Bijvoorbeeld: &quot;MAGE_MODE=developer&amp;MAGE_DIRS[basis][path]=/var/www/example.com&amp;MAGE_DIRS[cachegeheugen][path]=/var/tmp/cache&quot;
+Voeg aan om het even welk bevel toe om Magento initialisatieparameters aan te passen bijvoorbeeld: &quot;MAGE_MODE=developer&amp;MAGE_DIRS [ basis ][path]=/var/www/example.com&amp;MAGE_DIRS [ geheime voorgeheugen ][path]=/var/tmp/cache&quot;
 
 - Vereist een waarde
 
@@ -7867,7 +7867,7 @@ Volledige back-up van de database maken
 
 ### `--magento-init-params`
 
-Voeg aan om het even welke bevel toe om Magento initialisatieparameters aan te passen Bijvoorbeeld: &quot;MAGE_MODE=developer&amp;MAGE_DIRS[basis][path]=/var/www/example.com&amp;MAGE_DIRS[cachegeheugen][path]=/var/tmp/cache&quot;
+Voeg aan om het even welk bevel toe om Magento initialisatieparameters aan te passen bijvoorbeeld: &quot;MAGE_MODE=developer&amp;MAGE_DIRS [ basis ][path]=/var/www/example.com&amp;MAGE_DIRS [ geheime voorgeheugen ][path]=/var/tmp/cache&quot;
 
 - Vereist een waarde
 
@@ -8355,7 +8355,7 @@ Instellen op 0 om compressie uit te schakelen (standaard is 1, ingeschakeld)
 
 ### `--cache-backend-redis-compression-lib`
 
-Te gebruiken compressielabel [snappy,lzf,l4z,zstd,gzip] (leeg laten om automatisch te bepalen)
+Compressiellib om [ snappy, lzf, l4z, zstd, gzip ] te gebruiken (verlaten leeg om automatisch te bepalen)
 
 - Vereist een waarde
 
@@ -8416,7 +8416,7 @@ Ingesteld op 1 om de cache van de volledige pagina te comprimeren (gebruik 0 om 
 
 ### `--page-cache-redis-compression-lib`
 
-Te gebruiken compressiebibliotheek [snappy,lzf,l4z,zstd,gzip] (leeg laten om automatisch te bepalen)
+De bibliotheek van de compressie om [ snappy, lzf, l4z, zstd, gzip ] te gebruiken (verlaten leeg om automatisch te bepalen)
 
 - Vereist een waarde
 
@@ -8518,7 +8518,7 @@ ID-voorvoegsel voor toetsen
 
 ### `--magento-init-params`
 
-Voeg aan om het even welke bevel toe om Magento initialisatieparameters aan te passen Bijvoorbeeld: &quot;MAGE_MODE=developer&amp;MAGE_DIRS[basis][path]=/var/www/example.com&amp;MAGE_DIRS[cachegeheugen][path]=/var/tmp/cache&quot;
+Voeg aan om het even welk bevel toe om Magento initialisatieparameters aan te passen bijvoorbeeld: &quot;MAGE_MODE=developer&amp;MAGE_DIRS [ basis ][path]=/var/www/example.com&amp;MAGE_DIRS [ geheime voorgeheugen ][path]=/var/tmp/cache&quot;
 
 - Vereist een waarde
 
@@ -8582,7 +8582,7 @@ Hiermee installeert en verbetert u gegevens in de database
 
 ### `--magento-init-params`
 
-Voeg aan om het even welke bevel toe om Magento initialisatieparameters aan te passen Bijvoorbeeld: &quot;MAGE_MODE=developer&amp;MAGE_DIRS[basis][path]=/var/www/example.com&amp;MAGE_DIRS[cachegeheugen][path]=/var/tmp/cache&quot;
+Voeg aan om het even welk bevel toe om Magento initialisatieparameters aan te passen bijvoorbeeld: &quot;MAGE_MODE=developer&amp;MAGE_DIRS [ basis ][path]=/var/www/example.com&amp;MAGE_DIRS [ geheime voorgeheugen ][path]=/var/tmp/cache&quot;
 
 - Vereist een waarde
 
@@ -8666,7 +8666,7 @@ Controleer of de patch teruggedraaid kan worden.
 
 ### `--type`
 
-Ontdek welk type patch moet worden gegenereerd. Beschikbare waarden: `data`, `schema`.
+Ontdek welk type patch moet worden gegenereerd. Beschikbare waarden: `data`, `schema` .
 
 - Standaard: `data`
 - Accepteert een waarde
@@ -8843,7 +8843,7 @@ Max. toegestane lave-verbinding voor lave (in seconden)
 
 ### `--magento-init-params`
 
-Voeg aan om het even welke bevel toe om Magento initialisatieparameters aan te passen Bijvoorbeeld: &quot;MAGE_MODE=developer&amp;MAGE_DIRS[basis][path]=/var/www/example.com&amp;MAGE_DIRS[cachegeheugen][path]=/var/tmp/cache&quot;
+Voeg aan om het even welk bevel toe om Magento initialisatieparameters aan te passen bijvoorbeeld: &quot;MAGE_MODE=developer&amp;MAGE_DIRS [ basis ][path]=/var/www/example.com&amp;MAGE_DIRS [ geheime voorgeheugen ][path]=/var/tmp/cache&quot;
 
 - Vereist een waarde
 
@@ -8945,7 +8945,7 @@ Naam van resource voor uitchecken
 
 ### `--magento-init-params`
 
-Voeg aan om het even welke bevel toe om Magento initialisatieparameters aan te passen Bijvoorbeeld: &quot;MAGE_MODE=developer&amp;MAGE_DIRS[basis][path]=/var/www/example.com&amp;MAGE_DIRS[cachegeheugen][path]=/var/tmp/cache&quot;
+Voeg aan om het even welk bevel toe om Magento initialisatieparameters aan te passen bijvoorbeeld: &quot;MAGE_MODE=developer&amp;MAGE_DIRS [ basis ][path]=/var/www/example.com&amp;MAGE_DIRS [ geheime voorgeheugen ][path]=/var/tmp/cache&quot;
 
 - Vereist een waarde
 
@@ -9047,7 +9047,7 @@ Naam verkoopbron
 
 ### `--magento-init-params`
 
-Voeg aan om het even welke bevel toe om Magento initialisatieparameters aan te passen Bijvoorbeeld: &quot;MAGE_MODE=developer&amp;MAGE_DIRS[basis][path]=/var/www/example.com&amp;MAGE_DIRS[cachegeheugen][path]=/var/tmp/cache&quot;
+Voeg aan om het even welk bevel toe om Magento initialisatieparameters aan te passen bijvoorbeeld: &quot;MAGE_MODE=developer&amp;MAGE_DIRS [ basis ][path]=/var/www/example.com&amp;MAGE_DIRS [ geheime voorgeheugen ][path]=/var/tmp/cache&quot;
 
 - Vereist een waarde
 
@@ -9118,7 +9118,7 @@ Hiermee kunt u oude scripts (InstallSchema, UpgradeSchema) converteren naar de i
 
 ### `--magento-init-params`
 
-Voeg aan om het even welke bevel toe om Magento initialisatieparameters aan te passen Bijvoorbeeld: &quot;MAGE_MODE=developer&amp;MAGE_DIRS[basis][path]=/var/www/example.com&amp;MAGE_DIRS[cachegeheugen][path]=/var/tmp/cache&quot;
+Voeg aan om het even welk bevel toe om Magento initialisatieparameters aan te passen bijvoorbeeld: &quot;MAGE_MODE=developer&amp;MAGE_DIRS [ basis ][path]=/var/www/example.com&amp;MAGE_DIRS [ geheime voorgeheugen ][path]=/var/tmp/cache&quot;
 
 - Vereist een waarde
 
@@ -9182,7 +9182,7 @@ Controleert of het schema of de gegevens van DB verbetering vereisen
 
 ### `--magento-init-params`
 
-Voeg aan om het even welke bevel toe om Magento initialisatieparameters aan te passen Bijvoorbeeld: &quot;MAGE_MODE=developer&amp;MAGE_DIRS[basis][path]=/var/www/example.com&amp;MAGE_DIRS[cachegeheugen][path]=/var/tmp/cache&quot;
+Voeg aan om het even welk bevel toe om Magento initialisatieparameters aan te passen bijvoorbeeld: &quot;MAGE_MODE=developer&amp;MAGE_DIRS [ basis ][path]=/var/www/example.com&amp;MAGE_DIRS [ geheime voorgeheugen ][path]=/var/tmp/cache&quot;
 
 - Vereist een waarde
 
@@ -9728,7 +9728,7 @@ Instellen op 0 om compressie uit te schakelen (standaard is 1, ingeschakeld)
 
 ### `--cache-backend-redis-compression-lib`
 
-Te gebruiken compressielabel [snappy,lzf,l4z,zstd,gzip] (leeg laten om automatisch te bepalen)
+Compressiellib om [ snappy, lzf, l4z, zstd, gzip ] te gebruiken (verlaten leeg om automatisch te bepalen)
 
 - Vereist een waarde
 
@@ -9789,7 +9789,7 @@ Ingesteld op 1 om de cache van de volledige pagina te comprimeren (gebruik 0 om 
 
 ### `--page-cache-redis-compression-lib`
 
-Te gebruiken compressiebibliotheek [snappy,lzf,l4z,zstd,gzip] (leeg laten om automatisch te bepalen)
+De bibliotheek van de compressie om [ snappy, lzf, l4z, zstd, gzip ] te gebruiken (verlaten leeg om automatisch te bepalen)
 
 - Vereist een waarde
 
@@ -10130,7 +10130,7 @@ De installatie van het Magento wordt uitgevoerd in de droge-uitvoeringsmodus
 
 ### `--magento-init-params`
 
-Voeg aan om het even welke bevel toe om Magento initialisatieparameters aan te passen Bijvoorbeeld: &quot;MAGE_MODE=developer&amp;MAGE_DIRS[basis][path]=/var/www/example.com&amp;MAGE_DIRS[cachegeheugen][path]=/var/tmp/cache&quot;
+Voeg aan om het even welk bevel toe om Magento initialisatieparameters aan te passen bijvoorbeeld: &quot;MAGE_MODE=developer&amp;MAGE_DIRS [ basis ][path]=/var/www/example.com&amp;MAGE_DIRS [ geheime voorgeheugen ][path]=/var/tmp/cache&quot;
 
 - Vereist een waarde
 
@@ -10284,7 +10284,7 @@ Basename van het db reservedossier in var/steunen
 
 ### `--magento-init-params`
 
-Voeg aan om het even welke bevel toe om Magento initialisatieparameters aan te passen Bijvoorbeeld: &quot;MAGE_MODE=developer&amp;MAGE_DIRS[basis][path]=/var/www/example.com&amp;MAGE_DIRS[cachegeheugen][path]=/var/tmp/cache&quot;
+Voeg aan om het even welk bevel toe om Magento initialisatieparameters aan te passen bijvoorbeeld: &quot;MAGE_MODE=developer&amp;MAGE_DIRS [ basis ][path]=/var/www/example.com&amp;MAGE_DIRS [ geheime voorgeheugen ][path]=/var/tmp/cache&quot;
 
 - Vereist een waarde
 
@@ -10629,7 +10629,7 @@ Of een functie &#39;beveiligingssleutel&#39; moet worden gebruikt in URL&#39;s e
 
 ### `--magento-init-params`
 
-Voeg aan om het even welke bevel toe om Magento initialisatieparameters aan te passen Bijvoorbeeld: &quot;MAGE_MODE=developer&amp;MAGE_DIRS[basis][path]=/var/www/example.com&amp;MAGE_DIRS[cachegeheugen][path]=/var/tmp/cache&quot;
+Voeg aan om het even welk bevel toe om Magento initialisatieparameters aan te passen bijvoorbeeld: &quot;MAGE_MODE=developer&amp;MAGE_DIRS [ basis ][path]=/var/www/example.com&amp;MAGE_DIRS [ geheime voorgeheugen ][path]=/var/tmp/cache&quot;
 
 - Vereist een waarde
 
@@ -10693,7 +10693,7 @@ Hiermee wordt de toepassing Magento verwijderd
 
 ### `--magento-init-params`
 
-Voeg aan om het even welke bevel toe om Magento initialisatieparameters aan te passen Bijvoorbeeld: &quot;MAGE_MODE=developer&amp;MAGE_DIRS[basis][path]=/var/www/example.com&amp;MAGE_DIRS[cachegeheugen][path]=/var/tmp/cache&quot;
+Voeg aan om het even welk bevel toe om Magento initialisatieparameters aan te passen bijvoorbeeld: &quot;MAGE_MODE=developer&amp;MAGE_DIRS [ basis ][path]=/var/www/example.com&amp;MAGE_DIRS [ geheime voorgeheugen ][path]=/var/tmp/cache&quot;
 
 - Vereist een waarde
 
@@ -10790,7 +10790,7 @@ De installatie van het Magento wordt uitgevoerd in de droge-uitvoeringsmodus
 
 ### `--magento-init-params`
 
-Voeg aan om het even welke bevel toe om Magento initialisatieparameters aan te passen Bijvoorbeeld: &quot;MAGE_MODE=developer&amp;MAGE_DIRS[basis][path]=/var/www/example.com&amp;MAGE_DIRS[cachegeheugen][path]=/var/tmp/cache&quot;
+Voeg aan om het even welk bevel toe om Magento initialisatieparameters aan te passen bijvoorbeeld: &quot;MAGE_MODE=developer&amp;MAGE_DIRS [ basis ][path]=/var/www/example.com&amp;MAGE_DIRS [ geheime voorgeheugen ][path]=/var/tmp/cache&quot;
 
 - Vereist een waarde
 

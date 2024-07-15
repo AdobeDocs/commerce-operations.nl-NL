@@ -13,7 +13,7 @@ ht-degree: 0%
 # Afspeelmap voor implementatie {#implementation-playbook}
 
 - [Overzicht](overview.md)
-- Handel {#intro}
+- Commerce {#intro}
    - [Informatie over Adobe Commerce](intro/about-commerce.md)
    - [Beginselen van platformontwikkeling](intro/platform-development.md)
 - Projectbereik {#project-scope}
@@ -27,7 +27,7 @@ ht-degree: 0%
    - [Projectbeheertools](development/project-management-tools.md)
    - [Methode voor projectuitvoering](development/delivery.md)
    - [Kwaliteitscontrole](development/quality-control.md)
-- Planning en bestuur {#planning}
+- Planning en beheer {#planning}
    - [Bezorgings- en planningsaanpak](planning/delivery.md)
    - [Verantwoordelijkheid en verantwoordelijkheid](planning/ownership.md)
    - [Projectbeheer](planning/governance.md)
@@ -36,7 +36,7 @@ ht-degree: 0%
    - Algemene referentiearchitectuur {#global-reference-architecture}
       - [Overzicht](architecture/global-reference/overview.md)
       - [Voorbeelden](architecture/global-reference/examples.md)
-      - Composerontwikkeling {#composer}
+      - Ontwikkeling van composers {#composer}
          - [Overzicht](architecture/global-reference/composer/overview.md)
          - [Projectstructuur](architecture/global-reference/composer/project-structure.md)
          - [Tips en trucs](architecture/global-reference/composer/tips-and-tricks.md)
@@ -44,17 +44,17 @@ ht-degree: 0%
    - [Overzicht](infrastructure/overview.md)
    - Zelf hosten {#self-hosting}
       - [Overzicht](infrastructure/self-hosting/overview.md)
-      - [Infrastructuur ter plaatse](infrastructure/self-hosting/on-premises.md)
+      - [ op-gebouwinfrastructuur ](infrastructure/self-hosting/on-premises.md)
       - [Beveiligingsconcepten](infrastructure/self-hosting/security-concepts.md)
       - [Bewaking van telemetrie en tools](infrastructure/self-hosting/monitoring-tools.md)
       - [Ideeën voor noodherstel](infrastructure/self-hosting/disaster-recovery-ideas.md)
       - [Tips voor prestaties](infrastructure/self-hosting/performance-tips.md)
-   - Cloud-infrastructuur {#cloud}
+   - Cloudinfrastructuur {#cloud}
       - [Overzicht](infrastructure/cloud/overview.md)
       - [Regio&#39;s](infrastructure/cloud/regions.md)
       - [Technologieën](infrastructure/cloud/technology.md)
       - [Beveiliging en naleving](infrastructure/cloud/security.md)
-   - Optimalisatie van prestaties {#performance}
+   - Prestaties optimaliseren {#performance}
       - [Typische problemen](infrastructure/performance/optimization.md)
       - [Benchmarks](infrastructure/performance/benchmarks.md)
       - [Recommendations](infrastructure/performance/recommendations.md)
@@ -62,11 +62,11 @@ ht-degree: 0%
    - [Overzicht](launch/overview.md)
    - [Stappen vóór de introductie](launch/pre-launch-steps.md)
    - [Stappen starten](launch/launch-steps.md)
-   - [Stappen na het starten](launch/post-launch-steps.md)
+   - [Stappen voor Post](launch/post-launch-steps.md)
 - Onderhoud en ondersteuning {#maintenance}
    - [Overzicht](maintenance/overview.md)
    - [Adobe Managed Services](maintenance/adobe-managed-services.md)
-- Aanbevolen procedures {#best-practices}
+- Tips en trucs {#best-practices}
    - [Overzicht](best-practices/phases.md)
    - Planning {#planning}
       - [Overzicht](best-practices/planning/overview.md)
@@ -96,7 +96,7 @@ ht-degree: 0%
       - [Persoonlijke inhoudsblokken](best-practices/development/private-content-block-configuration.md)
       - [Statische implementatie van inhoud](best-practices/development/static-content-deployment.md)
       - [Databasetabellen wijzigen](best-practices/development/modifying-core-and-third-party-tables.md)
-      - [Code van de kern en van de derde wijzigen](best-practices/development/modifying-core-and-third-party-code.md)
+      - [ Wijzend kern en derdecode ](best-practices/development/modifying-core-and-third-party-code.md)
    - Starten {#launch}
       - [Overzicht](best-practices/launch/overview.md)
       - [Webcrawlers configureren](best-practices/launch/robots-txt.md)
@@ -114,4 +114,4 @@ ht-degree: 0%
       - [Services bijwerken](best-practices/maintenance/update-services.md)
       - [Controlelijst voor upgraden](best-practices/maintenance/upgrade-checklist.md)
       - [Voorwaarden voor upgrades voor MariaDB](best-practices/maintenance/mariadb-upgrade.md)
-- [Terugkeren naar operationele hulplijnen](https://experienceleague.adobe.com/docs/commerce-operations/operational-guides/home.html)
+- [ Terugkeer aan Operationele Gidsen ](https://experienceleague.adobe.com/docs/commerce-operations/operational-guides/home.html)

@@ -14,33 +14,33 @@ ht-degree: 0%
 
 Er wordt veel moeite gedaan om klanten de beste online ervaring te bieden. Wat de fysieke kant van de zaak betreft, mogen detailhandelaren het belang van de scheepvaart niet vergeten. Verzending kan niet alleen aan derden worden overgedragen. U moet onderzoek, planning, en analyse doen. Dit is het laatste punt in de reis van de klantenervaring, en daarom zou u de verzending en de vervulling moeten recht krijgen.
 
-![Scheepvaart- en afhandelingsdiagram](../../assets/playbooks/shipping-fulfillment.png)
+![ Scheepend en afhandelingsdiagram ](../../assets/playbooks/shipping-fulfillment.png)
 
 ## Basisfactoren
 
 De scheepvaart en de naleving van de regels zijn gebaseerd op een aantal basisfactoren, waaronder:
 
-- **Verzendmethoden en -kosten**—De ondernemingen moeten de volledige kosten van de verzending analyseren en verdelen en bepalen of om verzendkosten te absorberen, kosten aan klanten, of de kosten te delen? Hoe zal het bedrijf gratis verzendservices of verzendvoorstellen aanbieden? Hoe worden producten verzonden? Zijn er meer dan één verzendmethode en verzendkosten?
+- **Verschepende methodes en kosten** - De ondernemingen moeten de volledige kosten van het verschepen analyseren en verdelen en bepalen of om verzendkosten te absorberen, kosten op klanten over te brengen, of de kosten te delen? Hoe zal het bedrijf gratis verzendservices of verzendvoorstellen aanbieden? Hoe worden producten verzonden? Zijn er meer dan één verzendmethode en verzendkosten?
 
-- **Product**—Elk product verschilt qua aantal artikelen, gewicht, bestemming en duurzaamheid. Bedrijven moeten deze gegevens analyseren om inzicht te krijgen in de totale verzendkosten, omdat verschillende producten verschillende verzendkosten hebben.
+- **Product** - elk product is verschillend in termen van het aantal punten, gewicht, bestemming, en duurzaamheid. Bedrijven moeten deze gegevens analyseren om inzicht te krijgen in de totale verzendkosten, omdat verschillende producten verschillende verzendkosten hebben.
 
-- **Verpakken**—Het verpakken speelt ook een belangrijke rol in het begrijpen van de verschepende methode en de kosten. Is het product bijvoorbeeld broos of is het verpakt als geschenk?
+- **het Verpakken** - Het verpakken speelt ook een belangrijke rol in het begrijpen van de verschepende methode en kosten. Is het product bijvoorbeeld broos of is het verpakt als geschenk?
 
-- **Seizoen**—Welke veranderingen moeten worden doorgevoerd tijdens piekseizoenen, zoals klik op frenzy en festivals.
+- **Seizoen** - welke veranderingen binnen tijdens piekseizoenen, als klik frenzy en festivals zouden moeten worden gebracht.
 
-- **Vervoerders**—Welke derde scheepvaartmaatschappij het beste bij de zaken past? Welke diensten worden door de scheepvaartmaatschappijen verleend? Wat zijn de kosten?
+- **Dragers** - Welke derde verschepende onderneming het beste past de zaken? Welke diensten worden door de scheepvaartmaatschappijen verleend? Wat zijn de kosten?
 
 ## Verzendmethoden
 
 Voordat een bedrijf zijn product verzendt, moet het bedrijf beslissen over verzendmethoden en -kosten. Er zijn verschillende opties voor verzendmethoden, waaronder:
 
-- **Gratis verzending**—Het leveren van gratis verzending aan klanten kan de beste klantervaring zijn, maar kan niet bij de onderneming passen.
+- **het Vrije verschepen** - die vrije verzending aan klanten verstrekken zou de beste klantenervaring kunnen zijn, maar zou niet de zaken kunnen aanpassen.
 
-- **Realtime-tarieven**—Door samen te werken met externe leveranciers van verzendingen kunnen detailhandelaren de verzendmethode en kosten plaatsen die de verzendende onderneming momenteel in rekening brengt. Hierdoor kunnen klanten hun voorkeursverzendmethode kiezen.
+- **Realtime tarieven** - samenwerkend met derde verschepende leveranciers staat detaililers toe om de verzendende methode en kosten te posten die het verschepen bedrijf momenteel in rekening brengt. Hierdoor kunnen klanten hun voorkeursverzendmethode kiezen.
 
-- **Plat tarief**—Een van de populairste verzendopties. De truc is om ervoor te zorgen dat detailhandelaren klanten niet overladen of onderladen. Dit werkt ook als de detailhandel een standaardproduct heeft, maar gecompliceerd kan worden als de detailhandel verschillende producten heeft.
+- **Plat tarief** - één van de populairste het verschepen opties. De truc is om ervoor te zorgen dat detailhandelaren klanten niet overladen of onderladen. Dit werkt ook als de detailhandel een standaardproduct heeft, maar gecompliceerd kan worden als de detailhandel verschillende producten heeft.
 
-- **Gratis verzending over een bedrag**—Detailhandelaars kunnen gratis verzending aanbieden wanneer de klant meer dan een bepaald bedrag koopt. De detailhandelaars moeten dat bedrag berekenen om deze dienst te verlenen.
+- **het Vrije verschepen over een bedrag** - De detailhandelaars kunnen het vrije verschepen verstrekken wanneer de klantenaankopen boven een bepaald bedrag. De detailhandelaars moeten dat bedrag berekenen om deze dienst te verlenen.
 
 Voor de scheepvaart en de uitvoering was zowel intern als extern teamcoördinatie vereist. Een verzend- en afhandelingsstrategie moet met de gehele organisatie worden gedeeld, zodat deze op één lijn worden gebracht. Bijvoorbeeld, als het team van de Marketing een bevordering wil sturen die vrije verzending omvat, moeten zij het met de verschepen en uitvoeringsstrategie en het team richten om het even welke negatieve klantenervaring te elimineren.
 

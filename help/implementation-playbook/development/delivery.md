@@ -29,7 +29,7 @@ Met Continuous Delivery (CD) wordt direct broncode naar de server geïmplementee
 
 Aangezien de bouwstijl op het bouwstijlsysteem uitvoert, minimaliseert het niet alleen de plaatsingsonderbreking, maar vermindert ook de lading op de server. Dientengevolge, worden de activiteiten QA, die op de server gebeuren, minder beïnvloed.
 
-![Doorlopende leveringsinfografisch](../../assets/playbooks/cicd.svg)
+![ Ononderbroken levering infographic ](../../assets/playbooks/cicd.svg)
 
 Het CI/CD-proces in het vorige diagram kan als volgt kort worden beschreven:
 

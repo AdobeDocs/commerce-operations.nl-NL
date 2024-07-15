@@ -5,7 +5,7 @@ exl-id: 9ac485c5-d491-4022-9366-5e3a382513b6
 feature: Best Practices
 source-git-commit: 94d7a57dcd006251e8eefbdb4ec3a5e140bf43f9
 workflow-type: tm+mt
-source-wordcount: '1536'
+source-wordcount: '1532'
 ht-degree: 0%
 
 ---
@@ -148,7 +148,7 @@ De volgende vragen kunnen als uitgangspunt dienen om te zien welke informatie mo
 
 - Is er een vereiste voor een mobiele app? Moet PWA worden gebruikt voor mobiele frontend?
 
-- Welke specifieke browsers moeten worden getest (behalve de standaardbrowsers IE9+, Firefox, Chrome, Safari)?
+- Zijn er specifieke browsers die moeten worden getest (behalve de standaardbrowsers IE9+, Firefox, Chrome, Safari)?
 
 - Wat zijn de talen voor elke voorkant? Is de vertaalde inhoud beschikbaar of is ondersteuning nodig?
 

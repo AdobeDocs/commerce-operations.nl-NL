@@ -1,11 +1,11 @@
 ---
 title: Implementatiestrategieën voor statische weergavebestanden
-description: Lees over plaatsingsstrategieën voor de toepassing van de Handel.
+description: Lees meer over implementatiestrategieën voor de Commerce-toepassing.
 feature: Configuration, Deploy, Extensions
 exl-id: 12ebbd36-f813-494f-9515-54ce697ca2e4
 source-git-commit: 403a5937561d82b02fd126c95af3f70b0ded0747
 workflow-type: tm+mt
-source-wordcount: '482'
+source-wordcount: '446'
 ht-degree: 0%
 
 ---
@@ -14,17 +14,17 @@ ht-degree: 0%
 
 Bij het implementeren van statische weergavebestanden kunt u een van de drie beschikbare strategieën kiezen. Elk van hen verstrekt optimale plaatsingsresultaten voor verschillende gebruiksgevallen:
 
-- [Standaard](#standard-strategy): het reguliere implementatieproces.
-- [Snel](#quick-strategy) (_default_): minimaliseert de tijd die nodig is voor de implementatie wanneer bestanden voor meerdere landinstellingen worden geïmplementeerd.
-- [Compact](#compact-strategy)Met : wordt de ruimte die door de gepubliceerde weergavebestanden wordt ingenomen, geminimaliseerd.
+- [ Norm ](#standard-strategy): het regelmatige plaatsingsproces.
+- [ Snel ](#quick-strategy) (_gebrek_): minimaliseert de tijd die voor plaatsing wordt vereist wanneer de dossiers voor meer dan één scène worden opgesteld.
+- [ Compact ](#compact-strategy): minimaliseert de ruimte die door de gepubliceerde meningsdossiers wordt genomen.
 
 In de volgende secties worden de implementatiedetails en -kenmerken van elke strategie beschreven.
 
 ## Standaardstrategie
 
-Wanneer de Standaardstrategie wordt gebruikt, worden alle statische meningsdossiers voor alle pakketten opgesteld, dat wil zeggen, verwerkt door [`\Magento\Framework\App\View\Asset\Publisher`](https://github.com/magento/magento2/blob/2.4/lib/internal/Magento/Framework/App/View/Asset/Publisher.php).
+Wanneer de Standaardstrategie wordt gebruikt, worden alle statische meningsdossiers voor alle pakketten opgesteld, dat wil zeggen, verwerkt door [`\Magento\Framework\App\View\Asset\Publisher` ](https://github.com/magento/magento2/blob/2.4/lib/internal/Magento/Framework/App/View/Asset/Publisher.php).
 
-Zie voor meer informatie [Statische weergavebestanden gebruiken](../cli/static-view-file-deployment.md).
+Voor meer informatie, zie [ statische meningsdossiers ](../cli/static-view-file-deployment.md) opstellen.
 
 ## Snelle strategie
 
@@ -38,15 +38,15 @@ De snelle strategie voert de volgende acties uit:
 
 >[!INFO]
 >
->Door _gelijkaardig_, we hebben het over bestanden die onafhankelijk zijn van de landinstelling, het thema of het gebied. Deze bestanden kunnen CSS, afbeeldingen en lettertypen bevatten.
+>Door _gelijkaardige_, bedoelen wij dossiers die van de scène, het thema, of het gebied onafhankelijk zijn. Deze bestanden kunnen CSS, afbeeldingen en lettertypen bevatten.
 
 Deze benadering minimaliseert de plaatsingstijd die voor veelvoudige scènes wordt vereist hoewel veel dossiers worden gedupliceerd.
 
 ## Compacte strategie
 
-Met de compacte strategie vermijdt u dubbele bestanden door vergelijkbare bestanden op te slaan in `base` submappen.
+Met de compacte strategie vermijdt u bestandsduplicatie door vergelijkbare bestanden op te slaan in submappen van `base` .
 
-Voor het geoptimaliseerde resultaat worden drie bereiken voor mogelijke gelijkenis toegewezen: gebied, thema en landinstelling. De `base` subdirectory&#39;s worden gemaakt voor alle combinaties van deze bereiken.
+Voor het geoptimaliseerde resultaat worden drie bereiken voor mogelijke gelijkenis toegewezen: gebied, thema en landinstelling. De submappen van `base` worden gemaakt voor alle combinaties van deze bereiken.
 
 De bestanden worden op basis van de volgende patronen naar deze submappen geïmplementeerd.
 
@@ -66,11 +66,11 @@ De benadering van plaatsing die in de compacte strategie wordt gebruikt betekent
 - `map.php`
 - `requirejs-map.js`
 
-De `map.php` bestand wordt gebruikt door [`Magento\Framework\View\Asset\Repository`](https://github.com/magento/magento2/blob/2.4/lib/internal/Magento/Framework/View/Asset/Repository.php) om juiste URL&#39;s samen te stellen.
+Het `map.php` dossier wordt gebruikt door [`Magento\Framework\View\Asset\Repository` ](https://github.com/magento/magento2/blob/2.4/lib/internal/Magento/Framework/View/Asset/Repository.php) om correcte URLs te bouwen.
 
-De `requirejs-map.js` wordt gebruikt door de `baseUrlResolver` insteekmodule voor RequireJS.
+De `requirejs-map.js` wordt gebruikt door de `baseUrlResolver` -insteekmodule voor RequireJS.
 
-Voorbeeld van `map.php`:
+Voorbeeld van `map.php` :
 
 ```php?start_inline=1
 return [
@@ -87,7 +87,7 @@ return [
 ];
 ```
 
-Voorbeeld van `requirejs-map.js`:
+Voorbeeld van `requirejs-map.js` :
 
 ```js
 require.config({
@@ -101,6 +101,6 @@ require.config({
 
 ## Tips voor ontwikkelaars van extensies
 
-Als u URL&#39;s wilt maken naar statische weergavebestanden, gebruikt u [`\Magento\Framework\View\Asset\Repository::createAsset()`](https://github.com/magento/magento2/blob/2.4/lib/internal/Magento/Framework/View/Asset/Repository.php#L211-L244).
+Gebruik [`\Magento\Framework\View\Asset\Repository::createAsset()` ](https://github.com/magento/magento2/blob/2.4/lib/internal/Magento/Framework/View/Asset/Repository.php#L211-L244) om URLs aan statische meningsdossiers te bouwen.
 
 Gebruik geen URL-aaneenschakelingen om problemen te voorkomen waarbij statische bestanden niet worden gevonden en niet worden weergegeven tijdens het weergeven van pagina&#39;s.

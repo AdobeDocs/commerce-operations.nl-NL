@@ -28,25 +28,25 @@ In de dataflow-diagrammen worden de typen gegevens weergegeven die klanten en be
 
 Een gebruiker kan klant-, adres- en betalingsgegevens invoeren bij het registreren voor een account, tijdens het afrekenen en vergelijkbare gebeurtenissen.
 
-![Punten voor gegevensinvoer vóór](../../assets/security-compliance/frontend-data-entry-points.svg)
+![ Voorste punten van de gegevensingang ](../../assets/security-compliance/frontend-data-entry-points.svg)
 
 ### Punten voor gegevenstoegang vóór
 
 Commerce laadt klantgegevens wanneer de klant zich aanmeldt en bekijkt verschillende pagina&#39;s of checkt deze uit.
 
-![Punten voor gegevenstoegang vóór](../../assets/security-compliance/frontend-data-access-points.svg)
+![ de toegangspunten van de voorste gegevens ](../../assets/security-compliance/frontend-data-access-points.svg)
 
 ### Punten voor achtergrondgegevensinvoer
 
 Een handelaar kan klant, adres, en betalingsinformatie van Admin ingaan om een klant of orde tot stand te brengen.
 
-![Punten voor achtergrondgegevensinvoer](../../assets/security-compliance/backend-data-entry-points.svg)
+![ De punten van de de gegevensingang van het achtereind ](../../assets/security-compliance/backend-data-entry-points.svg)
 
 ### Gegevenstoegangspunten op de achtergrond
 
 Commerce laadt klanteninformatie wanneer een handelaar verscheidene types van netten bekijkt, op een net klikt om gedetailleerde informatie te zien, en diverse andere taken uitvoert.
 
-![Gegevenstoegangspunten op de achtergrond](../../assets/security-compliance/backend-data-access-points.svg)
+![ de toegangspunten van de achterste gegevens ](../../assets/security-compliance/backend-data-access-points.svg)
 
 ## Database-entiteiten
 
@@ -54,17 +54,17 @@ Magento 1 slaat klanteninformatie in klant, verkoop, en andere gegevensbestandli
 
 ### Klantgegevens
 
-Magento 1 slaat klanteninformatie in `customer_entity` en `customer_address_entity` tabellen. Beide lijsten hebben verscheidene verwijzingstabellen die de attributen van de douaneklanten kunnen bevatten.
+Magento 1 slaat klantgegevens op in de tabellen `customer_entity` en `customer_address_entity` . Beide lijsten hebben verscheidene verwijzingstabellen die de attributen van de douaneklanten kunnen bevatten.
 
 #### `customer_entity` en referentietabellen
 
-De volgende kolommen in de `customer_entity`tabel bevat klantgegevens:
+De volgende kolommen in de `customer_entity` lijst bevatten klanteninformatie:
 
 | Kolom | Gegevenstype |
 | --- | --- |
 | `email` | varchar(255) |
 
-Deze tabellen verwijzen naar `customer_entity` en kan aangepaste klantkenmerken bevatten:
+Deze tabellen verwijzen naar `customer_entity` en kunnen aangepaste klantkenmerken bevatten:
 
 | Tabel | Kolom | Gegevenstype |
 | --- | --- | --- |
@@ -76,7 +76,7 @@ Deze tabellen verwijzen naar `customer_entity` en kan aangepaste klantkenmerken 
 
 #### `customer_address_entity` en referentietabellen
 
-De volgende tabelverwijzingen `customer_address_entity` en kan aangepaste klantkenmerken bevatten:
+De volgende tabellen verwijzen naar `customer_address_entity` en kunnen aangepaste klantkenmerken bevatten:
 
 | Tabel | Kolom | Gegevenstype |
 | --- | --- | --- |
@@ -88,11 +88,11 @@ De volgende tabelverwijzingen `customer_address_entity` en kan aangepaste klantk
 
 ### Ordergegevens
 
-De `sales_flat_order` en verwante tabellen bevatten de naam, het factuuradres en het verzendadres van de klant, alsmede gerelateerde informatie.
+In de tabellen `sales_flat_order` en Verwante bestanden staan de naam, het factuuradres en het verzendadres van de klant en de bijbehorende gegevens.
 
 #### `sales_flat_order` table
 
-De volgende kolommen in de `sales_order` tabel bevat klantgegevens:
+De volgende kolommen in de tabel `sales_order` bevatten klantgegevens:
 
 | Kolom | Gegevenstype |
 | --- | --- |
@@ -109,7 +109,7 @@ De volgende kolommen in de `sales_order` tabel bevat klantgegevens:
 
 #### `sales_flat_order_address` table
 
-De `sales_flat_order_address` de tabel bevat het adres van de klant.
+De tabel `sales_flat_order_address` bevat het adres van de klant.
 
 | Kolom | Gegevenstype |
 | --- | --- |
@@ -131,7 +131,7 @@ De `sales_flat_order_address` de tabel bevat het adres van de klant.
 
 #### `sales_flat_order_grid` table
 
-De volgende kolommen in de `sales_flat_order_grid` tabel bevat klantgegevens:
+De volgende kolommen in de tabel `sales_flat_order_grid` bevatten klantgegevens:
 
 | Kolom | Gegevenstype |
 | --- | --- |
@@ -141,7 +141,7 @@ De volgende kolommen in de `sales_flat_order_grid` tabel bevat klantgegevens:
 
 #### `sales_flat_order_payment` table
 
-De volgende kolommen in de `sales_flat_order_payment` tabel bevat klantgegevens:
+De volgende kolommen in de tabel `sales_flat_order_payment` bevatten klantgegevens:
 
 | Kolom | Gegevenstype |
 | --- | --- |
@@ -161,7 +161,7 @@ Aanhalingstekens bevatten de naam, het e-mailadres, het adres en verwante gegeve
 
 #### `sales_flat_quote` table
 
-De volgende kolommen in de `sales_flat_quote` tabel bevat klantgegevens:
+De volgende kolommen in de tabel `sales_flat_quote` bevatten klantgegevens:
 
 | Kolom | Gegevenstype |
 | --- | --- |
@@ -181,7 +181,7 @@ De volgende kolommen in de `sales_flat_quote` tabel bevat klantgegevens:
 
 #### `sales_flat_quote_address` table
 
-De volgende kolommen in de `sales_flat_quote_address` tabel bevat klantgegevens:
+De volgende kolommen in de tabel `sales_flat_quote_address` bevatten klantgegevens:
 
 | Kolom | Gegevenstype |
 | --- | --- |
@@ -200,7 +200,7 @@ De volgende kolommen in de `sales_flat_quote_address` tabel bevat klantgegevens:
 
 #### `sales_flat_quote_payment` table
 
-De `sales_flat_quote_payment` de tabel bevat creditcardgegevens en andere transactiegegevens.
+De tabel `sales_flat_quote_payment` bevat creditcardgegevens en andere transactiegegevens.
 
 | Kolom | Gegevenstype |
 | --- | --- |

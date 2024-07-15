@@ -45,7 +45,7 @@ ht-degree: 0%
       - [2.4.3.](release-notes/security/2-4-3-patches.md)
       - [2.4.2.](release-notes/security/2-4-2-patches.md)
 - [Productbeschikbaarheid](product-availability.md)
-- [Bèta-releases](beta.md)
+- [Beta-releases](beta.md)
 - Planning en beleid {#planning}
    - [Levenscyclusbeleid](lifecycle-policy.md)
    - [Versionbeleid](versioning-policy.md)
@@ -55,4 +55,4 @@ ht-degree: 0%
 - Pakketten {#packages}
    - [Adobe Commerce](packages/adobe-commerce.md)
    - [Magento Open Source](packages/magento-open-source.md)
-- [Terugkeren naar operationele hulplijnen](https://experienceleague.adobe.com/docs/commerce-operations/operational-guides/home.html)
+- [ Terugkeer aan Operationele Gidsen ](https://experienceleague.adobe.com/docs/commerce-operations/operational-guides/home.html)

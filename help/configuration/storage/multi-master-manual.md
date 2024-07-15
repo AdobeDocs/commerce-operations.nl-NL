@@ -5,7 +5,7 @@ recommendations: noCatalog
 exl-id: 2c357486-4a8a-4a36-9e13-b53c83f69456
 source-git-commit: af45ac46afffeef5cd613628b2a98864fd7da69b
 workflow-type: tm+mt
-source-wordcount: '1379'
+source-wordcount: '1373'
 ht-degree: 0%
 
 ---
@@ -16,7 +16,7 @@ ht-degree: 0%
 
 {{deprecate-split-db}}
 
-Als de toepassing van de Handel reeds in productie is of als u reeds douanecode of componenten hebt geïnstalleerd, zou u gespleten gegevensbestanden kunnen moeten manueel vormen. Neem voordat u doorgaat contact op met Adobe Commerce Support om te controleren of dit in uw geval noodzakelijk is.
+Als de Commerce-toepassing al in productie is of als u al aangepaste code of componenten hebt geïnstalleerd, moet u mogelijk splitsingsdatabases handmatig configureren. Neem voordat u doorgaat contact op met Adobe Commerce Support om te controleren of dit in uw geval noodzakelijk is.
 
 Het handmatig splitsen van databases omvat:
 
@@ -29,30 +29,30 @@ Het handmatig splitsen van databases omvat:
 
 >[!WARNING]
 >
->Als om het even welke douanecode JOINs met lijsten in de verkoop en citeert gegevensbestanden gebruikt, u _kan_ gebruik gesplitste databases. Neem bij twijfel contact op met de auteurs van aangepaste code of extensies om ervoor te zorgen dat hun code geen JOIN&#39;s gebruikt.
+>Als om het even welke douanecode JOINs met lijsten in de verkoop en citeert gegevensbestanden gebruikt, kunt u _niet_ gespleten gegevensbestanden gebruiken. Neem bij twijfel contact op met de auteurs van aangepaste code of extensies om ervoor te zorgen dat hun code geen JOIN&#39;s gebruikt.
 
 Dit onderwerp gebruikt de volgende noemende overeenkomsten:
 
-- De hoofddatabasenaam is `magento` en de gebruikersnaam en het wachtwoord beide zijn `magento`
-- De naam van de quotadatabase is `magento_quote` en de gebruikersnaam en het wachtwoord beide zijn `magento_quote`
+- De hoofddatabasenaam is `magento` en de gebruikersnaam en het wachtwoord zijn beide `magento`
+- De databasenaam van het aanhalingsteken is `magento_quote` en de gebruikersnaam en het wachtwoord zijn beide `magento_quote`
 
-  De citaatdatabase wordt ook wel de _uitchecken_ database.
+  Het citaatgegevensbestand wordt ook bedoeld als _checkout_ gegevensbestand.
 
-- De naam van de verkoopdatabase is `magento_sales` en de gebruikersnaam en het wachtwoord beide zijn `magento_sales`
+- De naam van de verkoopdatabase is `magento_sales` en de gebruikersnaam en het wachtwoord zijn beide `magento_sales`
 
   Het verkoopgegevensbestand wordt ook bedoeld als OMS gegevensbestand.
 
 >[!INFO]
 >
->Deze gids veronderstelt dat alle drie gegevensbestanden op de zelfde gastheer zoals de toepassing van de Handel zijn. Nochtans, is de keus van waar te om van de gegevensbestanden de plaats te bepalen en wat zij worden genoemd aan u. We hopen dat onze voorbeelden de instructies makkelijker te volgen maken.
+>In deze handleiding wordt ervan uitgegaan dat alle drie de databases zich op dezelfde host bevinden als de Commerce-toepassing. Nochtans, is de keus van waar te om van de gegevensbestanden de plaats te bepalen en wat zij worden genoemd aan u. We hopen dat onze voorbeelden de instructies makkelijker te volgen maken.
 
-## Back-up maken van het systeem van de handel
+## Back-up maken van het Commerce-systeem
 
 Adobe raadt u ten zeerste aan een back-up te maken van uw huidige database en bestandssysteem, zodat u deze kunt herstellen als u tijdens het proces problemen ondervindt.
 
-**Een back-up van uw systeem maken**:
+**aan file uw systeem**:
 
-1. Meld u aan bij de Commerce-server als of schakel over naar de [eigenaar van bestandssysteem](../../installation/prerequisites/file-system/overview.md).
+1. Login aan uw server van Commerce als, of schakelaar aan, de [ eigenaar van het dossiersysteem ](../../installation/prerequisites/file-system/overview.md).
 1. Voer de volgende opdrachten in:
 
    ```bash
@@ -65,7 +65,7 @@ Adobe raadt u ten zeerste aan een back-up te maken van uw huidige database en be
 
 Deze sectie bespreekt hoe te om gegevensbestandinstanties voor verkoop en citaatlijsten tot stand te brengen.
 
-**Om verkoop en OMS citaatgegevensbestanden te creëren**:
+**om verkoop en OMS citaatgegevensbestanden** tot stand te brengen:
 
 1. Meld u als elke gebruiker aan bij uw databaseserver.
 1. Ga het volgende bevel in om aan een MySQL bevelherinnering te krijgen:
@@ -74,8 +74,8 @@ Deze sectie bespreekt hoe te om gegevensbestandinstanties voor verkoop en citaat
    mysql -u root -p
    ```
 
-1. Ga MySQL in `root` wachtwoord van de gebruiker wanneer daarom wordt gevraagd.
-1. Voer de volgende opdrachten in in de volgorde die wordt weergegeven om databaseinstanties met de naam `magento_quote` en `magento_sales` met dezelfde gebruikersnamen en wachtwoorden:
+1. Voer het gebruikerswachtwoord van MySQL `root` in wanneer hierom wordt gevraagd.
+1. Voer de volgende opdrachten in de volgorde in die wordt weergegeven om databaseinstanties met de naam `magento_quote` en `magento_sales` te maken met dezelfde gebruikersnamen en wachtwoorden:
 
    ```shell
    create database magento_quote;
@@ -87,7 +87,7 @@ Deze sectie bespreekt hoe te om gegevensbestandinstanties voor verkoop en citaat
    GRANT ALL ON magento_sales.* TO magento_sales@localhost IDENTIFIED BY 'magento_sales';
    ```
 
-1. Enter `exit` om de bevelherinnering te verlaten.
+1. Ga `exit` in om de bevelherinnering weg te gaan.
 
 1. Controleer de databases één voor één:
 
@@ -126,11 +126,11 @@ Tabelnamen van verkoopdatabase beginnen met:
 - `salesrule_`
 - `sales_`
 - `magento_sales_`
-- De `magento_customercustomattributes_sales_flat_order` ook de tabel wordt beïnvloed
+- De tabel `magento_customercustomattributes_sales_flat_order` heeft ook invloed op
 
 >[!INFO]
 >
->Deze sectie bevat manuscripten met specifieke namen van gegevensbestandlijsten. Als u aanpassingen hebt uitgevoerd of als u een volledige lijst van lijsten wilt zien alvorens u acties op hen uitvoert, zie [Referentiescripts](#reference-scripts).
+>Deze sectie bevat manuscripten met specifieke namen van gegevensbestandlijsten. Als u aanpassingen hebt uitgevoerd of als u een volledige lijst van lijsten wilt zien alvorens u acties op hen uitvoert, zie [ manuscripten van de Verwijzing ](#reference-scripts).
 
 Zie voor meer informatie:
 
@@ -139,13 +139,13 @@ Zie voor meer informatie:
 
 ### SQL-scripts maken voor de verkoopdatabase
 
-Creeer de volgende SQL manuscripten in een plaats die door de gebruiker toegankelijk is aangezien u login aan uw server van de Handel. Als u zich bijvoorbeeld aanmeldt of opdrachten uitvoert als `root`kunt u de scripts in het dialoogvenster `/root/sql-scripts` directory.
+Maak de volgende SQL-scripts op een locatie die toegankelijk is voor de gebruiker als deze zich aanmeldt bij de Commerce-server. Als u zich bijvoorbeeld aanmeldt of opdrachten uitvoert als `root` , kunt u de scripts in de map `/root/sql-scripts` maken.
 
 #### Externe toetsen verwijderen
 
 Dit manuscript verwijdert buitenlandse sleutels die naar niet-verkooplijsten van het verkoopgegevensbestand verwijzen.
 
-Het volgende script maken en een soortgelijke naam geven `1_foreign-sales.sql`. Vervangen `<your main DB name>` met de naam van uw database.
+Maak het volgende script en geef het een naam zoals `1_foreign-sales.sql` . Vervang `<your main DB name>` door de naam van de database.
 
 ```sql
 use <your main DB name>;
@@ -200,13 +200,13 @@ ALTER TABLE paypal_billing_agreement_order DROP FOREIGN KEY PAYPAL_BILLING_AGREE
 
 Voer het voorgaande script uit:
 
-1. Meld u aan bij uw MySQL-database als de `root` of gebruiker met administratieve bevoegdheden:
+1. Meld u aan bij uw MySQL-database als de `root` - of beheergebruiker:
 
    ```bash
    mysql -u root -p
    ```
 
-1. Bij de `mysql>` vraag, stel het manuscript als volgt in werking:
+1. Voer het script bij de aanwijzing `mysql>` als volgt uit:
 
    ```shell
    source <path>/<script>.sql
@@ -218,20 +218,20 @@ Voer het voorgaande script uit:
    source /root/sql-scripts/1_foreign-sales.sql
    ```
 
-1. Nadat het script is uitgevoerd, voert u `exit`.
+1. Voer `exit` in nadat het script is uitgevoerd.
 
 ### Verkoopgegevens voor back-ups
 
-Deze sectie bespreekt hoe te file verkooplijsten van het belangrijkste gegevensbestand van de Handel zodat kunt u hen in het afzonderlijke verkoopgegevensbestand herstellen.
+Deze sectie bespreekt hoe te file verkooplijsten van het belangrijkste gegevensbestand van Commerce zodat kunt u hen in het afzonderlijke verkoopgegevensbestand herstellen.
 
-Als u momenteel bij `mysql>` prompt, enter `exit` om naar bevelshell terug te keren.
+Als u momenteel bij de `mysql>` vraag bent, ga `exit` in om aan bevelshell terug te keren.
 
-Voer het volgende uit `mysqldump` opdrachten, één voor één, uit de opdrachtshell. Vervang in elke sectie het volgende:
+Voer de volgende `mysqldump` opdrachten één voor één uit vanuit de opdrachtshell. Vervang in elke sectie het volgende:
 
 - `<your database root username>` met de naam van de basisgebruiker van de database
 - `<your database root user password>` met het gebruikerswachtwoord
 - `<your main Commerce DB name>` met de naam van uw Commerce-database
-- `<path>` met een schrijfbaar bestandssysteempad
+- `<path>` met een schrijfbaar systeempad
 
 #### Script 1
 
@@ -263,7 +263,7 @@ Met dit script worden de verkoopgegevens in de quotadatabase hersteld.
 
 #### NDB-vereiste
 
-Als u een [Netwerkdatabase (NDB)](https://dev.mysql.com/doc/refman/5.6/en/mysql-cluster.html) cluster:
+Als u de cluster van het a [ Gegevensbestand van het Netwerk (NDB) ](https://dev.mysql.com/doc/refman/5.6/en/mysql-cluster.html) gebruikt:
 
 1. Tabellen van InnoDb naar NDB-type converteren in dump-bestanden:
 
@@ -297,9 +297,9 @@ Wanneer
 
 - `<your sales DB name>` met de naam van uw verkoopdatabase.
 
-  In dit onderwerp, is de naam van het steekproefgegevensbestand `magento_sales`.
+  In dit onderwerp is de naam van de voorbeelddatabase `magento_sales` .
 
-- `<root username>` met uw MySQL hoofdgebruikersnaam
+- `<root username>` met uw MySQL-hoofdgebruikersnaam
 - `<root user password>` met het gebruikerswachtwoord
 - Controleer de locatie van de back-upbestanden die u eerder hebt gemaakt (bijvoorbeeld `/var/sales.sql`)
 
@@ -309,15 +309,15 @@ Deze sectie bespreekt taken die worden vereist om buitenlandse sleutels van de l
 
 >[!INFO]
 >
->Deze sectie bevat manuscripten met specifieke namen van gegevensbestandlijsten. Als u aanpassingen hebt uitgevoerd of als u een volledige lijst van lijsten wilt zien alvorens u acties op hen uitvoert, zie [Referentiescripts](#reference-scripts).
+>Deze sectie bevat manuscripten met specifieke namen van gegevensbestandlijsten. Als u aanpassingen hebt uitgevoerd of als u een volledige lijst van lijsten wilt zien alvorens u acties op hen uitvoert, zie [ manuscripten van de Verwijzing ](#reference-scripts).
 
-De namen van de de gegevensbestandlijsten van het citaat beginnen met `quote`. De `magento_customercustomattributes_sales_flat_quote` en `magento_customercustomattributes_sales_flat_quote_address` ook de tabellen worden beïnvloed
+De namen van de de gegevensbestandlijsten van de citaat beginnen met `quote`. De tabellen `magento_customercustomattributes_sales_flat_quote` en `magento_customercustomattributes_sales_flat_quote_address` worden ook beïnvloed
 
 ### Externe toetsen uit aanhalingsteksttabellen neerzetten
 
-Met dit script worden externe sleutels die verwijzen naar tabellen die niet verwijzen naar aanhalingstekens, verwijderd uit concepttabellen. Vervangen `<your main Commerce DB name>` met de naam van uw Commerce-database.
+Met dit script worden externe sleutels die verwijzen naar tabellen die niet verwijzen naar aanhalingstekens, verwijderd uit concepttabellen. Vervang `<your main Commerce DB name>` door de naam van uw Commerce-database.
 
-Het volgende script maken en een soortgelijke naam geven `2_foreign-key-quote.sql`:
+Maak het volgende script en geef het een naam zoals `2_foreign-key-quote.sql` :
 
 ```sql
 use <your main DB name>;
@@ -334,7 +334,7 @@ Voer het script als volgt uit:
    mysql -u root -p
    ```
 
-1. Bij de `mysql >` vraag, stel het manuscript als volgt in werking:
+1. Voer het script bij de aanwijzing `mysql >` als volgt uit:
    `source <path>/<script>.sql`
 
    Bijvoorbeeld:
@@ -343,7 +343,7 @@ Voer het script als volgt uit:
    source /root/sql-scripts/2_foreign-key-quote.sql
    ```
 
-1. Nadat het script is uitgevoerd, voert u `exit`.
+1. Voer `exit` in nadat het script is uitgevoerd.
 
 ### Back-up maken van prijsopgaven
 
@@ -357,7 +357,7 @@ mysqldump -u <your database root username> -p <your main Commerce DB name> magen
 
 ### NDB-vereiste
 
-Als u een [Netwerkdatabase (NDB)](https://dev.mysql.com/doc/refman/5.6/en/mysql-cluster.html) cluster:
+Als u de cluster van het a [ Gegevensbestand van het Netwerk (NDB) ](https://dev.mysql.com/doc/refman/5.6/en/mysql-cluster.html) gebruikt:
 
 1. Tabellen van InnoDb naar NDB-type converteren in dump-bestanden:
 
@@ -375,9 +375,9 @@ mysql -u root -p magento_quote < /<path>/quote.sql
 
 ## Verkoop en prijsopgave uit de database neerzetten
 
-Dit manuscript verkoopt en citeert lijsten van het gegevensbestand van de Handel. Vervangen `<your main DB name>` met de naam van uw Commerce-database.
+Dit script verkoopt tabellen en citeert deze uit de Commerce-database. Vervang `<your main DB name>` door de naam van uw Commerce-database.
 
-Het volgende script maken en een soortgelijke naam geven `3_drop-tables.sql`:
+Maak het volgende script en geef het een naam zoals `3_drop-tables.sql` :
 
 ```sql
 use <your main DB name>;
@@ -457,7 +457,7 @@ Voer het script als volgt uit:
    mysql -u root -p
    ```
 
-1. Bij de `mysql>` vraag, stel het manuscript als volgt in werking:
+1. Voer het script bij de aanwijzing `mysql>` als volgt uit:
 
    ```shell
    source <path>/<script>.sql
@@ -469,26 +469,26 @@ Voer het script als volgt uit:
    source /root/sql-scripts/3_drop-tables.sql
    ```
 
-1. Nadat het script is uitgevoerd, voert u `exit`.
+1. Voer `exit` in nadat het script is uitgevoerd.
 
 ## Implementatieconfiguratie bijwerken
 
-De definitieve stap in manueel het splitsen van gegevensbestanden moet verbinding en middelinformatie aan de plaatsingsconfiguratie van de Handel toevoegen, `env.php`.
+De laatste stap bij het handmatig splitsen van databases is het toevoegen van verbinding- en broninformatie aan de Commerce-implementatieconfiguratie, `env.php` .
 
 Om de plaatsingsconfiguratie bij te werken:
 
-1. Meld u aan bij de Commerce-server als of schakel over naar de [eigenaar van bestandssysteem](../../installation/prerequisites/file-system/overview.md).
+1. Login aan uw server van Commerce als, of schakelaar aan, de [ eigenaar van het dossiersysteem ](../../installation/prerequisites/file-system/overview.md).
 1. Maak een back-up van uw implementatieconfiguratie:
 
    ```bash
    cp <magento_root>/app/etc/env.php <magento_root>/app/etc/env.php.orig
    ```
 
-1. Openen `<magento_root>/app/etc/env.php` in een teksteditor en werk deze bij met behulp van de richtlijnen die in de volgende secties worden besproken.
+1. Open `<magento_root>/app/etc/env.php` in een teksteditor en werk deze bij aan de hand van de richtlijnen die in de volgende secties worden besproken.
 
 ### Databaseverbindingen bijwerken
 
-Zoek het blok dat begint met `'default'` (onder `'connection'`) en toevoegen `'checkout'` en `'sales'` secties. Vervang voorbeeldwaarden door waarden die geschikt zijn voor uw site.
+Zoek het blok met `'default'` (onder `'connection'` ) en voeg `'checkout'` - en `'sales'` -secties toe. Vervang voorbeeldwaarden door waarden die geschikt zijn voor uw site.
 
 ```php
  'default' =>
@@ -529,7 +529,7 @@ Zoek het blok dat begint met `'default'` (onder `'connection'`) en toevoegen `'c
 
 ### Bronnen bijwerken
 
-Zoek het blok dat begint met `'resource'` en toevoegen `'checkout'` en `'sales'` de volgende secties:
+Zoek het blok met `'resource'` en voeg er als volgt secties `'checkout'` en `'sales'` aan toe:
 
 ```php
 'resource' =>
@@ -555,16 +555,16 @@ Deze sectie bevat scripts die u kunt uitvoeren en waarmee een volledige lijst me
 Deze scripts gebruiken:
 
 1. Maak een SQL-script met de inhoud van elk script in deze sectie.
-1. In elk script vervangt u `<your main DB name>` met de naam van uw Commerce-database.
+1. Vervang `<your main DB name>` in elk script door de naam van uw Commerce-database.
 
-   In dit onderwerp, is de naam van het steekproefgegevensbestand `magento`.
+   In dit onderwerp is de naam van de voorbeelddatabase `magento` .
 
-1. Elk script uitvoeren vanaf het `mysql>` vragen als `source <script name>`
+1. Elk script uitvoeren vanaf de aanwijzing `mysql>` als `source <script name>`
 1. Onderzoek de uitvoer.
-1. Kopieer het resultaat van elk script naar een ander SQL-script, waarbij de verticale streep (`|`).
-1. Elk script uitvoeren vanaf het `mysql>` vragen als `source <script name>`.
+1. Kopieer het resultaat van elk manuscript aan een ander SQL manuscript, verwijderend de pijpkarakters (`|`).
+1. Voer elk script uit vanaf de aanwijzing `mysql>` als `source <script name>` .
 
-   Wanneer u dit tweede script uitvoert, worden de handelingen in uw hoofddatabase van Commerce uitgevoerd.
+   Wanneer u dit tweede script uitvoert, worden de handelingen in uw Commerce-hoofddatabase uitgevoerd.
 
 ### Externe sleutels verwijderen (verkooptabellen)
 
@@ -637,7 +637,7 @@ where for_name like '<your main DB name>/%'
 
 ### Verkooptabellen neerzetten
 
-Dit manuscript laat verkooplijsten van het gegevensbestand van de Handel vallen.
+Met dit script worden verkooptabellen uit de Commerce-database verwijderd.
 
 ```sql
 use <your main DB name>;
@@ -672,4 +672,4 @@ select 'SET foreign_key_checks = 1;';
 
 ### Aanhalingstekens neerzetten
 
-Alle tabellen neerzetten die beginnen met `quote_`.
+Zet alle tabellen neer die beginnen met `quote_` .

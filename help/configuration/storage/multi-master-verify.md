@@ -1,11 +1,11 @@
 ---
 title: Gesplitste database verifiëren
-description: Leer hoe te om te verifiëren dat een gespleten van de Handel gegevensbestandconfiguratie behoorlijk werkt.
+description: Leer hoe u kunt controleren of een gesplitste databaseconfiguratie van Commerce goed werkt.
 recommendations: noCatalog
 exl-id: 36295240-6521-4f3e-9ea3-f35b73de672d
 source-git-commit: af45ac46afffeef5cd613628b2a98864fd7da69b
 workflow-type: tm+mt
-source-wordcount: '152'
+source-wordcount: '155'
 ht-degree: 0%
 
 ---
@@ -18,17 +18,17 @@ ht-degree: 0%
 
 Na configuratie, worden de hoofdgegevensbestanden gevormd als volgt:
 
-- Hoofdgegevensbestand van de Handel: 369 tabellen
-- Commerce quote-database: 11 tabellen
-- Database van de verkoop van de handel: 55 tabellen
+- Hoofddatabase van Commerce: 369 tabellen
+- Commerce-quotadatabase: 11 tabellen
+- Commerce-verkoopdatabase: 55 tabellen
 
-Om te verifiëren dat uw gesplitste gegevensbestanden behoorlijk werken, voer de volgende taken uit en verifieer dat het gegeven aan de gegevensbestandlijsten gebruikend een gegevensbestandhulpmiddel als wordt toegevoegd [fpmyadmin](../../installation/prerequisites/optional-software.md#phpmyadmin):
+Om te verifiëren dat uw gespleten gegevensbestanden behoorlijk werken, voer de volgende taken uit en verifieer dat het gegeven aan de gegevensbestandlijsten gebruikend een gegevensbestandhulpmiddel zoals [ phpmyadmin ](../../installation/prerequisites/optional-software.md#phpmyadmin) wordt toegevoegd:
 
 | Te controleren wat | Controleren |
 | -------------- | ------------- |
-| quotedatabase werkt | Voeg items toe aan een winkelwagentje. Controleren of er rijen zijn toegevoegd aan de aanhalingsdatabase `quote`, `quote_address`, en `quote_item` tabellen. |
-| verkoopdatabase werkt | Een bestelling voltooien (elke betalingsmethode, inclusief cheque/postwissel). Controleer of er rijen zijn toegevoegd aan de verkoopdatabase `sales_order_address`, `sales_order_item`, en `sales_order_payment` tabellen. |
+| quotedatabase werkt | Voeg items toe aan een winkelwagentje. Controleer of er rijen zijn toegevoegd aan de tabellen `quote` , `quote_address` en `quote_item` van de aanhalingsdatabase. |
+| verkoopdatabase werkt | Een bestelling voltooien (elke betalingsmethode, inclusief cheque/postwissel). Controleer of er rijen zijn toegevoegd aan de tabellen `sales_order_address` , `sales_order_item` en `sales_order_payment` van de database. |
 
 >[!WARNING]
 >
->U moet de twee extra gegevensbestandinstanties manueel file. De handel steunt slechts de belangrijkste gegevensbestandinstantie. De [`magento setup:backup --db`](../../installation/tutorials/backup.md) geen back-up maken van de extra tabellen.
+>U moet de twee extra gegevensbestandinstanties manueel file. Commerce maakt alleen een back-up van de hoofddatabase-instantie. De opdrachten [`magento setup:backup --db`](../../installation/tutorials/backup.md) en Admin maken geen back-up van de extra tabellen.

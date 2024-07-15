@@ -4,32 +4,32 @@ description: Leer hoe u crons aanpast met gebruik van uitsnijdgroepen.
 exl-id: 16e342ff-aa94-4e31-8c75-dfea1ef02706
 source-git-commit: 95ffff39d82cc9027fa633dffedf15193040802d
 workflow-type: tm+mt
-source-wordcount: '529'
+source-wordcount: '512'
 ht-degree: 0%
 
 ---
 
 # Referentie voor curven aanpassen
 
-Dit onderwerp helpt u opstellings manuscripten en naar keuze bouwgroepen voor douanemodules. Als uw douanemodule taken periodiek moet plannen, moet u opstelling een contab voor die module. A _crontab_ is een uitsnijdtaakconfiguratie.
+Dit onderwerp helpt u opstellings manuscripten en naar keuze bouwgroepen voor douanemodules. Als uw douanemodule taken periodiek moet plannen, moet u opstelling een contab voor die module. A _crontab_ is een configuratie van de cron baan.
 
 U kunt desgewenst een aangepaste groep instellen, waarmee u onder andere snijtaken die in die groep zijn gedefinieerd, onafhankelijk van andere snijtaken kunt uitvoeren.
 
-Voor een geleidelijke zelfstudie raadpleegt u [Aangepaste uitsnijdtaken en uitsnijdgroepen configureren (zelfstudie)](custom-cron-tutorial.md).
+Voor een stap-voor-stap leerprogramma, zie [ de banen van de douanecurn en de kantelgroepen (leerprogramma) vormen ](custom-cron-tutorial.md).
 
-Zie voor een overzicht van cron-taken [Cron-taken configureren](../cli/configure-cron-jobs.md).
+Voor een overzicht over kroonbanen, zie [ cron banen ](../cli/configure-cron-jobs.md) vormen.
 
 ## Cron-groepen configureren
 
 In deze sectie wordt beschreven hoe u desgewenst een uitsnijdgroep voor een aangepaste module kunt maken. Als u dit niet hoeft te doen, gaat u verder met de volgende sectie.
 
-A _uitsnijdgroep_ is een logische groep waarmee u de uitsnede eenvoudig voor meerdere processen tegelijk kunt uitvoeren. De meeste modules van de Handel gebruiken `default` cron-groep; sommige modules gebruiken de `index` groep.
+A _gewassengroep_ is een logische groep die u toelaat om kroon voor meer dan één proces tegelijkertijd gemakkelijk in werking te stellen. De meeste Commerce-modules gebruiken de `default` cron-groep. Sommige modules gebruiken de `index` -groep.
 
-Als u een uitsnede voor een aangepaste module implementeert, kunt u ervoor kiezen om de `default` groep of een andere groep.
+Als u een uitsnede implementeert voor een aangepaste module, kunt u de `default` -groep of een andere groep gebruiken.
 
-**Om een hulpgroep voor uw module te vormen**:
+**om een gewassengroep voor uw module** te vormen:
 
-Een `crontab.xml` bestand in uw modulemap:
+Maak een `crontab.xml` -bestand in de modulemap:
 
 ```text
 <your component base dir>/<vendorname>/module-<name>/etc/crontab.xml
@@ -55,10 +55,10 @@ Waarbij:
 | `group_name` | Naam van de uitsnijdgroep. De groepsnaam hoeft niet uniek te zijn. U kunt de bewerking voor één groep tegelijk uitvoeren. |
 | `job_name` | Unieke id voor deze uitsnijdtaak. |
 | `classpath` | Klasse die moet worden geïnstantieerd (klassenpad). |
-| `method` | Methode in `classpath` om te bellen. |
-| `time` | Plan in de vorm van een uitsnede. Laat deze parameter weg als het programma in het gegevensbestand van de Handel of andere opslag wordt bepaald. |
+| `method` | Aanroepmethode in `classpath` . |
+| `time` | Plan in de vorm van een uitsnede. Laat deze parameter weg als het programma in het gegevensbestand van Commerce of andere opslag wordt bepaald. |
 
-Het resultaat `crontab.xml` twee groepen kunnen er als volgt uitzien :
+De resulterende `crontab.xml` met twee groepen kan er als volgt uitzien:
 
 ```xml
 <?xml version="1.0"?>
@@ -82,17 +82,17 @@ Het resultaat `crontab.xml` twee groepen kunnen er als volgt uitzien :
 </config>
 ```
 
-Zie als voorbeeld [Magento_Customer crontab.xml](https://github.com/magento/magento2/blob/2.4/app/code/Magento/Customer/etc/crontab.xml).
+Als voorbeeld, zie [ Magento_Customer crontab.xml ](https://github.com/magento/magento2/blob/2.4/app/code/Magento/Customer/etc/crontab.xml).
 
 ### Opties voor de groep Uitsnijden opgeven
 
-U kunt een nieuwe groep declareren en de configuratieopties ervan opgeven (die allemaal worden uitgevoerd in het bereik van de winkelweergave) via het dialoogvenster `cron_groups.xml` bestand, bevindt zich in:
+U kunt een nieuwe groep declareren en de configuratieopties ervan opgeven (die allemaal worden uitgevoerd in het bereik van de winkelweergave) via het `cron_groups.xml` -bestand in:
 
 ```text
 <your component base dir>/<vendorname>/module-<name>/etc/cron_groups.xml
 ```
 
-Hieronder ziet u een voorbeeld van het `cron_groups.xml` bestand:
+Hieronder ziet u een voorbeeld van het bestand `cron_groups.xml` :
 
 ```xml
 <?xml version="1.0"?>
@@ -114,7 +114,7 @@ Waarbij:
 | Optie | Beschrijving |
 | -------------------------- | ------------------------------------------------------------------------------------------------------ |
 | `schedule_generate_every` | Frequentie (in minuten) die planningen worden geschreven naar de `cron_schedule` tabel. |
-| `schedule_ahead_for` | Tijdstip (in minuten) van tevoren dat de schema&#39;s worden geschreven naar de `cron_schedule` tabel. |
+| `schedule_ahead_for` | Tijd (in minuten) van tevoren waarop planningen naar de `cron_schedule` -tabel worden geschreven. |
 | `schedule_lifetime` | Tijdsvenster (in minuten) waarin een uitsnijdtaak moet worden gestart of waarin de uitsnijdtaak als gemist wordt beschouwd (te laat om te worden uitgevoerd). |
 | `history_cleanup_every` | Tijd (in minuten) waarop de uitsnijdgeschiedenis in de database wordt bewaard. |
 | `history_success_lifetime` | Tijd (in minuten) waarop de record van voltooide snijtaken in de database wordt opgeslagen. |
@@ -123,9 +123,9 @@ Waarbij:
 
 ## Een uitsnijdtaak uitschakelen
 
-Cron-taken hebben geen `disable` functie zoals we die hebben voor [waarnemers](https://developer.adobe.com/commerce/php/development/components/events-and-observers/#observers). Een uitsnijdtaak kan echter met de volgende techniek worden uitgeschakeld: `schedule` een tijdstip dat een datum bevat die nooit zal plaatsvinden.
+De banen van de kroon hebben geen a `disable` eigenschap zoals wij voor [ waarnemers ](https://developer.adobe.com/commerce/php/development/components/events-and-observers/#observers) hebben. Een uitsnijdtaak kan echter met de volgende techniek worden uitgeschakeld: `schedule` een tijd die een datum bevat die nooit zal voorkomen.
 
-Schakel bijvoorbeeld de opdracht `visitor_clean` snijtaak die is gedefinieerd in `Magento_Customer` module:
+Schakel bijvoorbeeld de `visitor_clean` -snijtaak uit die is gedefinieerd in de module `Magento_Customer` :
 
 ```xml
 ...
@@ -137,7 +137,7 @@ Schakel bijvoorbeeld de opdracht `visitor_clean` snijtaak die is gedefinieerd in
 ...
 ```
 
-Om het `visitor_clean` taak uitsnijden, een aangepaste module maken en de `visitor_clean` snijtaak `schedule`:
+Als u de `visitor_clean` uitsnijdtaak wilt uitschakelen, maakt u een aangepaste module en herschrijft u de `visitor_clean` uitsnijdtaak `schedule` :
 
 ```xml
 ...
@@ -149,4 +149,4 @@ Om het `visitor_clean` taak uitsnijden, een aangepaste module maken en de `visit
 ...
 ```
 
-Nu, `visitor_clean` de bouwbaan is ingesteld om 00:00 op 30 februari - op de datum die nooit zal plaatsvinden.
+De `visitor_clean` cron-taak is nu ingesteld op 00:00 op 30 februari - op de datum die nooit zal plaatsvinden.

@@ -19,17 +19,17 @@ Er kunnen problemen optreden wanneer u Adobe Commerce-modules ontwikkelt met Com
 
 >[!NOTE]
 >
->Deze richtsnoeren zijn in de eerste plaats van toepassing op [algemene referentiearchitectuur (GRA)](../overview.md) projecten.
+>Deze richtlijnen zijn hoofdzakelijk op [ globale verwijzingsarchitectuur (GRA) ](../overview.md) projecten van toepassing.
 
 ## Composer versnellen
 
-Installeren [https://github.com/hirak/prestissimo](https://github.com/hirak/prestissimo) om Composer te versnellen met asynchrone pakketdownloads.
+Installeer [ https://github.com/hirak/prestissimo ](https://github.com/hirak/prestissimo) om Composer met asynchrone pakketdownloads te versnellen.
 
 ```bash
 composer global require hirak/prestissimo
 ```
 
-Als u problemen ondervindt, verwijdert u de installatie `prestissimo`:
+Als u problemen ondervindt, verwijdert u `prestissimo` :
 
 ```bash
 composer global remove hirak/prestissimo
@@ -45,7 +45,7 @@ Composer wordt soms geblokkeerd door pakketversies. U kunt berichten over versie
    composer clearcache
    ```
 
-1. Verwijder de `composer.lock` bestand voor alle pakketten.
+1. Verwijder het `composer.lock` -bestand voor alle pakketten.
 
    ```bash
    rm -rf vendor/* composer.lock
@@ -59,7 +59,7 @@ Composer wordt soms geblokkeerd door pakketversies. U kunt berichten over versie
 
 >[!TIP]
 >
->Met deze stappen worden alle pakketten bijgewerkt naar de meest recente beschikbare versie. De `composer.lock` van Git om deze upgrades ongedaan te maken.
+>Met deze stappen worden alle pakketten bijgewerkt naar de meest recente beschikbare versie. Keer het `composer.lock` dossier van Git terug om deze verbeteringen ongedaan te maken.
 
 ## Controleren op mogelijke updates in clientpakketten
 
@@ -69,7 +69,7 @@ Composer wordt soms geblokkeerd door pakketversies. U kunt berichten over versie
    composer outdated
    ```
 
-1. Filteren met jokertekens en/of de `--minor-only` optie voor het overslaan van niet-compatibele upgrades:
+1. Filter met jokertekens en/of de optie `--minor-only` om upgrades die niet compatibel zijn met oudere versies over te slaan:
 
    ```bash
    composer outdated 'magento/*'
@@ -84,7 +84,7 @@ Bekijk details over alle geïnstalleerde pakketten op een Git-vertakking.
 composer info
 ```
 
-Uitvoeren `composer install` na het schakelen van de takken van het Git en alvorens te lopen `composer info`. Anders geeft Composer details weer over de vorige vertakking die u had uitgecheckt.
+Voer `composer install` uit na het schakelen van Git-vertakkingen en voordat u `composer info` uitvoert. Anders geeft Composer details weer over de vorige vertakking die u had uitgecheckt.
 
 >[!TIP]
 >
@@ -123,24 +123,24 @@ composer why-not client/module-example
 
 ## Een persoonlijke Composer-opslagplaats hosten
 
-Als u een persoonlijke Composer-opslagplaats wilt gebruiken [Private Packagist](https://packagist.com/) of [JFrog Artifactory](https://jfrog.com/integration/php-composer-repository/). Niet gebruiken [Satis](https://github.com/composer/satis).
+Als u een privé bewaarplaats Composer vereist, gebruik [ Privé Packagist ](https://packagist.com/) of [ JFrog Artifactory ](https://jfrog.com/integration/php-composer-repository/). Gebruik niet [ Vetten ](https://github.com/composer/satis).
 
-- **Private Packagist** is veilig, kost ongeveer $600 USD per jaar met drie admin-gebruikers en wordt gehost.
+- **Privé Packagist** is veilig, kost rond $600 USD per jaar met drie admin gebruikers en wordt ontvangen.
 
-- **JFrog Artifactory** begint bij USD 1.176 per jaar. Het wordt niet zo vaak gebruikt als Packagist, maar het ondersteunt meer talen dan PHP.
+- **JFrog Artifactory** begint bij $1.176 USD per jaar. Het wordt niet zo vaak gebruikt als Packagist, maar het ondersteunt meer talen dan PHP.
 
-- **Satis** heeft geen ingebouwde beveiliging, geen automatisering en vereist extra hosting. Het is alleen vrij als je tijd ook vrij is.
+- **Satis** heeft geen ingebouwde veiligheid, geen automatisering, en vereist extra het ontvangen. Het is alleen vrij als je tijd ook vrij is.
 
 ## Versiepakketten
 
-Gebruiken [Semantische versie 2.0.0](https://semver.org/spec/v2.0.0.html) zoals beschreven in de Adobe Commerce [versieschema](https://developer.adobe.com/commerce/php/development/versioning/). Het wiel niet opnieuw uitvinden.
+Het gebruik [ Semantische Versioning 2.0.0 ](https://semver.org/spec/v2.0.0.html) zoals die in het Adobe Commerce [ versioning schema ](https://developer.adobe.com/commerce/php/development/versioning/) wordt beschreven. Het wiel niet opnieuw uitvinden.
 
-Voor Adobe Commerce-moduleafhankelijkheden voert u de [module, versieafhankelijkheden](https://developer.adobe.com/commerce/php/development/versioning/dependencies/) documentatie.
+Voor de modulegebiedsdelen van Adobe Commerce, volg de ](https://developer.adobe.com/commerce/php/development/versioning/dependencies/) documentatie van de 0} moduleversie gebiedsdelen.[
 
-Gebruik de versiedefinitie niet in de `composer.json` bestand. Gebruik in plaats daarvan Git-tags voor versies. Zie [Composerversies en -beperkingen](https://getcomposer.org/doc/articles/versions.md#versions-and-constraints).
+Gebruik de versiedefinitie niet in het `composer.json` -bestand. Gebruik in plaats daarvan Git-tags voor versies. Zie {de Versies en beperkingen van de Samensteller 0} ](https://getcomposer.org/doc/articles/versions.md#versions-and-constraints).[
 
 ## Waar moet u modules plaatsen die in een archiefbestand staan en niet via Composer?
 
-Maak een Git-opslagplaats voor modules in een archief en host deze zelf. Elke Adobe Commerce-module heeft een `composer.json` bestand. Nadat u het in Git ontvangt en het met Privé Packagist synchroniseert, kunt u het met Composer installeren.
+Maak een Git-opslagplaats voor modules in een archief en host deze zelf. Elke Adobe Commerce-module heeft een `composer.json` -bestand. Nadat u het in Git ontvangt en het met Privé Packagist synchroniseert, kunt u het met Composer installeren.
 
 Wanneer u een nieuwe versie van het pakket ontvangt, uploadt u de code naar Git, codeert u deze en installeert u de nieuwe versie met Composer.

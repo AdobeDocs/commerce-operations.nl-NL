@@ -12,13 +12,13 @@ ht-degree: 0%
 
 # Implementatiestroom
 
-De [!DNL Commerce] de stroom van de productieleiding helpt een opslag maximumprestaties bereiken.
+De [!DNL Commerce] -workflow voor productieimplementatie helpt een winkel maximale prestaties te behalen.
 
 ## Afhankelijkheden installeren
 
-De `composer.json` en `composer.lock` bestanden beheren [!DNL Commerce] afhankelijkheden en installeer de juiste versie voor elk pakket. U moet afhankelijkheden installeren voordat [instructies voor injectie van afhankelijkheid bij voorbewerking](#preprocess-dependency-injection-instructions) als u van plan bent de [autoloader](#update-the-autoloader).
+De `composer.json` - en `composer.lock` -bestanden beheren [!DNL Commerce] -afhankelijkheden en installeren de juiste versie voor elk pakket. U moet gebiedsdelen installeren vóór [ preprocessing de instructies van de gebiedsinjectie ](#preprocess-dependency-injection-instructions) als u van plan bent om [ autoloader ](#update-the-autoloader) bij te werken.
 
-Om te installeren [!DNL Commerce] afhankelijkheid:
+Om [!DNL Commerce] gebiedsdelen te installeren:
 
 ```bash
 composer install --no-dev
@@ -41,13 +41,13 @@ bin/magento setup:di:compile
 
 ## De autoloader bijwerken
 
-Bevestig na voltooiing van de compilatie dat [APCu is ingeschakeld](../performance/software.md#php-settings) en werk de autoloader bij:
+Na compilatie voltooit, bevestig dat [ APCu ](../performance/software.md#php-settings) wordt toegelaten en autoloader bijwerkt:
 
 De autoloader bijwerken:
 
 >[!INFO]
 >
->De `-o` Hiermee wordt automatisch laden van PSR-0/4 omgezet in een lesmap voor een snellere autoloader. De `--apcu` gebruikt APCu om gevonden/niet-gevonden klassen in het cachegeheugen op te slaan.
+>Met de optie `-o` wordt automatisch laden van PSR-0/4 omgezet in een klasse-toewijzing voor een snellere autoloader. De optie `--apcu` gebruikt APCu om gevonden/niet-gevonden klassen in de cache op te slaan.
 
 ```bash
 composer dump-autoload -o --apcu
@@ -73,7 +73,7 @@ bin/magento setup:static-content:deploy
 
 ## Statische inhoud implementeren
 
-Statische inhoud implementeren veroorzaakt [!DNL Commerce] om de volgende handelingen uit te voeren:
+Door het implementeren van statische inhoud voert [!DNL Commerce] de volgende handelingen uit:
 
 * Alle statische bronnen analyseren
 * Samenvoegen, minimaliseren en bundelen van inhoud uitvoeren
@@ -81,9 +81,9 @@ Statische inhoud implementeren veroorzaakt [!DNL Commerce] om de volgende handel
 * Thema-fallback analyseren
 * Sla alle verwerkte en gematerialiseerde inhoud op in een specifieke map voor verder gebruik
 
-Als uw statische inhoud niet wordt opgesteld, [!DNL Commerce] voert alle vermelde bewerkingen op de vlucht uit, wat leidt tot een aanzienlijke toename van de responstijd.
+Als uw statische inhoud niet wordt geïmplementeerd, voert [!DNL Commerce] alle vermelde bewerkingen direct uit, wat resulteert in een aanzienlijke toename van de responstijd.
 
-U kunt een verscheidenheid van opties gebruiken om plaatsingsverrichtingen aan te passen die op archiefgrootte en vervulling behoeften worden gebaseerd. Het meest algemeen is compact opstellen strategie. Zie [Statische strategieën voor bestandsimplementatie](../configuration/cli/static-view-file-strategy.md)
+U kunt een verscheidenheid van opties gebruiken om plaatsingsverrichtingen aan te passen die op archiefgrootte en vervulling behoeften worden gebaseerd. Het meest algemeen is compact opstellen strategie. Zie [ Statische strategieën van de dossierplaatsing ](../configuration/cli/static-view-file-strategy.md)
 
 Statische inhoud implementeren:
 
@@ -97,9 +97,9 @@ Met deze opdracht kan Composer de toewijzing aan projectbestanden opnieuw samens
 
 >[!INFO]
 >
->De modus automatisch instellen op productie `setup:di:compile` en `setup:static-content:deploy`.
+>Wanneer u de modus instelt op productie, worden automatisch `setup:di:compile` en `setup:static-content:deploy` uitgevoerd.
 
-Tot slot moet u uw winkel in de productiemodus plaatsen. De productiemodus is speciaal geoptimaliseerd voor maximale prestaties in uw winkel. Bovendien worden alle ontwikkelaarspecifieke functies gedeactiveerd. Dit kan in uw `.htaccess` of `nginx.conf` bestand:
+Tot slot moet u uw winkel in de productiemodus plaatsen. De productiemodus is speciaal geoptimaliseerd voor maximale prestaties in uw winkel. Bovendien worden alle ontwikkelaarspecifieke functies gedeactiveerd. Dit kan in uw `.htaccess` - of `nginx.conf` -bestand worden gedaan:
 
 `SetEnv MAGE_MODE production`
 

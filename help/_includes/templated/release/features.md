@@ -1,11 +1,11 @@
 ---
 source-git-commit: d1af1ffe584b18cbc6c664cab31283c13f36c25e
 workflow-type: tm+mt
-source-wordcount: '184'
+source-wordcount: '180'
 ht-degree: 8%
 
 ---
-# Handelskenmerken
+# Commerce-functies
 
 <!--This include content is automatically generated using the features.html template and the "_data/release/features.yml" data file. To update the content, add new information to the data file. Follow the instructions in the README instructions to generate the updated content: 
 https://github.com/AdobeDocs/commerce-operations.en/blob/main/README.md#templates -->
@@ -14,11 +14,11 @@ https://github.com/AdobeDocs/commerce-operations.en/blob/main/README.md#template
   <tbody>
     <tr style="background:lightgray;">
       <th style="border-style:none;">Omzetten en verkopen maximaliseren</th>
-      <th style="border-style:none;">2.0</th>
-      <th style="border-style:none;">2.1</th>
-      <th style="border-style:none;">2.2</th>
-      <th style="border-style:none;">2.3</th>
-      <th style="border-style:none;">2.4</th>
+      <th style="border-style:none;">2,0</th>
+      <th style="border-style:none;">2,1</th>
+      <th style="border-style:none;">2,2</th>
+      <th style="border-style:none;">2,3</th>
+      <th style="border-style:none;">2,4</th>
     </tr>
     <tr>
       <td>Live zoeken met Adobe Sensei (B2C en B2B)</td>
@@ -104,11 +104,11 @@ https://github.com/AdobeDocs/commerce-operations.en/blob/main/README.md#template
   <tbody>
     <tr style="background:lightgray;">
       <th style="border-style:none;">Slimme, snellere bewerkingen</th>
-      <th style="border-style:none;">2.0</th>
-      <th style="border-style:none;">2.1</th>
-      <th style="border-style:none;">2.2</th>
-      <th style="border-style:none;">2.3</th>
-      <th style="border-style:none;">2.4</th>
+      <th style="border-style:none;">2,0</th>
+      <th style="border-style:none;">2,1</th>
+      <th style="border-style:none;">2,2</th>
+      <th style="border-style:none;">2,3</th>
+      <th style="border-style:none;">2,4</th>
     </tr>
     <tr>
       <td>Betalingsdiensten</td>
@@ -194,11 +194,11 @@ https://github.com/AdobeDocs/commerce-operations.en/blob/main/README.md#template
   <tbody>
     <tr style="background:lightgray;">
       <th style="border-style:none;">Verbeteringen op het gebied van platform, prestaties en beveiliging</th>
-      <th style="border-style:none;">2.0</th>
-      <th style="border-style:none;">2.1</th>
-      <th style="border-style:none;">2.2</th>
-      <th style="border-style:none;">2.3</th>
-      <th style="border-style:none;">2.4</th>
+      <th style="border-style:none;">2,0</th>
+      <th style="border-style:none;">2,1</th>
+      <th style="border-style:none;">2,2</th>
+      <th style="border-style:none;">2,3</th>
+      <th style="border-style:none;">2,4</th>
     </tr>
     <tr>
       <td>Analyse voor de hele site</td>

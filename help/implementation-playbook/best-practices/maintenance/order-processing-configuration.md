@@ -6,22 +6,22 @@ feature: Best Practices
 exl-id: d15fe845-670f-4f7e-9645-7e111e6e809f
 source-git-commit: 94d7a57dcd006251e8eefbdb4ec3a5e140bf43f9
 workflow-type: tm+mt
-source-wordcount: '249'
+source-wordcount: '236'
 ht-degree: 0%
 
 ---
 
 # Best practices voor configuratie voor verwerking van bestellingen
 
-Naarmate het ordervolume toeneemt op uw Commerce-sites, kunt u de prestaties van de kassa en de verwerking van de bestelling optimaliseren door de volgende opties voor winkelconfiguratie in te schakelen:
+Naarmate het ordervolume op uw Commerce-sites toeneemt, kunt u de prestaties van de kassa en de verwerking van de bestelling optimaliseren door de volgende opties voor de configuratie van de winkel in te schakelen:
 
-- **[!UICONTROL Asynchronous indexing]**—Laat deze optie toe om gegevensbestandsloten en vertraagde verwerking te verhinderen die kunnen voorkomen wanneer de grote aantallen orden gelijktijdig worden geplaatst.
-- **[!UICONTROL Asynchronous email notifications]**—Schakel deze optie in om de prestaties bij het afrekenen te versnellen door het verzenden van afrekenings- en bestelberichten voor de verwerking van e-mailberichten met bepaalde intervallen in plaats van deze onmiddellijk te verzenden.
-- **[!UICONTROL Enable Archiving]**—Schakel deze optie in om de prestaties van bestellingen, facturen, verzendingen en creditnota&#39;s te verbeteren en uw werkruimte vrij te houden van onnodige informatie, zodat u zich kunt concentreren op het huidige bedrijf. Zie [Archivering inschakelen](https://docs.magento.com/user-guide/sales/order-archive.html#to-enable-archiving).
+- **[!UICONTROL Asynchronous indexing]** - Schakel deze optie in om databasestlokken en vertraagde verwerking te voorkomen die kunnen optreden wanneer grote aantallen bestellingen tegelijkertijd worden geplaatst.
+- **[!UICONTROL Asynchronous email notifications]**—Schakel deze optie in om de afrekenprestaties te versnellen door het verzenden van afrekenings- en bestelberichten voor de verwerking van e-mailberichten met bepaalde intervallen in plaats van deze onmiddellijk te verzenden.
+- **[!UICONTROL Enable Archiving]** - Schakel deze optie in om de prestaties van bestellingen, facturen, verzendingen en creditnota&#39;s te verbeteren en uw werkruimte vrij te houden van onnodige informatie, zodat u zich kunt concentreren op het huidige bedrijf. Zie [ archiveren ](https://docs.magento.com/user-guide/sales/order-archive.html#to-enable-archiving) toelaten.
 
 ## Betrokken producten en versies
 
-[Alle ondersteunde versies](../../../release/versions.md) van:
+[ Alle gesteunde versies ](../../../release/versions.md) van:
 
 - Adobe Commerce over cloudinfrastructuur
 - Adobe Commerce ter plaatse
@@ -38,7 +38,7 @@ De stappen om asynchrone ordeverwerking toe te laten hangen van de plaatsingswij
 
 - Voor Adobe Commerce-sites op locatie in de modus Standaard of Productie schakelt u asynchrone indexering in door de configuratie Rasterinstellingen in Admin bij te werken.
 
-  Zie [Updates en opnieuw indexeren van het geplande raster inschakelen](https://experienceleague.adobe.com/docs/commerce-admin/stores-sales/order-management/orders/order-scheduled-operations.html#enable-scheduled-grid-updates-and-reindexing)
+  Zie [ geplande netupdates en het opnieuw indexeren ](https://experienceleague.adobe.com/docs/commerce-admin/stores-sales/order-management/orders/order-scheduled-operations.html#enable-scheduled-grid-updates-and-reindexing) toelaten
 
   >[!WARNING]
   >

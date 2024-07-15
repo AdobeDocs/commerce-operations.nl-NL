@@ -15,7 +15,7 @@ ht-degree: 0%
 
 # Composer-projectstructuur
 
-In deze handleiding wordt beschreven hoe u de [afzonderlijke pakketten, optie](../examples.md#option-1-separate-packages) beschreven in de algemene voorbeelden van de referentiearchitectuur (GRA).
+Deze gids beschrijft hoe te opstelling en de [ afzonderlijke pakketoptie ](../examples.md#option-1-separate-packages) te handhaven die} in de globale die verwijzingsarchitectuur (GRA) voorbeelden wordt beschreven.
 
 ## Vereisten
 
@@ -23,7 +23,7 @@ Controleer voordat u begint het volgende:
 
 - U hebt een Git-opslagplaats
 - U hebt een bewaarplaats Composer (dit onderwerp benadrukt Privé Packagist)
-- U hebt uw Composer-opslagplaats zo geconfigureerd dat deze de `repo.magento.com` en `packagist.org` bewaarplaatsen
+- U hebt uw Composer-opslagplaats zo geconfigureerd dat deze de `repo.magento.com` - en `packagist.org` repositories spiegelt
 
 ## Hoofd-Git-projectgegevensopslagplaats
 
@@ -37,7 +37,7 @@ De belangrijkste Git-projectgegevensopslagruimte mag alleen een Composer-project
 └─ composer.lock
 ```
 
-Voeg de volgende inhoud toe aan de `.gitignore` bestand:
+Voeg de volgende inhoud toe aan het `.gitignore` -bestand:
 
 ```tree
 /*
@@ -47,9 +47,9 @@ Voeg de volgende inhoud toe aan de `.gitignore` bestand:
 
 ## Het hoofdproject initialiseren
 
-1. Een Git-opslagplaats maken met de naam `project-<region/country/brand>`.
+1. Maak een Git-gegevensopslagruimte met de naam `project-<region/country/brand>` .
 
-1. Maken `composer.json` en `composer.lock` bestanden:
+1. Maak `composer.json` - en `composer.lock` -bestanden:
 
    ```bash
    composer create-project --no-install --repository-url=https://repo.magento.com/ magento/project-enterprise-edition project-<region/country/brand>
@@ -71,13 +71,13 @@ Voeg de volgende inhoud toe aan de `.gitignore` bestand:
 
 ## Niet-modulebestanden opslaan
 
-1. Voeg de `app/etc/config.xml` naar de Git-opslagplaats.
+1. Voeg het `app/etc/config.xml` -bestand toe aan de Git-opslagplaats.
 
-   U kunt de module gebruiken die u gaat creëren om andere gebied of merkspecifieke dossiers, zoals te installeren `.htaccess`, Google- of Bing-verificatietekstbestanden, uitvoerbare bestanden of andere statische bestanden die niet worden beheerd door Adobe Commerce-modules.
+   Met de module die u gaat maken kunt u andere regio- of merkspecifieke bestanden installeren, zoals `.htaccess` -, Google- of Bing-verificatietekstbestanden, uitvoerbare bestanden of andere statische bestanden die niet door Adobe Commerce-modules worden beheerd.
 
-   Gebruiken `magento2-component` typt u pakketten om een bestandstoewijzing te maken waarmee u bestanden tijdens het gebruik van het Git-bestand naar de hoofdopslagplaats kunt kopiëren `composer install` en `composer update` bewerkingen.
+   Gebruik `magento2-component` -typepakketten om een bestandstoewijzing te maken waarmee bestanden tijdens `composer install` - en `composer update` -bewerkingen naar de hoofdopslagplaats voor Git kunnen worden gekopieerd.
 
-1. Een Git-opslagplaats maken die de naamgevingsconventie volgt `component-environment-<region/country/brand>`:
+1. Maak een Git-opslagplaats die de naamgevingsconventie volgt `component-environment-<region/country/brand>` :
 
    ```bash
    bin/magento module:enable --all
@@ -94,7 +94,7 @@ Voeg de volgende inhoud toe aan de `.gitignore` bestand:
    composer config -e
    ```
 
-1. Voeg de `app/etc/config.php` bestand als een toewijzing in het dialoogvenster `extra.map` kenmerk van uw `composer.json` bestand:
+1. Voeg het `app/etc/config.php` -bestand toe als een toewijzing in het `extra.map` -kenmerk van het `composer.json` -bestand:
 
    ```json
    {
@@ -115,7 +115,7 @@ Voeg de volgende inhoud toe aan de `.gitignore` bestand:
    }
    ```
 
-1. Valideer uw `composer.json` en toewijzen aan de Git-opslagplaats:
+1. Valideer uw `composer.json` -bestand en wijs het toe aan de Git-opslagplaats:
 
    ```bash
    composer validate
@@ -203,7 +203,7 @@ Voeg de volgende inhoud toe aan de `.gitignore` bestand:
    git push --tags
    ```
 
-1. Controleren of de Composer de `app/etc/config.php` bestand van `<client>/component-environment-<region/country/brand>`.
+1. Controleer of Composer het `app/etc/config.php` -bestand heeft gekopieerd van `<client>/component-environment-<region/country/brand>` .
 
 ## Code implementeren
 
@@ -211,24 +211,24 @@ Op de webserver kunt u code implementeren met Composer, maar u kunt het hoofdpro
 
 ## Andere instanties en pakketten toevoegen
 
-Elke instantie (regio, merk of anderszins unieke Adobe Commerce-installatie) moet een eigen instantie krijgen **hoofdproject** instantie, **specifieke metapakketten**, en **milieucomponent**. De **GRA-metapakket** moeten **gedeeld** in alle gevallen.
+Elke instantie (gebied, merk, of anders unieke installatie van Adobe Commerce) zou zijn eigen **belangrijkste project** instantie, **specifieke metapack**, en **pakket van de milieucomponent** moeten krijgen. Het **metapakket GRA** zou **** over alle instanties moeten worden gedeeld.
 
 Functionele pakketten (zoals Adobe Commerce-modules, thema&#39;s, taalpakketten en bibliotheken) en pakketten van derden moeten verplicht worden gesteld door:
 
-- **GRA-metapakket**—Voor installatie op _alles_ instances
-- **instantiespecifieke metapack**—Voor installatie op één merk of regio
+- **metapack GRA** - voor installatie op _alle_ instanties
+- **instantie-specifieke metapack** - voor installatie op één enkel merk of gebied
 
 >[!IMPORTANT]
 >
->Geen pakketten in de hoofdprojecten vereisen `composer.json` bestand op de `main` of `release` bijkantoren.
+>Vereist geen pakketten in het `composer.json` -bestand van het hoofdproject in de `main` - of `release` -vertakkingen.
 
 ## Voorbereiden op ontwikkeling
 
-Voor ontwikkeling, installatie `develop` versies van alle modules die u handhaaft.
+Installeer voor ontwikkeling `develop` versies van alle modules die u onderhoudt.
 
-Afhankelijk van uw vertakkingsstrategie hebt u mogelijk `develop`, `qa`, `uat`, en `main` bijkantoren. Elke vertakking bestaat in Composer met een `dev-` voorvoegsel Dus de `develop` vertakking kan via Composer als versie worden vereist `dev-develop`.
+Afhankelijk van uw vertakkingsstrategie kunt u `develop` , `qa` , `uat` en `main` vertakkingen hebben. Elke vertakking bestaat in Composer met een voorvoegsel `dev-` . De `develop` -vertakking kan dus als versie `dev-develop` via Composer worden vereist.
 
-1. Maken `develop` vertakkingen in alle modules en projectgegevensbanken.
+1. Maak `develop` -vertakkingen in alle modules en projectopslagruimten.
 
    ```bash
    cd ../component-environment-<region/country/brand>
@@ -262,7 +262,7 @@ Afhankelijk van uw vertakkingsstrategie hebt u mogelijk `develop`, `qa`, `uat`, 
    "magento-services/component-environment-fantasy-corp:dev-develop as 0.999"
    ```
 
-   De vorige stap genereert de volgende regels in uw `composer.json` bestand:
+   Bij de vorige stap worden de volgende regels in het `composer.json` -bestand gegenereerd:
 
    ```json
    "require": {
@@ -274,4 +274,4 @@ Afhankelijk van uw vertakkingsstrategie hebt u mogelijk `develop`, `qa`, `uat`, 
 
    >[!IMPORTANT]
    >
-   >**Niet samenvoegen** deze `composer.json` wijzigingen in uw productietak aan te brengen. Alleen stabiele versies van pakketten installeren op `release` en `main` bijkantoren. U kunt deze afhankelijkheden definiëren voor `qa` bijkantoren en andere niet-hoofdbijkantoren.
+   >**voeg** deze `composer.json` dossierveranderingen in uw productietak niet samen. Installeer alleen stabiele versies van pakketten in `release` - en `main` -vertakkingen. U kunt deze afhankelijkheden definiëren voor `qa` -vertakkingen en andere niet-hoofdvertakkingen.

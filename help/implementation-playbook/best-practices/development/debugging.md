@@ -3,13 +3,13 @@ title: Aanbevolen werkwijzen voor foutopsporing
 description: Leer technieken om algemene Adobe Commerce-ontwikkelingsproblemen op te lossen.
 feature: Best Practices
 role: Developer
-source-git-commit: 291c3f5ea3c58678c502d34c2baee71519a5c6dc
+exl-id: 78fbea7b-28e8-4713-990d-b4cae159250c
+source-git-commit: 823498f041a6d12cfdedd6757499d62ac2aced3d
 workflow-type: tm+mt
-source-wordcount: '1143'
+source-wordcount: '1139'
 ht-degree: 0%
 
 ---
-
 
 # Aanbevolen procedures voor foutopsporing voor Adobe Commerce
 
@@ -22,7 +22,7 @@ Deze sectie beschrijft de gemeenschappelijkste kwesties die u tijdens ontwikkeli
 ### Cache
 
 - De cache leegmaken voor verder onderzoek
-- Overweeg het APC geheime voorgeheugen, CDN, Varnish, geproduceerde code, en `var/view_preprocessed` en `pub/static/` mappen
+- Bekijk de APC-cache, CDN, Varnish, gegenereerde code en de mappen `var/view_preprocessed` en `pub/static/`
 - Wachtrij-handlers stoppen en opnieuw starten nadat de cache is leeggemaakt of code is gewijzigd
 
 Het volgende codevoorbeeld verstrekt nuttige bevelen met betrekking tot het beheren van het geheime voorgeheugen (loopt niet op productiemilieu&#39;s):
@@ -96,7 +96,7 @@ bin/magento cache:flush
 
 ### Modus Ontwikkelaar
 
-Zorg ervoor dat de lokale installatie is ingeschakeld `developer` -modus.
+Controleer of de lokale installatie in de modus `developer` staat.
 
 ### Nieuwe module
 
@@ -108,9 +108,9 @@ Als u een module hebt gemaakt, controleert u op de volgende problemen:
   bin/magento module --enable Your_Module
   ```
 
-  Controleer de `app/etc/config.php` bestand voor uw nieuwe module.
+  Controleer het bestand `app/etc/config.php` op de nieuwe module.
 
-- Controleer het nesten van de bestand- en mapstructuur. Dit zijn bijvoorbeeld indelingsbestanden in het dialoogvenster `view/layout/` in plaats van de `view/frontend/layout` directory? Dit zijn sjablonen in de `view/frontend/template` in plaats van de `view/frontend/templates` directory?
+- Controleer het nesten van de bestand- en mapstructuur. Zijn lay-outbestanden bijvoorbeeld in de map `view/layout/` in plaats van in de map `view/frontend/layout` ? Worden sjablonen in de map `view/frontend/template` in plaats van in de map `view/frontend/templates` ?
 
 ## Problemen oplossen: halfsplitsen
 
@@ -118,9 +118,9 @@ Als de gebruikelijke verdachten geen oplossing voor het probleem bieden, is de s
 
 Zie de volgende diagrammen:
 
-![Bisect-diagram](../../../assets/playbooks/bisect.png)
+![ Bisect diagram ](../../../assets/playbooks/bisect.png)
 
-![Bisect-diagram](../../../assets/playbooks/bisect2.png)
+![ Bisect diagram ](../../../assets/playbooks/bisect2.png)
 
 Er zijn verschillende manieren om te discussiëren, maar de Adobe beveelt aan deze volgorde te volgen:
 
@@ -132,12 +132,12 @@ Er zijn verschillende manieren om te discussiëren, maar de Adobe beveelt aan de
 
 Als het probleem code-verwant zou kunnen zijn, elimineer eerst de grote brokken. Enkele van de grote brokken die u moet bedenken zijn:
 
-- **Adobe Commerce-kader**—Is het probleem in verband met Adobe Commerce of kan het verband houden met een ander aangesloten systeem?
-- **Server en client**—Wis de browsercache en -opslag. Is het probleem opgelost? Dat kan een servergerelateerde oorzaak uitsluiten. Bestaat dit probleem nog? U hoeft geen tijd meer te verspillen aan foutopsporing in de browser.
-- **Sessie**—Komt het probleem voor elke gebruiker voor? Als niet, zou uw probleem tot zitting of browser-verwante onderwerpen kunnen worden beperkt.
-- **Cache**—Verandert het onbruikbaar maken van alle geheime voorgeheugens om het even wat? Als zo, kunt u zich op voorgeheugen-verwante onderwerpen concentreren.
-- **Database**—Komt het probleem op elke milieu voor die de zelfde code in werking stellen? Als niet, zoek problemen in configuratie en andere op gegevensbestand betrekking hebbende onderwerpen.
-- **Code**—Zoek naar codeproblemen als niets van bovengenoemd het probleem oplost.
+- **kader van Adobe Commerce** - is het probleem met betrekking tot Adobe Commerce bij allen of kon het met een ander verbonden systeem verwant zijn?
+- **Server en cliënt** - ontruim het browser geheime voorgeheugen en de opslag. Is het probleem opgelost? Dat kan een servergerelateerde oorzaak uitsluiten. Bestaat dit probleem nog? U hoeft geen tijd meer te verspillen aan foutopsporing in de browser.
+- **Zitting** - komt het probleem voor elke gebruiker voor? Als niet, zou uw probleem tot zitting of browser-verwante onderwerpen kunnen worden beperkt.
+- **Geheime voorgeheugen** - wijzigt het onbruikbaar maken van alle geheime voorgeheugens om het even wat? Als zo, kunt u zich op voorgeheugen-verwante onderwerpen concentreren.
+- **Gegevensbestand** - komt het probleem op elk milieu voor dat de zelfde code in werking stelt? Als niet, zoek problemen in configuratie en andere op gegevensbestand betrekking hebbende onderwerpen.
+- **code** - zoek codekwesties als niets van bovengenoemd het probleem oplost.
 
 ### Stap 2: Bisect by commit
 
@@ -148,7 +148,7 @@ U kunt weken en dagen vervangen door verbintenissen. Bijvoorbeeld, rol terug 100
 ### Stap 3: Bestanden archiveren
 
 - Verdeel Adobe Commerce op bestandstypen (core en non-core). Eerst, maak alle klant en marktplaatsmodules onbruikbaar. Bestaat dit probleem nog? Het is hoogstwaarschijnlijk een niet-kernkwestie.
-- Schakel (ruwweg) de helft van de modules opnieuw in het dialoogvenster `app/etc/config.php` bestand. Houd rekening met afhankelijkheden. Het is best om moduleclusters met het zelfde onderwerp allen in één keer toe te laten. Bestaat dit probleem nog?
+- Schakel (ongeveer) de helft van de modules opnieuw in het `app/etc/config.php` -bestand in. Houd rekening met afhankelijkheden. Het is best om moduleclusters met het zelfde onderwerp allen in één keer toe te laten. Bestaat dit probleem nog?
 - Laat een kwart van de resterende modules toe. Bestaat dit probleem nog? Schakel de helft uit van wat u hebt ingeschakeld. Deze methode kan u helpen de worteloorzaak aan één enkele module isoleren.
 
 ## Tijdbesparing
@@ -169,7 +169,7 @@ Is de beschrijving van het probleem duidelijk? Weet u zeker dat termen of beschr
 
 ### Internet zoeken
 
-Voer een internetzoekopdracht uit met termen die betrekking hebben op het probleem. Het is mogelijk dat iemand anders al hetzelfde probleem heeft ondervonden. Doorzoeken via de [Adobe Commerce GitHub-problemen](https://github.com/magento/magento2/issues).
+Voer een internetzoekopdracht uit met termen die betrekking hebben op het probleem. Het is mogelijk dat iemand anders al hetzelfde probleem heeft ondervonden. Onderzoek door de [ kwesties van Adobe Commerce GitHub ](https://github.com/magento/magento2/issues).
 
 ### Onderbreken
 
@@ -177,7 +177,7 @@ Als u een probleem te lang bekijkt, kan het uitdagend zijn om een oplossing te v
 
 ## Gereedschappen
 
-De n98 hoofdgereedschap CLI ([https://github.com/netz98/n98-magerun2](https://github.com/netz98/n98-magerun2)) biedt nuttige functies om met Adobe Commerce te werken vanaf de opdrachtregel. Dit zijn vooral de volgende opdrachten:
+De n98 magerun CLI Hulpmiddelen ([ https://github.com/netz98/n98-magerun2 ](https://github.com/netz98/n98-magerun2)) verstrekken nuttige mogelijkheden om met Adobe Commerce van de bevellijn te werken. Dit zijn vooral de volgende opdrachten:
 
 ```bash
 n98-magerun2.phar dev:console
@@ -189,9 +189,9 @@ n98-magerun2.phar index:trigger:recreate
 
 ## Codefragmenten
 
-De volgende onderwerpen verstrekken codefragmenten die kunnen worden gebruikt om kwesties in de projecten van de Handel te registreren of te identificeren.
+De volgende onderwerpen verstrekken codefragmenten die kunnen worden gebruikt om kwesties in de projecten van Commerce te registreren of te identificeren.
 
-### Controleren of een XML-bestand door de handel wordt gebruikt
+### Controleren of Commerce een XML-bestand gebruikt
 
 Voeg een duidelijke syntaxisfout in een dossier van XML toe om te zien of wordt het gebruikt. Open een tag en sluit deze bijvoorbeeld niet:
 
@@ -206,21 +206,21 @@ Als dit bestand wordt gebruikt, wordt een fout gegenereerd. Als dit niet het gev
 
 >[!BEGINTABS]
 
->[!TAB Adobe Commerce]
+>[!TAB  Adobe Commerce ]
 
 ```php
 \Magento\Framework\App\ObjectManager::getInstance()
     ->get(\Psr\Log\LoggerInterface::class)->debug('message');
 ```
 
->[!TAB Monolog]
+>[!TAB  Monolog ]
 
 ```php
 $log = new \Monolog\Logger('custom', [new \Monolog\Handler\StreamHandler(BP.'/var/log/test.log')]);
 $log->info('Your Logging Message', ['context' => ['email' => 'john@example.com']]);
 ```
 
->[!TAB Zend]
+>[!TAB  Zend ]
 
 ```php
 $writer = new \Zend\Log\Writer\Stream(BP . '/var/log/test.log');

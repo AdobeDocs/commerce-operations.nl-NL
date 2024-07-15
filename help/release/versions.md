@@ -12,7 +12,7 @@ ht-degree: 0%
 
 # Uitgebrachte versies
 
-Deze pagina bevat een lijst met uitgebrachte versies van Adobe Commerce. Het bevat releasedata voor elke minder belangrijke, flard, en veiligheidsversie en eind-van-steundata. Zie [Levenscyclusbeleid](lifecycle-policy.md).
+Deze pagina bevat een lijst met uitgebrachte versies van Adobe Commerce. Het bevat releasedata voor elke minder belangrijke, flard, en veiligheidsversie en eind-van-steundata. Zie [ beleid van de Levenscyclus ](lifecycle-policy.md).
 
 >[!NOTE]
 >

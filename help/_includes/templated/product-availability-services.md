@@ -27,8 +27,8 @@ ht-degree: 6%
           <td>4.3.0+</td>
           <td>4.3.0+</td>
           <td>
-              <a href="https://commercemarketplace.adobe.com/magento-module-amazon.html">Marketplace</a><br/>
-              <a href="https://experienceleague.adobe.com/docs/commerce-channels/amazon/release-notes.html">Opmerkingen bij de release</a><br/>
+              <a href="https://commercemarketplace.adobe.com/magento-module-amazon.html"> Marketplace </a><br/>
+              <a href="https://experienceleague.adobe.com/docs/commerce-channels/amazon/release-notes.html"> Nota's van de Versie </a><br/>
           </td>
       </tr>
       <tr>
@@ -38,8 +38,8 @@ ht-degree: 6%
           <td>1,17</td>
           <td>1,17</td>
           <td>
-              <a href="https://experienceleague.adobe.com/docs/commerce-merchant-services/catalog-service/guide-overview.html">Overzicht</a><br/>
-              <a href="https://experienceleague.adobe.com/docs/commerce-merchant-services/catalog-service/release-notes.html">Opmerkingen bij de release</a><br/>
+              <a href="https://experienceleague.adobe.com/docs/commerce-merchant-services/catalog-service/guide-overview.html"> Overzicht </a><br/>
+              <a href="https://experienceleague.adobe.com/docs/commerce-merchant-services/catalog-service/release-notes.html"> Nota's van de Versie </a><br/>
           </td>
       </tr>
       <tr>
@@ -49,8 +49,8 @@ ht-degree: 6%
           <td>1.0.0+</td>
           <td>1.0.0+</td>
           <td>
-              <a href="https://commercemarketplace.adobe.com/magento-channel-manager.html">Marketplace</a><br/>
-              <a href="https://experienceleague.adobe.com/docs/commerce-channels/channel-manager/release-notes.html">Opmerkingen bij de release</a><br/>
+              <a href="https://commercemarketplace.adobe.com/magento-channel-manager.html"> Marketplace </a><br/>
+              <a href="https://experienceleague.adobe.com/docs/commerce-channels/channel-manager/release-notes.html"> Nota's van de Versie </a><br/>
           </td>
       </tr>
       <tr>
@@ -60,8 +60,8 @@ ht-degree: 6%
           <td>4.1.0.</td>
           <td>4.1.0.</td>
           <td>
-              <a href="https://commercemarketplace.adobe.com/magento-live-search.html">Marketplace</a><br/>
-              <a href="https://experienceleague.adobe.com/docs/commerce-merchant-services/live-search/release-notes.html">Opmerkingen bij de release</a><br/>
+              <a href="https://commercemarketplace.adobe.com/magento-live-search.html"> Marketplace </a><br/>
+              <a href="https://experienceleague.adobe.com/docs/commerce-merchant-services/live-search/release-notes.html"> Nota's van de Versie </a><br/>
           </td>
       </tr>
       <tr>
@@ -71,8 +71,8 @@ ht-degree: 6%
           <td>2.4.0 (PHP 8.1)</td>
           <td>2.4.0 (PHP 8.1)</td>
           <td>
-              <a href="https://commercemarketplace.adobe.com/magento-payment-services.html">Marketplace</a><br/>
-              <a href="https://experienceleague.adobe.com/docs/commerce-merchant-services/payment-services/release-notes.html">Opmerkingen bij de release</a><br/>
+              <a href="https://commercemarketplace.adobe.com/magento-payment-services.html"> Marketplace </a><br/>
+              <a href="https://experienceleague.adobe.com/docs/commerce-merchant-services/payment-services/release-notes.html"> Nota's van de Versie </a><br/>
           </td>
       </tr>
       <tr>
@@ -82,8 +82,8 @@ ht-degree: 6%
           <td>6.0.0.</td>
           <td>6.0.0.</td>
           <td>
-              <a href="https://commercemarketplace.adobe.com/magento-product-recommendations.html">Marketplace</a><br/>
-              <a href="https://experienceleague.adobe.com/docs/commerce-merchant-services/product-recommendations/release-notes.html">Opmerkingen bij de release</a><br/>
+              <a href="https://commercemarketplace.adobe.com/magento-product-recommendations.html"> Marketplace </a><br/>
+              <a href="https://experienceleague.adobe.com/docs/commerce-merchant-services/product-recommendations/release-notes.html"> Nota's van de Versie </a><br/>
           </td>
       </tr>
       <tr>
@@ -93,8 +93,8 @@ ht-degree: 6%
           <td>1.2.0+</td>
           <td>1.2.0+</td>
           <td>
-              <a href="https://commercemarketplace.adobe.com/store-fulfillment-magento-walmart.html">Marketplace</a><br/>
-              <a href="https://experienceleague.adobe.com/docs/commerce-merchant-services/store-fulfillment/release-notes.html">Opmerkingen bij de release</a><br/>
+              <a href="https://commercemarketplace.adobe.com/store-fulfillment-magento-walmart.html"> Marketplace </a><br/>
+              <a href="https://experienceleague.adobe.com/docs/commerce-merchant-services/store-fulfillment/release-notes.html"> Nota's van de Versie </a><br/>
           </td>
       </tr>
   </tbody>

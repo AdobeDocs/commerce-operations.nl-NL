@@ -19,8 +19,8 @@ Dit kan een succesvolle aanpak zijn. Eén aanbeveling die het risico beperkt (vo
 
 ## Voorbeeld van een normale tijdlijn
 
-![Voorbeeld van een tijdlijn voor standaardimplementatie](../../assets/playbooks/timeline-example.svg)
+![ Typische de chronologievoorbeeld van de handelsimplementatie ](../../assets/playbooks/timeline-example.svg)
 
 ## Voorbeeld van tijdlijnactiviteiten
 
-![Voorbeelden van tijdlijnactiviteiten voor implementatie van handel](../../assets/playbooks/timeline-activities-example.svg)
+![ de activiteiten van de de handelsimplementatie van de steekproef ](../../assets/playbooks/timeline-activities-example.svg)

@@ -15,7 +15,7 @@ Adobe Commerce ondersteunt Apache 2.4.x.
 
 ## Vereiste richtlijnen Apache
 
-1. Set `AllowEncodedSlashes` in de serverconfiguratie (globaal) of in de virtuele gastheerconfiguraties om het decoderen van de gecodeerde schuine strepen te vermijden die kwesties voor URLs kunnen veroorzaken. Wanneer u bijvoorbeeld via de API producten met een schuine streep ophaalt in de SKU, wilt u dat die niet converteren. Het voorbeeldblok is niet compleet en andere richtlijnen zijn vereist.
+1. Stel `AllowEncodedSlashes` in de serverconfiguratie (globaal) of in de virtuele hostconfiguraties in om te voorkomen dat de gecodeerde schuine strepen worden gedecodeerd die problemen kunnen veroorzaken voor URL&#39;s. Wanneer u bijvoorbeeld via de API producten met een schuine streep ophaalt in de SKU, wilt u dat die niet converteren. Het voorbeeldblok is niet compleet en andere richtlijnen zijn vereist.
 
    ```conf
    <VirtualHost *:443>
@@ -26,13 +26,13 @@ Adobe Commerce ondersteunt Apache 2.4.x.
 
 ## Apache herschrijft en opent
 
-Dit onderwerp bespreekt hoe te om Apache 2.4 toe te laten herschrijft en het plaatsen voor te specificeren [gedistribueerd configuratiebestand, `.htaccess`](https://httpd.apache.org/docs/current/howto/htaccess.html).
+Dit onderwerp bespreekt hoe te om Apache 2.4 toe te laten herschrijft en specificeert het plaatsen voor het [ verdeelde configuratiedossier, `.htaccess` ](https://httpd.apache.org/docs/current/howto/htaccess.html).
 
-Adobe Commerce gebruikt herschrijvingen op de server en `.htaccess` instructies op directoryniveau voor Apache te geven. De volgende instructies zijn ook inbegrepen in alle andere secties in dit onderwerp.
+Adobe Commerce gebruikt herschrijvingen op de server en `.htaccess` voor instructies op directoryniveau voor Apache. De volgende instructies zijn ook inbegrepen in alle andere secties in dit onderwerp.
 
-Gebruik deze sectie om herschrijvingen van Apache 2.4 in te schakelen en een instelling voor de [gedistribueerd configuratiebestand, `.htaccess`](https://httpd.apache.org/docs/current/howto/htaccess.html)
+Gebruik deze sectie om Apache 2.4 toe te laten herschrijft en specificeert het plaatsen voor het [ verdeelde configuratiedossier, `.htaccess` ](https://httpd.apache.org/docs/current/howto/htaccess.html)
 
-Adobe Commerce gebruikt herschrijvingen op de server en `.htaccess` instructies op directoryniveau voor Apache te geven.
+Adobe Commerce gebruikt herschrijvingen op de server en `.htaccess` voor instructies op directoryniveau voor Apache.
 
 >[!NOTE]
 >
@@ -44,13 +44,13 @@ Adobe Commerce gebruikt herschrijvingen op de server en `.htaccess` instructies 
    a2enmod rewrite
    ```
 
-1. Om de toepassing toe te laten om verdeelde te gebruiken `.htaccess` configuratiebestand, zie de richtlijnen in het dialoogvenster [Documentatie Apache 2.4](https://httpd.apache.org/docs/current/mod/mod_rewrite.html).
+1. Om de toepassing toe te laten om het verdeelde `.htaccess` configuratiedossier te gebruiken, zie de richtlijnen in [ Apache 2.4 documentatie ](https://httpd.apache.org/docs/current/mod/mod_rewrite.html).
 
    >[!TIP]
    >
-   >In Apache 2.4 is het standaard siteconfiguratiebestand van de server `/etc/apache2/sites-available/000-default.conf`.
+   >In Apache 2.4 is het standaardsiteconfiguratiebestand van de server `/etc/apache2/sites-available/000-default.conf` .
 
-   U kunt bijvoorbeeld het volgende toevoegen aan het einde van `000-default.conf`:
+   U kunt bijvoorbeeld het volgende toevoegen aan het einde van `000-default.conf` :
 
    ```terminal
    <Directory "/var/www/html">
@@ -60,7 +60,7 @@ Adobe Commerce gebruikt herschrijvingen op de server en `.htaccess` instructies 
 
    >[!NOTE]
    >
-   >Soms zijn aanvullende parameters vereist. Zie de klasse [Documentatie Apache 2.4](https://httpd.apache.org/docs/2.4/mod/mod_access_compat.html#order).
+   >Soms zijn aanvullende parameters vereist. Voor meer informatie, zie [ Apache 2.4 documentatie ](https://httpd.apache.org/docs/2.4/mod/mod_access_compat.html#order).
 
 1. Als u Apache-instellingen hebt gewijzigd, start u Apache opnieuw:
 
@@ -70,8 +70,8 @@ Adobe Commerce gebruikt herschrijvingen op de server en `.htaccess` instructies 
 
    >[!NOTE]
    >
-   >- Als u een upgrade hebt uitgevoerd vanaf een eerdere Apache-versie, zoekt u eerst naar `<Directory "/var/www/html">` of `<Directory "/var/www">` in `000-default.conf`.
-   >- U moet de waarde wijzigen van `AllowOverride` in de instructie voor de directory waarin u de Adobe Commerce-software wilt installeren. Als u bijvoorbeeld wilt installeren in de webserverhoofdmap, bewerkt u de instructie in `<Directory /var/www>`.
+   >- Als u een upgrade uitvoert vanaf een eerdere Apache-versie, zoekt u eerst naar `<Directory "/var/www/html">` of `<Directory "/var/www">` in `000-default.conf` .
+   >- U moet de waarde van `AllowOverride` wijzigen in de instructie voor de map waarin u de Adobe Commerce-software wilt installeren. Als u bijvoorbeeld wilt installeren in de webserverhoofdmap, bewerkt u de instructie in `<Directory /var/www>` .
 
 >[!NOTE]
 >
@@ -81,12 +81,12 @@ Adobe Commerce gebruikt herschrijvingen op de server en `.htaccess` instructies 
 
 Adobe Commerce vereist de installatie van de volgende Apache-modules:
 
-- [mod_deflate.c](https://httpd.apache.org/docs/2.4/mod/mod_deflate.html)
-- [mod_expired.c](https://httpd.apache.org/docs/2.4/mod/mod_expires.html)
-- [mod_headers.c](https://httpd.apache.org/docs/2.4/mod/mod_headers.html)
-- [mod_rewrite.c](https://httpd.apache.org/docs/2.4/mod/mod_rewrite.html)
-- [mod_security.c](https://modsecurity.org)
-- [mod_ssl.c](https://httpd.apache.org/docs/2.4/mod/mod_ssl.html)
+- [ mod_deflate.c ](https://httpd.apache.org/docs/2.4/mod/mod_deflate.html)
+- [ mod_expired.c ](https://httpd.apache.org/docs/2.4/mod/mod_expires.html)
+- [ mod_headers.c ](https://httpd.apache.org/docs/2.4/mod/mod_headers.html)
+- [ mod_rewrite.c ](https://httpd.apache.org/docs/2.4/mod/mod_rewrite.html)
+- [ mod_security.c ](https://modsecurity.org)
+- [ mod_ssl.c ](https://httpd.apache.org/docs/2.4/mod/mod_ssl.html)
 
 ## De Apache-versie verifiëren
 
@@ -103,7 +103,7 @@ Server version: Apache/2.4.04 (Ubuntu)
 Server built: Jul 22 2020 14:35:32
 ```
 
-- Als Apache *niet* geïnstalleerd, zie:
+- Als Apache *niet* geïnstalleerd is, zie:
    - [Apache installeren of upgraden op Ubuntu](#installing-apache-on-ubuntu)
    - [Apache installeren op CentOS](#installing-apache-on-centos)
 
@@ -137,13 +137,13 @@ De standaardversie van Apache installeren:
    Server built: 2020-04-15T18:00:57
    ```
 
-1. Inschakelen [herschrijft en `.htaccess`](#apache-rewrites-and-htaccess).
+1. Schakel [ herschrijft en `.htaccess`](#apache-rewrites-and-htaccess) in.
 
 ### Apache bijwerken op Ubuntu
 
 Ga als volgt te werk om bij te werken naar Apache 2.4:
 
-1. Voeg de `ppa:ondrej` gegevensopslagruimte, met Apache 2.4:
+1. Voeg de `ppa:ondrej` -opslagplaats toe, die Apache 2.4 heeft:
 
    ```bash
    apt-get -y update
@@ -165,7 +165,7 @@ Ga als volgt te werk om bij te werken naar Apache 2.4:
 
    >[!NOTE]
    >
-   >Als de opdracht &#39;apt-get install&#39; mislukt als gevolg van niet-vervulde afhankelijkheden, raadpleegt u een bron zoals [https://askubuntu.com/](https://askubuntu.com/questions/140246/how-do-i-resolve-unmet-dependencies-after-adding-a-ppa).
+   >Als &quot;apt-get installeert&quot;bevel wegens onontmoet gebiedsdelen ontbreekt, raadpleeg een middel zoals [ https://askubuntu.com/ ](https://askubuntu.com/questions/140246/how-do-i-resolve-unmet-dependencies-after-adding-a-ppa).
 
 1. Controleer de installatie.
 
@@ -180,13 +180,13 @@ Ga als volgt te werk om bij te werken naar Apache 2.4:
    Server built: Jul 22 2020 22:46:25
    ```
 
-1. Inschakelen [herschrijft en `.htaccess`](#apache-rewrites-and-htaccess).
+1. Schakel [ herschrijft en `.htaccess`](#apache-rewrites-and-htaccess) in.
 
 ## Apache installeren op CentOS
 
-Adobe Commerce vereist herschrijven van Apache-server. U moet ook het type instructies opgeven waarin u `.htaccess`, die de toepassing gebruikt om herschrijfregels op te geven.
+Adobe Commerce vereist herschrijven van Apache-server. U moet ook het type instructies opgeven dat in `.htaccess` kan worden gebruikt. De toepassing gebruikt deze om herschrijfregels op te geven.
 
-Het installeren en configureren van Apache is in principe een proces in drie stappen: de software installeren, herschrijven inschakelen en opgeven `.htaccess` richtlijnen.
+Het installeren en configureren van Apache is in feite een proces in drie stappen: de software installeren, herschrijven inschakelen en `.htaccess` instructies opgeven.
 
 ### Apache installeren
 
@@ -217,7 +217,7 @@ Het installeren en configureren van Apache is in principe een proces in drie sta
 
 ### Herschrijven en .htaccess inschakelen voor CentOS
 
-1. Openen `/etc/httpd/conf/httpd.conf` bestand voor bewerking:
+1. Open `/etc/httpd/conf/httpd.conf` -bestand voor bewerking:
 
    ```bash
    vim /etc/httpd/conf/httpd.conf`
@@ -229,7 +229,7 @@ Het installeren en configureren van Apache is in principe een proces in drie sta
    <Directory "/var/www/html">
    ```
 
-1. De waarde wijzigen van `AllowOverride` tot `All`.
+1. Wijzig de waarde van `AllowOverride` in `All` .
 
    Bijvoorbeeld:
 
@@ -244,7 +244,7 @@ Het installeren en configureren van Apache is in principe een proces in drie sta
 
    >[!NOTE]
    >
-   >De voorgaande waarden voor `Order` werkt mogelijk niet in alle gevallen. Raadpleeg de Apache-documentatie ([2,4](https://httpd.apache.org/docs/2.4/mod/mod_authz_host.html#order)).
+   >De voorafgaande waarden voor `Order` werken mogelijk niet in alle gevallen. Voor meer informatie, zie de documentatie Apache ([ 2.4 ](https://httpd.apache.org/docs/2.4/mod/mod_authz_host.html#order)).
 
 1. Sla het bestand op en sluit de teksteditor af.
 
@@ -260,7 +260,7 @@ Het installeren en configureren van Apache is in principe een proces in drie sta
 
 ### Herschrijven en .htaccess voor Ubuntu inschakelen
 
-1. Openen `/etc/apache2/sites-available/default` bestand voor bewerking:
+1. Open `/etc/apache2/sites-available/default` -bestand voor bewerking:
 
    ```bash
    vim /etc/apache2/sites-available/default
@@ -270,7 +270,7 @@ Het installeren en configureren van Apache is in principe een proces in drie sta
 
    `<Directory "/var/www/html">`
 
-1. De waarde wijzigen van `AllowOverride` tot `All`.
+1. Wijzig de waarde van `AllowOverride` in `All` .
 
    Bijvoorbeeld:
 
@@ -285,7 +285,7 @@ Het installeren en configureren van Apache is in principe een proces in drie sta
 
 1. Sla het bestand op en sluit de teksteditor af.
 
-1. Apache configureren voor het gebruik van de `mod_rewrite` module:
+1. Configureer Apache voor gebruik van de module `mod_rewrite` :
 
    ```bash
    cd /etc/apache2/mods-enabled
@@ -307,7 +307,7 @@ Als u 403 Verboden fouten tegenkomt bij het openen van de site, kunt u uw Apache
 
 ### 403 Verboden fouten voor Apache 2.4 oplossen
 
-Als u websitebezoekers toegang tot uw site wilt geven, gebruikt u een van de [Richtlijnen vereisen](https://httpd.apache.org/docs/2.4/howto/access.html).
+Om websitebezoekers toe te laten om tot uw plaats toegang te hebben, gebruik één van [ vereisen richtlijnen ](https://httpd.apache.org/docs/2.4/howto/access.html).
 
 Bijvoorbeeld:
 
@@ -322,4 +322,4 @@ Bijvoorbeeld:
 
 >[!NOTE]
 >
->De voorgaande waarden voor `Order` werkt mogelijk niet in alle gevallen. Zie de klasse [Apache-documentatie](https://httpd.apache.org/docs/2.4/mod/mod_access_compat.html#order).
+>De voorafgaande waarden voor `Order` werken mogelijk niet in alle gevallen. Voor meer informatie, zie de [ documentatie Apache ](https://httpd.apache.org/docs/2.4/mod/mod_access_compat.html#order).

@@ -15,28 +15,28 @@ ht-degree: 0%
 >
 >Dit is één in een reeks onderwerpen om de verkopers en de ontwikkelaars van Adobe Commerce te helpen de implicaties van de Wet van de Privacy van de Consument van Californië (CCPA) begrijpen. De informatie is uitsluitend bedoeld voor informatieve doeleinden en mag niet worden opgevat als juridisch advies. Raadpleeg uw juridisch adviseur om te bepalen of en hoe uw bedrijf aan om het even welke wettelijke verplichtingen moet voldoen.
 
-De [CCPA](https://oag.ca.gov/privacy/ccpa) De rechten van consumenten in Californië worden uitgebreid om te bepalen hoe hun persoonlijke gegevens worden verzameld, opgeslagen en gebruikt, waarbij de nadruk ligt op de bescherming van consumenten tegen de ongeoorloofde verkoop of uitwisseling van of hun persoonlijke gegevens. De CCPA is in 2018 vastgesteld en is vanaf 1 januari 2020 van kracht.
+[ CCPA ](https://oag.ca.gov/privacy/ccpa) breidt de rechten van consumenten in Californië uit om te bepalen hoe hun persoonlijke informatie wordt verzameld, opgeslagen, en gebruikt, met een nadruk op het beschermen van consumenten tegen de onbevoegde verkoop of uitwisseling of hun persoonlijke informatie. De CCPA is in 2018 vastgesteld en is vanaf 1 januari 2020 van kracht.
 
 De CCPA verleent de consument de volgende nieuwe rechten:
 
-- **Recht op kennis** de categorieën van persoonlijke informatie over hen die in de afgelopen twaalf maanden zijn verzameld, gebruikt, gedeeld of verkocht.
-- **Recht om te verwijderen** bepaalde soorten persoonlijke informatie die in het bezit zijn van een bedrijf en/of hun dienstverleners.
-- **Recht om te weigeren** van de verkoop van hun persoonlijke gegevens.
-- **Recht op non-discriminatie** in termen van prijs of dienst voor het uitoefenen van een privacyrecht in het kader van de CCPA.
+- **Recht om** de categorieën persoonlijke informatie over hen te kennen die, in de afgelopen 12 maanden werd verzameld, werd gebruikt, gedeeld of verkocht.
+- **recht om** bepaalde soorten persoonlijke informatie te schrappen die door een zaken en/of hun dienstverleners wordt gehouden.
+- **Recht om uit** van de verkoop van hun persoonlijke informatie te kiezen.
+- **recht op non-discriminatie** in termen van prijs of dienst voor het uitoefenen van een privacyrecht uit hoofde van CCPA.
 
 ## CCPA-conformiteit
 
-De ontwikkeling en uitvoering van een plan voor de naleving van de CCPA-voorschriften vereist een gecoördineerde inspanning. We moedigen handelaren aan om een interfunctioneel team samen te stellen en de routekaart te volgen die in [CCPA-compatibiliteitshandleiding](https://experienceleague.adobe.com/docs/commerce-admin/start/compliance/privacy/compliance-ccpa.html) hun bedrijf aan de verordening te laten voldoen . Als ontwikkelaar kunt u worden uitgenodigd om als belanghebbende deel te nemen met een nadruk op de stappen 2 tot en met 5 van het proces. Zie de [CCPA-compatibiliteitshandleiding](https://experienceleague.adobe.com/docs/commerce-admin/start/compliance/privacy/compliance-ccpa.html) voor meer informatie .
+De ontwikkeling en uitvoering van een plan voor de naleving van de CCPA-voorschriften vereist een gecoördineerde inspanning. Wij moedigen verkopers aan om een dwars-functioneel team samen te stellen, en het roadmap te volgen die in [ wordt geschetst Cpa- Gids van de Naleving ](https://experienceleague.adobe.com/docs/commerce-admin/start/compliance/privacy/compliance-ccpa.html) om hun bedrijf in naleving van de verordening te brengen. Als ontwikkelaar kunt u worden uitgenodigd om als belanghebbende deel te nemen met een nadruk op de stappen 2 tot en met 5 van het proces. Zie de [ Gids van de Naleving CCPA ](https://experienceleague.adobe.com/docs/commerce-admin/start/compliance/privacy/compliance-ccpa.html) voor meer informatie.
 
 1. Steek een dwars-functioneel team samen om naleving CCPA te richten.
 
-1. **Maak een inventarisatie van digitale eigenschappen.**
+1. **neem inventaris van digitale eigenschappen.**
 
-1. **Wijs de de reis van de klant en processen van de gegevensinzameling in kaart.**
+1. **Kaart de processen van de klantenreis en van de gegevensinzameling.**
 
-1. **Procedures en mechanismen vaststellen om te reageren op verzoeken van klanten.**
+1. **Vestig procedures en mechanismen om op klantenverzoeken te antwoorden.**
 
-1. **Schrijf de inhoud voor de vereiste CCPA klantenberichten.**
+1. **schrijf de inhoud voor de vereiste CCPA klantenberichten.**
 
 1. Overeenkomsten met dienstverleners evalueren.
 

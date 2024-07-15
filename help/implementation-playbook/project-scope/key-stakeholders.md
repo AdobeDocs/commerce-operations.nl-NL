@@ -5,14 +5,14 @@ exl-id: 04d8270f-3f68-445a-8e7a-e17905a6f77c
 feature: Best Practices
 source-git-commit: 94d7a57dcd006251e8eefbdb4ec3a5e140bf43f9
 workflow-type: tm+mt
-source-wordcount: '390'
+source-wordcount: '388'
 ht-degree: 0%
 
 ---
 
 # Belangrijkste betrokkenen
 
-Veel bedrijven in 2021 zijn tot het besef gekomen dat het &quot;pandemisch-bestendig&quot; worden direct verband houdt met de digitale kracht van een organisatie. Gebaseerd op Forrester-gegevens[McKinsey](https://www.mckinsey.com/business-functions/strategy-and-corporate-finance/our-insights/five-fifty-the-quickening)de elektronische handel heeft in slechts drie maanden een groei van tien jaar gekend, waarbij de groei wordt gedreven door de noodzaak om digitaal met klanten te verbinden terwijl de baksteen- en mortierdeuren gesloten werden.
+Veel bedrijven in 2021 zijn tot het besef gekomen dat het &quot;pandemisch-bestendig&quot; worden direct verband houdt met de digitale kracht van een organisatie. Gebaseerd op de gegevens van Forrester, ](https://www.mckinsey.com/business-functions/strategy-and-corporate-finance/our-insights/five-fifty-the-quickening) ontdekte McKinsey dat de elektronische handel de groei van 10 jaar in zo weinig als 3 maanden heeft gezien, met de groei die door de behoefte wordt gedreven om digitaal met klanten te verbinden terwijl de steen-en-mortieren deuren werden gesloten.[
 
 Wanneer wordt besloten in een handelstransformatie te investeren, is een van de belangrijkste stappen het bepalen van wie van de organisatie bij het proces betrokken is. Voor kleinere ondernemingen, soms is het e-commerce of digitale team slechts een handvol mensen, zodat neemt het volledige team de taak. Voor grotere organisaties is het echter mogelijk dit op te splitsen in drie verschillende gebieden, waaronder:
 
@@ -39,6 +39,6 @@ De meeste handelsimplementaties vereisen verscheidene verschillende platforms om
 
 ## Wie is de uitvoerende sponsor?
 
-Digital Commerce 360 heeft gemeld dat de belangrijkste reden dat organisaties nog niet hebben geïnvesteerd in een nieuwe transformatie in de handel, is omdat ze geen leiderschapsondersteuning hebben. De mate waarin het leidinggevende team betrokken is, is van cruciaal belang voor het succes van een merk. Volledige steun van de volgende rollen, met inbegrip van terugkomende controlepuntvergaderingen tijdens de duur van een handelsimplementatie, wordt geadviseerd:
+Digital Commerce 360 heeft gemeld dat de belangrijkste reden dat organisaties nog niet hebben geïnvesteerd in een nieuwe handelstransformatie, is omdat ze geen ondersteuning bieden voor leiderschap. De mate waarin het leidinggevende team betrokken is, is van cruciaal belang voor het succes van een merk. Volledige steun van de volgende rollen, met inbegrip van terugkomende controlepuntvergaderingen tijdens de duur van een handelsimplementatie, wordt geadviseerd:
 
 - De hele C-suite

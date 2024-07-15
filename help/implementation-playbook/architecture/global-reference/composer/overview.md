@@ -15,18 +15,18 @@ ht-degree: 0%
 
 # Composerontwikkeling
 
-In dit onderwerp wordt de aanbevolen aanpak beschreven voor het op locatie ontwikkelen van Composer-modules (als Git-opslagplaatsen in de `vendor/` directory) en het toevoegen van die modules aan uw belangrijkste project van het Git.
+Dit onderwerp beschrijft de geadviseerde benadering voor het ontwikkelen van modules Composer op zijn plaats (als bewaarplaatsen van Git in de `vendor/` folder) en het toevoegen van die modules aan uw belangrijkste project van Git.
 
 >[!NOTE]
 >
->Deze richtsnoeren zijn in de eerste plaats van toepassing op [algemene referentiearchitectuur (GRA)](../overview.md) projecten.
+>Deze richtlijnen zijn hoofdzakelijk op [ globale verwijzingsarchitectuur (GRA) ](../overview.md) projecten van toepassing.
 
 ## Een ontwikkelingsvertakking voorbereiden
 
 1. Maak of check de ontwikkelingsvertakking uit in uw belangrijkste Git-opslagplaats.
 1. Vereisen ontwikkelingsversies voor elke module die u handhaaft.
 
-   In dit voorbeeld vertegenwoordigt elke vertakking in de Git-hoofdopslagplaats een versie van het Composer-pakket. De aanbevolen naamgevingsconventie voor Composer-versies in dit scenario is `dev-` gevolgd door de naam van de tak. Bijvoorbeeld:
+   In dit voorbeeld vertegenwoordigt elke vertakking in de Git-hoofdopslagplaats een versie van het Composer-pakket. De aanbevolen naamgevingsconventie voor Composer-versies in dit scenario is `dev-` gevolgd door de naam van de vertakking. Bijvoorbeeld:
 
    - `dev-develop`
    - `dev-qa`
@@ -41,19 +41,19 @@ In dit onderwerp wordt de aanbevolen aanpak beschreven voor het op locatie ontwi
    composer require 'client/module-example:dev-develop as 1.0.12'
    ```
 
-   Voor de `qa` vertakking, vervangen `dev-develop` with `dev-qa`.
+   Vervang `dev-develop` door `dev-qa` voor de `qa` -vertakking.
 
 ## Pakketten omzetten in Git-opslagruimten
 
-Pakketten bevatten standaard geen `.git/` directory. Composer kan pakketten uitchecken vanuit Git in plaats van de vooraf gebouwde Composer-pakketten te gebruiken. Het voordeel van deze aanpak is dat u de pakketten tijdens de ontwikkeling eenvoudig kunt wijzigen.
+Pakketten bevatten standaard geen map `.git/` . Composer kan pakketten uitchecken vanuit Git in plaats van de vooraf gebouwde Composer-pakketten te gebruiken. Het voordeel van deze aanpak is dat u de pakketten tijdens de ontwikkeling eenvoudig kunt wijzigen.
 
-1. De module verwijderen uit het dialoogvenster `vendor/` directory.
+1. Verwijder de module uit de map `vendor/` .
 
    ```bash
    rm -rf vendor/client/module-example
    ```
 
-1. Installeer de module opnieuw met de [opgegeven Git-bron](#prepare-a-development-branch).
+1. Installeer de module opnieuw gebruikend de [ gespecificeerde bron van het Git ](#prepare-a-development-branch).
 
    ```bash
    composer install --prefer-source
@@ -92,7 +92,7 @@ Pakketten bevatten standaard geen `.git/` directory. Composer kan pakketten uitc
 
 ## Het hoofdproject bijwerken met uw ontwikkeling
 
-Werk uw hoofdopslagplaats voor Git bij door de `composer.lock` bestand. Als uw module nieuw is, laat het toe.
+Werk de hoofdopslagplaats voor Git bij door het `composer.lock` -bestand te wijzigen. Als uw module nieuw is, laat het toe.
 
 ```bash
 # to update your packages and all dependencies of the package

@@ -13,9 +13,9 @@ ht-degree: 0%
 
 In deze sectie wordt besproken hoe u een of meer taalpakketten kunt verwijderen, waarbij u eventueel de code van de taalpakketten uit het bestandssysteem kunt opnemen. U kunt eerst back-ups maken, zodat u de gegevens later kunt herstellen.
 
-Deze opdracht wordt verwijderd *alleen* taalpakketten die zijn opgegeven in `composer.json`; met andere woorden taalpakketten die als Composer-pakketten worden aangeboden. Als uw taalpakket geen Composer-pakket is, moet u het handmatig verwijderen door de code van het taalpakket uit het bestandssysteem te verwijderen.
+Dit bevel schrapt *slechts* taalpakketten die in `composer.json` worden gespecificeerd; met andere woorden, taalpakketten die als pakketten Composer worden verstrekt. Als uw taalpakket geen Composer-pakket is, moet u het handmatig verwijderen door de code van het taalpakket uit het bestandssysteem te verwijderen.
 
-U kunt back-ups op elk gewenst moment herstellen met de [`magento setup:rollback`](uninstall-modules.md#roll-back-the-file-system-database-or-media-files) gebruiken.
+U kunt back-ups op elk gewenst moment herstellen met de opdracht [`magento setup:rollback`](uninstall-modules.md#roll-back-the-file-system-database-or-media-files) .
 
 Opdrachtgebruik:
 
@@ -29,8 +29,8 @@ Met de opdracht Taalpakket verwijderen kunt u de volgende taken uitvoeren:
 
    Om dit te omzeilen, kunt u of alle afhankelijke taalpakketten tezelfdertijd verwijderen of u kunt de afhankelijke taalpakketten eerst desinstalleren.
 
-1. Indien `--backup code` is opgegeven, maakt u een back-up van het bestandssysteem (exclusief `var` en `pub/static` mappen) naar `var/backups/<timestamp>_filesystem.tgz`
-1. Hiermee verwijdert u bestanden met taalpakketten uit de codebase met `composer remove`.
+1. Als `--backup code` is opgegeven, maakt u een back-up van het bestandssysteem (exclusief mappen `var` en `pub/static` ) naar `var/backups/<timestamp>_filesystem.tgz`
+1. Hiermee verwijdert u bestanden met taalpakketten uit de codebase met `composer remove` .
 1. Wist de cache.
 
 Als u bijvoorbeeld probeert een taalpakket te verwijderen waarvan een ander taalpakket afhankelijk is, wordt het volgende bericht weergegeven:

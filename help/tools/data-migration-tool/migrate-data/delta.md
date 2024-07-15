@@ -1,18 +1,18 @@
 ---
 title: Wijzigingen migreren
-description: Leer hoe u alleen gegevens kunt migreren die zijn gewijzigd sinds uw laatste Magento 1-gegevensmigratie met de [!DNL Data Migration Tool].
+description: Leer hoe te om slechts gegevens te migreren die sinds uw laatste Magento 1 gegevensmigratie met  [!DNL Data Migration Tool] zijn veranderd.
 exl-id: c300c567-77d3-4c25-8b28-a7ae4ab0092e
 topic: Commerce, Migration
 source-git-commit: e83e2359377f03506178c28f8b30993c172282c7
 workflow-type: tm+mt
-source-wordcount: '350'
+source-wordcount: '355'
 ht-degree: 0%
 
 ---
 
 # Wijzigingen migreren
 
-Met het gereedschap Incrementele migratie installeert u catalogustabellen (met voorvoegsel) `m2_cl_*`) en triggers (voor het bijhouden van wijzigingen) in de database van Magento 1 tijdens de [migratie van gegevens](data.md). Deze overzichtstabellen en trekkers zijn essentieel om ervoor te zorgen dat u slechts de veranderingen migreert die in Magento 1 worden aangebracht sinds de laatste tijd u gegevens migreerde. Deze wijzigingen zijn:
+Het stijgende migratiehulpmiddel installeert lijstlijsten (met prefix `m2_cl_*`) en trekkers (voor het volgen van veranderingen) in Magento 1 gegevensbestand tijdens de [ migratie van gegevens ](data.md). Deze overzichtstabellen en trekkers zijn essentieel om ervoor te zorgen dat u slechts de veranderingen migreert die in Magento 1 worden aangebracht sinds de laatste tijd u gegevens migreerde. Deze wijzigingen zijn:
 
 * Gegevens die klanten via winkel hebben toegevoegd (bestellingen, revisies en wijzigingen in klantprofielen)
 
@@ -25,10 +25,10 @@ Met het gereedschap Incrementele migratie installeert u catalogustabellen (met v
 
 Voer de volgende stappen uit om voor te bereiden voordat u begint:
 
-1. Aanmelden bij de toepassingsserver als [de eigenaar van het bestandssysteem](../../../installation/prerequisites/file-system/overview.md).
-1. Wijzigen in de `/bin` of zorg ervoor dat het aan uw systeem wordt toegevoegd `PATH`.
+1. Login aan de toepassingsserver als [ de eigenaar van het dossiersysteem ](../../../installation/prerequisites/file-system/overview.md).
+1. Wijzig de map `/bin` of zorg ervoor dat deze aan uw systeem wordt toegevoegd `PATH` .
 
-Zie de [eerste stappen](overview.md#first-steps) voor meer informatie.
+Zie de [ eerste stappen ](overview.md#first-steps) sectie voor meer details.
 
 ## De opdracht Incrementele migratie uitvoeren
 
@@ -44,7 +44,7 @@ Waarbij:
 
 * `[-a|--auto]` is een optioneel argument dat voorkomt dat de migratie stopt wanneer integriteitscontroles worden uitgevoerd.
 
-* `{<path to config.xml>}` is het absolute pad van het bestandssysteem naar `config.xml`; dit argument is vereist.
+* `{<path to config.xml>}` is het absolute bestandsysteempad naar `config.xml` . Dit argument is vereist.
 
 >[!NOTE]
 >
@@ -53,10 +53,10 @@ Waarbij:
 
 ## Gegevens migreren die door externe extensies zijn gemaakt
 
-In de `Delta` de [!DNL Data Migration Tool] migreert gegevens die slechts door de eigen modules van het Magento worden gecreeerd en is niet verantwoordelijk voor de code of de uitbreidingen die door derdeontwikkelaars worden gemaakt. Als deze uitbreidingen gegevens in het storefront gegevensbestand creeerden en de handelaar deze gegevens in Magento 2 willen hebben — config dossiers van [!DNL Data Migration Tool] moeten worden gecreëerd en dienovereenkomstig worden gewijzigd.
+In de modus `Delta` migreert [!DNL Data Migration Tool] gegevens die alleen door eigen modules van het Magento zijn gemaakt en is deze niet verantwoordelijk voor de code of extensies die door andere ontwikkelaars zijn gemaakt. Als deze extensies gegevens in de storefront-database hebben gemaakt en de handelaar deze gegevens in Magento 2 wil opnemen, moeten configuratiebestanden van de [!DNL Data Migration Tool] dienovereenkomstig worden gemaakt en gewijzigd.
 
 Als een extensie eigen tabellen heeft en u de wijzigingen voor deltabigratie moet bijhouden, voert u de volgende stappen uit:
 
-1. Voeg de te volgen tabellen toe aan de `deltalog.xml` file
-1. Maak een extra delta-klasse die de `Migration\App\Step\AbstractDelta`
+1. Voeg de tabellen die moeten worden bijgehouden toe aan het `deltalog.xml` -bestand
+1. Een extra delta-klasse maken die de `Migration\App\Step\AbstractDelta` uitbreidt
 1. Voeg de naam van de nieuwe klasse toe aan de sectie deltamodus van `config.xml`

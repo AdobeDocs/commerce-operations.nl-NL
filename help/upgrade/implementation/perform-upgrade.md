@@ -12,25 +12,25 @@ ht-degree: 0%
 
 # Een upgrade uitvoeren
 
-U kunt een upgrade uitvoeren _ter plaatse_ implementaties van de Adobe Commerce-toepassing vanaf de opdrachtregel als u de software hebt geïnstalleerd door:
+U kunt _op-gebouw_ plaatsingen van de toepassing van Adobe Commerce van de bevellijn bevorderen als u de software door installeerde:
 
-- Het pakket Composer-metagegevens downloaden met de opdracht `composer create-project` gebruiken.
+- Het pakket Composer-metagegevens downloaden met de opdracht `composer create-project` .
 - Het gecomprimeerde archief installeren.
 
 >[!NOTE]
 >
->- Voor Adobe Commerce over infrastructuurprojecten in de cloud gaat u naar [Versie voor upgradeopdracht](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/commerce-version.html) in de Cloud Guide.
->- Gebruik deze methode niet om te bevorderen als u de bewaarplaats GitHub kloond. Zie [Een op een git gebaseerde installatie upgraden](../developer/git-installs.md).
+>- Voor Adobe Commerce op de projecten van de wolkeninfrastructuur, zie [ versie van Commerce van de Verbetering ](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/commerce-version.html) in de Gids van de Wolk.
+>- Gebruik deze methode niet om te bevorderen als u de bewaarplaats GitHub kloond. Zie [ Verbetering een op git-Gebaseerde installatie ](../developer/git-installs.md).
 
-De volgende instructies tonen u hoe te om te bevorderen gebruikend Composer pakketmanager. Adobe Commerce 2.4.2 introduceerde ondersteuning voor Composer 2. Als u probeert om van &lt;2.4.1 te bevorderen, moet u eerst aan een versie bevorderen die met Composer 2 (bijvoorbeeld, 2.4.2) compatibel is gebruikend Composer 1 _voor_ upgrade naar Composer 2 voor >2.4.2 upgrades. Bovendien moet u een [ondersteunde versie](../../installation/system-requirements.md) van PHP.
+De volgende instructies tonen u hoe te om te bevorderen gebruikend Composer pakketmanager. Adobe Commerce 2.4.2 introduceerde ondersteuning voor Composer 2. Als u probeert om van &lt;2.4.1 te bevorderen, moet u eerst aan een versie bevorderen die met Composer 2 (bijvoorbeeld, 2.4.2) compatibel is gebruikend Composer 1 _vóór_ bevordering aan Composer 2 voor >2.4.2 verbeteringen. Bovendien moet u a [ gesteunde versie ](../../installation/system-requirements.md) van PHP in werking stellen.
 
 >[!WARNING]
 >
->De procedure voor de modernisering van Adobe Commerce is gewijzigd. U moet een nieuwe versie van `magento/composer-root-update-plugin` pakket (zie [voorwaarden](../prepare/prerequisites.md)). Bovendien zijn de opdrachten voor de upgrade gewijzigd van `composer require magento/<package_name>` tot `composer require-commerce magento/<package_name>`.
+>De procedure voor de modernisering van Adobe Commerce is gewijzigd. U moet een nieuwe versie van het `magento/composer-root-update-plugin` pakket installeren (zie [ eerste vereisten ](../prepare/prerequisites.md)). Bovendien zijn de opdrachten voor de upgrade gewijzigd van `composer require magento/<package_name>` in `composer require-commerce magento/<package_name>` .
 
 ## Voordat u begint
 
-U moet de opdracht [upgradevoorwaarden](../prepare/prerequisites.md) om uw omgeving voor te bereiden voordat het upgradeproces wordt gestart.
+U moet de [ verbeteringseerste vereisten ](../prepare/prerequisites.md) voltooien om uw milieu voor te bereiden alvorens het verbeteringsproces te beginnen.
 
 ## Pakketten beheren
 
@@ -44,11 +44,11 @@ U moet de opdracht [upgradevoorwaarden](../prepare/prerequisites.md) om uw omgev
    bin/magento maintenance:enable
    ```
 
-   Zie [Onderhoudsmodus in- of uitschakelen](../../installation/tutorials/maintenance-mode.md) voor extra opties. U kunt desgewenst een [aangepaste onderhoudsmodus, pagina](../troubleshooting/maintenance-mode-options.md).
+   Zie [ toelaten of onderhoudswijze ](../../installation/tutorials/maintenance-mode.md) voor extra opties onbruikbaar maken. Naar keuze, kunt u a [ pagina van de de wijze van het douaneonderhoud ](../troubleshooting/maintenance-mode-options.md) tot stand brengen.
 
 1. De aanvang van het verbeteringsproces terwijl de asynchrone processen, zoals de consumenten van de berichtrij, lopen kan gegevenscorruptie veroorzaken. Schakel alle snijtaken uit om gegevensbeschadiging te voorkomen.
 
-   _Adobe Commerce op cloudinfrastructuur:_
+   _Adobe Commerce op wolkeninfrastructuur:_
 
    ```bash
    ./vendor/bin/ece-tools cron:disable
@@ -66,9 +66,9 @@ U moet de opdracht [upgradevoorwaarden](../prepare/prerequisites.md) om uw omgev
    bin/magento cron:run --group=consumers
    ```
 
-   Wacht tot de uitsnijdtaak is voltooid. U kunt de status van de taak controleren met een procesviewer of door het `ps aux | grep 'bin/magento queue'` meerdere keren gebruiken totdat alle processen zijn voltooid.
+   Wacht tot de uitsnijdtaak is voltooid. U kunt de status van de taak met een procesviewer of door de opdracht `ps aux | grep 'bin/magento queue'` meerdere keren uit te voeren totdat alle processen zijn voltooid.
 
-1. Maak een back-up van de `composer.json` bestand.
+1. Maak een back-up van het `composer.json` -bestand.
 
    ```bash
    cp composer.json composer.json.bak
@@ -100,7 +100,7 @@ U moet de opdracht [upgradevoorwaarden](../prepare/prerequisites.md) om uw omgev
      composer require magento/module-bundle-sample-data:100.4.* magento/module-widget-sample-data:100.4.* magento/module-theme-sample-data:100.4.* magento/module-catalog-sample-data:100.4.* magento/module-customer-sample-data:100.4.* magento/module-cms-sample-data:100.4.*  magento/module-catalog-rule-sample-data:100.4.* magento/module-sales-rule-sample-data:100.4.* magento/module-review-sample-data:100.4.* magento/module-tax-sample-data:100.4.* magento/module-sales-sample-data:100.4.* magento/module-grouped-product-sample-data:100.4.* magento/module-downloadable-sample-data:100.4.* magento/module-msrp-sample-data:100.4.* magento/module-configurable-sample-data:100.4.* magento/module-product-links-sample-data:100.4.* magento/module-wishlist-sample-data:100.4.* magento/module-swatches-sample-data:100.4.* magento/sample-data-media:100.4.* magento/module-offline-shipping-sample-data:100.4.* --no-update
      ```
 
-1. Voer een upgrade uit op uw exemplaar met behulp van het volgende `composer require-commerce` opdrachtsyntaxis:
+1. Voer een upgrade uit op uw instantie met behulp van de volgende opdrachtsyntaxis `composer require-commerce` :
 
    ```bash
    composer require-commerce magento/<product> <version> --no-update [--interactive-root-conflicts] [--force-root-updates] [--help]
@@ -108,19 +108,19 @@ U moet de opdracht [upgradevoorwaarden](../prepare/prerequisites.md) om uw omgev
 
    Opdrachtopties zijn:
 
-   - `<product>` —(Vereist) Het pakket dat moet worden bijgewerkt. Voor installaties ter plaatse moet deze waarde ofwel `product-community-edition` of `product-enterprise-edition`.
+   - `<product>` — (Vereist) Het pakket dat moet worden bijgewerkt. Voor installaties op locatie moet deze waarde `product-community-edition` of `product-enterprise-edition` zijn.
 
-   - `<version>` —(Vereist) De versie van Adobe Commerce waarnaar u een upgrade uitvoert. Bijvoorbeeld: `2.4.3`.
+   - `<version>` — (Vereist) De versie van Adobe Commerce waarnaar u een upgrade uitvoert. Bijvoorbeeld `2.4.3` .
 
    - `--no-update` — (Vereist) maakt de automatische update van de gebiedsdelen onbruikbaar.
 
    - `--interactive-root-conflicts` — (Optioneel) Hiermee kunt u op interactieve wijze verouderde waarden uit eerdere versies of aangepaste waarden die niet overeenkomen met de versie waarnaar u de upgrade uitvoert, weergeven en bijwerken.
 
-   - `--force-root-updates` —(Optioneel) Hiermee worden alle conflicterende aangepaste waarden genegeerd met de verwachte Commerce-waarden.
+   - `--force-root-updates` — (Optioneel) Hiermee worden alle conflicterende aangepaste waarden genegeerd met de verwachte Commerce-waarden.
 
-   - `--help` —(Optioneel) Bevat gebruiksgegevens voor de plug-in.
+   - `--help` — (Optioneel) Hiermee worden gebruiksgegevens over de plug-in weergegeven.
 
-   Als geen van beide `--interactive-root-conflicts` noch `--force-root-updates` opgegeven, behoudt de opdracht de bestaande waarden in conflict en geeft een waarschuwingsbericht weer. Raadpleeg voor meer informatie over de plug-in de [README voor gebruik van insteekmodule](https://github.com/magento/composer-root-update-plugin/blob/develop/src/Magento/ComposerRootUpdatePlugin/README.md).
+   Als `--interactive-root-conflicts` noch `--force-root-updates` zijn opgegeven, behoudt de opdracht de bestaande waarden in conflict en wordt een waarschuwingsbericht weergegeven. Meer over de stop leren, verwijs naar [ ReADME van het Gebruik van de Insteekmodule ](https://github.com/magento/composer-root-update-plugin/blob/develop/src/Magento/ComposerRootUpdatePlugin/README.md).
 
 1. Werk de gebiedsdelen bij.
 
@@ -146,7 +146,7 @@ composer show magento/product-enterprise-edition 2.4.* --available | grep -m 1 v
 
 ### Voorbeeld - Kwaliteitspatch
 
-Kwaliteitspatches bevatten voornamelijk functionele _en_ beveiligingsoplossingen. Soms kunnen ze echter wel nieuwe, achterwaartse compatibele functies bevatten. Gebruik Composer om een kwaliteitspatch te downloaden.
+De flarden van de kwaliteit bevatten hoofdzakelijk functionele _en_ veiligheidsmoeilijke situaties. Soms kunnen ze echter wel nieuwe, achterwaartse compatibele functies bevatten. Gebruik Composer om een kwaliteitspatch te downloaden.
 
 _Adobe Commerce_:
 
@@ -162,7 +162,7 @@ composer require-commerce magento/product-community-edition 2.4.6 --no-update
 
 ### Voorbeeld - Beveiligingspatch
 
-Beveiligingspatches bevatten alleen beveiligingsoplossingen. Ze zijn ontworpen om het upgradeproces sneller en eenvoudiger te maken. Beveiligingspatches gebruiken de naamgevingsconventie van Composer `2.4.x-px`.
+Beveiligingspatches bevatten alleen beveiligingsoplossingen. Ze zijn ontworpen om het upgradeproces sneller en eenvoudiger te maken. Beveiligingspatches maken gebruik van de naamgevingsconventie van Composer `2.4.x-px` .
 
 _Adobe Commerce_:
 
@@ -178,11 +178,11 @@ composer require-commerce magento/product-community-edition 2.4.6-p3 --no-update
 
 ## Metagegevens bijwerken
 
-1. Werk de `"name"`, `"version"`, en `"description"` in de `composer.json` bestand naar wens.
+1. Werk de velden `"name"` , `"version"` en `"description"` in het `composer.json` -bestand naar wens bij.
 
    >[!NOTE]
    >
-   >De metagegevens in het dialoogvenster `composer.json` bestand is volledig oppervlakkig, niet functioneel.
+   >Het bijwerken van de metagegevens in het `composer.json` -bestand is volledig oppervlakkig, niet functioneel.
 
 1. Updates toepassen.
 
@@ -190,7 +190,7 @@ composer require-commerce magento/product-community-edition 2.4.6-p3 --no-update
    composer update
    ```
 
-1. Wis de `var/` en `generated/` submappen:
+1. Wis de submappen `var/` en `generated/` :
 
    ```bash
    rm -rf var/cache/*
@@ -220,7 +220,7 @@ composer require-commerce magento/product-community-edition 2.4.6-p3 --no-update
    bin/magento maintenance:disable
    ```
 
-1. _(Optioneel)_ Start Varnish opnieuw.
+1. _(Facultatief)_ begin Varnish opnieuw.
 
    Als u Varnish gebruikt voor het in cache plaatsen van pagina&#39;s, begin het opnieuw:
 
@@ -232,9 +232,9 @@ composer require-commerce magento/product-community-edition 2.4.6-p3 --no-update
 
 Als u wilt controleren of de upgrade is gelukt, opent u de URL van de winkel in een webbrowser. Als de upgrade is mislukt, wordt de winkel niet correct geladen.
 
-Als de toepassing met een  `We're sorry, an error has occurred while generating this email.` fout:
+Als de toepassing mislukt met een `We're sorry, an error has occurred while generating this email.` -fout:
 
-1. Herstellen [eigendom van het bestandssysteem en machtigingen](../../installation/prerequisites/file-system/configure-permissions.md) als een gebruiker met `root` rechten.
+1. De eigendom van het het dossiersysteem van het terugstellen [ en toestemmingen ](../../installation/prerequisites/file-system/configure-permissions.md) als gebruiker met `root` voorrechten.
 1. Wis de volgende directory&#39;s:
    - `var/cache/`
    - `var/page_cache/`

@@ -4,14 +4,14 @@ description: Zie een lijst met waarden voor het bestand env.php.
 exl-id: cf02da8f-e0de-4f0e-bab6-67ae02e9166f
 source-git-commit: 95ffff39d82cc9027fa633dffedf15193040802d
 workflow-type: tm+mt
-source-wordcount: '717'
+source-wordcount: '693'
 ht-degree: 0%
 
 ---
 
 # env.php reference
 
-De `env.php` bestand bevat de volgende secties:
+Het bestand `env.php` bevat de volgende secties:
 
 | Naam | Beschrijving |
 |-------------------------------|-----------------------------------------------------------------|
@@ -23,20 +23,20 @@ De `env.php` bestand bevat de volgende secties:
 | `crypt` | De coderingssleutel voor cryptografische functies |
 | `db` | Instellingen voor databaseverbinding |
 | `default_connection` | Standaardverbinding voor wachtrij met berichten |
-| `directories` | Toewijzingsinstellingen voor directory&#39;s voor handel |
+| `directories` | Toewijzingsinstellingen voor Commerce-directory&#39;s |
 | `downloadable_domains` | Lijst met downloadbare domeinen |
 | `install` | De installatiedatum |
 | `lock` | Providerinstellingen vergrendelen |
-| `MAGE_MODE` | De [toepassingsmodus](../bootstrap/application-modes.md) |
-| `queue` | [Berichtenrijen](../queues/manage-message-queues.md) instellingen |
+| `MAGE_MODE` | De [ toepassingswijze ](../bootstrap/application-modes.md) |
+| `queue` | [ de rijen van het Bericht ](../queues/manage-message-queues.md) montages |
 | `resource` | Toewijzing van de resourcenaam aan een verbinding |
 | `session` | Opslaggegevens sessie |
 | `system` | Schakelt het veld voor bewerken in de beheerder uit |
-| `x-frame-options` | Instellen voor [x-frame-opties][x-frame-options] |
+| `x-frame-options` | Het plaatsen voor [ x-kader-opties ][x-frame-options] |
 
 ## achterste
 
-Vorm **frontName** voor de admin-URL van de Commerce met behulp van de `backend` knooppunt in env.php.
+Vorm **frontName** voor Commerce admin url gebruikend de `backend` knoop in env.php.
 
 ```conf
 'backend' => [
@@ -46,7 +46,7 @@ Vorm **frontName** voor de admin-URL van de Commerce met behulp van de `backend`
 
 ## cachegeheugen
 
-Nieuwe pagina&#39;s en standaardcaching configureren door `cache` knooppunt in de `env.php` bestand.
+Configureer opnieuw pagina en zorg dat de standaardcaching plaatsvindt met het knooppunt `cache` in het `env.php` -bestand.
 
 ```conf
 'cache' => [
@@ -72,7 +72,7 @@ Nieuwe pagina&#39;s en standaardcaching configureren door `cache` knooppunt in d
 ]
 ```
 
-Meer informatie in [Redis-configuratie](../cache/redis-pg-cache.md).
+Leer meer in [ Redis Configuratie ](../cache/redis-pg-cache.md).
 
 ## cache_types
 
@@ -98,11 +98,11 @@ Alle configuraties van cachetypen zijn beschikbaar bij dit knooppunt.
 ]
 ```
 
-Meer informatie over verschillende [Cachetypen](../cli/manage-cache.md).
+Leer meer over verschillende [ Types van Geheime voorgeheugen ](../cli/manage-cache.md).
 
 ## consumer_wait_for_messages
 
-Geef op of consumenten moeten blijven opiniepeilen voor berichten als het aantal verwerkte berichten kleiner is dan `max_messages` waarde. De standaardwaarde is `1`.
+Geef op of consumenten moeten doorgaan met opiniepeilen voor berichten als het aantal verwerkte berichten kleiner is dan de waarde `max_messages` . De standaardwaarde is `1` .
 
 ```conf
 'queue' => [
@@ -112,17 +112,17 @@ Geef op of consumenten moeten blijven opiniepeilen voor berichten als het aantal
 
 De volgende opties zijn beschikbaar:
 
-- `1`—De consumenten blijven berichten van de berichtrij verwerken tot het bereiken van `max_messages` waarde opgegeven in het dialoogvenster `env.php` dossier alvorens de verbinding van TCP te sluiten en het consumentenproces te beëindigen. Als de wachtrij wordt leeggemaakt voordat de wachtrij wordt bereikt `max_messages` waarde , de consument wacht op meer berichten .
+- `1` - De consumenten blijven berichten van de berichtrij verwerken tot het bereiken van de `max_messages` waarde die in het `env.php` dossier wordt gespecificeerd alvorens de verbinding van TCP te sluiten en het consumentenproces te beëindigen. Als de wachtrij leeg is voordat de waarde `max_messages` wordt bereikt, wacht de consument tot er meer berichten zijn.
 
   Wij adviseren dit het plaatsen voor grote handelaren omdat een constante berichtstroom wordt verwacht en de vertragingen in verwerking ongewenst zijn.
 
-- `0`—De consumenten verwerken beschikbare berichten in de rij, sluiten de verbinding van TCP, en eindigen. De consumenten wachten niet op extra berichten om de rij in te gaan, zelfs als het aantal verwerkte berichten minder dan is `max_messages` waarde opgegeven in het dialoogvenster `env.php` bestand. Dit kan helpen problemen met uitsnijdtaken voorkomen die worden veroorzaakt door lange vertragingen bij de verwerking van de wachtrij met berichten.
+- `0` - De consumenten verwerken beschikbare berichten in de rij, sluiten de verbinding van TCP, en eindigen. Consumenten wachten niet op extra berichten om de wachtrij in te voeren, zelfs niet als het aantal verwerkte berichten kleiner is dan de `max_messages` -waarde die in het `env.php` -bestand is opgegeven. Dit kan helpen problemen met uitsnijdtaken voorkomen die worden veroorzaakt door lange vertragingen bij de verwerking van de wachtrij met berichten.
 
   Wij adviseren dit het plaatsen voor kleinere handelaren die geen constante berichtstroom verwachten en verkiezen gegevensverwerkingsmiddelen in ruil voor kleine verwerkingsvertragingen te besparen wanneer er geen berichten voor dagen zouden kunnen zijn.
 
 ## kraan
 
-Schakel snijtaken voor de toepassing Commerce in of uit. Standaard zijn snijtaken ingeschakeld. Om hen onbruikbaar te maken, voeg toe `cron` aan de `env.php` en stel de waarde in op `0`.
+Hiermee schakelt u snijtaken voor de Commerce-toepassing in of uit. Standaard zijn snijtaken ingeschakeld. Als u deze wilt uitschakelen, voegt u de `cron` -configuratie toe aan het `env.php` -bestand en stelt u de waarde in op `0` .
 
 ```conf
 'cron' => [
@@ -132,13 +132,13 @@ Schakel snijtaken voor de toepassing Commerce in of uit. Standaard zijn snijtake
 
 >[!WARNING]
 >
->Wees voorzichtig wanneer u snijtaken uitschakelt. Als ze uitgeschakeld zijn, worden essentiële processen die vereist zijn voor de toepassing Commerce niet uitgevoerd.
+>Wees voorzichtig wanneer u snijtaken uitschakelt. Als ze zijn uitgeschakeld, worden de essentiële processen die door de Commerce-toepassing worden vereist, niet uitgevoerd.
 
-Meer informatie over [Crons](../cli/configure-cron-jobs.md).
+Leer meer over [ Crons ](../cli/configure-cron-jobs.md).
 
 ## coderen
 
-De handel gebruikt een encryptiesleutel om wachtwoorden en andere gevoelige gegevens te beschermen. Deze sleutel wordt gegenereerd tijdens het installatieproces.
+Commerce gebruikt een coderingssleutel om wachtwoorden en andere vertrouwelijke gegevens te beschermen. Deze sleutel wordt gegenereerd tijdens het installatieproces.
 
 ```conf
 'crypt' => [
@@ -146,7 +146,7 @@ De handel gebruikt een encryptiesleutel om wachtwoorden en andere gevoelige gege
 ]
 ```
 
-Meer informatie over [Coderingssleutel](https://docs.magento.com/user-guide/system/encryption-key.html) in de _Handleiding voor commerciële gebruikers_.
+Leer meer over [ Sleutel van de Encryptie ](https://docs.magento.com/user-guide/system/encryption-key.html) in de _gids van de Gebruiker van Commerce_.
 
 ## db
 
@@ -172,7 +172,7 @@ Alle gegevensbestandconfiguraties zijn beschikbaar in deze knoop.
 
 ## default_connection
 
-Bepaalt de standaardverbinding voor berichtrijen. De waarde kan `db`, `amqp`of een aangepast wachtrijsysteem zoals `redismq`. Als u een andere waarde dan `db`, moet de software van de berichtrij eerst worden geïnstalleerd en worden gevormd. Anders worden berichten niet correct verwerkt.
+Bepaalt de standaardverbinding voor berichtrijen. De waarde kan `db`, `amqp`, of een systeem van de douanerij zoals `redismq` zijn. Als u een andere waarde dan `db` opgeeft, moet de software voor de wachtrij van berichten eerst worden geïnstalleerd en geconfigureerd. Anders worden berichten niet correct verwerkt.
 
 ```conf
 'queue' => [
@@ -180,12 +180,12 @@ Bepaalt de standaardverbinding voor berichtrijen. De waarde kan `db`, `amqp`of e
 ]
 ```
 
-Indien `queue/default_connection` is opgegeven in het systeem `env.php` bestand, wordt deze verbinding gebruikt voor alle berichtrijen door het systeem, tenzij een specifieke verbinding in een `queue_topology.xml`, `queue_publisher.xml` of `queue_consumer.xml` bestand.
-Als `queue/default_connection` is `amqp` in `env.php` maar `db` De verbinding wordt gespecificeerd in de dossiers van XML van de rijconfiguratie van een module, zal de module MySQL als berichtbroker gebruiken.
+Als `queue/default_connection` is opgegeven in het systeem `env.php` -bestand, wordt deze verbinding gebruikt voor alle berichtenrijen door het systeem, tenzij een specifieke verbinding is gedefinieerd in een `queue_topology.xml` -, `queue_publisher.xml` - of `queue_consumer.xml` -bestand.
+Als `queue/default_connection` bijvoorbeeld `amqp` in `env.php` is maar een `db` -verbinding is opgegeven in de XML-bestanden van de configuratie van de wachtrij van een module, gebruikt de module MySQL als een berichtbroker.
 
 ## mappen
 
-Optionele mappingopties voor mappen die moeten worden ingesteld wanneer de webserver is geconfigureerd voor de toepassing Handelsgewijs vanuit de `/pub` map voor [verbeterde beveiliging](../../installation/tutorials/docroot.md).
+De facultatieve opties van de folderafbeelding die moeten worden geplaatst wanneer de Webserver wordt gevormd om Commerce te dienen app van de `/pub` folder voor [ betere veiligheid ](../../installation/tutorials/docroot.md).
 
 ```conf
 'directories' => [
@@ -203,11 +203,11 @@ Een lijst met downloadbare domeinen beschikbaar in dit knooppunt. De extra domei
 ]
 ```
 
-Meer informatie over [Downloadbare domeinen](https://devdocs.magento.com/guides/v2.4/reference/cli/magento.html#downloadabledomainsadd).
+Leer meer over [ Downloadbare Domeinen ](https://devdocs.magento.com/guides/v2.4/reference/cli/magento.html#downloadabledomainsadd).
 
 ## installeren
 
-De installatiedatum van de toepassing Commerce.
+De installatiedatum van de Commerce-toepassing.
 
 ```conf
 'install' => [
@@ -217,9 +217,9 @@ De installatiedatum van de toepassing Commerce.
 
 ## vergrendelen
 
-Providerinstellingen vergrendelen worden geconfigureerd met de optie `lock` knooppunt.
+Instellingen voor vergrendelingsproviders worden geconfigureerd met het knooppunt `lock` .
 
-Meer informatie over [Configuratie provider vergrendelen](../../installation/tutorials/lock-provider.md).
+Leer meer over [ de Configuratie van de Leverancier van het Slot ](../../installation/tutorials/lock-provider.md).
 
 ## MAGE_MODE
 
@@ -229,7 +229,7 @@ De opstellen wijze kan in deze knoop worden gevormd.
 'MAGE_MODE' => 'developer'
 ```
 
-Meer informatie over [toepassingsmodi](../cli/set-mode.md).
+Leer meer over [ toepassingswijzen ](../cli/set-mode.md).
 
 ## wachtrij
 
@@ -244,7 +244,7 @@ De de rijconfiguraties van het bericht zijn beschikbaar in deze knoop.
 ]
 ```
 
-Meer informatie over [Berichtenwachtrij][message-queue].
+Leer meer over [ Rij van het Bericht ][message-queue].
 
 ## resource
 
@@ -260,7 +260,7 @@ De de configuratiemontages van het middel zijn beschikbaar in deze knoop.
 
 ## sessie
 
-Sessieconfiguraties worden opgeslagen in de `session` knooppunt.
+Sessieconfiguraties worden opgeslagen in het knooppunt `session` .
 
 ```conf
 'session' => [
@@ -268,7 +268,7 @@ Sessieconfiguraties worden opgeslagen in de `session` knooppunt.
 ],
 ```
 
-Meer informatie over [Sessie](../storage/sessions.md).
+Leer meer over [ Zitting ](../storage/sessions.md).
 
 ## x-frame-opties
 
@@ -278,11 +278,11 @@ De header x-frame-options kan worden geconfigureerd met dit knooppunt.
 'x-frame-options' => 'SAMEORIGIN'
 ```
 
-Meer informatie over [x-frame-opties](../security/xframe-options.md).
+Leer meer over [ x-kader-opties ](../security/xframe-options.md).
 
 ## systeem
 
-Gebruikend deze knoop, sluit de Handel de configuratiewaarden in `env.php` en schakelt u het veld in de beheerder uit.
+Met dit knooppunt worden de configuratiewaarden in het `env.php` -bestand vergrendeld en wordt het veld in de beheerder uitgeschakeld.
 
 ```conf
 'system' => [
@@ -295,7 +295,7 @@ Gebruikend deze knoop, sluit de Handel de configuratiewaarden in `env.php` en sc
   ]
 ```
 
-Meer informatie in [env-php-config-set](../cli/set-configuration-values.md).
+Leer meer in [ env-php-config-reeks ](../cli/set-configuration-values.md).
 
 <!-- Link definitions -->
 

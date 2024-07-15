@@ -5,7 +5,7 @@ recommendations: noCatalog
 exl-id: 0e41dca0-5a23-4d12-96fe-241c511ae366
 source-git-commit: af45ac46afffeef5cd613628b2a98864fd7da69b
 workflow-type: tm+mt
-source-wordcount: '175'
+source-wordcount: '166'
 ht-degree: 0%
 
 ---
@@ -28,10 +28,10 @@ MySQL-databases worden asynchroon gerepliceerd. Dit betekent dat slaven niet per
 
 Een diepgaande bespreking van gegevensbestandreplicatie is voorbij het werkingsgebied van deze gids. Als u dit wilt instellen, kunt u een bron raadplegen zoals:
 
-- [MySQL-documentatie](https://dev.mysql.com/doc/refman/5.6/en/replication.html)
-- [Masterslave-replicatie instellen in MySQL (digitalocean)](https://www.digitalocean.com/community/tutorials/how-to-set-up-replication-in-mysql)
+- [ documentatie MySQL ](https://dev.mysql.com/doc/refman/5.6/en/replication.html)
+- [ hoe te Reeks HoofdSlave Replicatie in MySQL (digitalocean) ](https://www.digitalocean.com/community/tutorials/how-to-set-up-replication-in-mysql)
 
-De handel verstrekt steekproefMySQL configuraties voor uw slave gegevensbestanden. Een eenvoudige configuratie wordt verstrekt met `ResourceConnections` class `README.md`.
+Commerce biedt voorbeelden van MySQL-configuraties voor uw slave-databases. Een eenvoudige configuratie wordt geleverd bij de `ResourceConnections` -klasse `README.md` .
 
 Het volgende is geavanceerder en wordt slechts ter informatie verstrekt:
 
@@ -122,9 +122,9 @@ Het volgende is geavanceerder en wordt slechts ter informatie verstrekt:
 
 ## Prestatieverbetering
 
-Om de prestaties van master-slave replicatie te verbeteren, kunt u sommige lijsten op slave instanties filtreren. We raden u aan alle tijdelijke tabellen te filteren met een naampatroon `search\_tmp\_%` die worden gebruikt voor het zoeken naar catalogi.
+Om de prestaties van master-slave replicatie te verbeteren, kunt u sommige lijsten op slave instanties filtreren. U wordt aangeraden alle tijdelijke tabellen met een naampatroon `search\_tmp\_%` te filteren die worden gebruikt voor het zoeken naar catalogi.
 
-Hiervoor voegt u de volgende regel toe aan uw `my.cnf` bestand op uw slave-exemplaren:
+Hiervoor voegt u de volgende regel toe aan uw `my.cnf` -bestand op uw slave-instanties:
 
 ```conf
 replicate-wild-ignore-table=%.search\_tmp\_%

@@ -23,7 +23,7 @@ Het doelpubliek voor dit afspeelboek bevat:
 
 - Chief Marketing Officer
 - Hoofd Digitaal, Hoofd Strategie, Hoofd Marketing
-- Hoofd Inhoud, Hoofd van UX, Inhoudsproductieleider, Content Strategist, Content Producers, UX Designer
+- Hoofd Inhoud, Hoofd van UX, Content Production Lead, Content Strategist, Content Producers, UX Designer
 - Architect van de oplossing, Hoofd van Implementatie, Lead Developer
 - Programmabeheerder, projectmanager
 - Ecommerce Manager, Business Analyst
@@ -32,17 +32,17 @@ Het doelpubliek voor dit afspeelboek bevat:
 
 Dit document volgt een structuur die is ontworpen om u te helpen de belangrijkste aandachtsgebieden te begrijpen en zo uw investering in Adobe Commerce maximaal te benutten. Deze structuur is gebaseerd op het Deloitte and Adobe Commerce Governance Framework, dat het juiste bedrijfsklimaat creëert voor het slagen van digitale bewerkingen en transformaties. Het omvat:
 
-- **Leiderschap**—Inkoop en ondersteuning van het succesvolle beheer van een e-commerce-platform.
+- **LEIDENE** - Uitvoerend koop-binnen en steun voor het succesvolle beheer van een e-commerce platform.
 
-- **Strategie**—Helderheid en groepering rond zeer belangrijke bedrijfsdoelstellingen voor het evalueren van digitale prestaties en elektronische handel verrichtingen.
+- **Strategie** - Duidelijkheid en groepering rond zeer belangrijke bedrijfsdoelstellingen voor het evalueren van digitale prestaties en elektronische handel verrichtingen.
 
-- **Oplossing**—Hosting en infrastructuurevaluatie voor verschillende bedrijfs en e-commerce vereisten.
+- **Oplossing** - het ontvangen en infrastructuurevaluatie voor variërende zaken en e-commerce vereisten.
 
-- **Mensen**—De middelen, de deskundigheid, en de aangewezen teamstructuur om de verrichtingen van de elektronische handel effectief in werking te stellen.
+- **Mensen** - Middelen, deskundigheid, en de aangewezen teamstructuur om de verrichtingen van de elektronische handel effectief in werking te stellen.
 
-- **Proces**—Procedures, projectbeheer, en werkschema&#39;s voor effectief het beheren van een plaats van de Handel.
+- **Proces** - Procedures, projectbeheer, en werkschema&#39;s voor het beheren van een plaats van de Handel effectief.
 
-- **Product**—Algemene e-commerce oplossingen, gemeenschappelijke integratie, en automatiseringen.
+- **product** - Algemene e-handeloplossingen, gemeenschappelijke integratie, en automatiseringen.
 
 >[!NOTE]
 >

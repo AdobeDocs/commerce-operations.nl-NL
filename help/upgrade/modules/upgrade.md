@@ -47,14 +47,14 @@ Een module of extensie bijwerken of bijwerken:
 
 ## Door leverancier gebundelde extensies (VBE&#39;s)
 
-Alle Adobe verwijderd [VBEs](https://devdocs.magento.com/extensions/vendor/) in 2.4.4. Leveranciers blijven deze extensies ondersteunen op de Adobe Commerce Marketplace.
+De Adobe verwijderde al [ VBEs ](https://devdocs.magento.com/extensions/vendor/) in 2.4.4. Leveranciers blijven deze extensies ondersteunen op de Adobe Commerce Marketplace.
 
-Als u deze extensies wilt blijven gebruiken met Adobe Commerce 2.4.4 en hoger, moet u de bijbehorende pakketafhankelijkheden bijwerken in uw `composer.json` file _voor_ opwaardering tot 2.4.4. Neem contact op met de leverancier voor de pakketnaam en -versie die u wilt gebruiken.
+Als u deze uitbreidingen met Adobe Commerce 2.4.4 en later wilt blijven gebruiken, moet u de overeenkomstige pakketgebiedsdelen in uw `composer.json` dossier _vóór_ bevordering aan 2.4.4 bijwerken. Neem contact op met de leverancier voor de pakketnaam en -versie die u wilt gebruiken.
 
 Zie de volgende Adobe Commerce Marketplace-aanbiedingen voor meer informatie:
 
-- [Amazon Pay](https://marketplace.magento.com/amzn-amazon-pay-magento-2-module.html)
-- [Dotdigital](https://marketplace.magento.com/dotdigital-dotdigital-magento2-os-package.html)
-- [Klarna](https://marketplace.magento.com/klarna-m2-klarna.html)
-- [Vertex](https://marketplace.magento.com/vertexinc-vertex-tax-module.html)
-- [Yotpo](https://marketplace.magento.com/yotpo-module-yotpo.html)
+- [ Betalen Amazon ](https://marketplace.magento.com/amzn-amazon-pay-magento-2-module.html)
+- [ Dotdigital ](https://marketplace.magento.com/dotdigital-dotdigital-magento2-os-package.html)
+- [ Klarna ](https://marketplace.magento.com/klarna-m2-klarna.html)
+- [ Hoekpunt ](https://marketplace.magento.com/vertexinc-vertex-tax-module.html)
+- [ Yotpo ](https://marketplace.magento.com/yotpo-module-yotpo.html)

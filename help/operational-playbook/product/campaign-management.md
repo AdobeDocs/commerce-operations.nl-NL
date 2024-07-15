@@ -5,7 +5,7 @@ exl-id: 466f2f83-ea19-4230-b33b-4435974effb7
 feature: Best Practices, Promotions/Events
 source-git-commit: e83e2359377f03506178c28f8b30993c172282c7
 workflow-type: tm+mt
-source-wordcount: '255'
+source-wordcount: '243'
 ht-degree: 0%
 
 ---
@@ -14,7 +14,7 @@ ht-degree: 0%
 
 In e-commerce, bepalen de campagnes een reeks acties of taken die met elkaar verbonden zijn, die de bedrijfsvisie en het doel ten goede komen. U kunt deze handelingen of taken zodanig instellen dat ze afzonderlijk, opeenvolgend, gelijktijdig of in een willekeurige combinatie kunnen functioneren. Campagnes spelen een belangrijke rol in een bedrijfsstrategie.
 
-![Voorbeeld van een campagneafbeelding](../../assets/playbooks/campaign-example.png)
+![ het campagnebeeld van het Voorbeeld ](../../assets/playbooks/campaign-example.png)
 
 ## Typen campagne
 
@@ -35,10 +35,10 @@ Het volledige model van e-commerce wordt geplaatst op de website, wat betekent d
 
 Verschillen tussen B2B- en B2C-campagnebeheer:
 
-- **Ontwikkelen van relatie**—B2B gebruikt campagnebeheer om langetermijnrelaties op te bouwen, terwijl B2C campagnebeheer gebruikt om kortetermijnrelaties op te bouwen
+- **ontwikkelt verhouding** - B2B gebruikt campagnebeheer om relaties op lange termijn te bouwen, terwijl B2C campagnebeheer gebruikt om relaties op korte termijn te bouwen
 
-- **Branding**—B2B-campagnebeheer richt zich meer op het genereren van leads, terwijl B2C zich richt op merkwaarde
+- **brandend** - B2B campagnebeheer concentreert zich meer op het produceren van lood, terwijl B2C zich op merkwaarde concentreert
 
-- **Besluitvorming**—B2B-campagnebeslissingen zijn logisch, terwijl B2C-beslissingen emotioneel zijn
+- **Beslissende**-B2B campagnebesluiten zijn logisch, terwijl B2C campagnebesluiten emotioneel zijn
 
-- **Publiek**—B2B-campagnebeheer omvat meerdere belanghebbenden, terwijl B2C-campagnebeheer gericht is op individuele eindgebruikers
+- **publiek** - B2B campagnebeheer omvat veelvoudige belanghebbenden, terwijl B2C campagnebeheer individuele eind - gebruikers richt

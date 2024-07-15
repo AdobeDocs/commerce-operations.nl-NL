@@ -1,5 +1,5 @@
 ---
-title: Orderbeheer
+title: Order Management
 description: Leer hoe een systeem van het ordebeheer voor uw e-commerce zaken essentieel is.
 exl-id: 62edc895-d725-4252-9a43-e03427579444
 feature: Best Practices, Orders, Shipping/Delivery
@@ -12,9 +12,10 @@ ht-degree: 0%
 
 # Orderbeheer
 
-Voor gloednieuwe bedrijven zijn de orderniveaus laag en is het eenvoudiger om bestellingen tegen lagere kosten te voltooien. Nochtans, wanneer de vraag stijgt de orden en het moeilijk wordt om orden met een klein team of door zich tegen lagere kosten te behandelen. U zou een grotere faciliteit, zoals een pakhuis of meer dan één pakhuis afhankelijk van de aard van de zaken kunnen nodig hebben, die kostbaar kan zijn en meer personeel vereist. Dit is waar het ordebeheer in het beeld komt.
+Voor gloednieuwe bedrijven zijn de orderniveaus laag en is het eenvoudiger om
+volledige bestellingen tegen lagere kosten. Nochtans, wanneer de vraag stijgt de orden en het moeilijk wordt om orden met een klein team of door zich tegen lagere kosten te behandelen. U zou een grotere faciliteit, zoals een pakhuis of meer dan één pakhuis afhankelijk van de aard van de zaken kunnen nodig hebben, die kostbaar kan zijn en meer personeel vereist. Dit is waar het ordebeheer in het beeld komt.
 
-Het beheer van bestellingen helpt te voldoen aan de veranderende operationele vereisten voor het beheer van de vraag, de voorraad, de verpakking en de verzending. Het integreren van een Systeem van het Beheer van de Orde met het Platform kan ondernemingen helpen aan hun veranderende vereisten voldoen en klantentevredenheid, klantenbehoud, hogere omzettingspercentages, en merkloyaliteit drijven. Al deze factoren beïnvloeden direct en indirect de prestaties en de opbrengstgroei van uw zaken.
+Het beheer van bestellingen helpt te voldoen aan de veranderende operationele vereisten voor het beheer van de vraag, de voorraad, de verpakking en de verzending. Het integreren van een Order Management Systeem met het Platform kan ondernemingen helpen om aan hun veranderende vereisten te voldoen en klantentevredenheid, klantenbehoud, hogere omzettingspercentages, en merkloyaliteit te drijven. Al deze factoren beïnvloeden direct en indirect de prestaties en de opbrengstgroei van uw zaken.
 
 De de beheerssystemen van de orde helpen alle essentiële gegevens in één systeem centraliseren, dat één enkele mening van alle stromen, met inbegrip van orden, producten, klanten, inventaris, verpakking, winst, en betalingen verstrekt zodat u klanten aan verwachtingen kunt gemakkelijk ontmoeten.
 
@@ -29,6 +30,6 @@ Het beheer van de orde is essentieel in om het even welke elektronische handel o
 - De terugkeer van de monitor om te begrijpen waarom de winst door de klanten wordt gemaakt zodat zij aan dat kunnen werken en verbeteren
 - Helpt de algemene ervaring van de klant te begrijpen als zij met hun aankoop tevreden waren of niet en hoe kan het bedrijf verbeteren om de klanten beter te dienen
 
-Het correcte systeem van het Beheer van de Orde en het juiste gebruik ervan kunnen wonderen voor de organisatie in termen van opbrengst doen. Het bespaart geld en tijd, verstrekt een overzicht van de verschillende afdelingen die samenwerken, en helpt de zaken voorspelde vraag en het werk aan het verbeteren van klantenervaring om omrekeningskoersen te verhogen.
+Het juiste Order Management-systeem en het juiste gebruik ervan kunnen wonderen doen voor de organisatie in termen van inkomsten. Het bespaart geld en tijd, verstrekt een overzicht van de verschillende afdelingen die samenwerken, en helpt de zaken voorspelde vraag en het werk aan het verbeteren van klantenervaring om omrekeningskoersen te verhogen.
 
-![Orderbeheerprocesdiagram](../../assets/playbooks/order-management.png)
+![ het procesdiagram van het het beheersproces van de Orde ](../../assets/playbooks/order-management.png)

@@ -1,10 +1,10 @@
 ---
-title: '''[!DNL Upgrade Compatibility Tool] vereisten"'
-description: Controleer of uw systeem voldoet aan de vereisten om het [!DNL Upgrade Compatibility Tool] in een opdrachtregelinterface voor uw Adobe Commerce-project.
+title: '[!DNL Upgrade Compatibility Tool] requirements'
+description: Verifieer dat uw systeem aan de noodzakelijke vereisten voldoet om  [!DNL Upgrade Compatibility Tool]  in een bevel-lijn interface voor uw project van Adobe Commerce in werking te stellen.
 exl-id: b8af2e07-3d28-4937-bb88-b0a1c88a2938
 source-git-commit: 40d850add2ef8c51e9192758135768306b163780
 workflow-type: tm+mt
-source-wordcount: '303'
+source-wordcount: '273'
 ht-degree: 0%
 
 ---
@@ -13,13 +13,13 @@ ht-degree: 0%
 
 {{commerce-only}}
 
-U moet [Adobe Commerce-toegangssleutels](https://developer.adobe.com/commerce/marketplace/guides/sellers/profile-information/#access-keys) om de [!DNL Upgrade Compatibility Tool]. Voeg je Adobe Commerce toegangstoetsen toe aan je `auth.json` bestand, dat zich bevindt op `~/.composer` standaard.
+U moet [ de toegangssleutels van Adobe Commerce ](https://developer.adobe.com/commerce/marketplace/guides/sellers/profile-information/#access-keys) hebben om [!DNL Upgrade Compatibility Tool] te downloaden en te gebruiken. Voeg uw Adobe Commerce-toegangstoetsen toe aan uw `auth.json` -bestand, dat zich standaard op `~/.composer` bevindt.
 
 >[!NOTE]
 >
->Controleer uw **COMPOSER_HOME** omgevingsvariabele om te zien waar de `auth.json` bestand is gevonden.
+>Controleer uw **COMPOSER_HOME** milieuvariabele om te zien waar het `auth.json` dossier wordt gevestigd.
 
-De **openbare sleutel** komt overeen met de _gebruikersnaam_ overwegende dat de **persoonlijke sleutel** is de _password_:
+De **openbare sleutel** beantwoordt aan _gebruikersbenaming_ terwijl de **privé sleutel** het _wachtwoord_ is:
 
 ## Voorbeeld van Adobe Commerce-toegangssleutels
 
@@ -34,22 +34,22 @@ De **openbare sleutel** komt overeen met de _gebruikersnaam_ overwegende dat de 
 
 >[!NOTE]
 >
-> Als u uw **Adobe Commerce-toegangssleutels**, kunt u de [!DNL Upgrade Compatibility Tool] en de `composer create-project` de opdracht mislukt.
+> Als u niet correct uw **de toegangssleutels van Adobe Commerce** vormt, kunt u niet [!DNL Upgrade Compatibility Tool] downloaden en het `composer create-project` bevel zal ontbreken.
 
-Uitvoeren `composer install` in uw terminal om gebiedsdelen te installeren.
+Voer `composer install` uit in uw terminal om afhankelijkheden te installeren.
 
 ## Systeemvereisten
 
-De minimumeisen voor het gebruik van de [!DNL Upgrade Compatibility Tool] in een bevel-lijn interface zijn:
+De minimumvereisten om [!DNL Upgrade Compatibility Tool] in een bevel-lijn interface te gebruiken zijn:
 
-| **Vereisten** | **Restricties** |
+| **Vereisten** | **Beperkingen** |
 |----------------|-----------------|
-| PHP-versie | >= 7.3 |
+| PHP-versie | >= 7,3 |
 | Composer | geen bekende eis. |
-| Node.js | Node.js-versies `^12.22.0`, `^14.17.0`, of `>=16.0.0` (zie [Node.js installeren](https://nodejs.org/en/learn/getting-started/how-to-install-nodejs)) |
+| Node.js | Node.js versies `^12.22.0`, `^14.17.0`, of `>=16.0.0` (zie [ Install Node.js ](https://nodejs.org/en/learn/getting-started/how-to-install-nodejs)) |
 | Geheugenbeperkingen | minimaal 2 GB RAM. |
 
-[!DNL Upgrade Compatibility Tool] vereist [PCNTL](https://www.php.net/manual/en/book.pcntl.php) en andere PHP extensies voor de uitvoering. Controleer de vereiste PHP extensies met `composer check-platform-reqs` opdracht:
+[!DNL Upgrade Compatibility Tool] vereist [ PCNTL ](https://www.php.net/manual/en/book.pcntl.php) en andere PHP uitbreidingen voor de uitvoering. Controleer de vereiste PHP-extensies met de opdracht `composer check-platform-reqs` :
 
 ```bash
 # Example output of `composer check-platform-reqs` command for UCT 2.2.6 and PHP 7.4:
@@ -74,10 +74,10 @@ ext-zip       1.15.6    success
 php           7.4.30    success
 ```
 
-Adobe Commerce wordt alleen ondersteund op Linux-besturingssystemen. U kunt de [!DNL Upgrade Compatibility Tool] in een Linux-besturingssysteem. U hoeft de [!DNL Upgrade Compatibility Tool] waar uw Adobe Commerce-exemplaar zich bevindt.
+Adobe Commerce wordt alleen ondersteund op Linux-besturingssystemen. U kunt de [!DNL Upgrade Compatibility Tool] uitvoeren in een Linux-besturingssysteem. U hoeft de [!DNL Upgrade Compatibility Tool] niet uit te voeren waar uw Adobe Commerce-instantie zich bevindt.
 
-Het is noodzakelijk [!DNL Upgrade Compatibility Tool] om toegang te hebben tot de broncode van de Adobe Commerce-instantie. U kunt de toepassing bijvoorbeeld op de ene server installeren en deze op de Adobe Commerce-installatie op een andere server plaatsen.
+De [!DNL Upgrade Compatibility Tool] moet toegang hebben tot de broncode van de Adobe Commerce-instantie. U kunt de toepassing bijvoorbeeld op de ene server installeren en deze op de Adobe Commerce-installatie op een andere server plaatsen.
 
-Als u de [!DNL Upgrade Compatibility Tool] voor een Adobe Commerce-exemplaar met grote modules en bestanden kan het nodig zijn dat er veel RAM-geheugen beschikbaar is (ten minste 2 GB).
+Als u de [!DNL Upgrade Compatibility Tool] uitvoert tegen een Adobe Commerce-instantie met grote modules en bestanden, hebt u wellicht veel RAM-geheugen nodig (ten minste 2 GB).
 
-Voer de [!DNL Upgrade Compatibility Tool] van de [[!DNL Site-Wide Analysis Tool]](https://experienceleague.adobe.com/docs/commerce-operations/upgrade-guide/upgrade-compatibility-tool/use-upgrade-compatibility-tool/integrate-analysis-tool.html) for [Adobe Commerce over cloudinfrastructuur](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/project/overview.html){target=_blank} projecten.
+Stel [!DNL Upgrade Compatibility Tool] van [[!DNL Site-Wide Analysis Tool] in werking ](https://experienceleague.adobe.com/docs/commerce-operations/upgrade-guide/upgrade-compatibility-tool/use-upgrade-compatibility-tool/integrate-analysis-tool.html) voor [ Adobe Commerce op de projecten van de wolkeninfrastructuur ](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/project/overview.html) {target=_blank}.

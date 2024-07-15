@@ -5,7 +5,7 @@ exl-id: a55f357b-6c95-49d6-b2f1-c2e403a8c85f
 topic: Commerce, Migration
 source-git-commit: e83e2359377f03506178c28f8b30993c172282c7
 workflow-type: tm+mt
-source-wordcount: '301'
+source-wordcount: '312'
 ht-degree: 0%
 
 ---
@@ -18,7 +18,7 @@ Sommige gedragingen en logica van Magento 1 zijn in Magento 2 anders geïmplemen
 
 ### Gesplitste database niet ondersteund
 
-De [!DNL Data Migration Tool] ondersteunt geen gesplitste databases.
+De [!DNL Data Migration Tool] biedt geen ondersteuning voor gesplitste databases.
 
 ### Groepsprijzen geconverteerd naar Tier-prijzen
 
@@ -30,23 +30,23 @@ Referentienummers voor bestellingen, facturen, verzendingen, creditmemo&#39;s en
 
 ## Stappen
 
-### Klantsegmenten opnieuw opslaan [Alleen Adobe Commerce]
+### Sparen de Segmenten van de Klant [ slechts Adobe Commerce ]
 
 Na de migratie moeten de segmenten van de Klant van het Admin Comité worden opnieuw bewaard om hen op en in werking te stellen.
 
 ### Tijdzone configureren
 
-Het hulpmiddel migreert timezone geen montages, zodat moet u de timezone na migratie manueel vormen bij **Winkels** > **Configuratie** > **Landinstellingen** > **Tijdzone**.
+Het hulpmiddel migreert niet timezone montages, zodat moet u de timezone na migratie bij **Sporen** manueel vormen > **Configuratie** > **Opties van de Landinstelling** > **Tijdzone**.
 
-Door gebrek, slaat het Magento tijdgegevens in UTC-0 streek in het gegevensbestand op en toont het volgens de huidige tijdzonemontages. Als de tijdgegevens al in het gegevensbestand in een andere streek dan UTC-0 zijn opgeslagen, moet u de bestaande tijd in UTC-0 omzetten gebruikend [!DNL Data Migration Tool]s `\Migration\Handler\Timezone` handler.
+Door gebrek, slaat het Magento tijdgegevens in UTC-0 streek in het gegevensbestand op en toont het volgens de huidige tijdzonemontages. Als er al tijdgegevens in de database zijn opgeslagen in een andere zone dan UTC-0, moet u de bestaande tijd omzetten in UTC-0 met de handler [!DNL Data Migration Tool]&#39;s `\Migration\Handler\Timezone` .
 
 In het volgende voorbeeld bespaart Magento 1 verkeerd tijd in de streek UTC-7 in het gegevensbestand (bijvoorbeeld, wegens een defecte derdeuitbreiding). Voer de volgende stappen uit om de aanmaaktijd van de klantenaccount correct om te zetten in de UTC-0-zone bij migratie:
 
-1. De `map-customer.xml.dist` configuratiebestand uit de desbetreffende map van het [!DNL Data Migration Tool] (`<your Magento 2 install dir>/vendor/magento/data-migration-tool/etc/<migration edition>`) in de `<your Magento 2 install dir>/app/code/Vendor/Migration/etc/<migration edition>/map-customer.xml` bestand.
+1. Kopieer het `map-customer.xml.dist` configuratiebestand uit de juiste map van [!DNL Data Migration Tool] (`<your Magento 2 install dir>/vendor/magento/data-migration-tool/etc/<migration edition>` ) naar het `<your Magento 2 install dir>/app/code/Vendor/Migration/etc/<migration edition>/map-customer.xml` -bestand.
 
-1. Werk de `<customer_map_file>` node in `config.xml` en verwijder de `.dist` verlenging van `map-customer.xml.dist`
+1. Werk het knooppunt `<customer_map_file>` in `config.xml` bij en verwijder de extensie `.dist` uit `map-customer.xml.dist`
 
-1. Voeg de volgende regel toe aan de `map-customer.xml` bestand:
+1. Voeg de volgende regel toe aan het `map-customer.xml` -bestand:
 
 ```xml
 <?xml version="1.0" encoding="UTF-8"?>

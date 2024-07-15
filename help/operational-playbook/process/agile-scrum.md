@@ -19,12 +19,12 @@ Scrum moedigt zelfgeorganiseerde, interfunctionele teams aan om problemen samen 
 
 In de methodologie van de Trommel, zijn er verscheidene vergaderingen die worden gebruikt om transparantie en vooruitgang op een e-commerce project te drijven:
 
-- **Afdrukplanning**—Een planningsvergadering waar de teamleden samenkomen om te beslissen hoeveel werk in een sprint kan worden voltooid.
+- **Sprint planning** - een plannende vergadering waar de teamleden samenkomen om te beslissen hoeveel het werk in een sprint kan worden voltooid.
 
-- **Dagelijks ruis**—Een vergadering van 15 minuten die wordt gebruikt om updates over te delen wat elk teamlid aan werkt.
+- **Dagelijkse die scrum** - een 15 minieme vergadering wordt gebruikt om updates over te delen wat elk teamlid aan werkt.
 
-- **Sprint review**—Een vergadering die werd gebruikt om vooruitgang van de sprint aan te tonen.
+- **overzicht van de Sprint** - een vergadering die wordt gebruikt om vooruitgang van de sprint aan te tonen.
 
-- **Achteraf afdrukken**—Een vergadering gebruikte om over de vorige sprint na te denken en mogelijkheden voor verbetering te identificeren.
+- **Sprint retrospectief** - een vergadering die wordt gebruikt om op de vorige sprint na te denken en kansen voor verbetering te identificeren.
 
 Aan het eind van elke sprint, zou een verhoging van waarde (bijvoorbeeld, nieuwe eigenschappen, insectenmoeilijke situaties, verbeteringen, of algemene code updates) aan klanten moeten worden geleverd en kunnen vrijgeven.

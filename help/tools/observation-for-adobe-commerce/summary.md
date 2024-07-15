@@ -1,6 +1,6 @@
 ---
-title: De [!UICONTROL Summary] tab
-description: Meer informatie over de [!UICONTROL Summary] tabblad van [!DNL Observation for Adobe Commerce].
+title: Het tabblad [!UICONTROL Summary]
+description: Leer meer over het [!UICONTROL Summary] lusje van  [!DNL Observation for Adobe Commerce].
 exl-id: b07ed898-a211-4353-a1d4-1b71d4898b93
 feature: Configuration, Observability
 source-git-commit: 790089c178570ee69f33cc04b17800db5563741e
@@ -10,105 +10,105 @@ ht-degree: 0%
 
 ---
 
-# De [!UICONTROL Summary] tab
+# Het tabblad [!UICONTROL Summary]
 
-De [!UICONTROL Summary] tabblad van [!DNL Observation for Adobe Commerce] is bedoeld om snel enkele problemen te zien die door sites worden ervaren om u te helpen potentiële worteloorzaken van siteproblemen automatisch oplossen of identificeren. De extra lusjes verstrekken diepgaande niveauinformatie over componentendiensten, gegevensbestand, infrastructuur, en processtaten.
+Het tabblad [!UICONTROL Summary] van [!DNL Observation for Adobe Commerce] is bedoeld om snel een aantal problemen te zien die sites ervaren om u te helpen bij het automatisch oplossen of identificeren van mogelijke hoofdoorzaken van siteproblemen. De extra lusjes verstrekken diepgaande niveauinformatie over componentendiensten, gegevensbestand, infrastructuur, en processtaten.
 
 ## [!UICONTROL Transaction Overview]
 
-![Transactie - overzicht](../../assets/tools/transaction-overview.jpg)
+![ Overzicht van de Transactie ](../../assets/tools/transaction-overview.jpg)
 
-### [Wat is een transactie?](https://docs.newrelic.com/docs/apm/transactions/intro-transactions/transactions-new-relic-apm/#:%7E:text=transactions%20are%20reported.-,Wat%20is%20a%20transactie%3F,werk%20in%20a%20software%20application.&amp;text=For%20APM%2C%20it%20will%20will%20vaak,when%20the%20response%20is%20sent)
+### [ wat is een transactie?](https://docs.newrelic.com/docs/apm/transactions/intro-transactions/transactions-new-relic-apm/#:%7E:text=transactions%20are%20reported.-,Wat%20is%20a%20transactie%3F,werk%20in%20a%20software%20application.&amp;text=For%20APM%2C%20it%20will%20will%20vaak,when%20the%20response%20is%20sent)
 
-&quot;Bij [!DNL New Relic], wordt een transactie gedefinieerd als één logische eenheid van het werk in een softwaretoepassing. Specifiek, verwijst het naar de functievraag en methodevraag die omhoog die eenheid van het werk maken. Het verwijst vaak naar een Webtransactie, die een activiteit vertegenwoordigt die gebeurt van wanneer de toepassing een Webverzoek aan ontvangt wanneer de reactie wordt verzonden.&quot;
+&quot;Bij [!DNL New Relic] wordt een transactie gedefinieerd als één logische eenheid van het werk in een softwaretoepassing. Specifiek, verwijst het naar de functievraag en methodevraag die omhoog die eenheid van het werk maken. Het verwijst vaak naar een Webtransactie, die een activiteit vertegenwoordigt die gebeurt van wanneer de toepassing een Webverzoek aan ontvangt wanneer de reactie wordt verzonden.&quot;
 
 ### Soorten transacties:
 
-**Web:** Webtransacties worden gestart met een HTTP-aanvraag. Voor de meeste organisaties, vertegenwoordigen deze klant-centric interactie en zijn daarom de belangrijkste transacties om te controleren.
+**Web:** de transacties van het Web worden in werking gesteld met een verzoek van HTTP. Voor de meeste organisaties, vertegenwoordigen deze klant-centric interactie en zijn daarom de belangrijkste transacties om te controleren.
 
-**Niet-web:** Niet-webtransacties worden niet gestart met een webaanvraag. Ze kunnen processen van niet-webworkers, achtergrondprocessen, scripts, activiteit in de wachtrij van berichten en andere taken omvatten.
+**niet-Web:** de niet-Webtransacties worden niet in werking gesteld met een Webverzoek. Ze kunnen processen van niet-webworkers, achtergrondprocessen, scripts, activiteit in de wachtrij van berichten en andere taken omvatten.
 
-Als u kijkt naar de **[!UICONTROL Transaction Overview]** in het bovenstaande kader waren er bijna 53.000 transacties met een gemiddelde APDEX score van 0,76, en 95% van deze transacties gebeurde in minder dan 2,313 seconden. Dit zou een kader zijn waarin een strakkere tijdslijn kan wijzen op een afwijking van dat huidige gemiddelde als er een APDEX-hit is tijdens een korte periode.
+Als je kijkt naar het bovenstaande frame van **[!UICONTROL Transaction Overview]** , waren er bijna 53.000 transacties met een gemiddelde APDEX score van 0,76, en 95% van deze transacties gebeurde in minder dan 2,313 seconden. Dit zou een kader zijn waarin een strakkere tijdslijn kan wijzen op een afwijking van dat huidige gemiddelde als er een APDEX-hit is tijdens een korte periode.
 
 ## [!UICONTROL 404 page errors frame]
 
-![Foutenframe van 404 pagina&#39;s](../../assets/tools/404-page-errors.jpg)
+![ kader van 404 paginafouten ](../../assets/tools/404-page-errors.jpg)
 
-De **[!UICONTROL 404 page errors]** frame bevat de lijst [URI](https://en.wikipedia.org/wiki/Uniform_Resource_Identifier) en het aantal fouten van 404 pagina&#39;s voor een geselecteerd tijdkader.
+Het **[!UICONTROL 404 page errors]** kader maakt een lijst van [ URI ](https://en.wikipedia.org/wiki/Uniform_Resource_Identifier) en de telling van 404 paginafouten voor geselecteerde timeframe.
 
 ## [!UICONTROL % of Storage Free frame]
 
-![Percentage opslagvrije frames](../../assets/tools/percent-of-storage-free.jpg)
+![ percenten van het Vrije kader van de Opslag ](../../assets/tools/percent-of-storage-free.jpg)
 
-De **[!UICONTROL % of Storage Free]** frame geeft het gemiddelde percentage weer dat vrij is van de opslagbevestigingen in alle knooppunten van uw cluster. Bijvoorbeeld, als u een drie knoopcluster hebt, toont het kader \&lt;mount point=&quot;&quot;>, \&lt;environment name=&quot;&quot;>. Dit frame kan misleidend zijn als er een variatie is tussen drie knooppunten. Een voorbeeld van een variantie is als de `/data/mysql` mount point free was a different value across the three node cluster. Er is een frame onder de [!UICONTROL MySQL] tab die de koppelpunten op knooppuntnaam facetteert om nauwkeuriger te zien wat de `/data/mysql` opslag vrij op elke knoop eigenlijk is.
+In het frame **[!UICONTROL % of Storage Free]** wordt het gemiddelde percentage weergegeven dat vrij is van de opslagbevestigingen in alle knooppunten van uw cluster. Als u bijvoorbeeld een cluster met drie knooppunten hebt, wordt in het frame \&lt;mount point\>, \&lt;environment name\> weergegeven. Dit frame kan misleidend zijn als er een variatie is tussen drie knooppunten. Een voorbeeld van een variantie zou zijn als de `/data/mysql` mount point free een verschillende waarde over de drie knoopclusters was. Er is een frame onder het tabblad [!UICONTROL MySQL] dat de koppelingspunten op knooppuntnaam instelt om nauwkeuriger te zien wat de `/data/mysql` -opslagruimte op elk knooppunt is.
 
 ## [!UICONTROL % of system memory that is free frame]
 
-![percentage systeemgeheugen dat vrij frame is](../../assets/tools/percent-of-system-memory-that-is-free.jpg)
+![ percentage van systeemgeheugen dat vrij kader ](../../assets/tools/percent-of-system-memory-that-is-free.jpg) is
 
-De **% vrij van systeemgeheugen** het kader toont, door knoop, de hoeveelheid systeemgeheugen die op elke knoop vrij is.
+**% van systeemgeheugen dat vrije** kader is toont, door knoop, de hoeveelheid systeemgeheugen die op elke knoop vrij is.
 
 ## [!UICONTROL Swap memory free in bytes]
 
-![wisselgeheugen vrij in bytes](../../assets/tools/swap-memory-free-in-bytes.jpg)
+![ geheugen van het ruilmiddel vrij in bytes ](../../assets/tools/swap-memory-free-in-bytes.jpg)
 
-De **[!UICONTROL Swap memory free in bytes]** Het kader toont, door knoop, de hoeveelheid geheugen van de WEG dat op de knoop vrij is.
+In het frame **[!UICONTROL Swap memory free in bytes]** wordt per knooppunt de hoeveelheid SWAP-geheugen weergegeven die vrij is op het knooppunt.
 
 ## [!UICONTROL CPU % by host]
 
-![CPU-percentage per host](../../assets/tools/cpu-percent-by-host.jpg)
+![ percenten van cpu door gastheer ](../../assets/tools/cpu-percent-by-host.jpg)
 
-Het geheel van alle milieu&#39;s en knopen wordt getoond in **[!UICONTROL CPU % by host]** frame. Schakel de niet-productieomgevingen uit. Let ook op gevallen waarin niet alle knooppunten voor de productieomgeving aanwezig zijn. Voor meer tips over een hoog CPU-gebruik raadpleegt u [Prestaties oplossen met New Relic op Adobe Commerce](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/troubleshoot-performance-using-new-relic-on-magento-commerce.html).
+Het totaal van alle omgevingen en knooppunten wordt weergegeven in het **[!UICONTROL CPU % by host]** -frame. Schakel de niet-productieomgevingen uit. Let ook op gevallen waarin niet alle knooppunten voor de productieomgeving aanwezig zijn. Voor meer uiteinden op hoog gebruik van cpu, verwijs naar [ de prestaties problemen oplossen gebruikend New Relic op Adobe Commerce ](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/troubleshoot-performance-using-new-relic-on-magento-commerce.html).
 
 ## [!UICONTROL Alerts during timeframe]
 
-![waarschuwingen tijdens tijdsperiode](../../assets/tools/alerts-during-timeframe.jpg)
+![ alarm tijdens timeframe ](../../assets/tools/alerts-during-timeframe.jpg)
 
-De **[!UICONTROL Alerts during timeframe]** geeft alle waarschuwingen weer, inclusief de [!UICONTROL Managed Alerts] toegevoegd door Adobe Commerce-ondersteuning.
+In **[!UICONTROL Alerts during timeframe]** worden alle waarschuwingen weergegeven, inclusief de waarschuwingen die door Adobe Commerce zijn toegevoegd. [!UICONTROL Managed Alerts]
 
 ## [!UICONTROL CPU Usage]
 
-![CPU-gebruik](../../assets/tools/cpu-usage.jpg)
+![ gebruik van cpu ](../../assets/tools/cpu-usage.jpg)
 
-Als de **[!UICONTROL CPU Usage]** frame leeg is, geeft aan dat de infrastructuurtoepassing van [!DNL New Relic] is niet ingeschakeld. Als uw site op Starter staat, worden deze gegevens niet weergegeven. Als uw site op Pro staat, opent u een [ondersteuningsticket](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html) moeten [!DNL New Relic Infrastructure] ingeschakeld voor uw site.
+Als het frame **[!UICONTROL CPU Usage]** leeg is, geeft dit aan dat de infrastructuurtoepassing van [!DNL New Relic] niet is ingeschakeld. Als uw site op Starter staat, worden deze gegevens niet weergegeven. Als uw plaats op Pro is, open a [ steunkaartje ](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html) om [!DNL New Relic Infrastructure] te hebben toegelaten voor uw plaats.
 
 ## [!UICONTROL Average Response Time]
 
-![gemiddelde responstijd](../../assets/tools/average-response-time.jpg)
+![ gemiddelde reactietijd ](../../assets/tools/average-response-time.jpg)
 
-De **[!UICONTROL Average Response Time]** in de grafiek wordt de gemiddelde responstijd voor transacties (web en andere) weergegeven.
+In de grafiek **[!UICONTROL Average Response Time]** wordt de gemiddelde responstijd voor transacties (web en andere) weergegeven.
 
 ## [!UICONTROL Long duration cron_schedule updates]
 
-![lange duur updates voor uitsnijden_plannen](../../assets/tools/long-duration-cron-schedule-updates.jpg)
+![ lange duur cron_planning updates ](../../assets/tools/long-duration-cron-schedule-updates.jpg)
 
-De **[!UICONTROL cron_schedule]** de tabel is geschreven aan het begin en einde van kroonbanen . Bij lange duur kunnen cron-taken vertraging bij het bijwerken van deze tabel aangeven. Dit kan een aanwijzing zijn voor een tijdelijke back-up of een probleem met de planning van de crons.
+De tabel **[!UICONTROL cron_schedule]** wordt geschreven aan het begin en einde van de snijtaken. Bij lange duur kunnen cron-taken vertraging bij het bijwerken van deze tabel aangeven. Dit kan een aanwijzing zijn voor een tijdelijke back-up of een probleem met de planning van de crons.
 
 ## [!UICONTROL Response Code]
 
-![reactiecode](../../assets/tools/response-code.jpg)
+![ reactiecode ](../../assets/tools/response-code.jpg)
 
-De **[!UICONTROL Response Code]** frame is een goede indicatie van het webverkeer en de antwoordcode van verzoeken. Het is [!DNL New Relic's] transactiegegevens, en deze worden beïnvloed door de `httpResponseCode` geretourneerd.
+Het frame **[!UICONTROL Response Code]** is een goede indicatie van het webverkeer en de antwoordcode van aanvragen. Het zijn [!DNL New Relic's] transactiegegevens, en het wordt beperkt door `httpResponseCode` teruggekeerd.
 
 ## [!UICONTROL Web Traffic volume compared with one week ago Magento Managed Alerts Information]
 
-![het volume van het webverkeer vergeleken met een week geleden](../../assets/tools/web-traffic-volume-compared.jpg)
+![ volume van het Webverkeer vergeleken met één week geleden ](../../assets/tools/web-traffic-volume-compared.jpg)
 
 Dit kader toont het relatieve volume van het Webverkeer van de afgelopen week en de huidige week.
 
 ## [!UICONTROL Deployment Log Entries]
 
-![implementatielogbestanden](../../assets/tools/deployment-log-entries.jpg)
+![ ingangen van het plaatsingslogboek ](../../assets/tools/deployment-log-entries.jpg)
 
-De **[!UICONTROL Deployment Log Entries]** het kader toont een telling van plaatsing en de ingangen van het wolkenlogboek en beperkt de tellingen door de naam van het plaatsingslogboek.
+Het **[!UICONTROL Deployment Log Entries]** kader toont een aantal plaatsing en de ingangen van het wolkenlogboek en beperkt de tellingen door de naam van het plaatsingslogboek.
 
 ## [!UICONTROL Deployment State]
 
-![implementatiestatus](../../assets/tools/deployment-state.jpg)
+![ plaatsingsstaat ](../../assets/tools/deployment-state.jpg)
 
-De **[!UICONTROL Deployment State]** frame facets bepaalde plaatsingsfasen van opstellen logboeken. Hier volgen enkele voorbeelden van fasen die in het logbestand en de facetnaam zijn geteld:
+Het **[!UICONTROL Deployment State]** kader facetteert bepaalde plaatsingsfasen van opstellen logboeken. Hier volgen enkele voorbeelden van fasen die in het logbestand en de facetnaam zijn geteld:
 
-**Implementatielogboekfasen:**
+**Phases van het Logboek van de Plaatsing:**
 
 * &#39;%Starten genereert opdracht%&#39;) als &#39;start_gen&#39;
 * &#39;%git apply /app/vendor/magento/ece-tools/patches%&#39;) as &#39;apply_patches&#39;
@@ -116,64 +116,64 @@ De **[!UICONTROL Deployment State]** frame facets bepaalde plaatsingsfasen van o
 * &#39;%NOTICE: opdracht genereren voltooid%&#39;) als &#39;gen_compl&#39;
 * &#39;%NOTICE: Implementatie voltooid%&#39;) als &#39;implementatie_compl&#39;
 * &#39;%NOTICE: Na implementatie starten.%&#39;) als &#39;start_implementatie&#39;
-* &#39;%NOTICE: PostImplementation is complete%&#39;) als &#39;implementatie&#39;
+* &#39;%NOTICE: Post-implementatie is complete%&#39;) als &#39;implementatie&#39;
 * &#39;%implementatie-complete%&#39;) als &#39;cl_implementatie_compl&#39;
 
 ## [!UICONTROL IP Frequency]
 
-![IP-frequentie](../../assets/tools/ip-frequency.jpg)
+![ IP frequentie ](../../assets/tools/ip-frequency.jpg)
 
-De **[!UICONTROL IP Frequency]** het kader telt de (&quot;MISS&quot;en &quot;PASS&quot;) statussen voor elk IP van [!DNL Fastly] logboeken. De verzoeken van het Web met deze statussen bereiken de oorsprongsserver en zullen lading aan de server toevoegen. De top 20 van adressen in frequentie worden getoond. Dit kader kan worden gebruikt om IP aanvallen of bronnen van zware lading op een website te ontdekken.
+Het frame **[!UICONTROL IP Frequency]** telt de statussen (&#39;MISS&#39; en &#39;PASS&#39;) voor elke IP vanuit de logboeken van [!DNL Fastly] . De verzoeken van het Web met deze statussen bereiken de oorsprongsserver en zullen lading aan de server toevoegen. De top 20 van adressen in frequentie worden getoond. Dit kader kan worden gebruikt om IP aanvallen of bronnen van zware lading op een website te ontdekken.
 
 ## [!UICONTROL IP Response – top 20 URLs in duration]
 
-![ip reactie - top 20 urls in duur](../../assets/tools/ip-response-top-20-urls.jpg)
+![ ip reactie - hoogste 20 urls in duur ](../../assets/tools/ip-response-top-20-urls.jpg)
 
-De **[!UICONTROL IP Response – top 20 URLs in duration]** frame geeft als reactie de URL&#39;s weer met de langste duur. Dit kan grote afbeeldingsbestanden of pagina&#39;s, API&#39;s of pagina&#39;s met de langste responsduur aangeven.
+In het frame **[!UICONTROL IP Response – top 20 URLs in duration]** worden de URL&#39;s weergegeven met de langste duur als reactie. Dit kan grote afbeeldingsbestanden of pagina&#39;s, API&#39;s of pagina&#39;s met de langste responsduur aangeven.
 
 ## [!UICONTROL API Calls by IP]
 
-![api roept door ip](../../assets/tools/api-calls-by-ip.jpg)
+![ api vraag door ip ](../../assets/tools/api-calls-by-ip.jpg)
 
-De **[!UICONTROL API Calls by IP]** framehulp identificeert zwaar verkeer tegen de API&#39;s en de IP-adressen die aanvragen indienen via de API-URL&#39;s.
+Het frame **[!UICONTROL API Calls by IP]** helpt bij het identificeren van zwaar verkeer op basis van de API&#39;s en de IP-adressen die aanvragen indienen via de API-URL&#39;s.
 
 ## [!UICONTROL API Calls by IP, details by URL]
 
-![api roept door ip details door url](../../assets/tools/api-calls-by-ip-details-by-url.jpg)
+![ api vraag door ip details door url ](../../assets/tools/api-calls-by-ip-details-by-url.jpg)
 
-De **[!UICONTROL API Calls by IP, details by URL]** frame bevat details van zwaar verkeer tegen de API&#39;s en details van de URL&#39;s die de aanvragen indienen.
+Het frame **[!UICONTROL API Calls by IP, details by URL]** bevat details over zwaar verkeer op basis van de API&#39;s en details van de URL&#39;s die de aanvragen indienen.
 
 ## [!UICONTROL IP Frequency Rate per minute]
 
-![ip-frequentie per minuut](../../assets/tools/ip-frequency-rate-per-minute.jpg)
+![ ip frequentietarief per minuut ](../../assets/tools/ip-frequency-rate-per-minute.jpg)
 
-Soms is het moeilijk om te zien welk IP adres de meeste verzoeken op de andere kaders heeft. De **[!UICONTROL IP Frequency Rate per minute]** het kader toont het tarief per minuut per IP adres.
+Soms is het moeilijk om te zien welk IP adres de meeste verzoeken op de andere kaders heeft. Het **[!UICONTROL IP Frequency Rate per minute]** kader toont het tarief per minuut per IP adres.
 
 ## [!UICONTROL Potential Bots]
 
-![potentiële bots](../../assets/tools/potential-bots.jpg)
+![ potentiële bots ](../../assets/tools/potential-bots.jpg)
 
-De **[!UICONTROL Potential Bots]** frame bekijkt verzoeken met een request_user_agent naam zoals NULL of &#39;%bot%&#39;. Doorgaans volgt de &#39;%bot%&#39; request_user_agent de beleidsinstellingen in `robots.txt` bestand.
+Het **[!UICONTROL Potential Bots]** kader kijkt naar verzoeken met een request_user_agent naam zoals NULL of &#39;%bot%&#39;. Doorgaans volgt de request_user_agent &#39;%bot%&#39; request_user_agent de beleidsinstellingen in het `robots.txt` -bestand.
 
 ## [!UICONTROL Transaction Errors]
 
-![transactiefouten](../../assets/tools/transaction-errors.jpg)
+![ transactiefouten ](../../assets/tools/transaction-errors.jpg)
 
-De **[!UICONTROL Transaction Errors]** frame geeft het aantal transactiefouten weer van [!DNL New Relic].
+In het frame **[!UICONTROL Transaction Errors]** wordt het aantal transactiefouten van [!DNL New Relic] weergegeven.
 
 ## [!UICONTROL Nginx access by node]
 
-![nginx-toegang per knooppunt](../../assets/tools/nginx-access-by-node.jpg)
+![ nginx toegang door knoop ](../../assets/tools/nginx-access-by-node.jpg)
 
-De **[!UICONTROL Nginx access by node]** frame bekijkt de tellingen van de `access.log` op knooppunt. Het is nuttig om te zien of is de lading gelijkmatig verdeeld. Het toont vaak wanneer een knoop daalt. Het kader toont ook de lading over de plaats.
+Het **[!UICONTROL Nginx access by node]** -frame kijkt naar de tellingen van het `access.log` bij knooppunt. Het is nuttig om te zien of is de lading gelijkmatig verdeeld. Het toont vaak wanneer een knoop daalt. Het kader toont ook de lading over de plaats.
 
 ## [!UICONTROL Galera Log]
 
-![galerijlogboek](../../assets/tools/galera-log.jpg)
+![ galerijlogboek ](../../assets/tools/galera-log.jpg)
 
-[[!DNL Galera]](https://galeracluster.com/library/galera-documentation.pdf) wordt gebruikt voor de databasecluster. Dit frame is gericht op bepaalde signalen van het [!UICONTROL Galera] cluster. De signalen richten zich op knopen die en de cluster ingaan verlaten, die normaal gedrag is om de integriteit van gegevensbestandgegevens te handhaven. De knooppunten blijven gesynchroniseerd als de [!UICONTROL Galera] wijzigingen in clusterstatus.
+[[!DNL Galera] ](https://galeracluster.com/library/galera-documentation.pdf) wordt gebruikt voor de gegevensbestandcluster. Dit frame is gericht op bepaalde signalen uit de [!UICONTROL Galera] -cluster. De signalen richten zich op knopen die en de cluster ingaan verlaten, die normaal gedrag is om de integriteit van gegevensbestandgegevens te handhaven. De knooppunten blijven gesynchroniseerd als de clusterstatus van [!UICONTROL Galera] verandert.
 
-**Lijst van [!UICONTROL Galera] statuswijzigingen:**
+**Lijst van [!UICONTROL Galera] staatsveranderingen:**
 
 * &#39;%1047 WSREP heeft nog geen knooppunt voor toepassingsgebruik%&#39;) als &#39;node_not_prep_for_use&#39; voorbereid
 * &#39;%\[ERROR\] WSREP: Kan niet lezen van: wsrep_sst_xtrabackup-v2%&#39;) als &#39;xtrabackup_read_fail&#39;
@@ -197,9 +197,9 @@ Deze signalen kunnen op opslag, geheugen, of vraagkwesties wijzen als de staat v
 
 ## [!UICONTROL Database errors]
 
-![databasefouten](../../assets/tools/database-errors.jpg)
+![ gegevensbestandfouten ](../../assets/tools/database-errors.jpg)
 
-**Lijst met aangetroffen databasefouten of -berichten:**
+**Lijst van ontdekte gegevensbestandfouten of berichten:**
 
 * &#39;%Geheugengrootte toegewezen voor de tijdelijke tabel is meer dan 20% van de waarde van onschuldig_buffer_pool_size%&#39;) als &#39;temp_tbl_buff_pool&#39;
 * &#39;%\[ERROR\] WSREP: rbr write fail%&#39;) als &#39;rbr_write_fail&#39;
@@ -243,21 +243,21 @@ Deze signalen kunnen op opslag, geheugen, of vraagkwesties wijzen als de staat v
 
 ## [!UICONTROL Database traces]
 
-![databasesporen](../../assets/tools/database-traces.jpg)
+![ gegevensbestandsporen ](../../assets/tools/database-traces.jpg)
 
-De **[!UICONTROL Database traces]** frame bekijkt gegevens van de [sql-spoor](https://docs.newrelic.com/docs/apm/transactions/transaction-traces/transaction-traces-database-queries-page/) entiteit van [!DNL New Relic] en retourneert het pad van de trace.
+Het **[!UICONTROL Database traces]** kader kijkt gegevens van het [ sql spoor ](https://docs.newrelic.com/docs/apm/transactions/transaction-traces/transaction-traces-database-queries-page/) entiteit van [!DNL New Relic] en keert de weg van het spoor terug.
 
 ## [!UICONTROL Database mysql-slow.log]
 
-![database mysql-slow.log](../../assets/tools/database-mysql-slow-log.jpg)
+![ gegevensbestand mysql-slow.log ](../../assets/tools/database-mysql-slow-log.jpg)
 
-De **[!UICONTROL Database mysql-slow.log]** frame telt items in het [mysql-slow.log](https://dev.mysql.com/doc/refman/5.7/en/slow-query-log.html) door type van vraagverzoek. Tijdframes worden visueel geïsoleerd die van belang kunnen zijn voor het mysql-slow.log (traag querylogboek). De vragen van lijsten zonder indexen of vragen die grote lijsten bijwerken kunnen andere vragen blokkeren.
+Het **[!UICONTROL Database mysql-slow.log]** kader doet een telling van ingangen in [ mysql-slow.log ](https://dev.mysql.com/doc/refman/5.7/en/slow-query-log.html) door het type van vraagverzoek. Tijdframes worden visueel geïsoleerd die van belang kunnen zijn voor het mysql-slow.log (traag querylogboek). De vragen van lijsten zonder indexen of vragen die grote lijsten bijwerken kunnen andere vragen blokkeren.
 
 ## [!UICONTROL Redis synchronization from Log]
 
-![redis-synchronisatie uit logbestand](../../assets/tools/redis-synchronization-from-log.jpg)
+![ herstelt synchronisatie van logboek ](../../assets/tools/redis-synchronization-from-log.jpg)
 
-[[!DNL Redis]](https://redis.io/docs/about/) is een opensource (BSD-licentie) in-memory gegevensstructuurstore die wordt gebruikt als database, cache en message broker. Het kan gegevensbestand en zittingscaching doen als gevormd. De **[!UICONTROL Redis synchronization from Log]** frame richt zich op [[!DNL Redis] synchronisatie](https://redis.io/docs/latest/operate/oss_and_stack/management/replication/). Hoe groter de [!DNL Redis] dataset, waarschijnlijker dat er problemen met de synchronisatie zullen zijn (meer gegevens om gesynchroniseerd te houden).
+[[!DNL Redis] ](https://redis.io/docs/about/) is een open bron (BSD vergunning) opslag van de in-geheugengegevensstructuur die als gegevensbestand, geheime voorgeheugen, en berichtbroker wordt gebruikt. Het kan gegevensbestand en zittingscaching doen als gevormd. Het **[!UICONTROL Redis synchronization from Log]** kader concentreert zich op [[!DNL Redis]  synchronisatie ](https://redis.io/docs/latest/operate/oss_and_stack/management/replication/). Hoe groter de [!DNL Redis] dataset, des te waarschijnlijker dat er problemen met de synchronisatie (meer gegevens om gesynchroniseerd te houden) zullen zijn.
 
 **[!DNL Redis]fouten en berichten:**
 
@@ -282,15 +282,15 @@ De **[!UICONTROL Database mysql-slow.log]** frame telt items in het [mysql-slow.
 
 ## [!UICONTROL PHP process states]
 
-![PHP-processtatussen](../../assets/tools/php-process-states.jpg)
+![ PHP processtaten ](../../assets/tools/php-process-states.jpg)
 
-De manier waarop PHP-proces(sen) zich gedraagt, is afhankelijk van de [configuratie](https://www.php.net/manual/en/install.fpm.configuration.php). De configuratie is complex, met vele variabelen en opties. De **[!UICONTROL PHP process states]** frame helpt u te begrijpen wanneer PHP processen worden beëindigd en opnieuw worden gestart.
+Het gedrag van PHP proces(en) van de manier hangt van de [ configuratie ](https://www.php.net/manual/en/install.fpm.configuration.php) af. De configuratie is complex, met vele variabelen en opties. Het frame **[!UICONTROL PHP process states]** helpt u te begrijpen wanneer PHP-processen worden beëindigd en opnieuw worden gestart.
 
 ### [!UICONTROL PHP errors]
 
-![php-fouten](../../assets/tools/php-errors.jpg)
+![ php fouten ](../../assets/tools/php-errors.jpg)
 
-De **[!UICONTROL PHP errors]** frame toont het aantal PHP fouten met workers over de geselecteerde tijdsperiode. Raadpleeg voor meer informatie [Adobe Commerce PHP-instellingen](../../installation/prerequisites/php-settings.md).
+Het frame **[!UICONTROL PHP errors]** toont het aantal PHP-fouten met workers over de geselecteerde tijdlijn. Voor meer informatie, verwijs naar [ de montages van Adobe Commerce PHP ](../../installation/prerequisites/php-settings.md).
 
 **PHP fouten en berichten:**
 
@@ -308,65 +308,65 @@ De **[!UICONTROL PHP errors]** frame toont het aantal PHP fouten met workers ove
 
 ## [!UICONTROL PHP processes]
 
-![php-processen](../../assets/tools/php-processes.jpg)
+![ php processen ](../../assets/tools/php-processes.jpg)
 
-[PHP-FPM](https://php-fpm.org/) is een [!UICONTROL FastCGI Process Manager] gebruikt door [!DNL Nginx]. Raadpleeg voor meer informatie over systeemvereisten [PHP-versievereisten toegewezen aan Adobe Commerce-versies](../../installation/system-requirements.md). De **[!UICONTROL PHP processes]** frame toont het aantal PHP-processen dat op een bepaald moment in de geselecteerde tijdlijn wordt uitgevoerd.
+[ PHP-FPM ](https://php-fpm.org/) is a [!UICONTROL FastCGI Process Manager] die door [!DNL Nginx] wordt gebruikt. Om over systeemvereisten te leren, verwijs naar [ PHP versievereisten die aan de versies van Adobe Commerce ](../../installation/system-requirements.md) worden in kaart gebracht. Het frame **[!UICONTROL PHP processes]** toont het aantal PHP-processen dat op een bepaald moment in de geselecteerde tijdlijn wordt uitgevoerd.
 
 ## [!UICONTROL Secondary processes]
 
-![secundaire processen](../../assets/tools/secondary-processes.jpg)
+![ secundaire processen ](../../assets/tools/secondary-processes.jpg)
 
-Secundaire processen kunnen de reactie van de site beïnvloeden. De **[!UICONTROL Secondary processes]** frame geeft een proces of processen aan die mogelijk laden toevoegen aan de site. Het gegevensbestand heeft hoofdzakelijk de secundaire processen die lopen.
+Secundaire processen kunnen de reactie van de site beïnvloeden. Het frame **[!UICONTROL Secondary processes]** geeft een proces of processen aan die mogelijk laden toevoegen aan de site. Het gegevensbestand heeft hoofdzakelijk de secundaire processen die lopen.
 
 ## [!UICONTROL Traffic vs Week Ago]
 
-![verkeer versus week geleden](../../assets/tools/traffic-vs-week-ago.jpg)
+![ verkeer versus week geleden ](../../assets/tools/traffic-vs-week-ago.jpg)
 
-De **[!UICONTROL Traffic vs Week Ago]** frame bekijkt het websiteverkeer (verzoeken) van [!DNL Fastly] logt met (&#39;MISS&#39;, &#39;PASS&#39;) geheim voorgeheugenstatussen. Deze verzoeken voegen lading aan de oorsprongservers toe. In dit frame wordt het vergelijkende webaanvraagvolume van de huidige week en de afgelopen week geleden tijdens hetzelfde tijdsbestek weergegeven.
+Het frame **[!UICONTROL Traffic vs Week Ago]** bekijkt het websiteverkeer (aanvragen) vanuit de cachestatus [!DNL Fastly] waarbij de gebruiker zich aanmeldt bij de status MISS (MISS), PASS (PASS). Deze verzoeken voegen lading aan de oorsprongservers toe. In dit frame wordt het vergelijkende webaanvraagvolume van de huidige week en de afgelopen week geleden tijdens hetzelfde tijdsbestek weergegeven.
 
 ## [!UICONTROL Fastly Cache]
 
-![faire cache](../../assets/tools/fastly-cache.jpg)
+![ het dure Geheime voorgeheugen ](../../assets/tools/fastly-cache.jpg)
 
-De **[!UICONTROL Fastly Cache]** frame toont een geaggregeerde weergave van de cachestatus van aanvragen van de [!DNL Fastly] logboeken. Als u ERROR selecteert, zal het het percentage fouten in de verzoeken tonen. Dit neemt doorgaans toe wanneer de oorspronkelijke server niet snel genoeg reageert op paginaverzoeken.
+Het frame **[!UICONTROL Fastly Cache]** toont een geaggregeerde weergave van de cachestatus van aanvragen uit de [!DNL Fastly] -logboeken. Als u ERROR selecteert, zal het het percentage fouten in de verzoeken tonen. Dit neemt doorgaans toe wanneer de oorspronkelijke server niet snel genoeg reageert op paginaverzoeken.
 
 ## [!UICONTROL Page Rendering]
 
-![pagina weergeven](../../assets/tools/page-rendering.jpg)
+![ pagina teruggevend ](../../assets/tools/page-rendering.jpg)
 
-De **[!UICONTROL Page Rendering]** frame geeft de gemiddelde weergaveduur van de pagina in de huidige week weer vanuit de bron van de paginaweergave van [!DNL New Relic] vergeleken met de voorafgaande week gedurende dezelfde periode.
+In het frame **[!UICONTROL Page Rendering]** wordt de gemiddelde weergaveduur van de pagina in de huidige week van de bron van de paginaweergave [!DNL New Relic] weergegeven in vergelijking met de vorige week tijdens dezelfde periode.
 
 ## [!UICONTROL Page loading detail]
 
-![paginagegevens laden](../../assets/tools/page-loading-detail.png)
+![ pagina ladend detail ](../../assets/tools/page-loading-detail.png)
 
-De **[!UICONTROL Page loading detail]** frame beschrijft de gebeurtenissen die pagina laden. Het geeft de betekenis van deze facetten nader. Hier is de vraag die voor dit kader in werking wordt gesteld:
+In het **[!UICONTROL Page loading detail]** -frame worden de gebeurtenissen beschreven die de pagina laden. Het geeft de betekenis van deze facetten nader. Hier is de vraag die voor dit kader in werking wordt gesteld:
 
 `SELECT percentile(timeToResponseStart, 50) AS 'first byte', percentile(firstPaint, 50) as 'First paint', percentile(firstContentfulPaint, 50) as 'First contentful paint', percentile(timeToDomContentLoadedEventEnd, 50) AS 'DOM content loaded', percentile(duration, 50) AS 'Window load + AJAX' FROM BrowserInteraction TIMESERIES`
 
 ## [!UICONTROL Transactions – Avg, Max, Min]
 
-![transacties - avg, max, min](../../assets/tools/transactions-avg-max-min.jpg)
+![ transacties - avg, max, min ](../../assets/tools/transactions-avg-max-min.jpg)
 
-De transactieduur is in seconden. Afhankelijk van de transactie kan het invloed hebben op andere transacties als deze al lang lopen. De onder naam vermelde transacties en de duur ervan gelden voor de specifieke periode. Als er een beknopt tijdschema voor de kwestie is, wijzigt u de grootte van de [!DNL Observation for Adobe Commerce] datum-/tijdkiezer naar dat smalle tijdsbestek.
+De transactieduur is in seconden. Afhankelijk van de transactie kan het invloed hebben op andere transacties als deze al lang lopen. De onder naam vermelde transacties en de duur ervan gelden voor de specifieke periode. Als er een beknopt uitgiftetijdpad is, wijzigt u de datum-/tijdkiezer van [!DNL Observation for Adobe Commerce] in dat korte tijdkader.
 
 ## [!UICONTROL Admin Activities]
 
-![beheeractiviteiten](../../assets/tools/admin-activities.jpg)
+![ admin activiteiten ](../../assets/tools/admin-activities.jpg)
 
-De **[!UICONTROL Admin Activities]** frame identificeert transacties met een beheerder.
+Het frame **[!UICONTROL Admin Activities]** identificeert transacties met een beheerder.
 
 ## [!UICONTROL Order transactions (default?)]
 
-![Standaardordertransacties](../../assets/tools/order-transactions-default.jpg)
+![ de transacties standaard van de Orde ](../../assets/tools/order-transactions-default.jpg)
 
-De **[!UICONTROL Order transactions (default?)]** frame zoekt naar transacties `request.headers.host` uit transacties, waarbij de naam = `WebTransaction/Action/checkout/onepage/success`. Als de URL voor het succes van de bestelling anders is, heeft dit frame geen gegevens.
+Het **[!UICONTROL Order transactions (default?)]** -frame zoekt naar transacties `request.headers.host` van transacties, waarbij de naam = `WebTransaction/Action/checkout/onepage/success` . Als de URL voor het succes van de bestelling anders is, heeft dit frame geen gegevens.
 
 ## [!UICONTROL Elasticsearch Index information]
 
-![indexgegevens van elasticzoekopdrachten](../../assets/tools/elasticsearch-tab-elasticsearch-index-information-image-1.jpg)
+![ elasticsearch indexinformatie ](../../assets/tools/elasticsearch-tab-elasticsearch-index-information-image-1.jpg)
 
-**[Status van Elasticsearch:](https://www.elastic.co/guide/en/elasticsearch/reference/current/cluster-health.html)**
+**[Elasticsearch statussen:](https://www.elastic.co/guide/en/elasticsearch/reference/current/cluster-health.html)**
 
 * Groen: alle schachten worden toegewezen.
 * Geel: alle primaire schaden worden toegewezen, maar een of meer replicaweerten worden niet toegewezen. Als een knooppunt in de cluster uitvalt, zijn sommige gegevens mogelijk niet beschikbaar totdat dat knooppunt wordt gerepareerd.
@@ -374,9 +374,9 @@ De **[!UICONTROL Order transactions (default?)]** frame zoekt naar transacties `
 
 ## [!UICONTROL Elasticsearch Errors]
 
-![fouten in elastisch zoeken](../../assets/tools/elasticsearch-errors.jpg)
+![ elasticsearch fouten ](../../assets/tools/elasticsearch-errors.jpg)
 
-**[!DNL Elasticsearch]fouten:**
+**[!DNL Elasticsearch]errors:**
 
 * &#39;%all shards failed%&#39; as &#39;all_shards_failed&#39;
 * &#39;%NoNodesAvailableException%&#39; as &#39;no_live_nodes&#39;
@@ -388,16 +388,16 @@ De **[!UICONTROL Order transactions (default?)]** frame zoekt naar transacties `
 
 ## [!UICONTROL Cron view]
 
-![uitsnijdweergave](../../assets/tools/cron-view.jpg)
+![ kroonmening ](../../assets/tools/cron-view.jpg)
 
-De **[!UICONTROL Cron view]** frame zoekt in het uitsnijdlog naar evenwicht tussen het aantal kronen dat is gestart en het aantal kronen dat is afgewerkt .
+In het frame **[!UICONTROL Cron view]** wordt gezocht naar het uitsnijdlog voor de balans tussen het aantal kronen dat is gestart en het aantal kronnen dat is afgewerkt.
 
 
 ## [!UICONTROL Cron error]
 
-![uitsnijdfout](../../assets/tools/cron-error.png)
+![ cron fout ](../../assets/tools/cron-error.png)
 
-**Fouten bij uitsnijden van cron.log:**
+**de fouten van het Gewas van cron.log:**
 
 * &#39;%_stg%&#39; als &#39;stg_crons&#39;
 * &#39;%Could not get lock for cron job%&#39; as &#39;cron_lock&#39;
@@ -407,21 +407,21 @@ De **[!UICONTROL Cron view]** frame zoekt in het uitsnijdlog naar evenwicht tuss
 
 ## [!UICONTROL cron_schedule table updates]
 
-![tabel-updates uitsnijden_plannen](../../assets/tools/cron-schedule-table-updates.jpg)
+![ cron_planning lijstupdates ](../../assets/tools/cron-schedule-table-updates.jpg)
 
-De **[!UICONTROL cron_schedule table updates]** het kader kijkt bij maximumduur in seconden waar de datastore verrichtingen de cron_planning lijst impliceren. Deze eigenschap is afhankelijk van het type SQL-aanvraag.
+Het **[!UICONTROL cron_schedule table updates]** kader kijkt naar maximumduur in seconden waar de datastore- verrichtingen de cron_planning lijst impliceren. Deze eigenschap is afhankelijk van het type SQL-aanvraag.
 
 ## [!UICONTROL Datastore Operations Tables]
 
-![datastore-operatietabellen](../../assets/tools/datastore-operations-tables.jpg)
+![ datastore verrichtingenlijsten ](../../assets/tools/datastore-operations-tables.jpg)
 
-Dit **[!UICONTROL Datastore Operations Tables]** frame geeft de bovenste 25 bewerkingen weer op tijdsduur, tabelnaam en SQL-aanvraagtype. Houd de muisaanwijzer boven de punten om details te bekijken van welke tabel wordt geopend en van welk type verzoek.
+In dit **[!UICONTROL Datastore Operations Tables]** -frame worden de bovenste 25 bewerkingen weergegeven op tijdsduur, tabelnaam en SQL-aanvraagtype. Houd de muisaanwijzer boven de punten om details te bekijken van welke tabel wordt geopend en van welk type verzoek.
 
 ## [!UICONTROL Cache Flush]
 
-![cachegeheugen leegmaken](../../assets/tools/cache-flush.jpg)
+![ geheim voorgeheugenflush ](../../assets/tools/cache-flush.jpg)
 
-**Cachegroesjes gedetecteerd:**
+{de flushes van 0} Geheime voorgeheugen ontdekte:****
 
 * &#39;%config%&#39; als &#39;config_cache_flushed&#39;
 * &#39;%layout%&#39; als &#39;layout_cache_flush&#39;

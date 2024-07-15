@@ -5,16 +5,16 @@ feature: Configuration, Security
 exl-id: c81fcab2-1ee3-4ec7-a300-0a416db98614
 source-git-commit: 56a2461edea2799a9d569bd486f995b0fe5b5947
 workflow-type: tm+mt
-source-wordcount: '938'
+source-wordcount: '924'
 ht-degree: 1%
 
 ---
 
 # Beveiligde uitsnede PHP
 
-In dit onderwerp wordt beveiliging besproken `pub/cron.php` om te voorkomen dat het wordt gebruikt in een kwaadwillige uitbuiting. Als u geen kruin beveiligt, kon om het even welke gebruiker potentieel in werking stellen krun om uw toepassing van de Handel aan te vallen.
+In dit onderwerp wordt het beveiligen van `pub/cron.php` besproken om te voorkomen dat het wordt gebruikt in een kwaadwillige uitvinding. Als u de uitsnede niet beveiligt, kan elke gebruiker mogelijk de uitsnede uitvoeren om uw Commerce-toepassing aan te vallen.
 
-De gezamenlijke baan stelt verscheidene geplande taken in werking en is een essentieel deel van uw configuratie van de Handel. Geplande taken omvatten, maar zijn niet beperkt tot:
+De bouwbaan stelt verscheidene geplande taken in werking en is een essentieel deel van uw configuratie van Commerce. Geplande taken omvatten, maar zijn niet beperkt tot:
 
 - Opnieuw indexeren
 - E-mails genereren
@@ -23,29 +23,29 @@ De gezamenlijke baan stelt verscheidene geplande taken in werking en is een esse
 
 >[!INFO]
 >
->Zie [Uitsnede configureren en uitvoeren](../cli/configure-cron-jobs.md#run-cron-from-the-command-line) voor meer informatie over kroongroepen .
+>Verwijs naar [ vormen en in werking stellen kruin ](../cli/configure-cron-jobs.md#run-cron-from-the-command-line) voor meer informatie over cron groepen.
 
 U kunt een uitsnijdtaak op de volgende manieren uitvoeren:
 
-- Met de [`magento cron:run`](../cli/configure-cron-jobs.md#run-cron-from-the-command-line) gebruiken vanaf de opdrachtregel of op een tab
-- Toegang `pub/cron.php?[group=<name>]` in een webbrowser
+- De opdracht [`magento cron:run`](../cli/configure-cron-jobs.md#run-cron-from-the-command-line) gebruiken via de opdrachtregel of op een tab
+- `pub/cron.php?[group=<name>]` openen in een webbrowser
 
 >[!INFO]
 >
->Als u de opdracht [`magento cron:run`](../cli/configure-cron-jobs.md#run-cron-from-the-command-line) gebruiken om een bewerking uit te voeren die al veilig is.
+>U hoeft niets te doen als u de opdracht [`magento cron:run`](../cli/configure-cron-jobs.md#run-cron-from-the-command-line) gebruikt om het uitsnijden uit te voeren, omdat hiervoor een ander proces wordt gebruikt dat al veilig is.
 
 ## Beveiligde uitsnede met Apache
 
 In deze sectie wordt beschreven hoe u de uitsnede kunt beveiligen met HTTP Basic-verificatie met Apache. Deze instructies zijn gebaseerd op Apache 2.2 met CentOS 6. Raadpleeg een van de volgende bronnen voor meer informatie:
 
-- [Zelfstudie over verificatie en autorisatie voor Apache 2.2](https://httpd.apache.org/docs/2.2/howto/auth.html)
-- [Zelfstudie over verificatie en autorisatie voor Apache 2.4](https://httpd.apache.org/docs/2.4/howto/auth.html)
+- [ Apache 2.2 authentificatie en vergunningsleerprogramma ](https://httpd.apache.org/docs/2.2/howto/auth.html)
+- [ Apache 2.4 authentificatie en vergunningsleerprogramma ](https://httpd.apache.org/docs/2.4/howto/auth.html)
 
 ### Een wachtwoordbestand maken
 
 Uit veiligheidsoverwegingen kunt u het wachtwoordbestand overal vinden, behalve in de hoofdmap van de webserver. In dit voorbeeld wordt het wachtwoordbestand opgeslagen in een nieuwe map.
 
-Voer de volgende opdrachten in als een gebruiker met `root` rechten:
+Voer de volgende opdrachten in als een gebruiker met `root` -rechten:
 
 ```bash
 mkdir -p /usr/local/apache/password
@@ -55,11 +55,11 @@ mkdir -p /usr/local/apache/password
 htpasswd -c /usr/local/apache/password/passwords <username>
 ```
 
-Wanneer `<username>` Dit kan de gebruiker van de webserver of een andere gebruiker zijn. In dit voorbeeld gebruiken wij de gebruiker van de Webserver, maar de keus van gebruiker is aan u.
+Waar `<username>` de gebruiker van de Webserver of een andere gebruiker kan zijn. In dit voorbeeld gebruiken wij de gebruiker van de Webserver, maar de keus van gebruiker is aan u.
 
 Volg de aanwijzingen op het scherm om een wachtwoord voor de gebruiker te maken.
 
-Als u nog een gebruiker aan het wachtwoordbestand wilt toevoegen, voert u de volgende opdracht in als een gebruiker met `root` rechten:
+Als u nog een gebruiker aan het wachtwoordbestand wilt toevoegen, voert u de volgende opdracht in als een gebruiker met `root` -rechten:
 
 ```bash
 htpasswd /usr/local/apache/password/passwords <username>
@@ -75,7 +75,7 @@ Een andere gebruiker toevoegen aan uw wachtwoordbestand:
 htpasswd /usr/local/apache/password/passwords <username>
 ```
 
-Als u een geoorloofde groep wilt maken, maakt u overal buiten de hoofdmap van de webserver een groepsbestand. In het groepsbestand worden de naam van de groep en de gebruikers in de groep opgegeven. In dit voorbeeld is de groepsnaam `MagentoCronGroup`.
+Als u een geoorloofde groep wilt maken, maakt u overal buiten de hoofdmap van de webserver een groepsbestand. In het groepsbestand worden de naam van de groep en de gebruikers in de groep opgegeven. In dit voorbeeld is de groepsnaam `MagentoCronGroup` .
 
 ```bash
 vim /usr/local/apache/password/group
@@ -87,16 +87,16 @@ Inhoud van het bestand:
 MagentoCronGroup: <username1> ... <usernameN>
 ```
 
-### Beveiligde uitsnede `.htaccess`
+### Uitsnede beveiligen in `.htaccess`
 
-Uitsnede beveiligen `.htaccess` bestand:
+Uitsnijden beveiligen in `.htaccess` -bestand:
 
-1. Meld u aan bij de Commerce-server als of schakel over naar de eigenaar van het bestandssysteem.
-1. Openen `<magento_root>/pub/.htaccess` in een teksteditor.
+1. Meld u aan bij uw Commerce-server als eigenaar van het bestandssysteem of schakel over naar de eigenaar van het bestandssysteem.
+1. Open `<magento_root>/pub/.htaccess` in een teksteditor.
 
-   (omdat `cron.php` bevindt zich in de `pub` directory, deze bewerken `.htaccess` alleen.)
+   (Omdat `cron.php` zich in de `pub` -map bevindt, bewerkt u alleen dit `.htaccess` .)
 
-1. _Toegang tot uitsnijden voor een of meer gebruikers._ Bestaande vervangen `<Files cron.php>` richtlijn met de volgende punten :
+1. _toegang van het Gewas voor één of meerdere gebruikers._ Vervang de bestaande `<Files cron.php>` -instructie door:
 
    ```conf
    <Files cron.php>
@@ -107,7 +107,7 @@ Uitsnede beveiligen `.htaccess` bestand:
    </Files>
    ```
 
-1. _Toegang tot uitsnijden voor een groep._ Bestaande vervangen `<Files cron.php>` richtlijn met de volgende punten :
+1. _toegang van het Gewas voor een groep._ Vervang de bestaande `<Files cron.php>` -instructie door:
 
    ```conf
    <Files cron.php>
@@ -119,28 +119,28 @@ Uitsnede beveiligen `.htaccess` bestand:
    </Files>
    ```
 
-1. Sla uw wijzigingen op in `.htaccess` en sluit de teksteditor af.
-1. Doorgaan met [Controleren of de uitsnede beveiligd is](#verify-cron-is-secure).
+1. Sla de wijzigingen in `.htaccess` op en sluit de teksteditor af.
+1. Ga met [ verder verifiëren kruin veilig ](#verify-cron-is-secure) is.
 
 ## Beveiligde uitsnede met Nginx
 
 In deze sectie wordt besproken hoe u de uitsnede kunt beveiligen met behulp van de Nginx-webserver. U moet de volgende taken uitvoeren:
 
 1. Een gecodeerd wachtwoordbestand voor Nginx instellen
-1. De configuratie van de index wijzigen om naar het wachtwoordbestand te verwijzen wanneer u het opent `pub/cron.php`
+1. De configuratie van uw nginx wijzigen om naar het wachtwoordbestand te verwijzen wanneer u `pub/cron.php` opent
 
 ### Een wachtwoordbestand maken
 
 Raadpleeg een van de volgende bronnen om een wachtwoordbestand te maken voordat u doorgaat:
 
-- [Hoe te om de Authentificatie van het Wachtwoord van de Opstelling met Nginx op Ubuntu 14.04 (DigitaleOceaan) te vestigen](https://www.digitalocean.com/community/tutorials/how-to-set-up-password-authentication-with-nginx-on-ubuntu-14-04)
-- [Standaard HTTP-verificatie met Nginx (howtoforge)](https://www.howtoforge.com/basic-http-authentication-with-nginx)
+- [ hoe te Authentificatie van het Wachtwoord van de opstelling met Nginx op Ubuntu 14.04 (DigitalOcean) ](https://www.digitalocean.com/community/tutorials/how-to-set-up-password-authentication-with-nginx-on-ubuntu-14-04)
+- [ BasisHTTP Authentificatie met Nginx (hoe te forge) ](https://www.howtoforge.com/basic-http-authentication-with-nginx)
 
-### Beveiligde uitsnede `nginx.conf.sample`
+### Uitsnede beveiligen in `nginx.conf.sample`
 
-De handel verstrekt een geoptimaliseerd de configuratiedossier van steekproefNginx uit de doos. We raden u aan het te wijzigen om de afbeelding te beveiligen.
+Commerce beschikt over een geoptimaliseerd voorbeeld-nginx-configuratiebestand uit het vak. We raden u aan het te wijzigen om de afbeelding te beveiligen.
 
-1. Voeg het volgende toe aan uw [`nginx.conf.sample`](https://github.com/magento/magento2/blob/2.4/nginx.conf.sample) bestand:
+1. Voeg het volgende toe aan uw [`nginx.conf.sample` ](https://github.com/magento/magento2/blob/2.4/nginx.conf.sample) dossier:
 
    ```conf
    #Securing cron
@@ -167,19 +167,19 @@ De handel verstrekt een geoptimaliseerd de configuratiedossier van steekproefNgi
 systemctl restart nginx
 ```
 
-1. Doorgaan met [Controleren of de uitsnede beveiligd is](#verify-cron-is-secure).
+1. Ga met [ verder verifiëren kruin veilig ](#verify-cron-is-secure) is.
 
 ## Controleren of de uitsnede beveiligd is
 
-De eenvoudigste manier om te controleren of `pub/cron.php` is veilig is om te verifiëren dat het rijen in creeert `cron_schedule` databasetabel nadat u wachtwoordverificatie hebt ingesteld. In dit voorbeeld worden SQL-opdrachten gebruikt om de database te controleren, maar u kunt elk gewenst gereedschap gebruiken.
+De eenvoudigste manier om te controleren of `pub/cron.php` veilig is, is om te controleren of er rijen in de databasetabel van `cron_schedule` worden gemaakt nadat u wachtwoordverificatie hebt ingesteld. In dit voorbeeld worden SQL-opdrachten gebruikt om de database te controleren, maar u kunt elk gewenst gereedschap gebruiken.
 
 >[!INFO]
 >
->De `default` uitsnijden die u uitvoert in dit voorbeeld, wordt uitgevoerd volgens het schema dat is gedefinieerd in `crontab.xml`. Een aantal snijtaken wordt slechts eenmaal per dag uitgevoerd. De eerste keer dat u de afbeelding uit de browser start, `cron_schedule` tabel wordt bijgewerkt, maar volgende `pub/cron.php` de verzoeken lopen bij het gevormde programma.
+>Het `default` -uitsnede dat u in dit voorbeeld uitvoert, wordt uitgevoerd volgens het schema dat is gedefinieerd in `crontab.xml` . Een aantal snijtaken wordt slechts eenmaal per dag uitgevoerd. De eerste keer dat u de functie voor uitsnijden uitvoert vanuit de browser, wordt de tabel `cron_schedule` bijgewerkt, maar volgende `pub/cron.php` -aanvragen worden uitgevoerd volgens het geconfigureerde schema.
 
-**Om te controleren dat de kroon veilig is**:
+**om te verifiëren kruin veilig** is:
 
-1. Meld u aan bij de database als gebruiker van de Commerce-database of als `root`.
+1. Meld u aan bij de database als Commerce-databasegebruiker of als `root` .
 
    Bijvoorbeeld:
 
@@ -199,7 +199,7 @@ De eenvoudigste manier om te controleren of `pub/cron.php` is veilig is om te ve
    use magento;
    ```
 
-1. Alle rijen verwijderen uit het dialoogvenster `cron_schedule` databasetabel:
+1. Verwijder alle rijen uit de databasetabel `cron_schedule` :
 
    ```shell
    TRUNCATE TABLE cron_schedule;
@@ -219,7 +219,7 @@ De eenvoudigste manier om te controleren of `pub/cron.php` is veilig is om te ve
 
 1. Voer desgevraagd de naam en het wachtwoord van een geautoriseerde gebruiker in. In de volgende afbeelding ziet u een voorbeeld.
 
-   ![Draaien autoriseren met HTTP Basic](../../assets/configuration/cron-auth.png)
+   ![ Authorizing cron using HTTP Basic ](../../assets/configuration/cron-auth.png)
 
 1. Controleer of er rijen aan de tabel zijn toegevoegd:
 
@@ -254,11 +254,11 @@ U kunt uitsnijden op elk gewenst moment uitvoeren met een webbrowser, bijvoorbee
 
 >[!WARNING]
 >
->Do _niet_ Draai de bewerking in een browser uit zonder deze eerst te beveiligen.
+>Voer _niet_ kroon in browser in zonder het eerst te beveiligen.
 
-Als u een Apache-webserver gebruikt, moet u de beperking verwijderen uit de `.htaccess` voordat u het uitsnijden in een browser kunt uitvoeren:
+Als u een Apache-webserver gebruikt, moet u de beperking uit het `.htaccess` -bestand verwijderen voordat u het uitsnijden in een browser kunt uitvoeren:
 
-1. Meld u aan bij uw Commerce-server als een gebruiker met rechten om naar het Commerce-bestandssysteem te schrijven.
+1. Meld u aan bij uw Commerce-server als een gebruiker met schrijfmachtigingen voor het Commerce-bestandssysteem.
 1. Open een van de volgende opties in een teksteditor (afhankelijk van het invoerpunt voor Magento):
 
    ```text
@@ -296,10 +296,10 @@ Als u een Apache-webserver gebruikt, moet u de beperking verwijderen uit de `.ht
 
 Waarbij:
 
-- `<your hostname or IP>` is hostname of IP adres van uw installatie van de Handel
-- `<Commerce root>` is de documentafhankelijke relatieve map van de webserver waarop u de Commerce-software hebt geïnstalleerd
+- `<your hostname or IP>` is de hostnaam of het IP-adres van uw Commerce-installatie
+- `<Commerce root>` is de documentafhankelijke relatieve map van de webserver waarop u de Commerce-software hebt geïnstalleerd.
 
-  De exacte URL die u gebruikt om de toepassing van de Handel in werking te stellen hangt van af hoe u uw Webserver en virtuele gastheer vormde.
+  De exacte URL die u gebruikt om de Commerce-toepassing uit te voeren, is afhankelijk van de configuratie van uw webserver en virtuele host.
 
 - `<group name>` is een geldige naam voor een uitsnijdgroep (optioneel)
 
@@ -311,4 +311,4 @@ https://magento.example.com/magento2/pub/cron.php?group=index
 
 >[!INFO]
 >
->U moet tweemaal uitsnijden uitvoeren: eerst om taken te ontdekken en opnieuw om de taken zelf uit te voeren. Zie [Uitsnede configureren en uitvoeren](../cli/configure-cron-jobs.md) voor meer informatie over kroongroepen .
+>U moet tweemaal uitsnijden uitvoeren: eerst om taken te ontdekken en opnieuw om de taken zelf uit te voeren. Verwijs naar [ vormen en in werking stellen kruin ](../cli/configure-cron-jobs.md) voor meer informatie over cron groepen.

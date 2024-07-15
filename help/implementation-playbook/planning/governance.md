@@ -16,7 +16,7 @@ Projectbeheer is een toezichtfunctie die is afgestemd op de governancestructuur 
 
 Het governancemodel definieert, documenteert en communiceert aangepaste en effectieve praktijken om een uitgebreide methode te bieden voor het beheren van het project en het periodiek zichtbaar maken op elk niveau om succes te waarborgen. Het bevat een kader voor het nemen van besluiten; bepaalt rollen, verantwoordelijkheden, en aansprakelijkheid voor de verwezenlijking van het project; en regelt de doeltreffendheid. De governancestructuur rolt van het uitvoeringsteam helemaal naar het uitvoerend management en definieert de activiteiten, rapportage, escalatie en informatiestroom.
 
-![Infografisch projectbeheer](../../assets/playbooks/project-governance.svg)
+![ het bestuur van het Project in fographic ](../../assets/playbooks/project-governance.svg)
 
 Op diverse niveaus, onderzoeken de teams specifieke sprint en projectmetriek om de vooruitgang te begrijpen en correctieve acties te nemen zoals nodig. Deze gegevens op sprintniveau kunnen de snelheid en uitbarsting van elke sprint omvatten.
 
@@ -62,11 +62,11 @@ Afgezien van de sprintmetriek is het ook van essentieel belang om project en kwa
 
 ## Storyboard en snelheid
 
-![Voorbeeld Kanban-bord](../../assets/playbooks/kanban-board-chart.svg)
+![ Voorbeeld Kanban board ](../../assets/playbooks/kanban-board-chart.svg)
 
 ## Afdrukken en vrijgeven
 
-![Voorbeeldsprint en uitvouwdiagram](../../assets/playbooks/sprint-release-burndown.svg)
+![ sprint van het voorbeeld en versie burndown grafiek ](../../assets/playbooks/sprint-release-burndown.svg)
 
 De uitdagingen of de veranderingen komen tijdens de duur van om het even welk project voor. Door de juiste mensen binnen uw organisatie de mogelijkheid te geven om te volgen, te meten en te roteren wanneer een uitdaging wordt aangegaan, wordt de kans groter dat u uit het project komt omdat u uw doelstellingen hebt bereikt en tevreden bent met het resultaat.
 

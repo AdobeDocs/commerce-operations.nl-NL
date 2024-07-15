@@ -5,31 +5,31 @@ feature: Configuration, Observability, Roles/Permissions, System
 exl-id: 3c557746-5182-4929-aebf-5b6fe76f0d8f
 source-git-commit: 16e9396f19693436dfc7bdac78d84624a78f0c21
 workflow-type: tm+mt
-source-wordcount: '965'
+source-wordcount: '961'
 ht-degree: 0%
 
 ---
 
 # Verwijzing naar algemene en geavanceerde configuratiepaden
 
-Dit onderwerp maakt een lijst van algemene en geavanceerde configuratiewegen en _niet_ [gevoelige en systeemspecifieke waarden](config-reference-sens.md). De [`magento app:config:dump` command](../cli/export-configuration.md) deze waarden naar het gedeelde configuratiebestand schrijft, `app/etc/config.php`, die onder broncontrole moeten staan.
+Dit onderwerp maakt een lijst van algemene en geavanceerde configuratiewegen en __ [ niet gevoelige en systeem-specifieke waarden ](config-reference-sens.md). Het [`magento app:config:dump` bevel ](../cli/export-configuration.md) schrijft deze waarden aan het gedeelde configuratiedossier, `app/etc/config.php`, dat in broncontrole zou moeten zijn.
 
-Om naar keuze om het even welke configuratiemontages met voeten te treden of gevoelige montages te plaatsen, zie [Omgevingsvariabelen gebruiken om configuratie-instellingen te overschrijven](override-config-settings.md#environment-variables).
+Om naar keuze om het even welke configuratiemontages met voeten te treden of gevoelige montages te plaatsen, zie [ de milieuvariabelen van het Gebruik om configuratiemontages ](override-config-settings.md#environment-variables) met voeten te treden.
 
 ## Algemene categorie
 
-In deze sectie worden de namen van variabelen en de configuratiepaden weergegeven die beschikbaar zijn voor opties onder Beheer **Winkels** > Instellingen > **Configuratie** > **Algemeen**.
+Deze sectie maakt een lijst van veranderlijke namen en configuratiewegen beschikbaar voor opties in Admin onder **Slaat** > Montages > **Configuratie** > **Algemeen**.
 
 ### Algemene paden
 
-Deze configuratiewaarden zijn beschikbaar in de Admin in **Winkels** > Instellingen > **Configuratie** > Algemeen > **Algemeen**.
+Deze configuratiewaarden zijn beschikbaar in Admin in **Slaat** > Montages > **Configuratie** > Algemeen > **Algemeen**.
 
-| Naam | Config-pad | Alleen handel? | gevoelig? |
+| Naam | Config-pad | Alleen Commerce? | gevoelig? |
 |--------------|--------------|--------------|--------------|
-| Standaardland | `general/country/default` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> | ![Gevoelig](/help/assets/configuration/cloud-sens.png) |
-| Landen toestaan | `general/country/allow` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> | ![Gevoelig](/help/assets/configuration/cloud-sens.png) |
-| Postcode is optioneel voor | `general/country/optional_zip_countries` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> | ![Gevoelig](/help/assets/configuration/cloud-sens.png) |
-| EU-landen | `general/country/eu_countries` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> | ![Gevoelig](/help/assets/configuration/cloud-sens.png) |
+| Standaardland | `general/country/default` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> | ![ Gevoelig ](/help/assets/configuration/cloud-sens.png) |
+| Landen toestaan | `general/country/allow` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> | ![ Gevoelig ](/help/assets/configuration/cloud-sens.png) |
+| Postcode is optioneel voor | `general/country/optional_zip_countries` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> | ![ Gevoelig ](/help/assets/configuration/cloud-sens.png) |
+| EU-landen | `general/country/eu_countries` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> | ![ Gevoelig ](/help/assets/configuration/cloud-sens.png) |
 | Bovenste bestemmingen | `general/country/destinations` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 | Status is vereist voor | `general/region/state_required` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 | Staat kiezen als dit optioneel is voor land | `general/region/display_all` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> | |
@@ -38,11 +38,11 @@ Deze configuratiewaarden zijn beschikbaar in de Admin in **Winkels** > Instellin
 | Gewichtseenheid | `general/locale/weight_unit` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> | |
 | Eerste weekdag | `general/locale/firstday` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> | |
 | Weekenddagen | `general/locale/weekend` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> | |
-| Toegangsbeperking | `general/restriction/is_active` | ![Alleen handel](/help/assets/configuration/cloud-ee.png) | |
-| Restrictiemodus | `general/restriction/mode` | ![Alleen handel](/help/assets/configuration/cloud-ee.png) | |
-| Opstartpagina | `general/restriction/http_redirect` | ![Alleen handel](/help/assets/configuration/cloud-ee.png) | |
-| Openingspagina | `general/restriction/cms_page` | ![Alleen handel](/help/assets/configuration/cloud-ee.png) | |
-| HTTP-respons | `general/restriction/http_status` | ![Alleen handel](/help/assets/configuration/cloud-ee.png) | |
+| Toegangsbeperking | `general/restriction/is_active` | ![ Commerce-slechts ](/help/assets/configuration/cloud-ee.png) | |
+| Restrictiemodus | `general/restriction/mode` | ![ Commerce-slechts ](/help/assets/configuration/cloud-ee.png) | |
+| Opstartpagina | `general/restriction/http_redirect` | ![ Commerce-slechts ](/help/assets/configuration/cloud-ee.png) | |
+| Openingspagina | `general/restriction/cms_page` | ![ Commerce-slechts ](/help/assets/configuration/cloud-ee.png) | |
+| HTTP-respons | `general/restriction/http_status` | ![ Commerce-slechts ](/help/assets/configuration/cloud-ee.png) | |
 | Winkelnaam | `general/store_information/name` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> | |
 | Telefoonnummer winkel | `general/store_information/phone` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> | |
 | Bewerkingstijden opslaan | `general/store_information/hours` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> | |
@@ -59,9 +59,9 @@ Deze configuratiewaarden zijn beschikbaar in de Admin in **Winkels** > Instellin
 
 ### Webpaden
 
-Deze configuratiewaarden zijn beschikbaar in de Admin in **Winkels** > Instellingen > **Configuratie** > **Algemeen** > **Web**.
+Deze configuratiewaarden zijn beschikbaar in Admin in **Slaat** > Montages > **Configuratie** > **Algemeen** > **Web**.
 
-| Naam | Config-pad | Alleen handel? |
+| Naam | Config-pad | Alleen Commerce? |
 |--------------|--------------|--------------|
 | Winkelcode toevoegen aan URL&#39;s | `web/url/use_store` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 | Automatisch omleiden naar basis-URL | `web/url/redirect_to_base` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
@@ -91,9 +91,9 @@ Deze configuratiewaarden zijn beschikbaar in de Admin in **Winkels** > Instellin
 
 ### Paden voor instellen van valuta
 
-Deze configuratiewaarden zijn beschikbaar in de Admin in **Winkels** > Instellingen > **Configuratie** > **Algemeen** > **Valuta-instelling**.
+Deze configuratiewaarden zijn beschikbaar in Admin in **Opslag** > Montages > **Configuratie** > **Algemene** > **opstelling van de Valuta**.
 
-| Naam | Config-pad | Alleen handel? |
+| Naam | Config-pad | Alleen Commerce? |
 |--------------|--------------|--------------|
 | Basisvaluta | `currency/options/base` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 | Standaardweergavemunt | `currency/options/default` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
@@ -116,9 +116,9 @@ Deze configuratiewaarden zijn beschikbaar in de Admin in **Winkels** > Instellin
 
 ### Contactpaden
 
-Deze configuratiewaarden zijn beschikbaar in de Admin in **Winkels** > Instellingen > **Configuratie** > **Algemeen** > **Contactpersonen**.
+Deze configuratiewaarden zijn beschikbaar in Admin in **Slaat** > Montages > **Configuratie** > **Algemene** > **Contacten**.
 
-| Naam | Config-pad | Alleen handel? |
+| Naam | Config-pad | Alleen Commerce? |
 |--------------|--------------|--------------|
 | Contact met ons inschakelen | `contact/contact/enabled` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 | E-mails verzenden naar | `contact/email/recipient_email` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
@@ -129,9 +129,9 @@ Deze configuratiewaarden zijn beschikbaar in de Admin in **Winkels** > Instellin
 
 ### Paden rapporten
 
-Deze configuratiewaarden zijn beschikbaar in de Admin in **Winkels** > Instellingen > **Configuratie** > **Algemeen** > **Rapporten**.
+Deze configuratiewaarden zijn beschikbaar in Admin in **Slaat** > Montages > **Configuratie** > **Algemeen** > **Rapporten**.
 
-| Naam | Config-pad | Alleen handel? |
+| Naam | Config-pad | Alleen Commerce? |
 |--------------|--------------|--------------|
 | Jaarlijks begin | `reports/dashboard/ytd_start` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 | Huidige maand start | `reports/dashboard/mtd_start` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
@@ -140,9 +140,9 @@ Deze configuratiewaarden zijn beschikbaar in de Admin in **Winkels** > Instellin
 
 ### Inhoudsbeheerpaden
 
-Deze configuratiewaarden zijn beschikbaar in de Admin in **Winkels** > Instellingen > **Configuratie** > **Algemeen** > **Inhoud beheren**.
+Deze configuratiewaarden zijn beschikbaar in Admin in **Slaat** > Montages > **Configuratie** > **Algemeen** > **het Beheer van de Inhoud**.
 
-| Naam | Config-pad | Alleen handel? |
+| Naam | Config-pad | Alleen Commerce? |
 |--------------|--------------|--------------|
 | WYSIWYG Editor inschakelen | `cms/wysiwyg/enabled` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 | Statische URL&#39;s gebruiken voor media-inhoud in WYSIWYG voor catalogus | `cms/wysiwyg/use_static_urls_in_catalog` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
@@ -154,9 +154,9 @@ Deze configuratiewaarden zijn beschikbaar in de Admin in **Winkels** > Instellin
 
 ### New Relic-rapportagepaden
 
-Deze configuratiewaarden zijn beschikbaar in de Admin in **Winkels** > Instellingen > **Configuratie** > **Algemeen** > **New Relic Reporting**.
+Deze configuratiewaarden zijn beschikbaar in Admin in **Opslag** > Montages > **Configuratie** > **Algemeen** > **New Relic die** meldt.
 
-| Naam | Config-pad | Alleen handel? |
+| Naam | Config-pad | Alleen Commerce? |
 |--------------|--------------|--------------|
 | New Relic-integratie inschakelen | `newrelicreporting/general/enable` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 | New Relic-toepassingsnaam | `newrelicreporting/general/app_name` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
@@ -166,13 +166,13 @@ Deze configuratiewaarden zijn beschikbaar in de Admin in **Winkels** > Instellin
 
 ## Geavanceerde categorie
 
-In deze sectie worden de namen van variabelen en configuratiepaden weergegeven die beschikbaar zijn voor opties in de beheerdersruimte onder **Winkels** > Instellingen > **Configuratie** > **Geavanceerd**.
+Deze sectie maakt een lijst van veranderlijke namen en config wegen beschikbaar voor opties in Admin onder **Slaat** > Montages > **Configuratie** > **Geavanceerd**.
 
 ### Beheerpaden
 
-Deze configuratiewaarden zijn beschikbaar in de Admin in **Winkels** > Instellingen > **Configuratie** > **Geavanceerd** > **Beheerder**.
+Deze configuratiewaarden zijn beschikbaar in Admin in **Slaat** > Montages > **Configuratie** > **Geavanceerd** > **Admin**.
 
-| Naam | Config-pad | Alleen handel? |
+| Naam | Config-pad | Alleen Commerce? |
 |--------------|--------------|--------------|
 | E-mailsjabloon wachtwoord vergeten | `admin/emails/forgot_email_template` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 | E-mailafzender vergeten en opnieuw instellen | `admin/emails/forgot_email_identity` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
@@ -208,9 +208,9 @@ Deze configuratiewaarden zijn beschikbaar in de Admin in **Winkels** > Instellin
 
 ### Systeempaden
 
-Deze configuratiewaarden zijn beschikbaar in de Admin in **Winkels** > Instellingen > **Configuratie** > **Geavanceerd** > **Systeem**.
+Deze configuratiewaarden zijn beschikbaar in Admin in **Slaat** > Montages > **Configuratie** > **Geavanceerd** > **Systeem**.
 
-| Naam | Config-pad | Alleen handel? |
+| Naam | Config-pad | Alleen Commerce? |
 |--------------|--------------|--------------|
 | Levensduur berichten gelukt | `system/mysqlmq/successful_messages_lifetime` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 | Berichten opnieuw actief na | `system/mysqlmq/retry_inprogress_after` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
@@ -229,20 +229,20 @@ Deze configuratiewaarden zijn beschikbaar in de Admin in **Winkels** > Instellin
 | Historie opruimen elke | `system/cron/default/history_cleanup_every` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 | Levensduur succesvolle historie | `system/cron/default/history_success_lifetime` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 | Historieperiode mislukt | `system/cron/default/history_failure_lifetime` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
-| Planningen elke genereren | `system/cron/staging/schedule_generate_every` | ![Alleen handel](/help/assets/configuration/cloud-ee.png) |
-| Plan vooruit voor | `system/cron/staging/schedule_ahead_for` | ![Alleen handel](/help/assets/configuration/cloud-ee.png) |
-| Gemist als niet binnen loopt | `system/cron/staging/schedule_lifetime` | ![Alleen handel](/help/assets/configuration/cloud-ee.png) |
-| Historie opruimen elke | `system/cron/staging/history_cleanup_every` | ![Alleen handel](/help/assets/configuration/cloud-ee.png) |
-| Levensduur succesvolle historie | `system/cron/staging/history_success_lifetime` | ![Alleen handel](/help/assets/configuration/cloud-ee.png) |
-| Historieperiode mislukt | `system/cron/staging/history_failure_lifetime` | ![Alleen handel](/help/assets/configuration/cloud-ee.png) |
-| Afzonderlijk proces gebruiken | `system/cron/staging/use_separate_process` | ![Alleen handel](/help/assets/configuration/cloud-ee.png) |
-| Planningen elke genereren | `system/cron/catalog/event/schedule_generate_every` | ![Alleen handel](/help/assets/configuration/cloud-ee.png) |
-| Plan vooruit voor | `system/cron/catalog/event/schedule_ahead_for` | ![Alleen handel](/help/assets/configuration/cloud-ee.png) |
-| Gemist als niet binnen loopt | `system/cron/catalog/event/schedule_lifetime` | ![Alleen handel](/help/assets/configuration/cloud-ee.png) |
-| Historie opruimen elke | `system/cron/catalog/event/history_cleanup_every` | ![Alleen handel](/help/assets/configuration/cloud-ee.png) |
-| Levensduur succesvolle historie | `system/cron/catalog/event/history_success_lifetime` | ![Alleen handel](/help/assets/configuration/cloud-ee.png) |
-| Historieperiode mislukt | `system/cron/catalog/event/history_failure_lifetime` | ![Alleen handel](/help/assets/configuration/cloud-ee.png) |
-| Afzonderlijk proces gebruiken | `system/cron/catalog/event/use_separate_process` | ![Alleen handel](/help/assets/configuration/cloud-ee.png) |
+| Planningen elke genereren | `system/cron/staging/schedule_generate_every` | ![ Commerce-slechts ](/help/assets/configuration/cloud-ee.png) |
+| Plan vooruit voor | `system/cron/staging/schedule_ahead_for` | ![ Commerce-slechts ](/help/assets/configuration/cloud-ee.png) |
+| Gemist als niet binnen loopt | `system/cron/staging/schedule_lifetime` | ![ Commerce-slechts ](/help/assets/configuration/cloud-ee.png) |
+| Historie opruimen elke | `system/cron/staging/history_cleanup_every` | ![ Commerce-slechts ](/help/assets/configuration/cloud-ee.png) |
+| Levensduur succesvolle historie | `system/cron/staging/history_success_lifetime` | ![ Commerce-slechts ](/help/assets/configuration/cloud-ee.png) |
+| Historieperiode mislukt | `system/cron/staging/history_failure_lifetime` | ![ Commerce-slechts ](/help/assets/configuration/cloud-ee.png) |
+| Afzonderlijk proces gebruiken | `system/cron/staging/use_separate_process` | ![ Commerce-slechts ](/help/assets/configuration/cloud-ee.png) |
+| Planningen elke genereren | `system/cron/catalog/event/schedule_generate_every` | ![ Commerce-slechts ](/help/assets/configuration/cloud-ee.png) |
+| Plan vooruit voor | `system/cron/catalog/event/schedule_ahead_for` | ![ Commerce-slechts ](/help/assets/configuration/cloud-ee.png) |
+| Gemist als niet binnen loopt | `system/cron/catalog/event/schedule_lifetime` | ![ Commerce-slechts ](/help/assets/configuration/cloud-ee.png) |
+| Historie opruimen elke | `system/cron/catalog/event/history_cleanup_every` | ![ Commerce-slechts ](/help/assets/configuration/cloud-ee.png) |
+| Levensduur succesvolle historie | `system/cron/catalog/event/history_success_lifetime` | ![ Commerce-slechts ](/help/assets/configuration/cloud-ee.png) |
+| Historieperiode mislukt | `system/cron/catalog/event/history_failure_lifetime` | ![ Commerce-slechts ](/help/assets/configuration/cloud-ee.png) |
+| Afzonderlijk proces gebruiken | `system/cron/catalog/event/use_separate_process` | ![ Commerce-slechts ](/help/assets/configuration/cloud-ee.png) |
 | Afzonderlijk proces gebruiken | `system/cron/default/use_separate_process` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 | E-mailcommunicatie uitschakelen | `system/smtp/disable` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 | Return-Path instellen | `system/smtp/set_return_path` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
@@ -276,9 +276,9 @@ Deze configuratiewaarden zijn beschikbaar in de Admin in **Winkels** > Instellin
 
 ### Paden voor ontwikkelaars
 
-Deze configuratiewaarden zijn beschikbaar in de Admin in **Winkels** > Instellingen > **Configuratie** > **Geavanceerd** > **Ontwikkelaar**.
+Deze configuratiewaarden zijn beschikbaar in Admin in **Slaat** > Montages > **Configuratie** > **Geavanceerd** > **Ontwikkelaar**.
 
-| Naam | Config-pad | Alleen handel? |
+| Naam | Config-pad | Alleen Commerce? |
 |--------------|--------------|--------------|
 | Type workflow | `dev/front_end_development_workflow/type` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 | Symbolen toestaan | `dev/template/allow_symlink` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
@@ -291,7 +291,7 @@ Deze configuratiewaarden zijn beschikbaar in de Admin in **Winkels** > Instellin
 | Ingeschakeld voor Storefront | `dev/translate_inline/active` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 | Ingeschakeld voor Admin | `dev/translate_inline/active_admin` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 | JavaScript-bestanden samenvoegen | `dev/js/merge_files` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
-| JavaScript-bundeling inschakelen | `dev/js/enable_js_bundling` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
+| JavaScript Bundling inschakelen | `dev/js/enable_js_bundling` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 | JavaScript-bestanden miniaturen | `dev/js/minify_files` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 | Vertaalstrategie | `dev/js/translate_strategy` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 | Logbestand JS-fouten voor sessieopslag | `dev/js/session_storage_logging` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |

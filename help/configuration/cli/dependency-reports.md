@@ -15,9 +15,9 @@ ht-degree: 0%
 
 U kunt de volgende typen rapporten uitvoeren:
 
-- **Modulafhankelijkheden**: Toont het totale aantal gebiedsdelen tussen modules en of de gebiedsdelen hard of zacht zijn.
-- **Cirkelafhankelijkheden**: Toont het totale aantal gebiedsketens en het aantal en de lijst van kringafhankelijkheden voor elke module.
-- **Framework-afhankelijkheden**: geeft het totale aantal afhankelijkheden van het kader voor handel per module weer (inclusief het totale aantal kaderitems voor elke bibliotheek).
+- **de gebiedsdelen van de Module**: Toont het totale aantal gebiedsdelen tussen modules en of de gebiedsdelen hard of zacht zijn.
+- **Cirkelgebiedsdelen**: Toont het totale aantal gebiedsketens en het aantal en de lijst van cirkelgebiedsdelen voor elke module.
+- **gebiedsdelen van het Kader**: Toont het totale aantal gebiedsdelen op het kader van Commerce door module (met inbegrip van het totale aantal kaderingangen voor elke bibliotheek).
 
 Een afhankelijkheid in een opmerking is ook een afhankelijkheid.
 

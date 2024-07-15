@@ -15,13 +15,13 @@ Deze sectie bevat informatie over veiligheid, privacy, en regelgevende naleving.
 
 ## Beveiliging
 
-- [Productbeveiliging Adoben](https://helpx.adobe.com/security.html): Meer informatie over de nieuwste patches, beveiligingsupdates en tips en trucs voor Adobe Commerce.
-- [Adobe Vertrouwenscentrum](https://www.adobe.com/trust.html): Toegang tot de meest recente beschikbare informatie over de operationele gezondheid, beveiliging, privacy en conformiteit van alle cloudservices van de Adobe.
-- [Analyse voor de hele site](../tools/site-wide-analysis-tool/dashboard.md): Gestroomlijnde beveiligingsinzichten van uw Adobe Commerce-site weergeven, waaronder beveiligingsscans, services aan het einde van de levensduur en beveiligingsaanbevelingen.
+- [ Veiligheid van het Product van de Adobe ](https://helpx.adobe.com/security.html): Leer over de recentste flarden, veiligheidsupdates, en beste praktijken voor Adobe Commerce.
+- [ het Centrum van het Vertrouwen van de Adobe ](https://www.adobe.com/trust.html): Heb toegang tot de recentste beschikbare informatie over de operationele gezondheid, veiligheid, privacy, en naleving van alle de wolkendiensten van de Adobe.
+- [ Plaats-brede Hulpmiddel van de Analyse ](../tools/site-wide-analysis-tool/dashboard.md): Mening gestroomlijnde veiligheidsinzichten over uw plaats van Adobe Commerce, met inbegrip van veiligheidsaftasten, de diensten van het eind van het leven, en veiligheidsaanbevelingen.
 
 ## Compatibiliteit
 
-Handelaars zijn verplicht om te voldoen aan de richtlijnen van de branche voor het handhaven van een veilige omgeving, wettelijke vereisten in hun jurisdictie, en beste praktijken voor online handel. Als u meer wilt leren vanuit een zakelijk perspectief, raadpleegt u de [Privacybeleid van winkel](https://experienceleague.adobe.com/docs/commerce-admin/start/compliance/privacy/privacy-policy.html).
+Handelaars zijn verplicht om te voldoen aan de richtlijnen van de branche voor het handhaven van een veilige omgeving, wettelijke vereisten in hun jurisdictie, en beste praktijken voor online handel. Om meer van een bedrijfsperspectief te leren, zie het [ Beleid van de Privacy van de Opslag ](https://experienceleague.adobe.com/docs/commerce-admin/start/compliance/privacy/privacy-policy.html).
 
 Deze conformiteitsdocumentatie bevat de technische informatie die ervoor zorgt dat Adobe Commerce-installaties voldoen aan de vereisten van specifieke privacywetgeving. Sommige van deze vereisten vereisen dat handelaren aanvullende ontwikkelingswerkzaamheden voltooien om aan de eisen te voldoen. Raadpleeg de volgende onderwerpen voor meer informatie:
 
@@ -30,4 +30,4 @@ Deze conformiteitsdocumentatie bevat de technische informatie die ervoor zorgt d
 
 ## Compatibiliteitshulpmiddelen
 
-- [Privacy JavaScript-bibliotheek](privacy/javascript-library.md)
+- [Privacy JavaScript Library](privacy/javascript-library.md)

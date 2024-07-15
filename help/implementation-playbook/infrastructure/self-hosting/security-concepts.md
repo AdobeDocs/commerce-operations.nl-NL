@@ -7,11 +7,11 @@ kt: 11420
 doc-type: tutorial
 audience: all
 last-substantial-update: 2023-04-13T00:00:00Z
-exl-id: c4912f02-0411-466f-8c77-d610de9eb35d
+exl-id: f76a8906-af31-4a61-be68-f5dad87161e2
 feature: Install, Security
-source-git-commit: 94d7a57dcd006251e8eefbdb4ec3a5e140bf43f9
+source-git-commit: 823498f041a6d12cfdedd6757499d62ac2aced3d
 workflow-type: tm+mt
-source-wordcount: '1571'
+source-wordcount: '1546'
 ht-degree: 0%
 
 ---
@@ -24,7 +24,7 @@ De volgende concepten zijn niet in een bepaalde volgorde. Ze zijn bedoeld om ide
 
 ## Alleen-lezen bestandssysteem
 
-Het concept van het alleen-lezen bestandssysteem is geleend van [Adobe Commerce over cloudinfrastructuur](https://experienceleague.adobe.com/docs/commerce-learn/tutorials/getting-started/cloud/1-overview.html){target="_blank"}. Hierdoor wordt één belangrijk gebied verwijderd dat door een slechte acteur wordt gebruikt. Vele exploits hebben voordeel gehaald uit het veranderen van een dossier dat naar verwachting in de toepassing van de Handel zal zijn om opsporing te vermijden. In plaats van er een te maken, wijzigt de slechte actor de inhoud van een bestaand bestand om een onverwachte actie uit te voeren. Als u het bestandssysteem alleen-lezen maakt, wordt deze aanvalsvector aanzienlijk kleiner.
+Het read-only concept van het dossiersysteem werd geleend van [ Adobe Commerce op wolkeninfrastructuur ](https://experienceleague.adobe.com/docs/commerce-learn/tutorials/getting-started/cloud/1-overview.html) {target="_blank"}. Hierdoor wordt één belangrijk gebied verwijderd dat door een slechte acteur wordt gebruikt. Veel explosies hebben voordeel gehaald uit het wijzigen van een bestand dat naar verwachting in de Commerce-toepassing aanwezig zal zijn om detectie te voorkomen. In plaats van er een te maken, wijzigt de slechte actor de inhoud van een bestaand bestand om een onverwachte actie uit te voeren. Als u het bestandssysteem alleen-lezen maakt, wordt deze aanvalsvector aanzienlijk kleiner.
 
 ## Gebruik TWO Factor Authentificatie en wachtwoordmanagers
 
@@ -34,13 +34,13 @@ U deelt nooit wachtwoorden. Elke admin gebruiker zou hun eigen rekening met juis
 
 Malware-scans worden doorgaans gevonden bij een hostingprovider die probeert zich te specialiseren in Adobe Commerce. Deze bibliotheek van bekende malware en exploitaties is een steeds groeiende lijst aangezien de nieuwe bedreigingen worden ontdekt, verdrievoudigd, en gediagnosticeerd. Controleer of de hostingprovider over een dergelijke service beschikt en of deze automatisch of alleen op verzoek kan worden uitgevoerd. Er zijn ook diensten die u kunt intekenen op die hun eigen bibliotheek van bekende exploitaties kunnen gebruiken om uw handelstoepassing constant te controleren op exploitaties. Sommige hiervan zijn alleen extern, andere kunnen worden toegevoegd aan de infrastructuur voor een interne diepgaande scan van alle mappen, bestanden en zelfs de database. Er zijn een paar aanbieders met jarenlange ervaring op dit gebied, van Sansec.io tot Sucuri en natuurlijk van MageReport. Sommige zijn gratis, en sommige hebben een bijbehorende prijs. Het weten van dit is beschikbaar en het hebben van een doordacht gesprek met uw architect van Adobe Commerce en team DevOps zal u de juiste oplossing verzekeren.
 
-## Site-brede analyse
+## Site-brede analyse voor Commerce
 
-De [Analyse voor de hele site](https://experienceleague.adobe.com/docs/commerce-operations/tools/site-wide-analysis-tool/intro.html){target="_blank"} is een proactief zelfbedieningshulpmiddel en een centrale gegevensopslagplaats die gedetailleerde systeeminzichten en aanbevelingen omvat om de veiligheid en de operabiliteit van uw installatie van Adobe Commerce te verzekeren. Het biedt 24/7 real-time prestatiescontrole, rapporten, en advies om potentiële kwesties en betere zichtbaarheid in plaatsgezondheid, veiligheid, en toepassingsconfiguraties te identificeren. Het helpt de resolutietijd te verminderen en de stabiliteit en prestaties van de site te verbeteren.
+Het [ plaats-brede Hulpmiddel van de Analyse ](https://experienceleague.adobe.com/docs/commerce-operations/tools/site-wide-analysis-tool/intro.html) {target="_blank"} is een pro-actief zelfbedieningshulpmiddel en centrale bewaarplaats die gedetailleerde systeeminzichten en aanbevelingen omvat om de veiligheid en de operabiliteit van uw installatie van Adobe Commerce te verzekeren. Het biedt 24/7 real-time prestatiescontrole, rapporten, en advies om potentiële kwesties en betere zichtbaarheid in plaatsgezondheid, veiligheid, en toepassingsconfiguraties te identificeren. Het helpt de resolutietijd te verminderen en de stabiliteit en prestaties van de site te verbeteren.
 
 ## Instellingen voor registratie van beheeracties inschakelen en controleren
 
-U vindt deze informatie nadat u zich hebt aangemeld bij de Adobe Commerce-beheerder en u hebt genavigeerd naar Opslag > Configuratie > Geavanceerd > Beheer > Logboekregistratie voor beheeracties. Dit verstrekt een lijst van gebeurtenissen die worden gecontroleerd en worden geregistreerd. Het is nuttig wanneer het doen van forensische analyse op een geëxploiteerde plaats, als het vermoeden hen toegang tot de beheerder van de Handel wordt verkregen. Dit registreren en rapport kan nuttig zijn om te zien welke gebeurtenissen de slechte actor uitvoerde. Als om het even welk logboek van admin acties gehandicapt is dat een teken dat iemand hen voor dekking kan onbruikbaar gemaakt hebben verwijdert het registreren wanneer het uitvoeren van bepaalde acties.
+U vindt deze informatie nadat u zich hebt aangemeld bij de Adobe Commerce-beheerder en u hebt genavigeerd naar Opslag > Configuratie > Geavanceerd > Beheer > Logboekregistratie voor beheeracties. Dit verstrekt een lijst van gebeurtenissen die worden gecontroleerd en worden geregistreerd. Het is nuttig bij forensische analyses op een geëxploiteerde locatie als de verdenking bestaat dat zij toegang krijgen tot de beheerder van Commerce. Dit registreren en rapport kan nuttig zijn om te zien welke gebeurtenissen de slechte actor uitvoerde. Als om het even welk logboek van admin acties gehandicapt is dat een teken dat iemand hen voor dekking kan onbruikbaar gemaakt hebben verwijdert het registreren wanneer het uitvoeren van bepaalde acties.
 
 ## Basingsserver voor SSH-toegang
 
@@ -58,7 +58,8 @@ Om ongewenste of onbevoegde het creëren van admin gebruiker te ontdekken, zou d
 
 Toegang tot productiegegevens beperken. Deze aangewezen teamgenoten zouden de capaciteit moeten hebben om productiedatabanken terug te trekken, en hen van echte gegevens te zuiveren. Als het verwijderen van de gegevens een optie is, verkort u de desbetreffende tabellen, zoals bestellingen, aanhalingstekens en klanten. Soms wilt u echter wel de volledige set gegevens, maar de waarden kunnen anoniem worden gemaakt. Dit geldt doorgaans in een testomgeving. Het is ook handig vóór upgrades. Door het echte volume van gegevens te hebben, maar anonymized verzekert u het testen en het bevestigen van de tijd om een plaatsing voor verbetering behoorlijk uit te voeren. Als u een beperkte reeks gegevens hebt, kunt u het verbeteringsproces en de timing onderschatten.
 
-+++Voorbeeld van klanteninformatie willekeurig hier is een voorbeeld voor hoe te om klantene-mailadres met een willekeurige koord en al voornaam en laatste mane gebieden in sommige standaardlijsten te veranderen die Adobe Commerce gegevens opslaat. **Herinner me om alle lijsten voor gevoelige gegevens te controleren, is deze lijst niet allen inclusief aan de lijsten die klantengegevens kunnen opslaan**
++++Voorbeeld van klantgegevens willekeurig maken
+Hier ziet u een voorbeeld van hoe u het e-mailadres van de klant kunt wijzigen met een willekeurige tekenreeks en alle velden voor de voornaam en achternaam in sommige standaardtabellen waarin Adobe Commerce gegevens opslaat. **Herinner me om alle lijsten voor gevoelige gegevens te controleren, is deze lijst niet allen inclusief aan de lijsten die klantengegevens kunnen opslaan**
 
 ```SQL
 SET FOREIGN_KEY_CHECKS=0;
@@ -104,7 +105,8 @@ SET FOREIGN_KEY_CHECKS=1;
 
 +++
 
-++ + verwijder volledig voorbeeld Hier is een voorbeeld voor het verwijderen van alle orders, aanhalingstekens, creditmemo&#39;s, en meer voorafgaand aan lancering of voor een lagere ontwikkelomgeving
+++ + verwijder informatie volledig voorbeeld
+Hier volgt een voorbeeld voor het verwijderen van alle orders, aanhalingstekens, creditnota&#39;s en meer voordat u de toepassing start of voor een lagere ontwikkelomgeving
 
 ```SQL
 DELETE FROM `gift_message`;
@@ -210,11 +212,11 @@ ALTER TABLE sequence_shipment_7 AUTO_INCREMENT=1;
 
 ## Omgevingsvariabelen gebruiken
 
-[!BADGE Alleen Adobe Commerce op cloud]{type=Informative}
+[!BADGE  Adobe Commerce op slechts wolk ]{type=Informative}
 
 Door omgevingsvariabelen te gebruiken, kunt u bepaalde waarden instellen die voor elke omgeving kunnen en moeten worden gewijzigd. U wilt bijvoorbeeld voor elke omgeving een andere URL voor de beheerder gebruiken. Door deze waarde in te stellen als een omgevingsvariabele kunt u deze configureren en zo nodig snel naar deze waarde verwijzen vanuit de interface van de cloud.
 
-Meer informatie over dit onderwerp vindt u in het Experience League [Handel in omgevingsvariabelen van de cloudinfrastructuur](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure/env/stage/variables-intro.html){target="_blank"}
+U kunt meer over dit onderwerp in Experience League [ Commerce op de Variabelen van het Milieu van de Infrastructuur van de Wolk ](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure/env/stage/variables-intro.html) lezen {target="_blank"}
 
 ## Hulpprogramma&#39;s voor het scannen van kwetsbaarheden van software
 
@@ -232,6 +234,6 @@ WAF onderzoekt Web en admin verkeer om het even welke verdachte activiteit te id
 
 Als cloudgebaseerde service vereist de WAF geen hardware of software voor installatie of onderhoud. Ten slotte, een bestaande technologiepartner, verstrekt de software en de deskundigheid. Hun hoge prestaties, altijd-op WAF verblijven in elke geheim voorgeheugenknoop over het globale leveringsnetwerk van Fastly.
 
-Lees voor meer informatie over de WAF op de Adobe Commerce over cloud die Fastly biedt de [Veelgestelde vragen over Adobe Commerce Knowledge Base](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/faq/web-application-firewall-waf-powered-by-fastly-the-faq.html){target="_blank"}.
+Voor meer informatie over WAF op Adobe Commerce op wolk die door Fastly wordt verstrekt, lees de [ Veelgestelde Veelgestelde vragen van de Kennisbank van Adobe Commerce ](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/faq/web-application-firewall-waf-powered-by-fastly-the-faq.html) {target="_blank"}.
 
 {{$include /help/_includes/hosting-related-links.md}}

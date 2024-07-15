@@ -12,9 +12,9 @@ ht-degree: 3%
 
 # Modules en extensies beheren
 
-Ontwikkelaars helpen modules en extensies bij te werken door hun versies op te geven in de Adobe Commerce `composer.json` bestand. Als u geen bijdragende ontwikkelaar bent, zie [Een upgrade uitvoeren](../implementation/perform-upgrade.md).
+Ontwikkelaars die een bijdrage leveren, upgraden modules en extensies door hun versies op te geven in het Adobe Commerce `composer.json` -bestand. Als u geen bijdragende ontwikkelaar bent, zie [ een verbetering ](../implementation/perform-upgrade.md) uitvoeren.
 
-U kunt een `require` aan de `composer.json` of u kunt de `composer require` als volgt:
+U kunt een sectie `require` toevoegen aan het `composer.json` -bestand of u kunt de opdracht `composer require` als volgt gebruiken:
 
 {{$include /help/_includes/server-login.md}}
 
@@ -34,7 +34,7 @@ Bijvoorbeeld:
 composer show --all example/module
 ```
 
-## Gebruik de `composer require` command
+## De opdracht `composer require` gebruiken
 
 Opdrachtgebruik:
 
@@ -50,11 +50,11 @@ composer require example/module:1.0.0
 
 Wacht terwijl Composer gebiedsdelen bijwerkt en de module installeert.
 
-## Voeg een `require` naar het bestand composer.json
+## Een sectie `require` toevoegen aan het bestand composer.json
 
 1. Open de `composer.json` in een teksteditor.
 
-1. Voeg een `require` sectie.
+1. Voeg een sectie `require` toe.
 
    ```json
    "require": {
@@ -63,9 +63,9 @@ Wacht terwijl Composer gebiedsdelen bijwerkt en de module installeert.
    }
    ```
 
-1. Sla uw wijzigingen op in het dialoogvenster `composer.json` en sluit de teksteditor af.
+1. Sla de wijzigingen op in het `composer.json` -bestand en sluit de teksteditor af.
 
-1. Los gebiedsdelen op en schrijf nauwkeurige versies aan `composer.lock` bestand.
+1. Los gebiedsdelen op en schrijf nauwkeurige versies aan het `composer.lock` dossier.
 
    ```bash
    composer update

@@ -12,11 +12,11 @@ ht-degree: 0%
 
 # De Admin-URI weergeven of wijzigen
 
-Voordat u deze opdracht uitvoert, moet u [Implementatieconfiguratie maken of bijwerken](deployment.md).
+Alvorens u dit bevel in werking stelt, moet u [ creëren of de plaatsingsconfiguratie ](deployment.md) bijwerken.
 
 ## De Admin-URI weergeven
 
-In deze sectie wordt besproken hoe u de opdrachtregel kunt gebruiken om de Admin Uniform Resource Identifier ([URI](https://www.w3.org/Protocols/rfc2616/rfc2616-sec3.html#sec3.2)).
+Deze sectie bespreekt hoe te om de bevellijn te gebruiken om het Eenvormige Herkenningsteken van het Middel Admin ([ URI ](https://www.w3.org/Protocols/rfc2616/rfc2616-sec3.html#sec3.2)) te tonen.
 
 Opdrachtopties:
 
@@ -30,7 +30,7 @@ Hieronder volgt een voorbeeldresultaat:
 Admin Panel URI: /admin_1wgrah
 ```
 
-U kunt ook de Admin-URI weergeven in `<magento_root>/app/etc/env.php`. Een fragment volgt:
+U kunt de Admin-URI ook weergeven in `<magento_root>/app/etc/env.php` . Een fragment volgt:
 
 ```php?start_inline=1
   'backend' =>
@@ -41,4 +41,4 @@ U kunt ook de Admin-URI weergeven in `<magento_root>/app/etc/env.php`. Een fragm
 
 ## De URL van de beheerder wijzigen
 
-Als u de beheerinterface wilt wijzigen, gebruikt u de opdracht [`magento setup:config:set`](deployment.md) gebruiken.
+Gebruik de opdracht [`magento setup:config:set`](deployment.md) om de beheerderURI te wijzigen.

@@ -3,13 +3,13 @@ title: Aanbevolen werkwijzen voor algemene ontwikkeling
 description: Meer informatie over algemene best practices bij het ontwikkelen van Adobe Commerce-projecten.
 feature: Best Practices
 role: Developer
-source-git-commit: 291c3f5ea3c58678c502d34c2baee71519a5c6dc
+exl-id: 35de9849-2d19-4bb6-b920-9ce3838bc8bc
+source-git-commit: 823498f041a6d12cfdedd6757499d62ac2aced3d
 workflow-type: tm+mt
-source-wordcount: '815'
+source-wordcount: '770'
 ht-degree: 0%
 
 ---
-
 
 # Aanbevolen werkwijzen voor algemene ontwikkeling in Adobe Commerce
 
@@ -19,11 +19,11 @@ Dit onderwerp beschrijft de basislijn voor een gezond ontwikkelingsproces van Ad
 >
 >Technische architecten van de Adobe gebruiken deze beste praktijken als referentie tijdens overeenkomsten met betrekking tot ontwikkeling.
 
-Deze beste praktijken zijn ontwikkeld op basis van jarenlange ervaring met het ontwikkelen en uitvoeren van handelsprojecten. De Adobe beveelt aan dat technische initiatieven deze beste praktijken volgen en dat u bestaande processen en code verbetert om met hen in overeenstemming te brengen.
+Deze beste praktijken zijn ontwikkeld op basis van jarenlange ervaring met het ontwikkelen en uitvoeren van Commerce-projecten. De Adobe beveelt aan dat technische initiatieven deze beste praktijken volgen en dat u bestaande processen en code verbetert om met hen in overeenstemming te brengen.
 
 ## Tekstconventies
 
-De sleutelwoorden &quot;MOET&quot;, &quot;MOET NIET&quot;, &quot;VEREIST&quot;, &quot;DIENT&quot;, &quot;DIENT NIET&quot;, &quot;DIENT NIET&quot;, &quot;AANBEVOLEN&quot;, &quot;MEI&quot; en &quot;OPTIONEEL&quot; in dit onderwerp moeten worden geïnterpreteerd zoals beschreven in [RFC 219](https://datatracker.ietf.org/doc/html/rfc2119).
+De sleutelwoorden &quot;MOET&quot;, &quot;MOET NIET&quot;, &quot;VEREIST&quot;, &quot;DIENT&quot;, &quot;DIENT NIET&quot;, &quot;DIENT NIET&quot;, &quot;AANBEVOLEN&quot;, &quot;MAY&quot;, en &quot;OPTIONEEL&quot;in dit onderwerp moeten worden geïnterpreteerd zoals die in [ RFC 2119 ](https://datatracker.ietf.org/doc/html/rfc2119) worden beschreven.
 
 ## Proces
 
@@ -31,7 +31,7 @@ De sleutelwoorden &quot;MOET&quot;, &quot;MOET NIET&quot;, &quot;VEREIST&quot;, 
 1. De ontwikkeling MOET NIET beginnen totdat het ontwikkelingsteam een vertakkingsstrategie voor het versiecontrolesysteem heeft.
 1. De ontwikkeling MOET NIET beginnen na de aftekening van technische specificaties, de aftekening van gebruikersartikelen en gebruiksgevallen en de aftekening van testgevallen is beschikbaar voor het ontwikkelingsteam.
 1. De ontwikkeling MAG NIET beginnen totdat ten minste een ontwikkelings- en kwaliteitscontroleomgeving beschikbaar is.
-1. Projectspecifieke eisen die verplicht zijn voor het begin van de ontwikkeling, kunnen in een _Definitie van klaar_.
+1. De project-specifieke vereisten die voor ontwikkeling verplicht zijn te beginnen KUNNEN in a _Definitie van Klaar_ worden gedocumenteerd.
 1. Afmelding DIENT te worden gedaan door een vertegenwoordiger van de klant die gemachtigd is om af te tekenen bij te leveren projecten.
 1. In de methoden van het Agile-project kunnen aanvullende vereisten volgen. Deze eisen dienen als nieuwe eisen te worden beschouwd en dienen dienovereenkomstig te worden vastgelegd, opgesteld en gepland.
 1. Alle ontwikkelingen MOETEN vóór de indiening door de ontwikkelaar functioneel worden getest.
@@ -43,26 +43,26 @@ De sleutelwoorden &quot;MOET&quot;, &quot;MOET NIET&quot;, &quot;VEREIST&quot;, 
 ## Omgeving
 
 1. Alle ontwikkelaars MOETEN zelfde winde gebruiken. PhpStorm is de aanbevolen IDE voor Adobe Commerce-ontwikkeling.
-1. Alle ontwikkelaars MOETEN zich ontwikkelen en testen gebruikend de zelfde technologiestapel zoals die op de (toekomstige) productieservers wordt gebruikt. De versies van de software in deze technologiestapel MOETEN de belangrijkste en minder belangrijke versie van de software aanpassen die op de productieservers wordt geïnstalleerd. Zie [systeemvereisten](../../../installation/system-requirements.md) voor meer informatie over de typische technologiestapel voor Adobe Commerce.
+1. Alle ontwikkelaars MOETEN zich ontwikkelen en testen gebruikend de zelfde technologiestapel zoals die op de (toekomstige) productieservers wordt gebruikt. De versies van de software in deze technologiestapel MOETEN de belangrijkste en minder belangrijke versie van de software aanpassen die op de productieservers wordt geïnstalleerd. Zie [ systeemvereisten ](../../../installation/system-requirements.md) voor details over de typische technologiestapel voor Adobe Commerce.
 1. De systeembeheerder of technische architect kan het team voorzien van een centraal onderhouden lokale ontwikkelomgeving om gelijke en actuele lokale omgevingen te verzekeren en te bevorderen.
 1. De ontwikkelaars en de ingenieurs QA MOETEN toegang tot de bevellijn, het gegevensbestand, en de logboekdossiers van het milieu hebben QA. Dit kan een verbinding van VPN vereisen.
 
 ## Codeerstandaarden
 
 1. Alle code DIENT conventies in architectuur, methodologie en coderingsnormen te volgen. Creativiteit is gewenst in functie, niet in vorm.
-1. Alle code DIENT in overeenstemming te zijn met de [Adobe Commerce Architecture Guide](https://developer.adobe.com/commerce/php/architecture/){target="_blank}.
-1. Alle code DIENT de [Adobe Commerce-coderingsstandaarden](https://developer.adobe.com/commerce/php/coding-standards/).
-1. Alle code DIENT de [Technische Adobe Commerce-richtlijnen](https://developer.adobe.com/commerce/php/coding-standards/technical-guidelines/).
-1. Alle code DIENT de [Aanbevolen praktijken voor Adobe Commerce](../phases.md), indien van toepassing.
-1. Alle code DIENT de [PHP-Framework Interoperability Group (FIG)-standaarden](https://www.php-fig.org/).
-1. Indien mogelijk wordt aanbevolen [Adobe Commerce Technical Visions](https://developer.adobe.com/commerce/php/architecture/technical-vision/) rekening.
+1. Alle code ZOU met de [ Gids van de Architectuur van Adobe Commerce ](https://developer.adobe.com/commerce/php/architecture/) {target="_blank} moeten in lijn zijn.
+1. Alle code ZOU aan de [ Adobe Commerce Coding Normen ](https://developer.adobe.com/commerce/php/coding-standards/) moeten houden.
+1. Alle code ZOU aan de [ Technische Richtlijnen van Adobe Commerce ](https://developer.adobe.com/commerce/php/coding-standards/technical-guidelines/) moeten houden.
+1. Alle code ZOU de [ Beste praktijken van Adobe Commerce ](../phases.md), indien van toepassing moeten uitvoeren.
+1. Alle code ZOU aan de [ normen van de Groep van de Interoperabiliteit van het PHP-Kader (FIG) ](https://www.php-fig.org/) moeten houden.
+1. Waar mogelijk, wordt het AANBEVOLEN om [ de Technische Toelichtingen van Adobe Commerce ](https://developer.adobe.com/commerce/php/architecture/technical-vision/) rekening te houden.
 1. Alle integraties met externe systemen MOETEN integratietests hebben die het bedrijfsproces valideren.
 1. Alle modules MOETEN een testdekking hebben. Wat precies moet worden getest, DIENT te worden bepaald door het ontwikkelingsteam in samenwerking met de technische architect of de belangrijkste ontwikkelaar. Deze vaststelling dient te berusten op kwalitatieve maatregelen en niet op kwantitatieve maatregelen; een hoog percentage van de dekking van de code is geen indicator van succes en houdt evenmin een hoge kwaliteit van de code in. In plaats daarvan moet u het risico bepalen dat een deel van de code niet wordt gedekt door de waarschijnlijkheid en de ernst van de regressies in dat deel van het programma te beoordelen.
 
 ## Versioning
 
-Moduleversies MOETEN zich houden aan de [Semantische versie 2.0.0 standaard](https://semver.org/).
-Afhankelijkheden van de Adobe Commerce-codebase dienen de [Richtlijnen voor versies van module Vereisten](https://developer.adobe.com/commerce/php/development/versioning/dependencies/).
+De versies van de module MOETEN aan de [ Semantische Versioning 2.0.0 norm ](https://semver.org/) naleven.
+De gebiedsdelen op de codebase van Adobe Commerce MOETEN de [ richtlijnen van de Afhankelijkheid van de Versie van de Module volgen ](https://developer.adobe.com/commerce/php/development/versioning/dependencies/).
 
 ## HERZIENINGSCONTROLE
 
@@ -70,7 +70,7 @@ Verbintenissen MOETEN vergezeld gaan van zinvolle &quot;commit messages&quot;.
 
 ## Beveiliging
 
-1. [Niet-beveiligde functies](https://developer.adobe.com/commerce/php/development/security/non-secure-functions/) MAG NIET WORDEN gebruikt.
-1. [XSS-preventiestrategieën](https://developer.adobe.com/commerce/php/development/security/cross-site-scripting/) DIENT TE worden toegepast.
-1. [Beveiligingsbeleid voor inhoud](https://developer.adobe.com/commerce/php/development/security/content-security-policies/) DIENT TE worden toegepast.
-1. Nieuwe Adobe Commerce-instanties DIENEN te worden afgeleverd op de meest recente beveiligingsrelease van een versie die nog niet de datum &quot;Einde van beveiligingscorrecties&quot; heeft bereikt. Zie [Beleid voor levenscyclus van Adobe Commerce-software](../../../release/lifecycle-policy.md).
+1. [ niet-veilige functies ](https://developer.adobe.com/commerce/php/development/security/non-secure-functions/) MOGEN NIET worden gebruikt.
+1. [ XSS-preventie strategieën ](https://developer.adobe.com/commerce/php/development/security/cross-site-scripting/) ZOU MOETEN worden toegepast.
+1. [ het Beleid van de Veiligheid van de Inhoud ](https://developer.adobe.com/commerce/php/development/security/content-security-policies/) ZOU moeten worden toegepast.
+1. Nieuwe Adobe Commerce-instanties DIENEN te worden afgeleverd op de meest recente beveiligingsrelease van een versie die nog niet de datum &quot;Einde van beveiligingscorrecties&quot; heeft bereikt. Zie [ het Beleid van de Levenscyclus van de Software van Adobe Commerce ](../../../release/lifecycle-policy.md).

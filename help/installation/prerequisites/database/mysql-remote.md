@@ -21,26 +21,26 @@ Aurora is een krachtige, volledig compatibele MySQL-server die op AWS wordt geho
 
 Het gebruiken van Aurora als gegevensbestand is zo gemakkelijk zoals specificerend het gegevensbestand in de regelmatige de opstellingsconfiguratie van Adobe Commerce, gebruikend de standaardgegevensbestandschakelaar.
 
-Bij uitvoering `bin/magento setup:install`, gebruikt u de Aurora-informatie in de `db-` velden:
+Wanneer u `bin/magento setup:install` uitvoert, gebruikt u de Aurora-informatie in de `db-` -velden:
 
 ```bash
 bin/magento setup:install ... --db-host='database-aurora.us-east-1.rds.amazonaws.com' --db-name='magento2' --db-user='username' --db-password='password' ...
 ```
 
-De `db-host` waarde is de Aurora-URL met de `https://` en trailing `:portnumber`  verwijderd.
+De waarde `db-host` is de URL van Aurora, waarbij de URL `https://` en de URL aan het einde `:portnumber` zijn verwijderd.
 
 ## Een externe databaseverbinding instellen
 
 >[!NOTE]
 >
->Dit is een geavanceerd onderwerp dat slechts door een ervaren netwerkbeheerder of gegevensbestandbeheerder zou moeten worden gebruikt. U moet `root` toegang tot het bestandssysteem en u moet zich als volgt kunnen aanmelden bij MySQL `root`.
+>Dit is een geavanceerd onderwerp dat slechts door een ervaren netwerkbeheerder of gegevensbestandbeheerder zou moeten worden gebruikt. U moet `root` toegang hebben tot het bestandssysteem en u moet zich als `root` kunnen aanmelden bij MySQL.
 
 ### Vereisten
 
 Voordat u begint, moet u:
 
-* [MySQL-server installeren](mysql.md) op de databaseserver.
-* [Een database-instantie maken](mysql.md#configuring-the-database-instance) op de databaseserver.
+* [ installeer server MySQL ](mysql.md) op de gegevensbestandserver.
+* [ creeer een gegevensbestandinstantie ](mysql.md#configuring-the-database-instance) op de gegevensbestandserver.
 * Installeer de MySQL-client op het Adobe Commerce-webknooppunt. Raadpleeg MySQL-documentatie voor meer informatie.
 
 ### Hoge beschikbaarheid
@@ -50,7 +50,7 @@ Gebruik de volgende richtlijnen om externe databaseverbindingen te configureren 
 * U moet een verbinding voor elke knoop van de Webserver vormen.
 * Typisch, vormt u een gegevensbestandverbinding aan het taakverdelingsmechanisme van het gegevensbestand; nochtans, kan het gegevensbestand zich groeperen complex zijn en het vormen is aan u. De Adobe doet geen specifieke aanbevelingen voor gegevensbestand zich groeperen.
 
-  Zie voor meer informatie [MySQL-documentatie](https://dev.mysql.com/doc/refman/5.6/en/mysql-cluster.html).
+  Voor meer informatie, zie [ documentatie MySQL ](https://dev.mysql.com/doc/refman/5.6/en/mysql-cluster.html).
 
 ### Verbindingsproblemen oplossen
 
@@ -60,7 +60,7 @@ Als u kwesties hebt die met één van beide gastheer verbinden, pingel eerst de 
 
 Een externe verbinding maken:
 
-1. Op uw databaseserver, als een gebruiker met `root` voorrechten, open uw MySQL configuratiedossier.
+1. Open het MySQL-configuratiebestand op uw databaseserver als een gebruiker met `root` -bevoegdheden.
 
    Voer de volgende opdracht in om het bestand te zoeken:
 
@@ -77,19 +77,19 @@ Een externe verbinding maken:
 
    >[!NOTE]
    >
-   >Bij Ubuntu 16 is het pad doorgaans `/etc/mysql/mysql.conf.d/mysqld.cnf`.
+   >In Ubuntu 16 is het pad doorgaans `/etc/mysql/mysql.conf.d/mysqld.cnf` .
 
-1. Het configuratiebestand zoeken naar `bind-address`.
+1. Zoek in het configuratiebestand naar `bind-address` .
 
    Wijzig, indien aanwezig, de waarde als volgt.
 
-   Als deze niet bestaat, voegt u deze toe aan de `[mysqld]` sectie.
+   Als deze niet bestaat, voegt u deze toe aan de sectie `[mysqld]` .
 
    ```conf
    bind-address = <ip address of your web node>
    ```
 
-   Zie [MySQL-documentatie](https://dev.mysql.com/doc/refman/5.6/en/server-options.html), vooral als u een gegroepeerde webserver hebt.
+   Zie [ documentatie MySQL ](https://dev.mysql.com/doc/refman/5.6/en/server-options.html), vooral als u een gegroepeerde Webserver hebt.
 
 1. Sla de wijzigingen in het configuratiebestand op en sluit de teksteditor af.
 1. Start de MySQL-service opnieuw:
@@ -100,18 +100,18 @@ Een externe verbinding maken:
 
    >[!NOTE]
    >
-   >Als MySQL er niet in slaagt om te beginnen, zoek in syslog naar de bron van de kwestie. Los het probleem op met [MySQL-documentatie](https://dev.mysql.com/doc/refman/5.6/en/server-options.html#option_mysqld_bind-address) of een andere gezaghebbende bron.
+   >Als MySQL er niet in slaagt om te beginnen, zoek in syslog naar de bron van de kwestie. Los de kwestie op gebruikend [ documentatie MySQL ](https://dev.mysql.com/doc/refman/5.6/en/server-options.html#option_mysqld_bind-address) of een andere gebiedende bron.
 
 ## Toegang tot een databasegebruiker verlenen
 
 Om uw Webknoop toe te laten om met de gegevensbestandserver te verbinden, moet u een gebruiker van het Webknoopgegevensbestand toegang tot het gegevensbestand op de verre server verlenen.
 
-In dit voorbeeld wordt het `root` databasegebruiker volledige toegang tot de database op de externe host.
+In dit voorbeeld krijgt de databasegebruiker van `root` volledige toegang tot de database op de externe host.
 
 Toegang verlenen aan een databasegebruiker:
 
 1. Log in bij de databaseserver.
-1. Maak verbinding met de MySQL-database als de `root` gebruiker.
+1. Maak als `root` -gebruiker verbinding met de MySQL-database.
 1. Voer de volgende opdracht in:
 
    ```shell
@@ -155,8 +155,8 @@ Als uw webserver is geclusterd, voert u de opdracht in op elke host van de webse
 
 Wanneer u Adobe Commerce installeert, moet u het volgende opgeven:
 
-* De basis-URL (ook wel de *opslagadres*) geeft de hostnaam of het IP-adres van het *webknooppunt*
-* De host van de database is *externe databaseserver* IP-adres (of taakverdelingsmechanisme als de databaseserver geclusterd is)
-* Gebruikersnaam database is de *lokaal webknooppunt* databasegebruiker waartoe u toegang hebt verleend
+* De basis URL (die ook als *wordt bedoeld opslagadres*) specificeert hostname of IP adres van de *Webknoop*
+* De gastheer van het gegevensbestand is het *IP van de 0} verre gegevensbestandserver {adres (of ladingsverdelingsmechanisme als de gegevensbestandserver gegroepeerd is)*
+* De gebruikersbenaming van het gegevensbestand is de *lokale knoop van het Web* gegevensbestandgebruiker waaraan u toegang gaf
 * Databasewachtwoord is het wachtwoord van de gebruiker van het lokale webknooppunt
 * Databasenaam is de naam van de database op de externe server

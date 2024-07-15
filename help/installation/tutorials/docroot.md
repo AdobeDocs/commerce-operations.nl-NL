@@ -12,24 +12,24 @@ ht-degree: 0%
 
 # Documenthoofdmap wijzigen om de beveiliging te verbeteren
 
-In een standaardinstallatie met een Apache-webserver wordt Adobe Commerce geïnstalleerd in de standaardhoofdmap van het web: `/var/www/html/magento2`.
+In een standaardinstallatie met een Apache-webserver wordt Adobe Commerce geïnstalleerd als de standaardhoofdmap van het web: `/var/www/html/magento2` .
 
-De `magento2/` map bevat het volgende:
+De map `magento2/` bevat het volgende:
 
 - `pub/`
 - `setup/`
 - `var/`
 
-De aanvrage wordt betekend aan `/var/www/html/magento2/pub`. De rest van het bestandssysteem is kwetsbaar omdat het vanuit een browser toegankelijk is.
-De webroot instellen op de `pub/` voorkomt dat sitebezoekers vanuit een browser toegang krijgen tot gevoelige gebieden van het bestandssysteem.
+De toepassing wordt vanuit `/var/www/html/magento2/pub` verzonden. De rest van het bestandssysteem is kwetsbaar omdat het vanuit een browser toegankelijk is.
+Als u de webroot instelt op de map `pub/` , hebben sitebezoekers geen toegang tot gevoelige gebieden van het bestandssysteem vanuit een browser.
 
-In dit onderwerp wordt beschreven hoe u de Apache-hoofdmap op een bestaande instantie wijzigt om bestanden van de `pub/` directory, die veiliger is.
+In dit onderwerp wordt beschreven hoe u de Apache-hoofdmap van een bestaande instantie wijzigt om bestanden uit de map `pub/` te bedienen. Deze map is veiliger.
 
 ## Een opmerking over nginx
 
-Als u [nginx](../prerequisites/web-server/nginx.md) en de [`nginx.conf.sample`](https://github.com/magento/magento2/blob/2.4/nginx.conf.sample) bestand dat is opgenomen in de installatiemap, worden bestanden waarschijnlijk al verzonden vanuit de `pub/` directory.
+Als u [ nginx ](../prerequisites/web-server/nginx.md) en het [`nginx.conf.sample` ](https://github.com/magento/magento2/blob/2.4/nginx.conf.sample) dossier inbegrepen in de installatiemap gebruikt, dient u waarschijnlijk reeds dossiers van de `pub/` folder.
 
-Als u het bestand gebruikt in uw serverblok dat uw site definieert, wordt `nginx.conf.sample` de configuratie treedt de de documentmontages van uw server met voeten om dossiers van te dienen `pub/` directory. Zie bijvoorbeeld de laatste regel in de volgende configuratie:
+Wanneer de configuratie van `nginx.conf.sample` wordt gebruikt in uw serverblok dat uw site definieert, worden de hoofdmapinstellingen van uw server genegeerd om bestanden uit de map van `pub/` te bedienen. Zie bijvoorbeeld de laatste regel in de volgende configuratie:
 
 ```conf
 # /etc/nginx/sites-available/magento
@@ -60,7 +60,7 @@ Als u deze zelfstudie wilt voltooien, hebt u toegang nodig tot een werkende inst
 
 >[!NOTE]
 >
->Zie [Vereisten](../prerequisites/overview.md) en de [Installatiehandleiding](../overview.md) voor meer informatie .
+>Verwijs naar [ Eerste vereisten ](../prerequisites/overview.md) en de [ Gids van de Installatie ](../overview.md) voor meer informatie.
 
 ## 1. De serverconfiguratie bewerken
 
@@ -73,7 +73,7 @@ De naam en locatie van het virtuele hostbestand zijn afhankelijk van de versie v
    vim /etc/apache2/sites-available/000-default.conf
    ```
 
-1. Voeg het pad toe aan uw `pub/` aan de `DocumentRoot` richtlijn :
+1. Voeg het pad naar de map `pub/` toe aan de aanwijzing `DocumentRoot` :
 
    ```conf
    <VirtualHost *:80>
@@ -98,11 +98,11 @@ De naam en locatie van het virtuele hostbestand zijn afhankelijk van de versie v
 
 ## 2. Werk uw basis-URL bij
 
-Als u een mapnaam toevoegt aan de hostnaam of het IP-adres van de server om de basis-URL te maken wanneer u de toepassing hebt geïnstalleerd (bijvoorbeeld `http://192.168.33.10/magento2`), moet u deze verwijderen.
+Als u een mapnaam aan de hostnaam of het IP-adres van de server hebt toegevoegd om de basis-URL te maken wanneer u de toepassing hebt geïnstalleerd (bijvoorbeeld `http://192.168.33.10/magento2` ), moet u deze verwijderen.
 
 >[!NOTE]
 >
->Vervangen `192.168.33.10` met de hostnaam van uw server.
+>Vervang `192.168.33.10` door de hostnaam van de server.
 
 1. Meld u aan bij de database:
 
@@ -124,7 +124,7 @@ Als u een mapnaam toevoegt aan de hostnaam of het IP-adres van de server om de b
 
 ## 3. Werk het bestand env.php bij
 
-De volgende node toevoegen aan de `env.php` bestand.
+Voeg het volgende knooppunt toe aan het `env.php` -bestand.
 
 ```conf
 'directories' => [
@@ -132,16 +132,16 @@ De volgende node toevoegen aan de `env.php` bestand.
 ]
 ```
 
-Zie de [env.php reference](../../configuration/reference/config-reference-envphp.md) voor meer informatie .
+Verwijs naar de {](../../configuration/reference/config-reference-envphp.md) verwijzing 0} env.php voor meer informatie.[
 
 ## 4. Overschakelmodi
 
-[Toepassingsmodi](../../configuration/bootstrap/application-modes.md), met inbegrip van `production` en `developer`, zijn bedoeld om de veiligheid te verbeteren en de ontwikkeling te vergemakkelijken. Zoals de namen suggereren, dient u over te schakelen op `developer` modus wanneer u de toepassing uitbreidt of aanpast en schakelt naar `production` modus wanneer deze wordt uitgevoerd in een live omgeving.
+[ de wijzen van de Toepassing ](../../configuration/bootstrap/application-modes.md), die `production` en `developer` omvatten, worden ontworpen om veiligheid te verbeteren en ontwikkeling gemakkelijker te maken. Zoals de namen suggereren, moet u overschakelen op de modus `developer` wanneer u de toepassing uitbreidt of aanpast en overschakelen op de modus `production` wanneer u in een live omgeving werkt.
 
 Het schakelen tussen wijzen is een belangrijke stap om te verifiëren dat uw serverconfiguratie behoorlijk werkt. U kunt tussen wijzen schakelen gebruikend het CLI hulpmiddel:
 
 1. Ga naar de installatiemap.
-1. Overschakelen op `production` -modus.
+1. Schakel over naar de modus `production` .
 
    ```bash
    bin/magento deploy:mode:set production
@@ -152,7 +152,7 @@ Het schakelen tussen wijzen is een belangrijke stap om te verifiëren dat uw ser
    ```
 
 1. Vernieuw de browser en controleer of de winkel goed wordt weergegeven.
-1. Overschakelen op `developer` -modus.
+1. Schakel over naar de modus `developer` .
 
    ```bash
    bin/magento deploy:mode:set developer
@@ -168,16 +168,16 @@ Het schakelen tussen wijzen is een belangrijke stap om te verifiëren dat uw ser
 
 Ga naar de winkel in webbrowser om te controleren of alles werkt.
 
-1. Open een webbrowser en voer op de adresbalk de hostnaam of het IP-adres van de server in. Bijvoorbeeld: `http://192.168.33.10`.
+1. Open een webbrowser en voer op de adresbalk de hostnaam of het IP-adres van de server in. Bijvoorbeeld `http://192.168.33.10` .
 
    In de volgende afbeelding ziet u een voorbeeldwinkelpagina. Als het als volgt toont, was uw installatie een succes!
 
-   ![Storefront die een succesvolle installatie verifieert](../../assets/installation/install-success_store.png)
+   ![ Storefront die een succesvolle installatie ](../../assets/installation/install-success_store.png) verifieert
 
-   Zie de [sectie Problemen oplossen](https://support.magento.com/hc/en-us/articles/360032994352) als op de pagina een waarde van 404 wordt weergegeven (Niet gevonden) of als er geen andere elementen worden geladen, zoals afbeeldingen, CSS en JS.
+   Verwijs naar de [ het oplossen van problemensectie ](https://support.magento.com/hc/en-us/articles/360032994352) als de pagina 404 (niet Gevonden) toont of er niet in slaagt om andere activa zoals beelden, CSS, en JS te laden.
 
 1. Probeer een toepassingsmap vanuit een browser te openen. Voeg de mapnaam toe aan de hostnaam of het IP-adres van de server op de adresbalk:
 
    Als u een bericht van 404 of &quot;Toegang ontkend&quot;ziet, hebt u met succes toegang tot het dossiersysteem beperkt.
 
-   ![Toegang geweigerd](../../assets/installation/access-denied.png)
+   ![ Ontkende Toegang ](../../assets/installation/access-denied.png)

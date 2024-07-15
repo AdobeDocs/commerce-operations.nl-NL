@@ -15,7 +15,7 @@ Voor digitale implementatieprojecten is er doorgaans een gecentraliseerde teamst
 
 Het volgende diagram toont een voorbeeld van hoe de organisatiestructuur eruit zou zien:
 
-![Organisatiestructuurdiagram](../../assets/playbooks/org-structure.png)
+![ Organisatorisch structuurdiagram ](../../assets/playbooks/org-structure.png)
 
 De voordelen van deze vorm van gecentraliseerd model in een digitaal implementatieproject zijn onder meer:
 
@@ -28,4 +28,4 @@ De voordelen van deze vorm van gecentraliseerd model in een digitaal implementat
 
 Het volgende diagram toont een voorbeeld van een geadviseerde op project-gebaseerde organisatorische structuur:
 
-![Projectgebaseerd organisatiestructuurdiagram](../../assets/playbooks/org-structure-project.png)
+![ op project-Gebaseerd diagram van de organisatiestructuur ](../../assets/playbooks/org-structure-project.png)

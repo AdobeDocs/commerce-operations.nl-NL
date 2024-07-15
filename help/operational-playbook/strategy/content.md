@@ -16,7 +16,7 @@ Succesvolle marketingplannen voor inhoud via e-mail zijn niet afkomstig van brai
 
 ## Kader voor inhoudsstrategie
 
-![Stroomdiagram voor inhoudsstrategie](../../assets/playbooks/content-strategy-framework.png)
+![ diagram van het de strategiekader van de Inhoud ](../../assets/playbooks/content-strategy-framework.png)
 
 ### Preproductie
 
@@ -26,7 +26,7 @@ In deze fase begint u met de gebruiker, begrijpt u wat hij nodig heeft, ontwikke
 
 In dit stadium moet u inhoud maken. Dit omvat het creëren van inhoud, creatie, het uitgeven, activa productie, en inhoud optimalisering-toegankelijkheid, SEO, het etiketteren en classificeren, het verzekeren van outsourcing in productie, de rol van derdehulpmiddelen en technologie, en inhoudshergebruik.
 
-### Naproductie
+### Post-productie
 
 In deze fase wordt de inhoud, aanpassing en optimalisatie geëvalueerd en geëvalueerd. Dit omvat analytische evaluatie, optimalisatie, test, leren, en gebruikerservaring.
 
@@ -38,10 +38,10 @@ Of u nu elementaire webinhoud beheert of inhoud die in sociale netwerken wordt u
 
 Adobe Experience Manager combineert een aantal infrastructuren en toepassingsfuncties in één geïntegreerd pakket. Het aanbiedingsadres:
 
-- **Sites**—Maak en lever snel relevante websites en mobiele apps en werk de inhoud op elk gewenst moment bij zonder uw IT-afdeling te belasten.
-- **Activa**—Eenvoudig afbeeldingen, video&#39;s en andere middelen beheren op elk digitaal kanaal voor persoonlijke ervaringen van klanten.
-- **Gemeenschappen**—Bouw het gedijen gemeenschappen en het in dienst nemen van gesprekken over al uw sociale eigenschappen zodat kunt u nieuwe niveaus van het leren en klantenloyaliteit inspireren.
-- **Forms**—Integreer formulieren op bedrijfsniveau in uw websites en mobiele ervaringen en vereenvoudig het maken van formulieren en het voltooien van transacties.
-- **Apps**—Maak en lever mobiele apps met een oplossing die de kloof tussen marketers en IT overbrugt, zodat marketeers inhoud eenvoudig kunnen bijwerken (zelfs na introductie).
+- **plaatsen** - creeer en lever snel relevante websites en mobiele apps en werk de inhoud op om het even welk ogenblik bij zonder uw afdeling van IT te belasten.
+- **Assets** - beheert gemakkelijk beelden, video&#39;s, en andere activa over elk digitaal kanaal om gepersonaliseerde klantenervaringen te leveren.
+- **Gemeenschappen** - bouw het gedijen gemeenschappen en het in dienst nemen van gesprekken over al uw sociale eigenschappen zodat kunt u nieuwe niveaus van het leren en klantenloyaliteit inspireren.
+- **Forms** - integreer onderneming-vlakke vormen in uw websites en mobiele ervaringen en vereenvoudig de verwezenlijking van vormen en de voltooiing van transacties.
+- **Apps** - creeer en lever mobiele apps met een oplossing die het hiaat tussen marketers en IT overbrugt zodat de marketers inhoud (zelfs na lancering) gemakkelijk kunnen bijwerken.
 
-![Stroomdiagram voor inhoudsstrategie](../../assets/playbooks/content-strategy-framework2.png)
+![ diagram van het de strategiekader van de Inhoud ](../../assets/playbooks/content-strategy-framework2.png)

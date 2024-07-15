@@ -5,7 +5,7 @@ exl-id: a9ebd4a6-87b4-47b9-8ae8-72d99e1797eb
 feature: Cloud, Integration, Inventory, Orders, Security, Staging, Shipping/Delivery
 source-git-commit: 94d7a57dcd006251e8eefbdb4ec3a5e140bf43f9
 workflow-type: tm+mt
-source-wordcount: '297'
+source-wordcount: '296'
 ht-degree: 0%
 
 ---
@@ -27,7 +27,7 @@ Door inhoud met handel te vergelijken om aan de vraag van klanten naar foutloze 
 
 ## Overal probleemloos winkelen
 
-De groei van de handel wordt gevoed door de behoeften van uw klanten te dienen. Vergroot uw bereik en vergroot uw aanbod tot nieuwe kanalen, geografische gebieden en verkoop online aan zowel bedrijven als consumenten in één platform. Breng de handel naar uw klanten waar, wanneer, en hoe zij verkiezen te winkelen.
+De groei van Commerce wordt gevoed door de behoeften van uw klanten. Vergroot uw bereik en vergroot uw aanbod tot nieuwe kanalen, geografische gebieden en verkoop online aan zowel bedrijven als consumenten in één platform. Breng de handel naar uw klanten waar, wanneer, en hoe zij verkiezen te winkelen.
 
 - Mobile commerce
 - B2B-elektronische handel

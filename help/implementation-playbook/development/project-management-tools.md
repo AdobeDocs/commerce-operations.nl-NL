@@ -5,7 +5,7 @@ exl-id: 5c87d762-06ce-4716-946a-f0fe5348fa18
 feature: System
 source-git-commit: 94d7a57dcd006251e8eefbdb4ec3a5e140bf43f9
 workflow-type: tm+mt
-source-wordcount: '373'
+source-wordcount: '372'
 ht-degree: 0%
 
 ---
@@ -21,7 +21,7 @@ De volgende tabel bevat aanbevolen projectbeheertools:
 | Ticketbeheer | Atlassian JIRA |
 | SLA-beheer | Atlassian JIRA Service Management |
 | Documentbeheer | Atlassiaanse confluentie |
-| Broncodebeheer | Atlassiaanse bitmap, GitHub |
+| Source-codebeheer | Atlassiaanse bitmap, GitHub |
 | Continuous Integration (CI)/Continuous Delivery (CD) | Jenkins |
 | Communicatie | E-mail, Microsoft Teams, Telefoon, Slack |
 | Vergadering | Zoomen, Microsoft Teams |
@@ -43,7 +43,7 @@ Jira is een systeem voor het bijhouden en beheren van tickets (inclusief versie-
 - Eenvoudig tickets visualiseren en verplaatsen met Agile/Scrum
 - Transparante informatie tussen clientteam en ontwikkelingsteam
 
-## Broncodebeheer
+## Source-codebeheer
 
 Bitbucket is meer dan alleen Git-codebeheer. Bitbucket geeft teams één plaats om projecten te plannen, aan code samen te werken, te testen, en op te stellen. Met Bitbucket kunt u code-revisies efficiënter goedkeuren met pull-aanvragen. U kunt ook een samengevoegde checklist met aangewezen fiatteurs maken en discussies direct in de broncode met inline commentaren houden.
 

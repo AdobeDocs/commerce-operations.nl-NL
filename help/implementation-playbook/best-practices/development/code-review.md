@@ -3,13 +3,13 @@ title: Beste werkwijzen voor codebeoordeling
 description: Leer over code overzicht beste praktijken voor de ontwikkelingsfase van projecten van Adobe Commerce.
 feature: Best Practices
 role: Developer
-source-git-commit: 291c3f5ea3c58678c502d34c2baee71519a5c6dc
+exl-id: 1ef78bce-2e69-4c95-a26e-1bf7196ce546
+source-git-commit: 823498f041a6d12cfdedd6757499d62ac2aced3d
 workflow-type: tm+mt
-source-wordcount: '1168'
+source-wordcount: '1161'
 ht-degree: 0%
 
 ---
-
 
 # Aanbevolen procedures voor het beoordelen van code voor Adobe Commerce
 
@@ -38,7 +38,7 @@ Houd ook rekening met de volgende punten wanneer u codecontroleprocessen impleme
 
 ## Betrokken producten en versies
 
-[Alle ondersteunde versies](../../../release/versions.md) van:
+[ Alle gesteunde versies ](../../../release/versions.md) van:
 
 - Adobe Commerce over cloudinfrastructuur
 - Adobe Commerce ter plaatse
@@ -49,7 +49,7 @@ Houd ook rekening met de volgende punten wanneer u codecontroleprocessen impleme
 
 Stijl kan automatisch worden getest door de PHPStorm-inspectie uit te voeren (zie hieronder).
 
-Zorg ervoor dat u [PHPMD en PHPCS](https://developer.adobe.com/commerce/php/best-practices/phpstorm/code-inspection/) en om de [Codeerstandaard](https://github.com/magento/magento-coding-standard) van de CLI (ook hieronder). Er is wat overlapping, maar beide hebben ook unieke tests.
+Zorg ervoor om [ PHPMD en PHPCS ](https://developer.adobe.com/commerce/php/best-practices/phpstorm/code-inspection/) te vormen en het [ Norm van de Codering ](https://github.com/magento/magento-coding-standard) hulpmiddel van CLI (ook hieronder) in werking te stellen. Er is wat overlapping, maar beide hebben ook unieke tests.
 
 ### Conventie en structuur
 
@@ -69,7 +69,7 @@ De controles op volledigheid worden manueel gedaan.
 
 - Kan de code door configuratie worden in- of uitgeschakeld en gedraagt alle vereiste code zich zoals verwacht?
 - Is alle configuratie aanwezig die in het kaartje wordt vermeld? Controleer het bereik, het gegevenstype, de validatie, vertaling en standaardwaarden.
-- Wordt de configuratie altijd opgehaald op het laagst mogelijke niveau (niveau van de archiefmening, website, of globaal niveau)? De herwinning van de configuratie moet de definitie van werkingsgebied in aanpassen `system.xml` bestand.
+- Wordt de configuratie altijd opgehaald op het laagst mogelijke niveau (niveau van de archiefmening, website, of globaal niveau)? Ophalen van configuratie moet overeenkomen met de definitie van bereik in het `system.xml` -bestand.
 - Zijn alle paden in het stroomdiagram van de technische specificatie opgenomen? Zijn alle andere technische specificaties van toepassing?
 - Worden ACLs bepaald voor de nieuwe functionaliteit?
 - Zijn PhpDocs duidelijk? Wis het begaan van berichten duidelijk?
@@ -80,14 +80,14 @@ De controles op volledigheid worden manueel gedaan.
 De recensies voor prestaties worden gedaan manueel, die door code uitvoering kan worden gesteund wanneer in twijfel.
 
 - Worden query&#39;s uitgevoerd in een lus? Deze lus kan zich buiten de bewerkte bestanden bevinden.
-- Kan u elke `cachable="false"` kenmerken? Worden deze correct toegepast?
+- Kunt u `cachable="false"` kenmerken vinden? Worden deze correct toegepast?
 
 ### Beveiliging
 
 Beveiligingsbeoordelingen worden handmatig uitgevoerd, wat kan worden ondersteund door het zoeken naar tekst. Een deel van de veiligheidscontrole wordt verzorgd door geautomatiseerde tests.
 
 - Worden de uitzonderingen geregistreerd wanneer nodig? Worden de juiste soorten uitzonderingen gebruikt?
-- Kan `around` insteekmodules worden vermeden?
+- Kan `around` plug-ins worden vermeden?
 - Retourneert insteekmodules de juiste typen gegevens?
 - Kunt u om het even welke ruwe SQL vragen vinden die zouden moeten worden gebouwd gebruikend de laag van de gegevensbestandabstractie?
 - Is om het even welk nieuw type van gegevens blootgesteld aan om het even welk type van gebruiker, admin, of frontend? Is die blootstelling een veiligheidsrisico?
@@ -95,7 +95,7 @@ Beveiligingsbeoordelingen worden handmatig uitgevoerd, wat kan worden ondersteun
 
 ### Privacy en GDPR
 
-Revisies voor privacy en [GDPR](../../../security-and-compliance/privacy/gdpr.md) handmatig worden uitgevoerd.
+De recensies voor privacy en [ GDPR ](../../../security-and-compliance/privacy/gdpr.md) worden gedaan manueel.
 
 - Verwerkt de code klantgegevens of e-mails? Let vooral op.
 - Als deze code in een lijn kan worden uitgevoerd, kan het klantengegevens van één luscyclus aan een andere lekken?
@@ -131,19 +131,19 @@ De ontwikkelaars kunnen automatisering gebruiken om de compilatie van DI, gegeve
   bin/magento deploy:mode:set developer || exit;
   ```
 
-- Databaseschema `whitelist.json`—stel het volgende CLI bevel in werking en bevestig dat `db_schema_whitelist.json` wordt niet toegevoegd of gewijzigd.
+- Databaseschema `whitelist.json` - Voer de volgende CLI-opdracht uit en controleer of het `db_schema_whitelist.json` -bestand niet is toegevoegd of gewijzigd.
 
   ```bash
   bin/magento setup:db-declaration:generate-whitelist --module-name[=MODULE-NAME]
   ```
 
-- Composer valideren—Valideer het `composer.json` dossier door het volgende CLI bevel in de folder in werking te stellen die het bevat `composer.json` bestand.
+- Composer valideert - Valideer het `composer.json` dossier door het volgende CLI bevel in de folder in werking te stellen die het `composer.json` dossier bevat.
 
   ```bash
   composer validate
   ```
 
-- Codering standaard—Installeer en voer het gereedschap Coderingsstandaard uit en voer dit uit op de module. In het volgende bestand ziet u hoe u het mogelijk maakt om het bestand overal te gebruiken `mcs ./app/code/Vendor/Module/`.
+- Codering standaard—Installeer en voer het gereedschap Coderingsstandaard uit en voer dit uit op de module. In het volgende bestand ziet u hoe u kunt instellen dat het bestand overal kan worden uitgevoerd door `mcs ./app/code/Vendor/Module/` te typen.
 
   ```bash
   #!/usr/bin/env bash

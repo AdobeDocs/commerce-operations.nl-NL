@@ -6,7 +6,7 @@ feature: Integration, Cache
 topic: Commerce, Performance
 source-git-commit: 76ccc5aa8e5e3358dc52a88222fd0da7c4eb9ccb
 workflow-type: tm+mt
-source-wordcount: '1143'
+source-wordcount: '1142'
 ht-degree: 0%
 
 ---
@@ -19,13 +19,14 @@ Om de vertragingen tussen de AEM uitgever en Adobe Commerce GraphQL bij het bouw
 
 ## GraphQL caching in Adobe Commerce
 
-Wanneer de browser of AEM uitgever van de gebruiker Adobe Commerce GraphQL roept, zullen bepaalde vraag in het voorgeheugen ondergebracht in Fastly worden. De vragen die in het voorgeheugen worden opgeslagen zijn over het algemeen die die niet persoonlijke gegevens bevatten en zullen waarschijnlijk niet vaak veranderen. Dit zijn bijvoorbeeld: categorieën, categoryList en producten. Die die uitdrukkelijk niet in de cache worden geplaatst zijn die die regelmatig veranderen en als caching risico&#39;s voor persoonlijke gegevens en plaatsverrichtingen zoals vragen zoals winkelwagentje en customerPaymentTokens zou kunnen veroorzaken.
+Wanneer de browser of AEM uitgever van de gebruiker Adobe Commerce GraphQL roept, zullen bepaalde vraag in het voorgeheugen onder worden gebracht
+in Fastly. De vragen die in het voorgeheugen worden opgeslagen zijn over het algemeen die die niet persoonlijke gegevens bevatten en zullen waarschijnlijk niet vaak veranderen. Dit zijn bijvoorbeeld: categorieën, categoryList en producten. Die die uitdrukkelijk niet in de cache worden geplaatst zijn die die regelmatig veranderen en als caching risico&#39;s voor persoonlijke gegevens en plaatsverrichtingen zoals vragen zoals winkelwagentje en customerPaymentTokens zou kunnen veroorzaken.
 
 GraphQL staat u toe om veelvoudige vragen in één enkele vraag te maken. Het is belangrijk om op te merken dat als u zelfs één vraag specificeert die Adobe Commerce niet met vele anderen in het voorgeheugen onderbrengt die niet cacheable zijn, Adobe Commerce het geheime voorgeheugen voor alle vragen in de vraag zal omzeilen. Dit zou door ontwikkelaars moeten worden overwogen wanneer het combineren van veelvoudige vragen om ervoor te zorgen potentieel cacheable vragen niet per ongeluk worden overgeslagen‡.
 
 >[!NOTE]
 >
-> Meer informatie over cacheable en niet cacheable vragen, zie de Adobe Commerce [ontwikkelaarsdocumentatie](https://devdocs.magento.com/guides/v2.4/graphql/caching.html).
+> De verdere informatie over cacheable en niet-cacheable vragen, zie de [ de ontwikkelaarsdocumentatie van Adobe Commerce ](https://devdocs.magento.com/guides/v2.4/graphql/caching.html).
 
 ## Vlakke tabel met catalogi
 
@@ -41,9 +42,9 @@ De snelle oorsprongsbeveiliging kan worden ingeschakeld in uw Adobe Commerce-beh
 
 Als de functie Afbeelding snel afschermen is ingeschakeld, kunt u de functie Afbeelding snel optimaliseren ook activeren. Wanneer afbeeldingen uit productcatalogi op Adobe Commerce worden opgeslagen, biedt deze service de mogelijkheid om alle hulpbronnenintensieve verwerking van afbeeldingen in productcatalogi snel en van Adobe Commerce af te voeren. De responstijden van de eindgebruiker zijn ook beter voor de laadtijden van de pagina, aangezien afbeeldingen worden getransformeerd op de randlocatie, waardoor latentie wordt voorkomen doordat het aantal aanvragen wordt teruggebracht naar de Adobe Commerce-oorsprong.
 
-U kunt de functie voor het snel optimaliseren van afbeeldingen inschakelen door de functie voor het snel optimaliseren van afbeeldingen in de beheerdersconfiguratie in te schakelen, maar alleen nadat het oorspronkelijke schild is geactiveerd. Meer informatie over configuraties voor de snelste optimalisatie van afbeeldingen is beschikbaar in de Adobe Commerce [ontwikkelaarsdocumentatie](https://devdocs.magento.com/cloud/cdn/fastly-image-optimization.html).
+U kunt de functie voor het snel optimaliseren van afbeeldingen inschakelen door de functie voor het snel optimaliseren van afbeeldingen in de beheerdersconfiguratie in te schakelen, maar alleen nadat het oorspronkelijke schild is geactiveerd. Meer details op configuraties voor de Snelle optimalisering van het Beeld zijn beschikbaar in de Adobe Commerce [ ontwikkelaarsdocumentatie ](https://devdocs.magento.com/cloud/cdn/fastly-image-optimization.html).
 
-![Screenshot van de instellingen voor snelle optimalisatie van afbeeldingen in Adobe Commerce Admin](../assets/commerce-at-scale/image-optimization.svg)
+![ Schermafbeelding van de Snelle instellingen voor beeldoptimalisatie in Adobe Commerce Admin ](../assets/commerce-at-scale/image-optimization.svg)
 
 ## Ongebruikte modules uitschakelen
 
@@ -57,7 +58,7 @@ Als de instantie van Adobe Commerce extreme lading verwacht, dan zal het activer
 
 Als richtlijn geldt dat in omgevingen met normale belasting, bij het inschakelen van Slave Connections de prestaties met 10-15% afnemen. Maar in clusters met een zware belasting en veel verkeer is er een prestatieverhoging van ongeveer 10-15%. Daarom is het belangrijk om test uw milieu met verwachte verkeersniveaus te laden om te beoordelen of dit het plaatsen voor uw prestatiestijden onder lading nuttig zou zijn.
 
-Om slave-verbindingen voor mysql in/uit te schakelen en opnieuw te beginnen moet u uw `.magento.env.yaml` bestand dat het volgende bevat:
+Als u slave-verbindingen voor mysql en opnieuw wilt in-/uitschakelen, moet u het `.magento.env.yaml` -bestand bewerken en de volgende elementen toevoegen:
 
 ```
 stage:

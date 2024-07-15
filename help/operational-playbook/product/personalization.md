@@ -1,5 +1,5 @@
 ---
-title: Personalisatie
+title: Personalization
 description: Leer over het soort ervaring die de verpersoonlijking uw klanten zou moeten verstrekken.
 exl-id: ea829c53-1f98-4e23-90ee-5424a4ef0324
 feature: Best Practices, Personalization
@@ -10,11 +10,11 @@ ht-degree: 0%
 
 ---
 
-# Personalisatie
+# Personalization
 
-De basislijn van de bedrijfstoename van de e-commerce is klantenloyaliteit. Het houden van de klanten gelukkig is een combinatie van vele factoren van producten, inhoud, kassa, klant, en de dienstervaring. Personalisatie is afhankelijk van AI, die klantgegevens in real-time bijhoudt en een unieke, gepersonaliseerde ervaring biedt. Personalisatie werkt mogelijk niet voor alle typen bedrijven, maar het is een extra functie die verkeer naar uw site kan helpen sturen.
+De basislijn van de bedrijfstoename van de e-commerce is klantenloyaliteit. Het houden van de klanten gelukkig is een combinatie van vele factoren van producten, inhoud, kassa, klant, en de dienstervaring. Personalization is afhankelijk van AI, die de klantgegevens in real-time bijhoudt en een unieke, gepersonaliseerde ervaring biedt. Personalization werkt mogelijk niet voor alle typen bedrijven, maar het is een extra functie die u kan helpen om verkeer naar uw site te sturen.
 
-Personalisatie dient onder meer te omvatten:
+Personalization moet het volgende omvatten:
 
 - Voldoen aan de behoeften van de klant
 
@@ -26,22 +26,22 @@ Personalisatie dient onder meer te omvatten:
 
 Voorbeelden van personalisatie zijn:
 
-- **Belang van de klant**—Website en navigatie wijzigen op basis van het profiel van de klant. Als een gebruiker bijvoorbeeld de site eerder heeft bezocht en de sectie Vrouwen heeft doorzocht, navigeert hij de volgende keer dat hij of zij de URL invoert naar de homepage van de vrouw.
+- **de rente van de Klant** - Veranderende homepage en navigatie die op klantenprofiel wordt gebaseerd. Als een gebruiker bijvoorbeeld de site eerder heeft bezocht en de sectie Vrouwen heeft doorzocht, navigeert hij de volgende keer dat hij of zij de URL invoert naar de homepage van de vrouw.
 
-- **Aanbevolen producten**—Aanbevolen producten op basis van het browsergedrag van klanten.
+- **geadviseerde producten** - adviseer producten die op de klanten het doorbladeren gedrag worden gebaseerd.
 
-- **Zoeken**—Geef gepersonaliseerde zoekresultaten weer op basis van een vorig zoekgedrag van klanten.
+- **Onderzoek** - de Vertoning gepersonaliseerde onderzoeksresultaten die op een klanten vorig onderzoeksgedrag worden gebaseerd.
 
-- **E-mail**—Stuur gepersonaliseerde e-mails over producten als een klant het artikel in zijn winkelwagentje heeft verlaten, of als het product uit voorraad was een bericht wanneer het weer in voorraad is.
+- **E-mail** - verzend gepersonaliseerde e-mail over producten als een klant het punt in hun kar heeft verlaten, of als het product uit voorraad een bericht verzendt wanneer het terug in voorraad is.
 
-- **Geo-locatie**—Meerdere geo-locaties voor de site weergeven. Bijvoorbeeld, bezoekt een klant de plaats van AU, maar de de plaatsoptie van de V.S. wordt ook getoond om de klant een keus te geven.
+- **Geo-plaats** - die veelvoudige geo-plaatsen voor de plaats tonen. Bijvoorbeeld, bezoekt een klant de plaats van AU, maar de de plaatsoptie van de V.S. wordt ook getoond om de klant een keus te geven.
 
-- **Korting**—Specifieke categorierentekortcodes weergeven om producten van een bepaalde categorie te promoten.
+- **de code van de Korting** - de specifieke codes van de categoriekorting van de vertoning om producten van een bepaalde categorie te bevorderen.
 
-- **Aanvullende producten**—Aanvullende producten weergeven wanneer de klant een product bezoekt. Een klant bekijkt bijvoorbeeld een jurk en kan gratis producten zoals schoenen, tassen en accessoires die bij de jurk horen, bekijken.
+- **Complementaire producten** - toon complementaire producten wanneer de klant een product bezoekt. Een klant bekijkt bijvoorbeeld een jurk en kan gratis producten zoals schoenen, tassen en accessoires die bij de jurk horen, bekijken.
 
-- **Persoonlijke homepage**—Geef een gepersonaliseerde homepage weer zodat een geregistreerde gebruiker zich speciaal voelt.
+- **Gepersonaliseerde homepage** - Vertoning een gepersonaliseerde homepage voor een geregistreerde gebruiker om hen te maken zich speciaal voelen.
 
-![Voorbeeld van gepersonaliseerde producten](../../assets/playbooks/personalization-example.png)
+![ Voorbeeld van gepersonaliseerde producten ](../../assets/playbooks/personalization-example.png)
 
 Dit zijn slechts een paar voorbeelden van personalisatie. Er zijn ontelbare meer eigenschappen en mogelijkheden die volgens de vereisten van de zaken kunnen worden onderzocht. Het bijhouden van voortdurend veranderende markttendensen kan moeilijk zijn, maar het helpt algemene klantenervaring verbeteren.

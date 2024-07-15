@@ -17,7 +17,7 @@ De gegevens van de steekproef verstrekken een opslag die op het thema van de Lum
 >
 >Om gegevensbestand en diverse eigenschappen te herzien en te analyseren, overweeg gebruikend echte gegevens in plaats van steekproefgegevens. De gegevens van de steekproef worden ontworpen als pre-geproduceerde opslagsimulatie, om themaontwerp en basisstorefront gedrag aan te tonen. Alle entiteiten met voorbeeldgegevens worden rechtstreeks in de databasetabellen geschreven, terwijl voorbeeldgegevens worden geïnstalleerd.
 
-U kunt voorbeeldgegevens installeren voor of na de installatie van de Commerce-software. Wanneer u klaar bent met de voorbeeldgegevens, kunt u deze verwijderen of de gegevens op de nieuwe manier installeren, zoals beschreven in [Voorbeeldgegevensmodules verwijderen of voorbeeldgegevens bijwerken](remove-or-update.md).
+U kunt voorbeeldgegevens installeren voor of na de installatie van de Commerce-software. Wanneer u met de steekproefgegevens wordt gedaan, kunt u of het verwijderen of u kunt het zoals die in [ wordt besproken installeren verwijderen de modules van steekproefgegevens of de gegevens van de updatemonster ](remove-or-update.md).
 
 >[!WARNING]
 >
@@ -27,5 +27,5 @@ U kunt optionele voorbeeldgegevens op een van de volgende manieren installeren:
 
 | Installatiemethode | Beschrijving | Vereist vaardigheidsniveau |
 |--- |--- |--- |
-| Composer gebruiken | [Uitvoeren `magento sampledata:deploy` om de hoofdmap van de toepassing te wijzigen `composer.json`](composer-packages.md) steekproefgegevensmodules in te schakelen. | Hiervoor is Composer-kennis en toegang tot het Commerce-bestandssysteem vereist. |
-| Bewaarruimten klonen | [Clone the GitHub repository](git-repositories.md) en de gegevensopslagplaats van de steekproef, dan verbind hen samen. | Alleen voor bijdragende ontwikkelaars. Iedereen anders zou één van de voorafgaande methodes moeten gebruiken. |
+| Composer gebruiken | [ Looppas `magento sampledata:deploy` om de wortel van de toepassing te wijzigen `composer.json`](composer-packages.md) om de modules van steekproefgegevens toe te laten. | Hiervoor is Composer-kennis en toegang tot het Commerce-bestandssysteem vereist. |
+| Bewaarruimten klonen | [ kloon de bewaarplaats GitHub ](git-repositories.md) en de bewaarplaats van steekproefgegevens, dan verbind hen samen. | Alleen voor bijdragende ontwikkelaars. Iedereen anders zou één van de voorafgaande methodes moeten gebruiken. |

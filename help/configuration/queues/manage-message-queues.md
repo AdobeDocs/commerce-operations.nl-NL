@@ -4,7 +4,7 @@ description: Leer hoe u berichtrijen van de bevellijn voor Adobe Commerce kunt b
 exl-id: 619e5df1-39cb-49b6-b636-618b12682d32
 source-git-commit: 8dce1f1e961ec02d7783a7423a51a7d4567dce79
 workflow-type: tm+mt
-source-wordcount: '417'
+source-wordcount: '387'
 ht-degree: 0%
 
 ---
@@ -15,9 +15,9 @@ U kunt berichtrijen van de bevellijn beheren gebruikend kroonbanen of een extern
 
 ## Procesbeheer
 
-Cron jobs zijn het standaardmechanisme om consumenten opnieuw op te starten. Processen gestart door `cron` consume het gespecificeerde aantal berichten en eindig dan. Herbergen `cron` start de consument opnieuw op.
+Cron jobs zijn het standaardmechanisme om consumenten opnieuw op te starten. Processen die door `cron` worden gestart, verbruiken het opgegeven aantal berichten en eindigen vervolgens. Als u `cron` opnieuw uitvoert, wordt de gebruiker opnieuw gestart.
 
-In het volgende voorbeeld wordt het `crontab` configuratie voor het runnen van consumenten:
+In het volgende voorbeeld wordt de `crontab` -configuratie getoond voor het uitvoeren van consumenten:
 
 > /app/code/Magento/MessageQueue/etc/crontab.xml
 
@@ -31,29 +31,29 @@ In het volgende voorbeeld wordt het `crontab` configuratie voor het runnen van c
 
 >[!INFO]
 >
->Hoe vaak u berichtrijen controleert kan van uw bedrijfslogica en beschikbare systeemmiddelen afhangen. Over het algemeen wilt u wellicht meer controleren op nieuwe klanten en welkomste-mails verzenden dan een proces dat veel resources vergt, zoals het bijwerken van uw catalogus. U moet `cron` programma&#39;s volgens uw bedrijfsbehoeften.
+>Hoe vaak u berichtrijen controleert kan van uw bedrijfslogica en beschikbare systeemmiddelen afhangen. Over het algemeen wilt u wellicht meer controleren op nieuwe klanten en welkomste-mails verzenden dan een proces dat veel resources vergt, zoals het bijwerken van uw catalogus. U moet `cron` planningen definiëren op basis van uw bedrijfsbehoeften.
 >
 >U kunt deze configuratie configureren in de beheerwinkels > Instellingen > Configuratie > Geavanceerd > Systeem > Cron-configuratieopties voor de groep: consumenten.
 >
->Zie [Uitsnede configureren en uitvoeren](../cli/configure-cron-jobs.md) voor meer informatie over het gebruik `cron` met Commerce.
+>Zie [ uitsnede ](../cli/configure-cron-jobs.md) voor meer informatie vormen en in werking stellen over het gebruiken van `cron` met Commerce.
 
-U kunt ook procesbeheer gebruiken, zoals [Toezichthouder](https://supervisord.readthedocs.io/en/latest/) de status van processen te controleren. De manager kan de bevellijn gebruiken om de processen opnieuw te beginnen zoals nodig.
+U kunt een procesmanager zoals [ Supervisor ](https://supervisord.readthedocs.io/en/latest/) ook gebruiken om het statuut van processen te controleren. De manager kan de bevellijn gebruiken om de processen opnieuw te beginnen zoals nodig.
 
 ## Configuratie
 
 ### Gedrag standaard
 
 - Uitsnijdtaak `consumers_runner` is ingeschakeld
-- Uitsnijdtaak `consumers_runner` alle gedefinieerde consumenten
+- Uitsnijdtaak `consumers_runner` voert alle gedefinieerde consumenten uit
 - Elke consument verwerkt 10000 berichten en eindigt dan
 
 >[!INFO]
 >
->Als uw Adobe Commerce-winkel op het Cloud-platform wordt gehost, gebruikt u de [`CRON_CONSUMERS_RUNNER`](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure/env/stage/variables-deploy.html#cron_consumers_runner) om het `consumers_runner` snijtaak.
+>Als uw Adobe Commerce-winkel op het Cloud-platform wordt gehost, gebruikt u [`CRON_CONSUMERS_RUNNER` ](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure/env/stage/variables-deploy.html#cron_consumers_runner) om de `consumers_runner` cron-taak te configureren.
 
 ### Specifieke configuratie
 
-Bewerk de `/app/etc/env.php` bestand om de uitsnijdtaak te configureren `consumers_runner`.
+Bewerk het bestand `/app/etc/env.php` om de uitsnijdtaak te configureren `consumers_runner` .
 
 ```php
 ...
@@ -71,17 +71,17 @@ Bewerk de `/app/etc/env.php` bestand om de uitsnijdtaak te configureren `consume
 ...
 ```
 
-- `cron_run` - Een Booleaanse waarde die de `consumers_runner` uitsnijdtaak (standaard = `true`).
-- `max_messages` - Het maximumaantal berichten dat elke consument moet verwerken voordat deze wordt beëindigd (standaardwaarde = `10000`). Hoewel wij het niet adviseren, kunt u 0 gebruiken om de consument te verhinderen te eindigen. Zie [`consumers_wait_for_messages`](../reference/config-reference-envphp.md#consumerswaitformessages) om te vormen hoe de consumenten berichten van de berichtrij verwerken.
-- `consumers` - Een array van tekenreeksen die aangeven welke consumenten moeten worden uitgevoerd. Een lege array wordt uitgevoerd *alles* consumenten.
-- `multiple_processes` - Een array van sleutelwaardeparen die aangeven welke consument moet werken in hoeveel processen. Ondersteund in Commerce 2.4.4 of hoger.
+- `cron_run` - Een Booleaanse waarde die de `consumers_runner` cron-taak in- of uitschakelt (standaardwaarde = `true` ).
+- `max_messages` - Het maximum aantal berichten dat elke consument moet verwerken voordat deze wordt beëindigd (standaardwaarde = `10000` ). Hoewel wij het niet adviseren, kunt u 0 gebruiken om de consument te verhinderen te eindigen. Zie [`consumers_wait_for_messages`](../reference/config-reference-envphp.md#consumerswaitformessages) om te vormen hoe de consumenten berichten van de berichtrij verwerken.
+- `consumers` - Een array van tekenreeksen die aangeven welke consumenten moeten worden uitgevoerd. Een lege serie stelt *alle* consumenten in werking.
+- `multiple_processes` - Een array van sleutelwaardeparen die aangeven welke consument moet worden uitgevoerd in hoeveel processen. Ondersteund in Commerce 2.4.4 of hoger.
 
   >[!INFO]
   >
-  >Het wordt niet geadviseerd om veelvoudige consumenten op een MySQL-Bediende rij in werking te stellen. Zie [Berichtwachtrij wijzigen van MySQL in AMQP](https://developer.adobe.com/commerce/php/development/components/message-queues/#change-message-queue-from-mysql-to-amqp) voor meer informatie .
+  >Het wordt niet geadviseerd om veelvoudige consumenten op een MySQL-Bediende rij in werking te stellen. Zie [ het berichtrij van de Verandering van MySQL aan AMQP ](https://developer.adobe.com/commerce/php/development/components/message-queues/#change-message-queue-from-mysql-to-amqp) voor meer informatie.
 
   >[!INFO]
   >
-  >Als uw Adobe Commerce-winkel op het Cloud-platform wordt gehost, gebruikt u de [`CONSUMERS_WAIT_FOR_MAX_MESSAGES`](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure/env/stage/variables-deploy.html#consumers_wait_for_max_messages) om te vormen hoe de consumenten berichten van de berichtrij verwerken.
+  >Als uw opslag van Adobe Commerce op het platform van de Wolk wordt ontvangen, gebruik [`CONSUMERS_WAIT_FOR_MAX_MESSAGES` ](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure/env/stage/variables-deploy.html#consumers_wait_for_max_messages) om te vormen hoe de consumenten berichten van de berichtrij verwerken.
 
-Zie [Gebruikers in de wachtrij met berichten starten](../cli/start-message-queues.md).
+Zie [ de gebruikers van de het berichtrij van het Begin ](../cli/start-message-queues.md).

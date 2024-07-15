@@ -13,4 +13,4 @@ ht-degree: 0%
 
 Het DACI-model is een kader voor projectbeheer dat wordt gebruikt om de rollen en verantwoordelijkheden van verschillende belanghebbenden bij een project duidelijk te omschrijven, wat leidt tot effectieve en efficiënte groepsbeslissingen. DACI staat voor Driver, Approver, Contributor en Informed. Deze rollen maken duidelijk wie autoriteit heeft op bepaalde gebieden en situaties, waardoor een project soepel kan verlopen.
 
-![DACI-projectbeheerdiagram](../../assets/playbooks/daci-model.png)
+![ DACI het diagram van het projectbeheer ](../../assets/playbooks/daci-model.png)

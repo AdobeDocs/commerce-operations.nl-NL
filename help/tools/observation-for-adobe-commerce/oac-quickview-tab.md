@@ -1,6 +1,6 @@
 ---
-title: De [!DNL QuickView] tab
-description: De [!DNL QuickView] tabblad geeft uitleg over de verschillende soorten waarschuwingen die u kunt zien, waaronder die op een laag schijfruimte en servergebruik.
+title: Het  [!DNL QuickView]  lusje
+description: Het  [!DNL QuickView]  lusje verklaart de verschillende waakzame types u met inbegrip van die op laag schijftempo en servergebruik kunt zien.
 exl-id: 34405f9b-30de-4fab-acca-64a8e308ca90
 feature: Configuration, Observability
 source-git-commit: e83e2359377f03506178c28f8b30993c172282c7
@@ -10,24 +10,24 @@ ht-degree: 0%
 
 ---
 
-# De [!DNL QuickView] tab
+# Het tabblad [!DNL QuickView]
 
-De **[!UICONTROL QuickView]** tabblad geeft uitleg over de verschillende soorten waarschuwingen die u kunt zien, waaronder die op een laag schijfruimte en servergebruik. Verder worden de frames van het tabblad beschreven.
+Op het tabblad **[!UICONTROL QuickView]** worden de verschillende waarschuwingstypen beschreven die u ziet, zoals de typen met een laag schijftempo en servergebruik. Verder worden de frames van het tabblad beschreven.
 
 ## [!UICONTROL Alerts]
 
-![Waarschuwingen](../../assets/tools/observation-for-adobe-commerce/quickview_alerts.jpg)
+![ Alarm ](../../assets/tools/observation-for-adobe-commerce/quickview_alerts.jpg)
 
-De **[!UICONTROL Alerts]** frame bevat verschillende waarschuwingen, zoals waarschuwingen over schijfruimte en waarschuwingen over servergebruik tijdens een geselecteerd tijdsbestek. In dit frame worden databasetabelbewerkingen weergegeven, waaronder `SELECT`, `DELETE`, en `UPDATE` over een geselecteerd tijdkader.
+In het frame **[!UICONTROL Alerts]** worden verschillende waarschuwingen weergegeven, zoals waarschuwingen over schijfruimte en waarschuwingen over servergebruik tijdens een geselecteerd tijdsbestek. In dit frame worden tabelbewerkingen met de database `SELECT` , `DELETE` en `UPDATE` gedurende een geselecteerd tijdsbestek bekeken.
 
 ## [!UICONTROL Upsize / Downsize by node]
 
-![Upsize/Downsize per knoop](../../assets/tools/observation-for-adobe-commerce/quickview_upsize_by_node.jpg)
+![ Upsize/Downsize door knoop ](../../assets/tools/observation-for-adobe-commerce/quickview_upsize_by_node.jpg)
 
-De **[!UICONTROL Upsize / Downsize by node]** frame toont de upgrootten en downgrootten per knooppunt over een geselecteerd tijdframe. Dit wordt gebruikt om te beoordelen of er een verandering in clustergrootte tijdens de geselecteerde tijdspanne was.
+In het frame **[!UICONTROL Upsize / Downsize by node]** worden de upgrootten en downgrootten per knooppunt over een geselecteerd tijdframe weergegeven. Dit wordt gebruikt om te beoordelen of er een verandering in clustergrootte tijdens de geselecteerde tijdspanne was.
 
 ## [!UICONTROL CPU Utilization]
 
-![CPU-gebruik](../../assets/tools/observation-for-adobe-commerce/quickview_cpu.jpg)
+![ Gebruik van cpu ](../../assets/tools/observation-for-adobe-commerce/quickview_cpu.jpg)
 
-De **[!UICONTROL CPU Utilization]** frame geeft CPU-gebruik door knooppunten in de geselecteerde tijdlijn weer.
+In het frame **[!UICONTROL CPU Utilization]** wordt het CPU-gebruik door knooppunten over de geselecteerde tijdlijn weergegeven.

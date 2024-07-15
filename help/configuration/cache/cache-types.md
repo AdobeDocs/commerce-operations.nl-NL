@@ -5,7 +5,7 @@ feature: Configuration, Cache
 exl-id: 67d4ba06-b48b-4e1a-a7a8-9830490dfe3d
 source-git-commit: a2bd4139aac1044e7e5ca8fcf2114b7f7e9e9b68
 workflow-type: tm+mt
-source-wordcount: '271'
+source-wordcount: '262'
 ht-degree: 0%
 
 ---
@@ -16,15 +16,15 @@ De volgende stappen lopen door het associëren van geheim voorste voorkant van h
 
 ## Stap 1: Definieer een voorkant van een cache
 
-De aanvraag voor de handel bevat een `default` cachefront dat u kunt gebruiken voor elke [cachetype](../cli/manage-cache.md#clean-and-flush-cache-types). In deze sectie wordt beschreven hoe u desgewenst een voorkant van een cache met een andere naam kunt definiëren. Dit is aan te raden als u uw voorkant wilt aanpassen.
+De toepassing van Commerce heeft a `default` geheim voorfront dat u voor om het even welk [ geheim voorgeheugentype ](../cli/manage-cache.md#clean-and-flush-cache-types) kunt gebruiken. In deze sectie wordt beschreven hoe u desgewenst een voorkant van een cache met een andere naam kunt definiëren. Dit is aan te raden als u uw voorkant wilt aanpassen.
 
 >[!INFO]
 >
->Als u de opdracht `default` cachetype, hoeft u niet te wijzigen `env.php` überhaupt; u wijzigt de wereldwijde handel `di.xml`. Zie [Cacheopties op laag niveau](cache-options.md).
+>Als u het cachetype `default` wilt gebruiken, hoeft u `env.php` helemaal niet te wijzigen. U wijzigt Commerce global `di.xml` . Zie [ laag-vlakke geheim voorgeheugenopties ](cache-options.md).
 
-U moet een aangepaste voorzijde voor de cache opgeven of `app/etc/env.php` of de wereldwijde handel `app/etc/di.xml`.
+U moet een aangepaste cachevoorzijde opgeven `app/etc/env.php` of Commerce global `app/etc/di.xml` .
 
-In het volgende voorbeeld wordt getoond hoe u dit kunt definiëren in het dialoogvenster `env.php` bestand, dat het `di.xml` bestand:
+In het volgende voorbeeld wordt getoond hoe u dit kunt definiëren in het `env.php` -bestand, dat het `di.xml` -bestand overschrijft:
 
 ```php?start_inline=1
 'cache' => [
@@ -46,11 +46,11 @@ In het volgende voorbeeld wordt getoond hoe u dit kunt definiëren in het dialoo
 ],
 ```
 
-Wanneer `<unique frontend id>` is een unieke naam om uw voorzijde te identificeren en `<cache options>` zijn opties besproken in de onderwerpen specifiek voor elk type van caching (gegevensbestand, Redis, etc.).
+Waar `<unique frontend id>` een unieke naam is om uw voorzijde te identificeren en `<cache options>` zijn opties die worden besproken in de onderwerpen die specifiek zijn voor elk type caching (database, Redis, enzovoort).
 
 ## Stap 2: Vorm het geheime voorgeheugen
 
-U kunt de opties voor de configuratie van de front- en back-end cache opgeven in `env.php` of `di.xml`. Deze taak is optioneel.
+U kunt de configuratieopties voor de voorste cache en de achterste cache opgeven in `env.php` of `di.xml` . Deze taak is optioneel.
 
 `env.php` voorbeeld:
 
@@ -69,11 +69,11 @@ U kunt de opties voor de configuratie van de front- en back-end cache opgeven in
 
 waar
 
-- `<frontend_type>` is het front-end cachetype op laag niveau. Geef de naam op van een klasse die compatibel is met `Zend\Cache\Core`.
-Als u weglaat `<frontend_type>`, [Magento\Framework\Cache\Core](https://github.com/magento/magento2/blob/2.4/lib/internal/Magento/Framework/Cache/Core.php) wordt gebruikt.
+- `<frontend_type>` is het cachetype op laag niveau frontend. Geef de naam op van een klasse die compatibel is met `Zend\Cache\Core` .
+Als u `<frontend_type>` weglaat, [ Magento\Framework\Cache\Core ](https://github.com/magento/magento2/blob/2.4/lib/internal/Magento/Framework/Cache/Core.php) wordt gebruikt.
 
-- `<frontend_option>`, `<frontend_option_value>` Dit zijn de naam en waarde van opties die het kader van de Handel als associatieve serie aan het frontend geheime voorgeheugen op zijn verwezenlijking overgaat.
-- `<backend_type>` is het achterste cachetype op laag niveau. Geef de naam op van een klasse die compatibel is met `Zend_Cache_Backend` en dat `Zend_Cache_Backend_Interface`.
-- `<backend_option>` en `<backend_option_value>` Dit zijn de naam en waarde van opties die het kader van de Handel als associatieve serie aan achterste voorgeheugen op zijn verwezenlijking overgaat.
+- `<frontend_option>` is `<frontend_option_value>` de naam en waarde van de opties die het Commerce-framework na het maken als een associatieve array doorgeeft aan de frontend-cache.
+- `<backend_type>` is het lage type achterste cache. Geef de naam op van een klasse die compatibel is met `Zend_Cache_Backend` en die `Zend_Cache_Backend_Interface` implementeert.
+- `<backend_option>` en `<backend_option_value>` zijn de naam en waarde van de opties die het Commerce-framework na het maken doorgeeft als een associatieve array om cache op te slaan als back-end.
 
-Zie de [Documentatie Laminas](https://docs.laminas.dev/) voor de meest recente informatie van Zend.
+Zie de [ documentatie van Laminas ](https://docs.laminas.dev/) voor de recentste informatie van het Gebied.

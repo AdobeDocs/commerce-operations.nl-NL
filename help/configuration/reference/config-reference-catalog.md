@@ -5,22 +5,22 @@ feature: Configuration, Catalog Management
 exl-id: 19451443-228e-437d-a3eb-7dc968b9fb0d
 source-git-commit: df8878a3fea19b8f1780b5037273e18b5a3f1373
 workflow-type: tm+mt
-source-wordcount: '814'
+source-wordcount: '815'
 ht-degree: 0%
 
 ---
 
 # Verwijzing naar catalogusconfiguratiepaden
 
-In deze sectie worden de namen van variabelen en configuratiepaden weergegeven die beschikbaar zijn voor opties in de beheerdersruimte onder **Winkels** > Instellingen > **Configuratie** > **Catalogus**.
+Deze sectie maakt een lijst van veranderlijke namen en config wegen beschikbaar voor opties in Admin onder **Slaat** > Montages > **Configuratie** > **Catalogus** op.
 
-De [`magento app:config:dump` command](../cli/export-configuration.md) deze waarden naar het gedeelde configuratiebestand schrijft, `app/etc/config.php`, die onder broncontrole moeten staan. Om naar keuze om het even welke configuratiemontages met voeten te treden of gevoelige montages te plaatsen, zie [Omgevingsvariabelen gebruiken om configuratie-instellingen te overschrijven](override-config-settings.md#environment-variables). Dit onderwerp doet het _niet_ list [gevoelige en systeemspecifieke waarden](config-reference-sens.md).
+Het [`magento app:config:dump` bevel ](../cli/export-configuration.md) schrijft deze waarden aan het gedeelde configuratiedossier, `app/etc/config.php`, dat in broncontrole zou moeten zijn. Om naar keuze om het even welke configuratiemontages met voeten te treden of gevoelige montages te plaatsen, zie [ de milieuvariabelen van het Gebruik om configuratiemontages ](override-config-settings.md#environment-variables) met voeten te treden. Dit onderwerp __ lijst [ niet gevoelige en systeem-specifieke waarden ](config-reference-sens.md).
 
 ## Cataloguspaden
 
-Deze configuratiewaarden zijn beschikbaar in de Admin in **Winkels** > Instellingen > **Configuratie** > **Catalogus** > **Catalogus**.
+Deze configuratiewaarden zijn beschikbaar in Admin in **Slaat** > Montages > **Configuratie** > **Catalogus** > **Catalogus**.
 
-| Naam | Config-pad | Alleen handel? |
+| Naam | Config-pad | Alleen Commerce? |
 |--------------|--------------|--------------|
 | Masker voor SKU | `catalog/fields_masks/sku` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 | Masker voor metatitel | `catalog/fields_masks/meta_title` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
@@ -53,7 +53,7 @@ Deze configuratiewaarden zijn beschikbaar in de Admin in **Winkels** > Instellin
 | Gerelateerde video weergeven | `catalog/product_video/show_related` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 | Video automatisch opnieuw starten | `catalog/product_video/video_auto_restart` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 | Bereik catalogusprijs | `catalog/price/scope` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
-| Standaardproductprijs | `catalog/price/default_product_price` | ![Alleen handel](/help/assets/configuration/cloud-ee.png) |
+| Standaardproductprijs | `catalog/price/default_product_price` | ![ Commerce-slechts ](/help/assets/configuration/cloud-ee.png) |
 | Aantal producten weergeven | `catalog/layered_navigation/display_product_count` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 | Prijsnavigatiestapberekening | `catalog/layered_navigation/price_range_calculation` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 | Navigatiestap standaardprijs | `catalog/layered_navigation/price_range_step` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
@@ -64,14 +64,14 @@ Deze configuratiewaarden zijn beschikbaar in de Admin in **Winkels** > Instellin
 | Minimale lengte query | `catalog/search/min_query_length` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 | Maximale lengte query | `catalog/search/max_query_length` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 | Zoekmachine | `catalog/search/engine` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
-| Time-out Solr-server | `catalog/search/solr_server_timeout` | ![Alleen handel](/help/assets/configuration/cloud-ee.png) |
+| Time-out Solr-server | `catalog/search/solr_server_timeout` | ![ Commerce-slechts ](/help/assets/configuration/cloud-ee.png) |
 | Indexeringsmodus | `catalog/search/engine_commit_mode` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
-| Zoeksuggesties inschakelen | `catalog/search/search_suggestion_enabled` | ![Alleen handel](/help/assets/configuration/cloud-ee.png) |
-| Aantal zoeksuggesties | `catalog/search/search_suggestion_count` | ![Alleen handel](/help/assets/configuration/cloud-ee.png) |
-| Aantal resultaten tonen voor elke suggestie | `catalog/search/search_suggestion_count_results_enabled` | ![Alleen handel](/help/assets/configuration/cloud-ee.png) |
-| Zoeken in Recommendations inschakelen | `catalog/search/search_recommendations_enabled` | ![Alleen handel](/help/assets/configuration/cloud-ee.png) |
-| Recommendations-telling zoeken | `catalog/search/search_recommendations_count` | ![Alleen handel](/help/assets/configuration/cloud-ee.png) |
-| Aantal resultaten tonen voor elke aanbeveling | `catalog/search/search_recommendations_count_results_enabled` | ![Alleen handel](/help/assets/configuration/cloud-ee.png) |
+| Zoeksuggesties inschakelen | `catalog/search/search_suggestion_enabled` | ![ Commerce-slechts ](/help/assets/configuration/cloud-ee.png) |
+| Aantal zoeksuggesties | `catalog/search/search_suggestion_count` | ![ Commerce-slechts ](/help/assets/configuration/cloud-ee.png) |
+| Aantal resultaten tonen voor elke suggestie | `catalog/search/search_suggestion_count_results_enabled` | ![ Commerce-slechts ](/help/assets/configuration/cloud-ee.png) |
+| Zoeken in Recommendations inschakelen | `catalog/search/search_recommendations_enabled` | ![ Commerce-slechts ](/help/assets/configuration/cloud-ee.png) |
+| Recommendations-telling zoeken | `catalog/search/search_recommendations_count` | ![ Commerce-slechts ](/help/assets/configuration/cloud-ee.png) |
+| Aantal resultaten tonen voor elke aanbeveling | `catalog/search/search_recommendations_count_results_enabled` | ![ Commerce-slechts ](/help/assets/configuration/cloud-ee.png) |
 | Minimale voorwaarden | `catalog/search/minimum_should_match` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 | URL voor &quot;categorie/product&quot; genereren Herschrijvingen | `catalog/seo/generate_category_product_rewrites` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 | Algemene zoektermen | `catalog/seo/search_terms` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
@@ -82,15 +82,15 @@ Deze configuratiewaarden zijn beschikbaar in de Admin in **Winkels** > Instellin
 | Scheidingsteken paginatitel | `catalog/seo/title_separator` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 | Meta-tag canonieke koppeling gebruiken voor categorieën | `catalog/seo/category_canonical_tag` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 | Meta-tag Canonical link gebruiken voor producten | `catalog/seo/product_canonical_tag` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
-| Inschakelen | `catalog/magento_catalogpermissions/enabled` | ![Alleen handel](/help/assets/configuration/cloud-ee.png) |
-| Browsercategorie toestaan | `catalog/magento_catalogpermissions/grant_catalog_category_view` | ![Alleen handel](/help/assets/configuration/cloud-ee.png) |
-| Klantengroepen | `catalog/magento_catalogpermissions/grant_catalog_category_view_groups` | ![Alleen handel](/help/assets/configuration/cloud-ee.png) |
-| Openingspagina | `catalog/magento_catalogpermissions/restricted_landing_page` | ![Alleen handel](/help/assets/configuration/cloud-ee.png) |
-| Productprijzen weergeven | `catalog/magento_catalogpermissions/grant_catalog_product_price` | ![Alleen handel](/help/assets/configuration/cloud-ee.png) |
-| Klantengroepen | `catalog/magento_catalogpermissions/grant_catalog_product_price_groups` | ![Alleen handel](/help/assets/configuration/cloud-ee.png) |
-| Toevoegen aan winkelwagentje toestaan | `catalog/magento_catalogpermissions/grant_checkout_items` | ![Alleen handel](/help/assets/configuration/cloud-ee.png) |
-| Klantengroepen | `catalog/magento_catalogpermissions/grant_checkout_items_groups` | ![Alleen handel](/help/assets/configuration/cloud-ee.png) |
-| Cataloguszoekopdracht niet toestaan op | `catalog/magento_catalogpermissions/deny_catalog_search` | ![Alleen handel](/help/assets/configuration/cloud-ee.png) |
+| Inschakelen | `catalog/magento_catalogpermissions/enabled` | ![ Commerce-slechts ](/help/assets/configuration/cloud-ee.png) |
+| Browsercategorie toestaan | `catalog/magento_catalogpermissions/grant_catalog_category_view` | ![ Commerce-slechts ](/help/assets/configuration/cloud-ee.png) |
+| Klantengroepen | `catalog/magento_catalogpermissions/grant_catalog_category_view_groups` | ![ Commerce-slechts ](/help/assets/configuration/cloud-ee.png) |
+| Openingspagina | `catalog/magento_catalogpermissions/restricted_landing_page` | ![ Commerce-slechts ](/help/assets/configuration/cloud-ee.png) |
+| Productprijzen weergeven | `catalog/magento_catalogpermissions/grant_catalog_product_price` | ![ Commerce-slechts ](/help/assets/configuration/cloud-ee.png) |
+| Klantengroepen | `catalog/magento_catalogpermissions/grant_catalog_product_price_groups` | ![ Commerce-slechts ](/help/assets/configuration/cloud-ee.png) |
+| Toevoegen aan winkelwagentje toestaan | `catalog/magento_catalogpermissions/grant_checkout_items` | ![ Commerce-slechts ](/help/assets/configuration/cloud-ee.png) |
+| Klantengroepen | `catalog/magento_catalogpermissions/grant_checkout_items_groups` | ![ Commerce-slechts ](/help/assets/configuration/cloud-ee.png) |
+| Cataloguszoekopdracht niet toestaan op | `catalog/magento_catalogpermissions/deny_catalog_search` | ![ Commerce-slechts ](/help/assets/configuration/cloud-ee.png) |
 | Itemstatus bestellen om downloads in te schakelen | `catalog/downloadable/order_item_status` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 | Standaardmaximum aantal downloads | `catalog/downloadable/downloads_number` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 | Aandeelbaar | `catalog/downloadable/shareable` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
@@ -103,37 +103,37 @@ Deze configuratiewaarden zijn beschikbaar in de Admin in **Winkels** > Instellin
 | Volgorde datumvelden | `catalog/custom_options/date_fields_order` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 | Tijdnotatie | `catalog/custom_options/time_format` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 | Bereik jaar | `catalog/custom_options/year_range` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
-| Functionaliteit van catalogusgebeurtenissen inschakelen | `catalog/magento_catalogevent/enabled` | ![Alleen handel](/help/assets/configuration/cloud-ee.png) |
-| Widget Catalog-gebeurtenis inschakelen in Storefront | `catalog/magento_catalogevent/lister_output` | ![Alleen handel](/help/assets/configuration/cloud-ee.png) |
-| Aantal gebeurtenissen dat moet worden weergegeven in de widget Gebeurtenisregelaar | `catalog/magento_catalogevent/lister_widget_limit` | ![Alleen handel](/help/assets/configuration/cloud-ee.png) |
-| Per klik te schuiven gebeurtenissen in de widget Gebeurtenisregelaar | `catalog/magento_catalogevent/lister_widget_scroll` | ![Alleen handel](/help/assets/configuration/cloud-ee.png) |
-| Maximumaantal producten in lijst Verwante producten | `catalog/magento_targetrule/related_position_limit` | ![Alleen handel](/help/assets/configuration/cloud-ee.png) |
-| Verwante producten tonen | `catalog/magento_targetrule/related_position_behavior` | ![Alleen handel](/help/assets/configuration/cloud-ee.png) |
-| Rotatiemodus voor producten in de lijst Verwante producten | `catalog/magento_targetrule/related_rotation_mode` | ![Alleen handel](/help/assets/configuration/cloud-ee.png) |
-| Maximum aantal producten in de lijst voor producten voor meerdere verkooptransacties | `catalog/magento_targetrule/crosssell_position_limit` | ![Alleen handel](/help/assets/configuration/cloud-ee.png) |
-| Crosssellproducten tonen | `catalog/magento_targetrule/crosssell_position_behavior` | ![Alleen handel](/help/assets/configuration/cloud-ee.png) |
-| Rotatiemodus voor producten in de productlijst voor meerdere verkooppunten | `catalog/magento_targetrule/crosssell_rotation_mode` | ![Alleen handel](/help/assets/configuration/cloud-ee.png) |
-| Maximumaantal producten in lijst Upsell-producten | `catalog/magento_targetrule/upsell_position_limit` | ![Alleen handel](/help/assets/configuration/cloud-ee.png) |
-| Upselproducten weergeven | `catalog/magento_targetrule/upsell_position_behavior` | ![Alleen handel](/help/assets/configuration/cloud-ee.png) |
-| Rotatiemodus voor producten in Upsell-productlijst | `catalog/magento_targetrule/upsell_rotation_mode` | ![Alleen handel](/help/assets/configuration/cloud-ee.png) |
+| Functionaliteit van catalogusgebeurtenissen inschakelen | `catalog/magento_catalogevent/enabled` | ![ Commerce-slechts ](/help/assets/configuration/cloud-ee.png) |
+| Widget Catalog-gebeurtenis inschakelen in Storefront | `catalog/magento_catalogevent/lister_output` | ![ Commerce-slechts ](/help/assets/configuration/cloud-ee.png) |
+| Aantal gebeurtenissen dat moet worden weergegeven in de widget Gebeurtenisregelaar | `catalog/magento_catalogevent/lister_widget_limit` | ![ Commerce-slechts ](/help/assets/configuration/cloud-ee.png) |
+| Per klik te schuiven gebeurtenissen in de widget Gebeurtenisregelaar | `catalog/magento_catalogevent/lister_widget_scroll` | ![ Commerce-slechts ](/help/assets/configuration/cloud-ee.png) |
+| Maximumaantal producten in lijst Verwante producten | `catalog/magento_targetrule/related_position_limit` | ![ Commerce-slechts ](/help/assets/configuration/cloud-ee.png) |
+| Verwante producten tonen | `catalog/magento_targetrule/related_position_behavior` | ![ Commerce-slechts ](/help/assets/configuration/cloud-ee.png) |
+| Rotatiemodus voor producten in de lijst Verwante producten | `catalog/magento_targetrule/related_rotation_mode` | ![ Commerce-slechts ](/help/assets/configuration/cloud-ee.png) |
+| Maximum aantal producten in de lijst voor producten voor meerdere verkooptransacties | `catalog/magento_targetrule/crosssell_position_limit` | ![ Commerce-slechts ](/help/assets/configuration/cloud-ee.png) |
+| Crosssellproducten tonen | `catalog/magento_targetrule/crosssell_position_behavior` | ![ Commerce-slechts ](/help/assets/configuration/cloud-ee.png) |
+| Rotatiemodus voor producten in de productlijst voor meerdere verkooppunten | `catalog/magento_targetrule/crosssell_rotation_mode` | ![ Commerce-slechts ](/help/assets/configuration/cloud-ee.png) |
+| Maximumaantal producten in lijst Upsell-producten | `catalog/magento_targetrule/upsell_position_limit` | ![ Commerce-slechts ](/help/assets/configuration/cloud-ee.png) |
+| Upselproducten weergeven | `catalog/magento_targetrule/upsell_position_behavior` | ![ Commerce-slechts ](/help/assets/configuration/cloud-ee.png) |
+| Rotatiemodus voor producten in Upsell-productlijst | `catalog/magento_targetrule/upsell_rotation_mode` | ![ Commerce-slechts ](/help/assets/configuration/cloud-ee.png) |
 
 {style="table-layout:auto"}
 
 ## Inventarisatiepaden
 
-Deze configuratiewaarden zijn beschikbaar in de Admin in **Winkels** > Instellingen > **Configuratie** > **Catalogus** > **Inventaris**.
+Deze configuratiewaarden zijn beschikbaar in Admin in **Opslag** > Montages > **Configuratie** > **Catalogus** > **Voorraad**.
 
-| Naam | Config-pad | Alleen handel? |
+| Naam | Config-pad | Alleen Commerce? |
 |--------------|--------------|--------------|
 | Aantal verkleinen wanneer bestelling wordt geplaatst | `cataloginventory/options/can_subtract` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 | De status van de items instellen op In voorraad bij annulering van bestelling | `cataloginventory/options/can_back_in_stock` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 | Producten uit voorraad weergeven | `cataloginventory/options/show_out_of_stock` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 | Alleen X-linkerdrempel | `cataloginventory/options/stock_threshold_qty` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 | Beschikbaarheid van producten in voorraad weergeven in winkel | `cataloginventory/options/display_product_stock_status` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
-| Synchroniseren met catalogus | `cataloginventory/options/synchronize_with_catalog` | ![Alleen handel](/help/assets/configuration/cloud-ee.png) |
+| Synchroniseren met catalogus | `cataloginventory/options/synchronize_with_catalog` | ![ Commerce-slechts ](/help/assets/configuration/cloud-ee.png) |
 | Stock beheren | `cataloginventory/item_options/manage_stock` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 | Achtergronden | `cataloginventory/item_options/backorders` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
-| Uitgestelde voorraadupdate gebruiken | `cataloginventory/item_options/use_deferred_stock_update` | ![Alleen handel](/help/assets/configuration/cloud-ee.png) |
+| Uitgestelde voorraadupdate gebruiken | `cataloginventory/item_options/use_deferred_stock_update` | ![ Commerce-slechts ](/help/assets/configuration/cloud-ee.png) |
 | Maximale toegestane hoeveelheid in winkelwagentje | `cataloginventory/item_options/max_sale_qty` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 | Drempel voor voorraden | `cataloginventory/item_options/min_qty` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 | Minimale toegestane hoeveelheid in winkelwagentje | `cataloginventory/item_options/min_sale_qty` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
@@ -141,8 +141,8 @@ Deze configuratiewaarden zijn beschikbaar in de Admin in **Winkels** > Instellin
 | Aantal verhogen inschakelen | `cataloginventory/item_options/enable_qty_increments` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 | Aantal toenamen | `cataloginventory/item_options/qty_increments` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 | Creditpost automatisch naar voorraad retourneren | `cataloginventory/item_options/auto_return` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
-| asynchroon uitvoeren | `cataloginventory/bulk_operations/async` | ![Alleen handel](/help/assets/configuration/cloud-ee.png) |
-| Asynchrone batchgrootte | `cataloginventory/bulk_operations/batch_size` | ![Alleen handel](/help/assets/configuration/cloud-ee.png) |
+| asynchroon uitvoeren | `cataloginventory/bulk_operations/async` | ![ Commerce-slechts ](/help/assets/configuration/cloud-ee.png) |
+| Asynchrone batchgrootte | `cataloginventory/bulk_operations/batch_size` | ![ Commerce-slechts ](/help/assets/configuration/cloud-ee.png) |
 | Provider | `cataloginventory/source_selection_distance_based/provider` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 | Rekenmodus | `cataloginventory/source_selection_distance_based_google/mode` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 | Waarde | `cataloginventory/source_selection_distance_based_google/value` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
@@ -151,22 +151,22 @@ Deze configuratiewaarden zijn beschikbaar in de Admin in **Winkels** > Instellin
 
 ## Visuele Merchandiserpaden
 
-Deze configuratiewaarden zijn beschikbaar in de Admin in **Winkels** > Instellingen > **Configuratie** > **Catalogus** > **Visual Merchandiser**.
+Deze configuratiewaarden zijn beschikbaar in Admin in **Slaat** > Montages > **Configuratie** > **Catalogus** > **Visuele Merchandiser**.
 
-| Naam | Config-pad | Alleen handel? |
+| Naam | Config-pad | Alleen Commerce? |
 |--------------|--------------|--------------|
-| Zichtbare kenmerken voor categorieregels | `visualmerchandiser/options/smart_attributes` | ![Alleen handel](/help/assets/configuration/cloud-ee.png) |
-| Minimale voorraaddrempel | `visualmerchandiser/options/minimum_stock_threshold` | ![Alleen handel](/help/assets/configuration/cloud-ee.png) |
-| Kleurkenmerkcode | `visualmerchandiser/options/color_attribute_code` | ![Alleen handel](/help/assets/configuration/cloud-ee.png) |
-| Kleurvolgorde | `visualmerchandiser/options/color_order` | ![Alleen handel](/help/assets/configuration/cloud-ee.png) |
+| Zichtbare kenmerken voor categorieregels | `visualmerchandiser/options/smart_attributes` | ![ Commerce-slechts ](/help/assets/configuration/cloud-ee.png) |
+| Minimale voorraaddrempel | `visualmerchandiser/options/minimum_stock_threshold` | ![ Commerce-slechts ](/help/assets/configuration/cloud-ee.png) |
+| Kleurkenmerkcode | `visualmerchandiser/options/color_attribute_code` | ![ Commerce-slechts ](/help/assets/configuration/cloud-ee.png) |
+| Kleurvolgorde | `visualmerchandiser/options/color_order` | ![ Commerce-slechts ](/help/assets/configuration/cloud-ee.png) |
 
 {style="table-layout:auto"}
 
 ## XML-sitemappaden
 
-Deze configuratiewaarden zijn beschikbaar in de Admin in **Winkels** > Instellingen > **Configuratie** > **Catalogus** > **XML Sitemap**.
+Deze configuratiewaarden zijn beschikbaar in Admin in **Sporen** > Montages > **Configuratie** > **Catalogus** > **Sitemap van XML**.
 
-| Naam | Config-pad | Alleen handel? |
+| Naam | Config-pad | Alleen Commerce? |
 |--------------|--------------|--------------|
 | Frequentie | `sitemap/category/changefreq` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 | Prioriteit | `sitemap/category/priority` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
@@ -188,9 +188,9 @@ Deze configuratiewaarden zijn beschikbaar in de Admin in **Winkels** > Instellin
 
 ## RSS feeds, paden
 
-Deze configuratiewaarden zijn beschikbaar in de Admin in **Winkels** > Instellingen > **Configuratie** > **Catalogus** > **RSS feeds**.
+Deze configuratiewaarden zijn beschikbaar in Admin in **Slaat** > Montages > **Configuratie** > **Catalogus** > **RSS van voer**.
 
-| Naam | Config-pad | Alleen handel? |
+| Naam | Config-pad | Alleen Commerce? |
 |--------------|--------------|--------------|
 | RSS inschakelen | `rss/config/active` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 | RSS inschakelen | `rss/wishlist/active` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
@@ -204,9 +204,9 @@ Deze configuratiewaarden zijn beschikbaar in de Admin in **Winkels** > Instellin
 
 ## E-mailen naar vriendenpaden
 
-Deze configuratiewaarden zijn beschikbaar in de Admin in **Winkels** > Instellingen > **Configuratie** > **Catalogus** > **E-mailen naar een vriend**.
+Deze configuratiewaarden zijn beschikbaar in Admin in **Opslag** > Montages > **Configuratie** > **Catalogus** > **E-mail aan een Vriend**.
 
-| Naam | Config-pad | Alleen handel? |
+| Naam | Config-pad | Alleen Commerce? |
 |--------------|--------------|--------------|
 | Ingeschakeld | `sendfriend/email/enabled` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 | E-mailsjabloon selecteren | `sendfriend/email/template` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |

@@ -11,15 +11,15 @@ ht-degree: 0%
 
 # Een op een git gebaseerde installatie upgraden
 
-Dit onderwerp bespreekt hoe een bijdragende ontwikkelaar Adobe Commerce kan bijwerken zonder het opnieuw te installeren. Als u geen bijdragende ontwikkelaar bent, zie [Een upgrade uitvoeren](../implementation/perform-upgrade.md).
+Dit onderwerp bespreekt hoe een bijdragende ontwikkelaar Adobe Commerce kan bijwerken zonder het opnieuw te installeren. Als u geen bijdragende ontwikkelaar bent, zie [ een verbetering ](../implementation/perform-upgrade.md) uitvoeren.
 
 U kunt als volgt upgraden als u een ontwikkelaar bent die bijdraagt:
 
 {{$include /help/_includes/server-login.md}}
 
-1. Sla de wijzigingen op die u in het dialoogvenster `composer.json` omdat de volgende stappen dit overschrijven.
+1. Sla eventuele wijzigingen op die u in het `composer.json` -bestand hebt aangebracht, omdat deze in de volgende stappen worden overschreven.
 
-1. Maak een back-up van uw `composer.json` bestand.
+1. Maak een back-up van uw `composer.json` -bestand.
 
    ```bash
    cp composer.json composer.json.old
@@ -33,11 +33,11 @@ U kunt als volgt upgraden als u een ontwikkelaar bent die bijdraagt:
 
    >[!NOTE]
    >
-   >Indien `git pull origin develop` mislukt, zie [problemen oplossen](https://support.magento.com/hc/en-us/articles/360034229872).
+   >Als `git pull origin develop` ontbreekt, zie [ het oplossen van problemen ](https://support.magento.com/hc/en-us/articles/360034229872).
 
-1. Diff en voeg uw samen `composer.json.old` met de `composer.json` bestand.
+1. Verdeel het `composer.json.old` -bestand en voeg het samen met het `composer.json` -bestand.
 
-1. Los gebiedsdelen op en schrijf nauwkeurige versies aan `composer.lock` bestand.
+1. Los gebiedsdelen op en schrijf nauwkeurige versies aan het `composer.lock` dossier.
 
    ```bash
    composer update

@@ -5,7 +5,7 @@ feature: Configuration, Logs
 exl-id: 78b0416a-5bad-42a9-a918-603600e98928
 source-git-commit: 403a5937561d82b02fd126c95af3f70b0ded0747
 workflow-type: tm+mt
-source-wordcount: '252'
+source-wordcount: '258'
 ht-degree: 0%
 
 ---
@@ -16,15 +16,15 @@ ht-degree: 0%
 
 ## Foutopsporingsregistratie
 
-Door gebrek, schrijft de Handel aan zuivert logboek (`<install_directory>/var/log/debug.log`) als de standaardmodus is ingeschakeld of de ontwikkelmodus is ingeschakeld, maar niet als de modus productie actief is. Gebruik de `bin/magento setup:config:set --enable-debug-logging` gebruiken om de standaardwaarde te wijzigen.
+Door gebrek, schrijft Commerce aan het zuivert logboek (`<install_directory>/var/log/debug.log`) wanneer het in gebrek is of wijze ontwikkelt, maar niet wanneer het op productiemodus is. Gebruik de opdracht `bin/magento setup:config:set --enable-debug-logging` om de standaardwaarde te wijzigen.
 
 >[!INFO]
 >
->Vanaf Commerce 2.3.1 kunt u niet meer de `bin/magento config:set dev/debug/debug_logging` gebruiken om foutopsporingslogbestanden voor de huidige modus in of uit te schakelen.
+>Vanaf Commerce 2.3.1 kunt u de opdracht `bin/magento config:set dev/debug/debug_logging` niet meer gebruiken om foutopsporingslogbestanden in of uit te schakelen voor de huidige modus.
 
 ### Foutopsporingsregistratie inschakelen
 
-1. Gebruik de `setup:config:set` bevel toe te laten zuivert registreren voor de huidige wijze.
+1. Gebruik de opdracht `setup:config:set` om foutopsporingslogboeken in te schakelen voor de huidige modus.
 
    ```bash
    bin/magento setup:config:set --enable-debug-logging=true
@@ -38,7 +38,7 @@ Door gebrek, schrijft de Handel aan zuivert logboek (`<install_directory>/var/lo
 
 ### Foutopsporingslogbestand uitschakelen
 
-1. Gebruik de `setup:config:set` bevel om te onbruikbaar maken zuivert registreren voor de huidige wijze.
+1. Gebruik de opdracht `setup:config:set` om foutopsporingsregistratie voor de huidige modus uit te schakelen.
 
    ```bash
    bin/magento setup:config:set --enable-debug-logging=false
@@ -52,11 +52,11 @@ Door gebrek, schrijft de Handel aan zuivert logboek (`<install_directory>/var/lo
 
 ## Logboekregistratie van databases
 
-Door gebrek, schrijft de Handel de logboeken van de gegevensbestandactiviteit aan `<install-dir>/var/debug/db.log` bestand.
+Standaard schrijft Commerce de logboeken voor databaseactiviteiten naar het `<install-dir>/var/debug/db.log` -bestand.
 
 ### Databaseregistratie inschakelen
 
-1. Gebruik de `dev:query-log` gebruiken om databaselogboekingen in of uit te schakelen.
+1. Gebruik de opdracht `dev:query-log` om databaselogboekingen in of uit te schakelen.
 
    ```bash
    bin/magento dev:query-log:enable
@@ -74,23 +74,23 @@ Door gebrek, schrijft de Handel de logboeken van de gegevensbestandactiviteit aa
 
 ## Gekruist registreren
 
-Met de release van versie 2.3.1 creëert de Commerce nu een aparte versie `cron` log. \
-Recentelijk maakte de handel de houtkap breder, die meer informatie verstrekte maar de `system.log` aanzienlijk.
-Verplaatsen `cron` info aan een specifiek logboek maakt beide logboeken gemakkelijker te lezen.
+Met de release van versie 2.3.1 maakt Commerce nu een apart `cron` -logboek. \
+Commerce heeft onlangs de registratie van cron uitgebreid gemaakt, waardoor meer informatie werd verschaft maar de `system.log` aanzienlijk werd verlengd.
+Door `cron` info naar een toegewezen logboek te verplaatsen, zijn beide logbestanden gemakkelijker te lezen.
 
-Standaard schrijft Commerce `cron` informatie aan de `<install-directory>/var/log/cron.log` bestand.
+Standaard schrijft Commerce `cron` info naar het `<install-directory>/var/log/cron.log` -bestand.
 
 ## Syslog-logboekregistratie
 
-Standaard schrijft Commerce _syslog_ logboeken naar het besturingssysteem `syslog` bestand.
-Vanaf Handel 2.3.1 moet u `magento` bevel om syslog in of onbruikbaar te maken.
+Door gebrek, schrijft Commerce _syslog_ logboeken aan het werkende systeem `syslog` dossier.
+Vanaf Commerce 2.3.1 moet u de opdracht `magento` gebruiken om de syslog in of uit te schakelen.
 De instelling in het beheerprogramma is verwijderd.
 
 ### Om syslog registreren toe te laten
 
-Aanmelden bij `syslog` is standaard uitgeschakeld.
+Logboekregistratie naar `syslog` is standaard uitgeschakeld.
 
-1. Gebruik de `setup:config:set` om de `dev/syslog/syslog_logging` databasewaarde naar `true`.
+1. Gebruik de opdracht `setup:config:set` om de databasewaarde `dev/syslog/syslog_logging` in `true` te wijzigen.
 
    ```bash
    bin/magento setup:config:set --enable-syslog-logging=true
@@ -104,7 +104,7 @@ Aanmelden bij `syslog` is standaard uitgeschakeld.
 
 ### syslog registreren onbruikbaar maken
 
-1. Gebruik de `setup:config:set` om de `dev/syslog/syslog_logging` databasewaarde naar `false`.
+1. Gebruik de opdracht `setup:config:set` om de databasewaarde `dev/syslog/syslog_logging` in `false` te wijzigen.
 
    ```bash
    bin/magento setup:config:set --enable-syslog-logging=false

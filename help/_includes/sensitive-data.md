@@ -13,7 +13,7 @@ Adobe Commerce gebruikt uw coderingssleutel om het volgende te coderen:
 * Gebruikersnamen en wachtwoorden die zijn opgegeven in de beheerconfiguratie (bijvoorbeeld aanmelden bij betaalgateways)
 * CAPTCHA-waarden die via het netwerk worden verzonden
 
-Adobe Commerce do *niet* versleutelen:
+Adobe Commerce ** coderen niet:
 
 * Administratieve en klantengebruikersnamen en wachtwoorden (deze wachtwoorden worden gehakt)
 * Adres

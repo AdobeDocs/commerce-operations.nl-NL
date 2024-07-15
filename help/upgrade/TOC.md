@@ -5,7 +5,7 @@ feature: Upgrade
 topic: Administration, Commerce, Development, Upgrade
 source-git-commit: ee69fcec4986fc85f93e336dc654a9bfff486d8b
 workflow-type: tm+mt
-source-wordcount: '144'
+source-wordcount: '139'
 ht-degree: 0%
 
 ---
@@ -14,7 +14,7 @@ ht-degree: 0%
 # Upgradehandleiding {#upgrade-guide}
 
 - [Overzicht van het upgradeproces](overview.md)
-- Upgradereis {#journey}
+- Reis upgraden {#journey}
    - [Reisfasen](journey/phases.md)
    - [Project starten](journey/project-launch.md)
    - [Jaarlijkse planning](journey/annual-planning.md)
@@ -30,21 +30,21 @@ ht-degree: 0%
 - Modules en extensies {#modules}
    - [Upgrademodules](modules/upgrade.md)
    - [Modules beheren](modules/manage.md)
-- Patches {#patches}
+- Reparaties {#patches}
    - [Hoe patches werken](patches/overview.md)
    - [Patches toepassen](patches/apply.md)
 - [!DNL Upgrade Compatibility Tool] {#upgrade-compatibility-tool}
    - [Overzicht](upgrade-compatibility-tool/overview.md)
    - [Systeemvereisten](upgrade-compatibility-tool/prerequisites.md)
-   - Gebruik de [!DNL Upgrade Compatibility Tool] {#use-upgrade-compatibility-tool}
+   - De opdracht [!DNL Upgrade Compatibility Tool] {#use-upgrade-compatibility-tool} gebruiken
       - [Het gereedschap uitvoeren in een opdrachtregelinterface](upgrade-compatibility-tool/run.md)
-      - [Integreer met de [!DNL Site-Wide Analysis Tool]](upgrade-compatibility-tool/integrate-analysis-tool.md)
+      - [Integreer met  [!DNL Site-Wide Analysis Tool]](upgrade-compatibility-tool/integrate-analysis-tool.md)
       - [Het gereedschap uitvoeren in de PHPStorm-insteekmodule van het Magento](upgrade-compatibility-tool/run-configuration-phpstorm-plugin.md)
-   - Rapportage {#reporting}
+   - Rapporteren {#reporting}
       - [Rapporten](upgrade-compatibility-tool/reports.md)
       - [Foutberichten](upgrade-compatibility-tool/error-messages.md)
    - [Gerelateerde gereedschappen](upgrade-compatibility-tool/related-tools.md)
-- Ontwikkelaars helpen {#developer}
+- Medewerkende ontwikkelaars {#developer}
    - [Een op een git gebaseerde installatie upgraden](developer/git-installs.md)
    - [Modules beheren](developer/manage-modules.md)
 - Problemen oplossen {#troubleshooting}
@@ -54,4 +54,4 @@ ht-degree: 0%
 - Bronnen {#resources}
    - [Aanbevolen lezen](resources/recommended-reading.md)
    - [Modernisering van uw platform met Adobe Commerce](resources/recommended-upgrade-paths.md)
-- [Terugkeren naar operationele hulplijnen](https://experienceleague.adobe.com/docs/commerce-operations/operational-guides/home.html)
+- [ Terugkeer aan Operationele Gidsen ](https://experienceleague.adobe.com/docs/commerce-operations/operational-guides/home.html)

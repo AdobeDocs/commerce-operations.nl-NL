@@ -6,7 +6,7 @@ feature: Best Practices, Configuration
 topic: Commerce, Migration
 source-git-commit: e83e2359377f03506178c28f8b30993c172282c7
 workflow-type: tm+mt
-source-wordcount: '201'
+source-wordcount: '216'
 ht-degree: 0%
 
 ---
@@ -15,15 +15,15 @@ ht-degree: 0%
 
 Deze sectie bevat de beste aanbevelingen om uw migratie te versnellen en te vereenvoudigen en u kunt aangeven hoeveel tijd het kost.
 
-* **Een kopie van de database uit een Magento 1-instantie gebruiken** bij het uitvoeren van migratietests. Gebruik niet de productieinstantie van uw Magento 1 opslaggegevensbestand.
+* **Gebruik een exemplaar van het gegevensbestand van een Magento 1 instantie** wanneer het uitvoeren van migratie het testen. Gebruik niet de productieinstantie van uw Magento 1 opslaggegevensbestand.
 
-* **Verouderde en overtollige gegevens verwijderen** van uw Magento 1 gegevensbestand vóór migratie.
+* **verwijder verouderde en overtollige gegevens** uit uw Magento 1 gegevensbestand vóór migratie.
 
 Dergelijke gegevens kunnen logboeken, orderaanhalingstekens, onlangs bekeken of vergeleken producten, bezoekers, gebeurtenisspecifieke categorieën, en promotieregels omvatten.
 
-* **Volg de [algemene regels voor een geslaagde migratie](migrate-data/overview.md#migration-overview)**.
+* **volg de [ algemene regels voor succesvolle migratie](migrate-data/overview.md#migration-overview)**.
 
-* Om de prestaties te verbeteren, **de `direct_document_copy` option** in uw `config.xml` bestand:
+* Om prestaties op te voeren, **laat `direct_document_copy` optie** in uw `config.xml` dossier toe:
 
   ```xml
   <direct_document_copy>1</direct_document_copy>

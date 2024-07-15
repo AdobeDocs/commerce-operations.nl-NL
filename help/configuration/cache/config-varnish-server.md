@@ -5,7 +5,7 @@ feature: Configuration, Cache, Install, Logs
 exl-id: b31179ef-3c0e-4a6b-a118-d3be1830ba4e
 source-git-commit: a2bd4139aac1044e7e5ca8fcf2114b7f7e9e9b68
 workflow-type: tm+mt
-source-wordcount: '740'
+source-wordcount: '738'
 ht-degree: 0%
 
 ---
@@ -16,18 +16,18 @@ Vorm uw Webserver om op een haven buiten standaardhaven 80 te luisteren omdat Va
 
 In de volgende secties wordt poort 8080 als voorbeeld gebruikt.
 
-**De Apache 2.4-luisterpoort wijzigen**:
+**om Apache 2.4 te veranderen luistert haven**:
 
-1. Openen `/etc/httpd/conf/httpd.conf` in een teksteditor.
-1. Zoek de `Listen` richtlijn.
-1. Wijzig de waarde van de listen-poort naar `8080`. (U kunt elke beschikbare listen-poort gebruiken.)
-1. Sla uw wijzigingen op in `httpd.conf` en sluit de teksteditor af.
+1. Open `/etc/httpd/conf/httpd.conf` in een teksteditor.
+1. Zoek de aanwijzing `Listen` .
+1. Wijzig de waarde van de listen-poort in `8080` . (U kunt elke beschikbare listen-poort gebruiken.)
+1. Sla de wijzigingen in `httpd.conf` op en sluit de teksteditor af.
 
 ## De configuratie van het vernis-systeem wijzigen
 
 Om de het systeemconfiguratie van Varnish te wijzigen:
 
-1. Als gebruiker met `root` toegangsrechten, opent u het Vanish-configuratiebestand in een teksteditor:
+1. Als gebruiker met `root` bevoegdheden opent u het Vanish-configuratiebestand in een teksteditor:
 
    - CentOS 6: `/etc/sysconfig/varnish`
    - CentOS 7: `/etc/varnish/varnish.params`
@@ -40,7 +40,7 @@ Om de het systeemconfiguratie van Varnish te wijzigen:
    VARNISH_LISTEN_PORT=80
    ```
 
-   Voor Varnish 4.x, zorg ervoor dat DAEMON_OPTS de correcte luisterhaven voor bevat `-a` parameter (zelfs als VARNISH_LISTEN_PORT aan de correcte waarde wordt geplaatst):
+   Voor Varnish 4.x, zorg ervoor dat DAEMON_OPTS de correcte luisterhaven voor de `-a` parameter bevat (zelfs als VARNISH_LISTEN_PORT aan de correcte waarde wordt geplaatst):
 
    ```conf
    DAEMON_OPTS="-a :80 \
@@ -54,17 +54,17 @@ Om de het systeemconfiguratie van Varnish te wijzigen:
 
 ### De standaard-VCL wijzigen
 
-Deze sectie bespreekt hoe te om minimale configuratie te verstrekken zodat keert Varnish de antwoordkopballen van HTTP terug. Dit laat u toe om te verifiëren dat de werken van Varnish alvorens u vormt [!DNL Commerce] de aanvraag voor het gebruik van Varnish.
+Deze sectie bespreekt hoe te om minimale configuratie te verstrekken zodat keert Varnish de antwoordkopballen van HTTP terug. Hierdoor kunt u controleren of Varnish werkt voordat u de [!DNL Commerce] -toepassing configureert voor gebruik van Varnish.
 
 Varnish minimaliseren:
 
-1. Terug `default.vcl`:
+1. Back-up maken `default.vcl` :
 
    ```bash
    cp /etc/varnish/default.vcl /etc/varnish/default.vcl.bak
    ```
 
-1. Openen `/etc/varnish/default.vcl` in een teksteditor.
+1. Open `/etc/varnish/default.vcl` in een teksteditor.
 1. Zoek de volgende spatie:
 
    ```conf
@@ -74,11 +74,11 @@ Varnish minimaliseren:
    }
    ```
 
-1. De waarde van `.host` met volledig - gekwalificeerde hostname of IP adres en luisterhaven van Varnish _achterste_ of _oorspronkelijke server_ De server die de inhoud levert, Varnish zal dus versnellen.
+1. Vervang de waarde van `.host` met volledig - gekwalificeerd hostname of IP adres en luister haven van de Varnish _achterkant_ of _oorsprongserver_; namelijk zal de server die de inhoud verstrekt Varnish versnellen.
 
-   Dit is doorgaans uw webserver. Zie [Backendeservers](https://varnish-cache.org/docs/trunk/users-guide/vcl-backends.html) in de _Varnish guide_.
+   Dit is doorgaans uw webserver. Zie [ servers van het Achterste 1} in de _Versijke gids_.](https://varnish-cache.org/docs/trunk/users-guide/vcl-backends.html)
 
-1. De waarde van `.port` met de luisterpoort van de webserver (8080 in dit voorbeeld).
+1. Vervang de waarde van `.port` door de listen-poort van de webserver (8080 in dit voorbeeld).
 
    Voorbeeld: Apache is geïnstalleerd op host 192.0.2.55 en Apache luistert naar poort 8080:
 
@@ -91,9 +91,9 @@ Varnish minimaliseren:
 
    >[!INFO]
    >
-   >Als Varnish en Apache op de zelfde gastheer lopen, adviseert de Adobe dat u een IP adres of hostname en niet gebruikt `localhost`.
+   >Als Varnish en Apache op de zelfde gastheer lopen, adviseert de Adobe dat u een IP adres of hostname en niet `localhost` gebruikt.
 
-1. Sla uw wijzigingen op in `default.vcl` en sluit de teksteditor af.
+1. Sla de wijzigingen in `default.vcl` op en sluit de teksteditor af.
 
 1. Varnish opnieuw starten:
 
@@ -116,7 +116,7 @@ Dit zou foutenmeldingen moeten tonen.
 
 ## Controleer of Varnish werkt
 
-De volgende secties bespreken hoe u kunt verifiëren dat Varnish werkt maar _zonder_ het vormen van Handel om het te gebruiken. U zou dit moeten proberen alvorens u Handel vormt.
+De volgende secties bespreken hoe u kunt verifiëren dat Varnish maar _werkt zonder_ het vormen Commerce om het te gebruiken. Probeer dit voordat u Commerce configureert.
 
 Voer de taken uit die in de volgende secties in de getoonde orde worden besproken:
 
@@ -137,7 +137,7 @@ Als Varnish er niet in slaagt om als dienst te beginnen, begin het van de bevell
 
 1. Start het Varnish child-proces:
 
-   Typ desgevraagd `start`
+   Typ `start` bij de aanwijzing
 
    De volgende berichten worden weergegeven om te bevestigen dat het programma is gestart:
 
@@ -168,11 +168,11 @@ tcp        0      0 ::1:48509                   :::*                        LIST
 
 In het voorgaande ziet u Varnish die op poort 80 wordt uitgevoerd en Apache die op poort 8080 wordt uitgevoerd.
 
-Als u geen uitvoer ziet voor `varnishd`, zorg ervoor dat Varnish loopt.
+Als u de uitvoer voor `varnishd` niet ziet, controleert u of Varnish wordt uitgevoerd.
 
-Zie [`netstat` opties](https://tldp.org/LDP/nag2/x-087-2-iface.netstat.html).
+Zie [`netstat` opties ](https://tldp.org/LDP/nag2/x-087-2-iface.netstat.html).
 
-## De software voor de handel installeren
+## De Commerce-software installeren
 
 Installeer de Commerce-software als u dat nog niet hebt gedaan. Wanneer ertoe aangezet voor een Basis URL, gebruik de Varnish gastheer en haven 80 (voor Varnish) omdat Varnish alle inkomende HTTP- verzoeken ontvangt.
 
@@ -185,7 +185,7 @@ XID: 303394517
 Varnish cache server
 ```
 
-Als deze fout optreedt, bewerkt u `default.vcl` en voeg een onderbreking aan toe `backend` stanza, als hieronder:
+Als deze fout optreedt, bewerkt u `default.vcl` en voegt u als volgt een time-out toe aan de `backend` stanza:
 
 ```conf
 backend default {
@@ -199,11 +199,11 @@ backend default {
 
 Nu kunt u verifiëren dat Varnish pagina&#39;s door HTML antwoordkopballen te bekijken die van om het even welke pagina zijn teruggekeerd.
 
-Alvorens u kopballen kunt bekijken, moet u Handel voor ontwikkelaarwijze plaatsen. Er zijn verschillende manieren om het te doen, het eenvoudigste is te wijzigen `.htaccess` in de hoofdmap van de toepassing Commerce. U kunt ook de opdracht [`magento deploy:mode:set`](../cli/set-mode.md) gebruiken.
+Voordat u naar kopteksten kunt kijken, moet u de Commerce for developer-modus instellen. Er zijn verschillende manieren om dit te doen. U kunt `.htaccess` het eenvoudigst wijzigen in de hoofdmap van de Commerce-toepassing. U kunt ook de opdracht [`magento deploy:mode:set`](../cli/set-mode.md) gebruiken.
 
-### Handel voor ontwikkelmodus instellen
+### Commerce instellen voor de modus Ontwikkelaar
 
-Als u Handel voor de modus Ontwikkelaar wilt instellen, gebruikt u de optie [`magento deploy:mode:set`](../cli/set-mode.md#change-to-developer-mode) gebruiken.
+Gebruik de opdracht [`magento deploy:mode:set`](../cli/set-mode.md#change-to-developer-mode) om de Commerce for developer-modus in te stellen.
 
 ### Kijk naar het Varnish log
 
@@ -213,7 +213,7 @@ Zorg ervoor dat Varnish dan het volgende bevel op de server van Varnish loopt in
 varnishlog
 ```
 
-Ga in een webbrowser naar een willekeurige handelspagina.
+Ga in een webbrowser naar een willekeurige Commerce-pagina.
 
 Een lange lijst van reactiekopballen tonen in uw bevel snelle venster. Zoek naar kopballen als het volgende:
 
@@ -232,13 +232,13 @@ Een lange lijst van reactiekopballen tonen in uw bevel snelle venster. Zoek naar
 -   ReqHeader      Origin: http://10.249.151.10
 ```
 
-Als kopteksten zoals deze _niet_ weergave, vernis stoppen, controleer uw `default.vcl`en probeer het opnieuw.
+Als de kopballen als deze _niet_ tonen, vernis tegenhouden, uw `default.vcl` controleren, en opnieuw proberen.
 
 ### HTML-antwoordheaders bekijken
 
 Er zijn verschillende manieren om naar antwoordheaders te kijken, bijvoorbeeld met een browserplug-in of een browsercontrole.
 
-In het volgende voorbeeld wordt `curl`. U kunt dit bevel van om het even welke machine ingaan die tot de server van de Handel kan toegang hebben gebruikend HTTP.
+In het volgende voorbeeld wordt `curl` gebruikt. U kunt deze opdracht invoeren vanaf elke computer die via HTTP toegang heeft tot de Commerce-server.
 
 ```bash
 curl -I -v --location-trusted '<your Commerce base URL>'

@@ -28,13 +28,13 @@ Deze aanpak bestaat uit de volgende stappen:
 
 - Rollen van het scrubteam voor merk- en handelsites
 
-![Voorbeeld-planningsmodel](../../assets/playbooks/planning-model.svg)
+![ Voorbeeld plannend naderingsmodel ](../../assets/playbooks/planning-model.svg)
 
 Met het hybride model kunt u gebruikmaken van de kracht van de Agile-methode, waarbij u het doel voor de tijdlijn, de kosten en de kwaliteit in acht neemt. Het volledige plan is verdeeld in twee verschillende fasen, die door lancering, optimalisering, en onderhoudsactiviteiten worden gevolgd.
 
-- **Het juiste idee krijgen**—Dit is een pre-implementatiefase om ervoor te zorgen dat de vereisten, het ontwerp, en de technologieoplossing worden strategisch, gedocumenteerd, en over belanghebbenden samenwerken. De achterstand bij de implementatie wordt gegroeid en opgebouwd, er worden ontwikkelingspunten gepland en er wordt een sequentiële strategie voor de bouw van het product vastgesteld.
+- **het krijgen van het juiste idee** - dit is een pre-implementatiefase om ervoor te zorgen dat de vereisten, het ontwerp, en de technologieoplossing worden strategisch, gedocumenteerd, en over belanghebbenden samenwerken. De achterstand bij de implementatie wordt gegroeid en opgebouwd, er worden ontwikkelingspunten gepland en er wordt een sequentiële strategie voor de bouw van het product vastgesteld.
 
-- **Het idee op de juiste manier weergeven**—Dit is de implementatiefase om het product interactief te bouwen, grondig te testen en op de juiste wijze vrij te geven. De eerste stap bestaat uit het ontwikkelen van de code via meerdere sprints. Elke sprint bevat in-sprint-ontwikkeling en -testen, gevolgd door systeemintegratietests, prestatie- en beveiligingstests, gebruikersacceptatietests en releaseactiviteiten.
+- **het krijgen van het juiste idee** - dit is de implementatiefase om het product te bouwen iteratief, grondig te testen, en behoorlijk vrij te geven. De eerste stap bestaat uit het ontwikkelen van de code via meerdere sprints. Elke sprint bevat in-sprint-ontwikkeling en -testen, gevolgd door systeemintegratietests, prestatie- en beveiligingstests, gebruikersacceptatietests en releaseactiviteiten.
 
 Projectplanning is een kritieke activiteit. Het leidt de belanghebbenden, de teams, de sponsors, en de projectmanagers op hoe te om, projectfasen te controleren te beheren en te controleren. Het helpt ook doelstellingen te identificeren, ontbrekende termijnen te vermijden, essentiële taken voorrang te geven, risico&#39;s te verminderen, en gewenste resultaten te leveren.
 
@@ -43,12 +43,12 @@ Het projectplan bestaat gewoonlijk uit vier fasen:
 - Initiatie en planning
 - Uitvoering
 - Starten
-- Na het starten
+- Post-launch
 
 Elke fase kan door veelvoudige kleinere sproints worden geleverd, daardoor leidend vooruitgang en resultaten door kleinere toename en met een hogere graad van behendigheid. Planning is echter uniek, omdat het meestal deel uitmaakt van de andere drie fasen. Wij hebben een gedetailleerde uitsplitsing van elke fase en een voorbeeld gegeven van een projectplan voor een geslaagde uitvoering van Adobe Commerce:
 
-![Gantt-schema voor projectplanning](../../assets/playbooks/gantt-chart.svg)
+![ de planning van het Project Gantt grafiek ](../../assets/playbooks/gantt-chart.svg)
 
 De benadering die wij hebben bepaald toont verschillende projectfasen die samen komen om succesvolle projectuitvoering toe te laten. De Dienst van het Projectbeheer (PMO) verstrekt nauw toezicht op diverse niveaus en verzekert succes bij elke fase (en sprint) bouw tot succesvolle, geschikte uitvoering met optimale kwaliteit en kosten.
 
-![Voorbeeld van planningsbenadering-infografisch](../../assets/playbooks/planning-approach-sample.svg)
+![ Steekproef planningsbenadering infographic ](../../assets/playbooks/planning-approach-sample.svg)

@@ -44,7 +44,7 @@ Lagere bronnen worden meestal beschouwd als een indicator die de statische bron 
 
 Adobe Commerce kan met uw bedrijf schalen dankzij de mogelijkheden:
 
-![Diagram van de schaalbare mogelijkheden van Adobe Commerce](../../../assets/playbooks/scalable-capabilities.svg)
+![ Diagram die de scalable mogelijkheden van Adobe Commerce ](../../../assets/playbooks/scalable-capabilities.svg) tonen
 
 Er zijn ook belangrijke factoren die de schaal van de handel stimuleren, die ook de algemene prestaties beïnvloeden.
 
@@ -57,4 +57,4 @@ Er zijn ook belangrijke factoren die de schaal van de handel stimuleren, die ook
 
 Voor gelaagde en cacheable architecturen die voor schaal worden gebouwd, kunt u deze grafiek als verwijzing gebruiken.
 
-![Diagram dat laat zien hoe de Adobe Commerce GraphQL API in een cachebare architectuur wordt gebruikt](../../../assets/playbooks/cacheable-architecture.svg)
+![ Diagram die tonen hoe te om Adobe Commerce GraphQL API in een cacheable architectuur te gebruiken ](../../../assets/playbooks/cacheable-architecture.svg)

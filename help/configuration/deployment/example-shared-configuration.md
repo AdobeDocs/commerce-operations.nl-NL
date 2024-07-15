@@ -4,29 +4,29 @@ description: Zie een voorbeeld van hoe te om montages in een ontwikkelingssystee
 exl-id: c980ec01-ca2d-43db-b68d-8e9435e07e6a
 source-git-commit: 95ffff39d82cc9027fa633dffedf15193040802d
 workflow-type: tm+mt
-source-wordcount: '460'
+source-wordcount: '465'
 ht-degree: 0%
 
 ---
 
 # Voorbeeld met een gedeelde configuratie
 
-In dit voorbeeld wordt getoond hoe u de volgende instellingen in uw ontwikkelingssysteem kunt wijzigen en het gedeelde configuratiebestand kunt bijwerken. `config.php`, in uw bouwstijlsysteem, en voer de zelfde montages in uw productiesysteem uit:
+In dit voorbeeld wordt getoond hoe u de volgende instellingen in uw ontwikkelingssysteem kunt wijzigen, het gedeelde configuratiebestand `config.php` in uw constructiesysteem kunt bijwerken en dezelfde instellingen in uw productiesysteem kunt implementeren:
 
 - Tijdzone
 - Gewichtseenheid
 
-Deze instellingen zijn beschikbaar in de beheerfunctie. **Winkels** > Instellingen > **Configuratie** > Algemeen > **Algemeen**.
+Deze montages zijn beschikbaar in Admin in **Slaat** > Montages > **Configuratie** > Algemeen > **Algemeen**.
 
 U kunt de zelfde procedure gebruiken om het even welke niet gevoelige, niet systeem-specifieke montages in de volgende verwijzingen te vormen:
 
 - [Verwijzing naar andere configuratiepaden](../reference/config-reference-general.md)
 - [Verwijzing naar betalingspaden](../reference/config-reference-payment.md)
-- [Bron voor configuratiepaden van de extensie Commerce Enterprise B2B](../reference/config-reference-b2b.md)
+- [Referentie voor configuratiepaden voor Commerce Enterprise B2B-extensies](../reference/config-reference-b2b.md)
 
 ## Voordat u begint
 
-Voordat u begint, stelt u de machtigingen en het eigendom van het bestandssysteem in zoals beschreven in [Vereisten voor ontwikkeling, bouw, en productiesystemen](../deployment/prerequisites.md).
+Alvorens u begint, de toestemmingen en de eigendom van het opstellingssysteem zoals besproken in [ Vereisten voor ontwikkeling, bouwt, en productiesystemen ](../deployment/prerequisites.md).
 
 ## Veronderstellingen
 
@@ -43,22 +43,22 @@ In dit voorbeeld gaan we uit van het volgende:
 U kunt als volgt de tijdzone- en gewichtseenheden in uw ontwikkelingssysteem instellen:
 
 1. Meld u aan bij de beheerder.
-1. Klikken **Winkels** > Instellingen > **Configuratie** > Algemeen > **Algemeen**.
-1. Vouw in het rechterdeelvenster uit **Landinstellingen**.
+1. Klik **Slaat** op > Montages > **Configuratie** > Algemeen > **Algemeen**.
+1. In de juiste ruit, breid **Opties van de Landinstelling** uit.
 
    In de volgende afbeelding ziet u een voorbeeld.
 
-   ![Opties voor landinstellingen instellen in het ontwikkelingssysteem](../../assets/configuration/split-deploy-set-locale.png)
+   ![ plaats scèneopties in het ontwikkelingssysteem ](../../assets/configuration/split-deploy-set-locale.png)
 
-1. Van de **Tijdzone** lijst, klik **GMT+00:00 (UTC)**.
-1. Wis de **Systeemwaarde gebruiken** selectievakje naast **Gewichtseenheid** veld.
-1. Van de **Gewichtseenheid** lijst, klik **kgs**.
-1. Klikken **Config opslaan**.
+1. Van de **lijst van de Tijdzone**, klik **GMT+00:00 (UTC)**.
+1. Ontruim het **checkbox van de systeemwaarde van het Gebruik** naast het **3} gebied van de Eenheid van de Gewicht.**
+1. Van de **lijst van de Eenheid van 0} Gewicht, klik** kgs **.**
+1. Klik **sparen Config**.
 1. Maak de cache leeg als daarom wordt gevraagd.
 
 ## Stap 2: Werk de gedeelde configuratie bij
 
-Genereer het gedeelde configuratiebestand, `app/etc/config.php`, in uw ontwikkelingssysteem en breng het over gebruikend broncontrole aan uw bouwstijlsysteem zoals die in deze sectie wordt besproken.
+Genereer het gedeelde configuratiedossier, `app/etc/config.php`, in uw ontwikkelingssysteem en breng het over gebruikend broncontrole aan uw bouwstijlsysteem zoals die in deze sectie wordt besproken.
 
 {{$include /help/_includes/config-save-config.md}}
 
@@ -76,16 +76,16 @@ De laatste stap in het proces is uw productiesysteem van broncontrole bij te wer
 
 ### Wijzigingen in Admin controleren
 
-**Om te controleren of deze instellingen niet kunnen worden bewerkt in de beheerdersfunctie**:
+**om deze montages te verifiëren zijn niet editable in Admin**:
 
 1. Meld u aan bij de beheerder.
-1. Klikken **Winkels** > Instellingen > **Configuratie** > Algemeen > **Algemeen**.
-1. Vouw in het rechterdeelvenster uit **Landinstellingen**.
+1. Klik **Slaat** op > Montages > **Configuratie** > Algemeen > **Algemeen**.
+1. In de juiste ruit, breid **Opties van de Landinstelling** uit.
 
    De opties die u zojuist hebt ingesteld, worden als volgt weergegeven:
 
-   ![Configuration options not editable in the Admin](../../assets/configuration/split-deploy-not-editable.png)
+   ![ de opties van de Configuratie niet editable in Admin ](../../assets/configuration/split-deploy-not-editable.png)
 
 >[!INFO]
 >
->Als u een instelling wilt wijzigen die is vergrendeld in de beheerfunctie, gebruikt u de opdracht [`magento config:set --lock` command](../cli/set-configuration-values.md).
+>Als u een instelling wilt wijzigen die is vergrendeld in Beheer, gebruikt u de opdracht [`magento config:set --lock` ](../cli/set-configuration-values.md) .

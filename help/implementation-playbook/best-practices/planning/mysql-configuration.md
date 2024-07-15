@@ -1,15 +1,15 @@
 ---
 title: Best practices voor MySQL-configuratie
-description: Leer hoe MySQL triggers en slave verbindingen de plaatsprestaties van de Handel en hoe te om hen effectief te gebruiken beïnvloeden.
+description: Leer hoe MySQL triggers and slave connections de siteprestaties van Commerce beïnvloeden en hoe u deze effectief kunt gebruiken.
 role: Developer
 feature: Best Practices
-source-git-commit: 3e0187b7eeb6475ea9c20bc1da11c496b57853d1
+exl-id: 7c2f51fd-9333-4954-bd35-79c2de3cb2ff
+source-git-commit: 823498f041a6d12cfdedd6757499d62ac2aced3d
 workflow-type: tm+mt
-source-wordcount: '533'
+source-wordcount: '506'
 ht-degree: 0%
 
 ---
-
 
 # Best practices voor MySQL-configuratie
 
@@ -40,19 +40,19 @@ Deze extra overhead kan de siteprestaties op de site negatief beïnvloeden als e
 
 >[!WARNING]
 >
->Adobe Commerce ondersteunt geen aangepaste triggers in de Adobe Commerce-database omdat aangepaste triggers incompatibiliteiten met toekomstige Adobe Commerce-versies kunnen introduceren. Voor beste praktijken, zie [Algemene MySQL-richtlijnen](../../../installation/prerequisites/database/mysql.md) in de documentatie van Adobe Commerce.
+>Adobe Commerce ondersteunt geen aangepaste triggers in de Adobe Commerce-database omdat aangepaste triggers incompatibiliteiten met toekomstige Adobe Commerce-versies kunnen introduceren. Voor beste praktijken, zie [ Algemene Richtlijnen MySQL ](../../../installation/prerequisites/database/mysql.md) in de documentatie van Adobe Commerce.
 
 ### Effectief gebruik
 
 Volg deze richtlijnen om prestatieproblemen te voorkomen bij het gebruik van triggers:
 
 - Als u douanetriggers hebt die sommige gegevens schrijven wanneer de trekker wordt uitgevoerd, beweeg deze logica om rechtstreeks aan de controletabellen in plaats daarvan te schrijven. Bijvoorbeeld, door een extra vraag in de toepassingscode toe te voegen, na de vraag u was bedoeld om de trekker voor tot stand te brengen.
-- Bekijk bestaande aangepaste triggers en overweeg deze te verwijderen en rechtstreeks vanuit de toepassingszijde naar de tabellen te schrijven. Controleren op bestaande triggers in uw database met de opdracht [`SHOW TRIGGERS` SQL-instructie](https://dev.mysql.com/doc/refman/8.0/en/show-triggers.html).
-- Voor extra hulp, vragen, of zorgen, [een Adobe Commerce-ondersteuningsticket verzenden](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html?#submit-ticket).
+- Bekijk bestaande aangepaste triggers en overweeg deze te verwijderen en rechtstreeks vanuit de toepassingszijde naar de tabellen te schrijven. Controle voor bestaande trekkers in uw gegevensbestand door de [`SHOW TRIGGERS` SQL Verklaring ](https://dev.mysql.com/doc/refman/8.0/en/show-triggers.html) te gebruiken.
+- Voor extra hulp, vragen, of zorgen, [ voorleggen een kaartje van de Steun van Adobe Commerce ](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html?#submit-ticket).
 
 ## Slave-verbindingen
 
-Adobe Commerce kan meerdere databases asynchroon lezen. Als u een hoge lading voor het gegevensbestand MySQL van een plaats van de Handel verwacht die op de architectuur van de wolkeninfrastructuur Pro wordt opgesteld, adviseert de Adobe toelatend de slave MYSQL verbinding.
+Adobe Commerce kan meerdere databases asynchroon lezen. Als u een hoge belasting verwacht voor de MySQL-database van een Commerce-site die wordt geïmplementeerd op de Pro-architectuur van de cloudinfrastructuur, wordt u aangeraden de MYSQL-slave-verbinding in te schakelen.
 
 Wanneer u de MYSQL slave verbinding toelaat, gebruikt Adobe Commerce een read-only verbinding aan het gegevensbestand om read-only verkeer op een niet hoofdknoop te ontvangen. De prestaties verbeteren door lading het in evenwicht brengen wanneer slechts één knoop lees-schrijf verkeer behandelt.
 
@@ -62,13 +62,13 @@ Adobe Commerce op cloudinfrastructuur, alleen Pro-architectuur
 
 ### Configuratie
 
-In de Adobe Commerce op cloudinfrastructuur kunt u de standaardconfiguratie voor de MYSQL-slave-verbinding overschrijven door de instelling van de [MYSQL_USE_SLAVE_CONNECTION](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure/env/stage/variables-deploy.html#mysql_use_slave_connection) variabele. Deze variabele instellen op `true` om automatisch een alleen-lezen verbinding met de database te gebruiken.
+In Adobe Commerce op wolkeninfrastructuur, kunt u de standaardconfiguratie voor de MYSQL slave verbinding met voeten treden door [ MYSQL_USE_SLAVE_CONNECTION ](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure/env/stage/variables-deploy.html#mysql_use_slave_connection) variabele te plaatsen. Stel deze variabele in op `true` als u automatisch een alleen-lezen verbinding met de database wilt gebruiken.
 
-**De MySQL-slave-verbinding inschakelen**:
+**om de MySQL slave verbinding** toe te laten:
 
 1. Wijzig op uw lokale werkstation de projectmap.
 
-1. In de `.magento.env.yaml` bestand instellen `MYSQL_USE_SLAVE_CONNECTION` naar waar.
+1. Stel in het bestand `.magento.env.yaml` de waarde `MYSQL_USE_SLAVE_CONNECTION` in op true.
 
    ```
    stage:
@@ -76,6 +76,6 @@ In de Adobe Commerce op cloudinfrastructuur kunt u de standaardconfiguratie voor
        MYSQL_USE_SLAVE_CONNECTION: true
    ```
 
-1. De `.magento.env.yaml` bestand verandert en naar de externe omgeving duwen.
+1. Leg de wijzigingen in het `.magento.env.yaml` -bestand vast en druk op de externe omgeving.
 
    Nadat de implementatie is voltooid, wordt de MySQL-slave-verbinding ingeschakeld voor de cloudomgeving.

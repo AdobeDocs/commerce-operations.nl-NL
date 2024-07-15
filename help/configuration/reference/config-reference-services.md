@@ -12,15 +12,15 @@ ht-degree: 0%
 
 # Overzicht van serviceconfiguratiepaden
 
-In deze sectie worden de namen van variabelen en configuratiepaden weergegeven die beschikbaar zijn voor opties in de beheerdersruimte onder **Winkels** > Instellingen > **Configuratie** > **Services**.
+Deze sectie maakt een lijst van veranderlijke namen en config wegen beschikbaar voor opties in Admin onder **Slaat** > Montages > **Configuratie** > **de Diensten** op.
 
-De [`magento app:config:dump` command](../cli/export-configuration.md) deze waarden naar het gedeelde configuratiebestand schrijft, `app/etc/config.php`, die onder broncontrole moeten staan. Om naar keuze om het even welke configuratiemontages met voeten te treden of gevoelige montages te plaatsen, zie [Omgevingsvariabelen gebruiken om configuratie-instellingen te overschrijven](override-config-settings.md#environment-variables). Dit onderwerp doet het _niet_ list [gevoelige en systeemspecifieke waarden](config-reference-sens.md).
+Het [`magento app:config:dump` bevel ](../cli/export-configuration.md) schrijft deze waarden aan het gedeelde configuratiedossier, `app/etc/config.php`, dat in broncontrole zou moeten zijn. Om naar keuze om het even welke configuratiemontages met voeten te treden of gevoelige montages te plaatsen, zie [ de milieuvariabelen van het Gebruik om configuratiemontages ](override-config-settings.md#environment-variables) met voeten te treden. Dit onderwerp __ lijst [ niet gevoelige en systeem-specifieke waarden ](config-reference-sens.md).
 
-## Web API-paden voor handel
+## Commerce Web API-paden
 
-Deze configuratiewaarden zijn beschikbaar in de Admin in **Winkels** > Instellingen > **Configuratie** > **Services** > **Web-API**.
+Deze configuratiewaarden zijn beschikbaar in Admin in **Slaat** > Montages > **Configuratie** > **Diensten** > **Web API**.
 
-| Naam | Config-pad | Alleen handel? |
+| Naam | Config-pad | Alleen Commerce? |
 |--------------|--------------|--------------|
 | Standaardresponstekenreeks | `webapi/soap/charset` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 | Anonieme toegang voor gasten toestaan | `webapi/webapisecurity/allow_insecure` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
@@ -29,9 +29,9 @@ Deze configuratiewaarden zijn beschikbaar in de Admin in **Winkels** > Instellin
 
 ## Handmatige paden
 
-Deze configuratiewaarden zijn beschikbaar in de Admin in **Winkels** > Instellingen > **Configuratie** > **Services** > **OAuth**.
+Deze configuratiewaarden zijn beschikbaar in Admin in **Slaat** > Montages > **Configuratie** > **Diensten** > **OAuth**.
 
-| Naam | Config-pad | Alleen handel? |
+| Naam | Config-pad | Alleen Commerce? |
 |--------------|--------------|--------------|
 | Levensduur klanttoken (uren) | `oauth/access_token_lifetime/customer` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 | Levensduur beheertoken (uren) | `oauth/access_token_lifetime/admin` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
@@ -39,6 +39,6 @@ Deze configuratiewaarden zijn beschikbaar in de Admin in **Winkels** > Instellin
 | Vervalperiode | `oauth/cleanup/expiration_period` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 | Vervalperiode | `oauth/consumer/expiration_period` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 | OAuth Consumer credentials HTTP Post maxredirects | `oauth/consumer/post_maxredirects` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
-| OAuth Consumer credentials HTTP Post timeout | `oauth/consumer/post_timeout` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
+| OAuth consumer credentials HTTP Post timeout | `oauth/consumer/post_timeout` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 
 {style="table-layout:auto"}

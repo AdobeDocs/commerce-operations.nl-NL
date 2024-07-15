@@ -5,7 +5,7 @@ exl-id: b600b0e3-c6fd-4b86-ad2a-a445e599f1bd
 feature: Services
 source-git-commit: 94d7a57dcd006251e8eefbdb4ec3a5e140bf43f9
 workflow-type: tm+mt
-source-wordcount: '1108'
+source-wordcount: '1107'
 ht-degree: 0%
 
 ---
@@ -19,15 +19,15 @@ Adobe Managed Services biedt gehoste en beheerde toepassing en infrastructuur vo
 
 ## Voordelen
 
-![Infografisch overzicht van de voordelen van Adobe Managed Services](../../assets/playbooks/managed-services-benefits.png)
+![ Infographic tonend voordelen van Adobe Managed Services ](../../assets/playbooks/managed-services-benefits.png)
 
 ### Vergelijking van implementatieopties
 
 De Adobe Managed Services biedt belangrijke voordelen over op-gebouw en niet beheerde wolkenimplementaties, met inbegrip van:
 
-- **Verbeterde doelstellingen van het de dienstniveau (SLTs)**—Snellere responstijden dan standaard Adobe Commerce-ondersteuning.
-- **Verbeterde overeenkomsten van het de dienstniveau (SLAs)**—99,9% toepassingsniveau dat Adobe Commerce voor klanten met cloudinfrastructuur bovenop het infrastructuurniveau van 99,99% komt.
-- **Speciale cloud-expertise**—Managed Services biedt klanten een aangewezen Customer Success Engineer (CSE) die als expert op het gebied van toepassingen en cloudinfrastructuur fungeert. CSE werkt met klanten en hun partners, die hen van beste praktijken en begeleiding voorzien om tijd aan markt te versnellen, die omvatten:
+- **Verbeterde doelstellingen van het de dienstniveau (SLTs)** - Snellere reactietijden dan standaardAdobe Commerce steun.
+- **Verbeterde overeenkomsten van het de dienstniveau (SLAs)** - 99.9% toepassingsniveau dat regelmatige Adobe Commerce op de klanten van de wolkeninfrastructuur bovenop het 99.99% infrastructuurniveau krijgt.
+- **Aangewezen de Expertise van de Wolk** - Managed Services voorziet klanten van een aangewezen Ingenieur van het Succes van de Klant (CSE) die als toepassing en de deskundige van de wolkeninfrastructuur dient. CSE werkt met klanten en hun partners, die hen van beste praktijken en begeleiding voorzien om tijd aan markt te versnellen, die omvatten:
    - Handleiding en ondersteuning via het instapproces
    - provisioning en platforminstellingen beheren
    - Advies over architectuurprincipes voor integratie en aanpassingen
@@ -37,7 +37,7 @@ De Adobe Managed Services biedt belangrijke voordelen over op-gebouw en niet beh
 
 Bekijk de volgende informatie voor een gedetailleerdere vergelijking van de belangrijkste Managed Services-voordelen:
 
-![Infografisch tonen van een vergelijking van Adobe Managed Services met andere implementatieopties van Adobe Commerce](../../assets/playbooks/managed-services-compare.png)
+![ Infographic die een vergelijking van Adobe Managed Services aan andere de implementatieopties van Adobe Commerce tonen ](../../assets/playbooks/managed-services-compare.png)
 
 ## Taken en verantwoordelijkheden
 
@@ -81,7 +81,7 @@ Adobe biedt een reeks services voor de levering, ontwikkeling, staging en produc
             <td>Eigenaar</td>
         </tr>
         <tr>
-            <td>Toegang tot Adobe Commerce-broncode</td>
+            <td>Adobe Commerce Source Code Access</td>
             <td></td>
             <td></td>
             <td>Eigenaar</td>
@@ -372,15 +372,15 @@ Adobe biedt een reeks services voor de levering, ontwikkeling, staging en produc
 
 De beveiligingsstapel van de Adobe voor Managed Services bouwt beveiliging op elk niveau op met behulp van automatisering en consistentie om menselijke fouten te beperken. De ontwikkelings en verrichtingenteams erven automatisch veiligheidscontroles van verschillende niveaus van de stapel.
 
-Platformpartners, zoals Amazon Web Services en Microsoft Azure, zorgen voor maximale beveiligingsdekking bij het toepassen van platformaanpassingen, terwijl het Managed Services-team van Adobe basisbeveiligingsservices biedt, zoals compatibiliteit, registratie, verificatie, scannen en controle, en serverbeveiliging en beveiligde toepassingsconfiguratie. Zie [Adobe Commerce Security](https://business.adobe.com/products/magento/secure-ecommerce.html) voor meer informatie .
+Platformpartners, zoals Amazon Web Services en Microsoft Azure, zorgen voor maximale beveiligingsdekking bij het toepassen van platformaanpassingen, terwijl het Managed Services-team van Adobe basisbeveiligingsservices biedt, zoals compatibiliteit, registratie, verificatie, scannen en controle, en serverbeveiliging en beveiligde toepassingsconfiguratie. Zie {de Veiligheid van 0} Adobe Commerce ](https://business.adobe.com/products/magento/secure-ecommerce.html) voor meer informatie.[
 
 Het volgende diagram toont de de veiligheidstechnologiestapel van Managed Services van de Adobe:
 
-![Diagram met Adobe Managed Services-beveiligingsstapel](../../assets/playbooks/managed-services-security-stack.svg)
+![ Diagram die de veiligheidsstapel van Managed Services van de Adobe tonen ](../../assets/playbooks/managed-services-security-stack.svg)
 
 ## Hulp bij upgrades
 
-Het Managed Services-team speelt een actieve rol bij het plannen en ondersteunen van het upgradeproces. Uw Ingenieur van het Succes van de Klant (CSE) werkt met uw team van het verbeteringsproject, met inbegrip van projectmanagers, en ontwikkelaars (interne vakinhouddeskundigen, Adobe verklaarde partners, of beroeps van de Raadpleging van de Adobe) om uw team te helpen correcte planning en naleving van beste praktijken tijdens de verbetering verzekeren.
+Het Managed Services-team speelt een actieve rol bij het plannen en ondersteunen van het upgradeproces. Uw Ingenieur van het Succes van de Klant (CSE) werkt met uw team van het verbeteringsproject, met inbegrip van projectmanagers, en ontwikkelaars (interne vakinhouddeskundigen, Adobe verklaarde partners, of beroeps van Adobe Consulting) om uw team te helpen correcte planning en naleving van beste praktijken tijdens de verbetering verzekeren.
 
 Managed Services CSE&#39;s hebben met Adobe Commerce-klanten samengewerkt om upgrades uit te voeren in grote omgevingen. Uw CSE kan u helpen deskundige kennis gebruiken om verbeteringssucces te maximaliseren terwijl het minimaliseren van onderbreking en het verminderen van algemene risico. Bovendien werken CSEs van Managed Services met uw specifieke het opvoeren milieu voor de verbetering zodat de bestaande productieprocessen niet worden beïnvloed terwijl het bevestigen van de verbetering.
 
@@ -402,29 +402,29 @@ Adobe biedt een reeks services voor de levering, ontwikkeling, staging en produc
     <td>Upgradeprojectplan maken</td>
     <td>Eigenaar</td>
     <td>Medewerker</td>
-    <td>Medewerker<br />CSE verstrekt verbeteringsmalplaatje en verbeteringsplansteekproeven; biedt raad en beste praktijktips aan.</td>
+    <td>De medewerker <br /> CSE verstrekt verbeteringsmalplaatje en verbeteringsplansteekproeven; biedt raad en beste praktijken uiteinden aan.</td>
   </tr>
   <tr>
     <td>Noodzakelijke infrastructuurwijzigingen bepalen</td>
     <td></td>
     <td>Medewerker</td>
-    <td>Eigenaar<br />CSE beoordeelt de infrastructuur voor staging en productie om een juiste grootte te garanderen.</td>
+    <td>De revisies van de eigenaar <br /> CSE het opvoeren en productisinfrastructuur om juiste grootte te verzekeren.</td>
   </tr>
   <tr>
-    <td>De complexiteit van upgrades beoordelen<br />Identificeer en documenteer pakketten, kwesties &amp; moeilijke situaties, en derde partij &amp; douanemodules</td>
+    <td>Bespreek verbeteringsingewikkeldheid <br /> identificeer en documentpakketten, kwesties &amp; moeilijke situaties, en 3de partij &amp; douanemodules</td>
     <td>Medewerker</td>
     <td>Eigenaar</td>
-    <td>Medewerker<br />CSE verstrekt de rapporten en de aanbevelingen van het Hulpmiddel van de Verenigbaarheid van de Verbetering.</td>
+    <td>De medewerker <br /> CSE verstrekt de rapporten en de aanbevelingen van het Hulpmiddel van de Verenigbaarheid van de Verbetering.</td>
   </tr>
   <tr>
     <td rowspan="3">Upgrade uitvoeren</td>
-    <td>Infrastructuurservices upgraden<br />[MariaDB, Redis, Open Search en Konijn MQ] (Staging en Productie)</td>
+    <td>De infrastructuurdiensten van de verbetering <br /> [MariaDB, Redis, Open Onderzoek, en Konijn MQ] (het Opvoeren en de Productie)</td>
     <td></td>
     <td></td>
-    <td>Eigenaar<br />CSE coördineert de dienstverbeteringen van de infrastructuurdienst.<br />CSE plant conferentievergaderingsgebeurtenis voor verbeteringen.<br />CSE helpt bij de gegevensmigratie van Productie naar Staging.</td>
+    <td>Eigenaar <br /> CSE coördineert de dienstverbeteringen van de infrastructuurdienst.<br /> CSE plant conferentievergaderingsgebeurtenis voor verbeteringen.<br /> CSE staat met gegevensmigratie van Productie aan het Opvoeren bij.</td>
   </tr>
   <tr>
-    <td>De de codebasis en aanpassingen van de Handel van de update; code recompilatie en code refactoring</td>
+    <td>Commerce-codebasis en -aanpassingen bijwerken; code opnieuw compileren en code opnieuw refactoring uitvoeren</td>
     <td>Medewerker</td>
     <td>Eigenaar</td>
     <td></td>
@@ -433,33 +433,33 @@ Adobe biedt een reeks services voor de levering, ontwikkeling, staging en produc
     <td>Controles en probleemoplossing na de upgrade uitvoeren</td>
     <td></td>
     <td>Eigenaar</td>
-    <td>Medewerker<br />CSE voert post-verbeterings runbook uit om kwesties met betrekking tot verbetering te ontdekken en te verhelpen.</td>
+    <td>De medewerker <br /> CSE voert post-verbeterings runbook uit om kwesties met betrekking tot verbetering te ontdekken en te verbeteren.</td>
   </tr>
   <tr>
     <td rowspan="3">UAT en Starten</td>
     <td>Prestatietests en beveiligingstests uitvoeren</td>
     <td>Medewerker</td>
     <td>Eigenaar</td>
-    <td>Medewerker<br />CSE helpt bij het testen van de belasting door de prestaties van de toepassing en de infrastructuur te controleren.<br />CSE helpt bij het configureren van Commerce Security Scan Tool.</td>
+    <td>De medewerker <br /> CSE staat met lading het testen bij door prestaties van toepassing en infrastructuur te controleren.<br /> CSE staat bij het vormen van het Hulpmiddel van het Scannen van de Veiligheid van Commerce bij.</td>
   </tr>
   <tr>
     <td>Testen van gebruikerstoegang tijdens afspelen</td>
     <td>Eigenaar</td>
     <td>Medewerker</td>
-    <td>Medewerker<br />CSE valideert de toepassing en de infrastructuur voert correct na verbetering uit.</td>
+    <td>De medewerker <br /> CSE bevestigt de toepassing en de infrastructuur correct na verbetering uitvoeren.</td>
   </tr>
   <tr>
     <td>Starten naar productie</td>
     <td>Medewerker</td>
     <td>Eigenaar</td>
-    <td>Medewerker<br />CSE-programma's starten conferentie-vergadering.</td>
+    <td>Bijdrager <br /> CSE programma's lanceert de gebeurtenis van de conferentievergadering.</td>
   </tr>
   <tr>
-    <td>Na starten</td>
+    <td>Post-Launch</td>
     <td></td>
     <td>Medewerker</td>
     <td>Medewerker</td>
-    <td>Eigenaar<br />CSE bewaakt de prestaties van toepassingen en infrastructuur.</td>
+    <td>De eigenaar <br /> CSE controleert prestaties van toepassing en infrastructuur.</td>
   </tr>
 </tbody>
 </table>

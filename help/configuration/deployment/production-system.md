@@ -1,10 +1,10 @@
 ---
 title: Installatie van productiesysteem
-description: Leer hoe u een productiesysteem instelt voor de toepassing Commerce.
+description: Leer hoe u een productiesysteem instelt voor de Commerce-toepassing.
 exl-id: e678e97e-d9f2-4f24-bb6b-1994a2a1167c
 source-git-commit: 95ffff39d82cc9027fa633dffedf15193040802d
 workflow-type: tm+mt
-source-wordcount: '376'
+source-wordcount: '377'
 ht-degree: 0%
 
 ---
@@ -13,8 +13,8 @@ ht-degree: 0%
 
 Je kunt één productiesysteem hebben. Alle volgende waarden moeten waar zijn:
 
-- Alle code van de Handel is in broncontrole in de zelfde bewaarplaats zoals de ontwikkeling en bouwsystemen
-- Controleer of alle volgende elementen aanwezig zijn: _inbegrepen_ bij broncontrole:
+- Alle Commerce-code bevindt zich in de broncontrole in dezelfde opslagplaats als de ontwikkelings- en bouwsystemen
+- Zorg ervoor elk van het volgende _inbegrepen_ in broncontrole is:
 
    - `app/etc/config.php`
    - `generated` map (en submappen)
@@ -22,15 +22,15 @@ Je kunt één productiesysteem hebben. Alle volgende waarden moeten waar zijn:
    - `pub/media/wysiwyg` map (en submappen)
    - `pub/static` map (en submappen)
 
-- Handel 2.2 of later moet worden geïnstalleerd en ingesteld voor [productiemodus](../bootstrap/application-modes.md#production-mode)
-- De eigenaar en machtigingen van het bestandssysteem zijn ingesteld zoals beschreven in [Vereiste voor uw ontwikkeling, bouw, en productiesystemen](../deployment/prerequisites.md).
+- Commerce 2.2 of later moet worden geïnstalleerd en voor [ productiemodus ](../bootstrap/application-modes.md#production-mode) worden geplaatst
+- Het heeft bezit van het dossiersysteem en toestemmingen die zoals in [ worden besproken Vereiste voor uw ontwikkeling, bouwt, en productiesystemen ](../deployment/prerequisites.md).
 
 ## Een productiemachine instellen
 
 Een productiemachine instellen:
 
-1. Na het installeren van Handel of het trekken van het uit broncontrole, login aan de productieserver als, of schakelaar aan, de eigenaar van het dossiersysteem.
-1. Maken `~/.ssh/.composer/auth.json` als u dat nog niet hebt gedaan.
+1. Na het installeren van Commerce of het trekken van het uit broncontrole, login aan de productieserver als, of schakelaar aan, de eigenaar van het dossiersysteem.
+1. Maak `~/.ssh/.composer/auth.json` als u dat nog niet hebt gedaan.
 
    Maak de map:
 
@@ -38,9 +38,9 @@ Een productiemachine instellen:
    mkdir -p ~/.ssh/.composer
    ```
 
-   Maken `auth.json` in die map.
+   Maak `auth.json` in die map.
 
-   `auth.json` moet uw [verificatietoetsen](../../installation/prerequisites/authentication-keys.md).
+   `auth.json` moet uw [ authentificatietoetsen ](../../installation/prerequisites/authentication-keys.md) bevatten.
 
    Hieronder volgt een monster:
 
@@ -55,30 +55,30 @@ Een productiemachine instellen:
    }
    ```
 
-1. Sla uw wijzigingen op in `auth.json`.
-1. Kopiëren `<Commerce root dir>/app/etc/env.php` van uw ontwikkelingssysteem naar uw productiesysteem.
-1. Openen `env.php` in een teksteditor en wijzig de vereiste waarden (bijvoorbeeld gegevens over databaseverbinding).
-1. Voer de [`magento config:set`](../cli/set-configuration-values.md) of [`magento config:set-sensitive`](../cli/set-configuration-values.md) bevel om de waarden van om het even welke systeem-specifieke of gevoelige configuratiewaarden, respectievelijk te plaatsen.
+1. Sla uw wijzigingen op in `auth.json` .
+1. Kopieer `<Commerce root dir>/app/etc/env.php` van uw ontwikkelingssysteem naar uw productiesysteem.
+1. Open `env.php` in een teksteditor en wijzig de benodigde waarden (bijvoorbeeld gegevens over databaseverbinding).
+1. Voer de opdracht [`magento config:set`](../cli/set-configuration-values.md) of [`magento config:set-sensitive`](../cli/set-configuration-values.md) uit om respectievelijk de waarden van systeemspecifieke of gevoelige configuratiewaarden in te stellen.
 
    In de volgende sectie ziet u een voorbeeld.
 
 ## Configuratiewaarden instellen op uw productiesysteem
 
-In deze sectie wordt besproken hoe u gevoelige waarden op uw productiesysteem kunt instellen met de `magento config:sensitive:set` gebruiken.
+In deze sectie wordt beschreven hoe u met de opdracht `magento config:sensitive:set` gevoelige waarden op uw productiesysteem instelt.
 
 Om gevoelige waarden in te stellen:
 
-1. Zoek een waarde die u wilt instellen met de opdracht [verwijzing naar gevoelige waarde](../reference/config-reference-sens.md).
+1. Vind een waarde om het gebruiken van de [ gevoelige waardeverwijzing ](../reference/config-reference-sens.md) te plaatsen.
 1. Noteer het configuratiepad voor de instelling.
 1. Meld u aan bij het productiesysteem als of schakel over naar de eigenaar van het bestandssysteem.
-1. Ga naar de installatiemap Handel.
+1. Ga naar de Commerce-installatiemap.
 1. Voer de volgende opdracht in:
 
    ```bash
    bin/magento config:sensitive:set {configuration path} {value}
    ```
 
-   Als u bijvoorbeeld de waarde van de YouTube API-sleutel wilt instellen op `1234`, enter
+   Als u bijvoorbeeld de waarde van de YouTube API-sleutel wilt instellen op `1234` , voert u
 
    ```bash
    bin/magento config:sensitive:set catalog/product_video/youtube_api_key 1234
@@ -95,8 +95,8 @@ Om gevoelige waarden in te stellen:
 1. Meld u aan bij de beheerder om te controleren of de waarde is ingesteld.
 1. Zoek de instelling in Beheer.
 
-   De sleutelinstelling voor de YouTube API bevindt zich bijvoorbeeld in **Winkels** > Instellingen > **Configuratie** > **Catalogus** > **Catalogus** > **Productvideo**.
+   Bijvoorbeeld, wordt YouTube API zeer belangrijk het plaatsen gevestigd in **Opslag** > Montages > **Configuratie** > **Catalogus** > **Catalogus** > **Video van het Product**.
 
    De instelling wordt weergegeven in Beheer en kan niet worden bewerkt. In de volgende afbeelding ziet u een voorbeeld.
 
-   ![Gevoelige instelling in de beheerder](../../assets/configuration/sensitive-set.png)
+   ![ Gevoelige het plaatsen in Admin ](../../assets/configuration/sensitive-set.png)

@@ -7,11 +7,11 @@ kt: 11420
 doc-type: tutorial
 audience: all
 last-substantial-update: 2023-04-13T00:00:00Z
-exl-id: cab6213b-da44-498f-b5c1-e7f89e95038e
+exl-id: cd546571-0241-4619-8696-3c5ebead9939
 feature: Install
-source-git-commit: 94d7a57dcd006251e8eefbdb4ec3a5e140bf43f9
+source-git-commit: 823498f041a6d12cfdedd6757499d62ac2aced3d
 workflow-type: tm+mt
-source-wordcount: '1771'
+source-wordcount: '1779'
 ht-degree: 0%
 
 ---
@@ -55,7 +55,7 @@ Het gebruiken van een secundair gegevensbestand kan om een paar redenen nuttig z
 * Laat mysqldump optreden en zorg ervoor dat normale transacties kunnen plaatsvinden zonder de database te vergrendelen
 * Staat voor toegang tot gegevens van een externe gegevensbron toe zonder de Websites capaciteit te verminderen om informatie voor klantenverzoek te handelen.
 
-De secundaire database kan als een `warm standby`. Dit kan in spel komen wanneer u overweegt om van een primaire gegevensbestandmislukking terug te krijgen. Het bevorderen van het secundaire gegevensbestand aan primair is minder complex dan het herbouwen van en het herstellen van een gegevensbestand aan een pas gecreëerde instantie Mysql. Dit vermindert de daadwerkelijke onderbreking tijdens een terugwinningsverrichting.
+De secundaire database kan als een `warm standby` worden gebruikt. Dit kan in spel komen wanneer u overweegt om van een primaire gegevensbestandmislukking terug te krijgen. Het bevorderen van het secundaire gegevensbestand aan primair is minder complex dan het herbouwen van en het herstellen van een gegevensbestand aan een pas gecreëerde instantie Mysql. Dit vermindert de daadwerkelijke onderbreking tijdens een terugwinningsverrichting.
 
 Er is de kans om sommige verzoeken aan het secundaire gegevensbestand af te leiden. Als deze methode wordt gebruikt, wordt het maken van het secundaire gegevensbestand read-only voorgesteld. Door de toepassing van Adobe Commerce toe te staan om dit secundaire gegevensbestand voor leesverrichtingen te gebruiken helpt door enkele gelezen verzoeken te nemen en het secundaire gegevensbestand toe te staan om te antwoorden. Deze wijziging vertegenwoordigt echter slechts 30 tot 50% van alle aanvragen, maar elke belasting die u van de primaire database kunt verwijderen, is een overwinning.
 

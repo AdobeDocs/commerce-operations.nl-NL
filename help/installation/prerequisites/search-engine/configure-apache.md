@@ -18,9 +18,9 @@ ht-degree: 0%
 
 >[!NOTE]
 >
->Ondersteuning voor OpenSearch is toegevoegd in 2.4.4. OpenSearch is een compatibele Elasticsearch. Zie [Elasticsearch migreren naar OpenSearch](../../../upgrade/prepare/opensearch-migration.md) voor meer informatie .
+>Ondersteuning voor OpenSearch is toegevoegd in 2.4.4. OpenSearch is een compatibele Elasticsearch. Zie [ Elasticsearch migreren aan OpenSearch ](../../../upgrade/prepare/opensearch-migration.md) voor meer informatie.
 
-In deze sectie wordt besproken hoe u Apache als een *onveilig* zodat Adobe Commerce een zoekprogramma kan gebruiken dat op deze server wordt uitgevoerd. In deze sectie wordt het instellen van de HTTP Basic-verificatie niet besproken. Dit wordt besproken in [Beveiligde communicatie met Apache](#secure-communication-with-apache).
+Deze sectie bespreekt hoe te om Apache als *onveilige* volmacht te vormen zodat Adobe Commerce een onderzoeksmotor kan gebruiken die op deze server loopt. Deze sectie bespreekt vestigingHTTP Basis geen authentificatie; dat in [ Veilige mededeling met Apache ](#secure-communication-with-apache) wordt besproken.
 
 >[!NOTE]
 >
@@ -30,7 +30,7 @@ In deze sectie wordt besproken hoe u Apache als een *onveilig* zodat Adobe Comme
 
 Deze sectie bespreekt hoe te om een volmacht te vormen gebruikend een virtuele gastheer.
 
-1. Inschakelen `mod_proxy` als volgt:
+1. Schakel `mod_proxy` als volgt in:
 
    ```bash
    a2enmod proxy_http
@@ -84,9 +84,9 @@ Deze sectie bespreekt hoe te om een volmacht te vormen gebruikend een virtuele g
 
 ## Beveiligde communicatie met Apache
 
-In deze sectie wordt besproken hoe u communicatie tussen Apache en de zoekmachine kunt beveiligen met [HTTP Basic](https://datatracker.ietf.org/doc/html/rfc2617) verificatie met Apache. Raadpleeg een van de volgende bronnen voor meer opties:
+Deze sectie bespreekt hoe te om communicatie tussen Apache en de onderzoeksmotor te beveiligen gebruikend [ Basisauthentificatie van HTTP ](https://datatracker.ietf.org/doc/html/rfc2617) met Apache. Raadpleeg een van de volgende bronnen voor meer opties:
 
-* [Zelfstudie over verificatie en autorisatie voor Apache 2.4](https://httpd.apache.org/docs/2.4/howto/auth.html)
+* [ Apache 2.4 authentificatie en vergunningsleerprogramma ](https://httpd.apache.org/docs/2.4/howto/auth.html)
 
 Zie een van de volgende secties:
 
@@ -99,24 +99,24 @@ Uit veiligheidsoverwegingen kunt u het wachtwoordbestand overal vinden, behalve 
 
 #### Indien nodig htpassword installeren
 
-Ga eerst na of je de Apache hebt `htpasswd` Het hulpprogramma wordt als volgt geïnstalleerd:
+Controleer eerst of het hulpprogramma Apache `htpasswd` als volgt is geïnstalleerd:
 
-1. Voer de volgende opdracht in om te bepalen of `htpasswd` is al geïnstalleerd:
+1. Voer de volgende opdracht in om te bepalen of `htpasswd` al is geïnstalleerd:
 
    ```bash
    which htpasswd
    ```
 
-   Als een pad wordt weergegeven, wordt het geïnstalleerd; als de opdracht geen uitvoer retourneert, `htpasswd` is niet geïnstalleerd.
+   Als een pad wordt weergegeven, wordt dit geïnstalleerd. Als de opdracht geen uitvoer retourneert, wordt `htpasswd` niet geïnstalleerd.
 
-1. Indien nodig, installeren `htpasswd`:
+1. Indien nodig installeert u `htpasswd` :
 
    * Ubuntu: `apt-get -y install apache2-utils`
    * CentOS: `yum -y install httpd-tools`
 
 #### Een wachtwoordbestand maken
 
-Voer de volgende opdrachten in als een gebruiker met `root` rechten:
+Voer de volgende opdrachten in als een gebruiker met `root` -rechten:
 
 ```bash
 mkdir -p /usr/local/apache/password
@@ -128,21 +128,21 @@ htpasswd -c /usr/local/apache/password/.<password file name> <username>
 
 Wanneer
 
-* `<username>` kan:
+* `<username>` kan zijn:
 
    * Uitsnijden instellen: de gebruiker van de webserver of een andere gebruiker.
 
   In dit voorbeeld gebruiken wij de gebruiker van de Webserver, maar de keus van gebruiker is aan u.
 
-   * Elasticsearch instellen: de gebruiker krijgt de naam `magento_elasticsearch` in dit voorbeeld
+   * Elasticsearch instellen: de gebruiker krijgt in dit voorbeeld de naam `magento_elasticsearch`
 
-* `<password file name>` moet een verborgen bestand zijn (begint met `.`) en moet de naam van de gebruiker weerspiegelen. Zie de voorbeelden verderop in deze sectie voor meer informatie.
+* `<password file name>` moet een verborgen bestand zijn (begint met `.` ) en moet de naam van de gebruiker weerspiegelen. Zie de voorbeelden verderop in deze sectie voor meer informatie.
 
 Volg de aanwijzingen op het scherm om een wachtwoord voor de gebruiker te maken.
 
 #### Voorbeelden
 
-**Voorbeeld 1: uitsnijden**
+**Voorbeeld 1: kruin**
 U moet verificatie instellen voor slechts één gebruiker voor uitsnijden; in dit voorbeeld gebruiken we de gebruiker van de webserver. Voer de volgende opdrachten in om een wachtwoordbestand voor de gebruiker van de webserver te maken:
 
 ```bash
@@ -166,7 +166,7 @@ htpasswd -c /usr/local/apache/password/.htpasswd_elasticsearch magento_elasticse
 
 #### Extra gebruikers toevoegen
 
-Als u nog een gebruiker aan het wachtwoordbestand wilt toevoegen, voert u de volgende opdracht in als een gebruiker met `root` rechten:
+Als u nog een gebruiker aan het wachtwoordbestand wilt toevoegen, voert u de volgende opdracht in als een gebruiker met `root` -rechten:
 
 ```bash
 htpasswd /usr/local/apache/password/.htpasswd <username>
@@ -174,7 +174,7 @@ htpasswd /usr/local/apache/password/.htpasswd <username>
 
 ### Beveiligde communicatie met Apache
 
-In deze sectie wordt beschreven hoe u de installatie instelt [HTTP Basic-verificatie](https://httpd.apache.org/docs/2.2/howto/auth.html). Als u TLS en HTTP Basic-verificatie gebruikt, kan niemand communicatie met Elasticsearch of OpenSearch of met uw toepassingsserver onderscheppen.
+Deze sectie bespreekt hoe te opstelling [ de Basisauthentificatie van HTTP ](https://httpd.apache.org/docs/2.2/howto/auth.html). Als u TLS en HTTP Basic-verificatie gebruikt, kan niemand communicatie met Elasticsearch of OpenSearch of met uw toepassingsserver onderscheppen.
 
 In deze sectie wordt besproken hoe u kunt opgeven wie toegang heeft tot de Apache-server.
 
@@ -200,7 +200,7 @@ In deze sectie wordt besproken hoe u kunt opgeven wie toegang heeft tot de Apach
    </Proxy>
    ```
 
-1. Als u het voorgaande hebt toegevoegd aan uw beveiligde virtuele host, verwijdert u `Listen 8080` en de `<VirtualHost *:8080>` aanwijzingen die u eerder hebt toegevoegd aan uw onveilige virtuele host.
+1. Als u het voorgaande aan uw beveiligde virtuele host hebt toegevoegd, verwijdert u `Listen 8080` en de instructies `<VirtualHost *:8080>` die u eerder aan uw onveilige virtuele host hebt toegevoegd.
 
 1. Sla uw wijzigingen op, sluit de teksteditor af en start Apache opnieuw:
 

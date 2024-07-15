@@ -11,7 +11,7 @@ ht-degree: 0%
 
 >[!NOTE]
 >
->De [!DNL Upgrade Compatibility Tool] is alleen beschikbaar voor Adobe Commerce-instanties.
+>[!DNL Upgrade Compatibility Tool] is alleen beschikbaar voor Adobe Commerce-instanties.
 
 <!-- Configuration guide snippets -->
 
@@ -19,13 +19,13 @@ ht-degree: 0%
 
 >[!WARNING]
 >
->Alle Magento CLI bevelen moeten door worden in werking gesteld [eigenaar van bestandssysteem](/help/configuration/cli/config-cli.md#prerequisites).
+>Alle bevelen van het Magento CLI moeten door de [ eigenaar van het dossiersysteem ](/help/configuration/cli/config-cli.md#prerequisites) worden in werking gesteld.
 
 ## Back-upopdrachten {#tip-backup-command}
 
 >[!TIP]
 >
->De `support:backup` command is _niet_ dezelfde codeback-up die door de `setup:backup` gebruiken. De `support:backup` is bedoeld als back-up van code die door Adobe Commerce Support kan worden gecontroleerd.
+>Het `support:backup` bevel is _niet_ de zelfde die codesteun door het `setup:backup` bevel wordt uitgevoerd. De opdracht `support:backup` is bedoeld om een back-up te maken van code voor onderzoek door Adobe Commerce Support.
 
 ## Alleen Adobe Commerce {#ee-only}
 
@@ -37,7 +37,7 @@ ht-degree: 0%
 
 >[!IMPORTANT]
 >
->De functie voor gesplitste databases was [verouderd](https://community.magento.com/t5/Magento-DevBlog/Deprecation-of-Split-Database-in-Magento-Commerce/ba-p/465187?_ga=2.128934671.2024864496.1657558157-1596100530.1657558157) in versie 2.4.2 van Adobe Commerce. Zie [Herstel van een gesplitste database naar één database](/help/configuration/storage/revert-split-database.md).
+>De gespleten gegevensbestandeigenschap was [ afgekeurd ](https://community.magento.com/t5/Magento-DevBlog/Deprecation-of-Split-Database-in-Magento-Commerce/ba-p/465187?_ga=2.128934671.2024864496.1657558157-1596100530.1657558157) in versie 2.4.2 van Adobe Commerce. Zie [ terugkeren van een gespleten gegevensbestand aan één enkel gegevensbestand ](/help/configuration/storage/revert-split-database.md).
 
 <!-- End of Configuration guide snippets -->
 
@@ -45,20 +45,20 @@ ht-degree: 0%
 
 >[!NOTE]
 >
->Adobe Commerce-releases kunnen niet-compatibele wijzigingen (BIC&#39;s) bevatten. Als u wijzigingen die niet compatibel zijn met oudere versies wilt bekijken, raadpleegt u [BIC-referentie](https://developer.adobe.com/commerce/php/development/backward-incompatible-changes/reference/). Belangrijke problemen die niet compatibel zijn met oudere versies worden beschreven in [BIC-hooglichten](https://developer.adobe.com/commerce/php/development/backward-incompatible-changes/highlights/). Niet alle introducties introduceren grote BIC&#39;s.
+>Adobe Commerce-releases kunnen niet-compatibele wijzigingen (BIC&#39;s) bevatten. Om achteruit-onverenigbaar veranderingen te herzien, zie [ verwijzing BIC ](https://developer.adobe.com/commerce/php/development/backward-incompatible-changes/reference/). De grote achteruit-onverenigbaar kwesties worden beschreven in [ hoogtepunten BIC ](https://developer.adobe.com/commerce/php/development/backward-incompatible-changes/highlights/). Niet alle introducties introduceren grote BIC&#39;s.
 
 ## CVE-kennisgeving {#cve-notice}
 
 >[!NOTE]
 >
->Vanaf de versie 2.3.2 wijzen we geïndexeerde CVE-nummers (Common Vulnerabilities and Exposure) toe aan en publiceren we deze voor elke beveiligingsfout die door externe partijen aan ons wordt gemeld. Hierdoor kunnen gebruikers gemakkelijker niet-verholpen kwetsbaarheden in hun implementatie identificeren. Meer informatie over CVE-id&#39;s vindt u op [CVE](https://cve.mitre.org/).
+>Vanaf de versie 2.3.2 wijzen we geïndexeerde CVE-nummers (Common Vulnerabilities and Exposure) toe aan en publiceren we deze voor elke beveiligingsfout die door externe partijen aan ons wordt gemeld. Hierdoor kunnen gebruikers gemakkelijker niet-verholpen kwetsbaarheden in hun implementatie identificeren. U kunt meer over CVE herkenningstekens bij [ CVE ](https://cve.mitre.org/) leren.
 
 ## Overige releasegegevens {#other-release-info}
 
 >[!NOTE]
 >
->Hoewel de code voor verhogingen en insectenmoeilijke situaties die in deze versienota&#39;s worden beschreven met Adobe Commerce worden gebundeld, worden verscheidene van deze projecten (bijvoorbeeld, B2B, de Bouwer van de Pagina, en de Studio van Progressive Webben Application (PWA) ook vrijgegeven onafhankelijk. De fixes van de insect voor deze projecten worden gedocumenteerd in de afzonderlijke, project-specifieke versieinformatie die in de documentatie voor elk project beschikbaar is. Zie [overzicht van productrelease](/help/release/release-notes/overview.md).
+>Hoewel de code voor verhogingen en insectenmoeilijke situaties die in deze versienota&#39;s worden beschreven met Adobe Commerce worden gebundeld, worden verscheidene van deze projecten (bijvoorbeeld, B2B, de Bouwer van de Pagina, en de Studio van Progressive Webben Application (PWA) ook vrijgegeven onafhankelijk. De fixes van de insect voor deze projecten worden gedocumenteerd in de afzonderlijke, project-specifieke versieinformatie die in de documentatie voor elk project beschikbaar is. Zie [ overzicht van de productversie ](/help/release/release-notes/overview.md).
 
 ## PHP Process Control {#php-process-control}
 
-Voordat u indexen kunt uitvoeren in parallelle modus, moet u ondersteuning voor procesbesturing inschakelen (`pcntl`) in PHP. Zie [Installatie](https://www.php.net/manual/en/pcntl.installation.php) in de PHP documentatie.
+Voordat u indexeerders in parallelle modus kunt uitvoeren, moet u ondersteuning voor procesbesturing (`pcntl`) inschakelen in PHP. Zie [ Installatie ](https://www.php.net/manual/en/pcntl.installation.php) in de PHP documentatie.

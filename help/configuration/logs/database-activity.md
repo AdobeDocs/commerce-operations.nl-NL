@@ -1,29 +1,29 @@
 ---
 title: Logboekdatabaseactiviteit
-description: Vorm Handel om gegevensbestandactiviteit te registreren gebruikend de interface van de Registrator.
+description: Configureer Commerce om databaseactiviteiten te registreren met behulp van de Logger-interface.
 feature: Configuration, Logs, Storage
 exl-id: 2487c5ec-a01e-4d87-bc5e-c33643b032df
 source-git-commit: 991bd5fb34a2ffe61aa194ec46e2b04b4ce5b3e7
 workflow-type: tm+mt
-source-wordcount: '119'
+source-wordcount: '87'
 ht-degree: 0%
 
 ---
 
 # Logboekdatabaseactiviteit
 
-In het volgende voorbeeld ziet u hoe u databaseactiviteiten kunt registreren met de [`Magento\Framework\DB\LoggerInterface`][interface], die twee implementaties heeft:
+In het volgende voorbeeld ziet u hoe u databaseactiviteiten kunt registreren met de [`Magento\Framework\DB\LoggerInterface`][interface] , die twee implementaties heeft:
 
 - Er wordt niets geregistreerd (standaard): [`Magento\Framework\DB\Logger\Quiet`][quiet]
-- Logbestanden voor de `var/log` map: [`Magento\Framework\DB\Logger\File`][file]
+- Hiermee meldt u zich aan bij de map `var/log` : [`Magento\Framework\DB\Logger\File`][file]
 
 >[!TIP]
 >
->U kunt CLI van de Handel gebruiken aan [het toelaten en onbruikbaar maken van het gegevensbestandregistreren](../cli/enable-logging.md#database-logging).
+>U kunt Commerce CLI gebruiken om [ gegevensbestand het registreren ](../cli/enable-logging.md#database-logging) toe te laten en onbruikbaar te maken.
 
-De standaardconfiguratie wijzigen van `\Magento\Framework\DB\Logger\LoggerProxy`, bewerk uw `app/etc/di.xml`.
+Als u de standaardconfiguratie van `\Magento\Framework\DB\Logger\LoggerProxy` wilt wijzigen, bewerkt u uw `app/etc/di.xml` .
 
-Wijzig eerst de standaardwaarden van `loggerAlias` en `logCallStack` argumenten voor:
+Wijzig eerst de standaardwaarden van `loggerAlias` - en `logCallStack` -argumenten in:
 
 ```xml
 <type name="Magento\Framework\DB\Logger\LoggerProxy">
@@ -36,7 +36,7 @@ Wijzig eerst de standaardwaarden van `loggerAlias` en `logCallStack` argumenten 
 </type>
 ```
 
-Geef vervolgens het bestandspad op voor `Magento\Framework\DB\Logger\File`:
+Geef vervolgens het bestandspad op voor `Magento\Framework\DB\Logger\File` :
 
 ```xml
 <type name="Magento\Framework\DB\Logger\File">

@@ -23,4 +23,4 @@ Als de update van uw module mislukt, worden berichten die lijken op de volgende 
 
 In het voorgaande voorbeeld is er geen componentversie die moet worden teruggedraaid. Neem contact op met de leverancier van de component of probeer het probleem zelf op te lossen.
 
-In de tussentijd kunt u teruggaan naar een vorige versie door op **Terugdraaien**, die uw gegevens herstelt, zelfs als u eerder geen back-up hebt gemaakt.
+In de tussentijd, kunt u terug naar een vorige versie rollen door **Terugdraaiend** te klikken, die uw gegevens terugkrijgt zelfs als u niet eerder file maakte.

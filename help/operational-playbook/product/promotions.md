@@ -5,7 +5,7 @@ exl-id: 3b1cf7ab-6a24-40eb-b504-c19e3a064231
 feature: Best Practices, Promotions/Events
 source-git-commit: e83e2359377f03506178c28f8b30993c172282c7
 workflow-type: tm+mt
-source-wordcount: '199'
+source-wordcount: '201'
 ht-degree: 0%
 
 ---
@@ -23,7 +23,7 @@ Nu het grootste deel van de bevolking overschakelt naar online winkelen, moeten 
 
 Elk van de zes P&#39;s is even belangrijk, maar voor de detailhandel in producten moeten promoties als tactiek worden gebruikt om het verkeer op de plaats te vergroten en tot hogere conversietarieven te leiden. Promoties helpen producten en services van het merk op de markt te brengen. Er zijn verschillende promotieniveaus, zoals verzending, product en bestelling.
 
-![reclameadvertentie](../../assets/playbooks/promotion-example.png)
+![ voorbeeld promotionele reclame ](../../assets/playbooks/promotion-example.png)
 
 ## Soorten promoties
 

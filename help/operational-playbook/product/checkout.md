@@ -5,7 +5,7 @@ exl-id: 692236fd-b909-4061-8038-0db19e0ed72b
 feature: Best Practices, Checkout
 source-git-commit: e83e2359377f03506178c28f8b30993c172282c7
 workflow-type: tm+mt
-source-wordcount: '680'
+source-wordcount: '672'
 ht-degree: 0%
 
 ---
@@ -16,7 +16,7 @@ Afhandeling is een essentieel onderdeel van online winkelen. Daar wordt het echt
 
 De afhandelingsstroom is vergelijkbaar met de afwerkingslijn, waar kopers transacties uitvoeren. Maar zelfs een klein probleem bij de kassa kan een enorme negatieve invloed hebben op de omrekeningskoers en het rendement op het geïnvesteerde vermogen, zodat een nog iets betere omrekeningskoers het investeringsrendement enorm kan verhogen. Het verbeteren van uitcheckstromen en processen begint zelfs vóór de checkout pagina.
 
-![Stroomdiagram van het proces van de controle](../../assets/playbooks/checkout-diagram.png)
+![ diagram van de het processtroom van de Controle ](../../assets/playbooks/checkout-diagram.png)
 
 ## Productpagina&#39;s
 
@@ -69,7 +69,7 @@ U mag niet één type optie op de gebruiker afdwingen.
 
 Detailhandelaars moeten verschillende verzendmethoden bieden om aan de behoeften van verschillende klanten te voldoen.
 
-Naast betalingsopties kunnen detailhandelaren ook opties bieden zoals [klikken en verzamelen](click-collect.md).
+Naast betalingsopties, kunnen de detailhandelaren opties zoals [ ook verstrekken klikken en ](click-collect.md) verzamelen.
 
 ## Betalingsgegevens
 
@@ -107,7 +107,7 @@ Er is een verschil tussen B2B- en B2C-uitbetalingsstromen en -processen.
 - Verschillende betalingsopties, zoals creditcard en e-portemonnee
 - Code met coupon toevoegen voor afhandeling
 
-![B2C-uitcheckdiagram](../../assets/playbooks/checkout-b2c.png)
+![ B2C controlediagram ](../../assets/playbooks/checkout-b2c.png)
 
 ### B2B
 
@@ -117,4 +117,4 @@ Er is een verschil tussen B2B- en B2C-uitbetalingsstromen en -processen.
 - Verschillende betalingsopties, zoals inkooporder, overschrijving of cheque
 - Eenvoudig proces om opnieuw te ordenen
 
-![B2B-uitcheckdiagram](../../assets/playbooks/checkout-b2b.png)
+![ B2B controlediagram ](../../assets/playbooks/checkout-b2b.png)

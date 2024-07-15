@@ -19,9 +19,9 @@ ht-degree: 0%
 
 Wanneer het runnen van ondernemingen die veelvoudige plaatsen voor veelvoudige merken in veelvoudige lokale markten (met gelokaliseerde valuta, talen, media, gedeelde catalogi, en unieke wortels) hebben en die onnodige kosten voor de implementatie van zelfde eigenschap en integratie willen vermijden - de Globale Architectuur van de Verwijzing (GRA) is altijd een goede optie.
 
-![Tabel waarin de kosten van verschillen in architectuur worden toegelicht](../../../assets/playbooks/divergent-architecture.svg)
+![ Lijst die de kosten van divergentie in architectuur verklaren ](../../../assets/playbooks/divergent-architecture.svg)
 
-![Tabel die de kosten van geconsolideerde architectuur toelicht](../../../assets/playbooks/consolidated-architecture.svg)
+![ Lijst verklarend de kosten van geconsolideerd in architectuur ](../../../assets/playbooks/consolidated-architecture.svg)
 
 GRA is:
 
@@ -55,4 +55,4 @@ GRA-effecten:
 
 >[!TIP]
 >
->Zie [GRA-voorbeelden](examples.md).
+>Zie [ voorbeelden GRA ](examples.md).

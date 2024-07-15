@@ -1,5 +1,5 @@
 ---
-title: Handelsbeginselen
+title: Commerce-beginselen
 description: Gebruik deze belangrijke leidende beginselen om ervoor te zorgen dat uw Adobe Commerce-project effectief werkt.
 exl-id: 70b7346a-8536-428f-a980-b240bd5eb5ab
 source-git-commit: e76f101df47116f7b246f21f0fe0fa72769d2776
@@ -15,26 +15,26 @@ We raden u aan enkele kernbeginselen van leiderschap te volgen bij het uitvoeren
 
 ## Sponsoring
 
-![Handvouwhart](../../assets/playbooks/sponsorship.png)
+![ Hand vouwend hart ](../../assets/playbooks/sponsorship.png)
 Het hebben van een efficiënte uitvoerende sponsor helpt het project tot maximaal succes leiden. Om echt effectief te zijn, zou deze interne uitvoerend sponsor voldoende anciënniteit en invloed binnen het bedrijf moeten hebben om van andere belanghebbenden in de hele organisatie te kopen. Zij zouden ook een hoog niveau van eigenbelang in het succes van de online opslag en een passie voor digitale transformatie en elektronische handel moeten hebben; echt geloofend in hoe Adobe Commerce de zaken gaat veranderen is ook kritiek.
 
 Een effectieve opdrachtgever moet het beheer, de routekaart en de voortdurende groei van het e-commerceplatform waarborgen, in overeenstemming blijven met de bedrijfsstrategie; het beschermen tegen conflicterende initiatieven of interne politiek en helpen bij het aanpakken van eventuele beperkende factoren, zoals een tekort aan middelen, vaardigheden of budgettaire beperkingen.
 
 ## Aanschaffen
 
-![Ticket plakken uit machine](../../assets/playbooks/buyin.png)
+![ Ticket die uit machine ](../../assets/playbooks/buyin.png) kleeft
 Het is ook van essentieel belang dat het management buy-in wordt uitgevoerd door uw leidinggevende team. Als u meerdere wijzigingsbronnen hebt om de groei te stimuleren, kunt u de groei sneller en eenvoudiger stimuleren. De verantwoordelijkheid voor een succesvol beheer van Adobe Commerce moet worden gedeeld door het hele leidinggevende team. Het is dan de verantwoordelijkheid van de uitvoerende sponsor om het uitvoerend team te winnen door voorbeelden te delen die de waarde van Adobe Commerce in zijn geheel aantonen. Doorgaans richt dit zich op het bieden van een betere klantervaring en de daaropvolgende voordelen voor het bedrijf.
 
 Bij het beheren van e-commercesites of het uitvoeren van digitale projecten zoals Adobe Commerce, zijn de leiders verantwoordelijk voor het controleren van verschillende afdelingen en teams die verschillende delen van de e-commerce initiatieven bezitten. Het is van essentieel belang ervoor te zorgen dat alle groepen een gemeenschappelijke strategie delen om gemeenschappelijke doelstellingen te bereiken. Een interne roadshow om steun van managers te winnen helpt bewustwording te verhogen, teams te richten, en de noodzakelijke middelen voor een optimale implementatie te verkrijgen.
 
 ## Verantwoording
 
-![rondom een tabel geplaatste cijfers](../../assets/playbooks/accountability.png)
+![ cijfers die rond een lijst ](../../assets/playbooks/accountability.png) worden gevangen
 Projectleiding is het leiden van een team naar de succesvolle verwezenlijking van een doeldoelstelling. Het kan vaak een van de meest kritieke gebieden zijn om juist te worden om een e-commerce project met succes te leveren. Succesvol projectleiderschap vereist vaardigheden in zowel management als leiderschap om ervoor te zorgen dat de juiste mensen inkopen en het team in de juiste richting te leiden.
 
 ## C-niveau
 
-![Afbeelding omringd door sterren](../../assets/playbooks/c-level.png)
+![ Figuur die door sterren ](../../assets/playbooks/c-level.png) wordt omringd
 De managers op C-niveau spelen een strategische rol binnen een organisatie. Zij bekleden hoge posities en beïnvloeden de besluiten van het hele bedrijf. C staat voor &quot;Hoofd&quot;, dus een uitvoerend C-niveau is vaak verantwoordelijk voor een volledige afdeling of bedrijfseenheid, zoals Financiën, IT, of Verkoop. Aangezien deze personen belangrijke belanghebbenden binnen de organisatie zijn, is het belangrijk ervoor te zorgen dat zij zich bewust zijn van de voordelen die het e-commerce-project voor de organisatie met zich meebrengt.
 
 Meer in het bijzonder kan het nuttig zijn om de specifieke voordelen van het project voor hun afdeling te identificeren, aangezien dit een belangrijke motiverende factor kan zijn. Het koppelen van tastbare metriek aan de succesvolle levering van het project kan uw belanghebbenden op C-niveau motiveren en transformeren om actieve aanhangers van het digitale transformatieproject te worden.
@@ -43,14 +43,14 @@ Bij kleinere organisaties zijn leidinggevenden op C-niveau vaak intensief betrok
 
 ## Belanghebbenden
 
-![Twee cijfers](../../assets/playbooks/stakeholders.png)
+![ Twee cijfers ](../../assets/playbooks/stakeholders.png)
 Belanghebbenden zijn degenen die belangstelling hebben voor de resultaten van uw project. Zij zijn typisch leden van uw projectteam, projectmanagers, managers, projectsponsors en tenslotte, uw eind - gebruikers. Het is belangrijk dat alle relevante belanghebbenden inkopen om effectieve veranderingen te garanderen. Als u er niet in slaagt steun te krijgen van belangrijke belanghebbenden die bijdragen aan de uiteindelijke beslissing, mislukken projecten vaak.
 
 Het is ook belangrijk om ervoor te zorgen dat u over een effectief proces beschikt om gebruikers op de nieuwe systemen of platforms op te leiden en te informeren. Mensen kunnen vaak een sterke hindernis vormen om te veranderen, vooral wanneer ze niet bekend zijn met een nieuw systeem en de gevolgen die dit kan hebben voor de processen en workflows in hun omgeving. Een effectief veranderingsbeheer en trainingsprocessen kunnen dit helpen beperken. Bovendien zorgt het uploaden van gebruikers ervoor dat u het meeste uit het systeem krijgt. Teams die in het platform goed zijn geversierd, kunnen het platform optimaliseren voor effectiviteit, zodat u de meest bondige oplossing krijgt.
 
 ## Stuurcomité
 
-![Omhulsel met bladwijzer](../../assets/playbooks/steering-committee.png)
+![ Omhulsel met referentie ](../../assets/playbooks/steering-committee.png)
 Stuurcomités zijn adviesorganen bestaande uit hoge belanghebbenden of deskundigen. Zij bieden richtsnoeren voor een reeks factoren die van invloed kunnen zijn op een project. Het doel van de stuurgroep is ervoor te zorgen dat het project met succes wordt uitgevoerd, onder meer door de voordelen van het project te maximaliseren en ervoor te zorgen dat de juiste processen en controles voor projectbeheer worden gevolgd.
 
 ### Gemeenschappelijke taken en verantwoordelijkheden
@@ -72,8 +72,10 @@ Verantwoordelijk voor het waarborgen dat het project gericht is op het bereiken 
 
 - Ontwerpen en benoemt de projectbeheerteams
 - ziet toe op de ontwikkeling van de bedrijfscase en zorgt voor strategische afstemming van ondernemingen
-- bewaakt en controleert de vooruitgang op strategisch niveau, met name door regelmatig de bedrijfscase te evalueren
-- Escaleert kwesties en risico&#39;s (is het escalatiepunt voor kwesties en risico&#39;s, en verzekert dat om het even welke risico verbonden aan het bedrijfscase worden geïdentificeerd, beoordeeld en gecontroleerd)
+- monitort en controleert de vooruitgang op strategisch niveau, met name
+regelmatig evalueren van de bedrijfszaak
+- Escaleert kwesties en risico&#39;s (is het escalatiepunt voor kwesties en
+risico&#39;s, en zorgt ervoor dat alle risico&#39;s die aan de bedrijfscase verbonden zijn, worden geïdentificeerd, beoordeeld en gecontroleerd)
 - Besluiten nemen over escalatieproblemen, met bijzondere aandacht voor voortgezette zakelijke rechtvaardiging
 - Zorgt voor algemene bedrijfszekerheid van het project en zorgt ervoor dat het op de streefwaarde blijft om producten te leveren die de verwachte bedrijfsvoordelen bereiken
 
@@ -157,4 +159,5 @@ Voor een doeltreffend beheer van een site voor e-commerce moet het projectbeheer
 
 Om de organisatie aan boord te krijgen, is het altijd een goed idee om de visie te delen en herhaaldelijk de reden te versterken waarom uw bedrijf in e-commercetechnologie door zowel de klantenvoordelen als bedrijfsvoordelen te richten investeert.
 
-Door documentatie te delen, zoals succescasestudy&#39;s van digitale implementaties, kunt u controleren waarom en hoe deze investering de organisatie naar een nieuw niveau brengt. Als u wilt dat de organisatie digitale transformatie omarmt, is het belangrijk dat u de werknemers laat weten dat dit een prioriteit is.
+Documentatie delen, zoals geslaagde casestudy&#39;s over digitaal
+implementaties, helpt u te valideren waarom en hoe deze investering de organisatie naar een nieuw niveau brengt. Als u wilt dat de organisatie digitale transformatie omarmt, is het belangrijk dat u de werknemers laat weten dat dit een prioriteit is.

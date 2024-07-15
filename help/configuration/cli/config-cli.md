@@ -11,7 +11,7 @@ ht-degree: 0%
 
 # Gereedschap Command-lijn
 
-Commerce heeft één bevel-lijn interface (CLI)—`<magento_root>/bin/magento`—dat installatie- en configuratietaken uitvoert, waaronder:
+Commerce heeft één bevel-lijn interface (CLI) - `<magento_root>/bin/magento` - die installatie en configuratietaken in werking stelt, die omvatten:
 
 - Commerce installeren (en verwante taken zoals het databaseschema bijwerken, een implementatieconfiguratie maken)
 - De cache wissen
@@ -23,20 +23,20 @@ Commerce heeft één bevel-lijn interface (CLI)—`<magento_root>/bin/magento`�
 
 De extra voordelen omvatten:
 
-- Eén opdracht (`<magento_root>/bin/magento list`) bevat een lijst met alle beschikbare installatie- en configuratieopdrachten.
+- Één enkel bevel (`<magento_root>/bin/magento list`) maakt een lijst van alle beschikbare installatie en configuratiebevelen.
 - Consistente gebruikersinterface gebaseerd op Symfony.
 - CLI is verlengbaar zodat kunnen de derdeontwikkelaars &quot;binnen&quot;aan het &quot;stoppen. Dit heeft het extra voordeel om de het leren kromme van gebruikers te elimineren.
 - Opdrachten voor uitgeschakelde modules worden niet weergegeven.
 
-Dit onderwerp bespreekt het vormen van de software van Adobe Commerce gebruikend CLI. Voor informatie over het installeren van Commerce raadpleegt u [Installatiestroom](../../installation/overview.md) in de _Installatiehandleiding_.
+Dit onderwerp bespreekt het vormen van de software van Adobe Commerce gebruikend CLI. Voor informatie over het installeren van Commerce, zie [ stroom van de Installatie ](../../installation/overview.md) in de _gids van de Installatie_.
 
 ## Vereisten
 
 Voordat u begint met het gebruik van de CLI, moet u ervoor zorgen dat:
 
-1. Uw systeem voldoet aan de vereisten die worden besproken in [Systeemvereisten](../../installation/system-requirements.md) in de _Installatiehandleiding_.
-1. U hebt alle vereiste taken uitgevoerd die zijn besproken in [Vereisten](../../installation/prerequisites/overview.md) in de _Installatiehandleiding_.
-1. Nadat u zich hebt aangemeld bij de Commerce-server, schakelt u over naar een gebruiker die gemachtigd is om naar het Commerce-bestandssysteem te schrijven. Zie [schakelen naar de eigenaar van het bestandssysteem](../../installation/prerequisites/file-system/overview.md) in de _Installatiehandleiding_.
+1. Uw systeem voldoet aan de vereisten die in [ Vereisten van het Systeem ](../../installation/system-requirements.md) in de _gids van de Installatie_ worden besproken.
+1. U voltooide alle in de eerste plaats vereiste die taken in [ worden besproken Eerste vereisten ](../../installation/prerequisites/overview.md) in de _gids van de Installatie_.
+1. Nadat u zich hebt aangemeld bij de Commerce-server, schakelt u over naar een gebruiker die gemachtigd is om naar het Commerce-bestandssysteem te schrijven. Zie [ schakelaar aan de eigenaar van het dossiersysteem ](../../installation/prerequisites/file-system/overview.md) in de _gids van de Installatie_.
 
 ## Opdrachten uitvoeren
 
@@ -52,9 +52,9 @@ Als de eigenaar van het bestandssysteem geen aanmeldingen toestaat, kunt u het v
 sudo -u <file system owner> <command>
 ```
 
-**CLI-opdrachten vanuit elke directory uitvoeren**:
+**om bevelen CLI van om het even welke folder** in werking te stellen:
 
-Toevoegen `<magento_root>/bin` op uw systeem `PATH`.
+Voeg `<magento_root>/bin` toe aan uw systeem `PATH` .
 
 Voorbeeld van bash-shell voor CentOS:
 
@@ -64,6 +64,6 @@ export PATH=$PATH:/var/www/html/magento2/bin
 
 U kunt desgewenst het volgende uitvoeren:
 
-- `cd <magento_root>/bin` en uitvoeren als `./magento <command name>`
+- `cd <magento_root>/bin` en voer ze als `./magento <command name>` uit
 - `<magento_root>/bin/magento <command name>`
 - `<magento_root>` is een submap van de webserverhoofdmap

@@ -12,24 +12,24 @@ ht-degree: 0%
 
 # Aanbevelingen voor software
 
-We hebben de volgende software nodig voor productieexemplaren van [!DNL Commerce]:
+De volgende software is vereist voor productieinstanties van [!DNL Commerce] :
 
 * [PHP](../installation/system-requirements.md)
-* Nginx en [PHP-FPM](https://php-fpm.org/)
+* Nginx en [ PHP-FPM ](https://php-fpm.org/)
 * [[!DNL MySQL]](../installation/prerequisites/database/mysql.md)
 * [[!DNL Elasticsearch] of OpenSearch](../installation/prerequisites/search-engine/overview.md)
 
 Voor multiserver plaatsingen, of voor verkopers die op het schrapen van hun zaken plannen, adviseren wij het volgende:
 
-* [[!DNL Varnish] cachegeheugen](../configuration/cache/config-varnish.md)
-* [Redis](../configuration/cache/redis-session.md) voor sessies (vanaf 2.0.6+)
-* Een aparte Redis-instantie als uw [standaardcache](../configuration/cache/redis-pg-cache.md) (gebruik deze instantie niet voor paginacache)
+* [[!DNL Varnish] cache](../configuration/cache/config-varnish.md)
+* [ Redis ](../configuration/cache/redis-session.md) voor zittingen (van 2.0.6+)
+* Een afzonderlijke Redis instantie als uw [ standaardgeheime voorgeheugen ](../configuration/cache/redis-pg-cache.md) (gebruik deze instantie niet voor paginacache)
 
-Zie [systeemvereisten](../installation/system-requirements.md) voor informatie over ondersteunde versies van elk type software.
+Zie [ systeemvereisten ](../installation/system-requirements.md) voor informatie over gesteunde versies van elk type van software.
 
 ## Besturingssysteem
 
-Configuraties en optimalisaties van besturingssystemen zijn vergelijkbaar voor [!DNL Commerce] in vergelijking met andere webtoepassingen met een hoge belasting. Naarmate het aantal gelijktijdige verbindingen dat door de server wordt afgehandeld toeneemt, kan het aantal beschikbare sockets volledig worden toegewezen. De Linux-kernel ondersteunt een mechanisme voor het &quot;hergebruiken&quot; van TCP-verbindingen. Stel de volgende waarde in om dit mechanisme in te schakelen `/etc/sysctl.conf`:
+Configuraties en optimalisaties van besturingssystemen zijn vergelijkbaar voor [!DNL Commerce] in vergelijking met andere webtoepassingen met een hoge belasting. Naarmate het aantal gelijktijdige verbindingen dat door de server wordt afgehandeld toeneemt, kan het aantal beschikbare sockets volledig worden toegewezen. De Linux-kernel ondersteunt een mechanisme voor het &quot;hergebruiken&quot; van TCP-verbindingen. U kunt dit mechanisme inschakelen door de volgende waarde in te stellen in `/etc/sysctl.conf` :
 
 >[!INFO]
 >
@@ -39,7 +39,7 @@ Configuraties en optimalisaties van besturingssystemen zijn vergelijkbaar voor [
 net.ipv4.tcp_tw_reuse = 1
 ```
 
-De kernel-parameter `net.core.somaxconn` Hiermee bepaalt u het maximum aantal open sockets dat op verbindingen wacht. Deze waarde kan veilig worden verhoogd tot 1024, maar moet gecorreleerd zijn met de capaciteit van de server om deze hoeveelheid te verwerken. Stel de volgende waarde in om deze kernel-parameter in te schakelen `/etc/sysctl.conf`:
+De kernel-parameter `net.core.somaxconn` bepaalt het maximum aantal open sockets dat op verbindingen wacht. Deze waarde kan veilig worden verhoogd tot 1024, maar moet gecorreleerd zijn met de capaciteit van de server om deze hoeveelheid te verwerken. U kunt deze kernel-parameter inschakelen door de volgende waarde in te stellen in `/etc/sysctl.conf` :
 
 ```text
 net.core.somaxconn = 1024
@@ -51,7 +51,7 @@ Magento ondersteunt PHP 7.3 en 7.4 volledig. Er zijn verschillende factoren waar
 
 ### PHP-extensies
 
-We raden u aan de lijst met actieve PHP-extensies te beperken tot de extensies die vereist zijn voor [!DNL Commerce] functionaliteit.
+We raden u aan de lijst met actieve PHP-extensies te beperken tot de extensies die vereist zijn voor [!DNL Commerce] -functionaliteit.
 
 Magento Open Source en Adobe Commerce:
 
@@ -114,7 +114,7 @@ Als u meer extensies toevoegt, duurt het laden van de bibliotheek langer.
 
 >[!INFO]
 >
->`php-mcrypt` is verwijderd uit PHP 7.2 en vervangen door de [`sodium` bibliotheek](https://www.php.net/manual/en/book.sodium.php). Zorg ervoor dat [natrium](https://www.php.net/manual/en/sodium.installation.php) is correct ingeschakeld wanneer PHP wordt bijgewerkt.
+>`php-mcrypt` is verwijderd uit PHP 7.2 en vervangen door de [`sodium` library ](https://www.php.net/manual/en/book.sodium.php) . Zorg ervoor dat [ natrium ](https://www.php.net/manual/en/sodium.installation.php) behoorlijk wordt toegelaten wanneer het bevorderen van PHP.
 
 >[!INFO]
 >
@@ -122,7 +122,7 @@ Als u meer extensies toevoegt, duurt het laden van de bibliotheek langer.
 
 ### PHP-instellingen
 
-Een geslaagde uitvoering van alle [!DNL Commerce] instanties zonder gegevens of code naar schijf te verplaatsen, stelt u de geheugenlimiet als volgt in:
+Als u wilt garanderen dat alle [!DNL Commerce] -instanties correct worden uitgevoerd zonder gegevens of code op schijf te storten, stelt u de geheugenlimiet als volgt in:
 
 ```text
 memory_limit=1G
@@ -132,7 +132,7 @@ Voor het zuiveren, verhoog deze waarde tot 2G.
 
 #### Configuratie Realpath_cache
 
-Verbeteren [!DNL Commerce] de volgende aanbevolen taken uitvoeren, toevoegen of bijwerken `realpath_cache` in de `php.ini` bestand. Met deze configuratie kunnen PHP-processen paden naar bestanden in cache plaatsen in plaats van ze elke keer weer op te zoeken wanneer een pagina wordt geladen. Zie [Prestaties afstemmen](https://www.php.net/manual/en/ini.core.php) in de PHP documentatie.
+Als u de [!DNL Commerce] -prestaties wilt verbeteren, voegt u de volgende aanbevolen `realpath_cache` -instellingen toe aan of werkt u deze bij in het `php.ini` -bestand. Met deze configuratie kunnen PHP-processen paden naar bestanden in cache plaatsen in plaats van ze elke keer weer op te zoeken wanneer een pagina wordt geladen. Zie [ Prestaties die ](https://www.php.net/manual/en/ini.core.php) in de PHP documentatie stempelen.
 
 ```text
 realpath_cache_size=10M
@@ -141,7 +141,7 @@ realpath_cache_ttl=7200
 
 #### ByteCode
 
-Maximale snelheid ophalen uit [!DNL Commerce] op PHP 7, moet u de module OpCache activeren en behoorlijk vormen het. Deze instellingen worden aanbevolen voor de module:
+Om maximale snelheid te krijgen uit [!DNL Commerce] op PHP 7, moet u de module OpCache activeren en behoorlijk vormen het. Deze instellingen worden aanbevolen voor de module:
 
 ```text
 opcache.memory_consumption=512
@@ -162,9 +162,9 @@ opcache.max_accelerated_files=60000
 
 #### APCU
 
-We raden u aan de [PHP APCu extension](https://getcomposer.org/doc/articles/autoloader-optimization.md#optimization-level-2-b-apcu-cache) en [configureren `composer` ter ondersteuning van](../performance/deployment-flow.md#preprocess-dependency-injection-instructions) optimaliseren voor maximale prestaties. Met deze extensie worden bestandslocaties voor geopende bestanden in cache geplaatst, waardoor de prestaties voor [!DNL Commerce] serveraanroepen inclusief pagina&#39;s, Ajax-aanroepen en eindpunten.
+Wij adviseren toelatend de [ uitbreiding PHP APCu ](https://getcomposer.org/doc/articles/autoloader-optimization.md#optimization-level-2-b-apcu-cache) en [ vormend `composer` om het ](../performance/deployment-flow.md#preprocess-dependency-injection-instructions) te steunen om voor maximumprestaties te optimaliseren. Met deze extensie worden bestandslocaties voor geopende bestanden in cache geplaatst, waardoor de prestaties van serveraanroepen van [!DNL Commerce] worden verhoogd, inclusief pagina&#39;s, Ajax-aanroepen en eindpunten.
 
-Bewerk uw `apcu.ini` bestand dat het volgende bevat:
+Bewerk het `apcu.ini` -bestand en voeg het volgende toe:
 
 ```text
 extension=apcu.so
@@ -174,7 +174,7 @@ apc.enabled = 1
 
 ## Webserver
 
-Magento biedt volledige ondersteuning voor de Nginx- en Apache-webservers. [!DNL Commerce] verstrekt steekproef geadviseerde configuratiedossiers in de  `<magento_home>/nginx.conf.sample` (Nginx) en  `<magento_home>.htaccess.sample` (Apache).  Het Nginx-voorbeeld bevat instellingen voor betere prestaties en is zo ontworpen dat weinig herconfiguratie nodig is. Enkele van de belangrijkste die configuratiebeste praktijken in het steekproefdossier worden bepaald omvatten:
+Magento biedt volledige ondersteuning voor de Nginx- en Apache-webservers. [!DNL Commerce] biedt voorbeelden van aanbevolen configuratiebestanden in de bestanden `<magento_home>/nginx.conf.sample` (Nginx) en `<magento_home>.htaccess.sample` (Apache).  Het Nginx-voorbeeld bevat instellingen voor betere prestaties en is zo ontworpen dat weinig herconfiguratie nodig is. Enkele van de belangrijkste die configuratiebeste praktijken in het steekproefdossier worden bepaald omvatten:
 
 * Instellingen voor het in cache plaatsen van statische inhoud in een browser
 * Instellingen voor geheugen en uitvoertijd voor PHP
@@ -184,46 +184,46 @@ U zou het aantal draden voor de verwerking van het inputverzoek ook moeten vorme
 
 | Webserver | Kenmerknaam | Locatie | Verwante informatie |
 |--- | --- | --- | ---|
-| Nginx | `worker_connections` | `/etc/nginx/nginx.conf` (Debian) | [NGINX afstemmen voor prestaties](https://www.nginx.com/blog/tuning-nginx/) |
-| Apache 2.2 | `MaxClients` | `/etc/httpd/conf/httpd.conf` (CentOS) | [Apache prestaties afstemmen](https://httpd.apache.org/docs/2.2/misc/perf-tuning.html) |
-| Apache 2.4 | `MaxRequestWorkers` | `/etc/httpd/conf/httpd.conf` (CentOS) | [Gemeenschappelijke richtlijnen Apache MPM](https://httpd.apache.org/docs/2.4/mod/mpm_common.html#maxrequestworkers) |
+| Nginx | `worker_connections` | `/etc/nginx/nginx.conf` (Debian) | [ het Tuning NGINX voor Prestaties ](https://www.nginx.com/blog/tuning-nginx/) |
+| Apache 2.2 | `MaxClients` | `/etc/httpd/conf/httpd.conf` (CentOS) | [ het Afstemmen van Prestaties Apache ](https://httpd.apache.org/docs/2.2/misc/perf-tuning.html) |
+| Apache 2.4 | `MaxRequestWorkers` | `/etc/httpd/conf/httpd.conf` (CentOS) | [ Gemeenschappelijke Richtlijnen van Apache MPM ](https://httpd.apache.org/docs/2.4/mod/mpm_common.html#maxrequestworkers) |
 
 ## [!DNL MySQL]
 
-Dit document bevat geen uitgebreide [!DNL MySQL] het stemmen instructies omdat elke opslag en milieu verschillend is, maar wij kunnen sommige algemene aanbevelingen doen.
+Dit document bevat geen uitgebreide [!DNL MySQL] afstemmingsinstructies, omdat elke winkel en omgeving anders zijn, maar we kunnen wel enkele algemene aanbevelingen doen.
 
-Er zijn veel verbeteringen aangebracht in [!DNL MySQL] 5.7.9 We vertrouwen erop dat [!DNL MySQL] wordt gedistribueerd met goede standaardinstellingen. De meest kritieke instellingen zijn:
+Er zijn veel verbeteringen aangebracht in [!DNL MySQL] 5.7.9. We zijn ervan overtuigd dat [!DNL MySQL] met goede standaardinstellingen is gedistribueerd. De meest kritieke instellingen zijn:
 
 | Parameter | Standaard | Beschrijving |
 |--- | --- | ---|
 | `innodb_buffer_pool_instances` | 8 | De standaardwaarde is ingesteld op 8 om problemen te voorkomen met meerdere threads die toegang proberen te krijgen tot dezelfde instantie. |
-| `innodb_buffer_pool_size` | 128 MB | Gecombineerd met de veelvoudige hierboven beschreven groepsinstanties, betekent dit een standaardgeheugentoewijzing van 1024MB. De totale grootte wordt over alle bufferpools verdeeld. Geef voor de beste efficiëntie een combinatie van `innodb_buffer_pool_instances` en `innodb_buffer_pool_size` zodat elke instantie van de bufferpool minstens 1 GB is. |
-| `max_connections` | 150 | De waarde van `max_connections` Deze parameter moet correleren met het totale aantal PHP threads dat is geconfigureerd in de toepassingsserver. Een algemene aanbeveling zou 300 zijn voor een klein milieu en 1000 voor een middelgroot milieu. |
-| `innodb_thread_concurrency` | 0 | De beste waarde voor deze configuratie zou door de formule moeten worden berekend: `innodb_thread_concurrency = 2 * (NumCPUs + NumDisks)` |
+| `innodb_buffer_pool_size` | 128 MB | Gecombineerd met de veelvoudige hierboven beschreven groepsinstanties, betekent dit een standaardgeheugentoewijzing van 1024MB. De totale grootte wordt over alle bufferpools verdeeld. Voor de beste efficiëntie geeft u een combinatie van `innodb_buffer_pool_instances` en `innodb_buffer_pool_size` op, zodat elke instantie van de bufferpool ten minste 1 GB bedraagt. |
+| `max_connections` | 150 | De waarde van de parameter `max_connections` moet correleren met het totale aantal PHP threads dat is geconfigureerd in de toepassingsserver. Een algemene aanbeveling zou 300 zijn voor een klein milieu en 1000 voor een middelgroot milieu. |
+| `innodb_thread_concurrency` | 0 | De beste waarde voor deze configuratie moet met de volgende formule worden berekend: `innodb_thread_concurrency = 2 * (NumCPUs + NumDisks)` |
 
 ## [!DNL Varnish]
 
-Magento raadt u ten zeerste aan [!DNL Varnish] als de volledige paginacacheserver voor uw winkel. De module PageCache is nog steeds aanwezig in de codebase, maar moet alleen voor ontwikkelingsdoeleinden worden gebruikt. Het mag niet samen met of in plaats van [!DNL Varnish].
+Magento raadt u ten zeerste aan [!DNL Varnish] te gebruiken als de cache-server voor alle pagina&#39;s voor uw winkel. De module PageCache is nog steeds aanwezig in de codebase, maar moet alleen voor ontwikkelingsdoeleinden worden gebruikt. Deze mag niet samen met of in plaats van [!DNL Varnish] worden gebruikt.
 
-Installeren [!DNL Varnish] op een aparte server vóór de weblaag. Het zou alle inkomende verzoeken moeten goedkeuren en in het voorgeheugen ondergebrachte paginaaKopieën verstrekken. Toestaan [!DNL Varnish] om effectief met beveiligde pagina&#39;s te werken, kan een SSL beëindigingsvolmacht vóór worden geplaatst [!DNL Varnish]. Nginx kan voor dit doel worden gebruikt.
+Installeer [!DNL Varnish] op een aparte server vóór de weblaag. Het zou alle inkomende verzoeken moeten goedkeuren en in het voorgeheugen ondergebrachte paginaaKopieën verstrekken. Als u [!DNL Varnish] wilt toestaan effectief te werken met beveiligde pagina&#39;s, kan een SSL-proxy vóór [!DNL Varnish] worden geplaatst. Nginx kan voor dit doel worden gebruikt.
 
-[!DNL Commerce] verspreidt een dossier van de steekproefconfiguratie voor [!DNL Varnish] (versies 4 en 5) die alle aanbevolen instellingen voor de prestaties bevat. De meest kritieke prestaties zijn onder andere:
+[!DNL Commerce] verspreidt een voorbeeldconfiguratiebestand voor [!DNL Varnish] (versies 4 en 5) dat alle aanbevolen instellingen voor de prestaties bevat. De meest kritieke prestaties zijn onder andere:
 
-* **Controle van de achtergrondstatus** opiniepeilingen [!DNL Commerce] om te bepalen of de server tijdig reageert.
-* **Respijtmodus** staat u toe om te instrueren [!DNL Varnish] om een object in cache te houden na de periode Tijd tot live (TTL) en deze schaalinhoud te bedienen als [!DNL Commerce] is niet gezond of als er nog geen nieuwe inhoud is opgehaald.
-* **Sint-modus** zwarte lijsten ongezond [!DNL Commerce] servers voor een configureerbare hoeveelheid tijd. Dientengevolge, kunnen de ongezonde achtergronden verkeer niet dienen wanneer het gebruiken [!DNL Varnish] als een taakverdelingsmechanisme.
+* **Achterste gezondheidscontrole** pollt de [!DNL Commerce] server om te bepalen of het op een geschikte manier antwoordt.
+* **wijze van de Grace** staat u toe om [!DNL Varnish] op te dragen om een voorwerp in geheim voorgeheugen voorbij zijn Tijd aan Levende (TTL) periode te houden en deze stapelinhoud te dienen als [!DNL Commerce] niet gezond is of als de verse inhoud nog niet is gehaald.
+* **de wijze van Saint** zwarte lijsten ongezonde [!DNL Commerce] servers voor een configureerbare hoeveelheid tijd. Hierdoor kunnen ongezonde backends geen verkeer dienen wanneer [!DNL Varnish] als taakverdelingsmechanisme wordt gebruikt.
 
-Zie [Geavanceerd [!DNL Varnish] configuratie](../configuration/cache/config-varnish-advanced.md) voor meer informatie over het implementeren van deze functies.
+Zie [ Geavanceerde  [!DNL Varnish]  configuratie ](../configuration/cache/config-varnish-advanced.md) voor meer informatie over het uitvoeren van deze eigenschappen.
 
 ### Elementprestaties optimaliseren
 
 Over het algemeen raden we u aan uw elementen (afbeeldingen, JS, CSS, enzovoort) op te slaan op een CDN voor optimale prestaties.
 
-Als voor uw site geen groot aantal landinstellingen nodig is en uw servers zich in hetzelfde gebied bevinden als de meeste klanten, levert het opslaan van uw middelen mogelijk aanzienlijke prestatiewinsten op tegen lagere kosten [!DNL Varnish] in plaats van een CDN.
+Als voor uw site geen groot aantal landinstellingen hoeft te worden geïmplementeerd en uw servers zich in hetzelfde gebied bevinden als de meeste klanten, kan het zijn dat u aanzienlijke prestatiewinsten tegen een lagere kostprijs kunt behalen door uw middelen op te slaan in [!DNL Varnish] in plaats van een CDN te gebruiken.
 
-Uw elementen opslaan in [!DNL Varnish]voegt u de volgende VCL-items toe aan uw `default.vcl` bestand gegenereerd door [!DNL Commerce] for [!DNL Varnish] 5.
+Als u uw elementen in [!DNL Varnish] wilt opslaan, voegt u de volgende VCL-items toe aan het `default.vcl` -bestand dat door [!DNL Commerce] voor [!DNL Varnish] 5 wordt gegenereerd.
 
-Aan het einde van de `if` Instructie voor PURGE-aanvragen in het dialoogvenster `vcl_recv` subroutine toevoegen:
+Voeg aan het einde van de instructie `if` voor PURGE-aanvragen in de subroutine `vcl_recv` het volgende toe:
 
 ```javascript
 # static files are cacheable. remove SSL flag and cookie
@@ -235,8 +235,8 @@ if (req.url ~ "^/(pub/)?(media|static)/.*\.(ico|html|css|js|jpg|jpeg|png|gif|tif
 }
 ```
 
-In de `vcl_backend_response` subroutine, zoek naar `if` instructie die de cookie voor `GET` of `HEAD` verzoeken.
-De bijgewerkte `if` blok zou als het volgende moeten kijken:
+Zoek in de subroutine `vcl_backend_response` naar de instructie `if` die de cookie voor `GET` - of `HEAD` -aanvragen ongedaan maakt.
+Het bijgewerkte `if` -blok moet er als volgt uitzien:
 
 ```javascript
 # validate if we need to cache it and prevent from setting cookie
@@ -252,7 +252,7 @@ if (bereq.url !~ "\.(ico|css|js|jpg|jpeg|png|gif|tiff|bmp|gz|tgz|bz2|tbz|mp3|ogg
 }
 ```
 
-De opdracht opnieuw starten [!DNL Varnish] om in cache opgeslagen middelen te verwijderen wanneer u uw site upgradet of elementen implementeert/bijwerkt.
+Start de [!DNL Varnish] -server opnieuw om in de cache opgeslagen middelen te verwijderen wanneer u uw site upgradet of elementen implementeert/bijwerkt.
 
 ## In cache plaatsen en sessieservers
 
@@ -264,7 +264,7 @@ Als u al uw verkeer met slechts één Webknoop van plan bent te dienen, het niet
 
 ### Meerdere webknooppunten instellen
 
-Redis is de beste optie voor het instellen van meerdere webknooppunten. Omdat [!DNL Commerce] plaatst actief veel gegevens voor betere prestaties in cache, let op uw netwerkkanaal tussen de Webknopen en de server Redis. U wilt niet dat het kanaal een knelpunt voor aanvraagverwerking wordt.
+Redis is de beste optie voor het instellen van meerdere webknooppunten. Omdat [!DNL Commerce] actief veel gegevens in cache plaatst voor betere prestaties, moet u rekening houden met uw netwerkkanaal tussen de webknooppunten en de Redis-server. U wilt niet dat het kanaal een knelpunt voor aanvraagverwerking wordt.
 
 >[!INFO]
 >

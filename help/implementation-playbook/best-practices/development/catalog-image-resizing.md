@@ -3,13 +3,13 @@ title: Aanbevolen werkwijzen voor het wijzigen van het formaat van catalogusafbe
 description: Leer hoe u kunt voorkomen dat de prestaties achteruitgaan voordat u de productie van uw Adobe Commerce-site start.
 feature: Best Practices
 role: Developer
-source-git-commit: 94d37b6a95cae93f465daf8eb96363a198833e27
+exl-id: 591b1a62-bdba-4301-858a-77620ee657a9
+source-git-commit: 823498f041a6d12cfdedd6757499d62ac2aced3d
 workflow-type: tm+mt
-source-wordcount: '479'
+source-wordcount: '464'
 ht-degree: 0%
 
 ---
-
 
 # Aanbevolen werkwijzen voor het wijzigen van het formaat van catalogusafbeeldingen
 
@@ -64,25 +64,25 @@ Er is een andere manier om het formaat van afbeeldingen te wijzigen met de voorz
 De voordelen van deze aanpak zijn:
 
 - Het proces is multi-threaded
-- Het proces bestaat uit meerdere servers (als u meerdere webknooppunten hebt, een taakverdelingsmechanisme en gedeelde schijfruimte voor de `media/` map)
+- Het proces bestaat uit meerdere servers (als u meerdere webknooppunten hebt, een taakverdelingsmechanisme en gedeelde schijfruimte voor de map `media/` )
 - Tijdens het proces worden afbeeldingen overgeslagen waarvan de grootte al is gewijzigd
 
 Deze benadering resizes 100.000 beelden in minder dan 8 uren, terwijl het CLI bevel 6 dagen om vergt te voltooien.
 
 1. Log in bij de server.
-1. Navigeren naar `pub/media/catalog/product` en noteer een van de hashes (bijvoorbeeld 0047d83143a5a3a4683afdf116df680).
-1. In de volgende voorbeelden vervangt u `www.example.com` met het domein van uw winkel en vervang de hash door de hash die u hebt vermeld.
+1. Navigeer naar `pub/media/catalog/product` en noteer een van de hashes (bijvoorbeeld 0047d83143a5a3a4683afdf116df680).
+1. In de volgende voorbeelden vervangt u `www.example.com` door het domein van de winkel en vervangt u de hash door de hash die u hebt vermeld.
 
 >[!BEGINTABS]
 
->[!TAB gebruikt]
+>[!TAB  gebruikt ]
 
 ```bash
 cd pub/
 find ./media/catalog/product -path ./media/catalog/product/cache -prune -o -type f -print | sed 's~./media/catalog/product/~https://www.example.com/media/catalog/product/cache/0047d83143a5a3a4683afdf1116df680/~g' > images.txt
 ```
 
->[!TAB beleg]
+>[!TAB  beleg ]
 
 Het nadeel van `siege` is dat het alle URL&#39;s in de 10 keer bezoekt als de gelijktijdige uitvoering is ingesteld op 10.
 
@@ -90,31 +90,31 @@ Het nadeel van `siege` is dat het alle URL&#39;s in de 10 keer bezoekt als de ge
 siege --file=./images.txt --user-agent="image-resizer" --no-follow --no-parser --concurrent=10 --reps=once
 ```
 
->[!TAB krullen]
+>[!TAB  krullen ]
 
 ```bash
 xargs -0 -n 1 -P 10 curl -X HEAD -s -w "%{http_code} %{time_starttransfer} %{url_effective}\n" < <(tr \\n \\0 <images.txt)
 ```
 
-De `-P` argument bepaalt het aantal draden.
+Het argument `-P` bepaalt het aantal draden.
 
->[!TAB bash one-liner]
+>[!TAB  bash één-lijn ]
 
-De één-lijn voor `find/curl` voorbeeld, voor het geval u kunt lopen `curl` vanaf dezelfde computer staan de afbeeldingen op:
+De één-lijn voor het voorbeeld `find/curl`, voor het geval u `curl` van de zelfde machine kunt in werking stellen de beelden zijn:
 
 ```bash
 find ./media/catalog/product -path ./media/catalog/product/cache -prune -o -type f -print | sed 's~./media/catalog/product/~https://www.example.com/media/catalog/product/cache/0047d83143a5a3a4683afdf1116df680/~g' | xargs -n 1 -P 10 curl -X HEAD -s -w "%{http_code} %{time_starttransfer} %{url_effective}\n"
 ```
 
-Opnieuw vervangen `www.example.com` met het domein en de set van uw website `-P` aan het aantal draden uw server kan behandelen zonder te crashen.
+Vervang `www.example.com` nogmaals door het domein van uw website en stel `-P` in op het aantal threads dat uw server kan verwerken zonder vastlopen.
 
 >[!ENDTABS]
 
-De uitvoer retourneert een lijst met alle productafbeeldingen in de winkel. U kunt de afbeeldingen horizontaal verslepen (met `siege` of een andere crawler) met gebruik van alle servers en processorcores die u tot uw beschikking hebt, en het vergroten of verkleinen van de cache met aanzienlijk hogere snelheid dan bij andere benaderingen.
+De uitvoer retourneert een lijst met alle productafbeeldingen in de winkel. U kunt door de afbeeldingen (met `siege` of een andere crawler) kruipen met alle servers en processorcores die voor u beschikbaar zijn en de formaatcache aanzienlijk sneller genereren dan bij andere benaderingen.
 
 Als u één URL voor de afbeeldingscache bezoekt, worden alle afbeeldingsgrootten op de achtergrond gegenereerd als deze nog niet bestaan. Bovendien worden bestanden overgeslagen waarvan de grootte al is gewijzigd.
 
 >[!NOTE]
 >
->- Adobe Commerce op cloud-infrastructuurprojecten kan de grootte van productafbeeldingen verschuiven naar de Fastly-service. Zie [Diepe optimalisatie van afbeeldingen](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/cdn/fastly-image-optimization.html?lang=en#deep-image-optimization) in de _Cloud Guide_.
->- Als u de externe opslagmodule gebruikt, kunt u ook proberen de afbeeldingsgrootte te verschuiven naar nginx. Zie [Afbeeldingsgrootte configureren voor externe opslag](https://experienceleague.adobe.com/docs/commerce-operations/configuration-guide/storage/remote-storage/remote-storage-image-resize.html) in de _Configuratiegids_.
+>- Adobe Commerce op cloud-infrastructuurprojecten kan de grootte van productafbeeldingen verschuiven naar de Fastly-service. Zie [ Diepe beeldoptimalisering ](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/cdn/fastly-image-optimization.html?lang=en#deep-image-optimization) in de _Gids van de Wolk_.
+>- Als u de externe opslagmodule gebruikt, kunt u ook proberen de afbeeldingsgrootte te verschuiven naar nginx. Zie [ beeld het resizing voor verre opslag ](https://experienceleague.adobe.com/docs/commerce-operations/configuration-guide/storage/remote-storage/remote-storage-image-resize.html) in de _Gids van de Configuratie_ vormen.

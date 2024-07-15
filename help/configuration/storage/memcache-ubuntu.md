@@ -5,7 +5,7 @@ feature: Configuration, Cache, Storage
 exl-id: 831193d2-3e81-472c-9b87-78a8d52959b4
 source-git-commit: af45ac46afffeef5cd613628b2a98864fd7da69b
 workflow-type: tm+mt
-source-wordcount: '449'
+source-wordcount: '440'
 ht-degree: 0%
 
 ---
@@ -20,20 +20,20 @@ In deze sectie vindt u instructies voor het installeren van een memcached op Ubu
 
 Omdat PHP geen native ondersteuning heeft voor memcache, moet je een extensie installeren voor PHP om deze te kunnen gebruiken. Er zijn twee PHP-extensies beschikbaar en het is belangrijk te decoderen welke extensie moet worden gebruikt:
 
-- `memcache` (_neen d_) - een oudere maar populaire extensie die niet regelmatig wordt onderhouden.
-De `memcache` momenteel extensie _niet_ Werken met PHP 7. Zie [PHP-documentatie voor memcache](https://www.php.net/manual/en/book.memcache.php).
+- `memcache` (_geen d_) - een oudere maar populaire uitbreiding die niet regelmatig wordt gehandhaafd.
+De `memcache` uitbreiding momenteel _werkt niet_ met PHP 7. Zie [ PHP documentatie voor memcache ](https://www.php.net/manual/en/book.memcache.php).
 
   De exacte naam is `php5-memcache` voor Ubuntu.
 
-- `memcached` (_met een`d`_) - een nieuwere en onderhouden extensie die compatibel is met PHP 7. Zie [PHP-documentatie voor memcaching](https://www.php.net/manual/en/book.memcached.php).
+- `memcached` (_met a`d`_) - een nieuwere en bewaarde uitbreiding die met PHP 7 compatibel is. Zie [ PHP documentatie voor in het geheugen ondergebracht ](https://www.php.net/manual/en/book.memcached.php).
 
   De exacte naam is `php5-memcached` voor Ubuntu.
 
 ## In de Ubuntu-cache plaatsen en configureren
 
-**Om gebed op Ubuntu te installeren en te vormen**:
+**om geheugen op Ubuntu** te installeren en te vormen:
 
-1. Als gebruiker met `root` rechten, voert u de volgende opdracht in:
+1. Als gebruiker met `root` voorrechten, ga het volgende bevel in:
 
    ```bash
    apt-get -y update
@@ -43,14 +43,14 @@ De `memcache` momenteel extensie _niet_ Werken met PHP 7. Zie [PHP-documentatie 
    apt-get -y install php5-memcached memcached
    ```
 
-1. Wijzig de instelling voor de configuratie-instelling in de cache voor `CACHESIZE` en `-l`:
+1. Wijzig de instelling voor de configuratie-instellingen voor `CACHESIZE` en `-l` in de cache:
 
-   1. Openen `/etc/memcached.conf` in een teksteditor.
-   1. Zoek de `-m` parameter.
-   1. De waarde ten minste wijzigen in `1GB`
-   1. Zoek de `-l` parameter.
+   1. Open `/etc/memcached.conf` in een teksteditor.
+   1. Zoek de parameter `-m` .
+   1. De waarde ten minste wijzigen `1GB`
+   1. Zoek de parameter `-l` .
    1. De waarde wijzigen in `127.0.0.1` of `localhost`
-   1. Sla uw wijzigingen op in `memcached.conf` en sluit de teksteditor af.
+   1. Sla de wijzigingen in `memcached.conf` op en sluit de teksteditor af.
    1. Start de cache opnieuw.
 
       ```bash
@@ -59,7 +59,7 @@ De `memcache` momenteel extensie _niet_ Werken met PHP 7. Zie [PHP-documentatie 
 
 1. Start de webserver opnieuw.
 
-   Voor Apache: `service apache2 restart`
+   Voor Apache, `service apache2 restart`
 
 1. Ga verder met de volgende sectie.
 
@@ -71,7 +71,7 @@ Adobe raadt aan een memcachegeheugen te testen om te controleren of dit werkt vo
 
 Om te controleren of het in een cache plaatsen wordt herkend door de webserver:
 
-1. Een `phpinfo.php` bestand in de hoofdmap van de webserver:
+1. Maak een `phpinfo.php` -bestand in de hoofdmap van de webserver:
 
    ```php
    <?php
@@ -87,19 +87,19 @@ Om te controleren of het in een cache plaatsen wordt herkend door de webserver:
 
 1. Zorg ervoor dat in het geheugen opgeslagen weergaven als volgt zijn:
 
-   ![Bevestig dat in het geheugen wordt opgeslagen wordt herkend door de webserver](../../assets/configuration/memcache.png)
+   ![ bevestigt in het geheugen ondergebracht wordt erkend door de Webserver ](../../assets/configuration/memcache.png)
 
    Controleer of u versie 3.0.5 of hoger uit het geheugen gebruikt.
 
-   Als de webserver niet wordt weergegeven in de cache, start u de webserver opnieuw en vernieuwt u de browserpagina. Als het nog steeds niet wordt weergegeven, controleert u of u de `php-pecl-memcached` extensie.
+   Als de webserver niet wordt weergegeven in de cache, start u de webserver opnieuw en vernieuwt u de browserpagina. Als de extensie nog steeds niet wordt weergegeven, controleert u of u de extensie `php-pecl-memcached` hebt geïnstalleerd.
 
 ### Controleren of geheugen gegevens in cache kan plaatsen
 
 Deze test gebruikt een PHP script om te controleren of in een cache opgeslagen en opgehaalde cachegegevens kunnen worden opgeslagen.
 
-Zie voor meer informatie over deze test [Memcache installeren en gebruiken in Ubuntu-zelfstudie](https://www.digitalocean.com/community/tutorials/how-to-install-and-use-memcache-on-ubuntu-14-04).
+Voor meer informatie over deze test, zie [ hoe te om Memcache op Ubuntu leerprogramma te installeren en te gebruiken ](https://www.digitalocean.com/community/tutorials/how-to-install-and-use-memcache-on-ubuntu-14-04).
 
-Maken `cache-test.php` in de hoofdmap van de webserver met de volgende inhoud:
+Maak `cache-test.php` in de hoofdmap van de webserver met de volgende inhoud:
 
 ```php
 $meminstance = new Memcached();
@@ -116,7 +116,7 @@ if ($result) {
 }
 ```
 
-Wanneer `<memcached hostname or ip>` is ofwel `localhost`, `127.0.0.1`of de hostnaam van de memcache of het IP-adres. De `<memcached port>` de luisterpoort is; standaard; `11211`.
+Waar `<memcached hostname or ip>` `localhost` , `127.0.0.1` of de hostnaam of het IP-adres van de memcache is. De `<memcached port>` is de listen poort; standaard is dit `11211` .
 
 Ga naar die pagina in een webbrowser. Bijvoorbeeld
 
@@ -165,4 +165,4 @@ flush_all
 quit
 ```
 
-[Aanvullende informatie over de Telnet-test](https://darkcoding.net/software/memcached-list-all-keys/)
+[ Aanvullende informatie over de test van Telnet ](https://darkcoding.net/software/memcached-list-all-keys/)

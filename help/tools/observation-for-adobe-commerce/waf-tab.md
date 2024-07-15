@@ -1,57 +1,57 @@
 ---
-title: De [!DNL WAF] tab
-description: Meer informatie over de [!DNL WAF] tabblad van [!DNL Observation for Adobe Commerce].
+title: Het  [!DNL WAF]  lusje
+description: Leer over het  [!DNL WAF]  lusje van  [!DNL Observation for Adobe Commerce].
 exl-id: e36986d7-d903-4154-bb09-6962b99ae35f
 feature: Configuration, Observability
 source-git-commit: e83e2359377f03506178c28f8b30993c172282c7
 workflow-type: tm+mt
-source-wordcount: '160'
+source-wordcount: '168'
 ht-degree: 0%
 
 ---
 
-# De [!DNL WAF] tab
+# Het tabblad [!DNL WAF]
 
-De **[!DNL WAF]** het lusje toont verkeer dat wordt overgegaan en door [!DNL firewall].
+Het tabblad **[!DNL WAF]** geeft het verkeer weer dat door de [!DNL firewall] wordt doorgegeven en geblokkeerd.
 
 ## [!DNL WAF traffic summary]
 
-![Overzicht van WAF-verkeer](../../assets/tools/observation-for-adobe-commerce/waf-1.png)
+![ het verkeerssamenvatting van WAF ](../../assets/tools/observation-for-adobe-commerce/waf-1.png)
 
-De **[!DNL WAF traffic summary]** het kader toont een telling van verkeer overgegaan, het programma geopend, geblokkeerd, en ontbroken door [!DNL firewall].
+Het **[!DNL WAF traffic summary]** kader toont een aantal verkeer overgegaan, het programma geopend, geblokkeerd, en ontbroken door [!DNL firewall].
 
 ## [!DNL WAF Top 10 blocked IP Addresses]
 
-![WAF top 10 geblokkeerde IP adressen](../../assets/tools/observation-for-adobe-commerce/waf-2.png)
+![ top 10 van WAF geblokkeerde IP adressen ](../../assets/tools/observation-for-adobe-commerce/waf-2.png)
 
-De **[!DNL WAF Top 10 blocked IP Addresses]** het kader toont de hoogste 10 meest geblokkeerde IP adressen door [!DNL firewall].
+Het **[!DNL WAF Top 10 blocked IP Addresses]** kader toont de hoogste 10 het meest geblokkeerde IP adressen door [!DNL firewall].
 
 ## [!DNL WAF Top 10 countries for blocked requests]
 
-![WAF top 10 countries for geblokkeerde request](../../assets/tools/observation-for-adobe-commerce/waf-3.jpg)
+![ WAF hoogste 10 landen voor geblokkeerde verzoeken ](../../assets/tools/observation-for-adobe-commerce/waf-3.jpg)
 
-De **[!DNL WAF Top 10 countries for blocked requests]** frame toont een aantal geblokkeerde aanvragen voor landen binnen de top 10 voor geblokkeerde aanvragen van de [!DNL firewall].
+Het frame **[!DNL WAF Top 10 countries for blocked requests]** bevat een aantal geblokkeerde aanvragen voor landen in de bovenste 10 voor geblokkeerde aanvragen van de [!DNL firewall] .
 
 ## [!DNL WAF Top 10 logged IP Addresses]
 
-![WAF top 10 geregistreerde IP adressen](../../assets/tools/observation-for-adobe-commerce/waf-4.jpg)
+![ top 10 van WAF geregistreerde IP adressen ](../../assets/tools/observation-for-adobe-commerce/waf-4.jpg)
 
-De **[!DNL WAF Top 10 logged IP Addresses]** het kader toont IP adressen in de top 10 geregistreerde IP adressen door [!DNL firewall].
+Het **[!DNL WAF Top 10 logged IP Addresses]** kader toont IP adressen in de hoogste 10 geregistreerde IP adressen door [!DNL firewall].
 
 ## [!DNL Top 10 WAF Rules Executed and Logged by IP address]
 
-![De bovenkant 10 regels van WAF die door IP adres worden uitgevoerd en worden geregistreerd](../../assets/tools/observation-for-adobe-commerce/waf-5.jpg)
+![ Hoogste 10 die regels van WAF door IP adres worden uitgevoerd en worden geregistreerd ](../../assets/tools/observation-for-adobe-commerce/waf-5.jpg)
 
-De **[!DNL Top 10 WAF Rules Executed and Logged by IP address]** het kader toont IP adressen die in hoogste 10 het vaakst passende zijn [!DNL firewall] regels.
+In het frame **[!DNL Top 10 WAF Rules Executed and Logged by IP address]** worden IP-adressen weergegeven die zich in de bovenste 10 bevinden en die het vaakst overeenkomen met de [!DNL firewall] -regels.
 
 ## [!DNL WAF Logged Details]
 
-![WAF-geregistreerde details](../../assets/tools/observation-for-adobe-commerce/waf-6.jpg)
+![ WAF geregistreerde details ](../../assets/tools/observation-for-adobe-commerce/waf-6.jpg)
 
-De **[!DNL WAF Logged Details]** frame toont aanvragen die zijn geregistreerd door [!DNL firewall], inclusief details zoals tijdstempel, plaats, regio en datacenter.
+In het frame **[!DNL WAF Logged Details]** worden aanvragen weergegeven die door [!DNL firewall] zijn geregistreerd, inclusief gegevens zoals tijdstempel, plaats, regio en datacenter.
 
 ## [!DNL WAF Blocked Details]
 
-![Door WAF geblokkeerde gegevens](../../assets/tools/observation-for-adobe-commerce/waf-7.jpg)
+![ WAF geblokkeerde details ](../../assets/tools/observation-for-adobe-commerce/waf-7.jpg)
 
-De **[!DNL WAF Blocked Details]** frame toont aanvragen die door de [!DNL firewall], inclusief details zoals tijdstempel, plaats, regio en datacenter.
+In het frame **[!DNL WAF Blocked Details]** worden de aanvragen weergegeven die door [!DNL firewall] zijn geblokkeerd, inclusief gegevens zoals tijdstempel, plaats, regio en datacenter.

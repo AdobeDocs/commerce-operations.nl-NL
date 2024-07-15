@@ -39,14 +39,14 @@ Percona is een vork in MySQL die zich richt op prestaties en piekbelasting behan
 
 ## Programmeertaal
 
-Adobe Commerce is een PHP-gebaseerde toepassing en de nieuwste releases zijn altijd compatibel met de nieuwste stabiele PHP versie (Adobe Commerce versie 2.4 raadt bijvoorbeeld aan om PHP 7.4 te gebruiken). Om meer veiligheid en prestaties te krijgen, zijn er verschillende factoren die bij het configureren van PHP voor maximale snelheid en efficiëntie bij de verwerking van aanvragen in aanmerking moeten worden genomen. De Adobe Commerce-webwinkel is gebouwd met HTML, JavaScript en de LESS CSS-voorprocessor.
+Adobe Commerce is een PHP-gebaseerde toepassing en de nieuwste releases zijn altijd compatibel met de nieuwste stabiele PHP versie (Adobe Commerce versie 2.4 raadt bijvoorbeeld aan om PHP 7.4 te gebruiken). Om meer veiligheid en prestaties te krijgen, zijn er verschillende factoren die bij het configureren van PHP voor maximale snelheid en efficiëntie bij de verwerking van aanvragen in aanmerking moeten worden genomen. De Adobe Commerce-webwinkel is gebouwd met HTML, JavaScript en de LESS CSS pre-processor.
 
 ## Webservers
 
 Adobe Commerce biedt volledige ondersteuning voor de Nginx- en Apache-webservers. Adobe Commerce biedt voorbeelden van aanbevolen configuratiebestanden voor beide:
 
-- **Nginx**—`<magento_home>/nginx.conf.sample`
-- **Apache**—`<magento_home>.htaccess.sample`
+- **Nginx** - `<magento_home>/nginx.conf.sample`
+- **Apache** - `<magento_home>.htaccess.sample`
 
 Het Nginx-voorbeeld bevat instellingen voor betere prestaties en is zo ontworpen dat weinig herconfiguratie nodig is.
 
@@ -62,11 +62,11 @@ Voor Adobe Commerce versie 2.4 en hoger moeten alle installaties zo zijn geconfi
 
 ## Berichtenrijservices
 
-De rijen van het bericht verstrekken een asynchroon communicatie mechanisme waarin de afzender en de ontvanger van een bericht niet elkaar contacteren. [!DNL RabbitMQ] is een open-bron berichtbroker die een betrouwbaar, hoogst beschikbaar, scalable, en draagbaar overseinensysteem aanbiedt.
+De rijen van het bericht verstrekken een asynchroon communicatie mechanisme waarin de afzender en de ontvanger van een bericht niet elkaar contacteren. [!DNL RabbitMQ] is een open-source berichtbroker die een betrouwbaar, hoogst beschikbaar, scalable, en draagbaar overseinensysteem aanbiedt.
 
 ## Beveiligingsgereedschappen
 
-De [Adobe Commerce Security Scan](https://docs.magento.com/user-guide/magento/security-scan.html) biedt u de mogelijkheid om uw websites van uw winkel regelmatig te controleren en updates te ontvangen voor bekende beveiligingsrisico&#39;s, malware en verouderde software. Doorgaans gebruikt u dit gereedschap wanneer u met het testen van gebruikersacceptatie (UAT) begint. Naast het Adobe Commerce Security Scan-hulpprogramma, dat gratis is en beschikbaar is voor alle implementaties en versies van Adobe Commerce, zijn er andere opties die kunnen worden gebruikt tijdens het CI/CD-proces en voor elke release.
+Het [ Hulpmiddel van het Scannen van de Veiligheid van Adobe Commerce ](https://docs.magento.com/user-guide/magento/security-scan.html) laat u toe om uw opslagwebsites regelmatig te controleren en updates voor bekende veiligheidsrisico&#39;s, malware, en verouderde software te ontvangen. Doorgaans gebruikt u dit gereedschap wanneer u met het testen van gebruikersacceptatie (UAT) begint. Naast het Adobe Commerce Security Scan-hulpprogramma, dat gratis is en beschikbaar is voor alle implementaties en versies van Adobe Commerce, zijn er andere opties die kunnen worden gebruikt tijdens het CI/CD-proces en voor elke release.
 
 SonarQube is een open-source platform voor kwaliteitsbeheer, ontworpen om de technische kwaliteit van uw code te analyseren en te meten. SonarQube biedt niet alleen een volledig rapport van codefouten, syntaxisfouten en kwetsbaarheden, maar ook suggesties en voorbeelden voor het corrigeren van de code. SonarQube is perfect voor gebruik in een CI/CD-omgeving als hulpmiddel om de code te analyseren voordat deze wordt geïmplementeerd.
 

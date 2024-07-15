@@ -1,6 +1,6 @@
 ---
-title: De [!UICONTROL Redis] tab
-description: Meer informatie over de [!UICONTROL Redis] tabblad van [!DNL Observation for Adobe Commerce].
+title: Het tabblad [!UICONTROL Redis]
+description: Leer meer over het [!UICONTROL Redis] lusje van  [!DNL Observation for Adobe Commerce].
 exl-id: 9c52350d-45a7-4afe-9dd7-c3968bd84d71
 feature: Configuration, Observability
 source-git-commit: 06f015139683f319f11317f8d7f0029cbd2548e3
@@ -10,58 +10,58 @@ ht-degree: 0%
 
 ---
 
-# De [!DNL Redis] tab
+# Het tabblad [!DNL Redis]
 
 ## [!UICONTROL Redis Node summary]
 
-![Overzicht van Redis Node](../../assets/tools/observation-for-adobe-commerce/redis-tab-1.jpg)
+![ Redis Overzicht van de Knoop ](../../assets/tools/observation-for-adobe-commerce/redis-tab-1.jpg)
 
-De **[!UICONTROL Redis Node summary]** omvat alle knooppunten in een omgeving. In het bovenstaande voorbeeld staan de knooppunten voor gedeelde staging. Er zijn één primaire en twee secundaire werknemers in productie en ook een primaire en twee secundaire staging.
+**[!UICONTROL Redis Node summary]** is inclusief alle knooppunten in een omgeving. In het bovenstaande voorbeeld staan de knooppunten voor gedeelde staging. Er zijn één primaire en twee secundaire werknemers in productie en ook een primaire en twee secundaire staging.
 
 ## [!UICONTROL Redis node detail]
 
-![Detail van opnieuw verzonden knooppunten](../../assets/tools/observation-for-adobe-commerce/redis-tab-2.jpg)
+![ herdiept knoopdetail ](../../assets/tools/observation-for-adobe-commerce/redis-tab-2.jpg)
 
-De **[!UICONTROL Redis node detail]** frame verwijst naar de omgeving; [!DNL Redis] rol, softwareversie en knooppuntgrootte.
+Het frame **[!UICONTROL Redis node detail]** geeft de omgeving, [!DNL Redis] rol, softwareversie en knooppuntgrootte aan.
 
 ## [!UICONTROL Redis node roles timeline]
 
-![Tijdlijn knooppuntrollen opnieuw weergeven](../../assets/tools/observation-for-adobe-commerce/redis-tab-3.jpg)
+![ herdiept de chronologie van knooprollen ](../../assets/tools/observation-for-adobe-commerce/redis-tab-3.jpg)
 
-De **[!UICONTROL Redis node roles timeline]** frame geeft het verlies van [!DNL Redis] diensten in het bijzonder. Als een lijn dips, wijst het erop dat de bepaalde rol die de lijn vertegenwoordigt een knoop of knopen heeft verloren.
+Het frame **[!UICONTROL Redis node roles timeline]** geeft het verlies aan van [!DNL Redis] -service in bepaalde rollen aan. Als een lijn dips, wijst het erop dat de bepaalde rol die de lijn vertegenwoordigt een knoop of knopen heeft verloren.
 
 ## [!UICONTROL Connection to Redis]
 
-![Verbinding met Redis](../../assets/tools/observation-for-adobe-commerce/redis-tab-4.jpg)
+![ Verbinding aan Redis ](../../assets/tools/observation-for-adobe-commerce/redis-tab-4.jpg)
 
-De **[!UICONTROL Connection to Redis]** frame geeft de waarde net.connectedClients weer vanuit de [!DNL New Relic Redis] voorbeeldgegevens. Het toont de verbindingentelling door [!DNL New Relic] application (environment) en node.
+In het frame **[!UICONTROL Connection to Redis]** wordt de waarde net.connectedClients uit de voorbeeldgegevens van [!DNL New Relic Redis] weergegeven. Het toont het aantal verbindingen door [!DNL New Relic] toepassing (milieu) en knoop.
 
 ## [!UICONTROL Commands per second by node]
 
-![Opdrachten per seconde per knooppunt](../../assets/tools/observation-for-adobe-commerce/redis-tab-5.jpg)
+![ Bevelen per seconde door knoop ](../../assets/tools/observation-for-adobe-commerce/redis-tab-5.jpg)
 
-De **[!UICONTROL Commands per second by node]** frame toont de [!DNL Redis] opdrachten per knooppunt per seconde gedurende de geselecteerde tijdlijn.
+In het frame **[!UICONTROL Commands per second by node]** worden de [!DNL Redis] -opdrachten per knooppunt per seconde gedurende de geselecteerde tijdlijn weergegeven.
 
 ## [!UICONTROL Redis % of memory used]
 
-![%s gebruikt geheugen opnieuw instellen](../../assets/tools/observation-for-adobe-commerce/redis-tab-6.jpg)
+![ Redis % van gebruikt geheugen ](../../assets/tools/observation-for-adobe-commerce/redis-tab-6.jpg)
 
-De **[!UICONTROL Redis % of memory used]** frame geeft het percentage weer van het maximale geheugen dat door de [!DNL Redis] servers.
+In het frame **[!UICONTROL Redis % of memory used]** wordt het percentage weergegeven van het maximale geheugen dat door de [!DNL Redis] -servers wordt gebruikt.
 
 ## [!UICONTROL Redis used memory]
 
-![Herdis gebruikt geheugen](../../assets/tools/observation-for-adobe-commerce/redis-tab-7.jpg)
+![ opnieuw wordt gebruikt geheugen ](../../assets/tools/observation-for-adobe-commerce/redis-tab-7.jpg)
 
-De **[!UICONTROL Redis used memory]** frame toont het knoopgebruik van geheugen in GB/MB.
+In het frame **[!UICONTROL Redis used memory]** wordt het knooppuntgebruik in GB/MB weergegeven.
 
 ## [!UICONTROL Redis changes since last db save]
 
-![Wijzigingen sinds laatste keer opslaan opnieuw verzenden](../../assets/tools/observation-for-adobe-commerce/redis-tab-8.jpg)
+![ herstelt veranderingen sinds laatste db sparen ](../../assets/tools/observation-for-adobe-commerce/redis-tab-8.jpg)
 
-[!DNL Redis] is een geheugeningezetene en slaat de informatie op voor opslag. De **[!UICONTROL Redis changes since last db save]** frame geeft het aantal wijzigingen in het geheugen aan dat is opgetreden sinds de laatste database naar de opslaglocatie is opgeslagen. Zie [Redis persistentie](https://redis.io/docs/latest/operate/oss_and_stack/management/persistence/) voor meer uitleg over [!DNL Redis's] persistentie.
+[!DNL Redis] is een geheugeningezetene en slaat de informatie op voor opslag. Het frame **[!UICONTROL Redis changes since last db save]** geeft het aantal wijzigingen in het geheugen aan dat is opgetreden sinds de laatste database naar de opslaglocatie is opgeslagen. Verwijs naar [ Redis persistentie ](https://redis.io/docs/latest/operate/oss_and_stack/management/persistence/) voor meer verklaring over [!DNL Redis's] persistentie.
 
 ## [!UICONTROL Redis synchronization from Log]
 
-![Synchronisatie van logbestand opnieuw uitschakelen](../../assets/tools/observation-for-adobe-commerce/redis-tab-9.jpg)
+![ herstelt synchronisatie van Logboek ](../../assets/tools/observation-for-adobe-commerce/redis-tab-9.jpg)
 
-De **[!UICONTROL Redis synchronization from Log]** frame richt zich op de fouten die tijdens [!DNL Redis] synchroniseren of fouten die optreden als gevolg van synchronisatieproblemen. Voor meer informatie over [!DNL Redis], zie [[!DNL Redis] Documentatie](https://redis.io/docs/).
+Het **[!UICONTROL Redis synchronization from Log]** -frame richt zich op de fouten die optreden tijdens [!DNL Redis] -synchronisatie of op fouten die optreden als gevolg van synchronisatieproblemen. Voor meer informatie over [!DNL Redis], verwijs naar [[!DNL Redis]  Documentatie ](https://redis.io/docs/).

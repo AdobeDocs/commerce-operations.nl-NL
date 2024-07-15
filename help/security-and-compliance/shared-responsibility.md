@@ -108,8 +108,8 @@ In de volgende overzichtstabel wordt het RACI-model gebruikt om de beveiligingsv
 
 **R** — Verantwoordelijk
 **A** — Verantwoordelijk
-**C** — Raadpleging
-**I** — Informatie
+**C** — Geconsulteerd
+**I** — Informed
 
 >[!ENDSHADEBOX]
 
@@ -132,7 +132,7 @@ In de volgende overzichtstabel wordt het RACI-model gebruikt om de beveiligingsv
     <td></td>
   </tr>
   <tr>
-    <td>Patches toepassen op ondersteunende services<br>(Bijvoorbeeld Nginx of MySQL.)</td>
+    <td>Het toepassen van flarden op het steunen van de diensten <br> (Bijvoorbeeld, Nginx of MySQL.)</td>
     <td>R</td>
     <td>I</td>
     <td></td>
@@ -230,7 +230,7 @@ In de volgende overzichtstabel wordt het RACI-model gebruikt om de beveiligingsv
     <td></td>
   </tr>
   <tr>
-    <td>De bronopslagplaats configureren<sup>1</sup></td>
+    <td>Het vormen van de bronbewaarplaats <sup> 1 </sup></td>
     <td>R</td>
     <td>I</td>
     <td></td>
@@ -328,7 +328,7 @@ In de volgende overzichtstabel wordt het RACI-model gebruikt om de beveiligingsv
     <td></td>
   </tr>
   <tr>
-    <td>CDN wordt ondersteund<sup>2</sup></td>
+    <td>Het steunen CDN <sup> 2 </sup></td>
     <td>R</td>
     <td>I</td>
     <td></td>
@@ -356,7 +356,7 @@ In de volgende overzichtstabel wordt het RACI-model gebruikt om de beveiligingsv
     <td></td>
   </tr>
   <tr>
-    <td>Nginx configureren<sup>3</sup></td>
+    <td>Het vormen Nginx <sup> 3 </sup></td>
     <td>R</td>
     <td>R</td>
     <td></td>
@@ -440,7 +440,7 @@ In de volgende overzichtstabel wordt het RACI-model gebruikt om de beveiligingsv
     <td></td>
   </tr>
   <tr>
-    <td>Adobe Commerce verhelpen op PCI-scans met cloudinfrastructuur<sup>4</sup></td>
+    <td>Het verhelpen van Adobe Commerce op de scans van wolkeninfrastructuur PCI <sup> 4 </sup></td>
     <td>R</td>
     <td>R</td>
     <td></td>
@@ -520,10 +520,10 @@ In de volgende overzichtstabel wordt het RACI-model gebruikt om de beveiligingsv
 <tfoot>
   <tr>
     <td colspan="5">
-      <p><sup><strong>1</strong></sup> Alleen als de Adobe Commerce op de gegevensopslagplaats voor cloudinfrastructuur wordt gebruikt als de hoofdopslagplaats. Het gebruik van andere externe opslagplaatsen valt uitsluitend onder de verantwoordelijkheid van de handelaar.</p>
-      <p><sup><strong>2</strong></sup> Adobe biedt ondersteuning op niveau 1 voor problemen met CDN-providers.</p>
-      <p><sup><strong>3</strong></sup> De handelaar is verantwoordelijk voor om het even welke controles Ngnix die zij voor hun toepassingen vormen.</p>
-      <p><sup><strong>4</strong></sup> Voor PCI worden de vereisten voor penetratietests gedeeld tussen Adobe en de handelaar.</p>
+      <p><sup><strong> 1 </strong></sup> slechts als Adobe Commerce op de bewaarplaats van de wolkeninfrastructuur als belangrijkste bewaarplaats wordt gebruikt. Het gebruik van andere externe opslagplaatsen valt uitsluitend onder de verantwoordelijkheid van de handelaar.</p>
+      <p><sup><strong> 2 </strong></sup> Adobe verleent Niveau 1 steun voor kwesties met CDN leveranciers.</p>
+      <p><sup><strong> 3 </strong></sup> De handelaar is verantwoordelijk voor om het even welke controles Ngnix die zij voor hun toepassingen vormen.</p>
+      <p><sup><strong> 4 </strong></sup> voor PCI, worden de penetratietestvereisten gedeeld tussen Adobe en de handelaar.</p>
     </td>
   </tr>
 </tfoot>
@@ -639,7 +639,7 @@ Merchants zijn verantwoordelijk voor het synchroniseren van gegevens tussen omge
 | --- | --- | --- |
 | Logbestanden roteren | R |   |
 | Aangepaste Adobe Commerce-toepassing | | R |
-| Beschikbaarheid van New Relic-services:<br>APM-toepassing en integratie van agents, infrastructuurtoepassing,<br>Registratie en integratie | R |   |
+| Beschikbaarheid van de diensten van New Relic:<br> APM toepassing en agentenintegratie, de toepassing van de Infrastructuur, <br> Logging &amp; integratie | R |   |
 | New Relic-waarschuwingen instellen |     | R |
 | New Relic-agent implementeren op PaaS-servers |     | R |
 
@@ -662,7 +662,7 @@ Merchants zijn verantwoordelijk voor het synchroniseren van gegevens tussen omge
 | --- | --- | --- |
 | Toepassingsconfiguratie |     | R |
 | Domeinen toevoegen aan de Adobe Commerce-toepassing (basis-URL&#39;s) |     | R |
-| PaaS configureren om serviceversies te gebruiken die door de geïmplementeerde Adobe Commerce-versie worden ondersteund<br><br>Verschillende Commerce-versies zijn bijvoorbeeld compatibel met specifieke versies van PHP, Redis, enzovoort. |     | R |
+| Het vormen PaaS om de versies van de Diensten te gebruiken die door de opgestelde versie van Adobe Commerce <br><br> worden gesteund, bijvoorbeeld, zijn de verschillende versies van Commerce compatibel met specifieke versies van PHP, Redis, etc. |     | R |
 
 {style="table-layout:auto"}
 
@@ -702,8 +702,8 @@ Merchants zijn verantwoordelijk voor het synchroniseren van gegevens tussen omge
 |     | Adobe | Merchant |
 | --- | --- | --- |
 | Beschikbaarheid van Galera- en MariaDB-services | R | |
-| Doorlopend onderhoud van standaardinstellingen voor databases<br><br>(indexeren en optimaliseren kernlijsten, optimaliserend standaard systeem-admin montages) | R |   |
-| Doorlopend onderhoud van bedrijfsgegevens en gewijzigde instellingen<br><br>(het vormen genormaliseerde versus vlakke lijsten, het indexeren en optimaliseren van douane en derdetabellen, het archiveren of het verwijderen van gegevens, het vormen van de montages van het systeembeleid) |     | R |
+| Het lopende onderhoud van standaardgegevensbestandmontages <br><br> (indexerend en optimaliserend kernlijsten, optimaliserend standaard sys-admin montages) | R |   |
+| Het voortdurende onderhoud van koopkrachtige gegevens en gewijzigde montages <br><br> (het vormen genormaliseerde versus vlakke lijsten, het indexeren en optimaliseren van douane en derdetabellen, het archiveren of het verwijderen van gegevens, het vormen systeembeleidsmontages) |     | R |
 | Configuratie van Galera en MySQL | R |   |
 | Doorlopende kwaliteit en patching van Galera en MariaDB | R |   |
 | Doorlopende infrastructuuroptimalisatie | R |   |
@@ -755,7 +755,7 @@ Merchants zijn verantwoordelijk voor het synchroniseren van gegevens tussen omge
 | --- | --- | --- |
 | Beschikbaarheid van de e-mailservice van SendGrid en de integratie ervan | R |   |
 | Het gebruik van SendGrid van de handelaar van de monitor tegen grenzen | R |   |
-| De handelaar is verantwoordelijk voor het gebruiken van de dienst slechts voor uitgaande transactie e-mail<br>De service biedt geen ondersteuning voor het verzenden van marketingberichten. |     | R |
+| De handelaar is verantwoordelijk voor het gebruiken van de dienst slechts voor uitgaande transactie e-mails <br> De dienst steunt niet het verzenden van marketing e-mails. |     | R |
 | Optionele e-mailservices van derden configureren |     | R |
 
 {style="table-layout:auto"}
@@ -786,8 +786,8 @@ Merchants zijn verantwoordelijk voor het synchroniseren van gegevens tussen omge
 | Beschikbaarheid van Adobe Commerce Business Intelligence-services | R |   |
 | MBI-synchronisatieprocessen | R |   |
 | MBI-synchronisatieproblemen detecteren | R |   |
-| MBI-gegevenssynchronisatie configureren naar Adobe Commerce Cloud Pro, Starter, On-Premises of niet-Adobe Commerce<br>(API, gegevenskwaliteit en -opmaak, bedrijfsnetwerk,<br>DB-verbindingen, zowel binnen als buiten Adobe Commerce Cloud DB, boven gegevensdrempels) |     | R |
-| MBI-gegevenssynchronisatie configureren naar Adobe Commerce Cloud Pro<br>(Adobe Commerce Cloud-databaseconfiguratie) | R |   |
+| Het vormen MBI de Synchronisatie van Gegevens aan Adobe Commerce Cloud Pro, Starter, op Beelden, of niet-Adobe Commerce <br> (API, de kwaliteit en het formatteren van Gegevens, handelend netwerk, <br> verbindingen van DB zowel binnen als buiten Adobe Commerce Cloud OB, over gegevensdrempels) |     | R |
+| Het vormen MBI de Synchronisatie van Gegevens aan Adobe Commerce Cloud Pro <br> (de gegevensbestandconfiguratie van Adobe Commerce Cloud) | R |   |
 
 {style="table-layout:auto"}
 
@@ -857,7 +857,7 @@ Merchants zijn verantwoordelijk voor het synchroniseren van gegevens tussen omge
 | Configuratie van PrivateLink binnenkomend aan het eindpunt van de Dienst VPC van Merchant |     | R |
 | Acceptatie van PrivateLink binnenkomend aan het eindpunt van de Dienst van Merchant VPC | R |   |
 | Configuratie van integratie PrivateLink (eindpunt voor account) |     | R |
-| Configuratie van VPC die eigendom is van de handelaar voor het eindpunt PrivateLink<br><br> (inclusief eventuele VPN-verbindingen) |     | R |
+| Configuratie van merchant-bezeten VPC voor het eindpunt PrivateLink <br><br> (met inbegrip van om het even welke verbindingen van VPN) |     | R |
 
 {style="table-layout:auto"}
 

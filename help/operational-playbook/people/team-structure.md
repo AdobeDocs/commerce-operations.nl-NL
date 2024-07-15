@@ -21,4 +21,4 @@ Het volgende diagram vat de verschillende teamstructuren samen die binnen organi
 >
 >Als deel van een typisch e-commerce werkschema, is een gecentraliseerd team het gemeenschappelijkst van de vijf hieronder getoonde types. De honingraatstructuur wordt het best uitgelijnd op de flexibele workflows.
 
-![Teamstructuurdiagrammen](../../assets/playbooks/team-structure.png)
+![ de structuurdiagrammen van het Team ](../../assets/playbooks/team-structure.png)

@@ -11,7 +11,7 @@ ht-degree: 0%
 
 # Het databaseschema en de gegevens bijwerken
 
-Voordat u deze opdracht gebruikt, moet u [de toepassing installeren](../advanced.md).
+Alvorens u dit bevel gebruikt, moet u [ de toepassing ](../advanced.md) installeren.
 
 ## Het databaseschema en de gegevens bijwerken
 
@@ -23,7 +23,7 @@ Telkens wanneer u een actie uitvoert die het gegevensbestandschema of de gegeven
 
 >[!NOTE]
 >
->A *component* kan een module, een thema, of een taalpak zijn; het maakt niet uit of de component uit de Commerce Marketplace of niet komt.
+>A *component* kan een module, een thema, of taalpak zijn; het maakt niet uit of de component uit de Commerce Marketplace of niet komt.
 
 1. Start de upgrade:
 
@@ -31,7 +31,7 @@ Telkens wanneer u een actie uitvoert die het gegevensbestandschema of de gegeven
    bin/magento setup:upgrade [--keep-generated]
    ```
 
-   Wanneer `--keep-generated` is een optioneel argument dat niet wordt bijgewerkt [statische weergavebestanden](../../configuration/cli/static-view-file-deployment.md). Dit optionele argument is for use *alleen* in beperkte omstandigheden door ervaren systeemintegrators. Het moet worden gebruikt *alleen* in [productiemodus](../../configuration/bootstrap/application-modes.md#production-mode). Het moet *niet* worden gebruikt in [ontwikkelmodus](../../configuration/bootstrap/application-modes.md#developer-mode).
+   Waar `--keep-generated` een facultatief argument is dat niet [ statische meningsdossiers ](../../configuration/cli/static-view-file-deployment.md) bijwerkt. Dit facultatieve argument is voor gebruik *slechts* in beperkte omstandigheden door ervaren systeemintegrators. Het zou *slechts* op [ productiemodus ](../../configuration/bootstrap/application-modes.md#production-mode) moeten worden gebruikt. Het zou ** niet moeten worden gebruikt op [ ontwikkelaarwijze ](../../configuration/bootstrap/application-modes.md#developer-mode).
 
 1. De cache reinigen:
 

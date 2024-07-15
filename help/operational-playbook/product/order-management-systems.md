@@ -1,11 +1,11 @@
 ---
-title: Orderbeheersystemen
+title: Order Management Systems
 description: Voltooi uw e-commerce project met een systeem voor verpakking, verzending, en terugkeer.
 exl-id: 2a5f19fa-e8fe-452b-9ab6-65428dda691d
 feature: Best Practices, Orders
 source-git-commit: e83e2359377f03506178c28f8b30993c172282c7
 workflow-type: tm+mt
-source-wordcount: '878'
+source-wordcount: '864'
 ht-degree: 0%
 
 ---
@@ -20,13 +20,13 @@ Een OMS biedt integratie en automatisering via de reis van de klantenbestelling 
 
 OMS is belangrijk voor een e-commercesite omdat het merken helpt groeien. Klanten hebben hoge verwachtingen, wat geen ruimte voor fouten laat. Enkele redenen waarom een OMS essentieel is, zijn onder meer:
 
-- **Biedt snellere levering**—In een leeftijd van de volgende dag of 2 dag verschepen, moeten de ondernemingen manieren zoeken om hun bestellingen uit te duwen sneller aangezien het venster voor de voltooiing van bestellingen smaller wordt. OMS wordt onmiddellijk op de hoogte gebracht wanneer een orde wordt geplaatst, en OMS kan het dichtste pakhuis aan de ordebestemming kiezen helpen levering versnellen. Het OMS stuurt geautomatiseerde bestelgegevens naar het pakhuisteam om de bestelling voor te bereiden en in te pakken om te verzenden met behulp van een kosteneffectieve verzendmethode.
+- **verstrekt snellere levering** - in een leeftijd van volgende dag of 2 dag verschepen, moeten de ondernemingen naar manieren zoeken om hun orden uit te duwen sneller aangezien het venster voor de voltooiing van orden smaller wordt. OMS wordt onmiddellijk op de hoogte gebracht wanneer een orde wordt geplaatst, en OMS kan het dichtste pakhuis aan de ordebestemming kiezen helpen levering versnellen. Het OMS stuurt geautomatiseerde bestelgegevens naar het pakhuisteam om de bestelling voor te bereiden en in te pakken om te verzenden met behulp van een kosteneffectieve verzendmethode.
 
-- **Beperkte fouten**: Een OMS helpt menselijke fouten te verminderen. Deze fouten kunnen tijdrovend en duur zijn. Een OMS brengt het team op de hoogte wanneer de voorraadniveaus laag zijn, wanneer een product niet verkoopt, of welk product het hoogste terugkeertarief heeft. Hierdoor kunnen bedrijven de verzendfouten corrigeren en de reden voor het retourneren analyseren.
+- **Beperkte fouten**: Een hulp OMS vermindert menselijke fouten. Deze fouten kunnen tijdrovend en duur zijn. Een OMS brengt het team op de hoogte wanneer de voorraadniveaus laag zijn, wanneer een product niet verkoopt, of welk product het hoogste terugkeertarief heeft. Hierdoor kunnen bedrijven de verzendfouten corrigeren en de reden voor het retourneren analyseren.
 
-- **Meer schaalbaarheid**—In tegenstelling tot oudere handmatige systemen wordt een OMS geschaald op basis van de behoefte van het bedrijf. OMS-software biedt bedrijven de mogelijkheid om te schalen met de markt.
+- **Verhoging in scalability** - een schalen OMS volgens de behoefte van de zaken, in tegenstelling tot oudere handsystemen. OMS-software biedt bedrijven de mogelijkheid om te schalen met de markt.
 
-- **Meer mogelijkheden voor meerdere kanalen**—In een tijdperk van meerkanaalsverkoop via websites, markten of partnerschappen (Facebook en Instagram) kan het volgen van bestellingen complex zijn, omdat ze naar verschillende locaties worden verzonden met behulp van een of meer verzendmethoden. Een OMS brengt het samen en verhoogt klantenervaring.
+- **meer multi-kanaalmogelijkheden** - in een tijdperk van multi-kanaalverkoop over websites, markten, of partnerschappen (Facebook en Instagram), kan het volgen van orden complex zijn omdat zij aan verscheidene plaatsen gebruikend één of meerdere het verschepen methodes worden verscheept. Een OMS brengt het samen en verhoogt klantenervaring.
 
 ## Belangrijkste kenmerken
 
@@ -55,7 +55,7 @@ Bedrijven/detailhandelaren moeten de juiste OMS selecteren die het beste bij hun
 
 - Plan een project om OMS uit te voeren en het team op te leiden om het te gebruiken
 
-![Schema voor beheersysteem voor bestellingen](../../assets/playbooks/order-management-system.png)
+![ het beheerssysteemdiagram van de Orde ](../../assets/playbooks/order-management-system.png)
 
 Een OMS kan helpen kosten controleren, ROI verhogen, het uitvoeringsproces versnellen, en de klant en interne teamervaring verbeteren.
 

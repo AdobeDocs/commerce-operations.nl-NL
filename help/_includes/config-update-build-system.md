@@ -7,7 +7,7 @@ ht-degree: 0%
 ---
 # Systeem voor bijwerken van build
 
-**Het constructiesysteem bijwerken**:
+**om het bouwstijlsysteem** bij te werken:
 
 1. Meld u aan bij het constructiesysteem als de eigenaar van het bestandssysteem.
 1. Wijzig de hoofdmap van de toepassing.
@@ -16,7 +16,7 @@ ht-degree: 0%
    cd <Magento root dir>
    ```
 
-1. Breng de wijzigingen aan in `app/etc/config.php` van broncontrole.
+1. Trek de wijzigingen in `app/etc/config.php` van het bronbesturingselement.
 
    ```bash
    git pull mconfig m2.2_deploy

@@ -1,5 +1,5 @@
 ---
-title: Handelsdoelstellingen
+title: Commerce-doelen
 description: Stel doelstellingen op korte en lange termijn in om uw team te helpen zich op strategische doelstellingen te richten en de organisatorische doeltreffendheid te verhogen.
 exl-id: 749f6a9a-c06f-4f51-a19c-9e4181e002f7
 source-git-commit: e76f101df47116f7b246f21f0fe0fa72769d2776

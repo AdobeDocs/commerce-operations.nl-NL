@@ -5,7 +5,7 @@ exl-id: 5a104148-74f1-469b-84ca-9bce740a7865
 feature: Deploy
 source-git-commit: 94d7a57dcd006251e8eefbdb4ec3a5e140bf43f9
 workflow-type: tm+mt
-source-wordcount: '529'
+source-wordcount: '525'
 ht-degree: 0%
 
 ---
@@ -24,7 +24,7 @@ De overdracht van kennis komt over de loop van het volledige project voor, en ee
 
 In het volgende diagram worden de fasen en activiteiten weergegeven die in een succesvol overgangsresultaat zouden worden opgenomen:
 
-![Diagram met fasen van het overgangsproces](../../assets/playbooks/transition-diagram.svg)
+![ Diagram die fasen van het overgangsproces tonen ](../../assets/playbooks/transition-diagram.svg)
 
 >[!NOTE]
 >
@@ -33,5 +33,6 @@ In het volgende diagram worden de fasen en activiteiten weergegeven die in een s
 Het identificeren van het juiste steunmodel voor uw zaken om uw platform-en handelspraktijk te blijven verbeteren en optimaliseren als geheel-is een kritieke stap aan het handhaven van al hard werk dat tijdens het implementatieproces werd gedaan. Met een uitgebreid aan de gang zijnde steunplan op zijn plaats, kan uw handelsplaats omhoog met de verwachtingen van uw klanten houden en u kunt uw doelstellingen blijven bereiken.
 
 Bij de implementatie van Adobe Commerce is het van essentieel belang om na te denken over wat u moet opnemen in uw onderhouds- en ondersteuningsstrategie.
-Expert support is inbegrepen in een Adobe Commerce-licentie. Raadpleeg voor meer informatie over ondersteuningsplannen voor experts en Adoben [Ondersteuningsplannen voor Adoben](https://business.adobe.com/customers/consulting-services/premier-support.html).
+Expert support is inbegrepen in een Adobe Commerce-licentie. Voor meer informatie over de Deskundige steun en de Abonnementen van de Steun van de Adobe, gelieve te verwijzen naar {de Abonnementen van de Steun van 0} Adobe ](https://business.adobe.com/customers/consulting-services/premier-support.html).
+[
 Naast de plannen van de Steun van de Adobe zijn er de termijnen van de steun van het Magento erfenis. Als u wilt weten welke supportservices op u van toepassing zijn, kunt u verwijzen naar uw contract om te zien welke ondersteuningsovereenkomst u hebt of kunt u contact opnemen met het accountteam van uw Adobe.

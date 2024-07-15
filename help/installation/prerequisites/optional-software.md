@@ -17,7 +17,7 @@ De andere optionele hulpprogramma&#39;s die in dit onderwerp worden besproken, k
 
 ## Het installeren van en het Vormen het Protocol van de Tijd van het Netwerk (NTP)
 
-[NTP](https://www.ntp.org/) laat servers toe om hun systeemklokken te synchroniseren gebruikend [wereldwijd beschikbare poolservers](https://www.ntppool.org/en/). Wij adviseren u servers NTP gebruikt u vertrouwt, of zij specifieke hardwareoplossingen uw intern netwerk of externe, openbare servers zijn.
+[ NTP ](https://www.ntp.org/) laat servers toe om hun systeemklokken te synchroniseren gebruikend [ globaal beschikbare poolservers ](https://www.ntppool.org/en/). Wij adviseren u servers NTP gebruikt u vertrouwt, of zij specifieke hardwareoplossingen uw intern netwerk of externe, openbare servers zijn.
 
 Als u Adobe Commerce op veelvoudige gastheren opstelt, is NTP een eenvoudige manier om hun klokken te waarborgen allen gesynchroniseerd zijn, geen kwestie welke tijdzone de servers binnen zijn. Ook, hangen de op elkaar betrekking hebbende taken (zoals het indexeren en transactie e-mail) van de serverklok af nauwkeurig is.
 
@@ -29,7 +29,7 @@ Ga het volgende bevel in om NTP te installeren:
 apt-get install ntp
 ```
 
-Doorgaan met [NTP-poolservers gebruiken](#use-ntp-pool-servers).
+Ga met [ de poolservers van het Gebruik NTP ](#use-ntp-pool-servers) verder.
 
 ### NTP installeren en configureren op CentOS
 
@@ -41,7 +41,7 @@ NTP installeren en configureren:
    yum search ntp
    ```
 
-1. Selecteer het pakket dat u wilt installeren. Bijvoorbeeld: `ntp.x86_64`.
+1. Selecteer het pakket dat u wilt installeren. Bijvoorbeeld `ntp.x86_64` .
 
 1. Installeer het pakket.
 
@@ -59,9 +59,9 @@ NTP installeren en configureren:
 
 ### NTP-poolservers gebruiken
 
-U kunt poolservers selecteren. Als u NTP-poolservers gebruikt, raadt ntp.org u aan [poolservers](https://www.ntppool.org/en/) die dicht bij de tijdzone van uw servers zoals die op [Projectpagina NTP-pool](https://www.ntppool.org/en/use.html). Als u een privé server NTP hebt die aan alle gastheren in uw plaatsing beschikbaar is, kunt u die server in plaats daarvan gebruiken.
+U kunt poolservers selecteren. Als u NTP poolservers gebruikt, adviseert ntp.org u [ poolservers ](https://www.ntppool.org/en/) gebruikt die dicht bij de tijdzone van uw servers zoals besproken op de [ NTP de pagina van het poolproject ](https://www.ntppool.org/en/use.html) zijn. Als u een privé server NTP hebt die aan alle gastheren in uw plaatsing beschikbaar is, kunt u die server in plaats daarvan gebruiken.
 
-1. Openen `/etc/ntp.conf` in een teksteditor.
+1. Open `/etc/ntp.conf` in een teksteditor.
 
 1. Zoek naar lijnen gelijkend op het volgende:
 
@@ -81,7 +81,7 @@ U kunt poolservers selecteren. Als u NTP-poolservers gebruikt, raadt ntp.org u a
    server 2.us.pool.ntp.org
    ```
 
-1. Sla uw wijzigingen op in `/etc/ntp.conf` en sluit de teksteditor af.
+1. Sla de wijzigingen in `/etc/ntp.conf` op en sluit de teksteditor af.
 
 1. Start de service opnieuw.
 
@@ -89,21 +89,21 @@ U kunt poolservers selecteren. Als u NTP-poolservers gebruikt, raadt ntp.org u a
 
    * CentOS: `service ntpd restart`
 
-1. Enter `date` om de datum van de server te controleren.
+1. Voer `date` in om de datum van de server te controleren.
 
    Als de datum onjuist is, zorg ervoor de NTP cliënthaven (typisch, UDP 123) open in uw firewall is.
 
-   Probeer de `ntpdate _[pool server hostname]_` gebruiken. Als het ontbreekt, zoek naar de fout het terugkeert.
+   Probeer de opdracht `ntpdate _[pool server hostname]_` . Als het ontbreekt, zoek naar de fout het terugkeert.
 
    Als de rest mislukt, start u de server opnieuw op.
 
 ## phpinfo.php maken
 
-De [`phpinfo.php`](https://www.php.net/manual/en/function.phpinfo.php) bestand bevat een grote hoeveelheid informatie over PHP en zijn extensies.
+In het bestand [`phpinfo.php` ](https://www.php.net/manual/en/function.phpinfo.php) wordt een grote hoeveelheid informatie over PHP en zijn extensies weergegeven.
 
 >[!NOTE]
 >
->Gebruiken `phpinfo.php` in een ontwikkelingssysteem _alleen_. Het kan een veiligheidskwestie in productie zijn.
+>Gebruik `phpinfo.php` in een ontwikkelingssysteem _slechts_. Het kan een veiligheidskwestie in productie zijn.
 
 Voeg de volgende code overal in de hoofdmap van uw webserver toe:
 
@@ -113,7 +113,7 @@ Voeg de volgende code overal in de hoofdmap van uw webserver toe:
 phpinfo();
 ```
 
-Zie de klasse [pagina met fpinfo-handleiding](https://www.php.net/manual/en/function.phpinfo.php).
+Voor meer informatie, zie de [ phpinfo handpagina ](https://www.php.net/manual/en/function.phpinfo.php).
 
 Als u de resultaten wilt bekijken, voert u de volgende URL in het locatie- of adresveld van uw browser in:
 
@@ -126,21 +126,21 @@ Controleer het volgende als een fout van 404 (Niet gevonden) wordt weergegeven:
 * Start indien nodig de webserver.
 * Zorg ervoor dat uw firewall verkeer op haven 80 toestaat.
 
-  [Help voor Ubuntu](https://help.ubuntu.com/community/UFW)
+  [ Hulp voor Ubuntu ](https://help.ubuntu.com/community/UFW)
 
-  [Help voor CentOS](https://wiki.centos.org/HowTos%282f%29Network%282f%29IPTables.html)
+  [ Hulp voor CentOS ](https://wiki.centos.org/HowTos%282f%29Network%282f%29IPTables.html)
 
 ## phpMyAdmin
 
 De phpMyAdmin-toepassing is een gebruiksvriendelijk, gratis hulpprogramma voor databasebeheer. U kunt het gebruiken om de inhoud van uw gegevensbestand te controleren en te manipuleren. U moet login aan phpMyAdmin als MySQL gegevensbestandadministratieve gebruiker.
 
-Voor meer informatie over phpMyAdmin, zie [phpMyAdmin-startpagina](https://www.phpmyadmin.net/).
+Voor meer informatie over phpMyAdmin, zie de [ phpMyAdmin homepage ](https://www.phpmyadmin.net/).
 
-Voor meer gedetailleerde informatie over installatie, zie [PHPMyAdmin-installatiedocumentatie](https://docs.phpmyadmin.net/en/latest/setup.html#quick-install).
+Voor meer gedetailleerde informatie over installatie, zie de [ phpMyAdmin installatiedocumentatie ](https://docs.phpmyadmin.net/en/latest/setup.html#quick-install).
 
 >[!NOTE]
 >
->PHPMyAdmin gebruiken in een ontwikkelingssysteem _alleen_. Het kan een veiligheidskwestie in productie zijn.
+>Gebruik phpMyAdmin in een ontwikkelingssysteem _slechts_. Het kan een veiligheidskwestie in productie zijn.
 
 1. Als u phpMyAdmin wilt gebruiken, voert u de volgende opdracht in het adres- of locatieveld van uw browser in:
 
@@ -148,4 +148,4 @@ Voor meer gedetailleerde informatie over installatie, zie [PHPMyAdmin-installati
    http://<web server host or IP>/phpmyadmin
    ```
 
-1. Meld u aan met uw MySQL-database wanneer hierom wordt gevraagd `root` of de gebruikersnaam en het wachtwoord van de beheerder.
+1. Meld u aan met de MySQL-database `root` of de gebruikersnaam en het wachtwoord van de beheerder.

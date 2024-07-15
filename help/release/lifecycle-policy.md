@@ -14,33 +14,33 @@ ht-degree: 5%
 
 Voor Adobe Commerce 2.4.4 en latere versies:
 
-- Om het levenscyclusbeleid van Adobe Commerce te stroomlijnen en de opdracht-kritieke behoeften van klanten te steunen, breidde de Adobe het steunvenster tot drie jaar uit van de Algemene datum van de Beschikbaarheid (GA) voor Adobe Commerce 2.4.4 en later. Adobe biedt kwaliteitscorrecties voor 2.4.4 en latere releases voor een periode van drie jaar. Klanten kunnen toegang krijgen tot de kwaliteitsoplossingen door contact op te nemen met [Adobe Commerce-ondersteuning](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html) of via het zelfdienen [[!DNL Quality Patches Tool]](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html) als de versie ervan nog steeds in aanmerking komt voor kwaliteitsondersteuning. Raadpleeg de onderstaande tabel voor de einddata van de softwareondersteuning voor Adobe Commerce-releaselijnen.
+- Om het levenscyclusbeleid van Adobe Commerce te stroomlijnen en de opdracht-kritieke behoeften van klanten te steunen, breidde de Adobe het steunvenster tot drie jaar uit van de Algemene datum van de Beschikbaarheid (GA) voor Adobe Commerce 2.4.4 en later. Adobe biedt kwaliteitscorrecties voor 2.4.4 en latere releases voor een periode van drie jaar. De klanten kunnen tot kwaliteitsmoeilijke situaties toegang hebben door [ Steun van Adobe Commerce ](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html) te contacteren of door zelf-dient [[!DNL Quality Patches Tool] ](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html) als hun versie nog voor kwaliteitssteun verkiest. Raadpleeg de onderstaande tabel voor de einddata van de softwareondersteuning voor Adobe Commerce-releaselijnen.
 
 - Adobe biedt beveiligingsoplossingen via een beveiligingspatchrelease voor de ondersteuningsperiode van drie jaar.
 
-- Voor belangrijke beveiligingsproblemen, zoals &#39;zero-day&#39;-kwetsbaarheden, biedt Adobe [hotfixes](https://support.magento.com/hc/en-us/sections/360003869892-Known-issues-patches-attached-) voor alle klanten op een ondersteunde versie, zelfs als ze niet op de nieuwste patch of beveiligingspatchrelease staan. Het is belangrijk om op te merken dat een hotfix geen vangst-allen is en niet alle veiligheidskwesties behandelt die door verbetering aan de recentste versie zouden worden opgelost.
+- Voor kritieke veiligheidskwesties, zoals nul-dag kwetsbaarheid, verstrekt de Adobe [ hotfixes ](https://support.magento.com/hc/en-us/sections/360003869892-Known-issues-patches-attached-) voor alle klanten op een gesteunde versie, zelfs als zij niet op het recentste flard of de versie van het veiligheidspatch zijn. Het is belangrijk om op te merken dat een hotfix geen vangst-allen is en niet alle veiligheidskwesties behandelt die door verbetering aan de recentste versie zouden worden opgelost.
 
-- Adobe biedt geen beveiligings- en kwaliteitsoplossingen voor services en softwareafhankelijkheden van derden (zoals PHP en MySQL) die het einde van de levensduur kunnen bereiken terwijl klanten de ondersteuningsperiode van drie jaar voor Adobe Commerce hebben. Zie de [systeemvereisten](../installation/system-requirements.md) voor een volledige lijst van geteste en ondersteunde technologieën van derden.
+- Adobe biedt geen beveiligings- en kwaliteitsoplossingen voor services en softwareafhankelijkheden van derden (zoals PHP en MySQL) die het einde van de levensduur kunnen bereiken terwijl klanten de ondersteuningsperiode van drie jaar voor Adobe Commerce hebben. Zie de [ systeemvereisten ](../installation/system-requirements.md) voor een volledige lijst van geteste en gesteunde derdetechnologieën.
 
 - Adobe biedt compatibiliteit met services en softwareafhankelijkheden van derden, terwijl klanten de ondersteuningsperiode van drie jaar voor Adobe Commerce hebben in het bereik van patchreleases die alleen betrekking hebben op beveiliging, maar alleen wanneer dit mogelijk is zonder de wijzigingen die achteraf incompatibel zijn, in te voeren.
 
 ## Einde van softwareondersteuning
 
-| Geen | Algemene beschikbaarheid | Einde van softwareondersteuning<sup>1</sup> | Afhankelijke PHP-versie | Afhankelijke MariaDB-versie |
+| Geen | Algemene beschikbaarheid | Eind van softwaresteun <sup> 1 </sup> | Afhankelijke PHP-versie | Afhankelijke MariaDB-versie |
 |----------------------|----------------------|-------------------------------------|-----------------------|------------------------------|
 | Adobe Commerce 2.4.7 | 9 april 2024 | 9 april 2027 | 8.2 en 8.3 | 10,6 |
 | Adobe Commerce 2.4.6 | 14 maart 2023 | 14 maart 2026 | 8.1 en 8.2 | 10,6 |
-| Adobe Commerce 2.4.5 | 9 augustus 2022 | 9 augustus 2025 | 8,1 | 10,5<sup>2</sup> |
-| Adobe Commerce 2.4.4 | 12 april 2022 | 24 april 2025 | 8,1 | 10,5<sup>3</sup> |
+| Adobe Commerce 2.4.5 | 9 augustus 2022 | 9 augustus 2025 | 8,1 | 10.5 <sup> 2 </sup> |
+| Adobe Commerce 2.4.4 | 12 april 2022 | 24 april 2025 | 8,1 | 10.5 <sup> 3 </sup> |
 
 {style="table-layout:auto"}
 
 >[!NOTE]
 >
->- <sup>1</sup> Tot einde van de softwareondersteuning behoren zowel oplossingen voor einde van kwaliteit als oplossingen voor einde van de beveiliging.
->- <sup>2</sup> Vanaf de beveiligingspatch 2.4.5-p8.
->- <sup>3</sup> Vanaf de beveiligingspatch 2.4.4-p9.
->- Zie [Levenscyclusbeleid software](https://www.adobe.com/content/dam/cc/en/legal/terms/enterprise/pdfs/Adobe-Commerce-Software-Lifecycle-Policy.pdf).
+>- <sup> 1 </sup> Eind van softwaresteun omvat zowel eind van kwaliteitsmoeilijke situaties als eind van veiligheidsmoeilijke situaties.
+>- <sup> 2 </sup> Beginnend met 2.4.5-p8 veiligheidspatch.
+>- <sup> 3 </sup> Beginnend met 2.4.4-p9 veiligheidspatch.
+>- Zie [ Beleid van de Levenscyclus van de Software ](https://www.adobe.com/content/dam/cc/en/legal/terms/enterprise/pdfs/Adobe-Commerce-Software-Lifecycle-Policy.pdf).
 
 <table style="table-layout:auto">
 <thead>
@@ -56,7 +56,7 @@ Voor Adobe Commerce 2.4.4 en latere versies:
 </thead>
 <tbody>
   <tr>
-    <td>Handel</td>
+    <td>Commerce</td>
     <td>V1</td>
     <td>V2</td>
     <td>V3</td>

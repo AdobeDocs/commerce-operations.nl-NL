@@ -4,22 +4,22 @@ description: Meer informatie over uitsnijdgroepen en het maken van een aangepast
 exl-id: a9d83af7-9979-4653-adc9-30ffeb13a5ce
 source-git-commit: 95ffff39d82cc9027fa633dffedf15193040802d
 workflow-type: tm+mt
-source-wordcount: '159'
+source-wordcount: '155'
 ht-degree: 0%
 
 ---
 
 # Cron-taken
 
-In deze onderwerpen wordt besproken hoe u een aangepaste uitsnijdtaak en eventueel een aangepaste uitsnijdgroep instelt. Als uw uitbreiding van de Handel geplande taken vereist om periodiek te lopen, kunt u deze onderwerpen aan opstelling gebruiken cron _baan_ (de geplande taak) en optioneel een uitsnede _groep_, die tegelijkertijd aangepaste taken uitvoert.
+In deze onderwerpen wordt besproken hoe u een aangepaste uitsnijdtaak en eventueel een aangepaste uitsnijdgroep instelt. Als uw uitbreiding van Commerce regelmatige taken vereist om periodiek in werking te stellen, kunt u deze onderwerpen aan opstelling gebruiken een baan van de kruin __ (de geplande taak) en naar keuze een kruin _groep_, die douanetaken tezelfdertijd in werking stelt.
 
-Als u een handel-Geleide kroongroep gebruikt, moet u geen aangepaste kroongroep bepalen; nochtans als u uw kroonbanen wilt lopen bij een verschillend programma of u wilt allen hen samen lopen, zou u een kroongroep moeten bepalen
+Als u een door Commerce verschafte uitsnijdgroep gebruikt, hoeft u geen aangepaste uitsnijdgroep te definiëren. Als u echter wilt dat de uitsnijdtaken volgens een ander schema worden uitgevoerd of dat ze allemaal samen worden uitgevoerd, moet u een uitsnijdgroep definiëren
 
-De toepassing van de Handel verstrekt de volgende kroongroepen:
+De Commerce-toepassing biedt de volgende uitsnijdgroepen:
 
-- `default`, die de meeste banen in de kraan bevat
-- `index`, die vernieuwt [indexeerders](../cli/manage-indexers.md)
-- `consumers`, die een wachtrij met berichten uitvoert [consumenten](../cli/start-message-queues.md)
+- `default` , dat de meeste snijtaken bevat
+- `index`, die [ indexeerders ](../cli/manage-indexers.md) vernieuwt
+- `consumers`, die berichtrij [ consumenten ](../cli/start-message-queues.md) in werking stelt
 - Deze onderwerpen zijn alleen beschikbaar in Adobe Commerce
-   - `staging`, die [Staging](https://docs.magento.com/user-guide/cms/content-staging.html) taken
-   - `catalog_event`, die taken voor doel en winkelwagentje uitvoert
+   - `staging`, die [ op Staging betrekking hebbende ](https://docs.magento.com/user-guide/cms/content-staging.html) taken in werking stelt
+   - `catalog_event` , dat taken voor doel en het winkelwagentje regels uitvoert

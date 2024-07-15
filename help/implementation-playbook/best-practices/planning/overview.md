@@ -98,35 +98,35 @@ De volgende secties omvatten beste praktijkinformatie voor de planningsfase.
 
 | Beste praktijken | Beschrijving |
 |----------------------------------------------------------------------------------------|----------------------------------------------------------|
-| [Algemene referentiearchitectuur (GRA)](../../architecture/global-reference/examples.md) | Begrijp gemeenschappelijke methodes om een codebasis van GRA te organiseren. |
+| [ Globale verwijzingsarchitectuur (GRA) ](../../architecture/global-reference/examples.md) | Begrijp gemeenschappelijke methodes om een codebasis van GRA te organiseren. |
 
 ## Catalogusontwerp
 
 | Beste praktijken | Beschrijving |
 |---------------------------------------------------------------------------------------------------|---------------------------------------------------------------|
-| [Categorieconfiguratie](catalog-management.md#category-limits) | Productcategorieën configureren voor optimale prestaties. |
-| [&#x200B;](catalog-management.md#product-sku-limits) | Vorm product SKUs voor optimale prestaties. |
-| [Configuratie productvariatie](catalog-management.md#product-variations) | Productvariaties configureren voor optimale prestaties. |
-| [Configuratie van productopties](catalog-management.md#product-options) | Configureer productopties voor optimale prestaties. |
-| [&#x200B; productkenmerken](catalog-management.md#product-attributes) | Productkenmerken configureren voor optimale prestaties. |
-| [Pagineringsconfiguratie voor productaanbiedingen](catalog-management.md#product-listing-pagination) | Configureer productpaginering voor optimale prestaties. |
+| [ configuratie van de Categorie ](catalog-management.md#category-limits) | Productcategorieën configureren voor optimale prestaties. |
+| [ &#x200B; van de Productconfiguratie ](catalog-management.md#product-sku-limits) | Vorm product SKUs voor optimale prestaties. |
+| [ de variatieconfiguratie van het Product ](catalog-management.md#product-variations) | Productvariaties configureren voor optimale prestaties. |
+| [ de optieconfiguratie van het Product ](catalog-management.md#product-options) | Configureer productopties voor optimale prestaties. |
+| [ &#x200B; van de attributenconfiguratie van het Product ](catalog-management.md#product-attributes) | Productkenmerken configureren voor optimale prestaties. |
+| [ de configuratie van de Paginering voor productlijsten ](catalog-management.md#product-listing-pagination) | Configureer productpaginering voor optimale prestaties. |
 
 ## Extensies
 
 | Beste praktijken | Beschrijving |
 |-----------------------------------------------------------------|----------------------------------------------------------------------------------------|
-| [Extensies van derden gebruiken in Adobe Commerce](extensions.md) | Leer hoe u prestatieproblemen kunt voorkomen die worden veroorzaakt door Adobe Commerce-extensies van derden. |
+| [ Gebruikend derdextensies in Adobe Commerce ](extensions.md) | Leer hoe u prestatieproblemen kunt voorkomen die worden veroorzaakt door Adobe Commerce-extensies van derden. |
 
 ## Projectbereikregels
 
 | Beste praktijken | Beschrijving |
 |--------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------|
-| [Partnerescalaties](partner-escalation.md) | Bereid voor het escaleren van een partnerkwestie met een Team van de Rekening van de Adobe voor of leer hoe te om een escalatie te vermijden. |
-| [Betalingsopslagverwerking](payment-processing-storage.md) | Betalingsgegevens veilig verwerken en opslaan. |
+| [ escalaties van de Partner ](partner-escalation.md) | Bereid voor het escaleren van een partnerkwestie met een Team van de Rekening van de Adobe voor of leer hoe te om een escalatie te vermijden. |
+| [ de opslagverwerking van Betalingen ](payment-processing-storage.md) | Betalingsgegevens veilig verwerken en opslaan. |
 
 ## Verkoop en marketing
 
 | Beste praktijken | Beschrijving |
 |------------------------------------------------------------|--------------------------------------------------------------|
-| [Productkartellimieten](catalog-management.md#cart-limits) | Beheer de grenzen van winkelwagentjes voor optimale prestaties. |
-| [Promoties configureren](catalog-management.md#promotions) | Configureer de verkoop en promoties voor objecten in een winkelwagentje. |
+| [ de grenzen van het Karretje van het Product ](catalog-management.md#cart-limits) | Beheer de grenzen van winkelwagentjes voor optimale prestaties. |
+| [ het Vormen bevorderingen ](catalog-management.md#promotions) | Configureer de verkoop en promoties voor objecten in een winkelwagentje. |

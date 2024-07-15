@@ -13,11 +13,11 @@ ht-degree: 0%
 
 In deze sectie wordt besproken hoe u een of meer modules kunt verwijderen. Tijdens uninstallation, kunt u naar keuze de code van de modules, gegevensbestandschema, en gegevensbestandgegevens verwijderen. U kunt eerst back-ups maken, zodat u de gegevens later kunt herstellen.
 
-Verwijder een module alleen als u zeker weet dat u deze niet wilt gebruiken. In plaats van een module te verwijderen, kunt u deze uitschakelen zoals beschreven in [Modules in- of uitschakelen](manage-modules.md).
+Verwijder een module alleen als u zeker weet dat u deze niet wilt gebruiken. In plaats van het verwijderen van een module, kunt u het zoals die in [ wordt besproken onbruikbaar maken of modules ](manage-modules.md) toelaten onbruikbaar maken.
 
 >[!NOTE]
 >
->Dit bevel controleert dat slechts gebiedsdelen die in worden verklaard `composer.json` bestand. Als u een module verwijdert die _niet_ in de `composer.json` bestand, verwijdert deze opdracht de module zonder afhankelijkheden te controleren. Deze opdracht doet _niet_, echter, verwijder de code van de module uit het dossiersysteem. U moet bestandssysteemgereedschappen gebruiken om de code van de module te verwijderen (bijvoorbeeld `rm -rf <path to module>`). Als alternatief kunt u [disable](manage-modules.md) niet-composer-modules.
+>Deze opdracht controleert of alleen afhankelijkheden zijn gedeclareerd in het `composer.json` -bestand. Als u een module verwijdert die _niet_ in het `composer.json` dossier wordt bepaald, schrapt dit bevel de module zonder gebiedsdelen te controleren. Dit bevel verwijdert __ niet, echter, de code van de module uit het dossiersysteem. U moet bestandssysteemgereedschappen gebruiken om de code van de module te verwijderen (bijvoorbeeld `rm -rf <path to module>` ). Als alternatief, kunt u ](manage-modules.md) niet-Composer modules [ onbruikbaar maken.
 
 Opdrachtgebruik:
 
@@ -26,13 +26,13 @@ bin/magento module:uninstall [--backup-code] [--backup-media] [--backup-db] [-r|
   {ModuleName} ... {ModuleName}
 ```
 
-Wanneer `{ModuleName}` geeft de modulenaam op in `<VendorName>_<ModuleName>` gebruiken. De naam van de module Klant is bijvoorbeeld `Magento_Customer`. Om een lijst van modulenamen te krijgen, ga `magento module:status`
+Waar `{ModuleName}` de modulenaam in `<VendorName>_<ModuleName>` formaat specificeert. De naam van de module Klant is bijvoorbeeld `Magento_Customer` . Voer `magento module:status` in om een lijst met modulenamen op te halen.
 
 Met de opdracht Module verwijderen worden de volgende taken uitgevoerd:
 
 1. Verifieert dat de gespecificeerde modules in de codebasis bestaan en pakketten zijn die door Composer worden geïnstalleerd.
 
-   Deze opdracht werkt _alleen_ met modules gedefinieerd als Composer-pakketten.
+   Dit bevel werkt _slechts_ met modules die als pakketten Composer worden bepaald.
 
 1. Controleert gebiedsdelen met andere modules en beëindigt het bevel als er om het even welke onvolkomenheden gebiedsdelen zijn.
 
@@ -44,25 +44,25 @@ Met de opdracht Module verwijderen worden de volgende taken uitgevoerd:
 
    | Optie | Betekenis | Back-upbestandsnaam en -locatie |
    | ---------------- | -------------------------------------------------------------------------------- | -------------------------------------------- |
-   | `--backup-code` | Back-ups maken van het bestandssysteem (exclusief `var` en `pub/static` mappen). | `var/backups/<timestamp>_filesystem.tgz` |
+   | `--backup-code` | Een back-up maken van het bestandssysteem (behalve `var` en `pub/static` directory&#39;s). | `var/backups/<timestamp>_filesystem.tgz` |
    | `--backup-media` | Hiermee maakt u een back-up van de map pub/media. | `var/backups/<timestamp>_filesystem_media.tgz` |
    | `--backup-db` | Maak een back-up van de database. | `var/backups/<timestamp>_db.gz` |
 
-1. Indien `--remove-data` wordt gespecificeerd, verwijder het gegevensbestandschema en gegevens die in de module worden bepaald `Uninstall` klassen.
+1. Als `--remove-data` is opgegeven, verwijdert u het databaseschema en de gegevens die zijn gedefinieerd in de `Uninstall` -klassen van de module.
 
-   Voor elke opgegeven module die moet worden verwijderd, wordt het `uninstall` in haar `Uninstall` klasse. Deze klasse moet overerven van [Magento\Framework\Setup\UninstallInterface](https://github.com/magento/magento2/blob/2.4/lib/internal/Magento/Framework/Setup/UninstallInterface.php).
+   Roept de methode `uninstall` in de klasse `Uninstall` aan om elke opgegeven module te verwijderen. Deze klasse moet van [ Magento\Framework\Setup\UninstallInterface ](https://github.com/magento/magento2/blob/2.4/lib/internal/Magento/Framework/Setup/UninstallInterface.php) erven.
 
-1. Hiermee verwijdert u de opgegeven modules uit het dialoogvenster `setup_module` databasetabel.
-1. Hiermee verwijdert u de opgegeven modules uit de lijst met modules in het dialoogvenster [implementatieconfiguratie](../../configuration/reference/deployment-files.md).
-1. Hiermee verwijdert u code uit de codebase met `composer remove`.
+1. Hiermee worden de opgegeven modules verwijderd uit de databasetabel `setup_module` .
+1. Verwijdert de gespecificeerde modules uit de modulelijst in de [ plaatsingsconfiguratie ](../../configuration/reference/deployment-files.md).
+1. Hiermee verwijdert u code uit de codebase met `composer remove` .
 
    >[!NOTE]
    >
-   >Een module verwijderen _altijd_ looppas `composer remove`. De `--remove-data` optie verwijdert gegevensbestandgegevens en schema dat door de module wordt bepaald `Uninstall` klasse.
+   >Het verwijderen van een module _altijd_ looppas `composer remove`. Met de optie `--remove-data` verwijdert u databasegegevens en -schema die door de klasse `Uninstall` van de module zijn gedefinieerd.
 
 1. Wist de cache.
 1. Werkt gegenereerde klassen bij.
-1. Indien `--clear-static-content` is opgegeven, cleans [gegenereerde statische weergavebestanden](../../configuration/cli/static-view-file-deployment.md).
+1. Als `--clear-static-content` wordt gespecificeerd, ontruimt [ geproduceerde statische meningsdossiers ](../../configuration/cli/static-view-file-deployment.md).
 1. Neemt de opslag uit onderhoudswijze.
 
 Als u bijvoorbeeld probeert een module te verwijderen waarvan een andere module afhankelijk is, wordt het volgende bericht weergegeven:
@@ -73,7 +73,7 @@ magento module:uninstall Magento_SampleMinimal
         Magento_SampleModifyContent
 ```
 
-Eén mogelijkheid is om beide modules te verwijderen nadat u een back-up hebt gemaakt van het bestandssysteem van de module. `pub/media` bestanden en databasetabellen, maar _niet_ het verwijderen van het de gegevensbestandschema of gegevens van de module:
+Één alternatief moet beide modules na het steunen van het systeem van het moduledossier, `pub/media` dossiers, en gegevensbestandlijsten desinstalleren maar _niet_ verwijderend het het gegevensbestandschema of gegevens van de module:
 
 ```bash
 bin/magento module:uninstall Magento_SampleMinimal Magento_SampleModifyContent --backup-code --backup-media --backup-db
@@ -126,15 +126,15 @@ Gebruik de volgende opdracht om de codebase te herstellen naar de toestand waari
 bin/magento setup:rollback [-c|--code-file="<filename>"] [-m|--media-file="<filename>"] [-d|--db-file="<filename>"]
 ```
 
-Wanneer `<filename>` is de naam van het back-upbestand in het dialoogvenster `<app_root>/var/backups` directory. Als u een lijst met back-upbestanden wilt weergeven, voert u `magento info:backups:list`
+Hierbij is `<filename>` de naam van het back-upbestand in de map `<app_root>/var/backups` . Voer `magento info:backups:list` in als u een lijst met back-upbestanden wilt weergeven.
 
 >[!WARNING]
 >
->Met deze opdracht verwijdert u de opgegeven bestanden of de database voordat u ze herstelt. Bijvoorbeeld de `--media-file` Hiermee verwijdert u media-elementen onder de optie `pub/media` map voordat het terugdraaibestand wordt teruggezet uit het opgegeven terugdraaibestand. Zorg ervoor dat u het bestandssysteem of de database die u wilt behouden niet hebt gewijzigd voordat u deze opdracht gebruikt.
+>Met deze opdracht verwijdert u de opgegeven bestanden of de database voordat u ze herstelt. Met de optie `--media-file` verwijdert u bijvoorbeeld media-elementen onder de map `pub/media` voordat u deze herstelt uit het opgegeven terugdraaibestand. Zorg ervoor dat u het bestandssysteem of de database die u wilt behouden niet hebt gewijzigd voordat u deze opdracht gebruikt.
 
 >[!NOTE]
 >
->Als u een lijst met beschikbare back-upbestanden wilt weergeven, voert u `magento info:backups:list`
+>Voer `magento info:backups:list` in om een lijst met beschikbare back-upbestanden weer te geven
 
 Deze opdracht voert de volgende taken uit:
 
@@ -142,7 +142,7 @@ Deze opdracht voert de volgende taken uit:
 1. Controleert de naam van het back-upbestand.
 1. Als u een bestand voor het terugdraaien van code opgeeft:
 
-   a. verifieert dat de het terugschroeven van prijzenbestemmingsplaatsen beschrijfbaar zijn (merk op dat `pub/static` en `var` mappen worden genegeerd).
+   a. Controleert of de terugdraaidoellocaties schrijfbaar zijn (de mappen `pub/static` en `var` worden genegeerd).
 
    b. Verwijdert alle bestanden en mappen in de installatiemap van de toepassing.
 
@@ -172,7 +172,7 @@ Als u bijvoorbeeld een back-up van een code (dat wil zeggen bestandssysteem) wil
   magento info:backups:list
   ```
 
-* Een back-up van een bestand met de naam `1433876616_filesystem.tgz`:
+* Een back-up van een bestand met de naam `1433876616_filesystem.tgz` herstellen:
 
   ```bash
   magento setup:rollback --code-file="1433876616_filesystem.tgz"
@@ -191,4 +191,4 @@ Als u bijvoorbeeld een back-up van een code (dat wil zeggen bestandssysteem) wil
 
 >[!NOTE]
 >
->Als u het dialoogvenster `magento` bevel opnieuw zonder folders te veranderen, zou u kunnen moeten ingaan `cd pwd`.
+>Als u de opdracht `magento` opnieuw wilt uitvoeren zonder mappen te wijzigen, moet u mogelijk `cd pwd` invoeren.

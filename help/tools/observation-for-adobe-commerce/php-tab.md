@@ -1,48 +1,48 @@
 ---
-title: De [!UICONTROL PHP] tab
-description: Meer informatie over de [!UICONTROL PHP] tabblad van [!DNL Observation for Adobe Commerce].
+title: Het tabblad [!UICONTROL PHP]
+description: Leer meer over het [!UICONTROL PHP] lusje van  [!DNL Observation for Adobe Commerce].
 exl-id: 0989a7f5-75b0-4fb5-ac5e-2618603bf548
 feature: Configuration, Observability
 source-git-commit: e83e2359377f03506178c28f8b30993c172282c7
 workflow-type: tm+mt
-source-wordcount: '591'
+source-wordcount: '571'
 ht-degree: 0%
 
 ---
 
-# De [!UICONTROL PHP] tab
+# Het tabblad [!UICONTROL PHP]
 
-De **PHP** Dit tabblad geeft PHP-procesproblemen weer om een diepgaande analyse te geven van PHP-problemen.
+Het **PHP** lusje toont PHP proceskwesties om een diepere analyse in PHP problemen te verstrekken.
 
 ## [!UICONTROL PHP active process details]
 
-![PHP actieve procesdetails](../../assets/tools/php-active-process-details.jpg)
+![ PHP actieve procesdetails ](../../assets/tools/php-active-process-details.jpg)
 
-De **[!UICONTROL PHP active process details]** frame toont de PHP processen, inclusief php-fpm, over de geselecteerde tijdsperiode.
+Het frame **[!UICONTROL PHP active process details]** toont de PHP-processen, inclusief php-fpm, over de geselecteerde tijd.
 
 ## [!UICONTROL PHP process load (# of PHP processes and % of CPU load)]
 
-![PHP-procesbelasting](../../assets/tools/php-process-load.jpg)
+![ PHP proceslading ](../../assets/tools/php-process-load.jpg)
 
-De **[!UICONTROL PHP process load (# of PHP processes and % of CPU load)]** frame toont de CPU load van PHP-FPM processen over de geselecteerde tijdsperiode.
+Het frame **[!UICONTROL PHP process load (# of PHP processes and % of CPU load)]** toont de CPU-belasting van PHP-FPM-processen in de geselecteerde tijdsperiode.
 
 ## [!UICONTROL PHP Memory detail]
 
-![PHP-geheugendetails](../../assets/tools/php-memory-detail.jpg)
+![ PHP de detail van het Geheugen ](../../assets/tools/php-memory-detail.jpg)
 
-De **[!UICONTROL PHP Memory detail]** frame toont het geheugengebruik van PHP processen over het geselecteerde tijdsbestek.
+In het frame **[!UICONTROL PHP Memory detail]** wordt het geheugengebruik van PHP-processen in de geselecteerde tijdsperiode weergegeven.
 
 ## [!UICONTROL PHP CPU Utilization]
 
-![PHP CPU-gebruik](../../assets/tools/php-cpu-utilization.jpg)
+![ PHP het Gebruik van cpu ](../../assets/tools/php-cpu-utilization.jpg)
 
-De **[!UICONTROL PHP CPU Utilization]** frame toont het CPU-procentuele gebruik van PHP processen over de geselecteerde tijdsperiode.
+In het frame **[!UICONTROL PHP CPU Utilization]** wordt het CPU-procentuele gebruik van PHP-processen in de geselecteerde tijdsperiode weergegeven.
 
 ## [!UICONTROL PHP Process states]
 
-![PHP-processtatussen](../../assets/tools/php-process-states-image-1.jpg)
+![ PHP staten van het Proces ](../../assets/tools/php-process-states-image-1.jpg)
 
-De **[!UICONTROL PHP Process states]** frame toont de PHP processtatus over het geselecteerde tijdframe. Het wordt weergegeven wanneer PHP-processen worden beëindigd en opnieuw worden gestart. Wees voorzichtig met afgesloten PHP-processen die geen nieuwe start laten zien.
+In het frame **[!UICONTROL PHP Process states]** worden de PHP-processtatussen in de geselecteerde tijdlijn weergegeven. Het wordt weergegeven wanneer PHP-processen worden beëindigd en opnieuw worden gestart. Wees voorzichtig met afgesloten PHP-processen die geen nieuwe start laten zien.
 
 * &#39;%NOTICE: Terminating ...%&#39;) as &#39;php_term&#39;
 * &quot;% NOTITIE: afsluiten, afscheid!%&#39;) als &#39;php_exit&#39;
@@ -51,9 +51,9 @@ De **[!UICONTROL PHP Process states]** frame toont de PHP processtatus over het 
 
 ## [!UICONTROL PHP Errors]
 
-![PHP-fouten](../../assets/tools/php-errors-image-1.jpg)
+![ de Fouten van PHP ](../../assets/tools/php-errors-image-1.jpg)
 
-De **[!UICONTROL PHP Errors]** frame toont het aantal PHP-arbeidersfouten in de geselecteerde tijdlijn. Foutberichten die worden geparseerd en weergegeven, zijn:
+Het frame **[!UICONTROL PHP Errors]** toont het aantal PHP-arbeidersfouten in de geselecteerde tijdlijn. Foutberichten die worden geparseerd en weergegeven, zijn:
 
 * &#39;%worker_connections are not genoeg%&#39;) als &#39;worker&#39;
 * &#39;%PHP Fatale error: Allowed memory size!%&#39;) als &#39;mem_size&#39;
@@ -69,15 +69,15 @@ De **[!UICONTROL PHP Errors]** frame toont het aantal PHP-arbeidersfouten in de 
 
 ## [!UICONTROL PHP processes count]
 
-![Aantal PHP-processen](../../assets/tools/php-processes-count.jpg)
+![ PHP procestelling ](../../assets/tools/php-processes-count.jpg)
 
-De **[!UICONTROL PHP processes count]** frame toont een aantal PHP processen over het geselecteerde tijdsbestek.
+Het frame **[!UICONTROL PHP processes count]** toont een aantal PHP-processen over de geselecteerde tijd.
 
 ## [!UICONTROL Database Errors]
 
-![Databasefouten](../../assets/tools/php-tab-database-errors.jpg)
+![ Fouten van het Gegevensbestand ](../../assets/tools/php-tab-database-errors.jpg)
 
-De **[!UICONTROL Database Errors]** frame geeft databasefouten weer over de geselecteerde tijdlijn. Voorbeelden van geparseerde fouten:
+In het frame **[!UICONTROL Database Errors]** worden databasefouten over de geselecteerde tijdlijn weergegeven. Voorbeelden van geparseerde fouten:
 
 * &#39;%Geheugengrootte toegewezen voor de tijdelijke tabel is meer dan 20% van de waarde van onschuldig_buffer_pool_size%&#39;) als &#39;temp_tbl_buff_pool&#39;
 * &#39;%\[ERROR\] WSREP: rbr write fail%&#39;) als &#39;rbr_write_fail&#39;
@@ -86,47 +86,47 @@ De **[!UICONTROL Database Errors]** frame geeft databasefouten weer over de gese
 * &#39;%rollback%&#39;) als &#39;rollback&#39;
 * &#39;%Foreign key-beperking mislukt voor table%&#39;) als &#39;foreign_key_constraint&#39;
 * &#39;%Error_code: 1114%&#39;) als &#39;sql_1114_full&#39;
-* &#39;%CRITICAL: SQLSTATE[HY000] [2006] MySQL-server is weggegaan (%&#39;) als &#39;sql_away&#39;
-* &#39;%SQLSTATE[HY000] [1040] Te veel verbindingen%&#39;) als &#39;sql_1040&#39;
-* &#39;%CRITICAL: SQLSTATE[HY000] [2002]%&#39;) als &#39;sql_2002&#39;
-* &#39;%SQLSTATE[08S01]:%&#39;) als &#39;sql_1047&#39;
-* &#39;%[Waarschuwing] Afgebroken connection%&#39;) als &#39;aborted_conn&#39;
-* &#39;%SQLSTATE[23000]: schending van integriteitsbeperking:%&#39;) als &#39;sql_23000&#39;
+* &#39;%CRITICAL: SQLSTATE [ HY000 ] [ 2006 ] MySQL server is away%&#39;) als &quot;sql_went&quot;
+* &quot;%SQLSTATE [ HY000 ] [ 1040 ] Te veel verbindingen%&quot;) als &quot;sql_1040&quot;
+* &#39;%CRITICAL: SQLSTATE [ HY000 ] [ 2002 ]%&#39;) als &quot;sql_2002&quot;
+* &quot;%SQLSTATE [ 08S01 ]:%&quot;) als &quot;sql_1047&quot;
+* &quot;% [ Waarschuwing ] Geaborteerde connection%&quot;) als &quot;aborted_conn&quot;
+* &quot;%SQLSTATE [ 23000 ]: Schending van de de beperkingsbeperking van de integriteit:%&quot;) als &quot;sql_23000&quot;
 * &#39;%1205 Lock wait timeout%&#39;) als &#39;sql_1205&#39;
-* &#39;%SQLSTATE[HY000] [1049] Onbekende database%&#39;) als &#39;sql_1049&#39;
-* &#39;%SQLSTATE[42S02]: Basistabel of weergave niet gevonden:%&#39;) als &#39;sql_42S02&#39;
+* &quot;%SQLSTATE [ HY000 ] [ 1049 ] Onbekende database%&quot;) als &quot;sql_1049&quot;
+* &quot;%SQLSTATE [ 42S02 ]: De lijst van de basis of de mening niet gevonden:%&quot;) als &quot;sql_42S02&quot;
 * &#39;%Algemene fout: 1114%&#39;) als &#39;sql_1114&#39;
-* &#39;%SQLSTATE[40001]%&#39;) als &#39;sql_1213&#39;
-* &#39;%SQLSTATE[42S22]: Kolom niet gevonden: 1054 Onbekende kolom%&#39;) als &#39;sq1_1054&#39;
-* &#39;%SQLSTATE[42000]: Syntaxisfout of toegangsfout:%&#39;) als &#39;sql_42000&#39;
-* &#39;%SQLSTATE[2100]: schending van kardinaliteit:%&#39;) als &#39;sql_1241&#39;
-* &#39;%SQLSTATE[2003]:%&#39;) als &#39;sql_2003&#39;
-* &#39;%SQLSTATE[HY000] [9000] Client met IP-adres%&#39;) als &#39;sql_9000&#39;
-* &#39;%SQLSTATE[HY000]: Algemene fout: 2014%&#39;) als &#39;sql_2014&#39;
+* &#39;%SQLSTATE [ 40001 ]%&#39;) als &quot;sql_1213&quot;
+* &quot;%SQLSTATE [ 42S22 ]: Kolom niet gevonden: 1054 Onbekende kolom%&quot;) als &quot;sq1_1054&quot;
+* &quot;%SQLSTATE [ 42000 ]: De fout van de syntaxis of toegangsschending:%&quot;) als &quot;sql_42000&quot;
+* &quot;%SQLSTATE [ 21000 ]: Kardinaliteitsschending:%&quot;) als &quot;sql_1241&quot;
+* &quot;%SQLSTATE [ 22003 ]:%&quot;) als &quot;sql_22003&quot;
+* &quot;%SQLSTATE [ HY000 ] [ 9000 ] Cliënt met IP adres%&quot;) als &quot;sql_9000&quot;
+* &#39;%SQLSTATE [ HY000 ]: Algemene fout: 2014%&#39;) als &quot;sql_2014&quot;
 * &#39;%1927 Verbinding is gedood%&#39;) als &#39;sql_1927&#39;
 * &#39;%1062 \[ERROR\] InnoDB:%&#39;) als &#39;sql_1062_e&#39;
-* &#39;%[Opmerking] WSREP: Geheugenkaart leegmaken naar schijf..%&#39;) als &#39;mem_map_flush&#39;
+* &quot;% [ Nota ] WSREP: Het flushing geheugenkaart aan schijf..%&quot;) als &quot;mem_map_flush&quot;
 * &#39;%Internal MariaDB error code: 1146%&#39;) as &#39;sql_1146&#39;
-* &#39;%Internal MariaDB error code: 1062%&#39;) as &#39;sql_1062&#39; * &#39;%1062 [Waarschuwing] InnoDB:%&#39;) als &#39;sql_1062_w&#39;
+* &#39;%Internal MariaDB foutcode: 1062%&#39;) als &#39;sql_1062&#39; * &#39;%1062 [ Waarschuwing ] InnoDB:%&#39;) als &#39;sql_1062_w&#39;
 * &#39;%Internal MariaDB error code: 1064%&#39;) as &#39;sql_1064&#39;
 * &#39;%InnoDB: bevestiging mislukt in bestand%&#39;) als &#39;assertion_err&#39;
 * &#39;%mysqld_safe Aantal processen dat nu wordt uitgevoerd: 0%&#39;) als &#39;mysql_oom&#39;
 * &#39;%\[ERROR\] mysqld heeft signaal%&#39;) als &#39;mysql_sigterm&#39;
 * &#39;%1452 Cannot add%&#39;) as &#39;sql_1452&#39;
 * &#39;%ERROR 1698%&#39;) als &#39;sql_1698&#39;
-* &#39;%SQLSTATE[HY000]: Algemene fout: 3%&#39;) als &#39;cnt_wrt_tmp&#39;
+* &#39;%SQLSTATE [ HY000 ]: Algemene fout: 3%&#39;) als &quot;cnt_wrt_tmp&quot;
 * &#39;%Algemene fout: 1 %&#39;) als &#39;sql_syntax&#39;
 * &#39;%42S22%&#39;) als &#39;sql_42S22&#39;
 * &#39;%InnoDB: Error (Duplicate key)%&#39;) as &#39;innodb_dup_key&#39;
 
 ## [!UICONTROL Database traces]
 
-![Databasespoor](../../assets/tools/php-tab-database-traces.jpg)
+![ sporen van het Gegevensbestand ](../../assets/tools/php-tab-database-traces.jpg)
 
-De **[!UICONTROL Database traces]** frame geeft traceerinformatie voor de database weer. Dit frame wordt uitgelijnd op de APM-transactieoverzichtsweergave voor de geselecteerde tijdlijn.
+In het frame **[!UICONTROL Database traces]** worden traceergegevens van de database weergegeven. Dit frame wordt uitgelijnd op de APM-transactieoverzichtsweergave voor de geselecteerde tijdlijn.
 
 ## [!UICONTROL Database mysql-slow.log]
 
-![Database mysql-slow.log](../../assets/tools/php-tab-database-mysql-slow-log.jpg)
+![ Gegevensbestand mysql-slow.log ](../../assets/tools/php-tab-database-mysql-slow-log.jpg)
 
-De **[!UICONTROL Database mysql-slow.log]** het kader toont de types van vraagverklaring die in `mysql-slow.log` bestand over de geselecteerde tijdlijn.
+In het frame **[!UICONTROL Database mysql-slow.log]** worden de typen queryinstructies weergegeven die zich in het `mysql-slow.log` -bestand binnen de geselecteerde tijdlijn bevonden.

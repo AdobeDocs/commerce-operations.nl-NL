@@ -12,15 +12,15 @@ ht-degree: 0%
 
 # Verwijzing naar configuratiepaden van klanten
 
-In deze sectie worden de namen van variabelen en configuratiepaden weergegeven die beschikbaar zijn voor opties in de beheerdersruimte onder **Winkels** > Instellingen > **Configuratie** > **Klanten**.
+Deze sectie maakt een lijst van veranderlijke namen en config wegen beschikbaar voor opties in Admin onder **Slaat** > Montages > **Configuratie** > **Klanten** op.
 
-De [`magento app:config:dump` command](../cli/export-configuration.md) deze waarden naar het gedeelde configuratiebestand schrijft, `app/etc/config.php`, die onder broncontrole moeten staan. Om naar keuze om het even welke configuratiemontages met voeten te treden of gevoelige montages te plaatsen, zie [Omgevingsvariabelen gebruiken om configuratie-instellingen te overschrijven](override-config-settings.md#environment-variables). Dit onderwerp doet het _niet_ list [gevoelige en systeemspecifieke waarden](config-reference-sens.md).
+Het [`magento app:config:dump` bevel ](../cli/export-configuration.md) schrijft deze waarden aan het gedeelde configuratiedossier, `app/etc/config.php`, dat in broncontrole zou moeten zijn. Om naar keuze om het even welke configuratiemontages met voeten te treden of gevoelige montages te plaatsen, zie [ de milieuvariabelen van het Gebruik om configuratiemontages ](override-config-settings.md#environment-variables) met voeten te treden. Dit onderwerp __ lijst [ niet gevoelige en systeem-specifieke waarden ](config-reference-sens.md).
 
 ## Paden voor nieuwsbrief
 
-Deze configuratiewaarden zijn beschikbaar in de Admin in **Winkels** > Instellingen > **Configuratie** > **Klanten** > **Nieuwsbrief**.
+Deze configuratiewaarden zijn beschikbaar in Admin in **Opslag** > Montages > **Configuratie** > **Klanten** > **Nieuwsbrief**.
 
-| Naam | Config-pad | Alleen handel? |
+| Naam | Config-pad | Alleen Commerce? |
 |--------------|--------------|--------------|
 | Abonnement op gasten toestaan | `newsletter/subscription/allow_guest_subscribe` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 | Moet worden bevestigd | `newsletter/subscription/confirm` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
@@ -35,9 +35,9 @@ Deze configuratiewaarden zijn beschikbaar in de Admin in **Winkels** > Instellin
 
 ## Configuratiepaden van de klant
 
-Deze configuratiewaarden zijn beschikbaar in de Admin in **Winkels** > Instellingen > **Configuratie** > **Klanten** > **Klantconfiguratie**.
+Deze configuratiewaarden zijn beschikbaar in Admin in **Opslag** > Montages > **Configuratie** > **Klanten** > **de Configuratie van de Klant**.
 
-| Naam | Config-pad | Alleen handel? |
+| Naam | Config-pad | Alleen Commerce? |
 |--------------|--------------|--------------|
 | Interval online minuten | `customer/online_customers/online_minutes_interval` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 | Klantaccounts delen | `customer/account_share/scope` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
@@ -77,20 +77,20 @@ Deze configuratiewaarden zijn beschikbaar in de Admin in **Winkels** > Instellin
 | Middennaam tonen (oorspronkelijk) | `customer/address/middlename_show` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 | Achtervoegsel tonen | `customer/address/suffix_show` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 | Opties achtervoegsel | `customer/address/suffix_options` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
-| Geboortedatum tonen | `customer/address/dob_show`<br>In overeenstemming met de huidige beste praktijken op het gebied van beveiliging en privacy, moet u zich bewust zijn van mogelijke juridische en beveiligingsrisico&#39;s die verbonden zijn aan de opslag van de volledige geboortedatum van de klant (maand, dag, jaar) samen met andere persoonlijke identificatoren, zoals volledige naam, voordat u dergelijke gegevens verzamelt of verwerkt. | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
+| Geboortedatum tonen | `customer/address/dob_show`<br> in overeenstemming met huidige veiligheid en privacy beste praktijken, ben zeker u zich van om het even welke potentiële wettelijke en veiligheidsrisico verbonden aan de opslag van de volledige geboortedatum van klanten (maand, dag, jaar) samen met andere persoonlijke herkenningstekens, zoals volledige naam, alvorens dergelijke gegevens te verzamelen of te verwerken. | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 | BTW-nummer tonen | `customer/address/taxvat_show` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 | Geslacht tonen | `customer/address/gender_show` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
-| Kredietfunctie voor winkel inschakelen | `customer/magento_customerbalance/is_enabled` | ![Alleen handel](/help/assets/configuration/cloud-ee.png) |
-| Winkelcreditatiegeschiedenis aan klanten tonen | `customer/magento_customerbalance/show_history` | ![Alleen handel](/help/assets/configuration/cloud-ee.png) |
-| Winkelcreditering automatisch terugbetalen | `customer/magento_customerbalance/refund_automatically` | ![Alleen handel](/help/assets/configuration/cloud-ee.png) |
-| E-mailafzender bijwerken van creditcard winkel | `customer/magento_customerbalance/email_identity` | ![Alleen handel](/help/assets/configuration/cloud-ee.png) |
-| E-mailtemplate voor bijwerken van creditering opslaan | `customer/magento_customerbalance/email_template` | ![Alleen handel](/help/assets/configuration/cloud-ee.png) |
+| Kredietfunctie voor winkel inschakelen | `customer/magento_customerbalance/is_enabled` | ![ Commerce-slechts ](/help/assets/configuration/cloud-ee.png) |
+| Winkelcreditatiegeschiedenis aan klanten tonen | `customer/magento_customerbalance/show_history` | ![ Commerce-slechts ](/help/assets/configuration/cloud-ee.png) |
+| Winkelcreditering automatisch terugbetalen | `customer/magento_customerbalance/refund_automatically` | ![ Commerce-slechts ](/help/assets/configuration/cloud-ee.png) |
+| E-mailafzender bijwerken van creditcard winkel | `customer/magento_customerbalance/email_identity` | ![ Commerce-slechts ](/help/assets/configuration/cloud-ee.png) |
+| E-mailtemplate voor bijwerken van creditering opslaan | `customer/magento_customerbalance/email_template` | ![ Commerce-slechts ](/help/assets/configuration/cloud-ee.png) |
 | Klant omleiden naar het dashboard Account na aanmelding | `customer/startup/redirect_dashboard` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 | Tekst | `customer/address_templates/text` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 | Tekst één regel | `customer/address_templates/oneline` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 | HTML | `customer/address_templates/html` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 | PDF | `customer/address_templates/pdf` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
-| Functionaliteit van klantsegment inschakelen | `customer/magento_customersegment/is_enabled` | ![Alleen handel](/help/assets/configuration/cloud-ee.png) |
+| Functionaliteit van klantsegment inschakelen | `customer/magento_customersegment/is_enabled` | ![ Commerce-slechts ](/help/assets/configuration/cloud-ee.png) |
 | CAPTCHA inschakelen in Storefront | `customer/captcha/enable` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 | Lettertype | `customer/captcha/font` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 | Forms | `customer/captcha/forms` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
@@ -105,13 +105,13 @@ Deze configuratiewaarden zijn beschikbaar in de Admin in **Winkels** > Instellin
 
 ## Lijstpaden wissen
 
-Deze configuratiewaarden zijn beschikbaar in de Admin in **Winkels** > Instellingen > **Configuratie** > **Klanten** > **Gewenste lijst**.
+Deze configuratiewaarden zijn beschikbaar in Admin in **Slaat** > Montages > **Configuratie** > **Klanten** > **Wige Lijst**.
 
-| Naam | Config-pad | Alleen handel? |
+| Naam | Config-pad | Alleen Commerce? |
 |--------------|--------------|--------------|
 | Ingeschakeld | `wishlist/general/active` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
-| Meerdere wenslijsten inschakelen | `wishlist/general/multiple_enabled` | ![Alleen handel](/help/assets/configuration/cloud-ee.png) |
-| Aantal lijsten met meerdere wensen | `wishlist/general/multiple_wishlist_number` | ![Alleen handel](/help/assets/configuration/cloud-ee.png) |
+| Meerdere wenslijsten inschakelen | `wishlist/general/multiple_enabled` | ![ Commerce-slechts ](/help/assets/configuration/cloud-ee.png) |
+| Aantal lijsten met meerdere wensen | `wishlist/general/multiple_wishlist_number` | ![ Commerce-slechts ](/help/assets/configuration/cloud-ee.png) |
 | E-mailafzender | `wishlist/email/email_identity` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 | E-mailsjabloon | `wishlist/email/email_template` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 | Maximumaantal e-mails toegestaan om te worden verzonden | `wishlist/email/number_limit` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
@@ -122,69 +122,69 @@ Deze configuratiewaarden zijn beschikbaar in de Admin in **Winkels** > Instellin
 
 ## Uitnodigingspaden
 
-Deze configuratiewaarden zijn beschikbaar in de Admin in **Winkels** > Instellingen > **Configuratie** > **Klanten** > **Uitnodigingen**.
+Deze configuratiewaarden zijn beschikbaar in Admin in **Opslag** > Montages > **Configuratie** > **Klanten** > **Uitnodigingen**.
 
-| Naam | Config-pad | Alleen handel? |
+| Naam | Config-pad | Alleen Commerce? |
 |--------------|--------------|--------------|
-| Uitnodigingsfunctionaliteit inschakelen | `magento_invitation/general/enabled` | ![Alleen handel](/help/assets/configuration/cloud-ee.png) |
-| Uitnodigingen inschakelen op Storefront | `magento_invitation/general/enabled_on_front` | ![Alleen handel](/help/assets/configuration/cloud-ee.png) |
-| Aangewezen klantengroep | `magento_invitation/general/registration_use_inviter_group` | ![Alleen handel](/help/assets/configuration/cloud-ee.png) |
-| Registratie van nieuwe accounts | `magento_invitation/general/registration_required_invitation` | ![Alleen handel](/help/assets/configuration/cloud-ee.png) |
-| Klanten toestaan eigen bericht toe te voegen aan e-mail met uitnodiging | `magento_invitation/general/allow_customer_message` | ![Alleen handel](/help/assets/configuration/cloud-ee.png) |
-| Max. uitnodigingen toegestaan om tegelijk te worden verzonden | `magento_invitation/general/max_invitation_amount_per_send` | ![Alleen handel](/help/assets/configuration/cloud-ee.png) |
-| E-mailafzender Klantenuitnodiging | `magento_invitation/email/identity` | ![Alleen handel](/help/assets/configuration/cloud-ee.png) |
-| E-mailsjabloon voor klantuitnodiging | `magento_invitation/email/template` | ![Alleen handel](/help/assets/configuration/cloud-ee.png) |
+| Uitnodigingsfunctionaliteit inschakelen | `magento_invitation/general/enabled` | ![ Commerce-slechts ](/help/assets/configuration/cloud-ee.png) |
+| Uitnodigingen inschakelen op Storefront | `magento_invitation/general/enabled_on_front` | ![ Commerce-slechts ](/help/assets/configuration/cloud-ee.png) |
+| Aangewezen klantengroep | `magento_invitation/general/registration_use_inviter_group` | ![ Commerce-slechts ](/help/assets/configuration/cloud-ee.png) |
+| Registratie van nieuwe accounts | `magento_invitation/general/registration_required_invitation` | ![ Commerce-slechts ](/help/assets/configuration/cloud-ee.png) |
+| Klanten toestaan eigen bericht toe te voegen aan e-mail met uitnodiging | `magento_invitation/general/allow_customer_message` | ![ Commerce-slechts ](/help/assets/configuration/cloud-ee.png) |
+| Max. uitnodigingen toegestaan om tegelijk te worden verzonden | `magento_invitation/general/max_invitation_amount_per_send` | ![ Commerce-slechts ](/help/assets/configuration/cloud-ee.png) |
+| E-mailafzender Klantenuitnodiging | `magento_invitation/email/identity` | ![ Commerce-slechts ](/help/assets/configuration/cloud-ee.png) |
+| E-mailsjabloon voor klantuitnodiging | `magento_invitation/email/template` | ![ Commerce-slechts ](/help/assets/configuration/cloud-ee.png) |
 
 {style="table-layout:auto"}
 
 ## Padpaden achterwaarts
 
-Deze configuratiewaarden zijn beschikbaar in de Admin in **Winkels** > Instellingen > **Configuratie** > **Klanten** > **Punten omkeren**.
+Deze configuratiewaarden zijn beschikbaar in Admin in **Slaat** > Montages > **Configuratie** > **Klanten** > **Punten** terug.
 
-| Naam | Config-pad | Alleen handel? |
+| Naam | Config-pad | Alleen Commerce? |
 |--------------|--------------|--------------|
-| Functionaliteit voor beloningspunten inschakelen | `magento_reward/general/is_enabled` | ![Alleen handel](/help/assets/configuration/cloud-ee.png) |
-| Enable Reward Points Functionaliteit on Storefront | `magento_reward/general/is_enabled_on_front` | ![Alleen handel](/help/assets/configuration/cloud-ee.png) |
-| Klanten kunnen de historie van Punten terugbetalen bekijken | `magento_reward/general/publish_history` | ![Alleen handel](/help/assets/configuration/cloud-ee.png) |
-| Drempel voor saldoverlaging beloningspunten | `magento_reward/general/min_points_balance` | ![Alleen handel](/help/assets/configuration/cloud-ee.png) |
-| Punten in omgekeerde richting bij | `magento_reward/general/max_points_balance` | ![Alleen handel](/help/assets/configuration/cloud-ee.png) |
-| Punten omkeren verloopt over (dagen) | `magento_reward/general/expiration_days` | ![Alleen handel](/help/assets/configuration/cloud-ee.png) |
-| Berekening van de vervalpunten van de punten naar achteren | `magento_reward/general/expiry_calculation` | ![Alleen handel](/help/assets/configuration/cloud-ee.png) |
-| Punten terugbetalen automatisch | `magento_reward/general/refund_automatically` | ![Alleen handel](/help/assets/configuration/cloud-ee.png) |
-| Terugbetalingspunten automatisch van restitutiebedrag aftrekken | `magento_reward/general/deduct_automatically` | ![Alleen handel](/help/assets/configuration/cloud-ee.png) |
-| Openingspagina | `magento_reward/general/landing_page` | ![Alleen handel](/help/assets/configuration/cloud-ee.png) |
-| Aanschaffen | `magento_reward/points/order` | ![Alleen handel](/help/assets/configuration/cloud-ee.png) |
-| Registratie | `magento_reward/points/register` | ![Alleen handel](/help/assets/configuration/cloud-ee.png) |
-| Aanmelden voor nieuwsbrief | `magento_reward/points/newsletter` | ![Alleen handel](/help/assets/configuration/cloud-ee.png) |
-| Uitnodiging naar klant converteren | `magento_reward/points/invitation_customer` | ![Alleen handel](/help/assets/configuration/cloud-ee.png) |
-| Uitnodiging voor beperking aantal conversies van klanten | `magento_reward/points/invitation_customer_limit` | ![Alleen handel](/help/assets/configuration/cloud-ee.png) |
-| Uitnodiging omzetten in bestelling | `magento_reward/points/invitation_order` | ![Alleen handel](/help/assets/configuration/cloud-ee.png) |
-| Limiet voor aantal aanvragen voor omzetting van bestellingen | `magento_reward/points/invitation_order_limit` | ![Alleen handel](/help/assets/configuration/cloud-ee.png) |
-| Uitnodiging voor conversie naar order Reward | `magento_reward/points/invitation_order_frequency` | ![Alleen handel](/help/assets/configuration/cloud-ee.png) |
-| Inzending controleren | `magento_reward/points/review` | ![Alleen handel](/help/assets/configuration/cloud-ee.png) |
-| Limiet voor aantal ingediende revisies met beloning | `magento_reward/points/review_limit` | ![Alleen handel](/help/assets/configuration/cloud-ee.png) |
-| E-mailafzender | `magento_reward/notification/email_sender` | ![Alleen handel](/help/assets/configuration/cloud-ee.png) |
-| Abonneren op klanten standaard | `magento_reward/notification/subscribe_by_default` | ![Alleen handel](/help/assets/configuration/cloud-ee.png) |
-| Update-e-mail balanceren | `magento_reward/notification/balance_update_template` | ![Alleen handel](/help/assets/configuration/cloud-ee.png) |
-| Waarschuwing: e-mail verlooppunten terugsturen | `magento_reward/notification/expiry_warning_template` | ![Alleen handel](/help/assets/configuration/cloud-ee.png) |
-| Vervalwaarschuwing voor (dagen) | `magento_reward/notification/expiry_day_before` | ![Alleen handel](/help/assets/configuration/cloud-ee.png) |
+| Functionaliteit voor beloningspunten inschakelen | `magento_reward/general/is_enabled` | ![ Commerce-slechts ](/help/assets/configuration/cloud-ee.png) |
+| Enable Reward Points Functionaliteit on Storefront | `magento_reward/general/is_enabled_on_front` | ![ Commerce-slechts ](/help/assets/configuration/cloud-ee.png) |
+| Klanten kunnen de historie van Punten terugbetalen bekijken | `magento_reward/general/publish_history` | ![ Commerce-slechts ](/help/assets/configuration/cloud-ee.png) |
+| Drempel voor saldoverlaging beloningspunten | `magento_reward/general/min_points_balance` | ![ Commerce-slechts ](/help/assets/configuration/cloud-ee.png) |
+| Punten in omgekeerde richting bij | `magento_reward/general/max_points_balance` | ![ Commerce-slechts ](/help/assets/configuration/cloud-ee.png) |
+| Punten omkeren verloopt over (dagen) | `magento_reward/general/expiration_days` | ![ Commerce-slechts ](/help/assets/configuration/cloud-ee.png) |
+| Berekening van de vervalpunten van de punten naar achteren | `magento_reward/general/expiry_calculation` | ![ Commerce-slechts ](/help/assets/configuration/cloud-ee.png) |
+| Punten terugbetalen automatisch | `magento_reward/general/refund_automatically` | ![ Commerce-slechts ](/help/assets/configuration/cloud-ee.png) |
+| Terugbetalingspunten automatisch van restitutiebedrag aftrekken | `magento_reward/general/deduct_automatically` | ![ Commerce-slechts ](/help/assets/configuration/cloud-ee.png) |
+| Openingspagina | `magento_reward/general/landing_page` | ![ Commerce-slechts ](/help/assets/configuration/cloud-ee.png) |
+| Aanschaffen | `magento_reward/points/order` | ![ Commerce-slechts ](/help/assets/configuration/cloud-ee.png) |
+| Registratie | `magento_reward/points/register` | ![ Commerce-slechts ](/help/assets/configuration/cloud-ee.png) |
+| Aanmelden voor nieuwsbrief | `magento_reward/points/newsletter` | ![ Commerce-slechts ](/help/assets/configuration/cloud-ee.png) |
+| Uitnodiging naar klant converteren | `magento_reward/points/invitation_customer` | ![ Commerce-slechts ](/help/assets/configuration/cloud-ee.png) |
+| Uitnodiging voor beperking aantal conversies van klanten | `magento_reward/points/invitation_customer_limit` | ![ Commerce-slechts ](/help/assets/configuration/cloud-ee.png) |
+| Uitnodiging omzetten in bestelling | `magento_reward/points/invitation_order` | ![ Commerce-slechts ](/help/assets/configuration/cloud-ee.png) |
+| Limiet voor aantal aanvragen voor omzetting van bestellingen | `magento_reward/points/invitation_order_limit` | ![ Commerce-slechts ](/help/assets/configuration/cloud-ee.png) |
+| Uitnodiging voor conversie naar order Reward | `magento_reward/points/invitation_order_frequency` | ![ Commerce-slechts ](/help/assets/configuration/cloud-ee.png) |
+| Inzending controleren | `magento_reward/points/review` | ![ Commerce-slechts ](/help/assets/configuration/cloud-ee.png) |
+| Limiet voor aantal ingediende revisies met beloning | `magento_reward/points/review_limit` | ![ Commerce-slechts ](/help/assets/configuration/cloud-ee.png) |
+| E-mailafzender | `magento_reward/notification/email_sender` | ![ Commerce-slechts ](/help/assets/configuration/cloud-ee.png) |
+| Abonneren op klanten standaard | `magento_reward/notification/subscribe_by_default` | ![ Commerce-slechts ](/help/assets/configuration/cloud-ee.png) |
+| Update-e-mail balanceren | `magento_reward/notification/balance_update_template` | ![ Commerce-slechts ](/help/assets/configuration/cloud-ee.png) |
+| Waarschuwing: e-mail verlooppunten terugsturen | `magento_reward/notification/expiry_warning_template` | ![ Commerce-slechts ](/help/assets/configuration/cloud-ee.png) |
+| Vervalwaarschuwing voor (dagen) | `magento_reward/notification/expiry_day_before` | ![ Commerce-slechts ](/help/assets/configuration/cloud-ee.png) |
 
 {style="table-layout:auto"}
 
 ## Promotiepaden
 
-Deze configuratiewaarden zijn beschikbaar in de Admin in **Winkels** > Instellingen > **Configuratie** > **Klanten** > **Aanbiedingen**.
+Deze configuratiewaarden zijn beschikbaar in Admin in **Slaat** > Montages > **Configuratie** > **Klanten** > **Bevorderingen**.
 
-| Naam | Config-pad | Alleen handel? |
+| Naam | Config-pad | Alleen Commerce? |
 |--------------|--------------|--------------|
 | E-mails herinnering inschakelen | `promo/magento_reminder/enabled` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 | Frequentie | `promo/magento_reminder/frequency` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 | Interval | `promo/magento_reminder/interval` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
-| Minuut van het uur | `promo/magento_reminder/minutes` | ![Alleen handel](/help/assets/configuration/cloud-ee.png) |
-| Begintijd | `promo/magento_reminder/time` | ![Alleen handel](/help/assets/configuration/cloud-ee.png) |
-| Maximum aantal e-mails per één run | `promo/magento_reminder/limit` | ![Alleen handel](/help/assets/configuration/cloud-ee.png) |
-| Drempel voor fout bij verzenden van e-mail | `promo/magento_reminder/threshold` | ![Alleen handel](/help/assets/configuration/cloud-ee.png) |
-| Herinnering E-mailafzender | `promo/magento_reminder/identity` | ![Alleen handel](/help/assets/configuration/cloud-ee.png) |
+| Minuut van het uur | `promo/magento_reminder/minutes` | ![ Commerce-slechts ](/help/assets/configuration/cloud-ee.png) |
+| Begintijd | `promo/magento_reminder/time` | ![ Commerce-slechts ](/help/assets/configuration/cloud-ee.png) |
+| Maximum aantal e-mails per één run | `promo/magento_reminder/limit` | ![ Commerce-slechts ](/help/assets/configuration/cloud-ee.png) |
+| Drempel voor fout bij verzenden van e-mail | `promo/magento_reminder/threshold` | ![ Commerce-slechts ](/help/assets/configuration/cloud-ee.png) |
+| Herinnering E-mailafzender | `promo/magento_reminder/identity` | ![ Commerce-slechts ](/help/assets/configuration/cloud-ee.png) |
 | Lengte code | `promo/auto_generated_coupon_codes/length` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 | Codeopmaak | `promo/auto_generated_coupon_codes/format` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 | Codevoorvoegsel | `promo/auto_generated_coupon_codes/prefix` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
@@ -195,9 +195,9 @@ Deze configuratiewaarden zijn beschikbaar in de Admin in **Winkels** > Instellin
 
 ## Cadeauregisterpaden
 
-Deze configuratiewaarden zijn beschikbaar in de Admin in **Winkels** > Instellingen > **Configuratie** > **Klanten** > **Cadeauregister**.
+Deze configuratiewaarden zijn beschikbaar in Admin in **Opslag** > Montages > **Configuratie** > **Klanten** > **de Registratie van het Cadeautje**.
 
-| Naam | Config-pad | Alleen handel? |
+| Naam | Config-pad | Alleen Commerce? |
 |--------------|--------------|--------------|
 | Cadeauregister inschakelen | `magento_giftregistry/general/enabled` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 | Maximum aantal geregistreerde personen | `magento_giftregistry/general/max_registrant` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
@@ -213,9 +213,9 @@ Deze configuratiewaarden zijn beschikbaar in de Admin in **Winkels** > Instellin
 
 ## Blijvende winkelwagentjes
 
-Deze configuratiewaarden zijn beschikbaar in de Admin in **Winkels** > Instellingen > **Configuratie** > **Klanten** > **Blijvende winkelwagentje**.
+Deze configuratiewaarden zijn beschikbaar in Admin in **Opslag** > Montages > **Configuratie** > **Klanten** > **het Aanhoudende het Vormen Kart**.
 
-| Naam | Config-pad | Alleen handel? |
+| Naam | Config-pad | Alleen Commerce? |
 |--------------|--------------|--------------|
 | Persistentie inschakelen | `persistent/options/enabled` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 | Levensduur (seconden) | `persistent/options/lifetime` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |

@@ -16,10 +16,10 @@ U moet de opdrachtregel gebruiken om Adobe Commerce-modules en -extensies te beh
 
 ## Een module in- of uitschakelen
 
-Als u een module wilt in- of uitschakelen, raadpleegt u [Modules in- of uitschakelen](../../installation/tutorials/manage-modules.md).
+Om een module toe te laten of onbruikbaar te maken, zie [ modules ](../../installation/tutorials/manage-modules.md) toelaten of onbruikbaar maken.
 
 ## Een module verwijderen
 
-Als u een module wilt verwijderen, raadpleegt u [Modules verwijderen](../../installation/tutorials/uninstall-modules.md).
+Om een module te desinstalleren, zie [ modules ](../../installation/tutorials/uninstall-modules.md) desinstalleren.
 
-Als u een thema wilt verwijderen, gebruikt u de opdracht [`theme:uninstall`](../../installation/tutorials/themes.md) gebruiken.
+Als u een thema wilt verwijderen, gebruikt u de opdracht [`theme:uninstall`](../../installation/tutorials/themes.md) .

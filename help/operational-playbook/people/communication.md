@@ -65,7 +65,7 @@ De volgende lijst bevat manieren waarop JIRA binnen elke organisatie kan worden 
 
 JIRA staat teams toe om gedetailleerde taken tot stand te brengen en te schrijven, rapporten te produceren, werkschema&#39;s aan te passen, en banen over individuen vrij snel toe te wijzen.
 
-Commerciële managers, marketing- en ontwikkelingsteams, zelfs belanghebbenden op C-niveau, kunnen de dagelijkse, wekelijkse, maandelijkse en jaarlijkse voortgang van elke JIRA-taak of -project volgen. Het Atlassiaanse hulpprogramma voor projectbeheer bestaat uit drie versies, waaronder JIRA Align, JIRA Core en JIRA Software.
+Commerce-managers, marketing- en ontwikkelingsteams, zelfs belanghebbenden op C-niveau, kunnen de dagelijkse, wekelijkse, maandelijkse en jaarlijkse voortgang van elke JIRA-taak of -project volgen. Het Atlassiaanse hulpprogramma voor projectbeheer bestaat uit drie versies, waaronder JIRA Align, JIRA Core en JIRA Software.
 
 De voordelen van het gebruiken van JIRA binnen om het even welke e-commerce zaken is de capaciteit voor veelvoudige teams om het gebruiken van één platform samen te werken. Vaak zijn bedrijven getuige van de marketing-, ontwikkelings-, creatieve en e-commerce teams die allemaal in verschillende silo&#39;s werken. Met een hulpprogramma voor projectbeheer, zoals JIRA, kan elk team verschillende prioriteiten stellen. De kwesties kunnen om het even welke teams vertegenwoordigen die willen volgen en allen bevat binnen verschillende projecten die uit terugkerende taken bestaan moeten de teams voltooien. Elke kwestie gaat door een proces genoemd een werkschema.
 
@@ -73,7 +73,7 @@ De juiste workflow kan communicatielijnen maken of afbreken. Teams kunnen hun ei
 
 Aangezien de kwesties door een werkschema worden gevolgd, alle leden van het team, de afdeling, of zelfs bedrijfswinstzicht in hun status. Een workflow zorgt er ook voor dat een probleem alle stappen doorgeeft voordat het is voltooid. Teams herinneren zich dan al deze prioriteiten.
 
-![Voorbeeld van JIRA-workflow](../../assets/playbooks/jira-workflow-example.png)
+![ JIRA het diagram van het werkschemavoorbeeld ](../../assets/playbooks/jira-workflow-example.png)
 
 ### Confluentie
 

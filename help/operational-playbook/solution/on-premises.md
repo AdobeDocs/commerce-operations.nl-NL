@@ -14,7 +14,8 @@ ht-degree: 0%
 
 # hosting op locatie
 
-Cloud-gebaseerde hostingoplossingen zijn bijzonder populair en spelen in veel organisaties zeker een belangrijke rol, maar de infrastructuur ter plaatse is voor sommige organisaties en handelaren nog steeds een geschikte optie.
+Cloud-gebaseerde hostingoplossingen zijn bijzonder populair en dienen zeker als
+Een belangrijke rol in veel organisaties is echter nog steeds een geschikte optie voor sommige organisaties en handelaren.
 
 U moet rekening houden met verschillende factoren voordat u een hosting op locatie kiest, waaronder aanzienlijke verzonken kosten, een gemakkelijk beschikbare pool van competente/kosteneffectieve IT-expertise en het feit dat toepassingen op locatie vaak gemakkelijker op de behoeften van een organisatie kunnen worden afgestemd en aangepast.
 

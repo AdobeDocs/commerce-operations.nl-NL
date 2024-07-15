@@ -12,5 +12,5 @@ ht-degree: 5%
 
 # Overzichten van Adobe Commerce-gebeurtenissen {#events}
 
-+ Top {#summit}
++ Summit {#summit}
    + [2024](summit/2024.md)

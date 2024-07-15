@@ -23,6 +23,6 @@ ht-degree: 0%
 - [Implementatiestroom](deployment-flow.md)
 - Geavanceerde concepten {#concepts}
    - [Geavanceerde instellingen](advanced-setup.md)
-   - [Geavanceerd [!DNL JavaScript] bundeling](advanced-js-bundling.md)
+   - [Geavanceerde  [!DNL JavaScript]  het bundelen](advanced-js-bundling.md)
    - [GraphQL Application Server](application-server.md)
-- [Terugkeren naar operationele hulplijnen](https://experienceleague.adobe.com/docs/commerce-operations/operational-guides/home.html)
+- [ Terugkeer aan Operationele Gidsen ](https://experienceleague.adobe.com/docs/commerce-operations/operational-guides/home.html)

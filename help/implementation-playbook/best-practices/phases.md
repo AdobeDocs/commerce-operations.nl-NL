@@ -23,7 +23,7 @@ Deze beste praktijken worden georganiseerd door implementatiefase zodat kunt u d
     <img alt="Planning" src="../../assets/icons/enterprise.svg" width="80" height="80"/>
     </a>
     <div>
-    <a href="planning/overview.md"><strong>Planning</strong></a>
+    <a href="planning/overview.md"><strong> Planning </strong></a>
     </div>
     Vereisten verzamelen, architecturaal ontwerp, catalogusontwerp, projectbereikbaarheid, accountprovisioning, gebruikerstoegang, aankoop van extensies
     <br>
@@ -33,7 +33,7 @@ Deze beste praktijken worden georganiseerd door implementatiefase zodat kunt u d
       <img alt="Ontwikkeling" src="../../assets/icons/page-rule.svg" width="80" height="80">
     </a>
     <div>
-    <a href="development/overview.md"><strong>Ontwikkeling</strong></a>
+    <a href="development/overview.md"><strong> Ontwikkeling </strong></a>
     </div>
     Plaatselijke en het opvoeren van omgevingsopstelling, het oplossen van problemen, codebeheer, speldplanning, de controle van de sprint, goedkeuringstests, en klantenaftekening
     <br>
@@ -43,7 +43,7 @@ Deze beste praktijken worden georganiseerd door implementatiefase zodat kunt u d
       <img alt="Starten" src="../../assets/icons/launch.svg" width="80" height="80">
     </a>
     <div>
-    <a href="launch/overview.md"><strong>Starten</strong></a>
+    <a href="launch/overview.md"><strong> Lancering </strong></a>
     </div>
     Definitieve controles vóór en na de introductie van de checklist, implementatie van de productie, beveiligingsconfiguratie, servicecontrole en prestatiebewaking  
     <br>
@@ -53,7 +53,7 @@ Deze beste praktijken worden georganiseerd door implementatiefase zodat kunt u d
       <img alt="Onderhoud" src="../../assets/icons/gauge.svg" width="80" height="80">
     </a>
     <div>
-    <a href="maintenance/overview.md"><strong>Onderhoud</strong></a>
+    <a href="maintenance/overview.md"><strong> Onderhoud </strong></a>
     </div>
     Site-bewaking, catalogusbeheer, indexeren, configuratie, functieverbeteringen, foutopsporing, beheerde services, upgrades   
     <br>

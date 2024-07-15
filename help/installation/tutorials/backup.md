@@ -13,17 +13,17 @@ ht-degree: 0%
 
 Met deze opdracht kunt u back-ups maken:
 
-* Het bestandssysteem (exclusief `var` en `pub/static` mappen)
-* De `pub/media` directory
+* Het bestandssysteem (behalve `var` - en `pub/static` -mappen)
+* De map `pub/media`
 * De database
 
-Back-ups worden opgeslagen in het dialoogvenster `var/backups` en kan op elk gewenst moment worden hersteld met de [`magento setup:rollback`](uninstall-modules.md#roll-back-the-file-system-database-or-media-files) gebruiken.
+Back-ups worden opgeslagen in de map `var/backups` en kunnen op elk gewenst moment worden hersteld met de opdracht [`magento setup:rollback`](uninstall-modules.md#roll-back-the-file-system-database-or-media-files) .
 
-Nadat u een back-up hebt gemaakt, kunt u [terugdraaien](#rollback) later.
+Na het steunen, kunt u [ terugschroeven van prijzen ](#rollback) later.
 
 >[!TIP]
 >
->Voor Adobe Commerce over infrastructuurprojecten in de cloud gaat u naar [Momentopnamen en back-upbeheer](https://devdocs.magento.com/cloud/project/project-webint-snap.html) in de _Wolkengids_.
+>Voor Adobe Commerce op de projecten van de wolkeninfrastructuur, zie [ Momentopnamen en reservebeheer ](https://devdocs.magento.com/cloud/project/project-webint-snap.html) in de _gids van de Wolk_.
 
 ## Back-ups inschakelen
 
@@ -35,22 +35,22 @@ bin/magento config:set system/backup/functionality_enabled 1
 
 >[!WARNING]
 >
->**Waarschuwing:**
+>**Bericht van de Verdringing:**
 >Back-upfunctionaliteit is vanaf 2.1.16, 2.2.7 en 2.3.0 verouderd. We raden u aan aanvullende back-uptechnologieën en binaire back-uptools (zoals Percona XtraBackup) te onderzoeken.
 
 ## Limiet voor geopende bestanden instellen
 
-Terugdraaien naar een vorige back-up kan zonder toezicht mislukken, waardoor onvolledige gegevens naar het bestandssysteem of de database worden geschreven met de [`magento setup:rollback`](uninstall-modules.md#roll-back-the-file-system-database-or-media-files) gebruiken.
+Terugdraaien naar een vorige back-up kan zonder toezicht mislukken, wat ertoe leidt dat onvolledige gegevens naar het bestandssysteem of de database worden geschreven met de opdracht [`magento setup:rollback`](uninstall-modules.md#roll-back-the-file-system-database-or-media-files) .
 
 Soms, veroorzaakt een lange vraagkoord de toegewezen geheugenruimte van de gebruiker om uit geheugen wegens teveel recursieve vraag te lopen.
 
 ## Openen van bestanden instellen `ulimit`
 
-We raden u aan de geopende bestanden in te stellen [`ulimit`](https://ss64.com/bash/ulimit.html) voor de gebruiker van het bestandssysteem naar een waarde van `65536` of meer.
+Wij adviseren plaatsend de open dossiers [`ulimit` ](https://ss64.com/bash/ulimit.html) voor de gebruiker van het dossiersysteem aan een waarde van `65536` of meer.
 
 U kunt dit doen of op de bevellijn of u kunt het een permanent het plaatsen voor de gebruiker door hun shell manuscript uit te geven maken.
 
-Voordat u verdergaat, moet u, als u dat nog niet hebt gedaan, overschakelen op de knop [eigenaar van bestandssysteem](../prerequisites/file-system/overview.md).
+Alvorens u verdergaat, als u dit nog niet hebt gedaan, schakelaar aan de [ eigenaar van het dossiersysteem ](../prerequisites/file-system/overview.md).
 
 Opdracht:
 
@@ -62,23 +62,23 @@ Indien nodig kunt u dit wijzigen in een hogere waarde.
 
 >[!NOTE]
 >
->De syntaxis voor geopende bestanden `ulimit` is afhankelijk van de UNIX-shell die u gebruikt. De voorgaande instelling werkt alleen met CentOS en Ubuntu met de Bash-shell. Voor macOS is de juiste instelling echter `ulimit -S 65532`. Raadpleeg een hoofdpagina of referentie van het besturingssysteem voor meer informatie.
+>De syntaxis voor geopende bestanden `ulimit` is afhankelijk van de UNIX-shell die u gebruikt. De voorgaande instelling werkt alleen met CentOS en Ubuntu met de Bash-shell. Voor macOS is de juiste instelling echter `ulimit -S 65532` . Raadpleeg een hoofdpagina of referentie van het besturingssysteem voor meer informatie.
 
 U kunt als volgt de waarde in de Bash-shell van de gebruiker instellen:
 
-1. Als u dit nog niet hebt gedaan, schakelt u over naar de [eigenaar van bestandssysteem](../prerequisites/file-system/overview.md).
-1. Openen `/home/<username>/.bashrc` in een teksteditor.
+1. Als u dit nog niet hebt gedaan, schakelaar aan de [ eigenaar van het dossiersysteem ](../prerequisites/file-system/overview.md).
+1. Open `/home/<username>/.bashrc` in een teksteditor.
 1. Voeg de volgende regel toe:
 
    ```bash
    ulimit -s 65536
    ```
 
-1. Sla uw wijzigingen op in `.bashrc` en sluit de teksteditor af.
+1. Sla de wijzigingen in `.bashrc` op en sluit de teksteditor af.
 
 >[!WARNING]
 >
->We raden u aan geen waarde in te stellen voor [`pcre.recursion_limit`](https://www.php.net/manual/en/pcre.configuration.php) in de `php.ini` bestand omdat dit kan resulteren in onvolledige terugdraaiversies zonder foutmelding.
+>We raden u aan geen waarde in te stellen voor [`pcre.recursion_limit` ](https://www.php.net/manual/en/pcre.configuration.php) in het `php.ini` -bestand, omdat dit kan resulteren in onvolledige terugdraaiversies zonder foutmelding.
 
 ## Back-up maken
 
@@ -140,7 +140,7 @@ Als u wilt terugdraaien naar een vorige reservekopie, voert u het volgende in:
 bin/magento setup:rollback [-c|--code-file="<name>"] [-m|--media-file="<name>"] [-d|--db-file="<name>"]
 ```
 
-Bijvoorbeeld om een media steun te herstellen genoemd `1440611839_filesystem_media.tgz`, enter
+Als u bijvoorbeeld een back-up van een medium met de naam `1440611839_filesystem_media.tgz` wilt herstellen, voert u
 
 ```bash
 bin/magento setup:rollback -m 1440611839_filesystem_media.tgz

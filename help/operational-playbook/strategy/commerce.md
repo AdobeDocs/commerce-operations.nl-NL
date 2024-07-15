@@ -1,15 +1,15 @@
 ---
-title: Handelsstrategie
+title: Commerce-strategie
 description: Ontgrendel de kernmogelijkheden voor e-commerce met behulp van ons voorgestelde strategisch kader.
 exl-id: 0efb424b-9026-439d-a50c-d2d935c07c8c
 source-git-commit: e76f101df47116f7b246f21f0fe0fa72769d2776
 workflow-type: tm+mt
-source-wordcount: '350'
+source-wordcount: '347'
 ht-degree: 0%
 
 ---
 
-# Handelsstrategie
+# Commerce-strategie
 
 Digitale handel is een snel veranderende kracht die elk jaar snel evolueert. Hoewel dit voor individuen spannend kan zijn, komt het ook met vele uitdagingen voor organisaties die proberen de legering van het land te navigeren dat e-commerce is.
 
@@ -79,4 +79,4 @@ De volgende lijst bevat belangrijke doelstellingen waarmee u rekening moet houde
 
 Zie het volgende diagram voor een gesuggereerd strategisch kader voor e-commerce:
 
-![Kaderschema handelsstrategie](../../assets/playbooks/commerce-strategy-framework.png)
+![ diagram van het de strategiekader van Commerce ](../../assets/playbooks/commerce-strategy-framework.png)

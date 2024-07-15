@@ -18,15 +18,15 @@ Deze pagina bevat recente wijzigingen die u wilt zien. Alle kleine updates, zoal
     <tr>
       <th>Beschrijving</th>
       <th>Type</th>
-      <th>Bron</th>
+      <th>Source</th>
     </tr>
   </thead>
   <tbody>
     <tr>
-      <td><p>Toegevoegde beste praktijken voor <a href="https://experienceleague.adobe.com/docs/commerce-operations/implementation-playbook/best-practices/maintenance/mariadb-upgrade.html">MariaDB upgraden</a> tot en met 10.5.1 en hoger.</p>
+      <td><p>Toegevoegde beste praktijken voor <a href="https://experienceleague.adobe.com/docs/commerce-operations/implementation-playbook/best-practices/maintenance/mariadb-upgrade.html"> bevordering MariaDB </a> aan 10.5.1 en later.</p>
 </td>
       <td>best practices</td>
-      <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/7199e74f82cef6dd682f5e240ee2b6fc56da18c8">7199e7</a> (toewijzen)</td>
+      <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/7199e74f82cef6dd682f5e240ee2b6fc56da18c8"> 7199e7 </a> (begaat)</td>
     </tr>
   </tbody>
 </table><!-- date_group -->
@@ -38,15 +38,15 @@ Deze pagina bevat recente wijzigingen die u wilt zien. Alle kleine updates, zoal
     <tr>
       <th>Beschrijving</th>
       <th>Type</th>
-      <th>Bron</th>
+      <th>Source</th>
     </tr>
   </thead>
   <tbody>
     <tr>
-      <td><p>Extra informatie over de <a href="https://experienceleague.adobe.com/docs/commerce-operations/implementation-playbook/best-practices/planning/redis-service-configuration.html">configuratieopties voor geheugengrootte in de L2-cache</a> voor Adobe Commerce over cloudinfrastructuur.</p>
+      <td><p>Toegevoegde details over <a href="https://experienceleague.adobe.com/docs/commerce-operations/implementation-playbook/best-practices/planning/redis-service-configuration.html"> L2 geheime voorgeheugen rangsconfiguratieopties </a> voor Adobe Commerce op wolkeninfrastructuur.</p>
 </td>
       <td>best practices</td>
-      <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/21da4c22744dbb3b27b0dbe184b946788748a52e">21da4c</a> (toewijzen)</td>
+      <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/21da4c22744dbb3b27b0dbe184b946788748a52e"> 21da4c </a> (begaat)</td>
     </tr>
   </tbody>
 </table><!-- date_group --><!-- month_group --><!-- year_group -->

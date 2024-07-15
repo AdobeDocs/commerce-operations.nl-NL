@@ -15,7 +15,7 @@ Testen is een essentieel onderdeel van de ontwikkelingscyclus.
 
 ## A/B-tests
 
-![AB-testpictogram](../../assets/playbooks/a-b-testing.png)
+![ AB testend pictogram ](../../assets/playbooks/a-b-testing.png)
 
 Een A/B-test is het proces waarbij twee verschillende versies van de website worden vergeleken om het verschil in prestaties te zien.
 
@@ -25,7 +25,7 @@ Over het algemeen raden we u aan om twee keer per jaar A/B-tests uit te voeren b
 
 ## Implementatietests
 
-![Pictogram voor implementatie testen](../../assets/playbooks/deployment-testing.png)
+![ het testen van de Plaatsing pictogram ](../../assets/playbooks/deployment-testing.png)
 
 De doelstelling van plaatsing testend om te verifiëren dat alle bouw, veranderingen, ontwerp, en lading werk zoals die op de productiesite wordt verwacht. Implementatietests zijn belangrijk omdat dit de laatste controle is voordat de site wordt gestart en klanten de site en de functionaliteit kunnen bekijken.
 

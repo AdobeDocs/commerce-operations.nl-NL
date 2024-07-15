@@ -37,16 +37,16 @@ Hoewel het succes van een IT-project in hoge mate afhangt van de ervaring en exp
 
 De structuur van dit playbook volgt de typische levenscyclus van een Adobe Commerce implementatieproject. Dit vereenvoudigt navigatie door dit document, aangezien de lezers aan de relevante sectie van een project voor alle relevante informatie onmiddellijk kunnen overslaan.
 
-- **Projectbereikregels**—Een uitsplitsing van de belangrijkste belanghebbenden, processen, tijdlijnen en vereisten die essentieel zijn voor merken om te begrijpen en te voltooien voor een geslaagde implementatie.
+- **project scoping** - een uitsplitsing van de belangrijkste belanghebbenden, processen, chronologie, en vereisten die voor merken kritiek zijn om voor een succesvolle implementatie te begrijpen en te voltooien.
 
-- **Ontwikkeling en kwaliteitscontrole**—Een blik op de hulpmiddelen, de oplossingen, de processen, en de methodologieën die over een aantal implementaties van Adobe Commerce zijn getest en geperfectioneerd, evenals onze aanbevelingen waarvoor de oplossingen het best geschikt voor specifieke bedrijfsbehoeften en doelstellingen zijn.
+- **Ontwikkeling en kwaliteitscontrole** - een blik bij de hulpmiddelen, de oplossingen, de processen, en de methodologieën die over een aantal implementaties van Adobe Commerce zijn getest en geperfectioneerd, evenals onze aanbevelingen waarvoor de oplossingen voor specifieke bedrijfsbehoeften en doelstellingen het best geschikt zijn.
 
-- **Planning en bestuur**—Een duik in het creëren van een plan om een oplossing op tijd, op begroting te leveren, en dat aan uw behoeften voldoet is essentieel voor succes.
+- **Planning en beheer** - een duik in het creëren van een plan om een oplossing op tijd, op begroting te leveren, en dat aan uw behoeften voldoet is essentieel aan succes.
 
-- **Architectuur en integratie**—De capaciteiten, de architectuur, en de integratie die Adobe Commerce tot de meest vertrouwde en betrouwbare elektronische handelsplatforms op de markt maken.
+- **Architectuur en integratie** - de mogelijkheden, de architectuur, en de integratie die Adobe Commerce één van de meest vertrouwde op en betrouwbare elektronische handelplatforms op de markt maken.
 
-- **Infrastructuur en implementatie**—We gaan verder naar het echte platform zelf en benadrukken de infrastructuur en omgevingen die Adobe Commerce van kracht maken en de softwareoplossingen die het zo&#39;n robuust platform maken.
+- **Infrastructuur en plaatsing** - Bewegend verder in het daadwerkelijke platform zelf, benadrukken wij de infrastructuur en de milieu&#39;s die Adobe Commerce en de softwareoplossingen aandrijven die het zo robuust platform maken.
 
-- **Launch and cut-over process**—De tactieken en acties van vóór de lancering tot na de lancering die moeten plaatsvinden om ervoor te zorgen dat de plaats levend gaat en zijn niveau van doeltreffendheid van dag één blijft.
+- **Lancering en besnoeiing proces** - De tactiek en de acties van pre-lancering aan post-lancering die moeten plaatsvinden om de plaats te verzekeren leven gaat en zijn niveau van doeltreffendheid van dag één verder handhaaft.
 
-- **Doorlopende support en onderhoud**—Details over de overgangsfase en de typen modellen en SLA&#39;s rond een doorlopend supportplan om uw merk na de introductie verder te ontwikkelen.
+- **Doorlopende steun en onderhoud** - Details rond de overgangsfase en de types van modellen en SLAs rond een aan de gang zijnde steunplan om uw merk na de lancering verder te bewegen.

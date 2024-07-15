@@ -4,14 +4,14 @@ description: Zie een lijst met waarden in het bestand config.php.
 exl-id: 9b355d6d-ea66-480b-ad96-0ea9e7e61844
 source-git-commit: 95ffff39d82cc9027fa633dffedf15193040802d
 workflow-type: tm+mt
-source-wordcount: '164'
+source-wordcount: '147'
 ht-degree: 0%
 
 ---
 
 # config.php reference
 
-De `config.php` bestand bevat de volgende secties:
+Het bestand `config.php` bevat de volgende secties:
 
 | Naam | Beschrijving |
 | --------- | -------------------|
@@ -34,7 +34,7 @@ Bevat een array van modules en hun statussen. Als module is ingeschakeld, is de 
 ]
 ```
 
-Meer informatie over [Modules].
+Leer meer over [ Modules ].
 
 ## bereik
 
@@ -82,7 +82,7 @@ Bevat een array van bereikconfiguratiewaarden. Het heeft de volgende subnodes:
 ]
 ```
 
-Meer informatie over [Commerciële aspecten][scopes].
+Leer meer over [ Scopes van Commerce ][scopes].
 
 ## systeem
 
@@ -100,7 +100,7 @@ Bevat een array van configuratiewaarden voor systeemvelden.
 ]
 ```
 
-Meer informatie over [Systeemspecifieke configuraties](config-reference-sens.md).
+Leer meer over [ systeem-specifieke Configuraties ](config-reference-sens.md).
 
 ## thema&#39;s
 
@@ -120,7 +120,7 @@ Bevat een array van waarden voor themaconfiguratie.
 ]
 ```
 
-Meer informatie over [Thema&#39;s].
+Leer meer over [ Thema&#39;s ].
 
 <!-- link definitions -->
 

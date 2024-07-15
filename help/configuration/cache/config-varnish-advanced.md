@@ -12,15 +12,15 @@ ht-degree: 0%
 
 # Geavanceerde Varnish-configuratie
 
-Varnish verstrekt verscheidene eigenschappen die klanten verhinderen lange vertragingen en onderbrekingen te ervaren wanneer de server van de Handel niet behoorlijk functioneert. Deze eigenschappen kunnen in worden gevormd `default.vcl` bestand. Dit onderwerp beschrijft de toevoegingen die de Handel in het VCL (de Taal van de Configuratie van de Varnish) dossier verstrekt u van Admin downloadt.
+Varnish biedt verschillende functies die voorkomen dat klanten te maken krijgen met lange vertragingen en time-outs wanneer de Commerce-server niet goed werkt. Deze functies kunnen worden geconfigureerd in het `default.vcl` -bestand. Dit onderwerp beschrijft de toevoegingen die Commerce in het VCL (de Taal van de Configuratie van de Varnish) dossier verstrekt u van Admin downloadt.
 
-Zie de [Naslaghandleiding voor vernis](https://varnish-cache.org/docs/index.html) voor details over het gebruiken van de Taal van de Configuratie van de Varnish.
+Zie het [ Handboek van de Verwijzing van de Varnish ](https://varnish-cache.org/docs/index.html) voor details over het gebruiken van de Taal van de Configuratie van de Varnish.
 
 ## Health check
 
-Met de functie Varnish health check wordt de Commerce-server opgevraagd of deze tijdig reageert. Als het normaal reageert, wordt nieuwe inhoud opnieuw gegenereerd nadat de periode Tijd tot live (TTL) is verlopen. Als dat niet het geval is, dient Varnish altijd de inhoud van de schaal.
+Met de functie voor de Varnish-health check wordt de Commerce-server opgezocht om te bepalen of deze tijdig reageert. Als het normaal reageert, wordt nieuwe inhoud opnieuw gegenereerd nadat de periode Tijd tot live (TTL) is verlopen. Als dat niet het geval is, dient Varnish altijd de inhoud van de schaal.
 
-De handel bepaalt de volgende standaardgezondheidscontrole:
+Commerce definieert de volgende standaardhealth check:
 
 ```conf
 .probe = {
@@ -32,52 +32,52 @@ De handel bepaalt de volgende standaardgezondheidscontrole:
     }
 ```
 
-Elke 5 seconden, roept deze gezondheidscontrole `pub/health_check.php` script. Dit script controleert de beschikbaarheid van de server, elke database en Redis (indien geïnstalleerd). Het script moet een reactie binnen 2 seconden retourneren. Wanneer het script bepaalt dat een van deze bronnen is ingedrukt, wordt een 500 HTTP-foutcode geretourneerd. Als deze foutcode wordt ontvangen in zes van de tien pogingen, wordt de backend als ongezond beschouwd.
+Deze health check roept om de 5 seconden het `pub/health_check.php` -script aan. Dit script controleert de beschikbaarheid van de server, elke database en Redis (indien geïnstalleerd). Het script moet een reactie binnen 2 seconden retourneren. Wanneer het script bepaalt dat een van deze bronnen is ingedrukt, wordt een 500 HTTP-foutcode geretourneerd. Als deze foutcode wordt ontvangen in zes van de tien pogingen, wordt de backend als ongezond beschouwd.
 
-De `health_check.php` het script bevindt zich in het dialoogvenster `pub` directory. Als de hoofdmap van de handel `pub`en zorg ervoor dat u het pad in het dialoogvenster `url` parameter van `/pub/health_check.php` tot `health_check.php`.
+Het script `health_check.php` bevindt zich in de map `pub` . Als uw Commerce-hoofdmap `pub` is, moet u het pad in de parameter `url` wijzigen van `/pub/health_check.php` in `health_check.php` .
 
-Zie de klasse [Varnish health checks](https://varnish-cache.org/docs/7.4/users-guide/vcl-backends.html#health-checks) documentatie.
+Voor meer informatie, zie [ Varnish gezondheidscontroles ](https://varnish-cache.org/docs/7.4/users-guide/vcl-backends.html#health-checks) documentatie.
 
 ## Respijtmodus
 
 Met de modus Grace kan Varnish een object in cache boven de TTL-waarde houden. Varnish kan dan de verlopen (verouderd) inhoud dienen terwijl het een nieuwe versie haalt. Dit verbetert de stroom van verkeer en vermindert ladingstijden. Het wordt in de volgende situaties gebruikt:
 
-- Wanneer de achtergrond van de Handel gezond is maar een verzoek langer duurt dan normaal
-- Als de terugval van de Handel niet gezond is.
+- Als de Commerce-backend gezond is, maar een aanvraag langer duurt dan normaal
+- Als de Commerce backend niet gezond is.
 
-De `vcl_hit` subroutine definieert hoe Varnish reageert op een aanvraag voor objecten die in cache zijn geplaatst.
+De subroutine `vcl_hit` definieert hoe Varnish reageert op een aanvraag voor objecten die in de cache zijn geplaatst.
 
-### Wanneer de steun van de Handel gezond is
+### Als de Commerce-backend gezond is
 
-Wanneer uit de gezondheidscontroles blijkt dat de handelsachterstand gezond is, controleert Varnish of de tijd in de respijtperiode blijft. De standaardrespijtperiode is 300 seconden, maar een handelaar kan de waarde van Admin instellen zoals beschreven in [Handel configureren voor gebruik van Varnish](configure-varnish-commerce.md). Als de respijtperiode niet is verlopen, levert Varnish de schaalinhoud en vernieuwt asynchroon het object van de Commerce-server. Als de respijtperiode is verlopen, levert Varnish de schaalinhoud en wordt het object synchroon vernieuwd vanaf de achtergrond van de Handel.
+Wanneer uit de gezondheidscontroles blijkt dat de Commerce-backend gezond is, controleert Varnish of de tijd in de respijtperiode blijft. De standaardgraadperiode is 300 seconden, maar een handelaar kan de waarde van Admin plaatsen zoals die in [ wordt beschreven vormt Commerce om Varnish ](configure-varnish-commerce.md) te gebruiken. Als de respijtperiode niet is verlopen, levert Varnish de schaalinhoud en wordt het object asynchroon vernieuwd vanaf de Commerce-server. Als de respijtperiode is verlopen, wordt de verouderde inhoud door Varnish weergegeven en wordt het object synchroon vernieuwd vanaf de Commerce-achtergrond.
 
 De maximumhoeveelheid tijd dat Varnish een stapelvoorwerp dient is de som respijtperiode (300 seconden door gebrek) en de waarde van TTL (86400 seconden door gebrek).
 
-De standaardrespijtperiode wijzigen vanuit de `default.vcl` bestand, bewerkt u de volgende regel in de `vcl_hit` subroutine:
+Als u de standaardrespijtperiode wilt wijzigen vanuit het `default.vcl` -bestand, bewerkt u de volgende regel in de `vcl_hit` -subroutine:
 
 ```conf
 if (obj.ttl + 300s > 0s) {
 ```
 
-### Wanneer de steun van de Handel niet gezond is
+### Als de Commerce-backend niet gezond is
 
-Als de achtergrond van de Handel niet antwoordt, dient Varnish statische inhoud van geheim voorgeheugen drie dagen (of zoals bepaald in `beresp.grace`) plus de resterende TTL (die door gebrek één dag is), tenzij de caching inhoud manueel wordt gezuiverd.
+Als de Commerce-backend niet reageert, wordt door Varnish 3 dagen (of zoals gedefinieerd in `beresp.grace`) en de resterende TTL (die standaard één dag is) opgeslagen vanaf het cachegeheugen, tenzij de inhoud in de cache handmatig wordt gewist.
 
 ## Sint-modus
 
-In de modus Saint zijn ongezonde achtergronden uitgesloten voor een configureerbare hoeveelheid tijd. Als gevolg hiervan kunnen ongezonde backends geen verkeer dienen wanneer Varnish als taakverdelingsmechanisme wordt gebruikt. U kunt de modus Sint gebruiken met de modus Grijswaarden, zodat ongezonde back-endservers op een complexe manier kunnen worden afgehandeld. Als bijvoorbeeld een back-endserver ongezond is, kunnen pogingen opnieuw worden gerouteerd naar een andere server. Als alle andere servers zijn uitgevallen, dienen ze objecten in het cachegeheugen op te slaan. De back-end hosts en de time-outperiode voor de modus Afbeelding worden gedefinieerd in het dialoogvenster `default.vcl` bestand.
+In de modus Saint zijn ongezonde achtergronden uitgesloten voor een configureerbare hoeveelheid tijd. Als gevolg hiervan kunnen ongezonde backends geen verkeer dienen wanneer Varnish als taakverdelingsmechanisme wordt gebruikt. U kunt de modus Sint gebruiken met de modus Grijswaarden, zodat ongezonde back-endservers op een complexe manier kunnen worden afgehandeld. Als bijvoorbeeld een back-endserver ongezond is, kunnen pogingen opnieuw worden gerouteerd naar een andere server. Als alle andere servers zijn uitgevallen, dienen ze objecten in het cachegeheugen op te slaan. De back-end hosts en black-outperiodes in de modus Beveiliging worden gedefinieerd in het `default.vcl` -bestand.
 
-De wijze van Saint kan ook worden gebruikt wanneer de instanties van de Handel individueel offline worden genomen om onderhouds en verbeteringstaken uit te voeren zonder de beschikbaarheid van de plaats van de Handel te beïnvloeden.
+De modus Saint kan ook worden gebruikt wanneer Commerce-instanties afzonderlijk offline worden gebruikt voor het uitvoeren van onderhouds- en upgradetaken zonder dat dit van invloed is op de beschikbaarheid van de Commerce-site.
 
 ### Voorwaarden voor de modus Sint
 
-Eén computer aanwijzen als primaire installatie. Installeer op deze computer de belangrijkste instantie van Handel, mijnSQL-database en Varnish.
+Eén computer aanwijzen als primaire installatie. Installeer op deze computer de hoofdinstantie van Commerce, mySQL-database en Varnish.
 
-Op alle andere machines, moet de instantie van de Handel toegang hebben tot het primaire gegevensbestand mySQL van de machine. De secundaire machines moeten ook toegang hebben tot de bestanden van de primaire instantie van de Handel.
+Op alle andere computers moet de Commerce-instantie toegang hebben tot de mySQL-database van de primaire computer. De secundaire machines moeten ook toegang hebben tot de bestanden van het primaire Commerce-exemplaar.
 
-U kunt het versieren van statische bestanden ook op alle computers uitschakelen. Dit is toegankelijk via de beheerder onder **Winkels** > Instellingen > **Configuratie** > **Geavanceerd** > **Ontwikkelaar** > **Instellingen Statische bestanden** > **Statische bestanden ondertekenen** = **Nee**.
+U kunt het versieren van statische bestanden ook op alle computers uitschakelen. Dit kan van Admin onder **worden betreden Slaat** > Montages > **Configuratie** > **Geavanceerd** > **de Montages van de Ontwikkelaar** > **de Statische Montages van Dossiers** > **Onderteken Statische Dossiers** = **Nr**.
 
-Tot slot moeten alle instanties van de Handel in productiemodus zijn. Voordat Varnish begint, wist u de cache bij elke instantie. Ga in Beheer naar **Systeem** > Gereedschappen > **Cachebeheer** en klik op **Cache van Magento leegmaken**. U kunt ook de volgende opdracht uitvoeren om de cache te wissen:
+Tot slot moeten alle Commerce-instanties zich in de productiemodus bevinden. Voordat Varnish begint, wist u de cache bij elke instantie. In Admin, ga **van het 0} Systeem {> Hulpmiddelen >** het Beheer van het Geheime voorgeheugen **en klik** het Geheime voorgeheugen van het Magento van de Duw **.** U kunt ook de volgende opdracht uitvoeren om de cache te wissen:
 
 ```bash
 bin/magento cache:flush
@@ -85,11 +85,11 @@ bin/magento cache:flush
 
 ### Installatie
 
-Saint mode maakt geen deel uit van het grootste Varnish-pakket. Het is een apart versienummer `vmod` die moeten worden gedownload en geïnstalleerd. Dientengevolge moet u Varnish van bron opnieuw compileren, zoals die in [installatie-instructies](https://varnish-cache.org/docs/index.html) voor uw versie van Varnish.
+Saint mode maakt geen deel uit van het grootste Varnish-pakket. Het is een aparte versie `vmod` die moet worden gedownload en geïnstalleerd. Dientengevolge, moet u Varnish van bron opnieuw compileren, zoals die in de [ installatieinstructies ](https://varnish-cache.org/docs/index.html) voor uw versie van Varnish wordt beschreven.
 
 Nadat u opnieuw compileert, kunt u de Sint-modusmodule installeren. Voer in het algemeen de volgende stappen uit:
 
-1. De broncode ophalen uit [Varnish modules](https://github.com/varnish/varnish-modules). Kloont de Git-versie (hoofdversie) omdat de 0.9.x-versie een broncodecout bevat.
+1. Verkrijg de broncode van [ Varnish modules ](https://github.com/varnish/varnish-modules). Kloont de Git-versie (hoofdversie) omdat de 0.9.x-versie een broncodecout bevat.
 1. Bouw de broncode met autotools:
 
    ```bash
@@ -101,11 +101,11 @@ Nadat u opnieuw compileert, kunt u de Sint-modusmodule installeren. Voer in het 
    sudo make install
    ```
 
-Zie [Verzameling van de module Varnish](https://github.com/varnish/varnish-modules) voor informatie over de installatie van de module Saint Mode.
+Zie [ de moduleinzameling van de Varnish ](https://github.com/varnish/varnish-modules) voor informatie over het installeren van de Saint wijzemodule.
 
 ### Voorbeeld-VCL-bestand
 
-Het volgende codevoorbeeld toont de code die aan uw VCL- dossier moet worden toegevoegd om veiligheidswijze toe te laten. Plaats de `import` instructies en `backend` definities boven aan het bestand.
+Het volgende codevoorbeeld toont de code die aan uw VCL- dossier moet worden toegevoegd om veiligheidswijze toe te laten. Plaats de `import` -instructies en `backend` -definities boven in het bestand.
 
 ```cpp
 import saintmode;

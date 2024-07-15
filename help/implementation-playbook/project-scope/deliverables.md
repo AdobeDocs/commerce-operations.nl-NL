@@ -44,4 +44,4 @@ Een overzicht van de bestaande producten, prijzen en inventarisgegevens van een 
 
 ## Projectplan
 
-In een projectplan worden de taken en tijdlijnen op hoog niveau beschreven die aan het implementeringsinitiatief zijn gekoppeld, inclusief overlappende integraties en afhankelijkheden van derden. Het plan kan ook een matrix van verantwoordelijkheden bevatten, of [RACI](../planning/ownership.md), een grafiek waarin wordt aangegeven wie verantwoordelijk is, wie verantwoordelijk is, wie geraadpleegd is en wie geïnformeerd is.
+In een projectplan worden de taken en tijdlijnen op hoog niveau beschreven die aan het implementeringsinitiatief zijn gekoppeld, inclusief overlappende integraties en afhankelijkheden van derden. Het plan kan ook een verantwoordelijkheidsmatrijs, of [ RACI ](../planning/ownership.md) omvatten, grafiek die toont wie verantwoordelijk is, verantwoordelijk, geraadpleegd en geïnformeerd.

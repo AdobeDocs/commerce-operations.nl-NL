@@ -4,7 +4,7 @@ description: Volg deze eenvoudige workflow om e-commerce om te zetten, leidt tot
 exl-id: 1a94fdef-ef5c-4755-bd5f-d775dae24a8c
 source-git-commit: e76f101df47116f7b246f21f0fe0fa72769d2776
 workflow-type: tm+mt
-source-wordcount: '577'
+source-wordcount: '557'
 ht-degree: 0%
 
 ---
@@ -15,25 +15,25 @@ In de sector van de elektronische handel is iedereen die belangstelling toont vo
 
 In het volgende diagram ziet u een eenvoudige workflow die detailhandelaren kunnen gebruiken voor het genereren van leads:
 
-![Loodgeneratiefunctie](../../assets/playbooks/lead-generation-funnel.png)
+![ het diagram van het de generatietrechter van de Lood ](../../assets/playbooks/lead-generation-funnel.png)
 
 ## Aanbevolen procedures
 
 De beste praktijken voor het genereren van leads zijn:
 
-- **Unieke inhoud**—Detailhandelaars moeten hun onderzoek doen en uitzoeken wat klanten leuk vinden, wat ze willen en wat ze willen kopen. De inhoud moet de aandacht van de klant trekken, hen intriges, en een band tot stand brengen met hen. Inhoud is niet alleen beperkt tot video&#39;s en afbeeldingen, maar omvat ook sociale media.
+- **Unieke inhoud** - de detailhandelaars moeten hun onderzoek doen en te weten komen welke klanten houden, wat zij geinteresseerd in zijn, en wat zij willen kopen. De inhoud moet de aandacht van de klant trekken, hen intriges, en een band tot stand brengen met hen. Inhoud is niet alleen beperkt tot video&#39;s en afbeeldingen, maar omvat ook sociale media.
 
-- **Onlinegemeenschappen**—U kunt online communicatie hebben, zoals een Instagram-pagina of een Facebook-gemeenschap waar mensen revisies, vragen of problemen kunnen posten. Het team van de Dienst van de Klant kan actief op sociale media worden betrokken.
+- **Online gemeenschappen** - u kan online mededeling, zoals een pagina van Instagram of de gemeenschap van Facebook hebben waar de mensen revisies, vragen, of bekommeringen kunnen posten. Het team van de Dienst van de Klant kan actief op sociale media worden betrokken.
 
-- **Influencers**—Je kunt invloeden betalen om je merk te promoten. Influencers hebben een ventilatorbasis (een groep volgers) die naar hen luisteren, wat gunstig kan zijn voor uw merk. Je kunt officieel samenwerken of gratis producten naar de invloedssfeer sturen om ze te promoten.
+- **Influencers** - u kunt invloeden betalen om uw merk te bevorderen. Influencers hebben een ventilatorbasis (een groep volgers) die naar hen luisteren, wat gunstig kan zijn voor uw merk. Je kunt officieel samenwerken of gratis producten naar de invloedssfeer sturen om ze te promoten.
 
-- **Sociale media**—Het is tegenwoordig belangrijk dat er sociale media aanwezig zijn voor merken. Merken moeten ervoor zorgen dat ze hun aanwezigheid voelen door regelmatig te posten, inhoud te plaatsen naar verschillende klanten, ervoor te zorgen dat de inhoud correct is en altijd opnieuw te posten naar opmerkingen op originele artikelen.
+- **sociale media** - Het hebben van een sociale media aanwezigheid is belangrijk voor merken vandaag. Merken moeten ervoor zorgen dat ze hun aanwezigheid voelen door regelmatig te posten, inhoud te plaatsen naar verschillende klanten, ervoor te zorgen dat de inhoud correct is en altijd opnieuw te posten naar opmerkingen op originele artikelen.
 
-- **SEO** U moet een goede SEO op zijn plaats hebben omdat het rangschikken van SEO plaatsverkeer verhoogt en uw merk een betere kans geeft om worden opgemerkt.
+- **SEO** u moet goede SEO op zijn plaats hebben omdat het rangschikken van SEO plaatsverkeer verhoogt en uw merk een betere kans geeft die wordt opgemerkt.
 
-- **Betaalde campagnes**—U kunt zich richten op het plaatsen van betaalde campagnes, die nadruk op uw plaats brengen.
+- **Betaalde campagnes** - u kunt zich op het posten van betaalde campagnes concentreren, die nadruk op uw plaats brengt.
 
-- **Ongelukkige klanten**—Je moet contact opnemen met klanten die niet tevreden zijn.
+- **Ongelukkige klanten** - u zou uit aan klanten moeten bereiken die niet tevreden zijn.
 
 Hoewel de productie van lood niet gemakkelijk zou kunnen zijn, is het noodzakelijk als u uw merk op de markt wilt slagen en een concurrerend voordeel hebben.
 
@@ -41,14 +41,14 @@ Hoewel de productie van lood niet gemakkelijk zou kunnen zijn, is het noodzakeli
 
 Loodproductie verschilt tussen B2B- en B2C-bedrijven:
 
-- **Verkoopcyclus**—Loodproductie voor B2B-ondernemingen is veel langer dan voor B2C-ondernemingen omdat B2B-contracten voor lange termijn gelden in vergelijking met B2C-transacties. De prijzen, de tijd en de middelen die voor B2B-transacties worden toegewezen, zijn groter. De verkoopcycli van B2C zijn veel korter en impliceren minder tijd, geld, en middelen.
+- **de cyclus van de Verkoop** - Leiding generatie voor B2B ondernemingen is veel langer dan B2C ondernemingen omdat de contracten B2B voor lange termijnperiodes in vergelijking met B2C transacties zijn. De prijzen, de tijd en de middelen die voor B2B-transacties worden toegewezen, zijn groter. De verkoopcycli van B2C zijn veel korter en impliceren minder tijd, geld, en middelen.
 
-- **Inhoud**—B2B-klanten hebben doorgaans meer kennis over producten omdat zij meer productonderzoek doen, terwijl B2C-klanten doorgaans producten kopen op basis van de markttrendcontent.
+- **Inhoud** - B2B klanten hebben gewoonlijk meer kennis over producten omdat zij meer productonderzoek doen, terwijl de klanten B2C typisch kopen gebaseerd op de inhoud van de markttrend.
 
-- **Publiek**—B2C-ondernemingen bereiken een breed publiek, terwijl B2B-ondernemingen een specifiek publiek hebben
+- **publiek** - B2C de ondernemingen reiken uit aan een brede waaier van publiek terwijl de ondernemingen B2B specifiek publiek hebben
 
-- **Goal**—B2C-bedrijven trekken doorgaans klanten aan van een markt die zeer verzadigd is, terwijl B2B-bedrijven op basis van vertrouwen relaties met klanten opbouwen. Zowel B2B als B2C ondernemingen hebben het zelfde einddoel, namelijk het verhogen van ROI.
+- **- de ondernemingen van het doel** {B2C neigen om klanten van een markt aan te trekken die hoogst verzadigd is, terwijl de ondernemingen B2B relaties met cliënten op vertrouwen bouwen. Zowel B2B als B2C ondernemingen hebben het zelfde einddoel, namelijk het verhogen van ROI.
 
-- **Interactie**—B2C-klanten nemen afzonderlijk aankoopbeslissingen, terwijl meerdere belanghebbenden betrokken zijn bij het besluitvormingsproces voor B2B-aankopen.
+- **interactie** - B2C klanten maken koopbesluiten individueel, terwijl de veelvoudige belanghebbenden bij het besluitvormingsproces voor B2B aankopen betrokken zijn.
 
 Er is geen vastgestelde methode om lood te produceren, maar het is mogelijk om loodgeneratie te verhogen door de methodes te analyseren die het best aan de behoeften van de zaken aanpassen en helpen om de organisatie te vormen.

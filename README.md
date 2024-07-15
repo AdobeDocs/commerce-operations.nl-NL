@@ -9,19 +9,19 @@ ht-degree: 3%
 
 Wij verwelkomen de bijdragen van de gemeenschap en van Adobe werknemers van buiten de documentatieteams.
 
-## Adobe Open Source Code of Conduct
+## Adobe Open gedragscode van Source
 
 Dit project heeft de [Adobe-gedragscode voor open source](code-of-conduct.md) of de [.NET Foundation-gedragscode](https://dotnetfoundation.org/code-of-conduct) overgenomen. Zie het artikel [Bijdragen](contributing.md) voor meer informatie.
 
 ## Over uw bijdragen aan Adobe-inhoud
 
-Zie de [Handleiding Adobe Docs Contributor](https://experienceleague.adobe.com/docs/contributor/contributor-guide/introduction.html).
+Zie de [ Gids van de Medewerker van Docs van de Adobe ](https://experienceleague.adobe.com/docs/contributor/contributor-guide/introduction.html).
 
 Hoe u een bijdrage levert, hangt af van wie u bent en van het soort veranderingen dat u wilt bijdragen:
 
 ### Kleine wijzigingen
 
-Als u kleine updates wilt toevoegen, gaat u naar het artikel en klikt u op het feedbackgebied onder aan het artikel. Klik op **Gedetailleerde feedbackopties** en klik vervolgens op **Een bewerking voorstellen** om naar het markdown brondossier op GitHub te gaan. Gebruik GitHub UI om uw updates te maken. Zie het algemene gedeelte [Handleiding Adobe Docs-contributor](https://experienceleague.adobe.com/docs/contributor/contributor-guide/introduction.html) voor meer informatie .
+Als u minder belangrijke updates bijdraagt, bezoek het artikel en klik het terugkoppelen gebied dat bij de bodem van het artikel verschijnt, klik **Gedetailleerde terugkoppelt opties**, en klik dan **Voorstellen en** uitgeven om naar het prijsonderdrukkingsbrondossier op GitHub te gaan. Gebruik GitHub UI om uw updates te maken. Zie de algemene [ de bijdragegids van Docs van de Adobe ](https://experienceleague.adobe.com/docs/contributor/contributor-guide/introduction.html) voor meer informatie.
 
 Kleine correcties of verduidelijkingen die u ter documentatie en codevoorbeelden in dit antwoord aanbrengt, vallen onder de gebruiksvoorwaarden van de Adobe.
 
@@ -35,7 +35,7 @@ If you submit a pull request with significant changes to documentation and code 
 
 ### Belangrijkste veranderingen ten opzichte van Adobe werknemers
 
-Als u een technisch schrijver, programmamanager, of ontwikkelaar van het productteam voor een oplossing van Adobe Experience Cloud bent en het uw baan is om aan of auteur technische artikelen bij te dragen, zou u de privé bewaarplaats op moeten gebruiken `https://git.corp.adobe.com/AdobeDocs`.
+Als u een technisch schrijver, programmamanager, of ontwikkelaar van het productteam voor een oplossing van Adobe Experience Cloud bent en het uw baan is om aan of auteur technische artikelen bij te dragen, zou u de privé bewaarplaats bij `https://git.corp.adobe.com/AdobeDocs` moeten gebruiken.
 
 <!--Employees from other parts of the Adobe world should use the public repo for minor updates.-->
 
@@ -43,14 +43,14 @@ Als u een technisch schrijver, programmamanager, of ontwikkelaar van het product
 
 Communautaire contribuanten kunnen GitHub UI voor basishet uitgeven of vork gebruiken het repo om belangrijke bijdragen te leveren.
 
-Zie de [Handleiding Adobe Docs Contributor](https://experienceleague.adobe.com/docs/contributor/contributor-guide/introduction.html) voor meer informatie.
+Zie de [ Gids van de Medewerker van Docs van de Adobe ](https://experienceleague.adobe.com/docs/contributor/contributor-guide/introduction.html) voor details.
 
 ## Hoe te om prijsdaling te gebruiken om uw onderwerp te formatteren
 
 Alle artikelen in deze repository gebruiken GitHub gearomatiseerde prijsopgave. Als u niet vertrouwd bent met markering, zie:
 
-* [Grondbeginselen van markeringen](https://help.github.com/articles/getting-started-with-writing-and-formatting-on-github/)
-* [Afdrukbare opmaakmodel](https://guides.github.com/pdfs/markdown-cheatsheet-online.pdf)
+* [ Grondbeginselen van de Prijsverlaging ](https://help.github.com/articles/getting-started-with-writing-and-formatting-on-github/)
+* [ Afdrukbare prijsdaling ](https://guides.github.com/pdfs/markdown-cheatsheet-online.pdf)
 
 ## Sjablonen
 
@@ -61,36 +61,36 @@ Voor sommige onderwerpen, gebruiken wij gegevensdossiers en malplaatjes om gepub
 
 Voorbeelden van sjablooninhoud zijn onder andere:
 
-* [CLI-gereedschapsverwijzing](https://experienceleague.adobe.com/docs/commerce-operations/reference/commerce-on-premises.html)
-* [Beschikbaarstellingstabellen voor producten](https://experienceleague.adobe.com/docs/commerce-operations/release/product-availability.html)
-* [Tabellen met systeemvereisten](https://experienceleague.adobe.com/docs/commerce-operations/installation-guide/system-requirements.html)
+* [ CLI hulpmiddelverwijzing ](https://experienceleague.adobe.com/docs/commerce-operations/reference/commerce-on-premises.html)
+* [ de beschikbaarheidstabellen van het Product ](https://experienceleague.adobe.com/docs/commerce-operations/release/product-availability.html)
+* [ de lijsten van de systeemvereisten ](https://experienceleague.adobe.com/docs/commerce-operations/installation-guide/system-requirements.html)
 
 ### Sjablooninhoud genereren
 
 In het algemeen, moeten de meeste schrijvers slechts een versieversie aan de de productbeschikbaarheid en lijsten van de systeemvereisten toevoegen. Het onderhoud voor alle andere sjablooninhoud wordt automatisch of beheerd door een toegewezen teamlid. Deze instructies zijn bedoeld voor de meeste schrijvers.
 
->**OPMERKING:**
+>**NOTA:**
 >
 >* Voor het genereren van gesjabloonde inhoud moet u op de opdrachtregel in een terminal werken.
->* Ruby moet zijn geïnstalleerd om het renderscript uit te voeren. Zie [_jekyll/.ruby-version](_jekyll/.ruby-version) voor de vereiste versie.
+>* Ruby moet zijn geïnstalleerd om het renderscript uit te voeren. Zie [_jekyll/.ruby-version ](_jekyll/.ruby-version) voor de vereiste versie.
 
 Zie het volgende voor een beschrijving van de bestandsstructuur voor sjablooninhoud:
 
 * `_jekyll`—Bevat sjablonen voor onderwerpen en vereiste elementen
 * `_jekyll/_data`—Bevat de machineleesbare bestandsindelingen die worden gebruikt om sjablonen te renderen
 * `_jekyll/templated`—Bevat op HTML gebaseerde sjabloonbestanden die de taal voor vloeiende sjablonen gebruiken
-* `help/_includes/templated`—Bevat de gegenereerde uitvoer voor sjablooninhoud in `.md` bestandsindeling zodat deze kan worden gepubliceerd in onderwerpen over Experiencen League; het renderscript schrijft automatisch gegenereerde uitvoer naar deze map voor u
+* `help/_includes/templated`—Bevat de gegenereerde uitvoer voor sjablooninhoud in `.md` -bestandsindeling zodat deze kan worden gepubliceerd in Experiencen League-onderwerpen; het renderscript schrijft automatisch gegenereerde uitvoer naar deze map voor u
 
 Sjablooninhoud bijwerken:
 
-1. Open in de teksteditor een gegevensbestand in het dialoogvenster `/jekyll/_data` directory. Bijvoorbeeld:
+1. Open een gegevensbestand in de map `/jekyll/_data` in de teksteditor. Bijvoorbeeld:
 
-   * [Beschikbaarstellingstabellen voor producten](https://experienceleague.adobe.com/docs/commerce-operations/release/product-availability.html): `/jekyll/_data/product-availability.yml`
-   * [Tabellen met systeemvereisten](https://experienceleague.adobe.com/docs/commerce-operations/installation-guide/system-requirements.html): `/jekyll/_data/system-requirements.yml`
+   * [ de beschikbaarheidstabellen van het Product ](https://experienceleague.adobe.com/docs/commerce-operations/release/product-availability.html): `/jekyll/_data/product-availability.yml`
+   * [ Eisen van het Systeem lijsten ](https://experienceleague.adobe.com/docs/commerce-operations/installation-guide/system-requirements.html): `/jekyll/_data/system-requirements.yml`
 
 1. Gebruik de bestaande YAML-structuur om items te maken.
 
-   Als u bijvoorbeeld een versie van Adobe Commerce wilt toevoegen aan de tabellen voor productbeschikbaarheid, voegt u het volgende toe aan elk item in het dialoogvenster `extensions` en `services` van de `/jekyll/_data/product-availability.yml` bestand (wijzig zo nodig versienummers):
+   Als u bijvoorbeeld een versie van Adobe Commerce wilt toevoegen aan de tabellen voor productbeschikbaarheid, voegt u het volgende toe aan elke vermelding in de secties `extensions` en `services` van het bestand `/jekyll/_data/product-availability.yml` (wijzig zo nodig de versienummers):
 
    ```
    support:
@@ -98,27 +98,27 @@ Sjablooninhoud bijwerken:
         version: 4.5.6
    ```
 
-1. Ga naar de `_jekyll` directory.
+1. Navigeer naar de map `_jekyll` .
 
    ```
    cd _jekyll
    ```
 
-1. Genereer sjablooninhoud en schrijf de uitvoer naar de `help/_includes/templated` directory.
+1. Genereer sjablooninhoud en schrijf de uitvoer naar de map `help/_includes/templated` .
 
    ```
    rake render
    ```
 
-   >**OPMERKING:** U moet het script uitvoeren vanuit het dialoogvenster `_jekyll` directory. Als dit uw eerste keer is om het manuscript in werking te stellen, moet u de gebiedsdelen van Ruby eerst met installeren `bundle install` gebruiken.
+   >**NOTA:** u moet het manuscript van de `_jekyll` folder in werking stellen. Als dit de eerste keer is om het script uit te voeren, moet u Ruby-afhankelijkheden eerst installeren met de opdracht `bundle install` .
 
-1. Ga terug naar de `root` directory.
+1. Navigeer terug naar de map `root` .
 
    ```
    cd ..
    ```
 
-1. Controleren of de verwachte `help/_includes/templated` bestanden zijn gewijzigd.
+1. Controleer of de verwachte `help/_includes/templated` -bestanden zijn gewijzigd.
 
    ```
    git status
@@ -139,4 +139,4 @@ Sjablooninhoud bijwerken:
    git push
    ```
 
-Raadpleeg de documentatie bij Jekyll voor meer informatie over [Gegevensbestanden](https://jekyllrb.com/docs/datafiles), [Vloeibare filters](https://jekyllrb.com/docs/liquid/filters/)en andere functies.
+Zie de documentatie van Jekyll voor meer details over [ Dossiers van Gegevens ](https://jekyllrb.com/docs/datafiles), [ Vloeiende filters ](https://jekyllrb.com/docs/liquid/filters/), en andere eigenschappen.

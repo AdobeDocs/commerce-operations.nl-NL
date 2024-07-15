@@ -1,42 +1,42 @@
 ---
 title: Externe opslag configureren
-description: Leer hoe te om de Verre module van de Opslag voor de toepassing van de Handel op-gebouw te vormen.
+description: Leer hoe te om de module van de Verre Opslag voor de op-gebouwCommerce toepassing te vormen.
 feature: Configuration, Storage
 exl-id: 0428f889-46b0-44c9-8bd9-98c1be797011
 source-git-commit: 2a45fe77d5a6fac089ae2c55d0ad047064dd07b0
 workflow-type: tm+mt
-source-wordcount: '526'
+source-wordcount: '510'
 ht-degree: 0%
 
 ---
 
 # Externe opslag configureren
 
-De module Externe opslag biedt de optie om mediabestanden op te slaan en de import en export te plannen in een permanente, externe opslagcontainer met behulp van een opslagservice, zoals AWS S3. Standaard worden mediabestanden in de Adobe Commerce-toepassing opgeslagen in hetzelfde bestandssysteem dat de toepassing bevat. Dit is inefficiënt voor complexe configuraties met meerdere servers en kan leiden tot verminderde prestaties bij het delen van bronnen. Met de module Externe opslag kunt u mediabestanden opslaan in het dialoogvenster `pub/media` map en bestanden importeren/exporteren in de `var` van de externe objectopslag om te profiteren van het vergroten of verkleinen van afbeeldingen op de server.
+De module Externe opslag biedt de optie om mediabestanden op te slaan en de import en export te plannen in een permanente, externe opslagcontainer met behulp van een opslagservice, zoals AWS S3. Standaard worden mediabestanden in de Adobe Commerce-toepassing opgeslagen in hetzelfde bestandssysteem dat de toepassing bevat. Dit is inefficiënt voor complexe configuraties met meerdere servers en kan leiden tot verminderde prestaties bij het delen van bronnen. Met de module Externe opslag kunt u mediabestanden opslaan in de map `pub/media` en bestanden importeren/exporteren in de map `var` van de opslagmap voor externe objecten om te profiteren van het vergroten of verkleinen van afbeeldingen aan de serverzijde.
 
 >[!INFO]
 >
->De verre opslag is beschikbaar voor Handel versie 2.4.2 en later slechts. Zie de [2.4.2 Opmerkingen bij de release](https://devdocs.magento.com/guides/v2.4/release-notes/open-source-2-4-2.html).
+>Externe opslag is alleen beschikbaar voor Commerce versie 2.4.2 en hoger. Zie [ 2.4.2 versienota&#39;s ](https://devdocs.magento.com/guides/v2.4/release-notes/open-source-2-4-2.html).
 
 >[!INFO]
 >
->De externe opslagmodule heeft _beperkt_ ondersteuning voor Adobe Commerce op cloudinfrastructuur. Adobe kan de service van de externe opslagadapter niet volledig oplossen. Zie [Externe opslag configureren voor handel op Cloud-infrastructuur](cloud-support.md) voor begeleiding bij de implementatie van externe opslag voor cloudprojecten.
+>De Verre opslagmodule heeft _beperkte_ steun op Adobe Commerce op wolkeninfrastructuur. Adobe kan de service van de externe opslagadapter niet volledig oplossen. Zie [ verre opslag voor Commerce op de infrastructuur van de Wolk ](cloud-support.md) voor begeleiding die verre opslag voor wolkenprojecten uitvoeren.
 
-![schemaafbeelding](../../assets/configuration/remote-storage-schema.png)
+![ schemabeeld ](../../assets/configuration/remote-storage-schema.png)
 
 ## Opties voor externe opslag
 
-U kunt externe opslag configureren met de `remote-storage` met de [`setup` CLI, opdracht](../../installation/tutorials/deployment.md). De `remote-storage` gebruikt u de volgende syntaxis:
+U kunt verre opslag vormen gebruikend de `remote-storage` optie met het [`setup` bevel CLI ](../../installation/tutorials/deployment.md). Voor de optie `remote-storage` wordt de volgende syntaxis gebruikt:
 
 ```text
 --remote-storage-<parameter-name>="<parameter-value>"
 ```
 
-De `parameter-name` verwijst naar de specifieke naam van de parameter voor externe opslag. De volgende lijst maakt een lijst van de parameters beschikbaar voor het vormen van verre opslag:
+`parameter-name` verwijst naar de specifieke naam van de parameter voor externe opslag. De volgende lijst maakt een lijst van de parameters beschikbaar voor het vormen van verre opslag:
 
 | Opdrachtregelparameter | Parameternaam | Beschrijving | Standaardwaarde |
 |--- |--- |--- |--- |
-| `remote-storage-driver` | chauffeur | Naam adapter<br>Mogelijke waarden:<br>**file**: Schakelt externe opslag uit en gebruikt het lokale bestandssysteem <br>**aws-s3**: Gebruik de [Amazon Simple Storage Service (Amazon S3)](remote-storage-aws-s3.md) | none |
+| `remote-storage-driver` | chauffeur | De naam van de adapter <br> Mogelijke waarden:<br>**dossier**: Maakt verre opslag onbruikbaar en gebruikt het lokale filesystem <br>**aws-s3**: Gebruik de [ Eenvoudige Dienst van de Opslag van Amazon (Amazon S3) ](remote-storage-aws-s3.md) | none |
 | `remote-storage-bucket` | emmer | Objectopslag of containernaam | none |
 | `remote-storage-prefix` | prefix | Optioneel voorvoegsel (locatie binnen opslag van object) | leeg |
 | `remote-storage-region` | regio | Naam regio | none |
@@ -45,21 +45,21 @@ De `parameter-name` verwijst naar de specifieke naam van de parameter voor exter
 
 ### Opslagadapters
 
-De standaardopslaglocatie bevindt zich in het lokale bestandssysteem. A _opslagadapter_ kunt u verbinding maken met een opslagservice en uw bestanden overal opslaan. [!DNL Commerce] ondersteunt het configureren van de volgende opslagservices:
+De standaardopslaglocatie bevindt zich in het lokale bestandssysteem. A _opslagadapter_ laat u toe om met een opslagdienst te verbinden en uw dossiers op te slaan overal. [!DNL Commerce] ondersteunt het configureren van de volgende opslagservices:
 
 - [Amazon Simple Storage Service (Amazon S3)](remote-storage-aws-s3.md)
 
 ## Externe opslag inschakelen
 
-U kunt externe opslag installeren tijdens een Adobe Commerce-installatie of externe opslag toevoegen aan een bestaande Commerce-instantie. In de volgende voorbeelden wordt elke methode met een set `remote-storage` parameters met handel `setup` CLI-opdrachten. U moet de opslag minimaal leveren `driver`, `bucket`, en `region`.
+U kunt externe opslag installeren tijdens een Adobe Commerce-installatie of externe opslag toevoegen aan een bestaande Commerce-instantie. In de volgende voorbeelden wordt elke methode met een set `remote-storage` -parameters met Commerce `setup` CLI-opdrachten getoond. U moet minimaal de opslagruimte `driver`, `bucket` en `region` opgeven.
 
-- Voorbeeld: Koophandel installeren met externe opslag
+- Voorbeeld: Commerce installeren met externe opslag
 
   ```bash
   bin/magento setup:install --remote-storage-driver="aws-s3" --remote-storage-bucket="myBucket" --remote-storage-region="us-east-1"
   ```
 
-- Voorbeeld: externe opslag inschakelen bij bestaande handel
+- Voorbeeld: externe opslag inschakelen op bestaande Commerce
 
   ```bash
   bin/magento setup:config:set --remote-storage-driver="aws-s3" --remote-storage-bucket="myBucket" --remote-storage-region="us-east-1"
@@ -67,7 +67,7 @@ U kunt externe opslag installeren tijdens een Adobe Commerce-installatie of exte
 
 >[!TIP]
 >
->Voor Adobe Commerce over cloud-infrastructuur raadpleegt u [Externe opslag configureren voor handel op Cloud-infrastructuur](cloud-support.md).
+>Voor Adobe Commerce op wolkeninfrastructuur, zie [ verre opslag voor Commerce op de infrastructuur van de Wolk vormen ](cloud-support.md).
 
 ## Beperkingen
 
@@ -77,13 +77,13 @@ U kunt niet tegelijkertijd zowel externe opslag als databaseopslag inschakelen. 
 bin/magento config:set system/media_storage_configuration/media_database 0
 ```
 
-Het inschakelen van externe opslag kan van invloed zijn op uw bestaande ontwikkelervaring. Bepaalde PHP-bestandsfuncties werken bijvoorbeeld mogelijk niet naar behoren. Het gebruik van het Kader van de Handel voor dossierverrichtingen moet worden afgedwongen.
+Het inschakelen van externe opslag kan van invloed zijn op uw bestaande ontwikkelervaring. Bepaalde PHP-bestandsfuncties werken bijvoorbeeld mogelijk niet naar behoren. Het gebruik van Commerce Framework voor bestandsbewerkingen moet worden afgedwongen.
 
-De lijst met verboden native PHP functies is beschikbaar in [magento-coding-standard repository][code-standard].
+De lijst van verboden PHP inheemse functies is beschikbaar in [ magento-coding-standard bewaarplaats ][code-standard].
 
 ## Inhoud migreren
 
-Nadat u externe opslag voor een specifieke adapter hebt ingeschakeld, kunt u de CLI gebruiken om bestaande _media_ naar de externe opslag.
+Nadat u verre opslag voor een specifieke adapter toelaat, kunt u CLI gebruiken om bestaande _media_ dossiers aan de verre opslag te migreren.
 
 ```bash
 ./magento2ce/bin/magento remote-storage:sync
@@ -91,7 +91,7 @@ Nadat u externe opslag voor een specifieke adapter hebt ingeschakeld, kunt u de 
 
 >[!INFO]
 >
->Met de opdracht Synchroniseren worden alleen bestanden gemigreerd in het dialoogvenster `pub/media` directory, _niet_ de import-/exportbestanden in het dialoogvenster `var` directory. Zie [Geplande import/export](https://experienceleague.adobe.com/docs/commerce-admin/systems/data-transfer/data-scheduled-import-export.html) in de _Handboek Handel 2.4_.
+>Het synchronisatiebevel migreert slechts dossiers in de `pub/media` folder, _niet_ de invoer/de uitvoerdossiers in de `var` folder. Zie [ Geplande Invoer/de Uitvoer ](https://experienceleague.adobe.com/docs/commerce-admin/systems/data-transfer/data-scheduled-import-export.html) in _Commerce 2.4 Gids van de Gebruiker_.
 
 <!-- link definitions -->
 

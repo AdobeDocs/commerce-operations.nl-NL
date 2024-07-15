@@ -1,6 +1,6 @@
 ---
 title: De cache beheren
-description: Beheer geheim voorgeheugentypes en bekijk geheim voorgeheugenstatus van de bevellijn gebruikend Commerce CLI
+description: Cachetypen beheren en de cachestatus weergeven via de opdrachtregel met Commerce CLI
 exl-id: bbd76c00-727b-412e-a8e5-1e013a83a29a
 source-git-commit: ddf988826c29b4ebf054a4d4fb5f4c285662ef4e
 workflow-type: tm+mt
@@ -15,17 +15,17 @@ ht-degree: 0%
 
 ## Cachetypen
 
-U kunt het Adobe Commerce-cachebeheersysteem gebruiken om de prestaties van uw site te verbeteren. Dit onderwerp verklaart hoe de beheerders of de ontwikkelaars van het Systeem met toegang tot de de toepassingsserver van de Handel geheime voorgeheugens van de bevellijn kunnen beheren.
+U kunt het Adobe Commerce-cachebeheersysteem gebruiken om de prestaties van uw site te verbeteren. Dit onderwerp verklaart hoe de beheerders of de ontwikkelaars van het Systeem met toegang tot de de toepassingsserver van Commerce geheime voorgeheugens van de bevellijn kunnen beheren.
 
 >[!NOTE]
 >
 >
->De beheerders van de handelplaats kunnen het geheime voorgeheugen van Admin beheren gebruikend het hulpmiddel van het Systeem van het Beheer van het Geheime voorgeheugen. Zie [Cachebeheer](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/tools/cache-management) in de _Admin Systems Guide_.
+>De beheerders van de handelplaats kunnen het geheime voorgeheugen van Admin beheren gebruikend het hulpmiddel van het Systeem van het Beheer van het Geheime voorgeheugen. Zie [ Beheer van het Geheime voorgeheugen ](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/tools/cache-management) in de _Gids van Systemen Admin_.
 
 
 ## De status van de cache weergeven
 
-Van de bevellijn van de de toepassingsserver van de Handel, bekijk het statuut van het geheime voorgeheugen gebruikend `cache:status` Commerce CLI command.
+Bekijk de status van de cache via de opdrachtregel van de Commerce-toepassingsserver via de `cache:status` Commerce CLI-opdracht.
 
 ```bash
    bin/magento cache:status
@@ -59,7 +59,7 @@ Current status:
 
 >[!TIP]
 >
->Voor een gedetailleerde beschrijving van de standaardcachetypen die door Adobe Commerce worden ondersteund, raadpleegt u [Cursussen](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/tools/cache-management#caches) in de _Admin Systems Guide_.
+>Voor een gedetailleerde beschrijving van de standaardgeheim voorgeheugentypes die door Adobe Commerce worden gesteund, zie ](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/tools/cache-management#caches) Caches [ in de _Gids van Systemen Admin_.
 
 
 ## Cachetypen in- of uitschakelen
@@ -68,9 +68,9 @@ Met deze opdracht kunt u alle cachetypen of alleen de door u opgegeven typen in-
 
 >[!INFO]
 >
->Beginnend in versie 2.2, kunt u geheim voorgeheugentypes slechts toelaten of onbruikbaar maken gebruikend de bevellijn terwijl het runnen van Handel op productiemodus. Als het runnen van Handel op ontwikkelaarwijze, kunt u geheim voorgeheugentypes toelaten of onbruikbaar maken gebruikend de bevellijn of manueel. Voordat u dit doet, moet u handmatig `<magento_root>/app/etc/env.php` schriftelijk door de [eigenaar van bestandssysteem](../../installation/prerequisites/file-system/overview.md).
+>Vanaf versie 2.2 kunt u castypen alleen in- of uitschakelen via de opdrachtregel terwijl Commerce in de productiemodus wordt uitgevoerd. Als u Commerce uitvoert in de ontwikkelaarsmodus, kunt u cachetypen in- of uitschakelen via de opdrachtregel of handmatig. Alvorens dit te doen, moet u `<magento_root>/app/etc/env.php` manueel schrijfbaar maken door de [ eigenaar van het dossiersysteem ](../../installation/prerequisites/file-system/overview.md).
 
-U kunt schoonmaken (ook wel _flush_ of _vernieuwen_) gebruikt via de opdrachtregel of de beheerder.
+U kunt (ook die als _wordt bedoeld flush_ of _verfrissen_) geheim voorgeheugentypes gebruikend of de bevellijn of Admin.
 
 Opdrachtopties:
 
@@ -82,7 +82,7 @@ bin/magento cache:enable [type] ... [type]
 bin/magento cache:disable [type] ... [type]
 ```
 
-Indien weggelaten `[type]` schakelt alle cachetypen tegelijkertijd in of uit. De `type` Deze optie is een lijst met cachetypen die door spaties worden gescheiden.
+Wanneer u `[type]` weglaat, worden alle cavetypen tegelijkertijd in- of uitgeschakeld. De optie `type` is een lijst met cachetypen die door spaties worden gescheiden.
 
 <!-- `--bootstrap=` is a URL-encoded associative array of Commerce [application bootstrap parameters](../bootstrap/set-parameters.md#bootstrap-parameters) and values. -->
 
@@ -112,17 +112,17 @@ Monsterresultaat:
 
 >[!INFO]
 >
->Vanaf versie 2.3.4 plaatst de Handel alle systeemEAV attributen in het voorgeheugen aangezien zij worden teruggewonnen. Op deze manier verbetert het in cache plaatsen van EAV-kenmerken de prestaties, omdat hierdoor minder aanvragen voor invoegen/selecteren naar de DB worden ingediend. Nochtans, verhoogt het ook de grootte van het geheim voorgeheugennetwerk. Ontwikkelaars kunnen aangepaste EAV-kenmerken in cache plaatsen door het `bin/magento config:set dev/caching/cache_user_defined_attributes 1` gebruiken. Dit kan ook worden gedaan bij de beheerder [Modus Ontwikkelaar](../bootstrap/application-modes.md) door instellen **Winkels** > Instellingen **Configuratie** > **Geavanceerd** > **Ontwikkelaar** > **Instellingen voor caching** > **Door gebruiker gedefinieerde kenmerken in cache opslaan** tot **Ja**.
+>Vanaf versie 2.3.4 worden alle EAV-kenmerken van het systeem door Commerce in cache opgeslagen wanneer deze worden opgehaald. Op deze manier verbetert het in cache plaatsen van EAV-kenmerken de prestaties, omdat hierdoor minder aanvragen voor invoegen/selecteren naar de DB worden ingediend. Nochtans, verhoogt het ook de grootte van het geheim voorgeheugennetwerk. Ontwikkelaars kunnen aangepaste EAV-kenmerken in cache plaatsen door de opdracht `bin/magento config:set dev/caching/cache_user_defined_attributes 1` uit te voeren. Dit kan ook van Admin worden gedaan terwijl op [ wijze van de Ontwikkelaar ](../bootstrap/application-modes.md) door **Opslag** te plaatsen > de Configuratie van Montages **** > **Geavanceerd** > **Ontwikkelaar** > **Caching Montages** > **Gedefinieerde Gebruiker van het Geheime voorgeheugen Attributen** aan **ja**.
 
 ## Cachetypen opschonen en leegmaken
 
 >[!NOTE]
 >
->Cache van meerdere pagina&#39;s kan tegelijkertijd en automatisch ongeldig worden gemaakt **_zonder_** deze entiteiten bewerken. Bijvoorbeeld wanneer een product in de catalogus is toegewezen aan een categorie of wanneer er een product in de catalogus is [!UICONTROL related product rule] wordt gewijzigd.
+>Het veelvoudige paginacache kan gelijktijdig en automatisch worden ongeldig gemaakt **_zonder_** deze entiteiten die uitgeven. Bijvoorbeeld wanneer een product in de catalogus wordt toegewezen aan een categorie of wanneer [!UICONTROL related product rule] wordt gewijzigd.
 
-Als u verouderde items uit de cache wilt verwijderen, kunt u _schoon_ of _flush_ cachetypen:
+Om verouderde punten van het geheime voorgeheugen te zuiveren, kunt u __ schoonmaken of __ geheime voorgeheugentypes leegmaken:
 
-- Het schoonmaken van een geheim voorgeheugentype schrapt alle punten van toegelaten het geheim voorgeheugentypes van de Handel slechts. Met andere woorden, deze optie beïnvloedt andere processen of toepassingen niet omdat het slechts het geheime voorgeheugen wist dat de Handel gebruikt.
+- Als u een cachetype wist, worden alleen alle items van de ingeschakelde Commerce-cachetypen verwijderd. Met andere woorden, deze optie heeft geen invloed op andere processen of toepassingen omdat alleen de cache wordt gewist die door Commerce wordt gebruikt.
 
   Uitgeschakelde cachetypen worden niet schoongemaakt.
 
@@ -144,7 +144,7 @@ Opdrachtgebruik:
    bin/magento cache:flush [type] ... [type]
 ```
 
-Wanneer `[type]` is een door spaties gescheiden lijst met cachetypen. Weglaten `[type]` Hiermee worden alle cachetypen tegelijk gewist of verwijderd. Als u bijvoorbeeld alle typen cache wilt leegmaken, voert u
+Waar `[type]` een door spaties gescheiden lijst met cachemypen is. Als u `[type]` weglaat, worden alle cavetypen tegelijkertijd gewist of leeggemaakt. Als u bijvoorbeeld alle typen cache wilt leegmaken, voert u
 
 ```bash
    bin/magento cache:flush
@@ -173,4 +173,4 @@ Monsterresultaat:
 
 >[!TIP]
 >
->U kunt de cachetypen ook opschonen en leegmaken in de beheerfunctie. Ga naar **Systeem** > **Gereedschappen** > **Cachebeheer**. **Opslag in één cache** is gelijk aan `bin/magento cache:flush`. **Cache van Magento leegmaken** is gelijk aan `bin/magento cache:clean`.
+>U kunt de cachetypen ook opschonen en leegmaken in de beheerfunctie. Ga naar **Systeem** > **Hulpmiddelen** > **het Beheer van het Geheime voorgeheugen**. **de Opslag van het Geheime voorgeheugen van de Duw** is gelijkwaardig aan `bin/magento cache:flush`. **het Geheime voorgeheugen van het Magento van de Duw** is gelijkwaardig aan `bin/magento cache:clean`.

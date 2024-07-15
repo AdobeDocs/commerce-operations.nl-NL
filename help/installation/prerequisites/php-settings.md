@@ -17,9 +17,9 @@ In dit onderwerp wordt besproken hoe u vereiste PHP-opties kunt instellen.
 
 >[!NOTE]
 >
->Voor de nieuwste versie van Adobe Commerce is minimaal PHP 8.1 vereist. Zie [systeemvereisten](../system-requirements.md) voor alle ondersteunde versies van PHP.
+>Voor de nieuwste versie van Adobe Commerce is minimaal PHP 8.1 vereist. Zie [ systeemvereisten ](../system-requirements.md) voor alle gesteunde versies van PHP.
 
-Voor hulp bij de configuratie van de cloud raadpleegt u [PHP-instellingen](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure/app/php-settings.html) in de _Handel in Cloud-infrastructuur_ hulplijn.
+Voor de configuratiebegeleiding van de Wolk, zie [ PHP montages ](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure/app/php-settings.html) in _Commerce op de gids van de Infrastructuur van de Wolk_.
 
 ## PHP Process Control
 
@@ -65,7 +65,7 @@ Geïnstalleerde extensies controleren:
 
 >[!WARNING]
 >
->Als u PHP 7.4.20 gebruikt, set `pcre.jit=0` in uw `php.ini` bestand. Dit komt rond een PHP [buigen](https://bugs.php.net/bug.php?id=81101) voorkomt dat CSS wordt geladen.
+>Als u PHP 7.4.20 gebruikt, stelt u `pcre.jit=0` in in uw `php.ini` -bestand. Dit krijgt rond een PHP [ insect ](https://bugs.php.net/bug.php?id=81101) dat CSS verhindert te laden.
 
 - Stel de tijdzone van het systeem in voor PHP. Anders werken fouten zoals de volgende weergave tijdens de installatie en bewerkingen met betrekking tot tijd zoals cron mogelijk niet:
 
@@ -77,22 +77,22 @@ PHP Warning:  date(): It is not safe to rely on the system's timezone settings. 
 
   Adobe beveelt het volgende aan:
 
-   - Compileren van code of het inzetten van statische activa, `1G`
+   - Code compileren of statische elementen implementeren, `1G`
    - Foutopsporing, `2G`
-   - Testen; `~3-4G`
+   - Testen, `~3-4G`
 
-- De waarden voor PHP verhogen `realpath_cache_size` en `realpath_cache_ttl` aan aanbevolen instellingen:
+- Verhoog de waarden voor PHP `realpath_cache_size` en `realpath_cache_ttl` tot de aanbevolen instellingen:
 
   ```conf
   realpath_cache_size=10M
   realpath_cache_ttl=7200
   ```
 
-  Met deze instellingen kunnen PHP-processen paden naar bestanden in cache plaatsen in plaats van ze te bekijken bij het laden van de pagina. Zie [Prestaties afstemmen](https://www.php.net/manual/en/ini.core.php) in de PHP documentatie.
+  Met deze instellingen kunnen PHP-processen paden naar bestanden in cache plaatsen in plaats van ze te bekijken bij het laden van de pagina. Zie [ Prestaties die ](https://www.php.net/manual/en/ini.core.php) in de PHP documentatie stempelen.
 
-- Inschakelen [`opcache.save_comments`](https://www.php.net/manual/en/opcache.configuration.php#ini.opcache.save-comments), die vereist is voor Adobe Commerce 2.1 en hoger.
+- Schakel [`opcache.save_comments` ](https://www.php.net/manual/en/opcache.configuration.php#ini.opcache.save-comments) in. Dit is vereist voor Adobe Commerce 2.1 en hoger.
 
-  Adobe beveelt aan de [PHP OPcache](https://www.php.net/manual/en/book.opcache.php) om prestatieredenen. De OPcache is in veel PHP distributies ingeschakeld.
+  De Adobe adviseert toelatend [ PHP OPcache ](https://www.php.net/manual/en/book.opcache.php) voor prestatiesredenen. De OPcache is in veel PHP distributies ingeschakeld.
 
   Adobe Commerce 2.1 en hoger gebruiken PHP-codeopmerkingen voor het genereren van code.
 
@@ -104,11 +104,11 @@ PHP Warning:  date(): It is not safe to rely on the system's timezone settings. 
 
 In deze sectie wordt beschreven hoe u de configuratiebestanden vindt die nodig zijn om de vereiste instellingen bij te werken.
 
-### Zoeken `php.ini` configuratiebestand
+### Configuratiebestand `php.ini` zoeken
 
-Als u de webserverconfiguratie wilt zoeken, voert u een [`phpinfo.php` file](optional-software.md#create-phpinfophp) in uw webbrowser en zoek naar `Loaded Configuration File` als volgt:
+Als u de webserverconfiguratie wilt zoeken, voert u een [`phpinfo.php` bestand ](optional-software.md#create-phpinfophp) in uw webbrowser uit en zoekt u de `Loaded Configuration File` als volgt:
 
-![PHP-infopagina](../../assets/installation/config_phpini-webserver.png)
+![ PHP- infopagina ](../../assets/installation/config_phpini-webserver.png)
 
 Als u de PHP opdrachtregelconfiguratie wilt zoeken, typt u
 
@@ -118,19 +118,19 @@ php --ini | grep "Loaded Configuration File"
 
 >[!NOTE]
 >
->Als u slechts één `php.ini` bestand, wijzigt u dat bestand. Als u twee `php.ini` bestanden, wijzigen *beide* bestanden. Als u dit niet doet, kunnen er onvoorspelbare prestaties optreden.
+>Als u slechts één `php.ini` -bestand hebt, wijzigt u dat bestand. Als u twee `php.ini` dossiers hebt, verander *allebei* dossiers. Als u dit niet doet, kunnen er onvoorspelbare prestaties optreden.
 
 ### Configuratie-instellingen voor OPcache zoeken
 
-PHP OPcache-instellingen bevinden zich doorgaans ook in `php.ini` of `opcache.ini`. De locatie kan afhankelijk zijn van uw besturingssysteem en PHP-versie. Het OPcache-configuratiebestand kan een `opcache` sectie of instellingen zoals `opcache.enable`.
+PHP OPcache-instellingen bevinden zich doorgaans in `php.ini` of `opcache.ini` . De locatie kan afhankelijk zijn van uw besturingssysteem en PHP-versie. Het OPcache-configuratiebestand heeft mogelijk een `opcache` -sectie of instellingen, zoals `opcache.enable` .
 
 Gebruik de volgende richtlijnen om het te vinden:
 
 - Apache-webserver:
 
-  Voor Ubuntu met Apache bevinden de OPcache-instellingen zich doorgaans in de `php.ini` bestand.
+  Voor Ubuntu met Apache bevinden de OPcache-instellingen zich doorgaans in het `php.ini` -bestand.
 
-  Voor CentOS met Apache of Nginx bevinden de OPcache-instellingen zich doorgaans in `/etc/php.d/opcache.ini`
+  Voor CentOS met Apache of nginx bevinden de instellingen voor OPcache zich doorgaans in `/etc/php.d/opcache.ini`
 
   Als niet, gebruik het volgende bevel om van het de plaats te bepalen:
 
@@ -138,16 +138,16 @@ Gebruik de volgende richtlijnen om het te vinden:
   sudo find / -name 'opcache.ini'
   ```
 
-- Nginx-webserver met PHP-FPM: `/etc/php/8.1/fpm/php.ini`
+- nginx-webserver met PHP-FPM: `/etc/php/8.1/fpm/php.ini`
 
-Als u meer dan één `opcache.ini`en wijzigt u ze allemaal.
+Als u meer dan één `opcache.ini` hebt, wijzigt u ze allemaal.
 
 ## PHP-opties instellen
 
 PHP-opties instellen:
 
-1. Een `php.ini` in een teksteditor.
-1. Zoek de tijdzone van uw server in de beschikbare [tijdzone-instellingen](https://www.php.net/manual/en/timezones.php)
+1. Open een `php.ini` in een teksteditor.
+1. Bepaal de plaats van de tijdzone van uw server in de beschikbare [ montages van de tijdzone ](https://www.php.net/manual/en/timezones.php)
 1. Zoek de volgende instelling en verwijder indien nodig de commentaarmarkering:
 
    ```conf
@@ -156,7 +156,7 @@ PHP-opties instellen:
 
 1. Voeg de tijdzone-instelling toe die u in stap 2 hebt gevonden.
 
-1. De waarde wijzigen van `memory_limit` op een van de aan het begin van deze sectie aanbevolen waarden.
+1. Wijzig de waarde van `memory_limit` in een van de waarden die aan het begin van deze sectie worden aanbevolen.
 
    Bijvoorbeeld:
 
@@ -164,7 +164,7 @@ PHP-opties instellen:
    memory_limit=2G
    ```
 
-1. Voeg of werk de `realpath_cache` configuratie die overeenkomt met de volgende waarden:
+1. Voeg de configuratie van `realpath_cache` toe of werk deze bij zodat deze overeenkomt met de volgende waarden:
 
    ```conf
    ;
@@ -180,20 +180,20 @@ PHP-opties instellen:
 
 1. Sla de wijzigingen op en sluit de teksteditor af.
 
-1. De andere openen `php.ini` (als ze anders zijn) en breng dezelfde wijzigingen aan.
+1. Open de andere `php.ini` (als deze verschillend zijn) en breng dezelfde wijzigingen aan.
 
 ## Opties voor OPcache instellen
 
-In te stellen `opcache.ini` opties:
+U stelt `opcache.ini` -opties als volgt in:
 
 1. Open het OPcache-configuratiebestand in een teksteditor:
 
    - `opcache.ini` (CentOS)
    - `php.ini` (Ubuntu)
-   - `/etc/php/8.1/fpm/php.ini` (nginx-webserver (CentOS of Ubuntu)
+   - `/etc/php/8.1/fpm/php.ini` (nginx-webserver (CentOS of Ubuntu))
 
-1. Zoeken `opcache.save_comments` en verwijder indien nodig de opmerkingen.
-1. Controleer of de waarde is ingesteld op `1`.
+1. Zoek `opcache.save_comments` en verwijder indien nodig de commentaarmarkering.
+1. Controleer of de waarde is ingesteld op `1` .
 1. Sla de wijzigingen op en sluit de teksteditor af.
 1. Start de webserver opnieuw:
 
@@ -205,8 +205,8 @@ In te stellen `opcache.ini` opties:
 
 Raadpleeg de volgende Adobe Commerce Support-artikelen voor hulp bij het oplossen van problemen met PHP:
 
-- [PHP-versiefout of 404-fout bij toegang tot Adobe Commerce in een browser](https://support.magento.com/hc/en-us/articles/360033117152-PHP-version-error-or-404-error-when-accessing-Magento-in-browser)
-- [Fouten in PHP-instellingen](https://support.magento.com/hc/en-us/articles/360034599631-PHP-settings-errors)
-- [PHP-coderingsextensie is niet correct geïnstalleerd](https://support.magento.com/hc/en-us/articles/360034280132-PHP-mcrypt-extension-not-installed-properly-)
-- [Problemen met gereedheid voor PHP-versie](https://support.magento.com/hc/en-us/articles/360033546411)
-- [Veelvoorkomende fatale fouten en oplossingen in PHP](https://support.magento.com/hc/en-us/articles/360030568432)
+- [ PHP versiefout of fout 404 wanneer het toegang tot van Adobe Commerce in browser ](https://support.magento.com/hc/en-us/articles/360033117152-PHP-version-error-or-404-error-when-accessing-Magento-in-browser)
+- [ PHP montagesfouten ](https://support.magento.com/hc/en-us/articles/360034599631-PHP-settings-errors)
+- [ PHP crypt uitbreiding niet behoorlijk geïnstalleerd ](https://support.magento.com/hc/en-us/articles/360034280132-PHP-mcrypt-extension-not-installed-properly-)
+- [ PHP de kwesties van de de versiescontrole ](https://support.magento.com/hc/en-us/articles/360033546411)
+- [ Gemeenschappelijke PHP Onherstelbare Fouten en oplossingen ](https://support.magento.com/hc/en-us/articles/360030568432)

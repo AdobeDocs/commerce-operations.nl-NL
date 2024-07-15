@@ -13,17 +13,17 @@ ht-degree: 1%
 
 Voordat u Adobe Commerce installeert, moet u het volgende doen:
 
-* Stel een of meer hosts in die voldoen aan de [systeemvereisten](../system-requirements.md).
-* Als u meerdere webknooppunten instelt met taakverdeling, stelt u dat deel van uw systeem in en test u dit _voor_ installeert u de toepassing.
+* Opstelling één of meerdere gastheren die aan de [ systeemvereisten ](../system-requirements.md) voldoen.
+* Als u opstelling meer dan één Webknoop met lading het in evenwicht brengen, opstelling en test dat deel van uw systeem _alvorens_ u de toepassing installeert.
 * Zorg ervoor dat u op verschillende punten tijdens de installatie een back-up van het gehele systeem kunt maken, zodat u het systeem kunt terugdraaien als er problemen zijn.
 
 >[!NOTE]
 >
->We gaan ervan uit dat u de Adobe Commerce in een **ontwikkelomgeving**, dat u toegang hebt tot de computer voor de basisgebruiker, **en** dat de machine niet zeer veilig hoeft te zijn. Als u opstelling een veiliger machine bent, adviseren wij sterk u een netwerkbeheerder voor extra hulp raadplegen.
+>Wij veronderstellen u de Adobe Commerce in a **ontwikkelomgeving** installeert, dat u de toegang van de wortelgebruiker tot de machine hebt, **en** dat de machine niet hoogst veilig moet zijn. Als u opstelling een veiliger machine bent, adviseren wij sterk u een netwerkbeheerder voor extra hulp raadplegen.
 
-We raden u ten zeerste aan uw besturingssysteemsoftware bij te werken en bij te werken. Deze verbeteringen kunnen veiligheid en softwaremoeilijke situaties verstrekken die toekomstige problemen zouden kunnen verhinderen. Weet u niet wat dit betekent? Bekijk onze [overzichtspagina voor installatie](../overview.md).
+We raden u ten zeerste aan uw besturingssysteemsoftware bij te werken en bij te werken. Deze verbeteringen kunnen veiligheid en softwaremoeilijke situaties verstrekken die toekomstige problemen zouden kunnen verhinderen. Weet u niet wat dit betekent? Controle uit onze [ pagina van het installatieoverzicht ](../overview.md).
 
-Voer de volgende opdrachten in als een gebruiker met `root` rechten:
+Voer de volgende opdrachten in als een gebruiker met `root` -rechten:
 
 * Ubuntu
 
@@ -62,15 +62,15 @@ Server version: Apache/2.4.0 (Unix)
 Server built:   Jul 23 2017 14:17:29
 ```
 
-Als u Apache wilt installeren of upgraden, raadpleegt u [Apache](web-server/apache.md).
+Om Apache te installeren of te bevorderen, zie [ Apache ](web-server/apache.md).
 
 ### PHP
 
-Zie [systeemvereisten](../system-requirements.md) voor ondersteunde versies van PHP en [PHP](../system-requirements.md#php-settings) voor PHP vereisten.
+Zie [ systeemvereisten ](../system-requirements.md) voor gesteunde versies van PHP en [ PHP ](../system-requirements.md#php-settings) voor PHP vereisten.
 
 ### MySQL
 
-Controleer of u een compatibele versie van MySQL hebt voor de versie van Adobe Commerce die u installeert. Zie [Systeemvereisten](../system-requirements.md) voor ondersteunde versies.
+Controleer of u een compatibele versie van MySQL hebt voor de versie van Adobe Commerce die u installeert. Zie {de vereisten van 0} Systeem ](../system-requirements.md) voor gesteunde versies.[
 
 ```bash
 mysql -u <database root user or database owner name> -p
@@ -96,11 +96,11 @@ affiliates. Other names may be trademarks of their respective
 owners.
 ```
 
-Type `help` of `\h` voor hulp. Type `\c` de huidige invoerinstructie wissen.
+Typ `help` of `\h` voor hulp. Typ `\c` om de huidige invoerinstructie te wissen.
 
-Enter `exit` bij de `mysql>` wordt gevraagd af te sluiten.
+Typ `exit` bij de `mysql>` -prompt om af te sluiten.
 
-Ga voor het installeren of upgraden van MySQL naar [MySQL](database/mysql.md).
+Om MySQL te installeren of te bevorderen, zie [ MySQL ](database/mysql.md).
 
 ### Zoekmachine
 

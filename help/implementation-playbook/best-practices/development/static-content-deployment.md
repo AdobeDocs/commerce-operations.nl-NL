@@ -17,7 +17,7 @@ In dit artikel wordt gesproken over de best practices voor het implementeren van
 
 ## Betrokken producten en versies
 
-[Alle ondersteunde versies](../../../release/versions.md) van:
+[ Alle gesteunde versies ](../../../release/versions.md) van:
 
 * Adobe Commerce over cloudinfrastructuur
 * Adobe Commerce ter plaatse
@@ -27,28 +27,28 @@ In dit artikel wordt gesproken over de best practices voor het implementeren van
 Als u wilt voorkomen dat er problemen optreden met statische inhoud die niet beschikbaar is op uw website, volgt u de volgende aanbevolen procedures om ervoor te zorgen dat uw statische inhoud zowel op de juiste wijze wordt geconfigureerd als geïmplementeerd:
 
 1. Volg de richtlijnen voor implementatie:
-   * Voor Adobe Commerce on-premisse (alle versies), zie [Implementatieoverzicht](../../../configuration/deployment/overview.md) in onze ontwikkelaarsdocumentatie.
-   * Voor Adobe Commerce over cloudinfrastructuur (alle versies) raadpleegt u [Implementatieproces voor cloud](https://devdocs.magento.com/cloud/deploy/cloud-deployment-process.html) en [Statische strategieën voor implementatie van inhoud](https://devdocs.magento.com/cloud/deploy/static-content-deployment.html) in onze ontwikkelaarsdocumentatie.
+   * Voor Adobe Commerce op-gebouw (alle versies), zie [ Overzicht van de Plaatsing ](../../../configuration/deployment/overview.md) in onze ontwikkelaarsdocumentatie.
+   * Voor Adobe Commerce op wolkeninfrastructuur (alle versies), zie [ het plaatsingsproces van de Wolk ](https://devdocs.magento.com/cloud/deploy/cloud-deployment-process.html) en [ Statische strategieën van de inhoudsplaatsing ](https://devdocs.magento.com/cloud/deploy/static-content-deployment.html) in onze ontwikkelaarsdocumentatie.
 
-1. Voor Adobe Commerce op cloudinfrastructuur (alle versies) dient u ervoor te zorgen dat de nieuwere release beschikbaar is. Zie: [Versie van gereedschappen bijwerken](https://devdocs.magento.com/cloud/release-notes/ece-release-notes.html) in onze ontwikkelaarsdocumentatie.
-1. Voor Adobe Commerce op wolkeninfrastructuur (alle versies), zorg ervoor dat de statische inhoud tijdens de bouwfase eerder dan de plaatsingsfase wordt opgesteld. Zie: [Configuratiebeheer voor opslaginstellingen - Statische prestaties voor de implementatie van inhoud](https://devdocs.magento.com/cloud/live/sens-data-over.html#cloud-confman-scd-over) in onze ontwikkelaarsdocumentatie.
+1. Voor Adobe Commerce op cloudinfrastructuur (alle versies) dient u ervoor te zorgen dat de nieuwere release beschikbaar is. Zie: [ update knoop-hulpmiddelen versie ](https://devdocs.magento.com/cloud/release-notes/ece-release-notes.html) in onze ontwikkelaarsdocumentatie.
+1. Voor Adobe Commerce op wolkeninfrastructuur (alle versies), zorg ervoor dat de statische inhoud tijdens de bouwfase eerder dan de plaatsingsfase wordt opgesteld. Zie: [ beheer van de Configuratie voor opslagmontages - de Statische prestaties van de inhoudsplaatsing ](https://devdocs.magento.com/cloud/live/sens-data-over.html#cloud-confman-scd-over) in onze ontwikkelaarsdocumentatie.
 1. Zorg ervoor dat u geen lange-lopende kroonbanen hebt en doden om het even welke langlopende kroonprocessen. Langlopende bouwtaken kunnen CPU-bronnen in beslag nemen en de implementatietijd aanzienlijk vergroten.
-1. Voor Adobe Commerce (alle versies) controleert u of de `php` proces in CLI heeft toegang tot `pub/static` directory. Anders zou u een probleem kunnen tegenkomen waarbij een statische inhoud niet kan worden geïmplementeerd om bestanden naar die map te schrijven. Voor meer informatie: [Toegangsrechten voor bestandssystemen](https://experienceleague.adobe.com/docs/commerce-operations/configuration-guide/deployment/file-system-permissions.html) in onze ontwikkelaarsdocumentatie.
-1. Zorg ervoor dat `generated` directory is geen gedeelde directory voor builds; anders zouden builds willekeurig kunnen mislukken. Voor meer informatie:
-   * Adobe Commerce (alle versies): [Technische details](https://experienceleague.adobe.com/docs/commerce-operations/configuration-guide/deployment/technical-details.html) in onze ontwikkelaarsdocumentatie.
-   * Adobe Commerce op cloudinfrastructuur (alle versies): [Implementatieproces - Fase 2: build](https://devdocs.magento.com/cloud/reference/discover-deploy.html#cloud-deploy-over-phases-build) in onze ontwikkelaarsdocumentatie.
+1. Voor Adobe Commerce (alle versies) controleert u op locatie of het `php` -proces in CLI toegang heeft tot de map `pub/static` . Anders zou u een probleem kunnen tegenkomen waarbij een statische inhoud niet kan worden geïmplementeerd om bestanden naar die map te schrijven. Voor meer informatie: [ de toegangstoestemmingen van de systeemtoegang van het Dossier ](https://experienceleague.adobe.com/docs/commerce-operations/configuration-guide/deployment/file-system-permissions.html) in onze ontwikkelaarsdocumentatie.
+1. Zorg ervoor dat de map `generated` geen gedeelde map is voor alle builds, anders kunnen builds willekeurig mislukken. Voor meer informatie:
+   * Adobe Commerce op-gebouw (alle versies): [ Technische Details ](https://experienceleague.adobe.com/docs/commerce-operations/configuration-guide/deployment/technical-details.html) in onze ontwikkelaarsdocumentatie.
+   * Adobe Commerce op wolkeninfrastructuur (alle versies): [ het proces van de Plaatsing - Fase 2: bouw ](https://devdocs.magento.com/cloud/reference/discover-deploy.html#cloud-deploy-over-phases-build) in onze ontwikkelaarsdocumentatie.
 
-1. Controleer uw SCD-strategie. De *snel* strategie is de standaardinstelling. Voor meer informatie:
-   * Adobe Commerce (alle versies): [Statische strategieën voor bestandsimplementatie](https://experienceleague.adobe.com/docs/commerce-operations/configuration-guide/cli/static-view/static-view-file-strategy.html) in onze ontwikkelaarsdocumentatie.
-   * Adobe Commerce op cloudinfrastructuur (alle versies): [Variabelen implementeren - SCD\_STRATEGY](https://devdocs.magento.com/cloud/env/variables-deploy.html#scd_strategy) in onze ontwikkelaarsdocumentatie.
+1. Controleer uw SCD-strategie. De *snelle* strategie is het gebrek. Voor meer informatie:
+   * Adobe Commerce op-gebouw (alle versies): [ Statische strategieën van de dossierplaatsing ](https://experienceleague.adobe.com/docs/commerce-operations/configuration-guide/cli/static-view/static-view-file-strategy.html) in onze ontwikkelaarsdocumentatie.
+   * Adobe Commerce op wolkeninfrastructuur (alle versies): [ stel variabelen op - SCD \_STRATEGY ](https://devdocs.magento.com/cloud/env/variables-deploy.html#scd_strategy) in onze ontwikkelaarsdocumentatie.
 
 ## Aanvullende informatie
 
 In onze documentatie voor ontwikkelaars:
 
-* [Container met statische inhoud](https://developer.adobe.com/commerce/admin-developer/pattern-library/containers/static-content/)
-* [Statische inhoud ondertekenen](https://experienceleague.adobe.com/docs/commerce-operations/configuration-guide/cache/static-content-signing.html)
-* [Variabelen implementeren - STATIC\_CONTENT\_SYMLINK](https://devdocs.magento.com/cloud/env/variables-deploy.html#static_content_symlink)
+* [ de Statische Container van de Inhoud ](https://developer.adobe.com/commerce/admin-developer/pattern-library/containers/static-content/)
+* [ Statische Inhoud die ](https://experienceleague.adobe.com/docs/commerce-operations/configuration-guide/cache/static-content-signing.html) ondertekenen
+* [ stel variabelen op - STATIC\_CONTENT \_SYMLINK ](https://devdocs.magento.com/cloud/env/variables-deploy.html#static_content_symlink)
 * [Implementatiestroom](../../../performance/deployment-flow.md)
-* [Implementatie zonder downtime](https://devdocs.magento.com/cloud/deploy/reduce-downtime.html)
-* [cloudimplementatie optimaliseren](https://devdocs.magento.com/cloud/deploy/optimize-cloud-deployment.html)
+* [ Nul onderbreking plaatsing ](https://devdocs.magento.com/cloud/deploy/reduce-downtime.html)
+* [ optimaliseer wolkenplaatsing ](https://devdocs.magento.com/cloud/deploy/optimize-cloud-deployment.html)

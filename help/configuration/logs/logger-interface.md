@@ -5,26 +5,26 @@ feature: Configuration, Logs
 exl-id: fdb1b431-405a-4c32-aff1-9e50bf0a2c90
 source-git-commit: 991bd5fb34a2ffe61aa194ec46e2b04b4ce5b3e7
 workflow-type: tm+mt
-source-wordcount: '186'
+source-wordcount: '111'
 ht-degree: 0%
 
 ---
 
 # Aanmeldingsinterface
 
-Als u met een logger wilt gaan werken, moet u een instantie maken van `\Psr\Log\LoggerInterface`. Met deze interface kunt u de volgende functies aanroepen om gegevens naar logbestanden te schrijven:
+Als u met een logger wilt gaan werken, moet u een instantie van `\Psr\Log\LoggerInterface` maken. Met deze interface kunt u de volgende functies aanroepen om gegevens naar logbestanden te schrijven:
 
-- [alert()](https://github.com/php-fig/log/blob/master/src/LoggerInterface.php#L43)
-- [kritiek()](https://github.com/php-fig/log/blob/master/src/LoggerInterface.php#L55)
-- [debug()](https://github.com/php-fig/log/blob/master/src/LoggerInterface.php#L111)
-- [Emergency()](https://github.com/php-fig/log/blob/master/src/LoggerInterface.php#L30)
-- [error()](https://github.com/php-fig/log/blob/master/src/LoggerInterface.php#L66)
-- [info()](https://github.com/php-fig/log/blob/master/src/LoggerInterface.php#L101)
-- [log()](https://github.com/php-fig/log/blob/master/src/LoggerInterface.php#L122)
-- [notice()](https://github.com/php-fig/log/blob/master/src/LoggerInterface.php#L89)
-- [warning()](https://github.com/php-fig/log/blob/master/src/LoggerInterface.php#L79)
+- [ alarm () ](https://github.com/php-fig/log/blob/master/src/LoggerInterface.php#L43)
+- [ kritiek () ](https://github.com/php-fig/log/blob/master/src/LoggerInterface.php#L55)
+- [ zuiveren () ](https://github.com/php-fig/log/blob/master/src/LoggerInterface.php#L111)
+- [ noodgeval () ](https://github.com/php-fig/log/blob/master/src/LoggerInterface.php#L30)
+- [ fout () ](https://github.com/php-fig/log/blob/master/src/LoggerInterface.php#L66)
+- [ info () ](https://github.com/php-fig/log/blob/master/src/LoggerInterface.php#L101)
+- [ logboek () ](https://github.com/php-fig/log/blob/master/src/LoggerInterface.php#L122)
+- [ bericht () ](https://github.com/php-fig/log/blob/master/src/LoggerInterface.php#L89)
+- [ waarschuwing () ](https://github.com/php-fig/log/blob/master/src/LoggerInterface.php#L79)
 
-Een manier om dat te doen wordt uitgelegd in de [Logboekdatabaseactiviteit](../logs/database-activity.md) voorbeeld.
+Één manier om dat te doen wordt verklaard in het [ het gegevensbestandactiviteit van het Logboek ](../logs/database-activity.md) voorbeeld.
 
 Een andere manier:
 
@@ -49,6 +49,6 @@ class SomeModel
  }
 ```
 
-In het voorgaande voorbeeld wordt getoond dat `SomeModel` ontvangt een `\Psr\Log\LoggerInterface` object met constructorinjectie. In een methode `doSomething`, als er een fout is opgetreden, wordt deze bij een methode aangemeld `critical` (`$this->logger->critical($e);`).
+In het voorgaande voorbeeld wordt getoond dat `SomeModel` een `\Psr\Log\LoggerInterface` -object ontvangt met behulp van een constructorinjectie. Bij een methode `doSomething` wordt een fout gemeld bij een methode `critical` (`$this->logger->critical($e);`).
 
-[RFC 5424](https://datatracker.ietf.org/doc/html/rfc5424) bepaalt acht logboekniveaus (zuivert, info, bericht, waarschuwing, fout, kritiek, alarm, en noodsituatie).
+[ RFC 5424 ](https://datatracker.ietf.org/doc/html/rfc5424) bepaalt acht logboekniveaus (zuivert, info, bericht, waarschuwing, fout, kritiek, alarm, en noodsituatie).
