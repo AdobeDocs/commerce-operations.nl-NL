@@ -2,7 +2,7 @@
 title: De waarde van bootstrap-parameters instellen
 description: Leer hoe u opstartparameters instelt voor de Commerce-toepassing.
 exl-id: 4e1e4e5e-e1bc-49a5-8a2a-2e6b91ca9175
-source-git-commit: 95ffff39d82cc9027fa633dffedf15193040802d
+source-git-commit: ca8dc855e0598d2c3d43afae2e055aa27035a09b
 workflow-type: tm+mt
 source-wordcount: '568'
 ht-degree: 1%
@@ -35,7 +35,7 @@ U kunt bootstrap-variabelen opgeven als systeembrede omgevingsvariabelen, zodat 
 
 U kunt bijvoorbeeld de systeemomgevingsvariabele `MAGE_PROFILER` als volgt gebruiken om een modus op te geven:
 
-```terminal
+```
 MAGE_PROFILER={firebug|csv|<custom value>}
 ```
 
@@ -80,7 +80,7 @@ U kunt `.htaccess` op elk van de volgende locaties wijzigen, afhankelijk van het
 
 1. Stel de waarde van `MAGE_PROFILER` in op een van de volgende opties:
 
-   ```terminal
+   ```
    firebug
    csvfile
    <custom value>

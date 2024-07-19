@@ -2,7 +2,7 @@
 title: Voorbeeldgegevensopslagruimten klonen
 description: Voer de volgende stappen uit om Adobe Commerce-voorbeeldgegevens te installeren door Git-opslagplaatsen te klonen.
 exl-id: 748eee30-2821-457d-9c1c-62ede8bc0510
-source-git-commit: ddf988826c29b4ebf054a4d4fb5f4c285662ef4e
+source-git-commit: ca8dc855e0598d2c3d43afae2e055aa27035a09b
 workflow-type: tm+mt
 source-wordcount: '733'
 ht-degree: 0%
@@ -61,7 +61,7 @@ Om de bewaarplaats van GitHub van steekproefgegevens te klonen gebruikend het pr
    >
    >Als de volgende foutenvertoningen, zorg ervoor u [ uw sleutel van SSH ](https://docs.github.com/articles/generating-ssh-keys/) met GitHub deelde:<br>
 
-   ```terminal
+   ```
    Cloning into 'magento2'...
    Permission denied (publickey).
    fatal: The remote end hung up unexpectedly

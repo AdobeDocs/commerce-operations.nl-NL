@@ -2,7 +2,7 @@
 title: Afhankelijkheidsrapporten
 description: Creeer rapporten die de totalen voor module, kringafhankelijkheden, en kadergebiedsdelen tonen.
 exl-id: b7a32fe1-71c5-495f-8276-242503fb50ae
-source-git-commit: 95ffff39d82cc9027fa633dffedf15193040802d
+source-git-commit: ca8dc855e0598d2c3d43afae2e055aa27035a09b
 workflow-type: tm+mt
 source-wordcount: '240'
 ht-degree: 0%
@@ -51,7 +51,7 @@ Als er geen map of bestandsnaam als argument wordt doorgegeven, wordt de volgend
 
 Het volgende is een gedeelte van de output voor een rapport van de gebiedsdelen van de steekproefmodule:
 
-```terminal
+```
 "","All","Hard","Soft"
 "Total number of dependencies","602","587","15"
 
@@ -75,7 +75,7 @@ Het volgende is een gedeelte van de output voor een rapport van de gebiedsdelen 
 
 Het volgende is een gedeelte van de output voor een steekproef cirkelafhankelijkheidsrapport:
 
-```terminal
+```
 "Circular dependencies:","Total number of chains"
 "","848"
 
@@ -101,7 +101,7 @@ Het volgende is een gedeelte van de output voor een steekproef cirkelafhankelijk
 
 Het volgende is een deel van de output voor een rapport van de gebiedsdelen van het steekproefkader:
 
-```terminal
+```
 "Dependencies of framework:","Total number"
 "","111"
 

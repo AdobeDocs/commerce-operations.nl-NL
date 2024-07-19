@@ -2,7 +2,7 @@
 title: Geavanceerde  [!DNL JavaScript]  Bundelen
 description: Meer informatie over hoe JavaScript-pakketten de grootte en frequentie van serveraanvragen kunnen verminderen.
 exl-id: 81a313f8-e541-4da6-801b-8bbd892d6252
-source-git-commit: 95ffff39d82cc9027fa633dffedf15193040802d
+source-git-commit: f9f8aea1a77ef062d7076a61bbafd12433f15edf
 workflow-type: tm+mt
 source-wordcount: '2134'
 ht-degree: 0%
@@ -212,7 +212,7 @@ phantomjs deps.js <i> url-aan-specifiek-pagina </i> &gt; <i> tekst-dossier-verte
 
 Hier ziet u bijvoorbeeld vier pagina&#39;s uit de voorbeeldwinkel met het thema Luma die de vier paginatypen vertegenwoordigen die we gebruiken om onze vier pakketten te maken (homepage, categorie, product, winkelwagen):
 
-```terminal
+```
 phantomjs deps.js http://m2.loc/ > bundle/homepage.txt
 phantomjs deps.js http://m2.loc/women/tops-women/jackets-women.html > bundle/category.txt
 phantomjs deps.js http://m2.loc/beaumont-summit-kit.html > bundle/product.txt
@@ -234,7 +234,7 @@ Met deze opdracht (gebruikt in het script [!DNL PhantomJS] ) wordt dezelfde lijs
 
 Nadat u de [!DNL RequireJS] gebiedsdelen in paginatype tekstdossiers samenvoegt, kunt u het volgende bevel op elk pagina-type gebiedsdeeldossier gebruiken om de komma&#39;s in uw dossiers met nieuwe lijnen te vervangen:
 
-```terminal
+```bash
 sed -i -e $'s/,/\\\n/g' bundle/category.txt
 sed -i -e $'s/,/\\\n/g' bundle/homepage.txt
 sed -i -e $'s/,/\\\n/g' bundle/product.txt
@@ -243,7 +243,7 @@ sed -i -e $'s/,/\\\n/g' bundle/product.txt
 
 U zou ook alle menins voor elk dossier moeten verwijderen omdat de dubbele gebiedsdelen mengt. Gebruik het volgende bevel op elk gebiedsdeeldossier:
 
-```terminal
+```bash
 sed -i -e 's/mixins\!.*$//g' bundle/homepage.txt
 sed -i -e 's/mixins\!.*$//g' bundle/category.txt
 sed -i -e 's/mixins\!.*$//g' bundle/product.txt
@@ -262,7 +262,7 @@ sort bundle/*.txt |uniq -c |sort -n
 
 Met deze opdracht voegt u de afhankelijkheden die in de `bundle/*.txt` -bestanden zijn gevonden samen en sorteert u deze.  De output toont ook het aantal dossiers die elk gebiedsdeel bevatten:
 
-```terminal
+```
 1 buildTools,
 1 jquery/jquery.parsequery,
 1 jsbuild,
@@ -317,7 +317,7 @@ bash deps-map.sh
 
 De uitvoer van dit script, dat wordt toegepast op onze drie voorbeeldpaginatypen, moet er ongeveer als volgt uitzien (maar veel langer):
 
-```terminal
+```
 bundle/product.txt   -->   buildTools,
 bundle/category.txt  -->   jquery/jquery.parsequery,
 bundle/product.txt   -->   jsbuild,
@@ -427,7 +427,7 @@ De inhoud van de nieuwe bundelmap weergeven kan er als volgt uitzien:
 ll pub/static/frontend/Magento/luma/en_US/bundles
 ```
 
-```terminal
+```
 total 1900
 drwxr-xr-x  2 root root    4096 Mar 28 11:24 ./
 drwxr-xr-x 70 root root    4096 Mar 28 11:24 ../

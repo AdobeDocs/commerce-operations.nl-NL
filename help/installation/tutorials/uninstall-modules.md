@@ -2,7 +2,7 @@
 title: Modules verwijderen
 description: Voer de volgende stappen uit om een Adobe Commerce-module te verwijderen.
 exl-id: 66879ef5-47c7-4b61-8c7e-78b60441980a
-source-git-commit: ddf988826c29b4ebf054a4d4fb5f4c285662ef4e
+source-git-commit: ca8dc855e0598d2c3d43afae2e055aa27035a09b
 workflow-type: tm+mt
 source-wordcount: '727'
 ht-degree: 0%
@@ -67,7 +67,7 @@ Met de opdracht Module verwijderen worden de volgende taken uitgevoerd:
 
 Als u bijvoorbeeld probeert een module te verwijderen waarvan een andere module afhankelijk is, wordt het volgende bericht weergegeven:
 
-```terminal
+```
 magento module:uninstall Magento_SampleMinimal
     Cannot uninstall module 'Magento_SampleMinimal' because the following module(s) depend on it:
         Magento_SampleModifyContent
@@ -81,7 +81,7 @@ bin/magento module:uninstall Magento_SampleMinimal Magento_SampleModifyContent -
 
 Berichten die lijken op de volgende weergave:
 
-```terminal
+```
 You are about to remove code and/or database tables. Are you sure?[y/N]y
 Enabling maintenance mode
 Code backup is starting...
@@ -180,7 +180,7 @@ Als u bijvoorbeeld een back-up van een code (dat wil zeggen bestandssysteem) wil
 
   Berichten die lijken op de volgende weergave:
 
-  ```terminal
+  ```
   Enabling maintenance mode
   Code rollback is starting ...
   Code rollback filename: 1433876616_filesystem.tgz

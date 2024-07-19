@@ -3,7 +3,7 @@ title: Webserver configureren
 description: Leer hoe u uw webserver configureert voor gebruik met Varnish.
 feature: Configuration, Cache, Install, Logs
 exl-id: b31179ef-3c0e-4a6b-a118-d3be1830ba4e
-source-git-commit: a2bd4139aac1044e7e5ca8fcf2114b7f7e9e9b68
+source-git-commit: ca8dc855e0598d2c3d43afae2e055aa27035a09b
 workflow-type: tm+mt
 source-wordcount: '738'
 ht-degree: 0%
@@ -141,7 +141,7 @@ Als Varnish er niet in slaagt om als dienst te beginnen, begin het van de bevell
 
    De volgende berichten worden weergegeven om te bevestigen dat het programma is gestart:
 
-   ```terminal
+   ```
    child (29805) Started
    200 0
    
@@ -159,7 +159,7 @@ netstat -tulpn
 
 Zoek in het bijzonder de volgende output:
 
-```terminal
+```
 tcp        0      0 0.0.0.0:80                  0.0.0.0:*                   LISTEN      32614/varnishd
 tcp        0      0 127.0.0.1:58484             0.0.0.0:*                   LISTEN      32604/varnishd
 tcp        0      0 :::8080                     :::*                        LISTEN      26822/httpd
@@ -178,7 +178,7 @@ Installeer de Commerce-software als u dat nog niet hebt gedaan. Wanneer ertoe aa
 
 Mogelijke fout bij het installeren van Commerce:
 
-```terminal
+```
 Error 503 Service Unavailable
 Service Unavailable
 XID: 303394517
@@ -217,7 +217,7 @@ Ga in een webbrowser naar een willekeurige Commerce-pagina.
 
 Een lange lijst van reactiekopballen tonen in uw bevel snelle venster. Zoek naar kopballen als het volgende:
 
-```terminal
+```
 -   BereqHeader    X-Varnish: 3
 -   VCL_call       BACKEND_FETCH
 -   VCL_return     fetch
@@ -252,7 +252,7 @@ curl -I -v --location-trusted 'http://192.0.2.55/magento2'
 
 Zoek naar kopballen als het volgende:
 
-```terminal
+```
 Content-Type: text/html; charset=iso-8859-1
 X-Varnish: 15
 Age: 0

@@ -4,7 +4,7 @@ description: Leer hoe u de prestaties van caching kunt verbeteren met de uitgebr
 role: Developer, Admin
 feature: Best Practices, Cache
 exl-id: 8b3c9167-d2fa-4894-af45-6924eb983487
-source-git-commit: 6772c4fe31cfcd18463b9112f12a2dc285b39324
+source-git-commit: ca8dc855e0598d2c3d43afae2e055aa27035a09b
 workflow-type: tm+mt
 source-wordcount: '800'
 ht-degree: 0%
@@ -231,7 +231,7 @@ Door de Redis-cache te scheiden van de Redis-sessie kunt u de cache en de sessie
 
 Tijdens plaatsing, zou u de volgende lijnen in [ moeten zien bouwen en logboek ](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/test/log-locations.html#build-and-deploy-logs) opstellen:
 
-```terminal
+```
 W:   - Downloading colinmollenhour/credis (1.11.1)
 W:   - Downloading colinmollenhour/php-redis-session-abstract (v1.4.5)
 ...

@@ -3,7 +3,7 @@ title: '[!DNL Data Migration Tool] technische specificatie'
 description: Leer over de implementatiedetails van  [!DNL Data Migration Tool]  en hoe te om uit te breiden wanneer het overbrengen van gegevens tussen Magento 1 en Magento 2.
 exl-id: fec3ac3a-dd67-4533-a29f-db917f54d606
 topic: Commerce, Migration
-source-git-commit: e83e2359377f03506178c28f8b30993c172282c7
+source-git-commit: ca8dc855e0598d2c3d43afae2e055aa27035a09b
 workflow-type: tm+mt
 source-wordcount: '2098'
 ht-degree: 0%
@@ -28,7 +28,7 @@ De [ systeemvereisten ](../../installation/system-requirements.md) voor [!DNL Da
 
 In het volgende diagram wordt de mapstructuur van [!DNL Data Migration Tool] weergegeven:
 
-```terminal
+```
 ├── etc                                    --- all configuration files
 │   ├── opensource-to-opensource            --- configuration files for migration from Magento Open Source 1 to Magento Open Source 2
 │   │   ├── 1.9.1.1

@@ -2,7 +2,7 @@
 title: Opmerkingen bij de release Adobe Commerce 2.4.6 Security Patch
 description: Leer meer over oplossingen voor beveiligingsproblemen, beveiligingsverbeteringen en andere beveiligingsupdates die zijn opgenomen in de beveiligingspatchreleases voor Adobe Commerce versie 2.4.6.
 exl-id: cde096ac-d192-490d-873a-475996c474ff
-source-git-commit: 2269c99908c0f8292ad62bd5837b1b8cebd50cb3
+source-git-commit: ca8dc855e0598d2c3d43afae2e055aa27035a09b
 workflow-type: tm+mt
 source-wordcount: '1166'
 ht-degree: 0%
@@ -128,7 +128,7 @@ Platformupgrades voor deze release verbeteren de naleving van de nieuwste best p
 
 * Ontbrekende afhankelijkheden voor het B2B-beveiligingspakket veroorzaken de volgende installatiefout bij de installatie of upgrade van de B2B-extensie naar 1.4.0.
 
-  ```terminal
+  ```
   Your requirements could not be resolved to an installable set of packages.
   
     Problem 1

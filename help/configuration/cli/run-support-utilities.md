@@ -2,7 +2,7 @@
 title: Voer de hulpprogramma's voor ondersteuning uit
 description: Los uw Commerce-project problemen op met behulp van het ingebouwde hulpprogramma voor ondersteuning.
 exl-id: 021b795f-e00d-43b5-9cbb-5b57a4795be7
-source-git-commit: 95ffff39d82cc9027fa633dffedf15193040802d
+source-git-commit: ca8dc855e0598d2c3d43afae2e055aa27035a09b
 workflow-type: tm+mt
 source-wordcount: '461'
 ht-degree: 0%
@@ -81,7 +81,7 @@ Waarbij:
 
 De gevoelige gegevens omvatten klanteninformatie van de volgende gegevensbestandlijsten:
 
-```terminal
+```
 'customer_entity',
 'customer_entity_varchar',
 'customer_address_entity',
@@ -100,7 +100,7 @@ Nadat het bevel voltooit, verstrek de gegevensbestandsteun aan de Steun van Adob
 
 Wij verstrekken bevelen die wegen aan nut tonen die door de Collector van Gegevens en de bevellijn worden vereist. U kunt deze opdrachten bijvoorbeeld gebruiken als er fouten optreden zoals in de volgende weergave in Beheer of op de opdrachtregel:
 
-```terminal
+```
 Utility lsof not found
 ```
 
@@ -119,7 +119,7 @@ Voer de volgende opdrachten uit in de volgorde waarin de paden worden weergegeve
 
 Hieronder volgt een monster:
 
-```terminal
+```
    gzip => /bin/gzip
    lsof => /usr/sbin/lsof
    mysqldump => /usr/bin/mysqldump

@@ -2,7 +2,7 @@
 title: Een externe MySQL-databaseverbinding instellen
 description: Voer de volgende stappen uit om een externe databaseverbinding te configureren voor installaties op locatie van Adobe Commerce.
 exl-id: 5fe304bd-ff38-4066-a1fd-8937575e4de4
-source-git-commit: ddf988826c29b4ebf054a4d4fb5f4c285662ef4e
+source-git-commit: ca8dc855e0598d2c3d43afae2e055aa27035a09b
 workflow-type: tm+mt
 source-wordcount: '700'
 ht-degree: 0%
@@ -70,7 +70,7 @@ Een externe verbinding maken:
 
    De locatie wordt als volgt weergegeven:
 
-   ```terminal
+   ```
    Default options are read from the following files in the given order:
    /etc/my.cnf /etc/mysql/my.cnf /usr/etc/my.cnf ~/.my.cnf
    ```
@@ -138,7 +138,7 @@ mysql -u <local database username> -h <database server ip address> -p
 
 Als de MySQL-monitor als volgt wordt weergegeven, is de database gereed voor Adobe Commerce:
 
-```terminal
+```
 Welcome to the MySQL monitor.  Commands end with ; or \g.
 Your MySQL connection id is 213 Server version: 5.6.26 MySQL Community Server (GPL)
 

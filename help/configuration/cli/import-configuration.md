@@ -2,7 +2,7 @@
 title: Gegevens importeren uit configuratiebestanden
 description: Adobe Commerce-configuratie-instellingen importeren uit configuratiebestanden.
 exl-id: 7d9f156c-e8d3-4888-b359-5d9aa8c4ea05
-source-git-commit: 95ffff39d82cc9027fa633dffedf15193040802d
+source-git-commit: ca8dc855e0598d2c3d43afae2e055aa27035a09b
 workflow-type: tm+mt
 source-wordcount: '493'
 ht-degree: 0%
@@ -36,7 +36,7 @@ Als u `bin/magento app:config:import` zonder de optionele markering invoert, moe
 
 Als het configuratiebestand bijvoorbeeld één nieuwe website en één nieuwe winkel bevat, wordt het volgende bericht weergegeven:
 
-```terminal
+```
 These Websites will be created: New Website
 These Groups will be created: New Store
 Do you want to continue [yes/no]?
@@ -46,14 +46,14 @@ Voer `yes` in om door te gaan met importeren.
 
 Als de dossiers van de plaatsingsconfiguratie sommige te importeren gegevens bevatten, wordt een bericht gelijkend op het volgende getoond:
 
-```terminal
+```
 Start import:
 Some information about importing
 ```
 
 Als de dossiers van de plaatsingsconfiguratie geen te importeren gegevens bevatten, wordt een bericht gelijkend op het volgende getoond:
 
-```terminal
+```
 Start import:
 Nothing to import
 ```

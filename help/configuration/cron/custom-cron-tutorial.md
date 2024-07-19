@@ -2,7 +2,7 @@
 title: Een aangepaste uitsnijdtaak en uitsnijdgroep configureren (zelfstudie)
 description: Gebruik deze stapsgewijze zelfstudie om een aangepaste uitsnijdtaak te maken.
 exl-id: d8efcafc-3ae1-4c2d-a8ad-4a806fb48932
-source-git-commit: 95ffff39d82cc9027fa633dffedf15193040802d
+source-git-commit: ca8dc855e0598d2c3d43afae2e055aa27035a09b
 workflow-type: tm+mt
 source-wordcount: '809'
 ht-degree: 0%
@@ -61,7 +61,7 @@ Als u reeds een steekproefmodule hebt, kunt u het gebruiken; sla deze stap en de
 
    U zou het volgende resultaat moeten zien:
 
-   ```terminal
+   ```
    drwxrwsr-x.   4 magento_user apache  4096 Oct 30 13:19 .
    drwxrwsr-x. 121 magento_user apache  4096 Oct 30 13:19 ..
    -rw-rw-r--.   1 magento_user apache   372 Oct 30 13:19 composer.json
@@ -97,7 +97,7 @@ Controleer voordat u verdergaat of de voorbeeldmodule is geregistreerd en ingesc
 
 1. Zorg ervoor dat de module wordt toegelaten.
 
-   ```terminal
+   ```
    Module is enabled
    ```
 
@@ -215,7 +215,7 @@ Uitsnijden verifiëren:
 
       Het resultaat moet vergelijkbaar zijn met het volgende:
 
-      ```terminal
+      ```
       +-------------+----------------+---------+----------+---------------------+---------------------+---------------------+---------------------+
       | schedule_id | job_code       | status  | messages | created_at        | scheduled_at        | executed_at         | finished_at     |
       +-------------+----------------+---------+----------+---------------------+---------------------+---------------------+---------------------+
@@ -234,7 +234,7 @@ Uitsnijden verifiëren:
 
    U zou één of meerdere ingangen als het volgende moeten zien:
 
-   ```terminal
+   ```
    [2016-11-02 22:17:03] main.INFO: Cron Works [] []
    ```
 

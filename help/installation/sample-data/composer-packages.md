@@ -3,7 +3,7 @@ title: Voorbeeldgegevenspakketten van Composer downloaden
 description: Voer de volgende stappen uit om Adobe Commerce voorbeeldgegevens te installeren met behulp van Composer PHP Package Manager.
 feature: Install, Deploy
 exl-id: 735591af-a152-4476-9fa6-e31c4bab3ba8
-source-git-commit: ddf988826c29b4ebf054a4d4fb5f4c285662ef4e
+source-git-commit: ca8dc855e0598d2c3d43afae2e055aa27035a09b
 workflow-type: tm+mt
 source-wordcount: '286'
 ht-degree: 0%
@@ -54,7 +54,7 @@ U wordt vereist om [ ](../prerequisites/authentication-keys.md) voor authentiek 
 
 De volgende verificatiefout kan worden weergegeven:
 
-```terminal
+```
 [Composer\Downloader\TransportException]
 The 'https://repo.magento.com/packages.json' URL required authentication.
 You must be using the interactive console to authenticate

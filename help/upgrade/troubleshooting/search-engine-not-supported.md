@@ -3,7 +3,7 @@ title: Huidige zoekengine wordt niet ondersteund
 description: Los uw verbetering van Adobe Commerce na het ontmoeten van een fout over een niet gestaafd onderzoeksmotor problemen op.
 feature: Upgrade, Search
 exl-id: 11479d23-53a5-4086-9f9a-c3420ccad073
-source-git-commit: ddf988826c29b4ebf054a4d4fb5f4c285662ef4e
+source-git-commit: ca8dc855e0598d2c3d43afae2e055aa27035a09b
 workflow-type: tm+mt
 source-wordcount: '400'
 ht-degree: 0%
@@ -14,7 +14,7 @@ ht-degree: 0%
 
 Het volgende foutbericht geeft aan dat de Adobe Commerce-versie waarvan u een upgrade uitvoert, is geconfigureerd voor het gebruik van een zoekfunctie voor catalogi die niet wordt ondersteund in de versie waarnaar u de upgrade uitvoert:
 
-```terminal
+```
 Your current search engine, <Engine Name>, is not supported. You must install a supported search engine before upgrading. See the System Upgrade Guide for more information.
 ```
 

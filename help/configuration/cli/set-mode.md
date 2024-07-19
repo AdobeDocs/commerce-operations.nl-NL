@@ -2,7 +2,7 @@
 title: De bewerkingsmodus instellen
 description: Lees meer over het instellen van de Adobe Commerce-bewerkingsmodi.
 exl-id: 62d183fa-d4ff-441d-b8bd-64ef5ae10978
-source-git-commit: 95ffff39d82cc9027fa633dffedf15193040802d
+source-git-commit: ca8dc855e0598d2c3d43afae2e055aa27035a09b
 workflow-type: tm+mt
 source-wordcount: '385'
 ht-degree: 0%
@@ -25,7 +25,7 @@ De productiemodus biedt betere prestaties omdat statische weergavebestanden word
 
 Wanneer u in ontwikkelaar of productiemodus verandert, ontruimen wij de inhoud van volgende folders:
 
-```terminal
+```
 var/cache
 generated/metadata
 generated/code
@@ -54,7 +54,7 @@ bin/magento deploy:mode:show
 
 Een bericht dat lijkt op de volgende vertoningen:
 
-```terminal
+```
 Current application mode: {mode}. (Note: Environment variables may override this value.)
 ```
 
@@ -86,7 +86,7 @@ bin/magento deploy:mode:set production
 
 Berichten die lijken op de volgende weergave:
 
-```terminal
+```
 Enabled maintenance mode
 Requested languages: en_US
 === frontend -> Magento/luma -> en_US ===
@@ -143,7 +143,7 @@ Wanneer u van productie aan ontwikkelaarwijze verandert, zou u geproduceerde kla
 
    Het volgende bericht wordt weergegeven:
 
-   ```terminal
+   ```
    Enabled developer mode.
    ```
 
@@ -155,7 +155,7 @@ bin/magento deploy:mode:set default
 
 Het volgende bericht wordt weergegeven:
 
-```terminal
+```
 Enabled default mode.
 ```
 

@@ -2,7 +2,7 @@
 title: Extensies van derden beheren
 description: Voer de volgende stappen uit om Adobe Commerce-extensies te installeren, in te schakelen, te upgraden en te verwijderen.
 exl-id: b564662a-2e5f-4fa9-bae1-ca7498478fa9
-source-git-commit: 6da0e70acc77d2171d6336ab632e6a9a8dd16c67
+source-git-commit: ca8dc855e0598d2c3d43afae2e055aa27035a09b
 workflow-type: tm+mt
 source-wordcount: '785'
 ht-degree: 0%
@@ -98,7 +98,7 @@ Voeg de naam en de versie van de extensie toe aan het `composer.json` -bestand:
 
 1. Wacht op Composer om het bijwerken van uw projectgebiedsdelen te voltooien en ervoor te zorgen dat er geen fouten zijn:
 
-   ```terminal
+   ```
    Updating dependencies (including require-dev)
    Package operations: 1 install, 0 updates, 0 removals
      - Installing j2t/module-payplug (2.0.2): Downloading (100%)
@@ -116,7 +116,7 @@ bin/magento module:status J2t_Payplug
 
 Standaard is de extensie waarschijnlijk uitgeschakeld:
 
-```terminal
+```
 Module is disabled
 ```
 
@@ -140,7 +140,7 @@ Sommige extensies werken alleen correct als u gegenereerde statische weergavebes
 
    U zou de volgende output moeten zien:
 
-   ```terminal
+   ```
    The following modules have been enabled:
    - J2t_Payplug
    
@@ -170,7 +170,7 @@ Sommige extensies werken alleen correct als u gegenereerde statische weergavebes
 
    De uitvoer moet controleren of de extensie niet meer is uitgeschakeld:
 
-   ```terminal
+   ```
    Module is enabled
    ```
 
