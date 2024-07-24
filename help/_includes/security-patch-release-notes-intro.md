@@ -1,7 +1,7 @@
 ---
-source-git-commit: d532402e2d65a1f34558fc3c283d4291be5b006b
+source-git-commit: 9d855fca840f081a4b0faa0170eb0e950a7cd7ad
 workflow-type: tm+mt
-source-wordcount: '85'
+source-wordcount: '93'
 ht-degree: 0%
 
 ---
@@ -18,4 +18,4 @@ In deze release met beveiligingspatches worden updates vastgelegd om de beveilig
 Meer informatie over beveiligingspatchreleases:
 
 * [Overzicht van Adobe Commerce Security Patch Release](/help/release/release-notes/security/overview.md#about-adobe-commerce-security-patch-releases)
-* [Instructies voor het downloaden en toepassen van beveiligingspatches](/help/installation/composer.md)
+* De instructies voor het downloaden van en het toepassen van de versies van het veiligheidspatch zijn beschikbaar in de [ Gids van de Verbetering ](https://experienceleague.adobe.com/en/docs/commerce-operations/upgrade-guide/implementation/perform-upgrade)

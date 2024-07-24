@@ -1,7 +1,7 @@
 ---
-source-git-commit: d532402e2d65a1f34558fc3c283d4291be5b006b
+source-git-commit: 50b87e6f2f604d195c2d079bd18451754edaa11c
 workflow-type: tm+mt
-source-wordcount: '184'
+source-wordcount: '188'
 ht-degree: 0%
 
 ---
@@ -15,4 +15,4 @@ Met beveiligingspatchreleases kunt u uw site veiliger houden zonder aanvullende 
 
 Elke beveiligingspatchrelease is gebaseerd op de vorige volledige patchrelease. Het bevat kwaliteits- en beveiligingsoplossingen van eerdere patchreleases en beveiligingsoplossingen die zijn gemaakt tussen de vorige volledige patchrelease en de beveiligingspatchrelease.
 
-Voor instructies bij het downloaden van en het toepassen van veiligheidspatches, zie [ Snel begin installeren ](../installation/composer.md#example---security-patch).
+Voor instructies bij het downloaden en het toepassen van veiligheidspatches, zie [ Vorm en verbetering ](../installation/composer.md#example---security-patch) in de _Gids van de Verbetering_.
