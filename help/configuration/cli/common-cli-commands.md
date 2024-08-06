@@ -2,7 +2,7 @@
 title: Algemene opdrachten
 description: Bekijk een steekproef van gemeenschappelijke bevelen en gebruik van Commerce CLI.
 exl-id: d35a1dd9-10b3-4364-b6f4-b1e259a04e3d
-source-git-commit: 95ffff39d82cc9027fa633dffedf15193040802d
+source-git-commit: 3d0e6d6517e28a32816bfe2b328edfba97523740
 workflow-type: tm+mt
 source-wordcount: '242'
 ht-degree: 0%
@@ -51,7 +51,7 @@ De bevelen worden getoond in summiere vorm slechts; voor meer informatie over ee
 
 ## Algemene argumenten
 
-De volgende argumenten gelden voor alle opdrachten. Deze opdrachten kunnen worden uitgevoerd vóór of nadat de Commerce-software is geïnstalleerd:
+De volgende argumenten zijn gemeenschappelijk aan [ alle bevelen ](/help/tools/reference/commerce-on-premises.md). Deze opdrachten kunnen worden uitgevoerd vóór of nadat de Commerce-software is geïnstalleerd:
 
 | Lange versie | Korte versie | Betekenis |
 |--- |--- |--- |
