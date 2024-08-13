@@ -2,9 +2,9 @@
 title: Releasebeleid
 description: Leer meer over de verschillende typen Adobe Commerce-releases, zoals kleine patches, beveiligingspatches, functies, hotfix, afzonderlijke patches en aangepaste patches.
 exl-id: 61a83de6-6a7b-4a88-8fff-1638b4fe472a
-source-git-commit: 1eaf2329c16e6dbe3e93cb7fff3a6920b4b8379d
+source-git-commit: b5d120893668f4315e289a204649270db4f7a6bc
 workflow-type: tm+mt
-source-wordcount: '621'
+source-wordcount: '638'
 ht-degree: 0%
 
 ---
@@ -54,9 +54,9 @@ De pre-algemene beschikbaarheidsversies van de eigenschappen van Adobe Commerce 
 
 Beta-releases kunnen defecten bevatten en worden geleverd als &quot;AS IS&quot; zonder enige garantie. Adobe is niet verplicht om de Beta-releases te onderhouden, te corrigeren, bij te werken, te wijzigen of anderszins te ondersteunen (via Adobe Support Services of anderszins). Klanten wordt aangeraden voorzichtig te zijn en op geen enkele wijze te vertrouwen op de correcte werking of prestaties van de Beta-releases en/of begeleidende documentatie of materialen. Daarom is elk gebruik van de Beta-releases volledig op eigen risico van de Klant.
 
-## Uitzetbaarheid, Infrastructuur en de versie van de Diensten
+## Functies, cloudinfrastructuur en uitbreidingsrelease
 
-De versies van de eigenschap die nieuwe eigenschappen en eigenschapupdates bevatten die als onafhankelijke diensten, los van flardversies worden geleverd. Voorbeelden zijn uitbreidbaarheidstechnologie zoals API Mesh en Event, SaaS-producten zoals Product Recommendations en Live Search, onafhankelijke modules zoals B2B en PWA Studio, en updates voor onze cloudhostingservices en -infrastructuur.
+Cloudinfrastructuur- en functiereleases bevatten nieuwe functies en functies-updates die als onafhankelijke services worden geleverd, apart van patchreleases. Voorbeelden zijn updates van onze cloudhostservices en -infrastructuur, B2B-, SaaS-producten (Catalog Service, Data Connection, Product Recommendations en Live Search) en uitbreidbaarheidstechnologie (API Mesh, Integration Starter Kit en Event).
 
 ## Hotfix
 
@@ -72,14 +72,12 @@ Afzonderlijke patches bevatten oplossingen voor een bepaalde kwestie met een lag
 
 >[!NOTE]
 >
->Afzonderlijke patches bevatten geen achterwaartse incompatibele wijzigingen.
+>Afzonderlijke patches bevatten geen achterwaarts incompatibele wijzigingen.
+
+## Geïsoleerde patch
+
+Bevat een standalone moeilijke situatie die in het recentste veiligheid-enige flard of een aanstaande veiligheid-enige flard inbegrepen is, die afzonderlijk voor snellere implementatie wordt vrijgegeven.
 
 ## Aangepaste patch
 
 Gemaakt door personeel van een andere Adobe om een probleem op te lossen of de Adobe Commerce-code om verschillende redenen te wijzigen. De flarden van de douane worden geleverd door het [ Hulpmiddel van de Patches van de Kwaliteit ](https://experienceleague.adobe.com/docs/commerce-operations/tools/quality-patches-tool/usage.html).
-
-## Verwante onderwerpen
-
-- [ Versioning ](https://developer.adobe.com/commerce/php/development/versioning/)
-- [Volgende releases](schedule.md)
-- [ Beleid van de Levenscyclus van de Software ](https://www.adobe.com/content/dam/cc/en/legal/terms/enterprise/pdfs/Adobe-Commerce-Software-Lifecycle-Policy.pdf)
