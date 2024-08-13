@@ -2,9 +2,9 @@
 title: Releaseplanning
 description: Ontdek wanneer Adobe de release van nieuwe functies voor Adobe Commerce gaat aankondigen.
 exl-id: ae1e09cd-966f-44a3-9e4d-b90bb838429d
-source-git-commit: 2dd18f3eada5fc5e1abe9ecc7954df06986abcd1
+source-git-commit: dc493fc044401e33ef40e4e070b5d82977938eb1
 workflow-type: tm+mt
-source-wordcount: '495'
+source-wordcount: '493'
 ht-degree: 2%
 
 ---
@@ -82,7 +82,7 @@ De volgende tabel bevat de datums voor geplande patchreleases (datums kunnen wor
   </tr>
   <tr>
     <td>14 oktober 2025</td>
-    <td><img alt="Patchvrijgavepictogram" src="../assets/icons/file-code.svg"></img> <a href="release-notes/security/overview.md"> de flarden van de Veiligheid </a>: voor 2.4.8, 2.4.7, 2.4.6, en 2.4.5</td>
+    <td><img alt="Patchvrijgavepictogram" src="../assets/icons/file-code.svg"></img> <a href="release-notes/security/overview.md"> de flarden van de Veiligheid </a>: voor 2.4.8, 2.4.7, en 2.4.6</td>
   </tr>
 </tbody>
 </table>
