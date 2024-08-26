@@ -3,9 +3,9 @@ title: Gevoelige en systeemspecifieke paden
 description: Zie een lijst van systeem-specifieke en gevoelige configuratiewaarden.
 feature: Configuration, System
 exl-id: 127880ab-7507-4e53-8b51-dfa6557d0b18
-source-git-commit: 5a8e52d8eee1619697db40accb9775b92b4e8a9d
+source-git-commit: e5a1c5634124831c8d5a95df6818ec30c372e8dd
 workflow-type: tm+mt
-source-wordcount: '3696'
+source-wordcount: '3676'
 ht-degree: 0%
 
 ---
@@ -150,16 +150,16 @@ Deze configuratiewaarden zijn beschikbaar in Admin in **Slaat** > Montages > **C
 | HTTP-gebruikersnaam Elasticsearch | `catalog/search/elasticsearch_username` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> | | ![ Sys-specific ](/help/assets/configuration/cloud-env.png) |
 | HTTP-wachtwoord Elasticsearch | `catalog/search/elasticsearch_password` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> | | ![ Sys-specific ](/help/assets/configuration/cloud-env.png) |
 | Time-out Elasticsearch-server | `catalog/search/elasticsearch_server_timeout` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> | | ![ Sys-specific ](/help/assets/configuration/cloud-env.png) |
-| HTTP-gebruikersnaam Elasticsearch | `catalog/search/elasticsearch_username` | <!-- ![Not EE-only](/help/assets/configuration/red-x.png) --> | |  (`{{ site.baseurl }}` /common/images/cloud_env.png) |
-| HTTP-wachtwoord Elasticsearch | `catalog/search/elasticsearch_password` | <!-- ![Not EE-only](/help/assets/configuration/red-x.png) --> | |  (`{{ site.baseurl }}` /common/images/cloud_env.png) |
-| Time-out Elasticsearch-server | `catalog/search/elasticsearch_server_timeout` | <!-- ![Not EE-only](/help/assets/configuration/red-x.png) --> | |  (`{{ site.baseurl }}` /common/images/cloud_env.png) |
-| Hostnaam van OpenSearch-server | `catalog/search/opensearch_server_hostname` | <!-- ![Not EE-only](/help/assets/configuration/red-x.png) --> | |  (`{{ site.baseurl }}` /common/images/cloud_env.png) | ![ Gevoelig ](/help/assets/configuration/cloud-sens.png) |
-| OpenSearch-serverpoort | `catalog/search/opensearch_server_port` | <!-- ![Not EE-only](/help/assets/configuration/red-x.png) --> | |  (`{{ site.baseurl }}` /common/images/cloud_env.png) | ![ Gevoelig ](/help/assets/configuration/cloud-sens.png) |
-| Voorvoegsel van OpenSearch-index | `catalog/search/opensearch_index_prefix` | <!-- ![Not EE-only](/help/assets/configuration/red-x.png) --> | |  (`{{ site.baseurl }}` /common/images/cloud_env.png) | ![ Gevoelig ](/help/assets/configuration/cloud-sens.png) |
-| OpenSearch HTTP Auth inschakelen | `catalog/search/opensearch_enable_auth` | <!-- ![Not EE-only](/help/assets/configuration/red-x.png) --> | |  (`{{ site.baseurl }}` /common/images/cloud_env.png) |
-| HTTP-gebruikersnaam van OpenSearch | `catalog/search/opensearch_username` | <!-- ![Not EE-only](/help/assets/configuration/red-x.png) --> | |  (`{{ site.baseurl }}` /common/images/cloud_env.png) |
-| HTTP-wachtwoord voor OpenSearch | `catalog/search/opensearch_password` | <!-- ![Not EE-only](/help/assets/configuration/red-x.png) --> | |  (`{{ site.baseurl }}` /common/images/cloud_env.png) |
-| Time-out voor OpenSearch-server | `catalog/search/opensearch_server_timeout` | <!-- ![Not EE-only](/help/assets/configuration/red-x.png) --> | |  (`{{ site.baseurl }}` /common/images/cloud_env.png) |
+| HTTP-gebruikersnaam Elasticsearch | `catalog/search/elasticsearch_username` | <!-- ![Not EE-only](/help/assets/configuration/red-x.png) --> | | ![ Sys-specific ](/help/assets/configuration/cloud-env.png) |
+| HTTP-wachtwoord Elasticsearch | `catalog/search/elasticsearch_password` | <!-- ![Not EE-only](/help/assets/configuration/red-x.png) --> | | ![ Sys-specific ](/help/assets/configuration/cloud-env.png) |
+| Time-out Elasticsearch-server | `catalog/search/elasticsearch_server_timeout` | <!-- ![Not EE-only](/help/assets/configuration/red-x.png) --> | | ![ Sys-specific ](/help/assets/configuration/cloud-env.png) |
+| Hostnaam van OpenSearch-server | `catalog/search/opensearch_server_hostname` | <!-- ![Not EE-only](/help/assets/configuration/red-x.png) --> | | ![ Sys-specific ](/help/assets/configuration/cloud-env.png) | ![ Gevoelig ](/help/assets/configuration/cloud-sens.png) |
+| OpenSearch-serverpoort | `catalog/search/opensearch_server_port` | <!-- ![Not EE-only](/help/assets/configuration/red-x.png) --> | | ![ Sys-specific ](/help/assets/configuration/cloud-env.png) | ![ Gevoelig ](/help/assets/configuration/cloud-sens.png) |
+| Voorvoegsel van OpenSearch-index | `catalog/search/opensearch_index_prefix` | <!-- ![Not EE-only](/help/assets/configuration/red-x.png) --> | | ![ Sys-specific ](/help/assets/configuration/cloud-env.png) | ![ Gevoelig ](/help/assets/configuration/cloud-sens.png) |
+| OpenSearch HTTP Auth inschakelen | `catalog/search/opensearch_enable_auth` | <!-- ![Not EE-only](/help/assets/configuration/red-x.png) --> | | ![ Sys-specific ](/help/assets/configuration/cloud-env.png) |
+| HTTP-gebruikersnaam van OpenSearch | `catalog/search/opensearch_username` | <!-- ![Not EE-only](/help/assets/configuration/red-x.png) --> | | ![ Sys-specific ](/help/assets/configuration/cloud-env.png) |
+| HTTP-wachtwoord voor OpenSearch | `catalog/search/opensearch_password` | <!-- ![Not EE-only](/help/assets/configuration/red-x.png) --> | | ![ Sys-specific ](/help/assets/configuration/cloud-env.png) |
+| Time-out voor OpenSearch-server | `catalog/search/opensearch_server_timeout` | <!-- ![Not EE-only](/help/assets/configuration/red-x.png) --> | | ![ Sys-specific ](/help/assets/configuration/cloud-env.png) |
 
 {style="table-layout:auto"}
 
