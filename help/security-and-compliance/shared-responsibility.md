@@ -2,9 +2,9 @@
 title: Beveiliging en operationeel model van gedeelde verantwoordelijkheid
 description: Leer meer over de beveiligingsverantwoordelijkheden van elke partij die betrokken is bij uw Adobe Commerce-project voor cloudinfrastructuur.
 exl-id: f3cc1685-e469-4e30-b18e-55ce10dd69ce
-source-git-commit: 76aafb88855f7f41db8e57b06cf0e82370b57302
+source-git-commit: 9d0ab29be70c5638296694f90755fedac41b6a77
 workflow-type: tm+mt
-source-wordcount: '2802'
+source-wordcount: '2791'
 ht-degree: 0%
 
 ---
@@ -98,7 +98,7 @@ Ook cloudserviceproviders zijn verantwoordelijk voor:
 
 ## CDN-providerverantwoordelijkheden
 
-De Adobe Commerce on cloud Infrastructure-oplossing gebruikt CDN-providers om de laadtijd van pagina&#39;s, cacheinhoud en direct verouderde inhoud te versnellen. Deze leveranciers zijn ook verantwoordelijk voor veiligheidskwesties direct verwant met of beïnvloedend hun CDN, en voor het bepalen van en het handhaven van CDN WAF regels.
+De Adobe Commerce on cloud Infrastructure-oplossing gebruikt CDN-providers om de laadtijd van pagina&#39;s, cacheinhoud en direct verouderde inhoud te versnellen. Deze leveranciers zijn ook verantwoordelijk voor veiligheidskwesties direct verwant met of het beïnvloeden van hun CDN, en voor het bepalen van en het handhaven van CDN WAF regels.
 
 ## Overzicht van beveiligingsverantwoordelijkheden
 
@@ -139,7 +139,7 @@ In de volgende overzichtstabel wordt het RACI-model gebruikt om de beveiligingsv
     <td></td>
   </tr>
   <tr>
-    <td>WAF-regels voor oorsprong definiëren</td>
+    <td>WAF-oorsprongsregels definiëren</td>
     <td>R</td>
     <td></td>
     <td></td>
@@ -641,7 +641,7 @@ Merchants zijn verantwoordelijk voor het synchroniseren van gegevens tussen omge
 | Aangepaste Adobe Commerce-toepassing | | R |
 | Beschikbaarheid van de diensten van New Relic:<br> APM toepassing en agentenintegratie, de toepassing van de Infrastructuur, <br> Logging &amp; integratie | R |   |
 | New Relic-waarschuwingen instellen |     | R |
-| New Relic-agent implementeren op PaaS-servers |     | R |
+| New Relic-agent implementeren op PaaS-servers | R |  |
 
 {style="table-layout:auto"}
 
@@ -724,7 +724,7 @@ Merchants zijn verantwoordelijk voor het synchroniseren van gegevens tussen omge
 | Optimalisatie van paginacache |     | R |
 | Domeinen toevoegen aan services, CDN en infrastructuur | R |   |
 | Aangepaste VCL-fragmenten |     | R |
-| WAF- &amp; WAF-regels | R |   |
+| WAF- en WAF-regels | R |   |
 
 {style="table-layout:auto"}
 
@@ -825,9 +825,9 @@ Merchants zijn verantwoordelijk voor het synchroniseren van gegevens tussen omge
 |     | Adobe | Merchant |
 | --- | --- | --- |
 | Beschikbaarheid en configuratie van WAF | R |  |
-| Onjuiste WAF-regelpositieven aanpakken | R | |
-| Onjuiste positiefregel WAF-regel rapporteren |     | R |
-| WAF-regelafstelling (NIET ONDERSTEUND) |     |     |
+| Onjuiste positieven in WAF-regels aanpakken | R | |
+| Onjuiste positieven in WAF-regel melden |     | R |
+| WAF Rule Tuning (NIET ONDERSTEUND) |     |     |
 | WAF/CDN-logbestanden |     | R |
 
 {style="table-layout:auto"}
@@ -841,7 +841,6 @@ Merchants zijn verantwoordelijk voor het synchroniseren van gegevens tussen omge
 | DDOS-detectie - laag 3-4 | R |   |
 | DDOS-detectie - laag 7 |     | R |
 | DDOS-reactie | R |   |
-| Configuratie van de snelheidsbegrenzing en de bescherming tegen botten (beperkt) |     | R |
 
 {style="table-layout:auto"}
 
@@ -849,13 +848,13 @@ Merchants zijn verantwoordelijk voor het synchroniseren van gegevens tussen omge
 
 |     | Adobe | Merchant |
 | --- | --- | --- |
-| Het vormen van en het handhaven van verbindingen PrivateLink (indien gebruikt) met een Adobe-bezeten VPC | R |   |
-| Het vormen en het handhaven van verbindingen PrivateLink (indien gebruikt) met een Merchant-Bezit VPC |     | R |
+| PrivateLink-verbindingen configureren en onderhouden (indien gebruikt) met een VPC die eigendom is van een Adobe | R |   |
+| PrivateLink-verbindingen configureren en onderhouden (indien gebruikt) met een VPC die eigendom is van Merchant |     | R |
 | Beschikbaarheid van SSH (niet-particuliere koppeling) | R |   |
 | Configuratie van PrivateLink Binnenkomend aan het eindpunt van de Dienst van Adobe Commerce Cloud | R |   |
 | Acceptatie van PrivateLink Binnenkomend aan het eindpunt van de Dienst van Adobe Commerce Cloud |     | R |
-| Configuratie van PrivateLink binnenkomend aan het eindpunt van de Dienst VPC van Merchant |     | R |
-| Acceptatie van PrivateLink binnenkomend aan het eindpunt van de Dienst van Merchant VPC | R |   |
+| Configuratie van PrivateLink naar het VPC Service-eindpunt van Merchant |     | R |
+| Acceptatie van PrivateLink naar het VPC Service-eindpunt van Merchant | R |   |
 | Configuratie van integratie PrivateLink (eindpunt voor account) |     | R |
 | Configuratie van merchant-bezeten VPC voor het eindpunt PrivateLink <br><br> (met inbegrip van om het even welke verbindingen van VPN) |     | R |
 
