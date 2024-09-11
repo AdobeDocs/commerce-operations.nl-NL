@@ -2,9 +2,9 @@
 title: Beta-releases
 description: Leer meer over de bètareleases van Adobe Commerce en hoe u hieraan kunt deelnemen.
 exl-id: 662cb061-995f-4e09-a2ef-9e607cc0000b
-source-git-commit: 0e2dfc376a049a47348a7a913bd5181436227cc2
+source-git-commit: 050d5877fae4cb9caaee06598f4429ea8857b1d2
 workflow-type: tm+mt
-source-wordcount: '818'
+source-wordcount: '803'
 ht-degree: 0%
 
 ---
@@ -47,6 +47,7 @@ Om aan bèta deel te nemen, verzend een e-mailverzoek naar [ Shaun McCran ](mail
 ### IBM Sterling Order Management System Integration (Private Beta)
 
 Met deze integratieversneller voor IBM Sterling Order Management kunnen Adobe Commerce-klanten aan de slag gaan met geavanceerde mogelijkheden voor orderbeheer, aangedreven door IBM Sterling OMS. Met deze integratie krijgen handelaren:
+
 - Real-time zichtbaarheid in inventarisniveaus en nauwkeurige leveringsdatums voor uw klanten.
 - Geautomatiseerde sourcing voor bestellingen op basis van configureerbare regels, zodat u uw uitvoeringsnetwerk en inventaris kunt optimaliseren.
 - Een universele weergave van bestellingen tussen kanalen vanaf één dashboard, zodat uw supportteams de uitzonderlijke service kunnen leveren en uitzonderingen snel kunnen identificeren en afhandelen.
@@ -57,10 +58,9 @@ Om aan deze bèta deel te nemen, verzend een e-mailverzoek naar [ sbieber@adobe.
 ### Gegevensverbinding en Audience Activation (Public Beta)
 
 Uitgebreide gegevensuitwisseling tussen Adobe Commerce en Adobe Experience Platform voor krachtigere persoonlijke ervaringen. Met deze mogelijkheid kunnen handelaren:
+
 - Commerce-klantprofielen delen
 - Aangepaste kenmerken maken
-- Bekijk Commerce-inzichten in Real-Time CDP en Adobe Journey Optimizer
-- Meerdere gegevenssets en gegevensstromen ondersteunen
 
 Om aan deze bèta deel te nemen, verzend een e-mailverzoek naar [ DataConnection@adobe.com ](mailto:DataConnection@adobe.com).
 
