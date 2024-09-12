@@ -2,9 +2,9 @@
 title: Opmerkingen bij de release
 description: Meer informatie over de patches die beschikbaar zijn voor Adobe Commerce en de problemen die ze oplossen.
 exl-id: 22262555-f5ea-49ad-98ad-ea8428ef66d5
-source-git-commit: d870d98caf2b2576f3bf179e860e711d1cea9afc
+source-git-commit: b1b7152caa8a9f04ee779e4483c6b82d2002fcc7
 workflow-type: tm+mt
-source-wordcount: '21346'
+source-wordcount: '21646'
 ht-degree: 0%
 
 ---
@@ -20,6 +20,19 @@ ht-degree: 0%
 >[!INFO]
 >
 >Voor informatie over [!DNL quality patches] die door de Gemeenschap voor Magento Open Source wordt gecreeerd, zie de [ versienota&#39;s ](https://github.com/magento/quality-patches/blob/master/community-release-notes.md).
+
+## v1.1.51 {#v1-1-51}
+
+* **ACSD-59786** (voor Adobe Commerce en Magento Open Source >=2.4.6 &lt;2.4.8) - lost de kwestie op waar GraphQL een interne serverfout wanneer het proberen om identiteitskaart van het Citaat voor een verlopen citaat te krijgen terugkeert.
+* **ACSD-60234** (voor Adobe Commerce en Magento Open Source >=2.4.4 &lt;2.4.8) - lost de kwestie op waar een onjuist bedrag op [!DNL PayPal] wordt getoond wanneer de korting door de betalingsmethode wordt toegepast.
+* **ACSD-59967** (voor Adobe Commerce en Magento Open Source >=2.4.4 &lt;2.4.7-p2) - lost de kwestie op waar een fout van JavaScript [!DNL Google Maps] niet correct teruggeeft verhindert.
+* **ACSD-60326** (voor Adobe Commerce >=2.4.4 &lt;2.4.8) - lost de kwestie op waar een fout op de vraag van GraphQL voor de status van de klantenterugkeer voorkomt.
+* **ACSD-60538** (voor Adobe Commerce >=2.4.7 &lt;2.4.8) - lost de kwestie op waar als een product in *[!UICONTROL All Store Views]* gehandicapt is en slechts in specifieke werkingsgebied van de opslagmening wordt toegelaten, tonen de productattributen niet correct in de reactie van GraphQL, die tot het product leiden dat niet behoorlijk wordt getoond.
+* **ACSD-60631** (voor Adobe Commerce en Magento Open Source >=2.4.7 &lt;2.4.8) - lost de kwestie op waar GraphQL een fout terugkeert wanneer het zelfde eenvoudige product aan veelvoudige configureerbare producten wordt toegewezen.
+* **ACSD-60632** (voor Adobe Commerce en Magento Open Source >=2.4.5-p8 &lt;2.4.8) - lost de kwestie op waar een nieuw adres wordt bewaard telkens als een poging van de orderplaatsing wordt gemaakt, ongeacht of de orde met succes wordt gecreeerd of niet.
+* **ACSD-60816** (voor Adobe Commerce en Magento Open Source >=2.4.4 &lt;2.4.7) - lost de kwestie op waar de [!DNL New Relic Browser Monitoring] manuscripten die door de agent APM worden ingespoten niet volgzaam met CSP (het Beleid van de Veiligheid van de Inhoud) zijn, verhinderend hun uitvoering.
+* **ACSD-61195** (voor Adobe Commerce en Magento Open Source >=2.4.7 &lt;2.4.8) - lost de kwestie op waar geen wortelpunten op de laatste pagina voor het karretjeGraphQL verzoek zijn teruggekeerd.
+* Bijgewerkte patches: ACSD-59378
 
 ## v1.1.50 {#v1-1-50}
 
