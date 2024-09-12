@@ -1,7 +1,7 @@
 ---
-source-git-commit: aedbb5c550a088b67328891fbb788458d14f31a8
+source-git-commit: cd4655cf45df5293ef82a9fa2f411e8630524603
 workflow-type: tm+mt
-source-wordcount: '12351'
+source-wordcount: '13175'
 ht-degree: 0%
 
 ---
@@ -9,7 +9,7 @@ ht-degree: 0%
 
 ## Opgeloste problemen
 
-In de kerncode van Magento Open Source 2.4.8 zijn 231 problemen opgelost. Hieronder wordt een subset van de opgeloste problemen in deze release beschreven.
+In de kerncode van Magento Open Source 2.4.8 hebben we 253 problemen opgelost. Hieronder wordt een subset van de opgeloste problemen in deze release beschreven.
 
 ### API&#39;s
 
@@ -48,8 +48,9 @@ Eerder was het mogelijk om de prijsgroep voor de websitegroep Dupliceren te make
    * _GitHub kwestie_: <https://github.com/magento/magento2/issues/38406>
    * _GitHub codebijdrage_: <https://github.com/magento/magento2/pull/38407>
 * _AC-11919_: Admin: De Knopen van de Acties van de pagina drijvende linkerzijde in plaats van recht
+   * _nota van de Reparatie_: Het systeem richt nu correct de Knopen van de Acties van de Pagina aan de rechterkant van de kleverige kopbal in het admin paneel, dat de professionele blik en het gevoel verbetert. Eerder zweven deze knoppen onjuist naar de linkerkant van de kleverige koptekst.
    * _GitHub kwestie_: <https://github.com/magento/magento2/issues/38701>
-   * _GitHub codebijdrage_: &lt;https://github.com/magento/magento2/ (Intern, Unmerge)>
+   * _GitHub codebijdrage_: <https://github.com/magento/magento2/commit/44cef3a9>
 * _AC-11999_: dev :di: infofout in magento 2.4.7
    * _nota van de Reparatie_: Het systeem toont nu correct constructorparameters wanneer het uitvoeren van het dev :di: info bevel, verhinderend om het even welke fouten voor te komen. Eerder resulteerde het uitvoeren van deze opdracht in een fout als gevolg van een niet-overeenkomend type in het argument.
    * _GitHub kwestie_: <https://github.com/magento/magento2/issues/38740>
@@ -100,9 +101,17 @@ Eerder was het mogelijk om de prijsgroep voor de websitegroep Dupliceren te make
 * _ACP2E-3125_: De kwestie van het het terugstellensjabloon van het wachtwoord met gebruiker Admin
    * _nota van de Reparatie_: De kwestie is opgelost door de correcte sleutel te gebruiken, die nu de admin gebruikersbenaming in het e-mailmalplaatje omvat en behoorlijk het onderwerp voltooit. Eerder was het probleem het gevolg van een verouderde sleutel die werd gebruikt.
    * _GitHub codebijdrage_: <https://github.com/magento/magento2/commit/93d50f8d>
+* _ACP2E-3149_: De dubbele slashes in klantensegment URL
+   * _nota van de Reparatie_: De dubbele schuine strepen verschijnen niet in URL wanneer de &quot;Filter van het Terugstellen&quot;in het net wordt geklikt.
+   * _GitHub codebijdrage_: <https://github.com/magento/magento2/commit/8459b17d>
 * _ACP2E-3171_: CZV is niet beschikbaar voor toegestane specifieke landen
    * _Nota van de Moeilijke situatie_: Nu Geld op levering is beschikbaar voor toegestane specifieke landen wanneer het wordt vereist en   AC-3216 werkt zoals verwacht.
    * _GitHub codebijdrage_: <https://github.com/magento/magento2/commit/6f4805f8>
+* _ACP2E-3178_: Kan de Status van de Orde van de Douane niet bijwerken Creeerde
+   * _Bevestig nota_: &quot;
+We kunnen nu aangepaste orderstatussen bijwerken, terwijl eerder de status alleen gewijzigd kon worden als de huidige status &#39;verwerkings&#39; of &#39;fraude&#39; was.
+   * _GitHub kwestie_: <https://github.com/magento/magento2/issues/38659>
+   * _GitHub codebijdrage_: <https://github.com/magento/magento2/commit/8459b17d>
 
 ### Beheerdersinterface, prestaties
 
@@ -150,7 +159,25 @@ Eerder was het mogelijk om de prijsgroep voor de websitegroep Dupliceren te make
 ### B2B, Kader
 
 * _AC-9607_: Het filtreren van het Net van het Bedrijf &amp; toen het Poging van de Uitvoer van het Net CSV zal de Uitzondering van de Kwijting &amp; van de Borg ontbreken
-   * _GitHub codebijdrage_: &lt;https://github.com/magento/magento2/ (Intern, Unmerge)>
+   * _nota van de Reparatie_: Het systeem staat nu succesvolle uitvoer CSV van de het netgegevens van Bedrijven in het admin paneel toe, zelfs wanneer de filters zoals &quot;Uitstaand Saldo&quot;en &quot;Type van Bedrijf&quot;worden toegepast. Eerder, zou het toepassen van bepaalde filters en het proberen om de netgegevens uit te voeren in een mislukking resulteren en een uitzondering die wordt geworpen.
+   * _GitHub codebijdrage_: <https://github.com/magento/magento2/commit/44cef3a9>
+
+### Braintree
+
+* _BUNDLE-3367_: Betaal via LPM
+   * _GitHub codebijdrage_: <https://github.com/magento/ext-braintree/pull/204>
+* _BUNDLE-3368_: Configureerbaar met Virtueel als Product van het Kind
+   * _GitHub codebijdrage_: <https://github.com/magento/ext-braintree/pull/204>
+* _BUNDLE-3369_: De mislukte fout van de Verificatie CVV
+   * _GitHub codebijdrage_: <https://github.com/magento/ext-braintree/pull/204>
+* _BUNDLE-3370_: Het vaulting via de Kwesties 247 van het rekeningsgebied
+   * _GitHub codebijdrage_: <https://github.com/magento/ext-braintree/pull/204>
+* _BUNDLE-3371_: Schip aan een adres van een verschillend land
+   * _GitHub codebijdrage_: <https://github.com/magento/ext-braintree/pull/204>
+* _BUNDLE-3372_: Kredietkaart - de functie van de Onderbreking
+   * _GitHub codebijdrage_: <https://github.com/magento/ext-braintree/pull/204>
+* _BUNDLE-3373_: Verzendcallback voor Uitdrukkelijke PayPal
+   * _GitHub codebijdrage_: <https://github.com/magento/ext-braintree/pull/204>
 
 ### Winkelwagentje en Afhandeling
 
@@ -378,6 +405,9 @@ Eerder was het mogelijk om de prijsgroep voor de websitegroep Dupliceren te make
 * _ACP2E-3090_: Het behandelen van de Filters van de Categorie in GraphQL: includeDirectChildrenOnly en category_uid
    * _Bevestig nota_: Slechts worden de directe kindcategorieën gehaald terwijl het filtreren door category_uid.
    * _GitHub codebijdrage_: <https://github.com/magento/magento2/commit/93d50f8d>
+* _ACP2E-3166_: [ Cloud ] Grafiek het sorteren van het Product werkt niet
+   * _Bevestig nota_: Het sorteren van het Product GraphQl door veelvoudige gebieden wanneer de gebieden in variabelen nu worden overgegaan werkt zoals verwacht.
+   * _GitHub codebijdrage_: <https://github.com/magento/magento2/commit/8459b17d>
 
 ### Catalogus, Prijzen, Staging en Voorvertoning
 
@@ -471,6 +501,10 @@ Eerder was het mogelijk om de prijsgroep voor de websitegroep Dupliceren te make
    * _nota van de Reparatie_: Het systeem houdt nu aan de beperkingen binnen beheer GUI worden geplaatst wanneer de verzoeken van de het wachtwoordverandering via API verwerken, die potentieel misbruik van de wachtwoordterugstellingfunctie verhinderen. Voorheen kon de API verzoeken om wachtwoordwijziging verwerken buiten de regels die zijn gedefinieerd in de GUI voor beheer, waardoor mogelijk een constante stroom e-mailberichten zou worden gemaakt als geldige e-mails bekend waren.
    * _GitHub kwestie_: <https://github.com/magento/magento2/issues/38238>
    * _GitHub codebijdrage_: <https://github.com/magento/magento2/commit/0c53bbf7>
+* _AC-10721_:
+   * _Bevestig nota_: Bevorder de ligging/de gebiedsdelen van de Componist van het vluchtsysteem die aan recentste versie worden bevorderd
+   * _GitHub kwestie_: &lt;<https://github.com/magento/magento2/commit/91cb4d46>>
+   * _de codebijdrage van GitHub_: Bevorder de 2.x liga/de gebiedsdelen van de Composer van het vluchtsysteem aan recentste versie 3.x
 * _AC-10838_: Het proces van de het het procesfout van de het onderzoeksindex van de catalogus indexeren
    * _nota van de Reparatie_: Het systeem voltooit nu met succes het re-indexbevel zonder om het even welke fouten te ontmoeten, ongeacht de libxml versie die met PHP wordt gecompileerd. Eerder, resulteerde het runnen van het re-indexbevel in een &quot;fout van het proces van het het indexproces van het Onderzoek van de Catalogus tijdens indexeringsproces&quot;fout wanneer PHP met bepaalde versies van libxml werd gecompileerd.
    * _GitHub kwestie_: <https://github.com/magento/magento2/issues/38254>
@@ -506,7 +540,11 @@ Eerder was het mogelijk om de prijsgroep voor de websitegroep Dupliceren te make
 * _AC-11673_:
    * _Nota van de Reparatie_: Onderzoek php-amqplib/php-amqplib recentste versies
    * _GitHub kwestie_: &lt;<https://github.com/magento/magento2/commit/de4dfb8e>>
-   * _GitHub codebijdrage_: Zorg ervoor de recentste versie van php-amqplib/php-amqplib recentste versies compatibel zou moeten zijn
+   * _GitHub codebijdrage_: Bijgewerkt de recentste versie php-amqplib/php-amqplib:^3.x
+* _AC-11681_: [ Uitgave ] AC-2039 wisselstroom-1667 verbetert verwijzingen TinyMCE
+   * _Nota van de Moeilijke situatie_: Bijgewerkte versie van de tinentie in composer.json
+   * _GitHub kwestie_: <https://github.com/magento/magento2/issues/38533>
+   * _GitHub codebijdrage_: <https://github.com/magento/magento2/pull/36543>, <https://github.com/magento/magento2/commit/b34c0a75>
 * _AC-11696_: ChangelogBatchWalker werkt niet in veelvoudige draden
    * _nota van de Reparatie_: Het systeem steunt nu procesvork voor indexatie MView, die fouten tijdens indexeeruitvoering verhinderen wanneer het werken op veelvoudige draden. Eerder, zou het runnen van ChangelogBatchWalker op veelvoudige draden tot de schrapping van lijsten leiden die door andere draden worden gebruikt, die een fout tijdens indexeruitvoering veroorzaken.
    * _GitHub kwestie_: <https://github.com/magento/magento2/issues/38246>
@@ -534,14 +572,22 @@ Eerder was het mogelijk om de prijsgroep voor de websitegroep Dupliceren te make
    * _nota van de Reparatie_: Het systeem behandelt nu correct lege dossiers LESS tijdens statische inhoudsplaatsing, tonend een &quot;LESS dossier is leeg&quot;foutenmelding. Eerder werd een fout met een onjuist type gegenereerd bij het optreden van een leeg LESS-bestand tijdens de implementatie.
    * _GitHub kwestie_: <https://github.com/magento/magento2/issues/38682>
    * _GitHub codebijdrage_: <https://github.com/magento/magento2/pull/38683>
+* _AC-11911_:
+   * _Bevestig nota_: jQuery/fileuploader css schoonmaakbeurt na migratie aan uppy bibliotheek
+   * _GitHub kwestie_: &lt;<https://github.com/magento/magento2/commit/7cabfb46>>
+   * _GitHub codebijdrage_: Verwijderd jQuery/fileUploader bibliotheek omdat het aan de bibliotheek van het Uppy is gemigreerd
 * _AC-12002_: [ Uitgave ] [ Mening ] Verwijderde extra ruimte in verbinding en manuscriptmarkering
    * _nota van de Reparatie_: Het systeem zorgt nu ervoor dat er geen extra ruimten in de verbinding en manuscriptmarkeringen zijn, die helderdere en efficiëntere code verstrekken. Eerder konden dubbele ruimten tussen attributen in de verbinding en manuscriptmarkeringen worden gevonden.
    * _GitHub kwestie_: <https://github.com/magento/magento2/issues/32920>
    * _GitHub codebijdrage_: <https://github.com/magento/magento2/pull/32919>
+* _AC-12015_:
+   * _Bevestig nota_: De omslagschoonmaakbeurt ExtJs na migratie aan jsTree bibliotheek
+   * _GitHub kwestie_: &lt;<https://github.com/magento/magento2/commit/7cabfb46>>
+   * _GitHub codebijdrage_: Verwijderd omslag TextJs aangezien de verwante functionaliteit aan jsTree is gemigreerd
 * _AC-12022_:
    * _Bevestig nota_: De monoloog/monoloog systeemgebiedsdeel van de verbetering aan de recentste belangrijkste versie
    * _GitHub kwestie_: &lt;<https://github.com/magento/magento2/commit/edcd0dcc>>
-   * _GitHub codebijdrage_: Het systeem is bijgewerkt om de recentste belangrijkste versie van de &quot;monolog/monolog&quot;bibliotheek te gebruiken, die verenigbaarheid en betere prestaties verzekeren. Eerder gebruikte het systeem een verouderde versie van de &quot;monolog/monolog&quot; bibliotheek die tot mogelijke problemen en beperkingen had kunnen leiden.
+   * _GitHub codebijdrage_: Het systeem is bijgewerkt om de recentste belangrijkste versie van de &quot;monolog/monolog:^3.x&quot;bibliotheek te gebruiken, die verenigbaarheid en betere prestaties verzekeren. Eerder gebruikte het systeem een verouderde versie van de &quot;monolog/monolog&quot; bibliotheek die tot mogelijke problemen en beperkingen had kunnen leiden.
 * _AC-12023_:
    * _Bevestig nota_: Bevorder wikimedia/less.php gebiedsdeel aan de recentste belangrijkste versie
    * _GitHub kwestie_: &lt;<https://github.com/magento/magento2/commit/edcd0dcc>>
@@ -549,15 +595,18 @@ Eerder was het mogelijk om de prijsgroep voor de websitegroep Dupliceren te make
 * _AC-12024_:
    * _Bevestig nota_: Bevorder jquery/bevestig bibliotheekgebiedsdeel aan de recentste minder belangrijke versie
    * _GitHub kwestie_: &lt;<https://github.com/magento/magento2/commit/de4dfb8e>>
-   * _GitHub codebijdrage_: Bevorder jquery/bevestig bibliotheekgebiedsdeel aan de recentste minder belangrijke versie
+   * _GitHub codebijdrage_: Bevorder jquery/bevestig bibliotheekgebiedsdeel aan recentste minder belangrijke versie 1.20.0
 * _AC-12025_:
    * _Bevestig nota_: Het systeemgebiedsdeel van de verbetering moment.js aan de recentste minder belangrijke versie
    * _GitHub kwestie_: &lt;<https://github.com/magento/magento2/commit/de4dfb8e>>
-   * _GitHub codebijdrage_: Het systeemgebiedsdeel van de verbetering moment.js aan de recentste minder belangrijke versie
+   * _GitHub codebijdrage_: Het systeemgebiedsdeel van de verbetering moment.js aan recentste minder belangrijke versie 2.30.1
 * _AC-12267_:
    * _Bevestig nota_: De verbindingspogingen van de steun voor Redis zitting en compatibel met colinmolenhour/php-redis-session-abstract v2.0.0
    * _GitHub kwestie_: &lt;<https://github.com/magento/magento2/commit/672a2e61>>
-   * _de codebijdrage van GitHub_: Zorg ervoor de recentste versie van colinmolenhour/php-redis-session-abstract v2.0.0 compatibel met de handel van Adobe
+   * _de codebijdrage van GitHub_: Bijgewerkte recentste versie van colinmolenhour/php-redis-session-abstract v2.0.0 compatibel met de handel van Adobe
+* _AC-12268_:
+   * _Bevestig nota_: De gebiedsdelen van de Samensteller van de verbetering liga/flysystem aan recentste versie
+   * _de codebijdrage van GitHub_: Bevorder de 2.x liga/de gebiedsdelen van de Composer van het vluchtsysteem aan recentste versie 3.x
 * _AC-12594_: [ Gecompileerde config van het Gebruik van de kwestie ] voor geproduceerde gegevens in plaats van algemene config
    * _nota van de Reparatie_: Het systeem gebruikt nu de gecompileerde configuratie voor geproduceerde gegevens in plaats van de algemene configuratie, die netwerkoverdracht en overheadkosten van gegevens vermindert die van een bepaalde versie van code afhangt. Door deze wijziging wordt voorkomen dat cache wordt overschreven in gedeelde instanties tijdens het wisselen van containers. Dit leidt tot betere stabiliteit en minder downtime. Eerder, gebruikten bepaalde kernklassen het gedeelde configuratietype, dat tot geheim voorgeheugen het met voeten treden of toepassingsonderbreking wegens verschillen in codeversies over veelvoudige servers kon leiden.
    * _GitHub kwestie_: <https://github.com/magento/magento2/issues/38785>
@@ -566,6 +615,15 @@ Eerder was het mogelijk om de prijsgroep voor de websitegroep Dupliceren te make
    * _nota van de Reparatie_: Het systeem verwijdert nu verwijzingen naar dossiers uit uitbreidingen die eerder werden verwijderd, eliminerend fouten in de browser console en het dossier van het systeemlogboek. Voorheen veroorzaakten deze verwijzingen fouten vanwege het ontbreken van de bestanden waarnaar wordt verwezen.
    * _GitHub kwestie_: <https://github.com/magento/magento2/issues/38960>
    * _GitHub codebijdrage_: <https://github.com/magento/magento2/pull/38951>
+* _AC-12715_:
+   * _Bevestig nota_: De gebiedsdelen van de composer van de update laminas bevorderen aan recentste versie
+   * _GitHub kwestie_: &lt;<https://github.com/magento/magento2/commit/b34c0a75>>
+   * _GitHub codebijdrage_: Het systeem steunt nu de recentste versies van laminas composer gebiedsdelen:
+laminas/laminas-servicemanager
+laminas/laminas-server
+laminas/laminas-stdlib
+laminas/laminas-validator
+zorgen voor compatibiliteit en up-to-date functionaliteit. Eerder, kon het bijwerken aan de recentste versies van deze gebiedsdelen achterwaartse onverenigbaarheidskwesties en testmislukkingen veroorzaken.
 * _AC-12778_: [ geef ] Kleine schoonmaak uit: het vaste verkeerde gebruik van sprintf, het neemt slechts 2 placeholders hier en w...
    * _nota van de Reparatie_: Het systeem gebruikt nu correct de functie sprintf met het aangewezen aantal placeholders, die codeschoonheid en consistentie verbeteren. Eerder werd de functie sprintf onjuist gebruikt met een extra argument, dat geen belangrijke kwesties veroorzaakte maar niet het correcte gebruik was.
    * _GitHub kwestie_: <https://github.com/magento/magento2/issues/39062>
@@ -598,13 +656,6 @@ Eerder was het mogelijk om de prijsgroep voor de websitegroep Dupliceren te make
    * _nota van de Reparatie_: Het systeem past nu correct een 4-ruimteparagraaf op de composer en auth.json- dossiers toe, na een moeilijke situatie op een syntaxisfout in editorconfig. Eerder waren deze bestanden vanwege een spatie in de bewerkingsconfig-syntaxis onjuist opgemaakt met een inspringing voor twee spaties.
    * _GitHub kwestie_: <https://github.com/magento/magento2/issues/37394>
    * _GitHub codebijdrage_: <https://github.com/magento/magento2/pull/37395>
-* _AC-8714_:
-   * _nota van de Reparatie_: Vlek 7.3 - de verbindingen van SubCategorieën/de opties van Standaard categorie worden niet getoond op de homepage van de Voorkant van de Opslag
-   * _GitHub kwestie_: &lt; <https://github.com/magento/magento2/commit/d1c335aa>, &lt;https://github.com/magento/magento2/ (Intern, Unmerge)>>
-   * _GitHub codebijdrage_: De homepages van de Storefront tonen nu standaardcategoriessubcategorieën zoals verwacht. Eerder hadden kopers alleen via URL toegang tot subcategorieën.
-* _AC-8714_: Vlek 7.3 - de verbindingen/de opties van SubCategorieën van Standaard categorie worden niet getoond op de voorpagina van het Huis van de Winkel
-   * _nota van de Reparatie_: De homepages van de Storefront tonen nu standaardcategoriessubcategorieën zoals verwacht. Eerder hadden kopers alleen via URL toegang tot subcategorieën.
-   * _GitHub codebijdrage_: <https://github.com/magento/magento2/commit/d1c335aa>, &lt;https://github.com/magento/magento2/ (Intern, Unmerge)>
 * _wisselstroom-8984_: [ Uitgave ] voegt sommige meer kleuren aan de output van bepaalde opstellingskli bevelen toe
    * _nota van de Reparatie_: Het systeem voegt nu meer kleuren aan de output van bepaalde (CLI) bevelen van de opstellingsbevellijn toe, die leesbaarheid en gebruikerservaring verbeteren. Eerder was de uitvoer van deze opdrachten moeilijker te lezen vanwege een gebrek aan kleurdifferentiatie.
    * _GitHub kwestie_: <https://github.com/magento/magento2/issues/29335>
@@ -615,8 +666,8 @@ Eerder was het mogelijk om de prijsgroep voor de websitegroep Dupliceren te make
    * _GitHub codebijdrage_: <https://github.com/magento/magento2/pull/38076>
 * _AC-9712_: https://github.com/magento/magento2/issues/37841
    * _Nota van de Reparatie_: Verschil in minder compilatie tussen php &amp; nodejs bibliotheek (stomp) met gecompliceerde `calc` uitdrukkingen
-   * _GitHub kwestie_: &lt;&lt;https://github.com/magento/magento2/ (Intern, Samengevoegd)>>
-   * _GitHub codebijdrage_: Verbeter het verschil in minder compilatie tussen php &amp; nodejs bibliotheek (groef)
+   * _GitHub kwestie_: &lt;<https://github.com/magento/magento2/commit/b34c0a75>>
+   * _GitHub codebijdrage_: bevestig het verschil in minder compilatie tussen php &amp; nodejs bibliotheek (groef) na update wikimedia/less.php:^5.x
 * _ACP2E-2692_: De fout &quot;van de lijst van de Basis of de mening niet gevonden&quot;komt voor wanneer het gedeeltelijke indexeren wordt uitgevoerd
    * _Nota van de Reparatie_: De gedeeltelijke herdex werkt nu correct met grote verandering in geval van secundaire db verbinding
    * _GitHub codebijdrage_: <https://github.com/magento/magento2/commit/ba25af8a>
@@ -670,6 +721,9 @@ Als een product eerder was uitgeschakeld in &quot;Alle winkelweergaven&quot; en 
 * _ACP2E-3190_: [ de Grafiek van de Producten van de Wolk ] die fout hebben wanneer het zelfde eenvoudige product aan veelvoudige configureerbare producten heeft toegewezen
    * _nota van de Reparatie_: Eerder, met afzonderlijke configureerbare producten met het zelfde eenvoudige product, keert grapQL een fout terug. Nadat deze moeilijke situatie van toepassing is, verschillende configureerbare producten met het zelfde eenvoudige product, geeft grapQL resultaat zonder geen fout.
    * _GitHub codebijdrage_: <https://github.com/magento/magento2/commit/148c3ead>
+* _ACP2E-3253_: De paginering van GraphQL karretjesV2 werkt niet correct
+   * _nota van de Reparatie_: De kwestie is bevestigd door de correcte waarde voor het huidige paginaargument in de inzamelingsvraag over te gaan. Eerder werd de verkeerde waarde doorgegeven om de huidige pagina in te stellen, waardoor de uitgave optrad.
+   * _GitHub codebijdrage_: <https://github.com/magento/magento2/commit/8459b17d>
 
 ### GraphQL, Inventaris/MSI
 
@@ -715,6 +769,9 @@ Eerder, toegewezen aan de admin store in plaats van hun respectieve opslag.
 * _ACP2E-2990_: De klant &quot;created_at&quot;datum niet Omgezet om tijdzone op de uitvoer op te slaan
    * _nota van de Reparatie_: Een kolom &quot;created_at&quot;datumwaarde wordt omgezet in het juiste datumformaat dat op de opslag wordt gebaseerd tijdzone in de de uitvoerCSV van de klant.
    * _GitHub codebijdrage_: <https://github.com/magento/magento2/commit/3056e9cb>
+* _ACP2E-3165_: [ Cloud ] die fout terwijl het controleren van de gegevens in invoergegevens gebruikend CSV krijgt
+   * _nota van de Reparatie_: Er is geen fout wanneer het controleren van de gegevens tijdens de invoer CSV. Eerder werd het volgende foutbericht weergegeven: &quot;We kunnen geen klant vinden die deze e-mail- en websitecode in rij(en): 1 aanpast wanneer de gegevens in de importsectie worden gecontroleerd met gebruik van CSV vanuit de beheerder.
+   * _GitHub codebijdrage_: <https://github.com/magento/magento2/commit/8459b17d>
 
 ### Installeren en beheren
 
@@ -786,7 +843,7 @@ Eerder, toegewezen aan de admin store in plaats van hun respectieve opslag.
    * _GitHub codebijdrage_: <https://github.com/magento/magento2/pull/38410>
 * _AC-12571_: Het navigeren in de categorienoom leidt tot fouten in Redis: &quot;Redis zitting overschrijdt gezamenlijke verbindingen&quot;
    * _GitHub kwestie_: <https://github.com/magento/magento2/issues/38851>
-   * _GitHub codebijdrage_: &lt;https://github.com/magento/magento2/ (Intern, Unmerge)>
+   * _GitHub codebijdrage_: <https://github.com/magento/magento2/commit/0611e750>
 
 ### Betalingen
 
@@ -858,8 +915,9 @@ Voordat ze automatisch werden afgewezen.
 ### SEO
 
 * _AC-11907_: Het toevoegen van URL herschrijft met een accent veroorzaakt oneindig laden
+   * _nota van de Reparatie_: Het systeem leidt nu met succes tot en functioneert URL herschrijft met accenten, verhinderend oneindig ladend tijdens het besparingsproces. Eerder veroorzaakte het toevoegen van een URL voor herschrijven met een accent een oneindig ladingsprobleem.
    * _GitHub kwestie_: <https://github.com/magento/magento2/issues/38692>
-   * _GitHub codebijdrage_: &lt;https://github.com/magento/magento2/ (Intern, Unmerge)>
+   * _GitHub codebijdrage_: <https://github.com/magento/magento2/commit/44cef3a9>
 * _ACP2E-2641_: De multiVerkeerde categorie van de Opslag rl-herschrijft voor derde niveaucategorie
    * _Bevestig nota_: Produceer correcte url herschrijft voor kinderen met ouder met douane scoped url sleutel
    * _GitHub codebijdrage_: <https://github.com/magento/magento2/commit/ea79f7dd>
@@ -869,10 +927,21 @@ Voordat ze automatisch werden afgewezen.
 
 ### Beveiliging
 
+* _AC-11762_:
+   * _Nota van het Repareren_: Werk 2FA OTP venstergebied met correcte beschrijving en standaardwaarde na verandering BiC bij
+   * _GitHub codebijdrage_: Bijgewerkt bevel voor de manier hoe de periode otp_window van nu bin/magento config zal zijn ingegaan:plaats twee factorauth/google/otp_window VALUE
+naar bin/magento config:set two factorauth/google/leeway VALUE
 * _AC-11855_: [ Uitgave ] Ontbrekende CSP van de Dooppop-up van het Font
    * _nota van de Reparatie_: Het systeem staat nu het laden van doopvont &quot;https://www.paypalobjects.com/webstatic/mktg/2014design/font/PP-Sans/PayPalSansBig-Medium.woff&#39; toe zonder de richtlijn van het Beleid van de Veiligheid van de Inhoud te overtreden, die de correcte vertoning van de Pop van de Paylater verzekert. Eerder werd het lettertype niet geladen vanwege een schending van de Content Security Policy-richtlijn, wat weergaveproblemen met de Paylater Popup veroorzaakte.
    * _GitHub kwestie_: <https://github.com/magento/magento2/issues/38624>
    * _GitHub codebijdrage_: <https://github.com/magento/magento2/pull/37401>
+* _AC-11937_:
+   * _Nota van het Repareren_: Werk 2FA OTP venstergebied met correcte beschrijving en standaardwaarde na verandering BiC bij
+   * _GitHub codebijdrage_: Bijgewerkt bevel voor de manier hoe de periode otp_window van nu bin/magento config zal zijn ingegaan:plaats twee factorauth/google/otp_window VALUE
+naar bin/magento config:set two factorauth/google/leeway VALUE
+* _AC-12309_:
+   * _Bevestig nota_: De documentatie van de gebruiker van de update voor twee-factor authentificatie (2FA) aan veranderings pop_window bevel
+   * _de codebijdrage van GitHub_: De gebruikersdocumentatie van de update voor twee-factor authentificatie (2FA) om OTP_WINDOW montagesbevel te veranderen zoals per: https://jira.corp.adobe.com/browse/AC-11762
 
 ### Verzending
 
@@ -880,10 +949,23 @@ Voordat ze automatisch werden afgewezen.
    * _nota van de Reparatie_: Het systeem gebruikt nu correct de term &quot;drager&quot;in plaats van de verkeerd gespelde &quot;currier&quot;in de de handlerfuncties van JavaScript die in het orde volgende malplaatje worden gebruikt, die correcte functienaam en codeduidelijkheid verzekeren. Voorheen werd de verkeerd gespelde term &quot;currier&quot; gebruikt, wat tot verwarring en inconsistentie in de codebase kan leiden.
    * _GitHub kwestie_: <https://github.com/magento/magento2/issues/34523>
    * _GitHub codebijdrage_: <https://github.com/magento/magento2/pull/33414>
+* _AC-11811_:
+   * _Nota van de Moeilijke situatie_: UPS REST &quot;een verzending kan geen KGS/IN of LBS/CM of OZS/CM als zijn eenheid van metingen hebben&quot;
+   * _GitHub kwestie_: &lt;<https://github.com/magento/magento2/commit/9b1713d8>>
+   * _GitHub codebijdrage_: De tarieven van UPS zijn zichtbaar in controle en kart.
+* _AC-11916_:
+   * _Bevestig nota_: [ QPT ] UPS REST &quot;Een verzending kan KGS/IN of LBS/CM of OZS/CM als zijn eenheid van metingen niet hebben&quot;
+   * _GitHub codebijdrage_: De tarieven van UPS zijn zichtbaar in controle en kart.
 * _AC-11938_: UPS REST &quot;Een verzending kan geen KGS/IN of LBS/CM of OZS/CM als zijn eenheid van metingen hebben&quot;
    * _nota van de Reparatie_: Zorg aan de tarieven van UPS in controle en kart zichtbaar zouden moeten zijn.
    * _GitHub kwestie_: <https://github.com/magento/magento2/issues/38618>
    * _GitHub codebijdrage_: <https://github.com/magento/magento2/commit/493e01f5>
+* _AC-11983_:
+   * _Bevestig nota_: [ QPT ] UPS REST &quot;Een verzending kan KGS/IN of LBS/CM of OZS/CM als zijn eenheid van metingen niet hebben&quot;
+   * _GitHub codebijdrage_: De tarieven van UPS zijn zichtbaar in controle en kart.
+* _AC-11984_:
+   * _Bevestig nota_: [ QPT ] UPS REST &quot;Een verzending kan KGS/IN of LBS/CM of OZS/CM als zijn eenheid van metingen niet hebben&quot;
+   * _GitHub codebijdrage_: De tarieven van UPS zijn zichtbaar in controle en kart.
 * _ACP2E-2738_: Het volgen Venster die onjuiste Verwachte Datum van de Levering tonen
    * _nota van de Reparatie_: De correcte Datum van de Levering van de vertoning voor de Drager van de Verkoop van de Verkoop van de Verkoop.
    * _GitHub codebijdrage_: <https://github.com/magento/magento2/commit/57a32313>
@@ -913,20 +995,17 @@ Voordat ze automatisch werden afgewezen.
 
 ### UI Framework
 
-* _AC-12128_:
-   * _Bevestig nota_: [ de veiligheidskwetsbaarheid CVE-2020-27511 van de Wolk ] Prototype.js
-   * _GitHub kwestie_: &lt;<https://github.com/magento/magento2/commit/de4dfb8e>>
-   * _GitHub codebijdrage_: De kwetsbaarheid CVE-2020-27511 van de veiligheid zou moeten worden opgelost
-* _AC-12128_: [ de veiligheidskwetsbaarheid CVE-2020-27511 van de Wolk ] Prototype.js
-   * _Bevestig nota_: De kwetsbaarheid CVE-2020-27511 van de veiligheid zou moeten worden opgelost
+* _AC-12128_: De veiligheidskwetsbaarheid van Prototype.js moeilijke situatie CVE-2020-27511
+   * _nota van de Reparatie_: Het systeem is bijgewerkt om de veiligheidskwetsbaarheid CVE-2020-27511 in Prototype.js 1.7.3 te richten, die de algemene veiligheid van het systeem verbetert. Voorafgaand aan deze update was het systeem gevoelig voor een Regular Expression Denial of Service (ReDOS) via het stripping Crafted HTML tags.
    * _GitHub codebijdrage_: <https://github.com/magento/magento2/commit/de4dfb8e>
+* _AC-12128_:
+   * _Bevestig nota_: De veiligheidskwetsbaarheid van Prototype.js moeilijke situatie CVE-2020-27511
+   * _GitHub kwestie_: &lt;<https://github.com/magento/magento2/commit/de4dfb8e>>
+   * _GitHub codebijdrage_: Het systeem is bijgewerkt om de veiligheidskwetsbaarheid CVE-2020-27511 in Prototype.js 1.7.3 te richten, die de algemene veiligheid van het systeem verbetert. Voorafgaand aan deze update was het systeem gevoelig voor een Regular Expression Denial of Service (ReDOS) via het stripping Crafted HTML tags.
 * _AC-12189_: Grunt minder gebruikspubs/prefix voor broncemaps
    * _nota van de Reparatie_: Het systeem produceert nu minder/css broncemaps zonder de /pub prefix voor wegen wanneer het gebruiken van steen, die de behoefte aan een tijdelijke oplossing in de configuratie van de webserver elimineren. Eerder, vereiste het gebruik van het prefix /pub in broncemaps wegen een specifieke configuratie in de webserver om correct te functioneren.
    * _GitHub kwestie_: <https://github.com/magento/magento2/issues/38837>
    * _GitHub codebijdrage_: <https://github.com/magento/magento2/pull/38840>
-* _AC-12950_: Tint 7.3.0 van de update in composer.json en verwijder uit dossiers uit spel 7
-   * _Bevestig nota_: Maak TinyMCE 7.x om een gesteunde versie voor Adobe Commerce 2.4.8-bèta1 te zijn
-   * _GitHub codebijdrage_: &lt;https://github.com/magento/magento2/ (Intern, Unmerge)>
 * _AC-1306_: De statische inhoud stelt voor gehandicapte modules op
    * _nota van de Reparatie_: Het systeem sluit nu CSS met betrekking tot gehandicapte modules van de definitieve CSS outputdossiers uit, die ervoor zorgen dat de onnodige stijlen niet worden geladen. Eerder werden CSS met betrekking tot uitgeschakelde modules opgenomen in de uiteindelijke CSS-uitvoerbestanden, wat leidde tot het laden van extra, onnodige stijlen.
    * _GitHub kwestie_: <https://github.com/magento/magento2/issues/24666>
