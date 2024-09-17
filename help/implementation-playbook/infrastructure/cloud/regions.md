@@ -3,7 +3,7 @@ title: Cloud-infrastructuurregio's
 description: Bekijk diagrammen die de AWS en Azure regio's weergeven die beschikbaar zijn voor Adobe Commerce.
 exl-id: d8f59845-8281-4c9f-8101-51f9c35a0455
 feature: Cloud
-source-git-commit: 4b42fc5deb12c97c2c078d0a25992ba23735747e
+source-git-commit: b53cb97af72c262e236e4f2d103f70968386bdb1
 workflow-type: tm+mt
 source-wordcount: '73'
 ht-degree: 0%
@@ -17,7 +17,7 @@ De volgende secties bevatten informatie over de verschillende AWS- en Azure-regi
 
 ## AWS-regio&#39;s
 
-![ Diagram die de gebieden van AWS tonen ](../../../assets/playbooks/aws-regions.png){zoomable="yes"}
+![ Diagram die de gebieden van AWS tonen ](../../../assets/playbooks/aws-regions.svg){zoomable="yes"}
 
 >[!NOTE]
 >
@@ -25,7 +25,7 @@ De volgende secties bevatten informatie over de verschillende AWS- en Azure-regi
 
 ## Azure-gebieden
 
-![ Diagram die Azure gebieden ](../../../assets/playbooks/azure-regions.png){zoomable="yes"} tonen
+![ Diagram die Azure gebieden ](../../../assets/playbooks/azure-regions.svg){zoomable="yes"} tonen
 
 >[!NOTE]
 >
