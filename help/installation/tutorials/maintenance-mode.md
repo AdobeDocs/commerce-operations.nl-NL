@@ -2,9 +2,9 @@
 title: Onderhoudsmodus in- of uitschakelen
 description: Voer de volgende stappen uit om aan te passen wat klanten zien wanneer uw Adobe Commerce-implementatie niet beschikbaar is voor onderhoud.
 exl-id: 5d9f1493-e771-47b4-b906-3771026cf07a
-source-git-commit: ddf988826c29b4ebf054a4d4fb5f4c285662ef4e
+source-git-commit: a5dbefda6b77d993756143ef0e7270425f824c44
 workflow-type: tm+mt
-source-wordcount: '547'
+source-wordcount: '533'
 ht-degree: 0%
 
 ---
@@ -17,10 +17,8 @@ Adobe Commerce gebruikt [ onderhoudswijze ](../../configuration/bootstrap/applic
 
 De toepassing detecteert de onderhoudsmodus als volgt:
 
-* Als `var/.maintenance.flag` niet bestaat, is de onderhoudsmodus uitgeschakeld en werkt de toepassing normaal.
-* Anders is de onderhoudsmodus ingeschakeld, tenzij `var/.maintenance.ip` bestaat.
-
-  `var/.maintenance.ip` kan een lijst met IP-adressen bevatten. Als een ingangspunt wordt betreden gebruikend HTTP en het cliëntIP adres beantwoordt aan één van de ingangen in die lijst, dan is de onderhoudswijze weg.
+* Als `var/.maintenance.flag` bestaat, is de onderhoudsmodus ingeschakeld en retourneert de toepassing een onderhoudspagina van 503.
+* Als `var/.maintenance.ip` bestaat en de client-IP overeenkomt met een van de IP-adresitems in dit bestand, wordt de onderhoudspagina genegeerd voor de aanvraag.
 
 ## De toepassing installeren
 
