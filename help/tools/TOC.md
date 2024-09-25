@@ -2,7 +2,7 @@
 user-guide-title: Gereedschappen
 user-guide-description: Leer meer over de verschillende gereedschappen die u met Adobe Commerce kunt gebruiken, hun gebruik, het installatieproces en hoe u toegang krijgt.
 feature: Configuration
-source-git-commit: 582f36f9f38394d8af9aaf660847be15372fd815
+source-git-commit: 9c9001f28c4cb28ad881bb9a3c78e875fcbef607
 workflow-type: tm+mt
 source-wordcount: '5878'
 ht-degree: 0%
@@ -129,7 +129,7 @@ ht-degree: 0%
          - [MDVA-42507: De cache van volledige pagina wordt gereinigd nadat een testupdate voor de kartelregel is toegepast](quality-patches-tool/patches-available-in-qpt/v1-1-9/mdva-42507-full-page-cache-is-cleaned-after-applying-staging-update-for-cart-rule.md)
          - [MDVA-42657: Kan geen categorieën selecteren in de omstandigheden van het klantensegment](quality-patches-tool/patches-available-in-qpt/v1-1-9/mdva-42657-unable-to-select-categories-in-customer-segment-conditions.md)
          - [MDVA-42806: Nieuwe e-mail voor bedrijfsregistratie wordt verzonden telkens wanneer een bestaande onderneming wordt bijgewerkt](quality-patches-tool/patches-available-in-qpt/v1-1-9/mdva-42806-new-company-registration-email-sent-when-existing-company-updated.md)
-      - v1-1-10 {#v1-1-10}
+      - v1.1.10 {#v1-1-10}
          - [Overzicht: QPT (Quality Patches Tool) v1.1.10](quality-patches-tool/patches-available-in-qpt/v1-1-10/overview.md)
          - [MDVA-38728: Als u de zichtbaarheid van een product wijzigt, wordt de URL voor het wijzigen van de hoofdwebsite gewijzigd.](quality-patches-tool/patches-available-in-qpt/v1-1-10/mdva-38728-changing-product-visibility-creates-url-rewrite-for-the-main-website.md)
          - [MDVA-39181: producten uit categorie &quot;niet gedefinieerd&quot; in regel worden in de desbetreffende productregels vermeld](quality-patches-tool/patches-available-in-qpt/v1-1-10/mdva-39181-related-product-rules-show-products-from-category-not-defined-in-rule.md)
@@ -148,7 +148,7 @@ ht-degree: 0%
          - [MDVA-42269: Admin-gebruiker kan zich niet aanmelden bij Admin vanwege de fout TypeError](quality-patches-tool/patches-available-in-qpt/v1-1-11/mdva-42269-admin-user-cannot-log-in-to-admin-due-to-the-typeerror.md)
          - [MDVA-42520: tweemaal toegepast belastingtarief bij gebruik van &quot;Enable Cross Border Trade&quot;](quality-patches-tool/patches-available-in-qpt/v1-1-11/mdva-42520-tax-rate-applied-twice-when-enable-cross-border-trade-is-used.md)
          - [MDVA-42790: Productprijskenmerken kunnen niet worden bijgewerkt voor specifieke websites via REST API](quality-patches-tool/patches-available-in-qpt/v1-1-11/mdva-42790-product-price-attributes-cannot-be-updated-for-specific-website-via-rest-api.md)
-      - v1-1-12 {#v1-1-12}
+      - v1.1.12 {#v1-1-12}
          - [Overzicht: QPT (Quality Patches Tool) v1.1.12](quality-patches-tool/patches-available-in-qpt/v1-1-12/overview.md)
          - [MDVA-39546: De het opvoeren begindatum van de Update kan aan een datum vroeger dan huidige datum worden geplaatst](quality-patches-tool/patches-available-in-qpt/v1-1-12/mdva-39546-staging-update-start-date-set-to-earlier-date-than-current-date.md)
          - [MDVA-39713: de gebruiker kan de begintijd van de actieve geplande update bewerken](quality-patches-tool/patches-available-in-qpt/v1-1-12/mdva-39713-user-able-to-edit-start-time-for-active-scheduled-update.md)
@@ -623,6 +623,8 @@ ht-degree: 0%
          - [ACSD-48210: Het kenmerk voor een specifiek bereik van de winkelweergave heeft voorrang op algemene waarden](quality-patches-tool/patches-available-in-qpt/v1-1-50/acsd-48210-store-view-specific-scope-attribute-overrides-global-values.md)
          - [ACSD-59280: RefCollectionUnionType::getName()-fout in 2.4.4-pX-installaties](quality-patches-tool/patches-available-in-qpt/v1-1-50/acsd-59280-fix-for-reflection-union-type-error.md)
          - [ACSD-60303: probleem met plaatsing van beheerbestellingen is opgelost waarbij HTML-miniatuur is ingeschakeld](quality-patches-tool/patches-available-in-qpt/v1-1-50/acsd-60303-admin-order-placement-fix.md)
+      - v1.1.51 {#v1-1-51}
+         - [Overzicht: [!DNL Quality Patches Tool]  (QPT) v1.1.51](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-51/overview.md)
       - [Patch controleren voor Adobe Commerce-probleem met het gereedschap Kwaliteitspatches](quality-patches-tool/patches-available-in-qpt/check-patch-for-magento-issue-with-magento-quality-patches.md)
 
 - Verwijzing naar opdrachtregelprogramma&#39;s {#cli-reference}
