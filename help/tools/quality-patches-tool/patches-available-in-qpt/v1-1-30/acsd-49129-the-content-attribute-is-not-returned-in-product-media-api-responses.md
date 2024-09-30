@@ -3,9 +3,9 @@ title: '''ACSD-49129: kenmerk "Content" niet geretourneerd in API-reacties voor 
 description: Pas de ACSD-49129-patch toe om het Adobe Commerce-probleem op te lossen, waarbij het *content*-kenmerk (*base64 image code*) niet wordt geretourneerd in de reacties van de product media-API van "rest/V1/products/sku/media`.
 feature: REST, Attributes, Media, Page Content, Products
 role: Admin
-source-git-commit: 49ac8ad1f174546fcc0454645b2480a40ead2924
+source-git-commit: fe11599dbef283326db029b0312ad290cde0ba0a
 workflow-type: tm+mt
-source-wordcount: '346'
+source-wordcount: '345'
 ht-degree: 0%
 
 ---
@@ -50,7 +50,7 @@ Het *inhoud* attribuut is niet aanwezig in de API reacties.
 
 Om individuele flarden toe te passen, gebruik de volgende verbindingen afhankelijk van uw plaatsingsmethode:
 
-* Adobe Commerce of Magento Open Source op locatie: [[!DNL Quality Patches Tool]  > Gebruik ](https://experienceleague.adobe.com/docs/commerce-operations/tools/quality-patches-tool/usage.html) in de handleiding [!DNL Quality Patches Tool] .
+* Adobe Commerce of Magento Open Source op locatie: [[!DNL Quality Patches Tool]  > Gebruik ](/help/tools/quality-patches-tool/usage.md) in de handleiding [!DNL Quality Patches Tool] .
 * Adobe Commerce op wolkeninfrastructuur: [ Verbeteringen en Patches > Pas Patches ](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html) in Commerce op de gids van de Infrastructuur van de Wolk toe.
 
 ## Gerelateerde lezing

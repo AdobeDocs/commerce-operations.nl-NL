@@ -3,9 +3,9 @@ title: 'ACSD-50512: Fout bij het bijwerken van de begindatum voor een downloadba
 description: Pas de ACSD-51892-patch toe om het probleem met de Adobe Commerce-prestaties op te lossen wanneer de fout *De downloadbare koppeling is niet gerelateerd aan het product.Controleer de koppeling en probeer het opnieuw*, en dit gebeurt bij het bijwerken van de begindatum voor een downloadbare product-staging-update.
 feature: Products, Staging
 role: Admin
-source-git-commit: 49ac8ad1f174546fcc0454645b2480a40ead2924
+source-git-commit: fe11599dbef283326db029b0312ad290cde0ba0a
 workflow-type: tm+mt
-source-wordcount: '417'
+source-wordcount: '416'
 ht-degree: 0%
 
 ---
@@ -51,7 +51,7 @@ U krijgt de fout: *de downloadbare verbinding is niet verwant met het product. V
 
 Om individuele flarden toe te passen, gebruik de volgende verbindingen afhankelijk van uw plaatsingsmethode:
 
-* Adobe Commerce of Magento Open Source op locatie: [[!DNL Quality Patches Tool]  > Gebruik ](https://experienceleague.adobe.com/docs/commerce-operations/tools/quality-patches-tool/usage.html) in de handleiding [!DNL Quality Patches Tool] .
+* Adobe Commerce of Magento Open Source op locatie: [[!DNL Quality Patches Tool]  > Gebruik ](/help/tools/quality-patches-tool/usage.md) in de handleiding [!DNL Quality Patches Tool] .
 * Adobe Commerce op wolkeninfrastructuur: [ Verbeteringen en Patches > Pas Patches ](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html) in Commerce op de gids van de Infrastructuur van de Wolk toe.
 
 ## Gerelateerde lezing

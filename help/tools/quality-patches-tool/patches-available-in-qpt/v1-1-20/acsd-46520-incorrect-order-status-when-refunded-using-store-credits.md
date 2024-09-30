@@ -3,9 +3,9 @@ title: 'ACSD-46520: Onjuiste orderstatus bij teruggaaf met gebruik van winkelcre
 description: Dit artikel biedt een oplossing voor het probleem waarbij gebruikers een onjuiste orderstatus krijgen wanneer ze deze terugbetalen met gebruik van winkelcredits.
 feature: Orders, Returns
 role: Admin
-source-git-commit: 7f17f1b286f635b8f65ac877e9de5f1d1a6a6461
+source-git-commit: fe11599dbef283326db029b0312ad290cde0ba0a
 workflow-type: tm+mt
-source-wordcount: '376'
+source-wordcount: '375'
 ht-degree: 0%
 
 ---
@@ -54,7 +54,7 @@ De ordestatus is *Volledig*, die niet de correcte status is.
 
 Om individuele flarden toe te passen, gebruik de volgende verbindingen afhankelijk van uw plaatsingsmethode:
 
-* Adobe Commerce of [!DNL Magento Open Source] op-gebouw: [ Hulpmiddelen van het Patroon van de Kwaliteit > Gebruik ](https://experienceleague.adobe.com/docs/commerce-operations/tools/quality-patches-tool/usage.html) in de gids van het Hulpmiddel van het Patroon van de Kwaliteit.
+* Adobe Commerce of [!DNL Magento Open Source] op-gebouw: [ Hulpmiddelen van het Patroon van de Kwaliteit > Gebruik ](/help/tools/quality-patches-tool/usage.md) in de gids van het Hulpmiddel van het Patroon van de Kwaliteit.
 * Adobe Commerce op wolkeninfrastructuur: [ Verbeteringen en Patches > Pas Patches ](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html) in Commerce op de gids van de Infrastructuur van de Wolk toe.
 
 ## Gerelateerde lezing

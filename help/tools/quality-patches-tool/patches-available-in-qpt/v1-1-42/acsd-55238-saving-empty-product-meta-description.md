@@ -3,9 +3,9 @@ title: "ACSD-55238: Bewaar de lege meta-beschrijving van het product"
 description: Pas ACSD-55238 flard toe om de kwestie van Adobe Commerce te bevestigen waar een productbeschrijving die HTML code bevat die door  [!DNL Page Builder]  wordt geproduceerd of een andere redacteur van HTML altijd in de meta beschrijving wordt getoond, en er is geen manier om het aan leeg te plaatsen.
 feature: Products, Page Builder, Page Content
 role: Admin, Developer
-source-git-commit: d722ba5ba25ffc03d87b9eddeb2830353124055d
+source-git-commit: fe11599dbef283326db029b0312ad290cde0ba0a
 workflow-type: tm+mt
-source-wordcount: '406'
+source-wordcount: '405'
 ht-degree: 0%
 
 ---
@@ -51,7 +51,7 @@ Wanneer een product een blok in zijn beschrijving heeft, wordt het gebruikt voor
 
 Om individuele flarden toe te passen, gebruik de volgende verbindingen afhankelijk van uw plaatsingsmethode:
 
-* Adobe Commerce of Magento Open Source op locatie: [[!DNL Quality Patches Tool]  > Gebruik ](https://experienceleague.adobe.com/docs/commerce-operations/tools/quality-patches-tool/usage.html) in de handleiding [!DNL Quality Patches Tool] .
+* Adobe Commerce of Magento Open Source op locatie: [[!DNL Quality Patches Tool]  > Gebruik ](/help/tools/quality-patches-tool/usage.md) in de handleiding [!DNL Quality Patches Tool] .
 * Adobe Commerce op wolkeninfrastructuur: [ Verbeteringen en Patches > Pas Patches ](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html) in Commerce op de gids van de Infrastructuur van de Wolk toe.
 
 ## Gerelateerde lezing

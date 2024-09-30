@@ -3,9 +3,9 @@ title: 'ACSD-48627: configureerbaar product uit de voorraad veroorzaakt een fout
 description: Pas de ACSD-48627-patch toe om het Adobe Commerce-probleem op te lossen, waarbij het configureerbare product uit de voorraad een fout veroorzaakt bij het verzenden van een GraphQL-verzoek om kaartgegevens.
 feature: Admin Workspace, Configuration, Orders, Products
 role: Admin
-source-git-commit: e4744df378c3436598e49500d68cf4ef45d64f8c
+source-git-commit: fe11599dbef283326db029b0312ad290cde0ba0a
 workflow-type: tm+mt
-source-wordcount: '406'
+source-wordcount: '405'
 ht-degree: 0%
 
 ---
@@ -275,7 +275,7 @@ Er is een *Interne serverfout* in de reactie.
 
 Om individuele flarden toe te passen, gebruik de volgende verbindingen afhankelijk van uw plaatsingsmethode:
 
-* Adobe Commerce of Magento Open Source op locatie: [[!DNL Quality Patches Tool]  > Gebruik ](https://experienceleague.adobe.com/docs/commerce-operations/tools/quality-patches-tool/usage.html) in de handleiding [!DNL Quality Patches Tool] .
+* Adobe Commerce of Magento Open Source op locatie: [[!DNL Quality Patches Tool]  > Gebruik ](/help/tools/quality-patches-tool/usage.md) in de handleiding [!DNL Quality Patches Tool] .
 * Adobe Commerce op wolkeninfrastructuur: [ Verbeteringen en Patches > Pas Patches ](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html) in Commerce op de gids van de Infrastructuur van de Wolk toe.
 
 ## Gerelateerde lezing

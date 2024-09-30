@@ -3,9 +3,9 @@ title: 'ACSD-54264: Fout wanneer klant probeert uit te checken met een verhandel
 description: Pas de ACSD-54264-patch toe om het Adobe Commerce-probleem op te lossen waarbij het foutbericht "U kunt het gevraagde kenmerk niet bijwerken. Rij-id:store_id" wordt weergegeven wanneer een klant een aanhalingsteken in een andere winkelweergave wil uitchecken met een verhandelbaar aanhalingsteken.
 feature: B2B, Checkout
 role: Admin, Developer
-source-git-commit: d722ba5ba25ffc03d87b9eddeb2830353124055d
+source-git-commit: fe11599dbef283326db029b0312ad290cde0ba0a
 workflow-type: tm+mt
-source-wordcount: '446'
+source-wordcount: '445'
 ht-degree: 0%
 
 ---
@@ -65,7 +65,7 @@ De klant plaatst een bestelling met dit citaat.
 
 Om individuele flarden toe te passen, gebruik de volgende verbindingen afhankelijk van uw plaatsingsmethode:
 
-* Adobe Commerce of Magento Open Source op locatie: [[!DNL Quality Patches Tool]  > Gebruik ](https://experienceleague.adobe.com/docs/commerce-operations/tools/quality-patches-tool/usage.html) in de handleiding [!DNL Quality Patches Tool] .
+* Adobe Commerce of Magento Open Source op locatie: [[!DNL Quality Patches Tool]  > Gebruik ](/help/tools/quality-patches-tool/usage.md) in de handleiding [!DNL Quality Patches Tool] .
 * Adobe Commerce op wolkeninfrastructuur: [ Verbeteringen en Patches > Pas Patches ](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html) in Commerce op de gids van de Infrastructuur van de Wolk toe.
 
 ## Gerelateerde lezing

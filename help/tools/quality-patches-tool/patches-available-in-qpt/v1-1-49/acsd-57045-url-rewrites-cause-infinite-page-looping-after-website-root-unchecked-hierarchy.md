@@ -3,9 +3,9 @@ title: 'ACSD-57045: URL herschrijft zorgt voor oneindige paginering nadat [!UICO
 description: Pas de ACSD-57045-patch toe om het Adobe Commerce-probleem op te lossen, waarbij URL-herschrijvingen ertoe leiden dat een oneindige paginarand wordt herhaald nadat [!UICONTROL Website Root] is uitgeschakeld in [!UICONTROL Hierarchy] .
 feature: CMS
 role: Admin, Developer
-source-git-commit: 52742cbc2098958f8e4cddf8534e0c2bf79d5c3e
+source-git-commit: fe11599dbef283326db029b0312ad290cde0ba0a
 workflow-type: tm+mt
-source-wordcount: '495'
+source-wordcount: '494'
 ht-degree: 0%
 
 ---
@@ -66,7 +66,7 @@ De *test-Kind* pagina wordt niet geopend. Browser probeert om de *test-ouder/tes
 
 Om individuele flarden toe te passen, gebruik de volgende verbindingen afhankelijk van uw plaatsingsmethode:
 
-* Adobe Commerce of Magento Open Source op locatie: [[!DNL Quality Patches Tool]  > Gebruik ](https://experienceleague.adobe.com/docs/commerce-operations/tools/quality-patches-tool/usage.html) in de handleiding [!DNL Quality Patches Tool] .
+* Adobe Commerce of Magento Open Source op locatie: [[!DNL Quality Patches Tool]  > Gebruik ](/help/tools/quality-patches-tool/usage.md) in de handleiding [!DNL Quality Patches Tool] .
 * Adobe Commerce op wolkeninfrastructuur: [ Verbeteringen en Patches > Pas Patches ](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html) in Commerce op de gids van de Infrastructuur van de Wolk toe.
 
 ## Gerelateerde lezing

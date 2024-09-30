@@ -3,9 +3,9 @@ title: 'ACSD-54989: Bedrijfsbeheer kan geen bestelling uitvoeren als [!UICONTROL
 description: Pas de ACSD-54989-patch toe om het Adobe Commerce-probleem op te lossen, waarbij bedrijfsbeheerders geen orders kunnen plaatsen als [!UICONTROL Enable Purchase Orders] op Ja is ingesteld en [!UICONTROL Purchase Order] op Nee is ingesteld.
 feature: Orders, Companies, Purchase Orders
 role: Admin, Developer
-source-git-commit: d722ba5ba25ffc03d87b9eddeb2830353124055d
+source-git-commit: fe11599dbef283326db029b0312ad290cde0ba0a
 workflow-type: tm+mt
-source-wordcount: '389'
+source-wordcount: '388'
 ht-degree: 0%
 
 ---
@@ -58,7 +58,7 @@ De pagina **[!UICONTROL My Account]** wordt geopend en de volgorde wordt niet ge
 
 Om individuele flarden toe te passen, gebruik de volgende verbindingen afhankelijk van uw plaatsingsmethode:
 
-* Adobe Commerce of Magento Open Source op locatie: [[!DNL Quality Patches Tool]  > Gebruik ](https://experienceleague.adobe.com/docs/commerce-operations/tools/quality-patches-tool/usage.html) in de handleiding [!DNL Quality Patches Tool] .
+* Adobe Commerce of Magento Open Source op locatie: [[!DNL Quality Patches Tool]  > Gebruik ](/help/tools/quality-patches-tool/usage.md) in de handleiding [!DNL Quality Patches Tool] .
 * Adobe Commerce op wolkeninfrastructuur: [ Verbeteringen en Patches > Pas Patches ](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html) in Commerce op de gids van de Infrastructuur van de Wolk toe.
 
 ## Gerelateerde lezing

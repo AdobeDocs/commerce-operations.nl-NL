@@ -3,9 +3,9 @@ title: "ACSD-48910: gebundeld product met meerdere bronnen verlaat de voorraad n
 description: Pas de ACSD-48910-patch toe om het Adobe Commerce-probleem op te lossen waarbij het gebundelde product dat aan meerdere bronnen is toegewezen, uit voorraad raakt nadat een bestelling is gefactureerd en verzonden, zelfs als het nog steeds een hoeveelheid heeft die niet gelijk is aan nul.
 feature: Products, Inventory
 role: Admin, Developer
-source-git-commit: d722ba5ba25ffc03d87b9eddeb2830353124055d
+source-git-commit: fe11599dbef283326db029b0312ad290cde0ba0a
 workflow-type: tm+mt
-source-wordcount: '432'
+source-wordcount: '431'
 ht-degree: 0%
 
 ---
@@ -54,7 +54,7 @@ Het gebundelde product wijzigt zijn status in out-of-stock.
 
 Om individuele flarden toe te passen, gebruik de volgende verbindingen afhankelijk van uw plaatsingsmethode:
 
-* Adobe Commerce of Magento Open Source op locatie: [[!DNL Quality Patches Tool]  > Gebruik ](https://experienceleague.adobe.com/docs/commerce-operations/tools/quality-patches-tool/usage.html) in de handleiding [!DNL Quality Patches Tool] .
+* Adobe Commerce of Magento Open Source op locatie: [[!DNL Quality Patches Tool]  > Gebruik ](/help/tools/quality-patches-tool/usage.md) in de handleiding [!DNL Quality Patches Tool] .
 * Adobe Commerce op wolkeninfrastructuur: [ Verbeteringen en Patches > Pas Patches ](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html) in Commerce op de gids van de Infrastructuur van de Wolk toe.
 
 ## Gerelateerde lezing

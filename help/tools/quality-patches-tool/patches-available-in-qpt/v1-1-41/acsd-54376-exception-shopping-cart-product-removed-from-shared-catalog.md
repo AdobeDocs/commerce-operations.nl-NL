@@ -3,9 +3,9 @@ title: "ACSD-54376: Uitzondering in winkelwagentje wanneer het product uit [!UIC
 description: Pas de ACSD-54376-patch toe om het Adobe Commerce-probleem op te lossen, waarbij een uitzondering optreedt in het winkelwagentje wanneer een product uit de [!UICONTROL shared catalog] wordt verwijderd nadat het aan het winkelwagentje is toegevoegd.
 feature: Shopping Cart, B2B
 role: Admin, Developer
-source-git-commit: d722ba5ba25ffc03d87b9eddeb2830353124055d
+source-git-commit: fe11599dbef283326db029b0312ad290cde0ba0a
 workflow-type: tm+mt
-source-wordcount: '379'
+source-wordcount: '378'
 ht-degree: 0%
 
 ---
@@ -53,7 +53,7 @@ Een niet-afgehandelde uitzondering wordt weergegeven op de uitcheckpagina.
 
 Om individuele flarden toe te passen, gebruik de volgende verbindingen afhankelijk van uw plaatsingsmethode:
 
-* Adobe Commerce of Magento Open Source op locatie: [[!DNL Quality Patches Tool]  > Gebruik ](https://experienceleague.adobe.com/docs/commerce-operations/tools/quality-patches-tool/usage.html) in de handleiding [!DNL Quality Patches Tool] .
+* Adobe Commerce of Magento Open Source op locatie: [[!DNL Quality Patches Tool]  > Gebruik ](/help/tools/quality-patches-tool/usage.md) in de handleiding [!DNL Quality Patches Tool] .
 * Adobe Commerce op wolkeninfrastructuur: [ Verbeteringen en Patches > Pas Patches ](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html) in Commerce op de gids van de Infrastructuur van de Wolk toe.
 
 ## Gerelateerde lezing

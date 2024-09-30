@@ -3,9 +3,9 @@ title: 'ACSD-48234: zoekresultaat catalogus onjuiste telling categorie-items ind
 description: Pas de ACSD-48234-patch toe om het Adobe Commerce-probleem op te lossen waarbij het zoekresultaat van de catalogus een onjuist aantal categorieën van items weergeeft wanneer de optie [!UICONTROL Display Out of Stock Products] is ingeschakeld.
 feature: Admin Workspace, Categories, Catalog Management, Orders, Products, Search
 role: Admin
-source-git-commit: 7f17f1b286f635b8f65ac877e9de5f1d1a6a6461
+source-git-commit: fe11599dbef283326db029b0312ad290cde0ba0a
 workflow-type: tm+mt
-source-wordcount: '386'
+source-wordcount: '385'
 ht-degree: 0%
 
 ---
@@ -56,7 +56,7 @@ Zowel prod1 als prod2 producten worden getoond.
 
 Om individuele flarden toe te passen, gebruik de volgende verbindingen afhankelijk van uw plaatsingsmethode:
 
-* Adobe Commerce of Magento Open Source op locatie: [[!DNL Quality Patches Tool]  > Gebruik ](https://experienceleague.adobe.com/docs/commerce-operations/tools/quality-patches-tool/usage.html) in de handleiding [!DNL Quality Patches Tool] .
+* Adobe Commerce of Magento Open Source op locatie: [[!DNL Quality Patches Tool]  > Gebruik ](/help/tools/quality-patches-tool/usage.md) in de handleiding [!DNL Quality Patches Tool] .
 * Adobe Commerce op wolkeninfrastructuur: [ Verbeteringen en Patches > Pas Patches ](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html) in Commerce op de gids van de Infrastructuur van de Wolk toe.
 
 ## Gerelateerde lezing
