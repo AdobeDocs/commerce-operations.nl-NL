@@ -2,9 +2,9 @@
 title: Beta-releases
 description: Leer meer over de bètareleases van Adobe Commerce en hoe u hieraan kunt deelnemen.
 exl-id: 662cb061-995f-4e09-a2ef-9e607cc0000b
-source-git-commit: f90279e0e152204ac976db307ca14d4418cbcba8
+source-git-commit: a6c0a7f8c2a2bd6156f19838e05f8046209177e4
 workflow-type: tm+mt
-source-wordcount: '1094'
+source-wordcount: '1102'
 ht-degree: 0%
 
 ---
@@ -50,7 +50,7 @@ Deze bèta steunt drie nieuwe mogelijkheden in [`productSearch` vraag ](https://
 
       - Nota: Dit onderzoekstype is verschillend van het bestaande [ uitdrukkingsonderzoek ](https://developer.adobe.com/commerce/services/graphql/live-search/product-search/#phrase), dat een autocomplete onderzoek uitvoert. Als de waarde van het kenmerk van het product bijvoorbeeld &quot;outdoorbroek&quot; is, retourneert een zoekopdracht met woordgroepen een reactie voor &quot;out pan&quot;, maar wordt geen reactie voor &quot;of ants&quot; geretourneerd. A contains search, echter, retourneert wel een reactie op ‘or ants’.
 
-Deze nieuwe voorwaarden verbeteren het het filtreren van de onderzoeksvraag mechanisme om onderzoeksresultaten te raffineren. Deze nieuwe voorwaarden hebben geen invloed op de hoofdzoekquery. Stuur een e-mail naar `sagonzal@adobe.com` of `alexj@adobe.com` voor toegang tot de bètaversie.
+Deze nieuwe voorwaarden verbeteren het het filtreren van de onderzoeksvraag mechanisme om onderzoeksresultaten te raffineren. Deze nieuwe voorwaarden hebben geen invloed op de hoofdzoekquery. Om aan bèta deel te nemen, verzend een e-mailverzoek naar [ Sandra Gonzales Mangana ](mailto:sagonzal@adobe.com) of [ Alex Jose ](mailto:alexj@adobe.com).
 
 Om Live Onderzoek bèta te installeren, zie de [ Levende gids van het Onderzoek ](https://experienceleague.adobe.com/en/docs/commerce-merchant-services/live-search/install#install-the-live-search-beta).
 
