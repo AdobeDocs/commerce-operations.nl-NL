@@ -2,9 +2,9 @@
 user-guide-title: Gereedschappen
 user-guide-description: Leer meer over de verschillende gereedschappen die u met Adobe Commerce kunt gebruiken, hun gebruik, het installatieproces en hoe u toegang krijgt.
 feature: Configuration
-source-git-commit: dff811bbb4b70895f57d37b19c434e88b6f88dad
+source-git-commit: 0394a126e801c53acf744cdbca6f411919accd48
 workflow-type: tm+mt
-source-wordcount: '5909'
+source-wordcount: '5919'
 ht-degree: 0%
 
 ---
@@ -629,6 +629,7 @@ ht-degree: 0%
          - [ACSD-60538: kenmerken tonen niet of een product is uitgeschakeld](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-51/acsd-60538-if-product-is-disabled-attributes-dont-show.md)
       - v1.1.52 {#v1-1-52}
          - [Overzicht: [!DNL Quality Patches Tool]  (QPT) v1.1.52](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-52/overview.md)
+         - [ACSD-60590: Verbeterende prestaties van Bestsellers Aggregated Daily Report Generation](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-52/acsd-60590-optimized-bestseller-report-generation.md)
          - [ACSD-59925: Items sorteren in [!UICONTROL Media Gallery]](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-52/acsd-59925-sorting-items-in-media-gallery.md)
       - [Patch controleren voor Adobe Commerce-probleem met het gereedschap Kwaliteitspatches](quality-patches-tool/patches-available-in-qpt/check-patch-for-magento-issue-with-magento-quality-patches.md)
 
