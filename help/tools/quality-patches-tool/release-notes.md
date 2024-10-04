@@ -2,9 +2,9 @@
 title: Opmerkingen bij de release
 description: Meer informatie over de patches die beschikbaar zijn voor Adobe Commerce en de problemen die ze oplossen.
 exl-id: 22262555-f5ea-49ad-98ad-ea8428ef66d5
-source-git-commit: b1b7152caa8a9f04ee779e4483c6b82d2002fcc7
+source-git-commit: e951ffec9b6b6178f58a1721095b7d62e4f006d3
 workflow-type: tm+mt
-source-wordcount: '21646'
+source-wordcount: '21987'
 ht-degree: 0%
 
 ---
@@ -20,6 +20,21 @@ ht-degree: 0%
 >[!INFO]
 >
 >Voor informatie over [!DNL quality patches] die door de Gemeenschap voor Magento Open Source wordt gecreeerd, zie de [ versienota&#39;s ](https://github.com/magento/quality-patches/blob/master/community-release-notes.md).
+
+## v1.1.52 {#v1-1-52}
+
+* **BUNDLE-3375** (voor Adobe Commerce en Magento Open Source) - voegt alle noodzakelijke gebieden toe om de 3DS vereisten van het VISA mandaat te vervullen wanneer het gebruiken van [!DNL Braintree] als betalingsgateway.
+* **ACSD-59366** (voor Adobe Commerce >=2.4.6 &lt;2.4.8) - lost de kwestie op waar een fout voorkomt wanneer het proberen om een team te schrappen dat gedeactiveerde gebruikers bevat die niet zichtbaar in de teamlijst zijn.
+* **ACSD-59865** (voor Adobe Commerce en Magento Open Source >=2.4.4 &lt;2.4.7) - lost de kwestie op waar a [!UICONTROL Cart Price Rule] eerder toegepaste regels niet annuleert als de hoeveelheid van het product in het karretje niet genoeg voor de toe te passen regels is.
+* **ACSD-59925** (voor Adobe Commerce en Magento Open Source >=2.4.4 &lt;2.4.8) - lost de kwestie met sorterende punten in [!UICONTROL Media Gallery] door positie in GraphQL op.
+* **ACSD-59952** (voor Adobe Commerce >=2.4.4 &lt;2.4.8) - lost de kwestie op waar een fout voorkomt wanneer het creëren van [!UICONTROL Shared Catalog] met een groepsidentiteitskaart die aan bestaand [!UICONTROL Shared Catalog] wordt toegewezen.
+* **ACSD-60590** (voor Adobe Commerce en Magento Open Source >=2.4.4 &lt;2.4.7) - verbetert de prestaties van het produceren [!UICONTROL Bestsellers Aggregated Daily Reports] voor een groot volume van geplaatste orden.
+* **ACSD-60673** (voor Adobe Commerce >=2.4.4 &lt;2.4.8) - lost de kwestie op waar [!UICONTROL Cart Price Rule] voor veelvoudige betalingsmethodes bij controle niet geschikt op de specifieke betalingsmethode van toepassing is.
+* **ACSD-60684** (voor Adobe Commerce en Magento Open Source >=2.4.6 &lt;2.4.7) - lost de kwestie op waar het het productsorteren van GraphQL door veelvoudige gebieden niet zoals verwacht werkt.
+* **ACSD-60788** (voor Adobe Commerce >=2.4.7 &lt;2.4.8) - lost de kwestie op waar de douanescripts voor [!DNL Google Tag Manager] niet wegens de fouten van het Veiligheidsbeleid van de Inhoud (CSP) worden uitgevoerd.
+* **ACSD-61322** (voor Adobe Commerce >=2.4.6 &lt;2.4.8) - lost de kwestie op waar [!UICONTROL Products/Categories] niet toegewezen aan [!UICONTROL Shared Catalog] voor het Standaard (Algemene Groep) nog in de Sitemap van XML zijn.
+* **ACSD-61366** (voor Adobe Commerce en Magento Open Source >=2.4.7 &lt;2.4.8) - lost de kwestie op waar het `setup:static-content:deploy --jobs 4` bevel met veelvoudige banen loopt die met de *Haven ontbreken moet binnen de fout van de gastheerparameter* worden gevormd wanneer de haven voor de verbinding van DB wordt gespecificeerd.
+* Bijgewerkte patches: ACSD-51857, ACSD-57394
 
 ## v1.1.51 {#v1-1-51}
 
