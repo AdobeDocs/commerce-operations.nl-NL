@@ -1,7 +1,7 @@
 ---
-source-git-commit: 1eaf2329c16e6dbe3e93cb7fff3a6920b4b8379d
+source-git-commit: ab3401c2629b550655c7b2a382b998ce2c8ac6f0
 workflow-type: tm+mt
-source-wordcount: '269'
+source-wordcount: '377'
 ht-degree: 0%
 
 ---
@@ -27,6 +27,12 @@ ht-degree: 0%
 >
 >Het `support:backup` bevel is _niet_ de zelfde die codesteun door het `setup:backup` bevel wordt uitgevoerd. De opdracht `support:backup` is bedoeld om een back-up te maken van code voor onderzoek door Adobe Commerce Support.
 
+## B2B-patches {#b2b-patches}
+
+>[!NOTE]
+>
+>Nadat u deze beveiligingspatch hebt geïnstalleerd, moeten Adobe Commerce B2B-handelaren ook een update uitvoeren naar de nieuwste compatibele B2B-beveiligingspatchrelease. Zie [ B2B versienota&#39;s ](https://experienceleague.adobe.com/en/docs/commerce-admin/b2b/release-notes).
+
 ## Alleen Adobe Commerce {#ee-only}
 
 >[!NOTE]
@@ -46,6 +52,12 @@ ht-degree: 0%
 >[!NOTE]
 >
 >Adobe Commerce-releases kunnen niet-compatibele wijzigingen (BIC&#39;s) bevatten. Om achteruit-onverenigbaar veranderingen te herzien, zie [ verwijzing BIC ](https://developer.adobe.com/commerce/php/development/backward-incompatible-changes/reference/). De grote achteruit-onverenigbaar kwesties worden beschreven in [ hoogtepunten BIC ](https://developer.adobe.com/commerce/php/development/backward-incompatible-changes/highlights/). Niet alle introducties introduceren grote BIC&#39;s.
+
+## Beta disclaimer {#beta}
+
+>[!IMPORTANT]
+>
+>Beta-releases kunnen defecten bevatten en worden geleverd als &quot;AS IS&quot; zonder enige garantie. Adobe is niet verplicht de bètareleases te onderhouden, te corrigeren, bij te werken, te wijzigen, te wijzigen of anderszins te ondersteunen (van Adobe Support Services of een andere service). Klanten moeten voorzichtig zijn en op geen enkele wijze vertrouwen op de correcte werking of prestaties van bètareleases en/of begeleidende documentatie of materialen. Bijgevolg is elk gebruik van de bètareleases volledig op eigen risico van de klant.
 
 ## CVE-kennisgeving {#cve-notice}
 

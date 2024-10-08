@@ -2,9 +2,9 @@
 title: Opmerkingen bij de release Adobe Commerce 2.4.4 Beveiligingspatch
 description: Leer meer over oplossingen voor beveiligingsproblemen, beveiligingsverbeteringen en andere beveiligingsupdates die zijn opgenomen in de beveiligingspatchreleases voor Adobe Commerce versie 2.4.4.
 exl-id: 136d7090-6bf2-41e3-8445-b07bdc67f12b
-source-git-commit: 3a2d104f0a689ac3715af302d470a1660857543c
+source-git-commit: cb4f388c90902c2fe1df4a5d84841280fa740104
 workflow-type: tm+mt
-source-wordcount: '1461'
+source-wordcount: '1498'
 ht-degree: 0%
 
 ---
@@ -13,6 +13,18 @@ ht-degree: 0%
 # Opmerkingen bij de release voor beveiligingspatches van Adobe Commerce 2.4.4
 
 {{$include /help/_includes/security-patch-release-notes-intro.md}}
+
+## 2.4.4-p11
+
+De Adobe Commerce 2.4.4-p11-beveiligingsrelease biedt oplossingen voor beveiligingsproblemen voor kwetsbaarheden die zijn geïdentificeerd in eerdere versies van 2.4.4.
+
+Voor de recentste informatie over de veiligheidsinsectenmoeilijke situaties, zie {het Bulletin van de Veiligheid van de Adobe APSB24-73 ](https://helpx.adobe.com/security/products/magento/apsb24-73.html).[
+
+{{b2b-patches}}
+
+### Hooglichten
+
+{{$include /help/_includes/release-notes/2024-10/security-foo.md}}
 
 ## 2.4.4-p10
 

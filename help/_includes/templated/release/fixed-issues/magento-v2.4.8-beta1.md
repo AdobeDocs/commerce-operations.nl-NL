@@ -1,11 +1,146 @@
 ---
-source-git-commit: cd4655cf45df5293ef82a9fa2f411e8630524603
+source-git-commit: cb3392b7716667201305b7502f6c9c31bc7d1a23
 workflow-type: tm+mt
-source-wordcount: '13175'
+source-wordcount: '14443'
 ht-degree: 0%
 
 ---
-# Opgeloste problemen in verband met Magento Open Source (v2.4.8-bèta1)
+# Opmerkingen bij de release van de Magento Open Source (v2.4.8-bèta1)
+
+## Hooglichten
+
+De volgende 49 hoogtepunten zijn van toepassing op de Magento Open Source 2.4.8 versie.
+
+### Kader
+
+* _AC-10721_: Bevorder de ligging/de gebiedsdelen van de Samensteller van het vliegsysteem die aan recentste versie worden bevorderd
+   * _Bevestig nota_: Bevorder de 2.x liga/de gebiedsdelen van de Composer van het vluchtsysteem aan recentste versie 3.x
+   * _GitHub codebijdrage_: <https://github.com/magento/magento2/commit/91cb4d46>
+* _AC-11495_: 2.4.8-bèta1 de Verbetering van de Componenten van het Platform
+* _AC-11673_: Onderzoek php-amqplib/php-amqplib recentste versies
+   * _nota van de Reparatie_: Bijgewerkt de recentste versie php-amqplib/php-amqplib:^3.x
+   * _GitHub codebijdrage_: <https://github.com/magento/magento2/commit/de4dfb8e>
+* _AC-11723_: Refactoring van het kader van de Test van de Integratie voor phpunit 10 verenigbaarheid - IntegrationTest.php niet gevonden
+   * _Bevestig nota_: PHPUnit 9 wordt bevorderd aan PHPUnit 10 met de het kaderveranderingen van de Test van de Integratie en WebAPI van Adobe Commerce. PHPUnit 10-wijzigingen zijn compatibel met oudere versies.
+   * _GitHub codebijdrage_: &lt;https://github.com/magento/magento2/ (Intern, Unmerge)>
+* _AC-11813_: WebApi het kader van de Test voor phpunit 10 verenigbaarheid - Kwestie met de connectiviteit van RabbitMQ met SOAP en B2B modules
+   * _Bevestig nota_: PHPUnit 9 wordt bevorderd aan PHPUnit 10 met de het kaderveranderingen van de Test van de Integratie en WebAPI van Adobe Commerce. PHPUnit 10-wijzigingen zijn compatibel met oudere versies.
+   * _GitHub codebijdrage_: &lt;https://github.com/magento/magento2/ (Intern, Unmerge)>
+* _AC-11816_: Voeg verenigbaarheid met MySQL 8.4 LTS toe
+* _AC-11911_: jQuery/fileuploader css schoonmaakbeurt na migratie aan uppy bibliotheek
+   * _Nota van de Oplossing_: Verwijderd jQuery/fileUploader bibliotheek omdat het aan de bibliotheek van het Uppy is gemigreerd
+   * _GitHub codebijdrage_: <https://github.com/magento/magento2/commit/7cabfb46>
+* _AC-11995_: Voeg verenigbaarheid met MySQL 8.4 LTS voor Magento CE toe
+   * _GitHub codebijdrage_: <https://github.com/magento/magento2/commit/672a2e61>
+* _AC-12014_: Markeer elasticsearch 8 module als afgekeurd
+* _AC-12015_: De omslag ExtJs schoont na migratie aan de bibliotheek jsTree
+   * _nota van de Reparatie_: Verwijderd omslag TextJs aangezien de verwante functionaliteit is gemigreerd aan jsTree
+   * _GitHub codebijdrage_: <https://github.com/magento/magento2/commit/7cabfb46>
+* _AC-12022_: Van de verbetering monolog/monoloog systeemgebiedsdeel aan de recentste belangrijkste versie
+   * _nota van de Reparatie_: Het systeem is bijgewerkt om de recentste belangrijkste versie van de &quot;monolog/monolog:^3.x&quot;bibliotheek te gebruiken, die verenigbaarheid en betere prestaties verzekeren. Eerder gebruikte het systeem een verouderde versie van de &quot;monolog/monolog&quot; bibliotheek die tot mogelijke problemen en beperkingen had kunnen leiden.
+   * _GitHub codebijdrage_: <https://github.com/magento/magento2/commit/edcd0dcc>
+* _AC-12023_: Bevorder wikimedia/less.php gebiedsdeel aan de recentste belangrijkste versie
+   * _nota van de Reparatie_: Het systeem is bijgewerkt om recentste belangrijke versie 5.x van de &quot;wikimedia/less.php&quot;bibliotheek te gebruiken, die verenigbaarheid en bijgewerkte functionaliteit verzekeren. Eerder gebruikte het systeem een verouderde versie van de bibliotheek die tot veiligheidskwesties kon hebben geleid.
+   * _GitHub codebijdrage_: <https://github.com/magento/magento2/commit/edcd0dcc>
+* _AC-12024_: Bevorder jquery/bevestig bibliotheekgebiedsdeel aan de recentste minder belangrijke versie
+   * _Bevestig nota_: Bevorder jquery/bevestig bibliotheekgebiedsdeel aan recentste minder belangrijke versie 1.20.0
+   * _GitHub codebijdrage_: <https://github.com/magento/magento2/commit/de4dfb8e>
+* _AC-12025_: Het systeemgebiedsdeel van de verbetering moment.js aan de recentste minder belangrijke versie
+   * _Bevestig nota_: De systeemgebiedsdeel van de verbetering moment.js aan recentste minder belangrijke versie 2.30.1
+   * _GitHub codebijdrage_: <https://github.com/magento/magento2/commit/de4dfb8e>
+* _AC-12032_: Voeg verenigbaarheid met MySQL 8.4 LTS voor EE toe
+   * _GitHub codebijdrage_: <https://github.com/magento/magento2/commit/672a2e61>
+* _AC-12034_: Voeg verenigbaarheid met MySQL 8.4 LTS voor B2B toe
+   * _GitHub codebijdrage_: <https://github.com/magento/magento2/commit/672a2e61>
+* _AC-12074_: Voeg verenigbaarheid met MySQL 8.4 LTS voor bundeluitbreidingen toe
+   * _GitHub codebijdrage_: <https://github.com/magento/magento2/commit/672a2e61>
+* _AC-12085_: voeg verenigbaarheid met MariaDB 11.4 LTS voor Ce toe
+   * _Bevestig nota_: Toegevoegde MariaDB 11.4 steun met Adobe Commerce en uitbreidingen
+   * _GitHub codebijdrage_: <https://github.com/magento/magento2/commit/b34c0a75>
+* _AC-12165_: De Optimalisering van de abonnees - PhpUnit10
+   * _GitHub codebijdrage_: <https://github.com/magento/magento2/commit/90e25b6b>
+* _AC-12267_: De verbindingspogingen van de steun voor Redis zitting en compatibel met colinmolenhour/php-redis-session-abstract v2.0.0
+   * _nota van de Reparatie_: Bijgewerkte recentste versie van colinmolenhour/php-redis-session-abstract v2.0.0 compatibel met de handel van Adobe
+   * _GitHub codebijdrage_: <https://github.com/magento/magento2/commit/672a2e61>
+* _AC-12268_: De gebiedsdelen van de Composer van de verbetering liga/van het vluchtsysteem aan recentste versie
+   * _Bevestig nota_: Bevorder de 2.x liga/de gebiedsdelen van de Composer van het vluchtsysteem aan recentste versie 3.x
+* _AC-12576_: Onderzoek de mislukkingen van de automatiseringstests met MySQL 8.4 LTS
+   * _GitHub codebijdrage_: <https://github.com/magento/magento2/commit/672a2e61>
+* _AC-12595_: voeg verenigbaarheid met MariaDB 11.4 LTS voor EE toe
+   * _Bevestig nota_: Toegevoegde MariaDB 11.4 steun met Adobe Commerce en uitbreidingen
+   * _GitHub codebijdrage_: <https://github.com/magento/magento2/commit/b34c0a75>
+* _AC-12693_: Onderzoek op het hulpmiddel van de Migratie van Gegevens (DMT) met MySQL 8.4 LTS
+* _AC-12715_: De gebiedsdelen van de composer van de update laminas bevorderen aan recentste versie
+   * _nota van de Reparatie_: Het systeem steunt nu de recentste versies van laminas composer gebiedsdelen:
+laminas/laminas-servicemanager
+laminas/laminas-server
+laminas/laminas-stdlib
+laminas/laminas-validator
+zorgen voor compatibiliteit en up-to-date functionaliteit. Eerder, kon het bijwerken aan de recentste versies van deze gebiedsdelen achterwaartse onverenigbaarheidskwesties en testmislukkingen veroorzaken.
+   * _GitHub codebijdrage_: <https://github.com/magento/magento2/commit/b34c0a75>
+* _AC-12752_: voeg verenigbaarheid met MariaDB 11.4 LTS voor het hulpmiddel van de Migratie van Gegevens toe
+   * _Bevestig nota_: Toegevoegde MariaDB 11.4 steun met Adobe Commerce en uitbreidingen
+* _AC-12823_: Onderzoek de mislukking van de eenheidstest toe te schrijven aan phpunit flardupdate tijdens componentenverbetering
+   * _GitHub codebijdrage_: <https://github.com/magento/magento2/commit/b34c0a75>
+* _AC-12897_: SVC en EAT hulpmiddelverenigbaarheid met MySQL 8.4
+* _AC-12898_: Het hulpmiddelverenigbaarheid van UCT met MySQL 8.4
+   * _nota van de Reparatie_: Het Hulpmiddel van de Verenigbaarheid van de Verbetering (UCT) is nu compatibel met MySQL 8.4, die vlotte verrichting en verenigbaarheidscontroles voor instanties verzekeren die op deze versie lopen. Eerder werd het UCT-gereedschap niet getest en gecontroleerd op compatibiliteit met MySQL 8.4.
+* _AC-9749_: FPUnit 10 verbetering
+   * _Bevestig nota_: Bijgewerkt de punit/punit componentengebiedsdelen aan compatibele versie - &quot;punit/phpunit&quot;:&quot;10.x&quot;
+
+### Installeren en beheren
+
+* _AC-6819_: Plaats indexen aan &quot;Update door Programma&quot;door gebrek
+
+### Volgorde
+
+* _ACP2E-2709_: [ De Klant van het Verzoek van de Eigenschap ] stelt voor dat de Knoop van de Commentaar op de pagina van de Details van de Orde voorleggen verwarrend is en zou in iets anders moeten worden veranderd
+   * _nota van de Reparatie_: Om de verwarring te minimaliseren, veranderde het &quot;Submit Comment&quot;knoopetiket in &quot;Update&quot;in de orde detailpagina.
+   * _GitHub codebijdrage_: <https://github.com/magento/magento2/commit/488c1034>
+
+### Overige
+
+* _AC-11420_: De vastgestelde indexen verschijnen in Klaar statusgebrek wanneer de nieuwe versie van Adobe Commerce wordt geïnstalleerd
+   * _nota van de Reparatie_: Na het Magento van de Installatie, moet de Status van Indexer in *Klaar* staat door gebrek zijn.
+   * _GitHub codebijdrage_: <https://github.com/magento/magento2/commit/71432aeb>
+* _AC-11421_: In bestaande installatie van het Magento wanneer de module van de derdeindexeermodule installeert plaatste indexen in update door gebrek.
+   * _nota van de Reparatie_: Alle nieuwe indexen zijn door gebrek in [ Update door de 3} wijze van het Programma. ] Eerder, was de standaardwijze [ Update op sparen ]. Hetzelfde geldt voor aangepaste indexen.
+   * _GitHub codebijdrage_: <https://github.com/magento/magento2/commit/71432aeb>
+* _AC-12480_: Elasticsearch 7 en 8 opties zouden met Afgekeurd in Admin config moeten komen.
+   * _de nota van de Reparatie_: Elasticsearch 8 optie in de optie van Config Admin zal met Vervangen tekst tonen om gebruikers te informeren dat Elasticsearch 8 niet meer geadviseerde optie aan gebruik is.
+   * _GitHub codebijdrage_: <https://github.com/magento/magento2/commit/0611e750>
+* _AC-12481_: Voeg tekstnota toe wanneer de optie van de Elasticsearch in Configuratie Admin wordt geselecteerd
+   * _nota van de Reparatie_: Een tekstnota wordt toegevoegd om de admingebruikers van Adobe Commerce te laten weten dat elasticsearch niet meer door Adobe wordt gesteund en afgekeurd.
+   * _GitHub codebijdrage_: <https://github.com/magento/magento2/commit/0611e750>
+* _AC-12870_: SVC en EAT hulpmiddelverenigbaarheid met MariaDB 11.4
+   * _Bevestig nota_: SVC en EAT hulpmiddelverenigbaarheid met MariaDB 11.4
+* _AC-12876_: Het hulpmiddelverenigbaarheid van UCT met MariaDB 11.4
+* _LYNX-374_: De Bevestiging van e-mail van het document via GraphQL
+* _LYNX-376_: Document dat configuraties voor reCAPTCHA in GraphQL krijgt
+* _LYNX-409_: De Optimalisaties van de Vraag van OB voor de Mutatie van de Punten van de Kaart van de Update
+
+### Beveiliging
+
+* _AC-11041_: De Verbeteringen van de veiligheid voor 2.4.8-bèta1 van de versie van juni 2024
+* _AC-11864_: De Verbeteringen van de veiligheid voor 2.4.8-bèta1 van de versie van Augustus 2024
+* _AC-12346_: De Verbeteringen van de veiligheid voor 2.4.8-bèta1 van de versie van Oktober 2024
+* _AC-12691_: [ 2.4.8-bèta1 ] de update REST API van de Klant werkt niet
+   * _GitHub codebijdrage_: <https://github.com/magento/magento2/commit/a4102373>, <https://github.com/magento/magento2/commit/a4102373>
+
+### UI Framework
+
+* _AC-12726_: [ 2.4.8-bèta1 ] TinyMCE 5 migratie aan TinyMCE 7
+   * _Nota van de Reparatie_: Gegigreerde TinyMCE 5 aan TinyMCE 7.3.0 om een gesteunde versie voor Adobe Commerce te zijn, vroeger gebruikte het systeem 5.10.2 die verouderd was en veiligheidskwetsbaarheid rapporteerde
+   * _GitHub codebijdrage_: <https://github.com/magento/magento2/commit/edcd0dcc>
+* _AC-12825_: [ 2.4.8-bèta1 ] TinyMCE 5 migratie aan TinyMCE 7 de Bouwer van de Pagina
+   * _Nota van de Reparatie_: Gegigreerde TinyMCE 5 aan TinyMCE 7.3.0 om een gesteunde versie voor Adobe Commerce te zijn, vroeger gebruikte het systeem 5.10.2 die verouderd was en veiligheidskwetsbaarheid rapporteerde
+   * _GitHub codebijdrage_: <https://github.com/magento/magento2/commit/edcd0dcc>
+* _AC-12844_: [ 2.4.8-bèta1 ] TinyMCE 5 migratie aan TinyMCE 7 - Magento2-infra - verboden woorden
+   * _Nota van de Reparatie_: Gegigreerde TinyMCE 5 aan TinyMCE 7.3.0 om een gesteunde versie voor Adobe Commerce te zijn, vroeger gebruikte het systeem 5.10.2 die verouderd was en veiligheidskwetsbaarheid rapporteerde
+   * _GitHub codebijdrage_: <https://github.com/magento/magento2/commit/edcd0dcc>
+* _AC-12901_: Vereis.js verbetering aan recentste versie 2.3.7 (veiligheidskwetsbaarheid CVE-2024-38999)
+   * _Bevestig nota_: Bijgewerkt require.js aan recentste versie 2.3.7. In vorige versie werd een beveiligingskwetsbaarheid gemeld
+   * _GitHub codebijdrage_: <https://github.com/magento/magento2/commit/b34c0a75>
 
 ## Opgeloste problemen
 

@@ -2,9 +2,9 @@
 title: De indexen beheren
 description: Zie voorbeelden van Commerce-indexen weergeven en beheren.
 exl-id: d2cd1399-231e-4c42-aa0c-c2ed5d7557a0
-source-git-commit: ca8dc855e0598d2c3d43afae2e055aa27035a09b
+source-git-commit: 9a92204369d3a8310aadfb94f8193a6c89f78c30
 workflow-type: tm+mt
-source-wordcount: '951'
+source-wordcount: '947'
 ht-degree: 0%
 
 ---
@@ -194,7 +194,7 @@ Catalog Search indexer has been invalidated.
 
 Gebruik deze opdracht om de volgende indexeropties in te stellen:
 
-- **Update op sparen (`realtime`)**: De geïndexeerde gegevens worden bijgewerkt wanneer een verandering in Admin wordt aangebracht. (Zo wordt de index van de categorie producten opnieuw geindexeerd nadat de producten aan een categorie in Admin zijn toegevoegd.) Dit is de standaardinstelling.
+- **Update op sparen (`realtime`)**: De geïndexeerde gegevens worden bijgewerkt wanneer een verandering in Admin wordt aangebracht. (Zo wordt de index van de categorie producten opnieuw geindexeerd nadat de producten aan een categorie in Admin zijn toegevoegd.)
 - **Update door programma (`schedule`)**: Het gegeven wordt geïndexeerd volgens het programma dat door uw kroonbaan wordt geplaatst.
 
 [ Leer meer over het indexeren ](https://developer.adobe.com/commerce/php/development/components/indexing/).

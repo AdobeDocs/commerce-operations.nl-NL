@@ -4,9 +4,9 @@ description: Prestaties van sites onderhouden en optimaliseren door de best prac
 role: Admin, User
 feature: Best Practices
 exl-id: b35806f9-4bc6-407e-bedd-5ce3f09c1b9f
-source-git-commit: af66d47279245f8ee105030bbb33d77b1b35c3e5
+source-git-commit: 153cf3bae74a78d7a41176e0216203d354d2513b
 workflow-type: tm+mt
-source-wordcount: '298'
+source-wordcount: '296'
 ht-degree: 0%
 
 ---
@@ -24,7 +24,7 @@ Als u de prestaties van de site wilt optimaliseren en behouden, bekijkt en werkt
 
 ## Indexeerders instellen om volgens een schema bij te werken
 
-Adobe Commerce heeft twee typen indexeermodi: [!UICONTROL Update on Save] (standaardinstelling) en [!DNL Update on Schedule] .
+Adobe Commerce heeft twee typen indexeermodi: [!UICONTROL Update on Save] en [!DNL Update on Schedule] .
 
 - In de modus **[!UICONTROL Update on Save]** worden de indexen direct bijgewerkt wanneer de catalogus of andere gegevens worden gewijzigd. Als een Admin-gebruiker bijvoorbeeld nieuwe producten aan een categorie toevoegt, wordt de index van de categorieproducten onmiddellijk opnieuw aangepast wanneer de update wordt opgeslagen.
 
