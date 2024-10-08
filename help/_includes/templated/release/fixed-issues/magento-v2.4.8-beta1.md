@@ -1,7 +1,7 @@
 ---
-source-git-commit: cb3392b7716667201305b7502f6c9c31bc7d1a23
+source-git-commit: d2fe92c778cb90912062c5f318332a02f6a4131e
 workflow-type: tm+mt
-source-wordcount: '14443'
+source-wordcount: '14792'
 ht-degree: 0%
 
 ---
@@ -144,7 +144,7 @@ zorgen voor compatibiliteit en up-to-date functionaliteit. Eerder, kon het bijwe
 
 ## Opgeloste problemen
 
-In de kerncode van Magento Open Source 2.4.8 hebben we 253 problemen opgelost. Hieronder wordt een subset van de opgeloste problemen in deze release beschreven.
+In de kerncode van Magento Open Source 2.4.8 hebben we 254 problemen opgelost. Hieronder wordt een subset van de opgeloste problemen in deze release beschreven.
 
 ### API&#39;s
 
@@ -207,6 +207,10 @@ Eerder was het mogelijk om de prijsgroep voor de websitegroep Dupliceren te make
    * _nota van de Reparatie_: Het systeem keurt nu productbeeld toe uploadt met de uitbreidingen van het hoofdletterdossier, die een vlot proces verzekeren van de productverwezenlijking. Eerder werd het uploaden van afbeeldingen met bestandsextensies voor hoofdletters geweigerd, waardoor gebruikers gedwongen werden de bestandsextensie te wijzigen in kleine letters.
    * _GitHub kwestie_: <https://github.com/magento/magento2/issues/38831>
    * _GitHub codebijdrage_: <https://github.com/magento/magento2/commit/c8f87c25>
+* _wisselstroom-6975_: [ Uitgave ] plaats standaardindexeermodus aan &quot;programma&quot;
+   * _nota van de Reparatie_: Alle nieuwe indexeerders zijn door gebrek op **[!UICONTROL Update by Schedule]** wijze.  Eerder was de standaardmodus **[!UICONTROL Update on Save]** . Dit heeft geen invloed op bestaande indexen. [ GitHub-36419 ](https://github.com/magento/magento2/issues/36419)
+   * _GitHub kwestie_: <https://github.com/magento/magento2/issues/36419>
+   * _GitHub codebijdrage_: <https://github.com/magento/magento2/commit/0b410856>
 * _wisselstroom-7700_: [ ] het veranderingslijsten van de Daling van de indexator op mening unsubscribe
    * _nota van de Reparatie_: Het systeem verwijdert nu automatisch ongebruikte veranderingslijsten wanneer een index van &quot;update op programma&quot;aan &quot;update op sparen&quot;wordt geschakeld, die de index als ongeldig markeren om ervoor te zorgen geen ingangen worden gemist. Als een index eerder werd overgeschakeld op &#39;bijwerken bij opslaan&#39;, blijven wijzigingstabellen die niet worden gebruikt in het systeem behouden en worden alle gewijzigde indexen &#39;geldig&#39; gemarkeerd.
    * _GitHub kwestie_: <https://github.com/magento/magento2/issues/29789>
@@ -300,18 +304,24 @@ We kunnen nu aangepaste orderstatussen bijwerken, terwijl eerder de status allee
 ### Braintree
 
 * _BUNDLE-3367_: Betaal via LPM
+   * _nota van de Reparatie_: Het systeem geeft nu correct Lokale BetalingsMethoden (LPM) op aanvankelijke lading terug, zelfs wanneer de het verschepen en het factureren van een aangemelde klant adressen niet aanpassen, die een vlot controleproces verzekeren. Eerder, zou een wanverhouding tussen het verschepen en het facturerings adres van een klant LPM verhinderen teruggeven, veroorzakend potentiële verstoringen tijdens het afrekenen.
    * _GitHub codebijdrage_: <https://github.com/magento/ext-braintree/pull/204>
 * _BUNDLE-3368_: Configureerbaar met Virtueel als Product van het Kind
+   * _nota van de Reparatie_: Het systeem staat nu uitdrukkelijke betalingsmethodes voor configureerbare producten toe die een virtueel kindproduct hebben, die een vlot afrekenen proces verzekeren. Eerder waren expresbetalingsmethoden niet beschikbaar toen een configureerbaar product met een virtueel onderliggend product aan de winkelwagentje werd toegevoegd.
    * _GitHub codebijdrage_: <https://github.com/magento/ext-braintree/pull/204>
 * _BUNDLE-3369_: De mislukte fout van de Verificatie CVV
    * _GitHub codebijdrage_: <https://github.com/magento/ext-braintree/pull/204>
 * _BUNDLE-3370_: Het vaulting via de Kwesties 247 van het rekeningsgebied
+   * _Bevestig nota_: Het systeem staat nu klanten toe om nieuwe kaart of Paypal rekeningsinformatie over veelvoudige websites op te slaan zonder vergunningsfouten te ontmoeten. Voorheen konden klanten geen nieuwe betalingsmethoden opslaan op verschillende websites en kregen ze een foutbericht over hun autorisatie te zien.
    * _GitHub codebijdrage_: <https://github.com/magento/ext-braintree/pull/204>
 * _BUNDLE-3371_: Schip aan een adres van een verschillend land
+   * _nota van de Reparatie_: Het systeem staat nu transacties toe om zonder fouten worden verwerkt wanneer het verschepen naar een adres van een verschillend land, die een vlot afhandelingsproces verzekeren. Eerder, zou het proberen om aan een adres van een verschillend land te verzenden in consolefouten, ondanks geen zichtbare fouten op de frontend resulteren.
    * _GitHub codebijdrage_: <https://github.com/magento/ext-braintree/pull/204>
 * _BUNDLE-3372_: Kredietkaart - de functie van de Onderbreking
+   * _Nota van de Oplossing_: Het systeem behandelt nu correct de trapsgewijze Braintree PayPal componenten wanneer een klant terug van de betalingspagina naar de het verschepen pagina navigeert, die om het even welke fouten verhinderen en ervoor zorgen dat de Uitdrukkelijke knopen van PayPal correct teruggeven. Eerder was het navigeren van de verzendpagina vanaf de betalingspagina soms een fout bij het afbreken van de Braintree met PayPal-componenten.
    * _GitHub codebijdrage_: <https://github.com/magento/ext-braintree/pull/204>
 * _BUNDLE-3373_: Verzendcallback voor Uitdrukkelijke PayPal
+   * _nota van de Reparatie_: Het systeem toont nu correct beschikbare verschepende methodes in Uitdrukkelijke PayPal, toestaand klanten om hun aangewezen het verschepen methode te selecteren alvorens aan de overzichtspagina of hun transactie te werk te gaan. Eerder waren er geen verzendmethoden beschikbaar om uit te kiezen in het PayPal Express-modaal, waardoor klanten een verzendmethode moesten selecteren op een aparte controlepagina voordat ze hun transactie konden voltooien.
    * _GitHub codebijdrage_: <https://github.com/magento/ext-braintree/pull/204>
 
 ### Winkelwagentje en Afhandeling
