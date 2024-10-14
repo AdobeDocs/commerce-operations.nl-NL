@@ -1,5 +1,5 @@
 ---
-source-git-commit: b30fe4ed4d910ac3a99d3bcf4ff94103bcbd1369
+source-git-commit: 00b8e1bb5ee259763ddb2c52065cee2af98641e0
 workflow-type: tm+mt
 source-wordcount: '1154'
 ht-degree: 0%
@@ -19,7 +19,7 @@ De volgende beveiligingsverbeteringen in deze release verbeteren de naleving van
 >
 >Voor de recentste informatie over de veiligheidsinsectenmoeilijke situaties, zie {het Bulletin van de Veiligheid van de Adobe APSB24-73 ](https://helpx.adobe.com/security/products/magento/apsb24-73.html).[
 
-<table style="table-layout-auto">
+<table style="table-layout:auto">
     <tbody>
         <tr>
             <td><strong>Instellingen</strong></td>
@@ -37,7 +37,7 @@ De volgende beveiligingsverbeteringen in deze release verbeteren de naleving van
 
 De volgende platformupgrades voor deze release zorgen ervoor dat Adobe Commerce een robuust en betrouwbaar platform blijft, klaar om aan de eisen van moderne handelsomgevingen te voldoen:
 
-<table style="table-layout-auto">
+<table style="table-layout:auto">
     <tbody>
         <tr>
             <td><strong>Database</strong></td>
@@ -87,7 +87,7 @@ De volgende platformupgrades voor deze release zorgen ervoor dat Adobe Commerce 
 
 Deze release bevat de volgende prestatieverbeteringen:
 
-<table style="table-layout-auto">
+<table style="table-layout:auto">
     <tbody>
         <tr>
             <td><strong>Indexers</strong></td>
@@ -100,7 +100,7 @@ Deze release bevat de volgende prestatieverbeteringen:
 
 Deze release bevat de volgende kwaliteitsverbeteringen:
 
-<table style="table-layout-auto">
+<table style="table-layout:auto">
     <tbody>
         <tr>
            <td><strong>Inventaris</strong></td>
@@ -117,7 +117,7 @@ Deze release bevat de volgende kwaliteitsverbeteringen:
 
 Deze release bevat de volgende GraphQL-verbeteringen:
 
-<table style="table-layout-auto">
+<table style="table-layout:auto">
     <tbody>
         <tr>
            <td><strong>Algemene verbeteringen</strong></td>
