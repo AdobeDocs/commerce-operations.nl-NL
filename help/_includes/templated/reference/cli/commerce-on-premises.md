@@ -1,7 +1,7 @@
 ---
-source-git-commit: 1f8fda87e0d39fdcf2372f72373a0b2ea486d25a
+source-git-commit: a8f4df78dfec2a1e94d650cac03c7fba21f398e8
 workflow-type: tm+mt
-source-wordcount: '21185'
+source-wordcount: '8072'
 ht-degree: 0%
 
 ---
@@ -9,21 +9,73 @@ ht-degree: 0%
 
 <!-- All the assigned and captured content is used in the included template -->
 
+
+
 <!-- The template to render with above values -->
 
 **Versie**: 2.4.7-p1
 
 Deze verwijzing bevat 141 opdrachten die beschikbaar zijn via het opdrachtregelprogramma van `bin/magento` .
 De eerste lijst wordt automatisch gegenereerd met de opdracht `bin/magento list` in Adobe Commerce.
+
+## Algemeen
+
 Gebruik [ &quot;voeg CLI bevelen&quot;](https://developer.adobe.com/commerce/php/development/cli-commands/) gids toe om een douanebevel CLI toe te voegen.
 
->[!NOTE]
->
->U kunt `bin/magento` CLI bevelen roepen gebruikend kortere weg in plaats van de volledige bevelnaam. U kunt bijvoorbeeld `bin/magento setup:upgrade` aanroepen met `bin/magento s:up` , `bin/magento s:upg` . Zie [ kortere wegsyntaxis ](https://symfony.com/doc/current/components/console/usage.html#shortcut-syntax) om te begrijpen hoe te om kortere weg met om het even welk bevel te gebruiken CLI.
+U kunt `bin/magento` CLI bevelen roepen gebruikend kortere weg in plaats van de volledige bevelnaam. U kunt bijvoorbeeld `bin/magento setup:upgrade` aanroepen met `bin/magento s:up` , `bin/magento s:upg` . Zie [ kortere wegsyntaxis ](https://symfony.com/doc/current/components/console/usage.html#shortcut-syntax) om te begrijpen hoe te om kortere weg met om het even welk bevel te gebruiken CLI.
 
->[!NOTE]
->
->Deze verwijzing wordt gegenereerd op basis van de toepassingscodebase. Om de inhoud te veranderen, kunt u de broncode voor de overeenkomstige bevelimplementatie in de [ codebase ](https://github.com/magento) bewaarplaats bijwerken en uw veranderingen voor overzicht voorleggen. Een andere manier is ons _geven terugkoppelt_ (vind de verbinding bij het hogere recht). Voor bijdragerichtsnoeren, zie {de Bijdragen van de Code 0} ](https://developer.adobe.com/commerce/contributor/guides/code-contributions/).[
+Deze referentiedocumentatie wordt geproduceerd van de code van de toepassingsbron. Om de documentatie te veranderen, zou u een trekkingsverzoek voor het overeenkomstige bevel in de relevante [ codebase ](https://github.com/magento) bewaarplaats moeten openen. Zie {de Bijdragen van de Code van 0} ](https://developer.adobe.com/commerce/contributor/guides/code-contributions/) voor meer informatie.[
+
+### Algemene opties
+
+#### `--help`, `-h`
+
+Help weergeven voor de opgegeven opdracht. Wanneer geen bevel vertoningshulp voor het lijstbevel wordt gegeven
+
+- Standaard: `false`
+- Accepteert geen waarde
+
+#### `--quiet`, `-q`
+
+Geen bericht uitvoeren
+
+- Standaard: `false`
+- Accepteert geen waarde
+
+#### `--verbose`, `-v|-vv|-vvv`
+
+Verhoog de breedheid van berichten: 1 voor normale output, 2 voor meer uitgebreide output en 3 voor zuivert
+
+- Standaard: `false`
+- Accepteert geen waarde
+
+#### `--version`, `-V`
+
+Deze toepassingsversie weergeven
+
+- Standaard: `false`
+- Accepteert geen waarde
+
+#### `--ansi`
+
+ANSI-uitvoer forceren (of uitschakelen —no-ansi)
+
+- Accepteert geen waarde
+
+#### `--no-ansi`
+
+De optie &quot;—ansi&quot; negeren
+
+- Standaard: `false`
+- Accepteert geen waarde
+
+#### `--no-interaction`, `-n`
+
+Geen interactieve vraag stellen
+
+- Standaard: `false`
+- Accepteert geen waarde
+
 
 ## `_complete`
 
@@ -33,85 +85,40 @@ bin/magento _complete [-s|--shell SHELL] [-i|--input INPUT] [-c|--current CURREN
 
 Interne opdracht voor suggesties voor shell-voltooiing
 
+### Opties
 
-### `--shell`, `-s`
+Voor globale opties, zie [ Globale opties ](#global-options).
+
+#### `--shell`, `-s`
 
 Het schelpdiertype (&quot;bash&quot;, &quot;fish&quot;, &quot;zsh&quot;)
 
 - Vereist een waarde
 
-### `--input`, `-i`
+#### `--input`, `-i`
 
-Een array van invoertokens (bijvoorbeeld COMP_WORDS of argv)
+Een array van invoertokens (bv. COMP_WORDS of argv)
 
 - Standaard: `[]`
 - Vereist een waarde
 
-### `--current`, `-c`
+#### `--current`, `-c`
 
 De index van de &quot;input&quot;-array waarin de cursor zich bevindt (bijvoorbeeld COMP_CWORD)
 
 - Vereist een waarde
 
-### `--api-version`, `-a`
+#### `--api-version`, `-a`
 
 De API-versie van het voltooiingsscript
 
 - Vereist een waarde
 
-### `--symfony`, `-S`
+#### `--symfony`, `-S`
 
 verouderd
 
 - Vereist een waarde
-
-### `--help`, `-h`
-
-Help weergeven voor de opgegeven opdracht. Wanneer geen bevel vertoningshulp voor het lijstbevel wordt gegeven
-
-- Standaard: `false`
-- Accepteert geen waarde
-
-### `--quiet`, `-q`
-
-Geen bericht uitvoeren
-
-- Standaard: `false`
-- Accepteert geen waarde
-
-### `--verbose`, `-v|-vv|-vvv`
-
-Verhoog de breedheid van berichten: 1 voor normale output, 2 voor meer uitgebreide output en 3 voor zuivert
-
-- Standaard: `false`
-- Accepteert geen waarde
-
-### `--version`, `-V`
-
-Deze toepassingsversie weergeven
-
-- Standaard: `false`
-- Accepteert geen waarde
-
-### `--ansi`
-
-ANSI-uitvoer forceren (of uitschakelen —no-ansi)
-
-- Accepteert geen waarde
-
-### `--no-ansi`
-
-De optie &quot;—ansi&quot; negeren
-
-- Standaard: `false`
-- Accepteert geen waarde
-
-### `--no-interaction`, `-n`
-
-Geen interactieve vraag stellen
-
-- Standaard: `false`
-- Accepteert geen waarde
 
 
 ## `completion`
@@ -121,7 +128,6 @@ bin/magento completion [--debug] [--] [<shell>]
 ```
 
 Het shell-voltooiingsscript dumpen
-
 
 ```
 The completion command dumps the shell completion script required
@@ -152,63 +158,19 @@ Add this to the end of your shell configuration file (e.g. "~/.bashrc"):
     eval "$(/var/www/html/magento2/bin/magento completion )"
 ```
 
+### Argumenten
 
-### `shell`
+#### `shell`
 
 Het shell type (bijvoorbeeld &quot;bash&quot;), de waarde van &quot;$SHELL&quot; env var zal worden gebruikt als dit niet wordt gegeven
 
+### Opties
 
-### `--debug`
+Voor globale opties, zie [ Globale opties ](#global-options).
+
+#### `--debug`
 
 Tik op het logbestand voor foutopsporing bij voltooien
-
-- Standaard: `false`
-- Accepteert geen waarde
-
-### `--help`, `-h`
-
-Help weergeven voor de opgegeven opdracht. Wanneer geen bevel vertoningshulp voor het lijstbevel wordt gegeven
-
-- Standaard: `false`
-- Accepteert geen waarde
-
-### `--quiet`, `-q`
-
-Geen bericht uitvoeren
-
-- Standaard: `false`
-- Accepteert geen waarde
-
-### `--verbose`, `-v|-vv|-vvv`
-
-Verhoog de breedheid van berichten: 1 voor normale output, 2 voor meer uitgebreide output en 3 voor zuivert
-
-- Standaard: `false`
-- Accepteert geen waarde
-
-### `--version`, `-V`
-
-Deze toepassingsversie weergeven
-
-- Standaard: `false`
-- Accepteert geen waarde
-
-### `--ansi`
-
-ANSI-uitvoer forceren (of uitschakelen —no-ansi)
-
-- Accepteert geen waarde
-
-### `--no-ansi`
-
-De optie &quot;—ansi&quot; negeren
-
-- Standaard: `false`
-- Accepteert geen waarde
-
-### `--no-interaction`, `-n`
-
-Geen interactieve vraag stellen
 
 - Standaard: `false`
 - Accepteert geen waarde
@@ -222,7 +184,6 @@ bin/magento help [--format FORMAT] [--raw] [--] [<command_name>]
 
 Help weergeven voor een opdracht
 
-
 ```
 The help command displays help for a given command:
 
@@ -235,72 +196,28 @@ You can also output the help in other formats by using the --format option:
 To display the list of available commands, please use the list command.
 ```
 
+### Argumenten
 
-### `command_name`
+#### `command_name`
 
 De opdrachtnaam
 
 - Standaard: `help`
 
+### Opties
 
-### `--format`
+Voor globale opties, zie [ Globale opties ](#global-options).
+
+#### `--format`
 
 De uitvoerindeling (txt, xml, json of md)
 
 - Standaard: `txt`
 - Vereist een waarde
 
-### `--raw`
+#### `--raw`
 
 Help bij de opdracht Uitvoeren
-
-- Standaard: `false`
-- Accepteert geen waarde
-
-### `--help`, `-h`
-
-Help weergeven voor de opgegeven opdracht. Wanneer geen bevel vertoningshulp voor het lijstbevel wordt gegeven
-
-- Standaard: `false`
-- Accepteert geen waarde
-
-### `--quiet`, `-q`
-
-Geen bericht uitvoeren
-
-- Standaard: `false`
-- Accepteert geen waarde
-
-### `--verbose`, `-v|-vv|-vvv`
-
-Verhoog de breedheid van berichten: 1 voor normale output, 2 voor meer uitgebreide output en 3 voor zuivert
-
-- Standaard: `false`
-- Accepteert geen waarde
-
-### `--version`, `-V`
-
-Deze toepassingsversie weergeven
-
-- Standaard: `false`
-- Accepteert geen waarde
-
-### `--ansi`
-
-ANSI-uitvoer forceren (of uitschakelen —no-ansi)
-
-- Accepteert geen waarde
-
-### `--no-ansi`
-
-De optie &quot;—ansi&quot; negeren
-
-- Standaard: `false`
-- Accepteert geen waarde
-
-### `--no-interaction`, `-n`
-
-Geen interactieve vraag stellen
 
 - Standaard: `false`
 - Accepteert geen waarde
@@ -313,7 +230,6 @@ bin/magento list [--raw] [--format FORMAT] [--short] [--] [<namespace>]
 ```
 
 Lijstopdrachten
-
 
 ```
 The list command lists all commands:
@@ -333,77 +249,33 @@ It's also possible to get raw list of commands (useful for embedding command run
   bin/magento list --raw
 ```
 
+### Argumenten
 
-### `namespace`
+#### `namespace`
 
 De naamruimtenaam
 
+### Opties
 
-### `--raw`
+Voor globale opties, zie [ Globale opties ](#global-options).
+
+#### `--raw`
 
 Naar uitvoer RAW-opdrachtlijst
 
 - Standaard: `false`
 - Accepteert geen waarde
 
-### `--format`
+#### `--format`
 
 De uitvoerindeling (txt, xml, json of md)
 
 - Standaard: `txt`
 - Vereist een waarde
 
-### `--short`
+#### `--short`
 
 Om het beschrijven van de argumenten van bevelen over te slaan
-
-- Standaard: `false`
-- Accepteert geen waarde
-
-### `--help`, `-h`
-
-Help weergeven voor de opgegeven opdracht. Wanneer geen bevel vertoningshulp voor het lijstbevel wordt gegeven
-
-- Standaard: `false`
-- Accepteert geen waarde
-
-### `--quiet`, `-q`
-
-Geen bericht uitvoeren
-
-- Standaard: `false`
-- Accepteert geen waarde
-
-### `--verbose`, `-v|-vv|-vvv`
-
-Verhoog de breedheid van berichten: 1 voor normale output, 2 voor meer uitgebreide output en 3 voor zuivert
-
-- Standaard: `false`
-- Accepteert geen waarde
-
-### `--version`, `-V`
-
-Deze toepassingsversie weergeven
-
-- Standaard: `false`
-- Accepteert geen waarde
-
-### `--ansi`
-
-ANSI-uitvoer forceren (of uitschakelen —no-ansi)
-
-- Accepteert geen waarde
-
-### `--no-ansi`
-
-De optie &quot;—ansi&quot; negeren
-
-- Standaard: `false`
-- Accepteert geen waarde
-
-### `--no-interaction`, `-n`
-
-Geen interactieve vraag stellen
 
 - Standaard: `false`
 - Accepteert geen waarde
@@ -417,54 +289,9 @@ bin/magento admin:adobe-ims:disable
 
 Adobe IMS-module uitschakelen
 
+### Opties
 
-### `--help`, `-h`
-
-Help weergeven voor de opgegeven opdracht. Wanneer geen bevel vertoningshulp voor het lijstbevel wordt gegeven
-
-- Standaard: `false`
-- Accepteert geen waarde
-
-### `--quiet`, `-q`
-
-Geen bericht uitvoeren
-
-- Standaard: `false`
-- Accepteert geen waarde
-
-### `--verbose`, `-v|-vv|-vvv`
-
-Verhoog de breedheid van berichten: 1 voor normale output, 2 voor meer uitgebreide output en 3 voor zuivert
-
-- Standaard: `false`
-- Accepteert geen waarde
-
-### `--version`, `-V`
-
-Deze toepassingsversie weergeven
-
-- Standaard: `false`
-- Accepteert geen waarde
-
-### `--ansi`
-
-ANSI-uitvoer forceren (of uitschakelen —no-ansi)
-
-- Accepteert geen waarde
-
-### `--no-ansi`
-
-De optie &quot;—ansi&quot; negeren
-
-- Standaard: `false`
-- Accepteert geen waarde
-
-### `--no-interaction`, `-n`
-
-Geen interactieve vraag stellen
-
-- Standaard: `false`
-- Accepteert geen waarde
+Voor globale opties, zie [ Globale opties ](#global-options).
 
 
 ## `admin:adobe-ims:enable`
@@ -475,78 +302,33 @@ bin/magento admin:adobe-ims:enable [-o|--organization-id [ORGANIZATION-ID]] [-c|
 
 Schakel Adobe IMS Module in.
 
+### Opties
 
-### `--organization-id`, `-o`
+Voor globale opties, zie [ Globale opties ](#global-options).
+
+#### `--organization-id`, `-o`
 
 Organisatie-id instellen voor Adobe IMS-configuratie. Vereist wanneer het toelaten van de module
 
 - Accepteert een waarde
 
-### `--client-id`, `-c`
+#### `--client-id`, `-c`
 
 Stel de client-id in voor de Adobe IMS-configuratie. Vereist wanneer het toelaten van de module
 
 - Accepteert een waarde
 
-### `--client-secret`, `-s`
+#### `--client-secret`, `-s`
 
 Stel het clientgeheim in voor de configuratie van Adobe IMS. Vereist wanneer het toelaten van de module
 
 - Accepteert een waarde
 
-### `--2fa`, `-t`
+#### `--2fa`, `-t`
 
 Controleer of 2FA is ingeschakeld voor Organisatie in Adobe Admin Console. Vereist wanneer het toelaten van de module
 
 - Accepteert een waarde
-
-### `--help`, `-h`
-
-Help weergeven voor de opgegeven opdracht. Wanneer geen bevel vertoningshulp voor het lijstbevel wordt gegeven
-
-- Standaard: `false`
-- Accepteert geen waarde
-
-### `--quiet`, `-q`
-
-Geen bericht uitvoeren
-
-- Standaard: `false`
-- Accepteert geen waarde
-
-### `--verbose`, `-v|-vv|-vvv`
-
-Verhoog de breedheid van berichten: 1 voor normale output, 2 voor meer uitgebreide output en 3 voor zuivert
-
-- Standaard: `false`
-- Accepteert geen waarde
-
-### `--version`, `-V`
-
-Deze toepassingsversie weergeven
-
-- Standaard: `false`
-- Accepteert geen waarde
-
-### `--ansi`
-
-ANSI-uitvoer forceren (of uitschakelen —no-ansi)
-
-- Accepteert geen waarde
-
-### `--no-ansi`
-
-De optie &quot;—ansi&quot; negeren
-
-- Standaard: `false`
-- Accepteert geen waarde
-
-### `--no-interaction`, `-n`
-
-Geen interactieve vraag stellen
-
-- Standaard: `false`
-- Accepteert geen waarde
 
 
 ## `admin:adobe-ims:info`
@@ -557,54 +339,9 @@ bin/magento admin:adobe-ims:info
 
 Informatie over de configuratie van de Adobe IMS-module
 
+### Opties
 
-### `--help`, `-h`
-
-Help weergeven voor de opgegeven opdracht. Wanneer geen bevel vertoningshulp voor het lijstbevel wordt gegeven
-
-- Standaard: `false`
-- Accepteert geen waarde
-
-### `--quiet`, `-q`
-
-Geen bericht uitvoeren
-
-- Standaard: `false`
-- Accepteert geen waarde
-
-### `--verbose`, `-v|-vv|-vvv`
-
-Verhoog de breedheid van berichten: 1 voor normale output, 2 voor meer uitgebreide output en 3 voor zuivert
-
-- Standaard: `false`
-- Accepteert geen waarde
-
-### `--version`, `-V`
-
-Deze toepassingsversie weergeven
-
-- Standaard: `false`
-- Accepteert geen waarde
-
-### `--ansi`
-
-ANSI-uitvoer forceren (of uitschakelen —no-ansi)
-
-- Accepteert geen waarde
-
-### `--no-ansi`
-
-De optie &quot;—ansi&quot; negeren
-
-- Standaard: `false`
-- Accepteert geen waarde
-
-### `--no-interaction`, `-n`
-
-Geen interactieve vraag stellen
-
-- Standaard: `false`
-- Accepteert geen waarde
+Voor globale opties, zie [ Globale opties ](#global-options).
 
 
 ## `admin:adobe-ims:status`
@@ -615,54 +352,9 @@ bin/magento admin:adobe-ims:status
 
 Status van de Adobe IMS-module
 
+### Opties
 
-### `--help`, `-h`
-
-Help weergeven voor de opgegeven opdracht. Wanneer geen bevel vertoningshulp voor het lijstbevel wordt gegeven
-
-- Standaard: `false`
-- Accepteert geen waarde
-
-### `--quiet`, `-q`
-
-Geen bericht uitvoeren
-
-- Standaard: `false`
-- Accepteert geen waarde
-
-### `--verbose`, `-v|-vv|-vvv`
-
-Verhoog de breedheid van berichten: 1 voor normale output, 2 voor meer uitgebreide output en 3 voor zuivert
-
-- Standaard: `false`
-- Accepteert geen waarde
-
-### `--version`, `-V`
-
-Deze toepassingsversie weergeven
-
-- Standaard: `false`
-- Accepteert geen waarde
-
-### `--ansi`
-
-ANSI-uitvoer forceren (of uitschakelen —no-ansi)
-
-- Accepteert geen waarde
-
-### `--no-ansi`
-
-De optie &quot;—ansi&quot; negeren
-
-- Standaard: `false`
-- Accepteert geen waarde
-
-### `--no-interaction`, `-n`
-
-Geen interactieve vraag stellen
-
-- Standaard: `false`
-- Accepteert geen waarde
+Voor globale opties, zie [ Globale opties ](#global-options).
 
 
 ## `admin:user:create`
@@ -673,90 +365,45 @@ bin/magento admin:user:create [--admin-user ADMIN-USER] [--admin-password ADMIN-
 
 Hiermee wordt een beheerder gemaakt
 
+### Opties
 
-### `--admin-user`
+Voor globale opties, zie [ Globale opties ](#global-options).
+
+#### `--admin-user`
 
 (Vereist) Admin-gebruiker
 
 - Vereist een waarde
 
-### `--admin-password`
+#### `--admin-password`
 
 (Vereist) Beheerderswachtwoord
 
 - Vereist een waarde
 
-### `--admin-email`
+#### `--admin-email`
 
 (Vereist) E-mail beheerder
 
 - Vereist een waarde
 
-### `--admin-firstname`
+#### `--admin-firstname`
 
 (Vereist) Voornaam beheerder
 
 - Vereist een waarde
 
-### `--admin-lastname`
+#### `--admin-lastname`
 
 (Vereist) Achternaam beheerder
 
 - Vereist een waarde
 
-### `--magento-init-params`
+#### `--magento-init-params`
 
 Voeg aan om het even welk bevel toe om Magento initialisatieparameters aan te passen bijvoorbeeld: &quot;MAGE_MODE=developer&amp;MAGE_DIRS [ basis ][path]=/var/www/example.com&amp;MAGE_DIRS [ geheime voorgeheugen ][path]=/var/tmp/cache&quot;
 
 - Vereist een waarde
-
-### `--help`, `-h`
-
-Help weergeven voor de opgegeven opdracht. Wanneer geen bevel vertoningshulp voor het lijstbevel wordt gegeven
-
-- Standaard: `false`
-- Accepteert geen waarde
-
-### `--quiet`, `-q`
-
-Geen bericht uitvoeren
-
-- Standaard: `false`
-- Accepteert geen waarde
-
-### `--verbose`, `-v|-vv|-vvv`
-
-Verhoog de breedheid van berichten: 1 voor normale output, 2 voor meer uitgebreide output en 3 voor zuivert
-
-- Standaard: `false`
-- Accepteert geen waarde
-
-### `--version`, `-V`
-
-Deze toepassingsversie weergeven
-
-- Standaard: `false`
-- Accepteert geen waarde
-
-### `--ansi`
-
-ANSI-uitvoer forceren (of uitschakelen —no-ansi)
-
-- Accepteert geen waarde
-
-### `--no-ansi`
-
-De optie &quot;—ansi&quot; negeren
-
-- Standaard: `false`
-- Accepteert geen waarde
-
-### `--no-interaction`, `-n`
-
-Geen interactieve vraag stellen
-
-- Standaard: `false`
-- Accepteert geen waarde
 
 
 ## `admin:user:unlock`
@@ -767,67 +414,23 @@ bin/magento admin:user:unlock <username>
 
 Beheerdersaccount ontgrendelen
 
-
 ```
 This command unlocks an admin account by its username.
 To unlock:
       bin/magento admin:user:unlock username
 ```
 
+### Argumenten
 
-### `username`
+#### `username`
 
 De te ontgrendelen admin-gebruikersnaam
 
 - Vereist
 
-### `--help`, `-h`
+### Opties
 
-Help weergeven voor de opgegeven opdracht. Wanneer geen bevel vertoningshulp voor het lijstbevel wordt gegeven
-
-- Standaard: `false`
-- Accepteert geen waarde
-
-### `--quiet`, `-q`
-
-Geen bericht uitvoeren
-
-- Standaard: `false`
-- Accepteert geen waarde
-
-### `--verbose`, `-v|-vv|-vvv`
-
-Verhoog de breedheid van berichten: 1 voor normale output, 2 voor meer uitgebreide output en 3 voor zuivert
-
-- Standaard: `false`
-- Accepteert geen waarde
-
-### `--version`, `-V`
-
-Deze toepassingsversie weergeven
-
-- Standaard: `false`
-- Accepteert geen waarde
-
-### `--ansi`
-
-ANSI-uitvoer forceren (of uitschakelen —no-ansi)
-
-- Accepteert geen waarde
-
-### `--no-ansi`
-
-De optie &quot;—ansi&quot; negeren
-
-- Standaard: `false`
-- Accepteert geen waarde
-
-### `--no-interaction`, `-n`
-
-Geen interactieve vraag stellen
-
-- Standaard: `false`
-- Accepteert geen waarde
+Voor globale opties, zie [ Globale opties ](#global-options).
 
 
 ## `app:config:dump`
@@ -838,63 +441,18 @@ bin/magento app:config:dump [<config-types>...]
 
 Stortplaats van toepassing maken
 
+### Argumenten
 
-
-### `config-types`
+#### `config-types`
 
 De ruimte-gescheiden lijst van configuratietypen of laat weg om alle [ werkingsgebied, systeem, thema&#39;s, i18n ] te dumpen
 
 - Standaard: `[]`
-
 - Array
 
-### `--help`, `-h`
+### Opties
 
-Help weergeven voor de opgegeven opdracht. Wanneer geen bevel vertoningshulp voor het lijstbevel wordt gegeven
-
-- Standaard: `false`
-- Accepteert geen waarde
-
-### `--quiet`, `-q`
-
-Geen bericht uitvoeren
-
-- Standaard: `false`
-- Accepteert geen waarde
-
-### `--verbose`, `-v|-vv|-vvv`
-
-Verhoog de breedheid van berichten: 1 voor normale output, 2 voor meer uitgebreide output en 3 voor zuivert
-
-- Standaard: `false`
-- Accepteert geen waarde
-
-### `--version`, `-V`
-
-Deze toepassingsversie weergeven
-
-- Standaard: `false`
-- Accepteert geen waarde
-
-### `--ansi`
-
-ANSI-uitvoer forceren (of uitschakelen —no-ansi)
-
-- Accepteert geen waarde
-
-### `--no-ansi`
-
-De optie &quot;—ansi&quot; negeren
-
-- Standaard: `false`
-- Accepteert geen waarde
-
-### `--no-interaction`, `-n`
-
-Geen interactieve vraag stellen
-
-- Standaard: `false`
-- Accepteert geen waarde
+Voor globale opties, zie [ Globale opties ](#global-options).
 
 
 ## `app:config:import`
@@ -905,54 +463,9 @@ bin/magento app:config:import
 
 Gegevens uit gedeelde configuratiebestanden importeren naar de juiste gegevensopslag
 
+### Opties
 
-### `--help`, `-h`
-
-Help weergeven voor de opgegeven opdracht. Wanneer geen bevel vertoningshulp voor het lijstbevel wordt gegeven
-
-- Standaard: `false`
-- Accepteert geen waarde
-
-### `--quiet`, `-q`
-
-Geen bericht uitvoeren
-
-- Standaard: `false`
-- Accepteert geen waarde
-
-### `--verbose`, `-v|-vv|-vvv`
-
-Verhoog de breedheid van berichten: 1 voor normale output, 2 voor meer uitgebreide output en 3 voor zuivert
-
-- Standaard: `false`
-- Accepteert geen waarde
-
-### `--version`, `-V`
-
-Deze toepassingsversie weergeven
-
-- Standaard: `false`
-- Accepteert geen waarde
-
-### `--ansi`
-
-ANSI-uitvoer forceren (of uitschakelen —no-ansi)
-
-- Accepteert geen waarde
-
-### `--no-ansi`
-
-De optie &quot;—ansi&quot; negeren
-
-- Standaard: `false`
-- Accepteert geen waarde
-
-### `--no-interaction`, `-n`
-
-Geen interactieve vraag stellen
-
-- Standaard: `false`
-- Accepteert geen waarde
+Voor globale opties, zie [ Globale opties ](#global-options).
 
 
 ## `app:config:status`
@@ -963,54 +476,9 @@ bin/magento app:config:status
 
 Controleert of config-propagatie update vereist
 
+### Opties
 
-### `--help`, `-h`
-
-Help weergeven voor de opgegeven opdracht. Wanneer geen bevel vertoningshulp voor het lijstbevel wordt gegeven
-
-- Standaard: `false`
-- Accepteert geen waarde
-
-### `--quiet`, `-q`
-
-Geen bericht uitvoeren
-
-- Standaard: `false`
-- Accepteert geen waarde
-
-### `--verbose`, `-v|-vv|-vvv`
-
-Verhoog de breedheid van berichten: 1 voor normale output, 2 voor meer uitgebreide output en 3 voor zuivert
-
-- Standaard: `false`
-- Accepteert geen waarde
-
-### `--version`, `-V`
-
-Deze toepassingsversie weergeven
-
-- Standaard: `false`
-- Accepteert geen waarde
-
-### `--ansi`
-
-ANSI-uitvoer forceren (of uitschakelen —no-ansi)
-
-- Accepteert geen waarde
-
-### `--no-ansi`
-
-De optie &quot;—ansi&quot; negeren
-
-- Standaard: `false`
-- Accepteert geen waarde
-
-### `--no-interaction`, `-n`
-
-Geen interactieve vraag stellen
-
-- Standaard: `false`
-- Accepteert geen waarde
+Voor globale opties, zie [ Globale opties ](#global-options).
 
 
 ## `braintree:migrate`
@@ -1021,78 +489,33 @@ bin/magento braintree:migrate [--host HOST] [--dbname DBNAME] [--username USERNA
 
 Opgeslagen kaarten migreren vanuit een Magento 1-database
 
+### Opties
 
-### `--host`
+Voor globale opties, zie [ Globale opties ](#global-options).
+
+#### `--host`
 
 Hostnaam/IP. Poort is optioneel
 
 - Vereist een waarde
 
-### `--dbname`
+#### `--dbname`
 
 Databasenaam
 
 - Vereist een waarde
 
-### `--username`
+#### `--username`
 
 Gebruikersnaam database. Leestoegang vereist
 
 - Vereist een waarde
 
-### `--password`
+#### `--password`
 
 Wachtwoord
 
 - Vereist een waarde
-
-### `--help`, `-h`
-
-Help weergeven voor de opgegeven opdracht. Wanneer geen bevel vertoningshulp voor het lijstbevel wordt gegeven
-
-- Standaard: `false`
-- Accepteert geen waarde
-
-### `--quiet`, `-q`
-
-Geen bericht uitvoeren
-
-- Standaard: `false`
-- Accepteert geen waarde
-
-### `--verbose`, `-v|-vv|-vvv`
-
-Verhoog de breedheid van berichten: 1 voor normale output, 2 voor meer uitgebreide output en 3 voor zuivert
-
-- Standaard: `false`
-- Accepteert geen waarde
-
-### `--version`, `-V`
-
-Deze toepassingsversie weergeven
-
-- Standaard: `false`
-- Accepteert geen waarde
-
-### `--ansi`
-
-ANSI-uitvoer forceren (of uitschakelen —no-ansi)
-
-- Accepteert geen waarde
-
-### `--no-ansi`
-
-De optie &quot;—ansi&quot; negeren
-
-- Standaard: `false`
-- Accepteert geen waarde
-
-### `--no-interaction`, `-n`
-
-Geen interactieve vraag stellen
-
-- Standaard: `false`
-- Accepteert geen waarde
 
 
 ## `cache:clean`
@@ -1103,69 +526,24 @@ bin/magento cache:clean [--bootstrap BOOTSTRAP] [--] [<types>...]
 
 Cachetype(s) wissen
 
+### Argumenten
 
-
-### `types`
+#### `types`
 
 Lijst met door spaties gescheiden cachetypen of laten deze niet toe op alle cachetypen.
 
 - Standaard: `[]`
-
 - Array
 
-### `--bootstrap`
+### Opties
+
+Voor globale opties, zie [ Globale opties ](#global-options).
+
+#### `--bootstrap`
 
 parameters van de bootstrap toevoegen of overschrijven
 
 - Vereist een waarde
-
-### `--help`, `-h`
-
-Help weergeven voor de opgegeven opdracht. Wanneer geen bevel vertoningshulp voor het lijstbevel wordt gegeven
-
-- Standaard: `false`
-- Accepteert geen waarde
-
-### `--quiet`, `-q`
-
-Geen bericht uitvoeren
-
-- Standaard: `false`
-- Accepteert geen waarde
-
-### `--verbose`, `-v|-vv|-vvv`
-
-Verhoog de breedheid van berichten: 1 voor normale output, 2 voor meer uitgebreide output en 3 voor zuivert
-
-- Standaard: `false`
-- Accepteert geen waarde
-
-### `--version`, `-V`
-
-Deze toepassingsversie weergeven
-
-- Standaard: `false`
-- Accepteert geen waarde
-
-### `--ansi`
-
-ANSI-uitvoer forceren (of uitschakelen —no-ansi)
-
-- Accepteert geen waarde
-
-### `--no-ansi`
-
-De optie &quot;—ansi&quot; negeren
-
-- Standaard: `false`
-- Accepteert geen waarde
-
-### `--no-interaction`, `-n`
-
-Geen interactieve vraag stellen
-
-- Standaard: `false`
-- Accepteert geen waarde
 
 
 ## `cache:disable`
@@ -1176,69 +554,24 @@ bin/magento cache:disable [--bootstrap BOOTSTRAP] [--] [<types>...]
 
 Cachetype(s) uitschakelen
 
+### Argumenten
 
-
-### `types`
+#### `types`
 
 Lijst met door spaties gescheiden cachetypen of laten deze niet toe op alle cachetypen.
 
 - Standaard: `[]`
-
 - Array
 
-### `--bootstrap`
+### Opties
+
+Voor globale opties, zie [ Globale opties ](#global-options).
+
+#### `--bootstrap`
 
 parameters van de bootstrap toevoegen of overschrijven
 
 - Vereist een waarde
-
-### `--help`, `-h`
-
-Help weergeven voor de opgegeven opdracht. Wanneer geen bevel vertoningshulp voor het lijstbevel wordt gegeven
-
-- Standaard: `false`
-- Accepteert geen waarde
-
-### `--quiet`, `-q`
-
-Geen bericht uitvoeren
-
-- Standaard: `false`
-- Accepteert geen waarde
-
-### `--verbose`, `-v|-vv|-vvv`
-
-Verhoog de breedheid van berichten: 1 voor normale output, 2 voor meer uitgebreide output en 3 voor zuivert
-
-- Standaard: `false`
-- Accepteert geen waarde
-
-### `--version`, `-V`
-
-Deze toepassingsversie weergeven
-
-- Standaard: `false`
-- Accepteert geen waarde
-
-### `--ansi`
-
-ANSI-uitvoer forceren (of uitschakelen —no-ansi)
-
-- Accepteert geen waarde
-
-### `--no-ansi`
-
-De optie &quot;—ansi&quot; negeren
-
-- Standaard: `false`
-- Accepteert geen waarde
-
-### `--no-interaction`, `-n`
-
-Geen interactieve vraag stellen
-
-- Standaard: `false`
-- Accepteert geen waarde
 
 
 ## `cache:enable`
@@ -1249,69 +582,24 @@ bin/magento cache:enable [--bootstrap BOOTSTRAP] [--] [<types>...]
 
 Cachetype(s) inschakelen
 
+### Argumenten
 
-
-### `types`
+#### `types`
 
 Lijst met door spaties gescheiden cachetypen of laten deze niet toe op alle cachetypen.
 
 - Standaard: `[]`
-
 - Array
 
-### `--bootstrap`
+### Opties
+
+Voor globale opties, zie [ Globale opties ](#global-options).
+
+#### `--bootstrap`
 
 parameters van de bootstrap toevoegen of overschrijven
 
 - Vereist een waarde
-
-### `--help`, `-h`
-
-Help weergeven voor de opgegeven opdracht. Wanneer geen bevel vertoningshulp voor het lijstbevel wordt gegeven
-
-- Standaard: `false`
-- Accepteert geen waarde
-
-### `--quiet`, `-q`
-
-Geen bericht uitvoeren
-
-- Standaard: `false`
-- Accepteert geen waarde
-
-### `--verbose`, `-v|-vv|-vvv`
-
-Verhoog de breedheid van berichten: 1 voor normale output, 2 voor meer uitgebreide output en 3 voor zuivert
-
-- Standaard: `false`
-- Accepteert geen waarde
-
-### `--version`, `-V`
-
-Deze toepassingsversie weergeven
-
-- Standaard: `false`
-- Accepteert geen waarde
-
-### `--ansi`
-
-ANSI-uitvoer forceren (of uitschakelen —no-ansi)
-
-- Accepteert geen waarde
-
-### `--no-ansi`
-
-De optie &quot;—ansi&quot; negeren
-
-- Standaard: `false`
-- Accepteert geen waarde
-
-### `--no-interaction`, `-n`
-
-Geen interactieve vraag stellen
-
-- Standaard: `false`
-- Accepteert geen waarde
 
 
 ## `cache:flush`
@@ -1322,69 +610,24 @@ bin/magento cache:flush [--bootstrap BOOTSTRAP] [--] [<types>...]
 
 Cacheopslag wordt gebruikt door cachetype(s)
 
+### Argumenten
 
-
-### `types`
+#### `types`
 
 Lijst met door spaties gescheiden cachetypen of laten deze niet toe op alle cachetypen.
 
 - Standaard: `[]`
-
 - Array
 
-### `--bootstrap`
+### Opties
+
+Voor globale opties, zie [ Globale opties ](#global-options).
+
+#### `--bootstrap`
 
 parameters van de bootstrap toevoegen of overschrijven
 
 - Vereist een waarde
-
-### `--help`, `-h`
-
-Help weergeven voor de opgegeven opdracht. Wanneer geen bevel vertoningshulp voor het lijstbevel wordt gegeven
-
-- Standaard: `false`
-- Accepteert geen waarde
-
-### `--quiet`, `-q`
-
-Geen bericht uitvoeren
-
-- Standaard: `false`
-- Accepteert geen waarde
-
-### `--verbose`, `-v|-vv|-vvv`
-
-Verhoog de breedheid van berichten: 1 voor normale output, 2 voor meer uitgebreide output en 3 voor zuivert
-
-- Standaard: `false`
-- Accepteert geen waarde
-
-### `--version`, `-V`
-
-Deze toepassingsversie weergeven
-
-- Standaard: `false`
-- Accepteert geen waarde
-
-### `--ansi`
-
-ANSI-uitvoer forceren (of uitschakelen —no-ansi)
-
-- Accepteert geen waarde
-
-### `--no-ansi`
-
-De optie &quot;—ansi&quot; negeren
-
-- Standaard: `false`
-- Accepteert geen waarde
-
-### `--no-interaction`, `-n`
-
-Geen interactieve vraag stellen
-
-- Standaard: `false`
-- Accepteert geen waarde
 
 
 ## `cache:status`
@@ -1395,60 +638,15 @@ bin/magento cache:status [--bootstrap BOOTSTRAP]
 
 Hiermee wordt de cachestatus gecontroleerd
 
+### Opties
 
-### `--bootstrap`
+Voor globale opties, zie [ Globale opties ](#global-options).
+
+#### `--bootstrap`
 
 parameters van de bootstrap toevoegen of overschrijven
 
 - Vereist een waarde
-
-### `--help`, `-h`
-
-Help weergeven voor de opgegeven opdracht. Wanneer geen bevel vertoningshulp voor het lijstbevel wordt gegeven
-
-- Standaard: `false`
-- Accepteert geen waarde
-
-### `--quiet`, `-q`
-
-Geen bericht uitvoeren
-
-- Standaard: `false`
-- Accepteert geen waarde
-
-### `--verbose`, `-v|-vv|-vvv`
-
-Verhoog de breedheid van berichten: 1 voor normale output, 2 voor meer uitgebreide output en 3 voor zuivert
-
-- Standaard: `false`
-- Accepteert geen waarde
-
-### `--version`, `-V`
-
-Deze toepassingsversie weergeven
-
-- Standaard: `false`
-- Accepteert geen waarde
-
-### `--ansi`
-
-ANSI-uitvoer forceren (of uitschakelen —no-ansi)
-
-- Accepteert geen waarde
-
-### `--no-ansi`
-
-De optie &quot;—ansi&quot; negeren
-
-- Standaard: `false`
-- Accepteert geen waarde
-
-### `--no-interaction`, `-n`
-
-Geen interactieve vraag stellen
-
-- Standaard: `false`
-- Accepteert geen waarde
 
 
 ## `catalog:images:resize`
@@ -1459,65 +657,20 @@ bin/magento catalog:images:resize [-a|--async] [--skip_hidden_images]
 
 Hiermee maakt u productafbeeldingen waarvan het formaat is gewijzigd
 
+### Opties
 
-### `--async`, `-a`
+Voor globale opties, zie [ Globale opties ](#global-options).
+
+#### `--async`, `-a`
 
 Afbeeldingen vergroten/verkleinen in asynchrone modus
 
 - Standaard: `false`
 - Accepteert geen waarde
 
-### `--skip_hidden_images`
+#### `--skip_hidden_images`
 
 Afbeeldingen die als verborgen op de productpagina zijn gemarkeerd, niet verwerken
-
-- Standaard: `false`
-- Accepteert geen waarde
-
-### `--help`, `-h`
-
-Help weergeven voor de opgegeven opdracht. Wanneer geen bevel vertoningshulp voor het lijstbevel wordt gegeven
-
-- Standaard: `false`
-- Accepteert geen waarde
-
-### `--quiet`, `-q`
-
-Geen bericht uitvoeren
-
-- Standaard: `false`
-- Accepteert geen waarde
-
-### `--verbose`, `-v|-vv|-vvv`
-
-Verhoog de breedheid van berichten: 1 voor normale output, 2 voor meer uitgebreide output en 3 voor zuivert
-
-- Standaard: `false`
-- Accepteert geen waarde
-
-### `--version`, `-V`
-
-Deze toepassingsversie weergeven
-
-- Standaard: `false`
-- Accepteert geen waarde
-
-### `--ansi`
-
-ANSI-uitvoer forceren (of uitschakelen —no-ansi)
-
-- Accepteert geen waarde
-
-### `--no-ansi`
-
-De optie &quot;—ansi&quot; negeren
-
-- Standaard: `false`
-- Accepteert geen waarde
-
-### `--no-interaction`, `-n`
-
-Geen interactieve vraag stellen
 
 - Standaard: `false`
 - Accepteert geen waarde
@@ -1531,54 +684,9 @@ bin/magento catalog:product:attributes:cleanup
 
 Verwijdert ongebruikte productkenmerken.
 
+### Opties
 
-### `--help`, `-h`
-
-Help weergeven voor de opgegeven opdracht. Wanneer geen bevel vertoningshulp voor het lijstbevel wordt gegeven
-
-- Standaard: `false`
-- Accepteert geen waarde
-
-### `--quiet`, `-q`
-
-Geen bericht uitvoeren
-
-- Standaard: `false`
-- Accepteert geen waarde
-
-### `--verbose`, `-v|-vv|-vvv`
-
-Verhoog de breedheid van berichten: 1 voor normale output, 2 voor meer uitgebreide output en 3 voor zuivert
-
-- Standaard: `false`
-- Accepteert geen waarde
-
-### `--version`, `-V`
-
-Deze toepassingsversie weergeven
-
-- Standaard: `false`
-- Accepteert geen waarde
-
-### `--ansi`
-
-ANSI-uitvoer forceren (of uitschakelen —no-ansi)
-
-- Accepteert geen waarde
-
-### `--no-ansi`
-
-De optie &quot;—ansi&quot; negeren
-
-- Standaard: `false`
-- Accepteert geen waarde
-
-### `--no-interaction`, `-n`
-
-Geen interactieve vraag stellen
-
-- Standaard: `false`
-- Accepteert geen waarde
+Voor globale opties, zie [ Globale opties ](#global-options).
 
 
 ## `cms:wysiwyg:restrict`
@@ -1589,61 +697,17 @@ bin/magento cms:wysiwyg:restrict <restrict>
 
 Instellen of validatie van HTML-inhoud van gebruiker moet worden afgedwongen of dat een waarschuwing moet worden weergegeven
 
+### Argumenten
 
-
-### `restrict`
+#### `restrict`
 
 y\n
 
 - Vereist
 
-### `--help`, `-h`
+### Opties
 
-Help weergeven voor de opgegeven opdracht. Wanneer geen bevel vertoningshulp voor het lijstbevel wordt gegeven
-
-- Standaard: `false`
-- Accepteert geen waarde
-
-### `--quiet`, `-q`
-
-Geen bericht uitvoeren
-
-- Standaard: `false`
-- Accepteert geen waarde
-
-### `--verbose`, `-v|-vv|-vvv`
-
-Verhoog de breedheid van berichten: 1 voor normale output, 2 voor meer uitgebreide output en 3 voor zuivert
-
-- Standaard: `false`
-- Accepteert geen waarde
-
-### `--version`, `-V`
-
-Deze toepassingsversie weergeven
-
-- Standaard: `false`
-- Accepteert geen waarde
-
-### `--ansi`
-
-ANSI-uitvoer forceren (of uitschakelen —no-ansi)
-
-- Accepteert geen waarde
-
-### `--no-ansi`
-
-De optie &quot;—ansi&quot; negeren
-
-- Standaard: `false`
-- Accepteert geen waarde
-
-### `--no-interaction`, `-n`
-
-Geen interactieve vraag stellen
-
-- Standaard: `false`
-- Accepteert geen waarde
+Voor globale opties, zie [ Globale opties ](#global-options).
 
 
 ## `config:sensitive:set`
@@ -1654,86 +718,41 @@ bin/magento config:sensitive:set [-i|--interactive] [--scope [SCOPE]] [--scope-c
 
 Gevoelige configuratiewaarden instellen
 
+### Argumenten
 
-
-### `path`
+#### `path`
 
 Configuratiepad, bijvoorbeeld groep/sectie/field_name
 
 
-### `value`
+#### `value`
 
 Configuratiewaarde
 
+### Opties
 
-### `--interactive`, `-i`
+Voor globale opties, zie [ Globale opties ](#global-options).
+
+#### `--interactive`, `-i`
 
 Interactieve modus inschakelen om alle gevoelige variabelen in te stellen
 
 - Standaard: `false`
 - Accepteert geen waarde
 
-### `--scope`
+#### `--scope`
 
 Bereik voor configuratie, indien niet ingesteld gebruik &#39;default&#39;
 
 - Standaard: `default`
 - Accepteert een waarde
 
-### `--scope-code`
+#### `--scope-code`
 
 Toepassingscode voor configuratie, standaard lege tekenreeks
 
 - Standaard: &quot;
 - Accepteert een waarde
-
-### `--help`, `-h`
-
-Help weergeven voor de opgegeven opdracht. Wanneer geen bevel vertoningshulp voor het lijstbevel wordt gegeven
-
-- Standaard: `false`
-- Accepteert geen waarde
-
-### `--quiet`, `-q`
-
-Geen bericht uitvoeren
-
-- Standaard: `false`
-- Accepteert geen waarde
-
-### `--verbose`, `-v|-vv|-vvv`
-
-Verhoog de breedheid van berichten: 1 voor normale output, 2 voor meer uitgebreide output en 3 voor zuivert
-
-- Standaard: `false`
-- Accepteert geen waarde
-
-### `--version`, `-V`
-
-Deze toepassingsversie weergeven
-
-- Standaard: `false`
-- Accepteert geen waarde
-
-### `--ansi`
-
-ANSI-uitvoer forceren (of uitschakelen —no-ansi)
-
-- Accepteert geen waarde
-
-### `--no-ansi`
-
-De optie &quot;—ansi&quot; negeren
-
-- Standaard: `false`
-- Accepteert geen waarde
-
-### `--no-interaction`, `-n`
-
-Geen interactieve vraag stellen
-
-- Standaard: `false`
-- Accepteert geen waarde
 
 
 ## `config:set`
@@ -1744,98 +763,55 @@ bin/magento config:set [--scope SCOPE] [--scope-code SCOPE-CODE] [-e|--lock-env]
 
 Systeemconfiguratie wijzigen
 
+### Argumenten
 
-
-### `path`
+#### `path`
 
 Configuratiepad in indelingssectie/groep/veld_naam
 
 - Vereist
 
-### `value`
+
+#### `value`
 
 Configuratiewaarde
 
 - Vereist
 
-### `--scope`
+### Opties
+
+Voor globale opties, zie [ Globale opties ](#global-options).
+
+#### `--scope`
 
 Configuratiebereik (standaard, website of winkel)
 
 - Standaard: `default`
 - Vereist een waarde
 
-### `--scope-code`
+#### `--scope-code`
 
 Code bereik (alleen vereist als scope niet &#39;default&#39; is)
 
 - Vereist een waarde
 
-### `--lock-env`, `-e`
+#### `--lock-env`, `-e`
 
 Vergrendelingswaarde die wijziging in de beheerfunctie voorkomt (wordt opgeslagen in app/etc/env.php)
 
 - Standaard: `false`
 - Accepteert geen waarde
 
-### `--lock-config`, `-c`
+#### `--lock-config`, `-c`
 
 Vergrendelen en waarde delen met andere installaties, wijzigingen voorkomen in Admin (wordt opgeslagen in app/etc/config.php)
 
 - Standaard: `false`
 - Accepteert geen waarde
 
-### `--lock`, `-l`
+#### `--lock`, `-l`
 
 Vervangen, gebruik in plaats hiervan de optie —lock-env.
-
-- Standaard: `false`
-- Accepteert geen waarde
-
-### `--help`, `-h`
-
-Help weergeven voor de opgegeven opdracht. Wanneer geen bevel vertoningshulp voor het lijstbevel wordt gegeven
-
-- Standaard: `false`
-- Accepteert geen waarde
-
-### `--quiet`, `-q`
-
-Geen bericht uitvoeren
-
-- Standaard: `false`
-- Accepteert geen waarde
-
-### `--verbose`, `-v|-vv|-vvv`
-
-Verhoog de breedheid van berichten: 1 voor normale output, 2 voor meer uitgebreide output en 3 voor zuivert
-
-- Standaard: `false`
-- Accepteert geen waarde
-
-### `--version`, `-V`
-
-Deze toepassingsversie weergeven
-
-- Standaard: `false`
-- Accepteert geen waarde
-
-### `--ansi`
-
-ANSI-uitvoer forceren (of uitschakelen —no-ansi)
-
-- Accepteert geen waarde
-
-### `--no-ansi`
-
-De optie &quot;—ansi&quot; negeren
-
-- Standaard: `false`
-- Accepteert geen waarde
-
-### `--no-interaction`, `-n`
-
-Geen interactieve vraag stellen
 
 - Standaard: `false`
 - Accepteert geen waarde
@@ -1849,74 +825,29 @@ bin/magento config:show [--scope [SCOPE]] [--scope-code [SCOPE-CODE]] [--] [<pat
 
 Toont configuratiewaarde voor bepaalde weg. Als het pad niet is opgegeven, worden alle opgeslagen waarden weergegeven
 
+### Argumenten
 
-
-### `path`
+#### `path`
 
 Configuratiepad, bijvoorbeeld section_id/group_id/field_id
 
+### Opties
 
-### `--scope`
+Voor globale opties, zie [ Globale opties ](#global-options).
+
+#### `--scope`
 
 Bereik voor configuratie, als niet gespecificeerd, dan &quot;gebrek&quot;werkingsgebied zal worden gebruikt
 
 - Standaard: `default`
 - Accepteert een waarde
 
-### `--scope-code`
+#### `--scope-code`
 
 Code bereik (alleen vereist als bereik niet `default` is)
 
 - Standaard: &quot;
 - Accepteert een waarde
-
-### `--help`, `-h`
-
-Help weergeven voor de opgegeven opdracht. Wanneer geen bevel vertoningshulp voor het lijstbevel wordt gegeven
-
-- Standaard: `false`
-- Accepteert geen waarde
-
-### `--quiet`, `-q`
-
-Geen bericht uitvoeren
-
-- Standaard: `false`
-- Accepteert geen waarde
-
-### `--verbose`, `-v|-vv|-vvv`
-
-Verhoog de breedheid van berichten: 1 voor normale output, 2 voor meer uitgebreide output en 3 voor zuivert
-
-- Standaard: `false`
-- Accepteert geen waarde
-
-### `--version`, `-V`
-
-Deze toepassingsversie weergeven
-
-- Standaard: `false`
-- Accepteert geen waarde
-
-### `--ansi`
-
-ANSI-uitvoer forceren (of uitschakelen —no-ansi)
-
-- Accepteert geen waarde
-
-### `--no-ansi`
-
-De optie &quot;—ansi&quot; negeren
-
-- Standaard: `false`
-- Accepteert geen waarde
-
-### `--no-interaction`, `-n`
-
-Geen interactieve vraag stellen
-
-- Standaard: `false`
-- Accepteert geen waarde
 
 
 ## `cron:install`
@@ -1927,65 +858,20 @@ bin/magento cron:install [-f|--force] [-d|--non-optional]
 
 Genereert en installeert een tab voor de huidige gebruiker
 
+### Opties
 
-### `--force`, `-f`
+Voor globale opties, zie [ Globale opties ](#global-options).
+
+#### `--force`, `-f`
 
 Installatietaken forceren
 
 - Standaard: `false`
 - Accepteert geen waarde
 
-### `--non-optional`, `-d`
+#### `--non-optional`, `-d`
 
 Alleen de niet-optionele (standaard)taken installeren
-
-- Standaard: `false`
-- Accepteert geen waarde
-
-### `--help`, `-h`
-
-Help weergeven voor de opgegeven opdracht. Wanneer geen bevel vertoningshulp voor het lijstbevel wordt gegeven
-
-- Standaard: `false`
-- Accepteert geen waarde
-
-### `--quiet`, `-q`
-
-Geen bericht uitvoeren
-
-- Standaard: `false`
-- Accepteert geen waarde
-
-### `--verbose`, `-v|-vv|-vvv`
-
-Verhoog de breedheid van berichten: 1 voor normale output, 2 voor meer uitgebreide output en 3 voor zuivert
-
-- Standaard: `false`
-- Accepteert geen waarde
-
-### `--version`, `-V`
-
-Deze toepassingsversie weergeven
-
-- Standaard: `false`
-- Accepteert geen waarde
-
-### `--ansi`
-
-ANSI-uitvoer forceren (of uitschakelen —no-ansi)
-
-- Accepteert geen waarde
-
-### `--no-ansi`
-
-De optie &quot;—ansi&quot; negeren
-
-- Standaard: `false`
-- Accepteert geen waarde
-
-### `--no-interaction`, `-n`
-
-Geen interactieve vraag stellen
 
 - Standaard: `false`
 - Accepteert geen waarde
@@ -1999,54 +885,9 @@ bin/magento cron:remove
 
 Hiermee worden taken uit het tabblad Crontab verwijderd
 
+### Opties
 
-### `--help`, `-h`
-
-Help weergeven voor de opgegeven opdracht. Wanneer geen bevel vertoningshulp voor het lijstbevel wordt gegeven
-
-- Standaard: `false`
-- Accepteert geen waarde
-
-### `--quiet`, `-q`
-
-Geen bericht uitvoeren
-
-- Standaard: `false`
-- Accepteert geen waarde
-
-### `--verbose`, `-v|-vv|-vvv`
-
-Verhoog de breedheid van berichten: 1 voor normale output, 2 voor meer uitgebreide output en 3 voor zuivert
-
-- Standaard: `false`
-- Accepteert geen waarde
-
-### `--version`, `-V`
-
-Deze toepassingsversie weergeven
-
-- Standaard: `false`
-- Accepteert geen waarde
-
-### `--ansi`
-
-ANSI-uitvoer forceren (of uitschakelen —no-ansi)
-
-- Accepteert geen waarde
-
-### `--no-ansi`
-
-De optie &quot;—ansi&quot; negeren
-
-- Standaard: `false`
-- Accepteert geen waarde
-
-### `--no-interaction`, `-n`
-
-Geen interactieve vraag stellen
-
-- Standaard: `false`
-- Accepteert geen waarde
+Voor globale opties, zie [ Globale opties ](#global-options).
 
 
 ## `cron:run`
@@ -2057,73 +898,28 @@ bin/magento cron:run [--group GROUP] [--exclude-group [EXCLUDE-GROUP]] [--bootst
 
 Hiermee worden taken volgens schema uitgevoerd
 
+### Opties
 
-### `--group`
+Voor globale opties, zie [ Globale opties ](#global-options).
+
+#### `--group`
 
 Alleen taken uitvoeren vanuit opgegeven groep
 
 - Vereist een waarde
 
-### `--exclude-group`
+#### `--exclude-group`
 
 Taken uitsluiten van de opgegeven groep
 
 - Standaard: `[]`
 - Accepteert meerdere waarden
 
-### `--bootstrap`
+#### `--bootstrap`
 
 Parameters van de bootstrap toevoegen of overschrijven
 
 - Vereist een waarde
-
-### `--help`, `-h`
-
-Help weergeven voor de opgegeven opdracht. Wanneer geen bevel vertoningshulp voor het lijstbevel wordt gegeven
-
-- Standaard: `false`
-- Accepteert geen waarde
-
-### `--quiet`, `-q`
-
-Geen bericht uitvoeren
-
-- Standaard: `false`
-- Accepteert geen waarde
-
-### `--verbose`, `-v|-vv|-vvv`
-
-Verhoog de breedheid van berichten: 1 voor normale output, 2 voor meer uitgebreide output en 3 voor zuivert
-
-- Standaard: `false`
-- Accepteert geen waarde
-
-### `--version`, `-V`
-
-Deze toepassingsversie weergeven
-
-- Standaard: `false`
-- Accepteert geen waarde
-
-### `--ansi`
-
-ANSI-uitvoer forceren (of uitschakelen —no-ansi)
-
-- Accepteert geen waarde
-
-### `--no-ansi`
-
-De optie &quot;—ansi&quot; negeren
-
-- Standaard: `false`
-- Accepteert geen waarde
-
-### `--no-interaction`, `-n`
-
-Geen interactieve vraag stellen
-
-- Standaard: `false`
-- Accepteert geen waarde
 
 
 ## `customer:hash:upgrade`
@@ -2134,54 +930,9 @@ bin/magento customer:hash:upgrade
 
 De hash van de klant bijwerken volgens het meest recente algoritme
 
+### Opties
 
-### `--help`, `-h`
-
-Help weergeven voor de opgegeven opdracht. Wanneer geen bevel vertoningshulp voor het lijstbevel wordt gegeven
-
-- Standaard: `false`
-- Accepteert geen waarde
-
-### `--quiet`, `-q`
-
-Geen bericht uitvoeren
-
-- Standaard: `false`
-- Accepteert geen waarde
-
-### `--verbose`, `-v|-vv|-vvv`
-
-Verhoog de breedheid van berichten: 1 voor normale output, 2 voor meer uitgebreide output en 3 voor zuivert
-
-- Standaard: `false`
-- Accepteert geen waarde
-
-### `--version`, `-V`
-
-Deze toepassingsversie weergeven
-
-- Standaard: `false`
-- Accepteert geen waarde
-
-### `--ansi`
-
-ANSI-uitvoer forceren (of uitschakelen —no-ansi)
-
-- Accepteert geen waarde
-
-### `--no-ansi`
-
-De optie &quot;—ansi&quot; negeren
-
-- Standaard: `false`
-- Accepteert geen waarde
-
-### `--no-interaction`, `-n`
-
-Geen interactieve vraag stellen
-
-- Standaard: `false`
-- Accepteert geen waarde
+Voor globale opties, zie [ Globale opties ](#global-options).
 
 
 ## `deploy:mode:set`
@@ -2192,65 +943,21 @@ bin/magento deploy:mode:set [-s|--skip-compilation] [--] <mode>
 
 Toepassingsmodus instellen.
 
+### Argumenten
 
-
-### `mode`
+#### `mode`
 
 De toepassingsmodus die moet worden ingesteld. Beschikbare opties zijn &quot;developer&quot; of &quot;production&quot;
 
 - Vereist
 
-### `--skip-compilation`, `-s`
+### Opties
+
+Voor globale opties, zie [ Globale opties ](#global-options).
+
+#### `--skip-compilation`, `-s`
 
 Verwijdert het wissen en opnieuw genereren van statische inhoud (gegenereerde code, vooraf verwerkte CSS en elementen in pub/static/)
-
-- Standaard: `false`
-- Accepteert geen waarde
-
-### `--help`, `-h`
-
-Help weergeven voor de opgegeven opdracht. Wanneer geen bevel vertoningshulp voor het lijstbevel wordt gegeven
-
-- Standaard: `false`
-- Accepteert geen waarde
-
-### `--quiet`, `-q`
-
-Geen bericht uitvoeren
-
-- Standaard: `false`
-- Accepteert geen waarde
-
-### `--verbose`, `-v|-vv|-vvv`
-
-Verhoog de breedheid van berichten: 1 voor normale output, 2 voor meer uitgebreide output en 3 voor zuivert
-
-- Standaard: `false`
-- Accepteert geen waarde
-
-### `--version`, `-V`
-
-Deze toepassingsversie weergeven
-
-- Standaard: `false`
-- Accepteert geen waarde
-
-### `--ansi`
-
-ANSI-uitvoer forceren (of uitschakelen —no-ansi)
-
-- Accepteert geen waarde
-
-### `--no-ansi`
-
-De optie &quot;—ansi&quot; negeren
-
-- Standaard: `false`
-- Accepteert geen waarde
-
-### `--no-interaction`, `-n`
-
-Geen interactieve vraag stellen
 
 - Standaard: `false`
 - Accepteert geen waarde
@@ -2264,54 +971,9 @@ bin/magento deploy:mode:show
 
 Geeft de huidige toepassingsmodus weer.
 
+### Opties
 
-### `--help`, `-h`
-
-Help weergeven voor de opgegeven opdracht. Wanneer geen bevel vertoningshulp voor het lijstbevel wordt gegeven
-
-- Standaard: `false`
-- Accepteert geen waarde
-
-### `--quiet`, `-q`
-
-Geen bericht uitvoeren
-
-- Standaard: `false`
-- Accepteert geen waarde
-
-### `--verbose`, `-v|-vv|-vvv`
-
-Verhoog de breedheid van berichten: 1 voor normale output, 2 voor meer uitgebreide output en 3 voor zuivert
-
-- Standaard: `false`
-- Accepteert geen waarde
-
-### `--version`, `-V`
-
-Deze toepassingsversie weergeven
-
-- Standaard: `false`
-- Accepteert geen waarde
-
-### `--ansi`
-
-ANSI-uitvoer forceren (of uitschakelen —no-ansi)
-
-- Accepteert geen waarde
-
-### `--no-ansi`
-
-De optie &quot;—ansi&quot; negeren
-
-- Standaard: `false`
-- Accepteert geen waarde
-
-### `--no-interaction`, `-n`
-
-Geen interactieve vraag stellen
-
-- Standaard: `false`
-- Accepteert geen waarde
+Voor globale opties, zie [ Globale opties ](#global-options).
 
 
 ## `dev:di:info`
@@ -2322,61 +984,17 @@ bin/magento dev:di:info <class>
 
 Verstrekt informatie over de configuratie van de Injectie van de Afhankelijkheid voor het Bevel.
 
+### Argumenten
 
-
-### `class`
+#### `class`
 
 Klassenaam
 
 - Vereist
 
-### `--help`, `-h`
+### Opties
 
-Help weergeven voor de opgegeven opdracht. Wanneer geen bevel vertoningshulp voor het lijstbevel wordt gegeven
-
-- Standaard: `false`
-- Accepteert geen waarde
-
-### `--quiet`, `-q`
-
-Geen bericht uitvoeren
-
-- Standaard: `false`
-- Accepteert geen waarde
-
-### `--verbose`, `-v|-vv|-vvv`
-
-Verhoog de breedheid van berichten: 1 voor normale output, 2 voor meer uitgebreide output en 3 voor zuivert
-
-- Standaard: `false`
-- Accepteert geen waarde
-
-### `--version`, `-V`
-
-Deze toepassingsversie weergeven
-
-- Standaard: `false`
-- Accepteert geen waarde
-
-### `--ansi`
-
-ANSI-uitvoer forceren (of uitschakelen —no-ansi)
-
-- Accepteert geen waarde
-
-### `--no-ansi`
-
-De optie &quot;—ansi&quot; negeren
-
-- Standaard: `false`
-- Accepteert geen waarde
-
-### `--no-interaction`, `-n`
-
-Geen interactieve vraag stellen
-
-- Standaard: `false`
-- Accepteert geen waarde
+Voor globale opties, zie [ Globale opties ](#global-options).
 
 
 ## `dev:email:newsletter-compatibility-check`
@@ -2387,54 +1005,9 @@ bin/magento dev:email:newsletter-compatibility-check
 
 Scant nieuwsbrieven sjablonen voor mogelijke compatibiliteitsproblemen met variabeleverbruik
 
+### Opties
 
-### `--help`, `-h`
-
-Help weergeven voor de opgegeven opdracht. Wanneer geen bevel vertoningshulp voor het lijstbevel wordt gegeven
-
-- Standaard: `false`
-- Accepteert geen waarde
-
-### `--quiet`, `-q`
-
-Geen bericht uitvoeren
-
-- Standaard: `false`
-- Accepteert geen waarde
-
-### `--verbose`, `-v|-vv|-vvv`
-
-Verhoog de breedheid van berichten: 1 voor normale output, 2 voor meer uitgebreide output en 3 voor zuivert
-
-- Standaard: `false`
-- Accepteert geen waarde
-
-### `--version`, `-V`
-
-Deze toepassingsversie weergeven
-
-- Standaard: `false`
-- Accepteert geen waarde
-
-### `--ansi`
-
-ANSI-uitvoer forceren (of uitschakelen —no-ansi)
-
-- Accepteert geen waarde
-
-### `--no-ansi`
-
-De optie &quot;—ansi&quot; negeren
-
-- Standaard: `false`
-- Accepteert geen waarde
-
-### `--no-interaction`, `-n`
-
-Geen interactieve vraag stellen
-
-- Standaard: `false`
-- Accepteert geen waarde
+Voor globale opties, zie [ Globale opties ](#global-options).
 
 
 ## `dev:email:override-compatibility-check`
@@ -2445,54 +1018,9 @@ bin/magento dev:email:override-compatibility-check
 
 Scant e-mailsjabloonoverschrijvingen voor mogelijke compatibiliteitsproblemen met variabelengebruik
 
+### Opties
 
-### `--help`, `-h`
-
-Help weergeven voor de opgegeven opdracht. Wanneer geen bevel vertoningshulp voor het lijstbevel wordt gegeven
-
-- Standaard: `false`
-- Accepteert geen waarde
-
-### `--quiet`, `-q`
-
-Geen bericht uitvoeren
-
-- Standaard: `false`
-- Accepteert geen waarde
-
-### `--verbose`, `-v|-vv|-vvv`
-
-Verhoog de breedheid van berichten: 1 voor normale output, 2 voor meer uitgebreide output en 3 voor zuivert
-
-- Standaard: `false`
-- Accepteert geen waarde
-
-### `--version`, `-V`
-
-Deze toepassingsversie weergeven
-
-- Standaard: `false`
-- Accepteert geen waarde
-
-### `--ansi`
-
-ANSI-uitvoer forceren (of uitschakelen —no-ansi)
-
-- Accepteert geen waarde
-
-### `--no-ansi`
-
-De optie &quot;—ansi&quot; negeren
-
-- Standaard: `false`
-- Accepteert geen waarde
-
-### `--no-interaction`, `-n`
-
-Geen interactieve vraag stellen
-
-- Standaard: `false`
-- Accepteert geen waarde
+Voor globale opties, zie [ Globale opties ](#global-options).
 
 
 ## `dev:profiler:disable`
@@ -2503,54 +1031,9 @@ bin/magento dev:profiler:disable
 
 Maak profiler onbruikbaar.
 
+### Opties
 
-### `--help`, `-h`
-
-Help weergeven voor de opgegeven opdracht. Wanneer geen bevel vertoningshulp voor het lijstbevel wordt gegeven
-
-- Standaard: `false`
-- Accepteert geen waarde
-
-### `--quiet`, `-q`
-
-Geen bericht uitvoeren
-
-- Standaard: `false`
-- Accepteert geen waarde
-
-### `--verbose`, `-v|-vv|-vvv`
-
-Verhoog de breedheid van berichten: 1 voor normale output, 2 voor meer uitgebreide output en 3 voor zuivert
-
-- Standaard: `false`
-- Accepteert geen waarde
-
-### `--version`, `-V`
-
-Deze toepassingsversie weergeven
-
-- Standaard: `false`
-- Accepteert geen waarde
-
-### `--ansi`
-
-ANSI-uitvoer forceren (of uitschakelen —no-ansi)
-
-- Accepteert geen waarde
-
-### `--no-ansi`
-
-De optie &quot;—ansi&quot; negeren
-
-- Standaard: `false`
-- Accepteert geen waarde
-
-### `--no-interaction`, `-n`
-
-Geen interactieve vraag stellen
-
-- Standaard: `false`
-- Accepteert geen waarde
+Voor globale opties, zie [ Globale opties ](#global-options).
 
 
 ## `dev:profiler:enable`
@@ -2561,60 +1044,15 @@ bin/magento dev:profiler:enable [<type>]
 
 De analyse inschakelen.
 
+### Argumenten
 
-
-### `type`
+#### `type`
 
 Type analyse
 
+### Opties
 
-### `--help`, `-h`
-
-Help weergeven voor de opgegeven opdracht. Wanneer geen bevel vertoningshulp voor het lijstbevel wordt gegeven
-
-- Standaard: `false`
-- Accepteert geen waarde
-
-### `--quiet`, `-q`
-
-Geen bericht uitvoeren
-
-- Standaard: `false`
-- Accepteert geen waarde
-
-### `--verbose`, `-v|-vv|-vvv`
-
-Verhoog de breedheid van berichten: 1 voor normale output, 2 voor meer uitgebreide output en 3 voor zuivert
-
-- Standaard: `false`
-- Accepteert geen waarde
-
-### `--version`, `-V`
-
-Deze toepassingsversie weergeven
-
-- Standaard: `false`
-- Accepteert geen waarde
-
-### `--ansi`
-
-ANSI-uitvoer forceren (of uitschakelen —no-ansi)
-
-- Accepteert geen waarde
-
-### `--no-ansi`
-
-De optie &quot;—ansi&quot; negeren
-
-- Standaard: `false`
-- Accepteert geen waarde
-
-### `--no-interaction`, `-n`
-
-Geen interactieve vraag stellen
-
-- Standaard: `false`
-- Accepteert geen waarde
+Voor globale opties, zie [ Globale opties ](#global-options).
 
 
 ## `dev:query-log:disable`
@@ -2625,54 +1063,9 @@ bin/magento dev:query-log:disable
 
 Logboekregistratie van DB-query uitschakelen
 
+### Opties
 
-### `--help`, `-h`
-
-Help weergeven voor de opgegeven opdracht. Wanneer geen bevel vertoningshulp voor het lijstbevel wordt gegeven
-
-- Standaard: `false`
-- Accepteert geen waarde
-
-### `--quiet`, `-q`
-
-Geen bericht uitvoeren
-
-- Standaard: `false`
-- Accepteert geen waarde
-
-### `--verbose`, `-v|-vv|-vvv`
-
-Verhoog de breedheid van berichten: 1 voor normale output, 2 voor meer uitgebreide output en 3 voor zuivert
-
-- Standaard: `false`
-- Accepteert geen waarde
-
-### `--version`, `-V`
-
-Deze toepassingsversie weergeven
-
-- Standaard: `false`
-- Accepteert geen waarde
-
-### `--ansi`
-
-ANSI-uitvoer forceren (of uitschakelen —no-ansi)
-
-- Accepteert geen waarde
-
-### `--no-ansi`
-
-De optie &quot;—ansi&quot; negeren
-
-- Standaard: `false`
-- Accepteert geen waarde
-
-### `--no-interaction`, `-n`
-
-Geen interactieve vraag stellen
-
-- Standaard: `false`
-- Accepteert geen waarde
+Voor globale opties, zie [ Globale opties ](#global-options).
 
 
 ## `dev:query-log:enable`
@@ -2683,75 +1076,30 @@ bin/magento dev:query-log:enable [--include-all-queries [INCLUDE-ALL-QUERIES]] [
 
 Logbestand van DB-query inschakelen
 
+### Opties
 
-### `--include-all-queries`
+Voor globale opties, zie [ Globale opties ](#global-options).
+
+#### `--include-all-queries`
 
 Log alle query&#39;s. [ waar \|vals ]
 
 - Standaard: `true`
 - Accepteert een waarde
 
-### `--query-time-threshold`
+#### `--query-time-threshold`
 
 Drempelwaarden voor zoektijd.
 
 - Standaard: `0.001`
 - Accepteert een waarde
 
-### `--include-call-stack`
+#### `--include-call-stack`
 
 Inclusief aanroepstack. [ waar \|vals ]
 
 - Standaard: `true`
 - Accepteert een waarde
-
-### `--help`, `-h`
-
-Help weergeven voor de opgegeven opdracht. Wanneer geen bevel vertoningshulp voor het lijstbevel wordt gegeven
-
-- Standaard: `false`
-- Accepteert geen waarde
-
-### `--quiet`, `-q`
-
-Geen bericht uitvoeren
-
-- Standaard: `false`
-- Accepteert geen waarde
-
-### `--verbose`, `-v|-vv|-vvv`
-
-Verhoog de breedheid van berichten: 1 voor normale output, 2 voor meer uitgebreide output en 3 voor zuivert
-
-- Standaard: `false`
-- Accepteert geen waarde
-
-### `--version`, `-V`
-
-Deze toepassingsversie weergeven
-
-- Standaard: `false`
-- Accepteert geen waarde
-
-### `--ansi`
-
-ANSI-uitvoer forceren (of uitschakelen —no-ansi)
-
-- Accepteert geen waarde
-
-### `--no-ansi`
-
-De optie &quot;—ansi&quot; negeren
-
-- Standaard: `false`
-- Accepteert geen waarde
-
-### `--no-interaction`, `-n`
-
-Geen interactieve vraag stellen
-
-- Standaard: `false`
-- Accepteert geen waarde
 
 
 ## `dev:source-theme:deploy`
@@ -2762,9 +1110,9 @@ bin/magento dev:source-theme:deploy [--type TYPE] [--locale LOCALE] [--area AREA
 
 Hiermee worden bronbestanden voor thema verzameld en gepubliceerd.
 
+### Argumenten
 
-
-### `file`
+#### `file`
 
 Bestanden die vooraf moeten worden verwerkt (bestand moet worden opgegeven zonder extensie)
 
@@ -2772,81 +1120,37 @@ Bestanden die vooraf moeten worden verwerkt (bestand moet worden opgegeven zonde
 
 - Array
 
-### `--type`
+### Opties
+
+Voor globale opties, zie [ Globale opties ](#global-options).
+
+#### `--type`
 
 Type van brondossiers: [ minder ]
 
 - Standaard: `less`
 - Vereist een waarde
 
-### `--locale`
+#### `--locale`
 
 Landinstelling: [ nl_NL ]
 
 - Standaard: `en_US`
 - Vereist een waarde
 
-### `--area`
+#### `--area`
 
 Gebied: [ front\|adminhtml ]
 
 - Standaard: `frontend`
 - Vereist een waarde
 
-### `--theme`
+#### `--theme`
 
 Thema: [ Verkoper/thema ]
 
 - Standaard: `Magento/luma`
 - Vereist een waarde
-
-### `--help`, `-h`
-
-Help weergeven voor de opgegeven opdracht. Wanneer geen bevel vertoningshulp voor het lijstbevel wordt gegeven
-
-- Standaard: `false`
-- Accepteert geen waarde
-
-### `--quiet`, `-q`
-
-Geen bericht uitvoeren
-
-- Standaard: `false`
-- Accepteert geen waarde
-
-### `--verbose`, `-v|-vv|-vvv`
-
-Verhoog de breedheid van berichten: 1 voor normale output, 2 voor meer uitgebreide output en 3 voor zuivert
-
-- Standaard: `false`
-- Accepteert geen waarde
-
-### `--version`, `-V`
-
-Deze toepassingsversie weergeven
-
-- Standaard: `false`
-- Accepteert geen waarde
-
-### `--ansi`
-
-ANSI-uitvoer forceren (of uitschakelen —no-ansi)
-
-- Accepteert geen waarde
-
-### `--no-ansi`
-
-De optie &quot;—ansi&quot; negeren
-
-- Standaard: `false`
-- Accepteert geen waarde
-
-### `--no-interaction`, `-n`
-
-Geen interactieve vraag stellen
-
-- Standaard: `false`
-- Accepteert geen waarde
 
 
 ## `dev:template-hints:disable`
@@ -2857,54 +1161,9 @@ bin/magento dev:template-hints:disable
 
 Tips voor frontend-sjablonen uitschakelen. Wellicht is het leegmaken van de cache vereist.
 
+### Opties
 
-### `--help`, `-h`
-
-Help weergeven voor de opgegeven opdracht. Wanneer geen bevel vertoningshulp voor het lijstbevel wordt gegeven
-
-- Standaard: `false`
-- Accepteert geen waarde
-
-### `--quiet`, `-q`
-
-Geen bericht uitvoeren
-
-- Standaard: `false`
-- Accepteert geen waarde
-
-### `--verbose`, `-v|-vv|-vvv`
-
-Verhoog de breedheid van berichten: 1 voor normale output, 2 voor meer uitgebreide output en 3 voor zuivert
-
-- Standaard: `false`
-- Accepteert geen waarde
-
-### `--version`, `-V`
-
-Deze toepassingsversie weergeven
-
-- Standaard: `false`
-- Accepteert geen waarde
-
-### `--ansi`
-
-ANSI-uitvoer forceren (of uitschakelen —no-ansi)
-
-- Accepteert geen waarde
-
-### `--no-ansi`
-
-De optie &quot;—ansi&quot; negeren
-
-- Standaard: `false`
-- Accepteert geen waarde
-
-### `--no-interaction`, `-n`
-
-Geen interactieve vraag stellen
-
-- Standaard: `false`
-- Accepteert geen waarde
+Voor globale opties, zie [ Globale opties ](#global-options).
 
 
 ## `dev:template-hints:enable`
@@ -2915,54 +1174,9 @@ bin/magento dev:template-hints:enable
 
 Tips voor frontendsjablonen inschakelen. Wellicht is het leegmaken van de cache vereist.
 
+### Opties
 
-### `--help`, `-h`
-
-Help weergeven voor de opgegeven opdracht. Wanneer geen bevel vertoningshulp voor het lijstbevel wordt gegeven
-
-- Standaard: `false`
-- Accepteert geen waarde
-
-### `--quiet`, `-q`
-
-Geen bericht uitvoeren
-
-- Standaard: `false`
-- Accepteert geen waarde
-
-### `--verbose`, `-v|-vv|-vvv`
-
-Verhoog de breedheid van berichten: 1 voor normale output, 2 voor meer uitgebreide output en 3 voor zuivert
-
-- Standaard: `false`
-- Accepteert geen waarde
-
-### `--version`, `-V`
-
-Deze toepassingsversie weergeven
-
-- Standaard: `false`
-- Accepteert geen waarde
-
-### `--ansi`
-
-ANSI-uitvoer forceren (of uitschakelen —no-ansi)
-
-- Accepteert geen waarde
-
-### `--no-ansi`
-
-De optie &quot;—ansi&quot; negeren
-
-- Standaard: `false`
-- Accepteert geen waarde
-
-### `--no-interaction`, `-n`
-
-Geen interactieve vraag stellen
-
-- Standaard: `false`
-- Accepteert geen waarde
+Voor globale opties, zie [ Globale opties ](#global-options).
 
 
 ## `dev:template-hints:status`
@@ -2973,54 +1187,9 @@ bin/magento dev:template-hints:status
 
 Toon de status van frontend malplaatjewenken.
 
+### Opties
 
-### `--help`, `-h`
-
-Help weergeven voor de opgegeven opdracht. Wanneer geen bevel vertoningshulp voor het lijstbevel wordt gegeven
-
-- Standaard: `false`
-- Accepteert geen waarde
-
-### `--quiet`, `-q`
-
-Geen bericht uitvoeren
-
-- Standaard: `false`
-- Accepteert geen waarde
-
-### `--verbose`, `-v|-vv|-vvv`
-
-Verhoog de breedheid van berichten: 1 voor normale output, 2 voor meer uitgebreide output en 3 voor zuivert
-
-- Standaard: `false`
-- Accepteert geen waarde
-
-### `--version`, `-V`
-
-Deze toepassingsversie weergeven
-
-- Standaard: `false`
-- Accepteert geen waarde
-
-### `--ansi`
-
-ANSI-uitvoer forceren (of uitschakelen —no-ansi)
-
-- Accepteert geen waarde
-
-### `--no-ansi`
-
-De optie &quot;—ansi&quot; negeren
-
-- Standaard: `false`
-- Accepteert geen waarde
-
-### `--no-interaction`, `-n`
-
-Geen interactieve vraag stellen
-
-- Standaard: `false`
-- Accepteert geen waarde
+Voor globale opties, zie [ Globale opties ](#global-options).
 
 
 ## `dev:tests:run`
@@ -3031,69 +1200,24 @@ bin/magento dev:tests:run [-c|--arguments ARGUMENTS] [--] [<type>]
 
 Tests bij uitvoering
 
+### Argumenten
 
-
-### `type`
+#### `type`
 
 Type test dat moet worden uitgevoerd. Beschikbare types: allen, eenheid, integratie, integratie-allen, statisch, statisch-allen, integriteit, erfenis, gebrek
 
 - Standaard: `default`
 
+### Opties
 
-### `--arguments`, `-c`
+Voor globale opties, zie [ Globale opties ](#global-options).
+
+#### `--arguments`, `-c`
 
 Aanvullende argumenten voor PHPUnit. Voorbeeld: &quot;-c&#39;—filter=MyTest&#39;&#39; (geen spaties)
 
 - Standaard: &quot;
 - Vereist een waarde
-
-### `--help`, `-h`
-
-Help weergeven voor de opgegeven opdracht. Wanneer geen bevel vertoningshulp voor het lijstbevel wordt gegeven
-
-- Standaard: `false`
-- Accepteert geen waarde
-
-### `--quiet`, `-q`
-
-Geen bericht uitvoeren
-
-- Standaard: `false`
-- Accepteert geen waarde
-
-### `--verbose`, `-v|-vv|-vvv`
-
-Verhoog de breedheid van berichten: 1 voor normale output, 2 voor meer uitgebreide output en 3 voor zuivert
-
-- Standaard: `false`
-- Accepteert geen waarde
-
-### `--version`, `-V`
-
-Deze toepassingsversie weergeven
-
-- Standaard: `false`
-- Accepteert geen waarde
-
-### `--ansi`
-
-ANSI-uitvoer forceren (of uitschakelen —no-ansi)
-
-- Accepteert geen waarde
-
-### `--no-ansi`
-
-De optie &quot;—ansi&quot; negeren
-
-- Standaard: `false`
-- Accepteert geen waarde
-
-### `--no-interaction`, `-n`
-
-Geen interactieve vraag stellen
-
-- Standaard: `false`
-- Accepteert geen waarde
 
 
 ## `dev:urn-catalog:generate`
@@ -3104,68 +1228,24 @@ bin/magento dev:urn-catalog:generate [--ide IDE] [--] <path>
 
 Genereert de catalogus van URNs aan *.xsd- afbeeldingen voor winde om xml te benadrukken.
 
+### Argumenten
 
-
-### `path`
+#### `path`
 
 Pad naar bestand voor uitvoer van catalogus. Voor PHPStorm-gebruik .idea/misc.xml
 
 - Vereist
 
-### `--ide`
+### Opties
+
+Voor globale opties, zie [ Globale opties ](#global-options).
+
+#### `--ide`
 
 Indeling waarin de catalogus wordt gegenereerd. Ondersteund: [ phpstorm, vscode ]
 
 - Standaard: `phpstorm`
 - Vereist een waarde
-
-### `--help`, `-h`
-
-Help weergeven voor de opgegeven opdracht. Wanneer geen bevel vertoningshulp voor het lijstbevel wordt gegeven
-
-- Standaard: `false`
-- Accepteert geen waarde
-
-### `--quiet`, `-q`
-
-Geen bericht uitvoeren
-
-- Standaard: `false`
-- Accepteert geen waarde
-
-### `--verbose`, `-v|-vv|-vvv`
-
-Verhoog de breedheid van berichten: 1 voor normale output, 2 voor meer uitgebreide output en 3 voor zuivert
-
-- Standaard: `false`
-- Accepteert geen waarde
-
-### `--version`, `-V`
-
-Deze toepassingsversie weergeven
-
-- Standaard: `false`
-- Accepteert geen waarde
-
-### `--ansi`
-
-ANSI-uitvoer forceren (of uitschakelen —no-ansi)
-
-- Accepteert geen waarde
-
-### `--no-ansi`
-
-De optie &quot;—ansi&quot; negeren
-
-- Standaard: `false`
-- Accepteert geen waarde
-
-### `--no-interaction`, `-n`
-
-Geen interactieve vraag stellen
-
-- Standaard: `false`
-- Accepteert geen waarde
 
 
 ## `dev:xml:convert`
@@ -3176,71 +1256,28 @@ bin/magento dev:xml:convert [-o|--overwrite] [--] <xml-file> <processor>
 
 Hiermee wordt een XML-bestand geconverteerd met XSL-stijlpagina&#39;s
 
+### Argumenten
 
-
-### `xml-file`
+#### `xml-file`
 
 Pad naar XML-bestand dat moet worden getransformeerd
 
 - Vereist
 
-### `processor`
+
+#### `processor`
 
 Pad naar XSL-stijlpagina die wordt toegepast op XML-bestand
 
 - Vereist
 
-### `--overwrite`, `-o`
+### Opties
+
+Voor globale opties, zie [ Globale opties ](#global-options).
+
+#### `--overwrite`, `-o`
 
 XML-bestand overschrijven
-
-- Standaard: `false`
-- Accepteert geen waarde
-
-### `--help`, `-h`
-
-Help weergeven voor de opgegeven opdracht. Wanneer geen bevel vertoningshulp voor het lijstbevel wordt gegeven
-
-- Standaard: `false`
-- Accepteert geen waarde
-
-### `--quiet`, `-q`
-
-Geen bericht uitvoeren
-
-- Standaard: `false`
-- Accepteert geen waarde
-
-### `--verbose`, `-v|-vv|-vvv`
-
-Verhoog de breedheid van berichten: 1 voor normale output, 2 voor meer uitgebreide output en 3 voor zuivert
-
-- Standaard: `false`
-- Accepteert geen waarde
-
-### `--version`, `-V`
-
-Deze toepassingsversie weergeven
-
-- Standaard: `false`
-- Accepteert geen waarde
-
-### `--ansi`
-
-ANSI-uitvoer forceren (of uitschakelen —no-ansi)
-
-- Accepteert geen waarde
-
-### `--no-ansi`
-
-De optie &quot;—ansi&quot; negeren
-
-- Standaard: `false`
-- Accepteert geen waarde
-
-### `--no-interaction`, `-n`
-
-Geen interactieve vraag stellen
 
 - Standaard: `false`
 - Accepteert geen waarde
@@ -3254,63 +1291,18 @@ bin/magento downloadable:domains:add [<domains>...]
 
 Domeinen toevoegen aan de whitelist van downloadbare domeinen
 
+### Argumenten
 
-
-### `domains`
+#### `domains`
 
 Naam van domein
 
 - Standaard: `[]`
-
 - Array
 
-### `--help`, `-h`
+### Opties
 
-Help weergeven voor de opgegeven opdracht. Wanneer geen bevel vertoningshulp voor het lijstbevel wordt gegeven
-
-- Standaard: `false`
-- Accepteert geen waarde
-
-### `--quiet`, `-q`
-
-Geen bericht uitvoeren
-
-- Standaard: `false`
-- Accepteert geen waarde
-
-### `--verbose`, `-v|-vv|-vvv`
-
-Verhoog de breedheid van berichten: 1 voor normale output, 2 voor meer uitgebreide output en 3 voor zuivert
-
-- Standaard: `false`
-- Accepteert geen waarde
-
-### `--version`, `-V`
-
-Deze toepassingsversie weergeven
-
-- Standaard: `false`
-- Accepteert geen waarde
-
-### `--ansi`
-
-ANSI-uitvoer forceren (of uitschakelen —no-ansi)
-
-- Accepteert geen waarde
-
-### `--no-ansi`
-
-De optie &quot;—ansi&quot; negeren
-
-- Standaard: `false`
-- Accepteert geen waarde
-
-### `--no-interaction`, `-n`
-
-Geen interactieve vraag stellen
-
-- Standaard: `false`
-- Accepteert geen waarde
+Voor globale opties, zie [ Globale opties ](#global-options).
 
 
 ## `downloadable:domains:remove`
@@ -3321,63 +1313,18 @@ bin/magento downloadable:domains:remove [<domains>...]
 
 Verwijder domeinen uit de downloadbare whitelist van domeinen
 
+### Argumenten
 
-
-### `domains`
+#### `domains`
 
 Domeinnamen
 
 - Standaard: `[]`
-
 - Array
 
-### `--help`, `-h`
+### Opties
 
-Help weergeven voor de opgegeven opdracht. Wanneer geen bevel vertoningshulp voor het lijstbevel wordt gegeven
-
-- Standaard: `false`
-- Accepteert geen waarde
-
-### `--quiet`, `-q`
-
-Geen bericht uitvoeren
-
-- Standaard: `false`
-- Accepteert geen waarde
-
-### `--verbose`, `-v|-vv|-vvv`
-
-Verhoog de breedheid van berichten: 1 voor normale output, 2 voor meer uitgebreide output en 3 voor zuivert
-
-- Standaard: `false`
-- Accepteert geen waarde
-
-### `--version`, `-V`
-
-Deze toepassingsversie weergeven
-
-- Standaard: `false`
-- Accepteert geen waarde
-
-### `--ansi`
-
-ANSI-uitvoer forceren (of uitschakelen —no-ansi)
-
-- Accepteert geen waarde
-
-### `--no-ansi`
-
-De optie &quot;—ansi&quot; negeren
-
-- Standaard: `false`
-- Accepteert geen waarde
-
-### `--no-interaction`, `-n`
-
-Geen interactieve vraag stellen
-
-- Standaard: `false`
-- Accepteert geen waarde
+Voor globale opties, zie [ Globale opties ](#global-options).
 
 
 ## `downloadable:domains:show`
@@ -3388,54 +1335,9 @@ bin/magento downloadable:domains:show
 
 Downloadbare whitelist van domeinen weergeven
 
+### Opties
 
-### `--help`, `-h`
-
-Help weergeven voor de opgegeven opdracht. Wanneer geen bevel vertoningshulp voor het lijstbevel wordt gegeven
-
-- Standaard: `false`
-- Accepteert geen waarde
-
-### `--quiet`, `-q`
-
-Geen bericht uitvoeren
-
-- Standaard: `false`
-- Accepteert geen waarde
-
-### `--verbose`, `-v|-vv|-vvv`
-
-Verhoog de breedheid van berichten: 1 voor normale output, 2 voor meer uitgebreide output en 3 voor zuivert
-
-- Standaard: `false`
-- Accepteert geen waarde
-
-### `--version`, `-V`
-
-Deze toepassingsversie weergeven
-
-- Standaard: `false`
-- Accepteert geen waarde
-
-### `--ansi`
-
-ANSI-uitvoer forceren (of uitschakelen —no-ansi)
-
-- Accepteert geen waarde
-
-### `--no-ansi`
-
-De optie &quot;—ansi&quot; negeren
-
-- Standaard: `false`
-- Accepteert geen waarde
-
-### `--no-interaction`, `-n`
-
-Geen interactieve vraag stellen
-
-- Standaard: `false`
-- Accepteert geen waarde
+Voor globale opties, zie [ Globale opties ](#global-options).
 
 
 ## `encryption:payment-data:update`
@@ -3446,54 +1348,9 @@ bin/magento encryption:payment-data:update
 
 Codeert gecodeerde creditcardgegevens opnieuw met de nieuwste coderingssleutel.
 
+### Opties
 
-### `--help`, `-h`
-
-Help weergeven voor de opgegeven opdracht. Wanneer geen bevel vertoningshulp voor het lijstbevel wordt gegeven
-
-- Standaard: `false`
-- Accepteert geen waarde
-
-### `--quiet`, `-q`
-
-Geen bericht uitvoeren
-
-- Standaard: `false`
-- Accepteert geen waarde
-
-### `--verbose`, `-v|-vv|-vvv`
-
-Verhoog de breedheid van berichten: 1 voor normale output, 2 voor meer uitgebreide output en 3 voor zuivert
-
-- Standaard: `false`
-- Accepteert geen waarde
-
-### `--version`, `-V`
-
-Deze toepassingsversie weergeven
-
-- Standaard: `false`
-- Accepteert geen waarde
-
-### `--ansi`
-
-ANSI-uitvoer forceren (of uitschakelen —no-ansi)
-
-- Accepteert geen waarde
-
-### `--no-ansi`
-
-De optie &quot;—ansi&quot; negeren
-
-- Standaard: `false`
-- Accepteert geen waarde
-
-### `--no-interaction`, `-n`
-
-Geen interactieve vraag stellen
-
-- Standaard: `false`
-- Accepteert geen waarde
+Voor globale opties, zie [ Globale opties ](#global-options).
 
 
 ## `events:create-event-provider`
@@ -3504,66 +1361,21 @@ bin/magento events:create-event-provider [--label [LABEL]] [--description [DESCR
 
 Maak een aangepaste gebeurtenisprovider in Adobe I/O Events voor deze instantie. Als u de label- en beschrijvingsopties niet opgeeft, moeten deze worden gedefinieerd in het bestand system app/etc/event-types.json.
 
+### Opties
 
-### `--label`
+Voor globale opties, zie [ Globale opties ](#global-options).
+
+#### `--label`
 
 Een label om uw aangepaste provider te definiëren.
 
 - Accepteert een waarde
 
-### `--description`
+#### `--description`
 
 Een beschrijving van uw provider.
 
 - Accepteert een waarde
-
-### `--help`, `-h`
-
-Help weergeven voor de opgegeven opdracht. Wanneer geen bevel vertoningshulp voor het lijstbevel wordt gegeven
-
-- Standaard: `false`
-- Accepteert geen waarde
-
-### `--quiet`, `-q`
-
-Geen bericht uitvoeren
-
-- Standaard: `false`
-- Accepteert geen waarde
-
-### `--verbose`, `-v|-vv|-vvv`
-
-Verhoog de breedheid van berichten: 1 voor normale output, 2 voor meer uitgebreide output en 3 voor zuivert
-
-- Standaard: `false`
-- Accepteert geen waarde
-
-### `--version`, `-V`
-
-Deze toepassingsversie weergeven
-
-- Standaard: `false`
-- Accepteert geen waarde
-
-### `--ansi`
-
-ANSI-uitvoer forceren (of uitschakelen —no-ansi)
-
-- Accepteert geen waarde
-
-### `--no-ansi`
-
-De optie &quot;—ansi&quot; negeren
-
-- Standaard: `false`
-- Accepteert geen waarde
-
-### `--no-interaction`, `-n`
-
-Geen interactieve vraag stellen
-
-- Standaard: `false`
-- Accepteert geen waarde
 
 
 ## `events:generate:module`
@@ -3574,54 +1386,9 @@ bin/magento events:generate:module
 
 Module genereren op basis van de lijst met insteekmodules
 
+### Opties
 
-### `--help`, `-h`
-
-Help weergeven voor de opgegeven opdracht. Wanneer geen bevel vertoningshulp voor het lijstbevel wordt gegeven
-
-- Standaard: `false`
-- Accepteert geen waarde
-
-### `--quiet`, `-q`
-
-Geen bericht uitvoeren
-
-- Standaard: `false`
-- Accepteert geen waarde
-
-### `--verbose`, `-v|-vv|-vvv`
-
-Verhoog de breedheid van berichten: 1 voor normale output, 2 voor meer uitgebreide output en 3 voor zuivert
-
-- Standaard: `false`
-- Accepteert geen waarde
-
-### `--version`, `-V`
-
-Deze toepassingsversie weergeven
-
-- Standaard: `false`
-- Accepteert geen waarde
-
-### `--ansi`
-
-ANSI-uitvoer forceren (of uitschakelen —no-ansi)
-
-- Accepteert geen waarde
-
-### `--no-ansi`
-
-De optie &quot;—ansi&quot; negeren
-
-- Standaard: `false`
-- Accepteert geen waarde
-
-### `--no-interaction`, `-n`
-
-Geen interactieve vraag stellen
-
-- Standaard: `false`
-- Accepteert geen waarde
+Voor globale opties, zie [ Globale opties ](#global-options).
 
 
 ## `events:info`
@@ -3632,68 +1399,24 @@ bin/magento events:info [--depth [DEPTH]] [--] <event-code>
 
 Retourneert de payload van de opgegeven gebeurtenis.
 
+### Argumenten
 
-
-### `event-code`
+#### `event-code`
 
 Gebeurteniscode
 
 - Vereist
 
-### `--depth`
+### Opties
+
+Voor globale opties, zie [ Globale opties ](#global-options).
+
+#### `--depth`
 
 Het aantal niveaus in de gebeurtenislading om terug te keren
 
 - Standaard: `2`
 - Accepteert een waarde
-
-### `--help`, `-h`
-
-Help weergeven voor de opgegeven opdracht. Wanneer geen bevel vertoningshulp voor het lijstbevel wordt gegeven
-
-- Standaard: `false`
-- Accepteert geen waarde
-
-### `--quiet`, `-q`
-
-Geen bericht uitvoeren
-
-- Standaard: `false`
-- Accepteert geen waarde
-
-### `--verbose`, `-v|-vv|-vvv`
-
-Verhoog de breedheid van berichten: 1 voor normale output, 2 voor meer uitgebreide output en 3 voor zuivert
-
-- Standaard: `false`
-- Accepteert geen waarde
-
-### `--version`, `-V`
-
-Deze toepassingsversie weergeven
-
-- Standaard: `false`
-- Accepteert geen waarde
-
-### `--ansi`
-
-ANSI-uitvoer forceren (of uitschakelen —no-ansi)
-
-- Accepteert geen waarde
-
-### `--no-ansi`
-
-De optie &quot;—ansi&quot; negeren
-
-- Standaard: `false`
-- Accepteert geen waarde
-
-### `--no-interaction`, `-n`
-
-Geen interactieve vraag stellen
-
-- Standaard: `false`
-- Accepteert geen waarde
 
 
 ## `events:list`
@@ -3704,54 +1427,9 @@ bin/magento events:list
 
 Geeft een lijst met geabonneerde gebeurtenissen weer
 
+### Opties
 
-### `--help`, `-h`
-
-Help weergeven voor de opgegeven opdracht. Wanneer geen bevel vertoningshulp voor het lijstbevel wordt gegeven
-
-- Standaard: `false`
-- Accepteert geen waarde
-
-### `--quiet`, `-q`
-
-Geen bericht uitvoeren
-
-- Standaard: `false`
-- Accepteert geen waarde
-
-### `--verbose`, `-v|-vv|-vvv`
-
-Verhoog de breedheid van berichten: 1 voor normale output, 2 voor meer uitgebreide output en 3 voor zuivert
-
-- Standaard: `false`
-- Accepteert geen waarde
-
-### `--version`, `-V`
-
-Deze toepassingsversie weergeven
-
-- Standaard: `false`
-- Accepteert geen waarde
-
-### `--ansi`
-
-ANSI-uitvoer forceren (of uitschakelen —no-ansi)
-
-- Accepteert geen waarde
-
-### `--no-ansi`
-
-De optie &quot;—ansi&quot; negeren
-
-- Standaard: `false`
-- Accepteert geen waarde
-
-### `--no-interaction`, `-n`
-
-Geen interactieve vraag stellen
-
-- Standaard: `false`
-- Accepteert geen waarde
+Voor globale opties, zie [ Globale opties ](#global-options).
 
 
 ## `events:list:all`
@@ -3762,61 +1440,17 @@ bin/magento events:list:all <module_name>
 
 Hiermee wordt een lijst geretourneerd met abonnementsgebeurtenissen die in de opgegeven module zijn gedefinieerd
 
+### Argumenten
 
-
-### `module_name`
+#### `module_name`
 
 Modulenaam
 
 - Vereist
 
-### `--help`, `-h`
+### Opties
 
-Help weergeven voor de opgegeven opdracht. Wanneer geen bevel vertoningshulp voor het lijstbevel wordt gegeven
-
-- Standaard: `false`
-- Accepteert geen waarde
-
-### `--quiet`, `-q`
-
-Geen bericht uitvoeren
-
-- Standaard: `false`
-- Accepteert geen waarde
-
-### `--verbose`, `-v|-vv|-vvv`
-
-Verhoog de breedheid van berichten: 1 voor normale output, 2 voor meer uitgebreide output en 3 voor zuivert
-
-- Standaard: `false`
-- Accepteert geen waarde
-
-### `--version`, `-V`
-
-Deze toepassingsversie weergeven
-
-- Standaard: `false`
-- Accepteert geen waarde
-
-### `--ansi`
-
-ANSI-uitvoer forceren (of uitschakelen —no-ansi)
-
-- Accepteert geen waarde
-
-### `--no-ansi`
-
-De optie &quot;—ansi&quot; negeren
-
-- Standaard: `false`
-- Accepteert geen waarde
-
-### `--no-interaction`, `-n`
-
-Geen interactieve vraag stellen
-
-- Standaard: `false`
-- Accepteert geen waarde
+Voor globale opties, zie [ Globale opties ](#global-options).
 
 
 ## `events:metadata:populate`
@@ -3827,54 +1461,9 @@ bin/magento events:metadata:populate
 
 Hiermee maakt u metagegevens in Adobe I/O in de configuratielijst (XML en toepassingsconfiguraties)
 
+### Opties
 
-### `--help`, `-h`
-
-Help weergeven voor de opgegeven opdracht. Wanneer geen bevel vertoningshulp voor het lijstbevel wordt gegeven
-
-- Standaard: `false`
-- Accepteert geen waarde
-
-### `--quiet`, `-q`
-
-Geen bericht uitvoeren
-
-- Standaard: `false`
-- Accepteert geen waarde
-
-### `--verbose`, `-v|-vv|-vvv`
-
-Verhoog de breedheid van berichten: 1 voor normale output, 2 voor meer uitgebreide output en 3 voor zuivert
-
-- Standaard: `false`
-- Accepteert geen waarde
-
-### `--version`, `-V`
-
-Deze toepassingsversie weergeven
-
-- Standaard: `false`
-- Accepteert geen waarde
-
-### `--ansi`
-
-ANSI-uitvoer forceren (of uitschakelen —no-ansi)
-
-- Accepteert geen waarde
-
-### `--no-ansi`
-
-De optie &quot;—ansi&quot; negeren
-
-- Standaard: `false`
-- Accepteert geen waarde
-
-### `--no-interaction`, `-n`
-
-Geen interactieve vraag stellen
-
-- Standaard: `false`
-- Accepteert geen waarde
+Voor globale opties, zie [ Globale opties ](#global-options).
 
 
 ## `events:provider:info`
@@ -3885,54 +1474,9 @@ bin/magento events:provider:info
 
 Hiermee worden gegevens over de geconfigureerde gebeurtenisprovider geretourneerd
 
+### Opties
 
-### `--help`, `-h`
-
-Help weergeven voor de opgegeven opdracht. Wanneer geen bevel vertoningshulp voor het lijstbevel wordt gegeven
-
-- Standaard: `false`
-- Accepteert geen waarde
-
-### `--quiet`, `-q`
-
-Geen bericht uitvoeren
-
-- Standaard: `false`
-- Accepteert geen waarde
-
-### `--verbose`, `-v|-vv|-vvv`
-
-Verhoog de breedheid van berichten: 1 voor normale output, 2 voor meer uitgebreide output en 3 voor zuivert
-
-- Standaard: `false`
-- Accepteert geen waarde
-
-### `--version`, `-V`
-
-Deze toepassingsversie weergeven
-
-- Standaard: `false`
-- Accepteert geen waarde
-
-### `--ansi`
-
-ANSI-uitvoer forceren (of uitschakelen —no-ansi)
-
-- Accepteert geen waarde
-
-### `--no-ansi`
-
-De optie &quot;—ansi&quot; negeren
-
-- Standaard: `false`
-- Accepteert geen waarde
-
-### `--no-interaction`, `-n`
-
-Geen interactieve vraag stellen
-
-- Standaard: `false`
-- Accepteert geen waarde
+Voor globale opties, zie [ Globale opties ](#global-options).
 
 
 ## `events:registrations:list`
@@ -3943,54 +1487,9 @@ bin/magento events:registrations:list
 
 Somt gebeurtenisregistraties in uw App Builder-project op
 
+### Opties
 
-### `--help`, `-h`
-
-Help weergeven voor de opgegeven opdracht. Wanneer geen bevel vertoningshulp voor het lijstbevel wordt gegeven
-
-- Standaard: `false`
-- Accepteert geen waarde
-
-### `--quiet`, `-q`
-
-Geen bericht uitvoeren
-
-- Standaard: `false`
-- Accepteert geen waarde
-
-### `--verbose`, `-v|-vv|-vvv`
-
-Verhoog de breedheid van berichten: 1 voor normale output, 2 voor meer uitgebreide output en 3 voor zuivert
-
-- Standaard: `false`
-- Accepteert geen waarde
-
-### `--version`, `-V`
-
-Deze toepassingsversie weergeven
-
-- Standaard: `false`
-- Accepteert geen waarde
-
-### `--ansi`
-
-ANSI-uitvoer forceren (of uitschakelen —no-ansi)
-
-- Accepteert geen waarde
-
-### `--no-ansi`
-
-De optie &quot;—ansi&quot; negeren
-
-- Standaard: `false`
-- Accepteert geen waarde
-
-### `--no-interaction`, `-n`
-
-Geen interactieve vraag stellen
-
-- Standaard: `false`
-- Accepteert geen waarde
+Voor globale opties, zie [ Globale opties ](#global-options).
 
 
 ## `events:subscribe`
@@ -4001,106 +1500,62 @@ bin/magento events:subscribe [-f|--force] [--fields FIELDS] [--parent PARENT] [-
 
 Abonneren op de gebeurtenis
 
+### Argumenten
 
-
-### `event-code`
+#### `event-code`
 
 Gebeurteniscode
 
 - Vereist
 
-### `--force`, `-f`
+### Opties
+
+Voor globale opties, zie [ Globale opties ](#global-options).
+
+#### `--force`, `-f`
 
 Dwingt de gespecificeerde gebeurtenis om worden ingetekend, zelfs als het niet plaatselijk is bepaald.
 
 - Standaard: `false`
 - Accepteert geen waarde
 
-### `--fields`
+#### `--fields`
 
 De lijst met velden in de payload van gebeurtenisgegevens.
 
 - Standaard: `[]`
 - Vereist een waarde
 
-### `--parent`
+#### `--parent`
 
 De bovenliggende gebeurteniscode voor een gebeurtenisabonnement met regels.
 
 - Vereist een waarde
 
-### `--rules`
+#### `--rules`
 
 De lijst met regels voor het gebeurtenisabonnement, waarbij elke regel is opgemaakt als &quot;field\|operator\|value&quot;.
 
 - Standaard: `[]`
 - Vereist een waarde
 
-### `--priority`, `-p`
+#### `--priority`, `-p`
 
 Versnelt de verzending van deze gebeurtenis. Geef deze optie op voor gebeurtenissen die direct moeten worden geleverd. Standaard worden gebeurtenissen eenmaal per minuut met een kroon verzonden.
 
 - Standaard: `false`
 - Accepteert geen waarde
 
-### `--destination`, `-d`
+#### `--destination`, `-d`
 
 De bestemming van deze gebeurtenis. Geef deze optie op voor de gebeurtenissen die naar de aangepaste bestemming moeten worden verzonden.
 
 - Standaard: `default`
 - Vereist een waarde
 
-### `--hipaaAuditRequired`
+#### `--hipaaAuditRequired`
 
 Geeft aan dat de gebeurtenis gegevens bevat die worden gecontroleerd door HIPAA.
-
-- Standaard: `false`
-- Accepteert geen waarde
-
-### `--help`, `-h`
-
-Help weergeven voor de opgegeven opdracht. Wanneer geen bevel vertoningshulp voor het lijstbevel wordt gegeven
-
-- Standaard: `false`
-- Accepteert geen waarde
-
-### `--quiet`, `-q`
-
-Geen bericht uitvoeren
-
-- Standaard: `false`
-- Accepteert geen waarde
-
-### `--verbose`, `-v|-vv|-vvv`
-
-Verhoog de breedheid van berichten: 1 voor normale output, 2 voor meer uitgebreide output en 3 voor zuivert
-
-- Standaard: `false`
-- Accepteert geen waarde
-
-### `--version`, `-V`
-
-Deze toepassingsversie weergeven
-
-- Standaard: `false`
-- Accepteert geen waarde
-
-### `--ansi`
-
-ANSI-uitvoer forceren (of uitschakelen —no-ansi)
-
-- Accepteert geen waarde
-
-### `--no-ansi`
-
-De optie &quot;—ansi&quot; negeren
-
-- Standaard: `false`
-- Accepteert geen waarde
-
-### `--no-interaction`, `-n`
-
-Geen interactieve vraag stellen
 
 - Standaard: `false`
 - Accepteert geen waarde
@@ -4114,58 +1569,13 @@ bin/magento events:sync-events-metadata [-d|--delete]
 
 Metagegevens van gebeurtenissen synchroniseren voor deze instantie
 
+### Opties
 
-### `--delete`, `-d`
+Voor globale opties, zie [ Globale opties ](#global-options).
+
+#### `--delete`, `-d`
 
 Metagegevens van gebeurtenissen verwijderen is niet langer vereist
-
-- Standaard: `false`
-- Accepteert geen waarde
-
-### `--help`, `-h`
-
-Help weergeven voor de opgegeven opdracht. Wanneer geen bevel vertoningshulp voor het lijstbevel wordt gegeven
-
-- Standaard: `false`
-- Accepteert geen waarde
-
-### `--quiet`, `-q`
-
-Geen bericht uitvoeren
-
-- Standaard: `false`
-- Accepteert geen waarde
-
-### `--verbose`, `-v|-vv|-vvv`
-
-Verhoog de breedheid van berichten: 1 voor normale output, 2 voor meer uitgebreide output en 3 voor zuivert
-
-- Standaard: `false`
-- Accepteert geen waarde
-
-### `--version`, `-V`
-
-Deze toepassingsversie weergeven
-
-- Standaard: `false`
-- Accepteert geen waarde
-
-### `--ansi`
-
-ANSI-uitvoer forceren (of uitschakelen —no-ansi)
-
-- Accepteert geen waarde
-
-### `--no-ansi`
-
-De optie &quot;—ansi&quot; negeren
-
-- Standaard: `false`
-- Accepteert geen waarde
-
-### `--no-interaction`, `-n`
-
-Geen interactieve vraag stellen
 
 - Standaard: `false`
 - Accepteert geen waarde
@@ -4179,61 +1589,17 @@ bin/magento events:unsubscribe <event-code>
 
 Hiermee wordt het abonnement op de opgegeven gebeurtenis verwijderd
 
+### Argumenten
 
-
-### `event-code`
+#### `event-code`
 
 Gebeurteniscode waarvan abonnement moet worden opgezegd
 
 - Vereist
 
-### `--help`, `-h`
+### Opties
 
-Help weergeven voor de opgegeven opdracht. Wanneer geen bevel vertoningshulp voor het lijstbevel wordt gegeven
-
-- Standaard: `false`
-- Accepteert geen waarde
-
-### `--quiet`, `-q`
-
-Geen bericht uitvoeren
-
-- Standaard: `false`
-- Accepteert geen waarde
-
-### `--verbose`, `-v|-vv|-vvv`
-
-Verhoog de breedheid van berichten: 1 voor normale output, 2 voor meer uitgebreide output en 3 voor zuivert
-
-- Standaard: `false`
-- Accepteert geen waarde
-
-### `--version`, `-V`
-
-Deze toepassingsversie weergeven
-
-- Standaard: `false`
-- Accepteert geen waarde
-
-### `--ansi`
-
-ANSI-uitvoer forceren (of uitschakelen —no-ansi)
-
-- Accepteert geen waarde
-
-### `--no-ansi`
-
-De optie &quot;—ansi&quot; negeren
-
-- Standaard: `false`
-- Accepteert geen waarde
-
-### `--no-interaction`, `-n`
-
-Geen interactieve vraag stellen
-
-- Standaard: `false`
-- Accepteert geen waarde
+Voor globale opties, zie [ Globale opties ](#global-options).
 
 
 ## `i18n:collect-phrases`
@@ -4244,70 +1610,25 @@ bin/magento i18n:collect-phrases [-o|--output OUTPUT] [-m|--magento] [--] [<dire
 
 Neemt zinnen op in de codebase
 
+### Argumenten
 
-
-### `directory`
+#### `directory`
 
 Mappad om te parseren. Niet nodig indien —magento-markering is ingesteld
 
+### Opties
 
-### `--output`, `-o`
+Voor globale opties, zie [ Globale opties ](#global-options).
+
+#### `--output`, `-o`
 
 Pad (inclusief bestandsnaam) naar een uitvoerbestand. Als er geen bestand is opgegeven, wordt standaard stdout toegepast.
 
 - Vereist een waarde
 
-### `--magento`, `-m`
+#### `--magento`, `-m`
 
 Gebruik de parameter —magento om de huidige codebase van het Magento te parseren. Laat de parameter weg als een folder wordt gespecificeerd.
-
-- Standaard: `false`
-- Accepteert geen waarde
-
-### `--help`, `-h`
-
-Help weergeven voor de opgegeven opdracht. Wanneer geen bevel vertoningshulp voor het lijstbevel wordt gegeven
-
-- Standaard: `false`
-- Accepteert geen waarde
-
-### `--quiet`, `-q`
-
-Geen bericht uitvoeren
-
-- Standaard: `false`
-- Accepteert geen waarde
-
-### `--verbose`, `-v|-vv|-vvv`
-
-Verhoog de breedheid van berichten: 1 voor normale output, 2 voor meer uitgebreide output en 3 voor zuivert
-
-- Standaard: `false`
-- Accepteert geen waarde
-
-### `--version`, `-V`
-
-Deze toepassingsversie weergeven
-
-- Standaard: `false`
-- Accepteert geen waarde
-
-### `--ansi`
-
-ANSI-uitvoer forceren (of uitschakelen —no-ansi)
-
-- Accepteert geen waarde
-
-### `--no-ansi`
-
-De optie &quot;—ansi&quot; negeren
-
-- Standaard: `false`
-- Accepteert geen waarde
-
-### `--no-interaction`, `-n`
-
-Geen interactieve vraag stellen
 
 - Standaard: `false`
 - Accepteert geen waarde
@@ -4321,78 +1642,35 @@ bin/magento i18n:pack [-m|--mode MODE] [-d|--allow-duplicates] [--] <source> <lo
 
 Slaat taalpakket op
 
+### Argumenten
 
-
-### `source`
+#### `source`
 
 Pad naar bronwoordenboekbestand met vertalingen
 
 - Vereist
 
-### `locale`
+
+#### `locale`
 
 Doellandinstelling voor woordenboek, bijvoorbeeld &quot;de_DE&quot;
 
 - Vereist
 
-### `--mode`, `-m`
+### Opties
+
+Voor globale opties, zie [ Globale opties ](#global-options).
+
+#### `--mode`, `-m`
 
 Modus Opslaan voor woordenboek - &quot;replace&quot; - taalpakket vervangen door nieuw - &quot;merge&quot; - taalpakketten samenvoegen door standaard &quot;replace&quot;
 
 - Standaard: `replace`
 - Vereist een waarde
 
-### `--allow-duplicates`, `-d`
+#### `--allow-duplicates`, `-d`
 
 Gebruik de parameter —allow-duplicates om het opslaan van duplicaten van translate toe te staan. Laat anders de parameter weg.
-
-- Standaard: `false`
-- Accepteert geen waarde
-
-### `--help`, `-h`
-
-Help weergeven voor de opgegeven opdracht. Wanneer geen bevel vertoningshulp voor het lijstbevel wordt gegeven
-
-- Standaard: `false`
-- Accepteert geen waarde
-
-### `--quiet`, `-q`
-
-Geen bericht uitvoeren
-
-- Standaard: `false`
-- Accepteert geen waarde
-
-### `--verbose`, `-v|-vv|-vvv`
-
-Verhoog de breedheid van berichten: 1 voor normale output, 2 voor meer uitgebreide output en 3 voor zuivert
-
-- Standaard: `false`
-- Accepteert geen waarde
-
-### `--version`, `-V`
-
-Deze toepassingsversie weergeven
-
-- Standaard: `false`
-- Accepteert geen waarde
-
-### `--ansi`
-
-ANSI-uitvoer forceren (of uitschakelen —no-ansi)
-
-- Accepteert geen waarde
-
-### `--no-ansi`
-
-De optie &quot;—ansi&quot; negeren
-
-- Standaard: `false`
-- Accepteert geen waarde
-
-### `--no-interaction`, `-n`
-
-Geen interactieve vraag stellen
 
 - Standaard: `false`
 - Accepteert geen waarde
@@ -4406,68 +1684,24 @@ bin/magento i18n:uninstall [-b|--backup-code] [--] <package>...
 
 Verwijdert taalpakketten
 
+### Argumenten
 
-
-### `package`
+#### `package`
 
 Taalpakketnaam
 
 - Standaard: `[]`
-
 - Vereist
+
 - Array
 
-### `--backup-code`, `-b`
+### Opties
+
+Voor globale opties, zie [ Globale opties ](#global-options).
+
+#### `--backup-code`, `-b`
 
 Back-up maken van code- en configuratiebestanden (behalve tijdelijke bestanden)
-
-- Standaard: `false`
-- Accepteert geen waarde
-
-### `--help`, `-h`
-
-Help weergeven voor de opgegeven opdracht. Wanneer geen bevel vertoningshulp voor het lijstbevel wordt gegeven
-
-- Standaard: `false`
-- Accepteert geen waarde
-
-### `--quiet`, `-q`
-
-Geen bericht uitvoeren
-
-- Standaard: `false`
-- Accepteert geen waarde
-
-### `--verbose`, `-v|-vv|-vvv`
-
-Verhoog de breedheid van berichten: 1 voor normale output, 2 voor meer uitgebreide output en 3 voor zuivert
-
-- Standaard: `false`
-- Accepteert geen waarde
-
-### `--version`, `-V`
-
-Deze toepassingsversie weergeven
-
-- Standaard: `false`
-- Accepteert geen waarde
-
-### `--ansi`
-
-ANSI-uitvoer forceren (of uitschakelen —no-ansi)
-
-- Accepteert geen waarde
-
-### `--no-ansi`
-
-De optie &quot;—ansi&quot; negeren
-
-- Standaard: `false`
-- Accepteert geen waarde
-
-### `--no-interaction`, `-n`
-
-Geen interactieve vraag stellen
 
 - Standaard: `false`
 - Accepteert geen waarde
@@ -4481,54 +1715,9 @@ bin/magento indexer:info
 
 Toegestane indexen weergeven
 
+### Opties
 
-### `--help`, `-h`
-
-Help weergeven voor de opgegeven opdracht. Wanneer geen bevel vertoningshulp voor het lijstbevel wordt gegeven
-
-- Standaard: `false`
-- Accepteert geen waarde
-
-### `--quiet`, `-q`
-
-Geen bericht uitvoeren
-
-- Standaard: `false`
-- Accepteert geen waarde
-
-### `--verbose`, `-v|-vv|-vvv`
-
-Verhoog de breedheid van berichten: 1 voor normale output, 2 voor meer uitgebreide output en 3 voor zuivert
-
-- Standaard: `false`
-- Accepteert geen waarde
-
-### `--version`, `-V`
-
-Deze toepassingsversie weergeven
-
-- Standaard: `false`
-- Accepteert geen waarde
-
-### `--ansi`
-
-ANSI-uitvoer forceren (of uitschakelen —no-ansi)
-
-- Accepteert geen waarde
-
-### `--no-ansi`
-
-De optie &quot;—ansi&quot; negeren
-
-- Standaard: `false`
-- Accepteert geen waarde
-
-### `--no-interaction`, `-n`
-
-Geen interactieve vraag stellen
-
-- Standaard: `false`
-- Accepteert geen waarde
+Voor globale opties, zie [ Globale opties ](#global-options).
 
 
 ## `indexer:reindex`
@@ -4539,63 +1728,18 @@ bin/magento indexer:reindex [<index>...]
 
 Gegevens opnieuw indexeren
 
+### Argumenten
 
-
-### `index`
+#### `index`
 
 Lijst met door spaties gescheiden indextypen of laat toe om op alle indexen toe te passen.
 
 - Standaard: `[]`
-
 - Array
 
-### `--help`, `-h`
+### Opties
 
-Help weergeven voor de opgegeven opdracht. Wanneer geen bevel vertoningshulp voor het lijstbevel wordt gegeven
-
-- Standaard: `false`
-- Accepteert geen waarde
-
-### `--quiet`, `-q`
-
-Geen bericht uitvoeren
-
-- Standaard: `false`
-- Accepteert geen waarde
-
-### `--verbose`, `-v|-vv|-vvv`
-
-Verhoog de breedheid van berichten: 1 voor normale output, 2 voor meer uitgebreide output en 3 voor zuivert
-
-- Standaard: `false`
-- Accepteert geen waarde
-
-### `--version`, `-V`
-
-Deze toepassingsversie weergeven
-
-- Standaard: `false`
-- Accepteert geen waarde
-
-### `--ansi`
-
-ANSI-uitvoer forceren (of uitschakelen —no-ansi)
-
-- Accepteert geen waarde
-
-### `--no-ansi`
-
-De optie &quot;—ansi&quot; negeren
-
-- Standaard: `false`
-- Accepteert geen waarde
-
-### `--no-interaction`, `-n`
-
-Geen interactieve vraag stellen
-
-- Standaard: `false`
-- Accepteert geen waarde
+Voor globale opties, zie [ Globale opties ](#global-options).
 
 
 ## `indexer:reset`
@@ -4606,63 +1750,18 @@ bin/magento indexer:reset [<index>...]
 
 Hiermee wordt de status van de indexeerder opnieuw ingesteld op ongeldig
 
+### Argumenten
 
-
-### `index`
+#### `index`
 
 Lijst met door spaties gescheiden indextypen of laat toe om op alle indexen toe te passen.
 
 - Standaard: `[]`
-
 - Array
 
-### `--help`, `-h`
+### Opties
 
-Help weergeven voor de opgegeven opdracht. Wanneer geen bevel vertoningshulp voor het lijstbevel wordt gegeven
-
-- Standaard: `false`
-- Accepteert geen waarde
-
-### `--quiet`, `-q`
-
-Geen bericht uitvoeren
-
-- Standaard: `false`
-- Accepteert geen waarde
-
-### `--verbose`, `-v|-vv|-vvv`
-
-Verhoog de breedheid van berichten: 1 voor normale output, 2 voor meer uitgebreide output en 3 voor zuivert
-
-- Standaard: `false`
-- Accepteert geen waarde
-
-### `--version`, `-V`
-
-Deze toepassingsversie weergeven
-
-- Standaard: `false`
-- Accepteert geen waarde
-
-### `--ansi`
-
-ANSI-uitvoer forceren (of uitschakelen —no-ansi)
-
-- Accepteert geen waarde
-
-### `--no-ansi`
-
-De optie &quot;—ansi&quot; negeren
-
-- Standaard: `false`
-- Accepteert geen waarde
-
-### `--no-interaction`, `-n`
-
-Geen interactieve vraag stellen
-
-- Standaard: `false`
-- Accepteert geen waarde
+Voor globale opties, zie [ Globale opties ](#global-options).
 
 
 ## `indexer:set-dimensions-mode`
@@ -4673,65 +1772,20 @@ bin/magento indexer:set-dimensions-mode [<indexer> [<mode>]]
 
 Modus IndexerDimensionen instellen
 
+### Argumenten
 
-
-### `indexer`
+#### `indexer`
 
 Indexernaam [ catalog_product_price|catalogispermissions_category ]
 
 
-### `mode`
+#### `mode`
 
 Index_dimensiemodi catalog_product_price          none,website,klant_groep,website_and_customer_group catalogi_category    none,customer_group
 
+### Opties
 
-### `--help`, `-h`
-
-Help weergeven voor de opgegeven opdracht. Wanneer geen bevel vertoningshulp voor het lijstbevel wordt gegeven
-
-- Standaard: `false`
-- Accepteert geen waarde
-
-### `--quiet`, `-q`
-
-Geen bericht uitvoeren
-
-- Standaard: `false`
-- Accepteert geen waarde
-
-### `--verbose`, `-v|-vv|-vvv`
-
-Verhoog de breedheid van berichten: 1 voor normale output, 2 voor meer uitgebreide output en 3 voor zuivert
-
-- Standaard: `false`
-- Accepteert geen waarde
-
-### `--version`, `-V`
-
-Deze toepassingsversie weergeven
-
-- Standaard: `false`
-- Accepteert geen waarde
-
-### `--ansi`
-
-ANSI-uitvoer forceren (of uitschakelen —no-ansi)
-
-- Accepteert geen waarde
-
-### `--no-ansi`
-
-De optie &quot;—ansi&quot; negeren
-
-- Standaard: `false`
-- Accepteert geen waarde
-
-### `--no-interaction`, `-n`
-
-Geen interactieve vraag stellen
-
-- Standaard: `false`
-- Accepteert geen waarde
+Voor globale opties, zie [ Globale opties ](#global-options).
 
 
 ## `indexer:set-mode`
@@ -4742,68 +1796,23 @@ bin/magento indexer:set-mode [<mode> [<index>...]]
 
 Hiermee wordt het type indexmodus ingesteld
 
+### Argumenten
 
-
-### `mode`
+#### `mode`
 
 Het type van wijze van de indexeer [ realtime|programma ]
 
 
-### `index`
+#### `index`
 
 Lijst met door spaties gescheiden indextypen of laat toe om op alle indexen toe te passen.
 
 - Standaard: `[]`
-
 - Array
 
-### `--help`, `-h`
+### Opties
 
-Help weergeven voor de opgegeven opdracht. Wanneer geen bevel vertoningshulp voor het lijstbevel wordt gegeven
-
-- Standaard: `false`
-- Accepteert geen waarde
-
-### `--quiet`, `-q`
-
-Geen bericht uitvoeren
-
-- Standaard: `false`
-- Accepteert geen waarde
-
-### `--verbose`, `-v|-vv|-vvv`
-
-Verhoog de breedheid van berichten: 1 voor normale output, 2 voor meer uitgebreide output en 3 voor zuivert
-
-- Standaard: `false`
-- Accepteert geen waarde
-
-### `--version`, `-V`
-
-Deze toepassingsversie weergeven
-
-- Standaard: `false`
-- Accepteert geen waarde
-
-### `--ansi`
-
-ANSI-uitvoer forceren (of uitschakelen —no-ansi)
-
-- Accepteert geen waarde
-
-### `--no-ansi`
-
-De optie &quot;—ansi&quot; negeren
-
-- Standaard: `false`
-- Accepteert geen waarde
-
-### `--no-interaction`, `-n`
-
-Geen interactieve vraag stellen
-
-- Standaard: `false`
-- Accepteert geen waarde
+Voor globale opties, zie [ Globale opties ](#global-options).
 
 
 ## `indexer:set-status`
@@ -4814,69 +1823,25 @@ bin/magento indexer:set-status <status> [<index>...]
 
 Hiermee wordt de opgegeven indexeerstatus ingesteld
 
+### Argumenten
 
-
-### `status`
+#### `status`
 
 Indexerstatus type [ ongeldig|opgeschort|geldig ]
 
 - Vereist
 
-### `index`
+
+#### `index`
 
 Lijst met door spaties gescheiden indextypen of laat toe om op alle indexen toe te passen.
 
 - Standaard: `[]`
-
 - Array
 
-### `--help`, `-h`
+### Opties
 
-Help weergeven voor de opgegeven opdracht. Wanneer geen bevel vertoningshulp voor het lijstbevel wordt gegeven
-
-- Standaard: `false`
-- Accepteert geen waarde
-
-### `--quiet`, `-q`
-
-Geen bericht uitvoeren
-
-- Standaard: `false`
-- Accepteert geen waarde
-
-### `--verbose`, `-v|-vv|-vvv`
-
-Verhoog de breedheid van berichten: 1 voor normale output, 2 voor meer uitgebreide output en 3 voor zuivert
-
-- Standaard: `false`
-- Accepteert geen waarde
-
-### `--version`, `-V`
-
-Deze toepassingsversie weergeven
-
-- Standaard: `false`
-- Accepteert geen waarde
-
-### `--ansi`
-
-ANSI-uitvoer forceren (of uitschakelen —no-ansi)
-
-- Accepteert geen waarde
-
-### `--no-ansi`
-
-De optie &quot;—ansi&quot; negeren
-
-- Standaard: `false`
-- Accepteert geen waarde
-
-### `--no-interaction`, `-n`
-
-Geen interactieve vraag stellen
-
-- Standaard: `false`
-- Accepteert geen waarde
+Voor globale opties, zie [ Globale opties ](#global-options).
 
 
 ## `indexer:show-dimensions-mode`
@@ -4887,63 +1852,18 @@ bin/magento indexer:show-dimensions-mode [<indexer>...]
 
 Modus Dimension indexeren tonen
 
+### Argumenten
 
-
-### `indexer`
+#### `indexer`
 
 Lijst met door spaties gescheiden indextypen of laat deze weg om toe te passen op alle indexen (catalog_product_price,catalogpermissions_category)
 
 - Standaard: `[]`
-
 - Array
 
-### `--help`, `-h`
+### Opties
 
-Help weergeven voor de opgegeven opdracht. Wanneer geen bevel vertoningshulp voor het lijstbevel wordt gegeven
-
-- Standaard: `false`
-- Accepteert geen waarde
-
-### `--quiet`, `-q`
-
-Geen bericht uitvoeren
-
-- Standaard: `false`
-- Accepteert geen waarde
-
-### `--verbose`, `-v|-vv|-vvv`
-
-Verhoog de breedheid van berichten: 1 voor normale output, 2 voor meer uitgebreide output en 3 voor zuivert
-
-- Standaard: `false`
-- Accepteert geen waarde
-
-### `--version`, `-V`
-
-Deze toepassingsversie weergeven
-
-- Standaard: `false`
-- Accepteert geen waarde
-
-### `--ansi`
-
-ANSI-uitvoer forceren (of uitschakelen —no-ansi)
-
-- Accepteert geen waarde
-
-### `--no-ansi`
-
-De optie &quot;—ansi&quot; negeren
-
-- Standaard: `false`
-- Accepteert geen waarde
-
-### `--no-interaction`, `-n`
-
-Geen interactieve vraag stellen
-
-- Standaard: `false`
-- Accepteert geen waarde
+Voor globale opties, zie [ Globale opties ](#global-options).
 
 
 ## `indexer:show-mode`
@@ -4954,63 +1874,18 @@ bin/magento indexer:show-mode [<index>...]
 
 Indexmodus weergeven
 
+### Argumenten
 
-
-### `index`
+#### `index`
 
 Lijst met door spaties gescheiden indextypen of laat toe om op alle indexen toe te passen.
 
 - Standaard: `[]`
-
 - Array
 
-### `--help`, `-h`
+### Opties
 
-Help weergeven voor de opgegeven opdracht. Wanneer geen bevel vertoningshulp voor het lijstbevel wordt gegeven
-
-- Standaard: `false`
-- Accepteert geen waarde
-
-### `--quiet`, `-q`
-
-Geen bericht uitvoeren
-
-- Standaard: `false`
-- Accepteert geen waarde
-
-### `--verbose`, `-v|-vv|-vvv`
-
-Verhoog de breedheid van berichten: 1 voor normale output, 2 voor meer uitgebreide output en 3 voor zuivert
-
-- Standaard: `false`
-- Accepteert geen waarde
-
-### `--version`, `-V`
-
-Deze toepassingsversie weergeven
-
-- Standaard: `false`
-- Accepteert geen waarde
-
-### `--ansi`
-
-ANSI-uitvoer forceren (of uitschakelen —no-ansi)
-
-- Accepteert geen waarde
-
-### `--no-ansi`
-
-De optie &quot;—ansi&quot; negeren
-
-- Standaard: `false`
-- Accepteert geen waarde
-
-### `--no-interaction`, `-n`
-
-Geen interactieve vraag stellen
-
-- Standaard: `false`
-- Accepteert geen waarde
+Voor globale opties, zie [ Globale opties ](#global-options).
 
 
 ## `indexer:status`
@@ -5021,63 +1896,18 @@ bin/magento indexer:status [<index>...]
 
 Hiermee wordt de status van Indexer weergegeven
 
+### Argumenten
 
-
-### `index`
+#### `index`
 
 Lijst met door spaties gescheiden indextypen of laat toe om op alle indexen toe te passen.
 
 - Standaard: `[]`
-
 - Array
 
-### `--help`, `-h`
+### Opties
 
-Help weergeven voor de opgegeven opdracht. Wanneer geen bevel vertoningshulp voor het lijstbevel wordt gegeven
-
-- Standaard: `false`
-- Accepteert geen waarde
-
-### `--quiet`, `-q`
-
-Geen bericht uitvoeren
-
-- Standaard: `false`
-- Accepteert geen waarde
-
-### `--verbose`, `-v|-vv|-vvv`
-
-Verhoog de breedheid van berichten: 1 voor normale output, 2 voor meer uitgebreide output en 3 voor zuivert
-
-- Standaard: `false`
-- Accepteert geen waarde
-
-### `--version`, `-V`
-
-Deze toepassingsversie weergeven
-
-- Standaard: `false`
-- Accepteert geen waarde
-
-### `--ansi`
-
-ANSI-uitvoer forceren (of uitschakelen —no-ansi)
-
-- Accepteert geen waarde
-
-### `--no-ansi`
-
-De optie &quot;—ansi&quot; negeren
-
-- Standaard: `false`
-- Accepteert geen waarde
-
-### `--no-interaction`, `-n`
-
-Geen interactieve vraag stellen
-
-- Standaard: `false`
-- Accepteert geen waarde
+Voor globale opties, zie [ Globale opties ](#global-options).
 
 
 ## `info:adminuri`
@@ -5088,54 +1918,9 @@ bin/magento info:adminuri
 
 Hiermee wordt de Magento Admin URI weergegeven
 
+### Opties
 
-### `--help`, `-h`
-
-Help weergeven voor de opgegeven opdracht. Wanneer geen bevel vertoningshulp voor het lijstbevel wordt gegeven
-
-- Standaard: `false`
-- Accepteert geen waarde
-
-### `--quiet`, `-q`
-
-Geen bericht uitvoeren
-
-- Standaard: `false`
-- Accepteert geen waarde
-
-### `--verbose`, `-v|-vv|-vvv`
-
-Verhoog de breedheid van berichten: 1 voor normale output, 2 voor meer uitgebreide output en 3 voor zuivert
-
-- Standaard: `false`
-- Accepteert geen waarde
-
-### `--version`, `-V`
-
-Deze toepassingsversie weergeven
-
-- Standaard: `false`
-- Accepteert geen waarde
-
-### `--ansi`
-
-ANSI-uitvoer forceren (of uitschakelen —no-ansi)
-
-- Accepteert geen waarde
-
-### `--no-ansi`
-
-De optie &quot;—ansi&quot; negeren
-
-- Standaard: `false`
-- Accepteert geen waarde
-
-### `--no-interaction`, `-n`
-
-Geen interactieve vraag stellen
-
-- Standaard: `false`
-- Accepteert geen waarde
+Voor globale opties, zie [ Globale opties ](#global-options).
 
 
 ## `info:backups:list`
@@ -5146,54 +1931,9 @@ bin/magento info:backups:list
 
 Lijst met beschikbare back-upbestanden afdrukken
 
+### Opties
 
-### `--help`, `-h`
-
-Help weergeven voor de opgegeven opdracht. Wanneer geen bevel vertoningshulp voor het lijstbevel wordt gegeven
-
-- Standaard: `false`
-- Accepteert geen waarde
-
-### `--quiet`, `-q`
-
-Geen bericht uitvoeren
-
-- Standaard: `false`
-- Accepteert geen waarde
-
-### `--verbose`, `-v|-vv|-vvv`
-
-Verhoog de breedheid van berichten: 1 voor normale output, 2 voor meer uitgebreide output en 3 voor zuivert
-
-- Standaard: `false`
-- Accepteert geen waarde
-
-### `--version`, `-V`
-
-Deze toepassingsversie weergeven
-
-- Standaard: `false`
-- Accepteert geen waarde
-
-### `--ansi`
-
-ANSI-uitvoer forceren (of uitschakelen —no-ansi)
-
-- Accepteert geen waarde
-
-### `--no-ansi`
-
-De optie &quot;—ansi&quot; negeren
-
-- Standaard: `false`
-- Accepteert geen waarde
-
-### `--no-interaction`, `-n`
-
-Geen interactieve vraag stellen
-
-- Standaard: `false`
-- Accepteert geen waarde
+Voor globale opties, zie [ Globale opties ](#global-options).
 
 
 ## `info:currency:list`
@@ -5204,54 +1944,9 @@ bin/magento info:currency:list
 
 Geeft de lijst met beschikbare valuta&#39;s weer
 
+### Opties
 
-### `--help`, `-h`
-
-Help weergeven voor de opgegeven opdracht. Wanneer geen bevel vertoningshulp voor het lijstbevel wordt gegeven
-
-- Standaard: `false`
-- Accepteert geen waarde
-
-### `--quiet`, `-q`
-
-Geen bericht uitvoeren
-
-- Standaard: `false`
-- Accepteert geen waarde
-
-### `--verbose`, `-v|-vv|-vvv`
-
-Verhoog de breedheid van berichten: 1 voor normale output, 2 voor meer uitgebreide output en 3 voor zuivert
-
-- Standaard: `false`
-- Accepteert geen waarde
-
-### `--version`, `-V`
-
-Deze toepassingsversie weergeven
-
-- Standaard: `false`
-- Accepteert geen waarde
-
-### `--ansi`
-
-ANSI-uitvoer forceren (of uitschakelen —no-ansi)
-
-- Accepteert geen waarde
-
-### `--no-ansi`
-
-De optie &quot;—ansi&quot; negeren
-
-- Standaard: `false`
-- Accepteert geen waarde
-
-### `--no-interaction`, `-n`
-
-Geen interactieve vraag stellen
-
-- Standaard: `false`
-- Accepteert geen waarde
+Voor globale opties, zie [ Globale opties ](#global-options).
 
 
 ## `info:dependencies:show-framework`
@@ -5262,61 +1957,16 @@ bin/magento info:dependencies:show-framework [-o|--output OUTPUT]
 
 Geeft aantal afhankelijkheden weer van raamwerk voor Magento&#39;s
 
+### Opties
 
-### `--output`, `-o`
+Voor globale opties, zie [ Globale opties ](#global-options).
+
+#### `--output`, `-o`
 
 Bestandsnaam rapport
 
 - Standaard: `framework-dependencies.csv`
 - Vereist een waarde
-
-### `--help`, `-h`
-
-Help weergeven voor de opgegeven opdracht. Wanneer geen bevel vertoningshulp voor het lijstbevel wordt gegeven
-
-- Standaard: `false`
-- Accepteert geen waarde
-
-### `--quiet`, `-q`
-
-Geen bericht uitvoeren
-
-- Standaard: `false`
-- Accepteert geen waarde
-
-### `--verbose`, `-v|-vv|-vvv`
-
-Verhoog de breedheid van berichten: 1 voor normale output, 2 voor meer uitgebreide output en 3 voor zuivert
-
-- Standaard: `false`
-- Accepteert geen waarde
-
-### `--version`, `-V`
-
-Deze toepassingsversie weergeven
-
-- Standaard: `false`
-- Accepteert geen waarde
-
-### `--ansi`
-
-ANSI-uitvoer forceren (of uitschakelen —no-ansi)
-
-- Accepteert geen waarde
-
-### `--no-ansi`
-
-De optie &quot;—ansi&quot; negeren
-
-- Standaard: `false`
-- Accepteert geen waarde
-
-### `--no-interaction`, `-n`
-
-Geen interactieve vraag stellen
-
-- Standaard: `false`
-- Accepteert geen waarde
 
 
 ## `info:dependencies:show-modules`
@@ -5327,61 +1977,16 @@ bin/magento info:dependencies:show-modules [-o|--output OUTPUT]
 
 Toont aantal gebiedsdelen tussen modules
 
+### Opties
 
-### `--output`, `-o`
+Voor globale opties, zie [ Globale opties ](#global-options).
+
+#### `--output`, `-o`
 
 Bestandsnaam rapport
 
 - Standaard: `modules-dependencies.csv`
 - Vereist een waarde
-
-### `--help`, `-h`
-
-Help weergeven voor de opgegeven opdracht. Wanneer geen bevel vertoningshulp voor het lijstbevel wordt gegeven
-
-- Standaard: `false`
-- Accepteert geen waarde
-
-### `--quiet`, `-q`
-
-Geen bericht uitvoeren
-
-- Standaard: `false`
-- Accepteert geen waarde
-
-### `--verbose`, `-v|-vv|-vvv`
-
-Verhoog de breedheid van berichten: 1 voor normale output, 2 voor meer uitgebreide output en 3 voor zuivert
-
-- Standaard: `false`
-- Accepteert geen waarde
-
-### `--version`, `-V`
-
-Deze toepassingsversie weergeven
-
-- Standaard: `false`
-- Accepteert geen waarde
-
-### `--ansi`
-
-ANSI-uitvoer forceren (of uitschakelen —no-ansi)
-
-- Accepteert geen waarde
-
-### `--no-ansi`
-
-De optie &quot;—ansi&quot; negeren
-
-- Standaard: `false`
-- Accepteert geen waarde
-
-### `--no-interaction`, `-n`
-
-Geen interactieve vraag stellen
-
-- Standaard: `false`
-- Accepteert geen waarde
 
 
 ## `info:dependencies:show-modules-circular`
@@ -5392,61 +1997,16 @@ bin/magento info:dependencies:show-modules-circular [-o|--output OUTPUT]
 
 Toont aantal kringafhankelijkheden tussen modules
 
+### Opties
 
-### `--output`, `-o`
+Voor globale opties, zie [ Globale opties ](#global-options).
+
+#### `--output`, `-o`
 
 Bestandsnaam rapport
 
 - Standaard: `modules-circular-dependencies.csv`
 - Vereist een waarde
-
-### `--help`, `-h`
-
-Help weergeven voor de opgegeven opdracht. Wanneer geen bevel vertoningshulp voor het lijstbevel wordt gegeven
-
-- Standaard: `false`
-- Accepteert geen waarde
-
-### `--quiet`, `-q`
-
-Geen bericht uitvoeren
-
-- Standaard: `false`
-- Accepteert geen waarde
-
-### `--verbose`, `-v|-vv|-vvv`
-
-Verhoog de breedheid van berichten: 1 voor normale output, 2 voor meer uitgebreide output en 3 voor zuivert
-
-- Standaard: `false`
-- Accepteert geen waarde
-
-### `--version`, `-V`
-
-Deze toepassingsversie weergeven
-
-- Standaard: `false`
-- Accepteert geen waarde
-
-### `--ansi`
-
-ANSI-uitvoer forceren (of uitschakelen —no-ansi)
-
-- Accepteert geen waarde
-
-### `--no-ansi`
-
-De optie &quot;—ansi&quot; negeren
-
-- Standaard: `false`
-- Accepteert geen waarde
-
-### `--no-interaction`, `-n`
-
-Geen interactieve vraag stellen
-
-- Standaard: `false`
-- Accepteert geen waarde
 
 
 ## `info:language:list`
@@ -5457,54 +2017,9 @@ bin/magento info:language:list
 
 Geeft de lijst met beschikbare taallandinstellingen weer
 
+### Opties
 
-### `--help`, `-h`
-
-Help weergeven voor de opgegeven opdracht. Wanneer geen bevel vertoningshulp voor het lijstbevel wordt gegeven
-
-- Standaard: `false`
-- Accepteert geen waarde
-
-### `--quiet`, `-q`
-
-Geen bericht uitvoeren
-
-- Standaard: `false`
-- Accepteert geen waarde
-
-### `--verbose`, `-v|-vv|-vvv`
-
-Verhoog de breedheid van berichten: 1 voor normale output, 2 voor meer uitgebreide output en 3 voor zuivert
-
-- Standaard: `false`
-- Accepteert geen waarde
-
-### `--version`, `-V`
-
-Deze toepassingsversie weergeven
-
-- Standaard: `false`
-- Accepteert geen waarde
-
-### `--ansi`
-
-ANSI-uitvoer forceren (of uitschakelen —no-ansi)
-
-- Accepteert geen waarde
-
-### `--no-ansi`
-
-De optie &quot;—ansi&quot; negeren
-
-- Standaard: `false`
-- Accepteert geen waarde
-
-### `--no-interaction`, `-n`
-
-Geen interactieve vraag stellen
-
-- Standaard: `false`
-- Accepteert geen waarde
+Voor globale opties, zie [ Globale opties ](#global-options).
 
 
 ## `info:timezone:list`
@@ -5515,54 +2030,9 @@ bin/magento info:timezone:list
 
 Hiermee geeft u de lijst met beschikbare tijdzones weer
 
+### Opties
 
-### `--help`, `-h`
-
-Help weergeven voor de opgegeven opdracht. Wanneer geen bevel vertoningshulp voor het lijstbevel wordt gegeven
-
-- Standaard: `false`
-- Accepteert geen waarde
-
-### `--quiet`, `-q`
-
-Geen bericht uitvoeren
-
-- Standaard: `false`
-- Accepteert geen waarde
-
-### `--verbose`, `-v|-vv|-vvv`
-
-Verhoog de breedheid van berichten: 1 voor normale output, 2 voor meer uitgebreide output en 3 voor zuivert
-
-- Standaard: `false`
-- Accepteert geen waarde
-
-### `--version`, `-V`
-
-Deze toepassingsversie weergeven
-
-- Standaard: `false`
-- Accepteert geen waarde
-
-### `--ansi`
-
-ANSI-uitvoer forceren (of uitschakelen —no-ansi)
-
-- Accepteert geen waarde
-
-### `--no-ansi`
-
-De optie &quot;—ansi&quot; negeren
-
-- Standaard: `false`
-- Accepteert geen waarde
-
-### `--no-interaction`, `-n`
-
-Geen interactieve vraag stellen
-
-- Standaard: `false`
-- Accepteert geen waarde
+Voor globale opties, zie [ Globale opties ](#global-options).
 
 
 ## `inventory:reservation:create-compensations`
@@ -5573,67 +2043,22 @@ bin/magento inventory:reservation:create-compensations [-r|--raw] [--] [<compens
 
 Maak punten van voorbehoud door middel van opgegeven compensatieargumenten
 
+### Argumenten
 
-
-### `compensations`
+#### `compensations`
 
 Lijst met argumenten voor compensatie in de notatie &quot;:::&quot;
 
 - Standaard: `[]`
-
 - Array
 
-### `--raw`, `-r`
+### Opties
+
+Voor globale opties, zie [ Globale opties ](#global-options).
+
+#### `--raw`, `-r`
 
 Onbewerkte uitvoer
-
-- Standaard: `false`
-- Accepteert geen waarde
-
-### `--help`, `-h`
-
-Help weergeven voor de opgegeven opdracht. Wanneer geen bevel vertoningshulp voor het lijstbevel wordt gegeven
-
-- Standaard: `false`
-- Accepteert geen waarde
-
-### `--quiet`, `-q`
-
-Geen bericht uitvoeren
-
-- Standaard: `false`
-- Accepteert geen waarde
-
-### `--verbose`, `-v|-vv|-vvv`
-
-Verhoog de breedheid van berichten: 1 voor normale output, 2 voor meer uitgebreide output en 3 voor zuivert
-
-- Standaard: `false`
-- Accepteert geen waarde
-
-### `--version`, `-V`
-
-Deze toepassingsversie weergeven
-
-- Standaard: `false`
-- Accepteert geen waarde
-
-### `--ansi`
-
-ANSI-uitvoer forceren (of uitschakelen —no-ansi)
-
-- Accepteert geen waarde
-
-### `--no-ansi`
-
-De optie &quot;—ansi&quot; negeren
-
-- Standaard: `false`
-- Accepteert geen waarde
-
-### `--no-interaction`, `-n`
-
-Geen interactieve vraag stellen
 
 - Standaard: `false`
 - Accepteert geen waarde
@@ -5647,79 +2072,34 @@ bin/magento inventory:reservation:list-inconsistencies [-c|--complete-orders] [-
 
 Alle bestellingen en producten met inconsistenties in verkoopbare hoeveelheid tonen
 
+### Opties
 
-### `--complete-orders`, `-c`
+Voor globale opties, zie [ Globale opties ](#global-options).
+
+#### `--complete-orders`, `-c`
 
 Alleen inconsistenties voor volledige bestellingen tonen
 
 - Standaard: `false`
 - Accepteert geen waarde
 
-### `--incomplete-orders`, `-i`
+#### `--incomplete-orders`, `-i`
 
 Alleen inconsistenties tonen voor onvolledige orders
 
 - Standaard: `false`
 - Accepteert geen waarde
 
-### `--bunch-size`, `-b`
+#### `--bunch-size`, `-b`
 
 Hiermee bepaalt u hoeveel bestellingen tegelijkertijd worden geladen
 
 - Standaard: `50`
 - Accepteert een waarde
 
-### `--raw`, `-r`
+#### `--raw`, `-r`
 
 Onbewerkte uitvoer
-
-- Standaard: `false`
-- Accepteert geen waarde
-
-### `--help`, `-h`
-
-Help weergeven voor de opgegeven opdracht. Wanneer geen bevel vertoningshulp voor het lijstbevel wordt gegeven
-
-- Standaard: `false`
-- Accepteert geen waarde
-
-### `--quiet`, `-q`
-
-Geen bericht uitvoeren
-
-- Standaard: `false`
-- Accepteert geen waarde
-
-### `--verbose`, `-v|-vv|-vvv`
-
-Verhoog de breedheid van berichten: 1 voor normale output, 2 voor meer uitgebreide output en 3 voor zuivert
-
-- Standaard: `false`
-- Accepteert geen waarde
-
-### `--version`, `-V`
-
-Deze toepassingsversie weergeven
-
-- Standaard: `false`
-- Accepteert geen waarde
-
-### `--ansi`
-
-ANSI-uitvoer forceren (of uitschakelen —no-ansi)
-
-- Accepteert geen waarde
-
-### `--no-ansi`
-
-De optie &quot;—ansi&quot; negeren
-
-- Standaard: `false`
-- Accepteert geen waarde
-
-### `--no-interaction`, `-n`
-
-Geen interactieve vraag stellen
 
 - Standaard: `false`
 - Accepteert geen waarde
@@ -5733,64 +2113,20 @@ bin/magento inventory-geonames:import <countries>...
 
 Geo-namen downloaden en importeren voor het algoritme van de bronselectie
 
+### Argumenten
 
-
-### `countries`
+#### `countries`
 
 Lijst van landcodes die moeten worden ingevoerd
 
 - Standaard: `[]`
-
 - Vereist
+
 - Array
 
-### `--help`, `-h`
+### Opties
 
-Help weergeven voor de opgegeven opdracht. Wanneer geen bevel vertoningshulp voor het lijstbevel wordt gegeven
-
-- Standaard: `false`
-- Accepteert geen waarde
-
-### `--quiet`, `-q`
-
-Geen bericht uitvoeren
-
-- Standaard: `false`
-- Accepteert geen waarde
-
-### `--verbose`, `-v|-vv|-vvv`
-
-Verhoog de breedheid van berichten: 1 voor normale output, 2 voor meer uitgebreide output en 3 voor zuivert
-
-- Standaard: `false`
-- Accepteert geen waarde
-
-### `--version`, `-V`
-
-Deze toepassingsversie weergeven
-
-- Standaard: `false`
-- Accepteert geen waarde
-
-### `--ansi`
-
-ANSI-uitvoer forceren (of uitschakelen —no-ansi)
-
-- Accepteert geen waarde
-
-### `--no-ansi`
-
-De optie &quot;—ansi&quot; negeren
-
-- Standaard: `false`
-- Accepteert geen waarde
-
-### `--no-interaction`, `-n`
-
-Geen interactieve vraag stellen
-
-- Standaard: `false`
-- Accepteert geen waarde
+Voor globale opties, zie [ Globale opties ](#global-options).
 
 
 ## `maintenance:allow-ips`
@@ -5801,83 +2137,38 @@ bin/magento maintenance:allow-ips [--none] [--add] [--magento-init-params MAGENT
 
 Plaatst onderhoudswijze vrijgestelde IPs
 
+### Argumenten
 
-
-### `ip`
+#### `ip`
 
 Toegestane IP adressen
 
 - Standaard: `[]`
-
 - Array
 
-### `--none`
+### Opties
+
+Voor globale opties, zie [ Globale opties ](#global-options).
+
+#### `--none`
 
 Toegestane IP-adressen wissen
 
 - Standaard: `false`
 - Accepteert geen waarde
 
-### `--add`
+#### `--add`
 
 IP-adres toevoegen aan bestaande lijst
 
 - Standaard: `false`
 - Accepteert geen waarde
 
-### `--magento-init-params`
+#### `--magento-init-params`
 
 Voeg aan om het even welk bevel toe om Magento initialisatieparameters aan te passen bijvoorbeeld: &quot;MAGE_MODE=developer&amp;MAGE_DIRS [ basis ][path]=/var/www/example.com&amp;MAGE_DIRS [ geheime voorgeheugen ][path]=/var/tmp/cache&quot;
 
 - Vereist een waarde
-
-### `--help`, `-h`
-
-Help weergeven voor de opgegeven opdracht. Wanneer geen bevel vertoningshulp voor het lijstbevel wordt gegeven
-
-- Standaard: `false`
-- Accepteert geen waarde
-
-### `--quiet`, `-q`
-
-Geen bericht uitvoeren
-
-- Standaard: `false`
-- Accepteert geen waarde
-
-### `--verbose`, `-v|-vv|-vvv`
-
-Verhoog de breedheid van berichten: 1 voor normale output, 2 voor meer uitgebreide output en 3 voor zuivert
-
-- Standaard: `false`
-- Accepteert geen waarde
-
-### `--version`, `-V`
-
-Deze toepassingsversie weergeven
-
-- Standaard: `false`
-- Accepteert geen waarde
-
-### `--ansi`
-
-ANSI-uitvoer forceren (of uitschakelen —no-ansi)
-
-- Accepteert geen waarde
-
-### `--no-ansi`
-
-De optie &quot;—ansi&quot; negeren
-
-- Standaard: `false`
-- Accepteert geen waarde
-
-### `--no-interaction`, `-n`
-
-Geen interactieve vraag stellen
-
-- Standaard: `false`
-- Accepteert geen waarde
 
 
 ## `maintenance:disable`
@@ -5888,67 +2179,22 @@ bin/magento maintenance:disable [--ip IP] [--magento-init-params MAGENTO-INIT-PA
 
 Onderhoudsmodus uitschakelen
 
+### Opties
 
-### `--ip`
+Voor globale opties, zie [ Globale opties ](#global-options).
+
+#### `--ip`
 
 Toegestane IP adressen (gebruik &quot;niets&quot;om toegestane IP lijst te ontruimen)
 
 - Standaard: `[]`
 - Vereist een waarde
 
-### `--magento-init-params`
+#### `--magento-init-params`
 
 Voeg aan om het even welk bevel toe om Magento initialisatieparameters aan te passen bijvoorbeeld: &quot;MAGE_MODE=developer&amp;MAGE_DIRS [ basis ][path]=/var/www/example.com&amp;MAGE_DIRS [ geheime voorgeheugen ][path]=/var/tmp/cache&quot;
 
 - Vereist een waarde
-
-### `--help`, `-h`
-
-Help weergeven voor de opgegeven opdracht. Wanneer geen bevel vertoningshulp voor het lijstbevel wordt gegeven
-
-- Standaard: `false`
-- Accepteert geen waarde
-
-### `--quiet`, `-q`
-
-Geen bericht uitvoeren
-
-- Standaard: `false`
-- Accepteert geen waarde
-
-### `--verbose`, `-v|-vv|-vvv`
-
-Verhoog de breedheid van berichten: 1 voor normale output, 2 voor meer uitgebreide output en 3 voor zuivert
-
-- Standaard: `false`
-- Accepteert geen waarde
-
-### `--version`, `-V`
-
-Deze toepassingsversie weergeven
-
-- Standaard: `false`
-- Accepteert geen waarde
-
-### `--ansi`
-
-ANSI-uitvoer forceren (of uitschakelen —no-ansi)
-
-- Accepteert geen waarde
-
-### `--no-ansi`
-
-De optie &quot;—ansi&quot; negeren
-
-- Standaard: `false`
-- Accepteert geen waarde
-
-### `--no-interaction`, `-n`
-
-Geen interactieve vraag stellen
-
-- Standaard: `false`
-- Accepteert geen waarde
 
 
 ## `maintenance:enable`
@@ -5959,67 +2205,22 @@ bin/magento maintenance:enable [--ip IP] [--magento-init-params MAGENTO-INIT-PAR
 
 Onderhoudsmodus inschakelen
 
+### Opties
 
-### `--ip`
+Voor globale opties, zie [ Globale opties ](#global-options).
+
+#### `--ip`
 
 Toegestane IP adressen (gebruik &quot;niets&quot;om toegestane IP lijst te ontruimen)
 
 - Standaard: `[]`
 - Vereist een waarde
 
-### `--magento-init-params`
+#### `--magento-init-params`
 
 Voeg aan om het even welk bevel toe om Magento initialisatieparameters aan te passen bijvoorbeeld: &quot;MAGE_MODE=developer&amp;MAGE_DIRS [ basis ][path]=/var/www/example.com&amp;MAGE_DIRS [ geheime voorgeheugen ][path]=/var/tmp/cache&quot;
 
 - Vereist een waarde
-
-### `--help`, `-h`
-
-Help weergeven voor de opgegeven opdracht. Wanneer geen bevel vertoningshulp voor het lijstbevel wordt gegeven
-
-- Standaard: `false`
-- Accepteert geen waarde
-
-### `--quiet`, `-q`
-
-Geen bericht uitvoeren
-
-- Standaard: `false`
-- Accepteert geen waarde
-
-### `--verbose`, `-v|-vv|-vvv`
-
-Verhoog de breedheid van berichten: 1 voor normale output, 2 voor meer uitgebreide output en 3 voor zuivert
-
-- Standaard: `false`
-- Accepteert geen waarde
-
-### `--version`, `-V`
-
-Deze toepassingsversie weergeven
-
-- Standaard: `false`
-- Accepteert geen waarde
-
-### `--ansi`
-
-ANSI-uitvoer forceren (of uitschakelen —no-ansi)
-
-- Accepteert geen waarde
-
-### `--no-ansi`
-
-De optie &quot;—ansi&quot; negeren
-
-- Standaard: `false`
-- Accepteert geen waarde
-
-### `--no-interaction`, `-n`
-
-Geen interactieve vraag stellen
-
-- Standaard: `false`
-- Accepteert geen waarde
 
 
 ## `maintenance:status`
@@ -6030,60 +2231,15 @@ bin/magento maintenance:status [--magento-init-params MAGENTO-INIT-PARAMS]
 
 De status van de onderhoudsmodus weergeven
 
+### Opties
 
-### `--magento-init-params`
+Voor globale opties, zie [ Globale opties ](#global-options).
+
+#### `--magento-init-params`
 
 Voeg aan om het even welk bevel toe om Magento initialisatieparameters aan te passen bijvoorbeeld: &quot;MAGE_MODE=developer&amp;MAGE_DIRS [ basis ][path]=/var/www/example.com&amp;MAGE_DIRS [ geheime voorgeheugen ][path]=/var/tmp/cache&quot;
 
 - Vereist een waarde
-
-### `--help`, `-h`
-
-Help weergeven voor de opgegeven opdracht. Wanneer geen bevel vertoningshulp voor het lijstbevel wordt gegeven
-
-- Standaard: `false`
-- Accepteert geen waarde
-
-### `--quiet`, `-q`
-
-Geen bericht uitvoeren
-
-- Standaard: `false`
-- Accepteert geen waarde
-
-### `--verbose`, `-v|-vv|-vvv`
-
-Verhoog de breedheid van berichten: 1 voor normale output, 2 voor meer uitgebreide output en 3 voor zuivert
-
-- Standaard: `false`
-- Accepteert geen waarde
-
-### `--version`, `-V`
-
-Deze toepassingsversie weergeven
-
-- Standaard: `false`
-- Accepteert geen waarde
-
-### `--ansi`
-
-ANSI-uitvoer forceren (of uitschakelen —no-ansi)
-
-- Accepteert geen waarde
-
-### `--no-ansi`
-
-De optie &quot;—ansi&quot; negeren
-
-- Standaard: `false`
-- Accepteert geen waarde
-
-### `--no-interaction`, `-n`
-
-Geen interactieve vraag stellen
-
-- Standaard: `false`
-- Accepteert geen waarde
 
 
 ## `media-content:sync`
@@ -6094,54 +2250,9 @@ bin/magento media-content:sync
 
 Inhoud synchroniseren met elementen
 
+### Opties
 
-### `--help`, `-h`
-
-Help weergeven voor de opgegeven opdracht. Wanneer geen bevel vertoningshulp voor het lijstbevel wordt gegeven
-
-- Standaard: `false`
-- Accepteert geen waarde
-
-### `--quiet`, `-q`
-
-Geen bericht uitvoeren
-
-- Standaard: `false`
-- Accepteert geen waarde
-
-### `--verbose`, `-v|-vv|-vvv`
-
-Verhoog de breedheid van berichten: 1 voor normale output, 2 voor meer uitgebreide output en 3 voor zuivert
-
-- Standaard: `false`
-- Accepteert geen waarde
-
-### `--version`, `-V`
-
-Deze toepassingsversie weergeven
-
-- Standaard: `false`
-- Accepteert geen waarde
-
-### `--ansi`
-
-ANSI-uitvoer forceren (of uitschakelen —no-ansi)
-
-- Accepteert geen waarde
-
-### `--no-ansi`
-
-De optie &quot;—ansi&quot; negeren
-
-- Standaard: `false`
-- Accepteert geen waarde
-
-### `--no-interaction`, `-n`
-
-Geen interactieve vraag stellen
-
-- Standaard: `false`
-- Accepteert geen waarde
+Voor globale opties, zie [ Globale opties ](#global-options).
 
 
 ## `media-gallery:sync`
@@ -6152,54 +2263,9 @@ bin/magento media-gallery:sync
 
 Mediaopslag en media-elementen in de database synchroniseren
 
+### Opties
 
-### `--help`, `-h`
-
-Help weergeven voor de opgegeven opdracht. Wanneer geen bevel vertoningshulp voor het lijstbevel wordt gegeven
-
-- Standaard: `false`
-- Accepteert geen waarde
-
-### `--quiet`, `-q`
-
-Geen bericht uitvoeren
-
-- Standaard: `false`
-- Accepteert geen waarde
-
-### `--verbose`, `-v|-vv|-vvv`
-
-Verhoog de breedheid van berichten: 1 voor normale output, 2 voor meer uitgebreide output en 3 voor zuivert
-
-- Standaard: `false`
-- Accepteert geen waarde
-
-### `--version`, `-V`
-
-Deze toepassingsversie weergeven
-
-- Standaard: `false`
-- Accepteert geen waarde
-
-### `--ansi`
-
-ANSI-uitvoer forceren (of uitschakelen —no-ansi)
-
-- Accepteert geen waarde
-
-### `--no-ansi`
-
-De optie &quot;—ansi&quot; negeren
-
-- Standaard: `false`
-- Accepteert geen waarde
-
-### `--no-interaction`, `-n`
-
-Geen interactieve vraag stellen
-
-- Standaard: `false`
-- Accepteert geen waarde
+Voor globale opties, zie [ Globale opties ](#global-options).
 
 
 ## `module:config:status`
@@ -6210,54 +2276,9 @@ bin/magento module:config:status
 
 Controleert de moduleconfiguratie in het &quot;app/etc/config.php&quot;dossier en rapporteert als zij of niet bijgewerkt zijn
 
+### Opties
 
-### `--help`, `-h`
-
-Help weergeven voor de opgegeven opdracht. Wanneer geen bevel vertoningshulp voor het lijstbevel wordt gegeven
-
-- Standaard: `false`
-- Accepteert geen waarde
-
-### `--quiet`, `-q`
-
-Geen bericht uitvoeren
-
-- Standaard: `false`
-- Accepteert geen waarde
-
-### `--verbose`, `-v|-vv|-vvv`
-
-Verhoog de breedheid van berichten: 1 voor normale output, 2 voor meer uitgebreide output en 3 voor zuivert
-
-- Standaard: `false`
-- Accepteert geen waarde
-
-### `--version`, `-V`
-
-Deze toepassingsversie weergeven
-
-- Standaard: `false`
-- Accepteert geen waarde
-
-### `--ansi`
-
-ANSI-uitvoer forceren (of uitschakelen —no-ansi)
-
-- Accepteert geen waarde
-
-### `--no-ansi`
-
-De optie &quot;—ansi&quot; negeren
-
-- Standaard: `false`
-- Accepteert geen waarde
-
-### `--no-interaction`, `-n`
-
-Geen interactieve vraag stellen
-
-- Standaard: `false`
-- Accepteert geen waarde
+Voor globale opties, zie [ Globale opties ](#global-options).
 
 
 ## `module:disable`
@@ -6268,90 +2289,45 @@ bin/magento module:disable [-f|--force] [--all] [-c|--clear-static-content] [--m
 
 Hiermee worden opgegeven modules uitgeschakeld
 
+### Argumenten
 
-
-### `module`
+#### `module`
 
 Naam van de module
 
 - Standaard: `[]`
-
 - Array
 
-### `--force`, `-f`
+### Opties
+
+Voor globale opties, zie [ Globale opties ](#global-options).
+
+#### `--force`, `-f`
 
 Controle voor passageafhankelijkheden
 
 - Standaard: `false`
 - Accepteert geen waarde
 
-### `--all`
+#### `--all`
 
 Alle modules uitschakelen
 
 - Standaard: `false`
 - Accepteert geen waarde
 
-### `--clear-static-content`, `-c`
+#### `--clear-static-content`, `-c`
 
 Gegenereerde statische weergavebestanden wissen. Noodzakelijk als de module(s) statische weergavebestanden heeft
 
 - Standaard: `false`
 - Accepteert geen waarde
 
-### `--magento-init-params`
+#### `--magento-init-params`
 
 Voeg aan om het even welk bevel toe om Magento initialisatieparameters aan te passen bijvoorbeeld: &quot;MAGE_MODE=developer&amp;MAGE_DIRS [ basis ][path]=/var/www/example.com&amp;MAGE_DIRS [ geheime voorgeheugen ][path]=/var/tmp/cache&quot;
 
 - Vereist een waarde
-
-### `--help`, `-h`
-
-Help weergeven voor de opgegeven opdracht. Wanneer geen bevel vertoningshulp voor het lijstbevel wordt gegeven
-
-- Standaard: `false`
-- Accepteert geen waarde
-
-### `--quiet`, `-q`
-
-Geen bericht uitvoeren
-
-- Standaard: `false`
-- Accepteert geen waarde
-
-### `--verbose`, `-v|-vv|-vvv`
-
-Verhoog de breedheid van berichten: 1 voor normale output, 2 voor meer uitgebreide output en 3 voor zuivert
-
-- Standaard: `false`
-- Accepteert geen waarde
-
-### `--version`, `-V`
-
-Deze toepassingsversie weergeven
-
-- Standaard: `false`
-- Accepteert geen waarde
-
-### `--ansi`
-
-ANSI-uitvoer forceren (of uitschakelen —no-ansi)
-
-- Accepteert geen waarde
-
-### `--no-ansi`
-
-De optie &quot;—ansi&quot; negeren
-
-- Standaard: `false`
-- Accepteert geen waarde
-
-### `--no-interaction`, `-n`
-
-Geen interactieve vraag stellen
-
-- Standaard: `false`
-- Accepteert geen waarde
 
 
 ## `module:enable`
@@ -6362,90 +2338,45 @@ bin/magento module:enable [-f|--force] [--all] [-c|--clear-static-content] [--ma
 
 Hiermee worden opgegeven modules ingeschakeld
 
+### Argumenten
 
-
-### `module`
+#### `module`
 
 Naam van de module
 
 - Standaard: `[]`
-
 - Array
 
-### `--force`, `-f`
+### Opties
+
+Voor globale opties, zie [ Globale opties ](#global-options).
+
+#### `--force`, `-f`
 
 Controle voor passageafhankelijkheden
 
 - Standaard: `false`
 - Accepteert geen waarde
 
-### `--all`
+#### `--all`
 
 Alle modules inschakelen
 
 - Standaard: `false`
 - Accepteert geen waarde
 
-### `--clear-static-content`, `-c`
+#### `--clear-static-content`, `-c`
 
 Gegenereerde statische weergavebestanden wissen. Noodzakelijk als de module(s) statische weergavebestanden heeft
 
 - Standaard: `false`
 - Accepteert geen waarde
 
-### `--magento-init-params`
+#### `--magento-init-params`
 
 Voeg aan om het even welk bevel toe om Magento initialisatieparameters aan te passen bijvoorbeeld: &quot;MAGE_MODE=developer&amp;MAGE_DIRS [ basis ][path]=/var/www/example.com&amp;MAGE_DIRS [ geheime voorgeheugen ][path]=/var/tmp/cache&quot;
 
 - Vereist een waarde
-
-### `--help`, `-h`
-
-Help weergeven voor de opgegeven opdracht. Wanneer geen bevel vertoningshulp voor het lijstbevel wordt gegeven
-
-- Standaard: `false`
-- Accepteert geen waarde
-
-### `--quiet`, `-q`
-
-Geen bericht uitvoeren
-
-- Standaard: `false`
-- Accepteert geen waarde
-
-### `--verbose`, `-v|-vv|-vvv`
-
-Verhoog de breedheid van berichten: 1 voor normale output, 2 voor meer uitgebreide output en 3 voor zuivert
-
-- Standaard: `false`
-- Accepteert geen waarde
-
-### `--version`, `-V`
-
-Deze toepassingsversie weergeven
-
-- Standaard: `false`
-- Accepteert geen waarde
-
-### `--ansi`
-
-ANSI-uitvoer forceren (of uitschakelen —no-ansi)
-
-- Accepteert geen waarde
-
-### `--no-ansi`
-
-De optie &quot;—ansi&quot; negeren
-
-- Standaard: `false`
-- Accepteert geen waarde
-
-### `--no-interaction`, `-n`
-
-Geen interactieve vraag stellen
-
-- Standaard: `false`
-- Accepteert geen waarde
 
 
 ## `module:status`
@@ -6456,83 +2387,38 @@ bin/magento module:status [--enabled] [--disabled] [--magento-init-params MAGENT
 
 Geeft de status van modules weer
 
+### Argumenten
 
-
-### `module-names`
+#### `module-names`
 
 Optionele modulenaam
 
 - Standaard: `[]`
-
 - Array
 
-### `--enabled`
+### Opties
+
+Voor globale opties, zie [ Globale opties ](#global-options).
+
+#### `--enabled`
 
 Alleen ingeschakelde modules afdrukken
 
 - Standaard: `false`
 - Accepteert geen waarde
 
-### `--disabled`
+#### `--disabled`
 
 Alleen uitgeschakelde modules afdrukken
 
 - Standaard: `false`
 - Accepteert geen waarde
 
-### `--magento-init-params`
+#### `--magento-init-params`
 
 Voeg aan om het even welk bevel toe om Magento initialisatieparameters aan te passen bijvoorbeeld: &quot;MAGE_MODE=developer&amp;MAGE_DIRS [ basis ][path]=/var/www/example.com&amp;MAGE_DIRS [ geheime voorgeheugen ][path]=/var/tmp/cache&quot;
 
 - Vereist een waarde
-
-### `--help`, `-h`
-
-Help weergeven voor de opgegeven opdracht. Wanneer geen bevel vertoningshulp voor het lijstbevel wordt gegeven
-
-- Standaard: `false`
-- Accepteert geen waarde
-
-### `--quiet`, `-q`
-
-Geen bericht uitvoeren
-
-- Standaard: `false`
-- Accepteert geen waarde
-
-### `--verbose`, `-v|-vv|-vvv`
-
-Verhoog de breedheid van berichten: 1 voor normale output, 2 voor meer uitgebreide output en 3 voor zuivert
-
-- Standaard: `false`
-- Accepteert geen waarde
-
-### `--version`, `-V`
-
-Deze toepassingsversie weergeven
-
-- Standaard: `false`
-- Accepteert geen waarde
-
-### `--ansi`
-
-ANSI-uitvoer forceren (of uitschakelen —no-ansi)
-
-- Accepteert geen waarde
-
-### `--no-ansi`
-
-De optie &quot;—ansi&quot; negeren
-
-- Standaard: `false`
-- Accepteert geen waarde
-
-### `--no-interaction`, `-n`
-
-Geen interactieve vraag stellen
-
-- Standaard: `false`
-- Accepteert geen waarde
 
 
 ## `module:uninstall`
@@ -6543,112 +2429,68 @@ bin/magento module:uninstall [-r|--remove-data] [--backup-code] [--backup-media]
 
 Hiermee verwijdert u modules die door de composer zijn geïnstalleerd
 
+### Argumenten
 
-
-### `module`
+#### `module`
 
 Naam van de module
 
 - Standaard: `[]`
-
 - Vereist
+
 - Array
 
-### `--remove-data`, `-r`
+### Opties
+
+Voor globale opties, zie [ Globale opties ](#global-options).
+
+#### `--remove-data`, `-r`
 
 Gegevens verwijderen die zijn geïnstalleerd door module(s)
 
 - Standaard: `false`
 - Accepteert geen waarde
 
-### `--backup-code`
+#### `--backup-code`
 
 Back-up maken van code- en configuratiebestanden (behalve tijdelijke bestanden)
 
 - Standaard: `false`
 - Accepteert geen waarde
 
-### `--backup-media`
+#### `--backup-media`
 
 Mediaback-up maken
 
 - Standaard: `false`
 - Accepteert geen waarde
 
-### `--backup-db`
+#### `--backup-db`
 
 Volledige back-up van de database maken
 
 - Standaard: `false`
 - Accepteert geen waarde
 
-### `--non-composer`
+#### `--non-composer`
 
 Alle modules, die hier voorbij zullen zijn zullen niet op composer gebaseerd zijn
 
 - Standaard: `false`
 - Accepteert geen waarde
 
-### `--clear-static-content`, `-c`
+#### `--clear-static-content`, `-c`
 
 Gegenereerde statische weergavebestanden wissen. Noodzakelijk als de module(s) statische weergavebestanden heeft
 
 - Standaard: `false`
 - Accepteert geen waarde
 
-### `--magento-init-params`
+#### `--magento-init-params`
 
 Voeg aan om het even welk bevel toe om Magento initialisatieparameters aan te passen bijvoorbeeld: &quot;MAGE_MODE=developer&amp;MAGE_DIRS [ basis ][path]=/var/www/example.com&amp;MAGE_DIRS [ geheime voorgeheugen ][path]=/var/tmp/cache&quot;
 
 - Vereist een waarde
-
-### `--help`, `-h`
-
-Help weergeven voor de opgegeven opdracht. Wanneer geen bevel vertoningshulp voor het lijstbevel wordt gegeven
-
-- Standaard: `false`
-- Accepteert geen waarde
-
-### `--quiet`, `-q`
-
-Geen bericht uitvoeren
-
-- Standaard: `false`
-- Accepteert geen waarde
-
-### `--verbose`, `-v|-vv|-vvv`
-
-Verhoog de breedheid van berichten: 1 voor normale output, 2 voor meer uitgebreide output en 3 voor zuivert
-
-- Standaard: `false`
-- Accepteert geen waarde
-
-### `--version`, `-V`
-
-Deze toepassingsversie weergeven
-
-- Standaard: `false`
-- Accepteert geen waarde
-
-### `--ansi`
-
-ANSI-uitvoer forceren (of uitschakelen —no-ansi)
-
-- Accepteert geen waarde
-
-### `--no-ansi`
-
-De optie &quot;—ansi&quot; negeren
-
-- Standaard: `false`
-- Accepteert geen waarde
-
-### `--no-interaction`, `-n`
-
-Geen interactieve vraag stellen
-
-- Standaard: `false`
-- Accepteert geen waarde
 
 
 ## `newrelic:create:deploy-marker`
@@ -6659,77 +2501,34 @@ bin/magento newrelic:create:deploy-marker <message> <change_log> [<user> [<revis
 
 Controleer de opstellen rij voor ingangen en creeer aangewezen plaatsingsteller.
 
+### Argumenten
 
-
-### `message`
+#### `message`
 
 Bericht implementeren?
 
 - Vereist
 
-### `change_log`
+
+#### `change_log`
 
 Logboek wijzigen?
 
 - Vereist
 
-### `user`
+
+#### `user`
 
 Implementatiegebruiker
 
 
-### `revision`
+#### `revision`
 
 Herziening
 
+### Opties
 
-### `--help`, `-h`
-
-Help weergeven voor de opgegeven opdracht. Wanneer geen bevel vertoningshulp voor het lijstbevel wordt gegeven
-
-- Standaard: `false`
-- Accepteert geen waarde
-
-### `--quiet`, `-q`
-
-Geen bericht uitvoeren
-
-- Standaard: `false`
-- Accepteert geen waarde
-
-### `--verbose`, `-v|-vv|-vvv`
-
-Verhoog de breedheid van berichten: 1 voor normale output, 2 voor meer uitgebreide output en 3 voor zuivert
-
-- Standaard: `false`
-- Accepteert geen waarde
-
-### `--version`, `-V`
-
-Deze toepassingsversie weergeven
-
-- Standaard: `false`
-- Accepteert geen waarde
-
-### `--ansi`
-
-ANSI-uitvoer forceren (of uitschakelen —no-ansi)
-
-- Accepteert geen waarde
-
-### `--no-ansi`
-
-De optie &quot;—ansi&quot; negeren
-
-- Standaard: `false`
-- Accepteert geen waarde
-
-### `--no-interaction`, `-n`
-
-Geen interactieve vraag stellen
-
-- Standaard: `false`
-- Accepteert geen waarde
+Voor globale opties, zie [ Globale opties ](#global-options).
 
 
 ## `queue:consumers:list`
@@ -6740,58 +2539,13 @@ bin/magento queue:consumers:list
 
 Lijst met consumenten van MessageQueue
 
-
 ```
 This command shows list of MessageQueue consumers.
 ```
 
-### `--help`, `-h`
+### Opties
 
-Help weergeven voor de opgegeven opdracht. Wanneer geen bevel vertoningshulp voor het lijstbevel wordt gegeven
-
-- Standaard: `false`
-- Accepteert geen waarde
-
-### `--quiet`, `-q`
-
-Geen bericht uitvoeren
-
-- Standaard: `false`
-- Accepteert geen waarde
-
-### `--verbose`, `-v|-vv|-vvv`
-
-Verhoog de breedheid van berichten: 1 voor normale output, 2 voor meer uitgebreide output en 3 voor zuivert
-
-- Standaard: `false`
-- Accepteert geen waarde
-
-### `--version`, `-V`
-
-Deze toepassingsversie weergeven
-
-- Standaard: `false`
-- Accepteert geen waarde
-
-### `--ansi`
-
-ANSI-uitvoer forceren (of uitschakelen —no-ansi)
-
-- Accepteert geen waarde
-
-### `--no-ansi`
-
-De optie &quot;—ansi&quot; negeren
-
-- Standaard: `false`
-- Accepteert geen waarde
-
-### `--no-interaction`, `-n`
-
-Geen interactieve vraag stellen
-
-- Standaard: `false`
-- Accepteert geen waarde
+Voor globale opties, zie [ Globale opties ](#global-options).
 
 
 ## `queue:consumers:restart`
@@ -6802,58 +2556,13 @@ bin/magento queue:consumers:restart
 
 Gebruikers van MessageQueue opnieuw starten
 
-
 ```
 Command put poison pill for MessageQueue consumers and force to restart them after next status check.
 ```
 
-### `--help`, `-h`
+### Opties
 
-Help weergeven voor de opgegeven opdracht. Wanneer geen bevel vertoningshulp voor het lijstbevel wordt gegeven
-
-- Standaard: `false`
-- Accepteert geen waarde
-
-### `--quiet`, `-q`
-
-Geen bericht uitvoeren
-
-- Standaard: `false`
-- Accepteert geen waarde
-
-### `--verbose`, `-v|-vv|-vvv`
-
-Verhoog de breedheid van berichten: 1 voor normale output, 2 voor meer uitgebreide output en 3 voor zuivert
-
-- Standaard: `false`
-- Accepteert geen waarde
-
-### `--version`, `-V`
-
-Deze toepassingsversie weergeven
-
-- Standaard: `false`
-- Accepteert geen waarde
-
-### `--ansi`
-
-ANSI-uitvoer forceren (of uitschakelen —no-ansi)
-
-- Accepteert geen waarde
-
-### `--no-ansi`
-
-De optie &quot;—ansi&quot; negeren
-
-- Standaard: `false`
-- Accepteert geen waarde
-
-### `--no-interaction`, `-n`
-
-Geen interactieve vraag stellen
-
-- Standaard: `false`
-- Accepteert geen waarde
+Voor globale opties, zie [ Globale opties ](#global-options).
 
 
 ## `queue:consumers:start`
@@ -6863,7 +2572,6 @@ bin/magento queue:consumers:start [--max-messages MAX-MESSAGES] [--batch-size BA
 ```
 
 MessageQueue-consument starten
-
 
 ```
 This command starts MessageQueue consumer by its name.
@@ -6897,97 +2605,54 @@ To define the number of processes per consumer:
     bin/magento queue:consumers:start someConsumer --multi-process=4
 ```
 
+### Argumenten
 
-### `consumer`
+#### `consumer`
 
 De naam van de consument die moet worden gestart.
 
 - Vereist
 
-### `--max-messages`
+### Opties
+
+Voor globale opties, zie [ Globale opties ](#global-options).
+
+#### `--max-messages`
 
 Het aantal berichten dat de consument moet verwerken voordat het proces wordt beëindigd. Indien niet gespecificeerd - eindig na verwerking van alle een rij gevormde berichten.
 
 - Vereist een waarde
 
-### `--batch-size`
+#### `--batch-size`
 
 Het aantal berichten per partij. Alleen van toepassing op de partijconsument.
 
 - Vereist een waarde
 
-### `--area-code`
+#### `--area-code`
 
 De standaardinstelling voor het voorkeursgebied (global, adminhtml, etc..) is global.
 
 - Vereist een waarde
 
-### `--single-thread`
+#### `--single-thread`
 
 Met deze optie voorkomt u dat meerdere exemplaren van één consument tegelijk worden uitgevoerd.
 
 - Standaard: `false`
 - Accepteert geen waarde
 
-### `--multi-process`
+#### `--multi-process`
 
 Het aantal processen per consument.
 
 - Accepteert een waarde
 
-### `--pid-file-path`
+#### `--pid-file-path`
 
 Het bestandspad voor het opslaan van PID (deze optie is afgekeurd, gebruik —enkele thread in plaats daarvan)
 
 - Vereist een waarde
-
-### `--help`, `-h`
-
-Help weergeven voor de opgegeven opdracht. Wanneer geen bevel vertoningshulp voor het lijstbevel wordt gegeven
-
-- Standaard: `false`
-- Accepteert geen waarde
-
-### `--quiet`, `-q`
-
-Geen bericht uitvoeren
-
-- Standaard: `false`
-- Accepteert geen waarde
-
-### `--verbose`, `-v|-vv|-vvv`
-
-Verhoog de breedheid van berichten: 1 voor normale output, 2 voor meer uitgebreide output en 3 voor zuivert
-
-- Standaard: `false`
-- Accepteert geen waarde
-
-### `--version`, `-V`
-
-Deze toepassingsversie weergeven
-
-- Standaard: `false`
-- Accepteert geen waarde
-
-### `--ansi`
-
-ANSI-uitvoer forceren (of uitschakelen —no-ansi)
-
-- Accepteert geen waarde
-
-### `--no-ansi`
-
-De optie &quot;—ansi&quot; negeren
-
-- Standaard: `false`
-- Accepteert geen waarde
-
-### `--no-interaction`, `-n`
-
-Geen interactieve vraag stellen
-
-- Standaard: `false`
-- Accepteert geen waarde
 
 
 ## `remote-storage:sync`
@@ -6998,54 +2663,9 @@ bin/magento remote-storage:sync
 
 Mediabestanden synchroniseren met externe opslag.
 
+### Opties
 
-### `--help`, `-h`
-
-Help weergeven voor de opgegeven opdracht. Wanneer geen bevel vertoningshulp voor het lijstbevel wordt gegeven
-
-- Standaard: `false`
-- Accepteert geen waarde
-
-### `--quiet`, `-q`
-
-Geen bericht uitvoeren
-
-- Standaard: `false`
-- Accepteert geen waarde
-
-### `--verbose`, `-v|-vv|-vvv`
-
-Verhoog de breedheid van berichten: 1 voor normale output, 2 voor meer uitgebreide output en 3 voor zuivert
-
-- Standaard: `false`
-- Accepteert geen waarde
-
-### `--version`, `-V`
-
-Deze toepassingsversie weergeven
-
-- Standaard: `false`
-- Accepteert geen waarde
-
-### `--ansi`
-
-ANSI-uitvoer forceren (of uitschakelen —no-ansi)
-
-- Accepteert geen waarde
-
-### `--no-ansi`
-
-De optie &quot;—ansi&quot; negeren
-
-- Standaard: `false`
-- Accepteert geen waarde
-
-### `--no-interaction`, `-n`
-
-Geen interactieve vraag stellen
-
-- Standaard: `false`
-- Accepteert geen waarde
+Voor globale opties, zie [ Globale opties ](#global-options).
 
 
 ## `saas:resync`
@@ -7056,97 +2676,52 @@ bin/magento saas:resync [--feed FEED] [--no-reindex] [--cleanup-feed] [--dry-run
 
 Hersynchroniseert voedergegevens aan de dienst SaaS.
 
+### Opties
 
-### `--feed`
+Voor globale opties, zie [ Globale opties ](#global-options).
+
+#### `--feed`
 
 Geef de feed-naam op om opnieuw te synchroniseren met SaaS-service. Beschikbare feeds: orderproductie van betalingsservices, betalingsservicesbestelsandbox, orderstatus van betalingsservices, betalingsservicestatus sandbox, betalingsservices, winkelproductie van betalingsservices, zandbak in de winkel voor betalingsservices
 
 - Vereist een waarde
 
-### `--no-reindex`
+#### `--no-reindex`
 
 Voer de gegevens van de feed alleen opnieuw in bij de SaaS-service. Wordt niet opnieuw geindexeerd. (Deze optie is niet van toepassing op de producten, de producten, de prijzen en de feeds)
 
 - Standaard: `false`
 - Accepteert geen waarde
 
-### `--cleanup-feed`
+#### `--cleanup-feed`
 
 Forceer om de indextabel van de feed vóór synchronisatie op te schonen.
 
 - Standaard: `false`
 - Accepteert geen waarde
 
-### `--dry-run`
+#### `--dry-run`
 
 Droge run. Gegevens worden niet geëxporteerd. Als u de payload wilt opslaan in het logbestand var/log/saas-export.log, voert u de variabele EXPORTER_EXTENDED_LOG=1 uit.
 
 - Standaard: `false`
 - Accepteert geen waarde
 
-### `--thread-count`
+#### `--thread-count`
 
 Aantal synchronisatiethread instellen.
 
 - Vereist een waarde
 
-### `--batch-size`
+#### `--batch-size`
 
 Batchgrootte voor synchronisatie instellen
 
 - Vereist een waarde
 
-### `--continue-resync`
+#### `--continue-resync`
 
 Doorgaan met opnieuw synchroniseren vanaf de laatste opgeslagen positie (deze optie is van toepassing op de producten, de producten, de prijzen en de feeds)
-
-- Standaard: `false`
-- Accepteert geen waarde
-
-### `--help`, `-h`
-
-Help weergeven voor de opgegeven opdracht. Wanneer geen bevel vertoningshulp voor het lijstbevel wordt gegeven
-
-- Standaard: `false`
-- Accepteert geen waarde
-
-### `--quiet`, `-q`
-
-Geen bericht uitvoeren
-
-- Standaard: `false`
-- Accepteert geen waarde
-
-### `--verbose`, `-v|-vv|-vvv`
-
-Verhoog de breedheid van berichten: 1 voor normale output, 2 voor meer uitgebreide output en 3 voor zuivert
-
-- Standaard: `false`
-- Accepteert geen waarde
-
-### `--version`, `-V`
-
-Deze toepassingsversie weergeven
-
-- Standaard: `false`
-- Accepteert geen waarde
-
-### `--ansi`
-
-ANSI-uitvoer forceren (of uitschakelen —no-ansi)
-
-- Accepteert geen waarde
-
-### `--no-ansi`
-
-De optie &quot;—ansi&quot; negeren
-
-- Standaard: `false`
-- Accepteert geen waarde
-
-### `--no-interaction`, `-n`
-
-Geen interactieve vraag stellen
 
 - Standaard: `false`
 - Accepteert geen waarde
@@ -7160,58 +2735,13 @@ bin/magento sampledata:deploy [--no-update]
 
 Stel steekproefgegevensmodules voor op composer-gebaseerde Magento&#39;s installaties op
 
+### Opties
 
-### `--no-update`
+Voor globale opties, zie [ Globale opties ](#global-options).
+
+#### `--no-update`
 
 Composer.json bijwerken zonder componentupdate uit te voeren
-
-- Standaard: `false`
-- Accepteert geen waarde
-
-### `--help`, `-h`
-
-Help weergeven voor de opgegeven opdracht. Wanneer geen bevel vertoningshulp voor het lijstbevel wordt gegeven
-
-- Standaard: `false`
-- Accepteert geen waarde
-
-### `--quiet`, `-q`
-
-Geen bericht uitvoeren
-
-- Standaard: `false`
-- Accepteert geen waarde
-
-### `--verbose`, `-v|-vv|-vvv`
-
-Verhoog de breedheid van berichten: 1 voor normale output, 2 voor meer uitgebreide output en 3 voor zuivert
-
-- Standaard: `false`
-- Accepteert geen waarde
-
-### `--version`, `-V`
-
-Deze toepassingsversie weergeven
-
-- Standaard: `false`
-- Accepteert geen waarde
-
-### `--ansi`
-
-ANSI-uitvoer forceren (of uitschakelen —no-ansi)
-
-- Accepteert geen waarde
-
-### `--no-ansi`
-
-De optie &quot;—ansi&quot; negeren
-
-- Standaard: `false`
-- Accepteert geen waarde
-
-### `--no-interaction`, `-n`
-
-Geen interactieve vraag stellen
 
 - Standaard: `false`
 - Accepteert geen waarde
@@ -7225,58 +2755,13 @@ bin/magento sampledata:remove [--no-update]
 
 Alle pakketten met voorbeeldgegevens verwijderen uit composer.json
 
+### Opties
 
-### `--no-update`
+Voor globale opties, zie [ Globale opties ](#global-options).
+
+#### `--no-update`
 
 Composer.json bijwerken zonder componentupdate uit te voeren
-
-- Standaard: `false`
-- Accepteert geen waarde
-
-### `--help`, `-h`
-
-Help weergeven voor de opgegeven opdracht. Wanneer geen bevel vertoningshulp voor het lijstbevel wordt gegeven
-
-- Standaard: `false`
-- Accepteert geen waarde
-
-### `--quiet`, `-q`
-
-Geen bericht uitvoeren
-
-- Standaard: `false`
-- Accepteert geen waarde
-
-### `--verbose`, `-v|-vv|-vvv`
-
-Verhoog de breedheid van berichten: 1 voor normale output, 2 voor meer uitgebreide output en 3 voor zuivert
-
-- Standaard: `false`
-- Accepteert geen waarde
-
-### `--version`, `-V`
-
-Deze toepassingsversie weergeven
-
-- Standaard: `false`
-- Accepteert geen waarde
-
-### `--ansi`
-
-ANSI-uitvoer forceren (of uitschakelen —no-ansi)
-
-- Accepteert geen waarde
-
-### `--no-ansi`
-
-De optie &quot;—ansi&quot; negeren
-
-- Standaard: `false`
-- Accepteert geen waarde
-
-### `--no-interaction`, `-n`
-
-Geen interactieve vraag stellen
 
 - Standaard: `false`
 - Accepteert geen waarde
@@ -7290,54 +2775,9 @@ bin/magento sampledata:reset
 
 Alle modules met voorbeeldgegevens opnieuw instellen voor herinstallatie
 
+### Opties
 
-### `--help`, `-h`
-
-Help weergeven voor de opgegeven opdracht. Wanneer geen bevel vertoningshulp voor het lijstbevel wordt gegeven
-
-- Standaard: `false`
-- Accepteert geen waarde
-
-### `--quiet`, `-q`
-
-Geen bericht uitvoeren
-
-- Standaard: `false`
-- Accepteert geen waarde
-
-### `--verbose`, `-v|-vv|-vvv`
-
-Verhoog de breedheid van berichten: 1 voor normale output, 2 voor meer uitgebreide output en 3 voor zuivert
-
-- Standaard: `false`
-- Accepteert geen waarde
-
-### `--version`, `-V`
-
-Deze toepassingsversie weergeven
-
-- Standaard: `false`
-- Accepteert geen waarde
-
-### `--ansi`
-
-ANSI-uitvoer forceren (of uitschakelen —no-ansi)
-
-- Accepteert geen waarde
-
-### `--no-ansi`
-
-De optie &quot;—ansi&quot; negeren
-
-- Standaard: `false`
-- Accepteert geen waarde
-
-### `--no-interaction`, `-n`
-
-Geen interactieve vraag stellen
-
-- Standaard: `false`
-- Accepteert geen waarde
+Voor globale opties, zie [ Globale opties ](#global-options).
 
 
 ## `security:recaptcha:disable-for-user-forgot-password`
@@ -7348,54 +2788,9 @@ bin/magento security:recaptcha:disable-for-user-forgot-password
 
 reCAPTCHA uitschakelen voor wachtwoordformulier voor vergeten gebruiker van beheerder
 
+### Opties
 
-### `--help`, `-h`
-
-Help weergeven voor de opgegeven opdracht. Wanneer geen bevel vertoningshulp voor het lijstbevel wordt gegeven
-
-- Standaard: `false`
-- Accepteert geen waarde
-
-### `--quiet`, `-q`
-
-Geen bericht uitvoeren
-
-- Standaard: `false`
-- Accepteert geen waarde
-
-### `--verbose`, `-v|-vv|-vvv`
-
-Verhoog de breedheid van berichten: 1 voor normale output, 2 voor meer uitgebreide output en 3 voor zuivert
-
-- Standaard: `false`
-- Accepteert geen waarde
-
-### `--version`, `-V`
-
-Deze toepassingsversie weergeven
-
-- Standaard: `false`
-- Accepteert geen waarde
-
-### `--ansi`
-
-ANSI-uitvoer forceren (of uitschakelen —no-ansi)
-
-- Accepteert geen waarde
-
-### `--no-ansi`
-
-De optie &quot;—ansi&quot; negeren
-
-- Standaard: `false`
-- Accepteert geen waarde
-
-### `--no-interaction`, `-n`
-
-Geen interactieve vraag stellen
-
-- Standaard: `false`
-- Accepteert geen waarde
+Voor globale opties, zie [ Globale opties ](#global-options).
 
 
 ## `security:recaptcha:disable-for-user-login`
@@ -7406,54 +2801,9 @@ bin/magento security:recaptcha:disable-for-user-login
 
 reCAPTCHA uitschakelen voor aanmeldingsformulier voor beheerder
 
+### Opties
 
-### `--help`, `-h`
-
-Help weergeven voor de opgegeven opdracht. Wanneer geen bevel vertoningshulp voor het lijstbevel wordt gegeven
-
-- Standaard: `false`
-- Accepteert geen waarde
-
-### `--quiet`, `-q`
-
-Geen bericht uitvoeren
-
-- Standaard: `false`
-- Accepteert geen waarde
-
-### `--verbose`, `-v|-vv|-vvv`
-
-Verhoog de breedheid van berichten: 1 voor normale output, 2 voor meer uitgebreide output en 3 voor zuivert
-
-- Standaard: `false`
-- Accepteert geen waarde
-
-### `--version`, `-V`
-
-Deze toepassingsversie weergeven
-
-- Standaard: `false`
-- Accepteert geen waarde
-
-### `--ansi`
-
-ANSI-uitvoer forceren (of uitschakelen —no-ansi)
-
-- Accepteert geen waarde
-
-### `--no-ansi`
-
-De optie &quot;—ansi&quot; negeren
-
-- Standaard: `false`
-- Accepteert geen waarde
-
-### `--no-interaction`, `-n`
-
-Geen interactieve vraag stellen
-
-- Standaard: `false`
-- Accepteert geen waarde
+Voor globale opties, zie [ Globale opties ](#global-options).
 
 
 ## `security:tfa:google:set-secret`
@@ -7464,67 +2814,24 @@ bin/magento security:tfa:google:set-secret <user> <secret>
 
 Stel het geheim in dat voor Google OTP-generatie wordt gebruikt.
 
+### Argumenten
 
-
-### `user`
+#### `user`
 
 Gebruikersnaam
 
 - Vereist
 
-### `secret`
+
+#### `secret`
 
 Geheim
 
 - Vereist
 
-### `--help`, `-h`
+### Opties
 
-Help weergeven voor de opgegeven opdracht. Wanneer geen bevel vertoningshulp voor het lijstbevel wordt gegeven
-
-- Standaard: `false`
-- Accepteert geen waarde
-
-### `--quiet`, `-q`
-
-Geen bericht uitvoeren
-
-- Standaard: `false`
-- Accepteert geen waarde
-
-### `--verbose`, `-v|-vv|-vvv`
-
-Verhoog de breedheid van berichten: 1 voor normale output, 2 voor meer uitgebreide output en 3 voor zuivert
-
-- Standaard: `false`
-- Accepteert geen waarde
-
-### `--version`, `-V`
-
-Deze toepassingsversie weergeven
-
-- Standaard: `false`
-- Accepteert geen waarde
-
-### `--ansi`
-
-ANSI-uitvoer forceren (of uitschakelen —no-ansi)
-
-- Accepteert geen waarde
-
-### `--no-ansi`
-
-De optie &quot;—ansi&quot; negeren
-
-- Standaard: `false`
-- Accepteert geen waarde
-
-### `--no-interaction`, `-n`
-
-Geen interactieve vraag stellen
-
-- Standaard: `false`
-- Accepteert geen waarde
+Voor globale opties, zie [ Globale opties ](#global-options).
 
 
 ## `security:tfa:providers`
@@ -7535,54 +2842,9 @@ bin/magento security:tfa:providers
 
 Alle beschikbare providers weergeven
 
+### Opties
 
-### `--help`, `-h`
-
-Help weergeven voor de opgegeven opdracht. Wanneer geen bevel vertoningshulp voor het lijstbevel wordt gegeven
-
-- Standaard: `false`
-- Accepteert geen waarde
-
-### `--quiet`, `-q`
-
-Geen bericht uitvoeren
-
-- Standaard: `false`
-- Accepteert geen waarde
-
-### `--verbose`, `-v|-vv|-vvv`
-
-Verhoog de breedheid van berichten: 1 voor normale output, 2 voor meer uitgebreide output en 3 voor zuivert
-
-- Standaard: `false`
-- Accepteert geen waarde
-
-### `--version`, `-V`
-
-Deze toepassingsversie weergeven
-
-- Standaard: `false`
-- Accepteert geen waarde
-
-### `--ansi`
-
-ANSI-uitvoer forceren (of uitschakelen —no-ansi)
-
-- Accepteert geen waarde
-
-### `--no-ansi`
-
-De optie &quot;—ansi&quot; negeren
-
-- Standaard: `false`
-- Accepteert geen waarde
-
-### `--no-interaction`, `-n`
-
-Geen interactieve vraag stellen
-
-- Standaard: `false`
-- Accepteert geen waarde
+Voor globale opties, zie [ Globale opties ](#global-options).
 
 
 ## `security:tfa:reset`
@@ -7593,67 +2855,24 @@ bin/magento security:tfa:reset <user> <provider>
 
 Configuratie voor één gebruiker opnieuw instellen
 
+### Argumenten
 
-
-### `user`
+#### `user`
 
 Gebruikersnaam
 
 - Vereist
 
-### `provider`
+
+#### `provider`
 
 Providercode
 
 - Vereist
 
-### `--help`, `-h`
+### Opties
 
-Help weergeven voor de opgegeven opdracht. Wanneer geen bevel vertoningshulp voor het lijstbevel wordt gegeven
-
-- Standaard: `false`
-- Accepteert geen waarde
-
-### `--quiet`, `-q`
-
-Geen bericht uitvoeren
-
-- Standaard: `false`
-- Accepteert geen waarde
-
-### `--verbose`, `-v|-vv|-vvv`
-
-Verhoog de breedheid van berichten: 1 voor normale output, 2 voor meer uitgebreide output en 3 voor zuivert
-
-- Standaard: `false`
-- Accepteert geen waarde
-
-### `--version`, `-V`
-
-Deze toepassingsversie weergeven
-
-- Standaard: `false`
-- Accepteert geen waarde
-
-### `--ansi`
-
-ANSI-uitvoer forceren (of uitschakelen —no-ansi)
-
-- Accepteert geen waarde
-
-### `--no-ansi`
-
-De optie &quot;—ansi&quot; negeren
-
-- Standaard: `false`
-- Accepteert geen waarde
-
-### `--no-interaction`, `-n`
-
-Geen interactieve vraag stellen
-
-- Standaard: `false`
-- Accepteert geen waarde
+Voor globale opties, zie [ Globale opties ](#global-options).
 
 
 ## `server:run`
@@ -7664,114 +2883,69 @@ bin/magento server:run [-p|--port [PORT]] [-b|--background [BACKGROUND]] [-wn|--
 
 Toepassingsserver uitvoeren
 
+### Opties
 
-### `--port`, `-p`
+Voor globale opties, zie [ Globale opties ](#global-options).
+
+#### `--port`, `-p`
 
 poort die u wilt gebruiken
 
 - Standaard: `9501`
 - Accepteert een waarde
 
-### `--background`, `-b`
+#### `--background`, `-b`
 
 markering achtergrondmodus
 
 - Standaard: `0`
 - Accepteert een waarde
 
-### `--workerNum`, `-wn`
+#### `--workerNum`, `-wn`
 
 aantal te starten werknemersprocessen
 
 - Standaard: `4`
 - Accepteert een waarde
 
-### `--dispatchMode`, `-dm`
+#### `--dispatchMode`, `-dm`
 
 wijze van het verzenden van verbindingen aan de arbeidersprocessen
 
 - Standaard: `3`
 - Accepteert een waarde
 
-### `--maxRequests`, `-mr`
+#### `--maxRequests`, `-mr`
 
 max. verzoeken voordat het arbeidersproces opnieuw wordt gestart
 
 - Standaard: `10000`
 - Accepteert een waarde
 
-### `--area`, `-a`
+#### `--area`, `-a`
 
 toepassingsservergebied
 
 - Standaard: `graphql`
 - Accepteert een waarde
 
-### `--magento-init-params`, `-mip`
+#### `--magento-init-params`, `-mip`
 
 magento bootstrap init params
 
 - Standaard: &quot;
 - Accepteert een waarde
 
-### `--maxWaitTime`, `-mwt`
+#### `--maxWaitTime`, `-mwt`
 
 hoe lang moet worden gewacht op workers na herladen (bijv. config verandering) alvorens hen te doden
 
 - Standaard: `3600`
 - Accepteert een waarde
 
-### `--state-monitor`
+#### `--state-monitor`
 
 Statusbewaking inschakelen. Gebruik dit alleen voor foutopsporingsstatusproblemen.
-
-- Standaard: `false`
-- Accepteert geen waarde
-
-### `--help`, `-h`
-
-Help weergeven voor de opgegeven opdracht. Wanneer geen bevel vertoningshulp voor het lijstbevel wordt gegeven
-
-- Standaard: `false`
-- Accepteert geen waarde
-
-### `--quiet`, `-q`
-
-Geen bericht uitvoeren
-
-- Standaard: `false`
-- Accepteert geen waarde
-
-### `--verbose`, `-v|-vv|-vvv`
-
-Verhoog de breedheid van berichten: 1 voor normale output, 2 voor meer uitgebreide output en 3 voor zuivert
-
-- Standaard: `false`
-- Accepteert geen waarde
-
-### `--version`, `-V`
-
-Deze toepassingsversie weergeven
-
-- Standaard: `false`
-- Accepteert geen waarde
-
-### `--ansi`
-
-ANSI-uitvoer forceren (of uitschakelen —no-ansi)
-
-- Accepteert geen waarde
-
-### `--no-ansi`
-
-De optie &quot;—ansi&quot; negeren
-
-- Standaard: `false`
-- Accepteert geen waarde
-
-### `--no-interaction`, `-n`
-
-Geen interactieve vraag stellen
 
 - Standaard: `false`
 - Accepteert geen waarde
@@ -7785,54 +2959,9 @@ bin/magento server:state-monitor:aggregate-output
 
 Samengevoegde output van staatsmonitor van ApplicationServer
 
+### Opties
 
-### `--help`, `-h`
-
-Help weergeven voor de opgegeven opdracht. Wanneer geen bevel vertoningshulp voor het lijstbevel wordt gegeven
-
-- Standaard: `false`
-- Accepteert geen waarde
-
-### `--quiet`, `-q`
-
-Geen bericht uitvoeren
-
-- Standaard: `false`
-- Accepteert geen waarde
-
-### `--verbose`, `-v|-vv|-vvv`
-
-Verhoog de breedheid van berichten: 1 voor normale output, 2 voor meer uitgebreide output en 3 voor zuivert
-
-- Standaard: `false`
-- Accepteert geen waarde
-
-### `--version`, `-V`
-
-Deze toepassingsversie weergeven
-
-- Standaard: `false`
-- Accepteert geen waarde
-
-### `--ansi`
-
-ANSI-uitvoer forceren (of uitschakelen —no-ansi)
-
-- Accepteert geen waarde
-
-### `--no-ansi`
-
-De optie &quot;—ansi&quot; negeren
-
-- Standaard: `false`
-- Accepteert geen waarde
-
-### `--no-interaction`, `-n`
-
-Geen interactieve vraag stellen
-
-- Standaard: `false`
-- Accepteert geen waarde
+Voor globale opties, zie [ Globale opties ](#global-options).
 
 
 ## `setup:backup`
@@ -7843,81 +2972,36 @@ bin/magento setup:backup [--code] [--media] [--db] [--magento-init-params MAGENT
 
 Maakt een back-up van de codebasis, media en database van Magento Application
 
+### Opties
 
-### `--code`
+Voor globale opties, zie [ Globale opties ](#global-options).
+
+#### `--code`
 
 Back-up maken van code- en configuratiebestanden (behalve tijdelijke bestanden)
 
 - Standaard: `false`
 - Accepteert geen waarde
 
-### `--media`
+#### `--media`
 
 Mediaback-up maken
 
 - Standaard: `false`
 - Accepteert geen waarde
 
-### `--db`
+#### `--db`
 
 Volledige back-up van de database maken
 
 - Standaard: `false`
 - Accepteert geen waarde
 
-### `--magento-init-params`
+#### `--magento-init-params`
 
 Voeg aan om het even welk bevel toe om Magento initialisatieparameters aan te passen bijvoorbeeld: &quot;MAGE_MODE=developer&amp;MAGE_DIRS [ basis ][path]=/var/www/example.com&amp;MAGE_DIRS [ geheime voorgeheugen ][path]=/var/tmp/cache&quot;
 
 - Vereist een waarde
-
-### `--help`, `-h`
-
-Help weergeven voor de opgegeven opdracht. Wanneer geen bevel vertoningshulp voor het lijstbevel wordt gegeven
-
-- Standaard: `false`
-- Accepteert geen waarde
-
-### `--quiet`, `-q`
-
-Geen bericht uitvoeren
-
-- Standaard: `false`
-- Accepteert geen waarde
-
-### `--verbose`, `-v|-vv|-vvv`
-
-Verhoog de breedheid van berichten: 1 voor normale output, 2 voor meer uitgebreide output en 3 voor zuivert
-
-- Standaard: `false`
-- Accepteert geen waarde
-
-### `--version`, `-V`
-
-Deze toepassingsversie weergeven
-
-- Standaard: `false`
-- Accepteert geen waarde
-
-### `--ansi`
-
-ANSI-uitvoer forceren (of uitschakelen —no-ansi)
-
-- Accepteert geen waarde
-
-### `--no-ansi`
-
-De optie &quot;—ansi&quot; negeren
-
-- Standaard: `false`
-- Accepteert geen waarde
-
-### `--no-interaction`, `-n`
-
-Geen interactieve vraag stellen
-
-- Standaard: `false`
-- Accepteert geen waarde
 
 
 ## `setup:config:set`
@@ -7928,647 +3012,602 @@ bin/magento setup:config:set [--enable-debug-logging ENABLE-DEBUG-LOGGING] [--en
 
 Creeert of wijzigt de plaatsingsconfiguratie
 
+### Opties
 
-### `--enable-debug-logging`
+Voor globale opties, zie [ Globale opties ](#global-options).
+
+#### `--enable-debug-logging`
 
 Foutopsporingsregistratie inschakelen
 
 - Vereist een waarde
 
-### `--enable-syslog-logging`
+#### `--enable-syslog-logging`
 
 syslog inschakelen
 
 - Vereist een waarde
 
-### `--backend-frontname`
+#### `--backend-frontname`
 
 Backend frontname (wordt automatisch gegenereerd als deze ontbreekt)
 
 - Vereist een waarde
 
-### `--remote-storage-driver`
+#### `--remote-storage-driver`
 
 Extern opslagstuurprogramma
 
 - Vereist een waarde
 
-### `--remote-storage-prefix`
+#### `--remote-storage-prefix`
 
 Voorvoegsel voor externe opslag
 
 - Standaard: &quot;
 - Vereist een waarde
 
-### `--remote-storage-endpoint`
+#### `--remote-storage-endpoint`
 
 Extern opslageindpunt
 
 - Vereist een waarde
 
-### `--remote-storage-bucket`
+#### `--remote-storage-bucket`
 
 Externe opslagemmer
 
 - Vereist een waarde
 
-### `--remote-storage-region`
+#### `--remote-storage-region`
 
 Externe opslagregio
 
 - Vereist een waarde
 
-### `--remote-storage-key`
+#### `--remote-storage-key`
 
 Toegangstoets externe opslag
 
 - Standaard: &quot;
 - Vereist een waarde
 
-### `--remote-storage-secret`
+#### `--remote-storage-secret`
 
 Sleutel voor geheim opslagruimte
 
 - Standaard: &quot;
 - Vereist een waarde
 
-### `--remote-storage-path-style`
+#### `--remote-storage-path-style`
 
 Padstijl voor externe opslag
 
 - Standaard: `0`
 - Vereist een waarde
 
-### `--id_salt`
+#### `--id_salt`
 
 GraphQl Salt
 
 - Vereist een waarde
 
-### `--config-async`
+#### `--config-async`
 
 Opslaan van asynchrone beheerconfiguratie inschakelen? 1 - Ja, 0 - Nee
 
 - Vereist een waarde
 
-### `--checkout-async`
+#### `--checkout-async`
 
 Afwisselende orderverwerking inschakelen? 1 - Ja, 0 - Nee
 
 - Vereist een waarde
 
-### `--amqp-host`
+#### `--amqp-host`
 
 Amqp-serverhost
 
 - Standaard: &quot;
 - Vereist een waarde
 
-### `--amqp-port`
+#### `--amqp-port`
 
 Amqp-serverpoort
 
 - Standaard: `5672`
 - Vereist een waarde
 
-### `--amqp-user`
+#### `--amqp-user`
 
 Gebruikersnaam Amqp-server
 
 - Standaard: &quot;
 - Vereist een waarde
 
-### `--amqp-password`
+#### `--amqp-password`
 
 Wachtwoord Amqp-server
 
 - Standaard: &quot;
 - Vereist een waarde
 
-### `--amqp-virtualhost`
+#### `--amqp-virtualhost`
 
 AMQP virtualhost
 
 - Standaard: `/`
 - Vereist een waarde
 
-### `--amqp-ssl`
+#### `--amqp-ssl`
 
 Amqp SSL
 
 - Standaard: &quot;
 - Vereist een waarde
 
-### `--amqp-ssl-options`
+#### `--amqp-ssl-options`
 
 Amqp SSL-opties (JSON)
 
 - Standaard: &quot;
 - Vereist een waarde
 
-### `--consumers-wait-for-messages`
+#### `--consumers-wait-for-messages`
 
 Moeten consumenten wachten op een bericht uit de wachtrij? 1 - Ja, 0 - Nee
 
 - Vereist een waarde
 
-### `--queue-default-connection`
+#### `--queue-default-connection`
 
 Standaardverbinding in wachtrij met berichten. Kan &#39;db&#39;, &#39;amqp&#39; of een aangepast wachtrijsysteem zijn. Het wachtrijsysteem moet worden geïnstalleerd en geconfigureerd, anders worden de berichten niet correct verwerkt.
 
 - Vereist een waarde
 
-### `--deferred-total-calculating`
+#### `--deferred-total-calculating`
 
 Uitgestelde totale berekening inschakelen? 1 - Ja, 0 - Nee
 
 - Vereist een waarde
 
-### `--key`
+#### `--key`
 
 Versleutelingssleutel
 
 - Vereist een waarde
 
-### `--db-host`
+#### `--db-host`
 
 Host databaseserver
 
 - Vereist een waarde
 
-### `--db-name`
+#### `--db-name`
 
 Databasenaam
 
 - Vereist een waarde
 
-### `--db-user`
+#### `--db-user`
 
 Gebruikersnaam databaseserver
 
 - Vereist een waarde
 
-### `--db-engine`
+#### `--db-engine`
 
 Database-server-engine
 
 - Vereist een waarde
 
-### `--db-password`
+#### `--db-password`
 
 Wachtwoord databaseserver
 
 - Vereist een waarde
 
-### `--db-prefix`
+#### `--db-prefix`
 
 Voorvoegsel databasetabel
 
 - Vereist een waarde
 
-### `--db-model`
+#### `--db-model`
 
 Databasetype
 
 - Vereist een waarde
 
-### `--db-init-statements`
+#### `--db-init-statements`
 
 Eerste set opdrachten database
 
 - Vereist een waarde
 
-### `--skip-db-validation`, `-s`
+#### `--skip-db-validation`, `-s`
 
 Indien opgegeven, wordt de db-verbindingsvalidatie overgeslagen
 
 - Standaard: `false`
 - Accepteert geen waarde
 
-### `--http-cache-hosts`
+#### `--http-cache-hosts`
 
 http-cachehosts
 
 - Vereist een waarde
 
-### `--db-ssl-key`
+#### `--db-ssl-key`
 
 Volledig pad van clientsleutelbestand om een databaseverbinding tot stand te brengen via SSL
 
 - Standaard: &quot;
 - Vereist een waarde
 
-### `--db-ssl-cert`
+#### `--db-ssl-cert`
 
 Volledig pad van clientcertificaatbestand om een databaseverbinding tot stand te brengen via SSL
 
 - Standaard: &quot;
 - Vereist een waarde
 
-### `--db-ssl-ca`
+#### `--db-ssl-ca`
 
 Volledig pad van servercertificaatbestand om een databaseverbinding tot stand te brengen via SSL
 
 - Standaard: &quot;
 - Vereist een waarde
 
-### `--db-ssl-verify`
+#### `--db-ssl-verify`
 
 Servercertificering controleren
 
 - Standaard: `false`
 - Accepteert geen waarde
 
-### `--session-save`
+#### `--session-save`
 
 Sessieopslaghandler
 
 - Vereist een waarde
 
-### `--session-save-redis-host`
+#### `--session-save-redis-host`
 
 Volledig - gekwalificeerde gastheernaam, IP adres, of absolute weg als het gebruiken van de contactdozen van UNIX
 
 - Vereist een waarde
 
-### `--session-save-redis-port`
+#### `--session-save-redis-port`
 
 Redis-poort voor luisteren naar server
 
 - Vereist een waarde
 
-### `--session-save-redis-password`
+#### `--session-save-redis-password`
 
 Wachtwoord voor opnieuw verzonden server
 
 - Vereist een waarde
 
-### `--session-save-redis-timeout`
+#### `--session-save-redis-timeout`
 
 Time-out verbinding, in seconden
 
 - Vereist een waarde
 
-### `--session-save-redis-persistent-id`
+#### `--session-save-redis-persistent-id`
 
 Unieke tekenreeks om permanente verbindingen in te schakelen
 
 - Vereist een waarde
 
-### `--session-save-redis-db`
+#### `--session-save-redis-db`
 
 Databasenummer van Redis
 
 - Vereist een waarde
 
-### `--session-save-redis-compression-threshold`
+#### `--session-save-redis-compression-threshold`
 
 Compressiedrempel opnieuw instellen
 
 - Vereist een waarde
 
-### `--session-save-redis-compression-lib`
+#### `--session-save-redis-compression-lib`
 
 Compressiebibliotheek opnieuw uitschakelen. Waarden: gzip (standaardwaarde), lzf, lz4, snappy
 
 - Vereist een waarde
 
-### `--session-save-redis-log-level`
+#### `--session-save-redis-log-level`
 
 Opnieuw schijflogniveau. Waarden: 0 (minst uitgebreid) tot 7 (meest uitgebreide)
 
 - Vereist een waarde
 
-### `--session-save-redis-max-concurrency`
+#### `--session-save-redis-max-concurrency`
 
 Maximum aantal processen dat op een slot op één zitting kan wachten
 
 - Vereist een waarde
 
-### `--session-save-redis-break-after-frontend`
+#### `--session-save-redis-break-after-frontend`
 
 Aantal seconden dat moet worden gewacht voordat wordt geprobeerd een vergrendeling voor een frontendsessie te verbreken
 
 - Vereist een waarde
 
-### `--session-save-redis-break-after-adminhtml`
+#### `--session-save-redis-break-after-adminhtml`
 
 Aantal seconden dat moet worden gewacht voordat wordt geprobeerd een vergrendeling voor beheersessie te verbreken
 
 - Vereist een waarde
 
-### `--session-save-redis-first-lifetime`
+#### `--session-save-redis-first-lifetime`
 
 Levensduur, in seconden, van sessie voor niet-bots bij eerste schrijven (gebruik 0 om uit te schakelen)
 
 - Vereist een waarde
 
-### `--session-save-redis-bot-first-lifetime`
+#### `--session-save-redis-bot-first-lifetime`
 
 Levensduur, in seconden, van sessie voor bots bij de eerste schrijfbewerking (gebruik 0 om uit te schakelen)
 
 - Vereist een waarde
 
-### `--session-save-redis-bot-lifetime`
+#### `--session-save-redis-bot-lifetime`
 
 De levensduur van de sessie voor bots bij volgende schrijvingen (gebruik 0 om uit te schakelen)
 
 - Vereist een waarde
 
-### `--session-save-redis-disable-locking`
+#### `--session-save-redis-disable-locking`
 
 Schakel vergrendeling opnieuw uit. Waarden: false (standaardwaarde), true
 
 - Vereist een waarde
 
-### `--session-save-redis-min-lifetime`
+#### `--session-save-redis-min-lifetime`
 
 Standaardsessielevensduur van Redis, in seconden
 
 - Vereist een waarde
 
-### `--session-save-redis-max-lifetime`
+#### `--session-save-redis-max-lifetime`
 
 Maximale sessielevensduur van Redis, in seconden
 
 - Vereist een waarde
 
-### `--session-save-redis-sentinel-master`
+#### `--session-save-redis-sentinel-master`
 
 Redis Sentinel Master
 
 - Vereist een waarde
 
-### `--session-save-redis-sentinel-servers`
+#### `--session-save-redis-sentinel-servers`
 
 Redis Sentinel-servers, gescheiden door komma&#39;s
 
 - Vereist een waarde
 
-### `--session-save-redis-sentinel-verify-master`
+#### `--session-save-redis-sentinel-verify-master`
 
 Redis Sentinel verify master. Waarden: false (standaardwaarde), true
 
 - Vereist een waarde
 
-### `--session-save-redis-sentinel-connect-retries`
+#### `--session-save-redis-sentinel-connect-retries`
 
 Redis Sentinel verbindt opnieuw pogingen.
 
 - Vereist een waarde
 
-### `--cache-backend`
+#### `--cache-backend`
 
 Standaardcachehandler
 
 - Vereist een waarde
 
-### `--cache-backend-redis-server`
+#### `--cache-backend-redis-server`
 
 Redis-server
 
 - Vereist een waarde
 
-### `--cache-backend-redis-db`
+#### `--cache-backend-redis-db`
 
 Databasenummer voor de cache
 
 - Vereist een waarde
 
-### `--cache-backend-redis-port`
+#### `--cache-backend-redis-port`
 
 Redis-poort voor luisteren naar server
 
 - Vereist een waarde
 
-### `--cache-backend-redis-password`
+#### `--cache-backend-redis-password`
 
 Wachtwoord voor opnieuw verzonden server
 
 - Vereist een waarde
 
-### `--cache-backend-redis-compress-data`
+#### `--cache-backend-redis-compress-data`
 
 Instellen op 0 om compressie uit te schakelen (standaard is 1, ingeschakeld)
 
 - Vereist een waarde
 
-### `--cache-backend-redis-compression-lib`
+#### `--cache-backend-redis-compression-lib`
 
 Compressiellib om [ snappy, lzf, l4z, zstd, gzip ] te gebruiken (verlaten leeg om automatisch te bepalen)
 
 - Vereist een waarde
 
-### `--cache-backend-redis-use-lua`
+#### `--cache-backend-redis-use-lua`
 
 Ingesteld op 1 om lua in te schakelen (standaardwaarde is 0, uitgeschakeld)
 
 - Vereist een waarde
 
-### `--cache-id-prefix`
+#### `--cache-id-prefix`
 
 ID-voorvoegsel voor cachesleutels
 
 - Vereist een waarde
 
-### `--allow-parallel-generation`
+#### `--allow-parallel-generation`
 
 Genereren van cache op een niet-blokkerende manier toestaan
 
 - Standaard: `false`
 - Accepteert geen waarde
 
-### `--page-cache`
+#### `--page-cache`
 
 Standaardcachehandler
 
 - Vereist een waarde
 
-### `--page-cache-redis-server`
+#### `--page-cache-redis-server`
 
 Redis-server
 
 - Vereist een waarde
 
-### `--page-cache-redis-db`
+#### `--page-cache-redis-db`
 
 Databasenummer voor de cache
 
 - Vereist een waarde
 
-### `--page-cache-redis-port`
+#### `--page-cache-redis-port`
 
 Redis-poort voor luisteren naar server
 
 - Vereist een waarde
 
-### `--page-cache-redis-password`
+#### `--page-cache-redis-password`
 
 Wachtwoord voor opnieuw verzonden server
 
 - Vereist een waarde
 
-### `--page-cache-redis-compress-data`
+#### `--page-cache-redis-compress-data`
 
 Ingesteld op 1 om de cache van de volledige pagina te comprimeren (gebruik 0 om uit te schakelen)
 
 - Vereist een waarde
 
-### `--page-cache-redis-compression-lib`
+#### `--page-cache-redis-compression-lib`
 
 De bibliotheek van de compressie om [ snappy, lzf, l4z, zstd, gzip ] te gebruiken (verlaten leeg om automatisch te bepalen)
 
 - Vereist een waarde
 
-### `--page-cache-id-prefix`
+#### `--page-cache-id-prefix`
 
 ID-voorvoegsel voor cachesleutels
 
 - Vereist een waarde
 
-### `--lock-provider`
+#### `--lock-provider`
 
 Naam provider vergrendelen
 
 - Vereist een waarde
 
-### `--lock-db-prefix`
+#### `--lock-db-prefix`
 
 Installatiespecifiek vergrendelingsvoorvoegsel om vergrendelingsconflicten te voorkomen
 
 - Vereist een waarde
 
-### `--lock-zookeeper-host`
+#### `--lock-zookeeper-host`
 
 Host en poort voor verbinding met Zookeeper-cluster. Bijvoorbeeld: 127.0.0.1:2181
 
 - Vereist een waarde
 
-### `--lock-zookeeper-path`
+#### `--lock-zookeeper-path`
 
 Het pad waar Zookeeper vergrendelingen opslaat. Het standaardpad is: /magento/locks
 
 - Vereist een waarde
 
-### `--lock-file-path`
+#### `--lock-file-path`
 
 Het pad waar de bestandsvergrendelingen worden opgeslagen.
 
 - Vereist een waarde
 
-### `--document-root-is-pub`
+#### `--document-root-is-pub`
 
 Markering om te tonen is dat Pub zich op de hoofdmap bevindt, kan alleen waar of onwaar zijn
 
 - Vereist een waarde
 
-### `--backpressure-logger`
+#### `--backpressure-logger`
 
 Handler voor achtergronddruklogger
 
 - Vereist een waarde
 
-### `--backpressure-logger-redis-server`
+#### `--backpressure-logger-redis-server`
 
 Redis-server
 
 - Vereist een waarde
 
-### `--backpressure-logger-redis-port`
+#### `--backpressure-logger-redis-port`
 
 Redis-poort voor luisteren naar server
 
 - Vereist een waarde
 
-### `--backpressure-logger-redis-timeout`
+#### `--backpressure-logger-redis-timeout`
 
 Time-out bij opnieuw verzonden server
 
 - Vereist een waarde
 
-### `--backpressure-logger-redis-persistent`
+#### `--backpressure-logger-redis-persistent`
 
 Redis persistent
 
 - Vereist een waarde
 
-### `--backpressure-logger-redis-db`
+#### `--backpressure-logger-redis-db`
 
 Redis db-nummer
 
 - Vereist een waarde
 
-### `--backpressure-logger-redis-password`
+#### `--backpressure-logger-redis-password`
 
 Wachtwoord voor opnieuw verzonden server
 
 - Vereist een waarde
 
-### `--backpressure-logger-redis-user`
+#### `--backpressure-logger-redis-user`
 
 Redis-servergebruiker
 
 - Vereist een waarde
 
-### `--backpressure-logger-id-prefix`
+#### `--backpressure-logger-id-prefix`
 
 ID-voorvoegsel voor toetsen
 
 - Vereist een waarde
 
-### `--magento-init-params`
+#### `--magento-init-params`
 
 Voeg aan om het even welk bevel toe om Magento initialisatieparameters aan te passen bijvoorbeeld: &quot;MAGE_MODE=developer&amp;MAGE_DIRS [ basis ][path]=/var/www/example.com&amp;MAGE_DIRS [ geheime voorgeheugen ][path]=/var/tmp/cache&quot;
 
 - Vereist een waarde
-
-### `--help`, `-h`
-
-Help weergeven voor de opgegeven opdracht. Wanneer geen bevel vertoningshulp voor het lijstbevel wordt gegeven
-
-- Standaard: `false`
-- Accepteert geen waarde
-
-### `--quiet`, `-q`
-
-Geen bericht uitvoeren
-
-- Standaard: `false`
-- Accepteert geen waarde
-
-### `--verbose`, `-v|-vv|-vvv`
-
-Verhoog de breedheid van berichten: 1 voor normale output, 2 voor meer uitgebreide output en 3 voor zuivert
-
-- Standaard: `false`
-- Accepteert geen waarde
-
-### `--version`, `-V`
-
-Deze toepassingsversie weergeven
-
-- Standaard: `false`
-- Accepteert geen waarde
-
-### `--ansi`
-
-ANSI-uitvoer forceren (of uitschakelen —no-ansi)
-
-- Accepteert geen waarde
-
-### `--no-ansi`
-
-De optie &quot;—ansi&quot; negeren
-
-- Standaard: `false`
-- Accepteert geen waarde
-
-### `--no-interaction`, `-n`
-
-Geen interactieve vraag stellen
-
-- Standaard: `false`
-- Accepteert geen waarde
 
 
 ## `setup:db-data:upgrade`
@@ -8579,60 +3618,15 @@ bin/magento setup:db-data:upgrade [--magento-init-params MAGENTO-INIT-PARAMS]
 
 Hiermee installeert en verbetert u gegevens in de database
 
+### Opties
 
-### `--magento-init-params`
+Voor globale opties, zie [ Globale opties ](#global-options).
+
+#### `--magento-init-params`
 
 Voeg aan om het even welk bevel toe om Magento initialisatieparameters aan te passen bijvoorbeeld: &quot;MAGE_MODE=developer&amp;MAGE_DIRS [ basis ][path]=/var/www/example.com&amp;MAGE_DIRS [ geheime voorgeheugen ][path]=/var/tmp/cache&quot;
 
 - Vereist een waarde
-
-### `--help`, `-h`
-
-Help weergeven voor de opgegeven opdracht. Wanneer geen bevel vertoningshulp voor het lijstbevel wordt gegeven
-
-- Standaard: `false`
-- Accepteert geen waarde
-
-### `--quiet`, `-q`
-
-Geen bericht uitvoeren
-
-- Standaard: `false`
-- Accepteert geen waarde
-
-### `--verbose`, `-v|-vv|-vvv`
-
-Verhoog de breedheid van berichten: 1 voor normale output, 2 voor meer uitgebreide output en 3 voor zuivert
-
-- Standaard: `false`
-- Accepteert geen waarde
-
-### `--version`, `-V`
-
-Deze toepassingsversie weergeven
-
-- Standaard: `false`
-- Accepteert geen waarde
-
-### `--ansi`
-
-ANSI-uitvoer forceren (of uitschakelen —no-ansi)
-
-- Accepteert geen waarde
-
-### `--no-ansi`
-
-De optie &quot;—ansi&quot; negeren
-
-- Standaard: `false`
-- Accepteert geen waarde
-
-### `--no-interaction`, `-n`
-
-Geen interactieve vraag stellen
-
-- Standaard: `false`
-- Accepteert geen waarde
 
 
 ## `setup:db-declaration:generate-patch`
@@ -8643,81 +3637,38 @@ bin/magento setup:db-declaration:generate-patch [--revertable [REVERTABLE]] [--t
 
 Patch genereren en in specifieke map plaatsen.
 
+### Argumenten
 
-
-### `module`
+#### `module`
 
 Modulenaam
 
 - Vereist
 
-### `patch`
+
+#### `patch`
 
 Patchnaam
 
 - Vereist
 
-### `--revertable`
+### Opties
+
+Voor globale opties, zie [ Globale opties ](#global-options).
+
+#### `--revertable`
 
 Controleer of de patch teruggedraaid kan worden.
 
 - Standaard: `false`
 - Accepteert een waarde
 
-### `--type`
+#### `--type`
 
 Ontdek welk type patch moet worden gegenereerd. Beschikbare waarden: `data`, `schema` .
 
 - Standaard: `data`
 - Accepteert een waarde
-
-### `--help`, `-h`
-
-Help weergeven voor de opgegeven opdracht. Wanneer geen bevel vertoningshulp voor het lijstbevel wordt gegeven
-
-- Standaard: `false`
-- Accepteert geen waarde
-
-### `--quiet`, `-q`
-
-Geen bericht uitvoeren
-
-- Standaard: `false`
-- Accepteert geen waarde
-
-### `--verbose`, `-v|-vv|-vvv`
-
-Verhoog de breedheid van berichten: 1 voor normale output, 2 voor meer uitgebreide output en 3 voor zuivert
-
-- Standaard: `false`
-- Accepteert geen waarde
-
-### `--version`, `-V`
-
-Deze toepassingsversie weergeven
-
-- Standaard: `false`
-- Accepteert geen waarde
-
-### `--ansi`
-
-ANSI-uitvoer forceren (of uitschakelen —no-ansi)
-
-- Accepteert geen waarde
-
-### `--no-ansi`
-
-De optie &quot;—ansi&quot; negeren
-
-- Standaard: `false`
-- Accepteert geen waarde
-
-### `--no-interaction`, `-n`
-
-Geen interactieve vraag stellen
-
-- Standaard: `false`
-- Accepteert geen waarde
 
 
 ## `setup:db-declaration:generate-whitelist`
@@ -8728,61 +3679,16 @@ bin/magento setup:db-declaration:generate-whitelist [--module-name [MODULE-NAME]
 
 Een whitelist genereren van tabellen en kolommen die door het installatieprogramma van de declaratie mogen worden bewerkt
 
+### Opties
 
-### `--module-name`
+Voor globale opties, zie [ Globale opties ](#global-options).
+
+#### `--module-name`
 
 Naam van de module waar whitelist wordt gegenereerd
 
 - Standaard: `all`
 - Accepteert een waarde
-
-### `--help`, `-h`
-
-Help weergeven voor de opgegeven opdracht. Wanneer geen bevel vertoningshulp voor het lijstbevel wordt gegeven
-
-- Standaard: `false`
-- Accepteert geen waarde
-
-### `--quiet`, `-q`
-
-Geen bericht uitvoeren
-
-- Standaard: `false`
-- Accepteert geen waarde
-
-### `--verbose`, `-v|-vv|-vvv`
-
-Verhoog de breedheid van berichten: 1 voor normale output, 2 voor meer uitgebreide output en 3 voor zuivert
-
-- Standaard: `false`
-- Accepteert geen waarde
-
-### `--version`, `-V`
-
-Deze toepassingsversie weergeven
-
-- Standaard: `false`
-- Accepteert geen waarde
-
-### `--ansi`
-
-ANSI-uitvoer forceren (of uitschakelen —no-ansi)
-
-- Accepteert geen waarde
-
-### `--no-ansi`
-
-De optie &quot;—ansi&quot; negeren
-
-- Standaard: `false`
-- Accepteert geen waarde
-
-### `--no-interaction`, `-n`
-
-Geen interactieve vraag stellen
-
-- Standaard: `false`
-- Accepteert geen waarde
 
 
 ## `setup:db-schema:add-slave`
@@ -8793,107 +3699,62 @@ bin/magento setup:db-schema:add-slave [--host HOST] [--dbname DBNAME] [--usernam
 
 Aan een betalingsaanhalingsteken gerelateerde tabellen verplaatsen naar een aparte databaseserver
 
+### Opties
 
-### `--host`
+Voor globale opties, zie [ Globale opties ](#global-options).
+
+#### `--host`
 
 Slave DB Server-host
 
 - Standaard: `localhost`
 - Vereist een waarde
 
-### `--dbname`
+#### `--dbname`
 
 Naam slave-database
 
 - Vereist een waarde
 
-### `--username`
+#### `--username`
 
 Gebruikersnaam slave DB
 
 - Standaard: `root`
 - Vereist een waarde
 
-### `--password`
+#### `--password`
 
 Wachtwoord slave DB
 
 - Accepteert een waarde
 
-### `--connection`
+#### `--connection`
 
 Naam slave-verbinding
 
 - Standaard: `default`
 - Accepteert een waarde
 
-### `--resource`
+#### `--resource`
 
 Naam slave-bron
 
 - Standaard: `default`
 - Accepteert een waarde
 
-### `--maxAllowedLag`
+#### `--maxAllowedLag`
 
 Max. toegestane lave-verbinding voor lave (in seconden)
 
 - Standaard: &quot;
 - Accepteert een waarde
 
-### `--magento-init-params`
+#### `--magento-init-params`
 
 Voeg aan om het even welk bevel toe om Magento initialisatieparameters aan te passen bijvoorbeeld: &quot;MAGE_MODE=developer&amp;MAGE_DIRS [ basis ][path]=/var/www/example.com&amp;MAGE_DIRS [ geheime voorgeheugen ][path]=/var/tmp/cache&quot;
 
 - Vereist een waarde
-
-### `--help`, `-h`
-
-Help weergeven voor de opgegeven opdracht. Wanneer geen bevel vertoningshulp voor het lijstbevel wordt gegeven
-
-- Standaard: `false`
-- Accepteert geen waarde
-
-### `--quiet`, `-q`
-
-Geen bericht uitvoeren
-
-- Standaard: `false`
-- Accepteert geen waarde
-
-### `--verbose`, `-v|-vv|-vvv`
-
-Verhoog de breedheid van berichten: 1 voor normale output, 2 voor meer uitgebreide output en 3 voor zuivert
-
-- Standaard: `false`
-- Accepteert geen waarde
-
-### `--version`, `-V`
-
-Deze toepassingsversie weergeven
-
-- Standaard: `false`
-- Accepteert geen waarde
-
-### `--ansi`
-
-ANSI-uitvoer forceren (of uitschakelen —no-ansi)
-
-- Accepteert geen waarde
-
-### `--no-ansi`
-
-De optie &quot;—ansi&quot; negeren
-
-- Standaard: `false`
-- Accepteert geen waarde
-
-### `--no-interaction`, `-n`
-
-Geen interactieve vraag stellen
-
-- Standaard: `false`
-- Accepteert geen waarde
 
 
 ## `setup:db-schema:split-quote`
@@ -8904,98 +3765,53 @@ bin/magento setup:db-schema:split-quote [--host HOST] [--dbname DBNAME] [--usern
 
 Verplaats de aan uitchecken gerelateerde tabellen naar een aparte DB-server. Vervangen vanaf 2.4.2 en verwijderd
 
+### Opties
 
-### `--host`
+Voor globale opties, zie [ Globale opties ](#global-options).
+
+#### `--host`
 
 Uitchecken DB Server-host
 
 - Vereist een waarde
 
-### `--dbname`
+#### `--dbname`
 
 Database-naam uitchecken
 
 - Vereist een waarde
 
-### `--username`
+#### `--username`
 
 Gebruikersnaam database voor uitchecken
 
 - Vereist een waarde
 
-### `--password`
+#### `--password`
 
 Wachtwoord database voor afhandeling
 
 - Accepteert een waarde
 
-### `--connection`
+#### `--connection`
 
 Verbindingsnaam uitchecken
 
 - Standaard: `checkout`
 - Accepteert een waarde
 
-### `--resource`
+#### `--resource`
 
 Naam van resource voor uitchecken
 
 - Standaard: `checkout`
 - Accepteert een waarde
 
-### `--magento-init-params`
+#### `--magento-init-params`
 
 Voeg aan om het even welk bevel toe om Magento initialisatieparameters aan te passen bijvoorbeeld: &quot;MAGE_MODE=developer&amp;MAGE_DIRS [ basis ][path]=/var/www/example.com&amp;MAGE_DIRS [ geheime voorgeheugen ][path]=/var/tmp/cache&quot;
 
 - Vereist een waarde
-
-### `--help`, `-h`
-
-Help weergeven voor de opgegeven opdracht. Wanneer geen bevel vertoningshulp voor het lijstbevel wordt gegeven
-
-- Standaard: `false`
-- Accepteert geen waarde
-
-### `--quiet`, `-q`
-
-Geen bericht uitvoeren
-
-- Standaard: `false`
-- Accepteert geen waarde
-
-### `--verbose`, `-v|-vv|-vvv`
-
-Verhoog de breedheid van berichten: 1 voor normale output, 2 voor meer uitgebreide output en 3 voor zuivert
-
-- Standaard: `false`
-- Accepteert geen waarde
-
-### `--version`, `-V`
-
-Deze toepassingsversie weergeven
-
-- Standaard: `false`
-- Accepteert geen waarde
-
-### `--ansi`
-
-ANSI-uitvoer forceren (of uitschakelen —no-ansi)
-
-- Accepteert geen waarde
-
-### `--no-ansi`
-
-De optie &quot;—ansi&quot; negeren
-
-- Standaard: `false`
-- Accepteert geen waarde
-
-### `--no-interaction`, `-n`
-
-Geen interactieve vraag stellen
-
-- Standaard: `false`
-- Accepteert geen waarde
 
 
 ## `setup:db-schema:split-sales`
@@ -9006,98 +3822,53 @@ bin/magento setup:db-schema:split-sales [--host HOST] [--dbname DBNAME] [--usern
 
 Verplaats verkoopgerelateerde tabellen naar een aparte DB-server. Vervangen vanaf 2.4.2 en verwijderd
 
+### Opties
 
-### `--host`
+Voor globale opties, zie [ Globale opties ](#global-options).
+
+#### `--host`
 
 Verkoop DB Server-host
 
 - Vereist een waarde
 
-### `--dbname`
+#### `--dbname`
 
 Naam verkoopdatabase
 
 - Vereist een waarde
 
-### `--username`
+#### `--username`
 
 Gebruikersnaam verkoopdatabase
 
 - Vereist een waarde
 
-### `--password`
+#### `--password`
 
 Gebruikerswachtwoord verkoopdatabase
 
 - Accepteert een waarde
 
-### `--connection`
+#### `--connection`
 
 Naam van verkoopverbinding
 
 - Standaard: `sales`
 - Accepteert een waarde
 
-### `--resource`
+#### `--resource`
 
 Naam verkoopbron
 
 - Standaard: `sales`
 - Accepteert een waarde
 
-### `--magento-init-params`
+#### `--magento-init-params`
 
 Voeg aan om het even welk bevel toe om Magento initialisatieparameters aan te passen bijvoorbeeld: &quot;MAGE_MODE=developer&amp;MAGE_DIRS [ basis ][path]=/var/www/example.com&amp;MAGE_DIRS [ geheime voorgeheugen ][path]=/var/tmp/cache&quot;
 
 - Vereist een waarde
-
-### `--help`, `-h`
-
-Help weergeven voor de opgegeven opdracht. Wanneer geen bevel vertoningshulp voor het lijstbevel wordt gegeven
-
-- Standaard: `false`
-- Accepteert geen waarde
-
-### `--quiet`, `-q`
-
-Geen bericht uitvoeren
-
-- Standaard: `false`
-- Accepteert geen waarde
-
-### `--verbose`, `-v|-vv|-vvv`
-
-Verhoog de breedheid van berichten: 1 voor normale output, 2 voor meer uitgebreide output en 3 voor zuivert
-
-- Standaard: `false`
-- Accepteert geen waarde
-
-### `--version`, `-V`
-
-Deze toepassingsversie weergeven
-
-- Standaard: `false`
-- Accepteert geen waarde
-
-### `--ansi`
-
-ANSI-uitvoer forceren (of uitschakelen —no-ansi)
-
-- Accepteert geen waarde
-
-### `--no-ansi`
-
-De optie &quot;—ansi&quot; negeren
-
-- Standaard: `false`
-- Accepteert geen waarde
-
-### `--no-interaction`, `-n`
-
-Geen interactieve vraag stellen
-
-- Standaard: `false`
-- Accepteert geen waarde
 
 
 ## `setup:db-schema:upgrade`
@@ -9108,67 +3879,22 @@ bin/magento setup:db-schema:upgrade [--convert-old-scripts [CONVERT-OLD-SCRIPTS]
 
 Installeert en verbetert het schema van DB
 
+### Opties
 
-### `--convert-old-scripts`
+Voor globale opties, zie [ Globale opties ](#global-options).
+
+#### `--convert-old-scripts`
 
 Hiermee kunt u oude scripts (InstallSchema, UpgradeSchema) converteren naar de indeling db_schema.xml
 
 - Standaard: `false`
 - Accepteert een waarde
 
-### `--magento-init-params`
+#### `--magento-init-params`
 
 Voeg aan om het even welk bevel toe om Magento initialisatieparameters aan te passen bijvoorbeeld: &quot;MAGE_MODE=developer&amp;MAGE_DIRS [ basis ][path]=/var/www/example.com&amp;MAGE_DIRS [ geheime voorgeheugen ][path]=/var/tmp/cache&quot;
 
 - Vereist een waarde
-
-### `--help`, `-h`
-
-Help weergeven voor de opgegeven opdracht. Wanneer geen bevel vertoningshulp voor het lijstbevel wordt gegeven
-
-- Standaard: `false`
-- Accepteert geen waarde
-
-### `--quiet`, `-q`
-
-Geen bericht uitvoeren
-
-- Standaard: `false`
-- Accepteert geen waarde
-
-### `--verbose`, `-v|-vv|-vvv`
-
-Verhoog de breedheid van berichten: 1 voor normale output, 2 voor meer uitgebreide output en 3 voor zuivert
-
-- Standaard: `false`
-- Accepteert geen waarde
-
-### `--version`, `-V`
-
-Deze toepassingsversie weergeven
-
-- Standaard: `false`
-- Accepteert geen waarde
-
-### `--ansi`
-
-ANSI-uitvoer forceren (of uitschakelen —no-ansi)
-
-- Accepteert geen waarde
-
-### `--no-ansi`
-
-De optie &quot;—ansi&quot; negeren
-
-- Standaard: `false`
-- Accepteert geen waarde
-
-### `--no-interaction`, `-n`
-
-Geen interactieve vraag stellen
-
-- Standaard: `false`
-- Accepteert geen waarde
 
 
 ## `setup:db:status`
@@ -9179,60 +3905,15 @@ bin/magento setup:db:status [--magento-init-params MAGENTO-INIT-PARAMS]
 
 Controleert of het schema of de gegevens van DB verbetering vereisen
 
+### Opties
 
-### `--magento-init-params`
+Voor globale opties, zie [ Globale opties ](#global-options).
+
+#### `--magento-init-params`
 
 Voeg aan om het even welk bevel toe om Magento initialisatieparameters aan te passen bijvoorbeeld: &quot;MAGE_MODE=developer&amp;MAGE_DIRS [ basis ][path]=/var/www/example.com&amp;MAGE_DIRS [ geheime voorgeheugen ][path]=/var/tmp/cache&quot;
 
 - Vereist een waarde
-
-### `--help`, `-h`
-
-Help weergeven voor de opgegeven opdracht. Wanneer geen bevel vertoningshulp voor het lijstbevel wordt gegeven
-
-- Standaard: `false`
-- Accepteert geen waarde
-
-### `--quiet`, `-q`
-
-Geen bericht uitvoeren
-
-- Standaard: `false`
-- Accepteert geen waarde
-
-### `--verbose`, `-v|-vv|-vvv`
-
-Verhoog de breedheid van berichten: 1 voor normale output, 2 voor meer uitgebreide output en 3 voor zuivert
-
-- Standaard: `false`
-- Accepteert geen waarde
-
-### `--version`, `-V`
-
-Deze toepassingsversie weergeven
-
-- Standaard: `false`
-- Accepteert geen waarde
-
-### `--ansi`
-
-ANSI-uitvoer forceren (of uitschakelen —no-ansi)
-
-- Accepteert geen waarde
-
-### `--no-ansi`
-
-De optie &quot;—ansi&quot; negeren
-
-- Standaard: `false`
-- Accepteert geen waarde
-
-### `--no-interaction`, `-n`
-
-Geen interactieve vraag stellen
-
-- Standaard: `false`
-- Accepteert geen waarde
 
 
 ## `setup:di:compile`
@@ -9243,54 +3924,9 @@ bin/magento setup:di:compile
 
 Genereert DI-configuratie en alle ontbrekende klassen die automatisch kunnen worden gegenereerd
 
+### Opties
 
-### `--help`, `-h`
-
-Help weergeven voor de opgegeven opdracht. Wanneer geen bevel vertoningshulp voor het lijstbevel wordt gegeven
-
-- Standaard: `false`
-- Accepteert geen waarde
-
-### `--quiet`, `-q`
-
-Geen bericht uitvoeren
-
-- Standaard: `false`
-- Accepteert geen waarde
-
-### `--verbose`, `-v|-vv|-vvv`
-
-Verhoog de breedheid van berichten: 1 voor normale output, 2 voor meer uitgebreide output en 3 voor zuivert
-
-- Standaard: `false`
-- Accepteert geen waarde
-
-### `--version`, `-V`
-
-Deze toepassingsversie weergeven
-
-- Standaard: `false`
-- Accepteert geen waarde
-
-### `--ansi`
-
-ANSI-uitvoer forceren (of uitschakelen —no-ansi)
-
-- Accepteert geen waarde
-
-### `--no-ansi`
-
-De optie &quot;—ansi&quot; negeren
-
-- Standaard: `false`
-- Accepteert geen waarde
-
-### `--no-interaction`, `-n`
-
-Geen interactieve vraag stellen
-
-- Standaard: `false`
-- Accepteert geen waarde
+Voor globale opties, zie [ Globale opties ](#global-options).
 
 
 ## `setup:install`
@@ -9301,886 +3937,841 @@ bin/magento setup:install [--enable-debug-logging ENABLE-DEBUG-LOGGING] [--enabl
 
 Hiermee wordt de toepassing Magento geïnstalleerd
 
+### Opties
 
-### `--enable-debug-logging`
+Voor globale opties, zie [ Globale opties ](#global-options).
+
+#### `--enable-debug-logging`
 
 Foutopsporingsregistratie inschakelen
 
 - Vereist een waarde
 
-### `--enable-syslog-logging`
+#### `--enable-syslog-logging`
 
 syslog inschakelen
 
 - Vereist een waarde
 
-### `--backend-frontname`
+#### `--backend-frontname`
 
 Backend frontname (wordt automatisch gegenereerd als deze ontbreekt)
 
 - Vereist een waarde
 
-### `--remote-storage-driver`
+#### `--remote-storage-driver`
 
 Extern opslagstuurprogramma
 
 - Vereist een waarde
 
-### `--remote-storage-prefix`
+#### `--remote-storage-prefix`
 
 Voorvoegsel voor externe opslag
 
 - Standaard: &quot;
 - Vereist een waarde
 
-### `--remote-storage-endpoint`
+#### `--remote-storage-endpoint`
 
 Extern opslageindpunt
 
 - Vereist een waarde
 
-### `--remote-storage-bucket`
+#### `--remote-storage-bucket`
 
 Externe opslagemmer
 
 - Vereist een waarde
 
-### `--remote-storage-region`
+#### `--remote-storage-region`
 
 Externe opslagregio
 
 - Vereist een waarde
 
-### `--remote-storage-key`
+#### `--remote-storage-key`
 
 Toegangstoets externe opslag
 
 - Standaard: &quot;
 - Vereist een waarde
 
-### `--remote-storage-secret`
+#### `--remote-storage-secret`
 
 Sleutel voor geheim opslagruimte
 
 - Standaard: &quot;
 - Vereist een waarde
 
-### `--remote-storage-path-style`
+#### `--remote-storage-path-style`
 
 Padstijl voor externe opslag
 
 - Standaard: `0`
 - Vereist een waarde
 
-### `--id_salt`
+#### `--id_salt`
 
 GraphQl Salt
 
 - Vereist een waarde
 
-### `--config-async`
+#### `--config-async`
 
 Opslaan van asynchrone beheerconfiguratie inschakelen? 1 - Ja, 0 - Nee
 
 - Vereist een waarde
 
-### `--checkout-async`
+#### `--checkout-async`
 
 Afwisselende orderverwerking inschakelen? 1 - Ja, 0 - Nee
 
 - Vereist een waarde
 
-### `--amqp-host`
+#### `--amqp-host`
 
 Amqp-serverhost
 
 - Standaard: &quot;
 - Vereist een waarde
 
-### `--amqp-port`
+#### `--amqp-port`
 
 Amqp-serverpoort
 
 - Standaard: `5672`
 - Vereist een waarde
 
-### `--amqp-user`
+#### `--amqp-user`
 
 Gebruikersnaam Amqp-server
 
 - Standaard: &quot;
 - Vereist een waarde
 
-### `--amqp-password`
+#### `--amqp-password`
 
 Wachtwoord Amqp-server
 
 - Standaard: &quot;
 - Vereist een waarde
 
-### `--amqp-virtualhost`
+#### `--amqp-virtualhost`
 
 AMQP virtualhost
 
 - Standaard: `/`
 - Vereist een waarde
 
-### `--amqp-ssl`
+#### `--amqp-ssl`
 
 Amqp SSL
 
 - Standaard: &quot;
 - Vereist een waarde
 
-### `--amqp-ssl-options`
+#### `--amqp-ssl-options`
 
 Amqp SSL-opties (JSON)
 
 - Standaard: &quot;
 - Vereist een waarde
 
-### `--consumers-wait-for-messages`
+#### `--consumers-wait-for-messages`
 
 Moeten consumenten wachten op een bericht uit de wachtrij? 1 - Ja, 0 - Nee
 
 - Vereist een waarde
 
-### `--queue-default-connection`
+#### `--queue-default-connection`
 
 Standaardverbinding in wachtrij met berichten. Kan &#39;db&#39;, &#39;amqp&#39; of een aangepast wachtrijsysteem zijn. Het wachtrijsysteem moet worden geïnstalleerd en geconfigureerd, anders worden de berichten niet correct verwerkt.
 
 - Vereist een waarde
 
-### `--deferred-total-calculating`
+#### `--deferred-total-calculating`
 
 Uitgestelde totale berekening inschakelen? 1 - Ja, 0 - Nee
 
 - Vereist een waarde
 
-### `--key`
+#### `--key`
 
 Versleutelingssleutel
 
 - Vereist een waarde
 
-### `--db-host`
+#### `--db-host`
 
 Host databaseserver
 
 - Vereist een waarde
 
-### `--db-name`
+#### `--db-name`
 
 Databasenaam
 
 - Vereist een waarde
 
-### `--db-user`
+#### `--db-user`
 
 Gebruikersnaam databaseserver
 
 - Vereist een waarde
 
-### `--db-engine`
+#### `--db-engine`
 
 Database-server-engine
 
 - Vereist een waarde
 
-### `--db-password`
+#### `--db-password`
 
 Wachtwoord databaseserver
 
 - Vereist een waarde
 
-### `--db-prefix`
+#### `--db-prefix`
 
 Voorvoegsel databasetabel
 
 - Vereist een waarde
 
-### `--db-model`
+#### `--db-model`
 
 Databasetype
 
 - Vereist een waarde
 
-### `--db-init-statements`
+#### `--db-init-statements`
 
 Eerste set opdrachten database
 
 - Vereist een waarde
 
-### `--skip-db-validation`, `-s`
+#### `--skip-db-validation`, `-s`
 
 Indien opgegeven, wordt de db-verbindingsvalidatie overgeslagen
 
 - Standaard: `false`
 - Accepteert geen waarde
 
-### `--http-cache-hosts`
+#### `--http-cache-hosts`
 
 http-cachehosts
 
 - Vereist een waarde
 
-### `--db-ssl-key`
+#### `--db-ssl-key`
 
 Volledig pad van clientsleutelbestand om een databaseverbinding tot stand te brengen via SSL
 
 - Standaard: &quot;
 - Vereist een waarde
 
-### `--db-ssl-cert`
+#### `--db-ssl-cert`
 
 Volledig pad van clientcertificaatbestand om een databaseverbinding tot stand te brengen via SSL
 
 - Standaard: &quot;
 - Vereist een waarde
 
-### `--db-ssl-ca`
+#### `--db-ssl-ca`
 
 Volledig pad van servercertificaatbestand om een databaseverbinding tot stand te brengen via SSL
 
 - Standaard: &quot;
 - Vereist een waarde
 
-### `--db-ssl-verify`
+#### `--db-ssl-verify`
 
 Servercertificering controleren
 
 - Standaard: `false`
 - Accepteert geen waarde
 
-### `--session-save`
+#### `--session-save`
 
 Sessieopslaghandler
 
 - Vereist een waarde
 
-### `--session-save-redis-host`
+#### `--session-save-redis-host`
 
 Volledig - gekwalificeerde gastheernaam, IP adres, of absolute weg als het gebruiken van de contactdozen van UNIX
 
 - Vereist een waarde
 
-### `--session-save-redis-port`
+#### `--session-save-redis-port`
 
 Redis-poort voor luisteren naar server
 
 - Vereist een waarde
 
-### `--session-save-redis-password`
+#### `--session-save-redis-password`
 
 Wachtwoord voor opnieuw verzonden server
 
 - Vereist een waarde
 
-### `--session-save-redis-timeout`
+#### `--session-save-redis-timeout`
 
 Time-out verbinding, in seconden
 
 - Vereist een waarde
 
-### `--session-save-redis-persistent-id`
+#### `--session-save-redis-persistent-id`
 
 Unieke tekenreeks om permanente verbindingen in te schakelen
 
 - Vereist een waarde
 
-### `--session-save-redis-db`
+#### `--session-save-redis-db`
 
 Databasenummer van Redis
 
 - Vereist een waarde
 
-### `--session-save-redis-compression-threshold`
+#### `--session-save-redis-compression-threshold`
 
 Compressiedrempel opnieuw instellen
 
 - Vereist een waarde
 
-### `--session-save-redis-compression-lib`
+#### `--session-save-redis-compression-lib`
 
 Compressiebibliotheek opnieuw uitschakelen. Waarden: gzip (standaardwaarde), lzf, lz4, snappy
 
 - Vereist een waarde
 
-### `--session-save-redis-log-level`
+#### `--session-save-redis-log-level`
 
 Opnieuw schijflogniveau. Waarden: 0 (minst uitgebreid) tot 7 (meest uitgebreide)
 
 - Vereist een waarde
 
-### `--session-save-redis-max-concurrency`
+#### `--session-save-redis-max-concurrency`
 
 Maximum aantal processen dat op een slot op één zitting kan wachten
 
 - Vereist een waarde
 
-### `--session-save-redis-break-after-frontend`
+#### `--session-save-redis-break-after-frontend`
 
 Aantal seconden dat moet worden gewacht voordat wordt geprobeerd een vergrendeling voor een frontendsessie te verbreken
 
 - Vereist een waarde
 
-### `--session-save-redis-break-after-adminhtml`
+#### `--session-save-redis-break-after-adminhtml`
 
 Aantal seconden dat moet worden gewacht voordat wordt geprobeerd een vergrendeling voor beheersessie te verbreken
 
 - Vereist een waarde
 
-### `--session-save-redis-first-lifetime`
+#### `--session-save-redis-first-lifetime`
 
 Levensduur, in seconden, van sessie voor niet-bots bij eerste schrijven (gebruik 0 om uit te schakelen)
 
 - Vereist een waarde
 
-### `--session-save-redis-bot-first-lifetime`
+#### `--session-save-redis-bot-first-lifetime`
 
 Levensduur, in seconden, van sessie voor bots bij de eerste schrijfbewerking (gebruik 0 om uit te schakelen)
 
 - Vereist een waarde
 
-### `--session-save-redis-bot-lifetime`
+#### `--session-save-redis-bot-lifetime`
 
 De levensduur van de sessie voor bots bij volgende schrijvingen (gebruik 0 om uit te schakelen)
 
 - Vereist een waarde
 
-### `--session-save-redis-disable-locking`
+#### `--session-save-redis-disable-locking`
 
 Schakel vergrendeling opnieuw uit. Waarden: false (standaardwaarde), true
 
 - Vereist een waarde
 
-### `--session-save-redis-min-lifetime`
+#### `--session-save-redis-min-lifetime`
 
 Standaardsessielevensduur van Redis, in seconden
 
 - Vereist een waarde
 
-### `--session-save-redis-max-lifetime`
+#### `--session-save-redis-max-lifetime`
 
 Maximale sessielevensduur van Redis, in seconden
 
 - Vereist een waarde
 
-### `--session-save-redis-sentinel-master`
+#### `--session-save-redis-sentinel-master`
 
 Redis Sentinel Master
 
 - Vereist een waarde
 
-### `--session-save-redis-sentinel-servers`
+#### `--session-save-redis-sentinel-servers`
 
 Redis Sentinel-servers, gescheiden door komma&#39;s
 
 - Vereist een waarde
 
-### `--session-save-redis-sentinel-verify-master`
+#### `--session-save-redis-sentinel-verify-master`
 
 Redis Sentinel verify master. Waarden: false (standaardwaarde), true
 
 - Vereist een waarde
 
-### `--session-save-redis-sentinel-connect-retries`
+#### `--session-save-redis-sentinel-connect-retries`
 
 Redis Sentinel verbindt opnieuw pogingen.
 
 - Vereist een waarde
 
-### `--cache-backend`
+#### `--cache-backend`
 
 Standaardcachehandler
 
 - Vereist een waarde
 
-### `--cache-backend-redis-server`
+#### `--cache-backend-redis-server`
 
 Redis-server
 
 - Vereist een waarde
 
-### `--cache-backend-redis-db`
+#### `--cache-backend-redis-db`
 
 Databasenummer voor de cache
 
 - Vereist een waarde
 
-### `--cache-backend-redis-port`
+#### `--cache-backend-redis-port`
 
 Redis-poort voor luisteren naar server
 
 - Vereist een waarde
 
-### `--cache-backend-redis-password`
+#### `--cache-backend-redis-password`
 
 Wachtwoord voor opnieuw verzonden server
 
 - Vereist een waarde
 
-### `--cache-backend-redis-compress-data`
+#### `--cache-backend-redis-compress-data`
 
 Instellen op 0 om compressie uit te schakelen (standaard is 1, ingeschakeld)
 
 - Vereist een waarde
 
-### `--cache-backend-redis-compression-lib`
+#### `--cache-backend-redis-compression-lib`
 
 Compressiellib om [ snappy, lzf, l4z, zstd, gzip ] te gebruiken (verlaten leeg om automatisch te bepalen)
 
 - Vereist een waarde
 
-### `--cache-backend-redis-use-lua`
+#### `--cache-backend-redis-use-lua`
 
 Ingesteld op 1 om lua in te schakelen (standaardwaarde is 0, uitgeschakeld)
 
 - Vereist een waarde
 
-### `--cache-id-prefix`
+#### `--cache-id-prefix`
 
 ID-voorvoegsel voor cachesleutels
 
 - Vereist een waarde
 
-### `--allow-parallel-generation`
+#### `--allow-parallel-generation`
 
 Genereren van cache op een niet-blokkerende manier toestaan
 
 - Standaard: `false`
 - Accepteert geen waarde
 
-### `--page-cache`
+#### `--page-cache`
 
 Standaardcachehandler
 
 - Vereist een waarde
 
-### `--page-cache-redis-server`
+#### `--page-cache-redis-server`
 
 Redis-server
 
 - Vereist een waarde
 
-### `--page-cache-redis-db`
+#### `--page-cache-redis-db`
 
 Databasenummer voor de cache
 
 - Vereist een waarde
 
-### `--page-cache-redis-port`
+#### `--page-cache-redis-port`
 
 Redis-poort voor luisteren naar server
 
 - Vereist een waarde
 
-### `--page-cache-redis-password`
+#### `--page-cache-redis-password`
 
 Wachtwoord voor opnieuw verzonden server
 
 - Vereist een waarde
 
-### `--page-cache-redis-compress-data`
+#### `--page-cache-redis-compress-data`
 
 Ingesteld op 1 om de cache van de volledige pagina te comprimeren (gebruik 0 om uit te schakelen)
 
 - Vereist een waarde
 
-### `--page-cache-redis-compression-lib`
+#### `--page-cache-redis-compression-lib`
 
 De bibliotheek van de compressie om [ snappy, lzf, l4z, zstd, gzip ] te gebruiken (verlaten leeg om automatisch te bepalen)
 
 - Vereist een waarde
 
-### `--page-cache-id-prefix`
+#### `--page-cache-id-prefix`
 
 ID-voorvoegsel voor cachesleutels
 
 - Vereist een waarde
 
-### `--lock-provider`
+#### `--lock-provider`
 
 Naam provider vergrendelen
 
 - Vereist een waarde
 
-### `--lock-db-prefix`
+#### `--lock-db-prefix`
 
 Installatiespecifiek vergrendelingsvoorvoegsel om vergrendelingsconflicten te voorkomen
 
 - Vereist een waarde
 
-### `--lock-zookeeper-host`
+#### `--lock-zookeeper-host`
 
 Host en poort voor verbinding met Zookeeper-cluster. Bijvoorbeeld: 127.0.0.1:2181
 
 - Vereist een waarde
 
-### `--lock-zookeeper-path`
+#### `--lock-zookeeper-path`
 
 Het pad waar Zookeeper vergrendelingen opslaat. Het standaardpad is: /magento/locks
 
 - Vereist een waarde
 
-### `--lock-file-path`
+#### `--lock-file-path`
 
 Het pad waar de bestandsvergrendelingen worden opgeslagen.
 
 - Vereist een waarde
 
-### `--document-root-is-pub`
+#### `--document-root-is-pub`
 
 Markering om te tonen is dat Pub zich op de hoofdmap bevindt, kan alleen waar of onwaar zijn
 
 - Vereist een waarde
 
-### `--backpressure-logger`
+#### `--backpressure-logger`
 
 Handler voor achtergronddruklogger
 
 - Vereist een waarde
 
-### `--backpressure-logger-redis-server`
+#### `--backpressure-logger-redis-server`
 
 Redis-server
 
 - Vereist een waarde
 
-### `--backpressure-logger-redis-port`
+#### `--backpressure-logger-redis-port`
 
 Redis-poort voor luisteren naar server
 
 - Vereist een waarde
 
-### `--backpressure-logger-redis-timeout`
+#### `--backpressure-logger-redis-timeout`
 
 Time-out bij opnieuw verzonden server
 
 - Vereist een waarde
 
-### `--backpressure-logger-redis-persistent`
+#### `--backpressure-logger-redis-persistent`
 
 Redis persistent
 
 - Vereist een waarde
 
-### `--backpressure-logger-redis-db`
+#### `--backpressure-logger-redis-db`
 
 Redis db-nummer
 
 - Vereist een waarde
 
-### `--backpressure-logger-redis-password`
+#### `--backpressure-logger-redis-password`
 
 Wachtwoord voor opnieuw verzonden server
 
 - Vereist een waarde
 
-### `--backpressure-logger-redis-user`
+#### `--backpressure-logger-redis-user`
 
 Redis-servergebruiker
 
 - Vereist een waarde
 
-### `--backpressure-logger-id-prefix`
+#### `--backpressure-logger-id-prefix`
 
 ID-voorvoegsel voor toetsen
 
 - Vereist een waarde
 
-### `--base-url`
+#### `--base-url`
 
 URL waar de winkel beschikbaar moet zijn. Vervangen, gebruik config:reeks met weg web/unsecure/base_url
 
 - Vereist een waarde
 
-### `--language`
+#### `--language`
 
 Standaardtaalcode. Vervangen, gebruik config:reeks met weg algemeen/landinstelling/code
 
 - Vereist een waarde
 
-### `--timezone`
+#### `--timezone`
 
 Standaardtijdzonecode. Vervangen, gebruik config:reeks met weg algemeen/landinstelling/timezone
 
 - Vereist een waarde
 
-### `--currency`
+#### `--currency`
 
 Standaardvalutacode. Vervangen, configuratie gebruiken:instellen met padvaluta/opties/basis, valuta/opties/standaard en valuta/opties/allow
 
 - Vereist een waarde
 
-### `--use-rewrites`
+#### `--use-rewrites`
 
 Herschrijven gebruiken. Vervangen, gebruik config:reeks met weg web/seo/use_rewrites
 
 - Vereist een waarde
 
-### `--use-secure`
+#### `--use-secure`
 
 Gebruik veilige URL&#39;s. Schakel deze optie alleen in als SSL beschikbaar is. Vervangen, gebruik config:reeks met weg web/secure/use_in_frontend
 
 - Vereist een waarde
 
-### `--base-url-secure`
+#### `--base-url-secure`
 
 Basis-URL voor SSL-verbinding Vervangen, gebruik config:reeks met weg web/secure/base_url
 
 - Vereist een waarde
 
-### `--use-secure-admin`
+#### `--use-secure-admin`
 
 Voer de beheerdersinterface uit met SSL. Vervangen, gebruik config:reeks met weg web/secure/use_in_adminhtml
 
 - Vereist een waarde
 
-### `--admin-use-security-key`
+#### `--admin-use-security-key`
 
 Of een functie &#39;beveiligingssleutel&#39; moet worden gebruikt in URL&#39;s en formulieren voor beheer van Magento&#39;s. Vervangen, gebruik config:reeks met weg admin/security/use_form_key
 
 - Vereist een waarde
 
-### `--admin-user`
+#### `--admin-user`
 
 Admin user
 
 - Accepteert een waarde
 
-### `--admin-password`
+#### `--admin-password`
 
 Wachtwoord beheerder
 
 - Accepteert een waarde
 
-### `--admin-email`
+#### `--admin-email`
 
 E-mailadres beheerder
 
 - Accepteert een waarde
 
-### `--admin-firstname`
+#### `--admin-firstname`
 
 Voornaam beheerder
 
 - Accepteert een waarde
 
-### `--admin-lastname`
+#### `--admin-lastname`
 
 Achternaam beheerder
 
 - Accepteert een waarde
 
-### `--search-engine`
+#### `--search-engine`
 
 Zoekprogramma. Waarden: elasticsearch7, elasticsearch8, openssearch
 
 - Vereist een waarde
 
-### `--elasticsearch-host`
+#### `--elasticsearch-host`
 
 Server-host van Elasticsearch.
 
 - Vereist een waarde
 
-### `--elasticsearch-port`
+#### `--elasticsearch-port`
 
 De serverhaven van de Elasticsearch.
 
 - Vereist een waarde
 
-### `--elasticsearch-enable-auth`
+#### `--elasticsearch-enable-auth`
 
 Stel dit in op 1 om verificatie in te schakelen. (standaardwaarde is 0, uitgeschakeld)
 
 - Vereist een waarde
 
-### `--elasticsearch-username`
+#### `--elasticsearch-username`
 
 Gebruikersnaam Elasticsearch. Alleen van toepassing als HTTP-auth is ingeschakeld
 
 - Vereist een waarde
 
-### `--elasticsearch-password`
+#### `--elasticsearch-password`
 
 Wachtwoord Elasticsearch. Alleen van toepassing als HTTP-auth is ingeschakeld
 
 - Vereist een waarde
 
-### `--elasticsearch-index-prefix`
+#### `--elasticsearch-index-prefix`
 
 Prefix van Elasticsearch-index.
 
 - Vereist een waarde
 
-### `--elasticsearch-timeout`
+#### `--elasticsearch-timeout`
 
 Time-out server Elasticsearch.
 
 - Vereist een waarde
 
-### `--opensearch-host`
+#### `--opensearch-host`
 
 OpenSearch-serverhost.
 
 - Vereist een waarde
 
-### `--opensearch-port`
+#### `--opensearch-port`
 
 OpenSearch-serverpoort.
 
 - Vereist een waarde
 
-### `--opensearch-enable-auth`
+#### `--opensearch-enable-auth`
 
 Stel dit in op 1 om verificatie in te schakelen. (standaardwaarde is 0, uitgeschakeld)
 
 - Vereist een waarde
 
-### `--opensearch-username`
+#### `--opensearch-username`
 
 OpenSearch gebruikersnaam. Alleen van toepassing als HTTP-auth is ingeschakeld
 
 - Vereist een waarde
 
-### `--opensearch-password`
+#### `--opensearch-password`
 
 Wachtwoord voor OpenSearch. Alleen van toepassing als HTTP-auth is ingeschakeld
 
 - Vereist een waarde
 
-### `--opensearch-index-prefix`
+#### `--opensearch-index-prefix`
 
 Prefix van de OpenSearch-index.
 
 - Vereist een waarde
 
-### `--opensearch-timeout`
+#### `--opensearch-timeout`
 
 Time-out van OpenSearch-server.
 
 - Vereist een waarde
 
-### `--cleanup-database`
+#### `--cleanup-database`
 
 De database opschonen voordat deze wordt geïnstalleerd
 
 - Standaard: `false`
 - Accepteert geen waarde
 
-### `--sales-order-increment-prefix`
+#### `--sales-order-increment-prefix`
 
 Prefix van het inkoopordernummer
 
 - Vereist een waarde
 
-### `--use-sample-data`
+#### `--use-sample-data`
 
 Voorbeeldgegevens gebruiken
 
 - Standaard: `false`
 - Accepteert geen waarde
 
-### `--enable-modules`
+#### `--enable-modules`
 
 Lijst met door komma&#39;s gescheiden modulenamen. Dat moet tijdens de installatie worden opgenomen. Beschikbaar magische param &quot;all&quot;.
 
 - Accepteert een waarde
 
-### `--disable-modules`
+#### `--disable-modules`
 
 Lijst met door komma&#39;s gescheiden modulenamen. Dat moet tijdens de installatie worden voorkomen. Beschikbaar magische param &quot;all&quot;.
 
 - Accepteert een waarde
 
-### `--convert-old-scripts`
+#### `--convert-old-scripts`
 
 Hiermee kunt u oude scripts (InstallSchema, UpgradeSchema) converteren naar de indeling db_schema.xml
 
 - Standaard: `false`
 - Accepteert een waarde
 
-### `--interactive`, `-i`
+#### `--interactive`, `-i`
 
 Installatie van interactief Magento
 
 - Standaard: `false`
 - Accepteert geen waarde
 
-### `--safe-mode`
+#### `--safe-mode`
 
 Veilige installatie van Magento met dumps bij destructieve bewerkingen, zoals het verwijderen van kolommen
 
 - Accepteert een waarde
 
-### `--data-restore`
+#### `--data-restore`
 
 Verwijderde gegevens van dumps herstellen
 
 - Accepteert een waarde
 
-### `--dry-run`
+#### `--dry-run`
 
 De installatie van het Magento wordt uitgevoerd in de droge-uitvoeringsmodus
 
 - Standaard: `false`
 - Accepteert een waarde
 
-### `--magento-init-params`
+#### `--magento-init-params`
 
 Voeg aan om het even welk bevel toe om Magento initialisatieparameters aan te passen bijvoorbeeld: &quot;MAGE_MODE=developer&amp;MAGE_DIRS [ basis ][path]=/var/www/example.com&amp;MAGE_DIRS [ geheime voorgeheugen ][path]=/var/tmp/cache&quot;
 
 - Vereist een waarde
-
-### `--help`, `-h`
-
-Help weergeven voor de opgegeven opdracht. Wanneer geen bevel vertoningshulp voor het lijstbevel wordt gegeven
-
-- Standaard: `false`
-- Accepteert geen waarde
-
-### `--quiet`, `-q`
-
-Geen bericht uitvoeren
-
-- Standaard: `false`
-- Accepteert geen waarde
-
-### `--verbose`, `-v|-vv|-vvv`
-
-Verhoog de breedheid van berichten: 1 voor normale output, 2 voor meer uitgebreide output en 3 voor zuivert
-
-- Standaard: `false`
-- Accepteert geen waarde
-
-### `--version`, `-V`
-
-Deze toepassingsversie weergeven
-
-- Standaard: `false`
-- Accepteert geen waarde
-
-### `--ansi`
-
-ANSI-uitvoer forceren (of uitschakelen —no-ansi)
-
-- Accepteert geen waarde
-
-### `--no-ansi`
-
-De optie &quot;—ansi&quot; negeren
-
-- Standaard: `false`
-- Accepteert geen waarde
-
-### `--no-interaction`, `-n`
-
-Geen interactieve vraag stellen
-
-- Standaard: `false`
-- Accepteert geen waarde
 
 
 ## `setup:performance:generate-fixtures`
@@ -10191,65 +4782,21 @@ bin/magento setup:performance:generate-fixtures [-s|--skip-reindex] [--] <profil
 
 Genereert correcties
 
+### Argumenten
 
-
-### `profile`
+#### `profile`
 
 Pad naar profielconfiguratiebestand
 
 - Vereist
 
-### `--skip-reindex`, `-s`
+### Opties
+
+Voor globale opties, zie [ Globale opties ](#global-options).
+
+#### `--skip-reindex`, `-s`
 
 Herindexeren overslaan
-
-- Standaard: `false`
-- Accepteert geen waarde
-
-### `--help`, `-h`
-
-Help weergeven voor de opgegeven opdracht. Wanneer geen bevel vertoningshulp voor het lijstbevel wordt gegeven
-
-- Standaard: `false`
-- Accepteert geen waarde
-
-### `--quiet`, `-q`
-
-Geen bericht uitvoeren
-
-- Standaard: `false`
-- Accepteert geen waarde
-
-### `--verbose`, `-v|-vv|-vvv`
-
-Verhoog de breedheid van berichten: 1 voor normale output, 2 voor meer uitgebreide output en 3 voor zuivert
-
-- Standaard: `false`
-- Accepteert geen waarde
-
-### `--version`, `-V`
-
-Deze toepassingsversie weergeven
-
-- Standaard: `false`
-- Accepteert geen waarde
-
-### `--ansi`
-
-ANSI-uitvoer forceren (of uitschakelen —no-ansi)
-
-- Accepteert geen waarde
-
-### `--no-ansi`
-
-De optie &quot;—ansi&quot; negeren
-
-- Standaard: `false`
-- Accepteert geen waarde
-
-### `--no-interaction`, `-n`
-
-Geen interactieve vraag stellen
 
 - Standaard: `false`
 - Accepteert geen waarde
@@ -10263,78 +4810,33 @@ bin/magento setup:rollback [-c|--code-file CODE-FILE] [-m|--media-file MEDIA-FIL
 
 Draait codebase, media en database van Magento Application terug
 
+### Opties
 
-### `--code-file`, `-c`
+Voor globale opties, zie [ Globale opties ](#global-options).
+
+#### `--code-file`, `-c`
 
 Basisnaam van het back-upbestand van de code in var/back-ups
 
 - Vereist een waarde
 
-### `--media-file`, `-m`
+#### `--media-file`, `-m`
 
 Basisnaam van het back-upbestand van het medium in var/back-ups
 
 - Vereist een waarde
 
-### `--db-file`, `-d`
+#### `--db-file`, `-d`
 
 Basename van het db reservedossier in var/steunen
 
 - Vereist een waarde
 
-### `--magento-init-params`
+#### `--magento-init-params`
 
 Voeg aan om het even welk bevel toe om Magento initialisatieparameters aan te passen bijvoorbeeld: &quot;MAGE_MODE=developer&amp;MAGE_DIRS [ basis ][path]=/var/www/example.com&amp;MAGE_DIRS [ geheime voorgeheugen ][path]=/var/tmp/cache&quot;
 
 - Vereist een waarde
-
-### `--help`, `-h`
-
-Help weergeven voor de opgegeven opdracht. Wanneer geen bevel vertoningshulp voor het lijstbevel wordt gegeven
-
-- Standaard: `false`
-- Accepteert geen waarde
-
-### `--quiet`, `-q`
-
-Geen bericht uitvoeren
-
-- Standaard: `false`
-- Accepteert geen waarde
-
-### `--verbose`, `-v|-vv|-vvv`
-
-Verhoog de breedheid van berichten: 1 voor normale output, 2 voor meer uitgebreide output en 3 voor zuivert
-
-- Standaard: `false`
-- Accepteert geen waarde
-
-### `--version`, `-V`
-
-Deze toepassingsversie weergeven
-
-- Standaard: `false`
-- Accepteert geen waarde
-
-### `--ansi`
-
-ANSI-uitvoer forceren (of uitschakelen —no-ansi)
-
-- Accepteert geen waarde
-
-### `--no-ansi`
-
-De optie &quot;—ansi&quot; negeren
-
-- Standaard: `false`
-- Accepteert geen waarde
-
-### `--no-interaction`, `-n`
-
-Geen interactieve vraag stellen
-
-- Standaard: `false`
-- Accepteert geen waarde
 
 
 ## `setup:static-content:deploy`
@@ -10345,220 +4847,175 @@ bin/magento setup:static-content:deploy [-f|--force] [-s|--strategy [STRATEGY]] 
 
 Statische weergavebestanden gebruiken
 
+### Argumenten
 
-
-### `languages`
+#### `languages`
 
 Lijst met door spaties gescheiden ISO-639-taalcodes waarvoor statische weergavebestanden moeten worden uitgevoerd.
 
 - Standaard: `[]`
-
 - Array
 
-### `--force`, `-f`
+### Opties
+
+Voor globale opties, zie [ Globale opties ](#global-options).
+
+#### `--force`, `-f`
 
 Bestanden in elke modus implementeren.
 
 - Standaard: `false`
 - Accepteert geen waarde
 
-### `--strategy`, `-s`
+#### `--strategy`, `-s`
 
 Bestanden implementeren met behulp van de opgegeven strategie.
 
 - Standaard: `quick`
 - Accepteert een waarde
 
-### `--area`, `-a`
+#### `--area`, `-a`
 
 Alleen bestanden genereren voor de opgegeven gebieden.
 
 - Standaard: `all`
 - Accepteert meerdere waarden
 
-### `--exclude-area`
+#### `--exclude-area`
 
 Genereer geen bestanden voor de opgegeven gebieden.
 
 - Standaard: `none`
 - Accepteert meerdere waarden
 
-### `--theme`, `-t`
+#### `--theme`, `-t`
 
 Genereer statische weergavebestanden voor alleen de opgegeven thema&#39;s.
 
 - Standaard: `all`
 - Accepteert meerdere waarden
 
-### `--exclude-theme`
+#### `--exclude-theme`
 
 Geen bestanden voor de opgegeven thema&#39;s genereren.
 
 - Standaard: `none`
 - Accepteert meerdere waarden
 
-### `--language`, `-l`
+#### `--language`, `-l`
 
 Genereer bestanden alleen voor de opgegeven talen.
 
 - Standaard: `all`
 - Accepteert meerdere waarden
 
-### `--exclude-language`
+#### `--exclude-language`
 
 Genereer geen bestanden voor de opgegeven talen.
 
 - Standaard: `none`
 - Accepteert meerdere waarden
 
-### `--jobs`, `-j`
+#### `--jobs`, `-j`
 
 Schakel parallelle verwerking in met het opgegeven aantal taken.
 
 - Standaard: `0`
 - Accepteert een waarde
 
-### `--max-execution-time`
+#### `--max-execution-time`
 
 De maximale verwachte uitvoeringstijd van implementatie statisch proces (in seconden).
 
 - Standaard: `900`
 - Accepteert een waarde
 
-### `--symlink-locale`
+#### `--symlink-locale`
 
 Creeer symlinks voor de dossiers van die scènes, die voor plaatsing worden overgegaan, maar geen aanpassingen hebben.
 
 - Standaard: `false`
 - Accepteert geen waarde
 
-### `--content-version`
+#### `--content-version`
 
 Aangepaste versie van statische inhoud kan worden gebruikt als implementatie op meerdere knooppunten wordt uitgevoerd om ervoor te zorgen dat de versie van statische inhoud identiek is en dat caching correct werkt.
 
 - Vereist een waarde
 
-### `--refresh-content-version-only`
+#### `--refresh-content-version-only`
 
 Als u de versie van statische inhoud alleen vernieuwt, kunt u statische inhoud in de browsercache en CDN-cache vernieuwen.
 
 - Standaard: `false`
 - Accepteert geen waarde
 
-### `--no-javascript`
+#### `--no-javascript`
 
 Implementeer geen JavaScript-bestanden.
 
 - Standaard: `false`
 - Accepteert geen waarde
 
-### `--no-js-bundle`
+#### `--no-js-bundle`
 
 Implementeer geen JavaScript-bundelbestanden.
 
 - Standaard: `false`
 - Accepteert geen waarde
 
-### `--no-css`
+#### `--no-css`
 
 CSS-bestanden niet implementeren.
 
 - Standaard: `false`
 - Accepteert geen waarde
 
-### `--no-less`
+#### `--no-less`
 
 Implementeer geen LESS-bestanden.
 
 - Standaard: `false`
 - Accepteert geen waarde
 
-### `--no-images`
+#### `--no-images`
 
 Implementeer geen afbeeldingen.
 
 - Standaard: `false`
 - Accepteert geen waarde
 
-### `--no-fonts`
+#### `--no-fonts`
 
 Implementeer geen lettertypebestanden.
 
 - Standaard: `false`
 - Accepteert geen waarde
 
-### `--no-html`
+#### `--no-html`
 
 Implementeer geen HTML-bestanden.
 
 - Standaard: `false`
 - Accepteert geen waarde
 
-### `--no-misc`
+#### `--no-misc`
 
 Implementeer geen bestanden van andere typen (.md, .jbf, .csv, enz.).
 
 - Standaard: `false`
 - Accepteert geen waarde
 
-### `--no-html-minify`
+#### `--no-html-minify`
 
 Maak geen minieme HTML-bestanden.
 
 - Standaard: `false`
 - Accepteert geen waarde
 
-### `--no-parent`
+#### `--no-parent`
 
 Bovenliggende thema&#39;s niet compileren. Alleen ondersteund in snelle en standaardstrategieën.
-
-- Standaard: `false`
-- Accepteert geen waarde
-
-### `--help`, `-h`
-
-Help weergeven voor de opgegeven opdracht. Wanneer geen bevel vertoningshulp voor het lijstbevel wordt gegeven
-
-- Standaard: `false`
-- Accepteert geen waarde
-
-### `--quiet`, `-q`
-
-Geen bericht uitvoeren
-
-- Standaard: `false`
-- Accepteert geen waarde
-
-### `--verbose`, `-v|-vv|-vvv`
-
-Verhoog de breedheid van berichten: 1 voor normale output, 2 voor meer uitgebreide output en 3 voor zuivert
-
-- Standaard: `false`
-- Accepteert geen waarde
-
-### `--version`, `-V`
-
-Deze toepassingsversie weergeven
-
-- Standaard: `false`
-- Accepteert geen waarde
-
-### `--ansi`
-
-ANSI-uitvoer forceren (of uitschakelen —no-ansi)
-
-- Accepteert geen waarde
-
-### `--no-ansi`
-
-De optie &quot;—ansi&quot; negeren
-
-- Standaard: `false`
-- Accepteert geen waarde
-
-### `--no-interaction`, `-n`
-
-Geen interactieve vraag stellen
 
 - Standaard: `false`
 - Accepteert geen waarde
@@ -10572,114 +5029,69 @@ bin/magento setup:store-config:set [--base-url BASE-URL] [--language LANGUAGE] [
 
 Installeert de opslagconfiguratie. Vervangen vanaf 2.2.0. Configureren gebruiken:instellen
 
+### Opties
 
-### `--base-url`
+Voor globale opties, zie [ Globale opties ](#global-options).
+
+#### `--base-url`
 
 URL waar de winkel beschikbaar moet zijn. Vervangen, gebruik config:reeks met weg web/unsecure/base_url
 
 - Vereist een waarde
 
-### `--language`
+#### `--language`
 
 Standaardtaalcode. Vervangen, gebruik config:reeks met weg algemeen/landinstelling/code
 
 - Vereist een waarde
 
-### `--timezone`
+#### `--timezone`
 
 Standaardtijdzonecode. Vervangen, gebruik config:reeks met weg algemeen/landinstelling/timezone
 
 - Vereist een waarde
 
-### `--currency`
+#### `--currency`
 
 Standaardvalutacode. Vervangen, configuratie gebruiken:instellen met padvaluta/opties/basis, valuta/opties/standaard en valuta/opties/allow
 
 - Vereist een waarde
 
-### `--use-rewrites`
+#### `--use-rewrites`
 
 Herschrijven gebruiken. Vervangen, gebruik config:reeks met weg web/seo/use_rewrites
 
 - Vereist een waarde
 
-### `--use-secure`
+#### `--use-secure`
 
 Gebruik veilige URL&#39;s. Schakel deze optie alleen in als SSL beschikbaar is. Vervangen, gebruik config:reeks met weg web/secure/use_in_frontend
 
 - Vereist een waarde
 
-### `--base-url-secure`
+#### `--base-url-secure`
 
 Basis-URL voor SSL-verbinding Vervangen, gebruik config:reeks met weg web/secure/base_url
 
 - Vereist een waarde
 
-### `--use-secure-admin`
+#### `--use-secure-admin`
 
 Voer de beheerdersinterface uit met SSL. Vervangen, gebruik config:reeks met weg web/secure/use_in_adminhtml
 
 - Vereist een waarde
 
-### `--admin-use-security-key`
+#### `--admin-use-security-key`
 
 Of een functie &#39;beveiligingssleutel&#39; moet worden gebruikt in URL&#39;s en formulieren voor beheer van Magento&#39;s. Vervangen, gebruik config:reeks met weg admin/security/use_form_key
 
 - Vereist een waarde
 
-### `--magento-init-params`
+#### `--magento-init-params`
 
 Voeg aan om het even welk bevel toe om Magento initialisatieparameters aan te passen bijvoorbeeld: &quot;MAGE_MODE=developer&amp;MAGE_DIRS [ basis ][path]=/var/www/example.com&amp;MAGE_DIRS [ geheime voorgeheugen ][path]=/var/tmp/cache&quot;
 
 - Vereist een waarde
-
-### `--help`, `-h`
-
-Help weergeven voor de opgegeven opdracht. Wanneer geen bevel vertoningshulp voor het lijstbevel wordt gegeven
-
-- Standaard: `false`
-- Accepteert geen waarde
-
-### `--quiet`, `-q`
-
-Geen bericht uitvoeren
-
-- Standaard: `false`
-- Accepteert geen waarde
-
-### `--verbose`, `-v|-vv|-vvv`
-
-Verhoog de breedheid van berichten: 1 voor normale output, 2 voor meer uitgebreide output en 3 voor zuivert
-
-- Standaard: `false`
-- Accepteert geen waarde
-
-### `--version`, `-V`
-
-Deze toepassingsversie weergeven
-
-- Standaard: `false`
-- Accepteert geen waarde
-
-### `--ansi`
-
-ANSI-uitvoer forceren (of uitschakelen —no-ansi)
-
-- Accepteert geen waarde
-
-### `--no-ansi`
-
-De optie &quot;—ansi&quot; negeren
-
-- Standaard: `false`
-- Accepteert geen waarde
-
-### `--no-interaction`, `-n`
-
-Geen interactieve vraag stellen
-
-- Standaard: `false`
-- Accepteert geen waarde
 
 
 ## `setup:uninstall`
@@ -10690,60 +5102,15 @@ bin/magento setup:uninstall [--magento-init-params MAGENTO-INIT-PARAMS]
 
 Hiermee wordt de toepassing Magento verwijderd
 
+### Opties
 
-### `--magento-init-params`
+Voor globale opties, zie [ Globale opties ](#global-options).
+
+#### `--magento-init-params`
 
 Voeg aan om het even welk bevel toe om Magento initialisatieparameters aan te passen bijvoorbeeld: &quot;MAGE_MODE=developer&amp;MAGE_DIRS [ basis ][path]=/var/www/example.com&amp;MAGE_DIRS [ geheime voorgeheugen ][path]=/var/tmp/cache&quot;
 
 - Vereist een waarde
-
-### `--help`, `-h`
-
-Help weergeven voor de opgegeven opdracht. Wanneer geen bevel vertoningshulp voor het lijstbevel wordt gegeven
-
-- Standaard: `false`
-- Accepteert geen waarde
-
-### `--quiet`, `-q`
-
-Geen bericht uitvoeren
-
-- Standaard: `false`
-- Accepteert geen waarde
-
-### `--verbose`, `-v|-vv|-vvv`
-
-Verhoog de breedheid van berichten: 1 voor normale output, 2 voor meer uitgebreide output en 3 voor zuivert
-
-- Standaard: `false`
-- Accepteert geen waarde
-
-### `--version`, `-V`
-
-Deze toepassingsversie weergeven
-
-- Standaard: `false`
-- Accepteert geen waarde
-
-### `--ansi`
-
-ANSI-uitvoer forceren (of uitschakelen —no-ansi)
-
-- Accepteert geen waarde
-
-### `--no-ansi`
-
-De optie &quot;—ansi&quot; negeren
-
-- Standaard: `false`
-- Accepteert geen waarde
-
-### `--no-interaction`, `-n`
-
-Geen interactieve vraag stellen
-
-- Standaard: `false`
-- Accepteert geen waarde
 
 
 ## `setup:upgrade`
@@ -10754,93 +5121,48 @@ bin/magento setup:upgrade [--keep-generated] [--convert-old-scripts [CONVERT-OLD
 
 Hiermee werkt u de toepassing van het Magento, de DB-gegevens en het schema bij
 
+### Opties
 
-### `--keep-generated`
+Voor globale opties, zie [ Globale opties ](#global-options).
+
+#### `--keep-generated`
 
 Voorkomt dat gegenereerde bestanden worden verwijderd. We raden u af deze optie te gebruiken, behalve wanneer u een product gaat maken. Raadpleeg de systeemontwikkelaar of beheerder voor meer informatie.
 
 - Standaard: `false`
 - Accepteert geen waarde
 
-### `--convert-old-scripts`
+#### `--convert-old-scripts`
 
 Hiermee kunt u oude scripts (InstallSchema, UpgradeSchema) converteren naar de indeling db_schema.xml
 
 - Standaard: `false`
 - Accepteert een waarde
 
-### `--safe-mode`
+#### `--safe-mode`
 
 Veilige installatie van Magento met dumps bij destructieve bewerkingen, zoals het verwijderen van kolommen
 
 - Accepteert een waarde
 
-### `--data-restore`
+#### `--data-restore`
 
 Verwijderde gegevens van dumps herstellen
 
 - Accepteert een waarde
 
-### `--dry-run`
+#### `--dry-run`
 
 De installatie van het Magento wordt uitgevoerd in de droge-uitvoeringsmodus
 
 - Standaard: `false`
 - Accepteert een waarde
 
-### `--magento-init-params`
+#### `--magento-init-params`
 
 Voeg aan om het even welk bevel toe om Magento initialisatieparameters aan te passen bijvoorbeeld: &quot;MAGE_MODE=developer&amp;MAGE_DIRS [ basis ][path]=/var/www/example.com&amp;MAGE_DIRS [ geheime voorgeheugen ][path]=/var/tmp/cache&quot;
 
 - Vereist een waarde
-
-### `--help`, `-h`
-
-Help weergeven voor de opgegeven opdracht. Wanneer geen bevel vertoningshulp voor het lijstbevel wordt gegeven
-
-- Standaard: `false`
-- Accepteert geen waarde
-
-### `--quiet`, `-q`
-
-Geen bericht uitvoeren
-
-- Standaard: `false`
-- Accepteert geen waarde
-
-### `--verbose`, `-v|-vv|-vvv`
-
-Verhoog de breedheid van berichten: 1 voor normale output, 2 voor meer uitgebreide output en 3 voor zuivert
-
-- Standaard: `false`
-- Accepteert geen waarde
-
-### `--version`, `-V`
-
-Deze toepassingsversie weergeven
-
-- Standaard: `false`
-- Accepteert geen waarde
-
-### `--ansi`
-
-ANSI-uitvoer forceren (of uitschakelen —no-ansi)
-
-- Accepteert geen waarde
-
-### `--no-ansi`
-
-De optie &quot;—ansi&quot; negeren
-
-- Standaard: `false`
-- Accepteert geen waarde
-
-### `--no-interaction`, `-n`
-
-Geen interactieve vraag stellen
-
-- Standaard: `false`
-- Accepteert geen waarde
 
 
 ## `store:list`
@@ -10851,54 +5173,9 @@ bin/magento store:list
 
 Hiermee wordt de lijst met winkels weergegeven
 
+### Opties
 
-### `--help`, `-h`
-
-Help weergeven voor de opgegeven opdracht. Wanneer geen bevel vertoningshulp voor het lijstbevel wordt gegeven
-
-- Standaard: `false`
-- Accepteert geen waarde
-
-### `--quiet`, `-q`
-
-Geen bericht uitvoeren
-
-- Standaard: `false`
-- Accepteert geen waarde
-
-### `--verbose`, `-v|-vv|-vvv`
-
-Verhoog de breedheid van berichten: 1 voor normale output, 2 voor meer uitgebreide output en 3 voor zuivert
-
-- Standaard: `false`
-- Accepteert geen waarde
-
-### `--version`, `-V`
-
-Deze toepassingsversie weergeven
-
-- Standaard: `false`
-- Accepteert geen waarde
-
-### `--ansi`
-
-ANSI-uitvoer forceren (of uitschakelen —no-ansi)
-
-- Accepteert geen waarde
-
-### `--no-ansi`
-
-De optie &quot;—ansi&quot; negeren
-
-- Standaard: `false`
-- Accepteert geen waarde
-
-### `--no-interaction`, `-n`
-
-Geen interactieve vraag stellen
-
-- Standaard: `false`
-- Accepteert geen waarde
+Voor globale opties, zie [ Globale opties ](#global-options).
 
 
 ## `store:website:list`
@@ -10909,54 +5186,9 @@ bin/magento store:website:list
 
 De lijst met websites weergeven
 
+### Opties
 
-### `--help`, `-h`
-
-Help weergeven voor de opgegeven opdracht. Wanneer geen bevel vertoningshulp voor het lijstbevel wordt gegeven
-
-- Standaard: `false`
-- Accepteert geen waarde
-
-### `--quiet`, `-q`
-
-Geen bericht uitvoeren
-
-- Standaard: `false`
-- Accepteert geen waarde
-
-### `--verbose`, `-v|-vv|-vvv`
-
-Verhoog de breedheid van berichten: 1 voor normale output, 2 voor meer uitgebreide output en 3 voor zuivert
-
-- Standaard: `false`
-- Accepteert geen waarde
-
-### `--version`, `-V`
-
-Deze toepassingsversie weergeven
-
-- Standaard: `false`
-- Accepteert geen waarde
-
-### `--ansi`
-
-ANSI-uitvoer forceren (of uitschakelen —no-ansi)
-
-- Accepteert geen waarde
-
-### `--no-ansi`
-
-De optie &quot;—ansi&quot; negeren
-
-- Standaard: `false`
-- Accepteert geen waarde
-
-### `--no-interaction`, `-n`
-
-Geen interactieve vraag stellen
-
-- Standaard: `false`
-- Accepteert geen waarde
+Voor globale opties, zie [ Globale opties ](#global-options).
 
 
 ## `support:backup:code`
@@ -10967,70 +5199,25 @@ bin/magento support:backup:code [--name [NAME]] [-o|--output [OUTPUT]] [-l|--log
 
 Codeback-up maken
 
+### Opties
 
-### `--name`
+Voor globale opties, zie [ Globale opties ](#global-options).
+
+#### `--name`
 
 Dumpingnaam
 
 - Accepteert een waarde
 
-### `--output`, `-o`
+#### `--output`, `-o`
 
 Uitvoerpad
 
 - Accepteert een waarde
 
-### `--logs`, `-l`
+#### `--logs`, `-l`
 
 Logbestanden opnemen
-
-- Standaard: `false`
-- Accepteert geen waarde
-
-### `--help`, `-h`
-
-Help weergeven voor de opgegeven opdracht. Wanneer geen bevel vertoningshulp voor het lijstbevel wordt gegeven
-
-- Standaard: `false`
-- Accepteert geen waarde
-
-### `--quiet`, `-q`
-
-Geen bericht uitvoeren
-
-- Standaard: `false`
-- Accepteert geen waarde
-
-### `--verbose`, `-v|-vv|-vvv`
-
-Verhoog de breedheid van berichten: 1 voor normale output, 2 voor meer uitgebreide output en 3 voor zuivert
-
-- Standaard: `false`
-- Accepteert geen waarde
-
-### `--version`, `-V`
-
-Deze toepassingsversie weergeven
-
-- Standaard: `false`
-- Accepteert geen waarde
-
-### `--ansi`
-
-ANSI-uitvoer forceren (of uitschakelen —no-ansi)
-
-- Accepteert geen waarde
-
-### `--no-ansi`
-
-De optie &quot;—ansi&quot; negeren
-
-- Standaard: `false`
-- Accepteert geen waarde
-
-### `--no-interaction`, `-n`
-
-Geen interactieve vraag stellen
 
 - Standaard: `false`
 - Accepteert geen waarde
@@ -11044,77 +5231,32 @@ bin/magento support:backup:db [--name [NAME]] [-o|--output [OUTPUT]] [-l|--logs]
 
 DB-back-up maken
 
+### Opties
 
-### `--name`
+Voor globale opties, zie [ Globale opties ](#global-options).
+
+#### `--name`
 
 Dumpingnaam
 
 - Accepteert een waarde
 
-### `--output`, `-o`
+#### `--output`, `-o`
 
 Uitvoerpad
 
 - Accepteert een waarde
 
-### `--logs`, `-l`
+#### `--logs`, `-l`
 
 Logbestanden opnemen
 
 - Standaard: `false`
 - Accepteert geen waarde
 
-### `--ignore-sanitize`, `-i`
+#### `--ignore-sanitize`, `-i`
 
 ontsmetten negeren
-
-- Standaard: `false`
-- Accepteert geen waarde
-
-### `--help`, `-h`
-
-Help weergeven voor de opgegeven opdracht. Wanneer geen bevel vertoningshulp voor het lijstbevel wordt gegeven
-
-- Standaard: `false`
-- Accepteert geen waarde
-
-### `--quiet`, `-q`
-
-Geen bericht uitvoeren
-
-- Standaard: `false`
-- Accepteert geen waarde
-
-### `--verbose`, `-v|-vv|-vvv`
-
-Verhoog de breedheid van berichten: 1 voor normale output, 2 voor meer uitgebreide output en 3 voor zuivert
-
-- Standaard: `false`
-- Accepteert geen waarde
-
-### `--version`, `-V`
-
-Deze toepassingsversie weergeven
-
-- Standaard: `false`
-- Accepteert geen waarde
-
-### `--ansi`
-
-ANSI-uitvoer forceren (of uitschakelen —no-ansi)
-
-- Accepteert geen waarde
-
-### `--no-ansi`
-
-De optie &quot;—ansi&quot; negeren
-
-- Standaard: `false`
-- Accepteert geen waarde
-
-### `--no-interaction`, `-n`
-
-Geen interactieve vraag stellen
 
 - Standaard: `false`
 - Accepteert geen waarde
@@ -11128,58 +5270,13 @@ bin/magento support:utility:check [--hide-paths]
 
 Vereiste back-uphulpprogramma&#39;s controleren
 
+### Opties
 
-### `--hide-paths`
+Voor globale opties, zie [ Globale opties ](#global-options).
+
+#### `--hide-paths`
 
 Alleen vereiste consolehulpprogramma&#39;s controleren
-
-- Standaard: `false`
-- Accepteert geen waarde
-
-### `--help`, `-h`
-
-Help weergeven voor de opgegeven opdracht. Wanneer geen bevel vertoningshulp voor het lijstbevel wordt gegeven
-
-- Standaard: `false`
-- Accepteert geen waarde
-
-### `--quiet`, `-q`
-
-Geen bericht uitvoeren
-
-- Standaard: `false`
-- Accepteert geen waarde
-
-### `--verbose`, `-v|-vv|-vvv`
-
-Verhoog de breedheid van berichten: 1 voor normale output, 2 voor meer uitgebreide output en 3 voor zuivert
-
-- Standaard: `false`
-- Accepteert geen waarde
-
-### `--version`, `-V`
-
-Deze toepassingsversie weergeven
-
-- Standaard: `false`
-- Accepteert geen waarde
-
-### `--ansi`
-
-ANSI-uitvoer forceren (of uitschakelen —no-ansi)
-
-- Accepteert geen waarde
-
-### `--no-ansi`
-
-De optie &quot;—ansi&quot; negeren
-
-- Standaard: `false`
-- Accepteert geen waarde
-
-### `--no-interaction`, `-n`
-
-Geen interactieve vraag stellen
 
 - Standaard: `false`
 - Accepteert geen waarde
@@ -11193,58 +5290,13 @@ bin/magento support:utility:paths [-f|--force]
 
 Lijst met paden voor hulpprogramma&#39;s maken
 
+### Opties
 
-### `--force`, `-f`
+Voor globale opties, zie [ Globale opties ](#global-options).
+
+#### `--force`, `-f`
 
 Kracht
-
-- Standaard: `false`
-- Accepteert geen waarde
-
-### `--help`, `-h`
-
-Help weergeven voor de opgegeven opdracht. Wanneer geen bevel vertoningshulp voor het lijstbevel wordt gegeven
-
-- Standaard: `false`
-- Accepteert geen waarde
-
-### `--quiet`, `-q`
-
-Geen bericht uitvoeren
-
-- Standaard: `false`
-- Accepteert geen waarde
-
-### `--verbose`, `-v|-vv|-vvv`
-
-Verhoog de breedheid van berichten: 1 voor normale output, 2 voor meer uitgebreide output en 3 voor zuivert
-
-- Standaard: `false`
-- Accepteert geen waarde
-
-### `--version`, `-V`
-
-Deze toepassingsversie weergeven
-
-- Standaard: `false`
-- Accepteert geen waarde
-
-### `--ansi`
-
-ANSI-uitvoer forceren (of uitschakelen —no-ansi)
-
-- Accepteert geen waarde
-
-### `--no-ansi`
-
-De optie &quot;—ansi&quot; negeren
-
-- Standaard: `false`
-- Accepteert geen waarde
-
-### `--no-interaction`, `-n`
-
-Geen interactieve vraag stellen
 
 - Standaard: `false`
 - Accepteert geen waarde
@@ -11258,75 +5310,31 @@ bin/magento theme:uninstall [--backup-code] [-c|--clear-static-content] [--] <th
 
 Thema wordt verwijderd
 
+### Argumenten
 
-
-### `theme`
+#### `theme`
 
 Pad van het thema. Het themapad moet worden opgegeven als een volledig pad dat gebied/leverancier/naam is. Voorkant/Magento/blanco
 
 - Standaard: `[]`
-
 - Vereist
+
 - Array
 
-### `--backup-code`
+### Opties
+
+Voor globale opties, zie [ Globale opties ](#global-options).
+
+#### `--backup-code`
 
 Back-up van code maken (behalve tijdelijke bestanden)
 
 - Standaard: `false`
 - Accepteert geen waarde
 
-### `--clear-static-content`, `-c`
+#### `--clear-static-content`, `-c`
 
 Gegenereerde statische weergavebestanden wissen.
-
-- Standaard: `false`
-- Accepteert geen waarde
-
-### `--help`, `-h`
-
-Help weergeven voor de opgegeven opdracht. Wanneer geen bevel vertoningshulp voor het lijstbevel wordt gegeven
-
-- Standaard: `false`
-- Accepteert geen waarde
-
-### `--quiet`, `-q`
-
-Geen bericht uitvoeren
-
-- Standaard: `false`
-- Accepteert geen waarde
-
-### `--verbose`, `-v|-vv|-vvv`
-
-Verhoog de breedheid van berichten: 1 voor normale output, 2 voor meer uitgebreide output en 3 voor zuivert
-
-- Standaard: `false`
-- Accepteert geen waarde
-
-### `--version`, `-V`
-
-Deze toepassingsversie weergeven
-
-- Standaard: `false`
-- Accepteert geen waarde
-
-### `--ansi`
-
-ANSI-uitvoer forceren (of uitschakelen —no-ansi)
-
-- Accepteert geen waarde
-
-### `--no-ansi`
-
-De optie &quot;—ansi&quot; negeren
-
-- Standaard: `false`
-- Accepteert geen waarde
-
-### `--no-interaction`, `-n`
-
-Geen interactieve vraag stellen
 
 - Standaard: `false`
 - Accepteert geen waarde
@@ -11340,101 +5348,56 @@ bin/magento varnish:vcl:generate [--access-list ACCESS-LIST] [--backend-host BAC
 
 Genereert Varnish VCL en echo het aan de bevellijn
 
+### Opties
 
-### `--access-list`
+Voor globale opties, zie [ Globale opties ](#global-options).
+
+#### `--access-list`
 
 IPs toegangslijst die Varnish kan zuiveren
 
 - Standaard: `localhost`
 - Vereist een waarde
 
-### `--backend-host`
+#### `--backend-host`
 
 Host van de webinhoud
 
 - Standaard: `localhost`
 - Vereist een waarde
 
-### `--backend-port`
+#### `--backend-port`
 
 Poort van de webinhoud
 
 - Standaard: `8080`
 - Vereist een waarde
 
-### `--export-version`
+#### `--export-version`
 
 De versie van het Varnish-bestand
 
 - Standaard: `6`
 - Vereist een waarde
 
-### `--grace-period`
+#### `--grace-period`
 
 Respijtperiode in seconden
 
 - Standaard: `300`
 - Vereist een waarde
 
-### `--input-file`
+#### `--input-file`
 
 Invoerbestand dat vcl genereert van
 
 - Vereist een waarde
 
-### `--output-file`
+#### `--output-file`
 
 Pad naar het bestand om vcl te schrijven
 
 - Vereist een waarde
-
-### `--help`, `-h`
-
-Help weergeven voor de opgegeven opdracht. Wanneer geen bevel vertoningshulp voor het lijstbevel wordt gegeven
-
-- Standaard: `false`
-- Accepteert geen waarde
-
-### `--quiet`, `-q`
-
-Geen bericht uitvoeren
-
-- Standaard: `false`
-- Accepteert geen waarde
-
-### `--verbose`, `-v|-vv|-vvv`
-
-Verhoog de breedheid van berichten: 1 voor normale output, 2 voor meer uitgebreide output en 3 voor zuivert
-
-- Standaard: `false`
-- Accepteert geen waarde
-
-### `--version`, `-V`
-
-Deze toepassingsversie weergeven
-
-- Standaard: `false`
-- Accepteert geen waarde
-
-### `--ansi`
-
-ANSI-uitvoer forceren (of uitschakelen —no-ansi)
-
-- Accepteert geen waarde
-
-### `--no-ansi`
-
-De optie &quot;—ansi&quot; negeren
-
-- Standaard: `false`
-- Accepteert geen waarde
-
-### `--no-interaction`, `-n`
-
-Geen interactieve vraag stellen
-
-- Standaard: `false`
-- Accepteert geen waarde
 
 
 ## `webhooks:dev:run`
@@ -11445,67 +5408,24 @@ bin/magento webhooks:dev:run <name> <payload>
 
 Voert een geregistreerde webhaak uit voor ontwikkelingsdoeleinden.
 
+### Argumenten
 
-
-### `name`
+#### `name`
 
 Webhaak-naam
 
 - Vereist
 
-### `payload`
+
+#### `payload`
 
 De payload van de webhaak in JSON-indeling
 
 - Vereist
 
-### `--help`, `-h`
+### Opties
 
-Help weergeven voor de opgegeven opdracht. Wanneer geen bevel vertoningshulp voor het lijstbevel wordt gegeven
-
-- Standaard: `false`
-- Accepteert geen waarde
-
-### `--quiet`, `-q`
-
-Geen bericht uitvoeren
-
-- Standaard: `false`
-- Accepteert geen waarde
-
-### `--verbose`, `-v|-vv|-vvv`
-
-Verhoog de breedheid van berichten: 1 voor normale output, 2 voor meer uitgebreide output en 3 voor zuivert
-
-- Standaard: `false`
-- Accepteert geen waarde
-
-### `--version`, `-V`
-
-Deze toepassingsversie weergeven
-
-- Standaard: `false`
-- Accepteert geen waarde
-
-### `--ansi`
-
-ANSI-uitvoer forceren (of uitschakelen —no-ansi)
-
-- Accepteert geen waarde
-
-### `--no-ansi`
-
-De optie &quot;—ansi&quot; negeren
-
-- Standaard: `false`
-- Accepteert geen waarde
-
-### `--no-interaction`, `-n`
-
-Geen interactieve vraag stellen
-
-- Standaard: `false`
-- Accepteert geen waarde
+Voor globale opties, zie [ Globale opties ](#global-options).
 
 
 ## `webhooks:generate:module`
@@ -11516,54 +5436,9 @@ bin/magento webhooks:generate:module
 
 Insteekmodules genereren op basis van webharegistraties
 
+### Opties
 
-### `--help`, `-h`
-
-Help weergeven voor de opgegeven opdracht. Wanneer geen bevel vertoningshulp voor het lijstbevel wordt gegeven
-
-- Standaard: `false`
-- Accepteert geen waarde
-
-### `--quiet`, `-q`
-
-Geen bericht uitvoeren
-
-- Standaard: `false`
-- Accepteert geen waarde
-
-### `--verbose`, `-v|-vv|-vvv`
-
-Verhoog de breedheid van berichten: 1 voor normale output, 2 voor meer uitgebreide output en 3 voor zuivert
-
-- Standaard: `false`
-- Accepteert geen waarde
-
-### `--version`, `-V`
-
-Deze toepassingsversie weergeven
-
-- Standaard: `false`
-- Accepteert geen waarde
-
-### `--ansi`
-
-ANSI-uitvoer forceren (of uitschakelen —no-ansi)
-
-- Accepteert geen waarde
-
-### `--no-ansi`
-
-De optie &quot;—ansi&quot; negeren
-
-- Standaard: `false`
-- Accepteert geen waarde
-
-### `--no-interaction`, `-n`
-
-Geen interactieve vraag stellen
-
-- Standaard: `false`
-- Accepteert geen waarde
+Voor globale opties, zie [ Globale opties ](#global-options).
 
 
 ## `webhooks:info`
@@ -11574,75 +5449,31 @@ bin/magento webhooks:info [--depth [DEPTH]] [--] <webhook-name> [<webhook-type>]
 
 Retourneert de lading van de opgegeven webhaak.
 
+### Argumenten
 
-
-### `webhook-name`
+#### `webhook-name`
 
 Naam van de methode WebHaak
 
 - Vereist
 
-### `webhook-type`
+
+#### `webhook-type`
 
 Het type Webhaak (voor, na)
 
 - Standaard: `before`
 
+### Opties
 
-### `--depth`
+Voor globale opties, zie [ Globale opties ](#global-options).
+
+#### `--depth`
 
 Het aantal niveaus in de WebHaakshlading om terug te keren
 
 - Standaard: `3`
 - Accepteert een waarde
-
-### `--help`, `-h`
-
-Help weergeven voor de opgegeven opdracht. Wanneer geen bevel vertoningshulp voor het lijstbevel wordt gegeven
-
-- Standaard: `false`
-- Accepteert geen waarde
-
-### `--quiet`, `-q`
-
-Geen bericht uitvoeren
-
-- Standaard: `false`
-- Accepteert geen waarde
-
-### `--verbose`, `-v|-vv|-vvv`
-
-Verhoog de breedheid van berichten: 1 voor normale output, 2 voor meer uitgebreide output en 3 voor zuivert
-
-- Standaard: `false`
-- Accepteert geen waarde
-
-### `--version`, `-V`
-
-Deze toepassingsversie weergeven
-
-- Standaard: `false`
-- Accepteert geen waarde
-
-### `--ansi`
-
-ANSI-uitvoer forceren (of uitschakelen —no-ansi)
-
-- Accepteert geen waarde
-
-### `--no-ansi`
-
-De optie &quot;—ansi&quot; negeren
-
-- Standaard: `false`
-- Accepteert geen waarde
-
-### `--no-interaction`, `-n`
-
-Geen interactieve vraag stellen
-
-- Standaard: `false`
-- Accepteert geen waarde
 
 
 ## `webhooks:list`
@@ -11653,54 +5484,9 @@ bin/magento webhooks:list
 
 Lijst met geabonneerde websites weergeven
 
+### Opties
 
-### `--help`, `-h`
-
-Help weergeven voor de opgegeven opdracht. Wanneer geen bevel vertoningshulp voor het lijstbevel wordt gegeven
-
-- Standaard: `false`
-- Accepteert geen waarde
-
-### `--quiet`, `-q`
-
-Geen bericht uitvoeren
-
-- Standaard: `false`
-- Accepteert geen waarde
-
-### `--verbose`, `-v|-vv|-vvv`
-
-Verhoog de breedheid van berichten: 1 voor normale output, 2 voor meer uitgebreide output en 3 voor zuivert
-
-- Standaard: `false`
-- Accepteert geen waarde
-
-### `--version`, `-V`
-
-Deze toepassingsversie weergeven
-
-- Standaard: `false`
-- Accepteert geen waarde
-
-### `--ansi`
-
-ANSI-uitvoer forceren (of uitschakelen —no-ansi)
-
-- Accepteert geen waarde
-
-### `--no-ansi`
-
-De optie &quot;—ansi&quot; negeren
-
-- Standaard: `false`
-- Accepteert geen waarde
-
-### `--no-interaction`, `-n`
-
-Geen interactieve vraag stellen
-
-- Standaard: `false`
-- Accepteert geen waarde
+Voor globale opties, zie [ Globale opties ](#global-options).
 
 
 ## `webhooks:list:all`
@@ -11711,58 +5497,14 @@ bin/magento webhooks:list:all <module_name>
 
 Hiermee wordt een lijst geretourneerd met ondersteunde webhaakmethodenamen voor de opgegeven module
 
+### Argumenten
 
-
-### `module_name`
+#### `module_name`
 
 Modulenaam
 
 - Vereist
 
-### `--help`, `-h`
+### Opties
 
-Help weergeven voor de opgegeven opdracht. Wanneer geen bevel vertoningshulp voor het lijstbevel wordt gegeven
-
-- Standaard: `false`
-- Accepteert geen waarde
-
-### `--quiet`, `-q`
-
-Geen bericht uitvoeren
-
-- Standaard: `false`
-- Accepteert geen waarde
-
-### `--verbose`, `-v|-vv|-vvv`
-
-Verhoog de breedheid van berichten: 1 voor normale output, 2 voor meer uitgebreide output en 3 voor zuivert
-
-- Standaard: `false`
-- Accepteert geen waarde
-
-### `--version`, `-V`
-
-Deze toepassingsversie weergeven
-
-- Standaard: `false`
-- Accepteert geen waarde
-
-### `--ansi`
-
-ANSI-uitvoer forceren (of uitschakelen —no-ansi)
-
-- Accepteert geen waarde
-
-### `--no-ansi`
-
-De optie &quot;—ansi&quot; negeren
-
-- Standaard: `false`
-- Accepteert geen waarde
-
-### `--no-interaction`, `-n`
-
-Geen interactieve vraag stellen
-
-- Standaard: `false`
-- Accepteert geen waarde
+Voor globale opties, zie [ Globale opties ](#global-options).
