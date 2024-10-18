@@ -2,9 +2,9 @@
 user-guide-title: Gereedschappen
 user-guide-description: Leer meer over de verschillende gereedschappen die u met Adobe Commerce kunt gebruiken, hun gebruik, het installatieproces en hoe u toegang krijgt.
 feature: Configuration
-source-git-commit: d53bc380e3bb0a2e6e510f8e73f327c035088aab
+source-git-commit: b8c0788fa99ff4e4965a12fd8c6177b919ace083
 workflow-type: tm+mt
-source-wordcount: '5959'
+source-wordcount: '5963'
 ht-degree: 0%
 
 ---
@@ -635,6 +635,8 @@ ht-degree: 0%
          - [ACSD-60590: Verbeterende prestaties van Bestsellers Aggregated Daily Report Generation](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-52/acsd-60590-optimized-bestseller-report-generation.md)
          - [ACSD-59925: Items sorteren in [!UICONTROL Media Gallery]](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-52/acsd-59925-sorting-items-in-media-gallery.md)
          - [ACSD-59865: [!UICONTROL Cart Price Rule] kan vorige regels niet annuleren wegens onvoldoende hoeveelheid](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-52/acsd-59865-cart-price-rule-fix-for-insufficient-quantity-issue.md)
+      - v1.1.53 {#v1-1-53}
+         - [Overzicht: [!DNL Quality Patches Tool]  (QPT) v1.1.53](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-53/overview.md)
       - [Patch controleren voor Adobe Commerce-probleem met het gereedschap Kwaliteitspatches](quality-patches-tool/patches-available-in-qpt/check-patch-for-magento-issue-with-magento-quality-patches.md)
 
 - Verwijzing naar opdrachtregelprogramma&#39;s {#cli-reference}
