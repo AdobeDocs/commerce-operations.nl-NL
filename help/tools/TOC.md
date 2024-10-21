@@ -2,9 +2,9 @@
 user-guide-title: Gereedschappen
 user-guide-description: Leer meer over de verschillende gereedschappen die u met Adobe Commerce kunt gebruiken, hun gebruik, het installatieproces en hoe u toegang krijgt.
 feature: Configuration
-source-git-commit: b8c0788fa99ff4e4965a12fd8c6177b919ace083
+source-git-commit: 4a595d153b7b14939f9238e404ea3485f348dcdb
 workflow-type: tm+mt
-source-wordcount: '5963'
+source-wordcount: '5975'
 ht-degree: 0%
 
 ---
@@ -631,6 +631,7 @@ ht-degree: 0%
          - [ACSD-60326: GraphQL-query voor status van klant [!UICONTROL Returns] geeft een fout](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-51/acsd-60326-graphql-query-error-customer-return-status.md)
       - v1.1.52 {#v1-1-52}
          - [Overzicht: [!DNL Quality Patches Tool]  (QPT) v1.1.52](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-52/overview.md)
+         - [ACSD-61366: Bak/magento opstelling :static-content: stelt —banen 4 bevel met fout op](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-52/acsd-61366-setup-command-fails-with-error.md)
          - [ACSD-61322: producten die niet aan [!UICONTROL Shared Catalogue] zijn toegewezen, worden opgenomen in XML-itemap](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-52/acsd-61322-products-not-assigned-to-shared-catalogue.md)
          - [ACSD-60590: Verbeterende prestaties van Bestsellers Aggregated Daily Report Generation](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-52/acsd-60590-optimized-bestseller-report-generation.md)
          - [ACSD-59925: Items sorteren in [!UICONTROL Media Gallery]](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-52/acsd-59925-sorting-items-in-media-gallery.md)
