@@ -3,7 +3,7 @@ title: Externe opslag configureren
 description: Leer hoe te om de module van de Verre Opslag voor de op-gebouwCommerce toepassing te vormen.
 feature: Configuration, Storage
 exl-id: 0428f889-46b0-44c9-8bd9-98c1be797011
-source-git-commit: 2a45fe77d5a6fac089ae2c55d0ad047064dd07b0
+source-git-commit: 4fce6763ec619b0b5069e71cced9ebeb81505304
 workflow-type: tm+mt
 source-wordcount: '510'
 ht-degree: 0%
@@ -12,15 +12,27 @@ ht-degree: 0%
 
 # Externe opslag configureren
 
-De module Externe opslag biedt de optie om mediabestanden op te slaan en de import en export te plannen in een permanente, externe opslagcontainer met behulp van een opslagservice, zoals AWS S3. Standaard worden mediabestanden in de Adobe Commerce-toepassing opgeslagen in hetzelfde bestandssysteem dat de toepassing bevat. Dit is inefficiënt voor complexe configuraties met meerdere servers en kan leiden tot verminderde prestaties bij het delen van bronnen. Met de module Externe opslag kunt u mediabestanden opslaan in de map `pub/media` en bestanden importeren/exporteren in de map `var` van de opslagmap voor externe objecten om te profiteren van het vergroten of verkleinen van afbeeldingen aan de serverzijde.
+De module Externe opslag biedt de optie om mediabestanden op te slaan en de import en export te plannen in een permanente, externe opslagcontainer met behulp van een opslagservice, zoals AWS S3.
+
+Standaard worden mediabestanden in de Adobe Commerce-toepassing opgeslagen in hetzelfde bestandssysteem dat de toepassing bevat. Dit is inefficiënt voor complexe configuraties met meerdere servers en kan leiden tot verminderde prestaties bij het delen van bronnen. Met de module Externe opslag kunt u mediabestanden opslaan in de map `pub/media` en bestanden importeren/exporteren in de map `var` van de opslagmap voor externe objecten om te profiteren van het vergroten of verkleinen van afbeeldingen aan de serverzijde.
+
+>[!BEGINSHADEBOX]
+
+U kunt niet zowel externe opslag _als_ die gegevensbestandopslag hebben tezelfdertijd wordt toegelaten. U moet de databaseopslag uitschakelen voordat u externe opslag inschakelt.
+
+```bash
+bin/magento config:set system/media_storage_configuration/media_database 0
+```
+
+Het inschakelen van externe opslag kan van invloed zijn op uw bestaande ontwikkelervaring. Bepaalde PHP-bestandsfuncties werken bijvoorbeeld mogelijk niet naar behoren. Het gebruik van Commerce Framework voor bestandsbewerkingen moet worden afgedwongen. De lijst van verboden PHP inheemse functies is beschikbaar in [ magento-coding-standard ](https://github.com/magento/magento-coding-standard/blob/develop/Magento2/Sniffs/Functions/DiscouragedFunctionSniff.php) bewaarplaats.
+
+>[!ENDSHADEBOX]
 
 >[!INFO]
 >
->Externe opslag is alleen beschikbaar voor Commerce versie 2.4.2 en hoger. Zie [ 2.4.2 versienota&#39;s ](https://devdocs.magento.com/guides/v2.4/release-notes/open-source-2-4-2.html).
-
->[!INFO]
+>- Externe opslag is alleen beschikbaar voor Commerce versie 2.4.2 en hoger. Zie [ 2.4.2 versienota&#39;s ](https://devdocs.magento.com/guides/v2.4/release-notes/open-source-2-4-2.html).
 >
->De Verre opslagmodule heeft _beperkte_ steun op Adobe Commerce op wolkeninfrastructuur. Adobe kan de service van de externe opslagadapter niet volledig oplossen. Zie [ verre opslag voor Commerce op de infrastructuur van de Wolk ](cloud-support.md) voor begeleiding die verre opslag voor wolkenprojecten uitvoeren.
+>- De Verre opslagmodule heeft _beperkte_ steun op Adobe Commerce op wolkeninfrastructuur. Adobe kan de service van de externe opslagadapter niet volledig oplossen. Zie [ verre opslag voor Commerce op de infrastructuur van de Wolk ](cloud-support.md) voor begeleiding die verre opslag voor wolkenprojecten uitvoeren.
 
 ![ schemabeeld ](../../assets/configuration/remote-storage-schema.png)
 
@@ -69,18 +81,6 @@ U kunt externe opslag installeren tijdens een Adobe Commerce-installatie of exte
 >
 >Voor Adobe Commerce op wolkeninfrastructuur, zie [ verre opslag voor Commerce op de infrastructuur van de Wolk vormen ](cloud-support.md).
 
-## Beperkingen
-
-U kunt niet tegelijkertijd zowel externe opslag als databaseopslag inschakelen. Schakel databaseopslag uit als u externe opslag gebruikt.
-
-```bash
-bin/magento config:set system/media_storage_configuration/media_database 0
-```
-
-Het inschakelen van externe opslag kan van invloed zijn op uw bestaande ontwikkelervaring. Bepaalde PHP-bestandsfuncties werken bijvoorbeeld mogelijk niet naar behoren. Het gebruik van Commerce Framework voor bestandsbewerkingen moet worden afgedwongen.
-
-De lijst van verboden PHP inheemse functies is beschikbaar in [ magento-coding-standard bewaarplaats ][code-standard].
-
 ## Inhoud migreren
 
 Nadat u verre opslag voor een specifieke adapter toelaat, kunt u CLI gebruiken om bestaande _media_ dossiers aan de verre opslag te migreren.
@@ -96,4 +96,3 @@ Nadat u verre opslag voor een specifieke adapter toelaat, kunt u CLI gebruiken o
 <!-- link definitions -->
 
 [import-export]: https://docs.magento.com/user-guide/system/data-scheduled-import-export.html
-[code-standard]: https://github.com/magento/magento-coding-standard/blob/develop/Magento2/Sniffs/Functions/DiscouragedFunctionSniff.php
