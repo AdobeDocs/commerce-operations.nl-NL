@@ -2,9 +2,9 @@
 user-guide-title: Gereedschappen
 user-guide-description: Leer meer over de verschillende gereedschappen die u met Adobe Commerce kunt gebruiken, hun gebruik, het installatieproces en hoe u toegang krijgt.
 feature: Configuration
-source-git-commit: fec2ee4a047d8b33fa1cb3b2c4d9364f925fa028
+source-git-commit: d146972c919934452f40521141842524a80d4da6
 workflow-type: tm+mt
-source-wordcount: '6061'
+source-wordcount: '6071'
 ht-degree: 0%
 
 ---
@@ -625,6 +625,7 @@ ht-degree: 0%
          - [ACSD-60303: probleem met plaatsing van beheerbestellingen is opgelost waarbij HTML-miniatuur is ingeschakeld](quality-patches-tool/patches-available-in-qpt/v1-1-50/acsd-60303-admin-order-placement-fix.md)
       - v1.1.51 {#v1-1-51}
          - [Overzicht: [!DNL Quality Patches Tool]  (QPT) v1.1.51](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-51/overview.md)
+         - [ACSD-60234: [!DNL PayPal]  toont een onjuist bedrag wanneer de korting wordt toegepast](quality-patches-tool/patches-available-in-qpt/v1-1-51/acsd-60234-paypal-shows-an-incorrect-amount-when-discount-is-applied.md)
          - [ACSD-60632: adres opgeslagen bij elke poging tot bestelling](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-51/acsd-60632-address-saved-on-every-order-attempt.md)
          - [ACSD-61195: GraphQL-aanvraag voor winkelwagentje leidt niet tot het retourneren van objecten op de laatste pagina](quality-patches-tool/patches-available-in-qpt/v1-1-51/acsd-61195-empty-cart-on-final-graphql-page.md)
          - [ACSD-60538: kenmerken tonen niet of een product is uitgeschakeld](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-51/acsd-60538-if-product-is-disabled-attributes-dont-show.md)
