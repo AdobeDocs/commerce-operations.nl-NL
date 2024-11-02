@@ -2,7 +2,7 @@
 title: Geavanceerde installatie op locatie
 description: Meer informatie over geavanceerde installatiescenario's voor Adobe Commerce op infrastructuren die u bezit.
 exl-id: e16e750a-e068-4a63-8ad9-62043e2a8231
-source-git-commit: ca8dc855e0598d2c3d43afae2e055aa27035a09b
+source-git-commit: 79c8a15fb9686dd26d73805e9d0fd18bb987770d
 workflow-type: tm+mt
 source-wordcount: '2314'
 ht-degree: 0%
@@ -119,7 +119,7 @@ Met de volgende opties geeft u de gebruikersgegevens en gebruikersgegevens voor 
 
 U kunt de Admin-gebruiker tijdens of na de installatie maken. Als u de gebruiker tijdens de installatie creeert, zijn alle admin credentievariabelen vereist. Zie [ installaties van de Steekproef localhost ](#sample-localhost-installations).
 
-De volgende tabellen bevatten veel, maar niet alle beschikbare installatieparameters. Voor een volledige lijst, zie de [ bevel-lijn Verwijzing van Hulpmiddelen ](https://devdocs.magento.com/guides/v2.4/reference/cli/magento.html).
+De volgende tabellen bevatten veel, maar niet alle beschikbare installatieparameters. Voor een volledige lijst, zie de [ bevel-lijn Verwijzing van Hulpmiddelen ](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/cli-reference/commerce-on-premises).
 
 | Naam | Waarde | Vereist? |
 |--- |--- |--- |

@@ -2,7 +2,7 @@
 title: Overzicht van de configuratiehandleiding
 description: Ontdek meer over alle configureerbare functies en services voor uw Adobe Commerce-applicatie.
 exl-id: c4997792-5a47-4ae5-903a-7e5d7235e42e
-source-git-commit: ddf988826c29b4ebf054a4d4fb5f4c285662ef4e
+source-git-commit: 987d65b52437fbd21f41600bb5741b3cc43d01f3
 workflow-type: tm+mt
 source-wordcount: '144'
 ht-degree: 9%
@@ -25,7 +25,7 @@ De _gids van de Configuratie_ verstrekt verwijzingsmateriaal en beperkte begelei
 
 ## Commerce Admin-configuratie
 
-Er zijn overeenkomstige onderwerpen in de [ Gids van de Gebruiker van Commerce ](https://docs.magento.com/user-guide/stores/configuration.html) die u kan helpen om gebiedsbeschrijvingen voor elke configuratie te begrijpen die in Commerce Admin plaatst.
+Er zijn overeenkomstige onderwerpen in de [ Gids van de Gebruiker van Commerce ](https://experienceleague.adobe.com/en/docs/commerce-admin/config/guide-overview) die u kan helpen om gebiedsbeschrijvingen voor elke configuratie te begrijpen die in Commerce Admin plaatst.
 
 ## Cloud-configuratie
 

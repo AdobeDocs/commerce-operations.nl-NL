@@ -4,7 +4,7 @@ description: Leer hoe u instructies over uw Adobe Commerce-site doorgeeft aan we
 role: Developer
 feature: Best Practices
 exl-id: f3a81bab-a47a-46ad-b334-920df98c87ab
-source-git-commit: e1e7ad76b1df8e920ab7f9740fd4be8dc7335954
+source-git-commit: 987d65b52437fbd21f41600bb5741b3cc43d01f3
 workflow-type: tm+mt
 source-wordcount: '547'
 ht-degree: 0%
@@ -35,7 +35,7 @@ Een standaard Adobe Commerce-project bevat een hiërarchie die één website, wi
 
 Volg de onderstaande tips en trucs bij het configureren van `robots.txt` - en `sitemap.xml` -bestanden voor Single-Site-winkels:
 
-- Zorg ervoor dat uw project [`ece-tools` ](https://devdocs.magento.com/cloud/release-notes/ece-release-notes.html) versie 2002.0.12 of later gebruikt.
+- Zorg ervoor dat uw project [`ece-tools` ](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/release-notes/ece-tools-package) versie 2002.0.12 of later gebruikt.
 - Gebruik de beheertoepassing om inhoud toe te voegen aan het `robots.txt` -bestand.
 
   >[!TIP]
@@ -64,12 +64,12 @@ Volg de onderstaande tips en trucs bij het configureren van `robots.txt` - en `s
 
 >[!INFO]
 >
->Zie [ plaatskaart en onderzoekmachine robots ](https://devdocs.magento.com/cloud/trouble/robots-sitemap.html) voor gedetailleerde instructies toevoegen.
+>Zie [ plaatskaart en onderzoekmachine robots ](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/configure-store/robots-sitemap) voor gedetailleerde instructies toevoegen.
 
 
 ### Meerdere winkelvoorkeuren
 
-U kunt meerdere winkels instellen en uitvoeren met één Adobe Commerce-implementatie op een cloudinfrastructuur. Zie [ Opstelling veelvoudige websites of opslag ](https://devdocs.magento.com/cloud/project/project-multi-sites.html).
+U kunt meerdere winkels instellen en uitvoeren met één Adobe Commerce-implementatie op een cloudinfrastructuur. Zie [ Opstelling veelvoudige websites of opslag ](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/configure-store/multiple-sites).
 
 De zelfde beste praktijken voor het vormen van de `robots.txt` en `sitemap.xml` dossiers voor [ enig-plaats opslagefronts ](#single-site-storefronts) zijn op multi-site storefronts met twee belangrijke verschillen van toepassing:
 
@@ -111,7 +111,7 @@ Voor stappen om het `robots.txt` dossier uit te geven en alle ingangen van de we
 
 ## Aanvullende informatie
 
-- [ Begrip websites, opslag, en opslagmeningen ](https://devdocs.magento.com/cloud/configure/configure-best-practices.html#sites)
-- [ Toevoegend websites ](https://docs.magento.com/user-guide/stores/stores-all-create-website.html)
-- [ Gebruik snel om kwaadwillig verkeer voor uw plaatsen van Adobe Commerce te blokkeren ](https://devdocs.magento.com/cloud/cdn/fastly-vcl-blocking.html)
+- [ Begrip websites, opslag, en opslagmeningen ](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/configure-store/best-practices)
+- [ Toevoegend websites ](https://experienceleague.adobe.com/en/docs/commerce-admin/stores-sales/site-store/stores#add-websites)
+- [ Gebruik snel om kwaadwillig verkeer voor uw plaatsen van Adobe Commerce te blokkeren ](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/cdn/custom-vcl-snippets/fastly-vcl-blocking)
 - [ robots.txt geeft een fout 404 in Adobe Commerce op wolkeninfrastructuur 2.3.x ](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/robots.txt-gives-404-error-magento-commerce-cloud-2.3.x.html)

@@ -2,7 +2,7 @@
 title: Omgaan met upgradebereik
 description: Leer over achterwaartse onverenigbare veranderingen in een versie die de douanemodules van Adobe Commerce of derdeuitbreidingen zou kunnen beïnvloeden.
 exl-id: dab2a14f-dbf0-422e-afb4-642e2220ec7a
-source-git-commit: ddf988826c29b4ebf054a4d4fb5f4c285662ef4e
+source-git-commit: 987d65b52437fbd21f41600bb5741b3cc43d01f3
 workflow-type: tm+mt
 source-wordcount: '897'
 ht-degree: 0%
@@ -11,14 +11,14 @@ ht-degree: 0%
 
 # Begrijp het werkingsgebied van verbetering
 
-Herzie de [ versienota&#39;s ](https://devdocs.magento.com/guides/v2.4/release-notes/bk-release-notes.html) om het werkingsgebied van een versie, met inbegrip van verhogingen, insectenmoeilijke situaties, en bekende kwesties te begrijpen die derde en douanemodules zouden kunnen beïnvloeden.
+Herzie de [ versienota&#39;s ](https://experienceleague.adobe.com/en/docs/commerce-operations/release/notes/overview) om het werkingsgebied van een versie, met inbegrip van verhogingen, insectenmoeilijke situaties, en bekende kwesties te begrijpen die derde en douanemodules zouden kunnen beïnvloeden.
 
 ## Achteruit incompatibele wijzigingen
 
 Adobe Commerce-releases kunnen niet-compatibele wijzigingen bevatten. Raadpleeg de volgende bronnen voor documentatie over achterwaartse en incompatibele wijzigingen:
 
-- **[Belangrijke veranderingshoogtepunten ](https://devdocs.magento.com/guides/v2.4/release-notes/backward-incompatible-changes/index.html)** - Veranderingen die een belangrijk effect hebben en gedetailleerde verklaring en speciale instructies vereisen om ervoor te zorgen dat de derdemodules blijven werkend.
-- **[kleine veranderingsverwijzing ](https://devdocs.magento.com/guides/v2.4/release-notes/backward-incompatible-changes/reference.html)** - de documentatie van de Verwijzing die van de codebasis wordt geproduceerd die minder belangrijke veranderingen in klassen, API lidmaatschap, gegevensbestand, gebiedsinjectie, interfaces, lay-outs, systeem, en XSD beschrijft.
+- **[Belangrijke veranderingshoogtepunten ](https://developer.adobe.com/commerce/php/development/backward-incompatible-changes/highlights/)** - Veranderingen die een belangrijk effect hebben en gedetailleerde verklaring en speciale instructies vereisen om ervoor te zorgen dat de derdemodules blijven werkend.
+- **[kleine veranderingsverwijzing ](https://developer.adobe.com/commerce/php/development/backward-incompatible-changes/reference/)** - de documentatie van de Verwijzing die van de codebasis wordt geproduceerd die minder belangrijke veranderingen in klassen, API lidmaatschap, gegevensbestand, gebiedsinjectie, interfaces, lay-outs, systeem, en XSD beschrijft.
 
 ## Extensies van derden
 
@@ -26,7 +26,7 @@ Het nieuwe verenigbaarheidsbeleid van Adobe Commerce Marketplace zorgt ervoor da
 
 ## Aangepaste modules
 
-Alle douanemodules zouden tegen de doelversie moeten worden gecontroleerd u aan bevordert. Dit is het meest tijd- en middel-intensieve proces van een verbetering. Wanneer het evalueren van uw douanemodules, moet u achteruit-incompatibele veranderingen zoeken en zich van nieuwe praktijken, zoals controlemechanismedecompositie bewust zijn. U kunt meer over dit in de [ versienota&#39;s ](https://devdocs.magento.com/guides/v2.4/release-notes/bk-release-notes.html) leren. Ook, zorg ervoor dat u [ beste praktijken ](https://developer.adobe.com/commerce/php/best-practices/extensions/) voor moduleontwikkeling volgt.
+Alle douanemodules zouden tegen de doelversie moeten worden gecontroleerd u aan bevordert. Dit is het meest tijd- en middel-intensieve proces van een verbetering. Wanneer het evalueren van uw douanemodules, moet u achteruit-incompatibele veranderingen zoeken en zich van nieuwe praktijken, zoals controlemechanismedecompositie bewust zijn. U kunt meer over dit in de [ versienota&#39;s ](https://experienceleague.adobe.com/en/docs/commerce-operations/release/notes/overview) leren. Ook, zorg ervoor dat u [ beste praktijken ](https://developer.adobe.com/commerce/php/best-practices/extensions/) voor moduleontwikkeling volgt.
 
 ## [!DNL Upgrade Compatibility Tool]
 

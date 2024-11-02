@@ -3,7 +3,7 @@ title: 'ACSD-44938: VAT_ID kan niet worden toegepast in GraphQL-aanvraag voor ga
 description: De ACSD-44938-patch verhelpt het probleem dat de VAT_ID niet kan worden toegepast in een GraphQL-aanvraag voor een gastgebruiker. Deze patch is beschikbaar wanneer [Quality Patches Tool (QPT)] (https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/announcements/commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches) 1.1.18 is geïnstalleerd. De patch-id is ACSD-44938. Het probleem wordt volgens de planning opgelost in Adobe Commerce 2.4.6.
 feature: Admin Workspace, GraphQL
 role: Admin
-source-git-commit: 7f17f1b286f635b8f65ac877e9de5f1d1a6a6461
+source-git-commit: 79c8a15fb9686dd26d73805e9d0fd18bb987770d
 workflow-type: tm+mt
 source-wordcount: '412'
 ht-degree: 0%
@@ -34,12 +34,12 @@ VAT_ID kan niet worden toegepast in een GraphQL-aanvraag voor een gastgebruiker.
 
 <u> Stappen om </u> te reproduceren:
 
-1. Volg de stappen in de [ zelfstudie van GraphQL ](https://devdocs.magento.com/guides/v2.4/graphql/tutorials/checkout/checkout-shopping-cart.html) in onze ontwikkelaarsdocumentatie worden vermeld om een gastkarretje tot stand te brengen die.
+1. Volg de stappen in de [ zelfstudie van GraphQL ](https://developer.adobe.com/commerce/webapi/graphql/tutorials/checkout/checkout-shopping-cart.html) in onze ontwikkelaarsdocumentatie worden vermeld om een gastkarretje tot stand te brengen die.
 1. Probeer met GraphQL BTW-ID toe te passen op de gastgebruiker.
 
 <u> Verwachte resultaten </u>:
 
-VAT_ID kan op dezelfde manier worden toegepast als voor een geregistreerde klant. Zie [ createCustomerAddress mutation ](https://devdocs.magento.com/guides/v2.4/graphql/mutations/create-customer-address.html) artikel in onze ontwikkelaarsdocumentatie.
+VAT_ID kan op dezelfde manier worden toegepast als voor een geregistreerde klant. Zie [ createCustomerAddress mutation ](https://developer.adobe.com/commerce/webapi/graphql/mutations/create-customer-address.html) artikel in onze ontwikkelaarsdocumentatie.
 
 <u> Ware resultaten </u>:
 

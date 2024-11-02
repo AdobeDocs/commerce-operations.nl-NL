@@ -3,7 +3,7 @@ title: "MDVA-42806: Nieuwe e-mail voor de registratie van bedrijven wordt verzon
 description: Met de MDVA-42806-patch wordt het probleem opgelost waarbij telkens een nieuwe bedrijfsregistratie-e-mail wordt verzonden wanneer een bestaand bedrijf via REST API wordt bijgewerkt. Deze patch is beschikbaar wanneer [Quality Patches Tool (QPT)] (https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/announcements/commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches) 1.1.9 is geïnstalleerd. De patch-id is MDVA-42806. Het probleem wordt volgens de planning opgelost in Adobe Commerce 2.4.5.
 feature: REST, B2B, Communications, Companies
 role: Admin
-source-git-commit: 7f17f1b286f635b8f65ac877e9de5f1d1a6a6461
+source-git-commit: 987d65b52437fbd21f41600bb5741b3cc43d01f3
 workflow-type: tm+mt
 source-wordcount: '431'
 ht-degree: 0%
@@ -39,7 +39,7 @@ B2B-modules geïnstalleerd.
 <u> Stappen om </u> te reproduceren:
 
 1. Maak een bedrijfsaccount.
-1. Gebruik het eindpunt `/V1&#x200B;/company&#x200B;/<company_id>` . Om het gecreeerde bedrijf bij te werken, zie [ het bedrijf ](https://devdocs.magento.com/guides/v2.4/b2b/company-object.html#update-the-company) in onze ontwikkelaarsdocumentatie bijwerken. Hieronder ziet u een voorbeeld van een lading:
+1. Gebruik het eindpunt `/V1&#x200B;/company&#x200B;/<company_id>` . Om het gecreeerde bedrijf bij te werken, zie [ het bedrijf ](https://developer.adobe.com/commerce/webapi/rest/b2b/company-object/#update-the-company) in onze ontwikkelaarsdocumentatie bijwerken. Hieronder ziet u een voorbeeld van een lading:
 
 ```php
 {

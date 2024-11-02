@@ -4,7 +4,7 @@ description: Leer hoe u database- en toepassingsinstellingen configureert om de 
 role: Developer, Admin
 feature: Best Practices
 exl-id: ca377dc8-c8bd-4f77-a24b-22a298e2bba4
-source-git-commit: fb449f0ee7d503d0c7ba60bf6bfbe3f528060606
+source-git-commit: 987d65b52437fbd21f41600bb5741b3cc43d01f3
 workflow-type: tm+mt
 source-wordcount: '651'
 ht-degree: 0%
@@ -59,9 +59,9 @@ Voer de volgende opdracht uit om te bepalen welke zoekengine momenteel wordt geb
 
 Zie voor configuratieinstructies de Developer Guide for Adobe Commerce on cloud:
 
-- [ Opstelling de dienst OpenSearch ](https://devdocs.magento.com/cloud/project/services-opensearch.html)
+- [ Opstelling de dienst OpenSearch ](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/configure/service/opensearch)
 
-- [ Opstelling de dienst van de Elasticsearch ](https://devdocs.magento.com/cloud/project/services-elastic.html)
+- [ Opstelling de dienst van de Elasticsearch ](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/configure/service/elasticsearch)
 
 ## Aangepaste triggers voorkomen
 
@@ -76,7 +76,7 @@ Om over alternatieven te leren om douanetriggers te gebruiken, zie [ trekkers My
 
 ## Upgrade [!DNL ECE-Tools] naar versie 2002.0.21 of hoger {#ece-tools-version}
 
-Om potentiële problemen met kroonsloten te vermijden, bevorder ECE-Hulpmiddelen aan versie 2002.0.21 of hoger. Voor instructies, zie `ece-tools` versie ](https://devdocs.magento.com/cloud/project/ece-tools-update.html) van de Update 0} {in onze ontwikkelaarsdocumentatie.[
+Om potentiële problemen met kroonsloten te vermijden, bevorder ECE-Hulpmiddelen aan versie 2002.0.21 of hoger. Voor instructies, zie `ece-tools` versie ](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/dev-tools/ece-tools/update-package) van de Update 0} {in onze ontwikkelaarsdocumentatie.[
 
 ## Veilig overschakelen op indexmodus
 

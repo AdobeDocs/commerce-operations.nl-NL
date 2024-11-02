@@ -3,7 +3,7 @@ title: Cache wissen met Varnish
 description: Leer hoe het leegmaken van cache werkt met Varnish en hoe u dit gebruikt als een web-caching accelerator voor de Adobe Commerce-toepassing.
 feature: Configuration, Cache
 exl-id: 866da415-c428-4092-a045-c3079493cdc4
-source-git-commit: 8d0d8f9822b88f2dd8cbae8f6d7e3cdb14cc4848
+source-git-commit: 79c8a15fb9686dd26d73805e9d0fd18bb987770d
 workflow-type: tm+mt
 source-wordcount: '367'
 ht-degree: 0%
@@ -42,7 +42,7 @@ Nadat u Varnish hebt geïnstalleerd en geconfigureerd om met Commerce te werken,
 
 ## Commerce configureren om vernis te zuiveren
 
-Commerce zuivert de gastheren van Varnish nadat u de gastheren van Varnish gebruikend het [`magento setup:config:set` ](https://devdocs.magento.com/guides/v2.4/reference/cli/magento.html#setupconfigset) bevel vormt.
+Commerce zuivert de gastheren van Varnish nadat u de gastheren van Varnish gebruikend het [`magento setup:config:set` ](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/cli-reference/commerce-on-premises#setupconfigset) bevel vormt.
 
 U kunt de optionele parameter `--http-cache-hosts` gebruiken om een door komma&#39;s gescheiden lijst met varens-hosts op te geven en poorten te beluisteren. Vorm alle gastheren van Varnish, of u één of vele hebt. (Plaats geen spatie tussen de hosts.)
 

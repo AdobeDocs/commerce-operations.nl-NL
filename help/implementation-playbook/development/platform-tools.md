@@ -3,7 +3,7 @@ title: Platform Tools
 description: Kies de aanbevolen platformgereedschappen voor uw Adobe Commerce-implementatie.
 exl-id: 3fc164f9-a0fc-46e7-a54e-08ce101ccae7
 feature: Configuration
-source-git-commit: 94d7a57dcd006251e8eefbdb4ec3a5e140bf43f9
+source-git-commit: 987d65b52437fbd21f41600bb5741b3cc43d01f3
 workflow-type: tm+mt
 source-wordcount: '732'
 ht-degree: 0%
@@ -66,7 +66,7 @@ De rijen van het bericht verstrekken een asynchroon communicatie mechanisme waar
 
 ## Beveiligingsgereedschappen
 
-Het [ Hulpmiddel van het Scannen van de Veiligheid van Adobe Commerce ](https://docs.magento.com/user-guide/magento/security-scan.html) laat u toe om uw opslagwebsites regelmatig te controleren en updates voor bekende veiligheidsrisico&#39;s, malware, en verouderde software te ontvangen. Doorgaans gebruikt u dit gereedschap wanneer u met het testen van gebruikersacceptatie (UAT) begint. Naast het Adobe Commerce Security Scan-hulpprogramma, dat gratis is en beschikbaar is voor alle implementaties en versies van Adobe Commerce, zijn er andere opties die kunnen worden gebruikt tijdens het CI/CD-proces en voor elke release.
+Het [ Hulpmiddel van het Scannen van de Veiligheid van Adobe Commerce ](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/security/security-scan) laat u toe om uw opslagwebsites regelmatig te controleren en updates voor bekende veiligheidsrisico&#39;s, malware, en verouderde software te ontvangen. Doorgaans gebruikt u dit gereedschap wanneer u met het testen van gebruikersacceptatie (UAT) begint. Naast het Adobe Commerce Security Scan-hulpprogramma, dat gratis is en beschikbaar is voor alle implementaties en versies van Adobe Commerce, zijn er andere opties die kunnen worden gebruikt tijdens het CI/CD-proces en voor elke release.
 
 SonarQube is een open-source platform voor kwaliteitsbeheer, ontworpen om de technische kwaliteit van uw code te analyseren en te meten. SonarQube biedt niet alleen een volledig rapport van codefouten, syntaxisfouten en kwetsbaarheden, maar ook suggesties en voorbeelden voor het corrigeren van de code. SonarQube is perfect voor gebruik in een CI/CD-omgeving als hulpmiddel om de code te analyseren voordat deze wordt geïmplementeerd.
 

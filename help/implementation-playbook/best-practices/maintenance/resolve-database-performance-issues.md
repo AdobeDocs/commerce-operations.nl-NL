@@ -4,7 +4,7 @@ description: Leer hoe u databaseproblemen kunt verhelpen die de prestaties vertr
 role: Developer, Admin
 feature: Best Practices
 exl-id: e40e0564-a4eb-43a8-89dd-9f6c5cedb4a7
-source-git-commit: 94d7a57dcd006251e8eefbdb4ec3a5e140bf43f9
+source-git-commit: 987d65b52437fbd21f41600bb5741b3cc43d01f3
 workflow-type: tm+mt
 source-wordcount: '541'
 ht-degree: 0%
@@ -38,7 +38,7 @@ Met MySQL kunt u langdurige query&#39;s op elk Adobe Commerce-infrastructuurproj
 Als uw project van Adobe Commerce op Pro architectuur wordt opgesteld, kunt u Toolkit Percona gebruiken om vragen te analyseren.
 
 1. Voer de opdracht `pt-query-digest --type=slowlog` uit op basis van MySQL langzame querylogs.
-   * Zie **[!UICONTROL Log locations > Service Logs]** (https://devdocs.magento.com/cloud/project/log-locations.html#service-logs) in de ontwikkelaarsdocumentatie voor informatie over de locatie van de trage querylogboeken.
+   * Zie **[!UICONTROL Log locations > Service Logs]** (https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/develop/test/log-locations#service-logs) in de ontwikkelaarsdocumentatie voor informatie over de locatie van de trage querylogboeken.
    * Zie [ Toolkit Percona > pt-vraag-samenvatting ](https://www.percona.com/doc/percona-toolkit/LATEST/pt-query-digest.html#pt-query-digest) documentatie.
 1. Gebaseerd op de gevonden kwesties, onderneem stappen om de vraag te bevestigen zodat loopt het sneller.
 

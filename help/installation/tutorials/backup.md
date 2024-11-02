@@ -2,7 +2,7 @@
 title: Back-up maken van het bestandssysteem, de media en de database en deze terugdraaien
 description: Ga als volgt te werk om een back-up te maken van uw Adobe Commerce-toepassing en deze te herstellen.
 exl-id: b9925198-37b4-4456-aa82-7c55d060c9eb
-source-git-commit: ca8dc855e0598d2c3d43afae2e055aa27035a09b
+source-git-commit: 987d65b52437fbd21f41600bb5741b3cc43d01f3
 workflow-type: tm+mt
 source-wordcount: '506'
 ht-degree: 0%
@@ -23,7 +23,7 @@ Na het steunen, kunt u [ terugschroeven van prijzen ](#rollback) later.
 
 >[!TIP]
 >
->Voor Adobe Commerce op de projecten van de wolkeninfrastructuur, zie [ Momentopnamen en reservebeheer ](https://devdocs.magento.com/cloud/project/project-webint-snap.html) in de _gids van de Wolk_.
+>Voor Adobe Commerce op de projecten van de wolkeninfrastructuur, zie [ Momentopnamen en reservebeheer ](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/develop/storage/snapshots) in de _gids van de Wolk_.
 
 ## Back-ups inschakelen
 

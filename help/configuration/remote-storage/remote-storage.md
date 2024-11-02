@@ -3,7 +3,7 @@ title: Externe opslag configureren
 description: Leer hoe te om de module van de Verre Opslag voor de op-gebouwCommerce toepassing te vormen.
 feature: Configuration, Storage
 exl-id: 0428f889-46b0-44c9-8bd9-98c1be797011
-source-git-commit: 4fce6763ec619b0b5069e71cced9ebeb81505304
+source-git-commit: 419a21604d1fda0a76dd0375ae2340fd6e59ec89
 workflow-type: tm+mt
 source-wordcount: '510'
 ht-degree: 0%
@@ -30,7 +30,7 @@ Het inschakelen van externe opslag kan van invloed zijn op uw bestaande ontwikke
 
 >[!INFO]
 >
->- Externe opslag is alleen beschikbaar voor Commerce versie 2.4.2 en hoger. Zie [ 2.4.2 versienota&#39;s ](https://devdocs.magento.com/guides/v2.4/release-notes/open-source-2-4-2.html).
+>- Externe opslag is alleen beschikbaar voor Commerce versie 2.4.2 en hoger. Zie [ 2.4.2 versienota&#39;s ](https://experienceleague.adobe.com/en/docs/commerce-operations/release/notes/magento-open-source/2-4-2).
 >
 >- De Verre opslagmodule heeft _beperkte_ steun op Adobe Commerce op wolkeninfrastructuur. Adobe kan de service van de externe opslagadapter niet volledig oplossen. Zie [ verre opslag voor Commerce op de infrastructuur van de Wolk ](cloud-support.md) voor begeleiding die verre opslag voor wolkenprojecten uitvoeren.
 

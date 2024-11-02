@@ -3,7 +3,7 @@ title: Beveiliging van de cloudinfrastructuur
 description: Leer hoe Adobe Adobe Commerce veilig houdt op de cloudinfrastructuur.
 exl-id: cd5d1106-c8db-4b70-b1c7-12378d7d77a7
 feature: Cloud, Security
-source-git-commit: 8d8cd0d33c1a3a95186948e670df6d9865b9a871
+source-git-commit: 987d65b52437fbd21f41600bb5741b3cc43d01f3
 workflow-type: tm+mt
 source-wordcount: '1691'
 ht-degree: 0%
@@ -27,15 +27,15 @@ Zie [ het Snelle overzicht van de diensten ](https://experienceleague.adobe.com/
 
 ## Web Application Firewall
 
-De Snelle Firewall van de Toepassing van het Web (WAF) wordt gebruikt om extra bescherming te verstrekken. De op wolk gebaseerde WAF van Fastly gebruikt derderegels van commerciële en open-bronbronnen zoals de Ruleset van de Kern OWASP. Bovendien zijn er specifieke Adobe Commerce-regels. De klanten worden beschermd tegen zeer belangrijke toepassing-laag aanvallen, met inbegrip van injectieaanvallen en kwaadwillige input, dwars-plaats scripting, gegevensexfiltratie, het protocolschendingen van HTTP, en andere OWASP top tien bedreigingen.
+De snelste firewall van de Toepassing van het Web (WAF) wordt gebruikt om extra bescherming te verstrekken. De op cloud gebaseerde WAF van Fastly maakt gebruik van regels van derden van commerciële en open-source bronnen zoals de OWASP Core Ruleset. Bovendien zijn er specifieke Adobe Commerce-regels. De klanten worden beschermd tegen zeer belangrijke toepassing-laag aanvallen, met inbegrip van injectieaanvallen en kwaadwillige input, dwars-plaats scripting, gegevensexfiltratie, het protocolschendingen van HTTP, en andere OWASP top tien bedreigingen.
 
-De WAF-regels worden door Adobe Commerce bijgewerkt als nieuwe kwetsbaarheden worden gedetecteerd, zodat Managed Services beveiligingsproblemen voor softwarepatches zo goed mogelijk kan verhelpen. De Fastly WAF biedt geen diensten voor tariefbeperking of botdetectie. Indien gewenst kunnen klanten een licentie voor een service voor botdetectie van derden verkrijgen die compatibel is met Fastly.
+De WAF-regels worden door Adobe Commerce bijgewerkt als er nieuwe kwetsbaarheden worden gedetecteerd, zodat Managed Services beveiligingsproblemen voor softwarepatches zo goed mogelijk kan verhelpen. De Fastly WAF biedt geen snelheidsbeperkende of botdetectiediensten. Indien gewenst kunnen klanten een licentie voor een service voor botdetectie van derden verkrijgen die compatibel is met Fastly.
 
 Zie {de Firewall van de Toepassing van 0} Web (WAF) ](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/cdn/fastly-waf-service.html) in de _Gids van de Wolk_.[
 
 ## Virtuele privécloud
 
-De productieomgeving van het Adobe Commerce Pro-plan is geconfigureerd als een Virtual Private Cloud (VPC), zodat productieservers geïsoleerd zijn en slechts beperkt in staat zijn om verbinding te maken met en uit de cloud-omgeving. Alleen veilige verbindingen met de cloudservers zijn toegestaan. Beveiligde protocollen zoals SFTP of rsync kunnen worden gebruikt voor bestandsoverdracht.
+De productieomgeving van het Adobe Commerce Pro-plan is zo geconfigureerd als een Virtual Private Cloud (VPC) dat productieservers geïsoleerd zijn en slechts beperkte mogelijkheden hebben om verbinding te maken met en uit de cloudomgeving. Alleen veilige verbindingen met de cloudservers zijn toegestaan. Beveiligde protocollen zoals SFTP of rsync kunnen worden gebruikt voor bestandsoverdracht.
 
 De klanten kunnen de tunnels van SSH gebruiken om mededelingen met de toepassing te beveiligen. Voor toegang tot AWS Private Link kan een extra bedrag worden betaald. Alle verbindingen met deze servers worden gecontroleerd met behulp van AWS-beveiligingsgroepen, een virtuele firewall die verbindingen met de omgeving beperkt. De technische middelen van klanten kunnen tot deze servers toegang hebben gebruikend SSH.
 
@@ -59,7 +59,7 @@ Adobe Commerce vereist integratie van betaalgateway, waarbij creditcardgegevens 
 
 ## Adobe Commerce-toepassing
 
-De Adobe test regelmatig de kerntoepassingscode op veiligheidskwetsbaarheid. Patches voor defecten en beveiligingsproblemen worden aan klanten geleverd. Het team van de Veiligheid van het Product valideert de producten van Adobe Commerce volgens de richtlijnen van de toepassingsveiligheid van OWASP. Verschillende hulpprogramma&#39;s voor beveiligingskwetsbaarheidsbeoordeling en externe leveranciers worden gebruikt om de naleving te testen en te controleren. Beveiligingsgereedschappen zijn onder meer:
+De Adobe test regelmatig de kerntoepassingscode op veiligheidskwetsbaarheid. Patches voor defecten en beveiligingsproblemen worden aan klanten geleverd. Het Product Security Team valideert Adobe Commerce-producten volgens de beveiligingsrichtlijnen van de OWASP-toepassing. Verschillende hulpprogramma&#39;s voor beveiligingskwetsbaarheidsbeoordeling en externe leveranciers worden gebruikt om de naleving te testen en te controleren. Beveiligingsgereedschappen zijn onder meer:
 
 - Statisch en dynamisch scannen van veracode
 - Scannen naar RIPS-broncode
@@ -70,7 +70,7 @@ De Adobe test regelmatig de kerntoepassingscode op veiligheidskwetsbaarheid. Pat
 
 De volledige codebasis wordt gescand met deze hulpmiddelen op een tweewekelijkse basis. De klanten worden op de hoogte gebracht van veiligheidspatches door directe e-mail, berichten in de toepassing, en in het [ Centrum van de Veiligheid ](https://helpx.adobe.com/security.html).
 
-Klanten moeten ervoor zorgen dat deze patches binnen 30 dagen na de release op hun aangepaste toepassing worden toegepast, volgens de PCI-richtlijnen. De Adobe verstrekt ook het Hulpmiddel van het Scannen van de a [ Veiligheid ](https://docs.magento.com/user-guide/magento/security-scan.html) dat verkopers toelaat om hun plaatsen regelmatig te controleren en updates over bekende veiligheidsrisico&#39;s, malware, en onbevoegde toegang te ontvangen. Het hulpprogramma Beveiligingsscan is gratis en kan worden uitgevoerd op elke versie van Adobe Commerce.
+Klanten moeten ervoor zorgen dat deze patches binnen 30 dagen na de release op hun aangepaste toepassing worden toegepast, volgens de PCI-richtlijnen. De Adobe verstrekt ook het Hulpmiddel van het Scannen van de a [ Veiligheid ](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/security/security-scan) dat verkopers toelaat om hun plaatsen regelmatig te controleren en updates over bekende veiligheidsrisico&#39;s, malware, en onbevoegde toegang te ontvangen. Het hulpprogramma Beveiligingsscan is gratis en kan worden uitgevoerd op elke versie van Adobe Commerce.
 
 Om veiligheidsonderzoekers aan te moedigen om kwetsbaarheid te identificeren en te melden, heeft Adobe Commerce a [ insect-hinderlijk programma ](https://hackerone.com/magento) naast interne het testen. Bovendien wordt de klant de volledige broncode van de toepassing verstrekt voor hun eigen overzicht indien gewenst.
 
@@ -84,7 +84,7 @@ De enige manier om uitvoerbare code in de de productieomgeving van Managed Servi
 
 ## Logboekregistratie
 
-Alle AWS-activiteiten zijn aangemeld bij AWS CloudTrail. Besturingssysteem-, toepassingsserver- en databaselogboeken worden opgeslagen op de productieservers en opgeslagen in back-ups. Alle wijzigingen in de broncode worden vastgelegd in een Git-opslagplaats. De geschiedenis van de plaatsing is beschikbaar in de Interface van het Web van het Project van Adobe Commerce [ ](https://devdocs.magento.com/cloud/project/projects.html#login). Alle ondersteuningstoegang wordt geregistreerd en de steunzittingen worden geregistreerd.
+Alle AWS-activiteiten zijn aangemeld bij AWS CloudTrail. Besturingssysteem-, toepassingsserver- en databaselogboeken worden opgeslagen op de productieservers en opgeslagen in back-ups. Alle wijzigingen in de broncode worden vastgelegd in een Git-opslagplaats. De geschiedenis van de plaatsing is beschikbaar in de Interface van het Web van het Project van Adobe Commerce [ ](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/project/overview). Alle ondersteuningstoegang wordt geregistreerd en de steunzittingen worden geregistreerd.
 
 Zie [ Logboeken van de Mening en van het beheer ](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/test/log-locations.html) in de _Gids van de Wolk_.
 

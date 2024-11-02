@@ -2,7 +2,7 @@
 title: Configuratie-instellingen overschrijven
 description: Leer hoe te om omgevingsvariabelen te gebruiken om configuratiemontages met voeten te treden.
 exl-id: 788fd3cd-f8c1-4514-8141-547fed36e9ce
-source-git-commit: 95ffff39d82cc9027fa633dffedf15193040802d
+source-git-commit: 987d65b52437fbd21f41600bb5741b3cc43d01f3
 workflow-type: tm+mt
 source-wordcount: '1202'
 ht-degree: 0%
@@ -62,8 +62,8 @@ De algemene indeling van namen van systeeminstellingenvariabelen is als volgt:
   Zie voor meer informatie over het bereik:
 
    - [Stap 1: Zoek de waarde van het bereik van de website- of winkelweergave](#step-1-find-the-website-or-store-view-scope-value)
-   - [ het onderwerp van de Gids van de Gebruiker van Commerce op werkingsgebied ](https://docs.magento.com/user-guide/configuration/scope.html)
-   - [ Snelle verwijzing van het Bereik ](https://docs.magento.com/user-guide/stores/store-scope-reference.html)
+   - [ het onderwerp van de Gids van de Gebruiker van Commerce op werkingsgebied ](https://experienceleague.adobe.com/en/docs/commerce-admin/start/setup/websites-stores-views#scope-settings)
+   - [ Snelle verwijzing van het Bereik ](https://experienceleague.adobe.com/en/docs/commerce-admin/config/scope-change#scope-quick-reference)
 
 `<SYSTEM__VARIABLE__NAME>` is het configuratiepad met dubbele onderstrepingstekens die worden vervangen door `/` . Voor meer informatie, zie [ Stap 2: Plaats systeemvariabelen ](#step-2-set-global-website-or-store-view-variables).
 

@@ -4,7 +4,7 @@ description: Optimaliseer siteprestaties door de rapportmodule te verwijderen al
 role: Admin
 feature: Best Practices, Configuration
 exl-id: 8c991b8a-affb-4a9e-9383-671f595ff89e
-source-git-commit: 94d7a57dcd006251e8eefbdb4ec3a5e140bf43f9
+source-git-commit: 987d65b52437fbd21f41600bb5741b3cc43d01f3
 workflow-type: tm+mt
 source-wordcount: '121'
 ht-degree: 0%
@@ -13,7 +13,7 @@ ht-degree: 0%
 
 # Beste praktijken voor rapportconfiguratie
 
-Als uw zaken niet rapporterend of dynamische functionaliteit van de klantensegmenten vereisen, maak de [ functionaliteit van Rapporten ](https://docs.magento.com/user-guide/configuration/general/reports.html) onbruikbaar om opslagprestaties te verbeteren.
+Als uw zaken niet rapporterend of dynamische functionaliteit van de klantensegmenten vereisen, maak de [ functionaliteit van Rapporten ](https://experienceleague.adobe.com/en/docs/commerce-admin/config/general/reports) onbruikbaar om opslagprestaties te verbeteren.
 
 ## Betrokken producten en versies
 
@@ -32,5 +32,5 @@ Als u niet de Rapporten of dynamische klantensegmenten gebruikt, maak de functio
 
 ## Aanvullende informatie
 
-- [ produceer rapporten in Adobe Commerce ](https://docs.magento.com/user-guide/reports.html)
-- [ dynamische segmenten van de Klant ](https://docs.magento.com/user-guide/marketing/customer-segments.html)
+- [ produceer rapporten in Adobe Commerce ](https://experienceleague.adobe.com/en/docs/commerce-admin/start/reporting/reports-menu)
+- [ dynamische segmenten van de Klant ](https://experienceleague.adobe.com/en/docs/commerce-admin/customers/segments/customer-segments)

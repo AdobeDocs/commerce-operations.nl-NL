@@ -2,7 +2,7 @@
 title: Overzicht van  [!DNL Upgrade Compatibility Tool]
 description: Leer over  [!DNL Upgrade Compatibility Tool]  en hoe het u met uw project van Adobe Commerce kan helpen.
 exl-id: 9493406a-1690-462b-b119-1b685b026c0b
-source-git-commit: fc1be3362863d3b0fa3468380fe62ca698abac43
+source-git-commit: 79c8a15fb9686dd26d73805e9d0fd18bb987770d
 workflow-type: tm+mt
 source-wordcount: '329'
 ht-degree: 0%
@@ -54,6 +54,6 @@ Verwijs naar het [ Contribute ](https://developer.adobe.com/commerce/php/coding-
 Raadpleeg de volgende bronnen voor meer informatie over upgrades voor Adobe Commerce:
 
 - De [ verbeteringsgids ](../overview.md) verstrekt een overzicht van de typische de verbeteringsreis van Adobe Commerce en beste praktijken om langs die reis te volgen.
-- De [ aanstaande versie ](https://devdocs.magento.com/release/) pagina verstrekt de data voor geplande en aanstaande versies.
+- De [ aanstaande versie ](https://experienceleague.adobe.com/en/docs/commerce-operations/release/planning/schedule) pagina verstrekt de data voor geplande en aanstaande versies.
 - De [ communautaire middelen ](https://developer.adobe.com/commerce/contributor/community/) pagina moet plaatsen om besprekingen te beginnen, of meer informatie te vinden.
 - Controleer de [ verwante hulpmiddelen ](../upgrade-compatibility-tool/related-tools.md) pagina voor nuttige hulpmiddelen in uw typische verbeteringsreis.

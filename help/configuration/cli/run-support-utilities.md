@@ -2,7 +2,7 @@
 title: Voer de hulpprogramma's voor ondersteuning uit
 description: Los uw Commerce-project problemen op met behulp van het ingebouwde hulpprogramma voor ondersteuning.
 exl-id: 021b795f-e00d-43b5-9cbb-5b57a4795be7
-source-git-commit: ca8dc855e0598d2c3d43afae2e055aa27035a09b
+source-git-commit: 987d65b52437fbd21f41600bb5741b3cc43d01f3
 workflow-type: tm+mt
 source-wordcount: '461'
 ht-degree: 0%
@@ -15,7 +15,7 @@ ht-degree: 0%
 
 {{file-system-owner}}
 
-Het nut-ook wordt bedoeld van de Steun van Adobe Commerce als [ Collector van Gegevens ](https://docs.magento.com/user-guide/system/support-data-collector.html) - laat gebruikers toe om het oplossen van problemeninformatie over uw systeem te verzamelen die door ons team van de Steun kan worden gebruikt.
+Het nut-ook wordt bedoeld van de Steun van Adobe Commerce als [ Collector van Gegevens ](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/tools/support#data-collector) - laat gebruikers toe om het oplossen van problemeninformatie over uw systeem te verzamelen die door ons team van de Steun kan worden gebruikt.
 
 Adobe Commerce gebruikt deze steunen, die ook als _worden bedoeld dumps_, om kwesties te analyseren die toegang tot uw code vereisen. Een typisch scenario volgt:
 

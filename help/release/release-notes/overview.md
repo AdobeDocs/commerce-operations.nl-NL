@@ -2,7 +2,7 @@
 title: Opmerkingen bij de release van Adobe Commerce
 description: Ontdek waar u informatie kunt vinden over specifieke Adobe Commerce-releases.
 exl-id: f6385e12-5c3d-425f-939c-9dfd7ef6c4f5
-source-git-commit: 7edf0d26be64b4583d0a4d6ce313d25077662637
+source-git-commit: 987d65b52437fbd21f41600bb5741b3cc43d01f3
 workflow-type: tm+mt
 source-wordcount: '288'
 ht-degree: 3%
@@ -35,11 +35,11 @@ Gebruik de volgende lijst om versienota&#39;s en belangrijke informatie met betr
       <td><strong> Adobe Commerce op wolkeninfrastructuur </strong>
         <p>Leer meer over de nieuwste verbeteringen in de Cloud Suite voor Adobe Commerce-pakketten, die zijn ontworpen om Adobe Commerce-installaties en -upgrades te implementeren en beheren op het cloudplatform.</p>
           <ul>
-            <li><a href="https://devdocs.magento.com/cloud/release-notes/backward-incompatible-changes.html">Achteruit incompatibele wijzigingen</a></li>
-            <li><a href="https://devdocs.magento.com/cloud/release-notes/mcp-release-notes.html">Cloudpatches voor Commerce</a></li>
-            <li><a href="https://devdocs.magento.com/cloud/release-notes/mcd-release-notes.html">Cloud Docker voor Commerce</a></li>
-            <li><a href="https://devdocs.magento.com/cloud/release-notes/mcc-release-notes.html">Cloud Components voor Commerce</a></li>
-            <li><a href="https://devdocs.magento.com/cloud/release-notes/ece-release-notes.html">Gereedschappen</a></li>
+            <li><a href="https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/release-notes/backward-incompatible-changes">Achteruit incompatibele wijzigingen</a></li>
+            <li><a href="https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/release-notes/cloud-patches">Cloudpatches voor Commerce</a></li>
+            <li><a href="https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/release-notes/cloud-docker">Cloud Docker voor Commerce</a></li>
+            <li><a href="https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/release-notes/cloud-components">Cloud Components voor Commerce</a></li>
+            <li><a href="https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/release-notes/ece-tools-package">Gereedschappen</a></li>
           </ul>
       </td>
     </tr>

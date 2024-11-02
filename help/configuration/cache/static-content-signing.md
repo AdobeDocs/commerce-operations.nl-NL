@@ -3,7 +3,7 @@ title: Statische inhoudcache
 description: U krijgt inzicht in het ondertekenen van statische inhoud en in de manier waarop u de functie kunt in- of uitschakelen.
 feature: Configuration, Cache, SCD
 exl-id: b54ceea2-b3a1-4dbb-ba87-743f2af0d2fb
-source-git-commit: ca8dc855e0598d2c3d43afae2e055aa27035a09b
+source-git-commit: 987d65b52437fbd21f41600bb5741b3cc43d01f3
 workflow-type: tm+mt
 source-wordcount: '462'
 ht-degree: 0%
@@ -35,7 +35,7 @@ Hierdoor wordt de URL van de statische bestanden gewijzigd en wordt de browser g
 
 Commerce schakelt deze functie standaard in en Adobe raadt aan deze functie ingeschakeld te houden om problemen te voorkomen die te maken hebben met browsers die oude statische bronnen gebruiken.
 
-De configuratie voor het ondertekenen van statische inhoud vindt u in [**[!UICONTROL Stores]**> Instellingen > Configuratie >**[!UICONTROL Advanced]**>**[!UICONTROL Developer]**>**[!UICONTROL Static Files Settings]**](https://docs.magento.com/user-guide/system/static-file-signature.html) .
+De configuratie voor het ondertekenen van statische inhoud vindt u in [**[!UICONTROL Stores]**> Instellingen > Configuratie >**[!UICONTROL Advanced]**>**[!UICONTROL Developer]**>**[!UICONTROL Static Files Settings]**](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/tools/developer-tools#static-file-signatures) .
 
 - **slechts op-gebouw**: Deze configuratie is beschikbaar als uw plaats **niet** op [ wijze van de Productie ](https://experienceleague.adobe.com/docs/commerce-operations/configuration-guide/setup/application-modes.html#production-mode) is.
 - **Wolk**: Deze configuratie is verborgen omdat de wijze van de Productie strikt wordt afgedwongen; daarom moet u de bevellijn zoals hieronder getoond gebruiken.

@@ -3,7 +3,7 @@ title: "MDVA-44147: GraphQL request does not return Requisition Lists"
 description: De patch MDVA-44147 verhelpt het probleem waarbij GraphQL request not return Requisition Lists. Deze patch is beschikbaar wanneer [Quality Patches Tool (QPT)] (https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/announcements/commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches) 1.1.14 is geïnstalleerd. De patch-id is MDVA-44147. Het probleem wordt volgens de planning opgelost in Adobe Commerce 2.4.5.
 feature: B2B, GraphQL
 role: Admin
-source-git-commit: 7f17f1b286f635b8f65ac877e9de5f1d1a6a6461
+source-git-commit: 987d65b52437fbd21f41600bb5741b3cc43d01f3
 workflow-type: tm+mt
 source-wordcount: '424'
 ht-degree: 0%
@@ -35,8 +35,8 @@ GraphQL request does not return Requisition List.
 <u> Stappen om </u> te reproduceren:
 
 1. Ga naar **Opslag** > **Montages** > **Configuratie** > **Algemeen** > **B2B Eigenschappen** en laat de Lijst van de Vereiste toe.
-1. Login als klant en voeg een product aan de [ Lijst van de Aanvraag ](https://docs.magento.com/user-guide/customers/account-dashboard-requisition-lists.html) toe.
-1. Creeer het Symbolische van de a [ Klant ](https://devdocs.magento.com/guides/v2.4/graphql/mutations/generate-customer-token.html).
+1. Login als klant en voeg een product aan de [ Lijst van de Aanvraag ](https://experienceleague.adobe.com/en/docs/commerce-admin/b2b/requisition-lists/requisition-lists) toe.
+1. Creeer het Symbolische van de a [ Klant ](https://developer.adobe.com/commerce/webapi/graphql/mutations/generate-customer-token.html).
 
    <pre>
     <code class="language-graphql">
@@ -51,7 +51,7 @@ GraphQL request does not return Requisition List.
       </code>
       </pre>
 
-1. Gebruik de volgende vraag om alle Lijsten van de Verzoek van de klant terug te winnen. Gebruik de **kopbal van de Vergunning** met de waarde `Bearer <customer_token>`. Verwijs naar het [ artikel van de Vraag van de Klant ](https://devdocs.magento.com/guides/v2.4/graphql/queries/customer.html) in onze ontwikkelaardocumentatie voor meer informatie.
+1. Gebruik de volgende vraag om alle Lijsten van de Verzoek van de klant terug te winnen. Gebruik de **kopbal van de Vergunning** met de waarde `Bearer <customer_token>`. Verwijs naar het [ artikel van de Vraag van de Klant ](https://developer.adobe.com/commerce/webapi/graphql/queries/customer.html) in onze ontwikkelaardocumentatie voor meer informatie.
 
    Verzoek:
 

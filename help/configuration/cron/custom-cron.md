@@ -2,7 +2,7 @@
 title: Cron-taken
 description: Meer informatie over uitsnijdgroepen en het maken van een aangepaste uitsnijdtaak.
 exl-id: a9d83af7-9979-4653-adc9-30ffeb13a5ce
-source-git-commit: 95ffff39d82cc9027fa633dffedf15193040802d
+source-git-commit: 987d65b52437fbd21f41600bb5741b3cc43d01f3
 workflow-type: tm+mt
 source-wordcount: '155'
 ht-degree: 0%
@@ -21,5 +21,5 @@ De Commerce-toepassing biedt de volgende uitsnijdgroepen:
 - `index`, die [ indexeerders ](../cli/manage-indexers.md) vernieuwt
 - `consumers`, die berichtrij [ consumenten ](../cli/start-message-queues.md) in werking stelt
 - Deze onderwerpen zijn alleen beschikbaar in Adobe Commerce
-   - `staging`, die [ op Staging betrekking hebbende ](https://docs.magento.com/user-guide/cms/content-staging.html) taken in werking stelt
+   - `staging`, die [ op Staging betrekking hebbende ](https://experienceleague.adobe.com/en/docs/commerce-admin/content-design/staging/content-staging) taken in werking stelt
    - `catalog_event` , dat taken voor doel en het winkelwagentje regels uitvoert

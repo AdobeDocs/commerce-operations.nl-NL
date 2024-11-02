@@ -2,7 +2,7 @@
 title: env.php reference
 description: Zie een lijst met waarden voor het bestand env.php.
 exl-id: cf02da8f-e0de-4f0e-bab6-67ae02e9166f
-source-git-commit: 95ffff39d82cc9027fa633dffedf15193040802d
+source-git-commit: 987d65b52437fbd21f41600bb5741b3cc43d01f3
 workflow-type: tm+mt
 source-wordcount: '693'
 ht-degree: 0%
@@ -146,7 +146,7 @@ Commerce gebruikt een coderingssleutel om wachtwoorden en andere vertrouwelijke 
 ]
 ```
 
-Leer meer over [ Sleutel van de Encryptie ](https://docs.magento.com/user-guide/system/encryption-key.html) in de _gids van de Gebruiker van Commerce_.
+Leer meer over [ Sleutel van de Encryptie ](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/security/encryption-key) in de _gids van de Gebruiker van Commerce_.
 
 ## db
 
@@ -203,7 +203,7 @@ Een lijst met downloadbare domeinen beschikbaar in dit knooppunt. De extra domei
 ]
 ```
 
-Leer meer over [ Downloadbare Domeinen ](https://devdocs.magento.com/guides/v2.4/reference/cli/magento.html#downloadabledomainsadd).
+Leer meer over [ Downloadbare Domeinen ](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/cli-reference/commerce-on-premises#downloadabledomainsadd).
 
 ## installeren
 

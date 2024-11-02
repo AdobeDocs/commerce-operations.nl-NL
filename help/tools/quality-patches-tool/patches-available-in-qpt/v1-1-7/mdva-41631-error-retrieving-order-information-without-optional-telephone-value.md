@@ -3,7 +3,7 @@ title: '''MDVA-41631: Fout bij het ophalen van bestelgegevens zonder optionele w
 description: De MDVA-41631-patch verhelpt het probleem waarbij gebruikers een fout krijgen bij het ophalen van bestellingsgegevens zonder optionele "telefoon"-waarde via GraphQL. Deze patch is beschikbaar wanneer [Quality Patches Tool (QPT)] (https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/announcements/commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches) 1.1.7 is geïnstalleerd. Het probleem wordt volgens de planning opgelost in Adobe Commerce 2.4.4.
 feature: Orders
 role: Admin
-source-git-commit: 7f17f1b286f635b8f65ac877e9de5f1d1a6a6461
+source-git-commit: 79c8a15fb9686dd26d73805e9d0fd18bb987770d
 workflow-type: tm+mt
 source-wordcount: '415'
 ht-degree: 0%
@@ -36,8 +36,8 @@ Gebruikers krijgen via GraphQL een fout bij het ophalen van bestelgegevens zonde
 
 1. Ga naar **Opslag** > **Configuratie** > **Klanten** > **de Configuratie van de Klant** > **Naam en de Opties van het Adres** > **tonen Telefoon** en plaatsen het telefoonaantal als facultatief.
 1. Plaats een bestelling met GraphQL API als aangemelde klant.
-   * Stel het telefoonnummer niet in bij het instellen van het factuuradres en het verzendadres. Volg de instructies die in [ het Leerprogramma van de Controle van GraphQL ](https://devdocs.magento.com/guides/v2.4/graphql/tutorials/checkout/checkout-customer.html) in onze ontwikkelaarsdocumentatie worden gegeven.
-1. Haal de orde terug gebruikend de GraphQL [ customerOrders vraag ](https://devdocs.magento.com/guides/v2.4/graphql/queries/customer-orders.html).
+   * Stel het telefoonnummer niet in bij het instellen van het factuuradres en het verzendadres. Volg de instructies die in [ het Leerprogramma van de Controle van GraphQL ](https://developer.adobe.com/commerce/webapi/graphql/tutorials/checkout/checkout-customer.html) in onze ontwikkelaarsdocumentatie worden gegeven.
+1. Haal de orde terug gebruikend de GraphQL [ customerOrders vraag ](https://developer.adobe.com/commerce/webapi/graphql/queries/customer-orders.html).
 
 <pre>
 <code class="language-graphql">

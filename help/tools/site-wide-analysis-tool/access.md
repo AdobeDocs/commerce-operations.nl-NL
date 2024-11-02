@@ -2,7 +2,7 @@
 title: Hoe te om tot  [!DNL Site-Wide Analysis Tool] toegang te hebben
 description: Leer hoe te om tot  [!DNL Site-Wide Analysis Tool] toegang te hebben
 exl-id: b691fb2c-8d66-4cf9-8612-bbcb4df5b95f
-source-git-commit: 18416ae29cee182a5d088069065d73814fc7d860
+source-git-commit: 987d65b52437fbd21f41600bb5741b3cc43d01f3
 workflow-type: tm+mt
 source-wordcount: '529'
 ht-degree: 0%
@@ -15,7 +15,7 @@ Er zijn twee manieren waarop u toegang kunt krijgen tot [!DNL Site-Wide Analysis
 
 U kunt tot [!DNL dashboard] van of de [[!DNL Site-Wide Analysis Tool]  Website ](https://supportinsights.adobe.com/commerce) direct toegang hebben **(voor Adobe Commerce op wolkeninfrastructuur slechts)** en login met uw Adobe ID, of toegang via [!DNL dashboard] van uw opslag [!DNL Admin Panel].
 
-De [!DNL Site-Wide Analysis Tool] dienst is beschikbaar op [ productiemodus ](https://docs.magento.com/user-guide/magento/installation-modes.html) voor [!DNL Admin] gebruikers met toestemming om tot gebruiker [ rolmiddelen ](https://docs.magento.com/user-guide/system/permissions-user-roles.html) toegang te hebben.
+De [!DNL Site-Wide Analysis Tool] dienst is beschikbaar op [ productiemodus ](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/tools/developer-tools#operation-modes) voor [!DNL Admin] gebruikers met toestemming om tot gebruiker [ rolmiddelen ](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/user-accounts/permissions-user-roles) toegang te hebben.
 
 >[!NOTE]
 >
@@ -46,7 +46,7 @@ Zie meer details in [ Deel a  [!DNL Commerce]  rekening ](https://experienceleag
 
 ### Stap 1: Machtigingen verifiëren
 
-Verifieer dat de [!DNL Admin] gebruikersrekening toestemming heeft om tot [!DNL Site-Wide Analysis Tool] door hun [ toegewezen gebruikersrol ](https://docs.magento.com/user-guide/system/permissions-user-roles.html) toegang te hebben.
+Verifieer dat de [!DNL Admin] gebruikersrekening toestemming heeft om tot [!DNL Site-Wide Analysis Tool] door hun [ toegewezen gebruikersrol ](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/user-accounts/permissions-user-roles) toegang te hebben.
 
 >[!IMPORTANT]
 >

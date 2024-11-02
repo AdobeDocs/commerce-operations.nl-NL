@@ -3,7 +3,7 @@ title: Sessieopslaglocatie
 description: Leer waar de sessiebestanden zijn opgeslagen.
 feature: Configuration, Storage
 exl-id: 43cab98a-5b68-492e-b891-8db4cc99184e
-source-git-commit: af45ac46afffeef5cd613628b2a98864fd7da69b
+source-git-commit: 987d65b52437fbd21f41600bb5741b3cc43d01f3
 workflow-type: tm+mt
 source-wordcount: '257'
 ht-degree: 0%
@@ -41,7 +41,7 @@ Als gebruiker met `root` rechten opent u het `php.ini` -bestand en zoekt u naar 
 
 ## Sessiegrootte beheren
 
-Zie het [ beheer van de Zitting ](https://docs.magento.com/user-guide/stores/security-session-management.html) in de _gids van de Gebruiker_.
+Zie het [ beheer van de Zitting ](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/security/security-session-management) in de _gids van de Gebruiker_.
 
 ## Configuratie van afvalophaling
 

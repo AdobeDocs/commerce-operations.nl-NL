@@ -4,7 +4,7 @@ description: Prestaties van sites onderhouden en optimaliseren door de best prac
 role: Admin, User
 feature: Best Practices
 exl-id: b35806f9-4bc6-407e-bedd-5ce3f09c1b9f
-source-git-commit: 153cf3bae74a78d7a41176e0216203d354d2513b
+source-git-commit: 987d65b52437fbd21f41600bb5741b3cc43d01f3
 workflow-type: tm+mt
 source-wordcount: '296'
 ht-degree: 0%
@@ -35,7 +35,7 @@ Als u een grote winkel hebt met meerdere beheerders die op de achtergrond werken
 Volg de volgende aanbevolen procedures voor indexering om de prestaties van de site te maximaliseren:
 
 - Controleer de indexconfiguratie.
-- Stel de indexeerders in op _[!UICONTROL Update on Schedule]_voor grote sites en sites met veelvuldige updates en veel verkeer. Zie [ Beheer van de Index ](https://docs.magento.com/user-guide/system/index-management.html#change-the-index-mode).
+- Stel de indexeerders in op _[!UICONTROL Update on Schedule]_voor grote sites en sites met veelvuldige updates en veel verkeer. Zie [ Beheer van de Index ](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/tools/index-management#change-the-index-mode).
 - Volg [ prestaties beste praktijken ](../../../performance/configuration.md) voor het beheren van indexen.
 
 >[!IMPORTANT]

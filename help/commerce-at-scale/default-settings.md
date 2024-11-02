@@ -4,7 +4,7 @@ description: Bereid uw Adobe Commerce-project voor om Adobe Experience Manager a
 exl-id: 55d77af7-508c-4ef7-888b-00911cc6e920
 feature: Integration, Cache
 topic: Commerce, Performance
-source-git-commit: 76ccc5aa8e5e3358dc52a88222fd0da7c4eb9ccb
+source-git-commit: 987d65b52437fbd21f41600bb5741b3cc43d01f3
 workflow-type: tm+mt
 source-wordcount: '1142'
 ht-degree: 0%
@@ -26,7 +26,7 @@ GraphQL staat u toe om veelvoudige vragen in één enkele vraag te maken. Het is
 
 >[!NOTE]
 >
-> De verdere informatie over cacheable en niet-cacheable vragen, zie de [ de ontwikkelaarsdocumentatie van Adobe Commerce ](https://devdocs.magento.com/guides/v2.4/graphql/caching.html).
+> De verdere informatie over cacheable en niet-cacheable vragen, zie de [ de ontwikkelaarsdocumentatie van Adobe Commerce ](https://developer.adobe.com/commerce/webapi/graphql/caching.html).
 
 ## Vlakke tabel met catalogi
 
@@ -42,7 +42,7 @@ De snelle oorsprongsbeveiliging kan worden ingeschakeld in uw Adobe Commerce-beh
 
 Als de functie Afbeelding snel afschermen is ingeschakeld, kunt u de functie Afbeelding snel optimaliseren ook activeren. Wanneer afbeeldingen uit productcatalogi op Adobe Commerce worden opgeslagen, biedt deze service de mogelijkheid om alle hulpbronnenintensieve verwerking van afbeeldingen in productcatalogi snel en van Adobe Commerce af te voeren. De responstijden van de eindgebruiker zijn ook beter voor de laadtijden van de pagina, aangezien afbeeldingen worden getransformeerd op de randlocatie, waardoor latentie wordt voorkomen doordat het aantal aanvragen wordt teruggebracht naar de Adobe Commerce-oorsprong.
 
-U kunt de functie voor het snel optimaliseren van afbeeldingen inschakelen door de functie voor het snel optimaliseren van afbeeldingen in de beheerdersconfiguratie in te schakelen, maar alleen nadat het oorspronkelijke schild is geactiveerd. Meer details op configuraties voor de Snelle optimalisering van het Beeld zijn beschikbaar in de Adobe Commerce [ ontwikkelaarsdocumentatie ](https://devdocs.magento.com/cloud/cdn/fastly-image-optimization.html).
+U kunt de functie voor het snel optimaliseren van afbeeldingen inschakelen door de functie voor het snel optimaliseren van afbeeldingen in de beheerdersconfiguratie in te schakelen, maar alleen nadat het oorspronkelijke schild is geactiveerd. Meer details op configuraties voor de Snelle optimalisering van het Beeld zijn beschikbaar in de Adobe Commerce [ ontwikkelaarsdocumentatie ](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/cdn/fastly-image-optimization).
 
 ![ Schermafbeelding van de Snelle instellingen voor beeldoptimalisatie in Adobe Commerce Admin ](../assets/commerce-at-scale/image-optimization.svg)
 

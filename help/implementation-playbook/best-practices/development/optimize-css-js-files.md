@@ -4,7 +4,7 @@ description: Leer hoe u CSS- en JavaScript-bestanden (JS) voor Adobe Commerce-pr
 role: Developer
 feature: Best Practices
 exl-id: ff0bc407-b563-418b-9d6a-7c1dc8f235df
-source-git-commit: ddf988826c29b4ebf054a4d4fb5f4c285662ef4e
+source-git-commit: 79c8a15fb9686dd26d73805e9d0fd18bb987770d
 workflow-type: tm+mt
 source-wordcount: '395'
 ht-degree: 0%
@@ -92,6 +92,6 @@ php -f bin/magento config:set dev/js/enable_js_bundling 1
 ## Aanvullende informatie
 
 - [Optimalisatie-instellingen aan de clientzijde](../../../performance/configuration.md#client-side-optimization-settings)
-- [ Gids van de Gebruiker: Het optimaliseren van middeldossiers ](https://docs.magento.com/user-guide/system/file-optimization.html)
+- [ Gids van de Gebruiker: Het optimaliseren van middeldossiers ](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/tools/developer-tools#optimizing-resource-files)
 - [ Voorste Gids van de Ontwikkelaar: CSS het samenvoegen, minificatie, en plaatsprestaties ](https://developer.adobe.com/commerce/frontend-core/guide/css/#css-merging-minification-and-performance)
 - [Geavanceerde JavaScript-pakketten](../../../performance/advanced-js-bundling.md)
