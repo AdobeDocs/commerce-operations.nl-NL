@@ -2,9 +2,9 @@
 user-guide-title: Gereedschappen
 user-guide-description: Leer meer over de verschillende gereedschappen die u met Adobe Commerce kunt gebruiken, hun gebruik, het installatieproces en hoe u toegang krijgt.
 feature: Configuration
-source-git-commit: 4764716fe6fbc043f96843195f9d25b6d3517a40
+source-git-commit: ebcf6c2f99b44489d3914dc4a83fd0f3f944ad93
 workflow-type: tm+mt
-source-wordcount: '6087'
+source-wordcount: '6093'
 ht-degree: 0%
 
 ---
@@ -28,6 +28,7 @@ ht-degree: 0%
    - [Patches](site-wide-analysis-tool/patches.md)
 
 - Gereedschap Kwaliteitspatches {#quality-patches-tool}
+   - [[!DNL Quality Patches Tool]: een zelfbedieningsprogramma voor kwaliteitspatches](/help/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches.md)
    - [[!DNL Quality Patches Tool]: Onderzoek naar flarden ](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html) {target="_blank"}
    - [Gebruik](quality-patches-tool/usage.md)
    - [Opmerkingen bij de release](quality-patches-tool/release-notes.md)
