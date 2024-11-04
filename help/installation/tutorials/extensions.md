@@ -2,9 +2,9 @@
 title: Extensies van derden beheren
 description: Voer de volgende stappen uit om Adobe Commerce-extensies te installeren, in te schakelen, te upgraden en te verwijderen.
 exl-id: b564662a-2e5f-4fa9-bae1-ca7498478fa9
-source-git-commit: ca8dc855e0598d2c3d43afae2e055aa27035a09b
+source-git-commit: f057cf082eeab1e34957e284817c6b93517de21b
 workflow-type: tm+mt
-source-wordcount: '785'
+source-wordcount: '802'
 ht-degree: 0%
 
 ---
@@ -20,9 +20,9 @@ Extensies zijn:
 - Thema&#39;s (wijzig de vormgeving van uw winkel en Admin)
 - Taalpakketten (lokaliseer de winkel en Admin)
 
->[!TIP]
->
->Dit onderwerp verklaart hoe te om de bevel-lijn interface te gebruiken om derdextensies te beheren die u van de Commerce Marketplace koopt. U kunt de zelfde procedure gebruiken om _om het even welke_ uitbreiding te installeren; allen u hebt nodig is de naam en de versie van Composer van de uitbreiding. Als u de extensie wilt zoeken, opent u het `composer.json` -bestand en noteert u de waarden voor `"name"` en `"version"` .
+Dit onderwerp verklaart hoe te om de bevel-lijn interface te gebruiken om derdeuitbreidingen te beheren die u van de Commerce Marketplace voor _op-gebouw_ projecten koopt. Voor de projecten van de wolkeninfrastructuur, zie [ uitbreidingen ](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/configure-store/extensions) beheren.
+
+U kunt de zelfde procedure gebruiken om _om het even welke_ uitbreiding te installeren; allen u hebt nodig is de naam en de versie van Composer van de uitbreiding. Als u de extensie wilt zoeken, opent u het `composer.json` -bestand en noteert u de waarden voor `"name"` en `"version"` .
 
 ## Installeren
 
@@ -70,7 +70,7 @@ De naam en versie van de componist van de extensie ophalen uit de Commerce Marke
 
    ![ de aankoopgeschiedenis van de Marketplace ](../../assets/installation//marketplace-my-purchases.png)
 
-1. Vind de uitbreiding die u wilt installeren en **Technische Details** klikken.
+1. Zoek de extensie die u wilt installeren en noteer de naam en versie van de component.
 
    ![ Technische details tonen de naam van Composer van de uitbreiding ](../../assets/installation/marketplace-extension-technical-details.png)
 
@@ -241,13 +241,13 @@ De volgende instructies bevatten algemene informatie voor het verwijderen van ex
    - Voor op Composer gebaseerde extensies verwijdert u de extensie uit het Adobe Commerce `composer.json` -bestand.
 
      ```bash
-     composer remove <package-name>
+     composer remove <component-name>
      ```
 
    - Voor extensies die niet op Composer zijn gebaseerd, verwijdert u de fysieke bestanden uit de Adobe Commerce-projectopslagplaats.
 
      ```bash
-     rm -rf app/code/<vendor-name>/<module-name>
+     rm -rf app/code/<vendor-name>/<component-name>
      ```
 
 1. Als het `config.php` -bestand zich onder bronbeheer in uw Adobe Commerce-projectopslagplaats bevindt, verwijdert u de extensie uit het `config.php` -bestand.
