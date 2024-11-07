@@ -2,9 +2,9 @@
 user-guide-title: Gereedschappen
 user-guide-description: Leer meer over de verschillende gereedschappen die u met Adobe Commerce kunt gebruiken, hun gebruik, het installatieproces en hoe u toegang krijgt.
 feature: Configuration
-source-git-commit: ebcf6c2f99b44489d3914dc4a83fd0f3f944ad93
+source-git-commit: 2a751e4548ab032a1d9339efeb66559c3836e58e
 workflow-type: tm+mt
-source-wordcount: '6093'
+source-wordcount: '6106'
 ht-degree: 0%
 
 ---
@@ -642,6 +642,7 @@ ht-degree: 0%
          - [ACSD-60590: Verbeterende prestaties van Bestsellers Aggregated Daily Report Generation](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-52/acsd-60590-optimized-bestseller-report-generation.md)
          - [ACSD-59925: Items sorteren in [!UICONTROL Media Gallery]](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-52/acsd-59925-sorting-items-in-media-gallery.md)
          - [ACSD-59865: [!UICONTROL Cart Price Rule] kan vorige regels niet annuleren wegens onvoldoende hoeveelheid](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-52/acsd-59865-cart-price-rule-fix-for-insufficient-quantity-issue.md)
+         - [ACSD-59366: teams met gedeactiveerde gebruikers verwijderen die niet zichtbaar zijn in de teamlijst](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-52/acsd-59366-delete-teams-with-deactivated-users-not-visible-in-the-team-list.md)
          - [ACSD-60788: De manuscripten van de douane voor  [!DNL Google Tag Manager]  niet uitgevoerd toe te schrijven aan CSP fouten](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-52/acsd-60788-fixes-issue-where-custom-scripts-for-google-tag-manager-are-not-executed-due-to-content-security-policy-errors.md)
          - [ACSD-59952: Fout bij verwijderen van gedeelde catalogus met dezelfde groep-id als een andere gedeelde catalogus](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-52/acsd-59952-error-on-deleting-shared-catalog-with-same-group-id-as-another-shared-catalog.md)
       - v1.1.53 {#v1-1-53}
