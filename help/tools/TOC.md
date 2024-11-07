@@ -2,9 +2,9 @@
 user-guide-title: Gereedschappen
 user-guide-description: Leer meer over de verschillende gereedschappen die u met Adobe Commerce kunt gebruiken, hun gebruik, het installatieproces en hoe u toegang krijgt.
 feature: Configuration
-source-git-commit: 5049afe19ff7e25983c8a21544677c64473e2806
+source-git-commit: 0c03963e3ebe7239e52f34fcb3279eedb6fbf74a
 workflow-type: tm+mt
-source-wordcount: '6116'
+source-wordcount: '6124'
 ht-degree: 0%
 
 ---
@@ -650,6 +650,7 @@ ht-degree: 0%
          - [Overzicht: [!DNL Quality Patches Tool]  (QPT) v1.1.53](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-53/overview.md)
          - [ACSD-59930: verbetert de prestaties van de bedrijfsstromen](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-53/acsd-59930-improves-performance-of-company-flows.md)
          - [ACSD-60584: toegangstoken die voor één website zijn gemaakt, heeft toegang tot informatie op andere websites](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-53/acsd-60584-access-token-created-for-one-website-is-allowed-to-access-information-on-other-websites.md)
+         - [ACSD-48318: Omgevingsnestfout in &quot;system.log&quot;](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-53/acsd-48318-environment-emulation-nesting-error-in-system-log.md)
       - [Patch controleren voor Adobe Commerce-probleem met het gereedschap Kwaliteitspatches](quality-patches-tool/patches-available-in-qpt/check-patch-for-magento-issue-with-magento-quality-patches.md)
 
 - Verwijzing naar opdrachtregelprogramma&#39;s {#cli-reference}
