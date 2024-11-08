@@ -4,9 +4,9 @@ description: Leer hoe u uw Adobe Commerce op de technologiestapel voor cloudinfr
 role: Developer
 feature: Best Practices
 exl-id: 62aeffe3-b5a6-49f8-a39b-3219b46cd486
-source-git-commit: 987d65b52437fbd21f41600bb5741b3cc43d01f3
+source-git-commit: 5e3289b328b51eb50354efdc1571283791175b9a
 workflow-type: tm+mt
-source-wordcount: '232'
+source-wordcount: '243'
 ht-degree: 0%
 
 ---
@@ -29,7 +29,7 @@ De klanten op Pro plannen kunnen op de dienstverbeteringen in hun [ milieu van d
 
 >[!WARNING]
 >
->De verbeteringen van de dienst kunnen niet aan het productiemilieu worden geduwd zonder 48 bedrijfsuren kennisgeving aan ons infrastructuurteam. Dit is nodig omdat wij ervoor moeten zorgen dat wij een ingenieur van de infrastructuursteun beschikbaar hebben om uw configuratie binnen een gewenst tijdsbestek met minimale onderbreking aan uw productiemilieu bij te werken.
+>De verbeteringen van de dienst kunnen niet aan een productiemilieu zonder 48 bedrijfsuren kennisgeving aan het infrastructuurteam van de Adobe worden geduwd. Dit is vereist zodat de Adobe ervoor kan zorgen dat een technicus van de infrastructuursteun beschikbaar is om uw configuratie binnen een gewenst tijdsbestek met minimale onderbreking aan uw productiemilieu bij te werken. Adobe raadt u aan uw site in de onderhoudsmodus te zetten tijdens de serviceupgrade.
 
 U kunt de lijst van de dienstversies en eind-van-leven data in het volgende dossier bekijken: [ https://github.com/magento/ece-tools/blob/develop/config/eol.yaml ](https://github.com/magento/ece-tools/blob/develop/config/eol.yaml).
 
