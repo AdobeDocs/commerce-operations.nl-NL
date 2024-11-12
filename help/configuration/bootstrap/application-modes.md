@@ -2,9 +2,9 @@
 title: Toepassingsmodi
 description: De Commerce-toepassing kan naar wens in verschillende modi worden uitgevoerd. Bekijk een gedetailleerde lijst met de beschikbare toepassingsmodi.
 exl-id: a2a71f43-682f-4fa4-940a-1f6a4d441c41
-source-git-commit: 5003e8dcbb3736201ea19ebe30d5e56775096157
+source-git-commit: c415c3427f513255b9d4ebe1d24ba4024df21928
 workflow-type: tm+mt
-source-wordcount: '703'
+source-wordcount: '739'
 ht-degree: 0%
 
 ---
@@ -24,11 +24,12 @@ Zie [ plaats de verrichtingswijze ](../cli/set-mode.md) om te leren hoe te om de
 
 ## Ondersteuning voor cloud
 
-Vanwege het alleen-lezen bestandssysteem kunt u geen modi wijzigen in externe cloudomgevingen. Probeer niet om modi te wijzigen door het bestand `app/etc/env.php` te wijzigen, omdat het bestand met het pakket `ece-tools` wordt overschreven op basis van meerdere configuratiebronnen.
+Vanwege het alleen-lezen bestandssysteem is er een strikte beperking voor het wijzigen van de modi in externe cloudomgevingen en kan dit systeem niet worden overschreven door Adobe Commerce Support. Probeer niet om modi te wijzigen door het bestand `app/etc/env.php` te wijzigen, omdat het bestand met het pakket `ece-tools` wordt overschreven op basis van meerdere configuratiebronnen.
 
 Adobe Commerce op wolkeninfrastructuur stelt automatisch de toepassing op _onderhoud_ wijze tijdens een plaatsing in werking, die uw plaats offline neemt tot de plaatsing volledig is. Anders, blijft de toepassing op _productie_ wijze. Zie [ proces van de Plaatsing ](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/deploy/process.html#deploy-phase) in _Commerce op de gids van de Infrastructuur van de Wolk_.
 
 Als u het Dok van de Wolk voor Commerce als ontwikkelingshulpmiddel gebruikt, kunt u uw project van de wolkeninfrastructuur in een milieu van het Dok in _wijze van de ontwikkelaar {opstellen 0}, maar de prestaties zijn langzamer wegens extra verrichtingen van de dossiersynchronisatie._ Zie [ het milieu van de Dokker ](https://developer.adobe.com/commerce/cloud-tools/docker/deploy/#launch-mode) in het _Dok van de Wolk voor de gids van Commerce_ opstellen.
+
 
 ## Standaardmodus
 
@@ -54,6 +55,10 @@ In de modus Ontwikkelaar:
 - Er wordt een uitzondering gegenereerd in de fouthandler, in plaats van dat deze wordt geregistreerd
 - Een uitzondering wordt gegenereerd wanneer een gebeurtenisabonnee niet kan worden aangeroepen
 - Aangepaste HTTP-aanvraag- en antwoordheaders `X-Magento-*` weergeven
+
+>[!NOTE]
+>
+>Deze modus wordt niet ondersteund in de Adobe Commerce Cloud-omgeving en Adobe Commerce Support kan het wijzigen van de toepassingsmodus niet vergemakkelijken.
 
 ## Productiemodus
 
