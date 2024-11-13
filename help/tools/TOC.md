@@ -2,9 +2,9 @@
 user-guide-title: Gereedschappen
 user-guide-description: Leer meer over de verschillende gereedschappen die u met Adobe Commerce kunt gebruiken, hun gebruik, het installatieproces en hoe u toegang krijgt.
 feature: Configuration
-source-git-commit: 737c3195b775e5385065fdf0789addfa21aa81e3
+source-git-commit: 8e92a5bafc045f719250756dbca4857bb76d990b
 workflow-type: tm+mt
-source-wordcount: '6151'
+source-wordcount: '6165'
 ht-degree: 0%
 
 ---
@@ -655,6 +655,7 @@ ht-degree: 0%
          - [ACSD-60804: Het bewerken van een klant die is gekoppeld aan een verwijderd bedrijf, resulteert in een fout](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-53/acsd-60804-editing-customer-linked-to-deleted-company-causes-error.md)
       - v1.1.54 {#v1-1-54}
          - [Overzicht: [!DNL Quality Patches Tool]  (QPT) v1.1.54](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-54/overview.md)
+         - [ACSD-61522: E-mailadressen in de velden Voornaam en Achternaam verzenden ongeldige orderbevestigingen](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-54/acsd-61522-email-in-name-fields-sends-invalid-order-confirmations.md)
       - [Patch controleren voor Adobe Commerce-probleem met het gereedschap Kwaliteitspatches](quality-patches-tool/patches-available-in-qpt/check-patch-for-magento-issue-with-magento-quality-patches.md)
 
 - Verwijzing naar opdrachtregelprogramma&#39;s {#cli-reference}
