@@ -2,9 +2,9 @@
 user-guide-title: Gereedschappen
 user-guide-description: Leer meer over de verschillende gereedschappen die u met Adobe Commerce kunt gebruiken, hun gebruik, het installatieproces en hoe u toegang krijgt.
 feature: Configuration
-source-git-commit: 8fa763e2c5ec006f638b7265c49f4576a6ab3b32
+source-git-commit: 737c3195b775e5385065fdf0789addfa21aa81e3
 workflow-type: tm+mt
-source-wordcount: '6137'
+source-wordcount: '6151'
 ht-degree: 0%
 
 ---
@@ -652,6 +652,7 @@ ht-degree: 0%
          - [ACSD-60584: toegangstoken die voor één website zijn gemaakt, heeft toegang tot informatie op andere websites](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-53/acsd-60584-access-token-created-for-one-website-is-allowed-to-access-information-on-other-websites.md)
          - [ACSD-61528: Het ophalen van rollen met GraphQL retourneert geen resultaten](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-53/acsd-61528-retrieving-roles-using-graphql-returns-no-results.md)
          - [ACSD-48318: Omgevingsnestfout in &quot;system.log&quot;](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-53/acsd-48318-environment-emulation-nesting-error-in-system-log.md)
+         - [ACSD-60804: Het bewerken van een klant die is gekoppeld aan een verwijderd bedrijf, resulteert in een fout](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-53/acsd-60804-editing-customer-linked-to-deleted-company-causes-error.md)
       - v1.1.54 {#v1-1-54}
          - [Overzicht: [!DNL Quality Patches Tool]  (QPT) v1.1.54](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-54/overview.md)
       - [Patch controleren voor Adobe Commerce-probleem met het gereedschap Kwaliteitspatches](quality-patches-tool/patches-available-in-qpt/check-patch-for-magento-issue-with-magento-quality-patches.md)
