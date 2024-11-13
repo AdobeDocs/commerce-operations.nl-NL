@@ -4,7 +4,7 @@ description: Beschrijft hoe te om prestatiesdegradatie door specifieke montages 
 role: Developer
 feature: Best Practices
 exl-id: d1e10068-e4e8-4e75-9f30-f3a89a08d791
-source-git-commit: 987d65b52437fbd21f41600bb5741b3cc43d01f3
+source-git-commit: 6c0a9268cb3a3b2e76f4a389846e8407f0893b4f
 workflow-type: tm+mt
 source-wordcount: '138'
 ht-degree: 0%
@@ -27,7 +27,7 @@ Wijs minstens **2GB** van geheugen voor de [ PHP module OPCache ](https://www.ph
 ## Aanvullende informatie
 
 * [ Beste praktijken van Prestaties - PHP Montages ](../../../performance/software.md#php-settings)
-* [ vorm PHP opties ](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/start/overview)
+* [ vorm PHP opties ](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/configure/app/configure-app-yaml)
 * [Best practices voor databases voor Adobe Commerce op cloudinfrastructuur](database-on-cloud.md)
 * [Meest voorkomende databaseproblemen in Adobe Commerce met cloudinfrastructuur](../maintenance/resolve-database-performance-issues.md)
 * [Indexers &quot;Update On Schedule&quot; optimaliseert de Adobe Commerce-prestaties](../maintenance/indexer-configuration.md)

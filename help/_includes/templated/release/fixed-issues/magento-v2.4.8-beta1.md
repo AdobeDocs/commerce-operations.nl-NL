@@ -1,7 +1,7 @@
 ---
-source-git-commit: d2fe92c778cb90912062c5f318332a02f6a4131e
+source-git-commit: 2d46933005b9848fee526d0a9f96e2e5ff58cbb8
 workflow-type: tm+mt
-source-wordcount: '14792'
+source-wordcount: '14732'
 ht-degree: 0%
 
 ---
@@ -144,7 +144,7 @@ zorgen voor compatibiliteit en up-to-date functionaliteit. Eerder, kon het bijwe
 
 ## Opgeloste problemen
 
-In de kerncode van Magento Open Source 2.4.8 hebben we 254 problemen opgelost. Hieronder wordt een subset van de opgeloste problemen in deze release beschreven.
+In de kerncode van Magento Open Source 2.4.8 hebben we 253 problemen opgelost. Hieronder wordt een subset van de opgeloste problemen in deze release beschreven.
 
 ### API&#39;s
 
@@ -1143,10 +1143,6 @@ naar bin/magento config:set two factorauth/google/leeway VALUE
 * _AC-12128_: De veiligheidskwetsbaarheid van Prototype.js moeilijke situatie CVE-2020-27511
    * _nota van de Reparatie_: Het systeem is bijgewerkt om de veiligheidskwetsbaarheid CVE-2020-27511 in Prototype.js 1.7.3 te richten, die de algemene veiligheid van het systeem verbetert. Voorafgaand aan deze update was het systeem gevoelig voor een Regular Expression Denial of Service (ReDOS) via het stripping Crafted HTML tags.
    * _GitHub codebijdrage_: <https://github.com/magento/magento2/commit/de4dfb8e>
-* _AC-12128_:
-   * _Bevestig nota_: De veiligheidskwetsbaarheid van Prototype.js moeilijke situatie CVE-2020-27511
-   * _GitHub kwestie_: &lt;<https://github.com/magento/magento2/commit/de4dfb8e>>
-   * _GitHub codebijdrage_: Het systeem is bijgewerkt om de veiligheidskwetsbaarheid CVE-2020-27511 in Prototype.js 1.7.3 te richten, die de algemene veiligheid van het systeem verbetert. Voorafgaand aan deze update was het systeem gevoelig voor een Regular Expression Denial of Service (ReDOS) via het stripping Crafted HTML tags.
 * _AC-12189_: Grunt minder gebruikspubs/prefix voor broncemaps
    * _nota van de Reparatie_: Het systeem produceert nu minder/css broncemaps zonder de /pub prefix voor wegen wanneer het gebruiken van steen, die de behoefte aan een tijdelijke oplossing in de configuratie van de webserver elimineren. Eerder, vereiste het gebruik van het prefix /pub in broncemaps wegen een specifieke configuratie in de webserver om correct te functioneren.
    * _GitHub kwestie_: <https://github.com/magento/magento2/issues/38837>
