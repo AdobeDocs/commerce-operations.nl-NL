@@ -1,11 +1,12 @@
 ---
-title: "ACSD-60804: Het bewerken van een klant die is gekoppeld aan een verwijderd bedrijf leidt tot een fout"
+title: 'ACSD-60804: Het bewerken van een klant die is gekoppeld aan een verwijderd bedrijf leidt tot een fout'
 description: Pas de ACSD-60804-patch toe om het Adobe Commerce-probleem te verhelpen, waarbij het bewerken van een klant die is gekoppeld aan een verwijderd bedrijf, resulteert in een fout *Call naar een lidfunctie getSuperUserId() op null*.
 feature: Companies, Customers, B2B
 role: Admin, Developer
-source-git-commit: 1231dac065565ff636424673a15ae4148a5f84dd
+exl-id: 09241160-f5ed-41f8-8bb6-2bb8ed5cccd5
+source-git-commit: 9d39b1045099a71d23f25ad1ef4932f78b1f33f0
 workflow-type: tm+mt
-source-wordcount: '391'
+source-wordcount: '356'
 ht-degree: 0%
 
 ---
@@ -64,8 +65,4 @@ Om individuele flarden toe te passen, gebruik de volgende verbindingen afhankeli
 
 Meer informatie over [!DNL Quality Patches Tool] vindt u in:
 
-* [[!DNL Quality Patches Tool]  vrijgegeven: een nieuw hulpmiddel om kwaliteitspatches ](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/announcements/commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches) in de steunkennisbasis zelf-te dienen.
-* [ Controle als het flard voor uw kwestie van Adobe Commerce beschikbaar is gebruikend  [!DNL Quality Patches Tool]](/help/tools/quality-patches-tool/patches-available-in-qpt/check-patch-for-magento-issue-with-magento-quality-patches.md) in de [!UICONTROL Quality Patches Tool] gids.
-
-
-Voor informatie over andere flarden beschikbaar in QPT, verwijs naar [[!DNL Quality Patches Tool]: Onderzoek naar flarden ](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html) in de [!DNL Quality Patches Tool] gids.
+* [[!DNL Quality Patches Tool]: Een zelfbedieningshulpmiddel voor kwaliteitspatches ](/help/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches.md) in de gids van Hulpmiddelen.
