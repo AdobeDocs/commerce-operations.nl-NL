@@ -1,18 +1,19 @@
 ---
 title: '''MDVA-41631: Fout bij het ophalen van bestelgegevens zonder optionele waarde ''phone'''
-description: De MDVA-41631-patch verhelpt het probleem waarbij gebruikers een fout krijgen bij het ophalen van bestellingsgegevens zonder optionele "telefoon"-waarde via GraphQL. Deze patch is beschikbaar wanneer [Quality Patches Tool (QPT)] (https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/announcements/commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches) 1.1.7 is geïnstalleerd. Het probleem wordt volgens de planning opgelost in Adobe Commerce 2.4.4.
+description: De flard MDVA-41631 lost de kwestie op waar de gebruikers een fout krijgen die bestelinformatie zonder facultatieve "telefoon"waarde door  [!DNL GraphQL] terugwinnen. Deze patch is beschikbaar wanneer [Quality Patches Tool (QPT)] (https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/announcements/commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches) 1.1.7 is geïnstalleerd. Het probleem wordt volgens de planning opgelost in Adobe Commerce 2.4.4.
 feature: Orders
 role: Admin
-source-git-commit: 79c8a15fb9686dd26d73805e9d0fd18bb987770d
+exl-id: e56cea59-ffc1-4520-85ca-136cda613884
+source-git-commit: 3f14d93eca09967e320aae4af5e94c6d0c16cd20
 workflow-type: tm+mt
-source-wordcount: '415'
+source-wordcount: '401'
 ht-degree: 0%
 
 ---
 
 # MDVA-41631: Fout bij het ophalen van bestelgegevens zonder optionele waarde &quot;phone&quot;
 
-De MDVA-41631-patch verhelpt het probleem waarbij gebruikers een fout krijgen bij het ophalen van bestellingsgegevens zonder optionele &quot;telefoon&quot;-waarde via GraphQL. Dit flard is beschikbaar wanneer het [ Hulpmiddel van de Patches van de Kwaliteit (QPT) ](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/announcements/commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches) 1.1.7 geïnstalleerd is. Het probleem wordt volgens de planning opgelost in Adobe Commerce 2.4.4.
+De MDVA-41631-patch verhelpt het probleem waarbij gebruikers een fout krijgen bij het ophalen van bestelgegevens zonder de optionele waarde &quot;phone&quot; via [!DNL GraphQL] . Deze patch is beschikbaar wanneer [[!DNL Quality Patches Tool (QPT)] ](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/announcements/commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches) 1.1.7 wordt geïnstalleerd. Het probleem wordt volgens de planning opgelost in Adobe Commerce 2.4.4.
 
 ## Betrokken producten en versies
 
@@ -30,14 +31,14 @@ Adobe Commerce (alle implementatiemethoden) 2.4.1 - 2.4.3-p1
 
 ## Probleem
 
-Gebruikers krijgen via GraphQL een fout bij het ophalen van bestelgegevens zonder optionele waarde voor &quot;Telefoon&quot;.
+Gebruikers krijgen een fout bij het ophalen van bestelgegevens zonder optionele waarde &quot;phone&quot; via [!DNL GraphQL] .
 
 <u> Stappen om </u> te reproduceren:
 
 1. Ga naar **Opslag** > **Configuratie** > **Klanten** > **de Configuratie van de Klant** > **Naam en de Opties van het Adres** > **tonen Telefoon** en plaatsen het telefoonaantal als facultatief.
-1. Plaats een bestelling met GraphQL API als aangemelde klant.
-   * Stel het telefoonnummer niet in bij het instellen van het factuuradres en het verzendadres. Volg de instructies die in [ het Leerprogramma van de Controle van GraphQL ](https://developer.adobe.com/commerce/webapi/graphql/tutorials/checkout/checkout-customer.html) in onze ontwikkelaarsdocumentatie worden gegeven.
-1. Haal de orde terug gebruikend de GraphQL [ customerOrders vraag ](https://developer.adobe.com/commerce/webapi/graphql/queries/customer-orders.html).
+1. Plaats een bestelling met [!DNL GraphQL API] als aangemelde klant.
+   * Stel het telefoonnummer niet in wanneer u het factuuradres en het verzendadres instelt. Volg de instructies die in [[!DNL GraphQL]  het Leerprogramma van de Controle ](https://developer.adobe.com/commerce/webapi/graphql/tutorials/checkout/) in onze ontwikkelaarsdocumentatie worden gegeven.
+1. Haal de orde terug gebruikend [!DNL GraphQL] [`customerOrders` vraag ](https://developer.adobe.com/commerce/webapi/graphql/schema/customer/queries/orders/).
 
 <pre>
 <code class="language-graphql">
@@ -81,7 +82,7 @@ country_code
 
 <u> Verwachte resultaten </u>:
 
-Gebruikers krijgen bestelgegevens.
+De gebruikers krijgen de ordeinformatie.
 
 <u> Ware resultaten </u>:
 
@@ -96,7 +97,7 @@ Om individuele flarden toe te passen, gebruik de volgende verbindingen afhankeli
 
 ## Gerelateerde lezing
 
-Raadpleeg voor meer informatie over het gereedschap Kwaliteitspatches:
+Meer informatie over [!DNL Quality Patches Tool] vindt u in:
 
 * [ vrijgegeven het Hulpmiddel van de Patches van de Kwaliteit: een nieuw hulpmiddel om kwaliteitspatches ](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/announcements/commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches) in de steunkennisbasis zelf-te dienen.
 * [ Controle als het flard voor uw kwestie van Adobe Commerce beschikbaar is gebruikend het Hulpmiddel van de Patches van de Kwaliteit ](/help/tools/quality-patches-tool/patches-available-in-qpt/check-patch-for-magento-issue-with-magento-quality-patches.md) in de [!DNL Quality Patches Tool] gids.
