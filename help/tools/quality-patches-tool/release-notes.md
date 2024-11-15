@@ -2,9 +2,9 @@
 title: Opmerkingen bij de release
 description: Meer informatie over de patches die beschikbaar zijn voor Adobe Commerce en de problemen die ze oplossen.
 exl-id: 22262555-f5ea-49ad-98ad-ea8428ef66d5
-source-git-commit: efa483b3e5a09bf2f4a472f9ee9e30512a0ca211
+source-git-commit: fb884f895cb03dcc920dc3de9baa63deb8737cd3
 workflow-type: tm+mt
-source-wordcount: '22642'
+source-wordcount: '23125'
 ht-degree: 0%
 
 ---
@@ -21,6 +21,25 @@ ht-degree: 0%
 >
 >Voor informatie over [!DNL quality patches] die door de Gemeenschap voor Magento Open Source wordt gecreeerd, zie de [ versienota&#39;s ](https://github.com/magento/quality-patches/blob/master/community-release-notes.md).
 
+## v1.1.5 {#v1-1-55}
+
+* **ACSD-58383** (voor Adobe Commerce en Magento Open Source >=2.4.4 &lt;2.4.8) - lost de kwestie op waar het uitgeven van een restitutie via [!DNL REST API] met twee identieke verzoeken die gelijktijdig worden uitgevoerd, dubbele creditmemo&#39;s leidt.
+* **ACSD-58471** (voor Adobe Commerce >=2.4.4 &lt;2.4.8) - lost de kwestie op waar de dynamische inhoud niet op de pagina van het productdetail laadt, toen de bijbehorende regels van de catalogusprijs werden gepland.
+* **ACSD-58566** (voor Adobe Commerce >=2.4.6 &lt;2.4.8) - lost het probleem op waar [!DNL GraphQL] een interne serverfout wanneer het vragen van het `created_at` gebied in de `addPurchaseOrderComment` mutatie terugkeert.
+* **ACSD-58685** (voor Adobe Commerce en Magento Open Source >=2.4.4 &lt;2.4.8) - lost de kwestie op waar verkoope-mails die terwijl de e-mailmededeling werd in werking gesteld werden, nog werden verzonden zodra de e-mailmededeling opnieuw werd toegelaten.
+* **ACSD-58735** (voor Adobe Commerce en Magento Open Source >=2.4.4 &lt;2.4.8) - lost de kwestie op waar een beperkte beheerder niet de verlaten winkelwagentjes op de pagina van de klantenrekening in [!UICONTROL Admin] voor een bijbehorende website kon bekijken.
+* **ACSD-58828** (voor Adobe Commerce en Magento Open Source >=2.4.6 &lt;2.4.8) - lost de kwestie op waar het server-zijbevestigingsbericht *adres wordt vereist* verschijnt als om het even welk vereist gebied leeg, naast het cliënt-zijbevestigingsbericht wordt verlaten. De server-zijbevestiging zal niet het bericht voor lege vereiste gebieden tonen, en de cliënt-zijbevestiging zal het foutenmelding behandelen, die, *dit een vereist gebied verklaart.*
+* **ACSD-60344** (voor Adobe Commerce >=2.4.4 &lt;2.4.8) - lost de kwestie op waar de dubbele berichten van de ordbevestiging wanneer het gebruiken van a **[!UICONTROL Purchase Order]** met auto-goedkeuring worden verzonden.
+* **ACSD-61348** (voor Adobe Commerce en Magento Open Source >=2.4.4 &lt;2.4.8) - lost de kwestie op waar de punten van wenslijsten via [!DNL GraphQL] zichtbaar zijn, maar niet op de storefront wanneer in een multi-websitemilieu.
+* **ACSD-61534** (voor Adobe Commerce en Magento Open Source >=2.4.7 &lt;2.4.8) - lost de kwestie op waar de ontwerpconfiguratie niet kon worden geplaatst gebruikend het `bin/magento config:set` bevel, en de gesloten waarden konden door vormmanipulatie worden veranderd. Vergrendelde waarden die zijn ingesteld in de [!DNL CLI] met `--lock-env` of `--lock-conf` , kunnen nu niet worden bijgewerkt.
+* **ACSD-61785** (voor Adobe Commerce >=2.4.4 &lt;2.4.8) - benadrukt de kwestie waar het bijwerken van het `reward_warning_notification` attribuut niet mogelijk via [!DNL GraphQL] mutatie en [!DNL REST API] vraag was, die zijn gedrag met `reward_update_notification` richt.
+* **ACSD-62591** (voor Adobe Commerce en Magento Open Source >=2.4.7 &lt;2.4.8) - het bevestigen van de kwestie waar het thema niet behoorlijk schakelt wanneer **[!UICONTROL User Agent Rules]** wordt gevormd.
+* **ACSD-62793** (voor Adobe Commerce en Magento Open Source >=2.4.7 &lt;2.4.8) - lost de kwestie op waar `datetime` attributen in uitgevoerde gegevens niet de tijdcomponent omvatten. Bovendien als **[!UICONTROL Fields Enclosure]** ** wordt toegelaten, zullen de attributenwaarden in de `additional_attributes` kolom binnen dubbel-citaten worden ingesloten.
+* **ACSD-62332** (voor Adobe Commerce >=2.4.6 &lt;2.4.7) - lost de kwestie op waar de vraag van de productlijst [!DNL GraphQL] tot a `total_count` van 10.000 producten werd beperkt. Verhelpt de kwestie waar [!DNL Live Search] de huidige pagina aan *1* in plaats van pagina *2* in de onderzoekscriteria plaatst wanneer gevraagd via [!DNL GraphQL].
+* Versies bijgewerkt: **ACSD-46581**, **ACSD-49513**, **ACSD-52801**, **ACSD-59514**
+* Vervangen flarden: **ACSD-52801**, **ACSD-55100**
+* Afgekeurde flarden: **ACSD-52085**, **ACSD-57854**
+
 ## v1.1.54 {#v1-1-54}
 
 * **AC-13283** (voor Adobe Commerce en Magento Open Source 2.4.6-p8) - keert de Achterwaartse onverenigbare veranderingen van de Orde van de Plaats terug inbegrepen in 2.4.6-p8.
@@ -35,8 +54,8 @@ ht-degree: 0%
 * **ACSD-61845** (voor Adobe Commerce en Magento Open Source >=2.4.7-p1 &lt;2.4.8) - lost de fout op die voorkomt wanneer een verzoek met slechts *wordt verzonden text/html* kopbal goedkeurt.
 * **ACSD-62056** (voor Adobe Commerce en Magento Open Source >=2.4.4 &lt;2.4.8) - lost de kwestie op waar het uploaden van beeld voor een configureerbaar product ontbreekt als MSI wordt geïnstalleerd.
 * **ACSD-62485** (voor Adobe Commerce >=2.4.4 &lt;2.4.6-p8 || >=2.4.7 &lt;2.4.8) - Het probleem waarbij `async.operations.all` de consument stopt met werken wanneer een bedrijf wordt gemaakt, wordt opgelost.
-* Bijgewerkte patches: ACSD-48661, ACSD-51846, ACSD-55100, ACSD-61553
-* Verouderde patches: ACSD-51846
+* Versies bijgewerkt: **ACSD-48661**, **ACSD-55100**, **ACSD-61553**
+* Afgekeurde flarden: **ACSD-51846**
 
 ## v1.1.53 {#v1-1-53}
 
@@ -64,7 +83,7 @@ ht-degree: 0%
 * **ACSD-60788** (voor Adobe Commerce >=2.4.7 &lt;2.4.8) - lost de kwestie op waar de douanescripts voor [!DNL Google Tag Manager] niet wegens de fouten van het Veiligheidsbeleid van de Inhoud (CSP) worden uitgevoerd.
 * **ACSD-61322** (voor Adobe Commerce >=2.4.6 &lt;2.4.8) - lost de kwestie op waar [!UICONTROL Products/Categories] niet toegewezen aan [!UICONTROL Shared Catalog] voor het Standaard (Algemene Groep) nog in de Sitemap van XML zijn.
 * **ACSD-61366** (voor Adobe Commerce en Magento Open Source >=2.4.7 &lt;2.4.8) - lost de kwestie op waar het `setup:static-content:deploy --jobs 4` bevel met veelvoudige banen loopt die met de *Haven ontbreken moet binnen de fout van de gastheerparameter* worden gevormd wanneer de haven voor de verbinding van DB wordt gespecificeerd.
-* Bijgewerkte patches: ACSD-51857, ACSD-57394
+* Bijgewerkte versies: **ACSD-54989**, **ACSD-60632**
 
 ## v1.1.51 {#v1-1-51}
 
