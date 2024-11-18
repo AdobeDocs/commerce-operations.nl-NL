@@ -2,7 +2,7 @@
 title: Opmerkingen bij de release
 description: Meer informatie over de patches die beschikbaar zijn voor Adobe Commerce en de problemen die ze oplossen.
 exl-id: 22262555-f5ea-49ad-98ad-ea8428ef66d5
-source-git-commit: fb884f895cb03dcc920dc3de9baa63deb8737cd3
+source-git-commit: 3f6093b55c7bbfaf8666438ac1fef8f90432d947
 workflow-type: tm+mt
 source-wordcount: '23125'
 ht-degree: 0%
@@ -68,7 +68,7 @@ ht-degree: 0%
 * **ACSD-61553** (voor Adobe Commerce en Magento Open Source >=2.4.5 &lt;2.4.7) - lost het probleem op waar **[!UICONTROL Cart Price Rule]** kortingen verkeerd worden berekend wanneer de veelvoudige kortingen met verschillende prioriteiten en **[!UICONTROL Maximum Qty Discount is Applied To]** worden toegepast op het product.
 * **ACSD-61667** (voor Adobe Commerce en Magento Open Source >=2.4.4 &lt;2.4.8) - verbetert inventarisprestaties voor het creëren van het verschepen in het geval van vele bronnen met in-store bestelwagen.
 * **ACSD-61969** (voor Adobe Commerce >=2.4.7 &lt;2.4.8) - lost de kwestie op waar de gebruiker in een case-sensitive couponcode moet typen om precies te stemmen aangezien de couponcode werd gevormd.
-* Bijgewerkte patches: ACSD-54989, ACSD-60632
+* Bijgewerkte versies: **ACSD-54989**, **ACSD-60632**
 
 ## v1.1.52 {#v1-1-52}
 
@@ -83,7 +83,7 @@ ht-degree: 0%
 * **ACSD-60788** (voor Adobe Commerce >=2.4.7 &lt;2.4.8) - lost de kwestie op waar de douanescripts voor [!DNL Google Tag Manager] niet wegens de fouten van het Veiligheidsbeleid van de Inhoud (CSP) worden uitgevoerd.
 * **ACSD-61322** (voor Adobe Commerce >=2.4.6 &lt;2.4.8) - lost de kwestie op waar [!UICONTROL Products/Categories] niet toegewezen aan [!UICONTROL Shared Catalog] voor het Standaard (Algemene Groep) nog in de Sitemap van XML zijn.
 * **ACSD-61366** (voor Adobe Commerce en Magento Open Source >=2.4.7 &lt;2.4.8) - lost de kwestie op waar het `setup:static-content:deploy --jobs 4` bevel met veelvoudige banen loopt die met de *Haven ontbreken moet binnen de fout van de gastheerparameter* worden gevormd wanneer de haven voor de verbinding van DB wordt gespecificeerd.
-* Bijgewerkte versies: **ACSD-54989**, **ACSD-60632**
+* Bijgewerkte patches: ACSD-51857, ACSD-57394
 
 ## v1.1.51 {#v1-1-51}
 
