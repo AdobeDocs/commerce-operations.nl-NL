@@ -2,9 +2,9 @@
 user-guide-title: Gereedschappen
 user-guide-description: Leer meer over de verschillende gereedschappen die u met Adobe Commerce kunt gebruiken, hun gebruik, het installatieproces en hoe u toegang krijgt.
 feature: Configuration
-source-git-commit: f684470add56a13dc7bf898f50a73c792e26673c
+source-git-commit: 10c83d907fba94fcc65103bf6efce5f0c115c310
 workflow-type: tm+mt
-source-wordcount: '0'
+source-wordcount: '6217'
 ht-degree: 0%
 
 ---
@@ -657,6 +657,7 @@ ht-degree: 0%
          - [ACSD-60804: Het bewerken van een klant die is gekoppeld aan een verwijderd bedrijf, resulteert in een fout](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-53/acsd-60804-editing-customer-linked-to-deleted-company-causes-error.md)
       - v1.1.54 {#v1-1-54}
          - [Overzicht: [!DNL Quality Patches Tool]  (QPT) v1.1.54](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-54/overview.md)
+         - [ACSD-61199: het tabblad [!UICONTROL Hierarchy] van de CMS-pagina geeft geen juiste boomstructuur weer](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-54/acsd-61199-cms-page-hierarchy-tab-doesnt-display-proper-tree-structure.md)
          - [ACSD-61200: Vorderingen op de heffingskorting voor korting in de totale verkoopberekeningen](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-54/acsd-61200-fixes-discount-tax-compensation-in-sales-total-calculations.md)
          - [ACSD-61522: E-mailadressen in de velden Voornaam en Achternaam verzenden ongeldige orderbevestigingen](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-54/acsd-61522-email-in-name-fields-sends-invalid-order-confirmations.md)
          - [ACSD-61845: Fout treedt op bij aanvragen met text/html accepteert header](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-54/acsd-61845-error-occurs-for-requests-with-text-html-accept-header.md)
