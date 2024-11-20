@@ -1,7 +1,7 @@
 ---
-source-git-commit: ddf988826c29b4ebf054a4d4fb5f4c285662ef4e
+source-git-commit: 0d5eeb691281d7c62aa64a9d8cd042f18504a67f
 workflow-type: tm+mt
-source-wordcount: '6363'
+source-wordcount: '6370'
 ht-degree: 0%
 
 ---
@@ -248,7 +248,7 @@ _adjectief_
 
 Een detailhandel met een vaste fysieke locatie, in tegenstelling tot bedrijven die vrijwel of uitsluitend via internet functioneren.
 
-Voor [ Inventory management ](https://experienceleague.adobe.com/docs/commerce-admin/inventory/sources/sources-manage.html) en [ Order Management ](https://omsdocs.magento.com/getting-started/terminology/), is deze opslag een bron voor het volgen van producthoeveelheden, het verschepen van orden, en het steunen in-store bestelwagen.
+Voor [ Inventory management ](https://experienceleague.adobe.com/docs/commerce-admin/inventory/sources/sources-manage.html) en [ Order Management ](#oms), is deze opslag een bron voor het volgen van producthoeveelheden, het verschepen van orden, en het steunen in-store bestelwagen.
 
 _attributen van de Term:_
 
@@ -1046,7 +1046,11 @@ _attributen van de Term:_
 
 _noun_
 
-[ OMS ](https://omsdocs.magento.com) is het aanbieden van het Systeem van Order Management van de Adobe.
+OMS is het Order Management System-aanbod van Adobe.
+
+>[!IMPORTANT]
+>
+>Adobe Commerce Order Management (OMS) heeft het einde van de levensduur bereikt en wordt niet meer ondersteund.
 
 OMS is een flexibele en betaalbare oplossing voor het beheren, verkopen en uitvoeren van voorraad van elk verkoopkanaal.
 OMS biedt een naadloze klantervaring, die de verkoop verhoogt en de kosten verlaagt, en de tijd aan markt versnelt.
@@ -1058,7 +1062,7 @@ Tot de OMS-mogelijkheden behoren:
 * Eenvoudigere en meer responsieve klantenservice
 * Betere klantenervaring en loyaliteit
 
-Leer meer: [ Begonnen het Worden met OMS ](https://omsdocs.magento.com/en/getting-started/), [ OMS Docs plaats ](https://omsdocs.magento.com/en/)
+Leer meer: [ Gearchiveerde plaats van Docs OMS ](https://commerce-docs.github.io/oms-documentation-archive/)
 
 _attributen van de Term:_
 
@@ -1279,7 +1283,7 @@ _attributen van de Term:_
 
 _noun_
 
-Een modulaire inhoudseenheid die door een gebruiker in het CMS op een pagina kan worden geplaatst om tekst en afbeeldingen weer te geven of codefragmenten uit te voeren.
+Een modulaire inhoudseenheid die door een gebruiker in de CMS op een pagina kan worden geplaatst om tekst en afbeeldingen weer te geven of codefragmenten uit te voeren.
 Statische blokken bevatten bewerkbare inhoud en kunnen fungeren als bestemmingspagina&#39;s voor productcategorieën.
 Widgets kunnen aan statische blokken worden toegevoegd om extra functionaliteit te verstrekken.
 
