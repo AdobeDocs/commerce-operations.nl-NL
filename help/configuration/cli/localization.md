@@ -2,7 +2,7 @@
 title: Vertaalwoordenboeken en taalpakketten
 description: Leer hoe u vertaalwoordenboeken kunt genereren en taalpakketten kunt maken.
 exl-id: dd27ccdd-158d-40a6-a2e2-563857820ae9
-source-git-commit: 987d65b52437fbd21f41600bb5741b3cc43d01f3
+source-git-commit: 02c69e890b40643781ab8f48c3133527dd79386a
 workflow-type: tm+mt
 source-wordcount: '1432'
 ht-degree: 0%
@@ -92,7 +92,7 @@ In deze sectie wordt besproken hoe u een taalpakket kunt maken, waarin CSV-besta
 1. [ verzamel en vertaal woorden en uitdrukkingen ](#generate-a-translation-dictionary). (De parameter `--magento` is vereist.)
 1. [ stel het bevel van het taalpakket in werking ](#run-the-language-package-command).
 1. [ creeer folders en dossiers ](#create-directories-and-files).
-1. (Optioneel.) [ vorm veelvoudige pakketten voor een taal ](#configure-multiple-packages-for-a-language).
+1. (Facultatief.) [ vorm veelvoudige pakketten voor een taal ](#configure-multiple-packages-for-a-language).
 
 ### De opdracht Taalpakket uitvoeren
 
@@ -284,8 +284,8 @@ Vergelijkbaar met het voorgaande voorbeeld genereert u een CSV-bestand. In plaat
    ```php
    <?php
    /**
-    * Copyright &copy; Magento, Inc. All rights reserved.
-    * See COPYING.txt for license details.
+    * Copyright Adobe
+    * All Rights Reserved.
     */
    
    use Magento\Framework\Component\ComponentRegistrar;
@@ -301,11 +301,10 @@ Vergelijkbaar met het voorgaande voorbeeld genereert u een CSV-bestand. In plaat
 
    ```xml
    <?xml version="1.0"?>
-   /**
-   * Copyright &copy; Magento, Inc. All rights reserved.
-   * See COPYING.txt for license details.
-   */
-   
+   <!--
+   Copyright Adobe
+   All Rights Reserved.
+   -->
    <language xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:App/Language/package.xsd">
        <code>xx_YY</code>
        <vendor>examplecorp</vendor>
