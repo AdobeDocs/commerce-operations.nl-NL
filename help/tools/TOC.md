@@ -2,9 +2,9 @@
 user-guide-title: Gereedschappen
 user-guide-description: Leer meer over de verschillende gereedschappen die u met Adobe Commerce kunt gebruiken, hun gebruik, het installatieproces en hoe u toegang krijgt.
 feature: Configuration
-source-git-commit: b6dada04a89664fe03c0f706ce9cd247e61679ac
+source-git-commit: a2e26daf2d5775e1186c1eca7272f9a2efcee23f
 workflow-type: tm+mt
-source-wordcount: '0'
+source-wordcount: '6253'
 ht-degree: 0%
 
 ---
@@ -660,6 +660,7 @@ ht-degree: 0%
          - [ACSD-61199: het tabblad [!UICONTROL Hierarchy] van de CMS-pagina geeft geen juiste boomstructuur weer](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-54/acsd-61199-cms-page-hierarchy-tab-doesnt-display-proper-tree-structure.md)
          - [ACSD-61200: Vorderingen op de heffingskorting voor korting in de totale verkoopberekeningen](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-54/acsd-61200-fixes-discount-tax-compensation-in-sales-total-calculations.md)
          - [ACSD-61522: E-mailadressen in de velden Voornaam en Achternaam verzenden ongeldige orderbevestigingen](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-54/acsd-61522-email-in-name-fields-sends-invalid-order-confirmations.md)
+         - [ACSD-62485: async.operations.all stopt de consument met werken wanneer het bedrijf wordt gemaakt](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-54/acsd-62485-async-operations-all-consumer-stops-working-when-company-is-created.md)
          - [ACSD-61845: Fout treedt op bij aanvragen met text/html accepteert header](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-54/acsd-61845-error-occurs-for-requests-with-text-html-accept-header.md)
       - v1.1.55 {#v1-1-55}
          - [Overzicht: [!DNL Quality Patches Tool]  (QPT) v1.1.55](/help//tools/quality-patches-tool/patches-available-in-qpt/v1-1-55/overview.md)
