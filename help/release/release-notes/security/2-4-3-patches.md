@@ -2,7 +2,7 @@
 title: Opmerkingen bij de release van Adobe Commerce 2.4.3 Beveiligingspatches
 description: Leer meer over oplossingen voor beveiligingsproblemen, beveiligingsverbeteringen en andere beveiligingsupdates die zijn opgenomen in de beveiligingspatchreleases voor Adobe Commerce versie 2.4.3.
 exl-id: 72d343cd-83d7-48ce-976a-e26ba1b8db27
-source-git-commit: 79c8a15fb9686dd26d73805e9d0fd18bb987770d
+source-git-commit: 95ea96a566b0579a22b2ba738bd4a4bceef8cd9c
 workflow-type: tm+mt
 source-wordcount: '931'
 ht-degree: 0%
@@ -80,7 +80,7 @@ Deze release bevat de volgende hotfix en alle hotfixes die zijn vrijgegeven voor
 
 **Beperkte admin toegang tot de omslagen van de Galerij van Media**. De standaardbevoegdheden van de Medialerie staan nu alleen directorybewerkingen toe (weergeven, uploaden, verwijderen en maken) die expliciet zijn toegestaan door de configuratie. Admin-gebruikers hebben geen toegang meer tot media-elementen via de medialerie die buiten de mappen `catalog/category` of `wysiwyg` zijn geüpload. Beheerders die toegang willen krijgen tot media-elementen, moeten deze naar een expliciet toegestane map verplaatsen of hun configuratie-instellingen aanpassen. Zie [ de omslagtoestemmingen van Media Library wijzigen ](https://developer.adobe.com/commerce/php/tutorials/backend/modify-image-library-permissions/). <!-- B2B-1897-->
 
-**Verlaagde grenzen aan de vraagingewikkeldheid van GraphQL**. De GraphQL maximum toegestane vraagingewikkeldheid is verminderd om ontkenning-van-Dienst (DOS) aanvallen te verhinderen. Zie [ de veiligheidsconfiguratie van GraphQL ](https://developer.adobe.com/commerce/webapi/graphql/security-configuration.html). <!-- PWA-1700-->
+**Verlaagde grenzen aan de vraagingewikkeldheid van GraphQL**. De GraphQL maximum toegestane vraagingewikkeldheid is verminderd om ontkenning-van-Dienst (DOS) aanvallen te verhinderen. Zie [ de veiligheidsconfiguratie van GraphQL ](https://developer.adobe.com/commerce/webapi/graphql/usage/security-configuration/). <!-- PWA-1700-->
 
 **de Recente kwetsbaarheid van de penetratietest** is bevestigd in deze versie. <!-- MC-42431-->
 
