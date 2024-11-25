@@ -2,7 +2,7 @@
 title: Snelle start van de installatie op locatie
 description: Voer de volgende stappen uit om Adobe Commerce te installeren op uw eigen infrastructuur.
 exl-id: a93476e8-2b30-461a-91df-e73eb1a14d3c
-source-git-commit: f9f8aea1a77ef062d7076a61bbafd12433f15edf
+source-git-commit: ee7551374aa6d4ad462dd64ee3d05b934b43ce45
 workflow-type: tm+mt
 source-wordcount: '933'
 ht-degree: 0%
@@ -11,7 +11,7 @@ ht-degree: 0%
 
 # Snelle start van de installatie op locatie
 
-De instructies op deze pagina beschrijven hoe te om Adobe Commerce op [ zelf-ontvangen ](../implementation-playbook/infrastructure/self-hosting/overview.md) infrastructuur te installeren. Voor begeleiding bij de bevordering van een bestaande installatie, zie de [_Gids van de Verbetering_](../upgrade/overview.md).
+In de instructies op deze pagina wordt beschreven hoe u Adobe Commerce op zelfgehoste infrastructuur kunt installeren. Voor begeleiding bij de bevordering van een bestaande installatie, zie de [_Gids van de Verbetering_](../upgrade/overview.md).
 
 De Adobe gebruikt [ Composer ](https://getcomposer.org/) om de componenten van Adobe Commerce en hun gebiedsdelen te beheren. Het gebruik van Composer voor het ophalen van het Adobe Commerce-pakket biedt de volgende voordelen:
 

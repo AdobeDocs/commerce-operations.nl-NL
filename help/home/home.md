@@ -2,9 +2,9 @@
 title: Startpagina operationele hulplijnen
 description: Blader door een index van het systeembeheer en de documentatie van het operationele product van Adobe Commerce.
 exl-id: 45ec4948-338f-4276-8a70-d0db720322d9
-source-git-commit: a33d12a055db0cb4a4c8f64992d6ebf77842cbe7
+source-git-commit: 5a2aae6a2f3b1353457f003460d230db2b57abdd
 workflow-type: tm+mt
-source-wordcount: '198'
+source-wordcount: '163'
 ht-degree: 0%
 
 ---
@@ -27,13 +27,13 @@ Gebruik deze volgende inzameling van gidsen om over de concepten van het systeem
       <p>Bekijk alle releasegegevens voor Adobe Commerce-patches en -services.</p>
     </div>
   </td>
-  <td valign="top">
-    <a href="../performance/overview.md">
-       <img alt="Prestaties" src="../assets/icons/gauge.svg" width="40"/>
+    <td valign="top">
+    <a href="../implementation-playbook/overview.md">
+      <img alt="Implementatie" src="../assets/icons/play.svg" width="40"/>
     </a>
     <div>
-      <a href="../performance/overview.md"><strong> Beste praktijken van Prestaties </strong></a>
-      <p>Gebruik deze aanbevelingen om de prestaties van uw Adobe Commerce-implementatie te optimaliseren.</p>
+      <a href="../implementation-playbook/overview.md"><strong> Playbook van de Implementatie </strong></a>
+      <p>Leer meer over strategieën voor het plannen en implementeren van een geslaagde Adobe Commerce-site.</p>
     </div>
   </td>
   <td valign="top">
@@ -45,33 +45,13 @@ Gebruik deze volgende inzameling van gidsen om over de concepten van het systeem
       <p>Leer hoe Adobe Commerce-verkopers verantwoordelijk zijn voor het onderhouden van een veilige omgeving.</p>
     </div>
   </td>
-</tr>
-<tr>
-  <td valign="top">
-    <a href="../implementation-playbook/overview.md">
-      <img alt="Implementatie" src="../assets/icons/play.svg" width="40"/>
+    <td valign="top">
+    <a href="../performance/overview.md">
+       <img alt="Prestaties" src="../assets/icons/gauge.svg" width="40"/>
     </a>
     <div>
-      <a href="../implementation-playbook/overview.md"><strong> Playbook van de Implementatie </strong></a>
-      <p>Leer meer over strategieën voor het plannen en implementeren van een geslaagde Adobe Commerce-site.</p>
-    </div>
-  </td>
-  <td valign="top">
-    <a href="../operational-playbook/overview.md">
-       <img alt="Bewerkingen" src="../assets/icons/refresh.svg" width="40"/>
-    </a>
-    <div>
-      <a href="../operational-playbook/overview.md"><strong> Operationeel Playbook </strong></a>
-      <p>Leer hoe te om uw ondernemingen operationeel klaar te krijgen om een succesvolle e-commercesite in werking te stellen.</p>
-    </div>
-  </td>
-  <td valign="top">
-    <a href="../commerce-at-scale/overview.md">
-       <img alt="Enterprise" src="../assets/icons/enterprise.svg" width="40"/>
-    </a>
-    <div>
-      <a href="../commerce-at-scale/overview.md"><strong> Commerce bij Schaal </strong></a>
-      <p>Leer hoe u op schaal ervaringen kunt bieden met Adobe Commerce met Adobe Experience Manager.</p>
+      <a href="../performance/overview.md"><strong> Beste praktijken van Prestaties </strong></a>
+      <p>Gebruik deze aanbevelingen om de prestaties van uw Adobe Commerce-implementatie te optimaliseren.</p>
     </div>
   </td>
 </tr>

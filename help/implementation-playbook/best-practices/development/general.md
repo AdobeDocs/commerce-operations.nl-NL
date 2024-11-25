@@ -4,9 +4,9 @@ description: Meer informatie over algemene best practices bij het ontwikkelen va
 feature: Best Practices
 role: Developer
 exl-id: 35de9849-2d19-4bb6-b920-9ce3838bc8bc
-source-git-commit: 823498f041a6d12cfdedd6757499d62ac2aced3d
+source-git-commit: 68dc4635df9fc411925fe0d48a578edece8895dc
 workflow-type: tm+mt
-source-wordcount: '770'
+source-wordcount: '579'
 ht-degree: 0%
 
 ---
@@ -46,18 +46,6 @@ De sleutelwoorden &quot;MOET&quot;, &quot;MOET NIET&quot;, &quot;VEREIST&quot;, 
 1. Alle ontwikkelaars MOETEN zich ontwikkelen en testen gebruikend de zelfde technologiestapel zoals die op de (toekomstige) productieservers wordt gebruikt. De versies van de software in deze technologiestapel MOETEN de belangrijkste en minder belangrijke versie van de software aanpassen die op de productieservers wordt geïnstalleerd. Zie [ systeemvereisten ](../../../installation/system-requirements.md) voor details over de typische technologiestapel voor Adobe Commerce.
 1. De systeembeheerder of technische architect kan het team voorzien van een centraal onderhouden lokale ontwikkelomgeving om gelijke en actuele lokale omgevingen te verzekeren en te bevorderen.
 1. De ontwikkelaars en de ingenieurs QA MOETEN toegang tot de bevellijn, het gegevensbestand, en de logboekdossiers van het milieu hebben QA. Dit kan een verbinding van VPN vereisen.
-
-## Codeerstandaarden
-
-1. Alle code DIENT conventies in architectuur, methodologie en coderingsnormen te volgen. Creativiteit is gewenst in functie, niet in vorm.
-1. Alle code ZOU met de [ Gids van de Architectuur van Adobe Commerce ](https://developer.adobe.com/commerce/php/architecture/) {target="_blank} moeten in lijn zijn.
-1. Alle code ZOU aan de [ Adobe Commerce Coding Normen ](https://developer.adobe.com/commerce/php/coding-standards/) moeten houden.
-1. Alle code ZOU aan de [ Technische Richtlijnen van Adobe Commerce ](https://developer.adobe.com/commerce/php/coding-standards/technical-guidelines/) moeten houden.
-1. Alle code ZOU de [ Beste praktijken van Adobe Commerce ](../phases.md), indien van toepassing moeten uitvoeren.
-1. Alle code ZOU aan de [ normen van de Groep van de Interoperabiliteit van het PHP-Kader (FIG) ](https://www.php-fig.org/) moeten houden.
-1. Waar mogelijk, wordt het AANBEVOLEN om [ de Technische Toelichtingen van Adobe Commerce ](https://developer.adobe.com/commerce/php/architecture/technical-vision/) rekening te houden.
-1. Alle integraties met externe systemen MOETEN integratietests hebben die het bedrijfsproces valideren.
-1. Alle modules MOETEN een testdekking hebben. Wat precies moet worden getest, DIENT te worden bepaald door het ontwikkelingsteam in samenwerking met de technische architect of de belangrijkste ontwikkelaar. Deze vaststelling dient te berusten op kwalitatieve maatregelen en niet op kwantitatieve maatregelen; een hoog percentage van de dekking van de code is geen indicator van succes en houdt evenmin een hoge kwaliteit van de code in. In plaats daarvan moet u het risico bepalen dat een deel van de code niet wordt gedekt door de waarschijnlijkheid en de ernst van de regressies in dat deel van het programma te beoordelen.
 
 ## Versioning
 

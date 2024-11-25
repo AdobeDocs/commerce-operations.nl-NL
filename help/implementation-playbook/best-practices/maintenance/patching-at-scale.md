@@ -5,16 +5,16 @@ role: Developer
 feature: Best Practices
 badge: label="Bijgedragen door Anton Evers, Sr. Technical Architect, Adobe" type="Informative" url="https://www.linkedin.com/in/anton-evers/" tooltip="Bijgedragen door Anton Evers"
 exl-id: 08c38dc5-3dc2-49ee-b56f-59e1718e12b5
-source-git-commit: 823498f041a6d12cfdedd6757499d62ac2aced3d
+source-git-commit: ee7551374aa6d4ad462dd64ee3d05b934b43ce45
 workflow-type: tm+mt
-source-wordcount: '1259'
+source-wordcount: '1251'
 ht-degree: 0%
 
 ---
 
 # Aanbevolen procedures voor het distribueren van Adobe Commerce-patches op schaal
 
-Als u veelvoudige installaties van Adobe Commerce beheert, [ het patchen ](../../../upgrade/patches/apply.md) kan een complex proces zijn. _Gecentraliseerde het patchen_ is een essentieel deel van [ globale verwijzingsarchitectuur ](../../architecture/global-reference/overview.md) en beste praktijken voor ondernemingen. Hiermee kunt u de juiste patches toepassen op al uw Adobe Commerce-installaties. Dit onderwerp verklaart hoe te om gecentraliseerde flarddistributie voor alle types van de flarden van Adobe Commerce [ te bereiken ](../../../upgrade/patches/overview.md).
+Als u veelvoudige installaties van Adobe Commerce beheert, [ het patchen ](../../../upgrade/patches/apply.md) kan een complex proces zijn. _Gecentraliseerde het opsluiten_ is beste praktijken voor ondernemingen. Hiermee kunt u de juiste patches toepassen op al uw Adobe Commerce-installaties. Dit onderwerp verklaart hoe te om gecentraliseerde flarddistributie voor alle types van de flarden van Adobe Commerce [ te bereiken ](../../../upgrade/patches/overview.md).
 
 >[!NOTE]
 >

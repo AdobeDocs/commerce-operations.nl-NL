@@ -3,9 +3,9 @@ title: Aanbevolen werkwijzen voor afhandelingsprestaties
 description: Leer hoe u de prestaties van het afrekenen op uw Adobe Commerce-site optimaliseert.
 feature: Best Practices, Orders
 exl-id: dc2d0399-0d7f-42d8-a6cf-ce126e0b052d
-source-git-commit: e4c1832076bb81cd3e70ff279a6921ffb29ea631
+source-git-commit: ee7551374aa6d4ad462dd64ee3d05b934b43ce45
 workflow-type: tm+mt
-source-wordcount: '1132'
+source-wordcount: '1121'
 ht-degree: 0%
 
 ---
@@ -15,7 +15,7 @@ ht-degree: 0%
 
 Het [ controle ](https://experienceleague.adobe.com/en/docs/commerce-admin/stores-sales/point-of-purchase/checkout/checkout-process) proces in Adobe Commerce is een kritiek aspect van de storefront ervaring. Het baseert zich op de ingebouwde [ kar ](https://experienceleague.adobe.com/en/docs/commerce-admin/start/storefront/storefront#shopping-cart) en [ controle ](https://experienceleague.adobe.com/en/docs/commerce-admin/start/storefront/storefront#checkout-page) mogelijkheden.
 
-Prestaties zijn essentieel voor een goede gebruikerservaring. Herzie de [ samenvatting van de prestatiesbenchmark ](../implementation-playbook/infrastructure/performance/benchmarks.md) om meer over prestatiesverwachtingen te leren. U kunt controleprestaties optimaliseren door de volgende opties voor **verwerking van de hoog-productieorde** te vormen:
+Prestaties zijn essentieel voor een goede gebruikerservaring. U kunt controleprestaties optimaliseren door de volgende opties voor **verwerking van de hoog-productieorde** te vormen:
 
 - [ AsyncOrder ](#asynchronous-order-placement) - verwerkt asynchroon orden gebruikend een rij.
 - [ Uitgestelde Totale Berekening ](#deferred-total-calculation) - verwijder berekeningen voor ordetabellen tot de controle begint.

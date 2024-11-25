@@ -4,9 +4,9 @@ description: Leer hoe u prestatieproblemen kunt voorkomen die worden veroorzaakt
 role: Admin
 feature: Best Practices, Extensions
 exl-id: 95d2c7bf-fd2f-4c98-8293-96d69b86341f
-source-git-commit: 987d65b52437fbd21f41600bb5741b3cc43d01f3
+source-git-commit: 1fdbded7738365593ef7da64f4dbe6713984bff3
 workflow-type: tm+mt
-source-wordcount: '176'
+source-wordcount: '193'
 ht-degree: 0%
 
 ---
@@ -15,6 +15,7 @@ ht-degree: 0%
 
 Adobe Commerce-extensies (modules) van derden kunnen verschillende problemen veroorzaken die de prestaties van de winkel negatief kunnen beïnvloeden. U kunt deze problemen voorkomen door de volgende aanbevolen procedures te volgen:
 
+- Ontwikkel uw integratie en aanpassingen van Commerce gebruikend [ uit-van-proces rekbaarheid ](https://developer.adobe.com/commerce/extensibility/) waar mogelijk om onderhoud en upgradability te verlichten.
 - De download en koopt derdeuitbreidingen van een vertrouwde op bron, als de [ Commerce Marketplace ](https://marketplace.magento.com/extensions.html).
 - Werk alle extensies van derden bij naar de meest recente versie.
 - Als u extensies van derden niet kunt bijwerken, kunt u wellicht verschillende extensies gebruiken.

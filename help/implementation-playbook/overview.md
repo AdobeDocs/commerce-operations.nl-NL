@@ -1,12 +1,12 @@
 ---
 title: Afspeelmap voor implementatie
-description: Doel van het playbook voor de implementatie van Commerce
+description: Meer informatie over de beste praktijken voor het plannen, ontwikkelen, lanceren en onderhouden van uw Adobe Commerce-project.
 exl-id: 2f82c68c-60c7-4a62-837b-492afc06e0db
 feature: Best Practices, Cloud, Integration
-source-git-commit: 94d7a57dcd006251e8eefbdb4ec3a5e140bf43f9
+source-git-commit: 581a7dbcc19c31df80e03cb9f321a6adb5fa1a73
 workflow-type: tm+mt
-source-wordcount: '493'
-ht-degree: 1%
+source-wordcount: '251'
+ht-degree: 0%
 
 ---
 
@@ -32,21 +32,3 @@ Wij hopen dat dit playbook inzichten en begeleiding aan een verscheidenheid van 
 - Projectmanagers en projectkampioenen die een initiatief voor een handelsproject leiden en alle relevante informatie ter beschikking moeten hebben
 
 Hoewel het succes van een IT-project in hoge mate afhangt van de ervaring en expertise van het team (doorgaans een oplossingspartner) dat de code ontwikkelt, aanpast, integreert en onderhoudt, is het volgens ons van belang dat alle belanghebbenden vertrouwd raken met de beste praktijken van een Adobe Commerce-implementatie.
-
-## Over dit afspeelboek
-
-De structuur van dit playbook volgt de typische levenscyclus van een Adobe Commerce implementatieproject. Dit vereenvoudigt navigatie door dit document, aangezien de lezers aan de relevante sectie van een project voor alle relevante informatie onmiddellijk kunnen overslaan.
-
-- **project scoping** - een uitsplitsing van de belangrijkste belanghebbenden, processen, chronologie, en vereisten die voor merken kritiek zijn om voor een succesvolle implementatie te begrijpen en te voltooien.
-
-- **Ontwikkeling en kwaliteitscontrole** - een blik bij de hulpmiddelen, de oplossingen, de processen, en de methodologieën die over een aantal implementaties van Adobe Commerce zijn getest en geperfectioneerd, evenals onze aanbevelingen waarvoor de oplossingen voor specifieke bedrijfsbehoeften en doelstellingen het best geschikt zijn.
-
-- **Planning en beheer** - een duik in het creëren van een plan om een oplossing op tijd, op begroting te leveren, en dat aan uw behoeften voldoet is essentieel aan succes.
-
-- **Architectuur en integratie** - de mogelijkheden, de architectuur, en de integratie die Adobe Commerce één van de meest vertrouwde op en betrouwbare elektronische handelplatforms op de markt maken.
-
-- **Infrastructuur en plaatsing** - Bewegend verder in het daadwerkelijke platform zelf, benadrukken wij de infrastructuur en de milieu&#39;s die Adobe Commerce en de softwareoplossingen aandrijven die het zo robuust platform maken.
-
-- **Lancering en besnoeiing proces** - De tactiek en de acties van pre-lancering aan post-lancering die moeten plaatsvinden om de plaats te verzekeren leven gaat en zijn niveau van doeltreffendheid van dag één verder handhaaft.
-
-- **Doorlopende steun en onderhoud** - Details rond de overgangsfase en de types van modellen en SLAs rond een aan de gang zijnde steunplan om uw merk na de lancering verder te bewegen.

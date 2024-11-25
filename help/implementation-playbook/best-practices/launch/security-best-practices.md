@@ -3,9 +3,9 @@ title: Uw Commerce-site en -infrastructuur beveiligen
 description: Behoud beveiliging door best practices voor beveiliging te implementeren wanneer u Adobe Commerce-installaties instelt, configureert en bijwerkt.
 feature: Best Practices
 exl-id: 50d8a464-6496-4e9a-b642-0c6d0eb51ba0
-source-git-commit: a00b7b66beb6499f7fb19fda2dfd450799f73728
+source-git-commit: ee7551374aa6d4ad462dd64ee3d05b934b43ce45
 workflow-type: tm+mt
-source-wordcount: '2006'
+source-wordcount: '2000'
 ht-degree: 0%
 
 ---
@@ -114,10 +114,6 @@ Als deel van een rampenherstelplan, adviseert de Adobe hoogst dat de klanten [ h
 - [ het configuratiebeheer van de opslag voor Adobe Commerce op wolkeninfrastructuur ](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure-store/store-settings.html)
 
 **Adobe Commerce die op gebouw** wordt opgesteld
-
-- [Ideeën voor noodherstel](../../infrastructure/self-hosting/disaster-recovery-ideas.md)
-
-- [Back-up en herstel](../../infrastructure/self-hosting/disaster-recovery-ideas.md)
 
 - [Configuratieinstellingen exporteren](../../../configuration/cli/export-configuration.md)
 

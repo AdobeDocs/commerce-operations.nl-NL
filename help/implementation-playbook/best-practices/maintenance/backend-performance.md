@@ -5,9 +5,9 @@ badge: label="Bijgedragen door objectbron" type="Informative" url="https://objec
 role: Admin, User, Developer
 feature: Best Practices
 exl-id: 18bc97a0-3d34-4d48-a3e2-84af2da7d0d3
-source-git-commit: e5df5a7242dbe8ceff548257daeb39f7c9fc5c69
+source-git-commit: ee7551374aa6d4ad462dd64ee3d05b934b43ce45
 workflow-type: tm+mt
-source-wordcount: '980'
+source-wordcount: '977'
 ht-degree: 0%
 
 ---
@@ -70,7 +70,6 @@ U kunt bijvoorbeeld transacties nauwkeurig onderzoeken waarbij de nadruk ligt op
 Meer informatie over het beheren van de siteprestaties:
 
 - [ Controle van Prestaties ](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/monitor/performance.html) (wolkeninfrastructuur)
-- [Evaluatie voor optimalisatie van prestaties](/help/implementation-playbook/infrastructure/performance/recommendations.md)
 - [Best practices voor configuratie](/help/performance/configuration.md)
 - [Waarneming voor Adobe Commerce](/help/tools/observation-for-adobe-commerce/intro.md)
 

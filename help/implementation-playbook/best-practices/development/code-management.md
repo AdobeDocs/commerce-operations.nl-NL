@@ -4,9 +4,9 @@ description: Meer informatie over best practices voor codebeheer voor de ontwikk
 feature: Best Practices
 role: Developer
 exl-id: 0bff4c7a-1082-4b3e-b19c-bc8ad529b131
-source-git-commit: 823498f041a6d12cfdedd6757499d62ac2aced3d
+source-git-commit: ee7551374aa6d4ad462dd64ee3d05b934b43ce45
 workflow-type: tm+mt
-source-wordcount: '670'
+source-wordcount: '659'
 ht-degree: 0%
 
 ---
@@ -25,8 +25,6 @@ Dit onderwerp wordt ontworpen om u te helpen beslissen of om Git of Composer te 
 
 - Adobe Commerce over cloudinfrastructuur
 - Adobe Commerce ter plaatse
-
-Het behandelt zowel [ globale verwijzingsarchitectuur (GRA) ](../../architecture/global-reference/overview.md) en enige instantie installaties.
 
 ## Definities
 

@@ -3,9 +3,9 @@ title: Enterprise-verwijzingsarchitectuur
 description: Leer hoe u Adobe Commerce implementeert met behulp van de nieuwste composable commerce technologie van de Adobe.
 feature: App Builder, Cloud, GraphQL, Integration, Paas, Saas
 exl-id: d066ab43-20e2-4e0b-8348-0c52d6a7ac8a
-source-git-commit: c2f6b7125f1a611e94f807999787fee48a0e5ece
+source-git-commit: 581a7dbcc19c31df80e03cb9f321a6adb5fa1a73
 workflow-type: tm+mt
-source-wordcount: '797'
+source-wordcount: '836'
 ht-degree: 0%
 
 ---
@@ -45,7 +45,10 @@ Adobe Commerce integreert met alle oplossingen van het Experience Cloud om [ gep
 
 >[!NOTE]
 >
->Zie [ Verblueprints van de Digitale Ervaring ](https://experienceleague.adobe.com/en/docs/blueprints-learn/architecture/overview) voor meer technisch detail.
+>Zie de volgende bronnen voor meer informatie:
+>
+>- [ Verblueprints van de Digitale Ervaring ](https://experienceleague.adobe.com/en/docs/blueprints-learn/architecture/overview) voor meer technisch detail.
+>- Zie [ Personaliserend de Ervaring van de Klant ](https://experienceleague.adobe.com/en/docs/events/the-skill-exchange-recordings/commerce/aug2024/personalization).
 
 
 ## Integratie met systemen van derden
@@ -63,6 +66,11 @@ Adobe biedt de volgende ontwikkelaarshulpmiddelen voor het bouwen van integratie
 - [**Gebeurtenissen** ](https://developer.adobe.com/commerce/extensibility/events/) - de trekkers van de douanegebeurtenis van het Gebruik om met andere verlengbare ontwikkelingshulpmiddelen in wisselwerking te staan.
 - [**Webhooks** ](https://developer.adobe.com/commerce/extensibility/webhooks/) - Gebruik webhooks om interacties tussen Commerce en derdesystemen automatisch teweeg te brengen.
 - [**Admin UI SDK** ](https://developer.adobe.com/commerce/extensibility/admin-ui-sdk/) - pas en verbeter Commerce Admin met nieuwe pagina&#39;s en eigenschappen voor uw handelaren aan.
+- [**Uitrusting van de Aanzet van de Integratie** ](https://developer.adobe.com/commerce/extensibility/starter-kit/) - versnelt uw backkoffice integratie met verwijzingsintegratie, onboarding manuscripten, en een gestandaardiseerde architectuur.
+
+>[!NOTE]
+>
+>Zie [ de Moderne benadering: De efficiënte Rekbaarheid in Adobe Commerce ](https://experienceleague.adobe.com/en/docs/events/the-skill-exchange-recordings/commerce/aug2024/extensibility).
 
 ## Storefront-services
 
