@@ -2,9 +2,9 @@
 user-guide-title: Gereedschappen
 user-guide-description: Leer meer over de verschillende gereedschappen die u met Adobe Commerce kunt gebruiken, hun gebruik, het installatieproces en hoe u toegang krijgt.
 feature: Configuration
-source-git-commit: a2e26daf2d5775e1186c1eca7272f9a2efcee23f
+source-git-commit: 9aeaa3faaf0aee1ed2e20cb86362d4246c858a05
 workflow-type: tm+mt
-source-wordcount: '6253'
+source-wordcount: '6268'
 ht-degree: 0%
 
 ---
@@ -664,6 +664,7 @@ ht-degree: 0%
          - [ACSD-61845: Fout treedt op bij aanvragen met text/html accepteert header](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-54/acsd-61845-error-occurs-for-requests-with-text-html-accept-header.md)
       - v1.1.55 {#v1-1-55}
          - [Overzicht: [!DNL Quality Patches Tool]  (QPT) v1.1.55](/help//tools/quality-patches-tool/patches-available-in-qpt/v1-1-55/overview.md)
+         - [ACSD-58735: Beperkte beheerders kunnen verlaten winkelwagentjes niet bekijken op klantenaccount voor de bijbehorende website](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-55/acsd-58735-restricted-admin-cant-view-abandoned-shopping-carts.md)
          - [ACSD-58471: dynamische inhoud kan niet worden geladen op de pagina met productdetails, wanneer catalogusprijsregels zijn gepland](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-55/acsd-58471-dynamic-content-fails-load-product-detail-page.md)
          - [ACSD-58383: dubbele creditnota&#39;s van gelijktijdige verzoeken om terugbetaling via  [!DNL REST API]](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-55/acsd-58383-duplicate-credit-memos-from-simultaneous-refund-requests-via-rest-api.md)
       - [Patch controleren voor Adobe Commerce-probleem met het gereedschap Kwaliteitspatches](quality-patches-tool/patches-available-in-qpt/check-patch-for-magento-issue-with-magento-quality-patches.md)
