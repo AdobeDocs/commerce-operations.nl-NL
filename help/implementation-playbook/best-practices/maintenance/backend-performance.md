@@ -5,7 +5,7 @@ badge: label="Bijgedragen door objectbron" type="Informative" url="https://objec
 role: Admin, User, Developer
 feature: Best Practices
 exl-id: 18bc97a0-3d34-4d48-a3e2-84af2da7d0d3
-source-git-commit: ee7551374aa6d4ad462dd64ee3d05b934b43ce45
+source-git-commit: d884d434e696a911de626dc76983468556cf451f
 workflow-type: tm+mt
 source-wordcount: '977'
 ht-degree: 0%
@@ -81,7 +81,7 @@ Het richten van MySQL prestatieskwesties door gegevensbestand het groeperen en v
 
 Websites met veel verkeer hebben vaak te maken met knelpunten in databases, voornamelijk veroorzaakt door het vertrouwen op één MySQL-server. U kunt deze knelpunten aanpakken door gegevensbestand het groeperen uit te voeren, een verdeelde architectuur die prestaties verbetert en hoge beschikbaarheid verzekert.
 
-Het groeperen van het gegevensbestand minimaliseert het effect van op gegevensbestand betrekking hebbende kwesties tijdens piekverkeersperioden door veelvoudige Webknopen toe te laten om met veelvoudige servers te verbinden MySQL. Gebruik gereedschappen zoals Galera Cluster om databaseclusters voor Commerce-sites in te stellen. De Cluster van Galera is inbegrepen met [ projecten van Adobe Commerce die op wolkeninfrastructuur ](https://experienceleague.adobe.com/docs/commerce-operations/implementation-playbook/infrastructure/cloud/technology.html) worden opgesteld.
+Het groeperen van het gegevensbestand minimaliseert het effect van op gegevensbestand betrekking hebbende kwesties tijdens piekverkeersperioden door veelvoudige Webknopen toe te laten om met veelvoudige servers te verbinden MySQL. Gebruik gereedschappen zoals Galera Cluster om databaseclusters voor Commerce-sites in te stellen. De Cluster van Galera is inbegrepen met [ projecten van Adobe Commerce die op wolkeninfrastructuur ](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/architecture/pro-architecture) worden opgesteld.
 
 #### MySQL-query&#39;s optimaliseren
 
