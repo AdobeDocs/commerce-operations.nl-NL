@@ -1,17 +1,17 @@
 ---
-title: "ACSD-58383: dubbele creditnota's van gelijktijdige verzoeken om terugbetaling via  [!DNL REST API]"
+title: "ACSD-58383: dubbele creditnota's van gelijktijdige terugbetalingsverzoeken via  [!DNL REST API]"
 description: Pas ACSD-58383 flard toe om de kwestie van Adobe Commerce te bevestigen waar het uitgeven van een restitutie via  [!DNL REST API]  met twee identieke verzoeken die gelijktijdig worden uitgevoerd, tot dubbele creditmemo's leidt.
 feature: REST, Payments, Returns
 role: Admin, Developer
-source-git-commit: ce3faa5dfc05500dcd672498761b48307064614e
+exl-id: 962970d5-22e7-4bdc-afa0-70e1fa21ecec
+source-git-commit: 28390659fe180180c9b2c8d16239008a1f8a510b
 workflow-type: tm+mt
 source-wordcount: '343'
 ht-degree: 0%
 
 ---
 
-
-# ACSD-58383 Adobe Commerce-patch: dubbele creditmemo&#39;s van gelijktijdige verzoeken om terugbetaling via [!DNL REST API]
+# ACSD-58383 Adobe Commerce-patch: dubbele creditnota&#39;s van gelijktijdige verzoeken om terugbetaling via [!DNL REST API]
 
 De ACSD-58383-patch verhelpt het probleem dat het uitgeven van een restitutie via de [!DNL REST API] met twee identieke verzoeken die tegelijkertijd worden uitgevoerd, resulteert in dubbele creditmemo&#39;s.
 
