@@ -1,12 +1,12 @@
 ---
 title: Afspeelmap voor implementatie
-description: Meer informatie over de beste praktijken voor het plannen, ontwikkelen, lanceren en onderhouden van uw Adobe Commerce-project.
+description: Ontdek meer over de beste methoden voor het plannen, ontwikkelen, starten en onderhouden van uw Adobe Commerce-project.
 exl-id: 2f82c68c-60c7-4a62-837b-492afc06e0db
 feature: Best Practices, Cloud, Integration
 source-git-commit: 581a7dbcc19c31df80e03cb9f321a6adb5fa1a73
 workflow-type: tm+mt
 source-wordcount: '251'
-ht-degree: 0%
+ht-degree: 5%
 
 ---
 
