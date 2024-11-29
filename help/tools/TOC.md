@@ -2,9 +2,9 @@
 user-guide-title: Gereedschappen
 user-guide-description: Leer meer over de verschillende gereedschappen die u met Adobe Commerce kunt gebruiken, hun gebruik, het installatieproces en hoe u toegang krijgt.
 feature: Configuration
-source-git-commit: 0f593cd529ee1b5d259c091758e141629e785ab8
+source-git-commit: 088b9ce70ba89bad4ea82f60093de0e3bf050cf9
 workflow-type: tm+mt
-source-wordcount: '6365'
+source-wordcount: '6377'
 ht-degree: 0%
 
 ---
@@ -658,8 +658,9 @@ ht-degree: 0%
          - [ACSD-61133: verkoop_clean_quotes cron verwijdert aanhalingstekens uit niet-goedgekeurde inkooporders](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-53/acsd-61133-sales-clean-quotes-cron-deletes-quotes-from-unapproved-purchase-orders.md)
          - [ACSD-61667: verbetert de voorraadprestaties voor het creëren van verzendingen](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-53/acsd-61667-improves-inventory-performance-for-creating-shipping.md)
       - v1.1.54 {#v1-1-54}
-         - [ Overzicht: [!DNL Quality Patches Tool]  (QPT) v1.1.54 ](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-54/overview.md)
-           [ ACSD-60267: FPT is verkeerd van toepassing wanneer de producten door configureerbare productopties ](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-54/acsd-60267-fpt-applies-fails-when-products-are-added-through-configurable-product-options.md) worden toegevoegd
+         - [Overzicht: [!DNL Quality Patches Tool]  (QPT) v1.1.54](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-54/overview.md)
+         - [ACSD-61756: De degradatie van prestaties van filters AdvancedSalesRule toe te schrijven aan ontbrekende gegevensbestandindexen](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-54/acsd-61756-boosting-advanced-sales-rule-filter.md)
+         - [ACSD-60267: FPT is onjuist van toepassing wanneer producten via configureerbare productopties worden toegevoegd](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-54/acsd-60267-fpt-applies-fails-when-products-are-added-through-configurable-product-options.md)
          - [ACSD-61199: het tabblad [!UICONTROL Hierarchy] van de CMS-pagina geeft geen juiste boomstructuur weer](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-54/acsd-61199-cms-page-hierarchy-tab-doesnt-display-proper-tree-structure.md)
          - [ACSD-61200: Vorderingen op de heffingskorting voor korting in de totale verkoopberekeningen](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-54/acsd-61200-fixes-discount-tax-compensation-in-sales-total-calculations.md)
          - [ACSD-61522: E-mailadressen in de velden Voornaam en Achternaam verzenden ongeldige orderbevestigingen](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-54/acsd-61522-email-in-name-fields-sends-invalid-order-confirmations.md)
