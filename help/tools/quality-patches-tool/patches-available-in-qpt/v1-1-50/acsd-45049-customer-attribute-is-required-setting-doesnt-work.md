@@ -1,9 +1,10 @@
 ---
-title: "ACSD-45049: kenmerkinstelling 'Is vereist' van de klant werkt niet volgens het bereik van de website in Admin"
+title: 'ACSD-45049: kenmerkinstelling ''Is vereist'' van de klant werkt niet volgens het bereik van de website in Admin'
 description: Pas de ACSD-45049-patch toe om het Adobe Commerce-probleem op te lossen waarbij het kenmerk "[!UICONTROL Is required]" van de klant niet correct wordt overschreven volgens het websitebereik in Admin.
 feature: Attributes, Customers
 role: Admin, Developer
-source-git-commit: fe11599dbef283326db029b0312ad290cde0ba0a
+exl-id: 368af877-a3ec-431f-8f41-5d51354be571
+source-git-commit: 81c78439f7c243437b7b76dc80560c847af95ace
 workflow-type: tm+mt
 source-wordcount: '383'
 ht-degree: 0%

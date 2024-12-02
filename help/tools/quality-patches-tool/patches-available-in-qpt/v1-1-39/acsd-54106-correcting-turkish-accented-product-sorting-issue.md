@@ -1,9 +1,10 @@
 ---
-title: "ACSD-54106: Turks geaccentueerde sortering van tekens in productcategorie corrigeren"
+title: 'ACSD-54106: Turks geaccentueerde tekensortering corrigeren in productcategorie'
 description: Pas de ACSD-54106-patch toe om het Adobe Commerce-probleem op te lossen waarbij de sortering van categorieproducten op naam voor tekens met accent in het Turks onjuist is.
 feature: Categories, Products, Search
 role: Admin
-source-git-commit: fe11599dbef283326db029b0312ad290cde0ba0a
+exl-id: 45c8efbb-85d0-4d25-9d7e-9c41a97e80fa
+source-git-commit: 81c78439f7c243437b7b76dc80560c847af95ace
 workflow-type: tm+mt
 source-wordcount: '402'
 ht-degree: 0%

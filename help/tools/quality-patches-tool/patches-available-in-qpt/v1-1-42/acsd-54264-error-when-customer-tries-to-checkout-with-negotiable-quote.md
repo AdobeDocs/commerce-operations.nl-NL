@@ -1,9 +1,10 @@
 ---
-title: 'ACSD-54264: Fout wanneer klant probeert uit te checken met een verhandelbaar prijsopgave.'
+title: 'ACSD-54264: Fout wanneer klant probeert uit te checken met verhandelbare aanhalingstekens'
 description: Pas de ACSD-54264-patch toe om het Adobe Commerce-probleem op te lossen waarbij het foutbericht "U kunt het gevraagde kenmerk niet bijwerken. Rij-id:store_id" wordt weergegeven wanneer een klant een aanhalingsteken in een andere winkelweergave wil uitchecken met een verhandelbaar aanhalingsteken.
 feature: B2B, Checkout
 role: Admin, Developer
-source-git-commit: fe11599dbef283326db029b0312ad290cde0ba0a
+exl-id: b1696228-b2ed-44eb-9e75-bf25ccf2f1cd
+source-git-commit: 81c78439f7c243437b7b76dc80560c847af95ace
 workflow-type: tm+mt
 source-wordcount: '445'
 ht-degree: 0%

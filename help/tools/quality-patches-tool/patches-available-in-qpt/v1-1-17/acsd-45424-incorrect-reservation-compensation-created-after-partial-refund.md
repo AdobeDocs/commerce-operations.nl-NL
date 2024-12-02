@@ -1,9 +1,10 @@
 ---
-title: "ACSD-45424: Onjuiste reserveringscompensatie na gedeeltelijke terugbetaling"
+title: 'ACSD-45424: Onjuiste reserveringscompensatie na gedeeltelijke terugbetaling'
 description: De ACSD-45424-patch verhelpt het probleem dat na een gedeeltelijke terugbetaling een onjuiste reserveringscompensatie wordt gecreëerd. Deze patch is beschikbaar wanneer [Quality Patches Tool (QPT)] (https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/announcements/commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches) 1.1.17 is geïnstalleerd. De patch-id is ACSD-45424. Het probleem wordt volgens de planning opgelost in Adobe Commerce 2.4.6.
 feature: Orders
 role: Admin
-source-git-commit: 7f17f1b286f635b8f65ac877e9de5f1d1a6a6461
+exl-id: 94435816-9f4a-40f9-be80-05836ed7781f
+source-git-commit: 81c78439f7c243437b7b76dc80560c847af95ace
 workflow-type: tm+mt
 source-wordcount: '571'
 ht-degree: 0%

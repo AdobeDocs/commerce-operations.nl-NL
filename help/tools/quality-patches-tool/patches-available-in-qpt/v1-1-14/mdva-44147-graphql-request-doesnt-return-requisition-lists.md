@@ -1,5 +1,5 @@
 ---
-title: "MDVA-44147: [!DNL GraphQL]  het verzoek keert niet terug [!UICONTROL Requisition Lists]"
+title: 'MDVA-44147: [!DNL GraphQL]  het verzoek keert niet terug [!UICONTROL Requisition Lists]'
 description: Het flard MDVA-44147 lost de kwestie op waar  [!DNL GraphQL]  verzoek niet [!UICONTROL Requisition Lists] terugkeert. Deze patch is beschikbaar wanneer [[!DNL Quality Patches Tool (QPT)]](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/announcements/commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches) 1.1.14 is geïnstalleerd. De patch-id is MDVA-44147. Het probleem wordt volgens de planning opgelost in Adobe Commerce 2.4.5.
 feature: B2B, GraphQL
 role: Admin

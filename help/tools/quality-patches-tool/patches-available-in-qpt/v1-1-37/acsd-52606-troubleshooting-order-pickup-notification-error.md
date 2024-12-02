@@ -1,9 +1,10 @@
 ---
-title: '''ACSD-52606: Foutbericht dat wordt weergegeven wanneer de gebruiker klikt op ''De bestelling op de hoogte stellen is klaar voor afhalen'''''
+title: 'ACSD-52606: Foutbericht dat wordt weergegeven wanneer de gebruiker klikt op "De bestelling op de hoogte stellen is klaar voor ophaalbewerking"'
 description: Pas de ACSD-52606-patch toe om het Adobe Commerce-probleem op te lossen waarbij een foutbericht wordt weergegeven wanneer de gebruiker op **[!UICONTROL Notify Order is Ready for Pickup]** klikt.
 feature: Orders, User Account
 role: Admin, Developer
-source-git-commit: fe11599dbef283326db029b0312ad290cde0ba0a
+exl-id: d0b5a7a6-0d32-4019-8f28-60722fce1a99
+source-git-commit: 81c78439f7c243437b7b76dc80560c847af95ace
 workflow-type: tm+mt
 source-wordcount: '412'
 ht-degree: 0%

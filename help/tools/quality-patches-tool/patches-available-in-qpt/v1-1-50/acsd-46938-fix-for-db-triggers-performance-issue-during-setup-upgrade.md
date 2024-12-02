@@ -1,9 +1,10 @@
 ---
-title: '''ACSD-46938: Prestatieproblemen met DB-triggers tijdens ''setup:upgrade'''
+title: 'ACSD-46938: Prestatieproblemen met DB-triggers tijdens ''setup:upgrade'''
 description: Pas ACSD-46938 flard toe om de kwestie van Adobe Commerce te bevestigen waar het "opstelling:verbetering"bevel de indexeerwijze van programma verandert om te bewaren, veroorzakend significante prestatiesvertragingen.
 feature: Upgrade
 role: Admin, Developer
-source-git-commit: fe11599dbef283326db029b0312ad290cde0ba0a
+exl-id: a4e88329-c5bb-4666-8738-b78b86056b71
+source-git-commit: 81c78439f7c243437b7b76dc80560c847af95ace
 workflow-type: tm+mt
 source-wordcount: '355'
 ht-degree: 0%

@@ -3,7 +3,8 @@ title: 'Overzicht: [!DNL Quality Patches Tool]  (QPT) v1.1.36'
 description: Deze subsectie biedt een gedetailleerde beschrijving van de problemen die zijn opgelost door de patches die beschikbaar zijn in  [!DNL Quality Patches Tool]  (QPT) v1.1.36.
 feature: Tools and External Services
 role: Admin
-source-git-commit: 49ac8ad1f174546fcc0454645b2480a40ead2924
+exl-id: ce2ee50b-246a-43b7-b520-d7a42749e0ee
+source-git-commit: 81c78439f7c243437b7b76dc80560c847af95ace
 workflow-type: tm+mt
 source-wordcount: '223'
 ht-degree: 0%

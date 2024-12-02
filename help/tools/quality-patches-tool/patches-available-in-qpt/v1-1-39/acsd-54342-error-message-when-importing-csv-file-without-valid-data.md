@@ -3,7 +3,8 @@ title: 'ACSD-54342: Foutbericht bij het importeren van CSV-bestand zonder geldig
 description: Pas de ACSD-54342-patch toe om het Adobe Commerce-probleem op te lossen waarbij een onjuist foutbericht optreedt bij het importeren van een CSV-bestand zonder geldige gegevens.
 feature: Roles/Permissions
 role: Admin, Developer
-source-git-commit: fe11599dbef283326db029b0312ad290cde0ba0a
+exl-id: 34324a18-45af-462b-a6e6-6b6a02d4d331
+source-git-commit: 81c78439f7c243437b7b76dc80560c847af95ace
 workflow-type: tm+mt
 source-wordcount: '346'
 ht-degree: 0%

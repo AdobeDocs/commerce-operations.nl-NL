@@ -1,9 +1,10 @@
 ---
-title: 'ACSD-47908: *Er wordt een fout verwacht van een waarde kleiner dan of gelijk aan 0* tijdens het uitchecken.'
+title: 'ACSD-47908: *Er wordt een fout van het type *Een waarde kleiner dan of gelijk aan 0 verwacht* tijdens het uitchecken'
 description: Pas de ACSD-47908-patch toe om de Adobe Commerce-fout *Er wordt een waarde van minder dan of gelijk aan 0 verwacht* bij het selecteren van de bron en het aantal bij de verzendstap tijdens het afrekenen.
 feature: Admin Workspace, Checkout, Orders
 role: Admin
-source-git-commit: fe11599dbef283326db029b0312ad290cde0ba0a
+exl-id: f1429bd9-652d-43c0-af52-b2258e2a7643
+source-git-commit: 81c78439f7c243437b7b76dc80560c847af95ace
 workflow-type: tm+mt
 source-wordcount: '472'
 ht-degree: 0%

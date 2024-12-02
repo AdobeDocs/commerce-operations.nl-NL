@@ -1,9 +1,10 @@
 ---
-title: 'ACSD-53998: Dynamisch blok op basis van klantensegment werkt onjuist na afmelden.'
+title: 'ACSD-53998: Dynamisch blok op basis van klantensegment werkt verkeerd na het afmelden'
 description: Pas de ACSD-53998-patch toe om het Adobe Commerce-probleem op te lossen waarbij een dynamisch blok op basis van een klantsegment niet correct werkt nadat u zich hebt afgemeld bij een klantenaccount.
 feature: Customers, Page Builder, Personalization
 role: Admin, Developer
-source-git-commit: fe11599dbef283326db029b0312ad290cde0ba0a
+exl-id: aa7001c7-bb35-4e5c-8ac9-3ed84b75d7cd
+source-git-commit: 81c78439f7c243437b7b76dc80560c847af95ace
 workflow-type: tm+mt
 source-wordcount: '416'
 ht-degree: 0%

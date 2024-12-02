@@ -3,7 +3,8 @@ title: 'ACSD-50949: Het prijsfilter in geavanceerd zoeken retourneert geen goede
 description: Pas de ACSD-50949-patch toe om het Adobe Commerce-probleem op te lossen, waarbij het prijsfilter in de geavanceerde zoekopdracht geen goede resultaten oplevert wanneer het samen met het SKU-filter wordt gebruikt.
 feature: Orders, Search
 role: Admin
-source-git-commit: fe11599dbef283326db029b0312ad290cde0ba0a
+exl-id: 89e54940-e763-4554-8641-a162516bcabd
+source-git-commit: 81c78439f7c243437b7b76dc80560c847af95ace
 workflow-type: tm+mt
 source-wordcount: '426'
 ht-degree: 1%

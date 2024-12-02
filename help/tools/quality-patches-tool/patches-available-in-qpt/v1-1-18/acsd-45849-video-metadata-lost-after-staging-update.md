@@ -1,9 +1,10 @@
 ---
-title: 'ACSD-45849: videometagegevens gaan verloren na het bijwerken van de stapel'
+title: 'ACSD-45849: videometagegevens gaan verloren na het uitvoeren van een update'
 description: De ACSD-45849-patch verhelpt het probleem waarbij de videometagegevens verloren gaan nadat een testupdate is toegepast. Deze patch is beschikbaar wanneer [Quality Patches Tool (QPT)] (https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/announcements/commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches) 1.1.18 is geïnstalleerd. De patch-id is ACSD-45849. De kwestie is opgelost in Adobe Commerce 2.4.4.
 feature: Staging, Page Content
 role: Admin
-source-git-commit: 7f17f1b286f635b8f65ac877e9de5f1d1a6a6461
+exl-id: cbab0120-585a-47ef-8ed9-abb2da1ec3d6
+source-git-commit: 81c78439f7c243437b7b76dc80560c847af95ace
 workflow-type: tm+mt
 source-wordcount: '415'
 ht-degree: 0%

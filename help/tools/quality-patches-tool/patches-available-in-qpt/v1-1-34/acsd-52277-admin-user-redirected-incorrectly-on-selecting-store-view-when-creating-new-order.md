@@ -1,7 +1,8 @@
 ---
-title: 'ACSD-52277: Admin-gebruiker is onjuist omgeleid bij het selecteren van de winkelweergave bij het maken van een nieuwe bestelling.'
+title: 'ACSD-52277: Admin-gebruiker wordt onjuist omgeleid bij het selecteren van de winkelweergave bij het maken van een nieuwe bestelling'
 description: Pas de ACSD-52277-patch toe om het Adobe Commerce-probleem op te lossen waarbij een beheerder niet correct wordt omgeleid nadat hij de winkelweergave heeft geselecteerd bij het maken van een nieuwe bestelling in Admin.
-source-git-commit: fe11599dbef283326db029b0312ad290cde0ba0a
+exl-id: 61ef59a9-7a31-441f-a763-2d8016498fa7
+source-git-commit: 81c78439f7c243437b7b76dc80560c847af95ace
 workflow-type: tm+mt
 source-wordcount: '371'
 ht-degree: 0%

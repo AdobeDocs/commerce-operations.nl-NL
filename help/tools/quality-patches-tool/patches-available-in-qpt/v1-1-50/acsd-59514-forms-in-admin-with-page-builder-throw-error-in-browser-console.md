@@ -1,15 +1,15 @@
 ---
-title: '"ACSD-59514: Forms in Admin met  [!DNL Page Builder]  werpen fout in browser console'''
+title: 'ACSD-59514: Forms in Admin met  [!DNL Page Builder]  werpen fout in browser console'
 description: Pas ACSD-59514 flard toe om de kwestie van Adobe Commerce te bevestigen waar de vormen in Admin met  [!DNL Page Builder]  de fout "[!DNL Page Builder] teruggeven voor 5 seconden zonder loslaten."werpen in de browserconsole nadat het formulier is verzonden, kunnen wijzigingen niet worden opgeslagen.
 feature: Page Builder
 role: Admin, Developer
-source-git-commit: fe11599dbef283326db029b0312ad290cde0ba0a
+exl-id: 3d1167d2-0a75-48ac-bc31-5bbd3c4a409e
+source-git-commit: 81c78439f7c243437b7b76dc80560c847af95ace
 workflow-type: tm+mt
 source-wordcount: '419'
 ht-degree: 0%
 
 ---
-
 
 # ACSD-59514: Forms in Admin met [!DNL Page Builder] fout bij genereren in browserconsole
 

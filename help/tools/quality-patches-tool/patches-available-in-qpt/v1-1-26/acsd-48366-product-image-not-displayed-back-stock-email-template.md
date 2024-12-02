@@ -1,9 +1,10 @@
 ---
-title: 'ACSD-48366: productafbeelding niet weergegeven op [!UICONTROL Back to Stock] e-mailsjabloon'
+title: 'ACSD-48366: productafbeelding niet weergegeven in de [!UICONTROL Back to Stock] e-mailsjabloon'
 description: Pas de ACSD-48366-patch toe om het Adobe Commerce-probleem op te lossen, waarbij de miniatuurafbeelding van het product niet wordt weergegeven in de voorraadwaarschuwingsmail van het product.
 feature: Admin Workspace, Communications, Orders, Products
 role: Admin
-source-git-commit: fe11599dbef283326db029b0312ad290cde0ba0a
+exl-id: a721f399-f50a-4a13-9f5d-17ae7f3985f6
+source-git-commit: 81c78439f7c243437b7b76dc80560c847af95ace
 workflow-type: tm+mt
 source-wordcount: '385'
 ht-degree: 0%

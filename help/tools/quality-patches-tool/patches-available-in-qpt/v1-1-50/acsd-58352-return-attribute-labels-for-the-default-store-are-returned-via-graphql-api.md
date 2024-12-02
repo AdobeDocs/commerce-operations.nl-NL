@@ -1,15 +1,15 @@
 ---
-title: '"ACSD-58352: De kenmerketiketten van de terugkeer voor de standaardopslag zijn teruggekeerd via  [!DNL GraphQL]  API'''
+title: 'ACSD-58352: De kenmerketiketten van de terugkeer voor de standaardopslag zijn teruggekeerd via  [!DNL GraphQL]  API'
 description: Pas ACSD-58352 flard toe om de kwestie van Adobe Commerce te bevestigen waar de etiketten van de terugkeerattributen voor de standaardopslag via  [!DNL GraphQL]  API zijn teruggekeerd wanneer een niet-standaardopslagmening in de verzoekkopbal wordt gespecificeerd.
 feature: GraphQL, Returns
 role: Admin, Developer
-source-git-commit: fe11599dbef283326db029b0312ad290cde0ba0a
+exl-id: e513039e-42cd-4dac-963b-3068ba8bf7ee
+source-git-commit: 81c78439f7c243437b7b76dc80560c847af95ace
 workflow-type: tm+mt
 source-wordcount: '393'
 ht-degree: 0%
 
 ---
-
 
 # ACSD-58352: Retourkenmerklabels voor de standaardwinkel worden geretourneerd via de [!DNL GraphQL] API
 

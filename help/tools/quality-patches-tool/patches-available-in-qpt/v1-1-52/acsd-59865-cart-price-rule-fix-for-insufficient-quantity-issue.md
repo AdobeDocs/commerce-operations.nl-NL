@@ -1,9 +1,10 @@
 ---
-title: "ACSD-59865: [!UICONTROL Cart Price Rule] kan eerdere regels niet annuleren wegens onvoldoende producthoeveelheid"
+title: 'ACSD-59865: [!UICONTROL Cart Price Rule] kan vorige regels niet annuleren vanwege onvoldoende producthoeveelheid'
 description: Pas de ACSD-59865-patch toe om het Adobe Commerce-probleem op te lossen, waarbij de waarde *Korting op aantal korting* in *Vast bedrag,** Percentage van korting op productprijs* en *Koop X krijg Y* [!UICONTROL Cart Price Rules] de actie van vorige regels niet meer annuleert.
 feature: Price Rules
 role: Admin, Developer
-source-git-commit: 602a839708eab2551bd99a4f24e66edbde511150
+exl-id: 5838a740-018d-44c2-8135-54426ea08627
+source-git-commit: 81c78439f7c243437b7b76dc80560c847af95ace
 workflow-type: tm+mt
 source-wordcount: '485'
 ht-degree: 0%

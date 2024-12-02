@@ -1,9 +1,10 @@
 ---
-title: 'MDVA-41236: Kan geen nieuwe geplande updates maken of bewerken voor product'
+title: 'MDVA-41236: Kan geen nieuwe geplande updates voor het product maken of bewerken'
 description: De MDVA-41236-patch verhelpt het probleem dat gebruikers geen nieuwe geplande updates voor het product kunnen maken of bewerken als de "Einddatum" eerder is verwijderd. Deze patch is beschikbaar wanneer [Quality Patches Tool (QPT)] (https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/announcements/commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches) 1.1.5 is geïnstalleerd. De patch-id is MDVA-41236. Het probleem wordt volgens de planning opgelost in Adobe Commerce 2.4.5.
 feature: Products, Staging
 role: Admin
-source-git-commit: 1fb76b8d648cbbe2a9f602d2b1a0149f1f4f0e46
+exl-id: 82192778-4f25-40a0-882e-d52d32c433c2
+source-git-commit: 81c78439f7c243437b7b76dc80560c847af95ace
 workflow-type: tm+mt
 source-wordcount: '535'
 ht-degree: 0%

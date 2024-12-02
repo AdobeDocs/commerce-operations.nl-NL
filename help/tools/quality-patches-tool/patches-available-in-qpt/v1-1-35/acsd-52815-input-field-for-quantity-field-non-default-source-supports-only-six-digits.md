@@ -1,9 +1,10 @@
 ---
-title: 'ACSD-52815: invoerveld voor kwantiteitsveld van niet-standaard bron ondersteunt slechts maximaal 6 cijfers'
+title: 'ACSD-52815: invoerveld voor kwantiteitsveld van niet-standaardbron ondersteunt slechts maximaal 6 cijfers'
 description: Pas de ACSD-52815-patch toe om het Adobe Commerce-prestatieprobleem op te lossen, waarbij het invoerveld voor het kwantitatieve veld van een niet-standaard bron maximaal 6 cijfers ondersteunt, in tegenstelling tot 8 voor een standaardvoorraad.
 feature: Inventory, Products
 role: Admin
-source-git-commit: fe11599dbef283326db029b0312ad290cde0ba0a
+exl-id: d863af1f-8a7f-4a43-893e-54525ab68cd7
+source-git-commit: 81c78439f7c243437b7b76dc80560c847af95ace
 workflow-type: tm+mt
 source-wordcount: '386'
 ht-degree: 0%

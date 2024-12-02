@@ -3,7 +3,8 @@ title: 'ACSD-48417: SQL-fout na het maken van een programmawijziging'
 description: Pas de ACSD-48417-patch toe om het Adobe Commerce-probleem op te lossen, waarbij een SQL-fout optreedt nadat een wijziging in het programma voor een product is gemaakt en een ander product is opgeslagen.
 feature: Storage
 role: Admin
-source-git-commit: fe11599dbef283326db029b0312ad290cde0ba0a
+exl-id: c8e7c7aa-ac53-4218-8c3c-ea2240af17c9
+source-git-commit: 81c78439f7c243437b7b76dc80560c847af95ace
 workflow-type: tm+mt
 source-wordcount: '409'
 ht-degree: 0%

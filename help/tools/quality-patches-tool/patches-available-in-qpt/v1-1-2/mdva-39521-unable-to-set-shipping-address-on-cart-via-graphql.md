@@ -1,9 +1,10 @@
 ---
-title: "MDVA-39521: Kan het verzendadres op de winkelwagentjes niet instellen via GraphQL"
+title: 'MDVA-39521: Verzendadres voor winkelwagentjes kan niet worden ingesteld via GraphQL'
 description: De MDVA-39521-patch lost het probleem op waarbij de gebruiker geen verzendadres kan instellen op winkelwagentjes met een leeg telefoonnummer via GraphQL. Deze patch is beschikbaar wanneer [Quality Patches Tool (QPT)] (https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/announcements/commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches) 1.1.2 is geïnstalleerd. De patch-id is MDVA-39521. Het probleem wordt volgens de planning opgelost in Adobe Commerce 2.4.4.
 feature: GraphQL, Orders, Shipping/Delivery, Shopping Cart
 role: Admin
-source-git-commit: 7f17f1b286f635b8f65ac877e9de5f1d1a6a6461
+exl-id: aac44c20-b244-472b-bab0-7d6e7d99608a
+source-git-commit: 81c78439f7c243437b7b76dc80560c847af95ace
 workflow-type: tm+mt
 source-wordcount: '413'
 ht-degree: 0%

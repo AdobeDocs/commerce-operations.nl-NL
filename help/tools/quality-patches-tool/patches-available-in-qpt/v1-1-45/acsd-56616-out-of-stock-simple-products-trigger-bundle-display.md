@@ -1,9 +1,10 @@
 ---
-title: "ACSD-56616: Weergave van gebundelde producten bij eenvoudig voorraadtekort"
+title: 'ACSD-56616: Storefront-weergave van gebundelde producten bij een eenvoudig voorraadtekort'
 description: Pas de ACSD-56616-patch toe om het Adobe Commerce-probleem op te lossen, waarbij gebundelde producten onverwachts in de winkel verschijnen wanneer alle bijbehorende eenvoudige producten uit voorraad zijn.
 feature: Products
 role: Admin, Developer
-source-git-commit: fe11599dbef283326db029b0312ad290cde0ba0a
+exl-id: 8b225d9d-1898-4c4d-81be-7b92cbf7d06f
+source-git-commit: 81c78439f7c243437b7b76dc80560c847af95ace
 workflow-type: tm+mt
 source-wordcount: '429'
 ht-degree: 0%

@@ -1,9 +1,10 @@
 ---
-title: "ACSD-59366: teams met gedeactiveerde gebruikers verwijderen die niet zichtbaar zijn in de teamlijst"
+title: 'ACSD-59366: teams met gedeactiveerde gebruikers verwijderen die niet zichtbaar zijn in de teamlijst'
 description: Pas de ACSD-59366-patch toe om het Adobe Commerce-probleem op te lossen wanneer een fout optreedt bij het verwijderen van een team dat gedeactiveerde gebruikers bevat die niet zichtbaar zijn in de teamlijst.
 feature: GraphQL, Companies
 role: Admin, Developer
-source-git-commit: 8037db7a89cd850385dc88750e881f68ae62172f
+exl-id: 406d2242-38f9-4852-b311-0ee57c4a7c26
+source-git-commit: 81c78439f7c243437b7b76dc80560c847af95ace
 workflow-type: tm+mt
 source-wordcount: '378'
 ht-degree: 0%
@@ -64,5 +65,3 @@ Om individuele flarden toe te passen, gebruik de volgende verbindingen afhankeli
 Meer informatie over [!DNL Quality Patches Tool] vindt u in:
 
 * [[!DNL Quality Patches Tool]: Een zelfbedieningshulpmiddel voor kwaliteitspatches ](/help/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches.md) in de gids van Hulpmiddelen.
-
-

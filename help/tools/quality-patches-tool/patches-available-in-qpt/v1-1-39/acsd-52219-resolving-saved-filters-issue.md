@@ -3,7 +3,8 @@ title: 'ACSD-52219: Het probleem met het filter voor beheerrasters oplossen in h
 description: Pas de ACSD-52219-patch toe om het Adobe Commerce-probleem op te lossen waarbij de opgeslagen filters van de beheerrasters niet werken zoals u had verwacht wanneer vaak wordt geschakeld tussen bladwijzerweergaven.
 feature: Admin Workspace
 role: Admin
-source-git-commit: fe11599dbef283326db029b0312ad290cde0ba0a
+exl-id: 3f1af6ba-88a0-480c-b16e-c00c655e346f
+source-git-commit: 81c78439f7c243437b7b76dc80560c847af95ace
 workflow-type: tm+mt
 source-wordcount: '407'
 ht-degree: 0%

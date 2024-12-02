@@ -1,9 +1,10 @@
 ---
-title: 'ACSD-55004: de validator loopt vast tijdens het uploaden van een bestand dat groter is dan de waarde'
+title: 'ACSD-55004: de validatiefunctie crasht tijdens het uploaden van een bestand dat groter is dan de waarde'
 description: Pas de ACSD-55004-patch toe om het Adobe Commerce-probleem te verhelpen waarbij een validator vastloopt tijdens het uploaden van een importbestand dat groter is dan de waarde die in php.ini is geconfigureerd.
 feature: Data Import/Export
 role: Admin, Developer
-source-git-commit: fe11599dbef283326db029b0312ad290cde0ba0a
+exl-id: c889f645-a3ae-4330-8ca9-45f8b6616ac8
+source-git-commit: 81c78439f7c243437b7b76dc80560c847af95ace
 workflow-type: tm+mt
 source-wordcount: '331'
 ht-degree: 0%

@@ -3,7 +3,8 @@ title: 'ACSD-54966: Corrigeren voor hergebruik van couponcodes na mislukte order
 description: Pas de ACSD-54966-patch toe om het Adobe Commerce-probleem op te lossen, waardoor het hergebruik van couponcodes die beperkt zijn per promotie en winkelwagentje na een eerder mislukte bestelling, wordt voorkomen.
 feature: Promotions/Events, Shopping Cart, Orders
 role: Admin, Developer
-source-git-commit: fe11599dbef283326db029b0312ad290cde0ba0a
+exl-id: e08062e5-62ff-4da6-918f-896af36edccc
+source-git-commit: 81c78439f7c243437b7b76dc80560c847af95ace
 workflow-type: tm+mt
 source-wordcount: '390'
 ht-degree: 0%

@@ -1,9 +1,10 @@
 ---
-title: "ACSD-44851: Categorie met subcategorieën die niet kunnen worden geopend of uitgebreid"
+title: 'ACSD-44851: Categorie met subcategorieën die niet kunnen worden geopend of uitgebreid'
 description: Dit artikel biedt een oplossing voor het probleem waarbij de gebruiker een categorie met subcategorieën niet kan openen of uitbreiden.
 feature: Categories
 role: Admin
-source-git-commit: fe11599dbef283326db029b0312ad290cde0ba0a
+exl-id: c1ad13d8-94e1-47cf-ad65-9bc5ce1c26ad
+source-git-commit: 81c78439f7c243437b7b76dc80560c847af95ace
 workflow-type: tm+mt
 source-wordcount: '392'
 ht-degree: 0%

@@ -3,7 +3,8 @@ title: 'ACSD-52714: Datumfilter werkt niet in beheerraster wanneer ingesteld op 
 description: Pas de ACSD-52714-patch toe om het Adobe Commerce-probleem op te lossen, waarbij het datumfilter niet werkt in het beheerraster wanneer de datumnotatie is ingesteld op y-m-d.
 feature: Attributes
 role: Admin, Developer
-source-git-commit: fe11599dbef283326db029b0312ad290cde0ba0a
+exl-id: 4a34900b-9566-41bb-8d3e-18a440117907
+source-git-commit: 81c78439f7c243437b7b76dc80560c847af95ace
 workflow-type: tm+mt
 source-wordcount: '381'
 ht-degree: 0%

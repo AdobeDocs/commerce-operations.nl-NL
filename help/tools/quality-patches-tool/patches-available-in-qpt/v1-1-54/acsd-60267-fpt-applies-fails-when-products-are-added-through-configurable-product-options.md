@@ -3,7 +3,8 @@ title: 'ACSD-60267: FPT is onjuist van toepassing wanneer producten via configur
 description: Pas de ACSD-60267-patch toe om het Adobe Commerce-probleem op te lossen, waarbij de vaste productbelasting (FPT) correct wordt toegepast wanneer u eenvoudige producten rechtstreeks aan het winkelwagentje toevoegt, maar mislukt wanneer u dezelfde producten selecteert via configureerbare productopties.
 feature: Taxes
 role: Admin, Developer
-source-git-commit: c18ff9dd75ec6002c6461fcd3abd98ac8b97a9f7
+exl-id: 919b3b96-1995-4faf-aaf1-b5cbb20e46bf
+source-git-commit: bbf7df7fdca4c11f6f268344db00e2c8643b5dce
 workflow-type: tm+mt
 source-wordcount: '415'
 ht-degree: 0%
@@ -67,4 +68,3 @@ Om individuele flarden toe te passen, gebruik de volgende verbindingen afhankeli
 Meer informatie over [!DNL Quality Patches Tool] vindt u in:
 
 * [[!DNL Quality Patches Tool]: Een zelfbedieningshulpmiddel voor kwaliteitspatches ](/help/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches.md) in de gids van Hulpmiddelen.
-

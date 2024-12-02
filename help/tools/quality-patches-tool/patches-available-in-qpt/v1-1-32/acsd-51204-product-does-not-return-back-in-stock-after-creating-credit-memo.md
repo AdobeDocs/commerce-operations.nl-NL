@@ -1,9 +1,10 @@
 ---
-title: "ACSD-51204: Het product keert na het aanmaken van de kredietmemo niet terug in voorraad."
+title: 'ACSD-51204: Het product retourneert na het aanmaken van de kredietmemo niet meer in voorraad'
 description: Pas de ACSD-51204-patch toe om het Adobe Commerce-probleem op te lossen, waarbij het product na het maken van de creditmemo niet opnieuw in voorraad wordt genomen.
 feature: Orders, Products, Returns
 role: Admin
-source-git-commit: fe11599dbef283326db029b0312ad290cde0ba0a
+exl-id: a4dba28c-c239-4812-8b3a-ce0493f9b1aa
+source-git-commit: 81c78439f7c243437b7b76dc80560c847af95ace
 workflow-type: tm+mt
 source-wordcount: '400'
 ht-degree: 0%

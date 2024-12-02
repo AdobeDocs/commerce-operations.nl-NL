@@ -1,9 +1,10 @@
 ---
-title: '"ACSD-47137: de laadsnelheid van de afbeeldingsgalerie ` pub/media` folder big'' verbeteren'
+title: 'ACSD-47137: verbeter de laadsnelheid van de afbeeldingsgalerie van de map pub/media'
 description: Pas de ACSD-47137-patch toe om de laadsnelheid van de afbeeldingsgalerie te verbeteren wanneer de map 'pub/media' erg groot is.
 feature: Cache, Catalog Management, Categories, Media
 role: Admin
-source-git-commit: fe11599dbef283326db029b0312ad290cde0ba0a
+exl-id: 8a5dd930-1940-486e-96db-ee1b166cf312
+source-git-commit: 81c78439f7c243437b7b76dc80560c847af95ace
 workflow-type: tm+mt
 source-wordcount: '387'
 ht-degree: 0%

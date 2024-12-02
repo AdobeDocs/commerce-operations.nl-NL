@@ -1,9 +1,10 @@
 ---
-title: "ACSD-47292: gebundelde producten uit de voorraad zijn niet beschikbaar in GraphQL-respons"
+title: 'ACSD-47292: gebundelde producten uit de voorraad zijn niet beschikbaar in GraphQL-respons'
 description: Pas de ACSD-47292-patch toe om het Adobe Commerce-probleem op te lossen waarbij de gebundelde producten uit de voorraad niet beschikbaar zijn in de GraphQL-respons, zelfs als de "producten uit de voorraad tonen" op Ja is ingesteld.
 feature: Admin Workspace, Categories, GraphQL, Orders, Products
 role: Admin
-source-git-commit: fe11599dbef283326db029b0312ad290cde0ba0a
+exl-id: 3b8114a3-cc45-4d65-af74-cb3e905d7f75
+source-git-commit: 81c78439f7c243437b7b76dc80560c847af95ace
 workflow-type: tm+mt
 source-wordcount: '442'
 ht-degree: 0%

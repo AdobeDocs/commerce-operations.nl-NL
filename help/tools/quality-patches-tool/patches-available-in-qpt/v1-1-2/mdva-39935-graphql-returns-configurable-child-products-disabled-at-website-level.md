@@ -1,9 +1,10 @@
 ---
-title: "MDVA-39935: GraphQL retourneert configureerbare onderliggende producten uitgeschakeld op websiteniveau"
+title: 'MDVA-39935: GraphQL retourneert configureerbare onderliggende producten die op websiteniveau zijn uitgeschakeld."'
 description: De MDVA-39935 Adobe Commerce patch verhelpt het probleem waarbij GraphQL configureerbare onderliggende producten retourneert die zijn uitgeschakeld op websiteniveau. Deze patch is beschikbaar wanneer [Quality Patches Tool (QPT)] (https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/announcements/commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches) 1.1.2 is geïnstalleerd. De patch-id is MDVA-39935. Het probleem wordt volgens de planning opgelost in Adobe Commerce 2.4.4.
 feature: GraphQL, Configuration, Products
 role: Admin
-source-git-commit: c1055ed10813aa6e585f93ec3091d216af06affd
+exl-id: b86b1595-ddd5-41ce-b126-287046462561
+source-git-commit: 81c78439f7c243437b7b76dc80560c847af95ace
 workflow-type: tm+mt
 source-wordcount: '419'
 ht-degree: 0%

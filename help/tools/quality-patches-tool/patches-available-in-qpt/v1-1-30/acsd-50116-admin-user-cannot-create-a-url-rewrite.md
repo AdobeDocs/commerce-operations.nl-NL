@@ -3,7 +3,8 @@ title: 'ACSD-50116: een beheerder kan geen URL maken die herschrijft voor de sub
 description: Pas de ACSD-50116-patch toe om het Adobe Commerce-probleem op te lossen, waarbij een beheerder geen URL kan maken die herschrijft voor de subcategorieën van niveau drie of lager.
 feature: Admin Workspace, Categories
 role: Admin
-source-git-commit: fe11599dbef283326db029b0312ad290cde0ba0a
+exl-id: b2a248eb-a6c4-4596-acac-04a52c5c2a61
+source-git-commit: 81c78439f7c243437b7b76dc80560c847af95ace
 workflow-type: tm+mt
 source-wordcount: '375'
 ht-degree: 0%

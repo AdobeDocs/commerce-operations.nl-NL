@@ -1,9 +1,10 @@
 ---
-title: 'ACSD-53845: Time-outprobleem bij MySQL-verbinding wanneer consument max_messages = 0'
+title: 'ACSD-53845: MySQL-probleem met time-out voor verbinding wanneer consument max_messages = 0'
 description: Pas de ACSD-53845-patch toe om het Adobe Commerce-probleem op te lossen waarbij MySQL-verbinding uitvalt wanneer de consument \ max_messages = 0`.
 feature: REST, Configuration
 role: Admin, Developer
-source-git-commit: 809defe75d7b218d8085f85ff815472a531040cf
+exl-id: 437e29f4-b11a-466c-9928-3867821d2b8d
+source-git-commit: 81c78439f7c243437b7b76dc80560c847af95ace
 workflow-type: tm+mt
 source-wordcount: '333'
 ht-degree: 0%

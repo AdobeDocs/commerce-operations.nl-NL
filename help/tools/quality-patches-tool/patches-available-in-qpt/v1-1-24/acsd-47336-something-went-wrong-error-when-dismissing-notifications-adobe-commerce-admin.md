@@ -3,7 +3,8 @@ title: 'ACSD-47336: [!UICONTROL Something went wrong] fout bij het negeren van b
 description: Pas ACSD-47336 flard toe om de kwestie van Adobe Commerce te bevestigen waar de gebruiker [!UICONTROL Something went wrong] fout ziet wanneer het verwerpen van berichten in  [!DNL Commerce]  Admin.
 feature: Admin Workspace
 role: Admin
-source-git-commit: fe11599dbef283326db029b0312ad290cde0ba0a
+exl-id: da0c0119-6720-493f-a278-d573ed898a63
+source-git-commit: 81c78439f7c243437b7b76dc80560c847af95ace
 workflow-type: tm+mt
 source-wordcount: '341'
 ht-degree: 0%

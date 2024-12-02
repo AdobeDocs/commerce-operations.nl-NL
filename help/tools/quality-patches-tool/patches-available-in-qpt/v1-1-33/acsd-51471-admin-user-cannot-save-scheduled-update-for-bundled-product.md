@@ -1,7 +1,8 @@
 ---
 title: 'ACSD-51471: Admin-gebruiker kan geplande update voor gebundeld product niet opslaan'
 description: Pas de ACSD-51471-patch toe om het Adobe Commerce-probleem op te lossen waarbij een beheerder geen geplande update kan opslaan voor een gebundeld product dat een eenvoudig product met een geplande update gebruikt.
-source-git-commit: fe11599dbef283326db029b0312ad290cde0ba0a
+exl-id: d8134111-63f0-4476-a407-677bda52fa90
+source-git-commit: 81c78439f7c243437b7b76dc80560c847af95ace
 workflow-type: tm+mt
 source-wordcount: '433'
 ht-degree: 0%

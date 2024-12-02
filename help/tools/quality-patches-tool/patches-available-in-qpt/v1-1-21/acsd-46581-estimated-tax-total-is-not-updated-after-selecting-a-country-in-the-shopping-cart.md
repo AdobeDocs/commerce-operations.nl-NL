@@ -1,9 +1,10 @@
 ---
-title: "ACSD-46581: Het geraamde belastingtotaal wordt niet bijgewerkt na selectie van een land in het winkelwagentje."
+title: 'ACSD-46581: Het geraamde belastingtotaal wordt niet bijgewerkt na selectie van een land in het winkelwagentje'
 description: Pas de ACSD-46581-patch toe om het Adobe Commerce-probleem op te lossen, waarbij het belastingtarief niet wordt aangepast nadat het land in het winkelwagentje is verschoven.
 feature: Orders, Shopping Cart
 role: Admin
-source-git-commit: fe11599dbef283326db029b0312ad290cde0ba0a
+exl-id: 45800055-8556-4f87-8938-c6be5d82938d
+source-git-commit: 81c78439f7c243437b7b76dc80560c847af95ace
 workflow-type: tm+mt
 source-wordcount: '456'
 ht-degree: 0%

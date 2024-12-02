@@ -1,9 +1,10 @@
 ---
-title: '''BB2B-2598: Voegt caching vermogen toe om Config, currency, country, countries, availableStores GraphQl query''s op te slaan.'''
+title: 'BB2B-2598: Voegt caching vermogen toe om Config, munt, land, landen, availableStores GraphQl vragen op te slaan'
 description: Pas het flard BB2B-2598 toe om caching vermogen aan storeConfig, munt, land, landen, en beschikbareStores GraphQl vragen toe te voegen.
 feature: B2B, GraphQL, Cache
 role: Admin
-source-git-commit: fe11599dbef283326db029b0312ad290cde0ba0a
+exl-id: b842fab4-d2c0-4ef1-be13-182f09015cd7
+source-git-commit: 81c78439f7c243437b7b76dc80560c847af95ace
 workflow-type: tm+mt
 source-wordcount: '390'
 ht-degree: 0%

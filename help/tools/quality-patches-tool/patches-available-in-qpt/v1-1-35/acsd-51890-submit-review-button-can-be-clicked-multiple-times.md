@@ -1,9 +1,10 @@
 ---
-title: 'ACSD-51890: [!UICONTROL Submit review] er kan meerdere keren op de knop worden geklikt.'
+title: 'ACSD-51890: [!UICONTROL Submit review] er kan meerdere keren op de knop worden geklikt'
 description: Pas ACSD-51890 flard toe om de kwestie van Adobe Commerce te bevestigen waar de [!UICONTROL Submit Review] knoop veelvoudige tijden zonder  [!DNL Google reCAPTCHA v3]  bevestiging kan worden geklikt.
 feature: Products
 role: Admin
-source-git-commit: fe11599dbef283326db029b0312ad290cde0ba0a
+exl-id: db69ccdc-c66e-4bdb-9783-772f2af0d33f
+source-git-commit: 81c78439f7c243437b7b76dc80560c847af95ace
 workflow-type: tm+mt
 source-wordcount: '345'
 ht-degree: 0%

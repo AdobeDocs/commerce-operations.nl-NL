@@ -1,9 +1,10 @@
 ---
-title: '''ACSD-51291: beperkte beheerders kunnen afbeeldingen/video''s toevoegen aan producten die zijn toegewezen aan meerdere websites'''
+title: 'ACSD-51291: beperkte beheerders kunnen afbeeldingen/video''s toevoegen aan producten die zijn toegewezen aan meerdere websites'
 description: Pas de ACSD-51291-patch toe om het Adobe Commerce-probleem op te lossen, waarbij beperkte beheerders met toegang tot één website afbeeldingen/video's kunnen toevoegen aan een product dat is toegewezen aan meerdere websites.
 feature: Admin Workspace, Products, Page Content
 role: Admin
-source-git-commit: fe11599dbef283326db029b0312ad290cde0ba0a
+exl-id: a4edd034-f718-4559-9993-11609f0d0efa
+source-git-commit: 81c78439f7c243437b7b76dc80560c847af95ace
 workflow-type: tm+mt
 source-wordcount: '474'
 ht-degree: 0%

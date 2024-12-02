@@ -1,5 +1,5 @@
 ---
-title: 'ACSD-58471: Dynamische inhoud kan niet worden geladen op de pagina met productdetails, wanneer de bijbehorende prijsregels voor catalogi waren gepland'
+title: 'ACSD-58471: Dynamische inhoud kan niet worden geladen op de pagina met productdetails wanneer de bijbehorende prijsregels voor catalogi waren gepland'
 description: Pas de ACSD-58471-patch toe om het Adobe Commerce-probleem op te lossen waarbij dynamische inhoud niet wordt geladen op de pagina met productdetails, toen de bijbehorende prijsregels voor catalogi waren gepland.
 feature: Catalog Management
 role: Admin, Developer

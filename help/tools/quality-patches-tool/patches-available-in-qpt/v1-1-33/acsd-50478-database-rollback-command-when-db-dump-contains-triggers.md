@@ -1,7 +1,8 @@
 ---
-title: 'ACSD-50478: JS-probleem voor terugdraaiactie in back-upraster en terugdraaiopdracht voor database'
+title: 'ACSD-50478: JS-probleem voor terugdraaiactie in back-upraster en opdracht voor terugdraaien van database'
 description: Pas ACSD-50478 flard toe om de JS kwestie voor de het terugschroeven van prijzenactie in het steunen net en het gegevensbestand terugschroeven bevel voor een geval te bevestigen wanneer de stortplaats van DB trekkers en een *delimiter* SQL bevel bevat.
-source-git-commit: fe11599dbef283326db029b0312ad290cde0ba0a
+exl-id: 2f47fbf6-44fc-487c-91fe-6e2e52fcdb2b
+source-git-commit: 81c78439f7c243437b7b76dc80560c847af95ace
 workflow-type: tm+mt
 source-wordcount: '428'
 ht-degree: 0%

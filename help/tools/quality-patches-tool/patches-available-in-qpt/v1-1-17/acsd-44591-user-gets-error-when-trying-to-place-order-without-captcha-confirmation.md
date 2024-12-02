@@ -1,9 +1,10 @@
 ---
-title: "ACSD-44591: fouten bij bestelling zonder CAPTCHA-bevestiging"
+title: 'ACSD-44591: fouten bij bestelling zonder CAPTCHA-bevestiging'
 description: De ACSD-44591-patch lost het probleem op waarbij de gebruiker fouten krijgt bij het plaatsen van een bestelling zonder CAPTCHA-bevestiging.
 feature: Orders
 role: Admin
-source-git-commit: 7f17f1b286f635b8f65ac877e9de5f1d1a6a6461
+exl-id: 4b8a8090-a2ba-428c-9a04-7c0842e94a6f
+source-git-commit: 81c78439f7c243437b7b76dc80560c847af95ace
 workflow-type: tm+mt
 source-wordcount: '382'
 ht-degree: 0%

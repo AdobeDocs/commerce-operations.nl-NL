@@ -1,9 +1,10 @@
 ---
-title: 'ACSD-55381: Fout bij het aanvragen van configureerbare opties voor producten uit B2B-aanvraaglijst oplossen'
+title: 'ACSD-55381: Fout bij het aanvragen van configureerbare opties voor producten uit de B2B-aanvraaglijst oplossen'
 description: Pas ACSD-55381 flard toe om de kwestie van Adobe Commerce te bevestigen waar een interne serverfout tijdens vragen van GraphQL "configureurable_product_option_uid"en "configureurable_product_option_value_uid"gebieden van een B2B verzoekingenlijst voorkomt.
 feature: GraphQL, B2B, Products
 role: Admin, Developer
-source-git-commit: fe11599dbef283326db029b0312ad290cde0ba0a
+exl-id: 573d33bc-c7b6-49ce-9ad1-926548f4c952
+source-git-commit: 81c78439f7c243437b7b76dc80560c847af95ace
 workflow-type: tm+mt
 source-wordcount: '369'
 ht-degree: 0%

@@ -1,9 +1,10 @@
 ---
-title: "ACSD-59036: Er treedt een uitzondering op wanneer productprijzen worden geladen waarvan zowel de onder- als de bovengrens is ingesteld op $0"
+title: 'ACSD-59036: Er treedt een uitzondering op bij het laden van productprijzen met zowel onderste als bovengrens ingesteld op $0'
 description: Pas de ACSD-59036-patch toe om het Adobe Commerce-probleem op te lossen, waarbij een uitzondering optreedt bij het laden van productprijzen waarbij zowel de onder- als de bovengrens is ingesteld op *$0*.
 feature: Categories, Products, Storefront, Search
 role: Admin, Developer
-source-git-commit: fe11599dbef283326db029b0312ad290cde0ba0a
+exl-id: a7d05108-0b03-4eb4-84ab-0dc5601530cb
+source-git-commit: 81c78439f7c243437b7b76dc80560c847af95ace
 workflow-type: tm+mt
 source-wordcount: '444'
 ht-degree: 0%

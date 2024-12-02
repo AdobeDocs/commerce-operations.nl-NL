@@ -1,9 +1,10 @@
 ---
-title: 'ACSD-46869: configureerbare producten die niet worden bijgewerkt met REST API bij kassa'
+title: 'ACSD-46869: configureerbare producten die niet worden bijgewerkt met REST API bij het uitchecken'
 description: De ACSD-46869-patch verhelpt het probleem waarbij de configureerbare producten niet worden bijgewerkt met behulp van REST API bij het uitchecken. Deze patch is beschikbaar wanneer [Quality Patches Tool (QPT)] (https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/announcements/commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches) 1.1.20 is geïnstalleerd. De patch-id is ACSD-46869. Het probleem wordt volgens de planning opgelost in Adobe Commerce 2.4.6.
 feature: REST, Checkout, Configuration, Orders, Products
 role: Admin
-source-git-commit: fe11599dbef283326db029b0312ad290cde0ba0a
+exl-id: f03d4b24-ac95-406e-8e9d-908149b9207c
+source-git-commit: 81c78439f7c243437b7b76dc80560c847af95ace
 workflow-type: tm+mt
 source-wordcount: '404'
 ht-degree: 0%

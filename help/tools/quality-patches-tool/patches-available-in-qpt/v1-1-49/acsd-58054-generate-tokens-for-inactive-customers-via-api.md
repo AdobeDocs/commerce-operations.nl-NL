@@ -3,7 +3,8 @@ title: 'ACSD-58054: genereren van API-token voor inactieve klanten'
 description: Pas de ACSD-58054-patch toe om het Adobe Commerce-probleem op te lossen waar het mogelijk is om klanttokens voor inactieve klanten te genereren via de API.
 feature: Customers, API Mesh
 role: Admin, Developer
-source-git-commit: fe11599dbef283326db029b0312ad290cde0ba0a
+exl-id: 143cfc3e-0220-4950-8528-acf3bce686db
+source-git-commit: 81c78439f7c243437b7b76dc80560c847af95ace
 workflow-type: tm+mt
 source-wordcount: '328'
 ht-degree: 0%

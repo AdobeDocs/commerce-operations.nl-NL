@@ -3,7 +3,8 @@ title: 'Overzicht: [!DNL Quality Patches Tool]  (QPT) v1.1.40'
 description: Deze subsectie verstrekt een gedetailleerde beschrijving van de kwesties die door de flarden beschikbaar in  [!DNL Quality Patches Tool]  (QPT) v1.1.40 worden bevestigd.
 feature: Tools and External Services
 role: Admin, Developer
-source-git-commit: d722ba5ba25ffc03d87b9eddeb2830353124055d
+exl-id: fd0caa46-834a-4553-bb59-e4c968c59c15
+source-git-commit: 81c78439f7c243437b7b76dc80560c847af95ace
 workflow-type: tm+mt
 source-wordcount: '299'
 ht-degree: 0%

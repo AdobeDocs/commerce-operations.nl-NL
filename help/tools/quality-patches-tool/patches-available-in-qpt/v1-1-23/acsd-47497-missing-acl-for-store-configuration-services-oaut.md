@@ -3,7 +3,8 @@ title: 'ACSD-47497: ontbrekende ACL voor Store/Configuration/Services [!UICONTRO
 description: Pas de ACSD-47497-patch toe om het Adobe Commerce-probleem op te lossen wanneer machtigingen voor een bepaalde rol zijn ingesteld en u kunt geen toegang tot de configuratiesectie definiëren.
 feature: Configuration, Identity Management, Services
 role: Admin
-source-git-commit: fe11599dbef283326db029b0312ad290cde0ba0a
+exl-id: 4dbbd7df-f34b-4db8-a207-3de40fb39c6f
+source-git-commit: 81c78439f7c243437b7b76dc80560c847af95ace
 workflow-type: tm+mt
 source-wordcount: '344'
 ht-degree: 0%

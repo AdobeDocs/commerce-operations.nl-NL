@@ -1,9 +1,10 @@
 ---
-title: '''ACSD-51735: status van item bestellen is onjuist ingesteld op *[!UICONTROL Ordered]* als productvoorraad 0 is.'
+title: 'ACSD-51735: De status van het punt van de orde verkeerd geplaatst aan * [!UICONTROL Ordered]* wanneer de productvoorraad 0 is'
 description: Pas de markering ACSD-51735 toe om het Adobe Commerce-probleem op te lossen waarbij de status van het orderitem onjuist is ingesteld op * [!UICONTROL Ordered]* als de productvoorraad 0 is.
 feature: Orders, Products
 role: Admin
-source-git-commit: fe11599dbef283326db029b0312ad290cde0ba0a
+exl-id: 56c8b58c-819f-46bd-8912-f543f56b66d6
+source-git-commit: 81c78439f7c243437b7b76dc80560c847af95ace
 workflow-type: tm+mt
 source-wordcount: '424'
 ht-degree: 0%

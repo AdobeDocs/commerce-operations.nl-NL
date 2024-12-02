@@ -1,9 +1,10 @@
 ---
-title: 'ACSD-46809: De gebruiker krijgt een fout wanneer hij een groot aantal productbronnen toewijst'
+title: 'ACSD-46809: De gebruiker krijgt een fout wanneer het toewijzen van een groot aantal productbronnen'
 description: Pas de ACSD-46809-patch toe om het Adobe Commerce-probleem op te lossen, waarbij de gebruiker een fout krijgt bij het toewijzen van een groot aantal productbronnen.
 feature: Products
 role: Admin
-source-git-commit: fe11599dbef283326db029b0312ad290cde0ba0a
+exl-id: 4225f49b-84a1-4641-a05b-ba6ada6e83be
+source-git-commit: 81c78439f7c243437b7b76dc80560c847af95ace
 workflow-type: tm+mt
 source-wordcount: '351'
 ht-degree: 0%

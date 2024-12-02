@@ -1,9 +1,10 @@
 ---
-title: 'ACSD-60303: Probleem met plaatsing van bestelling voor beheer opgelost met ingeschakelde miniatuur van HTML'
+title: 'ACSD-60303: probleem met plaatsing van beheerbestellingen is opgelost waarbij HTML-miniatuur is ingeschakeld'
 description: Pas de ACSD-60303-patch toe om het Adobe Commerce-probleem op te lossen, waarbij een bestelling van Admin niet kan worden geplaatst als HTML minificatie is ingeschakeld.
 feature: Orders
 role: Admin, Developer
-source-git-commit: fe11599dbef283326db029b0312ad290cde0ba0a
+exl-id: 85b987e7-9d65-4d15-8099-985dc227b66c
+source-git-commit: 81c78439f7c243437b7b76dc80560c847af95ace
 workflow-type: tm+mt
 source-wordcount: '331'
 ht-degree: 0%

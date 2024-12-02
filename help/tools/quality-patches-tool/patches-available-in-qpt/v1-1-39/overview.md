@@ -3,7 +3,8 @@ title: 'Overzicht: [!DNL Quality Patches Tool]  (QPT) v1.1.39'
 description: Deze subsectie biedt een gedetailleerde beschrijving van de problemen die zijn opgelost door de patches die beschikbaar zijn in  [!DNL Quality Patches Tool]  (QPT) v1.1.39.
 feature: Tools and External Services
 role: Admin, Developer
-source-git-commit: d722ba5ba25ffc03d87b9eddeb2830353124055d
+exl-id: 6116f566-2ff8-4148-ab60-cec65f9b7a6f
+source-git-commit: 81c78439f7c243437b7b76dc80560c847af95ace
 workflow-type: tm+mt
 source-wordcount: '270'
 ht-degree: 0%

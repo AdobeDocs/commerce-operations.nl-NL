@@ -1,9 +1,10 @@
 ---
-title: 'ACSD-46767: [!UICONTROL Category] pagina in cache wordt ongeldig gemaakt wanneer de voorraadhoeveelheid verandert'
+title: 'ACSD-46767: [!UICONTROL Category] paginacache wordt ongeldig gemaakt wanneer de voorraadhoeveelheid verandert'
 description: Pas de ACSD-46767-patch toe om het Adobe Commerce-probleem op te lossen waarbij de [!UICONTROL Category] -pagina in cache wordt geplaatst, ongeldig wordt wanneer de voorraadhoeveelheid verandert, zelfs als het product nog in voorraad is.
 feature: Cache, Products, Inventory
 role: Admin, Developer
-source-git-commit: fe11599dbef283326db029b0312ad290cde0ba0a
+exl-id: 5872dca7-fdef-47ad-8718-bf343cd3a42a
+source-git-commit: 81c78439f7c243437b7b76dc80560c847af95ace
 workflow-type: tm+mt
 source-wordcount: '372'
 ht-degree: 0%

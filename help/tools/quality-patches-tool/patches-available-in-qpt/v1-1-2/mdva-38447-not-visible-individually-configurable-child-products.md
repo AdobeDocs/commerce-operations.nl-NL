@@ -3,7 +3,8 @@ title: 'MDVA-38447: "Niet zichtbaar individueel"configureerbare kindproducten zi
 description: De patch MDVA-38447 Adobe Commerce lost het probleem op waarbij "Niet zichtbaar individueel"configureerbare kindproducten in de reactie van GraphQL worden teruggegeven en vraag MySQL voor de productvraag van GraphQL met categoriefilter vertragen. Deze patch is beschikbaar wanneer [Quality Patches Tool (QPT)] (https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/announcements/commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches) 1.1.2 is geïnstalleerd. De patch-id is MDVA-38447. Het probleem wordt volgens de planning opgelost in Adobe Commerce 2.4.4.
 feature: B2B, GraphQL, Categories, Configuration, Products, Services
 role: Admin
-source-git-commit: c1055ed10813aa6e585f93ec3091d216af06affd
+exl-id: d97297c5-e8e8-407b-b43b-033937426fe2
+source-git-commit: 81c78439f7c243437b7b76dc80560c847af95ace
 workflow-type: tm+mt
 source-wordcount: '491'
 ht-degree: 0%

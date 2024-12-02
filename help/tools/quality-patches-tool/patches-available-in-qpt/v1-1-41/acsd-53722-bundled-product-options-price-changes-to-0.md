@@ -3,7 +3,8 @@ title: 'ACSD-53722: Prijswijzigingen van gebundelde productopties in $0'
 description: Pas de ACSD-53722-patch toe om het Adobe Commerce-probleem op te lossen waarbij de prijs van de gebundelde productopties verandert in $0 wanneer geplande updates voor verschillende bereiken actief worden.
 feature: Products
 role: Admin, Developer
-source-git-commit: fe11599dbef283326db029b0312ad290cde0ba0a
+exl-id: 2e974a6a-0c79-442f-9b45-b4edf831a052
+source-git-commit: 81c78439f7c243437b7b76dc80560c847af95ace
 workflow-type: tm+mt
 source-wordcount: '424'
 ht-degree: 0%

@@ -1,9 +1,10 @@
 ---
-title: "ACSD-47079: voorraadstatus van samengestelde producten niet bijgewerkt wanneer de voorraadstatus van subproducten verandert"
+title: 'ACSD-47079: voorraadstatus van samengestelde producten niet bijgewerkt wanneer de voorraadstatus van subproducten verandert'
 description: Pas de ACSD-47079-patch toe om het Adobe Commerce-probleem op te lossen waarbij de status van de voorraad van samengestelde producten (bundel, gegroepeerd en configureerbaar) niet wordt bijgewerkt wanneer de status van de voorraad van subproducten verandert via REST API POST /rest/V1/voorraad/bron-items.
 feature: Orders, Products
 role: Admin
-source-git-commit: fe11599dbef283326db029b0312ad290cde0ba0a
+exl-id: f035f530-fae5-4b61-8af9-044f6ec02284
+source-git-commit: 81c78439f7c243437b7b76dc80560c847af95ace
 workflow-type: tm+mt
 source-wordcount: '383'
 ht-degree: 0%

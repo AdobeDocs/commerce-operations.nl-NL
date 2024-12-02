@@ -1,9 +1,10 @@
 ---
-title: 'ACSD-45488: configureerbaar product met meerdere bronnen die niet automatisch in voorraad worden teruggebracht'
+title: 'ACSD-45488: configureerbaar product met meerdere bronnen die niet automatisch in voorraad worden geretourneerd'
 description: De ACSD-45488-patch lost het probleem op waarbij een configureerbaar product met meerdere bronnen niet automatisch wordt teruggestuurd naar de voorraad. Deze patch is beschikbaar wanneer [Quality Patches Tool (QPT)] (https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/announcements/commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches) 1.1.18 is geïnstalleerd. De patch-id is ACSD-45488. Het probleem wordt volgens de planning opgelost in Adobe Commerce 2.4.6.
 feature: Configuration, Orders, Products, Returns
 role: Admin
-source-git-commit: 7f17f1b286f635b8f65ac877e9de5f1d1a6a6461
+exl-id: 53f34e8e-00bd-4386-bebf-b15882e36da1
+source-git-commit: 81c78439f7c243437b7b76dc80560c847af95ace
 workflow-type: tm+mt
 source-wordcount: '457'
 ht-degree: 0%

@@ -3,7 +3,8 @@ title: 'ACSD-53204: *Het product kan niet worden opgeslagen* fout bij gelijktijd
 description: Pas de ACSD-53204-patch toe om het Adobe Commerce-probleem op te lossen, waarbij de fout *Het product kan niet worden opgeslagen* wordt gegenereerd bij gelijktijdige aanvragen om afbeeldingen aan de productgalerie toe te voegen met behulp van het eindpunt rest/V1/products/&lt;sku&gt;/media.
 feature: Catalog Management, Media, Products, REST
 role: Admin, Developer
-source-git-commit: fe11599dbef283326db029b0312ad290cde0ba0a
+exl-id: 7fdf41e5-46ef-4505-b8ce-c330bd899fa1
+source-git-commit: 81c78439f7c243437b7b76dc80560c847af95ace
 workflow-type: tm+mt
 source-wordcount: '390'
 ht-degree: 0%

@@ -1,9 +1,10 @@
 ---
-title: '''ACSD-48587: productwidget die niet werkt met SKU''s die HTML-tekens bevatten'''
+title: 'ACSD-48587: productwidget werkt niet met SKU''s die HTML-tekens bevatten'
 description: Pas de ACSD-48587-patch toe om het Adobe Commerce-probleem op te lossen, waarbij speciale HTML-tekens in de widgetovereenkomsten voorkomen dat overeenkomende producten worden weergegeven.
 feature: Admin Workspace, CMS, Orders, Products
 role: Admin
-source-git-commit: fe11599dbef283326db029b0312ad290cde0ba0a
+exl-id: c3e31835-03be-46b4-a080-09edf55b5b4e
+source-git-commit: 81c78439f7c243437b7b76dc80560c847af95ace
 workflow-type: tm+mt
 source-wordcount: '396'
 ht-degree: 0%

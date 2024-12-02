@@ -1,9 +1,10 @@
 ---
-title: '"ACSD-49628: [!DNL Page Builder]  de fouten van CORS verhinderen product sparen'''
+title: 'ACSD-49628: [!DNL Page Builder]  de fouten van CORS verhinderen product sparen'
 description: Pas ACSD-49628 flard toe om de kwestie van Adobe Commerce te bevestigen waar de  [!DNL Page Builder]  fouten CORS product sparen verhinderen.
 feature: Categories, Page Builder, Products
 role: Admin
-source-git-commit: fe11599dbef283326db029b0312ad290cde0ba0a
+exl-id: 5bceddfa-5fbf-4ebe-a233-de7720764849
+source-git-commit: 81c78439f7c243437b7b76dc80560c847af95ace
 workflow-type: tm+mt
 source-wordcount: '363'
 ht-degree: 0%

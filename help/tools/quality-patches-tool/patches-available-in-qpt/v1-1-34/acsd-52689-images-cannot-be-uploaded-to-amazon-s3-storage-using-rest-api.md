@@ -1,9 +1,10 @@
 ---
-title: "ACSD-52689: images kunnen niet via REST API naar Amazon S3-opslag worden geüpload"
+title: 'ACSD-52689: afbeeldingen kunnen niet worden geüpload naar Amazon S3-opslag via REST API'
 description: Pas de ACSD-52689-patch toe om het Adobe Commerce-probleem op te lossen, waarbij de afbeeldingen niet via REST API naar Amazon S3-opslag kunnen worden geüpload.
 feature: REST, Storage, Iaas
 role: Admin
-source-git-commit: fe11599dbef283326db029b0312ad290cde0ba0a
+exl-id: 4d7a8ea7-2856-4b40-a922-fdd356dcaea4
+source-git-commit: 81c78439f7c243437b7b76dc80560c847af95ace
 workflow-type: tm+mt
 source-wordcount: '344'
 ht-degree: 0%

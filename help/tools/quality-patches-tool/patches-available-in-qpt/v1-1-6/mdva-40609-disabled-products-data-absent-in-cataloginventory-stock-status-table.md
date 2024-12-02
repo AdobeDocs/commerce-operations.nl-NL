@@ -1,9 +1,10 @@
 ---
-title: "MDVA-40609: Afwezige gegevens van uitgeschakelde producten in catalogusvoorraad_stock_status table"
+title: 'MDVA-40609: Afgeschakelde productgegevens ontbreken in catalogusvoorraad_voorraad_status tabel'
 description: De patch MDVA-40609 lost het probleem op waar de gegevens van gehandicapte producten niet in de "catalogvoorraad_stock_status"indexlijst worden getoond die tot onjuiste producthoeveelheden leidt. Deze patch is beschikbaar wanneer [Quality Patches Tool (QPT)] (https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/announcements/commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches) 1.1.6 is geïnstalleerd. De patch-id is MDVA-40609. De kwestie is opgelost in Adobe Commerce 2.4.3.
 feature: Catalog Management, Inventory, Orders, Products
 role: Admin
-source-git-commit: 7f17f1b286f635b8f65ac877e9de5f1d1a6a6461
+exl-id: e207ee55-b6ce-4065-bae1-2be89dcf5092
+source-git-commit: 81c78439f7c243437b7b76dc80560c847af95ace
 workflow-type: tm+mt
 source-wordcount: '418'
 ht-degree: 0%

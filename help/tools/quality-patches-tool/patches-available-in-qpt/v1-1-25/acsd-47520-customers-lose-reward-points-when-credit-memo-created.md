@@ -1,9 +1,10 @@
 ---
-title: "ACSD-47520: klanten verliezen bonuspunten wanneer een creditmemo wordt gemaakt"
+title: 'ACSD-47520: klanten verliezen bonuspunten wanneer een creditmemo wordt gemaakt'
 description: Pas de ACSD-47520-patch toe om het Adobe Commerce-probleem op te lossen, waarbij klanten beloningspunten verliezen wanneer een creditmemo wordt gemaakt.
 feature: Admin Workspace, Cache, Orders, Rewards, Returns
 role: Admin
-source-git-commit: fe11599dbef283326db029b0312ad290cde0ba0a
+exl-id: 09104451-e9f0-4ddb-b019-8aa34630edb9
+source-git-commit: 81c78439f7c243437b7b76dc80560c847af95ace
 workflow-type: tm+mt
 source-wordcount: '414'
 ht-degree: 0%

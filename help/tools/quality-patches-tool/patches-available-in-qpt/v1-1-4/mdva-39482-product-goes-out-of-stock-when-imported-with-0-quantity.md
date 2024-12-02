@@ -1,9 +1,10 @@
 ---
-title: "MDVA-39482: Het product is uit voorraad wanneer het wordt ingevoerd met de hoeveelheid '0' en de hoeveelheid backorders ingeschakeld."
+title: 'MDVA-39482: Het product is uit voorraad als het wordt geïmporteerd met de hoeveelheid ''0'' en de optie ''backorders'' ingeschakeld'
 description: In de MDVA-39482 is bepaald dat het product uit de voorraad komt als het met "0"-hoeveelheid wordt ingevoerd als MSI en backorders zijn ingeschakeld en de drempel voor de uit-van-voorraad wordt ingesteld op een minwaarde. Deze patch is beschikbaar wanneer [Quality Patches Tool (QPT)] (https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/announcements/commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches) 1.1.4 is geïnstalleerd. De patch-id is MDVA-39482. Het probleem wordt volgens de planning opgelost in Adobe Commerce 2.4.4.
 feature: Data Import/Export, Orders, Products
 role: Admin
-source-git-commit: 1fb76b8d648cbbe2a9f602d2b1a0149f1f4f0e46
+exl-id: 9d705ebf-2372-4e59-b447-cdb5b0db32f4
+source-git-commit: 81c78439f7c243437b7b76dc80560c847af95ace
 workflow-type: tm+mt
 source-wordcount: '476'
 ht-degree: 0%

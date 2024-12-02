@@ -1,9 +1,10 @@
 ---
-title: 'ACSD-57337: Admin-gebruiker met toegangsbeperkingen kan alle bedrijven bekijken op het *Companies*-raster'
+title: 'ACSD-57337: Admin-gebruiker met toegangsbeperkingen kan alle bedrijven bekijken in het *Companies*-raster'
 description: Pas de ACSD-57337-patch toe om het Adobe Commerce-probleem op te lossen waarbij een beheerder met toegangsbeperkingen voor specifieke websites bedrijven kan bekijken vanaf alle websites in het *Companies*-raster.
 feature: Companies, B2B, Configuration
 role: Admin, Developer
-source-git-commit: fe11599dbef283326db029b0312ad290cde0ba0a
+exl-id: 7a05d335-5ed8-460e-80c4-dbc51d06c5bd
+source-git-commit: 81c78439f7c243437b7b76dc80560c847af95ace
 workflow-type: tm+mt
 source-wordcount: '406'
 ht-degree: 0%

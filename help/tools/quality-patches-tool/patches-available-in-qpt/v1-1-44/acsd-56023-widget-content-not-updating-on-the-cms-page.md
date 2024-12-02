@@ -1,9 +1,10 @@
 ---
-title: 'ACSD-56023: inhoud van widget wordt niet bijgewerkt op de CMS-pagina'
+title: 'ACSD-56023: Widget-inhoud wordt niet bijgewerkt op de CMS-pagina'
 description: Pas de ACSD-56023-patch toe om het Adobe Commerce-probleem op te lossen waarbij de widgetinhoud niet wordt bijgewerkt op de CMS-pagina
 feature: CMS
 role: Admin, Developer
-source-git-commit: fe11599dbef283326db029b0312ad290cde0ba0a
+exl-id: 723b7f64-ed8a-45f9-9151-f99169cd1a04
+source-git-commit: 81c78439f7c243437b7b76dc80560c847af95ace
 workflow-type: tm+mt
 source-wordcount: '369'
 ht-degree: 0%

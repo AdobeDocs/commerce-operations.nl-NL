@@ -1,9 +1,10 @@
 ---
-title: "ACSD-55238: Bewaar de lege meta-beschrijving van het product"
+title: 'ACSD-55238: De lege productmeta-beschrijving opslaan'
 description: Pas ACSD-55238 flard toe om de kwestie van Adobe Commerce te bevestigen waar een productbeschrijving die HTML code bevat die door  [!DNL Page Builder]  wordt geproduceerd of een andere redacteur van HTML altijd in de meta beschrijving wordt getoond, en er is geen manier om het aan leeg te plaatsen.
 feature: Products, Page Builder, Page Content
 role: Admin, Developer
-source-git-commit: fe11599dbef283326db029b0312ad290cde0ba0a
+exl-id: 39ccf1bb-a71a-47a0-b252-e6331e2df9b0
+source-git-commit: 81c78439f7c243437b7b76dc80560c847af95ace
 workflow-type: tm+mt
 source-wordcount: '405'
 ht-degree: 0%

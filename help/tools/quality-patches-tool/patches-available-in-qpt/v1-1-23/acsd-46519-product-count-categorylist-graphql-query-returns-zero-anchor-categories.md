@@ -1,9 +1,10 @@
 ---
-title: 'ACSD-46519: [!UICONTROL product_count] in [!UICONTROL categoryList] [!DNL GraphQL]  de vraagwinst 0 voor ankercategorieën'
+title: 'ACSD-46519: [!UICONTROL product_count] in [!UICONTROL categoryList] [!DNL GraphQL]  vraag keert 0 voor ankercategorieën terug'
 description: Pas ACSD-46519 flard toe om de kwestie van Adobe Commerce te bevestigen waar wanneer u de [!UICONTROL categoryList] [!DNL GraphQL]  methode gebruikt om kindcategorieën te krijgen het [!UICONTROL product_count] als 0 voor oudercategorieën toont.
 feature: Categories, GraphQL, Products
 role: Admin
-source-git-commit: fe11599dbef283326db029b0312ad290cde0ba0a
+exl-id: 7becaa4e-421a-4983-ac73-f5b58fc45d8f
+source-git-commit: 81c78439f7c243437b7b76dc80560c847af95ace
 workflow-type: tm+mt
 source-wordcount: '356'
 ht-degree: 0%

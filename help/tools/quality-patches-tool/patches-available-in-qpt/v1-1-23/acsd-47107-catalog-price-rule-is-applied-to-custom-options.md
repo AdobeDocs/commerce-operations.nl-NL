@@ -1,9 +1,10 @@
 ---
-title: 'ACSD-47107: regel voor catalogusprijzen wordt toegepast op aangepaste opties'
+title: 'ACSD-47107: catalogusprijsregel wordt toegepast op aangepaste opties'
 description: Pas de ACSD-47107-patch toe om het Adobe Commerce-probleem op te lossen, waarbij de regel voor catalogusprijzen wordt toegepast op aangepaste opties.
 feature: Catalog Management, Orders, Price Rules
 role: Developer
-source-git-commit: fe11599dbef283326db029b0312ad290cde0ba0a
+exl-id: 6fcf896b-ffa9-4cfb-926a-21659ac9f116
+source-git-commit: 81c78439f7c243437b7b76dc80560c847af95ace
 workflow-type: tm+mt
 source-wordcount: '348'
 ht-degree: 0%

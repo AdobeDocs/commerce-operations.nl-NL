@@ -1,9 +1,10 @@
 ---
-title: 'ACSD-51819: meerdere bestellingen plaatsen met één aanhalings-id'
+title: 'ACSD-51819: het plaatsen van veelvoudige orden met één enkele citaat identiteitskaart'
 description: Pas de ACSD-51819-patch toe om het Adobe Commerce-probleem op te lossen, waarbij meerdere bestellingen via dezelfde aanhalings-id kunnen worden geplaatst.
 feature: Orders, Checkout
 role: Admin, Developer
-source-git-commit: fe11599dbef283326db029b0312ad290cde0ba0a
+exl-id: dbca8790-d947-4104-bba9-b29abcfc0344
+source-git-commit: 81c78439f7c243437b7b76dc80560c847af95ace
 workflow-type: tm+mt
 source-wordcount: '376'
 ht-degree: 0%

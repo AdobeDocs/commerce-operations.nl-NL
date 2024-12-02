@@ -1,9 +1,10 @@
 ---
-title: "ACSD-60632: Adres dat bij elke poging tot bestelling wordt opgeslagen"
+title: 'ACSD-60632: adres opgeslagen bij elke poging tot bestelling'
 description: Pas de ACSD-60632-patch toe om het Adobe Commerce-probleem op te lossen, waarbij een nieuw adres wordt opgeslagen bij elke poging tot plaatsing van de bestelling, ongeacht of de bestelling is gemaakt of niet.
 feature: Orders, Products
 role: Admin, Developer
-source-git-commit: d68d6f7501e7dd6faf36f8506d1b0aab028eed58
+exl-id: 9b623a1c-594f-47ed-82b4-d11ba20f3a58
+source-git-commit: 81c78439f7c243437b7b76dc80560c847af95ace
 workflow-type: tm+mt
 source-wordcount: '424'
 ht-degree: 0%

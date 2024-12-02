@@ -3,7 +3,8 @@ title: 'ACSD-53750: fout met "Broken pipe of closed connection" tijdens multi-th
 description: Pas de ACSD-53750-patch toe om het Adobe Commerce-probleem op te lossen waarbij een fout *Broken pipe of closed connection* optreedt tijdens multi-threaded catalog_product_price redex.
 feature: Products
 role: Admin, Developer
-source-git-commit: fe11599dbef283326db029b0312ad290cde0ba0a
+exl-id: 6c2f092f-a98e-4990-839c-a7291635f8af
+source-git-commit: 81c78439f7c243437b7b76dc80560c847af95ace
 workflow-type: tm+mt
 source-wordcount: '353'
 ht-degree: 0%

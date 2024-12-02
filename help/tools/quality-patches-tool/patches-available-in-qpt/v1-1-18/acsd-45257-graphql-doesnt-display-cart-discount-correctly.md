@@ -1,9 +1,10 @@
 ---
-title: "ACSD-45257: GraphQL geeft de kaartkorting niet correct weer."
+title: 'ACSD-45257: GraphQL geeft de kaartkorting niet correct weer'
 description: De ACSD-45257-patch verhelpt het probleem waarbij GraphQL de kaartkorting niet correct weergeeft. Deze patch is beschikbaar wanneer [Quality Patches Tool (QPT)] (https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/announcements/commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches) 1.1.18 is geïnstalleerd. De patch-id is ACSD-45257. Het probleem wordt volgens de planning opgelost in Adobe Commerce 2.4.6.
 feature: GraphQL, Marketing Tools, Orders, Personalization, Shopping Cart
 role: Admin
-source-git-commit: 7f17f1b286f635b8f65ac877e9de5f1d1a6a6461
+exl-id: 3d546768-7f7e-4724-a6d7-c88ca6b67e8c
+source-git-commit: 81c78439f7c243437b7b76dc80560c847af95ace
 workflow-type: tm+mt
 source-wordcount: '393'
 ht-degree: 0%

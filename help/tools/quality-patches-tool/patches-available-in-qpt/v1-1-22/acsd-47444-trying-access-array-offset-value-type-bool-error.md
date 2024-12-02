@@ -3,7 +3,8 @@ title: 'ACSD-47444: _[!UICONTROL Trying to access array offset on value of type 
 description: Pas de ACSD-47444-patch toe om het Adobe Commerce-probleem op te lossen waarbij er een _[!UICONTROL Trying to access array offset on value of type bool]_ fout is bij het benaderen van bepaalde niet-bestaande categoriepaden voor bekende producten, op PHP 7.4.
 feature: Categories, Products
 role: Admin
-source-git-commit: fe11599dbef283326db029b0312ad290cde0ba0a
+exl-id: 9f04ee28-d22c-4fdf-9228-e436abe973e8
+source-git-commit: 81c78439f7c243437b7b76dc80560c847af95ace
 workflow-type: tm+mt
 source-wordcount: '334'
 ht-degree: 0%

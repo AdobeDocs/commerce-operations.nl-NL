@@ -1,9 +1,10 @@
 ---
-title: 'MDVA-27456: Gebruikers krijgen een fout tijdens het laden van de wagen'
+title: 'MDVA-27456: Gebruikers krijgen een fout tijdens het laden van de Swagger'
 description: Met de MDVA-27456-patch wordt het probleem verholpen waarbij gebruikers een fout ondervinden bij het laden van de Swagger. Deze patch is beschikbaar wanneer [Quality Patches Tool (QPT)] (https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/announcements/commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches) 1.1.6 is geïnstalleerd. De patch-id is MDVA-27456. De kwestie is opgelost in Adobe Commerce 2.3.7.
 feature: Tools and External Services
 role: Admin
-source-git-commit: 1fb76b8d648cbbe2a9f602d2b1a0149f1f4f0e46
+exl-id: a7d5dc7d-b916-4a09-9068-646f8474bba4
+source-git-commit: 81c78439f7c243437b7b76dc80560c847af95ace
 workflow-type: tm+mt
 source-wordcount: '365'
 ht-degree: 0%

@@ -1,9 +1,10 @@
 ---
-title: 'ACSD-51984: Niet-ingeschakeld [!UICONTROL Use Default Value] en niet-standaard productveldwaarden worden niet opgeslagen voor de tweede website, winkel en winkelweergave'
+title: 'ACSD-51984: Niet-geselecteerde [!UICONTROL Use Default Value] en niet-standaard productveldwaarden worden niet opgeslagen voor de tweede website, winkel en winkelweergave'
 description: Pas de ACSD-51984-patch toe om het Adobe Commerce-probleem op te lossen, waarbij de niet-geselecteerde [!UICONTROL Use Default Value] en niet-standaard productveldwaarden niet worden opgeslagen voor de tweede website-, opslag- en winkelweergave.
 feature: Products
 role: Admin
-source-git-commit: fe11599dbef283326db029b0312ad290cde0ba0a
+exl-id: 51a810fa-d416-4b37-b5bd-66eed9fe4626
+source-git-commit: 81c78439f7c243437b7b76dc80560c847af95ace
 workflow-type: tm+mt
 source-wordcount: '434'
 ht-degree: 0%

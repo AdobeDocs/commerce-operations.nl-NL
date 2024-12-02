@@ -3,7 +3,8 @@ title: 'ACSD-57394: Onjuiste productsortering door meerdere sorteerkenmerken in 
 description: Pas ACSD-57394 flard toe om de kwestie van Adobe Commerce te bevestigen waar de producten verkeerd worden gesorteerd wanneer het gebruiken van veelvoudige soortattributen in  [!DNL GraphQL].
 feature: GraphQL, Products
 role: Admin, Developer
-source-git-commit: fe11599dbef283326db029b0312ad290cde0ba0a
+exl-id: 3e4ca535-37ed-4363-ba6c-968eb53b98b3
+source-git-commit: 81c78439f7c243437b7b76dc80560c847af95ace
 workflow-type: tm+mt
 source-wordcount: '367'
 ht-degree: 0%
@@ -103,4 +104,3 @@ Meer informatie over [!DNL Quality Patches Tool] vindt u in:
 
 
 Voor informatie over andere flarden beschikbaar in QPT, verwijs naar [[!DNL Quality Patches Tool]: Onderzoek naar flarden ](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html) in de [!DNL Quality Patches Tool] gids.
-

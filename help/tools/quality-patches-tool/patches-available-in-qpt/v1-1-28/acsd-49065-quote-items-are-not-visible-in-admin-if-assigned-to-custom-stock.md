@@ -3,7 +3,8 @@ title: 'ACSD-49065: Offertepunten zijn niet zichtbaar in admin'
 description: Pas de ACSD-49065-patch toe om het Adobe Commerce-probleem op te lossen, waarbij de aanhalingstekens niet zichtbaar zijn in de beheerder als ze alleen zijn toegewezen aan de aangepaste voorraad.
 feature: Admin Workspace, B2B, Orders, Quotes
 role: Admin
-source-git-commit: fe11599dbef283326db029b0312ad290cde0ba0a
+exl-id: fc3bea92-305b-4598-9915-3422d61c76ec
+source-git-commit: 81c78439f7c243437b7b76dc80560c847af95ace
 workflow-type: tm+mt
 source-wordcount: '410'
 ht-degree: 0%

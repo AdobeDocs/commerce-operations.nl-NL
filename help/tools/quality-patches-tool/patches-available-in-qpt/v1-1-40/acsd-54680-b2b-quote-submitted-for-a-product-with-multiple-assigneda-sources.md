@@ -1,9 +1,10 @@
 ---
-title: "ACSD-54680: B2B-offerte voor een product met Meerdere toegewezen bronnen kan worden verwerkt"
+title: 'ACSD-54680: B2B Citaat voor een product met Veelvoudige Toegewezen Bronnen kan worden verwerkt'
 description: Pas de ACSD-54680-patch toe om het Adobe Commerce-probleem op te lossen, waarbij het B2B-citaat voor een product met Meerdere toegewezen bronnen niet kan worden verwerkt.
 feature: B2B
 role: Admin, Developer
-source-git-commit: fe11599dbef283326db029b0312ad290cde0ba0a
+exl-id: c5307785-a4c6-4d0c-9009-0d0caee97b3d
+source-git-commit: 81c78439f7c243437b7b76dc80560c847af95ace
 workflow-type: tm+mt
 source-wordcount: '442'
 ht-degree: 0%

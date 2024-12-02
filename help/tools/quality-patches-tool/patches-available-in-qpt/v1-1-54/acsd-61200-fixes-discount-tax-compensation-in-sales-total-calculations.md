@@ -1,9 +1,10 @@
 ---
-title: "ACSD-61200: Vorderingen op de heffingskorting voor korting in de berekening van het totaal van de verkopen"
+title: 'ACSD-61200: Vorderingen op de heffingskorting voor korting in de totale verkoopberekeningen'
 description: Pas ACSD-61200 flard toe om de kwestie van Adobe Commerce te bevestigen waar * [!UICONTROL Discount Tax Compensation Amount]* en * [!UICONTROL Shipping Discount Tax Compensation Amount]* in verkoop totale berekeningen ontbreken, veroorzakend discrepanties tussen de gegevens van de verkooporde en couponrapport.
 feature: Reporting, Taxes
 role: Admin, Developer
-source-git-commit: 61259d8e059cd813a84907e4baef873b2cc8cad0
+exl-id: eb908827-de29-4b2c-b094-b5db0931cd52
+source-git-commit: 2e82c935145d71d0c66c531003fa51f564da6e41
 workflow-type: tm+mt
 source-wordcount: '372'
 ht-degree: 0%

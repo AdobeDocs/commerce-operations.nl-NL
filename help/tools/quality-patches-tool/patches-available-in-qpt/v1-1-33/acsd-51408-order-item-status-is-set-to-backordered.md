@@ -1,9 +1,10 @@
 ---
-title: 'ACSD-51408: de status van het orderitem is onjuist ingesteld op [!UICONTROL backordered]'
+title: 'ACSD-51408: de status van een Order-item is onjuist ingesteld op [!UICONTROL backordered]'
 description: Pas de ACSD-51408-patch toe om het Adobe Commerce-probleem op te lossen waarbij de status van het orderitem onjuist is ingesteld op [!UICONTROL backordered] .
 feature: B2B, Orders
 role: Admin
-source-git-commit: fe11599dbef283326db029b0312ad290cde0ba0a
+exl-id: 51abb4c6-5618-43a5-89ca-a3879be2c3c4
+source-git-commit: 81c78439f7c243437b7b76dc80560c847af95ace
 workflow-type: tm+mt
 source-wordcount: '467'
 ht-degree: 0%

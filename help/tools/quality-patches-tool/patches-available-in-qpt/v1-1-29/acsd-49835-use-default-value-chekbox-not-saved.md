@@ -1,9 +1,10 @@
 ---
-title: 'ACSD-49835: [!UICONTROL Use Default Value] selectievakje is not saved'
+title: 'ACSD-49835: selectievakje [!UICONTROL Use Default Value] wordt niet opgeslagen'
 description: Pas de ACSD-49835-patch toe om het Adobe Commerce-probleem op te lossen waarbij het selectievakje [!UICONTROL Use Default Value] niet correct is opgeslagen op archiefniveau voor een multi-select kenmerk.
 feature: Storefront
 role: Admin
-source-git-commit: fe11599dbef283326db029b0312ad290cde0ba0a
+exl-id: e8d5a95f-b17d-49fc-a6d3-e03554667438
+source-git-commit: 81c78439f7c243437b7b76dc80560c847af95ace
 workflow-type: tm+mt
 source-wordcount: '352'
 ht-degree: 0%

@@ -1,15 +1,15 @@
 ---
-title: "ACSD-61799: Onjuiste berekening van de totale korting met meerdere regels voor een vast disagio toegepast op quote"
+title: 'ACSD-61799: Onjuiste berekening van de totale korting met meerdere regels voor een vast disagio toegepast op de prijsopgave'
 description: Pas de ACSD-61799-patch toe om het Adobe Commerce-probleem op te lossen, waarbij de totale korting onjuist wordt berekend wanneer meerdere regels voor winkelwagentjes met vaste kortingen op de prijsopgave worden toegepast.
 feature: Price Rules
 role: Admin, Developer
-source-git-commit: 0b4c46e0db3dbd7ce5914490ae20471709be261d
+exl-id: a87ec1cd-f141-43b9-bde1-eca354c12d4e
+source-git-commit: 737204ae7418f49fdebfffbf351304796e9f5eb0
 workflow-type: tm+mt
 source-wordcount: '445'
 ht-degree: 0%
 
 ---
-
 
 # ACSD-61799: Onjuiste berekening van de totale korting met meerdere regels voor een vast disagio toegepast op de prijsopgave
 
@@ -66,4 +66,3 @@ Om individuele flarden toe te passen, gebruik de volgende verbindingen afhankeli
 Meer informatie over [!DNL Quality Patches Tool] vindt u in:
 
 * [[!DNL Quality Patches Tool]: Een zelfbedieningshulpmiddel voor kwaliteitspatches ](/help/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches.md) in de gids van Hulpmiddelen.
-

@@ -3,7 +3,8 @@ title: 'ACSD-52613: Cache en indexen worden vernieuwd zonder updates'
 description: Pas ACSD-52613 flard toe om de kwestie van Adobe Commerce te bevestigen waar het geheime voorgeheugen en de indexen worden verfrist wanneer geen updates aan "Inventory_source"punten door  [!DNL REST API] worden gemaakt.
 feature: REST
 role: Admin
-source-git-commit: fe11599dbef283326db029b0312ad290cde0ba0a
+exl-id: 18878161-da4e-4d6e-9f58-706519f837f8
+source-git-commit: 81c78439f7c243437b7b76dc80560c847af95ace
 workflow-type: tm+mt
 source-wordcount: '440'
 ht-degree: 0%

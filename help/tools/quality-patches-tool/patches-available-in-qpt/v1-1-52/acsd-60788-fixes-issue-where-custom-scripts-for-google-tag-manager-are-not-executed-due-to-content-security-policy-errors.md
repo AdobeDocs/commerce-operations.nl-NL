@@ -1,9 +1,10 @@
 ---
-title: "ACSD-60788: De manuscripten van de douane voor  [!DNL Google Tag Manager]  niet uitgevoerd toe te schrijven aan CSP fouten"
+title: 'ACSD-60788: De manuscripten van de douane voor  [!DNL Google Tag Manager]  niet uitgevoerd toe te schrijven aan CSP fouten'
 description: Pas ACSD-60788 flard toe om de kwestie van Adobe Commerce te bevestigen waar de douanemanuscripten voor  [!DNL Google Tag Manager]  niet wegens de fouten van het Beleid van de Veiligheid van de Inhoud (CSP) worden uitgevoerd.
 feature: Security
 role: Admin, Developer
-source-git-commit: d1c643da36a200c6fb0a17139b12b6b91d9568e1
+exl-id: 3392da76-86cb-4357-8658-c95d914a5829
+source-git-commit: 81c78439f7c243437b7b76dc80560c847af95ace
 workflow-type: tm+mt
 source-wordcount: '363'
 ht-degree: 0%

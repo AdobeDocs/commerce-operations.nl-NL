@@ -1,9 +1,10 @@
 ---
-title: "ACSD-51305: niet-standaard samengestelde producten voor kinderen die niet beschikbaar zijn in GraphQL-reactie"
+title: 'ACSD-51305: Niet in GraphQL-antwoord beschikbare samengestelde producten van buiten de voorraad'
 description: Pas de ACSD-51305-patch toe om het Adobe Commerce-probleem op te lossen wanneer samengestelde producten uit de voorraad niet beschikbaar zijn in de GraphQL-respons.
 feature: Categories, GraphQL, Orders, Products
 role: Admin
-source-git-commit: fe11599dbef283326db029b0312ad290cde0ba0a
+exl-id: 110bb332-2032-4aaf-b95e-971fc3382262
+source-git-commit: 81c78439f7c243437b7b76dc80560c847af95ace
 workflow-type: tm+mt
 source-wordcount: '399'
 ht-degree: 0%

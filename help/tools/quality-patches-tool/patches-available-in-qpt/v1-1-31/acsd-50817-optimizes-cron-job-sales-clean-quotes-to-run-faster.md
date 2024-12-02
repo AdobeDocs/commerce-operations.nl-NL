@@ -1,9 +1,10 @@
 ---
-title: 'ACSD-50817: Optimizes cron job sales_clean_quotes to run rapid'
+title: 'ACSD-50817: optimaliseert verkoopmogelijkheden voor snijtaken_clean_quotes om sneller te werken'
 description: Pas ACSD-50817 flard toe om de cron baan ` sales_clean_quotes' te optimaliseren om sneller te lopen door een samengestelde index op ` store_id ` en ` update_at' kolommen in de citaatlijst toe te voegen.
 feature: Quotes
 role: Admin
-source-git-commit: fe11599dbef283326db029b0312ad290cde0ba0a
+exl-id: b6cd412f-2f37-438b-9abc-d45de6ed54d6
+source-git-commit: 81c78439f7c243437b7b76dc80560c847af95ace
 workflow-type: tm+mt
 source-wordcount: '354'
 ht-degree: 0%

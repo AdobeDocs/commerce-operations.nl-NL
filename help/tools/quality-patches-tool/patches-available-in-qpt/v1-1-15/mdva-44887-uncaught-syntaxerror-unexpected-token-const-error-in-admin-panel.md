@@ -1,9 +1,10 @@
 ---
-title: "MDVA-44887: 'Uncaught SyntaxError: Unexpected token const' error in Admin panel"
-description: "De patch MDVA-44887 verhelpt het probleem waarbij de beheerder niet op een menuoptie kan klikken. De fout *Uncaught SyntaxError: Unexpected token const* wordt weergegeven in het deelvenster Beheer. Deze patch is beschikbaar wanneer [Quality Patches Tool (QPT)] (https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/announcements/commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches) 1.1.15 is geïnstalleerd. De patch-id is MDVA-44887. Het probleem wordt volgens de planning opgelost in Adobe Commerce 2.4.5."
+title: 'MDVA-44887: Fout ''Uncaught SyntaxError: Unexpected token const'' in deelvenster Beheer'
+description: 'De patch MDVA-44887 verhelpt het probleem waarbij de beheerder niet op een menuoptie kan klikken. De fout *Uncaught SyntaxError: Unexpected token const* wordt weergegeven in het deelvenster Beheer. Deze patch is beschikbaar wanneer [Quality Patches Tool (QPT)] (https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/announcements/commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches) 1.1.15 is geïnstalleerd. De patch-id is MDVA-44887. Het probleem wordt volgens de planning opgelost in Adobe Commerce 2.4.5.'
 feature: Admin Workspace, Orders
 role: Admin
-source-git-commit: 7f17f1b286f635b8f65ac877e9de5f1d1a6a6461
+exl-id: d8cc03c3-35a0-4f00-8ec3-1ba3e100f7ca
+source-git-commit: f6abbbb28a3077f7bf26a393388c5059fcd8c599
 workflow-type: tm+mt
 source-wordcount: '423'
 ht-degree: 0%

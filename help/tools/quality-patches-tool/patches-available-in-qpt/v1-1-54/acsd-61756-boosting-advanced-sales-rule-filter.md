@@ -3,7 +3,8 @@ title: 'ACSD-61756: Verslechtering van prestaties van filters AdvancedSalesRule 
 description: Pas de ACSD-61756-patch toe om het Adobe Commerce-probleem te verhelpen, waarbij de query ` magento_salesrule_filter` een volledige tabelscan uitvoert zonder indexen te gebruiken. Dit leidt tot prestatievermindering bij het verwerken van grote volumes records. Dit flard verbetert prestaties door de ontbrekende gegevensbestandindexen voor filters te toevoegen AdvancedSalesRule.
 feature: Price Rules, Price Indexer
 role: Admin, Developer
-source-git-commit: 42a376d1a791a17d88bea68dfef178a7b2849ce2
+exl-id: 418c7c40-83ee-4cd9-8ebb-b356886ffb58
+source-git-commit: 23e92bb9032001134d2696be498a4c384f323c36
 workflow-type: tm+mt
 source-wordcount: '396'
 ht-degree: 0%

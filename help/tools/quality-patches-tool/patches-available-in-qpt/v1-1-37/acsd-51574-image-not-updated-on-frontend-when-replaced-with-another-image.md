@@ -1,9 +1,10 @@
 ---
-title: 'ACSD-51574: Afbeelding niet bijgewerkt op voorzijde bij vervanging door een andere afbeelding'
+title: 'ACSD-51574: Afbeelding niet vooraf bijgewerkt wanneer deze wordt vervangen door een andere afbeelding'
 description: Pas de ACSD-51574-patch toe om het Adobe Commerce-probleem op te lossen waarbij de afbeelding niet op de voorzijde wordt bijgewerkt nadat deze door een andere afbeelding is vervangen.
 feature: Configuration
 role: Admin
-source-git-commit: fe11599dbef283326db029b0312ad290cde0ba0a
+exl-id: 199674fc-c3b3-4fee-9061-f0546833c1cd
+source-git-commit: 81c78439f7c243437b7b76dc80560c847af95ace
 workflow-type: tm+mt
 source-wordcount: '439'
 ht-degree: 0%

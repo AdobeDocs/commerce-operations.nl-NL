@@ -1,9 +1,10 @@
 ---
-title: "ACSD-51683: aanpasbare optie kan niet aan het winkelwagentje worden toegevoegd met GraphQL"
+title: 'ACSD-51683: aanpasbare optie kan niet aan de wagen worden toegevoegd met GraphQL'
 description: Pas de ACSD-51683-patch toe om het Adobe Commerce-probleem op te lossen, waarbij de aanpasbare optie niet met GraphQL aan het winkelwagentje kan worden toegevoegd.
 feature: GraphQL
 role: Admin
-source-git-commit: fe11599dbef283326db029b0312ad290cde0ba0a
+exl-id: 9cdf71aa-3dea-4f8c-b4d6-d6f192a9710d
+source-git-commit: 81c78439f7c243437b7b76dc80560c847af95ace
 workflow-type: tm+mt
 source-wordcount: '365'
 ht-degree: 0%

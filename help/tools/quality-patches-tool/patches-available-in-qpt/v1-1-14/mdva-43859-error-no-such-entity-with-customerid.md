@@ -1,9 +1,10 @@
 ---
-title: '''MDVA-43859: Fout "Geen dergelijke entiteit met customerId =" geregistreerd wanneer verwijderde klant zich aanmeldt"'
+title: 'MDVA-43859: Fout "Geen dergelijke entiteit met customerId ="het programma wordt geopend wanneer de geschrapte klant het programma opent'
 description: De patch MDVA-43859 lost het probleem op waar fout *No zulk een entiteit met customerId =* wordt geregistreerd wanneer een geschrapte klant probeert om binnen te registreren. Deze patch is beschikbaar wanneer [Quality Patches Tool (QPT)] (https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/announcements/commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches) 1.1.14 is geïnstalleerd. De patch-id is MDVA-43859. Het probleem wordt volgens de planning opgelost in Adobe Commerce 2.4.5.
 feature: Variables
 role: Admin
-source-git-commit: 7f17f1b286f635b8f65ac877e9de5f1d1a6a6461
+exl-id: b8451b08-978a-44a2-8664-4369e832423b
+source-git-commit: 81c78439f7c243437b7b76dc80560c847af95ace
 workflow-type: tm+mt
 source-wordcount: '443'
 ht-degree: 0%

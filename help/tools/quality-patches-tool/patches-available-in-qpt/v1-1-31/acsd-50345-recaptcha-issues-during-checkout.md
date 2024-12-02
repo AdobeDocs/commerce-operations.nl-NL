@@ -3,7 +3,8 @@ title: 'ACSD-50345: reCAPTCHA-problemen tijdens het uitchecken'
 description: Pas de ACSD-50345-patch toe om het Adobe Commerce-probleem op te lossen waarbij de reCAPTCHA v2- en v3-validaties zijn mislukt tijdens het plaatsen van orders en tijdens het uitchecken.
 feature: Checkout, Orders
 role: Admin
-source-git-commit: fe11599dbef283326db029b0312ad290cde0ba0a
+exl-id: eae9a6ad-0999-4581-b3c0-7667ee7beb54
+source-git-commit: 81c78439f7c243437b7b76dc80560c847af95ace
 workflow-type: tm+mt
 source-wordcount: '448'
 ht-degree: 0%

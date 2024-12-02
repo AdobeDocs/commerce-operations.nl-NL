@@ -1,5 +1,5 @@
 ---
-title: 'ACSD-60804: Het bewerken van een klant die is gekoppeld aan een verwijderd bedrijf leidt tot een fout'
+title: 'ACSD-60804: Het bewerken van een klant die is gekoppeld aan een verwijderd bedrijf, resulteert in een fout'
 description: Pas de ACSD-60804-patch toe om het Adobe Commerce-probleem te verhelpen, waarbij het bewerken van een klant die is gekoppeld aan een verwijderd bedrijf, resulteert in een fout *Call naar een lidfunctie getSuperUserId() op null*.
 feature: Companies, Customers, B2B
 role: Admin, Developer

@@ -1,9 +1,10 @@
 ---
-title: 'MDVA-41229: Afbeeldingen die beschikbaar zijn op de achtergrond worden niet weergegeven op de voorzijde na het importeren van configureerbare producten.'
+title: 'MDVA-41229: Afbeeldingen die beschikbaar zijn op de achtergrond worden niet weergegeven op de voorzijde nadat configureerbare producten zijn geïmporteerd'
 description: Met de MDVA-41229-patch wordt het probleem opgelost waarbij afbeeldingen die op de achtergrond beschikbaar zijn, niet op de voorzijde worden weergegeven nadat configureerbare producten zijn geïmporteerd. Deze patch is beschikbaar wanneer [Quality Patches Tool (QPT)] (https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/announcements/commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches) 1.1.12 is geïnstalleerd. De patch-id is MDVA-41229. Het probleem wordt volgens de planning opgelost in Adobe Commerce 2.4.5.
 feature: Data Import/Export, Configuration, Products
 role: Admin
-source-git-commit: 7f17f1b286f635b8f65ac877e9de5f1d1a6a6461
+exl-id: 894fdc5b-545c-4ed8-ae1b-573d1d8d3cd6
+source-git-commit: 81c78439f7c243437b7b76dc80560c847af95ace
 workflow-type: tm+mt
 source-wordcount: '680'
 ht-degree: 2%

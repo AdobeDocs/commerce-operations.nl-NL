@@ -1,9 +1,10 @@
 ---
-title: "ACSD-55427: Een beheerder kan de toewijzing van een product niet ongedaan maken via **[!UICONTROL Product in Shared Catalogs]** op de productpagina."
+title: 'ACSD-55427: een beheerder kan het toewijzen van een product niet ongedaan maken via **[!UICONTROL Product in Shared Catalogs]** op de productpagina'
 description: Pas de ACSD-55427-patch toe om het Adobe Commerce-probleem op te lossen waarbij de toewijzing van een product niet ongedaan kan worden gemaakt vanaf **[!UICONTROL Product in Shared Catalogs]**.
 feature: Products, B2B
 role: Admin, Developer
-source-git-commit: fe11599dbef283326db029b0312ad290cde0ba0a
+exl-id: 974347fd-351d-4a4b-a9ca-a534daf3fbd7
+source-git-commit: 81c78439f7c243437b7b76dc80560c847af95ace
 workflow-type: tm+mt
 source-wordcount: '384'
 ht-degree: 0%

@@ -1,9 +1,10 @@
 ---
-title: "MDVA-34948: Verlichting van de website"
+title: 'MDVA-34948: Verlichting website'
 description: De MDVA-34948 Adobe Commerce patch verhelpt het probleem van de vertraging van de website. Deze patch is beschikbaar wanneer [Quality Patches Tool (QPT)] (https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/announcements/commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches) 1.1.1 is geïnstalleerd. De patch-id is MDVA-34948. Het probleem is opgelost in Adobe Commerce versie 2.4.1.
 feature: Observability, Configuration
 role: Admin
-source-git-commit: 1fb76b8d648cbbe2a9f602d2b1a0149f1f4f0e46
+exl-id: 3c2a2d44-7d60-42da-a0a3-785fb61d571e
+source-git-commit: 81c78439f7c243437b7b76dc80560c847af95ace
 workflow-type: tm+mt
 source-wordcount: '298'
 ht-degree: 0%

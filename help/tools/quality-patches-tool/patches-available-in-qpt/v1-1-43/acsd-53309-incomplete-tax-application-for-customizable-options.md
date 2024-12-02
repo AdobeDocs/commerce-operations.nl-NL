@@ -1,9 +1,10 @@
 ---
-title: 'ACSD-53309: onvolledige belastingtoepassing voor aanpasbare opties en [!UICONTROL Regular Price] label'
+title: 'ACSD-53309: onvolledige belastingtoepassing voor aanpasbare opties en label [!UICONTROL Regular Price]'
 description: Pas ACSD-53309 flard toe om de kwestie van Adobe Commerce te bevestigen waar de belasting niet volledig in het "[!UICONTROL Regular Price]"etiket wordt toegepast wanneer een klantgerichte optie wordt geselecteerd.
 feature: Taxes, Shipping/Delivery
 role: Admin, Developer
-source-git-commit: fe11599dbef283326db029b0312ad290cde0ba0a
+exl-id: 7f4a8923-11dd-48b2-9d97-77de5c2b24ce
+source-git-commit: 81c78439f7c243437b7b76dc80560c847af95ace
 workflow-type: tm+mt
 source-wordcount: '387'
 ht-degree: 0%

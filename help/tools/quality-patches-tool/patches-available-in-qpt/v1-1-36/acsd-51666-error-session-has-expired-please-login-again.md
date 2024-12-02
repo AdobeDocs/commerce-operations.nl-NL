@@ -3,7 +3,8 @@ title: 'ACSD-51666: Fout "De sessie is verlopen. Meld u opnieuw aan." nadat u zi
 description: Pas de ACSD-51666-patch toe om het Adobe Commerce-probleem op te lossen waarbij de fout *De sessie is verlopen. Meld u opnieuw aan.* treedt op nadat u zich hebt aangemeld.
 feature: Customers
 role: Admin, Developer
-source-git-commit: fe11599dbef283326db029b0312ad290cde0ba0a
+exl-id: 8968b314-6625-45fa-9733-20560cca7089
+source-git-commit: 81c78439f7c243437b7b76dc80560c847af95ace
 workflow-type: tm+mt
 source-wordcount: '455'
 ht-degree: 0%

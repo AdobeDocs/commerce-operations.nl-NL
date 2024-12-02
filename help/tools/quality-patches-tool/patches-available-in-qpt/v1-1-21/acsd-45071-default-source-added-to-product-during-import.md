@@ -3,7 +3,8 @@ title: 'ACSD-45071: standaardbron toegevoegd aan product tijdens importeren'
 description: De ACSD-45071-patch lost het probleem op waarbij de standaardbron tijdens het importeren aan het product wordt toegevoegd. Deze patch is beschikbaar wanneer [[!DNL Quality Patches Tool (QPT)]](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/announcements/commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches) 1.1.21 is geïnstalleerd. De patch-id is ACSD-45071. Het probleem wordt volgens de planning opgelost in Adobe Commerce 2.4.6.
 feature: Data Import/Export, Products
 role: Admin
-source-git-commit: fe11599dbef283326db029b0312ad290cde0ba0a
+exl-id: d28cbfb1-ad6b-4ccf-a877-6db763cea61b
+source-git-commit: 81c78439f7c243437b7b76dc80560c847af95ace
 workflow-type: tm+mt
 source-wordcount: '400'
 ht-degree: 0%

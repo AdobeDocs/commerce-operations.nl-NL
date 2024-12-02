@@ -1,9 +1,10 @@
 ---
-title: '"ACSD-55566: [!UICONTROL mergeCart] de mutatie ontbreekt met interne serverfout in  [!DNL GraphQL]  reactie'''
+title: 'ACSD-55566: [!UICONTROL mergeCart] de mutatie ontbreekt met interne serverfout in  [!DNL GraphQL]  reactie'
 description: Pas ACSD-55566 flard toe om de kwestie van Adobe Commerce te bevestigen waar de "mergeCart"mutatie met een interne serverfout in  [!DNL GraphQL]  reactie ontbreekt wanneer het samenvoegen van de bron en de bestemmingstaarten die de zelfde bundelpunten hebben.
 feature: GraphQL, Shopping Cart
 role: Admin, Developer
-source-git-commit: fe11599dbef283326db029b0312ad290cde0ba0a
+exl-id: 84c6fbb9-73b3-4197-aff3-49743f0ebb2c
+source-git-commit: 81c78439f7c243437b7b76dc80560c847af95ace
 workflow-type: tm+mt
 source-wordcount: '428'
 ht-degree: 0%

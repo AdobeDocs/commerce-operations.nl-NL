@@ -3,7 +3,8 @@ title: 'ACSD-47657: voegt een mechanisme voor het in cache plaatsen van AWS-refe
 description: Pas de ACSD-47657-patch toe om het Adobe Commerce-probleem op te lossen dat optreedt bij een grote hoeveelheid aanvragen naar AWS S3 door een cachemechanisme voor AWS-referenties toe te voegen.
 feature: Cache
 role: Admin, Developer
-source-git-commit: fe11599dbef283326db029b0312ad290cde0ba0a
+exl-id: 2851d511-a9b0-49f8-94ba-ad63d2397ca5
+source-git-commit: 81c78439f7c243437b7b76dc80560c847af95ace
 workflow-type: tm+mt
 source-wordcount: '333'
 ht-degree: 0%

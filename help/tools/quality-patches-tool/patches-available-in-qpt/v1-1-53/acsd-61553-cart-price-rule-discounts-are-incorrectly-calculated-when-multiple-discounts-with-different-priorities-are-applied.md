@@ -1,9 +1,10 @@
 ---
-title: "ACSD-61553: [!UICONTROL Cart Price Rule] wordt onjuist berekend wanneer meerdere kortingen met verschillende prioriteiten worden toegepast."
+title: 'ACSD-61553: [!UICONTROL Cart Price Rule] wordt onjuist berekend wanneer meerdere kortingen met verschillende prioriteiten worden toegepast'
 description: Pas de ACSD-61553-patch toe om het Adobe Commerce-probleem op te lossen, waarbij [!UICONTROL Cart Price Rule] onjuist wordt berekend wanneer meerdere kortingen met verschillende prioriteiten worden toegepast.
 feature: Shopping Cart, Price Rules
 role: Admin, Developer
-source-git-commit: 299cdaaeb1a97697125cd990a9387d5245226f1d
+exl-id: 0fb7a988-d391-49e5-a59d-62315a16132c
+source-git-commit: b182fc0cd2f00f36138675277ac1de8a7179135a
 workflow-type: tm+mt
 source-wordcount: '474'
 ht-degree: 0%

@@ -1,9 +1,10 @@
 ---
-title: 'ACSD-51041: Prijsindex duurt erg lang om te voltooien'
+title: 'ACSD-51041: Het duurt erg lang om de prijsindex te voltooien'
 description: Pas de ACSD-51041-patch toe om het Adobe Commerce-probleem op te lossen, waarbij de prijsindex lang duurt om te voltooien met een zeer grote productset.
 feature: Configuration
 role: Admin
-source-git-commit: fe11599dbef283326db029b0312ad290cde0ba0a
+exl-id: d45d4042-06a1-445d-bed3-803085626dd3
+source-git-commit: 81c78439f7c243437b7b76dc80560c847af95ace
 workflow-type: tm+mt
 source-wordcount: '347'
 ht-degree: 0%

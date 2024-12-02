@@ -3,7 +3,8 @@ title: 'ACSD-52929: Overbodig verzoek om standaardbronitems opnieuw te indexeren
 description: Pas de markering ACSD-52929 toe om het Adobe Commerce-probleem op te lossen waarbij er een overtollig verzoek is om de standaardbronitems opnieuw te indexeren wanneer de inventarisindexator in de asynchrone modus is geconfigureerd.
 feature: Configuration, Inventory
 role: Admin, Developer
-source-git-commit: fe11599dbef283326db029b0312ad290cde0ba0a
+exl-id: 904aed0e-a6cd-4a0f-949d-bb32fcd77356
+source-git-commit: 81c78439f7c243437b7b76dc80560c847af95ace
 workflow-type: tm+mt
 source-wordcount: '411'
 ht-degree: 0%

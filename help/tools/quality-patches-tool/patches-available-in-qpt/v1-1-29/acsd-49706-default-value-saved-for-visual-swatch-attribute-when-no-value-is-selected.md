@@ -1,9 +1,10 @@
 ---
-title: 'ACSD-49706: standaardwaarde wordt opgeslagen voor kenmerk van visueel staal wanneer geen waarde is geselecteerd'
+title: 'ACSD-49706: standaardwaarde opgeslagen voor kenmerk van visueel staal wanneer geen waarde is geselecteerd'
 description: Pas de ACSD-49706-patch toe om het Adobe Commerce-probleem op te lossen waarbij een standaardwaarde wordt opgeslagen voor een visueel staalkenmerk wanneer geen waarde is geselecteerd.
 feature: Admin Workspace, Attributes
 role: Admin
-source-git-commit: fe11599dbef283326db029b0312ad290cde0ba0a
+exl-id: fa3cb0a1-f898-4826-aa64-efeba1af58a8
+source-git-commit: 81c78439f7c243437b7b76dc80560c847af95ace
 workflow-type: tm+mt
 source-wordcount: '404'
 ht-degree: 0%

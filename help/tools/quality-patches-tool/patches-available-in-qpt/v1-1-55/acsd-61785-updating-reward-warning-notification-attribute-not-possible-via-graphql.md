@@ -3,7 +3,8 @@ title: 'ACSD-61785: Het bijwerken van het belonings_warning_notification attribu
 description: Pas de ACSD-61785-patch toe om het Adobe Commerce-probleem op te lossen, waarbij het bijwerken van het attribuut 'beloning_warning_notification' niet mogelijk is via GraphQL-mutatie en REST API-aanroepen.
 feature: REST, GraphQL, Rewards
 role: Admin, Developer
-source-git-commit: 87ce6004a632f860447d55c13c08f78533ab093e
+exl-id: 41f40452-4240-4b4a-b1bc-0da23139f19f
+source-git-commit: c1d3d3056d1ee3c33db6c14ed10a1df08f962795
 workflow-type: tm+mt
 source-wordcount: '316'
 ht-degree: 0%

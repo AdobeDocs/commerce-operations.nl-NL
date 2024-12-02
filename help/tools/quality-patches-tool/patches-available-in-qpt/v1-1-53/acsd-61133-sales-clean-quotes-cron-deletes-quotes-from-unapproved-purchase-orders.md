@@ -1,9 +1,10 @@
 ---
-title: '"ACSD-61133: "Sales_clean_quotes" cron verwijdert aanhalingstekens uit niet-goedgekeurde inkooporders"'
+title: 'ACSD-61133: "sales_clean_quotes" cron verwijdert aanhalingstekens uit niet-goedgekeurde inkooporders'
 description: Pas het ACSD-61133-patch toe om het Adobe Commerce-probleem op te lossen, waarbij met de garn 'sales_clean_quotes' aanhalingstekens uit niet-goedgekeurde inkooporders worden verwijderd.
 feature: B2B, Purchase Orders
 role: Admin, Developer
-source-git-commit: 67b1dd3d4814b487d47a25697ed21d60f1e4e378
+exl-id: 06979d4b-08ea-40fe-a211-3d950c9afb47
+source-git-commit: 05f94eb45fe6ec08b9e9f9d3bb7ad3c6fb8d5445
 workflow-type: tm+mt
 source-wordcount: '356'
 ht-degree: 0%

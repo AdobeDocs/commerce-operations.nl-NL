@@ -1,9 +1,10 @@
 ---
-title: 'ACSD-48627: configureerbaar product uit de voorraad veroorzaakt een fout'
+title: 'ACSD-48627: configureerbaar product buiten voorraad veroorzaakt een fout'
 description: Pas de ACSD-48627-patch toe om het Adobe Commerce-probleem op te lossen, waarbij het configureerbare product uit de voorraad een fout veroorzaakt bij het verzenden van een GraphQL-verzoek om kaartgegevens.
 feature: Admin Workspace, Configuration, Orders, Products
 role: Admin
-source-git-commit: 809defe75d7b218d8085f85ff815472a531040cf
+exl-id: 457c605e-d0c3-479e-b515-9b2851a71a08
+source-git-commit: 81c78439f7c243437b7b76dc80560c847af95ace
 workflow-type: tm+mt
 source-wordcount: '411'
 ht-degree: 0%

@@ -3,7 +3,8 @@ title: 'ACSD 49843: Koppeling voor het downloaden van producten is niet beschikb
 description: Pas de ACSD-49843-patch toe om het Adobe Commerce-probleem op te lossen waarbij de productdownloadkoppeling niet beschikbaar is nadat het geordende item automatisch is gefactureerd via een online betalingsmethode wanneer [!UICONTROL Payment Action] is ingesteld op [!UICONTROL Intent Sale] .
 feature: Catalog Management, Configuration, Invoices, Orders, Storefront
 role: Admin, Developer
-source-git-commit: fe11599dbef283326db029b0312ad290cde0ba0a
+exl-id: e990b550-fb32-48d2-9c39-2176d7ab34c9
+source-git-commit: 81c78439f7c243437b7b76dc80560c847af95ace
 workflow-type: tm+mt
 source-wordcount: '485'
 ht-degree: 0%

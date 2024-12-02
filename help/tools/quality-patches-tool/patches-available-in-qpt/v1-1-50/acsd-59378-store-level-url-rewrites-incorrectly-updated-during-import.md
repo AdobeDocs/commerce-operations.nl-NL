@@ -1,9 +1,10 @@
 ---
-title: '"ACSD-59378: opslag-niveau  [!DNL URL]  herschrijft verkeerd bijgewerkt tijdens de invoer'''
+title: 'ACSD-59378: Store-level  [!DNL URL]  herschrijft verkeerd bijgewerkt tijdens de invoer'
 description: Pas ACSD-59378 flard toe om de kwestie van Adobe Commerce te bevestigen waar store-level  [!DNL URL]  herschrijft verkeerd tijdens de invoer wordt bijgewerkt.
 feature: Data Import/Export
 role: Admin, Developer
-source-git-commit: fe11599dbef283326db029b0312ad290cde0ba0a
+exl-id: dc54d810-dcc6-42c6-a877-d00d3cf4f9a5
+source-git-commit: 81c78439f7c243437b7b76dc80560c847af95ace
 workflow-type: tm+mt
 source-wordcount: '367'
 ht-degree: 0%

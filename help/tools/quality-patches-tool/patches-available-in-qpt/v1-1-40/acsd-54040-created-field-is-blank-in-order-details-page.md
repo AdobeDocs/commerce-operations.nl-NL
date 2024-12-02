@@ -1,9 +1,10 @@
 ---
-title: 'ACSD-54040: Het veld [!UICONTROL Created] is leeg in de volgorde waarin B2B-modules zijn ingeschakeld.'
+title: 'ACSD-54040: Het veld [!UICONTROL Created] is leeg in de volgorde waarin B2B-modules zijn ingeschakeld'
 description: Pas de ACSD-54040-patch toe om het Adobe Commerce-probleem op te lossen, waarbij het veld [!UICONTROL Created] leeg is op de pagina met orderdetails wanneer B2B-modules zijn ingeschakeld.
 feature: B2B
 role: Admin, Developer
-source-git-commit: fe11599dbef283326db029b0312ad290cde0ba0a
+exl-id: 09fc1e0f-2e02-4cfc-9a7a-7c6aacd9fee0
+source-git-commit: 81c78439f7c243437b7b76dc80560c847af95ace
 workflow-type: tm+mt
 source-wordcount: '353'
 ht-degree: 0%

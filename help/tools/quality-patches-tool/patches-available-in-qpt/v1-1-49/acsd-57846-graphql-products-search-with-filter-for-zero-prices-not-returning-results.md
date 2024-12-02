@@ -1,9 +1,10 @@
 ---
-title: "ACSD-57846: GraphQL-producten zoeken met filter naar nulprijzen zonder resultaat"
+title: 'ACSD-57846: GraphQL-producten zoeken met filter naar nulprijzen zonder resultaten te retourneren'
 description: Pas ACSD-57846 flard toe om de kwestie van Adobe Commerce te bevestigen waar het filtreren van producten voor prijs van nul tot een misvormd verzoek aan  [!DNL OpenSearch]  leidt en geen resultaten terugkeert.
 feature: GraphQL, Products
 role: Admin, Developer
-source-git-commit: fe11599dbef283326db029b0312ad290cde0ba0a
+exl-id: ec523a54-201b-4a8f-85ce-cbe1d0bf1304
+source-git-commit: 81c78439f7c243437b7b76dc80560c847af95ace
 workflow-type: tm+mt
 source-wordcount: '374'
 ht-degree: 0%

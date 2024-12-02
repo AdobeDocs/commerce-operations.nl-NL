@@ -3,7 +3,8 @@ title: 'ACSD-46865: [!UICONTROL shipment] en [!UICONTROL credit memo] niet gevul
 description: Pas de ACSD-46865-patch toe om het Adobe Commerce-probleem op te lossen waarbij [!UICONTROL shipment] - en [!UICONTROL credit memo] -rasters niet worden gevuld wanneer [!UICONTROL asynchronous indexing] wordt ingeschakeld.
 feature: Cache, Orders, Returns, Shipping/Delivery
 role: Admin
-source-git-commit: fe11599dbef283326db029b0312ad290cde0ba0a
+exl-id: 6f84f5b6-6c34-476c-aae5-9a8ba306f8e4
+source-git-commit: 81c78439f7c243437b7b76dc80560c847af95ace
 workflow-type: tm+mt
 source-wordcount: '369'
 ht-degree: 0%

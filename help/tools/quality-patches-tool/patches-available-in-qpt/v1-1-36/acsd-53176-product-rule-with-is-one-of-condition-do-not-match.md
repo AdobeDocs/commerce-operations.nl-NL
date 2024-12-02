@@ -1,9 +1,10 @@
 ---
-title: '"ACSD-53176: Productregel met ''is een van''-voorwaarde komt niet overeen'''
+title: 'ACSD-53176: Productregel met ` is één van ` is voorwaarde één van ` niet aanpassen'
 description: Pas de ACSD-53176-patch toe om het Adobe Commerce-probleem op te lossen, waarbij de gerelateerde productregel 'één van' niet correct werkt voor 'Producten afstemmen'.
 feature: Marketing Tools
 role: Admin
-source-git-commit: fe11599dbef283326db029b0312ad290cde0ba0a
+exl-id: 8260c6ac-3ca2-4361-9e36-a8a58468fa95
+source-git-commit: 81c78439f7c243437b7b76dc80560c847af95ace
 workflow-type: tm+mt
 source-wordcount: '360'
 ht-degree: 0%

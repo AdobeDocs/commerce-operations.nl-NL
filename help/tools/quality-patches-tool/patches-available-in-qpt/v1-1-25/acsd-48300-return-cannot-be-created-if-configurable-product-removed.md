@@ -3,7 +3,8 @@ title: 'ACSD-48300: de terugkeer kan niet worden gecreeerd als configureerbaar p
 description: Pas de ACSD-48300-patch toe om het Adobe Commerce-probleem op te lossen, waarbij de return niet kan worden gemaakt als het configureerbare product wordt verwijderd.
 feature: Admin Workspace, Configuration, Orders, Products, Returns
 role: Admin
-source-git-commit: fe11599dbef283326db029b0312ad290cde0ba0a
+exl-id: 50139364-e2ea-47a8-9bca-09876dd0e70d
+source-git-commit: 81c78439f7c243437b7b76dc80560c847af95ace
 workflow-type: tm+mt
 source-wordcount: '381'
 ht-degree: 0%

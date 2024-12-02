@@ -1,9 +1,10 @@
 ---
-title: "ACSD-51102: Catalogusregel toegepast op een groot aantal producten die niet correct zijn geïndexeerd"
+title: 'ACSD-51102: Catalogusregel toegepast op een groot aantal producten die niet correct zijn geïndexeerd'
 description: Pas de ACSD-51102-patch toe om het Adobe Commerce-probleem op te lossen waarbij een catalogusregel die wordt toegepast op een groot aantal producten niet correct wordt geïndexeerd wanneer de regel wordt ingeschakeld door een geplande update.
 feature: Catalog Management, Products
 role: Admin
-source-git-commit: fe11599dbef283326db029b0312ad290cde0ba0a
+exl-id: 35a8078d-667b-4101-8562-ece052b44c9c
+source-git-commit: 81c78439f7c243437b7b76dc80560c847af95ace
 workflow-type: tm+mt
 source-wordcount: '471'
 ht-degree: 0%

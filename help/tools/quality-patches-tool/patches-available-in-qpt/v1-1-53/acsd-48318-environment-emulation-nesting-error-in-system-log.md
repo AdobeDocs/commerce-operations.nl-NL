@@ -1,9 +1,10 @@
 ---
-title: '"ACSD-48318: Omgevingsnestfout in ` system.log`'
+title: 'ACSD-48318: Omgevingsemulatie nestfout in ` system.log`'
 description: Pas de ACSD-48318-patch toe om het Adobe Commerce-probleem op te lossen waarbij een foutbericht *main.ERROR:Environment emulation nesting is not allowed* weergegeven wordt in ` system.log` telkens wanneer een factuur-e-mail wordt verzonden.
 feature: System, Orders
 role: Admin, Developer
-source-git-commit: 94b68d18bc46065b5803a2eb88f0e844f71f0386
+exl-id: 24af18de-80dd-4e0a-bdf9-5b9c075fc608
+source-git-commit: 81c78439f7c243437b7b76dc80560c847af95ace
 workflow-type: tm+mt
 source-wordcount: '314'
 ht-degree: 0%

@@ -1,15 +1,15 @@
 ---
-title: "ACSD-61522: E-mailadressen in de velden *Voornaam en Achternaam* verzenden ongeldige bevestigingen voor bestellingen"
+title: 'ACSD-61522: E-mailadressen in *Voornaam en Achternaam* verzenden ongeldige orderbevestigingen'
 description: Pas ACSD-61522 flard toe om de kwestie van Adobe Commerce te bevestigen waar het mogelijk is om e-mailadressen in de gebieden *[!UICONTROL First Name] * en * [!UICONTROL Last Name] * van een gastklant in te gaan, leidend tot ongeldige de bevestigingse-mails die van de ordbevestiging worden verzonden.
 feature: Checkout, Customers
 role: Admin, Developer
-source-git-commit: d56f4fda007c1499bdba82ac3db9ac5ea1d34b0e
+exl-id: e1ed7a57-4054-44db-bc17-9b9056096fce
+source-git-commit: a5dda25e502889ee0a23e99b412aeeb863de452c
 workflow-type: tm+mt
 source-wordcount: '361'
 ht-degree: 0%
 
 ---
-
 
 # ACSD-61522: De e-mailadressen in *Voornaam en de gebieden van de Achternaam* verzenden ongeldige ordesbevestigingen
 

@@ -3,7 +3,8 @@ title: 'ACSD-53239: Inventory indexer wist alle caches'
 description: Pas de ACSD-53239-patch toe om het Adobe Commerce-probleem op te lossen, waarbij de inventarisindexator alle caches in de modus [!UICONTROL Update on Schedule] wist.
 feature: GraphQL, Inventory, Catalog Management
 role: Admin, Developer
-source-git-commit: fe11599dbef283326db029b0312ad290cde0ba0a
+exl-id: 69e71e2d-8f26-4200-ad4a-6bd9e45627e4
+source-git-commit: 81c78439f7c243437b7b76dc80560c847af95ace
 workflow-type: tm+mt
 source-wordcount: '323'
 ht-degree: 0%

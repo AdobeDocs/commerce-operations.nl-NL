@@ -1,9 +1,10 @@
 ---
-title: "MDVA-37725: E-mails die via niet-standaardsites worden verzonden, bevatten URL's van het standaardlogo van de site."
+title: 'MDVA-37725: E-mails die via niet-standaardsites worden verzonden, bevatten standaard URL''s van het logo van de site'
 description: De patch MDVA-37725 verhelpt het probleem dat e-mails met asynchrone bestellingen worden verzonden via niet-standaard websites met logo-URL's van de standaardwebsite.
 feature: Communications, Orders
 role: Admin
-source-git-commit: 1fb76b8d648cbbe2a9f602d2b1a0149f1f4f0e46
+exl-id: 6e72897c-7652-4b5a-8575-090e94188daf
+source-git-commit: 81c78439f7c243437b7b76dc80560c847af95ace
 workflow-type: tm+mt
 source-wordcount: '423'
 ht-degree: 0%

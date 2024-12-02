@@ -1,9 +1,10 @@
 ---
-title: "ACSD-55352: Creditmemo's maken met bonuspunten"
+title: 'ACSD-55352: Creditmemo''s maken met beloningspunten'
 description: Pas de ACSD-55352-patch toe om het Adobe Commerce-probleem op te lossen, waarbij na het maken van een gedeeltelijk creditmemo met bonuspunten van de klant de status van de order verandert in *closed* en de opties voor creditnota verdwijnen van de pagina voor bestellingen van de beheerder.
 feature: Checkout, Orders
 role: Admin, Developer
-source-git-commit: fe11599dbef283326db029b0312ad290cde0ba0a
+exl-id: bee0c4be-11ec-4dcb-9b3c-7af26676cee9
+source-git-commit: 81c78439f7c243437b7b76dc80560c847af95ace
 workflow-type: tm+mt
 source-wordcount: '479'
 ht-degree: 0%

@@ -1,9 +1,10 @@
 ---
-title: '''MDVA-40537: Het maken van een winkelweergave geeft een fout weer wanneer meerdere CMS-pagina''s dezelfde URL-sleutel hebben.'''
+title: 'MDVA-40537: Het maken van een winkelweergave geeft een fout weer wanneer meerdere CMS-pagina''s dezelfde URL-sleutel hebben.'
 description: De patch MDVA-40537 verhelpt het probleem waarbij gebruikers een fout krijgen bij het maken van een winkelweergave als meerdere CMS-pagina's dezelfde URL-sleutel hebben. Deze patch is beschikbaar wanneer [Quality Patches Tool (QPT)] (https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/announcements/commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches) 1.1.4 is geïnstalleerd. De patch-id is MDVA-40537. De kwestie is opgelost in Adobe Commerce 2.4.1.
 feature: CMS
 role: Admin
-source-git-commit: 1fb76b8d648cbbe2a9f602d2b1a0149f1f4f0e46
+exl-id: 10c3d935-dbc9-4033-85a1-041b8af74d78
+source-git-commit: 81c78439f7c243437b7b76dc80560c847af95ace
 workflow-type: tm+mt
 source-wordcount: '433'
 ht-degree: 0%

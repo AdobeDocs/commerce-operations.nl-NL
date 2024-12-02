@@ -1,9 +1,10 @@
 ---
-title: "ACSD-55100: [!DNL GraphQL]  keert geen producten voorbij 10k in onderzoeksresultaten terug"
+title: 'ACSD-55100: [!DNL GraphQL]  keert geen producten voorbij 10k in onderzoeksresultaten terug'
 description: Pas de ACSD-55100-patch toe om het Adobe Commerce-probleem op te lossen, waarbij de GraphQL in de zoekresultaten geen producten retourneert die hoger zijn dan *10k*.
 feature: GraphQL, Products, Search
 role: Admin, Developer
-source-git-commit: fe11599dbef283326db029b0312ad290cde0ba0a
+exl-id: f08b62b9-ed56-4eca-b7e7-6e2bd99df01f
+source-git-commit: 81c78439f7c243437b7b76dc80560c847af95ace
 workflow-type: tm+mt
 source-wordcount: '467'
 ht-degree: 0%

@@ -1,9 +1,10 @@
 ---
-title: "ACSD-61195: GraphQL-aanvraag voor winkelwagentje leidt niet tot het retourneren van objecten op de laatste pagina"
+title: 'ACSD-61195: GraphQL-aanvraag voor winkelwagentje leidt niet tot het retourneren van objecten op de laatste pagina'
 description: Pas de ACSD-61195-patch toe om het Adobe Commerce-probleem op te lossen, waarbij geen winkelwagentjes worden geretourneerd op de laatste pagina voor het GraphQL-winkelwagentje.
 feature: GraphQL
 role: Admin, Developer
-source-git-commit: f6e410e0787e56717b3910b7f3938108a7af9cd8
+exl-id: 15f0f29c-8517-4f1e-9370-772572e75c9a
+source-git-commit: 81c78439f7c243437b7b76dc80560c847af95ace
 workflow-type: tm+mt
 source-wordcount: '328'
 ht-degree: 0%

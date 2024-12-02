@@ -3,7 +3,8 @@ title: 'ACSD-46683: Verzendprijs toont *Nog niet berekend*'
 description: Pas de ACSD-46683-patch toe om het Adobe Commerce-probleem op te lossen waarbij de verzendprijs *Nog niet berekend* wordt weergegeven.
 feature: Marketing Tools, Orders, Shipping/Delivery
 role: Admin
-source-git-commit: fe11599dbef283326db029b0312ad290cde0ba0a
+exl-id: ebd79187-2835-403b-945d-80ac34d6fb9c
+source-git-commit: f6abbbb28a3077f7bf26a393388c5059fcd8c599
 workflow-type: tm+mt
 source-wordcount: '478'
 ht-degree: 0%

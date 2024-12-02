@@ -1,9 +1,10 @@
 ---
-title: 'MDVA-44562: Store id for quote items die zijn overschreven door standaard store id'
+title: 'MDVA-44562: Winkel-id voor aanhalingstekens die standaard worden overschreven door winkel-id'
 description: De patch MDVA-44562 verhelpt het probleem waarbij de standaard store-id de winkel-id overschrijft voor prijsaanhalingstekens voor GraphQL-aanvragen. Deze patch is beschikbaar wanneer [Quality Patches Tool (QPT)] (https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/announcements/commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches) 1.1.16 is geïnstalleerd. De patch-id is MDVA-44562. Het probleem wordt volgens de planning opgelost in Adobe Commerce 2.4.6.
 feature: Quotes
 role: Admin
-source-git-commit: 7f17f1b286f635b8f65ac877e9de5f1d1a6a6461
+exl-id: 007a82f7-4bc9-4a51-8b18-05f6c0867ea7
+source-git-commit: 81c78439f7c243437b7b76dc80560c847af95ace
 workflow-type: tm+mt
 source-wordcount: '450'
 ht-degree: 0%

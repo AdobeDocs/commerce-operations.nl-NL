@@ -3,7 +3,8 @@ title: 'ACSD-54989: Bedrijfsbeheer kan geen bestelling uitvoeren als [!UICONTROL
 description: Pas de ACSD-54989-patch toe om het Adobe Commerce-probleem op te lossen, waarbij bedrijfsbeheerders geen orders kunnen plaatsen als [!UICONTROL Enable Purchase Orders] op Ja is ingesteld en [!UICONTROL Purchase Order] op Nee is ingesteld.
 feature: Orders, Companies, Purchase Orders
 role: Admin, Developer
-source-git-commit: fe11599dbef283326db029b0312ad290cde0ba0a
+exl-id: 13830361-dd0c-486f-b07f-34280a17ab76
+source-git-commit: 81c78439f7c243437b7b76dc80560c847af95ace
 workflow-type: tm+mt
 source-wordcount: '388'
 ht-degree: 0%

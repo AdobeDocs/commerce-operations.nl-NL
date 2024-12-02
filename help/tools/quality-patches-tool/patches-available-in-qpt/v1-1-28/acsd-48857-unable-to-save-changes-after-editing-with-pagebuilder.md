@@ -3,7 +3,8 @@ title: 'ACSD-48857: Kan wijzigingen niet opslaan na bewerken met  [!DNL Page Bui
 description: Pas de ACSD-48857-patch toe om het Adobe Commerce-probleem op te lossen waarbij de gebruiker na het bewerken met  [!DNL Page Builder] geen wijzigingen kan opslaan.
 feature: Admin Workspace, CMS, Page Builder
 role: Admin
-source-git-commit: fe11599dbef283326db029b0312ad290cde0ba0a
+exl-id: b03cd597-8fef-4528-9699-793dc61d34da
+source-git-commit: 81c78439f7c243437b7b76dc80560c847af95ace
 workflow-type: tm+mt
 source-wordcount: '359'
 ht-degree: 0%

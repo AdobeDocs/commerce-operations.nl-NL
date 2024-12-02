@@ -1,9 +1,10 @@
 ---
-title: 'ACSD-49389: klaar voor het ophalen van e-mail verzonden door API wanneer niet gereed voor ophalen'
+title: 'ACSD-49389: klaar voor het ophalen van e-mail verzonden door API wanneer niet klaar voor ophalen'
 description: Pas de ACSD-49389-patch toe om het Adobe Commerce-probleem op te lossen, waarbij de API een e-mailbericht verstuurt dat gereed is voor ophalen wanneer de bestelling niet klaar is voor ophalen.
 feature: REST, Communications
 role: Admin
-source-git-commit: fe11599dbef283326db029b0312ad290cde0ba0a
+exl-id: d1bc430a-3021-40d1-9091-db8ed9125619
+source-git-commit: 81c78439f7c243437b7b76dc80560c847af95ace
 workflow-type: tm+mt
 source-wordcount: '415'
 ht-degree: 0%

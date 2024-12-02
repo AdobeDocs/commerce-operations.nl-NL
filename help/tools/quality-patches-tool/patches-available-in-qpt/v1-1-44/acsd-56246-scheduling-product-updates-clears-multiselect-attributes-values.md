@@ -3,7 +3,8 @@ title: 'ACSD-56246: De updates van het product plannen ontruimen multiselect att
 description: Pas de ACSD-56246-patch toe om het Adobe Commerce-probleem op te lossen, waarbij tijdens de planning van productupdates multiselect-kenmerkwaarden worden gewist.
 feature: Products, Attributes, Staging
 role: Admin, Developer
-source-git-commit: fe11599dbef283326db029b0312ad290cde0ba0a
+exl-id: 1751a03d-2610-423f-be2f-b9d060452904
+source-git-commit: 81c78439f7c243437b7b76dc80560c847af95ace
 workflow-type: tm+mt
 source-wordcount: '386'
 ht-degree: 0%

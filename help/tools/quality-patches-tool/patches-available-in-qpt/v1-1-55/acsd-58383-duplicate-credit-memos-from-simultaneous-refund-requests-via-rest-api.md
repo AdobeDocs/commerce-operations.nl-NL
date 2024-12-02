@@ -1,5 +1,5 @@
 ---
-title: "ACSD-58383: dubbele creditnota's van gelijktijdige terugbetalingsverzoeken via  [!DNL REST API]"
+title: 'ACSD-58383: Dubbele creditnota''s van gelijktijdige terugbetalingsverzoeken via  [!DNL REST API]'
 description: Pas ACSD-58383 flard toe om de kwestie van Adobe Commerce te bevestigen waar het uitgeven van een restitutie via  [!DNL REST API]  met twee identieke verzoeken die gelijktijdig worden uitgevoerd, tot dubbele creditmemo's leidt.
 feature: REST, Payments, Returns
 role: Admin, Developer

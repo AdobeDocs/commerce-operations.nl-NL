@@ -3,7 +3,8 @@ title: 'ACSD-55305: Pop-up vastzetten tijdens bewerken door bedrijfsgebruiker in
 description: Pas de ACSD-55305-patch toe om het Adobe Commerce-probleem op te lossen waarbij [!UICONTROL Edit Company User] popup op de pagina [!UICONTROL My Account] &gt; [!UICONTROL Company Structure] vastloopt met een lader op het scherm.
 feature: Companies, B2B
 role: Admin, Developer
-source-git-commit: fe11599dbef283326db029b0312ad290cde0ba0a
+exl-id: eeb2b136-022f-42d5-85e2-85537f4677d6
+source-git-commit: 81c78439f7c243437b7b76dc80560c847af95ace
 workflow-type: tm+mt
 source-wordcount: '366'
 ht-degree: 0%

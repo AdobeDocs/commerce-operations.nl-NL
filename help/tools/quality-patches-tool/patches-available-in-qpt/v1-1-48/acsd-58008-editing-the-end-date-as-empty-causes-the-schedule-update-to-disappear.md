@@ -3,7 +3,8 @@ title: 'ACSD-58008: Het uitgeven van de einddatum als *empty* veroorzaakt de pro
 description: Pas de ACSD-58008-patch toe om het Adobe Commerce-probleem te verhelpen, waarbij het bewerken van de einddatum als *empty* ertoe leidt dat de update van het schema verdwijnt.
 feature: Staging, Page Content
 role: Admin, Developer
-source-git-commit: fe11599dbef283326db029b0312ad290cde0ba0a
+exl-id: 6d2279e5-6580-4325-b0a8-ed62a95da3c2
+source-git-commit: 81c78439f7c243437b7b76dc80560c847af95ace
 workflow-type: tm+mt
 source-wordcount: '381'
 ht-degree: 0%

@@ -3,7 +3,8 @@ title: 'ACSD-54626: Kan geen nieuwe regel voor inkooporders maken met NUMBER_OF_
 description: Pas de ACSD-54626-patch toe om het Adobe Commerce-probleem te verhelpen waarbij een klant geen nieuwe inkooporderregel ('createPurchaseOrderApprovalRule') kan maken met het kenmerk NUMBER_OF_SKUS via GraphQL.
 feature: Attributes, B2B, GraphQL, Purchase Orders
 role: Admin, Developer
-source-git-commit: fe11599dbef283326db029b0312ad290cde0ba0a
+exl-id: 626bd403-6334-4475-b702-09606a590c7e
+source-git-commit: 81c78439f7c243437b7b76dc80560c847af95ace
 workflow-type: tm+mt
 source-wordcount: '344'
 ht-degree: 0%

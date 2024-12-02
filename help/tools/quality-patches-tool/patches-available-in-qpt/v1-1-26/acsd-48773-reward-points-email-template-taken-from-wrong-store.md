@@ -3,7 +3,8 @@ title: 'ACSD-48773: e-mailsjabloon voor terugzendpunten uit verkeerde winkel'
 description: Pas de ACSD-48773-patch toe om het Adobe Commerce-probleem op te lossen, waarbij de sjabloon voor het e-mailadres wordt opgehaald uit de verkeerde winkel.
 feature: Admin Workspace, Communications, Marketing Tools, Orders, Personalization, Rewards
 role: Admin
-source-git-commit: fe11599dbef283326db029b0312ad290cde0ba0a
+exl-id: db8b6196-3e13-4c1b-8ae8-040487180817
+source-git-commit: 81c78439f7c243437b7b76dc80560c847af95ace
 workflow-type: tm+mt
 source-wordcount: '453'
 ht-degree: 0%

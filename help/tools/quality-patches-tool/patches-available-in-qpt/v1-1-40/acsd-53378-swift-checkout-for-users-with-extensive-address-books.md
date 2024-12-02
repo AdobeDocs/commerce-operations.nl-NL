@@ -3,7 +3,8 @@ title: 'ACSD-53378: Verbeterde uitcheckervaring voor klanten met uitgebreide adr
 description: Pas de ACSD-53378-patch toe om het Adobe Commerce-probleem op te lossen waar zich prestatieproblemen voordoen die worden veroorzaakt door adresvolumes van grote klanten.
 feature: Customers, Checkout
 role: Admin
-source-git-commit: fe11599dbef283326db029b0312ad290cde0ba0a
+exl-id: 699d09fe-872f-44d3-88bb-b5b585e15067
+source-git-commit: 81c78439f7c243437b7b76dc80560c847af95ace
 workflow-type: tm+mt
 source-wordcount: '383'
 ht-degree: 0%

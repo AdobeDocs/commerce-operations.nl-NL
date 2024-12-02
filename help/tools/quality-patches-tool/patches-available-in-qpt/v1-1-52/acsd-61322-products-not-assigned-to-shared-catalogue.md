@@ -1,9 +1,10 @@
 ---
-title: "ACSD-61322: Producten die niet aan [!UICONTROL Shared Catalogue] zijn toegewezen, worden opgenomen in XML Sitemap"
+title: 'ACSD-61322: producten die niet aan [!UICONTROL Shared Catalogue] zijn toegewezen, worden opgenomen in XML-itemap'
 description: Pas de ACSD-61322-patch toe om het Adobe Commerce-probleem op te lossen waarbij producten/categorieën die niet zijn toegewezen aan de [!UICONTROL Shared Catalog] voor de Standaard (Algemene) groep, nog steeds zijn opgenomen in de XML-itemap.
 feature: Site Navigation, B2B
 role: Admin, Developer
-source-git-commit: 1eed4f1f6484112a0ec728659aa4b79855bf9612
+exl-id: 4698ba5a-673e-4bf0-b36c-39f6122dab26
+source-git-commit: 81c78439f7c243437b7b76dc80560c847af95ace
 workflow-type: tm+mt
 source-wordcount: '446'
 ht-degree: 0%

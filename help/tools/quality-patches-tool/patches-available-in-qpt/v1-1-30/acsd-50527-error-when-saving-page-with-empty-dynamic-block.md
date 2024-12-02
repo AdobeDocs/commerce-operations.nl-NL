@@ -3,7 +3,8 @@ title: 'ACSD-50527: Fout bij het opslaan van een pagina met een leeg dynamisch b
 description: Pas de ACSD-50527-patch toe om het Adobe Commerce-probleem op te lossen waarbij een fout optreedt bij het opslaan van een pagina met een leeg dynamisch blok.
 feature: Page Content
 role: Admin
-source-git-commit: fe11599dbef283326db029b0312ad290cde0ba0a
+exl-id: d4943772-cbb8-4b6e-b553-7d3f5a50500e
+source-git-commit: 81c78439f7c243437b7b76dc80560c847af95ace
 workflow-type: tm+mt
 source-wordcount: '354'
 ht-degree: 0%

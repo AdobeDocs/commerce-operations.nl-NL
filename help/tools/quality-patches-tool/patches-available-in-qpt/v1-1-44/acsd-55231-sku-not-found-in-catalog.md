@@ -1,9 +1,10 @@
 ---
-title: 'ACSD-55231: SKU heeft geen fout aangetroffen tijdens het gebruik van de functie voor snelle bestellingen.'
+title: 'ACSD-55231: SKU niet gevonden fout tijdens gebruik van snelle-ordefunctionaliteit'
 description: Pas de ACSD-55231-patch toe om het Adobe Commerce-probleem op te lossen, waarbij *'De SKU is niet gevonden in de catalogus'*-fout tijdens het toevoegen van een product aan het winkelwagentje met behulp van de functie voor snelle bestelling.
 feature: Products, Checkout, B2B
 role: Admin, Developer
-source-git-commit: fe11599dbef283326db029b0312ad290cde0ba0a
+exl-id: f0a04773-7395-4945-a72b-5a6a018bc94e
+source-git-commit: 81c78439f7c243437b7b76dc80560c847af95ace
 workflow-type: tm+mt
 source-wordcount: '496'
 ht-degree: 0%

@@ -3,7 +3,8 @@ title: 'MDVA-42326: Klanten krijgen een fout bij het afrekenen na sessietime-out
 description: De MDVA-42326-patch lost het probleem op waarbij de klanten een fout krijgen bij het uitchecken na de sessietime-out, zelfs als de Persistent Shopping Cart is ingeschakeld. Deze patch is beschikbaar wanneer [Quality Patches Tool (QPT)] (https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/announcements/commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches) 1.1.8 is geïnstalleerd. De patch-id is MDVA-42326. Het probleem wordt volgens de planning opgelost in Adobe Commerce 2.4.4.
 feature: Checkout, Orders
 role: Admin
-source-git-commit: 7f17f1b286f635b8f65ac877e9de5f1d1a6a6461
+exl-id: f9ef6778-298b-4ff9-9c4b-b3f47bb04b67
+source-git-commit: 81c78439f7c243437b7b76dc80560c847af95ace
 workflow-type: tm+mt
 source-wordcount: '533'
 ht-degree: 0%

@@ -3,7 +3,8 @@ title: 'ACSD-48866: Fout bij aanvragen van RSS-feed voor categorieën'
 description: Pas de ACSD-48866-patch toe om het Adobe Commerce-probleem op te lossen wanneer een fout optreedt bij het aanvragen van RSS-feed voor categorieën.
 feature: Admin Workspace, Categories
 role: Admin
-source-git-commit: fe11599dbef283326db029b0312ad290cde0ba0a
+exl-id: f278a90f-f30c-401f-a544-713c89eb208a
+source-git-commit: 81c78439f7c243437b7b76dc80560c847af95ace
 workflow-type: tm+mt
 source-wordcount: '324'
 ht-degree: 0%

@@ -1,9 +1,10 @@
 ---
-title: "ACSD-60584: toegangstoken die voor één website zijn gemaakt, heeft toegang tot informatie op andere websites"
+title: 'ACSD-60584: toegangstoken die voor één website zijn gemaakt, heeft toegang tot informatie op andere websites'
 description: Pas de ACSD-60584-patch toe om het probleem op te lossen waarbij het toegangstoken dat voor de gebruiker op een website is gemaakt, toegang heeft tot klantgegevens op andere websites of deze kan wijzigen.
 feature: Customers, GraphQL
 role: Admin, Developer
-source-git-commit: eba4a8fd7bbf52fbc4295feab0d5bb79e7383b66
+exl-id: ea30ba92-4b7b-44f9-a1b1-97946061d9e6
+source-git-commit: 81c78439f7c243437b7b76dc80560c847af95ace
 workflow-type: tm+mt
 source-wordcount: '430'
 ht-degree: 0%

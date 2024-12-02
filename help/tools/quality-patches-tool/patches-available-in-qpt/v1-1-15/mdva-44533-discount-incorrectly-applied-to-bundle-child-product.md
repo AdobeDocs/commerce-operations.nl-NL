@@ -1,9 +1,10 @@
 ---
-title: "MDVA-44533: Kortingen die onjuist zijn toegepast op gebundeld kinderproduct"
+title: 'MDVA-44533: Korting wordt onjuist toegepast op gebundeld onderliggend product'
 description: De patch MDVA-44533 verhelpt het probleem waarbij een korting onjuist wordt toegepast op een gebundeld onderliggend product. Deze patch is beschikbaar wanneer [Quality Patches Tool (QPT)] (https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/announcements/commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches) 1.1.15 is geïnstalleerd. De patch-id is MDVA-44533. Het probleem wordt volgens de planning opgelost in Adobe Commerce 2.4.5.
 feature: Orders, Personalization, Products
 role: Admin
-source-git-commit: 7f17f1b286f635b8f65ac877e9de5f1d1a6a6461
+exl-id: 150fe577-a61a-451e-838a-d60be7754bf4
+source-git-commit: 81c78439f7c243437b7b76dc80560c847af95ace
 workflow-type: tm+mt
 source-wordcount: '470'
 ht-degree: 0%

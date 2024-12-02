@@ -3,7 +3,8 @@ title: 'ACSD-46815: implementatie van statische inhoud mislukt bij gebruik van c
 description: Pas de ACSD-46815-patch toe om het Adobe Commerce-probleem op te lossen waarbij de implementatie van statische inhoud mislukt bij gebruik van een compacte strategie.
 feature: Deploy, Page Content, SCD
 role: Admin
-source-git-commit: fe11599dbef283326db029b0312ad290cde0ba0a
+exl-id: 66941a83-daf8-4bb2-a575-b615e1c5dc7c
+source-git-commit: 81c78439f7c243437b7b76dc80560c847af95ace
 workflow-type: tm+mt
 source-wordcount: '344'
 ht-degree: 0%

@@ -3,7 +3,8 @@ title: 'ACSD-48070: uitzondering tijdens het bewerken van een geplande update'
 description: Pas de ACSD-48070-patch toe om het Adobe Commerce-probleem op te lossen waarbij een uitzondering wordt geactiveerd tijdens het bewerken van een geplande update.
 feature: Catalog Management, Categories
 role: Admin
-source-git-commit: fe11599dbef283326db029b0312ad290cde0ba0a
+exl-id: cebed18d-d213-4a5e-bc3b-8abcb52d45d0
+source-git-commit: 81c78439f7c243437b7b76dc80560c847af95ace
 workflow-type: tm+mt
 source-wordcount: '319'
 ht-degree: 0%

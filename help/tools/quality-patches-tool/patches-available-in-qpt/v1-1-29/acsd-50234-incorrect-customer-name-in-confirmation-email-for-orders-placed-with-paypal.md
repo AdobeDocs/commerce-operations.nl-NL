@@ -3,7 +3,8 @@ title: 'ACSD-50234: Onjuiste naam van klant in bevestigingsbericht voor geplaats
 description: Pas de ACSD-50234-patch toe om het Adobe Commerce-probleem op te lossen, waarbij de naam van de klant onjuist wordt weergegeven in het bevestigingsbericht voor orders die met  [!DNL PayPal] zijn geplaatst.
 feature: Admin Workspace, Communications, Orders, Payments
 role: Admin
-source-git-commit: fe11599dbef283326db029b0312ad290cde0ba0a
+exl-id: 9a8a7cef-0166-4b4b-96a0-87fd4f1a0ef3
+source-git-commit: 81c78439f7c243437b7b76dc80560c847af95ace
 workflow-type: tm+mt
 source-wordcount: '357'
 ht-degree: 0%

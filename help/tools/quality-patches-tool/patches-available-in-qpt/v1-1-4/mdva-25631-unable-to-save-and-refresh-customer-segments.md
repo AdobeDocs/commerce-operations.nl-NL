@@ -3,7 +3,8 @@ title: 'MDVA-25631: Kan klantsegmenten niet opslaan en vernieuwen'
 description: De patch MDVA-25631 lost het probleem op waar de gebruikers klantensegmenten die een groot aantal klanten bevatten niet kunnen bewaren en verfrissen. Deze patch is beschikbaar wanneer [Quality Patches Tool (QPT)] (https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/announcements/commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches) 1.1.4 is geïnstalleerd. De patch-id is MDVA-25631. De kwestie is opgelost in Adobe Commerce 2.4.2.
 feature: Customer Service
 role: Admin
-source-git-commit: 7f17f1b286f635b8f65ac877e9de5f1d1a6a6461
+exl-id: 3cf40538-822a-4d3e-b8fa-20f9ef9228ae
+source-git-commit: 81c78439f7c243437b7b76dc80560c847af95ace
 workflow-type: tm+mt
 source-wordcount: '394'
 ht-degree: 0%

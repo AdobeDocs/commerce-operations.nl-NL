@@ -1,9 +1,10 @@
 ---
-title: "ACSD-47704: Gebundeld product toont de prijs van uitsluitend in voorraad zijnde producten"
+title: 'ACSD-47704: Gebundeld product toont de prijs van uitsluitend in voorraad zijnde producten'
 description: Pas de ACSD-47704-patch toe om het Adobe Commerce-probleem op te lossen, waarbij een gebundeld product alleen de prijs van in-stock producten weergeeft.
 feature: Admin Workspace, Customer Service, Orders, Products
 role: Admin
-source-git-commit: fe11599dbef283326db029b0312ad290cde0ba0a
+exl-id: 7f05ceed-869c-4d1a-91fd-0122dc98e65e
+source-git-commit: 81c78439f7c243437b7b76dc80560c847af95ace
 workflow-type: tm+mt
 source-wordcount: '604'
 ht-degree: 0%

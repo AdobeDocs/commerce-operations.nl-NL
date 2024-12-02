@@ -1,9 +1,10 @@
 ---
-title: "ACSD-53148: Twee parallelle verzoeken in GraphQL om hetzelfde configureerbare product toe te voegen"
+title: 'ACSD-53148: Twee parallelle verzoeken in GraphQL om hetzelfde configureerbare product toe te voegen'
 description: Pas de ACSD-53148-patch toe om het Adobe Commerce-probleem op te lossen, waarbij twee parallelle verzoeken in GraphQL om hetzelfde configureerbare product aan het winkelwagentje toe te voegen, resulteerden in twee afzonderlijke artikelen op het winkelwagentje met hetzelfde product-SKU.
 feature: GraphQL, Shopping Cart
 role: Admin, Developer
-source-git-commit: fe11599dbef283326db029b0312ad290cde0ba0a
+exl-id: e5e22bed-69de-4872-9aa8-ab228f640b30
+source-git-commit: 81c78439f7c243437b7b76dc80560c847af95ace
 workflow-type: tm+mt
 source-wordcount: '416'
 ht-degree: 0%

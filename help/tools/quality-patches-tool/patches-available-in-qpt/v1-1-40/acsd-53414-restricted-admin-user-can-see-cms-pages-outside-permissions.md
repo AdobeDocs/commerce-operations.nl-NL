@@ -1,9 +1,10 @@
 ---
-title: '''ACSD-53414: gebruikers met beperkte beheerdersrechten kunnen CMS-pagina''s zien die buiten het bereik van hun machtigingen vallen'''
+title: 'ACSD-53414: gebruikers met beperkte beheerdersrechten kunnen CMS-pagina''s zien die buiten het bereik van hun machtigingen vallen'
 description: Pas de ACSD-53414-patch toe om het Adobe Commerce-probleem op te lossen, waarbij een gebruiker met beperkte bevoegdheden CMS-pagina's kan zien die buiten het bereik van zijn bevoegdheden vallen.
 feature: CMS
 role: Admin, Developer
-source-git-commit: fe11599dbef283326db029b0312ad290cde0ba0a
+exl-id: 86658336-679b-4fe0-9d26-56064ff0c604
+source-git-commit: 81c78439f7c243437b7b76dc80560c847af95ace
 workflow-type: tm+mt
 source-wordcount: '389'
 ht-degree: 0%

@@ -1,9 +1,10 @@
 ---
-title: "ACSD-48661: door het bedrijf afgegeven validatie van komma's als scheidingsteken voor kredietlimieten"
+title: 'ACSD-48661: door het bedrijf afgegeven validatie van komma''s als scheidingsteken voor kredietlimiet'
 description: Pas de ACSD-48661-patch toe om het Adobe Commerce-probleem op te lossen, waarbij het komma-scheidingsteken het opslaan van het bedrijf verhindert vanwege een validatiefout wanneer de limiet van het bedrijfskrediet hoger is dan 999.
 feature: Admin Workspace, B2B, Companies, Orders
 role: Admin
-source-git-commit: fe11599dbef283326db029b0312ad290cde0ba0a
+exl-id: 7115226e-5942-4a8f-9dec-b1b6f665eef8
+source-git-commit: 81c78439f7c243437b7b76dc80560c847af95ace
 workflow-type: tm+mt
 source-wordcount: '416'
 ht-degree: 0%

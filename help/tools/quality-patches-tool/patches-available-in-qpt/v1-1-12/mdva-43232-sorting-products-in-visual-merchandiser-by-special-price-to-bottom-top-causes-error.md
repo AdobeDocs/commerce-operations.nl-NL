@@ -1,9 +1,10 @@
 ---
-title: 'MDVA-43232: Het sorteren van producten in visuele handelaar door Speciale Prijs aan Bovenkant (of Onderkant) veroorzaakt een fout'
+title: 'MDVA-43232: Het sorteren van producten in visuele handelaar door Speciale Prijs aan Hoogste (of Onder) veroorzaakt een fout'
 description: De patch MDVA-43232 verhelpt het probleem dat het sorteren van producten in visuele merchandiser door Special Price to Top (of Bottom) een fout veroorzaakt bij het opslaan van de categorie. Deze patch is beschikbaar wanneer [Quality Patches Tool (QPT)] (https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/announcements/commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches) 1.1.12 is geïnstalleerd. De patch-id is MDVA-43232. Het probleem wordt volgens de planning opgelost in Adobe Commerce 2.4.5.
 feature: Categories, Merchandising, Orders, Personalization, Products
 role: Admin
-source-git-commit: 7f17f1b286f635b8f65ac877e9de5f1d1a6a6461
+exl-id: c977bec8-f99c-4799-abce-26aad49b77e8
+source-git-commit: 81c78439f7c243437b7b76dc80560c847af95ace
 workflow-type: tm+mt
 source-wordcount: '509'
 ht-degree: 0%

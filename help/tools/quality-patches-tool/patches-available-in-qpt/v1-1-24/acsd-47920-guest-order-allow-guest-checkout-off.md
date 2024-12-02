@@ -3,7 +3,8 @@ title: 'ACSD-47920: een gastgebruiker kan opdrachten plaatsen via REST API, zelf
 description: Pas de ACSD-47920-patch toe om het Adobe Commerce-probleem op te lossen, waarbij orders via REST API als gastgebruiker kunnen worden geplaatst, zelfs als de [!UICONTROL Allow Guest Checkout] is uitgeschakeld.
 feature: REST, Checkout, Orders
 role: Admin
-source-git-commit: fe11599dbef283326db029b0312ad290cde0ba0a
+exl-id: 27c74803-a3f3-46bc-9eb8-8e2c72c30cd9
+source-git-commit: 81c78439f7c243437b7b76dc80560c847af95ace
 workflow-type: tm+mt
 source-wordcount: '373'
 ht-degree: 0%

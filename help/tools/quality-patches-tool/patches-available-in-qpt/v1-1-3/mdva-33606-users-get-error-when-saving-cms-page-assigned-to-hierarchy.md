@@ -3,7 +3,8 @@ title: 'MDVA-33606: Gebruikers krijgen een foutmelding wanneer ze CMS-pagina ops
 description: De MDVA-33606-patch lost het probleem op waarbij de gebruikers een fout *Unieke schending van de beperking aangetroffen* krijgen bij het opslaan van een CMS-pagina die is toegewezen aan de hiërarchische structuur. Deze patch is beschikbaar wanneer [Quality Patches Tool (QPT)] (https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/announcements/commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches) 1.1.3 is geïnstalleerd. De patch-id is MDVA-33606. De kwestie is opgelost in Adobe Commerce 2.4.3.
 feature: CMS
 role: Admin
-source-git-commit: 7f17f1b286f635b8f65ac877e9de5f1d1a6a6461
+exl-id: 19aaa13f-7ee6-49bc-b1d9-c288dc93b951
+source-git-commit: 81c78439f7c243437b7b76dc80560c847af95ace
 workflow-type: tm+mt
 source-wordcount: '529'
 ht-degree: 0%

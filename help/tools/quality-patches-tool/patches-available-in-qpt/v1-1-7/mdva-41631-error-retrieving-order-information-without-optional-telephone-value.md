@@ -1,5 +1,5 @@
 ---
-title: '''MDVA-41631: Fout bij het ophalen van bestelgegevens zonder optionele waarde ''phone'''
+title: 'MDVA-41631: Fout bij het ophalen van bestelgegevens zonder optionele waarde "phone"'
 description: De flard MDVA-41631 lost de kwestie op waar de gebruikers een fout krijgen die bestelinformatie zonder facultatieve "telefoon"waarde door  [!DNL GraphQL] terugwinnen. Deze patch is beschikbaar wanneer [Quality Patches Tool (QPT)] (https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/announcements/commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches) 1.1.7 is geïnstalleerd. Het probleem wordt volgens de planning opgelost in Adobe Commerce 2.4.4.
 feature: Orders
 role: Admin

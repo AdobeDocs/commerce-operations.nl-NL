@@ -1,9 +1,10 @@
 ---
-title: '"ACSD-56415: Prestaties van [!UICONTROL Partial Price Indexing] vertraagd door "DELETE` query"'
+title: 'ACSD-56415: Prestaties van [!UICONTROL Partial Price Indexing] vertraagd door "DELETE` query'
 description: Pas de ACSD-56415-patch toe om het Adobe Commerce-probleem op te lossen waarbij de prestaties van [!UICONTROL Partial Price Indexing] worden vertraagd door een ` DELETE'-query wanneer de database veel gedeeltelijke prijsgegevens bevat die moeten worden geïndexeerd.
 feature: Catalog Service
 role: Admin, Developer
-source-git-commit: 809defe75d7b218d8085f85ff815472a531040cf
+exl-id: c877844e-79d3-4756-97a5-de44e6fb5170
+source-git-commit: 81c78439f7c243437b7b76dc80560c847af95ace
 workflow-type: tm+mt
 source-wordcount: '392'
 ht-degree: 0%

@@ -1,9 +1,10 @@
 ---
-title: "ACSD-50815: decimale hoeveelheid voor eenvoudig product kan niet worden gebruikt voor nieuwe gebundelde productoptie"
+title: 'ACSD-50815: decimale hoeveelheid voor eenvoudig product kan niet worden gebruikt voor nieuwe gebundelde productoptie'
 description: Pas de ACSD-50815-patch toe om het Adobe Commerce-probleem op te lossen waarbij de decimale hoeveelheid voor een eenvoudig product niet kan worden gebruikt voor een nieuwe gebundelde productoptie.
 feature: Products
 role: Admin
-source-git-commit: fe11599dbef283326db029b0312ad290cde0ba0a
+exl-id: 5cd69abe-bd88-497d-9696-804c787b73ef
+source-git-commit: 81c78439f7c243437b7b76dc80560c847af95ace
 workflow-type: tm+mt
 source-wordcount: '392'
 ht-degree: 0%

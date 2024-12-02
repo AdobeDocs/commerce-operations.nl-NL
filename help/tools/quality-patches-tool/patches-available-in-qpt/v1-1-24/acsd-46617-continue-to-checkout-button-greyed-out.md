@@ -1,9 +1,10 @@
 ---
-title: 'ACSD-46617: **[!UICONTROL Continue to Checkout]** knoop grayed out when subtotal greater than configured minimum order amount'
+title: 'ACSD-46617: **[!UICONTROL Continue to Checkout] ** knoop grayed uit wanneer subtotaal groter dan gevormde minimumordehoeveelheid'
 description: Pas ACSD-46617 flard toe om de kwestie van Adobe Commerce op te lossen waar de **[!UICONTROL Continue to Checkout] ** knoop uit grayed is zelfs als subtotal groter is dan de gevormde minimumordehoeveelheid.
 feature: Checkout, Orders
 role: Admin
-source-git-commit: fe11599dbef283326db029b0312ad290cde0ba0a
+exl-id: 8e808fce-d31c-49ef-94e5-f5c89fffaa73
+source-git-commit: 81c78439f7c243437b7b76dc80560c847af95ace
 workflow-type: tm+mt
 source-wordcount: '428'
 ht-degree: 0%

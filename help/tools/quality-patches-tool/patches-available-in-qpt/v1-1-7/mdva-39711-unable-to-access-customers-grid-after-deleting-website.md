@@ -3,7 +3,8 @@ title: 'MDVA-39711: Kan geen toegang krijgen tot het klantenraster nadat de webs
 description: De MDVA-39711-patch verhelpt het probleem waarbij de Admin-gebruiker na het verwijderen van de website geen toegang heeft tot het raster van de klant. Deze patch is beschikbaar wanneer [Quality Patches Tool (QPT)] (https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/announcements/commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches) 1.1.7 is geïnstalleerd. De patch-id is MDVA-39711. De kwestie is opgelost in Adobe Commerce 2.4.3.
 feature: Configuration
 role: Admin
-source-git-commit: 7f17f1b286f635b8f65ac877e9de5f1d1a6a6461
+exl-id: 7ddca2e7-86f5-4ffd-9c00-ea4c511ab663
+source-git-commit: 81c78439f7c243437b7b76dc80560c847af95ace
 workflow-type: tm+mt
 source-wordcount: '416'
 ht-degree: 0%

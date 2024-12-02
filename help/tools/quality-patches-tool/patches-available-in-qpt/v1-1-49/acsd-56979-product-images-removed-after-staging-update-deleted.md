@@ -1,9 +1,10 @@
 ---
-title: 'ACSD-56979: Productafbeeldingen die zijn verwijderd nadat de testupdate is verwijderd'
+title: 'ACSD-56979: Productafbeeldingen die zijn verwijderd na het stapelen van de update verwijderd'
 description: Pas de ACSD-56979-patch toe om het Adobe Commerce-probleem op te lossen waarbij productafbeeldingen worden verwijderd nadat een testupdate is verwijderd
 feature: Products
 role: Admin, Developer
-source-git-commit: fe11599dbef283326db029b0312ad290cde0ba0a
+exl-id: 1e0fbd5c-285b-408e-ba52-72619e29167b
+source-git-commit: 81c78439f7c243437b7b76dc80560c847af95ace
 workflow-type: tm+mt
 source-wordcount: '369'
 ht-degree: 0%

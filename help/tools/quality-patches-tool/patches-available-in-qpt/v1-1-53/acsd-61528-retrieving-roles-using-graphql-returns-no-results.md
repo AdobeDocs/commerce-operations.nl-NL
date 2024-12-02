@@ -1,9 +1,10 @@
 ---
-title: "ACSD-61528: Het ophalen van rollen met GraphQL retourneert geen resultaten"
+title: 'ACSD-61528: Het ophalen van rollen met GraphQL retourneert geen resultaten'
 description: Pas de ACSD-61528-patch toe om het Adobe Commerce-probleem op te lossen, waarbij het ophalen van rollen van de beheerder van het bedrijf met GraphQL altijd een null-resultaat oplevert.
 feature: GraphQL, B2B, Companies, Roles/Permissions
 role: Admin, Developer
-source-git-commit: 4a02bb524fd8d1caae02d909bc9f2e3fc0112042
+exl-id: 81d78746-e723-4b18-860c-d973158b469c
+source-git-commit: e6ba48b10918437df8846992d435d65db0669eda
 workflow-type: tm+mt
 source-wordcount: '316'
 ht-degree: 0%

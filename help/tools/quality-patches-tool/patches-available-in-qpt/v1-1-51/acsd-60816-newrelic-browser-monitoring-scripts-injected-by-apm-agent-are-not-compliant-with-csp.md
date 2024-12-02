@@ -1,9 +1,10 @@
 ---
-title: "ACSD-60816: [!DNL New Relic]  browser die manuscripten controleert door de agent van APM worden ingespoten is niet volgzaam met CSP"
+title: 'ACSD-60816: [!DNL New Relic]  browser die manuscripten controleert door de agent van APM worden ingespoten is niet volgzaam met CSP'
 description: Pas ACSD-60816 flard toe om de kwestie van Adobe Commerce te bevestigen waar  [!DNL New Relic]  browser die manuscripten controleert die door de agent APM worden ingespoten niet volgzaam met het Beleid van de Veiligheid van de Inhoud (CSP) zijn, die hun uitvoering verhinderen.
 feature: Tools and External Services, Checkout
 role: Admin, Developer
-source-git-commit: 278cc668a9d6746a38845e54d173260e1a65bb22
+exl-id: d03c25e0-ed25-4877-8470-737d3499473f
+source-git-commit: 81c78439f7c243437b7b76dc80560c847af95ace
 workflow-type: tm+mt
 source-wordcount: '343'
 ht-degree: 0%

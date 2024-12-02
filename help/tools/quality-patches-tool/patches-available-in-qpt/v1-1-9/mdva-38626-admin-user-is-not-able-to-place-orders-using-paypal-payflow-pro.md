@@ -1,9 +1,10 @@
 ---
-title: 'MDVA-38626: Admin user is unable to place orders using PayPal Payflow Pro'
+title: 'MDVA-38626: Admin-gebruiker kan geen orders plaatsen met PayPal Payflow Pro'
 description: De MDVA-38626-patch lost het probleem op waarbij de beheerder geen bestelling op de achtergrond kan plaatsen met de PayPal Payflow Pro-betalingsmethode. Deze patch is beschikbaar wanneer [Quality Patches Tool (QPT)] (https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/announcements/commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches) 1.1.9 is geïnstalleerd. De patch-id is MDVA-38626. Het probleem wordt volgens de planning opgelost in Adobe Commerce 2.4.5.
 feature: Admin Workspace, Orders, Payments
 role: Admin
-source-git-commit: 7f17f1b286f635b8f65ac877e9de5f1d1a6a6461
+exl-id: 32d2e5dd-7081-42f2-a074-71e21c870dc2
+source-git-commit: 81c78439f7c243437b7b76dc80560c847af95ace
 workflow-type: tm+mt
 source-wordcount: '419'
 ht-degree: 0%

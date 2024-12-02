@@ -1,9 +1,10 @@
 ---
-title: 'ACSD-49748: uitnodigingen via e-mail kunnen niet worden verzonden'
+title: 'ACSD-49748: e-mailuitnodigingen kunnen niet worden verzonden'
 description: Pas de ACSD-49748-patch toe om het Adobe Commerce-probleem op te lossen, waarbij gebruikers geen uitnodigingen via e-mail kunnen verzenden.
 feature: Admin Workspace, Communications, Marketing Tools
 role: Admin
-source-git-commit: fe11599dbef283326db029b0312ad290cde0ba0a
+exl-id: 03dad66c-4691-421e-8c80-eca12c60175c
+source-git-commit: 81c78439f7c243437b7b76dc80560c847af95ace
 workflow-type: tm+mt
 source-wordcount: '308'
 ht-degree: 0%
@@ -60,4 +61,3 @@ Meer informatie over [!DNL Quality Patches Tool] vindt u in:
 
 * [[!DNL Quality Patches Tool]  vrijgegeven: een nieuw hulpmiddel om kwaliteitspatches ](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/announcements/commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches) in de steunkennisbasis zelf-te dienen.
 * [ Controle als het flard voor uw kwestie van Adobe Commerce beschikbaar is gebruikend  [!DNL Quality Patches Tool]](/help/tools/quality-patches-tool/patches-available-in-qpt/check-patch-for-magento-issue-with-magento-quality-patches.md) in de [!UICONTROL Quality Patches Tool] gids.
-

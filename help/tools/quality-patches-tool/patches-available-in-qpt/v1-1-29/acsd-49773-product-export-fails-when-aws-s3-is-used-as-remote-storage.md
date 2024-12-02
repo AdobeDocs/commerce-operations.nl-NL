@@ -1,9 +1,10 @@
 ---
-title: 'ACSD-49773: Exporteren van producten mislukt wanneer AWS S3 wordt gebruikt als externe opslag'
+title: 'ACSD-49773: Het exporteren van producten mislukt wanneer AWS S3 wordt gebruikt als externe opslag'
 description: Pas de ACSD-49773-patch toe om het Adobe Commerce-probleem op te lossen waarbij het exporteren van het product mislukt wanneer AWS S3 wordt gebruikt als externe opslag.
 feature: Data Import/Export, Iaas, Products, Storage
 role: Admin
-source-git-commit: 809defe75d7b218d8085f85ff815472a531040cf
+exl-id: 82f1299f-52b6-4f87-b01c-072d1661c022
+source-git-commit: 81c78439f7c243437b7b76dc80560c847af95ace
 workflow-type: tm+mt
 source-wordcount: '368'
 ht-degree: 0%

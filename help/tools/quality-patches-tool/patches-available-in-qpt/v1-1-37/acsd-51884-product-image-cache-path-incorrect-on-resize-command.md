@@ -3,7 +3,8 @@ title: 'ACSD-51884: Pad naar cache van productafbeelding is onjuist voor opdrach
 description: Pas de ACSD-51884-patch toe om het Adobe Commerce-probleem op te lossen, waarbij het cachepad voor de productafbeelding onjuist wordt nadat de opdracht resize is uitgevoerd.
 feature: Products
 role: Admin
-source-git-commit: fe11599dbef283326db029b0312ad290cde0ba0a
+exl-id: a3779e4b-2749-460e-a0a8-656b26bb06fa
+source-git-commit: 81c78439f7c243437b7b76dc80560c847af95ace
 workflow-type: tm+mt
 source-wordcount: '369'
 ht-degree: 0%

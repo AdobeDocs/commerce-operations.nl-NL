@@ -3,13 +3,13 @@ title: 'ACSD-61103: Aantal mislukte pogingen wordt niet opnieuw ingesteld op nul
 description: Pas ACSD-61103 flard toe om de kwestie van Adobe Commerce te bevestigen waar de mislukkingstelling in de lijst ` customer_entity ` niet aan nul wordt teruggesteld nadat een klant met succes door API eindpunten het programma opent.
 feature: GraphQL, REST, Customers
 role: Admin, Developer
-source-git-commit: d53b747c3b2021e842647de5371a5f0f2a760f09
+exl-id: 9f5aac1f-c8a3-4255-8ebc-2268283b3384
+source-git-commit: acb5ff9656d7391de1e9b936909ce5a8a73d5d67
 workflow-type: tm+mt
 source-wordcount: '379'
 ht-degree: 0%
 
 ---
-
 
 # ACSD-61103: Aantal mislukte pogingen wordt niet opnieuw ingesteld op nul nadat de klant zich heeft aangemeld via de API
 
@@ -61,4 +61,3 @@ Om individuele flarden toe te passen, gebruik de volgende verbindingen afhankeli
 Meer informatie over [!DNL Quality Patches Tool] vindt u in:
 
 * [[!DNL Quality Patches Tool]: Een zelfbedieningshulpmiddel voor kwaliteitspatches ](/help/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches.md) in de gids van Hulpmiddelen.
-

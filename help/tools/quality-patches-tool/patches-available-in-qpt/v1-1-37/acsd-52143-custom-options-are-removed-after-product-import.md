@@ -1,9 +1,10 @@
 ---
-title: 'ACSD-52143: aangepaste opties worden verwijderd na het importeren van het product'
+title: 'ACSD-52143: na het importeren van het product worden de aangepaste opties verwijderd'
 description: Pas de ACSD-52143-patch toe om het Adobe Commerce-probleem op te lossen, waarbij de aanpassingsopties worden verwijderd nadat het product is geïmporteerd.
 feature: Data Import/Export
 role: Admin, Developer
-source-git-commit: fe11599dbef283326db029b0312ad290cde0ba0a
+exl-id: 630fffa7-012c-4539-9745-9a34571bd2eb
+source-git-commit: 81c78439f7c243437b7b76dc80560c847af95ace
 workflow-type: tm+mt
 source-wordcount: '369'
 ht-degree: 0%

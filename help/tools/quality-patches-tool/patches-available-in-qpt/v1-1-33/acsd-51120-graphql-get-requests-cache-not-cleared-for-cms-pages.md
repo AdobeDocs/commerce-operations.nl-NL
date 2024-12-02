@@ -1,7 +1,8 @@
 ---
-title: 'ACSD-51120: GraphQL GET request cache not clear for CMS pages that contain CMS block'
+title: 'ACSD-51120: GraphQL GET request cache is niet gewist voor CMS-pagina''s die CMS-blokken bevatten'
 description: Pas de ACSD-51120-patch toe om het Adobe Commerce-probleem op te lossen waarbij de GraphQL-GET-aanvraagcache niet wordt gewist voor CMS-pagina's die CMS-blokken bevatten.
-source-git-commit: fe11599dbef283326db029b0312ad290cde0ba0a
+exl-id: e1b84db0-2441-4729-aeeb-8486a623aebf
+source-git-commit: 81c78439f7c243437b7b76dc80560c847af95ace
 workflow-type: tm+mt
 source-wordcount: '414'
 ht-degree: 0%

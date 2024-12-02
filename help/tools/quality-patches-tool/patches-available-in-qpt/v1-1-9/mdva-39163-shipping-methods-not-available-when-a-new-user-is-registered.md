@@ -1,9 +1,10 @@
 ---
-title: "MDVA-39163: Verzendmethoden die niet beschikbaar zijn voor nieuwe geregistreerde gebruikers met producten van gastsessies"
+title: 'MDVA-39163: Verzendmethoden niet beschikbaar voor nieuwe geregistreerde gebruikers met producten van gastsessies'
 description: Met de MDVA-39163-patch wordt het probleem opgelost waarbij de verzendmethoden niet beschikbaar zijn wanneer een nieuwe gebruiker wordt geregistreerd en producten in de winkelwagen afkomstig zijn van de gastsessie. Deze patch is beschikbaar wanneer [Quality Patches Tool (QPT)] (https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/announcements/commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches) 1.1.9 is geïnstalleerd. De patch-id is MDVA-39163. Het probleem wordt volgens de planning opgelost in Adobe Commerce 2.4.5.
 feature: CMS, Marketing Tools, Orders, Products, Shipping/Delivery
 role: Admin
-source-git-commit: 7f17f1b286f635b8f65ac877e9de5f1d1a6a6461
+exl-id: 781b466b-7d8f-4ad1-9fb4-5404cd02f7d8
+source-git-commit: 81c78439f7c243437b7b76dc80560c847af95ace
 workflow-type: tm+mt
 source-wordcount: '579'
 ht-degree: 0%

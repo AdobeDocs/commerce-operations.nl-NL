@@ -3,7 +3,8 @@ title: 'ACSD-58375: onjuist geconfigureerde YouTube API-sleutel veroorzaakt een 
 description: Pas de ACSD-58375-patch toe om het Adobe Commerce-probleem op te lossen waarbij een onjuiste configuratie van de YouTube API-sleutel een fout veroorzaakt bij het toevoegen van een YouTube-video op het niveau van de winkelweergave.
 feature: Catalog Management, Configuration
 role: Admin, Developer
-source-git-commit: fe11599dbef283326db029b0312ad290cde0ba0a
+exl-id: 24187308-d9dc-4ce2-9cfa-70ccb7726a5b
+source-git-commit: 81c78439f7c243437b7b76dc80560c847af95ace
 workflow-type: tm+mt
 source-wordcount: '408'
 ht-degree: 0%

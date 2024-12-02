@@ -1,9 +1,10 @@
 ---
-title: "ACSD-60673: [!UICONTROL Cart Price Rule] uitgave is gecorrigeerd voor meerdere betalingsmethoden bij kassa"
+title: 'ACSD-60673: [!UICONTROL Cart Price Rule] probleem opgelost voor meerdere betalingsmethoden bij afhandeling'
 description: Pas de ACSD-60673-patch toe om het Adobe Commerce-probleem op te lossen, waarbij de kortingen van een [!UICONTROL Cart Price Rule] die een betalingsmethode gebruiken, niet altijd in de totalen worden vermeld.
 feature: Price Rules
 role: Admin, Developer
-source-git-commit: 9334b0bb7aa32cd14622c6dcef799dffe7e35fdc
+exl-id: 2fe27959-5e5f-4d25-9f56-b0f8319fd562
+source-git-commit: 81c78439f7c243437b7b76dc80560c847af95ace
 workflow-type: tm+mt
 source-wordcount: '428'
 ht-degree: 0%

@@ -1,5 +1,5 @@
 ---
-title: "ACSD-44938: VAT_ID kan niet in  [!DNL GraphQL]  verzoek voor gastgebruiker worden toegepast"
+title: 'ACSD-44938: VAT_ID kan niet in  [!DNL GraphQL]  verzoek voor gastgebruiker worden toegepast'
 description: ACSD-44938 flardfixes de kwestie waar ` VAT_ID ` niet in a  [!DNL GraphQL]  verzoek voor een gastgebruiker kan worden toegepast. Deze patch is beschikbaar wanneer [Quality Patches Tool (QPT)] (https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/announcements/commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches) 1.1.18 is geïnstalleerd. De patch-id is ACSD-44938. Het probleem wordt volgens de planning opgelost in Adobe Commerce 2.4.6.
 feature: Admin Workspace, GraphQL
 role: Admin

@@ -1,9 +1,10 @@
 ---
-title: "ACSD-49464: facturen, overbrengingen en creditnota's niet terug van archief"
+title: 'ACSD-49464: facturen, overbrengingen en creditnota''s niet van archief worden verplaatst'
 description: Pas de ACSD-49464-patch toe om het Adobe Commerce-probleem op te lossen, waarbij facturen, verzendingen en creditnota's niet uit het archief worden verplaatst wanneer de orderId anders is.
 feature: Admin Workspace, Invoices, Orders, Returns, Shipping/Delivery
 role: Admin
-source-git-commit: fe11599dbef283326db029b0312ad290cde0ba0a
+exl-id: d9ccd043-cbd3-4be5-ab29-c5351da53030
+source-git-commit: 81c78439f7c243437b7b76dc80560c847af95ace
 workflow-type: tm+mt
 source-wordcount: '425'
 ht-degree: 0%

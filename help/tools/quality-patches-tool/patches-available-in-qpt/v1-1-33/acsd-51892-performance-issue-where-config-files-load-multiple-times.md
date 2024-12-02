@@ -3,7 +3,8 @@ title: 'ACSD-51892: Prestatieprobleem waarbij configuratiebestanden meerdere ker
 description: Pas de ACSD-51892-patch toe om het probleem met de Adobe Commerce-prestaties op te lossen, waarbij configuratiebestanden tijdens de implementatie meerdere keren worden geladen.
 feature: Observability
 role: Admin
-source-git-commit: fe11599dbef283326db029b0312ad290cde0ba0a
+exl-id: ef3d3b85-b6a0-4037-95c0-e84125fa9088
+source-git-commit: 81c78439f7c243437b7b76dc80560c847af95ace
 workflow-type: tm+mt
 source-wordcount: '377'
 ht-degree: 0%

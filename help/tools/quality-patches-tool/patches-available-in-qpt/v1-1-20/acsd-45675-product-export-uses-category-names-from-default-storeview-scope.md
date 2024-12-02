@@ -1,9 +1,10 @@
 ---
-title: 'ACSD-45675: Bij het exporteren van producten worden categorienamen gebruikt van het standaardweergavebereik van de winkel.'
+title: 'ACSD-45675: Bij het exporteren van producten worden categorienamen gebruikt van het standaardweergavebereik van de winkel'
 description: De ACSD-45675-patch verhelpt het probleem waarbij het exportproduct categorienamen uit het standaardweergavebereik van de winkel gebruikt. Deze patch is beschikbaar wanneer [Quality Patches Tool (QPT)] (https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/announcements/commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches) 1.1.20 is geïnstalleerd. De patch-id is ACSD-45675. Het probleem wordt volgens de planning opgelost in Adobe Commerce 2.4.6.
 feature: Categories, Data Import/Export, Products
 role: Admin
-source-git-commit: fe11599dbef283326db029b0312ad290cde0ba0a
+exl-id: ebe72038-511d-43e1-bd65-e5b468342f05
+source-git-commit: 81c78439f7c243437b7b76dc80560c847af95ace
 workflow-type: tm+mt
 source-wordcount: '429'
 ht-degree: 0%

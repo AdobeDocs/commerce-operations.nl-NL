@@ -3,7 +3,8 @@ title: 'ACSD-49839: De gedeelde catalogusprijzen en -structuur genereren een fou
 description: Pas de ACSD-49839-patch toe om het Adobe Commerce-probleem op te lossen waarbij de prijs en structuur van de gedeelde catalogus een fout in de beheerder veroorzaken wanneer producten enkele of dubbele aanhalingstekens in SKU hebben.
 feature: Admin Workspace, Catalog Management, Categories
 role: Admin
-source-git-commit: fe11599dbef283326db029b0312ad290cde0ba0a
+exl-id: b74e3926-16c8-4222-b642-ed1b7095dea4
+source-git-commit: 81c78439f7c243437b7b76dc80560c847af95ace
 workflow-type: tm+mt
 source-wordcount: '413'
 ht-degree: 0%

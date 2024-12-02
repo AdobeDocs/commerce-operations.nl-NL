@@ -3,7 +3,8 @@ title: 'ACSD-47559: voorbeeld e-mailsjabloon voor e-mail niet volledig zichtbaar
 description: Pas de ACSD-47559-patch toe om het Adobe Commerce-probleem op te lossen waarbij de voorvertoning van de e-mailsjabloon niet volledig zichtbaar is.
 feature: Communications, Marketing Tools, Personalization
 role: Admin
-source-git-commit: fe11599dbef283326db029b0312ad290cde0ba0a
+exl-id: a0bd51e0-990b-47c9-8de0-6071b6f79e54
+source-git-commit: 81c78439f7c243437b7b76dc80560c847af95ace
 workflow-type: tm+mt
 source-wordcount: '328'
 ht-degree: 0%

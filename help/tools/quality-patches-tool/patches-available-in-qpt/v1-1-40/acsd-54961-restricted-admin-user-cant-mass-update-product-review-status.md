@@ -1,9 +1,10 @@
 ---
-title: "ACSD-54961: gebruikers met beperkte beheerdersrechten kunnen geen massaupdate uitvoeren [!UICONTROL Product Review status]"
+title: 'ACSD-54961: gebruikers met beperkte beheerdersrechten kunnen geen massaupdate uitvoeren [!UICONTROL Product Review status]'
 description: Pas de ACSD-54961-patch toe om het Adobe Commerce-probleem op te lossen, waarbij een gebruiker met beperkte bevoegdheden de status Product Review niet massaal kan bijwerken.
 feature: Products
 role: Admin, Developer
-source-git-commit: fe11599dbef283326db029b0312ad290cde0ba0a
+exl-id: d303365c-d7c7-4aca-9f33-75d67bcbe573
+source-git-commit: 81c78439f7c243437b7b76dc80560c847af95ace
 workflow-type: tm+mt
 source-wordcount: '355'
 ht-degree: 0%

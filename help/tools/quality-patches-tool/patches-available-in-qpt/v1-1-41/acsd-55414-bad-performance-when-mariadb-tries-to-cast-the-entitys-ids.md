@@ -3,7 +3,8 @@ title: 'ACSD-55414: Slechte prestaties wanneer MariaDB probeert de machtigys_ids
 description: Pas de ACSD-55414-patch toe om het Adobe Commerce-probleem op te lossen wanneer de MariaDB 'machtigys_ids' probeert om te zetten van string naar integer, wat de herindexering belemmert.
 feature: Attributes
 role: Admin, Developer
-source-git-commit: fe11599dbef283326db029b0312ad290cde0ba0a
+exl-id: 76309cef-559e-4a55-a27b-7d807ef9f74e
+source-git-commit: 81c78439f7c243437b7b76dc80560c847af95ace
 workflow-type: tm+mt
 source-wordcount: '338'
 ht-degree: 0%

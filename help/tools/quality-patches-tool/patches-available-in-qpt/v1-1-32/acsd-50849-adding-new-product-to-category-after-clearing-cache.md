@@ -1,9 +1,10 @@
 ---
-title: 'ACSD-50849: Het toevoegen van een nieuw product na het wissen van de cache resulteert in een onjuiste overeenkomst'
+title: 'ACSD-50849: het toevoegen van een nieuw product na het wissen van de cache resulteert in een onjuiste overeenkomst'
 description: Pas de ACSD-50849-patch toe om het Adobe Commerce-probleem te verhelpen, waarbij het toevoegen van een nieuw product aan de categorie na het wissen van de cache resulteert in een onjuiste weergave van posities en selecties van de bestaande producten.
 feature: Cache, Categories, Products
 role: Admin
-source-git-commit: fe11599dbef283326db029b0312ad290cde0ba0a
+exl-id: e7fd0614-eaa3-48ad-95ff-87f7ad3d76c1
+source-git-commit: 81c78439f7c243437b7b76dc80560c847af95ace
 workflow-type: tm+mt
 source-wordcount: '378'
 ht-degree: 0%
