@@ -2,9 +2,9 @@
 user-guide-title: Gereedschappen
 user-guide-description: Leer meer over de verschillende gereedschappen die u met Adobe Commerce kunt gebruiken, hun gebruik, het installatieproces en hoe u toegang krijgt.
 feature: Configuration
-source-git-commit: 088b9ce70ba89bad4ea82f60093de0e3bf050cf9
+source-git-commit: 8c7b6673ba27b4a36d7bf19722768a4ca24a9955
 workflow-type: tm+mt
-source-wordcount: '6377'
+source-wordcount: '6390'
 ht-degree: 0%
 
 ---
@@ -655,6 +655,7 @@ ht-degree: 0%
          - [ACSD-61528: Het ophalen van rollen met GraphQL retourneert geen resultaten](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-53/acsd-61528-retrieving-roles-using-graphql-returns-no-results.md)
          - [ACSD-48318: Omgevingsnestfout in &quot;system.log&quot;](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-53/acsd-48318-environment-emulation-nesting-error-in-system-log.md)
          - [ACSD-60804: Het bewerken van een klant die is gekoppeld aan een verwijderd bedrijf, resulteert in een fout](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-53/acsd-60804-editing-customer-linked-to-deleted-company-causes-error.md)
+         - [ACSD-61969: vereist om couponcode te typen zoals geconfigureerd in hoofdletters of kleine letters](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-53/acsd-61969-required-type-coupon-code-as-configured-in-uppercase-lowercase.md)
          - [ACSD-61133: verkoop_clean_quotes cron verwijdert aanhalingstekens uit niet-goedgekeurde inkooporders](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-53/acsd-61133-sales-clean-quotes-cron-deletes-quotes-from-unapproved-purchase-orders.md)
          - [ACSD-61667: verbetert de voorraadprestaties voor het creëren van verzendingen](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-53/acsd-61667-improves-inventory-performance-for-creating-shipping.md)
       - v1.1.54 {#v1-1-54}
