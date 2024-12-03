@@ -4,7 +4,7 @@ description: 'De patch MDVA-44887 verhelpt het probleem waarbij de beheerder nie
 feature: Admin Workspace, Orders
 role: Admin
 exl-id: d8cc03c3-35a0-4f00-8ec3-1ba3e100f7ca
-source-git-commit: f6abbbb28a3077f7bf26a393388c5059fcd8c599
+source-git-commit: 81c78439f7c243437b7b76dc80560c847af95ace
 workflow-type: tm+mt
 source-wordcount: '423'
 ht-degree: 0%

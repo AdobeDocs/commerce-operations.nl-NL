@@ -4,7 +4,7 @@ description: Pas de ACSD-48058-patch toe om het Adobe Commerce-probleem op te lo
 feature: Admin Workspace, Orders, Products
 role: Admin
 exl-id: 270e1b5d-75e0-4374-973a-2bb37161ceec
-source-git-commit: f6abbbb28a3077f7bf26a393388c5059fcd8c599
+source-git-commit: 81c78439f7c243437b7b76dc80560c847af95ace
 workflow-type: tm+mt
 source-wordcount: '365'
 ht-degree: 0%

@@ -4,7 +4,7 @@ description: Pas de ACSD-46683-patch toe om het Adobe Commerce-probleem op te lo
 feature: Marketing Tools, Orders, Shipping/Delivery
 role: Admin
 exl-id: ebd79187-2835-403b-945d-80ac34d6fb9c
-source-git-commit: f6abbbb28a3077f7bf26a393388c5059fcd8c599
+source-git-commit: 81c78439f7c243437b7b76dc80560c847af95ace
 workflow-type: tm+mt
 source-wordcount: '478'
 ht-degree: 0%
