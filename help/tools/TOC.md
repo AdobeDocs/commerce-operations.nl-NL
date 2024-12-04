@@ -2,9 +2,9 @@
 user-guide-title: Gereedschappen
 user-guide-description: Leer meer over de verschillende gereedschappen die u met Adobe Commerce kunt gebruiken, hun gebruik, het installatieproces en hoe u toegang krijgt.
 feature: Configuration
-source-git-commit: c03b0b3c81556f1c75ad5259a5905a5dd5b0224e
+source-git-commit: 73953020c85ffb0a941602e1dafe5de6a6175cff
 workflow-type: tm+mt
-source-wordcount: '6425'
+source-wordcount: '6437'
 ht-degree: 0%
 
 ---
@@ -670,6 +670,7 @@ ht-degree: 0%
          - [ACSD-61799: Onjuiste berekening van de totale korting met meerdere regels voor een vast disagio toegepast op de prijsopgave](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-54/acsd-61799-incorrect-total-discount-calculation-with-multiple-fixed-discount-rules.md)
          - [ACSD-62485: async.operations.all stopt de consument met werken wanneer het bedrijf wordt gemaakt](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-54/acsd-62485-async-operations-all-consumer-stops-working-when-company-is-created.md)
          - [ACSD-61845: Fout treedt op bij aanvragen met text/html accepteert header](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-54/acsd-61845-error-occurs-for-requests-with-text-html-accept-header.md)
+         - [ACSD-62056: Het uploaden van images voor configureerbaar product mislukt als MSI is geïnstalleerd](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-54/acsd-62056-image-upload-for-configurable-products-fail-msi-installed.md)
       - v1.1.55 {#v1-1-55}
          - [Overzicht: [!DNL Quality Patches Tool]  (QPT) v1.1.55](/help//tools/quality-patches-tool/patches-available-in-qpt/v1-1-55/overview.md)
          - [ACSD-58828: Het bericht &quot;adres is vereist&quot; aan serverzijde wordt weergegeven voor elk leeg vereist veld, naast validatie aan clientzijde](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-55/acsd-58828-server-side-address-required-message-appears-for-any-empty-required-field-alongside-client-side-validation.md)
