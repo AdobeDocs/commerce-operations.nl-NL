@@ -2,9 +2,9 @@
 title: Opmerkingen bij de release
 description: Meer informatie over de patches die beschikbaar zijn voor Adobe Commerce en de problemen die ze oplossen.
 exl-id: 22262555-f5ea-49ad-98ad-ea8428ef66d5
-source-git-commit: 3f6093b55c7bbfaf8666438ac1fef8f90432d947
+source-git-commit: dd6824c3f030d76e93372b8410e42ac5cd2f04c6
 workflow-type: tm+mt
-source-wordcount: '23125'
+source-wordcount: '23648'
 ht-degree: 0%
 
 ---
@@ -20,6 +20,29 @@ ht-degree: 0%
 >[!INFO]
 >
 >Voor informatie over [!DNL quality patches] die door de Gemeenschap voor Magento Open Source wordt gecreeerd, zie de [ versienota&#39;s ](https://github.com/magento/quality-patches/blob/master/community-release-notes.md).
+
+## v1.1.56 {#v1-1-56}
+
+* **ACSD-63244** (voor Adobe Commerce en Magento Open Source >=2.4.4 &lt;2.4.8) - lost de kwestie op waar een [!DNL JavaScript] fout [!DNL Google Maps] niet correct teruggeeft verhindert. Verhelpt de kwestie waar er vele *Uncaught TypeError zijn: dit._each is geen functie* fouten in de console in het [!UICONTROL Admin] paneel.
+* **ACSD-63242** (voor Adobe Commerce en Magento Open Source >=2.4.6-p8 &lt;2.4.7 || >=2.4.7-p3 &lt;2.4.8) - Het probleem wordt verholpen met trage importbewerkingen wanneer u catalogusproducten met meer dan 10.000 items toevoegt.
+* **ACSD-63062** (voor Adobe Commerce en Magento Open Source >=2.4.7 &lt;2.4.8) - lost de kwestie op waar de onjuiste berekeningen van de wortelkorting voorkomen wanneer de veelvoudige overlappende regels worden toegepast.
+* **ACSD-62979** (voor Adobe Commerce en Magento Open Source >=2.4.4 &lt;2.4.7) - lost de kwestie op waar het gebruiken van verkeerd [!UICONTROL Store ID] in de [!DNL GraphQL] kopbal een fatale geheugenfout veroorzaakt.
+* **ACSD-62971** (voor Adobe Commerce en Magento Open Source >=2.4.4 &lt;2.4.8) - lost de kwestie op waar het invoeren van voorraadbronnen met niet numerieke waarden in de **grootheid** kolom in de **hoeveelheid** die aan *0* wordt geplaatst.
+* **ACSD-62872** (voor Adobe Commerce en Magento Open Source >=2.4.4 &lt;2.4.8) - lost de kwestie met unieke attributenbevestiging op waar de planningupdates verkeerd worden bevestigd.
+* **ACSD-62755** (voor Adobe Commerce en Magento Open Source >=2.4.4-p11 &lt;2.4.5 || >=2.4.5-p10 &lt;2.4.6 || >=2.4.6-p8 &lt;2.4.7 || >=2.4.7-p3 &lt;2.4.8) - Hiermee wordt het probleem verholpen waarbij [!DNL TinyMCE] 7 vereist dat de tekengrootte en het lettertype specifiek worden toegevoegd binnen de initialisatie-instellingen van de editor.
+* **ACSD-62670** (voor Adobe Commerce en Magento Open Source >=2.4.4-p11 &lt;2.4.5 || >=2.4.5-p10 &lt;2.4.6 || >=2.4.6-p8 &lt;2.4.7 || >=2.4.7-p3 &lt;2.4.8) - Hiermee wordt het probleem verholpen waarbij het rapport [!UICONTROL Products Ordered] exporteert naar [!DNL CSV] en [!DNL XML] een fout retourneert.
+* **ACSD-62577** (voor Adobe Commerce en Magento Open Source >=2.4.4 &lt;2.4.8) - lost de kwestie met langzame prestaties van storefront onderzoeksvragen door zowel vraag als lijstindexen te optimaliseren.
+* **ACSD-62475** (voor Adobe Commerce en Magento Open Source >=2.4.7 &lt;2.4.8) - lost de kwestie op waar de [!UICONTROL Gift Card] producten verkeerd in het karretje worden samengevoegd.
+* **ACSD-62428** (voor Adobe Commerce en Magento Open Source >=2.4.6 &lt;2.4.7) - lost de kwestie op waar `is_out_of_stock` aan een onjuiste waarde in de index van het catalogusonderzoek wordt geplaatst wanneer [!DNL SKU] niet als onderzoekbaar attribuut wordt geplaatst.
+* **ACSD-62355** (voor Adobe Commerce en Magento Open Source >=2.4.6 &lt;2.4.8) - verbetert de ladingstijd van het configureerbare product uitgeven pagina wanneer het configureerbare product op vele attributen met vele waarden gebaseerd is.
+* **ACSD-61805** (voor Adobe Commerce en Magento Open Source >=2.4.4 &lt;2.4.8) - lost de kwestie op waar de producten uit voorraad op de storefront na het bijwerken van de backorderstatus via [!DNL REST API] blijven.
+* **ACSD-60811** (voor Adobe Commerce en Magento Open Source >=2.4.7 &lt;2.4.8) - lost de kwestie op waar het bijwerken van ordestatus met een douanewaarde of commentaar slechts mogelijk is als de huidige status of *verwerking* of *fraude* is.
+* **ACSD-62952** (voor Adobe Commerce >=2.4.4 &lt;2.4.8) - lost de kwestie op waar de [!UICONTROL Gift Registry] datum onjuist op de storefront wordt getoond.
+* **ACSD-55339** (voor Adobe Commerce >=2.4.4 &lt;2.4.8) - lost de kwestie op waar een product [!DNL SKU] die met &quot;0&quot;begint (nul) &quot;0&quot;verwijdert, verhinderend het citaat wordt bijgewerkt.
+**
+* Bijgewerkte flarden: **ACSD-59514**
+* Bijgewerkte versies: **ACSD-60816**
+* Vervangen flarden: **ACSD-59967**
 
 ## v1.1.5 {#v1-1-55}
 
