@@ -2,9 +2,9 @@
 user-guide-title: Gereedschappen
 user-guide-description: Leer meer over de verschillende gereedschappen die u met Adobe Commerce kunt gebruiken, hun gebruik, het installatieproces en hoe u toegang krijgt.
 feature: Configuration
-source-git-commit: 46c7053368bfab9c5975c5616be9b67050b93105
+source-git-commit: c03b0b3c81556f1c75ad5259a5905a5dd5b0224e
 workflow-type: tm+mt
-source-wordcount: '6415'
+source-wordcount: '6425'
 ht-degree: 0%
 
 ---
@@ -678,7 +678,8 @@ ht-degree: 0%
          - [ACSD-61785: Het bijwerken van het belonings_warning_notification attribuut niet mogelijk via de mutatie van GraphQL en de vraag van REST API](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-55/acsd-61785-updating-reward-warning-notification-attribute-not-possible-via-graphql.md)
          - [ACSD-58471: Dynamische inhoud kan niet worden geladen op de pagina met productdetails, wanneer catalogusprijsregels volgens planning worden uitgevoerd](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-55/acsd-58471-dynamic-content-fails-load-product-detail-page.md)
          - [ACSD-58383: Dubbele creditnota&#39;s van gelijktijdige terugbetalingsverzoeken via  [!DNL REST API]](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-55/acsd-58383-duplicate-credit-memos-from-simultaneous-refund-requests-via-rest-api.md)
-         - [ACSD-58735: Beperkte beheerders kunnen verlaten winkelwagentjes niet bekijken op klantenaccount voor de bijbehorende website](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-55/acsd-58735-restricted-admin-cant-view-abandoned-shopping-carts.md)
+         - [ACSD-58735: Beperkte beheerders kunnen verlaten winkelwagentjes niet bekijken op klantenaccount voor bijbehorende website](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-55/acsd-58735-restricted-admin-cant-view-abandoned-shopping-carts.md)
+         - [ACSD-60344: dubbele bevestiging van bestelling bij gebruik van [!UICONTROL Purchase Order] met automatische goedkeuring](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-55/acsd-60344-duplicate-order-confirmation-emails-for-purchase-order-with-auto-approval.md)
       - [Patch controleren voor Adobe Commerce-probleem met het gereedschap Kwaliteitspatches](quality-patches-tool/patches-available-in-qpt/check-patch-for-magento-issue-with-magento-quality-patches.md)
 
 - Verwijzing naar opdrachtregelprogramma&#39;s {#cli-reference}
