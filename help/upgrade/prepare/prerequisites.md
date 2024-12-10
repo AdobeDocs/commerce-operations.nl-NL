@@ -2,9 +2,9 @@
 title: Volledige voorwaarden
 description: Bereid uw Adobe Commerce-project voor op een upgrade door deze vereiste stappen uit te voeren.
 exl-id: f7775900-1d10-4547-8af0-3d1283d9b89e
-source-git-commit: fb449f0ee7d503d0c7ba60bf6bfbe3f528060606
+source-git-commit: 4c84710da62fbb31214a0de2adc8adbd68880a76
 workflow-type: tm+mt
-source-wordcount: '1604'
+source-wordcount: '1612'
 ht-degree: 0%
 
 ---
@@ -229,11 +229,11 @@ Resultaten die vergelijkbaar zijn met het volgende, moeten worden weergegeven:
 
 Een ander symptoom van niet-actieve kroon is de volgende fout in de Admin:
 
-![](../../assets/upgrade-guide/cron-not-running.png)
+![ de berichten van het Systeem - krong loopt niet ](../../assets/upgrade-guide/cron-not-running.png)
 
 Om de fout te zien, klik **Berichten van het Systeem** bij de bovenkant van het venster als volgt:
 
-![](../../assets/upgrade-guide/system-messages.png)
+![ de berichten van het Systeem bericht ](../../assets/upgrade-guide/system-messages.png)
 
 Zie [ uitsnede ](../../configuration/cli/configure-cron-jobs.md) voor meer informatie vormen en in werking stellen.
 
