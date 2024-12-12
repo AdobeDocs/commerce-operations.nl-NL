@@ -3,16 +3,16 @@ title: 'ACSD-56760: Admin-gebruiker is beperkt tot een specifieke website en kan
 description: Pas de ACSD-56760-patch toe om het Adobe Commerce-probleem op te lossen waarbij de Admin-gebruiker die beperkt is tot een specifieke website en geen nieuwe producten in een categorie kan sorteren of toevoegen als de webwinkel een eigen hoofdcategorie heeft.
 role: Admin
 exl-id: 2d75164e-c463-4e1a-aa6f-f420dbe0aaeb
-source-git-commit: 81c78439f7c243437b7b76dc80560c847af95ace
+source-git-commit: 881d33089b15b78583e09b79e93a3f78f38bc2ca
 workflow-type: tm+mt
-source-wordcount: '495'
+source-wordcount: '459'
 ht-degree: 0%
 
 ---
 
 # ACSD-56760: Admin-gebruiker is beperkt tot een specifieke website en kan nieuwe producten niet sorteren of toevoegen
 
-De ACSD-56760-patch verhelpt het probleem waarbij de Admin-gebruiker die beperkt is tot een specifieke website en geen nieuwe producten in een categorie kan sorteren of toevoegen als de webwinkel een eigen hoofdcategorie heeft. Deze patch is beschikbaar wanneer [!DNL Quality Patches Tool (QPT)] 1.1.47 is geïnstalleerd. De patch-id is ACSD-56760. Het probleem wordt volgens de planning opgelost in Adobe Commerce 2.4.7.
+De ACSD-56760-patch verhelpt het probleem waarbij de Admin-gebruiker die beperkt is tot een specifieke website en geen nieuwe producten in een categorie kan sorteren of toevoegen als de webwinkel een eigen hoofdcategorie heeft. Deze patch is beschikbaar wanneer [[!DNL Quality Patches Tool (QPT)]](/help/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches.md) 1.1.47 is geïnstalleerd. De patch-id is ACSD-56760. Het probleem wordt volgens de planning opgelost in Adobe Commerce 2.4.8-beta1.
 
 ## Betrokken producten en versies
 
@@ -69,8 +69,4 @@ Om individuele flarden toe te passen, gebruik de volgende verbindingen afhankeli
 
 Meer informatie over [!DNL Quality Patches Tool] vindt u in:
 
-* [[!DNL Quality Patches Tool]  vrijgegeven: een nieuw hulpmiddel om kwaliteitspatches ](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/announcements/commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches) in de steunkennisbasis zelf-te dienen.
-* [ Controle als het flard voor uw kwestie van Adobe Commerce beschikbaar is gebruikend  [!DNL Quality Patches Tool]](/help/tools/quality-patches-tool/patches-available-in-qpt/check-patch-for-magento-issue-with-magento-quality-patches.md) in de [!UICONTROL Quality Patches Tool] gids.
-
-
-Voor informatie over andere flarden beschikbaar in QPT, verwijs naar [[!DNL Quality Patches Tool]: Onderzoek naar flarden ](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html) in de [!DNL Quality Patches Tool] gids.
+* [[!DNL Quality Patches Tool]: Een zelfbedieningshulpmiddel voor kwaliteitspatches ](/help/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches.md) in de gids van Hulpmiddelen.
