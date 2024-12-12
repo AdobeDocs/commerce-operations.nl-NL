@@ -1,16 +1,21 @@
 ---
-title: 'ACSD-52801: query voor GraphQL-productfilter waarbij resultaten van gedeeltelijke overeenkomsten niet worden weergegeven'
+title: 'ACSD-52801: GraphQL-productfilterquery geeft resultaten van gedeeltelijke overeenkomsten niet weer'
 description: Pas de ACSD-52801-patch toe om het Adobe Commerce-probleem op te lossen, waarbij de GraphQL-productfilterquery geen resultaten van gedeeltelijke overeenkomst weergeeft.
 feature: Products
 role: Admin, Developer
-source-git-commit: fe11599dbef283326db029b0312ad290cde0ba0a
+exl-id: 946a7189-60b2-4812-92ca-ed7ba35b2488
+source-git-commit: ec05b041c7af477abd6d3ade6ea95fed5065f2fa
 workflow-type: tm+mt
-source-wordcount: '350'
+source-wordcount: '385'
 ht-degree: 0%
 
 ---
 
 # ACSD-52801: GraphQL-productfilterquery geeft resultaten van gedeeltelijke overeenkomsten niet weer
+
+>[!NOTE]
+>
+>Een bijgewerkt flard ([ ACSD-62332 ](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-55/acsd-62332-product-listing-graphql-query-limit-plus-live-search-current-page.md)) is vrijgegeven om de zelfde kwestie voor versies 2.4.6 - 2.4.6-p8 op te lossen. Het vervangt de ACSD-52801-patch voor versies 2.4.6. Voor meer details, zie [ ACSD-62332 ](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-55/acsd-62332-product-listing-graphql-query-limit-plus-live-search-current-page.md).
 
 De ACSD-52801-patch verhelpt het probleem waarbij de GraphQL-productfilterquery geen resultaten toont die gedeeltelijk overeenkomen. Deze patch is beschikbaar wanneer [[!DNL Quality Patches Tool (QPT)] ](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/announcements/commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches) 1.1.40 wordt geïnstalleerd. De patch-id is ACSD-52801. De kwestie is opgelost in Adobe Commerce 2.4.7.
 

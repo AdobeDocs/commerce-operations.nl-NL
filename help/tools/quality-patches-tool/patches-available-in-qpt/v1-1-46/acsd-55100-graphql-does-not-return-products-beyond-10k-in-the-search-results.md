@@ -4,14 +4,18 @@ description: Pas de ACSD-55100-patch toe om het Adobe Commerce-probleem op te lo
 feature: GraphQL, Products, Search
 role: Admin, Developer
 exl-id: f08b62b9-ed56-4eca-b7e7-6e2bd99df01f
-source-git-commit: 81c78439f7c243437b7b76dc80560c847af95ace
+source-git-commit: ec05b041c7af477abd6d3ade6ea95fed5065f2fa
 workflow-type: tm+mt
-source-wordcount: '467'
+source-wordcount: '491'
 ht-degree: 0%
 
 ---
 
 # ACSD-55100: [!DNL GraphQL] retourneert geen producten van meer dan 10 kB in zoekresultaten
+
+>[!NOTE]
+>
+>Een bijgewerkt flard ([ ACSD-62332 ](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-55/acsd-62332-product-listing-graphql-query-limit-plus-live-search-current-page.md)) is vrijgegeven om de zelfde kwestie voor versies 2.4.6 - 2.4.6-p8 op te lossen. Voor meer details, zie [ ACSD-62332 ](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-55/acsd-62332-product-listing-graphql-query-limit-plus-live-search-current-page.md).
 
 ACSD-55100 herstelt de flard waar [!DNL GraphQL] geen producten voorbij *10k* in de onderzoeksresultaten terugkeert. Deze patch is beschikbaar wanneer [[!DNL Quality Patches Tool (QPT)] ](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/announcements/commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches) 1.1.46 wordt geïnstalleerd. De patch-id is ACSD-55100. Het probleem wordt volgens de planning opgelost in Adobe Commerce 2.4.7.
 
