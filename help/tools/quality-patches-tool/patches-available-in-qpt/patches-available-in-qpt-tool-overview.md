@@ -3,7 +3,8 @@ title: Overzicht van de beschikbare patches in het gereedschap QPT
 description: Dit artikel verstrekt een overzicht van  [!DNL Quality Patches Tool]  (QPT) en verbindingen aan middelen die verklaren hoe te om het te gebruiken.
 feature: Support, Tools and External Services
 role: Admin
-source-git-commit: fe11599dbef283326db029b0312ad290cde0ba0a
+exl-id: e67e5823-d878-4efc-90af-c7bb8c59d654
+source-git-commit: 32800bcca9174eb09ff7a723bdc775ebaa569807
 workflow-type: tm+mt
 source-wordcount: '376'
 ht-degree: 0%
@@ -50,7 +51,7 @@ De installatie- en gebruiksopdrachten verschillen voor Adobe Commerce op locatie
 
 ### QPT voor Adobe Commerce installeren en gebruiken op locatie
 
-Gelieve te verwijzen naar [ Commerce > Hulpmiddelen > Gebruik ](/help/tools/quality-patches-tool/usage.md) in onze ontwikkelaarsdocumentatie voor details op hoe te om QPT voor het toepassen van en het terugkeren van flarden te installeren en te gebruiken.
+Gelieve te verwijzen naar [ Commerce > Hulpmiddelen > Gebruik ](../usage.md) in onze ontwikkelaarsdocumentatie voor details op hoe te om QPT voor het toepassen van en het terugkeren van flarden te installeren en te gebruiken.
 
 ### QPT voor Adobe Commerce installeren en gebruiken op cloudinfrastructuur
 
