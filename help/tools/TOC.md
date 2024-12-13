@@ -2,9 +2,9 @@
 user-guide-title: Gereedschappen
 user-guide-description: Leer meer over de verschillende gereedschappen die u met Adobe Commerce kunt gebruiken, hun gebruik, het installatieproces en hoe u toegang krijgt.
 feature: Configuration
-source-git-commit: a7018909caf8147696a81afead8526946d076223
+source-git-commit: 21a0dbfdb679a35d79f001f78c921aed8441f0d4
 workflow-type: tm+mt
-source-wordcount: '6506'
+source-wordcount: '6523'
 ht-degree: 0%
 
 ---
@@ -682,6 +682,7 @@ ht-degree: 0%
          - [ACSD-58471: Dynamische inhoud kan niet worden geladen op de pagina met productdetails, wanneer catalogusprijsregels volgens planning worden uitgevoerd](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-55/acsd-58471-dynamic-content-fails-load-product-detail-page.md)
          - [ACSD-58383: Dubbele creditnota&#39;s van gelijktijdige terugbetalingsverzoeken via  [!DNL REST API]](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-55/acsd-58383-duplicate-credit-memos-from-simultaneous-refund-requests-via-rest-api.md)
          - [ACSD-58735: Beperkte beheerders kunnen verlaten winkelwagentjes niet bekijken op klantenaccount voor bijbehorende website](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-55/acsd-58735-restricted-admin-cant-view-abandoned-shopping-carts.md)
+         - [ACSD-62793: Datetime-kenmerken bij exporteren van ontbrekende tijdcomponent. Indien [!UICONTROL Fields Enclosure] ingeschakeld, worden ook kenmerkwaarden tussen dubbele aanhalingstekens weergegeven](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-55/acsd-62793-datetime-attributes-exports-missing-time-component-and-fields-enclosure-enabled-attribute-values-enclosed-within-double-quotes.md)
          - [ACSD-60344: dubbele bevestiging van bestelling bij gebruik van [!UICONTROL Purchase Order] met automatische goedkeuring](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-55/acsd-60344-duplicate-order-confirmation-emails-for-purchase-order-with-auto-approval.md)
          - [ACSD-62332: De vraag van GraphQL van de lijst van het product beperkt tot 10.000 producten en  [!DNL Live Search]  plaatst huidige pagina aan 1](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-55/acsd-62332-product-listing-graphql-query-limit-plus-live-search-current-page.md)
       - v1.1.56 {#v1-1-56}
