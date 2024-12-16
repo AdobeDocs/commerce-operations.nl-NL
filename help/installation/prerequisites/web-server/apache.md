@@ -2,7 +2,7 @@
 title: Apache
 description: Voer de volgende stappen uit om de Apache-webserver voor installaties op locatie van Adobe Commerce te installeren en te configureren.
 exl-id: a9a394c9-389f-42ef-9029-dd22c979cfb8
-source-git-commit: ca8dc855e0598d2c3d43afae2e055aa27035a09b
+source-git-commit: f8c5d714a4e96d0508f745d1b7617696c8cc94a7
 workflow-type: tm+mt
 source-wordcount: '759'
 ht-degree: 0%
@@ -26,7 +26,7 @@ Adobe Commerce ondersteunt Apache 2.4.x.
 
 ## Apache herschrijft en opent
 
-Dit onderwerp bespreekt hoe te om Apache 2.4 toe te laten herschrijft en specificeert het plaatsen voor het [ verdeelde configuratiedossier, `.htaccess` ](https://httpd.apache.org/docs/current/howto/htaccess.html).
+Dit onderwerp bespreekt hoe te om Apache 2.4 toe te laten herschrijft en specificeert het plaatsen voor het [ verdeelde configuratiedossier, `.htaccess` ](https://github.com/magento/magento2/blob/2.4-develop/.htaccess.sample).
 
 Adobe Commerce gebruikt herschrijvingen op de server en `.htaccess` voor instructies op directoryniveau voor Apache. De volgende instructies zijn ook inbegrepen in alle andere secties in dit onderwerp.
 
