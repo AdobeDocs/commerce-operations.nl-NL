@@ -2,9 +2,9 @@
 user-guide-title: Gereedschappen
 user-guide-description: Leer meer over de verschillende gereedschappen die u met Adobe Commerce kunt gebruiken, hun gebruik, het installatieproces en hoe u toegang krijgt.
 feature: Configuration
-source-git-commit: 21a0dbfdb679a35d79f001f78c921aed8441f0d4
+source-git-commit: 152b51d45303b29a1d3d378af0e9fc8b02bbb6aa
 workflow-type: tm+mt
-source-wordcount: '6523'
+source-wordcount: '6531'
 ht-degree: 0%
 
 ---
@@ -685,6 +685,7 @@ ht-degree: 0%
          - [ACSD-62793: Datetime-kenmerken bij exporteren van ontbrekende tijdcomponent. Indien [!UICONTROL Fields Enclosure] ingeschakeld, worden ook kenmerkwaarden tussen dubbele aanhalingstekens weergegeven](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-55/acsd-62793-datetime-attributes-exports-missing-time-component-and-fields-enclosure-enabled-attribute-values-enclosed-within-double-quotes.md)
          - [ACSD-60344: dubbele bevestiging van bestelling bij gebruik van [!UICONTROL Purchase Order] met automatische goedkeuring](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-55/acsd-60344-duplicate-order-confirmation-emails-for-purchase-order-with-auto-approval.md)
          - [ACSD-62332: De vraag van GraphQL van de lijst van het product beperkt tot 10.000 producten en  [!DNL Live Search]  plaatst huidige pagina aan 1](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-55/acsd-62332-product-listing-graphql-query-limit-plus-live-search-current-page.md)
+         - [ACSD-62591: Thema schakelt niet naar behoren wanneer [!UICONTROL User Agent Rules] is geconfigureerd](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-55/acsd-62591-fixes-theme-doesnt-switch.md)
       - v1.1.56 {#v1-1-56}
          - [Overzicht: [!DNL Quality Patches Tool]  (QPT) v1.1.56](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-56/overview.md)
          - [ACSD-63242: langzaam importeren bij het toevoegen van meer dan 10.000 catalogusproducten](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-56/acsd-63242-slow-import-when-adding-catalog-products.md)
