@@ -2,9 +2,9 @@
 user-guide-title: Gereedschappen
 user-guide-description: Leer meer over de verschillende gereedschappen die u met Adobe Commerce kunt gebruiken, hun gebruik, het installatieproces en hoe u toegang krijgt.
 feature: Configuration
-source-git-commit: f8541ffca30199ab6f6409d79753c65e31fb13f6
+source-git-commit: 5e705bd71b9229e7040ed3c8fccd8057512ac710
 workflow-type: tm+mt
-source-wordcount: '6578'
+source-wordcount: '6582'
 ht-degree: 0%
 
 ---
@@ -696,7 +696,8 @@ ht-degree: 0%
          - [ACSD-62428: fouten met de voorraadstatus in de zoekindex van de catalogus](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-56/acsd-62428-fixes-stock-status-errors-in-catalog-search-index.md)
          - [ACSD-62577: optimalisatie van de zoekprestaties van Storefront](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-56/acsd-62577-storefront-search-performance-optimization.md)
       - [Patch controleren voor Adobe Commerce-probleem met het gereedschap Kwaliteitspatches](quality-patches-tool/patches-available-in-qpt/check-patch-for-magento-issue-with-magento-quality-patches.md)
-
+      - v1.1.57 {#v1-1-57}
+         - [Overzicht: [!DNL Quality Patches Tool]  (QPT) v1.1.57](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-57/overview.md)
 - Verwijzing naar opdrachtregelprogramma&#39;s {#cli-reference}
    - [Adobe Commerce (ter plaatse)](reference/commerce-on-premises.md)
    - [Compatibiliteit upgraden](reference/uct.md)
