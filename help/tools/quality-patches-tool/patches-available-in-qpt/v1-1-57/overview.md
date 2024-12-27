@@ -3,7 +3,8 @@ title: 'Overzicht: [!DNL Quality Patches Tool]  (QPT) v1.1.57'
 description: Deze subsectie verstrekt een gedetailleerde beschrijving van de kwesties die door de flarden beschikbaar in  [!DNL Quality Patches Tool]  (QPT) v1.1.57 worden opgelost.
 feature: Tools and External Services
 role: Admin, Developer
-source-git-commit: 82b8d22438107680cdf47057e0db3e15bf819599
+exl-id: 3e252a71-f35f-4046-9353-169060451ffe
+source-git-commit: fc5c790108a3c62d4591631128743259824c4c6b
 workflow-type: tm+mt
 source-wordcount: '428'
 ht-degree: 0%
@@ -27,7 +28,7 @@ QPT v1.1.57 omvat de volgende flarden:
 1. **ACSD-62635**: Verhelpt de kwestie waar multi-store verwante producten niet behoorlijk in de [!DNL GraphQL] productvraag tonen.
 1. **ACSD-62671**: Verhelpt de kwestie waar het [!DNL GraphQL] verzoek geen bijgewerkte adresinformatie op de eerste poging terugkeert.
 1. **ACSD-62689**: Verhelpt de kwestie waar de klant geen Categorieën in [!UICONTROL Related Product Rules] en [!UICONTROL Widgets] na diepte 4 kan toevoegen.
-1. **ACSD-62708**: Verhelpt de kwestie waar [!DNL TinyMCE] 7 de grootte van de redacteursdoopvont in admin [!UICONTROL px] toont en niet [!UICONTROL pt] na het toepassen van de moeilijke situatie van [!UICONTROL ACP2E-3430]. U kunt nu ook de tekengrootte instellen in [!UICONTROL px] in plaats van in [!UICONTROL pt] .
+1. **ACSD-62708**: Verhelpt de kwestie waar [!DNL TinyMCE] 7 de grootte van de redacteursdoopvont in admin [!UICONTROL pt] toont en niet [!UICONTROL px] na het toepassen van de moeilijke situatie van [!UICONTROL ACP2E-3430]. U kunt nu ook de tekengrootte instellen in [!UICONTROL px] in plaats van in [!UICONTROL pt] .
 1. **ACSD-62758**: Verhelpt de kwestie waar de productvideo&#39;s niet correct op de [!UICONTROL Configurable Product] detailspagina teruggeven als URL geselecteerde opties bevat.
 1. **ACSD-62951**: Verhelpt de kwestie waar het [!UICONTROL Credit Memo] e-mailbericht wordt verzonden zonder punten en totalen te omvatten.
 1. **ACSD-62965**: Verhelpt de kwestie waar het a ** bericht LocalizedException niet inbegrepen in de ordsplaatsing [!DNL GraphQL response] is.
