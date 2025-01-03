@@ -2,9 +2,9 @@
 user-guide-title: Gereedschappen
 user-guide-description: Leer meer over de verschillende gereedschappen die u met Adobe Commerce kunt gebruiken, hun gebruik, het installatieproces en hoe u toegang krijgt.
 feature: Configuration
-source-git-commit: f79af1e15a763fa9f9b8050a73b160e5741c435d
+source-git-commit: e1363d565257948bc84fdd1a3c50af9ff8245e53
 workflow-type: tm+mt
-source-wordcount: '6595'
+source-wordcount: '6605'
 ht-degree: 0%
 
 ---
@@ -698,6 +698,7 @@ ht-degree: 0%
       - [Patch controleren voor Adobe Commerce-probleem met het gereedschap Kwaliteitspatches](quality-patches-tool/patches-available-in-qpt/check-patch-for-magento-issue-with-magento-quality-patches.md)
       - v1.1.57 {#v1-1-57}
          - [Overzicht: [!DNL Quality Patches Tool]  (QPT) v1.1.57](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-57/overview.md)
+         - [ACSD-62758: Het probleem met videorendering op configureerbare productpagina&#39;s is opgelost](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-57/acsd-62758-resolved-video-rendering-issue-on-configurable-product-pages.md)
          - [ACSD-63326: probleem met omleiding van beheerders verhelpen nadat een bestelling van de achterkant is geplaatst](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-57/acsd-63326-fix-admin-redirection-issue-after-placing-an-order-from-the-backend.md)
 - Verwijzing naar opdrachtregelprogramma&#39;s {#cli-reference}
    - [Adobe Commerce (ter plaatse)](reference/commerce-on-premises.md)
