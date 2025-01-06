@@ -3,13 +3,13 @@ title: 'ACSD-58325: [!UICONTROL Import] knop beschikbaar zelfs na een validatief
 description: Pas de ACSD-58325-patch toe om het Adobe Commerce-probleem op te lossen, waarbij de knop [!UICONTROL Import] zelfs na een validatiefout beschikbaar is.
 feature: Data Import/Export
 role: Admin, Developer
-source-git-commit: 5a2709014828810827e71d9dd91d34102d80bd66
+exl-id: 551a9ac7-9b7f-49b5-9255-2014c330fb07
+source-git-commit: c50fa066d02c04a08c28730afffe4508019a93aa
 workflow-type: tm+mt
-source-wordcount: '293'
+source-wordcount: '287'
 ht-degree: 0%
 
 ---
-
 
 # ACSD-58325: [!UICONTROL Import] knop beschikbaar zelfs na een validatiefout
 
@@ -21,8 +21,7 @@ De ACSD-58325-patch verhelpt het probleem waarbij de knop **[!UICONTROL Import]*
 * Adobe Commerce (alle implementatiemethoden) 2.4.6-p3
 
 **Compatibel met de versies van Adobe Commerce:**
-* Adobe Commerce op locatie 2.4.6 - 2.4.6-p8
-* Adobe Commerce over cloudinfrastructuur 2.4.6 - 2.4.6-p8
+* Adobe Commerce (alle implementatiemethoden) 2.4.6 - 2.4.6-p8
 
 >[!NOTE]
 >
@@ -60,4 +59,3 @@ Om individuele flarden toe te passen, gebruik de volgende verbindingen afhankeli
 Meer informatie over [!DNL Quality Patches Tool] vindt u in:
 
 * [[!DNL Quality Patches Tool]: Een zelfbedieningshulpmiddel voor kwaliteitspatches ](/help/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches.md) in de gids van Hulpmiddelen.
-
