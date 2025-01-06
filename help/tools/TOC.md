@@ -2,9 +2,9 @@
 user-guide-title: Gereedschappen
 user-guide-description: Leer meer over de verschillende gereedschappen die u met Adobe Commerce kunt gebruiken, hun gebruik, het installatieproces en hoe u toegang krijgt.
 feature: Configuration
-source-git-commit: 31f3dfa8efcf3ae32efabff5982db340b60d98b4
+source-git-commit: 5537079eff80496f8f4906ba22220a9a3ac3402a
 workflow-type: tm+mt
-source-wordcount: '6641'
+source-wordcount: '6651'
 ht-degree: 0%
 
 ---
@@ -694,6 +694,7 @@ ht-degree: 0%
          - [ACSD-63242: langzaam importeren bij het toevoegen van meer dan 10.000 catalogusproducten](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-56/acsd-63242-slow-import-when-adding-catalog-products.md)
          - [ACSD-63062: Onjuiste berekeningen van winkelwagenkortingen met meerdere overlappende regels](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-56/acsd-63062-incorrect-cart-discount-calculations-when-multiple-overlapping-rules.md)
          - [ACSD-62428: fouten met de voorraadstatus in de zoekindex van de catalogus](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-56/acsd-62428-fixes-stock-status-errors-in-catalog-search-index.md)
+         - [AACSD-62355: verbetert configureerbare productbewerkingsprestaties in Adobe Commerce](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-56/acsd-62355-improves-configurable-product-edit-performance-in-adobe-commerce.md)
          - [ACSD-62872: planningupdates zijn onjuist gevalideerd](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-56/acsd-62872-schedule-updates-validated-incorrectly.md)
          - [ACSD-62952: Cadeauregistratiedatum onjuist weergegeven op de opslagplaats](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-56/acsd-62952-gift-registry-date-inaccurate-storefront.md)
          - [ACSD-62577: optimalisatie van de zoekprestaties van Storefront](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-56/acsd-62577-storefront-search-performance-optimization.md)
