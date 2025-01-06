@@ -2,9 +2,9 @@
 title: Snelle start van de installatie op locatie
 description: Voer de volgende stappen uit om Adobe Commerce te installeren op uw eigen infrastructuur.
 exl-id: a93476e8-2b30-461a-91df-e73eb1a14d3c
-source-git-commit: ee7551374aa6d4ad462dd64ee3d05b934b43ce45
+source-git-commit: 60db3da9154e76032c88d687b6b6e22d7b81f9ae
 workflow-type: tm+mt
-source-wordcount: '933'
+source-wordcount: '957'
 ht-degree: 0%
 
 ---
@@ -89,11 +89,11 @@ Zo krijgt u het Adobe Commerce-pakket:
    composer create-project --repository-url=https://repo.magento.com/ magento/project-enterprise-edition <install-directory-name>
    ```
 
-   Voer desgevraagd uw verificatietoetsen in. De openbare en privé sleutels worden gecreeerd en in uw [ Commerce Marketplace ](https://commercemarketplace.adobe.com/customer/account/login/) gevormd.
+   Voer desgevraagd uw verificatietoetsen in. Openbare en privé sleutels worden gecreeerd en gevormd van [ Commerce Marketplace - de Sleutels van de Toegang ](https://commercemarketplace.adobe.com/customer/account/login/). Kopieer en plak voor de `[!UICONTROL username]` de waarde voor de openbare sleutel. Kopieer en plak voor de `[!UICONTROL password]` de waarde van de persoonlijke sleutel.
 
    >[!NOTE]
    >
-   > Wanneer u een Composer `auth.json` -bestand of een omgevingsvariabele gebruikt, wordt u niet gevraagd om uw verificatietoetsen in te voeren.
+   > Als u een Composer `[auth.json](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/develop/authentication-keys)` -bestand of een omgevingsvariabele gebruikt die is geconfigureerd met de Commerce-verificatietoetsen, wordt u niet gevraagd verificatietoetsen in te voeren.
 
    Als er fouten optreden, zoals `Could not find package...` of `...no matching package found` , controleert u of de opdracht geen typos bevat. Als er nog steeds fouten optreden, kunt u geen Adobe Commerce downloaden. Contact {de Steun van 0} Adobe Commerce ](https://support.magento.com/hc/en-us) voor hulp.[
 
