@@ -2,9 +2,9 @@
 user-guide-title: Gereedschappen
 user-guide-description: Leer meer over de verschillende gereedschappen die u met Adobe Commerce kunt gebruiken, hun gebruik, het installatieproces en hoe u toegang krijgt.
 feature: Configuration
-source-git-commit: ae2d0a48898063ce93efb7dce889f7485562f936
+source-git-commit: fa59bb2e45f7f7539f5a7515f02854b7066314fe
 workflow-type: tm+mt
-source-wordcount: '6729'
+source-wordcount: '6739'
 ht-degree: 0%
 
 ---
@@ -700,6 +700,7 @@ ht-degree: 0%
          - [ACSD-62872: planningupdates zijn onjuist gevalideerd](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-56/acsd-62872-schedule-updates-validated-incorrectly.md)
          - [ACSD-62952: Cadeauregistratiedatum onjuist weergegeven op de opslagplaats](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-56/acsd-62952-gift-registry-date-inaccurate-storefront.md)
          - [ACSD-62577: optimalisatie van de zoekprestaties van Storefront](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-56/acsd-62577-storefront-search-performance-optimization.md)
+         - [ACSD-62670: [!UICONTROL Products Ordered] rapport exporteren naar CSV en XML veroorzaakt een fout](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-56/acsd-62670-products-ordered-report-export-to-csv-xml-throws-error.md)
          - [ACSD-62755: [!DNL TinyMCE]  7 behoeften doopvontgrootte en doopvont die aan de montages van de redactierinitialisatie wordt toegevoegd](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-56/acsd-62755-tinymce-7-needs-font-size-added-in-editor-initialization-setting.md)
       - [Patch controleren voor Adobe Commerce-probleem met het gereedschap Kwaliteitspatches](quality-patches-tool/patches-available-in-qpt/check-patch-for-magento-issue-with-magento-quality-patches.md)
       - v1.1.57 {#v1-1-57}
