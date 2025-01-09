@@ -2,9 +2,9 @@
 user-guide-title: Gereedschappen
 user-guide-description: Leer meer over de verschillende gereedschappen die u met Adobe Commerce kunt gebruiken, hun gebruik, het installatieproces en hoe u toegang krijgt.
 feature: Configuration
-source-git-commit: fa59bb2e45f7f7539f5a7515f02854b7066314fe
+source-git-commit: 7605d4a0e3c975f8ef67130a3ef58a34a41fd869
 workflow-type: tm+mt
-source-wordcount: '6739'
+source-wordcount: '6749'
 ht-degree: 0%
 
 ---
@@ -713,6 +713,7 @@ ht-degree: 0%
          - [ACSD-63326: probleem met omleiding van beheerders verhelpen nadat een bestelling van de achterkant is geplaatst](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-57/acsd-63326-fix-admin-redirection-issue-after-placing-an-order-from-the-backend.md)
          - [ACSD-63286: producten die zijn toegewezen aan een gedeelde catalogus, moeten handmatig opnieuw worden gecompileerd om te worden weergegeven](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-57/acsd-63286-products-in-shared-catalog-need-manual-reindexing-to-appear.md)
          - [ACSD-58325: [!UICONTROL Import] knop beschikbaar zelfs na een validatiefout](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-57/acsd-58325-import-button-available-even-after-a-validation-error.md)
+         - [ACSD-62671: [!DNL GraphQL]  keert geen bijgewerkt adres op eerste poging terug](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-57/acsd-62671-graphql-not-returning-updated-address-on-first-attempt.md)
 - Verwijzing naar opdrachtregelprogramma&#39;s {#cli-reference}
    - [Adobe Commerce (ter plaatse)](reference/commerce-on-premises.md)
    - [Compatibiliteit upgraden](reference/uct.md)
