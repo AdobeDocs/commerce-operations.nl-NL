@@ -2,9 +2,9 @@
 user-guide-title: Gereedschappen
 user-guide-description: Leer meer over de verschillende gereedschappen die u met Adobe Commerce kunt gebruiken, hun gebruik, het installatieproces en hoe u toegang krijgt.
 feature: Configuration
-source-git-commit: b6c055dc3fec27db450f629d4c09f526c57676e2
+source-git-commit: ad941810716f34f252e401455fb3db64ae35f35f
 workflow-type: tm+mt
-source-wordcount: '6772'
+source-wordcount: '6784'
 ht-degree: 0%
 
 ---
@@ -701,6 +701,7 @@ ht-degree: 0%
          - [ACSD-62872: planningupdates zijn onjuist gevalideerd](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-56/acsd-62872-schedule-updates-validated-incorrectly.md)
          - [ACSD-62952: Cadeauregistratiedatum onjuist weergegeven op de opslagplaats](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-56/acsd-62952-gift-registry-date-inaccurate-storefront.md)
          - [ACSD-62577: optimalisatie van de zoekprestaties van Storefront](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-56/acsd-62577-storefront-search-performance-optimization.md)
+         - [ACSD-55339: Oplossen van SKU-trimingprobleem in verhandelbare koersen voor Adobe Commerce](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-56/acsd-55339-resolving-sku-trimming-issue-in-negotiable-quotes-for-adobe-commerce.md)
          - [ACSD-62670: [!UICONTROL Products Ordered] rapport exporteren naar CSV en XML veroorzaakt een fout](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-56/acsd-62670-products-ordered-report-export-to-csv-xml-throws-error.md)
          - [ACSD-62755: [!DNL TinyMCE]  7 behoeften doopvontgrootte en doopvont die aan de montages van de redactierinitialisatie wordt toegevoegd](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-56/acsd-62755-tinymce-7-needs-font-size-added-in-editor-initialization-setting.md)
       - [Patch controleren voor Adobe Commerce-probleem met het gereedschap Kwaliteitspatches](quality-patches-tool/patches-available-in-qpt/check-patch-for-magento-issue-with-magento-quality-patches.md)
