@@ -2,9 +2,9 @@
 title: Opmerkingen bij de release
 description: Meer informatie over de patches die beschikbaar zijn voor Adobe Commerce en de problemen die ze oplossen.
 exl-id: 22262555-f5ea-49ad-98ad-ea8428ef66d5
-source-git-commit: 696f8b1e24c38b7604058df88eff31c6c296d6e7
+source-git-commit: 9e71d979e0662770043fd9ca74b9ba8b5a6752f0
 workflow-type: tm+mt
-source-wordcount: '24185'
+source-wordcount: '24552'
 ht-degree: 0%
 
 ---
@@ -20,6 +20,23 @@ ht-degree: 0%
 >[!INFO]
 >
 >Voor informatie over [!DNL quality patches] die door de Gemeenschap voor Magento Open Source wordt gecreeerd, zie de [ versienota&#39;s ](https://github.com/magento/quality-patches/blob/master/community-release-notes.md).
+
+## v1.1.58 {#v1-1-58}
+
+* **ACSD-48570** (voor Adobe Commerce en Magento Open Source >=2.4.4 &lt;2.4.7) - lost de kwestie op waar de pagina van het terugstellings wachtwoord niet kon worden bereikt door de [!UICONTROL Admin] terugstellings wachtwoordverbinding te klikken wanneer **de Code van de Opslag aan URLs** ** werd toegelaten, die eerder in login pagina of 404 resulteerde pagina die wordt weergegeven.
+* **ACSD-62118** (voor Adobe Commerce >=2.4.6 &lt;2.4.8) - lost de kwestie op waar de `sales_order_tax_item` lijst niet volledig wordt bijgewerkt wanneer [!DNL B2B] de orden gebruikend de methode van de Orde van de Aankoop worden geplaatst.
+* **ACSD-63067** (voor Adobe Commerce en Magento Open Source >=2.4.4 &lt;2.4.8) - lost de kwestie op waar alle producthoeveelheden verkeerd worden benadrukt, en het bericht *[!DNL Please specify the quantity of product(s).]* wordt getoond voor alle producten in een gegroepeerd product wanneer slechts één hoeveelheid onjuist is.
+* **ACSD-63090** (voor Adobe Commerce en Magento Open Source >=2.4.4 &lt;2.4.8) - lost het probleem op waar de het winkelwagentjes punten worden verwijderd wanneer een product, na wordt toegevoegd aan het karretje wordt geschrapt.
+* **ACSD-63182** (voor Adobe Commerce en Magento Open Source >=2.4.4 &lt;2.4.8) - lost de kwestie op waar een fout voorkomt wanneer het opslaan van een gedupliceerd bundelproduct met **[!DNL MSI]** *toegelaten*.
+* **ACSD-63283** (voor Adobe Commerce >=2.4.4 &lt;2.4.8) - lost de kwestie op waar het opdracht geven tot punten van de giftenregistratie een uitzondering veroorzaakt en waar de updates van de giftenregistratie punten omvatten die niet tot de registratie behoren.
+* **ACSD-63299** (voor Adobe Commerce en Magento Open Source >=2.4.4 &lt;2.4.8) - lost de kwestie op waar de speciale prijs voor een configureerbaar product niet op de storefront toont.
+* **ACSD-63325** (voor Adobe Commerce en Magento Open Source >=2.4.7 &lt;2.4.8) - lost de kwestie op waar een `Syntax Error: Unexpected <EOF>` fout voorkomt wanneer het voorleggen van een leeg [!DNL GraphQL] verzoek.
+* **ACSD-63329** (voor Adobe Commerce en Magento Open Source >=2.4.4 &lt;2.4.8) - lost de kwestie op waar de standaardwaarden voor attributen met **[!UICONTROL Date]** of **[!UICONTROL Date and Time]** inputtypes niet worden geplaatst wanneer het creëren van producten via [!DNL REST API].
+* **ACSD-63572** (voor Adobe Commerce en Magento Open Source >=2.4.5 &lt;2.4.8) - lost de kwestie op waar de `CatalogRule` indexer tijdelijke lijsten niet omhoog worden schoongemaakt als het indexeerproces wordt geëindigd.
+* **ACSD-63578** (voor Adobe Commerce >=2.4.4 &lt;2.4.8) - lost het probleem op waar het klikken van de **[!UICONTROL Delete]** knoop in **[!UICONTROL Add to Order by SKU]** in [!UICONTROL Admin] niet [!DNL SKU] verwijdert.
+* Bijgewerkte versies: **mDVA-39305-v3**
+* Vervangen flarden: **ACSD-56280**
+* Afgekeurde flarden: **ACSD-62872**
 
 ## v1.1.57 {#v1-1-57}
 
