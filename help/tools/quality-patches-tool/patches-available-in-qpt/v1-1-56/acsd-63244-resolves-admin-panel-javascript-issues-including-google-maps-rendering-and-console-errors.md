@@ -3,14 +3,15 @@ title: 'ACSD-63244: Los de kwesties van JavaScript van het admin paneel, met inb
 description: ACSD-63244 herstelt de veelvoudige kwesties van JavaScript in het admin paneel, met inbegrip van problemen met  [!DNL Google Maps]  teruggevend en terugkerend "Uncaught TypeError dit._each is not a function` errors in the browser console.
 feature: Admin Workspace
 role: Admin, Developer
-source-git-commit: 01d6d74bfb9a9491bc006f140a2eebf4bbee004b
+exl-id: 1985c845-219e-4af4-8f70-62dd57722494
+source-git-commit: 6b623811440238deee7a7fe859d887830f89782c
 workflow-type: tm+mt
-source-wordcount: '325'
+source-wordcount: '323'
 ht-degree: 0%
 
 ---
 
-# ACSD-63244: ACSD-63244: Los JavaScript-problemen met het deelvenster Beheer op, inclusief [!DNL Google Maps] rendering en consolefouten
+# ACSD-63244: Los JavaScript-problemen met het deelvenster Beheer op, inclusief [!DNL Google Maps] rendering en consolefouten
 
 De ACSD-63244-patch verhelpt meerdere JavaScript-problemen in het beheerpaneel, zoals problemen met [!DNL Google Maps] rendering en terugkerende `Uncaught TypeError: this._each is not a function` fouten in de browserconsole. Deze patch is beschikbaar bij [[!DNL Quality Patches Tool (QPT)]](/help/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches.md) 1.1.56. De patch-id is ACSD-63244. De kwestie zou volgens de planning in Adobe Commerce 2.4.8 worden opgelost.
 
