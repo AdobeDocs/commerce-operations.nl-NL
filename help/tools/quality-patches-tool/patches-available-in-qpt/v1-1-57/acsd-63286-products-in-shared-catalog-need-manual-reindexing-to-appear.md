@@ -3,16 +3,17 @@ title: 'ACSD-63286: producten die zijn toegewezen aan een gedeelde catalogus, mo
 description: Pas de ACSD-63286-patch toe om het Adobe Commerce-probleem op te lossen waarbij producten die via API aan een gedeelde catalogus zijn toegewezen, pas op de winkel worden weergegeven als een handmatige herindex is uitgevoerd.
 feature: Products, REST
 role: Admin, Developer
-source-git-commit: 00b2b9285ca27d630bd0ece2750b531710e8d196
+exl-id: 0435c06e-337e-4320-acc6-fa79a3b34008
+source-git-commit: e18a41c5abb1cc8b407ff6c188acdeed0e8a7659
 workflow-type: tm+mt
-source-wordcount: '406'
+source-wordcount: '405'
 ht-degree: 0%
 
 ---
 
 # ACSD-63286: producten die zijn toegewezen aan een gedeelde catalogus, moeten handmatig opnieuw worden gecompileerd om te worden weergegeven
 
-De ACSD-63286-patch verhelpt het probleem dat producten die via API aan een gedeelde catalogus zijn toegewezen, pas op de opslagplaats worden weergegeven als een handmatige herindex wordt uitgevoerd. Deze patch is beschikbaar wanneer [[!DNL Quality Patches Tool (QPT)] ](https://experienceleague.adobe.com/help/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches.md) 1.1.57 wordt geïnstalleerd. De patch-id is ACSD-63286. Het probleem wordt volgens de planning opgelost in Adobe Commerce 2.4.8.
+De ACSD-63286-patch verhelpt het probleem dat producten die via API aan een gedeelde catalogus zijn toegewezen, pas op de opslagplaats worden weergegeven als een handmatige herindex wordt uitgevoerd. Deze patch is beschikbaar wanneer [[!DNL Quality Patches Tool (QPT)]](/help/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches.md) 1.1.57 wordt geïnstalleerd. De patch-id is ACSD-63286. Het probleem wordt volgens de planning opgelost in Adobe Commerce 2.4.8.
 
 ## Betrokken producten en versies
 

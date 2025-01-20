@@ -3,16 +3,17 @@ title: 'ACSD-62758: Het probleem met videorendering op configureerbare productpa
 description: Pas de ACSD-62758-patch toe om het Adobe Commerce-probleem op te lossen waarbij productvideo's op configureerbare productdetailpagina's niet correct worden weergegeven wanneer URL's vooraf geselecteerde staalopties bevatten.
 feature: Catalog Management
 role: Admin, Developer
-source-git-commit: 313709361ee86e39b89c416f71a92b078318f4fb
+exl-id: 084b497d-4471-4458-bc1d-2a452bfe2662
+source-git-commit: e18a41c5abb1cc8b407ff6c188acdeed0e8a7659
 workflow-type: tm+mt
-source-wordcount: '486'
+source-wordcount: '485'
 ht-degree: 0%
 
 ---
 
 # ACSD-62758: Het probleem met videorendering op configureerbare productpagina&#39;s is opgelost
 
-De ACSD-62758-patch verhelpt het probleem dat productvideo&#39;s op configureerbare productdetailpagina&#39;s niet correct worden weergegeven wanneer URL&#39;s vooraf geselecteerde staalopties bevatten. Deze patch is beschikbaar wanneer [[!DNL Quality Patches Tool (QPT)] ](https://experienceleague.adobe.com/help/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches.md) 1.1.57 wordt geïnstalleerd. De patch-id is ACSD-62758. Het probleem wordt volgens de planning opgelost in Adobe Commerce 2.4.8.
+De ACSD-62758-patch verhelpt het probleem dat productvideo&#39;s op configureerbare productdetailpagina&#39;s niet correct worden weergegeven wanneer URL&#39;s vooraf geselecteerde staalopties bevatten. Deze patch is beschikbaar wanneer [[!DNL Quality Patches Tool (QPT)]](/help/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches.md) 1.1.57 wordt geïnstalleerd. De patch-id is ACSD-62758. Het probleem wordt volgens de planning opgelost in Adobe Commerce 2.4.8.
 
 ## Betrokken producten en versies
 
@@ -70,3 +71,4 @@ Om individuele flarden toe te passen, gebruik de volgende verbindingen afhankeli
 Meer informatie over [!DNL Quality Patches Tool] vindt u in:
 
 * [[!DNL Quality Patches Tool]: Een zelfbedieningshulpmiddel voor kwaliteitspatches ](/help/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches.md) in de gids van Hulpmiddelen.
+

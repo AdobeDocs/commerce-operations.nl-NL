@@ -3,17 +3,17 @@ title: 'ACSD-62689: Kan geen categorieën toevoegen in [!UICONTROL Related Produ
 description: Pas de ACSD-62689-patch toe om het Adobe Commerce-probleem op te lossen waarbij een klant na diepte 4 nesten geen categorieën in [!UICONTROL Related Product Rules] en widgets kan toevoegen.
 feature: Categories
 role: Admin, Developer
-source-git-commit: 154a017fbc6e069e8e59651db46955922c004955
+exl-id: 2506744a-01c8-462b-9a27-cd0bdb5664f9
+source-git-commit: e18a41c5abb1cc8b407ff6c188acdeed0e8a7659
 workflow-type: tm+mt
-source-wordcount: '374'
+source-wordcount: '373'
 ht-degree: 0%
 
 ---
 
-
 # ACSD-62689: Kan geen categorieën toevoegen in *[!UICONTROL Related Product Rules]* en widgets na diepte 4
 
-De ACSD-62689-patch verhelpt het probleem waarbij een klant na diepte vier nesten geen categorieën in *[!UICONTROL Related Product Rules]* en widgets kan toevoegen. Deze patch is beschikbaar wanneer [[!DNL Quality Patches Tool (QPT)] ](https://experienceleague.adobe.com/docs/commerce-operations/patches/release-notes.html) 1.1.57 wordt geïnstalleerd. De patch-id is ACSD-62689. Dit probleem wordt volgens de planning opgelost in Adobe Commerce 2.4.8.
+De ACSD-62689-patch verhelpt het probleem waarbij een klant na diepte vier nesten geen categorieën in *[!UICONTROL Related Product Rules]* en widgets kan toevoegen. Deze patch is beschikbaar wanneer [[!DNL Quality Patches Tool (QPT)]](/help/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches.md) 1.1.57 wordt geïnstalleerd. De patch-id is ACSD-62689. Dit probleem wordt volgens de planning opgelost in Adobe Commerce 2.4.8.
 
 ## Betrokken producten en versies
 
@@ -67,3 +67,4 @@ Om individuele flarden toe te passen, gebruik de volgende verbindingen afhankeli
 Meer informatie over [!DNL Quality Patches Tool] vindt u in:
 
 * [[!DNL Quality Patches Tool]: Een zelfbedieningshulpmiddel voor kwaliteitspatches ](/help/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches.md) in de gids van Hulpmiddelen.
+
