@@ -2,9 +2,9 @@
 user-guide-title: Gereedschappen
 user-guide-description: Leer meer over de verschillende gereedschappen die u met Adobe Commerce kunt gebruiken, hun gebruik, het installatieproces en hoe u toegang krijgt.
 feature: Configuration
-source-git-commit: b2659c1fc31150e452cb50424bb26529e6162c85
+source-git-commit: 30403c10ccb7332b0105c9859c37d7d23a784ce5
 workflow-type: tm+mt
-source-wordcount: '6825'
+source-wordcount: '6836'
 ht-degree: 0%
 
 ---
@@ -720,6 +720,7 @@ ht-degree: 0%
          - [ACSD-62671: [!DNL GraphQL]  keert geen bijgewerkt adres op eerste poging terug](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-57/acsd-62671-graphql-not-returning-updated-address-on-first-attempt.md)
       - v1.1.58 {#v1-1-58}
          - [Overzicht: [!DNL Quality Patches Tool]  (QPT) v1.1.58](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-58/overview.md)
+         - [ACSD-63067: Problemen met de validering van de hoeveelheid in gegroepeerde producten op de opslagplaats oplossen](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-58/acsd-63067-resolving-quantity-validation-issues-in-grouped-products-on-storefront.md)
          - [ACSD-62118: tabel sales_order_tax_item niet volledig bijgewerkt voor B2B-orders die zijn geplaatst met de methode [!UICONTROL Purchase Order]](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-58/acsd-62118-tax-item-table-not-updated-po-method.md)
    - [Patch controleren voor Adobe Commerce-probleem met het gereedschap Kwaliteitspatches](quality-patches-tool/patches-available-in-qpt/check-patch-for-magento-issue-with-magento-quality-patches.md)
 - Verwijzing naar opdrachtregelprogramma&#39;s {#cli-reference}
