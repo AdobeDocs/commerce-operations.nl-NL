@@ -2,7 +2,7 @@
 title: Levenscyclusbeleid voor software
 description: Leer meer over de belangrijkste datums voor het einde van de softwareondersteuning voor Adobe Commerce-releases.
 exl-id: 9ee4ecc8-d893-412a-a605-5a8606a1b9a9
-source-git-commit: 2a611b87df0d25be0e047e4d07e8c0ac3cd4d904
+source-git-commit: ce7c322c5cf979a992e6f929c3105daf86d4aa49
 workflow-type: tm+mt
 source-wordcount: '521'
 ht-degree: 4%
@@ -38,8 +38,8 @@ Adobe moedigt klanten aan om zo snel mogelijk een upgrade uit te voeren. Om echt
 |----------------------|----------------------|------------------------------------|-------------------------|-----------------------|------------------------------|
 | Adobe Commerce 2.4.7 | 9 april 2024 | 9 april 2027 | NVT | 8.2 en 8.3 | 10,6 |
 | Adobe Commerce 2.4.6 | 14 maart 2023 | 11 augustus, 2026 <sup> 2 </sup> | NVT | 8.1 en 8.2 | 10,6 |
-| Adobe Commerce 2.4.5 | 9 augustus 2022 | 9 augustus 2025 | 11 augustus 2026 | 8,1 | 10.5 <sup> 3 </sup> |
-| Adobe Commerce 2.4.4 | 12 april 2022 | 24 april 2025 | 14 april 2026 | 8,1 | 10.5 <sup> 4 </sup> |
+| Adobe Commerce 2.4.5 | 9 augustus 2022 | 9 augustus 2025 | 11 augustus 2026 | 8,1 | 10.6 <sup> 3 </sup> |
+| Adobe Commerce 2.4.4 | 12 april 2022 | 24 april 2025 | 14 april 2026 | 8,1 | 10.6 <sup> 4 </sup> |
 
 {style="table-layout:auto"}
 
@@ -47,8 +47,8 @@ Adobe moedigt klanten aan om zo snel mogelijk een upgrade uit te voeren. Om echt
 >
 >- <sup> 1 </sup> Eind van softwaresteun omvat zowel eind van kwaliteitsmoeilijke situaties als eind van veiligheidsmoeilijke situaties.
 >- <sup> 2 </sup> Bijgewerkt om zich op het eind van uitgebreide steun voor 2.4.5 te richten.
->- <sup> 3 </sup> Beginnend met 2.4.5-p8 veiligheidspatch.
->- <sup> 4 </sup> Beginnend met 2.4.4-p9 veiligheidspatch.
+>- <sup> 3 </sup> Beginnend met 2.4.5-p11 veiligheidspatch.
+>- <sup> 4 </sup> Beginnend met 2.4.4-p12 veiligheidspatch.
 >- Zie [ Beleid van de Levenscyclus van de Software ](https://www.adobe.com/content/dam/cc/en/legal/terms/enterprise/pdfs/Adobe-Commerce-Software-Lifecycle-Policy.pdf).
 
 <table style="table-layout:auto">
