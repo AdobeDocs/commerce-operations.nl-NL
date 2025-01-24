@@ -1,5 +1,5 @@
 ---
-source-git-commit: 4a84f20fba387f6b94786095ebad82c2fdf0560e
+source-git-commit: 35477721e6c71320ee3915965b6bd589f5886693
 workflow-type: tm+mt
 source-wordcount: '575'
 ht-degree: 0%
@@ -219,7 +219,7 @@ Ondersteuning voor de releaselijn 2.4.5 eindigt op augustus  9 mei 2025.
 
 ## 2.4.4.
 
-De ondersteuning voor de release line 2.4.4 eindigt op 24 april 2025.
+De ondersteuning voor de release line van 2.4.4 eindigt op 12 april 2025.
 
 <table>
   <thead>
