@@ -4,9 +4,9 @@ description: Dit artikel biedt een oplossing voor het probleem waarbij slepen en
 feature: Products
 role: Developer
 exl-id: 38b9490a-c9d4-4f8e-b90f-69bf50a6b571
-source-git-commit: 81c78439f7c243437b7b76dc80560c847af95ace
+source-git-commit: a1c5898626fb8419af017a29a009a0a2c069326e
 workflow-type: tm+mt
-source-wordcount: '425'
+source-wordcount: '419'
 ht-degree: 0%
 
 ---
@@ -61,6 +61,6 @@ Om individuele flarden toe te passen, gebruik de volgende verbindingen afhankeli
 Raadpleeg voor meer informatie over het gereedschap Kwaliteitspatches:
 
 * [ vrijgegeven het Hulpmiddel van de Patches van de Kwaliteit: een nieuw hulpmiddel om kwaliteitspatches ](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/announcements/commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches) in de steunkennisbasis zelf-te dienen.
-* [ Controle als het flard voor uw kwestie van Adobe Commerce beschikbaar is gebruikend het Hulpmiddel van de Patches van de Kwaliteit ](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/support-tools/patches/check-patch-for-magento-issue-with-magento-quality-patches.html) in onze basis van de steunkennis.
+* [ Controle als het flard voor uw kwestie van Adobe Commerce beschikbaar is gebruikend  [!DNL Quality Patches Tool]](/help/tools/quality-patches-tool/patches-available-in-qpt/check-patch-for-magento-issue-with-magento-quality-patches.md) in de [!UICONTROL Quality Patches Tool] gids.
 
 Voor informatie over andere flarden beschikbaar in QPT, verwijs naar [[!DNL Quality Patches Tool]: Onderzoek naar flarden ](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html) in de gids van het Hulpmiddel van de Patches van de Kwaliteit.

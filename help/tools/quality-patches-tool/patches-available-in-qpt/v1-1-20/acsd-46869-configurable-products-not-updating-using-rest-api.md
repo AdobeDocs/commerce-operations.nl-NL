@@ -4,9 +4,9 @@ description: De ACSD-46869-patch verhelpt het probleem waarbij de configureerbar
 feature: REST, Checkout, Configuration, Orders, Products
 role: Admin
 exl-id: f03d4b24-ac95-406e-8e9d-908149b9207c
-source-git-commit: 81c78439f7c243437b7b76dc80560c847af95ace
+source-git-commit: a1c5898626fb8419af017a29a009a0a2c069326e
 workflow-type: tm+mt
-source-wordcount: '404'
+source-wordcount: '401'
 ht-degree: 0%
 
 ---
@@ -67,6 +67,6 @@ Om individuele flarden toe te passen, gebruik de volgende verbindingen afhankeli
 Meer informatie over [!DNL Quality Patches Tool] vindt u in:
 
 * [[!DNL Quality Patches Tool]  vrijgegeven: een nieuw hulpmiddel om kwaliteitspatches ](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/announcements/commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches) in de steunkennisbasis zelf-te dienen.
-* [ Controle als het flard voor uw kwestie van Adobe Commerce beschikbaar is gebruikend  [!DNL Quality Patches Tool] ](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/support-tools/patches/check-patch-for-magento-issue-with-magento-quality-patches.html) in onze basis van de steunkennis.
+* [ Controle als het flard voor uw kwestie van Adobe Commerce beschikbaar is gebruikend  [!DNL Quality Patches Tool]](/help/tools/quality-patches-tool/patches-available-in-qpt/check-patch-for-magento-issue-with-magento-quality-patches.md) in de [!UICONTROL Quality Patches Tool] gids.
 
 Voor info over andere flarden beschikbaar in [!DNL QPT], verwijs naar [ Patches beschikbaar in  [!DNL QPT] ](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html) in de gids van het Hulpmiddel van de Patches van de Kwaliteit.
