@@ -3,13 +3,13 @@ title: 'ACSD-62872: planningupdates zijn onjuist gevalideerd'
 description: Pas de ACSD-62872-patch toe om het Adobe Commerce-probleem op te lossen met unieke kenmerkvalidatie waarbij geplande updates onjuist worden gevalideerd.
 feature: Catalog Management, Admin Workspace
 role: Admin, Developer
-source-git-commit: f734dab2316237d60164a430eeabed17782b0ae6
+exl-id: bd0d452b-aae3-4682-8a2c-471a7f8bf132
+source-git-commit: 4727a94178c642922224cb37ad5c1b2b4f6002cb
 workflow-type: tm+mt
-source-wordcount: '319'
+source-wordcount: '336'
 ht-degree: 0%
 
 ---
-
 
 # ACSD-62872: planningupdates zijn onjuist gevalideerd
 
@@ -23,7 +23,11 @@ De ACSD-62872-patch verhelpt het probleem met unieke kenmerkvalidatie waarbij ge
 
 **Compatibel met de versies van Adobe Commerce:**
 
-* Adobe Commerce (alle implementatiemethoden) 2.4.4 - 2.4.7-p3
+* Adobe Commerce (alle implementatiemethoden) 2.4.7 - 2.4.7-p3
+
+>[!NOTE]
+>
+>De patch is gemarkeerd als verouderd voor versies 2.4.4 - 2.4.6-p8 in de 1.1.58 QPT-release.
 
 >[!NOTE]
 >
@@ -39,7 +43,7 @@ Geplande update naar een aangepast kenmerk wordt onjuist gevalideerd.
 1. Ga naar **[!UICONTROL Catalog]** > **[!UICONTROL Categories]**.
 1. Maak een nieuwe categorie.
 1. Ga in dezelfde categorie naar de sectie **[!UICONTROL Scheduled Updates]** .
-1. Stel een nieuwe update voor deze categorie in met een toekomstig tijdstip.
+1. Stel op elk gewenst moment een nieuwe update voor deze categorie in.
 1. Voordat u de geplande update start, probeert u de gemaakte planningupdate voor de categorie te bewerken.
 
 <u> Verwachte resultaten </u>:
@@ -55,8 +59,7 @@ Een fout wordt geworpen: *de waarde van het &quot;attribuut van de Douane&quot;i
 Om individuele flarden toe te passen, gebruik de volgende verbindingen afhankelijk van uw plaatsingsmethode:
 
 * Adobe Commerce of Magento Open Source op locatie: [[!DNL Quality Patches Tool]  > Gebruik ](/help/tools/quality-patches-tool/usage.md) in de handleiding [!DNL Quality Patches Tool] .
-* Adobe Commerce op wolkeninfrastructuur: [ Verbeteringen en Patches > Pas Patches ](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html) in Commerce op de gids van de Infrastructuur van de Wolk toe.
-
+* Adobe Commerce op de Infrastructuur van de Wolk: [ Verbeteringen en Patches > Pas Patches ](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches) in Commerce op de gids van de Infrastructuur van de Wolk toe.
 
 ## Gerelateerde lezing
 
