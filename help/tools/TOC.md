@@ -2,9 +2,9 @@
 user-guide-title: Gereedschappen
 user-guide-description: Leer meer over de verschillende gereedschappen die u met Adobe Commerce kunt gebruiken, hun gebruik, het installatieproces en hoe u toegang krijgt.
 feature: Configuration
-source-git-commit: 420a74a1c0e4d4d242691968cfa6b515a9f91e77
+source-git-commit: 183a83346633913b3b013732cbac8676a0756609
 workflow-type: tm+mt
-source-wordcount: '6970'
+source-wordcount: '6981'
 ht-degree: 0%
 
 ---
@@ -729,6 +729,7 @@ ht-degree: 0%
          - [ACSD-63283: [!UICONTROL Gift Registry] Oplossen van problemen met e-mail- en orderplaatsing in Adobe Commerce](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-58/acsd-63283-resolving-gift-registry-email-and-order-placement-issues-in-adobe-commerce.md)
          - [ACSD-62118: tabel sales_order_tax_item niet volledig bijgewerkt voor B2B-orders die zijn geplaatst met de methode [!UICONTROL Purchase Order]](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-58/acsd-62118-tax-item-table-not-updated-po-method.md)
          - [ACSD-63182: Fout bij het opslaan van een product na het dupliceren van een bundelproduct](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-58/acsd-63182-error-occurs-while-saving-a-product-after-bundle-product-duplication.md)
+         - [ACSD-63090: Door een product uit Admin te verwijderen, wordt het winkelwagentje leeggemaakt](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-58/acsd-63090-deleting-product-from-admin-empties-the-shopping-cart.md)
          - [ACSD-48570: Probleem met koppeling voor het opnieuw instellen van het wachtwoord voor beheerders oplossen met winkelcode in URL](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-58/acsd-48570-fixing-admin-reset-password-link-issue-with-store-card-in-url.md)
          - [ACSD-63299: Speciale prijs voor een configureerbaar product wordt niet weergegeven op de winkel](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-58/acsd-63299-special-price-for-a-configurable-product-doesnt-display-on-the-storefront.md)
          - [ACSD-63325: De &quot;Fout van de Syntaxis: Onverwachte &lt; EOF >&quot;fout wanneer het voorleggen van leeg  [!DNL GraphQL]  verzoek](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-58/acsd-63325-syntax-error-when-submitting-graphql-request.md)
