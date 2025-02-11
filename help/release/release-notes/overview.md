@@ -2,9 +2,9 @@
 title: Opmerkingen bij de release van Adobe Commerce
 description: Ontdek waar u informatie kunt vinden over specifieke Adobe Commerce-releases.
 exl-id: f6385e12-5c3d-425f-939c-9dfd7ef6c4f5
-source-git-commit: 987d65b52437fbd21f41600bb5741b3cc43d01f3
+source-git-commit: a2c93cb8481a3d843bc3be186d682f1d5e7974f6
 workflow-type: tm+mt
-source-wordcount: '288'
+source-wordcount: '275'
 ht-degree: 3%
 
 ---
@@ -28,7 +28,7 @@ Gebruik de volgende lijst om versienota&#39;s en belangrijke informatie met betr
             <li><a href="https://developer.adobe.com/commerce/php/development/backward-incompatible-changes/">Achteruit incompatibele wijzigingen</a></li>
             <li><a href="commerce/overview.md">Adobe Commerce</a></li>
             <li><a href="security/overview.md">Beveiligingspatches</a></li>
-            <li><a href="https://helpx.adobe.com/security/products/magento.html">Beveiligingsbulletin Adobe</a></li>
+            <li><a href="https://helpx.adobe.com/security/products/magento.html">Adobe Security Bulletin</a></li>
             <li><a href="https://experienceleague.adobe.com/docs/commerce-admin/b2b/release-notes.html">B2B voor Adobe Commerce</a></li>
           </ul>
         </td>
@@ -48,15 +48,12 @@ Gebruik de volgende lijst om versienota&#39;s en belangrijke informatie met betr
         <p>Meer informatie over de meest recente verbeteringen op het gebied van innovatieve Commerce-handelsservices.</p>
           <ul>
             <li><a href="https://experienceleague.adobe.com/docs/commerce-admin/customers/audience-activation.html">Audience Activation</a></li>
-            <li><a href="https://experienceleague.adobe.com/docs/commerce-channels/amazon/release-notes.html">Amazon-Sales Channel</a></li>
             <li><a href="https://experienceleague.adobe.com/docs/commerce-merchant-services/catalog-service/release-notes.html">Catalogusservice</a></li>
-            <li><a href="https://experienceleague.adobe.com/docs/commerce-channels/channel-manager/release-notes.html">Kanaalmanager (Marketplace-verkoop van het merk Walmart)</a></li>
             <li><a href="https://experienceleague.adobe.com/docs/commerce-merchant-services/experience-platform-connector/release-notes.html">Experience Platform Connector</a></li>
             <li><a href="https://experienceleague.adobe.com/docs/commerce-merchant-services/live-search/release-notes.html">Live zoeken</a></li>
             <li><a href="https://experienceleague.adobe.com/docs/commerce-merchant-services/payment-services/release-notes.html">Betalingsdiensten</a></li>
-            <li><a href="https://experienceleague.adobe.com/docs/commerce-merchant-services/product-recommendations/release-notes.html">Product Recommendations</a></li>
+            <li><a href="https://experienceleague.adobe.com/docs/commerce-merchant-services/product-recommendations/release-notes.html">Aanbevelingen voor producten</a></li>
             <li><a href="https://experienceleague.adobe.com/docs/commerce-merchant-services/user-guides/integration-services/saas.html">Services Connector</a></li>
-            <li><a href="https://experienceleague.adobe.com/docs/commerce-merchant-services/store-fulfillment/release-notes.html?lang=en">Afhandeling van winkel</a></li>
           </ul>
         </td>
       <td><strong> Hulpmiddelen </strong>

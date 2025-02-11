@@ -2,7 +2,7 @@
 title: Opmerkingen bij de release van Adobe Commerce 2.4.3 Beveiligingspatches
 description: Leer meer over oplossingen voor beveiligingsproblemen, beveiligingsverbeteringen en andere beveiligingsupdates die zijn opgenomen in de beveiligingspatchreleases voor Adobe Commerce versie 2.4.3.
 exl-id: 72d343cd-83d7-48ce-976a-e26ba1b8db27
-source-git-commit: 95ea96a566b0579a22b2ba738bd4a4bceef8cd9c
+source-git-commit: b63fa9a8b2b59f6e8dfd7003e75c66caf99d5e81
 workflow-type: tm+mt
 source-wordcount: '931'
 ht-degree: 0%
@@ -12,13 +12,13 @@ ht-degree: 0%
 
 # Opmerkingen bij de release voor beveiligingspatches van Adobe Commerce 2.4.3
 
-{{$include /help/_includes/security-patch-release-notes-intro.md}}
+{{$include /help/_includes/release-notes/security-patch-intro.md}}
 
 ## Adobe Commerce 2.4.3-p3
 
 Het beveiligingsrelease van Adobe Commerce 2.4.3-p3 biedt beveiligingsoplossingen voor kwetsbaarheden die zijn geïdentificeerd in eerdere versies van 2.4.3. Deze release bevat ook beveiligingsverbeteringen die de naleving van de meest recente best practices op het gebied van beveiliging verbeteren.
 
-Voor de recentste informatie over de veiligheidsinsectenmoeilijke situaties, zie {het Bulletin van de Veiligheid van de Adobe APSB22-38 ](https://helpx.adobe.com/security/products/magento/apsb22-38.html).[
+Voor de recentste informatie over de veiligheidsinsectenmoeilijke situaties, zie [ Bulletin van de Veiligheid van Adobe APSB22-38 ](https://helpx.adobe.com/security/products/magento/apsb22-38.html).
 
 ### Toepassen op `AC-3022.patch` om DHL als scheepvaartmaatschappij te blijven aanbieden
 
@@ -33,7 +33,7 @@ DHL heeft schemaversie 6.2 geïntroduceerd en zal schemaversie 6.0 in de nabije 
 
 De Adobe Commerce 2.4.3-p2 veiligheidsversie verstrekt veiligheidsinsectenmoeilijke situaties voor kwetsbaarheid die in vorige versies zijn geïdentificeerd. Deze release bevat ook beveiligingsverbeteringen die de naleving van de meest recente best practices op het gebied van beveiliging verbeteren.
 
-Voor de recentste informatie over de veiligheidsinsectenmoeilijke situaties, zie {het Bulletin van de Veiligheid van de Adobe APSB22-13 ](https://helpx.adobe.com/security/products/magento/apsb22-13.html).  [  De patchrelease verhelpt ook de kwetsbaarheid die `MDVA-43395_EE_2.4.3-p1_COMPOSER_v1.patch.zip`, `MDVA-43443_EE_2.4.3-p1_COMPOSER_v1.patch.zip`, `MDVA-43395_EE_2.4.3-p1_COMPOSER_v1.patch` en `MDVA-43443_EE_2.4.3-p1_COMPOSER_v1.patch` verhelpen.
+Voor de recentste informatie over de veiligheidsinsectenmoeilijke situaties, zie [ Bulletin van de Veiligheid van Adobe APSB22-13 ](https://helpx.adobe.com/security/products/magento/apsb22-13.html).  De patchrelease verhelpt ook de kwetsbaarheid die `MDVA-43395_EE_2.4.3-p1_COMPOSER_v1.patch.zip`, `MDVA-43443_EE_2.4.3-p1_COMPOSER_v1.patch.zip`, `MDVA-43395_EE_2.4.3-p1_COMPOSER_v1.patch` en `MDVA-43443_EE_2.4.3-p1_COMPOSER_v1.patch` verhelpen.
 
 
 ### Toepassen op `AC-3022.patch` om DHL als scheepvaartmaatschappij te blijven aanbieden
@@ -59,10 +59,10 @@ DHL heeft schemaversie 6.2 geïntroduceerd en zal schemaversie 6.0 in de nabije 
 
 ## 2.4.3-p1
 
-De Adobe Commerce 2.4.3-p1-beveiligingsrelease biedt oplossingen voor beveiligingsproblemen voor kwetsbaarheden die zijn geïdentificeerd in de vorige release (Adobe Commerce 2.4.3 en Magento Open Source 2.4.3). Deze release bevat ook beveiligingsverbeteringen die de naleving van de meest recente best practices op het gebied van beveiliging verbeteren.
+De beveiligingsrelease van Adobe Commerce 2.4.3-p1 biedt oplossingen voor beveiligingsproblemen voor kwetsbaarheden die in de vorige versie zijn geïdentificeerd (Adobe Commerce 2.4.3 en Magento Open Source 2.4.3). Deze release bevat ook beveiligingsverbeteringen die de naleving van de meest recente best practices op het gebied van beveiliging verbeteren.
 
 
-Voor de recentste informatie over de veiligheidsinsectenmoeilijke situaties, zie {het Bulletin van de Veiligheid van de Adobe APSB21-86 ](https://helpx.adobe.com/security/products/magento/apsb21-86.html). [ De flardversie verstrekt ook insectenmoeilijke situaties voor de [ Braintree ](https://experienceleague.adobe.com/docs/commerce-admin/stores-sales/payments/braintree.html), [ Klarna ](https://marketplace.magento.com/klarna-m2-klarna.html), en [ Vertex ](https://marketplace.magento.com/vertexinc-vertex-tax-module.html) leverancier-ontwikkelde uitbreidingen.
+Voor de recentste informatie over de veiligheidsinsectenmoeilijke situaties, zie [ Bulletin van de Veiligheid van Adobe APSB21-86 ](https://helpx.adobe.com/security/products/magento/apsb21-86.html). De flardversie verstrekt ook insectenmoeilijke situaties voor [ Braintree ](https://experienceleague.adobe.com/docs/commerce-admin/stores-sales/payments/braintree.html), [ Klarna ](https://marketplace.magento.com/klarna-m2-klarna.html), en [ Vertex ](https://marketplace.magento.com/vertexinc-vertex-tax-module.html) leverancier-ontwikkelde uitbreidingen.
 
 ### Toepassen op `AC-3022.patch` om DHL als scheepvaartmaatschappij te blijven aanbieden
 
@@ -78,7 +78,7 @@ Deze release bevat de volgende hotfix en alle hotfixes die zijn vrijgegeven voor
 
 **Identiteitskaart van de Zitting is verwijderd uit het gegevensbestand**. Deze codeverandering kan in het breken van veranderingen resulteren als de verkopers aanpassingen of geïnstalleerde uitbreidingen hebben die onbewerkte zitting IDs gebruiken die in het gegevensbestand worden opgeslagen. <!-- MC-40976-->
 
-**Beperkte admin toegang tot de omslagen van de Galerij van Media**. De standaardbevoegdheden van de Medialerie staan nu alleen directorybewerkingen toe (weergeven, uploaden, verwijderen en maken) die expliciet zijn toegestaan door de configuratie. Admin-gebruikers hebben geen toegang meer tot media-elementen via de medialerie die buiten de mappen `catalog/category` of `wysiwyg` zijn geüpload. Beheerders die toegang willen krijgen tot media-elementen, moeten deze naar een expliciet toegestane map verplaatsen of hun configuratie-instellingen aanpassen. Zie [ de omslagtoestemmingen van Media Library wijzigen ](https://developer.adobe.com/commerce/php/tutorials/backend/modify-image-library-permissions/). <!-- B2B-1897-->
+**Beperkte admin toegang tot de omslagen van de Galerij van Media**. De standaardbevoegdheden van de Medialerie staan nu alleen directorybewerkingen toe (weergeven, uploaden, verwijderen en maken) die expliciet zijn toegestaan door de configuratie. Admin-gebruikers hebben geen toegang meer tot media-elementen via de medialerie die buiten de mappen `catalog/category` of `wysiwyg` zijn geüpload. Beheerders die toegang willen krijgen tot media-elementen, moeten deze naar een expliciet toegestane map verplaatsen of hun configuratie-instellingen aanpassen. Zie [ de omslagtoestemmingen van de Bibliotheek van Media wijzigen ](https://developer.adobe.com/commerce/php/tutorials/backend/modify-image-library-permissions/). <!-- B2B-1897-->
 
 **Verlaagde grenzen aan de vraagingewikkeldheid van GraphQL**. De GraphQL maximum toegestane vraagingewikkeldheid is verminderd om ontkenning-van-Dienst (DOS) aanvallen te verhinderen. Zie [ de veiligheidsconfiguratie van GraphQL ](https://developer.adobe.com/commerce/webapi/graphql/usage/security-configuration/). <!-- PWA-1700-->
 
