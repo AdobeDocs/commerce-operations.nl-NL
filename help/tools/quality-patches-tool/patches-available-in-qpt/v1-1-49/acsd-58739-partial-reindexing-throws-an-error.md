@@ -4,7 +4,7 @@ description: Pas de ACSD-55241-patch toe om het Adobe Commerce-probleem op te lo
 feature: Inventory, Products
 role: Admin, Developer
 exl-id: b4e6b8b4-43de-4434-94fb-6269a75e1c28
-source-git-commit: 81c78439f7c243437b7b76dc80560c847af95ace
+source-git-commit: c643d55823ae0791ecfa0f2220116bbcbd02668a
 workflow-type: tm+mt
 source-wordcount: '330'
 ht-degree: 0%
@@ -35,7 +35,7 @@ Bij gedeeltelijk opnieuw indexeren treedt een fout op.
 
 <u> Stappen om </u> te reproduceren:
 
-1. Voeg slave-verbindingsinstellingen toe aan de `app/etc/ev.php` .
+1. Voeg slave-verbindingsinstellingen toe aan de `app/etc/env.php` .
 1. Genereer maximaal 10000 producten en voer de volgende opdracht uit:
 
    ```
@@ -68,7 +68,7 @@ Geen fout.
 
 Om individuele flarden toe te passen, gebruik de volgende verbindingen afhankelijk van uw plaatsingsmethode:
 
-* Adobe Commerce of Magento Open Source op locatie: [[!DNL Quality Patches Tool] > Gebruik ](/help/tools/quality-patches-tool/usage.md) in de handleiding [!DNL Quality Patches Tool]
+* Op locatie Adobe Commerce of Magento Open Source: [[!DNL Quality Patches Tool] > Gebruik ](/help/tools/quality-patches-tool/usage.md) in de handleiding [!DNL Quality Patches Tool]
 * Adobe Commerce op wolkeninfrastructuur: [ Verbeteringen en Patches > Patches toepassen ](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html) in Commerce op de gids van de Infrastructuur van de Wolk
 
 ## Gerelateerde lezing
