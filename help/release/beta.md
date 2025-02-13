@@ -2,9 +2,9 @@
 title: Beta-releases
 description: Leer meer over de bètareleases van Adobe Commerce en hoe u hieraan kunt deelnemen.
 exl-id: 662cb061-995f-4e09-a2ef-9e607cc0000b
-source-git-commit: 4643c8392b6d92a2ccbbc2ec5b27d75c112d7521
+source-git-commit: c29602d6f1619c0b32feb48843ec01b350a3ae32
 workflow-type: tm+mt
-source-wordcount: '1097'
+source-wordcount: '873'
 ht-degree: 0%
 
 ---
@@ -18,11 +18,11 @@ bètaprogramma&#39;s van Adobe Commerce zijn een manier voor handelaren om toega
 
 >[!IMPORTANT]
 >
->Beta-releases kunnen defecten bevatten en worden geleverd als &quot;AS IS&quot; zonder enige garantie. Adobe is niet verplicht de bètareleases te onderhouden, te corrigeren, bij te werken, te wijzigen, te wijzigen of anderszins te ondersteunen (via Adobe Support Services of anderszins). Klanten wordt aangeraden voorzichtig te zijn en op geen enkele wijze te vertrouwen op de correcte werking of prestaties van de bètareleases en/of begeleidende documentatie of materialen. Functies en API&#39;s in bèta kunnen zonder voorafgaande kennisgeving worden gewijzigd. Bijgevolg is elk gebruik van de bètareleases volledig op eigen risico van de klant.
+>Beta-releases kunnen defecten bevatten en worden geleverd als &quot;AS IS&quot; zonder enige garantie. Adobe is niet verplicht om de bètareleases te onderhouden, te corrigeren, bij te werken, te wijzigen of anderszins te ondersteunen (via Adobe Support Services of anderszins). Klanten wordt aangeraden voorzichtig te zijn en op geen enkele wijze te vertrouwen op de correcte werking of prestaties van de bètareleases en/of begeleidende documentatie of materialen. Functies en API&#39;s in bèta kunnen zonder voorafgaande kennisgeving worden gewijzigd. Bijgevolg is elk gebruik van de bètareleases volledig op eigen risico van de klant.
 
 ## Voordelen van deelname
 
-Het krijgen van vroege toegang tot eigenschappen die de Adobe ontwikkelt verstrekt klanten en partners de capaciteit om terugkoppelen te verstrekken, productontwikkeling te vormen, en zich voor te bereiden om nieuwe mogelijkheden vóór algemene beschikbaarheid aan te nemen.
+Het krijgen van vroege toegang tot eigenschappen die Adobe ontwikkelt verstrekt klanten en partners de capaciteit om terugkoppelen te verstrekken, productontwikkeling te vormen, en zich voor te bereiden om nieuwe mogelijkheden vóór algemene beschikbaarheid aan te nemen.
 
 ## Huidige Beta-programma&#39;s
 
@@ -53,22 +53,6 @@ Deze bèta steunt drie nieuwe mogelijkheden in [`productSearch` vraag ](https://
 Deze nieuwe voorwaarden verbeteren het het filtreren van de onderzoeksvraag mechanisme om onderzoeksresultaten te raffineren. Deze nieuwe voorwaarden hebben geen invloed op de hoofdzoekquery. Om aan bèta deel te nemen, verzend een e-mailverzoek naar [ handel-opslag-diensten ](mailto:commerce-storefront-services@adobe.com).
 
 Om Live Onderzoek bèta te installeren, zie de [ Levende gids van het Onderzoek ](https://experienceleague.adobe.com/en/docs/commerce-merchant-services/live-search/install#install-the-live-search-beta).
-
-### Experience Manager Assets Integration for Commerce (Private Beta)
-
-De Experience Manager Assets Integration for Commerce maakt een efficiënt beheer en levering mogelijk van een groot aantal productafbeeldingen van Experience Manager Assets naar Adobe Commerce, waarbij weinig of geen operationele inspanningen vereist zijn.
-
-Belangrijkste kenmerken:
-
-- Integratie met plug-and-play-technologie — Verstrek een Adobe die Experience Manager Assets en Adobe Commerce de mogelijkheid biedt om hun producten te laten focussen op wat het belangrijkst is, met lagere bedrijfskosten en verbeterde efficiëntie.
-
-- Pas productafbeeldingen aan op schaal-Gebruik Experience Manager Assets om miljoenen productvariaties te genereren voor gepersonaliseerde Commerce-ervaringen met eenvoudige bewerkingsgereedschappen op basis van de gebruikersinterface, creatieve inhoud maken met behulp van Adobe Firefly en toegewezen workflows voor bedrijfsmiddelen om de consistentie van merken te garanderen. Als u tevreden bent met de middelen, kunt u deze naadloos leveren aan uw Commerce-winkeliers via de Experience Manager Assets Integration.
-
-- Eenvoudig aan boord nemen - Vereenvoudig uw zakelijke instaptoegang met een configureerbaar synchronisatieproces dat volledige synchronisatie tussen de Experience Manager Assets-opslagplaats en de Commerce-catalogus mogelijk maakt.
-
-- Flexibele matchingstrategie - De integratie omvat standaardalgoritmen voor middelenmatching op basis van product-SKU&#39;s die afbeeldingen synchroniseren tussen AEM Assets en Commerce, en deze is uitbreidbaar met Adobe Developer App Builder. Werk samen met uw partner van de oplossing om een aangepaste strategie voor het afstemmen van bedrijfsmiddelen bovenop de integratie te bouwen om elke structuur van opslagplaatsen voor middelenbeheer te kunnen gebruiken.
-
-Om aan bèta deel te nemen, verzend een e-mailverzoek naar [ Shaun McCran ](mailto:mccran@adobe.com).
 
 ### IBM Sterling Order Management System Integration (Private Beta)
 
