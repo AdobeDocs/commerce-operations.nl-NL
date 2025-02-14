@@ -2,9 +2,9 @@
 user-guide-title: Gereedschappen
 user-guide-description: Leer meer over de verschillende gereedschappen die u met Adobe Commerce kunt gebruiken, hun gebruik, het installatieproces en hoe u toegang krijgt.
 feature: Configuration
-source-git-commit: 329a9413eca2de00451ee694501cca2cf0c57c30
+source-git-commit: fcff1ac0ed1b36952adb54098154fd039c7013a4
 workflow-type: tm+mt
-source-wordcount: '6990'
+source-wordcount: '6994'
 ht-degree: 0%
 
 ---
@@ -735,6 +735,8 @@ ht-degree: 0%
          - [ACSD-63325: De &quot;Fout van de Syntaxis: Onverwachte &lt; EOF >&quot;fout wanneer het voorleggen van leeg  [!DNL GraphQL]  verzoek](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-58/acsd-63325-syntax-error-when-submitting-graphql-request.md)
          - [ACSD-63578: als u op het pictogram [!UICONTROL Delete] in [!UICONTROL Add to Order by SKU] klikt, wordt SKU niet verwijderd](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-58/acsd-63578-clicking-delete-in-add-to-order-by-sku-doesnot-remove-sku.md)
          - [ACSD-63329: standaardwaarden voor datum- en tijdvelden worden niet ingesteld bij het maken van producten met de REST API](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-58/acsd-63329-date-and-time-attributes-arent-set-when-creating-products-with-the-rest-api.md)
+      - v1.1.59 {#v1-1-59}
+         - [Overzicht: [!DNL Quality Patches Tool]  (QPT) v1.1.59](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-59/overview.md)
    - [Patch controleren voor Adobe Commerce-probleem met het gereedschap Kwaliteitspatches](quality-patches-tool/patches-available-in-qpt/check-patch-for-magento-issue-with-magento-quality-patches.md)
 - Verwijzing naar opdrachtregelprogramma&#39;s {#cli-reference}
    - [Adobe Commerce (ter plaatse)](reference/commerce-on-premises.md)
