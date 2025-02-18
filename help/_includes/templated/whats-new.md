@@ -1,7 +1,7 @@
 ---
-source-git-commit: 317a1f5d9a6b1ed4713fd7564f8afce12e519c90
+source-git-commit: 989bcdcb4bbd8f880a3e2c8add280a072998afd8
 workflow-type: tm+mt
-source-wordcount: '1105'
+source-wordcount: '984'
 ht-degree: 0%
 
 ---
@@ -10,6 +10,46 @@ ht-degree: 0%
 ## Nieuwe functies
 
 Deze pagina bevat de wijzigingen die in de afgelopen 60 dagen zijn aangebracht. Alle kleine updates, zoals het bewerken van kopieën, worden van deze lijst uitgesloten.
+
+### 14 februari 2025
+
+<table style="table-layout:auto;">
+  <thead>
+    <tr>
+      <th>Beschrijving</th>
+      <th>Type</th>
+      <th>Source</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><p>Toegevoegd de <a href="https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-59/overview"> beschrijving van de kwesties die door de flarden beschikbaar in QPT 1.1.59 versie </a> worden bevestigd</p>
+</td>
+      <td>nieuw onderwerp</td>
+      <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/8200051f16c7d12d09c1487a4e12258b52d8d805"> 820005 </a> (begaat)</td>
+    </tr>
+  </tbody>
+</table>
+
+### 13 februari 2025
+
+<table style="table-layout:auto;">
+  <thead>
+    <tr>
+      <th>Beschrijving</th>
+      <th>Type</th>
+      <th>Source</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><p>Toegevoegd de <a href="https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-58/acsd-63578-clicking-delete-in-add-to-order-by-sku-doesnot-remove-sku"> gedetailleerde beschrijving van de kwestie die door ACSD-63578 flard in QPT 1.1.58 wordt bevestigd versie </a></p>
+</td>
+      <td>nieuw onderwerp</td>
+      <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/bf22eac2923a78f112a999dbcb6be1bc6f5eb9db"> bf22ea </a> (begaat)</td>
+    </tr>
+  </tbody>
+</table>
 
 ### 11 februari 2025
 
@@ -447,90 +487,6 @@ Deze pagina bevat de wijzigingen die in de afgelopen 60 dagen zijn aangebracht. 
 </td>
       <td>nieuw onderwerp</td>
       <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/de06ef0133bf57169c80c82ca4bb4cb09671c63b"> de06ef </a> (begaat)</td>
-    </tr>
-  </tbody>
-</table>
-
-### 20 december 2024
-
-<table style="table-layout:auto;">
-  <thead>
-    <tr>
-      <th>Beschrijving</th>
-      <th>Type</th>
-      <th>Source</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td><p>Toegevoegd de <a href="https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-57/overview"> beschrijving van de kwesties die door de flarden beschikbaar in QPT 1.1.57 versie </a> worden bevestigd</p>
-</td>
-      <td>nieuw onderwerp</td>
-      <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/d3b5a9b2706d3338c950dfc495188e2038e3c997"> d3b5a9 </a> (begaat)</td>
-    </tr>
-  </tbody>
-</table>
-
-### 19 december 2024
-
-<table style="table-layout:auto;">
-  <thead>
-    <tr>
-      <th>Beschrijving</th>
-      <th>Type</th>
-      <th>Source</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td><p>Toegevoegd de <a href="https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-56/acsd-62979-incorrect-store-id-in-the-graphql-header-causes-a-fatal-memory-error"> gedetailleerde beschrijving van de kwestie die door ACSD-62979 flard in QPT 1.1.56 wordt bevestigd versie </a></p>
-</td>
-      <td>nieuw onderwerp</td>
-      <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/c9b27e2a82954a3874e9847eacc71f0515c99625"> c9b27e </a> (begaat)</td>
-    </tr>
-    <tr>
-      <td><p>Toegevoegd de <a href="https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-56/acsd-62577-storefront-search-performance-optimization"> gedetailleerde beschrijving van de kwestie die door ACSD-62577 flard in QPT 1.1.56 wordt bevestigd versie </a></p>
-</td>
-      <td>nieuw onderwerp</td>
-      <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/929a031257e68711734e9b90b1bd18bc751817c3"> 929a03 </a> (begaat)</td>
-    </tr>
-    <tr>
-      <td><p>Toegevoegd de <a href="https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-56/acsd-62971-stock-import-error-non-numeric-quantity"> gedetailleerde beschrijving van de kwestie die door ACSD-62971 flard in QPT 1.1.56 wordt bevestigd versie </a></p>
-</td>
-      <td>nieuw onderwerp</td>
-      <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/8fb92489c1118782fcf4bacd0859e275c7617856"> 8fb924 </a> (begaat)</td>
-    </tr>
-    <tr>
-      <td><p>Toegevoegd de <a href="https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-56/acsd-62475-fixes-gift-card-merging-issues-in-the-cart"> gedetailleerde beschrijving van de kwestie die door ACSD-62475 flard in QPT 1.1.56 wordt bevestigd versie </a></p>
-</td>
-      <td>nieuw onderwerp</td>
-      <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/c4d223265301f560b0078e832c775c0e2946165e"> c4d223 </a> (begaat)</td>
-    </tr>
-  </tbody>
-</table>
-
-### 18 december 2024
-
-<table style="table-layout:auto;">
-  <thead>
-    <tr>
-      <th>Beschrijving</th>
-      <th>Type</th>
-      <th>Source</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td><p>Toegevoegd de <a href="https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-55/acsd-62591-fixes-theme-doesnt-switch"> gedetailleerde beschrijving van de kwestie die door ACSD-62591 flard in QPT 1.1.55 versie </a> wordt bevestigd</p>
-</td>
-      <td>nieuw onderwerp</td>
-      <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/e41bd2f6d7ad2183418942f628d9da3317016cde"> e41bd2 </a> (begaat)</td>
-    </tr>
-    <tr>
-      <td><p>Toegevoegde uitgebreide steundata voor Adobe Commerce 2.4.4 en 2.4.5 aan het <a href="https://experienceleague.adobe.com/en/docs/commerce-operations/release/planning/lifecycle-policy"> levenscyclusbeleid </a>.</p>
-</td>
-      <td>belangrijke update</td>
-      <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/ad25af4928619fbf94671d15b1a5f6df30a16cc1"> ad25af </a> (begaat)</td>
     </tr>
   </tbody>
 </table>
