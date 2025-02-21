@@ -3,9 +3,9 @@ title: De toepassing configureren
 description: Meer informatie over de configuratie na installatie die vereist is voor Adobe Commerce-implementaties op locatie.
 feature: Install, Configuration
 exl-id: b1808664-10ec-4147-8251-a99f8b58f4be
-source-git-commit: ddf988826c29b4ebf054a4d4fb5f4c285662ef4e
+source-git-commit: e737ca014e90860b8ab023487625b07c0eeb1222
 workflow-type: tm+mt
-source-wordcount: '667'
+source-wordcount: '713'
 ht-degree: 0%
 
 ---
@@ -58,6 +58,14 @@ Zie een van de volgende bronnen voor meer informatie:
 * [ HowTo: Het uiteindelijke logboek roteert bevelleerprogramma met tien voorbeelden ](https://www.thegeekstuff.com/2010/07/logrotate-examples)
 * [ Uitwisseling van de Stapel ](https://unix.stackexchange.com/questions/85662/how-to-properly-automatically-manually-rotate-log-files-for-production-rails-app)
 * [`logrotate` man page ](https://linuxconfig.org/logrotate-8-manual-page)
+
+>[!AVAILABILITY]
+>
+>De volgende informatie over beschikbaarheid is van toepassing op Adobe Commerce voor projecten in de cloud-infrastructuur:
+>
+>* Starteromgevingen hebben geen logrotatie.
+>
+>* U kunt logrotatie niet configureren in Pro Integration-omgevingen. U moet een douaneoplossing/manuscript uitvoeren en [ vormt uw kruin ](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/configure/app/properties/crons-property) om het manuscript in werking te stellen zoals nodig.
 
 ### Opstelling iptables regels om de diverse diensten toe te laten om mee te delen
 
