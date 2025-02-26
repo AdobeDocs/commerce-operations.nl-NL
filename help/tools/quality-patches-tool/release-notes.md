@@ -2,9 +2,9 @@
 title: Opmerkingen bij de release
 description: Meer informatie over de patches die beschikbaar zijn voor Adobe Commerce en de problemen die ze oplossen.
 exl-id: 22262555-f5ea-49ad-98ad-ea8428ef66d5
-source-git-commit: 24cce88e5daccd8ad50e01b869f2682722cb8052
+source-git-commit: fa23ca7a760f25e6b77b94af15eec7d8a88e880e
 workflow-type: tm+mt
-source-wordcount: '24820'
+source-wordcount: '25023'
 ht-degree: 0%
 
 ---
@@ -20,6 +20,15 @@ ht-degree: 0%
 >[!INFO]
 >
 >Voor informatie over [!DNL quality patches] die door de Gemeenschap voor Magento Open Source wordt gecreeerd, zie de [ versienota&#39;s ](https://github.com/magento/quality-patches/blob/master/community-release-notes.md).
+
+## v1.1.60 {#v1-1-60}
+
+* **ACSD-63323** (voor Adobe Commerce >=2.4.7 &lt;2.4.8) - lost de kwestie op waar de **[!UICONTROL Select All]** optie niet werkt wanneer het toevoegen van producten aan een categorie. Bovendien zorgt het ervoor dat paginering en het label voor het recordaantal correct werken wanneer u producten aan een categorie toevoegt via het popup-raster.
+* **ACSD-63992** (voor Adobe Commerce >=2.4.4 &lt;2.4.8) - lost een kwestie op waar een regel van de kartprijs met een coupon en een voorwaarde die op een het verschepen methode wordt gebaseerd niet correct door Admin UI kan worden toegepast.
+* **ACSD-64111** (voor Adobe Commerce en Magento Open Source >=2.4.4 &lt;2.4.8) - lost de kwestie op waar een fout voorkomt wanneer het plaatsen van genestelde voorwaarden voor een component van het Product in [!DNL Page Builder].
+* **ACSD-64137** (voor Adobe Commerce en Magento Open Source >=2.4.4 &lt;2.4.8) - lost het probleem op waar het zoeken naar ophaalplaatsen door postcode niet behoorlijk voor Nederlandse localisatie werkt.
+* **ACSD-64149** (voor Adobe Commerce en Magento Open Source >=2.4.4 &lt;2.4.8) - lost de kwestie op waar een klantensegment met een voorwaarde van de datumwaaier kan worden bewaard wanneer slechts één van de data wordt uitgegeven.
+* Versies bijgewerkt: **mDVA-12304**, **ACSD-45049**, **mDVA-43824**, **ACSD-46192**, **ACSD-50368**, **ACSD-5213**, **ACSD-47657**, **ACSD-51819**, **ACSD-54966-V2**, **** ACSD-55628, **ACSD-45049**, **ACSD-63242**
 
 ## v1.1.59 {#v1-1-59}
 
