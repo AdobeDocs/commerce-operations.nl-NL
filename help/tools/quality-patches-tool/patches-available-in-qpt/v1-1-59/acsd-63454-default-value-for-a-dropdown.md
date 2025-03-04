@@ -3,13 +3,13 @@ title: 'ACSD-63454: De standaardwaarde voor een vervolgkeuzelijst en de kenmerke
 description: Pas de ACSD-63454-patch toe om het Adobe Commerce-probleem op te lossen waarbij de standaardwaarde voor een vervolgkeuzelijst en meerdere selectiekenmerken niet correct in de database wordt opgeslagen.
 feature: Attributes, Products
 role: Admin, Developer
-source-git-commit: 1c872ebeff05c0c84756d7abd7f43c4652032d3f
+exl-id: fa79a3bb-e615-44cb-8d84-da892f924fd0
+source-git-commit: cb73a5a346ec0e8acd59accf73605e25ef35c3ca
 workflow-type: tm+mt
-source-wordcount: '403'
+source-wordcount: '401'
 ht-degree: 0%
 
 ---
-
 
 # ACSD-63454: de standaardwaarde voor de kenmerken [!UICONTROL Dropdown] en [!UICONTROL Multiple Select] wordt niet correct opgeslagen in de database
 
@@ -35,19 +35,19 @@ De standaardwaarde voor de kenmerken [!UICONTROL Dropdown] en [!UICONTROL Multip
 
 <u> Stappen om </u> te reproduceren:
 
-1. Ga naar **[!UICONTROL Stores]** > [!UICONTROL Attributes] > **[!UICONTROL Product]** en meld u aan op de achtergrond.
+1. Ga naar **[!UICONTROL Stores]** > *[!UICONTROL Attributes]* > **[!UICONTROL Product]** en meld u aan op de achtergrond.
 1. Klik op **[!UICONTROL Add New Attribute]**.
 1. Stel op het tabblad **[!UICONTROL Properties]** het volgende in:
-   * [!UICONTROL Default Label] = test
-   * [!UICONTROL Catalog Input Type for Store Owner]= [!UICONTROL Multiple Select]
-   * [!UICONTROL Manage Options]: voeg 2 opties toe zonder **[!UICONTROL Is Default]** te selecteren.
+   * **[!UICONTROL Default Label]**: *test*
+   * **[!UICONTROL Catalog Input Type for Store Owner]**: *[!UICONTROL Multiple Select]*
+   * **[!UICONTROL Manage Options]**: voeg twee opties toe zonder **[!UICONTROL Is Default]** te selecteren.
 1. Klik op **[!UICONTROL Save Attribute]**.
-1. Controle in het gegevensbestand dat de *default_value* kolom leeg is.
+1. Controleer in de database of de kolom `default_value` leeg is.
 
    `select attribute_code, default_value from eav_attribute where attribute_code = 'test';`
 
 1. Ga terug en stel een van de twee opties in als **[!UICONTROL Is Default]** .
-1. Controleer opnieuw het gegevensbestand om ervoor te zorgen dat *default_value* nu geselecteerde optieidentiteitskaart bevat.
+1. Controleer de database nogmaals om te controleren of `default_value` nu de geselecteerde optie-id bevat.
 1. Ga terug en verander de standaardoptie door de andere optie te selecteren.
 
 <u> Verwachte resultaten </u>:
