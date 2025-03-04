@@ -2,9 +2,9 @@
 title: Systeemvereisten
 description: Gebruik deze verwijzing om vereiste softwaregebiedsdelen te identificeren die met de versies van Adobe Commerce zijn getest.
 exl-id: 008c9edc-7d72-403c-847f-0e3b77bbb197
-source-git-commit: ddf988826c29b4ebf054a4d4fb5f4c285662ef4e
+source-git-commit: 63c73a34eb6c61c83f00761e0510108485687596
 workflow-type: tm+mt
-source-wordcount: '728'
+source-wordcount: '762'
 ht-degree: 0%
 
 ---
@@ -15,7 +15,11 @@ Hieronder volgt een overzicht van softwareafhankelijkheden en services die zijn 
 
 Er zijn enkele verschillen in de afhankelijkheid van Commerce van de Cloud-infrastructuur. Serviceversie en compatibiliteitsondersteuning voor Adobe Commerce op cloudinfrastructuur worden bepaald door services die worden getest en geïmplementeerd in de gehoste cloudomgevingen, en verschillen soms van versies die worden ondersteund door Adobe Commerce-implementaties op locatie. Elasticsearch 7.17 wordt bijvoorbeeld ondersteund voor Commerce 2.4.4 voor on-premise implementaties, maar OpenSearch 1.2 wordt ondersteund voor Commerce 2.4.4 op Cloud-infrastructuur.
 
-De volgende lijsten tonen versies van derdesoftwaregebiedsdelen die de Adobe met specifieke versies van Adobe Commerce heeft getest.
+>[!NOTE]
+>
+>De systeemvereisten gelden alleen voor vrijgegeven versies van Adobe Commerce. Beta of eerdere versies voor toegang zijn niet inbegrepen. Zie de [ versienota&#39;s ](../release/release-notes/overview.md) om meer over de recentste vrijgegeven versies van Adobe Commerce te leren.
+
+In de volgende tabellen worden versies weergegeven van softwareafhankelijkheden van derden die Adobe heeft getest met specifieke Adobe Commerce-releases.
 
 Adobe ondersteunt alleen de combinatie van systeemvereisten die in de volgende tabellen wordt beschreven. 2.4.5 wordt bijvoorbeeld volledig getest met MariaDB 10.4. Adobe raadt u aan een upgrade naar MariaDB 10.4 uit te voeren voordat u de upgrade uitvoert naar versie 2.4.5.
 
@@ -121,7 +125,7 @@ De Agent van de Overdracht van de post (MTA) of een server SMTP. Commerce op de 
 
 ### Geheugen
 
-Voor het upgraden van de toepassingen en extensies die u van de Commerce Marketplace en andere bronnen krijgt, is maximaal 2 GB RAM vereist. Als u een systeem met minder dan 2 GB van RAM gebruikt, creeer a [ wisseldossier ](https://support.magento.com/hc/en-us/articles/360032980432); anders, zou uw verbetering kunnen ontbreken.
+Voor het upgraden van de toepassingen en extensies die u van de Commerce Marketplace en andere bronnen ontvangt, is maximaal 2 GB RAM vereist. Als u een systeem met minder dan 2 GB van RAM gebruikt, creeer a [ wisseldossier ](https://support.magento.com/hc/en-us/articles/360032980432); anders, zou uw verbetering kunnen ontbreken.
 
 ### Besturingssystemen (Linux x86-64)
 
