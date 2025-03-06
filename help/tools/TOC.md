@@ -2,9 +2,9 @@
 user-guide-title: Gereedschappen
 user-guide-description: Leer meer over de verschillende gereedschappen die u met Adobe Commerce kunt gebruiken, hun gebruik, het installatieproces en hoe u toegang krijgt.
 feature: Configuration
-source-git-commit: f59d574087a4eaa33643d6de16e702a19a3606f9
+source-git-commit: 2dc974d2887fb725e1854aef2cbdd63616e3846d
 workflow-type: tm+mt
-source-wordcount: '7094'
+source-wordcount: '7108'
 ht-degree: 0%
 
 ---
@@ -735,6 +735,7 @@ ht-degree: 0%
          - [ACSD-63325: De &quot;Fout van de Syntaxis: Onverwachte &lt; EOF >&quot;fout wanneer het voorleggen van leeg  [!DNL GraphQL]  verzoek](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-58/acsd-63325-syntax-error-when-submitting-graphql-request.md)
          - [ACSD-63578: als u op het pictogram [!UICONTROL Delete] in [!UICONTROL Add to Order by SKU] klikt, wordt SKU niet verwijderd](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-58/acsd-63578-clicking-delete-in-add-to-order-by-sku-doesnot-remove-sku.md)
          - [ACSD-63329: standaardwaarden voor datum- en tijdvelden worden niet ingesteld bij het maken van producten met de REST API](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-58/acsd-63329-date-and-time-attributes-arent-set-when-creating-products-with-the-rest-api.md)
+         - [ACSD-63572: de tijdelijke lijsten van de catalogusregel van de indexeerder worden niet schoongemaakt als het indexeerproces wordt geëindigd](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-58/acsd-63572-catalogrule-indexer-temporary-tables-arent-cleaned-if-the-indexer-process-is-terminated.md)
       - v1.1.59 {#v1-1-59}
          - [Overzicht: [!DNL Quality Patches Tool]  (QPT) v1.1.59](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-59/overview.md)
          - [ACSD-64112: de uitvoering van de uitsnede indexer_update_all_views mislukt wanneer MAGE_INDEXER_THREADS_COUNT is ingesteld](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-59/acsd-64112-indexer-update-all-views-cron-execution-fails.md)
