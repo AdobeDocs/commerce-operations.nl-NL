@@ -4,9 +4,9 @@ description: Dit artikel biedt een oplossing voor het probleem waarbij gebruiker
 feature: Orders, Returns
 role: Admin
 exl-id: 67740003-a71e-41bf-afda-ca3e32290115
-source-git-commit: a1c5898626fb8419af017a29a009a0a2c069326e
+source-git-commit: ab6d0a9814fe5f9dae368a1adbf99d622cdc9d92
 workflow-type: tm+mt
-source-wordcount: '372'
+source-wordcount: '334'
 ht-degree: 0%
 
 ---
@@ -62,7 +62,4 @@ Om individuele flarden toe te passen, gebruik de volgende verbindingen afhankeli
 
 Meer informatie over [!DNL Quality Patches Tool] vindt u in:
 
-* [[!DNL Quality Patches Tool]  vrijgegeven: een nieuw hulpmiddel om kwaliteitspatches ](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/announcements/commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches) in de steunkennisbasis zelf-te dienen.
-* [ Controle als het flard voor uw kwestie van Adobe Commerce beschikbaar is gebruikend  [!DNL Quality Patches Tool]](/help/tools/quality-patches-tool/patches-available-in-qpt/check-patch-for-magento-issue-with-magento-quality-patches.md) in de [!UICONTROL Quality Patches Tool] gids.
-
-Voor informatie over andere flarden beschikbaar in QPT, verwijs naar [[!DNL Quality Patches Tool]: Onderzoek naar flarden ](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html) in de gids van het Hulpmiddel van de Patches van de Kwaliteit.
+* [[!DNL Quality Patches Tool]: Een zelfbedieningshulpmiddel voor kwaliteitspatches ](/help/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches.md) in de gids van Hulpmiddelen.

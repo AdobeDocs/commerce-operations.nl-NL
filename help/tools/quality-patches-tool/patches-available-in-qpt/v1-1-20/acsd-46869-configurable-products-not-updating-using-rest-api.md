@@ -4,9 +4,9 @@ description: De ACSD-46869-patch verhelpt het probleem waarbij de configureerbar
 feature: REST, Checkout, Configuration, Orders, Products
 role: Admin
 exl-id: f03d4b24-ac95-406e-8e9d-908149b9207c
-source-git-commit: a1c5898626fb8419af017a29a009a0a2c069326e
+source-git-commit: 470cee19ced38fb90a9565c8bb23e2f9fa97595a
 workflow-type: tm+mt
-source-wordcount: '401'
+source-wordcount: '364'
 ht-degree: 0%
 
 ---
@@ -66,7 +66,4 @@ Om individuele flarden toe te passen, gebruik de volgende verbindingen afhankeli
 
 Meer informatie over [!DNL Quality Patches Tool] vindt u in:
 
-* [[!DNL Quality Patches Tool]  vrijgegeven: een nieuw hulpmiddel om kwaliteitspatches ](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/announcements/commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches) in de steunkennisbasis zelf-te dienen.
-* [ Controle als het flard voor uw kwestie van Adobe Commerce beschikbaar is gebruikend  [!DNL Quality Patches Tool]](/help/tools/quality-patches-tool/patches-available-in-qpt/check-patch-for-magento-issue-with-magento-quality-patches.md) in de [!UICONTROL Quality Patches Tool] gids.
-
-Voor info over andere flarden beschikbaar in [!DNL QPT], verwijs naar [ Patches beschikbaar in  [!DNL QPT] ](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html) in de gids van het Hulpmiddel van de Patches van de Kwaliteit.
+* [[!DNL Quality Patches Tool]: Een zelfbedieningshulpmiddel voor kwaliteitspatches ](/help/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches.md) in de gids van Hulpmiddelen.
