@@ -2,9 +2,9 @@
 user-guide-title: Gereedschappen
 user-guide-description: Leer meer over de verschillende gereedschappen die u met Adobe Commerce kunt gebruiken, hun gebruik, het installatieproces en hoe u toegang krijgt.
 feature: Configuration
-source-git-commit: 2dc974d2887fb725e1854aef2cbdd63616e3846d
+source-git-commit: 3f2996a41f14d830c8023256c78c9bb85b1718d2
 workflow-type: tm+mt
-source-wordcount: '7108'
+source-wordcount: '7202'
 ht-degree: 0%
 
 ---
@@ -27,6 +27,19 @@ ht-degree: 0%
    - [Waarschuwingen](site-wide-analysis-tool/alerts.md)
    - [Patches](site-wide-analysis-tool/patches.md)
 
+- Beheerde waarschuwingen voor Adobe Commerce {#managed-alerts-for-adobe-commerce}
+   - [Beheerde alarm op Adobe Commerce: [!DNL Redis]  geheugen kritieke alarm](/help/tools/managed-alerts-for-adobe-commerce/managed-alerts-on-magento-commerce-redis-memory-critical-alert.md)
+   - [Beheerde waarschuwingen voor Adobe Commerce: waarschuwing voor een schijf](/help/tools/managed-alerts-for-adobe-commerce/managed-alerts-for-magento-commerce-disk-warning-alert.md)
+   - [Beheerde waarschuwingen voor Adobe Commerce](/help/tools/managed-alerts-for-adobe-commerce/managed-alerts-for-magento-commerce.md)
+   - [Beheerde waarschuwingen voor Adobe Commerce: kritieke schijf](/help/tools/managed-alerts-for-adobe-commerce/managed-alerts-for-magento-commerce-disk-critical-alert.md)
+   - [Beheerde alarm op Adobe Commerce: [!DNL Redis]  geheugenalarm](/help/tools/managed-alerts-for-adobe-commerce/managed-alerts-on-magento-commerce-redis-memory-warning-alert.md)
+   - [Beheerde waarschuwingen voor Adobe Commerce: waarschuwing over geheugengebruik](/help/tools/managed-alerts-for-adobe-commerce/managed-alerts-for-magento-commerce-memory-warning-alert.md)
+   - [Beheerde waarschuwingen over Adobe Commerce: kritieke CPU-waarschuwing](/help/tools/managed-alerts-for-adobe-commerce/managed-alerts-on-magento-commerce-cpu-critical-alert.md)
+   - [Beheerde waarschuwingen over Adobe Commerce: kritieke geheugenwaarschuwing](/help/tools/managed-alerts-for-adobe-commerce/managed-alerts-on-magento-commerce-memory-critical-alert.md)
+   - [Beheerde alarm voor Adobe Commerce: [!DNL Apdex]  kritiek alarm](/help/tools/managed-alerts-for-adobe-commerce/managed-alerts-for-magento-commerce-apdex-critical-alert.md)
+   - [Beheerde alarm op Adobe Commerce: [!DNL MariaDB]  alarm](/help/tools/managed-alerts-for-adobe-commerce/managed-alerts-on-magento-commerce-mariadb-alerts.md)
+   - [Beheerde alarm voor Adobe Commerce: [!DNL Apdex]  waarschuwingsalarm](/help/tools/managed-alerts-for-adobe-commerce/managed-alerts-for-magento-commerce-apdex-warning-alert.md)
+   - [Beheerde waarschuwingen voor Adobe Commerce: waarschuwing voor CPU](/help/tools/managed-alerts-for-adobe-commerce/managed-alerts-for-magento-commerce-cpu-warning-alert.md)
 - Gereedschap Kwaliteitspatches {#quality-patches-tool}
    - [[!DNL Quality Patches Tool]: een zelfbedieningsprogramma voor kwaliteitspatches](/help/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches.md)
    - [[!DNL Quality Patches Tool]: Onderzoek naar flarden ](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html) {target="_blank"}
