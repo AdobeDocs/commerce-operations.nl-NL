@@ -2,9 +2,9 @@
 title: Systeemvereisten
 description: Gebruik deze verwijzing om vereiste softwaregebiedsdelen te identificeren die met de versies van Adobe Commerce zijn getest.
 exl-id: 008c9edc-7d72-403c-847f-0e3b77bbb197
-source-git-commit: 63c73a34eb6c61c83f00761e0510108485687596
+source-git-commit: 0d8dcfd7064488787ddd0ff54c82c77f3e4d1cfb
 workflow-type: tm+mt
-source-wordcount: '762'
+source-wordcount: '760'
 ht-degree: 0%
 
 ---
@@ -13,7 +13,7 @@ ht-degree: 0%
 
 Hieronder volgt een overzicht van softwareafhankelijkheden en services die zijn getest voor Adobe Commerce.
 
-Er zijn enkele verschillen in de afhankelijkheid van Commerce van de Cloud-infrastructuur. Serviceversie en compatibiliteitsondersteuning voor Adobe Commerce op cloudinfrastructuur worden bepaald door services die worden getest en geïmplementeerd in de gehoste cloudomgevingen, en verschillen soms van versies die worden ondersteund door Adobe Commerce-implementaties op locatie. Elasticsearch 7.17 wordt bijvoorbeeld ondersteund voor Commerce 2.4.4 voor on-premise implementaties, maar OpenSearch 1.2 wordt ondersteund voor Commerce 2.4.4 op Cloud-infrastructuur.
+Er zijn enkele verschillen in de afhankelijkheden voor Commerce op Cloud. Serviceversie en compatibiliteitsondersteuning voor Adobe Commerce op Cloud worden bepaald door services die zijn getest en geïmplementeerd in de gehoste cloud-omgevingen en verschillen soms van versies die worden ondersteund door Adobe Commerce-implementaties op locatie. Elasticsearch 7.17 wordt bijvoorbeeld ondersteund voor Commerce 2.4.4 voor on-premise implementaties, maar OpenSearch 1 wordt ondersteund voor 2.4.4 Adobe Commerce op Cloud.
 
 >[!NOTE]
 >
