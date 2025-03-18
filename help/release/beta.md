@@ -2,9 +2,9 @@
 title: Beta-releases
 description: Leer meer over de bètareleases van Adobe Commerce en hoe u hieraan kunt deelnemen.
 exl-id: 662cb061-995f-4e09-a2ef-9e607cc0000b
-source-git-commit: c29602d6f1619c0b32feb48843ec01b350a3ae32
+source-git-commit: e569e8106930882323ab3ab046a3db0ee1da1503
 workflow-type: tm+mt
-source-wordcount: '873'
+source-wordcount: '975'
 ht-degree: 0%
 
 ---
@@ -27,6 +27,20 @@ Het krijgen van vroege toegang tot eigenschappen die Adobe ontwikkelt verstrekt 
 ## Huidige Beta-programma&#39;s
 
 Zie de volgende secties voor een lijst van actieve bètaprogramma&#39;s.
+
+### Adobe Commerce Optimizer
+
+Adobe Commerce Optimizer verbetert uw e-commerceervaring met een krachtige winkel, die organisch verkeer, klantenbetrokkenheid, en opbrengst bevordert.
+
+Met Adobe Commerce Optimizer kunt u:
+
+- Vergroot en schaal uw catalogus zonder de volledige handelstack opnieuw in te stellen.
+- Catalogusgegevens uit een willekeurige bron opnemen.
+- Bepaal bedrijfskanalen en beleid.
+- Creeer gepersonaliseerde onderzoek en aanbevelingen gebruikend AI en ML.
+- De essentiële beschikbaarheid van productgegevens weergeven, waaronder synchronisatiestatus en storefront-gebeurtenisgegevens voor nauwkeurige implementatie en probleemoplossing.
+
+[ leer meer ](https://experienceleague.adobe.com/docs/commerce/optimizer/overview.html) over Adobe Commerce Optimizer. Als u aan het vroege toegangsprogramma van Adobe Commerce Optimizer zou willen deelnemen, verzend een e-mailverzoek naar [ commerce-storefront-services@adobe.com ](mailto:commerce-storefront-services@adobe.com).
 
 ### Verbeterde zoekmogelijkheden voor Live zoeken (Public Beta)
 
