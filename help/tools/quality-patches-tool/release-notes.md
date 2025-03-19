@@ -2,9 +2,9 @@
 title: Opmerkingen bij de release
 description: Meer informatie over de patches die beschikbaar zijn voor Adobe Commerce en de problemen die ze oplossen.
 exl-id: 22262555-f5ea-49ad-98ad-ea8428ef66d5
-source-git-commit: fa23ca7a760f25e6b77b94af15eec7d8a88e880e
+source-git-commit: 0073f5e1b6de110ff640748457b7c644d71fcbe8
 workflow-type: tm+mt
-source-wordcount: '25023'
+source-wordcount: '25431'
 ht-degree: 0%
 
 ---
@@ -20,6 +20,22 @@ ht-degree: 0%
 >[!INFO]
 >
 >Voor informatie over [!DNL quality patches] die door de Gemeenschap voor Magento Open Source wordt gecreeerd, zie de [ versienota&#39;s ](https://github.com/magento/quality-patches/blob/master/community-release-notes.md).
+
+## v1.1.61 {#v1-1-61}
+
+* **ACP2E-3689** (voor Adobe Commerce en Magento Open Source >=2.4.7 &lt;2.4.8) - lost veelvoudige kwesties met de vertoning van de categorieboom op diepere niveaus op en weerspiegelt anker/niet-ankerverhoudingen.
+* **ACP2E-3705** (voor Adobe Commerce >=2.4.7 &lt;2.4.8) - lost een kwestie op waar de `indexer_update_all_views` kroonuitvoering ontbreekt wanneer `MAGE_INDEXER_THREADS_COUNT` wordt geplaatst.
+* **ACSD-63883** (voor Adobe Commerce >=2.4.4 &lt;2.4.7-p4) - lost de kwestie op waar de Lijst van de Aanvraag onjuist `items_count` in de reactie van GraphQL terugkeert.
+* **ACSD-63974** (voor Adobe Commerce >=2.4.4 &lt;2.4.8) - lost de kwestie op waar de pagina van de de lijstlijst van de Verzoek te veel tijd vergt om te laden wanneer er teveel punten zijn, door een pagineringseigenschap aan het de lijstnet van de Vereiste op de Storefront toe te voegen, die slechts gedeelten verslagen toont die tot het aantal verslagen per pagina beperkt zijn, van alle records tegelijk.
+* **ACSD-64178** (voor Adobe Commerce en Magento Open Source >=2.4.7 &lt;2.4.8) - lost de kwestie op waar de Vastgestelde Attributen uitgeeft pagina langzaam laadt als er duizenden productattributen zijn.
+* **ACSD-64209** (voor Adobe Commerce >=2.4.4 &lt;2.4.8) - lost de kwestie op waar de cron planner alle verhandelbare citaten terugwint zonder degenen met de status **[!UICONTROL ordered]** uit te sluiten, die een e-mail of e-mails veroorzaken om worden teweeggebracht.
+* **ACSD-64431** (voor Adobe Commerce en Magento Open Source >=2.4.7 &lt;2.4.8) - de `placeOrder` mutatie die de informatie van de couponcode in het verzoek bevat veroorzaakt niet meer een interne fout, maar toont in plaats daarvan aan dat de orde met succes werd geplaatst.
+* **ACSD-64467** (voor Adobe Commerce en Magento Open Source >=2.4.7 &lt;2.4.8) - lost de kwestie op waar de redacteur van WYSIWYG leeg na het bewaren van een categoriebeschrijving op het niveau van de archiefmening verschijnt.
+* **ACSD-64546** (voor Adobe Commerce en Magento Open Source >=2.4.4 &lt;2.4.8) - lost de kwestie op waar een generisch foutenbericht in UI voorkomt en een *Serie aan koordomzetting* uitzondering wordt opgeslagen in de logboeken tijdens de het verschepen van UPS etiketverwezenlijking, die ervoor zorgt dat de daadwerkelijke fout in UI wordt getoond en het correcte foutenbericht wordt opgeslagen in de logboeken.
+* **ACSD-64684** (voor Adobe Commerce >=2.4.4 &lt;2.4.8) - lost de kwestie op waar een bevestigingsfout voorkomt wanneer het uitgeven en het opslaan van een geschenkkaart met een waarde groter dan *999* toe te schrijven aan de komma (duizend separator) in het aantal *duizend (1.000)*.
+* Bijgewerkte versies: **ACSD-49392**, **ACSD-50368**, **ACSD-51819**, **ACSD-54966-V2**, **ACSD-57003**, **ACSD-62979**, **ACSD-64112**
+* Vervangen flarden: **ACSD-49392**, **ACSD-58739**, **ACSD-62689**, **ACSD-64112**
+* Afgekeurde flarden: **ACSD-46192**, **ACSD-52133**
 
 ## v1.1.60 {#v1-1-60}
 
