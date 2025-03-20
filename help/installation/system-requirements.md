@@ -2,9 +2,9 @@
 title: Systeemvereisten
 description: Gebruik deze verwijzing om vereiste softwaregebiedsdelen te identificeren die met de versies van Adobe Commerce zijn getest.
 exl-id: 008c9edc-7d72-403c-847f-0e3b77bbb197
-source-git-commit: 0d8dcfd7064488787ddd0ff54c82c77f3e4d1cfb
+source-git-commit: ca0c47cf9882bccbc55aca786f3e6615503662f3
 workflow-type: tm+mt
-source-wordcount: '760'
+source-wordcount: '759'
 ht-degree: 0%
 
 ---
@@ -64,7 +64,7 @@ Voor de configuratiebegeleiding van de Wolk, zie [ PHP montages ](https://experi
 
 Men adviseert dat u verifieert dat [ PHP OPcache ](https://www.php.net/manual/en/intro.opcache.php) om prestatiesredenen wordt toegelaten. De OPcache is in veel PHP distributies ingeschakeld. De extensie `opcache` wordt standaard geïnstalleerd in de Commerce-infrastructuur voor de cloud.
 
-Voor op-premiezaken, verifieer dat PHP OPCache het geïnstalleerd is, zie [ PHP montages ](prerequisites/php-settings.md). Of voor specifieke begeleiding op prestatiesmontages, zie de softwareaanbevelingen voor [ PHP montages ](https://experienceleague.adobe.com/docs/commerce-operations/performance-best-practices/software.html#php-settings) in de _Beste praktijken van Prestaties_ gids.
+Voor op-gebouw, verifieer dat PHP OPcache geïnstalleerd is, zie [ PHP montages ](prerequisites/php-settings.md). Of voor specifieke begeleiding op prestatiesmontages, zie de softwareaanbevelingen voor [ PHP montages ](https://experienceleague.adobe.com/docs/commerce-operations/performance-best-practices/software.html#php-settings) in de _Beste praktijken van Prestaties_ gids.
 
 Als u OPcache afzonderlijk moet installeren, zie de [ documentatie PHP OPcache ](https://www.php.net/manual/en/opcache.setup.php).
 
@@ -129,7 +129,9 @@ Voor het upgraden van de toepassingen en extensies die u van de Commerce Marketp
 
 ### Besturingssystemen (Linux x86-64)
 
-Linux-distributies, zoals RedHat Enterprise Linux (RHEL), CentOS, Ubuntu, Debian en dergelijke. Microsoft Windows en macOS worden niet ondersteund.
+Linux-distributies, zoals RedHat Enterprise Linux (RHEL), CentOS, Ubuntu, Debian en dergelijke.
+
+Microsoft Windows en macOS worden **niet** gesteund.
 
 Adobe Commerce heeft voor bepaalde bewerkingen de volgende systeemgereedschappen nodig:
 
