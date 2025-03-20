@@ -1,11 +1,11 @@
 ---
-source-git-commit: 7f7d8ca9ade089b305f0259d1caee8e20a1265a2
+source-git-commit: 1d192966d457d7f1b95254a3b9c59054e8b03629
 workflow-type: tm+mt
-source-wordcount: '104'
+source-wordcount: '124'
 ht-degree: 0%
 
 ---
-# Beschikbaarheid van producten van de Adobe Authored Extensions
+# Beschikbaarheid van producten voor Adobe Authored Extensions
 
 
 <table style="table-layout:auto">
@@ -51,6 +51,17 @@ ht-degree: 0%
           <td>
               <a href="https://developer.adobe.com/commerce/extensibility/webhooks/installation/"> Composer </a><br/>
               <a href="https://developer.adobe.com/commerce/extensibility/webhooks/release-notes/"> Nota's van de Versie </a><br/>
+          </td>
+      </tr>
+      <tr>
+          <td>Adobe Experience Manager Assets-integratie voor Commerce</td>
+          <td>1.0.20+</td>
+          <td>1.0.20+</td>
+          <td>1.0.20+</td>
+          <td>1.0.20+</td>
+          <td>
+              <a href="https://experienceleague.adobe.com/en/docs/commerce-admin/content-design/aem-asset-management/getting-started/aem-assets-configure-commerce"> Composer </a><br/>
+              <a href="https://experienceleague.adobe.com/en/docs/commerce-admin/content-design/aem-asset-management/aem-assets-release-notes"> Nota's van de Versie </a><br/>
           </td>
       </tr>
       <tr>
