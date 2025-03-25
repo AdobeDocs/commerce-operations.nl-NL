@@ -2,9 +2,9 @@
 title: Volledige voorwaarden
 description: Bereid uw Adobe Commerce-project voor op een upgrade door deze vereiste stappen uit te voeren.
 exl-id: f7775900-1d10-4547-8af0-3d1283d9b89e
-source-git-commit: 4c84710da62fbb31214a0de2adc8adbd68880a76
+source-git-commit: d19051467efe7dcf7aedfa7a29460c72d896f5d4
 workflow-type: tm+mt
-source-wordcount: '1612'
+source-wordcount: '1717'
 ht-degree: 0%
 
 ---
@@ -45,7 +45,7 @@ Adobe Commerce vereist dat Elasticsearch of OpenSearch is geïnstalleerd om de s
 
 U kunt de opdrachtregel of de beheerder gebruiken om de zoekengine voor de catalogus te bepalen:
 
-* Voer de opdracht `bin/magento config:show catalog/search/engine` in. De opdracht retourneert de waarde `mysql`, `elasticsearch` (die aangeeft dat Elasticsearch 2 is geconfigureerd), `elasticsearch5`, `elasticsearch6`, `elasticsearch7` of een aangepaste waarde, wat aangeeft dat u een zoekprogramma van derden hebt geïnstalleerd. Voor versies ouder dan 2.4.6 gebruikt u de `elasticsearch7` -waarde voor Elasticsearch 7 of de OpenSearch-engine. Voor versie 2.4.6 en hoger gebruikt u de `opensearch` -waarde voor de OpenSearch-engine.
+* Voer de opdracht `bin/magento config:show catalog/search/engine` in. De opdracht retourneert de waarde `mysql`, `elasticsearch` (wat aangeeft dat Elasticsearch 2 is geconfigureerd), `elasticsearch5`, `elasticsearch6`, `elasticsearch7` of een aangepaste waarde, wat aangeeft dat u een zoekprogramma van derden hebt geïnstalleerd. Voor versies ouder dan 2.4.6 gebruikt u de `elasticsearch7` -waarde voor de Elasticsearch 7- of OpenSearch-engine. Voor versie 2.4.6 en hoger gebruikt u de `opensearch` -waarde voor de OpenSearch-engine.
 
 * Controleer in Beheer de waarde van het veld **[!UICONTROL Stores]** > [!UICONTROL Settings] > **[!UICONTROL Configuration]** > **[!UICONTROL Catalog]** > **[!UICONTROL Catalog]** > **[!UICONTROL Catalog Search]** > **[!UICONTROL Search Engine]** .
 
@@ -68,15 +68,15 @@ Bepaalde zoekprogramma&#39;s voor catalogi van derden worden boven op de zoekfun
 
 ### Zoekmachine
 
-U moet of Elasticsearch 7.6 of hoger of OpenSearch 1.2 installeren en vormen alvorens aan 2.4.0 te bevorderen. Adobe ondersteunt Elasticsearch 2.x, 5.x en 6.x niet meer. [ de motorconfiguratie van het Onderzoek ](../../configuration/search/configure-search-engine.md) in de _Gids van de Configuratie_ beschrijft de taken u na de bevordering van Elasticsearch aan een gesteunde versie moet uitvoeren.
+U moet Elasticsearch 7.6 of hoger of OpenSearch 1.2 installeren en configureren voordat u de upgrade naar 2.4.0 uitvoert. Adobe biedt niet langer ondersteuning voor Elasticsearch 2.x, 5.x en 6.x. [ de motorconfiguratie van het Onderzoek ](../../configuration/search/configure-search-engine.md) in de _Gids van de Configuratie_ beschrijft de taken u na de bevordering van Elasticsearch aan een gesteunde versie moet uitvoeren.
 
-Verwijs naar [ Bevorderende Elasticsearch ](https://www.elastic.co/guide/en/elasticsearch/reference/current/setup-upgrade.html) voor volledige instructies bij het steunen van uw gegevens, het ontdekken van potentiële migratiekwesties, en het testen van verbeteringen alvorens aan productie op te stellen. Afhankelijk van uw huidige versie van Elasticsearch is het mogelijk dat een volledige clusterherstart al dan niet vereist is.
+Verwijs naar [ Bevorderend Elasticsearch ](https://www.elastic.co/guide/en/elasticsearch/reference/current/setup-upgrade.html) voor volledige instructies bij het steunen van uw gegevens, het ontdekken van potentiële migratiekwesties, en het testen van verbeteringen alvorens aan productie op te stellen. Afhankelijk van uw huidige versie van Elasticsearch is het mogelijk dat een volledige cluster opnieuw moet worden opgestart.
 
-Voor Elasticsearch is Java Development Kit (JDK) 1.8 of hoger vereist. Zie [ de Uitrusting van de Ontwikkeling van de Software van Java installeren (JDK) ](../../installation/prerequisites/search-engine/overview.md#install-the-java-software-development-kit-jdk) om te controleren welke versie van JDK geïnstalleerd is.
+Elasticsearch vereist Java Development Kit (JDK) 1.8 of hoger. Zie [ de Uitrusting van de Ontwikkeling van de Software van Java installeren (JDK) ](../../installation/prerequisites/search-engine/overview.md#install-the-java-software-development-kit-jdk) om te controleren welke versie van JDK geïnstalleerd is.
 
 #### OpenSearch
 
-OpenSearch is een open-source vork van Elasticsearch 7.10.2, na de licentiewijziging van de Elasticsearch. In de volgende versies van Adobe Commerce wordt ondersteuning voor OpenSearch geïntroduceerd:
+OpenSearch is een open-source vork van Elasticsearch 7.10.2, na de licentiewijziging van Elasticsearch. In de volgende versies van Adobe Commerce wordt ondersteuning voor OpenSearch geïntroduceerd:
 
 * 2.4.6 (OpenSearch heeft een aparte module en instellingen)
 * 2.4.5.
@@ -90,13 +90,17 @@ Voor OpenSearch is JDK 1.8 of hoger vereist. Zie [ de Uitrusting van de Ontwikke
 
 [ de motorconfiguratie van het Onderzoek ](../../configuration/search/configure-search-engine.md) beschrijft de taken u na het veranderen van onderzoeksmotoren moet uitvoeren.
 
-#### Upgrade Elasticsearch
+#### Upgrade uitvoeren voor Elasticsearch
 
-Ondersteuning voor Elasticsearch 8.x werd geïntroduceerd in Adobe Commerce 2.4.6. De volgende instructies tonen een voorbeeld van het upgraden van Elasticsearch van 7.x naar 8.x:
+Elasticsearch 8.x werd in Adobe Commerce 2.4.6 ondersteund. De volgende instructies tonen een voorbeeld van het upgraden van Elasticsearch van 7.x naar 8.x:
 
-1. Voer een upgrade uit van de Elasticsearch 7.x-server naar 8.x en zorg ervoor dat deze actief is. Zie de [ documentatie van de Elasticsearch ](https://www.elastic.co/guide/en/elasticsearch/reference/current/install-elasticsearch.html).
+>[!NOTE]
+>
+>In de aanstaande versie 2.4.8, zullen deze stappen niet noodzakelijk zijn omdat Elasticsearch 8 module door gebrek inbegrepen is en u zult niet het moeten afzonderlijk installeren.
 
-1. Schakel het veld `id_field_data` in door de volgende configuratie aan het `elasticsearch.yml` -bestand toe te voegen en de service Elasticsearch 8.x opnieuw te starten.
+1. Voer een upgrade uit van de Elasticsearch 7.x-server naar 8.x en zorg ervoor dat deze actief is. Zie de [ documentatie van Elasticsearch ](https://www.elastic.co/guide/en/elasticsearch/reference/current/install-elasticsearch.html).
+
+1. Schakel het veld `id_field_data` in door de volgende configuratie aan uw `elasticsearch.yml` -bestand toe te voegen en de Elasticsearch 8.x-service opnieuw te starten.
 
    ```yaml
    indices:
@@ -113,6 +117,28 @@ Ondersteuning voor Elasticsearch 8.x werd geïntroduceerd in Adobe Commerce 2.4.
    ```bash
    composer require magento/module-elasticsearch-8 --update-with-all-dependencies
    ```
+
+   Als u een gebiedsdeelfout voor `psr/http-message` ontmoet, klik om de volgende het oplossen van problemensectie uit te breiden:
+
+   +++Problemen oplossen
+
+   Als er afhankelijkheidsconflicten optreden tijdens de installatie van Elasticsearch 8, met name met `psr/http-message` , kunt u dit oplossen door de volgende stappen uit te voeren:
+
+   1. Ten eerste hebt u de Elasticsearch 8-module nodig zonder andere afhankelijkheden bij te werken:
+
+      ```bash
+      composer require magento/module-elasticsearch-8 --no-update
+      ```
+
+   1. Werk vervolgens de Elasticsearch 8-module en `aws/aws-sdk-php` -pakketten bij:
+
+      ```bash
+      composer update magento/module-elasticsearch-8 aws/aws-sdk-php -W
+      ```
+
+   Deze aanpak werkt voor 2.4.7-p4 met PHP 8.3. Het probleem doet zich voor omdat `aws/aws-sdk-php` `psr/http-message >= 2.0` vereist, wat conflicten kan veroorzaken. De bovenstaande stappen helpen deze afhankelijkheidsproblemen op te lossen.
+
++++
 
 1. Werk uw projectcomponenten bij.
 
@@ -134,11 +160,11 @@ Ondersteuning voor Elasticsearch 8.x werd geïntroduceerd in Adobe Commerce 2.4.
    bin/magento cache:clean
    ```
 
-#### Elasticsearch verlagen
+#### Elasticsearch downgraden
 
-Als u per ongeluk de versie van de Elasticsearch op uw server bijwerkt of om een andere reden wilt verlagen, moet u ook uw Adobe Commerce-projectafhankelijkheden bijwerken. Bijvoorbeeld om van Elasticsearch 8.x aan 7.x te degraderen
+Als u onbedoeld de versie van Elasticsearch op uw server verbetert of om een andere reden bepaalt dat u moet degraderen, moet u ook uw Adobe Commerce-projectgebiedsdelen bijwerken. Bijvoorbeeld om van Elasticsearch 8.x naar 7.x te verlagen
 
-1. Verlaag de Elasticsearch 8.x-server naar 7.x en zorg ervoor dat deze in gebruik is. Zie de [ documentatie van de Elasticsearch ](https://www.elastic.co/guide/en/elasticsearch/reference/current/install-elasticsearch.html).
+1. Verlaag de Elasticsearch 8.x-server naar 7.x en zorg ervoor dat deze actief is. Zie de [ documentatie van Elasticsearch ](https://www.elastic.co/guide/en/elasticsearch/reference/current/install-elasticsearch.html).
 
 1. Werk in de hoofdmap van uw Adobe Commerce-project uw Composer-afhankelijkheden bij om de module `Magento_Elasticsearch8` en de bijbehorende Composer-afhankelijkheden te verwijderen en installeer de module `Magento_Elasticsearch7` .
 
@@ -178,7 +204,7 @@ U moet de indeling van alle databasetabellen omzetten van `COMPACT` in `DYNAMIC`
 
 Door de limiet voor geopende bestanden in te stellen (ulimit), kan worden voorkomen dat meerdere recursieve aanroepen van lange querytekenreeksen mislukken of dat er problemen optreden met de opdracht `bin/magento setup:rollback` . Deze opdracht is anders voor verschillende UNIX-schelpen. Raadpleeg uw eigen smaak voor details over het `ulimit` bevel.
 
-De Adobe adviseert plaatsend de open dossiers [ grens ](https://ss64.com/bash/ulimit.html) aan een waarde van `65536` of meer, maar u kunt een grotere waarde indien nodig gebruiken. U kunt de limiet instellen op de opdrachtregel of u kunt deze instellen als een permanente instelling voor de shell van de gebruiker.
+Adobe adviseert plaatsend de open dossiers [ grens ](https://ss64.com/bash/ulimit.html) aan een waarde van `65536` of meer, maar u kunt een grotere waarde indien nodig gebruiken. U kunt de limiet instellen op de opdrachtregel of u kunt deze instellen als een permanente instelling voor de shell van de gebruiker.
 
 U stelt de limiet in vanaf de opdrachtregel:
 
