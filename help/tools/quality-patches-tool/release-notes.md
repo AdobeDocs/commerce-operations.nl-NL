@@ -2,9 +2,9 @@
 title: Opmerkingen bij de release
 description: Meer informatie over de patches die beschikbaar zijn voor Adobe Commerce en de problemen die ze oplossen.
 exl-id: 22262555-f5ea-49ad-98ad-ea8428ef66d5
-source-git-commit: 0073f5e1b6de110ff640748457b7c644d71fcbe8
+source-git-commit: 93c9eb8865aa53ec784d47fd66ca97d1941b4604
 workflow-type: tm+mt
-source-wordcount: '25431'
+source-wordcount: '25682'
 ht-degree: 0%
 
 ---
@@ -20,6 +20,16 @@ ht-degree: 0%
 >[!INFO]
 >
 >Voor informatie over [!DNL quality patches] die door de Gemeenschap voor Magento Open Source wordt gecreeerd, zie de [ versienota&#39;s ](https://github.com/magento/quality-patches/blob/master/community-release-notes.md).
+
+## v1.1.62 {#v1-1-62}
+
+* **ACSD-63406** (voor Adobe Commerce en Magento Open Source >=2.4.4-p9 &lt;2.4.5 || >=2.4.5-p8 &lt;2.4.6 || >=2.4.6-p6 &lt;2.4.8) - Hiermee wordt het probleem verholpen waarbij verlopen permanente aanhalingstekens niet worden gewist door een uitsnijdtaak wanneer de `persistent_clear_expired` -uitsnijdtaak wordt uitgevoerd.
+* **ACSD-63520** (voor Adobe Commerce en Magento Open Source >=2.4.7 &lt;2.4.8) - lost het probleem op waar de beelden die door **[!UICONTROL Configurations]** in het admin paneel worden toegevoegd niet aan de maximum uploadgroottegrens naleven.
+* **ACSD-64523** (voor Adobe Commerce en Magento Open Source >=2.4.7 &lt;2.4.8) - lost de kwestie op waar het mogelijk was om nieuwe producten zonder een naam door het de invoerproces (admin of API) tot stand te brengen, die de admin interface zou breken en in ongeldige producten zou resulteren.
+* **ACSD-64532** (voor Adobe Commerce en Magento Open Source >=2.4.6-p2 &lt;2.4.8) - lost de kwestie op waar een variabele ENV die aan &quot;vals&quot;wordt geplaatst als koord &quot;vals&quot;in plaats van booleaanse vals wordt behandeld.
+* **ACSD-64592** (voor Adobe Commerce >=2.4.4 &lt;2.4.8) - lost de kwestie op waar de claimverbinding van e-mail voor een cadeaukaart in niet-gebrek altijd de gift kaarteis aan de standaardwebsite opnieuw richtte.
+* **ACSD-65164** (voor Adobe Commerce en Magento Open Source >=2.4.6 &lt;2.4.8) - lost de kwestie op waar het foutenbericht *sommige geselecteerde puntopties niet momenteel beschikbaar* wanneer het opnieuw ordenen van een configureerbaar product met één enkele geselecteerde checkbox douaneoptie voorkomt.
+* **ACSD-64732** (voor Adobe Commerce >=2.4.4 &lt;2.4.8) - lost de kwestie op waar de derdecontrolemechanismen niet correct met klantensegmenten in het voorgeheugen onder werden gebracht.
 
 ## v1.1.61 {#v1-1-61}
 
