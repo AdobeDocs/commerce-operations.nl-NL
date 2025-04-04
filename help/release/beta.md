@@ -2,9 +2,9 @@
 title: Beta-releases
 description: Leer meer over de bètareleases van Adobe Commerce en hoe u hieraan kunt deelnemen.
 exl-id: 662cb061-995f-4e09-a2ef-9e607cc0000b
-source-git-commit: e569e8106930882323ab3ab046a3db0ee1da1503
+source-git-commit: c27867be74dfaa1bcd782a23db27db29fdccc4e3
 workflow-type: tm+mt
-source-wordcount: '975'
+source-wordcount: '931'
 ht-degree: 0%
 
 ---
@@ -79,15 +79,6 @@ Met deze integratieversneller voor IBM Sterling Order Management kunnen Adobe Co
 
 Om aan deze bèta deel te nemen, verzend een e-mailverzoek naar [ sbieber@adobe.com ](mailto:sbieber@adobe.com).
 
-### Gegevensverbinding en Audience Activation (Public Beta)
-
-Uitgebreide gegevensuitwisseling tussen Adobe Commerce en Adobe Experience Platform voor krachtigere persoonlijke ervaringen. Met deze mogelijkheid kunnen handelaren:
-
-- Commerce-klantprofielen delen
-- Aangepaste kenmerken maken
-
-Om aan deze bèta deel te nemen, verzend een e-mailverzoek naar [ DataConnection@adobe.com ](mailto:DataConnection@adobe.com).
-
 ### Adobe Commerce Foundation (Public Beta)
 
 Elke bètaversie van Adobe Commerce Foundation bevat alle wijzigingen die tegen de geplande releasedatum aan de Adobe Commerce-kerncode zijn geleverd, inclusief maar niet beperkt tot de volgende functionele gebieden:
@@ -109,7 +100,6 @@ Beta-releasepakketten hebben het achtervoegsel `-betaX` . Voor de release van Ad
 - `2.4.7-beta2`
 
 Zie het [ versieschema ](schedule.md) voor de lijst van aanstaande openbare bètaversiedata.
-
 
 #### Toegang tot Beta-release
 
