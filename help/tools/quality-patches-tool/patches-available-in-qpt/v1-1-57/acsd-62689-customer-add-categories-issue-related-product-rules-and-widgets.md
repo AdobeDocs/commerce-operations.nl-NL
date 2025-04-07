@@ -4,14 +4,18 @@ description: Pas de ACSD-62689-patch toe om het Adobe Commerce-probleem op te lo
 feature: Categories
 role: Admin, Developer
 exl-id: 2506744a-01c8-462b-9a27-cd0bdb5664f9
-source-git-commit: e18a41c5abb1cc8b407ff6c188acdeed0e8a7659
+source-git-commit: 7aefd4f20580529a9da14776368bf2c3bbb3ff3c
 workflow-type: tm+mt
-source-wordcount: '373'
+source-wordcount: '380'
 ht-degree: 0%
 
 ---
 
 # ACSD-62689: Kan geen categorieën toevoegen in *[!UICONTROL Related Product Rules]* en widgets na diepte 4
+
+>[!NOTE]
+>
+>Dit flard wordt vervangen door [ ACP2E-3689 ](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-61/acp2e-3689-issues-with-category-tree-display-reflect-anchor-non-anchor-relationships.md).
 
 De ACSD-62689-patch verhelpt het probleem waarbij een klant na diepte vier nesten geen categorieën in *[!UICONTROL Related Product Rules]* en widgets kan toevoegen. Deze patch is beschikbaar wanneer [[!DNL Quality Patches Tool (QPT)]](/help/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches.md) 1.1.57 wordt geïnstalleerd. De patch-id is ACSD-62689. Dit probleem wordt volgens de planning opgelost in Adobe Commerce 2.4.8.
 
@@ -58,7 +62,7 @@ In stap 7 kunnen beide categorieën niet worden geselecteerd. In stap 9 kunnen b
 
 Om individuele flarden toe te passen, gebruik de volgende verbindingen afhankelijk van uw plaatsingsmethode:
 
-* Adobe Commerce of Magento Open Source op locatie: [[!DNL Quality Patches Tool]  > Gebruik ](/help/tools/quality-patches-tool/usage.md) in de handleiding [!DNL Quality Patches Tool] .
+* Op locatie Adobe Commerce of Magento Open Source: [[!DNL Quality Patches Tool] > Gebruik ](/help/tools/quality-patches-tool/usage.md) in de handleiding [!DNL Quality Patches Tool] .
 * Adobe Commerce op wolkeninfrastructuur: [ Verbeteringen en Patches > Pas Patches ](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html) in Commerce op de gids van de Infrastructuur van de Wolk toe.
 
 
