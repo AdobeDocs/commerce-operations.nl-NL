@@ -1,7 +1,7 @@
 ---
-source-git-commit: 1ad42acc0d007ef1dee8c6c6f93da9daed1925f8
+source-git-commit: 54757d09eb0f476229e567e43c58dc2130a59ac9
 workflow-type: tm+mt
-source-wordcount: '590'
+source-wordcount: '602'
 ht-degree: 0%
 
 ---
@@ -9,7 +9,7 @@ ht-degree: 0%
 
 ## 2.4.8.
 
-De datum waarop de ondersteuning van de releaselijn 2.4.8 eindigt, is nog niet ingesteld.
+De ondersteuning voor de release line van 2.4.8 eindigt op 11 april 2028.
 
 <table>
   <thead>
@@ -21,15 +21,9 @@ De datum waarop de ondersteuning van de releaselijn 2.4.8 eindigt, is nog niet i
   <tbody>
     <tr>
         <td>
-          <a href="https://experienceleague.adobe.com/en/docs/commerce-operations/release/notes/adobe-commerce/2-4-8#highlights-in-v248-beta2"> 2.4.8-beta2 </a>
+          <a href="https://experienceleague.adobe.com/en/docs/commerce-operations/release/notes/adobe-commerce/2-4-8"> 2.4.8 </a>
         </td>
-        <td>11 februari 2025</td>
-    </tr>
-    <tr>
-        <td>
-          <a href="https://experienceleague.adobe.com/en/docs/commerce-operations/release/notes/adobe-commerce/2-4-8#highlights-in-v248-beta1"> 2.4.8-beta1 </a>
-        </td>
-        <td>oktober  8 2024</td>
+        <td>april  8 2025</td>
     </tr><!-- patch_releases -->
   </tbody>
 </table>
@@ -41,11 +35,17 @@ De ondersteuning voor de releaselijn 2.4.7 eindigt op april  9 mei 2027.
 <table>
   <thead>
     <tr>
-      <th>Patchversie</th>
+      <th>Patch versie</th>
       <th>Releasedatum</th>
     </tr>
   </thead>
   <tbody>
+    <tr>
+        <td>
+          <a href="https://experienceleague.adobe.com/en/docs/commerce-operations/release/notes/security-patches/2-4-7-patches#p5"> 2.4.7-p5 </a>
+        </td>
+        <td>dinsdag 8 april 2025</td>
+    </tr>
     <tr>
         <td>
           <a href="https://experienceleague.adobe.com/en/docs/commerce-operations/release/notes/security-patches/2-4-7-patches#p4"> 2.4.7-p4 </a>
@@ -56,7 +56,7 @@ De ondersteuning voor de releaselijn 2.4.7 eindigt op april  9 mei 2027.
         <td>
           <a href="https://experienceleague.adobe.com/en/docs/commerce-operations/release/notes/security-patches/2-4-7-patches#p3"> 2.4.7-p3 </a>
         </td>
-        <td>oktober  8 2024</td>
+        <td>8 oktober 2024</td>
     </tr>
     <tr>
         <td>
@@ -86,11 +86,17 @@ De ondersteuning voor de releaselijn 2.4.6 eindigt op 11 augustus 2026.
 <table>
   <thead>
     <tr>
-      <th>Patchversie</th>
+      <th>Patch versie</th>
       <th>Releasedatum</th>
     </tr>
   </thead>
   <tbody>
+    <tr>
+        <td>
+          <a href="https://experienceleague.adobe.com/en/docs/commerce-operations/release/notes/security-patches/2-4-6-patches#p10"> 2.4.6-p10 </a>
+        </td>
+        <td>april  8 2025</td>
+    </tr>
     <tr>
         <td>
           <a href="https://experienceleague.adobe.com/en/docs/commerce-operations/release/notes/security-patches/2-4-6-patches#p9"> 2.4.6-p9 </a>
@@ -99,9 +105,9 @@ De ondersteuning voor de releaselijn 2.4.6 eindigt op 11 augustus 2026.
     </tr>
     <tr>
         <td>
-          <a href="https://experienceleague.adobe.com/en/docs/commerce-operations/release/notes/security-patches/2-4-6-patches#p8"> 2.4.6-p8 </a>
+          <a href="https://experienceleague.adobe.com/en/docs/commerce-operations/release/notes/security-patches/2-4-6-patches#p8">2.4.6-blz.</a>
         </td>
-        <td>oktober  8 2024</td>
+        <td>8 oktober 2024</td>
     </tr>
     <tr>
         <td>
@@ -168,19 +174,25 @@ Ondersteuning voor de releaselijn 2.4.5 eindigt op augustus  9 mei 2025.
   <tbody>
     <tr>
         <td>
-          <a href="https://experienceleague.adobe.com/en/docs/commerce-operations/release/notes/security-patches/2-4-5-patches#p11"> 2.4.5-p11 </a>
+          <a href="https://experienceleague.adobe.com/en/docs/commerce-operations/release/notes/security-patches/2-4-5-patches#p12">2.4.5-blz.12</a>
+        </td>
+        <td>dinsdag 8 april 2025</td>
+    </tr>
+    <tr>
+        <td>
+          <a href="https://experienceleague.adobe.com/en/docs/commerce-operations/release/notes/security-patches/2-4-5-patches#p11">2.4.5-blz.11</a>
         </td>
         <td>11 februari 2025</td>
     </tr>
     <tr>
         <td>
-          <a href="https://experienceleague.adobe.com/en/docs/commerce-operations/release/notes/security-patches/2-4-5-patches#p10"> 2.4.5-p10 </a>
+          <a href="https://experienceleague.adobe.com/en/docs/commerce-operations/release/notes/security-patches/2-4-5-patches#p10">2.4.5-blz.10</a>
         </td>
-        <td>oktober  8 2024</td>
+        <td>8 oktober 2024</td>
     </tr>
     <tr>
         <td>
-          <a href="https://experienceleague.adobe.com/en/docs/commerce-operations/release/notes/security-patches/2-4-5-patches#p9"> 2.4.5-p9 </a>
+          <a href="https://experienceleague.adobe.com/en/docs/commerce-operations/release/notes/security-patches/2-4-5-patches#p9">2.4.5-blz.9</a>
         </td>
         <td>13 augustus 2024</td>
     </tr>
@@ -204,7 +216,7 @@ Ondersteuning voor de releaselijn 2.4.5 eindigt op augustus  9 mei 2025.
     </tr>
     <tr>
         <td>
-          <a href="https://experienceleague.adobe.com/en/docs/commerce-operations/release/notes/security-patches/2-4-5-patches#p5"> 2.4.5-p5 </a>
+          <a href="https://experienceleague.adobe.com/en/docs/commerce-operations/release/notes/security-patches/2-4-5-patches#p5">2.4.5-blz.5</a>
         </td>
         <td>10 oktober 2023</td>
     </tr>
@@ -255,6 +267,12 @@ De ondersteuning voor de release line van 2.4.4 eindigt op 12 april 2025.
   <tbody>
     <tr>
         <td>
+          <a href="https://experienceleague.adobe.com/en/docs/commerce-operations/release/notes/security-patches/2-4-4-patches#p13"> 2.4.4-p13 </a>
+        </td>
+        <td>april  8 2025</td>
+    </tr>
+    <tr>
+        <td>
           <a href="https://experienceleague.adobe.com/en/docs/commerce-operations/release/notes/security-patches/2-4-4-patches#p12"> 2.4.4-p12 </a>
         </td>
         <td>11 februari 2025</td>
@@ -281,17 +299,17 @@ De ondersteuning voor de release line van 2.4.4 eindigt op 12 april 2025.
         <td>
           <a href="https://experienceleague.adobe.com/en/docs/commerce-operations/release/notes/security-patches/2-4-4-patches#p8"> 2.4.4-p8 </a>
         </td>
-        <td>april  9 2024</td>
+        <td>9 april 2024</td>
     </tr>
     <tr>
         <td>
-          <a href="https://experienceleague.adobe.com/en/docs/commerce-operations/release/notes/security-patches/2-4-4-patches#p7"> 2.4.4-p7 </a>
+          <a href="https://experienceleague.adobe.com/en/docs/commerce-operations/release/notes/security-patches/2-4-4-patches#p7">2.4.4-blz7</a>
         </td>
         <td>13 februari 2024</td>
     </tr>
     <tr>
         <td>
-          <a href="https://experienceleague.adobe.com/en/docs/commerce-operations/release/notes/security-patches/2-4-4-patches#p6"> 2.4.4-p6 </a>
+          <a href="https://experienceleague.adobe.com/en/docs/commerce-operations/release/notes/security-patches/2-4-4-patches#p6">2.4.4-blz.6</a>
         </td>
         <td>10 oktober 2023</td>
     </tr>
@@ -299,7 +317,7 @@ De ondersteuning voor de release line van 2.4.4 eindigt op 12 april 2025.
         <td>
           <a href="https://experienceleague.adobe.com/en/docs/commerce-operations/release/notes/security-patches/2-4-4-patches#p5"> 2.4.4-p5 </a>
         </td>
-        <td>augustus  8 2023</td>
+        <td>Augustus 8, 2023</td>
     </tr>
     <tr>
         <td>
@@ -356,7 +374,7 @@ De steun voor 2.4.0-2.4.3 versielijn eindigde op 28 november 2022.
         <td>
           <a href="https://experienceleague.adobe.com/en/docs/commerce-operations/release/notes/security-patches/2-4-3-patches#adobe-commerce-243-p2"> 2.4.3-p2 </a>
         </td>
-        <td>12 april 2022</td>
+        <td>dinsdag 12 april 2022</td>
     </tr>
     <tr>
         <td>
@@ -422,7 +440,7 @@ Ondersteuning voor de release line van 2.3 is afgelopen in september  8 mei 202
 <table>
   <thead>
     <tr>
-      <th>Patchversie</th>
+      <th>Patch versie</th>
       <th>Releasedatum</th>
     </tr>
   </thead>
@@ -431,13 +449,13 @@ Ondersteuning voor de release line van 2.3 is afgelopen in september  8 mei 202
         <td>
           2.3.7-p4
         </td>
-        <td>augustus  9 2022</td>
+        <td>9 augustus 2022</td>
     </tr>
     <tr>
         <td>
           2.3.7-p3
         </td>
-        <td>12 april 2022</td>
+        <td>dinsdag 12 april 2022</td>
     </tr>
     <tr>
         <td>
@@ -491,7 +509,7 @@ Ondersteuning voor de release line van 2.3 is afgelopen in september  8 mei 202
         <td>
           2.3.5.
         </td>
-        <td>28 april 2020</td>
+        <td>dinsdag 28 april 2020</td>
     </tr>
     <tr>
         <td>
@@ -533,7 +551,7 @@ Ondersteuning voor de release line van 2.3 is afgelopen in september  8 mei 202
         <td>
           2.3.0.
         </td>
-        <td>28 november 2018</td>
+        <td>dinsdag 28 november 2018</td>
     </tr><!-- patch_releases -->
   </tbody>
 </table>
@@ -596,7 +614,7 @@ Ondersteuning voor de releaselijn 2.2 eindigde in december  1 januari 2019.
         <td>
           2.2.4.
         </td>
-        <td>mei  2 2018</td>
+        <td>2 mei 2018</td>
     </tr>
     <tr>
         <td>
@@ -782,7 +800,7 @@ De ondersteuning voor de releaselijn 2.0 liep af op 31 maart 2018.
         <td>
           2.0.16.
         </td>
-        <td>14 september 2017</td>
+        <td>dinsdag 14 september 2017</td>
     </tr>
     <tr>
         <td>
