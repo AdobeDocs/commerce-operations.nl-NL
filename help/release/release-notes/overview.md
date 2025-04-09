@@ -2,7 +2,7 @@
 title: Opmerkingen bij de release van Adobe Commerce
 description: Ontdek waar u informatie kunt vinden over specifieke Adobe Commerce-releases.
 exl-id: f6385e12-5c3d-425f-939c-9dfd7ef6c4f5
-source-git-commit: a2c93cb8481a3d843bc3be186d682f1d5e7974f6
+source-git-commit: 16feb8ec7ecc88a6ef03a769d45b1a3a2fe88d97
 workflow-type: tm+mt
 source-wordcount: '275'
 ht-degree: 3%
@@ -48,12 +48,12 @@ Gebruik de volgende lijst om versienota&#39;s en belangrijke informatie met betr
         <p>Meer informatie over de meest recente verbeteringen op het gebied van innovatieve Commerce-handelsservices.</p>
           <ul>
             <li><a href="https://experienceleague.adobe.com/docs/commerce-admin/customers/audience-activation.html">Audience Activation</a></li>
-            <li><a href="https://experienceleague.adobe.com/docs/commerce-merchant-services/catalog-service/release-notes.html">Catalogusservice</a></li>
-            <li><a href="https://experienceleague.adobe.com/docs/commerce-merchant-services/experience-platform-connector/release-notes.html">Experience Platform Connector</a></li>
-            <li><a href="https://experienceleague.adobe.com/docs/commerce-merchant-services/live-search/release-notes.html">Live zoeken</a></li>
-            <li><a href="https://experienceleague.adobe.com/docs/commerce-merchant-services/payment-services/release-notes.html">Betalingsdiensten</a></li>
-            <li><a href="https://experienceleague.adobe.com/docs/commerce-merchant-services/product-recommendations/release-notes.html">Aanbevelingen voor producten</a></li>
-            <li><a href="https://experienceleague.adobe.com/docs/commerce-merchant-services/user-guides/integration-services/saas.html">Services Connector</a></li>
+            <li><a href="https://experienceleague.adobe.com/docs/commerce/catalog-service/release-notes.html">Catalogusservice</a></li>
+            <li><a href="https://experienceleague.adobe.com/docs/commerce/experience-platform-connector/release-notes.html">Experience Platform Connector</a></li>
+            <li><a href="https://experienceleague.adobe.com/docs/commerce/live-search/release-notes.html">Live zoeken</a></li>
+            <li><a href="https://experienceleague.adobe.com/docs/commerce/payment-services/release-notes.html">Betalingsdiensten</a></li>
+            <li><a href="https://experienceleague.adobe.com/docs/commerce/product-recommendations/release-notes.html">Aanbevelingen voor producten</a></li>
+            <li><a href="https://experienceleague.adobe.com/docs/commerce/user-guides/integration-services/saas.html">Services Connector</a></li>
           </ul>
         </td>
       <td><strong> Hulpmiddelen </strong>

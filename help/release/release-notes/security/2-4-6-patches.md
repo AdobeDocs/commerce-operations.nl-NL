@@ -2,9 +2,9 @@
 title: Opmerkingen bij de release Adobe Commerce 2.4.6 Security Patch
 description: Leer meer over oplossingen voor beveiligingsproblemen, beveiligingsverbeteringen en andere beveiligingsupdates die zijn opgenomen in de beveiligingspatchreleases voor Adobe Commerce versie 2.4.6.
 exl-id: cde096ac-d192-490d-873a-475996c474ff
-source-git-commit: 9397740c608e4f0521018d6f6c918ca267197c6c
+source-git-commit: 9bf1c539220d70a8e7fe449e4d91199f23cc23b2
 workflow-type: tm+mt
-source-wordcount: '1280'
+source-wordcount: '1316'
 ht-degree: 0%
 
 ---
@@ -13,6 +13,14 @@ ht-degree: 0%
 # Opmerkingen bij de release voor beveiligingspatches van Adobe Commerce 2.4.6
 
 {{$include /help/_includes/release-notes/security-patch-intro.md}}
+
+## 2.4.6-p10
+
+De Adobe Commerce 2.4.6-p10-beveiligingsrelease biedt oplossingen voor beveiligingsproblemen die zijn geïdentificeerd in eerdere versies van 2.4.6.
+
+Voor de recentste informatie over de veiligheidsinsectenmoeilijke situaties, zie [ Bulletin van de Veiligheid van Adobe APSB25-26 ](https://helpx.adobe.com/security/products/magento/apsb25-26.html).
+
+{{b2b-patches}}
 
 ## 2.4.6-p9
 

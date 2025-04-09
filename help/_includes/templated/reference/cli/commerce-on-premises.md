@@ -1,7 +1,7 @@
 ---
-source-git-commit: a8f4df78dfec2a1e94d650cac03c7fba21f398e8
+source-git-commit: ba444c5f74cdeec86c842014d02775faf16b2f50
 workflow-type: tm+mt
-source-wordcount: '8072'
+source-wordcount: '8253'
 ht-degree: 0%
 
 ---
@@ -13,9 +13,9 @@ ht-degree: 0%
 
 <!-- The template to render with above values -->
 
-**Versie**: 2.4.7-p1
+**Versie**: 2.4.8
 
-Deze verwijzing bevat 141 opdrachten die beschikbaar zijn via het opdrachtregelprogramma van `bin/magento` .
+Deze verwijzing bevat 145 opdrachten die beschikbaar zijn via het opdrachtregelprogramma van `bin/magento` .
 De eerste lijst wordt automatisch gegenereerd met de opdracht `bin/magento list` in Adobe Commerce.
 
 ## Algemeen
@@ -308,13 +308,13 @@ Voor globale opties, zie [ Globale opties ](#global-options).
 
 #### `--organization-id`, `-o`
 
-Organisatie-id instellen voor Adobe IMS-configuratie. Vereist wanneer het toelaten van de module
+Stel organisatie-ID in voor Adobe IMS-configuratie. Vereist wanneer het toelaten van de module
 
 - Accepteert een waarde
 
 #### `--client-id`, `-c`
 
-Stel de client-id in voor de Adobe IMS-configuratie. Vereist wanneer het toelaten van de module
+Stel de client-ID in voor de Adobe IMS-configuratie. Vereist wanneer het toelaten van de module
 
 - Accepteert een waarde
 
@@ -326,7 +326,7 @@ Stel het clientgeheim in voor de configuratie van Adobe IMS. Vereist wanneer het
 
 #### `--2fa`, `-t`
 
-Controleer of 2FA is ingeschakeld voor Organisatie in Adobe Admin Console. Vereist wanneer het toelaten van de module
+Controleer of 2FA is ingeschakeld voor Organisatie in Adobe Admin Console. Vereist bij het inschakelen van de module
 
 - Accepteert een waarde
 
@@ -341,7 +341,7 @@ Informatie over de configuratie van de Adobe IMS-module
 
 ### Opties
 
-Voor globale opties, zie [ Globale opties ](#global-options).
+Zie [Globale opties voor algemene opties](#global-options).
 
 
 ## `admin:adobe-ims:status`
@@ -401,7 +401,7 @@ Voor globale opties, zie [ Globale opties ](#global-options).
 
 #### `--magento-init-params`
 
-Voeg aan om het even welk bevel toe om Magento initialisatieparameters aan te passen bijvoorbeeld: &quot;MAGE_MODE=developer&amp;MAGE_DIRS [ basis ][path]=/var/www/example.com&amp;MAGE_DIRS [ geheime voorgeheugen ][path]=/var/tmp/cache&quot;
+Voeg aan om het even welk bevel toe om de initialisatieparameters van Magento bijvoorbeeld aan te passen: &quot;MAGE_MODE=developer&amp;MAGE_DIRS [ basis ][path]=/var/www/example.com&amp;MAGE_DIRS [ geheime voorgeheugen ][path]=/var/tmp/cache&quot;
 
 - Vereist een waarde
 
@@ -445,7 +445,7 @@ Stortplaats van toepassing maken
 
 #### `config-types`
 
-De ruimte-gescheiden lijst van configuratietypen of laat weg om alle [ werkingsgebied, systeem, thema&#39;s, i18n ] te dumpen
+De ruimte-gescheiden lijst van configuratietypen of laat weg om alle [ werkingsgebied, thema&#39;s, systeem, i18n ] te dumpen
 
 - Standaard: `[]`
 - Array
@@ -487,7 +487,7 @@ Voor globale opties, zie [ Globale opties ](#global-options).
 bin/magento braintree:migrate [--host HOST] [--dbname DBNAME] [--username USERNAME] [--password PASSWORD]
 ```
 
-Opgeslagen kaarten migreren vanuit een Magento 1-database
+Opgeslagen kaarten migreren uit een Magento 1-database
 
 ### Opties
 
@@ -546,6 +546,19 @@ parameters van de bootstrap toevoegen of overschrijven
 - Vereist een waarde
 
 
+## `cache:clean:payment_services_merchant_scopes`
+
+```bash
+bin/magento cache:clean:payment_services_merchant_scopes
+```
+
+Cache van Merchant-bereik voor Clean Payment Services
+
+### Opties
+
+Voor globale opties, zie [ Globale opties ](#global-options).
+
+
 ## `cache:disable`
 
 ```bash
@@ -597,7 +610,7 @@ Voor globale opties, zie [ Globale opties ](#global-options).
 
 #### `--bootstrap`
 
-parameters van de bootstrap toevoegen of overschrijven
+Parameters van de bootstrap toevoegen of overschrijven
 
 - Vereist een waarde
 
@@ -608,7 +621,7 @@ parameters van de bootstrap toevoegen of overschrijven
 bin/magento cache:flush [--bootstrap BOOTSTRAP] [--] [<types>...]
 ```
 
-Cacheopslag wordt gebruikt door cachetype(s)
+Leegt de cacheopslag die wordt gebruikt door cachetype(n)
 
 ### Argumenten
 
@@ -655,15 +668,15 @@ parameters van de bootstrap toevoegen of overschrijven
 bin/magento catalog:images:resize [-a|--async] [--skip_hidden_images]
 ```
 
-Hiermee maakt u productafbeeldingen waarvan het formaat is gewijzigd
+Maakt verkleinde productafbeeldingen
 
 ### Opties
 
-Voor globale opties, zie [ Globale opties ](#global-options).
+Zie [Globale opties voor algemene opties](#global-options).
 
 #### `--async`, `-a`
 
-Afbeeldingen vergroten/verkleinen in asynchrone modus
+Formaat van afbeelding wijzigen in asynchrone modus
 
 - Standaard: `false`
 - Accepteert geen waarde
@@ -695,7 +708,7 @@ Voor globale opties, zie [ Globale opties ](#global-options).
 bin/magento cms:wysiwyg:restrict <restrict>
 ```
 
-Instellen of validatie van HTML-inhoud van gebruiker moet worden afgedwongen of dat een waarschuwing moet worden weergegeven
+Instellen of HTML-inhoudsvalidatie voor gebruikers moet worden afgedwongen of een waarschuwing moet weergeven
 
 ### Argumenten
 
@@ -979,7 +992,7 @@ Voor globale opties, zie [ Globale opties ](#global-options).
 ## `dev:di:info`
 
 ```bash
-bin/magento dev:di:info <class>
+bin/magento dev:di:info <class> [<area>]
 ```
 
 Verstrekt informatie over de configuratie van de Injectie van de Afhankelijkheid voor het Bevel.
@@ -991,6 +1004,11 @@ Verstrekt informatie over de configuratie van de Injectie van de Afhankelijkheid
 Klassenaam
 
 - Vereist
+
+
+#### `area`
+
+Netnummer
 
 ### Opties
 
@@ -1061,11 +1079,11 @@ Voor globale opties, zie [ Globale opties ](#global-options).
 bin/magento dev:query-log:disable
 ```
 
-Logboekregistratie van DB-query uitschakelen
+Logboekregistratie van DB-query&#39;s uitschakelen
 
 ### Opties
 
-Voor globale opties, zie [ Globale opties ](#global-options).
+Zie [Globale opties voor algemene opties](#global-options).
 
 
 ## `dev:query-log:enable`
@@ -1074,7 +1092,7 @@ Voor globale opties, zie [ Globale opties ](#global-options).
 bin/magento dev:query-log:enable [--include-all-queries [INCLUDE-ALL-QUERIES]] [--query-time-threshold [QUERY-TIME-THRESHOLD]] [--include-call-stack [INCLUDE-CALL-STACK]]
 ```
 
-Logbestand van DB-query inschakelen
+Logboekregistratie van DB-query&#39;s inschakelen
 
 ### Opties
 
@@ -1340,6 +1358,60 @@ Downloadbare whitelist van domeinen weergeven
 Voor globale opties, zie [ Globale opties ](#global-options).
 
 
+## `encryption:data:list-re-encryptors`
+
+```bash
+bin/magento encryption:data:list-re-encryptors
+```
+
+Toont een lijst van beschikbare gegevens re-encryptors.
+
+### Opties
+
+Voor globale opties, zie [ Globale opties ](#global-options).
+
+
+## `encryption:data:re-encrypt`
+
+```bash
+bin/magento encryption:data:re-encrypt [<encryptors>...]
+```
+
+Codeert gecodeerde gegevens opnieuw met de huidige coderingssleutel.
+
+### Argumenten
+
+#### `encryptors`
+
+Lijst met hercoderingsapparaten met spaties als scheidingsteken.
+
+- Standaard: `[]`
+- Array
+
+### Opties
+
+Voor globale opties, zie [ Globale opties ](#global-options).
+
+
+## `encryption:key:change`
+
+```bash
+bin/magento encryption:key:change [-k|--key [KEY]]
+```
+
+Wijzig de coderingssleutel in het bestand env.php.
+
+### Opties
+
+Voor globale opties, zie [ Globale opties ](#global-options).
+
+#### `--key`, `-k`
+
+De sleutel moet een lange tekenreeks van 32 tekens zijn. Indien niet opgegeven, wordt een willekeurige sleutel gegenereerd.
+
+- Accepteert een waarde
+
+
 ## `encryption:payment-data:update`
 
 ```bash
@@ -1459,7 +1531,7 @@ Voor globale opties, zie [ Globale opties ](#global-options).
 bin/magento events:metadata:populate
 ```
 
-Hiermee maakt u metagegevens in Adobe I/O in de configuratielijst (XML en toepassingsconfiguraties)
+Hiermee maakt u metagegevens in Adobe I/O op basis van de configuratielijst (XML en toepassingsconfiguraties)
 
 ### Opties
 
@@ -1528,13 +1600,13 @@ De lijst met velden in de payload van gebeurtenisgegevens.
 
 #### `--parent`
 
-De bovenliggende gebeurteniscode voor een gebeurtenisabonnement met regels.
+De bovenliggende gebeurteniscode voor een gebeurtenisabonnement met regels of als een alias.
 
 - Vereist een waarde
 
 #### `--rules`
 
-De lijst met regels voor het gebeurtenisabonnement, waarbij elke regel is opgemaakt als &quot;field\|operator\|value&quot;.
+De lijst met regels voor het gebeurtenisabonnement, waarbij elke regel is opgemaakt als &quot;field\|operator\|value&quot;. Als u deze optie wilt gebruiken, moet u ook de optie &quot;bovenliggend item&quot; opgeven.
 
 - Standaard: `[]`
 - Vereist een waarde
@@ -1608,13 +1680,13 @@ Voor globale opties, zie [ Globale opties ](#global-options).
 bin/magento i18n:collect-phrases [-o|--output OUTPUT] [-m|--magento] [--] [<directory>]
 ```
 
-Neemt zinnen op in de codebase
+Ontdekt zinnen in de codebase
 
 ### Argumenten
 
 #### `directory`
 
-Mappad om te parseren. Niet nodig indien —magento-markering is ingesteld
+Directorypad om te parseren. Niet nodig als --Magento vlag is ingesteld
 
 ### Opties
 
@@ -1628,7 +1700,7 @@ Pad (inclusief bestandsnaam) naar een uitvoerbestand. Als er geen bestand is opg
 
 #### `--magento`, `-m`
 
-Gebruik de parameter —magento om de huidige codebase van het Magento te parseren. Laat de parameter weg als een folder wordt gespecificeerd.
+Gebruik de parameter —magento om de huidige Magento-codebase te parseren. Laat de parameter weg als een folder wordt gespecificeerd.
 
 - Standaard: `false`
 - Accepteert geen waarde
@@ -1770,7 +1842,7 @@ Voor globale opties, zie [ Globale opties ](#global-options).
 bin/magento indexer:set-dimensions-mode [<indexer> [<mode>]]
 ```
 
-Modus IndexerDimensionen instellen
+Modus Indexerafmetingen instellen
 
 ### Argumenten
 
@@ -1834,14 +1906,14 @@ Indexerstatus type [ ongeldig|opgeschort|geldig ]
 
 #### `index`
 
-Lijst met door spaties gescheiden indextypen of laat toe om op alle indexen toe te passen.
+Lijst met indextypen die niet op spaties wordt toegepast of die niet op alle indexen wordt toegepast.
 
-- Standaard: `[]`
+- Verstek: `[]`
 - Array
 
 ### Opties
 
-Voor globale opties, zie [ Globale opties ](#global-options).
+Zie [Globale opties voor algemene opties](#global-options).
 
 
 ## `indexer:show-dimensions-mode`
@@ -1850,7 +1922,7 @@ Voor globale opties, zie [ Globale opties ](#global-options).
 bin/magento indexer:show-dimensions-mode [<indexer>...]
 ```
 
-Modus Dimension indexeren tonen
+Toont de dimensiemodus van de indexeerfunctie
 
 ### Argumenten
 
@@ -1955,7 +2027,7 @@ Voor globale opties, zie [ Globale opties ](#global-options).
 bin/magento info:dependencies:show-framework [-o|--output OUTPUT]
 ```
 
-Geeft aantal afhankelijkheden weer van raamwerk voor Magento&#39;s
+Geeft een aantal afhankelijkheden van het Magento-framework weer
 
 ### Opties
 
@@ -2078,7 +2150,7 @@ Voor globale opties, zie [ Globale opties ](#global-options).
 
 #### `--complete-orders`, `-c`
 
-Alleen inconsistenties voor volledige bestellingen tonen
+Toon alleen inconsistenties voor volledige bestellingen
 
 - Standaard: `false`
 - Accepteert geen waarde
@@ -2166,7 +2238,7 @@ IP-adres toevoegen aan bestaande lijst
 
 #### `--magento-init-params`
 
-Voeg aan om het even welk bevel toe om Magento initialisatieparameters aan te passen bijvoorbeeld: &quot;MAGE_MODE=developer&amp;MAGE_DIRS [ basis ][path]=/var/www/example.com&amp;MAGE_DIRS [ geheime voorgeheugen ][path]=/var/tmp/cache&quot;
+Voeg aan om het even welk bevel toe om de initialisatieparameters van Magento bijvoorbeeld aan te passen: &quot;MAGE_MODE=developer&amp;MAGE_DIRS [ basis ][path]=/var/www/example.com&amp;MAGE_DIRS [ geheime voorgeheugen ][path]=/var/tmp/cache&quot;
 
 - Vereist een waarde
 
@@ -2192,7 +2264,7 @@ Toegestane IP adressen (gebruik &quot;niets&quot;om toegestane IP lijst te ontru
 
 #### `--magento-init-params`
 
-Voeg aan om het even welk bevel toe om Magento initialisatieparameters aan te passen bijvoorbeeld: &quot;MAGE_MODE=developer&amp;MAGE_DIRS [ basis ][path]=/var/www/example.com&amp;MAGE_DIRS [ geheime voorgeheugen ][path]=/var/tmp/cache&quot;
+Voeg aan om het even welk bevel toe om de initialisatieparameters van Magento bijvoorbeeld aan te passen: &quot;MAGE_MODE=developer&amp;MAGE_DIRS [ basis ][path]=/var/www/example.com&amp;MAGE_DIRS [ geheime voorgeheugen ][path]=/var/tmp/cache&quot;
 
 - Vereist een waarde
 
@@ -2218,7 +2290,7 @@ Toegestane IP adressen (gebruik &quot;niets&quot;om toegestane IP lijst te ontru
 
 #### `--magento-init-params`
 
-Voeg aan om het even welk bevel toe om Magento initialisatieparameters aan te passen bijvoorbeeld: &quot;MAGE_MODE=developer&amp;MAGE_DIRS [ basis ][path]=/var/www/example.com&amp;MAGE_DIRS [ geheime voorgeheugen ][path]=/var/tmp/cache&quot;
+Voeg aan om het even welk bevel toe om de initialisatieparameters van Magento bijvoorbeeld aan te passen: &quot;MAGE_MODE=developer&amp;MAGE_DIRS [ basis ][path]=/var/www/example.com&amp;MAGE_DIRS [ geheime voorgeheugen ][path]=/var/tmp/cache&quot;
 
 - Vereist een waarde
 
@@ -2237,7 +2309,7 @@ Voor globale opties, zie [ Globale opties ](#global-options).
 
 #### `--magento-init-params`
 
-Voeg aan om het even welk bevel toe om Magento initialisatieparameters aan te passen bijvoorbeeld: &quot;MAGE_MODE=developer&amp;MAGE_DIRS [ basis ][path]=/var/www/example.com&amp;MAGE_DIRS [ geheime voorgeheugen ][path]=/var/tmp/cache&quot;
+Voeg aan om het even welk bevel toe om de initialisatieparameters van Magento bijvoorbeeld aan te passen: &quot;MAGE_MODE=developer&amp;MAGE_DIRS [ basis ][path]=/var/www/example.com&amp;MAGE_DIRS [ geheime voorgeheugen ][path]=/var/tmp/cache&quot;
 
 - Vereist een waarde
 
@@ -2300,11 +2372,11 @@ Naam van de module
 
 ### Opties
 
-Voor globale opties, zie [ Globale opties ](#global-options).
+Zie [Globale opties voor algemene opties](#global-options).
 
 #### `--force`, `-f`
 
-Controle voor passageafhankelijkheden
+Controle op overbrugging van afhankelijkheden
 
 - Standaard: `false`
 - Accepteert geen waarde
@@ -2318,14 +2390,14 @@ Alle modules uitschakelen
 
 #### `--clear-static-content`, `-c`
 
-Gegenereerde statische weergavebestanden wissen. Noodzakelijk als de module(s) statische weergavebestanden heeft
+Gegenereerde statische weergavebestanden wissen. Noodzakelijk, als de module(s) statische weergavebestanden hebben
 
-- Standaard: `false`
+- Verstek: `false`
 - Accepteert geen waarde
 
 #### `--magento-init-params`
 
-Voeg aan om het even welk bevel toe om Magento initialisatieparameters aan te passen bijvoorbeeld: &quot;MAGE_MODE=developer&amp;MAGE_DIRS [ basis ][path]=/var/www/example.com&amp;MAGE_DIRS [ geheime voorgeheugen ][path]=/var/tmp/cache&quot;
+Voeg toe aan elke opdracht om Magento-initialisatieparameters aan te passen, bijvoorbeeld: &quot;MAGE_MODE=ontwikkelaar&amp;MAGE_DIRS[base][path]=/var/www/example.com&amp;MAGE_DIRS[cache][path]=/var/tmp/cache&quot;
 
 - Vereist een waarde
 
@@ -2336,7 +2408,7 @@ Voeg aan om het even welk bevel toe om Magento initialisatieparameters aan te pa
 bin/magento module:enable [-f|--force] [--all] [-c|--clear-static-content] [--magento-init-params MAGENTO-INIT-PARAMS] [--] [<module>...]
 ```
 
-Hiermee worden opgegeven modules ingeschakeld
+Maakt gespecificeerde modules mogelijk
 
 ### Argumenten
 
@@ -2374,7 +2446,7 @@ Gegenereerde statische weergavebestanden wissen. Noodzakelijk als de module(s) s
 
 #### `--magento-init-params`
 
-Voeg aan om het even welk bevel toe om Magento initialisatieparameters aan te passen bijvoorbeeld: &quot;MAGE_MODE=developer&amp;MAGE_DIRS [ basis ][path]=/var/www/example.com&amp;MAGE_DIRS [ geheime voorgeheugen ][path]=/var/tmp/cache&quot;
+Voeg aan om het even welk bevel toe om de initialisatieparameters van Magento bijvoorbeeld aan te passen: &quot;MAGE_MODE=developer&amp;MAGE_DIRS [ basis ][path]=/var/www/example.com&amp;MAGE_DIRS [ geheime voorgeheugen ][path]=/var/tmp/cache&quot;
 
 - Vereist een waarde
 
@@ -2416,7 +2488,7 @@ Alleen uitgeschakelde modules afdrukken
 
 #### `--magento-init-params`
 
-Voeg aan om het even welk bevel toe om Magento initialisatieparameters aan te passen bijvoorbeeld: &quot;MAGE_MODE=developer&amp;MAGE_DIRS [ basis ][path]=/var/www/example.com&amp;MAGE_DIRS [ geheime voorgeheugen ][path]=/var/tmp/cache&quot;
+Voeg aan om het even welk bevel toe om de initialisatieparameters van Magento bijvoorbeeld aan te passen: &quot;MAGE_MODE=developer&amp;MAGE_DIRS [ basis ][path]=/var/www/example.com&amp;MAGE_DIRS [ geheime voorgeheugen ][path]=/var/tmp/cache&quot;
 
 - Vereist een waarde
 
@@ -2488,7 +2560,7 @@ Gegenereerde statische weergavebestanden wissen. Noodzakelijk als de module(s) s
 
 #### `--magento-init-params`
 
-Voeg aan om het even welk bevel toe om Magento initialisatieparameters aan te passen bijvoorbeeld: &quot;MAGE_MODE=developer&amp;MAGE_DIRS [ basis ][path]=/var/www/example.com&amp;MAGE_DIRS [ geheime voorgeheugen ][path]=/var/tmp/cache&quot;
+Voeg aan om het even welk bevel toe om de initialisatieparameters van Magento bijvoorbeeld aan te passen: &quot;MAGE_MODE=developer&amp;MAGE_DIRS [ basis ][path]=/var/www/example.com&amp;MAGE_DIRS [ geheime voorgeheugen ][path]=/var/tmp/cache&quot;
 
 - Vereist een waarde
 
@@ -2637,9 +2709,9 @@ De standaardinstelling voor het voorkeursgebied (global, adminhtml, etc..) is gl
 
 #### `--single-thread`
 
-Met deze optie voorkomt u dat meerdere exemplaren van één consument tegelijk worden uitgevoerd.
+Met deze optie voorkomt u dat meerdere kopieën van één consument tegelijk worden uitgevoerd.
 
-- Standaard: `false`
+- Verstek: `false`
 - Accepteert geen waarde
 
 #### `--multi-process`
@@ -2671,7 +2743,7 @@ Voor globale opties, zie [ Globale opties ](#global-options).
 ## `saas:resync`
 
 ```bash
-bin/magento saas:resync [--feed FEED] [--no-reindex] [--cleanup-feed] [--dry-run] [--thread-count THREAD-COUNT] [--batch-size BATCH-SIZE] [--continue-resync]
+bin/magento saas:resync [--feed FEED] [--no-reindex] [--cleanup-feed] [--dry-run] [--thread-count THREAD-COUNT] [--batch-size BATCH-SIZE] [--continue-resync] [--by-ids BY-IDS] [--id-type ID-TYPE]
 ```
 
 Hersynchroniseert voedergegevens aan de dienst SaaS.
@@ -2726,6 +2798,18 @@ Doorgaan met opnieuw synchroniseren vanaf de laatste opgeslagen positie (deze op
 - Standaard: `false`
 - Accepteert geen waarde
 
+#### `--by-ids`
+
+Gedeeltelijk opnieuw synchroniseren door lijst met opgegeven id&#39;s. (Deze optie is van toepassing op de producten, productoverschrijvingen en de prijzen)
+
+- Vereist een waarde
+
+#### `--id-type`
+
+Type id&#39;s voor gedeeltelijke resync (bijvoorbeeld: sku, productId, enz.)
+
+- Vereist een waarde
+
 
 ## `sampledata:deploy`
 
@@ -2733,7 +2817,7 @@ Doorgaan met opnieuw synchroniseren vanaf de laatste opgeslagen positie (deze op
 bin/magento sampledata:deploy [--no-update]
 ```
 
-Stel steekproefgegevensmodules voor op composer-gebaseerde Magento&#39;s installaties op
+Stel steekproefgegevensmodules voor op composer-gebaseerde installaties van Magento op
 
 ### Opties
 
@@ -2945,7 +3029,7 @@ hoe lang moet worden gewacht op workers na herladen (bijv. config verandering) a
 
 #### `--state-monitor`
 
-Statusbewaking inschakelen. Gebruik dit alleen voor foutopsporingsstatusproblemen.
+Schakel statusbewaking in. Gebruik dit alleen voor het debuggen van statusproblemen!
 
 - Standaard: `false`
 - Accepteert geen waarde
@@ -2970,7 +3054,7 @@ Voor globale opties, zie [ Globale opties ](#global-options).
 bin/magento setup:backup [--code] [--media] [--db] [--magento-init-params MAGENTO-INIT-PARAMS]
 ```
 
-Maakt een back-up van de codebasis, media en database van Magento Application
+Maakt back-up van Magento Application Code base, media en database
 
 ### Opties
 
@@ -2999,7 +3083,7 @@ Volledige back-up van de database maken
 
 #### `--magento-init-params`
 
-Voeg aan om het even welk bevel toe om Magento initialisatieparameters aan te passen bijvoorbeeld: &quot;MAGE_MODE=developer&amp;MAGE_DIRS [ basis ][path]=/var/www/example.com&amp;MAGE_DIRS [ geheime voorgeheugen ][path]=/var/tmp/cache&quot;
+Voeg aan om het even welk bevel toe om de initialisatieparameters van Magento bijvoorbeeld aan te passen: &quot;MAGE_MODE=developer&amp;MAGE_DIRS [ basis ][path]=/var/www/example.com&amp;MAGE_DIRS [ geheime voorgeheugen ][path]=/var/tmp/cache&quot;
 
 - Vereist een waarde
 
@@ -3007,7 +3091,7 @@ Voeg aan om het even welk bevel toe om Magento initialisatieparameters aan te pa
 ## `setup:config:set`
 
 ```bash
-bin/magento setup:config:set [--enable-debug-logging ENABLE-DEBUG-LOGGING] [--enable-syslog-logging ENABLE-SYSLOG-LOGGING] [--backend-frontname BACKEND-FRONTNAME] [--remote-storage-driver REMOTE-STORAGE-DRIVER] [--remote-storage-prefix REMOTE-STORAGE-PREFIX] [--remote-storage-endpoint REMOTE-STORAGE-ENDPOINT] [--remote-storage-bucket REMOTE-STORAGE-BUCKET] [--remote-storage-region REMOTE-STORAGE-REGION] [--remote-storage-key REMOTE-STORAGE-KEY] [--remote-storage-secret REMOTE-STORAGE-SECRET] [--remote-storage-path-style REMOTE-STORAGE-PATH-STYLE] [--id_salt ID_SALT] [--config-async CONFIG-ASYNC] [--checkout-async CHECKOUT-ASYNC] [--amqp-host AMQP-HOST] [--amqp-port AMQP-PORT] [--amqp-user AMQP-USER] [--amqp-password AMQP-PASSWORD] [--amqp-virtualhost AMQP-VIRTUALHOST] [--amqp-ssl AMQP-SSL] [--amqp-ssl-options AMQP-SSL-OPTIONS] [--consumers-wait-for-messages CONSUMERS-WAIT-FOR-MESSAGES] [--queue-default-connection QUEUE-DEFAULT-CONNECTION] [--deferred-total-calculating DEFERRED-TOTAL-CALCULATING] [--key KEY] [--db-host DB-HOST] [--db-name DB-NAME] [--db-user DB-USER] [--db-engine DB-ENGINE] [--db-password DB-PASSWORD] [--db-prefix DB-PREFIX] [--db-model DB-MODEL] [--db-init-statements DB-INIT-STATEMENTS] [-s|--skip-db-validation] [--http-cache-hosts HTTP-CACHE-HOSTS] [--db-ssl-key DB-SSL-KEY] [--db-ssl-cert DB-SSL-CERT] [--db-ssl-ca DB-SSL-CA] [--db-ssl-verify] [--session-save SESSION-SAVE] [--session-save-redis-host SESSION-SAVE-REDIS-HOST] [--session-save-redis-port SESSION-SAVE-REDIS-PORT] [--session-save-redis-password SESSION-SAVE-REDIS-PASSWORD] [--session-save-redis-timeout SESSION-SAVE-REDIS-TIMEOUT] [--session-save-redis-persistent-id SESSION-SAVE-REDIS-PERSISTENT-ID] [--session-save-redis-db SESSION-SAVE-REDIS-DB] [--session-save-redis-compression-threshold SESSION-SAVE-REDIS-COMPRESSION-THRESHOLD] [--session-save-redis-compression-lib SESSION-SAVE-REDIS-COMPRESSION-LIB] [--session-save-redis-log-level SESSION-SAVE-REDIS-LOG-LEVEL] [--session-save-redis-max-concurrency SESSION-SAVE-REDIS-MAX-CONCURRENCY] [--session-save-redis-break-after-frontend SESSION-SAVE-REDIS-BREAK-AFTER-FRONTEND] [--session-save-redis-break-after-adminhtml SESSION-SAVE-REDIS-BREAK-AFTER-ADMINHTML] [--session-save-redis-first-lifetime SESSION-SAVE-REDIS-FIRST-LIFETIME] [--session-save-redis-bot-first-lifetime SESSION-SAVE-REDIS-BOT-FIRST-LIFETIME] [--session-save-redis-bot-lifetime SESSION-SAVE-REDIS-BOT-LIFETIME] [--session-save-redis-disable-locking SESSION-SAVE-REDIS-DISABLE-LOCKING] [--session-save-redis-min-lifetime SESSION-SAVE-REDIS-MIN-LIFETIME] [--session-save-redis-max-lifetime SESSION-SAVE-REDIS-MAX-LIFETIME] [--session-save-redis-sentinel-master SESSION-SAVE-REDIS-SENTINEL-MASTER] [--session-save-redis-sentinel-servers SESSION-SAVE-REDIS-SENTINEL-SERVERS] [--session-save-redis-sentinel-verify-master SESSION-SAVE-REDIS-SENTINEL-VERIFY-MASTER] [--session-save-redis-sentinel-connect-retries SESSION-SAVE-REDIS-SENTINEL-CONNECT-RETRIES] [--cache-backend CACHE-BACKEND] [--cache-backend-redis-server CACHE-BACKEND-REDIS-SERVER] [--cache-backend-redis-db CACHE-BACKEND-REDIS-DB] [--cache-backend-redis-port CACHE-BACKEND-REDIS-PORT] [--cache-backend-redis-password CACHE-BACKEND-REDIS-PASSWORD] [--cache-backend-redis-compress-data CACHE-BACKEND-REDIS-COMPRESS-DATA] [--cache-backend-redis-compression-lib CACHE-BACKEND-REDIS-COMPRESSION-LIB] [--cache-backend-redis-use-lua CACHE-BACKEND-REDIS-USE-LUA] [--cache-id-prefix CACHE-ID-PREFIX] [--allow-parallel-generation] [--page-cache PAGE-CACHE] [--page-cache-redis-server PAGE-CACHE-REDIS-SERVER] [--page-cache-redis-db PAGE-CACHE-REDIS-DB] [--page-cache-redis-port PAGE-CACHE-REDIS-PORT] [--page-cache-redis-password PAGE-CACHE-REDIS-PASSWORD] [--page-cache-redis-compress-data PAGE-CACHE-REDIS-COMPRESS-DATA] [--page-cache-redis-compression-lib PAGE-CACHE-REDIS-COMPRESSION-LIB] [--page-cache-id-prefix PAGE-CACHE-ID-PREFIX] [--lock-provider LOCK-PROVIDER] [--lock-db-prefix LOCK-DB-PREFIX] [--lock-zookeeper-host LOCK-ZOOKEEPER-HOST] [--lock-zookeeper-path LOCK-ZOOKEEPER-PATH] [--lock-file-path LOCK-FILE-PATH] [--document-root-is-pub DOCUMENT-ROOT-IS-PUB] [--backpressure-logger BACKPRESSURE-LOGGER] [--backpressure-logger-redis-server BACKPRESSURE-LOGGER-REDIS-SERVER] [--backpressure-logger-redis-port BACKPRESSURE-LOGGER-REDIS-PORT] [--backpressure-logger-redis-timeout BACKPRESSURE-LOGGER-REDIS-TIMEOUT] [--backpressure-logger-redis-persistent BACKPRESSURE-LOGGER-REDIS-PERSISTENT] [--backpressure-logger-redis-db BACKPRESSURE-LOGGER-REDIS-DB] [--backpressure-logger-redis-password BACKPRESSURE-LOGGER-REDIS-PASSWORD] [--backpressure-logger-redis-user BACKPRESSURE-LOGGER-REDIS-USER] [--backpressure-logger-id-prefix BACKPRESSURE-LOGGER-ID-PREFIX] [--magento-init-params MAGENTO-INIT-PARAMS]
+bin/magento setup:config:set [--remote-storage-driver REMOTE-STORAGE-DRIVER] [--remote-storage-prefix REMOTE-STORAGE-PREFIX] [--remote-storage-endpoint REMOTE-STORAGE-ENDPOINT] [--remote-storage-bucket REMOTE-STORAGE-BUCKET] [--remote-storage-region REMOTE-STORAGE-REGION] [--remote-storage-key REMOTE-STORAGE-KEY] [--remote-storage-secret REMOTE-STORAGE-SECRET] [--remote-storage-path-style REMOTE-STORAGE-PATH-STYLE] [--backend-frontname BACKEND-FRONTNAME] [--enable-debug-logging ENABLE-DEBUG-LOGGING] [--enable-syslog-logging ENABLE-SYSLOG-LOGGING] [--id_salt ID_SALT] [--checkout-async CHECKOUT-ASYNC] [--config-async CONFIG-ASYNC] [--amqp-host AMQP-HOST] [--amqp-port AMQP-PORT] [--amqp-user AMQP-USER] [--amqp-password AMQP-PASSWORD] [--amqp-virtualhost AMQP-VIRTUALHOST] [--amqp-ssl AMQP-SSL] [--amqp-ssl-options AMQP-SSL-OPTIONS] [--consumers-wait-for-messages CONSUMERS-WAIT-FOR-MESSAGES] [--queue-default-connection QUEUE-DEFAULT-CONNECTION] [--deferred-total-calculating DEFERRED-TOTAL-CALCULATING] [--key KEY] [--db-host DB-HOST] [--db-name DB-NAME] [--db-user DB-USER] [--db-engine DB-ENGINE] [--db-password DB-PASSWORD] [--db-prefix DB-PREFIX] [--db-model DB-MODEL] [--db-init-statements DB-INIT-STATEMENTS] [-s|--skip-db-validation] [--http-cache-hosts HTTP-CACHE-HOSTS] [--db-ssl-key DB-SSL-KEY] [--db-ssl-cert DB-SSL-CERT] [--db-ssl-ca DB-SSL-CA] [--db-ssl-verify] [--session-save SESSION-SAVE] [--session-save-redis-host SESSION-SAVE-REDIS-HOST] [--session-save-redis-port SESSION-SAVE-REDIS-PORT] [--session-save-redis-password SESSION-SAVE-REDIS-PASSWORD] [--session-save-redis-timeout SESSION-SAVE-REDIS-TIMEOUT] [--session-save-redis-retries SESSION-SAVE-REDIS-RETRIES] [--session-save-redis-persistent-id SESSION-SAVE-REDIS-PERSISTENT-ID] [--session-save-redis-db SESSION-SAVE-REDIS-DB] [--session-save-redis-compression-threshold SESSION-SAVE-REDIS-COMPRESSION-THRESHOLD] [--session-save-redis-compression-lib SESSION-SAVE-REDIS-COMPRESSION-LIB] [--session-save-redis-log-level SESSION-SAVE-REDIS-LOG-LEVEL] [--session-save-redis-max-concurrency SESSION-SAVE-REDIS-MAX-CONCURRENCY] [--session-save-redis-break-after-frontend SESSION-SAVE-REDIS-BREAK-AFTER-FRONTEND] [--session-save-redis-break-after-adminhtml SESSION-SAVE-REDIS-BREAK-AFTER-ADMINHTML] [--session-save-redis-first-lifetime SESSION-SAVE-REDIS-FIRST-LIFETIME] [--session-save-redis-bot-first-lifetime SESSION-SAVE-REDIS-BOT-FIRST-LIFETIME] [--session-save-redis-bot-lifetime SESSION-SAVE-REDIS-BOT-LIFETIME] [--session-save-redis-disable-locking SESSION-SAVE-REDIS-DISABLE-LOCKING] [--session-save-redis-min-lifetime SESSION-SAVE-REDIS-MIN-LIFETIME] [--session-save-redis-max-lifetime SESSION-SAVE-REDIS-MAX-LIFETIME] [--session-save-redis-sentinel-master SESSION-SAVE-REDIS-SENTINEL-MASTER] [--session-save-redis-sentinel-servers SESSION-SAVE-REDIS-SENTINEL-SERVERS] [--session-save-redis-sentinel-verify-master SESSION-SAVE-REDIS-SENTINEL-VERIFY-MASTER] [--session-save-redis-sentinel-connect-retries SESSION-SAVE-REDIS-SENTINEL-CONNECT-RETRIES] [--cache-backend CACHE-BACKEND] [--cache-backend-redis-server CACHE-BACKEND-REDIS-SERVER] [--cache-backend-redis-db CACHE-BACKEND-REDIS-DB] [--cache-backend-redis-port CACHE-BACKEND-REDIS-PORT] [--cache-backend-redis-password CACHE-BACKEND-REDIS-PASSWORD] [--cache-backend-redis-compress-data CACHE-BACKEND-REDIS-COMPRESS-DATA] [--cache-backend-redis-compression-lib CACHE-BACKEND-REDIS-COMPRESSION-LIB] [--cache-backend-redis-use-lua CACHE-BACKEND-REDIS-USE-LUA] [--cache-backend-redis-use-lua-on-gc CACHE-BACKEND-REDIS-USE-LUA-ON-GC] [--cache-id-prefix CACHE-ID-PREFIX] [--allow-parallel-generation] [--page-cache PAGE-CACHE] [--page-cache-redis-server PAGE-CACHE-REDIS-SERVER] [--page-cache-redis-db PAGE-CACHE-REDIS-DB] [--page-cache-redis-port PAGE-CACHE-REDIS-PORT] [--page-cache-redis-password PAGE-CACHE-REDIS-PASSWORD] [--page-cache-redis-compress-data PAGE-CACHE-REDIS-COMPRESS-DATA] [--page-cache-redis-compression-lib PAGE-CACHE-REDIS-COMPRESSION-LIB] [--page-cache-id-prefix PAGE-CACHE-ID-PREFIX] [--lock-provider LOCK-PROVIDER] [--lock-db-prefix LOCK-DB-PREFIX] [--lock-zookeeper-host LOCK-ZOOKEEPER-HOST] [--lock-zookeeper-path LOCK-ZOOKEEPER-PATH] [--lock-file-path LOCK-FILE-PATH] [--document-root-is-pub DOCUMENT-ROOT-IS-PUB] [--backpressure-logger BACKPRESSURE-LOGGER] [--backpressure-logger-redis-server BACKPRESSURE-LOGGER-REDIS-SERVER] [--backpressure-logger-redis-port BACKPRESSURE-LOGGER-REDIS-PORT] [--backpressure-logger-redis-timeout BACKPRESSURE-LOGGER-REDIS-TIMEOUT] [--backpressure-logger-redis-persistent BACKPRESSURE-LOGGER-REDIS-PERSISTENT] [--backpressure-logger-redis-db BACKPRESSURE-LOGGER-REDIS-DB] [--backpressure-logger-redis-password BACKPRESSURE-LOGGER-REDIS-PASSWORD] [--backpressure-logger-redis-user BACKPRESSURE-LOGGER-REDIS-USER] [--backpressure-logger-id-prefix BACKPRESSURE-LOGGER-ID-PREFIX] [--magento-init-params MAGENTO-INIT-PARAMS]
 ```
 
 Creeert of wijzigt de plaatsingsconfiguratie
@@ -3015,24 +3099,6 @@ Creeert of wijzigt de plaatsingsconfiguratie
 ### Opties
 
 Voor globale opties, zie [ Globale opties ](#global-options).
-
-#### `--enable-debug-logging`
-
-Foutopsporingsregistratie inschakelen
-
-- Vereist een waarde
-
-#### `--enable-syslog-logging`
-
-syslog inschakelen
-
-- Vereist een waarde
-
-#### `--backend-frontname`
-
-Backend frontname (wordt automatisch gegenereerd als deze ontbreekt)
-
-- Vereist een waarde
 
 #### `--remote-storage-driver`
 
@@ -3086,21 +3152,39 @@ Padstijl voor externe opslag
 - Standaard: `0`
 - Vereist een waarde
 
+#### `--backend-frontname`
+
+Backend frontname (wordt automatisch gegenereerd als deze ontbreekt)
+
+- Vereist een waarde
+
+#### `--enable-debug-logging`
+
+Foutopsporingsregistratie inschakelen
+
+- Vereist een waarde
+
+#### `--enable-syslog-logging`
+
+syslog inschakelen
+
+- Vereist een waarde
+
 #### `--id_salt`
 
 GraphQl Salt
 
 - Vereist een waarde
 
-#### `--config-async`
-
-Opslaan van asynchrone beheerconfiguratie inschakelen? 1 - Ja, 0 - Nee
-
-- Vereist een waarde
-
 #### `--checkout-async`
 
 Afwisselende orderverwerking inschakelen? 1 - Ja, 0 - Nee
+
+- Vereist een waarde
+
+#### `--config-async`
+
+Opslaan van asynchrone beheerconfiguratie inschakelen? 1 - Ja, 0 - Nee
 
 - Vereist een waarde
 
@@ -3167,19 +3251,19 @@ Standaardverbinding in wachtrij met berichten. Kan &#39;db&#39;, &#39;amqp&#39; 
 
 #### `--deferred-total-calculating`
 
-Uitgestelde totale berekening inschakelen? 1 - Ja, 0 - Nee
+Uitgestelde totaalberekening inschakelen? 1 - Ja, 0 - Nee
 
 - Vereist een waarde
 
 #### `--key`
 
-Versleutelingssleutel
+Coderingssleutel
 
 - Vereist een waarde
 
 #### `--db-host`
 
-Host databaseserver
+Host van de databaseserver
 
 - Vereist een waarde
 
@@ -3197,7 +3281,7 @@ Gebruikersnaam databaseserver
 
 #### `--db-engine`
 
-Database-server-engine
+Database server motor
 
 - Vereist een waarde
 
@@ -3296,6 +3380,12 @@ Time-out verbinding, in seconden
 
 - Vereist een waarde
 
+#### `--session-save-redis-retries`
+
+Opnieuw wordt verbinding opnieuw geprobeerd.
+
+- Vereist een waarde
+
 #### `--session-save-redis-persistent-id`
 
 Unieke tekenreeks om permanente verbindingen in te schakelen
@@ -3358,19 +3448,19 @@ Levensduur, in seconden, van sessie voor bots bij de eerste schrijfbewerking (ge
 
 #### `--session-save-redis-bot-lifetime`
 
-De levensduur van de sessie voor bots bij volgende schrijvingen (gebruik 0 om uit te schakelen)
+Levensduur van de sessie voor bots bij volgende schrijfbewerkingen (gebruik 0 om uit te schakelen)
 
 - Vereist een waarde
 
 #### `--session-save-redis-disable-locking`
 
-Schakel vergrendeling opnieuw uit. Waarden: false (standaardwaarde), true
+Redis schakelt vergrendeling uit. Waarden: onwaar (standaard), waar
 
 - Vereist een waarde
 
 #### `--session-save-redis-min-lifetime`
 
-Standaardsessielevensduur van Redis, in seconden
+Minimale sessielevensduur van Redis, in seconden
 
 - Vereist een waarde
 
@@ -3452,6 +3542,12 @@ Ingesteld op 1 om lua in te schakelen (standaardwaarde is 0, uitgeschakeld)
 
 - Vereist een waarde
 
+#### `--cache-backend-redis-use-lua-on-gc`
+
+Ingesteld op 0 om lua uit te schakelen bij opschonen (standaard is 1, ingeschakeld)
+
+- Vereist een waarde
+
 #### `--cache-id-prefix`
 
 ID-voorvoegsel voor cachesleutels
@@ -3521,13 +3617,13 @@ Naam provider vergrendelen
 
 #### `--lock-db-prefix`
 
-Installatiespecifiek vergrendelingsvoorvoegsel om vergrendelingsconflicten te voorkomen
+Installatiespecifiek slotvoorvoegsel om slotconflicten te voorkomen
 
 - Vereist een waarde
 
 #### `--lock-zookeeper-host`
 
-Host en poort voor verbinding met Zookeeper-cluster. Bijvoorbeeld: 127.0.0.1:2181
+Host en poort om verbinding te maken met het Zookeeper-cluster. Bijvoorbeeld: 127.0.0.1:2181
 
 - Vereist een waarde
 
@@ -3605,7 +3701,7 @@ ID-voorvoegsel voor toetsen
 
 #### `--magento-init-params`
 
-Voeg aan om het even welk bevel toe om Magento initialisatieparameters aan te passen bijvoorbeeld: &quot;MAGE_MODE=developer&amp;MAGE_DIRS [ basis ][path]=/var/www/example.com&amp;MAGE_DIRS [ geheime voorgeheugen ][path]=/var/tmp/cache&quot;
+Voeg aan om het even welk bevel toe om de initialisatieparameters van Magento bijvoorbeeld aan te passen: &quot;MAGE_MODE=developer&amp;MAGE_DIRS [ basis ][path]=/var/www/example.com&amp;MAGE_DIRS [ geheime voorgeheugen ][path]=/var/tmp/cache&quot;
 
 - Vereist een waarde
 
@@ -3624,7 +3720,7 @@ Voor globale opties, zie [ Globale opties ](#global-options).
 
 #### `--magento-init-params`
 
-Voeg aan om het even welk bevel toe om Magento initialisatieparameters aan te passen bijvoorbeeld: &quot;MAGE_MODE=developer&amp;MAGE_DIRS [ basis ][path]=/var/www/example.com&amp;MAGE_DIRS [ geheime voorgeheugen ][path]=/var/tmp/cache&quot;
+Voeg aan om het even welk bevel toe om de initialisatieparameters van Magento bijvoorbeeld aan te passen: &quot;MAGE_MODE=developer&amp;MAGE_DIRS [ basis ][path]=/var/www/example.com&amp;MAGE_DIRS [ geheime voorgeheugen ][path]=/var/tmp/cache&quot;
 
 - Vereist een waarde
 
@@ -3752,7 +3848,7 @@ Max. toegestane lave-verbinding voor lave (in seconden)
 
 #### `--magento-init-params`
 
-Voeg aan om het even welk bevel toe om Magento initialisatieparameters aan te passen bijvoorbeeld: &quot;MAGE_MODE=developer&amp;MAGE_DIRS [ basis ][path]=/var/www/example.com&amp;MAGE_DIRS [ geheime voorgeheugen ][path]=/var/tmp/cache&quot;
+Voeg aan om het even welk bevel toe om de initialisatieparameters van Magento bijvoorbeeld aan te passen: &quot;MAGE_MODE=developer&amp;MAGE_DIRS [ basis ][path]=/var/www/example.com&amp;MAGE_DIRS [ geheime voorgeheugen ][path]=/var/tmp/cache&quot;
 
 - Vereist een waarde
 
@@ -3763,15 +3859,15 @@ Voeg aan om het even welk bevel toe om Magento initialisatieparameters aan te pa
 bin/magento setup:db-schema:split-quote [--host HOST] [--dbname DBNAME] [--username USERNAME] [--password [PASSWORD]] [--connection [CONNECTION]] [--resource [RESOURCE]] [--magento-init-params MAGENTO-INIT-PARAMS]
 ```
 
-Verplaats de aan uitchecken gerelateerde tabellen naar een aparte DB-server. Vervangen vanaf 2.4.2 en verwijderd
+Verplaats de aan uitchecken gerelateerde tabellen naar een aparte DB-server. Afgeschaft sinds 2.4.2 en wordt verwijderd
 
 ### Opties
 
-Voor globale opties, zie [ Globale opties ](#global-options).
+Zie [Globale opties voor algemene opties](#global-options).
 
 #### `--host`
 
-Uitchecken DB Server-host
+Host van DB Server afrekenen
 
 - Vereist een waarde
 
@@ -3809,7 +3905,7 @@ Naam van resource voor uitchecken
 
 #### `--magento-init-params`
 
-Voeg aan om het even welk bevel toe om Magento initialisatieparameters aan te passen bijvoorbeeld: &quot;MAGE_MODE=developer&amp;MAGE_DIRS [ basis ][path]=/var/www/example.com&amp;MAGE_DIRS [ geheime voorgeheugen ][path]=/var/tmp/cache&quot;
+Voeg toe aan elke opdracht om Magento-initialisatieparameters aan te passen, bijvoorbeeld: &quot;MAGE_MODE=ontwikkelaar&amp;MAGE_DIRS[base][path]=/var/www/example.com&amp;MAGE_DIRS[cache][path]=/var/tmp/cache&quot;
 
 - Vereist een waarde
 
@@ -3820,11 +3916,11 @@ Voeg aan om het even welk bevel toe om Magento initialisatieparameters aan te pa
 bin/magento setup:db-schema:split-sales [--host HOST] [--dbname DBNAME] [--username USERNAME] [--password [PASSWORD]] [--connection [CONNECTION]] [--resource [RESOURCE]] [--magento-init-params MAGENTO-INIT-PARAMS]
 ```
 
-Verplaats verkoopgerelateerde tabellen naar een aparte DB-server. Vervangen vanaf 2.4.2 en verwijderd
+Verplaats verkoopgerelateerde tabellen naar een aparte DB-server. Afgeschaft sinds 2.4.2 en wordt verwijderd
 
 ### Opties
 
-Voor globale opties, zie [ Globale opties ](#global-options).
+Zie [Globale opties voor algemene opties](#global-options).
 
 #### `--host`
 
@@ -3840,7 +3936,7 @@ Naam verkoopdatabase
 
 #### `--username`
 
-Gebruikersnaam verkoopdatabase
+Gebruikersnaam verkoop-DB
 
 - Vereist een waarde
 
@@ -3866,7 +3962,7 @@ Naam verkoopbron
 
 #### `--magento-init-params`
 
-Voeg aan om het even welk bevel toe om Magento initialisatieparameters aan te passen bijvoorbeeld: &quot;MAGE_MODE=developer&amp;MAGE_DIRS [ basis ][path]=/var/www/example.com&amp;MAGE_DIRS [ geheime voorgeheugen ][path]=/var/tmp/cache&quot;
+Voeg aan om het even welk bevel toe om de initialisatieparameters van Magento bijvoorbeeld aan te passen: &quot;MAGE_MODE=developer&amp;MAGE_DIRS [ basis ][path]=/var/www/example.com&amp;MAGE_DIRS [ geheime voorgeheugen ][path]=/var/tmp/cache&quot;
 
 - Vereist een waarde
 
@@ -3892,7 +3988,7 @@ Hiermee kunt u oude scripts (InstallSchema, UpgradeSchema) converteren naar de i
 
 #### `--magento-init-params`
 
-Voeg aan om het even welk bevel toe om Magento initialisatieparameters aan te passen bijvoorbeeld: &quot;MAGE_MODE=developer&amp;MAGE_DIRS [ basis ][path]=/var/www/example.com&amp;MAGE_DIRS [ geheime voorgeheugen ][path]=/var/tmp/cache&quot;
+Voeg aan om het even welk bevel toe om de initialisatieparameters van Magento bijvoorbeeld aan te passen: &quot;MAGE_MODE=developer&amp;MAGE_DIRS [ basis ][path]=/var/www/example.com&amp;MAGE_DIRS [ geheime voorgeheugen ][path]=/var/tmp/cache&quot;
 
 - Vereist een waarde
 
@@ -3911,7 +4007,7 @@ Voor globale opties, zie [ Globale opties ](#global-options).
 
 #### `--magento-init-params`
 
-Voeg aan om het even welk bevel toe om Magento initialisatieparameters aan te passen bijvoorbeeld: &quot;MAGE_MODE=developer&amp;MAGE_DIRS [ basis ][path]=/var/www/example.com&amp;MAGE_DIRS [ geheime voorgeheugen ][path]=/var/tmp/cache&quot;
+Voeg aan om het even welk bevel toe om de initialisatieparameters van Magento bijvoorbeeld aan te passen: &quot;MAGE_MODE=developer&amp;MAGE_DIRS [ basis ][path]=/var/www/example.com&amp;MAGE_DIRS [ geheime voorgeheugen ][path]=/var/tmp/cache&quot;
 
 - Vereist een waarde
 
@@ -3932,32 +4028,14 @@ Voor globale opties, zie [ Globale opties ](#global-options).
 ## `setup:install`
 
 ```bash
-bin/magento setup:install [--enable-debug-logging ENABLE-DEBUG-LOGGING] [--enable-syslog-logging ENABLE-SYSLOG-LOGGING] [--backend-frontname BACKEND-FRONTNAME] [--remote-storage-driver REMOTE-STORAGE-DRIVER] [--remote-storage-prefix REMOTE-STORAGE-PREFIX] [--remote-storage-endpoint REMOTE-STORAGE-ENDPOINT] [--remote-storage-bucket REMOTE-STORAGE-BUCKET] [--remote-storage-region REMOTE-STORAGE-REGION] [--remote-storage-key REMOTE-STORAGE-KEY] [--remote-storage-secret REMOTE-STORAGE-SECRET] [--remote-storage-path-style REMOTE-STORAGE-PATH-STYLE] [--id_salt ID_SALT] [--config-async CONFIG-ASYNC] [--checkout-async CHECKOUT-ASYNC] [--amqp-host AMQP-HOST] [--amqp-port AMQP-PORT] [--amqp-user AMQP-USER] [--amqp-password AMQP-PASSWORD] [--amqp-virtualhost AMQP-VIRTUALHOST] [--amqp-ssl AMQP-SSL] [--amqp-ssl-options AMQP-SSL-OPTIONS] [--consumers-wait-for-messages CONSUMERS-WAIT-FOR-MESSAGES] [--queue-default-connection QUEUE-DEFAULT-CONNECTION] [--deferred-total-calculating DEFERRED-TOTAL-CALCULATING] [--key KEY] [--db-host DB-HOST] [--db-name DB-NAME] [--db-user DB-USER] [--db-engine DB-ENGINE] [--db-password DB-PASSWORD] [--db-prefix DB-PREFIX] [--db-model DB-MODEL] [--db-init-statements DB-INIT-STATEMENTS] [-s|--skip-db-validation] [--http-cache-hosts HTTP-CACHE-HOSTS] [--db-ssl-key DB-SSL-KEY] [--db-ssl-cert DB-SSL-CERT] [--db-ssl-ca DB-SSL-CA] [--db-ssl-verify] [--session-save SESSION-SAVE] [--session-save-redis-host SESSION-SAVE-REDIS-HOST] [--session-save-redis-port SESSION-SAVE-REDIS-PORT] [--session-save-redis-password SESSION-SAVE-REDIS-PASSWORD] [--session-save-redis-timeout SESSION-SAVE-REDIS-TIMEOUT] [--session-save-redis-persistent-id SESSION-SAVE-REDIS-PERSISTENT-ID] [--session-save-redis-db SESSION-SAVE-REDIS-DB] [--session-save-redis-compression-threshold SESSION-SAVE-REDIS-COMPRESSION-THRESHOLD] [--session-save-redis-compression-lib SESSION-SAVE-REDIS-COMPRESSION-LIB] [--session-save-redis-log-level SESSION-SAVE-REDIS-LOG-LEVEL] [--session-save-redis-max-concurrency SESSION-SAVE-REDIS-MAX-CONCURRENCY] [--session-save-redis-break-after-frontend SESSION-SAVE-REDIS-BREAK-AFTER-FRONTEND] [--session-save-redis-break-after-adminhtml SESSION-SAVE-REDIS-BREAK-AFTER-ADMINHTML] [--session-save-redis-first-lifetime SESSION-SAVE-REDIS-FIRST-LIFETIME] [--session-save-redis-bot-first-lifetime SESSION-SAVE-REDIS-BOT-FIRST-LIFETIME] [--session-save-redis-bot-lifetime SESSION-SAVE-REDIS-BOT-LIFETIME] [--session-save-redis-disable-locking SESSION-SAVE-REDIS-DISABLE-LOCKING] [--session-save-redis-min-lifetime SESSION-SAVE-REDIS-MIN-LIFETIME] [--session-save-redis-max-lifetime SESSION-SAVE-REDIS-MAX-LIFETIME] [--session-save-redis-sentinel-master SESSION-SAVE-REDIS-SENTINEL-MASTER] [--session-save-redis-sentinel-servers SESSION-SAVE-REDIS-SENTINEL-SERVERS] [--session-save-redis-sentinel-verify-master SESSION-SAVE-REDIS-SENTINEL-VERIFY-MASTER] [--session-save-redis-sentinel-connect-retries SESSION-SAVE-REDIS-SENTINEL-CONNECT-RETRIES] [--cache-backend CACHE-BACKEND] [--cache-backend-redis-server CACHE-BACKEND-REDIS-SERVER] [--cache-backend-redis-db CACHE-BACKEND-REDIS-DB] [--cache-backend-redis-port CACHE-BACKEND-REDIS-PORT] [--cache-backend-redis-password CACHE-BACKEND-REDIS-PASSWORD] [--cache-backend-redis-compress-data CACHE-BACKEND-REDIS-COMPRESS-DATA] [--cache-backend-redis-compression-lib CACHE-BACKEND-REDIS-COMPRESSION-LIB] [--cache-backend-redis-use-lua CACHE-BACKEND-REDIS-USE-LUA] [--cache-id-prefix CACHE-ID-PREFIX] [--allow-parallel-generation] [--page-cache PAGE-CACHE] [--page-cache-redis-server PAGE-CACHE-REDIS-SERVER] [--page-cache-redis-db PAGE-CACHE-REDIS-DB] [--page-cache-redis-port PAGE-CACHE-REDIS-PORT] [--page-cache-redis-password PAGE-CACHE-REDIS-PASSWORD] [--page-cache-redis-compress-data PAGE-CACHE-REDIS-COMPRESS-DATA] [--page-cache-redis-compression-lib PAGE-CACHE-REDIS-COMPRESSION-LIB] [--page-cache-id-prefix PAGE-CACHE-ID-PREFIX] [--lock-provider LOCK-PROVIDER] [--lock-db-prefix LOCK-DB-PREFIX] [--lock-zookeeper-host LOCK-ZOOKEEPER-HOST] [--lock-zookeeper-path LOCK-ZOOKEEPER-PATH] [--lock-file-path LOCK-FILE-PATH] [--document-root-is-pub DOCUMENT-ROOT-IS-PUB] [--backpressure-logger BACKPRESSURE-LOGGER] [--backpressure-logger-redis-server BACKPRESSURE-LOGGER-REDIS-SERVER] [--backpressure-logger-redis-port BACKPRESSURE-LOGGER-REDIS-PORT] [--backpressure-logger-redis-timeout BACKPRESSURE-LOGGER-REDIS-TIMEOUT] [--backpressure-logger-redis-persistent BACKPRESSURE-LOGGER-REDIS-PERSISTENT] [--backpressure-logger-redis-db BACKPRESSURE-LOGGER-REDIS-DB] [--backpressure-logger-redis-password BACKPRESSURE-LOGGER-REDIS-PASSWORD] [--backpressure-logger-redis-user BACKPRESSURE-LOGGER-REDIS-USER] [--backpressure-logger-id-prefix BACKPRESSURE-LOGGER-ID-PREFIX] [--base-url BASE-URL] [--language LANGUAGE] [--timezone TIMEZONE] [--currency CURRENCY] [--use-rewrites USE-REWRITES] [--use-secure USE-SECURE] [--base-url-secure BASE-URL-SECURE] [--use-secure-admin USE-SECURE-ADMIN] [--admin-use-security-key ADMIN-USE-SECURITY-KEY] [--admin-user [ADMIN-USER]] [--admin-password [ADMIN-PASSWORD]] [--admin-email [ADMIN-EMAIL]] [--admin-firstname [ADMIN-FIRSTNAME]] [--admin-lastname [ADMIN-LASTNAME]] [--search-engine SEARCH-ENGINE] [--elasticsearch-host ELASTICSEARCH-HOST] [--elasticsearch-port ELASTICSEARCH-PORT] [--elasticsearch-enable-auth ELASTICSEARCH-ENABLE-AUTH] [--elasticsearch-username ELASTICSEARCH-USERNAME] [--elasticsearch-password ELASTICSEARCH-PASSWORD] [--elasticsearch-index-prefix ELASTICSEARCH-INDEX-PREFIX] [--elasticsearch-timeout ELASTICSEARCH-TIMEOUT] [--opensearch-host OPENSEARCH-HOST] [--opensearch-port OPENSEARCH-PORT] [--opensearch-enable-auth OPENSEARCH-ENABLE-AUTH] [--opensearch-username OPENSEARCH-USERNAME] [--opensearch-password OPENSEARCH-PASSWORD] [--opensearch-index-prefix OPENSEARCH-INDEX-PREFIX] [--opensearch-timeout OPENSEARCH-TIMEOUT] [--cleanup-database] [--sales-order-increment-prefix SALES-ORDER-INCREMENT-PREFIX] [--use-sample-data] [--enable-modules [ENABLE-MODULES]] [--disable-modules [DISABLE-MODULES]] [--convert-old-scripts [CONVERT-OLD-SCRIPTS]] [-i|--interactive] [--safe-mode [SAFE-MODE]] [--data-restore [DATA-RESTORE]] [--dry-run [DRY-RUN]] [--magento-init-params MAGENTO-INIT-PARAMS]
+bin/magento setup:install [--remote-storage-driver REMOTE-STORAGE-DRIVER] [--remote-storage-prefix REMOTE-STORAGE-PREFIX] [--remote-storage-endpoint REMOTE-STORAGE-ENDPOINT] [--remote-storage-bucket REMOTE-STORAGE-BUCKET] [--remote-storage-region REMOTE-STORAGE-REGION] [--remote-storage-key REMOTE-STORAGE-KEY] [--remote-storage-secret REMOTE-STORAGE-SECRET] [--remote-storage-path-style REMOTE-STORAGE-PATH-STYLE] [--backend-frontname BACKEND-FRONTNAME] [--enable-debug-logging ENABLE-DEBUG-LOGGING] [--enable-syslog-logging ENABLE-SYSLOG-LOGGING] [--id_salt ID_SALT] [--checkout-async CHECKOUT-ASYNC] [--config-async CONFIG-ASYNC] [--amqp-host AMQP-HOST] [--amqp-port AMQP-PORT] [--amqp-user AMQP-USER] [--amqp-password AMQP-PASSWORD] [--amqp-virtualhost AMQP-VIRTUALHOST] [--amqp-ssl AMQP-SSL] [--amqp-ssl-options AMQP-SSL-OPTIONS] [--consumers-wait-for-messages CONSUMERS-WAIT-FOR-MESSAGES] [--queue-default-connection QUEUE-DEFAULT-CONNECTION] [--deferred-total-calculating DEFERRED-TOTAL-CALCULATING] [--key KEY] [--db-host DB-HOST] [--db-name DB-NAME] [--db-user DB-USER] [--db-engine DB-ENGINE] [--db-password DB-PASSWORD] [--db-prefix DB-PREFIX] [--db-model DB-MODEL] [--db-init-statements DB-INIT-STATEMENTS] [-s|--skip-db-validation] [--http-cache-hosts HTTP-CACHE-HOSTS] [--db-ssl-key DB-SSL-KEY] [--db-ssl-cert DB-SSL-CERT] [--db-ssl-ca DB-SSL-CA] [--db-ssl-verify] [--session-save SESSION-SAVE] [--session-save-redis-host SESSION-SAVE-REDIS-HOST] [--session-save-redis-port SESSION-SAVE-REDIS-PORT] [--session-save-redis-password SESSION-SAVE-REDIS-PASSWORD] [--session-save-redis-timeout SESSION-SAVE-REDIS-TIMEOUT] [--session-save-redis-retries SESSION-SAVE-REDIS-RETRIES] [--session-save-redis-persistent-id SESSION-SAVE-REDIS-PERSISTENT-ID] [--session-save-redis-db SESSION-SAVE-REDIS-DB] [--session-save-redis-compression-threshold SESSION-SAVE-REDIS-COMPRESSION-THRESHOLD] [--session-save-redis-compression-lib SESSION-SAVE-REDIS-COMPRESSION-LIB] [--session-save-redis-log-level SESSION-SAVE-REDIS-LOG-LEVEL] [--session-save-redis-max-concurrency SESSION-SAVE-REDIS-MAX-CONCURRENCY] [--session-save-redis-break-after-frontend SESSION-SAVE-REDIS-BREAK-AFTER-FRONTEND] [--session-save-redis-break-after-adminhtml SESSION-SAVE-REDIS-BREAK-AFTER-ADMINHTML] [--session-save-redis-first-lifetime SESSION-SAVE-REDIS-FIRST-LIFETIME] [--session-save-redis-bot-first-lifetime SESSION-SAVE-REDIS-BOT-FIRST-LIFETIME] [--session-save-redis-bot-lifetime SESSION-SAVE-REDIS-BOT-LIFETIME] [--session-save-redis-disable-locking SESSION-SAVE-REDIS-DISABLE-LOCKING] [--session-save-redis-min-lifetime SESSION-SAVE-REDIS-MIN-LIFETIME] [--session-save-redis-max-lifetime SESSION-SAVE-REDIS-MAX-LIFETIME] [--session-save-redis-sentinel-master SESSION-SAVE-REDIS-SENTINEL-MASTER] [--session-save-redis-sentinel-servers SESSION-SAVE-REDIS-SENTINEL-SERVERS] [--session-save-redis-sentinel-verify-master SESSION-SAVE-REDIS-SENTINEL-VERIFY-MASTER] [--session-save-redis-sentinel-connect-retries SESSION-SAVE-REDIS-SENTINEL-CONNECT-RETRIES] [--cache-backend CACHE-BACKEND] [--cache-backend-redis-server CACHE-BACKEND-REDIS-SERVER] [--cache-backend-redis-db CACHE-BACKEND-REDIS-DB] [--cache-backend-redis-port CACHE-BACKEND-REDIS-PORT] [--cache-backend-redis-password CACHE-BACKEND-REDIS-PASSWORD] [--cache-backend-redis-compress-data CACHE-BACKEND-REDIS-COMPRESS-DATA] [--cache-backend-redis-compression-lib CACHE-BACKEND-REDIS-COMPRESSION-LIB] [--cache-backend-redis-use-lua CACHE-BACKEND-REDIS-USE-LUA] [--cache-backend-redis-use-lua-on-gc CACHE-BACKEND-REDIS-USE-LUA-ON-GC] [--cache-id-prefix CACHE-ID-PREFIX] [--allow-parallel-generation] [--page-cache PAGE-CACHE] [--page-cache-redis-server PAGE-CACHE-REDIS-SERVER] [--page-cache-redis-db PAGE-CACHE-REDIS-DB] [--page-cache-redis-port PAGE-CACHE-REDIS-PORT] [--page-cache-redis-password PAGE-CACHE-REDIS-PASSWORD] [--page-cache-redis-compress-data PAGE-CACHE-REDIS-COMPRESS-DATA] [--page-cache-redis-compression-lib PAGE-CACHE-REDIS-COMPRESSION-LIB] [--page-cache-id-prefix PAGE-CACHE-ID-PREFIX] [--lock-provider LOCK-PROVIDER] [--lock-db-prefix LOCK-DB-PREFIX] [--lock-zookeeper-host LOCK-ZOOKEEPER-HOST] [--lock-zookeeper-path LOCK-ZOOKEEPER-PATH] [--lock-file-path LOCK-FILE-PATH] [--document-root-is-pub DOCUMENT-ROOT-IS-PUB] [--backpressure-logger BACKPRESSURE-LOGGER] [--backpressure-logger-redis-server BACKPRESSURE-LOGGER-REDIS-SERVER] [--backpressure-logger-redis-port BACKPRESSURE-LOGGER-REDIS-PORT] [--backpressure-logger-redis-timeout BACKPRESSURE-LOGGER-REDIS-TIMEOUT] [--backpressure-logger-redis-persistent BACKPRESSURE-LOGGER-REDIS-PERSISTENT] [--backpressure-logger-redis-db BACKPRESSURE-LOGGER-REDIS-DB] [--backpressure-logger-redis-password BACKPRESSURE-LOGGER-REDIS-PASSWORD] [--backpressure-logger-redis-user BACKPRESSURE-LOGGER-REDIS-USER] [--backpressure-logger-id-prefix BACKPRESSURE-LOGGER-ID-PREFIX] [--base-url BASE-URL] [--language LANGUAGE] [--timezone TIMEZONE] [--currency CURRENCY] [--use-rewrites USE-REWRITES] [--use-secure USE-SECURE] [--base-url-secure BASE-URL-SECURE] [--use-secure-admin USE-SECURE-ADMIN] [--admin-use-security-key ADMIN-USE-SECURITY-KEY] [--admin-user [ADMIN-USER]] [--admin-password [ADMIN-PASSWORD]] [--admin-email [ADMIN-EMAIL]] [--admin-firstname [ADMIN-FIRSTNAME]] [--admin-lastname [ADMIN-LASTNAME]] [--search-engine SEARCH-ENGINE] [--elasticsearch-host ELASTICSEARCH-HOST] [--elasticsearch-port ELASTICSEARCH-PORT] [--elasticsearch-enable-auth ELASTICSEARCH-ENABLE-AUTH] [--elasticsearch-username ELASTICSEARCH-USERNAME] [--elasticsearch-password ELASTICSEARCH-PASSWORD] [--elasticsearch-index-prefix ELASTICSEARCH-INDEX-PREFIX] [--elasticsearch-timeout ELASTICSEARCH-TIMEOUT] [--opensearch-host OPENSEARCH-HOST] [--opensearch-port OPENSEARCH-PORT] [--opensearch-enable-auth OPENSEARCH-ENABLE-AUTH] [--opensearch-username OPENSEARCH-USERNAME] [--opensearch-password OPENSEARCH-PASSWORD] [--opensearch-index-prefix OPENSEARCH-INDEX-PREFIX] [--opensearch-timeout OPENSEARCH-TIMEOUT] [--cleanup-database] [--sales-order-increment-prefix SALES-ORDER-INCREMENT-PREFIX] [--use-sample-data] [--enable-modules [ENABLE-MODULES]] [--disable-modules [DISABLE-MODULES]] [--convert-old-scripts [CONVERT-OLD-SCRIPTS]] [-i|--interactive] [--safe-mode [SAFE-MODE]] [--data-restore [DATA-RESTORE]] [--dry-run [DRY-RUN]] [--magento-init-params MAGENTO-INIT-PARAMS]
 ```
 
-Hiermee wordt de toepassing Magento geïnstalleerd
+De Magento-toepassing installeren
 
 ### Opties
 
 Voor globale opties, zie [ Globale opties ](#global-options).
-
-#### `--enable-debug-logging`
-
-Foutopsporingsregistratie inschakelen
-
-- Vereist een waarde
-
-#### `--enable-syslog-logging`
-
-syslog inschakelen
-
-- Vereist een waarde
-
-#### `--backend-frontname`
-
-Backend frontname (wordt automatisch gegenereerd als deze ontbreekt)
-
-- Vereist een waarde
 
 #### `--remote-storage-driver`
 
@@ -4011,21 +4089,39 @@ Padstijl voor externe opslag
 - Standaard: `0`
 - Vereist een waarde
 
+#### `--backend-frontname`
+
+Backend frontname (wordt automatisch gegenereerd als deze ontbreekt)
+
+- Vereist een waarde
+
+#### `--enable-debug-logging`
+
+Foutopsporingsregistratie inschakelen
+
+- Vereist een waarde
+
+#### `--enable-syslog-logging`
+
+syslog inschakelen
+
+- Vereist een waarde
+
 #### `--id_salt`
 
 GraphQl Salt
 
 - Vereist een waarde
 
-#### `--config-async`
-
-Opslaan van asynchrone beheerconfiguratie inschakelen? 1 - Ja, 0 - Nee
-
-- Vereist een waarde
-
 #### `--checkout-async`
 
 Afwisselende orderverwerking inschakelen? 1 - Ja, 0 - Nee
+
+- Vereist een waarde
+
+#### `--config-async`
+
+Opslaan van asynchrone beheerconfiguratie inschakelen? 1 - Ja, 0 - Nee
 
 - Vereist een waarde
 
@@ -4179,14 +4275,14 @@ Volledig pad van clientcertificaatbestand om een databaseverbinding tot stand te
 
 #### `--db-ssl-ca`
 
-Volledig pad van servercertificaatbestand om een databaseverbinding tot stand te brengen via SSL
+Volledig pad van het servercertificaatbestand om een db-verbinding tot stand te brengen via SSL
 
-- Standaard: &quot;
+- Standaardinstelling: &#39;&#39;
 - Vereist een waarde
 
 #### `--db-ssl-verify`
 
-Servercertificering controleren
+Servercertificering verifiëren
 
 - Standaard: `false`
 - Accepteert geen waarde
@@ -4211,13 +4307,19 @@ Redis-poort voor luisteren naar server
 
 #### `--session-save-redis-password`
 
-Wachtwoord voor opnieuw verzonden server
+Wachtwoord van de Redis-server
 
 - Vereist een waarde
 
 #### `--session-save-redis-timeout`
 
-Time-out verbinding, in seconden
+Time-out voor verbinding, in seconden
+
+- Vereist een waarde
+
+#### `--session-save-redis-retries`
+
+Redis-verbinding probeert opnieuw.
 
 - Vereist een waarde
 
@@ -4373,7 +4475,13 @@ Compressiellib om [ snappy, lzf, l4z, zstd, gzip ] te gebruiken (verlaten leeg o
 
 #### `--cache-backend-redis-use-lua`
 
-Ingesteld op 1 om lua in te schakelen (standaardwaarde is 0, uitgeschakeld)
+Stel in op 1 om lua in te schakelen (standaard is 0, uitgeschakeld)
+
+- Vereist een waarde
+
+#### `--cache-backend-redis-use-lua-on-gc`
+
+Stel in op 0 om lua uit te schakelen bij het ophalen van afval (standaard is 1, ingeschakeld)
 
 - Vereist een waarde
 
@@ -4392,7 +4500,7 @@ Genereren van cache op een niet-blokkerende manier toestaan
 
 #### `--page-cache`
 
-Standaardcachehandler
+Standaard cache-handler
 
 - Vereist een waarde
 
@@ -4440,7 +4548,7 @@ ID-voorvoegsel voor cachesleutels
 
 #### `--lock-provider`
 
-Naam provider vergrendelen
+Naam van de provider vergrendelen
 
 - Vereist een waarde
 
@@ -4554,13 +4662,13 @@ Standaardvalutacode. Vervangen, configuratie gebruiken:instellen met padvaluta/o
 
 #### `--use-rewrites`
 
-Herschrijven gebruiken. Vervangen, gebruik config:reeks met weg web/seo/use_rewrites
+Gebruik herschrijvingen. Afgeschaft, gebruik config:set met path web/seo/use_rewrites
 
 - Vereist een waarde
 
 #### `--use-secure`
 
-Gebruik veilige URL&#39;s. Schakel deze optie alleen in als SSL beschikbaar is. Vervangen, gebruik config:reeks met weg web/secure/use_in_frontend
+Gebruik beveiligde URL&#39;s. Schakel deze optie alleen in als SSL beschikbaar is. Vervangen, gebruik config:reeks met weg web/secure/use_in_frontend
 
 - Vereist een waarde
 
@@ -4572,13 +4680,13 @@ Basis-URL voor SSL-verbinding Vervangen, gebruik config:reeks met weg web/secure
 
 #### `--use-secure-admin`
 
-Voer de beheerdersinterface uit met SSL. Vervangen, gebruik config:reeks met weg web/secure/use_in_adminhtml
+Voer de beheerdersinterface uit met SSL. Afgeschaft, gebruik config:set met path web/secure/use_in_adminhtml
 
 - Vereist een waarde
 
 #### `--admin-use-security-key`
 
-Of een functie &#39;beveiligingssleutel&#39; moet worden gebruikt in URL&#39;s en formulieren voor beheer van Magento&#39;s. Vervangen, gebruik config:reeks met weg admin/security/use_form_key
+Of een functie &#39;beveiligingssleutel&#39; moet worden gebruikt in Magento Admin URL&#39;s en formulieren. Vervangen, gebruik config:reeks met weg admin/security/use_form_key
 
 - Vereist een waarde
 
@@ -4614,19 +4722,19 @@ Achternaam beheerder
 
 #### `--search-engine`
 
-Zoekprogramma. Waarden: elasticsearch7, elasticsearch8, openssearch
+Zoekprogramma. Waarden: elasticsearch8, openssearch
 
 - Vereist een waarde
 
 #### `--elasticsearch-host`
 
-Server-host van Elasticsearch.
+Elasticsearch-serverhost.
 
 - Vereist een waarde
 
 #### `--elasticsearch-port`
 
-De serverhaven van de Elasticsearch.
+Elasticsearch-serverpoort.
 
 - Vereist een waarde
 
@@ -4638,25 +4746,25 @@ Stel dit in op 1 om verificatie in te schakelen. (standaardwaarde is 0, uitgesch
 
 #### `--elasticsearch-username`
 
-Gebruikersnaam Elasticsearch. Alleen van toepassing als HTTP-auth is ingeschakeld
+Elasticsearch gebruikersnaam. Alleen van toepassing als HTTP-auth is ingeschakeld
 
 - Vereist een waarde
 
 #### `--elasticsearch-password`
 
-Wachtwoord Elasticsearch. Alleen van toepassing als HTTP-auth is ingeschakeld
+Elasticsearch-wachtwoord. Alleen van toepassing als HTTP-auth is ingeschakeld
 
 - Vereist een waarde
 
 #### `--elasticsearch-index-prefix`
 
-Prefix van Elasticsearch-index.
+Elasticsearch-indexvoorvoegsel.
 
 - Vereist een waarde
 
 #### `--elasticsearch-timeout`
 
-Time-out server Elasticsearch.
+Time-out Elasticsearch-server.
 
 - Vereist een waarde
 
@@ -4719,7 +4827,7 @@ Prefix van het inkoopordernummer
 
 Voorbeeldgegevens gebruiken
 
-- Standaard: `false`
+- Verstek: `false`
 - Accepteert geen waarde
 
 #### `--enable-modules`
@@ -4743,7 +4851,7 @@ Hiermee kunt u oude scripts (InstallSchema, UpgradeSchema) converteren naar de i
 
 #### `--interactive`, `-i`
 
-Installatie van interactief Magento
+Interactieve Magento-installatie
 
 - Standaard: `false`
 - Accepteert geen waarde
@@ -4762,14 +4870,14 @@ Verwijderde gegevens van dumps herstellen
 
 #### `--dry-run`
 
-De installatie van het Magento wordt uitgevoerd in de droge-uitvoeringsmodus
+Magento Installation will be run in dry-run mode
 
 - Standaard: `false`
 - Accepteert een waarde
 
 #### `--magento-init-params`
 
-Voeg aan om het even welk bevel toe om Magento initialisatieparameters aan te passen bijvoorbeeld: &quot;MAGE_MODE=developer&amp;MAGE_DIRS [ basis ][path]=/var/www/example.com&amp;MAGE_DIRS [ geheime voorgeheugen ][path]=/var/tmp/cache&quot;
+Voeg aan om het even welk bevel toe om de initialisatieparameters van Magento bijvoorbeeld aan te passen: &quot;MAGE_MODE=developer&amp;MAGE_DIRS [ basis ][path]=/var/www/example.com&amp;MAGE_DIRS [ geheime voorgeheugen ][path]=/var/tmp/cache&quot;
 
 - Vereist een waarde
 
@@ -4808,7 +4916,7 @@ Herindexeren overslaan
 bin/magento setup:rollback [-c|--code-file CODE-FILE] [-m|--media-file MEDIA-FILE] [-d|--db-file DB-FILE] [--magento-init-params MAGENTO-INIT-PARAMS]
 ```
 
-Draait codebase, media en database van Magento Application terug
+Hiermee wordt de Magento Application-codebase, -media en -database teruggedraaid
 
 ### Opties
 
@@ -4834,7 +4942,7 @@ Basename van het db reservedossier in var/steunen
 
 #### `--magento-init-params`
 
-Voeg aan om het even welk bevel toe om Magento initialisatieparameters aan te passen bijvoorbeeld: &quot;MAGE_MODE=developer&amp;MAGE_DIRS [ basis ][path]=/var/www/example.com&amp;MAGE_DIRS [ geheime voorgeheugen ][path]=/var/tmp/cache&quot;
+Voeg aan om het even welk bevel toe om de initialisatieparameters van Magento bijvoorbeeld aan te passen: &quot;MAGE_MODE=developer&amp;MAGE_DIRS [ basis ][path]=/var/www/example.com&amp;MAGE_DIRS [ geheime voorgeheugen ][path]=/var/tmp/cache&quot;
 
 - Vereist een waarde
 
@@ -4899,14 +5007,14 @@ Genereer statische weergavebestanden voor alleen de opgegeven thema&#39;s.
 
 Geen bestanden voor de opgegeven thema&#39;s genereren.
 
-- Standaard: `none`
+- Verstek: `none`
 - Accepteert meerdere waarden
 
 #### `--language`, `-l`
 
-Genereer bestanden alleen voor de opgegeven talen.
+Genereer alleen bestanden voor de opgegeven talen.
 
-- Standaard: `all`
+- Verstek: `all`
 - Accepteert meerdere waarden
 
 #### `--exclude-language`
@@ -4973,30 +5081,30 @@ CSS-bestanden niet implementeren.
 
 #### `--no-less`
 
-Implementeer geen LESS-bestanden.
+Implementeer geen MINDER bestanden.
 
-- Standaard: `false`
+- Verstek: `false`
 - Accepteert geen waarde
 
 #### `--no-images`
 
 Implementeer geen afbeeldingen.
 
-- Standaard: `false`
+- Verstek: `false`
 - Accepteert geen waarde
 
 #### `--no-fonts`
 
 Implementeer geen lettertypebestanden.
 
-- Standaard: `false`
+- Verstek: `false`
 - Accepteert geen waarde
 
 #### `--no-html`
 
 Implementeer geen HTML-bestanden.
 
-- Standaard: `false`
+- Verstek: `false`
 - Accepteert geen waarde
 
 #### `--no-misc`
@@ -5083,13 +5191,13 @@ Voer de beheerdersinterface uit met SSL. Vervangen, gebruik config:reeks met weg
 
 #### `--admin-use-security-key`
 
-Of een functie &#39;beveiligingssleutel&#39; moet worden gebruikt in URL&#39;s en formulieren voor beheer van Magento&#39;s. Vervangen, gebruik config:reeks met weg admin/security/use_form_key
+Of een functie &#39;beveiligingssleutel&#39; moet worden gebruikt in Magento Admin URL&#39;s en formulieren. Vervangen, gebruik config:reeks met weg admin/security/use_form_key
 
 - Vereist een waarde
 
 #### `--magento-init-params`
 
-Voeg aan om het even welk bevel toe om Magento initialisatieparameters aan te passen bijvoorbeeld: &quot;MAGE_MODE=developer&amp;MAGE_DIRS [ basis ][path]=/var/www/example.com&amp;MAGE_DIRS [ geheime voorgeheugen ][path]=/var/tmp/cache&quot;
+Voeg aan om het even welk bevel toe om de initialisatieparameters van Magento bijvoorbeeld aan te passen: &quot;MAGE_MODE=developer&amp;MAGE_DIRS [ basis ][path]=/var/www/example.com&amp;MAGE_DIRS [ geheime voorgeheugen ][path]=/var/tmp/cache&quot;
 
 - Vereist een waarde
 
@@ -5100,7 +5208,7 @@ Voeg aan om het even welk bevel toe om Magento initialisatieparameters aan te pa
 bin/magento setup:uninstall [--magento-init-params MAGENTO-INIT-PARAMS]
 ```
 
-Hiermee wordt de toepassing Magento verwijderd
+De Magento-toepassing wordt verwijderd
 
 ### Opties
 
@@ -5108,7 +5216,7 @@ Voor globale opties, zie [ Globale opties ](#global-options).
 
 #### `--magento-init-params`
 
-Voeg aan om het even welk bevel toe om Magento initialisatieparameters aan te passen bijvoorbeeld: &quot;MAGE_MODE=developer&amp;MAGE_DIRS [ basis ][path]=/var/www/example.com&amp;MAGE_DIRS [ geheime voorgeheugen ][path]=/var/tmp/cache&quot;
+Voeg aan om het even welk bevel toe om de initialisatieparameters van Magento bijvoorbeeld aan te passen: &quot;MAGE_MODE=developer&amp;MAGE_DIRS [ basis ][path]=/var/www/example.com&amp;MAGE_DIRS [ geheime voorgeheugen ][path]=/var/tmp/cache&quot;
 
 - Vereist een waarde
 
@@ -5119,7 +5227,7 @@ Voeg aan om het even welk bevel toe om Magento initialisatieparameters aan te pa
 bin/magento setup:upgrade [--keep-generated] [--convert-old-scripts [CONVERT-OLD-SCRIPTS]] [--safe-mode [SAFE-MODE]] [--data-restore [DATA-RESTORE]] [--dry-run [DRY-RUN]] [--magento-init-params MAGENTO-INIT-PARAMS]
 ```
 
-Hiermee werkt u de toepassing van het Magento, de DB-gegevens en het schema bij
+Hiermee worden de Magento-toepassing, DB-gegevens en het schema bijgewerkt
 
 ### Opties
 
@@ -5153,14 +5261,14 @@ Verwijderde gegevens van dumps herstellen
 
 #### `--dry-run`
 
-De installatie van het Magento wordt uitgevoerd in de droge-uitvoeringsmodus
+Magento Installation will be run in dry-run mode
 
 - Standaard: `false`
 - Accepteert een waarde
 
 #### `--magento-init-params`
 
-Voeg aan om het even welk bevel toe om Magento initialisatieparameters aan te passen bijvoorbeeld: &quot;MAGE_MODE=developer&amp;MAGE_DIRS [ basis ][path]=/var/www/example.com&amp;MAGE_DIRS [ geheime voorgeheugen ][path]=/var/tmp/cache&quot;
+Voeg aan om het even welk bevel toe om de initialisatieparameters van Magento bijvoorbeeld aan te passen: &quot;MAGE_MODE=developer&amp;MAGE_DIRS [ basis ][path]=/var/www/example.com&amp;MAGE_DIRS [ geheime voorgeheugen ][path]=/var/tmp/cache&quot;
 
 - Vereist een waarde
 
@@ -5298,7 +5406,7 @@ Voor globale opties, zie [ Globale opties ](#global-options).
 
 Kracht
 
-- Standaard: `false`
+- Verstek: `false`
 - Accepteert geen waarde
 
 
@@ -5308,13 +5416,13 @@ Kracht
 bin/magento theme:uninstall [--backup-code] [-c|--clear-static-content] [--] <theme>...
 ```
 
-Thema wordt verwijderd
+Verwijdert thema
 
 ### Argumenten
 
 #### `theme`
 
-Pad van het thema. Het themapad moet worden opgegeven als een volledig pad dat gebied/leverancier/naam is. Voorkant/Magento/blanco
+Pad van het thema. Het themapad moet worden opgegeven als een volledig pad dat gebied/leverancier/naam is. Voorkant/Magento/blank
 
 - Standaard: `[]`
 - Vereist
@@ -5323,13 +5431,13 @@ Pad van het thema. Het themapad moet worden opgegeven als een volledig pad dat g
 
 ### Opties
 
-Voor globale opties, zie [ Globale opties ](#global-options).
+Zie [Globale opties voor algemene opties](#global-options).
 
 #### `--backup-code`
 
-Back-up van code maken (behalve tijdelijke bestanden)
+Maak een back-up van de code (met uitzondering van tijdelijke bestanden)
 
-- Standaard: `false`
+- Verstek: `false`
 - Accepteert geen waarde
 
 #### `--clear-static-content`, `-c`

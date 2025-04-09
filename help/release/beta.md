@@ -2,7 +2,7 @@
 title: Beta-releases
 description: Leer meer over de bètareleases van Adobe Commerce en hoe u hieraan kunt deelnemen.
 exl-id: 662cb061-995f-4e09-a2ef-9e607cc0000b
-source-git-commit: c27867be74dfaa1bcd782a23db27db29fdccc4e3
+source-git-commit: c523b57270370d87be0f2ab0513f7908bb0a7173
 workflow-type: tm+mt
 source-wordcount: '931'
 ht-degree: 0%
@@ -66,7 +66,7 @@ Deze bèta steunt drie nieuwe mogelijkheden in [`productSearch` vraag ](https://
 
 Deze nieuwe voorwaarden verbeteren het het filtreren van de onderzoeksvraag mechanisme om onderzoeksresultaten te raffineren. Deze nieuwe voorwaarden hebben geen invloed op de hoofdzoekquery. Om aan bèta deel te nemen, verzend een e-mailverzoek naar [ handel-opslag-diensten ](mailto:commerce-storefront-services@adobe.com).
 
-Om Live Onderzoek bèta te installeren, zie de [ Levende gids van het Onderzoek ](https://experienceleague.adobe.com/en/docs/commerce-merchant-services/live-search/install#install-the-live-search-beta).
+Om Live Onderzoek bèta te installeren, zie de [ Levende gids van het Onderzoek ](https://experienceleague.adobe.com/en/docs/commerce/live-search/install#install-the-live-search-beta).
 
 ### IBM Sterling Order Management System Integration (Private Beta)
 
@@ -88,7 +88,7 @@ Elke bètaversie van Adobe Commerce Foundation bevat alle wijzigingen die tegen 
 - GraphQL-verbeteringen
 - Oplossingen voor algemene problemen met kwaliteit
 - Communautaire bijdragen
-- Veranderingen die worden vereist om verenigbaarheid met [ de diensten van Adobe Commerce ](https://experienceleague.adobe.com/docs/commerce-merchant-services/user-guides/home.html) te steunen
+- Veranderingen die worden vereist om verenigbaarheid met [ de diensten van Adobe Commerce ](https://experienceleague.adobe.com/docs/commerce/user-guides/home.html) te steunen
 
 #### Naamgevingsconventie en -schema
 

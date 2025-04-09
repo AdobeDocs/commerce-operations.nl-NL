@@ -1,26 +1,26 @@
 ---
 title: Hulplijn installeren
-description: Gebruik deze gids om  [!DNL Site-Wide Analysis Tool]  voor uw website te installeren
+description: Gebruik deze handleiding om te installeren [!DNL Site-Wide Analysis Tool] voor uw website
 exl-id: ba36dc74-806d-49c5-b4d1-ba53ed4076fb
 feature: Configuration, Install
-source-git-commit: ca8dc855e0598d2c3d43afae2e055aa27035a09b
+source-git-commit: 16feb8ec7ecc88a6ef03a769d45b1a3a2fe88d97
 workflow-type: tm+mt
 source-wordcount: '1136'
 ht-degree: 0%
 
 ---
 
-# Hulplijn installeren
+# Handleiding voor installeren
 
 >[!IMPORTANT]
 >
->Met ingang van 23 april 2024 wordt de [!DNL Site-Wide Analysis Tool] voor alle Adobe Commerce-klanten op locatie buiten bedrijf gesteld.
+>Met ingang van 23 april 2024 wordt het [!DNL Site-Wide Analysis Tool] buiten gebruik gesteld voor alle on-premises klanten van Adobe Commerce.
 
-De [!DNL Site-Wide Analysis Tool] biedt 24/7 realtime prestatiebewaking, rapporten en aanbevelingen om de beveiliging en operabiliteit van Adobe Commerce bij installatie van wolkeninfrastructuur te garanderen. Het biedt ook gedetailleerde informatie over beschikbare en geïnstalleerde patches, extensies van derden en uw Adobe Commerce-installatie.
+Het [!DNL Site-Wide Analysis Tool] biedt 24/7 realtime prestatiebewaking, rapporten en aanbevelingen om de beveiliging en bruikbaarheid van Adobe Commerce op cloudinfrastructuurinstallaties te waarborgen. Het biedt ook gedetailleerde informatie over beschikbare en geïnstalleerde patches, extensies van derden en uw Adobe Commerce-installatie.
 
 >[!INFO]
 >
->Leer [ hoe te om ](../site-wide-analysis-tool/access.md) toe te laten [!DNL Site-Wide Analysis Tool] en rapporten te produceren.
+>Meer informatie [over het inschakelen [!DNL Site-Wide Analysis Tool]](../site-wide-analysis-tool/access.md) en genereren van rapporten.
 
 Als u een installatie van Adobe Commerce in de bedrijfsruimten hebt, installeert u een agent op uw infrastructuur om het hulpmiddel te gebruiken. U hoeft de agent niet op Adobe Commerce te installeren op cloudinfrastructuurprojecten.
 
@@ -30,11 +30,11 @@ Met de [!DNL Site-Wide Analysis Tool] -agent kunt u de [!DNL Site-Wide Analysis 
 
 De [!DNL Site-Wide Analysis Tool] Agent verzamelt toepassings- en bedrijfsgegevens, analyseert deze en biedt aanvullende inzichten over de gezondheid van uw installatie zodat u de gebruikerservaring kunt verbeteren. Het controleert uw toepassing en helpt u prestaties, veiligheid, beschikbaarheid, en toepassingskwesties identificeren.
 
-Het installeren van de agent vereist de volgende stappen:
+Voor het installeren van de agent zijn de volgende stappen vereist:
 
 1. Controleer de systeemvereisten.
 
-1. Configureer API-sleutels in de extensie [!UICONTROL Commerce Services Connector] .
+1. Configureer API-sleutels in de [!UICONTROL Commerce Services Connector] extensie.
 
 1. Installeer de agent.
 
@@ -46,23 +46,23 @@ Het installeren van de agent vereist de volgende stappen:
 
 ## Systeemvereisten
 
-Uw infrastructuur ter plaatse moet aan de volgende vereisten voldoen alvorens de agent te installeren:
+Uw on-premises infrastructuur moet aan de volgende vereisten voldoen voordat u de agent installeert:
 
 - Besturingssystemen
 
-   - [!DNL Linux x86-64] distributies, zoals [!DNL Red Hat® Enterprise Linux (RHEL)] , [!DNL CentOS] , [!DNL Ubuntu] , [!DNL Debian] en dergelijke
+   - [!DNL Linux x86-64] verdelingen, zoals [!DNL Red Hat® Enterprise Linux (RHEL)], [!DNL CentOS], [!DNL Ubuntu], [!DNL Debian], en dergelijke
 
   >[!IMPORTANT]
   >
-  >Adobe Commerce wordt niet ondersteund op [!DNL Microsoft Windows] of [!DNL macOS] .
+  >Adobe Commerce wordt niet ondersteund op [!DNL Microsoft Windows] of [!DNL macOS].
 
-- Adobe Commerce 2.4.5-p1 of hoger (vanwege de afhankelijkheid van de Serviceconnector)
+- Adobe Commerce 2.4.5-p1 of hoger (vanwege de afhankelijkheid van Service Connector)
 
 - [!DNL Commerce Services Connector extension]
 
 - PHP CLI
 
-- Hulpprogramma&#39;s voor basis/shell
+- Bash/shell hulpprogramma&#39;s
 
    - `php`
 
@@ -78,13 +78,13 @@ Uw infrastructuur ter plaatse moet aan de volgende vereisten voldoen alvorens de
 
 ## [!DNL Commerce Services Connector]
 
-De agent vereist de [[!DNL Commerce Services Connector] ](https://experienceleague.adobe.com/docs/commerce-merchant-services/user-guides/integration-services/saas.html) uitbreiding die op uw systeem en [ wordt geïnstalleerd wordt gevormd ](https://experienceleague.adobe.com/docs/commerce-merchant-services/user-guides/integration-services/saas.html) met API sleutels. Voer de volgende opdracht uit om te controleren of de extensie is geïnstalleerd:
+De agent vereist dat de [[!DNL Commerce Services Connector]](https://experienceleague.adobe.com/docs/commerce/user-guides/integration-services/saas.html) extensie op uw systeem wordt geïnstalleerd en [wordt geconfigureerd](https://experienceleague.adobe.com/docs/commerce/user-guides/integration-services/saas.html) met API-sleutels. Voer de volgende opdracht uit om te controleren of de extensie is geïnstalleerd:
 
 ```bash
 bin/magento module:status Magento_ServicesId
 ```
 
-Als u de uitbreiding hebt geïnstalleerd en het gevormd gebruikend een bestaande API sleutel voor de verschillende dienst, MOET u **de API sleutel** regenereren en het in Adobe Commerce Admin voor de agent bijwerken.
+Als u de extensie hebt geïnstalleerd en geconfigureerd met behulp van een bestaande API-sleutel voor een andere service, MOET u **de API-sleutel** opnieuw genereren en bijwerken in de Adobe Commerce Admin voor de agent.
 
 1. Zet uw website in [ onderhoudswijze ](../../installation/tutorials/maintenance-mode.md).
 
@@ -98,7 +98,7 @@ Als u de uitbreiding hebt geïnstalleerd en het gevormd gebruikend een bestaande
 
 1. Klik op **[!UICONTROL Delete]** naast de bestaande API-sleutel.
 
-1. [ vorm ](https://experienceleague.adobe.com/docs/commerce-merchant-services/user-guides/integration-services/saas.html) een nieuwe API sleutel.
+1. [ vorm ](https://experienceleague.adobe.com/docs/commerce/user-guides/integration-services/saas.html) een nieuwe API sleutel.
 
 >[!IMPORTANT]
 >
@@ -130,15 +130,15 @@ Als de extensie niet is geïnstalleerd, gebruikt u de volgende instructies om de
    bin/magento cache:clean
    ```
 
-1. [ vorm API Sleutels ](https://experienceleague.adobe.com/docs/commerce-merchant-services/user-guides/integration-services/saas.html) om de uitbreiding met uw systeem te verbinden.
+1. [Configureer API-sleutels](https://experienceleague.adobe.com/docs/commerce/user-guides/integration-services/saas.html) om de extensie met uw systeem te verbinden.
 
-## De agent installeren
+## Installeer de agent
 
-Wij hebben a [ shell manuscript ](https://github.com/magento-swat/install-agent-helpers/blob/main/install.sh) gecreeerd om installatie te vereenvoudigen. Wij adviseren gebruikend het shell manuscript, maar u kunt de [ handinstallatie ](#manual) methode indien nodig volgen.
+We hebben een shell-script](https://github.com/magento-swat/install-agent-helpers/blob/main/install.sh) gemaakt om de [installatie te vereenvoudigen. We raden aan om het shellscript te gebruiken, maar u kunt indien nodig de [handmatige installatiemethode](#manual) volgen.
 
 >[!INFO]
 >
->Nadat de agent wordt geïnstalleerd, zal het automatisch bijwerken wanneer een nieuwe versie beschikbaar is.
+>Nadat de agent is geïnstalleerd, wordt deze automatisch bijgewerkt wanneer er een nieuwe release beschikbaar is.
 
 ### Scripts
 
@@ -183,7 +183,7 @@ Als u niet ons [ shell manuscript ](https://github.com/magento-swat/install-agen
 
    >[!INFO]
    >
-   >Als u [!DNL Site-Wide Analysis Tool] wilt gebruiken, moet u eerst de Gebruiksvoorwaarden lezen en accepteren die worden weergegeven wanneer u het dashboard opent via Adobe Commerce Admin.
+   >Als u de [!DNL Site-Wide Analysis Tool]wilt gebruiken, moet u eerst de gebruiksvoorwaarden lezen en accepteren die worden weergegeven wanneer u het dashboard opent vanuit het Adobe Commerce-beheercentrum.
 
    Voor de **AMD64** architectuur:
 
@@ -199,21 +199,21 @@ Als u niet ons [ shell manuscript ](https://github.com/magento-swat/install-agen
       tar -xf launcher.linux-amd64.tar.gz
       ```
 
-   Voor de **ARM64** architectuur:
+   Voor de **ARM64-architectuur** :
 
-   1. Download het archief van de startprogramma.
+   1. Download het launcher-archief.
 
       ```bash
       curl -O https://updater.supportinsights.adobe.com/launcher/launcher.linux-arm64.tar.gz
       ```
 
-   1. Pak het archief van de draagprogramma&#39;s uit.
+   1. Pak het launcher-archief uit.
 
       ```bash
       tar -xf launcher.linux-arm64.tar.gz
       ```
 
-1. *(Facultatief)* verifieer de handtekening voor het checksum dossier.
+1. *(Optioneel)* Controleer de handtekening voor het checksum-bestand.
 
    ```bash
    echo -n "LS0tLS1CRUdJTiBQVUJMSUMgS0VZLS0tLS0KTUlJQ0lqQU5CZ2txaGtpRzl3MEJBUUVGQUFPQ0FnOEFNSUlDQ2dLQ0FnRUE0M2FBTk1WRXR3eEZBdTd4TE91dQpacG5FTk9pV3Y2aXpLS29HendGRitMTzZXNEpOR3lRS1Jha0MxTXRsU283VnFPWnhUbHZSSFhQZWt6TG5vSHVHCmdmNEZKa3RPUEE2S3d6cjF4WFZ3RVg4MEFYU1JNYTFadzdyOThhenh0ZHdURVh3bU9GUXdDcjYramFOM3ErbUoKbkRlUWYzMThsclk0NVJxWHV1R294QzBhbWVoakRnTGxJUSs1d1kxR1NtRGRiaDFJOWZqMENVNkNzaFpsOXFtdgorelhjWGh4dlhmTUU4MUZsVUN1elRydHJFb1Bsc3dtVHN3ODNVY1lGNTFUak8zWWVlRno3RFRhRUhMUVVhUlBKClJtVzdxWE9kTGdRdGxIV0t3V2ppMFlrM0d0Ylc3NVBMQ2pGdEQzNytkVDFpTEtzYjFyR0VUYm42V3I0Nno4Z24KY1Q4cVFhS3pYRThoWjJPSDhSWjN1aFVpRHhZQUszdmdsYXJSdUFacmVYMVE2ZHdwYW9ZcERKa29XOXNjNXlkWApBTkJsYnBjVXhiYkpaWThLS0lRSURnTFdOckw3SVNxK2FnYlRXektFZEl0Ni9EZm1YUnJlUmlMbDlQMldvOFRyCnFxaHNHRlZoRHZlMFN6MjYyOU55amgwelloSmRUWXRpdldxbGl6VTdWbXBob1NrVnNqTGtwQXBiUUNtVm9vNkgKakJmdU1sY1JPeWI4TXJCMXZTNDJRU1MrNktkMytwR3JyVnh0akNWaWwyekhSSTRMRGwrVzUwR1B6LzFkeEw2TgprZktZWjVhNUdCZm00aUNlaWVNa3lBT2lKTkxNa1cvcTdwM200ejdUQjJnbWtldm1aU3Z5MnVMNGJLYlRoYXRlCm9sdlpFd253WWRxaktkcVkrOVM1UlNVQ0F3RUFBUT09Ci0tLS0tRU5EIFBVQkxJQyBLRVktLS0tLQ==" | base64 -d > release.pub
@@ -223,13 +223,13 @@ Als u niet ons [ shell manuscript ](https://github.com/magento-swat/install-agen
    openssl dgst -sha256 -verify release.pub -signature launcher.sha256 launcher.checksum
    ```
 
-1. *(Facultatief)* verifieer de controlesom.
+1. *(Optioneel)* Controleer de controlesom.
 
    ```bash
    shasum -a 512 -c launcher.checksum
    ```
 
-1. Maak het `config.yaml` -bestand met de volgende inhoud.
+1. Maak het `config.yaml` bestand met de volgende inhoud.
 
    ```yaml
    project:
@@ -268,11 +268,11 @@ Als u niet ons [ shell manuscript ](https://github.com/magento-swat/install-agen
 
    - [Cron](#cron)
 
-## De agent uitvoeren {#run-the-agent}
+## Voer de agent uit {#run-the-agent}
 
-Wij adviseren vormend de agent om als dienst te lopen. Als u beperkte toegang tot uw infrastructuur hebt en geen worteltoestemmingen hebt, dan moet u [ bebouwen ](#cron) in plaats daarvan gebruiken.
+We raden u aan de agent te configureren om als een service te worden uitgevoerd. Als je beperkte toegang hebt tot je infrastructuur en geen root-rechten hebt, moet je in plaats daarvan cron](#cron) gebruiken[.
 
-### Service {#service}
+### Dienst {#service}
 
 1. Maak een systeemeenheidsbestand `(/etc/systemd/system/scheduler.service)` met de volgende configuratie (vervang `<filesystemowner>` door de UNIX®-gebruiker die eigenaar is van de map waarin de agent en de Adobe Commerce-software zijn geïnstalleerd). Als u de agent als hoofdgebruiker hebt gedownload, wijzigt u de map en de eigenaar van geneste bestanden.
 
@@ -314,9 +314,9 @@ Wij adviseren vormend de agent om als dienst te lopen. Als u beperkte toegang to
 
 ### Cron {#cron}
 
-Als u geen worteltoestemmingen hebt of geen toestemmingen hebt om de dienst als wortel te vormen, kunt u in plaats daarvan kroon gebruiken.
+Als u geen root-rechten hebt of geen machtigingen hebt om een service als root te configureren, kunt u in plaats daarvan cron gebruiken.
 
-Uw uitsnijdschema bijwerken:
+Werk uw cron-schema bij:
 
 ```bash
 ( crontab -l ; echo "* * * * * flock -n /tmp/swat-agent.lockfile -c '/path/to/agent/scheduler' >> /path/to/agent/errors.log 2>&1" ) | sort - | uniq - | crontab -
@@ -338,25 +338,25 @@ Voer de volgende opdrachten uit om de service van uw systeem te verwijderen en a
    systemctl disable scheduler
    ```
 
-1. Verwijder het `systemd` eenheidsdossier van de plannerdienst.
+1. Verwijder het eenheidsbestand `systemd` van de plannerservice.
 
    ```bash
    rm /etc/systemd/system/scheduler.service
    ```
 
-1. Laad de `systemd` -beheerconfiguratie opnieuw.
+1. Laad de `systemd` managerconfiguratie opnieuw.
 
    ```bash
    systemctl daemon-reload
    ```
 
-1. Stel om het even welke `systemd` eenheden van een ontbroken staat terug.
+1. Reset alle `systemd` eenheden met een mislukte status.
 
    ```bash
    systemctl reset-failed
    ```
 
-1. Verwijder de folder van de plannerdienst.
+1. Verwijder de servicemap van de planner.
 
    ```bash
    rm -rf <CHECK_REGISTRY_PATH> #see SWAT_AGENT_APPLICATION_CHECK_REGISTRY_PATH in /etc/systemd/system/scheduler.service
@@ -368,21 +368,21 @@ Voer de volgende opdrachten uit om de service van uw systeem te verwijderen en a
    rm /usr/local/bin/scheduler
    ```
 
-Als u de agent aan looppas met kroon vormde, gebruik in plaats daarvan de volgende instructies:
+Als u de agent hebt geconfigureerd om in plaats daarvan met cron te worden uitgevoerd, gebruikt u de volgende instructies:
 
-1. Verwijder de agent uit de contextlijst.
+1. Verwijder de agent uit de crontab-lijst.
 
    ```bash
    crontab -e
    ```
 
-1. Stop de actieve taak.
+1. Stop de lopende taak.
 
    ```bash
    ps aux | grep scheduler
    ```
 
-1. Verwijder de folder waar u de agent installeerde.
+1. Verwijder de map waarin u de agent hebt geïnstalleerd.
 
    ```bash
    rm -rf swat-agent
@@ -390,24 +390,24 @@ Als u de agent aan looppas met kroon vormde, gebruik in plaats daarvan de volgen
 
 ## Problemen oplossen
 
-### Toegangstoetsen niet correct geparseerd
+### Toegangstoetsen niet goed geparseerd
 
-U ziet mogelijk de volgende fout als uw toegangstoetsen niet correct worden geparseerd:
+Mogelijk ziet u de volgende fout als uw toegangssleutels niet correct zijn geparseerd:
 
 ```
 ERRO[2022-10-10 00:01:41] Error while refreshing token: error while getting jwt from magento: invalid character 'M' looking for beginning of value
 FATA[2022-12-10 20:38:44] bad http status from https://updater.supportinsights.adobe.com/linux-amd64.json: 403 Forbidden
 ```
 
-Voer de volgende stappen uit om deze fout op te lossen:
+Probeer de volgende stappen om deze fout op te lossen:
 
-1. Doe a [ gescripte installeert ](#scripted), sparen de output, en herzie de output voor fouten.
-1. Controleer het gegenereerde `config.yaml` bestand en controleer of het pad naar uw Commerce-instantie en PHP juist is.
-1. Zorg ervoor dat de gebruiker die de planner in werking stelt in de [ eigenaar van het dossiersysteem ](../../installation/prerequisites/file-system/overview.md) Unix groep is of de zelfde gebruiker zoals de eigenaar van het dossiersysteem is.
-1. Zorg ervoor dat de ](https://experienceleague.adobe.com/docs/commerce-merchant-services/user-guides/integration-services/saas.html) sleutels van de Schakelaar van de Diensten van 0} Commerce correct geïnstalleerd zijn en probeer hen bij te werken om de uitbreiding met uw systeem te verbinden.[
-1. [ desinstalleer ](#uninstall) de agent na het bijwerken van de sleutels en herinstalleer gebruikend [ installeer manuscript ](#scripted).
-1. Stel de planner in werking en zie of ontvangt u nog de zelfde fout.
-1. Als u nog steeds dezelfde fout ontvangt, verhoogt u het logniveau in de `config.yaml` om fouten op te sporen en een ondersteuningsticket te openen.
+1. Voer een [gescripte installatie](#scripted) uit, sla de uitvoer op en controleer de uitvoer op fouten.
+1. Controleer het gegenereerde `config.yaml` bestand en controleer of het pad naar uw Commerce-instantie en PHP correct is.
+1. Zorg ervoor dat de gebruiker die de planner uitvoert, zich in de Unix-groep van de eigenaar](../../installation/prerequisites/file-system/overview.md) van het [bestandssysteem bevindt of dezelfde gebruiker is als de eigenaar van het bestandssysteem.
+1. Zorg ervoor dat de [Commerce Services Connector-sleutels](https://experienceleague.adobe.com/docs/commerce/user-guides/integration-services/saas.html) correct zijn geïnstalleerd en probeer ze bij te werken om de extensie met uw systeem te verbinden.
+1. [](#uninstall) Verwijder de agent na het bijwerken van de sleutels en installeer deze opnieuw met behulp van het [installatiescript](#scripted).
+1. Voer de planner uit en kijk of u nog steeds dezelfde fout ontvangt.
+1. Als u nog steeds dezelfde foutmelding ontvangt, verhoogt u het logboekniveau in de `config.yaml` om te debuggen en opent u een ondersteuningsticket.
 
 ### *SIGFAULT* Fout
 

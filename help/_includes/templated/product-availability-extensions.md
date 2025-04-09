@@ -1,7 +1,7 @@
 ---
-source-git-commit: c27867be74dfaa1bcd782a23db27db29fdccc4e3
+source-git-commit: 8ac03fa9536de8b40b4f049c0fca0874ef09c757
 workflow-type: tm+mt
-source-wordcount: '139'
+source-wordcount: '152'
 ht-degree: 0%
 
 ---
@@ -12,6 +12,7 @@ ht-degree: 0%
   <thead>
     <tr>
       <th>Adobe Commerce-versies</th>
+      <th>2.4.8.</th>
       <th>2.4.7.</th>
       <th>2.4.6.</th>
       <th>2.4.5.</th>
@@ -22,6 +23,7 @@ ht-degree: 0%
   <tbody>
       <tr>
           <td>Adobe I/O Events voor Adobe Commerce</td>
+          <td>1,8+</td>
           <td>1,5+</td>
           <td>1,5+</td>
           <td>1,5+</td>
@@ -33,6 +35,7 @@ ht-degree: 0%
       </tr>
       <tr>
           <td>Adobe Commerce Admin UI SDK</td>
+          <td>2.0+</td>
           <td>1.3+</td>
           <td>1.3+</td>
           <td>1.3+</td>
@@ -44,6 +47,7 @@ ht-degree: 0%
       </tr>
       <tr>
           <td>Adobe Commerce Webhooks</td>
+          <td>1,5+</td>
           <td>1.2+</td>
           <td>1.2+</td>
           <td>1.2+</td>
@@ -59,6 +63,7 @@ ht-degree: 0%
           <td>1.0.20+</td>
           <td>1.0.20+</td>
           <td>1.0.20+</td>
+          <td>1.0.20+</td>
           <td>
               <a href="https://experienceleague.adobe.com/en/docs/commerce-admin/content-design/aem-asset-management/getting-started/aem-assets-configure-commerce"> Composer </a><br/>
               <a href="https://experienceleague.adobe.com/en/docs/commerce-admin/content-design/aem-asset-management/aem-assets-release-notes"> Nota's van de Versie </a><br/>
@@ -70,6 +75,7 @@ ht-degree: 0%
           <td>1.0.0+</td>
           <td>1.0.0+</td>
           <td>1.0.0+</td>
+          <td>1.0.0+</td>
           <td>
               <a href="https://commercemarketplace.adobe.com/magento-audiences.html"> Marketplace </a><br/>
               <a href="https://experienceleague.adobe.com/en/docs/commerce-admin/customers/audience-activation#release-notes"> Nota's van de Versie </a><br/>
@@ -77,35 +83,38 @@ ht-degree: 0%
       </tr>
       <tr>
           <td>B2B</td>
-          <td>1.5.0 (PHP 8.3)</td>
-          <td>1.3.5+</td>
+          <td>1.5.2.</td>
+          <td>1.5+<br /> 1.4+</td>
+          <td>1.5+<br /> 1.4+<br /> 1.3.5+</td>
           <td>1.3.4.</td>
           <td>1.3.3.</td>
           <td>
-              <a href="https://experienceleague.adobe.com/docs/commerce-admin/b2b/install.html"> Composer </a><br/>
-              <a href="https://experienceleague.adobe.com/docs/commerce-admin/b2b/release-notes.html"> Nota's van de Versie </a><br/>
+              <a href="https://experienceleague.adobe.com/en/docs/commerce-admin/b2b/install"> Composer </a><br/>
+              <a href="https://experienceleague.adobe.com/en/docs/commerce-admin/b2b/release-notes"> Nota's van de Versie </a><br/>
           </td>
       </tr>
       <tr>
           <td>Gegevensverbinding</td>
+          <td>3.3.0+</td>
           <td>3.1.1+</td>
           <td>2.1.1+</td>
           <td>1.0.0+</td>
           <td>1.0.0+</td>
           <td>
               <a href="https://commercemarketplace.adobe.com/magento-experience-platform-connector.html"> Marketplace </a><br/>
-              <a href="https://experienceleague.adobe.com/docs/commerce-merchant-services/data-connection/release-notes.html"> Nota's van de Versie </a><br/>
+              <a href="https://experienceleague.adobe.com/en/docs/commerce/data-connection/release-notes"> Nota's van de Versie </a><br/>
           </td>
       </tr>
       <tr>
           <td>Page Builder</td>
           <td>-</td>
+          <td>-</td>
           <td>1.7.3.</td>
           <td>1.7.2.</td>
           <td>1.7.1.</td>
           <td>
-              <a href="https://experienceleague.adobe.com/docs/commerce-admin/page-builder/guide-overview.html"> Gids van de Gebruiker </a><br/>
-              <a href="https://experienceleague.adobe.com/docs/commerce-admin/page-builder/release-notes.html"> Nota's van de Versie </a><br/>
+              <a href="https://experienceleague.adobe.com/en/docs/commerce-admin/page-builder/guide-overview"> Gids van de Gebruiker </a><br/>
+              <a href="https://experienceleague.adobe.com/en/docs/commerce-admin/page-builder/release-notes"> Nota's van de Versie </a><br/>
           </td>
       </tr>
   </tbody>

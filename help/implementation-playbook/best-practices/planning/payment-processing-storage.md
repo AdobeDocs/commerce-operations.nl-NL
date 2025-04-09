@@ -4,7 +4,7 @@ description: Meer informatie over het veilig verwerken en opslaan van betalingsg
 role: Developer
 feature: Best Practices
 exl-id: 635f38d3-0199-4d96-ba75-9edd0cb94b5c
-source-git-commit: db0fce79b22d409e8d639b959dc5a04693e72659
+source-git-commit: 16feb8ec7ecc88a6ef03a769d45b1a3a2fe88d97
 workflow-type: tm+mt
 source-wordcount: '478'
 ht-degree: 0%
@@ -15,7 +15,7 @@ ht-degree: 0%
 
 Één van de belangrijkste principes in het handhaven van [ naleving PCI ](https://experienceleague.adobe.com/docs/commerce-admin/start/compliance/payments/compliance-pci.html) heeft een strategie om creditcardbetalingen behoorlijk te verwerken en op te slaan.
 
-Het opslaan van kaarthoudergegevens in Adobe Commerce is **strikt verboden** en het doen van dit zou een schending van uw verplichtingen als handelaar onder de Norm van de Veiligheid van de Gegevens van de Industrie van de Bedrijfs van de Kaart van de Betalingskaart (PCI-DSS) kunnen zijn. Meer informatie over het gedeelde verantwoordelijkheidsmodel en de richtlijnen voor handelsverplichtingen is beschikbaar in de [ Adobe Commerce Gedeelde Gids van het ModelVerantwoordelijkheidsmodel ](https://www.adobe.com/content/dam/cc/en/trust-center/ungated/whitepapers/experience-cloud/adobe-commerce-shared-responsibilities-guide.pdf) op het Centrum van het Vertrouwen van de Adobe.
+Het opslaan van kaarthoudergegevens in Adobe Commerce is **strikt verboden** en het doen van dit zou een schending van uw verplichtingen als handelaar onder de Norm van de Veiligheid van de Gegevens van de Industrie van de Bedrijfs van de Kaart van de Betalingskaart (PCI-DSS) kunnen zijn. Meer informatie over het gedeelde verantwoordelijkheidsmodel en de richtlijnen voor handelsverplichtingen is beschikbaar in de [ Adobe Commerce Gedeelde Gids van het ModelVerantwoordelijkheidsmodel ](https://www.adobe.com/content/dam/cc/en/trust-center/ungated/whitepapers/experience-cloud/adobe-commerce-shared-responsibilities-guide.pdf) op het Centrum van het Vertrouwen van Adobe.
 
 Volg de onderstaande aanbevolen procedures om ervoor te zorgen dat je de betalingsgegevens op je eCommerce-site correct verwerkt. Voor extra begeleiding op veiligheid beste praktijken, zie [ uw plaats en infrastructuur ](../launch/security-best-practices.md) beveiligen.
 
@@ -53,4 +53,4 @@ De aanbevolen methode voor het verwerken van gegevens van een kaarthouder is het
 
 ## Aanvullende informatie
 
-Als u geadviseerde betalingsoplossingen door Adobe zoekt, overweeg {de Diensten van de Betaling van 0} Adobe ](https://experienceleague.adobe.com/docs/commerce-merchant-services/payment-services/overview.html).[
+Als u geadviseerde betalingsoplossingen door Adobe zoekt, overweeg [ de Betalingsdiensten van Adobe ](https://experienceleague.adobe.com/docs/commerce/payment-services/overview.html).

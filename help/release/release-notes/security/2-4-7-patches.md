@@ -2,9 +2,9 @@
 title: Opmerkingen bij de release Adobe Commerce 2.4.7 Security Patch
 description: Leer meer over oplossingen voor beveiligingsproblemen, beveiligingsverbeteringen en andere beveiligingsupdates die zijn opgenomen in de beveiligingspatchreleases voor Adobe Commerce versie 2.4.7.
 exl-id: 38e5632b-c795-47d8-89dd-26bbaeb34e67
-source-git-commit: 9397740c608e4f0521018d6f6c918ca267197c6c
+source-git-commit: 9bf1c539220d70a8e7fe449e4d91199f23cc23b2
 workflow-type: tm+mt
-source-wordcount: '362'
+source-wordcount: '410'
 ht-degree: 0%
 
 ---
@@ -12,6 +12,18 @@ ht-degree: 0%
 # Opmerkingen bij de release voor beveiligingspatches van Adobe Commerce 2.4.7
 
 {{$include /help/_includes/release-notes/security-patch-intro.md}}
+
+## 2.4.7-p5
+
+De Adobe Commerce 2.4.7-p5-beveiligingsrelease biedt oplossingen voor beveiligingsproblemen voor kwetsbaarheden die zijn geïdentificeerd in eerdere versies van 2.4.7.
+
+Voor de recentste informatie over de veiligheidsinsectenmoeilijke situaties, zie [ Bulletin van de Veiligheid van Adobe APSB25-26 ](https://helpx.adobe.com/security/products/magento/apsb25-26.html).
+
+{{b2b-patches}}
+
+### Hooglichten
+
+Deze versie introduceert steun voor de Adobe Commerce [ HIPAA-Klaar uitbreiding ](https://experienceleague.adobe.com/en/docs/commerce-admin/start/compliance/hipaa-ready-service/overview).
 
 ## 2.4.7-p4
 
