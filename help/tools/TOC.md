@@ -2,9 +2,9 @@
 user-guide-title: Gereedschappen
 user-guide-description: Leer meer over de verschillende gereedschappen die u met Adobe Commerce kunt gebruiken, hun gebruik, het installatieproces en hoe u toegang krijgt.
 feature: Configuration
-source-git-commit: 77f3bb9b766eef3d56fc5d89b29daa9254992220
+source-git-commit: 4db45b44ffc7fc5f405750f50dfa9e0b315a62a8
 workflow-type: tm+mt
-source-wordcount: '7335'
+source-wordcount: '7549'
 ht-degree: 0%
 
 ---
@@ -13,7 +13,7 @@ ht-degree: 0%
 # Gereedschappen {#tools}
 
 - [Overzicht](overview.md)
-- Analyse voor de hele site {#site-wide-analysis-tool}
+- Site-brede analyse 
    - [Inleiding](site-wide-analysis-tool/intro.md)
    - [Installatie](site-wide-analysis-tool/installation.md)
    - [Toegang krijgen](site-wide-analysis-tool/access.md)
@@ -27,7 +27,7 @@ ht-degree: 0%
    - [Waarschuwingen](site-wide-analysis-tool/alerts.md)
    - [Patches](site-wide-analysis-tool/patches.md)
 
-- Beheerde berichten over Adobe Commerce {#managed-alerts-for-adobe-commerce}
+- Beheerde waarschuwingen voor Adobe Commerce {#managed-alert-for-adobe-commerce}
    - [Beheerde alarm op Adobe Commerce: [!DNL Redis]  geheugen kritieke alarm](/help/tools/managed-alerts-for-adobe-commerce/managed-alerts-on-magento-commerce-redis-memory-critical-alert.md)
    - [Beheerde waarschuwingen voor Adobe Commerce: waarschuwing voor een schijf](/help/tools/managed-alerts-for-adobe-commerce/managed-alerts-for-magento-commerce-disk-warning-alert.md)
    - [Beheerde waarschuwingen voor Adobe Commerce](/help/tools/managed-alerts-for-adobe-commerce/managed-alerts-for-magento-commerce.md)
@@ -40,12 +40,12 @@ ht-degree: 0%
    - [Beheerde alarm op Adobe Commerce: [!DNL MariaDB]  alarm](/help/tools/managed-alerts-for-adobe-commerce/managed-alerts-on-magento-commerce-mariadb-alerts.md)
    - [Beheerde alarm voor Adobe Commerce: [!DNL Apdex]  waarschuwingsalarm](/help/tools/managed-alerts-for-adobe-commerce/managed-alerts-for-magento-commerce-apdex-warning-alert.md)
    - [Beheerde waarschuwingen voor Adobe Commerce: waarschuwing voor CPU](/help/tools/managed-alerts-for-adobe-commerce/managed-alerts-for-magento-commerce-cpu-warning-alert.md)
-- Gereedschap Kwaliteitspatches {#quality-patches-tool}
+- Gereedschap Kwaliteitspatches 
    - [[!DNL Quality Patches Tool]: een zelfbedieningsprogramma voor kwaliteitspatches](/help/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches.md)
-   - [[!DNL Quality Patches Tool]: patches zoeken ](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html){target="_blank"}
+   - [[!DNL Quality Patches Tool]: zoek naar patches ](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html){target=&quot;_blank&quot;}
    - [Gebruik](quality-patches-tool/usage.md)
    - [Opmerkingen bij de release](quality-patches-tool/release-notes.md)
-   - Patches beschikbaar in het gereedschap Kwaliteitspatches {#patches-available-in-qpt}
+   - Patches beschikbaar in het gereedschap Kwaliteitspatches  Patches-available-in-qpt}
       - [Overzicht](quality-patches-tool/patches-available-in-qpt/patches-available-in-qpt-tool-overview.md)
       - v1.1.0 {#v1-1-0}
          - [Overzicht: QPT (Quality Patches Tool) v1.1.0](quality-patches-tool/patches-available-in-qpt/v1-1-0/overview.md)
@@ -403,7 +403,7 @@ ht-degree: 0%
          - [ACSD-50849: Als u een nieuw product aan de categorie toevoegt nadat de cache is gewist, komen posities en selecties niet overeen](quality-patches-tool/patches-available-in-qpt/v1-1-32/acsd-50849-adding-new-product-to-category-after-clearing-cache.md)
          - [ACSD-51204: Het product retourneert na het maken van de kredietmemo niet meer in voorraad](quality-patches-tool/patches-available-in-qpt/v1-1-32/acsd-51204-product-does-not-return-back-in-stock-after-creating-credit-memo.md)
          - [ACSD-51238: inventarisbron verwijderd bij bijwerken van configureerbaar product en het bewerken van de prijs](quality-patches-tool/patches-available-in-qpt/v1-1-32/acsd-51238-inventory-source-removed-when-updating-configurable-product-and-editing-the-price.md)
-      - v1.1.3 {#v1-1-33}
+      - v1.1.33 {#v1-1-33}
          - [Overzicht: [!DNL Quality Patches Tool]  (QPT) v1.1.33](quality-patches-tool/patches-available-in-qpt/v1-1-33/overview.md)
          - [ACSD-51792: De gebeurtenis Pagina heeft geen indruk](quality-patches-tool/patches-available-in-qpt/v1-1-33/acsd-51792-page-does-not-have-impression-event.md)
          - [ACSD-51645: Een nieuwe regel voor winkelwagentprijzen opslaan als de extensie Magento_OfflineShipping is uitgeschakeld](quality-patches-tool/patches-available-in-qpt/v1-1-33/acsd-51645-saving-a-new-cart-price-rule-if-the-extension-magento-offlineshipping-is-disabled.md)
@@ -560,7 +560,7 @@ ht-degree: 0%
          - [ACSD-53790: meerdere RMA&#39;s voor één product kunnen worden gemaakt via de Rest API](quality-patches-tool/patches-available-in-qpt/v1-1-43/acsd-53790-multiple-rmas-for-single-product-can-be-created-via-rest-api.md)
          - [ACSD-54739: [!UICONTROL Product Stock] status niet toegepast voor [!UICONTROL Related Product Rules]](quality-patches-tool/patches-available-in-qpt/v1-1-43/acsd-54739-product-stock-status-not-applied-for-related-product-rules.md)
          - [ACSD-54983: Company user UID met GraphQL niet beschikbaar bij inactieve gebruiker](quality-patches-tool/patches-available-in-qpt/v1-1-43/acsd-54983-company-user-uid-with-graphql-not-available-with-inactive-user.md)
-      - v1.1.4 {#v1-1-44}
+      - v1.1.44 {#v1-1-44}
          - [Overzicht: [!DNL Quality Patches Tool]  (QPT) v1.1.44](quality-patches-tool/patches-available-in-qpt/v1-1-44/overview.md)
          - [ACSD-55231: SKU niet gevonden fout tijdens gebruik van snelle-ordefunctionaliteit](quality-patches-tool/patches-available-in-qpt/v1-1-44/acsd-55231-sku-not-found-in-catalog.md)
          - [ACSD-55352: [!UICONTROL Credit Memo] maken met bonuspunten](quality-patches-tool/patches-available-in-qpt/v1-1-44/acsd-55352-creating-credit-memos-with-reward-points.md)
@@ -684,7 +684,7 @@ ht-degree: 0%
          - [ACSD-62485: async.operations.all stopt de consument met werken wanneer het bedrijf wordt gemaakt](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-54/acsd-62485-async-operations-all-consumer-stops-working-when-company-is-created.md)
          - [ACSD-61845: Fout treedt op bij aanvragen met text/html accepteert header](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-54/acsd-61845-error-occurs-for-requests-with-text-html-accept-header.md)
          - [ACSD-62056: Het uploaden van images voor configureerbaar product mislukt als MSI is geïnstalleerd](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-54/acsd-62056-image-upload-for-configurable-products-fail-msi-installed.md)
-      - v1.1.5 {#v1-1-55}
+      - v1.1.55 {#v1-1-55}
          - [ACSD-58566: interne serverfout van GraphQL voor opmerkingen over inkooporders](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-55/acsd-58566-grapghql-internal-server-error-for-purchase-order-comments.md)
          - [Overzicht: [!DNL Quality Patches Tool]  (QPT) v1.1.55](/help//tools/quality-patches-tool/patches-available-in-qpt/v1-1-55/overview.md)
          - [ACSD-58685: e-mails met uitgeschakelde verkoop worden verzonden wanneer ze opnieuw worden ingeschakeld](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-55/acsd-58685-ensures-disabled-sales-emails-are-not-sent-upon-re-enabling.md)
@@ -763,6 +763,7 @@ ht-degree: 0%
       - v1.1.60 {#v1-1-60}
          - [ Overzicht: [!DNL Quality Patches Tool]  (QPT) v1.1.60 ](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-60/overview.md)
          - [ACSD-63323: lost [!UICONTROL Select All] functionaliteit op en verbetert paginering en recordaantal in popup van de productcategorie](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-60/acsd-63323-resolves-select-all-functionality-and-enhances-pagination-and-record-count-in-product-category-popup.md)
+         - [ACSD-64149: Klantsegment met een voorwaarde [!UICONTROL Date range] kan worden opgeslagen wanneer slechts één datum wordt bewerkt](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-60/ascd-64149-customer-segment-with-a-date-range-condition.md)
          - [ACSD-64111: Verhelpt de InvalidArgumentException: Class does not exist error when setting nested conditions for a Product component in  [!DNL Page Builder]](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-60/acsd-64111-fixes-issue-where-invalidargumentexceptionclass-does-not-exist-error-occurs-in-vendor-magento-module-rule-model-conditionfactoryphp50-when-setting-nested-conditions-for-a-product-component-in-page-builder.md)
          - [ACSD-63992: [!UICONTROL Cart Price Rule] met fout bij de coupon- en verzendmethode in de beheerinterface](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-60/acsd-63992-admin-ui-cart-rule-shipping-method.md)
       - v1.1.61 {#v1-1-61}
@@ -774,7 +775,7 @@ ht-degree: 0%
          - [ACSD-64467: WYSIWYG-editor is leeg na het opslaan van categoriebeschrijving op winkelweergaveniveau](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-61/acsd-64467-wysiwyg-editor-empty-after-saving-category-description.md)
          - [ACSD-63974: hiermee wordt de langzaam [!UICONTROL Requisition List] te laden tijd gecorrigeerd met paginering](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-61/acsd-63974-fixes-the-issue-where-the-requisition-list-page-takes-a-long-time.md)
    - [Patch controleren voor Adobe Commerce-probleem met het gereedschap Kwaliteitspatches](quality-patches-tool/patches-available-in-qpt/check-patch-for-magento-issue-with-magento-quality-patches.md)
-- Verwijzing naar opdrachtregelprogramma&#39;s {#cli-reference}
+- Command-line-gereedschappen, verwijzing 
    - [Adobe Commerce (ter plaatse)](reference/commerce-on-premises.md)
    - [Compatibiliteit upgraden](reference/uct.md)
 - Waarneming voor Adobe Commerce {#observation-for-adobe-commerce}
@@ -799,11 +800,11 @@ ht-degree: 0%
    - [ het lusje van de Veiligheid ](observation-for-adobe-commerce/security-tab.md)
    - [Het tabblad Infra](observation-for-adobe-commerce/oac-infra.md)
    - [Hoe wordt Observatie voor Adobe Commerce gebruikt](observation-for-adobe-commerce/how-to-use.md)
-- Gegevensmigratie {#data-migration}
+- Gereedschap voor gegevensmigratie  Data-migration
    - [Hoe migratie werkt](data-migration-tool/how-migration-works.md)
    - [Aanbevolen procedures](data-migration-tool/best-practices.md)
    - [Ondersteunde versies](data-migration-tool/supported-versions.md)
-   - Basisbeginselen {#basics}
+   - Basics {#basics}
       - [Een abonnement maken](data-migration-tool/create-plan.md)
       - [Vereisten](data-migration-tool/prerequisites.md)
       - [Installeren](data-migration-tool/install.md)
@@ -819,7 +820,7 @@ ht-degree: 0%
       - [Follow-up](data-migration-tool/migrate-data/follow-up.md)
       - [Gegevens die handmatige migratie vereisen](data-migration-tool/migrate-data/manual.md)
       - [Stappen voor migratie na gegevens](data-migration-tool/migrate-data/post-migration.md)
-   - Bronnen {#resources}
+   - Bronnen 
       - [ het Oplossen van problemen ](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/data-migration-tool-troubleshooting.html)
       - [ Changelog ](https://github.com/magento/data-migration-tool/blob/2.4/CHANGELOG.md)
 - [ Terugkeer aan Operationele Gidsen ](https://experienceleague.adobe.com/docs/commerce-operations/operational-guides/home.html)
