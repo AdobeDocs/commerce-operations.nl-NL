@@ -2,9 +2,9 @@
 user-guide-title: Gereedschappen
 user-guide-description: Leer meer over de verschillende gereedschappen die u met Adobe Commerce kunt gebruiken, hun gebruik, het installatieproces en hoe u toegang krijgt.
 feature: Configuration
-source-git-commit: 2061c4842ab1548c561f5ba124330e932216d1f2
+source-git-commit: 21236016717d757eb6709cf297b836325c464f7b
 workflow-type: tm+mt
-source-wordcount: '7523'
+source-wordcount: '7335'
 ht-degree: 0%
 
 ---
@@ -13,7 +13,7 @@ ht-degree: 0%
 # Gereedschappen {#tools}
 
 - [Overzicht](overview.md)
-- Site-brede analyse 
+- Analyse voor de hele site {#site-wide-analysis-tool}
    - [Inleiding](site-wide-analysis-tool/intro.md)
    - [Installatie](site-wide-analysis-tool/installation.md)
    - [Toegang krijgen](site-wide-analysis-tool/access.md)
@@ -27,7 +27,7 @@ ht-degree: 0%
    - [Waarschuwingen](site-wide-analysis-tool/alerts.md)
    - [Patches](site-wide-analysis-tool/patches.md)
 
-- Beheerde waarschuwingen voor Adobe Commerce {#managed-alert-for-adobe-commerce}
+- Beheerde berichten over Adobe Commerce {#managed-alerts-for-adobe-commerce}
    - [Beheerde alarm op Adobe Commerce: [!DNL Redis]  geheugen kritieke alarm](/help/tools/managed-alerts-for-adobe-commerce/managed-alerts-on-magento-commerce-redis-memory-critical-alert.md)
    - [Beheerde waarschuwingen voor Adobe Commerce: waarschuwing voor een schijf](/help/tools/managed-alerts-for-adobe-commerce/managed-alerts-for-magento-commerce-disk-warning-alert.md)
    - [Beheerde waarschuwingen voor Adobe Commerce](/help/tools/managed-alerts-for-adobe-commerce/managed-alerts-for-magento-commerce.md)
@@ -40,12 +40,12 @@ ht-degree: 0%
    - [Beheerde alarm op Adobe Commerce: [!DNL MariaDB]  alarm](/help/tools/managed-alerts-for-adobe-commerce/managed-alerts-on-magento-commerce-mariadb-alerts.md)
    - [Beheerde alarm voor Adobe Commerce: [!DNL Apdex]  waarschuwingsalarm](/help/tools/managed-alerts-for-adobe-commerce/managed-alerts-for-magento-commerce-apdex-warning-alert.md)
    - [Beheerde waarschuwingen voor Adobe Commerce: waarschuwing voor CPU](/help/tools/managed-alerts-for-adobe-commerce/managed-alerts-for-magento-commerce-cpu-warning-alert.md)
-- Gereedschap Kwaliteitspatches 
+- Gereedschap Kwaliteitspatches {#quality-patches-tool}
    - [[!DNL Quality Patches Tool]: een zelfbedieningsprogramma voor kwaliteitspatches](/help/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches.md)
-   - [[!DNL Quality Patches Tool]: zoek naar patches ](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html){target=&quot;_blank&quot;}
+   - [[!DNL Quality Patches Tool]: patches zoeken ](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html){target="_blank"}
    - [Gebruik](quality-patches-tool/usage.md)
    - [Opmerkingen bij de release](quality-patches-tool/release-notes.md)
-   - Patches beschikbaar in het gereedschap Kwaliteitspatches  Patches-available-in-qpt}
+   - Patches beschikbaar in het gereedschap Kwaliteitspatches {#patches-available-in-qpt}
       - [Overzicht](quality-patches-tool/patches-available-in-qpt/patches-available-in-qpt-tool-overview.md)
       - v1.1.0 {#v1-1-0}
          - [Overzicht: QPT (Quality Patches Tool) v1.1.0](quality-patches-tool/patches-available-in-qpt/v1-1-0/overview.md)
@@ -77,17 +77,17 @@ ht-degree: 0%
       - v1.1.3 {#v1-1-3}
          - [Overzicht: QPT (Quality Patches Tool) v1.1.3](quality-patches-tool/patches-available-in-qpt/v1-1-3/overview.md)
          - [MDVA-31590: Onbekwaam om attributen in bulk bij te werken gebruikend MySQL async rijen](quality-patches-tool/patches-available-in-qpt/v1-1-3/mdva-31590-unable-to-update-attributes-in-bulk-using-mysql-async-queues.md)
-         - [MDVA-33606: Gebruikers krijgen een foutmelding bij het opslaan van CMS-pagina die is toegewezen aan hiërarchie](quality-patches-tool/patches-available-in-qpt/v1-1-3/mdva-33606-users-get-error-when-saving-cms-page-assigned-to-hierarchy.md)
-         - [MDVA-36309: Producten zoeken op kenmerken is traag in beheerdersrasters](quality-patches-tool/patches-available-in-qpt/v1-1-3/mdva-36309-product-search-by-attributes-is-slow-in-the-admin-grids.md)
+         - [MDVA-33606: Gebruikers krijgen een foutmelding wanneer ze CMS-pagina opslaan die aan de hiërarchie is toegewezen](quality-patches-tool/patches-available-in-qpt/v1-1-3/mdva-33606-users-get-error-when-saving-cms-page-assigned-to-hierarchy.md)
+         - [MDVA-36309: Het zoeken van producten door attributen is langzaam in admin grids](quality-patches-tool/patches-available-in-qpt/v1-1-3/mdva-36309-product-search-by-attributes-is-slow-in-the-admin-grids.md)
          - [MDVA-37234: Als u een item meerdere keren aan het winkelwagentje toevoegt, wordt een dubbel lijstitem gemaakt](quality-patches-tool/patches-available-in-qpt/v1-1-3/mdva-37234-adding-item-to-cart-multiple-times-creates-duplicate-item.md)
          - [MDVA-40262: GraphQL query&#39;s worden niet weergegeven in populaire zoektermen in beheerders](quality-patches-tool/patches-available-in-qpt/v1-1-3/mdva-40262-graphql-queries-dont-show-in-popular-search-terms-in-admin.md)
          - [MDVA-40601: Kan geen gegevens ophalen over categorie gewijzigd via geplande update via GraphQL](quality-patches-tool/patches-available-in-qpt/v1-1-3/mdva-40601-users-get-error-retrieving-info-about-category.md)
       - v1.1.4 {#v1-1-4}
-         - [Overzicht: Tool voor kwaliteitspatches (QPT) v1.1.4](quality-patches-tool/patches-available-in-qpt/v1-1-4/overview.md)
-         - [MC-42528: GraphQL-query van categoryList toont alle categorieën](quality-patches-tool/patches-available-in-qpt/v1-1-4/mc-42528-graphql-query-of-categorylist-shows-all-categories.md)
+         - [Overzicht: QPT (Quality Patches Tool) v1.1.4](quality-patches-tool/patches-available-in-qpt/v1-1-4/overview.md)
+         - [MC-42528: De vraag van GraphQL van categoryList toont alle categorieën](quality-patches-tool/patches-available-in-qpt/v1-1-4/mc-42528-graphql-query-of-categorylist-shows-all-categories.md)
          - [MDVA-25631: Kan klantsegmenten niet opslaan en vernieuwen](quality-patches-tool/patches-available-in-qpt/v1-1-4/mdva-25631-unable-to-save-and-refresh-customer-segments.md)
-         - [MDVA-26005: Kan categorie in boom niet selecteren voor de voorwaarden van de winkelwagenprijsregel](quality-patches-tool/patches-available-in-qpt/v1-1-4/mdva-26005-unable-to-select-category-in-tree-for-cart-price-rule-conditions.md)
-         - [MDVA-29400: Dubbele bestellingen geplaatst met PayPal Express Checkout](quality-patches-tool/patches-available-in-qpt/v1-1-4/mdva-29400-duplicated-orders-placed-with-paypal-express-checkout.md)
+         - [MDVA-26005: Kan categorie niet selecteren in structuur voor de regelvoorwaarden voor winkelwagentjes](quality-patches-tool/patches-available-in-qpt/v1-1-4/mdva-26005-unable-to-select-category-in-tree-for-cart-price-rule-conditions.md)
+         - [MDVA-29400: dubbele bestellingen geplaatst met PayPal Express Checkout](quality-patches-tool/patches-available-in-qpt/v1-1-4/mdva-29400-duplicated-orders-placed-with-paypal-express-checkout.md)
          - [MDVA-37725: E-mails die via niet-standaardsites worden verzonden, bevatten standaard URL&#39;s van het logo van de site](quality-patches-tool/patches-available-in-qpt/v1-1-4/mdva-37725-asynchronous-order-emails-sent-via-non-default-websites.md)
          - [MDVA-39482: Het product is uit voorraad als het wordt geïmporteerd met de hoeveelheid &#39;0&#39; en de optie &#39;backorders&#39; ingeschakeld](quality-patches-tool/patches-available-in-qpt/v1-1-4/mdva-39482-product-goes-out-of-stock-when-imported-with-0-quantity.md)
          - [MDVA-40101: Objecten blijven miniwinkelwagentje na bestelling PayPal Express Checkout](quality-patches-tool/patches-available-in-qpt/v1-1-4/mdva-40101-items-remain-in-mini-cart-after-order-placement-using-paypal-express-checkout.md)
@@ -110,10 +110,10 @@ ht-degree: 0%
          - [Overzicht: QPT (Quality Patches Tool) v1.1.6](quality-patches-tool/patches-available-in-qpt/v1-1-6/overview.md)
          - [MDVA-27456: Gebruikers krijgen een fout tijdens het laden van de Swagger](quality-patches-tool/patches-available-in-qpt/v1-1-6/mdva-27456-users-get-error-when-loading-swagger.md)
          - [MDVA-30862: Onjuiste besteldatum op gedrukte PDF-factuur](quality-patches-tool/patches-available-in-qpt/v1-1-6/mdva-30862-incorrect-order-date-on-printed-pdf-invoice.md)
-         - [MDVA-32776: Voorraadstatus niet bijgewerkt bij het plaatsen van de bestelling](quality-patches-tool/patches-available-in-qpt/v1-1-6/mdva-32776-stock-status-not-updated-when-order-placed.md)
-         - [MDVA-39031: Niet-toegewezen producten toevoegen aan winkelwagen mogelijk via GraphQL](quality-patches-tool/patches-available-in-qpt/v1-1-6/mdva-39031-adding-unassigned-products-to-cart-possible-via-graphql.md)
-         - [MDVA-40120: GraphQL-product DESC/ASC-sortering werkt niet](quality-patches-tool/patches-available-in-qpt/v1-1-6/mdva-40120-graphql-product-desc-asc-sort-doesnt-work.md)
-         - [MDVA-40550: Producten ontbreken aan de frontend na herindexering](quality-patches-tool/patches-available-in-qpt/v1-1-6/mdva-40550-products-missing-on-the-frontend-after-reindexing.md)
+         - [MDVA-32776: voorraadstatus niet bijgewerkt met orderplaatsing](quality-patches-tool/patches-available-in-qpt/v1-1-6/mdva-32776-stock-status-not-updated-when-order-placed.md)
+         - [MDVA-39031: Toevoegen van niet-toegewezen producten aan het karretje via GraphQL](quality-patches-tool/patches-available-in-qpt/v1-1-6/mdva-39031-adding-unassigned-products-to-cart-possible-via-graphql.md)
+         - [MDVA-40120: GraphQL product DESC/ASC sortering werkt niet](quality-patches-tool/patches-available-in-qpt/v1-1-6/mdva-40120-graphql-product-desc-asc-sort-doesnt-work.md)
+         - [MDVA-40550: Producten die aan de voorzijde ontbreken na redexering](quality-patches-tool/patches-available-in-qpt/v1-1-6/mdva-40550-products-missing-on-the-frontend-after-reindexing.md)
          - [MDVA-40609: Afgeschakelde productgegevens ontbreken in catalogusvoorraad_voorraad_status tabel](quality-patches-tool/patches-available-in-qpt/v1-1-6/mdva-40609-disabled-products-data-absent-in-cataloginventory-stock-status-table.md)
          - [MDVA-41399: Kan geen toegang krijgen tot het winkelwagentje beheren als een klant een product aan de wenslijst toevoegt](quality-patches-tool/patches-available-in-qpt/v1-1-6/mdva-41399-unable-to-access-manage-shopping-cart-if-a-customer-adds-product-to-wishlist.md)
          - [MDVA-41597: Fout bij het toevoegen van meer dan één configureerbaar product aan winkelwagentje](quality-patches-tool/patches-available-in-qpt/v1-1-6/mdva-41597-error-adding-more-than-one-configurable-product-to-cart.md)
@@ -197,14 +197,14 @@ ht-degree: 0%
          - [Overzicht: QPT (Quality Patches Tool) v1.1.14](quality-patches-tool/patches-available-in-qpt/v1-1-14/overview.md)
          - [MDVA-43102: verkoopbare hoeveelheid niet correct bijgewerkt](quality-patches-tool/patches-available-in-qpt/v1-1-14/mdva-43102-salable-quantity-not-updated-correctly.md)
          - [MDVA-43178: Klanttoken voor aangepast archief kan niet worden opgehaald in GraphQL](quality-patches-tool/patches-available-in-qpt/v1-1-14/mdva-43178-customer-token-for-custom-store-cannot-be-retrieved.md)
-         - [MDVA-43605: Ordergegevens retourneren negatieve waarden voor rijtotalen bij gebruik van Rest API](quality-patches-tool/patches-available-in-qpt/v1-1-14/mdva-43605-order-data-returns-negative-values-for-row-totals-when-using-rest-api.md)
+         - [MDVA-43605: De gegevens van de orde keren negatieve waarden voor rijtotalen terug wanneer het gebruiken van Rest API](quality-patches-tool/patches-available-in-qpt/v1-1-14/mdva-43605-order-data-returns-negative-values-for-row-totals-when-using-rest-api.md)
          - [MDVA-43859: Fout &quot;Geen dergelijke entiteit met customerId =&quot;het programma wordt geopend wanneer de geschrapte klant het programma opent](quality-patches-tool/patches-available-in-qpt/v1-1-14/mdva-43859-error-no-such-entity-with-customerid.md)
          - [MDVA-43983: De producten die als &quot;Niet afzonderlijk zichtbaar&quot;worden geplaatst verschijnen in onderzoeksresultaten](quality-patches-tool/patches-available-in-qpt/v1-1-14/mdva-43983-products-not-visible-individually-still-appear-in-catalog-advanced-search-results.md)
          - [MDVA-44100: alle FPT&#39;s worden toegewezen aan het laatste product in het winkelwagentje](quality-patches-tool/patches-available-in-qpt/v1-1-14/mdva-44100-all-fpts-are-assigned-to-the-last-product-in-the-shopping-cart.md)
          - [MDVA-44147: GraphQL request does not return Requisition Lists](quality-patches-tool/patches-available-in-qpt/v1-1-14/mdva-44147-graphql-request-doesnt-return-requisition-lists.md)
          - [MDVA-44505: GraphQL-query voor winkelwagen met bonuspunten werkt het totaal-generaal niet bij](quality-patches-tool/patches-available-in-qpt/v1-1-14/mdva-44505-graphql-applying-reward-points-does-not-update-grand-total.md)
       - v1.1.15 {#v1-1-15}
-         - [Overzicht: Tool voor kwaliteitspatches (QPT) v1.1.15](quality-patches-tool/patches-available-in-qpt/v1-1-15/overview.md)
+         - [Overzicht: QPT (Quality Patches Tool) v1.1.15](quality-patches-tool/patches-available-in-qpt/v1-1-15/overview.md)
          - [MDVA-38559: /V1/customer/search API retourneert een fout](quality-patches-tool/patches-available-in-qpt/v1-1-15/mdva-38559-v1-customers-search-api-error.md)
          - [MDVA-40896: Fout: TypeError: Argument 3&quot; fout in async product](quality-patches-tool/patches-available-in-qpt/v1-1-15/mdva-40896-error-typeerror-in-async-product.md)
          - [MDVA-40961: Er kan geen extra item aan het winkelwagentje worden toegevoegd als de minimumhoeveelheid item al in het winkelwagentje staat](quality-patches-tool/patches-available-in-qpt/v1-1-15/mdva-40961-additional-item-cant-be-added-to-cart-when-minimum-qty-of-the-item-already-in-cart.md)
@@ -231,7 +231,7 @@ ht-degree: 0%
          - [ACSD-45424: Onjuiste reserveringscompensatie na gedeeltelijke terugbetaling](quality-patches-tool/patches-available-in-qpt/v1-1-17/acsd-45424-incorrect-reservation-compensation-created-after-partial-refund.md)
          - [ACSD-45520: Staalopties zijn niet geselecteerd op de pagina met productdetails](quality-patches-tool/patches-available-in-qpt/v1-1-17/acsd-45520-swatch-options-not-pre-selected-on-product-detail-page.md)
       - v1.1.18 {#v1-1-18}
-         - [Overzicht: Tool voor kwaliteitspatches (QPT) v1.1.18](quality-patches-tool/patches-available-in-qpt/v1-1-18/overview.md)
+         - [Overzicht: QPT (Quality Patches Tool) v1.1.18](quality-patches-tool/patches-available-in-qpt/v1-1-18/overview.md)
          - [ACSD-44938: VAT_ID kan niet worden toegepast in GraphQL-verzoek voor gastgebruiker](quality-patches-tool/patches-available-in-qpt/v1-1-18/acsd-44938-vat-id-cannot-applied-graphql-guest-user.md)
          - [ACSD-45255: Uitzondering op de pagina met een rapport over een laag bestand voor gebruikers met beperkte beheerdersrechten](quality-patches-tool/patches-available-in-qpt/v1-1-18/acsd-45255-exception-on-low-stock-report-page-for-restricted-admin-user.md)
          - [ACSD-45257: GraphQL geeft de kaartkorting niet correct weer](quality-patches-tool/patches-available-in-qpt/v1-1-18/acsd-45257-graphql-doesnt-display-cart-discount-correctly.md)
@@ -351,9 +351,9 @@ ht-degree: 0%
          - [ACSD-49822: Updates op de aanvraaglijst worden niet weergegeven in de lijst met afdrukaanvragen](quality-patches-tool/patches-available-in-qpt/v1-1-29/acsd-49822-updates-on-requisition-list-page-not-reflected-on-print.md)
          - [ACSD-49835: selectievakje [!UICONTROL Use Default Value] wordt niet opgeslagen](quality-patches-tool/patches-available-in-qpt/v1-1-29/acsd-49835-use-default-value-chekbox-not-saved.md)
          - [ACSD-49970: onjuiste afhandeling van GraphQL-fouten](quality-patches-tool/patches-available-in-qpt/v1-1-29/acsd-49970-incorrect-handling-of-graphql-errors.md)
-         - [ACSD-49502: Downloadbare link niet correct bijgewerkt na [!DNL staging] update](quality-patches-tool/patches-available-in-qpt/v1-1-29/acsd-49502-downloadable-link-not-updated-correctly.md)
-         - [ACSD-49748: Uitnodigingen per e-mail kunnen niet worden verzonden](quality-patches-tool/patches-available-in-qpt/v1-1-29/acsd-49748-email-invitations-cannot-be-sent.md)
-         - [ACSD-49849: E-mail van klant is vervangen door e-mail PayPal](quality-patches-tool/patches-available-in-qpt/v1-1-29/acsd-49849-customer-email-was-replaced-with-paypal-email.md)
+         - [ACSD-49502: Downloadbare verbinding niet correct bijgewerkt na  [!DNL staging]  update](quality-patches-tool/patches-available-in-qpt/v1-1-29/acsd-49502-downloadable-link-not-updated-correctly.md)
+         - [ACSD-49748: e-mailuitnodigingen kunnen niet worden verzonden](quality-patches-tool/patches-available-in-qpt/v1-1-29/acsd-49748-email-invitations-cannot-be-sent.md)
+         - [ACSD-49849: e-mail van de klant is vervangen door PayPal-e-mail](quality-patches-tool/patches-available-in-qpt/v1-1-29/acsd-49849-customer-email-was-replaced-with-paypal-email.md)
          - [ACSD-49773: Het exporteren van producten mislukt wanneer AWS S3 wordt gebruikt als externe opslag](quality-patches-tool/patches-available-in-qpt/v1-1-29/acsd-49773-product-export-fails-when-aws-s3-is-used-as-remote-storage.md)
          - [ACSD-49839: De gedeelde catalogusprijzen en -structuur genereren een fout](quality-patches-tool/patches-available-in-qpt/v1-1-29/acsd-49839-shared-catalog-pricing-and-structure-throws-an-error.md)
          - [ACSD-50260: zoekresultaten voor GraphQL-producten zijn beperkt](quality-patches-tool/patches-available-in-qpt/v1-1-29/acsd-50260-graphql-product-search-results-are-limited.md)
@@ -403,7 +403,7 @@ ht-degree: 0%
          - [ACSD-50849: Als u een nieuw product aan de categorie toevoegt nadat de cache is gewist, komen posities en selecties niet overeen](quality-patches-tool/patches-available-in-qpt/v1-1-32/acsd-50849-adding-new-product-to-category-after-clearing-cache.md)
          - [ACSD-51204: Het product retourneert na het maken van de kredietmemo niet meer in voorraad](quality-patches-tool/patches-available-in-qpt/v1-1-32/acsd-51204-product-does-not-return-back-in-stock-after-creating-credit-memo.md)
          - [ACSD-51238: inventarisbron verwijderd bij bijwerken van configureerbaar product en het bewerken van de prijs](quality-patches-tool/patches-available-in-qpt/v1-1-32/acsd-51238-inventory-source-removed-when-updating-configurable-product-and-editing-the-price.md)
-      - v1.1.33 {#v1-1-33}
+      - v1.1.3 {#v1-1-33}
          - [Overzicht: [!DNL Quality Patches Tool]  (QPT) v1.1.33](quality-patches-tool/patches-available-in-qpt/v1-1-33/overview.md)
          - [ACSD-51792: De gebeurtenis Pagina heeft geen indruk](quality-patches-tool/patches-available-in-qpt/v1-1-33/acsd-51792-page-does-not-have-impression-event.md)
          - [ACSD-51645: Een nieuwe regel voor winkelwagentprijzen opslaan als de extensie Magento_OfflineShipping is uitgeschakeld](quality-patches-tool/patches-available-in-qpt/v1-1-33/acsd-51645-saving-a-new-cart-price-rule-if-the-extension-magento-offlineshipping-is-disabled.md)
@@ -415,15 +415,15 @@ ht-degree: 0%
          - [ACSD-51102: Catalogusregel wordt niet correct geïndexeerd](quality-patches-tool/patches-available-in-qpt/v1-1-33/acsd-51102-catalog-rule-is-not-correctly-indexed.md)
          - [ACSD-52148: Google v3 reCAPTCHA-beheerdersaanmelding mislukt af en toe](quality-patches-tool/patches-available-in-qpt/v1-1-33/acsd-52148-google-v3-recaptcha-admin-login-fails-occasionally.md)
          - [ACSD-51408: de status van een Order-item is ingesteld op Achtergeordend](quality-patches-tool/patches-available-in-qpt/v1-1-33/acsd-51408-order-item-status-is-set-to-backordered.md)
-         - [ACSD-50512: Fout bij het bijwerken van de startdatum voor een downloadbare productstaging-update](quality-patches-tool/patches-available-in-qpt/v1-1-33/acsd-50512-error-when-updating-the-start-date-for-a-downloadable-product-staging-update.md)
+         - [ACSD-50512: Fout bij het bijwerken van de begindatum voor een downloadbare update voor productfasering](quality-patches-tool/patches-available-in-qpt/v1-1-33/acsd-50512-error-when-updating-the-start-date-for-a-downloadable-product-staging-update.md)
          - [ACSD-50895: Google Analytics 3 GTM-tags worden niet geactiveerd als Google Analytics 4 GTM niet is geconfigureerd](quality-patches-tool/patches-available-in-qpt/v1-1-33/acsd-50895-google-analytics-3-gtm-tags-are-not-fired-if-google-analytics-4-gtm-is-not-configured.md)
          - [ACSD-51471: Admin-gebruiker kan geplande update voor gebundeld product niet opslaan](quality-patches-tool/patches-available-in-qpt/v1-1-33/acsd-51471-admin-user-cannot-save-scheduled-update-for-bundled-product.md)
-         - [ACSD-51120: GraphQL GET vraagt cache niet leeg voor CMS-pagina&#39;s die CMS-blokken bevatten](quality-patches-tool/patches-available-in-qpt/v1-1-33/acsd-51120-graphql-get-requests-cache-not-cleared-for-cms-pages.md)
-         - [ACSD-51700: Fout bij het schakelen tussen winkelweergaven op de bewerkingspagina van het downloadbare product](quality-patches-tool/patches-available-in-qpt/v1-1-33/acsd-51700-downloadable-product-error-when-switching-storeviews.md)
-         - [ACSD-51735: Status van bestelartikelen onjuist ingesteld op [!UICONTROL Ordered] wanneer de productvoorraad 0 is](quality-patches-tool/patches-available-in-qpt/v1-1-33/acsd-51735-order-item-status-incorrectly-set.md)
+         - [ACSD-51120: GraphQL GET vraagt cache niet vrij voor CMS-pagina&#39;s die CMS-blokken bevatten](quality-patches-tool/patches-available-in-qpt/v1-1-33/acsd-51120-graphql-get-requests-cache-not-cleared-for-cms-pages.md)
+         - [ACSD-51700: fout bij het schakelen tussen winkelweergaven op de downloadbare pagina voor productbewerking](quality-patches-tool/patches-available-in-qpt/v1-1-33/acsd-51700-downloadable-product-error-when-switching-storeviews.md)
+         - [ACSD-51735: status van item bestellen is onjuist ingesteld op [!UICONTROL Ordered] als productvoorraad 0 is](quality-patches-tool/patches-available-in-qpt/v1-1-33/acsd-51735-order-item-status-incorrectly-set.md)
          - [ACSD-51497: Kan cataloguspagina niet sorteren op aangepast kenmerk van het type Dropdown](quality-patches-tool/patches-available-in-qpt/v1-1-33/acsd-51497-cannot-sort-catalog-page-by-custom-attribute-of-dropdown-type.md)
-         - [ACSD-50368: Klanten group_id wordt genegeerd wanneer de klant is gemaakt via Async REST API of Async Bulk REST API](quality-patches-tool/patches-available-in-qpt/v1-1-33/acsd-50368-customers-group-id-ignored-when-a-customer-is-created-via-async-rest-api.md)
-         - [ACSD-50949: Prijsfilter in geavanceerd zoeken levert niet de juiste resultaten op bij gebruik met SKU-filter](quality-patches-tool/patches-available-in-qpt/v1-1-33/acsd-50949-price-filter-in-advanced-search-does-not-return-proper-results.md)
+         - [ACSD-50368: Klantengroep_id wordt genegeerd wanneer de klant deze maakt via de Async REST API of de Async Bulk REST API](quality-patches-tool/patches-available-in-qpt/v1-1-33/acsd-50368-customers-group-id-ignored-when-a-customer-is-created-via-async-rest-api.md)
+         - [ACSD-50949: Prijsfilter in geavanceerd zoeken geeft geen goede resultaten bij gebruik met SKU-filter](quality-patches-tool/patches-available-in-qpt/v1-1-33/acsd-50949-price-filter-in-advanced-search-does-not-return-proper-results.md)
       - v1.1.34{#v1-1-34}
          - [Overzicht: [!DNL Quality Patches Tool]  (QPT) v1.1.34](quality-patches-tool/patches-available-in-qpt/v1-1-34/overview.md)
          - [ACSD-50813: Admin kan geen gebundelde producten met een schuine streep toevoegen](quality-patches-tool/patches-available-in-qpt/v1-1-34/acsd-50813-admin-unable-to-add-bundled-products-containing-a-slash.md)
@@ -507,9 +507,9 @@ ht-degree: 0%
          - [ACSD-54776: Niet-ingeschakelde standaardwaarde en niet-standaard productveldwaarden worden niet opgeslagen](quality-patches-tool/patches-available-in-qpt/v1-1-39/acsd-54776-unchecked-used-default-value-and-non-default-product-field-values-are-not-saved.md)
       - v1.1.40 {#v1-1-40}
          - [Overzicht: [!DNL Quality Patches Tool]  (QPT) v1.1.40](quality-patches-tool/patches-available-in-qpt/v1-1-40/overview.md)
-         - [ACSD-54472: Klanten van een afgewezen bedrijf kunnen zich nog steeds authenticeren en bestellingen plaatsen](quality-patches-tool/patches-available-in-qpt/v1-1-40/acsd-54472-customers-of-rejected-company-can-still-authenticate-and-place-orders.md)
-         - [ACSD-54680: B2B-offerte voor een product met meerdere toegewezen bronnen kan niet worden verwerkt](quality-patches-tool/patches-available-in-qpt/v1-1-40/acsd-54680-b2b-quote-submitted-for-a-product-with-multiple-assigneda-sources.md)
-         - [ACSD-55004: Validator loopt vast tijdens het uploaden van een importbestand dat groter is dan de waarde](quality-patches-tool/patches-available-in-qpt/v1-1-40/acsd-55004-validator-crashes-while-uploading-an-import-file-larger-than-the-value.md)
+         - [ACSD-54472: klanten van een afgewezen bedrijf kunnen nog steeds orders verifiëren en plaatsen](quality-patches-tool/patches-available-in-qpt/v1-1-40/acsd-54472-customers-of-rejected-company-can-still-authenticate-and-place-orders.md)
+         - [ACSD-54680: B2B Citaat voor een product met Veelvoudige Toegewezen Bronnen kan worden verwerkt](quality-patches-tool/patches-available-in-qpt/v1-1-40/acsd-54680-b2b-quote-submitted-for-a-product-with-multiple-assigneda-sources.md)
+         - [ACSD-55004: de validatiefunctie crasht tijdens het uploaden van een bestand dat groter is dan de waarde](quality-patches-tool/patches-available-in-qpt/v1-1-40/acsd-55004-validator-crashes-while-uploading-an-import-file-larger-than-the-value.md)
          - [ACSD-53414: gebruikers met beperkte beheerdersrechten kunnen CMS-pagina&#39;s zien die buiten het bereik van hun machtigingen vallen](quality-patches-tool/patches-available-in-qpt/v1-1-40/acsd-53414-restricted-admin-user-can-see-cms-pages-outside-permissions.md)
          - [ACSD-52657: Minicart wordt niet bijgewerkt bij de tweede storeview die subdomein gebruikt](quality-patches-tool/patches-available-in-qpt/v1-1-40/acsd-52657-minicart-not-updated-on-second-storeview.md)
          - [ACSD-54007: Ongedefinieerde fout _scope met arraysleutel bij het importeren van klantgegevens](quality-patches-tool/patches-available-in-qpt/v1-1-40/acsd-54007-undefined-array-key-scope-error-importing-customer-data.md)
@@ -560,7 +560,7 @@ ht-degree: 0%
          - [ACSD-53790: meerdere RMA&#39;s voor één product kunnen worden gemaakt via de Rest API](quality-patches-tool/patches-available-in-qpt/v1-1-43/acsd-53790-multiple-rmas-for-single-product-can-be-created-via-rest-api.md)
          - [ACSD-54739: [!UICONTROL Product Stock] status niet toegepast voor [!UICONTROL Related Product Rules]](quality-patches-tool/patches-available-in-qpt/v1-1-43/acsd-54739-product-stock-status-not-applied-for-related-product-rules.md)
          - [ACSD-54983: Company user UID met GraphQL niet beschikbaar bij inactieve gebruiker](quality-patches-tool/patches-available-in-qpt/v1-1-43/acsd-54983-company-user-uid-with-graphql-not-available-with-inactive-user.md)
-      - v1.1.44 {#v1-1-44}
+      - v1.1.4 {#v1-1-44}
          - [Overzicht: [!DNL Quality Patches Tool]  (QPT) v1.1.44](quality-patches-tool/patches-available-in-qpt/v1-1-44/overview.md)
          - [ACSD-55231: SKU niet gevonden fout tijdens gebruik van snelle-ordefunctionaliteit](quality-patches-tool/patches-available-in-qpt/v1-1-44/acsd-55231-sku-not-found-in-catalog.md)
          - [ACSD-55352: [!UICONTROL Credit Memo] maken met bonuspunten](quality-patches-tool/patches-available-in-qpt/v1-1-44/acsd-55352-creating-credit-memos-with-reward-points.md)
@@ -627,10 +627,10 @@ ht-degree: 0%
          - [ ACSD-59378: opslag-niveau  [!DNL URL]  herschrijft verkeerd bijgewerkt tijdens de invoer ](quality-patches-tool/patches-available-in-qpt/v1-1-50/acsd-59378-store-level-url-rewrites-incorrectly-updated-during-import.md)
          - [ACSD-46938: Prestatieproblemen met DB-triggers tijdens installatie:upgrade](quality-patches-tool/patches-available-in-qpt/v1-1-50/acsd-46938-fix-for-db-triggers-performance-issue-during-setup-upgrade.md)
          - [ACSD-54887: Winkelwagentje van klanten wordt gewist nadat de sessie van de klant is verlopen](quality-patches-tool/patches-available-in-qpt/v1-1-50/acsd-54887-customer-shopping-cart-gets-cleared-after-session-expiry.md)
-         - [ACSD-58141: PHPSESSID regenereert op POST-verzoeken voor ingelogde klanten als de L2 Redis-cache is ingeschakeld](quality-patches-tool/patches-available-in-qpt/v1-1-50/acsd-58141-phpsessid-regenerates-on-post-requests-for-logged-in-customers.md)
-         - [ACSD-59229: Verkeerde toewijzing van klantgroepgegevens als gevolg van een verouderde X-Magento-Vary-waarde](quality-patches-tool/patches-available-in-qpt/v1-1-50/acsd-59229-customer-group-segmentation-fix.md)
-         - [ACSD-60441: Klanten bijwerken via V1/customers [!DNL REST] API-eindpunt genereert een foutmelding](quality-patches-tool/patches-available-in-qpt/v1-1-50/acsd-60441-updating-customers-via-v1-customers-rest-api.md)
-         - [ACSD-58352: Retourattribuutlabels voor de standaardwinkel worden geretourneerd via [!DNL GraphQL] API](quality-patches-tool/patches-available-in-qpt/v1-1-50/acsd-58352-return-attribute-labels-for-the-default-store-are-returned-via-graphql-api.md)
+         - [ACSD-58141: PHPSESSID regenereert op POST- verzoeken voor aangemelde klanten als L2 Redis geheime voorgeheugen wordt toegelaten](quality-patches-tool/patches-available-in-qpt/v1-1-50/acsd-58141-phpsessid-regenerates-on-post-requests-for-logged-in-customers.md)
+         - [ACSD-59229: onjuiste toewijzing van gegevens aan de klantengroep als gevolg van een verouderde waarde voor X-Magento-variëren](quality-patches-tool/patches-available-in-qpt/v1-1-50/acsd-59229-customer-group-segmentation-fix.md)
+         - [ACSD-60441: Het bijwerken van klanten via V1/klanten  [!DNL REST]  API eindpunt werpt een fout](quality-patches-tool/patches-available-in-qpt/v1-1-50/acsd-60441-updating-customers-via-v1-customers-rest-api.md)
+         - [ACSD-58352: De kenmerketiketten van de terugkeer voor de standaardopslag zijn teruggekeerd via  [!DNL GraphQL]  API](quality-patches-tool/patches-available-in-qpt/v1-1-50/acsd-58352-return-attribute-labels-for-the-default-store-are-returned-via-graphql-api.md)
          - [ACSD-59514: Forms in Admin met  [!DNL Page Builder]  werpen fout in browser console](quality-patches-tool/patches-available-in-qpt/v1-1-50/acsd-59514-forms-in-admin-with-page-builder-throw-error-in-browser-console.md)
          - [ACSD-58790: hiermee wordt de zoomfunctie met knijpbeweging op de pagina-afbeeldingen met productdetails in de mobiele weergave op  [!DNL Chrome] gecorrigeerd](quality-patches-tool/patches-available-in-qpt/v1-1-50/acsd-58790-fixes-pinch-to-zoom-functionality-on-the-product-detail-page.md)
          - [ACSD-58442: Het probleem waarbij apparaten met een breedte van 768 px als mobiel worden behandeld, waardoor menu&#39;s en kopteksten in de mobiele weergave niet als bureaublad worden geladen](quality-patches-tool/patches-available-in-qpt/v1-1-50/acsd-58442-fixes-issue-devices-768px-mobile-view-instead-desktop.md)
@@ -654,8 +654,8 @@ ht-degree: 0%
          - [ACSD-61322: producten die niet aan [!UICONTROL Shared Catalogue] zijn toegewezen, worden opgenomen in XML-itemap](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-52/acsd-61322-products-not-assigned-to-shared-catalogue.md)
          - [ACSD-60590: Verbeterende prestaties van Bestsellers Aggregated Daily Report Generation](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-52/acsd-60590-optimized-bestseller-report-generation.md)
          - [ACSD-59925: Items sorteren in [!UICONTROL Media Gallery]](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-52/acsd-59925-sorting-items-in-media-gallery.md)
-         - [ACSD-59865: [!UICONTROL Cart Price Rule] annuleert eerdere regels niet vanwege onvoldoende hoeveelheid](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-52/acsd-59865-cart-price-rule-fix-for-insufficient-quantity-issue.md)
-         - [ACSD-59366: Verwijder teams met gedeactiveerde gebruikers die niet zichtbaar zijn in de teamlijst](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-52/acsd-59366-delete-teams-with-deactivated-users-not-visible-in-the-team-list.md)
+         - [ACSD-59865: [!UICONTROL Cart Price Rule] kan vorige regels niet annuleren wegens onvoldoende hoeveelheid](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-52/acsd-59865-cart-price-rule-fix-for-insufficient-quantity-issue.md)
+         - [ACSD-59366: teams met gedeactiveerde gebruikers verwijderen die niet zichtbaar zijn in de teamlijst](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-52/acsd-59366-delete-teams-with-deactivated-users-not-visible-in-the-team-list.md)
          - [ACSD-60788: De manuscripten van de douane voor  [!DNL Google Tag Manager]  niet uitgevoerd toe te schrijven aan CSP fouten](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-52/acsd-60788-fixes-issue-where-custom-scripts-for-google-tag-manager-are-not-executed-due-to-content-security-policy-errors.md)
          - [ACSD-59952: Fout bij verwijderen van gedeelde catalogus met dezelfde groep-id als een andere gedeelde catalogus](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-52/acsd-59952-error-on-deleting-shared-catalog-with-same-group-id-as-another-shared-catalog.md)
          - [ACSD-60673: [!UICONTROL Cart Price Rule] probleem opgelost voor meerdere betalingsmethoden bij afhandeling](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-52/acsd-60673-cart-price-rule-fix-for-multiple-payment-methods-at-checkout.md)
@@ -684,7 +684,7 @@ ht-degree: 0%
          - [ACSD-62485: async.operations.all stopt de consument met werken wanneer het bedrijf wordt gemaakt](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-54/acsd-62485-async-operations-all-consumer-stops-working-when-company-is-created.md)
          - [ACSD-61845: Fout treedt op bij aanvragen met text/html accepteert header](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-54/acsd-61845-error-occurs-for-requests-with-text-html-accept-header.md)
          - [ACSD-62056: Het uploaden van images voor configureerbaar product mislukt als MSI is geïnstalleerd](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-54/acsd-62056-image-upload-for-configurable-products-fail-msi-installed.md)
-      - v1.1.55 {#v1-1-55}
+      - v1.1.5 {#v1-1-55}
          - [ACSD-58566: interne serverfout van GraphQL voor opmerkingen over inkooporders](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-55/acsd-58566-grapghql-internal-server-error-for-purchase-order-comments.md)
          - [Overzicht: [!DNL Quality Patches Tool]  (QPT) v1.1.55](/help//tools/quality-patches-tool/patches-available-in-qpt/v1-1-55/overview.md)
          - [ACSD-58685: e-mails met uitgeschakelde verkoop worden verzonden wanneer ze opnieuw worden ingeschakeld](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-55/acsd-58685-ensures-disabled-sales-emails-are-not-sent-upon-re-enabling.md)
@@ -741,15 +741,15 @@ ht-degree: 0%
          - [ACSD-63067: Problemen met de validering van de hoeveelheid in gegroepeerde producten op de opslagplaats oplossen](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-58/acsd-63067-resolving-quantity-validation-issues-in-grouped-products-on-storefront.md)
          - [ACSD-63283: [!UICONTROL Gift Registry] Oplossen van problemen met e-mail- en orderplaatsing in Adobe Commerce](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-58/acsd-63283-resolving-gift-registry-email-and-order-placement-issues-in-adobe-commerce.md)
          - [ACSD-62118: tabel sales_order_tax_item niet volledig bijgewerkt voor B2B-orders die zijn geplaatst met de methode [!UICONTROL Purchase Order]](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-58/acsd-62118-tax-item-table-not-updated-po-method.md)
-         - [ACSD-63182: Er treedt een fout op tijdens het opslaan van een product na duplicatie van het bundelproduct](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-58/acsd-63182-error-occurs-while-saving-a-product-after-bundle-product-duplication.md)
-         - [ACSD-63090: Als u een product uit Admin verwijdert, wordt het winkelwagentje geleegd](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-58/acsd-63090-deleting-product-from-admin-empties-the-shopping-cart.md)
+         - [ACSD-63182: Fout bij het opslaan van een product na het dupliceren van een bundelproduct](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-58/acsd-63182-error-occurs-while-saving-a-product-after-bundle-product-duplication.md)
+         - [ACSD-63090: Door een product uit Admin te verwijderen, wordt het winkelwagentje leeggemaakt](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-58/acsd-63090-deleting-product-from-admin-empties-the-shopping-cart.md)
          - [ACSD-48570: Probleem met koppeling voor het opnieuw instellen van het wachtwoord voor beheerders oplossen met winkelcode in URL](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-58/acsd-48570-fixing-admin-reset-password-link-issue-with-store-card-in-url.md)
          - [ACSD-63299: Speciale prijs voor een configureerbaar product wordt niet weergegeven op de winkel](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-58/acsd-63299-special-price-for-a-configurable-product-doesnt-display-on-the-storefront.md)
          - [ACSD-63325: De &quot;Fout van de Syntaxis: Onverwachte &lt; EOF >&quot;fout wanneer het voorleggen van leeg  [!DNL GraphQL]  verzoek](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-58/acsd-63325-syntax-error-when-submitting-graphql-request.md)
          - [ACSD-63578: als u op het pictogram [!UICONTROL Delete] in [!UICONTROL Add to Order by SKU] klikt, wordt SKU niet verwijderd](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-58/acsd-63578-clicking-delete-in-add-to-order-by-sku-doesnot-remove-sku.md)
-         - [ACSD-63329: Standaardwaarden voor datum- en tijdvelden worden niet ingesteld bij het maken van producten met de REST API](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-58/acsd-63329-date-and-time-attributes-arent-set-when-creating-products-with-the-rest-api.md)
-         - [MDVA-39305-V3: Aanmeldingsprobleem met ingeschakeld [!DNL Google reCAPTCHA]](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-58/mdva-39305-v3-login-issue-with-enabled-google-recaptcha.md)
-         - [ACSD-63572: tijdelijke tabellen van de catalogrule-indexeerfunctie worden niet opgeschoond als het indexeerproces wordt beëindigd](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-58/acsd-63572-catalogrule-indexer-temporary-tables-arent-cleaned-if-the-indexer-process-is-terminated.md)
+         - [ACSD-63329: standaardwaarden voor datum- en tijdvelden worden niet ingesteld bij het maken van producten met de REST API](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-58/acsd-63329-date-and-time-attributes-arent-set-when-creating-products-with-the-rest-api.md)
+         - [MDVA-39305-V3: Login kwestie met toegelaten  [!DNL Google reCAPTCHA]](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-58/mdva-39305-v3-login-issue-with-enabled-google-recaptcha.md)
+         - [ACSD-63572: de tijdelijke lijsten van de catalogusregel van de indexeerder worden niet schoongemaakt als het indexeerproces wordt geëindigd](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-58/acsd-63572-catalogrule-indexer-temporary-tables-arent-cleaned-if-the-indexer-process-is-terminated.md)
       - v1.1.59 {#v1-1-59}
          - [Overzicht: [!DNL Quality Patches Tool]  (QPT) v1.1.59](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-59/overview.md)
          - [ACSD-64112: de uitvoering van de uitsnede indexer_update_all_views mislukt wanneer MAGE_INDEXER_THREADS_COUNT is ingesteld](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-59/acsd-64112-indexer-update-all-views-cron-execution-fails.md)
@@ -770,13 +770,14 @@ ht-degree: 0%
          - [Overzicht: [!DNL Quality Patches Tool]  (QPT) v1.1.61](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-61/overview.md)
          - [ ACP2E-3689: De veelvoudige kwesties met de vertoning van de categorieboom op diepere niveaus en het weerspiegelen van anker/niet-ankerverhoudingen ](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-61/acp2e-3689-issues-with-category-tree-display-reflect-anchor-non-anchor-relationships.md)
          - [ACSD-64178: [!UICONTROL Edit Attribute Set] pagina wordt langzaam geladen met duizenden productkenmerken](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-61/acsd-64178-attribute-set-edit-page-loads-slow-with-thousands-of-attributes.md)
+         - [ACP2E-3705: indexer_update_all_views de uitvoering van de cron mislukt wanneer MAGE_INDEXER_THREADS_COUNT is ingesteld](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-61/acp2e-3705-fixes-an-issue-where-the-indexer.md)
          - [ACSD-64467: WYSIWYG-editor is leeg na het opslaan van categoriebeschrijving op winkelweergaveniveau](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-61/acsd-64467-wysiwyg-editor-empty-after-saving-category-description.md)
          - [ACSD-63974: hiermee wordt de langzaam [!UICONTROL Requisition List] te laden tijd gecorrigeerd met paginering](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-61/acsd-63974-fixes-the-issue-where-the-requisition-list-page-takes-a-long-time.md)
    - [Patch controleren voor Adobe Commerce-probleem met het gereedschap Kwaliteitspatches](quality-patches-tool/patches-available-in-qpt/check-patch-for-magento-issue-with-magento-quality-patches.md)
-- Command-line-gereedschappen, verwijzing 
-   - [Adobe Commerce (on-premises)](reference/commerce-on-premises.md)
-   - [Compatibiliteitstool voor upgrades](reference/uct.md)
-- Observatie voor Adobe Commerce {#observation-for-adobe-commerce}
+- Verwijzing naar opdrachtregelprogramma&#39;s {#cli-reference}
+   - [Adobe Commerce (ter plaatse)](reference/commerce-on-premises.md)
+   - [Compatibiliteit upgraden](reference/uct.md)
+- Waarneming voor Adobe Commerce {#observation-for-adobe-commerce}
    - [Inleiding](observation-for-adobe-commerce/intro.md)
    - [Toegang krijgen](observation-for-adobe-commerce/access.md)
    - [Het account en het tijdpad selecteren](observation-for-adobe-commerce/selecting-the-account.md)
@@ -798,11 +799,11 @@ ht-degree: 0%
    - [ het lusje van de Veiligheid ](observation-for-adobe-commerce/security-tab.md)
    - [Het tabblad Infra](observation-for-adobe-commerce/oac-infra.md)
    - [Hoe wordt Observatie voor Adobe Commerce gebruikt](observation-for-adobe-commerce/how-to-use.md)
-- Gereedschap voor gegevensmigratie  Data-migration
+- Gegevensmigratie {#data-migration}
    - [Hoe migratie werkt](data-migration-tool/how-migration-works.md)
    - [Aanbevolen procedures](data-migration-tool/best-practices.md)
    - [Ondersteunde versies](data-migration-tool/supported-versions.md)
-   - Basics {#basics}
+   - Basisbeginselen {#basics}
       - [Een abonnement maken](data-migration-tool/create-plan.md)
       - [Vereisten](data-migration-tool/prerequisites.md)
       - [Installeren](data-migration-tool/install.md)
@@ -818,7 +819,7 @@ ht-degree: 0%
       - [Follow-up](data-migration-tool/migrate-data/follow-up.md)
       - [Gegevens die handmatige migratie vereisen](data-migration-tool/migrate-data/manual.md)
       - [Stappen voor migratie na gegevens](data-migration-tool/migrate-data/post-migration.md)
-   - Bronnen 
+   - Bronnen {#resources}
       - [ het Oplossen van problemen ](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/data-migration-tool-troubleshooting.html)
       - [ Changelog ](https://github.com/magento/data-migration-tool/blob/2.4/CHANGELOG.md)
 - [ Terugkeer aan Operationele Gidsen ](https://experienceleague.adobe.com/docs/commerce-operations/operational-guides/home.html)
