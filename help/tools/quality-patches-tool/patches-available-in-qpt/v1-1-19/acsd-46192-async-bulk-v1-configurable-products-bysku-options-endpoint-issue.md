@@ -4,14 +4,18 @@ description: De markering ACSD-46192 verhelpt de kwestie met het "async/bulk/V1/
 feature: Configuration, Products
 role: Admin
 exl-id: 5a54f4b5-8467-40de-9d8f-ba46880ed5ad
-source-git-commit: 81c78439f7c243437b7b76dc80560c847af95ace
+source-git-commit: 2cd5a55d95fad071fe872fa466aaeb56c439dad1
 workflow-type: tm+mt
-source-wordcount: '348'
+source-wordcount: '366'
 ht-degree: 0%
 
 ---
 
 # ACSD-46192: Probleem met eindpunt async/bulk/V1/configureerbare-products/bySku/options
+
+>[!NOTE]
+>
+>Het ACSD-46192 flard is gedeeltelijk afgekeurd, aangezien deze kwestie door het verplichte veiligheidspatch [ APSB25-08 ](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/troubleshooting/known-issues-patches-attached/security-update-available-for-adobe-commerce-apsb25-08) wordt gericht.
 
 De ACSD-46192-patch verhelpt het probleem met het `async/bulk/V1/configurable-products/bySku/options` -eindpunt. Dit flard is beschikbaar wanneer het [ Hulpmiddel van de Patches van de Kwaliteit (QPT) ](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/announcements/commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches) 1.1.19 geïnstalleerd is. De patch-id is ACSD-46192. De kwestie is opgelost in Adobe Commerce 2.4.5.
 
@@ -23,7 +27,7 @@ De ACSD-46192-patch verhelpt het probleem met het `async/bulk/V1/configurable-pr
 
 **Compatibel met de versies van Adobe Commerce:**
 
-* Adobe Commerce (alle implementatiemethoden) 2.4.3 en 2.4.4
+* Adobe Commerce (alle implementatiemethoden) 2.3.6 - 2.4.3-p3
 
 >[!NOTE]
 >
@@ -31,11 +35,11 @@ De ACSD-46192-patch verhelpt het probleem met het `async/bulk/V1/configurable-pr
 
 ## Probleem
 
-Er treedt een fout op wanneer een aanvraag voor een POST naar `async/bulk/V1/configurable-products/bySku/` wordt verzonden.
+Er treedt een fout op wanneer een POST-aanvraag wordt verzonden naar `async/bulk/V1/configurable-products/bySku/` .
 
 <u> Stappen om </u> te reproduceren:
 
-1. Verzend een verzoek van de POST naar `async/bulk/V1/configurable-products/bySku/`.
+1. Verzend een POST-aanvraag naar `async/bulk/V1/configurable-products/bySku/` .
 
 ```JSON
 [{
@@ -84,7 +88,7 @@ TypeError: Argument 3 passed to Magento\Framework\Webapi\ServiceInputProcessor::
 
 Om individuele flarden toe te passen, gebruik de volgende verbindingen afhankelijk van uw plaatsingsmethode:
 
-* Adobe Commerce of Magento Open Source op locatie: [[!DNL Quality Patches Tool]  > Gebruik ](/help/tools/quality-patches-tool/usage.md) in de handleiding [!DNL Quality Patches Tool] .
+* Op locatie Adobe Commerce of Magento Open Source: [[!DNL Quality Patches Tool] > Gebruik ](/help/tools/quality-patches-tool/usage.md) in de handleiding [!DNL Quality Patches Tool] .
 * Adobe Commerce op wolkeninfrastructuur: [ Verbeteringen en Patches > Pas Patches ](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html) in Commerce op de gids van de Infrastructuur van de Wolk toe.
 
 ## Gerelateerde lezing
