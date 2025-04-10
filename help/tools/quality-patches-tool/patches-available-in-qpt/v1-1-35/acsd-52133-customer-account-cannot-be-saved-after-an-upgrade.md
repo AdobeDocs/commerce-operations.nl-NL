@@ -4,14 +4,18 @@ description: Pas de ACSD-52133-patch toe om het Adobe Commerce-probleem op te lo
 feature: Customers, Upgrade
 role: Admin
 exl-id: 4a0e6ed8-3e35-40ce-bb49-8ccfcde437a0
-source-git-commit: 81c78439f7c243437b7b76dc80560c847af95ace
+source-git-commit: 82667023bbaa9d725eb52dacb8bd47042bdfe028
 workflow-type: tm+mt
-source-wordcount: '383'
+source-wordcount: '399'
 ht-degree: 0%
 
 ---
 
 # ACSD-52133: Klantenaccount kan niet worden opgeslagen na een upgrade
+
+>[!NOTE]
+>
+>Dit flard is afgekeurd toe te schrijven aan een conflict met het veiligheidspatch [ APSB25-08 ](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/troubleshooting/known-issues-patches-attached/security-update-available-for-adobe-commerce-apsb25-08).
 
 De ACSD-52133-patch verhelpt het probleem waarbij een klantenaccount niet kan worden opgeslagen na een upgrade. Deze patch is beschikbaar wanneer [!DNL Quality Patches Tool (QPT)] 1.1.35 wordt geïnstalleerd. De patch-id is ACSD-52133. Het probleem wordt volgens de planning opgelost in Adobe Commerce 2.4.7.
 
@@ -66,7 +70,7 @@ De klant wordt zonder fouten met succes opgeslagen.
 
 Om individuele flarden toe te passen, gebruik de volgende verbindingen afhankelijk van uw plaatsingsmethode:
 
-* Adobe Commerce of Magento Open Source op locatie: [[!DNL Quality Patches Tool] > Gebruik ](/help/tools/quality-patches-tool/usage.md) in de handleiding [!DNL Quality Patches Tool]
+* Op locatie Adobe Commerce of Magento Open Source: [[!DNL Quality Patches Tool] > Gebruik ](/help/tools/quality-patches-tool/usage.md) in de handleiding [!DNL Quality Patches Tool]
 * Adobe Commerce op wolkeninfrastructuur: [ Verbeteringen en Patches > Patches toepassen ](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html) in Commerce op de gids van de Infrastructuur van de Wolk
 
 ## Gerelateerde lezing
