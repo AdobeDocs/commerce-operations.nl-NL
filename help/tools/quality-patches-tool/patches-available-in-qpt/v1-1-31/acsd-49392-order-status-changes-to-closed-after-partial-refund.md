@@ -1,16 +1,21 @@
 ---
-title: "ACSD-49392: Wijzigingen in de status van bestelling die na gedeeltelijke terugbetaling worden gesloten"
+title: 'ACSD-49392: Wijzigingen in de status van bestellingen die na gedeeltelijke terugbetaling worden gesloten'
 description: Pas de ACSD-49392-patch toe om het Adobe Commerce-probleem op te lossen waarbij de status van de order verandert in gesloten na een gedeeltelijke terugbetaling voor een gebundeld product.
 feature: Orders
 role: Admin
-source-git-commit: fe11599dbef283326db029b0312ad290cde0ba0a
+exl-id: e12cbf2d-219e-4cb5-a226-6c7ae4929549
+source-git-commit: 67e050b4ceccc3f30bf8cd49125525b2e8d8b0dd
 workflow-type: tm+mt
-source-wordcount: '410'
+source-wordcount: '425'
 ht-degree: 0%
 
 ---
 
 # ACSD-49392: Wijzigingen in de status van bestellingen die na gedeeltelijke terugbetaling worden gesloten
+
+>[!NOTE]
+>
+>De flard ACSD-49392 werd vervangen met flard [ ACSD-57003 ](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-46/acsd-57003-order-status-changed-to-complete-instead-of-processing) voor versies 2.4.6-p7 aan 2.4.6-p10.
 
 De ACSD-49392-patch verhelpt het probleem waarbij de status van de bestelling verandert in gesloten na een gedeeltelijke terugbetaling voor een gebundeld product. Deze patch is beschikbaar wanneer [!DNL Quality Patches Tool (QPT)] 1.1.31 wordt geïnstalleerd. De patch-id is ACSD-49392. Het probleem wordt volgens de planning opgelost in Adobe Commerce 2.4.7.
 
@@ -22,7 +27,7 @@ De ACSD-49392-patch verhelpt het probleem waarbij de status van de bestelling ve
 
 **Compatibel met de versies van Adobe Commerce:**
 
-* Adobe Commerce (alle implementatiemethoden) 2.3.7 - 2.3.7-p4 en 2.4.1 - 2.4.6
+* Adobe Commerce (alle implementatiemethoden) 2.3.7 - 2.3.7-p4 en 2.4.1 - 2.4.6-p6
 
 >[!NOTE]
 >
@@ -52,7 +57,7 @@ Na het maken van een gedeeltelijke creditnota voor het gebundelde product, is de
 
 Om individuele flarden toe te passen, gebruik de volgende verbindingen afhankelijk van uw plaatsingsmethode:
 
-* Adobe Commerce of Magento Open Source op locatie: [[!DNL Quality Patches Tool]  > Gebruik ](/help/tools/quality-patches-tool/usage.md) in de handleiding [!DNL Quality Patches Tool] .
+* Op locatie Adobe Commerce of Magento Open Source: [[!DNL Quality Patches Tool] > Gebruik ](/help/tools/quality-patches-tool/usage.md) in de handleiding [!DNL Quality Patches Tool] .
 * Adobe Commerce op wolkeninfrastructuur: [ Verbeteringen en Patches > Pas Patches ](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html) in Commerce op de gids van de Infrastructuur van de Wolk toe.
 
 ## Gerelateerde lezing
