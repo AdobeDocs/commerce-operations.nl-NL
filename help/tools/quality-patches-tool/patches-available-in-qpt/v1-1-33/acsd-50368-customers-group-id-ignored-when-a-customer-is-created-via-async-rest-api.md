@@ -4,14 +4,18 @@ description: Pas de ACSD-50368-patch toe om het Adobe Commerce-probleem op te lo
 feature: REST
 role: Admin
 exl-id: 1ca78717-2144-4410-a398-764864ee182f
-source-git-commit: 81c78439f7c243437b7b76dc80560c847af95ace
+source-git-commit: 9039635038bee9083fa3ed009e79c76e3655b357
 workflow-type: tm+mt
-source-wordcount: '388'
+source-wordcount: '413'
 ht-degree: 0%
 
 ---
 
 # ACSD-50368: Klantengroep_id wordt genegeerd wanneer een klant wordt gemaakt via de Async REST API of de Async Bulk REST API
+
+>[!NOTE]
+>
+>Het ACSD-50368 flard is gedeeltelijk afgekeurd, aangezien deze kwestie door het verplichte veiligheidspatch [ APSB25-08 ](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/troubleshooting/known-issues-patches-attached/security-update-available-for-adobe-commerce-apsb25-08) voor versies boven 2.4.4 wordt gericht.
 
 De ACSD-50368-patch verhelpt het probleem waarbij de klanten group_id worden genegeerd wanneer een klant wordt gemaakt via de Async REST API of de Async Bulk REST API. Deze patch is beschikbaar wanneer [[!DNL Quality Patches Tool (QPT)] ](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/announcements/commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches) 1.1.33 wordt geïnstalleerd. De patch-id is ACSD-50368. Het probleem wordt volgens de planning opgelost in Adobe Commerce 2.4.7.
 
@@ -23,7 +27,7 @@ De ACSD-50368-patch verhelpt het probleem waarbij de klanten group_id worden gen
 
 **Compatibel met de versies van Adobe Commerce:**
 
-* Adobe Commerce (alle implementatiemethoden) 2.4.3 - 2.4.4-p4
+* Adobe Commerce (alle implementatiemethoden) 2.4.3 - 2.4.3-p3
 
 >[!NOTE]
 >
@@ -35,7 +39,7 @@ Customers group_id wordt genegeerd wanneer een klant wordt gemaakt via Async RES
 
 <u> Eerste vereisten </u>:
 
-RabbitMQ configureren voor verwerkingswachtrijen:
+Vorm RabbitMQ voor verwerkingsrijen:
 
 ```
 bin/magento setup:config:set --amqp-host=services --amqp-port=5672 --amqp-user=guest --amqp-password=guest 
@@ -120,7 +124,7 @@ Group_id wordt geplaatst aan gebrek 1 voor de nieuwe klant.
 
 Om individuele flarden toe te passen, gebruik de volgende verbindingen afhankelijk van uw plaatsingsmethode:
 
-* Adobe Commerce of Magento Open Source op locatie: [[!DNL Quality Patches Tool]  > Gebruik ](/help/tools/quality-patches-tool/usage.md) in de handleiding [!DNL Quality Patches Tool] .
+* Op locatie Adobe Commerce of Magento Open Source: [[!DNL Quality Patches Tool] > Gebruik ](/help/tools/quality-patches-tool/usage.md) in de handleiding [!DNL Quality Patches Tool] .
 * Adobe Commerce op wolkeninfrastructuur: [ Verbeteringen en Patches > Pas Patches ](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html) in Commerce op de gids van de Infrastructuur van de Wolk toe.
 
 ## Gerelateerde lezing
