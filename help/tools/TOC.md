@@ -2,9 +2,9 @@
 user-guide-title: Gereedschappen
 user-guide-description: Leer meer over de verschillende gereedschappen die u met Adobe Commerce kunt gebruiken, hun gebruik, het installatieproces en hoe u toegang krijgt.
 feature: Configuration
-source-git-commit: 7358d2aca927c94505e7a99b5ee390aa6a7f5fc9
+source-git-commit: 58d57155fdb197897bff7647546b4a79740ebb38
 workflow-type: tm+mt
-source-wordcount: '7359'
+source-wordcount: '7381'
 ht-degree: 0%
 
 ---
@@ -771,6 +771,7 @@ ht-degree: 0%
          - [Overzicht: [!DNL Quality Patches Tool]  (QPT) v1.1.61](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-61/overview.md)
          - [ ACP2E-3689: De veelvoudige kwesties met de vertoning van de categorieboom op diepere niveaus en het weerspiegelen van anker/niet-ankerverhoudingen ](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-61/acp2e-3689-issues-with-category-tree-display-reflect-anchor-non-anchor-relationships.md)
          - [ACSD-64178: [!UICONTROL Edit Attribute Set] pagina wordt langzaam geladen met duizenden productkenmerken](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-61/acsd-64178-attribute-set-edit-page-loads-slow-with-thousands-of-attributes.md)
+         - [ACSD-64684: validatiefout bij het opslaan van een cadeaukaart met een waarde groter dan 999 vanwege de komma in duizend (1.000)](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-61/acsd-64684-validation-error-for-gift-card-value-over-999-due-to-comma-in-one-thousand.md)
          - [ACSD-63883: Het bevestigen onjuiste items_count in  [!DNL GraphQL]  reactie voor [!UICONTROL Requisition List]](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-61/acsd-63883-fixes-the-issue-where-the-requisition-list.md)
          - [ACP2E-3705: indexer_update_all_views de uitvoering van de cron mislukt wanneer MAGE_INDEXER_THREADS_COUNT is ingesteld](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-61/acp2e-3705-fixes-an-issue-where-the-indexer.md)
          - [ACSD-64467: WYSIWYG-editor is leeg na het opslaan van categoriebeschrijving op winkelweergaveniveau](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-61/acsd-64467-wysiwyg-editor-empty-after-saving-category-description.md)
