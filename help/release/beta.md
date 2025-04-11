@@ -2,9 +2,9 @@
 title: Beta-releases
 description: Leer meer over de bètareleases van Adobe Commerce en hoe u hieraan kunt deelnemen.
 exl-id: 662cb061-995f-4e09-a2ef-9e607cc0000b
-source-git-commit: c523b57270370d87be0f2ab0513f7908bb0a7173
+source-git-commit: ea4f340540e57b282657a44502d80f1d5c409c6a
 workflow-type: tm+mt
-source-wordcount: '931'
+source-wordcount: '930'
 ht-degree: 0%
 
 ---
@@ -40,7 +40,7 @@ Met Adobe Commerce Optimizer kunt u:
 - Creeer gepersonaliseerde onderzoek en aanbevelingen gebruikend AI en ML.
 - De essentiële beschikbaarheid van productgegevens weergeven, waaronder synchronisatiestatus en storefront-gebeurtenisgegevens voor nauwkeurige implementatie en probleemoplossing.
 
-[ leer meer ](https://experienceleague.adobe.com/docs/commerce/optimizer/overview.html) over Adobe Commerce Optimizer. Als u aan het vroege toegangsprogramma van Adobe Commerce Optimizer zou willen deelnemen, verzend een e-mailverzoek naar [ commerce-storefront-services@adobe.com ](mailto:commerce-storefront-services@adobe.com).
+[ leer meer ](https://experienceleague.adobe.com/docs/commerce/optimizer/overview.html) over Adobe Commerce Optimizer. Als u in het leren van meer over het [!DNL Adobe Commerce Optimizer] vroege toegangsprogramma geinteresseerd bent, voltooi de [ vroege het verzoekvorm van de Toegang ](https://forms.office.com/Pages/ResponsePage.aspx?id=Wht7-jR7h0OUrtLBeN7O4WOxhjY2doZPikS2hIbfmL5UMlhTMTYzVDhPQVFNTUFYUjJHNlRKTE5TWS4u).
 
 ### Verbeterde zoekmogelijkheden voor Live zoeken (Public Beta)
 
