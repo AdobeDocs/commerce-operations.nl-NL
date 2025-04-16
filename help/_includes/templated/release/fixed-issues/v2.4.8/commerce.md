@@ -1,7 +1,7 @@
 ---
-source-git-commit: 2f8ca1dd3289c1a24e33198c95d38c1a04a507ff
+source-git-commit: 934fe621356c45bcefd2f84b7d01986b4995b061
 workflow-type: tm+mt
-source-wordcount: '28394'
+source-wordcount: '28390'
 ht-degree: 0%
 
 ---
@@ -37,10 +37,10 @@ We hebben 582 problemen opgelost in de Adobe Commerce 2.4.8-kerncode. Hieronder 
    * _GitHub codebijdrage_: <https://github.com/magento/magento2/commit/b21e5d91>
 * _ACP2E-3079_: Het adresupdate van de klant die ontbreekt wanneer het bijwerken door REST API als &quot;validateDefaultAddress&quot;toegelaten
    * _nota van de Reparatie_: Het API eindpunt functioneert nu zoals bedoeld nadat het probleem met de sleutel van identiteitskaart die van de API lading mist is opgelost.
-   * _GitHub codebijdrage_: <https://github.com/magento/magento2/commit/9af794a4>
-* _ACP2E-3091_: [ Wolk ] Creërend de Duplicate de klantengroep van de websitegroep in de Prijzen Api van de Rij.
-   * _Bevestig nota_: Nu de Rest Api van de Prijs van de Reeks staat niet toe om de Dubbele groep van de de prijsklant van de websitegroep tot stand te brengen.
-Eerder was het mogelijk om de prijsgroep voor de websitegroep Dupliceren te maken in Tier Prices Api die de validatie in Admin tijdens het opslaan van het product niet zou doorstaan.
+   * _Bijdrage GitHub-code_: <https://github.com/magento/magento2/commit/9af794a4>
+* _ACP2E-3091_: [Cloud] Het maken van de dubbele websitegroep voor de prijs van de klantgroep in de Tier Prices Api.
+   * _Fix-opmerking_: Nu staat de Tier Price Rest Api niet toe om de klantgroep Dubbele websitegroep te maken.
+Voorheen was het mogelijk om de klantgroep Dubbele websitegroep te maken in de Tier Prices Api die tijdens het opslaan van het product niet door de validatie in Admin zou komen.
    * _GitHub codebijdrage_: <https://github.com/magento/magento2/commit/148c3ead>
 * _ACP2E-3130_: Kan orde geen commentaar met status via REST API toevoegen
    * _nota van de Reparatie_: De kwestie is opgelost door de verandering in ordestatus toe te staan als het van de huidige slechts staat is. Eerder voldeed het niet aan de ordestatus en voorkwam het wijzigingen in een orderstatus, zelfs niet als deze van dezelfde status afkomstig was.
@@ -51,18 +51,18 @@ Eerder was het mogelijk om de prijsgroep voor de websitegroep Dupliceren te make
 * _ACP2E-3376_: [ CLOUD ] Onbekwaam om de basis-prijzen bij te werken gebruikend REST API (de waarde van &quot;value_id&quot;in &quot;catalog_product_entity_decimal&quot;wordt niet correct verhoogd.)
    * _nota van de Reparatie_: Eerder aan deze moeilijke situatie, toen rustapi /rest/default/V1/products/base-pricing werd geroepen, verhogingsidentiteitskaart werd verkeerd verhoogd verlatend een hiaat tussen waarden. Na de correctie wordt de increment id verhoogd, incrementeel. Ook het value_id-veldbereik is vergroot.
    * _GitHub codebijdrage_: <https://github.com/magento/magento2/commit/d50f6b5d>
-* _ACP2E-3460_: De punten van de orde zijn niet zichtbaar in creditmemo e-mails voor de API POST V1/order/:orderId/restitutie
-   * _nota van de Reparatie_: Eerder, vóór deze moeilijke situatie, wanneer een klant een creditnota van een API verzoek creeert die send_email op de hoogte brengt, bevat het niet het net van de productdetails. Na deze correctie stuurt de klant een API-aanvraag voor creditnota en zoekt hij naar de gegevens van het product die in de e-mail worden weergegeven.
-   * _GitHub codebijdrage_: <https://github.com/magento/magento2/commit/3f12d152>
-* _ACP2E-3486_: De standaardwaarden worden niet geplaatst voor datum en tijdattributen met producten RestAPI
+* _ACP2E-3460_: Bestelartikelen zijn niet zichtbaar in e-mails met creditnota&#39;s voor de API POST V1/order/:orderId/refund
+   * _Opmerking voor correctie_: Eerder, vóór deze oplossing, wanneer een klant een creditnota maakt op basis van een API-verzoek om send_email op de hoogte te stellen, bevatte deze niet het raster met productdetails. Nadat deze oplossing is toegepast, stuurt de klant een creditnota-API-verzoek en vindt hij de details van het productartikel in de e-mail.
+   * _Bijdrage GitHub-code_: <https://github.com/magento/magento2/commit/3f12d152>
+* _ACP2E-3486_: Standaardwaarden zijn niet ingesteld voor datum- en tijdkenmerken met producten RestAPI
    * _Nota van de Reparatie_: De standaardwaarden plaatsen nu behoorlijk voor datum en datum en tijdattributen via RestAPI
    * _GitHub codebijdrage_: <https://github.com/magento/magento2/commit/1984c61c>
 
-### API&#39;s, winkelwagentje en kassa
+### API&#39;s, winkelwagen en afrekenen
 
-* _ACP2E-3343_: Kritieke 500 Fout: Magento\Framework\Webapi\Exception Verwant aan Accept de Kopbal van HTTP
-   * _nota van de Reparatie_: Na de moeilijke situatie, is er geen kwestie met het specificeren van de &quot;Accepteer&quot;kopbal.
-   * _GitHub codebijdrage_: <https://github.com/magento/magento2/commit/1366ae5e>
+* _ACP2E-3343_: Kritieke 500-fout: Magento\Framework\Webapi\Exception met betrekking tot HTTP-header accepteren
+   * _Fix-opmerking_: Na de fix is er geen probleem met het opgeven van de &quot;Accept&quot;-header.
+   * _Bijdrage GitHub-code_: <https://github.com/magento/magento2/commit/1366ae5e>
 
 ### API&#39;s, GraphQL
 
@@ -89,26 +89,26 @@ Eerder was het mogelijk om de prijsgroep voor de websitegroep Dupliceren te make
    * _GitHub codebijdrage_: <https://github.com/magento/magento2/pull/38407>
 * _AC-11718_: Richt lijn opnieuw wanneer URL in hoofdletters heeft
    * _nota van de Reparatie_: Het systeem zet nu automatisch karakters in hoofdletters in URLs in kleine letters om, die een herleidingslijn verhinderen wanneer het toegang tot van homepage. Eerder, zou het hebben van karakters in hoofdletters in Veilige Basis URL een ononderbroken omleidingslijn veroorzaken wanneer het proberen om tot de homepage toegang te hebben.
-   * _GitHub kwestie_: <https://github.com/magento/magento2/issues/38538>
-   * _GitHub codebijdrage_: <https://github.com/magento/magento2/pull/38539>
-* _AC-11755_: middlename (&#39;s) niet bewaard voor gastrekeningen
-   * _nota van de Reparatie_: Het systeem bewaart nu correct de middennaam voor gastrekeningen tijdens controle, die het in het e-mailmalplaatje toegankelijk maken. Eerder werd de middelste naam niet opgeslagen in de prijsopgave en was deze niet toegankelijk in de e-mailsjabloon voor gastaccounts.
+   * _GitHub-probleem_: <https://github.com/magento/magento2/issues/38538>
+   * _Bijdrage GitHub-code_: <https://github.com/magento/magento2/pull/38539>
+* _AC-11755_: middelste naam/namen worden niet opgeslagen voor gastaccounts
+   * _Fix-opmerking_: het systeem slaat nu de middelste naam voor gastaccounts correct op tijdens het afrekenen, waardoor deze toegankelijk is in de e-mailsjabloon. Voorheen werd de middelste naam niet opgeslagen in de offertetabel en was deze niet toegankelijk in de e-mailsjabloon voor gastaccounts.
    * _GitHub kwestie_: <https://github.com/magento/magento2/issues/38593>
    * _GitHub codebijdrage_: <https://github.com/magento/magento2/pull/39067>
 * _AC-11919_: Admin: De Knopen van de Acties van de pagina drijvende linkerzijde in plaats van recht
    * _nota van de Reparatie_: Het systeem richt nu correct de Knopen van de Acties van de Pagina aan de rechterkant van de kleverige kopbal in het admin paneel, dat de professionele blik en het gevoel verbetert. Eerder zweven deze knoppen onjuist naar de linkerkant van de kleverige koptekst.
    * _GitHub kwestie_: <https://github.com/magento/magento2/issues/38701>
    * _GitHub codebijdrage_: <https://github.com/magento/magento2/commit/44cef3a9>
-* _AC-11999_: dev :di: infofout in magento 2.4.7
-   * _nota van de Reparatie_: Het systeem toont nu correct constructorparameters wanneer het uitvoeren van het dev :di: info bevel, verhinderend om het even welke fouten voor te komen. Eerder resulteerde het uitvoeren van deze opdracht in een fout als gevolg van een niet-overeenkomend type in het argument.
+* _AC-11999_: `dev:di:info` fout in magento 2.4.7
+   * _nota van de Reparatie_: Het systeem toont nu correct constructorparameters wanneer het uitvoeren van het `dev:di:info` bevel, verhinderend om het even welke fouten voor te komen. Eerder resulteerde het uitvoeren van deze opdracht in een fout als gevolg van een niet-overeenkomend type in het argument.
    * _GitHub kwestie_: <https://github.com/magento/magento2/issues/38740>
    * _GitHub codebijdrage_: <https://github.com/magento/magento2/commit/0c53bbf7>
-* _AC-13000_: Login als klant opt-in checkbox niet vertaalbaar
+* _AC-13000_: Inloggen als klant opt-in selectievakje niet vertaalbaar
    * _Nota van de Oplossing_: Het systeem staat nu &quot;Login toe als checkbox van de Klant het kiezen-binnen&quot;en &quot;Login als tooltip van de controledoos van de Klant&quot;gebieden om bij het werkingsgebied van de &quot;mening van de Opslag&quot;worden geplaatst, toelatend vertalingen voor verschillende archiefmeningen. Eerder werden deze velden alleen ingesteld in het bereik &quot;Website&quot;, zodat vertalingen voor afzonderlijke winkelweergaven niet konden worden vertaald.
    * _GitHub kwestie_: <https://github.com/magento/magento2/issues/32329>
    * _GitHub codebijdrage_: <https://github.com/magento/magento2/pull/32359>
 * _AC-14299_: De Homepage van het voorste eind UI in mijn profiel Dropdown is knoop niet daar.(af en toe)
-* _AC-6071_: De klant wordt het programma geopend maar het tonen van 404 fout in front-end.
+* _AC-6071_: Klant is ingelogd maar vertoont 404-fout in frontend.
    * _nota van de Reparatie_: De storefront klantendashboardpagina laadt nu zoals verwacht wanneer een klant het programma opent. Eerder konden klanten zich aanmelden, maar op deze pagina werd een fout van 404 weergegeven. [ GitHub-35838 ](https://github.com/magento/magento2/issues/35838)
    * _GitHub kwestie_: <https://github.com/magento/magento2/issues/35838>
    * _GitHub codebijdrage_: <https://github.com/magento/magento2/pull/36263>
@@ -138,7 +138,7 @@ Eerder waren de producten die als gastgebruiker aan de vergelijkingslijst werden
 
 ### Account, beheerinterface, B2B
 
-* _ACP2E-3038_: De beperkte admin gebruikers kunnen niet altijd douane gedeelde catalogi zien
+* _ACP2E-3038_: Beperkte admin-gebruikers kunnen niet altijd aangepaste gedeelde catalogi zien
    * _nota van de Reparatie_: De beperkte admin gebruikers kunnen klanten en alle gedeelde catalogi nu consequent bekijken en beheren waaraan de producten worden toegewezen, op voorwaarde dat zij toegang tot de specifieke opslag hebben. Eerder, kon een beperkte admin gebruiker met toegang tot een bepaalde opslag niet altijd alle gedeelde catalogi zien waaraan de producten werden toegewezen of konden klanten zien die niet konden sparen, leidend tot inconsistenties in het systeem.
    * _GitHub codebijdrage_: <https://github.com/magento/magento2/commit/7377de59>
 
@@ -149,9 +149,9 @@ Eerder waren de producten die als gastgebruiker aan de vergelijkingslijst werden
 
 ### Gebruikersinterface van beheerder
 
-* _AC-10705_: [ Uitgave ] voegt toestemmingscontrole voor &quot;herladengegevens&quot;gegevensknoop toe
-   * _nota van de Reparatie_: Het systeem omvat nu een toestemmingscontrole voor de &quot;knoop van Gegevens&quot;opnieuw laden, die ervoor zorgt dat het slechts voor gebruikers met de aangewezen toestemmingen wordt getoond en toegankelijk. Eerder was de knop &quot;Gegevens opnieuw laden&quot; zichtbaar en klikbaar voor alle gebruikers. Dit leidde tot een pagina &quot;niet toegestaan&quot; wanneer gebruikers zonder de vereiste machtigingen op deze pagina hadden geklikt.
-   * _GitHub kwestie_: <https://github.com/magento/magento2/issues/38283>
+* _AC-10705_: [Probleem met] het toevoegen van toestemmingscontrole voor de gegevensknop &quot;gegevens herladen&quot;
+   * _Fix-opmerking_: het systeem bevat nu een machtigingscontrole voor de knop &quot;Gegevens opnieuw laden&quot;, zodat deze alleen wordt weergegeven en toegankelijk is voor gebruikers met de juiste machtigingen. Voorheen was de knop &quot;Gegevens opnieuw laden&quot; zichtbaar en klikbaar voor alle gebruikers, wat leidde tot een &quot;niet toegestane&quot; pagina wanneer erop werd geklikt door gebruikers zonder de benodigde machtigingen.
+   * _GitHub-probleem_: <https://github.com/magento/magento2/issues/38283>
    * _GitHub codebijdrage_: <https://github.com/magento/magento2/pull/38279>
 * _AC-11427_: [ geef ] Inconsistente etiketten van de Uitgave voor attributen in marketing regels uit
    * _nota van de Reparatie_: Het systeem bevolkt nu correct de etiketten voor categorie en attributenopties in de regel van de kartprijs
@@ -211,11 +211,11 @@ Eerder waren de producten die als gastgebruiker aan de vergelijkingslijst werden
    * _GitHub codebijdrage_: <https://github.com/magento/magento2/commit/39d54c2d>
 * _ACP2E-2957_: De galerie in PageBuilder toont oude beeldduimnagel in plaats van onlangs geupload beeld
    * _nota van de Reparatie_: Regenereer beeldvoorproeven voor beelden die met de zelfde naam door media galerij in de inhoud van de paginabouwer worden geschrapt en opnieuw worden geupload.
-   * _GitHub codebijdrage_: <https://github.com/magento/magento2-page-builder/commit/60140cd2>, <https://github.com/magento/magento2/commit/001e5188>
-* _ACP2E-2978_: Het bewaren van product door admin gebruiker met verschillende rolwerkingsgebied beschrijft/schrapt bestaande Verwante productinformatie in het product
-   * _nota van de Reparatie_: Eerder, vóór de moeilijke situatie, werden de verwante producten teruggesteld en leeg geworden wanneer de secundaire admin gebruiker op sparen knoop klikte zonder in verwant product te veranderen. Na deze correctie klikt de secundaire gebruiker op de knop Opslaan en wordt het product niet opnieuw ingesteld en opgeslagen.
-   * _GitHub codebijdrage_: <https://github.com/magento/magento2/commit/3056e9cb>
-* _ACP2E-3033_: Onbekwaam om meer dan 200 orden uit te voeren
+   * _Bijdrage GitHub-code_: <https://github.com/magento/magento2-page-builder/commit/60140cd2>, <https://github.com/magento/magento2/commit/001e5188>
+* _ACP2E-2978_: Product opslaan door een admin-gebruiker met een ander rolbereik overschrijft/verwijdert bestaande gerelateerde productinformatie in het product
+   * _Opmerking over_ de oplossing: Eerder, vóór de oplossing, werden de gerelateerde producten gereset en werden ze leeg wanneer de secundaire beheerder op de knop Opslaan klikte zonder het gerelateerde product te wijzigen. Na deze oplossing klikt de secundaire beheerder op de knop Opslaan en wordt het product niet gereset en wordt het opgeslagen
+   * _Bijdrage GitHub-code_: <https://github.com/magento/magento2/commit/3056e9cb>
+* _ACP2E-3033_: Kan niet meer dan 200 bestellingen exporteren
    * _nota van de Reparatie_: De servergrenzen voor de verzoekgrootte van eerder voorgelegde geselecteerde IDs zijn genegeerd door het verzoek van HTTP van GET in POST te veranderen om de kwestie te bevestigen. Eerder werd het probleem aangetroffen vanwege serverbeperkingen voor de grootte van GET-verzoeken.
    * _GitHub codebijdrage_: <https://github.com/magento/magento2/commit/93d50f8d>
 * _ACP2E-3037_: Het bericht van de de paginasalidering van de uitcheckpagina onjuist.
@@ -246,8 +246,8 @@ We kunnen nu aangepaste orderstatussen bijwerken, terwijl eerder de status allee
    * _GitHub kwestie_: <https://github.com/magento/magento2/issues/37663>
    * _GitHub codebijdrage_: <https://github.com/magento/magento2/commit/3f12d152>
 * _ACP2E-3392_: Gebroken bevestiging voor &quot;Maximale Aantal Toegestaan in het Schepen Kar&quot;
-   * _nota van de Reparatie_: Eerder, wanneer wij `Maximum Qty Allowed in Shopping Cart` leeg zetten, veroorzaakte het geen uitzondering, hoewel een lege waarde hier niet wordt goedgekeurd. Nadat deze correctie is toegepast, genereert het plaatsen van een lege tekenreeks uitzonderingen en wordt het opslaan van het product niet meer toegestaan.
-   * _GitHub codebijdrage_: <https://github.com/magento/magento2/commit/d50f6b5d>
+   * _Fix-opmerking_: Eerder, toen we leeg zetten `Maximum Qty Allowed in Shopping Cart` , werd er geen uitzondering gegenereerd, hoewel een lege waarde hier niet wordt geaccepteerd. Nadat deze oplossing is toegepast, zal het plaatsen van een lege snaar uitzonderingen genereren en zal het niet mogelijk zijn om het product op te slaan.
+   * _Bijdrage GitHub-code_: <https://github.com/magento/magento2/commit/d50f6b5d>
 * _ACP2E-3408_: [ Uitgave UI van de Voorproef van de Bouwer van de Pagebuilder ] De knopen in de kolom van de Bouwer van de Pagina worden niet correct opgesteld
    * _nota van de Reparatie_: De knopen in de kolommen van de Bouwer van de Pagina worden nu correct gericht. Eerder waren ze verkeerd uitgelijnd in de kolommen van de Page Builder.
    * _GitHub codebijdrage_: <https://github.com/magento/magento2-page-builder/commit/1a52ef4c>
@@ -257,15 +257,15 @@ We kunnen nu aangepaste orderstatussen bijwerken, terwijl eerder de status allee
 * _ACP2E-3457_: De Fout van TinyMCE JS in console na Js minification laat met productiemodus toe
    * _nota van de Reparatie_: Eerder, toelatend JavaScript minificatie op productiemodus binnen het admin paneel veroorzaakte de fouten van JavaScript met betrekking tot TinyMCE 6 om in browser console te verschijnen, die de functionaliteit en gebruikerservaring beïnvloedt. Dit probleem is nu opgelost en zorgt ervoor dat TinyMCE 6 probleemloos werkt zonder fouten te genereren, zelfs als JS-minificatie is ingeschakeld.
    * _GitHub codebijdrage_: <https://github.com/magento/magento2/commit/56463d5e>
-* _ACP2E-3459_: Verzoek om extra veranderingen om ACS2E-3375 moeilijke situatie volledig te voltooien
-   * _Bevestig nota_: &quot;-
-   * _GitHub codebijdrage_: <https://github.com/magento/magento2/commit/d50f6b5d>
-* _ACP2E-3503_: Automatisch toelatend van nieuwe ACL toestemmingen
-   * _de nota van de Reparatie_: De nieuwe toestemmingen die aan douanemodules worden toegevoegd zullen automatisch geen toegang tot alle bestaande gebruikersrollen verlenen tenzij uitdrukkelijk gevormd.
-   * _GitHub codebijdrage_: <https://github.com/magento/magento2/commit/3f12d152>
-* _ACP2E-3509_: Het Rapport van de Gebruiker van het Logboek van Acties Admin toont geen details voor adminhtml_user_delete
-   * _nota van de Reparatie_: Adminhtml_user_delete registreert nu correct belangrijke details. Eerder zijn geen logbestanden gegenereerd voor verwijderingen door gebruikers.
-   * _GitHub codebijdrage_: <https://github.com/magento/magento2/commit/4de008a9>
+* _ACP2E-3459_: Verzoek om aanvullende wijzigingen om de ACP2E-3375-fix volledig te voltooien
+   * _Opmerking_ repareren: &#39;-
+   * _Bijdrage GitHub-code_: <https://github.com/magento/magento2/commit/d50f6b5d>
+* _ACP2E-3503_: Automatisch inschakelen van nieuwe ACL-machtigingen
+   * _Fix-opmerking_: Nieuwe machtigingen die aan aangepaste modules worden toegevoegd, verlenen niet langer automatisch toegang tot alle bestaande gebruikersrollen, tenzij ze expliciet zijn geconfigureerd.
+   * _Bijdrage GitHub-code_: <https://github.com/magento/magento2/commit/3f12d152>
+* _ACP2E-3509_: Logboek met beheerdersacties Gebruikersrapport bevat geen details voor adminhtml_user_delete
+   * _Fix-opmerking_: de adminhtml_user_delete registreert nu correct belangrijke details. Voorheen werden er geen logboeken gegenereerd voor het verwijderen van gebruikers.
+   * _Bijdrage GitHub-code_: <https://github.com/magento/magento2/commit/4de008a9>
 * _ACP2E-3536_: De Regel van de wagen met het verschepen voorwaarde die niet van toepassing is wanneer het plaatsen van orde van admin
    * _nota van de Reparatie_: Eerder, als de regel van de kartprijs een het verschepen methodekorting met de coupon heeft, kan het niet door Admin UI worden toegepast. Nadat deze correctie is toegepast, wordt de korting op de winkelprijregel met een coupon voor een specifieke verzendmethode toegepast vanuit de interface van Admin.
    * _GitHub codebijdrage_: <https://github.com/magento/magento2/commit/a52ff98f>, <https://github.com/magento/inventory/commit/11ce816b>
@@ -277,9 +277,9 @@ We kunnen nu aangepaste orderstatussen bijwerken, terwijl eerder de status allee
 
 * _AC-13628_: B2B Login als kopbal van de Klant heeft nog het brandmerken van Magento
    * _nota van de Reparatie_: Eerder toont de storefront kopbal &quot;u nu als &lt;customer name> op &lt;store name>&quot;met branding van Magento wordt verbonden. Deze is nu gefixeerd en de header wordt weergegeven met ADOBE-branding.
-   * _GitHub codebijdrage_: <https://github.com/magento/magento2/commit/96dec499>
+   * _Bijdrage GitHub-code_: <https://github.com/magento/magento2/commit/96dec499>
 
-### Beheerdersinterface, catalogus
+### Admin UI, Catalogus
 
 * _ACP2E-2708_: Kan posities voor de categorieproducten in de toegestane website als beperkte admin gebruiker niet veranderen
    * _nota van de Reparatie_: sta voor een beperkte admin gebruiker toe om producten onder een categorie toe te voegen en te sorteren bevat onder de wortelcategorie die onder beperkte website wordt toegewezen.
@@ -288,23 +288,23 @@ We kunnen nu aangepaste orderstatussen bijwerken, terwijl eerder de status allee
 
 * _AC-13520_: De Vergunning van de transactie niet die in het Lusje van de Transactie na de Slimme Orde van de Knoop PayPal wordt getoond
    * _nota van de Reparatie_: Het systeem toont nu correct de transactievergunning in het lusje van de Transactie nadat een orde gebruikend de Slimme Knoop van PayPal wordt geplaatst. Eerder werd de transactie voor autorisatie niet weergegeven op het tabblad Transactie nadat werd geklikt op de knop &quot;Autoriseren&quot; en werd geen nieuwe transactie van het type &quot;Autorisatie&quot; gemaakt.
-   * _GitHub codebijdrage_: <https://github.com/magento/magento2/commit/6cfb9b6b>
+   * _Bijdrage GitHub-code_: <https://github.com/magento/magento2/commit/6cfb9b6b>
 
 ### Beheerdersinterface, prestaties
 
-* _ACP2E-3169_: Na update aan 2.4.5-p8 komen 500 fouten voor wanneer het creëren van orde van admin
-   * _nota van de Reparatie_: Eerder, toen het toelaten van de minificatie van HTML, kon een orde van admin niet worden geplaatst. Nu HTML is ingeschakeld, kan de bestelling van de beheerder met succes worden geplaatst.
-   * _GitHub codebijdrage_: <https://github.com/magento/magento2/commit/b21e5d91>
+* _ACP2E-3169_: Na de update naar 2.4.5-p8 treden 500 fouten op bij het maken van een bestelling van de beheerder
+   * _Fix-opmerking_: Voorheen kon bij het inschakelen van HTML-minificatie geen bestelling van de beheerder worden geplaatst. Nu, met HTML-minificatie ingeschakeld, kan de bestelling van de beheerder met succes worden geplaatst.
+   * _Bijdrage GitHub-code_: <https://github.com/magento/magento2/commit/b21e5d91>
 
-### Admin-gebruikersinterface, verzenden
+### Admin UI, Verzending
 
-* _ACP2E-2519_: De telling van de couponcode werkt niet in bij   De kolom &quot;Gebruikte tijd&quot; in het tabblad Codes voor coupons beheren als een bestelling wordt geplaatst met meerdere verzendingen.
-   * _nota van de Reparatie_: Eerder, toen een orde met multi-verschepen werd geplaatst, werkte de telling van de waardeboncode niet in de &quot;Gebruikte Tijd&quot;kolom op het Manage lusje van de Codes van de Coupon bij. Nu wordt het juiste aantal weergegeven in zowel de &quot;Gebruikte tijd&quot; die de gewenste waarden weerspiegelt bij verzending via meerdere kanalen.
+* _ACP2E-2519_: Het aantal couponcodes wordt niet bijgewerkt in de kolom &quot;Gebruikte tijd&quot; op het tabblad Couponcodes beheren als een bestelling is geplaatst met multi-shipping.
+   * _Vaste opmerking_: Eerder, wanneer een bestelling werd geplaatst met multi-verzending, werd het aantal couponcodes niet bijgewerkt in de kolom &quot;Gebruikte tijd&quot; op het tabblad Couponcodes beheren. Nu wordt de juiste telling weergegeven in zowel de &quot;Gebruikte tijd&quot; die de gewenste waarden weergeeft bij multi shipping.
    * _GitHub codebijdrage_: <https://github.com/magento/magento2/commit/4745100c>
 
 ### Beheerdersinterface, Staging en Voorvertoning
 
-* _ACP2E-3424_: [ Wolk ] het Verwijderen van malplaatje met ontbrekende beelden veroorzaakt pub/media om worden geschrapt
+* _ACP2E-3424_: [Sjabloon voor het verwijderen van wolken] met ontbrekende afbeeldingen zorgt ervoor dat pub/media worden verwijderd
    * _nota van de Reparatie_: Eerder aan deze moeilijke situatie, als de naam van het voorproefbeeld voor een WebBuilder malplaatje mist, werd pub/media omslag geschrapt. Na de correctie wordt alleen de sjabloon verwijderd en de voorvertoning indien gevonden.
    * _GitHub codebijdrage_: <https://github.com/magento/magento2-page-builder/commit/0986853b>
 
@@ -318,8 +318,8 @@ We kunnen nu aangepaste orderstatussen bijwerken, terwijl eerder de status allee
    * _nota van de Reparatie_: Het systeem steunt nu de generatie van de Geavanceerde Gegevensdossiers van de Rapportering voor extra grote datasets door rapporten in partijen van 10.000 te laden en te schrijven. Eerder, kon de Geavanceerde module van de Rapportering gegevensdossiers voor extra grote datasets niet produceren, veroorzakend &quot;MySQL server is weggegaan&quot;fouten tijdens de uitvoering van de analytics_collect_data bouwbaan.
    * _GitHub codebijdrage_: <https://github.com/magento/magento2/commit/a12063bd>
 * _ACP2E-3080_: Admin bestelde de kwestie van het de datumbereik van het Rapport van Producten.
-   * _nota van de Reparatie_: De gebruiker zal om het even welke datum van het bevolen productrapport kunnen selecteren. Eerder, na een lijst verfrist zich, zal het selecteren van &quot;VAN&quot;datum &quot;aan&quot;datum terugstellen.
-   * _GitHub codebijdrage_: <https://github.com/magento/magento2/commit/6f4805f8>
+   * _nota van de Reparatie_: De gebruiker zal om het even welke datum van het bevolen productrapport kunnen selecteren. Voorheen werd de datum na het vernieuwen van de tabel door &#39;VAN&#39;-datum te selecteren, de &#39;NAAR&#39;-datum gereset.
+   * _Bijdrage GitHub-code_: <https://github.com/magento/magento2/commit/6f4805f8>
 * _ACP2E-3096_: Onjuiste curl kopballen die `newrelic:create:deploy-marker` maken werken niet
    * _nota van de Reparatie_: Het systeem formatteert nu correct curl kopballen, toestaand het `newrelic:create:deploy-marker` bevel om een plaatsingsteller in New Relic met succes tot stand te brengen. Eerder, verhinderden de onjuiste curl kopballen de verwezenlijking van een plaatsingsteller in New Relic.
    * _GitHub kwestie_: <https://github.com/magento/magento2/issues/37641>
@@ -333,18 +333,18 @@ We kunnen nu aangepaste orderstatussen bijwerken, terwijl eerder de status allee
    * _nota van de Reparatie_: Eerder de bestsellers geaggregeerde dagelijks rapport zouden veel tijd vergen om voor groot volume van geplaatste orden te produceren. Nu wordt het verslag tijdig opgesteld.
    * _GitHub codebijdrage_: <https://github.com/magento/magento2/commit/7377de59>
 * _ACP2E-3276_: De rapporten van de orde die het verkeerde muntsymbool tonen
-   * _nota van de Reparatie_: Het muntsymbool voor ordebedragen in het Rapport van de Orde werd verkeerd genomen van munt/opties/basis. Het is nu gecorrigeerd om valuta/opties/gebrek voor nauwkeurige rapportering te gebruiken.
-   * _GitHub codebijdrage_: <https://github.com/magento/magento2/commit/fd5cf3af>
+   * _Vaste opmerking_: Het valutasymbool voor orderbedragen in het orderrapport is ten onrechte overgenomen uit valuta/opties/basis. Het is nu gecorrigeerd om valuta/opties/standaard te gebruiken voor nauwkeurige rapportage.
+   * _Bijdrage GitHub-code_: <https://github.com/magento/magento2/commit/fd5cf3af>
 * _ACP2E-3302_: [ de Onjuiste Berekeningen van de Wolk ] in het Rapport van het Gebruik van de Coupon
    * _Bevestiging nota_: Het verkooptotaal in het netwerk van het couponrapport wordt nu nauwkeurig berekend door zowel het &quot;Bedrag van de Belastingcompensatie van de Korting&quot;als het &quot;Scheepskortingsbedrag van de Belastingcompensatie van de Schrapping te omvatten.&quot; Voorheen ontbraken deze bedragen in de berekening, wat leidde tot verschillen tussen het totaal van de verkopen en de gegevens van de verkooporder.
    * _GitHub codebijdrage_: <https://github.com/magento/magento2/commit/d75cff27>
 * _ACP2E-3339_: De kwesties met gedeelde &quot;&lt;project_id>/var/tmp&quot;
-   * _nota van de Reparatie_: De tijdelijke dossiers van DataExport van de Analyse zullen de folder van sys tmp gebruiken, die geschikter voor frequente toegang en veranderingen is. Om botsingen te vermijden in het geval dat de veelvoudige instanties op de zelfde server lopen, werd de weg tmp bijgewerkt om unieke identiteitskaart van een instantie te gebruiken
-   * _GitHub codebijdrage_: <https://github.com/magento/magento2/commit/a4cf5e62>
+   * _nota van de Reparatie_: De tijdelijke dossiers van DataExport van de Analyse zullen de folder van sys tmp gebruiken, die geschikter voor frequente toegang en veranderingen is. Om botsingen te voorkomen in het geval dat meerdere exemplaren op dezelfde server worden uitgevoerd, is het tmp-pad bijgewerkt om de unieke id van een exemplaar te gebruiken
+   * _Bijdrage GitHub-code_: <https://github.com/magento/magento2/commit/a4cf5e62>
 
-### Analyse/rapportage, B2B
+### Analytics / Rapportage, B2B
 
-* _ACP2E-2300_: B2B - sitemap omvat producten/categorieën niet die aan Gedeelde Catalogus worden toegewezen
+* _ACP2E-2300_: B2B - sitemap bevat producten/categorieën die niet zijn toegewezen aan Shared Catalog
    * _nota van de Reparatie_: Beperk de sitemap geproduceerde categorieën en producten tot de categorieën en het product die slechts aan de openbare gedeelde catalogus en/of de de toestemmingsopstelling van de cataloguscategorie worden toegewezen.
    * _GitHub codebijdrage_: <https://github.com/magento/magento2/commit/ea79f7dd>
 
@@ -352,7 +352,7 @@ We kunnen nu aangepaste orderstatussen bijwerken, terwijl eerder de status allee
 
 * _ACP2E-3067_: Magento gooit de meeste New Relic cron transacties weg #34108
    * _nota van de Reparatie_: AC rapporteert correct gezamenlijke baan verwante transacties aan NewRelic. Voorheen zouden sommige aan een uitsnijdtaak gerelateerde transacties als &quot;OtherTransaction/Action/unknown&quot; in Northern Rock worden weergegeven
-   * _GitHub codebijdrage_: <https://github.com/magento/magento2/commit/35b1b1da>
+   * _Bijdrage GitHub-code_: <https://github.com/magento/magento2/commit/35b1b1da>
 * _ACP2E-3187_: Metrisch in NR zou voor achtergrondtransacties misleidend kunnen zijn - Follow-up van ACP2E-3067
    * _Nota van de Moeilijke situatie_: De transacties van de achtergrond (kruin) zullen New Relic gebruiken toepassingsnaam die in de config montages wordt bepaald
    * _GitHub codebijdrage_: <https://github.com/magento/magento2/commit/ec7e32a9>
@@ -509,11 +509,11 @@ Eerder toegevoegd product aan winkelwagentje resulteerde in Fout &#39;geen derge
    * _nota van de Reparatie_: Het systeem bewaart nu een nieuw klantenadres slechts eenmaal als de orde om niet kon worden gecreeerd, verhinderend de verwezenlijking van veelvoudige identieke adressen in het geval van de fouten van de orderplaatsing. Eerder, zou het systeem een nieuw adres bewaren telkens als een bestelling plaatsingspoging werd gemaakt, ongeacht of de orde met succes werd gecreeerd of niet.
    * _GitHub codebijdrage_: <https://github.com/magento/magento2/commit/001e5188>, <https://github.com/magento/inventory/commit/2ebcef39>
 * _ACP2E-3004_: Het opnieuw ordenen van klantenorde via de vorm van de gastorde resulteert een leeg karretje
-   * _nota van de Reparatie_: Eerder, toen het plaatsen van een herschikking door de Orden en de pagina van Keert terug, werd de klant opnieuw gericht aan de login pagina. Nadat deze correctie is toegepast, wordt de geregistreerde klant correct omgeleid naar de pagina Winkelwagentje weergeven wanneer een nieuwe order wordt geplaatst. De stroom werkt het zelfde als gastklanten.
-   * _GitHub codebijdrage_: <https://github.com/magento/magento2/commit/6a185204>
-* _ACP2E-3025_: De Gebruiker van Admin met de beperkte Middelen van de Rol kan het Schepen van Kasten niet bekijken
-   * _nota van de Reparatie_: Eerder, beperkte admin kon niet het verlaten het winkelwagentje van het admin paneel voor een bijbehorende website zien. Nadat deze correctie is toegepast, kan de beperkte beheerder het verlaten winkelwagentje van het admin paneel zien.
-   * _GitHub codebijdrage_: <https://github.com/magento/magento2/commit/d1f7dc95>
+   * _nota van de Reparatie_: Eerder, toen het plaatsen van een herschikking door de Orden en de pagina van Keert terug, werd de klant opnieuw gericht aan de login pagina. Nadat deze correctie is toegepast, wordt de geregistreerde klant correct omgeleid naar de pagina Winkelwagentje weergeven wanneer een nieuwe order wordt geplaatst. De flow werkt hetzelfde als bij gastklanten.
+   * _Bijdrage GitHub-code_: <https://github.com/magento/magento2/commit/6a185204>
+* _ACP2E-3025_: Beheerder Gebruiker met beperkte rol Resources kan winkelwagentjes niet weergeven
+   * _Fix-opmerking_: Voorheen kon de beperkte beheerder het verlaten winkelwagentje niet zien in het beheerderspaneel voor een bijbehorende website. Nadat deze oplossing is toegepast, kan de beperkte beheerder het verlaten winkelwagentje zien in het beheerderspaneel.
+   * _Bijdrage GitHub-code_: <https://github.com/magento/magento2/commit/d1f7dc95>
 * _ACP2E-3176_: [ de Snelle orde van de Wolk ] grote hoeveelheid SKU prestaties
    * _nota van de Reparatie_: De prestaties van de kassa zijn verbeterd wanneer de attributen die in de voorwaarden van de kartprijs worden gebruikt niet voor alle producten aanwezig zijn en wanneer de eigenschap van de KAART (Minimale geadverteerde prijs) wordt toegelaten.
    * _GitHub codebijdrage_: <https://github.com/magento/magento2/commit/66dea0de>
@@ -524,7 +524,7 @@ Eerder toegevoegd product aan winkelwagentje resulteerde in Fout &#39;geen derge
    * _nota van de Reparatie_: De bevestiging van de controleorde e-mail, die eerder werd verzonden toen een e-mailachtig patroon in de Voornaam en de gebieden van de Achternaam werd ingegaan, wordt niet meer verzonden.
    * _GitHub codebijdrage_: <https://github.com/magento/magento2/commit/5184c067>
 * _ACP2E-3402_: De vorm van het het verschepende adres van de Afhandeling krijgt update met verkeerd adres
-   * _Bevestig nota_: ShippingAddressFromData wordt nu bewaard in de lokale opslag per website. Eerder kon een adres van de verkeerde website automatisch worden ingevuld in het verzendadresformulier tijdens het uitchecken als een winkelcode in de URL werd gebruikt en het uitchecken tijdens dezelfde gastsessie werd gestart van meerdere websites.
+   * _Bevestig nota_: ShippingAddressFromData wordt nu bewaard in de lokale opslag per website. Voorheen kon een adres van de verkeerde website tijdens het afrekenen automatisch worden ingevuld in het formulier voor het verzendadres als er een winkelcode werd gebruikt in de URL en het afrekenen werd gestart vanaf meerdere websites tijdens dezelfde gastsessie.
    * _GitHub codebijdrage_: <https://github.com/magento/magento2/commit/078c387e>
 * _ACP2E-3405_: [ CLOUD ] Controle behoudt niet het geselecteerde facturerings adres wanneer het Onderzoek van het Adres wordt toegelaten
    * _nota van de Reparatie_: De betalingspagina van de Betaling van de Betaling zal nu het geselecteerde het facturerings adres behouden wanneer het adresonderzoek wordt toegelaten. Eerder als &quot;Aantal Grens van de Adressen van de Klant&quot;aan 1 wordt gevormd, en de klant heeft meer dan één adres, zou het geselecteerde facturerings adres na het herladen van de pagina verdwijnen.
@@ -558,7 +558,7 @@ Eerder toegevoegd product aan winkelwagentje resulteerde in Fout &#39;geen derge
 
 * _ACP2E-3097_: Datepicker voor product met veelvoudige Aanpasbare Opties met datumgebieden die niet werken wanneer het plaatsen van orde van admin
    * _nota van de Reparatie_: Het systeem toont nu correct de datumkiezer voor alle datumgebieden wanneer het vormen van een product met veelvoudige klantgerichte datumopties in het proces van de admin ordeverwezenlijking. Eerder werd de datumkiezer alleen weergegeven voor het veld voor de eerste datum, zodat de overige velden geen datumkiezer hadden.
-   * _GitHub codebijdrage_: <https://github.com/magento/magento2/commit/b21e5d91>
+   * _Bijdrage GitHub-code_: <https://github.com/magento/magento2/commit/b21e5d91>
 
 ### Winkelwagentje en afhandeling, verzending
 
@@ -569,9 +569,9 @@ Eerder toegevoegd product aan winkelwagentje resulteerde in Fout &#39;geen derge
 
 ### Catalogus
 
-* _AC-10910_: De schoonmaakbeurt van cron_planningsgegevensbestandlijst schoont niet bestaande banen
-   * _nota van de Reparatie_: Het systeem ontruimt nu automatisch de cron_planning gegevensbestandlijst, verwijderend ingangen voor banen die niet meer in het systeem bestaan. Dit zorgt voor optimale prestaties door een minimaal aantal rijen in de tabel te handhaven. Eerder, werden de ingangen voor banen van inactieve of verwijderde modules niet schoongemaakt, die tot onnodige gegevensaccumulatie in de cron_planninglijst leidden.
-   * _GitHub kwestie_: <https://github.com/magento/magento2/issues/38217>
+* _AC-10910_: Bij het opschonen van cron_schedule databasetabel worden niet-bestaande taken niet opgeschoond
+   * _Fix-opmerking_: het systeem ruimt nu automatisch de cron_schedule-databasetabel op, waardoor items voor taken die niet meer in het systeem bestaan, worden verwijderd. Dit zorgt voor optimale prestaties door een minimaal aantal rijen in de tabel aan te houden. Voorheen werden vermeldingen voor taken van inactieve of verwijderde modules niet opgeschoond, wat leidde tot onnodige gegevensverzameling in de cron_schedule tabel.
+   * _GitHub-probleem_: <https://github.com/magento/magento2/issues/38217>
    * _GitHub codebijdrage_: <https://github.com/magento/magento2/pull/38693>
 * _AC-10953_: De Prijs van de rij wordt niet geschrapt van Configurable Product
    * _nota van de Reparatie_: Het systeem verwijdert nu correct de rijprijs van een product wanneer het van een eenvoudig product aan een configureerbaar product wordt omgezet, die nauwkeurige prijsvertoning op het front verzekeren. Eerder werd de laagprijs van een configureerbaar product niet verwijderd wanneer een product werd omgezet van een eenvoudig product in een configureerbaar product, wat leidde tot een verschil in de weergegeven prijs.
@@ -666,8 +666,8 @@ Eerder toegevoegd product aan winkelwagentje resulteerde in Fout &#39;geen derge
 * _ACP2E-2840_: Het is mogelijk om niet-unieke waarden via productinvoer te plaatsen
    * _nota van de Reparatie_: Het systeem dwingt nu correct de unieke waardebeperking voor unieke productattributen tijdens productinvoer af, verhinderend dubbele waarden voor dat dergelijke attribuut te hebben. Eerder was het mogelijk om niet-unieke waarden in te stellen voor productkenmerken die waren geconfigureerd om unieke waarden te hebben via het importeren van producten.
    * _GitHub kwestie_: <https://github.com/magento/magento2/issues/38445>
-   * _GitHub codebijdrage_: <https://github.com/magento/magento2/commit/7e0e5582>
-* _ACP2E-2843_: De producten op het voorste gebruiksopslag specifieke gegevens wanneer de Enige-Opslagwijze wordt toegelaten
+   * _Bijdrage GitHub-code_: <https://github.com/magento/magento2/commit/7e0e5582>
+* _ACP2E-2843_: Producten aan de front-end gebruiken om specifieke gegevens op te slaan wanneer de modus voor één winkel is ingeschakeld
    * _nota van de Reparatie_: Eerder, toen wij enige opslagwijze voor de standaard opslagmening toeliet, werden de veranderingen niet gemigreerd aan het website-vlakke werkingsgebied. Nadat deze correctie is toegepast, worden de weergavespecifieke standaardgegevens van de winkel gesynchroniseerd met gegevens op websiteniveau en worden de mogelijke conflicten voor producten en categorieën opgelost.
    * _GitHub codebijdrage_: <https://github.com/magento/magento2/commit/c8931218>
 * _ACP2E-2857_: Kan &quot;StandaardSoort door&quot;in een categorie plaatsen die rest API gebruiken niet
@@ -687,36 +687,36 @@ Eerder werden de records in de tabellen van de Bundle-productreeks niet verwijde
    * _GitHub kwestie_: <https://github.com/magento/magento2/issues/38506>
    * _GitHub codebijdrage_: <https://github.com/magento/magento2/commit/a4fbf702>
 * _ACP2E-2909_: dynamic-rows.js:658 Uncaught TypeError: dataRecord.slice while editing bundle products
-   * _nota van de Reparatie_: Er is geen fout javascript in browser console terwijl het schrappen van optie van bundelproduct.
+   * _Fix-opmerking_: er is geen javascript-fout in de browserconsole tijdens het verwijderen van de optie uit het bundelproduct.
    * _GitHub kwestie_: <https://github.com/magento/magento2/issues/38505>
    * _GitHub codebijdrage_: <https://github.com/magento/magento2/commit/93d50f8d>
 * _ACP2E-2950_: [ de verkeerde prijs van het Product van de Pakket van de Wolk ] in orde bevestiging
    * _nota van de Reparatie_: Het correcte bedrag wordt getoond voor bundelopties in orde op Storefront wanneer de munt buiten basale werd gebruikt.
    * _GitHub codebijdrage_: <https://github.com/magento/magento2/commit/a4fbf702>
-* _ACP2E-2956_: Video die van YouTube Bug toevoegt
+* _ACP2E-2956_: YouTube-video die bug toevoegt
    * _nota van de Reparatie_: De beelden en de video&#39;s van het product worden gevormd in globaal werkingsgebied. Aangezien u geen productvideo in één werkingsgebied en niet in een andere kunt hebben, is de belangrijkste het plaatsen van de sleutel van Youtube API aan globaal werkingsgebied geplaatst.
    * _GitHub codebijdrage_: <https://github.com/magento/magento2/commit/a4fbf702>
 * _ACP2E-2964_: [ de update van de Wolk ] URL slechts voor store_id=0
    * _nota van de Reparatie_: Het &quot;Weg URL&quot;wordt nu opgeslagen met correcte opslagidentiteitskaart Eerder was de opslag-id onjuist, waardoor er onjuiste URL-paden in de database achterbleven wanneer categorieën worden verplaatst.
-   * _GitHub codebijdrage_: <https://github.com/magento/magento2/commit/9af794a4>
-* _ACP2E-3009_: async.operations.all uitgevoerde en creeerde een fout.
+   * _Bijdrage GitHub-code_: <https://github.com/magento/magento2/commit/9af794a4>
+* _ACP2E-3009_: async.operations.all uitgevoerd en er is een fout gemaakt.
    * _nota van de Reparatie_: De onjuiste gegevens van de productverbinding in vraag REST API veroorzaken niet meer kritieke fouten.
    * _GitHub codebijdrage_: <https://github.com/magento/magento2/commit/a4fbf702>
 * _ACP2E-3029_: [ de Mobiele Uitgave van de Wolk ] kan slechts niet op het beeld pinch PDP
    * _nota van de Reparatie_: Het systeem steunt nu knijpbeweging-aan-gezoemfunctionaliteit op de beelden van de productdetailpagina in mobiele mening op Chrome, die de mobiele gebruikerservaring verbeteren. Eerder werd niet op de afbeelding ingezoomd door te dubbeltikken op de afbeelding in de mobiele weergave op Chrome.
    * _GitHub codebijdrage_: <https://github.com/magento/magento2/commit/148c3ead>
-* _ACP2E-3058_: Ontbrekend etiket in LayeredNavigation met optienaam 0
-   * _nota van de Reparatie_: De kwestie is opgelost door een lege waardecontrole voor attributenwaarde 0 over te slaan. Eerder werd het als leeg beschouwd en veroorzaakte het probleem.
-   * _GitHub codebijdrage_: <https://github.com/magento/magento2/commit/3a7c4d17>
-* _ACP2E-3069_: De klanten zien prijzen van andere klantengroepen
-   * _Nota van de Reparatie_: Vaste kwestie waar de klantengroep verwante informatie in een verkeerd segment wegens de oude waarde van X-Magento-Vary in verzoek werd bewaard
-   * _GitHub codebijdrage_: <https://github.com/magento/magento2/commit/d1f7dc95>
-* _ACP2E-3076_: Fout wanneer het schrappen van bundelopties
+* _ACP2E-3058_: Ontbrekend label in LayeredNavigation met optienaam 0
+   * _Fix-opmerking_: het probleem is opgelost door een lege waardecontrole voor kenmerkwaarde 0 over te slaan. Voorheen werd het als leeg beschouwd en veroorzaakte het het probleem.
+   * _Bijdrage GitHub-code_: <https://github.com/magento/magento2/commit/3a7c4d17>
+* _ACP2E-3069_: Klanten zien prijzen van andere klantgroepen
+   * _Probleemoplossing_ waarbij klantgroepgerelateerde informatie werd opgeslagen in een verkeerd segment vanwege de oude waarde van de X-Magento-Vary in aanvraag. Dit probleem is nu opgelost.
+   * _Bijdrage GitHub-code_: <https://github.com/magento/magento2/commit/d1f7dc95>
+* _ACP2E-3076_: Fout bij het verwijderen van bundelopties
    * _nota van de Reparatie_: Het systeem schrapt nu correct bundelopties zonder een fout teweeg te brengen of de pagina te veroorzaken om niet ontvankelijk te worden. Als u voorheen bundelopties verwijdert, treedt de fout &quot;Pagina reageert niet&quot; op en wordt het product niet opgeslagen.
    * _GitHub codebijdrage_: <https://github.com/magento/magento2/commit/6a185204>
 * _ACP2E-3094_: De Toestemmingen van de categorie uit de kwestie van geheugenbrowser
-   * _nota van de Reparatie_: De Toestemmingen UI van de categorie werd opnieuw ontworpen om het teruggeven van een grote hoeveelheid toestemmingen toe te staan die uit doos UI component en paginering gebruiken. Eerder categorietoestemmingen zouden ervoor zorgen dat de browser vastloopt met een grote hoeveelheid machtigingen die aan de categorie zijn toegewezen.
-* _ACP2E-3100_: [ het Dossier van het Beeld van de Wolk ] bestaat niet in het Logboek van de Fout van New Relic
+   * _Fix-opmerking_: de gebruikersinterface van categoriemachtigingen is opnieuw ontworpen om het renderen van een groot aantal machtigingen mogelijk te maken met behulp van een kant-en-klare UI-component en paginering. Voorheen zorgden categoriemachtigingen ervoor dat de browser crashte met een groot aantal machtigingen die aan de categorie waren toegewezen.
+* _ACP2E-3100_: [Cloud] Image File bestaat niet in New Relic Error Log
    * _nota van de Reparatie_: Het systeem synchroniseert nu douaneplaceholder beelden aan lokale opslag, die ervoor zorgen dat zij correct teruggeven wanneer het gebruiken van verre opslag zoals AWS S3. Eerder konden aangepaste plaatsaanduidingsafbeeldingen niet worden gerenderd bij gebruik van externe opslag, wat resulteerde in een verbroken weergave van de afbeelding en foutlogboeken.
    * _GitHub codebijdrage_: <https://github.com/magento/magento2/commit/d1f7dc95>
 * _ACP2E-3103_: Het nieuwe voer van Producten RSS wordt niet bijgewerkt met nieuwe producten toe te schrijven aan geheim voorgeheugen
@@ -736,21 +736,21 @@ Eerder werden de records in de tabellen van de Bundle-productreeks niet verwijde
    * _nota van de Reparatie_: Nu, zijn geen punten zichtbaar in de wenslijst als een product niet beschikbaar in de gedeelde catalogus is. Eerder werd op de pagina Vraaglijsten een telling van 1 item onjuist weergegeven, zelfs als er geen items in de verlanglijst stonden.
    * _GitHub codebijdrage_: <https://github.com/magento/magento2/commit/5184c067>
 * _ACP2E-3286_: De verwante producten selecteren allen/Deselecteren Alle Uitgave
-   * _nota van de Reparatie_: Eerder, &quot;Uitgezocht allen&quot;/ &quot;Unselect allen&quot;knopen voor verwante producten niet correct werkte als een product manueel werd geselecteerd. Na de correctie werken deze knoppen nu consistent, zelfs na handmatige selectie, zodat alle producten correct zijn geselecteerd of uitgeschakeld.
-   * _GitHub codebijdrage_: <https://github.com/magento/magento2/commit/fd5cf3af>
+   * _Fix-opmerking_: Voorheen werkten de knoppen &quot;Alles selecteren&quot;/&quot;Alles deselecteren&quot; voor gerelateerde producten niet correct als een product handmatig was geselecteerd. Na de correctie werken deze knoppen nu consistent, zelfs na handmatige selectie, zodat alle producten correct zijn geselecteerd of uitgeschakeld.
+   * _Bijdrage GitHub-code_: <https://github.com/magento/magento2/commit/fd5cf3af>
 * _ACP2E-3336_: [ de waakzame e-mailvertaling van de Beeld van de Wolk ] aan de verkeerde taal
    * _Nota van de Oplossing_: Wanneer het verzenden van de Alarm van de Beeld/van de Prijs voor een website met veelvoudige opslagmeningen gebruikend verschillende talen, zal de taal voor de archiefmening waar het alarm werd gecreeerd op e-mail worden gebruikt.
    * _GitHub codebijdrage_: <https://github.com/magento/magento2/commit/a4cf5e62>, <https://github.com/magento/inventory/commit/9f3e63d1>
 * _ACP2E-3350_: De gehandicapte Categorieën hebben niet meer hun namen grijs uit in de categorieboom
-   * _nota van de Reparatie_: Eerder, werden de gehandicapte categorieën niet grijs uit in de categorieboom. Nu worden ze weergegeven met een grijs-uiteffect.
+   * _nota van de Reparatie_: Eerder, werden de gehandicapte categorieën niet grijs uit in de categorieboom. Nu worden ze weergegeven met een grijs-outeffect.
    * _GitHub codebijdrage_: <https://github.com/magento/magento2/commit/d75cff27>
 * _ACP2E-3410_: De configureerbare product geeft vormlading oorzaken onderbreking en geheugenuitputting uit
    * _nota van de Reparatie_: Voorafgaand aan de moeilijke configureerbare productvariaties werden geconstrueerd gebaseerd op alle mogelijke combinaties van attributenopties. In gevallen waarin kenmerken veel opties hadden, resulteerde dit in een langdurige en hulpbronnenintensieve bewerking. Configureerbare productvariaties worden nu samengesteld op basis van bestaande onderliggende productkenmerken. Dit leidt tot veel minder berekeningen, dus tot een beter gebruik van middelen.
-   * _GitHub codebijdrage_: <https://github.com/magento/magento2/commit/078c387e>
-* _ACP2E-3454_: Fotorama laadt correct geen video wanneer het gebruiken van Monsters en de optie wordt pre-geselecteerd via URL
-   * _nota van de Reparatie_: De video&#39;s van het product zullen nu behoorlijk op configureerbare pagina van productdetails teruggeven, als URL geselecteerde opties bevat.
-   * _GitHub codebijdrage_: <https://github.com/magento/magento2/commit/078c387e>
-* _ACP2E-3461_: De Breedte van Carousel PageBuilder toont producten die voorwaarden niet aanpassen
+   * _Bijdrage GitHub-code_: <https://github.com/magento/magento2/commit/078c387e>
+* _ACP2E-3454_: Fotorama laadt video niet correct bij gebruik van stalen en de optie is vooraf geselecteerd via URL
+   * _Fix-opmerking_: Productvideo&#39;s worden nu correct weergegeven op de configureerbare productdetailpagina als de URL geselecteerde opties bevat.
+   * _Bijdrage GitHub-code_: <https://github.com/magento/magento2/commit/078c387e>
+* _ACP2E-3461_: PageBuilder Carousel Widget toont producten die niet aan de voorwaarden voldoen
    * _Nota van de Reparatie_: De lijst van het product die in widgets wordt gebruikt respecteert nu categorieconfiguratie
    * _GitHub codebijdrage_: <https://github.com/magento/magento2/commit/078c387e>
 * _ACP2E-3469_: De fout van de bevestiging teweeggebracht voor Alle Producten in Groep wanneer men ongeldige hoeveelheid heeft
@@ -786,7 +786,7 @@ Eerder werden de records in de tabellen van de Bundle-productreeks niet verwijde
 
 ### Catalogus, framework
 
-* _AC-9111_: De orde krijgt (Verzendingen|Creditmemos|Factuur)Inzameling - de Inzameling zou niet moeten worden geladen
+* _AC-9111_: Bestelling krijgen (Verzendingen|Creditmemo&#39;s |Factuur)Incasso - Incasso mag niet worden geladen
    * _nota van de Reparatie_: Het systeem zorgt nu ervoor dat de inzamelingen voor verzendingen en creditmemo&#39;s niet vooraf geladen wanneer teruggewonnen van een orde, die voor extra filters of orden toestaat om op deze inzamelingen worden toegepast. Eerder werden deze verzamelingen automatisch geladen, zodat er geen verdere wijzigingen konden worden aangebracht.
    * _GitHub kwestie_: <https://github.com/magento/magento2/issues/37561>
    * _GitHub codebijdrage_: <https://github.com/magento/magento2/pull/37562>
@@ -872,15 +872,15 @@ Eerder werden de records in de tabellen van de Bundle-productreeks niet verwijde
 * _AC-12283_: &quot;De code van het gebied niet plaatste&quot;na update aan 2.4.5-p8
    * _nota van de Reparatie_: Het systeem voltooit nu met succes het statische proces van de inhoudsplaatsing wanneer de module Magento_CSP wordt toegelaten en &quot;dev/js/translate_strategy&quot;wordt geplaatst aan &quot;ingebed&quot;, zonder de &quot;code van het Gebied te veroorzaken niet plaatste&quot;fout. Eerder, onder deze voorwaarden, zou het statische proces van de inhoudsplaatsing met een &quot;niet vastgestelde geen&quot;fout van de Code van het Gebied ontbreken.
    * _GitHub kwestie_: <https://github.com/magento/magento2/issues/38845>
-   * _GitHub codebijdrage_: <https://github.com/magento/magento2/pull/38922>
-* _AC-12692_: De categorieboom van widget wordt niet correct teruggegeven
-   * _GitHub kwestie_: <https://github.com/magento/magento2/issues/39008>
-   * _GitHub codebijdrage_: <https://github.com/magento/magento2/commit/58e40ceb>
-* _AC-13054_: Onbekwaam om &quot;Gebruikend Standaardwaarde&quot;bericht te zien wanneer het veranderen van het thema in de pagina van de ontwerpconfiguratie
+   * _Bijdrage GitHub-code_: <https://github.com/magento/magento2/pull/38922>
+* _AC-12692_: Widget categoriestructuur wordt niet correct weergegeven
+   * _GitHub-probleem_: <https://github.com/magento/magento2/issues/39008>
+   * _Bijdrage GitHub-code_: <https://github.com/magento/magento2/commit/58e40ceb>
+* _AC-13054_: Kan het bericht &quot;Standaardwaarde gebruiken&quot; niet zien bij het wijzigen van het thema op de ontwerpconfiguratiepagina
    * _nota van de Reparatie_: Het systeem omvat nu een afzonderlijke kolom om het &quot;Gebruikende Standaard waarde&quot;bericht afhankelijk van het geselecteerde thema in de pagina van de ontwerpconfiguratie te tonen. Dit zorgt voor helderheid en zichtbaarheid van de status van de standaardwaarde. Eerder werd het bericht &#39;Standaardwaarde gebruiken&#39; niet weergegeven, wat leidde tot verwarring over de status van het geselecteerde thema.
    * _GitHub codebijdrage_: <https://github.com/magento/magento2/commit/47b448e2>
 * _wisselstroom-13569_: [ geef uit ] herstelt achterwaartse verenigbaarheid met stop TinyMCE opnieuw (na het..
-   * _nota van de Reparatie_: Het systeem herstelt nu achterwaartse verenigbaarheid met stop TinyMCE, toestaand functies die binnen de stop worden bepaald om worden geroepen wanneer het gebruiken van widget van een andere plaats. Als gevolg van een wijziging in de TinyMCE-versie gaven de plug-ins eerder de widgets niet als een object, wat resulteerde in een fout tijdens het aanroepen van bepaalde functies op de widgetinstantie.
+   * _nota van de Reparatie_: Het systeem herstelt nu achterwaartse verenigbaarheid met stop TinyMCE, toestaand functies die binnen de stop worden bepaald om worden geroepen wanneer het gebruiken van widget van een andere plaats. Eerder, als gevolg van een wijziging in de TinyMCE-versie, retourneerden de plug-ins de widgets niet als een object, wat resulteerde in een fout bij het aanroepen van bepaalde functies op de widget-instantie.
    * _GitHub kwestie_: <https://github.com/magento/magento2/issues/39262>
    * _GitHub codebijdrage_: <https://github.com/magento/magento2/pull/39258>
 * _AC-9638_: [ het dossier van de kwestie ] uploadt kwestie in de redacteur van WYSIWYG op productpagina
@@ -915,15 +915,15 @@ Eerder werden de records in de tabellen van de Bundle-productreeks niet verwijde
    * _GitHub codebijdrage_: <https://github.com/magento/magento2/commit/b21e5d91>, <https://github.com/magento/magento2-page-builder/commit/4ebe3f1d>
 * _ACP2E-3113_: De voorproef van het Staging van de inhoud op categoriepagina&#39;s toont product widgets niet
    * _nota van de Reparatie_: De kwestie is bevestigd door ervoor te zorgen dat de productingangen voor de extra categorie verbonden aan het blok van CMS correct in het gegevensbestand zijn geregistreerd. Eerder werd een lege resultatenset geretourneerd toen de pagina met voorvertoningen van rubrieken werd opgevraagd.
-* _ACP2E-3122_: [ CLOUD ] uploadt beeldknoop werkt niet
-   * _Bevestig nota_: Vóór de Upload knoop van het Beeld voor Banner en Schuif van PageBuilder niet zoals verwacht werkte, en nu wanneer het drukken van het opent de lokale dossiermanager om het gezochte beeld te selecteren om te uploaden.
-   * _GitHub codebijdrage_: <https://github.com/magento/magento2-page-builder/commit/476ef8ea>
-* _ACP2E-3127_: imagecreatetruecolor (): Argument #2 ($height) moet groter zijn dan 0. Kan specifieke afbeelding niet uploaden
-   * _nota van de Reparatie_: Los de kwestie op die fouten in admin veroorzaakt wanneer het uploaden van beelden met een hoogte van 0 via de media galerij, en succesvol de activa synchronisatie gebruikend het synchronisatiebevel. Eerder kan de afbeelding niet worden geüpload via de mediagalerie en de synchronisatieopdracht mislukt ook als een bepaalde afbeelding zich in de galerie bevindt.
-   * _GitHub codebijdrage_: <https://github.com/magento/magento2/commit/6f4805f8>
+* _ACP2E-3122_: [CLOUD] Afbeelding uploaden knop werkt niet
+   * _Fix-opmerking_: Voorheen werkte de knop Afbeelding uploaden voor banner en schuifregelaar van PageBuilder niet zoals verwacht, en als u er nu op drukt, wordt de lokale bestandsbeheerder geopend om de gewenste afbeelding te selecteren om te uploaden.
+   * _Bijdrage GitHub-code_: <https://github.com/magento/magento2-page-builder/commit/476ef8ea>
+* _ACP2E-3127_: imagecreatetruecolor(): Argument #2 ($height) moet groter zijn dan 0. Kan geen specifieke afbeelding uploaden
+   * _Fix-opmerking_: het probleem opgelost dat fouten veroorzaakte in de beheerder bij het uploaden van afbeeldingen met een hoogte van 0 via de mediagalerij en het succesvol synchroniseren van de items met behulp van de synchronisatieopdracht. Voorheen kon de afbeelding niet worden geüpload via de mediagalerij en de synchronisatieopdracht mislukt ook wanneer een specifieke afbeelding in de galerij staat.
+   * _Bijdrage GitHub-code_: <https://github.com/magento/magento2/commit/6f4805f8>
 * _ACP2E-3154_: Prototype.js Array.from in conflict met Google Maps API
-   * _nota van de Reparatie_: De Kaarten van Google geven nu behoorlijk in de redacteur PageBuilder terug. Een JavaScript-fout voorkomt eerder dat Google Maps correct wordt weergegeven.
-   * _GitHub codebijdrage_: <https://github.com/magento/magento2/commit/148c3ead>
+   * _Fix-opmerking_: Google Maps wordt nu correct weergegeven in de PageBuilder-editor. Voorheen zorgde een Javascript-fout ervoor dat Google Maps niet correct werd weergegeven.
+   * _Bijdrage GitHub-code_: <https://github.com/magento/magento2/commit/148c3ead>
 * _ACP2E-3275_: [ Wolk ] - de Schuif van CMS die de recentste veranderingen niet weerspiegelt
    * _nota van de Reparatie_: De kwestie is opgelost door de sliderlijst te verzekeren wordt verfrist terwijl sparen gebeurtenis op het uitgeeft diascherm wordt teweeggebracht. Eerder was het aanleiding tot het probleem.
    * _GitHub codebijdrage_: <https://github.com/magento/magento2-page-builder/commit/ae2cdeb0>
@@ -933,25 +933,25 @@ Eerder werden de records in de tabellen van de Bundle-productreeks niet verwijde
 * _ACP2E-3388_: [ de Dynamische blokken van de Wolk ] zullen niet behoorlijk functioneren
    * _Bevestig nota_: Logged-in klantensegmenten worden nu ontruimd na logout verhinderend de gastzitting eerder het programma geopende segmenten erven
 * _ACP2E-3428_: De mislukking van de malplaatjevoorproef van de Bouwer voor grote inhoud
-   * _nota van de Reparatie_: De grote inhoud leidde tot canvaselement dat de browser grenzen overdrijft, en het terugkeren van onjuiste waarde, die achterste code (kan niet behoorlijk het beeld decoderen) brak. Opgelost met het beperken van de canvasgrootte tot de limiet van de universele browser.
-   * _GitHub codebijdrage_: <https://github.com/magento/magento2-page-builder/commit/adfb1747>
-* _ACP2E-3430_: De recentste veiligheidsupdates met TinyMCE 7 ontbrekende doopvontgrootte
-   * _nota van de Reparatie_: De grootte van de doopvont en de selecteurs van de doopvontfamilie zijn nu beschikbaar in de redacteur van WYSIWYG. Voorafgaand aan deze moeilijke situatie, met TinyMCE 7 waren deze niet beschikbaar in de redacteursinterface.
-   * _GitHub codebijdrage_: <https://github.com/magento/magento2/commit/d50f6b5d>, <https://github.com/magento/magento2-page-builder/commit/2c2f7a0e>
-* _ACP2E-3483_: De grootte van de redacteursdoopvont TinyMCE 7 in admin in PT en niet PX gelieve te verduidelijken
-   * _nota van de Reparatie_: Voorafgaand aan de moeilijke situatie kon u doopvontgrootte in px in de gebieden van WYSIWYG niet specificeren. Nu kunt u de tekengrootte instellen in px in plaats van pt.
-   * _GitHub codebijdrage_: <https://github.com/magento/magento2/commit/3f12d152>, <https://github.com/magento/magento2-page-builder/commit/20aa5d7a>
-* _ACP2E-3490_: Het Type van de Inhoud van het product in de Bouwer van de Pagina wordt samengevouwen zonder Correcte Berichten
-   * _nota van de Reparatie_: Voorafgaand aan de moeilijke situatie werd voorproef HTML niet behoorlijk geproduceerd wanneer er geen producten in widget waren. De lege reactie wordt nu op de juiste wijze gegenereerd en de widget producten wordt in de voorvertoning op de juiste wijze weergegeven.
-   * _GitHub codebijdrage_: <https://github.com/magento/magento2/commit/3f12d152>, <https://github.com/magento/magento2-page-builder/commit/20aa5d7a>
-* _ACP2E-3534_: [ pagina bouwer ] het Toevoegen van de Lijst van het Product om resultaten in fouten te blokkeren
-   * _Bevestig nota_: Nu het toevoegen van de Lijst van het Product van de Bundel aan blok via paginabouwer resulteert niet in fouten
-   * _GitHub codebijdrage_: <https://github.com/magento/magento2/commit/344fce23>
+   * _Fix-opmerking_: Grote inhoud leidde ertoe dat het canvaselement de limieten van de browser overschreed en een onjuiste waarde retourneerde, waardoor de backend-code werd verbroken (kan de afbeelding niet goed worden gedecodeerd). Opgelost met het beperken van de canvasgrootte tot de limiet van de universele browser.
+   * _Bijdrage GitHub-code_: <https://github.com/magento/magento2-page-builder/commit/adfb1747>
+* _ACP2E-3430_: Laatste beveiligingsupdates met TinyMCE 7 ontbrekende lettergrootte
+   * _nota van de Reparatie_: De grootte van de doopvont en de selecteurs van de doopvontfamilie zijn nu beschikbaar in de redacteur van WYSIWYG. Voorafgaand aan deze oplossing waren deze met TinyMCE 7 niet beschikbaar in de editor-interface.
+   * _Bijdrage GitHub-code_: <https://github.com/magento/magento2/commit/d50f6b5d>, <https://github.com/magento/magento2-page-builder/commit/2c2f7a0e>
+* _ACP2E-3483_: TinyMCE 7 editor lettergrootte in de admin in PT en niet PX gelieve te verduidelijken
+   * _Fix-opmerking_: Voorafgaand aan de fix kon u de lettergrootte niet specificeren in px in WYSIWYG-gebieden. Nu kunt u de lettergrootte instellen in px in plaats van pt.
+   * _Bijdrage GitHub-code_: <https://github.com/magento/magento2/commit/3f12d152>, <https://github.com/magento/magento2-page-builder/commit/20aa5d7a>
+* _ACP2E-3490_: Product Content Type in Page Builder wordt samengevouwen zonder de juiste berichten
+   * _Fix-opmerking_: Voorafgaand aan de oplossing werd de voorbeeld-html niet correct gegenereerd terwijl er geen producten in de widget waren. Nu wordt het lege antwoord correct gegenereerd en wordt de productwidget prima weergegeven in de preview.
+   * _Bijdrage GitHub-code_: <https://github.com/magento/magento2/commit/3f12d152>, <https://github.com/magento/magento2-page-builder/commit/20aa5d7a>
+* _ACP2E-3534_: [pagebuilder]Productvermelding toevoegen om fouten te blokkeren
+   * _Fix-opmerking_: het toevoegen van Bundle Product Listing om te blokkeren via pagebuilder leidt niet tot fouten
+   * _Bijdrage GitHub-code_: <https://github.com/magento/magento2/commit/344fce23>
 
 ### Inhoud, SEO
 
-* _ACP2E-2870_: De hiërarchie van de Pagina van CMS kan URL veroorzaken herschrijft kwesties
-   * _Bevestig nota_: Eerder, voor douane permanent URL herschrijft voor niet-website wortelpagina&#39;s, eindeloos opnieuw richt en de pagina werd nooit geladen. Nadat deze correctie is toegepast, werkt de aangepaste URL voor het herschrijven van de hoofdpagina van de niet-website naar behoren en vindt er geen omleidingslus plaats.
+* _ACP2E-2870_: CMS-paginahiërarchie kan problemen met het herschrijven van URL&#39;s veroorzaken
+   * _Fix-opmerking_: Voorheen werd voor het herschrijven van aangepaste permanente URL&#39;s voor niet-websitehoofdpagina&#39;s oneindig omgeleid en werd de pagina nooit geladen. Nadat deze correctie is toegepast, werkt het herschrijven van de aangepaste URL voor de hoofdpagina die geen website is zoals verwacht en vindt er geen omleidingslus plaats.
 
 ### Inhoud, Staging en Voorvertoning
 
@@ -969,7 +969,7 @@ Eerder werden de records in de tabellen van de Bundle-productreeks niet verwijde
    * _nota van de Reparatie_: Het systeem stelt nu het gebied van de gebiedstekst opnieuw in wanneer het land in het dropdown menu wordt veranderd, die ervoor zorgen dat de vorige waarden niet blijven bestaan. Als u voorheen het land uit de vervolgkeuzelijst wijzigde, werd het veld Regio niet opnieuw ingesteld, waardoor de laatst opgeslagen waarde behouden bleef.
    * _GitHub codebijdrage_: <https://github.com/magento/magento2/commit/3ea26621>
 * _AC-9240_: Het schrappen van Klant schoon niet Alle Browser Gegevens van de Zitting over Storefront voor binnen het programma gezette &amp; Geschrapte Klant
-   * _Bevestig nota_: Het schrappen van een klant ontruimt nu alle gegevens van de browser zitting van de storefront voor het programma geopende en geschrapte klanten zoals verwacht. De winkelier kan blijven winkelen en hun browser behandelt hun sessie als een gastsessie. Eerder, toen de klantenrekening voor een het programma geopende verkoopster werd geschrapt van Admin, dan browser van de verkoopster de fouten van JavaScript verwierp.
+   * _Bevestig nota_: Het schrappen van een klant ontruimt nu alle gegevens van de browser zitting van de storefront voor het programma geopende en geschrapte klanten zoals verwacht. De winkelier kan blijven winkelen en hun browser behandelt hun sessie als een gastsessie. Eerder, toen de klantenrekening voor een het programma geopende verkoopster van Admin werd geschrapt, dan de browser van de verkoopster wierp de fouten van JavaScript.
    * _GitHub codebijdrage_: <https://github.com/magento/magento2/commit/7d5e3906>
 
 ### Kader
@@ -984,8 +984,8 @@ Eerder werden de records in de tabellen van de Bundle-productreeks niet verwijde
    * _GitHub codebijdrage_: <https://github.com/magento/magento2/commit/0c53bbf7>
 * _AC-10738_: De configuratie van de Varnish sluit niet alle marketing parameters uit
    * _nota van de Reparatie_: Het systeem sluit nu correct alle gemeenschappelijke marketing parameters in de configuratie van Varnish uit, die nauwkeurige het volgen en analyse verzekeren. Eerder waren bepaalde marketingparameters zoals gad_source, srsltid en msclchild niet uitgesloten, wat tot mogelijke onnauwkeurigheden in de gegevensverzameling leidde.
-   * _GitHub kwestie_: <https://github.com/magento/magento2/issues/38298>
-   * _GitHub codebijdrage_: <https://github.com/magento/magento2/pull/39188>
+   * _GitHub-probleem_: <https://github.com/magento/magento2/issues/38298>
+   * _Bijdrage GitHub-code_: <https://github.com/magento/magento2/pull/39188>
 * _AC-10838_: Het proces van de het het procesfout van de het onderzoeksindex van de catalogus indexeren
    * _nota van de Reparatie_: Het systeem voltooit nu met succes het re-indexbevel zonder om het even welke fouten te ontmoeten, ongeacht de libxml versie die met PHP wordt gecompileerd. Eerder, resulteerde het runnen van het re-indexbevel in een &quot;fout van het proces van het het indexproces van het Onderzoek van de Catalogus tijdens indexeringsproces&quot;fout wanneer PHP met bepaalde versies van libxml werd gecompileerd.
    * _GitHub kwestie_: <https://github.com/magento/magento2/issues/38254>
@@ -1091,16 +1091,16 @@ Eerder werden de records in de tabellen van de Bundle-productreeks niet verwijde
    * _GitHub codebijdrage_: <https://github.com/magento/magento2/pull/37784>
 * _AC-12964_: Mogelijkheid om Gebied voor dev :di: info CLI bevel te bepalen
    * _nota van de Reparatie_: Het systeem staat nu ontwikkelaars toe om een gebied voor het dev :di: info CLI bevel te bepalen, dat de ontwikkeling en het het zuiveren proces verbetert. Eerder kon deze opdracht alleen informatie weergeven voor het GLOBAL-gebied.
-   * _GitHub kwestie_: <https://github.com/magento/magento2/issues/38758>
+   * _GitHub-probleem_: <https://github.com/magento/magento2/issues/38758>
    * _GitHub codebijdrage_: <https://github.com/magento/magento2/pull/38759>
 * _AC-13149_: [ geef ] toe voeg isMultipleFiles bezit aan het malplaatje van het beeldvormelement toe
    * _nota van de Reparatie_: Deze moeilijke situatie, verhindert &quot;doorbladeren om beeld hier te vinden of te slepen&quot;knoop om te verdwijnen wanneer een beeld in een veelvoudige het vormelement van het dossierbeeld wordt toegevoegd.
    * _GitHub kwestie_: <https://github.com/magento/magento2/issues/39219>
-   * _GitHub codebijdrage_: <https://github.com/magento/magento2/pull/36325>
+   * _Bijdrage GitHub-code_: <https://github.com/magento/magento2/pull/36325>
 * _AC-13247_: opstelling:verbetering ontbreekt met MariaDB 11.4 versie toe te schrijven aan charset &amp; collationveranderingen
-* _AC-13279_: [ Uitgave ] verwijdert alle marketing parameters krijgen om het geheime voorgeheugen te minimaliseren
-   * _nota van de Reparatie_: Het systeem verwijdert nu alle marketing krijgen parameters om geheim voorgeheugengebruik te optimaliseren, die de logica weerspiegelen die wordt gebruikt wanneer Varnish in gebruik is. Eerder, konden deze parameters tot geheim voorgeheugenopblazing en verminderde prestaties leiden.
-   * _GitHub kwestie_: <https://github.com/magento/magento2/issues/39266>
+* _AC-13279_: [Probleem] Verwijder alle marketingparameters om de cache te minimaliseren
+   * _Fix-opmerking_: Het systeem verwijdert nu alle marketingparameters om het cachegebruik te optimaliseren, waarbij de logica wordt gespiegeld die wordt gebruikt wanneer Varnish in gebruik is. Voorheen konden deze parameters leiden tot een opgeblazen gevoel in de cache en verminderde prestaties.
+   * _GitHub-probleem_: <https://github.com/magento/magento2/issues/39266>
    * _GitHub codebijdrage_: <https://github.com/magento/magento2/pull/39099>
 * _AC-13345_: [ Uitgave ] [ PHPDOC ] verbeter slechte phpdoc Magento\Directory\Model\AllowedCountries::getAllowedCountries ()
    * _nota van de Reparatie_: De PHPDoc voor AllowedCountries::getAllowedCountries () methode is verbeterd om nauwkeurige informatie te verstrekken, die de duidelijkheid en het nut van de documentatie verbetert. Eerder bevatte de PHPDoc voor deze methode onjuiste informatie, die tot verwarring of misbruik van de methode kon leiden.
@@ -1142,11 +1142,11 @@ Eerder werden de records in de tabellen van de Bundle-productreeks niet verwijde
    * _GitHub kwestie_: <https://github.com/magento/magento2/issues/37394>
    * _GitHub codebijdrage_: <https://github.com/magento/magento2/pull/37395>
 * _AC-8662_: [ Uitgave ] verbetert het registreren van de cron fout
-   * _nota van de Reparatie_: Het systeem vangt en registreert nu zowel STDERR als STDOUT voor kroonprocessen, die waardevolle kenmerkende informatie in scenario&#39;s verstrekken waar de kroonprocessen ontbreken. Eerder, werden om het even welke foutenmeldingen binnen kroonprocessen niet geregistreerd, en STDERR en STDOUT voor kroongroepen die in afzonderlijke processen lopen werden verloren.
-   * _GitHub kwestie_: <https://github.com/magento/magento2/issues/37453>
-   * _GitHub codebijdrage_: <https://github.com/magento/magento2/pull/32690>
-* _wisselstroom-8984_: [ Uitgave ] voegt sommige meer kleuren aan de output van bepaalde opstellingskli bevelen toe
-   * _nota van de Reparatie_: Het systeem voegt nu meer kleuren aan de output van bepaalde (CLI) bevelen van de opstellingsbevellijn toe, die leesbaarheid en gebruikerservaring verbeteren. Eerder was de uitvoer van deze opdrachten moeilijker te lezen vanwege een gebrek aan kleurdifferentiatie.
+   * _Fix-opmerking_: Het systeem legt nu zowel STDERR als STDOUT vast en registreert deze voor cron-processen, en biedt waardevolle diagnostische informatie in scenario&#39;s waarin cron-processen mislukken. Eerder, werden om het even welke foutenmeldingen binnen kroonprocessen niet geregistreerd, en STDERR en STDOUT voor kroongroepen die in afzonderlijke processen lopen werden verloren.
+   * _GitHub-probleem_: <https://github.com/magento/magento2/issues/37453>
+   * _Bijdrage GitHub-code_: <https://github.com/magento/magento2/pull/32690>
+* _AC-8984_: [Probleem] Voegt wat meer kleuren toe aan de uitvoer van bepaalde instellingen cli commando&#39;s
+   * _Fix-opmerking_: het systeem voegt nu meer kleuren toe aan de uitvoer van bepaalde CLI-opdrachten (Command Line Interface) voor instellingen, waardoor de leesbaarheid en gebruikerservaring worden verbeterd. Eerder was de uitvoer van deze opdrachten moeilijker te lezen vanwege een gebrek aan kleurdifferentiatie.
    * _GitHub kwestie_: <https://github.com/magento/magento2/issues/29335>
    * _GitHub codebijdrage_: <https://github.com/magento/magento2/pull/29298>
 * _AC-9630_: Bevorderend Magento stelt algemeen/gebied/state_required terug wanneer het nieuwe land met vereiste staat/gebied wordt toegevoegd.
@@ -1187,7 +1187,7 @@ Eerder werden de records in de tabellen van de Bundle-productreeks niet verwijde
    * _nota van de Reparatie_: De berichten van de rij worden nu behoorlijk ontruimd. Voorafgaand aan de moeilijke situatie, aangezien SQL het rijsysteem werd gebruikt, konden de nieuwe berichten worden geschrapt als het bericht van de schoonmaakrij tezelfdertijd liep.
    * _GitHub codebijdrage_: <https://github.com/magento/magento2/commit/d50f6b5d>
 * _ACP2E-3537_: De overeenkomstige geheim voorgeheugenzeer belangrijke ingangen zijn niet beschikbaar in geheim voorgeheugenmarkeringen, vandaar geheim voorgeheugenreiniging niet correct werkt
-   * _nota van de Reparatie_: De wijze van de LUA wordt nu toegelaten door gebrek voor de inzamelaar van het geheime voorgeheugen Redis om rassenvoorwaarden te verhinderen
+   * _Fix-opmerking_: de LUA-modus is nu standaard ingeschakeld voor Redis-cachegarbage collector om race-omstandigheden te voorkomen
    * _GitHub codebijdrage_: <https://github.com/magento/magento2/commit/a52ff98f>
 * _ACP2E-3681_: De waarde MAGENTO_DC_INDEXER__USE_APPLICATION_LOCK wordt genegeerd
    * _nota van de Reparatie_: Na de moeilijke situatie, zal een variabele ENV die aan &quot;vals&quot;wordt geplaatst als bool vals, niet als koord &quot;vals&quot; worden behandeld.
@@ -1195,9 +1195,9 @@ Eerder werden de records in de tabellen van de Bundle-productreeks niet verwijde
 
 ### Framework, GraphQL
 
-* _AC-7976_: [ Uitgave ] Ingevoerde steun van douane scalaire types voor het schema van GraphQL
-   * _nota van de Reparatie_: Het systeem steunt nu douane scalaire types voor het schema van GraphQL, toestaand ontwikkelaars om douane scalaire types en implementaties te bepalen. Deze functie kan vooral handig zijn voor het uitdrukken van waarden die moeten worden gevalideerd, zoals HTML, e-mails, URL&#39;s, datums, enzovoort, en voor meer geavanceerde gevallen zoals EAV-kenmerken. Eerder, steunde het systeem niet de verwerking van douane scalaire types in GraphQL.
-   * _GitHub kwestie_: <https://github.com/magento/magento2/issues/36877>
+* _AC-7976_: [Probleem] Geïntroduceerde ondersteuning van aangepaste scalaire typen voor het GraphQL-schema
+   * _nota van de Reparatie_: Het systeem steunt nu douane scalaire types voor het schema van GraphQL, toestaand ontwikkelaars om douane scalaire types en implementaties te bepalen. Deze functie kan met name handig zijn voor het uitdrukken van waarden die mogelijk moeten worden gevalideerd, zoals HTML, e-mails, URL&#39;s, datums, enz., en voor meer geavanceerde gevallen zoals EAV-kenmerken. Voorheen ondersteunde het systeem de verwerking van aangepaste scalaire typen in GraphQL niet.
+   * _GitHub-probleem_: <https://github.com/magento/magento2/issues/36877>
    * _GitHub codebijdrage_: <https://github.com/magento/magento2/pull/34651>, <https://github.com/magento/magento2/commit/0574ac23>
 
 ### Kader, Product
@@ -1268,11 +1268,11 @@ Eerder uitgevoerde query werkte zonder ervoor te zorgen dat de klant op een niet
    * _GitHub codebijdrage_: <https://github.com/magento/magento2/commit/d50f6b5d>
 * _ACP2E-3467_: [ Cloud ] 500 reactie op lege Grahql op 2.4.7
    * _nota van de Reparatie_: Na de moeilijke situatie, zullen de ongeldige grafische verzoeken niet in het exception.log dossier worden geregistreerd.
-   * _GitHub codebijdrage_: <https://github.com/magento/magento2/commit/1984c61c>
-* _ACP2E-3492_: [ Cloud ] Problemen met Grahql API
-   * _nota van de Reparatie_: Vóór de moeilijke situatie door de toepassingsserver van Grafiek te gebruiken, kwam het verzoek van het klantenadres niet de meest recente gegevens terug.
-   * _GitHub codebijdrage_: <https://github.com/magento/magento2/commit/3f12d152>
-* _ACP2E-3505_: Het gehandicapte product verschijnt nog in verwant, upsell, dwarselt punten in vraag grpahQL
+   * _Bijdrage GitHub-code_: <https://github.com/magento/magento2/commit/1984c61c>
+* _ACP2E-3492_: [Cloudproblemen] met Graphql API
+   * _Fix-opmerking_: Vóór de oplossing met behulp van de Graphql-applicatieserver retourneerde het verzoek om klantadres niet de meest recente gegevens.
+   * _Bijdrage GitHub-code_: <https://github.com/magento/magento2/commit/3f12d152>
+* _ACP2E-3505_: Uitgeschakeld product wordt nog steeds weergegeven in gerelateerde, upsell- en crosssell-items in de grpahQL-query
    * _Nota van de Moeilijke situatie_: Grahql verstrekt nu correcte reactie voor gehandicapte verwante, upsell en dwars-verkoopt producten
    * _GitHub codebijdrage_: <https://github.com/magento/magento2/commit/d4de4726>
 * _ACP2E-3647_: [ CLOUD ]: De fout van GraphQl Interne de mutatie van de serverfout placeOrder
@@ -1304,8 +1304,8 @@ Eerder uitgevoerde query werkte zonder ervoor te zorgen dat de klant op een niet
    * _nota van de Reparatie_: De bevestiging is toegevoegd om klanten te beperken van het annuleren van een gedeeltelijk verscheepte orde.
 * _LYNX-548_: De codes van de fout voor orde annuleren die op het foutenbericht wordt gebaseerd
    * _de nota van de Reparatie_: De foutencodes voor ordevernietiging zijn nu gebaseerd op het specifieke foutenbericht.
-* _LYNX-581_: Beweeg terug koekjesgerelateerde eigenschappen van privé aan beschermde
-   * _Nota van de Reparatie_: Keert de eigenschappen van de Magento\Framework\App\PageCache\Version klassenaannemer van privé aan beschermde
+* _LYNX-581_: Cookie-gerelateerde eigenschappen terugzetten van privé naar beveiligd
+   * _Opmerking_ repareren: Herstelt de zichtbaarheid van Magento\Framework\App\PageCache\Version class constructor zichtbaarheid van privé naar beveiligd
 * _LYNX-600_: De maximum standaardGraphQL vraagingewikkeldheid van de verhoging aan 1000
    * _nota van de Reparatie_: Verhoogde standaard maximumingewikkeldheid van de vraag van GraphQL van 300 tot 1000.
 * _LYNX-620_: GQL - itemsV2 > Origineel rijtotaal, de prijzen van de prijswaaier zijn teruggekeerd als $0.00 voor downloadbaar product met dossieropties die afzonderlijke prijzen hebben.
@@ -1319,19 +1319,19 @@ Eerder uitgevoerde query werkte zonder ervoor te zorgen dat de klant op een niet
 
 * _ACP2E-2607_: De mutatie MergeCart werpt uitzondering wanneer de bron en de bestemmingshavens de zelfde bundelpunten hebben
    * _Bevestig nota_: &quot;-
-   * _GitHub codebijdrage_: <https://github.com/magento/magento2/commit/c971859e>, <https://github.com/magento/inventory/commit/db0620da>
+   * _Bijdrage GitHub-code_: <https://github.com/magento/magento2/commit/c971859e>, <https://github.com/magento/inventory/commit/db0620da>
 
-### GraphQL, Inventory / MSI, prestaties
+### GraphQL, Inventaris / MSI, Prestaties
 
-* _ACP2E-1716_: Plaats neer na verbetering
-   * _nota van de Reparatie_: De prestaties van het halen van bundelproducten door GraphQl wordt verbeterd.
-   * _GitHub codebijdrage_: <https://github.com/magento/magento2/commit/ba25af8a>, <https://github.com/magento/inventory/commit/bdbf97ea>
+* _ACP2E-1716_: Site uit de lucht na upgrade
+   * _Fix-opmerking_: De prestaties van het ophalen van bundelproducten via GraphQl zijn verbeterd.
+   * _Bijdrage GitHub-code_: <https://github.com/magento/magento2/commit/ba25af8a>, <https://github.com/magento/inventory/commit/bdbf97ea>
 
-### GraphQL, prestaties
+### GraphQL, Prestaties
 
-* _wisselstroom-9569_: [ GraphQL Resolver ] de Gegevens van de Resolver van de Klant wordt niet ongeldig van de Invoer
-   * _nota van de Oplossing_: Het geheime voorgeheugen van de klantenoplosser van GraphQL wordt nu ongeldig gemaakt zoals verwacht wanneer een klant door de invoer wordt uitgegeven of geschrapt. Eerder is de cache niet ongeldig gemaakt en konden de klantgegevens tijdens het importeren worden bewerkt of verwijderd.
-   * _GitHub codebijdrage_: <https://github.com/magento/magento2/commit/0574ac23>
+* _AC-9569_: [GraphQL Resolver Customer Resolver] Data wordt niet ongeldig gemaakt door import
+   * _Probleemoplossing_: de cache van de GraphQL-klantresolver wordt nu zoals verwacht ongeldig verklaard wanneer een klant wordt bewerkt of verwijderd via imports. Voorheen werd de cache niet ongeldig gemaakt en konden klantgegevens tijdens het importeren worden bewerkt of verwijderd.
+   * _Bijdrage GitHub-code_: <https://github.com/magento/magento2/commit/0574ac23>
 
 ### GraphQL, zoeken
 
@@ -1346,7 +1346,7 @@ Eerder uitgevoerde query werkte zonder ervoor te zorgen dat de klant op een niet
 
 * _ACP2E-3363_: Magento\GraphQl\App\GraphQlCustomerMutationsTest.php de mislukking van de Test van de Integratie
    * _Bevestig nota_: &quot;-
-   * _GitHub codebijdrage_: <https://github.com/magento/magento2/commit/a4cf5e62>
+   * _Bijdrage GitHub-code_: <https://github.com/magento/magento2/commit/a4cf5e62>
 
 ### Importeren/exporteren
 
@@ -1355,21 +1355,21 @@ Eerder uitgevoerde query werkte zonder ervoor te zorgen dat de klant op een niet
    * _GitHub kwestie_: <https://github.com/magento/magento2/issues/38805>
    * _GitHub codebijdrage_: <https://github.com/magento/magento2/pull/38926>
 * _ACP2E-2710_: Onjuiste uitvoeringstijd voor de invoerverrichting in het net van de Geschiedenis van de Invoer
-   * _nota van de Reparatie_: De uitvoeringstijd van het rapport van de invoer toont correct onafhankelijk van admin scène.
-   * _GitHub codebijdrage_: <https://github.com/magento/magento2/commit/ea79f7dd>
-* _ACP2E-2737_: De dubbele klanten die met het zelfde e-mailadres worden gecreeerd gebruikend de invoer
-   * _nota van de Reparatie_: Het invoeren van de klant terwijl het Delen van de Rekening die aan Globale wordt geplaatst, wordt de ingevoerde klant die in het systeem bestaat bijgewerkt.
+   * _Fix-opmerking_: de uitvoeringstijd van het importrapport wordt correct weergegeven, onafhankelijk van de landinstelling van de beheerder.
+   * _Bijdrage GitHub-code_: <https://github.com/magento/magento2/commit/ea79f7dd>
+* _ACP2E-2737_: Dubbele klanten worden aangemaakt met hetzelfde e-mailadres met behulp van importeren
+   * _Fix-opmerking_: Als u de klant importeert terwijl Account delen is ingesteld op Global, wordt de geïmporteerde klant die in het systeem bestaat, bijgewerkt.
 Eerder geïmporteerde klant is gedupliceerd.
-   * _GitHub codebijdrage_: <https://github.com/magento/magento2/commit/c971859e>
-* _ACP2E-2902_: Voeg/werk de Invoer op Producten toe die Aanpasbare Opties dupliceren
-   * _nota van de Reparatie_: De kwestie is opgelost door de correcte opslag aan productopties tijdens de invoer CSV van productopties toe te wijzen.
-Eerder, toegewezen aan de admin store in plaats van hun respectieve opslag.
-   * _GitHub codebijdrage_: <https://github.com/magento/magento2/commit/3a7c4d17>
+   * _Bijdrage GitHub-code_: <https://github.com/magento/magento2/commit/c971859e>
+* _ACP2E-2902_: Import toevoegen/bijwerken van producten die aanpasbare opties dupliceren
+   * _Fix-opmerking_: het probleem is opgelost door de juiste winkel toe te wijzen aan productopties tijdens het importeren van CSV-bestanden van productopties.
+Eerder toegewezen aan de beheerderswinkel in plaats van hun respectievelijke winkel.
+   * _Bijdrage GitHub-code_: <https://github.com/magento/magento2/commit/3a7c4d17>
 * _ACP2E-2990_: De klant &quot;created_at&quot;datum niet Omgezet om tijdzone op de uitvoer op te slaan
    * _nota van de Reparatie_: Een kolom &quot;created_at&quot;datumwaarde wordt omgezet in het juiste datumformaat dat op de opslag wordt gebaseerd tijdzone in de de uitvoerCSV van de klant.
-   * _GitHub codebijdrage_: <https://github.com/magento/magento2/commit/3056e9cb>
-* _ACP2E-3165_: [ Cloud ] die fout terwijl het controleren van de gegevens in invoergegevens gebruikend CSV krijgt
-   * _nota van de Reparatie_: Er is geen fout wanneer het controleren van de gegevens tijdens de invoer CSV. Eerder werd het volgende foutbericht weergegeven: &quot;We kunnen geen klant vinden die deze e-mail- en websitecode in rij(en): 1 aanpast wanneer de gegevens in de importsectie worden gecontroleerd met gebruik van CSV vanuit de beheerder.
+   * _Bijdrage GitHub-code_: <https://github.com/magento/magento2/commit/3056e9cb>
+* _ACP2E-3165_: [Cloud] Krijgt een foutmelding tijdens het controleren van de gegevens bij het importeren van gegevens met behulp van CSV
+   * _Fix-opmerking_: er treedt geen fout op bij het controleren van de gegevens tijdens het importeren van CSV. Voorheen was de foutmelding die werd weergegeven: &quot;We kunnen geen klant vinden die overeenkomt met deze e-mail- en websitecode in rij(en): 1&quot; bij het controleren van de gegevens in de importsectie met behulp van CSV van de admin.
    * _GitHub codebijdrage_: <https://github.com/magento/magento2/commit/8459b17d>
 * _ACP2E-3172_: Ontbrekende knoop van de Invoer
    * _Bevestig nota_: Los de knoop van de Invoer ontbrekende kwestie na gegevenscontroles met correcte en onjuiste verslagen in CSV op. Eerder wordt de knop Importeren niet weergegeven na gegevenscontroles met juiste en onjuiste records in de CSV.
@@ -1378,10 +1378,10 @@ Eerder, toegewezen aan de admin store in plaats van hun respectieve opslag.
    * _nota van de Reparatie_: De het adresinvoer van de klant zal zoals verwacht te werk gaan. Voorheen zou een bestand met het importeren van klantadressen geen validatie doorstaan als Share Customer Accounts = Global, en er zijn twee websites waar de standaardwebsite een lijst met landen met beperkingen heeft en het adres dat wordt geïmporteerd, geldt voor een andere website waar toegestane landen verschillend zijn
    * _GitHub codebijdrage_: <https://github.com/magento/magento2/commit/ec7e32a9>
 * _ACP2E-3448_: [ de Verkeerde hoeveelheid van de Wolk ] in Csv- dossier gaf geen fout
-   * _nota van de Reparatie_: Nu zal de invoer van voorraadbronnen bevestigingsfout voor niet numerieke waarden in de kwantitatieve kolom werpen. Eerder werd bij het importeren van voorraadbronnen met een niet-numerieke waarde in de kolom Hoeveelheid de hoeveelheid ingesteld op 0.
+   * _Fix-opmerking_: nu zal het importeren van stockbronnen een validatiefout veroorzaken voor niet-numerieke waarden in de hoeveelheidskolom. Voorheen resulteerde het importeren van voorraadbronnen met een niet-numerieke waarde in de kolom aantal erin dat de hoeveelheid op 0 werd gezet.
    * _GitHub codebijdrage_: <https://github.com/magento/inventory/commit/5b21b7af>
-* _ACP2E-3455_: Het gedupliceerde zeer belangrijke die foutenmelding URL wanneer het invoeren van een product wordt geproduceerd is niet correct wanneer Sleutel URL reeds tot een categorie behoort
-   * _nota van de Reparatie_: Het tonen van het correcte foutenbericht tijdens de controle van de productinvoer, wanneer de klant probeerde om product in te voeren wanneer de url van het product reeds tot een categorie behoort.
+* _ACP2E-3455_: Foutmelding over dubbele URL-sleutel die wordt gegenereerd bij het importeren van een product is niet correct wanneer de URL-sleutel al bij een categorie hoort
+   * _Fix-opmerking_: Het juiste foutbericht wordt weergegeven tijdens de controle van het importeren van het product, wanneer de klant probeerde het product te importeren terwijl de url-sleutel van het product al tot een categorie behoort.
    * _GitHub codebijdrage_: <https://github.com/magento/magento2/commit/d4de4726>
 * _ACP2E-3475_: De uitvoer van het product veroorzaakt OOM zelfs met 4G geheugengrens
    * _nota van de Reparatie_: Vorig aan deze moeilijke situatie, ontbrak de productuitvoer als de productattributen duizenden optiewaarden zelfs met 4G beschikbaar geheugen hadden. Na deze correctie moet het exportbestand van het product het CSV-bestand hebben geëxporteerd.
@@ -1400,7 +1400,7 @@ Eerder, toegewezen aan de admin store in plaats van hun respectieve opslag.
 
 * _AC-13242_: De verbetering van Magento ontbreekt op MariaDB 11.4 + 2.4.8-bèta1
    * _Bevestig nota_: De verbetering zou zonder enige fout moeten gebeuren.
-   * _GitHub codebijdrage_: <https://github.com/magento/magento2/commit/7b336d0a>
+   * _Bijdrage GitHub-code_: <https://github.com/magento/magento2/commit/7b336d0a>
 * _ACP2E-2102_: Geen VCL van de Uitvoer voor Varnish 7 knoop in admin paneel
    * _nota van de Reparatie_: &quot;De knoop van de Uitvoer VCL voor Varnish 7&quot;werd toegevoegd aan het Admin paneel.
    * _GitHub codebijdrage_: <https://github.com/magento/magento2/commit/a4fbf702>
@@ -1408,9 +1408,9 @@ Eerder, toegewezen aan de admin store in plaats van hun respectieve opslag.
 ### Inventaris/MSI
 
 * _AC-10750_: De update van de inventaris van het Configurable Product ontbreekt wanneer het gegevensbestand prefixen gebruikt
-   * _nota van de Reparatie_: Het systeem werkt nu correct de inventaris van configureerbare producten bij wanneer het gegevensbestand prefixen gebruikt, die om het even welke foutenmeldingen verhinderen en ervoor zorgen dat het correcte aantal wordt bewaard. Eerder, zou een fout voorkomen wanneer het proberen om de inventarishoeveelheid voor eenvoudige producten binnen een configureerbaar product te bewaren als het gegevensbestand prefixen gebruikte.
-   * _GitHub kwestie_: <https://github.com/magento/magento2/issues/38045>
-* _AC-11593_: De sleutel van Google google API werkt niet terwijl het toevoegen van Kaart met attributen
+   * _Fix-opmerking_: het systeem werkt nu de inventaris van configureerbare producten correct bij wanneer de database voorvoegsels gebruikt, waardoor foutmeldingen worden voorkomen en ervoor wordt gezorgd dat de juiste hoeveelheid wordt opgeslagen. Voorheen trad er een fout op bij het opslaan van de voorraadhoeveelheid voor eenvoudige producten binnen een configureerbaar product als de database voorvoegsels gebruikte.
+   * _GitHub-probleem_: <https://github.com/magento/magento2/issues/38045>
+* _AC-11593_: Google Google API-sleutel werkt niet tijdens het toevoegen van kaart met attributen
    * _nota van de Reparatie_: Het systeem steunt nu de recentste versie 3.56 van de Kaarten API van Google, toestaand gebruikers om een de inhoudsblok van de Kaart van het menu PageBuilder aan het stadium met succes toe te voegen zonder om het even welke fouten te ontmoeten. Eerder konden gebruikers geen Map-inhoudsblok toevoegen vanwege compatibiliteitsproblemen met de Google Maps API-versie. Dit leidde tot een foutbericht dat er iets fout was.
    * _GitHub codebijdrage_: <https://github.com/magento/magento2/commit/0574ac23>
 * _AC-13922_: Onbekwaam om verzending voor ordepunt met veelvoudige bronnen en bedorven SKU tot stand te brengen
@@ -1531,10 +1531,10 @@ Eerder, toegewezen aan de admin store in plaats van hun respectieve opslag.
 * _LYNX-399_: De placeholder duimnagel keert terug wanneer een eenvoudig product aan kar binnen een gegroepeerd product wordt toegevoegd
    * _nota van de Reparatie_: Vaste een kwestie waar het toevoegen van een eenvoudig product (deel van een gegroepeerd product) aan de kar een placeholder duimnagelbeeld teruggaf, zelfs wanneer het product een toegewezen beeld had.
 Details herstellen:
-・ De miniatuur van het product geeft nu correct de toegewezen afbeelding weer, indien beschikbaar.
-・ De miniatuurselectie respecteert de onderstaande beheerdersconfiguratie:
+* De miniatuur van het product geeft nu correct de toegewezen afbeelding weer, indien beschikbaar.
+* De miniatuurselectie respecteert de onderstaande beheerdersconfiguratie:
 Winkels > Configuratie > Verkoop > Afhandeling > Winkelwagentje > Gegroepeerde productafbeelding.
-Dit zorgt voor consistent miniatuurgedrag voor gegroepeerde producten op basis van opslaginstellingen.
+Dit zorgt voor consistent miniaturengedrag voor gegroepeerde producten op basis van winkelinstellingen.
 * _LYNX-400_: De attributen van de douaneoptie van de klant die niet met geheelwaarden werken
    * _Bevestig nota_: Vaste een kwestie waar de attributen van de douaneoptie van de klant niet werkten wanneer de teruggekeerde waarde een geheel was. De aangepaste opties verwerken nu correct de waarden van gehele getallen en retourneren deze zoals verwacht.
 * _LYNX-402_: Interne serverfout wanneer het proberen om priceDetails voor de producten van de Bundel met dynamische prijs te krijgen
@@ -1542,8 +1542,8 @@ Dit zorgt voor consistent miniatuurgedrag voor gegroepeerde producten op basis v
 * _LYNX-403_: only_x_left_in_stock keert altijd 0 voor configureerbare producten terug
    * _nota van de Reparatie_: Los een kwestie op waar het only_x_left_in_stock attribuut altijd 0 voor configureerbare producten terugkeerde wanneer toegevoegd gebruikend ouderSKU met opties.
 Details herstellen:
-・ De waarde only_x_left_in_stock geeft nu nauwkeurig de voorraad van de geselecteerde kindvariant in plaats van bovenliggende SKU weer.
-・ Dit zorgt ervoor dat de voorraadniveaus correct worden getoond voor configureerbare productvariaties in de kar en productpagina&#39;s.
+* De waarde only_x_left_in_stock geeft nu nauwkeurig de voorraad van de geselecteerde kindvariant in plaats van bovenliggende SKU weer.
+* Dit zorgt ervoor dat voorraadniveaus correct worden getoond voor configureerbare productvariaties in de kar en productpagina&#39;s.
 * _LYNX-405_: Fout van GraphQL: Niet gesteund &quot;dossier&quot;type in klantgerichte optiesvraag
    * _nota van de Reparatie_: Oplossing een kwestie waar GraphQL een fout voor klantgerichte opties van type &quot;dossier&quot;in wortelpunten terugkeerde. De query retourneert nu op de juiste wijze details voor alle aanpasbare optietypen, inclusief op bestanden gebaseerde opties, zonder fouten te veroorzaken.
 * _LYNX-411_: De vraag van GraphQL keert geen correcte berekende regelmatige prijs voor klantgerichte producten terug
@@ -1584,7 +1584,7 @@ Details herstellen:
 * _LYNX-637_: De Verenigbaarheid van de Storefront - logica van de Update om lijstnaam met prefix en andere minder belangrijke verbeteringen te krijgen
    * _Bevestig nota_: Bijgewerkte logica om de lijstnaam met de prefix terug te winnen (met betrekking tot veranderingen SCP).
 * _LYNX-643_: sparen in adresboek werkt niet wanneer het gebruiken van setBillingAddressOnCart GQL&#39;s same_as_Shipping gebied
-   * _Bevestig nota_: Vaste een kwestie waar het verschepende adres niet aan het het adresboek van de klant werd bewaard toen het gebruiken van de GraphQL setBillingAddressOnCart met same_as_Shipping gebied dat aan waar wordt geplaatst. Het verzendadres is nu correct opgeslagen zoals u had verwacht.
+   * _Bevestiging nota_: Vaste een kwestie waar het verschepende adres niet aan het het adresboek van de klant werd bewaard toen het gebruiken van de GraphQL setBillingAddressOnCart met same_as_Shipping gebied aan waar werd geplaatst. Het verzendadres is nu correct opgeslagen zoals u had verwacht.
 * _LYNX-650_: normaliseer order_id in mutaties
    * _Bevestig nota_: Gestandaardiseerd de orde_id input in mutaties en bijgewerkt de orde annuleert bevestigingsemailmalplaatje om verhogingsidentiteitskaart in plaats van orde identiteitskaart bloot te stellen.
 * _LYNX-651_: CustomerOrder toont niet de ordecommentaren
@@ -1626,9 +1626,9 @@ Details herstellen:
 
 ### Andere ontwikkelaarsgereedschappen
 
-* _AC-10658_: [ de syntaxisfout van HTML van de kwestie ] verhelpen in visual.phtml
-   * _nota van de Reparatie_: Het systeem sluit nu correct de beginmarkering in het visual.phtml- dossier, die juiste syntaxis van HTML verzekeren. Eerder was de begintag niet correct gesloten, waardoor een HTML-syntaxisfout ontstond.
-   * _GitHub kwestie_: <https://github.com/magento/magento2/issues/38247>
+* _AC-10658_: [Probleem] opgelost HTML-syntaxisfout in visual.phtml
+   * _nota van de Reparatie_: Het systeem sluit nu correct de beginmarkering in het visual.phtml- dossier, die juiste syntaxis van HTML verzekeren. Voorheen werd de start-tag niet goed gesloten, waardoor er een HTML-syntaxisfout ontstond.
+   * _GitHub-probleem_: <https://github.com/magento/magento2/issues/38247>
    * _GitHub codebijdrage_: <https://github.com/magento/magento2/pull/37457>
 * _AC-11474_: [ Uitgave ] Gewijzigd &quot;actief&quot;aan &quot;toegelaten&quot;in bin/magento onderhoud:statusbevel
    * _nota van de Reparatie_: Het systeem verstrekt nu nauwkeurigere statusberichten voor het bevel van de onderhoudswijze, veranderend de status van &quot;actief&quot;in &quot;toegelaten&quot;en van &quot;niet actief&quot;aan &quot;gehandicapt&quot;. Eerder werd het statusbericht voor de opdracht voor de onderhoudsmodus weergegeven als &quot;actief&quot; of &quot;niet actief&quot;, wat tot verwarring kan leiden.
@@ -1739,7 +1739,7 @@ Voordat ze automatisch werden afgewezen.
    * _GitHub codebijdrage_: <https://github.com/magento/magento2/pull/30838>
 * _wisselstroom-13173_: [ 3} Het type van de Oplossing van de kwestie {in blok PHPDoc]
    * _nota van de Reparatie_: Het systeem verwijdert nu correct een onbekende referenced variabele in PHPDoc voor de veranderlijke verklaring $helper, die codeduidelijkheid en nauwkeurigheid verbetert. Voorheen veroorzaakte deze onbekende variabele waarnaar in PHPDoc wordt verwezen, verwarring en potentiële onnauwkeurigheden in de code.
-   * _GitHub kwestie_: <https://github.com/magento/magento2/issues/38961>
+   * _GitHub-probleem_: <https://github.com/magento/magento2/issues/38961>
    * _GitHub codebijdrage_: <https://github.com/magento/magento2/pull/38940>
 * _AC-13423_: [ Uitgave ] Vaste gebroken Bundel en downloadbare productpagina&#39;s lay-out in Magento >= 2.4.7
    * _nota van de Reparatie_: De lay-out voor bundel en downloadbare productpagina&#39;s is bevestigd, die een verenigbare en correcte vertoning over alle apparaten verzekeren. Eerder traden op deze pagina&#39;s lay-outproblemen op als gevolg van een herschikking van het mediablok met productinformatie.
@@ -1761,15 +1761,15 @@ Voordat ze automatisch werden afgewezen.
    * _nota van de Reparatie_: De attributen van de klant zijn beschikbaar terwijl het creëren van rekening van uitnodiging.
    * _GitHub codebijdrage_: <https://github.com/magento/magento2/commit/39d54c2d>
 * _ACP2E-2627_: De code van de coupon met Gebruik per grens van de Coupon wordt niet vrijgegeven voor betaling ontbrak met orde annuleren
-   * _nota van de Reparatie_: Het systeem werkt nu onmiddellijk coupongebruik bij wanneer een orde wordt gecreeerd of geannuleerd, en voegt regelgebruikers aan een rij toe om potentiële implantaties te verhinderen. Dit zorgt ervoor dat een couponcode met de limiet &quot;Gebruik per coupon&quot; wordt vrijgegeven en opnieuw kan worden gebruikt als een order wordt geannuleerd vanwege een mislukte betaling. Eerder heeft het systeem de couponcode niet vrijgegeven voor hergebruik in dergelijke gevallen, wat resulteerde in een foutbericht waarin stond dat de couponcode niet geldig was.
+   * _nota van de Reparatie_: Het systeem werkt nu onmiddellijk coupongebruik bij wanneer een orde wordt gecreeerd of geannuleerd, en voegt regelgebruikers aan een rij toe om potentiële implantaties te verhinderen. Dit zorgt ervoor dat een couponcode met een limiet &quot;Gebruik per coupon&quot; wordt vrijgegeven en opnieuw kan worden gebruikt als een bestelling wordt geannuleerd vanwege een mislukte betaling. Eerder heeft het systeem de couponcode niet vrijgegeven voor hergebruik in dergelijke gevallen, wat resulteerde in een foutbericht waarin stond dat de couponcode niet geldig was.
    * _GitHub codebijdrage_: <https://github.com/magento/magento2/commit/c971859e>
 * _ACP2E-2811_: [ Cloud ] het Reindexeren van het Product van de Regel van de Catalogus meldt SQLSTATE [ HY000 ]: Algemene fout: De server van 2006 MySQL is weggegaan.
    * _nota van de Reparatie_: Het systeem behandelt nu correct douane &quot;batchCount&quot;waarde in di.xml voor &quot;Magento\CatalogRule\Model\Indexer\IndexBuilder&quot;, die SQL fouten zoals &quot;Algemene fout verhinderen: De server van 2006 MySQL is weggegaan&quot;tijdens het opnieuw indexeren van het Product van de Regel van de Catalogus wegens de onjuiste partijgrootte op grote catalogi
    * _GitHub codebijdrage_: <https://github.com/magento/magento2/commit/b2286ecf>
 * _ACP2E-2926_: [ CLOUD ] de Regel van de Prijs van de Kar voor het Segment van de Klant van Bezoekers die geen korting op kar toepassen
-   * _nota van de Reparatie_: Het systeem past nu correct de Regels van de Prijs van de Kaart voor de Segmenten van de Klant van de Bezoeker toe, zelfs als de regel geen coupon gebruikt, die ervoor zorgt dat de aangewezen kortingen op het karretje worden toegepast. Voorheen werden geen kortingen toegepast op het winkelwagentje voor klantsegmenten van bezoekers, tenzij de prijsregel voor winkelwagentjes een coupon gebruikte.
-* _ACP2E-3024_: Ontbrekend &quot;Type&quot;Attribuut in &quot;Producten aan Gelijke&quot;Lusje van Verwante Regels van het Product
-   * _nota van de Reparatie_: Het &quot;Type&quot;attribuut is nu beschikbaar als filteroptie in het &quot;Producten aan Gelijke&quot;lusje van de &quot;Verwante module van de Regels van het Product&quot;, die voor nauwkeurigere regeldefinitie toestaat. Eerder ontbrak dit kenmerk op het tabblad &quot;Producten op maat&quot;, waardoor de mogelijkheid om nauwkeurige overeenkomende criteria te maken, werd beperkt.
+   * _Fix-opmerking_: Het systeem past nu correct winkelwagenprijsregels toe voor bezoekersklantsegmenten, zelfs als de regel geen coupon gebruikt, zodat de juiste kortingen op de winkelwagen worden toegepast. Voorheen werden er geen kortingen toegepast op de winkelwagen voor bezoekersklantsegmenten, tenzij de winkelwagenprijsregel een coupon gebruikte.
+* _ACP2E-3024_: Ontbrekend kenmerk &#39;Type&#39; op het tabblad &#39;Producten die bij elkaar passen&#39; van gerelateerde productregels
+   * _Probleemoplossing_: het kenmerk &#39;Type&#39; is nu beschikbaar als filteroptie op het tabblad &#39;Producten die bij elkaar passen&#39; van de module &#39;Gerelateerde productregels&#39;, waardoor de regeldefinitie nauwkeuriger kan worden bepaald. Voorheen ontbrak dit kenmerk op het tabblad &#39;Producten om te matchen&#39;, waardoor de mogelijkheid om nauwkeurige overeenkomstcriteria te maken werd beperkt.
 * _ACP2E-3139_: De Regel van de verkoop met het attribuut van de Stap van de Korting van het Aantal (koop X) veroorzaakt dat andere regels niet worden toegepast
    * _Bevestig nota_: De prijsregel van de Kar annuleert eerder toegepaste regels niet als de hoeveelheid van het product in de kar niet genoeg voor toe te passen regel is.
    * _GitHub codebijdrage_: <https://github.com/magento/magento2/commit/d01ee51e>
@@ -1777,19 +1777,19 @@ Voordat ze automatisch werden afgewezen.
    * _nota van de Reparatie_: Toegevoegde ontbrekende indexen van DB voor filters AdvancedSalesRule
 * _ACP2E-3332_: De verkoopregels van de uitgave met Vaste korting van het bedrag en &quot;De Maximale Korting van de Aantal wordt toegepast op&quot;
    * _nota van de Reparatie_: Vaste kwestie met de korting van de kartregels, wanneer de vaste waardekorting wordt gevormd om op een beperkte hoeveelheid producten worden toegepast is het karretje. Eerder werd de waarde &quot;Maximale korting op de hoeveelheid toegepast op&quot; gebruikt voor de berekening van de prijs van het lopende item in het winkelwagentje, niet alleen voor de berekening van de korting op de regel.
-   * _GitHub codebijdrage_: <https://github.com/magento/magento2/commit/581b7ef1>
-* _ACP2E-3342_: [ CLOUD ] de verbetering van Magento veroorzaakte coupons om case-sensitive te worden
-   * _nota van de Reparatie_: Vóór de moeilijke situatie moest u in de couponcode precies typen aangezien het met inachtneming van hoofdletters of kleine letters werd gevormd. De coupon wordt nu gevalideerd op de achtergrond, ongeacht de configuratie van code in hoofdletters of kleine letters.
-* _ACP2E-3349_: De regels van de wagen &quot;Vaste korting van het bedrag voor het volledige karretje&quot;  Met Actie worden kortingen onjuist toegepast
-   * _nota van de Reparatie_: De codes van de coupon zullen behoorlijk ongeacht hogere geval of kleine letters, wanneer gebruikt in ordeverwezenlijking van het admin gebied worden bevestigd. De waardeboncode werd eerder niet gevalideerd als deze niet precies overeenkomt met het hoofdlettergebruik van de code van de geconfigureerde tekenregel.
-   * _GitHub codebijdrage_: <https://github.com/magento/magento2/commit/581b7ef1>
-* _ACP2E-3374_: In Achterkant, standaard opslagwaarden voor productattributen (in plaats van verwachte adminwaarden)
-   * _nota van de Reparatie_: Nu op Achtergrond, worden de adminwaarden gebruikt in plaats van standaardopslagwaarden voor productkenmerken.
+   * _Bijdrage GitHub-code_: <https://github.com/magento/magento2/commit/581b7ef1>
+* _ACP2E-3342_: [CLOUD] Magento-upgrade zorgde ervoor dat coupons hoofdlettergevoelig werden
+   * _Fix-opmerking_: Vóór de fix moest u de couponcode precies zo typen als deze was geconfigureerd, rekening houdend met hoofdletters of kleine letters. Nu wordt de coupon gevalideerd in de backend, ongeacht de configuratie van hoofdletters of kleine letters.
+* _ACP2E-3349_: Winkelwagenregels &quot;Korting met vast bedrag voor hele winkelwagen&quot; Action past kortingen onjuist toe
+   * _Fix-opmerking_: couponcodes worden correct gevalideerd, ongeacht hoofdletters of kleine letters, wanneer ze worden gebruikt bij het maken van bestellingen vanuit het beheerdersgebied. Voorheen werd de couponcode niet gevalideerd als deze niet exact overeenkwam met het hoofdlettergebruik van de geconfigureerde winkelwagenregelcode.
+   * _Bijdrage GitHub-code_: <https://github.com/magento/magento2/commit/581b7ef1>
+* _ACP2E-3374_: In back-end, standaard winkelwaarden voor productkenmerken (in plaats van verwachte beheerderswaarden)
+   * _Fix-opmerking_: In de back-end worden nu beheerderswaarden gebruikt in plaats van de standaard winkelwaarden voor productkenmerken.
    * _GitHub codebijdrage_: <https://github.com/magento/magento2/commit/5184c067>
 * _ACP2E-3377_: De regels van de winkelwagen &quot;Vaste korting van het bedrag voor het volledige winkelwagentje&quot;actie passen onjuiste kortingen toe wanneer het toevoegen van bundelproducten
-   * _Nota van de Reparatie_: De vaste regels van het aantalkarretje werden niet behoorlijk toegepast op bundelproducten. Bij de berekening van het totale kortingsbedrag worden nu onderliggende bundelproducten in aanmerking genomen, wat resulteert in een correcte disconteringsberekening.
-   * _GitHub codebijdrage_: <https://github.com/magento/magento2/commit/1366ae5e>
-* _ACP2E-3403_: De Regels van de Kar van de Prijs berekenen Verkeerde Korting
+   * _Fix-opmerking_: de regels voor de winkelwagen met een vast bedrag werden niet correct toegepast op bundelproducten. Bij de berekening van het totale kortingsbedrag worden nu onderliggende bundelproducten in aanmerking genomen, wat resulteert in een correcte disconteringsberekening.
+   * _Bijdrage GitHub-code_: <https://github.com/magento/magento2/commit/1366ae5e>
+* _ACP2E-3403_: Regels voor winkelwagenprijs Verkeerde berekening van korting
    * _nota van de Reparatie_: De vaste kortingen van het bedrag worden nu behoorlijk berekend. Voorafgaand aan de correctie werden kortingen voor vaste bedragen niet correct toegepast op bundelproducten.
    * _GitHub codebijdrage_: <https://github.com/magento/magento2/commit/0b488dd1>
 * _ACP2E-3406_: Geneste categorieën in regelvoorwaarden die niet tonen
@@ -1809,10 +1809,10 @@ Voordat ze automatisch werden afgewezen.
    * _GitHub codebijdrage_: <https://github.com/magento/magento2/commit/d4de4726>
 * _ACP2E-3491_: De voorwaarde van de de regelsku van de kunst ontbreekt voor factuur.
    * _nota van de Reparatie_: De Korting op het product van de Bundel met dynamische prijs wordt nu correct weerspiegeld in de factuur. Voorheen werd de korting niet in de factuur weergegeven.
-   * _GitHub codebijdrage_: <https://github.com/magento/magento2/commit/3f12d152>
+   * _Bijdrage GitHub-code_: <https://github.com/magento/magento2/commit/3f12d152>
 * _ACP2E-3498_: Onjuiste disconteringswaarde wanneer de veelvoudige regels van de kartprijs gelijktijdig met gedisconteerde/speciale geprijsde producten worden toegepast
-   * _nota van de Reparatie_: Voorafgaand aan de moeilijke situatie, werd het vaste bedrag voor de volledige kartregels niet behoorlijk toegepast als meer dan één werd toegepast. Nu worden de regels voor kortingen op vaste bedragen correct toegepast.
-   * _GitHub codebijdrage_: <https://github.com/magento/magento2/commit/1984c61c>
+   * _Fix-opmerking_: Voorafgaand aan de fix werd het vaste bedrag voor de regels voor het hele winkelwagentje niet correct toegepast als er meer dan één werd toegepast. Nu worden de regels voor kortingswagens met een vast bedrag correct toegepast.
+   * _Bijdrage GitHub-code_: <https://github.com/magento/magento2/commit/1984c61c>
 
 ### Retourneert
 
@@ -1826,11 +1826,11 @@ Eerder beperkte admin-gebruikers konden het retourmenu en de knoppen zien.
 
 * _AC-11907_: Het toevoegen van URL herschrijft met een accent veroorzaakt oneindig laden
    * _nota van de Reparatie_: Het systeem leidt nu met succes tot en functioneert URL herschrijft met accenten, verhinderend oneindig ladend tijdens het besparingsproces. Eerder veroorzaakte het toevoegen van een URL voor herschrijven met een accent een oneindig ladingsprobleem.
-   * _GitHub kwestie_: <https://github.com/magento/magento2/issues/38692>
-   * _GitHub codebijdrage_: <https://github.com/magento/magento2/commit/44cef3a9>
-* _ACP2E-2641_: De multiVerkeerde categorie van de Opslag rl-herschrijft voor derde niveaucategorie
-   * _Bevestig nota_: Produceer correcte url herschrijft voor kinderen met ouder met douane scoped url sleutel
-   * _GitHub codebijdrage_: <https://github.com/magento/magento2/commit/ea79f7dd>
+   * _GitHub-probleem_: <https://github.com/magento/magento2/issues/38692>
+   * _Bijdrage GitHub-code_: <https://github.com/magento/magento2/commit/44cef3a9>
+* _ACP2E-2641_: Multi Store Verkeerde categorie url-herschrijven voor categorie op het derde niveau
+   * _Opmerking repareren_: Genereer de juiste url-herschrijvingen voor kinderen met bovenliggende URL met aangepaste URL-sleutel
+   * _Bijdrage GitHub-code_: <https://github.com/magento/magento2/commit/ea79f7dd>
 * _ACP2E-2770_: De karakters van dubbel-byte (speciale karakters) in de gebiedsblokken van de Naam van het Product productverwezenlijking in achterste eind
    * _nota van de Reparatie_: Een nieuwe het plaatsen is toegevoegd die u toestaat om vertaliteratie op productURL al dan niet toe te passen. Instelling is hier beschikbaar: Storingen > Configuratie > Catalogus > Catalogus > Optimalisatie van zoekprogramma&#39;s: &quot;Transliteratie toepassen voor product-URL&quot;
    * _GitHub codebijdrage_: <https://github.com/magento/magento2/commit/b2286ecf>
@@ -1865,7 +1865,7 @@ Eerder beperkte admin-gebruikers konden het retourmenu en de knoppen zien.
 * _ACP2E-3273_: ReCaptcha V2 toont verkeerd bij kassa voor het Duits
    * _nota van de Reparatie_: Eerder recaptcha van onder e-mailadres van checkout verschijnen unstyled voor talen met lange woorden, zoals duits. Hierna ziet de rechaptcha er hetzelfde uit als alle elementen van de rest van de gebieden.
    * _GitHub codebijdrage_: <https://github.com/magento/magento2/commit/7377de59>
-* _ACP2E-3300_: Captcha op admin login vereist geen interactie voor sommige gebruikers
+* _ACP2E-3300_: Captcha bij het inloggen door de beheerder vereist voor sommige gebruikers geen interactie
    * _nota van de Reparatie_: ReCaptcha voor admin login wordt bevestigd zoals verwacht
    * _GitHub codebijdrage_: <https://github.com/magento/security-package/commit/8f64ab3c>
 
@@ -1873,10 +1873,10 @@ Eerder beperkte admin-gebruikers konden het retourmenu en de knoppen zien.
 
 * _AC-10757_: [ Vaste typefout van de kwestie ] in tracking.phtml - anders genoemd JS-functies &quot;currier&quot;aan &quot;drager&quot;
    * _nota van de Reparatie_: Het systeem gebruikt nu correct de term &quot;drager&quot;in plaats van de verkeerd gespelde &quot;currier&quot;in de de handlerfuncties van JavaScript die in het orde volgende malplaatje worden gebruikt, die correcte functienaam en codeduidelijkheid verzekeren. Voorheen werd de verkeerd gespelde term &quot;currier&quot; gebruikt, wat tot verwarring en inconsistentie in de codebase kan leiden.
-   * _GitHub kwestie_: <https://github.com/magento/magento2/issues/34523>
-   * _GitHub codebijdrage_: <https://github.com/magento/magento2/pull/33414>
-* _AC-11938_: UPS REST &quot;Een verzending kan geen KGS/IN of LBS/CM of OZS/CM als zijn eenheid van metingen hebben&quot;
-   * _nota van de Reparatie_: Zorg aan de tarieven van UPS in controle en kart zichtbaar zouden moeten zijn.
+   * _GitHub-probleem_: <https://github.com/magento/magento2/issues/34523>
+   * _Bijdrage GitHub-code_: <https://github.com/magento/magento2/pull/33414>
+* _AC-11938_: UPS REST &quot;Een zending kan geen KGS/IN of LBS/CM of OZS/CM als meeteenheid hebben&quot;
+   * _Vaste opmerking_: Zorg ervoor dat de UPS-tarieven zichtbaar zijn bij het afrekenen en de winkelwagen.
    * _GitHub kwestie_: <https://github.com/magento/magento2/issues/38618>
    * _GitHub codebijdrage_: <https://github.com/magento/magento2/commit/493e01f5>
 * _wisselstroom-12938_: De &quot;zandbak&quot;van UPS en &quot;prod&quot;opstellingsinstructieupdates in devdoc
@@ -1948,11 +1948,11 @@ Eerder beperkte admin-gebruikers konden het retourmenu en de knoppen zien.
 * _AC-13848_: Verbeter statische tests om gebruik door 3d partijuitbreidingen toe te laten
    * _GitHub codebijdrage_: <https://github.com/magento/magento2/commit/9e383b4d>
 * _ACP2E-3334_: [ de Interne ] Fixture past mislukking toe is niet getoond tijdens uitvoering of in logboeken
-   * _Bevestig nota_: &quot;-
-   * _GitHub codebijdrage_: <https://github.com/magento/magento2/commit/d4de4726>
+   * _Opmerking_ repareren: &#39;-
+   * _Bijdrage GitHub-code_: <https://github.com/magento/magento2/commit/d4de4726>
 * _ACP2E-3458_: [ MFTF ] StorefrontCheckoutProcessForQuoteWithoutNegotiatedPricesTest
-   * _Bevestig nota_: Vaste mftfs
-   * _GitHub codebijdrage_: <https://github.com/magento/magento2/commit/078c387e>
+   * _Vaste opmerking_: Vaste mftfs
+   * _Bijdrage GitHub-code_: <https://github.com/magento/magento2/commit/078c387e>
 
 ### UI Framework
 
