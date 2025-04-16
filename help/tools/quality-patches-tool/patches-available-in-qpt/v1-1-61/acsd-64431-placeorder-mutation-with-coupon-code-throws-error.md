@@ -3,15 +3,15 @@ title: 'ACSD-64431: De "placeOrder"-mutatie met couponcode in de aanvraag veroor
 description: Pas de ACSD-64431-patch toe om het Adobe Commerce-probleem op te lossen waarbij de "placeOrder"-mutatie die de gegevens van de couponcode in het verzoek bevat, een interne serverfout veroorzaakt in plaats van dat de order met succes is geplaatst.
 feature: GraphQL, Orders, Promotions/Events
 role: Admin, Developer
-source-git-commit: 883b9db12308c8832afbf709bc188edab746618f
+exl-id: 13918f3e-842b-4b2e-b2e2-2d8add542a87
+source-git-commit: 43f4055d7c6bf681fde851d5132860ea7b68b677
 workflow-type: tm+mt
-source-wordcount: '416'
+source-wordcount: '392'
 ht-degree: 0%
 
 ---
 
-
-# ACSD-64431: De &quot;placeOrder&quot;-mutatie met couponcode in de aanvraag veroorzaakt een interne fout
+# ACSD-64431: De &quot;placeOrder&quot;-mutatie met couponcode in de aanvraag veroorzaakt een interne serverfout
 
 De ACSD-64431-patch verhelpt het probleem waarbij de `placeOrder` -mutatie die de gegevens van de couponcode in de aanvraag bevat, een interne serverfout veroorzaakt in plaats van de order succesvol te plaatsen. Deze patch is beschikbaar wanneer [[!DNL Quality Patches Tool (QPT)]](/help/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches.md) 1.1.61 wordt geïnstalleerd. De patch-id is ACSD-64431. Het probleem wordt volgens de planning opgelost in Adobe Commerce 2.4.8.
 
@@ -341,10 +341,6 @@ Om individuele flarden toe te passen, gebruik de volgende verbindingen afhankeli
 
 * Op locatie Adobe Commerce of Magento Open Source: [[!DNL Quality Patches Tool] > Gebruik ](/help/tools/quality-patches-tool/usage.md) in de handleiding [!DNL Quality Patches Tool] .
 * Adobe Commerce op wolkeninfrastructuur: [ Verbeteringen en Patches > Pas Patches ](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html) in Commerce op de gids van de Infrastructuur van de Wolk toe.
-
-## Aanvullende stappen vereist na de installatie van de patch
-
-(Deze sectie is optioneel; er kunnen enkele stappen vereist zijn na het aanbrengen van de patch om het probleem op te lossen.) 
 
 ## Gerelateerde lezing
 

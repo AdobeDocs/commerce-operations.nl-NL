@@ -2,9 +2,9 @@
 user-guide-title: Gereedschappen
 user-guide-description: Leer meer over de verschillende gereedschappen die u met Adobe Commerce kunt gebruiken, hun gebruik, het installatieproces en hoe u toegang krijgt.
 feature: Configuration
-source-git-commit: 0960da0b0c1945e899ce092fb938de13e1b5c95c
+source-git-commit: 43f4055d7c6bf681fde851d5132860ea7b68b677
 workflow-type: tm+mt
-source-wordcount: '7422'
+source-wordcount: '7423'
 ht-degree: 0%
 
 ---
@@ -772,7 +772,7 @@ ht-degree: 0%
          - [Overzicht: [!DNL Quality Patches Tool]  (QPT) v1.1.61](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-61/overview.md)
          - [ ACP2E-3689: De veelvoudige kwesties met de vertoning van de categorieboom op diepere niveaus en het weerspiegelen van anker/niet-ankerverhoudingen ](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-61/acp2e-3689-issues-with-category-tree-display-reflect-anchor-non-anchor-relationships.md)
          - [ACSD-64178: [!UICONTROL Edit Attribute Set] pagina wordt langzaam geladen met duizenden productkenmerken](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-61/acsd-64178-attribute-set-edit-page-loads-slow-with-thousands-of-attributes.md)
-         - [ACSD-64431: De &quot;placeOrder&quot;-mutatie met couponcode in de aanvraag veroorzaakt een interne fout](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-61/acsd-64431-placeorder-mutation-with-coupon-code-throws-error.md)
+         - [ACSD-64431: De &quot;placeOrder&quot;-mutatie met couponcode in de aanvraag veroorzaakt een interne serverfout](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-61/acsd-64431-placeorder-mutation-with-coupon-code-throws-error.md)
          - [ACSD-64684: validatiefout bij het opslaan van een cadeaukaart met een waarde groter dan 999 vanwege de komma in duizend (1.000)](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-61/acsd-64684-validation-error-for-gift-card-value-over-999-due-to-comma-in-one-thousand.md)
          - [ACSD-63883: Het bevestigen onjuiste items_count in  [!DNL GraphQL]  reactie voor [!UICONTROL Requisition List]](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-61/acsd-63883-fixes-the-issue-where-the-requisition-list.md)
          - [ACP2E-3705: indexer_update_all_views de uitvoering van de cron mislukt wanneer MAGE_INDEXER_THREADS_COUNT is ingesteld](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-61/acp2e-3705-fixes-an-issue-where-the-indexer.md)
