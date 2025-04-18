@@ -1,7 +1,7 @@
 ---
-source-git-commit: 2f8ca1dd3289c1a24e33198c95d38c1a04a507ff
+source-git-commit: ae8701cf2486ef0a79c96bd264e16b0e7803a8f6
 workflow-type: tm+mt
-source-wordcount: '26047'
+source-wordcount: '26039'
 ht-degree: 0%
 
 ---
@@ -195,8 +195,8 @@ Eerder was het mogelijk om de prijsgroep voor de websitegroep Dupliceren te make
    * _nota van de Reparatie_: Het systeem richt nu correct de Knopen van de Acties van de Pagina aan de rechterkant van de kleverige kopbal in het admin paneel, dat de professionele blik en het gevoel verbetert. Eerder zweven deze knoppen onjuist naar de linkerkant van de kleverige koptekst.
    * _GitHub kwestie_: <https://github.com/magento/magento2/issues/38701>
    * _GitHub codebijdrage_: <https://github.com/magento/magento2/commit/44cef3a9>
-* _AC-11999_: dev :di: infofout in magento 2.4.7
-   * _nota van de Reparatie_: Het systeem toont nu correct constructorparameters wanneer het uitvoeren van het dev :di: info bevel, verhinderend om het even welke fouten voor te komen. Eerder resulteerde het uitvoeren van deze opdracht in een fout als gevolg van een niet-overeenkomend type in het argument.
+* _AC-11999_: `dev:di:info` fout in magento 2.4.7
+   * _nota van de Reparatie_: Het systeem toont nu correct constructorparameters wanneer het uitvoeren van het `dev:di:info` bevel, verhinderend om het even welke fouten voor te komen. Eerder resulteerde het uitvoeren van deze opdracht in een fout als gevolg van een niet-overeenkomend type in het argument.
    * _GitHub kwestie_: <https://github.com/magento/magento2/issues/38740>
    * _GitHub codebijdrage_: <https://github.com/magento/magento2/commit/0c53bbf7>
 * _AC-13000_: Login als klant opt-in checkbox niet vertaalbaar
@@ -331,7 +331,7 @@ We kunnen nu aangepaste orderstatussen bijwerken, terwijl eerder de status allee
    * _nota van de Reparatie_: Na de moeilijke situatie, als het douane admin domein een subdomein van het belangrijkste domein is, is admin toegankelijk slechts van gevormde subdomain.
    * _GitHub kwestie_: <https://github.com/magento/magento2/issues/37663>
    * _GitHub codebijdrage_: <https://github.com/magento/magento2/commit/3f12d152>
-* _ACP2E-3392_: Gebroken bevestiging voor &quot;Maximale Aantal Toegestaan in het Schepen Kar&quot;
+* _ACP2E-3392_: Gebroken bevestiging voor &quot;Maximale Aantal Toegestaan in het Schepen van Kar&quot;
    * _nota van de Reparatie_: Eerder, wanneer wij `Maximum Qty Allowed in Shopping Cart` leeg zetten, veroorzaakte het geen uitzondering, hoewel een lege waarde hier niet wordt goedgekeurd. Nadat deze correctie is toegepast, genereert het plaatsen van een lege tekenreeks uitzonderingen en wordt het opslaan van het product niet meer toegestaan.
    * _GitHub codebijdrage_: <https://github.com/magento/magento2/commit/d50f6b5d>
 * _ACP2E-3408_: [ Uitgave UI van de Voorproef van de Bouwer van de Pagebuilder ] De knopen in de kolom van de Bouwer van de Pagina worden niet correct opgesteld
@@ -964,7 +964,7 @@ We kunnen nu aangepaste orderstatussen bijwerken, terwijl eerder de status allee
    * _nota van de Reparatie_: Het systeem stelt nu het gebied van de gebiedstekst opnieuw in wanneer het land in het dropdown menu wordt veranderd, die ervoor zorgen dat de vorige waarden niet blijven bestaan. Als u voorheen het land uit de vervolgkeuzelijst wijzigde, werd het veld Regio niet opnieuw ingesteld, waardoor de laatst opgeslagen waarde behouden bleef.
    * _GitHub codebijdrage_: <https://github.com/magento/magento2/commit/3ea26621>
 * _AC-9240_: Het schrappen van Klant schoon niet Alle Browser Gegevens van de Zitting over Storefront voor binnen het programma gezette &amp; Geschrapte Klant
-   * _Bevestig nota_: Het schrappen van een klant ontruimt nu alle gegevens van de browser zitting van de storefront voor het programma geopende en geschrapte klanten zoals verwacht. De winkelier kan blijven winkelen en hun browser behandelt hun sessie als een gastsessie. Eerder, toen de klantenrekening voor een het programma geopende verkoopster werd geschrapt van Admin, dan browser van de verkoopster de fouten van JavaScript verwierp.
+   * _Bevestig nota_: Het schrappen van een klant ontruimt nu alle gegevens van de browser zitting van de storefront voor het programma geopende en geschrapte klanten zoals verwacht. De winkelier kan blijven winkelen en hun browser behandelt hun sessie als een gastsessie. Eerder, toen de klantenrekening voor een het programma geopende verkoopster van Admin werd geschrapt, dan de browser van de verkoopster wierp de fouten van JavaScript.
    * _GitHub codebijdrage_: <https://github.com/magento/magento2/commit/7d5e3906>
 
 ### Kader
@@ -1084,8 +1084,8 @@ We kunnen nu aangepaste orderstatussen bijwerken, terwijl eerder de status allee
    * _nota van de Reparatie_: Het systeem verwijzingen nu correct klassen in modules, die vlottere verrichting verzekeren en neerstortingen wegens niet-bestaande klassen verhinderen. Dit omvat een bugfix in de modules Indexer en Creditmemo, en de implementatie van HttpGetActionInterface in de klasse PrintAction. Eerder, leidden de onjuiste klassenverwijzingen tot fouten en potentiële systeemneerstortingen, en bepaalde functionaliteiten, zoals filename voor creditmemo PDF dossiers en het opnieuw indexeren van voorraden, werkten niet zoals verwacht.
    * _GitHub kwestie_: <https://github.com/magento/magento2/issues/39126>
    * _GitHub codebijdrage_: <https://github.com/magento/magento2/pull/37784>
-* _AC-12964_: Mogelijkheid om Gebied voor dev :di: info CLI bevel te bepalen
-   * _nota van de Reparatie_: Het systeem staat nu ontwikkelaars toe om een gebied voor het dev :di: info CLI bevel te bepalen, dat de ontwikkeling en het het zuiveren proces verbetert. Eerder kon deze opdracht alleen informatie weergeven voor het GLOBAL-gebied.
+* _AC-12964_: Mogelijkheid om Gebied voor `dev:di:info` bevel CLI te bepalen
+   * _nota van de Reparatie_: Het systeem staat nu ontwikkelaars toe om een gebied voor het `dev:di:info` bevel CLI te bepalen, die de ontwikkeling en het het zuiveren proces verbeteren. Eerder kon deze opdracht alleen informatie weergeven voor het GLOBAL-gebied.
    * _GitHub kwestie_: <https://github.com/magento/magento2/issues/38758>
    * _GitHub codebijdrage_: <https://github.com/magento/magento2/pull/38759>
 * _AC-13149_: [ geef ] toe voeg isMultipleFiles bezit aan het malplaatje van het beeldvormelement toe
@@ -1506,8 +1506,8 @@ Eerder, toegewezen aan de admin store in plaats van hun respectieve opslag.
 * _LYNX-399_: De placeholder duimnagel keert terug wanneer een eenvoudig product aan kar binnen een gegroepeerd product wordt toegevoegd
    * _nota van de Reparatie_: Vaste een kwestie waar het toevoegen van een eenvoudig product (deel van een gegroepeerd product) aan de kar een placeholder duimnagelbeeld teruggaf, zelfs wanneer het product een toegewezen beeld had.
 Details herstellen:
-・ De miniatuur van het product geeft nu correct de toegewezen afbeelding weer, indien beschikbaar.
-・ De miniatuurselectie respecteert de onderstaande beheerdersconfiguratie:
+* De miniatuur van het product geeft nu correct de toegewezen afbeelding weer, indien beschikbaar.
+* De miniatuurselectie respecteert de onderstaande beheerdersconfiguratie:
 Winkels > Configuratie > Verkoop > Afhandeling > Winkelwagentje > Gegroepeerde productafbeelding.
 Dit zorgt voor consistent miniatuurgedrag voor gegroepeerde producten op basis van opslaginstellingen.
 * _LYNX-400_: De attributen van de douaneoptie van de klant die niet met geheelwaarden werken
@@ -1517,8 +1517,8 @@ Dit zorgt voor consistent miniatuurgedrag voor gegroepeerde producten op basis v
 * _LYNX-403_: only_x_left_in_stock keert altijd 0 voor configureerbare producten terug
    * _nota van de Reparatie_: Los een kwestie op waar het only_x_left_in_stock attribuut altijd 0 voor configureerbare producten terugkeerde wanneer toegevoegd gebruikend ouderSKU met opties.
 Details herstellen:
-・ De waarde only_x_left_in_stock geeft nu nauwkeurig de voorraad van de geselecteerde kindvariant in plaats van bovenliggende SKU weer.
-・ Dit zorgt ervoor dat de voorraadniveaus correct worden getoond voor configureerbare productvariaties in de kar en productpagina&#39;s.
+* De waarde only_x_left_in_stock geeft nu nauwkeurig de voorraad van de geselecteerde kindvariant in plaats van bovenliggende SKU weer.
+* Dit zorgt ervoor dat voorraadniveaus correct worden getoond voor configureerbare productvariaties in de kar en productpagina&#39;s.
 * _LYNX-411_: De vraag van GraphQL keert geen correcte berekende regelmatige prijs voor klantgerichte producten terug
    * _Bevestig nota_: Vaste een kwestie waar GraphQL niet de correcte berekende regelmatige prijs voor klantgerichte producten terugbracht. De vraag omvat nu correct de berekende regelmatige prijs met aanpasbare toegepaste waarden (b.v., $125) in het prijsbezit, dat zowel de basisprijs als om het even welke extra aanpassingskosten weerspiegelt.
 * _LYNX-412_: AppliedTaxes via EstimatedTotals blijven met bijgewerkte mutaties
@@ -1546,7 +1546,7 @@ Details herstellen:
 * _LYNX-637_: De Verenigbaarheid van de Storefront - logica van de Update om lijstnaam met prefix en andere minder belangrijke verbeteringen te krijgen
    * _Bevestig nota_: Bijgewerkte logica om de lijstnaam met de prefix terug te winnen (met betrekking tot veranderingen SCP).
 * _LYNX-643_: sparen in adresboek werkt niet wanneer het gebruiken van setBillingAddressOnCart GQL&#39;s same_as_Shipping gebied
-   * _Bevestig nota_: Vaste een kwestie waar het verschepende adres niet aan het het adresboek van de klant werd bewaard toen het gebruiken van de GraphQL setBillingAddressOnCart met same_as_Shipping gebied dat aan waar wordt geplaatst. Het verzendadres is nu correct opgeslagen zoals u had verwacht.
+   * _Bevestiging nota_: Vaste een kwestie waar het verschepende adres niet aan het het adresboek van de klant werd bewaard toen het gebruiken van de GraphQL setBillingAddressOnCart met same_as_Shipping gebied aan waar werd geplaatst. Het verzendadres is nu correct opgeslagen zoals u had verwacht.
 * _LYNX-650_: normaliseer order_id in mutaties
    * _Bevestig nota_: Gestandaardiseerd de orde_id input in mutaties en bijgewerkt de orde annuleert bevestigingsemailmalplaatje om verhogingsidentiteitskaart in plaats van orde identiteitskaart bloot te stellen.
 * _LYNX-651_: CustomerOrder toont niet de ordecommentaren
