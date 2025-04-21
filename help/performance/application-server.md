@@ -2,9 +2,9 @@
 title: GraphQL Application Server
 description: Volg deze instructies om de GraphQL Application Server in te schakelen bij uw Adobe Commerce-implementatie.
 exl-id: 9b223d92-0040-4196-893b-2cf52245ec33
-source-git-commit: c5446f0273705b158297c0a253054742ec95b44e
+source-git-commit: 2f8396a367cbe1191bdf67aec75bd56f64d3fda8
 workflow-type: tm+mt
-source-wordcount: '2082'
+source-wordcount: '2074'
 ht-degree: 0%
 
 ---
@@ -14,11 +14,11 @@ ht-degree: 0%
 
 Met de Commerce GraphQL Application Server kan Adobe Commerce de status onderhouden van Commerce GraphQL API-aanvragen. De Server van de Toepassing van GraphQL, die op de uitbreiding van de Steekproef wordt voortgebouwd, werkt als proces met arbeidersdraden die verzoekverwerking behandelen. GraphQL Application Server bewaart de status van een bootstrapped toepassing bij GraphQL API-aanvragen en verbetert de verwerking van aanvragen en de algehele productprestaties. API-aanvragen worden aanzienlijk efficiënter.
 
-GraphQL Application Server is alleen beschikbaar voor Adobe Commerce. Het is niet beschikbaar voor Magento Open Source. Voor de Pro projecten van de Wolk, moet u [ een 1} kaartje van de Steun van Adobe Commerce voorleggen om de Server van de Toepassing van GraphQL toe te laten.](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide)
+GraphQL Application Server is alleen beschikbaar voor Adobe Commerce. Deze is niet beschikbaar voor Magento Open Source. Voor de Pro projecten van de Wolk, moet u [ een 1} kaartje van de Steun van Adobe Commerce voorleggen om de Server van de Toepassing van GraphQL toe te laten.](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide)
 
 >[!NOTE]
 >
->GraphQL Application Server is momenteel niet compatibel met [[!DNL Amazon Simple Storage Service (AWS S3)] ](https://aws.amazon.com/s3/) . Adobe Commerce op klanten van de wolkeninfrastructuur die momenteel [!DNL AWS S3] voor [ verre opslag ](../configuration/remote-storage/cloud-support.md) gebruiken kan de Server van de Toepassing van GraphQL tot de Adobe een hotfix later in 2024 vrijgeeft.
+>GraphQL Application Server is momenteel niet compatibel met [[!DNL Amazon Simple Storage Service (AWS S3)] ](https://aws.amazon.com/s3/) . Adobe Commerce op klanten van de wolkeninfrastructuur die momenteel [!DNL AWS S3] voor [ verre opslag ](../configuration/remote-storage/cloud-support.md) gebruiken kan de Server van de Toepassing van GraphQL niet gebruiken.
 
 ## Architectuur
 
@@ -126,7 +126,7 @@ Voltooi de volgende stappen alvorens de Server van de Toepassing van GraphQL op 
 
 >[!NOTE]
 >
->Zorg ervoor dat alle aangepaste instellingen in het basisbestand van `.magento.app.yaml` op de juiste wijze naar het `application-server/.magento/.magento.app.yaml` -bestand worden gemigreerd. Nadat het `application-server/.magento/.magento.app.yaml` dossier aan uw project wordt toegevoegd, zou u het naast het wortel `.magento.app.yaml` dossier moeten handhaven. Bijvoorbeeld, als u de dienst van RabbitMQ ](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/configure/service/rabbitmq) moet vormen of [ Webeigenschappen ](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/configure/app/properties/web-property) beheert u de zelfde configuratie aan `application-server/.magento/.magento.app.yaml` eveneens zou moeten toevoegen.[
+>Zorg ervoor dat alle aangepaste instellingen in het basisbestand van `.magento.app.yaml` op de juiste wijze naar het `application-server/.magento/.magento.app.yaml` -bestand worden gemigreerd. Nadat het `application-server/.magento/.magento.app.yaml` dossier aan uw project wordt toegevoegd, zou u het naast het wortel `.magento.app.yaml` dossier moeten handhaven. Bijvoorbeeld, als u de dienst RabbitMQ ](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/configure/service/rabbitmq) moet vormen of [ Webeigenschappen ](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/configure/app/properties/web-property) beheert u de zelfde configuratie aan `application-server/.magento/.magento.app.yaml` eveneens zou moeten toevoegen.[
 
 ### Starter-projecten implementeren
 
