@@ -3,17 +3,17 @@ title: 'ACSD-63323: lost [!UICONTROL Select All] functionaliteit op en verbetert
 description: Pas de ACSD-63323-patch toe om het Adobe Commerce-probleem op te lossen, waarbij de optie [!UICONTROL Select All] niet werkt wanneer u producten aan een categorie toevoegt. Bovendien zorgt het ervoor dat paginering en het label voor het recordaantal correct werken wanneer u producten aan een categorie toevoegt via het popup-raster.
 feature: Products
 role: Admin, Developer
-source-git-commit: f3f0cc93adf83b485ca50811adcc561638e3c5c2
+exl-id: 96e318fd-f1dd-4b15-b171-78ae1c8e4e0d
+source-git-commit: d24909ea2571eacafac1ff6b225e87bc40d320bc
 workflow-type: tm+mt
-source-wordcount: '386'
+source-wordcount: '388'
 ht-degree: 0%
 
 ---
 
-
 # ACSD-63323: lost [!UICONTROL Select All] functionaliteit op en verbetert paginering en recordaantal in popup van de productcategorie
 
-De ACSD-63323-patch verhelpt het probleem waarbij de optie **[!UICONTROL Select All]** niet werkt wanneer u producten aan een categorie toevoegt. Bovendien zorgt het ervoor dat paginering en het label voor het recordaantal correct werken wanneer u producten aan een categorie toevoegt via het popup-raster. Deze patch is beschikbaar wanneer [[!DNL Quality Patches Tool (QPT)]](/help/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches.md) wordt geïnstalleerd. De patch-id is ACSD-63323. Het probleem wordt volgens de planning opgelost in Adobe Commerce 2.4.8.
+De ACSD-63323-patch verhelpt het probleem waarbij de optie **[!UICONTROL Select All]** niet werkt wanneer u producten aan een categorie toevoegt. Bovendien zorgt het ervoor dat paginering en het label voor het recordaantal correct werken wanneer u producten aan een categorie toevoegt via het popup-raster. Deze patch is beschikbaar wanneer [[!DNL Quality Patches Tool (QPT)]](/help/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches.md) 1.1.60 wordt geïnstalleerd. De patch-id is ACSD-63323. Het probleem wordt volgens de planning opgelost in Adobe Commerce 2.4.8.
 
 ## Betrokken producten en versies
 
@@ -68,5 +68,3 @@ Om individuele flarden toe te passen, gebruik de volgende verbindingen afhankeli
 Meer informatie over [!DNL Quality Patches Tool] vindt u in:
 
 * [[!DNL Quality Patches Tool]: Een zelfbedieningshulpmiddel voor kwaliteitspatches ](/help/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches.md) in de gids van Hulpmiddelen.
-
-
