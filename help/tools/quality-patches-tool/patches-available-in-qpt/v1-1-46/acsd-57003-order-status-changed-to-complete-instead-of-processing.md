@@ -4,9 +4,9 @@ description: Pas de ACSD-57003-patch toe om het Adobe Commerce-probleem op te lo
 feature: Orders, Invoices, Shipping/Delivery
 role: Admin, Developer
 exl-id: a28ecc35-5c9a-4bba-b0b9-67fbe37ed8c3
-source-git-commit: 81c78439f7c243437b7b76dc80560c847af95ace
+source-git-commit: 128107310416e97edca3b122e97456138d04073f
 workflow-type: tm+mt
-source-wordcount: '362'
+source-wordcount: '366'
 ht-degree: 0%
 
 ---
@@ -19,11 +19,11 @@ ACSD-57003 herstelt de flard waar de ordestatus in *Volledige* in plaats van het
 
 **het flard wordt gecreeerd voor de versie van Adobe Commerce:**
 
-* Adobe Commerce (alle implementatiemethoden) 2.4.6-p3
+* Adobe Commerce (alle implementatiemethoden) 2.4.6-p3, 2.4.6-p8, 2.4.7-p3
 
 **Compatibel met de versies van Adobe Commerce:**
 
-* Adobe Commerce (alle implementatiemethoden) 2.4.6 - 2.4.6-p3
+* Adobe Commerce (alle implementatiemethoden) 2.4.6 - 2.4.6-p9, 2.4.7-p2 - 2.4.7-p4
 
 >[!NOTE]
 >
@@ -53,7 +53,7 @@ De statusveranderingen van de orde in *Volledige* na het creëren van een credit
 
 Om individuele flarden toe te passen, gebruik de volgende verbindingen afhankelijk van uw plaatsingsmethode:
 
-* Adobe Commerce of Magento Open Source op locatie: [[!DNL Quality Patches Tool]  > Gebruik ](/help/tools/quality-patches-tool/usage.md) in de handleiding [!DNL Quality Patches Tool] .
+* Op locatie Adobe Commerce of Magento Open Source: [[!DNL Quality Patches Tool] > Gebruik ](/help/tools/quality-patches-tool/usage.md) in de handleiding [!DNL Quality Patches Tool] .
 * Adobe Commerce op wolkeninfrastructuur: [ Verbeteringen en Patches > Pas Patches ](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html) in Commerce op de gids van de Infrastructuur van de Wolk toe.
 
 ## Gerelateerde lezing
