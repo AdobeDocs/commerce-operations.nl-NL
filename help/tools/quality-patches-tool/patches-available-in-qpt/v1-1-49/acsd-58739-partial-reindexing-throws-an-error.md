@@ -4,14 +4,18 @@ description: Pas de ACSD-55241-patch toe om het Adobe Commerce-probleem op te lo
 feature: Inventory, Products
 role: Admin, Developer
 exl-id: b4e6b8b4-43de-4434-94fb-6269a75e1c28
-source-git-commit: c643d55823ae0791ecfa0f2220116bbcbd02668a
+source-git-commit: e29b177fec7c5cc411c3495ce635e08fa6540ab8
 workflow-type: tm+mt
-source-wordcount: '330'
+source-wordcount: '337'
 ht-degree: 0%
 
 ---
 
 # ACSD-58739: Onvolledige herindexering veroorzaakt een fout
+
+>[!NOTE]
+>
+>Dit flard wordt vervangen door [ ACP2E-3705 ](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-61/acp2e-3705-fixes-an-issue-where-the-indexer.md).
 
 De ACSD-58739-patch verhelpt het probleem waarbij een fout optreedt bij het opnieuw coderen. Deze patch is beschikbaar wanneer [[!DNL Quality Patches Tool (QPT)] ](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/announcements/commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches) 1.1.49 wordt geïnstalleerd. De patch-id is ACSD-58739. Het probleem wordt volgens de planning opgelost in Adobe Commerce 2.4.8.
 
