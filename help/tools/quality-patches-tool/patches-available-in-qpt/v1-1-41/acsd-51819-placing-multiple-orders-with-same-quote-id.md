@@ -4,9 +4,9 @@ description: Pas de ACSD-51819-patch toe om het Adobe Commerce-probleem op te lo
 feature: Orders, Checkout
 role: Admin, Developer
 exl-id: dbca8790-d947-4104-bba9-b29abcfc0344
-source-git-commit: 81c78439f7c243437b7b76dc80560c847af95ace
+source-git-commit: 5f22591c499f0f5d349994195731c7c87512f5f0
 workflow-type: tm+mt
-source-wordcount: '376'
+source-wordcount: '389'
 ht-degree: 0%
 
 ---
@@ -19,11 +19,11 @@ De ACSD-51819-patch verhelpt het probleem waarbij meerdere bestellingen via deze
 
 **het flard wordt gecreeerd voor de versie van Adobe Commerce:**
 
-* Adobe Commerce (alle implementatiemethoden) 2.4.4-p2
+* Adobe Commerce (alle implementatiemethoden) 2.4.4-p2, 2.4.5-p5, 2.4.6, 2.4.6-p4, 2.4.7-p1
 
 **Compatibel met de versies van Adobe Commerce:**
 
-* Adobe Commerce (alle implementatiemethoden) 2.4.4 - 2.4.4-p3
+* Adobe Commerce (alle implementatiemethoden) 2.4.4 - 2.4.4-p11, 2.4.5-p3 - 2.4.5-p10, 2.4.6 - 2.4.6-p8, 2.4.7 - 2.4.7-p3
 
 >[!NOTE]
 >
@@ -55,7 +55,7 @@ Bestellingen zijn in beide browsers geplaatst.
 
 Om individuele flarden toe te passen, gebruik de volgende verbindingen afhankelijk van uw plaatsingsmethode:
 
-* Adobe Commerce of Magento Open Source op locatie: [[!DNL Quality Patches Tool]  > Gebruik ](/help/tools/quality-patches-tool/usage.md) in de handleiding [!DNL Quality Patches Tool] .
+* Op locatie Adobe Commerce of Magento Open Source: [[!DNL Quality Patches Tool] > Gebruik ](/help/tools/quality-patches-tool/usage.md) in de handleiding [!DNL Quality Patches Tool] .
 * Adobe Commerce op wolkeninfrastructuur: [ Verbeteringen en Patches > Pas Patches ](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html) in Commerce op de gids van de Infrastructuur van de Wolk toe.
 
 ## Gerelateerde lezing
