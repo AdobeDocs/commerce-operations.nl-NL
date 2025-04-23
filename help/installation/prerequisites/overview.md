@@ -2,9 +2,9 @@
 title: Voorwaarden voor installatie op locatie
 description: Meer informatie over de softwareafhankelijkheden die vereist zijn voor installaties in Adobe Commerce op locatie.
 exl-id: dd4694e7-5437-440c-bb67-804ae36149de
-source-git-commit: ca8dc855e0598d2c3d43afae2e055aa27035a09b
+source-git-commit: db2256f5327897a4376a0d038ce697e8f93235af
 workflow-type: tm+mt
-source-wordcount: '316'
+source-wordcount: '332'
 ht-degree: 1%
 
 ---
@@ -13,7 +13,7 @@ ht-degree: 1%
 
 Voordat u Adobe Commerce installeert, moet u het volgende doen:
 
-* Opstelling één of meerdere gastheren die aan de [ systeemvereisten ](../system-requirements.md) voldoen.
+* Opstelling één of meerdere gastheren die aan de [ systeemvereisten ](../system-requirements.md) voldoen die in *Commerce op-gebouw* tabel worden vermeld.
 * Als u opstelling meer dan één Webknoop met lading het in evenwicht brengen, opstelling en test dat deel van uw systeem _alvorens_ u de toepassing installeert.
 * Zorg ervoor dat u op verschillende punten tijdens de installatie een back-up van het gehele systeem kunt maken, zodat u het systeem kunt terugdraaien als er problemen zijn.
 
@@ -66,11 +66,11 @@ Om Apache te installeren of te bevorderen, zie [ Apache ](web-server/apache.md).
 
 ### PHP
 
-Zie [ systeemvereisten ](../system-requirements.md) voor gesteunde versies van PHP en [ PHP ](../system-requirements.md#php-settings) voor PHP vereisten.
+Zie *Commerce op-gebouw* lusje in [ systeemvereisten ](../system-requirements.md) voor gesteunde versies van PHP en [ PHP ](../system-requirements.md#php-settings) voor PHP vereisten.
 
 ### MySQL
 
-Controleer of u een compatibele versie van MySQL hebt voor de versie van Adobe Commerce die u installeert. Zie {de vereisten van 0} Systeem ](../system-requirements.md) voor gesteunde versies.[
+Controleer of u een compatibele versie van MySQL hebt voor de versie van Adobe Commerce die u installeert. Zie *Commerce op-gebouw* lusje in [ vereisten van het Systeem ](../system-requirements.md) voor gesteunde versies.
 
 ```bash
 mysql -u <database root user or database owner name> -p
@@ -110,7 +110,7 @@ Om uw installatie van OpenSearch te verifiëren:
 curl -XGET '<opensearch-hostname>:<opensearch-port>'
 ```
 
-Om de installatie van uw Elasticsearch te verifiëren:
+Ga als volgt te werk om uw Elasticsearch-installatie te verifiëren:
 
 ```bash
 curl -XGET '<elasticsearch-hostname>:<elasticsearch-port>'
