@@ -2,9 +2,9 @@
 title: Opmerkingen bij de release Adobe Commerce 2.4.7 Security Patch
 description: Leer meer over oplossingen voor beveiligingsproblemen, beveiligingsverbeteringen en andere beveiligingsupdates die zijn opgenomen in de beveiligingspatchreleases voor Adobe Commerce versie 2.4.7.
 exl-id: 38e5632b-c795-47d8-89dd-26bbaeb34e67
-source-git-commit: 9bf1c539220d70a8e7fe449e4d91199f23cc23b2
+source-git-commit: 331a76e8389b1779dda402f506ddb9b76bea95b9
 workflow-type: tm+mt
-source-wordcount: '410'
+source-wordcount: '533'
 ht-degree: 0%
 
 ---
@@ -24,6 +24,14 @@ Voor de recentste informatie over de veiligheidsinsectenmoeilijke situaties, zie
 ### Hooglichten
 
 Deze versie introduceert steun voor de Adobe Commerce [ HIPAA-Klaar uitbreiding ](https://experienceleague.adobe.com/en/docs/commerce-admin/start/compliance/hipaa-ready-service/overview).
+
+### Bekende problemen
+
+**Uitgave**: Wanneer het installeren van 2.4.7-p5 met PHP 8.2 of hoger, installeert het systeem `paypal/module-braintree` versie 4.7.0, die voor 2.4.8 en nieuwer voorgenomen is. Voor PHP 8.1 wordt de juiste Braintree versie 4.6.1-p5 gebruikt. Dit verschil komt door de losse afhankelijkheid van `adobe-commerce/extensions-metapackage: ~2.0` in het pakket metapakketten. Dit beïnvloedt de verenigbaarheid en de gesteunde eigenschap die voor PHP 8.2+ plaatsingen wordt geplaatst.<!-- ACPLTSRV-6276) -->
+
+Daarnaast kan voor de versies 2.4.7-p3, 2.4.7-p4 en 2.4.7-p5 de Braintree-extensie versie 4.6.1-p5 worden geïnstalleerd, terwijl sommige gebruikers verwachten dat versie 4.6.1-p3 of p4 is, omdat eerdere, striktere afhankelijkheden zijn versoepeld om uitbreidingsupgrades binnen een releaselijn mogelijk te maken. <!-- AC-14430 -->
+
+**Oplossing**: Om ervoor te zorgen dat u de correcte versie van Braintree voor uw PHP versie hebt, looppas `composer update` om de aangewezen versie te installeren zoals die door `adobe-commerce/extensions-metapackage:2.0.0` gebiedsdeel wordt gedicteerd.
 
 ## 2.4.7-p4
 
