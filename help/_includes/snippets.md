@@ -1,5 +1,5 @@
 ---
-source-git-commit: ab3401c2629b550655c7b2a382b998ce2c8ac6f0
+source-git-commit: 9eeb0e3a1c75b25cc70b092d23f02ebfe355d6bd
 workflow-type: tm+mt
 source-wordcount: '377'
 ht-degree: 0%
@@ -19,7 +19,7 @@ ht-degree: 0%
 
 >[!WARNING]
 >
->Alle bevelen van het Magento CLI moeten door de [ eigenaar van het dossiersysteem ](/help/configuration/cli/config-cli.md#prerequisites) worden in werking gesteld.
+>Alle bevelen van Magento CLI moeten door de [ eigenaar van het dossiersysteem ](/help/configuration/cli/config-cli.md#prerequisites) worden in werking gesteld.
 
 ## Back-upopdrachten {#tip-backup-command}
 
@@ -51,7 +51,7 @@ ht-degree: 0%
 
 >[!NOTE]
 >
->Adobe Commerce-releases kunnen niet-compatibele wijzigingen (BIC&#39;s) bevatten. Om achteruit-onverenigbaar veranderingen te herzien, zie [ verwijzing BIC ](https://developer.adobe.com/commerce/php/development/backward-incompatible-changes/reference/). De grote achteruit-onverenigbaar kwesties worden beschreven in [ hoogtepunten BIC ](https://developer.adobe.com/commerce/php/development/backward-incompatible-changes/highlights/). Niet alle introducties introduceren grote BIC&#39;s.
+>Adobe Commerce-releases kunnen niet-compatibele wijzigingen (BIC&#39;s) bevatten. Om achteruit-onverenigbaar veranderingen te herzien, zie [ verwijzing BIC ](https://developer.adobe.com/commerce/php/development/backward-incompatible-changes/reference/). De grote achteruit-onverenigbaar kwesties worden beschreven in [ hoogtepunten BIC ](https://developer.adobe.com/commerce/php/development/backward-incompatible-changes/). Niet alle introducties introduceren grote BIC&#39;s.
 
 ## Beta disclaimer {#beta}
 
@@ -69,7 +69,7 @@ ht-degree: 0%
 
 >[!NOTE]
 >
->Hoewel de code voor verhogingen en insectenmoeilijke situaties die in deze versienota&#39;s worden beschreven met Adobe Commerce worden gebundeld, worden verscheidene van deze projecten (bijvoorbeeld, B2B, de Bouwer van de Pagina, en de Studio van Progressive Webben Application (PWA) ook vrijgegeven onafhankelijk. De fixes van de insect voor deze projecten worden gedocumenteerd in de afzonderlijke, project-specifieke versieinformatie die in de documentatie voor elk project beschikbaar is. Zie [ overzicht van de productversie ](/help/release/release-notes/overview.md).
+>Hoewel de code voor verhogingen en insectenmoeilijke situaties die in deze versienota&#39;s worden beschreven met Adobe Commerce worden gebundeld, worden verscheidene van deze projecten (bijvoorbeeld, B2B, de Bouwer van de Pagina, en de Progressieve Studio van het Web (PWA)) ook vrijgegeven onafhankelijk. De fixes van de insect voor deze projecten worden gedocumenteerd in de afzonderlijke, project-specifieke versieinformatie die in de documentatie voor elk project beschikbaar is. Zie [ overzicht van de productversie ](/help/release/release-notes/overview.md).
 
 ## PHP Process Control {#php-process-control}
 

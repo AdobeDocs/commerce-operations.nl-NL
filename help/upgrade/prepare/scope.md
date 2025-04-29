@@ -2,7 +2,7 @@
 title: Omgaan met upgradebereik
 description: Leer over achterwaartse onverenigbare veranderingen in een versie die de douanemodules van Adobe Commerce of derdeuitbreidingen zou kunnen beïnvloeden.
 exl-id: dab2a14f-dbf0-422e-afb4-642e2220ec7a
-source-git-commit: 987d65b52437fbd21f41600bb5741b3cc43d01f3
+source-git-commit: 9eeb0e3a1c75b25cc70b092d23f02ebfe355d6bd
 workflow-type: tm+mt
 source-wordcount: '897'
 ht-degree: 0%
@@ -17,7 +17,7 @@ Herzie de [ versienota&#39;s ](https://experienceleague.adobe.com/en/docs/commer
 
 Adobe Commerce-releases kunnen niet-compatibele wijzigingen bevatten. Raadpleeg de volgende bronnen voor documentatie over achterwaartse en incompatibele wijzigingen:
 
-- **[Belangrijke veranderingshoogtepunten ](https://developer.adobe.com/commerce/php/development/backward-incompatible-changes/highlights/)** - Veranderingen die een belangrijk effect hebben en gedetailleerde verklaring en speciale instructies vereisen om ervoor te zorgen dat de derdemodules blijven werkend.
+- **[Belangrijke veranderingshoogtepunten ](https://developer.adobe.com/commerce/php/development/backward-incompatible-changes/)** - Veranderingen die een belangrijk effect hebben en gedetailleerde verklaring en speciale instructies vereisen om ervoor te zorgen dat de derdemodules blijven werkend.
 - **[kleine veranderingsverwijzing ](https://developer.adobe.com/commerce/php/development/backward-incompatible-changes/reference/)** - de documentatie van de Verwijzing die van de codebasis wordt geproduceerd die minder belangrijke veranderingen in klassen, API lidmaatschap, gegevensbestand, gebiedsinjectie, interfaces, lay-outs, systeem, en XSD beschrijft.
 
 ## Extensies van derden
@@ -103,7 +103,7 @@ De volgende output toont een voorbeeld samenvattingsrapport:
 
 ### Tips en advies
 
-Alle kwesties die het geïdentificeerde hulpmiddel zijn vermeld zijn in het rapport met specifieke foutencodes. Gebruik de [ verwijzing van het foutenbericht ](../upgrade-compatibility-tool/error-messages.md) om meer details over elke kwestie te krijgen. De Adobe biedt ook suggesties om elk type probleem te verhelpen, zodat u de stappen voor het verhelpen van problemen kunt plannen.
+Alle kwesties die het geïdentificeerde hulpmiddel zijn vermeld zijn in het rapport met specifieke foutencodes. Gebruik de [ verwijzing van het foutenbericht ](../upgrade-compatibility-tool/error-messages.md) om meer details over elke kwestie te krijgen. Adobe biedt ook suggesties om elk type probleem te verhelpen, zodat u de stappen voor het verhelpen van problemen kunt plannen.
 
 Gebruik het rapport om te schatten hoeveel moeite het zal vergen om uw code voor de verbetering bij te werken. Op basis van uw ervaring kunt u een schatting maken van de vereiste inspanning om een upgrade uit te voeren op basis van het totale aantal geïdentificeerde problemen en de ernst van de problemen. Aangezien dit een opdrachtregelprogramma is, kunt u dit opnemen in automatische test- en codeselecties en de JSON-uitvoer gebruiken om uw rapporten te genereren.
 
@@ -111,4 +111,4 @@ Wij adviseren besparend de resultaten van elk verbeteringsproject zodat u toekom
 
 Wij adviseren ook dat u regelmatig het hulpmiddel in werking stelt terwijl het werken aan de verbetering om zicht in uw vooruitgang te hebben. Het aantal problemen moet afnemen wanneer u deze verhelpt. Dit helpt uw team ook beslissen over de beste benadering om werk te verdelen.
 
-[!DNL Upgrade Compatibility Tool] wordt verder verbeterd en in toekomstige versies worden functies zoals autofixes opgenomen om problemen zo snel mogelijk te verhelpen. De meest recente verbeteringen die in januari 2022 zijn geïntroduceerd, zijn onder andere compatibiliteitstests en HTML-visualisatiefuncties waarmee u snel gebieden kunt identificeren die meer moeite nodig hebben om te upgraden.
+[!DNL Upgrade Compatibility Tool] wordt verder verbeterd en in toekomstige versies worden functies zoals autofixes opgenomen om problemen zo snel mogelijk te verhelpen. De meest recente verbeteringen die in januari 2022 zijn geïntroduceerd, zijn onder andere compatibiliteitstests voor PHP 8.1 en HTML-visualisatiefuncties waarmee u snel gebieden kunt identificeren die meer moeite nodig hebben om te upgraden.
