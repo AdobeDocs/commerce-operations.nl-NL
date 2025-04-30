@@ -1,7 +1,7 @@
 ---
-source-git-commit: ae8701cf2486ef0a79c96bd264e16b0e7803a8f6
+source-git-commit: c96f5620bbde1b15f6419c482c790517cc8de70c
 workflow-type: tm+mt
-source-wordcount: '26039'
+source-wordcount: '26036'
 ht-degree: 0%
 
 ---
@@ -288,7 +288,7 @@ Eerder waren de producten die als gastgebruiker aan de vergelijkingslijst werden
 * _AC-9843_: i18n:verzamelen-zinnen breken de integriteit van vertalingen
    * _nota van de Reparatie_: Het `bin/magento i18n:collect-phrases -o` bevel verzamelt nu correct en voegt nieuwe uitdrukkingen van JavaScript en .phtml- dossiers toe, ervoor zorgend dat de vertalingen nauwkeurig in het vertaaldossier worden weerspiegeld. Eerder was het systeem er niet in geslaagd om meerregelige vertaalzinnen uit JavaScript-bestanden en woordgroepen uit .phtml-bestanden op te nemen in het vertaalbestand, wat leidde tot onvolledige of onjuiste vertalingen.
    * _GitHub codebijdrage_: <https://github.com/magento/magento2/commit/0c53bbf7>
-* _ACP2E-2787_: Apostrof in de naam van de opslagmening wordt vervangen door &quot;
+* _ACP2E-2787_: apostrof in de naam van de opslagmening wordt vervangen door &amp;#039;
    * _Bevestig nota_: De filters van de de opslagmening van het net tonen nu behoorlijk apostroffen
    * _GitHub kwestie_: <https://github.com/magento/magento2/issues/38395>
    * _GitHub codebijdrage_: <https://github.com/magento/magento2/commit/39d54c2d>
@@ -1005,8 +1005,8 @@ We kunnen nu aangepaste orderstatussen bijwerken, terwijl eerder de status allee
    * _nota van de Reparatie_: PHPDocs voor de \Magento\Framework\Data\Collection::getItemById methode is bijgewerkt om ongeldig als mogelijk terugkeertype te omvatten, richtend kwesties met statische analysehulpmiddelen. Eerder, specificeerde PHPDocs van de methode ongeldig als mogelijk terugkeertype niet, dat tot waarschuwingen of fouten in statische analyse leidde toen de methode in voorwaardelijke verklaringen werd gebruikt.
    * _GitHub kwestie_: <https://github.com/magento/magento2/issues/38485>
    * _GitHub codebijdrage_: <https://github.com/magento/magento2/pull/38439>
-* _AC-11592_: [ Uitgave ] staat slechts geldige voorkeur tijdens opstelling toe :di: compileert
-   * _nota van de Reparatie_: Het systeem werpt nu een fout tijdens de opstelling :di: compileert bevel als een voorkeur voor een klasse wordt gecreeerd die niet bestaat of specifiek uitgesloten is, die ervoor zorgt dat slechts de geldige voorkeur wordt toegestaan. Eerder, zouden deze scenario&#39;s ongemerkt ontbreken, potentieel die om het even welke stop-ins verbonden aan de originele klassen nutteloos teruggeven.
+* _AC-11592_: [ Uitgave ] staat slechts geldige voorkeur tijdens `setup:di:compile` toe
+   * _nota van de Reparatie_: Het systeem werpt nu een fout tijdens het `setup:di:compile` bevel als een voorkeur voor een klasse wordt gecreeerd die niet bestaat of specifiek uitgesloten is, die ervoor zorgt dat slechts de geldige voorkeur wordt toegestaan. Eerder, zouden deze scenario&#39;s ongemerkt ontbreken, potentieel die om het even welke stop-ins verbonden aan de originele klassen nutteloos teruggeven.
    * _GitHub kwestie_: <https://github.com/magento/magento2/issues/38517>
    * _GitHub codebijdrage_: <https://github.com/magento/magento2/pull/33161>
 * _AC-11651_: Magento die probeert om read-only bezit in __wakeup methode van LoggerProxy te wijzigen
@@ -1537,7 +1537,7 @@ Details herstellen:
    * _nota van de Reparatie_: Vaste een kwestie waar het proberen om producten in-voorraad uit het karretje te verwijderen in een &quot;Gevraagde hoeveelheid is niet beschikbaar&quot;fout van GraphQL als het karretje ook configureerbare producten met ontoereikende voorraad bevatte. Het verwijderen werkt nu zoals verwacht zonder fouten te veroorzaken.
 * _LYNX-469_: Kan producten toe te voegen toe te schrijven aan SKU in mutatie die gevoelig geval is
    * _nota van de Reparatie_: Los een kwestie op waar de mutatie addProductsToCart een fout &quot;PRODUCT_NOT_FOUND&quot;terugkeerde wanneer het gebruiken van SKUs met verschillend casing. De mutatie behandelt nu case-insensitive SKUs, die consistentie met de vragen van de Dienst van de Catalogus en gedrag PDP verzekeren.
-* _LYNX-603_: Het attribuut van het product > handelsmerk korte vorm ™ is teruggekeerd als ™
+* _LYNX-603_: De attributen van het product > handelsmerk korte vorm &amp;handel; is teruggekeerd als &amp;handel;
    * _nota van de Reparatie_: Opgeloste karakter het coderen kwestie met de productnaam voor GraphQL API
 * _LYNX-619_: updateCustomerEmail mutation kwestie
    * _Bevestig nota_: Los een kwestie met updateCustomerEmail mutatie op waar de klanten zonder vereiste douaneattributen (toegevoegd na rekeningsverwezenlijking) hun e-mail niet konden bijwerken.
@@ -1591,7 +1591,7 @@ Details herstellen:
    * _nota van de Reparatie_: Het systeem laadt nu correct CSS dossiers asynchroon op controlepagina&#39;s, zelfs wanneer &quot;dev/css/use_css_critical_path&quot;wordt toegelaten, die ervoor zorgen dat deze pagina&#39;s met de juiste CSS stijlen worden teruggegeven. Eerder werd met een beperkt inhoudsbeveiligingsbeleid (CSP) voorkomen dat inline JavaScript werd uitgevoerd, waardoor CSS-bestanden niet naar behoren werden geladen.
    * _GitHub kwestie_: <https://github.com/magento/magento2/issues/39020>
    * _GitHub codebijdrage_: <https://github.com/magento/magento2/pull/39040>
-* _AC-13398_: Gebruikend virtueel type om stop te vormen, kan de interceptormethode niet correct in opstelling worden geproduceerd :di: compileert bevel
+* _AC-13398_: Gebruikend virtueel type om stop te vormen, kan de interceptormethode niet correct in `setup:di:compile` bevel worden geproduceerd
    * _nota van de Reparatie_: Het systeem produceert nu correct interceptormethodes wanneer het gebruiken van een virtueel type om een stop te vormen, die verenigbare resultaten verzekeren of precompiled of runtime. Voorheen zou het systeem onjuiste resultaten genereren wanneer vooraf werd gecompileerd in vergelijking met de compilatie bij uitvoering.
    * _GitHub kwestie_: <https://github.com/magento/magento2/issues/33980>
    * _GitHub codebijdrage_: <https://github.com/magento/magento2/pull/38141>
