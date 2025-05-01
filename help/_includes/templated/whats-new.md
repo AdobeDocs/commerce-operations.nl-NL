@@ -1,7 +1,7 @@
 ---
-source-git-commit: a2c060d3bbc0b22034cd4deea382412426376fef
+source-git-commit: d755cea4bef9328a5e9ebb6d610922c70d8e4288
 workflow-type: tm+mt
-source-wordcount: '881'
+source-wordcount: '938'
 ht-degree: 0%
 
 ---
@@ -10,6 +10,50 @@ ht-degree: 0%
 ## Nieuwe functies
 
 Deze pagina bevat de wijzigingen die in de afgelopen 60 dagen zijn aangebracht. Alle kleine updates, zoals het bewerken van kopieën, worden van deze lijst uitgesloten.
+
+### 1 mei 2025
+
+<table style="table-layout:auto;">
+  <thead>
+    <tr>
+      <th>Beschrijving</th>
+      <th>Type</th>
+      <th>Source</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><p>Verbeterde versie merkt het formatteren voor vaste kwesties in <a href="https://experienceleague.adobe.com/en/docs/commerce-operations/release/notes/adobe-commerce/2-4-8"> Adobe Commerce </a> en <a href="https://experienceleague.adobe.com/en/docs/commerce-operations/release/notes/adobe-commerce/2-4-8"> Magento Open Source </a> 2.4.8. (Credits naar <a href="https://github.com/hostep">@hostep </a>)</p>
+</td>
+      <td>
+        Technisch
+      </td>
+      <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/35df05be16d3da775b9cead47d2895b63d575892"> 35df05 </a> (begaat)</td>
+    </tr>
+  </tbody>
+</table>
+
+### 30 april 2025
+
+<table style="table-layout:auto;">
+  <thead>
+    <tr>
+      <th>Beschrijving</th>
+      <th>Type</th>
+      <th>Source</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><p>Vaste tekst teruggevend in de nota's van de Versie voor <a href="https://experienceleague.adobe.com/en/docs/commerce-operations/release/notes/adobe-commerce/2-4-8"> Adobe Commerce </a> en <a href="https://experienceleague.adobe.com/en/docs/commerce-operations/release/notes/adobe-commerce/2-4-8"> Magento Open Source </a>. (Credits naar <a href="https://github.com/hostep">@hostep </a>)</p>
+</td>
+      <td>
+        Technisch
+      </td>
+      <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/ce23f97dfa62e9b9b57b6db62a7d0c97d3faf7a6"> ce23f9 </a> (begaat)</td>
+    </tr>
+  </tbody>
+</table>
 
 ### 29 april 2025
 
