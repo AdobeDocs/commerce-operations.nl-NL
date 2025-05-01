@@ -3,9 +3,9 @@ title: Verwijzing naar catalogusconfiguratiepaden
 description: Zie een lijst met configuratiewaarden voor de catalogus.
 feature: Configuration, Catalog Management
 exl-id: 19451443-228e-437d-a3eb-7dc968b9fb0d
-source-git-commit: df8878a3fea19b8f1780b5037273e18b5a3f1373
+source-git-commit: 47bda51cdcab964c37d9f652d467d69d795d8641
 workflow-type: tm+mt
-source-wordcount: '815'
+source-wordcount: '832'
 ht-degree: 0%
 
 ---
@@ -69,8 +69,8 @@ Deze configuratiewaarden zijn beschikbaar in Admin in **Slaat** > Montages > **C
 | Zoeksuggesties inschakelen | `catalog/search/search_suggestion_enabled` | ![ Commerce-slechts ](/help/assets/configuration/cloud-ee.png) |
 | Aantal zoeksuggesties | `catalog/search/search_suggestion_count` | ![ Commerce-slechts ](/help/assets/configuration/cloud-ee.png) |
 | Aantal resultaten tonen voor elke suggestie | `catalog/search/search_suggestion_count_results_enabled` | ![ Commerce-slechts ](/help/assets/configuration/cloud-ee.png) |
-| Zoeken in Recommendations inschakelen | `catalog/search/search_recommendations_enabled` | ![ Commerce-slechts ](/help/assets/configuration/cloud-ee.png) |
-| Recommendations-telling zoeken | `catalog/search/search_recommendations_count` | ![ Commerce-slechts ](/help/assets/configuration/cloud-ee.png) |
+| Zoekaanbevelingen inschakelen | `catalog/search/search_recommendations_enabled` | ![ Commerce-slechts ](/help/assets/configuration/cloud-ee.png) |
+| Aantal zoekaanbevelingen | `catalog/search/search_recommendations_count` | ![ Commerce-slechts ](/help/assets/configuration/cloud-ee.png) |
 | Aantal resultaten tonen voor elke aanbeveling | `catalog/search/search_recommendations_count_results_enabled` | ![ Commerce-slechts ](/help/assets/configuration/cloud-ee.png) |
 | Minimale voorwaarden | `catalog/search/minimum_should_match` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 | URL voor &quot;categorie/product&quot; genereren Herschrijvingen | `catalog/seo/generate_category_product_rewrites` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
@@ -150,6 +150,8 @@ Deze configuratiewaarden zijn beschikbaar in Admin in **Opslag** > Montages > **
 {style="table-layout:auto"}
 
 ## Visuele Merchandiserpaden
+
+[!BADGE  slechts PaaS ]{type=Informative url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Is alleen van toepassing op Adobe Commerce op Cloud-projecten (door Adobe beheerde PaaS-infrastructuur) en op projecten in het veld."}
 
 Deze configuratiewaarden zijn beschikbaar in Admin in **Slaat** > Montages > **Configuratie** > **Catalogus** > **Visuele Merchandiser**.
 
