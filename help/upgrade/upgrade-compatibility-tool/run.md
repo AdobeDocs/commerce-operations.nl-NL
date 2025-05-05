@@ -2,9 +2,9 @@
 title: Voer  [!DNL Upgrade Compatibility Tool] in
 description: Volg deze stappen om  [!DNL Upgrade Compatibility Tool]  in een bevel-lijn interface voor uw project van Adobe Commerce in werking te stellen.
 exl-id: ea467a74-18eb-476b-96e2-23f4fc257d73
-source-git-commit: ca8dc855e0598d2c3d43afae2e055aa27035a09b
+source-git-commit: bfb952d29bd3d7fc7147107216981e05202e44aa
 workflow-type: tm+mt
-source-wordcount: '1077'
+source-wordcount: '1079'
 ht-degree: 0%
 
 ---
@@ -29,7 +29,7 @@ chmod +x ./uct/bin/uct
 
 [!DNL Upgrade Compatibility Tool] is een hulpmiddel dat een Adobe Commerce aangepaste instantie tegen een specifieke versie door alle modules controleert te analyseren die in het worden geïnstalleerd. Er wordt een lijst geretourneerd met kritieke problemen, fouten en waarschuwingen die moeten worden opgelost voordat u de upgrade naar de nieuwste versie van Adobe Commerce uitvoert.
 
-Zie dit [ videoleerprogramma ](https://experienceleague.adobe.com/docs/commerce-learn/tutorials/upgrade/upgrade-compatibility-tool-overview.html?lang=nl-NL) (06:02) om meer over [!DNL Upgrade Compatibility Tool] te leren.
+Zie dit [ videoleerprogramma ](https://experienceleague.adobe.com/docs/commerce-learn/tutorials/upgrade/upgrade-compatibility-tool-overview.html?lang=en) (06:02) om meer over [!DNL Upgrade Compatibility Tool] te leren.
 
 Beschikbare opdrachten voor de [!DNL Upgrade Compatibility Tool] in een opdrachtregelinterface:
 
@@ -59,7 +59,7 @@ Beschikbare opties voor de opdracht `upgrade:check` :
 
 | **Bevel** | **Beschikbare opties** |
 |----------------|-----------------|
-| `upgrade:check` | <ul><li>—help: Geeft alle beschikbare opties.</li><li>—huidige versie: huidige Adobe Commerce-versie. Deze parameter is vereist en moet altijd worden gebruikt.</li><li>—min-issue-level: U kunt kwesties filtreren volgens het minimumemissieniveau (de standaardwaarde is WAARSCHUWING).</li><li>—ignore-current-version-Compatibility-issues (of -i): Als u geen kritieke kwesties, fouten, en waarschuwingen van de huidige versie in uw rapport wilt omvatten.</li><li>—komende versie (of -c): doel een specifieke Adobe Commerce-versie. Als u deze optie weglaat, wordt de meest recente versie gebruikt.</li></ul> |
+| `upgrade:check` | <ul><li>—help: Geeft alle beschikbare opties.</li><li>—huidige versie: huidige Adobe Commerce-versie. Versie van de Adobe Commerce-installatie wordt gebruikt als deze wordt weggelaten.</li><li>—min-issue-level: U kunt kwesties filtreren volgens het minimumemissieniveau (de standaardwaarde is WAARSCHUWING).</li><li>—ignore-current-version-Compatibility-issues (of -i): Als u geen kritieke kwesties, fouten, en waarschuwingen van de huidige versie in uw rapport wilt omvatten.</li><li>—komende versie (of -c): doel een specifieke Adobe Commerce-versie. Als u deze optie weglaat, wordt de meest recente versie gebruikt.</li></ul> |
 
 Met [!DNL Upgrade Compatibility Tool] kunt u de opdracht `upgrade:check` uitvoeren met een optie `--ignore-current-version-compatibility-issues` . Gebruik deze optie als u alleen nieuwe uitgaven wilt ophalen die worden geïntroduceerd met de update van uw huidige versie naar de doelversie in uw [!DNL Upgrade Compatibility Tool] -rapport:
 
@@ -146,7 +146,7 @@ Beschikbare opties voor de opdracht `core:code:changes` :
 
 >[!NOTE]
 >
-> Het wordt aanbevolen aangepaste code buiten de kerncode te houden. Zie Adobe Commerce 2.4 [ verbeteringsgids ](https://experienceleague.adobe.com/docs/commerce-operations/assets/adobe-commerce-2-4-upgrade-guide.pdf?lang=nl-NL) voor meer verbeteringsbeste praktijken.
+> Het wordt aanbevolen aangepaste code buiten de kerncode te houden. Zie Adobe Commerce 2.4 [ verbeteringsgids ](https://experienceleague.adobe.com/docs/commerce-operations/assets/adobe-commerce-2-4-upgrade-guide.pdf) voor meer verbeteringsbeste praktijken.
 
 ### Vanilla-installatie
 
@@ -163,7 +163,7 @@ Zie [ opstellen vanilla instantie ](https://developer.adobe.com/commerce/contrib
 Met [!DNL Upgrade Compatibility Tool] kunt u automatisch een beperkte set problemen verhelpen:
 
 - Functies die mochten worden gebruikt zonder een argument door te geven, maar met een dergelijk gebruik zijn nu vervangen.
-- Gebruik van `$this` in sjablonen voor Magento&#39;s.
+- Gebruik van `$this` in Magento-sjablonen.
 - Gebruik van het trefwoord PHP `final` in methoden van het type private.
 
 Hiervoor voert u de opdracht `refactor` uit:
@@ -259,8 +259,8 @@ Hiermee worden specifieke opties geretourneerd die voor de opdracht `upgrade:che
 
 - Vermijd het gebruik van twee modules met dezelfde naam.
 - Volg Adobe Commerce [ coderingsnormen ](https://developer.adobe.com/commerce/php/coding-standards/).
-- Adobe Commerce 2.4 [ de gids van de Verbetering ](https://experienceleague.adobe.com/docs/commerce-operations/assets/adobe-commerce-2-4-upgrade-guide.pdf?lang=nl-NL) beste praktijken.
-- Stel [!DNL Upgrade Compatibility Tool] van [[!DNL Site-Wide Analysis Tool] in werking ](https://experienceleague.adobe.com/docs/commerce-operations/upgrade-guide/upgrade-compatibility-tool/use-upgrade-compatibility-tool/integrate-analysis-tool.html?lang=nl-NL) voor [ Adobe Commerce op de projecten van de wolkeninfrastructuur ](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/project/overview.html?lang=nl-NL){target=_blank} .
+- Adobe Commerce 2.4 [ de gids van de Verbetering ](https://experienceleague.adobe.com/docs/commerce-operations/assets/adobe-commerce-2-4-upgrade-guide.pdf) beste praktijken.
+- Stel [!DNL Upgrade Compatibility Tool] van [[!DNL Site-Wide Analysis Tool] in werking ](https://experienceleague.adobe.com/docs/commerce-operations/upgrade-guide/upgrade-compatibility-tool/use-upgrade-compatibility-tool/integrate-analysis-tool.html) voor [ Adobe Commerce op de projecten van de wolkeninfrastructuur ](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/project/overview.html){target=_blank}.
 
 ## De resultaten optimaliseren
 
