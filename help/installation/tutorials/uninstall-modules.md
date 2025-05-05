@@ -17,7 +17,7 @@ Verwijder een module alleen als u zeker weet dat u deze niet wilt gebruiken. In 
 
 >[!NOTE]
 >
->Deze opdracht controleert of alleen afhankelijkheden zijn gedeclareerd in het `composer.json` -bestand. Als u een module verwijdert die _niet_ in het `composer.json` dossier wordt bepaald, schrapt dit bevel de module zonder gebiedsdelen te controleren. Dit bevel verwijdert __ niet, echter, de code van de module uit het dossiersysteem. U moet bestandssysteemgereedschappen gebruiken om de code van de module te verwijderen (bijvoorbeeld `rm -rf <path to module>` ). Als alternatief, kunt u ](manage-modules.md) niet-Composer modules [ onbruikbaar maken.
+>Deze opdracht controleert of alleen afhankelijkheden zijn gedeclareerd in het `composer.json` -bestand. Als u een module verwijdert die _niet_ in het `composer.json` dossier wordt bepaald, schrapt dit bevel de module zonder gebiedsdelen te controleren. Dit bevel verwijdert __ niet, echter, de code van de module uit het dossiersysteem. U moet bestandssysteemgereedschappen gebruiken om de code van de module te verwijderen (bijvoorbeeld `rm -rf <path to module>` ). Als alternatief, kunt u [&#128279;](manage-modules.md) niet-Composer modules  onbruikbaar maken.
 
 Opdrachtgebruik:
 

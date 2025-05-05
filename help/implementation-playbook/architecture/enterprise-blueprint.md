@@ -39,7 +39,7 @@ Zie de volgende technische details van de cloudstichting:
 
 ## Integratie met Experience Cloud
 
-Adobe Commerce kan worden geïntegreerd met alle Experience Cloud-oplossingen om gepersonaliseerde commerce-ervaringen op schaal](https://experienceleague.adobe.com/en/docs/commerce-admin/customers/customers-menu/personalize-scale#customers-menu) te bieden[.
+Adobe Commerce kan worden geïntegreerd met alle Experience Cloud-oplossingen om gepersonaliseerde commerce-ervaringen op schaal[&#128279;](https://experienceleague.adobe.com/en/docs/commerce-admin/customers/customers-menu/personalize-scale#customers-menu) te bieden.
 
 [Data Connection geeft inzicht in het koopgedrag van je shoppers, zodat je met andere Adobe Digital Experience-producten](https://experienceleague.adobe.com/en/docs/commerce/data-connection/overview) via alle kanalen gepersonaliseerde winkelervaringen kunt creëren.
 
@@ -79,7 +79,7 @@ Adobe biedt een uitgebreide set intelligente, samenstelbare merchandisingservice
 - [Live zoeken](https://experienceleague.adobe.com/en/docs/commerce/live-search/overview): lever slimmere, snellere en relevante resultaten voor shoppers met deze AI-gestuurde zoektool.
 - [Productaanbevelingen](https://experienceleague.adobe.com/en/docs/commerce/product-recommendations/overview): voeg AI-gestuurde aanbevelingen toe op basis van shopper gedrag, populaire trends, productgelijkenis en meer.
 - [ de Dienst van de Catalogus ](https://experienceleague.adobe.com/en/docs/commerce/catalog-service/guide-overview) - geef uw klanten een geoptimaliseerde productervaring terwijl het opvoeren van prestaties, verbeterend scalability, en verhogend omzettingen.
-- ](https://experienceleague.adobe.com/en/docs/commerce/payment-services/guide-overview) - De klantentevredenheid van de 1} Aandrijving van de Betaling van de Diensten van de 1} - aandrijving door diverse betalingsmethodes, met inbegrip van rentevrije betalingstermijnen aan te bieden, en één enkele mening in betalingsverwerking, orden, en facturen.[
+- [&#128279;](https://experienceleague.adobe.com/en/docs/commerce/payment-services/guide-overview) - De klantentevredenheid van de 1&rbrace; Aandrijving van de Betaling van de Diensten van de 1&rbrace; - aandrijving door diverse betalingsmethodes, met inbegrip van rentevrije betalingstermijnen aan te bieden, en één enkele mening in betalingsverwerking, orden, en facturen.
 
 ## Hoofdloze winkel
 

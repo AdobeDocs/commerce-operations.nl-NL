@@ -36,7 +36,7 @@ In [!DNL Adobe Commerce], beïnvloedt het veranderen van *Gebruikt in Product da
 
 1. Ga naar **[!UICONTROL Stores]** > *[!UICONTROL Attributes]* > **[!UICONTROL Products]** .
 1. Zoek het kenmerk ***[!UICONTROL special_price]*** en navigeer naar **[!UICONTROL Storefront Properties]** .
-1. Wijzig ***[!UICONTROL Used in Product Listing]*** in ***[!UICONTROL No] ***.
+1. Wijzig ***[!UICONTROL Used in Product Listing]*** in ***[!UICONTROL No] &#x200B;***.
 1. Maak een configureerbaar product met één onderliggend element:
    * Naam en SKU: Testen
    * Prijs: $ 159,00

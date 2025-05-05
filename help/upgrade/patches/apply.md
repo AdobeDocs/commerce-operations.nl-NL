@@ -26,7 +26,7 @@ U kunt patches op een van de volgende manieren toepassen:
 
 >[!IMPORTANT]
 >
->Om officiële kwaliteitspatches toe te passen, gebruik [[!DNL Quality Patches Tool] ](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html) {target="_blank"}. Voer altijd uitgebreide tests uit voordat u een aangepaste patch implementeert.
+>Om officiële kwaliteitspatches toe te passen, gebruik [[!DNL Quality Patches Tool] ](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html){target="_blank"} . Voer altijd uitgebreide tests uit voordat u een aangepaste patch implementeert.
 
 Een aangepaste patch toepassen met Composer:
 

@@ -134,7 +134,7 @@ Als de extensie niet is geïnstalleerd, gebruikt u de volgende instructies om de
 
 ## Installeer de agent
 
-We hebben een shell-script](https://github.com/magento-swat/install-agent-helpers/blob/main/install.sh) gemaakt om de [installatie te vereenvoudigen. We raden aan om het shellscript te gebruiken, maar u kunt indien nodig de [handmatige installatiemethode](#manual) volgen.
+We hebben een shell-script[&#128279;](https://github.com/magento-swat/install-agent-helpers/blob/main/install.sh) gemaakt om de installatie te vereenvoudigen. We raden aan om het shellscript te gebruiken, maar u kunt indien nodig de [handmatige installatiemethode](#manual) volgen.
 
 >[!INFO]
 >
@@ -270,7 +270,7 @@ Als u niet ons [ shell manuscript ](https://github.com/magento-swat/install-agen
 
 ## Voer de agent uit {#run-the-agent}
 
-We raden u aan de agent te configureren om als een service te worden uitgevoerd. Als je beperkte toegang hebt tot je infrastructuur en geen root-rechten hebt, moet je in plaats daarvan cron](#cron) gebruiken[.
+We raden u aan de agent te configureren om als een service te worden uitgevoerd. Als je beperkte toegang hebt tot je infrastructuur en geen root-rechten hebt, moet je in plaats daarvan cron[&#128279;](#cron) gebruiken.
 
 ### Dienst {#service}
 
@@ -403,9 +403,9 @@ Probeer de volgende stappen om deze fout op te lossen:
 
 1. Voer een [gescripte installatie](#scripted) uit, sla de uitvoer op en controleer de uitvoer op fouten.
 1. Controleer het gegenereerde `config.yaml` bestand en controleer of het pad naar uw Commerce-instantie en PHP correct is.
-1. Zorg ervoor dat de gebruiker die de planner uitvoert, zich in de Unix-groep van de eigenaar](../../installation/prerequisites/file-system/overview.md) van het [bestandssysteem bevindt of dezelfde gebruiker is als de eigenaar van het bestandssysteem.
+1. Zorg ervoor dat de gebruiker die de planner uitvoert, zich in de Unix-groep van de eigenaar[&#128279;](../../installation/prerequisites/file-system/overview.md) van het bestandssysteem bevindt of dezelfde gebruiker is als de eigenaar van het bestandssysteem.
 1. Zorg ervoor dat de [Commerce Services Connector-sleutels](https://experienceleague.adobe.com/docs/commerce/user-guides/integration-services/saas.html) correct zijn geïnstalleerd en probeer ze bij te werken om de extensie met uw systeem te verbinden.
-1. [](#uninstall) Verwijder de agent na het bijwerken van de sleutels en installeer deze opnieuw met behulp van het [installatiescript](#scripted).
+1. [&#128279;](#uninstall) Verwijder de agent na het bijwerken van de sleutels en installeer deze opnieuw met behulp van het [installatiescript](#scripted).
 1. Voer de planner uit en kijk of u nog steeds dezelfde fout ontvangt.
 1. Als u nog steeds dezelfde foutmelding ontvangt, verhoogt u het logboekniveau in de `config.yaml` om te debuggen en opent u een ondersteuningsticket.
 

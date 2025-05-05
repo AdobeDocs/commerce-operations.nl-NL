@@ -171,7 +171,7 @@ Deze pagina bevat de wijzigingen die in de afgelopen 60 dagen zijn aangebracht. 
   </thead>
   <tbody>
     <tr>
-      <td><p>Werk </a> systeemvereisten van 0} {bij:<br /> - schrap Elasticsearch in v2.4.8 als niet gesteund <br /> - schrap versies 2.4.2 en 2.4.3 zoals bereikt het eind van steun<a href="https://experienceleague.adobe.com/en/docs/commerce-operations/installation-guide/system-requirements"></p>
+      <td><p>Werk </a> systeemvereisten van 0&rbrace; &lbrace;bij:<br /> - schrap Elasticsearch in v2.4.8 als niet gesteund <br /> - schrap versies 2.4.2 en 2.4.3 zoals bereikt het eind van steun<a href="https://experienceleague.adobe.com/en/docs/commerce-operations/installation-guide/system-requirements"></p>
 </td>
       <td>
         Technisch
@@ -325,7 +325,7 @@ Deze pagina bevat de wijzigingen die in de afgelopen 60 dagen zijn aangebracht. 
       <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/29811930541b3d91f0560a64190d790cdb742a70"> 298119 </a> (begaat)</td>
     </tr>
     <tr>
-      <td><p>Gepubliceerde versienota's voor de kwaliteits en veiligheidspatches van april 2025:<br /> - <a href="https://experienceleague.adobe.com/en/docs/commerce-operations/release/notes/adobe-commerce/2-4-8"> 2.4.8 </a><br /> - <a href="https://experienceleague.adobe.com/en/docs/commerce-operations/release/notes/security-patches/2-4-7-patches"> 2.4.7-p5 </a><br /> - <a href="https://experienceleague.adobe.com/en/docs/commerce-operations/release/notes/security-patches/2-4-6-patches"> 2.4.6-p10 </a><br /> - <a href="https://experienceleague.adobe.com/en/docs/commerce-operations/release/notes/security-patches/2-4-5-patches"> 2.4.5-p12 </a><br /> - <a href="https://experienceleague.adobe.com/en/docs/commerce-operations/release/notes/security-patches/2-4-4-patches"> 2.4} 3 </a></p>
+      <td><p>Gepubliceerde versienota's voor de kwaliteits en veiligheidspatches van april 2025:<br /> - <a href="https://experienceleague.adobe.com/en/docs/commerce-operations/release/notes/adobe-commerce/2-4-8"> 2.4.8 </a><br /> - <a href="https://experienceleague.adobe.com/en/docs/commerce-operations/release/notes/security-patches/2-4-7-patches"> 2.4.7-p5 </a><br /> - <a href="https://experienceleague.adobe.com/en/docs/commerce-operations/release/notes/security-patches/2-4-6-patches"> 2.4.6-p10 </a><br /> - <a href="https://experienceleague.adobe.com/en/docs/commerce-operations/release/notes/security-patches/2-4-5-patches"> 2.4.5-p12 </a><br /> - <a href="https://experienceleague.adobe.com/en/docs/commerce-operations/release/notes/security-patches/2-4-4-patches"> 2.4&rbrace; 3 </a></p>
 </td>
       <td>
         Belangrijke update

@@ -34,7 +34,7 @@ Migratie is een ideaal moment om serieuze wijzigingen aan te brengen en uw site 
 
 * Installeer Magento 2.x (met alle modules van deze versie) en [!DNL Data Migration Tool] op een systeem dat aan de [ systeemvereisten ](../../installation/system-requirements.md) voldoet
 
-* Breng aangepaste aanpassingen aan de [!DNL Data Migration Tool] -code aan als u bepaalde gegevens niet hoeft te migreren (zoals CMS-pagina&#39;s, Verkoopregels) of als u tijdens de migratie uw Magento wilt aanpassen. Lees de [ Technische Specificatie van 0} ](technical-specification.md) om beter te begrijpen hoe de migratie van binnen werkt[!DNL Data Migration Tool]
+* Breng aangepaste aanpassingen aan de [!DNL Data Migration Tool] -code aan als u bepaalde gegevens niet hoeft te migreren (zoals CMS-pagina&#39;s, Verkoopregels) of als u tijdens de migratie uw Magento wilt aanpassen. Lees de [ Technische Specificatie van 0&rbrace; ](technical-specification.md) om beter te begrijpen hoe de migratie van binnen werkt[!DNL Data Migration Tool]
 
 ## Stap 3: Droge run
 

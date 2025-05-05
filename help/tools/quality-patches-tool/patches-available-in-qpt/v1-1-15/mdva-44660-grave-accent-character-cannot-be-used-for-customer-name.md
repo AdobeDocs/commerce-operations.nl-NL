@@ -1,6 +1,6 @@
 ---
-title: 'MDVA-44660: Grave accentteken [`] kan niet worden gebruikt voor de naam van de klant'
-description: Met de MDVA-44660-patch wordt het probleem opgelost waarbij het accent van het graf (`) niet kan worden gebruikt voor de naam van een klant. Deze patch is beschikbaar wanneer [Quality Patches Tool (QPT)] (https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/announcements/commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches) 1.1.15 is geïnstalleerd. De patch-id is MDVA-44660. Het probleem wordt volgens de planning opgelost in Adobe Commerce 2.4.5.
+title: 'MDVA-44660: Grave accentteken [&grave;] kan niet worden gebruikt voor de naam van de klant'
+description: Met de MDVA-44660-patch wordt het probleem opgelost waarbij het accent van het graf (&grave;) niet kan worden gebruikt voor de naam van een klant. Deze patch is beschikbaar wanneer [Quality Patches Tool (QPT)] (https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/announcements/commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches) 1.1.15 is geïnstalleerd. De patch-id is MDVA-44660. Het probleem wordt volgens de planning opgelost in Adobe Commerce 2.4.5.
 feature: Variables
 role: Admin
 exl-id: 603161bf-fac3-4571-b872-d98de1bdf6b4
@@ -13,7 +13,7 @@ ht-degree: 0%
 
 # MDVA-44660: Grave accentteken (&grave;) kan niet worden gebruikt voor de naam van de klant
 
-De flard MDVA-44660 lost het probleem op waar het gravende accentteken [ \ ` ] niet voor de naam van een klant kan worden gebruikt. Dit flard is beschikbaar wanneer het [ Hulpmiddel van de Patches van de Kwaliteit (QPT) ](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/announcements/commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches) 1.1.15 geïnstalleerd is. De patch-id is MDVA-44660. Het probleem wordt volgens de planning opgelost in Adobe Commerce 2.4.5.
+De flard MDVA-44660 lost het probleem op waar het gravende accentteken [ \ &grave; ] niet voor de naam van een klant kan worden gebruikt. Dit flard is beschikbaar wanneer het [ Hulpmiddel van de Patches van de Kwaliteit (QPT) ](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/announcements/commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches) 1.1.15 geïnstalleerd is. De patch-id is MDVA-44660. Het probleem wordt volgens de planning opgelost in Adobe Commerce 2.4.5.
 
 ## Betrokken producten en versies
 
@@ -31,7 +31,7 @@ De flard MDVA-44660 lost het probleem op waar het gravende accentteken [ \ ` ] n
 
 ## Probleem
 
-Het graf accentteken [ \ ` ] kan niet voor de voornaam en achternaam van een klant worden gebruikt.
+Het graf accentteken [ \ &grave; ] kan niet voor de voornaam en achternaam van een klant worden gebruikt.
 
 <u> Stappen om </u> te reproduceren:
 

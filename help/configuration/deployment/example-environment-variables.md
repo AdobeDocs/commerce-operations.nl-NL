@@ -54,7 +54,7 @@ U kunt als volgt de standaardwaarden voor landinstelling en gewicht in uw ontwik
    ![ de websites van de Schakelaar ](../../assets/configuration/split-deploy-switch-website.png)
 
 1. In de juiste ruit, breid **Informatie van de Opslag** uit.
-1. Indien nodig, ontruim het **Gebrek van het Gebruik** checkbox naast het **** gebied van het Aantal van BTW.
+1. Indien nodig, ontruim het **Gebrek van het Gebruik** checkbox naast het **&#x200B;**&#x200B;gebied van het Aantal van BTW.
 1. Voer een getal in het veld in (bijvoorbeeld `12345` ).
 1. Op het **gebied van de Naam van de Opslag**, ga een waarde (als `My Store`) in.
 1. Klik **sparen Config**.

@@ -25,4 +25,4 @@ Er zijn gereedschappen die verwant zijn aan [!DNL Upgrade Compatibility Tool] en
   >
   >[!DNL AmpersandHQ] is geen officieel hulpmiddel voor de Adobe.
 
-- **[!DNL Quality Patches Tool]**: een opdrachtregelprogramma dat kwaliteitspatches voor Adobe Commerce biedt. Zie de [[!DNL Quality patches tool]  gebruikersgids ](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html) {target="_blank"} voor meer informatie.
+- **[!DNL Quality Patches Tool]**: een opdrachtregelprogramma dat kwaliteitspatches voor Adobe Commerce biedt. Zie de [[!DNL Quality patches tool]  gebruikersgids ](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html){target="_blank"}  voor meer informatie.

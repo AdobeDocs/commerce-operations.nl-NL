@@ -38,7 +38,7 @@ In het frame **[!UICONTROL Active Shards in Cluster]** wordt het totale aantal p
 
 ## [!UICONTROL Index health - this will show the index name and color status]
 
-](../../assets/tools/index-health.jpg) gezondheid van 0} Index![
+![&#128279;](../../assets/tools/index-health.jpg) gezondheid van 0&rbrace; Index
 
 In dit frame worden de naam van de index en het aantal statussen van de indexkleur weergegeven. Als u de tabel omlaag schuift, ziet u dezelfde indexnaam met de kleurstatus Geel en Rood. Het getal dat volgt op de 27 indexnaam is het getal van de statuskleur. Als de waarde nul is, waren er geen gevallen waarin de index zich in die kleurstatus bevond tijdens de geselecteerde tijdframes.
 
@@ -74,13 +74,13 @@ Wanneer indexen worden gemaakt en bijgewerkt, kan de indexstatus veranderen.
 
 ## [!UICONTROL Elasticsearch Index Size]
 
-{de grootte van de Index van 0} Elasticsearch ](../../assets/tools/elasticsearch-index-size.jpg)![
+{de grootte van de Index van 0} Elasticsearch ![&#128279;](../../assets/tools/elasticsearch-index-size.jpg)
 
 Het frame **[!UICONTROL Elasticsearch Index Size]** geeft de naam en de grootte van de index voor het geselecteerde tijdframe aan. Het kan problemen met de manier aangeven waarop een site wordt geïndexeerd.
 
 ## [!UICONTROL Elasticsearch Errors]
 
-{de Fouten van de Elasticsearch 0} ](../../assets/tools/elasticsearch-tab-elasticsearch-errors.jpg)![
+{de Fouten van de Elasticsearch 0} ![&#128279;](../../assets/tools/elasticsearch-tab-elasticsearch-errors.jpg)
 
 Het frame **[!UICONTROL Elasticsearch Errors]** bevat fouten met [!DNL Elasticsearch] zoals onvoldoende ruimte, overschakelen van de status Geel naar Rood, wanneer alle soorten zijn mislukt, wanneer er parameterproblemen zijn met zoekopdrachten, versiefouten en wanneer alle knooppunten niet beschikbaar zijn.
 

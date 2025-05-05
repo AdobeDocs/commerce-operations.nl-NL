@@ -95,7 +95,7 @@ Zo krijgt u het Adobe Commerce-pakket:
    >
    > Als u een Composer `[auth.json](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/develop/authentication-keys)` -bestand of een omgevingsvariabele gebruikt die is geconfigureerd met de Commerce-verificatietoetsen, wordt u niet gevraagd verificatietoetsen in te voeren.
 
-   Als er fouten optreden, zoals `Could not find package...` of `...no matching package found` , controleert u of de opdracht geen typos bevat. Als er nog steeds fouten optreden, kunt u geen Adobe Commerce downloaden. Contact {de Steun van 0} Adobe Commerce ](https://support.magento.com/hc/en-us) voor hulp.[
+   Als er fouten optreden, zoals `Could not find package...` of `...no matching package found` , controleert u of de opdracht geen typos bevat. Als er nog steeds fouten optreden, kunt u geen Adobe Commerce downloaden. Contact {de Steun van 0} Adobe Commerce [&#128279;](https://support.magento.com/hc/en-us) voor hulp.
 
    Zie [ het Oplossen van problemen ](https://support.magento.com/hc/en-us/articles/360033818091) voor hulp met meer fouten.
 

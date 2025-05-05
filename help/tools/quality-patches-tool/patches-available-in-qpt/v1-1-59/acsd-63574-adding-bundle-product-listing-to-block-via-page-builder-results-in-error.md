@@ -1,6 +1,6 @@
 ---
 title: 'ACSD-63574: Het toevoegen van [!UICONTROL Bundle Product] lijst aan blok via  [!DNL Page Builder]  resulteert in fout'
-description: Pas ACSD-63574 flard toe om de kwestie van Adobe Commerce te bevestigen waar het toevoegen ** [!UICONTROL Bundle Product]** met ` Checkbox ` of ` Multi Uitgezochte opties ` aan een blok via  [!DNL Page Builder]  in een fout resulteert.
+description: Pas ACSD-63574 flard toe om de kwestie van Adobe Commerce te bevestigen waar het toevoegen ** [!UICONTROL Bundle Product]** met &grave; Checkbox &grave; of &grave; Multi Uitgezochte opties &grave; aan een blok via  [!DNL Page Builder]  in een fout resulteert.
 feature: Page Builder, Page Content
 role: Admin, Developer
 source-git-commit: b2e6a3a61dbd3cd3b76e968ff8cdad664663fc4b

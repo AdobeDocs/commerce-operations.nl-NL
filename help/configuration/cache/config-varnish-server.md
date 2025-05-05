@@ -76,7 +76,7 @@ Varnish minimaliseren:
 
 1. Vervang de waarde van `.host` met volledig - gekwalificeerd hostname of IP adres en luister haven van de Varnish _achterkant_ of _oorsprongserver_; namelijk zal de server die de inhoud verstrekt Varnish versnellen.
 
-   Dit is doorgaans uw webserver. Zie [ servers van het Achterste 1} in de _Versijke gids_.](https://varnish-cache.org/docs/trunk/users-guide/vcl-backends.html)
+   Dit is doorgaans uw webserver. Zie [ servers van het Achterste 1&rbrace; in de _Versijke gids_.](https://varnish-cache.org/docs/trunk/users-guide/vcl-backends.html)
 
 1. Vervang de waarde van `.port` door de listen-poort van de webserver (8080 in dit voorbeeld).
 

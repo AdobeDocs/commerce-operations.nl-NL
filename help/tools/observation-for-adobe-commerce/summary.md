@@ -384,7 +384,7 @@ Het **[!UICONTROL Order transactions (default?)]** -frame zoekt naar transacties
 * &#39;%U kunt dit probleem verhelpen door de service Elasticsearch op uw Magento Cloud-infrastructuur te upgraden naar versie%&#39; als &#39;ver_err&#39;
 * &#39;%clusterstatus gewijzigd van \[YELLOW\] in \[RED\] (reason:%&#39; als &#39;yel_red&#39;
 * &#39;%No space left on device%&#39; as &#39;no_space&#39;
-* &#39;% Kan [SearchRequest{searchType=%&#39; niet uitvoeren als &#39;failed_query&#39;
+* &#39;% Kan &lbrack;SearchRequest&lbrace;searchType=%&#39; niet uitvoeren als &#39;failed_query&#39;
 
 ## [!UICONTROL Cron view]
 
@@ -421,7 +421,7 @@ In dit **[!UICONTROL Datastore Operations Tables]** -frame worden de bovenste 25
 
 ![ geheim voorgeheugenflush ](../../assets/tools/cache-flush.jpg)
 
-{de flushes van 0} Geheime voorgeheugen ontdekte:****
+{de flushes van 0} Geheime voorgeheugen ontdekte:**&#x200B;**
 
 * &#39;%config%&#39; als &#39;config_cache_flushed&#39;
 * &#39;%layout%&#39; als &#39;layout_cache_flush&#39;

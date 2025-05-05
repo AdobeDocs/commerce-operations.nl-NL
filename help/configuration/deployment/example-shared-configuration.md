@@ -51,8 +51,8 @@ U kunt als volgt de tijdzone- en gewichtseenheden in uw ontwikkelingssysteem ins
    ![ plaats scèneopties in het ontwikkelingssysteem ](../../assets/configuration/split-deploy-set-locale.png)
 
 1. Van de **lijst van de Tijdzone**, klik **GMT+00:00 (UTC)**.
-1. Ontruim het **checkbox van de systeemwaarde van het Gebruik** naast het **3} gebied van de Eenheid van de Gewicht.**
-1. Van de **lijst van de Eenheid van 0} Gewicht, klik** kgs **.**
+1. Ontruim het **checkbox van de systeemwaarde van het Gebruik** naast het **3&rbrace; gebied van de Eenheid van de Gewicht.**
+1. Van de **lijst van de Eenheid van 0&rbrace; Gewicht, klik** kgs **.**
 1. Klik **sparen Config**.
 1. Maak de cache leeg als daarom wordt gevraagd.
 

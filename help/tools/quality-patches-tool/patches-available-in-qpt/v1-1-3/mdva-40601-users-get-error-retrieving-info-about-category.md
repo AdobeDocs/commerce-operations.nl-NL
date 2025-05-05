@@ -42,6 +42,7 @@ Gebruikers krijgen een fout wanneer ze proberen informatie op te halen over een 
    - Root
     - Some category
          - Some child category
+
    </code>
    </pre>
 
@@ -49,14 +50,14 @@ Gebruikers krijgen een fout wanneer ze proberen informatie op te halen over een 
 
    <pre>
     <code class="language-graphql">
-    query {
-     category(id: 49) {
+    query &lbrace;
+     category(id: 49) &lbrace;
       name
-      children {
+      children &lbrace;
         name
-       }
-     }
-   }
+       &rbrace;
+     &rbrace;
+   &rbrace;
    </code>
    </pre>
 
@@ -64,18 +65,18 @@ Gebruikers krijgen een fout wanneer ze proberen informatie op te halen over een 
 
    <pre>
     <code class="language-graphql">
-    {
-      "data": {
-        "category": {
+    &lbrace;
+      "data": &lbrace;
+        "category": &lbrace;
           "name": "Some category",
-          "children": [
-            {
+          "children": &lbrack;
+            &lbrace;
               "name": "Some child category"
-            }
-          ]
-        }
-      }
-    }
+            &rbrace;
+          &rbrack;
+        &rbrace;
+      &rbrace;
+    &rbrace;
     </code>
     </pre>
 
@@ -93,29 +94,29 @@ De volgende fout treedt op:
 
 <pre>
 <code class="language-graphql">
-{
-  "errors": [
-    {
+&lbrace;
+  "errors": &lbrack;
+    &lbrace;
       "debugMessage": "uasort() expects parameter 1 to be array, string given",
       "message": "Internal server error",
-      "extensions": {
+      "extensions": &lbrace;
         "category": "internal"
-      },
-      "locations": [
-        {
+      &rbrace;,
+      "locations": &lbrack;
+        &lbrace;
           "line": 2,
           "column": 3
-        }
-      ],
-      "path": [
+        &rbrace;
+      &rbrack;,
+      "path": &lbrack;
         "category"
-      ]
-    }
-  ],
-  "data": {
+      &rbrack;
+    &rbrace;
+  &rbrack;,
+  "data": &lbrace;
     "category": null
-  }
-}
+  &rbrace;
+&rbrace;
 </code>
 </pre>
 
@@ -123,14 +124,14 @@ De volgende fout treedt op:
 
 Om individuele flarden toe te passen, gebruik de volgende verbindingen afhankelijk van uw plaatsingstype:
 
-* Adobe Commerce of Magento Open Source op locatie: [[!DNL Quality Patches Tool]  > Gebruik ](/help/tools/quality-patches-tool/usage.md) in de handleiding [!DNL Quality Patches Tool] .
-* Adobe Commerce op wolkeninfrastructuur: [ Verbeteringen en Patches > Pas Patches ](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html) in Commerce op de gids van de Infrastructuur van de Wolk toe.
+&#x200B;* Adobe Commerce of Magento Open Source op locatie: [[!DNL Quality Patches Tool]  > Gebruik ](/help/tools/quality-patches-tool/usage.md) in de handleiding [!DNL Quality Patches Tool] .
+&#x200B;* Adobe Commerce op wolkeninfrastructuur: [ Verbeteringen en Patches > Pas Patches ](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html) in Commerce op de gids van de Infrastructuur van de Wolk toe.
 
 ## Gerelateerde lezing
 
 Raadpleeg voor meer informatie over kwaliteitspatches voor Adobe Commerce:
 
-* [ vrijgegeven het Hulpmiddel van de Patches van de Kwaliteit: een nieuw hulpmiddel om kwaliteitspatches ](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/announcements/commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches) in de steunkennisbasis zelf-te dienen.
-* [ Controle als het flard voor uw kwestie van Adobe Commerce beschikbaar is gebruikend het Hulpmiddel van de Patches van de Kwaliteit ](/help/tools/quality-patches-tool/patches-available-in-qpt/check-patch-for-magento-issue-with-magento-quality-patches.md) in de [!DNL Quality Patches Tool] gids.
+&#x200B;* [ vrijgegeven het Hulpmiddel van de Patches van de Kwaliteit: een nieuw hulpmiddel om kwaliteitspatches ](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/announcements/commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches) in de steunkennisbasis zelf-te dienen.
+&#x200B;* [ Controle als het flard voor uw kwestie van Adobe Commerce beschikbaar is gebruikend het Hulpmiddel van de Patches van de Kwaliteit ](/help/tools/quality-patches-tool/patches-available-in-qpt/check-patch-for-magento-issue-with-magento-quality-patches.md) in de [!DNL Quality Patches Tool] gids.
 
 Voor info over andere flarden beschikbaar in QPT, verwijs naar de [ flarden beschikbaar in QPT ](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html) sectie.

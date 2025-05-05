@@ -128,7 +128,7 @@ apt-get -y update
 apt-get install -y openjdk-8-jdk
 ```
 
-Voor andere opties, zie {de documentatie van het Oracle 0} ](https://docs.oracle.com/javase/8/docs/technotes/guides/install/install_overview.html).[
+Voor andere opties, zie {de documentatie van het Oracle 0} [&#128279;](https://docs.oracle.com/javase/8/docs/technotes/guides/install/install_overview.html).
 
 ### De zoekfunctie installeren
 

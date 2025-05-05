@@ -248,7 +248,7 @@ Een `<field>` -tag kan de volgende waarden voor het `type=""` -kenmerk hebben:
 | `select` | Bij een normale vervolgkeuzelijst is mogelijk een aangepaste `source_model` vereist. Wordt ook gebruikt voor `Yes/No` selecties. Zie `Magento\Search\Model\Adminhtml\System\Config\Source\Engine` voor een voorbeeld. |
 | `multiselect` | Net als `select` maar meerdere opties zijn geldig. |
 | `button` | Een knop die een directe gebeurtenis activeert. Vereist een aangepast front-end model om de knoptekst en de handeling te definiëren. Zie `Magento\ScheduledImportExport\Block\Adminhtml\System\Config\Clean` voor een voorbeeld. |
-| `obscure` | Een tekstveld met de waarde gecodeerd en weergegeven als `****` . Als u de tekst wijzigt met &quot;Inspect Element&quot; in de browser, wordt de waarde niet weergegeven. |
+| `obscure` | Een tekstveld met de waarde gecodeerd en weergegeven als `**&#x200B;**` . Als u de tekst wijzigt met &quot;Inspect Element&quot; in de browser, wordt de waarde niet weergegeven. |
 | `password` | Net als bij `obscure` wordt de verborgen waarde niet gecodeerd en wordt de waarde zichtbaar wanneer u het type met &quot;Inspect Element&quot; in de browser geforceerd wijzigt. |
 | `file` | Hiermee kan een bestand worden geüpload voor verwerking. |
 | `label` | Hiermee geeft u een label weer in plaats van een bewerkbaar veld. Gebruik dit type wanneer een veld alleen binnen een bepaald bereik kan worden bewerkt, bijvoorbeeld alleen in de weergave Winkel. |

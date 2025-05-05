@@ -1,6 +1,6 @@
 ---
 title: 'MDVA-44188: e-mails worden niet verzonden naar id''s die " bevatten.-"'
-description: De MDVA-44188-patch verhelpt het probleem dat e-mails niet worden verzonden naar de e-mailadressen die ` bevatten.-". Deze patch is beschikbaar wanneer [Quality Patches Tool (QPT)] (https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/announcements/commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches) 1.1.13 is geïnstalleerd. De patch-id is MDVA-44188. Het probleem wordt volgens de planning opgelost in Adobe Commerce 2.4.5.
+description: De MDVA-44188-patch verhelpt het probleem dat e-mails niet worden verzonden naar de e-mailadressen die &grave; bevatten.-". Deze patch is beschikbaar wanneer [Quality Patches Tool (QPT)] (https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/announcements/commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches) 1.1.13 is geïnstalleerd. De patch-id is MDVA-44188. Het probleem wordt volgens de planning opgelost in Adobe Commerce 2.4.5.
 feature: Communications
 role: Admin
 exl-id: 9029c7f1-3e62-44a1-8962-9730ae54db7d

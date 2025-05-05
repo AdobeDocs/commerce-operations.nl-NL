@@ -47,6 +47,6 @@ Het bevat gevoelige en systeemspecifieke instellingen voor afzonderlijke omgevin
 
 Gebruik de opdracht [`bin/magento config:sensitive:set`](set-configuration-values.md#set-values) om de gevoelige instellingen in te stellen die naar `env.php` worden geschreven.
 
-De waarden van de configuratie worden gespecificeerd als of gevoelig of systeem-specifiek door [`Magento\Config\Model\Config\TypePool` van verwijzingen te voorzien ](https://github.com/magento/magento2/blob/2.4/app/code/Magento/Config/Model/Config/TypePool.php) in het 2} ](https://developer.adobe.com/commerce/php/development/configuration/sensitive-environment-settings/#how-to-specify-values-as-sensitive-or-system-specific) dossier van de module {.[`di.xml`
+De waarden van de configuratie worden gespecificeerd als of gevoelig of systeem-specifiek door [`Magento\Config\Model\Config\TypePool` van verwijzingen te voorzien ](https://github.com/magento/magento2/blob/2.4/app/code/Magento/Config/Model/Config/TypePool.php) in het 2&rbrace; [&#128279;](https://developer.adobe.com/commerce/php/development/configuration/sensitive-environment-settings/#how-to-specify-values-as-sensitive-or-system-specific) dossier van de module &lbrace;.`di.xml`
 
 Als u aanvullende systeeminstellingen wilt exporteren wanneer u `config_types` gebruikt, kunt u de opdracht [`bin/magento config:set`](set-configuration-values.md#set-values) gebruiken.

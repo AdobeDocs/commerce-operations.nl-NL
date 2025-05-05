@@ -74,7 +74,7 @@ In de productiemodus:
 
 ## Onderhoudsmodus
 
-De _wijze van het 0} onderhoud {beperkt of verhindert toegang tot een plaats tijdens verbeteringen, updates, en configuratietaken._ Standaard leidt de site bezoekers om naar een standaardpagina van `Service Temporarily Unavailable` .
+De _wijze van het 0&rbrace; onderhoud &lbrace;beperkt of verhindert toegang tot een plaats tijdens verbeteringen, updates, en configuratietaken._ Standaard leidt de site bezoekers om naar een standaardpagina van `Service Temporarily Unavailable` .
 
 U kunt a [ pagina van het douaneonderhoud ](../../upgrade/troubleshooting/maintenance-mode-options.md) tot stand brengen, manueel toelaten en onderhoudswijze onbruikbaar maken, en onderhoudswijze vormen om bezoekers van erkende IP adressen toe te staan om de opslag normaal te bekijken. Zie [ toelaten en onderhoudswijze ](../../installation/tutorials/maintenance-mode.md) in onbruikbaar maken in de _Gids van de Installatie_.
 

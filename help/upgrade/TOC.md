@@ -36,7 +36,7 @@ ht-degree: 0%
 - [!DNL Upgrade Compatibility Tool] {#upgrade-compatibility-tool}
    - [Overzicht](upgrade-compatibility-tool/overview.md)
    - [Systeemvereisten](upgrade-compatibility-tool/prerequisites.md)
-   - De opdracht [!DNL Upgrade Compatibility Tool] {#use-upgrade-compatibility-tool} gebruiken
+   - De opdracht [!DNL Upgrade Compatibility Tool] gebruiken {#use-upgrade-compatibility-tool}
       - [Het gereedschap uitvoeren in een opdrachtregelinterface](upgrade-compatibility-tool/run.md)
       - [Integreer met  [!DNL Site-Wide Analysis Tool]](upgrade-compatibility-tool/integrate-analysis-tool.md)
       - [Het gereedschap uitvoeren in de PHPStorm-insteekmodule van het Magento](upgrade-compatibility-tool/run-configuration-phpstorm-plugin.md)

@@ -36,7 +36,7 @@ Het importeren van gegevens via de interface van Admin heeft invloed op een ande
 <u> Stappen om </u> te reproduceren:
 
 1. Ga naar **[!UICONTROL System]** > **[!UICONTROL Data Transfer]** > **[!UICONTROL Import]** .
-1. Plaats **[!UICONTROL Entity Type]** aan *[!UICONTROL Customers and Addresses](enig dossier)*.
+1. Plaats **[!UICONTROL Entity Type]** aan *[!UICONTROL Customers and Addresses] (enig dossier)*.
 1. Stel **[!UICONTROL Import Behavior]** in op *[!UICONTROL Add/Update]* .
 1. Selecteer een geldig bestand dat u wilt importeren.
 1. Klik op **[!UICONTROL Check Data]** .

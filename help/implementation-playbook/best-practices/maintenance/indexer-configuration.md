@@ -35,7 +35,7 @@ Als u een grote winkel hebt met meerdere beheerders die op de achtergrond werken
 Volg de volgende aanbevolen procedures voor indexering om de prestaties van de site te maximaliseren:
 
 - Controleer de indexconfiguratie.
-- Stel de indexeerders in op _[!UICONTROL Update on Schedule]_voor grote sites en sites met veelvuldige updates en veel verkeer. Zie [ Beheer van de Index ](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/tools/index-management#change-the-index-mode).
+- Stel de indexeerders in op _[!UICONTROL Update on Schedule]_&#x200B;voor grote sites en sites met veelvuldige updates en veel verkeer. Zie [ Beheer van de Index ](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/tools/index-management#change-the-index-mode).
 - Volg [ prestaties beste praktijken ](../../../performance/configuration.md) voor het beheren van indexen.
 
 >[!IMPORTANT]

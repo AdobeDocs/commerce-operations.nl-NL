@@ -33,7 +33,7 @@ Zorg ervoor dat u alle systeemvereisten en afhankelijkheden in uw omgeving hebt 
 
 >[!NOTE]
 >
->Voor Adobe Commerce op de Pro projecten van de wolkeninfrastructuur, moet u a ](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html#submit-ticket) kaartje van de Steun {creëren 0} om de diensten in het Opvoeren en van de Productie milieu&#39;s te installeren of bij te werken. [ Geef aan welke servicewijzigingen nodig zijn en neem de bijgewerkte `.magento.app.yaml` - en `services.yaml` -bestanden en PHP-versie op in het ticket. Het kan tot 48 uur duren voordat het infrastructuurteam van de cloud uw project kan bijwerken. Zie [ Ondersteunde software en de diensten ](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/architecture/cloud-architecture.html#supported-software-and-services).
+>Voor Adobe Commerce op de Pro projecten van de wolkeninfrastructuur, moet u a [&#128279;](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html#submit-ticket) kaartje van de Steun {creëren 0} om de diensten in het Opvoeren en van de Productie milieu&#39;s te installeren of bij te werken.  Geef aan welke servicewijzigingen nodig zijn en neem de bijgewerkte `.magento.app.yaml` - en `services.yaml` -bestanden en PHP-versie op in het ticket. Het kan tot 48 uur duren voordat het infrastructuurteam van de cloud uw project kan bijwerken. Zie [ Ondersteunde software en de diensten ](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/architecture/cloud-architecture.html#supported-software-and-services).
 
 ## Controleer of een ondersteunde zoekmachine is geïnstalleerd
 
@@ -99,7 +99,7 @@ Om MySQL correct te upgraden van versie 8.0 naar versie 8.4, moet u de volgende 
    >
    >Als u de waarde van `restrict_fk_on_non_standard_key` niet wijzigt in `OFF` , treedt de volgende fout op tijdens het importeren:
    >
-   ```sql
+   >```sql
    > ERROR 6125 (HY000) at line 2164: Failed to add the foreign key constraint. Missing unique key for constraint 'CAT_PRD_FRONTEND_ACTION_PRD_ID_CAT_PRD_ENTT_ENTT_ID' in the referenced table 'catalog_product_entity'
    >```
 1. Start de MySQL-server opnieuw.
@@ -192,7 +192,7 @@ Elasticsearch 8.x werd in Adobe Commerce 2.4.6 ondersteund. De volgende instruct
 
    Deze aanpak werkt voor 2.4.7-p4 met PHP 8.3. Het probleem doet zich voor omdat `aws/aws-sdk-php` `psr/http-message >= 2.0` vereist, wat conflicten kan veroorzaken. De bovenstaande stappen helpen deze afhankelijkheidsproblemen op te lossen.
 
-+++
+   +++
 
 1. Werk uw projectcomponenten bij.
 
@@ -358,7 +358,7 @@ De omgevingsvariabele instellen:
 
 Om veiligheidsredenen vereist Adobe Commerce bepaalde machtigingen voor het bestandssysteem. De toestemmingen zijn verschillend van _[eigendom](../../upgrade/prepare/prerequisites.md#verify-file-system-permissions)_. Eigendom bepaalt wie handelingen op het bestandssysteem kan uitvoeren; machtigingen bepalen wat de gebruiker kan doen.
 
-De folders in het dossiersysteem moeten door de ](../../installation/prerequisites/file-system/overview.md) groep van de eigenaar van het 0} dossiersysteem kunnen worden geschreven.[
+De folders in het dossiersysteem moeten door de [&#128279;](../../installation/prerequisites/file-system/overview.md) groep van de eigenaar van het 0&rbrace; dossiersysteem kunnen worden geschreven.
 
 Om te controleren of de machtigingen voor het bestandssysteem correct zijn ingesteld, meldt u zich aan bij de toepassingsserver of gebruikt u de toepassing van het bestandsbeheer van de hostingprovider.
 
@@ -419,7 +419,7 @@ ls -la /var/www/html/magento2/pub
 
 Omdat Adobe Commerce statische bestandselementen naar submappen van `pub` implementeert, is het een goed idee om ook daar machtigingen en eigendom te controleren.
 
-Voor meer informatie, zie {de systeemtoestemmingen en eigendom van het 0} Dossier ](../../installation/prerequisites/file-system/overview.md).[
+Voor meer informatie, zie {de systeemtoestemmingen en eigendom van het 0} Dossier [&#128279;](../../installation/prerequisites/file-system/overview.md).
 
 ## De hoofdmap van de map `pub/` instellen
 

@@ -32,7 +32,7 @@ Het eerste deel vertegenwoordigt de wachtwoordhash. De tweede, `8qnyO4H1OYIfGCUb
 
 Bedenk hoe het mechanisme van de hakupgrade eruitziet. Stel dat er oorspronkelijk een wachtwoord was opgeslagen met `MD5` en dat het algoritme vervolgens meerdere keren werd bijgewerkt met Argon 2ID13. Het volgende diagram toont de stroom van de knoeiboelverbetering.
 
-![ de verbeteringswerkschema van de Hash {](../../assets/configuration/hash-upgrade-algorithm.png)
+![ de verbeteringswerkschema van de Hash &lbrace;](../../assets/configuration/hash-upgrade-algorithm.png)
 
 Elk knoeiboelalgoritme gebruikt het vorige wachtwoordknoeiboel om een nieuwe knoeiboel te produceren. Commerce slaat het oorspronkelijke, onbewerkte wachtwoord niet op.
 

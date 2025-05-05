@@ -77,7 +77,7 @@ Op alle andere computers moet de Commerce-instantie toegang hebben tot de mySQL-
 
 U kunt het versieren van statische bestanden ook op alle computers uitschakelen. Dit kan van Admin onder **worden betreden Slaat** > Montages > **Configuratie** > **Geavanceerd** > **de Montages van de Ontwikkelaar** > **de Statische Montages van Dossiers** > **Onderteken Statische Dossiers** = **Nr**.
 
-Tot slot moeten alle Commerce-instanties zich in de productiemodus bevinden. Voordat Varnish begint, wist u de cache bij elke instantie. In Admin, ga **van het 0} Systeem {> Hulpmiddelen >** het Beheer van het Geheime voorgeheugen **en klik** het Geheime voorgeheugen van het Magento van de Duw **.** U kunt ook de volgende opdracht uitvoeren om de cache te wissen:
+Tot slot moeten alle Commerce-instanties zich in de productiemodus bevinden. Voordat Varnish begint, wist u de cache bij elke instantie. In Admin, ga **van het 0&rbrace; Systeem &lbrace;> Hulpmiddelen >** het Beheer van het Geheime voorgeheugen **en klik** het Geheime voorgeheugen van het Magento van de Duw **.** U kunt ook de volgende opdracht uitvoeren om de cache te wissen:
 
 ```bash
 bin/magento cache:flush

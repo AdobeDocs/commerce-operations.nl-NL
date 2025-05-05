@@ -11,7 +11,7 @@ ht-degree: 0%
 
 # Algemene MySQL-richtlijnen
 
-Zie {de Vereisten van het 0} Systeem ](../../system-requirements.md) voor gesteunde versies van MySQL.[
+Zie {de Vereisten van het 0} Systeem [&#128279;](../../system-requirements.md) voor gesteunde versies van MySQL.
 
 Adobe __ adviseert sterk u de volgende norm waarneemt wanneer u opstelling uw gegevensbestand:
 

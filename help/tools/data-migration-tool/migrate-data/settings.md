@@ -80,7 +80,7 @@ U kunt de systeemconfiguraties negeren, hernoemen of wijzigen tijdens het migrer
 
 1. Als u de nieuwe naam wilt opgeven van het instellingenbestand voor toewijzing, wijzigt u de tag `<settings_map_file>` in het `path/to/config.xml` -bestand.
 
-Voor meer details, zie de [ de migratiewijze van Montages ](../technical-specification.md#settings-migration-mode) sectie van de 2} specificatie van het Hulpmiddel ](../technical-specification.md).[
+Voor meer details, zie de [ de migratiewijze van Montages ](../technical-specification.md#settings-migration-mode) sectie van de 2&rbrace; specificatie van het Hulpmiddel [&#128279;](../technical-specification.md).
 
 ## Volgende migratie
 

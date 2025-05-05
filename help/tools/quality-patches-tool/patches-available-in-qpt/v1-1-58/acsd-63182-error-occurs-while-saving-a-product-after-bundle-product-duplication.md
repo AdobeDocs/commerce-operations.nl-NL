@@ -38,7 +38,7 @@ Er treedt een fout op wanneer u een eenvoudig product opslaat dat wordt gebruikt
 1. Maak een nieuwe MSI-bron en -voorraad.
 1. Creeer twee eenvoudige producten: **p1** en **p2**.
 1. Creeer een bundelproduct **b1** met **p1** en **p2** als gebundelde opties.
-1. Bewerk het **bundelproduct b1** en klik *** [!UICONTROL Save and Duplicate] ***.
+1. Bewerk het **bundelproduct b1** en klik *** [!UICONTROL Save and Duplicate] &#x200B;***.
 1. Bewerk het **eenvoudige product p1** en klik **[!UICONTROL Save]**.
 
 <u> Verwachte resultaten </u>:

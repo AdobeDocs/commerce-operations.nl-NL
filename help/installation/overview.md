@@ -13,7 +13,7 @@ ht-degree: 7%
 
 >[!NOTE]
 >
->Het volgende diagram verstrekt een overzicht op hoog niveau van _**op-gebouw**_ installaties van Adobe Commerce:
+>Het volgende diagram verstrekt een overzicht op hoog niveau van _&#x200B;**op-gebouw**&#x200B;_ installaties van Adobe Commerce:
 
 ![ hoe de installatie ](../assets/installation/install-diagram-24.svg) werkt
 

@@ -21,7 +21,7 @@ De eerste lijst wordt automatisch gegenereerd met de opdracht `bin/uct list` in 
 
 Leer meer over het hulpmiddel in [ Overzicht ](/help/upgrade/upgrade-compatibility-tool/overview.md).
 
-Deze referentiedocumentatie wordt geproduceerd van de code van de toepassingsbron. Om de documentatie te veranderen, zou u een trekkingsverzoek voor het overeenkomstige bevel in de relevante [ codebase ](https://github.com/magento) bewaarplaats moeten openen. Zie {de Bijdragen van de Code van 0} ](https://developer.adobe.com/commerce/contributor/guides/code-contributions/) voor meer informatie.[
+Deze referentiedocumentatie wordt geproduceerd van de code van de toepassingsbron. Om de documentatie te veranderen, zou u een trekkingsverzoek voor het overeenkomstige bevel in de relevante [ codebase ](https://github.com/magento) bewaarplaats moeten openen. Zie {de Bijdragen van de Code van 0} [&#128279;](https://developer.adobe.com/commerce/contributor/guides/code-contributions/) voor meer informatie.
 
 ### Algemene opties
 

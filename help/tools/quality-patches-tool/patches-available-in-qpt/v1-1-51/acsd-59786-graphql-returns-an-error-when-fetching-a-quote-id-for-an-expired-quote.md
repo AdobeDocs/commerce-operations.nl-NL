@@ -1,6 +1,6 @@
 ---
-title: 'ACSD-59786: GraphQL retourneert een fout bij het ophalen van een ` quote_id'' voor een verlopen aanhalingsteken'
-description: Pas het ACSD-59786 flard toe om de kwestie van Adobe Commerce te bevestigen waar een vraag van GraphQL een fout terugkeert wanneer het halen van ` quote_id ` voor een verlopen citaat.
+title: 'ACSD-59786: GraphQL retourneert een fout bij het ophalen van een &grave; quote_id'' voor een verlopen aanhalingsteken'
+description: Pas het ACSD-59786 flard toe om de kwestie van Adobe Commerce te bevestigen waar een vraag van GraphQL een fout terugkeert wanneer het halen van &grave; quote_id &grave; voor een verlopen citaat.
 feature: GraphQL, Quotes, Companies
 role: Admin, Developer
 exl-id: 3c7aaa99-a2e0-44fe-9426-b24095615915

@@ -44,6 +44,6 @@ Als het Binaire Registreren voor uw Magento 1 gegevensbestand wordt toegelaten, 
 
 Migreer Magento 1 uitbreidingscode aan Magento 2.
 
-Ga naar [!DNL [Commerce Marketplace]](https://marketplace.magento.com/) of neem contact op met de leverancier van de extensies als u de meest recente versies van extensies wilt zoeken.
+Ga naar [[!DNL [Commerce Marketplace]]](https://marketplace.magento.com/) of neem contact op met de leverancier van de extensies als u de meest recente versies van extensies wilt zoeken.
 
-U kunt ook [!DNL [Code Migration Tool]](https://github.com/magento-commerce/code-migration/blob/develop/README.md) gebruiken.
+U kunt ook [[!DNL [Code Migration Tool]]](https://github.com/magento-commerce/code-migration/blob/develop/README.md) gebruiken.

@@ -34,7 +34,7 @@ Hoe weet u, aangezien er veel verschillende typen patches zijn en er vele manier
 1. **de flarden van de Veiligheid** maken deel uit van de statische codebasis van een versie van Adobe Commerce.
 1. **de flarden van Composer** door `composer install` en `composer update` stoppen zoals [ cweagans/composer-flarden ](https://packagist.org/packages/cweagans/composer-patches).
 1. Alle **vereiste flarden** inbegrepen in het [ Reparaties van de Wolk voor Commerce ](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/release-notes/cloud-patches.html) pakket.
-1. Geselecteerde **kwaliteitspatches** inbegrepen in [!DNL [Quality Patches Tool]](../../../tools/quality-patches-tool/usage.md).
+1. Geselecteerde **kwaliteitspatches** inbegrepen in [[!DNL [Quality Patches Tool]]](../../../tools/quality-patches-tool/usage.md).
 1. **de flarden van de Douane** en de flarden van de Steun van Adobe Commerce in de `/m2-hotfixes` folder in alfabetische orde door flardnaam.
 
    >[!IMPORTANT]
@@ -338,7 +338,7 @@ Het componentpakket `centralized-patcher-compose-plugin` maken:
 
 U kunt een scenario hebben waar slechts 95% van de flarden in alle projecten worden vereist, terwijl een paar flarden slechts op een specifiek geval van toepassing zijn. De normale manier om het aanbrengen van patches toe te passen werkt nog steeds. U kunt projectspecifieke patches in de map `/m2-hotfixes` bewaren en kwaliteitspatches per project installeren.
 
-Als u deze benadering gebruikt, **** begaat geen flarden in de `/m2-hotfixes` folder die in uw project door het `centralized-patcher` componentenpakket zijn gekopieerd. U kunt per ongeluk vastgelegde gegevens voorkomen door `/m2-hotfixes` aan het `.gitignore` -bestand toe te voegen. Nadat u het `.gitignore` -bestand hebt bijgewerkt, moet u niet vergeten dat projectspecifieke `/m2-hotfixes` moet worden toegevoegd met de opdracht `git add –force` .
+Als u deze benadering gebruikt, **&#x200B;**&#x200B;begaat geen flarden in de `/m2-hotfixes` folder die in uw project door het `centralized-patcher` componentenpakket zijn gekopieerd. U kunt per ongeluk vastgelegde gegevens voorkomen door `/m2-hotfixes` aan het `.gitignore` -bestand toe te voegen. Nadat u het `.gitignore` -bestand hebt bijgewerkt, moet u niet vergeten dat projectspecifieke `/m2-hotfixes` moet worden toegevoegd met de opdracht `git add –force` .
 
 ## Verschillende Adobe Commerce-versies uitvoeren
 

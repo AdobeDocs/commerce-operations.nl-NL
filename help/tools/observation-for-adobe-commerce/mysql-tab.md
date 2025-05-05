@@ -245,7 +245,7 @@ Het **[!UICONTROL Database Errors]** kader toont een verscheidenheid van gegeven
 
 ![ Lijst van de Fout van DB ](../../assets/tools/observation-for-adobe-commerce/mysql-tab-18.jpg)
 
-In het frame **[!UICONTROL DB Error Table]** wordt dezelfde informatie weergegeven als in het frame **[!UICONTROL Database Errors]** , maar u kunt dit per knooppunt en in een tabelindeling zien. Zie {de Codes van de Fout van 0} MariaDB ](https://mariadb.com/kb/en/mariadb-error-codes/) voor meer informatie.[
+In het frame **[!UICONTROL DB Error Table]** wordt dezelfde informatie weergegeven als in het frame **[!UICONTROL Database Errors]** , maar u kunt dit per knooppunt en in een tabelindeling zien. Zie {de Codes van de Fout van 0} MariaDB [&#128279;](https://mariadb.com/kb/en/mariadb-error-codes/) voor meer informatie.
 
 ## [!UICONTROL Database Traces]
 

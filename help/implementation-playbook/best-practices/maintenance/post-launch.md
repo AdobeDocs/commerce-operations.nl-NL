@@ -122,7 +122,7 @@ Om up-to-date te blijven en de veiligheid van uw Adobe Commerce Cloud-systeem te
 
 >[!TIP]
 >
->Voor verdere details en geleidelijke instructies bij het toepassen van flarden en het handhaven van veiligheid, zie {de opmerkingen van de versie van het 0} veiligheidspatch ](../../../release/release-notes/security/overview.md) en [ hoe te om de Patches van de Veiligheid ](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/how-to/how-to-obtain-and-apply-security-patches) toe te passen. [ U zou ook ](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/site-wide-analysis-tool/access) rapporten van het Hulpmiddel van de Analyse voor de hele Plaats [ moeten herzien.
+>Voor verdere details en geleidelijke instructies bij het toepassen van flarden en het handhaven van veiligheid, zie {de opmerkingen van de versie van het 0} veiligheidspatch [&#128279;](../../../release/release-notes/security/overview.md) en [ hoe te om de Patches van de Veiligheid ](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/how-to/how-to-obtain-and-apply-security-patches) toe te passen. [ U zou ook ](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/site-wide-analysis-tool/access) rapporten van het Hulpmiddel van de Analyse voor de hele Plaats  moeten herzien.
 
 #### PCI-compatibiliteit
 

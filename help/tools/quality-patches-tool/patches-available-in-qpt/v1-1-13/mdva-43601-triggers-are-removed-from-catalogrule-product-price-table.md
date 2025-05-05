@@ -1,6 +1,6 @@
 ---
 title: 'MDVA-43601: Triggers worden verwijderd uit de tabel "catalogrule_product_price" na volledige herindex'
-description: De flard MDVA-43601 lost de kwestie op waar de trekkers uit lijst ` catalogrule_product_price ` na een volledige herindex van catalogrule_rule of ` catalogrule_product ` worden verwijderd. Deze patch is beschikbaar wanneer [Quality Patches Tool (QPT)] (https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/announcements/commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches) 1.1.13 is geïnstalleerd. De patch-id is MDVA-43601. Het probleem wordt volgens de planning opgelost in Adobe Commerce 2.4.5.
+description: De flard MDVA-43601 lost de kwestie op waar de trekkers uit lijst &grave; catalogrule_product_price &grave; na een volledige herindex van catalogrule_rule of &grave; catalogrule_product &grave; worden verwijderd. Deze patch is beschikbaar wanneer [Quality Patches Tool (QPT)] (https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/announcements/commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches) 1.1.13 is geïnstalleerd. De patch-id is MDVA-43601. Het probleem wordt volgens de planning opgelost in Adobe Commerce 2.4.5.
 feature: Catalog Management, Orders, Products
 role: Admin
 exl-id: b9580806-ac35-4c86-8eee-c9f16d654171

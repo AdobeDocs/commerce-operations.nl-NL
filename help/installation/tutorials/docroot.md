@@ -132,7 +132,7 @@ Voeg het volgende knooppunt toe aan het `env.php` -bestand.
 ]
 ```
 
-Verwijs naar de {](../../configuration/reference/config-reference-envphp.md) verwijzing 0} env.php voor meer informatie.[
+Verwijs naar de {[&#128279;](../../configuration/reference/config-reference-envphp.md) verwijzing 0} env.php voor meer informatie.
 
 ## 4. Overschakelmodi
 

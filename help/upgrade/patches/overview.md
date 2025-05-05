@@ -43,7 +43,7 @@ U kunt hotfixes in het [ Centrum van de Veiligheid ](https://magento.com/securit
 
 Afzonderlijke patches bevatten oplossingen voor een bepaalde kwestie met een lage-effectkwaliteit. Deze correcties worden toegepast op de meest recente ondersteunde secundaire versie (bijvoorbeeld 2.4.x), maar kunnen ontbreken in de vorige ondersteunde secundaire versie (bijvoorbeeld 2.3.x). Adobe geeft individuele pleisters vrij waar nodig.
 
-Gebruik [[!DNL Quality Patches Tool] ](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html) {target="_blank"} om individuele flarden toe te passen.
+Gebruik [[!DNL Quality Patches Tool] ](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html){target="_blank"}  om individuele flarden toe te passen.
 
 >[!NOTE]
 >
