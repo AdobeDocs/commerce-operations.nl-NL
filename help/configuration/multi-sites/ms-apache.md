@@ -19,7 +19,7 @@ Kopieer indien nodig het bestaande script voor het `index.php` ingangspunt voor 
 
   Er kunnen extra taken nodig zijn om meerdere websites in een gehoste omgeving te implementeren. Neem contact op met uw hostingprovider voor meer informatie.
 
-  Er zijn extra taken nodig om Adobe Commerce in te stellen op cloudinfrastructuur. Nadat u de taken voltooit die in dit onderwerp worden besproken, zie [ Opstelling veelvoudige websites of opslag ](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure-store/multiple-sites.html) in _Commerce op de gids van de Infrastructuur van de Wolk_.
+  Er zijn extra taken nodig om Adobe Commerce in te stellen op cloudinfrastructuur. Nadat u de taken voltooit die in dit onderwerp worden besproken, zie [ Opstelling veelvoudige websites of opslag ](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure-store/multiple-sites.html?lang=nl-NL) in _Commerce op de gids van de Infrastructuur van de Wolk_.
 
 - U gebruikt één virtuele host per website; het configuratiebestand van de virtuele host is `/etc/httpd/httpd.conf`
 
@@ -110,7 +110,7 @@ Tenzij u DNS opstelling voor URLs van uw opslag hebt, moet u een statische route
 >[!INFO]
 >
 >- Er kunnen extra taken nodig zijn om meerdere websites in een gehoste omgeving te implementeren. Neem contact op met uw hostingprovider voor meer informatie.
->- De extra taken worden vereist aan opstelling Adobe Commerce op wolkeninfrastructuur; zie [ Opstelling veelvoudige websites of opslag van de Wolk ](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure-store/multiple-sites.html) in _Commerce op de gids van de Infrastructuur van de Wolk_.
+>- De extra taken worden vereist aan opstelling Adobe Commerce op wolkeninfrastructuur; zie [ Opstelling veelvoudige websites of opslag van de Wolk ](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure-store/multiple-sites.html?lang=nl-NL) in _Commerce op de gids van de Infrastructuur van de Wolk_.
 
 ### Problemen oplossen
 

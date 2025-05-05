@@ -23,7 +23,7 @@ Na het steunen, kunt u [ terugschroeven van prijzen ](#rollback) later.
 
 >[!TIP]
 >
->Voor Adobe Commerce op de projecten van de wolkeninfrastructuur, zie [ Momentopnamen en reservebeheer ](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/develop/storage/snapshots) in de _gids van de Wolk_.
+>Voor Adobe Commerce op de projecten van de wolkeninfrastructuur, zie [ Momentopnamen en reservebeheer ](https://experienceleague.adobe.com/nl/docs/commerce-cloud-service/user-guide/develop/storage/snapshots) in de _gids van de Wolk_.
 
 ## Back-ups inschakelen
 

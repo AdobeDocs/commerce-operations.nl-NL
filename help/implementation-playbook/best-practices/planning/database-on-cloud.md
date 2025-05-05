@@ -59,9 +59,9 @@ Voer de volgende opdracht uit om te bepalen welke zoekengine momenteel wordt geb
 
 Zie voor configuratieinstructies de Developer Guide for Adobe Commerce on cloud:
 
-- [ Opstelling de dienst OpenSearch ](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/configure/service/opensearch)
+- [ Opstelling de dienst OpenSearch ](https://experienceleague.adobe.com/nl/docs/commerce-cloud-service/user-guide/configure/service/opensearch)
 
-- [ Opstelling de dienst van de Elasticsearch ](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/configure/service/elasticsearch)
+- [ Opstelling de dienst van de Elasticsearch ](https://experienceleague.adobe.com/nl/docs/commerce-cloud-service/user-guide/configure/service/elasticsearch)
 
 ## Aangepaste triggers voorkomen
 
@@ -76,14 +76,14 @@ Om over alternatieven te leren om douanetriggers te gebruiken, zie [ trekkers My
 
 ## Upgrade [!DNL ECE-Tools] naar versie 2002.0.21 of hoger {#ece-tools-version}
 
-Om potentiële problemen met kroonsloten te vermijden, bevorder ECE-Hulpmiddelen aan versie 2002.0.21 of hoger. Voor instructies, zie `ece-tools` versie [&#128279;](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/dev-tools/ece-tools/update-package) van de Update 0&rbrace; &lbrace;in onze ontwikkelaarsdocumentatie.
+Om potentiële problemen met kroonsloten te vermijden, bevorder ECE-Hulpmiddelen aan versie 2002.0.21 of hoger. Voor instructies, zie `ece-tools` versie [&#128279;](https://experienceleague.adobe.com/nl/docs/commerce-cloud-service/user-guide/dev-tools/ece-tools/update-package) van de Update 0&rbrace; &lbrace;in onze ontwikkelaarsdocumentatie.
 
 ## Veilig overschakelen op indexmodus
 
 <!--This best practice might belong in the Maintenance phase. Database lock prevention might be consolidated under a single heading-->
 
 Als u overschakelt op indexen, worden [!DNL data definition language] (DDL)-instructies gegenereerd om triggers te maken die databaseslokken kunnen veroorzaken. U kunt dit probleem voorkomen door uw website in de onderhoudsmodus te plaatsen en de taken voor uitsnijden uit te schakelen voordat u de configuratie wijzigt.
-Voor instructies, zie [ indexeerders ](https://experienceleague.adobe.com/docs/commerce-operations/configuration-guide/cli/manage-indexers.html#configure-indexers-1) in de *Gids van de Configuratie van Adobe Commerce* vormen.
+Voor instructies, zie [ indexeerders ](https://experienceleague.adobe.com/docs/commerce-operations/configuration-guide/cli/manage-indexers.html?lang=nl-NL#configure-indexers-1) in de *Gids van de Configuratie van Adobe Commerce* vormen.
 
 ## DDL-instructies niet uitvoeren in productie
 
@@ -95,7 +95,7 @@ Als u een DDL-instructie moet uitvoeren, zet u de website in de onderhoudsmodus 
 
 Archivering van bestellingen via de beheerder inschakelen om de benodigde ruimte voor verkooptabellen te verkleinen naarmate de gegevens van uw bestelling toenemen. Met archivering bespaart u MySQL-schijfruimte en verbetert u de afrekenprestaties.
 
-Zie [ archivering ](https://experienceleague.adobe.com/docs/commerce-admin/stores-sales/order-management/orders/order-archive.html) in de documentatie van de Merchant van Adobe Commerce toelaten.
+Zie [ archivering ](https://experienceleague.adobe.com/docs/commerce-admin/stores-sales/order-management/orders/order-archive.html?lang=nl-NL) in de documentatie van de Merchant van Adobe Commerce toelaten.
 
 ## Aanvullende informatie
 

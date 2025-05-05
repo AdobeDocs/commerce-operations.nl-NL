@@ -23,9 +23,9 @@ Adobe Commerce op cloudinfrastructuur 2.4.x en hoger
 
 Upgrade de services en onderdelen die door Adobe Commerce worden gebruikt voordat ze de einddatum bereiken of bijna halen. Dit helpt om gelijke tred te houden met de naleving van PCI en veiligheidskwetsbaarheid te verminderen.
 
-De klanten op de plannen van de Aanzet kunnen zelf-dienen op de dienstverbeteringen. Verwijs naar [ de dienstversie van de Verandering ](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/configure/service/services-yaml#change-service-version) voor details op hoe te om dit te doen.
+De klanten op de plannen van de Aanzet kunnen zelf-dienen op de dienstverbeteringen. Verwijs naar [ de dienstversie van de Verandering ](https://experienceleague.adobe.com/nl/docs/commerce-cloud-service/user-guide/configure/service/services-yaml#change-service-version) voor details op hoe te om dit te doen.
 
-De klanten op Pro plannen kunnen op de dienstverbeteringen in hun [ milieu van de Integratie slechts zelf-dienen ](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/announcements/commerce-announcements/integration-environment-enhancement-request-pro-and-starter.html). Voor de dienstverbeteringen op Productie, moet u [ een steunkaartje ](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html#submit-ticket) voorleggen die om de verbetering verzoekt.
+De klanten op Pro plannen kunnen op de dienstverbeteringen in hun [ milieu van de Integratie slechts zelf-dienen ](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/announcements/commerce-announcements/integration-environment-enhancement-request-pro-and-starter.html?lang=nl-NL). Voor de dienstverbeteringen op Productie, moet u [ een steunkaartje ](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html?lang=nl-NL#submit-ticket) voorleggen die om de verbetering verzoekt.
 
 >[!WARNING]
 >

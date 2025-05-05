@@ -63,7 +63,7 @@ In het ongelukkige geval van een plaatscompromis, zijn er enkele belangrijke aan
 
 De eerste stap van de analyse van incidenten is om zoveel mogelijk feiten te verzamelen, zo snel mogelijk. Het verzamelen van informatie over het incident kan helpen de potentiële oorzaak van het incident te bepalen. Adobe Commerce biedt de onderstaande tools voor hulp bij uw analyse van incidenten.
 
-- [ Logboeken van de Actie Admin van de Controle &lbrace;](https://experienceleague.adobe.com/docs/commerce-admin/systems/action-logs/action-log-report.html).
+- [ Logboeken van de Actie Admin van de Controle &lbrace;](https://experienceleague.adobe.com/docs/commerce-admin/systems/action-logs/action-log-report.html?lang=nl-NL).
 
   In het rapport Handelingenlogboeken wordt een gedetailleerd overzicht weergegeven van alle beheeracties die zijn ingeschakeld voor loggen. Elke record heeft een tijdstempel en registreert het IP-adres en de naam van de gebruiker. Het logboekgegeven omvat admin gebruikersgegevens en verwante veranderingen die tijdens de actie werden aangebracht.
 
@@ -73,9 +73,9 @@ De eerste stap van de analyse van incidenten is om zoveel mogelijk feiten te ver
 
   Gebruik het **lusje van de Veiligheid** in het hulpmiddel om een duidelijke mening van potentiële veiligheidskwesties te krijgen helpen worteloorzaken identificeren en plaatsen houden die optimaal presteren.
 
-- Analyseer logboeken met [ Logboeken van New Relic ](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/monitor/new-relic/new-relic-service.html)
+- Analyseer logboeken met [ Logboeken van New Relic ](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/monitor/new-relic/new-relic-service.html?lang=nl-NL)
 
-  Adobe Commerce op de Pro projecten van de wolkeninfrastructuur omvat de [ Logs van New Relic ](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/monitor/new-relic/log-management.html) dienst. De dienst wordt pre-gevormd om alle logboekgegevens van uw het Opvoeren en milieu&#39;s van de Productie samen te voegen om het in een gecentraliseerd logboekbeheersdashboard te tonen waar u samengevoegde gegevens kunt zoeken en visualiseren.
+  Adobe Commerce op de Pro projecten van de wolkeninfrastructuur omvat de [ Logs van New Relic ](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/monitor/new-relic/log-management.html?lang=nl-NL) dienst. De dienst wordt pre-gevormd om alle logboekgegevens van uw het Opvoeren en milieu&#39;s van de Productie samen te voegen om het in een gecentraliseerd logboekbeheersdashboard te tonen waar u samengevoegde gegevens kunt zoeken en visualiseren.
 
   Voor andere projecten van Commerce, kunt u opstelling en de [ dienst van de Logboeken van New Relic gebruiken ](https://docs.newrelic.com/docs/logs/get-started/get-started-log-management/) om de volgende taken te voltooien:
    - Het gebruik [ vragen van New Relic ](https://docs.newrelic.com/docs/logs/new-relic-logs/ui-data/query-syntax-logs) aan onderzoek samengevoegde logboekgegevens.
@@ -89,17 +89,17 @@ Blijf de site nauwlettend volgen na het incident, aangezien veel sites binnen en
 
 ### Gebruikersaccounts van Admin controleren
 
-- [ Admin van het Overzicht gebruikerstoegang ](https://experienceleague.adobe.com/docs/commerce-admin/systems/user-accounts/permissions-users-all.html) - verwijder oude, ongebruikte, of verdachte rekeningen en roteer wachtwoorden voor alle gebruikers Admin.
+- [ Admin van het Overzicht gebruikerstoegang ](https://experienceleague.adobe.com/docs/commerce-admin/systems/user-accounts/permissions-users-all.html?lang=nl-NL) - verwijder oude, ongebruikte, of verdachte rekeningen en roteer wachtwoorden voor alle gebruikers Admin.
 
-- [ de veiligheidsmontages van Admin van het Overzicht ](https://experienceleague.adobe.com/docs/commerce-admin/systems/security/security-admin.html) - verifieer dat de veiligheidsmontages van Admin veiligheid best praktijken volgen.
+- [ de veiligheidsmontages van Admin van het Overzicht ](https://experienceleague.adobe.com/docs/commerce-admin/systems/security/security-admin.html?lang=nl-NL) - verifieer dat de veiligheidsmontages van Admin veiligheid best praktijken volgen.
 
-- [ gebruikersrekeningen van het Overzicht voor Adobe Commerce op de projecten van de wolkeninfrastructuur ](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/project/user-access.html) - verwijder oude, ongebruikte, of verdachte rekeningen en roteer wachtwoorden voor alle gebruikers van Admin van het wolkenproject. Controleer of de beveiligingsinstellingen van de account correct zijn geconfigureerd.
+- [ gebruikersrekeningen van het Overzicht voor Adobe Commerce op de projecten van de wolkeninfrastructuur ](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/project/user-access.html?lang=nl-NL) - verwijder oude, ongebruikte, of verdachte rekeningen en roteer wachtwoorden voor alle gebruikers van Admin van het wolkenproject. Controleer of de beveiligingsinstellingen van de account correct zijn geconfigureerd.
 
-- [ de sleutels van SSH van de Controle ](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/secure-connections.html) voor Adobe Commerce op wolkeninfrastructuur-Overzicht, schrapt, en roteert de sleutels van SSH.
+- [ de sleutels van SSH van de Controle ](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/secure-connections.html?lang=nl-NL) voor Adobe Commerce op wolkeninfrastructuur-Overzicht, schrapt, en roteert de sleutels van SSH.
 
 ### Controlecode
 
-- Van Admin, herzie de [ HTML Kopbal en configuratie van de Voettekst ](https://experienceleague.adobe.com/docs/commerce-admin/content-design/design/page-setup.html) in alle werkingsgebiedniveaus, met inbegrip van `website` en `store view`. Verwijder alle onbekende JavaScript-code uit de scripts en stijlpagina&#39;s en andere HTML-instellingen. Alleen herkende code zoals tekstfragmenten bijhouden.
+- Van Admin, herzie de [ HTML Kopbal en configuratie van de Voettekst ](https://experienceleague.adobe.com/docs/commerce-admin/content-design/design/page-setup.html?lang=nl-NL) in alle werkingsgebiedniveaus, met inbegrip van `website` en `store view`. Verwijder alle onbekende JavaScript-code uit de scripts en stijlpagina&#39;s en andere HTML-instellingen. Alleen herkende code zoals tekstfragmenten bijhouden.
 
 - Vergelijk de huidige basis van de productiecode met de codebasis die in het Systeem van de Controle van de Versie (VCS) wordt opgeslagen.
 

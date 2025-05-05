@@ -41,5 +41,5 @@ Websites en winkels zijn multipliers voor catalogusgegevens, zodat het hebben va
 
 ## Aanvullende informatie
 
-- [ Begrip websites, opslag, en opslagmeningen ](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/configure-store/best-practices)
-- [ Opstelling veelvoudige websites of opslag ](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/configure-store/multiple-sites)
+- [ Begrip websites, opslag, en opslagmeningen ](https://experienceleague.adobe.com/nl/docs/commerce-cloud-service/user-guide/configure-store/best-practices)
+- [ Opstelling veelvoudige websites of opslag ](https://experienceleague.adobe.com/nl/docs/commerce-cloud-service/user-guide/configure-store/multiple-sites)

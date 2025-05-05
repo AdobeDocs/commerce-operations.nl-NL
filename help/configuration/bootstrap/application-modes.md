@@ -26,7 +26,7 @@ Zie [ plaats de verrichtingswijze ](../cli/set-mode.md) om te leren hoe te om de
 
 Vanwege het alleen-lezen bestandssysteem is er een strikte beperking voor het wijzigen van de modi in externe cloudomgevingen en kan dit systeem niet worden overschreven door Adobe Commerce Support. Probeer niet om modi te wijzigen door het bestand `app/etc/env.php` te wijzigen, omdat het bestand met het pakket `ece-tools` wordt overschreven op basis van meerdere configuratiebronnen.
 
-Adobe Commerce op wolkeninfrastructuur stelt automatisch de toepassing op _onderhoud_ wijze tijdens een plaatsing in werking, die uw plaats offline neemt tot de plaatsing volledig is. Anders, blijft de toepassing op _productie_ wijze. Zie [ proces van de Plaatsing ](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/deploy/process.html#deploy-phase) in _Commerce op de gids van de Infrastructuur van de Wolk_.
+Adobe Commerce op wolkeninfrastructuur stelt automatisch de toepassing op _onderhoud_ wijze tijdens een plaatsing in werking, die uw plaats offline neemt tot de plaatsing volledig is. Anders, blijft de toepassing op _productie_ wijze. Zie [ proces van de Plaatsing ](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/deploy/process.html?lang=nl-NL#deploy-phase) in _Commerce op de gids van de Infrastructuur van de Wolk_.
 
 Als u het Dok van de Wolk voor Commerce als ontwikkelingshulpmiddel gebruikt, kunt u uw project van de wolkeninfrastructuur in een milieu van het Dok in _wijze van de ontwikkelaar {opstellen 0}, maar de prestaties zijn langzamer wegens extra verrichtingen van de dossiersynchronisatie._ Zie [ het milieu van de Dokker ](https://developer.adobe.com/commerce/cloud-tools/docker/deploy/#launch-mode) in het _Dok van de Wolk voor de gids van Commerce_ opstellen.
 
@@ -78,7 +78,7 @@ De _wijze van het 0&rbrace; onderhoud &lbrace;beperkt of verhindert toegang tot 
 
 U kunt a [ pagina van het douaneonderhoud ](../../upgrade/troubleshooting/maintenance-mode-options.md) tot stand brengen, manueel toelaten en onderhoudswijze onbruikbaar maken, en onderhoudswijze vormen om bezoekers van erkende IP adressen toe te staan om de opslag normaal te bekijken. Zie [ toelaten en onderhoudswijze ](../../installation/tutorials/maintenance-mode.md) in onbruikbaar maken in de _Gids van de Installatie_.
 
-Als u Commerce gebruikt op cloudinfrastructuur, wordt de Commerce-toepassing tijdens de implementatiefase uitgevoerd in de onderhoudsmodus. Wanneer de implementatie met succes is voltooid, keert de Commerce-toepassing terug naar de productiemodus. Zie [ de haken van de Plaatsing ](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/deploy/best-practices.html#phase-5%3A-deployment-hooks) in _Commerce op de gids van de Infrastructuur van de Wolk_.
+Als u Commerce gebruikt op cloudinfrastructuur, wordt de Commerce-toepassing tijdens de implementatiefase uitgevoerd in de onderhoudsmodus. Wanneer de implementatie met succes is voltooid, keert de Commerce-toepassing terug naar de productiemodus. Zie [ de haken van de Plaatsing ](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/deploy/best-practices.html?lang=nl-NL#phase-5%3A-deployment-hooks) in _Commerce op de gids van de Infrastructuur van de Wolk_.
 
 In de onderhoudsmodus:
 

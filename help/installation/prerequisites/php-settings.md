@@ -19,7 +19,7 @@ In dit onderwerp wordt besproken hoe u vereiste PHP-opties kunt instellen.
 >
 >Voor de nieuwste versie van Adobe Commerce is minimaal PHP 8.1 vereist. Zie [ systeemvereisten ](../system-requirements.md) voor alle gesteunde versies van PHP.
 
-Voor de configuratiebegeleiding van de Wolk, zie [ PHP montages ](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure/app/php-settings.html) in _Commerce op de gids van de Infrastructuur van de Wolk_.
+Voor de configuratiebegeleiding van de Wolk, zie [ PHP montages ](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure/app/php-settings.html?lang=nl-NL) in _Commerce op de gids van de Infrastructuur van de Wolk_.
 
 ## PHP Process Control
 

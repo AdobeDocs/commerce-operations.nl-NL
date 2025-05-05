@@ -19,7 +19,7 @@ U kunt _op-gebouw_ plaatsingen van de toepassing van Adobe Commerce van de bevel
 
 >[!NOTE]
 >
->- Voor Adobe Commerce op de projecten van de wolkeninfrastructuur, zie [ versie van Commerce van de Verbetering ](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/commerce-version.html) in de Gids van de Wolk.
+>- Voor Adobe Commerce op de projecten van de wolkeninfrastructuur, zie [ versie van Commerce van de Verbetering ](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/commerce-version.html?lang=nl-NL) in de Gids van de Wolk.
 >- Gebruik deze methode niet om te bevorderen als u de bewaarplaats GitHub kloond. Zie [ Verbetering een op git-Gebaseerde installatie ](../developer/git-installs.md).
 
 De volgende instructies tonen u hoe te om te bevorderen gebruikend Composer pakketmanager. Adobe Commerce 2.4.2 introduceerde ondersteuning voor Composer 2. Als u probeert om van &lt;2.4.1 te bevorderen, moet u eerst aan een versie bevorderen die met Composer 2 (bijvoorbeeld, 2.4.2) compatibel is gebruikend Composer 1 _vóór_ bevordering aan Composer 2 voor >2.4.2 verbeteringen. Bovendien moet u a [ gesteunde versie ](../../installation/system-requirements.md) van PHP in werking stellen.

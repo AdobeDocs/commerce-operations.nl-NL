@@ -27,4 +27,4 @@ Gebruik de pagina [!UICONTROL Exceptions] om logbestandsfouten/uitzonderingen-lo
 
 ## Aanbevolen procedures
 
-Controleer de pagina [!DNL Site-Wide Analysis Tool’s] [!UICONTROL Exceptions] om te zien welke uitzonderingen voorkomen. Voor meer informatie, zie [ Logboeken van de Mening en van het beheer ](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/develop/test/log-locations) in onze ontwikkelaarsdocumentatie.
+Controleer de pagina [!DNL Site-Wide Analysis Tool’s] [!UICONTROL Exceptions] om te zien welke uitzonderingen voorkomen. Voor meer informatie, zie [ Logboeken van de Mening en van het beheer ](https://experienceleague.adobe.com/nl/docs/commerce-cloud-service/user-guide/develop/test/log-locations) in onze ontwikkelaarsdocumentatie.

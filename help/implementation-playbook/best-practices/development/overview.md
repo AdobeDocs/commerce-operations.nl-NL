@@ -42,7 +42,7 @@ De volgende secties bevatten informatie over best practices voor de ontwikkeling
 
 | Beste praktijken | Beschrijving |
 |--------------------------------------------------------------------------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------|
-| [ bouwt en plaatsing ](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/deploy/best-practices.html){target="_blank"}  | Beschrijft beste praktijken voor de bouw en stel stadia van Adobe Commerce op de projecten van de wolkeninfrastructuur in |
+| [ bouwt en plaatsing ](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/deploy/best-practices.html?lang=nl-NL){target="_blank"}  | Beschrijft beste praktijken voor de bouw en stel stadia van Adobe Commerce op de projecten van de wolkeninfrastructuur in |
 | Foutopsporing | Fouten systematisch en effectief opsporen in het Adobe Commerce-kader |
 | [ Statische inhoudsplaatsing ](static-content-deployment.md) | Vermijd problemen met statische inhoud die niet in uw winkelruimte wordt weergegeven |
 | [ het Oplossen van problemen ](troubleshooting.md) | Problemen met algemene Adobe Commerce-implementatie oplossen |

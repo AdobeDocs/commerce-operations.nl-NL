@@ -54,7 +54,7 @@ In software, een gebruikersrol met volledige beheerdervoorrechten om alle functi
 In Adobe Commerce hebben beheergebruikers volledige machtigingen en toegang tot alle functies, opties en mogelijkheden in Admin.
 Ze kunnen ook gebruikers en rollen maken.
 
-Leer meer: [ Toevoegend Gebruikers ](https://experienceleague.adobe.com/docs/commerce-admin/systems/user-accounts/permissions-users-all.html)
+Leer meer: [ Toevoegend Gebruikers ](https://experienceleague.adobe.com/docs/commerce-admin/systems/user-accounts/permissions-users-all.html?lang=nl-NL)
 
 _attributen van de Term:_
 
@@ -70,7 +70,7 @@ Het met een wachtwoord beveiligde back-office van uw winkel waar bestellingen, c
 Gebruikers krijgen toegang tot het beheergebied van de winkel, waaronder producten, bestellingen, verzendingen, CMS-inhoud, ontwerp van de winkel, klantgegevens, enzovoort.
 Beheerdergebruikers hebben een bijbehorende rol met machtigingen die de toegang tot functies, opties en mogelijkheden bepalen.
 
-Leer meer: [ Gids van de Gebruiker van Adobe Commerce ](https://experienceleague.adobe.com/docs/commerce-admin/user-guides/home.html)
+Leer meer: [ Gids van de Gebruiker van Adobe Commerce ](https://experienceleague.adobe.com/docs/commerce-admin/user-guides/home.html?lang=nl-NL)
 
 _attributen van de Term:_
 
@@ -84,7 +84,7 @@ _noun_
 
 ADMIN variabelen zijn de variabelen van het projectmilieu om de configuratiemontages voor de Admin gebruikersrekening met voeten te treden om tot Admin UI toegang te hebben.
 
-Leer meer: [ variabelen ADMIN ](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure/env/stage/variables-admin.html)
+Leer meer: [ variabelen ADMIN ](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure/env/stage/variables-admin.html?lang=nl-NL)
 
 _attributen van de Term:_
 
@@ -96,7 +96,7 @@ _noun_
 
 De naam van het interne gebied die aan de beheerder is toegewezen.
 
-Leer meer: [ Gids van de Gebruiker van Adobe Commerce ](https://experienceleague.adobe.com/docs/commerce-admin/user-guides/home.html)
+Leer meer: [ Gids van de Gebruiker van Adobe Commerce ](https://experienceleague.adobe.com/docs/commerce-admin/user-guides/home.html?lang=nl-NL)
 
 _attributen van de Term:_
 
@@ -190,7 +190,7 @@ De winkelvoorzijde biedt een valutaselectie voor meerdere geaccepteerde valuta&#
 Valutasymbolen worden weergegeven in productprijzen en verkoopdocumenten zoals orders en facturen.
 U kunt de valutasymbolen naar wens aanpassen en de prijsweergave voor elke winkel of weergave afzonderlijk instellen.
 
-Leer meer: [ Valuta ](https://experienceleague.adobe.com/docs/commerce-admin/stores-sales/site-store/currency/currency.html)
+Leer meer: [ Valuta ](https://experienceleague.adobe.com/docs/commerce-admin/stores-sales/site-store/currency/currency.html?lang=nl-NL)
 
 _attributen van de Term:_
 
@@ -212,13 +212,13 @@ _attributen van de Term:_
 _noun_
 
 Een eenheid van paginaoutput die wat kenmerkende inhoud - een stuk van informatie, een gebruikersinterface element - om het even wat visueel voor de eindgebruiker teruggeeft.
-[ Blokken ](https://experienceleague.adobe.com/docs/commerce-admin/content-design/elements/blocks/blocks.html) worden uitgevoerd en door modules verstrekt.
+[ Blokken ](https://experienceleague.adobe.com/docs/commerce-admin/content-design/elements/blocks/blocks.html?lang=nl-NL) worden uitgevoerd en door modules verstrekt.
 Blokken gebruiken sjablonen om HTML te genereren.
 Voorbeelden van blokken zijn een categorielijst, een minikaart, productcodes en een lijst met producten.
 
-[ de Dynamische blokken ](https://experienceleague.adobe.com/docs/commerce-admin/content-design/elements/dynamic-blocks/dynamic-blocks.html) verstrekken inhoud die op logica, zoals prijsregels wordt gebaseerd.
+[ de Dynamische blokken ](https://experienceleague.adobe.com/docs/commerce-admin/content-design/elements/dynamic-blocks/dynamic-blocks.html?lang=nl-NL) verstrekken inhoud die op logica, zoals prijsregels wordt gebaseerd.
 
-De Bouwer van de pagina breidt zich op interactivity en verwezenlijking van [ blokken ](https://experienceleague.adobe.com/docs/commerce-admin/page-builder/add-content/block.html) en [ dynamische blokken ](https://experienceleague.adobe.com/docs/commerce-admin/page-builder/add-content/dynamic-block.html) uit.
+De Bouwer van de pagina breidt zich op interactivity en verwezenlijking van [ blokken ](https://experienceleague.adobe.com/docs/commerce-admin/page-builder/add-content/block.html?lang=nl-NL) en [ dynamische blokken ](https://experienceleague.adobe.com/docs/commerce-admin/page-builder/add-content/dynamic-block.html?lang=nl-NL) uit.
 
 _attributen van de Term:_
 
@@ -248,7 +248,7 @@ _adjectief_
 
 Een detailhandel met een vaste fysieke locatie, in tegenstelling tot bedrijven die vrijwel of uitsluitend via internet functioneren.
 
-Voor [ Inventory management ](https://experienceleague.adobe.com/docs/commerce-admin/inventory/sources/sources-manage.html) en [ Order Management ](#oms), is deze opslag een bron voor het volgen van producthoeveelheden, het verschepen van orden, en het steunen in-store bestelwagen.
+Voor [ Inventory management ](https://experienceleague.adobe.com/docs/commerce-admin/inventory/sources/sources-manage.html?lang=nl-NL) en [ Order Management ](#oms), is deze opslag een bron voor het volgen van producthoeveelheden, het verschepen van orden, en het steunen in-store bestelwagen.
 
 _attributen van de Term:_
 
@@ -274,7 +274,7 @@ _noun_
 Klanten kunnen een &quot;build your own&quot; aanpasbaar product samenstellen op basis van verschillende opties en configuraties.
 Elk item in de bundel is een afzonderlijk eenvoudig of virtueel product.
 
-Leer meer: [ Configureerbare Producten ](https://experienceleague.adobe.com/docs/commerce-admin/catalog/products/types/product-create-configurable.html)
+Leer meer: [ Configureerbare Producten ](https://experienceleague.adobe.com/docs/commerce-admin/catalog/products/types/product-create-configurable.html?lang=nl-NL)
 
 _attributen van de Term:_
 
@@ -448,7 +448,7 @@ _noun_
 
 Wolkenvariabelen zijn omgevingsvariabelen die specifiek zijn voor Adobe Commerce op cloudinfrastructuur en gebruiken het voorvoegsel **`MAGENTO_CLOUD`** .
 
-Leer meer: [ variabelen van de Wolk ](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure/env/stage/variables-cloud.html)
+Leer meer: [ variabelen van de Wolk ](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure/env/stage/variables-cloud.html?lang=nl-NL)
 
 _attributen van de Term:_
 
@@ -458,7 +458,7 @@ _attributen van de Term:_
 
 _noun_
 
-Een speciale variant van [ blok ](https://experienceleague.adobe.com/docs/commerce-admin/content-design/elements/blocks/blocks.html) dat slechts in Admin kan worden gecreeerd en niet door lay-outdossiers kan worden van verwijzingen voorzien.
+Een speciale variant van [ blok ](https://experienceleague.adobe.com/docs/commerce-admin/content-design/elements/blocks/blocks.html?lang=nl-NL) dat slechts in Admin kan worden gecreeerd en niet door lay-outdossiers kan worden van verwijzingen voorzien.
 
 _attributen van de Term:_
 
@@ -619,7 +619,7 @@ _noun_
 
 Een implementatiesleutel is de openbare sleutel van uw project SSH en maakt alleen-lezen of lezen-schrijven (indien ingeschakeld) toegang tot een Git-opslagplaats mogelijk.
 
-Leer meer: [ Veilige verbindingen ](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/secure-connections.html)
+Leer meer: [ Veilige verbindingen ](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/secure-connections.html?lang=nl-NL)
 
 _attributen van de Term:_
 
@@ -688,7 +688,7 @@ _noun_
 
 Een set scripts en gereedschappen die zijn ontworpen voor het beheer en de implementatie van de Commerce-toepassing. Dit pakket vereenvoudigt veel Adobe Commerce op cloudinfrastructuuroplossingen, zoals implementatie in een Docker-omgeving, het beheren van crons, het controleren van de projectconfiguratie en het toepassen van patches voor Adoben.
 
-Leer meer: [ kind-hulpmiddelen pakket ](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/dev-tools/ece-tools/package-overview.html)
+Leer meer: [ kind-hulpmiddelen pakket ](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/dev-tools/ece-tools/package-overview.html?lang=nl-NL)
 
 _attributen van de Term:_
 
@@ -967,7 +967,7 @@ _noun_
 MAGEID is doorgaans de factureringscontactpersoon op de Adobe Commerce-account (en is mogelijk niet de projecteigenaar van de Adobe Commerce voor het cloudinfrastructuuropbouwproject).
 Voor toegangsrechten voor Adobe Commerce en Adobe Commerce voor pakketten met cloudinfrastructuur moet u toegangstoetsen gebruiken die zijn gekoppeld aan een MAGEID die toegang heeft gekregen tot deze pakketten.
 
-Leer meer: [ krijg uw authentificatietoetsen ](https://experienceleague.adobe.com/docs/commerce-operations/installation-guide/prerequisites/authentication-keys.html)
+Leer meer: [ krijg uw authentificatietoetsen ](https://experienceleague.adobe.com/docs/commerce-operations/installation-guide/prerequisites/authentication-keys.html?lang=nl-NL)
 
 _attributen van de Term:_
 
@@ -978,7 +978,7 @@ _attributen van de Term:_
 _noun_
 
 Bij verkoop en detailhandel wordt een percentage toegevoegd aan de kosten van een artikel om de detailhandelsprijs te bepalen.
-[ vorm de prijsverhoging ](https://experienceleague.adobe.com/docs/commerce-admin/catalog/products/settings/settings-advanced-custom-options.html), of de prijsdaling, van een product door product klantgerichte opties.
+[ vorm de prijsverhoging ](https://experienceleague.adobe.com/docs/commerce-admin/catalog/products/settings/settings-advanced-custom-options.html?lang=nl-NL), of de prijsdaling, van een product door product klantgerichte opties.
 
 In ontwikkeling, een computertaal die de verwerking, de presentatie, en het formatteren van tekst controleert.
 Markeringstags zijn ook codefragmenten die functionaliteit of inhoud toevoegen aan een CMS-pagina of -blok.
@@ -1076,7 +1076,7 @@ _noun_
 
 Oorspronkelijke camouflage is een beveiligingsfunctie waarmee Adobe Commerce op cloudinfrastructuur elk niet-snel verkeer kan blokkeren om aanvallen met DDoS te voorkomen en naar de cloudinfrastructuur (oorsprong) te gaan.
 
-Leer meer: [ Snelle oorsprong het camoufleren ](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/faq/fastly-origin-cloaking-enablement-faq.html)
+Leer meer: [ Snelle oorsprong het camoufleren ](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/faq/fastly-origin-cloaking-enablement-faq.html?lang=nl-NL)
 
 _attributen van de Term:_
 
@@ -1094,7 +1094,7 @@ Deze besturingselementen worden ook wel &#39;inhoudstypen&#39; genoemd.
 Handelaars kunnen lay-outs en pagina&#39;s ontwerpen zonder codeerervaring.
 Ontwikkelaars krijgen nu ondersteuning voor extensies om de Page Builder uit te breiden.
 
-Leer meer: [ Gids van de Gebruiker van de Bouwer van de Pagina ](https://experienceleague.adobe.com/docs/commerce-admin/page-builder/introduction.html), [ de Bouwer van de Pagina DevDocs ](https://developer.adobe.com/commerce/frontend-core/page-builder/)
+Leer meer: [ Gids van de Gebruiker van de Bouwer van de Pagina ](https://experienceleague.adobe.com/docs/commerce-admin/page-builder/introduction.html?lang=nl-NL), [ de Bouwer van de Pagina DevDocs ](https://developer.adobe.com/commerce/frontend-core/page-builder/)
 
 _attributen van de Term:_
 
@@ -1406,7 +1406,7 @@ De doelstellingen van het UI componentensysteem omvatten het volgende:
 * AJAX gebruiken om componentgegevens bij te werken
 * Introductie van een nieuwe DSL voor het creëren van de bovengenoemde punten
 
-Leer meer: [ UI de gids van Componenten ](https://developer.adobe.com/commerce/frontend-core/ui-components/), [ Bouwer van de Pagina ](https://experienceleague.adobe.com/docs/commerce-admin/page-builder/introduction.html)
+Leer meer: [ UI de gids van Componenten ](https://developer.adobe.com/commerce/frontend-core/ui-components/), [ Bouwer van de Pagina ](https://experienceleague.adobe.com/docs/commerce-admin/page-builder/introduction.html?lang=nl-NL)
 
 _attributen van de Term:_
 
@@ -1445,7 +1445,7 @@ Door de leverancier geproduceerde code die het gedrag van Commerce uitbreidt of 
 VBE&#39;s worden grondig getest en opgenomen in elke ondersteunde versie van Adobe Commerce.
 Een VBE kan modules, thema&#39;s, en taalpakketten omvatten.
 
-Leer meer in het [ Gevonden onderwerp van de Uitbreiding van de Leverancier ](https://experienceleague.adobe.com/docs/commerce-operations/upgrade-guide/modules/upgrade.html).
+Leer meer in het [ Gevonden onderwerp van de Uitbreiding van de Leverancier ](https://experienceleague.adobe.com/docs/commerce-operations/upgrade-guide/modules/upgrade.html?lang=nl-NL).
 
 _attributen van de Term:_
 
@@ -1511,7 +1511,7 @@ _attributen van de Term:_
 
 _noun_
 
-A [ widget ](https://experienceleague.adobe.com/docs/commerce-admin/content-design/elements/widgets/widgets.html) is een voorbereid codefragment dat kan worden gebruikt om blokken, verbindingen, en dynamische inhoud bij specifieke plaatsen op opslagpagina&#39;s te plaatsen.
+A [ widget ](https://experienceleague.adobe.com/docs/commerce-admin/content-design/elements/widgets/widgets.html?lang=nl-NL) is een voorbereid codefragment dat kan worden gebruikt om blokken, verbindingen, en dynamische inhoud bij specifieke plaatsen op opslagpagina&#39;s te plaatsen.
 Met widgets kunt u bestemmingspagina&#39;s maken voor marketingcampagnes, promotionele inhoud weergeven op specifieke locaties in de gehele winkel.
 Widgets kan ook worden gebruikt om interactieve elementen en actieklokken toe te voegen voor externe revisiesystemen, videoclips, stempels en abonnementformulieren, of om navigatie-elementen te bieden voor codewolken en afbeeldingsschuifregelaars.
 

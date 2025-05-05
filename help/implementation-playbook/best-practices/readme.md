@@ -7,7 +7,7 @@ ht-degree: 0%
 ---
 # Tips en trucs: workflow voor het maken van inhoud
 
-Dit document beschrijft het gebruikerswerkschema om veranderingen of toevoegingen aan *[Beste praktijken ] (https://experienceleague.adobe.com/docs/commerce-operations/implementation-playbook/best-practices/phases.html* inhoud in *te verzoeken de Playbook van de Implementatie van Adobe Commerce*.
+Dit document beschrijft het gebruikerswerkschema om veranderingen of toevoegingen aan *[Beste praktijken ] (https://experienceleague.adobe.com/docs/commerce-operations/implementation-playbook/best-practices/phases.html?lang=nl-NL* inhoud in *te verzoeken de Playbook van de Implementatie van Adobe Commerce*.
 
 ## Wie kan een aanvraag maken?
 
@@ -35,13 +35,13 @@ U kunt de volgende typen verzoeken verzenden:
 
 Als er niet genoeg informatie in een verzoek wordt verstrekt, vraagt het team om extra informatie van de aanvrager. Als de aanvrager niet binnen 14 dagen reageert, sluit het team het verzoek.
 
-**creeer of werk van de updateinhoud** - de schepping wordt voltooid na het proces dat in de [ Gids van de Medewerker van Adobe Experience League ](https://experienceleague.adobe.com/docs/contributor/contributor-guide/introduction.html) wordt gedocumenteerd. Afhankelijk van het verzoek, kan het werk het omzetten van nieuwe inhoud in prijsdaling omvatten, creërend een onderwerp, of het bijwerken van een bestaand onderwerp.
+**creeer of werk van de updateinhoud** - de schepping wordt voltooid na het proces dat in de [ Gids van de Medewerker van Adobe Experience League ](https://experienceleague.adobe.com/docs/contributor/contributor-guide/introduction.html?lang=nl-NL) wordt gedocumenteerd. Afhankelijk van het verzoek, kan het werk het omzetten van nieuwe inhoud in prijsdaling omvatten, creërend een onderwerp, of het bijwerken van een bestaand onderwerp.
 
-**de overzicht van de Inhoud, goedkeuring, en publicatie** - Inhoud wordt herzien en tijdens onderwerpverwezenlijking of update gebruikend [ GitHub trekkingsverzoeken ](https://experienceleague.adobe.com/docs/contributor/contributor-guide/setup/git-fundamentals.html?lang=en#pull-requests) uitgegeven. Alle inhoud moet door redactionele revisie worden gecontroleerd. Technische revisie is optioneel en is afhankelijk van de inhoud. Als technische revisie niet nodig is, wordt het proces alleen voortgezet met een redactionele revisie. Dit proces kan meerdere herhalingen duren totdat de inhoud is goedgekeurd.
+**de overzicht van de Inhoud, goedkeuring, en publicatie** - Inhoud wordt herzien en tijdens onderwerpverwezenlijking of update gebruikend [ GitHub trekkingsverzoeken ](https://experienceleague.adobe.com/docs/contributor/contributor-guide/setup/git-fundamentals.html?lang=nl-NL#pull-requests) uitgegeven. Alle inhoud moet door redactionele revisie worden gecontroleerd. Technische revisie is optioneel en is afhankelijk van de inhoud. Als technische revisie niet nodig is, wordt het proces alleen voortgezet met een redactionele revisie. Dit proces kan meerdere herhalingen duren totdat de inhoud is goedgekeurd.
 
 Nadat een artikel is goedgekeurd, kan het trekkingsverzoek worden samengevoegd met de productietak. Samenvoegen moet worden uitgevoerd door de auteur. Nadat een onderwerp is samengevoegd, kan het aan productie onmiddellijk worden gepubliceerd gebruikend een handproces, of automatisch de volgende tijd de het publiceren baan loopt. Publicatietaken worden meestal om de twee uur uitgevoerd.
 
-**het Nieuwe inhoudsbericht** - Adobe zal a *verstrekken wat* sectie over het [ overzicht van Beste praktijken ](https://experienceleague.adobe.com/docs/commerce-operations/implementation-playbook/best-practices/phases.html?lang=en) onderwerp &lbrace;nieuw is om gebruikers over onlangs gepubliceerde of bijgewerkte onderwerpen te houden. De Adobe zal ook de nieuwe inhoud van Beste praktijken bevorderen gebruikend bestaande kanalen, zoals marketing en interne mededelingen.
+**het Nieuwe inhoudsbericht** - Adobe zal a *verstrekken wat* sectie over het [ overzicht van Beste praktijken ](https://experienceleague.adobe.com/docs/commerce-operations/implementation-playbook/best-practices/phases.html?lang=nl-NL) onderwerp &lbrace;nieuw is om gebruikers over onlangs gepubliceerde of bijgewerkte onderwerpen te houden. De Adobe zal ook de nieuwe inhoud van Beste praktijken bevorderen gebruikend bestaande kanalen, zoals marketing en interne mededelingen.
 
 ## Backlog &amp; Kanban Board
 

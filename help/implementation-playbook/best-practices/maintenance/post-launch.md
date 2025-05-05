@@ -35,7 +35,7 @@ Ondersteuning en onderhoud na de introductie zijn van cruciaal belang om ervoor 
 
   >[!TIP]
   >
-  >Zie [ prestaties controle ](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/monitor/performance) in de _Gids van de Wolk_.
+  >Zie [ prestaties controle ](https://experienceleague.adobe.com/nl/docs/commerce-cloud-service/user-guide/monitor/performance) in de _Gids van de Wolk_.
 
 
 - **Optimizing gegevensbestandprestaties**: Om gegevensbestandprestaties in Adobe Commerce Cloud te optimaliseren, voer het volgende uit:
@@ -66,7 +66,7 @@ Deze controlestappen helpen optimale CDN-prestaties en adresproblemen te behoude
 
 >[!TIP]
 >
->Zie [ het Snelle overzicht van de diensten ](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/cdn/fastly) in de _Gids van de Wolk_.
+>Zie [ het Snelle overzicht van de diensten ](https://experienceleague.adobe.com/nl/docs/commerce-cloud-service/user-guide/cdn/fastly) in de _Gids van de Wolk_.
 
 #### Regelmatige bewaking van de beveiliging
 
@@ -86,7 +86,7 @@ Om regelmatig veiligheidscontrole in Adobe Commerce Cloud te handhaven, adviseer
 
 >[!TIP]
 >
->Zie [ Veiligheid ](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/security/security) in de _Gids van Systemen Admin_.
+>Zie [ Veiligheid ](https://experienceleague.adobe.com/nl/docs/commerce-admin/systems/security/security) in de _Gids van Systemen Admin_.
 
 #### Foutenregistratie en -controle
 
@@ -102,7 +102,7 @@ Om foutenregistratie in Adobe Commerce Cloud te controleren, verstrekt de Adobe 
 
 >[!TIP]
 >
->Voor meer details bij het registreren en fout het volgen praktijken in Adobe Commerce Cloud, zie [ het logboekbeheer van New Relic ](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/monitor/new-relic/log-management) en [ uitzondering controle ](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/site-wide-analysis-tool/exceptions).
+>Voor meer details bij het registreren en fout het volgen praktijken in Adobe Commerce Cloud, zie [ het logboekbeheer van New Relic ](https://experienceleague.adobe.com/nl/docs/commerce-cloud-service/user-guide/monitor/new-relic/log-management) en [ uitzondering controle ](https://experienceleague.adobe.com/nl/docs/commerce-operations/tools/site-wide-analysis-tool/exceptions).
 
 ### Beveiliging en updates
 
@@ -110,19 +110,19 @@ Om foutenregistratie in Adobe Commerce Cloud te controleren, verstrekt de Adobe 
 
 Om up-to-date te blijven en de veiligheid van uw Adobe Commerce Cloud-systeem te garanderen, volgt u enkele belangrijke procedures voor het controleren van beveiligingspatches en -updates:
 
-- **maak een abonnement op de veiligheidsalarm van Adobe Commerce**: Het blijven geïnformeerd over veiligheidskwetsbaarheid door [ registrerend voor berichten van Adobe ](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/security/security).
+- **maak een abonnement op de veiligheidsalarm van Adobe Commerce**: Het blijven geïnformeerd over veiligheidskwetsbaarheid door [ registrerend voor berichten van Adobe ](https://experienceleague.adobe.com/nl/docs/commerce-admin/systems/security/security).
 
-- **de versienota&#39;s van de Controle**: Herzie regelmatig [ de versienota&#39;s van het veiligheidspatch ](https://experienceleague.adobe.com/en/docs/commerce-operations/release/notes/security-patches/overview), die met &quot;-pN&quot;voor versies (b.v., 2.3.5-p1) worden geëtiketteerd, en bevatten kritieke moeilijke situaties en verbeteringen.
+- **de versienota&#39;s van de Controle**: Herzie regelmatig [ de versienota&#39;s van het veiligheidspatch ](https://experienceleague.adobe.com/nl/docs/commerce-operations/release/notes/security-patches/overview), die met &quot;-pN&quot;voor versies (b.v., 2.3.5-p1) worden geëtiketteerd, en bevatten kritieke moeilijke situaties en verbeteringen.
 
 - **pas onmiddellijk veiligheidspatches** toe: Pas veiligheidspatches toe zodra zij beschikbaar zijn. Dit omvat het bijwerken naar de nieuwste versies of het toepassen van specifieke patchbestanden.
 
 - **de wolkenfspatches van het Gebruik**: Voor Adobe Commerce Cloud, kunnen de veiligheidspatches binnen de Reeks van de Hulpmiddelen van de Wolk worden gebundeld. Upgrade de suite of de Commerce-versie om deze oplossingen te ontvangen.
 
-- **Geautomatiseerd flardbeheer**: Overweeg het gebruiken van hulpmiddelen als de gecentraliseerde patcher om [ patches automatisch over veelvoudige opslag te beheren en toe te passen ](https://experienceleague.adobe.com/en/docs/commerce-operations/implementation-playbook/best-practices/maintenance/patching-at-scale).
+- **Geautomatiseerd flardbeheer**: Overweeg het gebruiken van hulpmiddelen als de gecentraliseerde patcher om [ patches automatisch over veelvoudige opslag te beheren en toe te passen ](https://experienceleague.adobe.com/nl/docs/commerce-operations/implementation-playbook/best-practices/maintenance/patching-at-scale).
 
 >[!TIP]
 >
->Voor verdere details en geleidelijke instructies bij het toepassen van flarden en het handhaven van veiligheid, zie {de opmerkingen van de versie van het 0} veiligheidspatch [&#128279;](../../../release/release-notes/security/overview.md) en [ hoe te om de Patches van de Veiligheid ](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/how-to/how-to-obtain-and-apply-security-patches) toe te passen. [ U zou ook ](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/site-wide-analysis-tool/access) rapporten van het Hulpmiddel van de Analyse voor de hele Plaats  moeten herzien.
+>Voor verdere details en geleidelijke instructies bij het toepassen van flarden en het handhaven van veiligheid, zie {de opmerkingen van de versie van het 0} veiligheidspatch [&#128279;](../../../release/release-notes/security/overview.md) en [ hoe te om de Patches van de Veiligheid ](https://experienceleague.adobe.com/nl/docs/commerce-knowledge-base/kb/how-to/how-to-obtain-and-apply-security-patches) toe te passen. [ U zou ook ](https://experienceleague.adobe.com/nl/docs/commerce-operations/tools/site-wide-analysis-tool/access) rapporten van het Hulpmiddel van de Analyse voor de hele Plaats  moeten herzien.
 
 #### PCI-compatibiliteit
 
@@ -132,11 +132,11 @@ Volg de volgende belangrijke procedures om ervoor te zorgen dat de PCI-compatibi
 
 - **Gebruik veilige transmissieprotocollen**: Verzend altijd betalingsgegevens over veilige protocollen zoals TLS, met encryptie en correct zeer belangrijk beheer.
 
-- **Gebruikt de firewall van de Webtoepassing (WAF)**: De snelaangedreven dienst van WAF helpt aan PCI DSS 6.6 vereisten voldoen en tegen gemeenschappelijke kwetsbaarheid beschermen door kwaadwillig verkeer te blokkeren alvorens het uw plaats bereikt. Zie meer informatie [ hier ](https://experienceleague.adobe.com/en/docs/commerce-operations/implementation-playbook/best-practices/planning/payment-processing-storage) en [ hier ](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/cdn/fastly-waf-service).
+- **Gebruikt de firewall van de Webtoepassing (WAF)**: De snelaangedreven dienst van WAF helpt aan PCI DSS 6.6 vereisten voldoen en tegen gemeenschappelijke kwetsbaarheid beschermen door kwaadwillig verkeer te blokkeren alvorens het uw plaats bereikt. Zie meer informatie [ hier ](https://experienceleague.adobe.com/nl/docs/commerce-operations/implementation-playbook/best-practices/planning/payment-processing-storage) en [ hier ](https://experienceleague.adobe.com/nl/docs/commerce-cloud-service/user-guide/cdn/fastly-waf-service).
 
-- **de toegang van de grens**: Zorg ervoor dat slechts het gemachtigde personeel toegang tot gevoelige betalingsgegevens heeft, en [ toegangscontrole toepast om het risico van blootstelling ](https://experienceleague.adobe.com/en/docs/commerce-operations/implementation-playbook/best-practices/planning/payment-processing-storage) te verminderen.
+- **de toegang van de grens**: Zorg ervoor dat slechts het gemachtigde personeel toegang tot gevoelige betalingsgegevens heeft, en [ toegangscontrole toepast om het risico van blootstelling ](https://experienceleague.adobe.com/nl/docs/commerce-operations/implementation-playbook/best-practices/planning/payment-processing-storage) te verminderen.
 
-- **Regelmatig veiligheidsaftasten**: Voer regelmatige aftasten PCI ASV uit en [ controleer uw milieu ](https://experienceleague.adobe.com/en/docs/commerce-operations/security-and-compliance/shared-responsibility) om potentiële kwetsbaarheid te richten.
+- **Regelmatig veiligheidsaftasten**: Voer regelmatige aftasten PCI ASV uit en [ controleer uw milieu ](https://experienceleague.adobe.com/nl/docs/commerce-operations/security-and-compliance/shared-responsibility) om potentiële kwetsbaarheid te richten.
 
 >[!TIP]
 >
@@ -202,9 +202,9 @@ Volg de volgende belangrijke procedures om ervoor te zorgen dat de PCI-compatibi
 
 - **auto-schrapend voor verkeer behandeling**:
 
-   - Adobe Commerce Cloud ondersteunt automatisch schalen om serverbronnen (bijvoorbeeld webknooppunten) dynamisch aan te passen op basis van realtime-verkeersvereisten, zodat uw winkel grote bezoekersvolumes kan verwerken zonder handmatig ingrijpen. Zie [ autoscaling ](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/architecture/autoscaling) in de _Gids van de Wolk_.
+   - Adobe Commerce Cloud ondersteunt automatisch schalen om serverbronnen (bijvoorbeeld webknooppunten) dynamisch aan te passen op basis van realtime-verkeersvereisten, zodat uw winkel grote bezoekersvolumes kan verwerken zonder handmatig ingrijpen. Zie [ autoscaling ](https://experienceleague.adobe.com/nl/docs/commerce-cloud-service/user-guide/architecture/autoscaling) in de _Gids van de Wolk_.
 
-   - Web en de dienstrijen kunnen onafhankelijk schrapen, toevoegend meer Webknopen voor verhoogd verkeer en het schrapen van gegevensbestand of de dienstknopen voor backendeprestaties tijdens piekperiodes. Zie [ geschaalde architectuur ](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/architecture/scaled-architecture) in de _Gids van de Wolk_.
+   - Web en de dienstrijen kunnen onafhankelijk schrapen, toevoegend meer Webknopen voor verhoogd verkeer en het schrapen van gegevensbestand of de dienstknopen voor backendeprestaties tijdens piekperiodes. Zie [ geschaalde architectuur ](https://experienceleague.adobe.com/nl/docs/commerce-cloud-service/user-guide/architecture/scaled-architecture) in de _Gids van de Wolk_.
 
 - **Controle van Prestaties**:
 
@@ -230,13 +230,13 @@ Volg de volgende belangrijke procedures om ervoor te zorgen dat de PCI-compatibi
 
 ### Rapportage en analyse
 
-- **Adobe Commerce Intelligence:** Commerce Intelligence, een kernvermogen van Adobe Commerce, verstrekt beste praktijkinzichten over veelvoudige gegevensbronnen, toestaand handelaren om wetenschappelijke gegeven-gedreven besluiten te nemen en duidelijke en geïnformeerde acties te nemen. Zie de [_Gids van de Gebruiker van Commerce Intelligence_ ](https://experienceleague.adobe.com/en/docs/commerce-business-intelligence/mbi/getting-started).
+- **Adobe Commerce Intelligence:** Commerce Intelligence, een kernvermogen van Adobe Commerce, verstrekt beste praktijkinzichten over veelvoudige gegevensbronnen, toestaand handelaren om wetenschappelijke gegeven-gedreven besluiten te nemen en duidelijke en geïnformeerde acties te nemen. Zie de [_Gids van de Gebruiker van Commerce Intelligence_ ](https://experienceleague.adobe.com/nl/docs/commerce-business-intelligence/mbi/getting-started).
 
 - **Adobe Analytics:** Adobe Analytics biedt een krachtige oplossing aan spoor, analyseer, en optimaliseer de prestaties van uw online opslag. Adobe Analytics helpt eCommerce-bedrijven dieper inzicht te krijgen in het gedrag van klanten, de productprestaties, de conversietarieven en andere belangrijke meetgegevens, waardoor gegevensgestuurde besluitvorming mogelijk wordt.
 
 - **Googles Analytics:** Googles Analytics van het gebruik om klantengedrag, verkeersbronnen, en omzettingspercentages te volgen.
 
-- **Extra hulpmiddelen van Commerce Intelligence:** Adobe Commerce omvat Geavanceerde Rapportering. Deze eigenschap geeft u toegang tot een reeks van dynamische rapporten die op uw product, orde, en klantengegevens worden gebaseerd, met een gepersonaliseerd dashboard dat aan uw bedrijfsbehoeften wordt aangepast, zie [ geavanceerde rapportering ](https://experienceleague.adobe.com/en/docs/commerce-admin/start/reporting/business-intelligence#advanced-reporting) in de _Gids van de Gebruiker Admin_ voor meer informatie.
+- **Extra hulpmiddelen van Commerce Intelligence:** Adobe Commerce omvat Geavanceerde Rapportering. Deze eigenschap geeft u toegang tot een reeks van dynamische rapporten die op uw product, orde, en klantengegevens worden gebaseerd, met een gepersonaliseerd dashboard dat aan uw bedrijfsbehoeften wordt aangepast, zie [ geavanceerde rapportering ](https://experienceleague.adobe.com/nl/docs/commerce-admin/start/reporting/business-intelligence#advanced-reporting) in de _Gids van de Gebruiker Admin_ voor meer informatie.
 
 ### Conclusie
 

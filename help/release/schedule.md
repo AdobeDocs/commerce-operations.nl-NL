@@ -18,9 +18,9 @@ Adobe streeft voortdurend naar het juiste evenwicht tussen het maken van product
 
 Nieuwe functies, functie-updates, cloudinfrastructuur en uitbreidbaarheidsupdates worden onafhankelijk van patchreleases geleverd en zijn beschikbaar via externe modules, extensies, gereedschappen of webservices. Voorbeelden zijn:
 
-- ![&#128279;](../assets/icons/feature.svg) [**Eigenschappen en functionaliteit** ](https://experienceleague.adobe.com/en/docs/commerce/user-guides/release-information/release-notes-all) het pictogram van de Eigenschap van 0&rbrace; &lbrace; - Nieuwe eigenschappen en functionaliteit die onafhankelijk van flardversies worden geleverd. Bijvoorbeeld, [ B2B ](https://experienceleague.adobe.com/en/docs/commerce-admin/b2b/release-notes), de Dienst van de Catalogus, de Verbinding van Gegevens, Levend Onderzoek, en de Aanbevelingen van het Product.
+- ![&#128279;](../assets/icons/feature.svg) [**Eigenschappen en functionaliteit** ](https://experienceleague.adobe.com/nl/docs/commerce/user-guides/release-information/release-notes-all) het pictogram van de Eigenschap van 0&rbrace; &lbrace; - Nieuwe eigenschappen en functionaliteit die onafhankelijk van flardversies worden geleverd. Bijvoorbeeld, [ B2B ](https://experienceleague.adobe.com/nl/docs/commerce-admin/b2b/release-notes), de Dienst van de Catalogus, de Verbinding van Gegevens, Levend Onderzoek, en de Aanbevelingen van het Product.
 
-- ![&#128279;](../assets/icons/servers.svg) [**het pictogram van de Infrastructuur van de Infrastructuur 1&rbrace;** ](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/release-notes/cloud-tools-suite) - Nieuwe eigenschappen en verhogingen aan Adobe Commerce op wolkeninfrastructuur en de Reeks van Hulpmiddelen van de Wolk voor de pakketten van Commerce, die de installaties en verbeteringen van Adobe Commerce op het platform van de Wolk opstellen en beheren.
+- ![&#128279;](../assets/icons/servers.svg) [**het pictogram van de Infrastructuur van de Infrastructuur 1&rbrace;** ](https://experienceleague.adobe.com/nl/docs/commerce-cloud-service/user-guide/release-notes/cloud-tools-suite) - Nieuwe eigenschappen en verhogingen aan Adobe Commerce op wolkeninfrastructuur en de Reeks van Hulpmiddelen van de Wolk voor de pakketten van Commerce, die de installaties en verbeteringen van Adobe Commerce op het platform van de Wolk opstellen en beheren.
 
 - ![ het pictogram van de Rekbaarheid ](../assets/icons/brackets.svg) [**Uitbreidbaarheid** ](https://developer.adobe.com/commerce/extensibility/) - Nieuwe ontwikkelaarshulpmiddelen en de diensten voor uit-van-procesrekbaarheid die onafhankelijk van flardversies wordt geleverd. Bijvoorbeeld: Integration Starter Kit, Admin UI SDK, Adobe I/O Events for Commerce en API Mesh.
 
@@ -36,7 +36,7 @@ De volgende lijst bevat de datums voor geplande functies, cloudinfrastructuur en
 
 >[!NOTE]
 >
->De functies, de cloudinfrastructuur en de uitbreidbaarheidsreleases kunnen het hele jaar door variëren. Adobe geeft echter regelmatig en voortdurend verbeteringen voor deze gebieden door tussen de data die op deze pagina zijn vermeld. Zie [ wat is Adobe Commerce?](https://experienceleague.adobe.com/en/docs/commerce-admin/start/about) voor meer informatie over de nieuwste functies.
+>De functies, de cloudinfrastructuur en de uitbreidbaarheidsreleases kunnen het hele jaar door variëren. Adobe geeft echter regelmatig en voortdurend verbeteringen voor deze gebieden door tussen de data die op deze pagina zijn vermeld. Zie [ wat is Adobe Commerce?](https://experienceleague.adobe.com/nl/docs/commerce-admin/start/about) voor meer informatie over de nieuwste functies.
 
 ## Patches
 

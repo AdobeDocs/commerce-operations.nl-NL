@@ -18,4 +18,4 @@ In deze release met beveiligingspatches worden updates vastgelegd om de beveilig
 Meer informatie over beveiligingspatchreleases:
 
 * [Overzicht van Adobe Commerce Security Patch Release](/help/release/release-notes/security/overview.md#about-adobe-commerce-security-patch-releases)
-* De instructies voor het downloaden van en het toepassen van de versies van het veiligheidspatch zijn beschikbaar in de [ Gids van de Verbetering ](https://experienceleague.adobe.com/en/docs/commerce-operations/upgrade-guide/implementation/perform-upgrade)
+* De instructies voor het downloaden van en het toepassen van de versies van het veiligheidspatch zijn beschikbaar in de [ Gids van de Verbetering ](https://experienceleague.adobe.com/nl/docs/commerce-operations/upgrade-guide/implementation/perform-upgrade)

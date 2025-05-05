@@ -23,4 +23,4 @@ ht-degree: 0%
 - Referentie {#reference}
    - [Persoonlijke gegevens van de klant (versie 2.x)](privacy/data-m2.md)
    - [Persoonlijke gegevens van de klant (versie 1.x)](privacy/data-m1.md)
-- [ Terugkeer aan Operationele Gidsen ](https://experienceleague.adobe.com/docs/commerce-operations/operational-guides/home.html)
+- [ Terugkeer aan Operationele Gidsen ](https://experienceleague.adobe.com/docs/commerce-operations/operational-guides/home.html?lang=nl-NL)

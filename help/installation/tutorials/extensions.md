@@ -20,7 +20,7 @@ Extensies zijn:
 - Thema&#39;s (wijzig de vormgeving van uw winkel en Admin)
 - Taalpakketten (lokaliseer de winkel en Admin)
 
-Dit onderwerp verklaart hoe te om de bevel-lijn interface te gebruiken om derdeuitbreidingen te beheren die u van de Commerce Marketplace voor _op-gebouw_ projecten koopt. Voor de projecten van de wolkeninfrastructuur, zie [ uitbreidingen ](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/configure-store/extensions) beheren.
+Dit onderwerp verklaart hoe te om de bevel-lijn interface te gebruiken om derdeuitbreidingen te beheren die u van de Commerce Marketplace voor _op-gebouw_ projecten koopt. Voor de projecten van de wolkeninfrastructuur, zie [ uitbreidingen ](https://experienceleague.adobe.com/nl/docs/commerce-cloud-service/user-guide/configure-store/extensions) beheren.
 
 U kunt de zelfde procedure gebruiken om _om het even welke_ uitbreiding te installeren; allen u hebt nodig is de naam en de versie van Composer van de uitbreiding. Als u de extensie wilt zoeken, opent u het `composer.json` -bestand en noteert u de waarden voor `"name"` en `"version"` .
 

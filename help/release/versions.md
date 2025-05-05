@@ -17,7 +17,7 @@ Deze pagina bevat een lijst met uitgebrachte versies van Adobe Commerce. Het bev
 >[!NOTE]
 >
 >Adobe raadt u aan Adobe Commerce te installeren of te upgraden naar de recentste beveiligingspatch die voor elke release beschikbaar is.
->Voor andere veiligheidsupdates, zie [ Updates van de Veiligheid voor Magento / Adobe Commerce ](https://helpx.adobe.com/security/products/magento.html).
+>Voor andere veiligheidsupdates, zie [ Updates van de Veiligheid voor Magento / Adobe Commerce ](https://helpx.adobe.com/nl/security/products/magento.html).
 >Voor tarifering, zie [ Adobe Commerce tarifering ](https://business.adobe.com/products/magento/pricing.html).
 
 {{$include /help/_includes/templated/release/core-releases.md}}

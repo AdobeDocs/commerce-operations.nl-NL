@@ -31,4 +31,4 @@ Sites met persoonlijke inhoudsblokken die de `_isScopePrivate` -variabelen bevat
 ## Aanvullende informatie
 
 - [Persoonlijke inhoud](../../../performance/configuration.md#client-side-optimization-settings)
-- [ Hoge productie AJAX verzoeken veroorzaken slechte prestaties ](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/high-throughput-ajax-requests-cause-poor-performance.html)
+- [ Hoge productie AJAX verzoeken veroorzaken slechte prestaties ](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/high-throughput-ajax-requests-cause-poor-performance.html?lang=nl-NL)

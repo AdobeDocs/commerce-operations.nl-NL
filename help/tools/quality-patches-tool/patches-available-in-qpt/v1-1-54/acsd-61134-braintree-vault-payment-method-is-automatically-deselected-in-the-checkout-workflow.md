@@ -12,7 +12,7 @@ ht-degree: 0%
 
 # ACSD-61134: *[!UICONTROL Braintree Vault]* betaalmethode wordt automatisch uitgeschakeld in de uitcheckworkflow
 
-De ACSD-61134-patch verhelpt het probleem waarbij de betalingsmethode *[!UICONTROL Braintree Vault]* automatisch wordt uitgeschakeld in de workflow voor het uitchecken wanneer een winkelier zijn factureringsadres bijwerkt door het selectievakje *[!UICONTROL My billing and shipping address are the same]* uit te schakelen. Deze patch is beschikbaar wanneer [[!DNL Quality Patches Tool (QPT)] ](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/announcements/commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches) 1.1.54 wordt geïnstalleerd. De patch-id is ACSD-61134. Dit probleem wordt volgens de planning opgelost in Adobe Commerce 2.4.7-bèta1.
+De ACSD-61134-patch verhelpt het probleem waarbij de betalingsmethode *[!UICONTROL Braintree Vault]* automatisch wordt uitgeschakeld in de workflow voor het uitchecken wanneer een winkelier zijn factureringsadres bijwerkt door het selectievakje *[!UICONTROL My billing and shipping address are the same]* uit te schakelen. Deze patch is beschikbaar wanneer [[!DNL Quality Patches Tool (QPT)] ](https://experienceleague.adobe.com/nl/docs/commerce-knowledge-base/kb/announcements/commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches) 1.1.54 wordt geïnstalleerd. De patch-id is ACSD-61134. Dit probleem wordt volgens de planning opgelost in Adobe Commerce 2.4.7-bèta1.
 
 ## Betrokken producten en versies
 
@@ -26,7 +26,7 @@ Adobe Commerce (alle implementatiemethoden) 2.4.4 - 2.4.6-p8
 
 >[!NOTE]
 >
->De patch kan van toepassing worden op andere versies met nieuwe [!DNL Quality Patches Tool] versies. Om te controleren of de patch compatibel is met uw Adobe Commerce-versie, werkt u het `magento/quality-patches` -pakket bij naar de meest recente versie en controleert u de compatibiliteit op de [[!DNL Quality Patches Tool] : zoek naar patches op de pagina ](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html) . Gebruik de patch-id als een zoekwoord om de patch te zoeken.
+>De patch kan van toepassing worden op andere versies met nieuwe [!DNL Quality Patches Tool] versies. Om te controleren of de patch compatibel is met uw Adobe Commerce-versie, werkt u het `magento/quality-patches` -pakket bij naar de meest recente versie en controleert u de compatibiliteit op de [[!DNL Quality Patches Tool] : zoek naar patches op de pagina ](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html?lang=nl-NL) . Gebruik de patch-id als een zoekwoord om de patch te zoeken.
 
 ## Probleem
 
@@ -53,7 +53,7 @@ De geselecteerde betalingsmethode is uitgeschakeld.
 Om individuele flarden toe te passen, gebruik de volgende verbindingen afhankelijk van uw plaatsingsmethode:
 
 * Adobe Commerce of Magento Open Source op locatie: [[!DNL Quality Patches Tool]  > Gebruik ](/help/tools/quality-patches-tool/usage.md) in de handleiding [!DNL Quality Patches Tool] .
-* Adobe Commerce op wolkeninfrastructuur: [ Verbeteringen en Patches > Pas Patches ](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html) in Commerce op de gids van de Infrastructuur van de Wolk toe.
+* Adobe Commerce op wolkeninfrastructuur: [ Verbeteringen en Patches > Pas Patches ](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html?lang=nl-NL) in Commerce op de gids van de Infrastructuur van de Wolk toe.
 
 ## Gerelateerde lezing
 

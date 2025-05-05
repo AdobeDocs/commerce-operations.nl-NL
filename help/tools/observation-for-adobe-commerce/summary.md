@@ -58,7 +58,7 @@ In het frame **[!UICONTROL Swap memory free in bytes]** wordt per knooppunt de h
 
 ![ percenten van cpu door gastheer ](../../assets/tools/cpu-percent-by-host.jpg)
 
-Het totaal van alle omgevingen en knooppunten wordt weergegeven in het **[!UICONTROL CPU % by host]** -frame. Schakel de niet-productieomgevingen uit. Let ook op gevallen waarin niet alle knooppunten voor de productieomgeving aanwezig zijn. Voor meer uiteinden op hoog gebruik van cpu, verwijs naar [ de prestaties problemen oplossen gebruikend New Relic op Adobe Commerce ](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/troubleshoot-performance-using-new-relic-on-magento-commerce.html).
+Het totaal van alle omgevingen en knooppunten wordt weergegeven in het **[!UICONTROL CPU % by host]** -frame. Schakel de niet-productieomgevingen uit. Let ook op gevallen waarin niet alle knooppunten voor de productieomgeving aanwezig zijn. Voor meer uiteinden op hoog gebruik van cpu, verwijs naar [ de prestaties problemen oplossen gebruikend New Relic op Adobe Commerce ](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/troubleshoot-performance-using-new-relic-on-magento-commerce.html?lang=nl-NL).
 
 ## [!UICONTROL Alerts during timeframe]
 
@@ -70,7 +70,7 @@ In **[!UICONTROL Alerts during timeframe]** worden alle waarschuwingen weergegev
 
 ![ gebruik van cpu ](../../assets/tools/cpu-usage.jpg)
 
-Als het frame **[!UICONTROL CPU Usage]** leeg is, geeft dit aan dat de infrastructuurtoepassing van [!DNL New Relic] niet is ingeschakeld. Als uw site op Starter staat, worden deze gegevens niet weergegeven. Als uw plaats op Pro is, open a [ steunkaartje ](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html) om [!DNL New Relic Infrastructure] te hebben toegelaten voor uw plaats.
+Als het frame **[!UICONTROL CPU Usage]** leeg is, geeft dit aan dat de infrastructuurtoepassing van [!DNL New Relic] niet is ingeschakeld. Als uw site op Starter staat, worden deze gegevens niet weergegeven. Als uw plaats op Pro is, open a [ steunkaartje ](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html?lang=nl-NL) om [!DNL New Relic Infrastructure] te hebben toegelaten voor uw plaats.
 
 ## [!UICONTROL Average Response Time]
 

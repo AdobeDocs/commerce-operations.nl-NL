@@ -15,7 +15,7 @@ ht-degree: 0%
 
 [!DNL Upgrade Compatibility Tool] is nu geïntegreerd met [!DNL Site-Wide Analysis Tool] om de capaciteit voor niet-technische mensen te verstrekken om [!DNL Upgrade Compatibility Tool] in werking te stellen en a [ rapport ](../upgrade-compatibility-tool/reports.md) te krijgen die een lijst van kwesties voor elk dossier bevatten.
 
-Zie de [[!DNL Site-Wide Analysis Tool]  gebruikersgids ](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/site-wide-analysis-tool/access) voor meer informatie.
+Zie de [[!DNL Site-Wide Analysis Tool]  gebruikersgids ](https://experienceleague.adobe.com/nl/docs/commerce-operations/tools/site-wide-analysis-tool/access) voor meer informatie.
 
 ## Voer de [!DNL Upgrade Compatibility Tool] uit vanaf de [!DNL Site-Wide Analysis Tool]
 

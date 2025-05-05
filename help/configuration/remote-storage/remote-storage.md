@@ -30,7 +30,7 @@ Het inschakelen van externe opslag kan van invloed zijn op uw bestaande ontwikke
 
 >[!INFO]
 >
->- Externe opslag is alleen beschikbaar voor Commerce versie 2.4.2 en hoger. Zie [ 2.4.2 versienota&#39;s ](https://experienceleague.adobe.com/en/docs/commerce-operations/release/notes/magento-open-source/2-4-2).
+>- Externe opslag is alleen beschikbaar voor Commerce versie 2.4.2 en hoger. Zie [ 2.4.2 versienota&#39;s ](https://experienceleague.adobe.com/nl/docs/commerce-operations/release/notes/magento-open-source/2-4-2).
 >
 >- De Verre opslagmodule heeft _beperkte_ steun op Adobe Commerce op wolkeninfrastructuur. Adobe kan de service van de externe opslagadapter niet volledig oplossen. Zie [ verre opslag voor Commerce op de infrastructuur van de Wolk ](cloud-support.md) voor begeleiding die verre opslag voor wolkenprojecten uitvoeren.
 
@@ -91,7 +91,7 @@ Nadat u verre opslag voor een specifieke adapter toelaat, kunt u CLI gebruiken o
 
 >[!INFO]
 >
->Het synchronisatiebevel migreert slechts dossiers in de `pub/media` folder, _niet_ de invoer/de uitvoerdossiers in de `var` folder. Zie [ Geplande Invoer/de Uitvoer ](https://experienceleague.adobe.com/docs/commerce-admin/systems/data-transfer/data-scheduled-import-export.html) in _Commerce 2.4 Gids van de Gebruiker_.
+>Het synchronisatiebevel migreert slechts dossiers in de `pub/media` folder, _niet_ de invoer/de uitvoerdossiers in de `var` folder. Zie [ Geplande Invoer/de Uitvoer ](https://experienceleague.adobe.com/docs/commerce-admin/systems/data-transfer/data-scheduled-import-export.html?lang=nl-NL) in _Commerce 2.4 Gids van de Gebruiker_.
 
 <!-- link definitions -->
 

@@ -15,7 +15,7 @@ ht-degree: 0%
 
 <!-- TODO: Remove hide metadata when the library has been integrated with Commerce. -->
 
-De [ Bibliotheek van JavaScript van de Privacy van de Adobe ](https://experienceleague.adobe.com/docs/experience-platform/privacy/js-library.html) is een reeks hulpmiddelen helpen een proces tot stand brengen om tot privé gegevens toegang te hebben en te schrappen.
+De [ Bibliotheek van JavaScript van de Privacy van de Adobe ](https://experienceleague.adobe.com/docs/experience-platform/privacy/js-library.html?lang=nl-NL) is een reeks hulpmiddelen helpen een proces tot stand brengen om tot privé gegevens toegang te hebben en te schrappen.
 
 De gegevens volgende diensten van Adobe Commerce kunnen privé informatie opslaan van toepassing op privacyverordeningen zoals de [ Algemene Verordening van de Bescherming van Gegevens (GDPR) ](gdpr.md) en [ de Wet van de Privacy van de consument van Californië (CCPA) ](ccpa.md).
 
@@ -43,7 +43,7 @@ De AdobePrivacy JS-bibliotheek bevat verschillende functies voor het beheer van 
 `retrieveThenRemoveIdentities()`
 : Deze functie is vergelijkbaar met `removeIdentities()` in die zin dat deze een array van identiteiten ophaalt en deze uit de browser verwijdert.
 
-Voor meer informatie en voorbeelden om deze functies te gebruiken, zie de [ officiële bibliotheekdocumentatie ](https://experienceleague.adobe.com/docs/experience-platform/privacy/js-library.html).
+Voor meer informatie en voorbeelden om deze functies te gebruiken, zie de [ officiële bibliotheekdocumentatie ](https://experienceleague.adobe.com/docs/experience-platform/privacy/js-library.html?lang=nl-NL).
 
 ### Initialisatie
 
@@ -54,4 +54,4 @@ var adobePrivacy = new AdobePrivacy({});
 ```
 
 De constructor accepteert een configuratieobject met parameters tijdens het instantiëren.
-Verwijs naar de [ officiële bibliotheekdocumentatie ](https://experienceleague.adobe.com/docs/experience-platform/privacy/js-library.html) voor een lijst van deze configuratieparameters.
+Verwijs naar de [ officiële bibliotheekdocumentatie ](https://experienceleague.adobe.com/docs/experience-platform/privacy/js-library.html?lang=nl-NL) voor een lijst van deze configuratieparameters.

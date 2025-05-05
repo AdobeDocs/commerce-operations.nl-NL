@@ -27,7 +27,7 @@ Wijs minstens **2GB** van geheugen voor de [ PHP module OPCache ](https://www.ph
 ## Aanvullende informatie
 
 * [ Beste praktijken van Prestaties - PHP Montages ](../../../performance/software.md#php-settings)
-* [ vorm PHP opties ](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/configure/app/configure-app-yaml)
+* [ vorm PHP opties ](https://experienceleague.adobe.com/nl/docs/commerce-cloud-service/user-guide/configure/app/configure-app-yaml)
 * [Best practices voor databases voor Adobe Commerce op cloudinfrastructuur](database-on-cloud.md)
 * [Meest voorkomende databaseproblemen in Adobe Commerce met cloudinfrastructuur](../maintenance/resolve-database-performance-issues.md)
 * [Indexers &quot;Update On Schedule&quot; optimaliseert de Adobe Commerce-prestaties](../maintenance/indexer-configuration.md)

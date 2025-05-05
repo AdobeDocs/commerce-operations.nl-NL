@@ -51,7 +51,7 @@ Het bestand `config.php` bevat een lijst met geïnstalleerde modules. Adobe Comm
 Voorbeelden:
 
 - Componenten verwijderen: [`bin/magento setup:uninstall`](../../installation/tutorials/uninstall-modules.md)
-- Status van componenten controleren: [`bin/magento module:status` ](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/cli-reference/commerce-on-premises#modulestatus)
+- Status van componenten controleren: [`bin/magento module:status` ](https://experienceleague.adobe.com/nl/docs/commerce-operations/tools/cli-reference/commerce-on-premises#modulestatus)
 - Schakel componenten in of uit: [`bin/magento module:disable`](../../installation/tutorials/manage-modules.md), [`bin/magento module:enable`](../../installation/tutorials/manage-modules.md) .
 
 > _config.php_

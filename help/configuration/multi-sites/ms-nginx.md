@@ -17,7 +17,7 @@ Wij gaan ervan uit dat:
 
   Er kunnen extra taken nodig zijn om meerdere websites in een gehoste omgeving te implementeren. Neem contact op met uw hostingprovider voor meer informatie.
 
-  Er zijn extra taken nodig om Adobe Commerce in te stellen op cloudinfrastructuur. Nadat u de taken voltooit die in dit onderwerp worden besproken, zie [ Opstelling veelvoudige websites of opslag ](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure-store/multiple-sites.html) in _Commerce op de gids van de Infrastructuur van de Wolk_.
+  Er zijn extra taken nodig om Adobe Commerce in te stellen op cloudinfrastructuur. Nadat u de taken voltooit die in dit onderwerp worden besproken, zie [ Opstelling veelvoudige websites of opslag ](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure-store/multiple-sites.html?lang=nl-NL) in _Commerce op de gids van de Infrastructuur van de Wolk_.
 
 - U accepteert meerdere domeinen in één virtueel hostbestand of gebruikt één virtuele host per website. De configuratiebestanden van de virtuele host bevinden zich in `/etc/nginx/sites-available` .
 - U gebruikt de `nginx.conf.sample` die door Commerce wordt geleverd, alleen de wijzigingen die in deze zelfstudie worden besproken.
@@ -280,7 +280,7 @@ Tenzij u DNS opstelling voor URLs van uw opslag hebt, moet u een statische route
 >[!INFO]
 >
 >- Er kunnen extra taken nodig zijn om meerdere websites in een gehoste omgeving te implementeren. Neem contact op met uw hostingprovider voor meer informatie.
->- De extra taken worden vereist aan opstelling Adobe Commerce op wolkeninfrastructuur; zie [ Opstelling veelvoudige websites of opslag van de Wolk ](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure-store/multiple-sites.html) in _Commerce op de gids van de Infrastructuur van de Wolk_.
+>- De extra taken worden vereist aan opstelling Adobe Commerce op wolkeninfrastructuur; zie [ Opstelling veelvoudige websites of opslag van de Wolk ](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure-store/multiple-sites.html?lang=nl-NL) in _Commerce op de gids van de Infrastructuur van de Wolk_.
 
 ### Problemen oplossen
 

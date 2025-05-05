@@ -26,29 +26,29 @@ Het volgende architectuurdiagram illustreert de gegevensstroom tussen Adobe Comm
 
 ## Cloud Foundation
 
-[Adobe Commerce op cloudinfrastructuur](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/overview) vormt de basis van je Commerce-implementatie. Het verstrekt a [ veilige ](../../security-and-compliance/shared-responsibility.md) geautomatiseerde het ontvangen platform van een zelfbediening benadering van het bouwen, het opstellen, het controleren, en het beheren van uw toepassing van Commerce in een wolk-inheems milieu.
+[Adobe Commerce op cloudinfrastructuur](https://experienceleague.adobe.com/nl/docs/commerce-cloud-service/user-guide/overview) vormt de basis van je Commerce-implementatie. Het verstrekt a [ veilige ](../../security-and-compliance/shared-responsibility.md) geautomatiseerde het ontvangen platform van een zelfbediening benadering van het bouwen, het opstellen, het controleren, en het beheren van uw toepassing van Commerce in een wolk-inheems milieu.
 
 Zie de volgende technische details van de cloudstichting:
 
-- [**Schaalde architectuur** ](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/architecture/scaled-architecture) - past automatisch capaciteit aan om gestage, voorspelbare prestaties te handhaven
-- [**Veelvoudige milieu&#39;s** ](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/architecture/pro-architecture) - pre-provisioned met PHP, MySQL (MariaDB), Redis, RabbitMQ, en de gesteunde technologieën van de onderzoeksmotor om uw plaats te ontwikkelen, te testen en op te stellen
-- [**het beheer van de Configuratie** ](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/configure/overview) - Aanpasbare dossiers van de milieuconfiguratie en bevel-lijn interface (CLI) om toepassingsmontages, routes te beheren, acties, en berichten op te stellen.
-- [**Git-gebaseerde workflow**](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/architecture/pro-develop-deploy-workflow): automatisch bouwen en implementeren na het pushen van codewijzigingen voor snelle ontwikkeling en continue implementatie
-- [**Ingebouwde waarneembaarheid**](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/monitor/performance): tools die loggegevens uit meerdere bronnen combineren om u te helpen de prestaties van uw site te beheren en problemen te diagnosticeren
+- [**Schaalde architectuur** ](https://experienceleague.adobe.com/nl/docs/commerce-cloud-service/user-guide/architecture/scaled-architecture) - past automatisch capaciteit aan om gestage, voorspelbare prestaties te handhaven
+- [**Veelvoudige milieu&#39;s** ](https://experienceleague.adobe.com/nl/docs/commerce-cloud-service/user-guide/architecture/pro-architecture) - pre-provisioned met PHP, MySQL (MariaDB), Redis, RabbitMQ, en de gesteunde technologieën van de onderzoeksmotor om uw plaats te ontwikkelen, te testen en op te stellen
+- [**het beheer van de Configuratie** ](https://experienceleague.adobe.com/nl/docs/commerce-cloud-service/user-guide/configure/overview) - Aanpasbare dossiers van de milieuconfiguratie en bevel-lijn interface (CLI) om toepassingsmontages, routes te beheren, acties, en berichten op te stellen.
+- [**Git-gebaseerde workflow**](https://experienceleague.adobe.com/nl/docs/commerce-cloud-service/user-guide/architecture/pro-develop-deploy-workflow): automatisch bouwen en implementeren na het pushen van codewijzigingen voor snelle ontwikkeling en continue implementatie
+- [**Ingebouwde waarneembaarheid**](https://experienceleague.adobe.com/nl/docs/commerce-cloud-service/user-guide/monitor/performance): tools die loggegevens uit meerdere bronnen combineren om u te helpen de prestaties van uw site te beheren en problemen te diagnosticeren
 - [**Uitgebreide API-dekking**](https://developer.adobe.com/commerce/webapi/get-started/):[ GraphQL](https://developer.adobe.com/commerce/webapi/graphql/) en [REST](https://developer.adobe.com/commerce/webapi/rest) API&#39;s voor het integreren van de kern van de Commerce-applicatie met systemen van derden en het uitbreiden van Commerce-mogelijkheden
 
 ## Integratie met Experience Cloud
 
-Adobe Commerce kan worden geïntegreerd met alle Experience Cloud-oplossingen om gepersonaliseerde commerce-ervaringen op schaal[&#128279;](https://experienceleague.adobe.com/en/docs/commerce-admin/customers/customers-menu/personalize-scale#customers-menu) te bieden.
+Adobe Commerce kan worden geïntegreerd met alle Experience Cloud-oplossingen om gepersonaliseerde commerce-ervaringen op schaal[&#128279;](https://experienceleague.adobe.com/nl/docs/commerce-admin/customers/customers-menu/personalize-scale#customers-menu) te bieden.
 
-[Data Connection geeft inzicht in het koopgedrag van je shoppers, zodat je met andere Adobe Digital Experience-producten](https://experienceleague.adobe.com/en/docs/commerce/data-connection/overview) via alle kanalen gepersonaliseerde winkelervaringen kunt creëren.
+[Data Connection geeft inzicht in het koopgedrag van je shoppers, zodat je met andere Adobe Digital Experience-producten](https://experienceleague.adobe.com/nl/docs/commerce/data-connection/overview) via alle kanalen gepersonaliseerde winkelervaringen kunt creëren.
 
 >[!NOTE]
 >
 >Zie de volgende bronnen voor meer informatie:
 >
->- [ Verblueprints van de Digitale Ervaring ](https://experienceleague.adobe.com/en/docs/blueprints-learn/architecture/overview) voor meer technisch detail.
->- Zie [ Personaliserend de Ervaring van de Klant ](https://experienceleague.adobe.com/en/docs/events/the-skill-exchange-recordings/commerce/aug2024/personalization).
+>- [ Verblueprints van de Digitale Ervaring ](https://experienceleague.adobe.com/nl/docs/blueprints-learn/architecture/overview) voor meer technisch detail.
+>- Zie [ Personaliserend de Ervaring van de Klant ](https://experienceleague.adobe.com/nl/docs/events/the-skill-exchange-recordings/commerce/aug2024/personalization).
 
 
 ## Integratie met systemen van derden
@@ -70,20 +70,20 @@ Adobe biedt de volgende ontwikkelaarsgereedschappen voor het maken van integrati
 
 >[!NOTE]
 >
->Zie [De moderne aanpak: effectieve uitbreidbaarheid in Adobe Commerce](https://experienceleague.adobe.com/en/docs/events/the-skill-exchange-recordings/commerce/aug2024/extensibility).
+>Zie [De moderne aanpak: effectieve uitbreidbaarheid in Adobe Commerce](https://experienceleague.adobe.com/nl/docs/events/the-skill-exchange-recordings/commerce/aug2024/extensibility).
 
 ## Diensten voor de etalage
 
 Adobe biedt een uitgebreide set intelligente, samenstelbare merchandisingservices om je te helpen je belangrijkste bedrijfsdoelen te ondersteunen. Deze services bieden ook API&#39;s die essentieel zijn voor het optimaliseren van prestaties op schaal.
 
-- [Live zoeken](https://experienceleague.adobe.com/en/docs/commerce/live-search/overview): lever slimmere, snellere en relevante resultaten voor shoppers met deze AI-gestuurde zoektool.
-- [Productaanbevelingen](https://experienceleague.adobe.com/en/docs/commerce/product-recommendations/overview): voeg AI-gestuurde aanbevelingen toe op basis van shopper gedrag, populaire trends, productgelijkenis en meer.
-- [ de Dienst van de Catalogus ](https://experienceleague.adobe.com/en/docs/commerce/catalog-service/guide-overview) - geef uw klanten een geoptimaliseerde productervaring terwijl het opvoeren van prestaties, verbeterend scalability, en verhogend omzettingen.
-- [&#128279;](https://experienceleague.adobe.com/en/docs/commerce/payment-services/guide-overview) - De klantentevredenheid van de 1&rbrace; Aandrijving van de Betaling van de Diensten van de 1&rbrace; - aandrijving door diverse betalingsmethodes, met inbegrip van rentevrije betalingstermijnen aan te bieden, en één enkele mening in betalingsverwerking, orden, en facturen.
+- [Live zoeken](https://experienceleague.adobe.com/nl/docs/commerce/live-search/overview): lever slimmere, snellere en relevante resultaten voor shoppers met deze AI-gestuurde zoektool.
+- [Productaanbevelingen](https://experienceleague.adobe.com/nl/docs/commerce/product-recommendations/overview): voeg AI-gestuurde aanbevelingen toe op basis van shopper gedrag, populaire trends, productgelijkenis en meer.
+- [ de Dienst van de Catalogus ](https://experienceleague.adobe.com/nl/docs/commerce/catalog-service/guide-overview) - geef uw klanten een geoptimaliseerde productervaring terwijl het opvoeren van prestaties, verbeterend scalability, en verhogend omzettingen.
+- [&#128279;](https://experienceleague.adobe.com/nl/docs/commerce/payment-services/guide-overview) - De klantentevredenheid van de 1&rbrace; Aandrijving van de Betaling van de Diensten van de 1&rbrace; - aandrijving door diverse betalingsmethodes, met inbegrip van rentevrije betalingstermijnen aan te bieden, en één enkele mening in betalingsverwerking, orden, en facturen.
 
 ## Hoofdloze winkel
 
 Hoofdloze handel is API-eerste handel. Adobe Commerce heeft een volledig ontkoppelde architectuur die alle handelsdiensten en gegevens via een GraphQL API-laag biedt. Deze architectuur staat teams toe om hun frontends onafhankelijk van de kerntoepassing te ontwikkelen, die de behendigheid verstrekt om nieuwe aanraakpunten met nieuwe technologieën snel te bouwen en te testen.
 
-Adobe verstrekt een moderne headless storefront technologie die de zelfde voordelen en de mogelijkheden omvat die door [ Edge Delivery Services ](https://www.aem.live/home) met document-gebaseerde creatie, een prestaties-eerste architectuur, en uit-van-de-doos inheemse experimentatie worden geleverd. Het hefboomwerkingen de schaal en de prestaties van Adobe Commerce [ storefront diensten ](#storefront-services) en de flexibiliteit en het gemak van [ drop-in componenten ](https://experienceleague.adobe.com/developer/commerce/storefront/) om commerciële mogelijkheden te leveren.
+Adobe verstrekt een moderne headless storefront technologie die de zelfde voordelen en de mogelijkheden omvat die door [ Edge Delivery Services ](https://www.aem.live/home) met document-gebaseerde creatie, een prestaties-eerste architectuur, en uit-van-de-doos inheemse experimentatie worden geleverd. Het hefboomwerkingen de schaal en de prestaties van Adobe Commerce [ storefront diensten ](#storefront-services) en de flexibiliteit en het gemak van [ drop-in componenten ](https://experienceleague.adobe.com/developer/commerce/storefront/?lang=nl-NL) om commerciële mogelijkheden te leveren.
 

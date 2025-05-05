@@ -78,7 +78,7 @@ Uw on-premises infrastructuur moet aan de volgende vereisten voldoen voordat u d
 
 ## [!DNL Commerce Services Connector]
 
-De agent vereist dat de [[!DNL Commerce Services Connector]](https://experienceleague.adobe.com/docs/commerce/user-guides/integration-services/saas.html) extensie op uw systeem wordt geïnstalleerd en [wordt geconfigureerd](https://experienceleague.adobe.com/docs/commerce/user-guides/integration-services/saas.html) met API-sleutels. Voer de volgende opdracht uit om te controleren of de extensie is geïnstalleerd:
+De agent vereist dat de [[!DNL Commerce Services Connector]](https://experienceleague.adobe.com/docs/commerce/user-guides/integration-services/saas.html?lang=nl-NL) extensie op uw systeem wordt geïnstalleerd en [wordt geconfigureerd](https://experienceleague.adobe.com/docs/commerce/user-guides/integration-services/saas.html?lang=nl-NL) met API-sleutels. Voer de volgende opdracht uit om te controleren of de extensie is geïnstalleerd:
 
 ```bash
 bin/magento module:status Magento_ServicesId
@@ -92,13 +92,13 @@ Als u de extensie hebt geïnstalleerd en geconfigureerd met behulp van een besta
 
    >[!NOTE]
    >
-   > Als u problemen hebt die tot uw rekening toegang hebben, zie [ Onbekwaam aan login aan de steun van Adobe Commerce of de wolkenrekening ](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/unable-to-log-in-to-support-or-cloud-project.html) voor het oplossen van problemenhulp.
+   > Als u problemen hebt die tot uw rekening toegang hebben, zie [ Onbekwaam aan login aan de steun van Adobe Commerce of de wolkenrekening ](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/unable-to-log-in-to-support-or-cloud-project.html?lang=nl-NL) voor het oplossen van problemenhulp.
 
 1. Klik op **[!UICONTROL API Portal]**.
 
 1. Klik op **[!UICONTROL Delete]** naast de bestaande API-sleutel.
 
-1. [ vorm ](https://experienceleague.adobe.com/docs/commerce/user-guides/integration-services/saas.html) een nieuwe API sleutel.
+1. [ vorm ](https://experienceleague.adobe.com/docs/commerce/user-guides/integration-services/saas.html?lang=nl-NL) een nieuwe API sleutel.
 
 >[!IMPORTANT]
 >
@@ -130,7 +130,7 @@ Als de extensie niet is geïnstalleerd, gebruikt u de volgende instructies om de
    bin/magento cache:clean
    ```
 
-1. [Configureer API-sleutels](https://experienceleague.adobe.com/docs/commerce/user-guides/integration-services/saas.html) om de extensie met uw systeem te verbinden.
+1. [Configureer API-sleutels](https://experienceleague.adobe.com/docs/commerce/user-guides/integration-services/saas.html?lang=nl-NL) om de extensie met uw systeem te verbinden.
 
 ## Installeer de agent
 
@@ -404,7 +404,7 @@ Probeer de volgende stappen om deze fout op te lossen:
 1. Voer een [gescripte installatie](#scripted) uit, sla de uitvoer op en controleer de uitvoer op fouten.
 1. Controleer het gegenereerde `config.yaml` bestand en controleer of het pad naar uw Commerce-instantie en PHP correct is.
 1. Zorg ervoor dat de gebruiker die de planner uitvoert, zich in de Unix-groep van de eigenaar[&#128279;](../../installation/prerequisites/file-system/overview.md) van het bestandssysteem bevindt of dezelfde gebruiker is als de eigenaar van het bestandssysteem.
-1. Zorg ervoor dat de [Commerce Services Connector-sleutels](https://experienceleague.adobe.com/docs/commerce/user-guides/integration-services/saas.html) correct zijn geïnstalleerd en probeer ze bij te werken om de extensie met uw systeem te verbinden.
+1. Zorg ervoor dat de [Commerce Services Connector-sleutels](https://experienceleague.adobe.com/docs/commerce/user-guides/integration-services/saas.html?lang=nl-NL) correct zijn geïnstalleerd en probeer ze bij te werken om de extensie met uw systeem te verbinden.
 1. [&#128279;](#uninstall) Verwijder de agent na het bijwerken van de sleutels en installeer deze opnieuw met behulp van het [installatiescript](#scripted).
 1. Voer de planner uit en kijk of u nog steeds dezelfde fout ontvangt.
 1. Als u nog steeds dezelfde foutmelding ontvangt, verhoogt u het logboekniveau in de `config.yaml` om te debuggen en opent u een ondersteuningsticket.

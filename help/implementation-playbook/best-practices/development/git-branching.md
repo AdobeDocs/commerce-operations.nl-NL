@@ -40,7 +40,7 @@ Elke ontwikkelingsfase zou een overeenkomstige tak in Git moeten hebben om codev
 
 >[!TIP]
 >
->Adobe Commerce op cloud-infrastructuurprojecten bevatten specifieke vertakkingen die overeenkomen met verschillende omgevingen. Zie het [ Pro projectwerkschema ](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/architecture/pro-develop-deploy-workflow.html) en [ het projectwerkschema van de Aanzet ](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/architecture/starter-develop-deploy-workflow.html) in de _Gids van de Wolk_.
+>Adobe Commerce op cloud-infrastructuurprojecten bevatten specifieke vertakkingen die overeenkomen met verschillende omgevingen. Zie het [ Pro projectwerkschema ](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/architecture/pro-develop-deploy-workflow.html?lang=nl-NL) en [ het projectwerkschema van de Aanzet ](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/architecture/starter-develop-deploy-workflow.html?lang=nl-NL) in de _Gids van de Wolk_.
 
 ## Branch-strategieën
 

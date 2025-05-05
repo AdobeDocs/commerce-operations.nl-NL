@@ -15,7 +15,7 @@ ht-degree: 0%
 
 Er zijn gereedschappen die verwant zijn aan [!DNL Upgrade Compatibility Tool] en die kunnen worden gebruikt voor vergelijkbare resultaten, of die uitvoering van [!DNL Upgrade Compatibility Tool] kunnen activeren.
 
-- **[!DNL Security scanner]**: biedt Adobe Commerce-klanten real-time inzicht in de beveiligingsstatus van hun winkel door malware proactief te detecteren en hen te waarschuwen als hun winkel in gevaar is. Zie de [[!DNL Security scan]  gebruikersgids ](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/security/security-scan) voor meer informatie.
+- **[!DNL Security scanner]**: biedt Adobe Commerce-klanten real-time inzicht in de beveiligingsstatus van hun winkel door malware proactief te detecteren en hen te waarschuwen als hun winkel in gevaar is. Zie de [[!DNL Security scan]  gebruikersgids ](https://experienceleague.adobe.com/nl/docs/commerce-admin/systems/security/security-scan) voor meer informatie.
 
 - **[!DNL Site-Wide Analysis Tool]**: Een proactief zelfbedieningshulpmiddel en een centrale opslagplaats die gedetailleerde systeeminzichten en aanbevelingen omvat om de veiligheid en de operabiliteit van uw installatie van Adobe Commerce te verzekeren. Het biedt 24/7 real-time prestatiescontrole, rapporten, en advies om potentiële kwesties te identificeren en betere zichtbaarheid in plaatsgezondheid, veiligheid, en toepassingsconfiguraties te verstrekken. Zie de [[!DNL Site-Wide Analysis Tool]  gids ](../../tools/site-wide-analysis-tool/intro.md) voor meer informatie.
 
@@ -25,4 +25,4 @@ Er zijn gereedschappen die verwant zijn aan [!DNL Upgrade Compatibility Tool] en
   >
   >[!DNL AmpersandHQ] is geen officieel hulpmiddel voor de Adobe.
 
-- **[!DNL Quality Patches Tool]**: een opdrachtregelprogramma dat kwaliteitspatches voor Adobe Commerce biedt. Zie de [[!DNL Quality patches tool]  gebruikersgids ](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html){target="_blank"}  voor meer informatie.
+- **[!DNL Quality Patches Tool]**: een opdrachtregelprogramma dat kwaliteitspatches voor Adobe Commerce biedt. Zie de [[!DNL Quality patches tool]  gebruikersgids ](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html?lang=nl-NL){target="_blank"}  voor meer informatie.
