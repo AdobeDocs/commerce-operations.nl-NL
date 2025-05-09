@@ -1,0 +1,64 @@
+---
+title: 'ACSD-64592: Niet-standaard archiefclaimkoppelingen worden omgeleid naar de standaardwebsite'
+description: Pas de ACSD-64592-patch toe om het probleem op te lossen waarbij in een installatie van meerdere websites de koppeling Cadeaucode in de e-mail de standaard URL van de website heeft wanneer een virtuele kaartje wordt aangeschaft op de secundaire (niet-standaard) website.
+feature: Gift, Products
+role: Admin, Developer
+source-git-commit: 39866e1cf8f2afd892c9e151259a446d0277d58f
+workflow-type: tm+mt
+source-wordcount: '409'
+ht-degree: 0%
+
+---
+
+
+# ACSD-64592: Niet-standaard archiefclaimkoppelingen worden omgeleid naar de standaardwebsite
+
+De ACSD-64592-patch verhelpt een probleem waarbij in een omgeving met meerdere sites gebruikers naar de URL van de standaardwebsite worden verwezen als een virtuele kaartje van een secundaire (niet-primaire) website wordt gekocht. Het probleem wordt volgens de planning opgelost in Adobe Commerce 2.4.9.
+
+## Betrokken producten en versies
+
+**het flard wordt gecreeerd voor de versie van Adobe Commerce:**
+
+* Adobe Commerce (alle implementatiemethoden) 2.4.6-p3
+
+**Compatibel met de versies van Adobe Commerce:**
+
+* Adobe Commerce (alle implementatiemethoden) 2.4.4 - 2.4.7-p4
+
+>[!NOTE]
+>
+>De patch kan van toepassing worden op andere versies met nieuwe [!DNL Quality Patches Tool] versies. Om te controleren of de patch compatibel is met uw Adobe Commerce-versie, werkt u het `magento/quality-patches` -pakket bij naar de meest recente versie en controleert u de compatibiliteit op de [[!DNL Quality Patches Tool] : zoek naar patches op de pagina ](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html) . Gebruik de patch-id als een zoekwoord om de patch te zoeken.
+
+## Probleem
+
+Wanneer in een installatie van meerdere websites een virtuele kaartje wordt aangeschaft van een secundaire (niet-standaard) site, stuurt de e-mail met de koppeling Cadeaucode gebruikers naar de URL van de standaardwebsite.
+
+<u> Stappen om </u> te reproduceren:
+
+1. Maak een secundaire website, sla deze op en sla de weergave op.
+1. Configureer verschillende basis-URL&#39;s voor de basis en de secundaire website.
+1. Maak een virtuele kaartje met een aantal opties.
+1. Genereer een nieuwe codegroep op **[!UICONTROL Marketing]** > **[!UICONTROL Promotions]** > **[!UICONTROL Gift Card Accounts]** .
+1. Plaats een bestelling bij het product Cadeaukaart op de secundaire website.
+1. Factureer de bestelling in de Commerce-beheerder.
+1. Controleer URL in de verbinding van de Code van de Kaart van het Cadeautje van *u een geschenk van Twee* e-mail bent verzonden.
+
+<u> Verwachte resultaten </u>:
+
+De link Cadeaucode moet de koppeling naar de tweede website bevatten.
+
+<u> Ware resultaten </u>:
+
+De koppeling Codes kaartje heeft de standaard URL van de website, ook al wordt de bestelling op de tweede website geplaatst.
+
+## De patch toepassen
+
+Om individuele flarden toe te passen, gebruik de volgende verbindingen afhankelijk van uw plaatsingsmethode:
+
+* Op locatie Adobe Commerce of Magento Open Source: [[!DNL Quality Patches Tool] > Gebruik ](/help/tools/quality-patches-tool/usage.md) in de handleiding [!DNL Quality Patches Tool] .
+* Adobe Commerce op wolkeninfrastructuur: [ Verbeteringen en Patches > Pas Patches ](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html) in Commerce op de gids van de Infrastructuur van de Wolk toe.
+
+## Gerelateerde lezing
+
+Meer informatie over [!DNL Quality Patches Tool] vindt u in:
+* [[!DNL Quality Patches Tool]: Een zelfbedieningshulpmiddel voor kwaliteitspatches ](/help/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches.md) in de gids van Hulpmiddelen.
