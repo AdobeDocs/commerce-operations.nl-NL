@@ -1,6 +1,6 @@
 ---
 title: 'ACSD-64532: ENV-variabele ingesteld op *false* wordt behandeld als een tekenreeks *false* in plaats van een BOOLEAN *FALSE*'
-description: Pas de ACSD-64532-patch toe om het Adobe Commerce-probleem op te lossen waarbij een 'ENV'-variabele ingesteld op *false* wordt behandeld als een tekenreeks *false* in plaats van een 'BOOLEAN` *FALSE*.
+description: Pas de ACSD-64532-patch toe om het Adobe Commerce-probleem op te lossen waarbij een 'ENV'-variabele ingesteld op *false* wordt behandeld als een tekenreeks *false* in plaats van een 'BOOLEAN&grave; *FALSE*.
 feature: Variables
 role: Admin, Developer
 source-git-commit: 603b4f92ab3bbf4702d5373bd02dfdd770f57d5b
