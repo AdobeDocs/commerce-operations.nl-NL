@@ -2,9 +2,9 @@
 user-guide-title: Gereedschappen
 user-guide-description: Leer meer over de verschillende gereedschappen die u met Adobe Commerce kunt gebruiken, hun gebruik, het installatieproces en hoe u toegang krijgt.
 feature: Configuration
-source-git-commit: 3eb056ec057d6ae254e8cdd25bf07aeacf69b45c
+source-git-commit: bbfbb5894f92012babde2df4cb41095cf86f864c
 workflow-type: tm+mt
-source-wordcount: '7474'
+source-wordcount: '7492'
 ht-degree: 0%
 
 ---
@@ -41,7 +41,7 @@ ht-degree: 0%
    - [Beheerde waarschuwingen voor Adobe Commerce: waarschuwing voor CPU](/help/tools/managed-alerts-for-adobe-commerce/managed-alerts-for-magento-commerce-cpu-warning-alert.md)
 - Gereedschap Kwaliteitspatches {#quality-patches-tool}
    - [[!DNL Quality Patches Tool]: een zelfbedieningsprogramma voor kwaliteitspatches](/help/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches.md)
-   - [[!DNL Quality Patches Tool]: patches zoeken](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html?lang=nl-NL){target="_blank"}
+   - [[!DNL Quality Patches Tool]: patches zoeken ](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html){target="_blank"}
    - [Gebruik](quality-patches-tool/usage.md)
    - [Opmerkingen bij de release](quality-patches-tool/release-notes.md)
    - Patches beschikbaar in het gereedschap Kwaliteitspatches {#patches-available-in-qpt}
@@ -515,7 +515,7 @@ ht-degree: 0%
          - [ACSD-54040: [!UICONTROL Created] veld is leeg in de volgorde waarin de B2B-modules zijn ingeschakeld](quality-patches-tool/patches-available-in-qpt/v1-1-40/acsd-54040-created-field-is-blank-in-order-details-page.md)
          - [ACSD-52801: GraphQL-productfilterquery geeft resultaten van gedeeltelijke overeenkomsten niet weer](quality-patches-tool/patches-available-in-qpt/v1-1-40/acsd-52801-graphql-product-filter-query-not-showing-partial-match-results.md)
          - [ACSD-54961: Gebruikers met beperkte beheerdersrechten kunnen geen massaupdate uitvoeren  [!DNL Product Review status]](quality-patches-tool/patches-available-in-qpt/v1-1-40/acsd-54961-restricted-admin-user-cant-mass-update-product-review-status.md)
-         - [ ACSD-55031: &quot;Het type &quot;gemengd&quot;kan niet nullable&quot;fout tijdens compilatie  zijn](quality-patches-tool/patches-available-in-qpt/v1-1-40/acsd-55031-type-mixed-cannot-be-nullable-error-during-compilation.md)
+         - [ ACSD-55031: &quot;Het type &quot;gemengd&quot;kan niet nullable&quot;fout tijdens compilatie ](quality-patches-tool/patches-available-in-qpt/v1-1-40/acsd-55031-type-mixed-cannot-be-nullable-error-during-compilation.md) zijn
          - [ACSD-54319: De prijs van het product staat nul in het [!UICONTROL Products in Carts] -rapport](quality-patches-tool/patches-available-in-qpt/v1-1-40/acsd-54319-product-price-shows-zero-in-product-in-cart-report.md)
          - [ACSD-54989: Bedrijfsbeheer kan geen bestelling uitvoeren als [!UICONTROL Enable Purchase Orders] is ingesteld op Ja en [!UICONTROL Purchase Order] is ingesteld op Nee](quality-patches-tool/patches-available-in-qpt/v1-1-40/acsd-54989-order-placement-restrictions-in-company-admin-settings.md)
          - [ACSD-53378: Verbeterde uitcheckervaring voor klanten met uitgebreide adresboeken](quality-patches-tool/patches-available-in-qpt/v1-1-40/acsd-53378-swift-checkout-for-users-with-extensive-address-books.md)
@@ -780,6 +780,7 @@ ht-degree: 0%
          - [ACSD-64209: Cron planner haalt verhandelbare aanhalingstekens op zonder [!UICONTROL Ordered] -aanhalingstekens uit te sluiten](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-61/acsd-64209-excludes-ordered-quotes-in-cron-scheduler-to-prevent-email-triggers.md)
       - v1.1.62 {#v1-1-62}
          - [Overzicht: [!DNL Quality Patches Tool]  (QPT) v1.1.62](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-62/overview.md)
+         - [ACSD-64532: ENV-variabele ingesteld op &quot;false&quot; wordt behandeld als een tekenreeks &quot;false&quot; in plaats van een BOOLEAN &quot;FALSE&quot;](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-62/acsd-64532-env-variable-set-to-string-false-instead-of-boolean-false.md)
          - [ACSD-63406: Verlopen permanente aanhalingstekens niet gewist wanneer de persistente_clear_expired cron-taak wordt uitgevoerd](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-62/acsd-63406-expired-persistent-quotes-not-cleared.md)
          - [ACSD-64592: Niet-standaard archiefclaimkoppelingen worden omgeleid naar de standaardwebsite](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-62/acsd-64592-non-default-store-gift-card-claim-links-redirect-to-default-website.md)
          - [ACSD-64523: REST Endpoint kan verplichte velden niet valideren](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-62/acsd-64523-rest-endpoint-fails-to-validate-mandatory-fields.md)
@@ -833,6 +834,6 @@ ht-degree: 0%
       - [Gegevens die handmatige migratie vereisen](data-migration-tool/migrate-data/manual.md)
       - [Stappen voor migratie na gegevens](data-migration-tool/migrate-data/post-migration.md)
    - Bronnen {#resources}
-      - [ het Oplossen van problemen ](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/data-migration-tool-troubleshooting.html?lang=nl-NL)
+      - [ het Oplossen van problemen ](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/data-migration-tool-troubleshooting.html)
       - [ Changelog ](https://github.com/magento/data-migration-tool/blob/2.4/CHANGELOG.md)
-- [ Terugkeer aan Operationele Gidsen ](https://experienceleague.adobe.com/docs/commerce-operations/operational-guides/home.html?lang=nl-NL)
+- [ Terugkeer aan Operationele Gidsen ](https://experienceleague.adobe.com/docs/commerce-operations/operational-guides/home.html)
