@@ -1,6 +1,6 @@
 ---
-title: 'ACSD-65195: mutatie GraphQL ` createCompany ` keert een fout voor een land zonder een vereiste regio terug'
-description: Pas de ACSD-65195-patch toe om het Adobe Commerce-probleem op te lossen waarbij de GraphQL ` createCompany`-mutatie een fout veroorzaakt voor landen die geen regio nodig hebben.
+title: 'ACSD-65195: mutatie GraphQL &grave; createCompany &grave; keert een fout voor een land zonder een vereiste regio terug'
+description: Pas de ACSD-65195-patch toe om het Adobe Commerce-probleem op te lossen waarbij de GraphQL &grave; createCompany&grave;-mutatie een fout veroorzaakt voor landen die geen regio nodig hebben.
 feature: B2B, Companies, GraphQL
 role: Admin, Developer
 source-git-commit: 8eb1d7f9d787ddb3b1cc619744920ab8a9914ae8
