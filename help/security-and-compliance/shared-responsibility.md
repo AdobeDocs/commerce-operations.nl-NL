@@ -2,7 +2,7 @@
 title: Beveiliging en operationeel model van gedeelde verantwoordelijkheid
 description: Leer meer over de beveiligingsverantwoordelijkheden van elke partij die betrokken is bij uw Adobe Commerce-project voor cloudinfrastructuur.
 exl-id: f3cc1685-e469-4e30-b18e-55ce10dd69ce
-source-git-commit: 9d0ab29be70c5638296694f90755fedac41b6a77
+source-git-commit: 4cd71d156ef6833185565180b297ba1b7f42a032
 workflow-type: tm+mt
 source-wordcount: '2791'
 ht-degree: 0%
@@ -11,11 +11,13 @@ ht-degree: 0%
 
 # Beveiliging en operationeel model van gedeelde verantwoordelijkheid
 
-Adobe Commerce op cloudinfrastructuur is een platform-as-a-service (PaS) die is gebaseerd op een beveiliging en operationeel model met gedeelde verantwoordelijkheid. Deze verantwoordelijkheden worden gedeeld tussen Adobe, de handelaar, de leverancier van de wolkendienst, en de leverancier van het inhoudsleveringsnetwerk (CDN). Elke partij draagt een duidelijke verantwoordelijkheid voor het beveiligen en exploiteren van de Adobe Commerce-toepassing en de specifieke code en uitbreidingen die op cloudinfrastructuur worden geïmplementeerd.
+Adobe Commerce op cloudinfrastructuur is een platform-as-a-service (PaS) die is gebaseerd op een beveiliging en operationeel model met gedeelde verantwoordelijkheid. Deze verantwoordelijkheden worden gedeeld door Adobe, de handelaar, de leverancier van de wolkendienst, en de leverancier van het inhoudsleveringsnetwerk (CDN). Elke partij draagt een duidelijke verantwoordelijkheid voor het beveiligen en exploiteren van de Adobe Commerce-toepassing en de specifieke code en uitbreidingen die op cloudinfrastructuur worden geïmplementeerd.
 
 Dit gedeelde model laat verkopers toe om een hoogst flexibele, klantgerichte, en scalable oplossing te ontwerpen en uit te voeren om aan hun bedrijfsvereisten te voldoen terwijl het minimaliseren van operationele verantwoordelijkheden en kosten.
 
-In het algemeen is de Adobe verantwoordelijk voor het volgende:
+>[!VIDEO](https://video.tv.adobe.com/v/3458392/?learn=on&enablevpops)
+
+In het algemeen is Adobe verantwoordelijk voor het volgende:
 
 - Veilige kerncode voor toepassingen ontwikkelen en onderhouden
 - Behoud van de beveiliging van het platform
@@ -30,18 +32,18 @@ Merchants zijn verantwoordelijk voor:
 - Bezig met verkrijgen van PCI-certificering op verzoek van de betalingsprocessor van de handelaar
 - Reageren op en reageren op beveiligingsincidenten
 
-## Verantwoordelijkheden van de Adobe
+## Adobe-verantwoordelijkheden
 
-Adobe is verantwoordelijk voor de beveiliging en beschikbaarheid van de Adobe Commerce op het gebied van cloudinfrastructuren en de kerncode voor oplossingen. Daarnaast is de Adobe verantwoordelijk voor de noodzakelijke activiteiten en mechanismen die de beveiliging van de Adobe Commerce inzake cloudinfrastructuuroplossing waarborgen, waaronder:
+Adobe is verantwoordelijk voor de beveiliging en beschikbaarheid van de Adobe Commerce op het gebied van cloudinfrastructuren en de kerncode voor oplossingen. Daarnaast is Adobe verantwoordelijk voor de noodzakelijke activiteiten en mechanismen die de veiligheid van de Adobe Commerce op het gebied van cloudinfrastructuuroplossing waarborgen, waaronder:
 
 - Beveiliging en patches op serverniveau toepassen op toepassingen die door Adobe Commerce worden ondersteund op cloudinfrastructuur, zoals opslag van cloudgegevens en zoekmogelijkheden
 - Het uitvoeren van penetratietests en het scannen van de kern-Adobe Commerce op code voor cloudinfrastructuur
 - Halfjaarlijkse beoordelingen en audits uitvoeren van de identiteits- en toegangsbeheeroplossingen en het beheer van machtigingen van openbare cloudservicebureaus (IAM) (PCI-compatibiliteitseis)
-- Halfjaarlijkse beoordelingen en audits uitvoeren van erkende gebruikers, waaronder werknemers en contractanten van de Adobe (PGB-nalevingsvereiste)
+- Halfjaarlijkse beoordelingen en audits uitvoeren van erkende gebruikers, waaronder Adobe-werknemers en contractanten (PGB-nalevingsvereiste)
 - Jaarlijkse tests en documentatie van back-up- en herstelfuncties uitvoeren
 - Vormen server en perimeterfirewalls
 - De Adobe Commerce aansluiten en configureren op de opslagplaats voor cloudinfrastructuur
-- Noodherstelplannen (Disaster Recovery, DR) definiëren, testen, implementeren en documenteren voor de gebieden die onder de bevoegdheid van de Adobe vallen
+- Plannen voor noodherstel (Disaster Recovery, DR) definiëren, testen, implementeren en documenteren voor de gebieden die onder de verantwoordelijkheid van Adobe vallen
 - WAF-regels (global platform web application firewall) definiëren
 - Besturingssysteem (OS) versterken
 - Implementeren en onderhouden van de integratie van CDN-oplossingen (Content Distribution Network) en APM-oplossingen (Application Performance Management) met Adobe Commerce op cloudinfrastructuur
@@ -55,16 +57,16 @@ Adobe is verantwoordelijk voor de beveiliging en beschikbaarheid van de Adobe Co
 - DNS instellen (alleen Adobe Commerce voor infrastructuur van cloudinfrastructuur)
 - Het platform testen op beveiligingsproblemen
 
-Adobe handhaaft PCI-certificering voor de infrastructuur en services die worden gebruikt voor de Adobe Commerce-oplossing.  De handelaren zijn verantwoordelijk voor de naleving van douanecode, systeem en netwerkprocessen, en de organisatie.
+Adobe onderhoudt PCI-certificering voor de infrastructuur en services die worden gebruikt voor de Adobe Commerce-oplossing.  De handelaren zijn verantwoordelijk voor de naleving van douanecode, systeem en netwerkprocessen, en de organisatie.
 
-Adobe garandeert ook de beschikbaarheid van de infrastructuur van de handelaar, zoals overeengekomen in de toepasselijke SLA.
+Adobe zorgt ook voor de beschikbaarheid van de infrastructuur van de handelaar, zoals overeengekomen in het toepasselijke SLA.
 
 ## Handelstaken
 
 De handelaar is verantwoordelijk voor het volgen van best practices op het gebied van beveiliging voor hun specifieke, aangepaste instantie van Adobe Commerce op cloudinfrastructuuroplossing:
 
 - De benodigde Adobe Commerce toevoegen aan configuratiebestanden van de cloud-infrastructuur aan de opslagplaats
-- Beveiliging en andere patches direct na hun release door Adobe toepassen op hun aangepaste Adobe Commerce op cloudinfrastructuuroplossing
+- Beveiliging en andere patches direct na hun release door Adobe toepassen op hun aangepaste Adobe Commerce on cloud Infrastructure-oplossing
 - Beveiliging en andere patches worden toegepast op alle aangepaste extensies en code, direct na de release ervan door de leverancier
 - Aangepaste VCL-bestanden voor Varnish maken, implementeren en testen
 - Het ontwerpen, ontwerpen, installeren, integreren en beveiligen van de aangepaste Adobe Commerce op cloudinfrastructuuroplossing, inclusief alle aangepaste extensies en code
@@ -86,9 +88,9 @@ De handelaar is verantwoordelijk voor het volgen van best practices op het gebie
 - Testen en QA van de aangepaste toepassing
 - Behoud van de beveiliging van systemen of netwerken die de handelaar op een cloudinfrastructuurtoepassing verbindt met de Adobe Commerce
 
-## Verantwoordelijkheden van Cloud Servicen
+## Cloud Service Provider-verantwoordelijkheden
 
-Adobe is afhankelijk van gevestigde cloudserviceproviders die de cloudserverinfrastructuur voor Adobe Commerce hosten op cloudinfrastructuur. Deze leveranciers zijn verantwoordelijk voor veiligheid van het netwerk, met inbegrip van het verpletteren, het schakelen, en de veiligheid van het perimeternetwerk via firewallsystemen en de systemen van de binnendringenopsporing (IDS). Cloud-serviceproviders zijn ook verantwoordelijk voor de fysieke beveiliging van datacenters die de Adobe Commerce hosten voor cloudinfrastructuuroplossingen en de milieubeveiliging van datacenters.
+Adobe vertrouwt op gevestigde cloudserviceproviders om de cloudserverinfrastructuur voor Adobe Commerce te hosten op cloudinfrastructuur. Deze leveranciers zijn verantwoordelijk voor veiligheid van het netwerk, met inbegrip van het verpletteren, het schakelen, en de veiligheid van het perimeternetwerk via firewallsystemen en de systemen van de binnendringenopsporing (IDS). Cloud-serviceproviders zijn ook verantwoordelijk voor de fysieke beveiliging van datacenters die de Adobe Commerce hosten voor cloudinfrastructuuroplossingen en de milieubeveiliging van datacenters.
 
 Ook cloudserviceproviders zijn verantwoordelijk voor:
 
@@ -419,14 +421,14 @@ In de volgende overzichtstabel wordt het RACI-model gebruikt om de beveiligingsv
     <td></td>
   </tr>
   <tr>
-    <td>Adobe met beveiligingsonderzoek (software) ondersteunen</td>
+    <td>Adobe helpen met beveiligingsonderzoek (software)</td>
     <td>R</td>
     <td>C</td>
     <td></td>
     <td></td>
   </tr>
   <tr>
-    <td>Adobe met veiligheidsonderzoek ondersteunen (scans/audits)</td>
+    <td>Adobe helpen met veiligheidsonderzoek (scans/audits)</td>
     <td>R</td>
     <td>C</td>
     <td></td>
@@ -533,7 +535,7 @@ In de volgende overzichtstabel wordt het RACI-model gebruikt om de beveiligingsv
 
 >[!BEGINSHADEBOX]
 
-In de volgende samenvattende tabellen worden de operationele verantwoordelijkheden voor Adobe en handelaren bij het ontwikkelen, implementeren, onderhouden en beveiligen van Adobe Commerce op cloudinfrastructuur verduidelijkt.
+In de volgende overzichtstabellen worden de operationele verantwoordelijkheden voor Adobe en Merchants verduidelijkt bij het ontwikkelen, implementeren, onderhouden en beveiligen van Adobe Commerce op cloudinfrastructuur.
 
 >[!ENDSHADEBOX]
 
@@ -679,9 +681,9 @@ Merchants zijn verantwoordelijk voor het synchroniseren van gegevens tussen omge
 
 |     | Adobe | Merchant |
 | --- | --- | --- |
-| Beschikbaarheid van RabbitMQ-service | R |   |
+| Beschikbaarheid van de dienst RabbitMQ | R |   |
 | Configuratie van standaard RabbitMQ-instellingen | R |   |
-| Doorlopende kwaliteit en patches voor RabbitMQ | R |   |
+| Doorlopende kwaliteit en patching van KonijnMQ | R |   |
 | Een serviceverzoek indienen om een RabbitMQ-versie te installeren die compatibel is met de geïnstalleerde Adobe Commerce-versie |   | R |
 
 {style="table-layout:auto"}
@@ -709,7 +711,7 @@ Merchants zijn verantwoordelijk voor het synchroniseren van gegevens tussen omge
 | Doorlopende infrastructuuroptimalisatie | R |   |
 | Langzame query&#39;s identificeren en corrigeren |     | R |
 | Een serviceverzoek indienen om een MariaDB-versie te installeren die compatibel is met de geïnstalleerde Adobe Commerce-versie |     | R |
-| Vaststelling en onderhoud van bedrijfsspecifieke gedragslijnen voor gegevensbewaring (het beleid van de Adobe inzake gegevensbewaring wordt gedefinieerd in de koopovereenkomst) |     | R |
+| Handelsspecifieke gedragslijnen voor gegevensbewaring instellen en onderhouden (het beleid voor gegevensbewaring van Adobe wordt gedefinieerd in de koopovereenkomst) |     | R |
 
 {style="table-layout:auto"}
 
@@ -744,8 +746,8 @@ Merchants zijn verantwoordelijk voor het synchroniseren van gegevens tussen omge
 |     | Adobe | Merchant |
 | --- | --- | --- |
 | Beschikbaarheid van Elasticsearch | R |   |
-| Configuratie van standaardinstellingen voor Elasticsearch | R |   |
-| Een serviceverzoek indienen om een versie van de Elasticsearch te installeren die compatibel is met de geïnstalleerde Adobe Commerce-versie |  | R |
+| Configuratie van standaard Elasticsearch-instellingen | R |   |
+| Een serviceverzoek indienen om een Elasticsearch-versie te installeren die compatibel is met de geïnstalleerde Adobe Commerce-versie |  | R |
 
 {style="table-layout:auto"}
 
@@ -786,16 +788,16 @@ Merchants zijn verantwoordelijk voor het synchroniseren van gegevens tussen omge
 | Beschikbaarheid van Adobe Commerce Business Intelligence-services | R |   |
 | MBI-synchronisatieprocessen | R |   |
 | MBI-synchronisatieproblemen detecteren | R |   |
-| Het vormen MBI de Synchronisatie van Gegevens aan Adobe Commerce Cloud Pro, Starter, op Beelden, of niet-Adobe Commerce <br> (API, de kwaliteit en het formatteren van Gegevens, handelend netwerk, <br> verbindingen van DB zowel binnen als buiten Adobe Commerce Cloud OB, over gegevensdrempels) |     | R |
-| Het vormen MBI de Synchronisatie van Gegevens aan Adobe Commerce Cloud Pro <br> (de gegevensbestandconfiguratie van Adobe Commerce Cloud) | R |   |
+| Het vormen MBI de Synchronisatie van Gegevens aan de Wolk van de Handel van Adobe Pro, Starter, op Beelden, of niet-Adobe Commerce <br> (API, de kwaliteit en het formatteren van Gegevens, handelaarnetwerk, <br> verbindingen van DB zowel binnen als buiten de Wolk van de Koophandel van Adobe, over gegevensdrempels) |     | R |
+| Synchronisatie van MBI-gegevens met Adobe Commerce Cloud Pro configureren <br> (databaseconfiguratie Adobe Commerce Cloud) | R |   |
 
 {style="table-layout:auto"}
 
-#### Product Recommendations
+#### Aanbevelingen voor producten
 
 |     | Adobe | Merchant |
 | --- | --- | --- |
-| Beschikbaarheid van Product Recommendations-service | R |   |
+| Beschikbaarheid van de dienst van de Aanbevelingen van het Product | R |   |
 
 {style="table-layout:auto"}
 
@@ -816,7 +818,7 @@ Merchants zijn verantwoordelijk voor het synchroniseren van gegevens tussen omge
 | --- | --- | --- |
 | SSL toegewezen certificaat - verlopen | R |  |
 | SSL-certificaten voor levering | R |  |
-| Aankoop en onderhoud van EV/Specific SSL cert (andere dan opgegeven standaardinstellingen) en verstrekken aan de Adobe |     | R |
+| Aankoop en onderhoud van EV/Specific SSL cert (andere dan opgegeven standaardwaarden) en verstrekken aan Adobe |     | R |
 
 {style="table-layout:auto"}
 
@@ -848,11 +850,11 @@ Merchants zijn verantwoordelijk voor het synchroniseren van gegevens tussen omge
 
 |     | Adobe | Merchant |
 | --- | --- | --- |
-| PrivateLink-verbindingen configureren en onderhouden (indien gebruikt) met een VPC die eigendom is van een Adobe | R |   |
+| PrivateLink-verbindingen configureren en onderhouden (indien gebruikt) met een VPC in eigendom van Adobe | R |   |
 | PrivateLink-verbindingen configureren en onderhouden (indien gebruikt) met een VPC die eigendom is van Merchant |     | R |
 | Beschikbaarheid van SSH (niet-particuliere koppeling) | R |   |
-| Configuratie van PrivateLink Binnenkomend aan het eindpunt van de Dienst van Adobe Commerce Cloud | R |   |
-| Acceptatie van PrivateLink Binnenkomend aan het eindpunt van de Dienst van Adobe Commerce Cloud |     | R |
+| Configuratie van PrivateLink naar het eindpunt van de Adobe Commerce Cloud Service | R |   |
+| Acceptatie van PrivateLink inkomend aan het eindpunt van de Adobe Commerce Cloud Service |     | R |
 | Configuratie van PrivateLink naar het VPC Service-eindpunt van Merchant |     | R |
 | Acceptatie van PrivateLink naar het VPC Service-eindpunt van Merchant | R |   |
 | Configuratie van integratie PrivateLink (eindpunt voor account) |     | R |
