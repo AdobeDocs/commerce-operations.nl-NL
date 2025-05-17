@@ -23,7 +23,7 @@ Deze pagina bevat de wijzigingen die in de afgelopen 60 dagen zijn aangebracht. 
   </thead>
   <tbody>
     <tr>
-      <td><p>Toegevoegd de <a href="https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-63/acsd-65195-fixes-the-issue-where-the-graphql-mutation-createcompany"> gedetailleerde beschrijving van de kwestie die door ACSD-65195 flard in QPT 1.1.63 wordt bevestigd versie </a>.</p>
+      <td><p>Toegevoegd de <a href="https://experienceleague.adobe.com/nl/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-63/acsd-65195-fixes-the-issue-where-the-graphql-mutation-createcompany"> gedetailleerde beschrijving van de kwestie die door ACSD-65195 flard in QPT 1.1.63 wordt bevestigd versie </a>.</p>
 </td>
       <td>
         Nieuw onderwerp, qpt
@@ -31,7 +31,7 @@ Deze pagina bevat de wijzigingen die in de afgelopen 60 dagen zijn aangebracht. 
       <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/a6a8ad44c339b95b4afcedbd33b84c1d8b3411cc">begaan</a></td>
     </tr>
     <tr>
-      <td><p>Het <a href="https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-62/acsd-64532-env-variable-set-to-string-false-instead-of-boolean-false"> ACSD-64532 flard </a> bevestigt de kwestie waar de variabele ENV die aan vals wordt geplaatst als koord vals in plaats van een VALS BOOLEAN wordt behandeld.</p>
+      <td><p>Het <a href="https://experienceleague.adobe.com/nl/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-62/acsd-64532-env-variable-set-to-string-false-instead-of-boolean-false"> ACSD-64532 flard </a> bevestigt de kwestie waar de variabele ENV die aan vals wordt geplaatst als koord vals in plaats van een VALS BOOLEAN wordt behandeld.</p>
 </td>
       <td>
         Nieuw onderwerp, qpt
