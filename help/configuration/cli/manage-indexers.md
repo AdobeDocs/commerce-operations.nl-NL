@@ -2,7 +2,7 @@
 title: De indexen beheren
 description: Zie voorbeelden van Commerce-indexen weergeven en beheren.
 exl-id: d2cd1399-231e-4c42-aa0c-c2ed5d7557a0
-source-git-commit: 16feb8ec7ecc88a6ef03a769d45b1a3a2fe88d97
+source-git-commit: 54aef3d7db7b8333721fb56db0ba8f098aea030b
 workflow-type: tm+mt
 source-wordcount: '947'
 ht-degree: 0%
@@ -39,7 +39,8 @@ salesrule_rule                           Sales Rule
 ```
 
 >[!NOTE]
-> De handelaars van Adobe Commerce die Live Onderzoek, de Dienst van de Catalogus, of de Aanbevelingen van het Product gebruiken hebben de optie om [ op SaaS-Gebaseerde prijs te gebruiken indexeert ](https://experienceleague.adobe.com/docs/commerce/price-indexer/index.html).
+>
+> De handelaars van Adobe Commerce die Live Onderzoek, de Dienst van de Catalogus, of de Aanbevelingen van het Product gebruiken hebben de optie om [ op SaaS-Gebaseerde prijs te gebruiken indexeert ](https://experienceleague.adobe.com/en/docs/commerce/price-indexer/price-indexing).
 
 ## Indexstatus weergeven
 
@@ -87,9 +88,9 @@ Opdrachtopties:
 bin/magento indexer:reindex [indexer]
 ```
 
-Waar `[indexer]` een lijst met indexen is die door spaties worden gescheiden. Laat na `[indexer]` om alle indexeerfuncties opnieuw te indexeren.
+Waar `[indexer]` een lijst met indexen is die door spaties worden gescheiden. Laat `[indexer]` weg om alle indexen opnieuw te indexeren.
 
-Voorbeeld resultaat:
+Monsterresultaat:
 
 ```
 Design Config Grid index has been rebuilt successfully in <time>
@@ -107,45 +108,45 @@ Catalog Search index has been rebuilt successfully in <time>
 
 >[!INFO]
 >
->Het opnieuw indexeren van alle indexeerfuncties kan lang duren voor winkels met een groot aantal producten, klanten, categorieën en promotieregels.
+>Het opnieuw indexeren van alle indexen kan lange tijd voor opslag met grote aantallen producten, klanten, categorieën, en promotieregels vergen.
 
 ### Opnieuw indexeren in parallelle modus
 
 {{php-process-control}}
 
-Indexeerfuncties hebben een bereik en zijn voorzien van meerdere threads om herindexering in parallelle modus te ondersteunen. Het parallelliseert op basis van de dimensie van de indexeerfunctie en wordt uitgevoerd over meerdere threads, waardoor de verwerkingstijd wordt verkort.
+Indexers zijn bereikbaar en multithread om het opnieuw indexeren in parallelle modus te ondersteunen. Het parallelleert door de afmeting van de indexeerder en voert over veelvoudige draden uit, die verwerkingstijd verminderen.
 
-In deze context is de reikwijdte van de herindexering, `dimension` bijvoorbeeld een `website` of gewoon een specifieke `customer_group`.
+In deze context is `dimension` het bereik van het opnieuw indexeren, bijvoorbeeld een `website` of alleen een specifieke `customer_group` .
 
-Indexparallellisatie is alleen van invloed op indexeerfuncties met bereik, wat betekent dat Commerce de gegevens opsplitst in meerdere tabellen met de indexeerfunctie als bereik in plaats van alle gegevens in één tabel te bewaren.
+De parallellisering van de index beïnvloedt scoped slechts indexeerders, wat betekent Commerce de gegevens in veelvoudige lijsten splitst gebruikend indexer als zijn werkingsgebied in plaats van het houden van alle gegevens in één lijst.
 
-U kunt de volgende indexen in de parallelle modus uitvoeren:
+U kunt de volgende indexen in parallelle modus uitvoeren:
 
-- `Catalog Search Fulltext` Kan worden parallel lopen met winkelweergaven.
-- `Category Product` Kan worden parallel lopen met winkelweergaven.
-- `Catalog Price` Kan worden parallel geschakeld door website en klantgroepen.
-- `Catalog Permissions` kan worden parallel geschakeld door klantgroepen.
+- Aan `Catalog Search Fulltext` kan worden deelgenomen door de weergaven van de winkel.
+- Aan `Category Product` kan worden deelgenomen door de weergaven van de winkel.
+- `Catalog Price` kan worden gekoppeld aan website- en klantgroepen.
+- `Catalog Permissions` kan parallel lopen met klantengroepen.
 
 >[!INFO]
 >
->Parallellisatie voor Catalog Search Fulltext en Category Product is standaard ingeschakeld.
+>Parallelization voor Catalog Search Fulltext en Categorie Product wordt toegelaten door gebrek.
 
-Als u parallellisatie wilt gebruiken, stelt u een van de beschikbare dimensiemodi in voor de prijsindexeerder voor producten:
+Als u parallellisatie wilt gebruiken, stelt u een van de beschikbare afmetingen in voor de indexeer van de productprijs:
 
-- `none` (standaard)
+- `none` (standaardwaarde)
 - `website`
 - `customer_group`
 - `website_and_customer_group`
 
-Ga bijvoorbeeld als volgt te werk om de modus per website in te stellen:
+Stel bijvoorbeeld de modus per website in:
 
 ```bash
 bin/magento indexer:set-dimensions-mode catalog_product_price website
 ```
 
-Als u parallellisatie wilt gebruiken voor catalogusmachtigingen, stelt u een van de beschikbare dimensiemodi in voor de indexeerfunctie voor catalogusmachtigingen:
+Als u parallellisering wilt gebruiken voor catalogusmachtigingen, stelt u een van de beschikbare dimensiemodi in voor de indexer Catalogusmachtigingen:
 
-- `none` (standaard)
+- `none` (standaardwaarde)
 - `customer_group`
 
 Of om de huidige modus te controleren:
@@ -154,9 +155,9 @@ Of om de huidige modus te controleren:
 bin/magento indexer:show-dimensions-mode
 ```
 
-Als u in parallelle modus opnieuw wilt indexeren, voert u de opdracht opnieuw indexeren uit met behulp van de omgevingsvariabele `MAGE_INDEXER_THREADS_COUNT`of voegt u een omgevingsvariabele toe aan het `env.php` bestand. Deze variabele stelt het aantal threads in voor de herindexverwerking.
+Als u opnieuw wilt indexeren in de parallelle modus, voert u de opdracht opnieuw indexeren uit met behulp van de omgevingsvariabele `MAGE_INDEXER_THREADS_COUNT` of voegt u een omgevingsvariabele toe aan het `env.php` -bestand. Met deze variabele wordt het aantal threads voor de herindexverwerking ingesteld.
 
-Met de volgende opdracht wordt de `Catalog Search Fulltext` indexeerfunctie bijvoorbeeld uitgevoerd op drie threads:
+Met de volgende opdracht voert u bijvoorbeeld de `Catalog Search Fulltext` -index uit over drie threads:
 
 ```bash
 MAGE_INDEXER_THREADS_COUNT=3 php -f bin/magento indexer:reindex catalogsearch_fulltext
@@ -192,24 +193,24 @@ Catalog Search indexer has been invalidated.
 
 ## Indexeerders configureren
 
-Gebruik deze opdracht om de volgende indexeeropties in te stellen:
+Gebruik deze opdracht om de volgende indexeropties in te stellen:
 
-- **Update bij opslaan (`realtime`)**: Geïndexeerde gegevens worden bijgewerkt wanneer er een wijziging wordt aangebracht in de beheerder. (De index van categorieproducten wordt bijvoorbeeld opnieuw geïndexeerd nadat producten zijn toegevoegd aan een categorie in de beheerder.)
-- **Bijwerken volgens schema (`schedule`)**: Gegevens worden geïndexeerd volgens het schema dat is ingesteld door uw cron-taak.
+- **Update op sparen (`realtime`)**: De geïndexeerde gegevens worden bijgewerkt wanneer een verandering in Admin wordt aangebracht. (Zo wordt de index van de categorie producten opnieuw geindexeerd nadat de producten aan een categorie in Admin zijn toegevoegd.)
+- **Update door programma (`schedule`)**: Het gegeven wordt geïndexeerd volgens het programma dat door uw kroonbaan wordt geplaatst.
 
-[Meer informatie over indexeren](https://developer.adobe.com/commerce/php/development/components/indexing/).
+[ Leer meer over het indexeren ](https://developer.adobe.com/commerce/php/development/components/indexing/).
 
-### Geef de huidige configuratie weer
+### De huidige configuratie weergeven
 
-De huidige configuratie van de indexeerfunctie weergeven:
+De huidige indexeerconfiguratie weergeven:
 
 ```bash
 bin/magento indexer:show-mode [indexer]
 ```
 
-Waar `[indexer]` is een door spaties gescheiden lijst met indexeerfuncties. Laat weg `[indexer]` om de modi van alle indexeerders weer te geven. Ga bijvoorbeeld als volgt te werk om de modus van alle indexeerfuncties weer te geven:
+Waar `[indexer]` een lijst met indexen is die door spaties worden gescheiden. Laat `[indexer]` weg om de modi van alle indexen te tonen. U kunt bijvoorbeeld als volgt de modus van alle indexen weergeven:
 
-Voorbeeld resultaat:
+Monsterresultaat:
 
 ```
 Design Config Grid:                                Update on Save
@@ -225,17 +226,17 @@ Product Price:                                     Update on Save
 Catalog Search:                                    Update on Save
 ```
 
-### De indexeermodus instellen
+### Indexeermodus instellen
 
 >[!IMPORTANT]
 >
 >Zorg ervoor dat u de [!DNL Customer Grid] instelt met `realtime` in plaats van met `schedule` . De [!DNL Customer Grid] kan alleen opnieuw worden genummerd met de optie [!UICONTROL Update on Save] . Deze index ondersteunt de optie `Update by Schedule` niet. Gebruik de volgende opdrachtregel om deze indexeerfunctie in te stellen voor bijwerken bij opslaan: `php bin/magento indexer:set-mode realtime customer_grid`
 >
->Zie [ Beste praktijken voor indexeerconfiguratie ](https://experienceleague.adobe.com/docs/commerce-operations/implementation-playbook/best-practices/maintenance/indexer-configuration.html?lang=nl-NL) in _Playbook van de Implementatie_.
+>Zie [ Beste praktijken voor indexeerconfiguratie ](https://experienceleague.adobe.com/docs/commerce-operations/implementation-playbook/best-practices/maintenance/indexer-configuration.html) in _Playbook van de Implementatie_.
 
 >[!INFO]
 >
->Alvorens de wijzen van de omschakelingsindexeerder, plaats uw website aan [ onderhoud ](../../installation/tutorials/maintenance-mode.md) wijze en [ maak kanonbanen ](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure/app/properties/crons-property.html?lang=nl-NL#disable-cron-jobs) onbruikbaar. Dit zorgt ervoor u geen gegevensbestandsloten lijdt.
+>Alvorens de wijzen van de omschakelingsindexeerder, plaats uw website aan [ onderhoud ](../../installation/tutorials/maintenance-mode.md) wijze en [ maak kanonbanen ](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure/app/properties/crons-property.html#disable-cron-jobs) onbruikbaar. Dit zorgt ervoor u geen gegevensbestandsloten lijdt.
 
 De indexeerconfiguratie opgeven:
 
@@ -279,35 +280,35 @@ Waarbij:
 - `invalid` - Hiermee worden indexen als verouderd gemarkeerd en wordt opnieuw indexeren bij de volgende uitsnijdbewerking gevraagd, tenzij ze worden opgeschort.
 - `suspended` - Hiermee worden tijdelijk automatische, door snijden geactiveerde updates voor indexen gestopt. Deze status is van toepassing op zowel realtime- als planningsmodi, zodat automatische updates worden gepauzeerd tijdens intensieve bewerkingen.
 - `valid` - Geeft aan dat indexergegevens up-to-date zijn, zonder dat opnieuw indexeren nodig is.
-- `indexer`—Is een door spaties gescheiden lijst van indexeerfuncties. Laat weg `indexer` om alle indexeerfuncties op dezelfde manier te configureren.
+- `indexer` - Dit is een door spaties gescheiden lijst met indexen. Laat `indexer` weg om alle indexen de zelfde manier te vormen.
 
-Als u bijvoorbeeld specifieke indexeerders wilt schorsen, voert u het volgende in:
+Als u bijvoorbeeld bepaalde indexen wilt onderbreken, voert u het volgende in:
 
 ```bash
 bin/magento indexer:set-status suspended catalog_category_product catalog_product_category
 ```
 
-Voorbeeld resultaat:
+Monsterresultaat:
 
 ```
 Index status for Indexer 'Category Products' was changed from 'valid' to 'suspended'.
 Index status for Indexer 'Product Categories' was changed from 'valid' to 'suspended'.
 ```
 
-#### De status van opgeschorte indexeerfunctie beheren
+#### Status geschorste index beheren
 
-Wanneer een indexeerfunctie is ingesteld op een `suspended` status, is dit voornamelijk van invloed op het automatisch opnieuw indexeren en gerealiseerde weergave-updates. Hier is een kort overzicht:
+Wanneer een indexeerfunctie is ingesteld op een `suspended` -status, heeft dit vooral invloed op de automatische re-indexering en op gematerialiseerde weergave-updates. Hier volgt een kort overzicht:
 
-**Opnieuw indexeren Overgeslagen**: Automatisch opnieuw indexeren wordt overgeslagen voor `suspended` indexeerfuncties en indexeerfuncties die hetzelfde `shared_index`delen. Dit zorgt ervoor dat systeembronnen worden gespaard door gegevens met betrekking tot opgeschorte processen niet opnieuw te indexeren.
+**het Reindexeren Overgeslagen**: Automatisch opnieuw indexeren wordt overgeslagen voor `suspended` indexeerders en om het even welke indexen die het zelfde `shared_index` delen. Dit zorgt ervoor dat de systeembronnen behouden blijven door gegevens met betrekking tot geschorste processen niet opnieuw te indexeren.
 
-**Updates voor gerealiseerde weergaven overgeslagen**: Net als bij opnieuw indexeren, worden updates van gerealiseerde weergaven met betrekking tot `suspended` indexeerfuncties of hun gedeelde indexen ook onderbroken. Deze actie vermindert de systeembelasting tijdens ophangperioden nog verder.
+**Gematerialiseerde Overgeslagen Updates van de Mening**: Gelijkaardig aan het opnieuw indexeren, worden de updates aan materialized meningen met betrekking tot `suspended` indexeerders of hun gedeelde indexen ook gepauzeerd. Deze actie vermindert de belasting van het systeem tijdens de ophanging.
 
 >[!INFO]
 >
->De `indexer:reindex` opdracht indexeert alle indexeerfuncties opnieuw, inclusief de indexeerfuncties die zijn gemarkeerd als `suspended`, waardoor het handig is voor handmatige updates wanneer automatische updates worden onderbroken.
+>Met de opdracht `indexer:reindex` schakelt u alle indexen opnieuw in, inclusief de indexen die zijn gemarkeerd als `suspended` . Dit is handig voor handmatige updates wanneer automatische indexen worden gepauzeerd.
 
 >[!IMPORTANT]
 >
->Het wijzigen van de status van een indexeerfunctie in `valid` van `suspended` of `invalid` vereist voorzichtigheid. Deze actie kan leiden tot prestatievermindering als er niet-geïndexeerde gegevens zijn verzameld.
+>Als u de status van een indexeerprogramma wilt wijzigen in `valid` van `suspended` of `invalid` , moet u voorzichtig zijn. Deze actie kan tot prestatiesdegradatie leiden als er geaccumuleerde niet geïndexeerde gegevens zijn.
 >
->Het is van cruciaal belang om ervoor te zorgen dat alle gegevens nauwkeurig worden geïndexeerd voordat de status handmatig wordt bijgewerkt om `valid` de systeemprestaties en gegevensintegriteit te behouden.
+>Het is van cruciaal belang dat alle gegevens correct worden geïndexeerd voordat de status handmatig wordt bijgewerkt naar `valid` om de systeemprestaties en gegevensintegriteit te behouden.
