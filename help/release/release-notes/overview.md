@@ -16,7 +16,7 @@ Gebruik de volgende lijst om versienota&#39;s en belangrijke informatie met betr
 
 >[!TIP]
 >
->- Als u aan Adobe Commerce nieuw bent, zie de [ ondernemingsarchitectuur ](../../implementation-playbook/architecture/enterprise-blueprint.md) en [ over Adobe Commerce ](https://experienceleague.adobe.com/en/docs/commerce-admin/start/about) onderwerpen om georiënteerd te worden.
+>- Als u aan Adobe Commerce nieuw bent, zie de [ ondernemingsarchitectuur ](../../implementation-playbook/architecture/enterprise-blueprint.md) en [ over Adobe Commerce ](https://experienceleague.adobe.com/nl/docs/commerce-admin/start/about) onderwerpen om georiënteerd te worden.
 >- Voor informatie over verbeteringen, zie [ geadviseerd lezing ](../../upgrade/resources/recommended-reading.md).
 
 <table>
@@ -28,18 +28,18 @@ Gebruik de volgende lijst om versienota&#39;s en belangrijke informatie met betr
             <li><a href="https://developer.adobe.com/commerce/php/development/backward-incompatible-changes/">Achteruit incompatibele wijzigingen</a></li>
             <li><a href="commerce/overview.md">Adobe Commerce</a></li>
             <li><a href="security/overview.md">Beveiligingspatches</a></li>
-            <li><a href="https://helpx.adobe.com/security/products/magento.html">Adobe Security Bulletin</a></li>
-            <li><a href="https://experienceleague.adobe.com/docs/commerce-admin/b2b/release-notes.html">B2B voor Adobe Commerce</a></li>
+            <li><a href="https://helpx.adobe.com/nl/security/products/magento.html">Adobe Security Bulletin</a></li>
+            <li><a href="https://experienceleague.adobe.com/docs/commerce-admin/b2b/release-notes.html?lang=nl-NL">B2B voor Adobe Commerce</a></li>
           </ul>
         </td>
       <td><strong> Adobe Commerce op wolkeninfrastructuur </strong>
         <p>Leer meer over de nieuwste verbeteringen in de Cloud Suite voor Adobe Commerce-pakketten, die zijn ontworpen om Adobe Commerce-installaties en -upgrades te implementeren en beheren op het cloudplatform.</p>
           <ul>
-            <li><a href="https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/release-notes/backward-incompatible-changes">Achteruit incompatibele wijzigingen</a></li>
-            <li><a href="https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/release-notes/cloud-patches">Cloudpatches voor Commerce</a></li>
-            <li><a href="https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/release-notes/cloud-docker">Cloud Docker voor Commerce</a></li>
-            <li><a href="https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/release-notes/cloud-components">Cloud Components voor Commerce</a></li>
-            <li><a href="https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/release-notes/ece-tools-package">Gereedschappen</a></li>
+            <li><a href="https://experienceleague.adobe.com/nl/docs/commerce-cloud-service/user-guide/release-notes/backward-incompatible-changes">Achteruit incompatibele wijzigingen</a></li>
+            <li><a href="https://experienceleague.adobe.com/nl/docs/commerce-cloud-service/user-guide/release-notes/cloud-patches">Cloudpatches voor Commerce</a></li>
+            <li><a href="https://experienceleague.adobe.com/nl/docs/commerce-cloud-service/user-guide/release-notes/cloud-docker">Cloud Docker voor Commerce</a></li>
+            <li><a href="https://experienceleague.adobe.com/nl/docs/commerce-cloud-service/user-guide/release-notes/cloud-components">Cloud Components voor Commerce</a></li>
+            <li><a href="https://experienceleague.adobe.com/nl/docs/commerce-cloud-service/user-guide/release-notes/ece-tools-package">Gereedschappen</a></li>
           </ul>
       </td>
     </tr>
@@ -47,13 +47,13 @@ Gebruik de volgende lijst om versienota&#39;s en belangrijke informatie met betr
       <td><strong> de Diensten voor Adobe Commerce </strong>
         <p>Meer informatie over de meest recente verbeteringen op het gebied van innovatieve Commerce-handelsservices.</p>
           <ul>
-            <li><a href="https://experienceleague.adobe.com/docs/commerce-admin/customers/audience-activation.html">Audience Activation</a></li>
-            <li><a href="https://experienceleague.adobe.com/docs/commerce/catalog-service/release-notes.html">Catalogusservice</a></li>
-            <li><a href="https://experienceleague.adobe.com/en/docs/commerce/data-connection/release-notes">Experience Platform Connector</a></li>
-            <li><a href="https://experienceleague.adobe.com/docs/commerce/live-search/release-notes.html">Live zoeken</a></li>
-            <li><a href="https://experienceleague.adobe.com/docs/commerce/payment-services/release-notes.html">Betalingsdiensten</a></li>
-            <li><a href="https://experienceleague.adobe.com/docs/commerce/product-recommendations/release-notes.html">Aanbevelingen voor producten</a></li>
-            <li><a href="https://experienceleague.adobe.com/docs/commerce/user-guides/integration-services/saas.html">Services Connector</a></li>
+            <li><a href="https://experienceleague.adobe.com/docs/commerce-admin/customers/audience-activation.html?lang=nl-NL">Audience Activation</a></li>
+            <li><a href="https://experienceleague.adobe.com/docs/commerce/catalog-service/release-notes.html?lang=nl-NL">Catalogusservice</a></li>
+            <li><a href="https://experienceleague.adobe.com/nl/docs/commerce/data-connection/release-notes">Experience Platform Connector</a></li>
+            <li><a href="https://experienceleague.adobe.com/docs/commerce/live-search/release-notes.html?lang=nl-NL">Live zoeken</a></li>
+            <li><a href="https://experienceleague.adobe.com/docs/commerce/payment-services/release-notes.html?lang=nl-NL">Betalingsdiensten</a></li>
+            <li><a href="https://experienceleague.adobe.com/docs/commerce/product-recommendations/release-notes.html?lang=nl-NL">Aanbevelingen voor producten</a></li>
+            <li><a href="https://experienceleague.adobe.com/docs/commerce/user-guides/integration-services/saas.html?lang=nl-NL">Services Connector</a></li>
           </ul>
         </td>
       <td><strong> Hulpmiddelen </strong>
@@ -72,8 +72,8 @@ Gebruik de volgende lijst om versienota&#39;s en belangrijke informatie met betr
        <td><strong> Omgeving Storefront </strong>
         <p>Leer over de recentste verbeteringen aan winkeltechnologie die u kunt gebruiken om unieke ervaringen voor uw klanten te bouwen.</p>
           <ul>
-            <li><a href="https://experienceleague.adobe.com/developer/commerce/storefront/">Adobe Commerce Storefront</a></li>
-            <li><a href="https://experienceleague.adobe.com/docs/commerce-admin/page-builder/release-notes.html">Page Builder</a></li>
+            <li><a href="https://experienceleague.adobe.com/developer/commerce/storefront/?lang=nl-NL">Adobe Commerce Storefront</a></li>
+            <li><a href="https://experienceleague.adobe.com/docs/commerce-admin/page-builder/release-notes.html?lang=nl-NL">Page Builder</a></li>
             <li><a href="https://github.com/magento/pwa-studio/releases/latest">PWA Studio</a></li>
           </ul>
       </td>
