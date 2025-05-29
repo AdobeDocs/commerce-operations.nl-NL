@@ -1,7 +1,7 @@
 ---
-source-git-commit: 9514f6655bb6d99205c3799a164b6db62887362c
+source-git-commit: 0eb7528ebcc1515defd672830b8f00e460819aa1
 workflow-type: tm+mt
-source-wordcount: '228'
+source-wordcount: '234'
 ht-degree: 0%
 
 ---
@@ -17,4 +17,4 @@ Beveiligingspatchreleases kunnen ook wijzigingen met betrekking tot de naleving 
 
 Elke beveiligingspatchrelease is gebaseerd op de vorige volledige patchrelease. Het bevat kwaliteits- en beveiligingsoplossingen van eerdere patchreleases en beveiligingsoplossingen die zijn gemaakt tussen de vorige volledige patchrelease en de beveiligingspatchrelease.
 
-Voor instructies bij het downloaden en het toepassen van veiligheidspatches, zie [ Vorm en verbetering ](../../installation/composer.md#example---security-patch) in de _Gids van de Verbetering_.
+Voor instructies bij het downloaden van en het toepassen van veiligheidspatches, zie [ hoe te om veiligheidspatches ](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/how-to/how-to-obtain-and-apply-security-patches) in _Adobe Commerce Knowledgebase_ te verkrijgen en toe te passen.
