@@ -50,6 +50,7 @@ De prijsregels voor winkelwagentjes voor producten voor meerdere verzendingen zi
 1. Producttest 2:
    1. Categorieën: Categorie 2
    1. Prijs: $ 56,25 
+
       **(De prijzen moeten het zelfde zijn zoals hier getoond om de test te verzekeren correct werkt.)**
 
 **de Regel van de Prijs van de Kar:**
