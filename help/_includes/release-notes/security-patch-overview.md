@@ -17,4 +17,4 @@ Beveiligingspatchreleases kunnen ook wijzigingen met betrekking tot de naleving 
 
 Elke beveiligingspatchrelease is gebaseerd op de vorige volledige patchrelease. Het bevat kwaliteits- en beveiligingsoplossingen van eerdere patchreleases en beveiligingsoplossingen die zijn gemaakt tussen de vorige volledige patchrelease en de beveiligingspatchrelease.
 
-Voor instructies bij het downloaden van en het toepassen van veiligheidspatches, zie [ hoe te om veiligheidspatches ](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/how-to/how-to-obtain-and-apply-security-patches) in _Adobe Commerce Knowledgebase_ te verkrijgen en toe te passen.
+Voor instructies bij het downloaden van en het toepassen van veiligheidspatches, zie [ hoe te om veiligheidspatches ](https://experienceleague.adobe.com/nl/docs/commerce-knowledge-base/kb/how-to/how-to-obtain-and-apply-security-patches) in _Adobe Commerce Knowledgebase_ te verkrijgen en toe te passen.
