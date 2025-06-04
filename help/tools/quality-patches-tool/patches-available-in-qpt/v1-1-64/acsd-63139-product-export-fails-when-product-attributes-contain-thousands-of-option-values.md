@@ -37,9 +37,9 @@ Het exporteren van het product mislukt wanneer productkenmerken duizenden optiew
 
 1. Installeer Adobe Commerce met de B2B-module.
 1. Importeer een grote databasedumpit met:
-   - ~7.000 producten
-   - ~450 productkenmerken
-   - Sommige kenmerken hebben meer dan 100 opties
+   &#x200B;- ~7.000 producten
+   &#x200B;- ~450 productkenmerken
+   &#x200B;- Sommige kenmerken hebben meer dan 100 opties
 1. Voer de volgende opdracht uit om de installatie uit te voeren (als deze nog niet is geïnstalleerd):
 
    ```
