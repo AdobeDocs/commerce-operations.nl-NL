@@ -2,9 +2,9 @@
 user-guide-title: Afspeelmap voor implementatie
 user-guide-description: Leer meer over strategieën voor het plannen en implementeren van een geslaagde Adobe Commerce-site.
 mini-toc-levels: 3
-source-git-commit: 3f6bf86091885ffa0c557b0c43ce3ff024076a45
+source-git-commit: 8d2dd409741717b534e4aef5e252a614ccb81f4a
 workflow-type: tm+mt
-source-wordcount: '160'
+source-wordcount: '163'
 ht-degree: 0%
 
 ---
@@ -18,7 +18,7 @@ ht-degree: 0%
 - Onderhoud en ondersteuning {#maintenance}
    - [Overzicht](maintenance/overview.md)
    - [Adobe Managed Services](maintenance/adobe-managed-services.md)
-- Tips en trucs {#best-practices}
+- Aanbevolen procedures {#best-practices}
    - [Overzicht](best-practices/phases.md)
    - Planning {#planning}
       - [Overzicht](best-practices/planning/overview.md)
@@ -28,6 +28,7 @@ ht-degree: 0%
       - [Databaseconfiguratie voor cloud-implementaties &#x200B;](best-practices/planning/database-on-cloud.md)
       - [MySQL-configuratie](best-practices/planning/mysql-configuration.md)
       - [Redis-serviceconfiguratie](best-practices/planning/redis-service-configuration.md)
+      - [Valkey-serviceconfiguratie](best-practices/planning/valkey-service-configuration.md)
       - [OPcache-geheugengrootte](best-practices/planning/opcache-memory-size.md)
       - [Realpath cache-grootte](best-practices/planning/realpath-cache-size.md)
       - [Extensies](best-practices/planning/extensions.md)
@@ -68,4 +69,4 @@ ht-degree: 0%
       - [Controlelijst voor upgraden](best-practices/maintenance/upgrade-checklist.md)
       - [Voorwaarden voor upgrades voor MariaDB](best-practices/maintenance/mariadb-upgrade.md)
 - [Verklarende woordenlijst](glossary.md)
-- [ Terugkeer aan Operationele Gidsen ](https://experienceleague.adobe.com/docs/commerce-operations/operational-guides/home.html?lang=nl-NL)
+- [ Terugkeer aan Operationele Gidsen ](https://experienceleague.adobe.com/docs/commerce-operations/operational-guides/home.html)
