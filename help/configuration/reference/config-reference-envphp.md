@@ -2,9 +2,9 @@
 title: env.php reference
 description: Zie een lijst met waarden voor het bestand env.php.
 exl-id: cf02da8f-e0de-4f0e-bab6-67ae02e9166f
-source-git-commit: 987d65b52437fbd21f41600bb5741b3cc43d01f3
+source-git-commit: 3f46ee08bb4edc08775bf986804772b88ca35f45
 workflow-type: tm+mt
-source-wordcount: '693'
+source-wordcount: '944'
 ht-degree: 0%
 
 ---
@@ -146,7 +146,7 @@ Commerce gebruikt een coderingssleutel om wachtwoorden en andere vertrouwelijke 
 ]
 ```
 
-Leer meer over [ Sleutel van de Encryptie ](https://experienceleague.adobe.com/nl/docs/commerce-admin/systems/security/encryption-key) in de _gids van de Gebruiker van Commerce_.
+Leer meer over [ Sleutel van de Encryptie ](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/security/encryption-key) in de _gids van de Gebruiker van Commerce_.
 
 ## db
 
@@ -203,7 +203,7 @@ Een lijst met downloadbare domeinen beschikbaar in dit knooppunt. De extra domei
 ]
 ```
 
-Leer meer over [ Downloadbare Domeinen ](https://experienceleague.adobe.com/nl/docs/commerce-operations/tools/cli-reference/commerce-on-premises#downloadabledomainsadd).
+Leer meer over [ Downloadbare Domeinen ](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/cli-reference/commerce-on-premises#downloadabledomainsadd).
 
 ## installeren
 
@@ -300,3 +300,74 @@ Leer meer in [ env-php-config-reeks ](../cli/set-configuration-values.md).
 <!-- Link definitions -->
 
 [message-queue]: https://developer.adobe.com/commerce/php/development/components/message-queues/
+
+
+## Variabelen toevoegen aan bestandsconfiguratie
+
+U kunt elke configuratieoptie (variabele met waarde) instellen of overschrijven met omgevingsvariabelen op besturingssysteemniveau.
+
+De `env.php` -configuratie wordt opgeslagen in een array met geneste niveaus. Als u een genest arraypad wilt omzetten in een tekenreeks voor omgevingsvariabelen van het besturingssysteem, schakelt u elke toets in het pad in met dubbele onderstrepingstekens `__`, neemt u het accent naar boven en begint u met `MAGENTO_DC_` .
+
+Bijvoorbeeld, zetten wij de zitting sparen manager van `env.php` configuratie in een OS omgevingsvariabele om.
+
+```conf
+'session' => [
+  'save' => 'files'
+],
+```
+
+Wordt in combinatie met `__` en toetsen met een hoger percentage gebruikt, dan wordt dit `SESSION__SAVE` .
+
+Vervolgens wordt het voorvoegsel toegevoegd aan `MAGENTO_DC_` om de resulterende naam van de omgevingsvariabele van het besturingssysteem `MAGENTO_DC_SESSION__SAVE` op te halen.
+
+```shell
+export MAGENTO_DC_SESSION__SAVE=files
+```
+
+In een ander voorbeeld zetten we een scalaire `env.php` configuratieoptiepad om.
+
+```conf
+'x-frame-options' => 'SAMEORIGIN'
+```
+
+>[!INFO]
+>
+>Hoewel de variabelenaam moet worden opgewaardeerd, is de waarde hoofdlettergevoelig en moet deze worden behouden zoals wordt beschreven.
+
+We gebruiken deze code in hoofdletters en voorzien van een voorvoegsel met `MAGENTO_DC_` om de uiteindelijke naam van de omgevingsvariabele van het besturingssysteem te ontvangen `MAGENTO_DC_X-FRAME-OPTIONS` .
+
+```shell
+export MAGENTO_DC_X-FRAME-OPTIONS=SAMEORIGIN
+```
+
+>[!INFO]
+>
+>Houd er rekening mee dat `env.php` -inhoud voorrang heeft op de omgevingsvariabelen van het besturingssysteem.
+
+## Bestandsconfiguratie met variabelen negeren
+
+Als u de bestaande `env.php` configuratieopties wilt negeren met een omgevingsvariabele van het besturingssysteem, moet het arrayelement van de configuratie JSON-gecodeerd zijn en worden ingesteld als een waarde van de `MAGENTO_DC__OVERRIDE` OS-variabele.
+
+Als u meerdere configuratieopties moet overschrijven, stelt u ze allemaal samen in één array voor JSON-codering.
+
+Laten we bijvoorbeeld de volgende `env.php` -configuraties overschrijven:
+
+```conf
+'session' => [
+  'save' => 'files'
+],
+'x-frame-options' => 'SAMEORIGIN'
+```
+
+De JSON-gecodeerde tekst van de bovenstaande array zou
+`{"session":{"save":"files"},"x-frame-options":"SAMEORIGIN"}`.
+
+Stel deze nu in als de waarde van de variabele `MAGENTO_DC__OVERRIDE` OS.
+
+```shell
+export MAGENTO_DC__OVERRIDE='{"session":{"save":"files"},"x-frame-options":"SAMEORIGIN"}'
+```
+
+>[!INFO]
+>
+>Zorg ervoor dat de met JSON gecodeerde array correct is geciteerd en/of zo nodig is verwijderd, om te voorkomen dat het besturingssysteem de gecodeerde tekenreeks beschadigt.
