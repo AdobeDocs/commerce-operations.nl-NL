@@ -2,9 +2,9 @@
 title: Opmerkingen bij de release Adobe Commerce 2.4.4 Beveiligingspatch
 description: Leer meer over oplossingen voor beveiligingsproblemen, beveiligingsverbeteringen en andere beveiligingsupdates die zijn opgenomen in de beveiligingspatchreleases voor Adobe Commerce versie 2.4.4.
 exl-id: 136d7090-6bf2-41e3-8445-b07bdc67f12b
-source-git-commit: 55bba84f05042667d0de3aa053e9a52119bd2599
+source-git-commit: 9ec53ae90e400a6dad98c77c6ae55c70c19e0a40
 workflow-type: tm+mt
-source-wordcount: '1572'
+source-wordcount: '1609'
 ht-degree: 0%
 
 ---
@@ -14,11 +14,23 @@ ht-degree: 0%
 
 {{$include /help/_includes/release-notes/security-patch-intro.md}}
 
+## 2.4.4-p14
+
+De beveiligingsrelease van Adobe Commerce 2.4.4-p14 biedt oplossingen voor beveiligingsproblemen voor kwetsbaarheden die zijn geïdentificeerd in eerdere versies van 2.4.4.
+
+Voor de recentste informatie over de veiligheidsinsectenmoeilijke situaties, zie [ Bulletin van de Veiligheid van Adobe APSB25-50 ](https://helpx.adobe.com/security/products/magento/apsb25-50.html).
+
+{{b2b-patches}}
+
+### Hooglichten
+
+{{$include /help/_includes/release-notes/highlights/security-2025-06.md}}
+
 ## 2.4.4-p13
 
 De veiligheidsversie van Adobe Commerce 2.4.4-p13 verstrekt veiligheidsinsectenmoeilijke situaties voor kwetsbaarheid die in vorige versies van 2.4.4 worden geïdentificeerd.
 
-Voor de recentste informatie over de veiligheidsinsectenmoeilijke situaties, zie [ Bulletin van de Veiligheid van Adobe APSB25-26 ](https://helpx.adobe.com/nl/security/products/magento/apsb25-26.html).
+Voor de recentste informatie over de veiligheidsinsectenmoeilijke situaties, zie [ Bulletin van de Veiligheid van Adobe APSB25-26 ](https://helpx.adobe.com/security/products/magento/apsb25-26.html).
 
 {{b2b-patches}}
 
@@ -30,7 +42,7 @@ Voor de recentste informatie over de veiligheidsinsectenmoeilijke situaties, zie
 
 De veiligheidsversie van Adobe Commerce 2.4.4-p12 verstrekt veiligheidsinsectenmoeilijke situaties voor kwetsbaarheid die in vorige versies van 2.4.4 worden geïdentificeerd.
 
-Voor de recentste informatie over de veiligheidsinsectenmoeilijke situaties, zie [ Bulletin van de Veiligheid van Adobe APSB25-08 ](https://helpx.adobe.com/nl/security/products/magento/apsb25-08.html).
+Voor de recentste informatie over de veiligheidsinsectenmoeilijke situaties, zie [ Bulletin van de Veiligheid van Adobe APSB25-08 ](https://helpx.adobe.com/security/products/magento/apsb25-08.html).
 
 {{b2b-patches}}
 
@@ -42,7 +54,7 @@ Voor de recentste informatie over de veiligheidsinsectenmoeilijke situaties, zie
 
 De Adobe Commerce 2.4.4-p11-beveiligingsrelease biedt oplossingen voor beveiligingsproblemen voor kwetsbaarheden die zijn geïdentificeerd in eerdere versies van 2.4.4.
 
-Voor de recentste informatie over de veiligheidsinsectenmoeilijke situaties, zie [ Bulletin van de Veiligheid van Adobe APSB24-73 ](https://helpx.adobe.com/nl/security/products/magento/apsb24-73.html).
+Voor de recentste informatie over de veiligheidsinsectenmoeilijke situaties, zie [ Bulletin van de Veiligheid van Adobe APSB24-73 ](https://helpx.adobe.com/security/products/magento/apsb24-73.html).
 
 {{b2b-patches}}
 
@@ -54,7 +66,7 @@ Voor de recentste informatie over de veiligheidsinsectenmoeilijke situaties, zie
 
 De Adobe Commerce 2.4.4-p10-beveiligingsrelease biedt oplossingen voor beveiligingsproblemen voor kwetsbaarheden die zijn geïdentificeerd in eerdere versies van 2.4.4.
 
-Voor de recentste informatie over de veiligheidsinsectenmoeilijke situaties, zie [ Bulletin van de Veiligheid van Adobe APSB24-61 ](https://helpx.adobe.com/nl/security/products/magento/apsb24-61.html).
+Voor de recentste informatie over de veiligheidsinsectenmoeilijke situaties, zie [ Bulletin van de Veiligheid van Adobe APSB24-61 ](https://helpx.adobe.com/security/products/magento/apsb24-61.html).
 
 ### Hooglichten
 
@@ -68,7 +80,7 @@ Voor de recentste informatie over de veiligheidsinsectenmoeilijke situaties, zie
 
 De Adobe Commerce 2.4.4-p9 veiligheidsversie verstrekt veiligheidsinsectenmoeilijke situaties voor kwetsbaarheid die in vorige versies van 2.4.4 zijn geïdentificeerd.
 
-Voor de recentste informatie over de veiligheidsinsectenmoeilijke situaties, zie [ Bulletin van de Veiligheid van Adobe APSB24-40 ](https://helpx.adobe.com/nl/security/products/magento/apsb24-40.html).
+Voor de recentste informatie over de veiligheidsinsectenmoeilijke situaties, zie [ Bulletin van de Veiligheid van Adobe APSB24-40 ](https://helpx.adobe.com/security/products/magento/apsb24-40.html).
 
 ### Hotfix toepassen voor CVE-2024-34102
 
@@ -86,13 +98,13 @@ Voor de recentste informatie over de veiligheidsinsectenmoeilijke situaties, zie
 
 De Adobe Commerce 2.4.4-p8-beveiligingsrelease biedt oplossingen voor beveiligingsproblemen voor uw Adobe Commerce 2.4.4-implementatie. Deze updates verhelpen kwetsbaarheden die zijn geïdentificeerd in vorige releases.
 
-Voor de recentste informatie over de veiligheidsinsectenmoeilijke situaties, zie [ Bulletin van de Veiligheid van Adobe APSB24-18 ](https://helpx.adobe.com/nl/security/products/magento/apsb24-18.html).
+Voor de recentste informatie over de veiligheidsinsectenmoeilijke situaties, zie [ Bulletin van de Veiligheid van Adobe APSB24-18 ](https://helpx.adobe.com/security/products/magento/apsb24-18.html).
 
 ## 2.4.4-p7
 
 De Adobe Commerce 2.4.4-p7 veiligheidsversie verstrekt veiligheidsinsectenmoeilijke situaties voor kwetsbaarheid die in vorige versies zijn geïdentificeerd. Deze release bevat ook beveiligingsverbeteringen die de naleving van de meest recente best practices op het gebied van beveiliging verbeteren.
 
-Voor de recentste informatie over de veiligheidsinsectenmoeilijke situaties, zie [ Bulletin van de Veiligheid van Adobe APSB24-03 ](https://helpx.adobe.com/nl/security/products/magento/apsb24-03.html).
+Voor de recentste informatie over de veiligheidsinsectenmoeilijke situaties, zie [ Bulletin van de Veiligheid van Adobe APSB24-03 ](https://helpx.adobe.com/security/products/magento/apsb24-03.html).
 
 ### Hooglichten
 
@@ -109,7 +121,7 @@ Deze release introduceert twee belangrijke beveiligingsverbeteringen:
 
 De Adobe Commerce 2.4.4-p6-beveiligingsrelease biedt oplossingen voor beveiligingsproblemen voor kwetsbaarheden die in eerdere releases zijn geïdentificeerd. Deze release bevat ook beveiligingsverbeteringen die de naleving van de meest recente best practices op het gebied van beveiliging verbeteren.
 
-Voor de recentste informatie over de veiligheidsinsectenmoeilijke situaties, zie [ Bulletin van de Veiligheid van Adobe APSB23-50 ](https://helpx.adobe.com/nl/security/products/magento/apsb23-50.html).
+Voor de recentste informatie over de veiligheidsinsectenmoeilijke situaties, zie [ Bulletin van de Veiligheid van Adobe APSB23-50 ](https://helpx.adobe.com/security/products/magento/apsb23-50.html).
 
 Deze release bevat ook beveiligingsverbeteringen die de naleving van de meest recente best practices op het gebied van beveiliging verbeteren.
 
@@ -132,21 +144,21 @@ Als het probleem met de controlesom aanhoudt, verwijdert u het bestand `composer
 
 De Adobe Commerce 2.4.4-p5-beveiligingsrelease biedt oplossingen voor beveiligingsproblemen voor kwetsbaarheden die in eerdere releases zijn geïdentificeerd.
 
-Voor de recentste informatie over de veiligheidsinsectenmoeilijke situaties, zie [ Bulletin van de Veiligheid van Adobe APSB23-42 ](https://helpx.adobe.com/nl/security/products/magento/apsb23-42.html).
+Voor de recentste informatie over de veiligheidsinsectenmoeilijke situaties, zie [ Bulletin van de Veiligheid van Adobe APSB23-42 ](https://helpx.adobe.com/security/products/magento/apsb23-42.html).
 
 ### Hotfix toepassen voor CVE-2022-31160
 
-`jQuery-UI` versie 1.13.1 van de bibliotheek heeft een bekende kwetsbaarheid op het gebied van beveiliging (CVE-2022-31160) die op meerdere versies van Adobe Commerce en Magento Open Source van toepassing is. Deze bibliotheek is afhankelijk van Adobe Commerce en Magento Open Source 2.4.4, 2.4.5 en 2.4.6. Merchants die beïnvloede plaatsingen in werking stellen zouden de flard moeten toepassen die in de [ wordt gespecificeerd jQuery UI veiligheidskwetsbaarheid CVE-2022-31160 moeilijke situatie voor 2.4.4, 2.4.5, en 2.4.6 versies ](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/known-issues-patches-attached/jquery-cve-2022-31160-fix-2.4.4-2.4.5-2.4.6.html?lang=nl-NL) het artikel van de Kennisbank.
+`jQuery-UI` versie 1.13.1 van de bibliotheek heeft een bekende kwetsbaarheid op het gebied van beveiliging (CVE-2022-31160) die op meerdere versies van Adobe Commerce en Magento Open Source van toepassing is. Deze bibliotheek is afhankelijk van Adobe Commerce en Magento Open Source 2.4.4, 2.4.5 en 2.4.6. Merchants die beïnvloede plaatsingen in werking stellen zouden de flard moeten toepassen die in de [ wordt gespecificeerd jQuery UI veiligheidskwetsbaarheid CVE-2022-31160 moeilijke situatie voor 2.4.4, 2.4.5, en 2.4.6 versies ](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/known-issues-patches-attached/jquery-cve-2022-31160-fix-2.4.4-2.4.5-2.4.6.html) het artikel van de Kennisbank.
 
 ## 2.4.4-p4
 
 De Adobe Commerce 2.4.4-p4 veiligheidsversie verstrekt veiligheidsinsectenmoeilijke situaties voor kwetsbaarheid die in vorige versies zijn geïdentificeerd. Deze release bevat ook beveiligingsupdates en platformupgrades om de naleving van de nieuwste best practices op het gebied van beveiliging te verbeteren.
 
-Voor de recentste informatie over de veiligheidsinsectenmoeilijke situaties, zie [ Bulletin van de Veiligheid van Adobe APSB23-35 ](https://helpx.adobe.com/nl/security/products/magento/apsb23-35.html).
+Voor de recentste informatie over de veiligheidsinsectenmoeilijke situaties, zie [ Bulletin van de Veiligheid van Adobe APSB23-35 ](https://helpx.adobe.com/security/products/magento/apsb23-35.html).
 
 ### Hotfix toepassen voor CVE-2022-31160
 
-`jQuery-UI` versie 1.13.1 van de bibliotheek heeft een bekende kwetsbaarheid op het gebied van beveiliging (CVE-2022-31160) die op meerdere versies van Adobe Commerce en Magento Open Source van toepassing is. Deze bibliotheek is afhankelijk van Adobe Commerce en Magento Open Source 2.4.4, 2.4.5 en 2.4.6. Merchants die beïnvloede plaatsingen in werking stellen zouden de flard moeten toepassen die in de [ wordt gespecificeerd jQuery UI veiligheidskwetsbaarheid CVE-2022-31160 moeilijke situatie voor 2.4.4, 2.4.5, en 2.4.6 versies ](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/known-issues-patches-attached/jquery-cve-2022-31160-fix-2.4.4-2.4.5-2.4.6.html?lang=nl-NL) het artikel van de Kennisbank.
+`jQuery-UI` versie 1.13.1 van de bibliotheek heeft een bekende kwetsbaarheid op het gebied van beveiliging (CVE-2022-31160) die op meerdere versies van Adobe Commerce en Magento Open Source van toepassing is. Deze bibliotheek is afhankelijk van Adobe Commerce en Magento Open Source 2.4.4, 2.4.5 en 2.4.6. Merchants die beïnvloede plaatsingen in werking stellen zouden de flard moeten toepassen die in de [ wordt gespecificeerd jQuery UI veiligheidskwetsbaarheid CVE-2022-31160 moeilijke situatie voor 2.4.4, 2.4.5, en 2.4.6 versies ](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/known-issues-patches-attached/jquery-cve-2022-31160-fix-2.4.4-2.4.5-2.4.6.html) het artikel van de Kennisbank.
 
 ### Hooglichten
 
@@ -166,13 +178,13 @@ Platformupgrades voor deze release verbeteren de naleving van de nieuwste best p
 
 De Adobe Commerce 2.4.4-p3 veiligheidsversie verstrekt veiligheidsinsectenmoeilijke situaties voor kwetsbaarheid die in vorige versies zijn geïdentificeerd.
 
-Voor de recentste informatie over de veiligheidsinsectenmoeilijke situaties, zie [ Bulletin van de Veiligheid van Adobe APSB23-17 ](https://helpx.adobe.com/nl/security/products/magento/apsb23-17.html).
+Voor de recentste informatie over de veiligheidsinsectenmoeilijke situaties, zie [ Bulletin van de Veiligheid van Adobe APSB23-17 ](https://helpx.adobe.com/security/products/magento/apsb23-17.html).
 
 ## 2.4.4-p2
 
 De Adobe Commerce 2.4.4-p2-beveiligingsrelease biedt oplossingen voor kwetsbaarheden die in eerdere releases zijn geïdentificeerd. Één moeilijke situatie omvat de verwezenlijking van een nieuwe configuratie het plaatsen. **vereist e-mailbevestiging als e-mail** configuratie het plaatsen is veranderd laat beheerders e-mailbevestiging vereisen wanneer een admin gebruiker hun e-mailadres verandert. <!-- AC-6292-->
 
-Voor de recentste informatie over de veiligheidsinsectenmoeilijke situaties, zie [ Bulletin van de Veiligheid van Adobe APSB22-48 ](https://helpx.adobe.com/nl/security/products/magento/apsb22-48.html).
+Voor de recentste informatie over de veiligheidsinsectenmoeilijke situaties, zie [ Bulletin van de Veiligheid van Adobe APSB22-48 ](https://helpx.adobe.com/security/products/magento/apsb22-48.html).
 
 ### AC-3022.patch toepassen om DHL als scheepvaartmaatschappij te blijven aanbieden
 
@@ -182,7 +194,7 @@ DHL heeft schemaversie 6.2 geïntroduceerd en zal schemaversie 6.0 in de nabije 
 
 De Adobe Commerce 2.4.4-p1-beveiligingsrelease biedt oplossingen voor kwetsbaarheden die in eerdere releases zijn geïdentificeerd. Deze release bevat ook beveiligingsverbeteringen om de naleving van de nieuwste best practices op het gebied van beveiliging te verbeteren.
 
-Voor de recentste informatie over de veiligheidsinsectenmoeilijke situaties, zie [ Bulletin van de Veiligheid van Adobe ](https://helpx.adobe.com/nl/security/products/magento/apsb22-38.html).t
+Voor de recentste informatie over de veiligheidsinsectenmoeilijke situaties, zie [ Bulletin van de Veiligheid van Adobe ](https://helpx.adobe.com/security/products/magento/apsb22-38.html).t
 
 ### Toepassen op `AC-3022.patch` om DHL als scheepvaartmaatschappij te blijven aanbieden
 

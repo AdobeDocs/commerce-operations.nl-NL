@@ -1,0 +1,43 @@
+---
+source-git-commit: 30f4a7cf8ff93d559ff2f78c623df88260197683
+workflow-type: tm+mt
+source-wordcount: '164'
+ht-degree: 0%
+
+---
+# Magento Open Source-releaseopmerkingen (v2.4.9-alpha1)
+
+## Hooglichten in v2.4.9-alpha1
+
+De volgende 9 markeringen zijn van toepassing op de Magento Open Source 2.4.9-alpha1-release.
+
+### Gebruikersinterface van beheerder
+
+* __voeg &quot;Acties&quot;menu voor het net van de Regels van de Prijs van de Catalogus in Admin UI__ toe
+  _AC-13916_
+
+### Kader
+
+* __[Deel 2 ] - werk alle js bibliotheek en npm gebiedsdeel met de recentste beschikbare versie__ bij
+ondersteuning voor composer-versies was alleen beschikbaar voor versie 2.2.x van de composer. De ondersteuning is nu ook uitgebreid naar versie 2.4.x.
+  _AC-13792 - [ GitHub codebijdrage ](https://github.com/magento/magento2/commit/19844aa0)_
+* __voegt verenigbaarheid voor Valkey 8.x voor 2.4.8, 2.4.7, 2.4.6 en 2.4.5, 2.4.9-alpha1__ toe
+  _AC-14103_
+* __verenigbaarheid van de Controle met Varnish 7.7__
+  _AC-14105_
+* __voeg verenigbaarheid voor RabbitMQ 4.1 voor 2.4.8, 2.4.7, 2.4.6 en 2.4.5__ toe
+  _AC-14357_
+
+### Overige
+
+* __2.4.9-alpha1 - de Verbeteringen van de Kwaliteit van Juni__
+  _AC-14026_
+* __maak 2.4.7 en 2.4.6 compatibel met MariaDB 10.11__
+  _AC-14099_
+* __2.4.9-alpha1 - Juni 2025 Communautaire bijdragen__
+  _AC-14559_
+
+### Verzending
+
+* __migreer de integratie van DHL van verouderde Uitdrukkelijke XML van DHL aan nieuwe MyDHL API RESTful APIs__
+  _AC-13258_
