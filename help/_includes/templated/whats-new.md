@@ -23,7 +23,7 @@ Deze pagina bevat de wijzigingen die in de afgelopen 60 dagen zijn aangebracht. 
   </thead>
   <tbody>
     <tr>
-      <td><p>Gepubliceerde versienota's voor de veiligheidspatches van juni 2025 en 2.4.9-alpha1 flard:<br /> - <a href="https://experienceleague.adobe.com/en/docs/commerce-operations/release/notes/adobe-commerce/2-4-9"> 2.4.9-alpha1 </a><br /> - <a href="https://experienceleague.adobe.com/en/docs/commerce-operations/release/notes/security-patches/2-4-8-patches"> 2.4.8-p1 </a><br /> - <a href="https://experienceleague.adobe.com/en/docs/commerce-operations/release/notes/security-patches/2-4-7-patches"> 2.4.7-p6 </a><br /> - <a href="https://experienceleague.adobe.com/en/docs/commerce-operations/release/notes/security-patches/2-4-6-patches"> 2.4.6-p1118&rbrace; - <a href="https://experienceleague.adobe.com/en/docs/commerce-operations/release/notes/security-patches/2-4-5-patches"> 2.2 4.5-p13 </a><br /> - <a href="https://experienceleague.adobe.com/en/docs/commerce-operations/release/notes/security-patches/2-4-4-patches"> 2.4.4-p14 </a></a><br /></p>
+      <td><p>Gepubliceerde versienota's voor de veiligheidspatches van juni 2025 en 2.4.9-alpha1 flard:<br /> - <a href="https://experienceleague.adobe.com/en/docs/commerce-operations/release/notes/adobe-commerce/2-4-9"> 2.4.9-alpha1 </a><br /> - <a href="https://experienceleague.adobe.com/en/docs/commerce-operations/release/notes/security-patches/2-4-8-patches"> 2.4.8-p1 </a><br /> - <a href="https://experienceleague.adobe.com/nl/docs/commerce-operations/release/notes/security-patches/2-4-7-patches"> 2.4.7-p6 </a><br /> - <a href="https://experienceleague.adobe.com/nl/docs/commerce-operations/release/notes/security-patches/2-4-6-patches"> 2.4.6-p1118&rbrace; - <a href="https://experienceleague.adobe.com/nl/docs/commerce-operations/release/notes/security-patches/2-4-5-patches"> 2.2 4.5-p13 </a><br /> - <a href="https://experienceleague.adobe.com/nl/docs/commerce-operations/release/notes/security-patches/2-4-4-patches"> 2.4.4-p14 </a></a><br /></p>
 </td>
       <td>
         Belangrijke update
@@ -31,7 +31,7 @@ Deze pagina bevat de wijzigingen die in de afgelopen 60 dagen zijn aangebracht. 
       <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/7cd58c1fe597258ee1f4514acfb08e71bee1c848">begaan</a></td>
     </tr>
     <tr>
-      <td><p>Bijgewerkte <a href="https://experienceleague.adobe.com/en/docs/commerce-operations/installation-guide/system-requirements"> systeemvereisten </a> voor de het flardversie van Juni 2025.</p>
+      <td><p>Bijgewerkte <a href="https://experienceleague.adobe.com/nl/docs/commerce-operations/installation-guide/system-requirements"> systeemvereisten </a> voor de het flardversie van Juni 2025.</p>
 </td>
       <td>
         Belangrijke update
@@ -53,7 +53,7 @@ Deze pagina bevat de wijzigingen die in de afgelopen 60 dagen zijn aangebracht. 
   </thead>
   <tbody>
     <tr>
-      <td><p>Gepubliceerde <a href="https://experienceleague.adobe.com/docs/commerce-operations/tools/quality-patches-tool/release-notes.html"> versienota's </a> voor de 1.1.65 het pakketversie van het Hulpmiddel van de Patches van de Kwaliteit (QPT).</p>
+      <td><p>Gepubliceerde <a href="https://experienceleague.adobe.com/docs/commerce-operations/tools/quality-patches-tool/release-notes.html?lang=nl-NL"> versienota's </a> voor de 1.1.65 het pakketversie van het Hulpmiddel van de Patches van de Kwaliteit (QPT).</p>
 </td>
       <td>
         Belangrijke update, qpt
@@ -75,7 +75,7 @@ Deze pagina bevat de wijzigingen die in de afgelopen 60 dagen zijn aangebracht. 
   </thead>
   <tbody>
     <tr>
-      <td><p>Toegevoegd de <a href="https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-64/acp2e-3841-cart-price-rules-for-multi-shipping-products-do-not-apply-correctly-when-subselect-conditions-are-used-and-free-shipping-is-enabled"> gedetailleerde beschrijving van de kwestie die door de ACS2E-3841 flard in QPT 1.1.64 versie </a> wordt bevestigd</p>
+      <td><p>Toegevoegd de <a href="https://experienceleague.adobe.com/nl/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-64/acp2e-3841-cart-price-rules-for-multi-shipping-products-do-not-apply-correctly-when-subselect-conditions-are-used-and-free-shipping-is-enabled"> gedetailleerde beschrijving van de kwestie die door de ACS2E-3841 flard in QPT 1.1.64 versie </a> wordt bevestigd</p>
 </td>
       <td>
         Nieuw onderwerp, qpt
@@ -97,7 +97,7 @@ Deze pagina bevat de wijzigingen die in de afgelopen 60 dagen zijn aangebracht. 
   </thead>
   <tbody>
     <tr>
-      <td><p>Toegevoegde RabbitMQ 3.13 in de <a href="https://experienceleague.adobe.com/en/docs/commerce-operations/installation-guide/system-requirements"> lijst van systeemvereisten </a> voor de de veiligheidspatches van April 2025.</p>
+      <td><p>Toegevoegde RabbitMQ 3.13 in de <a href="https://experienceleague.adobe.com/nl/docs/commerce-operations/installation-guide/system-requirements"> lijst van systeemvereisten </a> voor de de veiligheidspatches van April 2025.</p>
 </td>
       <td>
         Technisch
@@ -105,7 +105,7 @@ Deze pagina bevat de wijzigingen die in de afgelopen 60 dagen zijn aangebracht. 
       <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/cdf687ce0f1201e57b66d2b9232ed8820a116d6f">begaan</a></td>
     </tr>
     <tr>
-      <td><p>Toegevoegde 2.4.9-alpha- flarden aan het <a href="https://experienceleague.adobe.com/en/docs/commerce-operations/release/planning/schedule"> versieschema </a>.</p>
+      <td><p>Toegevoegde 2.4.9-alpha- flarden aan het <a href="https://experienceleague.adobe.com/nl/docs/commerce-operations/release/planning/schedule"> versieschema </a>.</p>
 </td>
       <td>
         Belangrijke update
@@ -127,7 +127,7 @@ Deze pagina bevat de wijzigingen die in de afgelopen 60 dagen zijn aangebracht. 
   </thead>
   <tbody>
     <tr>
-      <td><p>Gepubliceerde <a href="https://experienceleague.adobe.com/docs/commerce-operations/tools/quality-patches-tool/release-notes.html"> versienota's </a> voor de 1.1.64 het pakketversie van het Hulpmiddel van de Patches van de Kwaliteit (QPT).</p>
+      <td><p>Gepubliceerde <a href="https://experienceleague.adobe.com/docs/commerce-operations/tools/quality-patches-tool/release-notes.html?lang=nl-NL"> versienota's </a> voor de 1.1.64 het pakketversie van het Hulpmiddel van de Patches van de Kwaliteit (QPT).</p>
 </td>
       <td>
         Belangrijke update, qpt
@@ -149,7 +149,7 @@ Deze pagina bevat de wijzigingen die in de afgelopen 60 dagen zijn aangebracht. 
   </thead>
   <tbody>
     <tr>
-      <td><p>Toegevoegd de <a href="https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-62/acsd-64732-third-party-controllers-are-not-cached-correctly"> gedetailleerde beschrijving van de kwestie die door ACSD-64732 flard in QPT 1.1.62 wordt bevestigd versie </a></p>
+      <td><p>Toegevoegd de <a href="https://experienceleague.adobe.com/nl/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-62/acsd-64732-third-party-controllers-are-not-cached-correctly"> gedetailleerde beschrijving van de kwestie die door ACSD-64732 flard in QPT 1.1.62 wordt bevestigd versie </a></p>
 </td>
       <td>
         Nieuw onderwerp, qpt
@@ -157,7 +157,7 @@ Deze pagina bevat de wijzigingen die in de afgelopen 60 dagen zijn aangebracht. 
       <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/7d2d6c5fb9b72dd7fcf6aed6c87568903219b5d6">begaan</a></td>
     </tr>
     <tr>
-      <td><p>Toegevoegd de <a href="https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-62/acsd-65164-the-error-message-occurs-when-reordering"> gedetailleerde beschrijving van de kwestie die door ACSD-65164 flard in QPT 1.1.62 wordt bevestigd versie </a></p>
+      <td><p>Toegevoegd de <a href="https://experienceleague.adobe.com/nl/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-62/acsd-65164-the-error-message-occurs-when-reordering"> gedetailleerde beschrijving van de kwestie die door ACSD-65164 flard in QPT 1.1.62 wordt bevestigd versie </a></p>
 </td>
       <td>
         Nieuw onderwerp, qpt
@@ -179,7 +179,7 @@ Deze pagina bevat de wijzigingen die in de afgelopen 60 dagen zijn aangebracht. 
   </thead>
   <tbody>
     <tr>
-      <td><p>Toegevoegd de <a href="https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-63/acsd-64627-fixes-saving-issues-for-custom-attributes-in-user-profiles"> gedetailleerde beschrijving van de kwestie die door ACSD-64627 flard in QPT 1.1.63 wordt bevestigd versie </a></p>
+      <td><p>Toegevoegd de <a href="https://experienceleague.adobe.com/nl/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-63/acsd-64627-fixes-saving-issues-for-custom-attributes-in-user-profiles"> gedetailleerde beschrijving van de kwestie die door ACSD-64627 flard in QPT 1.1.63 wordt bevestigd versie </a></p>
 </td>
       <td>
         Nieuw onderwerp, qpt
@@ -201,7 +201,7 @@ Deze pagina bevat de wijzigingen die in de afgelopen 60 dagen zijn aangebracht. 
   </thead>
   <tbody>
     <tr>
-      <td><p>Toegevoegd de <a href="https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-63/acsd-65195-fixes-the-issue-where-the-graphql-mutation-createcompany"> gedetailleerde beschrijving van de kwestie die door ACSD-65195 flard in QPT 1.1.63 wordt bevestigd versie </a>.</p>
+      <td><p>Toegevoegd de <a href="https://experienceleague.adobe.com/nl/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-63/acsd-65195-fixes-the-issue-where-the-graphql-mutation-createcompany"> gedetailleerde beschrijving van de kwestie die door ACSD-65195 flard in QPT 1.1.63 wordt bevestigd versie </a>.</p>
 </td>
       <td>
         Nieuw onderwerp, qpt
@@ -209,7 +209,7 @@ Deze pagina bevat de wijzigingen die in de afgelopen 60 dagen zijn aangebracht. 
       <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/a6a8ad44c339b95b4afcedbd33b84c1d8b3411cc">begaan</a></td>
     </tr>
     <tr>
-      <td><p>Het <a href="https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-62/acsd-64532-env-variable-set-to-string-false-instead-of-boolean-false"> ACSD-64532 flard </a> bevestigt de kwestie waar de variabele ENV die aan vals wordt geplaatst als koord vals in plaats van een VALS BOOLEAN wordt behandeld.</p>
+      <td><p>Het <a href="https://experienceleague.adobe.com/nl/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-62/acsd-64532-env-variable-set-to-string-false-instead-of-boolean-false"> ACSD-64532 flard </a> bevestigt de kwestie waar de variabele ENV die aan vals wordt geplaatst als koord vals in plaats van een VALS BOOLEAN wordt behandeld.</p>
 </td>
       <td>
         Nieuw onderwerp, qpt
@@ -231,7 +231,7 @@ Deze pagina bevat de wijzigingen die in de afgelopen 60 dagen zijn aangebracht. 
   </thead>
   <tbody>
     <tr>
-      <td><p>Toegevoegd de <a href="https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-63/overview"> beschrijving van de kwesties die door de flarden beschikbaar in QPT 1.1.63 versie </a> worden bevestigd</p>
+      <td><p>Toegevoegd de <a href="https://experienceleague.adobe.com/nl/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-63/overview"> beschrijving van de kwesties die door de flarden beschikbaar in QPT 1.1.63 versie </a> worden bevestigd</p>
 </td>
       <td>
         Nieuw onderwerp, qpt
@@ -239,7 +239,7 @@ Deze pagina bevat de wijzigingen die in de afgelopen 60 dagen zijn aangebracht. 
       <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/73e94802a4fbf4dfcbfb50be1a8a23d831368168">begaan</a></td>
     </tr>
     <tr>
-      <td><p>Toegevoegd de <a href="https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-62/acsd-63406-expired-persistent-quotes-not-cleared"> gedetailleerde beschrijving van de kwestie die door ACSD-63406 flard in QPT 1.1.62 wordt bevestigd versie </a></p>
+      <td><p>Toegevoegd de <a href="https://experienceleague.adobe.com/nl/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-62/acsd-63406-expired-persistent-quotes-not-cleared"> gedetailleerde beschrijving van de kwestie die door ACSD-63406 flard in QPT 1.1.62 wordt bevestigd versie </a></p>
 </td>
       <td>
         Nieuw onderwerp, qpt
@@ -247,7 +247,7 @@ Deze pagina bevat de wijzigingen die in de afgelopen 60 dagen zijn aangebracht. 
       <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/9661351d137ebd704c884f2dc1459eee26a3fdc4">begaan</a></td>
     </tr>
     <tr>
-      <td><p>Bijgewerkt de <a href="https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-62/acsd-64592-non-default-store-gift-card-claim-links-redirect-to-default-website"> beïnvloede producten en de versiesectie in het ACSD-64592 flard </a>.</p>
+      <td><p>Bijgewerkt de <a href="https://experienceleague.adobe.com/nl/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-62/acsd-64592-non-default-store-gift-card-claim-links-redirect-to-default-website"> beïnvloede producten en de versiesectie in het ACSD-64592 flard </a>.</p>
 </td>
       <td>
         Nieuw onderwerp, qpt
@@ -269,7 +269,7 @@ Deze pagina bevat de wijzigingen die in de afgelopen 60 dagen zijn aangebracht. 
   </thead>
   <tbody>
     <tr>
-      <td><p>Toegevoegde RabbitMQ 4.1 aan de lijst van gesteunde <a href="https://experienceleague.adobe.com/en/docs/commerce-operations/installation-guide/system-requirements"> systeemvereisten </a> voor de flarden van Juni 2025 (behalve 2.4.4-p13).<br /> - 2.4.8 <br /> - 2.4.7-p5 <br /> - 2.4.6-p10 <br /> - 2.4.5-p12</p>
+      <td><p>Toegevoegde RabbitMQ 4.1 aan de lijst van gesteunde <a href="https://experienceleague.adobe.com/nl/docs/commerce-operations/installation-guide/system-requirements"> systeemvereisten </a> voor de flarden van Juni 2025 (behalve 2.4.4-p13).<br /> - 2.4.8 <br /> - 2.4.7-p5 <br /> - 2.4.6-p10 <br /> - 2.4.5-p12</p>
 </td>
       <td>
         Technisch
@@ -291,7 +291,7 @@ Deze pagina bevat de wijzigingen die in de afgelopen 60 dagen zijn aangebracht. 
   </thead>
   <tbody>
     <tr>
-      <td><p>Toegevoegd de <a href="https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-62/acsd-64523-rest-endpoint-fails-to-validate-mandatory-fields"> gedetailleerde beschrijving van de kwestie die door ACSD-64523 flard in QPT 1.1.62 wordt bevestigd versie </a></p>
+      <td><p>Toegevoegd de <a href="https://experienceleague.adobe.com/nl/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-62/acsd-64523-rest-endpoint-fails-to-validate-mandatory-fields"> gedetailleerde beschrijving van de kwestie die door ACSD-64523 flard in QPT 1.1.62 wordt bevestigd versie </a></p>
 </td>
       <td>
         Nieuw onderwerp, qpt
@@ -299,7 +299,7 @@ Deze pagina bevat de wijzigingen die in de afgelopen 60 dagen zijn aangebracht. 
       <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/55dd9097d014d37d519ff0ce00fee03c82fbc0ac">begaan</a></td>
     </tr>
     <tr>
-      <td><p>Toegevoegd de <a href="https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-62/acsd-63520-image-upload-configuration-does-not-adhere-to-maximum-upload-size-limits"> gedetailleerde beschrijving van de kwestie die door ACSD-64684 flard in QPT 1.1.62 wordt bevestigd versie </a></p>
+      <td><p>Toegevoegd de <a href="https://experienceleague.adobe.com/nl/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-62/acsd-63520-image-upload-configuration-does-not-adhere-to-maximum-upload-size-limits"> gedetailleerde beschrijving van de kwestie die door ACSD-64684 flard in QPT 1.1.62 wordt bevestigd versie </a></p>
 </td>
       <td>
         Nieuw onderwerp, qpt
@@ -321,7 +321,7 @@ Deze pagina bevat de wijzigingen die in de afgelopen 60 dagen zijn aangebracht. 
   </thead>
   <tbody>
     <tr>
-      <td><p>Toegevoegd de <a href="https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-62/overview"> beschrijving van de kwesties die door de flarden beschikbaar in QPT 1.1.62 versie </a> worden bevestigd</p>
+      <td><p>Toegevoegd de <a href="https://experienceleague.adobe.com/nl/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-62/overview"> beschrijving van de kwesties die door de flarden beschikbaar in QPT 1.1.62 versie </a> worden bevestigd</p>
 </td>
       <td>
         Nieuw onderwerp, qpt
@@ -343,7 +343,7 @@ Deze pagina bevat de wijzigingen die in de afgelopen 60 dagen zijn aangebracht. 
   </thead>
   <tbody>
     <tr>
-      <td><p>Verbeterde versie merkt het formatteren voor vaste kwesties in <a href="https://experienceleague.adobe.com/en/docs/commerce-operations/release/notes/adobe-commerce/2-4-8"> Adobe Commerce </a> en <a href="https://experienceleague.adobe.com/en/docs/commerce-operations/release/notes/adobe-commerce/2-4-8"> Magento Open Source </a> 2.4.8.<br /><em> Kredieten aan <a href="https://github.com/hostep">@hostep </a>.</em></p>
+      <td><p>Verbeterde versie merkt het formatteren voor vaste kwesties in <a href="https://experienceleague.adobe.com/nl/docs/commerce-operations/release/notes/adobe-commerce/2-4-8"> Adobe Commerce </a> en <a href="https://experienceleague.adobe.com/nl/docs/commerce-operations/release/notes/adobe-commerce/2-4-8"> Magento Open Source </a> 2.4.8.<br /><em> Kredieten aan <a href="https://github.com/hostep">@hostep </a>.</em></p>
 </td>
       <td>
         Technisch
@@ -365,7 +365,7 @@ Deze pagina bevat de wijzigingen die in de afgelopen 60 dagen zijn aangebracht. 
   </thead>
   <tbody>
     <tr>
-      <td><p>Gepubliceerde <a href="https://experienceleague.adobe.com/docs/commerce-operations/tools/quality-patches-tool/release-notes.html"> versienota's </a> voor de 1.1.63 het pakketversie van het Hulpmiddel van de Patches van de Kwaliteit (QPT).</p>
+      <td><p>Gepubliceerde <a href="https://experienceleague.adobe.com/docs/commerce-operations/tools/quality-patches-tool/release-notes.html?lang=nl-NL"> versienota's </a> voor de 1.1.63 het pakketversie van het Hulpmiddel van de Patches van de Kwaliteit (QPT).</p>
 </td>
       <td>
         Belangrijke update, qpt
@@ -373,7 +373,7 @@ Deze pagina bevat de wijzigingen die in de afgelopen 60 dagen zijn aangebracht. 
       <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/f112a65859e1337183ab49aff9b6a812f9caa569">begaan</a></td>
     </tr>
     <tr>
-      <td><p>Vaste tekst teruggevend in de nota's van de Versie voor <a href="https://experienceleague.adobe.com/en/docs/commerce-operations/release/notes/adobe-commerce/2-4-8"> Adobe Commerce </a> en <a href="https://experienceleague.adobe.com/en/docs/commerce-operations/release/notes/adobe-commerce/2-4-8"> Magento Open Source </a>.<br /><em> Kredieten aan <a href="https://github.com/hostep">@hostep </a>.</em></p>
+      <td><p>Vaste tekst teruggevend in de nota's van de Versie voor <a href="https://experienceleague.adobe.com/nl/docs/commerce-operations/release/notes/adobe-commerce/2-4-8"> Adobe Commerce </a> en <a href="https://experienceleague.adobe.com/nl/docs/commerce-operations/release/notes/adobe-commerce/2-4-8"> Magento Open Source </a>.<br /><em> Kredieten aan <a href="https://github.com/hostep">@hostep </a>.</em></p>
 </td>
       <td>
         Technisch
@@ -395,7 +395,7 @@ Deze pagina bevat de wijzigingen die in de afgelopen 60 dagen zijn aangebracht. 
   </thead>
   <tbody>
     <tr>
-      <td><p>Toegevoegd een bekende kwestie over Braintree aan <a href="https://experienceleague.adobe.com/en/docs/commerce-operations/release/notes/security-patches/2-4-7-patches#p5"> 2.4.7-p5 versienota's </a>.</p>
+      <td><p>Toegevoegd een bekende kwestie over Braintree aan <a href="https://experienceleague.adobe.com/nl/docs/commerce-operations/release/notes/security-patches/2-4-7-patches#p5"> 2.4.7-p5 versienota's </a>.</p>
 </td>
       <td>
         Belangrijke update
@@ -417,7 +417,7 @@ Deze pagina bevat de wijzigingen die in de afgelopen 60 dagen zijn aangebracht. 
   </thead>
   <tbody>
     <tr>
-      <td><p>Bijgewerkt de <a href="https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-42/acsd-54966-fix-for-limited-use-coupon-code-after-failed-orders"> beïnvloede producten en de versiesectie in ACSD-54966 flard </a></p>
+      <td><p>Bijgewerkt de <a href="https://experienceleague.adobe.com/nl/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-42/acsd-54966-fix-for-limited-use-coupon-code-after-failed-orders"> beïnvloede producten en de versiesectie in ACSD-54966 flard </a></p>
 </td>
       <td>
         Qpt
@@ -425,7 +425,7 @@ Deze pagina bevat de wijzigingen die in de afgelopen 60 dagen zijn aangebracht. 
       <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/aa47a83f4ec38aa6ff96008cbab2733602465435">begaan</a></td>
     </tr>
     <tr>
-      <td><p>Bijgewerkt de <a href="https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-56/acsd-62979-incorrect-store-id-in-the-graphql-header-causes-a-fatal-memory-error"> beïnvloede producten en de versiesectie in het ACSD-62979 flard </a></p>
+      <td><p>Bijgewerkt de <a href="https://experienceleague.adobe.com/nl/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-56/acsd-62979-incorrect-store-id-in-the-graphql-header-causes-a-fatal-memory-error"> beïnvloede producten en de versiesectie in het ACSD-62979 flard </a></p>
 </td>
       <td>
         Qpt
@@ -447,7 +447,7 @@ Deze pagina bevat de wijzigingen die in de afgelopen 60 dagen zijn aangebracht. 
   </thead>
   <tbody>
     <tr>
-      <td><p>Toegevoegd 2.4.8 aan het <a href="https://experienceleague.adobe.com/en/docs/commerce-operations/release/planning/lifecycle-policy"> levenscyclusbeleid </a>.</p>
+      <td><p>Toegevoegd 2.4.8 aan het <a href="https://experienceleague.adobe.com/nl/docs/commerce-operations/release/planning/lifecycle-policy"> levenscyclusbeleid </a>.</p>
 </td>
       <td>
         Belangrijke update
@@ -469,7 +469,7 @@ Deze pagina bevat de wijzigingen die in de afgelopen 60 dagen zijn aangebracht. 
   </thead>
   <tbody>
     <tr>
-      <td><p>Toegevoegde <a href="https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-61/acsd-64431-placeorder-mutation-with-coupon-code-throws-error"> gedetailleerde beschrijving van de kwestie die door het ACSD-64431 flard in QPT 1.1.61 versie </a> wordt bevestigd.</p>
+      <td><p>Toegevoegde <a href="https://experienceleague.adobe.com/nl/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-61/acsd-64431-placeorder-mutation-with-coupon-code-throws-error"> gedetailleerde beschrijving van de kwestie die door het ACSD-64431 flard in QPT 1.1.61 versie </a> wordt bevestigd.</p>
 </td>
       <td>
         Nieuw onderwerp, qpt
