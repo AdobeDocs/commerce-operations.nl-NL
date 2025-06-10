@@ -1,7 +1,7 @@
 ---
-source-git-commit: f9cc5ab0cb1b64455e12081ffbf719e0f2a791ad
+source-git-commit: cbf41054a2a8ffefa38049e1bf6e4a2f09e06ce1
 workflow-type: tm+mt
-source-wordcount: '153'
+source-wordcount: '142'
 ht-degree: 0%
 
 ---
@@ -21,10 +21,8 @@ Deze release bevat de volgende hooglichten:
 
 * **moeilijke situatie voor CVE-2025-47110** - lost een kwetsbaarheid van e-mailmalplaatjes op.<!-- AC-14695 -->
 
-* **Repareren voor VULN-31547** - lost een categorie canonical verbindingskwetsbaarheid op.<!-- AC-14713 -->
-
 >[!BEGINSHADEBOX]
 
-Correcties voor CVE-2025-47110 VULN-31547 zijn ook beschikbaar als een geïsoleerde patch. Zie het [ artikel van de Kennisbank ](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/troubleshooting/known-issues-patches-attached/security-update-available-for-adobe-commerce-apsb25-50) voor details.
+De oplossing voor CVE-2025-47110 is ook beschikbaar als een geïsoleerde patch. Zie het [ artikel van de Kennisbank ](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/troubleshooting/known-issues-patches-attached/security-update-available-for-adobe-commerce-apsb25-50) voor details.
 
 >[!ENDSHADEBOX]

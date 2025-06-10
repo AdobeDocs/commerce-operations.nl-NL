@@ -1,9 +1,9 @@
 ---
 title: Opmerkingen bij de release Adobe Commerce 2.4.8 Security Patch
 description: Leer meer over oplossingen voor beveiligingsproblemen, beveiligingsverbeteringen en andere beveiligingsupdates die zijn opgenomen in de beveiligingspatchreleases voor Adobe Commerce versie 2.4.7.
-source-git-commit: 9ec53ae90e400a6dad98c77c6ae55c70c19e0a40
+source-git-commit: cbf41054a2a8ffefa38049e1bf6e4a2f09e06ce1
 workflow-type: tm+mt
-source-wordcount: '78'
+source-wordcount: '225'
 ht-degree: 0%
 
 ---
@@ -23,4 +23,24 @@ Voor de recentste informatie over de veiligheidsinsectenmoeilijke situaties, zie
 
 ### Hooglichten
 
-{{$include /help/_includes/release-notes/highlights/security-2025-06.md}}
+Deze release bevat de volgende hooglichten:
+
+* **API prestatiesverhoging** - lost prestatiesdegradatie in bulk asynchrone Web API eindpunten op die na het vorige veiligheidspatch werden geïntroduceerd.<!-- AC-14078 -->
+
+* **de toegangsmoeilijke situatie van de Blokken van CMS** - lost een kwestie op waar de gebruikers Admin met beperkte toestemmingen (zoals handel-enige toegang) niet de [!UICONTROL CMS Blocks] lijstpagina konden bekijken.
+
+  Eerder, ontmoetten deze gebruikers een fout toe te schrijven aan ontbrekende configuratieparameters na het installeren van vorige veiligheidspatches.<!-- AC-14087 -->
+
+* **de beperkingsverenigbaarheid van het Koekje** - lost een achteruit-onverenigbaar verandering op die de `MAX_NUM_COOKIES` constante in het kader impliceert. Deze update herstelt verwacht gedrag en verzekert verenigbaarheid voor uitbreidingen of aanpassingen die met koekjesgrenzen in wisselwerking staan.<!-- AC-14475 -->
+
+* **Repareren voor CVE-2024-34104** - lost een onjuiste vergunningskwetsbaarheid op.<!-- AC-13917 -->
+
+* **moeilijke situatie voor CVE-2025-47110** - lost een kwetsbaarheid van e-mailmalplaatjes op.<!-- AC-14695 -->
+
+* **Repareren voor VULN-31547** - lost een categorie canonical verbindingskwetsbaarheid op.<!-- AC-14713 -->
+
+>[!BEGINSHADEBOX]
+
+De oplossing voor CVE-2025-47110 is ook beschikbaar als een geïsoleerde patch. Zie het [ artikel van de Kennisbank ](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/troubleshooting/known-issues-patches-attached/security-update-available-for-adobe-commerce-apsb25-50) voor details.
+
+>[!ENDSHADEBOX]
