@@ -1,9 +1,9 @@
 ---
 title: Opmerkingen bij de release Adobe Commerce 2.4.8 Security Patch
 description: Leer meer over oplossingen voor beveiligingsproblemen, beveiligingsverbeteringen en andere beveiligingsupdates die zijn opgenomen in de beveiligingspatchreleases voor Adobe Commerce versie 2.4.7.
-source-git-commit: cbf41054a2a8ffefa38049e1bf6e4a2f09e06ce1
+source-git-commit: e996ef274920b1828331e2bb1eadacbb2cde59a6
 workflow-type: tm+mt
-source-wordcount: '225'
+source-wordcount: '228'
 ht-degree: 0%
 
 ---
@@ -41,6 +41,6 @@ Deze release bevat de volgende hooglichten:
 
 >[!BEGINSHADEBOX]
 
-De oplossing voor CVE-2025-47110 is ook beschikbaar als een geïsoleerde patch. Zie het [ artikel van de Kennisbank ](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/troubleshooting/known-issues-patches-attached/security-update-available-for-adobe-commerce-apsb25-50) voor details.
+De correcties voor CVE-2025-47110 en VULN-31547 zijn ook beschikbaar als een geïsoleerde patch. Zie het [ artikel van de Kennisbank ](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/troubleshooting/known-issues-patches-attached/security-update-available-for-adobe-commerce-apsb25-50) voor details.
 
 >[!ENDSHADEBOX]

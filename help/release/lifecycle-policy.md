@@ -2,10 +2,10 @@
 title: Levenscyclusbeleid voor software
 description: Leer meer over de belangrijkste datums voor het einde van de softwareondersteuning voor Adobe Commerce-releases.
 exl-id: 9ee4ecc8-d893-412a-a605-5a8606a1b9a9
-source-git-commit: 6ad4d8b3843c029d8f2d3919874d4614d9928f69
+source-git-commit: 5a45f2b0ad2485014abd3b807a5797f9fc82388b
 workflow-type: tm+mt
-source-wordcount: '597'
-ht-degree: 4%
+source-wordcount: '612'
+ht-degree: 3%
 
 ---
 
@@ -14,7 +14,7 @@ ht-degree: 4%
 
 Voor Adobe Commerce 2.4.4 en latere versies:
 
-- Om het levenscyclusbeleid van Adobe Commerce te stroomlijnen en de opdracht-kritieke behoeften van klanten te steunen, breidde Adobe het steunvenster tot drie jaar uit van de Algemene datum van de Beschikbaarheid (GA) voor Adobe Commerce 2.4.4 en later. Adobe biedt kwaliteitscorrecties voor 2.4.4 en latere releases voor een periode van drie jaar. De klanten kunnen tot kwaliteitsmoeilijke situaties toegang hebben door [ Steun van Adobe Commerce ](https://experienceleague.adobe.com/nl/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide) te contacteren of door zelf-dient [[!DNL Quality Patches Tool] ](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html?lang=nl-NL) als hun versie nog voor kwaliteitssteun verkiest. In de volgende tabel wordt het einde van de softwaresupportdatums voor de Adobe Commerce-releaselijnen beschreven.
+- Om het levenscyclusbeleid van Adobe Commerce te stroomlijnen en de opdracht-kritieke behoeften van klanten te steunen, breidde Adobe het steunvenster tot drie jaar uit van de Algemene datum van de Beschikbaarheid (GA) voor Adobe Commerce 2.4.4 en later. Adobe biedt kwaliteitscorrecties voor 2.4.4 en latere releases voor een periode van drie jaar. De klanten kunnen tot kwaliteitsmoeilijke situaties toegang hebben door [ Steun van Adobe Commerce ](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide) te contacteren of door zelf-dient [[!DNL Quality Patches Tool] ](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html) als hun versie nog voor kwaliteitssteun verkiest. In de volgende tabel wordt het einde van de softwaresupportdatums voor de Adobe Commerce-releaselijnen beschreven.
 
 - Adobe biedt beveiligingsoplossingen via een beveiligingspatchrelease voor de ondersteuningsperiode van drie jaar.
 
@@ -37,12 +37,12 @@ Adobe moedigt klanten aan om zo snel mogelijk een upgrade uit te voeren. Om echt
 ## Einde van softwareondersteuning
 
 | Geen | Algemene beschikbaarheid | Eind van regelmatige steun <sup> 1 </sup> | Einde van uitgebreide ondersteuning | Afhankelijke PHP-versie | Afhankelijke MariaDB-versie |
-|----------------------|----------------------|------------------------------------|-------------------------|-----------------------|------------------------------|
+|----------------------|----------------------|------------------------------------|-------------------------|-----------------------|---------------------------|
 | Adobe Commerce 2.4.8 | 8 april 2025 | 11 april 2028 | NVT | 8.3 en 8.4 | 11,4 |
-| Adobe Commerce 2.4.7 | 9 april 2024 | 9 april 2027 | NVT | 8.2 en 8.3 | 10,6 |
-| Adobe Commerce 2.4.6 | 14 maart 2023 | 11 augustus, 2026 <sup> 2 </sup> | NVT | 8.1 en 8.2 | 10,6 |
-| Adobe Commerce 2.4.5 | 9 augustus 2022 | 9 augustus 2025 | 11 augustus 2026 | 8,1 | 10.6 <sup> 3 </sup> |
-| Adobe Commerce 2.4.4 | 12 april 2022 | 12 april 2025 | 14 april 2026 | 8,1 | 10.6 <sup> 4 </sup> |
+| Adobe Commerce 2.4.7 | 9 april 2024 | 9 april 2027 | NVT | 8.2 en 8.3 | 10.11 <sup> 3 </sup> |
+| Adobe Commerce 2.4.6 | 14 maart 2023 | 11 augustus, 2026 <sup> 2 </sup> | NVT | 8.1 en 8.2 | 10.11 <sup> 4 </sup> |
+| Adobe Commerce 2.4.5 | 9 augustus 2022 | 9 augustus 2025 | 11 augustus 2026 | 8,1 | 10.6 <sup> 5 </sup> |
+| Adobe Commerce 2.4.4 | 12 april 2022 | 12 april 2025 | 14 april 2026 | 8,1 | 10.6 <sup> 6 </sup> |
 
 {style="table-layout:auto"}
 
@@ -50,8 +50,10 @@ Adobe moedigt klanten aan om zo snel mogelijk een upgrade uit te voeren. Om echt
 >
 >- <sup> 1 </sup> Eind van softwaresteun omvat zowel eind van kwaliteitsmoeilijke situaties als eind van veiligheidsmoeilijke situaties.
 >- <sup> 2 </sup> Bijgewerkt om zich op het eind van uitgebreide steun voor 2.4.5 te richten.
->- <sup> 3 </sup> Beginnend met 2.4.5-p11 veiligheidspatch.
->- <sup> 4 </sup> Beginnend met 2.4.4-p12 veiligheidspatch.
+>- <sup> 3 </sup> Beginnend met het 2.4.7-p6 veiligheidspatch.
+>- <sup> 4 </sup> Beginnend met 2.4.6-p11 veiligheidspatch.
+>- <sup> 5 </sup> Beginnend met 2.4.5-p11 veiligheidspatch.
+>- <sup> 6 </sup> Beginnend met 2.4.4-p12 veiligheidspatch.
 >- Zie [ Beleid van de Levenscyclus van de Software ](https://www.adobe.com/content/dam/cc/en/legal/terms/enterprise/pdfs/Adobe-Commerce-Software-Lifecycle-Policy.pdf).
 
 <table style="table-layout:auto">
