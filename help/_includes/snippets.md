@@ -31,7 +31,7 @@ ht-degree: 0%
 
 >[!NOTE]
 >
->Nadat u deze beveiligingspatch hebt geïnstalleerd, moeten Adobe Commerce B2B-handelaren ook een update uitvoeren naar de nieuwste compatibele B2B-beveiligingspatchrelease. Zie [ B2B versienota&#39;s ](https://experienceleague.adobe.com/en/docs/commerce-admin/b2b/release-notes).
+>Nadat u deze beveiligingspatch hebt geïnstalleerd, moeten Adobe Commerce B2B-handelaren ook een update uitvoeren naar de nieuwste compatibele B2B-beveiligingspatchrelease. Zie [ B2B versienota&#39;s ](https://experienceleague.adobe.com/nl/docs/commerce-admin/b2b/release-notes).
 
 ## Alleen Adobe Commerce {#ee-only}
 
