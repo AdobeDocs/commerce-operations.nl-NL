@@ -136,7 +136,7 @@ De ontbrekende indexering van vereiste kolommen in de tabel catalog_product_enti
 * __pagina van het Product geeft fout wegens url herschrijft__
 De productpagina wordt nu geladen wanneer de URL wordt herschreven
   _AC-2950 - [ GitHub kwestie ](https://github.com/magento/magento2/issues/35371) - [ GitHub codebijdrage ](<https://github.com/magento/magento2/pull/39670>)_
-* ] Bug van de Wolk __[toen het toevoegen van producten aan categorie__
+* &rbrack; Bug van de Wolk __&lbrack;toen het toevoegen van producten aan categorie__
 De paginering en het label voor het aantal records werken nu goed wanneer u producten aan een categorie toevoegt via het popup-raster. Eerder trad het laden van slechts één pagina met items die gelijk zijn aan het paginaformaat problemen op met het vervolgkeuzemenu voor het selecteren van items.
   _ACP2E-3526_
 * __indexer_update_all_views bouwfout met MAGE_INDEXER_THREADS_COUNT__
@@ -206,7 +206,7 @@ Deze taak zal slechts iets uitvoeren wanneer de slotleverancier wordt gevormd om
 * __[Uitgave ] Schoonmaakbeurt: gebruik geen waarde van de ongeldige terugkeer van methodevraag.__
 Deze PR doet kleine schoonmaakbeurten. Soms noemden we methoden die niets retourden (void) en gebruikten we die resultaatwaarde. Dat is echt niet nodig.
   _AC-13664 - [ GitHub kwestie ](https://github.com/magento/magento2/issues/39524) - [ GitHub codebijdrage ](<https://github.com/magento/magento2/pull/39516>)_
-* ] [ PHPDOC ] Correctie slechte phpdoc voor Magento\Framework\Message\ManagerInterface __Deze PR corrigeert de ongeldige phpdoc voor \Magento\Framework\Message\ManagerInterface en verwijdert alle dubbele phpdoc in \Magento\Framework\Message\Manager (gebruik inheritdoc syntaxis).__[
+* &rbrack; [ PHPDOC ] Correctie slechte phpdoc voor Magento\Framework\Message\ManagerInterface __Deze PR corrigeert de ongeldige phpdoc voor \Magento\Framework\Message\ManagerInterface en verwijdert alle dubbele phpdoc in \Magento\Framework\Message\Manager (gebruik inheritdoc syntaxis).__&lbrack;
   _AC-14312 - [ GitHub kwestie ](https://github.com/magento/magento2/issues/39593) - [ GitHub codebijdrage ](<https://github.com/magento/magento2/pull/39153>)_
 * __Verwijderd bèta minimum-stabiliteit van composer.json__
 Verwijderd bètaminimale stabiliteit uit composer.json
@@ -289,7 +289,7 @@ voor storefont
 
 ### Verpakken
 
-* ] Repareren magento/magento-coding-standard dependency+ page-builder ____[
+* &rbrack; Repareren magento/magento-coding-standard dependency+ page-builder ____&lbrack;
   _ACPLTSRV-6383_
 
 ### Betalingen

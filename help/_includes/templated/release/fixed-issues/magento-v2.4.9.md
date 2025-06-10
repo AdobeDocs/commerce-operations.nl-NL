@@ -169,7 +169,7 @@ Deze taak zal slechts iets uitvoeren wanneer de slotleverancier wordt gevormd om
 * __[Uitgave ] Schoonmaakbeurt: gebruik geen waarde van de ongeldige terugkeer van methodevraag.__
 Deze PR doet kleine schoonmaakbeurten. Soms noemden we methoden die niets retourden (void) en gebruikten we die resultaatwaarde. Dat is echt niet nodig.
   _AC-13664 - [ GitHub kwestie ](https://github.com/magento/magento2/issues/39524) - [ GitHub codebijdrage ](<https://github.com/magento/magento2/pull/39516>)_
-* ] [ PHPDOC ] Correctie slechte phpdoc voor Magento\Framework\Message\ManagerInterface __Deze PR corrigeert de ongeldige phpdoc voor \Magento\Framework\Message\ManagerInterface en verwijdert alle dubbele phpdoc in \Magento\Framework\Message\Manager (gebruik inheritdoc syntaxis).__[
+* &rbrack; [ PHPDOC ] Correctie slechte phpdoc voor Magento\Framework\Message\ManagerInterface __Deze PR corrigeert de ongeldige phpdoc voor \Magento\Framework\Message\ManagerInterface en verwijdert alle dubbele phpdoc in \Magento\Framework\Message\Manager (gebruik inheritdoc syntaxis).__&lbrack;
   _AC-14312 - [ GitHub kwestie ](https://github.com/magento/magento2/issues/39593) - [ GitHub codebijdrage ](<https://github.com/magento/magento2/pull/39153>)_
 * __Verwijderd bèta minimum-stabiliteit van composer.json__
 Verwijderd bètaminimale stabiliteit uit composer.json
