@@ -387,7 +387,7 @@ Adobe biedt een reeks services voor de levering, ontwikkeling, staging en produc
 
 De Adobe-beveiligingsstapel voor Managed Services bouwt beveiliging op elk niveau op met behulp van automatisering en consistentie om menselijke fouten te beperken. De ontwikkelings en verrichtingenteams erven automatisch veiligheidscontroles van verschillende niveaus van de stapel.
 
-Platformpartners, zoals Amazon Web Services en Microsoft Azure, zorgen voor maximale beveiligingsdekking bij het toepassen van platformaanpassingen, terwijl het Adobe Managed Services-team basisbeveiligingsservices biedt, zoals compatibiliteit, registratie, verificatie, scannen en controle, en serverbeveiliging en beveiligde toepassingsconfiguratie. Zie {de Veiligheid van 0} Adobe Commerce ](https://business.adobe.com/products/magento/secure-ecommerce.html) voor meer informatie.[
+Platformpartners, zoals Amazon Web Services en Microsoft Azure, zorgen voor maximale beveiligingsdekking bij het toepassen van platformaanpassingen, terwijl het Adobe Managed Services-team basisbeveiligingsservices biedt, zoals compatibiliteit, registratie, verificatie, scannen en controle, en serverbeveiliging en beveiligde toepassingsconfiguratie. Zie {de Veiligheid van 0} Adobe Commerce [&#128279;](https://business.adobe.com/products/magento/secure-ecommerce.html) voor meer informatie.
 
 In het volgende diagram wordt de Adobe Managed Services-beveiligingstechnologiestapel weergegeven:
 
