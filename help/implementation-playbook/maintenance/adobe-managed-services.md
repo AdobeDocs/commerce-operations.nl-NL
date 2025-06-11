@@ -3,9 +3,9 @@ title: Adobe Managed Services
 description: Leer hoe Adobe Managed Services kan helpen bij het ondersteunen en onderhouden van uw Adobe Commerce-implementatie.
 exl-id: b600b0e3-c6fd-4b86-ad2a-a445e599f1bd
 feature: Services
-source-git-commit: c93dd37d6e196a09c9e7f4b376e421ca5886c7e0
+source-git-commit: e5a50707463bb7b36b4285889b10353faf9ba09f
 workflow-type: tm+mt
-source-wordcount: '1181'
+source-wordcount: '1168'
 ht-degree: 0%
 
 ---
@@ -53,8 +53,6 @@ Bekijk de volgende tabel voor een meer gedetailleerde vergelijking van de belang
 | GoLive Process-coördinatie | | | |
 | Specifiek escalatiebeheer | | | |
 | Toezicht op de toepassing en bijstand | | | |
-
-Laat me weten of u dit naar Excel of een ander formaat zou willen worden uitgevoerd.
 
 ## Taken en verantwoordelijkheden
 
@@ -389,7 +387,7 @@ Adobe biedt een reeks services voor de levering, ontwikkeling, staging en produc
 
 De Adobe-beveiligingsstapel voor Managed Services bouwt beveiliging op elk niveau op met behulp van automatisering en consistentie om menselijke fouten te beperken. De ontwikkelings en verrichtingenteams erven automatisch veiligheidscontroles van verschillende niveaus van de stapel.
 
-Platformpartners, zoals Amazon Web Services en Microsoft Azure, zorgen voor maximale beveiligingsdekking bij het toepassen van platformaanpassingen, terwijl het Adobe Managed Services-team basisbeveiligingsservices biedt, zoals compatibiliteit, registratie, verificatie, scannen en controle, en serverbeveiliging en beveiligde toepassingsconfiguratie. Zie {de Veiligheid van 0} Adobe Commerce [&#128279;](https://business.adobe.com/products/magento/secure-ecommerce.html) voor meer informatie.
+Platformpartners, zoals Amazon Web Services en Microsoft Azure, zorgen voor maximale beveiligingsdekking bij het toepassen van platformaanpassingen, terwijl het Adobe Managed Services-team basisbeveiligingsservices biedt, zoals compatibiliteit, registratie, verificatie, scannen en controle, en serverbeveiliging en beveiligde toepassingsconfiguratie. Zie {de Veiligheid van 0} Adobe Commerce ](https://business.adobe.com/products/magento/secure-ecommerce.html) voor meer informatie.[
 
 In het volgende diagram wordt de Adobe Managed Services-beveiligingstechnologiestapel weergegeven:
 
