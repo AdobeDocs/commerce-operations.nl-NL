@@ -1,10 +1,10 @@
 ---
 title: 'MDVA-37748: De vraag van GraphQL keert producten terug die niet aan gedeelde catalogus worden toegewezen'
-description: De patch MDVA-37748 verhelpt het probleem waarbij een GraphQL-query producten retourneert die niet zijn toegewezen aan een gedeelde catalogus. Deze patch is beschikbaar wanneer [Quality Patches Tool (QPT)] (https://experienceleague.adobe.com/nl/docs/commerce-knowledge-base/kb/announcements/commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches) 1.1.5 is geïnstalleerd. De patch-id is MDVA-37748. Het probleem wordt volgens de planning opgelost in Adobe Commerce 2.4.4.
+description: De patch MDVA-37748 verhelpt het probleem waarbij een GraphQL-query producten retourneert die niet zijn toegewezen aan een gedeelde catalogus. Deze patch is beschikbaar wanneer [Quality Patches Tool (QPT)] (https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches) 1.1.5 is geïnstalleerd. De patch-id is MDVA-37748. Het probleem wordt volgens de planning opgelost in Adobe Commerce 2.4.4.
 feature: B2B, GraphQL, Catalog Management, Categories, Products
 role: Admin
 exl-id: 8aa00953-dbf0-4533-9b53-b809bf59ec20
-source-git-commit: 81c78439f7c243437b7b76dc80560c847af95ace
+source-git-commit: 011a6f46f76029eaf67f172b576e58dac9710a3d
 workflow-type: tm+mt
 source-wordcount: '494'
 ht-degree: 0%
@@ -13,7 +13,7 @@ ht-degree: 0%
 
 # MDVA-37748: De vraag van GraphQL keert producten terug die niet aan gedeelde catalogus worden toegewezen
 
-De patch MDVA-37748 verhelpt het probleem waarbij een GraphQL-query producten retourneert die niet zijn toegewezen aan een gedeelde catalogus. Dit flard is beschikbaar wanneer het [ Hulpmiddel van de Patches van de Kwaliteit (QPT) ](https://experienceleague.adobe.com/nl/docs/commerce-knowledge-base/kb/announcements/commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches) 1.1.5 geïnstalleerd is. De patch-id is MDVA-37748. Het probleem wordt volgens de planning opgelost in Adobe Commerce 2.4.4.
+De patch MDVA-37748 verhelpt het probleem waarbij een GraphQL-query producten retourneert die niet zijn toegewezen aan een gedeelde catalogus. Dit flard is beschikbaar wanneer het [ Hulpmiddel van de Patches van de Kwaliteit (QPT) ](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches) 1.1.5 geïnstalleerd is. De patch-id is MDVA-37748. Het probleem wordt volgens de planning opgelost in Adobe Commerce 2.4.4.
 
 ## Betrokken producten en versies
 
@@ -27,7 +27,7 @@ Adobe Commerce (alle implementatiemethoden) 2.4.2 - 2.4.2-p2
 
 >[!NOTE]
 >
->De patch kan van toepassing worden op andere versies met nieuwe versies van het Hulpprogramma voor kwaliteitspatches. Om te controleren of de patch compatibel is met uw Adobe Commerce-versie, werkt u het `magento/quality-patches` -pakket bij naar de meest recente versie en controleert u de compatibiliteit op de [[!DNL Quality Patches Tool] : zoek naar patches op de pagina ](https://experienceleague.adobe.com/nl/docs/commerce-knowledge-base/kb/announcements/commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches) . Gebruik de patch-id als een zoekwoord om de patch te zoeken.
+>De patch kan van toepassing worden op andere versies met nieuwe versies van het Hulpprogramma voor kwaliteitspatches. Om te controleren of de patch compatibel is met uw Adobe Commerce-versie, werkt u het `magento/quality-patches` -pakket bij naar de meest recente versie en controleert u de compatibiliteit op de [[!DNL Quality Patches Tool] : zoek naar patches op de pagina ](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches) . Gebruik de patch-id als een zoekwoord om de patch te zoeken.
 
 ## Probleem
 
@@ -52,14 +52,14 @@ B2B-modules worden geïnstalleerd.
 
    <pre>
     <code class="language-graphql">
-    mutation &lbrace;
+    mutation {
       generateCustomerToken(
         email: "company.admin@exapmle.test"
         password: "password"
-      ) &lbrace;
+      ) {
         token
-      &rbrace;
-    &rbrace;
+      }
+    }
     </code>
     </pre>
 
@@ -67,29 +67,29 @@ B2B-modules worden geïnstalleerd.
 
    <pre>
     <code class="language-graphql">
-    &lbrace;
+    {
       products(
           filter: {},
           pageSize: 100,
           currentPage: 1
           sort: {}
-        ) &lbrace;
+        ) {
           total_count
-          page_info &lbrace;
+          page_info {
             page_size
             current_page
-          &rbrace;
-          aggregations &lbrace;
+          }
+          aggregations {
             attribute_code
             count
             label
-            options &lbrace;
+            options {
               label
               value
               count
-            &rbrace;
-          &rbrace;
-          items &lbrace;
+            }
+          }
+          items {
             name
             sku
             created_at
@@ -99,107 +99,107 @@ B2B-modules worden geïnstalleerd.
             short_description {html}
             url_key
             url_path
-            price_tiers&lbrace;
-              final_price&lbrace;
+            price_tiers{
+              final_price{
                   value
                   currency
-                &rbrace;
-              discount&lbrace;
+                }
+              discount{
                   amount_off
                   percent_off
-                &rbrace;
+                }
               quantity
-            &rbrace;
-            price_range &lbrace;
-             maximum_price &lbrace;
-              regular_price &lbrace;
+            }
+            price_range {
+             maximum_price {
+              regular_price {
                 value
-              &rbrace;
-              final_price &lbrace;
+              }
+              final_price {
                 value
-              &rbrace;
-            &rbrace;
-            minimum_price &lbrace;
-              regular_price &lbrace;
+              }
+            }
+            minimum_price {
+              regular_price {
                 value
-              &rbrace;
-              final_price &lbrace;
+              }
+              final_price {
                value
-              &rbrace;
-            &rbrace;
-          &rbrace;
-          image &lbrace;
+              }
+            }
+          }
+          image {
            url
-          &rbrace;
-          thumbnail &lbrace;
+          }
+          thumbnail {
            url
-          &rbrace;
-          small_image &lbrace;
+          }
+          small_image {
            url
-          &rbrace;
-          media_gallery &lbrace;
+          }
+          media_gallery {
            url
-          &rbrace;
-          ... on ConfigurableProduct &lbrace;
-            configurable_options &lbrace;
+          }
+          ... on ConfigurableProduct {
+            configurable_options {
              id
 
              label
              position
              use_default
              attribute_code
-             values &lbrace;
+             values {
                value_index
                label
-               swatch_data &lbrace;
+               swatch_data {
                  value
-               &rbrace;
-            &rbrace;
+               }
+            }
             product_id
-          &rbrace;
-          variants &lbrace;
-            product &lbrace;
+          }
+          variants {
+            product {
               id
               name
               sku
-              &#x200B;#margin
-              &#x200B;#margin_percentage
-              image &lbrace;
+              #margin
+              #margin_percentage
+              image {
                 url
-              &rbrace;
-              small_image &lbrace;
+              }
+              small_image {
                 url
-              &rbrace;
-              thumbnail &lbrace;
+              }
+              thumbnail {
                 url
-              &rbrace;
-              media_gallery&lbrace;
+              }
+              media_gallery{
                 url
-              &rbrace;
+              }
               attribute_set_id
-              ... on PhysicalProductInterface &lbrace;
+              ... on PhysicalProductInterface {
                 weight
-              &rbrace;
-              price_range &lbrace;
-                minimum_price &lbrace;
-                  regular_price &lbrace;
+              }
+              price_range {
+                minimum_price {
+                  regular_price {
                     value
                     currency
-                  &rbrace;
-                &rbrace;
-              &rbrace;
-            &rbrace;
-            attributes &lbrace;
+                  }
+                }
+              }
+            }
+            attributes {
               label
               code
               value_index
-            &rbrace;
-          &rbrace;
-        &rbrace;
-      &rbrace;
+            }
+          }
+        }
+      }
 
-    &rbrace;
-&rbrace;
+    }
+}
 </code>
 </pre>
 
@@ -213,106 +213,106 @@ Alleen &quot;Product 2&quot; wordt geretourneerd, maar `total_count` geeft er tw
 
 <pre>
 <code class="language-graphql">
-&lbrace;
-  "data": &lbrace;
-    "products": &lbrace;
+{
+  "data": {
+    "products": {
       "total_count": 2,
-      "page_info": &lbrace;
+      "page_info": {
         "page_size": 100,
         "current_page": 1
-      &rbrace;,
-      "aggregations": &lbrack;
-        &lbrace;
+      },
+      "aggregations": [
+        {
           "attribute_code": "price",
           "count": 2,
           "label": "Price",
-          "options": &lbrack;
-            &lbrace;
+          "options": [
+            {
               "label": "0-100",
               "value": "0_100",
               "count": 1
-            &rbrace;,
-            &lbrace;
+            },
+            {
               "label": "100-200",
               "value": "100_200",
               "count": 1
-            &rbrace;
-          &rbrack;
-        &rbrace;,
-        &lbrace;
+            }
+          ]
+        },
+        {
           "attribute_code": "category_id",
           "count": 1,
           "label": "Category",
-          "options": &lbrack;
-            &lbrace;
+          "options": [
+            {
               "label": "Cat 1",
               "value": "3",
               "count": 2
-            &rbrace;
-          &rbrack;
-        &rbrace;
-      &rbrack;,
-      "items": &lbrack;
-        &lbrace;
+            }
+          ]
+        }
+      ],
+      "items": [
+        {
           "name": "Product 2",
           "sku": "Product 2",
           "created_at": "2021-05-12 10:51:44",
           "updated_at": "2021-05-12 11:03:24",
           "stock_status": "IN_STOCK",
-          "description": &lbrace;
+          "description": {
             "html": ""
-          &rbrace;,
-          "short_description": &lbrace;
+          },
+          "short_description": {
             "html": ""
-          &rbrace;,
+          },
           "url_key": "product-2",
           "url_path": null,
-          "price_tiers": &lbrack;
-            &lbrace;
-              "final_price": &lbrace;
+          "price_tiers": [
+            {
+              "final_price": {
                 "value": 90,
                 "currency": "USD"
-              &rbrace;,
-              "discount": &lbrace;
+              },
+              "discount": {
                 "amount_off": 10,
                 "percent_off": 10
-              &rbrace;,
+              },
               "quantity": 1
-            &rbrace;
-          &rbrack;,
-          "price_range": &lbrace;
-            "maximum_price": &lbrace;
-              "regular_price": &lbrace;
+            }
+          ],
+          "price_range": {
+            "maximum_price": {
+              "regular_price": {
                 "value": 100
-              &rbrace;,
-              "final_price": &lbrace;
+              },
+              "final_price": {
                 "value": 90
-              &rbrace;
-            &rbrace;,
-            "minimum_price": &lbrace;
-              "regular_price": &lbrace;
+              }
+            },
+            "minimum_price": {
+              "regular_price": {
                 "value": 100
-              &rbrace;,
-              "final_price": &lbrace;
+              },
+              "final_price": {
                 "value": 90
-              &rbrace;
-            &rbrace;
-          &rbrace;,
-          "image": &lbrace;
+              }
+            }
+          },
+          "image": {
             "url": "../pub/static/version1620816308/frontend/Magento/luma/en_US/Magento_Catalog/images/product/placeholder/image.jpg"
-          &rbrace;,
-          "thumbnail": &lbrace;
+          },
+          "thumbnail": {
             "url": "../pub/static/version1620816308/frontend/Magento/luma/en_US/Magento_Catalog/images/product/placeholder/thumbnail.jpg"
-          &rbrace;,
-          "small_image": &lbrace;
+          },
+          "small_image": {
             "url": "../pub/static/version1620816308/frontend/Magento/luma/en_US/Magento_Catalog/images/product/placeholder/small_image.jpg"
-          &rbrace;,
+          },
           "media_gallery": []
-        &rbrace;
-      &rbrack;
-    &rbrace;
-  &rbrace;
-&rbrace;
+        }
+      ]
+    }
+  }
+}
 </code>
 </pre>
 
@@ -320,14 +320,14 @@ Alleen &quot;Product 2&quot; wordt geretourneerd, maar `total_count` geeft er tw
 
 Om individuele flarden toe te passen, gebruik de volgende verbindingen afhankelijk van uw plaatsingsmethode:
 
-* Adobe Commerce of Magento Open Source op locatie: [[!DNL Quality Patches Tool]  > Gebruik ](/help/tools/quality-patches-tool/usage.md) in de handleiding [!DNL Quality Patches Tool] .
-* Adobe Commerce op wolkeninfrastructuur: [ Verbeteringen en Patches > Pas Patches ](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html?lang=nl-NL) in Commerce op de gids van de Infrastructuur van de Wolk toe.
+* Op locatie Adobe Commerce of Magento Open Source: [[!DNL Quality Patches Tool] > Gebruik ](/help/tools/quality-patches-tool/usage.md) in de handleiding [!DNL Quality Patches Tool] .
+* Adobe Commerce op wolkeninfrastructuur: [ Verbeteringen en Patches > Pas Patches ](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html) in Commerce op de gids van de Infrastructuur van de Wolk toe.
 
 ## Gerelateerde lezing
 
 Raadpleeg voor meer informatie over het gereedschap Kwaliteitspatches:
 
-* [ vrijgegeven het Hulpmiddel van de Patches van de Kwaliteit: een nieuw hulpmiddel om kwaliteitspatches ](https://experienceleague.adobe.com/nl/docs/commerce-knowledge-base/kb/announcements/commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches) in de steunkennisbasis zelf-te dienen.
+* [ vrijgegeven het Hulpmiddel van de Patches van de Kwaliteit: een nieuw hulpmiddel om kwaliteitspatches ](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches) in de steunkennisbasis zelf-te dienen.
 * [ Controle als het flard voor uw kwestie van Adobe Commerce beschikbaar is gebruikend het Hulpmiddel van de Patches van de Kwaliteit ](/help/tools/quality-patches-tool/patches-available-in-qpt/check-patch-for-magento-issue-with-magento-quality-patches.md) in de [!DNL Quality Patches Tool] gids.
 
-Voor info over andere flarden beschikbaar in QPT, verwijs naar de [ flarden beschikbaar in QPT ](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html?lang=nl-NL) sectie.
+Voor info over andere flarden beschikbaar in QPT, verwijs naar de [ flarden beschikbaar in QPT ](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html) sectie.
