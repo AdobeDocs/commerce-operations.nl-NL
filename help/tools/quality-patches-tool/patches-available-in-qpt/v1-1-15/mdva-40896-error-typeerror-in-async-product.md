@@ -1,6 +1,6 @@
 ---
 title: 'MDVA-40896: Fout: TypeError: Argument 3" fout in async product'
-description: 'De patch MDVA-40896 verhelpt het probleem waarbij Error: TypeError: Argument 3 passed to Magento\Framework\Webapi\ServiceInputProcessor::process() must be of the type array, string given` error is displayed in async product bulk API. Deze patch is beschikbaar wanneer [Quality Patches Tool (QPT)] (https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches) 1.1.15 is geïnstalleerd. De patch-id is MDVA-40896. De kwestie is opgelost in Adobe Commerce 2.4.4.'
+description: 'De patch MDVA-40896 verhelpt het probleem waarbij Error: TypeError: Argument 3 passed to MagentoFrameworkWebapiServiceInputProcessor::process() must be of the type array, string given&grave; error is displayed in async product bulk API. Deze patch is beschikbaar wanneer [Quality Patches Tool (QPT)] (https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches) 1.1.15 is geïnstalleerd. De patch-id is MDVA-40896. De kwestie is opgelost in Adobe Commerce 2.4.4.'
 feature: Products
 role: Admin
 exl-id: 24eedd8d-4ae1-4ebc-a3e4-993f0c361a67

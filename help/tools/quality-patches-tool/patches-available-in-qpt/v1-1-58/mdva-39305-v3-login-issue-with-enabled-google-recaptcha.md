@@ -44,7 +44,7 @@ Dit flard werd toegevoegd in het [ Hulpmiddel van de Patches van de Kwaliteit (Q
 
 <u> Stappen om </u> te reproduceren:
 
-1. Ga naar **[!UICONTROL Store]** > **[!UICONTROL Configuration]** > **[!UICONTROL Security]** > **[!DNL Google reCAPTCHA Storefront]** en schakel *** [!DNL Google reCAPTCHA] *** in.
+1. Ga naar **[!UICONTROL Store]** > **[!UICONTROL Configuration]** > **[!UICONTROL Security]** > **[!DNL Google reCAPTCHA Storefront]** en schakel *** [!DNL Google reCAPTCHA] &#x200B;*** in.
 1. Ga naar de voorkant.
 1. Open **[!UICONTROL Developer Tool Console]** in de browser.
 

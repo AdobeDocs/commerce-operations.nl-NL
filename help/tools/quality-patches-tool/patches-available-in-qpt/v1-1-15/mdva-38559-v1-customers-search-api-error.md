@@ -1,6 +1,6 @@
 ---
 title: 'MDVA-38559: /V1/customer/search API retourneert een fout'
-description: De patch MDVA-38559 verhelpt het probleem waarbij de API `/V1/customer/search` een fout retourneert voor klanten met meer dan één abonnement. Deze patch is beschikbaar wanneer [Quality Patches Tool (QPT)] (https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches) 1.1.15 is geïnstalleerd. De patch-id is MDVA-38559. De kwestie is opgelost in Adobe Commerce 2.4.3.
+description: De patch MDVA-38559 verhelpt het probleem waarbij de API &grave;/V1/customer/search&grave; een fout retourneert voor klanten met meer dan één abonnement. Deze patch is beschikbaar wanneer [Quality Patches Tool (QPT)] (https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches) 1.1.15 is geïnstalleerd. De patch-id is MDVA-38559. De kwestie is opgelost in Adobe Commerce 2.4.3.
 feature: REST, Search
 role: Admin
 exl-id: 6bcb65d0-1389-4090-b53c-8048bf64d8fb
