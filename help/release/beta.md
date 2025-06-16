@@ -2,9 +2,9 @@
 title: Beta-releases
 description: Leer meer over de bètareleases van Adobe Commerce en hoe u hieraan kunt deelnemen.
 exl-id: 662cb061-995f-4e09-a2ef-9e607cc0000b
-source-git-commit: ea4f340540e57b282657a44502d80f1d5c409c6a
+source-git-commit: 1c0dd720df944a5784c850a3f4ea63b8984069f1
 workflow-type: tm+mt
-source-wordcount: '930'
+source-wordcount: '963'
 ht-degree: 0%
 
 ---
@@ -40,7 +40,7 @@ Met Adobe Commerce Optimizer kunt u:
 - Creeer gepersonaliseerde onderzoek en aanbevelingen gebruikend AI en ML.
 - De essentiële beschikbaarheid van productgegevens weergeven, waaronder synchronisatiestatus en storefront-gebeurtenisgegevens voor nauwkeurige implementatie en probleemoplossing.
 
-[ leer meer ](https://experienceleague.adobe.com/docs/commerce/optimizer/overview.html?lang=nl-NL) over Adobe Commerce Optimizer. Als u in het leren van meer over het [!DNL Adobe Commerce Optimizer] vroege toegangsprogramma geinteresseerd bent, voltooi de [ vroege het verzoekvorm van de Toegang ](https://forms.office.com/Pages/ResponsePage.aspx?id=Wht7-jR7h0OUrtLBeN7O4WOxhjY2doZPikS2hIbfmL5UMlhTMTYzVDhPQVFNTUFYUjJHNlRKTE5TWS4u).
+[ leer meer ](https://experienceleague.adobe.com/docs/commerce/optimizer/overview.html) over Adobe Commerce Optimizer. Als u in het leren van meer over het [!DNL Adobe Commerce Optimizer] vroege toegangsprogramma geinteresseerd bent, voltooi de [ vroege het verzoekvorm van de Toegang ](https://forms.office.com/Pages/ResponsePage.aspx?id=Wht7-jR7h0OUrtLBeN7O4WOxhjY2doZPikS2hIbfmL5UMlhTMTYzVDhPQVFNTUFYUjJHNlRKTE5TWS4u).
 
 ### Verbeterde zoekmogelijkheden voor Live zoeken (Public Beta)
 
@@ -66,7 +66,7 @@ Deze bèta steunt drie nieuwe mogelijkheden in [`productSearch` vraag ](https://
 
 Deze nieuwe voorwaarden verbeteren het het filtreren van de onderzoeksvraag mechanisme om onderzoeksresultaten te raffineren. Deze nieuwe voorwaarden hebben geen invloed op de hoofdzoekquery. Om aan bèta deel te nemen, verzend een e-mailverzoek naar [ handel-opslag-diensten ](mailto:commerce-storefront-services@adobe.com).
 
-Om Live Onderzoek bèta te installeren, zie de [ Levende gids van het Onderzoek ](https://experienceleague.adobe.com/nl/docs/commerce/live-search/install#install-the-live-search-beta).
+Om Live Onderzoek bèta te installeren, zie de [ Levende gids van het Onderzoek ](https://experienceleague.adobe.com/en/docs/commerce/live-search/install#install-the-live-search-beta).
 
 ### IBM Sterling Order Management System Integration (Private Beta)
 
@@ -79,38 +79,43 @@ Met deze integratieversneller voor IBM Sterling Order Management kunnen Adobe Co
 
 Om aan deze bèta deel te nemen, verzend een e-mailverzoek naar [ sbieber@adobe.com ](mailto:sbieber@adobe.com).
 
-### Adobe Commerce Foundation (Public Beta)
+### Adobe Commerce Foundation (Public Alpha/Beta)
 
-Elke bètaversie van Adobe Commerce Foundation bevat alle wijzigingen die tegen de geplande releasedatum aan de Adobe Commerce-kerncode zijn geleverd, inclusief maar niet beperkt tot de volgende functionele gebieden:
+Elke Adobe Commerce Foundation alfa- en bètaversie bevat alle wijzigingen die tegen de geplande releasedatum aan de Adobe Commerce core-code worden geleverd, inclusief maar niet beperkt tot de volgende functionele gebieden:
 
 - Laatste beveiligingsoplossingen
 - Prestatieverbeteringen
 - GraphQL-verbeteringen
 - Oplossingen voor algemene problemen met kwaliteit
 - Communautaire bijdragen
-- Veranderingen die worden vereist om verenigbaarheid met [ de diensten van Adobe Commerce ](https://experienceleague.adobe.com/docs/commerce/user-guides/home.html?lang=nl-NL) te steunen
+- Veranderingen die worden vereist om verenigbaarheid met [ de diensten van Adobe Commerce ](https://experienceleague.adobe.com/en/docs/commerce/user-guides/home) te steunen
 
 #### Naamgevingsconventie en -schema
 
-Adobe geeft gewoonlijk twee keer per jaar bètapatches uit.
+Adobe geeft doorgaans meerdere keren per jaar alfa- en bètapatches uit.
+
+Alpha-releasepakketten hebben het achtervoegsel `-alphaX` . Voor de alfareleasepakketten van Adobe Commerce 2.4.7 wordt bijvoorbeeld de volgende naamgevingsconventie gebruikt:
+
+- `2.4.7-alpha1`
+- `2.4.7-alpha2`
 
 Beta-releasepakketten hebben het achtervoegsel `-betaX` . Voor de release van Adobe Commerce 2.4.7 beta wordt bijvoorbeeld de volgende naamgevingsconventie gebruikt:
 
 - `2.4.7-beta1`
 - `2.4.7-beta2`
 
-Zie het [ versieschema ](schedule.md) voor de lijst van aanstaande openbare bètaversiedata.
+Zie het [ versieschema ](schedule.md) voor de lijst van aanstaande openbare alpha en bètaversiedata.
 
-#### Toegang tot Beta-release
+#### Geen toegang
 
-Adobe Commerce beta-releases worden op dezelfde manier gedistribueerd als elke andere Adobe Commerce patch-release: als Composer-metapakketten op `https://repo.magento.com` . De broncode is beschikbaar op [ GitHub ](https://github.com/magento/magento2).
+Adobe Commerce alfa- en bètareleases worden op dezelfde manier gedistribueerd als elke andere Adobe Commerce-patchrelease: als Composer-metapakketten op `https://repo.magento.com` . De broncode is beschikbaar op [ GitHub ](https://github.com/magento/magento2).
 
 Zie [ Snel begin van de Installatie Composer ](../installation/composer.md) voor meer details.
 
 #### Melding van problemen
 
-Adobe biedt de standaard Adobe Support Service voor bètareleases niet.
+Adobe biedt de standaard Adobe Support Service niet voor alfa- en bètareleases.
 
-Om terugkoppelen met betrekking tot bètaversies voor te leggen, volg onze [ regelmatige kwestie rapporterend stroom ](https://developer.adobe.com/commerce/contributor/guides/code-contributions/) op [ GitHub ](https://github.com/magento/magento2).
+Om terugkoppelen met betrekking tot alpha- en bètaversies voor te leggen, volg de [ regelmatige kwestie die stroom ](https://developer.adobe.com/commerce/contributor/guides/code-contributions/) op [ GitHub ](https://github.com/magento/magento2) meldt.
 
-Onze interne teams zullen alle kritieke kwesties controleren die tegen de recentste bètaversie worden gemeld en hen voorrang geven om vóór de GA-releasedatum te worden opgelost.
+Adobe houdt toezicht op alle kritieke problemen die zijn gemeld in vergelijking met de nieuwste alfa- of bètaversie en geeft prioriteit aan deze problemen om te worden opgelost vóór de GA-releasedatum.
