@@ -1,6 +1,6 @@
 ---
 title: 'MDVA-42520: tweemaal toegepast belastingtarief bij gebruik van "Enable Cross Border Trade"'
-description: De MDVA-42520-patch voorziet in de mogelijkheid dat het belastingtarief tweemaal wordt toegepast wanneer het **Grensoverschrijdende handel inschakelen* wordt gebruikt. Deze patch is beschikbaar wanneer [Quality Patches Tool (QPT)] (https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches) 1.1.11 is geïnstalleerd. De patch-id is MDVA-42520. Het probleem wordt volgens de planning opgelost in Adobe Commerce 2.4.5.
+description: De MDVA-42520-patch voorziet in de mogelijkheid dat het belastingtarief tweemaal wordt toegepast wanneer het **Grensoverschrijdende handel inschakelen* wordt gebruikt. Deze patch is beschikbaar wanneer [Quality Patches Tool (QPT)] (https://experienceleague.adobe.com/nl/docs/commerce-operations/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches) 1.1.11 is geïnstalleerd. De patch-id is MDVA-42520. Het probleem wordt volgens de planning opgelost in Adobe Commerce 2.4.5.
 feature: Catalog Management, Orders, Taxes
 role: Admin
 exl-id: 34c101fd-3a47-4877-8a41-ccaeaa010969
@@ -14,7 +14,7 @@ ht-degree: 0%
 
 # MDVA-42520: tweemaal toegepast belastingtarief bij gebruik van &quot;Enable Cross Border Trade&quot;
 
-Het flard MDVA-42520 bevestigt de kwestie waar het belastingtarief tweemaal wordt toegepast wanneer **grensoverschrijdende handel** toelaat wordt gebruikt. Dit flard is beschikbaar wanneer het [ Hulpmiddel van de Patches van de Kwaliteit (QPT) ](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches) 1.1.11 geïnstalleerd is. De patch-id is MDVA-42520. Het probleem wordt volgens de planning opgelost in Adobe Commerce 2.4.5.
+Het flard MDVA-42520 bevestigt de kwestie waar het belastingtarief tweemaal wordt toegepast wanneer **grensoverschrijdende handel** toelaat wordt gebruikt. Dit flard is beschikbaar wanneer het [ Hulpmiddel van de Patches van de Kwaliteit (QPT) ](https://experienceleague.adobe.com/nl/docs/commerce-operations/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches) 1.1.11 geïnstalleerd is. De patch-id is MDVA-42520. Het probleem wordt volgens de planning opgelost in Adobe Commerce 2.4.5.
 
 ## Betrokken producten en versies
 
@@ -28,7 +28,7 @@ Het flard MDVA-42520 bevestigt de kwestie waar het belastingtarief tweemaal word
 
 >[!NOTE]
 >
->De patch kan van toepassing worden op andere versies met nieuwe versies van het Hulpprogramma voor kwaliteitspatches. Om te controleren of de patch compatibel is met uw Adobe Commerce-versie, werkt u het `magento/quality-patches` -pakket bij naar de meest recente versie en controleert u de compatibiliteit op de [[!DNL Quality Patches Tool] : zoek naar patches op de pagina ](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches) . Gebruik de patch-id als een zoekwoord om de patch te zoeken.
+>De patch kan van toepassing worden op andere versies met nieuwe versies van het Hulpprogramma voor kwaliteitspatches. Om te controleren of de patch compatibel is met uw Adobe Commerce-versie, werkt u het `magento/quality-patches` -pakket bij naar de meest recente versie en controleert u de compatibiliteit op de [[!DNL Quality Patches Tool] : zoek naar patches op de pagina ](https://experienceleague.adobe.com/nl/docs/commerce-operations/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches) . Gebruik de patch-id als een zoekwoord om de patch te zoeken.
 
 ## Probleem
 
@@ -63,13 +63,13 @@ Subtotaal prijsopgave (inclusief btw) en Eindtotaal prijsopgave (inclusief btw) 
 Om individuele flarden toe te passen, gebruik de volgende verbindingen afhankelijk van uw plaatsingsmethode:
 
 * Op locatie Adobe Commerce of Magento Open Source: [[!DNL Quality Patches Tool] > Gebruik ](/help/tools/quality-patches-tool/usage.md) in de handleiding [!DNL Quality Patches Tool] .
-* Adobe Commerce op wolkeninfrastructuur: [ Verbeteringen en Patches > Pas Patches ](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html) in Commerce op de gids van de Infrastructuur van de Wolk toe.
+* Adobe Commerce op wolkeninfrastructuur: [ Verbeteringen en Patches > Pas Patches ](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html?lang=nl-NL) in Commerce op de gids van de Infrastructuur van de Wolk toe.
 
 ## Gerelateerde lezing
 
 Raadpleeg voor meer informatie over het gereedschap Kwaliteitspatches:
 
-* [ vrijgegeven het Hulpmiddel van de Patches van de Kwaliteit: een nieuw hulpmiddel om kwaliteitspatches ](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches) in de steunkennisbasis zelf-te dienen.
+* [ vrijgegeven het Hulpmiddel van de Patches van de Kwaliteit: een nieuw hulpmiddel om kwaliteitspatches ](https://experienceleague.adobe.com/nl/docs/commerce-operations/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches) in de steunkennisbasis zelf-te dienen.
 * [ Controle als het flard voor uw kwestie van Adobe Commerce beschikbaar is gebruikend het Hulpmiddel van de Patches van de Kwaliteit ](/help/tools/quality-patches-tool/patches-available-in-qpt/check-patch-for-magento-issue-with-magento-quality-patches.md) in de [!DNL Quality Patches Tool] gids.
 
-Voor informatie over andere flarden beschikbaar in QPT, verwijs naar [[!DNL Quality Patches Tool]: Onderzoek naar flarden ](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html) in de [!DNL Quality Patches Tool] gids.
+Voor informatie over andere flarden beschikbaar in QPT, verwijs naar [[!DNL Quality Patches Tool]: Onderzoek naar flarden ](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html?lang=nl-NL) in de [!DNL Quality Patches Tool] gids.
