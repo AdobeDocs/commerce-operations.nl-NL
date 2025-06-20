@@ -1,10 +1,11 @@
 ---
 title: 'ACSD-61103: Aantal mislukte pogingen wordt niet opnieuw ingesteld op nul nadat de klant zich heeft aangemeld via de API'
-description: Pas ACSD-61103 flard toe om de kwestie van Adobe Commerce te bevestigen waar de mislukkingstelling in de lijst &grave; customer_entity &grave; niet aan nul wordt teruggesteld nadat een klant met succes door API eindpunten het programma opent.
+description: Pas ACSD-61103 flard toe om de kwestie van Adobe Commerce te bevestigen waar de mislukkingstelling in de lijst ` customer_entity ` niet aan nul wordt teruggesteld nadat een klant met succes door API eindpunten het programma opent.
 feature: GraphQL, REST, Customers
 role: Admin, Developer
 exl-id: 9f5aac1f-c8a3-4255-8ebc-2268283b3384
-source-git-commit: acb5ff9656d7391de1e9b936909ce5a8a73d5d67
+type: Troubleshooting
+source-git-commit: 7fdb02a6d89d50ea593c5fd99d78101f89198424
 workflow-type: tm+mt
 source-wordcount: '379'
 ht-degree: 0%
@@ -27,7 +28,7 @@ De ACSD-61103-patch lost het probleem op waarbij het aantal fouten in de `custom
 
 >[!NOTE]
 >
->De patch kan van toepassing worden op andere versies met nieuwe [!DNL Quality Patches Tool] versies. Om te controleren of de patch compatibel is met uw Adobe Commerce-versie, werkt u het `magento/quality-patches` -pakket bij naar de meest recente versie en controleert u de compatibiliteit op de [[!DNL Quality Patches Tool] : zoek naar patches op de pagina ](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html?lang=nl-NL) . Gebruik de patch-id als een zoekwoord om de patch te zoeken.
+>De patch kan van toepassing worden op andere versies met nieuwe [!DNL Quality Patches Tool] versies. Om te controleren of de patch compatibel is met uw Adobe Commerce-versie, werkt u het `magento/quality-patches` -pakket bij naar de meest recente versie en controleert u de compatibiliteit op de [[!DNL Quality Patches Tool] : zoek naar patches op de pagina ](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html) . Gebruik de patch-id als een zoekwoord om de patch te zoeken.
 
 ## Probleem
 
@@ -53,8 +54,8 @@ De kolom `failures_num` wordt niet teruggesteld aan 0 nadat het gebruiken van de
 
 Om individuele flarden toe te passen, gebruik de volgende verbindingen afhankelijk van uw plaatsingsmethode:
 
-* Adobe Commerce of Magento Open Source op locatie: [[!DNL Quality Patches Tool]  > Gebruik ](/help/tools/quality-patches-tool/usage.md) in de handleiding [!DNL Quality Patches Tool] .
-* Adobe Commerce op wolkeninfrastructuur: [ Verbeteringen en Patches > Pas Patches ](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html?lang=nl-NL) in Commerce op de gids van de Infrastructuur van de Wolk toe.
+* Op locatie Adobe Commerce of Magento Open Source: [[!DNL Quality Patches Tool] > Gebruik ](/help/tools/quality-patches-tool/usage.md) in de handleiding [!DNL Quality Patches Tool] .
+* Adobe Commerce op wolkeninfrastructuur: [ Verbeteringen en Patches > Pas Patches ](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html) in Commerce op de gids van de Infrastructuur van de Wolk toe.
 
 ## Gerelateerde lezing
 

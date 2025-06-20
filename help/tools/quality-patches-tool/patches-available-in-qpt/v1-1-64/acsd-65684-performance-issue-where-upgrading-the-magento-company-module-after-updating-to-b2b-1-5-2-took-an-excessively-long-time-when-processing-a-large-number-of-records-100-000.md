@@ -3,13 +3,14 @@ title: 'ACSD-65684: Het upgraden van Magento_Company in B2B 1.5.2 is langzaam me
 description: Pas de ACSD-65684-patch toe om het Adobe Commerce-probleem op te lossen waarbij het upgraden van de Magento_Company-module in B2B 1.5.2 te lang duurt vanwege het verwerken van een groot aantal records (~100.000+) in de company_structure-tabel.
 feature: B2B
 role: Admin, Developer
-source-git-commit: dbf1bf3483aa7e52f5d1c950ab82f504c44fc989
+type: Troubleshooting
+exl-id: 1b45ebe4-4fb4-4fb5-b107-a2d44ec784e0
+source-git-commit: b1912bbc5aabd36067563326ee5c6bb84e14441d
 workflow-type: tm+mt
 source-wordcount: '335'
 ht-degree: 0%
 
 ---
-
 
 # ACSD-65684: het upgraden van `Magento_Company` in [!DNL B2B] 1.5.2 gaat langzaam met meer dan 100.000 records in `company_structure`
 
@@ -27,7 +28,7 @@ De ACSD-65684-patch verhelpt een prestatieprobleem waarbij het bijwerken van de 
 
 >[!NOTE]
 >
->De patch kan van toepassing worden op andere versies met nieuwe [!DNL Quality Patches Tool] versies. Om te controleren of de patch compatibel is met uw Adobe Commerce-versie, werkt u het `magento/quality-patches` -pakket bij naar de meest recente versie en controleert u de compatibiliteit op de [[!DNL Quality Patches Tool] : zoek naar patches op de pagina ](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html?lang=nl-NL) . Gebruik de patch-id als een zoekwoord om de patch te zoeken.
+>De patch kan van toepassing worden op andere versies met nieuwe [!DNL Quality Patches Tool] versies. Om te controleren of de patch compatibel is met uw Adobe Commerce-versie, werkt u het `magento/quality-patches` -pakket bij naar de meest recente versie en controleert u de compatibiliteit op de [[!DNL Quality Patches Tool] : zoek naar patches op de pagina ](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html) . Gebruik de patch-id als een zoekwoord om de patch te zoeken.
 
 ## Probleem
 
@@ -58,7 +59,7 @@ bin/magento setup:upgrade
 Om individuele flarden toe te passen, gebruik de volgende verbindingen afhankelijk van uw plaatsingsmethode:
 
 * Op locatie Adobe Commerce of Magento Open Source: [[!DNL Quality Patches Tool] > Gebruik ](/help/tools/quality-patches-tool/usage.md) in de handleiding [!DNL Quality Patches Tool] .
-* Adobe Commerce op wolkeninfrastructuur: [ Verbeteringen en Patches > Pas Patches ](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html?lang=nl-NL) in Commerce op de gids van de Infrastructuur van de Wolk toe.
+* Adobe Commerce op wolkeninfrastructuur: [ Verbeteringen en Patches > Pas Patches ](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html) in Commerce op de gids van de Infrastructuur van de Wolk toe.
 
 ## Gerelateerde lezing
 

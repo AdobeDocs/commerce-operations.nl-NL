@@ -1,15 +1,16 @@
 ---
-title: 'ACSD-63325: De Fout van de syntaxis: Onverwachte <EOF> fout wanneer het voorleggen van leeg  [!DNL GraphQL]  verzoek'
+title: 'ACSD-63325: De Fout van de syntaxis: Onverwachte &lt;EOF&gt; fout wanneer het voorleggen van leeg  [!DNL GraphQL]  verzoek'
 description: Pas ACSD-63325 flard toe om de kwestie van Adobe Commerce te bevestigen waar een syntaxisfout voorkomt wanneer het voorleggen van een leeg  [!DNL GraphQL]  verzoek.
 feature: GraphQL
 Role: Admin, Developer
-source-git-commit: 805ab7fb001cda112ce1298f0221fb22b6494b47
+exl-id: a83a8c5f-a43a-4733-a601-7b92656e5325
+type: Troubleshooting
+source-git-commit: 7fdb02a6d89d50ea593c5fd99d78101f89198424
 workflow-type: tm+mt
-source-wordcount: '294'
+source-wordcount: '297'
 ht-degree: 0%
 
 ---
-
 
 # ACSD-63325: &quot;Syntaxisfout: Onverwachte &lt; EOF >&quot;-fout bij het indienen van een lege [!DNL GraphQL] -aanvraag
 
@@ -27,7 +28,7 @@ De ACSD-63325-patch verhelpt het probleem waarbij een &quot;Syntaxisfout: Unexpe
 
 >[!NOTE]
 >
->De patch kan van toepassing worden op andere versies met nieuwe [!DNL Quality Patches Tool] versies. Om te controleren of de patch compatibel is met uw Adobe Commerce-versie, werkt u het `magento/quality-patches` -pakket bij naar de meest recente versie en controleert u de compatibiliteit op de [[!DNL Quality Patches Tool] : zoek naar patches op de pagina ](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html?lang=nl-NL) . Gebruik de patch-id als een zoekwoord om de patch te zoeken.
+>De patch kan van toepassing worden op andere versies met nieuwe [!DNL Quality Patches Tool] versies. Om te controleren of de patch compatibel is met uw Adobe Commerce-versie, werkt u het `magento/quality-patches` -pakket bij naar de meest recente versie en controleert u de compatibiliteit op de [[!DNL Quality Patches Tool] : zoek naar patches op de pagina ](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html) . Gebruik de patch-id als een zoekwoord om de patch te zoeken.
 
 ## Probleem
 
@@ -61,8 +62,8 @@ HTTP/1.1 500 Internal Server Error
 
 Om individuele flarden toe te passen, gebruik de volgende verbindingen afhankelijk van uw plaatsingsmethode:
 
-* Adobe Commerce of Magento Open Source op locatie: [[!DNL Quality Patches Tool]  > Gebruik ](/help/tools/quality-patches-tool/usage.md) in de handleiding [!DNL Quality Patches Tool] .
-* Adobe Commerce op de Infrastructuur van de Wolk: [ Verbeteringen en Patches > Pas Patches ](https://experienceleague.adobe.com/nl/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches) in Commerce op de gids van de Infrastructuur van de Wolk toe.
+* Op locatie Adobe Commerce of Magento Open Source: [[!DNL Quality Patches Tool] > Gebruik ](/help/tools/quality-patches-tool/usage.md) in de handleiding [!DNL Quality Patches Tool] .
+* Adobe Commerce op de Infrastructuur van de Wolk: [ Verbeteringen en Patches > Pas Patches ](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches) in Commerce op de gids van de Infrastructuur van de Wolk toe.
 
 ## Gerelateerde lezing
 

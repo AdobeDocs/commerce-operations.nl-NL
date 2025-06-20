@@ -3,13 +3,14 @@ title: 'ACS2E-3838: [!DNL Page Builder]  de fouten van CORS verhinderen besparin
 description: Pas ACS2E-3838 flard toe om de kwestie van Adobe Commerce te bevestigen waar  [!DNL Page Builder]  de fouten van CORS sparen veranderingen in het admin paneel op productiemodus verhinderen.
 feature: Page Builder, Page Content, Admin Workspace
 role: Admin, Developer
-source-git-commit: 1b9c721c8200f38b6ce5d1b4de87b1f10e07e8d2
+exl-id: 0d590c0e-e21c-4553-a0a3-9332e22796f3
+type: Troubleshooting
+source-git-commit: 7fdb02a6d89d50ea593c5fd99d78101f89198424
 workflow-type: tm+mt
 source-wordcount: '342'
 ht-degree: 0%
 
 ---
-
 
 # ACP2E-3838: [!DNL Page Builder] CORS-fouten voorkomen dat wijzigingen in de productiemodus worden opgeslagen in het deelvenster Beheer
 
@@ -27,7 +28,7 @@ De ACP2E-3838-patch verhelpt het probleem waarbij [!DNL Page Builder] CORS-foute
 
 >[!NOTE]
 >
->De patch kan van toepassing worden op andere versies met nieuwe [!DNL Quality Patches Tool] versies. Om te controleren of de patch compatibel is met uw Adobe Commerce-versie, werkt u het `magento/quality-patches` -pakket bij naar de meest recente versie en controleert u de compatibiliteit op de [[!DNL Quality Patches Tool] : zoek naar patches op de pagina ](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html?lang=nl-NL) . Gebruik de patch-id als een zoekwoord om de patch te zoeken.
+>De patch kan van toepassing worden op andere versies met nieuwe [!DNL Quality Patches Tool] versies. Om te controleren of de patch compatibel is met uw Adobe Commerce-versie, werkt u het `magento/quality-patches` -pakket bij naar de meest recente versie en controleert u de compatibiliteit op de [[!DNL Quality Patches Tool] : zoek naar patches op de pagina ](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html) . Gebruik de patch-id als een zoekwoord om de patch te zoeken.
 
 ## Probleem
 
@@ -56,7 +57,7 @@ De pagina-inhoud moet zonder fouten worden opgeslagen.
 Om individuele flarden toe te passen, gebruik de volgende verbindingen afhankelijk van uw plaatsingsmethode:
 
 * Op locatie Adobe Commerce of Magento Open Source: [[!DNL Quality Patches Tool] > Gebruik ](/help/tools/quality-patches-tool/usage.md) in de handleiding [!DNL Quality Patches Tool] .
-* Adobe Commerce op wolkeninfrastructuur: [ Verbeteringen en Patches > Pas Patches ](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html?lang=nl-NL) in Commerce op de gids van de Infrastructuur van de Wolk toe.
+* Adobe Commerce op wolkeninfrastructuur: [ Verbeteringen en Patches > Pas Patches ](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html) in Commerce op de gids van de Infrastructuur van de Wolk toe.
 
 ## Gerelateerde lezing
 

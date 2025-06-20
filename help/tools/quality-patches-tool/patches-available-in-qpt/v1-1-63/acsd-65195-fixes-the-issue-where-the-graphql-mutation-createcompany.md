@@ -1,15 +1,16 @@
 ---
-title: 'ACSD-65195: mutatie GraphQL &grave; createCompany &grave; keert een fout voor een land zonder een vereiste regio terug'
-description: Pas de ACSD-65195-patch toe om het Adobe Commerce-probleem op te lossen waarbij de GraphQL &grave; createCompany&grave;-mutatie een fout veroorzaakt voor landen die geen regio nodig hebben.
+title: 'ACSD-65195: mutatie GraphQL ` createCompany ` keert een fout voor een land zonder een vereiste regio terug'
+description: Pas de ACSD-65195-patch toe om het Adobe Commerce-probleem op te lossen waarbij de GraphQL ` createCompany`-mutatie een fout veroorzaakt voor landen die geen regio nodig hebben.
 feature: B2B, Companies, GraphQL
 role: Admin, Developer
-source-git-commit: 8eb1d7f9d787ddb3b1cc619744920ab8a9914ae8
+exl-id: b9eed00c-26f2-47fe-b1a0-6b020527f0c1
+type: Troubleshooting
+source-git-commit: 7fdb02a6d89d50ea593c5fd99d78101f89198424
 workflow-type: tm+mt
 source-wordcount: '339'
 ht-degree: 0%
 
 ---
-
 
 # ACSD-65195: GraphQL `createCompany` -mutatie retourneert een fout voor een land zonder vereiste regio
 
@@ -27,7 +28,7 @@ De ACSD-65195-patch verhelpt het probleem waarbij de [!UICONTROL GraphQL] `creat
 
 >[!NOTE]
 >
->De patch kan van toepassing worden op andere versies met nieuwe [!DNL Quality Patches Tool] versies. Om te controleren of de patch compatibel is met uw Adobe Commerce-versie, werkt u het `magento/quality-patches` -pakket bij naar de meest recente versie en controleert u de compatibiliteit op de [[!DNL Quality Patches Tool] : zoek naar patches op de pagina ](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html?lang=nl-NL) . Gebruik de patch-id als een zoekwoord om de patch te zoeken.
+>De patch kan van toepassing worden op andere versies met nieuwe [!DNL Quality Patches Tool] versies. Om te controleren of de patch compatibel is met uw Adobe Commerce-versie, werkt u het `magento/quality-patches` -pakket bij naar de meest recente versie en controleert u de compatibiliteit op de [[!DNL Quality Patches Tool] : zoek naar patches op de pagina ](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html) . Gebruik de patch-id als een zoekwoord om de patch te zoeken.
 
 ## Probleem
 

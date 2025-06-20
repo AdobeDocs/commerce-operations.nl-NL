@@ -4,7 +4,8 @@ description: Dit artikel verstrekt een overzicht van  [!DNL Quality Patches Tool
 feature: Support, Tools and External Services
 role: Admin
 exl-id: e67e5823-d878-4efc-90af-c7bb8c59d654
-source-git-commit: 32800bcca9174eb09ff7a723bdc775ebaa569807
+type: Troubleshooting
+source-git-commit: 7fdb02a6d89d50ea593c5fd99d78101f89198424
 workflow-type: tm+mt
 source-wordcount: '376'
 ht-degree: 0%
@@ -22,7 +23,7 @@ Dit artikel biedt een overzicht van [!DNL Quality Patches Tool] (QPT) en koppeli
 
 ## Wat is het gereedschap Kwaliteitspatches?
 
-[[!DNL Quality Patches Tool] ](https://github.com/magento/quality-patches) (QPT) is een hulpmiddel dat u toestaat om individuele kwaliteitsflarden toe te passen die door Adobe en de gemeenschap van de Magento Open Source worden ontwikkeld.
+[[!DNL Quality Patches Tool] ](https://github.com/magento/quality-patches) (QPT) is een hulpmiddel dat u toestaat om individuele kwaliteitspatches toe te passen die door Adobe en de gemeenschap van Magento Open Source worden ontwikkeld.
 
 Zo kunt u:
 
@@ -38,12 +39,12 @@ Het gereedschap is bedoeld om u in staat te stellen zelf te dienen met patches v
 
 >[!NOTE]
 >
->QPT is alleen voor kwaliteitspatches. De flarden van de veiligheid zijn beschikbaar in de [ nota&#39;s van de Versie voor Adobe Commerce en Magento Open Source ](https://experienceleague.adobe.com/docs/commerce-operations/release/notes/overview.html?lang=nl-NL).
+>QPT is alleen voor kwaliteitspatches. De flarden van de veiligheid zijn beschikbaar in de [ nota&#39;s van de Versie voor Adobe Commerce en Magento Open Source ](https://experienceleague.adobe.com/docs/commerce-operations/release/notes/overview.html).
 
 ## Reparaties beschikbaar in de [!DNL Quality Patches Tool]
 
 In dit gedeelte van de Adobe Commerce Support Knowledge Base vindt u gedetailleerde beschrijvingen van de problemen, opgelost door QPT-patches, gegroepeerd op QPT-releaseversie.
-U kunt een lijst van beschikbare flarden QPT ook zien en filteren door component, gebruikend de dynamisch geproduceerde lijst op [[!DNL Quality Patches Tool]: Onderzoek naar de pagina van flarden ](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html?lang=nl-NL) in onze steun kennisbasis.
+U kunt een lijst van beschikbare flarden QPT ook zien en filteren door component, gebruikend de dynamisch geproduceerde lijst op [[!DNL Quality Patches Tool]: Onderzoek naar de pagina van flarden ](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html) in onze steun kennisbasis.
 
 ## Installatie en gebruik van de [!DNL Quality Patches Tool]
 
@@ -55,8 +56,8 @@ Gelieve te verwijzen naar [ Commerce > Hulpmiddelen > Gebruik ](../usage.md) in 
 
 ### QPT voor Adobe Commerce installeren en gebruiken op cloudinfrastructuur
 
-Gelieve te verwijzen naar [ Commerce op de Gids van de Infrastructuur van de Wolk > pas flarden ](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html?lang=nl-NL) in onze ontwikkelaarsdocumentatie voor details op om QPT voor het toepassen van en het terugkeren van flarden op Adobe Commerce op wolkeninfrastructuur te installeren en te gebruiken.
+Gelieve te verwijzen naar [ Commerce op de Gids van de Infrastructuur van de Wolk > pas flarden ](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html) in onze ontwikkelaarsdocumentatie voor details op om QPT voor het toepassen van en het terugkeren van flarden op Adobe Commerce op wolkeninfrastructuur te installeren en te gebruiken.
 
 ## Gerelateerde lezing
 
-* [[!DNL Quality Patches Tool]  versienota&#39;s ](https://experienceleague.adobe.com/docs/commerce-operations/tools/quality-patches-tool/release-notes.html?lang=nl-NL) in onze ontwikkelaardocumentatie.
+* [[!DNL Quality Patches Tool]  versienota&#39;s ](https://experienceleague.adobe.com/docs/commerce-operations/tools/quality-patches-tool/release-notes.html) in onze ontwikkelaardocumentatie.

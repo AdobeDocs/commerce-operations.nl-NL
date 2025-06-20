@@ -1,15 +1,16 @@
 ---
 title: 'ACSD-64523: REST Endpoint kan verplichte velden niet valideren'
-description: Pas de ACSD-64523-patch toe om het probleem op te lossen waarbij het REST-eindpunt &grave;[V1/import/csv]' de verplichte velden niet valideert, zodat producten kunnen worden gemaakt zonder de verplichte velden in te vullen.
+description: Pas de ACSD-64523-patch toe om het probleem op te lossen waarbij het REST-eindpunt `[V1/import/csv]' de verplichte velden niet valideert, zodat producten kunnen worden gemaakt zonder de verplichte velden in te vullen.
 feature: REST, Products, Admin Workspace
 role: Admin, Developer
-source-git-commit: 4bf9a5eb2e423f5981ee9234be57230a6dff3913
+exl-id: 21aecd6d-06e4-4f2b-904a-27487ba74968
+type: Troubleshooting
+source-git-commit: 7fdb02a6d89d50ea593c5fd99d78101f89198424
 workflow-type: tm+mt
 source-wordcount: '330'
 ht-degree: 0%
 
 ---
-
 
 # ACSD-64523: REST Endpoint kan verplichte velden niet valideren
 
@@ -27,7 +28,7 @@ Het ACSD-64523 flard bevestigt een kwestie waar het REST eindpunt [ V1/import/cs
 
 >[!NOTE]
 >
->De patch kan van toepassing worden op andere versies met nieuwe [!DNL Quality Patches Tool] versies. Om te controleren of de patch compatibel is met uw Adobe Commerce-versie, werkt u het `magento/quality-patches` -pakket bij naar de meest recente versie en controleert u de compatibiliteit op de [[!DNL Quality Patches Tool] : zoek naar patches op de pagina ](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html?lang=nl-NL) . Gebruik de patch-id als een zoekwoord om de patch te zoeken.
+>De patch kan van toepassing worden op andere versies met nieuwe [!DNL Quality Patches Tool] versies. Om te controleren of de patch compatibel is met uw Adobe Commerce-versie, werkt u het `magento/quality-patches` -pakket bij naar de meest recente versie en controleert u de compatibiliteit op de [[!DNL Quality Patches Tool] : zoek naar patches op de pagina ](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html) . Gebruik de patch-id als een zoekwoord om de patch te zoeken.
 
 ## Probleem
 
@@ -91,7 +92,7 @@ Het product is opgeslagen zonder de productnaam op te geven. Dit is een verplich
 Om individuele flarden toe te passen, gebruik de volgende verbindingen afhankelijk van uw plaatsingsmethode:
 
 * Op locatie Adobe Commerce of Magento Open Source: [[!DNL Quality Patches Tool] > Gebruik ](/help/tools/quality-patches-tool/usage.md) in de handleiding [!DNL Quality Patches Tool] .
-* Adobe Commerce op wolkeninfrastructuur: [ Verbeteringen en Patches > Pas Patches ](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html?lang=nl-NL) in Commerce op de gids van de Infrastructuur van de Wolk toe.
+* Adobe Commerce op wolkeninfrastructuur: [ Verbeteringen en Patches > Pas Patches ](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html) in Commerce op de gids van de Infrastructuur van de Wolk toe.
 
 ## Gerelateerde lezing
 

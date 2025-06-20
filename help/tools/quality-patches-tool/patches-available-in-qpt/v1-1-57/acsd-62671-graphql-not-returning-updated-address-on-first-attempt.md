@@ -3,7 +3,9 @@ title: 'ACSD-62671: [!DNL GraphQL]  keert geen bijgewerkt adres op eerste poging
 description: Pas ACSD-62671 flard toe om de kwestie van Adobe Commerce te bevestigen waar het a [!DNL GraphQL]  verzoek geen bijgewerkte adresinformatie op de eerste poging terugkeert.
 feature: GraphQL
 role: Admin, Developer
-source-git-commit: 697b0e3d7789b0324866d2192f56613f5526e4df
+exl-id: afd75ad2-e801-4f8a-b68f-526ca5168413
+type: Troubleshooting
+source-git-commit: 7fdb02a6d89d50ea593c5fd99d78101f89198424
 workflow-type: tm+mt
 source-wordcount: '339'
 ht-degree: 0%
@@ -12,7 +14,7 @@ ht-degree: 0%
 
 # ACSD-62671: [!DNL GraphQL] retourneert het bijgewerkte adres niet bij de eerste poging
 
-De ACSD-62671-patch verhelpt het probleem waarbij een [!DNL GraphQL] -aanvraag bij de eerste poging geen actuele adresgegevens retourneert. Deze patch is beschikbaar wanneer [[!DNL Quality Patches Tool (QPT)] ](https://experienceleague.adobe.com/docs/commerce-operations/tools/quality-patches-tool/usage.html?lang=nl-NL) 1.1.57 wordt geïnstalleerd. De patch-id is ACSD-62671. Het probleem wordt volgens de planning opgelost in Adobe Commerce 2.4.8.
+De ACSD-62671-patch verhelpt het probleem waarbij een [!DNL GraphQL] -aanvraag bij de eerste poging geen actuele adresgegevens retourneert. Deze patch is beschikbaar wanneer [[!DNL Quality Patches Tool (QPT)] ](https://experienceleague.adobe.com/docs/commerce-operations/tools/quality-patches-tool/usage.html) 1.1.57 wordt geïnstalleerd. De patch-id is ACSD-62671. Het probleem wordt volgens de planning opgelost in Adobe Commerce 2.4.8.
 
 ## Betrokken producten en versies
 
@@ -26,7 +28,7 @@ De ACSD-62671-patch verhelpt het probleem waarbij een [!DNL GraphQL] -aanvraag b
 
 >[!NOTE]
 >
->De patch kan van toepassing worden op andere versies met nieuwe [!DNL Quality Patches Tool] versies. Om te controleren of de patch compatibel is met uw Adobe Commerce-versie, werkt u het `magento/quality-patches` -pakket bij naar de meest recente versie en controleert u de compatibiliteit op de [[!DNL Quality Patches Tool] : zoek naar patches op de pagina ](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html?lang=nl-NL) . Gebruik de patch-id als een zoekwoord om de patch te zoeken.
+>De patch kan van toepassing worden op andere versies met nieuwe [!DNL Quality Patches Tool] versies. Om te controleren of de patch compatibel is met uw Adobe Commerce-versie, werkt u het `magento/quality-patches` -pakket bij naar de meest recente versie en controleert u de compatibiliteit op de [[!DNL Quality Patches Tool] : zoek naar patches op de pagina ](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html) . Gebruik de patch-id als een zoekwoord om de patch te zoeken.
 
 ## Probleem
 
@@ -58,8 +60,8 @@ Soms wordt een onjuist aantal adressen geretourneerd in het [!DNL GraphQL] -antw
 
 Om individuele flarden toe te passen, gebruik de volgende verbindingen afhankelijk van uw plaatsingsmethode:
 
-* Adobe Commerce of Magento Open Source op locatie: [[!DNL Quality Patches Tool]  > Gebruik ](/help/tools/quality-patches-tool/usage.md) in de handleiding [!DNL Quality Patches Tool] .
-* Adobe Commerce op wolkeninfrastructuur: [ Verbeteringen en Patches > Pas Patches ](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html?lang=nl-NL) in Commerce op de gids van de Infrastructuur van de Wolk toe.
+* Op locatie Adobe Commerce of Magento Open Source: [[!DNL Quality Patches Tool] > Gebruik ](/help/tools/quality-patches-tool/usage.md) in de handleiding [!DNL Quality Patches Tool] .
+* Adobe Commerce op wolkeninfrastructuur: [ Verbeteringen en Patches > Pas Patches ](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html) in Commerce op de gids van de Infrastructuur van de Wolk toe.
 
 ## Gerelateerde lezing
 

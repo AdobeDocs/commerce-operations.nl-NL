@@ -1,9 +1,11 @@
 ---
-title: 'ACSD-61199: Het tabblad CMS-pagina [!UICONTROL Hierarchy] geeft geen juiste boomstructuur weer.'
+title: 'ACSD-61199: Het tabblad CMS-pagina [!UICONTROL Hierarchy] geeft geen juiste boomstructuur weer'
 description: Pas ACSD-61199 flard toe om de kwestie van Adobe Commerce te bevestigen waar het lusje van de pagina van CMS * [!UICONTROL Hierarchy] * geen juiste boomstructuur toont wanneer het uitgeven van een pagina van CMS met bestaand * [!UICONTROL Hierarchy] *.
 feature: Page Content
 role: Admin, Developer
-source-git-commit: bbe4e272d3a8bd82163bdd718d006a314287b650
+exl-id: f541d001-9680-431a-9a62-816c2d10b6d5
+type: Troubleshooting
+source-git-commit: 7fdb02a6d89d50ea593c5fd99d78101f89198424
 workflow-type: tm+mt
 source-wordcount: '331'
 ht-degree: 0%
@@ -26,7 +28,7 @@ De ACSD-61199-patch verhelpt het probleem dat op het tabblad *[!UICONTROL Hierar
 
 >[!NOTE]
 >
->De patch kan van toepassing worden op andere versies met nieuwe [!DNL Quality Patches Tool] versies. Om te controleren of de patch compatibel is met uw Adobe Commerce-versie, werkt u het `magento/quality-patches` -pakket bij naar de meest recente versie en controleert u de compatibiliteit op de [[!DNL Quality Patches Tool] : zoek naar patches op de pagina ](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html?lang=nl-NL) . Gebruik de patch-id als een zoekwoord om de patch te zoeken.
+>De patch kan van toepassing worden op andere versies met nieuwe [!DNL Quality Patches Tool] versies. Om te controleren of de patch compatibel is met uw Adobe Commerce-versie, werkt u het `magento/quality-patches` -pakket bij naar de meest recente versie en controleert u de compatibiliteit op de [[!DNL Quality Patches Tool] : zoek naar patches op de pagina ](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html) . Gebruik de patch-id als een zoekwoord om de patch te zoeken.
 
 ## Probleem
 
@@ -55,8 +57,8 @@ De *[!UICONTROL Hierarchy]* wordt geladen zoals u had verwacht.
 
 Om individuele flarden toe te passen, gebruik de volgende verbindingen afhankelijk van uw plaatsingsmethode:
 
-* Adobe Commerce of Magento Open Source op locatie: [[!DNL Quality Patches Tool]  > Gebruik ](/help/tools/quality-patches-tool/usage.md) in de handleiding [!DNL Quality Patches Tool] .
-* Adobe Commerce op wolkeninfrastructuur: [ Verbeteringen en Patches > Pas Patches ](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html?lang=nl-NL) in Commerce op de gids van de Infrastructuur van de Wolk toe.
+* Op locatie Adobe Commerce of Magento Open Source: [[!DNL Quality Patches Tool] > Gebruik ](/help/tools/quality-patches-tool/usage.md) in de handleiding [!DNL Quality Patches Tool] .
+* Adobe Commerce op wolkeninfrastructuur: [ Verbeteringen en Patches > Pas Patches ](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html) in Commerce op de gids van de Infrastructuur van de Wolk toe.
 
 ## Gerelateerde lezing
 

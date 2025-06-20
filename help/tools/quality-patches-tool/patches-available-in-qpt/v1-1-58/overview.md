@@ -3,7 +3,9 @@ title: 'Overzicht: [!DNL Quality Patches Tool]  (QPT) v1.1.58'
 description: Deze subsectie verstrekt een gedetailleerde beschrijving van de kwesties die door de flarden beschikbaar in  [!DNL Quality Patches Tool]  (QPT) v1.1.58 worden opgelost.
 feature: Tools and External Services
 role: Admin, Developer
-source-git-commit: f8473bbdedef26b291547d828e47a9ba08a5d142
+exl-id: 61bf8b82-f897-41f6-8524-5aa74c6440f1
+type: Troubleshooting
+source-git-commit: 7fdb02a6d89d50ea593c5fd99d78101f89198424
 workflow-type: tm+mt
 source-wordcount: '304'
 ht-degree: 0%
@@ -29,4 +31,3 @@ QPT v1.1.58 omvat de volgende flarden:
 1. **ACSD-63578**: Verhelpt de kwestie waar het klikken van de **[!UICONTROL Delete]** knoop in **[!UICONTROL Add to Order by SKU]** in [!UICONTROL Admin] niet [!DNL SKU] verwijdert.
 
 Gebruik het menu links om naar een specifieke patchpagina te navigeren.
-

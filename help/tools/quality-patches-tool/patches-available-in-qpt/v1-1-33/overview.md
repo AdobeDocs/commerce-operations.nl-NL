@@ -4,7 +4,8 @@ description: Deze subsectie biedt een gedetailleerde beschrijving van de problem
 feature: Tools and External Services
 role: Admin
 exl-id: 31812668-1d24-4da6-992f-981c259e00da
-source-git-commit: 81c78439f7c243437b7b76dc80560c847af95ace
+type: Troubleshooting
+source-git-commit: 7fdb02a6d89d50ea593c5fd99d78101f89198424
 workflow-type: tm+mt
 source-wordcount: '451'
 ht-degree: 0%
@@ -30,7 +31,7 @@ QPT v1.1.33 omvat de volgende flarden:
 1. **ACSD-51792**: Bevestigt de kwestie waar een pagina niet de imperiale gebeurtenis heeft wanneer [!DNL Google Tag Manager] 4 wordt toegelaten.
 1. **ACSD-51471**: Verhelpt de kwestie waar een admin gebruiker geen geplande update voor een gebundeld product kan bewaren dat een eenvoudig product gebruikt dat zelf een geplande update heeft.
 1. **ACSD-51700**: Bevestigt de fout die gebeurt wanneer het schakelen van archiefmeningen op een downloadbaar product uitgeeft pagina in admin.
-1. **ACSD-51120**: Bevestigt de kwestie waar de GET van GraphQL geheim voorgeheugen niet wordt ontruimd voor de pagina&#39;s van CMS die CMS blokken bevatten die via een het opvoeren update worden bijgewerkt.
+1. **ACSD-51120**: Verhelpt de kwestie waar GraphQL GET om geheime voorgeheugen verzoekt niet voor de pagina&#39;s van CMS wordt ontruimd die CMS blokken bevatten die via een het opvoeren update worden bijgewerkt.
 1. **ACSD-51240**: Verhelpt de kwestie waar het geuploade dossier mist als de registratie via de vorm van de bedrijfregistratie wordt gedaan.
 1. **ACSD-51907**: Verhelpt de kwestie waar een beperkte admin gebruiker geen creditnota met een off-line teruggave kan tot stand brengen.
 1. **ACSD-52148**: Verhelpt de kwestie waar [!UICONTROL Google V3 reCAPTCHA Admin] login af en toe ontbreekt.

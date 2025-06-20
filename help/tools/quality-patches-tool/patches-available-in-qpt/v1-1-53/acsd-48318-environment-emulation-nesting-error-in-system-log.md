@@ -1,10 +1,11 @@
 ---
-title: 'ACSD-48318: Omgevingsemulatie nestfout in &grave; system.log&grave;'
-description: Pas de ACSD-48318-patch toe om het Adobe Commerce-probleem op te lossen waarbij een foutbericht *main.ERROR:Environment emulation nesting is not allowed* weergegeven wordt in &grave; system.log&grave; telkens wanneer een factuur-e-mail wordt verzonden.
+title: 'ACSD-48318: Omgevingsemulatie nestfout in ` system.log`'
+description: Pas de ACSD-48318-patch toe om het Adobe Commerce-probleem op te lossen waarbij een foutbericht *main.ERROR:Environment emulation nesting is not allowed* weergegeven wordt in ` system.log` telkens wanneer een factuur-e-mail wordt verzonden.
 feature: System, Orders
 role: Admin, Developer
 exl-id: 24af18de-80dd-4e0a-bdf9-5b9c075fc608
-source-git-commit: 81c78439f7c243437b7b76dc80560c847af95ace
+type: Troubleshooting
+source-git-commit: 7fdb02a6d89d50ea593c5fd99d78101f89198424
 workflow-type: tm+mt
 source-wordcount: '314'
 ht-degree: 0%
@@ -27,7 +28,7 @@ ACSD-48318 herstelt de flard de kwestie waar een foutenmelding *main.ERROR:Het n
 
 >[!NOTE]
 >
->De patch kan van toepassing worden op andere versies met nieuwe [!DNL Quality Patches Tool] versies. Om te controleren of de patch compatibel is met uw Adobe Commerce-versie, werkt u het `magento/quality-patches` -pakket bij naar de meest recente versie en controleert u de compatibiliteit op de [[!DNL Quality Patches Tool] : zoek naar patches op de pagina ](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html?lang=nl-NL) . Gebruik de patch-id als een zoekwoord om de patch te zoeken.
+>De patch kan van toepassing worden op andere versies met nieuwe [!DNL Quality Patches Tool] versies. Om te controleren of de patch compatibel is met uw Adobe Commerce-versie, werkt u het `magento/quality-patches` -pakket bij naar de meest recente versie en controleert u de compatibiliteit op de [[!DNL Quality Patches Tool] : zoek naar patches op de pagina ](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html) . Gebruik de patch-id als een zoekwoord om de patch te zoeken.
 
 ## Probleem
 
@@ -51,8 +52,8 @@ Geen fouten in `system.log`.
 
 Om individuele flarden toe te passen, gebruik de volgende verbindingen afhankelijk van uw plaatsingsmethode:
 
-* Adobe Commerce of Magento Open Source op locatie: [[!DNL Quality Patches Tool]  > Gebruik ](/help/tools/quality-patches-tool/usage.md) in de handleiding [!DNL Quality Patches Tool] .
-* Adobe Commerce op wolkeninfrastructuur: [ Verbeteringen en Patches > Pas Patches ](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html?lang=nl-NL) in Commerce op de gids van de Infrastructuur van de Wolk toe.
+* Op locatie Adobe Commerce of Magento Open Source: [[!DNL Quality Patches Tool] > Gebruik ](/help/tools/quality-patches-tool/usage.md) in de handleiding [!DNL Quality Patches Tool] .
+* Adobe Commerce op wolkeninfrastructuur: [ Verbeteringen en Patches > Pas Patches ](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html) in Commerce op de gids van de Infrastructuur van de Wolk toe.
 
 ## Gerelateerde lezing
 

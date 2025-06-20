@@ -3,7 +3,9 @@ title: 'ACSD-61622: [!DNL FedEx]  de rekeningsspecifieke tarieven ontbreken in R
 description: Pas ACSD-61622 flard toe om de kwestie van Adobe Commerce te bevestigen waar  [!DNL FedEx]  rekeningsspecifieke tarieven van de REST API reactie missen.
 feature: Shipping/Delivery
 role: Admin, Developer
-source-git-commit: 24acc5f369e0001c8aeab3f81a2e1b51bc523333
+exl-id: 59e33dc4-3f9b-4590-95b6-e98c77e750ee
+type: Troubleshooting
+source-git-commit: 7fdb02a6d89d50ea593c5fd99d78101f89198424
 workflow-type: tm+mt
 source-wordcount: '381'
 ht-degree: 0%
@@ -12,7 +14,7 @@ ht-degree: 0%
 
 # ACSD-61622: [!DNL FedEx] accountspecifieke snelheden ontbreken in REST API-respons
 
-De ACSD-61622-patch verhelpt het probleem waarbij [!DNL FedEx's] -accountspecifieke frequenties ontbreken in de REST API-respons. Het `ACCOUNT` rate request type wordt toegevoegd aan de REST API request sent from Adobe Commerce to [!DNL FedEx] , dat een reactie retourneert die vergelijkbaar is met SOAP API response. Deze patch is beschikbaar wanneer [[!DNL Quality Patches Tool (QPT)]](/help/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches.md) 1.1.57 wordt geïnstalleerd. De patch-id is ACSD-61622. Het probleem wordt volgens de planning opgelost in Adobe Commerce 2.4.8.
+De ACSD-61622-patch verhelpt het probleem waarbij [!DNL FedEx's] -accountspecifieke frequenties ontbreken in de REST API-respons. Het `ACCOUNT` rate request type wordt toegevoegd aan de REST API request die van Adobe Commerce naar [!DNL FedEx] wordt verzonden en die een reactie retourneert die vergelijkbaar is met de SOAP API response. Deze patch is beschikbaar wanneer [[!DNL Quality Patches Tool (QPT)]](/help/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches.md) 1.1.57 wordt geïnstalleerd. De patch-id is ACSD-61622. Het probleem wordt volgens de planning opgelost in Adobe Commerce 2.4.8.
 
 ## Betrokken producten en versies
 
@@ -26,7 +28,7 @@ De ACSD-61622-patch verhelpt het probleem waarbij [!DNL FedEx's] -accountspecifi
 
 >[!NOTE]
 >
->De patch kan van toepassing worden op andere versies met nieuwe [!DNL Quality Patches Tool] versies. Om te controleren of de patch compatibel is met uw Adobe Commerce-versie, werkt u het `magento/quality-patches` -pakket bij naar de meest recente versie en controleert u de compatibiliteit op de [[!DNL Quality Patches Tool] : zoek naar patches op de pagina ](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html?lang=nl-NL) . Gebruik de patch-id als een zoekwoord om de patch te zoeken.
+>De patch kan van toepassing worden op andere versies met nieuwe [!DNL Quality Patches Tool] versies. Om te controleren of de patch compatibel is met uw Adobe Commerce-versie, werkt u het `magento/quality-patches` -pakket bij naar de meest recente versie en controleert u de compatibiliteit op de [[!DNL Quality Patches Tool] : zoek naar patches op de pagina ](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html) . Gebruik de patch-id als een zoekwoord om de patch te zoeken.
 
 ## Probleem
 
@@ -60,8 +62,8 @@ In de reactie zijn alleen `PAYOR_LIST_PACKAGE` -snelheden beschikbaar, wat betek
 
 Om individuele flarden toe te passen, gebruik de volgende verbindingen afhankelijk van uw plaatsingsmethode:
 
-* Adobe Commerce of Magento Open Source op locatie: [[!DNL Quality Patches Tool]  > Gebruik ](/help/tools/quality-patches-tool/usage.md) in de handleiding [!DNL Quality Patches Tool] .
-* Adobe Commerce op wolkeninfrastructuur: [ Verbeteringen en Patches > Pas Patches ](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html?lang=nl-NL) in Commerce op de gids van de Infrastructuur van de Wolk toe.
+* Op locatie Adobe Commerce of Magento Open Source: [[!DNL Quality Patches Tool] > Gebruik ](/help/tools/quality-patches-tool/usage.md) in de handleiding [!DNL Quality Patches Tool] .
+* Adobe Commerce op wolkeninfrastructuur: [ Verbeteringen en Patches > Pas Patches ](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html) in Commerce op de gids van de Infrastructuur van de Wolk toe.
 
 ## Gerelateerde lezing
 

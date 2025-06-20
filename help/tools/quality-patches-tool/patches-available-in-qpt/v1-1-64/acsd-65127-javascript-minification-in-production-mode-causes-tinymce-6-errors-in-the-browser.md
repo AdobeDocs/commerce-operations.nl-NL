@@ -3,13 +3,14 @@ title: 'ACSD-65127: De minificatie van JavaScript op productiemodus veroorzaakt 
 description: Pas ACSD-65127 flard toe om de kwestie van Adobe Commerce te bevestigen waar het toelaten van de minificatie van JavaScript op productiemodus  [!DNL TinyMCE]  6 veroorzaakte om fouten in de browser console te produceren, die functionaliteit en gebruikerservaring beïnvloedt.
 feature: Page Builder, Page Content
 role: Admin, Developer
-source-git-commit: c5b27b79dd2dc7f9b39e629756d3d5d01e019710
+exl-id: c878d5a4-8059-4bfc-93a8-0a9606e866fc
+type: Troubleshooting
+source-git-commit: 7fdb02a6d89d50ea593c5fd99d78101f89198424
 workflow-type: tm+mt
 source-wordcount: '333'
 ht-degree: 0%
 
 ---
-
 
 # ACSD-65127: JavaScript minification in production mode veroorzaakt [!DNL TinyMCE] 6 fouten in de browser
 
@@ -27,7 +28,7 @@ De ACSD-65127-patch verhelpt het probleem dat het inschakelen van JavaScript min
 
 >[!NOTE]
 >
->De patch kan van toepassing worden op andere versies met nieuwe [!DNL Quality Patches Tool] versies. Als u wilt controleren of de patch compatibel is met uw Adobe Commerce-versie, werkt u het `magento/quality-patches` -pakket bij naar de meest recente versie en controleert u de compatibiliteit op de pagina [[!DNL Quality Patches Tool] : zoek naar patches ](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html?lang=nl-NL) . Gebruik de patch-id als een zoekwoord om de patch te zoeken.
+>De patch kan van toepassing worden op andere versies met nieuwe [!DNL Quality Patches Tool] versies. Als u wilt controleren of de patch compatibel is met uw Adobe Commerce-versie, werkt u het `magento/quality-patches` -pakket bij naar de meest recente versie en controleert u de compatibiliteit op de pagina [[!DNL Quality Patches Tool] : zoek naar patches ](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html) . Gebruik de patch-id als een zoekwoord om de patch te zoeken.
 
 ## Probleem
 
@@ -64,7 +65,7 @@ Geen JS-fouten in de browserconsole.
 Om individuele flarden toe te passen, gebruik de volgende verbindingen afhankelijk van uw plaatsingsmethode:
 
 * Op locatie Adobe Commerce of Magento Open Source: [[!DNL Quality Patches Tool] > Gebruik ](/help/tools/quality-patches-tool/usage.md) in de handleiding [!DNL Quality Patches Tool] .
-* Adobe Commerce op wolkeninfrastructuur: [ Verbeteringen en Patches > Pas Patches ](https://experienceleague.adobe.com/nl/docs/commerce-on-cloud/user-guide/develop/upgrade/apply-patches) in Commerce op de gids van de Infrastructuur van de Wolk toe.
+* Adobe Commerce op wolkeninfrastructuur: [ Verbeteringen en Patches > Pas Patches ](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/develop/upgrade/apply-patches) in Commerce op de gids van de Infrastructuur van de Wolk toe.
 
 ## Gerelateerde lezing
 

@@ -3,13 +3,14 @@ title: 'ACSD-65223: handmatig geselecteerde voorwaarden en overeenkomsten voor i
 description: Pas de ACSD-65223-patch toe om het Adobe Commerce-probleem op te lossen dat ertoe leidt dat met [!UICONTROL Purchase Orders] gemaakte bestellingen niet met online betalingsmethoden zoals creditcards kunnen worden voltooid wanneer de voorwaarden voor het afrekenen vereist zijn.
 feature: B2B, Purchase Orders
 role: Admin, Developer
-source-git-commit: 57c0cb63f1e2c7b12d11b759eddf0d21b5db78b2
+exl-id: 5a5d0774-3801-4688-86bd-58a390394cc0
+type: Troubleshooting
+source-git-commit: 7fdb02a6d89d50ea593c5fd99d78101f89198424
 workflow-type: tm+mt
 source-wordcount: '440'
 ht-degree: 0%
 
 ---
-
 
 # ACSD-65223: handmatig geselecteerde voorwaarden en overeenkomsten voor inkooporders van B2B resulteren in een fout
 
@@ -27,7 +28,7 @@ De ACSD-65223-patch verhelpt het probleem dat met **[!UICONTROL Purchase Orders]
 
 >[!NOTE]
 >
->De patch kan van toepassing worden op andere versies met nieuwe [!DNL Quality Patches Tool] versies. Om te controleren of de patch compatibel is met uw Adobe Commerce-versie, werkt u het `magento/quality-patches` -pakket bij naar de meest recente versie en controleert u de compatibiliteit op de [[!DNL Quality Patches Tool] : zoek naar patches op de pagina ](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html?lang=nl-NL) . Gebruik de patch-id als een zoekwoord om de patch te zoeken.
+>De patch kan van toepassing worden op andere versies met nieuwe [!DNL Quality Patches Tool] versies. Om te controleren of de patch compatibel is met uw Adobe Commerce-versie, werkt u het `magento/quality-patches` -pakket bij naar de meest recente versie en controleert u de compatibiliteit op de [[!DNL Quality Patches Tool] : zoek naar patches op de pagina ](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html) . Gebruik de patch-id als een zoekwoord om de patch te zoeken.
 
 ## Probleem
 
@@ -65,7 +66,7 @@ U kunt geen bestelling plaatsen met een online betalingsmethode op goedgekeurde 
 Om individuele flarden toe te passen, gebruik de volgende verbindingen afhankelijk van uw plaatsingsmethode:
 
 * Op locatie Adobe Commerce of Magento Open Source: [[!DNL Quality Patches Tool] > Gebruik ](/help/tools/quality-patches-tool/usage.md) in de handleiding [!DNL Quality Patches Tool] .
-* Adobe Commerce op wolkeninfrastructuur: [ Verbeteringen en Patches > Pas Patches ](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html?lang=nl-NL) in Commerce op de gids van de Infrastructuur van de Wolk toe.
+* Adobe Commerce op wolkeninfrastructuur: [ Verbeteringen en Patches > Pas Patches ](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html) in Commerce op de gids van de Infrastructuur van de Wolk toe.
 
 ## Gerelateerde lezing
 

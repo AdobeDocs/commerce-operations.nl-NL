@@ -3,7 +3,9 @@ title: 'Overzicht: [!DNL Quality Patches Tool]  (QPT) v1.1.48'
 description: Deze subsectie verstrekt een gedetailleerde beschrijving van de kwesties die door de flarden beschikbaar in  [!DNL Quality Patches Tool]  (QPT) v1.1.48 worden bevestigd.
 feature: Tools and External Services
 role: Admin, Developer
-source-git-commit: d722ba5ba25ffc03d87b9eddeb2830353124055d
+exl-id: 250c88e9-1422-4af5-a0f0-32b15d9ab078
+type: Troubleshooting
+source-git-commit: 7fdb02a6d89d50ea593c5fd99d78101f89198424
 workflow-type: tm+mt
 source-wordcount: '294'
 ht-degree: 0%
@@ -28,4 +30,3 @@ QPT v1.1.48 omvat de volgende flarden:
 1. **ACSD-58008**: Bevestigt de kwestie waar het bijwerken van een geplande update de vorige versie van het gefaseerde punt verwijdert als geen einddatum wordt gespecificeerd.
 
 Gebruik het menu links om naar een specifieke patchpagina te navigeren.
-

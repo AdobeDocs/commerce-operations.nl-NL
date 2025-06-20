@@ -4,7 +4,8 @@ description: Deze subsectie biedt een gedetailleerde beschrijving van de problem
 feature: Tools and External Services
 role: Admin
 exl-id: 8cfc61bc-c082-40b5-b64d-68a4c30561fd
-source-git-commit: 81c78439f7c243437b7b76dc80560c847af95ace
+type: Troubleshooting
+source-git-commit: 7fdb02a6d89d50ea593c5fd99d78101f89198424
 workflow-type: tm+mt
 source-wordcount: '211'
 ht-degree: 0%
@@ -21,7 +22,7 @@ QPT v1.1.21 omvat de volgende flarden:
 1. **ACSD-46541**: Verhelpt de kwestie waar een admin gebruiker geen creditnota kan tot stand brengen als een orde punt wordt geschrapt.
 1. **ACSD-46581**: Verhelpt de kwestie waar het geschatte belastingtotaal niet na het selecteren van een land in het winkelwagentje wordt bijgewerkt.
 1. **ACSD-46618**: Verhelpt de kwestie waar de widget van de productlijst onjuiste caching prijzen voor een het programma geopende klant toont.
-1. **ACSD-46674**: Verhelpt de kwestie waar de douaneopties van een beeldtype als HTML in klantene-mails worden getoond.
+1. **ACSD-46674**: Verhelpt de kwestie waar de douaneopties van een beeldtype als HTML in klantene-mail worden getoond.
 1. **ACSD-46809**: Verhelpt de kwestie waar een gebruiker een fout krijgt wanneer het toewijzen van een groot aantal productbronnen.
 1. **ACSD-46856**: verbetert prestaties die laagprijzen via **[!UICONTROL System]** bijwerken > **[!UICONTROL Configuration]** > **[!UICONTROL Import]** > **[!UICONTROL Advanced Pricing]**.
 1. **ACSD-46988**: Verhelpt de kwestie waar het &quot;valuta&quot;API Verzoek van GraphQL ONGELDIGE waarden voor een douanemunt terugkeert.

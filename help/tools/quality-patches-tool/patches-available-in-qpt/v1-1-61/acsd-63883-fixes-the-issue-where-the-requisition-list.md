@@ -1,9 +1,11 @@
 ---
-title: 'ACSD-63883: Het bevestigen van onjuiste &grave; items_count &grave; in  [!DNL GraphQL]  reactie voor [!UICONTROL Requisition List]'
-description: Pas ACSD-63883 flard toe om de kwestie te bevestigen waar [!UICONTROL Requisition List] onjuiste &grave; items_count &grave; in de  [!DNL GraphQL]  reactie terugkeert.
+title: 'ACSD-63883: Het bevestigen van onjuiste ` items_count ` in  [!DNL GraphQL]  reactie voor [!UICONTROL Requisition List]'
+description: Pas ACSD-63883 flard toe om de kwestie te bevestigen waar [!UICONTROL Requisition List] onjuiste ` items_count ` in de  [!DNL GraphQL]  reactie terugkeert.
 feature: B2B, GraphQL
 role: Admin, Developer
-source-git-commit: 5d8b78588b11534828a9b925cbab0cc945860367
+exl-id: 8946d7fb-558a-4867-a843-a61715416f25
+type: Troubleshooting
+source-git-commit: 7fdb02a6d89d50ea593c5fd99d78101f89198424
 workflow-type: tm+mt
 source-wordcount: '298'
 ht-degree: 0%
@@ -26,7 +28,7 @@ De ACSD-63883-patch verhelpt het probleem waarbij de **[!UICONTROL Requisition L
 
 >[!NOTE]
 >
->De patch kan van toepassing worden op andere versies met nieuwe [!DNL Quality Patches Tool] versies. Om te controleren of de patch compatibel is met uw Adobe Commerce-versie, werkt u het `magento/quality-patches` -pakket bij naar de meest recente versie en controleert u de compatibiliteit op de [[!DNL Quality Patches Tool] : zoek naar patches op de pagina ](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html?lang=nl-NL) . Gebruik de patch-id als een zoekwoord om de patch te zoeken.
+>De patch kan van toepassing worden op andere versies met nieuwe [!DNL Quality Patches Tool] versies. Om te controleren of de patch compatibel is met uw Adobe Commerce-versie, werkt u het `magento/quality-patches` -pakket bij naar de meest recente versie en controleert u de compatibiliteit op de [[!DNL Quality Patches Tool] : zoek naar patches op de pagina ](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html) . Gebruik de patch-id als een zoekwoord om de patch te zoeken.
 
 ## Probleem
 
@@ -72,7 +74,7 @@ De **[!UICONTROL Requisition List]** retourneert een onjuiste `items_count` in h
 Om individuele flarden toe te passen, gebruik de volgende verbindingen afhankelijk van uw plaatsingsmethode:
 
 * Op locatie Adobe Commerce of Magento Open Source: [[!DNL Quality Patches Tool] > Gebruik ](/help/tools/quality-patches-tool/usage.md) in de handleiding [!DNL Quality Patches Tool] .
-* Adobe Commerce op wolkeninfrastructuur: [ Verbeteringen en Patches > Pas Patches ](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html?lang=nl-NL) in Commerce op de gids van de Infrastructuur van de Wolk toe.
+* Adobe Commerce op wolkeninfrastructuur: [ Verbeteringen en Patches > Pas Patches ](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html) in Commerce op de gids van de Infrastructuur van de Wolk toe.
 
 
 ## Gerelateerde lezing

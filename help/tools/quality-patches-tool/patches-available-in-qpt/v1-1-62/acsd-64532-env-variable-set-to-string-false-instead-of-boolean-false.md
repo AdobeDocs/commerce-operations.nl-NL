@@ -1,15 +1,16 @@
 ---
 title: 'ACSD-64532: ENV-variabele ingesteld op *false* wordt behandeld als een tekenreeks *false* in plaats van een BOOLEAN *FALSE*'
-description: Pas de ACSD-64532-patch toe om het Adobe Commerce-probleem op te lossen waarbij een 'ENV'-variabele ingesteld op *false* wordt behandeld als een tekenreeks *false* in plaats van een 'BOOLEAN&grave; *FALSE*.
+description: Pas de ACSD-64532-patch toe om het Adobe Commerce-probleem op te lossen waarbij een 'ENV'-variabele ingesteld op *false* wordt behandeld als een tekenreeks *false* in plaats van een 'BOOLEAN` *FALSE*.
 feature: Variables
 role: Admin, Developer
-source-git-commit: 603b4f92ab3bbf4702d5373bd02dfdd770f57d5b
+exl-id: 7940df1f-d527-4b57-bde7-7a0216b12436
+type: Troubleshooting
+source-git-commit: 7fdb02a6d89d50ea593c5fd99d78101f89198424
 workflow-type: tm+mt
 source-wordcount: '332'
 ht-degree: 0%
 
 ---
-
 
 # ACSD-64532: ENV-variabele ingesteld op &quot;false&quot; wordt behandeld als een tekenreeks &quot;false&quot; in plaats van een BOOLEAN FALSE
 
@@ -25,7 +26,7 @@ Adobe Commerce (alle implementatiemethoden) 2.4.6-p2 - 2.4.7-p4
 
 >[!NOTE]
 >
->De patch kan van toepassing worden op andere versies met nieuwe [!DNL Quality Patches Tool] versies. Om te controleren of de patch compatibel is met uw Adobe Commerce-versie, werkt u het `magento/quality-patches` -pakket bij naar de meest recente versie en controleert u de compatibiliteit op de [[!DNL Quality Patches Tool] : zoek naar patches op de pagina ](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html?lang=nl-NL) . Gebruik de patch-id als een zoekwoord om de patch te zoeken.
+>De patch kan van toepassing worden op andere versies met nieuwe [!DNL Quality Patches Tool] versies. Om te controleren of de patch compatibel is met uw Adobe Commerce-versie, werkt u het `magento/quality-patches` -pakket bij naar de meest recente versie en controleert u de compatibiliteit op de [[!DNL Quality Patches Tool] : zoek naar patches op de pagina ](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html) . Gebruik de patch-id als een zoekwoord om de patch te zoeken.
 
 ## Probleem
 
@@ -62,7 +63,7 @@ Adobe Commerce (alle implementatiemethoden) 2.4.6-p2 - 2.4.7-p4
 Om individuele flarden toe te passen, gebruik de volgende verbindingen afhankelijk van uw plaatsingsmethode:
 
 * Op locatie Adobe Commerce of Magento Open Source: [[!DNL Quality Patches Tool] > Gebruik ](/help/tools/quality-patches-tool/usage.md) in de handleiding [!DNL Quality Patches Tool] .
-* Adobe Commerce op wolkeninfrastructuur: [ Verbeteringen en Patches > Pas Patches ](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html?lang=nl-NL) in Commerce op de gids van de Infrastructuur van de Wolk toe.
+* Adobe Commerce op wolkeninfrastructuur: [ Verbeteringen en Patches > Pas Patches ](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html) in Commerce op de gids van de Infrastructuur van de Wolk toe.
 
 ## Gerelateerde lezing
 

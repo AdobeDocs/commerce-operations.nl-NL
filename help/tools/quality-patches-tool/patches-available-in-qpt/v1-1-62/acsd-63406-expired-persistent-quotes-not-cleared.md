@@ -3,13 +3,14 @@ title: 'ACSD-63406: Verlopen permanente aanhalingstekens niet gewist wanneer de 
 description: Pas de ACSD-63406-patch toe om het Adobe Commerce-probleem op te lossen waarbij de verlopen permanente aanhalingstekens niet worden gewist door een uitsnijdtaak wanneer de 'persistent_clear_expired''-uitsnijdtaak wordt uitgevoerd.
 feature: Quotes, Shopping Cart
 role: Admin, Developer
-source-git-commit: b3bb6ae825f4912b19e2d1f88b5d55835d9769ff
+exl-id: 795d1ddf-0d5b-406c-870b-36cb92cf07fa
+type: Troubleshooting
+source-git-commit: 7fdb02a6d89d50ea593c5fd99d78101f89198424
 workflow-type: tm+mt
 source-wordcount: '348'
 ht-degree: 0%
 
 ---
-
 
 # ACSD-63406: Verlopen permanente aanhalingstekens worden niet gewist wanneer de `persistent_clear_expired` snijtaak wordt uitgevoerd
 
@@ -27,7 +28,7 @@ De ACSD-63406-patch verhelpt het probleem dat verlopen permanente aanhalingsteke
 
 >[!NOTE]
 >
->De patch kan van toepassing worden op andere versies met nieuwe [!DNL Quality Patches Tool] versies. Om te controleren of de patch compatibel is met uw Adobe Commerce-versie, werkt u het `magento/quality-patches` -pakket bij naar de meest recente versie en controleert u de compatibiliteit op de [[!DNL Quality Patches Tool] : zoek naar patches op de pagina ](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html?lang=nl-NL) . Gebruik de patch-id als een zoekwoord om de patch te zoeken.
+>De patch kan van toepassing worden op andere versies met nieuwe [!DNL Quality Patches Tool] versies. Om te controleren of de patch compatibel is met uw Adobe Commerce-versie, werkt u het `magento/quality-patches` -pakket bij naar de meest recente versie en controleert u de compatibiliteit op de [[!DNL Quality Patches Tool] : zoek naar patches op de pagina ](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html) . Gebruik de patch-id als een zoekwoord om de patch te zoeken.
 
 ## Probleem
 
@@ -56,7 +57,7 @@ De `is_persistent` waarde voor het klantencitaat blijft *1* in de citaatlijst.
 Om individuele flarden toe te passen, gebruik de volgende verbindingen afhankelijk van uw plaatsingsmethode:
 
 * Op locatie Adobe Commerce of Magento Open Source: [[!DNL Quality Patches Tool] > Gebruik ](/help/tools/quality-patches-tool/usage.md) in de handleiding [!DNL Quality Patches Tool] .
-* Adobe Commerce op wolkeninfrastructuur: [ Verbeteringen en Patches > Pas Patches ](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html?lang=nl-NL) in Commerce op de gids van de Infrastructuur van de Wolk toe.
+* Adobe Commerce op wolkeninfrastructuur: [ Verbeteringen en Patches > Pas Patches ](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html) in Commerce op de gids van de Infrastructuur van de Wolk toe.
 
 
 ## Gerelateerde lezing

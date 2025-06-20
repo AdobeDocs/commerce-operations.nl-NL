@@ -3,7 +3,9 @@ title: 'ACSD-62755: [!DNL TinyMCE]  7 behoeften doopvontgrootte en doopvont die 
 description: Pas ACSD-62755 flard toe om de kwestie van Adobe Commerce te bevestigen waar  [!DNL TinyMCE]  7 *font size* en *font familie* vereist om specifiek binnen de montages van de redactierinitialisatie worden toegevoegd.
 feature: Page Content, Page Builder, Admin Workspace
 role: Admin, Developer
-source-git-commit: 4aba81ea12cc08370881d3cc108e94ba410a2198
+exl-id: f61dc7b6-ac6b-45eb-a0a2-f3f0bff4422b
+type: Troubleshooting
+source-git-commit: 7fdb02a6d89d50ea593c5fd99d78101f89198424
 workflow-type: tm+mt
 source-wordcount: '305'
 ht-degree: 0%
@@ -26,7 +28,7 @@ Adobe Commerce (alle implementatiemethoden) 2.4.4-p11, 2.4.5-p10, 2.4.6-p8, 2.4.
 
 >[!NOTE]
 >
->De patch kan van toepassing worden op andere versies met nieuwe [!DNL Quality Patches Tool] versies. Om te controleren of de patch compatibel is met uw Adobe Commerce-versie, werkt u het `magento/quality-patches` -pakket bij naar de meest recente versie en controleert u de compatibiliteit op de [[!DNL Quality Patches Tool] : zoek naar patches op de pagina ](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html?lang=nl-NL) . Gebruik de patch-id als een zoekwoord om de patch te zoeken.
+>De patch kan van toepassing worden op andere versies met nieuwe [!DNL Quality Patches Tool] versies. Om te controleren of de patch compatibel is met uw Adobe Commerce-versie, werkt u het `magento/quality-patches` -pakket bij naar de meest recente versie en controleert u de compatibiliteit op de [[!DNL Quality Patches Tool] : zoek naar patches op de pagina ](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html) . Gebruik de patch-id als een zoekwoord om de patch te zoeken.
 
 ## Probleem
 
@@ -42,14 +44,14 @@ Ga naar **[!UICONTROL Catalog]** > **[!UICONTROL Products]** > **[!UICONTROL Con
 
 <u> Ware resultaten </u>:
 
-*selecteur van de grootte van het 1&rbrace; doopvont* mist van de redacteur van WYSIWYG.
+*selecteur van de grootte van het 1} doopvont* mist van de redacteur van WYSIWYG.
 
 ## De patch toepassen
 
 Om individuele flarden toe te passen, gebruik de volgende verbindingen afhankelijk van uw plaatsingsmethode:
 
-* Adobe Commerce of Magento Open Source op locatie: [[!DNL Quality Patches Tool]  > Gebruik ](/help/tools/quality-patches-tool/usage.md) in de handleiding [!DNL Quality Patches Tool] .
-* Adobe Commerce op wolkeninfrastructuur: [ Verbeteringen en Patches > Pas Patches ](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html?lang=nl-NL) in Commerce op de gids van de Infrastructuur van de Wolk toe.
+* Op locatie Adobe Commerce of Magento Open Source: [[!DNL Quality Patches Tool] > Gebruik ](/help/tools/quality-patches-tool/usage.md) in de handleiding [!DNL Quality Patches Tool] .
+* Adobe Commerce op wolkeninfrastructuur: [ Verbeteringen en Patches > Pas Patches ](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html) in Commerce op de gids van de Infrastructuur van de Wolk toe.
 
 ## Gerelateerde lezing
 

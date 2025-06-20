@@ -4,7 +4,8 @@ description: Deze subsectie biedt een gedetailleerde beschrijving van de problem
 feature: Tools and External Services
 role: Admin, Developer
 exl-id: 6116f566-2ff8-4148-ab60-cec65f9b7a6f
-source-git-commit: 81c78439f7c243437b7b76dc80560c847af95ace
+type: Troubleshooting
+source-git-commit: 7fdb02a6d89d50ea593c5fd99d78101f89198424
 workflow-type: tm+mt
 source-wordcount: '270'
 ht-degree: 0%
@@ -27,6 +28,6 @@ QPT v1.1.39 omvat de volgende flarden:
 1. **ACSD-54776**: Verhelpt de kwestie waar niet gecontroleerd *[!UICONTROL Use Default Value]* en niet-standaard productgebiedwaarden niet voor de tweede website, opslag, en opslagmening worden bewaard.
 1. **ACSD-53998**: Verhelpt de kwestie waar a **[!UICONTROL Dynamic Block]** die op a **[!UICONTROL Customer Segment]** wordt gebaseerd niet correct na het programma openen van een klantenrekening werkt.
 1. **ACSD-53204**: Bevestigt *het product kan niet worden bewaard.* fout bij het gelijktijdig indienen van aanvragen om afbeeldingen toe te voegen aan de productgalerie met behulp van het `rest/V1/products/<sku>/media` -eindpunt.
-1. **ACSD-47657**: voegde een caching mechanisme voor de geloofsbrieven van AWS toe. Een geloofsbrieven leverancier gebruikt nu het geheime voorgeheugen van het Magento aan geheim voorgeheugengeloofsbrieven die van AWS voor configuratie EC2 worden teruggewonnen.
+1. **ACSD-47657**: voegde een caching mechanisme voor de geloofsbrieven van AWS toe. Een geloofsbrieven leverancier gebruikt nu het geheime voorgeheugen van Magento om geloofsbrieven in het voorgeheugen onder te brengen die van AWS voor configuratie EC2 worden teruggewonnen.
 
 Gebruik het menu links om naar een specifieke patchpagina te navigeren.

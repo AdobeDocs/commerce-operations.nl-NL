@@ -3,13 +3,14 @@ title: 'ACSD-63329: Datum- en tijdkenmerken worden niet ingesteld bij het maken 
 description: Pas de ACSD-63329-patch toe om het Adobe Commerce-probleem op te lossen, waarbij geen standaardwaarden zijn ingesteld voor de datum- en tijdvelden wanneer u producten maakt met de REST API.
 feature: REST
 Role: Admin, Developers
-source-git-commit: a7d719399425016da26c1065725a377bb82795f4
+exl-id: d8e7917b-07a5-465b-944b-fd6168dea63c
+type: Troubleshooting
+source-git-commit: 7fdb02a6d89d50ea593c5fd99d78101f89198424
 workflow-type: tm+mt
 source-wordcount: '376'
 ht-degree: 0%
 
 ---
-
 
 # ACSD-63329: standaardwaarden voor datum- en tijdvelden worden niet ingesteld bij het maken van producten met de REST API
 
@@ -27,7 +28,7 @@ De ACSD-63329-patch verhelpt het probleem dat er geen standaardwaarden zijn inge
 
 >[!NOTE]
 >
->De patch kan van toepassing worden op andere versies met nieuwe [!DNL Quality Patches Tool] versies. Om te controleren of de patch compatibel is met uw Adobe Commerce-versie, werkt u het `magento/quality-patches` -pakket bij naar de meest recente versie en controleert u de compatibiliteit op de [[!DNL Quality Patches Tool] : zoek naar patches op de pagina ](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html?lang=nl-NL) . Gebruik de patch-id als een zoekwoord om de patch te zoeken.
+>De patch kan van toepassing worden op andere versies met nieuwe [!DNL Quality Patches Tool] versies. Om te controleren of de patch compatibel is met uw Adobe Commerce-versie, werkt u het `magento/quality-patches` -pakket bij naar de meest recente versie en controleert u de compatibiliteit op de [[!DNL Quality Patches Tool] : zoek naar patches op de pagina ](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html) . Gebruik de patch-id als een zoekwoord om de patch te zoeken.
 
 ## Probleem
 
@@ -35,9 +36,9 @@ Standaardwaarden worden niet ingesteld voor de datum- en tijdvelden wanneer u pr
 
 <u> Stappen om </u> te reproduceren:
 
-1. Maak een **[!UICONTROL Product]** -kenmerk, stel de standaardwaarde ervan in op `12/31/2020` en stel **[!UICONTROL Catalog Input Type for Store Owner]** in op ***[!UICONTROL Date]*** of *** [!UICONTROL Date and Time] &#x200B;***.
+1. Maak een **[!UICONTROL Product]** -kenmerk, stel de standaardwaarde ervan in op `12/31/2020` en stel **[!UICONTROL Catalog Input Type for Store Owner]** in op ***[!UICONTROL Date]*** of *** [!UICONTROL Date and Time] ***.
 1. Creeer een ander teksttypeattribuut en plaats de standaardwaarde aan ***testwaarde***.
-1. Maak een nieuw product met een REST API-POST-aanvraag voor `/rest/all/V1/products/` .
+1. Maak een nieuw product met een REST API POST request to `/rest/all/V1/products/`.
 
    ```
        {
@@ -73,8 +74,8 @@ De standaardwaarde wordt opgeslagen voor het kenmerk **[!UICONTROL Text]** , maa
 
 Om individuele flarden toe te passen, gebruik de volgende verbindingen afhankelijk van uw plaatsingsmethode:
 
-* Adobe Commerce of Magento Open Source op locatie: [[!DNL Quality Patches Tool]  > Gebruik ](/help/tools/quality-patches-tool/usage.md) in de handleiding [!DNL Quality Patches Tool] .
-* Adobe Commerce op wolkeninfrastructuur: [ Verbeteringen en Patches > Pas Patches ](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html?lang=nl-NL) in Commerce op de gids van de Infrastructuur van de Wolk toe.
+* Op locatie Adobe Commerce of Magento Open Source: [[!DNL Quality Patches Tool] > Gebruik ](/help/tools/quality-patches-tool/usage.md) in de handleiding [!DNL Quality Patches Tool] .
+* Adobe Commerce op wolkeninfrastructuur: [ Verbeteringen en Patches > Pas Patches ](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html) in Commerce op de gids van de Infrastructuur van de Wolk toe.
 
 ## Gerelateerde lezing
 
