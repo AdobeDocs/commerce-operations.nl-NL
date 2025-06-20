@@ -2,9 +2,9 @@
 title: Uitvoer van module uitschakelen
 description: Leer hoe u uitvoer van modules uitschakelt.
 exl-id: af556bf5-8454-4d65-8ac8-4a64c108f092
-source-git-commit: 95ffff39d82cc9027fa633dffedf15193040802d
+source-git-commit: fee09845777e23717e618ac57df4158d6b172d4f
 workflow-type: tm+mt
-source-wordcount: '348'
+source-wordcount: '362'
 ht-degree: 0%
 
 ---
@@ -101,4 +101,7 @@ De procedure voor het onbruikbaar maken van moduleoutput op één enkel geval va
    ```
 
 In dit voorbeeld is de uitvoer voor de module `Magento_Review` uitgeschakeld en kunnen klanten geen producten meer controleren.
-Stel de waarde in op `0` om de uitvoer opnieuw in te schakelen.
+
+### Moduleuitvoer opnieuw inschakelen
+
+Als u de uitvoer weer wilt inschakelen, stelt u de waarde voor de module in op `0` of verwijdert u de regel of module uit het `config.php` -bestand.
