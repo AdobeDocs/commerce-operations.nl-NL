@@ -1,6 +1,6 @@
 ---
 title: 'ACSD-49129: kenmerk "Content" wordt niet geretourneerd in API-reacties voor productmedia'
-description: Pas de ACSD-49129-patch toe om het Adobe Commerce-probleem op te lossen, waarbij het *content*-kenmerk (*base64 image code*) niet wordt geretourneerd in de reacties van de product media-API van "rest/V1/products/sku/media`.
+description: Pas de ACSD-49129-patch toe om het Adobe Commerce-probleem op te lossen, waarbij het *content*-kenmerk (*base64 image code*) niet wordt geretourneerd in de reacties van de product media-API van "rest/V1/products/sku/media&grave;.
 feature: REST, Attributes, Media, Page Content, Products
 role: Admin
 exl-id: 5235b7d1-4ebf-4cfb-8605-47614306a122

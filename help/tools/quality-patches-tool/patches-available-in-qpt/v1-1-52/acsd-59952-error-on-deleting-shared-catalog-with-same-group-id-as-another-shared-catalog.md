@@ -1,6 +1,6 @@
 ---
 title: 'ACSD-59952: Fout bij verwijderen van gedeelde catalogus met dezelfde groep-id als een andere gedeelde catalogus'
-description: Pas de ACSD-59952-patch toe om het Adobe Commerce-probleem op te lossen waarbij een fout optreedt bij het verwijderen van een gedeelde catalogus met dezelfde ` customer_group_id' als een andere gedeelde catalogus.
+description: Pas de ACSD-59952-patch toe om het Adobe Commerce-probleem op te lossen waarbij een fout optreedt bij het verwijderen van een gedeelde catalogus met dezelfde &grave; customer_group_id' als een andere gedeelde catalogus.
 feature: B2B, REST
 role: Admin, Developer
 exl-id: 11cba2e6-dd62-4063-a38c-b98ea70a72e9

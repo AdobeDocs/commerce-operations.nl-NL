@@ -44,7 +44,7 @@ Ga naar **[!UICONTROL Catalog]** > **[!UICONTROL Products]** > **[!UICONTROL Con
 
 <u> Ware resultaten </u>:
 
-*selecteur van de grootte van het 1} doopvont* mist van de redacteur van WYSIWYG.
+*selecteur van de grootte van het 1&rbrace; doopvont* mist van de redacteur van WYSIWYG.
 
 ## De patch toepassen
 

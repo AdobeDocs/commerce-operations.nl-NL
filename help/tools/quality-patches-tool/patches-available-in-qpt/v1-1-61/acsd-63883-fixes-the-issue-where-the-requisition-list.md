@@ -1,6 +1,6 @@
 ---
-title: 'ACSD-63883: Het bevestigen van onjuiste ` items_count ` in  [!DNL GraphQL]  reactie voor [!UICONTROL Requisition List]'
-description: Pas ACSD-63883 flard toe om de kwestie te bevestigen waar [!UICONTROL Requisition List] onjuiste ` items_count ` in de  [!DNL GraphQL]  reactie terugkeert.
+title: 'ACSD-63883: Het bevestigen van onjuiste &grave; items_count &grave; in  [!DNL GraphQL]  reactie voor [!UICONTROL Requisition List]'
+description: Pas ACSD-63883 flard toe om de kwestie te bevestigen waar [!UICONTROL Requisition List] onjuiste &grave; items_count &grave; in de  [!DNL GraphQL]  reactie terugkeert.
 feature: B2B, GraphQL
 role: Admin, Developer
 exl-id: 8946d7fb-558a-4867-a843-a61715416f25
