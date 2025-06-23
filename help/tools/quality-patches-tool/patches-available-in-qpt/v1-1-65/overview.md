@@ -5,9 +5,9 @@ feature: Tools and External Services
 role: Admin, Developer
 type: Troubleshooting
 exl-id: 6cfe4f4c-cdb3-49b3-84d0-ad794dfcafc3
-source-git-commit: b1912bbc5aabd36067563326ee5c6bb84e14441d
+source-git-commit: 773bc7a5b34a2b5f7314929be435c842a755de54
 workflow-type: tm+mt
-source-wordcount: '163'
+source-wordcount: '162'
 ht-degree: 0%
 
 ---
@@ -23,7 +23,7 @@ QPT v1.1.65 omvat de volgende flarden:
 1. **ACSD-65202**: **[!UICONTROL My Account]** de pagina toont geen recente orden van andere opslagmeningen.
 1. **ACSD-65254**: E-mailbericht niet verzonden na het bijwerken van klantene-mail via `updateCustomerEmail` mutatie van GraphQL.
 1. **ACSD-65331**: De geselecteerde opslag in **[!UICONTROL Pick in Store]** wordt ontruimd na het terugkeren aan checkout pagina.
-1. **ACSD-65822**: Bundel en configureerbare producthoeveelheden die niet correct in het winkelwagentje worden weerspiegeld.
+1. **ACSD-65822**: Bundel en configureerbare producthoeveelheden die niet correct in [!UICONTROL Shopping Cart] worden weerspiegeld.
 1. **ACSD-66093**: De gebieden van de de klantennaam van de gast staan e-mailinput toe die ongeldige orde e-mails veroorzaakt.
 
 Gebruik het menu links om naar een specifieke patchpagina te navigeren.
