@@ -3,9 +3,9 @@ title: AWS S3-emmertje voor externe opslag configureren
 description: Configureer uw Commerce-project voor gebruik van de AWS S3-opslagservice voor externe opslag.
 feature: Configuration, Storage
 exl-id: e8aeade8-2ec4-4844-bd6c-ab9489d10436
-source-git-commit: af45ac46afffeef5cd613628b2a98864fd7da69b
+source-git-commit: 3f45b61a2f4fd6db161c66182212f3aff5900e26
 workflow-type: tm+mt
-source-wordcount: '299'
+source-wordcount: '328'
 ht-degree: 0%
 
 ---
@@ -43,6 +43,10 @@ De [ Eenvoudige Dienst van de Opslag van Amazon (Amazon S3) ][AWS S3] is de dien
    ```
 
 ## Nginx configureren
+
+>[!NOTE]
+>
+>Deze aanpak is niet van toepassing op Adobe Commerce voor cloudinfrastructuurprojecten. Nginx kan niet worden geconfigureerd op Adobe Commerce op cloudinfrastructuur. Zie [ wolk-specifieke documentatie ](cloud-support.md) voor meer informatie.
 
 Nginx vereist extra configuratie om Authentificatie met de `proxy_pass` richtlijn uit te voeren. Voeg de volgende proxygegevens toe aan het `nginx.conf` -bestand:
 
