@@ -4,13 +4,13 @@ description: Pas ACSD-64813 flard toe om de kwestie van Adobe Commerce te bevest
 feature: B2B, REST, Categories
 role: Admin, Developer
 type: Troubleshooting
-source-git-commit: 0ed4bde6d78429da5a375a8c50f6b348db5a5ad5
+exl-id: e6fd89c2-d3c0-462f-b328-7a80b456d96d
+source-git-commit: 239a9efcc2ae231b337f654e4e36e6119e6eff7e
 workflow-type: tm+mt
 source-wordcount: '368'
 ht-degree: 0%
 
 ---
-
 
 # ACSD-64813: het ongedaan maken van de toewijzing van categorieën in [!DNL B2B] gedeelde catalogus via REST API gaat langzaam
 
@@ -28,7 +28,7 @@ De ACSD-64813-patch verhelpt het probleem dat het verwijderen van de toewijzing 
 
 >[!NOTE]
 >
->De patch kan van toepassing worden op andere versies met nieuwe [!DNL Quality Patches Tool] versies. Om te controleren of de patch compatibel is met uw Adobe Commerce-versie, werkt u het `magento/quality-patches` -pakket bij naar de meest recente versie en controleert u de compatibiliteit op de [[!DNL Quality Patches Tool] : zoek naar patches op de pagina ](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html?lang=nl-NL) . Gebruik de patch-id als een zoekwoord om de patch te zoeken.
+>De patch kan van toepassing worden op andere versies met nieuwe [!DNL Quality Patches Tool] versies. Om te controleren of de patch compatibel is met uw Adobe Commerce-versie, werkt u het `magento/quality-patches` -pakket bij naar de meest recente versie en controleert u de compatibiliteit op de [[!DNL Quality Patches Tool] : zoek naar patches op de pagina ](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html) . Gebruik de patch-id als een zoekwoord om de patch te zoeken.
 
 ## Probleem
 
@@ -38,29 +38,29 @@ Het verwijderen van de toewijzing van categorieën in een [!DNL B2B] gedeelde ca
 
 1. Schakel **[!UICONTROL B2B]** , **[!UICONTROL Company]** en **[!UICONTROL Shared Catalog]** in.
 1. Genereer 30.000 actieve producten in voorraad.
-1. Creeer a [ douane gedeelde catalogus ](https://experienceleague.adobe.com/nl/docs/commerce-admin/b2b/shared-catalogs/catalog-shared#actions-controls) en wijs alle producten aan het toe.
+1. Creeer a [ douane gedeelde catalogus ](https://experienceleague.adobe.com/en/docs/commerce-admin/b2b/shared-catalogs/catalog-shared#actions-controls) en wijs alle producten aan het toe.
 1. Maak een nieuwe categorie onder de standaardhoofdcategorie en wijs er een aantal producten aan toe.
 1. Gebruik het beheerdertoken om het REST API-eindpunt `rest/all/V1/sharedCatalog/<shared_catalog_id>/assignCategories` aan te roepen met de nieuwe categorie-id.
 
-```
-{
-  "categories": [
-    { "id": <new category id> }
-  ]
-}
-```
+   ```
+   {
+     "categories": [
+       { "id": <new category id> }
+     ]
+   }
+   ```
 
 1. Bevestig de reactie *waar* is.
 1. Voer `bin/magento cron:run` twee keer uit of voer een nieuwe index uit.
 1. Gebruik het beheerdertoken om het REST API-eindpunt `rest/all/V1/sharedCatalog/<shared_catalog_id>/unassignCategories` aan te roepen met de nieuwe categorie-id.
 
-```
-{
-  "categories": [
-    { "id": <new category id> }
-  ]
-}
-```
+   ```
+   {
+     "categories": [
+       { "id": <new category id> }
+     ]
+   }
+   ```
 
 <u> Verwachte resultaten </u>:
 
@@ -75,7 +75,7 @@ De uitvoering neemt ongeveer 30 minuten in beslag of resulteert in een time-outf
 Om individuele flarden toe te passen, gebruik de volgende verbindingen afhankelijk van uw plaatsingsmethode:
 
 * Op locatie Adobe Commerce of Magento Open Source: [[!DNL Quality Patches Tool] > Gebruik ](/help/tools/quality-patches-tool/usage.md) in de handleiding [!DNL Quality Patches Tool] .
-* Adobe Commerce op wolkeninfrastructuur: [ Verbeteringen en Patches > Pas Patches ](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html?lang=nl-NL) in Commerce op de gids van de Infrastructuur van de Wolk toe.
+* Adobe Commerce op wolkeninfrastructuur: [ Verbeteringen en Patches > Pas Patches ](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html) in Commerce op de gids van de Infrastructuur van de Wolk toe.
 
 ## Gerelateerde lezing
 
