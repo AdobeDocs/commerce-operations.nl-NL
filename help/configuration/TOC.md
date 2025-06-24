@@ -2,9 +2,9 @@
 user-guide-title: Configuratiegids
 user-guide-description: Configureer uw Adobe Commerce-toepassingsfuncties en -services.
 feature: Configuration
-source-git-commit: ddf988826c29b4ebf054a4d4fb5f4c285662ef4e
+source-git-commit: 1850301e0b7f1abbc54613209940dd63d16ef145
 workflow-type: tm+mt
-source-wordcount: '354'
+source-wordcount: '367'
 ht-degree: 0%
 
 ---
@@ -13,10 +13,10 @@ ht-degree: 0%
 # Configuratiegids {#configuration-guide}
 
 + [Overzicht](overview.md)
-+ Algemene instellingen {#setup}
++ Algemene instelling {#setup}
    + [Initialisatie en bootstrap van toepassingen](bootstrap/initialization.md)
    + [Toepassingsmodi](bootstrap/application-modes.md)
-   + [Parameters Bootstrap](bootstrap/set-parameters.md)
+   + [Bootstrap-parameters](bootstrap/set-parameters.md)
    + [Profielen](bootstrap/mage-profiler.md)
    + [Basismappaden](bootstrap/mage-directory.md)
 + Implementatie {#deployment}
@@ -41,6 +41,10 @@ ht-degree: 0%
       + [Redis configureren](cache/config-redis.md)
       + [Redis gebruiken voor standaardcache](cache/redis-pg-cache.md)
       + [Redis gebruiken voor sessieopslag](cache/redis-session.md)
+   + Valkey {#valkey}
+      + [Valkey configureren](cache/config-valkey.md)
+      + [Valkey gebruiken voor standaardcache](cache/valkey-pg-cache.md)
+      + [Valkey gebruiken voor sessieopslag](cache/valkey-session.md)
    + Varnish {#varnish}
       + [Varnish, overzicht](cache/config-varnish.md)
       + [Varnish installeren](cache/config-varnish-install.md)
@@ -100,7 +104,7 @@ ht-degree: 0%
    + [Cron jobs and groups](cron/custom-cron.md)
    + [Referentie voor curven aanpassen](cron/custom-cron-reference.md)
    + [Een aangepaste uitsnijdtaak configureren](cron/custom-cron-tutorial.md)
-+ Logs {#logs}
++ Logboeken {#logs}
    + [Aangepaste logbestanden](logs/custom-logging.md)
    + [Aanmeldingsinterface](logs/logger-interface.md)
    + [Logboekdatabaseactiviteit](logs/database-activity.md)
@@ -146,4 +150,4 @@ ht-degree: 0%
       + [Gesplitste database verifiëren](storage/multi-master-verify.md)
       + [Database-replicatie](storage/multi-master-replication.md)
       + [Eén database herstellen](storage/revert-split-database.md)
-+ [ Terugkeer aan Operationele Gidsen ](https://experienceleague.adobe.com/docs/commerce-operations/operational-guides/home.html?lang=nl-NL)
++ [ Terugkeer aan Operationele Gidsen ](https://experienceleague.adobe.com/docs/commerce-operations/operational-guides/home.html)

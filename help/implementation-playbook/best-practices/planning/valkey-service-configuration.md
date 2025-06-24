@@ -3,9 +3,10 @@ title: Aanbevolen procedures voor Valkey-serviceconfiguratie
 description: Leer hoe u de prestaties in cache kunt verbeteren met de uitgebreide Valkey-cacheimplementatie voor Adobe Commerce.
 role: Developer, Admin
 feature: Best Practices, Cache
-source-git-commit: 107b5bb19c3375be64c216bd89feb8410e2fc2bd
+exl-id: ca1598b0-07c6-4338-aed1-f2ba05375197
+source-git-commit: 1ab977bf2b30c2851609f0bfcc636978e974f07a
 workflow-type: tm+mt
-source-wordcount: '682'
+source-wordcount: '672'
 ht-degree: 0%
 
 ---
@@ -24,13 +25,13 @@ stage:
     VALKEY_BACKEND: '\Magento\Framework\Cache\Backend\RemoteSynchronizedCache'
 ```
 
-Voor milieuconfiguratie op de infrastructuur van de Wolk, zie [`VALKEY_BACKEND` ](https://experienceleague.adobe.com/nl/docs/commerce-on-cloud/user-guide/configure/env/stage/variables-deploy#valkey_backend) in _Commerce op de Gids van de Infrastructuur van de Wolk_.
+Voor milieuconfiguratie op de infrastructuur van de Wolk, zie [`VALKEY_BACKEND` ](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/configure/env/stage/variables-deploy#valkey_backend) in _Commerce op de Gids van de Infrastructuur van de Wolk_.
 
-Voor installaties op-gebouw, zie [ Valkey pagina caching ](../../../configuration/cache/redis-pg-cache.md#configure-redis-page-caching) in de _Gids van de Configuratie_ vormen.
+Voor installaties op-gebouw, zie [ Valkey pagina caching ](../../../configuration/cache/valkey-pg-cache.md#configure-page-caching) in de _Gids van de Configuratie_ vormen.
 
 >[!NOTE]
 >
->Controleer of u de nieuwste versie van het pakket `ece-tools` gebruikt. Als niet, [ verbetering aan de recentste versie ](https://experienceleague.adobe.com/nl/docs/commerce-on-cloud/user-guide/dev-tools/ece-tools/update-package). U kunt de versie controleren die in uw lokale omgeving is geïnstalleerd met de opdracht `composer show magento/ece-tools` CLI.
+>Controleer of u de nieuwste versie van het pakket `ece-tools` gebruikt. Als niet, [ verbetering aan de recentste versie ](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/dev-tools/ece-tools/update-package). U kunt de versie controleren die in uw lokale omgeving is geïnstalleerd met de opdracht `composer show magento/ece-tools` CLI.
 
 ### Grootte van L2-cachegeheugen (Adobe Commerce Cloud)
 
@@ -86,11 +87,11 @@ stage:
 
 Voor meer details, zie [ VALKEY_USE_SLAVE_CONNECTION ](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/configure/env/stage/variables-deploy.html#valkey_use_slave_connection) in _Commerce op de Gids van de Infrastructuur van de Wolk_.
 
-Voor Adobe Commerce-installaties op locatie configureert u de nieuwe Valkey-casimplementatie met behulp van de `bin/magento:setup` -opdrachten. Voor meer informatie, zie [ Valkey van het Gebruik voor standaardgeheime voorgeheugen ](../../../configuration/cache/redis-pg-cache.md#configure-redis-page-caching) in de _Gids van de Configuratie_.
+Voor Adobe Commerce-installaties op locatie configureert u de nieuwe Valkey-casimplementatie met behulp van de `bin/magento:setup` -opdrachten. Voor meer informatie, zie [ Valkey van het Gebruik voor standaardgeheime voorgeheugen ](../../../configuration/cache/valkey-pg-cache.md#configure-page-caching) in de _Gids van de Configuratie_.
 
 >[!WARNING]
 >
->Vorm __ geen Valkeyslave verbinding voor de projecten van de wolkeninfrastructuur met a [ geschraapte/gespleten architectuur ](https://experienceleague.adobe.com/nl/docs/commerce-on-cloud/user-guide/architecture/scaled-architecture). Dit veroorzaakt Redis verbindingsfouten. Voor meer informatie, voor meer informatie, zie [ opnieuw configuratiebegeleiding ](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/configure/env/stage/variables-deploy.html#redis_use_slave_connection) in _Commerce op de gids van de Infrastructuur van de Wolk_.
+>Vorm __ geen Valkeyslave verbinding voor de projecten van de wolkeninfrastructuur met a [ geschraapte/gespleten architectuur ](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/architecture/scaled-architecture). Dit veroorzaakt verbindingsfouten van Valkey. Voor meer informatie, voor meer informatie, zie de [ Valkey configuratiebegeleiding ](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/configure/env/stage/variables-deploy#valkey_use_slave_connection) in _Commerce op de gids van de Infrastructuur van de Wolk_.
 
 ## Toetsen vooraf laden
 
@@ -113,7 +114,7 @@ stage:
               - '061_SYSTEM_DEFAULT:hash'
 ```
 
-Voor installaties op-gebouw, zie [ Valkey preload eigenschap ](../../../configuration/cache/redis-pg-cache.md#redis-preload-feature) in de _Gids van de Configuratie_.
+Voor installaties op-gebouw, zie [ Valkey preload eigenschap ](../../../configuration/cache/valkey-pg-cache.md#valkey-preload-feature) in de _Gids van de Configuratie_.
 
 ## Ophaalcache inschakelen
 
@@ -152,7 +153,7 @@ stage:
 
 >[!NOTE]
 >
->In het vorige voorbeeld, is het `full_page` geheime voorgeheugen niet relevant voor Adobe Commerce op de projecten van de wolkeninfrastructuur, omdat zij [ Fastly ](https://experienceleague.adobe.com/nl/docs/commerce-on-cloud/user-guide/cdn/fastly) gebruiken.
+>In het vorige voorbeeld, is het `full_page` geheime voorgeheugen niet relevant voor Adobe Commerce op de projecten van de wolkeninfrastructuur, omdat zij [ Fastly ](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/cdn/fastly) gebruiken.
 
 Voor het vormen van installaties op-gebouw, zie [ het geheim voorgeheugenopties van de Stale ](../../../configuration/cache/level-two-cache.md#stale-cache-options) in de _Gids van de Configuratie_.
 
@@ -172,7 +173,7 @@ W:   - Installing colinmollenhour/php-redis-session-abstract (v1.4.5): Extractin
 
 ## Cachecompressie
 
-Als u meer dan 6 GB Valkey `maxmemory` gebruikt, kunt u cachecompressie gebruiken om de ruimte te verminderen die door de sleutels wordt verbruikt. Houd er rekening mee dat er een compromis is met de prestaties aan de clientzijde. Als je reservekopiecapaciteiten hebt, stelt Adobe voor ze in te schakelen. Zie [ Redis van het Gebruik voor zittingsopslag ](../../../configuration/cache/redis-session.md) in de _Gids van de Configuratie_.
+Als u meer dan 6 GB Valkey `maxmemory` gebruikt, kunt u cachecompressie gebruiken om de ruimte te verminderen die door de sleutels wordt verbruikt. Houd er rekening mee dat er een compromis is met de prestaties aan de clientzijde. Als je reservekopiecapaciteiten hebt, stelt Adobe voor ze in te schakelen. Zie [ Valkey van het Gebruik voor zittingsopslag ](../../../configuration/cache/valkey-session.md) in de _Gids van de Configuratie_.
 
 ```yaml
 stage:
@@ -188,8 +189,3 @@ stage:
             compress_threshold: 20480     # do not compress files smaller than this value
             compression_lib: 'gzip'       # snappy and lzf for performance, gzip for high compression (~70%)
 ```
-
-## Aanvullende informatie
-
-- [Paginacache opnieuw weergeven](../../../configuration/cache/redis-pg-cache.md)
-- [Redis gebruiken voor sessieopslag](../../../configuration/cache/redis-session.md)
