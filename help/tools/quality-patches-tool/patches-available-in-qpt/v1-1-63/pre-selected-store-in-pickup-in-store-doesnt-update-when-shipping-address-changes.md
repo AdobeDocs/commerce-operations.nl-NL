@@ -1,13 +1,13 @@
 ---
-title: Vooraf geselecteerde winkel in 'Ophalen in winkel' werkt niet bij wanneer het verzendadres verandert
+title: 'ACSD-64753: vooraf geselecteerde opslag in afhalen in winkel wordt niet bijgewerkt wanneer het verzendadres verandert'
 description: Pas de ACSD-64753-patch toe om het Adobe Commerce-probleem op te lossen waarbij de vooraf geselecteerde winkel niet werd bijgewerkt toen een nieuw verzendadres buiten de serviceradius van de geselecteerde winkel werd ingevoerd.
 feature: Inventory
 role: Admin, Developer
 exl-id: 4efc99d6-88a3-43f9-88d4-dedb9d8a269e
 type: Troubleshooting
-source-git-commit: 7fdb02a6d89d50ea593c5fd99d78101f89198424
+source-git-commit: 036c1b81d9ec8f55f002446a8ea6078c6f8014d9
 workflow-type: tm+mt
-source-wordcount: '438'
+source-wordcount: '442'
 ht-degree: 0%
 
 ---
@@ -28,7 +28,7 @@ De ACSD-64753-patch verhelpt het probleem waarbij de vooraf geselecteerde winkel
 
 >[!NOTE]
 >
->De patch kan van toepassing worden op andere versies met nieuwe [!DNL Quality Patches Tool] versies. Om te controleren of de patch compatibel is met uw Adobe Commerce-versie, werkt u het `magento/quality-patches` -pakket bij naar de meest recente versie en controleert u de compatibiliteit op de [[!DNL Quality Patches Tool] : zoek naar patches op de pagina ](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html?lang=nl-NL) . Gebruik de patch-id als een zoekwoord om de patch te zoeken.
+>De patch kan van toepassing worden op andere versies met nieuwe [!DNL Quality Patches Tool] versies. Om te controleren of de patch compatibel is met uw Adobe Commerce-versie, werkt u het `magento/quality-patches` -pakket bij naar de meest recente versie en controleert u de compatibiliteit op de [[!DNL Quality Patches Tool] : zoek naar patches op de pagina ](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html) . Gebruik de patch-id als een zoekwoord om de patch te zoeken.
 
 ## Probleem
 
@@ -67,7 +67,7 @@ De Illinois-bron kan worden gekozen en de klant kan doorgaan met uitchecken.
 Om individuele flarden toe te passen, gebruik de volgende verbindingen afhankelijk van uw plaatsingsmethode:
 
 * Op locatie Adobe Commerce of Magento Open Source: [[!DNL Quality Patches Tool] > Gebruik ](/help/tools/quality-patches-tool/usage.md) in de handleiding [!DNL Quality Patches Tool] .
-* Adobe Commerce op wolkeninfrastructuur: [ Verbeteringen en Patches > Pas Patches ](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html?lang=nl-NL) in Commerce op de gids van de Infrastructuur van de Wolk toe.
+* Adobe Commerce op wolkeninfrastructuur: [ Verbeteringen en Patches > Pas Patches ](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html) in Commerce op de gids van de Infrastructuur van de Wolk toe.
 
 ## Gerelateerde lezing
 
