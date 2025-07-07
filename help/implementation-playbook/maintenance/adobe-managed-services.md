@@ -3,9 +3,9 @@ title: Adobe Managed Services
 description: Leer hoe Adobe Managed Services kan helpen bij het ondersteunen en onderhouden van uw Adobe Commerce-implementatie.
 exl-id: b600b0e3-c6fd-4b86-ad2a-a445e599f1bd
 feature: Services
-source-git-commit: e5a50707463bb7b36b4285889b10353faf9ba09f
+source-git-commit: 486e789787c9c08b27b4aae8e601680138956b88
 workflow-type: tm+mt
-source-wordcount: '1168'
+source-wordcount: '1171'
 ht-degree: 0%
 
 ---
@@ -40,19 +40,20 @@ Bekijk de volgende tabel voor een meer gedetailleerde vergelijking van de belang
 | Functie | Adobe Commerce ter plaatse | Adobe Commerce op Cloud | Adobe Commerce op Managed Services |
 |---------|---------------------------|-------------------------|-----------------------------------|
 | Adobe Enterprise-software | ✓ | ✓ | ✓ |
-| Beveiligde en toegewezen cloudinfrastructuur | | ✓ | ✓ |
-| Verbeterd serviceniveau voor incidenten | | P1: 1 uur | P1: 15 minuten |
-| Bewaking en reactie van de piekcapaciteit | | | ✓ |
-| Infrastructuurbeveiliging | | | ✓ |
-| Infrastructuurniveau 99,99% SLA | | | ✓ |
-| Toepassingsniveau 99,9% SLA | | | |
-| Aangewezen infrastructuurdeskundige bron (Customer Success Engineer) | | | |
-| Gepland gebeurtenisbeheer | | | |
-| Aangepaste plaatscontrole en gepersonaliseerd runbook | | | |
-| Implementatieassistentie voor upgrades en patches | | | |
-| GoLive Process-coördinatie | | | |
-| Specifiek escalatiebeheer | | | |
-| Toezicht op de toepassing en bijstand | | | |
+| Adobe Developer App Builder | | ✓ | ✓ |
+| Beveiligde en toegewezen cloudinfrastructuur | | ✓ P1: 1 uur | ✓ P1: 15 minuten |
+| Verbeterd doel voor serviceniveau voor incidenten | | ✓ | ✓ |
+| Controle en reactie van de piekcapaciteit | | ✓ | ✓ |
+| Infrastructuurbeveiliging | | ✓ | ✓ |
+| Infrastructuurniveau 99,99% SLA | | ✓ | ✓ |
+| Toepassingsniveau 99,9% SLA | | | ✓ |
+| Aangewezen infrastructuurdeskundige bron (Customer Success Engineer) | | | ✓ |
+| Gepland gebeurtenisbeheer | | | ✓ |
+| Aangepaste sitemonitoring en gepersonaliseerd runbook | | | ✓ |
+| Implementatieondersteuning voor upgrades en patches | | | ✓ |
+| GoLive Process-coördinatie | | | ✓ |
+| Specifiek escalatiebeheer | | | ✓ |
+| Toezicht op de toepassing en bijstand | | | ✓ |
 
 ## Taken en verantwoordelijkheden
 
@@ -387,7 +388,7 @@ Adobe biedt een reeks services voor de levering, ontwikkeling, staging en produc
 
 De Adobe-beveiligingsstapel voor Managed Services bouwt beveiliging op elk niveau op met behulp van automatisering en consistentie om menselijke fouten te beperken. De ontwikkelings en verrichtingenteams erven automatisch veiligheidscontroles van verschillende niveaus van de stapel.
 
-Platformpartners, zoals Amazon Web Services en Microsoft Azure, zorgen voor maximale beveiligingsdekking bij het toepassen van platformaanpassingen, terwijl het Adobe Managed Services-team basisbeveiligingsservices biedt, zoals compatibiliteit, registratie, verificatie, scannen en controle, en serverbeveiliging en beveiligde toepassingsconfiguratie. Zie {de Veiligheid van 0} Adobe Commerce [&#128279;](https://business.adobe.com/products/magento/secure-ecommerce.html) voor meer informatie.
+Platformpartners, zoals Amazon Web Services en Microsoft Azure, zorgen voor maximale beveiligingsdekking bij het toepassen van platformaanpassingen, terwijl het Adobe Managed Services-team basisbeveiligingsservices biedt, zoals compatibiliteit, registratie, verificatie, scannen en controle, en serverbeveiliging en beveiligde toepassingsconfiguratie. Zie {de Veiligheid van 0} Adobe Commerce [ voor meer informatie.](https://business.adobe.com/products/magento/secure-ecommerce.html)
 
 In het volgende diagram wordt de Adobe Managed Services-beveiligingstechnologiestapel weergegeven:
 
