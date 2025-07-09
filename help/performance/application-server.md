@@ -2,9 +2,9 @@
 title: GraphQL Application Server
 description: Volg deze instructies om de GraphQL Application Server in te schakelen bij uw Adobe Commerce-implementatie.
 exl-id: 9b223d92-0040-4196-893b-2cf52245ec33
-source-git-commit: 2f8396a367cbe1191bdf67aec75bd56f64d3fda8
+source-git-commit: 8427460cd11169ffe7dd2d4ba0cc1fdaea513702
 workflow-type: tm+mt
-source-wordcount: '2074'
+source-wordcount: '2184'
 ht-degree: 0%
 
 ---
@@ -14,7 +14,7 @@ ht-degree: 0%
 
 Met de Commerce GraphQL Application Server kan Adobe Commerce de status onderhouden van Commerce GraphQL API-aanvragen. De Server van de Toepassing van GraphQL, die op de uitbreiding van de Steekproef wordt voortgebouwd, werkt als proces met arbeidersdraden die verzoekverwerking behandelen. GraphQL Application Server bewaart de status van een bootstrapped toepassing bij GraphQL API-aanvragen en verbetert de verwerking van aanvragen en de algehele productprestaties. API-aanvragen worden aanzienlijk efficiënter.
 
-GraphQL Application Server is alleen beschikbaar voor Adobe Commerce. Deze is niet beschikbaar voor Magento Open Source. Voor de Pro projecten van de Wolk, moet u [ een 1&rbrace; kaartje van de Steun van Adobe Commerce voorleggen om de Server van de Toepassing van GraphQL toe te laten.](https://experienceleague.adobe.com/nl/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide)
+GraphQL Application Server is alleen beschikbaar voor Adobe Commerce. Deze is niet beschikbaar voor Magento Open Source. Voor de Pro projecten van de Wolk, moet u [ een 1} kaartje van de Steun van Adobe Commerce voorleggen om de Server van de Toepassing van GraphQL toe te laten.](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide)
 
 >[!NOTE]
 >
@@ -54,7 +54,7 @@ Met de module `ApplicationServer` (`Magento/ApplicationServer/` ) schakelt u Gra
 Nadat de eigenschap van de Server van de Toepassing op uw Proproject wordt toegelaten, voltooi de volgende stappen alvorens de Server van de Toepassing van GraphQL op te stellen:
 
 1. Stel Adobe Commerce op wolkeninfrastructuur op gebruikend het wolkenmalplaatje van [ 2.4.7-appserver tak ](https://github.com/magento/magento-cloud/tree/2.4.7-appserver).
-1. Zorg ervoor dat al uw aanpassingen en uitbreidingen van Commerce [&#128279;](https://developer.adobe.com/commerce/php/development/components/app-server/) met de Server van de Toepassing van GraphQL compatibel zijn.
+1. Zorg ervoor dat al uw aanpassingen en uitbreidingen van Commerce [ ](https://developer.adobe.com/commerce/php/development/components/app-server/) met de Server van de Toepassing van GraphQL compatibel zijn.
 1. Clone your Commerce Cloud project.
 1. Pas indien nodig de instellingen in het bestand &#39;application-server/nginx.conf.sample&#39; aan.
 1. Maak een volledige commentaarregel van de actieve sectie &#39;Web&#39; in het `project_root/.magento.app.yaml` -bestand.
@@ -112,29 +112,154 @@ Voltooi de volgende stappen alvorens de Server van de Toepassing van GraphQL op 
        upstream: "application-server:http"
    ```
 
+1. Verwijder de commentaarmarkering van de sectie `files` in het `.magento/services.yaml` -bestand.
+
+   ```yaml
+   files:
+       type: network-storage:2.0
+       disk: 5120
+   ```
+
+1. Verwijder de commentaarmarkering van het `TEMPORARY SHARED MOUNTS` -gedeelte van de montageconfiguratie in het `.magento.app.yaml` -bestand.
+
+   ```yaml
+   "var_shared":
+       source: "service"
+       service: "files"
+       source_path: "var"
+   "app/etc_shared":
+       source: "service"
+       service: "files"
+       source_path: "etc"
+   "pub/media_shared":
+       source: "service"
+       service: "files"
+       source_path: "media"
+   "pub/static_shared":
+       source: "service"
+       service: "files"
+       source_path: "static"
+   ```
+
 1. Bijgewerkte bestanden toevoegen aan de it-index:
 
    ```bash
-   git add -f .magento/routes.yaml application-server/.magento/*
+   git add -f .magento.app.yaml .magento/routes.yaml .magento/services.yaml application-server/.magento/*
    ```
 
-1. Uw wijzigingen vastleggen:
+1. Leg uw wijzigingen vast en duw ze erop om een implementatie te activeren:
 
    ```bash
-   git commit -m "AppServer Enabled"
+   git commit -m "Enabling AppServer: initial changes"
+   git push
+   ```
+
+1. Gebruik SSH aan login aan het verre wolkenmilieu (_niet_ app):`application-server`
+
+   ```bash
+   magento-cloud ssh -p <project-ID> -e <environment-ID>
+   ```
+
+1. Synchroniseer de gegevens van de lokale montage naar de gedeelde montage:
+
+   ```bash
+   rsync -avz var/* var_shared/
+   rsync -avz app/etc/* app/etc_shared/
+   rsync -avz pub/media/* pub/media_shared/
+   rsync -avz pub/static/* pub/static_shared/
+   ```
+
+1. Maak een commentaarregel van de `DEFAULT MOUNTS` - en `TEMPORARY SHARED MOUNTS` -onderdelen van de montageconfiguratie in het `.magento.app.yaml` -bestand.
+
+   ```yaml
+   #"var": "shared:files/var"
+   #"app/etc": "shared:files/etc"
+   #"pub/media": "shared:files/media"
+   #"pub/static": "shared:files/static"
+   
+   #"var_shared":
+   #    source: "service"
+   #    service: "files"
+   #    source_path: "var"
+   #"app/etc_shared":
+   #    source: "service"
+   #    service: "files"
+   #    source_path: "etc"
+   #"pub/media_shared":
+   #    source: "service"
+   #    service: "files"
+   #    source_path: "media"
+   #"pub/static_shared":
+   #    source: "service"
+   #    service: "files"
+   #    source_path: "static"
+   ```
+
+1. Verwijder de commentaarmarkering voor de `OLD LOCAL MOUNTS` - en `SHARED MOUNTS` -onderdelen van de montageconfiguratie in het `.magento.app.yaml` -bestand.
+
+   ```yaml
+   "var_old": "shared:files/var"
+   "app/etc_old": "shared:files/etc"
+   "pub/media_old": "shared:files/media"
+   "pub/static_old": "shared:files/static"
+   
+   "var":
+       source: "service"
+       service: "files"
+       source_path: "var"
+   "app/etc":
+       source: "service"
+       service: "files"
+       source_path: "etc"
+   "pub/media":
+       source: "service"
+       service: "files"
+       source_path: "media"
+   "pub/static":
+       source: "service"
+       service: "files"
+       source_path: "static"
+   ```
+
+1. Voeg het bijgewerkte bestand toe aan de git-index, wijs wijzigingen toe en druk op om een implementatie te activeren:
+
+   ```bash
+   git add -f .magento.app.yaml
+   git commit -m "Enabling AppServer: switch mounts"
+   git push
+   ```
+
+1. Zorg ervoor dat bestanden uit `*_old` -mappen aanwezig zijn in de daadwerkelijke mappen.
+
+1. Oude lokale montage opschonen:
+
+   ```bash
+   rm -rf var_old/*
+   rm -rf app/etc_old/*
+   rm -rf pub/media_old/*
+   rm -rf pub/static_old/*
+   ```
+
+1. Maak een commentaarregel van het `OLD LOCAL MOUNTS` -gedeelte van de montageconfiguratie in het `.magento.app.yaml` -bestand.
+
+   ```yaml
+   #"var_old": "shared:files/var"
+   #"app/etc_old": "shared:files/etc"
+   #"pub/media_old": "shared:files/media"
+   #"pub/static_old": "shared:files/static"
+   ```
+
+1. Voeg het bijgewerkte bestand toe aan de git-index, wijs wijzigingen toe en druk op om een implementatie te activeren:
+
+   ```bash
+   git add -f .magento.app.yaml
+   git commit -m "Enabling AppServer: finish"
+   git push
    ```
 
 >[!NOTE]
 >
->Zorg ervoor dat alle aangepaste instellingen in het basisbestand van `.magento.app.yaml` op de juiste wijze naar het `application-server/.magento/.magento.app.yaml` -bestand worden gemigreerd. Nadat het `application-server/.magento/.magento.app.yaml` dossier aan uw project wordt toegevoegd, zou u het naast het wortel `.magento.app.yaml` dossier moeten handhaven. Bijvoorbeeld, als u de dienst RabbitMQ [&#128279;](https://experienceleague.adobe.com/nl/docs/commerce-cloud-service/user-guide/configure/service/rabbitmq) moet vormen of [ Webeigenschappen ](https://experienceleague.adobe.com/nl/docs/commerce-cloud-service/user-guide/configure/app/properties/web-property) beheert u de zelfde configuratie aan `application-server/.magento/.magento.app.yaml` eveneens zou moeten toevoegen.
-
-### Starter-projecten implementeren
-
-Na de voltooiing van de enablement [ stappen ](#before-you-begin-a-cloud-starter-deployment), duw veranderingen in uw bewaarplaats van het Git om de Server van de Toepassing van GraphQL op te stellen:
-
-```bash
-git push
-```
+>Zorg ervoor dat alle aangepaste instellingen in het basisbestand van `.magento.app.yaml` op de juiste wijze naar het `application-server/.magento/.magento.app.yaml` -bestand worden gemigreerd. Nadat het `application-server/.magento/.magento.app.yaml` dossier aan uw project wordt toegevoegd, zou u het naast het wortel `.magento.app.yaml` dossier moeten handhaven. Bijvoorbeeld, als u de dienst RabbitMQ [ moet vormen of ](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/configure/service/rabbitmq) Webeigenschappen [ beheert u de zelfde configuratie aan ](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/configure/app/properties/web-property) eveneens zou moeten toevoegen.`application-server/.magento/.magento.app.yaml`
 
 ### Inschakelen voor cloudprojecten verifiëren
 
