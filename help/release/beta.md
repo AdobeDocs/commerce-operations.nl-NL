@@ -2,9 +2,9 @@
 title: Beta-releases
 description: Leer meer over de bètareleases van Adobe Commerce en hoe u hieraan kunt deelnemen.
 exl-id: 662cb061-995f-4e09-a2ef-9e607cc0000b
-source-git-commit: 1c0dd720df944a5784c850a3f4ea63b8984069f1
+source-git-commit: 879160b11fe4840eb3af97c64f080deb5f002827
 workflow-type: tm+mt
-source-wordcount: '963'
+source-wordcount: '862'
 ht-degree: 0%
 
 ---
@@ -27,20 +27,6 @@ Het krijgen van vroege toegang tot eigenschappen die Adobe ontwikkelt verstrekt 
 ## Huidige Beta-programma&#39;s
 
 Zie de volgende secties voor een lijst van actieve bètaprogramma&#39;s.
-
-### Adobe Commerce Optimizer
-
-Adobe Commerce Optimizer verbetert uw e-commerceervaring met een krachtige winkel, die organisch verkeer, klantenbetrokkenheid, en opbrengst bevordert.
-
-Met Adobe Commerce Optimizer kunt u:
-
-- Vergroot en schaal uw catalogus zonder de volledige handelstack opnieuw in te stellen.
-- Catalogusgegevens uit een willekeurige bron opnemen.
-- Bepaal bedrijfskanalen en beleid.
-- Creeer gepersonaliseerde onderzoek en aanbevelingen gebruikend AI en ML.
-- De essentiële beschikbaarheid van productgegevens weergeven, waaronder synchronisatiestatus en storefront-gebeurtenisgegevens voor nauwkeurige implementatie en probleemoplossing.
-
-[ leer meer ](https://experienceleague.adobe.com/docs/commerce/optimizer/overview.html?lang=nl-NL) over Adobe Commerce Optimizer. Als u in het leren van meer over het [!DNL Adobe Commerce Optimizer] vroege toegangsprogramma geinteresseerd bent, voltooi de [ vroege het verzoekvorm van de Toegang ](https://forms.office.com/Pages/ResponsePage.aspx?id=Wht7-jR7h0OUrtLBeN7O4WOxhjY2doZPikS2hIbfmL5UMlhTMTYzVDhPQVFNTUFYUjJHNlRKTE5TWS4u).
 
 ### Verbeterde zoekmogelijkheden voor Live zoeken (Public Beta)
 
@@ -66,7 +52,7 @@ Deze bèta steunt drie nieuwe mogelijkheden in [`productSearch` vraag ](https://
 
 Deze nieuwe voorwaarden verbeteren het het filtreren van de onderzoeksvraag mechanisme om onderzoeksresultaten te raffineren. Deze nieuwe voorwaarden hebben geen invloed op de hoofdzoekquery. Om aan bèta deel te nemen, verzend een e-mailverzoek naar [ handel-opslag-diensten ](mailto:commerce-storefront-services@adobe.com).
 
-Om Live Onderzoek bèta te installeren, zie de [ Levende gids van het Onderzoek ](https://experienceleague.adobe.com/nl/docs/commerce/live-search/install#install-the-live-search-beta).
+Om Live Onderzoek bèta te installeren, zie de [ Levende gids van het Onderzoek ](https://experienceleague.adobe.com/en/docs/commerce/live-search/install#install-the-live-search-beta).
 
 ### IBM Sterling Order Management System Integration (Private Beta)
 
@@ -88,7 +74,7 @@ Elke Adobe Commerce Foundation alfa- en bètaversie bevat alle wijzigingen die t
 - GraphQL-verbeteringen
 - Oplossingen voor algemene problemen met kwaliteit
 - Communautaire bijdragen
-- Veranderingen die worden vereist om verenigbaarheid met [ de diensten van Adobe Commerce ](https://experienceleague.adobe.com/nl/docs/commerce/user-guides/home) te steunen
+- Veranderingen die worden vereist om verenigbaarheid met [ de diensten van Adobe Commerce ](https://experienceleague.adobe.com/en/docs/commerce/user-guides/home) te steunen
 
 #### Naamgevingsconventie en -schema
 
