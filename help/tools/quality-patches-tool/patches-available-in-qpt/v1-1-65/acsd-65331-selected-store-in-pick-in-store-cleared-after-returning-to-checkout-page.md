@@ -78,11 +78,11 @@ De verzendstap begint te laden en wordt omgeleid naar **[!UICONTROL Pick In Stor
 
 Om individuele flarden toe te passen, gebruik de volgende verbindingen afhankelijk van uw plaatsingsmethode:
 
-* Op locatie Adobe Commerce of Magento Open Source: [[!DNL Quality Patches Tool]** > Gebruik] **(/help/tools/quality-patches-tool/usage.md) in de handleiding[!DNL Quality Patches Tool]** .
+* Op locatie Adobe Commerce of Magento Open Source: [[!DNL Quality Patches Tool] **&#x200B; > Gebruik] &#x200B;**(/help/tools/quality-patches-tool/usage.md) in de handleiding[!DNL Quality Patches Tool]** .
 * Adobe Commerce op cloudinfrastructuur: [ Upgrades and Patches > Apply Patches ]** (https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html) in de Commerce on Cloud Infrastructure guide.
 
 ## Gerelateerde lezing
 
 Raadpleeg voor meer informatie over [!DNL Quality Patches Tool]**:
 
-* [[!DNL Quality Patches Tool]**: Een zelfbedieningshulpmiddel voor kwaliteitspatches]** (/help/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches.md) in de gids van Hulpmiddelen.
+* [[!DNL Quality Patches Tool]&#x200B;**: Een zelfbedieningshulpmiddel voor kwaliteitspatches]** (/help/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches.md) in de gids van Hulpmiddelen.
