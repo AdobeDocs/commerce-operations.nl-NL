@@ -2,9 +2,9 @@
 title: De indexen beheren
 description: Zie voorbeelden van Commerce-indexen weergeven en beheren.
 exl-id: d2cd1399-231e-4c42-aa0c-c2ed5d7557a0
-source-git-commit: 54aef3d7db7b8333721fb56db0ba8f098aea030b
+source-git-commit: ceefb9371dd0a85046cc5bfc0ddc72144d649608
 workflow-type: tm+mt
-source-wordcount: '947'
+source-wordcount: '964'
 ht-degree: 0%
 
 ---
@@ -21,7 +21,8 @@ bin/magento indexer:info
 
 De lijst wordt als volgt weergegeven:
 
-```
+```text
+cataloginventory_stock                   Stock
 design_config_grid                       Design Config Grid
 customer_grid                            Customer Grid
 catalog_category_product                 Category Products
@@ -29,18 +30,20 @@ catalog_product_category                 Product Categories
 catalogrule_rule                         Catalog Rule Product
 catalog_product_attribute                Product EAV
 inventory                                Inventory
+catalog_product_price                    Product Price
 catalogrule_product                      Catalog Product Rule
-cataloginventory_stock                   Stock
 targetrule_product_rule                  Product/Target Rule
 targetrule_rule_product                  Target Rule/Product
-catalog_product_price                    Product Price
 catalogsearch_fulltext                   Catalog Search
 salesrule_rule                           Sales Rule
+sales_order_data_exporter                Sales Order Feed
+sales_order_status_data_exporter         Sales Order Statuses Feed
+store_data_exporter                      Stores Feed
 ```
 
 >[!NOTE]
 >
-> De handelaars van Adobe Commerce die Live Onderzoek, de Dienst van de Catalogus, of de Aanbevelingen van het Product gebruiken hebben de optie om [ op SaaS-Gebaseerde prijs te gebruiken indexeert ](https://experienceleague.adobe.com/nl/docs/commerce/price-indexer/price-indexing).
+> De handelaars van Adobe Commerce die Live Onderzoek, de Dienst van de Catalogus, of de Aanbevelingen van het Product gebruiken hebben de optie om [ op SaaS-Gebaseerde prijs te gebruiken indexeert ](https://experienceleague.adobe.com/en/docs/commerce/price-indexer/price-indexing).
 
 ## Indexstatus weergeven
 
@@ -56,22 +59,28 @@ Waar `[indexer]` een lijst met indexen is die door spaties worden gescheiden. La
 
 Monsterresultaat:
 
-```
-+----------------------+------------------+-----------+---------------------+---------------------+
-| Title                | Status           | Update On | Schedule Status     | Schedule Updated    |
-+----------------------+------------------+-----------+---------------------+---------------------+
-| Catalog Product Rule | Reindex required | Save      |                     |                     |
-| Catalog Rule Product | Reindex required | Save      |                     |                     |
-| Catalog Search       | Ready            | Save      |                     |                     |
-| Category Products    | Reindex required | Schedule  | idle (0 in backlog) | 2021-06-28 09:45:53 |
-| Customer Grid        | Ready            | Schedule  | idle (0 in backlog) | 2021-06-28 09:45:52 |
-| Design Config Grid   | Ready            | Schedule  | idle (0 in backlog) | 2018-06-28 09:45:52 |
-| Inventory            | Ready            | Save      |                     |                     |
-| Product Categories   | Reindex required | Schedule  | idle (0 in backlog) | 2021-06-28 09:45:53 |
-| Product EAV          | Reindex required | Save      |                     |                     |
-| Product Price        | Reindex required | Save      |                     |                     |
-| Stock                | Reindex required | Save      |                     |                     |
-+----------------------+------------------+-----------+---------------------+---------------------+
+```text
++----------------------------------+---------------------------+--------+-----------+---------------------+---------------------+
+| ID                               | Title                     | Status | Update On | Schedule Status     | Schedule Updated    |
++----------------------------------+---------------------------+--------+-----------+---------------------+---------------------+
+| catalogrule_product              | Catalog Product Rule      | Ready  | Schedule  | idle (0 in backlog) | 2025-07-11 08:00:52 |
+| catalogrule_rule                 | Catalog Rule Product      | Ready  | Schedule  | idle (0 in backlog) | 2025-07-11 08:00:52 |
+| catalogsearch_fulltext           | Catalog Search            | Ready  | Schedule  | idle (0 in backlog) | 2025-07-11 08:01:02 |
+| catalog_category_product         | Category Products         | Ready  | Schedule  | idle (0 in backlog) | 2025-06-03 14:11:33 |
+| customer_grid                    | Customer Grid             | Ready  | Schedule  | idle (0 in backlog) | 2025-06-03 14:11:31 |
+| design_config_grid               | Design Config Grid        | Ready  | Schedule  | idle (0 in backlog) | 2025-06-03 14:11:31 |
+| inventory                        | Inventory                 | Ready  | Schedule  | idle (0 in backlog) | 2025-06-03 14:11:36 |
+| catalog_product_category         | Product Categories        | Ready  | Schedule  | idle (0 in backlog) | 2025-06-03 14:11:33 |
+| catalog_product_attribute        | Product EAV               | Ready  | Schedule  | idle (0 in backlog) | 2025-06-03 14:11:36 |
+| catalog_product_price            | Product Price             | Ready  | Schedule  | idle (0 in backlog) | 2025-07-11 08:00:54 |
+| targetrule_product_rule          | Product/Target Rule       | Ready  | Schedule  | idle (0 in backlog) | 2025-06-03 14:11:39 |
+| sales_order_data_exporter        | Sales Order Feed          | Ready  | Schedule  | idle (0 in backlog) | 2025-06-03 14:12:10 |
+| sales_order_status_data_exporter | Sales Order Statuses Feed | Ready  | Schedule  | idle (0 in backlog) | 2025-06-03 14:12:10 |
+| salesrule_rule                   | Sales Rule                | Ready  | Schedule  | idle (0 in backlog) | 2025-06-03 14:12:10 |
+| cataloginventory_stock           | Stock                     | Ready  | Schedule  | idle (0 in backlog) | 2025-06-03 14:11:31 |
+| store_data_exporter              | Stores Feed               | Ready  | Schedule  | idle (0 in backlog) | 2025-06-03 14:12:11 |
+| targetrule_rule_product          | Target Rule/Product       | Ready  | Schedule  | idle (0 in backlog) | 2025-06-03 14:11:39 |
++----------------------------------+---------------------------+--------+-----------+---------------------+---------------------+
 ```
 
 ## Opnieuw indexeren
@@ -92,7 +101,8 @@ Waar `[indexer]` een lijst met indexen is die door spaties worden gescheiden. La
 
 Monsterresultaat:
 
-```
+```text
+Stock index has been rebuilt successfully in <time>
 Design Config Grid index has been rebuilt successfully in <time>
 Customer Grid index has been rebuilt successfully in <time>
 Category Products index has been rebuilt successfully in <time>
@@ -100,10 +110,15 @@ Product Categories index has been rebuilt successfully in <time>
 Catalog Rule Product index has been rebuilt successfully in <time>
 Product EAV index has been rebuilt successfully in <time>
 Inventory index has been rebuilt successfully in <time>
-Catalog Product Rule index has been rebuilt successfully in <time>
-Stock index has been rebuilt successfully in <time>
 Product Price index has been rebuilt successfully in <time>
+Catalog Product Rule index has been rebuilt successfully in <time>
+Product/Target Rule index has been rebuilt successfully in <time>
+Target Rule/Product index has been rebuilt successfully in <time>
 Catalog Search index has been rebuilt successfully in <time>
+Sales Rule index has been rebuilt successfully in <time>
+Sales Order Feed index has been rebuilt successfully in <time>
+Sales Order Statuses Feed index has been rebuilt successfully in <time>
+Stores Feed index has been rebuilt successfully in <time>
 ```
 
 >[!INFO]
@@ -177,7 +192,8 @@ Waar ```[indexer]``` een lijst met indexen is die door spaties worden gescheiden
 
 Monsterresultaat:
 
-```
+```text
+Stock indexer has been invalidated.
 Design Config Grid indexer has been invalidated.
 Customer Grid indexer has been invalidated.
 Category Products indexer has been invalidated.
@@ -185,10 +201,15 @@ Product Categories indexer has been invalidated.
 Catalog Rule Product indexer has been invalidated.
 Product EAV indexer has been invalidated.
 Inventory indexer has been invalidated.
-Catalog Product Rule indexer has been invalidated.
-Stock indexer has been invalidated.
 Product Price indexer has been invalidated.
+Catalog Product Rule indexer has been invalidated.
+Product/Target Rule indexer has been invalidated.
+Target Rule/Product indexer has been invalidated.
 Catalog Search indexer has been invalidated.
+Sales Rule indexer has been invalidated.
+Sales Order Feed indexer has been invalidated.
+Sales Order Statuses Feed indexer has been invalidated.
+Stores Feed indexer has been invalidated.
 ```
 
 ## Indexeerders configureren
@@ -212,31 +233,47 @@ Waar `[indexer]` een lijst met indexen is die door spaties worden gescheiden. La
 
 Monsterresultaat:
 
-```
-Design Config Grid:                                Update on Save
-Customer Grid:                                     Update on Save
-Category Products:                                 Update on Save
-Product Categories:                                Update on Save
-Catalog Rule Product:                              Update on Save
-Product EAV:                                       Update on Save
-Inventory:                                         Update on Save
-Catalog Product Rule:                              Update on Save
-Stock:                                             Update on Save
-Product Price:                                     Update on Save
-Catalog Search:                                    Update on Save
+```text
+Stock:                                             Update by Schedule
+Design Config Grid:                                Update by Schedule
+Customer Grid:                                     Update by Schedule
+Category Products:                                 Update by Schedule
+Product Categories:                                Update by Schedule
+Catalog Rule Product:                              Update by Schedule
+Product EAV:                                       Update by Schedule
+Inventory:                                         Update by Schedule
+Product Price:                                     Update by Schedule
+Catalog Product Rule:                              Update by Schedule
+Product/Target Rule:                               Update by Schedule
+Target Rule/Product:                               Update by Schedule
+Catalog Search:                                    Update by Schedule
+Sales Rule:                                        Update by Schedule
+Sales Order Feed:                                  Update by Schedule
+Sales Order Statuses Feed:                         Update by Schedule
+Stores Feed:                                       Update by Schedule
 ```
 
 ### Indexeermodus instellen
 
 >[!IMPORTANT]
 >
->Zorg ervoor dat u de [!DNL Customer Grid] instelt met `realtime` in plaats van met `schedule` . De [!DNL Customer Grid] kan alleen opnieuw worden genummerd met de optie [!UICONTROL Update on Save] . Deze index ondersteunt de optie `Update by Schedule` niet. Gebruik de volgende opdrachtregel om deze indexeerfunctie in te stellen voor bijwerken bij opslaan: `php bin/magento indexer:set-mode realtime customer_grid`
+>Het gedrag van de [!DNL Customer Grid] -index is in 2.4.8 gewijzigd:
 >
->Zie [ Beste praktijken voor indexeerconfiguratie ](https://experienceleague.adobe.com/docs/commerce-operations/implementation-playbook/best-practices/maintenance/indexer-configuration.html?lang=nl-NL) in _Playbook van de Implementatie_.
+>- **Voorafgaand aan 2.4.8**: [!DNL Customer Grid] indexeer kan slechts opnieuw worden gefixeerd gebruikend de [!UICONTROL Update on Save] optie en steunt niet de [!UICONTROL Update by Schedule] optie.
+>
+>   Gebruik de volgende opdracht om deze indexeer in te stellen op bijwerken bij opslaan:
+>
+>   ```bash
+>   bin/magento indexer:set-mode realtime customer_grid
+>   ```
+>
+>- **2.4.8 en later**: [!DNL Customer Grid] de indexer steunt zowel [!UICONTROL Update on Save] als [!UICONTROL Update by Schedule] wijzen, en gebreken aan [!UICONTROL Update by Schedule].
+>
+>Zie [ Beste praktijken voor indexeerconfiguratie ](https://experienceleague.adobe.com/en/docs/commerce-operations/implementation-playbook/best-practices/maintenance/indexer-configuration) in _Playbook van de Implementatie_.
 
 >[!INFO]
 >
->Alvorens de wijzen van de omschakelingsindexeerder, plaats uw website aan [ onderhoud ](../../installation/tutorials/maintenance-mode.md) wijze en [ maak kanonbanen ](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure/app/properties/crons-property.html?lang=nl-NL#disable-cron-jobs) onbruikbaar. Dit zorgt ervoor u geen gegevensbestandsloten lijdt.
+>Alvorens de wijzen van de omschakelingsindexeerder, plaats uw website aan [ onderhoud ](../../installation/tutorials/maintenance-mode.md) wijze en [ maak kanonbanen ](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/configure/app/properties/crons-property) onbruikbaar. Dit zorgt ervoor u geen gegevensbestandsloten ervaart.
 
 De indexeerconfiguratie opgeven:
 
@@ -299,13 +336,13 @@ Index status for Indexer 'Product Categories' was changed from 'valid' to 'suspe
 
 Wanneer een indexeerfunctie is ingesteld op een `suspended` -status, heeft dit vooral invloed op de automatische re-indexering en op gematerialiseerde weergave-updates. Hier volgt een kort overzicht:
 
-**het Reindexeren Overgeslagen**: Automatisch opnieuw indexeren wordt overgeslagen voor `suspended` indexeerders en om het even welke indexen die het zelfde `shared_index` delen. Dit zorgt ervoor dat de systeembronnen behouden blijven door gegevens met betrekking tot geschorste processen niet opnieuw te indexeren.
+**het Reindexeren Overgeslagen**: Het systeem slaat automatisch opnieuw indexeren voor `suspended` indexeerders en om het even welke indexen over die het zelfde `shared_index` delen. Met deze methode worden de systeembronnen behouden doordat gegevens met betrekking tot stilgezette processen niet opnieuw hoeven te worden gekoppeld.
 
-**Gematerialiseerde Overgeslagen Updates van de Mening**: Gelijkaardig aan het opnieuw indexeren, worden de updates aan materialized meningen met betrekking tot `suspended` indexeerders of hun gedeelde indexen ook gepauzeerd. Deze actie vermindert de belasting van het systeem tijdens de ophanging.
+**Gematerialiseerde Overgeslagen Updates van de Mening**: Gelijkaardig aan het opnieuw indexeren, pauzeert het systeem ook updates aan materialized meningen met betrekking tot `suspended` indexeerders of hun gedeelde indexen. Deze pauze vermindert de belasting van het systeem tijdens de ophanging.
 
 >[!INFO]
 >
->Met de opdracht `indexer:reindex` schakelt u alle indexen opnieuw in, inclusief de indexen die zijn gemarkeerd als `suspended` . Dit is handig voor handmatige updates wanneer automatische indexen worden gepauzeerd.
+>Met de opdracht `indexer:reindex` schakelt u alle indexen opnieuw in, inclusief de indexen die als `suspended` zijn gemarkeerd. Dit is handig voor handmatige updates wanneer de automatische indexen worden gepauzeerd.
 
 >[!IMPORTANT]
 >

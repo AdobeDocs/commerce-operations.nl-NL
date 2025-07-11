@@ -4,9 +4,9 @@ description: Prestaties van sites onderhouden en optimaliseren door de best prac
 role: Admin, User
 feature: Best Practices
 exl-id: b35806f9-4bc6-407e-bedd-5ce3f09c1b9f
-source-git-commit: 987d65b52437fbd21f41600bb5741b3cc43d01f3
+source-git-commit: 29168544e3a33b874b104f308bd53cb475ac2638
 workflow-type: tm+mt
-source-wordcount: '296'
+source-wordcount: '320'
 ht-degree: 0%
 
 ---
@@ -35,15 +35,18 @@ Als u een grote winkel hebt met meerdere beheerders die op de achtergrond werken
 Volg de volgende aanbevolen procedures voor indexering om de prestaties van de site te maximaliseren:
 
 - Controleer de indexconfiguratie.
-- Stel de indexeerders in op _[!UICONTROL Update on Schedule]_&#x200B;voor grote sites en sites met veelvuldige updates en veel verkeer. Zie [ Beheer van de Index ](https://experienceleague.adobe.com/nl/docs/commerce-admin/systems/tools/index-management#change-the-index-mode).
+- Stel de indexeerders in op _[!UICONTROL Update on Schedule]_voor grote sites en sites met veelvuldige updates en veel verkeer. Zie [ Beheer van de Index ](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/tools/index-management#change-the-index-mode).
 - Volg [ prestaties beste praktijken ](../../../performance/configuration.md) voor het beheren van indexen.
 
 >[!IMPORTANT]
 >
->De [!DNL Customer Grid] kan alleen opnieuw worden genummerd met de optie [!UICONTROL Update on Save] . Deze index ondersteunt de optie `Update by Schedule` niet.
+>Het gedrag van de [!DNL Customer Grid] -index is in 2.4.8 gewijzigd:
+>
+>- **Voorafgaand aan 2.4.8**: [!DNL Customer Grid] indexeer kan slechts opnieuw worden gefixeerd gebruikend de [!UICONTROL Update on Save] optie en steunt niet de [!UICONTROL Update by Schedule] optie.
+>- **2.4.8 en later**: [!DNL Customer Grid] de indexer steunt zowel [!UICONTROL Update on Save] als [!UICONTROL Update by Schedule] wijzen, en gebreken aan [!UICONTROL Update by Schedule].
 
 ## Aanvullende informatie
 
 - [Indexbeheer voor Admin-gebruikers](../../../configuration/cli/manage-indexers.md#configure-indexers)
-- [ Beheer van de Index die het Magento CLI ](https://experienceleague.adobe.com/docs/commerce-operations/configuration-guide/cli/manage-indexers.html?lang=nl-NL) gebruikt
+- [ Beheer van de Index die Magento CLI ](https://experienceleague.adobe.com/docs/commerce-operations/configuration-guide/cli/manage-indexers.html) gebruikt
 - [ Indexerend overzicht voor ontwikkelaars ](https://developer.adobe.com/commerce/php/development/components/indexing/)
