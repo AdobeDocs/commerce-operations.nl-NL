@@ -3,9 +3,9 @@ title: AWS S3-emmertje voor externe opslag configureren
 description: Configureer uw Commerce-project voor gebruik van de AWS S3-opslagservice voor externe opslag.
 feature: Configuration, Storage
 exl-id: e8aeade8-2ec4-4844-bd6c-ab9489d10436
-source-git-commit: 3f45b61a2f4fd6db161c66182212f3aff5900e26
+source-git-commit: 3690043019d70ad15332f757158937a7d5305043
 workflow-type: tm+mt
-source-wordcount: '328'
+source-wordcount: '382'
 ht-degree: 0%
 
 ---
@@ -17,6 +17,8 @@ De [ Eenvoudige Dienst van de Opslag van Amazon (Amazon S3) ][AWS S3] is de dien
 >[!WARNING]
 >
 >Adobe ontmoedigt het gebruik van openbare emmers sterk, omdat het een ernstig veiligheidsrisico vormt.
+>
+>Wanneer het gebruiken van een klant-verstrekt S3 emmertje voor activa of media opslag, is Adobe niet verantwoordelijk voor, en verleent geen steun voor, om het even welke kwesties, gegevensverlies, of stroomonderbrekingen met betrekking tot de configuratie, het beheer, of de verrichting van het S3 emmertje. Alle probleemoplossing en onderhoud van het S3-emmertje valt uitsluitend onder de verantwoordelijkheid van de klant.
 
 **om verre opslag met de adapter van AWS S3 toe te laten**:
 
