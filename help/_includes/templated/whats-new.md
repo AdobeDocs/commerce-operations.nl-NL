@@ -23,7 +23,7 @@ Deze pagina bevat de wijzigingen die in de afgelopen 60 dagen zijn aangebracht. 
   </thead>
   <tbody>
     <tr>
-      <td><p>Voegt de <a href="https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-66/acsd-65775-incorrect-order-detail-values-in-rest-api-order-details-for-multiple-quantities"> gedetailleerde beschrijving van de kwestie toe die door ACSD-65775 flard in QPT 1.1.66 versie </a> wordt bevestigd.</p>
+      <td><p>Voegt de <a href="https://experienceleague.adobe.com/nl/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-66/acsd-65775-incorrect-order-detail-values-in-rest-api-order-details-for-multiple-quantities"> gedetailleerde beschrijving van de kwestie toe die door ACSD-65775 flard in QPT 1.1.66 versie </a> wordt bevestigd.</p>
 </td>
       <td>
         Nieuw onderwerp, qpt
