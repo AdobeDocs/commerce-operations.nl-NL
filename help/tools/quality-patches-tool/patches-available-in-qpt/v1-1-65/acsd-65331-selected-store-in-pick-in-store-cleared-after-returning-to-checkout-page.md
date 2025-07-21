@@ -4,13 +4,13 @@ description: Pas de ACSD-65331-patch toe om het Adobe Commerce-probleem op te lo
 feature: Inventory
 role: Admin, Developer
 type: Troubleshooting
-source-git-commit: a322e822ccf0b584d2385d3f38a3b92ebe3a23d3
+exl-id: 10aaf898-feca-4485-90f6-6b3a9ea013b2
+source-git-commit: dc5df9e918adffe8d6901478a676d9da36b33bcc
 workflow-type: tm+mt
-source-wordcount: '449'
+source-wordcount: '441'
 ht-degree: 0%
 
 ---
-
 
 # ACSD-65331: de geselecteerde opslag in **[!UICONTROL Pick in Store]** wordt gewist nadat u het uitchecken hebt hersteld
 
@@ -28,7 +28,7 @@ De ACSD-65331-patch verhelpt het probleem waarbij de geselecteerde opslag onder 
 
 >[!NOTE]
 >
->De patch kan van toepassing worden op andere versies met nieuwe [!DNL Quality Patches Tool] versies. Om te controleren of de patch compatibel is met uw Adobe Commerce-versie, werkt u het `magento/quality-patches` -pakket bij naar de meest recente versie en controleert u de compatibiliteit op de [[!DNL Quality Patches Tool] : zoek naar patches op de pagina ](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html?lang=nl-NL) . Gebruik de patch-id als een zoekwoord om de patch te zoeken.
+>De patch kan van toepassing worden op andere versies met nieuwe [!DNL Quality Patches Tool] versies. Om te controleren of de patch compatibel is met uw Adobe Commerce-versie, werkt u het `magento/quality-patches` -pakket bij naar de meest recente versie en controleert u de compatibiliteit op de [[!DNL Quality Patches Tool] : zoek naar patches op de pagina ](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html) . Gebruik de patch-id als een zoekwoord om de patch te zoeken.
 
 ## Probleem
 
@@ -78,11 +78,11 @@ De verzendstap begint te laden en wordt omgeleid naar **[!UICONTROL Pick In Stor
 
 Om individuele flarden toe te passen, gebruik de volgende verbindingen afhankelijk van uw plaatsingsmethode:
 
-* Op locatie Adobe Commerce of Magento Open Source: [[!DNL Quality Patches Tool] **&#x200B; > Gebruik] &#x200B;**(/help/tools/quality-patches-tool/usage.md) in de handleiding[!DNL Quality Patches Tool]** .
-* Adobe Commerce op cloudinfrastructuur: [ Upgrades and Patches > Apply Patches ]** (https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html?lang=nl-NL) in de Commerce on Cloud Infrastructure guide.
+* Op locatie Adobe Commerce of Magento Open Source: [[!DNL Quality Patches Tool] > Gebruik ](/help/tools/quality-patches-tool/usage.md) in de handleiding [!DNL Quality Patches Tool] .
+* Adobe Commerce op wolkeninfrastructuur: [ Verbeteringen en Patches > Pas Patches ](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html) in Commerce op de gids van de Infrastructuur van de Wolk toe.
 
 ## Gerelateerde lezing
 
-Raadpleeg voor meer informatie over [!DNL Quality Patches Tool]**:
+Meer informatie over [!DNL Quality Patches Tool] vindt u in:
 
-* [[!DNL Quality Patches Tool]&#x200B;**: Een zelfbedieningshulpmiddel voor kwaliteitspatches]** (/help/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches.md) in de gids van Hulpmiddelen.
+* [[!DNL Quality Patches Tool]: Een zelfbedieningshulpmiddel voor kwaliteitspatches ](/help/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches.md) in de gids van Hulpmiddelen.
