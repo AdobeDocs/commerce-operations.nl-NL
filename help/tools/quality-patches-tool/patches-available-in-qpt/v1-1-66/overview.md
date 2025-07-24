@@ -4,9 +4,9 @@ description: Deze subsectie biedt een gedetailleerde beschrijving van de problem
 feature: Tools and External Services
 role: Admin, Developer
 exl-id: b5b80bfa-a52c-466b-b95c-23590e850aed
-source-git-commit: f24e6b4cc973247cb176b7e6b10cc9c61e1c16c2
+source-git-commit: a7cbe756f73211e4cc400ea27e357e99aa39605c
 workflow-type: tm+mt
-source-wordcount: '186'
+source-wordcount: '185'
 ht-degree: 0%
 
 ---
@@ -22,7 +22,7 @@ QPT v1.1.66 omvat de volgende flarden:
 1. **ACSD-65775**: Onjuiste `base_row_total` en `row_total` waarden in REST API orderdetails voor veelvoudige hoeveelheden.
 1. **ACSD-65777**: &quot;types&quot;gebied ontbrak voor de types van productbeeld in het `MediaGallery` verzoek van GraphQL.
 1. **ACSD-65848**: De categorieën in admin laden zeer langzaam.
-1. **ACSD-65913**: OpenSearch wierp `illegal_argument_exception` voor categorieën met producten die de zelfde prijs hebben.
+1. **ACSD-65913**: [!DNL OpenSearch] werpt `illegal_argument_exception` voor categorieën met producten die de zelfde prijs hebben.
 1. **ACSD-66041**: Ierland (IE) postcodes waren niet doorzoekbaar naar ophaalplaatsen toe te schrijven aan een ontbrekende CountryID.
 1. **ACSD-66212**: Verhelpt de kwestie waar het invoeren van een klant CSV- dossier tweemaal mislukkingen op de tweede en verdere pogingen veroorzaakte.
 
