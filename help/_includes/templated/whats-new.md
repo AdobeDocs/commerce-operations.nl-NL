@@ -23,7 +23,7 @@ Deze pagina bevat de wijzigingen die in de afgelopen 60 dagen zijn aangebracht. 
   </thead>
   <tbody>
     <tr>
-      <td><p>Voegt de <a href="https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-66/acsd-65777-types-field-was-missing-for-product-image-types-in-the-mediagallery-graphql-request"> gedetailleerde beschrijving van de kwestie toe die door de markering ACSD-65777 in QPT 1.1.66 </a> wordt bevestigd.</p>
+      <td><p>Voegt de <a href="https://experienceleague.adobe.com/nl/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-66/acsd-65777-types-field-was-missing-for-product-image-types-in-the-mediagallery-graphql-request"> gedetailleerde beschrijving van de kwestie toe die door de markering ACSD-65777 in QPT 1.1.66 </a> wordt bevestigd.</p>
 </td>
       <td>
         Nieuw onderwerp, qpt
