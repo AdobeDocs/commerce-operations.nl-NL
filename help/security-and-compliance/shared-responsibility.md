@@ -2,9 +2,9 @@
 title: Beveiliging en operationeel model van gedeelde verantwoordelijkheid
 description: Leer meer over de beveiligingsverantwoordelijkheden van elke partij die betrokken is bij uw Adobe Commerce-project voor cloudinfrastructuur.
 exl-id: f3cc1685-e469-4e30-b18e-55ce10dd69ce
-source-git-commit: 4cd71d156ef6833185565180b297ba1b7f42a032
+source-git-commit: fcaf6ff1dce1c1a5084307cd366ca58d71a8f4e4
 workflow-type: tm+mt
-source-wordcount: '2791'
+source-wordcount: '2850'
 ht-degree: 0%
 
 ---
@@ -798,6 +798,28 @@ Merchants zijn verantwoordelijk voor het synchroniseren van gegevens tussen omge
 |     | Adobe | Merchant |
 | --- | --- | --- |
 | Beschikbaarheid van de dienst van de Aanbevelingen van het Product | R |   |
+
+{style="table-layout:auto"}
+
+#### Live zoeken
+
+|     | Adobe | Merchant |
+| --- | --- | --- |
+| Beschikbaarheid van de service Live zoeken | R |   |
+
+{style="table-layout:auto"}
+
+#### Kwaliteit van storefront-gebeurtenissen (gegevensverzameling) voor het aansturen van productaanbevelingen en Live Search-uitvoer
+
+|     | Adobe | Merchant |
+| --- | --- | --- |
+| Basisthema (Luma) | R |   |
+| Aangepast thema |  | R |
+| Core PWA-implementatie | R |   |
+| Aangepaste PWA-implementatie |  | R |
+| Core AEM EDS-implementatie (Commerce Boilerplate) | R |   |
+| Aangepaste AEM EDS-implementatie |  | R |
+| Elke andere aangepaste implementatie van de winkel |  | R |
 
 {style="table-layout:auto"}
 
