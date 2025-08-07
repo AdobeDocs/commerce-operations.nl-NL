@@ -4,7 +4,7 @@ description: Deze subsectie verstrekt een gedetailleerde beschrijving van de kwe
 feature: Tools and External Services
 role: Admin, Developer
 exl-id: 47f6b57d-b945-4e77-8630-2df709a3469e
-source-git-commit: 7fd88da04ca147829aa5aa7f90d05d8760ff0f3d
+source-git-commit: f26ada4171197107866c45db7a711bce8be1d18e
 workflow-type: tm+mt
 source-wordcount: '191'
 ht-degree: 0%
@@ -16,7 +16,7 @@ ht-degree: 0%
 Deze subsectie bevat een gedetailleerde beschrijving van de problemen die zijn opgelost door de patches die beschikbaar zijn in [!DNL Quality Patches Tool] (QPT) v1.1.67.
 
 QPT v1.1.67 omvat de volgende flarden:
-1. **AC-14985**: SMTP post die met TLS terugkeert fout wordt verzonden.
+1. **AC-14985**: Fout wanneer het verzenden van SMTP e-mails gebruikend TLS.
 1. **AC-14984**: SSL verbindingskwestie met php-amqplib/php-amqplib ^3.2.0.
 1. **ACSD-65935**: `customerOrders` de vraag van GraphQL keerde een interne serverfout terug wanneer een product werd geschrapt.
 1. **ACSD-66049**: De niet-Engelse storefronts tonen onjuiste tarifering toe te schrijven aan de ICU bibliotheekversie.
