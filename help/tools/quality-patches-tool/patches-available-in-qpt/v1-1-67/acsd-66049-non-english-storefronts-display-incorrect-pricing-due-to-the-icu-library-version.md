@@ -4,13 +4,13 @@ description: Pas de ACSD-66049-patch toe om het Adobe Commerce-probleem op te lo
 feature: Products
 role: Admin, Developer
 type: Troubleshooting
-source-git-commit: 39e0b972dfa41f74f3c19e61d8fc1188d5c93f7c
+exl-id: e667d462-87f6-4db5-bf3f-3213edac2f09
+source-git-commit: da11e8bd5c4937ec2a7e548ce487797b83f8fd27
 workflow-type: tm+mt
-source-wordcount: '351'
+source-wordcount: '338'
 ht-degree: 0%
 
 ---
-
 
 # ACSD-66049: niet-Engelse winkeliers geven onjuiste prijzen weer vanwege de ICU-bibliotheekversie
 
@@ -28,7 +28,7 @@ De ACSD-66049-patch verhelpt het probleem dat niet-Engelse winkeliers een onjuis
 
 >[!NOTE]
 >
->De patch kan van toepassing worden op andere versies met nieuwe [!DNL Quality Patches Tool] versies. Om te controleren of de patch compatibel is met uw Adobe Commerce-versie, werkt u het `magento/quality-patches` -pakket bij naar de meest recente versie en controleert u de compatibiliteit op de [[!DNL Quality Patches Tool] : zoek naar patches op de pagina ](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html?lang=nl-NL) . Gebruik de patch-id als een zoekwoord om de patch te zoeken.
+>De patch kan van toepassing worden op andere versies met nieuwe [!DNL Quality Patches Tool] versies. Om te controleren of de patch compatibel is met uw Adobe Commerce-versie, werkt u het `magento/quality-patches` -pakket bij naar de meest recente versie en controleert u de compatibiliteit op de [[!DNL Quality Patches Tool] : zoek naar patches op de pagina ](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html) . Gebruik de patch-id als een zoekwoord om de patch te zoeken.
 
 ## Probleem
 
@@ -39,7 +39,7 @@ Niet-Engelstalige winkeliers geven een onjuiste prijs weer wanneer oudere versie
 1. ICU-versie controleren:
    * Verbind met de server via SSH en stel het bevel in werking: `php -a`
    * Typ achter de vraag: `echo INTL_ICU_VERSION;`
-1. Ga naar **[!UICONTROL Stores]** > **[!UICONTROL Configuration]** > **[!UICONTROL General]** > **[!UICONTROL Locale]** > **[!UICONTROL Locale Options]** . **[!UICONTROL Configure Locale]** = *[UICONTOL Hebreeuws (Israël)]*.
+1. Ga naar **[!UICONTROL Stores]** > **[!UICONTROL Configuration]** > **[!UICONTROL General]** > **[!UICONTROL Locale]** > **[!UICONTROL Locale Options]**. **[!UICONTROL Configure Locale]** = *[!UICONTROL Hebrew (Israel)]* .
 1. Maak een product met prijs = 100.
 1. Bekijk de productpagina in de winkel.
 
@@ -50,14 +50,13 @@ De weergegeven prijs is niet 0.
 <u> Ware resultaten </u>:
 
 Nadat u kort de waarde 100 hebt weergegeven, wordt de prijs onmiddellijk bijgewerkt naar 0.
-(Dit probleem is van toepassing op PHP ICU library versions 63.1 to 74.1.)
 
 ## De patch toepassen
 
 Om individuele flarden toe te passen, gebruik de volgende verbindingen afhankelijk van uw plaatsingsmethode:
 
 * Op locatie Adobe Commerce of Magento Open Source: [[!DNL Quality Patches Tool] > Gebruik ](/help/tools/quality-patches-tool/usage.md) in de handleiding [!DNL Quality Patches Tool] .
-* Adobe Commerce op wolkeninfrastructuur: [ Verbeteringen en Patches > Pas Patches ](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html?lang=nl-NL) in Commerce op de gids van de Infrastructuur van de Wolk toe.
+* Adobe Commerce op wolkeninfrastructuur: [ Verbeteringen en Patches > Pas Patches ](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html) in Commerce op de gids van de Infrastructuur van de Wolk toe.
 
 ## Gerelateerde lezing
 
