@@ -4,9 +4,9 @@ description: Deze subsectie biedt een gedetailleerde beschrijving van de problem
 feature: Tools and External Services
 role: Admin, Developer
 exl-id: 74094036-cb1b-419f-b287-ca24d351a448
-source-git-commit: 0a7fdb3e5a7cb2c61ba54af78fadb524a570e20f
+source-git-commit: 47c8541c228f9ed3795c93b67b8ff85cbd4bd555
 workflow-type: tm+mt
-source-wordcount: '283'
+source-wordcount: '285'
 ht-degree: 0%
 
 ---
@@ -21,7 +21,7 @@ QPT v1.1.68 omvat de volgende flarden:
 1. **ACSD-62415**: Adobe Commerce achterste laadt categorieën zeer langzaam.
 1. **ACSD-65938**: De kaarte-mails van de Gift werden verzonden zelfs toen de factuurverwezenlijking ontbrak.
 1. **ACSD-66072**: De verwante producten zijn niet teruggekeerd via GraphQL op de Pagina van het Detail van het Product toe te schrijven aan een interne serverfout wanneer [!UICONTROL Related Products Rule] wordt gevormd.
-1. **ACSD-66082**: Kan het het staalbeeld van een product niet bijwerken door productinvoer.
+1. **ACSD-66082**: Kan het monsterbeeld van een product door productinvoer niet bijwerken.
 1. **ACSD-66179**: Het annuleren van een factuur met het &quot;niet Vangst&quot;betalingstype resulteert in een 404 foutenpagina.
 1. **ACSD-66233**: Admins kan producten wegens niet ontvankelijke popup toevoegen van de productlijst.
 1. **ACSD-66506**: De fout van de steun kwam voor toen eerder toegewezen producten van een Gedeelde Catalogus werden geschrapt en nieuwe toegewezen.
