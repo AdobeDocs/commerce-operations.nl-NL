@@ -3,9 +3,9 @@ title: De toepassing configureren
 description: Meer informatie over de configuratie na installatie die vereist is voor Adobe Commerce-implementaties op locatie.
 feature: Install, Configuration
 exl-id: b1808664-10ec-4147-8251-a99f8b58f4be
-source-git-commit: a28dad04dac23075234a6ac3c2b362d125c9d981
+source-git-commit: a7c98879e027948fc887e28d4baa5fb04214ca95
 workflow-type: tm+mt
-source-wordcount: '0'
+source-wordcount: '713'
 ht-degree: 0%
 
 ---
@@ -26,7 +26,7 @@ Voor meer informatie over kroon, met inbegrip van hoe te om een krontab te verwi
 
 Na de installatie raden we het volgende aan:
 
-* Zorg ervoor dat de eigendom van het bestand en de machtigingen correct zijn ingesteld.
+* Zorg ervoor dat uw dossiereigendom en toestemmingen [ behoorlijk ](../prerequisites/file-system/configure-permissions.md) worden geplaatst
 * Wij adviseren sterk [ veranderend standaardAdmin URI ](../tutorials/admin-uri.md) van `admin` in iets anders
 * Zorg ervoor dat de [`X-Frame-Option` HTTP-header ](../../configuration/security/xframe-options.md) juist is ingesteld.
 * Neem voorzorgsmaatregelen tegen dwars-plaats scripting (XSS) door [ uw malplaatjes ](https://developer.adobe.com/commerce/php/development/security/cross-site-scripting/) te beveiligen
@@ -65,7 +65,7 @@ Zie een van de volgende bronnen voor meer informatie:
 >
 >* Starteromgevingen hebben geen logrotatie.
 >
->* U kunt logrotatie niet configureren in Pro Integration-omgevingen. U moet een douaneoplossing/manuscript uitvoeren en [ vormt uw kruin ](https://experienceleague.adobe.com/nl/docs/commerce-on-cloud/user-guide/configure/app/properties/crons-property) om het manuscript in werking te stellen zoals nodig.
+>* U kunt logrotatie niet configureren in Pro Integration-omgevingen. U moet een douaneoplossing/manuscript uitvoeren en [ vormt uw kruin ](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/configure/app/properties/crons-property) om het manuscript in werking te stellen zoals nodig.
 
 ### Opstelling iptables regels om de diverse diensten toe te laten om mee te delen
 
