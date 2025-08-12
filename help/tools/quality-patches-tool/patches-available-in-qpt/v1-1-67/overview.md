@@ -4,9 +4,9 @@ description: Deze subsectie verstrekt een gedetailleerde beschrijving van de kwe
 feature: Tools and External Services
 role: Admin, Developer
 exl-id: 47f6b57d-b945-4e77-8630-2df709a3469e
-source-git-commit: a0bf44520c0d355c9aca3aaab55306a2d0fe018e
+source-git-commit: d025c8a6e451ff41ec4b50cf633927e52b9429f0
 workflow-type: tm+mt
-source-wordcount: '184'
+source-wordcount: '185'
 ht-degree: 0%
 
 ---
@@ -23,7 +23,7 @@ QPT v1.1.67 omvat de volgende flarden:
 1. **ACSD-66084**: `row_total_incl_tax` keert bijna-nul restwaarde in plaats van 0.00 voor volledig verdisconteerde punten in de orde API reactie terug.
 1. **ACSD-66118**: Het bijwerken van **[!UICONTROL Store View]** code ontruimt **[!UICONTROL Design Configuration]** montages als configuratiecache niet wordt verfrist.
 1. **ACSD-66139**: GraphQL keert ONGEDEFINIEERDE fout voor non-existent of inactief karretje tijdens orderplaatsing terug.
-1. **ACSD-66301**: Het bewegen van producten van een orde terug naar het karretje in Admin resulteert in kwantitatieve wanverhouding.
+1. **ACSD-66301**: Het bewegen van producten van een orde aan het karretje in Admin van Commerce resulteert in een kwantitatieve wanverhouding.
 1. **ACSD-66434**: identiteitskaart van de klant mist van de vragen van bedrijfGraphQL.
 1. **ACSD-66441**: De gelaagde vertoningen van de Navigatie onjuiste attributenopties in multi-store opstelling.
 
