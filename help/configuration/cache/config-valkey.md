@@ -2,9 +2,10 @@
 title: Valkey configureren
 description: Bekijk een overzicht van Valkey-functies en start de Valkey-configuratie.
 feature: Configuration, Cache
-source-git-commit: 1850301e0b7f1abbc54613209940dd63d16ef145
+exl-id: 12dbc171-3df6-4413-869b-a3450b5647b4
+source-git-commit: b2cf71bfda3e5db8e27eb28d764cf99216454e33
 workflow-type: tm+mt
-source-wordcount: '337'
+source-wordcount: '341'
 ht-degree: 0%
 
 ---
@@ -19,7 +20,7 @@ Voorbeelden van geldige functies zijn:
 
 ## Valkey installeren
 
-Raadpleeg de volgende bronnen voor installatie en configuratie van Valkey-software:
+Raadpleeg de volgende bronnen voor installatie en configuratie van de Valkey-software:
 
 - [ Download Valkey pagina ](https://valkey.io/download/)
 - [ Valkey snel begin ](https://valkey.io/topics/quickstart/)
@@ -27,7 +28,7 @@ Raadpleeg de volgende bronnen voor installatie en configuratie van Valkey-softwa
 
 ## Valkey-configuratie instellen
 
-Afhankelijk van de installatie vindt u de Valkey-configuratie meestal in `/etc/valkey/valkey.conf` of `/etc/valkey/<port>.conf` .
+Afhankelijk van de installatie vindt u de Valkey-configuratie meestal in het `/etc/valkey/valkey.conf` -bestand of in het `/etc/valkey/<port>.conf` -bestand.
 
 Als u de Valkey-instantie naar wens wilt optimaliseren, bereikt u de beste resultaten met een speciale instantie voor elke sessie, Commerce-cache en FPC.
 
