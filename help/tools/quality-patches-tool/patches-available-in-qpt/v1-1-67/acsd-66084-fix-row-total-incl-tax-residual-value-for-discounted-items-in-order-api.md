@@ -1,5 +1,5 @@
 ---
-title: 'ACSD-66084: ` row_total_incl_tax'' keert dichtbij-nul in plaats van 0.00 voor volledig verdisconteerde punten in orde API terug'
+title: 'ACSD-66084: &grave; row_total_incl_tax'' keert dichtbij-nul in plaats van 0.00 voor volledig verdisconteerde punten in orde API terug'
 description: Pas de ACSD-66084-patch toe om het Adobe Commerce-probleem op te lossen, waarbij row_total_incl_tax is geretourneerd als een restwaarde van bijna nul in plaats van 0,00 voor items met volledige kortingen in de API-reactie voor bestelling.
 feature: Orders, REST, Taxes, Payments, Checkout
 role: Admin, Developer
