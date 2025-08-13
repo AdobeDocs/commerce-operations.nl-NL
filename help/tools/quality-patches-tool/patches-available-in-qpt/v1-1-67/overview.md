@@ -4,9 +4,9 @@ description: Deze subsectie verstrekt een gedetailleerde beschrijving van de kwe
 feature: Tools and External Services
 role: Admin, Developer
 exl-id: 47f6b57d-b945-4e77-8630-2df709a3469e
-source-git-commit: d025c8a6e451ff41ec4b50cf633927e52b9429f0
+source-git-commit: 951738a4c671ed6fcc47b2a928d2110c78763d26
 workflow-type: tm+mt
-source-wordcount: '185'
+source-wordcount: '181'
 ht-degree: 0%
 
 ---
@@ -20,7 +20,7 @@ QPT v1.1.67 omvat de volgende flarden:
 1. **AC-14984**: SSL verbindingskwestie met php-amqplib/php-amqplib ^3.2.0.
 1. **ACSD-65935**: `customerOrders` de vraag van GraphQL keerde een interne serverfout terug wanneer een product werd geschrapt.
 1. **ACSD-66049**: De niet-Engelse storefronts tonen onjuiste tarifering toe te schrijven aan de ICU bibliotheekversie.
-1. **ACSD-66084**: `row_total_incl_tax` keert bijna-nul restwaarde in plaats van 0.00 voor volledig verdisconteerde punten in de orde API reactie terug.
+1. **ACSD-66084**: `row_total_incl_tax` keert bijna-nul in plaats van 0.00 voor volledig verdisconteerde punten in orde API terug.
 1. **ACSD-66118**: Het bijwerken van **[!UICONTROL Store View]** code ontruimt **[!UICONTROL Design Configuration]** montages als configuratiecache niet wordt verfrist.
 1. **ACSD-66139**: GraphQL keert ONGEDEFINIEERDE fout voor non-existent of inactief karretje tijdens orderplaatsing terug.
 1. **ACSD-66301**: Het bewegen van producten van een orde aan het karretje in Admin van Commerce resulteert in een kwantitatieve wanverhouding.
