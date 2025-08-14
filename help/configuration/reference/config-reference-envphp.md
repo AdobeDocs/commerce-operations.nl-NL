@@ -2,9 +2,9 @@
 title: env.php reference
 description: Zie een lijst met waarden voor het bestand env.php.
 exl-id: cf02da8f-e0de-4f0e-bab6-67ae02e9166f
-source-git-commit: 3f46ee08bb4edc08775bf986804772b88ca35f45
+source-git-commit: 26fac37405ad635f297b65415517451d5149e50f
 workflow-type: tm+mt
-source-wordcount: '944'
+source-wordcount: '1008'
 ht-degree: 0%
 
 ---
@@ -146,7 +146,7 @@ Commerce gebruikt een coderingssleutel om wachtwoorden en andere vertrouwelijke 
 ]
 ```
 
-Leer meer over [ Sleutel van de Encryptie ](https://experienceleague.adobe.com/nl/docs/commerce-admin/systems/security/encryption-key) in de _gids van de Gebruiker van Commerce_.
+Leer meer over [ Sleutel van de Encryptie ](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/security/encryption-key) in de _gids van de Gebruiker van Commerce_.
 
 ## db
 
@@ -203,7 +203,7 @@ Een lijst met downloadbare domeinen beschikbaar in dit knooppunt. De extra domei
 ]
 ```
 
-Leer meer over [ Downloadbare Domeinen ](https://experienceleague.adobe.com/nl/docs/commerce-operations/tools/cli-reference/commerce-on-premises#downloadabledomainsadd).
+Leer meer over [ Downloadbare Domeinen ](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/cli-reference/commerce-on-premises#downloadabledomainsadd).
 
 ## installeren
 
@@ -347,6 +347,12 @@ export MAGENTO_DC_X-FRAME-OPTIONS=SAMEORIGIN
 ## Bestandsconfiguratie met variabelen negeren
 
 Als u de bestaande `env.php` configuratieopties wilt negeren met een omgevingsvariabele van het besturingssysteem, moet het arrayelement van de configuratie JSON-gecodeerd zijn en worden ingesteld als een waarde van de `MAGENTO_DC__OVERRIDE` OS-variabele.
+
+Wanneer `MAGENTO_DC__OVERRIDE` is ingesteld, slaat het Commerce-framework de overeenkomende waarden in het `env.php` -bestand over en wordt de configuratie rechtstreeks vanuit de omgevingsvariabele gelezen. De waarden in het `env.php` -bestand blijven ongewijzigd, maar worden genegeerd voor de overschreven configuratiesecties.
+
+>[!IMPORTANT]
+>
+>Met de variabele `MAGENTO_DC__OVERRIDE` worden de opgegeven configuratiesecties in het `env.php` -bestand volledig overgeslagen. Dit gedrag verschilt van individuele `MAGENTO_DC_` variabelen, die lagere prioriteit hebben dan waarden in het `env.php` dossier.
 
 Als u meerdere configuratieopties moet overschrijven, stelt u ze allemaal samen in één array voor JSON-codering.
 
