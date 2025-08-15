@@ -29,7 +29,7 @@ Wanneer
 
 >[!NOTE]
 >
->U kunt modules niet direct op wolkenprojecten toelaten of onbruikbaar maken. U moet deze opdrachten lokaal uitvoeren en vervolgens wijzigingen in het `app/etc/config.php` -bestand doorvoeren voor een omgeving. Zie [ Pro projectwerkschema: Het werkschema van de Plaatsing ](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/architecture/pro-develop-deploy-workflow.html#deployment-workflow).
+>U kunt modules niet direct op wolkenprojecten toelaten of onbruikbaar maken. U moet deze opdrachten lokaal uitvoeren en vervolgens wijzigingen in het `app/etc/config.php` -bestand doorvoeren voor een omgeving. Zie [ Pro projectwerkschema: Het werkschema van de Plaatsing ](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/architecture/pro-develop-deploy-workflow.html?lang=nl-NL#deployment-workflow).
 
 ## Module in-/uitschakelen
 

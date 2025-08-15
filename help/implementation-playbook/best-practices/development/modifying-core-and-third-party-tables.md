@@ -54,7 +54,7 @@ Twee voorbeelden van opslaglocaties zijn databasetabellen en [!DNL Redis] . Bij 
 
 Als ontwikkelaar is het van essentieel belang om altijd te overwegen om hulpprogramma&#39;s te gebruiken buiten uw [!DNL Adobe Commerce] -omgeving, zoals GraphQL mesh en Adobe App Builder. Deze hulpmiddelen kunnen u helpen toegang tot de gegevens behouden maar hebben geen invloed op de kernhandelstoepassing of zijn onderliggende gegevensbestandlijsten. Met deze aanpak maakt u uw gegevens beschikbaar via een API. Vervolgens voegt u een gegevensbron toe aan uw App Builder-configuratie. Gebruikend het Net van GraphQL, kunt u die gegevensbronnen combineren en één enkele reactie produceren zoals vermeld in [ erfenisgegevens ](#legacy-data).
 
-Voor extra details op het net van GraphQL, zie [ Gateway van het Net van GraphQL ](https://developer.adobe.com/graphql-mesh-gateway/){target="_blank"}. Voor informatie over Adobe App Builder, zie [ Introducerend App Builder ](https://experienceleague.adobe.com/docs/adobe-developers-live-events/events/2021/oct2021/introduction-app-builder.html?lang=en){target="_blank"}.
+Voor extra details op het net van GraphQL, zie [ Gateway van het Net van GraphQL ](https://developer.adobe.com/graphql-mesh-gateway/){target="_blank"}. Voor informatie over Adobe App Builder, zie [ Introducerend App Builder ](https://experienceleague.adobe.com/docs/adobe-developers-live-events/events/2021/oct2021/introduction-app-builder.html?lang=nl-NL){target="_blank"}.
 
 ## Een kerntabel of tabel van derden wijzigen
 
@@ -73,7 +73,7 @@ Adobe raadt u aan de volgende stappen uit te voeren wanneer u een kolom toevoegt
 
    Bijvoorbeeld: `app/code/YourCompany/Customer`
 
-1. Creeer de aangewezen dossiers om de module toe te laten (zie [ een module ](https://experienceleague.adobe.com/docs/commerce-learn/tutorials/backend-development/create-module.html){target="_blank"} creëren.
+1. Creeer de aangewezen dossiers om de module toe te laten (zie [ een module ](https://experienceleague.adobe.com/docs/commerce-learn/tutorials/backend-development/create-module.html?lang=nl-NL){target="_blank"} creëren.
 
 1. Maak een bestand met de naam `db_schema.xml` in de map `etc` en breng de gewenste wijzigingen aan.
 

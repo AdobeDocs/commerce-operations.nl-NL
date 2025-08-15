@@ -30,13 +30,13 @@ stage:
     REDIS_BACKEND: '\Magento\Framework\Cache\Backend\RemoteSynchronizedCache'
 ```
 
-Voor milieuconfiguratie op de infrastructuur van de Wolk, zie [`REDIS_BACKEND` ](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure/env/stage/variables-deploy.html#redis_backend) in _Commerce op de Gids van de Infrastructuur van de Wolk_.
+Voor milieuconfiguratie op de infrastructuur van de Wolk, zie [`REDIS_BACKEND` ](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure/env/stage/variables-deploy.html?lang=nl-NL#redis_backend) in _Commerce op de Gids van de Infrastructuur van de Wolk_.
 
 Voor installaties op-gebouw, zie [ Redis pagina caching ](../../../configuration/cache/redis-pg-cache.md#configure-redis-page-caching) in de _Gids van de Configuratie_ vormen.
 
 >[!NOTE]
 >
->Controleer of u de nieuwste versie van het pakket `ece-tools` gebruikt. Als niet, [ verbetering aan de recentste versie ](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/dev-tools/ece-tools/update-package.html). U kunt de versie controleren die in uw lokale omgeving is geïnstalleerd met de opdracht `composer show magento/ece-tools` CLI.
+>Controleer of u de nieuwste versie van het pakket `ece-tools` gebruikt. Als niet, [ verbetering aan de recentste versie ](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/dev-tools/ece-tools/update-package.html?lang=nl-NL). U kunt de versie controleren die in uw lokale omgeving is geïnstalleerd met de opdracht `composer show magento/ece-tools` CLI.
 
 
 ### Grootte van L2-cachegeheugen (Adobe Commerce Cloud)
@@ -91,13 +91,13 @@ stage:
     REDIS_USE_SLAVE_CONNECTION: true
 ```
 
-Zie [ REDIS_USE_SLAVE_CONNECTION ](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure/env/stage/variables-deploy.html#redis_use_slave_connection) in _Commerce op de Gids van de Infrastructuur van de Wolk_.
+Zie [ REDIS_USE_SLAVE_CONNECTION ](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure/env/stage/variables-deploy.html?lang=nl-NL#redis_use_slave_connection) in _Commerce op de Gids van de Infrastructuur van de Wolk_.
 
 Voor Adobe Commerce-installaties op locatie configureert u de nieuwe Redis-casimplementatie met de opdrachten `bin/magento:setup` . Zie [ Redis van het Gebruik voor standaardgeheime voorgeheugen ](../../../configuration/cache/redis-pg-cache.md#configure-redis-page-caching) in de _Gids van de Configuratie_.
 
 >[!WARNING]
 >
->Vorm __ geen Redis slave verbinding voor de projecten van de wolkeninfrastructuur met a [ geschraapte/gespleten architectuur ](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/architecture/scaled-architecture.html). Dit veroorzaakt Redis verbindingsfouten. Zie [ opnieuw configuratiebegeleiding ](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure/env/stage/variables-deploy.html#redis_use_slave_connection) in _Commerce op de gids van de Infrastructuur van de Wolk_.
+>Vorm __ geen Redis slave verbinding voor de projecten van de wolkeninfrastructuur met a [ geschraapte/gespleten architectuur ](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/architecture/scaled-architecture.html?lang=nl-NL). Dit veroorzaakt Redis verbindingsfouten. Zie [ opnieuw configuratiebegeleiding ](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure/env/stage/variables-deploy.html?lang=nl-NL#redis_use_slave_connection) in _Commerce op de gids van de Infrastructuur van de Wolk_.
 
 ## Toetsen vooraf laden
 
@@ -159,7 +159,7 @@ stage:
 
 >[!NOTE]
 >
->In het vorige voorbeeld, is het `full_page` geheime voorgeheugen niet relevant voor Adobe Commerce op de projecten van de wolkeninfrastructuur, omdat zij [ Fastly ](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/cdn/fastly) gebruiken.
+>In het vorige voorbeeld, is het `full_page` geheime voorgeheugen niet relevant voor Adobe Commerce op de projecten van de wolkeninfrastructuur, omdat zij [ Fastly ](https://experienceleague.adobe.com/nl/docs/commerce-cloud-service/user-guide/cdn/fastly) gebruiken.
 
 Voor het vormen van installaties op-gebouw, zie [ het geheim voorgeheugenopties van de Stale ](../../../configuration/cache/level-two-cache.md#stale-cache-options) in de _Gids van de Configuratie_.
 
@@ -200,7 +200,7 @@ Door de Redis-cache te scheiden van de Redis-sessie kunt u de cache en de sessie
        rabbitmq: "rabbitmq:rabbitmq"
    ```
 
-1. Verzend een [ kaartje van de Steun van Adobe Commerce ](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html#submit-ticket) om de levering van een nieuwe instantie te verzoeken Redis gewijd aan zittingen op de milieu&#39;s van de Productie en van het Staging. Neem de bijgewerkte configuratiebestanden `.magento/services.yaml` en `.magento.app.yaml` op. Dit zal geen onderbreking veroorzaken, maar het vereist een plaatsing om de nieuwe dienst te activeren.
+1. Verzend een [ kaartje van de Steun van Adobe Commerce ](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html?lang=nl-NL#submit-ticket) om de levering van een nieuwe instantie te verzoeken Redis gewijd aan zittingen op de milieu&#39;s van de Productie en van het Staging. Neem de bijgewerkte configuratiebestanden `.magento/services.yaml` en `.magento.app.yaml` op. Dit zal geen onderbreking veroorzaken, maar het vereist een plaatsing om de nieuwe dienst te activeren.
 
 1. Controleer of de nieuwe instantie wordt uitgevoerd en noteer het poortnummer.
 
@@ -237,7 +237,7 @@ Door de Redis-cache te scheiden van de Redis-sessie kunt u de cache en de sessie
    redis-cli -h 127.0.0.1 -p 6374 -n 0 FLUSHDB
    ```
 
-Tijdens plaatsing, zou u de volgende lijnen in [ moeten zien bouwen en logboek ](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/test/log-locations.html#build-and-deploy-logs) opstellen:
+Tijdens plaatsing, zou u de volgende lijnen in [ moeten zien bouwen en logboek ](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/test/log-locations.html?lang=nl-NL#build-and-deploy-logs) opstellen:
 
 ```
 W:   - Downloading colinmollenhour/credis (1.11.1)

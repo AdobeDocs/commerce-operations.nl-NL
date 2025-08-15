@@ -67,4 +67,4 @@ ht-degree: 0%
    - [Commerce verwijderen of opnieuw installeren](tutorials/uninstall.md)
    - [Thema&#39;s verwijderen](tutorials/themes.md)
    - [Het databaseschema bijwerken](tutorials/database-upgrade.md)
-- [ Terugkeer aan Operationele Gidsen ](https://experienceleague.adobe.com/docs/commerce-operations/operational-guides/home.html)
+- [ Terugkeer aan Operationele Gidsen ](https://experienceleague.adobe.com/docs/commerce-operations/operational-guides/home.html?lang=nl-NL)

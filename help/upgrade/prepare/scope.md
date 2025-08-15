@@ -11,7 +11,7 @@ ht-degree: 0%
 
 # Begrijp het werkingsgebied van verbetering
 
-Herzie de [ versienota&#39;s ](https://experienceleague.adobe.com/en/docs/commerce-operations/release/notes/overview) om het werkingsgebied van een versie, met inbegrip van verhogingen, insectenmoeilijke situaties, en bekende kwesties te begrijpen die derde en douanemodules zouden kunnen beïnvloeden.
+Herzie de [ versienota&#39;s ](https://experienceleague.adobe.com/nl/docs/commerce-operations/release/notes/overview) om het werkingsgebied van een versie, met inbegrip van verhogingen, insectenmoeilijke situaties, en bekende kwesties te begrijpen die derde en douanemodules zouden kunnen beïnvloeden.
 
 ## Achteruit incompatibele wijzigingen
 
@@ -26,7 +26,7 @@ Het nieuwe verenigbaarheidsbeleid van Adobe Commerce Marketplace zorgt ervoor da
 
 ## Aangepaste modules
 
-Alle douanemodules zouden tegen de doelversie moeten worden gecontroleerd u aan bevordert. Dit is het meest tijd- en middel-intensieve proces van een verbetering. Wanneer het evalueren van uw douanemodules, moet u achteruit-incompatibele veranderingen zoeken en zich van nieuwe praktijken, zoals controlemechanismedecompositie bewust zijn. U kunt meer over dit in de [ versienota&#39;s ](https://experienceleague.adobe.com/en/docs/commerce-operations/release/notes/overview) leren. Ook, zorg ervoor dat u [ beste praktijken ](https://developer.adobe.com/commerce/php/best-practices/extensions/) voor moduleontwikkeling volgt.
+Alle douanemodules zouden tegen de doelversie moeten worden gecontroleerd u aan bevordert. Dit is het meest tijd- en middel-intensieve proces van een verbetering. Wanneer het evalueren van uw douanemodules, moet u achteruit-incompatibele veranderingen zoeken en zich van nieuwe praktijken, zoals controlemechanismedecompositie bewust zijn. U kunt meer over dit in de [ versienota&#39;s ](https://experienceleague.adobe.com/nl/docs/commerce-operations/release/notes/overview) leren. Ook, zorg ervoor dat u [ beste praktijken ](https://developer.adobe.com/commerce/php/best-practices/extensions/) voor moduleontwikkeling volgt.
 
 ## [!DNL Upgrade Compatibility Tool]
 

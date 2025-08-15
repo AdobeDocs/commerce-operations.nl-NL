@@ -28,7 +28,7 @@ In de volgende gevallen moet u mogelijk de increment-id wijzigen voor nieuwe DB-
 
 >[!INFO]
 >
->U kunt het probleem met de betaalgateway voor PayPal ook verhelpen door meerdere betalingen per factuur-ID toe te staan in de voorkeuren voor betalingsontvangst van PayPal. Zie {de gateway van 0} PayPal verworpen verzoek - dubbele factuurkwestie [ in de ](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/payments/paypal-gateway-rejected-request-duplicate-invoice-issue.html) Kennisbank _._
+>U kunt het probleem met de betaalgateway voor PayPal ook verhelpen door meerdere betalingen per factuur-ID toe te staan in de voorkeuren voor betalingsontvangst van PayPal. Zie {de gateway van 0} PayPal verworpen verzoek - dubbele factuurkwestie [ in de ](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/payments/paypal-gateway-rejected-request-duplicate-invoice-issue.html?lang=nl-NL) Kennisbank _._
 
 ## Vereiste stappen
 

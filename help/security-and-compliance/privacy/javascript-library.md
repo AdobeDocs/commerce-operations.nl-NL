@@ -21,7 +21,7 @@ Deze bibliotheek bevat een set functies voor het maken van verzoeken om privacyg
 
 >[!NOTE]
 >
->Als [ de Wijze van de Beperking van het Koekje ](https://experienceleague.adobe.com/docs/commerce-admin/start/compliance/privacy/compliance-cookie-law.html) wordt toegelaten, verzamelt Commerce geen gedragsgegevens tot de verkoopster toestemmingen. Als [!UICONTROL **de Wijze van de Beperking van het Koekje**] gehandicapt is, verzamelt Commerce gedragsgegevens door gebrek.
+>Als [ de Wijze van de Beperking van het Koekje ](https://experienceleague.adobe.com/docs/commerce-admin/start/compliance/privacy/compliance-cookie-law.html?lang=nl-NL) wordt toegelaten, verzamelt Commerce geen gedragsgegevens tot de verkoopster toestemmingen. Als [!UICONTROL **de Wijze van de Beperking van het Koekje**] gehandicapt is, verzamelt Commerce gedragsgegevens door gebrek.
 
 ## Installatie
 

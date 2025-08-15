@@ -116,5 +116,5 @@ Als u één URL voor de afbeeldingscache bezoekt, worden alle afbeeldingsgrootte
 
 >[!NOTE]
 >
->- Adobe Commerce op cloud-infrastructuurprojecten kan de grootte van productafbeeldingen verschuiven naar de Fastly-service. Zie [ Diepe beeldoptimalisering ](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/cdn/fastly-image-optimization.html?lang=en#deep-image-optimization) in de _Gids van de Wolk_.
->- Als u de externe opslagmodule gebruikt, kunt u ook proberen de afbeeldingsgrootte te verschuiven naar nginx. Zie [ beeld het resizing voor verre opslag ](https://experienceleague.adobe.com/docs/commerce-operations/configuration-guide/storage/remote-storage/remote-storage-image-resize.html) in de _Gids van de Configuratie_ vormen.
+>- Adobe Commerce op cloud-infrastructuurprojecten kan de grootte van productafbeeldingen verschuiven naar de Fastly-service. Zie [ Diepe beeldoptimalisering ](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/cdn/fastly-image-optimization.html?lang=nl-NL#deep-image-optimization) in de _Gids van de Wolk_.
+>- Als u de externe opslagmodule gebruikt, kunt u ook proberen de afbeeldingsgrootte te verschuiven naar nginx. Zie [ beeld het resizing voor verre opslag ](https://experienceleague.adobe.com/docs/commerce-operations/configuration-guide/storage/remote-storage/remote-storage-image-resize.html?lang=nl-NL) in de _Gids van de Configuratie_ vormen.

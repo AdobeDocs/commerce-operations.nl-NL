@@ -59,6 +59,6 @@ _AC-13258_
 
 ### Beveiliging
 
-Voor de recentste informatie over veiligheidsinsectenmoeilijke situaties, zie [ Bulletin APSB25-50 van de Veiligheid van Adobe ](https://helpx.adobe.com/security/products/magento/apsb25-50.html).
+Voor de recentste informatie over veiligheidsinsectenmoeilijke situaties, zie [ Bulletin APSB25-50 van de Veiligheid van Adobe ](https://helpx.adobe.com/nl/security/products/magento/apsb25-50.html).
 
 {{$include /help/_includes/release-notes/highlights/security-2025-06.md}}

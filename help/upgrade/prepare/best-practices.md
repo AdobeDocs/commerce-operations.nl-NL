@@ -57,7 +57,7 @@ Begin met het aannemen van het Adobe Commerce Extenability Platform, als u dit n
 
 Aangezien wij de mogelijkheden van Adobe Commerce voortdurend uitbreiden, is het essentieel dat u zich op de recentste beschikbare versie ontwikkelt en een verbeteringsstrategie in uw projectplannen bepaalt. Dit helpt u veilig, volgzaam, en bijgewerkt op de recentste verhogingen blijven die u toestaan om verkoop sneller te groeien, effectiever te werken, en uw concurrentie nu en in de toekomst voor te blijven.
 
-Om u te helpen plannen en begroting voor verbeteringen, zou u ons [ versieschema ](https://experienceleague.adobe.com/en/docs/commerce-operations/release/planning/schedule) moeten controleren. De verbeteringstaken van het plan binnen de achterstand van uw team van tevoren. Doel om dit werk met GA te voltooien.
+Om u te helpen plannen en begroting voor verbeteringen, zou u ons [ versieschema ](https://experienceleague.adobe.com/nl/docs/commerce-operations/release/planning/schedule) moeten controleren. De verbeteringstaken van het plan binnen de achterstand van uw team van tevoren. Doel om dit werk met GA te voltooien.
 
 - Gebruik de pre-versieversie om over elke nieuwe versie te leren. De pre-versie is de Algemene code van de Beschikbaarheid die aan de verkopers van Adobe Commerce en alle partners twee weken vóór Algemene Beschikbaarheid beschikbaar is. Als u veelvoudige opslag hebt, gebruik pre-versie op uw basisopslag en verifieer dat uw douanemodules en thema&#39;s met het compatibel zijn.
 
@@ -73,7 +73,7 @@ Upgrades moeten regelmatig en binnen een vooraf bepaalde begroting plaatsvinden.
 
 Evalueer het werk dat moet worden gedaan voor de upgrade:
 
-- Herzie de [ versienota&#39;s ](https://experienceleague.adobe.com/en/docs/commerce-operations/release/notes/overview) om het werkingsgebied en het effect van de nieuwe versie te begrijpen.
+- Herzie de [ versienota&#39;s ](https://experienceleague.adobe.com/nl/docs/commerce-operations/release/notes/overview) om het werkingsgebied en het effect van de nieuwe versie te begrijpen.
 
 - Gebruik [[!DNL Upgrade Compatibility Tool]](../upgrade-compatibility-tool/overview.md) om potentiële problemen te identificeren die in uw douanecode moeten worden opgelost alvorens te proberen om aan een nieuwere versie te bevorderen.
 

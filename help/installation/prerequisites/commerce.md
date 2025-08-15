@@ -15,7 +15,7 @@ Je bent een van de 240.000 kooplieden wereldwijd die vertrouwen hebben in onze s
 
 ## De software ophalen
 
-Controleer de beschikbaarheid van opwindende nieuwe eigenschappen en versies en leer hoe u hen op onze [ pagina van de productbeschikbaarheid ](https://experienceleague.adobe.com/en/docs/commerce-operations/release/product-availability) kunt krijgen.
+Controleer de beschikbaarheid van opwindende nieuwe eigenschappen en versies en leer hoe u hen op onze [ pagina van de productbeschikbaarheid ](https://experienceleague.adobe.com/nl/docs/commerce-operations/release/product-availability) kunt krijgen.
 
 Raadpleeg de volgende tabel om aan de slag te gaan met de installatie van Adobe Commerce.
 

@@ -48,7 +48,7 @@ Volg deze richtlijnen om prestatieproblemen te voorkomen bij het gebruik van tri
 
 - Als u douanetriggers hebt die sommige gegevens schrijven wanneer de trekker wordt uitgevoerd, beweeg deze logica om rechtstreeks aan de controletabellen in plaats daarvan te schrijven. Bijvoorbeeld, door een extra vraag in de toepassingscode toe te voegen, na de vraag u was bedoeld om de trekker voor tot stand te brengen.
 - Bekijk bestaande aangepaste triggers en overweeg deze te verwijderen en rechtstreeks vanuit de toepassingszijde naar de tabellen te schrijven. Controle voor bestaande trekkers in uw gegevensbestand door de [`SHOW TRIGGERS` SQL Verklaring ](https://dev.mysql.com/doc/refman/8.0/en/show-triggers.html) te gebruiken.
-- Voor extra hulp, vragen, of zorgen, [ voorleggen een kaartje van de Steun van Adobe Commerce ](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html?#submit-ticket).
+- Voor extra hulp, vragen, of zorgen, [ voorleggen een kaartje van de Steun van Adobe Commerce ](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html?lang=nl-NL&#submit-ticket).
 
 ## Slave-verbindingen
 
@@ -62,7 +62,7 @@ Adobe Commerce op cloudinfrastructuur, alleen Pro-architectuur
 
 ### Configuratie
 
-In Adobe Commerce op wolkeninfrastructuur, kunt u de standaardconfiguratie voor de MYSQL slave verbinding met voeten treden door [ MYSQL_USE_SLAVE_CONNECTION ](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure/env/stage/variables-deploy.html#mysql_use_slave_connection) variabele te plaatsen. Stel deze variabele in op `true` als u automatisch een alleen-lezen verbinding met de database wilt gebruiken.
+In Adobe Commerce op wolkeninfrastructuur, kunt u de standaardconfiguratie voor de MYSQL slave verbinding met voeten treden door [ MYSQL_USE_SLAVE_CONNECTION ](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure/env/stage/variables-deploy.html?lang=nl-NL#mysql_use_slave_connection) variabele te plaatsen. Stel deze variabele in op `true` als u automatisch een alleen-lezen verbinding met de database wilt gebruiken.
 
 **om de MySQL slave verbinding** toe te laten:
 

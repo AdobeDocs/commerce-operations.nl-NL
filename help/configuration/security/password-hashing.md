@@ -61,4 +61,4 @@ Aangezien Commerce alle gebruikte versies van wachtwoordhashes samen met de wach
 
 ## Implementatie
 
-De `\Magento\Framework\Encryption\Encryptor` -klasse is verantwoordelijk voor het genereren en verifiëren van wachtwoordhash. Het [`bin/magento customer:hash:upgrade` ](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/cli-reference/commerce-on-premises#customerhashupgrade) bevel bevordert een knoeiboel van het klantenwachtwoord aan het recentste knoeiboelalgoritme.
+De `\Magento\Framework\Encryption\Encryptor` -klasse is verantwoordelijk voor het genereren en verifiëren van wachtwoordhash. Het [`bin/magento customer:hash:upgrade` ](https://experienceleague.adobe.com/nl/docs/commerce-operations/tools/cli-reference/commerce-on-premises#customerhashupgrade) bevel bevordert een knoeiboel van het klantenwachtwoord aan het recentste knoeiboelalgoritme.

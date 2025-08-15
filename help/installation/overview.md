@@ -20,7 +20,7 @@ U kunt de Adobe Commerce-software in ongeveer 30 tot 60 minuten installeren. De 
 >
 >U zou tussenliggende technische kennis en servertoegang moeten hebben om met succes te werk te gaan.
 
-De installatie leidt tot een volledig functionele opslag van Adobe Commerce met zowel a [ klant-onder ogen ziet storefront ](https://experienceleague.adobe.com/en/docs/commerce-admin/start/storefront/storefront) als een [ administratief paneel ](https://experienceleague.adobe.com/en/docs/commerce-admin/start/admin/admin). U moet uw gegevensbestandgeloofsbrieven, domeininformatie, en authentificatietoetsen klaar hebben alvorens met het proces te beginnen.
+De installatie leidt tot een volledig functionele opslag van Adobe Commerce met zowel a [ klant-onder ogen ziet storefront ](https://experienceleague.adobe.com/nl/docs/commerce-admin/start/storefront/storefront) als een [ administratief paneel ](https://experienceleague.adobe.com/nl/docs/commerce-admin/start/admin/admin). U moet uw gegevensbestandgeloofsbrieven, domeininformatie, en authentificatietoetsen klaar hebben alvorens met het proces te beginnen.
 
 ## Workflow
 

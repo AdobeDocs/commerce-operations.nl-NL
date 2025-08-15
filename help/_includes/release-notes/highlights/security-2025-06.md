@@ -23,6 +23,6 @@ Deze release bevat de volgende hooglichten:
 
 >[!BEGINSHADEBOX]
 
-De oplossing voor CVE-2025-47110 is ook beschikbaar als een geïsoleerde patch. Zie het [ artikel van de Kennisbank ](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/troubleshooting/known-issues-patches-attached/security-update-available-for-adobe-commerce-apsb25-50) voor details.
+De oplossing voor CVE-2025-47110 is ook beschikbaar als een geïsoleerde patch. Zie het [ artikel van de Kennisbank ](https://experienceleague.adobe.com/nl/docs/commerce-knowledge-base/kb/troubleshooting/known-issues-patches-attached/security-update-available-for-adobe-commerce-apsb25-50) voor details.
 
 >[!ENDSHADEBOX]

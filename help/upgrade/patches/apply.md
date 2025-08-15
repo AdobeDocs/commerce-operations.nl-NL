@@ -13,7 +13,7 @@ ht-degree: 0%
 
 U kunt patches op een van de volgende manieren toepassen:
 
-- [[!DNL Quality Patches Tool]](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html){target="_blank"}
+- [[!DNL Quality Patches Tool]](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html?lang=nl-NL){target="_blank"}
 - [Opdrachtregel](../patches/apply.md#command-line)
 - [Composer](../patches/apply.md#composer)
 
@@ -26,7 +26,7 @@ U kunt patches op een van de volgende manieren toepassen:
 
 >[!IMPORTANT]
 >
->Gebruik [[!DNL Quality Patches Tool] ](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html){target="_blank"} om officiële kwaliteitspatches toe te passen. Voer altijd uitgebreide tests uit voordat u een aangepaste patch implementeert.
+>Gebruik [[!DNL Quality Patches Tool] ](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html?lang=nl-NL){target="_blank"} om officiële kwaliteitspatches toe te passen. Voer altijd uitgebreide tests uit voordat u een aangepaste patch implementeert.
 
 Een aangepaste patch toepassen met Composer:
 

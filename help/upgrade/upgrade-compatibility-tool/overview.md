@@ -54,6 +54,6 @@ Verwijs naar [ Contribute ](https://developer.adobe.com/commerce/php/coding-stan
 Raadpleeg de volgende bronnen voor meer informatie over upgrades voor Adobe Commerce:
 
 - De [ verbeteringsgids ](../overview.md) verstrekt een overzicht van de typische de verbeteringsreis van Adobe Commerce en beste praktijken om langs die reis te volgen.
-- De [ aanstaande versie ](https://experienceleague.adobe.com/en/docs/commerce-operations/release/planning/schedule) pagina verstrekt de data voor geplande en aanstaande versies.
+- De [ aanstaande versie ](https://experienceleague.adobe.com/nl/docs/commerce-operations/release/planning/schedule) pagina verstrekt de data voor geplande en aanstaande versies.
 - De [ communautaire middelen ](https://developer.adobe.com/commerce/contributor/community/) pagina moet plaatsen om besprekingen te beginnen, of meer informatie te vinden.
 - Controleer de [ verwante hulpmiddelen ](../upgrade-compatibility-tool/related-tools.md) pagina voor nuttige hulpmiddelen in uw typische verbeteringsreis.

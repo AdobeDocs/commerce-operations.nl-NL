@@ -100,7 +100,7 @@ Verwijder ongebruikte productkenmerksets met MySQL.
 
 #### Configuratie kenmerkenset controleren
 
-1. [ verbind met het plaatsgegevensbestand ](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/configure/service/mysql#connect-to-the-database).
+1. [ verbind met het plaatsgegevensbestand ](https://experienceleague.adobe.com/nl/docs/commerce-cloud-service/user-guide/configure/service/mysql#connect-to-the-database).
 
 1. Het aantal kenmerksets zoeken met MySQL
 
@@ -179,7 +179,7 @@ Het weergeven van te veel producten per pagina kan de prestaties beïnvloeden.
 
 Als u teveel producten in een categorie hebt, werk de configuratie van de storefrontcatalogus bij om de optie onbruikbaar te maken om **Alle Producten per pagina** toe te staan.
 
-Nadat u deze optie hebt uitgeschakeld, gebruikt Adobe Commerce de besturingselementen voor de paginering van de winkelpagina van het product om het aantal producten te beheren dat in winkelcomponenten wordt weergegeven. Voor instructies, zie [ pagineringscontroles ](https://experienceleague.adobe.com/docs/commerce-admin/catalog/catalog/navigation/navigation-product-listings.html#configure-the-pagination-controls) vormen.
+Nadat u deze optie hebt uitgeschakeld, gebruikt Adobe Commerce de besturingselementen voor de paginering van de winkelpagina van het product om het aantal producten te beheren dat in winkelcomponenten wordt weergegeven. Voor instructies, zie [ pagineringscontroles ](https://experienceleague.adobe.com/docs/commerce-admin/catalog/catalog/navigation/navigation-product-listings.html?lang=nl-NL#configure-the-pagination-controls) vormen.
 
 ## SKU-limieten voor producten
 

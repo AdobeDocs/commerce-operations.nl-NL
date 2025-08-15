@@ -9,7 +9,7 @@ ht-degree: 0%
 
 Deze release bevat de volgende hooglichten:
 
-* **verbetering TinyMCE** - de [ redacteur van WYSIWYG ](https://experienceleague.adobe.com/en/docs/commerce-admin/content-design/wysiwyg/editor) in Admin gebruikt nu de recentste versie van het gebiedsdeel TinyMCE (7.3 &#x200B;).
+* **verbetering TinyMCE** - de [ redacteur van WYSIWYG ](https://experienceleague.adobe.com/nl/docs/commerce-admin/content-design/wysiwyg/editor) in Admin gebruikt nu de recentste versie van het gebiedsdeel TinyMCE (7.3 &#x200B;).
 
    * TinyMCE 7.3 biedt een verbeterde gebruikerservaring, betere samenwerking en verbeterde efficiëntie. TinyMCE 5 is verwijderd uit de releaselijn 2.4.8. &#x200B;
 
