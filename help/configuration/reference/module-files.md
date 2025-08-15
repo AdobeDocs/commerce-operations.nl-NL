@@ -2,7 +2,7 @@
 title: Moduleconfiguratiebestanden
 description: Leer hoe te om een module aan te passen gebruikend configuratietypen.
 exl-id: 87433c28-8e3d-43d0-b77e-3ff9a680af5f
-source-git-commit: 987d65b52437fbd21f41600bb5741b3cc43d01f3
+source-git-commit: 80d7a7f2592e547ef70f2fac63c25be0cce9365d
 workflow-type: tm+mt
 source-wordcount: '1252'
 ht-degree: 0%
@@ -21,7 +21,7 @@ Hieronder vindt u algemene termen die in dit onderwerp worden gebruikt:
 
 - **voorwerp van de Configuratie** - de bibliotheek of de klasse van Commerce die voor het bepalen van en het bevestigen van het configuratietype verantwoordelijk is. Bijvoorbeeld, is het configuratievoorwerp voor `config.xml` [ Magento\Framework\App\Config ](https://github.com/magento/magento2/blob/2.4/lib/internal/Magento/Framework/App/Config.php).
 
-- {het stadium van de Configuratie 1} - de Staven van de 1&rbrace; Configuratie worden bepaald als **primaire**, _globaal_, en _gebied_. __ Elk stadium bepaalt wanneer het configuratietype wordt geladen en met zelfde-genoemde configuratietypen samengevoegd. `module.xml` -bestanden worden bijvoorbeeld samengevoegd met andere `module.xml` -bestanden.
+- {het stadium van de Configuratie 1} - de Staven van de 1} Configuratie worden bepaald als **primaire**, _globaal_, en _gebied_. __ Elk stadium bepaalt wanneer het configuratietype wordt geladen en met zelfde-genoemde configuratietypen samengevoegd. `module.xml` -bestanden worden bijvoorbeeld samengevoegd met andere `module.xml` -bestanden.
 
 - **werkingsgebied van de Configuratie** - Complementair aan configuratiestadia, bepaalt een werkingsgebied het model van het configuratietype. `adminhtml` is bijvoorbeeld een gebiedsbereik dat in het werkgebied wordt geladen met de `adminhtml` -configuraties van andere modules. Voor meer informatie, zie [ Modules en gebieden ](https://developer.adobe.com/commerce/php/architecture/modules/areas/).
 
@@ -81,7 +81,7 @@ De volgende lijst toont elk configuratietype en het de configuratievoorwerp van 
 | --- | --- | --- | --- |
 | `address_formats.xml` | Declaratie van adresformaat | primair, wereldwijd | [ \Magento\Customer\Model\Address\Config](https://github.com/magento/magento2/blob/2.4/app/code/Magento/Customer/Model/Address/Config.php) |
 | `acl.xml` | [ Lijst van het Toegangsbeheer ](https://developer.adobe.com/commerce/webapi/get-started/authentication/#relationship-between-aclxml-and-webapixml) | globaal | [ \Magento\Framework\Acl\AclResource\Provider](https://github.com/magento/magento2/blob/2.4/lib/internal/Magento/Framework/Acl/AclResource/Provider.php) |
-| `analytics.xml` | [ Geavanceerde rapportering ] https://developer.adobe.com/commerce/php/development/advanced-reporting/data-collection/) | primair, wereldwijd | [ \Magento\Analytics\Model\Config\Reader](https://github.com/magento/magento2/blob/2.4/app/code/Magento/Analytics/Model/Config/Reader.php) |
+| `analytics.xml` | [ Geavanceerde rapportering ](https://developer.adobe.com/commerce/php/development/advanced-reporting/data-collection/) | primair, wereldwijd | [ \Magento\Analytics\Model\Config\Reader](https://github.com/magento/magento2/blob/2.4/app/code/Magento/Analytics/Model/Config/Reader.php) |
 | `cache.xml` | Cachetype-declaratie | primair, wereldwijd | [ \Magento\Framework\Cache\Config\Data](https://github.com/magento/magento2/blob/2.4/lib/internal/Magento/Framework/Cache/Config/Data.php) |
 | `catalog_attributes.xml` | Configuratie van cataloguskenmerken | globaal | [ \Magento\Catalog\Model\Attribute\Config\Data](https://github.com/magento/magento2/blob/2.4/app/code/Magento/Catalog/Model/Attribute/Config/Data.php) |
 | `config.php` en `env.php` | [ configuratie van de Plaatsing ](../reference/deployment-files.md) | Deze bestanden zijn leesbaar/schrijfbaar door de interne configuratieprocessor. | Heeft geen object, kan niet worden aangepast |
@@ -90,7 +90,7 @@ De volgende lijst toont elk configuratietype en het de configuratievoorwerp van 
 | `crontab.xml` | [ Vormt cron groepen ](../cron/custom-cron-reference.md#configure-cron-groups) | globaal | [ \Magento\Cron\Model\Config\Data](https://github.com/magento/magento2/blob/2.4/app/code/Magento/Cron/Model/Config/Data.php) |
 | `cron_groups.xml` | [ specificeert de opties van de cron groep ](../cron/custom-cron-reference.md) | globaal | [ \Magento\Cron\Model\Groups\Config\Data](https://github.com/magento/magento2/blob/2.4/app/code/Magento/Cron/Model/Groups/Config/Data.php) |
 | `db_schema.xml` | [ Verklarend schema ](https://developer.adobe.com/commerce/php/development/components/declarative-schema/configuration/) | globaal | [ Magento\Framework\Setup\Declaration\Schema](https://github.com/magento/magento2/blob/2.4/lib/internal/Magento/Framework/Setup/Declaration/Schema/SchemaConfig.php) |
-| `di.xml` | [ configuratie van de injectie van 0&rbrace; Afhankelijkheid](https://developer.adobe.com/commerce/php/development/components/dependency-injection/) | primair, wereldwijd, gebied | [ \Magento\Framework\ObjectManager\Config](https://github.com/magento/magento2/blob/2.4/lib/internal/Magento/Framework/ObjectManager/Config/Config.php) |
+| `di.xml` | [ configuratie van de injectie van 0} Afhankelijkheid](https://developer.adobe.com/commerce/php/development/components/dependency-injection/) | primair, wereldwijd, gebied | [ \Magento\Framework\ObjectManager\Config](https://github.com/magento/magento2/blob/2.4/lib/internal/Magento/Framework/ObjectManager/Config/Config.php) |
 | `eav_attributes.xml` | Biedt configuratie van EAV-kenmerken | globaal | [ \Magento\Eav\Model\Entity\Attribute\Config](https://github.com/magento/magento2/blob/2.4/app/code/Magento/Eav/Model/Entity/Attribute/Config.php) |
 | `email_templates.xml` | Configuratie van e-mailsjablonen | globaal | [ \Magento\Email\Model\Template\Config\Data](https://github.com/magento/magento2/blob/2.4/app/code/Magento/Email/Model/Template/Config/Data.php) |
 | `esconfig.xml` | [ de motor van het Onderzoek locale stopwords config ](../search/search-stopwords.md#create-stopwords-for-a-new-locale) | globaal | [ \Magento\Elasticsearch\Model\Adapter\Index\Config\EsConfig](https://github.com/magento/magento2/blob/2.4/app/code/Magento/Elasticsearch/Model/Adapter/Index/Config/EsConfig.php) |
@@ -113,7 +113,7 @@ De volgende lijst toont elk configuratietype en het de configuratievoorwerp van 
 | `queue_topology.xml` | [ bepaalt het bericht dat regels verplettert, verklaart rijen en uitwisselingen ](https://developer.adobe.com/commerce/php/development/components/message-queues/configuration/#queue_topologyxml) | globaal | [ \Magento\Framework\MessageQueue\Topology\Config\Xml\Reader](https://github.com/magento/magento2/blob/2.4/lib/internal/Magento/Framework/MessageQueue/Topology/Config/Xml/Reader.php) |
 | `reports.xml` | [ Geavanceerde rapporten ](https://developer.adobe.com/commerce/php/development/advanced-reporting/report-xml/) | globaal | [ \Magento\Analytics\ReportXml\Config](https://github.com/magento/magento2/blob/2.4/app/code/Magento/Analytics/ReportXml/Config.php) |
 | `resources.xml` | Definieert module resource | globaal | [ \Magento\Framework\App\ResourceConnection\Config\Reader](https://github.com/magento/magento2/blob/2.4/lib/internal/Magento/Framework/App/ResourceConnection/Config/Reader.php) |
-| `routes.xml` | [ configuratie 0&rbrace; van de Route &lbrace;](https://developer.adobe.com/commerce/php/development/components/routing/) | gebied | [ Magento\Framework\App\Route\Config](https://github.com/magento/magento2/blob/2.4/lib/internal/Magento/Framework/App/Route/Config.php) |
+| `routes.xml` | [ configuratie 0} van de Route {](https://developer.adobe.com/commerce/php/development/components/routing/) | gebied | [ Magento\Framework\App\Route\Config](https://github.com/magento/magento2/blob/2.4/lib/internal/Magento/Framework/App/Route/Config.php) |
 | `sales.xml` | Definieert totale configuratie verkoop | globaal | [ \Magento\Sales\Model\Config\Data](https://github.com/magento/magento2/blob/2.4/app/code/Magento/Sales/Model/Config/Data.php) |
 | `search_engine.xml` | Biedt configuratie van zoekprogramma&#39;s | globaal | [ Magento\Search\Model\SearchEngine\Config](https://github.com/magento/magento2/blob/2.4/app/code/Magento/Search/Model/SearchEngine/Config.php) |
 | `search_request.xml` | Definieert de zoekconfiguratie voor de catalogus | globaal | [ \Magento\Framework\Search\Request\Config](https://github.com/magento/magento2/blob/2.4/lib/internal/Magento/Framework/Search/Request/Config.php) |
