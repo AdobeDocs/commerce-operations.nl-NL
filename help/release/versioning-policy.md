@@ -2,9 +2,9 @@
 title: Releasebeleid
 description: Meer informatie over de verschillende typen Adobe Commerce-releases.
 exl-id: 61a83de6-6a7b-4a88-8fff-1638b4fe472a
-source-git-commit: 0ea8c2bfffe81d27547c0330abdd75fc078542cf
+source-git-commit: f7b22089bcf88f6c881b0cbd4d7f77d795d9071b
 workflow-type: tm+mt
-source-wordcount: '752'
+source-wordcount: '810'
 ht-degree: 0%
 
 ---
@@ -88,8 +88,10 @@ Afzonderlijke patches bevatten oplossingen voor een bepaalde kwestie met een lag
 
 ## Geïsoleerde patch
 
-Geïsoleerde patchescBevat een standalone moeilijke situatie die in het recentste veiligheid-enige flard of een aanstaande veiligheid-enige flard inbegrepen is, die afzonderlijk voor snellere implementatie wordt vrijgegeven.
+Geïsoleerde patches zijn beveiligingsoplossingen die onafhankelijk van een volledige beveiligingspatch worden vrijgegeven om een snellere implementatie mogelijk te maken. Elke geïsoleerde patch is gericht op een specifiek beveiligingsprobleem en is opgenomen in de meest recente of een aanstaande volledige beveiligingspatch. De details over de kwestie worden verstrekt in het verwante veiligheidsbulletin, dat met een artikel van de Kennisbank (KB) verbindt die de fixdetails, hoe te om het flard, en extra informatie bevatten toe te passen.
+
+Zie het [ Centrum van de Veiligheid ](https://helpx.adobe.com/security/products/magento.html) om de recentste veiligheidsupdates beschikbaar voor Adobe Commerce te vinden.
 
 ## Aangepaste patch
 
-Gemaakt door niet-Adobe-personeel om een probleem op te lossen of om verschillende redenen de Adobe Commerce-code te wijzigen. De flarden van de douane worden geleverd door het [ Hulpmiddel van de Patches van de Kwaliteit ](https://experienceleague.adobe.com/nl/docs/commerce-operations/tools/quality-patches-tool/usage).
+Gemaakt door niet-Adobe-personeel om een probleem op te lossen of om verschillende redenen de Adobe Commerce-code te wijzigen. De flarden van de douane worden geleverd door het [ Hulpmiddel van de Patches van de Kwaliteit ](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/usage).
