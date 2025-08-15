@@ -24,7 +24,7 @@ U kunt deze methode gebruiken om steekproefgegevens voor Adobe Commerce te krijg
 
 >[!NOTE]
 >
->Als u fouten tegenkomt, zoals `Could not find package...` of `...no matching package found...` , moet u ervoor zorgen dat er geen typos in uw opdracht voorkomt. Als er nog steeds fouten optreden, hebt u mogelijk geen toegang tot de juiste Composer-opslagruimten, met name als u Adobe Commerce gebruikt. Contact {de Steun van 0} Adobe Commerce [&#128279;](https://support.magento.com/hc/en-us) voor hulp.
+>Als u fouten tegenkomt, zoals `Could not find package...` of `...no matching package found...` , moet u ervoor zorgen dat er geen typos in uw opdracht voorkomt. Als er nog steeds fouten optreden, hebt u mogelijk geen toegang tot de juiste Composer-opslagruimten, met name als u Adobe Commerce gebruikt. Contact {de Steun van 0} Adobe Commerce [ voor hulp.](https://support.magento.com/hc/en-us)
 
 U kunt Composer gebruiken om steekproefgegevens of vóór of na het installeren van de toepassing te installeren; nochtans, zouden er [ extra taken ](remove-or-update.md) kunnen zijn.
 
@@ -48,7 +48,7 @@ bin/magento sampledata:deploy
 bin/magento setup:upgrade
 ```
 
-U wordt vereist om [&#128279;](../prerequisites/authentication-keys.md) voor authentiek te verklaren om de actie te voltooien.
+U wordt vereist om [ ](../prerequisites/authentication-keys.md) voor authentiek te verklaren om de actie te voltooien.
 
 ## Verificatiefout
 

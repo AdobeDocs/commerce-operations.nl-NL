@@ -25,7 +25,7 @@ Met de header `X-Frame-Options` kunt u als volgt opgeven of een browser een pagi
 
 >[!WARNING]
 >
->Om veiligheidsredenen raadt de Adobe u ten zeerste aan de Commerce-winkel niet in een frame uit te voeren.
+>Om veiligheidsredenen raadt Adobe ten zeerste aan de Commerce-winkel niet in een frame uit te voeren.
 
 ## Implementeren `X-Frame-Options`
 

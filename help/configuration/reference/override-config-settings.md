@@ -13,11 +13,11 @@ ht-degree: 0%
 
 Dit onderwerp bespreekt hoe te om een milieu veranderlijke naam af te leiden die een configuratiepad kent. U kunt de configuratie-instellingen van Adobe Commerce overschrijven met behulp van omgevingsvariabelen. U kunt bijvoorbeeld de waarde van de live URL van een betalingsprocessor overschrijven op uw productiesysteem.
 
-U kunt de waarde van _met voeten treden om het even welke_ configuratie die milieuvariabelen plaatst; nochtans, adviseert de Adobe u verenigbare montages gebruikend het gedeelde configuratiedossier, `config.php`, en het systeem-specifieke configuratiedossier, `env.php`, zoals besproken in [ het algemene overzicht van de Plaatsing ](../deployment/overview.md) handhaaft.
+U kunt de waarde van _met voeten treden om het even welke_ configuratie die milieuvariabelen plaatst; nochtans, adviseert Adobe u verenigbare montages gebruikend het gedeelde configuratiedossier, `config.php`, en het systeem-specifieke configuratiedossier, `env.php`, zoals besproken in [ het algemene overzicht van de Plaatsing ](../deployment/overview.md) handhaaft.
 
 >[!TIP]
 >
->Controle uit [ vormt milieu&#39;s ](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure/env/stage/variables-intro.html?lang=nl-NL) onderwerp in _Commerce op de gids van de Infrastructuur van de Wolk_.
+>Controle uit [ vormt milieu&#39;s ](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure/env/stage/variables-intro.html) onderwerp in _Commerce op de gids van de Infrastructuur van de Wolk_.
 
 ## Omgevingsvariabelen
 
@@ -62,8 +62,8 @@ De algemene indeling van namen van systeeminstellingenvariabelen is als volgt:
   Zie voor meer informatie over het bereik:
 
    - [Stap 1: Zoek de waarde van het bereik van de website- of winkelweergave](#step-1-find-the-website-or-store-view-scope-value)
-   - [ het onderwerp van de Gids van de Gebruiker van Commerce op werkingsgebied ](https://experienceleague.adobe.com/nl/docs/commerce-admin/start/setup/websites-stores-views#scope-settings)
-   - [ Snelle verwijzing van het Bereik ](https://experienceleague.adobe.com/nl/docs/commerce-admin/config/scope-change#scope-quick-reference)
+   - [ het onderwerp van de Gids van de Gebruiker van Commerce op werkingsgebied ](https://experienceleague.adobe.com/en/docs/commerce-admin/start/setup/websites-stores-views#scope-settings)
+   - [ Snelle verwijzing van het Bereik ](https://experienceleague.adobe.com/en/docs/commerce-admin/config/scope-change#scope-quick-reference)
 
 `<SYSTEM__VARIABLE__NAME>` is het configuratiepad met dubbele onderstrepingstekens die worden vervangen door `/` . Voor meer informatie, zie [ Stap 2: Plaats systeemvariabelen ](#step-2-set-global-website-or-store-view-variables).
 
@@ -196,8 +196,8 @@ In de volgende tabel staan enkele voorbeeldvariabelen.
 
 | Beschrijving | Weg in Admin (het weglaten van **opslag** > **Montages** > **Configuratie**) | Naam variabele |
 |--------------|--------------|----------------------|
-| hostnaam server Elasticsearch | Catalogus > **Catalogus**, **Hostname van de Server van de Elasticsearch** | `<SCOPE>__CATALOG__SEARCH__ELASTICSEARCH_SERVER_HOSTNAME` |
-| poort Elasticsearch-server | De catalogus > **Catalogus**, **Haven van de Server van de Elasticsearch** | `<SCOPE>__CATALOG__SEARCH__ELASTICSEARCH_SERVER_PORT` |
+| hostnaam Elasticsearch-server | Catalogus > **Catalogus**, **Hostname van de Server van Elasticsearch** | `<SCOPE>__CATALOG__SEARCH__ELASTICSEARCH_SERVER_HOSTNAME` |
+| Elasticsearch-serverpoort | Catalogus > **Catalogus**, **de Haven van de Server van Elasticsearch** | `<SCOPE>__CATALOG__SEARCH__ELASTICSEARCH_SERVER_PORT` |
 | Land van verzending | Verkoop > **Verzendinstellingen** | `<SCOPE>__SHIPPING__ORIGIN__COUNTRY_ID` |
 | Aangepaste Admin-URL | Geavanceerd > **Admin** | `<SCOPE>__ADMIN__URL__CUSTOM` |
 | Aangepast beheerpad | Geavanceerd > **Admin** | `<SCOPE>__ADMIN__URL__CUSTOM_PATH` |
@@ -206,9 +206,9 @@ In de volgende tabel staan enkele voorbeeldvariabelen.
 
 In deze sectie ziet u hoe u waarden van bepaalde voorbeeldvariabelen kunt vinden.
 
-### hostnaam server Elasticsearch
+### hostnaam Elasticsearch-server
 
-U kunt als volgt de variabelenaam zoeken voor globale minificatie van HTML:
+U kunt als volgt de variabelenaam zoeken voor globale HTML-minificatie:
 
 1. Bepaal het bereik.
 
@@ -253,6 +253,6 @@ Een geleidelijke voorbeeld wordt getoond in [ Vastgestelde configuratiewaarden g
 >
 >- Als u waarden wilt gebruiken die u instelt in de array `$_ENV` , moet u `variables_order = "EGPCS"` (Environment, Get, Post, Cookie en Server) in uw `php.ini` -bestand instellen. Voor details, zie [ PHP documentatie ](https://www.php.net/manual/en/ini.core.php).
 >
->- Voor Adobe Commerce op wolkeninfrastructuur, als u probeert om configuratiemontages met voeten te treden gebruikend de [ Interface van het Web van het Project ](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/project/overview.html?lang=nl-NL#configure-the-project), moet u de veranderlijke naam met `env:` prepend. Bijvoorbeeld:
+>- Voor Adobe Commerce op wolkeninfrastructuur, als u probeert om configuratiemontages met voeten te treden gebruikend de [ Interface van het Web van het Project ](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/project/overview.html#configure-the-project), moet u de veranderlijke naam met `env:` prepend. Bijvoorbeeld:
 >
 >![ veranderlijk voorbeeld van het Milieu ](../../assets/configuration/cloud-console-envvariable.png)

@@ -11,9 +11,9 @@ ht-degree: 0%
 
 # Algemene MySQL-richtlijnen
 
-Zie {de Vereisten van het 0} Systeem [&#128279;](../../system-requirements.md) voor gesteunde versies van MySQL.
+Zie {de Vereisten van het 0} Systeem [ voor gesteunde versies van MySQL.](../../system-requirements.md)
 
-Adobe __ adviseert sterk u de volgende norm waarneemt wanneer u opstelling uw gegevensbestand:
+Adobe _adviseert sterk_ u de volgende norm waarneemt wanneer u opstelling uw gegevensbestand:
 
 * Adobe Commerce gebruikt [ MySQL gegevensbestandtrekkers ](https://dev.mysql.com/doc/refman/8.0/en/triggers.html) om gegevensbestandtoegang tijdens het opnieuw indexeren te verbeteren. Deze worden gecreeerd wanneer de indexeerwijze aan [ programma ](../../../configuration/cli/manage-indexers.md#configure-indexers) wordt geplaatst. De toepassing ondersteunt geen aangepaste triggers in de database omdat aangepaste triggers incompatibiliteiten met toekomstige Adobe Commerce-versies kunnen introduceren.
 * Verken zich met [ deze potentiële MySQL trekkerbeperkingen ](https://dev.mysql.com/doc/mysql-reslimits-excerpt/8.0/en/stored-program-restrictions.html) alvorens u verdergaat.

@@ -16,7 +16,7 @@ In deze sectie vindt u instructies voor het installeren van een memcachegeheugen
 
 >[!INFO]
 >
->Adobe raadt u aan de nieuwste, stabiele memcaching-versie te gebruiken (momenteel 3.1.3 voor memcaching).
+>Adobe raadt u aan de nieuwste, stabiele memcacheversie te gebruiken (momenteel 3.1.3 voor memcaching).
 
 Omdat PHP geen native ondersteuning heeft voor memcache, moet je een extensie installeren voor PHP om deze te kunnen gebruiken. Er zijn twee PHP-extensies beschikbaar en het is belangrijk te decoderen welke extensie moet worden gebruikt:
 
@@ -86,7 +86,7 @@ Als u in een cache geplaatste bestanden wilt installeren op CentOS, voert u de v
 
 ## De werking van een geheugen controleren voordat u Commerce installeert
 
-Adobe raadt aan een memcachegeheugen te testen om te controleren of dit werkt voordat u Commerce installeert. Dit neemt slechts een paar minuten in beslag en kan het oplossen van problemen later vereenvoudigen.
+Adobe raadt u aan een memcachegeheugen te testen om te controleren of dit werkt voordat u Commerce installeert. Dit neemt slechts een paar minuten in beslag en kan het oplossen van problemen later vereenvoudigen.
 
 ### Controleren of het in de cache geplaatste item wordt herkend door de webserver
 

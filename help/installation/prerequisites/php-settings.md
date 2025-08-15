@@ -19,7 +19,7 @@ In dit onderwerp wordt besproken hoe u vereiste PHP-opties kunt instellen.
 >
 >Voor de nieuwste versie van Adobe Commerce is minimaal PHP 8.1 vereist. Zie [ systeemvereisten ](../system-requirements.md) voor alle gesteunde versies van PHP.
 
-Voor de configuratiebegeleiding van de Wolk, zie [ PHP montages ](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure/app/php-settings.html?lang=nl-NL) in _Commerce op de gids van de Infrastructuur van de Wolk_.
+Voor de configuratiebegeleiding van de Wolk, zie [ PHP montages ](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure/app/php-settings.html) in _Commerce op de gids van de Infrastructuur van de Wolk_.
 
 ## PHP Process Control
 
@@ -92,13 +92,13 @@ PHP Warning:  date(): It is not safe to rely on the system's timezone settings. 
 
 - Schakel [`opcache.save_comments` ](https://www.php.net/manual/en/opcache.configuration.php#ini.opcache.save-comments) in. Dit is vereist voor Adobe Commerce 2.1 en hoger.
 
-  De Adobe adviseert toelatend [ PHP OPcache ](https://www.php.net/manual/en/book.opcache.php) voor prestatiesredenen. De OPcache is in veel PHP distributies ingeschakeld.
+  Adobe adviseert toelatend [ PHP OPcache ](https://www.php.net/manual/en/book.opcache.php) voor prestatiesredenen. De OPcache is in veel PHP distributies ingeschakeld.
 
   Adobe Commerce 2.1 en hoger gebruiken PHP-codeopmerkingen voor het genereren van code.
 
 >[!NOTE]
 >
->Om problemen tijdens installatie en verbetering te vermijden, adviseert de Adobe sterk dat u de zelfde montages PHP op zowel de PHP bevel-lijn configuratie als de PHP configuratie van de Webserver stop - in configuratie toepast. Zie de volgende sectie voor meer informatie.
+>Om problemen tijdens installatie en verbetering te vermijden, adviseert Adobe sterk dat u de zelfde montages PHP op zowel PHP bevel-lijn configuratie als PHP de configuratie van de Webserver stop - in aanpas brengt. Zie de volgende sectie voor meer informatie.
 
 ## PHP-configuratiebestanden zoeken
 

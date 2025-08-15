@@ -22,14 +22,14 @@ Zorg ervoor u *de zelfde vrijgegeven versie* van zowel Magento 2 als [!DNL Data 
 
 ## Uw versie controleren
 
-U kunt als volgt uw versie van het Magento controleren:
+U kunt de volgende methoden gebruiken om uw versie van Magento te verifiëren:
 
 - [Composer](#composer-metapackage)
 - [GitHub-opslagplaats](#github-repository)
 
 ### Composer-pakket
 
-Als u de software van het Magento gebruikend een pakket Composer hebt gedownload, ga het volgende bevel in:
+Als u de Magento-software hebt gedownload met een Composer-metapakket, voert u de volgende opdracht in:
 
 ```bash
 php <magento_root>/bin/magento --version
@@ -37,7 +37,7 @@ php <magento_root>/bin/magento --version
 
 ### GitHub-opslagplaats
 
-Als u Magento 2 de bewaarplaats GitHub kloond, ga de volgende bevelen in:
+Als u Magento 2 GitHub bewaart bewaart, ga de volgende bevelen in:
 
 ```bash
 cd <your Magento 2 clone directory>
@@ -66,11 +66,11 @@ U kunt de [!DNL Data Migration Tool] installeren vanaf:
 Controleer voordat u gaat installeren of:
 
 - Voltooid alle die taken in de [ worden vermeld Voorwaarden ](prerequisites.md) sectie
-- [ verifieerde versie ](install.md#check-your-version) van Magento 2 software
+- [ verifieerde de versie ](install.md#check-your-version) van Magento 2 software
 
 ### Installeren vanuit `repo.magento.com`
 
-Als u [!DNL Data Migration Tool] wilt installeren, moet u `composer.json` bijwerken in de hoofdinstallatiemap van het Magento om de locatie van het [!DNL Data Migration Tool] -pakket op te geven.
+Als u [!DNL Data Migration Tool] wilt installeren, moet u `composer.json` in de Magento-hoofdinstallatiemap bijwerken om de locatie van het [!DNL Data Migration Tool] -pakket op te geven.
 
 1. Login aan uw toepassingsserver als, of schakelaar aan, de [ eigenaar van het dossiersysteem ](../../installation/prerequisites/file-system/overview.md).
 1. Wijzig de hoofdmap van de toepassing.
@@ -84,7 +84,7 @@ Als u [!DNL Data Migration Tool] wilt installeren, moet u `composer.json` bijwer
    composer require magento/data-migration-tool:<version>
    ```
 
-   Waar `<version>` moet overeenkomen met de versie van de codebase Magento 2.
+   Waar `<version>` moet overeenkomen met de versie van de Magento 2-codebase.
 
    Voer bijvoorbeeld voor versie 2.2.0 het volgende in:
 
@@ -114,7 +114,7 @@ Als u de gegevensopslagplaats GitHub hebt gekloond, volg de stappen hieronder om
    composer require magento/data-migration-tool:<version>
    ```
 
-   waarbij `<version>` moet overeenkomen met de versie van de codebase Magento 2.
+   waarbij `<version>` moet overeenkomen met de versie van de Magento 2-codebase.
 
    Voer bijvoorbeeld voor versie 2.2.0 het volgende in:
 

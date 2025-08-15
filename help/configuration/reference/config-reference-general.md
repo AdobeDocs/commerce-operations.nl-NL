@@ -71,10 +71,10 @@ Deze configuratiewaarden zijn beschikbaar in Admin in **Slaat** > Montages > **C
 | HTTP strikte vervoersbeveiliging (HSTS) inschakelen | `web/secure/enable_hsts` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 | Onveilige upgrades | `web/secure/enable_upgrade_insecure` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 | Offloader header | `web/secure/offloader_header` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
-| Startpagina van CMS | `web/default/cms_home_page` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
+| Homepage van CMS | `web/default/cms_home_page` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 | CMS Geen routepagina | `web/default/cms_no_route` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
-| CMS Geen cookies pagina | `web/default/cms_no_cookies` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
-| Broodkruimels tonen voor CMS-pagina&#39;s | `web/default/show_cms_breadcrumbs` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
+| CMS No Cookies Page | `web/default/cms_no_cookies` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
+| Broodkruimels weergeven voor CMS-pagina&#39;s | `web/default/show_cms_breadcrumbs` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 | Cookie Lifetime | `web/cookie/cookie_lifetime` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 | Alleen HTTP gebruiken | `web/cookie/cookie_httponly` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 | Modus Cookie-beperking | `web/cookie/cookie_restriction` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
@@ -145,7 +145,7 @@ Deze configuratiewaarden zijn beschikbaar in Admin in **Slaat** > Montages > **C
 | Naam | Config-pad | Alleen Commerce? |
 |--------------|--------------|--------------|
 | WYSIWYG Editor inschakelen | `cms/wysiwyg/enabled` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
-| Statische URL&#39;s gebruiken voor media-inhoud in WYSIWYG voor catalogus | `cms/wysiwyg/use_static_urls_in_catalog` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
+| Statische URL&#39;s gebruiken voor media-inhoud in WYSIWYG for Catalog | `cms/wysiwyg/use_static_urls_in_catalog` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 | Hiërarchiefunctionaliteit inschakelen | `cms/hierarchy/enabled` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 | Hiërarchiemetagegevens inschakelen | `cms/hierarchy/metadata_enabled` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 | Standaardlay-out voor hiërarchiemenu | `cms/hierarchy/menu_layout` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |

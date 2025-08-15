@@ -42,7 +42,7 @@ Om indexatietijd te verminderen, kunt u [ bepaalde websites van klantengroepen (
 
 Soms is één instantie Redis niet genoeg om binnenkomende verzoeken te dienen. Er zijn verschillende oplossingen die we kunnen aanbevelen om deze situatie aan te pakken.
 
-Ten eerste kunt u in [!DNL Commerce] aparte cacheopslag configureren voor elk type cache. Op deze manier kunt u net zoveel afzonderlijke Redis-exemplaren installeren als het aantal soorten cache dat in het Magento is geregistreerd. Realistisch gezien, zou u instanties Redis voor de actiefste gebruikte geheime voorgeheugens, zoals configuratie, lay-out, en blokken kunnen willen.
+Ten eerste kunt u in [!DNL Commerce] aparte cacheopslag configureren voor elk type cache. Op deze manier kunt u net zoveel afzonderlijke Redis-exemplaren installeren als het aantal soorten cache dat in Magento is geregistreerd. Realistisch gezien, zou u instanties Redis voor de actiefste gebruikte geheime voorgeheugens, zoals configuratie, lay-out, en blokken kunnen willen.
 
 Een andere oplossing kan zijn om het configuratiecache op het dossiersysteem te plaatsen en de andere geheime voorgeheugens naar de Redis server te verplaatsen. Met deze oplossing hebt u een afzonderlijk hulpmiddel nodig voor gecentraliseerde ongeldigmaking van configuratiecache op al uw webknooppunten.
 
@@ -92,14 +92,14 @@ bin/magento setup:db-schema:add-slave
 
 Dit bevel voert configuratieveranderingen uit maar vormt replicatie zelf niet. Dat moet handmatig gebeuren.
 
-Nadat u de hoofddatabase hebt gesplitst en slave-databases hebt ingesteld, reguleert [!DNL Commerce] automatisch verbindingen met een specifieke database. Besluiten worden genomen op basis van het type aanvraag (POST, PUT, GET, enzovoort) en de gegevensbron. Als [!DNL Commerce] of de extensies ervan schrijfbewerkingen uitvoeren op een GET-aanvraag, schakelt het systeem automatisch de verbinding van slave naar hoofddatabase. Het werkt de zelfde manier met hoofdgegevensbestanden: zodra u met een controle-verwante lijst werkt, richt het systeem alle vragen aan een specifiek gegevensbestand opnieuw. Ondertussen, zullen alle op catalogus betrekking hebbende vragen naar het belangrijkste gegevensbestand gaan.
+Nadat u de hoofddatabase hebt gesplitst en slave-databases hebt ingesteld, reguleert [!DNL Commerce] automatisch verbindingen met een specifieke database. Daarbij worden beslissingen genomen op basis van het type aanvraag (POST, PUT, GET, enz.) en de gegevensbron. Als [!DNL Commerce] of de extensies hiervan schrijfbewerkingen uitvoeren op een GET-aanvraag, schakelt het systeem automatisch de verbinding van slave naar masterdatabase. Het werkt de zelfde manier met hoofdgegevensbestanden: zodra u met een controle-verwante lijst werkt, richt het systeem alle vragen aan een specifiek gegevensbestand opnieuw. Ondertussen, zullen alle op catalogus betrekking hebbende vragen naar het belangrijkste gegevensbestand gaan.
 
 Voor meer details over de configuratie en de voordelen van veelvoudige hoofd/slave configuratie, zie
 [ Splitste oplossing van de gegevensbestandprestaties ](../configuration/storage/multi-master.md).
 
 ## Media-inhoud serveren
 
-Magento biedt geen specifieke integratie voor het leveren en leveren van media-inhoud. Alle gangbare benaderingen kunnen samen in Magento worden gebruikt.
+Magento biedt geen specifieke integratie voor het leveren en leveren van media-inhoud. In Magento kunnen alle gangbare benaderingen samen worden gebruikt.
 
 De eenvoudigste manier om media-inhoud te leveren en in cache te plaatsen, is deze op een [!DNL Varnish] -server te verzenden. Bij deze methode wordt uitgegaan van een gedeeld bestandssysteem voor het opslaan van media-inhoud of een toegewijde server die verwijst naar [!DNL Varnish] .
 

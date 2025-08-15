@@ -12,7 +12,7 @@ ht-degree: 0%
 
 # AWS OpenSearch
 
-Adobe Commerce 2.4.5 ondersteunt het gebruik van Amazon OpenSearch Service-clusters. Deze service is de opvolger van Amazon Elasticsearch Service. Dit onderwerp beschrijft hoe te om Commerce te vormen om AWS OpenSearch te gebruiken, en hoe te om gegevens van een lokale Elasticsearch of instantie te migreren OpenSearch aan een cluster van AWS OpenSearch.
+Adobe Commerce 2.4.5 ondersteunt het gebruik van Amazon OpenSearch Service-clusters. Deze service is de opvolger van Amazon Elasticsearch Service. In dit onderwerp wordt beschreven hoe u Commerce configureert voor het gebruik van AWS OpenSearch en hoe u gegevens van een lokale Elasticsearch- of OpenSearch-instantie migreert naar een AWS OpenSearch-cluster.
 
 ## Een AWS OpenSearch-servicedomein maken
 
@@ -28,10 +28,10 @@ Voor kleinere installaties raden we u aan om indices rechtstreeks op de AWS-inst
 * Het opnieuw maken van indexen is een snelle bewerking.
 * Er kunnen versionverenigbaarheden tussen de oude instantie en de instantie AWS zijn, en deze kunnen worden vermeden door rechtstreeks op de instantie AWS voort te bouwen.
 
-Grotere installaties willen mogelijk overwegen hun gegevensindexen van de bestaande instantie naar AWS te migreren. Hoewel dit downtime kan verminderen, is er nog steeds een klein risico op incompatibiliteitsproblemen als gevolg van verschillende versies tussen de oude Elasticsearch server en AWS.
+Grotere installaties willen mogelijk overwegen hun gegevensindexen van de bestaande instantie naar AWS te migreren. Hoewel dit de downtime kan verminderen, is er nog steeds een klein risico op incompatibiliteitsproblemen als gevolg van verschillende versies tussen de oude Elasticsearch-server en AWS.
 
 Het is niet nodig om indexen te migreren, omdat deze gemakkelijk opnieuw kunnen worden gemaakt op het AWS-exemplaar.
-Wanneer u echter gegevensindexen migreert, moet u ervoor zorgen dat de versies van Elasticsearch/OpenSearch compatibel zijn.
+Bij het migreren van gegevensindexen moet u er echter voor zorgen dat de versies van Elasticsearch/OpenSearch compatibel zijn.
 
 Zie Amazon [ migrerend aan de instructies van de Dienst OpenSearch van Amazon ](https://docs.aws.amazon.com/opensearch-service/latest/developerguide/migration.html) voor meer informatie.
 

@@ -12,7 +12,7 @@ ht-degree: 0%
 
 # Extensies van derden beheren
 
-Code die het gedrag van Adobe Commerce uitbreidt of aanpast, wordt een extensie genoemd. U kunt naar keuze uitbreidingen op de [ Commerce Marketplace ](https://commercemarketplace.adobe.com/) of een ander systeem van de uitbreidingsdistributie verpakken en verdelen.
+Code die het gedrag van Adobe Commerce uitbreidt of aanpast, wordt een extensie genoemd. U kunt naar keuze uitbreidingen op [ Commerce Marketplace ](https://commercemarketplace.adobe.com/) of een ander systeem van de uitbreidingsdistributie verpakken en verdelen.
 
 Extensies zijn:
 
@@ -20,7 +20,7 @@ Extensies zijn:
 - Thema&#39;s (wijzig de vormgeving van uw winkel en Admin)
 - Taalpakketten (lokaliseer de winkel en Admin)
 
-Dit onderwerp verklaart hoe te om de bevel-lijn interface te gebruiken om derdeuitbreidingen te beheren die u van de Commerce Marketplace voor _op-gebouw_ projecten koopt. Voor de projecten van de wolkeninfrastructuur, zie [ uitbreidingen ](https://experienceleague.adobe.com/nl/docs/commerce-cloud-service/user-guide/configure-store/extensions) beheren.
+Dit onderwerp verklaart hoe te om de bevel-lijn interface te gebruiken om derdeuitbreidingen te beheren die u van Commerce Marketplace voor _op-gebouw_ projecten koopt. Voor de projecten van de wolkeninfrastructuur, zie [ uitbreidingen ](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/configure-store/extensions) beheren.
 
 U kunt de zelfde procedure gebruiken om _om het even welke_ uitbreiding te installeren; allen u hebt nodig is de naam en de versie van Composer van de uitbreiding. Als u de extensie wilt zoeken, opent u het `composer.json` -bestand en noteert u de waarden voor `"name"` en `"version"` .
 
@@ -37,7 +37,7 @@ Voordat u gaat installeren, kunt u het volgende doen:
 
 Als u een extensie wilt installeren, moet u:
 
-1. Haal een extensie op van de Commerce Marketplace of een andere extensieontwikkelaar.
+1. Haal de extensie op van de Commerce Marketplace of een andere extensieontwikkelaar.
 1. Als u een extensie installeert vanuit de Commerce Marketplace, moet u ervoor zorgen dat de `repo.magento.com` -opslagplaats bestaat in uw `composer.json` -bestand:
 
    ```bash
@@ -156,7 +156,7 @@ Sommige extensies werken alleen correct als u gegenereerde statische weergavebes
    bin/magento setup:upgrade
    ```
 
-1. Uw project opnieuw compileren: in de productiemodus ontvangt u mogelijk het bericht &quot;Voer de compilatieopdracht van het Magento opnieuw uit&quot;. De toepassing vraagt u niet om het compileerbevel op de wijze van de Ontwikkelaar in werking te stellen.
+1. Uw project opnieuw compileren: in de productiemodus ontvangt u mogelijk het bericht &quot;Voer de Magento-opdracht voor compileren opnieuw uit&quot;. De toepassing vraagt u niet om het compileerbevel op de wijze van de Ontwikkelaar in werking te stellen.
 
    ```bash
    bin/magento setup:di:compile

@@ -65,7 +65,7 @@ async.V1.inventory.bulk-product-source-unassign.POST
 async.V1.inventory.bulk-product-source-transfer.POST
 ```
 
-In de standaardconfiguratie voor `InventoryCatalog` worden geen berichten naar [!DNL RabbitMQ] gepubliceerd. Standaard wordt de handeling in dezelfde gebruikersthread uitgevoerd. Schakel `cataloginventory/bulk_operations/async` in als u wilt weten dat `InventoryCatalog` berichten moet publiceren. Van admin, ga **> Configuratie >** Catalogus **>** Inventaris **> de bulkverrichtingen van Admin `Run asynchronously` aan** ja **plaatsen.**
+In de standaardconfiguratie voor `InventoryCatalog` worden geen berichten naar [!DNL RabbitMQ] gepubliceerd. Standaard wordt de handeling in dezelfde gebruikersthread uitgevoerd. Schakel `InventoryCatalog` in als u wilt weten dat `cataloginventory/bulk_operations/async` berichten moet publiceren. Van admin, ga **> Configuratie >** Catalogus **>** Inventaris **> de bulkverrichtingen van Admin** aan `Run asynchronously` ja **plaatsen.**
 
 ## De wachtrij met berichten testen
 

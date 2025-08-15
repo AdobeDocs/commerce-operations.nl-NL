@@ -14,7 +14,7 @@ ht-degree: 0%
 
 In het algemeen, _stopwords_ zijn gemeenschappelijke woorden die de onderzoeksmotoren uit na verwerkingstekst filtreren. Aanvankelijk, toen schijfruimte en geheugen uiterst beperkt waren, betekende elke bespaarde kilobyte een significante verbetering van prestaties. Zodoende hebben zoekprogramma&#39;s prestatiewinst behaald door bepaalde woorden te negeren en de index klein te houden.
 
-Hoewel we vandaag nog meer opslagruimte hebben, zijn prestaties nog steeds belangrijk. Elasticsearch en OpenSearch gebruiken, net als andere zoekprogramma&#39;s, nog steeds stopwords om de prestaties te verbeteren.
+Hoewel we vandaag nog meer opslagruimte hebben, zijn prestaties nog steeds belangrijk. Elasticsearch en OpenSearch gebruiken, net als andere zoekprogramma&#39;s, nog steeds stopwoorden om de prestaties te verbeteren.
 
 U moet de stopwoorden beheren met gebruik van CSV-bestanden in de map `<magento_root>/vendor/magento/module-elasticsearch/etc/stopwords` of `<magento_root>/app/code/Magento/Elasticsearch/etc/stopwords/` , afhankelijk van de manier waarop u de Commerce-software hebt geïnstalleerd.
 
@@ -102,7 +102,7 @@ In deze sectie wordt beschreven hoe u de standaardmap stopword optioneel kunt wi
 - `<magento_root>/vendor/magento/module-elasticsearch/etc/stopwords`
 - `<magento_root>/app/code/Magento/Elasticsearch/etc/stopwords/`
 
-De locatie is afhankelijk van de manier waarop u de Commerce-software hebt geïnstalleerd. Als u Magento 2 GitHub bewaart, is de weg onder `app/code`. Als u een gecomprimeerd archief of een metapakket hebt geïnstalleerd, is het pad kleiner dan `vendor` .
+De locatie is afhankelijk van de manier waarop u de Commerce-software hebt geïnstalleerd. Als u de Magento 2 GitHub-opslagplaats hebt gekloond, is het pad onder `app/code` . Als u een gecomprimeerd archief of een metapakket hebt geïnstalleerd, is het pad kleiner dan `vendor` .
 
 **om de folder** te veranderen:
 

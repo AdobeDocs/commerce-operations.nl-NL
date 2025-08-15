@@ -23,7 +23,7 @@ Telkens wanneer u een actie uitvoert die het gegevensbestandschema of de gegeven
 
 >[!NOTE]
 >
->A *component* kan een module, een thema, of taalpak zijn; het maakt niet uit of de component uit de Commerce Marketplace of niet komt.
+>A *component* kan een module, een thema, of taalpak zijn; het maakt niet uit of de component uit Commerce Marketplace of niet komt.
 
 1. Start de upgrade:
 

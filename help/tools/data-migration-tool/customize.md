@@ -1,6 +1,6 @@
 ---
 title: Pas  [!DNL Data Migration Tool] aan
-description: Leer hoe te om  [!DNL Data Migration Tool]  aan overdrachtsgegevens aan te passen die door uitbreidingen tussen Magento 1 en Magento 2 worden gecreeerd.
+description: Leer hoe te om  [!DNL Data Migration Tool]  aan overdrachtgegevens aan te passen die door uitbreidingen tussen Magento 1 en Magento 2 worden gecreeerd.
 exl-id: a5c1575f-9d77-416e-91fe-a82905ef2e1c
 topic: Commerce, Migration
 source-git-commit: e83e2359377f03506178c28f8b30993c172282c7
@@ -14,7 +14,7 @@ ht-degree: 0%
 
 Soms is het gegevensformaat en de structuur die door [ wordt gecreeerd uitbreidingen ](https://marketplace.magento.com/extensions.html) of douanecode verschillend tussen Magento 1 en Magento 2. Gebruik extensiepunten in de [!DNL Data Migration Tool] om deze gegevens te migreren. Als de gegevensindeling en -structuur hetzelfde zijn, kunnen de gegevens automatisch worden gemigreerd zonder tussenkomst van de gebruiker.
 
-Tijdens migratie, scant de [ Stap van de Kaart ](technical-specification.md#map-step) en vergelijkt al Magento 1 en Magento 2 lijsten, met inbegrip van die gecreeerd door uitbreidingen. Als de tabellen overeenkomen, worden de gegevens automatisch gemigreerd. Als de tabellen verschillen, wordt het gereedschap beëindigd en wordt de gebruiker een melding gestuurd.
+Tijdens migratie, scant de [ Stap van de Kaart ](technical-specification.md#map-step) en vergelijkt alle Magento 1 en Magento 2 lijsten, met inbegrip van die die door uitbreidingen worden gecreeerd. Als de tabellen overeenkomen, worden de gegevens automatisch gemigreerd. Als de tabellen verschillen, wordt het gereedschap beëindigd en wordt de gebruiker een melding gestuurd.
 
 >[!NOTE]
 >
@@ -28,7 +28,7 @@ In de meeste gevallen, verhelpt de [ Stap van de Kaart ](technical-specification
 - Tabel- of veldnamen wijzigen met toewijzingsregels
 - Gegevensindelingen transformeren met bestaande handlers of een aangepaste handler
 
-In het volgende voorbeeld ziet u hoe u zowel toewijzingsregels als een handler kunt gebruiken. In dit voorbeeld wordt de extensie &#39;GreatBlog&#39; gebruikt van een hypothetisch Magento 1 dat is verbeterd voor Magento 2.
+In het volgende voorbeeld ziet u hoe u zowel toewijzingsregels als een handler kunt gebruiken. In dit voorbeeld wordt de extensie &#39;GreatBlog&#39; van Magento 1 gebruikt die voor Magento 2 is verbeterd.
 
 ```xml
 <source>
@@ -76,13 +76,13 @@ In het volgende voorbeeld ziet u hoe u zowel toewijzingsregels als een handler k
    - De naam van het veld `summary` is gewijzigd in `title` , zodat gegevens naar het nieuwe veld worden gemigreerd.
    - Het veld `priority` is verwijderd en bestaat niet meer in Magento 2.
    - De gegevens in het veld `body` hebben een andere indeling en moeten worden verwerkt door de aangepaste handler: `\Migration\Handler\GreatBlog\NewFormat` .
-- In Magento 2 is een nieuwe ratingfunctie ontwikkeld voor de extensie &quot;GreatBlog&quot;.
+- Er is een nieuwe ratingfunctie ontwikkeld voor de extensie &quot;GreatBlog&quot; in Magento 2.
    - Er is een nieuwe tabel van `great_blog_rating` gemaakt.
    - Er is een nieuw veld `great_blog_post.rating` gemaakt.
 
 ### Toewijzing in andere stappen uitbreiden
 
-Andere stappen steunen afbeelding, zoals de [ Stap EAV ](technical-specification.md#eav-step) en de Stap van de Attributen van de Klant. Met deze stappen migreert u een vooraf gedefinieerde lijst met tabellen met Magento&#39;s. Stel dat de extensie &quot;GreatBlog&quot; een extra veld heeft in de tabel `eav_attribute` en de naam is gewijzigd in Magento 2. Aangezien de lijst door de [ Stap EAV ](technical-specification.md#eav-step) wordt verwerkt, zouden de toewijzingsregels voor het `map-eav.xml` dossier moeten worden geschreven. De `map.xml` - en `map-eav.xml` -bestanden gebruiken hetzelfde `map.xsd` -schema, zodat de toewijzingsregels ongewijzigd blijven.
+Andere stappen steunen afbeelding, zoals de [ Stap EAV ](technical-specification.md#eav-step) en de Stap van de Attributen van de Klant. Deze stappen migreren een vooraf gedefinieerde lijst met Magento-tabellen. Stel dat de extensie &quot;GreatBlog&quot; een extra veld heeft in de tabel `eav_attribute` en de naam is gewijzigd in Magento 2. Aangezien de lijst door de [ Stap EAV ](technical-specification.md#eav-step) wordt verwerkt, zouden de toewijzingsregels voor het `map-eav.xml` dossier moeten worden geschreven. De `map.xml` - en `map-eav.xml` -bestanden gebruiken hetzelfde `map.xsd` -schema, zodat de toewijzingsregels ongewijzigd blijven.
 
 ## Belangrijke wijzigingen in gegevensindeling en -structuur
 
@@ -98,7 +98,7 @@ Maak een aangepaste stap voor belangrijke wijzigingen in de gegevensindeling en 
 
 ### Een aangepaste stap maken
 
-Gebruikend het zelfde &quot;GroteBlog&quot;voorbeeld, veronderstel dat de uitbreiding één lijst in Magento 1 heeft, maar opnieuw werd ontworpen om twee lijsten in Magento 2 te hebben.
+Als u hetzelfde &#39;GreatBlog&#39;-voorbeeld gebruikt, gaat u ervan uit dat de extensie één tabel heeft in Magento 1, maar dat de extensie opnieuw is ontworpen voor twee tabellen in Magento 2.
 
 In Magento 1 was er één `greatblog_post` -tabel:
 
@@ -112,7 +112,7 @@ In Magento 1 was er één `greatblog_post` -tabel:
 | tags      | TEXT     |
 ```
 
-In Magento 2 is een nieuwe tabel voor codes `greatblog_post_tags` geïntroduceerd:
+In Magento 2 is een nieuwe tabel voor tags `greatblog_post_tags` geïntroduceerd:
 
 ```text
 | Field      | Type     |
@@ -248,7 +248,7 @@ class Integrity extends \Migration\App\Step\AbstractIntegrity
 }
 ```
 
-Vervolgens moet u een klasse maken voor het verwerken en opslaan van gegevens in de database Magento 2 `Vendor\Migration\Step\GreatBlog\Data` :
+Vervolgens moet u een klasse maken voor het verwerken en opslaan van gegevens in de Magento 2-database `Vendor\Migration\Step\GreatBlog\Data` :
 
 ```php
 class Data implements \Migration\App\Step\StageInterface
@@ -406,11 +406,11 @@ class Delta extends \Migration\App\Step\AbstractDelta
 }
 ```
 
-Na de implementatie van de aangepaste stap in de voorbeelden, neemt het systeem gegevens van enige Magento 1 lijst,
+Na de implementatie van de aangepaste stap in de voorbeelden, neemt het systeem gegevens van de enige Magento 1-tabel.
 het verwerken met de klasse `Vendor\Migration\Step\GreatBlog\Data` en de gegevens opslaan in twee Magento 2-tabellen. Nieuwe en gewijzigde records worden geleverd bij de migratie naar delta met behulp van de `Vendor\Migration\Step\GreatBlog\Delta` -klasse.
 
 ## Verboden extensiemethoden
 
-Aangezien [!DNL Data Migration Tool] en Magento 2 constant evolueren, zijn de bestaande stappen en de managers onderhevig aan verandering. Wij adviseren hoogst niet het gedrag van stappen zoals de [ Stap van de Kaart ](technical-specification.md#map-step) met voeten te treden, [ URL herschrijft Stap ](technical-specification.md#url-rewrite-step), en managers door hun klassen uit te breiden.
+Aangezien de [!DNL Data Migration Tool] en Magento 2 voortdurend evolueren, kunnen bestaande stappen en handlers worden gewijzigd. Wij adviseren hoogst niet het gedrag van stappen zoals de [ Stap van de Kaart ](technical-specification.md#map-step) met voeten te treden, [ URL herschrijft Stap ](technical-specification.md#url-rewrite-step), en managers door hun klassen uit te breiden.
 
 Sommige stappen ondersteunen geen toewijzing en kunnen niet worden gewijzigd zonder de code te wijzigen. U kunt of een extra stap schrijven die gegevens aan het eind van migratie verandert of de kwestie van a [ GitHub ](https://github.com/magento/data-migration-tool/issues) creëren en om een nieuw uitbreidingspunt op de bestaande stap vragen.

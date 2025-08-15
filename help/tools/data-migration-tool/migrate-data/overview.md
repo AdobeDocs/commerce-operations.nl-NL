@@ -12,17 +12,17 @@ ht-degree: 0%
 
 # Migratieoverzicht
 
-Voordat u de migratie start, moet u alle taken voor Magento 1 voor uitsnijden stoppen.
+Voordat u de migratie start, moet u alle Magento 1-taken voor uitsnijden stoppen.
 
 Volg tijdens het migratieproces de volgende algemene regels voor een geslaagde migratie:
 
 1. **maak geen** veranderingen in Magento 1 Admin, behalve ordebeheer (het verschepen, het creëren van factuur, en creditmemo&#39;s)
 1. **verander geen code**
-1. **maak geen** veranderingen in Magento 2 Admin en storefront
+1. **maak geen** veranderingen in Magento 2 Admin en storefront aan
 
 >[!TIP]
 >
->Alle verrichtingen in Magento 1 storefront worden toegestaan.
+>Alle bewerkingen in de Magento 1 storefront zijn toegestaan.
 
 ## Voer de [!DNL Data Migration Tool] uit
 
@@ -44,7 +44,7 @@ In deze sectie ziet u hoe u de [!DNL Data Migration Tool] uitvoert om instelling
    sudo -u <file system owner>  <command>
    ```
 
-1. Als u opdrachten voor Magento&#39;s vanuit een willekeurige map wilt uitvoeren, voegt u `<magento_root>/bin` toe aan uw systeem `PATH` .
+1. Als u Magento-opdrachten vanuit een willekeurige map wilt uitvoeren, voegt u `<magento_root>/bin` toe aan uw systeem `PATH` .
 
    Omdat de cellen verschillende syntaxis hebben, raadpleeg een verwijzing als [ unix.stackexchange.com ](https://unix.stackexchange.com/questions/117467/how-to-permanently-set-environmental-variables).
 

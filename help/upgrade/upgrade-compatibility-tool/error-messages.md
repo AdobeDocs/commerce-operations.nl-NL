@@ -61,7 +61,7 @@ Er treden kritieke fouten op wanneer de aangepaste code verwijst naar entiteiten
 | 5002 | De openingstag PHP moet de eerste inhoud in het bestand zijn | Zorg ervoor dat het bestand geen inhoud bevat voordat de PHP-openingstag wordt weergegeven. |
 | 5003 | Functie is vervangen | Gebruik een vervanging die in het foutbericht wordt voorgesteld. Als het bericht geen vervanging voorstelt, is een nauw overzicht nodig om een alternatieve functie of implementatie te selecteren. |
 | 5005 | PHP-syntaxisfout | De code moet worden bijgewerkt om te voldoen aan de PHP syntaxisstandaarden. |
-| 5072 | Mogelijke schending van het ontwerp van Magento 2. Doorgaans een Magento 1.x-constructie gedetecteerd | Constructie bijwerken naar Magento 2-standaarden. |
+| 5072 | Mogelijke schending van het Magento 2-ontwerp. Doorgaans een Magento 1.x-constructie gedetecteerd | Constructie bijwerken naar Magento 2-standaarden. |
 | 5076 | Kan niet gebruiken in naamruimte zoals deze is gereserveerd sinds PHP 7 | Vervang het gereserveerde woord in de naamruimte door een niet-gereserveerd trefwoord. |
 | 5077 | Kan niet gebruiken als klassenaam omdat deze is gereserveerd sinds PHP 7 | Vervang de gereserveerde klassenaam door een niet-gereserveerde naam. |
 

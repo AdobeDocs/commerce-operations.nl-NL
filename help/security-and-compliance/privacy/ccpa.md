@@ -26,7 +26,7 @@ De CCPA verleent de consument de volgende nieuwe rechten:
 
 ## CCPA-conformiteit
 
-De ontwikkeling en uitvoering van een plan voor de naleving van de CCPA-voorschriften vereist een gecoördineerde inspanning. Wij moedigen verkopers aan om een dwars-functioneel team samen te stellen, en het roadmap te volgen die in [ wordt geschetst Cpa- Gids van de Naleving ](https://experienceleague.adobe.com/docs/commerce-admin/start/compliance/privacy/compliance-ccpa.html?lang=nl-NL) om hun bedrijf in naleving van de verordening te brengen. Als ontwikkelaar kunt u worden uitgenodigd om als belanghebbende deel te nemen met een nadruk op de stappen 2 tot en met 5 van het proces. Zie de [ Gids van de Naleving CCPA ](https://experienceleague.adobe.com/docs/commerce-admin/start/compliance/privacy/compliance-ccpa.html?lang=nl-NL) voor meer informatie.
+De ontwikkeling en uitvoering van een plan voor de naleving van de CCPA-voorschriften vereist een gecoördineerde inspanning. Wij moedigen verkopers aan om een dwars-functioneel team samen te stellen, en het roadmap te volgen die in [ wordt geschetst Cpa- Gids van de Naleving ](https://experienceleague.adobe.com/docs/commerce-admin/start/compliance/privacy/compliance-ccpa.html) om hun bedrijf in naleving van de verordening te brengen. Als ontwikkelaar kunt u worden uitgenodigd om als belanghebbende deel te nemen met een nadruk op de stappen 2 tot en met 5 van het proces. Zie de [ Gids van de Naleving CCPA ](https://experienceleague.adobe.com/docs/commerce-admin/start/compliance/privacy/compliance-ccpa.html) voor meer informatie.
 
 1. Steek een dwars-functioneel team samen om naleving CCPA te richten.
 

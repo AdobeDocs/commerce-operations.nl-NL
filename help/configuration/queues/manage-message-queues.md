@@ -49,7 +49,7 @@ U kunt een procesmanager zoals [ Supervisor ](https://supervisord.readthedocs.io
 
 >[!INFO]
 >
->Als uw Adobe Commerce-winkel op het Cloud-platform wordt gehost, gebruikt u [`CRON_CONSUMERS_RUNNER` ](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure/env/stage/variables-deploy.html?lang=nl-NL#cron_consumers_runner) om de `consumers_runner` cron-taak te configureren.
+>Als uw Adobe Commerce-winkel op het Cloud-platform wordt gehost, gebruikt u [`CRON_CONSUMERS_RUNNER` ](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure/env/stage/variables-deploy.html#cron_consumers_runner) om de `consumers_runner` cron-taak te configureren.
 
 ### Specifieke configuratie
 
@@ -82,6 +82,6 @@ Bewerk het bestand `/app/etc/env.php` om de uitsnijdtaak te configureren `consum
 
   >[!INFO]
   >
-  >Als uw opslag van Adobe Commerce op het platform van de Wolk wordt ontvangen, gebruik [`CONSUMERS_WAIT_FOR_MAX_MESSAGES` ](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure/env/stage/variables-deploy.html?lang=nl-NL#consumers_wait_for_max_messages) om te vormen hoe de consumenten berichten van de berichtrij verwerken.
+  >Als uw opslag van Adobe Commerce op het platform van de Wolk wordt ontvangen, gebruik [`CONSUMERS_WAIT_FOR_MAX_MESSAGES` ](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure/env/stage/variables-deploy.html#consumers_wait_for_max_messages) om te vormen hoe de consumenten berichten van de berichtrij verwerken.
 
 Zie [ de gebruikers van de het berichtrij van het Begin ](../cli/start-message-queues.md).

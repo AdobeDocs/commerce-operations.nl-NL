@@ -29,7 +29,7 @@ Wanneer
 
 >[!NOTE]
 >
->U kunt modules niet direct op wolkenprojecten toelaten of onbruikbaar maken. U moet deze opdrachten lokaal uitvoeren en vervolgens wijzigingen in het `app/etc/config.php` -bestand doorvoeren voor een omgeving. Zie [ Pro projectwerkschema: Het werkschema van de Plaatsing ](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/architecture/pro-develop-deploy-workflow.html?lang=nl-NL#deployment-workflow).
+>U kunt modules niet direct op wolkenprojecten toelaten of onbruikbaar maken. U moet deze opdrachten lokaal uitvoeren en vervolgens wijzigingen in het `app/etc/config.php` -bestand doorvoeren voor een omgeving. Zie [ Pro projectwerkschema: Het werkschema van de Plaatsing ](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/architecture/pro-develop-deploy-workflow.html#deployment-workflow).
 
 ## Module in-/uitschakelen
 
@@ -78,7 +78,7 @@ bin/magento cache:clean
 
 ## Modules in- en uitschakelen
 
-Met Adobe Commerce kunt u de momenteel beschikbare modules in- of uitschakelen, met andere woorden elke module die door een Adobe wordt geleverd of elke andere module die momenteel beschikbaar is.
+Met Adobe Commerce kunt u de momenteel beschikbare modules in- of uitschakelen, met andere woorden elke module die door Adobe wordt geleverd of elke andere module die momenteel beschikbaar is.
 
 Bepaalde modules hebben gebiedsdelen op andere modules, in welk geval u een module zou kunnen niet toelaten of onbruikbaar maken omdat het gebiedsdelen op andere modules heeft.
 

@@ -46,7 +46,7 @@ De volgende secties omvatten beste praktijkinformatie voor de planningsfase.
     <td>Los en verhinder de vijf gemeenschappelijkste configuratiekwesties voor de plaatsen van Adobe Commerce.</td>
   </tr>
   <tr>
-    <td><a href="https://experienceleague.adobe.com/docs/commerce-admin/systems/tools/cache-management.html?lang=nl-NL">Caching</a></td>
+    <td><a href="https://experienceleague.adobe.com/docs/commerce-admin/systems/tools/cache-management.html">Caching</a></td>
     <td>Gebruik de tools voor cachebeheer om de prestaties van uw site te verbeteren.</td>
   </tr>
   <tr>
@@ -76,11 +76,11 @@ De volgende secties omvatten beste praktijkinformatie voor de planningsfase.
     <td colspan="2"><em>Services configureren</em></td>
   </tr>
   <tr>
-    <td><a href="https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/cdn/setup-fastly/fastly-configuration.html?lang=nl-NL">Snel instellen</a></td>
+    <td><a href="https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/cdn/setup-fastly/fastly-configuration.html">Snel instellen</a></td>
     <td>Configureer snel services voor uw Adobe Commerce op het infrastructuurproject voor de cloud.</td>
   </tr>
   <tr>
-    <td><a href="https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/monitor/new-relic.html?lang=nl-NL">Meldingskanalen voor New Relic configureren</a></td>
+    <td><a href="https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/monitor/new-relic.html">Meldingskanalen voor New Relic configureren</a></td>
     <td>Open uw New Relic-dashboard en analyseer gegevens van uw Adobe Commerce over het infrastructuurproject in de cloud.</td>
   </tr>
   <tr>
@@ -115,7 +115,7 @@ De volgende secties omvatten beste praktijkinformatie voor de planningsfase.
 
 | Beste praktijken | Beschrijving |
 |--------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------|
-| [ escalaties van de Partner ](partner-escalation.md) | Bereid voor het escaleren van een partnerkwestie met een Team van de Rekening van de Adobe voor of leer hoe te om een escalatie te vermijden. |
+| [ escalaties van de Partner ](partner-escalation.md) | Bereid voor het escaleren van een partnerkwestie met een Team van de Rekening van Adobe voor of leer hoe te om een escalatie te vermijden. |
 | [ de opslagverwerking van Betalingen ](payment-processing-storage.md) | Betalingsgegevens veilig verwerken en opslaan. |
 
 ## Verkoop en marketing

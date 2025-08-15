@@ -28,7 +28,7 @@ De ACSD-63329-patch verhelpt het probleem dat er geen standaardwaarden zijn inge
 
 >[!NOTE]
 >
->De patch kan van toepassing worden op andere versies met nieuwe [!DNL Quality Patches Tool] versies. Om te controleren of de patch compatibel is met uw Adobe Commerce-versie, werkt u het `magento/quality-patches` -pakket bij naar de meest recente versie en controleert u de compatibiliteit op de [[!DNL Quality Patches Tool] : zoek naar patches op de pagina ](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html?lang=nl-NL) . Gebruik de patch-id als een zoekwoord om de patch te zoeken.
+>De patch kan van toepassing worden op andere versies met nieuwe [!DNL Quality Patches Tool] versies. Om te controleren of de patch compatibel is met uw Adobe Commerce-versie, werkt u het `magento/quality-patches` -pakket bij naar de meest recente versie en controleert u de compatibiliteit op de [[!DNL Quality Patches Tool] : zoek naar patches op de pagina ](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html) . Gebruik de patch-id als een zoekwoord om de patch te zoeken.
 
 ## Probleem
 
@@ -36,7 +36,7 @@ Standaardwaarden worden niet ingesteld voor de datum- en tijdvelden wanneer u pr
 
 <u> Stappen om </u> te reproduceren:
 
-1. Maak een **[!UICONTROL Product]** -kenmerk, stel de standaardwaarde ervan in op `12/31/2020` en stel **[!UICONTROL Catalog Input Type for Store Owner]** in op ***[!UICONTROL Date]*** of *** [!UICONTROL Date and Time] &#x200B;***.
+1. Maak een **[!UICONTROL Product]** -kenmerk, stel de standaardwaarde ervan in op `12/31/2020` en stel **[!UICONTROL Catalog Input Type for Store Owner]** in op ***[!UICONTROL Date]*** of *** [!UICONTROL Date and Time] ***.
 1. Creeer een ander teksttypeattribuut en plaats de standaardwaarde aan ***testwaarde***.
 1. Maak een nieuw product met een REST API POST request to `/rest/all/V1/products/`.
 
@@ -75,7 +75,7 @@ De standaardwaarde wordt opgeslagen voor het kenmerk **[!UICONTROL Text]** , maa
 Om individuele flarden toe te passen, gebruik de volgende verbindingen afhankelijk van uw plaatsingsmethode:
 
 * Op locatie Adobe Commerce of Magento Open Source: [[!DNL Quality Patches Tool] > Gebruik ](/help/tools/quality-patches-tool/usage.md) in de handleiding [!DNL Quality Patches Tool] .
-* Adobe Commerce op wolkeninfrastructuur: [ Verbeteringen en Patches > Pas Patches ](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html?lang=nl-NL) in Commerce op de gids van de Infrastructuur van de Wolk toe.
+* Adobe Commerce op wolkeninfrastructuur: [ Verbeteringen en Patches > Pas Patches ](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html) in Commerce op de gids van de Infrastructuur van de Wolk toe.
 
 ## Gerelateerde lezing
 

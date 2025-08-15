@@ -4,14 +4,14 @@ description: Maak een aangepaste pagina voor de onderhoudsmodus die uw klanten o
 exl-id: 77e6d82d-5cc6-4d14-8b5c-1d2108f27b29
 source-git-commit: ca8dc855e0598d2c3d43afae2e055aa27035a09b
 workflow-type: tm+mt
-source-wordcount: '382'
+source-wordcount: '379'
 ht-degree: 0%
 
 ---
 
 # Opties voor de onderhoudsmodus voor upgrade
 
-Dit onderwerp bespreekt hoe u een pagina van het douaneonderhoud aan vertoning aan gebruikers kunt tot stand brengen terwijl uw toepassing van het Magento wordt bevorderd. Het maken van een aangepaste pagina is optioneel, maar wordt aangeraden, omdat uw site tijdens een deel van de upgrade toegankelijk is.
+In dit onderwerp wordt besproken hoe u een aangepaste onderhoudspagina kunt maken die voor gebruikers kan worden weergegeven terwijl uw Magento-toepassing wordt bijgewerkt. Het maken van een aangepaste pagina is optioneel, maar wordt aangeraden, omdat uw site tijdens een deel van de upgrade toegankelijk is.
 
 Door een aangepaste pagina te maken waarnaar gebruikers kunnen omleiden, wordt geen toegang tot de site mogelijk en wordt uw gebruikers ook geïnformeerd dat er onderhoud aan de site wordt uitgevoerd.
 
@@ -66,9 +66,9 @@ Verkeer omleiden naar een aangepaste onderhoudspagina:
 1. Werk uw Apache-configuratie als volgt bij:
 
    - Alle verkeer omleiden naar de onderhoudspagina
-   - Lijst van gewenste personen bepaalde IPs zodat kan een beheerder de software van het Magento bevorderen.
+   - Lijst van gewenste personen bepaalde IPs zodat kan een beheerder de software van Magento bevorderen.
 
-   In het volgende voorbeeld wordt de lijst van gewenste personen 192.0.2.110 toegepast.
+   In het volgende voorbeeld worden lijsten van gewenste personen 192.0.2.110 .
 
    Voeg het volgende toe aan het einde van het Apache-configuratiebestand:
 
@@ -107,7 +107,7 @@ Verkeer omleiden naar een aangepaste onderhoudspagina:
 1. Gebruik een tekstverwerker om het configuratiebestand van de nginx te openen dat uw serverblok bevat.
 1. Voeg het volgende aan het serverblok toe (`server` wordt getoond voor duidelijkheid slechts; voeg geen tweede serverblok toe).
 
-   De volgende lijsten van gewenste personen IP adres 192.0.2.110 en 192.0.2.115 op een systeem waar het Magento in `/var/www/html/magento2` wordt geïnstalleerd:
+   De volgende lijsten van gewenste personen IP adres 192.0.2.110 en 192.0.2.115 op een systeem waar Magento in `/var/www/html/magento2` wordt geïnstalleerd:
 
    ```conf
    server {

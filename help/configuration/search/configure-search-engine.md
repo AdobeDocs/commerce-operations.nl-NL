@@ -12,14 +12,14 @@ ht-degree: 0%
 
 # Configuratie van zoekmachine
 
-Deze sectie bespreekt de minimummontages die u moet verkiezen om Elasticsearch of OpenSearch met plaatsingen op-gebouw van Adobe Commerce te testen.
+In deze sectie worden de minimale instellingen besproken die u moet kiezen om Elasticsearch of OpenSearch te testen met implementaties op locatie van Adobe Commerce.
 
 >[!TIP]
 >
 >In versies 2.4.4 en 2.4.3-p2, zijn alle gebieden geëtiketteerd **Elasticsearch** ook van toepassing op OpenSearch.
->Toen de steun voor Elasticsearch 8.x in versie 2.4.6 werd geïntroduceerd, werden de nieuwe etiketten gecreeerd om tussen Elasticsearch en configuraties te onderscheiden OpenSearch.
+>>Toen de steun voor Elasticsearch 8.x in versie 2.4.6 werd geïntroduceerd, werden de nieuwe etiketten gecreeerd om tussen Elasticsearch en configuraties te onderscheiden OpenSearch.
 
-Voor extra details over het vormen van uw onderzoeksmotor, zie de [ Gids van de Gebruiker ](https://experienceleague.adobe.com/docs/commerce-admin/catalog/catalog/search/search-configuration.html?lang=nl-NL).
+Voor extra details over het vormen van uw onderzoeksmotor, zie de [ Gids van de Gebruiker ](https://experienceleague.adobe.com/docs/commerce-admin/catalog/catalog/search/search-configuration.html).
 
 ## De zoekfunctie configureren vanuit de beheerder
 
@@ -37,11 +37,11 @@ Om uw systeem te vormen om Elasticsearch of OpenSearch te gebruiken:
 
    | Optie | Beschrijving |
    |--- |--- |
-   | **[!UICONTROL Server Hostname]** | Voer de volledig gekwalificeerde hostnaam of het IP-adres in van de computer waarop de Elasticsearch of OpenSearch wordt uitgevoerd.<br> Adobe Commerce op wolkeninfrastructuur: Krijg deze waarde van uw integratiesysteem. |
+   | **[!UICONTROL Server Hostname]** | Voer de volledig gekwalificeerde hostnaam of het IP-adres in van de computer waarop Elasticsearch of OpenSearch wordt uitgevoerd.<br> Adobe Commerce op wolkeninfrastructuur: Krijg deze waarde van uw integratiesysteem. |
    | **[!UICONTROL Server Port]** | Voer de proxypoort van de webserver in. Het gebrek is 9200 <br> Adobe Commerce op wolkeninfrastructuur: Krijg deze waarde van uw integratiesysteem. |
    | **[!UICONTROL Index Prefix]** | Voer het voorvoegsel van de index van het zoekprogramma in. Als u één exemplaar voor meer dan één installatie van Commerce (het Opvoeren en de milieu&#39;s van de Productie) gebruikt, moet u een uniek voorvoegsel voor elke installatie specificeren. Anders kunt u het standaardvoorvoegsel magento2 gebruiken. |
    | **[!UICONTROL Enable HTTP Auth]** | Klik **[!UICONTROL Yes]** slechts als u authentificatie voor uw server van het onderzoeksmotor toeliet. Geef in dat geval een gebruikersnaam en wachtwoord op in de opgegeven velden. |
-   | **[!UICONTROL Server Timeout]** | Voer de hoeveelheid tijd (in seconden) in die moet worden gewacht wanneer u probeert verbinding te maken met de Elasticsearch of de OpenSearch-server. |
+   | **[!UICONTROL Server Timeout]** | Voer de hoeveelheid tijd (in seconden) in die moet worden gewacht wanneer u probeert verbinding te maken met de Elasticsearch- of OpenSearch-server. |
 
 1. Klik op **[!UICONTROL Test Connection]**.
 

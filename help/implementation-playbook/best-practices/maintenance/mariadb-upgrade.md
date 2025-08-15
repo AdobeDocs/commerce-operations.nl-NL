@@ -25,7 +25,7 @@ Vanaf MariaDB 10.5.1 worden kolommen met oude tijdelijke indelingen gemarkeerd m
 
 Adobe Commerce kan de datumkolommen niet toewijzen aan een juist gegevenstype vanwege de MariaDB-opmerking. Dit kan leiden tot onverwacht gedrag in aangepaste code.
 
-Om onverwacht gedrag te voorkomen wanneer het bevorderen van MariaDB van oudere versies aan versie 10.6, adviseert de Adobe migrerend de kolommen aan het nieuwe interne formaat.
+Om onverwacht gedrag te voorkomen bij het upgraden van MariaDB van oudere versies naar versie 10.6, raadt Adobe aan de kolommen te migreren naar de nieuwe interne indeling.
 
 ### Standaardconfiguratie
 

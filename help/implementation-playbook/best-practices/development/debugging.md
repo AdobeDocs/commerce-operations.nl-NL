@@ -122,7 +122,7 @@ Zie de volgende diagrammen:
 
 ![ Bisect diagram ](../../../assets/playbooks/bisect2.png)
 
-Er zijn verschillende manieren om te discussiëren, maar de Adobe beveelt aan deze volgorde te volgen:
+Er zijn verschillende manieren om te discussiëren, maar Adobe raadt aan deze volgorde te volgen:
 
 - Bisect per onderwerp
 - Bisect op verbintenissen

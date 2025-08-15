@@ -6,7 +6,7 @@ feature: Best Practices
 exl-id: c9b644fa-290c-4f33-b5a7-19f7122ff08e
 source-git-commit: 8d0d8f9822b88f2dd8cbae8f6d7e3cdb14cc4848
 workflow-type: tm+mt
-source-wordcount: '511'
+source-wordcount: '488'
 ht-degree: 0%
 
 ---
@@ -32,63 +32,63 @@ Gebruik deze controlelijst tijdens uw jaarlijkse en driemaandelijkse gesprekken 
 
 ## Doelen
 
-▢ Huidige KPI&#39;s controleren en indien nodig aanpassen.
+▢ Huidige KPI&#39;s bekijken en indien nodig aanpassen.
 
 ## Extensies en aanpassingen
 
-▢ Alle huidige extensies en aanpassingen controleren en controleren of deze nog steeds nodig zijn op basis van de zakelijke vereisten.
+▢ Bekijk alle huidige extensies en aanpassingen en zorg ervoor dat deze op basis van de zakelijke vereisten nog steeds nodig zijn.
 
-▢ Overweeg extensies te vervangen die geen goede record hebben voor het bijhouden van up-to-date houden met Adobe Commerce-versies.
+▢ Overweeg extensies te vervangen die geen goede record hebben voor het bijwerken van Adobe Commerce-versies.
 
 ## Team
 
-▢ Zorg ervoor dat u beschikt over het juiste team met de juiste Adobe Commerce-certificeringen en -vaardigheden.
+▢ Zorg ervoor dat u beschikt over het juiste team met de juiste Adobe Commerce-certificeringen en -vaardigheidssets.
 
 ## Begroting en timing
 
-▢ Gebruik het de versieschema van Adobe Commerce [&#128279;](../../../release/schedule.md) om uw volgende verbetering te plannen en voor tijd voor te bereiden.
+▢ Gebruik het de versieschema van Adobe Commerce [ ](../../../release/schedule.md) om uw volgende verbetering te plannen en voor tijd voor te bereiden.
 
-▢ Bespreek welke versie u (volledig of veiligheid-slechts) zult goedkeuren gebaseerd op verwachte behoeften.
+▢ Bespreek welke versie u (volledig of veiligheid-slechts) denkt over te nemen gebaseerd op verwachte behoeften.
 
-▢ Maak een budget en teamcapaciteit voor de upgrade gereserveerd.
+▢ Maak een budget en teamcapaciteit vrij voor de upgrade.
 
 ## Integraties van derden
 
-▢ de huidige Adobe Commerce-integratie van derden en de bijbehorende onderhoudsperioden voor het jaar controleren en overwegen upgradewerk af te stemmen op uw onderhoudsplan.
+▢ Bekijk de huidige integratie van externe Adobe Commerce en de bijbehorende onderhoudsperioden voor het jaar en overweeg de upgradewerkzaamheden af te stemmen op uw onderhoudsplan.
 
 ## Toepassingsgebied en implementatieplanning
 
-▢ vroege toegang
+▢ Vroege toegang
 
 - De partner neemt aan [ Beta ](../../../release/beta.md) deel
 - Opmerking bij Beta-release.
 
-▢ overeenstemming bereiken over begroting, tijdschema, toepassingsgebied.
+▢ Akkoord over budget, tijdlijn, bereik.
 
 ▢ stel het [ Hulpmiddel van de Verenigbaarheid van de Verbetering ](../../../upgrade/upgrade-compatibility-tool/overview.md) in werking
 
-▢ denk na gebruikend de verbetering om kwesties te richten die door het [ Wide Hulpmiddel van de Analyse van de Plaats ](../../../tools/site-wide-analysis-tool/intro.md) worden geïdentificeerd.
+▢ overweeg het gebruiken van de verbetering om kwesties te richten die door het [ Wide Hulpmiddel van de Analyse van de Plaats ](../../../tools/site-wide-analysis-tool/intro.md) worden geïdentificeerd.
 
 ▢ Documentafhankelijkheden en vereiste technische stackwijzigingen, zoals PHP- of Elastic Search-versies.
 
-▢ projectteam verzamelen met Adobe Commerce-certificeringen.
+▢ Projectteam verzamelen met Adobe Commerce-certificaten.
 
-▢ Communicatieplan voor belanghebbenden opstellen.
+▢ Communicatieplan voor belanghebbenden maken.
 
-▢ het onderhoudsvenster van het Plan als de onderbreking wordt voorzien.
+▢ Het onderhoudsvenster van het plan als de onderbreking wordt voorzien.
 
-▢ het Overzicht en keurt de het testen strategie goed; denk na gebruikend het de testkader van Adobe Commerce [&#128279;](https://developer.adobe.com/commerce/testing/) of een derde automatiseringsreeks.
+▢ Overzicht en keur de het testen strategie goed; denk na gebruikend het Adobe Commerce [ testkader ](https://developer.adobe.com/commerce/testing/) of een derde automatiseringsreeks.
 
 ▢ Bevestig dat alle extensies en aanpassingen compatibel zijn.
 
-▢ het afspeelboek na de introductie bekijken en bijwerken; gebruiken als tijdens of na de upgrade problemen zijn ontdekt.
+▢ Reviseer en werk het afspeelboek na de introductie bij. Dit wordt gebruikt als er tijdens of na de upgrade problemen zijn ontdekt.
 
-## Post-implementatie
+## Post Deployment
 
-▢ Monitor site voor problemen - prestaties, orderverwerking, analyses en andere problemen.
+▢ Bewaak de site op problemen - prestaties, orderverwerking, analyses en andere problemen.
 
-▢ voer een de veiligheidsaftasten van Adobe Commerce [&#128279;](https://account.magento.com/scanner/dashboard/) of andere derdeaftasten uit en herzie potentiële veiligheidskwetsbaarheid.
+▢ voer een de veiligheidsaftasten van Adobe Commerce [ ](https://account.magento.com/scanner/dashboard/) of andere derdeaftasten uit en herzie potentiële veiligheidskwetsbaarheid.
 
-▢ Een retrospectief uitvoeren met alle belanghebbenden en documenteren wat goed is gegaan en wat niet en hoe te verbeteren.
+▢ Voer een retrospectief uit met alle belanghebbenden en documenteer wat goed ging en wat niet en hoe te om te verbeteren.
 
-▢ Wijzig uw plan voor de volgende verbetering met geleerde lessen.
+▢ Wijzig uw plan voor de volgende upgrade met geleerde lessen.

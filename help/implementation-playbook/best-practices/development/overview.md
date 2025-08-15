@@ -42,7 +42,7 @@ De volgende secties bevatten informatie over best practices voor de ontwikkeling
 
 | Beste praktijken | Beschrijving |
 |--------------------------------------------------------------------------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------|
-| [ bouwt en plaatsing ](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/deploy/best-practices.html?lang=nl-NL){target="_blank"}  | Beschrijft beste praktijken voor de bouw en stel stadia van Adobe Commerce op de projecten van de wolkeninfrastructuur in |
+| [ bouwt en plaatsing ](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/deploy/best-practices.html){target="_blank"} | Beschrijft beste praktijken voor de bouw en stel stadia van Adobe Commerce op de projecten van de wolkeninfrastructuur in |
 | Foutopsporing | Fouten systematisch en effectief opsporen in het Adobe Commerce-kader |
 | [ Statische inhoudsplaatsing ](static-content-deployment.md) | Vermijd problemen met statische inhoud die niet in uw winkelruimte wordt weergegeven |
 | [ het Oplossen van problemen ](troubleshooting.md) | Problemen met algemene Adobe Commerce-implementatie oplossen |
@@ -65,13 +65,13 @@ De volgende secties bevatten informatie over best practices voor de ontwikkeling
 
 | Beste praktijken | Beschrijving |
 |----------------------------------------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------|
-| [ de ontwikkeling van het Thema ](https://developer.adobe.com/commerce/frontend-core/guide/best-practices/){target="_blank"}  | Beschrijft ontwikkelingspatronen helpen verzekeren verenigbaarheid tussen uw thema, toekomstige versies van Adobe Commerce, en douanetoevoegdheden |
+| [ de ontwikkeling van het Thema ](https://developer.adobe.com/commerce/frontend-core/guide/best-practices/){target="_blank"} | Beschrijft ontwikkelingspatronen helpen verzekeren verenigbaarheid tussen uw thema, toekomstige versies van Adobe Commerce, en douanetoevoegdheden |
 
 ## PHP-ontwikkeling
 
 | Beste praktijken | Beschrijving |
 |-----------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------|
 | [ Uitzondering behandeling ](exception-handling.md) | Beschrijft geadviseerde methodes om uitzonderingen te registreren |
-| [ Uitbreidingen ](https://developer.adobe.com/commerce/php/best-practices/){target="_blank"}  | Beschrijft ontwikkelingspatronen helpen verzekeren verenigbaarheid tussen uw uitbreiding, toekomstige versies van Adobe Commerce, en andere douaneuitbreidingen |
+| [ Uitbreidingen ](https://developer.adobe.com/commerce/php/best-practices/){target="_blank"} | Beschrijft ontwikkelingspatronen helpen verzekeren verenigbaarheid tussen uw uitbreiding, toekomstige versies van Adobe Commerce, en andere douaneuitbreidingen |
 | [ Privé inhoudsblokken ](private-content-block-configuration.md) | Private-inhoudsblokken configureren om de prestaties van de winkel te optimaliseren |
 | [ wijzig kern en derde PHP code ](modifying-core-and-third-party-code.md) | De functionaliteit, het resultaat of de invoer wijzigen van code die u niet hebt gemaakt of die u niet rechtstreeks beheert |

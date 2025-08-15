@@ -1,5 +1,5 @@
 ---
-title: Ontwikkelingsomgeving Recommendations
+title: Aanbevelingen voor ontwikkelomgeving
 description: Meer informatie over prestatieaanbevelingen voor het instellen van uw lokale Adobe Commerce-ontwikkelomgeving.
 exl-id: f57396c0-86be-4933-8066-eb51c42fb9e4
 source-git-commit: ddf988826c29b4ebf054a4d4fb5f4c285662ef4e
@@ -31,7 +31,7 @@ In de ontwikkelingswijze, stel geen bevelen voor compilatie, codegeneratie en st
   bin/magento setup:di:compile
   ```
 
-  In de ontwikkelingsmodus voert het Magento de generatie op aanvraag uit; u hoeft deze niet uit te voeren. Als u een handtekening van een klasse wijzigde en zijn auto-geproduceerde `factories/proxies/interceptors` opnieuw moet produceren, verwijder die klassen of de _geproduceerde_ omslag.
+  In de ontwikkelingsmodus voert Magento de generatie op aanvraag uit. U hoeft deze niet uit te voeren. Als u een handtekening van een klasse wijzigde en zijn auto-geproduceerde `factories/proxies/interceptors` opnieuw moet produceren, verwijder die klassen of de _geproduceerde_ omslag.
 
 * `setup:static-content:deploy` implementeert statische inhoud voor een winkel.
 
@@ -39,8 +39,8 @@ In de ontwikkelingswijze, stel geen bevelen voor compilatie, codegeneratie en st
   bin/magento setup:static-content:deploy
   ```
 
-  In de ontwikkelingsmodus voert het Magento het op aanvraag uit; u hoeft het niet uit te voeren.
+  In de ontwikkelingsmodus voert Magento het programma op aanvraag uit. U hoeft het niet uit te voeren.
 
 ## Normale laadtijd van pagina&#39;s op een virtuele computer
 
-Als u zich op een VM ontwikkelt en het langer dan 2 seconden duurt om een pagina van het Magento te laden, herzie uw milieu montages.
+Als u zich ontwikkelt op een VM en het langer duurt dan 2 seconden om een Magento-pagina te laden, controleert u de omgeving.

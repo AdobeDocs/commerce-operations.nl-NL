@@ -18,7 +18,7 @@ ht-degree: 0%
 
 >[!NOTE]
 >
->Ondersteuning voor OpenSearch is toegevoegd in 2.4.4. OpenSearch is een compatibele Elasticsearch. Zie [ Elasticsearch migreren aan OpenSearch ](../../../upgrade/prepare/opensearch-migration.md) voor meer informatie.
+>Ondersteuning voor OpenSearch is toegevoegd in 2.4.4. OpenSearch is een compatibele vork van Elasticsearch. Zie [ Elasticsearch migreren aan OpenSearch ](../../../upgrade/prepare/opensearch-migration.md) voor meer informatie.
 
 Deze sectie bespreekt hoe te om Apache als *onveilige* volmacht te vormen zodat Adobe Commerce een onderzoeksmotor kan gebruiken die op deze server loopt. Deze sectie bespreekt vestigingHTTP Basis geen authentificatie; dat in [ Veilige mededeling met Apache ](#secure-communication-with-apache) wordt besproken.
 
@@ -154,7 +154,7 @@ htpasswd -c /usr/local/apache/password/.htpasswd apache
 ```
 
 **Voorbeeld 2: Elasticsearch**
-U moet authentificatie voor twee gebruikers instellen: met toegang tot nginx en met toegang tot Elasticsearch. Voer de volgende opdrachten in om wachtwoordbestanden voor deze gebruikers te maken:
+U moet verificatie instellen voor twee gebruikers: één met toegang tot nginx en één met toegang tot Elasticsearch. Voer de volgende opdrachten in om wachtwoordbestanden voor deze gebruikers te maken:
 
 ```bash
 mkdir -p /usr/local/apache/password

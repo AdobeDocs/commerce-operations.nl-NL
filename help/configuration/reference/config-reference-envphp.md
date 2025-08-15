@@ -146,7 +146,7 @@ Commerce gebruikt een coderingssleutel om wachtwoorden en andere vertrouwelijke 
 ]
 ```
 
-Leer meer over [ Sleutel van de Encryptie ](https://experienceleague.adobe.com/nl/docs/commerce-admin/systems/security/encryption-key) in de _gids van de Gebruiker van Commerce_.
+Leer meer over [ Sleutel van de Encryptie ](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/security/encryption-key) in de _gids van de Gebruiker van Commerce_.
 
 ## db
 
@@ -203,7 +203,7 @@ Een lijst met downloadbare domeinen beschikbaar in dit knooppunt. De extra domei
 ]
 ```
 
-Leer meer over [ Downloadbare Domeinen ](https://experienceleague.adobe.com/nl/docs/commerce-operations/tools/cli-reference/commerce-on-premises#downloadabledomainsadd).
+Leer meer over [ Downloadbare Domeinen ](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/cli-reference/commerce-on-premises#downloadabledomainsadd).
 
 ## installeren
 

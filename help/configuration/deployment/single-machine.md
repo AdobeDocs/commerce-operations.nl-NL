@@ -22,7 +22,7 @@ Dit onderwerp verstrekt instructies voor het opstellen van updates aan Commerce 
 >[!WARNING]
 >
 >Deze handleiding is niet van toepassing als u Commerce hebt geïnstalleerd met `git clone` .
->De bijdragende ontwikkelaars zouden [ deze gids ][install] moeten gebruiken om hun installatie van Commerce bij te werken.
+>>De bijdragende ontwikkelaars zouden [ deze gids ][install] moeten gebruiken om hun installatie van Commerce bij te werken.
 
 ## Implementatiestappen
 

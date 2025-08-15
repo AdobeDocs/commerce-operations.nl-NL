@@ -18,7 +18,7 @@ Dit onderwerp schetst beste praktijken voor het onderzoeken van en het optimalis
 
 >[!NOTE]
 >
->Recommendations en voorbeelden zijn geïnspireerd door processen die de objectsource volgt in real-world clientcontracten om geavanceerde Adobe Commerce-sites op schaal te leveren.
+>Aanbevelingen en voorbeelden zijn geïnspireerd op processen die objectsource volgt in real-world clientcontracten om hoogwaardige Adobe Commerce-sites op schaal te leveren.
 
 ## Betrokken producten en versies
 
@@ -39,9 +39,9 @@ U kunt GTmetrix gebruiken voor stresstests. Bereidheid van de plaats van de pagi
 
 Meer informatie over het voorbereiden van Commerce-projecten voor hoge-verkeersperiodes:
 
-- [ Readiness van de Vakantie ](https://experienceleague.adobe.com/docs/events/commerce-intelligence-webinar-recordings/2021/holiday-readiness.html?lang=nl-NL)
-- [ het Vakantiemaken Analyse van de Vakantie ](https://experienceleague.adobe.com/docs/commerce-business-intelligence/mbi/analyze/performance/holiday-season-perf.html?lang=nl-NL)
-- {de Verhoging van de Capaciteit van de 0} Opbouw [&#128279;](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/announcements/commerce-announcements/2021-holiday-surge-capacity-requests-for-magento-commerce-cloud.html?lang=nl-NL)
+- [ Readiness van de Vakantie ](https://experienceleague.adobe.com/docs/events/commerce-intelligence-webinar-recordings/2021/holiday-readiness.html)
+- [ het Vakantiemaken Analyse van de Vakantie ](https://experienceleague.adobe.com/docs/commerce-business-intelligence/mbi/analyze/performance/holiday-season-perf.html)
+- {de Verhoging van de Capaciteit van de 0} Opbouw [](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/announcements/commerce-announcements/2021-holiday-surge-capacity-requests-for-magento-commerce-cloud.html)
 
 ### Laden testen
 
@@ -51,12 +51,12 @@ Gebruik GTmetrix om zwaar verkeer te simuleren en plaatsprestaties te analyseren
 
 Meer informatie over het testen van Adobe Commerce-projecten:
 
-- [ het Testen begeleiding ](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/test/guidance.html?lang=nl-NL) (wolkeninfrastructuur)
+- [ het Testen begeleiding ](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/test/guidance.html) (wolkeninfrastructuur)
 - [ het testen van de Toepassing ](https://developer.adobe.com/commerce/testing/guide/)
 
 ### Prestatieproblemen identificeren en oplossen
 
-Prestatieproblemen aanpakken met behulp van verschillende tools zoals New Relic en Observation voor Adobe Commerce om knelpunten op te sporen en Commerce-sites effectief te optimaliseren. [ New Relic ](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/monitor/new-relic/new-relic-service.html?lang=nl-NL) is inbegrepen met Adobe Commerce op wolkeninfrastructuur, en [ de Waarneming voor Adobe Commerce ](/help/tools/observation-for-adobe-commerce/intro.md) is inbegrepen voor zowel wolk als op-gebouw plaatsingen.
+Prestatieproblemen aanpakken met behulp van verschillende tools zoals New Relic en Observation voor Adobe Commerce om knelpunten op te sporen en Commerce-sites effectief te optimaliseren. [ New Relic ](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/monitor/new-relic/new-relic-service.html) is inbegrepen met Adobe Commerce op wolkeninfrastructuur, en [ de Waarneming voor Adobe Commerce ](/help/tools/observation-for-adobe-commerce/intro.md) is inbegrepen voor zowel wolk als op-gebouw plaatsingen.
 
 Gebruik deze gereedschappen om de prestaties van de site te analyseren en prestatieproblemen op te sporen met betrekking tot:
 
@@ -69,7 +69,7 @@ U kunt bijvoorbeeld transacties nauwkeurig onderzoeken waarbij de nadruk ligt op
 
 Meer informatie over het beheren van de siteprestaties:
 
-- [ Controle van Prestaties ](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/monitor/performance.html?lang=nl-NL) (wolkeninfrastructuur)
+- [ Controle van Prestaties ](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/monitor/performance.html) (wolkeninfrastructuur)
 - [Best practices voor configuratie](/help/performance/configuration.md)
 - [Waarneming voor Adobe Commerce](/help/tools/observation-for-adobe-commerce/intro.md)
 
@@ -81,7 +81,7 @@ Het richten van MySQL prestatieskwesties door gegevensbestand het groeperen en v
 
 Websites met veel verkeer hebben vaak te maken met knelpunten in databases, voornamelijk veroorzaakt door het vertrouwen op één MySQL-server. U kunt deze knelpunten aanpakken door gegevensbestand het groeperen uit te voeren, een verdeelde architectuur die prestaties verbetert en hoge beschikbaarheid verzekert.
 
-Het groeperen van het gegevensbestand minimaliseert het effect van op gegevensbestand betrekking hebbende kwesties tijdens piekverkeersperioden door veelvoudige Webknopen toe te laten om met veelvoudige servers te verbinden MySQL. Gebruik gereedschappen zoals Galera Cluster om databaseclusters voor Commerce-sites in te stellen. De Cluster van Galera is inbegrepen met [ projecten van Adobe Commerce die op wolkeninfrastructuur ](https://experienceleague.adobe.com/nl/docs/commerce-cloud-service/user-guide/architecture/pro-architecture) worden opgesteld.
+Het groeperen van het gegevensbestand minimaliseert het effect van op gegevensbestand betrekking hebbende kwesties tijdens piekverkeersperioden door veelvoudige Webknopen toe te laten om met veelvoudige servers te verbinden MySQL. Gebruik gereedschappen zoals Galera Cluster om databaseclusters voor Commerce-sites in te stellen. De Cluster van Galera is inbegrepen met [ projecten van Adobe Commerce die op wolkeninfrastructuur ](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/architecture/pro-architecture) worden opgesteld.
 
 #### MySQL-query&#39;s optimaliseren
 
@@ -93,10 +93,10 @@ Om MySQL serverprestaties te optimaliseren en knelpunten te minimaliseren, is he
 
 Meer informatie over het configureren en optimaliseren van MySQL:
 
-- [ Beste praktijken voor gegevensbestandconfiguratie ](https://experienceleague.adobe.com/docs/commerce-operations/implementation-playbook/best-practices/planning/database-on-cloud.html?lang=nl-NL)
-- [ Trage replicatie voor de replicatie van DB Galera ](https://experienceleague.adobe.com/docs/commerce-learn/tutorials/backend-development/galera-db-slow-replication.html?lang=nl-NL)
+- [ Beste praktijken voor gegevensbestandconfiguratie ](https://experienceleague.adobe.com/docs/commerce-operations/implementation-playbook/best-practices/planning/database-on-cloud.html)
+- [ Trage replicatie voor de replicatie van DB Galera ](https://experienceleague.adobe.com/docs/commerce-learn/tutorials/backend-development/galera-db-slow-replication.html)
 - [Algemene MySQL-richtlijnen](/help/installation/prerequisites/database/mysql.md)
-- [ MySQL vraag caching ](https://experienceleague.adobe.com/docs/commerce-learn/tutorials/backend-development/mysql-query-cache.html?lang=nl-NL)
+- [ MySQL vraag caching ](https://experienceleague.adobe.com/docs/commerce-learn/tutorials/backend-development/mysql-query-cache.html)
 
 ## Snijtaken effectief beheren: prestaties en timing
 
@@ -110,7 +110,7 @@ U kunt ook Observatie voor Adobe Commerce gebruiken om aan elkaar gerelateerde p
 
 Meer informatie over Adobe Commerce Cron-implementatie:
 
-- [ Gewas (geplande taken) ](https://experienceleague.adobe.com/docs/commerce-admin/systems/tools/cron.html?lang=nl-NL) in de _Gids van de Gebruiker van de Systemen van Commerce Admin_
-- [ de configuratie van de Toepassing - het bezit van bakens ](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure/app/properties/crons-property.html?lang=nl-NL) (wolkeninfrastructuur)
-- [ vormt en stelt kronnen ](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure/app/properties/crons-property.html?lang=nl-NL) (op gebouw) in werking
-- [ Waarneming voor Adobe Commerce ](https://experienceleague.adobe.com/docs/commerce-operations/tools/observation-for-adobe-commerce/intro.html?lang=nl-NL) (Zie [!UICONTROL Cron] en [!UICONTROL MySQL] lusjes.)
+- [ Gewas (geplande taken) ](https://experienceleague.adobe.com/docs/commerce-admin/systems/tools/cron.html) in de _Gids van de Gebruiker van de Systemen van Commerce Admin_
+- [ de configuratie van de Toepassing - het bezit van bakens ](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure/app/properties/crons-property.html) (wolkeninfrastructuur)
+- [ vormt en stelt kronnen ](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure/app/properties/crons-property.html) (op gebouw) in werking
+- [ Waarneming voor Adobe Commerce ](https://experienceleague.adobe.com/docs/commerce-operations/tools/observation-for-adobe-commerce/intro.html) (Zie [!UICONTROL Cron] en [!UICONTROL MySQL] lusjes.)

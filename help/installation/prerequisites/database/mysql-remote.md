@@ -13,7 +13,7 @@ ht-degree: 0%
 
 Soms wilt u de database op een aparte server hosten in plaats van de databaseserver en de webserver op dezelfde computer uit te voeren.
 
-Adobe biedt een manier om verbinding te maken met een MySQL-server op een andere computer. Vanaf Adobe Commerce 2.4.3 kunt u de toepassing ook zodanig configureren dat deze een Amazon Web Services (AWS) Aurora-database zonder codewijzigingen gebruikt.
+Adobe heeft een manier geboden om verbinding te maken met een MySQL-server op een andere computer. Vanaf Adobe Commerce 2.4.3 kunt u de toepassing ook zodanig configureren dat deze een Amazon Web Services (AWS) Aurora-database zonder codewijzigingen gebruikt.
 
 Aurora is een krachtige, volledig compatibele MySQL-server die op AWS wordt gehost.
 
@@ -48,7 +48,7 @@ Voordat u begint, moet u:
 Gebruik de volgende richtlijnen om externe databaseverbindingen te configureren als uw webserver of databaseserver geclusterd is:
 
 * U moet een verbinding voor elke knoop van de Webserver vormen.
-* Typisch, vormt u een gegevensbestandverbinding aan het taakverdelingsmechanisme van het gegevensbestand; nochtans, kan het gegevensbestand zich groeperen complex zijn en het vormen is aan u. De Adobe doet geen specifieke aanbevelingen voor gegevensbestand zich groeperen.
+* Typisch, vormt u een gegevensbestandverbinding aan het taakverdelingsmechanisme van het gegevensbestand; nochtans, kan het gegevensbestand zich groeperen complex zijn en het vormen is aan u. Adobe doet geen specifieke aanbevelingen voor database-clustering.
 
   Voor meer informatie, zie [ documentatie MySQL ](https://dev.mysql.com/doc/refman/5.6/en/mysql-cluster.html).
 
@@ -156,7 +156,7 @@ Als uw webserver is geclusterd, voert u de opdracht in op elke host van de webse
 Wanneer u Adobe Commerce installeert, moet u het volgende opgeven:
 
 * De basis URL (die ook als *wordt bedoeld opslagadres*) specificeert hostname of IP adres van de *Webknoop*
-* De gastheer van het gegevensbestand is het *IP van de 0&rbrace; verre gegevensbestandserver &lbrace;adres (of ladingsverdelingsmechanisme als de gegevensbestandserver gegroepeerd is)*
+* De gastheer van het gegevensbestand is het *IP van de 0} verre gegevensbestandserver {adres (of ladingsverdelingsmechanisme als de gegevensbestandserver gegroepeerd is)*
 * De gebruikersbenaming van het gegevensbestand is de *lokale knoop van het Web* gegevensbestandgebruiker waaraan u toegang gaf
 * Databasewachtwoord is het wachtwoord van de gebruiker van het lokale webknooppunt
 * Databasenaam is de naam van de database op de externe server

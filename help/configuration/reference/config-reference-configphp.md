@@ -124,6 +124,6 @@ Leer meer over [ Thema&#39;s ].
 
 <!-- link definitions -->
 
-[Modules]: https://experienceleague.adobe.com/docs/commerce-learn/tutorials/backend-development/create-module.html?lang=nl-NL
-[scopes]: https://experienceleague.adobe.com/docs/commerce-admin/start/setup/websites-stores-views.html?lang=nl-NL#scope-settings
+[Modules]: https://experienceleague.adobe.com/docs/commerce-learn/tutorials/backend-development/create-module.html
+[scopes]: https://experienceleague.adobe.com/docs/commerce-admin/start/setup/websites-stores-views.html#scope-settings
 [Thema&#39;s]: https://developer.adobe.com/commerce/frontend-core/guide/themes/create-storefront/

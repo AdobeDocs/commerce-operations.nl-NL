@@ -25,7 +25,7 @@ ht-degree: 0%
    - Databaseserver {#database-server}
       - [MySQL](prerequisites/database/mysql.md)
       - [Externe verbindingen](prerequisites/database/mysql-remote.md)
-   - Zoekprogramma {#search-engine}
+   - Zoekmachine {#search-engine}
       - [Overzicht](prerequisites/search-engine/overview.md)
       - [AWS OpenSearch](prerequisites/search-engine/aws-opensearch.md)
       - [Nginx configureren](prerequisites/search-engine/configure-nginx.md)
@@ -38,7 +38,7 @@ ht-degree: 0%
    - [Optionele software](prerequisites/optional-software.md)
 - [Snelstartinstallatie](composer.md)
 - [Geavanceerde installatie](advanced.md)
-- Post-installatiestappen {#next-steps}
+- Stappen na de installatie {#next-steps}
    - [De installatie controleren](next-steps/verify.md)
    - [De toepassing configureren](next-steps/configuration.md)
    - [Een masker instellen (optioneel)](next-steps/set-umask.md)
@@ -67,4 +67,4 @@ ht-degree: 0%
    - [Commerce verwijderen of opnieuw installeren](tutorials/uninstall.md)
    - [Thema&#39;s verwijderen](tutorials/themes.md)
    - [Het databaseschema bijwerken](tutorials/database-upgrade.md)
-- [ Terugkeer aan Operationele Gidsen ](https://experienceleague.adobe.com/docs/commerce-operations/operational-guides/home.html?lang=nl-NL)
+- [ Terugkeer aan Operationele Gidsen ](https://experienceleague.adobe.com/docs/commerce-operations/operational-guides/home.html)

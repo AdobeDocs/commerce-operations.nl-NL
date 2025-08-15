@@ -13,7 +13,7 @@ ht-degree: 0%
 
 In dit onderwerp wordt een algemene aanbevolen installatie voor Adobe Commerce-instanties beschreven met behulp van gewone servers die fysiek worden gehost in een datacenter (niet gevirtualiseerd) waarin bronnen niet met andere gebruikers worden gedeeld. Uw hostingprovider, met name als deze gespecialiseerd is in het hosten van hoge Commerce-prestaties, raadt mogelijk een andere instelling aan die even of effectiever is voor uw vereisten.
 
-Voor Adobe Commerce op de milieu&#39;s van de wolkeninfrastructuur, zie [ de architectuur van de Aanzet ](https://experienceleague.adobe.com/nl/docs/commerce-cloud-service/user-guide/architecture/starter-architecture).
+Voor Adobe Commerce op de milieu&#39;s van de wolkeninfrastructuur, zie [ de architectuur van de Aanzet ](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/architecture/starter-architecture).
 
 ## [!DNL Commerce] Referentie-architectuurdiagram
 
@@ -21,7 +21,7 @@ Het [!DNL Commerce] diagram Referentiearchitectuur vertegenwoordigt de aanbevole
 
 De kleur van elk element in het diagram geeft aan of het element deel uitmaakt van Magento Open Source of Adobe Commerce en of dit vereist is.
 
-* Oranje elementen zijn vereist voor Magento Open Source
+* Voor Magento Open Source zijn oranje elementen vereist
 * Grijswaarden zijn optioneel voor Magento Open Source
 * Blauwe elementen zijn optioneel voor Adobe Commerce
 

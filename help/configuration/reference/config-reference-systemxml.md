@@ -6,7 +6,7 @@ badge: label="Bijdrage van David Lambauer" type="Informative" url="https://githu
 exl-id: a6c5de6c-e8da-4eca-bbfb-592904b2c53f
 source-git-commit: e231a27d70e29b01c872b0655168e31f590d4876
 workflow-type: tm+mt
-source-wordcount: '2708'
+source-wordcount: '2709'
 ht-degree: 0%
 
 ---
@@ -110,7 +110,7 @@ Een `<section>` -tag kan de volgende onderliggende elementen hebben:
 | Knooppunt | Beschrijving | Type |
 |------------------|-----------------------------------------------------------------------------------------------------------------------|---------------------|
 | `label` | Definieert het label dat in de voorzijde wordt weergegeven. | `string` |
-| `class` | Voegt een gedefinieerde CSS-klasse toe aan het HTML-element van de gerenderde sectie. | `string` |
+| `class` | Voegt een gedefinieerde CSS-klasse toe aan het gerenderde HTML-element van de sectie. | `string` |
 | `tab` | Verwijst naar het bijbehorende tabblad. Hiermee wordt de id van het tabblad verwacht. | `typeTabId` |
 | `header_css` | Op het moment van schrijven is deze functie niet gebruikt en niet geëvalueerd. | `string` |
 | `resource` | Verwijst naar een ACL middel om toestemmingsmontages voor deze sectie te verstrekken. | `typeAclResourceId` |
@@ -248,8 +248,8 @@ Een `<field>` -tag kan de volgende waarden voor het `type=""` -kenmerk hebben:
 | `select` | Bij een normale vervolgkeuzelijst is mogelijk een aangepaste `source_model` vereist. Wordt ook gebruikt voor `Yes/No` selecties. Zie `Magento\Search\Model\Adminhtml\System\Config\Source\Engine` voor een voorbeeld. |
 | `multiselect` | Net als `select` maar meerdere opties zijn geldig. |
 | `button` | Een knop die een directe gebeurtenis activeert. Vereist een aangepast front-end model om de knoptekst en de handeling te definiëren. Zie `Magento\ScheduledImportExport\Block\Adminhtml\System\Config\Clean` voor een voorbeeld. |
-| `obscure` | Een tekstveld met de waarde gecodeerd en weergegeven als `**&#x200B;**` . Als u de tekst wijzigt met &quot;Inspect Element&quot; in de browser, wordt de waarde niet weergegeven. |
-| `password` | Net als bij `obscure` wordt de verborgen waarde niet gecodeerd en wordt de waarde zichtbaar wanneer u het type met &quot;Inspect Element&quot; in de browser geforceerd wijzigt. |
+| `obscure` | Een tekstveld met de waarde gecodeerd en weergegeven als `****` . Als u de tekst wijzigt met &#39;Element controleren&#39; in de browser, wordt de waarde niet weergegeven. |
+| `password` | Net als bij `obscure` wordt de verborgen waarde niet gecodeerd en wordt de waarde zichtbaar wanneer u het type met &#39;Inspect Element&#39; in de browser forceert wijzigt. |
 | `file` | Hiermee kan een bestand worden geüpload voor verwerking. |
 | `label` | Hiermee geeft u een label weer in plaats van een bewerkbaar veld. Gebruik dit type wanneer een veld alleen binnen een bepaald bereik kan worden bewerkt, bijvoorbeeld alleen in de weergave Winkel. |
 | `time` | Controle om tijd te plaatsen gebruikend drie dropdowns-Uur, minuut en seconde. |
@@ -282,7 +282,7 @@ Een `<field>` -tag kan de volgende onderliggende elementen hebben:
 | `comment` | Voegt een opmerking toe onder het veldlabel. Met `<![CDATA[//]]>` kunt u HTML toepassen. | `string` |
 | `tooltip` | Een ander mogelijk frontend element dat kan worden gebruikt om de betekenis van dit gebied te beschrijven. Wordt weergegeven als een klein pictogram naast het veld. | `string` |
 | `hint` | Geeft aanvullende informatie weer. Alleen beschikbaar bij specifieke `frontend_model` . | `string` |
-| `frontend_class` | Voegt een gedefinieerde CSS-klasse toe aan het HTML-element van de gerenderde sectie. | `string` |
+| `frontend_class` | Voegt een gedefinieerde CSS-klasse toe aan het gerenderde HTML-element van de sectie. | `string` |
 | `frontend_model` | Geeft een ander frontend model op om de rendering te wijzigen en de uitvoer te wijzigen. | `typeModel` |
 | `backend_model` | Specificeert een verschillend achterste model om de gevormde waarden te wijzigen. | `typeModel` |
 | `source_model` | Geeft een ander bronmodel op dat een specifieke reeks waarden biedt. | `typeModel` |
@@ -392,8 +392,8 @@ De volgende validatieregels zijn beschikbaar:
 | `phoneUK` | Staat een (VK) telefoonaantal toe. |
 | `phoneUS` | Hiermee wordt een (Amerikaans) telefoonnummer toegestaan. |
 | `required-entry` | Hiermee wordt een lege waarde uitgeschakeld (equivalente validatie als `validate-no-empty` ).<br> de mislukkingsbericht van de Bevestiging: &quot;Dit is een vereist gebied.&quot; |
-| `time` | Hiermee wordt een geldige tijd in 24-uursnotatie toegestaan, tussen 00:00 en 23:59. Bijvoorbeeld `15` , `15:05` of `15:05:48` . |
-| `time12h` | Staat een geldige tijd in 12 uurformaat, tussen 12:00 am en 11 :59: toe 59 pm. Bijvoorbeeld `3 am` , `11:30 pm` , `02:15:00 pm` . |
+| `time` | Staat een geldige tijd in 24-uurformaat, tussen 00 :00 en 23 :59 toe. Bijvoorbeeld `15` , `15:05` of `15:05:48` . |
+| `time12h` | Staat een geldige tijd in formaat van 12 uur, tussen 12 :00 am en 11 :59: toe 59 pm. Bijvoorbeeld `3 am` , `11:30 pm` , `02:15:00 pm` . |
 | `validate-admin-password` | Hiermee staat u 7 of meer tekens toe, zowel numeriek als alfabetisch. |
 | `validate-alphanum-with-spaces` | Hiermee wordt het gebruik van letters (a-z of A-Z), getallen (0-9) of alleen spaties toegestaan. |
 | `validate-clean-url` | Hiermee wordt een geldige URL toegestaan. Bijvoorbeeld `https://www.example.com` of `www.example.com` . |

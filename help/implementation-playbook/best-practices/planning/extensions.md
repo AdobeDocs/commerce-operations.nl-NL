@@ -16,7 +16,7 @@ ht-degree: 0%
 Adobe Commerce-extensies (modules) van derden kunnen verschillende problemen veroorzaken die de prestaties van de winkel negatief kunnen beïnvloeden. U kunt deze problemen voorkomen door de volgende aanbevolen procedures te volgen:
 
 - Ontwikkel uw integratie en aanpassingen van Commerce gebruikend [ uit-van-proces rekbaarheid ](https://developer.adobe.com/commerce/extensibility/) waar mogelijk om onderhoud en upgradability te verlichten.
-- De download en koopt derdeuitbreidingen van een vertrouwde op bron, als de [ Commerce Marketplace ](https://marketplace.magento.com/extensions.html).
+- De download en koopt derdextensies van een vertrouwde op bron, als [ Commerce Marketplace ](https://marketplace.magento.com/extensions.html).
 - Werk alle extensies van derden bij naar de meest recente versie.
 - Als u extensies van derden niet kunt bijwerken, kunt u wellicht verschillende extensies gebruiken.
 - Wanneer u een upgrade naar een nieuwe versie van Adobe Commerce wilt uitvoeren, controleert u of de geïnstalleerde extensies van derden compatibel zijn met de nieuwe versie. Voer desgewenst een upgrade uit van de extensies.
@@ -36,5 +36,5 @@ Adobe Commerce-extensies (modules) van derden kunnen verschillende problemen ver
 
 - [Aanbevolen procedures voor het plannen van upgrades](../../../upgrade/prepare/best-practices.md)
 - Extensies van derden gebruiken met Adobe Commerce op cloudinfrastructuur
-   - [ Technologieën en vereisten - Ontwikkeling en het testen ](https://experienceleague.adobe.com/nl/docs/commerce-cloud-service/user-guide/develop/overview#cloud-req-devtest)
-   - [ waarom test volledig in Integratie en het Opvoeren?](https://experienceleague.adobe.com/nl/docs/commerce-cloud-service/user-guide/launch/overview#why-test-fully-in-integration-staging-and-production)
+   - [ Technologieën en vereisten - Ontwikkeling en het testen ](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/develop/overview#cloud-req-devtest)
+   - [ waarom test volledig in Integratie en het Opvoeren?](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/launch/overview#why-test-fully-in-integration-staging-and-production)

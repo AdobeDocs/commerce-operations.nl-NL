@@ -22,8 +22,8 @@ Nadat u de systeemvereisten hebt gecontroleerd, moet u aan de volgende voorwaard
 * Controleren of uitsnijdtaken worden uitgevoerd
 * Instellen `DATA_CONVERTER_BATCH_SIZE`
 * Controleren op bestandssysteemmachtigingen
-* De `pub/` hoofdmap instellen
-* Installeer de Composer update plugin
+* De hoofdmap van de map `pub/` instellen
+* De plug-in Composer-update installeren
 
 ## Alle software bijwerken
 
@@ -33,9 +33,9 @@ Zorg ervoor dat u alle systeemvereisten en afhankelijkheden in uw omgeving hebt 
 
 >[!NOTE]
 >
->Voor Adobe Commerce op de Pro projecten van de wolkeninfrastructuur, moet u a [&#128279;](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html?lang=nl-NL#submit-ticket) kaartje van de Steun {creëren 0} om de diensten in het Opvoeren en van de Productie milieu&#39;s te installeren of bij te werken.  Geef aan welke servicewijzigingen nodig zijn en neem de bijgewerkte `.magento.app.yaml` - en `services.yaml` -bestanden en PHP-versie op in het ticket. Het kan tot 48 uur duren voordat het infrastructuurteam van de cloud uw project kan bijwerken. Zie [ Ondersteunde software en de diensten ](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/architecture/cloud-architecture.html?lang=nl-NL#supported-software-and-services).
+>Voor Adobe Commerce op de Pro projecten van de wolkeninfrastructuur, moet u a [ kaartje van de Steun {creëren 0} om de diensten in het Opvoeren en van de Productie milieu&#39;s te installeren of bij te werken. ](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html#submit-ticket) Geef aan welke servicewijzigingen nodig zijn en neem de bijgewerkte `.magento.app.yaml` - en `services.yaml` -bestanden en PHP-versie op in het ticket. Het kan tot 48 uur duren voordat het infrastructuurteam van de cloud uw project kan bijwerken. Zie [ Ondersteunde software en de diensten ](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/architecture/cloud-architecture.html#supported-software-and-services).
 
-## Controleer of een ondersteunde zoekmachine is geïnstalleerd
+## Controleren of een ondersteund zoekprogramma is geïnstalleerd
 
 Adobe Commerce vereist dat Elasticsearch of OpenSearch is geïnstalleerd om de software te kunnen gebruiken.
 
@@ -45,11 +45,11 @@ Adobe Commerce vereist dat Elasticsearch of OpenSearch is geïnstalleerd om de s
 
 U kunt de opdrachtregel of de beheerder gebruiken om de zoekengine voor de catalogus te bepalen:
 
-* Voer de `bin/magento config:show catalog/search/engine` opdracht in. De opdracht retourneert een waarde van `mysql`, `elasticsearch` (die aangeeft dat Elasticsearch 2 is geconfigureerd), `elasticsearch5`, `elasticsearch6`, `elasticsearch7`of een aangepaste waarde, die aangeeft dat u een zoekmachine van derden hebt geïnstalleerd. Voor versies ouder dan 2.4.6 gebruikt u de `elasticsearch7` waarde voor de Elasticsearch 7- of OpenSearch-engine. Gebruik voor versie 2.4.6 en hoger de `opensearch` waarde voor de OpenSearch-engine.
+* Voer de opdracht `bin/magento config:show catalog/search/engine` in. De opdracht retourneert de waarde `mysql`, `elasticsearch` (wat aangeeft dat Elasticsearch 2 is geconfigureerd), `elasticsearch5`, `elasticsearch6`, `elasticsearch7` of een aangepaste waarde, wat aangeeft dat u een zoekprogramma van derden hebt geïnstalleerd. Voor versies ouder dan 2.4.6 gebruikt u de `elasticsearch7` -waarde voor de Elasticsearch 7- of OpenSearch-engine. Voor versie 2.4.6 en hoger gebruikt u de `opensearch` -waarde voor de OpenSearch-engine.
 
-* Controleer in de beheerder de waarde van het **[!UICONTROL Stores]** > [!UICONTROL Settings] > **[!UICONTROL Configuration]** > **[!UICONTROL Catalog]** > **[!UICONTROL Catalog]** > **[!UICONTROL Catalog Search]** > **[!UICONTROL Search Engine]** veld.
+* Controleer in Beheer de waarde van het veld **[!UICONTROL Stores]** > [!UICONTROL Settings] > **[!UICONTROL Configuration]** > **[!UICONTROL Catalog]** > **[!UICONTROL Catalog]** > **[!UICONTROL Catalog Search]** > **[!UICONTROL Search Engine]** .
 
-In de volgende secties wordt beschreven welke acties u moet ondernemen voordat u een upgrade naar 2.4.0 uitvoert.
+In de volgende secties wordt beschreven welke handelingen u moet uitvoeren voordat u de upgrade naar 2.4.0 uitvoert.
 
 ### MySQL
 
@@ -69,11 +69,11 @@ Deze sectie beschrijft belangrijke veranderingen in MySQL 8.4 dat de ontwikkelaa
 
 #### Vervangen niet-standaardsleutel
 
-Het gebruik van niet-unieke of gedeeltelijke sleutels als refererende sleutels is niet-standaard en wordt afgeschaft in MySQL 8.4. Vanaf MySQL 8.4.0 moet u dergelijke sleutels expliciet inschakelen door deze in te stellen [`restrict_fk_on_non_standard_key`](https://dev.mysql.com/doc/refman/8.4/en/server-system-variables.html#sysvar_restrict_fk_on_non_standard_key) op `OFF`, of door de server te starten met de `--skip-restrict-fk-on-non-standard-key` optie.
+Het gebruik van niet-unieke of gedeeltelijke sleutels als buitenlandse sleutels is niet-standaard en is afgekeurd in MySQL 8.4. Vanaf MySQL 8.4.0 moet u deze toetsen expliciet inschakelen door [`restrict_fk_on_non_standard_key` ](https://dev.mysql.com/doc/refman/8.4/en/server-system-variables.html#sysvar_restrict_fk_on_non_standard_key) in te stellen op `OFF` of door de server te starten met de optie `--skip-restrict-fk-on-non-standard-key` .
 
-#### Upgraden van MySQL 8.0 (of oudere versies) naar MySQL 8.4
+#### Een upgrade uitvoeren van MySQL 8.0 (of oudere versies) naar MySQL 8.4
 
-Om MySQL correct te upgraden van versie 8.0 naar versie 8.4, moet u de volgende stappen volgen:
+Als u MySQL van versie 8.0 naar versie 8.4 wilt bijwerken, moet u de volgende stappen uitvoeren:
 
 1. Onderhoudsmodus inschakelen:
 
@@ -81,7 +81,7 @@ Om MySQL correct te upgraden van versie 8.0 naar versie 8.4, moet u de volgende 
    bin/magento maintenance:enable
    ```
 
-1. Maak een back-up van de database:
+1. Maak een databaseback-up:
 
    ```bash
    bin/magento setup:backup --db
@@ -99,7 +99,7 @@ Om MySQL correct te upgraden van versie 8.0 naar versie 8.4, moet u de volgende 
    >
    >Als u de waarde van `restrict_fk_on_non_standard_key` niet wijzigt in `OFF` , treedt de volgende fout op tijdens het importeren:
    >
-   >```sql
+   ```sql
    > ERROR 6125 (HY000) at line 2164: Failed to add the foreign key constraint. Missing unique key for constraint 'CAT_PRD_FRONTEND_ACTION_PRD_ID_CAT_PRD_ENTT_ENTT_ID' in the referenced table 'catalog_product_entity'
    >```
 1. Start de MySQL-server opnieuw.
@@ -152,7 +152,7 @@ Elasticsearch 8.x werd in Adobe Commerce 2.4.6 ondersteund. De volgende instruct
 >
 >In de aanstaande versie 2.4.8, zullen deze stappen niet noodzakelijk zijn omdat Elasticsearch 8 module door gebrek inbegrepen is en u zult niet het moeten afzonderlijk installeren.
 
-1. Upgrade de Elasticsearch 7.x server naar 8.x en zorg ervoor dat deze actief is. Zie de [ documentatie van Elasticsearch ](https://www.elastic.co/guide/en/elasticsearch/reference/current/install-elasticsearch.html).
+1. Voer een upgrade uit van de Elasticsearch 7.x-server naar 8.x en zorg ervoor dat deze actief is. Zie de [ documentatie van Elasticsearch ](https://www.elastic.co/guide/en/elasticsearch/reference/current/install-elasticsearch.html).
 
 1. Schakel het veld `id_field_data` in door de volgende configuratie aan uw `elasticsearch.yml` -bestand toe te voegen en de Elasticsearch 8.x-service opnieuw te starten.
 
@@ -200,7 +200,7 @@ Elasticsearch 8.x werd in Adobe Commerce 2.4.6 ondersteund. De volgende instruct
    bin/magento setup:upgrade
    ```
 
-1. [Configureer Elasticsearch](../../configuration/search/configure-search-engine.md#configure-your-search-engine-from-the-admin) in de [!DNL Admin].
+1. [ vorm Elasticsearch ](../../configuration/search/configure-search-engine.md#configure-your-search-engine-from-the-admin) in [!DNL Admin].
 
 1. Indexeer de catalogusindex opnieuw.
 
@@ -252,13 +252,13 @@ We raden u aan contact op te nemen met uw leverancier van zoekprogramma&#39;s om
 
 ## Database-tabelindeling converteren
 
-U moet de indeling van alle databasetabellen omzetten van `COMPACT` in `DYNAMIC` . U moet ook het type opslagengine omzetten van `MyISAM` in `InnoDB` . Bekijk [best practices](../../implementation-playbook/best-practices/maintenance/mariadb-upgrade.md).
+U moet de indeling van alle databasetabellen omzetten van `COMPACT` in `DYNAMIC` . U moet ook het type opslagengine omzetten van `MyISAM` in `InnoDB` . Zie [ beste praktijken ](../../implementation-playbook/best-practices/maintenance/mariadb-upgrade.md).
 
-## De limiet voor geopende bestanden instellen
+## Limiet voor geopende bestanden instellen
 
-Door de limiet voor open bestanden (ulimit) in te stellen, kunt u voorkomen dat er fouten optreden door meerdere recursieve aanroepen van lange queryreeksen of problemen met het gebruik van de `bin/magento setup:rollback` opdracht. Dit commando is verschillend voor verschillende UNIX-shells. Raadpleeg uw individuele smaak voor meer informatie over het `ulimit` commando.
+Door de limiet voor geopende bestanden in te stellen (ulimit), kan worden voorkomen dat meerdere recursieve aanroepen van lange querytekenreeksen mislukken of dat er problemen optreden met de opdracht `bin/magento setup:rollback` . Deze opdracht is anders voor verschillende UNIX-schelpen. Raadpleeg uw eigen smaak voor details over het `ulimit` bevel.
 
-Adobe raadt aan om de geopende bestanden [u-limit](https://ss64.com/bash/ulimit.html) in te stellen op een waarde van `65536` of meer, maar u kunt indien nodig een grotere waarde gebruiken. U kunt de ulimit instellen op de opdrachtregel of u kunt er een permanente instelling van maken voor de shell van de gebruiker.
+Adobe adviseert plaatsend de open dossiers [ grens ](https://ss64.com/bash/ulimit.html) aan een waarde van `65536` of meer, maar u kunt een grotere waarde indien nodig gebruiken. U kunt de limiet instellen op de opdrachtregel of u kunt deze instellen als een permanente instelling voor de shell van de gebruiker.
 
 U stelt de limiet in vanaf de opdrachtregel:
 
@@ -358,7 +358,7 @@ De omgevingsvariabele instellen:
 
 Om veiligheidsredenen vereist Adobe Commerce bepaalde machtigingen voor het bestandssysteem. De toestemmingen zijn verschillend van _[eigendom](../../upgrade/prepare/prerequisites.md#verify-file-system-permissions)_. Eigendom bepaalt wie handelingen op het bestandssysteem kan uitvoeren; machtigingen bepalen wat de gebruiker kan doen.
 
-De folders in het dossiersysteem moeten door de [&#128279;](../../installation/prerequisites/file-system/overview.md) groep van de eigenaar van het 0&rbrace; dossiersysteem kunnen worden geschreven.
+De folders in het dossiersysteem moeten door de [ groep van de eigenaar van het 0} dossiersysteem kunnen worden geschreven.](../../installation/prerequisites/file-system/overview.md)
 
 Om te controleren of de machtigingen voor het bestandssysteem correct zijn ingesteld, meldt u zich aan bij de toepassingsserver of gebruikt u de toepassing van het bestandsbeheer van de hostingprovider.
 
@@ -419,7 +419,7 @@ ls -la /var/www/html/magento2/pub
 
 Omdat Adobe Commerce statische bestandselementen naar submappen van `pub` implementeert, is het een goed idee om ook daar machtigingen en eigendom te controleren.
 
-Voor meer informatie, zie {de systeemtoestemmingen en eigendom van het 0} Dossier [&#128279;](../../installation/prerequisites/file-system/overview.md).
+Voor meer informatie, zie {de systeemtoestemmingen en eigendom van het 0} Dossier [.](../../installation/prerequisites/file-system/overview.md)
 
 ## De hoofdmap van de map `pub/` instellen
 

@@ -15,7 +15,7 @@ ht-degree: 0%
 Voordat u deze opdracht kunt gebruiken, moet u het volgende doen:
 
 - [De implementatieconfiguratie maken](deployment.md)
-- [Laat minstens Magento_Authorization en Magento_User modules toe](manage-modules.md)
+- [Minimaal de Magento_Authorization- en Magento_User-modules inschakelen](manage-modules.md)
 - Het databaseschema maken
 
 >[!NOTE]

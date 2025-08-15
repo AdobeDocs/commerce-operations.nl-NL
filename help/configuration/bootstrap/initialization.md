@@ -19,7 +19,7 @@ Om de toepassing van Commerce in werking te stellen, worden de volgende acties u
 - Creeer een de toepassingsinstantie van Commerce: [ \Magento\Framework\AppInterface][app-face]
 - Commerce uitvoeren
 
-## Bootstrap run logic
+## Bootstrap-logica
 
 [ het bootstrap voorwerp ][bootinitial] gebruikt het volgende algoritme om de toepassing van Commerce in werking te stellen:
 

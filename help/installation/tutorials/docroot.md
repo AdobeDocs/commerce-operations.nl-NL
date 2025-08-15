@@ -62,7 +62,7 @@ Als u deze zelfstudie wilt voltooien, hebt u toegang nodig tot een werkende inst
 >
 >Verwijs naar [ Eerste vereisten ](../prerequisites/overview.md) en de [ Gids van de Installatie ](../overview.md) voor meer informatie.
 
-## 1. De serverconfiguratie bewerken
+## &#x200B;1. De serverconfiguratie bewerken
 
 De naam en locatie van het virtuele hostbestand zijn afhankelijk van de versie van Apache die u uitvoert. In dit voorbeeld worden de naam en locatie van het virtuele hostbestand op Apache v2.4 weergegeven.
 
@@ -96,7 +96,7 @@ De naam en locatie van het virtuele hostbestand zijn afhankelijk van de versie v
    systemctl restart apache2
    ```
 
-## 2. Werk uw basis-URL bij
+## &#x200B;2. Werk uw basis-URL bij
 
 Als u een mapnaam aan de hostnaam of het IP-adres van de server hebt toegevoegd om de basis-URL te maken wanneer u de toepassing hebt geïnstalleerd (bijvoorbeeld `http://192.168.33.10/magento2` ), moet u deze verwijderen.
 
@@ -122,7 +122,7 @@ Als u een mapnaam aan de hostnaam of het IP-adres van de server hebt toegevoegd 
    UPDATE core_config_data SET value='http://192.168.33.10' WHERE path='web/unsecure/base_url';
    ```
 
-## 3. Werk het bestand env.php bij
+## &#x200B;3. Werk het bestand env.php bij
 
 Voeg het volgende knooppunt toe aan het `env.php` -bestand.
 
@@ -132,9 +132,9 @@ Voeg het volgende knooppunt toe aan het `env.php` -bestand.
 ]
 ```
 
-Verwijs naar de {[&#128279;](../../configuration/reference/config-reference-envphp.md) verwijzing 0} env.php voor meer informatie.
+Verwijs naar de {[ verwijzing 0} env.php voor meer informatie.](../../configuration/reference/config-reference-envphp.md)
 
-## 4. Overschakelmodi
+## &#x200B;4. Overschakelmodi
 
 [ de wijzen van de Toepassing ](../../configuration/bootstrap/application-modes.md), die `production` en `developer` omvatten, worden ontworpen om veiligheid te verbeteren en ontwikkeling gemakkelijker te maken. Zoals de namen suggereren, moet u overschakelen op de modus `developer` wanneer u de toepassing uitbreidt of aanpast en overschakelen op de modus `production` wanneer u in een live omgeving werkt.
 
@@ -164,7 +164,7 @@ Het schakelen tussen wijzen is een belangrijke stap om te verifiëren dat uw ser
 
 1. Vernieuw de browser en controleer of de winkel goed wordt weergegeven.
 
-## 5. Controleer de opslagplaats
+## &#x200B;5. Controleer de opslagplaats
 
 Ga naar de winkel in webbrowser om te controleren of alles werkt.
 

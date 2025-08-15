@@ -13,7 +13,7 @@ ht-degree: 0%
 
 U hebt toegang tot het dashboard van [!DNL Site-Wide Analysis Tool] via het [!UICONTROL Admin Panel] -bestand van uw winkel.
 
-De [!DNL Site-Wide Analysis Tool] dienst is beschikbaar op [ productiemodus ](https://experienceleague.adobe.com/nl/docs/commerce-admin/systems/tools/developer-tools#operation-modes) voor [!UICONTROL Admin] gebruikers met toestemming om tot gebruiker [ rolmiddelen ](https://experienceleague.adobe.com/nl/docs/commerce-admin/systems/user-accounts/permissions-user-roles) toegang te hebben.
+De [!DNL Site-Wide Analysis Tool] dienst is beschikbaar op [ productiemodus ](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/tools/developer-tools#operation-modes) voor [!UICONTROL Admin] gebruikers met toestemming om tot gebruiker [ rolmiddelen ](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/user-accounts/permissions-user-roles) toegang te hebben.
 
 >[!NOTE]
 >
@@ -26,13 +26,13 @@ De [!DNL Site-Wide Analysis Tool] dienst is beschikbaar op [ productiemodus ](ht
 >[!NOTE]
 >
 >Uw account moet het recht hebben op **[!DNL Support Permissions]** om toegang te krijgen tot [!DNL Site-Wide Analysis Tool Dashboard] .
->Zie meer details in [ Deel a  [!DNL Commerce]  rekening ](https://experienceleague.adobe.com/docs/commerce-admin/start/commerce-account/commerce-account-share.html?lang=nl-NL) in onze gebruikersgids.
+>>Zie meer details in [ Deel a  [!DNL Commerce]  rekening ](https://experienceleague.adobe.com/docs/commerce-admin/start/commerce-account/commerce-account-share.html) in onze gebruikersgids.
 
 ## Aanmelden bij [!DNL Site-Wide Analysis Tool Dashboard] vanuit de winkel [!UICONTROL Admin Panel]
 
 ### Stap 1: Machtigingen verifiëren
 
-Verifieer dat de [!UICONTROL Admin] gebruikersrekening toestemming heeft om tot [!DNL Site-Wide Analysis Tool] door hun [ toegewezen gebruikersrol ](https://experienceleague.adobe.com/nl/docs/commerce-admin/systems/user-accounts/permissions-user-roles) toegang te hebben.
+Verifieer dat de [!UICONTROL Admin] gebruikersrekening toestemming heeft om tot [!DNL Site-Wide Analysis Tool] door hun [ toegewezen gebruikersrol ](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/user-accounts/permissions-user-roles) toegang te hebben.
 
 >[!IMPORTANT]
 >
@@ -51,7 +51,7 @@ Ga als volgt te werk voor de aangepaste rol die [!DNL Site-Wide Analysis Tool] t
 
 >[!NOTE]
 >
->Als u hebt gecontroleerd dat de gebruikersaccount toestemming heeft om toegang te krijgen tot [!DNL Site-Wide Analysis Tool] en de gebruiker een fout van 403 ontvangt wanneer deze probeert toegang te krijgen tot het hulpprogramma vanuit [!UICONTROL Admin] , kan het zijn dat in uw Adobe Commerce-instantie in de cloudinfrastructuur HTTP-toegangsbeheer is ingeschakeld. Het dashboard van [!DNL Site-Wide Analysis Tool] wordt NIET ondersteund als u HTTP Auth hebt ingeschakeld. Voor meer informatie over het oplossen van deze kwestie, zie ons [ artikel van de Steun ](https://experienceleague.adobe.com/nl/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/403-errors-when-accessing-site-wide-analysis-tool-on-magento).
+>Als u hebt gecontroleerd dat de gebruikersaccount toestemming heeft om toegang te krijgen tot [!DNL Site-Wide Analysis Tool] en de gebruiker een fout van 403 ontvangt wanneer deze probeert toegang te krijgen tot het hulpprogramma vanuit [!UICONTROL Admin] , kan het zijn dat in uw Adobe Commerce-instantie in de cloudinfrastructuur HTTP-toegangsbeheer is ingeschakeld. Het dashboard van [!DNL Site-Wide Analysis Tool] wordt NIET ondersteund als u HTTP Auth hebt ingeschakeld. Voor meer informatie over het oplossen van deze kwestie, zie ons [ artikel van de Steun ](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/403-errors-when-accessing-site-wide-analysis-tool-on-magento).
 
 ### Stap 2: Toegang [!DNL Site-Wide Analysis Tool]
 
@@ -85,7 +85,7 @@ Ga als volgt te werk voor de aangepaste rol die [!DNL Site-Wide Analysis Tool] t
 | --- | --- |
 | Dashboard | Toont de gezondheid van uw systeem met huidige berichten en aanbevelingen door prioriteit. |
 | Informatie | Verstrekt de informatie van het klantencontact en een samenvatting van huidige kaartjes, met gedetailleerde informatie over elk geïnstalleerd product van Adobe Commerce. |
-| Recommendations | Hier worden aanbevelingen weergegeven op basis van best practices voor het oplossen van problemen die op uw site zijn aangetroffen. |
+| Aanbevelingen | Hier worden aanbevelingen weergegeven op basis van best practices voor het oplossen van problemen die op uw site zijn aangetroffen. |
 | Uitzonderingen | Hiermee worden fouten weergegeven die door de toepassing worden gegenereerd als gevolg van abnormale omstandigheden zonder een fouthandler. |
 | Extensies | Hier worden alle extensies van derden en bibliotheken van derden weergegeven. |
 

@@ -15,7 +15,7 @@ Je bent een van de 240.000 kooplieden wereldwijd die vertrouwen hebben in onze s
 
 ## De software ophalen
 
-Controleer de beschikbaarheid van opwindende nieuwe eigenschappen en versies en leer hoe u hen op onze [ pagina van de productbeschikbaarheid ](https://experienceleague.adobe.com/nl/docs/commerce-operations/release/product-availability) kunt krijgen.
+Controleer de beschikbaarheid van opwindende nieuwe eigenschappen en versies en leer hoe u hen op onze [ pagina van de productbeschikbaarheid ](https://experienceleague.adobe.com/en/docs/commerce-operations/release/product-availability) kunt krijgen.
 
 Raadpleeg de volgende tabel om aan de slag te gaan met de installatie van Adobe Commerce.
 
@@ -39,7 +39,7 @@ Raadpleeg de volgende tabel om aan de slag te gaan met de installatie van Adobe 
     </tr>
     <tr>
         <td><p>Medewerkende ontwikkelaar</p></td>
-        <td><p>Hiermee wordt een bijdrage geleverd aan de codebase van de Magento Open Source, fouten in bestanden en wordt de toepassing aangepast. Zeer technisch, heeft hun eigen ontwikkelingsserver, begrijpt Composer en GitHub.</p>
+        <td><p>Hiermee wordt een bijdrage geleverd aan de Magento Open Source-codebase, fouten in bestanden en wordt de toepassing aangepast. Zeer technisch, heeft hun eigen ontwikkelingsserver, begrijpt Composer en GitHub.</p>
             <p>U <em> kunt niet </em> de toepassing in een productiemilieu gebruiken.</p>
       <p>U moet bevorderen gebruikend <a href="../../upgrade/developer/git-installs.md"> Composer en de bevelen van het Git </a>.</p></td>
         <td><ol><li>Klonen de bewaarplaats GitHub.</li>

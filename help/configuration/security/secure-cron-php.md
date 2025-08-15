@@ -161,7 +161,7 @@ Commerce beschikt over een geoptimaliseerd voorbeeld-nginx-configuratiebestand u
    }
    ```
 
-1. Start de engine opnieuw:
+&#x200B;1. Start de engine opnieuw:
 
 ```bash
 systemctl restart nginx

@@ -24,7 +24,7 @@ Het frame **[!UICONTROL PHP active process details]** toont de PHP-processen, in
 
 ![ PHP proceslading ](../../assets/tools/php-process-load.jpg)
 
-Het frame **[!UICONTROL PHP process load (# of PHP processes and % of CPU load)]** toont de CPU-belasting van PHP-FPM-processen in de geselecteerde tijdsperiode.
+Het **[!UICONTROL PHP process load (# of PHP processes and % of CPU load)]** -frame toont de CPU load van PHP-FPM processen over de geselecteerde tijdsperiode.
 
 ## [!UICONTROL PHP Memory detail]
 
@@ -34,9 +34,9 @@ In het frame **[!UICONTROL PHP Memory detail]** wordt het geheugengebruik van PH
 
 ## [!UICONTROL PHP CPU Utilization]
 
-![ PHP het Gebruik van cpu ](../../assets/tools/php-cpu-utilization.jpg)
+![ PHP CPU Utilization ](../../assets/tools/php-cpu-utilization.jpg)
 
-In het frame **[!UICONTROL PHP CPU Utilization]** wordt het CPU-procentuele gebruik van PHP-processen in de geselecteerde tijdsperiode weergegeven.
+In het **[!UICONTROL PHP CPU Utilization]** frame wordt het CPU-percentage weergegeven van het gebruik van PHP processen gedurende de geselecteerde tijdsperiode.
 
 ## [!UICONTROL PHP Process states]
 

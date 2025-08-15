@@ -1,5 +1,5 @@
 ---
-title: Hardware Recommendations
+title: Hardwareaanbevelingen
 description: Bekijk een lijst met aanbevolen hardware voor optimale prestaties van Adobe Commerce-implementaties.
 feature: Best Practices, Install
 exl-id: ab548c4b-6f56-4409-a4ed-5c959939e04b
@@ -14,7 +14,7 @@ ht-degree: 0%
 
 ## CPU&#39;s
 
-[!DNL Commerce] -webknooppunten dienen voor alle aanvragen die niet in de cache zijn opgeslagen of die niet in de cache kunnen worden opgeslagen via de toepassing. Eén CPU-core kan twee (soms wel vier) [!DNL Commerce] -verzoeken effectief verwerken. Gebruik de volgende vergelijking om te bepalen hoeveel Webknopen/cores u alle inkomende verzoeken moet verwerken zonder hen in rij te zetten:
+[!DNL Commerce] -webknooppunten dienen voor alle aanvragen die niet in de cache zijn opgeslagen of die niet in de cache kunnen worden opgeslagen via de toepassing. Eén CPU-core kan op effectieve wijze ongeveer twee (soms wel vier) [!DNL Commerce] -aanvragen verwerken. Gebruik de volgende vergelijking om te bepalen hoeveel Webknopen/cores u alle inkomende verzoeken moet verwerken zonder hen in rij te zetten:
 
 ```
 N[Cores] = (N[Expected Requests] / 2) + N [Expected Cron Processes]
@@ -26,7 +26,7 @@ Als u verwacht dat de lading van een opslag verandert, kunt u het aantal Webknop
 
 ### PHP
 
-Magento heeft verschillende PHP geheugenvereisten, gebaseerd op hoe uw systeem wordt opgesteld.  Over het algemeen raden we u aan PHP-geheugen voor 2G te configureren als u één serverwinkel instelt.  Als u een site instelt met behulp van pijpleidingimplementatie, raden we u aan 2 GB aan te houden op uw buildserver en 1 GB aan te schaffen op uw webknooppunten.
+Magento heeft verschillende PHP-geheugenvereisten, afhankelijk van hoe uw systeem wordt geïmplementeerd.  Over het algemeen raden we u aan PHP-geheugen voor 2G te configureren als u één serverwinkel instelt.  Als u een site instelt met behulp van pijpleidingimplementatie, raden we u aan 2 GB aan te houden op uw buildserver en 1 GB aan te schaffen op uw webknooppunten.
 
 Scenario&#39;s en verwachte PHP-geheugenvereisten:
 

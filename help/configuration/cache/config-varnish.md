@@ -90,7 +90,7 @@ We kennen de volgende kwesties met Varnish:
 
 Varnish caching werkt met Commerce met behulp van:
 
-- [`nginx.conf.sample` ](https://github.com/magento/magento2/blob/2.4/nginx.conf.sample) van Magento 2 de bewaarplaats van GitHub
+- [`nginx.conf.sample` ](https://github.com/magento/magento2/blob/2.4/nginx.conf.sample) uit de Magento 2 GitHub-opslagplaats
 - `.htaccess` gedistribueerd configuratiebestand voor Apache dat bij Commerce wordt geleverd
 - `default.vcl` configuratie voor Varnish produceerde gebruikend [ Admin ](../cache/configure-varnish-commerce.md)
 

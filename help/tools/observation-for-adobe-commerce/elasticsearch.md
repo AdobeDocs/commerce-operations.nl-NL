@@ -38,49 +38,49 @@ In het frame **[!UICONTROL Active Shards in Cluster]** wordt het totale aantal p
 
 ## [!UICONTROL Index health - this will show the index name and color status]
 
-![&#128279;](../../assets/tools/index-health.jpg) gezondheid van 0&rbrace; Index
+![ gezondheid van 0} Index](../../assets/tools/index-health.jpg)
 
 In dit frame worden de naam van de index en het aantal statussen van de indexkleur weergegeven. Als u de tabel omlaag schuift, ziet u dezelfde indexnaam met de kleurstatus Geel en Rood. Het getal dat volgt op de 27 indexnaam is het getal van de statuskleur. Als de waarde nul is, waren er geen gevallen waarin de index zich in die kleurstatus bevond tijdens de geselecteerde tijdframes.
 
 ## [!UICONTROL Elasticsearch Status by node information]
 
-![ Status van de Elasticsearch ](../../assets/tools/elasticsearch-status-by-node.jpg)
+![ Status van Elasticsearch ](../../assets/tools/elasticsearch-status-by-node.jpg)
 
 In het frame **[!UICONTROL Elasticsearch Status by node information]** wordt de clusterstatus van [!DNL Elasticsearch] weergegeven op kleur en knooppunt. Op deze manier kunt u aangeven welk knooppunt in de [!DNL Elasticsearch] -cluster de status retourneert tijdens de geselecteerde tijdsperiode.
 
 ## [!UICONTROL Elasticsearch index information]
 
-![ de indexinformatie van de Elasticsearch ](../../assets/tools/elasticsearch-tab-elasticsearch-index-information-image-1.jpg)
+![ de indexinformatie van Elasticsearch ](../../assets/tools/elasticsearch-tab-elasticsearch-index-information-image-1.jpg)
 
 In de tabel **[!UICONTROL Elasticsearch index information]** worden de indexnaam, het knooppunt waarop de tabel staat, het aantal geïndexeerde documenten, de indexstatus en de indexgrootte op een bepaald moment in MB weergegeven.
 
 ## [!UICONTROL Elasticsearch process CPU %]
 
-![ het procescpu van de Elasticsearch ](../../assets/tools/elasticsearch-process-cpu.jpg)
+![ Elasticsearch proces CPU ](../../assets/tools/elasticsearch-process-cpu.jpg)
 
-Het **[!UICONTROL Elasticsearch process CPU %]** -frame toont het CPU-percentage van het proces volgens het [!DNL Elasticsearch] -proces gedurende het geselecteerde tijdframe.
+In het frame **[!UICONTROL Elasticsearch process CPU %]** wordt het CPU-procespercentage weergegeven volgens het [!DNL Elasticsearch] -proces gedurende de geselecteerde tijdlijn.
 
 ## [!UICONTROL Elasticsearch Memory garbage collection]
 
-![ garbage van het Geheugen van de Elasticsearch ](../../assets/tools/elasticsearch-memory-garbage.jpg)
+![ het huisvuil van het Geheugen van Elasticsearch ](../../assets/tools/elasticsearch-memory-garbage.jpg)
 
 [!DNL Elasticsearch] is een Java-proces. Als het op toegewezen geheugen laag loopt, zal het huisvuilinzameling in werking stellen om geheugen vrij te maken. Als de huisvuilinzameling frequent is, is het een aanwijzing dat er teveel indexen of schepen voor het toegewezen geheugen kunnen zijn. Het kan zijn dat u de indices en kaarten kunt opschonen, of [!DNL Elasticsearch] heeft meer geheugen nodig.
 
 ## [!UICONTROL Elasticsearch Index information]
 
-![ de Informatie van de Index van de Elasticsearch ](../../assets/tools/elasticsearch-index-information-2.jpg)
+![ de Informatie van de Index van Elasticsearch ](../../assets/tools/elasticsearch-index-information-2.jpg)
 
 Wanneer indexen worden gemaakt en bijgewerkt, kan de indexstatus veranderen.
 
 ## [!UICONTROL Elasticsearch Index Size]
 
-{de grootte van de Index van 0} Elasticsearch ![&#128279;](../../assets/tools/elasticsearch-index-size.jpg)
+![ de grootte van de Index van Elasticsearch ](../../assets/tools/elasticsearch-index-size.jpg)
 
 Het frame **[!UICONTROL Elasticsearch Index Size]** geeft de naam en de grootte van de index voor het geselecteerde tijdframe aan. Het kan problemen met de manier aangeven waarop een site wordt geïndexeerd.
 
 ## [!UICONTROL Elasticsearch Errors]
 
-{de Fouten van de Elasticsearch 0} ![&#128279;](../../assets/tools/elasticsearch-tab-elasticsearch-errors.jpg)
+![ de Fouten van Elasticsearch ](../../assets/tools/elasticsearch-tab-elasticsearch-errors.jpg)
 
 Het frame **[!UICONTROL Elasticsearch Errors]** bevat fouten met [!DNL Elasticsearch] zoals onvoldoende ruimte, overschakelen van de status Geel naar Rood, wanneer alle soorten zijn mislukt, wanneer er parameterproblemen zijn met zoekopdrachten, versiefouten en wanneer alle knooppunten niet beschikbaar zijn.
 

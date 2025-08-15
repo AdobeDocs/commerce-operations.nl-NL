@@ -16,7 +16,7 @@ Logs verstrekken zicht in systeemprocessen; bijvoorbeeld, het zuiveren informati
 
 Dit onderwerp concentreert zich op dossier-gebaseerd registreren, hoewel Commerce de flexibiliteit verstrekt om logboeken in het gegevensbestand eveneens op te slaan.
 
-Adobe raadt u aan om gecentraliseerde toepassingsregistratie te gebruiken om de volgende redenen:
+Adobe raadt u aan om gecentraliseerde registratie van toepassingen te gebruiken om de volgende redenen:
 
 - Hierdoor kunnen logbestanden worden opgeslagen op een andere server dan de toepassingsserver en worden I/O-bewerkingen op de schijf verminderd, waardoor de ondersteuning van de toepassingsserver wordt vereenvoudigd.
 
@@ -24,7 +24,7 @@ Adobe raadt u aan om gecentraliseerde toepassingsregistratie te gebruiken om de 
 
   >[!INFO]
   >
-  >De Adobe adviseert of steunt geen bepaalde registrerenoplossing.
+  >Adobe adviseert of onderschrijft geen bepaalde registrerenoplossing.
 
 ## Compatibiliteit met PSR-3
 

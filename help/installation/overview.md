@@ -4,8 +4,8 @@ description: Leer meer over het installatieproces voor een Adobe Commerce-uitrol
 exl-id: a9f5b241-d05d-462c-8c7f-479a264c988f
 source-git-commit: 7cc77a204d2a3c0773e6a0ab60e57e6e35f12091
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '329'
+ht-degree: 3%
 
 ---
 
@@ -20,7 +20,7 @@ U kunt de Adobe Commerce-software in ongeveer 30 tot 60 minuten installeren. De 
 >
 >U zou tussenliggende technische kennis en servertoegang moeten hebben om met succes te werk te gaan.
 
-De installatie leidt tot een volledig functionele opslag van Adobe Commerce met zowel a [ klant-onder ogen ziet storefront ](https://experienceleague.adobe.com/nl/docs/commerce-admin/start/storefront/storefront) als een [ administratief paneel ](https://experienceleague.adobe.com/nl/docs/commerce-admin/start/admin/admin). U moet uw gegevensbestandgeloofsbrieven, domeininformatie, en authentificatietoetsen klaar hebben alvorens met het proces te beginnen.
+De installatie leidt tot een volledig functionele opslag van Adobe Commerce met zowel a [ klant-onder ogen ziet storefront ](https://experienceleague.adobe.com/en/docs/commerce-admin/start/storefront/storefront) als een [ administratief paneel ](https://experienceleague.adobe.com/en/docs/commerce-admin/start/admin/admin). U moet uw gegevensbestandgeloofsbrieven, domeininformatie, en authentificatietoetsen klaar hebben alvorens met het proces te beginnen.
 
 ## Workflow
 

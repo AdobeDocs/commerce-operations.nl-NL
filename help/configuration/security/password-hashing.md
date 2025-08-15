@@ -32,7 +32,7 @@ Het eerste deel vertegenwoordigt de wachtwoordhash. De tweede, `8qnyO4H1OYIfGCUb
 
 Bedenk hoe het mechanisme van de hakupgrade eruitziet. Stel dat er oorspronkelijk een wachtwoord was opgeslagen met `MD5` en dat het algoritme vervolgens meerdere keren werd bijgewerkt met Argon 2ID13. Het volgende diagram toont de stroom van de knoeiboelverbetering.
 
-![ de verbeteringswerkschema van de Hash &lbrace;](../../assets/configuration/hash-upgrade-algorithm.png)
+![ de verbeteringswerkschema van de Hash {](../../assets/configuration/hash-upgrade-algorithm.png)
 
 Elk knoeiboelalgoritme gebruikt het vorige wachtwoordknoeiboel om een nieuwe knoeiboel te produceren. Commerce slaat het oorspronkelijke, onbewerkte wachtwoord niet op.
 
@@ -61,4 +61,4 @@ Aangezien Commerce alle gebruikte versies van wachtwoordhashes samen met de wach
 
 ## Implementatie
 
-De `\Magento\Framework\Encryption\Encryptor` -klasse is verantwoordelijk voor het genereren en verifiëren van wachtwoordhash. Het [`bin/magento customer:hash:upgrade` ](https://experienceleague.adobe.com/nl/docs/commerce-operations/tools/cli-reference/commerce-on-premises#customerhashupgrade) bevel bevordert een knoeiboel van het klantenwachtwoord aan het recentste knoeiboelalgoritme.
+De `\Magento\Framework\Encryption\Encryptor` -klasse is verantwoordelijk voor het genereren en verifiëren van wachtwoordhash. Het [`bin/magento customer:hash:upgrade` ](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/cli-reference/commerce-on-premises#customerhashupgrade) bevel bevordert een knoeiboel van het klantenwachtwoord aan het recentste knoeiboelalgoritme.

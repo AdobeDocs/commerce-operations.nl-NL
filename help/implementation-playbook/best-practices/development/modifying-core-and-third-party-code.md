@@ -104,7 +104,7 @@ Voorkeuren zijn een vloeiende manier om code te wijzigen en moeten alleen worden
 
 ### Waarnemer
 
-Een waarnemer is het concept van een gebeurtenisluisteraar, zoals die in vele toepassingen, platforms, bibliotheken, en coderingstalen wordt gevonden. Het concept is niet uniek voor het Adobe Commerce-platform. Waarnemers zijn sinds de dagen van Magento 1 op het platform geborgen en worden beschouwd als een primaire keuze voor het wijzigen van de kerncode en code van derden. 
+Een waarnemer is het concept van een gebeurtenisluisteraar, zoals die in vele toepassingen, platforms, bibliotheken, en coderingstalen wordt gevonden. Het concept is niet uniek voor het Adobe Commerce-platform. Waarnemers zijn sinds de dagen van Magento 1 op het platform aangesloten en worden beschouwd als een primaire keuze voor het wijzigen van de kerncode en code van derden. 
 
 De kerncodebase en alle modules van derden kunnen een gebeurtenis verzenden op een gekozen plaats in de code. De waarnemer, die wordt gedeclareerd in een `events.xml` -bestand en luistert naar de verzonden gebeurtenis op naam, kan op globaal niveau werken of worden beperkt tot elk Adobe Commerce-&quot;gebied&quot;, zoals `frontend` , `adminhtml` , `graphql` , `webapi_rest` en `crontab` .
 

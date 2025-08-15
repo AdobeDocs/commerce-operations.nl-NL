@@ -25,7 +25,7 @@ ht-degree: 0%
    * 1,8 x
    * 1,9,x
 
-Als u van Magento Open Source aan Adobe Commerce migreert, worden de volgende versies gesteund:
+Als u van Magento Open Source naar Adobe Commerce migreert, worden de volgende versies ondersteund:
 
 * 1,6 x
 * 1,7 x
@@ -34,4 +34,4 @@ Als u van Magento Open Source aan Adobe Commerce migreert, worden de volgende ve
 
 ## Migratie naar versie
 
-Om over gesteunde versies (te leren u aan) migreert, zie de [ pagina van de Versie van 0&rbrace; ](https://github.com/magento/data-migration-tool/releases).[!DNL Data Migration Tool]
+Om over gesteunde versies (te leren u aan) migreert, zie de [!DNL Data Migration Tool] pagina van de Versie van 0} [.](https://github.com/magento/data-migration-tool/releases)

@@ -19,7 +19,7 @@ Wanneer het ontwerpen van uw lay-out, gebruik flexibele formaten om de producten
 Bij mobiele apparaten en tablets verschilt het oppervlak van boven de vouw sterk, vooral wat betreft de grootte en afmetingen van het scherm en de oriëntatie bij weergave (staand versus liggend).
 Door responsieve thema&#39;s en tests te gebruiken, kunt u de juiste combinatie van inhoud en lay-out vinden.
 
-_attributen van de Term:_
+_Term-kenmerken :_
 
 * _Gebied: ontwerp_
 
@@ -31,7 +31,7 @@ Een actieve tak of een milieu is die met een opgesteld of lopende instantie met 
 Wanneer u deactiveert, wordt de verbinding met de services en met de actieve instantie verwijderd, maar blijft de code behouden.
 Het wordt een gewone git tak.
 
-_attributen van de Term:_
+_Term-kenmerken :_
 
 * _Gebied: wolk_
 
@@ -42,7 +42,7 @@ _noun_
 Een klasse die het mogelijk maakt dat twee anders incompatibele systemen samenwerken zonder de broncode van het systeem te wijzigen.
 Voorbeelden zijn databaseadapters, cacheadapters, bestandssysteemadapters, adapters voor postprocessorbibliotheken en andere typen gegevensverwerkingsadapters.
 
-_attributen van de Term:_
+_Term-kenmerken :_
 
 * _Gebied: programmering_
 
@@ -54,9 +54,9 @@ In software, een gebruikersrol met volledige beheerdervoorrechten om alle functi
 In Adobe Commerce hebben beheergebruikers volledige machtigingen en toegang tot alle functies, opties en mogelijkheden in Admin.
 Ze kunnen ook gebruikers en rollen maken.
 
-Leer meer: [ Toevoegend Gebruikers ](https://experienceleague.adobe.com/docs/commerce-admin/systems/user-accounts/permissions-users-all.html?lang=nl-NL)
+Leer meer: [ Toevoegend Gebruikers ](https://experienceleague.adobe.com/docs/commerce-admin/systems/user-accounts/permissions-users-all.html)
 
-_attributen van de Term:_
+_Term-kenmerken :_
 
 * _Gebied: handelsoftware_
 * _Synoniemen: beheerder, super gebruiker_
@@ -70,9 +70,9 @@ Het met een wachtwoord beveiligde back-office van uw winkel waar bestellingen, c
 Gebruikers krijgen toegang tot het beheergebied van de winkel, waaronder producten, bestellingen, verzendingen, CMS-inhoud, ontwerp van de winkel, klantgegevens, enzovoort.
 Beheerdergebruikers hebben een bijbehorende rol met machtigingen die de toegang tot functies, opties en mogelijkheden bepalen.
 
-Leer meer: [ Gids van de Gebruiker van Adobe Commerce ](https://experienceleague.adobe.com/docs/commerce-admin/user-guides/home.html?lang=nl-NL)
+Leer meer: [ Gids van de Gebruiker van Adobe Commerce ](https://experienceleague.adobe.com/docs/commerce-admin/user-guides/home.html)
 
-_attributen van de Term:_
+_Term-kenmerken :_
 
 * _Gebied: handelsoftware_
 * _Synoniemen: Admin, Comité Admin, achterste, Interface van het Beleid, Admin UI_
@@ -84,9 +84,9 @@ _noun_
 
 ADMIN variabelen zijn de variabelen van het projectmilieu om de configuratiemontages voor de Admin gebruikersrekening met voeten te treden om tot Admin UI toegang te hebben.
 
-Leer meer: [ variabelen ADMIN ](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure/env/stage/variables-admin.html?lang=nl-NL)
+Leer meer: [ variabelen ADMIN ](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure/env/stage/variables-admin.html)
 
-_attributen van de Term:_
+_Term-kenmerken :_
 
 * _Gebied: admin, wolk_
 
@@ -96,9 +96,9 @@ _noun_
 
 De naam van het interne gebied die aan de beheerder is toegewezen.
 
-Leer meer: [ Gids van de Gebruiker van Adobe Commerce ](https://experienceleague.adobe.com/docs/commerce-admin/user-guides/home.html?lang=nl-NL)
+Leer meer: [ Gids van de Gebruiker van Adobe Commerce ](https://experienceleague.adobe.com/docs/commerce-admin/user-guides/home.html)
 
-_attributen van de Term:_
+_Term-kenmerken :_
 
 * _Gebied: handelsoftware_
 * _Verwante termijnen: gebied, handeladmin_
@@ -107,7 +107,7 @@ _attributen van de Term:_
 
 _noun_
 
-Het gebied is een abstracte termijn voor een werkingsgebied van de toepassing van het Magento.
+Gebied is een abstracte term voor een Magento-toepassingsbereik.
 Gebieden zijn logische componenten die code ordenen voor geoptimaliseerde aanvraagverwerking.
 Gebieden verminderen de geheugeneisen van configuratievoorwerpen die van de storefront worden betreden, en zij stroomlijnen de vraag van de Webdienst door slechts de vereiste afhankelijke code te laden.
 Elk gebied kan volledig verschillende code bevatten om URLs en verzoeken te verwerken.
@@ -118,7 +118,7 @@ Adobe Commerce-gebieden zijn:
 * Storefront
 * Web API REST (webapi_rest)
 
-_attributen van de Term:_
+_Term-kenmerken :_
 
 * _Gebied: handelsoftware_
 * _Verwante termijnen: commerciële component, opslag_
@@ -134,11 +134,11 @@ Voorbeelden: kleur, grootte, gewicht, prijs, leeftijd, geslacht, enzovoort.
 
 Aangepaste kenmerken zijn een type kenmerk Entiteit-Attribute-Value (EAV).
 
-Voor integratie zoals Google Shopping-advertenties Channel en Amazon-Sales Channel wijst u Commerce-kenmerken toe aan kenmerken in de externe toepassing om producten correct weer te geven en te verkopen, advertenties weer te geven.
+Voor integratie zoals Google Shopping-advertenties Channel en Amazon Sales Channel, wijst u Commerce-kenmerken toe aan kenmerken in de externe toepassing om producten correct weer te geven en te verkopen, advertenties weer te geven.
 
 Leer meer: [ EAV en extension_attributes ](https://developer.adobe.com/commerce/php/development/components/attributes/)
 
-_attributen van de Term:_
+_Term-kenmerken :_
 
 * _Gebied: handelssoftware, product_
 * _Synoniemen: productattribuut, douaneattribuut_
@@ -150,7 +150,7 @@ _noun_
 
 Een logische groepering van kenmerken binnen een kenmerkset.
 
-_attributen van de Term:_
+_Term-kenmerken :_
 
 * _Gebied: handelsoftware_
 * _Verwante termijnen: attribuut_
@@ -162,7 +162,7 @@ _noun_
 Een verzameling kenmerkgroepen, aangepast voor een specifiek product.
 Voorbeeld: een kenmerkset voor T-shirts kan kleur, grootte, geslacht en merk bevatten.
 
-_attributen van de Term:_
+_Term-kenmerken :_
 
 * _Gebied: handelssoftware, product_
 * _Verwante termijnen: attribuut_
@@ -174,7 +174,7 @@ _noun_
 Productprijs, minus coupons, of kortingen, plus vracht en toepasselijke belastingen.
 Het gemiddelde wordt bepaald door optelling van de beginkosten van elke maand, plus de eindkosten van de voorraad voor de laatste maand van de periode.
 
-_attributen van de Term:_
+_Term-kenmerken :_
 
 * _Gebied: product, tarifering, inventaris_
 
@@ -190,9 +190,9 @@ De winkelvoorzijde biedt een valutaselectie voor meerdere geaccepteerde valuta&#
 Valutasymbolen worden weergegeven in productprijzen en verkoopdocumenten zoals orders en facturen.
 U kunt de valutasymbolen naar wens aanpassen en de prijsweergave voor elke winkel of weergave afzonderlijk instellen.
 
-Leer meer: [ Valuta ](https://experienceleague.adobe.com/docs/commerce-admin/stores-sales/site-store/currency/currency.html?lang=nl-NL)
+Leer meer: [ Valuta ](https://experienceleague.adobe.com/docs/commerce-admin/stores-sales/site-store/currency/currency.html)
 
-_attributen van de Term:_
+_Term-kenmerken :_
 
 * _Gebied: tarifering_
 
@@ -202,7 +202,7 @@ _noun_
 
 Een taak uitvoeren of meerdere items tegelijk wijzigen, zonder handmatige herhaling.
 
-_attributen van de Term:_
+_Term-kenmerken :_
 
 * _Gebied: programmering_
 * _Synoniemen: bulkverrichtingen_
@@ -212,15 +212,15 @@ _attributen van de Term:_
 _noun_
 
 Een eenheid van paginaoutput die wat kenmerkende inhoud - een stuk van informatie, een gebruikersinterface element - om het even wat visueel voor de eindgebruiker teruggeeft.
-[ Blokken ](https://experienceleague.adobe.com/docs/commerce-admin/content-design/elements/blocks/blocks.html?lang=nl-NL) worden uitgevoerd en door modules verstrekt.
+[ Blokken ](https://experienceleague.adobe.com/docs/commerce-admin/content-design/elements/blocks/blocks.html) worden uitgevoerd en door modules verstrekt.
 Blokken gebruiken sjablonen om HTML te genereren.
 Voorbeelden van blokken zijn een categorielijst, een minikaart, productcodes en een lijst met producten.
 
-[ de Dynamische blokken ](https://experienceleague.adobe.com/docs/commerce-admin/content-design/elements/dynamic-blocks/dynamic-blocks.html?lang=nl-NL) verstrekken inhoud die op logica, zoals prijsregels wordt gebaseerd.
+[ de Dynamische blokken ](https://experienceleague.adobe.com/docs/commerce-admin/content-design/elements/dynamic-blocks/dynamic-blocks.html) verstrekken inhoud die op logica, zoals prijsregels wordt gebaseerd.
 
-De Bouwer van de pagina breidt zich op interactivity en verwezenlijking van [ blokken ](https://experienceleague.adobe.com/docs/commerce-admin/page-builder/add-content/block.html?lang=nl-NL) en [ dynamische blokken ](https://experienceleague.adobe.com/docs/commerce-admin/page-builder/add-content/dynamic-block.html?lang=nl-NL) uit.
+De Bouwer van de pagina breidt zich op interactivity en verwezenlijking van [ blokken ](https://experienceleague.adobe.com/docs/commerce-admin/page-builder/add-content/block.html) en [ dynamische blokken ](https://experienceleague.adobe.com/docs/commerce-admin/page-builder/add-content/dynamic-block.html) uit.
 
-_attributen van de Term:_
+_Term-kenmerken :_
 
 * _Gebied: handelsoftware_
 * _Synoniemen: Dynamische Blokken_
@@ -236,9 +236,9 @@ Uw bedrijf kan ook het merk zijn, die producten onder veelvoudige merken verkoop
 
 Gebruik aangepaste kenmerken om merkgegevens voor producten op te slaan.
 
-Voor sommige extensies en integraties wordt mogelijk een merk gebruikt of vereist voor uw producten, zoals Google Shopping-advertenties Channel en Amazon-Sales Channel.
+Voor sommige extensies en integraties wordt mogelijk een merk gebruikt of vereist voor uw producten, zoals Google Shopping-advertenties Channel en Amazon Sales Channel.
 
-_attributen van de Term:_
+_Term-kenmerken :_
 
 * _Gebied: zaken_
 
@@ -248,9 +248,9 @@ _adjectief_
 
 Een detailhandel met een vaste fysieke locatie, in tegenstelling tot bedrijven die vrijwel of uitsluitend via internet functioneren.
 
-Voor [ Inventory management ](https://experienceleague.adobe.com/docs/commerce-admin/inventory/sources/sources-manage.html?lang=nl-NL) en [ Order Management ](#oms), is deze opslag een bron voor het volgen van producthoeveelheden, het verschepen van orden, en het steunen in-store bestelwagen.
+Voor [ Inventory management ](https://experienceleague.adobe.com/docs/commerce-admin/inventory/sources/sources-manage.html) en [ Order Management ](#oms), is deze opslag een bron voor het volgen van producthoeveelheden, het verschepen van orden, en het steunen in-store bestelwagen.
 
-_attributen van de Term:_
+_Term-kenmerken :_
 
 * _Gebied: zaken, inventaris_
 
@@ -263,7 +263,7 @@ Voorbeelden van taken in verband met bulktransacties zijn het importeren of expo
 
 Leer meer: [ DevDocs BulkVerrichtingen ](https://developer.adobe.com/commerce/php/development/components/message-queues/bulk-operations/)
 
-_attributen van de Term:_
+_Term-kenmerken :_
 
 * _Gebied: programmering_
 
@@ -274,9 +274,9 @@ _noun_
 Klanten kunnen een &quot;build your own&quot; aanpasbaar product samenstellen op basis van verschillende opties en configuraties.
 Elk item in de bundel is een afzonderlijk eenvoudig of virtueel product.
 
-Leer meer: [ Configureerbare Producten ](https://experienceleague.adobe.com/docs/commerce-admin/catalog/products/types/product-create-configurable.html?lang=nl-NL)
+Leer meer: [ Configureerbare Producten ](https://experienceleague.adobe.com/docs/commerce-admin/catalog/products/types/product-create-configurable.html)
 
-_attributen van de Term:_
+_Term-kenmerken :_
 
 * _Gebied: handelssoftware, product_
 * _Verwante termijnen: eenvoudig product, virtueel product, producttypes_
@@ -288,7 +288,7 @@ _noun_
 De code die het gedrag van Adobe Commerce uitbreidt of aanpast, wordt beschouwd als een gebundelde extensie.
 Het kan modules, thema&#39;s, en taalpakketten omvatten.
 
-_attributen van de Term:_
+_Term-kenmerken :_
 
 * _Gebied: gebundelde uitbreiding, uitbreiding_
 * _Synoniemen: uitbreiding_
@@ -304,7 +304,7 @@ Hiermee slaat u cacherecords op in een achtergrondsysteem op twee niveaus binnen
 Een cache op het eerste niveau is snel — bijvoorbeeld een APC- of een Memcached-backend — maar het is beperkt en biedt geen ondersteuning voor het labelen en groeperen van cachegegevens.
 Een cache op het tweede niveau, bijvoorbeeld een bestandssysteem of een Redis-backend, is langzamer, maar ondersteunt codering en groepering.
 
-_attributen van de Term:_
+_Term-kenmerken :_
 
 * _Gebied: programmering_
 * _Verwante termijnen: achterste_
@@ -315,7 +315,7 @@ _noun_
 
 Hiermee geeft u aan welk type gegevens in de cache-achtergrond worden opgeslagen.
 
-_attributen van de Term:_
+_Term-kenmerken :_
 
 * _Gebied: programmering_
 * _Verwante termijnen: front_
@@ -347,7 +347,7 @@ Adobe Commerce bevat de volgende typen:
 
 Andere typen kunnen worden gemaakt en gedefinieerd.
 
-_attributen van de Term:_
+_Term-kenmerken :_
 
 * _Gebied: programmering_
 
@@ -358,7 +358,7 @@ _werkb_
 Het proces waarbij een geautoriseerd orderbedrag wordt omgezet in een factureerbare transactie.
 Transacties kunnen pas worden vastgelegd als daarvoor toestemming is gegeven en vergunningen pas kunnen worden vastgelegd nadat de goederen of diensten zijn verzonden.
 
-_attributen van de Term:_
+_Term-kenmerken :_
 
 * _Gebied: zaken_
 * _Verwante termijnen: vergunning, ordestatus_
@@ -369,7 +369,7 @@ _noun_
 
 Een persoon die van een financiële instelling een vergunning heeft gekregen om op een creditcardrekening aankopen te doen.
 
-_attributen van de Term:_
+_Term-kenmerken :_
 
 * _Gebied: zaken, orde_
 
@@ -380,7 +380,7 @@ _noun_
 Prijsregels die worden toegepast op het winkelwagentje en die een actie in reactie op een reeks voorwaarden in gang zetten.
 Wordt gebruikt om promoties te maken.
 
-_attributen van de Term:_
+_Term-kenmerken :_
 
 * _Gebied: commerciële software, tarifering, product_
 * _Verwante termijnen: catalogusregels, het winkelwagentje_
@@ -399,7 +399,7 @@ De huidige opslagcatalogus wordt bepaald door de standaardhoofdcategorie, die zi
 
 U kunt zo veel hoofdcategorieën maken als u wilt, maar er kan slechts één (de standaardinstelling) tegelijk worden gebruikt.
 
-_attributen van de Term:_
+_Term-kenmerken :_
 
 * _Gebied: commerciële software, tarifering, product_
 * _Verwante termijnen: gedeelde catalogus, catalogusregel_
@@ -411,7 +411,7 @@ _noun_
 Prijsregels die worden toegepast op specifieke producten en aanleiding geven tot een actie in reactie op een reeks voorwaarden.
 Wordt gebruikt om promoties te maken.
 
-_attributen van de Term:_
+_Term-kenmerken :_
 
 * _Gebied: commerciële software, tarifering, product_
 * _Verwante termijnen: de regels van het karretje, catalogus_
@@ -423,7 +423,7 @@ _noun_
 Een groep producten die iets gemeen hebben.
 Het hoofdmenu van de winkel is ingedeeld in categorieën en subcategorieën van producten.
 
-_attributen van de Term:_
+_Term-kenmerken :_
 
 * _Gebied: handelssoftware, product_
 
@@ -438,7 +438,7 @@ Uitchecken heeft vele opties en configuratie uit-op-de-doos en door uitbreiding.
 
 Leer meer: [ het Leerprogramma van de Controle ](https://developer.adobe.com/commerce/php/tutorials/frontend/custom-checkout/)
 
-_attributen van de Term:_
+_Term-kenmerken :_
 
 * _Gebied: zaken, ontwerp, orde, product, programmering_
 
@@ -448,9 +448,9 @@ _noun_
 
 Wolkenvariabelen zijn omgevingsvariabelen die specifiek zijn voor Adobe Commerce op cloudinfrastructuur en gebruiken het voorvoegsel **`MAGENTO_CLOUD`** .
 
-Leer meer: [ variabelen van de Wolk ](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure/env/stage/variables-cloud.html?lang=nl-NL)
+Leer meer: [ variabelen van de Wolk ](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure/env/stage/variables-cloud.html)
 
-_attributen van de Term:_
+_Term-kenmerken :_
 
 * _Gebied: wolk_
 
@@ -458,9 +458,9 @@ _attributen van de Term:_
 
 _noun_
 
-Een speciale variant van [ blok ](https://experienceleague.adobe.com/docs/commerce-admin/content-design/elements/blocks/blocks.html?lang=nl-NL) dat slechts in Admin kan worden gecreeerd en niet door lay-outdossiers kan worden van verwijzingen voorzien.
+Een speciale variant van [ blok ](https://experienceleague.adobe.com/docs/commerce-admin/content-design/elements/blocks/blocks.html) dat slechts in Admin kan worden gecreeerd en niet door lay-outdossiers kan worden van verwijzingen voorzien.
 
-_attributen van de Term:_
+_Term-kenmerken :_
 
 * _Gebied: handelsoftware_
 * _Verwante termijnen: blok, statisch blok_
@@ -471,7 +471,7 @@ _noun_
 
 Gegevens die zijn gekoppeld aan meerdere productopties.
 
-_attributen van de Term:_
+_Term-kenmerken :_
 
 * _Gebied: programmering_
 
@@ -481,7 +481,7 @@ _noun_
 
 Wordt gebruikt om te verwijzen naar een module, thema of taalpakket in Adobe Commerce.
 
-_attributen van de Term:_
+_Term-kenmerken :_
 
 * _Gebied: handelsoftware_
 * _Synoniemen: component_
@@ -503,7 +503,7 @@ Voorbeeld: T-shirts met twee kleuren en drie formaten.
 Er moeten zes varianten worden gecreëerd als afzonderlijke producten (elk met een eigen SKU).
 Vervolgens worden alle varianten toegevoegd aan een configureerbaar product, waarbij klanten de grootte en kleur kunnen kiezen en deze vervolgens aan hun winkelwagentje kunnen toevoegen.
 
-_attributen van de Term:_
+_Term-kenmerken :_
 
 * _Gebied: handelssoftware, product_
 * _Verwante termijnen: producttypes_
@@ -514,7 +514,7 @@ _noun_
 
 Het percentage bezoekers dat wordt omgezet in kopers.
 
-_attributen van de Term:_
+_Term-kenmerken :_
 
 * _Gebied: zaken, orde_
 
@@ -524,7 +524,7 @@ _noun_
 
 De de rijschrapping van de kern bestaat uit drie de dienstknopen voor gegevensopslag, geheime voorgeheugen en de diensten, zoals OpenSearch, Elasticsearch, MariaDB, Redis.
 
-_attributen van de Term:_
+_Term-kenmerken :_
 
 * _Gebied: wolk_
 
@@ -535,7 +535,7 @@ _noun_
 Een document dat door de handelaar aan een klant is uitgegeven om een uitstaand saldo af te schrijven wegens overbelasting, korting of teruggave van goederen.
 Het memo herstelt de gelden naar de rekening van de klant.
 
-_attributen van de Term:_
+_Term-kenmerken :_
 
 * _Gebied: zaken, orde_
 
@@ -545,7 +545,7 @@ _noun_
 
 Details waarom een creditnota aan de klant is gecrediteerd.
 
-_attributen van de Term:_
+_Term-kenmerken :_
 
 * _Gebied: zaken, orde_
 
@@ -555,7 +555,7 @@ _noun_
 
 Een gefactureerd item waarvoor een handelaar een creditnota maakt.
 
-_attributen van de Term:_
+_Term-kenmerken :_
 
 * _Gebied: zaken, orde_
 
@@ -567,7 +567,7 @@ Een product dat naast het winkelwagentje wordt weergegeven.
 Wanneer een klant naar de winkelwagentje pagina navigeert, worden deze producten als cross-sells weergegeven naar de artikelen die al in het winkelwagentje staan.
 Ze zijn vergelijkbaar met impulsaankopen, zoals tijdschriften en snoep in de kastenregisters in supermarkten.
 
-_attributen van de Term:_
+_Term-kenmerken :_
 
 * _Gebied: zaken, product_
 * _Verwante termijnen: upsell_
@@ -579,7 +579,7 @@ _noun_
 Een afkorting voor &quot;Kaarthouderverificatie&quot;.
 Een manier om de identiteit van de klant te verifiëren door bij de betalingsverwerker een 3-cijferige of 4-cijferige creditcardbeveiligingscode te bevestigen.
 
-_attributen van de Term:_
+_Term-kenmerken :_
 
 * _Gebied: zaken, orde_
 * _synoniemen: De Methode van de Verificatie van Cardholder_
@@ -595,7 +595,7 @@ De structuur van gegevens in een database.
 Hiermee bepaalt u hoe gegevens worden georganiseerd en hoe gegevensrelaties worden beheerst, inclusief alle beperkingen die op de gegevens worden toegepast.
 Een module kan fragmenten van het gegevensbestandschema bevatten als die module gegevens heeft die in het gegevensbestand moeten worden opgeslagen.
 
-_attributen van de Term:_
+_Term-kenmerken :_
 
 * _Gebied: programmering_
 * _Synoniemen: schema_
@@ -609,7 +609,7 @@ Deze klasse delegeert de verantwoordelijkheid om het gebiedsdeel aan de roepende
 Wordt gebruikt om het testen te vereenvoudigen.
 Om gebiedsdelen voor klassen te bepalen, geef het di.xml- configuratiedossier uit.
 
-_attributen van de Term:_
+_Term-kenmerken :_
 
 * _Gebied: programmering_
 
@@ -619,9 +619,9 @@ _noun_
 
 Een implementatiesleutel is de openbare sleutel van uw project SSH en maakt alleen-lezen of lezen-schrijven (indien ingeschakeld) toegang tot een Git-opslagplaats mogelijk.
 
-Leer meer: [ Veilige verbindingen ](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/secure-connections.html?lang=nl-NL)
+Leer meer: [ Veilige verbindingen ](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/secure-connections.html)
 
-_attributen van de Term:_
+_Term-kenmerken :_
 
 * _Gebied: wolk_
 
@@ -631,7 +631,7 @@ _zelfstandig naamwoord, werkwoord_
 
 Een e-mailverificatieproces waarbij potentiële abonnees een tweede stap moeten voltooien waarin hun voornemen om zich te abonneren wordt bevestigd.
 
-_attributen van de Term:_
+_Term-kenmerken :_
 
 * _Gebied: zaken_
 
@@ -645,7 +645,7 @@ Een downloadbaar product kan een elektronische versie van uw productcatalogus le
 
 Downloadbare bestanden kunnen zich op uw server bevinden of als URL&#39;s naar een andere server of een ander netwerk voor de levering van inhoud worden verzonden.
 
-_attributen van de Term:_
+_Term-kenmerken :_
 
 * _Gebied: handelssoftware, product_
 * _Verwante termijnen: producttypes_
@@ -657,7 +657,7 @@ _noun_
 Inhoud die wordt gegenereerd door code in plaats van te lezen van een statische sjabloon.
 Nadat de dynamische inhoud aanvankelijk wordt teruggegeven wanneer een gebruiker een pagina bezoekt, soms kan de inhoud in het voorgeheugen worden opgeslagen en worden opnieuw gebruikt zonder een andere dynamische vraag op een revisit te vereisen.
 
-_attributen van de Term:_
+_Term-kenmerken :_
 
 * _Gebied: ontwerp_
 * _Verwante termijnen: php_
@@ -675,7 +675,7 @@ Het gebruik van dynamische media-URL&#39;s kan van invloed zijn op de zoekpresta
 
 Codeopmaak: media url=&quot;path/to/image.jpg&quot;
 
-_attributen van de Term:_
+_Term-kenmerken :_
 
 * _Gebied: programmering_
 * _Verwante termijnen: het netwerk van de inhoudslevering, url_
@@ -686,11 +686,11 @@ _attributen van de Term:_
 
 _noun_
 
-Een set scripts en gereedschappen die zijn ontworpen voor het beheer en de implementatie van de Commerce-toepassing. Dit pakket vereenvoudigt veel Adobe Commerce op cloudinfrastructuuroplossingen, zoals implementatie in een Docker-omgeving, het beheren van crons, het controleren van de projectconfiguratie en het toepassen van patches voor Adoben.
+Een set scripts en gereedschappen die zijn ontworpen voor het beheer en de implementatie van de Commerce-toepassing. Dit pakket vereenvoudigt veel Adobe Commerce op cloudinfrastructuuroplossingen, zoals implementatie in een Docker-omgeving, het beheren van crons, het controleren van de projectconfiguratie en het toepassen van Adobe-patches.
 
-Leer meer: [ kind-hulpmiddelen pakket ](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/dev-tools/ece-tools/package-overview.html?lang=nl-NL)
+Leer meer: [ kind-hulpmiddelen pakket ](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/dev-tools/ece-tools/package-overview.html)
 
-_attributen van de Term:_
+_Term-kenmerken :_
 
 * _Gebied: cli, wolk, stel_ op
 
@@ -702,7 +702,7 @@ Een unieke eenheid of object in programmering.
 Bevat kenmerken of parameters die kunnen worden gewijzigd.
 Voorbeelden zijn staging — waarbij een update entiteiten zoals prijsregels, producten of categorieën kan wijzigen — en databaserecords — waarbij servicecontracten gegevensstructuren bevatten die worden verzonden en ontvangen.
 
-_attributen van de Term:_
+_Term-kenmerken :_
 
 * _Gebied: handelsoftware_
 * _Verwante termijnen: attribuut, wortelregels, catalogusregels_
@@ -718,7 +718,7 @@ Dit gegevensmodel is flexibel, maar kan langzaam zijn.
 
 Leer meer: [ EAV en extension_attributes ](https://developer.adobe.com/commerce/php/development/components/attributes/)
 
-_attributen van de Term:_
+_Term-kenmerken :_
 
 * _Gebied: programmering_
 * _Synoniemen: eav_
@@ -729,7 +729,7 @@ _noun_
 
 Inhoud met een lange houdbaarheid of inhoud die opnieuw kan worden gebruikt.
 
-_attributen van de Term:_
+_Term-kenmerken :_
 
 * _Gebied: zaken_
 
@@ -738,10 +738,10 @@ _attributen van de Term:_
 _noun_
 
 Code die het gedrag van Adobe Commerce uitbreidt of aanpast.
-U kunt een extensie optioneel verpakken en distribueren op een Commerce Marketplace of een ander distributiesysteem voor extensies.
+U kunt een extensie optioneel verpakken en distribueren op Commerce Marketplace of een ander distributiesysteem voor extensies.
 Een Commerce-extensie kan modules, thema&#39;s en taalpakketten bevatten.
 
-_attributen van de Term:_
+_Term-kenmerken :_
 
 * _Gebied: handelsoftware_
 * _Verwante termijnen: component, module, pakket_
@@ -754,7 +754,7 @@ Breid functionaliteit uit en gebruik vaak complexere gegevenstypes dan douaneatt
 
 Leer meer: [ Toevoegend uitbreidingsattributen aan entiteit ](https://developer.adobe.com/commerce/php/development/components/add-attributes/)
 
-_attributen van de Term:_
+_Term-kenmerken :_
 
 * _Gebied: handelsoftware_
 * _Verwante termijnen: attribuut, waarde van entiteitattributen_
@@ -768,7 +768,7 @@ _noun_
 In de internationale scheepvaart betekent deze term dat de ontvangende partij verantwoordelijk is voor de verzendkosten.
 FOB kan worden gebaseerd op de plaats van oorsprong of bestemming en worden aangeduid als vracht die wordt afgenomen of als vracht die vooraf wordt betaald.
 
-_attributen van de Term:_
+_Term-kenmerken :_
 
 * _Gebied: zaken, orde, tarifering_
 * _Synoniemen: fob_
@@ -785,7 +785,7 @@ Een gebruiker communiceert met de storefront, die op zijn beurt code gebruikt di
 
 Opmerking: In het verleden werd de storefront aangeduid als de &quot;frontend&quot; en de Admin werd aangeduid als de &quot;backend&quot;. Dit gebruik wordt niet meer ondersteund.
 
-_attributen van de Term:_
+_Term-kenmerken :_
 
 * _Gebied: ontwerp, programmering_
 * _Synoniemen: cliëntkant_
@@ -797,7 +797,7 @@ _noun_
 
 Eigenschappen die de presentatie en het gedrag van een attribuut vanuit het standpunt van de klant in uw opslag bepalen.
 
-_attributen van de Term:_
+_Term-kenmerken :_
 
 * _Gebied: ontwerp, programmering_
 
@@ -807,7 +807,7 @@ _noun_
 
 Het proces voor het beheer van zendingen van klanten.
 
-_attributen van de Term:_
+_Term-kenmerken :_
 
 * _Gebied: zaken_
 
@@ -832,7 +832,7 @@ Een geschenkkaart kan ook door de archiefbeheerder op klantenverzoek worden teru
 Cadeaukaarten helpen ook promoties, aangezien de opslagbeheerders de geschenkkaartrekeningen in het achterste gedeelte manueel kunnen creëren en de geschenkkaartcodes naar het specifieke klantensegment verzenden.
 Cadeaukaarten kunnen dienen als een loyaliteitsprogramma dat is gericht op de meest actieve klanten die tijdens de vakantie talrijke aankopen doen in de webwinkel of een specifieke promotiecampagne.
 
-_attributen van de Term:_
+_Term-kenmerken :_
 
 * _Gebied: handelsoftware_
 * _Verwante termijnen: producttypes_
@@ -843,7 +843,7 @@ _noun_
 
 Het verschil tussen de kosten en de prijs van een product.
 
-_attributen van de Term:_
+_Term-kenmerken :_
 
 * _Gebied: zaken_
 
@@ -858,7 +858,7 @@ Elk product kan afzonderlijk of als onderdeel van de groep worden aangeschaft.
 Voor bijvoorbeeld een mes dat in vier formaten beschikbaar is, kunnen alle vier messen worden weergegeven op een gegroepeerde productpagina.
 Klanten kunnen de gewenste grootten selecteren en deze op deze pagina aan de winkelwagentje toevoegen.
 
-_attributen van de Term:_
+_Term-kenmerken :_
 
 * _Gebied: handelssoftware, product_
 * _Verwante termijnen: eenvoudig product, producttypes_
@@ -875,7 +875,7 @@ Voor paginahandgrepen wordt de naam van de greep afgeleid van de URL en wordt de
 Bijvoorbeeld, in de module van de Klant, is er een lay-outdossier genoemd &quot;view/frontend/layout/checkout_cart_index.xml&quot;.
 Hier is &quot;frontend&quot; de gebiedsnaam en &quot;checkout_cart_index&quot; de greepnaam, die allebei van URL worden afgeleid.
 
-_attributen van de Term:_
+_Term-kenmerken :_
 
 * _Gebied: programmering_
 * _Synoniemen: paginahandvat_
@@ -886,7 +886,7 @@ _noun_
 
 Horizontale schaling (ook wel uitschalen genoemd) is het toevoegen van extra knooppunten of machines aan uw infrastructuur om aan de groeiende vraag te voldoen.
 
-_attributen van de Term:_
+_Term-kenmerken :_
 
 * _Gebied: wolk_
 
@@ -902,7 +902,7 @@ Als u een functie wilt onderscheppen, implementeert een plug-in de aanvullende c
 Plug-ins zijn gekoppeld aan afluisterpunten door het configuratiebestand voor de injectie van afhankelijkheden (di.xml).
 Als de veelvoudige stop-ins op de zelfde functie worden bepaald, bepaalt de configuratie van de gebiedsinjectie de orde waarin de stop-ins worden aangehaald, toestaand veelvoudige stop-ins om zonder conflict te worden gebruikt.
 
-_attributen van de Term:_
+_Term-kenmerken :_
 
 * _Gebied: programmering_
 * _Verwante termijnen: stop binnen_
@@ -918,7 +918,7 @@ In de constructie van een Commerce-pagina is een lay-out een reeks blokken die i
 Bestanden met paginalay-outs hebben de focus op het hoogste niveau van de paginastructuur (koptekst, voettekst, hoofdinhoudsgebied, linkerzijbalk, enzovoort).
 Indelingsbestanden zetten vervolgens inhoud (blokken) samen in deze verschillende gebieden op de pagina.
 
-_attributen van de Term:_
+_Term-kenmerken :_
 
 * _Gebied: ontwerp, handelssoftware_
 * _Verwante termijnen: lay-outinstructies, blok_
@@ -931,7 +931,7 @@ Markup in een lay-outdossier dat veranderingen beschrijft die op een gestructure
 Eén indelingsbestand kan meerdere indelingsinstructies bevatten.
 Layout-instructies worden gecodeerd in XML in lay-outbestanden.
 
-_attributen van de Term:_
+_Term-kenmerken :_
 
 * _Gebied: ontwerp, programmering_
 * _Verwante termijnen: lay-out, blok, container, ui component_
@@ -942,7 +942,7 @@ _noun_
 
 Wordt gebruikt voor codefragmenten die worden toegevoegd om de XML-indeling te wijzigen of om de indelingsinstructies uit een ander bestand te importeren.
 
-_attributen van de Term:_
+_Term-kenmerken :_
 
 * _Gebied: ontwerp, handelssoftware_
 
@@ -954,7 +954,7 @@ De Eigenaar van de Vergunning (ook bekend als Rekeningeigenaar) is de aangewezen
 Deze persoon fungeert als contactpunt met Adobe.
 Nadat een bedrijf een Adobe Commerce heeft aangeschaft op een abonnement op de cloudinfrastructuur, zijn het initiële project en de toegang tot de code alleen beschikbaar voor de persoon die is aangewezen als de eigenaar van de licentie.
 
-_attributen van de Term:_
+_Term-kenmerken :_
 
 * _Gebied: zaken_
 
@@ -967,9 +967,9 @@ _noun_
 MAGEID is doorgaans de factureringscontactpersoon op de Adobe Commerce-account (en is mogelijk niet de projecteigenaar van de Adobe Commerce voor het cloudinfrastructuuropbouwproject).
 Voor toegangsrechten voor Adobe Commerce en Adobe Commerce voor pakketten met cloudinfrastructuur moet u toegangstoetsen gebruiken die zijn gekoppeld aan een MAGEID die toegang heeft gekregen tot deze pakketten.
 
-Leer meer: [ krijg uw authentificatietoetsen ](https://experienceleague.adobe.com/docs/commerce-operations/installation-guide/prerequisites/authentication-keys.html?lang=nl-NL)
+Leer meer: [ krijg uw authentificatietoetsen ](https://experienceleague.adobe.com/docs/commerce-operations/installation-guide/prerequisites/authentication-keys.html)
 
-_attributen van de Term:_
+_Term-kenmerken :_
 
 * _Gebied: handelsoftware_
 
@@ -978,12 +978,12 @@ _attributen van de Term:_
 _noun_
 
 Bij verkoop en detailhandel wordt een percentage toegevoegd aan de kosten van een artikel om de detailhandelsprijs te bepalen.
-[ vorm de prijsverhoging ](https://experienceleague.adobe.com/docs/commerce-admin/catalog/products/settings/settings-advanced-custom-options.html?lang=nl-NL), of de prijsdaling, van een product door product klantgerichte opties.
+[ vorm de prijsverhoging ](https://experienceleague.adobe.com/docs/commerce-admin/catalog/products/settings/settings-advanced-custom-options.html), of de prijsdaling, van een product door product klantgerichte opties.
 
 In ontwikkeling, een computertaal die de verwerking, de presentatie, en het formatteren van tekst controleert.
 Markeringstags zijn ook codefragmenten die functionaliteit of inhoud toevoegen aan een CMS-pagina of -blok.
 
-_attributen van de Term:_
+_Term-kenmerken :_
 
 * _Gebied: zaken, programmering_
 * _Synoniemen: Markdown_
@@ -994,7 +994,7 @@ _noun_
 
 In Adobe Commerce op cloudinfrastructuur maken Pro-projecten gebruik van een actieve Platform as a Service-omgeving (PaaS), de zogenaamde master-omgeving, die een kopie bevat van de database van de productieomgeving en de webserver.
 
-_attributen van de Term:_
+_Term-kenmerken :_
 
 * _Gebied: wolk_
 
@@ -1004,7 +1004,7 @@ _noun_
 
 Een rekening bij een bank of financiële instelling die het mogelijk maakt kredietkaarttransacties te aanvaarden.
 
-_attributen van de Term:_
+_Term-kenmerken :_
 
 * _Gebied: zaken_
 
@@ -1016,7 +1016,7 @@ MFTF is a [ Functional Testing Kader ](https://developer.adobe.com/commerce/test
 Het biedt een testframework voor Commerce-ontwikkelaars en -software-engineers, zoals QA-specialisten, PHP-ontwikkelaars en systeemintegrators.
 De ontwikkelaars en QA kunnen tests schrijven om gebruikersinteractie met Webtoepassingen te proberen, functionaliteit te verifiëren, en regressietests te automatiseren.
 
-_attributen van de Term:_
+_Term-kenmerken :_
 
 * _Gebied: handelssoftware, programmering_
 * _Verwante termijnen: cms blok, statisch blok, container, lay-out_
@@ -1025,17 +1025,17 @@ _attributen van de Term:_
 
 _noun_
 
-Code die functies van de toepassing Magento wijzigt of uitbreidt.
+Code die functies van de Magento-toepassing wijzigt of uitbreidt.
 Een module is opgenomen in een mappenstructuur die PHP- en XML-bestanden bevat (configuratie, blokken, controllers, helpers, modellen enzovoort) die gerelateerd zijn aan een specifieke functionaliteit om een duidelijke verzameling productfuncties te leveren.
 Het doel van elke module is specifieke producteigenschappen te verstrekken door nieuwe functionaliteit uit te voeren of de functionaliteit van andere modules uit te breiden.
 Elke module is ontworpen om onafhankelijk te werken, zodat het opnemen of uitsluiten van een bepaalde module de functionaliteit van andere modules niet beïnvloedt.
 
 Een module kan ook widgets implementeren. Dit zijn pagina-elementen die door zakelijke gebruikers in Admin kunnen worden aangepast.
 
-Modules kunnen worden uitgeschakeld of verwijderd zonder de consistentie van de toepassing Magento te onderbreken.
+Modules kunnen worden uitgeschakeld of verwijderd zonder de consistentie van de Magento-toepassing te onderbreken.
 Één uitzondering: Wanneer de module van andere modules afhangt, die het onbruikbaar maken of het verwijderen van de afhankelijke modules vereist.
 
-_attributen van de Term:_
+_Term-kenmerken :_
 
 * _Gebied: handelsoftware_
 * _Verwante termijnen: php, xml, blok_
@@ -1046,7 +1046,7 @@ _attributen van de Term:_
 
 _noun_
 
-OMS is het Order Management System-aanbod van Adobe.
+OMS is Adobe Order Management System-aanbieding.
 
 >[!IMPORTANT]
 >
@@ -1064,10 +1064,10 @@ Tot de OMS-mogelijkheden behoren:
 
 Leer meer: [ Gearchiveerde plaats van Docs OMS ](https://commerce-docs.github.io/oms-documentation-archive/)
 
-_attributen van de Term:_
+_Term-kenmerken :_
 
 * _Gebied: eigenschap, handelssoftware, ordebeheer_
-* _Synoniemen: orderbeheer, MOM, het systeem van het ordebeheer, Magento Order Management_
+* _Synoniemen: orderbeheer, MOM, ordebeheersysteem, Magento Order Management_
 * _Verwante termijnen: ordebeheer_
 
 ### oorspronkelijke camouflage
@@ -1076,9 +1076,9 @@ _noun_
 
 Oorspronkelijke camouflage is een beveiligingsfunctie waarmee Adobe Commerce op cloudinfrastructuur elk niet-snel verkeer kan blokkeren om aanvallen met DDoS te voorkomen en naar de cloudinfrastructuur (oorsprong) te gaan.
 
-Leer meer: [ Snelle oorsprong het camoufleren ](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/faq/fastly-origin-cloaking-enablement-faq.html?lang=nl-NL)
+Leer meer: [ Snelle oorsprong het camoufleren ](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/faq/fastly-origin-cloaking-enablement-faq.html)
 
-_attributen van de Term:_
+_Term-kenmerken :_
 
 * _Gebied: veiligheid_
 * _Verwante termijnen: de firewall van de Webtoepassing_
@@ -1094,9 +1094,9 @@ Deze besturingselementen worden ook wel &#39;inhoudstypen&#39; genoemd.
 Handelaars kunnen lay-outs en pagina&#39;s ontwerpen zonder codeerervaring.
 Ontwikkelaars krijgen nu ondersteuning voor extensies om de Page Builder uit te breiden.
 
-Leer meer: [ Gids van de Gebruiker van de Bouwer van de Pagina ](https://experienceleague.adobe.com/docs/commerce-admin/page-builder/introduction.html?lang=nl-NL), [ de Bouwer van de Pagina DevDocs ](https://developer.adobe.com/commerce/frontend-core/page-builder/)
+Leer meer: [ Gids van de Gebruiker van de Bouwer van de Pagina ](https://experienceleague.adobe.com/docs/commerce-admin/page-builder/introduction.html), [ de Bouwer van de Pagina DevDocs ](https://developer.adobe.com/commerce/frontend-core/page-builder/)
 
-_attributen van de Term:_
+_Term-kenmerken :_
 
 * _Gebied: commerciële software, ontwerp_
 * _Synoniemen: Admin, Comité Admin, achterste, Interface van het Beleid, Admin UI_
@@ -1108,7 +1108,7 @@ _noun_
 
 Een betaalgateway is een dienst van derden die foutloos creditcardtransacties verwerkt zonder dat de klant de locatie van de handelaar verlaat.
 
-_attributen van de Term:_
+_Term-kenmerken :_
 
 * _Gebied: zaken, orde, programmering_
 
@@ -1121,7 +1121,7 @@ _noun_
 Een selectie van producten die wordt gepresenteerd als een stimulans om extra artikelen te kopen.
 Als de klant bijvoorbeeld de productpagina voor een camera bekijkt, kunnen de verwante producten andere vergelijkbare camera&#39;s, een camerasoort en een statief bevatten.
 
-_attributen van de Term:_
+_Term-kenmerken :_
 
 * _Gebied: handelssoftware, product_
 
@@ -1133,7 +1133,7 @@ _noun_
 
 Omvat regels voor winkelwagentjes en catalogi die worden gebruikt om een product voor promoties te prijzen.
 
-_attributen van de Term:_
+_Term-kenmerken :_
 
 * _Gebied: handelssoftware, product_
 * _Verwante termijnen: de regels van het karretje, catalogusregels_
@@ -1152,7 +1152,7 @@ Toepassingsgebied kan van toepassing zijn op:
 
 Binnen de hiërarchie, kunnen de montages die op een lager niveau worden toegepast sommige montages op hoger niveau met voeten treden.
 
-_attributen van de Term:_
+_Term-kenmerken :_
 
 * _Gebied: handelsoftware_
 
@@ -1164,7 +1164,7 @@ Een set PHP-interfaces die zijn gedefinieerd voor een module.
 Een de dienstcontract omvat gegevensinterfaces, die gegevensintegriteit, en de dienstinterfaces bewaren, die bedrijfslogische details van de dienstaanvrager zoals controlemechanismen, de Webdiensten, en andere modules verbergen.
 Web APIs kan aan de dienstcontracten via configuratiedossiers worden gebonden.
 
-_attributen van de Term:_
+_Term-kenmerken :_
 
 * _Gebied: programmering_
 * _Verwante termijnen: php, Web api_
@@ -1175,7 +1175,7 @@ _noun_
 
 Afwikkeling vindt plaats wanneer de overnemende bank en de omrekeningsfondsen van de emittent en de opbrengsten op de handelsrekening worden gedeponeerd.
 
-_attributen van de Term:_
+_Term-kenmerken :_
 
 * _Gebied: zaken_
 
@@ -1194,7 +1194,7 @@ De handelaar die de gedeelde cataloguseigenschap gebruikt, heeft:
 * Catalogus klant 2 (zou de volledige catalogus met 10% korting kunnen zijn)
 * Klant 3-catalogus (een paar dozijn producten met kortingen op de hoofdcatalogus, variërend van 5% tot 60%).
 
-_attributen van de Term:_
+_Term-kenmerken :_
 
 * _Gebied: handelssoftware, product_
 * _Verwante termijnen: catalogus, b2b_
@@ -1206,7 +1206,7 @@ _noun_
 Een zending bevat producten die moeten worden afgeleverd en genereert een registratie van de producten in een bestelling die is verzonden.
 Er kunnen meerdere verzendingen aan één bestelling zijn gekoppeld.
 
-_attributen van de Term:_
+_Term-kenmerken :_
 
 * _Gebied: zaken, orde_
 
@@ -1216,7 +1216,7 @@ _noun_
 
 Een document dat bij een transport wordt gevoegd. In het document worden de producten en de hoeveelheden ervan vermeld in de leveringsverpakking.
 
-_attributen van de Term:_
+_Term-kenmerken :_
 
 * _Gebied: zaken, orde_
 
@@ -1226,7 +1226,7 @@ _noun_
 
 Een bedrijf dat pakketten vervoert. Veelgebruikte carriers zijn UPS, FedEx, DHL en USPS.
 
-_attributen van de Term:_
+_Term-kenmerken :_
 
 * _Gebied: zaken, orde_
 
@@ -1237,7 +1237,7 @@ _noun_
 De reeks producten die een klant heeft geselecteerd om te kopen, maar nog niet heeft gekocht.
 Verwijst ook naar een gebied van een plaats van de Handel waar deze producten aan overzicht en controle kunnen worden gevonden.
 
-_attributen van de Term:_
+_Term-kenmerken :_
 
 * _Gebied: zaken, ontwerp, product, programmering_
 * _Synoniemen: Kar, mandje_
@@ -1252,7 +1252,7 @@ Eenvoudige producten hebben verschillende prijzen- en invoercontroles waardoor v
 De eenvoudige producten kunnen in combinatie met gegroepeerde, bundel, en configureerbare producten worden gebruikt.
 Een eenvoudig product met aangepaste opties wordt soms ook wel een samengesteld product genoemd.
 
-_attributen van de Term:_
+_Term-kenmerken :_
 
 * _Gebied: handelssoftware, product_
 * _Verwante termijnen: producttypes_
@@ -1264,7 +1264,7 @@ _noun_
 Afkorting voor de voorraadbewaareenheid.
 Een nummer of code die aan een product is toegewezen om het product, de opties, de prijs en de fabrikant te identificeren.
 
-_attributen van de Term:_
+_Term-kenmerken :_
 
 * _Gebied: zaken, tarifering, product, programmering_
 * _Verwante termijnen: gedeelde catalogus_
@@ -1275,7 +1275,7 @@ _noun_
 
 Een promotiepagina met een product of advertentie, die gewoonlijk vóór de homepage wordt weergegeven.
 
-_attributen van de Term:_
+_Term-kenmerken :_
 
 * _Gebied: ontwerp_
 
@@ -1287,7 +1287,7 @@ Een modulaire inhoudseenheid die door een gebruiker in de CMS op een pagina kan 
 Statische blokken bevatten bewerkbare inhoud en kunnen fungeren als bestemmingspagina&#39;s voor productcategorieën.
 Widgets kunnen aan statische blokken worden toegevoegd om extra functionaliteit te verstrekken.
 
-_attributen van de Term:_
+_Term-kenmerken :_
 
 * _Gebied: handelsoftware_
 * _Verwante termijnen: cms blok, blok_
@@ -1298,7 +1298,7 @@ _noun_
 
 Door de gebruiker gegenereerde inhoud (niet gegenereerd door code) die niet vaak wordt gewijzigd.
 
-_attributen van de Term:_
+_Term-kenmerken :_
 
 * _Gebied: ontwerp_
 * _Verwante termijnen: dynamische inhoud_
@@ -1309,7 +1309,7 @@ _noun_
 
 De verzameling elementen, zoals CSS, lettertypen, afbeeldingen en JavaScript die door een thema worden gebruikt.
 
-_attributen van de Term:_
+_Term-kenmerken :_
 
 * _Gebied: handelsoftware_
 
@@ -1322,7 +1322,7 @@ Winkels kunnen in één of meerdere worden georganiseerd. Elke opslag, potentiee
 
 Elke winkel kan meerdere winkelweergaven hebben. Deze worden doorgaans gebruikt om de winkel in een andere landinstelling en taal weer te geven.
 
-_attributen van de Term:_
+_Term-kenmerken :_
 
 * _Gebied: handelssoftware, product_
 * _Verwante termijnen: opslagmening, website_
@@ -1335,7 +1335,7 @@ Het Commerce-bereikniveau van de &quot;winkelweergave&quot; verwijst naar het de
 In winkelweergaven wordt de winkel gewoonlijk in een andere landinstelling en taal weergegeven.
 Als u de weergaven van de winkel wilt wijzigen, gebruikt u de winkelkiezer in de koptekst.
 
-_attributen van de Term:_
+_Term-kenmerken :_
 
 * _Gebied: handelssoftware, product_
 * _Verwante termijnen: opslag, website_
@@ -1346,7 +1346,7 @@ _noun_
 
 De online winkel die klanten ervaren wanneer ze uw Commerce-site bezoeken.
 
-_attributen van de Term:_
+_Term-kenmerken :_
 
 * _Gebied: handelssoftware, product_
 
@@ -1358,7 +1358,7 @@ _noun_
 
 Een combinatie van een productbelastingklasse, een klasse van de klantenbelasting, en een belastingtarief. Deze regel bepaalt welke belastingberekening wordt toegepast.
 
-_attributen van de Term:_
+_Term-kenmerken :_
 
 * _Gebied: zaken_
 
@@ -1366,12 +1366,12 @@ _attributen van de Term:_
 
 _noun_
 
-Kort voor HTML sjabloon of PHTML sjabloon.
-Een PHTML-bestand bevat een combinatie van HTML-opmaak en PHP-code om dynamische inhoud in de HTML te injecteren.
-De meeste blokken hebben minstens één PHTML-bestand (sjabloon) dat de statische HTML bevat die door het blok wordt gegenereerd.
-In de sjablonen voor beheer, e-mail en nieuwsbrief combineren tekst, afbeeldingen en variabelen met HTML-opmaak om persoonlijke inhoud te produceren die door het systeem wordt verzonden.
+Kort voor HTML-sjabloon of PHTML-sjabloon.
+Een PHTML-bestand bevat een combinatie van HTML-opmaakcodes en PHP-code om dynamische inhoud in de HTML te injecteren.
+De meeste blokken hebben minstens één PHTML- (malplaatje) dossier dat statische HTML bevat die door het blok wordt geproduceerd.
+In de sjablonen voor beheer, e-mail en nieuwsbrief combineren tekst, afbeeldingen en variabelen met HTML-opmaakcodes om persoonlijke inhoud te produceren die door het systeem wordt verzonden.
 
-_attributen van de Term:_
+_Term-kenmerken :_
 
 * _Gebied: handelsoftware_
 * _Verwante termijnen: blok_
@@ -1386,7 +1386,7 @@ Adobe Commerce kan thema&#39;s verzenden in (Composer)-pakketten.
 Thema&#39;s kunnen echter onder app/design worden geplaatst, dat niet in een pakket wordt verzonden.
 Pakketten zijn de eenheid van download voor Composer, en — via Commerce Marketplace — kunnen de gebruikers van Commerce CE of EE als reeks pakketten downloaden, waar de pakketten modules, thema&#39;s, of taalpakketten bevatten.
 
-_attributen van de Term:_
+_Term-kenmerken :_
 
 * _Gebied: handelsoftware_
 
@@ -1403,12 +1403,12 @@ De doelstellingen van het UI componentensysteem omvatten het volgende:
 * Admin-gebruikersinterface-elementen verplaatsen van HTML+JavaScript naar een &#39;zuiver JavaScript&#39;-systeem voor aangepaste widgets
 * Het toelaten van de verwezenlijking van complexere componenten UI uit kleinere componenten
 * Gegevens voor UI-componenten renderen als JSON, nauw binden aan back-end gegevensobjecten
-* AJAX gebruiken om componentgegevens bij te werken
+* Componentgegevens bijwerken met AJAX
 * Introductie van een nieuwe DSL voor het creëren van de bovengenoemde punten
 
-Leer meer: [ UI de gids van Componenten ](https://developer.adobe.com/commerce/frontend-core/ui-components/), [ Bouwer van de Pagina ](https://experienceleague.adobe.com/docs/commerce-admin/page-builder/introduction.html?lang=nl-NL)
+Leer meer: [ UI de gids van Componenten ](https://developer.adobe.com/commerce/frontend-core/ui-components/), [ Bouwer van de Pagina ](https://experienceleague.adobe.com/docs/commerce-admin/page-builder/introduction.html)
 
-_attributen van de Term:_
+_Term-kenmerken :_
 
 * _Gebied: programmering_
 * _Verwante termijnen: JavaScript, lay-out, component, paginabouwer_
@@ -1427,9 +1427,9 @@ Dit staat een Progressive Web Application toe om bovenop een UPWARD-Volgzame ser
 Een server UPWARD gebruikt een definitiedossier om het aangewezen proces of de dienst voor een verzoek van toepassingsshell te bepalen.
 Het beschrijft hoe de server een verzoek zou moeten behandelen en de reactie voor het bouwen.
 
-Een project van PWA kan een UPWARD definitiedossier omvatten om zijn de dienstgebiedsdelen te specificeren.
+Een PWA-project kan een UPWARD-definitiebestand bevatten om zijn serviceafhankelijkheden op te geven.
 
-_attributen van de Term:_
+_Term-kenmerken :_
 
 * _Gebied: ontwerp, handelssoftware, programmering_
 * _synoniemen: PWA Studio, verenigde Progressieve Definitie van de Reactie van de Toepassing van het Web_
@@ -1445,9 +1445,9 @@ Door de leverancier geproduceerde code die het gedrag van Commerce uitbreidt of 
 VBE&#39;s worden grondig getest en opgenomen in elke ondersteunde versie van Adobe Commerce.
 Een VBE kan modules, thema&#39;s, en taalpakketten omvatten.
 
-Leer meer in het [ Gevonden onderwerp van de Uitbreiding van de Leverancier ](https://experienceleague.adobe.com/docs/commerce-operations/upgrade-guide/modules/upgrade.html?lang=nl-NL).
+Leer meer in het [ Gevonden onderwerp van de Uitbreiding van de Leverancier ](https://experienceleague.adobe.com/docs/commerce-operations/upgrade-guide/modules/upgrade.html).
 
-_attributen van de Term:_
+_Term-kenmerken :_
 
 * _Gebied: commerciële uitbreiding, verkoper gebundelde uitbreiding, uitbreiding, VBE_
 * _Synoniemen: uitbreiding, VBE_
@@ -1459,7 +1459,7 @@ _noun_
 
 Verticaal schalen (opschalen) verwijst naar het verhogen van de verwerkingskracht van één server of cluster door schijf of netwerk I/O, CPU&#39;s of RAM toe te voegen.
 
-_attributen van de Term:_
+_Term-kenmerken :_
 
 * _Gebied: milieu_
 
@@ -1474,7 +1474,7 @@ Verzending of voorraad is niet vereist.
 Het proces om een virtueel product en een eenvoudig product te creëren is bijna het zelfde.
 Omdat een virtueel product echter niet wordt verzonden, is er geen veld Dikte of optie om een cadeaukaart op te nemen.
 
-_attributen van de Term:_
+_Term-kenmerken :_
 
 * _Gebied: handelssoftware, product_
 * _Verwante termijnen: producttypes_
@@ -1487,7 +1487,7 @@ Virtuele typen zijn een manier om verschillende afhankelijkheden in bestaande PH
 Er kan alleen naar virtuele typen worden verwezen door argumentoverschrijvingen in een `<type>` -element in di.xml-bestanden, nooit in broncode.
 Ze kunnen niet worden uitgebreid en ze kunnen geen verwijzingen zijn als afhankelijkheden in een klasseconstructor.
 
-_attributen van de Term:_
+_Term-kenmerken :_
 
 * _Gebied: programmering_
 * _Verwante termijnen: php_
@@ -1502,7 +1502,7 @@ In de Adobe Commerce-software, het hoogste niveau van een websitehiërarchie, bo
 U kunt meerdere websites hebben en elke website kan een andere domeinnaam hebben.
 Websites kunnen worden ingesteld om klantgegevens te delen of om geen gegevens te delen.
 
-_attributen van de Term:_
+_Term-kenmerken :_
 
 * _Gebied: handelssoftware, ontwerp, product_
 * _Verwante termijnen: opslag, opslagmening_
@@ -1511,11 +1511,11 @@ _attributen van de Term:_
 
 _noun_
 
-A [ widget ](https://experienceleague.adobe.com/docs/commerce-admin/content-design/elements/widgets/widgets.html?lang=nl-NL) is een voorbereid codefragment dat kan worden gebruikt om blokken, verbindingen, en dynamische inhoud bij specifieke plaatsen op opslagpagina&#39;s te plaatsen.
+A [ widget ](https://experienceleague.adobe.com/docs/commerce-admin/content-design/elements/widgets/widgets.html) is een voorbereid codefragment dat kan worden gebruikt om blokken, verbindingen, en dynamische inhoud bij specifieke plaatsen op opslagpagina&#39;s te plaatsen.
 Met widgets kunt u bestemmingspagina&#39;s maken voor marketingcampagnes, promotionele inhoud weergeven op specifieke locaties in de gehele winkel.
 Widgets kan ook worden gebruikt om interactieve elementen en actieklokken toe te voegen voor externe revisiesystemen, videoclips, stempels en abonnementformulieren, of om navigatie-elementen te bieden voor codewolken en afbeeldingsschuifregelaars.
 
-_attributen van de Term:_
+_Term-kenmerken :_
 
 * _Gebied: zaken, handelssoftware, ontwerp_
 * _Verwante termijnen: blok_

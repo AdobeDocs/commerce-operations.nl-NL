@@ -1,6 +1,6 @@
 ---
 title: Follow-up gegevensmigratie
-description: Leer hoe u kunt controleren of de gegevensmigratie tussen Magento 1 en Magento 2 is gelukt en of alle functionaliteit naar behoren functioneert.
+description: Leer hoe u kunt controleren of de migratie van Magento 1 naar Magento 2 is gelukt en of alle functionaliteit naar behoren functioneert.
 exl-id: a55f357b-6c95-49d6-b2f1-c2e403a8c85f
 topic: Commerce, Migration
 source-git-commit: e83e2359377f03506178c28f8b30993c172282c7
@@ -12,7 +12,7 @@ ht-degree: 0%
 
 # Follow-up gegevensmigratie
 
-Sommige gedragingen en logica van Magento 1 zijn in Magento 2 anders geïmplementeerd. De [!DNL Data Migration Tool] zorgt ervoor. Er zijn enkele migratieaspecten die u bekend moet maken, en soms moet u kleine stappen nemen om sommige functies na migratie probleemloos te laten werken.
+Sommige gedragingen en logica van Magento 1 zijn anders geïmplementeerd in Magento 2. De [!DNL Data Migration Tool] zorgt ervoor. Er zijn enkele migratieaspecten die u bekend moet maken, en soms moet u kleine stappen nemen om sommige functies na migratie probleemloos te laten werken.
 
 ## Informatie
 
@@ -26,7 +26,7 @@ Alle groepsprijzen worden tijdens de migratie automatisch omgezet in Tier-prijze
 
 ### Nieuwe nummering voor verkoopentiteiten
 
-Referentienummers voor bestellingen, facturen, verzendingen, creditmemo&#39;s en RMA migreren naar de huidige vorm. Na de migratie zijn de nieuwe Magento 2 regels voor nummertoewijzing van toepassing. De nummering voor de nieuwe verkoopeenheden is anders.
+Referentienummers voor bestellingen, facturen, verzendingen, creditmemo&#39;s en RMA migreren naar de huidige vorm. Na de migratie zijn de nieuwe Magento 2-regels voor nummertoewijzing van toepassing. De nummering voor de nieuwe verkoopeenheden is anders.
 
 ## Stappen
 
@@ -38,9 +38,9 @@ Na de migratie moeten de segmenten van de Klant van het Admin Comité worden opn
 
 Het hulpmiddel migreert niet timezone montages, zodat moet u de timezone na migratie bij **Sporen** manueel vormen > **Configuratie** > **Opties van de Landinstelling** > **Tijdzone**.
 
-Door gebrek, slaat het Magento tijdgegevens in UTC-0 streek in het gegevensbestand op en toont het volgens de huidige tijdzonemontages. Als er al tijdgegevens in de database zijn opgeslagen in een andere zone dan UTC-0, moet u de bestaande tijd omzetten in UTC-0 met de handler [!DNL Data Migration Tool]&#39;s `\Migration\Handler\Timezone` .
+Magento slaat de tijdgegevens standaard op in de UTC-0-zone in de database en geeft deze weer volgens de huidige tijdzone-instellingen. Als er al tijdgegevens in de database zijn opgeslagen in een andere zone dan UTC-0, moet u de bestaande tijd omzetten in UTC-0 met de handler [!DNL Data Migration Tool]&#39;s `\Migration\Handler\Timezone` .
 
-In het volgende voorbeeld bespaart Magento 1 verkeerd tijd in de streek UTC-7 in het gegevensbestand (bijvoorbeeld, wegens een defecte derdeuitbreiding). Voer de volgende stappen uit om de aanmaaktijd van de klantenaccount correct om te zetten in de UTC-0-zone bij migratie:
+In het volgende voorbeeld bespaart Magento 1 ten onrechte tijd in de UTC-7-zone in de database (bijvoorbeeld als gevolg van een fout in de extensie van derden). Voer de volgende stappen uit om de aanmaaktijd van de klantenaccount correct om te zetten in de UTC-0-zone bij migratie:
 
 1. Kopieer het `map-customer.xml.dist` configuratiebestand uit de juiste map van [!DNL Data Migration Tool] (`<your Magento 2 install dir>/vendor/magento/data-migration-tool/etc/<migration edition>` ) naar het `<your Magento 2 install dir>/app/code/Vendor/Migration/etc/<migration edition>/map-customer.xml` -bestand.
 

@@ -4,7 +4,7 @@ description: Voer de volgende stappen uit om aan te passen wat klanten zien wann
 exl-id: 5d9f1493-e771-47b4-b906-3771026cf07a
 source-git-commit: a5dbefda6b77d993756143ef0e7270425f824c44
 workflow-type: tm+mt
-source-wordcount: '533'
+source-wordcount: '531'
 ht-degree: 0%
 
 ---
@@ -56,7 +56,7 @@ Bijvoorbeeld, om onderhoudswijze zonder IP adresvrijstellingen toe te laten:
 bin/magento maintenance:enable
 ```
 
-Onderhoudsmodus inschakelen voor alle clients behalve 192.0.2.10 en 192.0.2.11:
+De onderhoudsmodus inschakelen voor alle clients behalve 192.0.2.10 en 192.0.2.11 :
 
 ```bash
 bin/magento maintenance:enable --ip=192.0.2.10 --ip=192.0.2.11
@@ -86,7 +86,7 @@ Als u meerdere winkels wilt instellen, elk met een andere indeling en gelokalise
 
 In het volgende voorbeeld gebruiken we een `503` sjabloonbestand voor typefouten, waarvoor gelokaliseerde inhoud is vereist.
 
-De constructor van de klasse `Error_Processor` accepteert een parameter `skin` GET om de lay-out te wijzigen:
+De constructor van de klasse `Error_Processor` accepteert een GET-parameter `skin` om de lay-out te wijzigen:
 
 ```php
 if (isset($_GET['skin'])) {
@@ -96,7 +96,7 @@ if (isset($_GET['skin'])) {
 
 Dit kan ook worden toegevoegd aan een herschrijfregel in het `.htaccess` -bestand dat een `skin` -parameter aan de URL toevoegt.
 
-### $_GET[ &quot;skin&quot;] parameter
+### $_GET [ &quot;skin&quot;] parameter
 
 De parameter `skin` gebruiken:
 

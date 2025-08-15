@@ -9,7 +9,7 @@ ht-degree: 1%
 
 ---
 
-# Parameters Bootstrap
+# Bootstrap-parameters
 
 Dit onderwerp toont aan hoe te om de waarden van de parameters van de toepassingslaarzentrekker van Commerce te plaatsen. Zie [ Overzicht van toepassingsinitialisatie en bootstrapping ](initialization.md).
 
@@ -18,7 +18,7 @@ De volgende lijst bespreekt de laarzentrekkerparameters die u kunt plaatsen:
 | Bootstrap, parameter | Beschrijving |
 | ------------------- | -------------------------------------------- |
 | MAGE_DIRS | Aangepaste map- en URL-paden opgeven |
-| MAGE_PROFILER | Maakt afhankelijkheidsgrafieken en HTML-profilering mogelijk |
+| MAGE_PROFILER | Maakt afhankelijkheidsgrafieken en HTML-profielen mogelijk |
 
 >[!INFO]
 >

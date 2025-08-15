@@ -1,11 +1,11 @@
 ---
 title: Hoe werkt gegevensmigratie?
-description: Leer over het proces van de gegevensmigratie tussen Magento 1 en Magento 2, met inbegrip van terminologie, werkschemadiagrammen, en stappen.
+description: Meer informatie over het migratieproces van gegevens tussen Magento 1 en Magento 2, zoals terminologie, workflowdiagrammen en stappen.
 exl-id: 821492dc-ee5b-4c4a-9479-680ee8c5756d
 topic: Commerce, Migration
 source-git-commit: e83e2359377f03506178c28f8b30993c172282c7
 workflow-type: tm+mt
-source-wordcount: '782'
+source-wordcount: '781'
 ht-degree: 0%
 
 ---
@@ -14,7 +14,7 @@ ht-degree: 0%
 
 Dit onderwerp biedt een overzicht op hoog niveau van de manier waarop gegevens worden gemigreerd van Magento 1 naar Magento 2 met de [!DNL Data Migration Tool] .
 
-[!DNL Data Migration Tool] is een bevel-lijn interfacegereedschap (CLI) dat voor het overbrengen van gegevens van Magento 1 naar Magento 2 wordt gebruikt. Het hulpmiddel verifieert consistentie tussen Magento 1 en 2 gegevensbestandstructuren (lijsten en gebieden), volgt de vooruitgang van de gegevensoverdracht, leidt tot logboeken, en stelt tests van de gegevenscontrole in werking.
+[!DNL Data Migration Tool] is een opdrachtregelinterface-hulpmiddel (CLI) voor het overbrengen van gegevens van Magento 1 naar Magento 2. Het hulpmiddel verifieert consistentie tussen Magento 1 en 2 gegevensbestandstructuren (lijsten en gebieden), volgt de vooruitgang van de gegevensoverdracht, leidt tot logboeken, en stelt tests van de gegevenscontrole in werking.
 
 ## Terminologie
 
@@ -25,7 +25,7 @@ Dit onderwerp biedt een overzicht op hoog niveau van de manier waarop gegevens w
 
 ## Modi
 
-[!DNL Data Migration Tool] verdeelt het migratieproces in drie fasen of *wijzen* om gegevens van Magento 1.x over te brengen en aan Magento 2.x aan te passen. De drie modi worden hier vermeld en moeten in deze volgorde worden uitgevoerd:
+[!DNL Data Migration Tool] verdeelt het migratieproces in drie fasen of *wijzen* om gegevens over te brengen en aan te passen van Magento 1.x aan Magento 2.x. De drie modi worden hier vermeld en moeten in deze volgorde worden uitgevoerd:
 
 1. **Wijze van Montages**: migreert de systeemconfiguratie en website-verwante montages.
 1. **Wijze van Gegevens**: migreert gegevensbestandactiva in bulk.
@@ -51,9 +51,9 @@ Binnen elke stap zijn drie *stadia* die altijd in deze orde worden uitgevoerd om
 
 ## Bestanden toewijzen
 
-Op het laagste niveau van de migratieprocessen zijn de *kaartdossiers van XML*. In [!DNL Data Migration Tool] worden kaartbestanden gebruikt in de fasen van een stap voor het transformeren van verschillende gegevensstructuren tussen de tabellen 1.x en 2.x van het Magento.
+Op het laagste niveau van de migratieprocessen zijn de *kaartdossiers van XML*. In [!DNL Data Migration Tool] worden kaartbestanden gebruikt in de fasen van een stap voor het transformeren van verschillende gegevensstructuren tussen de Magento 1.x- en 2.x-tabellen.
 
-Bijvoorbeeld, wanneer u gegevens van een gegevensbestand van de Magento Open Source 1.8.0.0 in Magento Open Source 2.x.x omzet, verklaart het kaartdossier het feit dat een lijst werd anders genoemd, en noemt het dienovereenkomstig in het bestemmingsgegevensbestand anders. Als er geen verschillen in gegevensstructuur of gegevensformaat zijn, brengt [!DNL Data Migration Tool] het ongewijzigd, met inbegrip van gegevens van lijsten die door uitbreidingen worden gecreeerd, naar Magento 2 gegevensbestand over.
+Wanneer u bijvoorbeeld gegevens transformeert van een Magento Open Source 1.8.0.0 -database naar Magento Open Source 2.x.x, wordt in het kaartbestand het feit verwerkt dat de naam van een tabel is gewijzigd en wordt de naam van de tabel dienovereenkomstig gewijzigd in de doeldatabase. Als er geen verschillen in gegevensstructuur of gegevensformaat zijn, brengt [!DNL Data Migration Tool] het ongewijzigd, met inbegrip van gegevens van lijsten die door uitbreidingen worden gecreeerd, aan het gegevensbestand van Magento 2 over.
 
 Als verschillen niet worden gedeclareerd in toewijzingsbestanden, geeft de [!DNL Data Migration Tool] een fout weer en wordt deze niet gestart.
 
@@ -69,7 +69,7 @@ We zijn blij dat je overweegt om van het #1 commerceplatform van de wereld — M
 
 ## Migratieonderdelen
 
-Magento 2 migratie omvat vier componenten: gegevens, extensies en aangepaste code, thema&#39;s en aanpassingen.
+Magento 2-migratie omvat vier componenten: gegevens, extensies en aangepaste code, thema&#39;s en aanpassingen.
 
 ### Gegevens
 
@@ -77,13 +77,13 @@ Wij hebben **Magento 2[!DNL Data Migration Tool]** ontwikkeld om u te helpen eff
 
 ### Extensies en aangepaste code
 
-We hebben hard samengewerkt met de ontwikkelingsgemeenschap om u te helpen bij het gebruik van de extensies voor Magento 1 in Magento 2. Nu zijn wij trots om de [ Commerce Marketplace ](https://marketplace.magento.com/) voor te stellen, waar u de recentste versies van uw favoriete uitbreidingen kunt downloaden of kopen.
+We hebben hard samengewerkt met de ontwikkelingsgemeenschap om u te helpen uw Magento 1-extensies te gebruiken in Magento 2. Nu zijn wij trots om [ Commerce Marketplace ](https://marketplace.magento.com/) voor te stellen, waar u de recentste versies van uw favoriete uitbreidingen kunt downloaden of kopen.
 
 Meer informatie bij het ontwikkelen van uitbreidingen voor Magento 2 is beschikbaar in de [ Gids van de Ontwikkelaar PHP ](https://developer.adobe.com/commerce/php/development/).
 
 ### Thema&#39;s en aanpassingen
 
-Magento 2 maakt gebruik van nieuwe benaderingen en technologieën die handelaren een ongekende mogelijkheid bieden om innovatieve boodschappenervaringen te creëren en op een hoger niveau te schalen. Om van deze vooruitgang te profiteren, moeten de ontwikkelaars veranderingen in hun thema&#39;s en aanpassingen aanbrengen. De documentatie is online beschikbaar voor het creëren van Magento 2 [ thema&#39;s ](https://developer.adobe.com/commerce/frontend-core/guide/themes/), [ lay-outs ](https://developer.adobe.com/commerce/frontend-core/guide/layouts/), en [ aanpassingen ](https://developer.adobe.com/commerce/frontend-core/guide/layouts/xml-manage/).
+Magento 2 maakt gebruik van nieuwe benaderingen en technologieën die handelaren een ongeëvenaarde mogelijkheid bieden om innovatieve boodschappenervaringen te creëren en op een hoger niveau te schalen. Om van deze vooruitgang te profiteren, moeten de ontwikkelaars veranderingen in hun thema&#39;s en aanpassingen aanbrengen. De documentatie is online beschikbaar voor het creëren van Magento 2 [ thema&#39;s ](https://developer.adobe.com/commerce/frontend-core/guide/themes/), [ lay-outs ](https://developer.adobe.com/commerce/frontend-core/guide/layouts/), en [ aanpassingen ](https://developer.adobe.com/commerce/frontend-core/guide/layouts/xml-manage/).
 
 ## Migratiepogingen
 

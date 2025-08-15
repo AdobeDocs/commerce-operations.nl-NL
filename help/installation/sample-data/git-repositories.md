@@ -11,18 +11,18 @@ ht-degree: 0%
 
 # Voorbeeldgegevensopslagruimten klonen
 
-Dit onderwerp bespreekt hoe te om steekproefgegevens te klonen en toe te voegen als u de bewaarplaats van Magento Open Source GitHub kloond. Deze methode is alleen bedoeld voor ontwikkelaars die een bijdrage leveren (dat wil zeggen ontwikkelaars die een bijdrage willen leveren aan de codebase van de Magento Open Source).
+Dit onderwerp bespreekt hoe te om steekproefgegevens te klonen en toe te voegen als u de bewaarplaats van Magento Open Source GitHub kloond. Deze methode is alleen bedoeld voor ontwikkelaars die een bijdrage leveren (dat wil zeggen ontwikkelaars die een bijdrage willen leveren aan de Magento Open Source-codebase).
 
 Als u geen bijdragende ontwikkelaar bent, kies één van de andere opties die in de inhoudstafel op de linkerkant van de pagina worden getoond.
 
 De bijdragende ontwikkelaars kunnen deze methode gebruiken om steekproefgegevens *slechts* te installeren als het volgende waar is:
 
-* U gebruikt Magento Open Source
+* Je gebruikt Magento Open Source
 * U [ gekloond de bewaarplaats GitHub ](https://developer.adobe.com/commerce/contributor/guides/install/clone-repository/)
 
 >[!WARNING]
 >
->U kunt voorbeeldgegevens gebruiken met de `develop` -vertakking (huidiger) of een vrijgegeven vertakking (zoals `2.4` (stabieler)). We raden u aan een vrijgegeven vertakking te gebruiken omdat deze stabieler is. Gebruik de `develop` -vertakking als u code toevoegt aan de repository en u de meest recente code nodig hebt. Ongeacht de tak u kiest, moet u [ klonen ](https://developer.adobe.com/commerce/contributor/guides/install/clone-repository/) de overeenkomstige tak van de bewaarplaats van Magento Open Source GitHub. Bijvoorbeeld, kunnen de steekproefgegevens voor de `develop` tak *slechts* met de Magento Open Source `develop` tak worden gebruikt.
+>U kunt voorbeeldgegevens gebruiken met de `develop` -vertakking (huidiger) of een vrijgegeven vertakking (zoals `2.4` (stabieler)). We raden u aan een vrijgegeven vertakking te gebruiken omdat deze stabieler is. Gebruik de `develop` -vertakking als u code toevoegt aan de repository en u de meest recente code nodig hebt. Ongeacht de tak u kiest, moet u [ klonen ](https://developer.adobe.com/commerce/contributor/guides/install/clone-repository/) de overeenkomstige tak van de bewaarplaats van Magento Open Source GitHub. Bijvoorbeeld, kunnen de steekproefgegevens voor de `develop` tak *slechts* met de tak van Magento Open Source `develop` worden gebruikt.
 
 ## De gegevensopslagplaats van de voorbeeldgegevens klonen
 
@@ -71,7 +71,7 @@ Om de bewaarplaats van GitHub van steekproefgegevens te klonen gebruikend het pr
 
    Bijvoorbeeld:
 
-   Als u de `2.4-develop` -vertakking van de Magento Open Source GitHub-opslagplaats hebt gebruikt, moet de vertakking Voorbeeldgegevens `2.4-develop` zijn.
+   Als u de `2.4-develop` -vertakking van de Magento Open Source GitHub-opslagplaats hebt gebruikt, moet de voorbeeldgegevensvertakking `2.4-develop` zijn.
 
    Als u de juiste vertakking wilt uitchecken, voert u de volgende opdracht uit vanuit de hoofdmap van de gegevensopslagruimte van het voorbeeld (ervan uitgaande dat u de vertakking `2.4-develop` nodig hebt):
 
@@ -125,7 +125,7 @@ U kunt als volgt de GitHub-voorbeeldgegevens klonen met behulp van het HTTPS-pro
 
    Bijvoorbeeld:
 
-   Als u de `2.4-develop` -vertakking van de Magento Open Source GitHub-opslagplaats hebt gebruikt, moet de vertakking Voorbeeldgegevens `2.4-develop` zijn.
+   Als u de `2.4-develop` -vertakking van de Magento Open Source GitHub-opslagplaats hebt gebruikt, moet de voorbeeldgegevensvertakking `2.4-develop` zijn.
 
    Als u de juiste vertakking wilt uitchecken, voert u de volgende opdracht uit vanuit de hoofdmap van de gegevensopslagruimte van het voorbeeld (ervan uitgaande dat u de vertakking `2.4-develop` nodig hebt):
 
@@ -159,7 +159,7 @@ U kunt als volgt de GitHub-voorbeeldgegevens klonen met behulp van het HTTPS-pro
 
 ## Eigendom en machtigingen van bestandssysteem instellen
 
-Omdat het `php build-sample-data.php` -script symlinks creëert tussen de gegevensopslagplaats van het voorbeeld en de gegevensopslagplaats van de Magento Open Source, moet u de machtigingen voor het bestandssysteem en de eigendom in de gegevensopslagplaats van het voorbeeld instellen. Als u dit niet doet, treedt de storefront op in fouten.
+Omdat het `php build-sample-data.php` -script symlinks creëert tussen de gegevensopslagplaats voor voorbeeldgegevens en uw Magento Open Source-opslagplaats, moet u de machtigingen voor het bestandssysteem en de eigendom in de gegevensopslagplaats voor voorbeeldgegevens instellen. Als u dit niet doet, treedt de storefront op in fouten.
 
 U kunt als volgt de machtigingen en het eigendom van het bestandssysteem instellen in de gegevensopslagruimte van het voorbeeld:
 

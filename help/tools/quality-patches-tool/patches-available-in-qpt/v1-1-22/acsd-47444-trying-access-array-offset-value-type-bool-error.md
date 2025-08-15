@@ -12,9 +12,9 @@ ht-degree: 0%
 
 ---
 
-# ACSD-47444: _[!UICONTROL Trying to access array offset on value of type bool]_&#x200B;fout bij het openen van bepaalde niet-bestaande categoriepaden voor bekende producten op PHP 7.4
+# ACSD-47444: _[!UICONTROL Trying to access array offset on value of type bool]_fout bij het openen van bepaalde niet-bestaande categoriepaden voor bekende producten op PHP 7.4
 
-De ACSD-47444-patch lost het probleem op waarbij _[!UICONTROL Trying to access array offset on value of type bool]_&#x200B;error optreedt wanneer je bepaalde niet-bestaande categoriepaden opent voor bekende producten op PHP 7.4. Deze patch is beschikbaar wanneer [[!DNL Quality Patches Tool (QPT)] ](https://experienceleague.adobe.com/nl/docs/commerce-operations/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches) 1.1.22 wordt geïnstalleerd.
+De ACSD-47444-patch lost het probleem op waarbij _[!UICONTROL Trying to access array offset on value of type bool]_error optreedt wanneer je bepaalde niet-bestaande categoriepaden opent voor bekende producten op PHP 7.4. Deze patch is beschikbaar wanneer [[!DNL Quality Patches Tool (QPT)] ](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches) 1.1.22 wordt geïnstalleerd.
 
 ## Betrokken producten en versies
 
@@ -26,11 +26,11 @@ De ACSD-47444-patch lost het probleem op waarbij _[!UICONTROL Trying to access a
 
 >[!NOTE]
 >
->De patch kan van toepassing worden op andere versies met nieuwe [!DNL Quality Patches Tool] versies. Om te controleren of de patch compatibel is met uw Adobe Commerce-versie, werkt u het `magento/quality-patches` -pakket bij naar de meest recente versie en controleert u de compatibiliteit op de [[!DNL Quality Patches Tool] : zoek naar patches op de pagina ](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html?lang=nl-NL) . Gebruik de patch-id als een zoekwoord om de patch te zoeken.
+>De patch kan van toepassing worden op andere versies met nieuwe [!DNL Quality Patches Tool] versies. Om te controleren of de patch compatibel is met uw Adobe Commerce-versie, werkt u het `magento/quality-patches` -pakket bij naar de meest recente versie en controleert u de compatibiliteit op de [[!DNL Quality Patches Tool] : zoek naar patches op de pagina ](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html) . Gebruik de patch-id als een zoekwoord om de patch te zoeken.
 
 ## Probleem
 
-De volgende fout treedt op: _[!UICONTROL Trying to access array offset on value of type bool]_&#x200B;wanneer u bepaalde niet-bestaande categoriepaden opent voor bekende producten, gaat u naar PHP 7.4.
+De volgende fout treedt op: _[!UICONTROL Trying to access array offset on value of type bool]_wanneer u bepaalde niet-bestaande categoriepaden opent voor bekende producten, gaat u naar PHP 7.4.
 
 <u> Eerste vereisten </u>:
 
@@ -57,14 +57,14 @@ _[!UICONTROL Notice: Trying to access array offset on value of type bool in /app
 Om individuele flarden toe te passen, gebruik de volgende verbindingen afhankelijk van uw plaatsingsmethode:
 
 * Op locatie Adobe Commerce of Magento Open Source: [[!DNL Quality Patches Tool] > Gebruik ](/help/tools/quality-patches-tool/usage.md) in de handleiding [!DNL Quality Patches Tool] .
-* Adobe Commerce op wolkeninfrastructuur: [ Verbeteringen en Patches > Pas Patches ](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html?lang=nl-NL) in onze ontwikkelaarsdocumentatie toe.
+* Adobe Commerce op wolkeninfrastructuur: [ Verbeteringen en Patches > Pas Patches ](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html) in onze ontwikkelaarsdocumentatie toe.
 
 ## Gerelateerde lezing
 
 Meer informatie over [!DNL Quality Patches Tool] vindt u in:
 
-* [[!DNL Quality Patches Tool]  vrijgegeven: een nieuw hulpmiddel om kwaliteitspatches ](https://experienceleague.adobe.com/nl/docs/commerce-operations/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches) in de steunkennisbasis zelf-te dienen.
+* [[!DNL Quality Patches Tool]  vrijgegeven: een nieuw hulpmiddel om kwaliteitspatches ](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches) in de steunkennisbasis zelf-te dienen.
 * [ Controle als het flard voor uw kwestie van Adobe Commerce beschikbaar is gebruikend  [!DNL Quality Patches Tool]](/help/tools/quality-patches-tool/patches-available-in-qpt/check-patch-for-magento-issue-with-magento-quality-patches.md) in de [!UICONTROL Quality Patches Tool] gids.
 
 
-Voor informatie over andere flarden beschikbaar in QPT, verwijs naar [[!DNL Quality Patches Tool]: Onderzoek naar flarden ](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html?lang=nl-NL) in de [!DNL Quality Patches Tool] gids.
+Voor informatie over andere flarden beschikbaar in QPT, verwijs naar [[!DNL Quality Patches Tool]: Onderzoek naar flarden ](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html) in de [!DNL Quality Patches Tool] gids.

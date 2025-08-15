@@ -7,7 +7,7 @@ exl-id: 340dcc84-dcb8-40ed-b2ab-2d950d1dd1ca
 type: Troubleshooting
 source-git-commit: 7fdb02a6d89d50ea593c5fd99d78101f89198424
 workflow-type: tm+mt
-source-wordcount: '404'
+source-wordcount: '405'
 ht-degree: 0%
 
 ---
@@ -28,7 +28,7 @@ De ACSD-62793-patch verhelpt het probleem waarbij datetime-kenmerken in geëxpor
 
 >[!NOTE]
 >
->De patch kan van toepassing worden op andere versies met nieuwe [!DNL Quality Patches Tool] versies. Om te controleren of de patch compatibel is met uw Adobe Commerce-versie, werkt u het `magento/quality-patches` -pakket bij naar de meest recente versie en controleert u de compatibiliteit op de [[!DNL Quality Patches Tool] : zoek naar patches op de pagina ](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html?lang=nl-NL) . Gebruik de patch-id als een zoekwoord om de patch te zoeken.
+>De patch kan van toepassing worden op andere versies met nieuwe [!DNL Quality Patches Tool] versies. Om te controleren of de patch compatibel is met uw Adobe Commerce-versie, werkt u het `magento/quality-patches` -pakket bij naar de meest recente versie en controleert u de compatibiliteit op de [[!DNL Quality Patches Tool] : zoek naar patches op de pagina ](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html) . Gebruik de patch-id als een zoekwoord om de patch te zoeken.
 
 ## Probleem
 
@@ -41,7 +41,7 @@ Datumtijdkenmerken in geëxporteerde gegevens omvatten niet de tijdcomponent. Bo
 1. Maak een eenvoudig product met een datum- en tijdwaarde voor het nieuwe kenmerk.
 1. Exporteer het product naar een CSV-bestand vanuit **[!UICONTROL System]** > *Gegevensoverdracht* > **[!UICONTROL Export]** .
 1. Controleer de attributenwaarde in de *extra_attributes* kolom. Het heeft alleen het datumgedeelte, maar niet de tijd.
-1. Werk de kenmerkwaarde bij om de tijd te gebruiken, bijvoorbeeld &quot;08/10/22, 3:20 PM&quot;.
+1. Werk de kenmerkwaarde bij om de tijd te gebruiken, bijvoorbeeld &quot;08/10/22, 3 :20 PM&quot;.
 1. Het CSV-bestand importeren.
 1. Controleer *catalog_product_entity_datetime* lijst.
 
@@ -58,7 +58,7 @@ Alleen het datumgedeelte wordt geëxporteerd en geïmporteerd.
 Om individuele flarden toe te passen, gebruik de volgende verbindingen afhankelijk van uw plaatsingsmethode:
 
 * Op locatie Adobe Commerce of Magento Open Source: [[!DNL Quality Patches Tool] > Gebruik ](/help/tools/quality-patches-tool/usage.md) in de handleiding [!DNL Quality Patches Tool] .
-* Adobe Commerce op wolkeninfrastructuur: [ Verbeteringen en Patches > Pas Patches ](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html?lang=nl-NL) in Commerce op de gids van de Infrastructuur van de Wolk toe.
+* Adobe Commerce op wolkeninfrastructuur: [ Verbeteringen en Patches > Pas Patches ](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html) in Commerce op de gids van de Infrastructuur van de Wolk toe.
 
 
 ## Gerelateerde lezing

@@ -13,7 +13,7 @@ ht-degree: 0%
 
 # Aanbevolen werkwijzen voor afhandelingsprestaties
 
-Het [ controle ](https://experienceleague.adobe.com/nl/docs/commerce-admin/stores-sales/point-of-purchase/checkout/checkout-process) proces in Adobe Commerce is een kritiek aspect van de storefront ervaring. Het baseert zich op de ingebouwde [ kar ](https://experienceleague.adobe.com/nl/docs/commerce-admin/start/storefront/storefront#shopping-cart) en [ controle ](https://experienceleague.adobe.com/nl/docs/commerce-admin/start/storefront/storefront#checkout-page) mogelijkheden.
+Het [ controle ](https://experienceleague.adobe.com/en/docs/commerce-admin/stores-sales/point-of-purchase/checkout/checkout-process) proces in Adobe Commerce is een kritiek aspect van de storefront ervaring. Het baseert zich op de ingebouwde [ kar ](https://experienceleague.adobe.com/en/docs/commerce-admin/start/storefront/storefront#shopping-cart) en [ controle ](https://experienceleague.adobe.com/en/docs/commerce-admin/start/storefront/storefront#checkout-page) mogelijkheden.
 
 Prestaties zijn essentieel voor een goede gebruikerservaring. U kunt controleprestaties optimaliseren door de volgende opties voor **verwerking van de hoog-productieorde** te vormen:
 
@@ -30,7 +30,7 @@ De opties AsyncOrder, Uitgestelde Totale Berekening, en de Controle van de Inven
 
 ## Asynchrone orderplaatsing
 
-De _module van de Orde van 0&rbrace; Async laat asynchrone ordeplaatsing toe, die de orde als `received` merkt, plaatst de orde in een rij, en verwerkt orden van de rij op een eerste in-eerste-uit basis._ AsyncOrder is **gehandicapt** door gebrek.
+De _module van de Orde van 0} Async laat asynchrone ordeplaatsing toe, die de orde als_ merkt, plaatst de orde in een rij, en verwerkt orden van de rij op een eerste in-eerste-uit basis. `received` AsyncOrder is **gehandicapt** door gebrek.
 
 Een klant voegt bijvoorbeeld een product toe aan zijn winkelwagentje en selecteert **[!UICONTROL Proceed to Checkout]** . Ze vullen het **[!UICONTROL Shipping Address]** -formulier in, selecteren hun voorkeur **[!UICONTROL Shipping Method]** , selecteren een betalingsmethode en plaatsen de bestelling. Het winkelwagentje wordt gewist, de bestelling wordt gemarkeerd als **[!UICONTROL Received]** , maar het aantal producten wordt nog niet aangepast en er wordt ook geen e-mail naar de klant verzonden. De bestelling wordt ontvangen, maar de gegevens van de bestelling zijn nog niet beschikbaar omdat de bestelling niet volledig is verwerkt. Het blijft in de rij tot de `placeOrderProcess` consument begint, verifieert de orde met de [ eigenschap van de inventariscontrole ](#disable-inventory-check) (die door gebrek wordt toegelaten), en werkt de orde als volgt bij:
 
@@ -86,7 +86,7 @@ AsyncOrder ondersteunt een beperkt aantal Adobe Commerce-functies.
 | Categorie | Ondersteunde functie |
 |------------------|--------------------------------------------------------------------------|
 | Afhandelingstypen | ÉénPagina Afhandeling <br> StandaardAfhandeling <br> B2B Negotiable Citaat |
-| Betalingsmethoden | Controle/Geldorde <br> Geld op Levering <br> Braintree <br> PayPal PayFlow Pro |
+| Betalingsmethoden | Controle/Geldorde <br> Geld op Levering <br> Braintree <br> PayPal PayPal Pro |
 | Verzendmethoden | Alle verzendmethoden worden ondersteund. |
 
 De volgende eigenschappen worden **niet** gesteund door AsyncOrder, maar blijven synchroon werken:
@@ -174,13 +174,13 @@ _laat Overzicht op de Lading van de Kar_ toe het globale plaatsen bepaalt of om 
 
 Indien uitgeschakeld, wordt de inventariscontrole niet uitgevoerd wanneer een product aan het winkelwagentje wordt toegevoegd. Als deze inventariscontrole wordt overgeslagen, zouden sommige uit-van-voorraadscenario&#39;s andere soorten fouten kunnen werpen. Een inventariscontrole _komt altijd voor_ bij de stap van de ordeplaatsing, zelfs wanneer onbruikbaar gemaakt.
 
-**laat de Controle van de Inventaris op de Lading van de Kunst toe** wordt toegelaten (reeks aan ja) door gebrek. Om de inventariscontrole onbruikbaar te maken wanneer het laden van de kar, plaats **[!UICONTROL Enable Inventory Check On Cart Load]** aan `No` in Admin UI **Opslag** > **Configuratie** > **Catalogus** > **Voorraad** > **sectie van de Opties van de Beeld 11&rbrace;.** Zie [ Globale Opties ](https://experienceleague.adobe.com/nl/docs/commerce-admin/inventory/configuration/global-options) en [ Inventaris van de Catalogus ](https://experienceleague.adobe.com/nl/docs/commerce-admin/inventory/guide-overview) in de _Gids van de Gebruiker_ vormen.
+**laat de Controle van de Inventaris op de Lading van de Kunst toe** wordt toegelaten (reeks aan ja) door gebrek. Om de inventariscontrole onbruikbaar te maken wanneer het laden van de kar, plaats **[!UICONTROL Enable Inventory Check On Cart Load]** aan `No` in Admin UI **Opslag** > **Configuratie** > **Catalogus** > **Voorraad** > **sectie van de Opties van de Beeld 11}.** Zie [ Globale Opties ](https://experienceleague.adobe.com/en/docs/commerce-admin/inventory/configuration/global-options) en [ Inventaris van de Catalogus ](https://experienceleague.adobe.com/en/docs/commerce-admin/inventory/guide-overview) in de _Gids van de Gebruiker_ vormen.
 
 ## Taakverdeling
 
 U kunt helpen lading over verschillende knopen in evenwicht brengen door secundaire verbindingen voor het gegevensbestand MySQL en instantie Redis toe te laten.
 
-Adobe Commerce kan meerdere databases of Redis-instanties asynchroon lezen. Als u Commerce op wolkeninfrastructuur gebruikt, kunt u de secundaire verbindingen vormen door de [ waarden MYSQL_USE_SLAVE_CONNECTION ](https://experienceleague.adobe.com/nl/docs/commerce-cloud-service/user-guide/configure/env/stage/variables-deploy#mysql_use_slave_connection) en [ REDIS_USE_SLAVE_CONNECTION ](https://experienceleague.adobe.com/nl/docs/commerce-cloud-service/user-guide/configure/env/stage/variables-deploy#redis_use_slave_connection) in het `.magento.env.yaml` dossier uit te geven. Slechts één knoop moet read-write verkeer behandelen, zodat leidt het plaatsen van de variabelen aan `true` tot het creëren van een secundaire verbinding voor read-only verkeer. Stel de waarden in op `false` als u een bestaande alleen-lezen verbindingsarray uit het `env.php` -bestand wilt verwijderen.
+Adobe Commerce kan meerdere databases of Redis-instanties asynchroon lezen. Als u Commerce op wolkeninfrastructuur gebruikt, kunt u de secundaire verbindingen vormen door de [ waarden MYSQL_USE_SLAVE_CONNECTION ](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/configure/env/stage/variables-deploy#mysql_use_slave_connection) en [ REDIS_USE_SLAVE_CONNECTION ](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/configure/env/stage/variables-deploy#redis_use_slave_connection) in het `.magento.env.yaml` dossier uit te geven. Slechts één knoop moet read-write verkeer behandelen, zodat leidt het plaatsen van de variabelen aan `true` tot het creëren van een secundaire verbinding voor read-only verkeer. Stel de waarden in op `false` als u een bestaande alleen-lezen verbindingsarray uit het `env.php` -bestand wilt verwijderen.
 
 Voorbeeld van het bestand `.magento.env.yaml` :
 

@@ -18,9 +18,9 @@ Als u Commerce op één enkele machine opstelt en wat onderbreking tijdens plaat
 
 ## Implementatie van pijpleidingen
 
-Met versie 2.2 van Commerce, introduceerde de Adobe _pijpleidingsplaatsing_ als nieuwe manier om aan productie met minimale onderbreking op te stellen. Dit plaatsingsproces komt op verschillende systemen voor en verstrekt een manier om verenigbare configuraties voor alle systemen van de pijpleidingsplaatsing te handhaven. Het is een eenvoudig maar krachtig model dat u toelaat om gewone configuratiemontages van of systeem-specifieke montages (zoals gastheer en haven) of gevoelige montages (zoals namen en wachtwoorden) te scheiden.
+Met versie 2.2 van Commerce, introduceerde Adobe _pijpleidingsplaatsing_ als nieuwe manier om aan productie met minimale onderbreking op te stellen. Dit plaatsingsproces komt op verschillende systemen voor en verstrekt een manier om verenigbare configuraties voor alle systemen van de pijpleidingsplaatsing te handhaven. Het is een eenvoudig maar krachtig model dat u toelaat om gewone configuratiemontages van of systeem-specifieke montages (zoals gastheer en haven) of gevoelige montages (zoals namen en wachtwoorden) te scheiden.
 
-Om pijpleidingsplaatsing te gebruiken, veronderstelt de Adobe dat u bent:
+Om pijpleidingsplaatsing te gebruiken, veronderstelt Adobe dat u bent:
 
 - Een ervaren systeemintegrator met uitstekende kennis van Adobe Commerce-configuratieopties.
 - Het beheren van een grote Commerce-site (duizenden SKU&#39;s (stock-keeping units)) en de downtime van productiesites tot een minimum beperken.

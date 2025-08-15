@@ -16,7 +16,7 @@ In deze sectie vindt u instructies voor het installeren van een memcached op Ubu
 
 >[!INFO]
 >
->Adobe raadt u aan een memcacheversie 3.0.5 of hoger te gebruiken.
+>Adobe raadt u aan om memcached versie 3.0.5 of hoger te gebruiken.
 
 Omdat PHP geen native ondersteuning heeft voor memcache, moet je een extensie installeren voor PHP om deze te kunnen gebruiken. Er zijn twee PHP-extensies beschikbaar en het is belangrijk te decoderen welke extensie moet worden gebruikt:
 
@@ -63,9 +63,9 @@ De `memcache` uitbreiding momenteel _werkt niet_ met PHP 7. Zie [ PHP documentat
 
 1. Ga verder met de volgende sectie.
 
-## Controleren of de cache werkt voordat Magento wordt geïnstalleerd
+## De werking van een geheugen controleren voordat u Magento installeert
 
-Adobe raadt aan een memcachegeheugen te testen om te controleren of dit werkt voordat u Commerce installeert. Dit neemt slechts een paar minuten in beslag en kan het oplossen van problemen later vereenvoudigen.
+Adobe raadt u aan een memcachegeheugen te testen om te controleren of dit werkt voordat u Commerce installeert. Dit neemt slechts een paar minuten in beslag en kan het oplossen van problemen later vereenvoudigen.
 
 ### Controleren of het in de cache geplaatste item wordt herkend door de webserver
 

@@ -221,7 +221,7 @@ waar
 
 >[!INFO]
 >
->Het `bin/magento config:show` bevel toont de waarden van om het even welke [ gecodeerde waarden ](../reference/config-reference-sens.md) als reeks asterisken: `**&#x200B;**&#x200B;**`.
+>Het `bin/magento config:show` bevel toont de waarden van om het even welke [ gecodeerde waarden ](../reference/config-reference-sens.md) als reeks asterisken: `******`.
 
 ### Voorbeelden
 

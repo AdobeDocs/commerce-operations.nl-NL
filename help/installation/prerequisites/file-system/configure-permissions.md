@@ -158,7 +158,7 @@ Als u de eigenaar van het bestandssysteem in de primaire groep van de webserver 
 
 >[!NOTE]
 >
->De `-a -G` opties zijn belangrijk omdat zij `apache` of `www-data` als a *secundaire* groep aan de gebruikersrekening toevoegen, die de 5&rbrace; primaire *groep van de gebruiker &lbrace;bewaart.* Het toevoegen van een secundaire groep aan een hulp van de gebruikersrekening [ beperkt dossiereigendom en toestemmingen ](#set-ownership-and-permissions-for-two-users) om leden van een gedeelde groep slechts toegang tot bepaalde dossiers te verzekeren.
+>De `-a -G` opties zijn belangrijk omdat zij `apache` of `www-data` als a *secundaire* groep aan de gebruikersrekening toevoegen, die de 5} primaire *groep van de gebruiker {bewaart.* Het toevoegen van een secundaire groep aan een hulp van de gebruikersrekening [ beperkt dossiereigendom en toestemmingen ](#set-ownership-and-permissions-for-two-users) om leden van een gedeelde groep slechts toegang tot bepaalde dossiers te verzekeren.
 
 Als u bijvoorbeeld de gebruiker `magento_user` wilt toevoegen aan de `apache` primaire groep op CentOS:
 

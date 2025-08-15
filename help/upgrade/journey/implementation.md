@@ -17,7 +17,7 @@ De implementatie van de upgrade bestaat uit vijf fasen:
 - Ontwikkeling en kwaliteitsborging
 - Gebruikerstoepassingstest (UAT) en voorbereiding op het starten
 - Starten
-- Post-launch
+- Na het starten
 
 ## Upgradeanalyse
 
@@ -84,8 +84,8 @@ Volg uw communicatieplan en zorg ervoor dat alle belanghebbenden op de hoogte zi
 
 Tot slot wil u uw team vragen lessen te leren en valkuilen te bepalen. Deze terugblik helpt u om het proces de volgende keer te verbeteren.
 
-## Post-Launch
+## Na starten
 
 Nadat uw site is gestart, controleert u de analysegegevens, de Google Search Console en andere bronnen om te controleren of er geen onverwachte problemen zijn en of alles werkt zoals u had verwacht.
 
-Het is altijd een goed idee om de prestaties in de gaten te houden door middel van goed ontworpen controlemiddelen. U kunt de prestaties van uw site op veel verschillende manieren controleren, dus kies er een die goed overeenkomt met uw organisatie. Wij adviseren dat de klanten van Adobe Commerce die ons systeem van het beheer van de wolkeninfrastructuur gebruiken uit de diensten zoals [ New Relic ](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/monitor/new-relic/new-relic-service.html?lang=nl-NL) voordeel halen om plaatsprestaties te controleren.
+Het is altijd een goed idee om de prestaties in de gaten te houden door middel van goed ontworpen controlemiddelen. U kunt de prestaties van uw site op veel verschillende manieren controleren, dus kies er een die goed overeenkomt met uw organisatie. Wij adviseren dat de klanten van Adobe Commerce die ons systeem van het beheer van de wolkeninfrastructuur gebruiken uit de diensten zoals [ New Relic ](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/monitor/new-relic/new-relic-service.html) voordeel halen om plaatsprestaties te controleren.

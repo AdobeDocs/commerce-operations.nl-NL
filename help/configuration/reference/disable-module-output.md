@@ -32,7 +32,7 @@ Uitschakelen van uitvoer wordt uitgevoerd in de volgende klassen:
 
 Om moduleoutput in de pijpleidingsplaatsing of een andere plaatsing, met veelvoudige instanties van de toepassing van Commerce onbruikbaar te maken:
 
-1. Bewerk het bestand `config.xml` van de module `Backend` .
+1. Bewerk het bestand `Backend` van de module `config.xml` .
 1. Exporteer de configuratiewijzigingen.
 
 ### Het bestand `Backend` module `config.xml` bewerken

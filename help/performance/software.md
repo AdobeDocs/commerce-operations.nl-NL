@@ -1,5 +1,5 @@
 ---
-title: Software Recommendations
+title: Aanbevelingen voor software
 description: Bekijk een lijst met aanbevolen software voor optimale prestaties van Adobe Commerce-implementaties.
 feature: Best Practices, Install
 exl-id: b091a733-7655-4e91-a988-93271872c5d5
@@ -151,7 +151,7 @@ opcache.validate_timestamps=0
 opcache.enable_cli=1
 ```
 
-Wanneer u de geheugentoewijzing voor opcache precies afstemt, moet u rekening houden met de grootte van de codebasis van het Magento en al uw extensies. Het prestatieteam van het Magento gebruikt de waarden in het vorige voorbeeld voor het testen omdat het genoeg ruimte in opcache voor het gemiddelde aantal geïnstalleerde extensies verstrekt.
+Wanneer u de geheugentoewijzing voor opcache precies afstemt, moet u rekening houden met de grootte van de Magento-codebasis en al uw extensies. Het prestatieteam van Magento gebruikt de waarden in het vorige voorbeeld voor het testen omdat het voldoende ruimte in opcache biedt voor het gemiddelde aantal geïnstalleerde extensies.
 
 Als u een computer met weinig geheugen hebt en u niet veel extensies of aanpassingen hebt geïnstalleerd, gebruikt u de volgende instellingen voor een vergelijkbaar resultaat:
 
@@ -256,7 +256,7 @@ Start de [!DNL Varnish] -server opnieuw om in de cache opgeslagen middelen te ve
 
 ## In cache plaatsen en sessieservers
 
-Magento biedt een aantal opties voor het opslaan van de cache en sessiegegevens, waaronder Redis, Memcache, bestandssysteem en database. Enkele van deze opties worden hieronder besproken.
+Magento biedt een aantal opties voor het opslaan van uw cache- en sessiegegevens, zoals Redis, Memcache, bestandssysteem en database. Enkele van deze opties worden hieronder besproken.
 
 ### Eén webknooppunt instellen
 

@@ -28,7 +28,7 @@ Het **[!DNL WAF Top 10 blocked IP Addresses]** kader toont de hoogste 10 het mee
 
 ## [!DNL WAF Top 10 countries for blocked requests]
 
-![ WAF hoogste 10 landen voor geblokkeerde verzoeken ](../../assets/tools/observation-for-adobe-commerce/waf-3.jpg)
+![ WAF top 10 landen voor geblokkeerde verzoeken ](../../assets/tools/observation-for-adobe-commerce/waf-3.jpg)
 
 Het frame **[!DNL WAF Top 10 countries for blocked requests]** bevat een aantal geblokkeerde aanvragen voor landen in de bovenste 10 voor geblokkeerde aanvragen van de [!DNL firewall] .
 
@@ -46,7 +46,7 @@ In het frame **[!DNL Top 10 WAF Rules Executed and Logged by IP address]** worde
 
 ## [!DNL WAF Logged Details]
 
-![ WAF geregistreerde details ](../../assets/tools/observation-for-adobe-commerce/waf-6.jpg)
+![ WAF registreerde details ](../../assets/tools/observation-for-adobe-commerce/waf-6.jpg)
 
 In het frame **[!DNL WAF Logged Details]** worden aanvragen weergegeven die door [!DNL firewall] zijn geregistreerd, inclusief gegevens zoals tijdstempel, plaats, regio en datacenter.
 

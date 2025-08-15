@@ -13,10 +13,10 @@ ht-degree: 0%
 
 Voor deze taak moet u een hoofdcategorie (en desgewenst extra categorieën) voor elke winkel maken. De taken die in dit onderwerp worden besproken verstrekken één manier aan opstelling veelvoudige opslag. Raadpleeg de volgende bronnen in de Commerce User Guide voor meer informatie:
 
-- [ Categorieën ](https://experienceleague.adobe.com/nl/docs/commerce-admin/catalog/categories/categories)
-- [ toevoegend Websites ](https://experienceleague.adobe.com/nl/docs/commerce-admin/stores-sales/site-store/stores#add-websites)
-- [ opslag URLs ](https://experienceleague.adobe.com/nl/docs/commerce-admin/stores-sales/site-store/store-urls)
-- [ Inhoud ](https://experienceleague.adobe.com/nl/docs/commerce-admin/content-design/content-menu)
+- [ Categorieën ](https://experienceleague.adobe.com/en/docs/commerce-admin/catalog/categories/categories)
+- [ toevoegend Websites ](https://experienceleague.adobe.com/en/docs/commerce-admin/stores-sales/site-store/stores#add-websites)
+- [ opslag URLs ](https://experienceleague.adobe.com/en/docs/commerce-admin/stores-sales/site-store/store-urls)
+- [ Inhoud ](https://experienceleague.adobe.com/en/docs/commerce-admin/content-design/content-menu)
 
 >[!INFO]
 >
@@ -31,10 +31,10 @@ Een hoofdcategorie maken:
 1. Meld u aan bij de beheerder als een gebruiker die geautoriseerd is om categorieën te maken.
 1. Klik **Catalogus** > **Categorieën**.
 1. Klik **toevoegen de Categorie van de Wortel**.
-1. Op het **gebied van de Naam van de Categorie 0&rbrace; &lbrace;, ga een unieke naam in om deze categorie te identificeren.**
+1. Op het **gebied van de Naam van de Categorie 0} {, ga een unieke naam in om deze categorie te identificeren.**
 1. Zorg ervoor dat laat Categorie toe wordt geplaatst aan **ja**.
 
-   Voor informatie over de andere opties op deze pagina, zie [ de Categorieën van de Wortel ](https://experienceleague.adobe.com/nl/docs/commerce-admin/catalog/categories/category-root).
+   Voor informatie over de andere opties op deze pagina, zie [ de Categorieën van de Wortel ](https://experienceleague.adobe.com/en/docs/commerce-admin/catalog/categories/category-root).
 
    In de volgende afbeelding ziet u een voorbeeld.
 
@@ -112,7 +112,7 @@ De URL van de websitebasis wijzigen:
    ![ selecteer een werkingsgebied ](../../assets/configuration/multi-site-scope.png)
 
 1. In de juiste ruit, breid **Basis URLs** uit.
-1. In de _sectie van 0&rbrace; Basis URLs &lbrace;, ontruim **het systeemwaarde van het Gebruik**._
+1. In de _sectie van 0} Basis URLs {, ontruim_ het systeemwaarde van het Gebruik **.**
 1. Ga `http://french.magento.mg` URL in de **Basis URL** en **van de Verbinding URL van de Basis** gebieden in.
 
 1. Herhaal de vorige stap in de _Basis URLs (Veilig)_ sectie.
@@ -131,7 +131,7 @@ Commerce biedt u de mogelijkheid om de winkelcode toe te voegen aan de URL van h
 
 Zo voorkomt u dat `index.php` en `.htaccess` in toekomstige upgrades niet meer synchroon raken met de Commerce-codebase.
 
-Zie de [ Gids van de Gebruiker van Commerce ](https://experienceleague.adobe.com/nl/docs/commerce-admin/stores-sales/site-store/store-urls).
+Zie de [ Gids van de Gebruiker van Commerce ](https://experienceleague.adobe.com/en/docs/commerce-admin/stores-sales/site-store/store-urls).
 
 U voegt als volgt de code van de winkel toe aan de basis-URL:
 
@@ -162,7 +162,7 @@ De standaard basis-URL van de winkelweergave wijzigen:
    ![ selecteer het gebrek config werkingsgebied ](../../assets/configuration/multi-site-default.png)
 
 1. In de juiste ruit, breid **Basis URLs** uit.
-1. In de _sectie van 0&rbrace; Basis URLs &lbrace;, ontruim **het systeemwaarde van het Gebruik**._
+1. In de _sectie van 0} Basis URLs {, ontruim_ het systeemwaarde van het Gebruik **.**
 1. Ga `http://magento.mg` URL in de **Basis URL** en **van de Verbinding URL van de Basis** gebieden in.
 
 1. Herhaal de vorige stap in de **Basis URLs (Veilig)** sectie.

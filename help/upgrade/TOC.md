@@ -14,7 +14,7 @@ ht-degree: 0%
 # Upgradehandleiding {#upgrade-guide}
 
 - [Overzicht van het upgradeproces](overview.md)
-- Reis upgraden {#journey}
+- Upgradereis {#journey}
    - [Reisfasen](journey/phases.md)
    - [Project starten](journey/project-launch.md)
    - [Jaarlijkse planning](journey/annual-planning.md)
@@ -30,21 +30,21 @@ ht-degree: 0%
 - Modules en extensies {#modules}
    - [Upgrademodules](modules/upgrade.md)
    - [Modules beheren](modules/manage.md)
-- Reparaties {#patches}
+- Patches {#patches}
    - [Hoe patches werken](patches/overview.md)
    - [Patches toepassen](patches/apply.md)
 - [!DNL Upgrade Compatibility Tool] {#upgrade-compatibility-tool}
    - [Overzicht](upgrade-compatibility-tool/overview.md)
    - [Systeemvereisten](upgrade-compatibility-tool/prerequisites.md)
-   - De opdracht [!DNL Upgrade Compatibility Tool] gebruiken {#use-upgrade-compatibility-tool}
+   - De [!DNL Upgrade Compatibility Tool] gebruiken {#use-upgrade-compatibility-tool}
       - [Het gereedschap uitvoeren in een opdrachtregelinterface](upgrade-compatibility-tool/run.md)
       - [Integreer met  [!DNL Site-Wide Analysis Tool]](upgrade-compatibility-tool/integrate-analysis-tool.md)
-      - [Het gereedschap uitvoeren in de PHPStorm-insteekmodule van het Magento](upgrade-compatibility-tool/run-configuration-phpstorm-plugin.md)
-   - Rapporteren {#reporting}
+      - [Het gereedschap uitvoeren in de Magento PHPStorm-plug-in](upgrade-compatibility-tool/run-configuration-phpstorm-plugin.md)
+   - Rapportage {#reporting}
       - [Rapporten](upgrade-compatibility-tool/reports.md)
       - [Foutberichten](upgrade-compatibility-tool/error-messages.md)
    - [Gerelateerde gereedschappen](upgrade-compatibility-tool/related-tools.md)
-- Medewerkende ontwikkelaars {#developer}
+- Ontwikkelaars helpen {#developer}
    - [Een op een git gebaseerde installatie upgraden](developer/git-installs.md)
    - [Modules beheren](developer/manage-modules.md)
 - Problemen oplossen {#troubleshooting}
@@ -54,4 +54,4 @@ ht-degree: 0%
 - Bronnen {#resources}
    - [Aanbevolen lezen](resources/recommended-reading.md)
    - [Modernisering van uw platform met Adobe Commerce](resources/recommended-upgrade-paths.md)
-- [ Terugkeer aan Operationele Gidsen ](https://experienceleague.adobe.com/docs/commerce-operations/operational-guides/home.html?lang=nl-NL)
+- [ Terugkeer aan Operationele Gidsen ](https://experienceleague.adobe.com/docs/commerce-operations/operational-guides/home.html)

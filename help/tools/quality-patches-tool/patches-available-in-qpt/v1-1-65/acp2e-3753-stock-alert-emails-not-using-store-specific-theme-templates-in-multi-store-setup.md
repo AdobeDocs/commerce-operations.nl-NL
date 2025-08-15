@@ -3,13 +3,13 @@ title: 'ACP2E-3753: E-mailberichten met voorraadwaarschuwingen die geen winkelsp
 description: Pas de ACP2E-3753-patch toe om het Adobe Commerce-probleem op te lossen, waarbij e-mails met productwaarschuwingen in een multi-store-instelling altijd met het standaardthema worden verzonden, ongeacht de winkel- of themaconfiguratie.
 feature: Themes, Personalization
 role: Admin, Developer
-source-git-commit: 6af6dc5d4880cc0cb80c443cab98cfb562949101
+exl-id: ad44ffdd-f122-4119-83e3-1816951b662c
+source-git-commit: 2089fed83a207f9d0211273652ea320d2590f8d5
 workflow-type: tm+mt
 source-wordcount: '379'
 ht-degree: 0%
 
 ---
-
 
 # ACP2E-3753: E-mailberichten met voorraadwaarschuwingen die geen winkelspecifieke themasjablonen gebruiken in multi-store installatie
 
@@ -27,7 +27,7 @@ De ACP2E-3753-patch verhelpt het probleem waarbij e-mails met productwaarschuwin
 
 >[!NOTE]
 >
->De patch kan van toepassing worden op andere versies met nieuwe [!DNL Quality Patches Tool] versies. Om te controleren of de patch compatibel is met uw Adobe Commerce-versie, werkt u het `magento/quality-patches` -pakket bij naar de meest recente versie en controleert u de compatibiliteit op de [[!DNL Quality Patches Tool] : zoek naar patches op de pagina ](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html?lang=nl-NL) . Gebruik de patch-id als een zoekwoord om de patch te zoeken.
+>De patch kan van toepassing worden op andere versies met nieuwe [!DNL Quality Patches Tool] versies. Om te controleren of de patch compatibel is met uw Adobe Commerce-versie, werkt u het `magento/quality-patches` -pakket bij naar de meest recente versie en controleert u de compatibiliteit op de [[!DNL Quality Patches Tool] : zoek naar patches op de pagina ](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html) . Gebruik de patch-id als een zoekwoord om de patch te zoeken.
 
 ## Probleem
 
@@ -61,7 +61,7 @@ De e-mails bevatten niet de sjablonen die zijn ingesteld in de betreffende websi
 Om individuele flarden toe te passen, gebruik de volgende verbindingen afhankelijk van uw plaatsingsmethode:
 
 * Op locatie Adobe Commerce of Magento Open Source: [[!DNL Quality Patches Tool] > Gebruik ](/help/tools/quality-patches-tool/usage.md) in de handleiding [!DNL Quality Patches Tool] .
-* Adobe Commerce op wolkeninfrastructuur: [ Verbeteringen en Patches > Pas Patches ](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html?lang=nl-NL) in Commerce op de gids van de Infrastructuur van de Wolk toe.
+* Adobe Commerce op wolkeninfrastructuur: [ Verbeteringen en Patches > Pas Patches ](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html) in Commerce op de gids van de Infrastructuur van de Wolk toe.
 
 ## Gerelateerde lezing
 

@@ -1,6 +1,6 @@
 ---
-title: Het tabblad [!DNL RabbitMQ]
-description: Meer informatie over het tabblad [!UICONTROL [!DNL RabbitMQ] &#x200B;] van  [!DNL Observation for Adobe Commerce] .
+title: Het tabblad [!UICONTROL [!DNL RabbitMQ]
+description: Meer informatie over het tabblad [!UICONTROL [!DNL RabbitMQ] ] van  [!DNL Observation for Adobe Commerce] .
 exl-id: c5370c30-fed8-4f45-89c3-ef0d6ad41a89
 feature: Configuration, Observability
 source-git-commit: e83e2359377f03506178c28f8b30993c172282c7

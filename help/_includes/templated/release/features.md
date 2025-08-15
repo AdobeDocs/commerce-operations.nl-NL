@@ -45,7 +45,7 @@ https://github.com/AdobeDocs/commerce-operations.en/blob/main/README.md#template
       <td>+</td>
     </tr>
     <tr>
-      <td>Product Recommendations aangedreven door Adobe Sensei (B2C &amp; B2B)</td>
+      <td>Productaanbevelingen van Adobe Sensei (B2C en B2B)</td>
       <td></td>
       <td></td>
       <td></td>

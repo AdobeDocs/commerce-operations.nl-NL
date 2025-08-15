@@ -41,7 +41,7 @@ Als gebruiker met `root` rechten opent u het `php.ini` -bestand en zoekt u naar 
 
 ## Sessiegrootte beheren
 
-Zie het [ beheer van de Zitting ](https://experienceleague.adobe.com/nl/docs/commerce-admin/systems/security/security-session-management) in de _gids van de Gebruiker_.
+Zie het [ beheer van de Zitting ](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/security/security-session-management) in de _gids van de Gebruiker_.
 
 ## Configuratie van afvalophaling
 

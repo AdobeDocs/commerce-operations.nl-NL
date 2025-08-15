@@ -36,13 +36,13 @@ In het **[!UICONTROL Create Account access]** -frame wordt het aantal nieuwe acc
 
 In het frame **[!UICONTROL POST activities]** worden de `POST` -activiteiten voor de site weergegeven, die in `client_ip` via de [!DNL Fastly] -logboeken zijn geactiveerd. Het toont ook URL die door het IP adres wordt betreden.
 
-![ POST-activiteiten ](../../assets/tools/observation-for-adobe-commerce/POST-activities.jpg)
+![ POST-activities ](../../assets/tools/observation-for-adobe-commerce/POST-activities.jpg)
 
 ## [!UICONTROL POST activities summary table]
 
 In het frame **[!UICONTROL POST activities summary table]** worden de samengevatte `POST` -activiteiten voor de site weergegeven, die in `client_ip` zijn opgenomen in de [!DNL Fastly] -logboeken. Het toont ook de telling voor URL die door het IP adres wordt betreden. Het aantal is voor het geselecteerde tijdframe.
 
-![ POST-activiteiten-samenvatting ](../../assets/tools/observation-for-adobe-commerce/POST-activities-summary.jpg)
+![ POST-activities-summary ](../../assets/tools/observation-for-adobe-commerce/POST-activities-summary.jpg)
 
 ## [!UICONTROL POST activities details table]
 

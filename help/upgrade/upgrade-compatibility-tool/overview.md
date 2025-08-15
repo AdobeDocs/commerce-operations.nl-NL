@@ -25,7 +25,7 @@ U kunt [!DNL Upgrade Compatibility Tool] gebruiken via:
 
 - Als standalone [ bevel-lijn interface ](../upgrade-compatibility-tool/run.md) hulpmiddel. Voor de volledige lijst van beschikbare bevelen, zie [`bin/uct` verwijzing ](../../tools/reference/uct.md).
 - De [!DNL Upgrade Compatibility Tool] wordt geïntegreerd met de [[!DNL Site-Wide Analysis Tool]](../upgrade-compatibility-tool/integrate-analysis-tool.md) .
-- Een looppasconfiguratie binnen de [ Magento PHPStorm stop ](../upgrade-compatibility-tool/run-configuration-phpstorm-plugin.md).
+- Een looppasconfiguratie binnen de [ insteekmodule van Magento PHPStorm ](../upgrade-compatibility-tool/run-configuration-phpstorm-plugin.md).
 
 ## Workflow
 
@@ -43,17 +43,17 @@ Bekijk deze video voor meer informatie over [!DNL Upgrade Compatibility Tool] :
 
 Gebruik de volgende bronnen als u informatie nodig hebt of vragen hebt die niet in deze handleiding worden behandeld:
 
-Om met het [!DNL Upgrade Compatibility Tool] team te verbinden, contacteer ons op het kanaal van de Slack van de Techniek [ #upgrade-verenigbaarheid-hulpmiddel ](https://magentocommeng.slack.com/archives/C019Y143U9F). We willen graag uw feedback, problemen en suggesties horen die ons helpen het gereedschap te verbeteren.
+Om met het [!DNL Upgrade Compatibility Tool] team te verbinden, contacteer ons op het kanaal van Slack van de Techniek [ #upgrade-verenigbaarheid-hulpmiddel ](https://magentocommeng.slack.com/archives/C019Y143U9F). We willen graag uw feedback, problemen en suggesties horen die ons helpen het gereedschap te verbeteren.
 
 [!DNL Upgrade Compatibility Tool] gebruikt regels die binnen onze [ worden bepaald die Normen van de Codering ](https://developer.adobe.com/commerce/php/coding-standards/) om ervoor te zorgen dat uw project de beste praktijken van Adobe Commerce volgt en u te helpen verbeteren en uitbreiden [!DNL Upgrade Compatibility Tool].
 
-Verwijs naar het [ Contribute ](https://developer.adobe.com/commerce/php/coding-standards/contributing/) onderwerp voor meer informatie bij het bijdragen van coderingsnormen.
+Verwijs naar [ Contribute ](https://developer.adobe.com/commerce/php/coding-standards/contributing/) onderwerp voor meer informatie bij het bijdragen van coderingsnormen.
 
 ## Bronnen
 
 Raadpleeg de volgende bronnen voor meer informatie over upgrades voor Adobe Commerce:
 
 - De [ verbeteringsgids ](../overview.md) verstrekt een overzicht van de typische de verbeteringsreis van Adobe Commerce en beste praktijken om langs die reis te volgen.
-- De [ aanstaande versie ](https://experienceleague.adobe.com/nl/docs/commerce-operations/release/planning/schedule) pagina verstrekt de data voor geplande en aanstaande versies.
+- De [ aanstaande versie ](https://experienceleague.adobe.com/en/docs/commerce-operations/release/planning/schedule) pagina verstrekt de data voor geplande en aanstaande versies.
 - De [ communautaire middelen ](https://developer.adobe.com/commerce/contributor/community/) pagina moet plaatsen om besprekingen te beginnen, of meer informatie te vinden.
 - Controleer de [ verwante hulpmiddelen ](../upgrade-compatibility-tool/related-tools.md) pagina voor nuttige hulpmiddelen in uw typische verbeteringsreis.

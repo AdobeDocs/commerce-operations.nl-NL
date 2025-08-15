@@ -16,7 +16,7 @@ ht-degree: 0%
 
 >[!NOTE]
 >
->Adobe heeft geen aanbeveling over het gebruik van SELinux; u kunt het voor verbeterde veiligheid gebruiken als u wilt. Als u SELinux gebruikt, moet u het op de juiste wijze configureren of kan de Adobe Commerce onvoorspelbaar werken. Als u verkiest om SELinux te gebruiken, raadpleeg een middel zoals de [ wiki CentOS ](https://wiki.centos.org/HowTos/SELinux) aan opstellingsregels om mededeling toe te laten.
+>Adobe heeft geen aanbeveling voor het gebruik van SELinux. U kunt het desgewenst gebruiken voor uitgebreide beveiliging. Als u SELinux gebruikt, moet u het op de juiste wijze configureren of kan de Adobe Commerce onvoorspelbaar werken. Als u verkiest om SELinux te gebruiken, raadpleeg een middel zoals de [ wiki CentOS ](https://wiki.centos.org/HowTos/SELinux) aan opstellingsregels om mededeling toe te laten.
 
 ## Suggesties voor installatie met Apache
 
@@ -65,7 +65,7 @@ Om Apache in staat te stellen een verbinding met een andere gastheer met toegela
 
 ## Poorten openen in uw firewall
 
-Afhankelijk van uw veiligheidsvereisten, zou u het noodzakelijk kunnen vinden om haven 80 en andere havens in uw firewall te openen. Wegens de gevoelige aard van voorzien van een netwerkveiligheid, adviseert de Adobe sterk dat u met uw afdeling van IT alvorens te werk te gaan raadpleegt. Hier volgen enkele suggesties voor verwijzingen:
+Afhankelijk van uw veiligheidsvereisten, zou u het noodzakelijk kunnen vinden om haven 80 en andere havens in uw firewall te openen. Vanwege de gevoelige aard van netwerkbeveiliging raadt Adobe u ten zeerste aan uw IT-afdeling te raadplegen voordat u verdergaat. Hier volgen enkele suggesties voor verwijzingen:
 
 * Ubuntu: [ de documentatiepagina van Ubuntu ](https://help.ubuntu.com/community/IptablesHowTo)
 * CentOS: [ CentOS hoe-aan ](https://wiki.centos.org/HowTos%282f%29Network%282f%29IPTables.html).

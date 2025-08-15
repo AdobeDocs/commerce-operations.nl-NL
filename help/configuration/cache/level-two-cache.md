@@ -5,7 +5,7 @@ feature: Configuration, Cache
 exl-id: 0504c6fd-188e-46eb-be8e-968238571f4e
 source-git-commit: ba3c656566af47f16f58f476d7bc9f4781bb0234
 workflow-type: tm+mt
-source-wordcount: '423'
+source-wordcount: '421'
 ht-degree: 0%
 
 ---
@@ -19,11 +19,11 @@ Als u de netwerkbandbreedte voor Redis wilt verminderen, slaat u cachegegevens l
 - Controleer de versie van de cachegegevens en zorg ervoor dat de nieuwste cache lokaal wordt opgeslagen
 - De nieuwste cache overbrengen van de externe computer naar de lokale computer
 
-Commerce slaat de versie van de gehashte gegevens op in Redis, met het achtervoegsel &#39;:hash&#39; toegevoegd aan de gewone sleutel. Als er een verouderde lokale cache is, worden de gegevens overgebracht naar de lokale computer met een cacheadapter.
+Commerce slaat de gehakte gegevensversie in Redis op, met het achtervoegsel &quot;:hash&quot;toegevoegd aan de regelmatige sleutel. Als er een verouderde lokale cache is, worden de gegevens overgebracht naar de lokale computer met een cacheadapter.
 
 >[!INFO]
 >
->Voor Adobe Commerce op wolkeninfrastructuur, kunt u [ gebruiken stelt variabelen ](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure/env/stage/variables-deploy.html?lang=nl-NL#redis_backend) voor L2 geheim voorgeheugenconfiguratie op.
+>Voor Adobe Commerce op wolkeninfrastructuur, kunt u [ gebruiken stelt variabelen ](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure/env/stage/variables-deploy.html#redis_backend) voor L2 geheim voorgeheugenconfiguratie op.
 
 ## Voorbeeld van configuratie
 
@@ -70,9 +70,9 @@ Waarbij:
    - `local_backend_options` is de lokale cacheconfiguratie.
    - `cache_dir` is een bestandcache-specifieke optie voor de map waarin de lokale cache is opgeslagen.
 
-Adobe raadt aan Redis te gebruiken voor externe caching (`\Magento\Framework\Cache\Backend\Redis`) en `Cm_Cache_Backend_File` voor het lokaal in cache plaatsen van gegevens in gedeeld geheugen, met: `'local_backend_options' => ['cache_dir' => '/dev/shm/']`
+Adobe raadt u aan Redis te gebruiken voor externe caching (`\Magento\Framework\Cache\Backend\Redis`) en `Cm_Cache_Backend_File` voor het lokaal in cache plaatsen van gegevens in gedeeld geheugen, met: `'local_backend_options' => ['cache_dir' => '/dev/shm/']`
 
-Adobe raadt het gebruik van de functie [`cache preload`](redis-pg-cache.md#redis-preload-feature) aan, omdat deze de druk op Redis drastisch verlaagt. Vergeet niet het achtervoegsel &#39;:hash&#39; toe te voegen voor toetsen die vooraf worden geladen.
+Adobe raadt het gebruik van de functie [`cache preload`](redis-pg-cache.md#redis-preload-feature) aan, omdat deze de druk op Redis drastisch verlaagt. Vergeet niet om het achtervoegsel &quot;:hash&quot;voor preload sleutels toe te voegen.
 
 ## Cacheopties voor stijl
 
@@ -92,7 +92,7 @@ Adobe raadt aan de optie `use_stale_cache` alleen in te schakelen voor cachetype
 - `reflection`
 - `translate`
 
-Adobe adviseert niet toelatend de `use_stale_cache` optie voor het `default` geheim voorgeheugentype.
+Adobe raadt u niet aan de optie `use_stale_cache` voor het cachetype `default` in te schakelen.
 
 De volgende code toont een voorbeeldconfiguratie:
 

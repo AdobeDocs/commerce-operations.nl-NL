@@ -83,4 +83,4 @@ Controleer of de map `<magento_root>/var/page_cache` leeg is:
 
 >[!TIP]
 >
->Als u 503 (Ontbroken de Ophalen van de Achterkant) fouten ontmoet, zie [ het Oplossen van problemen 503 (de Dienst niet beschikbaar) fouten ](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/troubleshooting-503-errors.html?lang=nl-NL) in het _Adobe Commerce Help Center_.
+>Als u 503 (Ontbroken de Ophalen van de Achterkant) fouten ontmoet, zie [ het Oplossen van problemen 503 (de Dienst niet beschikbaar) fouten ](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/troubleshooting-503-errors.html) in het _Adobe Commerce Help Center_.

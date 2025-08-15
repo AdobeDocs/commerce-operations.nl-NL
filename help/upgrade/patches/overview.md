@@ -25,13 +25,13 @@ Wanneer het patchprogramma wordt uitgevoerd, wordt dit bestand ingelezen en word
 
 Er zijn drie typen patches:
 
-- **Hotfixes** - de flarden die de Adobe op het [ Centrum van de Veiligheid ](https://magento.com/security/patches) publiceert.
+- **Hotfixes** - de flarden die Adobe op het [ Centrum van de Veiligheid ](https://magento.com/security/patches) publiceert.
 - **Individuele flarden** - de flarden die de Steun van Adobe Commerce leidt en op een individuele basis verdeelt.
 - **de flarden van de Douane** - de Unofficiale flarden die u van een it kunt tot stand brengen begaat.
 
 ## Hotfixes
 
-Hotfixes zijn flarden die high-impact veiligheid of kwaliteitsmoeilijke situaties bevatten die vele verkopers beïnvloeden. Deze correcties worden toegepast op de volgende patchrelease voor de toepasselijke secundaire versie. De Adobe geeft hotfixes terug zoals nodig.
+Hotfixes zijn flarden die high-impact veiligheid of kwaliteitsmoeilijke situaties bevatten die vele verkopers beïnvloeden. Deze correcties worden toegepast op de volgende patchrelease voor de toepasselijke secundaire versie. Adobe brengt hotfixes uit waar dat nodig is.
 
 U kunt hotfixes in het [ Centrum van de Veiligheid ](https://magento.com/security/patches) vinden. Volg de instructies op de pagina om het patchbestand te downloaden, afhankelijk van uw versie en installatietype. Gebruik de [ bevellijn ](../patches/apply.md#) of [ Composer ](../patches/apply.md) om hete fixflarden toe te passen.
 
@@ -41,9 +41,9 @@ U kunt hotfixes in het [ Centrum van de Veiligheid ](https://magento.com/securit
 
 ## Afzonderlijke patches
 
-Afzonderlijke patches bevatten oplossingen voor een bepaalde kwestie met een lage-effectkwaliteit. Deze correcties worden toegepast op de meest recente ondersteunde secundaire versie (bijvoorbeeld 2.4.x), maar kunnen ontbreken in de vorige ondersteunde secundaire versie (bijvoorbeeld 2.3.x). Adobe geeft individuele pleisters vrij waar nodig.
+Afzonderlijke patches bevatten oplossingen voor een bepaalde kwestie met een lage-effectkwaliteit. Deze correcties worden toegepast op de meest recente ondersteunde secundaire versie (bijvoorbeeld 2.4.x), maar kunnen ontbreken in de vorige ondersteunde secundaire versie (bijvoorbeeld 2.3.x). Adobe geeft de afzonderlijke patches waar nodig uit.
 
-Gebruik [[!DNL Quality Patches Tool] ](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html?lang=nl-NL){target="_blank"}  om individuele flarden toe te passen.
+Gebruik [[!DNL Quality Patches Tool] ](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html){target="_blank"} om individuele flarden toe te passen.
 
 >[!NOTE]
 >
@@ -51,7 +51,7 @@ Gebruik [[!DNL Quality Patches Tool] ](https://experienceleague.adobe.com/tools/
 
 ## Aangepaste patches
 
-Soms duurt het even voor het Team van de Techniek van de Adobe om een insectenmoeilijke situatie te omvatten die op GitHub in een versie van de Composer van Adobe Commerce wordt gemaakt. Ondertussen, kunt u een flard van GitHub tot stand brengen en de [`cweagans/composer-patches` ](https://github.com/cweagans/composer-patches/) stop gebruiken om het op uw op composer-Gebaseerde installatie toe te passen.
+Soms duurt het even voordat het Adobe Engineering Team een bug fix heeft opgenomen die op GitHub is aangebracht in een Adobe Commerce Composer-release. Ondertussen, kunt u een flard van GitHub tot stand brengen en de [`cweagans/composer-patches` ](https://github.com/cweagans/composer-patches/) stop gebruiken om het op uw op composer-Gebaseerde installatie toe te passen.
 
 Gebruik de [ bevellijn ](apply.md#command-line) of [ Composer ](apply.md#composer) om douanepatches toe te passen.
 
@@ -90,10 +90,10 @@ index c8a6fef58d31..7d01c195791e 100644
 
 U kunt patches op een van de volgende manieren toepassen:
 
-- [[!DNL Quality Patches Tool]](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html?lang=nl-NL){target="_blank"}
+- [[!DNL Quality Patches Tool]](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html){target="_blank"}
 - [Opdrachtregel](/help/upgrade/patches/apply.md#command-line)
 - [Composer](/help/upgrade/patches/apply.md#composer)
 
 >[!NOTE]
 >
->Om een flard op een Adobe Commerce op het project van de wolkeninfrastructuur toe te passen, zie [ flarden ](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html?lang=nl-NL) in _Commerce op de gids van de Wolk_ toepassen.
+>Om een flard op een Adobe Commerce op het project van de wolkeninfrastructuur toe te passen, zie [ flarden ](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html) in _Commerce op de gids van de Wolk_ toepassen.

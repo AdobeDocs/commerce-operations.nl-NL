@@ -76,7 +76,7 @@ Het doel van [!DNL JavaScript] -bundeling is het aantal en de grootte van aangev
 
 U kunt dit bereiken door uw bundels op paginatypen te definiëren. U kunt de pagina&#39;s van [!DNL Commerce] indelen in verschillende paginatypen, zoals Categorie, Product, CMS, Klant, Winkel en Afhandeling. Elke pagina die in één van deze paginatypen wordt gecategoriseerd heeft een verschillende reeks module RequireJS gebiedsdelen. Wanneer u uw modules RequireJS door paginatype bundelt, zult u omhoog met slechts een handvol bundels beëindigen die de gebiedsdelen van om het even welke pagina in uw opslag behandelen.
 
-U zou bijvoorbeeld kunnen eindigen met een bundel voor de afhankelijkheden die voor alle pagina&#39;s gelden, een bundel voor pagina&#39;s met alleen CMS, een bundel voor pagina&#39;s met alleen Catalog, een andere bundel voor pagina&#39;s met alleen zoeken en een bundel voor pagina&#39;s met uitchecken.
+U kunt bijvoorbeeld een bundel maken voor de afhankelijkheden die op alle pagina&#39;s van toepassing zijn, een bundel voor alleen CMS-pagina&#39;s, een bundel voor alleen Catalog-pagina&#39;s, een andere bundel voor alleen Search-pagina&#39;s en een bundel voor uitcheckpagina&#39;s.
 
 U kunt ook pakketten maken op doeleinde: voor algemene functies, productgerelateerde functies, verzendfuncties, afrekenfuncties, belastingen en formuliervalidaties. Hoe u uw bundels bepaalt is aan u en de structuur van uw opslag. Sommige bundelingstrategieën werken mogelijk beter dan andere.
 
@@ -285,7 +285,7 @@ Onze uitvoer toont slechts drie paginatypen (homepage, categorie en product), wa
 
 Dit vertelt ons dat wij de pagina-ladingssnelheden van onze opslag waarschijnlijk kunnen verbeteren door onze gebiedsdelen in verschillende bundel te verdelen, zodra wij weten welke paginatypes vereisen welke gebiedsdelen.
 
-#### 8. Een bestand voor afhankelijkheidsverdeling maken
+#### &#x200B;8. Een bestand voor afhankelijkheidsverdeling maken
 
 Als u wilt weten welke paginatypen welke afhankelijkheden nodig hebben, maakt u een nieuw bestand in de hoofdmap van [!DNL Commerce] met de naam `deps-map.sh` en kopieert u dit bestand in de onderstaande code:
 
@@ -333,7 +333,7 @@ bundle/category.txt/bundle/homepage.txt/bundle/product.txt --> knockoutjs/knocko
 
 Dit is genoeg informatie om een bundelconfiguratie te bouwen.
 
-#### 9. Maak pakketten in het bestand build.js
+#### &#x200B;9. Maak pakketten in het bestand build.js
 
 Open het configuratiebestand van `build.js` en voeg uw bundels toe aan het knooppunt `modules` . Elke bundel moet de volgende eigenschappen definiëren:
 
@@ -380,7 +380,7 @@ In dit voorbeeld worden elementen `mage/bootstrap` en `requirejs/require` opnieu
 
 De onderstaande stappen beschrijven het basisproces voor het genereren van efficiëntere [!DNL Commerce] -bundels. U kunt dit proces op elke gewenste manier automatiseren, maar u moet toch `nodejs` en `r.js` gebruiken om daadwerkelijk uw bundels te genereren. En als uw thema&#39;s zijn aangepast aan [!DNL JavaScript] en hetzelfde `build.js` -bestand niet opnieuw kunnen gebruiken, moet u mogelijk verschillende `build.js` configuraties per thema maken.
 
-#### 1. Genereer statische winkelsites
+#### &#x200B;1. Genereer statische winkelsites
 
 Voordat u bundels genereert, voert u de statische implementatieopdracht uit:
 
@@ -397,7 +397,7 @@ Dit bevel produceert statische opslagplaatsingen voor elk thema en elke scène u
 
 Herhaal de onderstaande stappen voor elk winkelthema en elke landinstelling om bundels voor alle winkelthema&#39;s en -landinstellingen te genereren.
 
-#### 2. Verplaats de statische opslaginhoud naar een tijdelijke map
+#### &#x200B;2. Verplaats de statische opslaginhoud naar een tijdelijke map
 
 Eerst, moet u de statische inhoud van de doelfolder naar één of andere tijdelijke folder verplaatsen omdat RequireJS alle inhoud binnen de doelfolder vervangt.
 
@@ -411,7 +411,7 @@ Bijvoorbeeld:
 mv pub/static/frontend/Magento/luma/en_US pub/static/frontend/Magento/luma/en_US_tmp
 ```
 
-#### 3. Voer de optimalisatiefunctie voor r.js uit
+#### &#x200B;3. Voer de optimalisatiefunctie voor r.js uit
 
 Voer vervolgens de optimalisator voor r.js uit op het `build.js` -bestand vanuit de hoofdmap van [!DNL Commerce] . Paden naar alle mappen en bestanden zijn relatief ten opzichte van de werkmap.
 
@@ -438,7 +438,7 @@ drwxr-xr-x 70 root root    4096 Mar 28 11:24 ../
 -rw-r--r--  1 root root   74233 Mar 28 11:24 shipping.js
 ```
 
-#### 4. Configureer RequireJS om bundels te gebruiken
+#### &#x200B;4. Configureer RequireJS om bundels te gebruiken
 
 Om RequireJS te krijgen om uw bundels te gebruiken, voeg een `onModuleBundleComplete` callback na de `modules` knoop in het `build.js` dossier toe:
 
@@ -474,7 +474,7 @@ require.config({});
 }
 ```
 
-#### 5. Voer de opdracht opnieuw uit
+#### &#x200B;5. Voer de opdracht opnieuw uit
 
 Voer de volgende opdracht uit om te implementeren:
 
@@ -497,7 +497,7 @@ require.config({
 >
 >Wanneer het vormen van bundels, zorg ervoor u `requirejs.config()` vraag in de orde plaatst u hen uitgevoerd wilt, aangezien de vraag in de orde wordt uitgevoerd zij verschijnen.
 
-#### 6. Test de resultaten
+#### &#x200B;6. Test de resultaten
 
 Nadat de pagina is geladen, ziet u dat de browser verschillende afhankelijkheden en bundels laadt. Hier volgen bijvoorbeeld de resultaten voor het profiel &#39;Langzaam 3G&#39;:
 
@@ -505,7 +505,7 @@ Nadat de pagina is geladen, ziet u dat de browser verschillende afhankelijkheden
 
 De laadtijd van de pagina voor een lege startpagina is nu twee keer zo snel als het gebruik van native [!DNL Commerce] -pakketten. Maar we kunnen nog beter.
 
-#### 7. De bundels optimaliseren
+#### &#x200B;7. De bundels optimaliseren
 
 Zelfs als deze worden gecomprimeerd, zijn de [!DNL JavaScript] -bestanden nog steeds groot. U kunt ze miniateren met RequireJS, dat versterker gebruikt om [!DNL JavaScript] tot een goed resultaat te beperken.
 

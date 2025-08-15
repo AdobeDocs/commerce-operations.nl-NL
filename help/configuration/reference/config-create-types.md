@@ -76,7 +76,7 @@ Een configuratietype maken:
    </config>
    ```
 
-   - Het eerste type knooppunt stelt de bestandsnaam van de Reader, de gekoppelde klassen `Converter` en `SchemaLocator` in.
+   - Het eerste type knooppunt stelt de bestandsnaam van de Reader, de gekoppelde `Converter` - en `SchemaLocator` -klassen in.
    - Dan, verbindt de `pdfConfigDataStorage` virtuele typeknoop de lezerklasse aan een geval van [ Magento\Framework\Config\Data ](https://github.com/magento/magento2/blob/2.4/lib/internal/Magento/Framework/Config/Data.php).
    - En tenslotte, verbindt de laatste typeknoop dat config gegevens virtueel type aan de [ Magento\Sales\Model\Order\Pdf\Config ](https://github.com/magento/magento2/blob/2.4/app/code/Magento/Sales/Model/Order/Pdf/Config.php) klasse, die voor eigenlijk het lezen van waarden binnen van die [ pdf.xml ](https://github.com/magento/magento2/blob/2.4/app/code/Magento/Sales/etc/pdf.xml) dossiers wordt gebruikt.
 

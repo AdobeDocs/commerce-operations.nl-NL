@@ -21,7 +21,7 @@ Your current search engine, <Engine Name>, is not supported. You must install a 
 Deze fout betekent dat een van de volgende voorwaarden geldt voor de versie op downniveau van Adobe Commerce:
 
 - Het zoekprogramma is ingesteld op MySQL.
-- De zoekmachine is ingesteld op een versie van de Elasticsearch die niet meer wordt ondersteund.
+- Het zoekprogramma is ingesteld op een versie van Elasticsearch die niet meer wordt ondersteund.
 
 Gebruik de volgende opdracht om de huidige zoekfunctie te controleren:
 
@@ -49,7 +49,7 @@ Volg de richtlijnen die in de volgende secties worden beschreven om van een inco
 
 ## Als uw zoekmachine `mysql` is
 
-In eerdere versies dan 2.4 was MySQL de standaardzoekengine voor catalogi, maar MySQL wordt in deze hoedanigheid niet meer ondersteund. Nu moet u Elasticsearch of OpenSearch installeren en configureren als zoekprogramma voordat u de upgrade uitvoert naar 2.4.
+In eerdere versies dan 2.4 was MySQL de standaardzoekengine voor catalogi, maar MySQL wordt in deze hoedanigheid niet meer ondersteund. Nu moet u Elasticsearch of OpenSearch installeren en configureren als zoekprogramma voordat u de upgrade uitvoert naar versie 2.4.
 
 Gebruik de volgende bronnen om u door dit proces te begeleiden:
 
@@ -62,15 +62,15 @@ Nadat u het onderzoeksmotor en de herindex vormt, bent u bereid aan verbetering 
 
 Elasticsearch 6 en eerder worden niet meer ondersteund.
 
-De waarde `elasticsearch` geeft aan dat uw versie op downniveau van Adobe Commerce is geconfigureerd voor gebruik van Elasticsearch 2.x. Deze versie van Elasticsearch wordt niet meer ondersteund.
+De waarde `elasticsearch` geeft aan dat uw versie op downniveau van Adobe Commerce is geconfigureerd voor Elasticsearch 2.x. Deze versie van Elasticsearch wordt niet meer ondersteund.
 
 U moet de volgende taken uitvoeren alvorens aan 2.4 te bevorderen:
 
-1. Update uitvoeren naar een versie van Elasticsearch die wordt ondersteund door Commerce. Verwijs naar [ Bevorderende Elasticsearch ](https://www.elastic.co/guide/en/elasticsearch/reference/current/setup-upgrade.html) voor volledige instructies bij het steunen van uw gegevens, het ontdekken van potentiële migratiekwesties, en het testen van verbeteringen alvorens aan productie op te stellen. Afhankelijk van uw huidige versie van Elasticsearch is het mogelijk dat een volledige clusterherstart al dan niet vereist is.
+1. Update uitvoeren naar een versie van Elasticsearch die wordt ondersteund door Commerce. Verwijs naar [ Bevorderend Elasticsearch ](https://www.elastic.co/guide/en/elasticsearch/reference/current/setup-upgrade.html) voor volledige instructies bij het steunen van uw gegevens, het ontdekken van potentiële migratiekwesties, en het testen van verbeteringen alvorens aan productie op te stellen. Afhankelijk van uw huidige versie van Elasticsearch is het mogelijk dat een volledige cluster opnieuw moet worden opgestart.
 
    >[!NOTE]
    >
-   >Voor Elasticsearch is JDK 1.8 of hoger vereist. Zie [ de Uitrusting van de Ontwikkeling van de Software van Java installeren (JDK) ](../../installation/prerequisites/search-engine/overview.md#install-the-java-software-development-kit-jdk) om te controleren welke versie van JDK geïnstalleerd is.
+   >Elasticsearch vereist JDK 1.8 of hoger. Zie [ de Uitrusting van de Ontwikkeling van de Software van Java installeren (JDK) ](../../installation/prerequisites/search-engine/overview.md#install-the-java-software-development-kit-jdk) om te controleren welke versie van JDK geïnstalleerd is.
 
 1. [ vorm Elasticsearch ](../../configuration/search/configure-search-engine.md) en herdex.
 

@@ -67,7 +67,7 @@ Dit onderwerp wordt ontworpen om u te helpen beslissen of om Git of Composer te 
     <td>
       <ul>
         <li><strong>Standaardbenadering voor het beheren van code voor een meervoudige instantie-instelling</strong></li>
-        <li>Wanneer de Adobe de codebasis handhaaft of het handhaven team vertrouwd met Composer is</li>
+        <li>Wanneer Adobe de codebasis onderhoudt of het onderhoudsteam vertrouwd is met Composer</li>
       </ul>
     </td>
   </tr>

@@ -35,7 +35,7 @@ Als u [!DNL Data Migration Tool] alleen lokaal wilt uitvoeren, kunt u bestanden 
 
 ### Migratie configureren in een aparte module
 
-Voordat u gegevens migreert, moet u een Magento 2-module maken.
+Voordat u gegevens kunt migreren, moet u een Magento 2-module maken.
 
 1. Maak een Magento 2-module.
 
@@ -106,7 +106,7 @@ Voordat u gegevens migreert, moet u een Magento 2-module maken.
 
 1. In het `config.xml` -bestand moet u toegangsgegevens instellen voor de M1- en M2-databases en de coderingssleutel.
 
-1. Als uw opslag M1 douaneveranderingen heeft, zou u de rest van uw configuratiedossiers aan uw Magento 1 opslagaanpassingen moeten in kaart brengen. Zie [ Werk met configuratie en kaartdossiers ](#migration-config).
+1. Als uw M1-winkel aangepaste wijzigingen heeft, moet u de rest van uw configuratiebestanden toewijzen aan uw Magento 1-winkel-aanpassingen. Zie [ Werk met configuratie en kaartdossiers ](#migration-config).
 
 ### Migratie configureren in map `vendor`
 
@@ -152,7 +152,7 @@ U kunt als volgt de [!DNL Data Migration Tool] for migration configureren:
    * Aangepaste poort database: `port=<port>`
    * Tabelvoorvoegsel: `<source_prefix>`, `<dest_prefix>`
 
-   Als de gebruikersnaam van de eigenaar van de database bijvoorbeeld `root` met wachtwoord `pass` is en u het voorvoegsel `magento1` gebruikt in de database van Magento 1, gebruikt u het volgende in `config.xml` :
+   Als de gebruikersnaam van de eigenaar van de database bijvoorbeeld `root` met wachtwoord `pass` is en u het voorvoegsel `magento1` gebruikt in de Magento 1-database, gebruikt u het volgende in `config.xml` :
 
    ```xml
    <source>
@@ -198,9 +198,9 @@ Bijvoorbeeld:
 
 * Tabellen of velden negeren
 
-* De overdracht van gegevens van een veld aanpassen aan de indeling Magento 2
+* Gegevens van een veld naar Magento 2-indeling overdragen
 
-Toewijzingsbestanden voor ondersteunde versies van Magento&#39;s bevinden zich in submappen van `<your Magento 2 install dir>/vendor/magento/data-migration-tool/etc`
+Toewijzingsbestanden voor ondersteunde Magento-versies bevinden zich in submappen van `<your Magento 2 install dir>/vendor/magento/data-migration-tool/etc`
 
 De toewijzingsbestanden gebruiken:
 
@@ -210,7 +210,7 @@ De toewijzingsbestanden gebruiken:
 
    1. Absoluut bestandspad, bijvoorbeeld `/var/www/html/app/code/Vendor/Migration/etc/opensource-to-opensource/1.9.4.1/map.xml`
    1. magento/data-migration-tool module relatief bestandspad: `etc/opensource-to-opensource/1.9.4.1/map.xml`
-   1. Hoofdmapafhankelijk relatief bestandspad van Magento: `app/code/Vendor/Migration/etc/opensource-to-opensource/1.9.4.1/map.xml`
+   1. Magento-pad naar hoofdmapafhankelijk bestand: `app/code/Vendor/Migration/etc/opensource-to-opensource/1.9.4.1/map.xml`
 
 De mappen `<Magento 2 dir>/vendor/magento/data-migration-tool/etc` en `<Magento 2 dir>/vendor/magento/data-migration-tool/etc/<ce version>` bevatten de volgende configuratiebestanden:
 
@@ -219,7 +219,7 @@ Hoewel u het grootste deel van de tijd met het `map.xml.dist` dossier werkt, bes
 | Bestandsnaam toewijzen | Beschrijving |
 | --- | --- |
 | `class-map.xml.dist` | Woordenboek van klassentoewijzingen tussen Magento 1 en Magento 2 |
-| `config.xml.dist` | Hoofdconfiguratiedossier dat Magento 1 en Magento 2 gegevensbestandconfiguraties, step configuratie, en verbindingen aan toewijzingsdossiers specificeert |
+| `config.xml.dist` | Hoofdconfiguratiebestand dat de configuraties van de Magento 1- en Magento 2-database, de stapconfiguratie en koppelingen naar toewijzingsbestanden opgeeft |
 | *slechts Adobe Commerce*. `customer-attr-document-groups.xml.dist` | Lijst van lijsten die in de stap van de attributen van de douaneklanten worden gebruikt. |
 | *slechts Adobe Commerce*. `customer-attr-map.xml.dist` | Het dossier van de kaart dat in de Stap van de Attributen van de Klant van de Douane wordt gebruikt. |
 | `deltalog.xml.dist` | Bevat de lijst van lijsten die voor de opstelling van gegevensbestandroutines worden vereist. |

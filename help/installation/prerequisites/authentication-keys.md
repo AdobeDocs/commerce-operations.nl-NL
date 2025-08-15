@@ -11,20 +11,20 @@ ht-degree: 0%
 
 # Uw verificatietoetsen ophalen
 
-De `repo.magento.com` -opslagplaats is waar Adobe Commerce- en andere Composer-pakketten worden opgeslagen en waarvoor verificatie is vereist. Gebruik uw rekening van de Commerce Marketplace om een paar 32 karakter *authentificatietoetsen* te produceren om tot de bewaarplaats toegang te hebben.
+De `repo.magento.com` -opslagplaats is waar Adobe Commerce- en andere Composer-pakketten worden opgeslagen en waarvoor verificatie is vereist. Gebruik uw rekening van Commerce Marketplace om een paar 32 karakter *authentificatietoetsen* te produceren om tot de bewaarplaats toegang te hebben.
 
 Voor toegangsrechten voor Adobe Commerce-pakketten moet u sleutels gebruiken die zijn gekoppeld aan een MAGEID die toegang heeft gekregen tot die pakketten. De MAGEID is doorgaans de primaire contactpersoon op de Adobe Commerce-account en is mogelijk niet altijd de projecteigenaar van de Adobe Commerce voor het infrastructuurproject in de cloud.
 
 >[!TIP]
 >
->Als u [ fouten ](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/deployment/magento-commerce-cloud-repo-could-not-be-accessed-403-forbidden-or-404-not-found-error-when-deploying.html?lang=nl-NL) ontmoet, kunt u geen toestemming hebben om tot het pakket toegang te hebben, of de toegangsrechten zijn verlopen toe te schrijven aan een opmerkelijke factuur op uw rekening.
+>Als u [ fouten ](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/deployment/magento-commerce-cloud-repo-could-not-be-accessed-403-forbidden-or-404-not-found-error-when-deploying.html) ontmoet, kunt u geen toestemming hebben om tot het pakket toegang te hebben, of de toegangsrechten zijn verlopen toe te schrijven aan een opmerkelijke factuur op uw rekening.
 >
 >* Als je de primaire contactpersoon voor de account bent, zorg er dan voor dat er geen openstaande factuur op de account wordt vermeld.
->* Als de sleutels die door het Primaire Contact worden verstrekt niet werken en er geen uitstaande facturen op de rekening zijn, zou het Primaire Contact [ Steun van Adobe Commerce ](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html?lang=nl-NL#submit-ticket) voor hulp moeten contacteren.
+>* Als de sleutels die door het Primaire Contact worden verstrekt niet werken en er geen uitstaande facturen op de rekening zijn, zou het Primaire Contact [ Steun van Adobe Commerce ](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html#submit-ticket) voor hulp moeten contacteren.
 
 Zo maakt u verificatietoetsen:
 
-1. Login aan de [ Commerce Marketplace ](https://commercemarketplace.adobe.com/). Als u geen rekening hebt, klik **Register**.
+1. Login aan [ Commerce Marketplace ](https://commercemarketplace.adobe.com/). Als u geen rekening hebt, klik **Register**.
 
 1. Klik uw rekeningsnaam in het hoogste recht van de pagina en selecteer **Mijn Profiel**.
 

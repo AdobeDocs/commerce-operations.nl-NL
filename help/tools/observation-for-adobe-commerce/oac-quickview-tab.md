@@ -28,6 +28,6 @@ In het frame **[!UICONTROL Upsize / Downsize by node]** worden de upgrootten en 
 
 ## [!UICONTROL CPU Utilization]
 
-![ Gebruik van cpu ](../../assets/tools/observation-for-adobe-commerce/quickview_cpu.jpg)
+![ het Gebruik van CPU ](../../assets/tools/observation-for-adobe-commerce/quickview_cpu.jpg)
 
-In het frame **[!UICONTROL CPU Utilization]** wordt het CPU-gebruik door knooppunten over de geselecteerde tijdlijn weergegeven.
+In het frame **[!UICONTROL CPU Utilization]** wordt CPU-gebruik door knooppunten over het geselecteerde tijdframe weergegeven.

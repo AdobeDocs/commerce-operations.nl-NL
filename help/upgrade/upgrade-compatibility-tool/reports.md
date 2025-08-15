@@ -1,10 +1,10 @@
 ---
-title: '[!DNL Upgrade Compatibility Tool] reports'
+title: '[!DNL Upgrade Compatibility Tool] rapporten'
 description: Volg deze stappen om  [!DNL Upgrade Compatibility Tool]  op uw project van Adobe Commerce in werking te stellen.
 exl-id: a2272339-46d6-443b-bd53-286b72f13d4e
 source-git-commit: ca8dc855e0598d2c3d43afae2e055aa27035a09b
 workflow-type: tm+mt
-source-wordcount: '584'
+source-wordcount: '583'
 ht-degree: 0%
 
 ---
@@ -33,7 +33,7 @@ Dit verslag bevat ook een gedetailleerde samenvatting die het volgende laat zien
 
 - *Huidige versie*: de momenteel geïnstalleerde versie.
 - *Versie van het Doel*: de versie u wilt bevorderen aan.
-- *de tijd van de Uitvoering*: de hoeveelheid tijd de analyse nam om het rapport (mm:ss) te bouwen.
+- *de tijd van de Uitvoering*: de hoeveelheid tijd de analyse nam om het rapport (mm :ss) te bouwen.
 - *Modules die update* vereisen: het percentage modules die verenigbaarheidskwesties bevatten en update vereisen.
 - *Dossiers die update* vereisen: het percentage dossiers die verenigbaarheidskwesties bevatten en update vereisen.
 - *Totale kritieke fouten*: het aantal kritieke gevonden fouten.
@@ -83,12 +83,12 @@ Waar de argumenten als volgt zijn:
 
 ## HTML-rapport
 
-U kunt het rapport van de HTML krijgen terwijl het in werking stellen van het hulpmiddel op een bevel-lijn interface of door [!DNL Site-Wide Analysis Tool]. Het verslag-HTML bevat ook:
+U kunt het HTML-rapport ophalen terwijl u het gereedschap uitvoert op een opdrachtregelinterface of via de [!DNL Site-Wide Analysis Tool] . Het HTML-verslag bevat ook:
 
 - Een lijst met geïdentificeerde problemen.
 - Een samenvatting van de analyse.
 
-![ rapport van de HTML - Samenvatting ](../../assets/upgrade-guide/uct-html-summary.png)
+![ het rapport van HTML - Samenvatting ](../../assets/upgrade-guide/uct-html-summary.png)
 
 U kunt tijdens de [!DNL Upgrade Compatibility Tool] -analyse eenvoudig door de geïdentificeerde problemen navigeren.
 
@@ -96,13 +96,13 @@ U kunt de problemen in het rapport filteren op basis van het minimale emissieniv
 
 In de rechterbovenhoek bevindt zich een vervolgkeuzelijst waarin u een ander niveau kunt selecteren. De lijst met geïdentificeerde problemen wordt dienovereenkomstig gefilterd.
 
-![ het rapport van de HTML - Vervolgkeuzemogelijkheid ](../../assets/upgrade-guide/uct-html-filtered-issues-list.png)
+![ het rapport van HTML - Daling Down gebruik ](../../assets/upgrade-guide/uct-html-filtered-issues-list.png)
 
 >[!NOTE]
 >
 > De kwesties met lager uitgifteniveau worden geschrapt maar u krijgt een bericht zodat bent u altijd op de hoogte van de geïdentificeerde kwesties per module.
 
-Het verslag-HTML bevat ook vier verschillende grafieken:
+Het HTML-rapport bevat ook vier verschillende grafieken:
 
 - **Modules door kwestie strengheid**: toont strengheidsdistributie door modules.
 - **Dossiers door kwestie strengheid**: toont strengheidsdistributie door dossiers.
@@ -111,13 +111,13 @@ Het verslag-HTML bevat ook vier verschillende grafieken:
 
 Deze grafieken staan u toe om de modules te identificeren die het meest gecompromitteerd zijn en degenen die meer werk vereisen om een verbetering uit te voeren.
 
-![ rapport van HTML - Diagrammen ](../../assets/upgrade-guide/uct-html-diagrams.png)
+![ het rapport van HTML - Diagrammen ](../../assets/upgrade-guide/uct-html-diagrams.png)
 
 De HTML-rapportdiagrammen worden ook dienovereenkomstig bijgewerkt, met de enige uitzondering op `Modules with relative sizes and issues` , die wordt gegenereerd met de `min-issue-level` die oorspronkelijk is ingesteld.
 
 Als u verschillende resultaten voor het `Modules with relative sizes and issues` diagram wilt zien, moet u het bevel opnieuw in werking stellen die een andere waarde voor de `--min-issue-level` optie verstrekken.
 
-![ rapport van HTML - het Diagram van het Diagram van het Bubble ](../../assets/upgrade-guide/uct-html-filtered-diagrams.png)
+![ het rapport van HTML - het Diagram van het Diagram van het Bubble ](../../assets/upgrade-guide/uct-html-filtered-diagrams.png)
 
 Dit HTML-rapport exporteren naar een andere uitvoermap:
 

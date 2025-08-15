@@ -15,7 +15,7 @@ Dit onderwerp bespreekt hoe te:
 
 * [ verwijder de modules van steekproefgegevens ](#remove-sample-data-modules) uit een installatie van Adobe Commerce `composer.json`. Deze optie verwijdert ** geen steekproefgegevens uit het gegevensbestand.
 
-* [ voorbereidingen om steekproefgegevens ](#prepare-to-update-sample-data) (bijvoorbeeld, vóór het bijwerken van de toepassing van het Magento) bij te werken.
+* [ voorbereidingen om steekproefgegevens ](#prepare-to-update-sample-data) (bijvoorbeeld, vóór het bijwerken van de toepassing van Magento) bij te werken.
 
 ## Voorbeeldgegevensmodules verwijderen
 

@@ -37,5 +37,5 @@ Om de frontend prestaties van uw websiteopslag te controleren:
 ## Aanvullende informatie
 
 - [Indexbeheer voor Admin-gebruikers](../../../configuration/cli/manage-indexers.md#configure-indexers)
-- [ Beheer van de Index gebruikend CLI ](https://experienceleague.adobe.com/docs/commerce-operations/configuration-guide/cli/manage-indexers.html?lang=nl-NL)
+- [ Beheer van de Index gebruikend CLI ](https://experienceleague.adobe.com/docs/commerce-operations/configuration-guide/cli/manage-indexers.html)
 - [ Indexerend overzicht voor ontwikkelaars ](https://developer.adobe.com/commerce/php/development/components/indexing/)

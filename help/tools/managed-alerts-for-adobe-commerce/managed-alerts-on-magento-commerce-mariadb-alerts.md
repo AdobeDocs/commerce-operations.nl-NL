@@ -3,13 +3,13 @@ title: 'Beheerde waarschuwingen over Adobe Commerce: MariaDB-waarschuwingen'
 description: Dit artikel verstrekt het oplossen van problemenstappen wanneer u waarschuwingen MariaDB voor Adobe Commerce in  [!DNL New Relic] ontvangt. Het MariaDB- alarm controleert hoge vraaglading evenals bovenmatige vragen van de Manipulatie van Gegevens van de Taal (DML). Beide kunnen leiden tot een verminderde gebruikerservaring of zelfs downtime. U kunt twee soorten waarschuwingen ontvangen.
 feature: Cache, Observability, Support, Tools and External Services
 role: Admin
-source-git-commit: ccf8b7c5ad1fbef2cfba05f65f05ab8af0375b4c
+exl-id: d85af2e1-090c-4ad7-a898-3a3c4a5efe3b
+source-git-commit: 18c8e466bf15957b73cd3cddda8ff078ebeb23b0
 workflow-type: tm+mt
 source-wordcount: '518'
 ht-degree: 0%
 
 ---
-
 
 # Beheerde waarschuwingen over Adobe Commerce: MariaDB-waarschuwingen
 
@@ -29,7 +29,7 @@ U zult een beheerde alarm in [!DNL New Relic] ontvangen als u tot [ Beheerde ala
 **doe!**
 
 * Abort om het even welke plaatsing die tot dit alarm wordt gepland wordt ontruimd.
-* Zet uw site onmiddellijk in de onderhoudsmodus als uw site helemaal niet reageert of niet meer reageert. Voor stappen, verwijs naar [ toelaten of onbruikbaar maken onderhoudswijze ](https://experienceleague.adobe.com/nl/docs/commerce-operations/installation-guide/tutorials/maintenance-mode) in de Gids van de Installatie van Commerce. Zorg ervoor om uw IP aan de Vrijgestelde IP adreslijst toe te voegen om ervoor te zorgen dat u nog tot uw plaats voor het oplossen van problemen kunt toegang hebben. Voor stappen, verwijs naar [ handhaaf de lijst van vrijgestelde IP adressen ](https://experienceleague.adobe.com/nl/docs/commerce-operations/installation-guide/tutorials/maintenance-mode#maintain-the-list-of-exempt-ip-addresses).
+* Zet uw site onmiddellijk in de onderhoudsmodus als uw site helemaal niet reageert of niet meer reageert. Voor stappen, verwijs naar [ toelaten of onbruikbaar maken onderhoudswijze ](https://experienceleague.adobe.com/en/docs/commerce-operations/installation-guide/tutorials/maintenance-mode) in de Gids van de Installatie van Commerce. Zorg ervoor om uw IP aan de Vrijgestelde IP adreslijst toe te voegen om ervoor te zorgen dat u nog tot uw plaats voor het oplossen van problemen kunt toegang hebben. Voor stappen, verwijs naar [ handhaaf de lijst van vrijgestelde IP adressen ](https://experienceleague.adobe.com/en/docs/commerce-operations/installation-guide/tutorials/maintenance-mode#maintain-the-list-of-exempt-ip-addresses).
 * Beëindig alle scripts, zoals import die de oorzaak van de waarschuwing kunnen zijn als de prestaties van de site worden beïnvloed.
 
 **niet!**
@@ -44,7 +44,7 @@ U zult een beheerde alarm in [!DNL New Relic] ontvangen als u tot [ Beheerde ala
 
 Als u een Kritieke alarm van Vragen DML ontvangt, begin bij stap één. Als u een waarschuwing van de Vragen DML ontvangt, begin bij stap twee.
 
-1. Controleer of er een Adobe Commerce-ondersteuningsticket bestaat. Voor stappen, verwijs naar onze kennisbasis [ Spoor uw steunkaartjes ](https://experienceleague.adobe.com/nl/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide#track-support-case). Ondersteuning kan een drempelwaardewaarschuwing van [!DNL New Relic] hebben ontvangen, een ticket hebben gemaakt en aan het probleem hebben gewerkt. Als er geen ticket bestaat, maakt u er een. Het ticket moet de volgende informatie bevatten:
+1. Controleer of er een Adobe Commerce-ondersteuningsticket bestaat. Voor stappen, verwijs naar onze kennisbasis [ Spoor uw steunkaartjes ](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide#track-support-case). Ondersteuning kan een drempelwaardewaarschuwing van [!DNL New Relic] hebben ontvangen, een ticket hebben gemaakt en aan het probleem hebben gewerkt. Als er geen ticket bestaat, maakt u er een. Het ticket moet de volgende informatie bevatten:
    * Reden van contactpersoon: selecteer **[!UICONTROL New Relic MariaDB alert received]**.
    * Beschrijving van de signalering.
    * [[!DNL New Relic]  verbinding van het Ongeval ](https://docs.newrelic.com/docs/alerts-applied-intelligence/new-relic-alerts/alert-incidents/view-violation-event-details-incidents). Dit is inbegrepen in uw [ Beheerde alarm voor Adobe Commerce ](managed-alerts-for-magento-commerce.md).
@@ -56,4 +56,4 @@ Als u een Kritieke alarm van Vragen DML ontvangt, begin bij stap één. Als u ee
    1. Zoek uit of code optimaliseert, of operationele optimalisaties:
       * Codeoptimalisaties: kijk hoe u query&#39;s kunt optimaliseren met bulkinvoegingen / updates, het indexgebruik kunt minimaliseren of code kunt vertragen.
       * Operationele optimalisaties: Verplaats de hulpmiddelintensieve gegevenswijzigingen aan lagere verkeerstijden.
-      * Aanvullende optimalisaties: zorg dat u de nieuwste versie van ECE-Tools gebruikt. Voor stappen, verwijs naar [ update van de knoop-hulpmiddelen versie ](https://experienceleague.adobe.com/nl/docs/commerce-on-cloud/user-guide/dev-tools/ece-tools/update-package) in Commerce op de Gids van de Wolk.
+      * Aanvullende optimalisaties: zorg dat u de nieuwste versie van ECE-Tools gebruikt. Voor stappen, verwijs naar [ update van de knoop-hulpmiddelen versie ](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/dev-tools/ece-tools/update-package) in Commerce op de Gids van de Wolk.

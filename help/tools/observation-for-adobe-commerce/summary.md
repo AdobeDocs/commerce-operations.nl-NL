@@ -18,7 +18,7 @@ Het tabblad [!UICONTROL Summary] van [!DNL Observation for Adobe Commerce] is be
 
 ![ Overzicht van de Transactie ](../../assets/tools/transaction-overview.jpg)
 
-### [ wat is een transactie?](https://docs.newrelic.com/docs/apm/transactions/intro-transactions/transactions-new-relic-apm/#:%7E:text=transactions%20are%20reported.-,Wat%20is%20a%20transactie%3F,werk%20in%20a%20software%20application.&amp;text=For%20APM%2C%20it%20will%20will%20vaak,when%20the%20response%20is%20sent)
+### [ wat is een transactie?](https://docs.newrelic.com/docs/apm/transactions/intro-transactions/transactions-new-relic-apm/#:%7E:text=transactions%20are%20reported.-,Wat%20is%20a%20transactie%3F,werk%20in%20a%20software%20application.&text=For%20APM%2C%20it%20will%20will%20vaak,when%20the%20response%20is%20sent)
 
 &quot;Bij [!DNL New Relic] wordt een transactie gedefinieerd als één logische eenheid van het werk in een softwaretoepassing. Specifiek, verwijst het naar de functievraag en methodevraag die omhoog die eenheid van het werk maken. Het verwijst vaak naar een Webtransactie, die een activiteit vertegenwoordigt die gebeurt van wanneer de toepassing een Webverzoek aan ontvangt wanneer de reactie wordt verzonden.&quot;
 
@@ -56,9 +56,9 @@ In het frame **[!UICONTROL Swap memory free in bytes]** wordt per knooppunt de h
 
 ## [!UICONTROL CPU % by host]
 
-![ percenten van cpu door gastheer ](../../assets/tools/cpu-percent-by-host.jpg)
+![ CPU percenten door gastheer ](../../assets/tools/cpu-percent-by-host.jpg)
 
-Het totaal van alle omgevingen en knooppunten wordt weergegeven in het **[!UICONTROL CPU % by host]** -frame. Schakel de niet-productieomgevingen uit. Let ook op gevallen waarin niet alle knooppunten voor de productieomgeving aanwezig zijn. Voor meer uiteinden op hoog gebruik van cpu, verwijs naar [ de prestaties problemen oplossen gebruikend New Relic op Adobe Commerce ](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/troubleshoot-performance-using-new-relic-on-magento-commerce.html?lang=nl-NL).
+Het totaal van alle omgevingen en knooppunten wordt weergegeven in het **[!UICONTROL CPU % by host]** -frame. Schakel de niet-productieomgevingen uit. Let ook op gevallen waarin niet alle knooppunten voor de productieomgeving aanwezig zijn. Voor meer uiteinden op hoog gebruik van CPU, verwijs naar [ de prestaties problemen oplossen gebruikend New Relic op Adobe Commerce ](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/troubleshoot-performance-using-new-relic-on-magento-commerce.html).
 
 ## [!UICONTROL Alerts during timeframe]
 
@@ -68,9 +68,9 @@ In **[!UICONTROL Alerts during timeframe]** worden alle waarschuwingen weergegev
 
 ## [!UICONTROL CPU Usage]
 
-![ gebruik van cpu ](../../assets/tools/cpu-usage.jpg)
+![ gebruik van CPU ](../../assets/tools/cpu-usage.jpg)
 
-Als het frame **[!UICONTROL CPU Usage]** leeg is, geeft dit aan dat de infrastructuurtoepassing van [!DNL New Relic] niet is ingeschakeld. Als uw site op Starter staat, worden deze gegevens niet weergegeven. Als uw plaats op Pro is, open a [ steunkaartje ](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html?lang=nl-NL) om [!DNL New Relic Infrastructure] te hebben toegelaten voor uw plaats.
+Als het frame **[!UICONTROL CPU Usage]** leeg is, geeft dit aan dat de infrastructuurtoepassing van [!DNL New Relic] niet is ingeschakeld. Als uw site op Starter staat, worden deze gegevens niet weergegeven. Als uw plaats op Pro is, open a [ steunkaartje ](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html) om [!DNL New Relic Infrastructure] te hebben toegelaten voor uw plaats.
 
 ## [!UICONTROL Average Response Time]
 
@@ -116,7 +116,7 @@ Het **[!UICONTROL Deployment State]** kader facetteert bepaalde plaatsingsfasen 
 * &#39;%NOTICE: opdracht genereren voltooid%&#39;) als &#39;gen_compl&#39;
 * &#39;%NOTICE: Implementatie voltooid%&#39;) als &#39;implementatie_compl&#39;
 * &#39;%NOTICE: Na implementatie starten.%&#39;) als &#39;start_implementatie&#39;
-* &#39;%NOTICE: Post-implementatie is complete%&#39;) als &#39;implementatie&#39;
+* &#39;%NOTICE: PostImplementation is complete%&#39;) als &#39;implementatie&#39;
 * &#39;%implementatie-complete%&#39;) als &#39;cl_implementatie_compl&#39;
 
 ## [!UICONTROL IP Frequency]
@@ -366,7 +366,7 @@ Het **[!UICONTROL Order transactions (default?)]** -frame zoekt naar transacties
 
 ![ elasticsearch indexinformatie ](../../assets/tools/elasticsearch-tab-elasticsearch-index-information-image-1.jpg)
 
-**[Elasticsearch statussen:](https://www.elastic.co/guide/en/elasticsearch/reference/current/cluster-health.html)**
+**[de statussen van Elasticsearch:](https://www.elastic.co/guide/en/elasticsearch/reference/current/cluster-health.html)**
 
 * Groen: alle schachten worden toegewezen.
 * Geel: alle primaire schaden worden toegewezen, maar een of meer replicaweerten worden niet toegewezen. Als een knooppunt in de cluster uitvalt, zijn sommige gegevens mogelijk niet beschikbaar totdat dat knooppunt wordt gerepareerd.
@@ -381,10 +381,10 @@ Het **[!UICONTROL Order transactions (default?)]** -frame zoekt naar transacties
 * &#39;%all shards failed%&#39; as &#39;all_shards_failed&#39;
 * &#39;%NoNodesAvailableException%&#39; as &#39;no_live_nodes&#39;
 * &#39;%PHP Fatale error: Uncaught Error: Wrong parameters for Elasticsearch%&#39; as &#39;wrong_param&#39;
-* &#39;%U kunt dit probleem verhelpen door de service Elasticsearch op uw Magento Cloud-infrastructuur te upgraden naar versie%&#39; als &#39;ver_err&#39;
+* &#39;%U kunt dit probleem verhelpen door de Elasticsearch-service op uw Magento Cloud-infrastructuur te upgraden naar versie%&#39; als &#39;ver_err&#39;
 * &#39;%clusterstatus gewijzigd van \[YELLOW\] in \[RED\] (reason:%&#39; als &#39;yel_red&#39;
 * &#39;%No space left on device%&#39; as &#39;no_space&#39;
-* &#39;% Kan &lbrack;SearchRequest&lbrace;searchType=%&#39; niet uitvoeren als &#39;failed_query&#39;
+* &#39;% Kan [SearchRequest{searchType=%&#39; niet uitvoeren als &#39;failed_query&#39;
 
 ## [!UICONTROL Cron view]
 
@@ -421,7 +421,7 @@ In dit **[!UICONTROL Datastore Operations Tables]** -frame worden de bovenste 25
 
 ![ geheim voorgeheugenflush ](../../assets/tools/cache-flush.jpg)
 
-{de flushes van 0} Geheime voorgeheugen ontdekte:**&#x200B;**
+{de flushes van 0} Geheime voorgeheugen ontdekte:****
 
 * &#39;%config%&#39; als &#39;config_cache_flushed&#39;
 * &#39;%layout%&#39; als &#39;layout_cache_flush&#39;

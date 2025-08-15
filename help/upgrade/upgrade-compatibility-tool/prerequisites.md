@@ -1,5 +1,5 @@
 ---
-title: '[!DNL Upgrade Compatibility Tool] requirements'
+title: '[!DNL Upgrade Compatibility Tool] vereisten'
 description: Verifieer dat uw systeem aan de noodzakelijke vereisten voldoet om  [!DNL Upgrade Compatibility Tool]  in een bevel-lijn interface voor uw project van Adobe Commerce in werking te stellen.
 exl-id: b8af2e07-3d28-4937-bb88-b0a1c88a2938
 source-git-commit: 40d850add2ef8c51e9192758135768306b163780
@@ -80,4 +80,4 @@ De [!DNL Upgrade Compatibility Tool] moet toegang hebben tot de broncode van de 
 
 Als u de [!DNL Upgrade Compatibility Tool] uitvoert tegen een Adobe Commerce-instantie met grote modules en bestanden, hebt u wellicht veel RAM-geheugen nodig (ten minste 2 GB).
 
-Stel [!DNL Upgrade Compatibility Tool] van [[!DNL Site-Wide Analysis Tool] in werking ](https://experienceleague.adobe.com/docs/commerce-operations/upgrade-guide/upgrade-compatibility-tool/use-upgrade-compatibility-tool/integrate-analysis-tool.html?lang=nl-NL) voor [ Adobe Commerce op de projecten van de wolkeninfrastructuur ](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/project/overview.html?lang=nl-NL){target=_blank} .
+Stel [!DNL Upgrade Compatibility Tool] van [[!DNL Site-Wide Analysis Tool] in werking ](https://experienceleague.adobe.com/docs/commerce-operations/upgrade-guide/upgrade-compatibility-tool/use-upgrade-compatibility-tool/integrate-analysis-tool.html) voor [ Adobe Commerce op de projecten van de wolkeninfrastructuur ](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/project/overview.html){target=_blank}.

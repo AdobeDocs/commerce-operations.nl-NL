@@ -1,6 +1,6 @@
 ---
 title: Gegevens die handmatige migratie vereisen
-description: Meer informatie over gegevens die handmatig moeten worden gemigreerd tijdens een Magento 1 naar Magento 2-gegevensmigratie en over hoe u dit kunt doen.
+description: Meer informatie over gegevens die handmatig moeten worden gemigreerd tijdens een Magento 1-gegevensmigratie naar Magento 2 en over hoe u dit kunt doen.
 exl-id: 830abd81-4c6d-418b-9da4-b6acd95f5ec8
 topic: Commerce, Migration
 source-git-commit: e83e2359377f03506178c28f8b30993c172282c7
@@ -33,9 +33,9 @@ In deze sectie wordt beschreven hoe u mediabestanden handmatig kunt migreren.
 >De opslagmethode voor databasemedia wordt vanaf Magento 2.4.3 afgekeurd.
 
 
-Deze sectie is op u *slechts* van toepassing als u media dossiers in het gegevensbestand van het Magento opslaat. Deze stap zou vóór [ migratie van gegevens ](data.md) moeten worden uitgevoerd:
+Deze sectie is op u *slechts* van toepassing als u media dossiers in het gegevensbestand van Magento opslaat. Deze stap zou vóór [ migratie van gegevens ](data.md) moeten worden uitgevoerd:
 
-1. Meld u als beheerder aan bij het deelvenster Beheer Magento 1.
+1. Meld u als beheerder aan bij het deelvenster Magento 1 Admin.
 
 1. Klik **Systeem** > **Configuratie** > GEAVANCEERD > **Systeem**.
 
@@ -45,7 +45,7 @@ Deze sectie is op u *slechts* van toepassing als u media dossiers in het gegeven
 
 1. Klik **synchroniseren**.
 
-Herhaal vervolgens dezelfde stappen in het deelvenster Beheer van Magento 2.
+Herhaal vervolgens dezelfde stappen in het deelvenster Magento 2 Admin.
 
 ### Mediabestanden in het bestandssysteem
 
@@ -57,7 +57,7 @@ Nochtans, kopieer ** niet de `.htaccess` dossiers die in Magento 1 `media` worde
 
 * Het ontwerp in bestanden (CSS, JS, sjablonen, XML-lay-outs) is gewijzigd qua locatie en indeling
 
-* Layout Updates opgeslagen in de database. Geplaatst via Magento 1 Admin in CMS-pagina&#39;s, CMS-widgets, categoriepagina&#39;s en productpagina&#39;s
+* Layout Updates opgeslagen in de database. Geplaatst via Magento 1 Admin op CMS-pagina&#39;s, CMS-widgets, categoriepagina&#39;s en productpagina&#39;s
 
 ## Access Control Lists (ACL&#39;s)
 

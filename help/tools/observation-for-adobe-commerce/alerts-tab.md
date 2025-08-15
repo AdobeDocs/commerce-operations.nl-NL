@@ -18,13 +18,13 @@ Het tabblad [!UICONTROL Alerts] bevat een reeks waarschuwingen, waaronder open e
 
 ![ Open Kritieke Alarm ](../../assets/tools/observation-for-adobe-commerce/alerts-tab-1.jpg)
 
-Het frame **[!UICONTROL Open Alert Details]** bevat een aantal open kritieke waarschuwingen over de geselecteerde tijdlijn. Het alarm zal Adobe-gecreeerde alarm en om het even welk omvatten die door de partner of de handelaar worden gecreeerd.
+Het frame **[!UICONTROL Open Alert Details]** bevat een aantal open kritieke waarschuwingen over de geselecteerde tijdlijn. De waarschuwingen omvatten door Adobe gemaakte waarschuwingen en eventuele waarschuwingen die door de partner of handelaar zijn gemaakt.
 
 ## [!UICONTROL Closed Critical Alerts]
 
 ![ Gesloten Kritieke Alarm ](../../assets/tools/observation-for-adobe-commerce/alerts-tab-2.jpg)
 
-Het frame **[!UICONTROL Closed Critical Alerts]** bevat een aantal gesloten kritieke waarschuwingen over de geselecteerde tijdlijn. Het alarm zal Adobe-gecreeerde alarm en om het even welk omvatten die door de partner of de handelaar worden gecreeerd.
+Het frame **[!UICONTROL Closed Critical Alerts]** bevat een aantal gesloten kritieke waarschuwingen over de geselecteerde tijdlijn. De waarschuwingen omvatten door Adobe gemaakte waarschuwingen en eventuele waarschuwingen die door de partner of handelaar zijn gemaakt.
 
 ## [!UICONTROL Critical Alert Details]
 

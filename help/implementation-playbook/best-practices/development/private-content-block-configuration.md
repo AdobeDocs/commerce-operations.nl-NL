@@ -26,9 +26,9 @@ In plaats van de variabele `_isScopePrivate` te gebruiken voor persoonlijke inho
 
 ## Mogelijke gevolgen voor de prestaties
 
-Sites met persoonlijke inhoudsblokken die de `_isScopePrivate` -variabelen bevatten, AJAX aanvragen om dezelfde gegevens voor elke klantaanvraag op te halen. Dit verhoogt reactietijd en gebruikt extra middelen die zouden kunnen worden gebruikt om meer zaken-kritieke archiefverrichtingen zoals klantenregistratie, winkelwagentupdates, orderindiening, en betalingstransacties te behandelen.
+Sites met persoonlijke inhoudsblokken die de `_isScopePrivate` -variabelen bevatten, activeren AJAX-aanvragen om dezelfde gegevens op te halen voor elke klantaanvraag. Dit verhoogt reactietijd en gebruikt extra middelen die zouden kunnen worden gebruikt om meer zaken-kritieke archiefverrichtingen zoals klantenregistratie, winkelwagentupdates, orderindiening, en betalingstransacties te behandelen.
 
 ## Aanvullende informatie
 
 - [Persoonlijke inhoud](../../../performance/configuration.md#client-side-optimization-settings)
-- [ Hoge productie AJAX verzoeken veroorzaken slechte prestaties ](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/high-throughput-ajax-requests-cause-poor-performance.html?lang=nl-NL)
+- [ Hoge de verzoeken van AJAX van de productie veroorzaken slechte prestaties ](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/high-throughput-ajax-requests-cause-poor-performance.html)

@@ -23,7 +23,7 @@ Na het steunen, kunt u [ terugschroeven van prijzen ](#rollback) later.
 
 >[!TIP]
 >
->Voor Adobe Commerce op de projecten van de wolkeninfrastructuur, zie [ Momentopnamen en reservebeheer ](https://experienceleague.adobe.com/nl/docs/commerce-cloud-service/user-guide/develop/storage/snapshots) in de _gids van de Wolk_.
+>Voor Adobe Commerce op de projecten van de wolkeninfrastructuur, zie [ Momentopnamen en reservebeheer ](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/develop/storage/snapshots) in de _gids van de Wolk_.
 
 ## Back-ups inschakelen
 
@@ -36,7 +36,7 @@ bin/magento config:set system/backup/functionality_enabled 1
 >[!WARNING]
 >
 >**Bericht van de Verdringing:**
->Back-upfunctionaliteit is vanaf 2.1.16, 2.2.7 en 2.3.0 verouderd. We raden u aan aanvullende back-uptechnologieën en binaire back-uptools (zoals Percona XtraBackup) te onderzoeken.
+>>Back-upfunctionaliteit is vanaf 2.1.16, 2.2.7 en 2.3.0 verouderd. We raden u aan aanvullende back-uptechnologieën en binaire back-uptools (zoals Percona XtraBackup) te onderzoeken.
 
 ## Limiet voor geopende bestanden instellen
 

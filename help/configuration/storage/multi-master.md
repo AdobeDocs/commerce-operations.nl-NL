@@ -62,7 +62,7 @@ Dit betekent ook dat u:
 
 - Vorm de gespleten gegevensbestandoplossing _alvorens_ Commerce in productie te zetten.
 
-  Adobe raadt aan om gesplitste databases zo snel mogelijk te configureren nadat u de Commerce-software hebt geïnstalleerd.
+  Adobe raadt aan zo snel mogelijk gesplitste databases te configureren nadat u de Commerce-software hebt geïnstalleerd.
 
 - [ vormt manueel ](multi-master-manual.md) de gespleten gegevensbestandoplossing.
 

@@ -85,7 +85,7 @@ Hier volgen enkele voorbeelden van opdrachten.
 
 ### Een thema en HTML-miniatuur uitsluiten
 
-Het volgende bevel stelt statische inhoud voor de Engelse (`en_US`) taal van de V.S. op, sluit het thema van de Luma uit die van Commerce wordt voorzien, en minieme HTML dossiers niet.
+De volgende opdracht implementeert statische inhoud voor de Engelse taal (`en_US`) van de VS, sluit het Luma-thema uit dat bij Commerce wordt geleverd en minieme HTML-bestanden niet.
 
 ```bash
 bin/magento setup:static-content:deploy en_US --exclude-theme Magento/luma --no-html-minify

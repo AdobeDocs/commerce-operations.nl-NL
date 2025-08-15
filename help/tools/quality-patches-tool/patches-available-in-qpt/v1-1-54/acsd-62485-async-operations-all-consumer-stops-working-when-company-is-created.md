@@ -1,6 +1,6 @@
 ---
-title: 'ACSD-62485: &grave; async.operations.all&grave; de consument houdt op werkend wanneer het bedrijf wordt gecreeerd'
-description: Pas het ACSD-62485 flard toe om de kwestie van Adobe Commerce te bevestigen waar de consument &grave; async.operations.all' ophoudt werkend wanneer een bedrijf B2B wordt gecreeerd.
+title: 'ACSD-62485: ` async.operations.all` de consument houdt op werkend wanneer het bedrijf wordt gecreeerd'
+description: Pas het ACSD-62485 flard toe om de kwestie van Adobe Commerce te bevestigen waar de consument ` async.operations.all' ophoudt werkend wanneer een bedrijf B2B wordt gecreeerd.
 feature: B2B, Companies
 role: Admin, Developer
 exl-id: 99d20555-fe55-4a04-a067-5a2b104811f5
@@ -28,7 +28,7 @@ De ACSD-62485-patch verhelpt het probleem waarbij de `async.operations.all` -con
 
 >[!NOTE]
 >
->De patch kan van toepassing worden op andere versies met nieuwe [!DNL Quality Patches Tool] versies. Om te controleren of de patch compatibel is met uw Adobe Commerce-versie, werkt u het `magento/quality-patches` -pakket bij naar de meest recente versie en controleert u de compatibiliteit op de [[!DNL Quality Patches Tool] : zoek naar patches op de pagina ](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html?lang=nl-NL) . Gebruik de patch-id als een zoekwoord om de patch te zoeken.
+>De patch kan van toepassing worden op andere versies met nieuwe [!DNL Quality Patches Tool] versies. Om te controleren of de patch compatibel is met uw Adobe Commerce-versie, werkt u het `magento/quality-patches` -pakket bij naar de meest recente versie en controleert u de compatibiliteit op de [[!DNL Quality Patches Tool] : zoek naar patches op de pagina ](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html) . Gebruik de patch-id als een zoekwoord om de patch te zoeken.
 
 ## Probleem
 
@@ -59,7 +59,7 @@ De consument houdt onmiddellijk op met zijn werk.
 Om individuele flarden toe te passen, gebruik de volgende verbindingen afhankelijk van uw plaatsingsmethode:
 
 * Op locatie Adobe Commerce of Magento Open Source: [[!DNL Quality Patches Tool] > Gebruik ](/help/tools/quality-patches-tool/usage.md) in de handleiding [!DNL Quality Patches Tool] .
-* Adobe Commerce op wolkeninfrastructuur: [ Verbeteringen en Patches > Pas Patches ](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html?lang=nl-NL) in Commerce op de gids van de Infrastructuur van de Wolk toe.
+* Adobe Commerce op wolkeninfrastructuur: [ Verbeteringen en Patches > Pas Patches ](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html) in Commerce op de gids van de Infrastructuur van de Wolk toe.
 
 ## Gerelateerde lezing
 

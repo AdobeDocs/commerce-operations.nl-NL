@@ -16,7 +16,7 @@ Vanaf Adobe Commerce 2.4, moeten alle installaties worden gevormd om [ Elasticse
 
 >[!NOTE]
 >
->Ondersteuning voor OpenSearch is toegevoegd in 2.4.4. OpenSearch is een compatibele Elasticsearch. Alle instructies voor het configureren van Elasticsearch 7 zijn van toepassing op OpenSearch. [ migreer van Elasticsearch aan OpenSearch ](../../../upgrade/prepare/opensearch-migration.md) verstrekt begeleiding bij het schakelen naar OpenSearch.
+>Ondersteuning voor OpenSearch is toegevoegd in 2.4.4. OpenSearch is een compatibele vork van Elasticsearch. Alle instructies voor het configureren van Elasticsearch 7 zijn van toepassing op OpenSearch. [ migreren van Elasticsearch aan OpenSearch ](../../../upgrade/prepare/opensearch-migration.md) verstrekt begeleiding bij het schakelen naar OpenSearch.
 
 ## Ondersteunde versies
 
@@ -41,7 +41,7 @@ Het voorgaande diagram toont:
 
 * De Commerce-toepassing en het zoekprogramma zijn op verschillende hosts geïnstalleerd.
 
-  Als u op aparte hosts werkt, is proxy vereist. (Het groeperen van zich de onderzoeksmotor is voorbij het werkingsgebied van deze gids, maar u kunt meer informatie in de [ Elasticsearch vinden die documentatie ](https://www.elastic.co/guide/en/elasticsearch/guide/current/distributed-cluster.html) groeperen.)
+  Als u op aparte hosts werkt, is proxy vereist. (Het groeperen van zich de onderzoeksmotor is voorbij het werkingsgebied van deze gids, maar u kunt meer informatie in [ Elasticsearch vinden die documentatie ](https://www.elastic.co/guide/en/elasticsearch/guide/current/distributed-cluster.html) groeperen.)
 
 * Elke host heeft een eigen webserver. De webservers hoeven niet hetzelfde te zijn.
 
@@ -63,7 +63,7 @@ Zoekverzoeken worden als volgt verwerkt:
 
 1. Het zoekprogramma verwerkt het verzoek.
 
-1. De mededeling keert langs de zelfde route terug, met de server die van het Web van de Elasticsearch als veilige omgekeerde volmacht dienst doet.
+1. De mededeling keert langs de zelfde route terug, met de Webserver van Elasticsearch handelend als veilige omgekeerde volmacht.
 
 ## Vereisten
 
@@ -72,7 +72,7 @@ De in deze sectie besproken taken vereisen het volgende:
 * [Firewall en SELinux](#firewall-and-selinux)
 * [De JDK (Java Software Development Kit) installeren](#install-the-java-software-development-kit)
 * [De zoekfunctie installeren](#install-the-search-engine)
-* [Elasticsearch bijwerken](#upgrading-elasticsearch)
+* [Elasticsearch upgraden](#upgrading-elasticsearch)
 
 ### Firewall en SELinux
 
@@ -128,13 +128,13 @@ apt-get -y update
 apt-get install -y openjdk-8-jdk
 ```
 
-Voor andere opties, zie {de documentatie van het Oracle 0} [&#128279;](https://docs.oracle.com/javase/8/docs/technotes/guides/install/install_overview.html).
+Voor andere opties, zie {de documentatie van 0} Oracle [.](https://docs.oracle.com/javase/8/docs/technotes/guides/install/install_overview.html)
 
 ### De zoekfunctie installeren
 
 Volg [ Installerend Elasticsearch ](https://www.elastic.co/guide/en/elasticsearch/reference/current/install-elasticsearch.html) of [ installeer en vorm OpenSearch ](https://opensearch.org/docs/latest/opensearch/install/index/) voor uw platform-specifieke stappen.
 
-Om te verifiëren dat de Elasticsearch werkt, ga het volgende bevel op de server in waarop het loopt:
+Als u wilt controleren of Elasticsearch werkt, voert u de volgende opdracht in op de server waarop deze wordt uitgevoerd:
 
 ```bash
 curl -XGET '<host>:9200/_cat/health?v&pretty'
@@ -157,12 +157,12 @@ curl -XGET https://<host>:9200 -u 'admin:admin' --insecure
 curl -XGET https://<host>:9200/_cat/plugins?v -u 'admin:admin' --insecure
 ```
 
-## Elasticsearch bijwerken
+## Elasticsearch upgraden
 
-Verwijs naar [ Bevorderende Elasticsearch ](https://www.elastic.co/guide/en/elasticsearch/reference/current/setup-upgrade.html) voor volledige instructies bij het steunen van uw gegevens, het ontdekken van potentiële migratiekwesties, en het testen van verbeteringen alvorens aan productie op te stellen. Afhankelijk van uw huidige versie van Elasticsearch is het mogelijk dat een volledige clusterherstart al dan niet vereist is.
+Verwijs naar [ Bevorderend Elasticsearch ](https://www.elastic.co/guide/en/elasticsearch/reference/current/setup-upgrade.html) voor volledige instructies bij het steunen van uw gegevens, het ontdekken van potentiële migratiekwesties, en het testen van verbeteringen alvorens aan productie op te stellen. Afhankelijk van uw huidige versie van Elasticsearch is het mogelijk dat een volledige cluster opnieuw moet worden opgestart.
 
-Voor Elasticsearch is JDK 1.8 of hoger vereist. Zie [ installeer de Uitrusting van de Ontwikkeling van de Software van Java ](#install-the-java-software-development-kit) om te controleren welke versie van JDK geïnstalleerd is.
+Elasticsearch vereist JDK 1.8 of hoger. Zie [ installeer de Uitrusting van de Ontwikkeling van de Software van Java ](#install-the-java-software-development-kit) om te controleren welke versie van JDK geïnstalleerd is.
 
 ## Aanvullende bronnen
 
-Zie de [ Elasticsearch ](https://www.elastic.co/guide/en/elasticsearch/reference/current/index.html) of [ OpenSearch ](https://opensearch.org/docs/latest/) documentatie.
+Zie [ Elasticsearch ](https://www.elastic.co/guide/en/elasticsearch/reference/current/index.html) of [ OpenSearch ](https://opensearch.org/docs/latest/) documentatie.

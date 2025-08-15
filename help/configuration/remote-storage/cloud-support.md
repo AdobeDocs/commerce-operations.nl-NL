@@ -12,11 +12,11 @@ ht-degree: 0%
 
 # Externe opslag voor Commerce configureren op Cloud-infrastructuur
 
-Beginnend met het `ece-tools` pakket 2002.1.5, kunt u een omgevingsvariabele gebruiken om de Verre module van de Opslag toe te laten; nochtans, heeft de Verre module van de Opslag _beperkte_ steun op Adobe Commerce op wolkeninfrastructuur. Adobe kan de service van de externe opslagadapter niet volledig oplossen.
+Beginnend met het `ece-tools` pakket 2002.1.5, kunt u een omgevingsvariabele gebruiken om de Verre module van de Opslag toe te laten; nochtans, heeft de Verre module van de Opslag _beperkte_ steun op Adobe Commerce op wolkeninfrastructuur. Adobe kan de service voor opslagadapters van derden niet volledig oplossen.
 
 ## Omgevingsvariabele
 
-De `REMOTE_STORAGE` variabele wordt gebruikt tijdens [ stelt fase ](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/deploy/process.html?lang=nl-NL) van een project van de wolkeninfrastructuur op.
+De `REMOTE_STORAGE` variabele wordt gebruikt tijdens [ stelt fase ](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/deploy/process.html) van een project van de wolkeninfrastructuur op.
 
 ### `REMOTE_STORAGE`
 
@@ -40,7 +40,7 @@ stage:
 
 ### Variabele instellen met Cloud CLI
 
-Plaats de `REMOTE_STORAGE` variabele als [ milieu-vlakke veranderlijke ](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure/env/variable-levels.html?lang=nl-NL) zodat de dossiers niet tussen de Productie, het Opvoeren, en milieu&#39;s van de Integratie worden gedeeld. Door de variabelen op het niveau van de omgeving in te stellen, hebt u de flexibiliteit om alleen externe opslag te gebruiken in bepaalde omgevingen, zoals het gebruik van externe opslag in de integratieomgeving.
+Plaats de `REMOTE_STORAGE` variabele als [ milieu-vlakke veranderlijke ](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure/env/variable-levels.html) zodat de dossiers niet tussen de Productie, het Opvoeren, en milieu&#39;s van de Integratie worden gedeeld. Door de variabelen op het niveau van de omgeving in te stellen, hebt u de flexibiliteit om alleen externe opslag te gebruiken in bepaalde omgevingen, zoals het gebruik van externe opslag in de integratieomgeving.
 
 **om de verre opslagvariabele toe te voegen gebruikend Cloud CLI**:
 
@@ -89,7 +89,7 @@ Alternatief, kunt u de Interface van het Web van het Project gebruiken om de var
 
 ### Optionele verificatie gebruiken
 
-`key` en `secret` zijn optioneel. Wanneer u de variabele maakt, kunt u de opties `key` en `secret` verbergen door de optie `sensitive` te selecteren. Met deze instelling zijn de waarden niet zichtbaar in de webinterface. Zie [ Variabele zicht ](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure/env/variable-levels.html?lang=nl-NL#visibility) in _Commerce op de gids van de Infrastructuur van de Wolk_.
+`key` en `secret` zijn optioneel. Wanneer u de variabele maakt, kunt u de opties `key` en `secret` verbergen door de optie `sensitive` te selecteren. Met deze instelling zijn de waarden niet zichtbaar in de webinterface. Zie [ Variabele zicht ](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure/env/variable-levels.html#visibility) in _Commerce op de gids van de Infrastructuur van de Wolk_.
 
 Als u een andere verificatiemethode wilt gebruiken, laat u `key` en `secret` weg uit de JSON-configuratie. Vorm de alternatieve authentificatiemethode, en verifieer dat de server aan het S3 emmertje wordt gemachtigd.
 
@@ -111,7 +111,7 @@ bin/magento remote-storage:sync
 
 Als u verkiest om de verre opslagoplossing met een Adobe Commerce op het project van de wolkeninfrastructuur te gebruiken, gebruik [ Amazon S3 ](https://docs.fastly.com/en/guides/amazon-s3) begeleiding in de _snelst_ documentatie om ervoor te zorgen dat de Snelle Optimalisering van het Beeld met AWS S3 werkt.
 
-Ben voorbereid met uw [ Snelle geloofsbrieven ](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/cdn/setup-fastly/fastly-configuration.html?lang=nl-NL#get-fastly-credentials). Bij Pro-projecten gebruikt u SSH om verbinding te maken met uw server en de snelste referenties van het `/mnt/shared/fastly_tokens.txt` -bestand op te halen. Staging- en productieomgevingen hebben unieke gegevens. U moet de geloofsbrieven voor elke milieu krijgen.
+Ben voorbereid met uw [ Snelle geloofsbrieven ](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/cdn/setup-fastly/fastly-configuration.html#get-fastly-credentials). Bij Pro-projecten gebruikt u SSH om verbinding te maken met uw server en de snelste referenties van het `/mnt/shared/fastly_tokens.txt` -bestand op te halen. Staging- en productieomgevingen hebben unieke gegevens. U moet de geloofsbrieven voor elke milieu krijgen.
 
 De externe opslag voor cloudprojecten blijven instellen met de volgende taken:
 

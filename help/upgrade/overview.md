@@ -13,7 +13,7 @@ ht-degree: 1%
 
 Het upgraden van uw Adobe Commerce-project is van essentieel belang om ervoor te zorgen dat uw winkel veilig blijft, voldoet aan PCI en optimaal functioneert. Deze gids begeleidt u door zeer belangrijke overwegingen wanneer het voorbereiden van een verbetering.
 
-De gids geeft een overzicht van de typische Adobe Commerce upgrade-reis en de beste praktijken om die reis te volgen. Het beschrijft ook technische details van het verbeteringsproces met een geschikte voorbeeld en geleidelijke instructies voor verbetering aan de recentste versie van Adobe Commerce. Het is belangrijk om het de versieschema van Adobe Commerce [&#128279;](../release/schedule.md) te herzien en begin voor verbeteringen vroegtijdig voor te bereiden. Adobe publiceert jaarlijks de releaseplanning om het planningsproces van verkopers te vergemakkelijken en raadt aan elke patchreleasecyclus te upgraden. Om PCI-compatibel te blijven, moeten handelaren op de nieuwste patch of beveiligingspatch zitten.
+De gids geeft een overzicht van de typische Adobe Commerce upgrade-reis en de beste praktijken om die reis te volgen. Het beschrijft ook technische details van het verbeteringsproces met een geschikte voorbeeld en geleidelijke instructies voor verbetering aan de recentste versie van Adobe Commerce. Het is belangrijk om het de versieschema van Adobe Commerce [ ](../release/schedule.md) te herzien en begin voor verbeteringen vroegtijdig voor te bereiden. Adobe publiceert de releaseschema jaarlijks om het planningsproces van verkopers te vergemakkelijken en raadt aan elke patchreleasecyclus te upgraden. Om PCI-compatibel te blijven, moeten handelaren op de nieuwste patch of beveiligingspatch zitten.
 
 ## Voor wie is deze gids?
 
@@ -39,7 +39,7 @@ Door een upgrade uit te voeren, kunt u uw bedrijf in de razendsnelle en voortdur
 
 ### Beveiliging
 
-Beveiliging is een van de belangrijkste redenen voor een upgrade omdat 83% van de beveiligingsincidenten met verouderde software plaatsvindt. Volgens [ IBM ](https://www.ibm.com/reports/data-breach), zijn de gemiddelde kosten van een gegevensinbreuk $3.86 miljoen-veel groter dan wat het kost om dit risico door bevordering te verlichten. Adobe biedt twee manieren om uw winkel het hele jaar veilig te houden:
+Beveiliging is een van de belangrijkste redenen voor een upgrade omdat 83% van de beveiligingsincidenten met verouderde software plaatsvindt. Volgens [ IBM ](https://www.ibm.com/reports/data-breach), zijn de gemiddelde kosten van een gegevensinbreuk $3.86 miljoen-veel groter dan wat het kost om dit risico door bevordering te verlichten. Adobe biedt twee manieren om je winkel het hele jaar veilig te houden:
 
 - **de versies van het Reparatie** - omvat veiligheid, prestaties, kwaliteit, en high-priority insectenmoeilijke situaties.
 - **de flardversies van de Veiligheid** - omvatten moeilijke situaties en verhogingen om uw plaats veilig te houden en gemakkelijker te implementeren zijn.

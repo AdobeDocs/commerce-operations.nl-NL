@@ -14,7 +14,7 @@ ht-degree: 0%
 
 Voordat u de migratie start, moet u controleren of aan de volgende vereisten is voldaan.
 
-## Systeem van Magento 2
+## Magento 2-systeem
 
 * Opstelling uw Magento 2 systeem zodat het aan de [ systeemvereisten ](../../installation/system-requirements.md) voldoet.
 
@@ -24,26 +24,26 @@ Voordat u de migratie start, moet u controleren of aan de volgende vereisten is 
 
 ## Cron
 
-Start geen Magento 2 cron-taken.
+Start Magento 2-banen niet.
 
 ## Database
 
 * Na installatie, file of [ stortplaats ](https://dev.mysql.com/doc/refman/8.0/en/mysqldump.html) uw Magento 2 gegevensbestand zo spoedig mogelijk. Hierdoor kunt u de initiële databasestatus herstellen als de migratie niet succesvol is.
 
-* Verifieer of [!DNL Data Migration Tool] netwerktoegang heeft om Magento 1 en Magento 2 gegevensbestanden aan te sluiten.
+* Controleer of de [!DNL Data Migration Tool] netwerktoegang heeft om de Magento 1- en Magento 2-databases te verbinden.
 
   Open poorten in uw firewall zodat het migratiehulpprogramma kan communiceren met de databases.
 
-* Zorg ervoor uw rekeningen MySQL alle noodzakelijke voorrechten hebben om tot gegevensbestanden van het Magento toegang te hebben.
+* Zorg ervoor dat uw MySQL-accounts over alle benodigde rechten beschikken om toegang te krijgen tot Magento-databases.
 
-Als het Binaire Registreren voor uw Magento 1 gegevensbestand wordt toegelaten, plaats globale [`log_bin_trust_function_creators` ](https://dev.mysql.com/doc/refman/5.7/en/server-system-variables.html#sysvar_log_bin_trust_function_creators) MySQL systeemvariabele aan `1`, of geef het [ BEHEER ](https://dev.mysql.com/doc/refman/5.7/en/privileges-provided.html#priv_super) recht van de SUPER aan uw rekening.
+Als het Binaire Registreren voor uw Magento 1- gegevensbestand wordt toegelaten, plaats globale [`log_bin_trust_function_creators` ](https://dev.mysql.com/doc/refman/5.7/en/server-system-variables.html#sysvar_log_bin_trust_function_creators) MySQL systeemvariabele aan `1`, of geef het [ SUPER voorrecht ](https://dev.mysql.com/doc/refman/5.7/en/privileges-provided.html#priv_super) aan uw rekening toe.
 
-* We raden u niet aan nieuwe entiteiten (producten, categorieën en kenmerken) vóór de migratie in uw Magento 2-winkel te maken, omdat [!DNL Data Migration Tool] dergelijke nieuwe entiteiten vervangt door de oude entiteiten uit Magento 1.
+* We raden u niet aan om vóór de migratie nieuwe entiteiten (producten, categorieën en kenmerken) in uw Magento 2-winkel te maken, omdat [!DNL Data Migration Tool] dergelijke nieuwe entiteiten vervangt door de oude entiteiten uit Magento 1.
 
 ## Extensies
 
-Migreer Magento 1 uitbreidingscode aan Magento 2.
+Magento 1-extensiecode migreren naar Magento 2.
 
-Ga naar [[!DNL [Commerce Marketplace]]](https://marketplace.magento.com/) of neem contact op met de leverancier van de extensies als u de meest recente versies van extensies wilt zoeken.
+Ga naar [!DNL [Commerce Marketplace]](https://marketplace.magento.com/) of neem contact op met de leverancier van de extensies als u de meest recente versies van extensies wilt zoeken.
 
-U kunt ook [[!DNL [Code Migration Tool]]](https://github.com/magento-commerce/code-migration/blob/develop/README.md) gebruiken.
+U kunt ook [!DNL [Code Migration Tool]](https://github.com/magento-commerce/code-migration/blob/develop/README.md) gebruiken.

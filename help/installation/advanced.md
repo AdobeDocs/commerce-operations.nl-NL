@@ -4,7 +4,7 @@ description: Meer informatie over geavanceerde installatiescenario's voor Adobe 
 exl-id: e16e750a-e068-4a63-8ad9-62043e2a8231
 source-git-commit: 79c8a15fb9686dd26d73805e9d0fd18bb987770d
 workflow-type: tm+mt
-source-wordcount: '2314'
+source-wordcount: '2313'
 ht-degree: 0%
 
 ---
@@ -119,7 +119,7 @@ Met de volgende opties geeft u de gebruikersgegevens en gebruikersgegevens voor 
 
 U kunt de Admin-gebruiker tijdens of na de installatie maken. Als u de gebruiker tijdens de installatie creeert, zijn alle admin credentievariabelen vereist. Zie [ installaties van de Steekproef localhost ](#sample-localhost-installations).
 
-De volgende tabellen bevatten veel, maar niet alle beschikbare installatieparameters. Voor een volledige lijst, zie de [ bevel-lijn Verwijzing van Hulpmiddelen ](https://experienceleague.adobe.com/nl/docs/commerce-operations/tools/cli-reference/commerce-on-premises).
+De volgende tabellen bevatten veel, maar niet alle beschikbare installatieparameters. Voor een volledige lijst, zie de [ bevel-lijn Verwijzing van Hulpmiddelen ](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/cli-reference/commerce-on-premises).
 
 | Naam | Waarde | Vereist? |
 |--- |--- |--- |
@@ -135,7 +135,7 @@ De volgende tabellen bevatten veel, maar niet alle beschikbare installatieparame
 |--- |--- |--- |
 | `--base-url` | Basis URL aan gebruik om tot uw Admin en opslag in om het even welke volgende formaten toegang te hebben:<br><br>`http[s]://<host or ip>/<your install dir>/`.<br><br>**Nota:** de regeling (http:// of https://) en een het slepen schuine streep worden allebei vereist.<br><br>`<your install dir>` is het documentafhankelijke relatieve pad voor de installatie van de Adobe Commerce-software. Afhankelijk van hoe u opstelling uw Webserver en virtuele gastheren, de weg magento2 zou kunnen zijn of het zou leeg kunnen zijn.<br><br> om tot Adobe Commerce of tot MagenAdobe Commercieel toegang te hebben `http://127.0.0.1/<your install dir>/` of `http://127.0.0.1/<your install dir>/`.<br><br> - `{{base_url}}` die een basis-URL vertegenwoordigt die wordt gedefinieerd door een virtuele hostinstelling of door een virtualisatieomgeving zoals Docker. Als u bijvoorbeeld een virtuele host instelt met de hostnaam `magento.example.com` , kunt u de software installeren met `--base-url={{base_url}}` en toegang krijgen tot de beheerder met een URL zoals `http://magento.example.com/admin` . | Ja |
 | `--backend-frontname` | Uniform Resource Identifier (URI) voor toegang tot de beheerder. U kunt deze parameter weglaten om de toepassing willekeurige URI voor u met het volgende patroon <code> te laten produceren admin_jkhgdfq</code>.<br><br> wij adviseren willekeurige URI voor veiligheidsdoeleinden. Willekeurige URI is moeilijker voor hakkers of kwaadwillige software om te exploiteren.<br><br> de vertoningen van URI aan het eind van de installatie. U kunt deze later op elk gewenst moment weergeven met de opdracht `bin/magento info:adminuri` .<br><br> als u verkiest om een waarde in te gaan, adviseren wij u geen gemeenschappelijk woord zoals admin, backend. De Admin-URI kan alleen alfanumerieke waarden en het onderstrepingsteken (`_`) bevatten. | Nee |
-| `--db-host` | Gebruik om het even welk van het volgende:<br><br> - de volledig gekwalificeerde hostname van de gegevensbestandserver of IP adres.<br><br>- `localhost` (standaardwaarde) of `127.0.0.1` als uw databaseserver zich op dezelfde host bevindt als uw webserver.localhost betekent dat de MySQL-clientbibliotheek gebruikmaakt van UNIX-sockets om verbinding te maken met de database. `127.0.0.1` zorgt ervoor dat de clientbibliotheek het TCP-protocol gebruikt. Voor meer informatie over contactdozen, zie de [ PHP documentatie BOB_MYSQL ](https://www.php.net/manual/en/ref.pdo-mysql.php).<br><br>**Nota:** U kunt naar keuze de haven van de gegevensbestandserver in zijn hostname als www.example.com:9000 specificeren | Ja |
+| `--db-host` | Gebruik om het even welk van het volgende:<br><br> - de volledig gekwalificeerde hostname van de gegevensbestandserver of IP adres.<br><br>- `localhost` (standaardwaarde) of `127.0.0.1` als uw databaseserver zich op dezelfde host bevindt als uw webserver.localhost betekent dat de MySQL-clientbibliotheek gebruikmaakt van UNIX-sockets om verbinding te maken met de database. `127.0.0.1` zorgt ervoor dat de clientbibliotheek het TCP-protocol gebruikt. Voor meer informatie over contactdozen, zie de [ PHP documentatie BOB_MYSQL ](https://www.php.net/manual/en/ref.pdo-mysql.php).<br><br>**Nota:** U kunt naar keuze de haven van de gegevensbestandserver in zijn hostname als www.example.com specificeren :9000 | Ja |
 | `--db-name` | Naam van de database-instantie waarin u de databasetabellen wilt installeren.<br><br> Standaard is `magento2`. | Ja |
 | `--db-user` | Gebruikersnaam van de eigenaar van de databaseinstantie.<br><br> Standaard is `root`. | Ja |
 | `--db-password` | Het wachtwoord van de eigenaar van de databaseinstantie. | Ja |
@@ -162,12 +162,12 @@ De volgende tabellen bevatten veel, maar niet alle beschikbare installatieparame
 | Naam | Waarde | Vereist? |
 |--- |--- |--- |
 | `--search-engine` | De versie van Elasticsearch of OpenSearch die als zoekmachine moet worden gebruikt. De standaardwaarde is `elasticsearch7` . Elasticsearch 5 is afgekeurd en wordt niet aanbevolen. | Nee |
-| `--elasticsearch-host` | De gastheernaam of IP adres waar de Elasticsearch loopt. De standaardwaarde is `localhost` . | Nee |
-| `--elasticsearch-port` | De poort van de Elasticsearch voor binnenkomende HTTP-aanvragen. De standaardwaarde is `9200` . | Nee |
-| `--elasticsearch-index-prefix` | Een voorvoegsel dat de zoekindex van de Elasticsearch aangeeft. De standaardwaarde is `magento2` . | Nee |
+| `--elasticsearch-host` | De hostnaam of het IP-adres waarop Elasticsearch wordt uitgevoerd. De standaardwaarde is `localhost` . | Nee |
+| `--elasticsearch-port` | De Elasticsearch-poort voor binnenkomende HTTP-aanvragen. De standaardwaarde is `9200` . | Nee |
+| `--elasticsearch-index-prefix` | Een voorvoegsel dat de zoekindex van Elasticsearch aangeeft. De standaardwaarde is `magento2` . | Nee |
 | `--elasticsearch-timeout` | Het aantal seconden voordat het systeem uitvalt. De standaardwaarde is `15` . | Nee |
-| `--elasticsearch-enable-auth` | Laat authentificatie op de server van de Elasticsearch toe. De standaardwaarde is `false` . | Nee |
-| `--elasticsearch-username` | De gebruikers-id die moet worden geverifieerd bij de Elasticsearch-server. | Nee, tenzij verificatie is ingeschakeld |
+| `--elasticsearch-enable-auth` | Hiermee wordt verificatie op de Elasticsearch-server ingeschakeld. De standaardwaarde is `false` . | Nee |
+| `--elasticsearch-username` | De gebruikersnaam die moet worden geverifieerd bij de Elasticsearch-server. | Nee, tenzij verificatie is ingeschakeld |
 | `--elasticsearch-password` | Het wachtwoord voor verificatie bij de Elasticzoekserver. | Nee, tenzij verificatie is ingeschakeld |
 | `--opensearch-host` | De hostnaam of het IP-adres waar OpenSearch wordt uitgevoerd. De standaardwaarde is `localhost` . | Nee |
 | `--opensearch-port` | De OpenSearch-poort voor binnenkomende HTTP-aanvragen. De standaardwaarde is `9200` . | Nee |

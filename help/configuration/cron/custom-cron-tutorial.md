@@ -210,7 +210,7 @@ Uitsnijden verifiëren:
 1. Voer de SQL-query `SELECT * from cron_schedule WHERE job_code like '%custom%'` als volgt uit:
 
    1. Enter `mysql -u magento -p`
-   1. Typ `use magento;` bij de aanwijzing `mysql>` .
+   1. Typ `mysql>` bij de aanwijzing `use magento;` .
    1. Enter `SELECT * from cron_schedule WHERE job_code like '%custom%';`
 
       Het resultaat moet vergelijkbaar zijn met het volgende:

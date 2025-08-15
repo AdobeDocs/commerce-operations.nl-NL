@@ -19,4 +19,4 @@ De volgende statusinformatie wordt weergegeven op het bovenste niveau van de pag
 
 **[!UICONTROL Health Index Bar]**: hiermee wordt de algehele gezondheid van de site gemeten van 0 tot 100, waarbij nul het slechtst is en 100 het perfecte gezondheidsniveau. Deze wordt berekend op basis van de coëfficiënt voor de hoeveelheid en het prioritaire gewicht van de werkzame aanbevelingen.
 
-**[!UICONTROL Download Recommendations Report]**: Recommendations-rapport bevat gepersonaliseerde aanbevelingen die van toepassing zijn op uw project. U kunt een rapport van de PDF downloaden door op deze sectie te klikken.
+**[!UICONTROL Download Recommendations Report]**: Het rapport met aanbevelingen bevat gepersonaliseerde aanbevelingen die van toepassing zijn op uw project. U kunt een PDF-rapport downloaden door op deze sectie te klikken.

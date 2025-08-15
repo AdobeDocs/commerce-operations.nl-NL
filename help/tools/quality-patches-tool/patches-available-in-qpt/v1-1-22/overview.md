@@ -20,7 +20,7 @@ QPT v1.1.22 bevat de volgende patches:
 
 1. **ACSD-47106**: Verhelpt de kwestie waar een waarde niet in een nieuw douaneattribuut op een pagina van de bedrijfverwezenlijking kan worden bewaard.
 1. **ACSD-47280**: Verhelpt de kwestie waar het onbruikbaar maken van de gedeelde cataloguseigenschap op een specifiek werkingsgebied niet correct werkt.
-1. **ACSD-47332**: Bevestigt de kwestie waar de kruin met een fout ontbreekt die slechts wanneer het lopen tussen 00:00 en 00:59 UTC wordt gemeld.
+1. **ACSD-47332**: Verhelpt de kwestie waar de kruin met een fout ontbreekt die slechts wanneer het lopen tussen 00 :00 en 00 :59 UTC wordt gemeld.
 1. **ACSD-47444**: Bevestigt _Poging tot matrixcompensatie op waarde van type bool_ fout wanneer het toegang tot van bepaalde niet bestaande categoriepaden voor bekende producten op PHP 7.4.
 
 Gebruik het menu links om naar een specifieke patchpagina te navigeren.

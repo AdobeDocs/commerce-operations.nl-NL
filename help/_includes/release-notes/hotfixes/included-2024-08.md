@@ -9,7 +9,7 @@ ht-degree: 0%
 
 Deze release bevat de volgende hotfixes:
 
-* Hotfix om een fout van JavaScript op te lossen die de Kaarten van Google verhinderde behoorlijk in de [!UICONTROL **&#x200B;**] redacteur PageBuilder terug te geven. Zie de [ Herziene flarden voor de toegangsverlies van Kaarten van Google op alle versies van Adobe Commerce ](https://experienceleague.adobe.com/nl/docs/commerce-knowledge-base/kb/troubleshooting/site-down-or-unresponsive/revised-patches-for-google-maps-access-loss-on-all-adobe-commerce-versions) het artikel van de Kennisbank voor details.
+* Hotfix om een fout van JavaScript op te lossen die de Kaarten van Google verhinderde behoorlijk in de [!UICONTROL ****] redacteur PageBuilder terug te geven. Zie de [ Herziene flarden voor de toegangsverlies van Kaarten van Google op alle versies van Adobe Commerce ](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/troubleshooting/site-down-or-unresponsive/revised-patches-for-google-maps-access-loss-on-all-adobe-commerce-versions) het artikel van de Kennisbank voor details.
 
 <!--
 ACP2E-3156
@@ -18,7 +18,7 @@ ACP2E-3158
 ACP2E-3159
 -->
 
-* Hotfix om een JSON web token (JWT) valideringsprobleem met betrekking tot CVE-2024-34102 op te lossen. Zie de [ update van de Veiligheid beschikbaar voor Adobe Commerce-APSB24-40 ](https://experienceleague.adobe.com/nl/docs/commerce-knowledge-base/kb/troubleshooting/known-issues-patches-attached/security-update-available-for-adobe-commerce-apsb24-40-revised-to-include-isolated-patch-for-cve-2024-34102) Artikel van de Kennisbank voor details.
+* Hotfix om een JSON web token (JWT) valideringsprobleem met betrekking tot CVE-2024-34102 op te lossen. Zie de [ update van de Veiligheid beschikbaar voor Adobe Commerce-APSB24-40 ](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/troubleshooting/known-issues-patches-attached/security-update-available-for-adobe-commerce-apsb24-40-revised-to-include-isolated-patch-for-cve-2024-34102) Artikel van de Kennisbank voor details.
 
 <!--
 AC-12486

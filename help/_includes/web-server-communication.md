@@ -15,7 +15,7 @@ Dit onderwerp bespreekt een voorbeeld om communicatie tussen uw Webserver en ond
 >
 >Tenzij anders vermeld, moeten alle bevelen in dit onderwerp als gebruiker met `root` voorrechten zijn ingegaan.
 
-## Recommendations
+## Aanbevelingen
 
 We raden het volgende aan:
 

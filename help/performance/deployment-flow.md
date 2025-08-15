@@ -26,7 +26,7 @@ composer install --no-dev
 
 ## Instructies voor het injecteren van afhankelijkheden voorafgaand aan het proces
 
-Wanneer u instructies voor het vooraf verwerken en compileren van de injectie voor afhankelijkheid (DI), Magento:
+Magento:
 
 * Alle huidige configuratie lezen en verwerken
 * Hiermee analyseert u afhankelijkheden tussen klassen

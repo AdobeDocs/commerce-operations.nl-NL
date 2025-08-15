@@ -18,7 +18,7 @@ Als u veelvoudige installaties van Adobe Commerce beheert, [ het patchen ](../..
 
 >[!NOTE]
 >
->De volgende inhoud werd oorspronkelijk gepubliceerd in [ het Verdelen van de Patches van Adobe Commerce bij de post van de Schaal ](https://blog.developer.adobe.com/distributing-adobe-commerce-patches-at-scale-137412e05a20) op het Blog van Tech van de Adobe. Het is gewijzigd om zich op de stappen en codesteekproeven voor het uitvoeren van een gecentraliseerde het patchen strategie te concentreren. Zie het originele artikel voor meer informatie over de verschillende typen patches die hier worden beschreven.
+>De volgende inhoud werd oorspronkelijk gepubliceerd in [ het Verdelen van de Patches van Adobe Commerce bij de post van de Schaal ](https://blog.developer.adobe.com/distributing-adobe-commerce-patches-at-scale-137412e05a20) op het Blog van Tech van Adobe. Het is gewijzigd om zich op de stappen en codesteekproeven voor het uitvoeren van een gecentraliseerde het patchen strategie te concentreren. Zie het originele artikel voor meer informatie over de verschillende typen patches die hier worden beschreven.
 
 ## Betrokken producten en versies
 
@@ -33,13 +33,13 @@ Hoe weet u, aangezien er veel verschillende typen patches zijn en er vele manier
 
 1. **de flarden van de Veiligheid** maken deel uit van de statische codebasis van een versie van Adobe Commerce.
 1. **de flarden van Composer** door `composer install` en `composer update` stoppen zoals [ cweagans/composer-flarden ](https://packagist.org/packages/cweagans/composer-patches).
-1. Alle **vereiste flarden** inbegrepen in het [ Reparaties van de Wolk voor Commerce ](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/release-notes/cloud-patches.html?lang=nl-NL) pakket.
-1. Geselecteerde **kwaliteitspatches** inbegrepen in [[!DNL [Quality Patches Tool]]](../../../tools/quality-patches-tool/usage.md).
+1. Alle **vereiste flarden** inbegrepen in het [ Reparaties van de Wolk voor Commerce ](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/release-notes/cloud-patches.html) pakket.
+1. Geselecteerde **kwaliteitspatches** inbegrepen in [!DNL [Quality Patches Tool]](../../../tools/quality-patches-tool/usage.md).
 1. **de flarden van de Douane** en de flarden van de Steun van Adobe Commerce in de `/m2-hotfixes` folder in alfabetische orde door flardnaam.
 
    >[!IMPORTANT]
    >
-   >Hoe meer patches u toepast, hoe complexer de code wordt. De complexe code kan bevordering aan een nieuwe versie van de handel van de Adobe bemoeilijken en uw totale kosten van eigendom verhogen.
+   >Hoe meer patches u toepast, hoe complexer de code wordt. Complexe code kan de upgrade naar een nieuwe versie van Adobe-handel bemoeilijken en de totale eigendomskosten verhogen.
 
 Als u verantwoordelijk bent voor het onderhoud van meerdere installaties van Adobe Commerce, kan het lastig zijn om ervoor te zorgen dat alle instanties dezelfde set geïnstalleerde patches hebben. Elke installatie heeft een eigen git-opslagplaats, `/m2-hotfixes` map en `composer.json` bestand. De enige garantie dat u hebt is dat de **veiligheidspatches** en **vereiste flarden** voor wolkengebruikers allen als deel van uw belangrijkste versie van Adobe Commerce geïnstalleerd zijn.
 
@@ -148,7 +148,7 @@ Het componentpakket `centralized-patcher` maken:
    ```
 
 
-Het `quality-patches` attribuut in de voorafgaande codesteekproef bevat twee flarden van de [ volledige flardlijst ](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html?lang=nl-NL) als voorbeeld.  Deze kwaliteitspatches worden geïnstalleerd op elk project waarvoor het `centralized-patcher` -pakket is vereist met de opdracht `vendor/bin/magento-patches apply` .
+Het `quality-patches` attribuut in de voorafgaande codesteekproef bevat twee flarden van de [ volledige flardlijst ](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html) als voorbeeld.  Deze kwaliteitspatches worden geïnstalleerd op elk project waarvoor het `centralized-patcher` -pakket is vereist met de opdracht `vendor/bin/magento-patches apply` .
 
 Voor testdoeleinden kunt u een voorbeeldflard (`/m2-hotfixes/EXAMPLE-PATCH_2.4.6.patch`) tot stand brengen.
 
@@ -338,7 +338,7 @@ Het componentpakket `centralized-patcher-compose-plugin` maken:
 
 U kunt een scenario hebben waar slechts 95% van de flarden in alle projecten worden vereist, terwijl een paar flarden slechts op een specifiek geval van toepassing zijn. De normale manier om het aanbrengen van patches toe te passen werkt nog steeds. U kunt projectspecifieke patches in de map `/m2-hotfixes` bewaren en kwaliteitspatches per project installeren.
 
-Als u deze benadering gebruikt, **&#x200B;**&#x200B;begaat geen flarden in de `/m2-hotfixes` folder die in uw project door het `centralized-patcher` componentenpakket zijn gekopieerd. U kunt per ongeluk vastgelegde gegevens voorkomen door `/m2-hotfixes` aan het `.gitignore` -bestand toe te voegen. Nadat u het `.gitignore` -bestand hebt bijgewerkt, moet u niet vergeten dat projectspecifieke `/m2-hotfixes` moet worden toegevoegd met de opdracht `git add –force` .
+Als u deze benadering gebruikt, **** begaat geen flarden in de `/m2-hotfixes` folder die in uw project door het `centralized-patcher` componentenpakket zijn gekopieerd. U kunt per ongeluk vastgelegde gegevens voorkomen door `/m2-hotfixes` aan het `.gitignore` -bestand toe te voegen. Nadat u het `.gitignore` -bestand hebt bijgewerkt, moet u niet vergeten dat projectspecifieke `/m2-hotfixes` moet worden toegevoegd met de opdracht `git add –force` .
 
 ## Verschillende Adobe Commerce-versies uitvoeren
 
@@ -365,7 +365,7 @@ Net als bij Adobe Commerce op cloudinfrastructuur wordt in dit artikel ervan uit
 
 Op deze manier kunt u al uw patches centraal beheren voor al uw installaties en kunt u de veiligheid en stabiliteit van uw Adobe Commerce-winkels beter garanderen. Gebruik de volgende methoden om de patchstatus te controleren:
 
-- [ de infrastructuurprojecten van de Wolk ](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html?lang=nl-NL#view-available-patches-and-status)
+- [ de infrastructuurprojecten van de Wolk ](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html#view-available-patches-and-status)
 - [Projecten ter plaatse](../../../tools/quality-patches-tool/usage.md#view-individual-patches)
 
 ## Codevoorbeelden

@@ -20,7 +20,7 @@ U kunt het Adobe Commerce-cachebeheersysteem gebruiken om de prestaties van uw s
 >[!NOTE]
 >
 >
->De beheerders van de handelplaats kunnen het geheime voorgeheugen van Admin beheren gebruikend het hulpmiddel van het Systeem van het Beheer van het Geheime voorgeheugen. Zie [ Beheer van het Geheime voorgeheugen ](https://experienceleague.adobe.com/nl/docs/commerce-admin/systems/tools/cache-management) in de _Gids van Systemen Admin_.
+>De beheerders van de handelplaats kunnen het geheime voorgeheugen van Admin beheren gebruikend het hulpmiddel van het Systeem van het Beheer van het Geheime voorgeheugen. Zie [ Beheer van het Geheime voorgeheugen ](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/tools/cache-management) in de _Gids van Systemen Admin_.
 
 
 ## De status van de cache weergeven
@@ -59,7 +59,7 @@ Current status:
 
 >[!TIP]
 >
->Voor een gedetailleerde beschrijving van de standaardgeheim voorgeheugentypes die door Adobe Commerce worden gesteund, zie [&#128279;](https://experienceleague.adobe.com/nl/docs/commerce-admin/systems/tools/cache-management#caches) Caches  in de _Gids van Systemen Admin_.
+>Voor een gedetailleerde beschrijving van de standaardgeheim voorgeheugentypes die door Adobe Commerce worden gesteund, zie [ Caches ](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/tools/cache-management#caches) in de _Gids van Systemen Admin_.
 
 
 ## Cachetypen in- of uitschakelen
@@ -112,7 +112,7 @@ Monsterresultaat:
 
 >[!INFO]
 >
->Vanaf versie 2.3.4 worden alle EAV-kenmerken van het systeem door Commerce in cache opgeslagen wanneer deze worden opgehaald. Op deze manier verbetert het in cache plaatsen van EAV-kenmerken de prestaties, omdat hierdoor minder aanvragen voor invoegen/selecteren naar de DB worden ingediend. Nochtans, verhoogt het ook de grootte van het geheim voorgeheugennetwerk. Ontwikkelaars kunnen aangepaste EAV-kenmerken in cache plaatsen door de opdracht `bin/magento config:set dev/caching/cache_user_defined_attributes 1` uit te voeren. Dit kan ook van Admin worden gedaan terwijl op [ wijze van de Ontwikkelaar ](../bootstrap/application-modes.md) door **Opslag** te plaatsen > de Configuratie van Montages **&#x200B;**&#x200B;> **Geavanceerd** > **Ontwikkelaar** > **Caching Montages** > **Gedefinieerde Gebruiker van het Geheime voorgeheugen Attributen** aan **ja**.
+>Vanaf versie 2.3.4 worden alle EAV-kenmerken van het systeem door Commerce in cache opgeslagen wanneer deze worden opgehaald. Op deze manier verbetert het in cache plaatsen van EAV-kenmerken de prestaties, omdat hierdoor minder aanvragen voor invoegen/selecteren naar de DB worden ingediend. Nochtans, verhoogt het ook de grootte van het geheim voorgeheugennetwerk. Ontwikkelaars kunnen aangepaste EAV-kenmerken in cache plaatsen door de opdracht `bin/magento config:set dev/caching/cache_user_defined_attributes 1` uit te voeren. Dit kan ook van Admin worden gedaan terwijl op [ wijze van de Ontwikkelaar ](../bootstrap/application-modes.md) door **Opslag** te plaatsen > de Configuratie van Montages **** > **Geavanceerd** > **Ontwikkelaar** > **Caching Montages** > **Gedefinieerde Gebruiker van het Geheime voorgeheugen Attributen** aan **ja**.
 
 ## Cachetypen opschonen en leegmaken
 
@@ -128,7 +128,7 @@ Om verouderde punten van het geheime voorgeheugen te zuiveren, kunt u __ schoonm
 
   >[!TIP]
   >
-  >Maak altijd de cache schoon nadat u versies van Adobe Commerce hebt bijgewerkt, een upgrade hebt uitgevoerd van Magento Open Source naar Adobe Commerce of B2B hebt geïnstalleerd voor Adobe Commerce of een willekeurige module.
+  >Maak altijd de cache schoon nadat u versies van Adobe Commerce hebt bijgewerkt, een upgrade van Magento Open Source naar Adobe Commerce hebt uitgevoerd of B2B voor Adobe Commerce of een willekeurige module hebt geïnstalleerd.
 
 - Als u een cachetype leegmaakt, wordt de cacheopslag gewist. Dit kan van invloed zijn op andere procestoepassingen die dezelfde opslag gebruiken.
 
@@ -173,4 +173,4 @@ Monsterresultaat:
 
 >[!TIP]
 >
->U kunt de cachetypen ook opschonen en leegmaken in de beheerfunctie. Ga naar **Systeem** > **Hulpmiddelen** > **het Beheer van het Geheime voorgeheugen**. **de Opslag van het Geheime voorgeheugen van de Duw** is gelijkwaardig aan `bin/magento cache:flush`. **het Geheime voorgeheugen van het Magento van de Duw** is gelijkwaardig aan `bin/magento cache:clean`.
+>U kunt de cachetypen ook opschonen en leegmaken in de beheerfunctie. Ga naar **Systeem** > **Hulpmiddelen** > **het Beheer van het Geheime voorgeheugen**. **de Opslag van het Geheime voorgeheugen van de Duw** is gelijkwaardig aan `bin/magento cache:flush`. **het Geheime voorgeheugen van Magento van de Duw** is gelijkwaardig aan `bin/magento cache:clean`.

@@ -36,5 +36,5 @@ Als de de configuratiewaarden van het geheime voorgeheugen Realpath te laag of t
 - [Op locatie: PHP-instellingen](../../../performance/software.md#php-settings)
 - Op cloudinfrastructuur:
    - [Best practices voor databases](database-on-cloud.md)
-   - [Meest voorkomende databaseproblemen in Magento Commerce Cloud](../maintenance/resolve-database-performance-issues.md)
-- [Indexers &quot;Update On Schedule&quot; optimaliseren de prestaties van het Magento](../maintenance/indexer-configuration.md)
+   - [Meest voorkomende databaseproblemen in de Magento Commerce Cloud](../maintenance/resolve-database-performance-issues.md)
+- [Indexers &quot;Update On Schedule&quot; optimaliseert de Magento-prestaties](../maintenance/indexer-configuration.md)

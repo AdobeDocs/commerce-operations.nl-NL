@@ -149,4 +149,4 @@ Als u de `visitor_clean` uitsnijdtaak wilt uitschakelen, maakt u een aangepaste 
 ...
 ```
 
-De `visitor_clean` cron-taak is nu ingesteld op 00:00 op 30 februari - op de datum die nooit zal plaatsvinden.
+De `visitor_clean` cron-taak is nu ingesteld op 00 :00 op 30 februari - op de datum die nooit wordt uitgevoerd.

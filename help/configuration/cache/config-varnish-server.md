@@ -5,7 +5,7 @@ feature: Configuration, Cache, Install, Logs
 exl-id: b31179ef-3c0e-4a6b-a118-d3be1830ba4e
 source-git-commit: ca8dc855e0598d2c3d43afae2e055aa27035a09b
 workflow-type: tm+mt
-source-wordcount: '738'
+source-wordcount: '737'
 ht-degree: 0%
 
 ---
@@ -76,11 +76,11 @@ Varnish minimaliseren:
 
 1. Vervang de waarde van `.host` met volledig - gekwalificeerd hostname of IP adres en luister haven van de Varnish _achterkant_ of _oorsprongserver_; namelijk zal de server die de inhoud verstrekt Varnish versnellen.
 
-   Dit is doorgaans uw webserver. Zie [ servers van het Achterste 1&rbrace; in de _Versijke gids_.](https://varnish-cache.org/docs/trunk/users-guide/vcl-backends.html)
+   Dit is doorgaans uw webserver. Zie [ servers van het Achterste 1} in de ](https://varnish-cache.org/docs/trunk/users-guide/vcl-backends.html) Versijke gids _._
 
 1. Vervang de waarde van `.port` door de listen-poort van de webserver (8080 in dit voorbeeld).
 
-   Voorbeeld: Apache is geïnstalleerd op host 192.0.2.55 en Apache luistert naar poort 8080:
+   Voorbeeld: Apache is geïnstalleerd op de host 192.0.2.55 en Apache luistert naar poort 8080:
 
    ```conf
    backend default {
@@ -91,7 +91,7 @@ Varnish minimaliseren:
 
    >[!INFO]
    >
-   >Als Varnish en Apache op de zelfde gastheer lopen, adviseert de Adobe dat u een IP adres of hostname en niet `localhost` gebruikt.
+   >Als Varnish en Apache op de zelfde gastheer lopen, adviseert Adobe dat u een IP adres of hostname en niet `localhost` gebruikt.
 
 1. Sla de wijzigingen in `default.vcl` op en sluit de teksteditor af.
 
@@ -197,7 +197,7 @@ backend default {
 
 ## HTTP-antwoordheaders verifiëren
 
-Nu kunt u verifiëren dat Varnish pagina&#39;s door HTML antwoordkopballen te bekijken die van om het even welke pagina zijn teruggekeerd.
+Nu kunt u controleren of Varnish pagina&#39;s voorstelt door HTML-antwoordheaders te bekijken die vanaf een pagina worden geretourneerd.
 
 Voordat u naar kopteksten kunt kijken, moet u de Commerce for developer-modus instellen. Er zijn verschillende manieren om dit te doen. U kunt `.htaccess` het eenvoudigst wijzigen in de hoofdmap van de Commerce-toepassing. U kunt ook de opdracht [`magento deploy:mode:set`](../cli/set-mode.md) gebruiken.
 
@@ -234,7 +234,7 @@ Een lange lijst van reactiekopballen tonen in uw bevel snelle venster. Zoek naar
 
 Als de kopballen als deze _niet_ tonen, vernis tegenhouden, uw `default.vcl` controleren, en opnieuw proberen.
 
-### HTML-antwoordheaders bekijken
+### Koppen van HTML-reacties bekijken
 
 Er zijn verschillende manieren om naar antwoordheaders te kijken, bijvoorbeeld met een browserplug-in of een browsercontrole.
 

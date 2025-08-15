@@ -28,7 +28,7 @@ Status van omgevingsbronnen controleren:
 
    * Adobe Commerce on cloud Infrastructure biedt [!DNL Managed alerts] . U kunt op de koppeling in de koptekst klikken om [!DNL Support Knowledge Base] -artikelen te bekijken die u helpen bij het bepalen van handelingen van uw kant voor specifieke waarschuwingen.
 
-* Onderzoek het **[!UICONTROL CPU % by host]** kader: als het hoge gebruik van cpu tentoonstelt, controleer het [!DNL Support Knowledge Base] artikel in de kopbal voor het kader. Controleer ook of de database-import/export of back-ups niet worden uitgevoerd tijdens piekverkeersperiodes.
+* Onderzoek het frame **[!UICONTROL CPU % by host]** : controleer het artikel [!DNL Support Knowledge Base] in de header voor het frame als het hoge CPU-gebruik toont. Controleer ook of de database-import/export of back-ups niet worden uitgevoerd tijdens piekverkeersperiodes.
 
 * Controleer het frame **[!UICONTROL Web Traffic volume compared to one week ago]** : Als het verkeer in dezelfde periode veel hoger is dan in de voorafgaande week, kan dit dan worden uitgelegd (verkoopcampagne of nieuwe producten die bijvoorbeeld op de markt zijn gebracht)?
    * Als een toename in verkeer niet kan worden verklaard, bekijk de Gemiddelde tijd van de Reactie (milliseconden) voor het productiemilieu. Is het hogere verkeer dat aan een reactietijd bijdraagt verschillend dan wat normaal is? Vergroot de tijdlijn om te zien of is het een anomalie.

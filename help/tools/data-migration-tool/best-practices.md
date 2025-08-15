@@ -15,7 +15,7 @@ ht-degree: 0%
 
 Deze sectie bevat de beste aanbevelingen om uw migratie te versnellen en te vereenvoudigen en u kunt aangeven hoeveel tijd het kost.
 
-* **Gebruik een exemplaar van het gegevensbestand van een Magento 1 instantie** wanneer het uitvoeren van migratie het testen. Gebruik niet de productieinstantie van uw Magento 1 opslaggegevensbestand.
+* **Gebruik een exemplaar van het gegevensbestand van Magento 1 instantie** wanneer het uitvoeren van migratie het testen. Gebruik de productieinstantie van uw Magento 1-opslagdatabase niet.
 
 * **verwijder verouderde en overtollige gegevens** uit uw Magento 1 gegevensbestand vóór migratie.
 
@@ -31,7 +31,7 @@ Dergelijke gegevens kunnen logboeken, orderaanhalingstekens, onlangs bekeken of 
 
 >[!NOTE]
 >
->Zowel moeten Magento 1 als Magento 2 gegevensbestanden op de zelfde server worden gevestigd MySQL en de gegevensbestandrekening moet toegang tot beide gegevensbestanden hebben.
+>Zowel Magento 1- als Magento 2-databases moeten zich op dezelfde MySQL-server bevinden en de databaseaccount moet toegang hebben tot beide databases.
 
 ## Benchmarkingsramingen
 

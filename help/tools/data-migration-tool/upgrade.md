@@ -12,27 +12,27 @@ ht-degree: 0%
 
 # Een upgrade uitvoeren van de [!DNL Data Migration Tool]
 
-Om ervoor te zorgen dat de versies van uw huidige Magento 2-installatie en de [!DNL Data Migration Tool] exact overeenkomen, moet u mogelijk een upgrade van het gereedschap uitvoeren.
+Om ervoor te zorgen dat de versies van uw huidige Magento 2-installatie en de [!DNL Data Migration Tool] exact overeenkomen, moet u mogelijk een upgrade van het programma uitvoeren.
 
 ## Vereisten
 
 Voordat u de upgrade van [!DNL Data Migration Tool] uitvoert, moet u:
 
-* Upgrade de software van uw Magento voor de nieuwste versie
+* Upgrade uw Magento-software voor de nieuwste versie
 
 * Maak een back-up van de map `vendor/magento/data-migration-tool`
 
 * Zorg ervoor dat de versie van [!DNL Data Migration Tool] overeenkomt met de versie van de Magento-toepassing
 
-### Upgrade uw Magento uitvoeren
+### Upgrade uw Magento-software
 
-Als u dit nog niet hebt gedaan, [ bevorder de software van het Magento ](../../upgrade/overview.md).
+Als u dit nog niet hebt gedaan, [ bevorder de software van Magento ](../../upgrade/overview.md).
 
 ### Maak een back-up van de map `vendor/magento/data-migration-tool`
 
-Maak een back-up van ten minste de map `vendor/magento/data-migration-tool` voordat u de upgrade van [!DNL Data Migration Tool] uitvoert. Tijdens de upgrade kan deze worden verwijderd en vervangen door de bijgewerkte code.
+Maak een back-up van ten minste de map [!DNL Data Migration Tool] voordat u de upgrade van `vendor/magento/data-migration-tool` uitvoert. Tijdens de upgrade kan deze worden verwijderd en vervangen door de bijgewerkte code.
 
-U kunt ook een back-up maken van de volledige codebase en database van het Magento met de volgende opdracht:
+U kunt ook een back-up maken van de volledige Magento-codebase en -database met de volgende opdracht:
 
 ```bash
 php <magento_root>/bin/magento setup:backup --code --db
@@ -45,11 +45,11 @@ php <magento_root>/bin/magento setup:backup --code --db
 
 ### Versies afstemmen
 
-De versies van [!DNL Data Migration Tool] en uw software van het Magento moeten precies aanpassen. Magento 2.1.2 vereist bijvoorbeeld versie 2.1.2 van de [!DNL Data Migration Tool] .
+De versies van [!DNL Data Migration Tool] en uw Magento-software moeten exact overeenkomen. Magento 2.1.2 vereist bijvoorbeeld versie 2.1.2 van de [!DNL Data Migration Tool] .
 
 Zie [ installeer  [!DNL Data Migration Tool]](install.md) onderwerp om te weten hoe te:
 
-* [ Controle ](install.md#check-your-version) uw Magento 2 versie
+* [ Controle ](install.md#check-your-version) uw versie van Magento 2
 
 * [ vind ](install.md#find-released-versions-of-data-migration-tool) vrijgegeven versies van [!DNL Data Migration Tool]
 
@@ -65,7 +65,7 @@ Zie [ installeer  [!DNL Data Migration Tool]](install.md) onderwerp om te weten 
    composer require magento/data-migration-tool:<version>
    ```
 
-   waarbij `<version>` moet overeenkomen met de versie van de codebase Magento 2.
+   waarbij `<version>` moet overeenkomen met de versie van de Magento 2-codebase.
 
    Voer bijvoorbeeld voor versie 2.1.2 het volgende in:
 

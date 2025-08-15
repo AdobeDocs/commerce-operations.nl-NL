@@ -17,9 +17,9 @@ Dit onderwerp beschrijft de basislijn voor een gezond ontwikkelingsproces van Ad
 
 >[!NOTE]
 >
->Technische architecten van de Adobe gebruiken deze beste praktijken als referentie tijdens overeenkomsten met betrekking tot ontwikkeling.
+>Technische architecten van Adobe gebruiken deze best practices als referentie tijdens ontwikkelingstaken.
 
-Deze beste praktijken zijn ontwikkeld op basis van jarenlange ervaring met het ontwikkelen en uitvoeren van Commerce-projecten. De Adobe beveelt aan dat technische initiatieven deze beste praktijken volgen en dat u bestaande processen en code verbetert om met hen in overeenstemming te brengen.
+Deze beste praktijken zijn ontwikkeld op basis van jarenlange ervaring met het ontwikkelen en uitvoeren van Commerce-projecten. Adobe raadt aan dat technische initiatieven deze beste praktijken volgen en dat u bestaande processen en code verbetert om deze op elkaar af te stemmen.
 
 ## Tekstconventies
 

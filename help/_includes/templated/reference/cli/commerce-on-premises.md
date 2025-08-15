@@ -1,7 +1,7 @@
 ---
 source-git-commit: ba444c5f74cdeec86c842014d02775faf16b2f50
 workflow-type: tm+mt
-source-wordcount: '8253'
+source-wordcount: '8232'
 ht-degree: 0%
 
 ---
@@ -24,7 +24,7 @@ Gebruik [ &quot;voeg CLI bevelen&quot;](https://developer.adobe.com/commerce/php
 
 U kunt `bin/magento` CLI bevelen roepen gebruikend kortere weg in plaats van de volledige bevelnaam. U kunt bijvoorbeeld `bin/magento setup:upgrade` aanroepen met `bin/magento s:up` , `bin/magento s:upg` . Zie [ kortere wegsyntaxis ](https://symfony.com/doc/current/components/console/usage.html#shortcut-syntax) om te begrijpen hoe te om kortere weg met om het even welk bevel te gebruiken CLI.
 
-Deze referentiedocumentatie wordt geproduceerd van de code van de toepassingsbron. Om de documentatie te veranderen, zou u een trekkingsverzoek voor het overeenkomstige bevel in de relevante [ codebase ](https://github.com/magento) bewaarplaats moeten openen. Zie {de Bijdragen van de Code van 0} [&#128279;](https://developer.adobe.com/commerce/contributor/guides/code-contributions/) voor meer informatie.
+Deze referentiedocumentatie wordt geproduceerd van de code van de toepassingsbron. Om de documentatie te veranderen, zou u een trekkingsverzoek voor het overeenkomstige bevel in de relevante [ codebase ](https://github.com/magento) bewaarplaats moeten openen. Zie {de Bijdragen van de Code van 0} [ voor meer informatie.](https://developer.adobe.com/commerce/contributor/guides/code-contributions/)
 
 ### Algemene opties
 
@@ -308,13 +308,13 @@ Voor globale opties, zie [ Globale opties ](#global-options).
 
 #### `--organization-id`, `-o`
 
-Stel organisatie-ID in voor Adobe IMS-configuratie. Vereist wanneer het toelaten van de module
+Organisatie-id instellen voor Adobe IMS-configuratie. Vereist wanneer het toelaten van de module
 
 - Accepteert een waarde
 
 #### `--client-id`, `-c`
 
-Stel de client-ID in voor de Adobe IMS-configuratie. Vereist wanneer het toelaten van de module
+Stel de client-id in voor de Adobe IMS-configuratie. Vereist wanneer het toelaten van de module
 
 - Accepteert een waarde
 
@@ -326,7 +326,7 @@ Stel het clientgeheim in voor de configuratie van Adobe IMS. Vereist wanneer het
 
 #### `--2fa`, `-t`
 
-Controleer of 2FA is ingeschakeld voor Organisatie in Adobe Admin Console. Vereist bij het inschakelen van de module
+Controleer of 2FA is ingeschakeld voor Organisatie in Adobe Admin Console. Vereist wanneer het toelaten van de module
 
 - Accepteert een waarde
 
@@ -341,7 +341,7 @@ Informatie over de configuratie van de Adobe IMS-module
 
 ### Opties
 
-Zie [Globale opties voor algemene opties](#global-options).
+Voor globale opties, zie [ Globale opties ](#global-options).
 
 
 ## `admin:adobe-ims:status`
@@ -610,7 +610,7 @@ Voor globale opties, zie [ Globale opties ](#global-options).
 
 #### `--bootstrap`
 
-Parameters van de bootstrap toevoegen of overschrijven
+parameters van de bootstrap toevoegen of overschrijven
 
 - Vereist een waarde
 
@@ -621,7 +621,7 @@ Parameters van de bootstrap toevoegen of overschrijven
 bin/magento cache:flush [--bootstrap BOOTSTRAP] [--] [<types>...]
 ```
 
-Leegt de cacheopslag die wordt gebruikt door cachetype(n)
+Cacheopslag wordt gebruikt door cachetype(s)
 
 ### Argumenten
 
@@ -668,15 +668,15 @@ parameters van de bootstrap toevoegen of overschrijven
 bin/magento catalog:images:resize [-a|--async] [--skip_hidden_images]
 ```
 
-Maakt verkleinde productafbeeldingen
+Hiermee maakt u productafbeeldingen waarvan het formaat is gewijzigd
 
 ### Opties
 
-Zie [Globale opties voor algemene opties](#global-options).
+Voor globale opties, zie [ Globale opties ](#global-options).
 
 #### `--async`, `-a`
 
-Formaat van afbeelding wijzigen in asynchrone modus
+Afbeeldingen vergroten/verkleinen in asynchrone modus
 
 - Standaard: `false`
 - Accepteert geen waarde
@@ -1079,11 +1079,11 @@ Voor globale opties, zie [ Globale opties ](#global-options).
 bin/magento dev:query-log:disable
 ```
 
-Logboekregistratie van DB-query&#39;s uitschakelen
+Logboekregistratie van DB-query uitschakelen
 
 ### Opties
 
-Zie [Globale opties voor algemene opties](#global-options).
+Voor globale opties, zie [ Globale opties ](#global-options).
 
 
 ## `dev:query-log:enable`
@@ -1092,7 +1092,7 @@ Zie [Globale opties voor algemene opties](#global-options).
 bin/magento dev:query-log:enable [--include-all-queries [INCLUDE-ALL-QUERIES]] [--query-time-threshold [QUERY-TIME-THRESHOLD]] [--include-call-stack [INCLUDE-CALL-STACK]]
 ```
 
-Logboekregistratie van DB-query&#39;s inschakelen
+Logbestand van DB-query inschakelen
 
 ### Opties
 
@@ -1680,13 +1680,13 @@ Voor globale opties, zie [ Globale opties ](#global-options).
 bin/magento i18n:collect-phrases [-o|--output OUTPUT] [-m|--magento] [--] [<directory>]
 ```
 
-Ontdekt zinnen in de codebase
+Neemt zinnen op in de codebase
 
 ### Argumenten
 
 #### `directory`
 
-Directorypad om te parseren. Niet nodig als --Magento vlag is ingesteld
+Mappad om te parseren. Niet nodig indien —magento-markering is ingesteld
 
 ### Opties
 
@@ -1906,14 +1906,14 @@ Indexerstatus type [ ongeldig|opgeschort|geldig ]
 
 #### `index`
 
-Lijst met indextypen die niet op spaties wordt toegepast of die niet op alle indexen wordt toegepast.
+Lijst met door spaties gescheiden indextypen of laat toe om op alle indexen toe te passen.
 
-- Verstek: `[]`
+- Standaard: `[]`
 - Array
 
 ### Opties
 
-Zie [Globale opties voor algemene opties](#global-options).
+Voor globale opties, zie [ Globale opties ](#global-options).
 
 
 ## `indexer:show-dimensions-mode`
@@ -1922,7 +1922,7 @@ Zie [Globale opties voor algemene opties](#global-options).
 bin/magento indexer:show-dimensions-mode [<indexer>...]
 ```
 
-Toont de dimensiemodus van de indexeerfunctie
+Geeft de Dimension-modus van Index weer
 
 ### Argumenten
 
@@ -2150,7 +2150,7 @@ Voor globale opties, zie [ Globale opties ](#global-options).
 
 #### `--complete-orders`, `-c`
 
-Toon alleen inconsistenties voor volledige bestellingen
+Alleen inconsistenties voor volledige bestellingen tonen
 
 - Standaard: `false`
 - Accepteert geen waarde
@@ -2372,11 +2372,11 @@ Naam van de module
 
 ### Opties
 
-Zie [Globale opties voor algemene opties](#global-options).
+Voor globale opties, zie [ Globale opties ](#global-options).
 
 #### `--force`, `-f`
 
-Controle op overbrugging van afhankelijkheden
+Controle voor passageafhankelijkheden
 
 - Standaard: `false`
 - Accepteert geen waarde
@@ -2390,14 +2390,14 @@ Alle modules uitschakelen
 
 #### `--clear-static-content`, `-c`
 
-Gegenereerde statische weergavebestanden wissen. Noodzakelijk, als de module(s) statische weergavebestanden hebben
+Gegenereerde statische weergavebestanden wissen. Noodzakelijk als de module(s) statische weergavebestanden heeft
 
-- Verstek: `false`
+- Standaard: `false`
 - Accepteert geen waarde
 
 #### `--magento-init-params`
 
-Voeg toe aan elke opdracht om Magento-initialisatieparameters aan te passen, bijvoorbeeld: &quot;MAGE_MODE=ontwikkelaar&amp;MAGE_DIRS[base][path]=/var/www/example.com&amp;MAGE_DIRS[cache][path]=/var/tmp/cache&quot;
+Voeg aan om het even welk bevel toe om de initialisatieparameters van Magento bijvoorbeeld aan te passen: &quot;MAGE_MODE=developer&amp;MAGE_DIRS [ basis ][path]=/var/www/example.com&amp;MAGE_DIRS [ geheime voorgeheugen ][path]=/var/tmp/cache&quot;
 
 - Vereist een waarde
 
@@ -2408,7 +2408,7 @@ Voeg toe aan elke opdracht om Magento-initialisatieparameters aan te passen, bij
 bin/magento module:enable [-f|--force] [--all] [-c|--clear-static-content] [--magento-init-params MAGENTO-INIT-PARAMS] [--] [<module>...]
 ```
 
-Maakt gespecificeerde modules mogelijk
+Hiermee worden opgegeven modules ingeschakeld
 
 ### Argumenten
 
@@ -2709,9 +2709,9 @@ De standaardinstelling voor het voorkeursgebied (global, adminhtml, etc..) is gl
 
 #### `--single-thread`
 
-Met deze optie voorkomt u dat meerdere kopieën van één consument tegelijk worden uitgevoerd.
+Met deze optie voorkomt u dat meerdere exemplaren van één consument tegelijk worden uitgevoerd.
 
-- Verstek: `false`
+- Standaard: `false`
 - Accepteert geen waarde
 
 #### `--multi-process`
@@ -3029,7 +3029,7 @@ hoe lang moet worden gewacht op workers na herladen (bijv. config verandering) a
 
 #### `--state-monitor`
 
-Schakel statusbewaking in. Gebruik dit alleen voor het debuggen van statusproblemen!
+Statusbewaking inschakelen. Gebruik dit alleen voor foutopsporingsstatusproblemen.
 
 - Standaard: `false`
 - Accepteert geen waarde
@@ -3251,19 +3251,19 @@ Standaardverbinding in wachtrij met berichten. Kan &#39;db&#39;, &#39;amqp&#39; 
 
 #### `--deferred-total-calculating`
 
-Uitgestelde totaalberekening inschakelen? 1 - Ja, 0 - Nee
+Uitgestelde totale berekening inschakelen? 1 - Ja, 0 - Nee
 
 - Vereist een waarde
 
 #### `--key`
 
-Coderingssleutel
+Versleutelingssleutel
 
 - Vereist een waarde
 
 #### `--db-host`
 
-Host van de databaseserver
+Host databaseserver
 
 - Vereist een waarde
 
@@ -3281,7 +3281,7 @@ Gebruikersnaam databaseserver
 
 #### `--db-engine`
 
-Database server motor
+Database-server-engine
 
 - Vereist een waarde
 
@@ -3448,19 +3448,19 @@ Levensduur, in seconden, van sessie voor bots bij de eerste schrijfbewerking (ge
 
 #### `--session-save-redis-bot-lifetime`
 
-Levensduur van de sessie voor bots bij volgende schrijfbewerkingen (gebruik 0 om uit te schakelen)
+De levensduur van de sessie voor bots bij volgende schrijvingen (gebruik 0 om uit te schakelen)
 
 - Vereist een waarde
 
 #### `--session-save-redis-disable-locking`
 
-Redis schakelt vergrendeling uit. Waarden: onwaar (standaard), waar
+Schakel vergrendeling opnieuw uit. Waarden: false (standaardwaarde), true
 
 - Vereist een waarde
 
 #### `--session-save-redis-min-lifetime`
 
-Minimale sessielevensduur van Redis, in seconden
+Standaardsessielevensduur van Redis, in seconden
 
 - Vereist een waarde
 
@@ -3617,13 +3617,13 @@ Naam provider vergrendelen
 
 #### `--lock-db-prefix`
 
-Installatiespecifiek slotvoorvoegsel om slotconflicten te voorkomen
+Installatiespecifiek vergrendelingsvoorvoegsel om vergrendelingsconflicten te voorkomen
 
 - Vereist een waarde
 
 #### `--lock-zookeeper-host`
 
-Host en poort om verbinding te maken met het Zookeeper-cluster. Bijvoorbeeld: 127.0.0.1:2181
+Host en poort voor verbinding met Zookeeper-cluster. Bijvoorbeeld: 127.0.0.1:2181
 
 - Vereist een waarde
 
@@ -3859,15 +3859,15 @@ Voeg aan om het even welk bevel toe om de initialisatieparameters van Magento bi
 bin/magento setup:db-schema:split-quote [--host HOST] [--dbname DBNAME] [--username USERNAME] [--password [PASSWORD]] [--connection [CONNECTION]] [--resource [RESOURCE]] [--magento-init-params MAGENTO-INIT-PARAMS]
 ```
 
-Verplaats de aan uitchecken gerelateerde tabellen naar een aparte DB-server. Afgeschaft sinds 2.4.2 en wordt verwijderd
+Verplaats de aan uitchecken gerelateerde tabellen naar een aparte DB-server. Vervangen vanaf 2.4.2 en verwijderd
 
 ### Opties
 
-Zie [Globale opties voor algemene opties](#global-options).
+Voor globale opties, zie [ Globale opties ](#global-options).
 
 #### `--host`
 
-Host van DB Server afrekenen
+Uitchecken DB Server-host
 
 - Vereist een waarde
 
@@ -3905,7 +3905,7 @@ Naam van resource voor uitchecken
 
 #### `--magento-init-params`
 
-Voeg toe aan elke opdracht om Magento-initialisatieparameters aan te passen, bijvoorbeeld: &quot;MAGE_MODE=ontwikkelaar&amp;MAGE_DIRS[base][path]=/var/www/example.com&amp;MAGE_DIRS[cache][path]=/var/tmp/cache&quot;
+Voeg aan om het even welk bevel toe om de initialisatieparameters van Magento bijvoorbeeld aan te passen: &quot;MAGE_MODE=developer&amp;MAGE_DIRS [ basis ][path]=/var/www/example.com&amp;MAGE_DIRS [ geheime voorgeheugen ][path]=/var/tmp/cache&quot;
 
 - Vereist een waarde
 
@@ -3916,11 +3916,11 @@ Voeg toe aan elke opdracht om Magento-initialisatieparameters aan te passen, bij
 bin/magento setup:db-schema:split-sales [--host HOST] [--dbname DBNAME] [--username USERNAME] [--password [PASSWORD]] [--connection [CONNECTION]] [--resource [RESOURCE]] [--magento-init-params MAGENTO-INIT-PARAMS]
 ```
 
-Verplaats verkoopgerelateerde tabellen naar een aparte DB-server. Afgeschaft sinds 2.4.2 en wordt verwijderd
+Verplaats verkoopgerelateerde tabellen naar een aparte DB-server. Vervangen vanaf 2.4.2 en verwijderd
 
 ### Opties
 
-Zie [Globale opties voor algemene opties](#global-options).
+Voor globale opties, zie [ Globale opties ](#global-options).
 
 #### `--host`
 
@@ -3936,7 +3936,7 @@ Naam verkoopdatabase
 
 #### `--username`
 
-Gebruikersnaam verkoop-DB
+Gebruikersnaam verkoopdatabase
 
 - Vereist een waarde
 
@@ -4275,14 +4275,14 @@ Volledig pad van clientcertificaatbestand om een databaseverbinding tot stand te
 
 #### `--db-ssl-ca`
 
-Volledig pad van het servercertificaatbestand om een db-verbinding tot stand te brengen via SSL
+Volledig pad van servercertificaatbestand om een databaseverbinding tot stand te brengen via SSL
 
-- Standaardinstelling: &#39;&#39;
+- Standaard: &quot;
 - Vereist een waarde
 
 #### `--db-ssl-verify`
 
-Servercertificering verifiëren
+Servercertificering controleren
 
 - Standaard: `false`
 - Accepteert geen waarde
@@ -4307,19 +4307,19 @@ Redis-poort voor luisteren naar server
 
 #### `--session-save-redis-password`
 
-Wachtwoord van de Redis-server
+Wachtwoord voor opnieuw verzonden server
 
 - Vereist een waarde
 
 #### `--session-save-redis-timeout`
 
-Time-out voor verbinding, in seconden
+Time-out verbinding, in seconden
 
 - Vereist een waarde
 
 #### `--session-save-redis-retries`
 
-Redis-verbinding probeert opnieuw.
+Opnieuw wordt verbinding opnieuw geprobeerd.
 
 - Vereist een waarde
 
@@ -4475,13 +4475,13 @@ Compressiellib om [ snappy, lzf, l4z, zstd, gzip ] te gebruiken (verlaten leeg o
 
 #### `--cache-backend-redis-use-lua`
 
-Stel in op 1 om lua in te schakelen (standaard is 0, uitgeschakeld)
+Ingesteld op 1 om lua in te schakelen (standaardwaarde is 0, uitgeschakeld)
 
 - Vereist een waarde
 
 #### `--cache-backend-redis-use-lua-on-gc`
 
-Stel in op 0 om lua uit te schakelen bij het ophalen van afval (standaard is 1, ingeschakeld)
+Ingesteld op 0 om lua uit te schakelen bij opschonen (standaard is 1, ingeschakeld)
 
 - Vereist een waarde
 
@@ -4500,7 +4500,7 @@ Genereren van cache op een niet-blokkerende manier toestaan
 
 #### `--page-cache`
 
-Standaard cache-handler
+Standaardcachehandler
 
 - Vereist een waarde
 
@@ -4548,7 +4548,7 @@ ID-voorvoegsel voor cachesleutels
 
 #### `--lock-provider`
 
-Naam van de provider vergrendelen
+Naam provider vergrendelen
 
 - Vereist een waarde
 
@@ -4638,55 +4638,55 @@ ID-voorvoegsel voor toetsen
 
 #### `--base-url`
 
-URL waar de winkel beschikbaar moet zijn. Vervangen, gebruik config:reeks met weg web/unsecure/base_url
+URL waar de winkel beschikbaar moet zijn. Vervangen, gebruik config :set met weg web/unsecure/base_url
 
 - Vereist een waarde
 
 #### `--language`
 
-Standaardtaalcode. Vervangen, gebruik config:reeks met weg algemeen/landinstelling/code
+Standaardtaalcode. Vervangen, gebruiks config :set met weg algemeen/scène/code
 
 - Vereist een waarde
 
 #### `--timezone`
 
-Standaardtijdzonecode. Vervangen, gebruik config:reeks met weg algemeen/landinstelling/timezone
+Standaardtijdzonecode. Vervangen, gebruiks config :set met weg algemeen/scène/timezone
 
 - Vereist een waarde
 
 #### `--currency`
 
-Standaardvalutacode. Vervangen, configuratie gebruiken:instellen met padvaluta/opties/basis, valuta/opties/standaard en valuta/opties/allow
+Standaardvalutacode. Vervangen, gebruiks config :set met weg valuta/opties/basis, munt/opties/gebrek en munt/opties/allow
 
 - Vereist een waarde
 
 #### `--use-rewrites`
 
-Gebruik herschrijvingen. Afgeschaft, gebruik config:set met path web/seo/use_rewrites
+Herschrijven gebruiken. Vervangen, gebruik config :set met weg web/seo/use_rewrites
 
 - Vereist een waarde
 
 #### `--use-secure`
 
-Gebruik beveiligde URL&#39;s. Schakel deze optie alleen in als SSL beschikbaar is. Vervangen, gebruik config:reeks met weg web/secure/use_in_frontend
+Gebruik veilige URL&#39;s. Schakel deze optie alleen in als SSL beschikbaar is. Vervangen, gebruik config :set met weg web/secure/use_in_frontend
 
 - Vereist een waarde
 
 #### `--base-url-secure`
 
-Basis-URL voor SSL-verbinding Vervangen, gebruik config:reeks met weg web/secure/base_url
+Basis-URL voor SSL-verbinding Vervangen, gebruik config :set met weg web/secure/base_url
 
 - Vereist een waarde
 
 #### `--use-secure-admin`
 
-Voer de beheerdersinterface uit met SSL. Afgeschaft, gebruik config:set met path web/secure/use_in_adminhtml
+Voer de beheerdersinterface uit met SSL. Vervangen, gebruik config :set met weg web/secure/use_in_adminhtml
 
 - Vereist een waarde
 
 #### `--admin-use-security-key`
 
-Of een functie &#39;beveiligingssleutel&#39; moet worden gebruikt in Magento Admin URL&#39;s en formulieren. Vervangen, gebruik config:reeks met weg admin/security/use_form_key
+Of een functie &#39;beveiligingssleutel&#39; moet worden gebruikt in Magento Admin URL&#39;s en formulieren. Vervangen, gebruik config :set met weg admin/security/use_form_key
 
 - Vereist een waarde
 
@@ -4827,7 +4827,7 @@ Prefix van het inkoopordernummer
 
 Voorbeeldgegevens gebruiken
 
-- Verstek: `false`
+- Standaard: `false`
 - Accepteert geen waarde
 
 #### `--enable-modules`
@@ -5007,14 +5007,14 @@ Genereer statische weergavebestanden voor alleen de opgegeven thema&#39;s.
 
 Geen bestanden voor de opgegeven thema&#39;s genereren.
 
-- Verstek: `none`
+- Standaard: `none`
 - Accepteert meerdere waarden
 
 #### `--language`, `-l`
 
-Genereer alleen bestanden voor de opgegeven talen.
+Genereer bestanden alleen voor de opgegeven talen.
 
-- Verstek: `all`
+- Standaard: `all`
 - Accepteert meerdere waarden
 
 #### `--exclude-language`
@@ -5081,30 +5081,30 @@ CSS-bestanden niet implementeren.
 
 #### `--no-less`
 
-Implementeer geen MINDER bestanden.
+Implementeer geen LESS-bestanden.
 
-- Verstek: `false`
+- Standaard: `false`
 - Accepteert geen waarde
 
 #### `--no-images`
 
 Implementeer geen afbeeldingen.
 
-- Verstek: `false`
+- Standaard: `false`
 - Accepteert geen waarde
 
 #### `--no-fonts`
 
 Implementeer geen lettertypebestanden.
 
-- Verstek: `false`
+- Standaard: `false`
 - Accepteert geen waarde
 
 #### `--no-html`
 
 Implementeer geen HTML-bestanden.
 
-- Verstek: `false`
+- Standaard: `false`
 - Accepteert geen waarde
 
 #### `--no-misc`
@@ -5135,7 +5135,7 @@ Bovenliggende thema&#39;s niet compileren. Alleen ondersteund in snelle en stand
 bin/magento setup:store-config:set [--base-url BASE-URL] [--language LANGUAGE] [--timezone TIMEZONE] [--currency CURRENCY] [--use-rewrites USE-REWRITES] [--use-secure USE-SECURE] [--base-url-secure BASE-URL-SECURE] [--use-secure-admin USE-SECURE-ADMIN] [--admin-use-security-key ADMIN-USE-SECURITY-KEY] [--magento-init-params MAGENTO-INIT-PARAMS]
 ```
 
-Installeert de opslagconfiguratie. Vervangen vanaf 2.2.0. Configureren gebruiken:instellen
+Installeert de opslagconfiguratie. Vervangen vanaf 2.2.0. In plaats hiervan config :set gebruiken
 
 ### Opties
 
@@ -5143,55 +5143,55 @@ Voor globale opties, zie [ Globale opties ](#global-options).
 
 #### `--base-url`
 
-URL waar de winkel beschikbaar moet zijn. Vervangen, gebruik config:reeks met weg web/unsecure/base_url
+URL waar de winkel beschikbaar moet zijn. Vervangen, gebruik config :set met weg web/unsecure/base_url
 
 - Vereist een waarde
 
 #### `--language`
 
-Standaardtaalcode. Vervangen, gebruik config:reeks met weg algemeen/landinstelling/code
+Standaardtaalcode. Vervangen, gebruiks config :set met weg algemeen/scène/code
 
 - Vereist een waarde
 
 #### `--timezone`
 
-Standaardtijdzonecode. Vervangen, gebruik config:reeks met weg algemeen/landinstelling/timezone
+Standaardtijdzonecode. Vervangen, gebruiks config :set met weg algemeen/scène/timezone
 
 - Vereist een waarde
 
 #### `--currency`
 
-Standaardvalutacode. Vervangen, configuratie gebruiken:instellen met padvaluta/opties/basis, valuta/opties/standaard en valuta/opties/allow
+Standaardvalutacode. Vervangen, gebruiks config :set met weg valuta/opties/basis, munt/opties/gebrek en munt/opties/allow
 
 - Vereist een waarde
 
 #### `--use-rewrites`
 
-Herschrijven gebruiken. Vervangen, gebruik config:reeks met weg web/seo/use_rewrites
+Herschrijven gebruiken. Vervangen, gebruik config :set met weg web/seo/use_rewrites
 
 - Vereist een waarde
 
 #### `--use-secure`
 
-Gebruik veilige URL&#39;s. Schakel deze optie alleen in als SSL beschikbaar is. Vervangen, gebruik config:reeks met weg web/secure/use_in_frontend
+Gebruik veilige URL&#39;s. Schakel deze optie alleen in als SSL beschikbaar is. Vervangen, gebruik config :set met weg web/secure/use_in_frontend
 
 - Vereist een waarde
 
 #### `--base-url-secure`
 
-Basis-URL voor SSL-verbinding Vervangen, gebruik config:reeks met weg web/secure/base_url
+Basis-URL voor SSL-verbinding Vervangen, gebruik config :set met weg web/secure/base_url
 
 - Vereist een waarde
 
 #### `--use-secure-admin`
 
-Voer de beheerdersinterface uit met SSL. Vervangen, gebruik config:reeks met weg web/secure/use_in_adminhtml
+Voer de beheerdersinterface uit met SSL. Vervangen, gebruik config :set met weg web/secure/use_in_adminhtml
 
 - Vereist een waarde
 
 #### `--admin-use-security-key`
 
-Of een functie &#39;beveiligingssleutel&#39; moet worden gebruikt in Magento Admin URL&#39;s en formulieren. Vervangen, gebruik config:reeks met weg admin/security/use_form_key
+Of een functie &#39;beveiligingssleutel&#39; moet worden gebruikt in Magento Admin URL&#39;s en formulieren. Vervangen, gebruik config :set met weg admin/security/use_form_key
 
 - Vereist een waarde
 
@@ -5406,7 +5406,7 @@ Voor globale opties, zie [ Globale opties ](#global-options).
 
 Kracht
 
-- Verstek: `false`
+- Standaard: `false`
 - Accepteert geen waarde
 
 
@@ -5416,7 +5416,7 @@ Kracht
 bin/magento theme:uninstall [--backup-code] [-c|--clear-static-content] [--] <theme>...
 ```
 
-Verwijdert thema
+Thema wordt verwijderd
 
 ### Argumenten
 
@@ -5431,13 +5431,13 @@ Pad van het thema. Het themapad moet worden opgegeven als een volledig pad dat g
 
 ### Opties
 
-Zie [Globale opties voor algemene opties](#global-options).
+Voor globale opties, zie [ Globale opties ](#global-options).
 
 #### `--backup-code`
 
-Maak een back-up van de code (met uitzondering van tijdelijke bestanden)
+Back-up van code maken (behalve tijdelijke bestanden)
 
-- Verstek: `false`
+- Standaard: `false`
 - Accepteert geen waarde
 
 #### `--clear-static-content`, `-c`

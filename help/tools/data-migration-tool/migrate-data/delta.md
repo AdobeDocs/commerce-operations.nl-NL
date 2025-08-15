@@ -12,7 +12,7 @@ ht-degree: 0%
 
 # Wijzigingen migreren
 
-Het stijgende migratiehulpmiddel installeert lijstlijsten (met prefix `m2_cl_*`) en trekkers (voor het volgen van veranderingen) in Magento 1 gegevensbestand tijdens de [ migratie van gegevens ](data.md). Deze overzichtstabellen en trekkers zijn essentieel om ervoor te zorgen dat u slechts de veranderingen migreert die in Magento 1 worden aangebracht sinds de laatste tijd u gegevens migreerde. Deze wijzigingen zijn:
+Het stijgende migratiehulpmiddel installeert lijstlijsten (met prefix `m2_cl_*`) en trekkers (voor het volgen van veranderingen) in Magento 1 gegevensbestand tijdens de [ migratie van gegevens ](data.md). Deze overzichtstabellen en triggers zijn essentieel om ervoor te zorgen dat u alleen de wijzigingen migreert die u hebt aangebracht in Magento 1 sinds de laatste keer dat u gegevens hebt gemigreerd. Deze wijzigingen zijn:
 
 * Gegevens die klanten via winkel hebben toegevoegd (bestellingen, revisies en wijzigingen in klantprofielen)
 
@@ -20,7 +20,7 @@ Het stijgende migratiehulpmiddel installeert lijstlijsten (met prefix `m2_cl_*`)
 
 >[!NOTE]
 >
->Alle andere nieuwe of bijgewerkte entiteiten die via de beheerder worden ingevoerd, zoals kenmerken of CMS-pagina&#39;s, worden niet opgenomen in de incrementele migratie en worden niet gemigreerd.
+>Alle andere nieuwe of bijgewerkte entiteiten die via de beheerfunctie worden ingevoerd, zoals kenmerken of CMS-pagina&#39;s, worden niet opgenomen in de incrementele migratie en worden niet gemigreerd.
 
 
 Voer de volgende stappen uit om voor te bereiden voordat u begint:
@@ -53,7 +53,7 @@ Waarbij:
 
 ## Gegevens migreren die door externe extensies zijn gemaakt
 
-In de modus `Delta` migreert [!DNL Data Migration Tool] gegevens die alleen door eigen modules van het Magento zijn gemaakt en is deze niet verantwoordelijk voor de code of extensies die door andere ontwikkelaars zijn gemaakt. Als deze extensies gegevens in de storefront-database hebben gemaakt en de handelaar deze gegevens in Magento 2 wil opnemen, moeten configuratiebestanden van de [!DNL Data Migration Tool] dienovereenkomstig worden gemaakt en gewijzigd.
+In de modus `Delta` migreert [!DNL Data Migration Tool] gegevens die alleen door Magento eigen modules zijn gemaakt en is deze  niet verantwoordelijk voor de code of extensies die door andere ontwikkelaars zijn gemaakt. Als deze extensies gegevens in de storefront-database hebben gemaakt en de handelaar deze gegevens in Magento 2 wil opnemen, moeten configuratiebestanden van de [!DNL Data Migration Tool] dienovereenkomstig worden gemaakt en gewijzigd.
 
 Als een extensie eigen tabellen heeft en u de wijzigingen voor deltabigratie moet bijhouden, voert u de volgende stappen uit:
 

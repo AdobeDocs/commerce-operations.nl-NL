@@ -65,7 +65,7 @@ Zie een van de volgende bronnen voor meer informatie:
 >
 >* Starteromgevingen hebben geen logrotatie.
 >
->* U kunt logrotatie niet configureren in Pro Integration-omgevingen. U moet een douaneoplossing/manuscript uitvoeren en [ vormt uw kruin ](https://experienceleague.adobe.com/nl/docs/commerce-on-cloud/user-guide/configure/app/properties/crons-property) om het manuscript in werking te stellen zoals nodig.
+>* U kunt logrotatie niet configureren in Pro Integration-omgevingen. U moet een douaneoplossing/manuscript uitvoeren en [ vormt uw kruin ](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/configure/app/properties/crons-property) om het manuscript in werking te stellen zoals nodig.
 
 ### Opstelling iptables regels om de diverse diensten toe te laten om mee te delen
 

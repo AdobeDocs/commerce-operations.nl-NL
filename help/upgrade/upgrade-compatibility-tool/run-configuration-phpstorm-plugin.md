@@ -11,7 +11,7 @@ ht-degree: 0%
 
 # [!DNL Magento PHPStorm plugin]
 
-[!DNL Magento PHPStorm plugin] is een hulpmiddel dat door de gemeenschap wordt gecreeerd om routinecoderingsverrichtingen te optimaliseren en de ontwikkelervaring van Adobe Commerce te verbeteren. De plug-in is compatibel met de IDEA Ultimate- en PpStorm-IDE&#39;s. De functionaliteit omvat Adobe Commerce-specifieke sneltoetsen voor het genereren van code, code-inspecties, automatische functionaliteit voor configuratiebestanden, MFTF-tests en RequireJS.
+[!DNL Magento PHPStorm plugin] is een hulpmiddel dat door de gemeenschap wordt gecreeerd om routinecoderingsverrichtingen te optimaliseren en de ontwikkelervaring van Adobe Commerce te verbeteren. De insteekmodule is compatibel met de IDEA Ultimate en PHPStorm IDE&#39;s. De functionaliteit omvat Adobe Commerce-specifieke sneltoetsen voor het genereren van code, code-inspecties, automatische functionaliteit voor configuratiebestanden, MFTF-tests en RequireJS.
 
 Controleer het [ onderwerp van de Installatie ](https://developer.adobe.com/commerce/php/best-practices/phpstorm/install/) voor gedetailleerde stappen over hoe te om [!DNL Magento PHPStorm plugin] te installeren.
 

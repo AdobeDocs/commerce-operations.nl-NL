@@ -1,6 +1,6 @@
 ---
 title: Referentie persoonlijke gegevens van klant (versie 1.x)
-description: Leer over dataflow en gegevensbestandentiteitafbeeldingen voor klant persoonlijke informatie in Magento 1.x.
+description: Meer informatie over dataflow- en database-entiteittoewijzingen voor persoonlijke gegevens van klanten in Magento 1.x.
 exl-id: 8b01418d-8ca1-48fc-9577-a324ed3109d1
 source-git-commit: 8d0d8f9822b88f2dd8cbae8f6d7e3cdb14cc4848
 workflow-type: tm+mt

@@ -31,5 +31,5 @@ Voor technische informatie, zie de dataflow diagrammen en de afbeeldingen van de
 
 Raadpleeg het volgende voor meer informatie over hoe Adobe Commerce handelaren helpt bij het naleven van GDPR:
 
-- [ Naleving GDPR ](https://experienceleague.adobe.com/docs/commerce-admin/start/compliance/privacy/compliance-gdpr.html?lang=nl-NL)
+- [ Naleving GDPR ](https://experienceleague.adobe.com/docs/commerce-admin/start/compliance/privacy/compliance-gdpr.html)
 - [ Adobe Commerce is Klaar voor GDPR ](https://business.adobe.com/privacy/general-data-protection-regulation.html)

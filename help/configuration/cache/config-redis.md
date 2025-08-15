@@ -33,7 +33,7 @@ Afhankelijk van de installatie kunt u de Redis-configuratie meestal in een van d
 
 Als u de Redis-instantie naar wens wilt optimaliseren, krijgt u de beste resultaten door een speciale instantie voor elke sessie, Commerce-cache en FPC te gebruiken.
 
-Voor sessies raadt de Adobe u aan de persistentie in te schakelen om Redis-gegevens naar schijf te kopiëren aan de hand van een van de volgende persistentieopties: gewone RDB-momentopnamen (Redis Database Backup) of AOF-persistentielogboeken (Only File) toevoegen.
+Voor sessies raadt Adobe aan dat u persistentie inschakelt om Redis-gegevens naar schijf te kopiëren met een van de volgende persistentieopties: gewone momentopnamen van Redis Database Backup (RDB) of persistentielogboeken van Alleen bestand toevoegen (AOF).
 
 - **Redis de Steun van het Gegevensbestand** (RDB) momentopnamen slaan het volledige gegevensbestand in een stortplaatsdossier na een bepaalde tijd op, wanneer een minimumaantal sleutels sinds laatste sparen zijn veranderd. Gebruik de instelling `save` in het `redis.conf` -bestand om deze instelling te configureren.
 

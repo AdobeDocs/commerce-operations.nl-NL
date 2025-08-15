@@ -31,7 +31,7 @@ Kritieke acties leiden tot invalidatie en herindexering van het cachegeheugen, w
 
 ## Aanvullende informatie
 
-- [ Beste praktijken voor caching ](https://experienceleague.adobe.com/nl/docs/commerce-admin/systems/tools/cache-management#best-practices-for-caching)
+- [ Beste praktijken voor caching ](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/tools/cache-management#best-practices-for-caching)
 - [ Privé inhoud: Valideer privé inhoud ](https://developer.adobe.com/commerce/php/development/cache/page/private-content/#invalidate-private-content)
 - [Hardware-aanbevelingen: Caches](../../../performance/hardware.md#caches)
 - [Geavanceerde instellingen: Redis instellen](../../../performance/advanced-setup.md#set-up-redis)
