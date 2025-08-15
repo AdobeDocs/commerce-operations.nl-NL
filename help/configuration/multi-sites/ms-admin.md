@@ -31,7 +31,7 @@ Een hoofdcategorie maken:
 1. Meld u aan bij de beheerder als een gebruiker die geautoriseerd is om categorieën te maken.
 1. Klik **Catalogus** > **Categorieën**.
 1. Klik **toevoegen de Categorie van de Wortel**.
-1. Op het **gebied van de Naam van de Categorie 0} {, ga een unieke naam in om deze categorie te identificeren.**
+1. Op het **gebied van de Naam van de Categorie 0&rbrace; &lbrace;, ga een unieke naam in om deze categorie te identificeren.**
 1. Zorg ervoor dat laat Categorie toe wordt geplaatst aan **ja**.
 
    Voor informatie over de andere opties op deze pagina, zie [ de Categorieën van de Wortel ](https://experienceleague.adobe.com/en/docs/commerce-admin/catalog/categories/category-root).
@@ -112,7 +112,7 @@ De URL van de websitebasis wijzigen:
    ![ selecteer een werkingsgebied ](../../assets/configuration/multi-site-scope.png)
 
 1. In de juiste ruit, breid **Basis URLs** uit.
-1. In de _sectie van 0} Basis URLs {, ontruim_ het systeemwaarde van het Gebruik **.**
+1. In de _sectie van 0&rbrace; Basis URLs &lbrace;, ontruim_ het systeemwaarde van het Gebruik **.**
 1. Ga `http://french.magento.mg` URL in de **Basis URL** en **van de Verbinding URL van de Basis** gebieden in.
 
 1. Herhaal de vorige stap in de _Basis URLs (Veilig)_ sectie.
@@ -162,7 +162,7 @@ De standaard basis-URL van de winkelweergave wijzigen:
    ![ selecteer het gebrek config werkingsgebied ](../../assets/configuration/multi-site-default.png)
 
 1. In de juiste ruit, breid **Basis URLs** uit.
-1. In de _sectie van 0} Basis URLs {, ontruim_ het systeemwaarde van het Gebruik **.**
+1. In de _sectie van 0&rbrace; Basis URLs &lbrace;, ontruim_ het systeemwaarde van het Gebruik **.**
 1. Ga `http://magento.mg` URL in de **Basis URL** en **van de Verbinding URL van de Basis** gebieden in.
 
 1. Herhaal de vorige stap in de **Basis URLs (Veilig)** sectie.

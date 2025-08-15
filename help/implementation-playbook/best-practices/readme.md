@@ -41,7 +41,7 @@ Als er niet genoeg informatie in een verzoek wordt verstrekt, vraagt het team om
 
 Nadat een artikel is goedgekeurd, kan het trekkingsverzoek worden samengevoegd met de productietak. Samenvoegen moet worden uitgevoerd door de auteur. Nadat een onderwerp is samengevoegd, kan het aan productie onmiddellijk worden gepubliceerd gebruikend een handproces, of automatisch de volgende tijd de het publiceren baan loopt. Publicatietaken worden meestal om de twee uur uitgevoerd.
 
-**Nieuw inhoudsbericht** - Adobe zal a *verstrekken wat* sectie over het [ overzicht van Beste praktijken ](https://experienceleague.adobe.com/docs/commerce-operations/implementation-playbook/best-practices/phases.html?lang=en) onderwerp {nieuw is om gebruikers over onlangs gepubliceerde of bijgewerkte onderwerpen te houden. Adobe zal ook nieuwe inhoud van Beste praktijken bevorderen gebruikend bestaande kanalen, zoals marketing en interne mededelingen.
+**Nieuw inhoudsbericht** - Adobe zal a *verstrekken wat* sectie over het [ overzicht van Beste praktijken ](https://experienceleague.adobe.com/docs/commerce-operations/implementation-playbook/best-practices/phases.html?lang=en) onderwerp &lbrace;nieuw is om gebruikers over onlangs gepubliceerde of bijgewerkte onderwerpen te houden. Adobe zal ook nieuwe inhoud van Beste praktijken bevorderen gebruikend bestaande kanalen, zoals marketing en interne mededelingen.
 
 ## Backlog &amp; Kanban Board
 

@@ -41,7 +41,7 @@ Meer informatie over het voorbereiden van Commerce-projecten voor hoge-verkeersp
 
 - [ Readiness van de Vakantie ](https://experienceleague.adobe.com/docs/events/commerce-intelligence-webinar-recordings/2021/holiday-readiness.html)
 - [ het Vakantiemaken Analyse van de Vakantie ](https://experienceleague.adobe.com/docs/commerce-business-intelligence/mbi/analyze/performance/holiday-season-perf.html)
-- {de Verhoging van de Capaciteit van de 0} Opbouw [](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/announcements/commerce-announcements/2021-holiday-surge-capacity-requests-for-magento-commerce-cloud.html)
+- {de Verhoging van de Capaciteit van de 0} Opbouw [&#128279;](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/announcements/commerce-announcements/2021-holiday-surge-capacity-requests-for-magento-commerce-cloud.html)
 
 ### Laden testen
 

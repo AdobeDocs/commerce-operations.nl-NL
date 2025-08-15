@@ -1,6 +1,6 @@
 ---
 title: 'ACSD-58566: interne serverfout van GraphQL voor opmerkingen over inkooporders'
-description: Pas de ACSD-58566-patch toe om het Adobe Commerce-probleem te verhelpen, waarbij GraphQL een interne serverfout retourneert bij het opvragen van het ` created_at'-veld in de addPurchaseOrderComment-mutatie.
+description: Pas de ACSD-58566-patch toe om het Adobe Commerce-probleem te verhelpen, waarbij GraphQL een interne serverfout retourneert bij het opvragen van het &grave; created_at'-veld in de addPurchaseOrderComment-mutatie.
 feature: B2B, Purchase Orders, GraphQL
 role: Admin, Developer
 exl-id: 6d051f57-7a2f-44a5-a1c9-834917ed986c

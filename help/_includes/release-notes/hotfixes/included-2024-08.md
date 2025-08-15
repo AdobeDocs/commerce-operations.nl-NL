@@ -9,7 +9,7 @@ ht-degree: 0%
 
 Deze release bevat de volgende hotfixes:
 
-* Hotfix om een fout van JavaScript op te lossen die de Kaarten van Google verhinderde behoorlijk in de [!UICONTROL ****] redacteur PageBuilder terug te geven. Zie de [ Herziene flarden voor de toegangsverlies van Kaarten van Google op alle versies van Adobe Commerce ](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/troubleshooting/site-down-or-unresponsive/revised-patches-for-google-maps-access-loss-on-all-adobe-commerce-versions) het artikel van de Kennisbank voor details.
+* Hotfix om een fout van JavaScript op te lossen die de Kaarten van Google verhinderde behoorlijk in de [!UICONTROL **&#x200B;**] redacteur PageBuilder terug te geven. Zie de [ Herziene flarden voor de toegangsverlies van Kaarten van Google op alle versies van Adobe Commerce ](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/troubleshooting/site-down-or-unresponsive/revised-patches-for-google-maps-access-loss-on-all-adobe-commerce-versions) het artikel van de Kennisbank voor details.
 
 <!--
 ACP2E-3156

@@ -26,7 +26,7 @@ De [!DNL Site-Wide Analysis Tool] dienst is beschikbaar op [ productiemodus ](ht
 >[!NOTE]
 >
 >Uw account moet het recht hebben op **[!DNL Support Permissions]** om toegang te krijgen tot [!DNL Site-Wide Analysis Tool Dashboard] .
->>Zie meer details in [ Deel a  [!DNL Commerce]  rekening ](https://experienceleague.adobe.com/docs/commerce-admin/start/commerce-account/commerce-account-share.html) in onze gebruikersgids.
+>&#x200B;>Zie meer details in [ Deel a  [!DNL Commerce]  rekening ](https://experienceleague.adobe.com/docs/commerce-admin/start/commerce-account/commerce-account-share.html) in onze gebruikersgids.
 
 ## Aanmelden bij [!DNL Site-Wide Analysis Tool Dashboard] vanuit de winkel [!UICONTROL Admin Panel]
 

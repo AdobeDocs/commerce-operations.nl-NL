@@ -79,7 +79,7 @@ Adobe biedt een uitgebreide reeks intelligente, composable merchandizing-service
 - [ Levend Onderzoek ](https://experienceleague.adobe.com/en/docs/commerce/live-search/overview) - lever slimmere, snellere en relevante resultaten voor kopers met dit AI-Gerichte onderzoekshulpmiddel.
 - [ Aanbevelingen van het Product ](https://experienceleague.adobe.com/en/docs/commerce/product-recommendations/overview) - voeg op AI-Gebaseerde aanbevelingen toe die op verkoopgedrag, populaire tendensen, productgelijkenis, en meer worden gebaseerd.
 - [ de Dienst van de Catalogus ](https://experienceleague.adobe.com/en/docs/commerce/catalog-service/guide-overview) - geef uw klanten een geoptimaliseerde productervaring terwijl het opvoeren van prestaties, verbeterend scalability, en verhogend omzettingen.
-- [ - De klantentevredenheid van de 1} Aandrijving van de Betaling van de Diensten van de 1} - aandrijving door diverse betalingsmethodes, met inbegrip van rentevrije betalingstermijnen aan te bieden, en één enkele mening in betalingsverwerking, orden, en facturen.](https://experienceleague.adobe.com/en/docs/commerce/payment-services/guide-overview)
+- [ - De klantentevredenheid van de 1&rbrace; Aandrijving van de Betaling van de Diensten van de 1&rbrace; - aandrijving door diverse betalingsmethodes, met inbegrip van rentevrije betalingstermijnen aan te bieden, en één enkele mening in betalingsverwerking, orden, en facturen.](https://experienceleague.adobe.com/en/docs/commerce/payment-services/guide-overview)
 
 ## Hoofdloze winkel
 

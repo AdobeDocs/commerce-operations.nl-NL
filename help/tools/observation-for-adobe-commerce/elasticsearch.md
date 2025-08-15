@@ -38,7 +38,7 @@ In het frame **[!UICONTROL Active Shards in Cluster]** wordt het totale aantal p
 
 ## [!UICONTROL Index health - this will show the index name and color status]
 
-![ gezondheid van 0} Index](../../assets/tools/index-health.jpg)
+![ gezondheid van 0&rbrace; Index](../../assets/tools/index-health.jpg)
 
 In dit frame worden de naam van de index en het aantal statussen van de indexkleur weergegeven. Als u de tabel omlaag schuift, ziet u dezelfde indexnaam met de kleurstatus Geel en Rood. Het getal dat volgt op de 27 indexnaam is het getal van de statuskleur. Als de waarde nul is, waren er geen gevallen waarin de index zich in die kleurstatus bevond tijdens de geselecteerde tijdframes.
 

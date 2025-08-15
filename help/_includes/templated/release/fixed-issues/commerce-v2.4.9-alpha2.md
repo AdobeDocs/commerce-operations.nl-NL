@@ -121,7 +121,7 @@ Het systeem verwerkt de prijs van het aanhalingsteken correct ingesteld op base_
 
 _AC-9985 - [ GitHub kwestie ](https://github.com/magento/magento2/issues/38094) - [ GitHub codebijdrage ](https://github.com/magento/magento2/pull/36878)_
 
-#### [ Recente Orden van de Wolk 1} verschijnen niet in andere opslagmening als de orden op één archiefmening worden gecreeerd]
+#### [ Recente Orden van de Wolk 1&rbrace; verschijnen niet in andere opslagmening als de orden op één archiefmening worden gecreeerd]
 
 Het probleem waarbij op de pagina Mijn account geen recente bestellingen van andere winkelweergaven in dezelfde winkel werden weergegeven, is opgelost. De logica voor het ophalen van bestellingen is bijgewerkt om ervoor te zorgen dat de volgorde in alle weergaven van winkels consistent wordt weergegeven. Deze logica sluit aan op het gedrag van de pagina Mijn bestellingen.
 
@@ -173,7 +173,7 @@ Deze PR Verandert een lusvariabelenaam om de &quot;_cache_instance_product_ids&q
 
 _AC-14159 - [ GitHub kwestie ](https://github.com/magento/magento2/issues/39641) - [ GitHub codebijdrage ](https://github.com/magento/magento2/pull/39642)_
 
-#### [ Belangrijkste 1} ] CLOUD [ Beeld die meer dan 400GB van schijfruimte resizing]
+#### [ Belangrijkste 1&rbrace; ] CLOUD [ Beeld die meer dan 400GB van schijfruimte resizing]
 
 Na de correctie genereert de opdracht `catalog:images:resize` die wordt gebruikt met de markering —skip_hidden_images geen afbeeldingscache voor websites waarop geen afbeeldingen aanwezig zijn.
 
@@ -219,7 +219,7 @@ Het systeem werkt zoals verwacht in het opslagbereik de beelden erven de rollen/
 
 _AC-13556 - [ GitHub kwestie ](https://github.com/magento/magento2/issues/39481) - [ GitHub codebijdrage ](https://github.com/magento/magento2/pull/39680)_
 
-#### [ Filter van 1} Kleine insect van het Comité Admin ] kan niet raken wanneer de gebiedswaarde `listing component` bevat`\`
+#### [ Filter van 1&rbrace; Kleine insect van het Comité Admin ] kan niet raken wanneer de gebiedswaarde `listing component` bevat`\`
 
 Het systeem werkt prima als we paginatitel met slash filteren (bijvoorbeeld Magento\Store)
 
@@ -337,7 +337,7 @@ Deze PR vervangt constructoreigenschappen door eigenschappenbevordering in de mo
 
 _AC-14616 - [ GitHub kwestie ](https://github.com/magento/magento2/issues/39900) - [ GitHub codebijdrage ](https://github.com/magento/magento2/pull/36996)_
 
-#### [ Verwijderde de codeovertolligheid van de 0} Uitgave voor module frontend lay-outs.]
+#### [ Verwijderde de codeovertolligheid van de 0&rbrace; Uitgave voor module frontend lay-outs.]
 
 Deze PR verwijdert de redundantie van code voor themalay-outs voor Magento_MSRP-, Magento_LoginAsCustomerAssistance-, Magento_Newsletter- en Magento_Sitemap-modules voor frontend-layouts.
 
@@ -540,7 +540,7 @@ Voordat de correctie werd uitgevoerd, werd bij het bestellen van een bundelprodu
 
 _ACP2E-3947 - [ de codebijdrage van GitHub ](https://github.com/magento/magento2/commit/2a252ae6)_
 
-#### [ Magento OOTB-code van 1} Cloud - E-mail de kwestie van de Opstelling van het Malplaatje]
+#### [ Magento OOTB-code van 1&rbrace; Cloud - E-mail de kwestie van de Opstelling van het Malplaatje]
 
 Voordat de oplossing werd gevonden, waren de e-mails bij het gebruik van asynchrone e-mailverzendingen niet in overeenstemming met de order van de winkel. Na deze correctie wordt nu de juiste e-mailbestelling voor verzending via e-mail naar de winkel verzonden.
 

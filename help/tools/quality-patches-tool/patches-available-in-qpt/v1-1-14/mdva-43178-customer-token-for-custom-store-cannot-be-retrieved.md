@@ -45,10 +45,10 @@ Klanttoken voor een aangepaste winkel kan niet worden opgehaald in GraphQL.
 
    <pre>
     <code class="language-graphql">
-    {
+    &lbrace;
       "username": "login",
       "password": "password"
-    }
+    &rbrace;
     </code>
     </pre>
 

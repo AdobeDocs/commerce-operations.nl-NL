@@ -30,7 +30,7 @@ De opties AsyncOrder, Uitgestelde Totale Berekening, en de Controle van de Inven
 
 ## Asynchrone orderplaatsing
 
-De _module van de Orde van 0} Async laat asynchrone ordeplaatsing toe, die de orde als_ merkt, plaatst de orde in een rij, en verwerkt orden van de rij op een eerste in-eerste-uit basis. `received` AsyncOrder is **gehandicapt** door gebrek.
+De _module van de Orde van 0&rbrace; Async laat asynchrone ordeplaatsing toe, die de orde als_ merkt, plaatst de orde in een rij, en verwerkt orden van de rij op een eerste in-eerste-uit basis. `received` AsyncOrder is **gehandicapt** door gebrek.
 
 Een klant voegt bijvoorbeeld een product toe aan zijn winkelwagentje en selecteert **[!UICONTROL Proceed to Checkout]** . Ze vullen het **[!UICONTROL Shipping Address]** -formulier in, selecteren hun voorkeur **[!UICONTROL Shipping Method]** , selecteren een betalingsmethode en plaatsen de bestelling. Het winkelwagentje wordt gewist, de bestelling wordt gemarkeerd als **[!UICONTROL Received]** , maar het aantal producten wordt nog niet aangepast en er wordt ook geen e-mail naar de klant verzonden. De bestelling wordt ontvangen, maar de gegevens van de bestelling zijn nog niet beschikbaar omdat de bestelling niet volledig is verwerkt. Het blijft in de rij tot de `placeOrderProcess` consument begint, verifieert de orde met de [ eigenschap van de inventariscontrole ](#disable-inventory-check) (die door gebrek wordt toegelaten), en werkt de orde als volgt bij:
 
@@ -174,7 +174,7 @@ _laat Overzicht op de Lading van de Kar_ toe het globale plaatsen bepaalt of om 
 
 Indien uitgeschakeld, wordt de inventariscontrole niet uitgevoerd wanneer een product aan het winkelwagentje wordt toegevoegd. Als deze inventariscontrole wordt overgeslagen, zouden sommige uit-van-voorraadscenario&#39;s andere soorten fouten kunnen werpen. Een inventariscontrole _komt altijd voor_ bij de stap van de ordeplaatsing, zelfs wanneer onbruikbaar gemaakt.
 
-**laat de Controle van de Inventaris op de Lading van de Kunst toe** wordt toegelaten (reeks aan ja) door gebrek. Om de inventariscontrole onbruikbaar te maken wanneer het laden van de kar, plaats **[!UICONTROL Enable Inventory Check On Cart Load]** aan `No` in Admin UI **Opslag** > **Configuratie** > **Catalogus** > **Voorraad** > **sectie van de Opties van de Beeld 11}.** Zie [ Globale Opties ](https://experienceleague.adobe.com/en/docs/commerce-admin/inventory/configuration/global-options) en [ Inventaris van de Catalogus ](https://experienceleague.adobe.com/en/docs/commerce-admin/inventory/guide-overview) in de _Gids van de Gebruiker_ vormen.
+**laat de Controle van de Inventaris op de Lading van de Kunst toe** wordt toegelaten (reeks aan ja) door gebrek. Om de inventariscontrole onbruikbaar te maken wanneer het laden van de kar, plaats **[!UICONTROL Enable Inventory Check On Cart Load]** aan `No` in Admin UI **Opslag** > **Configuratie** > **Catalogus** > **Voorraad** > **sectie van de Opties van de Beeld 11&rbrace;.** Zie [ Globale Opties ](https://experienceleague.adobe.com/en/docs/commerce-admin/inventory/configuration/global-options) en [ Inventaris van de Catalogus ](https://experienceleague.adobe.com/en/docs/commerce-admin/inventory/guide-overview) in de _Gids van de Gebruiker_ vormen.
 
 ## Taakverdeling
 

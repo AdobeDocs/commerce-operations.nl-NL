@@ -1,6 +1,6 @@
 ---
 title: 'ACSD-61103: Aantal mislukte pogingen wordt niet opnieuw ingesteld op nul nadat de klant zich heeft aangemeld via de API'
-description: Pas ACSD-61103 flard toe om de kwestie van Adobe Commerce te bevestigen waar de mislukkingstelling in de lijst ` customer_entity ` niet aan nul wordt teruggesteld nadat een klant met succes door API eindpunten het programma opent.
+description: Pas ACSD-61103 flard toe om de kwestie van Adobe Commerce te bevestigen waar de mislukkingstelling in de lijst &grave; customer_entity &grave; niet aan nul wordt teruggesteld nadat een klant met succes door API eindpunten het programma opent.
 feature: GraphQL, REST, Customers
 role: Admin, Developer
 exl-id: 9f5aac1f-c8a3-4255-8ebc-2268283b3384

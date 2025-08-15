@@ -1,5 +1,5 @@
 ---
-title: 'ACSD-63572: De indexeertabellen ` catalogrule` worden niet schoongemaakt als het indexeerproces wordt beëindigd'
+title: 'ACSD-63572: De indexeertabellen &grave; catalogrule&grave; worden niet schoongemaakt als het indexeerproces wordt beëindigd'
 description: Pas de ACSD-63572-patch toe om het Adobe Commerce-probleem op te lossen, waarbij de indexeertabellen niet worden opgeschoond toen het proces werd beëindigd vanwege een systeemupgrade of stilstand in [!UICONTROL CLI] .
 feature: System
 Role: Admin, Developers

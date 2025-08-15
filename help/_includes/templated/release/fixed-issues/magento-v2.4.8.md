@@ -398,7 +398,7 @@ Het systeem bevat nu een machtigingencontrole voor de knop &quot;Gegevens opnieu
 
 _AC-10705 - [ GitHub kwestie ](https://github.com/magento/magento2/issues/38283) - [ GitHub codebijdrage ](https://github.com/magento/magento2/pull/38279)_
 
-#### [ Inconsistente etiketten van 0} kwestie {voor attributen in marketing regels]
+#### [ Inconsistente etiketten van 0&rbrace; kwestie &lbrace;voor attributen in marketing regels]
 
 Het systeem vult nu correct de labels consistent in voor categorie- en kenmerkopties in de regel van de winkelwagenprijs
 
@@ -470,7 +470,7 @@ Met de opdracht `bin/magento i18n:collect-phrases -o` worden nu correct JavaScri
 
 _AC-9843 - [ GitHub codebijdrage ](https://github.com/magento/magento2/commit/0c53bbf7)_
 
-#### Apostrof in de naam van de archiefweergave wordt vervangen door &amp;#039;
+#### Apostrof in de naam van de archiefweergave wordt vervangen door &#039;
 
 De filters van de de opslagmening van het net tonen nu behoorlijk apostroffen
 
@@ -686,7 +686,7 @@ Het valutasymbool voor orderbedragen in het orderrapport is onjuist ontleend aan
 
 _ACP2E-3276 - [ de codebijdrage van GitHub ](https://github.com/magento/magento2/commit/fd5cf3af)_
 
-#### [ Onjuiste berekeningen van de Wolk ] {in het Rapport van het Gebruik van de Coupon
+#### [ Onjuiste berekeningen van de Wolk ] &lbrace;in het Rapport van het Gebruik van de Coupon
 
 Het totale verkoopbedrag in het raster van het couponrapport wordt nu correct berekend door zowel het &quot;Discount Tax Compensation Amount&quot; als het &quot;Shipping Discount Tax Compensation Amount&quot; op te nemen. Voorheen ontbraken deze bedragen in de berekening, wat leidde tot verschillen tussen het totaal van de verkopen en de gegevens van de verkooporder.
 
@@ -770,7 +770,7 @@ Het systeem verzendt nu correct transactieprijzen en totalen naar Google Tag wan
 
 _AC-10698 - [ GitHub kwestie ](https://github.com/magento/magento2/issues/37348) - [ GitHub codebijdrage ](https://github.com/magento/magento2/pull/37504) - [ GitHub codebijdrage ](https://github.com/magento/magento2/pull/37349)_
 
-#### [ ] Uitchecken [ van de 0} Uitgave richtlijnen die in ontbroken betalings e-mailmalplaatje worden bijgewerkt]
+#### [ ] Uitchecken [ van de 0&rbrace; Uitgave richtlijnen die in ontbroken betalings e-mailmalplaatje worden bijgewerkt]
 
 Het systeem laat nu correct het verzendadres en de verzendmethode van de mislukte betalings-e-mailtemplate voor virtuele producten weg, zodat alleen relevante informatie in de e-mail wordt opgenomen. Eerder bevatte het niet-betaalde e-mailbericht voor virtuele producten het verzendadres en de verzendmethode onjuist.
 
@@ -782,13 +782,13 @@ Het systeem staat nu gebruikers toe om zich tijdens het controleproces aan te me
 
 _AC-11717 - [ GitHub kwestie ](https://github.com/magento/magento2/issues/38557) - [ GitHub codebijdrage ](https://github.com/magento/magento2/pull/39509)_
 
-#### [ de regressie van de Regels van de Verkoop van 0} kwestie {in 2.4.7]
+#### [ de regressie van de Regels van de Verkoop van 0&rbrace; kwestie &lbrace;in 2.4.7]
 
 Het systeem valideert nu correct de verkoopregels, waardoor de toepassing van een couponcode op een winkelwagentje wordt voorkomen als de productvoorwaarde niet overeenkomt met een productnaam. Voorheen kon een verkoopregel worden toegepast en een korting op het verzendbedrag worden gegeven, zelfs als de productvoorwaarde niet overeenkomt met een productnaam.
 
 _AC-11876 - [ GitHub kwestie ](https://github.com/magento/magento2/issues/38671) - [ GitHub codebijdrage ](https://github.com/magento/magento2/commit/0574ac23)_
 
-#### [ CartFixed-berekening van de regel van de Verkoop 0} Uitgave: onjuist kortingsbedrag]
+#### [ CartFixed-berekening van de regel van de Verkoop 0&rbrace; Uitgave: onjuist kortingsbedrag]
 
 Het systeem berekent nu correct het kortingsbedrag voor verkoopregels met vaste winkelbedragen, zodat nauwkeurige kortingen worden toegepast ongeacht wijzigingen in winkelartikelen. Eerder kon het kortingsbedrag verkeerd variëren wanneer winkelwagentjes werden gewijzigd, wat soms tot aanzienlijk grotere kortingen leidde dan verwacht.
 
@@ -818,7 +818,7 @@ Het systeem verwijdert nu correct de regel van de kartprijs voor aangemelde gebr
 
 _AC-12541 - [ GitHub kwestie ](https://github.com/magento/magento2/issues/38944) - [ GitHub codebijdrage ](https://github.com/magento/magento2/commit/7d5e3906)_
 
-#### [ ] VAN DE VEREDELING [ De optimalisering van de Prestaties grote het winkelwagentjes van 0} { door te verhinderen...]
+#### [ ] VAN DE VEREDELING [ De optimalisering van de Prestaties grote het winkelwagentjes van 0&rbrace; &lbrace; door te verhinderen...]
 
 Het systeem optimaliseert nu de prestaties voor grote winkelwagentjes door dubbele getActions-aanroepen te voorkomen, waardoor de snelheid en efficiëntie van winkelwagentbewerkingen worden verbeterd. Eerder werd voor een winkelwagentje met meerdere items de functie getActions meerdere keren aangeroepen, waardoor de prestaties van het systeem werden vertraagd.
 
@@ -902,7 +902,7 @@ Voorheen kon de beperkte beheerder het verlaten winkelwagentje niet zien van het
 
 _ACP2E-3025 - [ de codebijdrage van GitHub ](https://github.com/magento/magento2/commit/d1f7dc95)_
 
-#### [ snelle orde 1} van de Wolk grote hoeveelheid SKU prestaties]
+#### [ snelle orde 1&rbrace; van de Wolk grote hoeveelheid SKU prestaties]
 
 De prestaties van de afhandeling zijn verbeterd wanneer kenmerken die worden gebruikt in de regels voor de kartprijs, niet voor alle producten aanwezig zijn en wanneer de functie voor het bepalen van de marktprijs (Minimale geadverteerde prijs) is ingeschakeld.
 
@@ -958,7 +958,7 @@ _ACP2E-3622 - [ de codebijdrage van GitHub ](https://github.com/magento/magento2
 
 ### Afhandeling van winkelwagentje en afhandeling, Afhandeling/Afhandeling van één pagina
 
-#### [ E-mailveld van 0} Willekeurige BUG {wordt niet teruggegeven of neemt veel tijd omhoog in de Verzending van de Controle of de pagina van de Betaling.]
+#### [ E-mailveld van 0&rbrace; Willekeurige BUG &lbrace;wordt niet teruggegeven of neemt veel tijd omhoog in de Verzending van de Controle of de pagina van de Betaling.]
 
 Commerce geeft nu het veld **[!UICONTROL Email]** weer op de pagina&#39;s voor verzending en betaling van de afhandeling zoals verwacht. Eerder was dit veld afwezig of traag gerenderd.
 
@@ -1120,7 +1120,7 @@ Afbeeldingen van producten worden niet verwijderd als u de testupdate verwijdert
 
 _ACP2E-2785 - [ de codebijdrage van GitHub ](https://github.com/magento/magento2/commit/c8931218)_
 
-#### [ Verkeerde prijs van het bundelproduct van 0} Cloud wanneer gebruikt met rijprijzen]
+#### [ Verkeerde prijs van het bundelproduct van 0&rbrace; Cloud wanneer gebruikt met rijprijzen]
 
 Bij de berekening van bepaalde percentages kortingen die tot op 2 decimalen zijn afgerond, worden voorheen verschillende definitieve prijzen voor de pagina met de winkelpagina&#39;s van de winkelwagentje en de productdetails gegenereerd. Nadat deze correctie is toegepast, is de uiteindelijke prijs voor het bundelproduct gelijk aan die op de pagina met productdetails, de pagina met productaanbiedingen en de pagina met mini-winkelwagentjes.
 
@@ -1204,7 +1204,7 @@ Onjuiste gegevens over productkoppelingen in REST API-aanroepen veroorzaken niet
 
 _ACP2E-3009 - [ de codebijdrage van GitHub ](https://github.com/magento/magento2/commit/a4fbf702)_
 
-#### [ Mobiele Uitgave van de Wolk ] {kan slechts niet op het beeld pinch
+#### [ Mobiele Uitgave van de Wolk ] &lbrace;kan slechts niet op het beeld pinch
 
 Het systeem ondersteunt nu zoomfuncties met knijpbeweging op afbeeldingen met productdetails in de mobiele weergave op Chrome, waardoor de mobiele gebruikerservaring wordt verbeterd. Eerder werd niet op de afbeelding ingezoomd door te dubbeltikken op de afbeelding in de mobiele weergave op Chrome.
 
@@ -1240,13 +1240,13 @@ De RSS-feed voor nieuwe producten wordt nu bijgewerkt wanneer een product als ni
 
 _ACP2E-3103 - [ de codebijdrage van GitHub ](https://github.com/magento/magento2/commit/d01ee51e)_
 
-#### [ GQL van de Galerij van de Media van het Product van 0} wolk {wordt de reactie niet gesorteerd door beeldpositie]
+#### [ GQL van de Galerij van de Media van het Product van 0&rbrace; wolk &lbrace;wordt de reactie niet gesorteerd door beeldpositie]
 
 Het systeem sorteert items in de mediagalerie nu op de juiste positie in de GraphQL-reactie en zorgt voor een nauwkeurige weergavevolgorde. Eerder zijn de items in de mediagalerie niet op positie gesorteerd, wat tot een onjuiste weergavevolgorde heeft geleid.
 
 _ACP2E-3126 - [ GitHub kwestie ](https://github.com/magento/magento2/issues/37671) - [ GitHub codebijdrage ](https://github.com/magento/magento2/commit/b21e5d91)_
 
-#### [ de punten van de Subcategorie van 0} Wolk {worden niet getoond op widgets uitgeven op admin backend]
+#### [ de punten van de Subcategorie van 0&rbrace; Wolk &lbrace;worden niet getoond op widgets uitgeven op admin backend]
 
 Voor de categoriestructuur op de nieuwe widgetpagina hoeven geen Level 5+-categorieën meer te worden geladen. Eerder ontbraken enkele categorieën bij het laden van de structuur voorbij de categorieën van niveau 5.
 
@@ -1364,7 +1364,7 @@ Het systeem zorgt er nu voor dat de inzamelingen voor overbrengingen en creditno
 
 _AC-9111 - [ GitHub kwestie ](https://github.com/magento/magento2/issues/37561) - [ GitHub codebijdrage ](https://github.com/magento/magento2/pull/37562)_
 
-#### [ Follow-up van de Wolk 1}: Verkeerd in Gegevens Vergelijking wanneer het controleren als het gegeven veranderingen heeft]
+#### [ Follow-up van de Wolk 1&rbrace;: Verkeerd in Gegevens Vergelijking wanneer het controleren als het gegeven veranderingen heeft]
 
 Eerder werd het opslagobject aangeroepen telkens wanneer geen gegevenswijzigingen werden aangebracht (voor numerieke gegevensvelden, zoals int/float/double). Het activeert de markering _hasDataChanges om waar te zijn en roept de opslagfunctie aan. Het controleert ook niet de drijvende aantallen die door koord worden ingekapseld. Nadat deze correctie is toegepast, wordt de functie Save alleen aangeroepen als de gegevens zijn gewijzigd. De gegevenswaarde voor int/float/double-check met de waarde die aan de functie wordt doorgegeven en het strikte type dat overeenkomt
 
@@ -1378,7 +1378,7 @@ Alleen de directe onderliggende categorieën worden opgehaald tijdens het filter
 
 _ACP2E-3090 - [ de codebijdrage van GitHub ](https://github.com/magento/magento2/commit/93d50f8d)_
 
-#### [ Grafische sortering van het Product van 0} Cloud {werkt niet]
+#### [ Grafische sortering van het Product van 0&rbrace; Cloud &lbrace;werkt niet]
 
 GraphQl-productsortering door meerdere velden wanneer de velden in variabelen worden doorgegeven, werkt nu zoals verwacht.
 
@@ -1392,7 +1392,7 @@ _ACP2E-3312 - [ de codebijdrage van GitHub ](https://github.com/magento/magento2
 
 ### Catalogus, Prijzen, Staging en Voorvertoning
 
-#### [ het eindpunt van de prijsAPI van de Wolk van 0} Speciale winst fout wanneer het bijwerken van grote aantallen producten gelijktijdig]
+#### [ het eindpunt van de prijsAPI van de Wolk van 0&rbrace; Speciale winst fout wanneer het bijwerken van grote aantallen producten gelijktijdig]
 
 Nu maakt de API voor bulkupdates voor speciale prijzen één campagne voor elk datumbereik in plaats van meerdere geplande updates voor elk product en datumbereik. Bovendien worden gelijktijdige API-aanvragen voor snellere verwerking van een groot aantal SKU&#39;s ondersteund.
 
@@ -1422,7 +1422,7 @@ Eerder werkte het kenmerk Yes/No custom met price_* attribute_code niet met inde
 
 _ACP2E-2757 - [ de codebijdrage van GitHub ](https://github.com/magento/magento2/commit/ba25af8a)_
 
-#### [ Elastische onderzoeksfout van 0} wolk op bepaalde categoriepagina&#39;s]
+#### [ Elastische onderzoeksfout van 0&rbrace; wolk op bepaalde categoriepagina&#39;s]
 
 Eerder, met het vermelde configuratiekaart, wanneer wij prijs 0 voor veelvoudige producten zetten, zal het een uitzondering op de frontend categoriepagina werpen. Nadat deze correctie is toegepast wanneer meerdere productprijzen 0 en we de pagina met categorieën vooraf laden, wordt er geen uitzondering gegenereerd en wordt de pagina met categorieën correct geladen.
 
@@ -1462,7 +1462,7 @@ Het systeem geeft nu correct de prijs van eenvoudige producten uit de voorraad w
 
 _AC-10539 - [ GitHub kwestie ](https://github.com/magento/magento2/issues/38167) - [ GitHub codebijdrage ](https://github.com/magento/magento2/pull/38159)_
 
-#### [ Correct type en grammatica van 0} kwestie in acl.xsd- dossier]
+#### [ Correct type en grammatica van 0&rbrace; kwestie in acl.xsd- dossier]
 
 Het systeem corrigeert nu een typefout en grammaticale fout in het bestand acl.xsd, waardoor de documentatie helderder en nauwkeuriger wordt. Eerder bevatte het bestand acl.xsd een typefout en een onjuiste grammatica die tot verwarring kon leiden.
 
@@ -1502,7 +1502,7 @@ Het systeem geeft nu correct de mapstructuur weer en staat het uploaden van afbe
 
 _AC-9638 - [ GitHub kwestie ](https://github.com/magento/magento2/issues/38026) - [ GitHub codebijdrage ](https://github.com/magento/magento2/pull/38025)_
 
-#### [ Dynamische blokkwestie 0} op-PREM]
+#### [ Dynamische blokkwestie 0&rbrace; op-PREM]
 
 widgets worden nu op de juiste wijze gerenderd binnen dynamische blokken.
 
@@ -1632,7 +1632,7 @@ _AC-9240 - [ GitHub codebijdrage ](https://github.com/magento/magento2/commit/7d
 
 ### Kader
 
-#### [ Ongebruikte configuratie van het Type van 1} Vraag ]`app/code/Magento/Translation/etc/di.xml`
+#### [ Ongebruikte configuratie van het Type van 1&rbrace; Vraag ]`app/code/Magento/Translation/etc/di.xml`
 
 Het systeem verwijdert nu ongebruikte gebiedsdelen in de configuratie, die de algemene codeschoonheid en efficiency verbeteren. Eerder waren er ongebruikte afhankelijkheden in de configuratie die niet tot enige functionaliteit bijdroegen.
 
@@ -1698,7 +1698,7 @@ Het systeem staat nu de wijziging van eerder read-only eigenschappen in de metho
 
 _AC-11651 - [ GitHub kwestie ](https://github.com/magento/magento2/issues/38526) - [ GitHub codebijdrage ](https://github.com/magento/magento2/commit/c8f87c25)_
 
-#### [ AC-2039 wisselstroom-1667 van de 0} kwestie bevorderen de verwijzingen TinyMCE]
+#### [ AC-2039 wisselstroom-1667 van de 0&rbrace; kwestie bevorderen de verwijzingen TinyMCE]
 
 Recentste versie met tinten bijgewerkt in composer.json
 
@@ -1788,7 +1788,7 @@ Het systeem verwijdert nu verwijzingen naar dossiers uit gebieden die eerder wer
 
 _AC-12597 - [ GitHub kwestie ](https://github.com/magento/magento2/issues/38960) - [ GitHub codebijdrage ](https://github.com/magento/magento2/pull/38951)_
 
-#### [ Kleine opruiming van de kwestie 0}: Het vaste onjuiste gebruik van sprintf, het neemt slechts 2 placeholders hier en w...]
+#### [ Kleine opruiming van de kwestie 0&rbrace;: Het vaste onjuiste gebruik van sprintf, het neemt slechts 2 placeholders hier en w...]
 
 Het systeem gebruikt nu correct de functie sprintf met het juiste aantal plaatsaanduidingen, waardoor de code schoner en consistenter wordt. Eerder werd de functie sprintf onjuist gebruikt met een extra argument, dat geen belangrijke kwesties veroorzaakte maar niet het correcte gebruik was.
 
@@ -1878,7 +1878,7 @@ Het systeem voldoet nu aan de coderingsstandaard door de verboden tag `@author` 
 
 _AC-8356 - [ GitHub kwestie ](https://github.com/magento/magento2/issues/37250) - [ GitHub codebijdrage ](https://github.com/magento/magento2/pull/37000)_
 
-#### Ruimte in de regel voor syntaxiseinden van editorconfig voor `[{composer,auth}.json]`
+#### Ruimte in de regel voor syntaxiseinden van editorconfig voor `[&lbrace;composer,auth&rbrace;.json]`
 
 Het systeem past nu correct een 4-spatie op de composer en auth.json dossiers toe, na een moeilijke situatie aan een syntaxisfout in editorconfig. Eerder waren deze bestanden vanwege een spatie in de bewerkingsconfig-syntaxis onjuist opgemaakt met een inspringing voor twee spaties.
 
@@ -2022,7 +2022,7 @@ Het probleem is opgelost na het toepassen van de controle terwijl een productond
 
 _ACP2E-2653 - [ de codebijdrage van GitHub ](https://github.com/magento/magento2/commit/12e071c3)_
 
-#### Aanroep van GraphQL-producten met het prijsfilter `{from:&quot;0&quot;}` retourneert geen resultaat
+#### Aanroep van GraphQL-producten met het prijsfilter `&lbrace;from:&quot;0&quot;&rbrace;` retourneert geen resultaat
 
 Eerder werd met het filter naar nulprijzen gezocht in grafische producten. Dit heeft helemaal geen resultaten opgeleverd vanwege een gegenereerde uitzondering. De zoekopdracht geeft nu resultaten zoals verwacht.
 
@@ -2048,7 +2048,7 @@ Als een product eerder was uitgeschakeld in &quot;Alle winkelweergaven&quot; en 
 
 _ACP2E-3184 - [ de codebijdrage van GitHub ](https://github.com/magento/inventory/commit/3f300077)_
 
-#### [ Grafiek van de Producten van de Wolk 1} die fout hebben wanneer het zelfde eenvoudige product aan veelvoudige configureerbare producten heeft toegewezen]
+#### [ Grafiek van de Producten van de Wolk 1&rbrace; die fout hebben wanneer het zelfde eenvoudige product aan veelvoudige configureerbare producten heeft toegewezen]
 
 Eerder, met afzonderlijke configureerbare producten met het zelfde eenvoudige product, keert grapQL een fout terug. Nadat deze moeilijke situatie van toepassing is, verschillende configureerbare producten met het zelfde eenvoudige product, geeft grapQL resultaat zonder geen fout.
 
@@ -2085,7 +2085,7 @@ Het probleem is opgelost door de correcte opslag te simuleren waar de rekening v
 
 _ACP2E-3404 - [ de codebijdrage van GitHub ](https://github.com/magento/magento2/commit/5184c067)_
 
-#### [ de vraagwinst van GraphQL van de 0} wolk {verwante die producten niet aan huidige website worden toegewezen]
+#### [ de vraagwinst van GraphQL van de 0&rbrace; wolk &lbrace;verwante die producten niet aan huidige website worden toegewezen]
 
 Eerder, voor graphQL vraag, multi-store verwante producten tonen niet behoorlijk voor productvraag. Nadat deze moeilijke situatie wordt toegepast, voor producten, vraag graphQL verwante producten die dienovereenkomstig worden getoond multi-store.
 
@@ -2333,7 +2333,7 @@ Vóór deze correctie kon het product niet worden geëxporteerd als productkenme
 
 _ACP2E-3475 - [ de codebijdrage van GitHub ](https://github.com/magento/magento2/commit/1984c61c)_
 
-#### [ de Processen van de Invoer van 0} Wolk {die met elkaar in wisselwerking staan]
+#### [ de Processen van de Invoer van 0&rbrace; Wolk &lbrace;die met elkaar in wisselwerking staan]
 
 De correcte berichten worden getoond als de zelfde admin gebruiker twee of meer invoerverrichtingen gebruikend de zelfde gebruikerszitting uitvoert.
 
@@ -2341,7 +2341,7 @@ _ACP2E-3527 - [ de codebijdrage van GitHub ](https://github.com/magento/magento2
 
 ### Importeren/exporteren, prestaties
 
-#### [ De invoertijd van het product van 0} Cloud {is beduidend gestegen]
+#### [ De invoertijd van het product van 0&rbrace; Cloud &lbrace;is beduidend gestegen]
 
 Vóór de correctie was er een aanzienlijke tijdsvermindering bij het importeren van catalogusproducten met meer dan 10 k items. Na de correctie wordt het importeren van het catalogusproduct tijdig uitgevoerd.
 
@@ -2433,7 +2433,7 @@ Het systeem geeft nu het aantal achtergeordende items weer in de kolom Aantal op
 
 _AC-10828 - [ GitHub kwestie ](https://github.com/magento/magento2/issues/38252) - [ GitHub codebijdrage ](https://github.com/magento/magento2/pull/38320)_
 
-#### [ Verkeerde opslagidentiteitskaart van 0} kwestie die in Renderer van het Adres van de Orde wordt gebruikt]
+#### [ Verkeerde opslagidentiteitskaart van 0&rbrace; kwestie die in Renderer van het Adres van de Orde wordt gebruikt]
 
 Het systeem gebruikt nu correct de opslag-id die aan een bestelling is gekoppeld bij het weergeven van het besteladres, zodat de adressen correct zijn opgemaakt op basis van hun respectievelijke winkel-id. Eerder gebruikte het systeem onjuist de huidige winkel-id, wat tot een onjuiste adresnotatie kan leiden wanneer meerdere bestelling-e-mails van verschillende winkels moeten worden verzonden.
 
@@ -2641,7 +2641,7 @@ Oplossing voor een probleem waarbij de addProductsToCart-mutatie een &#39;PRODUC
 
 _LYNX-469_
 
-#### Product attribute > trademark short form&amp;trade; is returned as &amp;trade;
+#### Product attribute > trademark short form&trade; is returned as &trade;
 
 Probleem met tekencodering met productnaam voor de GraphQL API opgelost
 
@@ -2839,7 +2839,7 @@ Het systeem staat nu gebruikers toe om een standaardoptie voor een productattrib
 
 _AC-11932 - [ GitHub kwestie ](https://github.com/magento/magento2/issues/38703) - [ GitHub codebijdrage ](https://github.com/magento/magento2/commit/7d5e3906)_
 
-#### [ Opschonen van de Code van 0} kwestie {en voeg nieuw kritiek hoofdblok toe en beweeg kritieke css vóór activa]
+#### [ Opschonen van de Code van 0&rbrace; kwestie &lbrace;en voeg nieuw kritiek hoofdblok toe en beweeg kritieke css vóór activa]
 
 Het systeem bevat nu een nieuw kritiek kopblok en plaatst kritieke CSS voor elementen, waardoor u meer aanpassingen en optimalisatie van prestaties op de voorgrond kunt uitvoeren. Eerder werd de kritieke CSS niet geplaatst vóór de activa, die aanpassing en optimaliseringsmogelijkheden beperken.
 
@@ -2932,7 +2932,7 @@ Het systeem activeert nu correct de e-mails met productwaarschuwingen door ervoo
 
 _AC-5969 - [ GitHub kwestie ](https://github.com/magento/magento2/issues/35602) - [ GitHub codebijdrage ](https://github.com/magento/magento2/commit/0574ac23)_
 
-#### [ addFilterToMap functie van 0} Cloud {werkt niet voor bepaalde kolommen]
+#### [ addFilterToMap functie van 0&rbrace; Cloud &lbrace;werkt niet voor bepaalde kolommen]
 
 De aangepaste module kan nu worden gebruikt in het raster van de volgorde. Eerdere fouten zijn opgetreden tijdens het gebruik van een aangepaste module.
 
@@ -2952,7 +2952,7 @@ Het systeem werkt nu onmiddellijk coupongebruik bij wanneer een order wordt gema
 
 _ACP2E-2627 - [ de codebijdrage van GitHub ](https://github.com/magento/magento2/commit/c971859e)_
 
-#### [ het Opnieuw indexeren van het Product van de Regel van de Catalogus van de Wolk 1} ] HY000 [ SQLSTATE {teruggeeft: Algemene fout: De server van 2006 MySQL is weggegaan.]
+#### [ het Opnieuw indexeren van het Product van de Regel van de Catalogus van de Wolk 1&rbrace; ] HY000 [ SQLSTATE &lbrace;teruggeeft: Algemene fout: De server van 2006 MySQL is weggegaan.]
 
 Het systeem behandelt nu correct douanewaarde &quot;batchCount&quot;in di.xml voor &quot;Magento\CatalogRule\Model\Indexer\IndexBuilder&quot;, die SQL fouten zoals &quot;Algemene fout verhinderen: de server van 2006 MySQL is weggegaan&quot;tijdens het opnieuw indexeren van het Product van de Regel van de Catalogus wegens de onjuiste partijgrootte op grote catalogi
 
@@ -3088,7 +3088,7 @@ Het systeem staat nu het laden van het lettertype &#39;https://www.paypalobjects
 
 _AC-11855 - [ GitHub kwestie ](https://github.com/magento/magento2/issues/38624) - [ GitHub codebijdrage ](https://github.com/magento/magento2/pull/37401)_
 
-#### [ Update js.js DOM tekst van 0} kwestie {opnieuw geïnterpreteerd als HTML]
+#### [ Update js.js DOM tekst van 0&rbrace; kwestie &lbrace;opnieuw geïnterpreteerd als HTML]
 
 Door innerText te gebruiken, voorkomt dit het risico van HTML-injectie, aangezien deze eigenschappen automatisch speciale HTML-tekens in de opgegeven tekst ontsnappen. Met deze correctie voorkomt u XSS-kwetsbaarheden (cross-site scripting) door de invoer te behandelen als onbewerkte tekst in plaats van als geïnterpreteerde HTML.
 
@@ -3108,7 +3108,7 @@ _ACP2E-3300 - [ de codebijdrage van GitHub ](https://github.com/magento/security
 
 ### Verzending
 
-#### [ Vaste typefout van 0} kwestie in tracking.phtml - anders genoemd JS-functies &quot;currier&quot;aan &quot;drager&quot;]
+#### [ Vaste typefout van 0&rbrace; kwestie in tracking.phtml - anders genoemd JS-functies &quot;currier&quot;aan &quot;drager&quot;]
 
 Het systeem gebruikt nu correct de term &quot;drager&quot;in plaats van de verkeerd gespelde &quot;currier&quot;in de de handlerfuncties van JavaScript die in het orde volgende malplaatje worden gebruikt, die correcte functienaam en codeduidelijkheid verzekeren. Voorheen werd de verkeerd gespelde term &quot;currier&quot; gebruikt, wat tot verwarring en inconsistentie in de codebase kan leiden.
 
@@ -3150,7 +3150,7 @@ Eerder voor FedEx-integratie waren geen extra API-sleutels vereist voor het bijh
 
 _ACP2E-3340 - [ de codebijdrage van GitHub ](https://github.com/magento/magento2/commit/ec7e32a9)_
 
-#### [ FedEx Onderhandelde Tarieven van 0} wolk {die} niet op REST worden teruggekeerd]
+#### [ FedEx Onderhandelde Tarieven van 0&rbrace; wolk &lbrace;die&rbrace; niet op REST worden teruggekeerd]
 
 Vóór de correctie, rekening specifieke tarieven FedEx waar niet verzonden op de reactie, zelfs door volgens FedEx- documentatie zij zouden moeten worden verzonden. Na de correctie worden de specifieke tarieven van de rekening verzonden op de reactie door het verzoek van onze kant te veranderen.
 
@@ -3174,7 +3174,7 @@ _AC-9432 - [ GitHub kwestie ](https://github.com/magento/magento2/issues/37943) 
 
 ### Belasting
 
-#### [ Eigenschap/php8.1 van de eigenschap van 0} kwestie de bevordering van het aannemersbezit toen grafiek ql]
+#### [ Eigenschap/php8.1 van de eigenschap van 0&rbrace; kwestie de bevordering van het aannemersbezit toen grafiek ql]
 
 Vervang bijna alle eigenschappen met de bevordering van het aannemersbezit in module wanneer grafiek ql:
 
@@ -3240,7 +3240,7 @@ Het systeem valideert het bestandsveld nu correct in een UI-componentformulier, 
 
 _AC-12432 - [ GitHub kwestie ](https://github.com/magento/magento2/issues/38908) - [ GitHub codebijdrage ](https://github.com/magento/magento2/pull/39004)_
 
-#### [ Verbeterde datumnotatie van 0} kwestie {in JS console: schakelaar van 12 uur aan 24 uur van..]
+#### [ Verbeterde datumnotatie van 0&rbrace; kwestie &lbrace;in JS console: schakelaar van 12 uur aan 24 uur van..]
 
 Verbeterde datumnotatie in JS-console: switch van 12 uur naar 24 uur
 

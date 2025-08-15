@@ -156,7 +156,7 @@ Als uw webserver is geclusterd, voert u de opdracht in op elke host van de webse
 Wanneer u Adobe Commerce installeert, moet u het volgende opgeven:
 
 * De basis URL (die ook als *wordt bedoeld opslagadres*) specificeert hostname of IP adres van de *Webknoop*
-* De gastheer van het gegevensbestand is het *IP van de 0} verre gegevensbestandserver {adres (of ladingsverdelingsmechanisme als de gegevensbestandserver gegroepeerd is)*
+* De gastheer van het gegevensbestand is het *IP van de 0&rbrace; verre gegevensbestandserver &lbrace;adres (of ladingsverdelingsmechanisme als de gegevensbestandserver gegroepeerd is)*
 * De gebruikersbenaming van het gegevensbestand is de *lokale knoop van het Web* gegevensbestandgebruiker waaraan u toegang gaf
 * Databasewachtwoord is het wachtwoord van de gebruiker van het lokale webknooppunt
 * Databasenaam is de naam van de database op de externe server

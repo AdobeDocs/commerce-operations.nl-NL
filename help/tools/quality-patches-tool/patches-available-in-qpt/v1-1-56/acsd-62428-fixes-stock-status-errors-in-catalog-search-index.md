@@ -1,6 +1,6 @@
 ---
 title: 'ACSD-62428: fouten met de voorraadstatus in de zoekindex van de catalogus'
-description: Pas het ACSD-62428 flard toe om de kwestie te bevestigen waar de ` is_out_of_stock ` waarde in de index van het catalogusonderzoek verkeerd wordt geplaatst wanneer SKU niet als doorzoekbaar attribuut is.
+description: Pas het ACSD-62428 flard toe om de kwestie te bevestigen waar de &grave; is_out_of_stock &grave; waarde in de index van het catalogusonderzoek verkeerd wordt geplaatst wanneer SKU niet als doorzoekbaar attribuut is.
 feature: Inventory, Catalog Management
 role: Admin, Developer
 exl-id: 4b9d7e4c-f522-4d75-8fc9-dcf14287d02a

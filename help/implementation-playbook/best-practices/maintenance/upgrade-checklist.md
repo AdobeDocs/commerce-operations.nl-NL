@@ -46,7 +46,7 @@ Gebruik deze controlelijst tijdens uw jaarlijkse en driemaandelijkse gesprekken 
 
 ## Begroting en timing
 
-▢ Gebruik het de versieschema van Adobe Commerce [ ](../../../release/schedule.md) om uw volgende verbetering te plannen en voor tijd voor te bereiden.
+▢ Gebruik het de versieschema van Adobe Commerce [&#128279;](../../../release/schedule.md) om uw volgende verbetering te plannen en voor tijd voor te bereiden.
 
 ▢ Bespreek welke versie u (volledig of veiligheid-slechts) denkt over te nemen gebaseerd op verwachte behoeften.
 
@@ -87,7 +87,7 @@ Gebruik deze controlelijst tijdens uw jaarlijkse en driemaandelijkse gesprekken 
 
 ▢ Bewaak de site op problemen - prestaties, orderverwerking, analyses en andere problemen.
 
-▢ voer een de veiligheidsaftasten van Adobe Commerce [ ](https://account.magento.com/scanner/dashboard/) of andere derdeaftasten uit en herzie potentiële veiligheidskwetsbaarheid.
+▢ voer een de veiligheidsaftasten van Adobe Commerce [&#128279;](https://account.magento.com/scanner/dashboard/) of andere derdeaftasten uit en herzie potentiële veiligheidskwetsbaarheid.
 
 ▢ Voer een retrospectief uit met alle belanghebbenden en documenteer wat goed ging en wat niet en hoe te om te verbeteren.
 

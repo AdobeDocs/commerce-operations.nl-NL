@@ -31,7 +31,7 @@ Zie deze [ inleidende video ](https://www.youtube.com/watch?v=KW2R8ki_RG4) om me
    - Toont de algemene gezondheid van uw systeem met berichten van ontdekte kwesties en specifieke aanbevelingen door prioriteit.<br>
 Het bevat ook een historisch overzicht waarin wordt bijgehouden hoe de gezondheid van uw website in de loop der tijd verandert.
    - Toont **[!UICONTROL Security Center Widget]** die u tot laat toegang hebben:
-      - [ Naleving van de Versie van 1} Tech  [!DNL Stack]   [!DNL end of life (EOL)]](https://experienceleague.adobe.com/docs/commerce-operations/installation-guide/system-requirements.html)
+      - [ Naleving van de Versie van 1&rbrace; Tech  [!DNL Stack]   [!DNL end of life (EOL)]](https://experienceleague.adobe.com/docs/commerce-operations/installation-guide/system-requirements.html)
       - [ Bulletin van de Veiligheid van Adobe ](https://helpx.adobe.com/security/security-bulletin.html)
       - [ Aanbevelingen van  [!DNL Security Scan Tool] ](https://experienceleague.adobe.com/docs/commerce-admin/systems/security/security-scan.html)
       - [[!DNL Site-Wide Analysis Tool]  Aanbevelingen van de Veiligheid van de Beste praktijken ](https://experienceleague.adobe.com/docs/commerce-operations/tools/site-wide-analysis-tool/recommendations.html)

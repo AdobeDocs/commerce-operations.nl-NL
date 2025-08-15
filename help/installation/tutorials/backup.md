@@ -36,7 +36,7 @@ bin/magento config:set system/backup/functionality_enabled 1
 >[!WARNING]
 >
 >**Bericht van de Verdringing:**
->>Back-upfunctionaliteit is vanaf 2.1.16, 2.2.7 en 2.3.0 verouderd. We raden u aan aanvullende back-uptechnologieën en binaire back-uptools (zoals Percona XtraBackup) te onderzoeken.
+>&#x200B;>Back-upfunctionaliteit is vanaf 2.1.16, 2.2.7 en 2.3.0 verouderd. We raden u aan aanvullende back-uptechnologieën en binaire back-uptools (zoals Percona XtraBackup) te onderzoeken.
 
 ## Limiet voor geopende bestanden instellen
 

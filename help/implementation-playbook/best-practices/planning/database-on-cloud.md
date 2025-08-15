@@ -76,7 +76,7 @@ Om over alternatieven te leren om douanetriggers te gebruiken, zie [ trekkers My
 
 ## Upgrade [!DNL ECE-Tools] naar versie 2002.0.21 of hoger {#ece-tools-version}
 
-Om potentiële problemen met kroonsloten te vermijden, bevorder ECE-Hulpmiddelen aan versie 2002.0.21 of hoger. Voor instructies, zie [ versie `ece-tools` van de Update 0} {in onze ontwikkelaarsdocumentatie.](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/dev-tools/ece-tools/update-package)
+Om potentiële problemen met kroonsloten te vermijden, bevorder ECE-Hulpmiddelen aan versie 2002.0.21 of hoger. Voor instructies, zie [ versie `ece-tools` van de Update 0&rbrace; &lbrace;in onze ontwikkelaarsdocumentatie.](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/dev-tools/ece-tools/update-package)
 
 ## Veilig overschakelen op indexmodus
 

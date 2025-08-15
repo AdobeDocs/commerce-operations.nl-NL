@@ -1,6 +1,6 @@
 ---
-title: 'ACSD-51857: Trage baan van ` aggregate_sales_report_bestsellers_data'' beïnvloedt prestaties'
-description: Pas ACSD-51857 flard toe om de kwestie van Adobe Commerce te bevestigen waar de langzame bouwbaan ` aggregate_sales_report_bestsellers_data ` grote ` verkoop_order ` en ` verkoop_order_item' gegevensbestandlijsten beïnvloedt.
+title: 'ACSD-51857: Trage baan van &grave; aggregate_sales_report_bestsellers_data'' beïnvloedt prestaties'
+description: Pas ACSD-51857 flard toe om de kwestie van Adobe Commerce te bevestigen waar de langzame bouwbaan &grave; aggregate_sales_report_bestsellers_data &grave; grote &grave; verkoop_order &grave; en &grave; verkoop_order_item' gegevensbestandlijsten beïnvloedt.
 exl-id: 48e9852d-2cf6-411c-adf6-f91ac7743338
 type: Troubleshooting
 source-git-commit: 7fdb02a6d89d50ea593c5fd99d78101f89198424

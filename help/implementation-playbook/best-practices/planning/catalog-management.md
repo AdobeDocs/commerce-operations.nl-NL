@@ -261,4 +261,4 @@ Als u meer dan het aanbevolen maximumaantal regels of coupons voor de kartonprij
 - Hogere responstijd wanneer producten aan het winkelwagentje worden toegevoegd.
 - Meer tijd om de miniaturen te laden en weer te geven.
 - Meer tijd om de winkelwagenpagina weer te geven.
-- Verhoogde tijd om het **1} blok van Totalen {op de pagina van de Controle terug te geven.**
+- Verhoogde tijd om het **1&rbrace; blok van Totalen &lbrace;op de pagina van de Controle terug te geven.**

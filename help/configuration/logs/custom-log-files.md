@@ -117,7 +117,7 @@ In dit voorbeeld wordt getoond hoe u een aangepaste logboekafhandelingsklasse ku
    }
    ```
 
-1. Bepaal de manager voor deze klasse als a [ virtueel type ](https://developer.adobe.com/commerce/php/development/build/dependency-injection-file/#virtual-types) in het 2} dossier van de module {.`di.xml`
+1. Bepaal de manager voor deze klasse als a [ virtueel type ](https://developer.adobe.com/commerce/php/development/build/dependency-injection-file/#virtual-types) in het 2&rbrace; dossier van de module &lbrace;.`di.xml`
 
    ```xml
    <virtualType name="MyCustomLogger" type="Magento\Framework\Logger\Monolog">

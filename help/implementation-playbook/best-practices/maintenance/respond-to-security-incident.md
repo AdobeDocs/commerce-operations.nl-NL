@@ -63,7 +63,7 @@ In het ongelukkige geval van een plaatscompromis, zijn er enkele belangrijke aan
 
 De eerste stap van de analyse van incidenten is om zoveel mogelijk feiten te verzamelen, zo snel mogelijk. Het verzamelen van informatie over het incident kan helpen de potentiële oorzaak van het incident te bepalen. Adobe Commerce biedt de onderstaande tools voor hulp bij uw analyse van incidenten.
 
-- [ Logboeken van de Actie Admin van de Controle {](https://experienceleague.adobe.com/docs/commerce-admin/systems/action-logs/action-log-report.html).
+- [ Logboeken van de Actie Admin van de Controle &lbrace;](https://experienceleague.adobe.com/docs/commerce-admin/systems/action-logs/action-log-report.html).
 
   In het rapport Handelingenlogboeken wordt een gedetailleerd overzicht weergegeven van alle beheeracties die zijn ingeschakeld voor loggen. Elke record heeft een tijdstempel en registreert het IP-adres en de naam van de gebruiker. Het logboekgegeven omvat admin gebruikersgegevens en verwante veranderingen die tijdens de actie werden aangebracht.
 

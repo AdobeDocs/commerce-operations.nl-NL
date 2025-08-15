@@ -1,6 +1,6 @@
 ---
 title: 'ACSD-44938: VAT_ID kan niet in  [!DNL GraphQL]  verzoek voor gastgebruiker worden toegepast'
-description: ACSD-44938 flardfixes de kwestie waar ` VAT_ID ` niet in a  [!DNL GraphQL]  verzoek voor een gastgebruiker kan worden toegepast. Deze patch is beschikbaar wanneer [Quality Patches Tool (QPT)] (https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches) 1.1.18 is geïnstalleerd. De patch-id is ACSD-44938. Het probleem wordt volgens de planning opgelost in Adobe Commerce 2.4.6.
+description: ACSD-44938 flardfixes de kwestie waar &grave; VAT_ID &grave; niet in a  [!DNL GraphQL]  verzoek voor een gastgebruiker kan worden toegepast. Deze patch is beschikbaar wanneer [Quality Patches Tool (QPT)] (https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches) 1.1.18 is geïnstalleerd. De patch-id is ACSD-44938. Het probleem wordt volgens de planning opgelost in Adobe Commerce 2.4.6.
 feature: Admin Workspace, GraphQL
 role: Admin
 exl-id: 62d36c27-545a-4c32-be69-a92e4b3ca2ca
@@ -36,7 +36,7 @@ De ACSD-44938-patch verhelpt het probleem dat `VAT_ID` niet kan worden toegepast
 
 <u> Stappen om </u> te reproduceren:
 
-1. Volg de stappen die in het [[!DNL GraphQL]  worden vermeld} leerprogramma ](https://developer.adobe.com/commerce/webapi/graphql/tutorials/checkout/) in onze ontwikkelaarsdocumentatie worden vermeld om een gastkarretje tot stand te brengen.
+1. Volg de stappen die in het [[!DNL GraphQL]  worden vermeld&rbrace; leerprogramma ](https://developer.adobe.com/commerce/webapi/graphql/tutorials/checkout/) in onze ontwikkelaarsdocumentatie worden vermeld om een gastkarretje tot stand te brengen.
 1. Probeer `VAT_ID` voor de gastgebruiker toe te passen met [!DNL GraphQL] .
 
 <u> Verwachte resultaten </u>:

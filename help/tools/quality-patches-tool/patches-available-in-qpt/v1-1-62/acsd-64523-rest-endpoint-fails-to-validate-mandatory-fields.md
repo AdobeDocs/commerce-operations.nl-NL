@@ -1,6 +1,6 @@
 ---
 title: 'ACSD-64523: REST Endpoint kan verplichte velden niet valideren'
-description: Pas de ACSD-64523-patch toe om het probleem op te lossen waarbij het REST-eindpunt `[V1/import/csv]' de verplichte velden niet valideert, zodat producten kunnen worden gemaakt zonder de verplichte velden in te vullen.
+description: Pas de ACSD-64523-patch toe om het probleem op te lossen waarbij het REST-eindpunt &grave;[V1/import/csv]' de verplichte velden niet valideert, zodat producten kunnen worden gemaakt zonder de verplichte velden in te vullen.
 feature: REST, Products, Admin Workspace
 role: Admin, Developer
 exl-id: 21aecd6d-06e4-4f2b-904a-27487ba74968

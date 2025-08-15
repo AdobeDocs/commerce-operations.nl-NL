@@ -36,7 +36,7 @@ Standaardwaarden worden niet ingesteld voor de datum- en tijdvelden wanneer u pr
 
 <u> Stappen om </u> te reproduceren:
 
-1. Maak een **[!UICONTROL Product]** -kenmerk, stel de standaardwaarde ervan in op `12/31/2020` en stel **[!UICONTROL Catalog Input Type for Store Owner]** in op ***[!UICONTROL Date]*** of *** [!UICONTROL Date and Time] ***.
+1. Maak een **[!UICONTROL Product]** -kenmerk, stel de standaardwaarde ervan in op `12/31/2020` en stel **[!UICONTROL Catalog Input Type for Store Owner]** in op ***[!UICONTROL Date]*** of *** [!UICONTROL Date and Time] &#x200B;***.
 1. Creeer een ander teksttypeattribuut en plaats de standaardwaarde aan ***testwaarde***.
 1. Maak een nieuw product met een REST API POST request to `/rest/all/V1/products/`.
 
