@@ -4,9 +4,9 @@ description: Deze subsectie biedt een gedetailleerde beschrijving van de problem
 feature: Tools and External Services
 role: Admin, Developer
 exl-id: 74094036-cb1b-419f-b287-ca24d351a448
-source-git-commit: 47c8541c228f9ed3795c93b67b8ff85cbd4bd555
+source-git-commit: 937acc659427b788b8af778f5ea826eacccdc70e
 workflow-type: tm+mt
-source-wordcount: '285'
+source-wordcount: '284'
 ht-degree: 0%
 
 ---
@@ -29,6 +29,6 @@ QPT v1.1.68 omvat de volgende flarden:
 1. **ACSD-66889**: Fout tijdens inventarisherdex in CLI.
 1. **ACSD-66963**: De mutatie EstimateTotals keert ongeldig voor kortingen terug wanneer een kortingscode op een kar met virtuele producten wordt toegepast.
 1. **ACSD-66965**: De optie van de druk op de pagina van de Lijst van de Vereiste veroorzaakt een fout.
-1. **ACSD-67039**: De verslagen van de klant werden niet bewaard wegens bevestiging van het rp_token systeemattribuut.
+1. **ACSD-67039**: De verslagen van de klant werden niet bewaard toe te schrijven aan bevestiging van het `rp_token` systeemattribuut.
 
 Gebruik het menu links om naar een specifieke patchpagina te navigeren.
