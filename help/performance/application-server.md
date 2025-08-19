@@ -2,9 +2,9 @@
 title: GraphQL Application Server
 description: Volg deze instructies om de GraphQL Application Server in te schakelen bij uw Adobe Commerce-implementatie.
 exl-id: 9b223d92-0040-4196-893b-2cf52245ec33
-source-git-commit: 8427460cd11169ffe7dd2d4ba0cc1fdaea513702
+source-git-commit: ed46f48472a51db17e1c3ade9bfe3ab134098548
 workflow-type: tm+mt
-source-wordcount: '2184'
+source-wordcount: '2212'
 ht-degree: 0%
 
 ---
@@ -14,7 +14,7 @@ ht-degree: 0%
 
 Met de Commerce GraphQL Application Server kan Adobe Commerce de status onderhouden van Commerce GraphQL API-aanvragen. De Server van de Toepassing van GraphQL, die op de uitbreiding van de Steekproef wordt voortgebouwd, werkt als proces met arbeidersdraden die verzoekverwerking behandelen. GraphQL Application Server bewaart de status van een bootstrapped toepassing bij GraphQL API-aanvragen en verbetert de verwerking van aanvragen en de algehele productprestaties. API-aanvragen worden aanzienlijk efficiënter.
 
-GraphQL Application Server is alleen beschikbaar voor Adobe Commerce. Deze is niet beschikbaar voor Magento Open Source. Voor de Pro projecten van de Wolk, moet u [ een 1&rbrace; kaartje van de Steun van Adobe Commerce voorleggen om de Server van de Toepassing van GraphQL toe te laten.](https://experienceleague.adobe.com/nl/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide)
+GraphQL Application Server is alleen beschikbaar voor Adobe Commerce. Deze is niet beschikbaar voor Magento Open Source. Voor de Pro projecten van de Wolk, moet u [ een 1} kaartje van de Steun van Adobe Commerce voorleggen om de Server van de Toepassing van GraphQL toe te laten.](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide)
 
 >[!NOTE]
 >
@@ -30,7 +30,7 @@ Het overbrengen van aanvraagbehandelingslogica aan een toepassing-vlakke gebeurt
 
 ## Voordelen
 
-Met GraphQL Application Server kan Adobe Commerce de status ondersteunen tussen opeenvolgende Commerce GraphQL API-aanvragen. Door de status van toepassingen te delen tussen aanvragen wordt de efficiëntie van API-aanvragen verbeterd doordat de verwerkingsoverhead tot een minimum wordt beperkt en de aanvraagverwerking wordt geoptimaliseerd. Als gevolg hiervan kan de responstijd voor GraphQL-verzoeken met maximaal 30% worden verminderd.
+Met GraphQL Application Server kan Adobe Commerce de status ondersteunen tussen opeenvolgende Commerce GraphQL API-aanvragen. Door de status van toepassingen te delen tussen aanvragen wordt de efficiëntie van API-aanvragen verbeterd doordat de verwerkingsoverhead tot een minimum wordt beperkt en de aanvraagverwerking wordt geoptimaliseerd. Als gevolg hiervan kunt u de responstijd van GraphQL-verzoeken met maximaal 30% verminderen.
 
 ## Systeemvereisten
 
@@ -38,8 +38,22 @@ Voor het uitvoeren van GraphQL Application Server is het volgende vereist:
 
 * Commerce versie 2.4.7+
 * PHP 8.2 of hoger
-* PHP-extensie v5+ geïnstalleerd
 * Adequate RAM en CPU op basis van de verwachte belasting
+* PHP-extensie v5+ (zie projectspecifieke vereisten hieronder)
+
+### Cloud-projecten
+
+Adobe Commerce on cloud Infrastructure-projecten hebben standaard de extensie SWOLE. U kunt [ ](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/configure/app/php-settings#enable-extensions) het in het `runtime` bezit van het `.magento.app.yaml` dossier toelaten. Bijvoorbeeld:
+
+```yaml
+runtime:
+    extensions:
+        - swoole
+```
+
+### Projecten ter plaatse
+
+U moet manueel [ installeren en ](#install-and-configure-swoole) vormen de uitbreiding van PHP van de Steek voor op-gebouwprojecten.
 
 ## Inschakelen en implementeren op cloudinfrastructuur
 
@@ -54,7 +68,7 @@ Met de module `ApplicationServer` (`Magento/ApplicationServer/` ) schakelt u Gra
 Nadat de eigenschap van de Server van de Toepassing op uw Proproject wordt toegelaten, voltooi de volgende stappen alvorens de Server van de Toepassing van GraphQL op te stellen:
 
 1. Stel Adobe Commerce op wolkeninfrastructuur op gebruikend het wolkenmalplaatje van [ 2.4.7-appserver tak ](https://github.com/magento/magento-cloud/tree/2.4.7-appserver).
-1. Zorg ervoor dat al uw aanpassingen en uitbreidingen van Commerce [&#128279;](https://developer.adobe.com/commerce/php/development/components/app-server/) met de Server van de Toepassing van GraphQL compatibel zijn.
+1. Zorg ervoor dat al uw aanpassingen en uitbreidingen van Commerce [ ](https://developer.adobe.com/commerce/php/development/components/app-server/) met de Server van de Toepassing van GraphQL compatibel zijn.
 1. Clone your Commerce Cloud project.
 1. Pas indien nodig de instellingen in het bestand &#39;application-server/nginx.conf.sample&#39; aan.
 1. Maak een volledige commentaarregel van de actieve sectie &#39;Web&#39; in het `project_root/.magento.app.yaml` -bestand.
@@ -259,7 +273,7 @@ Voltooi de volgende stappen alvorens de Server van de Toepassing van GraphQL op 
 
 >[!NOTE]
 >
->Zorg ervoor dat alle aangepaste instellingen in het basisbestand van `.magento.app.yaml` op de juiste wijze naar het `application-server/.magento/.magento.app.yaml` -bestand worden gemigreerd. Nadat het `application-server/.magento/.magento.app.yaml` dossier aan uw project wordt toegevoegd, zou u het naast het wortel `.magento.app.yaml` dossier moeten handhaven. Bijvoorbeeld, als u de dienst RabbitMQ [ moet vormen of ](https://experienceleague.adobe.com/nl/docs/commerce-cloud-service/user-guide/configure/service/rabbitmq) Webeigenschappen [ beheert u de zelfde configuratie aan ](https://experienceleague.adobe.com/nl/docs/commerce-cloud-service/user-guide/configure/app/properties/web-property) eveneens zou moeten toevoegen.`application-server/.magento/.magento.app.yaml`
+>Zorg ervoor dat alle aangepaste instellingen in het basisbestand van `.magento.app.yaml` op de juiste wijze naar het `application-server/.magento/.magento.app.yaml` -bestand worden gemigreerd. Nadat het `application-server/.magento/.magento.app.yaml` dossier aan uw project wordt toegevoegd, zou u het naast het wortel `.magento.app.yaml` dossier moeten handhaven. Bijvoorbeeld, als u de dienst RabbitMQ [ moet vormen of ](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/configure/service/rabbitmq) Webeigenschappen [ beheert u de zelfde configuratie aan ](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/configure/app/properties/web-property) eveneens zou moeten toevoegen.`application-server/.magento/.magento.app.yaml`
 
 ### Inschakelen voor cloudprojecten verifiëren
 
@@ -414,7 +428,7 @@ U kunt onder andere controleren of GraphQL Application Server wordt uitgevoerd:
 
 ### Bevestig dat GraphQL-verzoeken worden verwerkt
 
-GraphQL Application Server voegt de header `X-Backend` response met de waarde `graphql_server` toe aan elke aanvraag die wordt verwerkt. Om te controleren of de Server van de Toepassing van GraphQL een verzoek heeft behandeld, controleer deze reactiekop.
+GraphQL Application Server voegt de header `X-Backend` response met de waarde `graphql_server` toe aan elke aanvraag die wordt verwerkt. Om te controleren of de GraphQL Application Server een verzoek heeft afgehandeld, controleert u op deze antwoordkoptekst.
 
 ### Compatibiliteit met extensies en aanpassingen bevestigen
 
@@ -473,7 +487,7 @@ Deze test is ontworpen om statuswijzigingen in serviceobjecten te detecteren die
 
 #### GraphQlStateTest-fouten en mogelijke herstelmogelijkheden
 
-* **kan niet toevoegen, overslaan, of filter een lijst**. Als er een fout optreedt bij het toevoegen, overslaan of filteren van een lijst, kunt u overwegen of u de klasse op een achterwaarts compatibele manier kunt vernieuwen om de fabrieken van serviceklassen met een veranderbare status te gebruiken.
+* **kan niet toevoegen, overslaan, of filter een lijst**. Als u deze fout krijgt, probeer om uw klasse te weerspiegelen om fabrieken voor de dienstklassen met veranderbare staat te gebruiken.
 
 * **Klasse toont een veranderbare staat**. Als de klasse zelf een veranderbare staat vertoont, probeer om uw code te herschrijven om deze staat te omzeilen. Als de veranderbare toestand om prestatieredenen is vereist, implementeert u `ResetAfterRequestInterface` en gebruikt u `_resetState()` om de oorspronkelijke geconstrueerde toestand van het object te herstellen.
 
@@ -495,7 +509,7 @@ Voer `GraphQlStateTest` uit door `vendor/bin/phpunit -c $(pwd)/dev/tests/integra
 
 ### Functionele tests
 
-tijdens de implementatie van de GraphQL Application Server moeten extensieontwikkelaars functionele WebAPI-tests en eventuele aangepaste geautomatiseerde of handmatige functionele tests voor GraphQL uitvoeren. Deze functionele tests helpen ontwikkelaars potentiële fouten of compatibiliteitsproblemen te identificeren.
+Tijdens de implementatie van de GraphQL Application Server moeten extensieontwikkelaars functionele WebAPI-tests en eventuele aangepaste geautomatiseerde of handmatige functionele tests voor GraphQL uitvoeren. Deze functionele tests helpen ontwikkelaars potentiële fouten of compatibiliteitsproblemen te identificeren.
 
 #### Statusmonitormodus
 
