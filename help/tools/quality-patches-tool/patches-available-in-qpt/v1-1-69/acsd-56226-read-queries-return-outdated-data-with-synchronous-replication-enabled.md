@@ -1,6 +1,6 @@
 ---
-title: 'ACSD-56226: De vragen van de LEZING keren verouderde gegevens met toegelaten ` synchrone_replication terug'
-description: Pas ACSD-56226 flard toe om de kwestie van Adobe Commerce te bevestigen waar de vragen van de LEZING verouderde gegevens terugkeren wanneer de markering ` synchronous_replication ` voor slave verbinding op Cloud wordt toegelaten.
+title: 'ACSD-56226: De vragen van de LEZING keren verouderde gegevens met toegelaten &grave; synchrone_replication terug'
+description: Pas ACSD-56226 flard toe om de kwestie van Adobe Commerce te bevestigen waar de vragen van de LEZING verouderde gegevens terugkeren wanneer de markering &grave; synchronous_replication &grave; voor slave verbinding op Cloud wordt toegelaten.
 feature: System
 role: Admin, Developer
 type: Troubleshooting
