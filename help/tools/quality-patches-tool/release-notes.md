@@ -3,9 +3,9 @@ title: Opmerkingen bij de release
 description: Meer informatie over de patches die beschikbaar zijn voor Adobe Commerce en de problemen die ze oplossen.
 exl-id: 22262555-f5ea-49ad-98ad-ea8428ef66d5
 type: Troubleshooting
-source-git-commit: 00153baf1c4a52d17b750db35a678b1950e00ed1
+source-git-commit: 4adac1df0382cd0ae0833599011aeb664a91ceb6
 workflow-type: tm+mt
-source-wordcount: '27482'
+source-wordcount: '28046'
 ht-degree: 0%
 
 ---
@@ -16,11 +16,33 @@ ht-degree: 0%
 
 >[!INFO]
 >
->Zie [ flarden ](https://experienceleague.adobe.com/docs/commerce-operations/tools/quality-patches-tool/usage.html?lang=nl-NL#apply-individual-patches) voor instructies op het toepassen van flarden op uw projecten van Adobe Commerce toepassen. Zie [[!DNL Quality Patches Tool]: Onderzoek naar flarden ](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html?lang=nl-NL) in de Gids van de Update van de Software om een volledige lijst van vrijgegeven flarden te herzien.
+>Zie [ flarden ](https://experienceleague.adobe.com/docs/commerce-operations/tools/quality-patches-tool/usage.html#apply-individual-patches) voor instructies op het toepassen van flarden op uw projecten van Adobe Commerce toepassen. Zie [[!DNL Quality Patches Tool]: Onderzoek naar flarden ](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html) in de Gids van de Update van de Software om een volledige lijst van vrijgegeven flarden te herzien.
 
 >[!INFO]
 >
 >Voor informatie over [!DNL quality patches] die door de Gemeenschap voor Magento Open Source wordt gecreeerd, zie de [ versienota&#39;s ](https://github.com/magento/quality-patches/blob/master/community-release-notes.md).
+
+## v1.1.69 {#v1-1-69}
+
+* **AC-15223** (voor Adobe Commerce en Magento Open Source >=2.4.8 &lt;2.4.9) - lost een kwestie in 2.4.8 opslag op waar, na omschakelingsopslag, de pagina van geheim voorgeheugen wordt gediend en op de geselecteerde opslag niet wijst.
+* **ACP2E-3731** (voor Adobe Commerce en Magento Open Source >=2.4.4 &lt;2.4.9) - lost de kwestie op waar de productuitvoer met **[!UICONTROL Catalog, Search]** zicht verkeerd verslagen van andere archiefmeningen in multi-store milieu&#39;s omvat.
+* **ACP2E-3767** (voor Adobe Commerce en Magento Open Source >=2.4.4 &lt;2.4.9) - lost de kwestie op waar de laatste bundeloptie in een bundelproduct niet kan worden verwijderd.
+* **ACP2E-3964** (voor Adobe Commerce en Magento Open Source >=2.4.7 &lt;2.4.8) - Vaste de kwestie waar de kindproducten van configureerbare producten niet via REST API konden worden vermeld wanneer een video in de galerij werd geplaatst.
+* **ACP2E-3977** (voor Adobe Commerce >=2.4.4 &lt;2.4.9) - lost de kwestie op waar het **[!UICONTROL Cap Reward Points Balance At]** gebied niet leeg kan zijn wanneer [!UICONTROL Rewards Points Balance Redemption Threshold] wordt geplaatst, veroorzakend een bevestigingsfout.
+* **ACP2E-4050** (voor Adobe Commerce en Magento Open Source >=2.4.5 &lt;2.4.8) - lost de kwestie op waar de regels van de kartprijs niet correct voor multi-verschepende producten van toepassing zijn wanneer het bundelproduct wordt gebruikt en sub-select voorwaarden met vrije verzending worden gebruikt wordt toegelaten.
+* **ACSD-56226** (voor Adobe Commerce >=2.4.6 &lt;2.4.7) - lost de kwestie op waar de vragen van de LEZING bij de slave knoop verouderde gegevens terugkeren wanneer de `synchronous_replication` vlag wordt toegelaten.
+* **ACSD-57477** (voor Adobe Commerce en Magento Open Source >=2.4.6 &lt;2.4.7) - lost de kwestie op waar de verwerking van de verkoopregel langzame prestaties op kart-verwante verzoeken veroorzaakt.
+* **ACSD-58108** (voor Adobe Commerce en Magento Open Source >=2.4.6 &lt;2.4.8) - lost de kwestie op waar de ontbrekende het aansluiten van lijstnaam in de originele het halen lijst fouten met de uitbreiding SQL van de douanemodule in het ordennet veroorzaakte.
+* **ACSD-65983** (voor Adobe Commerce >=2.4.6-p10 &lt;2.4.9) - lost de kwestie op waar het aanpassen van een gebundeld productcitaat in Admin backend een fout veroorzaakt.
+* **ACSD-66149** (voor Adobe Commerce en Magento Open Source >=2.4.4 &lt;2.4.8) - lost de kwestie op waar de manager IPN a *500* fout voor niet gestaafde of onbekende types IPN terugkeert.
+* **ACSD-66153** (voor Adobe Commerce en Magento Open Source >=2.4.4 &lt;2.4.9) - lost de kwestie op waar een pagina a *500* fout wegens een onjuiste lay-outstructuur terugkeert die in het voorgeheugen wordt opgeslagen.
+* **ACSD-66302** (voor Adobe Commerce en Magento Open Source >=2.4.8 &lt;2.4.9) - lost de kwestie op waar de punten van wenslijsten verkeerd door opslagidentiteitskaart in plaats van door website worden gefiltreerd.
+* **ACSD-66311** (voor Adobe Commerce >=2.4.6-p9 &lt;2.4.9) - lost de kwestie op waar het net van Bedrijven langzaam voor admin gebruikers met beperkte websitetoegang laadt.
+* **ACSD-66404** (voor Adobe Commerce en Magento Open Source >=2.4.4 &lt;2.4.9) - lost de kwestie op waar de kroonbaan er niet in slaagt veranderingslijsten te ontruimen, veroorzakend [!DNL Galera Cluster] neerstortingen wanneer het behandelen van grote hoeveelheden gegevens.
+* **ACSD-66952** (voor Adobe Commerce >=2.4.4 &lt;2.4.9) - lost de kwestie op waar het geheime voorgeheugen op elk PLP of bezoek van het Kart wordt ontruimd, veroorzakend prestatiesoverheadkosten wanneer een doelregel wordt geplaatst.
+* **ACSD-67264** (voor Adobe Commerce en Magento Open Source >=2.4.4 &lt;2.4.8) - lost de kwestie op waar de bundel en downloadbare lay-outs van de productpagina op apparaten inconsistent zijn.
+* **ACSD-67347** (voor Adobe Commerce en Magento Open Source >=2.4.5-p11 &lt;2.4.6) - lost de kwestie op waar de orde met *ontbreekt kan een slot* fout verwerven wanneer de coupons met speciale karakters worden gebruikt en de dossiervergrendeling wordt toegelaten.
+* Vervangen flarden: **ACP2E-3841**
 
 ## v1.1.68 {#v1-1-68}
 
@@ -136,7 +158,7 @@ ht-degree: 0%
 * **ACSD-64111** (voor Adobe Commerce en Magento Open Source >=2.4.4 &lt;2.4.8) - lost de kwestie op waar een fout voorkomt wanneer het plaatsen van genestelde voorwaarden voor een component van het Product in [!DNL Page Builder].
 * **ACSD-64137** (voor Adobe Commerce en Magento Open Source >=2.4.4 &lt;2.4.8) - lost het probleem op waar het zoeken naar ophaalplaatsen door postcode niet behoorlijk voor Nederlandse localisatie werkt.
 * **ACSD-64149** (voor Adobe Commerce en Magento Open Source >=2.4.4 &lt;2.4.8) - lost de kwestie op waar een klantensegment met een voorwaarde van de datumwaaier kan worden bewaard wanneer slechts één van de data wordt uitgegeven.
-* Versies bijgewerkt: **mDVA-12304**, **ACSD-45049**, **mDVA-43824**, **ACSD-46192**, **ACSD-50368**, **ACSD-5213**, **ACSD-47657**, **ACSD-51819**, **ACSD-54966-V2**, **&#x200B;**&#x200B;ACSD-55628, **ACSD-45049**, **ACSD-63242**
+* Versies bijgewerkt: **mDVA-12304**, **ACSD-45049**, **mDVA-43824**, **ACSD-46192**, **ACSD-50368**, **ACSD-5213**, **ACSD-47657**, **ACSD-51819**, **ACSD-54966-V2**, **** ACSD-55628, **ACSD-45049**, **ACSD-63242**
 
 ## v1.1.59 {#v1-1-59}
 
@@ -175,7 +197,7 @@ ht-degree: 0%
 * **ACSD-58325** (voor Adobe Commerce >=2.4.6 &lt;2.4.7) - lost de kwestie op waar de **[!UICONTROL Import]** knoop zelfs na een bevestigingsfout beschikbaar is.
 * **ACSD-59083** (voor Adobe Commerce >=2.4.4 &lt;2.5.0) - lost de kwestie op waar sommige verrichtingen van de gegevensbestandupdate in de lijst van de a *Basis of mening niet* fout als de [!DNL mview] update tezelfdertijd loopt.
 * **ACSD-61622** (voor Adobe Commerce en Magento Open Source >=2.4.6-p1 &lt;2.4.7) - lost de kwestie op waar [!DNL FedEx] rekening-specifieke tarieven in de reactie ontbreken.
-* **ACSD-61895** (voor Adobe Commerce >=2.4.4 &lt;2.5.0) - lost de kwestie op waar de categorieën [!DNL GraphQL] vraagwinst categorieën met **&#x200B;**&#x200B;toestemming toestaan zelfs als de wortelcategorie niet **&#x200B;**&#x200B;toestemming toestaat.
+* **ACSD-61895** (voor Adobe Commerce >=2.4.4 &lt;2.5.0) - lost de kwestie op waar de categorieën [!DNL GraphQL] vraagwinst categorieën met **** toestemming toestaan zelfs als de wortelcategorie niet **** toestemming toestaat.
 * **ACSD-62212** (voor Adobe Commerce en Magento Open Source >=2.4.4 &lt;2.5.0) - lost de kwestie op waar de **vergeten inhoud van het Wachtwoord** e-mail niet aan de taal van de opslagmening wordt vertaald.
 * **ACSD-62481** (voor Adobe Commerce en Magento Open Source >=2.4.4 &lt;2.5.0) - lost de kwestie op waar het het winkelwagentje van de klant leeg wordt zelfs als **[!UICONTROL Persistence]** wordt toegelaten.
 * **ACSD-62629** (voor Adobe Commerce en Magento Open Source >=2.4.7 &lt;2.5.0) - lost de kwestie op waar een productlijst die in **[!UICONTROL Widgets]** wordt gebruikt niet op de categorietoestand wijst.
@@ -645,7 +667,7 @@ ht-degree: 0%
 
 * **ACSD-48204** (voor Adobe Commerce en Magento Open Source >=2.3.7 &lt;2.4.3) - lost de kwestie op waar een regel van de catalogusprijs die op Ja/Geen attributen wordt gecreeerd niet het geselecteerde werkingsgebied overweegt.
 * **ACSD-47704** (voor Adobe Commerce en Magento Open Source >=2.3.7 &lt;2.4.7) - lost de kwestie op waar het gebundelde product de prijs van in voorraadproducten slechts toont.
-* **ACSD-49370** (voor Adobe Commerce en Magento Open Source >=2.3.7 &lt;2.4.7) - lost de kwestie op waar het *3&rbrace; productattribuut van de Tijd van de Datum a* FilterMatchTypeInput *type in het schema van GraphQL heeft.*
+* **ACSD-49370** (voor Adobe Commerce en Magento Open Source >=2.3.7 &lt;2.4.7) - lost de kwestie op waar het *3} productattribuut van de Tijd van de Datum a* FilterMatchTypeInput *type in het schema van GraphQL heeft.*
 * **ACSD-48807** (voor Adobe Commerce en Magento Open Source >=2.4.1 &lt;2.4.7) - lost de kwestie op waar de Revisies van het Product van de klant niet door storeview via GraphQL worden gefiltreerd.
 * **ACSD-49433** (voor Adobe Commerce en Magento Open Source >=2.4.3 &lt;2.4.7) - lost de kwestie op waar het standaardbedrag als subtotaal in het karretje voor cadeaukaart met een open bedrag wordt getoond.
 * **ACSD-48866** (voor Adobe Commerce en Magento Open Source >=2.3.7 &lt;2.4.7) - lost de kwestie op waar een fout voorkomt wanneer het verzoeken van RSS voer voor categorieën.
