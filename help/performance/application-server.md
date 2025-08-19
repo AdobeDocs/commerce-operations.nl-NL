@@ -14,7 +14,7 @@ ht-degree: 0%
 
 Met de Commerce GraphQL Application Server kan Adobe Commerce de status onderhouden van Commerce GraphQL API-aanvragen. De Server van de Toepassing van GraphQL, die op de uitbreiding van de Steekproef wordt voortgebouwd, werkt als proces met arbeidersdraden die verzoekverwerking behandelen. GraphQL Application Server bewaart de status van een bootstrapped toepassing bij GraphQL API-aanvragen en verbetert de verwerking van aanvragen en de algehele productprestaties. API-aanvragen worden aanzienlijk efficiënter.
 
-GraphQL Application Server is alleen beschikbaar voor Adobe Commerce. Deze is niet beschikbaar voor Magento Open Source. Voor de Pro projecten van de Wolk, moet u [ een 1&rbrace; kaartje van de Steun van Adobe Commerce voorleggen om de Server van de Toepassing van GraphQL toe te laten.](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide)
+GraphQL Application Server is alleen beschikbaar voor Adobe Commerce. Deze is niet beschikbaar voor Magento Open Source. Voor de Pro projecten van de Wolk, moet u [ een 1&rbrace; kaartje van de Steun van Adobe Commerce voorleggen om de Server van de Toepassing van GraphQL toe te laten.](https://experienceleague.adobe.com/nl/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide)
 
 >[!NOTE]
 >
@@ -43,7 +43,7 @@ Voor het uitvoeren van GraphQL Application Server is het volgende vereist:
 
 ### Cloud-projecten
 
-Adobe Commerce on cloud Infrastructure-projecten hebben standaard de extensie SWOLE. U kunt [&#128279;](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/configure/app/php-settings#enable-extensions) het in het `runtime` bezit van het `.magento.app.yaml` dossier toelaten. Bijvoorbeeld:
+Adobe Commerce on cloud Infrastructure-projecten hebben standaard de extensie SWOLE. U kunt [&#128279;](https://experienceleague.adobe.com/nl/docs/commerce-on-cloud/user-guide/configure/app/php-settings#enable-extensions) het in het `runtime` bezit van het `.magento.app.yaml` dossier toelaten. Bijvoorbeeld:
 
 ```yaml
 runtime:
@@ -273,7 +273,7 @@ Voltooi de volgende stappen alvorens de Server van de Toepassing van GraphQL op 
 
 >[!NOTE]
 >
->Zorg ervoor dat alle aangepaste instellingen in het basisbestand van `.magento.app.yaml` op de juiste wijze naar het `application-server/.magento/.magento.app.yaml` -bestand worden gemigreerd. Nadat het `application-server/.magento/.magento.app.yaml` dossier aan uw project wordt toegevoegd, zou u het naast het wortel `.magento.app.yaml` dossier moeten handhaven. Bijvoorbeeld, als u de dienst RabbitMQ [ moet vormen of ](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/configure/service/rabbitmq) Webeigenschappen [ beheert u de zelfde configuratie aan ](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/configure/app/properties/web-property) eveneens zou moeten toevoegen.`application-server/.magento/.magento.app.yaml`
+>Zorg ervoor dat alle aangepaste instellingen in het basisbestand van `.magento.app.yaml` op de juiste wijze naar het `application-server/.magento/.magento.app.yaml` -bestand worden gemigreerd. Nadat het `application-server/.magento/.magento.app.yaml` dossier aan uw project wordt toegevoegd, zou u het naast het wortel `.magento.app.yaml` dossier moeten handhaven. Bijvoorbeeld, als u de dienst RabbitMQ [ moet vormen of ](https://experienceleague.adobe.com/nl/docs/commerce-on-cloud/user-guide/configure/service/rabbitmq) Webeigenschappen [ beheert u de zelfde configuratie aan ](https://experienceleague.adobe.com/nl/docs/commerce-on-cloud/user-guide/configure/app/properties/web-property) eveneens zou moeten toevoegen.`application-server/.magento/.magento.app.yaml`
 
 ### Inschakelen voor cloudprojecten verifiëren
 
