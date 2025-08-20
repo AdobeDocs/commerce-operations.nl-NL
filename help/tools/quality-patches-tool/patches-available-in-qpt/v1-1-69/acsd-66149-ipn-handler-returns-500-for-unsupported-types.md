@@ -3,17 +3,18 @@ title: 'ACSD-66149: IPN-handler retourneert *500* voor niet-ondersteunde typen'
 description: Pas ACSD-66149 flard toe om de kwestie van Adobe Commerce te bevestigen waar de manager IPN niet gesteunde of onbekende types van IPN negeert, die de kwestie veroorzaken niet worden geregistreerd, het proces onderbreken, en ook een 500 fout terugkeren.
 feature: Payments
 role: Admin, Developer
-source-git-commit: 81e8bf62c026023f71d52c219357bd7911275f69
+type: Troubleshooting
+exl-id: d4794e24-1b6b-4bb5-b54c-9a248fa5f3bd
+source-git-commit: cf0f5992c7b2a51b270a4a1a81fd50305a92759c
 workflow-type: tm+mt
-source-wordcount: '365'
+source-wordcount: '364'
 ht-degree: 0%
 
 ---
 
-
 # ACSD-66149: De manager van IPN keert *500* voor niet gesteunde types terug
 
-Het ACSD-66149 flard lost het probleem op waar de manager IPN (het Onmiddellijke Bericht van de Betaling) a *500* fout voor niet gestaafde of onbekende types IPN terugkeert. Deze patch is beschikbaar wanneer [[!DNL Quality Patches Tool (QPT)]](/help/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches.md) 1.1.69 wordt geïnstalleerd. De patch-id is ACSD-66149. Dit probleem wordt volgens de planning opgelost in Adobe Commerce 2.4.9.
+De ACSD-66149-patch verhelpt het probleem waarbij de IPN-handler (Instant Payment Notification) een fout van 500 retourneert voor niet-ondersteunde of onbekende IPN-typen. Deze patch is beschikbaar wanneer [[!DNL Quality Patches Tool (QPT)]](/help/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches.md) 1.1.69 wordt geïnstalleerd. De patch-id is ACSD-66149. Dit probleem wordt volgens de planning opgelost in Adobe Commerce 2.4.9.
 
 ## Betrokken producten en versies
 
@@ -27,7 +28,7 @@ Het ACSD-66149 flard lost het probleem op waar de manager IPN (het Onmiddellijke
 
 >[!NOTE]
 >
->De patch kan van toepassing worden op andere versies met nieuwe [!DNL Quality Patches Tool] versies. Om te controleren of de patch compatibel is met uw Adobe Commerce-versie, werkt u het `magento/quality-patches` -pakket bij naar de meest recente versie en controleert u de compatibiliteit op de [[!DNL Quality Patches Tool] : zoek naar patches op de pagina ](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html?lang=nl-NL) . Gebruik de patch-id als een zoekwoord om de patch te zoeken.
+>De patch kan van toepassing worden op andere versies met nieuwe [!DNL Quality Patches Tool] versies. Om te controleren of de patch compatibel is met uw Adobe Commerce-versie, werkt u het `magento/quality-patches` -pakket bij naar de meest recente versie en controleert u de compatibiliteit op de [[!DNL Quality Patches Tool] : zoek naar patches op de pagina ](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html) . Gebruik de patch-id als een zoekwoord om de patch te zoeken.
 
 ## Probleem
 
@@ -35,7 +36,7 @@ De kwestie is de manager IPN keert a *500* fout voor niet gestaafde of onbekende
 
 <u> Stappen om </u> te reproduceren:
 
-1. Maak een aangepaste module die alle soorten onbekende IPN-typen uit PayPal emuleert.
+1. Maak een aangepaste module die alle soorten onbekende IPN-typen van PayPal emuleert.
 1. Maak ten minste één product.
 1. Configureer PayPal Express met uw eigen gegevens.
 1. Plaats een bestelling met PayPal Express.
@@ -56,7 +57,7 @@ De toepassing produceert vele *500* fouten tijdens verwerking onjuiste IPNs en v
 Om individuele flarden toe te passen, gebruik de volgende verbindingen afhankelijk van uw plaatsingsmethode:
 
 * Op locatie Adobe Commerce of Magento Open Source: [[!DNL Quality Patches Tool] > Gebruik ](/help/tools/quality-patches-tool/usage.md) in de handleiding [!DNL Quality Patches Tool]
-* Adobe Commerce op wolkeninfrastructuur: [ Verbeteringen en Patches > Patches toepassen ](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html?lang=nl-NL) in Commerce op de gids van de Infrastructuur van de Wolk
+* Adobe Commerce op wolkeninfrastructuur: [ Verbeteringen en Patches > Patches toepassen ](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html) in Commerce op de gids van de Infrastructuur van de Wolk
 
 ## Gerelateerde lezing
 
