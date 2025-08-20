@@ -45,7 +45,7 @@ De kwestie waar het geheime voorgeheugen op elk PLAK of kart bezoek wordt ontrui
    1. **[!UICONTROL Products to Match]**
       * Laat de standaardwaarde ongewijzigd.
    1. **[!UICONTROL Products to Display]**
-      * Als **ALLE** van deze voorwaarden ** waar zijn, plaats **[!UICONTROL Product Category]** = *Constante Waarde 11111*
+      * Als **ALLE** van deze voorwaarden **&#x200B; waar zijn, plaats &#x200B;** [!UICONTROL Product Category]** = *Constante Waarde 11111*
 1. Start de bewaking van de logboeken voor verzoeken tot invalidatie van het cachegeheugen.
 1. Bezoek de productpagina.
 1. Voeg een product toe aan de winkelwagentje en navigeer naar de winkelwagentje.
