@@ -4,7 +4,7 @@ description: Deze subsectie biedt een gedetailleerde beschrijving van de problem
 feature: Tools and External Services
 role: Admin, Developer
 exl-id: 74094036-cb1b-419f-b287-ca24d351a448
-source-git-commit: fa5164f3118ec51e4562f7ae5073781307452bc4
+source-git-commit: 53768b017845d0ea8033ebd7651421877ed36a55
 workflow-type: tm+mt
 source-wordcount: '279'
 ht-degree: 0%
@@ -18,7 +18,7 @@ Deze subsectie bevat een gedetailleerde beschrijving van de problemen die zijn o
 QPT v1.1.68 omvat de volgende flarden:
 1. **ACSD-58131**: De aanwezigheid van een 0 byte beeld in de media galerij verhinderde alle beelden in de folder worden getoond of worden geselecteerd.
 1. **ACSD-62146**: Het geselecteerde factureringsadres verdwijnt op de betalingspagina van de kassa wanneer het adresonderzoek wordt toegelaten en &quot;Aantal Limiet van de Adressen van de Klant&quot;wordt geplaatst aan 1.
-1. **ACSD-62415**: Adobe Commerce achterste laadt categorieën zeer langzaam.
+1. **[ACSD-62415](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-68/acsd-62415-adobe-commerce-backend-loads-categories-very-slowly.md)**: Adobe Commerce achterste laadt categorieën zeer langzaam.
 1. **ACSD-65938**: De kaarte-mails van de Gift werden verzonden zelfs toen de factuurverwezenlijking ontbrak.
 1. **ACSD-66072**: De verwante producten zijn niet teruggekeerd via GraphQL op de Pagina van het Detail van het Product toe te schrijven aan een interne serverfout wanneer [!UICONTROL Related Products Rule] wordt gevormd.
 1. **ACSD-66082**: Kan het monsterbeeld van een product door productinvoer niet bijwerken.
