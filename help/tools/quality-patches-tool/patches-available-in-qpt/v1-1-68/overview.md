@@ -4,9 +4,9 @@ description: Deze subsectie biedt een gedetailleerde beschrijving van de problem
 feature: Tools and External Services
 role: Admin, Developer
 exl-id: 74094036-cb1b-419f-b287-ca24d351a448
-source-git-commit: 937acc659427b788b8af778f5ea826eacccdc70e
+source-git-commit: ba4154c109c64d3e45e6de8dc8ffd9bb9741e5b2
 workflow-type: tm+mt
-source-wordcount: '284'
+source-wordcount: '282'
 ht-degree: 0%
 
 ---
@@ -25,7 +25,7 @@ QPT v1.1.68 omvat de volgende flarden:
 1. **ACSD-66179**: Het annuleren van een factuur met het &quot;niet Vangst&quot;betalingstype resulteert in een 404 foutenpagina.
 1. **ACSD-66233**: Admins kan producten wegens niet ontvankelijke popup toevoegen van de productlijst.
 1. **ACSD-66506**: De fout van de steun kwam voor toen eerder toegewezen producten van een Gedeelde Catalogus werden geschrapt en nieuwe toegewezen.
-1. **ACSD-66865**: Het bewaren van de regels van de catalogusprijs maakt indexen ongeldig en verstrekt een alternatief aan herdex slechts beïnvloede producten.
+1. **ACSD-66865**: Het bewaren van a **[!UICONTROL Catalog Price Rule]** maakt indexen ongeldig en verstrekt een alternatief om slechts beïnvloede producten opnieuw te indexeren.
 1. **ACSD-66889**: Fout tijdens inventarisherdex in CLI.
 1. **ACSD-66963**: De mutatie EstimateTotals keert ongeldig voor kortingen terug wanneer een kortingscode op een kar met virtuele producten wordt toegepast.
 1. **ACSD-66965**: De optie van de druk op de pagina van de Lijst van de Vereiste veroorzaakt een fout.
