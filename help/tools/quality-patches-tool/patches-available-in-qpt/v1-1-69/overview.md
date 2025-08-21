@@ -4,7 +4,7 @@ description: Deze subsectie biedt een gedetailleerde beschrijving van de problem
 feature: Tools and External Services
 role: Admin, Developer
 exl-id: 39af00ed-3559-462e-9627-e32d6e7c71a8
-source-git-commit: 29f09e0ee426f9b58a98fdd512d7c1ac3fca2425
+source-git-commit: 564004a106d69f4b7ff6f85563209433799d36f1
 workflow-type: tm+mt
 source-wordcount: '267'
 ht-degree: 0%
@@ -17,7 +17,7 @@ Deze subsectie bevat een gedetailleerde beschrijving van de problemen die zijn o
 
 QPT v1.1.69 omvat de volgende flarden:
 1. **AC-15223**: De pagina van de Storefront toont caching inhoud na omschakelingsopslag.
-1. **ACP2E-3731**: De uitvoer van het product met **[!UICONTROL Catalog, Search]** zicht omvat verslagen van andere archiefmeningen.
+1. **ACP2E-3731**: De uitvoer van het product met *[!UICONTROL Catalog, Search]* zicht omvat verslagen van andere archiefmeningen.
 1. **ACP2E-3767**: De laatste bundeloptie verschijnt na het opslaan van een bundelproduct.
 1. **ACP2E-3964**: Configurable kindproducten met video die niet via REST API wordt vermeld.
 1. **ACP2E-3977**: [!UICONTROL Cap Reward Points Balance At] het gebied kan niet leeg worden verlaten.
