@@ -4,13 +4,13 @@ description: Pas de ACSD-66139-patch toe om het Adobe Commerce-probleem te verhe
 feature: GraphQL
 role: Admin, Developer
 type: Troubleshooting
-source-git-commit: 16d95ae0d58dfdc88a5fab725a37d353d3ee5c96
+exl-id: 5a1a94ca-f274-4098-8b44-d3f1a0ea65a1
+source-git-commit: 8681dd706e614f86bbee36c182b47491ec707196
 workflow-type: tm+mt
-source-wordcount: '356'
+source-wordcount: '353'
 ht-degree: 0%
 
 ---
-
 
 # ACSD-66139: GraphQL-volgorde mislukt met &#39;UNDEFINED&#39;-fout voor inactief winkelwagentje
 
@@ -28,7 +28,7 @@ ACSD-66139 herstelt de flard waar, wanneer het plaatsen van een orde voor een ni
 
 >[!NOTE]
 >
->De patch kan van toepassing worden op andere versies met nieuwe [!DNL Quality Patches Tool] versies. Als u wilt controleren of de patch compatibel is met uw Adobe Commerce-versie, werkt u het `magento/quality-patches` -pakket bij naar het laatste pictogram en controleert u de compatibiliteit op de [[!DNL Quality Patches Tool] : zoek naar patches ](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html?lang=nl-NL) . Gebruik de patch-id als een zoekwoord om de patch te zoeken.
+>De patch kan van toepassing worden op andere versies met nieuwe [!DNL Quality Patches Tool] versies. Als u wilt controleren of de patch compatibel is met uw Adobe Commerce-versie, werkt u het `magento/quality-patches` -pakket bij naar het laatste pictogram en controleert u de compatibiliteit op de [[!DNL Quality Patches Tool] : zoek naar patches ](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html) . Gebruik de patch-id als een zoekwoord om de patch te zoeken.
 
 ## Probleem
 
@@ -42,10 +42,11 @@ GraphQL keert een *ONGEDEFINIEERDE* foutencode in plaats van specifieke terug wa
 "Could not find a cart with ID ""%masked_cart_id""","Oh noo, we have an UNDEFINED issue, see!",module,Magento_QuoteGraphQl
 ```
 
-1. Maak een winkelweergave in het deelvenster Beheer. Ga naar **[!UICONTROL Stores]** > *[!UICONTROL Settings]* > **[!UICONTROL All Stores]** . Klik op **[!UICONTROL Create Store View]** en voer bij **[!UICONTROL Code]** de code in `test` .
+1. Ga in het deelvenster Beheer naar **[!UICONTROL Stores]** > **[!UICONTROL Settings]** > **[!UICONTROL All Stores]** > **[!UICONTROL Create Store View]** om een winkelweergave te maken.
+1. Plaats **[!UICONTROL Code]** aan *test*.
 1. Wijs `german` taal toe aan de nieuwe winkelweergave.
 1. Voer `setup:upgrade` en `setup:static-content:deploy -f` uit.
-1. Voer de volgende GraphQL-query met header &#39;Store :test&#39; uit:
+1. Voer de volgende GraphQL-query met header `Store:test` uit:
 
 ```
 mutation {
@@ -123,7 +124,7 @@ Correcte foutreactie:
 Om individuele flarden toe te passen, gebruik de volgende verbindingen afhankelijk van uw plaatsingsmethode:
 
 * Op locatie Adobe Commerce of Magento Open Source: [[!DNL Quality Patches Tool] > Gebruik ](/help/tools/quality-patches-tool/usage.md) in de handleiding [!DNL Quality Patches Tool] .
-* Adobe Commerce op wolkeninfrastructuur: [ Verbeteringen en Patches > Pas Patches ](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html?lang=nl-NL) in Commerce op de gids van de Infrastructuur van de Wolk toe.
+* Adobe Commerce op wolkeninfrastructuur: [ Verbeteringen en Patches > Pas Patches ](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html) in Commerce op de gids van de Infrastructuur van de Wolk toe.
 
 ## Gerelateerde lezing
 
