@@ -90,10 +90,10 @@ Afzonderlijke patches bevatten oplossingen voor een bepaalde kwestie met een lag
 
 Geïsoleerde patches zijn beveiligingsoplossingen die onafhankelijk van een volledige beveiligingspatch worden vrijgegeven om een snellere implementatie mogelijk te maken. Elke geïsoleerde patch is gericht op een specifiek beveiligingsprobleem en is opgenomen in de meest recente of een aanstaande volledige beveiligingspatch. De details over de kwestie worden verstrekt in het verwante veiligheidsbulletin, dat met een artikel van de Kennisbank (KB) verbindt die de fixdetails, hoe te om het flard, en extra informatie bevatten toe te passen.
 
-Zie het [ Centrum van de Veiligheid ](https://helpx.adobe.com/security/products/magento.html) om de recentste veiligheidsupdates beschikbaar voor Adobe Commerce te vinden.
+Zie het [ Centrum van de Veiligheid ](https://helpx.adobe.com/nl/security/products/magento.html) om de recentste veiligheidsupdates beschikbaar voor Adobe Commerce te vinden.
 
 ## Aangepaste patch
 
-Gemaakt door niet-Adobe-personeel om een probleem op te lossen of om verschillende redenen de Adobe Commerce-code te wijzigen. De flarden van de douane worden geleverd door het [ Hulpmiddel van de Patches van de Kwaliteit ](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/usage).
+Gemaakt door niet-Adobe-personeel om een probleem op te lossen of om verschillende redenen de Adobe Commerce-code te wijzigen. De flarden van de douane worden geleverd door het [ Hulpmiddel van de Patches van de Kwaliteit ](https://experienceleague.adobe.com/nl/docs/commerce-operations/tools/quality-patches-tool/usage).
 
 <!-- Last updated from includes: 2025-05-28 16:37:31 -->

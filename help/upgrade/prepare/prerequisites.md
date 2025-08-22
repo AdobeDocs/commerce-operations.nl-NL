@@ -33,7 +33,7 @@ Zorg ervoor dat u alle systeemvereisten en afhankelijkheden in uw omgeving hebt 
 
 >[!NOTE]
 >
->Voor Adobe Commerce op de Pro projecten van de wolkeninfrastructuur, moet u a [ kaartje van de Steun {creëren 0} om de diensten in het Opvoeren en van de Productie milieu&#39;s te installeren of bij te werken. ](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html#submit-ticket) Geef aan welke servicewijzigingen nodig zijn en neem de bijgewerkte `.magento.app.yaml` - en `services.yaml` -bestanden en PHP-versie op in het ticket. Het kan tot 48 uur duren voordat het infrastructuurteam van de cloud uw project kan bijwerken. Zie [ Ondersteunde software en de diensten ](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/architecture/cloud-architecture.html#supported-software-and-services).
+>Voor Adobe Commerce op de Pro projecten van de wolkeninfrastructuur, moet u a [ kaartje van de Steun {creëren 0} om de diensten in het Opvoeren en van de Productie milieu&#39;s te installeren of bij te werken. ](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html?lang=nl-NL#submit-ticket) Geef aan welke servicewijzigingen nodig zijn en neem de bijgewerkte `.magento.app.yaml` - en `services.yaml` -bestanden en PHP-versie op in het ticket. Het kan tot 48 uur duren voordat het infrastructuurteam van de cloud uw project kan bijwerken. Zie [ Ondersteunde software en de diensten ](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/architecture/cloud-architecture.html?lang=nl-NL#supported-software-and-services).
 
 ## Controleren of een ondersteund zoekprogramma is geïnstalleerd
 
