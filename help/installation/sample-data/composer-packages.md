@@ -48,7 +48,7 @@ bin/magento sampledata:deploy
 bin/magento setup:upgrade
 ```
 
-U wordt vereist om [ ](../prerequisites/authentication-keys.md) voor authentiek te verklaren om de actie te voltooien.
+U wordt vereist om [&#128279;](../prerequisites/authentication-keys.md) voor authentiek te verklaren om de actie te voltooien.
 
 ## Verificatiefout
 

@@ -75,7 +75,7 @@ U kunt als volgt de standaardwaarden voor landinstelling en gewicht in uw ontwik
 
 1. In de linkerruit, klik Klanten > **Configuratie van de Klant**.
 1. In de juiste ruit, breid **uit tot Nieuwe Opties van de Rekening**.
-1. Indien noodzakelijk, ontruim het **checkbox van de systeemwaarde van het 0} Gebruik naast het** Standaard e-mailgebied **gebied.**
+1. Indien noodzakelijk, ontruim het **checkbox van de systeemwaarde van het 0&rbrace; Gebruik naast het** Standaard e-mailgebied **gebied.**
 1. Voer een domeinnaam in het veld in.
 1. Klik **sparen Config**.
 1. Maak de cache leeg als daarom wordt gevraagd.
