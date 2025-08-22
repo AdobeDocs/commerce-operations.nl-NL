@@ -2,7 +2,7 @@
 title: Beschikbaarheid van producten
 description: Ontdek welke Adobe Commerce-functies momenteel worden ondersteund en controleer of deze compatibel zijn met specifieke Adobe Commerce-releases.
 exl-id: 7e8e8ac2-a0b9-4023-a813-c0f1293e54c2
-source-git-commit: 16feb8ec7ecc88a6ef03a769d45b1a3a2fe88d97
+source-git-commit: 55512521254c49511100a557a4b00cf3ebee0311
 workflow-type: tm+mt
 source-wordcount: '311'
 ht-degree: 0%
@@ -31,7 +31,7 @@ In de volgende tabel ziet u de versieondersteuning voor elke extensie ten opzich
 
 ## Commerce Services
 
-[ de Diensten van Commerce ](https://experienceleague.adobe.com/docs/commerce/user-guides/home.html?lang=nl-NL) zijn een reeks van Adobe-ontvangen eigenschappen die robuuste functionaliteit en snelle reactietijden, samen met uw instantie van Commerce verstrekken.
+[ de Diensten van Commerce ](https://experienceleague.adobe.com/docs/commerce/user-guides/home.html) zijn een reeks van Adobe-ontvangen eigenschappen die robuuste functionaliteit en snelle reactietijden, samen met uw instantie van Commerce verstrekken.
 
 Aanbevolen wordt dat verkopers de meest recente versie van een service gebruiken om de hoogste stabiliteit en functionaliteit te garanderen. In de documentatie wordt de versie beschreven die momenteel wordt uitgebracht.
 
@@ -43,3 +43,5 @@ Aanbevolen wordt dat verkopers de meest recente versie van een service gebruiken
 In de volgende tabel ziet u de versieondersteuning voor elke service ten opzichte van de Adobe Commerce-versie.
 
 {{$include /help/_includes/templated/product-availability-services.md}}
+
+<!-- Last updated from includes: 2025-08-06 12:51:01 -->

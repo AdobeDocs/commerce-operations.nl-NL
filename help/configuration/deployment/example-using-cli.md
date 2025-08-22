@@ -2,7 +2,7 @@
 title: Voorbeeld met CLI-opdrachten
 description: Zie een voorbeeld van hoe te om gedeelde, systeem-specifieke, en gevoelige waarden in uw ontwikkelingssysteem te plaatsen gebruikend de bevellijn.
 exl-id: d0058e9f-a5a9-48a6-9c66-c61515666335
-source-git-commit: 95ffff39d82cc9027fa633dffedf15193040802d
+source-git-commit: 55512521254c49511100a557a4b00cf3ebee0311
 workflow-type: tm+mt
 source-wordcount: '1023'
 ht-degree: 0%
@@ -75,7 +75,7 @@ U kunt als volgt de standaardwaarden voor landinstelling en gewicht in uw ontwik
 
 1. In de linkerruit, klik Klanten > **Configuratie van de Klant**.
 1. In de juiste ruit, breid **uit tot Nieuwe Opties van de Rekening**.
-1. Indien noodzakelijk, ontruim het **checkbox van de systeemwaarde van het 0&rbrace; Gebruik naast het** Standaard e-mailgebied **gebied.**
+1. Indien noodzakelijk, ontruim het **checkbox van de systeemwaarde van het 0} Gebruik naast het** Standaard e-mailgebied **gebied.**
 1. Voer een domeinnaam in het veld in.
 1. Klik **sparen Config**.
 1. Maak de cache leeg als daarom wordt gevraagd.
@@ -181,3 +181,5 @@ Om de configuratiemontages te verifiëren:
    De waarde van het **StandaardE-mailDomein** gebied wordt getoond als volgt. Dit is een systeemspecifieke instelling.
 
    ![ de montages van de Controle in het productiesysteem ](../../assets/configuration/split-default-domain.png)
+
+<!-- Last updated from includes: 2024-07-18 15:50:54 -->

@@ -2,7 +2,7 @@
 title: Voorbeeld met omgevingsvariabelen
 description: Zie een voorbeeld van hoe te om gedeelde, systeem-specifieke, en gevoelige waarden in uw ontwikkelingssysteem te plaatsen gebruikend omgevingsvariabelen.
 exl-id: 98438674-e7f8-4143-9a76-3cc8bf0a73dc
-source-git-commit: 95ffff39d82cc9027fa633dffedf15193040802d
+source-git-commit: 55512521254c49511100a557a4b00cf3ebee0311
 workflow-type: tm+mt
 source-wordcount: '1089'
 ht-degree: 0%
@@ -54,7 +54,7 @@ U kunt als volgt de standaardwaarden voor landinstelling en gewicht in uw ontwik
    ![ de websites van de Schakelaar ](../../assets/configuration/split-deploy-switch-website.png)
 
 1. In de juiste ruit, breid **Informatie van de Opslag** uit.
-1. Indien nodig, ontruim het **Gebrek van het Gebruik** checkbox naast het **&#x200B;**&#x200B;gebied van het Aantal van BTW.
+1. Indien nodig, ontruim het **Gebrek van het Gebruik** checkbox naast het **** gebied van het Aantal van BTW.
 1. Voer een getal in het veld in (bijvoorbeeld `12345` ).
 1. Op het **gebied van de Naam van de Opslag**, ga een waarde (als `My Store`) in.
 1. Klik **sparen Config**.
@@ -197,3 +197,5 @@ Deze sectie bespreekt hoe u de configuratiemontages in uw Admin van het producti
    De waarde van het **StandaardE-mailDomein** gebied wordt getoond als volgt. Dit is een systeemspecifieke instelling.
 
    ![ de montages van de Controle in het productiesysteem ](../../assets/configuration/split-default-domain.png)
+
+<!-- Last updated from includes: 2024-07-18 15:50:54 -->

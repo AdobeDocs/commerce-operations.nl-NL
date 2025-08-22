@@ -2,7 +2,7 @@
 title: De winkel configureren
 description: Voer de volgende stappen uit om uw Adobe Commerce-winkel te configureren.
 exl-id: ab5e9c43-d914-4de9-98a9-b60d3984b23c
-source-git-commit: ddf988826c29b4ebf054a4d4fb5f4c285662ef4e
+source-git-commit: 55512521254c49511100a557a4b00cf3ebee0311
 workflow-type: tm+mt
 source-wordcount: '437'
 ht-degree: 0%
@@ -42,3 +42,5 @@ In de volgende tabel worden parameters en waarden gedefinieerd:
 | `--use-secure-admin` | `1` betekent dat u SSL gebruikt om toegang te krijgen tot Admin. Zorg ervoor dat uw webserver SSL ondersteunt voordat u deze optie selecteert.<br><br>`0` betekent dat u geen SSL gebruikt met de Admin. Dit is de standaardinstelling. | Nee |
 | `--admin-use-security-key` | `1` zorgt ervoor dat de toepassing een willekeurig gegenereerde sleutelwaarde gebruikt om pagina&#39;s in de beheerfunctie en in formulieren te openen. Deze zeer belangrijke waarden helpen dwars-plaats manuscriptvervalsingsaanvallen verhinderen. Dit is de standaardinstelling.<br/><br/>`0` schakelt het gebruik van de toets uit. | Nee |
 | `--magento-init-params` | Voeg aan om het even welk bevel toe om toepassings initialisatieparameters aan te passen <br/><br/> bijvoorbeeld: `MAGE_MODE=developer&MAGE_DIRS[base][path]=/var/www/example.com&MAGE_DIRS[cache][path]=/var/tmp/cache` | Nee |
+
+<!-- Last updated from includes: 2022-09-08 11:33:05 -->

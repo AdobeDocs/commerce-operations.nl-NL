@@ -2,7 +2,7 @@
 title: Volledige voorwaarden
 description: Bereid uw Adobe Commerce-project voor op een upgrade door deze vereiste stappen uit te voeren.
 exl-id: f7775900-1d10-4547-8af0-3d1283d9b89e
-source-git-commit: df185e21f918d32ed5033f5db89815b5fc98074f
+source-git-commit: 55512521254c49511100a557a4b00cf3ebee0311
 workflow-type: tm+mt
 source-wordcount: '1866'
 ht-degree: 0%
@@ -33,7 +33,7 @@ Zorg ervoor dat u alle systeemvereisten en afhankelijkheden in uw omgeving hebt 
 
 >[!NOTE]
 >
->Voor Adobe Commerce op de Pro projecten van de wolkeninfrastructuur, moet u a [ kaartje van de Steun {creëren 0} om de diensten in het Opvoeren en van de Productie milieu&#39;s te installeren of bij te werken. ](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html?lang=nl-NL#submit-ticket) Geef aan welke servicewijzigingen nodig zijn en neem de bijgewerkte `.magento.app.yaml` - en `services.yaml` -bestanden en PHP-versie op in het ticket. Het kan tot 48 uur duren voordat het infrastructuurteam van de cloud uw project kan bijwerken. Zie [ Ondersteunde software en de diensten ](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/architecture/cloud-architecture.html?lang=nl-NL#supported-software-and-services).
+>Voor Adobe Commerce op de Pro projecten van de wolkeninfrastructuur, moet u a [ kaartje van de Steun {creëren 0} om de diensten in het Opvoeren en van de Productie milieu&#39;s te installeren of bij te werken. ](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html#submit-ticket) Geef aan welke servicewijzigingen nodig zijn en neem de bijgewerkte `.magento.app.yaml` - en `services.yaml` -bestanden en PHP-versie op in het ticket. Het kan tot 48 uur duren voordat het infrastructuurteam van de cloud uw project kan bijwerken. Zie [ Ondersteunde software en de diensten ](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/architecture/cloud-architecture.html#supported-software-and-services).
 
 ## Controleren of een ondersteund zoekprogramma is geïnstalleerd
 
@@ -99,7 +99,7 @@ Als u MySQL van versie 8.0 naar versie 8.4 wilt bijwerken, moet u de volgende st
    >
    >Als u de waarde van `restrict_fk_on_non_standard_key` niet wijzigt in `OFF` , treedt de volgende fout op tijdens het importeren:
    >
-   >```sql
+   ```sql
    > ERROR 6125 (HY000) at line 2164: Failed to add the foreign key constraint. Missing unique key for constraint 'CAT_PRD_FRONTEND_ACTION_PRD_ID_CAT_PRD_ENTT_ENTT_ID' in the referenced table 'catalog_product_entity'
    >```
 1. Start de MySQL-server opnieuw.
@@ -358,7 +358,7 @@ De omgevingsvariabele instellen:
 
 Om veiligheidsredenen vereist Adobe Commerce bepaalde machtigingen voor het bestandssysteem. De toestemmingen zijn verschillend van _[eigendom](../../upgrade/prepare/prerequisites.md#verify-file-system-permissions)_. Eigendom bepaalt wie handelingen op het bestandssysteem kan uitvoeren; machtigingen bepalen wat de gebruiker kan doen.
 
-De folders in het dossiersysteem moeten door de [ groep van de eigenaar van het 0&rbrace; dossiersysteem kunnen worden geschreven.](../../installation/prerequisites/file-system/overview.md)
+De folders in het dossiersysteem moeten door de [ groep van de eigenaar van het 0} dossiersysteem kunnen worden geschreven.](../../installation/prerequisites/file-system/overview.md)
 
 Om te controleren of de machtigingen voor het bestandssysteem correct zijn ingesteld, meldt u zich aan bij de toepassingsserver of gebruikt u de toepassing van het bestandsbeheer van de hostingprovider.
 
@@ -444,3 +444,5 @@ De insteekmodule installeren:
    ```bash
    composer update
    ```
+
+<!-- Last updated from includes: 2024-02-12 09:51:27 -->

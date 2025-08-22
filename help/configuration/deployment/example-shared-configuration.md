@@ -2,7 +2,7 @@
 title: Voorbeeld met een gedeelde configuratie
 description: Zie een voorbeeld van hoe te om montages in een ontwikkelingssysteem met een gedeeld configuratiedossier te veranderen.
 exl-id: c980ec01-ca2d-43db-b68d-8e9435e07e6a
-source-git-commit: 95ffff39d82cc9027fa633dffedf15193040802d
+source-git-commit: 55512521254c49511100a557a4b00cf3ebee0311
 workflow-type: tm+mt
 source-wordcount: '464'
 ht-degree: 0%
@@ -51,8 +51,8 @@ U kunt als volgt de tijdzone- en gewichtseenheden in uw ontwikkelingssysteem ins
    ![ plaats scèneopties in het ontwikkelingssysteem ](../../assets/configuration/split-deploy-set-locale.png)
 
 1. Van de **lijst van de Tijdzone**, klik **GMT+00 :00 (UTC)**.
-1. Ontruim het **checkbox van de systeemwaarde van het Gebruik** naast het **3&rbrace; gebied van de Eenheid van de Gewicht.**
-1. Van de **lijst van de Eenheid van 0&rbrace; Gewicht, klik** kgs **.**
+1. Ontruim het **checkbox van de systeemwaarde van het Gebruik** naast het **3} gebied van de Eenheid van de Gewicht.**
+1. Van de **lijst van de Eenheid van 0} Gewicht, klik** kgs **.**
 1. Klik **sparen Config**.
 1. Maak de cache leeg als daarom wordt gevraagd.
 
@@ -89,3 +89,5 @@ De laatste stap in het proces is uw productiesysteem van broncontrole bij te wer
 >[!INFO]
 >
 >Als u een instelling wilt wijzigen die is vergrendeld in Beheer, gebruikt u de opdracht [`magento config:set --lock` ](../cli/set-configuration-values.md) .
+
+<!-- Last updated from includes: 2024-07-18 15:50:54 -->

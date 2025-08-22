@@ -3,7 +3,7 @@ title: Voorbeeldgegevenspakketten van Composer downloaden
 description: Voer de volgende stappen uit om Adobe Commerce voorbeeldgegevens te installeren met behulp van Composer PHP Package Manager.
 feature: Install, Deploy
 exl-id: 735591af-a152-4476-9fa6-e31c4bab3ba8
-source-git-commit: ca8dc855e0598d2c3d43afae2e055aa27035a09b
+source-git-commit: 55512521254c49511100a557a4b00cf3ebee0311
 workflow-type: tm+mt
 source-wordcount: '286'
 ht-degree: 0%
@@ -48,7 +48,7 @@ bin/magento sampledata:deploy
 bin/magento setup:upgrade
 ```
 
-U wordt vereist om [&#128279;](../prerequisites/authentication-keys.md) voor authentiek te verklaren om de actie te voltooien.
+U wordt vereist om [ ](../prerequisites/authentication-keys.md) voor authentiek te verklaren om de actie te voltooien.
 
 ## Verificatiefout
 
@@ -65,3 +65,5 @@ Als de foutenvertoningen, verandering in uw folder van de toepassingsinstallatie
 ## De installatie van voorbeeldgegevens voltooien
 
 {{$include /help/_includes/sample-data-complete.md}}
+
+<!-- Last updated from includes: 2022-09-08 11:33:05 -->

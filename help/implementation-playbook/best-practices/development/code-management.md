@@ -4,7 +4,7 @@ description: Meer informatie over best practices voor codebeheer voor de ontwikk
 feature: Best Practices
 role: Developer
 exl-id: 0bff4c7a-1082-4b3e-b19c-bc8ad529b131
-source-git-commit: ee7551374aa6d4ad462dd64ee3d05b934b43ce45
+source-git-commit: 55512521254c49511100a557a4b00cf3ebee0311
 workflow-type: tm+mt
 source-wordcount: '659'
 ht-degree: 0%
@@ -115,3 +115,5 @@ Dit onderwerp wordt ontworpen om u te helpen beslissen of om Git of Composer te 
 1. **Begin met Git, dan beweging aan Composer**
 
    Maak de keus voor een benadering van het codebeheer bij het begin van uw project. Het schakelen van Git naar Composer of omgekeerd, met aan de gang zijnde ontwikkeling is omslachtig en kan tot codeverlies en of het verlies van de revisiegeschiedenis leiden.
+
+<!-- Last updated from includes: 2023-08-23 15:56:59 -->

@@ -3,7 +3,7 @@ title: Nginx voor uw zoekmachine configureren
 description: Voer de volgende stappen uit om een zoekmachine te configureren met de Nginx-webserver voor installaties in de bedrijfsruimten van Adobe Commerce.
 feature: Install, Search
 exl-id: 8d2f8695-e30a-4acc-bba3-d122212b0a53
-source-git-commit: ca8dc855e0598d2c3d43afae2e055aa27035a09b
+source-git-commit: 55512521254c49511100a557a4b00cf3ebee0311
 workflow-type: tm+mt
 source-wordcount: '603'
 ht-degree: 0%
@@ -216,3 +216,5 @@ In deze sectie wordt besproken hoe u kunt opgeven wie toegang heeft tot de zoekm
 #### Verifiëren
 
 {{$include /help/_includes/verify-secure-communication.md}}
+
+<!-- Last updated from includes: 2024-07-18 15:50:54 -->
