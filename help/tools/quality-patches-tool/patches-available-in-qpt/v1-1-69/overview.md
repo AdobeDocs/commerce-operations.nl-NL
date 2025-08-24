@@ -4,9 +4,9 @@ description: Deze subsectie biedt een gedetailleerde beschrijving van de problem
 feature: Tools and External Services
 role: Admin, Developer
 exl-id: 39af00ed-3559-462e-9627-e32d6e7c71a8
-source-git-commit: 564004a106d69f4b7ff6f85563209433799d36f1
+source-git-commit: eb64190e0c3f9c0dd0690b0174c7a24798f96366
 workflow-type: tm+mt
-source-wordcount: '267'
+source-wordcount: '265'
 ht-degree: 0%
 
 ---
@@ -33,6 +33,6 @@ QPT v1.1.69 omvat de volgende flarden:
 1. **ACSD-66404**: De baan van de snede ontbreekt om veranderingslijsten wegens [!DNL Galera Cluster] grenzen van de transactiegrootte te ontruimen.
 1. **ACSD-66952**: Het geheime voorgeheugen ontruimt op elk PLP of kart bezoek wanneer een doelregel wordt geplaatst.
 1. **ACSD-67264**: Bundel en downloadbare lay-outs van de productpagina inconsistent over apparaten.
-1. **ACSD-67347**: De orde ontbreekt met slotfout wanneer het gebruiken van speciale karaktercoupons en dossiersluiting.
+1. **ACSD-67347**: De orde ontbreekt met kan geen slot verwerven wanneer het gebruiken van couponcodes.
 
 Gebruik het menu links om naar een specifieke patchpagina te navigeren.
