@@ -4,9 +4,9 @@ description: Deze subsectie biedt een gedetailleerde beschrijving van de problem
 feature: Tools and External Services
 role: Admin, Developer
 exl-id: 74094036-cb1b-419f-b287-ca24d351a448
-source-git-commit: f04931fb8223f404bbdab8371cc1e4952948f1c1
+source-git-commit: 674aa68a0f7ecf30481a6d4f33b119d295c51a6b
 workflow-type: tm+mt
-source-wordcount: '324'
+source-wordcount: '360'
 ht-degree: 0%
 
 ---
@@ -30,6 +30,9 @@ QPT v1.1.68 omvat de volgende flarden:
 1. **ACSD-66506**: De fout van de steun kwam voor toen eerder toegewezen producten van een Gedeelde Catalogus werden geschrapt en nieuwe toegewezen.
 1. **ACSD-66865**: Het bewaren van a **[!UICONTROL Catalog Price Rule]** maakt indexen ongeldig en verstrekt een alternatief om slechts beïnvloede producten opnieuw te indexeren.
 1. **ACSD-66889**: Fout tijdens inventarisherdex in CLI.
+1. **ACSD-66963**: `estimateTotals` de mutatie keert ongeldig voor kortingen op virtuele producten terug.
+1. **ACSD-66965**: De optie van de druk op de pagina van de Lijst van de Vereiste veroorzaakt een fout.
+1. **ACSD-67039**: De verslagen van de klant werden niet bewaard wegens bevestiging van het rp_token systeemattribuut.
 1. **ACSD-66963**: De mutatie EstimateTotals keert ongeldig voor kortingen terug wanneer een kortingscode op een kar met virtuele producten wordt toegepast.
 1. **ACSD-66965**: **[!UICONTROL Print]** optie op **[!UICONTROL Requisition List]** pagina veroorzaakt een fout.
 1. **ACSD-67039**: De verslagen van de klant werden niet bewaard toe te schrijven aan bevestiging van het `rp_token` systeemattribuut.

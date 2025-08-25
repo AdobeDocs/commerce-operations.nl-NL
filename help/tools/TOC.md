@@ -2,9 +2,9 @@
 user-guide-title: Gereedschappen
 user-guide-description: Leer meer over de verschillende gereedschappen die u met Adobe Commerce kunt gebruiken, hun gebruik, het installatieproces en hoe u toegang krijgt.
 feature: Configuration
-source-git-commit: f04931fb8223f404bbdab8371cc1e4952948f1c1
+source-git-commit: 674aa68a0f7ecf30481a6d4f33b119d295c51a6b
 workflow-type: tm+mt
-source-wordcount: '8320'
+source-wordcount: '8331'
 ht-degree: 0%
 
 ---
@@ -40,7 +40,7 @@ ht-degree: 0%
    - [Beheerde waarschuwingen voor Adobe Commerce: waarschuwing voor CPU](/help/tools/managed-alerts-for-adobe-commerce/managed-alerts-for-magento-commerce-cpu-warning-alert.md)
 - Gereedschap Kwaliteitspatches {#quality-patches-tool}
    - [[!DNL Quality Patches Tool]: een zelfbedieningsprogramma voor kwaliteitspatches](/help/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches.md)
-   - [[!DNL Quality Patches Tool]: patches zoeken](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html?lang=nl-NL){target="_blank"}
+   - [[!DNL Quality Patches Tool]: patches zoeken ](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html){target="_blank"}
    - [Gebruik](quality-patches-tool/usage.md)
    - [Opmerkingen bij de release](quality-patches-tool/release-notes.md)
    - Patches beschikbaar in het gereedschap Kwaliteitspatches {#patches-available-in-qpt}
@@ -514,7 +514,7 @@ ht-degree: 0%
          - [ACSD-54040: [!UICONTROL Created] veld is leeg in de volgorde waarin de B2B-modules zijn ingeschakeld](quality-patches-tool/patches-available-in-qpt/v1-1-40/acsd-54040-created-field-is-blank-in-order-details-page.md)
          - [ACSD-52801: GraphQL-productfilterquery geeft resultaten van gedeeltelijke overeenkomsten niet weer](quality-patches-tool/patches-available-in-qpt/v1-1-40/acsd-52801-graphql-product-filter-query-not-showing-partial-match-results.md)
          - [ACSD-54961: Gebruikers met beperkte beheerdersrechten kunnen geen massaupdate uitvoeren  [!DNL Product Review status]](quality-patches-tool/patches-available-in-qpt/v1-1-40/acsd-54961-restricted-admin-user-cant-mass-update-product-review-status.md)
-         - [ ACSD-55031: &quot;Het type &quot;gemengd&quot;kan niet nullable&quot;fout tijdens compilatie  zijn](quality-patches-tool/patches-available-in-qpt/v1-1-40/acsd-55031-type-mixed-cannot-be-nullable-error-during-compilation.md)
+         - [ ACSD-55031: &quot;Het type &quot;gemengd&quot;kan niet nullable&quot;fout tijdens compilatie ](quality-patches-tool/patches-available-in-qpt/v1-1-40/acsd-55031-type-mixed-cannot-be-nullable-error-during-compilation.md) zijn
          - [ACSD-54319: De prijs van het product staat nul in het [!UICONTROL Products in Carts] -rapport](quality-patches-tool/patches-available-in-qpt/v1-1-40/acsd-54319-product-price-shows-zero-in-product-in-cart-report.md)
          - [ACSD-54989: Bedrijfsbeheer kan geen bestelling uitvoeren als [!UICONTROL Enable Purchase Orders] is ingesteld op Ja en [!UICONTROL Purchase Order] is ingesteld op Nee](quality-patches-tool/patches-available-in-qpt/v1-1-40/acsd-54989-order-placement-restrictions-in-company-admin-settings.md)
          - [ACSD-53378: Verbeterde uitcheckervaring voor klanten met uitgebreide adresboeken](quality-patches-tool/patches-available-in-qpt/v1-1-40/acsd-53378-swift-checkout-for-users-with-extensive-address-books.md)
@@ -789,7 +789,7 @@ ht-degree: 0%
       - v1.1.63 {#v1-1-63}
          - [Overzicht: [!DNL Quality Patches Tool]  (QPT) v1.1.63](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-63/overview.md)
          - [ACSD-64627: Aangepaste klantkenmerken kunnen niet worden opgeslagen in [!UICONTROL Company Structure]](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-63/acsd-64627-fixes-saving-issues-for-custom-attributes-in-user-profiles.md)
-         - [ ACSD-65195: De mutatie van GraphQL createCompany keert een fout voor een land zonder een vereist gebied  terug](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-63/acsd-65195-fixes-the-issue-where-the-graphql-mutation-createcompany.md)
+         - [ ACSD-65195: De mutatie van GraphQL createCompany keert een fout voor een land zonder een vereist gebied ](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-63/acsd-65195-fixes-the-issue-where-the-graphql-mutation-createcompany.md) terug
          - [ACSD-64753: vooraf geselecteerde opslag in &quot;Ophalen in winkel&quot; wordt niet bijgewerkt wanneer het verzendadres verandert](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-63/pre-selected-store-in-pickup-in-store-doesnt-update-when-shipping-address-changes.md)
       - v1.1.64 {#v1-1-64}
          - [Overzicht: [!DNL Quality Patches Tool]  (QPT) v1.1.64](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-64/overview.md)
@@ -837,6 +837,7 @@ ht-degree: 0%
       - v1.1.68 {#v1-1-68}
          - [ ACSD-66072: GraphQL ontbreekt om verwante producten op de Pagina van het Detail van het Product wegens een interne serverfout tijdens [!UICONTROL Related Products Rule] configuratie terug te keren ](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-68/acsd-66072-graphql-fails-to-return-related-products-due-to-server-error-in-related-product-rules.md)
          - [Overzicht: [!DNL Quality Patches Tool]  (QPT) v1.1.68](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-68/overview.md)
+         - [ACSD-66963: de mutatie estimals keert ongeldig voor kortingen op virtuele producten](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-68/acsd-66963-estimatetotals-mutation-returns-null-for-discounts-on-virtual-products.md)
          - [ACSD-66506: De fout van de achtergrond komt na het schrappen en het opnieuw toewijzen van de Gedeelde producten van de Catalogus voor](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-68/acsd-66506-backend-error-occurs-after-deleting-and-reassigning-shared-catalog-products.md)
          - [ACSD-66889: Fout tijdens voorraadredex in CLI](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-68/acsd-66889-error-during-inventory-reindex-in-cli.md)
          - [ACSD-62415: Adobe Commerce-backend laadt [!UICONTROL Categories] zeer langzaam](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-68/acsd-62415-adobe-commerce-backend-loads-categories-very-slowly.md)
@@ -910,6 +911,6 @@ ht-degree: 0%
       - [Gegevens die handmatige migratie vereisen](data-migration-tool/migrate-data/manual.md)
       - [Stappen voor migratie na gegevens](data-migration-tool/migrate-data/post-migration.md)
    - Bronnen {#resources}
-      - [ het Oplossen van problemen ](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/data-migration-tool-troubleshooting.html?lang=nl-NL)
+      - [ het Oplossen van problemen ](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/data-migration-tool-troubleshooting.html)
       - [ Changelog ](https://github.com/magento/data-migration-tool/blob/2.4/CHANGELOG.md)
-- [ Terugkeer aan Operationele Gidsen ](https://experienceleague.adobe.com/docs/commerce-operations/operational-guides/home.html?lang=nl-NL)
+- [ Terugkeer aan Operationele Gidsen ](https://experienceleague.adobe.com/docs/commerce-operations/operational-guides/home.html)
