@@ -4,9 +4,9 @@ description: Deze subsectie biedt een gedetailleerde beschrijving van de problem
 feature: Tools and External Services
 role: Admin, Developer
 exl-id: 74094036-cb1b-419f-b287-ca24d351a448
-source-git-commit: 53768b017845d0ea8033ebd7651421877ed36a55
+source-git-commit: f04931fb8223f404bbdab8371cc1e4952948f1c1
 workflow-type: tm+mt
-source-wordcount: '279'
+source-wordcount: '324'
 ht-degree: 0%
 
 ---
@@ -23,6 +23,9 @@ QPT v1.1.68 omvat de volgende flarden:
 1. **ACSD-66072**: De verwante producten zijn niet teruggekeerd via GraphQL op de Pagina van het Detail van het Product toe te schrijven aan een interne serverfout wanneer [!UICONTROL Related Products Rule] wordt gevormd.
 1. **ACSD-66082**: Kan het monsterbeeld van een product door productinvoer niet bijwerken.
 1. **ACSD-66179**: Het annuleren van een factuur met het &quot;niet Vangst&quot;betalingstype resulteert in een 404 foutenpagina.
+1. **ACSD-66233**: De gebruikers Admin konden geen producten aan categorieën toe te voegen toe te schrijven aan Add popup die van het Product niet laden.
+1. **ACSD-66506**: De fout van de steun komt na het schrappen van en het opnieuw toewijzen van de Gedeelde producten van de Catalogus voor.
+1. **ACSD-66865**: Het bewaren van de regels van de catalogusprijs maakt indexen ongeldig en verstrekt een alternatief aan herdex slechts beïnvloede producten.
 1. **ACSD-66233**: Admins kan producten wegens niet ontvankelijke popup toevoegen van de productlijst.
 1. **ACSD-66506**: De fout van de steun kwam voor toen eerder toegewezen producten van een Gedeelde Catalogus werden geschrapt en nieuwe toegewezen.
 1. **ACSD-66865**: Het bewaren van a **[!UICONTROL Catalog Price Rule]** maakt indexen ongeldig en verstrekt een alternatief om slechts beïnvloede producten opnieuw te indexeren.
