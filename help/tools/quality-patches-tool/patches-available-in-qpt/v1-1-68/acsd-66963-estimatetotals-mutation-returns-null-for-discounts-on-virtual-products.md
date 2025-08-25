@@ -1,6 +1,6 @@
 ---
-title: 'ACSD-66963: de mutatie van ` estimals ` keert ongeldig voor kortingen op virtuele producten terug'
-description: Pas de ACSD-66963-patch toe om het Adobe Commerce-probleem op te lossen waarbij ` estimals' *null* retourneert voor kortingen wanneer een kortingscode wordt toegepast op een winkelwagentje met alleen virtuele producten.
+title: 'ACSD-66963: de mutatie van &grave; estimals &grave; keert ongeldig voor kortingen op virtuele producten terug'
+description: Pas de ACSD-66963-patch toe om het Adobe Commerce-probleem op te lossen waarbij &grave; estimals' *null* retourneert voor kortingen wanneer een kortingscode wordt toegepast op een winkelwagentje met alleen virtuele producten.
 feature: GraphQL
 role: Admin, Developer
 type: Troubleshooting
@@ -82,26 +82,26 @@ De `estimateTotals` mutatie keert *ongeldig* voor kortingen terug wanneer een ko
 De informatie van de korting is inbegrepen voor wortels die slechts virtuele producten bevatten.
 
     &quot;
-     {
+     &lbrace;
      &quot;data&quot;: 
      &quot;estimals&quot;: 
      &quot;kar&quot;: 
      &quot;prijzen&quot;: 
-     &quot;kortingen&quot;: [
+     &quot;kortingen&quot;: &lbrack;
      
      &quot;bedrag&quot;: 
      &quot;waarde&quot;: 100.5, 
      &quot;valuta&quot;: &quot;USD&quot;
     , 
-     12} &quot;etiket&quot;: &quot;Een tweede disconteringscode voor het testen&quot;, 
+     12&rbrace; &quot;etiket&quot;: &quot;Een tweede disconteringscode voor het testen&quot;, 
      &quot;coupon&quot;: 
      &quot;code&quot;: &quot;z3r0c00l&quot;
     , 
      &quot;applied_to&quot;: &quot;ITEM&quot;, 
      &quot;type&quot;: null 
      
-    ] 
-     21} 
+    &rbrack; 
+     21&rbrace; 
      
      
     , 
@@ -114,7 +114,7 @@ De informatie van de korting is inbegrepen voor wortels die slechts virtuele pro
 De informatie van de korting keert terug als *ongeldig* voor wortels met slechts virtuele producten.
 
     &quot;
-    {
+    &lbrace;
      &quot;data&quot;: 
      &quot;estimals&quot;: 
      &quot;kar&quot;: 
@@ -127,7 +127,8 @@ De informatie van de korting keert terug als *ongeldig* voor wortels met slechts
      &quot;uitbreidingen&quot;: {} 
      
     &quot;
- 5}
+ 5&rbrace;
+
 ## De patch toepassen
 
 Om individuele flarden toe te passen, gebruik de volgende verbindingen afhankelijk van uw plaatsingsmethode:
