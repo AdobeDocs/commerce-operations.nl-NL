@@ -4,9 +4,9 @@ description: Deze subsectie biedt een gedetailleerde beschrijving van de problem
 feature: Tools and External Services
 role: Admin, Developer
 exl-id: 74094036-cb1b-419f-b287-ca24d351a448
-source-git-commit: 674aa68a0f7ecf30481a6d4f33b119d295c51a6b
+source-git-commit: 9dd2ea9464a8e0fb9e45fea44e17d2ded0193ba9
 workflow-type: tm+mt
-source-wordcount: '360'
+source-wordcount: '352'
 ht-degree: 0%
 
 ---
@@ -16,7 +16,7 @@ ht-degree: 0%
 Deze subsectie bevat een gedetailleerde beschrijving van de problemen die zijn opgelost door de patches die beschikbaar zijn in [!DNL Quality Patches Tool] (QPT) v1.1.68.
 
 QPT v1.1.68 omvat de volgende flarden:
-1. **ACSD-58131**: De aanwezigheid van een 0 byte beeld in de media galerij verhinderde alle beelden in de folder worden getoond of worden geselecteerd.
+1. **ACSD-58131** Oude media galerij kan geen beelden wegens 0 byte beelddossier laden.
 1. **ACSD-62146**: Het geselecteerde factureringsadres verdwijnt op de betalingspagina van de kassa wanneer het adresonderzoek wordt toegelaten en &quot;Aantal Limiet van de Adressen van de Klant&quot;wordt geplaatst aan 1.
 1. **[ACSD-62415](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-68/acsd-62415-adobe-commerce-backend-loads-categories-very-slowly.md)**: Adobe Commerce achterste laadt categorieën zeer langzaam.
 1. **ACSD-65938**: De kaarte-mails van de Gift werden verzonden zelfs toen de factuurverwezenlijking ontbrak.
