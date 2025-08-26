@@ -4,9 +4,9 @@ description: Deze subsectie biedt een gedetailleerde beschrijving van de problem
 feature: Tools and External Services
 role: Admin, Developer
 exl-id: 39af00ed-3559-462e-9627-e32d6e7c71a8
-source-git-commit: eb64190e0c3f9c0dd0690b0174c7a24798f96366
+source-git-commit: 7a2d626092b19852287c48dc3da1fcc766237212
 workflow-type: tm+mt
-source-wordcount: '265'
+source-wordcount: '278'
 ht-degree: 0%
 
 ---
@@ -20,6 +20,8 @@ QPT v1.1.69 omvat de volgende flarden:
 1. **ACP2E-3731**: De uitvoer van het product met *[!UICONTROL Catalog, Search]* zicht omvat verslagen van andere archiefmeningen.
 1. **ACP2E-3767**: De laatste bundeloptie verschijnt na het opslaan van een bundelproduct.
 1. **ACP2E-3964**: Configurable kindproducten met video die niet via REST API wordt vermeld.
+1. **ACP2E-3977**: **[!UICONTROL Cap Reward Points Balance At]** kan niet leeg worden verlaten.
+1. **ACP2E-4050**: **[!UICONTROL Free Shipping]** wordt niet toegepast met multi-adrescontrole.
 1. **ACP2E-3977**: [!UICONTROL Cap Reward Points Balance At] het gebied kan niet leeg worden verlaten.
 1. **ACP2E-4050**: De prijsregels van de auto ontbreken voor multi-verschepen met bundelproducten en vrije verzending.
 1. **ACSD-56226**: De vragen van de LEZING keren verouderde gegevens met `synchronous_replication` toegelaten terug.
