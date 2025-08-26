@@ -4,13 +4,13 @@ description: Pas de ACSD-66311-patch toe om het Adobe Commerce-probleem op te lo
 role: Admin, Developer
 feature: B2B
 type: Troubleshooting
-source-git-commit: 841e660136354800dd9758d8c10e86c966be3a1e
+exl-id: e470078b-dd10-4b0b-a489-bc88f025fded
+source-git-commit: 3337907b1893260d6cb18b1c4fbf45dfa1f3d6d5
 workflow-type: tm+mt
-source-wordcount: '425'
+source-wordcount: '405'
 ht-degree: 2%
 
 ---
-
 
 # ACSD-66311: Het raster van bedrijven wordt traag geladen voor gebruikers met beperkte beheerfuncties
 
@@ -28,7 +28,7 @@ De ACSD-66311-patch verhelpt het probleem dat het bedrijfsraster traag wordt gel
 
 >[!NOTE]
 >
->De patch kan van toepassing worden op andere versies met nieuwe [!DNL Quality Patches Tool] versies. Om te controleren of de patch compatibel is met uw Adobe Commerce-versie, werkt u het `magento/quality-patches` -pakket bij naar de meest recente versie en controleert u de compatibiliteit op de [[!DNL Quality Patches Tool] : zoek naar patches op de pagina ](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html?lang=nl-NL) . Gebruik de patch-id als een zoekwoord om de patch te zoeken.
+>De patch kan van toepassing worden op andere versies met nieuwe [!DNL Quality Patches Tool] versies. Om te controleren of de patch compatibel is met uw Adobe Commerce-versie, werkt u het `magento/quality-patches` -pakket bij naar de meest recente versie en controleert u de compatibiliteit op de [[!DNL Quality Patches Tool] : zoek naar patches op de pagina ](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html) . Gebruik de patch-id als een zoekwoord om de patch te zoeken.
 
 ## Probleem
 
@@ -54,7 +54,6 @@ Het bedrijfsraster wordt langzaam geladen voor beheerders met beperkte toegang t
       | 2 | 1.500 |
       | 3 | 500 |
 
-
    1. Voer de volgende query uit om de distributie te verifiëren:
 
       ```
@@ -76,14 +75,13 @@ Het bedrijfsraster wordt langzaam geladen voor beheerders met beperkte toegang t
       ```
             SELECT customer_count, COUNT(*) AS number_of_companies
             FROM (
-      
-            SELECT company_id, COUNT(customer_id) AS customer_count
-            VAN bedrijf_advanced_customer_entiteit
-            GROEP OP bedrijf_id
-) AS-subquery
-GROEP OP klant_count
-ORDER BY customer_count;
-&quot;
+              SELECT company_id, COUNT(customer_id) AS customer_count
+              FROM company_advanced_customer_entity
+              GROUP BY company_id
+            ) AS subquery
+            GROUP BY customer_count
+            ORDER BY customer_count; 
+      ```
 
 1. Herindexeer alle gegevens om ingangen in **te produceren customer_grid_flat**.
 1. Login als **adminscope**.
@@ -102,7 +100,7 @@ Het laden van de pagina duurt meer dan 14 minuten.
 Om individuele flarden toe te passen, gebruik de volgende verbindingen afhankelijk van uw plaatsingsmethode:
 
 * Op locatie Adobe Commerce of Magento Open Source: [[!DNL Quality Patches Tool] > Gebruik ](/help/tools/quality-patches-tool/usage.md) in de handleiding [!DNL Quality Patches Tool] .
-* Adobe Commerce op wolkeninfrastructuur: [ Verbeteringen en Patches > Pas Patches ](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html?lang=nl-NL) in Commerce op de gids van de Infrastructuur van de Wolk toe.
+* Adobe Commerce op wolkeninfrastructuur: [ Verbeteringen en Patches > Pas Patches ](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html) in Commerce op de gids van de Infrastructuur van de Wolk toe.
 
 ## Gerelateerde lezing
 
