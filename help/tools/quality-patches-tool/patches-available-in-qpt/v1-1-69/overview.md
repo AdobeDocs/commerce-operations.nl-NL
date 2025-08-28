@@ -4,7 +4,7 @@ description: Deze subsectie biedt een gedetailleerde beschrijving van de problem
 feature: Tools and External Services
 role: Admin, Developer
 exl-id: 39af00ed-3559-462e-9627-e32d6e7c71a8
-source-git-commit: 7a2d626092b19852287c48dc3da1fcc766237212
+source-git-commit: e72c99bbb5e82cd2dc77e33b7d17dfe8955e945a
 workflow-type: tm+mt
 source-wordcount: '278'
 ht-degree: 0%
@@ -26,7 +26,7 @@ QPT v1.1.69 omvat de volgende flarden:
 1. **ACP2E-4050**: De prijsregels van de auto ontbreken voor multi-verschepen met bundelproducten en vrije verzending.
 1. **ACSD-56226**: De vragen van de LEZING keren verouderde gegevens met `synchronous_replication` toegelaten terug.
 1. **ACSD-57477**: De verwerking van de regel van de verkoop vertraagt prestaties op kar-verwante verzoeken.
-1. **ACSD-58108**: Het ontbreken sluit zich bij lijstnaam veroorzaakt SQL fouten in de uitbreiding van de de douanemodule van het ordenset.
+1. **[ACSD-58108](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-69/acsd-58108-missing-join-table-name-causes-sql-errors-in-order-grid-custom-module-extension.md)**: Het ontbreken sluit zich bij lijstnaam veroorzaakt SQL fouten in de uitbreiding van de de douanemodule van het ordenset.
 1. **ACSD-65983**: De fout komt voor wanneer het opnieuw vormen van gebundeld productcitaat in Admin.
 1. **ACSD-66149**: De manager van IPN keert 500 voor niet gesteunde types terug.
 1. **ACSD-66153**: De pagina keert 500 fout wegens caching onjuiste lay-outstructuur terug.
