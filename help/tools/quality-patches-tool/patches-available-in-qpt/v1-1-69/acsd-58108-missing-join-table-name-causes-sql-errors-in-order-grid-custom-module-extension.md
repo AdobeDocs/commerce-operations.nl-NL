@@ -36,12 +36,12 @@ De ontbrekende naam van de verbindingslijst in de originele het halen lijst vero
 
 <u> Stappen om </u> te reproduceren:
 
-01. Installeer een 2.4-ontwikkelexemplaar.
-02. Maak een nieuwe volgorde.
-03. Een aangepaste module met een SQL-extensie installeren.
-04. Navigeer naar **[!UICONTROL Admin]** > **[!UICONTROL Sales]** > **[!UICONTROL Orders]** .
-05. Pas het filter **[!UICONTROL Purchase Date]** toe en wacht op het resultaat.
-06. Pas het filter **[!UICONTROL Product SKU]** toe.
+&#x200B;01. Installeer een 2.4-ontwikkelexemplaar.
+&#x200B;02. Maak een nieuwe volgorde.
+&#x200B;03. Een aangepaste module met een SQL-extensie installeren.
+&#x200B;04. Navigeer naar **[!UICONTROL Admin]** > **[!UICONTROL Sales]** > **[!UICONTROL Orders]** .
+&#x200B;05. Pas het filter **[!UICONTROL Purchase Date]** toe en wacht op het resultaat.
+&#x200B;06. Pas het filter **[!UICONTROL Product SKU]** toe.
 
 <u> Verwachte resultaten </u>:
 
