@@ -4,13 +4,13 @@ description: Pas ACSD-66302 flard toe om de kwestie van Adobe Commerce te bevest
 feature: GraphQL
 role: Admin, Developer
 type: Troubleshooting
-source-git-commit: 7f9a13a9a8cc666c8aa9d964da8aaff01913d35f
+exl-id: c1a9eadc-0321-4f5c-ba82-533286a1f24f
+source-git-commit: bec27df19ce5d34be063dce3de74ffe253c3e8f4
 workflow-type: tm+mt
 source-wordcount: '378'
 ht-degree: 0%
 
 ---
-
 
 # ACSD-66302: ishlist-items gefilterd door winkel-id in plaats van website
 
@@ -28,7 +28,7 @@ De ACSD-66302-patch verhelpt het probleem waarbij wenslijstonderdelen worden gef
 
 >[!NOTE]
 >
->De patch kan van toepassing worden op andere versies met nieuwe [!DNL Quality Patches Tool] versies. Om te controleren of de patch compatibel is met uw Adobe Commerce-versie, werkt u het `magento/quality-patches` -pakket bij naar de meest recente versie en controleert u de compatibiliteit op de [[!DNL Quality Patches Tool] : zoek naar patches op de pagina ](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html?lang=nl-NL) . Gebruik de patch-id als een zoekwoord om de patch te zoeken.
+>De patch kan van toepassing worden op andere versies met nieuwe [!DNL Quality Patches Tool] versies. Om te controleren of de patch compatibel is met uw Adobe Commerce-versie, werkt u het `magento/quality-patches` -pakket bij naar de meest recente versie en controleert u de compatibiliteit op de [[!DNL Quality Patches Tool] : zoek naar patches op de pagina ](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html) . Gebruik de patch-id als een zoekwoord om de patch te zoeken.
 
 ## Probleem
 
@@ -48,27 +48,27 @@ Items in de lijst met identieke objecten worden onjuist gefilterd door de winkel
 1. Bevestig dat het product nog steeds in de verlanglijst staat (juist gedrag).
 1. Voer de volgende [!DNL GraphQL] query uit:
 
-```
-{
-  customer {
-    wishlists {
-      id
-      name
-      items_count
-      items_v2 {
-        items {
-          id
-          product {
-            uid
-            name
-            sku
-          }
-        }
-      }
-    }
-  }
-}
-```
+   ```
+   {
+     customer {
+       wishlists {
+         id
+         name
+         items_count
+         items_v2 {
+           items {
+             id
+             product {
+               uid
+               name
+               sku
+             }
+           }
+         }
+       }
+     }
+   }
+   ```
 
 1. Voer de vraag op de standaardopslag uit - het product verschijnt zoals verwacht.
 1. Voer de zelfde vraag op de testopslag uit - het product verschijnt niet.
@@ -86,7 +86,7 @@ Het product verdwijnt uit verlanglijst wanneer het schakelen van archiefmeningen
 Om individuele flarden toe te passen, gebruik de volgende verbindingen afhankelijk van uw plaatsingsmethode:
 
 * Op locatie Adobe Commerce of Magento Open Source: [[!DNL Quality Patches Tool] > Gebruik ](/help/tools/quality-patches-tool/usage.md) in de handleiding [!DNL Quality Patches Tool] .
-* Adobe Commerce op wolkeninfrastructuur: [ Verbeteringen en Patches > Pas Patches ](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html?lang=nl-NL) in Commerce op de gids van de Infrastructuur van de Wolk toe.
+* Adobe Commerce op wolkeninfrastructuur: [ Verbeteringen en Patches > Pas Patches ](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html) in Commerce op de gids van de Infrastructuur van de Wolk toe.
 
 ## Gerelateerde lezing
 
