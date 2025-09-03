@@ -3,9 +3,9 @@ title: Valkey gebruiken voor standaardcache
 description: Leer Valkey te configureren als de standaardcache voor Adobe Commerce.
 feature: Configuration, Cache
 exl-id: d0baa2a6-8aa8-4f3f-9edf-102d621430e0
-source-git-commit: bc0274074c0254f649af2f9e2b288017ac82ce9b
+source-git-commit: dea0ad57a8c4525be9bc442708bdd2495f28d72d
 workflow-type: tm+mt
-source-wordcount: '787'
+source-wordcount: '1047'
 ht-degree: 0%
 
 ---
@@ -29,6 +29,14 @@ bin/magento setup:config:set --cache-backend=valkey --cache-backend-valkey-<para
 
 - `--cache-backend-valkey-<parameter>=<value>` is een lijst van zeer belangrijk-waardeparen die het gebrek caching vormen:
 
+>[!NOTE]
+>
+>Beginnend met **Adobe Commerce 2.4.9-alpha2**, **Valkey** heeft officieel Redis in CLI tooling wegens veranderingen in het verlenen van vergunningen vervangen. Valkey is een vork van Redis en behoudt vrijwel dezelfde functionaliteit. Voor **versies 2.4.8 en vroeger**, blijven de bevelen CLI die worden gebruikt om Valkey te vormen het zelfde als die voor Redis, die naadloze achterwaartse verenigbaarheid verzekeren en migratie of dubbel-milieu steun vereenvoudigen. In het volgende voorbeeld wordt de opdracht Valkey-specific getoond.
+
+```bash
+bin/magento setup:config:set --cache-backend=redis --cache-backend-valkey-<parameter>=<value>...
+```
+
 | Opdrachtregelparameter | Waarde | Betekenis | Standaardwaarde |
 |---------------------------------| --------- |--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------| ------------- |
 | `cache-backend-valkey-server` | server | Volledig gekwalificeerde hostnaam, IP-adres of een absoluut pad naar een UNIX-socket. De standaardwaarde van `127.0.0.1` geeft aan dat Valkey is geïnstalleerd op de Commerce-server. | `127.0.0.1` |
@@ -42,6 +50,14 @@ In het volgende voorbeeld wordt standaard het in cache plaatsen van Valkey inges
 
 ```bash
 bin/magento setup:config:set --cache-backend=valkey --cache-backend-valkey-server=127.0.0.1 --cache-backend-valkey-db=0
+```
+
+>[!NOTE]
+>
+>Beginnend met **Adobe Commerce 2.4.9-alpha2**, **Valkey** heeft officieel Redis in CLI tooling wegens veranderingen in het verlenen van vergunningen vervangen. Valkey is een vork van Redis en behoudt vrijwel dezelfde functionaliteit. Voor **versies 2.4.8 en vroeger**, blijven de bevelen CLI die worden gebruikt om Valkey te vormen het zelfde als die voor Redis, die naadloze achterwaartse verenigbaarheid verzekeren en migratie of dubbel-milieu steun vereenvoudigen. In het volgende voorbeeld wordt de opdracht Valkey-specific getoond.
+
+```bash
+bin/magento setup:config:set --cache-backend=redis --cache-backend-redis-server=127.0.0.1 --cache-backend-redis-db=0
 ```
 
 ## Pagina in cache plaatsen configureren
@@ -58,6 +74,14 @@ Met de volgende parameters:
 
 - `--page-cache-valkey-<parameter>=<value>` is een lijst van sleutel-en-waardeparen die pagina in het voorgeheugen onderbrengen vormen:
 
+>[!NOTE]
+>
+>Beginnend met **Adobe Commerce 2.4.9-alpha2**, **Valkey** heeft officieel Redis in CLI tooling wegens veranderingen in het verlenen van vergunningen vervangen. Valkey is een vork van Redis en behoudt vrijwel dezelfde functionaliteit. Voor **versies 2.4.8 en vroeger**, blijven de bevelen CLI die worden gebruikt om Valkey te vormen het zelfde als die voor Redis, die naadloze achterwaartse verenigbaarheid verzekeren en migratie of dubbel-milieu steun vereenvoudigen. In het volgende voorbeeld wordt de opdracht Valkey-specific getoond.
+
+```bash
+bin/magento setup:config:set --page-cache=redis --page-cache-redis-<parameter>=<value>...
+```
+
 | Opdrachtregelparameter | Waarde | Betekenis | Standaardwaarde |
 |------------------------------| --------- |-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------| ------------- |
 | `page-cache-valkey-server` | server | Volledig gekwalificeerde hostnaam, IP-adres of een absoluut pad naar een UNIX-socket. De standaardwaarde van `127.0.0.1` geeft aan dat Valkey is geïnstalleerd op de Commerce-server. | `127.0.0.1` |
@@ -71,6 +95,14 @@ In het volgende voorbeeld wordt het in cache plaatsen van Valkey-pagina ingescha
 
 ```bash
 bin/magento setup:config:set --page-cache=valkey --page-cache-valkey-server=127.0.0.1 --page-cache-valkey-db=1
+```
+
+>[!NOTE]
+>
+>Beginnend met **Adobe Commerce 2.4.9-alpha2**, **Valkey** heeft officieel Redis in CLI tooling wegens veranderingen in het verlenen van vergunningen vervangen. Valkey is een vork van Redis en behoudt vrijwel dezelfde functionaliteit. Voor **versies 2.4.8 en vroeger**, blijven de bevelen CLI die worden gebruikt om Valkey te vormen het zelfde als die voor Redis, die naadloze achterwaartse verenigbaarheid verzekeren en migratie of dubbel-milieu steun vereenvoudigen. In het volgende voorbeeld wordt de opdracht Valkey-specific getoond.
+
+```bash
+bin/magento setup:config:set --page-cache=redis --page-cache-redis-server=127.0.0.1 --page-cache-valkey-db=1
 ```
 
 ## Resultaten
@@ -103,7 +135,7 @@ Als resultaat van de twee voorbeeldopdrachten voegt Commerce soortgelijke regels
 
 ## Nieuwe Valkey-cache-implementatie
 
-[!BADGE &#x200B; 2.4.9-alpha &#x200B;]{type=Negative tooltip="Alleen beschikbaar in 2.4.9-alfa."}
+[!BADGE  2.4.9-alpha ]{type=Negative tooltip="Alleen beschikbaar in 2.4.9-alfa."}
 
 Vanaf Adobe Commerce 2.4.9 raadt Adobe aan de Valkey-cache-implementatie te gebruiken: `\Magento\Framework\Cache\Backend\Valkey` .
 
