@@ -135,7 +135,7 @@ Als resultaat van de twee voorbeeldopdrachten voegt Commerce soortgelijke regels
 
 ## Nieuwe Valkey-cache-implementatie
 
-[!BADGE  2.4.9-alpha ]{type=Negative tooltip="Alleen beschikbaar in 2.4.9-alfa."}
+[!BADGE &#x200B; 2.4.9-alpha &#x200B;]{type=Negative tooltip="Alleen beschikbaar in 2.4.9-alfa."}
 
 Vanaf Adobe Commerce 2.4.9 raadt Adobe aan de Valkey-cache-implementatie te gebruiken: `\Magento\Framework\Cache\Backend\Valkey` .
 
