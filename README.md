@@ -43,13 +43,13 @@ Dit project heeft de [Adobe-gedragscode voor open source](code-of-conduct.md) of
 
 ## Over je bijdragen aan Adobe-inhoud
 
-Zie de [ Gids van de Medewerker van de Docent van Adobe ](https://experienceleague.adobe.com/docs/contributor/contributor-guide/introduction.html).
+Zie de [ Gids van de Medewerker van de Docent van Adobe ](https://experienceleague.adobe.com/docs/contributor/contributor-guide/introduction.html?lang=nl-NL).
 
 Hoe u een bijdrage levert, hangt af van wie u bent en van het soort veranderingen dat u wilt bijdragen:
 
 ### Kleine wijzigingen
 
-Als u minder belangrijke updates bijdraagt, bezoek het artikel en klik het terugkoppelen gebied dat bij de bodem van het artikel verschijnt, klik **Gedetailleerde terugkoppelt opties**, en klik dan **Voorstellen en** uitgeven om naar het prijsonderdrukkingsbrondossier op GitHub te gaan. Gebruik GitHub UI om uw updates te maken. Zie de algemene [ de contributorgids van Adobe Docs ](https://experienceleague.adobe.com/docs/contributor/contributor-guide/introduction.html) voor meer informatie.
+Als u minder belangrijke updates bijdraagt, bezoek het artikel en klik het terugkoppelen gebied dat bij de bodem van het artikel verschijnt, klik **Gedetailleerde terugkoppelt opties**, en klik dan **Voorstellen en** uitgeven om naar het prijsonderdrukkingsbrondossier op GitHub te gaan. Gebruik GitHub UI om uw updates te maken. Zie de algemene [ de contributorgids van Adobe Docs ](https://experienceleague.adobe.com/docs/contributor/contributor-guide/introduction.html?lang=nl-NL) voor meer informatie.
 
 Kleine correcties of verduidelijkingen die u ter documentatie en codevoorbeelden in dit antwoord aanbrengt, worden behandeld in de gebruiksvoorwaarden van Adobe.
 
@@ -67,7 +67,7 @@ Als u een technisch schrijver, programmamanager, of ontwikkelaar van het product
 
 Communautaire contribuanten kunnen GitHub UI voor basishet uitgeven of vork gebruiken het repo om belangrijke bijdragen te leveren.
 
-Zie de [ Gids van de Medewerker van de Docent van Adobe ](https://experienceleague.adobe.com/docs/contributor/contributor-guide/introduction.html) voor details.
+Zie de [ Gids van de Medewerker van de Docent van Adobe ](https://experienceleague.adobe.com/docs/contributor/contributor-guide/introduction.html?lang=nl-NL) voor details.
 
 ## Hoe te om prijsdaling te gebruiken om uw onderwerp te formatteren
 
@@ -86,8 +86,8 @@ Voor sommige onderwerpen, gebruiken wij gegevensdossiers en malplaatjes om gepub
 Voorbeelden van sjablooninhoud zijn onder andere:
 
 - [ CLI hulpmiddelverwijzing ](https://experienceleague.adobe.com/docs/commerce-operations/reference/commerce-on-premises.html)
-- [ de beschikbaarheidstabellen van het Product ](https://experienceleague.adobe.com/docs/commerce-operations/release/product-availability.html)
-- [ de lijsten van de systeemvereisten ](https://experienceleague.adobe.com/docs/commerce-operations/installation-guide/system-requirements.html)
+- [ de beschikbaarheidstabellen van het Product ](https://experienceleague.adobe.com/docs/commerce-operations/release/product-availability.html?lang=nl-NL)
+- [ de lijsten van de systeemvereisten ](https://experienceleague.adobe.com/docs/commerce-operations/installation-guide/system-requirements.html?lang=nl-NL)
 
 ### Sjablooninhoud genereren
 
@@ -109,8 +109,8 @@ Sjablooninhoud bijwerken:
 
 1. Open een gegevensbestand in de map `/jekyll/_data` in de teksteditor. Bijvoorbeeld:
 
-   - [ de beschikbaarheidstabellen van het Product ](https://experienceleague.adobe.com/docs/commerce-operations/release/product-availability.html): `/jekyll/_data/product-availability.yml`
-   - [ Eisen van het Systeem lijsten ](https://experienceleague.adobe.com/docs/commerce-operations/installation-guide/system-requirements.html): `/jekyll/_data/system-requirements.yml`
+   - [ de beschikbaarheidstabellen van het Product ](https://experienceleague.adobe.com/docs/commerce-operations/release/product-availability.html?lang=nl-NL): `/jekyll/_data/product-availability.yml`
+   - [ Eisen van het Systeem lijsten ](https://experienceleague.adobe.com/docs/commerce-operations/installation-guide/system-requirements.html?lang=nl-NL): `/jekyll/_data/system-requirements.yml`
 
 1. Gebruik de bestaande YAML-structuur om items te maken.
 
