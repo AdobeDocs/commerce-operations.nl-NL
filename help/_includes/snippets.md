@@ -31,7 +31,7 @@ ht-degree: 0%
 
 >[!NOTE]
 >
->Nadat u deze beveiligingspatch hebt geïnstalleerd, moeten Adobe Commerce B2B-handelaren ook een update uitvoeren naar de nieuwste compatibele B2B-beveiligingspatchrelease. Zie [ B2B versienota&#39;s ](https://experienceleague.adobe.com/en/docs/commerce-admin/b2b/release-notes).
+>Nadat u deze beveiligingspatch hebt geïnstalleerd, moeten Adobe Commerce B2B-handelaren ook een update uitvoeren naar de nieuwste compatibele B2B-beveiligingspatchrelease. Zie [ B2B versienota&#39;s ](https://experienceleague.adobe.com/nl/docs/commerce-admin/b2b/release-notes).
 
 ## Alleen Adobe Commerce {#ee-only}
 
@@ -85,4 +85,4 @@ Voordat u indexeerders in parallelle modus kunt uitvoeren, moet u ondersteuning 
 
 >[!IMPORTANT]
 >
->Adobe biedt geen ondersteuning voor het toepassen van officiële, door Adobe geleverde patches met deze methode. Gebruik de volgende methode voor eigen risico. Om officiële flarden toe te passen, gebruik [[!DNL Quality Patches Tool] ](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html){target="_blank"}. Voer altijd uitgebreide tests uit voordat u een aangepaste patch implementeert.
+>Adobe biedt geen ondersteuning voor het toepassen van officiële, door Adobe geleverde patches met deze methode. Gebruik de volgende methode voor eigen risico. Om officiële flarden toe te passen, gebruik [[!DNL Quality Patches Tool] ](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html?lang=nl-NL){target="_blank"}. Voer altijd uitgebreide tests uit voordat u een aangepaste patch implementeert.
