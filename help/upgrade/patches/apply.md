@@ -2,9 +2,9 @@
 title: Patches toepassen
 description: Leer hoe u patches kunt toepassen op een Adobe Commerce-project.
 exl-id: 1d5d81ad-0115-4575-adfd-dde7c2826d85
-source-git-commit: ddf988826c29b4ebf054a4d4fb5f4c285662ef4e
+source-git-commit: c8a20ad1b0b57724f389cfa5c63f6ae542758c2b
 workflow-type: tm+mt
-source-wordcount: '329'
+source-wordcount: '312'
 ht-degree: 0%
 
 ---
@@ -13,7 +13,7 @@ ht-degree: 0%
 
 U kunt patches op een van de volgende manieren toepassen:
 
-- [[!DNL Quality Patches Tool]](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html?lang=nl-NL){target="_blank"}
+- [[!DNL Quality Patches Tool]](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html){target="_blank"}
 - [Opdrachtregel](../patches/apply.md#command-line)
 - [Composer](../patches/apply.md#composer)
 
@@ -24,9 +24,7 @@ U kunt patches op een van de volgende manieren toepassen:
 
 ## Composer
 
->[!IMPORTANT]
->
->Gebruik [[!DNL Quality Patches Tool] ](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html?lang=nl-NL){target="_blank"} om officiële kwaliteitspatches toe te passen. Voer altijd uitgebreide tests uit voordat u een aangepaste patch implementeert.
+{{custom-patches-disclaimer}}
 
 Een aangepaste patch toepassen met Composer:
 

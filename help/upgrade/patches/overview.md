@@ -2,7 +2,7 @@
 title: Hoe reparaties werken
 description: Leer meer over de verschillende typen patches voor Adobe Commerce en hoe ze werken.
 exl-id: d7072ed4-7d51-41fe-881a-aae3b2000b55
-source-git-commit: ddf988826c29b4ebf054a4d4fb5f4c285662ef4e
+source-git-commit: c8a20ad1b0b57724f389cfa5c63f6ae542758c2b
 workflow-type: tm+mt
 source-wordcount: '533'
 ht-degree: 0%
@@ -43,7 +43,7 @@ U kunt hotfixes in het [ Centrum van de Veiligheid ](https://magento.com/securit
 
 Afzonderlijke patches bevatten oplossingen voor een bepaalde kwestie met een lage-effectkwaliteit. Deze correcties worden toegepast op de meest recente ondersteunde secundaire versie (bijvoorbeeld 2.4.x), maar kunnen ontbreken in de vorige ondersteunde secundaire versie (bijvoorbeeld 2.3.x). Adobe geeft de afzonderlijke patches waar nodig uit.
 
-Gebruik [[!DNL Quality Patches Tool] ](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html?lang=nl-NL){target="_blank"} om individuele flarden toe te passen.
+Gebruik [[!DNL Quality Patches Tool] ](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html){target="_blank"} om individuele flarden toe te passen.
 
 >[!NOTE]
 >
@@ -51,7 +51,9 @@ Gebruik [[!DNL Quality Patches Tool] ](https://experienceleague.adobe.com/tools/
 
 ## Aangepaste patches
 
-Soms duurt het even voordat het Adobe Engineering Team een bug fix heeft opgenomen die op GitHub is aangebracht in een Adobe Commerce Composer-release. Ondertussen, kunt u een flard van GitHub tot stand brengen en de [`cweagans/composer-patches` ](https://github.com/cweagans/composer-patches/) stop gebruiken om het op uw op composer-Gebaseerde installatie toe te passen.
+Soms duurt het even voor het Team van de Techniek van Adobe om een insectenmoeilijke situatie te omvatten die op GitHub in een officiële versie van Adobe Commerce wordt gemaakt. Ondertussen, kunt u een flard van GitHub tot stand brengen en de [`cweagans/composer-patches` ](https://github.com/cweagans/composer-patches/) stop gebruiken om het op uw op composer-Gebaseerde installatie toe te passen.
+
+{{custom-patches-disclaimer}}
 
 Gebruik de [ bevellijn ](apply.md#command-line) of [ Composer ](apply.md#composer) om douanepatches toe te passen.
 
@@ -90,10 +92,10 @@ index c8a6fef58d31..7d01c195791e 100644
 
 U kunt patches op een van de volgende manieren toepassen:
 
-- [[!DNL Quality Patches Tool]](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html?lang=nl-NL){target="_blank"}
+- [[!DNL Quality Patches Tool]](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html){target="_blank"}
 - [Opdrachtregel](/help/upgrade/patches/apply.md#command-line)
 - [Composer](/help/upgrade/patches/apply.md#composer)
 
 >[!NOTE]
 >
->Om een flard op een Adobe Commerce op het project van de wolkeninfrastructuur toe te passen, zie [ flarden ](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html?lang=nl-NL) in _Commerce op de gids van de Wolk_ toepassen.
+>Om een flard op een Adobe Commerce op het project van de wolkeninfrastructuur toe te passen, zie [ flarden ](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html) in _Commerce op de gids van de Wolk_ toepassen.
