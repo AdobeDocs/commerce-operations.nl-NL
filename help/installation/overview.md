@@ -2,10 +2,10 @@
 title: Overzicht van installatie op locatie
 description: Leer meer over het installatieproces voor een Adobe Commerce-uitrol op locatie.
 exl-id: a9f5b241-d05d-462c-8c7f-479a264c988f
-source-git-commit: 7cc77a204d2a3c0773e6a0ab60e57e6e35f12091
+source-git-commit: 9ad18dac76f171ad0f90330e1a1347baa056403b
 workflow-type: tm+mt
-source-wordcount: '329'
-ht-degree: 3%
+source-wordcount: '502'
+ht-degree: 2%
 
 ---
 
@@ -14,13 +14,30 @@ ht-degree: 3%
 
 Deze pagina biedt een overzicht van het installeren van Adobe Commerce op uw eigen infrastructuur. Het installatieproces omvat het instellen van de serveromgeving, het verkrijgen van de vereiste software en referenties en het uitvoeren van de installatieopdracht.
 
-U kunt de Adobe Commerce-software in ongeveer 30 tot 60 minuten installeren. De tijd die nodig is om uw serveromgeving in te stellen voordat de installatie wordt uitgevoerd, is echter afhankelijk van uw ervaring en de technologieën die u selecteert.
+U kunt de Adobe Commerce-software op locatie in ongeveer 30 tot 60 minuten installeren. De tijd die nodig is om uw serveromgeving in te stellen voordat de installatie wordt uitgevoerd, is echter afhankelijk van uw ervaring en de technologieën die u selecteert.
 
 >[!TIP]
 >
 >U zou tussenliggende technische kennis en servertoegang moeten hebben om met succes te werk te gaan.
 
-De installatie leidt tot een volledig functionele opslag van Adobe Commerce met zowel a [ klant-onder ogen ziet storefront ](https://experienceleague.adobe.com/nl/docs/commerce-admin/start/storefront/storefront) als een [ administratief paneel ](https://experienceleague.adobe.com/nl/docs/commerce-admin/start/admin/admin). U moet uw gegevensbestandgeloofsbrieven, domeininformatie, en authentificatietoetsen klaar hebben alvorens met het proces te beginnen.
+De installatie leidt tot een volledig functionele opslag van Adobe Commerce met zowel a [ klant-onder ogen ziet storefront ](https://experienceleague.adobe.com/en/docs/commerce-admin/start/storefront/storefront) als een [ administratief paneel ](https://experienceleague.adobe.com/en/docs/commerce-admin/start/admin/admin). U moet uw gegevensbestandgeloofsbrieven, domeininformatie, en authentificatietoetsen klaar hebben alvorens met het proces te beginnen.
+
+## Handelstaken
+
+Met Adobe Commerce op locatie kunt u uw eigen infrastructuur hosten en beheren, waaronder servers, hostomgevingen en systeemonderhoud. Adobe biedt specifieke ondersteuning voor de belangrijkste Commerce-toepassing, waaronder:
+
+- Toegang tot productupdates en oplossingen
+- Beveiligingspatches om kwetsbaarheden te verhelpen
+- Uitgebreide documentatie die u helpt bij het beheren en optimaliseren van uw zelfgehoste oplossing
+
+U hebt volledige controle over uw omgeving, zodat u meer aanpassingen en flexibiliteit kunt maken, maar u bent verantwoordelijk voor de prestaties, beveiliging en schaalbaarheid van de infrastructuur. U bent bijvoorbeeld verantwoordelijk voor het volgende:
+
+- Het ontwerp, de implementatie, de configuratie, het onderhoud, het oplossen van problemen en de prestatietests van alle Adobe Commerce op gebouwsystemen.
+   - Servers, besturingssysteem, databases, [!DNL PHP], zoeken, in cache plaatsen, volledige paginacache en netwerk voor het leveren van inhoud. Algemene thema&#39;s kunnen (maar niet beperkt tot) [!DNL Nginx/Apache], [!DNL PHP], [!DNL MySQL/MariaDB], [!DNL Redis], [!DNL Elasticsearch/OpenSearch], [!DNL RabbitMQ], [!DNL Varnish], [!DNL DNS], [!DNL SSL/TLS certificates] en alle gebruikte [!DNL CDN] elementen bevatten.
+- Capaciteitsplanning, automatische schaling, clustering, back-ups, noodherstel
+- Alle product en klantengegevens, ontwerp, configuratie en opstelling, toepassing en gegevensbestandonderhoud, codeplaatsing, versieverbeteringen, en flardtoepassing
+- Bewaking en waarschuwingen via APM/loggen/waarschuwen (bijvoorbeeld [!DNL New Relic], [!DNL Datadog], [!DNL ELK] )
+- Beveiligingspatches voor besturingssysteem, [!DNL PHP], database, hardware-harding en -updates
 
 ## Workflow
 
