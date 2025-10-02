@@ -42,26 +42,26 @@ Als uw project live is, raden we u aan een controle uit te voeren om de kwalitei
 
 Vanaf het moment dat u aan een project begint te werken, dient u te overwegen wat de gevolgen zullen zijn voor toekomstige upgrades van uw huidige werk. Volg altijd best practices voor Adobe Commerce-ontwikkeling zoals hier beschreven:
 
-- [ Beste praktijken van de Ontwikkeling ](https://developer.adobe.com/commerce/php/best-practices/)
-- [ Coderingsnormen ](https://developer.adobe.com/commerce/php/coding-standards/)
+- [&#x200B; Beste praktijken van de Ontwikkeling &#x200B;](https://developer.adobe.com/commerce/php/best-practices/)
+- [&#x200B; Coderingsnormen &#x200B;](https://developer.adobe.com/commerce/php/coding-standards/)
 
 Begin met het aannemen van het Adobe Commerce Extenability Platform, als u dit nog niet hebt gedaan. Met het platform kunt u processen efficiënt aanpassen, systemen integreren en nieuwe mogelijkheden implementeren terwijl u SaaS-achtige upgradebaarheid behoudt. De volgende functies zijn beschikbaar:
 
-- **Uitbreidbaarheid UI**. Breid en evolueer uw storefront onafhankelijk van uw backend en middleware gebruikend [ PWA Studio ](https://developer.adobe.com/commerce/pwa-studio/) uit.
+- **Uitbreidbaarheid UI**. Breid en evolueer uw storefront onafhankelijk van uw backend en middleware gebruikend [&#x200B; PWA Studio &#x200B;](https://developer.adobe.com/commerce/pwa-studio/) uit.
 
-- **API Rekbaarheid**. Het gebruik [ GraphQL ](https://developer.adobe.com/commerce/webapi/graphql/index.html) om Web API laag uit te breiden door het model van grafiekgegevens te evolueren en lambdafuncties direct van de grafieklaag uit te voeren.
+- **API Rekbaarheid**. Het gebruik [&#x200B; GraphQL &#x200B;](https://developer.adobe.com/commerce/webapi/graphql/index.html) om Web API laag uit te breiden door het model van grafiekgegevens te evolueren en lambdafuncties direct van de grafieklaag uit te voeren.
 
-- **Adobe I/O middleware en de diensten**. Verbind uw systemen met Adobe Commerce gebruikend middleware Adobe en een reeks die toepassingsverbindingen op [ Adobe I/O ](https://www.adobe.io/) worden voortgebouwd. Bovendien kunt u de mogelijkheden van kernplatforms uitbreiden door het standaardgedrag te overschrijven met uw eigen bedrijfslogica die op Adobe I/O wordt uitgevoerd.
+- **Adobe I/O middleware en de diensten**. Verbind uw systemen met Adobe Commerce gebruikend middleware Adobe en een reeks die toepassingsverbindingen op [&#x200B; Adobe I/O &#x200B;](https://www.adobe.io/) worden voortgebouwd. Bovendien kunt u de mogelijkheden van kernplatforms uitbreiden door het standaardgedrag te overschrijven met uw eigen bedrijfslogica die op Adobe I/O wordt uitgevoerd.
 
 ### Upgrades plannen
 
 Aangezien wij de mogelijkheden van Adobe Commerce voortdurend uitbreiden, is het essentieel dat u zich op de recentste beschikbare versie ontwikkelt en een verbeteringsstrategie in uw projectplannen bepaalt. Dit helpt u veilig, volgzaam, en bijgewerkt op de recentste verhogingen blijven die u toestaan om verkoop sneller te groeien, effectiever te werken, en uw concurrentie nu en in de toekomst voor te blijven.
 
-Om u te helpen plannen en begroting voor verbeteringen, zou u ons [ versieschema ](https://experienceleague.adobe.com/en/docs/commerce-operations/release/planning/schedule) moeten controleren. De verbeteringstaken van het plan binnen de achterstand van uw team van tevoren. Doel om dit werk met GA te voltooien.
+Om u te helpen plannen en begroting voor verbeteringen, zou u ons [&#x200B; versieschema &#x200B;](https://experienceleague.adobe.com/en/docs/commerce-operations/release/planning/schedule) moeten controleren. De verbeteringstaken van het plan binnen de achterstand van uw team van tevoren. Doel om dit werk met GA te voltooien.
 
 - Gebruik de pre-versieversie om over elke nieuwe versie te leren. De pre-versie is de Algemene code van de Beschikbaarheid die aan de verkopers van Adobe Commerce en alle partners twee weken vóór Algemene Beschikbaarheid beschikbaar is. Als u veelvoudige opslag hebt, gebruik pre-versie op uw basisopslag en verifieer dat uw douanemodules en thema&#39;s met het compatibel zijn.
 
-- Herzie de [ checklist van het Plan van de Verbetering ](https://experienceleague.adobe.com/en/docs/commerce-operations/implementation-playbook/best-practices/maintenance/upgrade-checklist) voor Adobe Commerce om u te helpen voor uw verbetering plannen.
+- Herzie de [&#x200B; checklist van het Plan van de Verbetering &#x200B;](https://experienceleague.adobe.com/en/docs/commerce-operations/implementation-playbook/best-practices/maintenance/upgrade-checklist) voor Adobe Commerce om u te helpen voor uw verbetering plannen.
 
 - Plan voor verbeteringen aan het begin van het jaar. U moet een budget en middelen boeken om elke verbetering te voltooien. Herinner me, zou de verbeteringsinspanning van project aan project beduidend kunnen variëren. Gebruik uw ervaringen en kennis om een plan zo accuraat mogelijk te maken.
 
@@ -73,7 +73,7 @@ Upgrades moeten regelmatig en binnen een vooraf bepaalde begroting plaatsvinden.
 
 Evalueer het werk dat moet worden gedaan voor de upgrade:
 
-- Herzie de [ versienota&#39;s ](https://experienceleague.adobe.com/en/docs/commerce-operations/release/notes/overview) om het werkingsgebied en het effect van de nieuwe versie te begrijpen.
+- Herzie de [&#x200B; versienota&#39;s &#x200B;](https://experienceleague.adobe.com/en/docs/commerce-operations/release/notes/overview) om het werkingsgebied en het effect van de nieuwe versie te begrijpen.
 
 - Gebruik [[!DNL Upgrade Compatibility Tool]](../upgrade-compatibility-tool/overview.md) om potentiële problemen te identificeren die in uw douanecode moeten worden opgelost alvorens te proberen om aan een nieuwere versie te bevorderen.
 
@@ -81,7 +81,7 @@ Evalueer het werk dat moet worden gedaan voor de upgrade:
 
 ### Post-upgrade testen
 
-Het testen is de fase van een verbetering die de meeste tijd vereist. Dit proces moet daarom zo geautomatiseerd mogelijk zijn. U kunt profiteren van de belangrijkste testgereedschappen. De [ het Testen Gids van de Toepassing ](https://developer.adobe.com/commerce/testing/guide/) verstrekt details.
+Het testen is de fase van een verbetering die de meeste tijd vereist. Dit proces moet daarom zo geautomatiseerd mogelijk zijn. U kunt profiteren van de belangrijkste testgereedschappen. De [&#x200B; het Testen Gids van de Toepassing &#x200B;](https://developer.adobe.com/commerce/testing/guide/) verstrekt details.
 
 Gebruik een testomgeving om de upgrade te testen en te valideren voordat u overschakelt naar de productie.
 
