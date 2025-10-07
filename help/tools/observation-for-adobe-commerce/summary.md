@@ -3,9 +3,9 @@ title: Het tabblad [!UICONTROL Summary]
 description: Leer meer over het [!UICONTROL Summary] lusje van  [!DNL Observation for Adobe Commerce].
 exl-id: b07ed898-a211-4353-a1d4-1b71d4898b93
 feature: Configuration, Observability
-source-git-commit: 790089c178570ee69f33cc04b17800db5563741e
+source-git-commit: 4caabd1578e56b74600441c9c779b7b2dfd06987
 workflow-type: tm+mt
-source-wordcount: '2462'
+source-wordcount: '2494'
 ht-degree: 0%
 
 ---
@@ -32,19 +32,19 @@ Als je kijkt naar het bovenstaande frame van **[!UICONTROL Transaction Overview]
 
 ## [!UICONTROL 404 page errors frame]
 
-![ kader van 404 paginafouten ](../../assets/tools/404-page-errors.jpg)
+![ 404 fout controledashboard die pagina tonen niet gevonden incidenten in tijd ](../../assets/tools/404-page-errors.jpg)
 
 Het **[!UICONTROL 404 page errors]** kader maakt een lijst van [ URI ](https://en.wikipedia.org/wiki/Uniform_Resource_Identifier) en de telling van 404 paginafouten voor geselecteerde timeframe.
 
 ## [!UICONTROL % of Storage Free frame]
 
-![ percenten van het Vrije kader van de Opslag ](../../assets/tools/percent-of-storage-free.jpg)
+![ het gebruiksgrafiek van de Opslag die het beschikbare percentage van de schijfruimte toont ](../../assets/tools/percent-of-storage-free.jpg)
 
 In het frame **[!UICONTROL % of Storage Free]** wordt het gemiddelde percentage weergegeven dat vrij is van de opslagbevestigingen in alle knooppunten van uw cluster. Als u bijvoorbeeld een cluster met drie knooppunten hebt, wordt in het frame \&lt;mount point\>, \&lt;environment name\> weergegeven. Dit frame kan misleidend zijn als er een variatie is tussen drie knooppunten. Een voorbeeld van een variantie zou zijn als de `/data/mysql` mount point free een verschillende waarde over de drie knoopclusters was. Er is een frame onder het tabblad [!UICONTROL MySQL] dat de koppelingspunten op knooppuntnaam instelt om nauwkeuriger te zien wat de `/data/mysql` -opslagruimte op elk knooppunt is.
 
 ## [!UICONTROL % of system memory that is free frame]
 
-![ percentage van systeemgeheugen dat vrij kader ](../../assets/tools/percent-of-system-memory-that-is-free.jpg) is
+![ grafiek van het het geheugengebruik van het Systeem die beschikbaar percentage van RAM toont ](../../assets/tools/percent-of-system-memory-that-is-free.jpg)
 
 **% van systeemgeheugen dat vrije** kader is toont, door knoop, de hoeveelheid systeemgeheugen die op elke knoop vrij is.
 
@@ -58,11 +58,11 @@ In het frame **[!UICONTROL Swap memory free in bytes]** wordt per knooppunt de h
 
 ![ CPU percenten door gastheer ](../../assets/tools/cpu-percent-by-host.jpg)
 
-Het totaal van alle omgevingen en knooppunten wordt weergegeven in het **[!UICONTROL CPU % by host]** -frame. Schakel de niet-productieomgevingen uit. Let ook op gevallen waarin niet alle knooppunten voor de productieomgeving aanwezig zijn. Voor meer uiteinden op hoog gebruik van CPU, verwijs naar [ de prestaties problemen oplossen gebruikend New Relic op Adobe Commerce ](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/troubleshoot-performance-using-new-relic-on-magento-commerce.html?lang=nl-NL).
+Het totaal van alle omgevingen en knooppunten wordt weergegeven in het **[!UICONTROL CPU % by host]** -frame. Schakel de niet-productieomgevingen uit. Let ook op gevallen waarin niet alle knooppunten voor de productieomgeving aanwezig zijn. Voor meer uiteinden op hoog gebruik van CPU, verwijs naar [ de prestaties problemen oplossen gebruikend New Relic op Adobe Commerce ](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/troubleshoot-performance-using-new-relic-on-magento-commerce.html).
 
 ## [!UICONTROL Alerts during timeframe]
 
-![ alarm tijdens timeframe ](../../assets/tools/alerts-during-timeframe.jpg)
+![ Dashboard van de waakzame berichten die incidenten binnen geselecteerde tijdspanne tonen ](../../assets/tools/alerts-during-timeframe.jpg)
 
 In **[!UICONTROL Alerts during timeframe]** worden alle waarschuwingen weergegeven, inclusief de waarschuwingen die door Adobe Commerce zijn toegevoegd. [!UICONTROL Managed Alerts]
 
@@ -70,7 +70,7 @@ In **[!UICONTROL Alerts during timeframe]** worden alle waarschuwingen weergegev
 
 ![ gebruik van CPU ](../../assets/tools/cpu-usage.jpg)
 
-Als het frame **[!UICONTROL CPU Usage]** leeg is, geeft dit aan dat de infrastructuurtoepassing van [!DNL New Relic] niet is ingeschakeld. Als uw site op Starter staat, worden deze gegevens niet weergegeven. Als uw plaats op Pro is, open a [ steunkaartje ](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html?lang=nl-NL) om [!DNL New Relic Infrastructure] te hebben toegelaten voor uw plaats.
+Als het frame **[!UICONTROL CPU Usage]** leeg is, geeft dit aan dat de infrastructuurtoepassing van [!DNL New Relic] niet is ingeschakeld. Als uw site op Starter staat, worden deze gegevens niet weergegeven. Als uw plaats op Pro is, open a [ steunkaartje ](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html) om [!DNL New Relic Infrastructure] te hebben toegelaten voor uw plaats.
 
 ## [!UICONTROL Average Response Time]
 
@@ -139,7 +139,7 @@ Het frame **[!UICONTROL API Calls by IP]** helpt bij het identificeren van zwaar
 
 ## [!UICONTROL API Calls by IP, details by URL]
 
-![ api vraag door ip details door url ](../../assets/tools/api-calls-by-ip-details-by-url.jpg)
+![ API verzoekanalyse die vraag toont die door IP adres en eindpunt URL wordt gegroepeerd ](../../assets/tools/api-calls-by-ip-details-by-url.jpg)
 
 Het frame **[!UICONTROL API Calls by IP, details by URL]** bevat details over zwaar verkeer op basis van de API&#39;s en details van de URL&#39;s die de aanvragen indienen.
 
@@ -332,13 +332,13 @@ Het frame **[!UICONTROL Fastly Cache]** toont een geaggregeerde weergave van de 
 
 ## [!UICONTROL Page Rendering]
 
-![ pagina teruggevend ](../../assets/tools/page-rendering.jpg)
+![ de prestatiemetriek die van de Pagina teruggevende tijdanalyse tonen ](../../assets/tools/page-rendering.jpg)
 
 In het frame **[!UICONTROL Page Rendering]** wordt de gemiddelde weergaveduur van de pagina in de huidige week van de bron van de paginaweergave [!DNL New Relic] weergegeven in vergelijking met de vorige week tijdens dezelfde periode.
 
 ## [!UICONTROL Page loading detail]
 
-![ pagina ladend detail ](../../assets/tools/page-loading-detail.png)
+![ Gedetailleerde pagina ladende prestatiesonderbreking die ladingstijdecomponenten ](../../assets/tools/page-loading-detail.png) tonen
 
 In het **[!UICONTROL Page loading detail]** -frame worden de gebeurtenissen beschreven die de pagina laden. Het geeft de betekenis van deze facetten nader. Hier is de vraag die voor dit kader in werking wordt gesteld:
 
@@ -384,7 +384,7 @@ Het **[!UICONTROL Order transactions (default?)]** -frame zoekt naar transacties
 * &#39;%U kunt dit probleem verhelpen door de Elasticsearch-service op uw Magento Cloud-infrastructuur te upgraden naar versie%&#39; als &#39;ver_err&#39;
 * &#39;%clusterstatus gewijzigd van \[YELLOW\] in \[RED\] (reason:%&#39; als &#39;yel_red&#39;
 * &#39;%No space left on device%&#39; as &#39;no_space&#39;
-* &#39;% Kan &lbrack;SearchRequest&lbrace;searchType=%&#39; niet uitvoeren als &#39;failed_query&#39;
+* &#39;% Kan [SearchRequest{searchType=%&#39; niet uitvoeren als &#39;failed_query&#39;
 
 ## [!UICONTROL Cron view]
 
@@ -421,7 +421,7 @@ In dit **[!UICONTROL Datastore Operations Tables]** -frame worden de bovenste 25
 
 ![ geheim voorgeheugenflush ](../../assets/tools/cache-flush.jpg)
 
-{de flushes van 0} Geheime voorgeheugen ontdekte:**&#x200B;**
+{de flushes van 0} Geheime voorgeheugen ontdekte:****
 
 * &#39;%config%&#39; als &#39;config_cache_flushed&#39;
 * &#39;%layout%&#39; als &#39;layout_cache_flush&#39;

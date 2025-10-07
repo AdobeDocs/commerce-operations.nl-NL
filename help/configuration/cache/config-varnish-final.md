@@ -1,11 +1,11 @@
 ---
 title: Laatste verificatie
-description: Controleer of uw Varnish-configuratie correct is ingesteld voor gebruik met de Adobe Commerce-toepassing.
+description: Leer hoe u de laatste verificatie van uw Varnish-configuratie met Adobe Commerce kunt uitvoeren. Ontdek teststappen en technieken voor probleemoplossing.
 feature: Configuration, Cache
 exl-id: 01f28c93-75cd-4969-9142-b8dac0aa2adb
-source-git-commit: ca8dc855e0598d2c3d43afae2e055aa27035a09b
+source-git-commit: 10f324478e9a5e80fc4d28ce680929687291e990
 workflow-type: tm+mt
-source-wordcount: '345'
+source-wordcount: '348'
 ht-degree: 0%
 
 ---
@@ -83,4 +83,4 @@ Controleer of de map `<magento_root>/var/page_cache` leeg is:
 
 >[!TIP]
 >
->Als u 503 (Ontbroken de Ophalen van de Achterkant) fouten ontmoet, zie [ het Oplossen van problemen 503 (de Dienst niet beschikbaar) fouten ](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/troubleshooting-503-errors.html?lang=nl-NL) in het _Adobe Commerce Help Center_.
+>Als u 503 (Ontbroken de Ophalen van de Achterkant) fouten ontmoet, zie [ het Oplossen van problemen 503 (de Dienst niet beschikbaar) fouten ](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/troubleshooting-503-errors.html) in het _Adobe Commerce Help Center_.

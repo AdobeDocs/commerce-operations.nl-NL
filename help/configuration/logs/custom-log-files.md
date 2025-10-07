@@ -1,12 +1,12 @@
 ---
 title: Naar aangepast logbestand schrijven
-description: Leer aangepaste logbestanden in te stellen.
+description: Leer hoe u aangepaste logbestanden maakt en configureert in Adobe Commerce. Ontdek loggermanagers en douane registrerenimplementatie.
 feature: Configuration, Logs
 badge: label="Bijgedragen door Atwix" type="Informative" url="https://www.atwix.com/" tooltip="Atwix"
 exl-id: 875f45e7-30c9-4b1b-afe9-d1a8d51ccdf0
-source-git-commit: 991bd5fb34a2ffe61aa194ec46e2b04b4ce5b3e7
+source-git-commit: 10f324478e9a5e80fc4d28ce680929687291e990
 workflow-type: tm+mt
-source-wordcount: '309'
+source-wordcount: '321'
 ht-degree: 0%
 
 ---
@@ -117,7 +117,7 @@ In dit voorbeeld wordt getoond hoe u een aangepaste logboekafhandelingsklasse ku
    }
    ```
 
-1. Bepaal de manager voor deze klasse als a [ virtueel type ](https://developer.adobe.com/commerce/php/development/build/dependency-injection-file/#virtual-types) in het 2&rbrace; dossier van de module &lbrace;.`di.xml`
+1. Bepaal de manager voor deze klasse als a [ virtueel type ](https://developer.adobe.com/commerce/php/development/build/dependency-injection-file/#virtual-types) in het 2} dossier van de module {.`di.xml`
 
    ```xml
    <virtualType name="MyCustomLogger" type="Magento\Framework\Logger\Monolog">

@@ -1,10 +1,10 @@
 ---
 title: Symlinks naar LESS-bestanden maken
-description: Leer hoe u symlinks naar LESS-bestanden maakt.
+description: Leer hoe u symlinks naar LESS-bestanden maakt voor Adobe Commerce-ontwikkeling. Ontdek stijlpagina-koppelingen en optimalisatie van de ontwikkelingsworkflow.
 exl-id: 58a6123a-28b4-445b-b3f9-f524233ac127
-source-git-commit: ca8dc855e0598d2c3d43afae2e055aa27035a09b
+source-git-commit: 10f324478e9a5e80fc4d28ce680929687291e990
 workflow-type: tm+mt
-source-wordcount: '161'
+source-wordcount: '172'
 ht-degree: 0%
 
 ---

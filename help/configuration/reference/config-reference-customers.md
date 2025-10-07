@@ -1,11 +1,11 @@
 ---
 title: Verwijzing naar configuratiepaden van klanten
-description: Zie een lijst van de waarden van de klantenconfiguratie.
+description: Meer informatie over configuratiepaden en -waarden voor klanten vindt u in Adobe Commerce Admin-instellingen. Ontdek nieuwsbrief, rekeningsbeheer, en de opties van de klantendienst.
 feature: Configuration, Customers
 exl-id: a0571423-6fbd-4cfc-9797-a13c0c24bb53
-source-git-commit: 16e9396f19693436dfc7bdac78d84624a78f0c21
+source-git-commit: 10f324478e9a5e80fc4d28ce680929687291e990
 workflow-type: tm+mt
-source-wordcount: '883'
+source-wordcount: '896'
 ht-degree: 0%
 
 ---

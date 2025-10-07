@@ -1,11 +1,11 @@
 ---
 title: Valkey configureren
-description: Bekijk een overzicht van Valkey-functies en start de Valkey-configuratie.
+description: Leer hoe u valkey-caching configureert voor optimalisatie van Adobe Commerce-prestaties. Ontdek eigenschappen, opstellingsstappen, en configuratie beste praktijken.
 feature: Configuration, Cache
 exl-id: 12dbc171-3df6-4413-869b-a3450b5647b4
-source-git-commit: b2cf71bfda3e5db8e27eb28d764cf99216454e33
+source-git-commit: 10f324478e9a5e80fc4d28ce680929687291e990
 workflow-type: tm+mt
-source-wordcount: '341'
+source-wordcount: '349'
 ht-degree: 0%
 
 ---

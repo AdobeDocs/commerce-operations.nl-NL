@@ -1,11 +1,11 @@
 ---
 title: Verwijzing naar catalogusconfiguratiepaden
-description: Zie een lijst met configuratiewaarden voor de catalogus.
+description: Meer informatie over configuratiepaden en waarden voor catalogi vindt u in Adobe Commerce Admin-instellingen. Ontdek de configuratieopties voor product-, categorie- en catalogusbeheer.
 feature: Configuration, Catalog Management
 exl-id: 19451443-228e-437d-a3eb-7dc968b9fb0d
-source-git-commit: 47bda51cdcab964c37d9f652d467d69d795d8641
+source-git-commit: 10f324478e9a5e80fc4d28ce680929687291e990
 workflow-type: tm+mt
-source-wordcount: '832'
+source-wordcount: '845'
 ht-degree: 0%
 
 ---
@@ -23,8 +23,8 @@ Deze configuratiewaarden zijn beschikbaar in Admin in **Slaat** > Montages > **C
 | Naam | Config-pad | Alleen Commerce? |
 |--------------|--------------|--------------|
 | Masker voor SKU | `catalog/fields_masks/sku` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
-| Masker voor metatitel | `catalog/fields_masks/meta_title` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
-| Masker voor metatrefwoorden | `catalog/fields_masks/meta_keyword` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
+| Masker voor Meta-titel | `catalog/fields_masks/meta_title` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
+| Masker voor Meta-trefwoorden | `catalog/fields_masks/meta_keyword` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 | Masker voor Meta-beschrijving | `catalog/fields_masks/meta_description` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 | Lijstmodus | `catalog/frontend/list_mode` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 | Producten per pagina op raster Toegestane waarden | `catalog/frontend/grid_per_page_values` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
@@ -80,8 +80,8 @@ Deze configuratiewaarden zijn beschikbaar in Admin in **Slaat** > Montages > **C
 | Categoriepad gebruiken voor product-URL&#39;s | `catalog/seo/product_use_categories` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 | Permanente omleiding maken voor URL&#39;s als URL-sleutel is gewijzigd | `catalog/seo/save_rewrites_history` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 | Scheidingsteken paginatitel | `catalog/seo/title_separator` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
-| Meta-tag canonieke koppeling gebruiken voor categorieën | `catalog/seo/category_canonical_tag` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
-| Meta-tag Canonical link gebruiken voor producten | `catalog/seo/product_canonical_tag` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
+| Meta-tag voor canonieke koppeling gebruiken voor categorieën | `catalog/seo/category_canonical_tag` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
+| Meta-tag voor Canonical Link gebruiken voor producten | `catalog/seo/product_canonical_tag` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 | Inschakelen | `catalog/magento_catalogpermissions/enabled` | ![ Commerce-slechts ](/help/assets/configuration/cloud-ee.png) |
 | Browsercategorie toestaan | `catalog/magento_catalogpermissions/grant_catalog_category_view` | ![ Commerce-slechts ](/help/assets/configuration/cloud-ee.png) |
 | Klantengroepen | `catalog/magento_catalogpermissions/grant_catalog_category_view_groups` | ![ Commerce-slechts ](/help/assets/configuration/cloud-ee.png) |
@@ -151,7 +151,7 @@ Deze configuratiewaarden zijn beschikbaar in Admin in **Opslag** > Montages > **
 
 ## Visuele Merchandiserpaden
 
-[!BADGE &#x200B; slechts PaaS &#x200B;]{type=Informative url="https://experienceleague.adobe.com/nl/docs/commerce/user-guides/product-solutions" tooltip="Is alleen van toepassing op Adobe Commerce op Cloud-projecten (door Adobe beheerde PaaS-infrastructuur) en op projecten in het veld."}
+[!BADGE  slechts PaaS ]{type=Informative url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Is alleen van toepassing op Adobe Commerce op Cloud-projecten (door Adobe beheerde PaaS-infrastructuur) en op projecten in het veld."}
 
 Deze configuratiewaarden zijn beschikbaar in Admin in **Slaat** > Montages > **Configuratie** > **Catalogus** > **Visuele Merchandiser**.
 

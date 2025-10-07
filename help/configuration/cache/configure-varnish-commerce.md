@@ -1,11 +1,11 @@
 ---
 title: Varnish configureren voor Commerce
-description: Leer om uw Varnish configuratiedossier voor de toepassing van Commerce bij te werken en te beheren.
+description: Leer hoe u Varnish specifiek voor Adobe Commerce-toepassingen configureert. Ontdek updates van configuratiebestanden en beheertechnieken.
 feature: Configuration, Cache, SCD
 exl-id: 6c007ff9-493f-4df2-b7b4-438b41fd7e37
-source-git-commit: 602a1ef82fcb8d30ff027db0fe0aacb981c7e08e
+source-git-commit: 10f324478e9a5e80fc4d28ce680929687291e990
 workflow-type: tm+mt
-source-wordcount: '396'
+source-wordcount: '400'
 ht-degree: 0%
 
 ---
@@ -23,7 +23,7 @@ Commerce configureren voor het gebruik van Varnish:
    | Veld | Beschrijving |
    | ----- | ----------- |
    | Toegangslijst | Ga volledig in - gekwalificeerde hostname, IP adres, of [ Klasseloze inter-domein Verpletterend (CIDR) ](https://www.digitalocean.com/community/tutorials/understanding-ip-addresses-subnets-and-cidr-notation-for-networking) notatieIP adreswaaier waarvoor om inhoud ongeldig te maken. Zie [ het geheime voorgeheugen van de Varnish Wissen ](https://varnish-cache.org/docs/3.0/tutorial/purging.html). |
-   | Backend-host | Ga volledig in - gekwalificeerde hostname of IP adres en luister haven van het Varnish _achterste eind_ of _oorsprongserver_; namelijk de server die de inhoud verstrekt vergroot. Dit is doorgaans uw webserver. Zie [ servers van de het geheime voorgeheugensteun van 0&rbrace; Varnish.](https://www.varnish-cache.org/docs/trunk/users-guide/vcl-backends.html) |
+   | Backend-host | Ga volledig in - gekwalificeerde hostname of IP adres en luister haven van het Varnish _achterste eind_ of _oorsprongserver_; namelijk de server die de inhoud verstrekt vergroot. Dit is doorgaans uw webserver. Zie [ servers van de het geheime voorgeheugensteun van 0} Varnish.](https://www.varnish-cache.org/docs/trunk/users-guide/vcl-backends.html) |
    | Backend-poort | De luisterpoort van de oorspronkelijke server. |
    | Respijtperiode | Hiermee bepaalt u hoe lang Varnish schaalinhoud dient als de backend niet reageert. De standaardwaarde is 300 seconden. |
    | Hiermee wordt de grootte van params afgehandeld | Specificeert het maximumaantal [ lay-outhandvatten ](https://developer.adobe.com/commerce/frontend-core/guide/layouts/#layout-handles) om op het [`{BASE-URL}/page_cache/block/esi`](use-varnish-esi.md) eindpunt van HTTP voor volledig-pagina caching te verwerken. Het beperken van de grootte kan de veiligheid en de prestaties verbeteren. De standaardwaarde is 100. |

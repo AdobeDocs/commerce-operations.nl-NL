@@ -1,11 +1,11 @@
 ---
 title: In cache plaatsen op CentOS
-description: In cache geplaatst op CentOS installeren en configureren.
+description: Leer hoe u in cache geplaatste bestanden op CentOS voor Adobe Commerce installeert en configureert. Ontdek installatie-instructies en optimalisatietips.
 feature: Configuration, Cache, Storage
 exl-id: fc4ad18b-7e99-496e-aebc-1d7640d8716c
-source-git-commit: ca8dc855e0598d2c3d43afae2e055aa27035a09b
+source-git-commit: 10f324478e9a5e80fc4d28ce680929687291e990
 workflow-type: tm+mt
-source-wordcount: '550'
+source-wordcount: '563'
 ht-degree: 0%
 
 ---

@@ -1,11 +1,11 @@
 ---
 title: Caching configureren
-description: Leer over caching en hoe te om geheim voorgeheugenmechanismen voor de toepassing van Adobe Commerce te vormen.
+description: Meer informatie over cachemechanismen en configuratieopties voor Adobe Commerce-toepassingen. Alternatieven voor standaardcaching van bestandssystemen ontdekken.
 feature: Configuration, Cache
 exl-id: 6effa069-c043-411a-b161-01210be17391
-source-git-commit: 8d0d8f9822b88f2dd8cbae8f6d7e3cdb14cc4848
+source-git-commit: 10f324478e9a5e80fc4d28ce680929687291e990
 workflow-type: tm+mt
-source-wordcount: '203'
+source-wordcount: '207'
 ht-degree: 0%
 
 ---

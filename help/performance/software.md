@@ -1,11 +1,11 @@
 ---
 title: Aanbevelingen voor software
-description: Bekijk een lijst met aanbevolen software voor optimale prestaties van Adobe Commerce-implementaties.
+description: Meer informatie over softwarevereisten en aanbevelingen voor Adobe Commerce. Ontdek gesteunde versies en configuratie beste praktijken voor productie.
 feature: Best Practices, Install
 exl-id: b091a733-7655-4e91-a988-93271872c5d5
-source-git-commit: 8d0d8f9822b88f2dd8cbae8f6d7e3cdb14cc4848
+source-git-commit: 10f324478e9a5e80fc4d28ce680929687291e990
 workflow-type: tm+mt
-source-wordcount: '1392'
+source-wordcount: '1396'
 ht-degree: 0%
 
 ---

@@ -1,11 +1,11 @@
 ---
 title: Webserver configureren
-description: Leer hoe u uw webserver configureert voor gebruik met Varnish.
+description: Leer hoe u uw webserver configureert voor gebruik met Varnish caching voor Adobe Commerce. Ontdek havenconfiguratie en opstellingsvereisten.
 feature: Configuration, Cache, Install, Logs
 exl-id: b31179ef-3c0e-4a6b-a118-d3be1830ba4e
-source-git-commit: ca8dc855e0598d2c3d43afae2e055aa27035a09b
+source-git-commit: 10f324478e9a5e80fc4d28ce680929687291e990
 workflow-type: tm+mt
-source-wordcount: '737'
+source-wordcount: '747'
 ht-degree: 0%
 
 ---
@@ -76,7 +76,7 @@ Varnish minimaliseren:
 
 1. Vervang de waarde van `.host` met volledig - gekwalificeerd hostname of IP adres en luister haven van de Varnish _achterkant_ of _oorsprongserver_; namelijk zal de server die de inhoud verstrekt Varnish versnellen.
 
-   Dit is doorgaans uw webserver. Zie [ servers van het Achterste 1&rbrace; in de ](https://varnish-cache.org/docs/trunk/users-guide/vcl-backends.html) Versijke gids _._
+   Dit is doorgaans uw webserver. Zie [ servers van het Achterste 1} in de ](https://varnish-cache.org/docs/trunk/users-guide/vcl-backends.html) Versijke gids _._
 
 1. Vervang de waarde van `.port` door de listen-poort van de webserver (8080 in dit voorbeeld).
 

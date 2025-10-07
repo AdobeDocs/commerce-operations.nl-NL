@@ -1,10 +1,10 @@
 ---
 title: Een aangepaste uitsnijdtaak en uitsnijdgroep configureren (zelfstudie)
-description: Gebruik deze stapsgewijze zelfstudie om een aangepaste uitsnijdtaak te maken.
+description: Leer hoe u met deze stapsgewijze zelfstudie voor Adobe Commerce aangepaste uitsnijdtaken kunt maken. De configuratie van de module en de groep van de cron ontdekken.
 exl-id: d8efcafc-3ae1-4c2d-a8ad-4a806fb48932
-source-git-commit: ca8dc855e0598d2c3d43afae2e055aa27035a09b
+source-git-commit: 10f324478e9a5e80fc4d28ce680929687291e990
 workflow-type: tm+mt
-source-wordcount: '809'
+source-wordcount: '820'
 ht-degree: 0%
 
 ---

@@ -1,12 +1,12 @@
 ---
 title: Gegevens genereren voor het testen van prestaties
-description: Leer hoe u een grote hoeveelheid gegevens genereert die u kunt gebruiken voor het testen van de prestaties.
+description: Leer hoe u grote hoeveelheden gegevens genereert voor het testen van Adobe Commerce-prestaties. Ontdek profielen voor gegevensgeneratie en teststrategieën.
 feature: Configuration, Orders
 exl-id: 2f54701d-88c4-464a-b4dc-56db14d54160
-source-git-commit: ca8dc855e0598d2c3d43afae2e055aa27035a09b
+source-git-commit: 10f324478e9a5e80fc4d28ce680929687291e990
 workflow-type: tm+mt
-source-wordcount: '762'
-ht-degree: 9%
+source-wordcount: '768'
+ht-degree: 8%
 
 ---
 

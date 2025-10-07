@@ -1,10 +1,10 @@
 ---
 title: Cron-taken
-description: Meer informatie over uitsnijdgroepen en het maken van een aangepaste uitsnijdtaak.
+description: Leer meer over Cron-groepen en hoe u aangepaste cron-taken kunt maken in Adobe Commerce. Ontdek de geplande taakopstelling en de configuratie van de cron groep.
 exl-id: a9d83af7-9979-4653-adc9-30ffeb13a5ce
-source-git-commit: 987d65b52437fbd21f41600bb5741b3cc43d01f3
+source-git-commit: 10f324478e9a5e80fc4d28ce680929687291e990
 workflow-type: tm+mt
-source-wordcount: '155'
+source-wordcount: '167'
 ht-degree: 0%
 
 ---
@@ -21,5 +21,5 @@ De Commerce-toepassing biedt de volgende uitsnijdgroepen:
 - `index`, die [ indexeerders ](../cli/manage-indexers.md) vernieuwt
 - `consumers`, die berichtrij [ consumenten ](../cli/start-message-queues.md) in werking stelt
 - Deze onderwerpen zijn alleen beschikbaar in Adobe Commerce
-   - `staging`, die [ op Staging betrekking hebbende ](https://experienceleague.adobe.com/nl/docs/commerce-admin/content-design/staging/content-staging) taken in werking stelt
+   - `staging`, die [ op Staging betrekking hebbende ](https://experienceleague.adobe.com/en/docs/commerce-admin/content-design/staging/content-staging) taken in werking stelt
    - `catalog_event` , dat taken voor doel en het winkelwagentje regels uitvoert

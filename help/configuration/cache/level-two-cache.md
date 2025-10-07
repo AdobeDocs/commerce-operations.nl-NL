@@ -1,11 +1,11 @@
 ---
 title: L2-cacheconfiguratie
-description: Leer om het L2 geheime voorgeheugen te vormen.
+description: Leer hoe u de L2-cache configureert voor optimalisatie van Adobe Commerce-prestaties. Ontdek opstellingsstappen en de technieken van de netwerkverkeersvermindering.
 feature: Configuration, Cache
 exl-id: 0504c6fd-188e-46eb-be8e-968238571f4e
-source-git-commit: ba3c656566af47f16f58f476d7bc9f4781bb0234
+source-git-commit: 10f324478e9a5e80fc4d28ce680929687291e990
 workflow-type: tm+mt
-source-wordcount: '421'
+source-wordcount: '434'
 ht-degree: 0%
 
 ---
@@ -23,7 +23,7 @@ Commerce slaat de gehakte gegevensversie in Redis op, met het achtervoegsel &quo
 
 >[!INFO]
 >
->Voor Adobe Commerce op wolkeninfrastructuur, kunt u [ gebruiken stelt variabelen ](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure/env/stage/variables-deploy.html?lang=nl-NL#redis_backend) voor L2 geheim voorgeheugenconfiguratie op.
+>Voor Adobe Commerce op wolkeninfrastructuur, kunt u [ gebruiken stelt variabelen ](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure/env/stage/variables-deploy.html#redis_backend) voor L2 geheim voorgeheugenconfiguratie op.
 
 ## Voorbeeld van configuratie
 

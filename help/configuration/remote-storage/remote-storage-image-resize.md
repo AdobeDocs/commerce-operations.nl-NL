@@ -3,9 +3,9 @@ title: Afbeeldingsgrootte configureren voor externe opslag
 description: U kunt schijfbronnen optimaliseren door de grootte van afbeeldingen op de server te configureren.
 feature: Configuration, Storage
 exl-id: 51c2b9b3-0f5f-4868-9191-911d5df341ec
-source-git-commit: af45ac46afffeef5cd613628b2a98864fd7da69b
+source-git-commit: 4caabd1578e56b74600441c9c779b7b2dfd06987
 workflow-type: tm+mt
-source-wordcount: '238'
+source-wordcount: '247'
 ht-degree: 1%
 
 ---
@@ -16,7 +16,7 @@ Adobe Commerce biedt standaard ondersteuning voor het vergroten of verkleinen va
 
 In het volgende diagram ziet u hoe Nginx afbeeldingen in het cachegeheugen ophaalt, vergroot of verkleint en opslaat. Het formaat wordt bepaald door de parameters die in de URL zijn opgenomen, zoals hoogte en breedte.
 
-![ beeld resize ](../../assets/configuration/remote-storage-nginx-image-resize.png)
+![ Nginx configuratie voor het verre beeld van de opslag resizing die de montages van het serverblok ](../../assets/configuration/remote-storage-nginx-image-resize.png) tonen
 
 >[!TIP]
 >

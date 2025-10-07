@@ -1,12 +1,12 @@
 ---
 title: system.xml reference
-description: Leer hoe het systeemXML- dossier de de toepassingsconfiguratie van Commerce beheert.
+description: Leer hoe het bestand system.xml de configuratie van Adobe Commerce-toepassingen beheert. Ontdek systeemconfiguratiebeheer, de structuur van XML, en implementatietechnieken.
 feature: Configuration, System
 badge: label="Bijdrage van David Lambauer" type="Informative" url="https://github.com/DavidLambauer" tooltip="David Lambauer"
 exl-id: a6c5de6c-e8da-4eca-bbfb-592904b2c53f
-source-git-commit: e231a27d70e29b01c872b0655168e31f590d4876
+source-git-commit: 10f324478e9a5e80fc4d28ce680929687291e990
 workflow-type: tm+mt
-source-wordcount: '2709'
+source-wordcount: '2717'
 ht-degree: 0%
 
 ---
@@ -248,7 +248,7 @@ Een `<field>` -tag kan de volgende waarden voor het `type=""` -kenmerk hebben:
 | `select` | Bij een normale vervolgkeuzelijst is mogelijk een aangepaste `source_model` vereist. Wordt ook gebruikt voor `Yes/No` selecties. Zie `Magento\Search\Model\Adminhtml\System\Config\Source\Engine` voor een voorbeeld. |
 | `multiselect` | Net als `select` maar meerdere opties zijn geldig. |
 | `button` | Een knop die een directe gebeurtenis activeert. Vereist een aangepast front-end model om de knoptekst en de handeling te definiëren. Zie `Magento\ScheduledImportExport\Block\Adminhtml\System\Config\Clean` voor een voorbeeld. |
-| `obscure` | Een tekstveld met de waarde gecodeerd en weergegeven als `**&#x200B;**` . Als u de tekst wijzigt met &#39;Element controleren&#39; in de browser, wordt de waarde niet weergegeven. |
+| `obscure` | Een tekstveld met de waarde gecodeerd en weergegeven als `****` . Als u de tekst wijzigt met &#39;Element controleren&#39; in de browser, wordt de waarde niet weergegeven. |
 | `password` | Net als bij `obscure` wordt de verborgen waarde niet gecodeerd en wordt de waarde zichtbaar wanneer u het type met &#39;Inspect Element&#39; in de browser forceert wijzigt. |
 | `file` | Hiermee kan een bestand worden geüpload voor verwerking. |
 | `label` | Hiermee geeft u een label weer in plaats van een bewerkbaar veld. Gebruik dit type wanneer een veld alleen binnen een bepaald bereik kan worden bewerkt, bijvoorbeeld alleen in de weergave Winkel. |

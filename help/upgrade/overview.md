@@ -1,11 +1,11 @@
 ---
 title: Overzicht van het upgradeproces
-description: Meer informatie over hoe u uw Adobe Commerce-project kunt upgraden om uw winkel te beveiligen en efficiënt te laten werken.
+description: Leer hoe een upgrade van uw Adobe Commerce-project uw winkel veilig en efficiënt houdt. Ontdek beste praktijken voor planning en het uitvoeren van succesvolle verbeteringen.
 exl-id: 40bd97ca-6648-40d4-9c61-7d159391976a
-source-git-commit: 95ffff39d82cc9027fa633dffedf15193040802d
+source-git-commit: 10f324478e9a5e80fc4d28ce680929687291e990
 workflow-type: tm+mt
-source-wordcount: '895'
-ht-degree: 1%
+source-wordcount: '901'
+ht-degree: 0%
 
 ---
 
@@ -13,7 +13,7 @@ ht-degree: 1%
 
 Het upgraden van uw Adobe Commerce-project is van essentieel belang om ervoor te zorgen dat uw winkel veilig blijft, voldoet aan PCI en optimaal functioneert. Deze gids begeleidt u door zeer belangrijke overwegingen wanneer het voorbereiden van een verbetering.
 
-De gids geeft een overzicht van de typische Adobe Commerce upgrade-reis en de beste praktijken om die reis te volgen. Het beschrijft ook technische details van het verbeteringsproces met een geschikte voorbeeld en geleidelijke instructies voor verbetering aan de recentste versie van Adobe Commerce. Het is belangrijk om het de versieschema van Adobe Commerce [&#128279;](../release/schedule.md) te herzien en begin voor verbeteringen vroegtijdig voor te bereiden. Adobe publiceert de releaseschema jaarlijks om het planningsproces van verkopers te vergemakkelijken en raadt aan elke patchreleasecyclus te upgraden. Om PCI-compatibel te blijven, moeten handelaren op de nieuwste patch of beveiligingspatch zitten.
+De gids geeft een overzicht van de typische Adobe Commerce upgrade-reis en de beste praktijken om die reis te volgen. Het beschrijft ook technische details van het verbeteringsproces met een geschikte voorbeeld en geleidelijke instructies voor verbetering aan de recentste versie van Adobe Commerce. Het is belangrijk om het de versieschema van Adobe Commerce [ ](../release/schedule.md) te herzien en begin voor verbeteringen vroegtijdig voor te bereiden. Adobe publiceert de releaseschema jaarlijks om het planningsproces van verkopers te vergemakkelijken en raadt aan elke patchreleasecyclus te upgraden. Om PCI-compatibel te blijven, moeten handelaren op de nieuwste patch of beveiligingspatch zitten.
 
 ## Voor wie is deze gids?
 

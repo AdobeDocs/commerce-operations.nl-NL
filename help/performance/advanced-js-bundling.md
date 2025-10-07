@@ -1,10 +1,10 @@
 ---
 title: Geavanceerde  [!DNL JavaScript]  Bundelen
-description: Meer informatie over hoe JavaScript-pakketten de grootte en frequentie van serveraanvragen kunnen verminderen.
+description: Leer over geavanceerd  [!DNL javascript]  het bundelen in Adobe Commerce. Ontdek implementatierichtlijnen en optimalisatiestrategieën.
 exl-id: 81a313f8-e541-4da6-801b-8bbd892d6252
-source-git-commit: f9f8aea1a77ef062d7076a61bbafd12433f15edf
+source-git-commit: 10f324478e9a5e80fc4d28ce680929687291e990
 workflow-type: tm+mt
-source-wordcount: '2134'
+source-wordcount: '2133'
 ht-degree: 0%
 
 ---

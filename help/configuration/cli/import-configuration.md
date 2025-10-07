@@ -1,10 +1,10 @@
 ---
 title: Gegevens importeren uit configuratiebestanden
-description: Adobe Commerce-configuratie-instellingen importeren uit configuratiebestanden.
+description: Leer hoe u Adobe Commerce-configuratie-instellingen uit configuratiebestanden importeert. Ontdek de plaatsings van de pijpleiding en de processen van de gegevensbestandinvoer.
 exl-id: 7d9f156c-e8d3-4888-b359-5d9aa8c4ea05
-source-git-commit: ca8dc855e0598d2c3d43afae2e055aa27035a09b
+source-git-commit: 10f324478e9a5e80fc4d28ce680929687291e990
 workflow-type: tm+mt
-source-wordcount: '493'
+source-wordcount: '503'
 ht-degree: 0%
 
 ---

@@ -1,10 +1,10 @@
 ---
 title: Referentiearchitectuur
-description: Diagrammen van de aanbevolen referentiearchitectuur voor Adobe Commerce-implementaties bekijken.
+description: Meer informatie over referentiearchitectuur in Adobe Commerce. Ontdek implementatierichtlijnen en optimalisatiestrategieën.
 exl-id: 85a6d3d6-f47f-4806-97bd-fa7a73605f4c
-source-git-commit: 987d65b52437fbd21f41600bb5741b3cc43d01f3
+source-git-commit: 10f324478e9a5e80fc4d28ce680929687291e990
 workflow-type: tm+mt
-source-wordcount: '414'
+source-wordcount: '416'
 ht-degree: 0%
 
 ---
@@ -13,7 +13,7 @@ ht-degree: 0%
 
 In dit onderwerp wordt een algemene aanbevolen installatie voor Adobe Commerce-instanties beschreven met behulp van gewone servers die fysiek worden gehost in een datacenter (niet gevirtualiseerd) waarin bronnen niet met andere gebruikers worden gedeeld. Uw hostingprovider, met name als deze gespecialiseerd is in het hosten van hoge Commerce-prestaties, raadt mogelijk een andere instelling aan die even of effectiever is voor uw vereisten.
 
-Voor Adobe Commerce op de milieu&#39;s van de wolkeninfrastructuur, zie [ de architectuur van de Aanzet ](https://experienceleague.adobe.com/nl/docs/commerce-cloud-service/user-guide/architecture/starter-architecture).
+Voor Adobe Commerce op de milieu&#39;s van de wolkeninfrastructuur, zie [ de architectuur van de Aanzet ](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/architecture/starter-architecture).
 
 ## [!DNL Commerce] Referentie-architectuurdiagram
 

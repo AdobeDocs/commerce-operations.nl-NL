@@ -1,11 +1,11 @@
 ---
 title: Configuratiebestanden voor implementatie
-description: Begrijp hoe de configuratiedossiers voor het installeren van de toepassing van Commerce werken.
+description: Leer hoe configuratiebestanden werken voor Adobe Commerce-toepassing. Ontdek gedeelde en systeem-specifieke beste praktijken van het configuratiebeheer.
 feature: Configuration, Deploy
 exl-id: 772a6814-6b18-4f8f-b31e-72faf790ff37
-source-git-commit: 79c8a15fb9686dd26d73805e9d0fd18bb987770d
+source-git-commit: 10f324478e9a5e80fc4d28ce680929687291e990
 workflow-type: tm+mt
-source-wordcount: '435'
+source-wordcount: '442'
 ht-degree: 0%
 
 ---
@@ -51,7 +51,7 @@ Het bestand `config.php` bevat een lijst met geïnstalleerde modules. Adobe Comm
 Voorbeelden:
 
 - Componenten verwijderen: [`bin/magento setup:uninstall`](../../installation/tutorials/uninstall-modules.md)
-- Status van componenten controleren: [`bin/magento module:status` ](https://experienceleague.adobe.com/nl/docs/commerce-operations/tools/cli-reference/commerce-on-premises#modulestatus)
+- Status van componenten controleren: [`bin/magento module:status` ](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/cli-reference/commerce-on-premises#modulestatus)
 - Schakel componenten in of uit: [`bin/magento module:disable`](../../installation/tutorials/manage-modules.md), [`bin/magento module:enable`](../../installation/tutorials/manage-modules.md) .
 
 > _config.php_

@@ -1,11 +1,11 @@
 ---
 title: Geavanceerde Varnish-configuratie
-description: Veelzijdige functies configureren, zoals health check, respijtmodi en verfmodi.
+description: Leer hoe u geavanceerde Varnish-functies voor Adobe Commerce configureert, zoals health checks, Grace en saint-modi. Ontdek de optimalisatietechnieken van VCL.
 feature: Configuration, Cache
 exl-id: 178bd675-6ed0-40cc-9455-08a11b32c054
-source-git-commit: ec3ab7e3c6c3835e73653b0d4f74aadc861016d3
+source-git-commit: 10f324478e9a5e80fc4d28ce680929687291e990
 workflow-type: tm+mt
-source-wordcount: '871'
+source-wordcount: '881'
 ht-degree: 0%
 
 ---
@@ -77,7 +77,7 @@ Op alle andere computers moet de Commerce-instantie toegang hebben tot de mySQL-
 
 U kunt het versieren van statische bestanden ook op alle computers uitschakelen. Dit kan van Admin onder **worden betreden Slaat** > Montages > **Configuratie** > **Geavanceerd** > **de Montages van de Ontwikkelaar** > **de Statische Montages van Dossiers** > **Onderteken Statische Dossiers** = **Nr**.
 
-Tot slot moeten alle Commerce-instanties zich in de productiemodus bevinden. Voordat Varnish begint, wist u de cache bij elke instantie. In Admin, ga **van het 0&rbrace; Systeem &lbrace;> Hulpmiddelen >** het Beheer van het Geheime voorgeheugen **en klik** het Geheime voorgeheugen van Magento **duwen.** U kunt ook de volgende opdracht uitvoeren om de cache te wissen:
+Tot slot moeten alle Commerce-instanties zich in de productiemodus bevinden. Voordat Varnish begint, wist u de cache bij elke instantie. In Admin, ga **van het 0} Systeem {> Hulpmiddelen >** het Beheer van het Geheime voorgeheugen **en klik** het Geheime voorgeheugen van Magento **duwen.** U kunt ook de volgende opdracht uitvoeren om de cache te wissen:
 
 ```bash
 bin/magento cache:flush

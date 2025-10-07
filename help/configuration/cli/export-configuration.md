@@ -1,10 +1,10 @@
 ---
 title: Configuratieinstellingen exporteren
-description: De de configuratiemontages van de uitvoer Adobe Commerce aan configuratiedossiers, die ook als config stortplaats worden bekend.
+description: Leer hoe te om de configuratiemontages van Adobe Commerce naar dossiers uit te voeren gebruikend config stortplaats. Ontdek pijpleiding plaatsing en configuratiebeheer.
 exl-id: db680f5e-547a-48f3-b017-d77b8cb07bfd
-source-git-commit: 95ffff39d82cc9027fa633dffedf15193040802d
+source-git-commit: 10f324478e9a5e80fc4d28ce680929687291e990
 workflow-type: tm+mt
-source-wordcount: '204'
+source-wordcount: '210'
 ht-degree: 0%
 
 ---
@@ -47,6 +47,6 @@ Het bevat gevoelige en systeemspecifieke instellingen voor afzonderlijke omgevin
 
 Gebruik de opdracht `env.php` om de gevoelige instellingen in te stellen die naar [`bin/magento config:sensitive:set`](set-configuration-values.md#set-values) worden geschreven.
 
-De waarden van de configuratie worden gespecificeerd als of gevoelig of systeem-specifiek door [`Magento\Config\Model\Config\TypePool` van verwijzingen te voorzien ](https://github.com/magento/magento2/blob/2.4/app/code/Magento/Config/Model/Config/TypePool.php) in het 2&rbrace; [`di.xml` dossier van de module &lbrace;.](https://developer.adobe.com/commerce/php/development/configuration/sensitive-environment-settings/#how-to-specify-values-as-sensitive-or-system-specific)
+De waarden van de configuratie worden gespecificeerd als of gevoelig of systeem-specifiek door [`Magento\Config\Model\Config\TypePool` van verwijzingen te voorzien ](https://github.com/magento/magento2/blob/2.4/app/code/Magento/Config/Model/Config/TypePool.php) in het 2} [`di.xml` dossier van de module {.](https://developer.adobe.com/commerce/php/development/configuration/sensitive-environment-settings/#how-to-specify-values-as-sensitive-or-system-specific)
 
 Als u aanvullende systeeminstellingen wilt exporteren wanneer u `config_types` gebruikt, kunt u de opdracht [`bin/magento config:set`](set-configuration-values.md#set-values) gebruiken.

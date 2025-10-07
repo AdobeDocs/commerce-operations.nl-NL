@@ -1,11 +1,11 @@
 ---
 title: Verwijzing naar algemene configuratiepaden
-description: Zie een lijst met algemene en geavanceerde configuratiewaarden.
+description: Leer algemene en geavanceerde configuratiepaden en waarden voor Adobe Commerce. Ontdek systeem, veiligheid, en administratieve configuratieopties.
 feature: Configuration, Observability, Roles/Permissions, System
 exl-id: 3c557746-5182-4929-aebf-5b6fe76f0d8f
-source-git-commit: 16e9396f19693436dfc7bdac78d84624a78f0c21
+source-git-commit: 10f324478e9a5e80fc4d28ce680929687291e990
 workflow-type: tm+mt
-source-wordcount: '961'
+source-wordcount: '971'
 ht-degree: 0%
 
 ---

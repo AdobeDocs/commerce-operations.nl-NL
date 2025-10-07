@@ -1,10 +1,10 @@
 ---
 title: Afhankelijkheidsrapporten
-description: Creeer rapporten die de totalen voor module, kringafhankelijkheden, en kadergebiedsdelen tonen.
+description: Leer hoe u afhankelijkheidsrapporten kunt maken met module-, circulaire en frameafhankelijkheden in Adobe Commerce. Analyse- en rapportagetools ontdekken.
 exl-id: b7a32fe1-71c5-495f-8276-242503fb50ae
-source-git-commit: ca8dc855e0598d2c3d43afae2e055aa27035a09b
+source-git-commit: 10f324478e9a5e80fc4d28ce680929687291e990
 workflow-type: tm+mt
-source-wordcount: '240'
+source-wordcount: '248'
 ht-degree: 0%
 
 ---

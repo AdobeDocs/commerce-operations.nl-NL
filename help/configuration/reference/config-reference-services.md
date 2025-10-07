@@ -1,11 +1,11 @@
 ---
 title: Overzicht van serviceconfiguratiepaden
-description: Zie een lijst van de waarden van de de dienstenconfiguratie.
+description: Meer informatie over serviceconfiguratiepaden en waarden vindt u in Adobe Commerce Admin-instellingen. Ontdek Web API, OAuth, en de configuratieopties van de de dienstintegratie.
 feature: Configuration, Services
 exl-id: 77818c54-21ae-4a66-81bf-468bd7d09cda
-source-git-commit: 16e9396f19693436dfc7bdac78d84624a78f0c21
+source-git-commit: 10f324478e9a5e80fc4d28ce680929687291e990
 workflow-type: tm+mt
-source-wordcount: '156'
+source-wordcount: '170'
 ht-degree: 0%
 
 ---

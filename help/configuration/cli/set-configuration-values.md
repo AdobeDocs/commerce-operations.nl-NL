@@ -1,10 +1,10 @@
 ---
 title: Configuratiewaarden instellen
-description: Leer hoe u configuratiewaarden instelt en waarden wijzigt die zijn vergrendeld in Beheer.
+description: Leer hoe u configuratiewaarden instelt en vergrendelde beheerwaarden wijzigt in Adobe Commerce. Ontdek geavanceerde configuratiebevelen en technieken.
 exl-id: 1dc2412d-50b3-41fb-ab22-3eccbb086302
-source-git-commit: ca8dc855e0598d2c3d43afae2e055aa27035a09b
+source-git-commit: 10f324478e9a5e80fc4d28ce680929687291e990
 workflow-type: tm+mt
-source-wordcount: '1038'
+source-wordcount: '1043'
 ht-degree: 0%
 
 ---
@@ -221,7 +221,7 @@ waar
 
 >[!INFO]
 >
->Het `bin/magento config:show` bevel toont de waarden van om het even welke [ gecodeerde waarden ](../reference/config-reference-sens.md) als reeks asterisken: `**&#x200B;**&#x200B;**`.
+>Het `bin/magento config:show` bevel toont de waarden van om het even welke [ gecodeerde waarden ](../reference/config-reference-sens.md) als reeks asterisken: `******`.
 
 ### Voorbeelden
 
