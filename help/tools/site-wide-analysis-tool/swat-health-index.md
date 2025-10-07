@@ -12,7 +12,7 @@ ht-degree: 0%
 
 Wanneer u **[!DNL Recommendations Report]** van het SWAT Dashboard downloadt, omvat PDF a **[!DNL Site Wide Analysis Tool Health Index]** score in de **sectie van de Inleiding**:
 
-![ score van de Index van de Gezondheid van het Hulpmiddel van de Analyse van de Plaats Wide in het geproduceerde Rapport van Aanbevelingen ](/help/assets/tools/swat-health-index-scroe.png)
+![&#x200B; score van de Index van de Gezondheid van het Hulpmiddel van de Analyse van de Plaats Wide in het geproduceerde Rapport van Aanbevelingen &#x200B;](/help/assets/tools/swat-health-index-scroe.png)
 
 Met de SWAT Health Index kunt u de algemene gezondheid van uw Adobe Commerce-site controleren en verbeteren. Deze score is een hulpmiddel, geen absolute pas-of-mislukkingsmaat.
 
