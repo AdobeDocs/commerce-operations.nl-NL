@@ -21,7 +21,7 @@ Deze sectie bevat informatie over veiligheid, privacy, en regelgevende naleving.
 
 ## Compatibiliteit
 
-Handelaars zijn verplicht om te voldoen aan de richtlijnen van de branche voor het handhaven van een veilige omgeving, wettelijke vereisten in hun jurisdictie, en beste praktijken voor online handel. Om meer van een bedrijfsperspectief te leren, zie het [&#x200B; Beleid van de Privacy van de Opslag &#x200B;](https://experienceleague.adobe.com/docs/commerce-admin/start/compliance/privacy/privacy-policy.html).
+Handelaars zijn verplicht om te voldoen aan de richtlijnen van de branche voor het handhaven van een veilige omgeving, wettelijke vereisten in hun jurisdictie, en beste praktijken voor online handel. Om meer van een bedrijfsperspectief te leren, zie het [&#x200B; Beleid van de Privacy van de Opslag &#x200B;](https://experienceleague.adobe.com/docs/commerce-admin/start/compliance/privacy/privacy-policy.html?lang=nl-NL).
 
 Deze conformiteitsdocumentatie bevat de technische informatie die ervoor zorgt dat Adobe Commerce-installaties voldoen aan de vereisten van specifieke privacywetgeving. Sommige van deze vereisten vereisen dat handelaren aanvullende ontwikkelingswerkzaamheden voltooien om aan de eisen te voldoen. Raadpleeg de volgende onderwerpen voor meer informatie:
 

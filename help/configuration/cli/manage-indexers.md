@@ -43,7 +43,7 @@ store_data_exporter                      Stores Feed
 
 >[!NOTE]
 >
-> De handelaars van Adobe Commerce die Live Onderzoek, de Dienst van de Catalogus, of de Aanbevelingen van het Product gebruiken hebben de optie om [&#x200B; op SaaS-Gebaseerde prijs te gebruiken indexeert &#x200B;](https://experienceleague.adobe.com/en/docs/commerce/price-indexer/price-indexing).
+> De handelaars van Adobe Commerce die Live Onderzoek, de Dienst van de Catalogus, of de Aanbevelingen van het Product gebruiken hebben de optie om [&#x200B; op SaaS-Gebaseerde prijs te gebruiken indexeert &#x200B;](https://experienceleague.adobe.com/nl/docs/commerce/price-indexer/price-indexing).
 
 ## Indexstatus weergeven
 
@@ -269,11 +269,11 @@ Stores Feed:                                       Update by Schedule
 >
 >- **2.4.8 en later**: [!DNL Customer Grid] de indexer steunt zowel [!UICONTROL Update on Save] als [!UICONTROL Update by Schedule] wijzen, en gebreken aan [!UICONTROL Update by Schedule].
 >
->Zie [&#x200B; Beste praktijken voor indexeerconfiguratie &#x200B;](https://experienceleague.adobe.com/en/docs/commerce-operations/implementation-playbook/best-practices/maintenance/indexer-configuration) in _Playbook van de Implementatie_.
+>Zie [&#x200B; Beste praktijken voor indexeerconfiguratie &#x200B;](https://experienceleague.adobe.com/nl/docs/commerce-operations/implementation-playbook/best-practices/maintenance/indexer-configuration) in _Playbook van de Implementatie_.
 
 >[!INFO]
 >
->Alvorens de wijzen van de omschakelingsindexeerder, plaats uw website aan [&#x200B; onderhoud &#x200B;](../../installation/tutorials/maintenance-mode.md) wijze en [&#x200B; maak kanonbanen &#x200B;](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/configure/app/properties/crons-property) onbruikbaar. Dit zorgt ervoor u geen gegevensbestandsloten ervaart.
+>Alvorens de wijzen van de omschakelingsindexeerder, plaats uw website aan [&#x200B; onderhoud &#x200B;](../../installation/tutorials/maintenance-mode.md) wijze en [&#x200B; maak kanonbanen &#x200B;](https://experienceleague.adobe.com/nl/docs/commerce-on-cloud/user-guide/configure/app/properties/crons-property) onbruikbaar. Dit zorgt ervoor u geen gegevensbestandsloten ervaart.
 
 De indexeerconfiguratie opgeven:
 

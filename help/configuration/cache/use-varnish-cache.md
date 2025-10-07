@@ -42,7 +42,7 @@ Nadat u Varnish hebt geïnstalleerd en geconfigureerd om met Commerce te werken,
 
 ## Commerce configureren om vernis te zuiveren
 
-Commerce zuivert de gastheren van Varnish nadat u de gastheren van Varnish gebruikend het [`magento setup:config:set` &#x200B;](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/cli-reference/commerce-on-premises#setupconfigset) bevel vormt.
+Commerce zuivert de gastheren van Varnish nadat u de gastheren van Varnish gebruikend het [`magento setup:config:set` &#x200B;](https://experienceleague.adobe.com/nl/docs/commerce-operations/tools/cli-reference/commerce-on-premises#setupconfigset) bevel vormt.
 
 U kunt de optionele parameter `--http-cache-hosts` gebruiken om een door komma&#39;s gescheiden lijst met varens-hosts op te geven en poorten te beluisteren. Vorm alle gastheren van Varnish, of u één of vele hebt. (Plaats geen spatie tussen de hosts.)
 

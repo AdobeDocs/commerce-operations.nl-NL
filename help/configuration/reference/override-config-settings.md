@@ -17,7 +17,7 @@ U kunt de waarde van _met voeten treden om het even welke_ configuratie die mili
 
 >[!TIP]
 >
->Controle uit [&#x200B; vormt milieu&#39;s &#x200B;](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure/env/stage/variables-intro.html) onderwerp in _Commerce op de gids van de Infrastructuur van de Wolk_.
+>Controle uit [&#x200B; vormt milieu&#39;s &#x200B;](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure/env/stage/variables-intro.html?lang=nl-NL) onderwerp in _Commerce op de gids van de Infrastructuur van de Wolk_.
 
 ## Omgevingsvariabelen
 
@@ -62,8 +62,8 @@ De algemene indeling van namen van systeeminstellingenvariabelen is als volgt:
   Zie voor meer informatie over het bereik:
 
    - [Stap 1: Zoek de waarde van het bereik van de website- of winkelweergave](#step-1-find-the-website-or-store-view-scope-value)
-   - [&#x200B; het onderwerp van de Gids van de Gebruiker van Commerce op werkingsgebied &#x200B;](https://experienceleague.adobe.com/en/docs/commerce-admin/start/setup/websites-stores-views#scope-settings)
-   - [&#x200B; Snelle verwijzing van het Bereik &#x200B;](https://experienceleague.adobe.com/en/docs/commerce-admin/config/scope-change#scope-quick-reference)
+   - [&#x200B; het onderwerp van de Gids van de Gebruiker van Commerce op werkingsgebied &#x200B;](https://experienceleague.adobe.com/nl/docs/commerce-admin/start/setup/websites-stores-views#scope-settings)
+   - [&#x200B; Snelle verwijzing van het Bereik &#x200B;](https://experienceleague.adobe.com/nl/docs/commerce-admin/config/scope-change#scope-quick-reference)
 
 `<SYSTEM__VARIABLE__NAME>` is het configuratiepad met dubbele onderstrepingstekens die worden vervangen door `/` . Voor meer informatie, zie [&#x200B; Stap 2: Plaats systeemvariabelen &#x200B;](#step-2-set-global-website-or-store-view-variables).
 
@@ -253,6 +253,6 @@ Een geleidelijke voorbeeld wordt getoond in [&#x200B; Vastgestelde configuratiew
 >
 >- Als u waarden wilt gebruiken die u instelt in de array `$_ENV` , moet u `variables_order = "EGPCS"` (Environment, Get, Post, Cookie en Server) in uw `php.ini` -bestand instellen. Voor details, zie [&#x200B; PHP documentatie &#x200B;](https://www.php.net/manual/en/ini.core.php).
 >
->- Voor Adobe Commerce op wolkeninfrastructuur, als u probeert om configuratiemontages met voeten te treden gebruikend de [&#x200B; Interface van het Web van het Project &#x200B;](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/project/overview.html#configure-the-project), moet u de veranderlijke naam met `env:` prepend. Bijvoorbeeld:
+>- Voor Adobe Commerce op wolkeninfrastructuur, als u probeert om configuratiemontages met voeten te treden gebruikend de [&#x200B; Interface van het Web van het Project &#x200B;](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/project/overview.html?lang=nl-NL#configure-the-project), moet u de veranderlijke naam met `env:` prepend. Bijvoorbeeld:
 >
 >![&#x200B; veranderlijk voorbeeld van het Milieu &#x200B;](../../assets/configuration/cloud-console-envvariable.png)

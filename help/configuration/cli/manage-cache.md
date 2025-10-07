@@ -20,7 +20,7 @@ U kunt het Adobe Commerce-cachebeheersysteem gebruiken om de prestaties van uw s
 >[!NOTE]
 >
 >
->Commerce-sitebeheerders kunnen het cachegeheugen beheren vanuit de beheerder met het hulpprogramma Cache Management System. Zie [&#x200B; Beheer van het Geheime voorgeheugen &#x200B;](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/tools/cache-management) in de _Gids van Systemen Admin_.
+>Commerce-sitebeheerders kunnen het cachegeheugen beheren vanuit de beheerder met het hulpprogramma Cache Management System. Zie [&#x200B; Beheer van het Geheime voorgeheugen &#x200B;](https://experienceleague.adobe.com/nl/docs/commerce-admin/systems/tools/cache-management) in de _Gids van Systemen Admin_.
 
 
 ## De status van de cache weergeven
@@ -59,7 +59,7 @@ Current status:
 
 >[!TIP]
 >
->Voor een gedetailleerde beschrijving van de standaardgeheim voorgeheugentypes die door Adobe Commerce worden gesteund, zie [&#x200B; Caches &#x200B;](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/tools/cache-management#caches) in de _Gids van Systemen Admin_.
+>Voor een gedetailleerde beschrijving van de standaardgeheim voorgeheugentypes die door Adobe Commerce worden gesteund, zie [&#x200B; Caches &#x200B;](https://experienceleague.adobe.com/nl/docs/commerce-admin/systems/tools/cache-management#caches) in de _Gids van Systemen Admin_.
 
 
 ## Cachetypen in- of uitschakelen

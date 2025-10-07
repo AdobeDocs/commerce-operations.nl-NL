@@ -316,7 +316,7 @@ Vergelijkbaar met het voorgaande voorbeeld genereert u een CSV-bestand. In plaat
 
 [Overzicht van vertalingen]: https://developer.adobe.com/commerce/frontend-core/guide/translations/
 [vertaalwoordenboek]: https://developer.adobe.com/commerce/frontend-core/guide/translations/#translation-dictionaries
-[configureert de vertalingen]: https://experienceleague.adobe.com/en/docs/commerce-admin/stores-sales/site-store/store-localize
+[configureert de vertalingen]: https://experienceleague.adobe.com/nl/docs/commerce-admin/stores-sales/site-store/store-localize
 [Meer informatie over taalpakketten]: https://developer.adobe.com/commerce/frontend-core/guide/translations/#language-packages
 [ISO 639-1]: https://www.iso.org/iso-639-language-codes.html
 [ISO 3166]: https://www.iso.org/iso-3166-country-codes.html

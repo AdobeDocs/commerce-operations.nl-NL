@@ -13,7 +13,7 @@ ht-degree: 0%
 
 In dit onderwerp wordt een algemene aanbevolen installatie voor Adobe Commerce-instanties beschreven met behulp van gewone servers die fysiek worden gehost in een datacenter (niet gevirtualiseerd) waarin bronnen niet met andere gebruikers worden gedeeld. Uw hostingprovider, met name als deze gespecialiseerd is in het hosten van hoge Commerce-prestaties, raadt mogelijk een andere instelling aan die even of effectiever is voor uw vereisten.
 
-Voor Adobe Commerce op de milieu&#39;s van de wolkeninfrastructuur, zie [&#x200B; de architectuur van de Aanzet &#x200B;](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/architecture/starter-architecture).
+Voor Adobe Commerce op de milieu&#39;s van de wolkeninfrastructuur, zie [&#x200B; de architectuur van de Aanzet &#x200B;](https://experienceleague.adobe.com/nl/docs/commerce-cloud-service/user-guide/architecture/starter-architecture).
 
 ## [!DNL Commerce] Referentie-architectuurdiagram
 

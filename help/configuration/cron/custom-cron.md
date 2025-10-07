@@ -21,5 +21,5 @@ De Commerce-toepassing biedt de volgende uitsnijdgroepen:
 - `index`, die [&#x200B; indexeerders &#x200B;](../cli/manage-indexers.md) vernieuwt
 - `consumers`, die berichtrij [&#x200B; consumenten &#x200B;](../cli/start-message-queues.md) in werking stelt
 - Deze onderwerpen zijn alleen beschikbaar in Adobe Commerce
-   - `staging`, die [&#x200B; op Staging betrekking hebbende &#x200B;](https://experienceleague.adobe.com/en/docs/commerce-admin/content-design/staging/content-staging) taken in werking stelt
+   - `staging`, die [&#x200B; op Staging betrekking hebbende &#x200B;](https://experienceleague.adobe.com/nl/docs/commerce-admin/content-design/staging/content-staging) taken in werking stelt
    - `catalog_event` , dat taken voor doel en het winkelwagentje regels uitvoert
