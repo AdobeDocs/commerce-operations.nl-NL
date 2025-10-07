@@ -14,7 +14,7 @@ ht-degree: 0%
 
 _dit is beschikbaar voor instanties met B2B voor geïnstalleerde Adobe Commerce._
 
-Dit onderwerp maakt een lijst van configuratiepaden voor de Uitbreiding van de Onderneming B2B van Commerce. Het [`magento app:config:dump` bevel ](../cli/export-configuration.md) schrijft deze waarden aan het gedeelde configuratiedossier, `app/etc/config.php`, dat in broncontrole zou moeten zijn.
+Dit onderwerp maakt een lijst van configuratiepaden voor de Uitbreiding van de Onderneming B2B van Commerce. Het [`magento app:config:dump` bevel &#x200B;](../cli/export-configuration.md) schrijft deze waarden aan het gedeelde configuratiedossier, `app/etc/config.php`, dat in broncontrole zou moeten zijn.
 
 >[!INFO]
 >
@@ -25,7 +25,7 @@ Zie voor deze configuratiepaden:
 - [Paden voor betalingsconfiguratie](config-reference-payment.md)
 - [Verwijzing naar gevoelige en systeemspecifieke configuratiepaden](config-reference-sens.md)
 
-Om naar keuze om het even welke configuratiemontages met voeten te treden of gevoelige montages te plaatsen, zie [ de milieuvariabelen van het Gebruik om configuratiemontages ](override-config-settings.md#environment-variables) met voeten te treden.
+Om naar keuze om het even welke configuratiemontages met voeten te treden of gevoelige montages te plaatsen, zie [&#x200B; de milieuvariabelen van het Gebruik om configuratiemontages &#x200B;](override-config-settings.md#environment-variables) met voeten te treden.
 
 ## Algemene categorie
 
@@ -58,8 +58,8 @@ Deze configuratiewaarden zijn beschikbaar in Beheer in **[!UICONTROL Stores]** >
 | Naam | Config-pad | Versleuteld? | Systeemspecifiek? | gevoelig? |
 |--------------|--------------|--------------|--------------|--------------|
 | Bedrijfsregistratie toestaan vanuit de Storefront | `company/general/allow_company_registration` | | | |
-| E-mailontvanger bedrijfsinschrijving | `company/email/company_registration` | | | ![ Gevoelig ](/help/assets/configuration/cloud-sens.png) |
-| E-mailkopie van bedrijfsregistratie verzenden naar | `company/email/company_registration_copy` | | | ![ Gevoelig ](/help/assets/configuration/cloud-sens.png) |
+| E-mailontvanger bedrijfsinschrijving | `company/email/company_registration` | | | ![&#x200B; Gevoelig &#x200B;](/help/assets/configuration/cloud-sens.png) |
+| E-mailkopie van bedrijfsregistratie verzenden naar | `company/email/company_registration_copy` | | | ![&#x200B; Gevoelig &#x200B;](/help/assets/configuration/cloud-sens.png) |
 | E-mailkopieermethode verzenden | `company/email/company_copy_method` | | | |
 | Standaard bedrijfsregistratie-e-mail | `company/email/company_notify_admin_template` | | | |
 | Aan klanten gerelateerde e-mails | `company/email/heading_customer` | | | |
@@ -72,7 +72,7 @@ Deze configuratiewaarden zijn beschikbaar in Beheer in **[!UICONTROL Stores]** >
 | Standaard-e-mail met status van klant | `company/email/customer_account_locked_template` | | | |
 | Wijziging van bedrijfsstatus | `company/email/heading_company_status` | | | |
 | E-mailontvanger bedrijfstatus wijzigen | `company/email/company_status_change` | | | |
-| E-mailkopie van wijziging bedrijfsstatus verzenden naar | `company/email/company_status_change_copy` | | | ![ Gevoelig ](/help/assets/configuration/cloud-sens.png) |
+| E-mailkopie van wijziging bedrijfsstatus verzenden naar | `company/email/company_status_change_copy` | | | ![&#x200B; Gevoelig &#x200B;](/help/assets/configuration/cloud-sens.png) |
 | E-mailkopieermethode verzenden | `company/email/company_status_copy_method` | | | |
 | Standaardbedrijfstatus wijzigen in Active 1-e-mail | `company/email/company_status_pending_approval_to_active_template` | | | |
 | Standaardbedrijfstatus wijzigen in Active 2-e-mail | `company/email/company_status_rejected_blocked_to_active_template` | | | |
@@ -80,7 +80,7 @@ Deze configuratiewaarden zijn beschikbaar in Beheer in **[!UICONTROL Stores]** >
 | Standaardwijziging bedrijfsstatus in geblokkeerde e-mail | `company/email/company_status_blocked_template` | | | |
 | Standaardwijziging bedrijfsstatus in afwachting van goedkeuring-e-mail | `company/email/company_status_pending_approval_template` | | | |
 | Bedrijfskrediet | `company/email/heading_company_credit` | | | |
-| E-mailafzender bedrijfskrediet wijzigen | `company/email/company_credit_change` |  | | ![ Gevoelig ](/help/assets/configuration/cloud-sens.png) |
+| E-mailafzender bedrijfskrediet wijzigen | `company/email/company_credit_change` |  | | ![&#x200B; Gevoelig &#x200B;](/help/assets/configuration/cloud-sens.png) |
 | E-mailkopie van wijziging bedrijfskrediet verzenden naar | `company/email/company_credit_change_copy` | | | |
 | E-mailkopieermethode verzenden | `company/email/company_credit_copy_method` | | | |
 | Toegewezen e-mailsjabloon | `company/email/credit_allocated_email_template` | | | |
@@ -119,7 +119,7 @@ Deze configuratiewaarden zijn beschikbaar in Admin in **Opslag** > Montages > **
 | Vervaldatum offerte (in 48 uur) | `sales_email/quote/expire_two_days_template` | | | |
 | Vervaldatum offerte (in 24 uur) | `sales_email/quote/expire_one_day_template` | | | |
 | Vervaldatum opnieuw instellen | `sales_email/quote/expire_reset_template` | | | |
-| E-mailkopie van offerte verzenden naar | `sales_email/quote/copy_to` | | | ![ Gevoelig ](/help/assets/configuration/cloud-sens.png) |
+| E-mailkopie van offerte verzenden naar | `sales_email/quote/copy_to` | | | ![&#x200B; Gevoelig &#x200B;](/help/assets/configuration/cloud-sens.png) |
 | Methode voor e-mail met offerte verzenden | `sales_email/quote/copy_method` | | | |
 
 {style="table-layout:auto"}

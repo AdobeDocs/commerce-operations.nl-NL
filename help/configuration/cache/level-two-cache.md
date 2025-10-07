@@ -23,7 +23,7 @@ Commerce slaat de gehakte gegevensversie in Redis op, met het achtervoegsel &quo
 
 >[!INFO]
 >
->Voor Adobe Commerce op wolkeninfrastructuur, kunt u [ gebruiken stelt variabelen ](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure/env/stage/variables-deploy.html#redis_backend) voor L2 geheim voorgeheugenconfiguratie op.
+>Voor Adobe Commerce op wolkeninfrastructuur, kunt u [&#x200B; gebruiken stelt variabelen &#x200B;](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure/env/stage/variables-deploy.html#redis_backend) voor L2 geheim voorgeheugenconfiguratie op.
 
 ## Voorbeeld van configuratie
 

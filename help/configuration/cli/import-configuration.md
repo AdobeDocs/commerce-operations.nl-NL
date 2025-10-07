@@ -13,7 +13,7 @@ ht-degree: 0%
 
 {{file-system-owner}}
 
-Wanneer u opstelling een productiesysteem gebruikend Commerce 2.2 [ model van de pijpleidingsplaatsing ](../deployment/technical-details.md) gebruikt, moet u __ configuratiemontages van de invoer `config.php` en `env.php` in het gegevensbestand.
+Wanneer u opstelling een productiesysteem gebruikend Commerce 2.2 [&#x200B; model van de pijpleidingsplaatsing &#x200B;](../deployment/technical-details.md) gebruikt, moet u __ configuratiemontages van de invoer `config.php` en `env.php` in het gegevensbestand.
 Deze instellingen zijn onder andere configuratiepaden en -waarden, websites, winkels, winkelweergaven en thema&#39;s.
 
 Nadat u websites, winkels, weergaven en thema&#39;s hebt geïmporteerd, kunt u productkenmerken maken en deze toepassen op websites, winkels en winkelweergaven op het productiesysteem.
@@ -73,7 +73,7 @@ De waarde van het configuratiepad `web/secure/base_url` moet bijvoorbeeld worden
 De modellen van de steun zijn het mechanisme om veranderingen in systeemconfiguratie te verwerken.
 U definieert backendmodules in `<module_name>/adminhtml/system.xml` .
 
-Alle achterste modellen moeten de [`Magento\Framework\App\Config\Value` ](https://github.com/magento/magento2/blob/2.4/lib/internal/Magento/Framework/App/Config/Value.php) klasse uitbreiden.
+Alle achterste modellen moeten de [`Magento\Framework\App\Config\Value` &#x200B;](https://github.com/magento/magento2/blob/2.4/lib/internal/Magento/Framework/App/Config/Value.php) klasse uitbreiden.
 
 Wanneer wij achterste modellen invoeren, bewaren wij niet de configuratiewaarden.
 

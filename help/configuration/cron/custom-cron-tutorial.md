@@ -21,7 +21,7 @@ In deze zelfstudie gaan we uit van het volgende:
 
 - De Commerce-toepassing wordt geïnstalleerd in `/var/www/html/magento2`
 - De gebruikersnaam en het wachtwoord voor de Commerce-database zijn allebei `magento`
-- U voert alle acties als [ eigenaar van het dossiersysteem ](../../installation/prerequisites/file-system/overview.md) uit
+- U voert alle acties als [&#x200B; eigenaar van het dossiersysteem &#x200B;](../../installation/prerequisites/file-system/overview.md) uit
 
 ## Stap 1: Een voorbeeldmodule ophalen
 
@@ -31,7 +31,7 @@ Als u reeds een steekproefmodule hebt, kunt u het gebruiken; sla deze stap en de
 
 **om een steekproefmodule** te krijgen:
 
-1. Login aan uw server van Commerce als, of schakelaar aan, de [ eigenaar van het dossiersysteem ](../../installation/prerequisites/file-system/overview.md).
+1. Login aan uw server van Commerce als, of schakelaar aan, de [&#x200B; eigenaar van het dossiersysteem &#x200B;](../../installation/prerequisites/file-system/overview.md).
 1. Ga naar een map die zich niet in de hoofdmap van de Commerce-toepassing bevindt (bijvoorbeeld de thuismap).
 1. Kloont de [`magento2-samples` bewaarplaats ][samples].
 
@@ -103,7 +103,7 @@ Controleer voordat u verdergaat of de voorbeeldmodule is geregistreerd en ingesc
 
 >[!TIP]
 >
->Als de output erop wijst dat `Module does not exist`, overzicht [ Stap 1 ](#step-1-get-a-sample-module) zorgvuldig. Zorg ervoor dat de code in de juiste map staat. Spelling en hoofdletters/kleine letters zijn belangrijk. Als iets anders is, wordt de module niet geladen. Vergeet ook niet `magento setup:upgrade` uit te voeren.
+>Als de output erop wijst dat `Module does not exist`, overzicht [&#x200B; Stap 1 &#x200B;](#step-1-get-a-sample-module) zorgvuldig. Zorg ervoor dat de code in de juiste map staat. Spelling en hoofdletters/kleine letters zijn belangrijk. Als iets anders is, wordt de module niet geladen. Vergeet ook niet `magento setup:upgrade` uit te voeren.
 
 ## Stap 3: Een klasse maken om afsnijden uit te voeren
 
@@ -273,7 +273,7 @@ Een aangepaste uitsnijdgroep instellen:
    </config>
    ```
 
-Voor een beschrijving van wat de opties betekenen, zie [ Aanpassen van de krantenverwijzing ](custom-cron-reference.md).
+Voor een beschrijving van wat de opties betekenen, zie [&#x200B; Aanpassen van de krantenverwijzing &#x200B;](custom-cron-reference.md).
 
 ## Stap 8: De aangepaste uitsnijdgroep verifiëren
 
@@ -301,7 +301,7 @@ De aangepaste uitsnijdgroep verifiëren:
 
    Uw uitsnijdgroep wordt als volgt weergegeven:
 
-   ![ Uw groep van de douanecorrectie ](../../assets/configuration/cron-group.png)
+   ![&#x200B; Uw groep van de douanecorrectie &#x200B;](../../assets/configuration/cron-group.png)
 
 <!-- link definitions -->
 

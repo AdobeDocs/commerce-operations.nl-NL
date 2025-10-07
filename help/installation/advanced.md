@@ -13,11 +13,11 @@ ht-degree: 0%
 
 >[!TIP]
 >
->Verloren? Hebt u een helpende hand nodig? Probeer onze [ Snelle begin installeert ](composer.md) of [ Medewerker ](https://developer.adobe.com/commerce/contributor/guides/install/) gidsen installeert.
+>Verloren? Hebt u een helpende hand nodig? Probeer onze [&#x200B; Snelle begin installeert &#x200B;](composer.md) of [&#x200B; Medewerker &#x200B;](https://developer.adobe.com/commerce/contributor/guides/install/) gidsen installeert.
 
 >[!NOTE]
 >
->Als u verkoos om SELinux toe te laten, zie [ SELinux en iptables ](prerequisites/security.md).
+>Als u verkoos om SELinux toe te laten, zie [&#x200B; SELinux en iptables &#x200B;](prerequisites/security.md).
 
 ## Command-lijn interface (CLI)
 
@@ -38,7 +38,7 @@ Overige uitkeringen:
 * CLI is verlengbaar zodat kunnen de derdeontwikkelaars &quot;binnen&quot;aan het &quot;stoppen. Dit heeft het extra voordeel om de het leren kromme van gebruikers te elimineren.
 * Opdrachten voor uitgeschakelde modules worden niet weergegeven.
 
-Dit onderwerp bespreekt het installeren van de software van Adobe Commerce gebruikend CLI. Voor informatie over configuratie, zie de [ Gids van de Configuratie ](../configuration/overview.md).
+Dit onderwerp bespreekt het installeren van de software van Adobe Commerce gebruikend CLI. Voor informatie over configuratie, zie de [&#x200B; Gids van de Configuratie &#x200B;](../configuration/overview.md).
 
 Het installatieprogramma kan indien nodig meerdere keren worden uitgevoerd, zodat u:
 
@@ -53,15 +53,15 @@ Het installatieprogramma kan indien nodig meerdere keren worden uitgevoerd, zoda
 
 Voer de volgende stappen uit voordat u begint:
 
-* Verifieer dat uw systeem aan de vereisten voldoet die in [ worden besproken systeemvereisten ](system-requirements.md).
+* Verifieer dat uw systeem aan de vereisten voldoet die in [&#x200B; worden besproken systeemvereisten &#x200B;](system-requirements.md).
 
-* Voltooi alle [ voorwaarde ](prerequisites/overview.md) taken.
+* Voltooi alle [&#x200B; voorwaarde &#x200B;](prerequisites/overview.md) taken.
 
-* Voer de eerste installatiestappen uit. Zie [ uw installeer of verbeteringspad ](overview.md).
+* Voer de eerste installatiestappen uit. Zie [&#x200B; uw installeer of verbeteringspad &#x200B;](overview.md).
 
-* Nadat u login aan de toepassingsserver, [ schakelaar aan de eigenaar van het dossiersysteem ](prerequisites/file-system/overview.md).
+* Nadat u login aan de toepassingsserver, [&#x200B; schakelaar aan de eigenaar van het dossiersysteem &#x200B;](prerequisites/file-system/overview.md).
 
-* Herzie het [ snel begin van de installatie ](composer.md) overzicht.
+* Herzie het [&#x200B; snel begin van de installatie &#x200B;](composer.md) overzicht.
 
 >[!NOTE]
 >
@@ -79,7 +79,7 @@ U kunt het installatieprogramma meerdere keren uitvoeren met verschillende optie
 >
 >Standaard overschrijft het installatieprogramma de database niet als u de software in dezelfde database-instantie installeert. U kunt de optionele parameter `cleanup-database` gebruiken om dit gedrag te wijzigen.
 
-Zie ook [ Update, herinstalleer, desinstalleer ](tutorials/uninstall.md).
+Zie ook [&#x200B; Update, herinstalleer, desinstalleer &#x200B;](tutorials/uninstall.md).
 
 ### Beveiligde installatie
 
@@ -97,7 +97,7 @@ U kunt de volgende opdrachten uitvoeren om naar waarden voor bepaalde vereiste a
 
 >[!NOTE]
 >
->Als een foutenvertoningen wanneer u deze bevelen in werking stelt, verifieer dat u installatiegebiedsdelen zoals besproken in [ de installatiegebiedsdelen van de Update ](https://developer.adobe.com/commerce/contributor/guides/install/update-dependencies/) bijwerkte.
+>Als een foutenvertoningen wanneer u deze bevelen in werking stelt, verifieer dat u installatiegebiedsdelen zoals besproken in [&#x200B; de installatiegebiedsdelen van de Update &#x200B;](https://developer.adobe.com/commerce/contributor/guides/install/update-dependencies/) bijwerkte.
 
 ## Installeren vanaf de opdrachtregel
 
@@ -107,7 +107,7 @@ Voor de installatieopdracht wordt de volgende indeling gebruikt:
 bin/magento setup:install --<option>=<value> ... --<option>=<value>
 ```
 
-In de volgende tabellen worden de namen en waarden van de installatieopties beschreven. Bijvoorbeeld installatiebevelen, zie [ de installaties van de Steekproef localhost ](#sample-localhost-installations).
+In de volgende tabellen worden de namen en waarden van de installatieopties beschreven. Bijvoorbeeld installatiebevelen, zie [&#x200B; de installaties van de Steekproef localhost &#x200B;](#sample-localhost-installations).
 
 >[!NOTE]
 >
@@ -117,9 +117,9 @@ In de volgende tabellen worden de namen en waarden van de installatieopties besc
 
 Met de volgende opties geeft u de gebruikersgegevens en gebruikersgegevens voor de Admin-gebruiker op.
 
-U kunt de Admin-gebruiker tijdens of na de installatie maken. Als u de gebruiker tijdens de installatie creeert, zijn alle admin credentievariabelen vereist. Zie [ installaties van de Steekproef localhost ](#sample-localhost-installations).
+U kunt de Admin-gebruiker tijdens of na de installatie maken. Als u de gebruiker tijdens de installatie creeert, zijn alle admin credentievariabelen vereist. Zie [&#x200B; installaties van de Steekproef localhost &#x200B;](#sample-localhost-installations).
 
-De volgende tabellen bevatten veel, maar niet alle beschikbare installatieparameters. Voor een volledige lijst, zie de [ bevel-lijn Verwijzing van Hulpmiddelen ](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/cli-reference/commerce-on-premises).
+De volgende tabellen bevatten veel, maar niet alle beschikbare installatieparameters. Voor een volledige lijst, zie de [&#x200B; bevel-lijn Verwijzing van Hulpmiddelen &#x200B;](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/cli-reference/commerce-on-premises).
 
 | Naam | Waarde | Vereist? |
 |--- |--- |--- |
@@ -135,7 +135,7 @@ De volgende tabellen bevatten veel, maar niet alle beschikbare installatieparame
 |--- |--- |--- |
 | `--base-url` | Basis URL aan gebruik om tot uw Admin en opslag in om het even welke volgende formaten toegang te hebben:<br><br>`http[s]://<host or ip>/<your install dir>/`.<br><br>**Nota:** de regeling (http:// of https://) en een het slepen schuine streep worden allebei vereist.<br><br>`<your install dir>` is het documentafhankelijke relatieve pad voor de installatie van de Adobe Commerce-software. Afhankelijk van hoe u opstelling uw Webserver en virtuele gastheren, de weg magento2 zou kunnen zijn of het zou leeg kunnen zijn.<br><br> om tot Adobe Commerce of tot MagenAdobe Commercieel toegang te hebben `http://127.0.0.1/<your install dir>/` of `http://127.0.0.1/<your install dir>/`.<br><br> - `{{base_url}}` die een basis-URL vertegenwoordigt die wordt gedefinieerd door een virtuele hostinstelling of door een virtualisatieomgeving zoals Docker. Als u bijvoorbeeld een virtuele host instelt met de hostnaam `magento.example.com` , kunt u de software installeren met `--base-url={{base_url}}` en toegang krijgen tot de beheerder met een URL zoals `http://magento.example.com/admin` . | Ja |
 | `--backend-frontname` | Uniform Resource Identifier (URI) voor toegang tot de beheerder. U kunt deze parameter weglaten om de toepassing willekeurige URI voor u met het volgende patroon <code> te laten produceren admin_jkhgdfq</code>.<br><br> wij adviseren willekeurige URI voor veiligheidsdoeleinden. Willekeurige URI is moeilijker voor hakkers of kwaadwillige software om te exploiteren.<br><br> de vertoningen van URI aan het eind van de installatie. U kunt deze later op elk gewenst moment weergeven met de opdracht `bin/magento info:adminuri` .<br><br> als u verkiest om een waarde in te gaan, adviseren wij u geen gemeenschappelijk woord zoals admin, backend. De Admin-URI kan alleen alfanumerieke waarden en het onderstrepingsteken (`_`) bevatten. | Nee |
-| `--db-host` | Gebruik om het even welk van het volgende:<br><br> - de volledig gekwalificeerde hostname van de gegevensbestandserver of IP adres.<br><br>- `localhost` (standaardwaarde) of `127.0.0.1` als uw databaseserver zich op dezelfde host bevindt als uw webserver.localhost betekent dat de MySQL-clientbibliotheek gebruikmaakt van UNIX-sockets om verbinding te maken met de database. `127.0.0.1` zorgt ervoor dat de clientbibliotheek het TCP-protocol gebruikt. Voor meer informatie over contactdozen, zie de [ PHP documentatie BOB_MYSQL ](https://www.php.net/manual/en/ref.pdo-mysql.php).<br><br>**Nota:** U kunt naar keuze de haven van de gegevensbestandserver in zijn hostname als www.example.com specificeren :9000 | Ja |
+| `--db-host` | Gebruik om het even welk van het volgende:<br><br> - de volledig gekwalificeerde hostname van de gegevensbestandserver of IP adres.<br><br>- `localhost` (standaardwaarde) of `127.0.0.1` als uw databaseserver zich op dezelfde host bevindt als uw webserver.localhost betekent dat de MySQL-clientbibliotheek gebruikmaakt van UNIX-sockets om verbinding te maken met de database. `127.0.0.1` zorgt ervoor dat de clientbibliotheek het TCP-protocol gebruikt. Voor meer informatie over contactdozen, zie de [&#x200B; PHP documentatie BOB_MYSQL &#x200B;](https://www.php.net/manual/en/ref.pdo-mysql.php).<br><br>**Nota:** U kunt naar keuze de haven van de gegevensbestandserver in zijn hostname als www.example.com specificeren :9000 | Ja |
 | `--db-name` | Naam van de database-instantie waarin u de databasetabellen wilt installeren.<br><br> Standaard is `magento2`. | Ja |
 | `--db-user` | Gebruikersnaam van de eigenaar van de databaseinstantie.<br><br> Standaard is `root`. | Ja |
 | `--db-password` | Het wachtwoord van de eigenaar van de databaseinstantie. | Ja |
@@ -205,7 +205,7 @@ De volgende tabellen bevatten veel, maar niet alle beschikbare installatieparame
 
 >[!NOTE]
 >
->Om modules toe te laten of onbruikbaar te maken na het installeren van Adobe Commerce, zie [ modules ](tutorials/manage-modules.md) toelaten en onbruikbaar maken.
+>Om modules toe te laten of onbruikbaar te maken na het installeren van Adobe Commerce, zie [&#x200B; modules &#x200B;](tutorials/manage-modules.md) toelaten en onbruikbaar maken.
 
 **Gevoelige gegevens:**
 
@@ -283,7 +283,7 @@ For security, remove write permissions from these directories: '/var/www/html/ma
 ```
 
 Na de installatie kunt u een beheerder maken met de opdracht `admin:user:create` :
-[ creeer of geef een beheerder ](tutorials/admin.md#create-or-edit-an-administrator) uit
+[&#x200B; creeer of geef een beheerder &#x200B;](tutorials/admin.md#create-or-edit-an-administrator) uit
 
 #### Voorbeeld 3—Installeren met extra opties
 

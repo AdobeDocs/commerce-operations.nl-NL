@@ -12,9 +12,9 @@ ht-degree: 0%
 
 # Verwijzing naar algemene en geavanceerde configuratiepaden
 
-Dit onderwerp maakt een lijst van algemene en geavanceerde configuratiewegen en __ [ niet gevoelige en systeem-specifieke waarden ](config-reference-sens.md). Het [`magento app:config:dump` bevel ](../cli/export-configuration.md) schrijft deze waarden aan het gedeelde configuratiedossier, `app/etc/config.php`, dat in broncontrole zou moeten zijn.
+Dit onderwerp maakt een lijst van algemene en geavanceerde configuratiewegen en __ [&#x200B; niet gevoelige en systeem-specifieke waarden &#x200B;](config-reference-sens.md). Het [`magento app:config:dump` bevel &#x200B;](../cli/export-configuration.md) schrijft deze waarden aan het gedeelde configuratiedossier, `app/etc/config.php`, dat in broncontrole zou moeten zijn.
 
-Om naar keuze om het even welke configuratiemontages met voeten te treden of gevoelige montages te plaatsen, zie [ de milieuvariabelen van het Gebruik om configuratiemontages ](override-config-settings.md#environment-variables) met voeten te treden.
+Om naar keuze om het even welke configuratiemontages met voeten te treden of gevoelige montages te plaatsen, zie [&#x200B; de milieuvariabelen van het Gebruik om configuratiemontages &#x200B;](override-config-settings.md#environment-variables) met voeten te treden.
 
 ## Algemene categorie
 
@@ -26,10 +26,10 @@ Deze configuratiewaarden zijn beschikbaar in Admin in **Slaat** > Montages > **C
 
 | Naam | Config-pad | Alleen Commerce? | gevoelig? |
 |--------------|--------------|--------------|--------------|
-| Standaardland | `general/country/default` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> | ![ Gevoelig ](/help/assets/configuration/cloud-sens.png) |
-| Landen toestaan | `general/country/allow` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> | ![ Gevoelig ](/help/assets/configuration/cloud-sens.png) |
-| Postcode is optioneel voor | `general/country/optional_zip_countries` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> | ![ Gevoelig ](/help/assets/configuration/cloud-sens.png) |
-| EU-landen | `general/country/eu_countries` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> | ![ Gevoelig ](/help/assets/configuration/cloud-sens.png) |
+| Standaardland | `general/country/default` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> | ![&#x200B; Gevoelig &#x200B;](/help/assets/configuration/cloud-sens.png) |
+| Landen toestaan | `general/country/allow` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> | ![&#x200B; Gevoelig &#x200B;](/help/assets/configuration/cloud-sens.png) |
+| Postcode is optioneel voor | `general/country/optional_zip_countries` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> | ![&#x200B; Gevoelig &#x200B;](/help/assets/configuration/cloud-sens.png) |
+| EU-landen | `general/country/eu_countries` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> | ![&#x200B; Gevoelig &#x200B;](/help/assets/configuration/cloud-sens.png) |
 | Bovenste bestemmingen | `general/country/destinations` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 | Status is vereist voor | `general/region/state_required` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 | Staat kiezen als dit optioneel is voor land | `general/region/display_all` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> | |
@@ -38,11 +38,11 @@ Deze configuratiewaarden zijn beschikbaar in Admin in **Slaat** > Montages > **C
 | Gewichtseenheid | `general/locale/weight_unit` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> | |
 | Eerste weekdag | `general/locale/firstday` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> | |
 | Weekenddagen | `general/locale/weekend` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> | |
-| Toegangsbeperking | `general/restriction/is_active` | ![ Commerce-slechts ](/help/assets/configuration/cloud-ee.png) | |
-| Restrictiemodus | `general/restriction/mode` | ![ Commerce-slechts ](/help/assets/configuration/cloud-ee.png) | |
-| Opstartpagina | `general/restriction/http_redirect` | ![ Commerce-slechts ](/help/assets/configuration/cloud-ee.png) | |
-| Openingspagina | `general/restriction/cms_page` | ![ Commerce-slechts ](/help/assets/configuration/cloud-ee.png) | |
-| HTTP-respons | `general/restriction/http_status` | ![ Commerce-slechts ](/help/assets/configuration/cloud-ee.png) | |
+| Toegangsbeperking | `general/restriction/is_active` | ![&#x200B; Commerce-slechts &#x200B;](/help/assets/configuration/cloud-ee.png) | |
+| Restrictiemodus | `general/restriction/mode` | ![&#x200B; Commerce-slechts &#x200B;](/help/assets/configuration/cloud-ee.png) | |
+| Opstartpagina | `general/restriction/http_redirect` | ![&#x200B; Commerce-slechts &#x200B;](/help/assets/configuration/cloud-ee.png) | |
+| Openingspagina | `general/restriction/cms_page` | ![&#x200B; Commerce-slechts &#x200B;](/help/assets/configuration/cloud-ee.png) | |
+| HTTP-respons | `general/restriction/http_status` | ![&#x200B; Commerce-slechts &#x200B;](/help/assets/configuration/cloud-ee.png) | |
 | Winkelnaam | `general/store_information/name` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> | |
 | Telefoonnummer winkel | `general/store_information/phone` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> | |
 | Bewerkingstijden opslaan | `general/store_information/hours` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> | |
@@ -229,20 +229,20 @@ Deze configuratiewaarden zijn beschikbaar in Admin in **Slaat** > Montages > **C
 | Historie opruimen elke | `system/cron/default/history_cleanup_every` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 | Levensduur succesvolle historie | `system/cron/default/history_success_lifetime` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 | Historieperiode mislukt | `system/cron/default/history_failure_lifetime` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
-| Planningen elke genereren | `system/cron/staging/schedule_generate_every` | ![ Commerce-slechts ](/help/assets/configuration/cloud-ee.png) |
-| Plan vooruit voor | `system/cron/staging/schedule_ahead_for` | ![ Commerce-slechts ](/help/assets/configuration/cloud-ee.png) |
-| Gemist als niet binnen loopt | `system/cron/staging/schedule_lifetime` | ![ Commerce-slechts ](/help/assets/configuration/cloud-ee.png) |
-| Historie opruimen elke | `system/cron/staging/history_cleanup_every` | ![ Commerce-slechts ](/help/assets/configuration/cloud-ee.png) |
-| Levensduur succesvolle historie | `system/cron/staging/history_success_lifetime` | ![ Commerce-slechts ](/help/assets/configuration/cloud-ee.png) |
-| Historieperiode mislukt | `system/cron/staging/history_failure_lifetime` | ![ Commerce-slechts ](/help/assets/configuration/cloud-ee.png) |
-| Afzonderlijk proces gebruiken | `system/cron/staging/use_separate_process` | ![ Commerce-slechts ](/help/assets/configuration/cloud-ee.png) |
-| Planningen elke genereren | `system/cron/catalog/event/schedule_generate_every` | ![ Commerce-slechts ](/help/assets/configuration/cloud-ee.png) |
-| Plan vooruit voor | `system/cron/catalog/event/schedule_ahead_for` | ![ Commerce-slechts ](/help/assets/configuration/cloud-ee.png) |
-| Gemist als niet binnen loopt | `system/cron/catalog/event/schedule_lifetime` | ![ Commerce-slechts ](/help/assets/configuration/cloud-ee.png) |
-| Historie opruimen elke | `system/cron/catalog/event/history_cleanup_every` | ![ Commerce-slechts ](/help/assets/configuration/cloud-ee.png) |
-| Levensduur succesvolle historie | `system/cron/catalog/event/history_success_lifetime` | ![ Commerce-slechts ](/help/assets/configuration/cloud-ee.png) |
-| Historieperiode mislukt | `system/cron/catalog/event/history_failure_lifetime` | ![ Commerce-slechts ](/help/assets/configuration/cloud-ee.png) |
-| Afzonderlijk proces gebruiken | `system/cron/catalog/event/use_separate_process` | ![ Commerce-slechts ](/help/assets/configuration/cloud-ee.png) |
+| Planningen elke genereren | `system/cron/staging/schedule_generate_every` | ![&#x200B; Commerce-slechts &#x200B;](/help/assets/configuration/cloud-ee.png) |
+| Plan vooruit voor | `system/cron/staging/schedule_ahead_for` | ![&#x200B; Commerce-slechts &#x200B;](/help/assets/configuration/cloud-ee.png) |
+| Gemist als niet binnen loopt | `system/cron/staging/schedule_lifetime` | ![&#x200B; Commerce-slechts &#x200B;](/help/assets/configuration/cloud-ee.png) |
+| Historie opruimen elke | `system/cron/staging/history_cleanup_every` | ![&#x200B; Commerce-slechts &#x200B;](/help/assets/configuration/cloud-ee.png) |
+| Levensduur succesvolle historie | `system/cron/staging/history_success_lifetime` | ![&#x200B; Commerce-slechts &#x200B;](/help/assets/configuration/cloud-ee.png) |
+| Historieperiode mislukt | `system/cron/staging/history_failure_lifetime` | ![&#x200B; Commerce-slechts &#x200B;](/help/assets/configuration/cloud-ee.png) |
+| Afzonderlijk proces gebruiken | `system/cron/staging/use_separate_process` | ![&#x200B; Commerce-slechts &#x200B;](/help/assets/configuration/cloud-ee.png) |
+| Planningen elke genereren | `system/cron/catalog/event/schedule_generate_every` | ![&#x200B; Commerce-slechts &#x200B;](/help/assets/configuration/cloud-ee.png) |
+| Plan vooruit voor | `system/cron/catalog/event/schedule_ahead_for` | ![&#x200B; Commerce-slechts &#x200B;](/help/assets/configuration/cloud-ee.png) |
+| Gemist als niet binnen loopt | `system/cron/catalog/event/schedule_lifetime` | ![&#x200B; Commerce-slechts &#x200B;](/help/assets/configuration/cloud-ee.png) |
+| Historie opruimen elke | `system/cron/catalog/event/history_cleanup_every` | ![&#x200B; Commerce-slechts &#x200B;](/help/assets/configuration/cloud-ee.png) |
+| Levensduur succesvolle historie | `system/cron/catalog/event/history_success_lifetime` | ![&#x200B; Commerce-slechts &#x200B;](/help/assets/configuration/cloud-ee.png) |
+| Historieperiode mislukt | `system/cron/catalog/event/history_failure_lifetime` | ![&#x200B; Commerce-slechts &#x200B;](/help/assets/configuration/cloud-ee.png) |
+| Afzonderlijk proces gebruiken | `system/cron/catalog/event/use_separate_process` | ![&#x200B; Commerce-slechts &#x200B;](/help/assets/configuration/cloud-ee.png) |
 | Afzonderlijk proces gebruiken | `system/cron/default/use_separate_process` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 | E-mailcommunicatie uitschakelen | `system/smtp/disable` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 | Return-Path instellen | `system/smtp/set_return_path` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |

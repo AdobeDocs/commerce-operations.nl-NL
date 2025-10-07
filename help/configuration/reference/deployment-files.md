@@ -27,15 +27,15 @@ Samen, `config.php` en `env.php` worden bedoeld als Commerce _plaatsingsconfigur
 >
 >De implementatieconfiguratie van [!DNL Commerce 2] vervangt `local.xml` in [!DNL Magento 1.x] .
 
-In tegenstelling tot andere [ dossiers van de moduleconfiguratie ](../reference/module-files.md), wordt de plaatsingsconfiguratie van Commerce geladen in geheugen wanneer tijdens initialisering, niet met andere dossiers samengevoegd, en kan niet worden uitgebreid. (`config.php` en `env.php` worden echter met elkaar samengevoegd.)
+In tegenstelling tot andere [&#x200B; dossiers van de moduleconfiguratie &#x200B;](../reference/module-files.md), wordt de plaatsingsconfiguratie van Commerce geladen in geheugen wanneer tijdens initialisering, niet met andere dossiers samengevoegd, en kan niet worden uitgebreid. (`config.php` en `env.php` worden echter met elkaar samengevoegd.)
 
 ## Details over de implementatieconfiguratie
 
-`config.php` en `env.php` zijn PHP dossiers die a [ multi-dimensionale associatieve serie ](https://www.w3schools.com:443/php/php_arrays.asp) terugkeren, die fundamenteel een hiërarchische rangschikking van configuratieparameters en waarden is.
+`config.php` en `env.php` zijn PHP dossiers die a [&#x200B; multi-dimensionale associatieve serie &#x200B;](https://www.w3schools.com:443/php/php_arrays.asp) terugkeren, die fundamenteel een hiërarchische rangschikking van configuratieparameters en waarden is.
 
 Op het hoogste niveau van deze serie zijn _configuratiesegmenten_. Een segment heeft willekeurige inhoud (een scalaire waarde of een geneste array) die wordt onderscheiden door een willekeurige sleutel, waarbij zowel het sleutelpaar als het waardepaar door het Commerce-framework worden gedefinieerd.
 
-[ Magento\Framework\App\DeploymentConfig ](https://github.com/magento/magento2/blob/2.4/lib/internal/Magento/Framework/App/DeploymentConfig.php) verleent slechts toegang tot deze secties maar staat u niet toe om hen uit te breiden.
+[&#x200B; Magento\Framework\App\DeploymentConfig &#x200B;](https://github.com/magento/magento2/blob/2.4/lib/internal/Magento/Framework/App/DeploymentConfig.php) verleent slechts toegang tot deze secties maar staat u niet toe om hen uit te breiden.
 
 Op het volgende hiërarchieniveau, worden de punten in elk segment bevolen volgens de definitie van de moduleopeenvolging, die door de configuratiedossiers van alle modules samen te voegen, behalve gehandicapte modules wordt verkregen.
 
@@ -51,7 +51,7 @@ Het bestand `config.php` bevat een lijst met geïnstalleerde modules. Adobe Comm
 Voorbeelden:
 
 - Componenten verwijderen: [`bin/magento setup:uninstall`](../../installation/tutorials/uninstall-modules.md)
-- Status van componenten controleren: [`bin/magento module:status` ](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/cli-reference/commerce-on-premises#modulestatus)
+- Status van componenten controleren: [`bin/magento module:status` &#x200B;](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/cli-reference/commerce-on-premises#modulestatus)
 - Schakel componenten in of uit: [`bin/magento module:disable`](../../installation/tutorials/manage-modules.md), [`bin/magento module:enable`](../../installation/tutorials/manage-modules.md) .
 
 > _config.php_

@@ -22,9 +22,9 @@ Voorbeelden van geldige functies zijn:
 
 Raadpleeg de volgende bronnen voor installatie en configuratie van de Valkey-software:
 
-- [ Download Valkey pagina ](https://valkey.io/download/)
-- [ Valkey snel begin ](https://valkey.io/topics/quickstart/)
-- [ Valkey documentatiepagina ](https://valkey.io/docs)
+- [&#x200B; Download Valkey pagina &#x200B;](https://valkey.io/download/)
+- [&#x200B; Valkey snel begin &#x200B;](https://valkey.io/topics/quickstart/)
+- [&#x200B; Valkey documentatiepagina &#x200B;](https://valkey.io/docs)
 
 ## Valkey-configuratie instellen
 
@@ -38,7 +38,7 @@ Adobe raadt aan dat tijdens sessies geldige gegevens naar de schijf worden gekop
 
 - **voegt slechts Dossier** (AOF) toe slaat elke schrijfverrichting die naar Valkey in een dagboekdossier wordt verzonden op. Valkey leest dit dossier bij nieuw begin slechts en gebruikt het om de originele dataset te herstellen.
 
-U kunt zowel de opties RDB als AOF tegelijkertijd inschakelen. Voor extra details met inbegrip van de voordelen en de nadelen van de persistentieopties, zie de [ documentatie van de Persistentie van de Sleutel ](https://valkey.io/topics/persistence/).
+U kunt zowel de opties RDB als AOF tegelijkertijd inschakelen. Voor extra details met inbegrip van de voordelen en de nadelen van de persistentieopties, zie de [&#x200B; documentatie van de Persistentie van de Sleutel &#x200B;](https://valkey.io/topics/persistence/).
 
 Voor de cacheinstantie moet u de instantie zo instellen dat deze groot genoeg is om de gehele Commerce-cache op te slaan. De groottevereisten zijn afhankelijk van verschillende factoren, zoals het aantal producten en de winkelweergave. Als uitgangspunt kunt u de grootte van de cachemap op uw bestandssysteem gebruiken. Als de map `var/cache` op uw bestandssysteem bijvoorbeeld 5 GB is, stelt u de instantie Valkey in met ten minste 5 GB om te starten. Voor de cacheinstantie is persistentie niet vereist omdat de Commerce-cache kan worden hersteld.
 

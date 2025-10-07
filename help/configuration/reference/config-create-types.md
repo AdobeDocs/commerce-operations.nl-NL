@@ -48,7 +48,7 @@ Een configuratietype maken:
 1. Maak uw XML-bestand.
 1. Definieer het configuratieobject in de `di.xml` .
 
-   Het volgende voorbeeld van Magento_Sales module [ di.xml ](https://github.com/magento/magento2/blob/2.4/app/code/Magento/Sales/etc/di.xml) illustreert hoe een configuratievoorwerp als zou moeten kijken.
+   Het volgende voorbeeld van Magento_Sales module [&#x200B; di.xml &#x200B;](https://github.com/magento/magento2/blob/2.4/app/code/Magento/Sales/etc/di.xml) illustreert hoe een configuratievoorwerp als zou moeten kijken.
 
    ```xml
    <config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:ObjectManager/etc/config.xsd">
@@ -77,10 +77,10 @@ Een configuratietype maken:
    ```
 
    - Het eerste type knooppunt stelt de bestandsnaam van de Reader, de gekoppelde `Converter` - en `SchemaLocator` -klassen in.
-   - Dan, verbindt de `pdfConfigDataStorage` virtuele typeknoop de lezerklasse aan een geval van [ Magento\Framework\Config\Data ](https://github.com/magento/magento2/blob/2.4/lib/internal/Magento/Framework/Config/Data.php).
-   - En tenslotte, verbindt de laatste typeknoop dat config gegevens virtueel type aan de [ Magento\Sales\Model\Order\Pdf\Config ](https://github.com/magento/magento2/blob/2.4/app/code/Magento/Sales/Model/Order/Pdf/Config.php) klasse, die voor eigenlijk het lezen van waarden binnen van die [ pdf.xml ](https://github.com/magento/magento2/blob/2.4/app/code/Magento/Sales/etc/pdf.xml) dossiers wordt gebruikt.
+   - Dan, verbindt de `pdfConfigDataStorage` virtuele typeknoop de lezerklasse aan een geval van [&#x200B; Magento\Framework\Config\Data &#x200B;](https://github.com/magento/magento2/blob/2.4/lib/internal/Magento/Framework/Config/Data.php).
+   - En tenslotte, verbindt de laatste typeknoop dat config gegevens virtueel type aan de [&#x200B; Magento\Sales\Model\Order\Pdf\Config &#x200B;](https://github.com/magento/magento2/blob/2.4/app/code/Magento/Sales/Model/Order/Pdf/Config.php) klasse, die voor eigenlijk het lezen van waarden binnen van die [&#x200B; pdf.xml &#x200B;](https://github.com/magento/magento2/blob/2.4/app/code/Magento/Sales/etc/pdf.xml) dossiers wordt gebruikt.
 
-1. Bepaal een lezer door [ Magento\Framework\Config\Reader\Filesystem ](https://github.com/magento/magento2/blob/2.4/lib/internal/Magento/Framework/Config/Reader/Filesystem.php) klasse uit te breiden en de volgende parameters te herschrijven:
+1. Bepaal een lezer door [&#x200B; Magento\Framework\Config\Reader\Filesystem &#x200B;](https://github.com/magento/magento2/blob/2.4/lib/internal/Magento/Framework/Config/Reader/Filesystem.php) klasse uit te breiden en de volgende parameters te herschrijven:
 
    ```php
    $_idAttributes // Array of node attribute IDs.
@@ -115,7 +115,7 @@ class Reader extends Filesystem
 
 >[!INFO]
 >
->Als u liever uw eigen versie van de lezer maakt, kunt u dit doen door `\Magento\Framework\Config\ReaderInterface` te implementeren. Zie [ Magento_Analytics config reader ](https://github.com/magento/magento2/blob/2.4/app/code/Magento/Analytics/ReportXml/Config/Reader.php)
+>Als u liever uw eigen versie van de lezer maakt, kunt u dit doen door `\Magento\Framework\Config\ReaderInterface` te implementeren. Zie [&#x200B; Magento_Analytics config reader &#x200B;](https://github.com/magento/magento2/blob/2.4/app/code/Magento/Analytics/ReportXml/Config/Reader.php)
 
 Nadat u de lezer hebt gedefinieerd, kunt u deze gebruiken voor het verzamelen, samenvoegen, valideren en omzetten van de configuratiebestanden in een interne arrayrepresentatie.
 

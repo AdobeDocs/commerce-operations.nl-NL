@@ -13,7 +13,7 @@ ht-degree: 0%
 
 {{file-system-owner}}
 
-Om veiligheid en gemak-van-gebruik te verbeteren, hebben wij een bevel toegevoegd dat [ toepassingswijzen ](../bootstrap/application-modes.md) van ontwikkelaar aan productie en vice versa schakelt.
+Om veiligheid en gemak-van-gebruik te verbeteren, hebben wij een bevel toegevoegd dat [&#x200B; toepassingswijzen &#x200B;](../bootstrap/application-modes.md) van ontwikkelaar aan productie en vice versa schakelt.
 
 De productiemodus biedt betere prestaties omdat statische weergavebestanden worden gevuld in de map `pub/static` en vanwege de codecompilatie.
 
@@ -21,7 +21,7 @@ De productiemodus biedt betere prestaties omdat statische weergavebestanden word
 >
 >In versie 2.0.6 en hoger stelt Commerce niet expliciet bestands- of mapmachtigingen in wanneer u schakelt tussen de standaardmodus, de ontwikkelmodus en de productiemodus. In tegenstelling tot andere modi worden de ontwikkelaar- en productiemodi ingesteld in het `env.php` -bestand. Adobe Commerce on cloud Infrastructure ondersteunt alleen productie- en onderhoudsmodi.
 >
->Zie [ Commerce eigendom en toestemmingen in ontwikkeling en productie ](../deployment/file-system-permissions.md).
+>Zie [&#x200B; Commerce eigendom en toestemmingen in ontwikkeling en productie &#x200B;](../deployment/file-system-permissions.md).
 
 Wanneer u in ontwikkelaar of productiemodus verandert, ontruimen wij de inhoud van volgende folders:
 
@@ -44,7 +44,7 @@ Uitzonderingen:
 
 ## De huidige modus weergeven
 
-De gemakkelijkste manier om dat te doen is dit bevel als [ eigenaar van het dossiersysteem ](../../installation/prerequisites/file-system/overview.md) in werking te stellen. Als u een gedeelde host hebt, is dit de gebruiker die uw provider u geeft om u aan te melden bij de server. Als u een privéserver hebt, is dit doorgaans een lokale gebruikersaccount op de Commerce-server.
+De gemakkelijkste manier om dat te doen is dit bevel als [&#x200B; eigenaar van het dossiersysteem &#x200B;](../../installation/prerequisites/file-system/overview.md) in werking te stellen. Als u een gedeelde host hebt, is dit de gebruiker die uw provider u geeft om u aan te melden bij de server. Als u een privéserver hebt, is dit doorgaans een lokale gebruikersaccount op de Commerce-server.
 
 Opdrachtgebruik:
 
@@ -74,7 +74,7 @@ waarbij:
 
 - **`{mode}`** is vereist. Dit kan `developer` of `production` zijn
 
-- **`--skip-compilation`** is een facultatieve parameter u kunt gebruiken om [ codecompilatie ](../cli/code-compiler.md) over te slaan wanneer u in productiemodus verandert.
+- **`--skip-compilation`** is een facultatieve parameter u kunt gebruiken om [&#x200B; codecompilatie &#x200B;](../cli/code-compiler.md) over te slaan wanneer u in productiemodus verandert.
 
 Hieronder volgen voorbeelden.
 
@@ -161,6 +161,6 @@ Enabled default mode.
 
 ### CLI-opdrachten overal uitvoeren
 
-[ Lijn CLI bevelen van overal ](../cli/config-cli.md#config-install-cli-first) in werking.
+[&#x200B; Lijn CLI bevelen van overal &#x200B;](../cli/config-cli.md#config-install-cli-first) in werking.
 
 Als u `<Commerce-install-directory>/bin` niet aan uw systeem `PATH` hebt toegevoegd, kunt u een fout verwachten wanneer het runnen van het bevel door zich.

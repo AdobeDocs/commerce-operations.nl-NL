@@ -100,7 +100,7 @@ Bevat een array van configuratiewaarden voor systeemvelden.
 ]
 ```
 
-Leer meer over [ systeem-specifieke Configuraties ](config-reference-sens.md).
+Leer meer over [&#x200B; systeem-specifieke Configuraties &#x200B;](config-reference-sens.md).
 
 ## thema&#39;s
 

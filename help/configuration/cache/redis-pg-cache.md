@@ -14,7 +14,7 @@ ht-degree: 0%
 
 Commerce biedt opdrachtregelopties voor het configureren van de pagina Redis en het in cache plaatsen van standaardgegevens. Hoewel u caching kunt vormen door het `<Commerce-install-dir>app/etc/env.php` dossier uit te geven, is het gebruiken van de bevellijn de geadviseerde methode, vooral voor aanvankelijke configuraties. De bevellijn verstrekt bevestiging, die de configuratie verzekeren syntactisch correct is.
 
-U moet [ Redis ](config-redis.md#install-redis) installeren alvorens verder te gaan.
+U moet [&#x200B; Redis &#x200B;](config-redis.md#install-redis) installeren alvorens verder te gaan.
 
 ## Standaardcaching van Redis configureren
 
@@ -114,9 +114,9 @@ Vanaf Commerce 2.4.3 kunnen instanties die worden gehost op Amazon EC2 een AWS E
 
 ### Een Redis-cluster configureren
 
-Na [ vestiging een cluster Redis op AWS ](https://aws.amazon.com/getting-started/hands-on/setting-up-a-redis-cluster-with-amazon-elasticache/), vorm de instantie EC2 om ElastiCache te gebruiken.
+Na [&#x200B; vestiging een cluster Redis op AWS &#x200B;](https://aws.amazon.com/getting-started/hands-on/setting-up-a-redis-cluster-with-amazon-elasticache/), vorm de instantie EC2 om ElastiCache te gebruiken.
 
-1. [ creeer een Cluster ElastiCache ](https://docs.aws.amazon.com/AmazonElastiCache/latest/red-ug/set-up.html) in het zelfde gebied en VPC van de instantie EC2.
+1. [&#x200B; creeer een Cluster ElastiCache &#x200B;](https://docs.aws.amazon.com/AmazonElastiCache/latest/red-ug/set-up.html) in het zelfde gebied en VPC van de instantie EC2.
 1. Controleer de verbinding.
 
    - Een SSH-verbinding openen naar uw EC2-instantie
@@ -170,7 +170,7 @@ bin/magento setup:config:set --session-save=redis --session-save-redis-host=<Ela
    ```
 
 1. Open een pagina in de gebruikersinterface van Commerce.
-1. Verifieer de [ geheim voorgeheugenoutput ](#verify-redis-connection) in uw terminal.
+1. Verifieer de [&#x200B; geheim voorgeheugenoutput &#x200B;](#verify-redis-connection) in uw terminal.
 
 ## Nieuwe Redis-cacheimplementatie
 
@@ -318,4 +318,4 @@ Als beide opdrachten zijn uitgevoerd, wordt Redis op de juiste wijze ingesteld.
 
 ### Gecomprimeerde gegevens controleren
 
-Om de samengeperste gegevens van de Zitting en het Geheime voorgeheugen van de Pagina te inspecteren, [ RESP.app ](https://flathub.org/apps/details/app.resp.RESP) steunt de automatische decompressie van Commerce 2 Sessie en het geheime voorgeheugen van de Pagina en toont PHP zittingsgegevens in een mens-leesbare vorm.
+Om de samengeperste gegevens van de Zitting en het Geheime voorgeheugen van de Pagina te inspecteren, [&#x200B; RESP.app &#x200B;](https://flathub.org/apps/details/app.resp.RESP) steunt de automatische decompressie van Commerce 2 Sessie en het geheime voorgeheugen van de Pagina en toont PHP zittingsgegevens in een mens-leesbare vorm.

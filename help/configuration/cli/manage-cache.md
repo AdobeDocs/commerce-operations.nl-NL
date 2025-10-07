@@ -20,7 +20,7 @@ U kunt het Adobe Commerce-cachebeheersysteem gebruiken om de prestaties van uw s
 >[!NOTE]
 >
 >
->Commerce-sitebeheerders kunnen het cachegeheugen beheren vanuit de beheerder met het hulpprogramma Cache Management System. Zie [ Beheer van het Geheime voorgeheugen ](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/tools/cache-management) in de _Gids van Systemen Admin_.
+>Commerce-sitebeheerders kunnen het cachegeheugen beheren vanuit de beheerder met het hulpprogramma Cache Management System. Zie [&#x200B; Beheer van het Geheime voorgeheugen &#x200B;](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/tools/cache-management) in de _Gids van Systemen Admin_.
 
 
 ## De status van de cache weergeven
@@ -59,7 +59,7 @@ Current status:
 
 >[!TIP]
 >
->Voor een gedetailleerde beschrijving van de standaardgeheim voorgeheugentypes die door Adobe Commerce worden gesteund, zie [ Caches ](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/tools/cache-management#caches) in de _Gids van Systemen Admin_.
+>Voor een gedetailleerde beschrijving van de standaardgeheim voorgeheugentypes die door Adobe Commerce worden gesteund, zie [&#x200B; Caches &#x200B;](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/tools/cache-management#caches) in de _Gids van Systemen Admin_.
 
 
 ## Cachetypen in- of uitschakelen
@@ -68,7 +68,7 @@ Met deze opdracht kunt u alle cachetypen of alleen de door u opgegeven typen in-
 
 >[!INFO]
 >
->Vanaf versie 2.2 kunt u castypen alleen in- of uitschakelen via de opdrachtregel terwijl Commerce in de productiemodus wordt uitgevoerd. Als u Commerce uitvoert in de ontwikkelaarsmodus, kunt u cachetypen in- of uitschakelen via de opdrachtregel of handmatig. Alvorens dit te doen, moet u `<magento_root>/app/etc/env.php` manueel schrijfbaar maken door de [ eigenaar van het dossiersysteem ](../../installation/prerequisites/file-system/overview.md).
+>Vanaf versie 2.2 kunt u castypen alleen in- of uitschakelen via de opdrachtregel terwijl Commerce in de productiemodus wordt uitgevoerd. Als u Commerce uitvoert in de ontwikkelaarsmodus, kunt u cachetypen in- of uitschakelen via de opdrachtregel of handmatig. Alvorens dit te doen, moet u `<magento_root>/app/etc/env.php` manueel schrijfbaar maken door de [&#x200B; eigenaar van het dossiersysteem &#x200B;](../../installation/prerequisites/file-system/overview.md).
 
 U kunt (ook die als _wordt bedoeld flush_ of _verfrissen_) geheim voorgeheugentypes gebruikend of de bevellijn of Admin.
 
@@ -112,7 +112,7 @@ Monsterresultaat:
 
 >[!INFO]
 >
->Vanaf versie 2.3.4 worden alle EAV-kenmerken van het systeem door Commerce in cache opgeslagen wanneer deze worden opgehaald. Op deze manier verbetert het in cache plaatsen van EAV-kenmerken de prestaties, omdat hierdoor minder aanvragen voor invoegen/selecteren naar de DB worden ingediend. Nochtans, verhoogt het ook de grootte van het geheim voorgeheugennetwerk. Ontwikkelaars kunnen aangepaste EAV-kenmerken in cache plaatsen door de opdracht `bin/magento config:set dev/caching/cache_user_defined_attributes 1` uit te voeren. Dit kan ook van Admin worden gedaan terwijl op [ wijze van de Ontwikkelaar ](../bootstrap/application-modes.md) door **Opslag** te plaatsen > de Configuratie van Montages **** > **Geavanceerd** > **Ontwikkelaar** > **Caching Montages** > **Gedefinieerde Gebruiker van het Geheime voorgeheugen Attributen** aan **ja**.
+>Vanaf versie 2.3.4 worden alle EAV-kenmerken van het systeem door Commerce in cache opgeslagen wanneer deze worden opgehaald. Op deze manier verbetert het in cache plaatsen van EAV-kenmerken de prestaties, omdat hierdoor minder aanvragen voor invoegen/selecteren naar de DB worden ingediend. Nochtans, verhoogt het ook de grootte van het geheim voorgeheugennetwerk. Ontwikkelaars kunnen aangepaste EAV-kenmerken in cache plaatsen door de opdracht `bin/magento config:set dev/caching/cache_user_defined_attributes 1` uit te voeren. Dit kan ook van Admin worden gedaan terwijl op [&#x200B; wijze van de Ontwikkelaar &#x200B;](../bootstrap/application-modes.md) door **Opslag** te plaatsen > de Configuratie van Montages **&#x200B;**&#x200B;> **Geavanceerd** > **Ontwikkelaar** > **Caching Montages** > **Gedefinieerde Gebruiker van het Geheime voorgeheugen Attributen** aan **ja**.
 
 ## Cachetypen opschonen en leegmaken
 

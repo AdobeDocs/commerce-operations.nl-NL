@@ -22,10 +22,10 @@ Tot de volgende functies behoren:
 
 De Redis-software installeren en configureren valt buiten het bereik van deze handleiding. Bronnen raadplegen, zoals:
 
-- [ Redis pagina van de Download ](https://redis.io/download)
-- [ Redis snel begin ](https://redis.io/docs/getting-started/)
-- [ DigitalOcean ](https://www.digitalocean.com/community/tutorials/how-to-install-and-use-redis)
-- [ Redis documentatiepagina ](https://redis.io/docs)
+- [&#x200B; Redis pagina van de Download &#x200B;](https://redis.io/download)
+- [&#x200B; Redis snel begin &#x200B;](https://redis.io/docs/getting-started/)
+- [&#x200B; DigitalOcean &#x200B;](https://www.digitalocean.com/community/tutorials/how-to-install-and-use-redis)
+- [&#x200B; Redis documentatiepagina &#x200B;](https://redis.io/docs)
 
 ## Redis-configuratie instellen
 
@@ -39,9 +39,9 @@ Voor sessies raadt Adobe aan dat u persistentie inschakelt om Redis-gegevens naa
 
 - **voegt slechts Dossier** (AOF) toe slaat elke schrijfverrichting die naar Redis in een dagboekdossier wordt verzonden op. Redis leest dit dossier bij nieuw begin slechts en gebruikt het om de originele dataset te herstellen.
 
-U kunt zowel de opties RDB als AOF tegelijkertijd inschakelen. Voor extra details met inbegrip van de voordelen en de nadelen van de persistentieopties, zie [ Redis documentatie van de Persistentie ](https://redis.io/topics/persistence).
+U kunt zowel de opties RDB als AOF tegelijkertijd inschakelen. Voor extra details met inbegrip van de voordelen en de nadelen van de persistentieopties, zie [&#x200B; Redis documentatie van de Persistentie &#x200B;](https://redis.io/topics/persistence).
 
-Voor de cacheinstantie moet u de instantie zo instellen dat deze groot genoeg is om de gehele Commerce-cache op te slaan. De groottevereisten zijn afhankelijk van verschillende factoren, zoals het aantal producten en de winkelweergave. Als uitgangspunt kunt u de grootte van de cachemap op uw bestandssysteem gebruiken. Als de map `var/cache` op uw bestandssysteem bijvoorbeeld 5 GB is, stelt u Redis-instantie in met ten minste 5 GB om te starten. Voor de cacheinstantie is persistentie niet vereist omdat de Commerce-cache kan worden hersteld. Zie [ Redis geheim voorgeheugengids ](https://redis.io/docs/latest/develop/use/).
+Voor de cacheinstantie moet u de instantie zo instellen dat deze groot genoeg is om de gehele Commerce-cache op te slaan. De groottevereisten zijn afhankelijk van verschillende factoren, zoals het aantal producten en de winkelweergave. Als uitgangspunt kunt u de grootte van de cachemap op uw bestandssysteem gebruiken. Als de map `var/cache` op uw bestandssysteem bijvoorbeeld 5 GB is, stelt u Redis-instantie in met ten minste 5 GB om te starten. Voor de cacheinstantie is persistentie niet vereist omdat de Commerce-cache kan worden hersteld. Zie [&#x200B; Redis geheim voorgeheugengids &#x200B;](https://redis.io/docs/latest/develop/use/).
 
 Voor het afstemmen van de prestaties kunt u de volgende instellingen inschakelen voor asynchrone verwijdering. Deze instellingen veranderen het gedrag van Redis niet.
 

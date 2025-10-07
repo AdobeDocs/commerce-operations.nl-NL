@@ -18,7 +18,7 @@ Nu u `default.vcl` gebruikt die voor u door Commerce wordt geproduceerd, kunt u 
 
 Gebruik `curl` of een ander hulpprogramma om HTTP-antwoordheaders weer te geven wanneer u een Commerce-pagina in een webbrowser bezoekt.
 
-Eerst, zorg ervoor u [ ontwikkelaarwijze ](../cli/set-mode.md#change-to-developer-mode) gebruikt; anders, zult u niet de kopballen zien.
+Eerst, zorg ervoor u [&#x200B; ontwikkelaarwijze &#x200B;](../cli/set-mode.md#change-to-developer-mode) gebruikt; anders, zult u niet de kopballen zien.
 
 Bijvoorbeeld:
 
@@ -55,7 +55,7 @@ Als u bijvoorbeeld de Chrome-controle wilt gebruiken:
 
    In de volgende afbeelding ziet u een voorbeeld van het laden van de indexpagina `magento2` .
 
-   ![ klik de pagina u ](../../assets/configuration/varnish-inspector.png) bekijkt
+   ![&#x200B; klik de pagina u &#x200B;](../../assets/configuration/varnish-inspector.png) bekijkt
 
    De laadtijd van de pagina wordt weergegeven naast de pagina-URL. In dit geval is de laadtijd 5 ms. Zo kunt u bevestigen dat Varnish de pagina in het cachegeheugen heeft opgeslagen.
 
@@ -83,4 +83,4 @@ Controleer of de map `<magento_root>/var/page_cache` leeg is:
 
 >[!TIP]
 >
->Als u 503 (Ontbroken de Ophalen van de Achterkant) fouten ontmoet, zie [ het Oplossen van problemen 503 (de Dienst niet beschikbaar) fouten ](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/troubleshooting-503-errors.html) in het _Adobe Commerce Help Center_.
+>Als u 503 (Ontbroken de Ophalen van de Achterkant) fouten ontmoet, zie [&#x200B; het Oplossen van problemen 503 (de Dienst niet beschikbaar) fouten &#x200B;](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/troubleshooting-503-errors.html) in het _Adobe Commerce Help Center_.

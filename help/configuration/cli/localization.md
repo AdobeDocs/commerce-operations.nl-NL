@@ -89,10 +89,10 @@ In tegenstelling tot een vertaalwoordenboek kunt u een of meer woorden en woordg
 
 In deze sectie wordt besproken hoe u een taalpakket kunt maken, waarin CSV-bestanden naar modules en thema&#39;s worden geschreven. Als u een taalpakket wilt maken, moet u de in de volgende secties beschreven taken uitvoeren:
 
-1. [ verzamel en vertaal woorden en uitdrukkingen ](#generate-a-translation-dictionary). (De parameter `--magento` is vereist.)
-1. [ stel het bevel van het taalpakket in werking ](#run-the-language-package-command).
-1. [ creeer folders en dossiers ](#create-directories-and-files).
-1. (Facultatief.) [ vorm veelvoudige pakketten voor een taal ](#configure-multiple-packages-for-a-language).
+1. [&#x200B; verzamel en vertaal woorden en uitdrukkingen &#x200B;](#generate-a-translation-dictionary). (De parameter `--magento` is vereist.)
+1. [&#x200B; stel het bevel van het taalpakket in werking &#x200B;](#run-the-language-package-command).
+1. [&#x200B; creeer folders en dossiers &#x200B;](#create-directories-and-files).
+1. (Facultatief.) [&#x200B; vorm veelvoudige pakketten voor een taal &#x200B;](#configure-multiple-packages-for-a-language).
 
 ### De opdracht Taalpakket uitvoeren
 
@@ -106,7 +106,7 @@ In de volgende tabel worden de parameters en waarden voor de opdracht Taalpakket
 
 | Parameter | Waarde | Vereist? |
 |--- |--- |--- |
-| `<source>` | Absoluut pad naar bestandssysteem en bestandsnaam van een CSV-bestand met het gecombineerde vertaalwoordenboek en de metagegevens die nodig zijn voor de indeling in een taalpakket.<br><br> Gebruik [`bin/magento i18n:collect-phrases`](#config-cli-subcommands-xlate-dict-dict) om het Csv- dossier tot stand te brengen dan tot het taalpakket zoals die in [ wordt besproken leidt tot folders en dossiers ](#m2devgde-xlate-files). | Ja |
+| `<source>` | Absoluut pad naar bestandssysteem en bestandsnaam van een CSV-bestand met het gecombineerde vertaalwoordenboek en de metagegevens die nodig zijn voor de indeling in een taalpakket.<br><br> Gebruik [`bin/magento i18n:collect-phrases`](#config-cli-subcommands-xlate-dict-dict) om het Csv- dossier tot stand te brengen dan tot het taalpakket zoals die in [&#x200B; wordt besproken leidt tot folders en dossiers &#x200B;](#m2devgde-xlate-files). | Ja |
 | `<locale>` | [ ISO 639-1 ] (taal) en [ ISO 3166 ] (land) herkenningsteken van taal die als dossiernaam voor alle resulterende Csv- dossiers wordt gebruikt. Voorbeelden: `de_DE` , `pt_PT` , `pt_BR` . | Ja |
 | `-m --mode` | Als er een doelbestand bestaat, geeft u op of het bestaande taalpakket moet worden vervangen of moet worden samengevoegd met het nieuwe taalpakket. Bij het samenvoegen worden alle bestaande woordgroepen overschreven en worden er nieuwe toegevoegd.<br><br> Waarden: fusie of vervang (gebrek). | Nee |
 | `-d --allow-duplicates` | Neem deze optie op als u duplicaten in het taalpakket wilt toestaan. Anders mislukt de opdracht met een fout als dezelfde woordgroep wordt aangetroffen in meerdere items met verschillende vertalingen. | Nee |
@@ -139,7 +139,7 @@ U kunt als volgt deze bestanden maken:
 
 Wanneer u een taalpakket in het configuratiebestand van `language.xml` declareert, moet u de volgorde van de taalovererving voor dit pakket opgeven.
 
-De overerving van de taal laat u toe om een vertaling tot stand te brengen genoemd a _kind_ dat op een bestaande vertaling wordt gebaseerd geroepen a _ouder_. De onderliggende vertalingen overschrijven het bovenliggende element. Als de onderliggende vertaling echter niet kan worden geüpload of weergegeven of als er een woordgroep of woord ontbreekt, gebruikt Commerce de bovenliggende landinstelling. [ Voorbeelden van taalpakketovererving ](#example-of-language-inheritance).
+De overerving van de taal laat u toe om een vertaling tot stand te brengen genoemd a _kind_ dat op een bestaande vertaling wordt gebaseerd geroepen a _ouder_. De onderliggende vertalingen overschrijven het bovenliggende element. Als de onderliggende vertaling echter niet kan worden geüpload of weergegeven of als er een woordgroep of woord ontbreekt, gebruikt Commerce de bovenliggende landinstelling. [&#x200B; Voorbeelden van taalpakketovererving &#x200B;](#example-of-language-inheritance).
 
 Geef de volgende informatie op om een pakket te declareren:
 
@@ -221,7 +221,7 @@ U voegt als volgt een Duitse vertaling toe aan een module of thema dat u wilt ve
    >
    >Het CSV- dossier - naam moet _precies_ de scène aanpassen, met inbegrip van het geval van karakters.
 
-1. Vertaal de woorden en de uitdrukkingen gebruikend [ deze richtlijnen ](#translation-guidelines).
+1. Vertaal de woorden en de uitdrukkingen gebruikend [&#x200B; deze richtlijnen &#x200B;](#translation-guidelines).
 1. Kopieer indien nodig `xx_YY.csv` naar `/var/www/html/magento2/app/code/ExampleCorp/SampleModule/i18n` of naar de themamap van de module (afhankelijk van of het vertaalwoordenboek voor een module of een thema is).
 
 ### Voorbeeld: Een taalpakket maken
@@ -238,7 +238,7 @@ Vergelijkbaar met het voorgaande voorbeeld genereert u een CSV-bestand. In plaat
    >
    >Het CSV- dossier - naam moet _precies_ de scène aanpassen, met inbegrip van het geval van karakters.
 
-1. Vertaal de woorden en de uitdrukkingen gebruikend [ deze richtlijnen ](#translation-guidelines).
+1. Vertaal de woorden en de uitdrukkingen gebruikend [&#x200B; deze richtlijnen &#x200B;](#translation-guidelines).
 1. Maak het taalpakket.
 
    ```bash

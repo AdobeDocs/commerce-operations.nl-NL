@@ -21,8 +21,8 @@ De module `Customer` is bijvoorbeeld afhankelijk van de module `Review` , zodat 
 
 Uitschakelen van uitvoer wordt uitgevoerd in de volgende klassen:
 
-- [ \Magento\Framework\View\Element\AbstractBlock::toHtml ](https://github.com/magento/magento2/blob/36097739bbb0b8939ad9a2a0dadee64318153dca/lib/internal/Magento/Framework/View/Element/AbstractBlock.php#L651)
-- [ \Magento\Backend\Block\Template::isOutputEnabled ](https://github.com/magento/magento2/blob/0c786907ffe03d0e2990612eec16ee58b00379c5/app/code/Magento/Backend/Block/Template.php#L96)
+- [&#x200B; \Magento\Framework\View\Element\AbstractBlock::toHtml &#x200B;](https://github.com/magento/magento2/blob/36097739bbb0b8939ad9a2a0dadee64318153dca/lib/internal/Magento/Framework/View/Element/AbstractBlock.php#L651)
+- [&#x200B; \Magento\Backend\Block\Template::isOutputEnabled &#x200B;](https://github.com/magento/magento2/blob/0c786907ffe03d0e2990612eec16ee58b00379c5/app/code/Magento/Backend/Block/Template.php#L96)
 
 >[!WARNING]
 >
@@ -72,7 +72,7 @@ Wis vervolgens de cache om de nieuwe instelling in te schakelen:
 bin/magento cache:clean config
 ```
 
-Zie [ de configuratie ](../cli/export-configuration.md) uitvoeren.
+Zie [&#x200B; de configuratie &#x200B;](../cli/export-configuration.md) uitvoeren.
 
 ## Module-uitvoer uitschakelen in een eenvoudige implementatie
 

@@ -15,17 +15,17 @@ ht-degree: 0%
 De volgende software is vereist voor productieinstanties van [!DNL Commerce] :
 
 * [PHP](../installation/system-requirements.md)
-* Nginx en [ PHP-FPM ](https://php-fpm.org/)
+* Nginx en [&#x200B; PHP-FPM &#x200B;](https://php-fpm.org/)
 * [[!DNL MySQL]](../installation/prerequisites/database/mysql.md)
 * [[!DNL Elasticsearch] of OpenSearch](../installation/prerequisites/search-engine/overview.md)
 
 Voor multiserver plaatsingen, of voor verkopers die op het schrapen van hun zaken plannen, adviseren wij het volgende:
 
 * [[!DNL Varnish] cache](../configuration/cache/config-varnish.md)
-* [ Redis ](../configuration/cache/redis-session.md) voor zittingen (van 2.0.6+)
-* Een afzonderlijke Redis instantie als uw [ standaardgeheime voorgeheugen ](../configuration/cache/redis-pg-cache.md) (gebruik deze instantie niet voor paginacache)
+* [&#x200B; Redis &#x200B;](../configuration/cache/redis-session.md) voor zittingen (van 2.0.6+)
+* Een afzonderlijke Redis instantie als uw [&#x200B; standaardgeheime voorgeheugen &#x200B;](../configuration/cache/redis-pg-cache.md) (gebruik deze instantie niet voor paginacache)
 
-Zie [ systeemvereisten ](../installation/system-requirements.md) voor informatie over gesteunde versies van elk type van software.
+Zie [&#x200B; systeemvereisten &#x200B;](../installation/system-requirements.md) voor informatie over gesteunde versies van elk type van software.
 
 ## Besturingssysteem
 
@@ -114,7 +114,7 @@ Als u meer extensies toevoegt, duurt het laden van de bibliotheek langer.
 
 >[!INFO]
 >
->`php-mcrypt` is verwijderd uit PHP 7.2 en vervangen door de [`sodium` library ](https://www.php.net/manual/en/book.sodium.php) . Zorg ervoor dat [ natrium ](https://www.php.net/manual/en/sodium.installation.php) behoorlijk wordt toegelaten wanneer het bevorderen van PHP.
+>`php-mcrypt` is verwijderd uit PHP 7.2 en vervangen door de [`sodium` library &#x200B;](https://www.php.net/manual/en/book.sodium.php) . Zorg ervoor dat [&#x200B; natrium &#x200B;](https://www.php.net/manual/en/sodium.installation.php) behoorlijk wordt toegelaten wanneer het bevorderen van PHP.
 
 >[!INFO]
 >
@@ -132,7 +132,7 @@ Voor het zuiveren, verhoog deze waarde tot 2G.
 
 #### Configuratie Realpath_cache
 
-Als u de [!DNL Commerce] -prestaties wilt verbeteren, voegt u de volgende aanbevolen `realpath_cache` -instellingen toe aan of werkt u deze bij in het `php.ini` -bestand. Met deze configuratie kunnen PHP-processen paden naar bestanden in cache plaatsen in plaats van ze elke keer weer op te zoeken wanneer een pagina wordt geladen. Zie [ Prestaties die ](https://www.php.net/manual/en/ini.core.php) in de PHP documentatie stempelen.
+Als u de [!DNL Commerce] -prestaties wilt verbeteren, voegt u de volgende aanbevolen `realpath_cache` -instellingen toe aan of werkt u deze bij in het `php.ini` -bestand. Met deze configuratie kunnen PHP-processen paden naar bestanden in cache plaatsen in plaats van ze elke keer weer op te zoeken wanneer een pagina wordt geladen. Zie [&#x200B; Prestaties die &#x200B;](https://www.php.net/manual/en/ini.core.php) in de PHP documentatie stempelen.
 
 ```text
 realpath_cache_size=10M
@@ -162,7 +162,7 @@ opcache.max_accelerated_files=60000
 
 #### APCU
 
-Wij adviseren toelatend de [ uitbreiding PHP APCu ](https://getcomposer.org/doc/articles/autoloader-optimization.md#optimization-level-2-b-apcu-cache) en [ vormend `composer` om het ](../performance/deployment-flow.md#preprocess-dependency-injection-instructions) te steunen om voor maximumprestaties te optimaliseren. Met deze extensie worden bestandslocaties voor geopende bestanden in cache geplaatst, waardoor de prestaties van serveraanroepen van [!DNL Commerce] worden verhoogd, inclusief pagina&#39;s, Ajax-aanroepen en eindpunten.
+Wij adviseren toelatend de [&#x200B; uitbreiding PHP APCu &#x200B;](https://getcomposer.org/doc/articles/autoloader-optimization.md#optimization-level-2-b-apcu-cache) en [&#x200B; vormend `composer` om het &#x200B;](../performance/deployment-flow.md#preprocess-dependency-injection-instructions) te steunen om voor maximumprestaties te optimaliseren. Met deze extensie worden bestandslocaties voor geopende bestanden in cache geplaatst, waardoor de prestaties van serveraanroepen van [!DNL Commerce] worden verhoogd, inclusief pagina&#39;s, Ajax-aanroepen en eindpunten.
 
 Bewerk het `apcu.ini` -bestand en voeg het volgende toe:
 
@@ -184,9 +184,9 @@ U zou het aantal draden voor de verwerking van het inputverzoek ook moeten vorme
 
 | Webserver | Kenmerknaam | Locatie | Verwante informatie |
 |--- | --- | --- | ---|
-| Nginx | `worker_connections` | `/etc/nginx/nginx.conf` (Debian) | [ het Tuning NGINX voor Prestaties ](https://www.nginx.com/blog/tuning-nginx/) |
-| Apache 2.2 | `MaxClients` | `/etc/httpd/conf/httpd.conf` (CentOS) | [ het Afstemmen van Prestaties Apache ](https://httpd.apache.org/docs/2.2/misc/perf-tuning.html) |
-| Apache 2.4 | `MaxRequestWorkers` | `/etc/httpd/conf/httpd.conf` (CentOS) | [ Gemeenschappelijke Richtlijnen van Apache MPM ](https://httpd.apache.org/docs/2.4/mod/mpm_common.html#maxrequestworkers) |
+| Nginx | `worker_connections` | `/etc/nginx/nginx.conf` (Debian) | [&#x200B; het Tuning NGINX voor Prestaties &#x200B;](https://www.nginx.com/blog/tuning-nginx/) |
+| Apache 2.2 | `MaxClients` | `/etc/httpd/conf/httpd.conf` (CentOS) | [&#x200B; het Afstemmen van Prestaties Apache &#x200B;](https://httpd.apache.org/docs/2.2/misc/perf-tuning.html) |
+| Apache 2.4 | `MaxRequestWorkers` | `/etc/httpd/conf/httpd.conf` (CentOS) | [&#x200B; Gemeenschappelijke Richtlijnen van Apache MPM &#x200B;](https://httpd.apache.org/docs/2.4/mod/mpm_common.html#maxrequestworkers) |
 
 ## [!DNL MySQL]
 
@@ -213,7 +213,7 @@ Installeer [!DNL Varnish] op een aparte server vóór de weblaag. Het zou alle i
 * **wijze van de Grace** staat u toe om [!DNL Varnish] op te dragen om een voorwerp in geheim voorgeheugen voorbij zijn Tijd aan Levende (TTL) periode te houden en deze stapelinhoud te dienen als [!DNL Commerce] niet gezond is of als de verse inhoud nog niet is gehaald.
 * **de wijze van Saint** zwarte lijsten ongezonde [!DNL Commerce] servers voor een configureerbare hoeveelheid tijd. Hierdoor kunnen ongezonde backends geen verkeer dienen wanneer [!DNL Varnish] als taakverdelingsmechanisme wordt gebruikt.
 
-Zie [ Geavanceerde  [!DNL Varnish]  configuratie ](../configuration/cache/config-varnish-advanced.md) voor meer informatie over het uitvoeren van deze eigenschappen.
+Zie [&#x200B; Geavanceerde  [!DNL Varnish]  configuratie &#x200B;](../configuration/cache/config-varnish-advanced.md) voor meer informatie over het uitvoeren van deze eigenschappen.
 
 ### Elementprestaties optimaliseren
 

@@ -15,9 +15,9 @@ Deze pagina bevat aanbevelingen voor Commerce-ontwikkelomgevingen.
 
 ## De cache verwijderen in plaats van uitschakelen
 
-Vele ontwikkelaars neigen om alle geheime voorgeheugens op hun ontwikkelaarinstanties onbruikbaar te maken. We raden u alleen aan caches te reinigen zonder alle caches uit te schakelen. [!DNL Commerce] loopt efficiënter wanneer u [ de geheime voorgeheugens ](../configuration/cli/manage-cache.md#clean-and-flush-cache-types) zuivert in plaats van hen volledig onbruikbaar te maken. De meeste typen caches worden zelden ongeldig gemaakt tijdens de ontwikkeling.
+Vele ontwikkelaars neigen om alle geheime voorgeheugens op hun ontwikkelaarinstanties onbruikbaar te maken. We raden u alleen aan caches te reinigen zonder alle caches uit te schakelen. [!DNL Commerce] loopt efficiënter wanneer u [&#x200B; de geheime voorgeheugens &#x200B;](../configuration/cli/manage-cache.md#clean-and-flush-cache-types) zuivert in plaats van hen volledig onbruikbaar te maken. De meeste typen caches worden zelden ongeldig gemaakt tijdens de ontwikkeling.
 
-Als u [ de geheime voorgeheugens ](../configuration/cli/manage-cache.md#enable-or-disable-cache-types) onbruikbaar maakt, adviseren wij slechts het onbruikbaar maken van de geheime voorgeheugens van de Pagina en van het Blok in ontwikkelingsinstanties. Vergeet niet alle caches tijdens het testen in te schakelen.
+Als u [&#x200B; de geheime voorgeheugens &#x200B;](../configuration/cli/manage-cache.md#enable-or-disable-cache-types) onbruikbaar maakt, adviseren wij slechts het onbruikbaar maken van de geheime voorgeheugens van de Pagina en van het Blok in ontwikkelingsinstanties. Vergeet niet alle caches tijdens het testen in te schakelen.
 
 ## Opdrachten om te voorkomen in de ontwikkelingsmodus
 

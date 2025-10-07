@@ -14,7 +14,7 @@ ht-degree: 0%
 
 Varnish biedt verschillende functies die voorkomen dat klanten te maken krijgen met lange vertragingen en time-outs wanneer de Commerce-server niet goed werkt. Deze functies kunnen worden geconfigureerd in het `default.vcl` -bestand. Dit onderwerp beschrijft de toevoegingen die Commerce in het VCL (de Taal van de Configuratie van de Varnish) dossier verstrekt u van Admin downloadt.
 
-Zie het [ Handboek van de Verwijzing van de Varnish ](https://varnish-cache.org/docs/index.html) voor details over het gebruiken van de Taal van de Configuratie van de Varnish.
+Zie het [&#x200B; Handboek van de Verwijzing van de Varnish &#x200B;](https://varnish-cache.org/docs/index.html) voor details over het gebruiken van de Taal van de Configuratie van de Varnish.
 
 ## Health check
 
@@ -36,7 +36,7 @@ Deze health check roept om de 5 seconden het `pub/health_check.php` -script aan.
 
 Het script `health_check.php` bevindt zich in de map `pub` . Als uw Commerce-hoofdmap `pub` is, moet u het pad in de parameter `url` wijzigen van `/pub/health_check.php` in `health_check.php` .
 
-Voor meer informatie, zie [ Varnish gezondheidscontroles ](https://varnish-cache.org/docs/7.4/users-guide/vcl-backends.html#health-checks) documentatie.
+Voor meer informatie, zie [&#x200B; Varnish gezondheidscontroles &#x200B;](https://varnish-cache.org/docs/7.4/users-guide/vcl-backends.html#health-checks) documentatie.
 
 ## Respijtmodus
 
@@ -49,7 +49,7 @@ De subroutine `vcl_hit` definieert hoe Varnish reageert op een aanvraag voor obj
 
 ### Als de Commerce-backend gezond is
 
-Wanneer uit de gezondheidscontroles blijkt dat de Commerce-backend gezond is, controleert Varnish of de tijd in de respijtperiode blijft. De standaardgraadperiode is 300 seconden, maar een handelaar kan de waarde van Admin plaatsen zoals die in [ wordt beschreven vormt Commerce om Varnish ](configure-varnish-commerce.md) te gebruiken. Als de respijtperiode niet is verlopen, levert Varnish de schaalinhoud en wordt het object asynchroon vernieuwd vanaf de Commerce-server. Als de respijtperiode is verlopen, wordt de verouderde inhoud door Varnish weergegeven en wordt het object synchroon vernieuwd vanaf de Commerce-achtergrond.
+Wanneer uit de gezondheidscontroles blijkt dat de Commerce-backend gezond is, controleert Varnish of de tijd in de respijtperiode blijft. De standaardgraadperiode is 300 seconden, maar een handelaar kan de waarde van Admin plaatsen zoals die in [&#x200B; wordt beschreven vormt Commerce om Varnish &#x200B;](configure-varnish-commerce.md) te gebruiken. Als de respijtperiode niet is verlopen, levert Varnish de schaalinhoud en wordt het object asynchroon vernieuwd vanaf de Commerce-server. Als de respijtperiode is verlopen, wordt de verouderde inhoud door Varnish weergegeven en wordt het object synchroon vernieuwd vanaf de Commerce-achtergrond.
 
 De maximumhoeveelheid tijd dat Varnish een stapelvoorwerp dient is de som respijtperiode (300 seconden door gebrek) en de waarde van TTL (86400 seconden door gebrek).
 
@@ -77,7 +77,7 @@ Op alle andere computers moet de Commerce-instantie toegang hebben tot de mySQL-
 
 U kunt het versieren van statische bestanden ook op alle computers uitschakelen. Dit kan van Admin onder **worden betreden Slaat** > Montages > **Configuratie** > **Geavanceerd** > **de Montages van de Ontwikkelaar** > **de Statische Montages van Dossiers** > **Onderteken Statische Dossiers** = **Nr**.
 
-Tot slot moeten alle Commerce-instanties zich in de productiemodus bevinden. Voordat Varnish begint, wist u de cache bij elke instantie. In Admin, ga **van het 0} Systeem {> Hulpmiddelen >** het Beheer van het Geheime voorgeheugen **en klik** het Geheime voorgeheugen van Magento **duwen.** U kunt ook de volgende opdracht uitvoeren om de cache te wissen:
+Tot slot moeten alle Commerce-instanties zich in de productiemodus bevinden. Voordat Varnish begint, wist u de cache bij elke instantie. In Admin, ga **van het 0&rbrace; Systeem &lbrace;> Hulpmiddelen >** het Beheer van het Geheime voorgeheugen **en klik** het Geheime voorgeheugen van Magento **duwen.** U kunt ook de volgende opdracht uitvoeren om de cache te wissen:
 
 ```bash
 bin/magento cache:flush
@@ -85,11 +85,11 @@ bin/magento cache:flush
 
 ### Installatie
 
-Saint mode maakt geen deel uit van het grootste Varnish-pakket. Het is een aparte versie `vmod` die moet worden gedownload en geïnstalleerd. Dientengevolge, moet u Varnish van bron opnieuw compileren, zoals die in de [ installatieinstructies ](https://varnish-cache.org/docs/index.html) voor uw versie van Varnish wordt beschreven.
+Saint mode maakt geen deel uit van het grootste Varnish-pakket. Het is een aparte versie `vmod` die moet worden gedownload en geïnstalleerd. Dientengevolge, moet u Varnish van bron opnieuw compileren, zoals die in de [&#x200B; installatieinstructies &#x200B;](https://varnish-cache.org/docs/index.html) voor uw versie van Varnish wordt beschreven.
 
 Nadat u opnieuw compileert, kunt u de Sint-modusmodule installeren. Voer in het algemeen de volgende stappen uit:
 
-1. Verkrijg de broncode van [ Varnish modules ](https://github.com/varnish/varnish-modules). Kloont de Git-versie (hoofdversie) omdat de 0.9.x-versie een broncodecout bevat.
+1. Verkrijg de broncode van [&#x200B; Varnish modules &#x200B;](https://github.com/varnish/varnish-modules). Kloont de Git-versie (hoofdversie) omdat de 0.9.x-versie een broncodecout bevat.
 1. Bouw de broncode met autotools:
 
    ```bash
@@ -101,7 +101,7 @@ Nadat u opnieuw compileert, kunt u de Sint-modusmodule installeren. Voer in het 
    sudo make install
    ```
 
-Zie [ de moduleinzameling van de Varnish ](https://github.com/varnish/varnish-modules) voor informatie over het installeren van de Saint wijzemodule.
+Zie [&#x200B; de moduleinzameling van de Varnish &#x200B;](https://github.com/varnish/varnish-modules) voor informatie over het installeren van de Saint wijzemodule.
 
 ### Voorbeeld-VCL-bestand
 

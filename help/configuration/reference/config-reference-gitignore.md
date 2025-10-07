@@ -11,7 +11,7 @@ ht-degree: 0%
 
 # .gitignore-referentie
 
-Magento Open Source bevat een basis `.gitignore` -bestand. Zie [ het recentste Commerce `.gitignore` ](https://raw.githubusercontent.com/magento/magento2/2.4/.gitignore) dossier. Als u een bestand moet toevoegen dat in de lijst `.gitignore` staat, kunt u de optie `-f` (geforceerd) gebruiken wanneer u een commit:
+Magento Open Source bevat een basis `.gitignore` -bestand. Zie [&#x200B; het recentste Commerce `.gitignore` &#x200B;](https://raw.githubusercontent.com/magento/magento2/2.4/.gitignore) dossier. Als u een bestand moet toevoegen dat in de lijst `.gitignore` staat, kunt u de optie `-f` (geforceerd) gebruiken wanneer u een commit:
 
 ```bash
 git add <path/filename> -f

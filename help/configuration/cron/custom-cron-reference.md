@@ -15,9 +15,9 @@ Dit onderwerp helpt u opstellings manuscripten en naar keuze bouwgroepen voor do
 
 U kunt desgewenst een aangepaste groep instellen, waarmee u onder andere snijtaken die in die groep zijn gedefinieerd, onafhankelijk van andere snijtaken kunt uitvoeren.
 
-Voor een stap-voor-stap leerprogramma, zie [ de banen van de douanecurn en de kantelgroepen (leerprogramma) vormen ](custom-cron-tutorial.md).
+Voor een stap-voor-stap leerprogramma, zie [&#x200B; de banen van de douanecurn en de kantelgroepen (leerprogramma) vormen &#x200B;](custom-cron-tutorial.md).
 
-Voor een overzicht over kroonbanen, zie [ cron banen ](../cli/configure-cron-jobs.md) vormen.
+Voor een overzicht over kroonbanen, zie [&#x200B; cron banen &#x200B;](../cli/configure-cron-jobs.md) vormen.
 
 ## Cron-groepen configureren
 
@@ -82,7 +82,7 @@ De resulterende `crontab.xml` met twee groepen kan er als volgt uitzien:
 </config>
 ```
 
-Als voorbeeld, zie [ Magento_Customer crontab.xml ](https://github.com/magento/magento2/blob/2.4/app/code/Magento/Customer/etc/crontab.xml).
+Als voorbeeld, zie [&#x200B; Magento_Customer crontab.xml &#x200B;](https://github.com/magento/magento2/blob/2.4/app/code/Magento/Customer/etc/crontab.xml).
 
 ### Opties voor de groep Uitsnijden opgeven
 
@@ -123,7 +123,7 @@ Waarbij:
 
 ## Een uitsnijdtaak uitschakelen
 
-De banen van de kroon hebben geen a `disable` eigenschap zoals wij voor [ waarnemers ](https://developer.adobe.com/commerce/php/development/components/events-and-observers/#observers) hebben. Een uitsnijdtaak kan echter met de volgende techniek worden uitgeschakeld: `schedule` een tijd die een datum bevat die nooit zal voorkomen.
+De banen van de kroon hebben geen a `disable` eigenschap zoals wij voor [&#x200B; waarnemers &#x200B;](https://developer.adobe.com/commerce/php/development/components/events-and-observers/#observers) hebben. Een uitsnijdtaak kan echter met de volgende techniek worden uitgeschakeld: `schedule` een tijd die een datum bevat die nooit zal voorkomen.
 
 Schakel bijvoorbeeld de `visitor_clean` -snijtaak uit die is gedefinieerd in de module `Magento_Customer` :
 

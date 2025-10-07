@@ -14,7 +14,7 @@ ht-degree: 0%
 
 Om de prestaties te verbeteren, stelt Commerce de `Expires` -headers in voor statische bronnen, zoals afbeeldingen, JavaScript- en CSS-bestanden.
 Als u de header `Expires` instelt op een statische bron, geeft u de browser de opdracht de bron in de cache bij die URL in te stellen en de versie in de cache te verzenden tot deze is verlopen.
-Dit is een gemeenschappelijke [ beste praktijk ](https://developer.yahoo.com/performance/rules.html#expires=) voor het in cache plaatsen van statische middelen.
+Dit is een gemeenschappelijke [&#x200B; beste praktijk &#x200B;](https://developer.yahoo.com/performance/rules.html#expires=) voor het in cache plaatsen van statische middelen.
 
 Wanneer de browser een statische bron in cache plaatst en die resource op de server verandert, moet u het cachegeheugen van de browser wissen, zodat de nieuwe versie kan worden gedownload.
 Het handmatig wissen van het cachegeheugen van de browser werkt als u een websitebeheerder bent, maar dit is geen geschikte aanvraag om van uw gebruikers te maken wanneer u ze nieuwe versies van een statische bron wilt downloaden.
@@ -37,10 +37,10 @@ Commerce schakelt deze functie standaard in en Adobe raadt aan deze functie inge
 
 De configuratie voor het ondertekenen van statische inhoud vindt u in [**[!UICONTROL Stores]**> Instellingen > Configuratie >**[!UICONTROL Advanced]**>**[!UICONTROL Developer]**>**[!UICONTROL Static Files Settings]**](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/tools/developer-tools#static-file-signatures) .
 
-- **slechts op-gebouw**: Deze configuratie is beschikbaar als uw plaats **niet** op [ wijze van de Productie ](https://experienceleague.adobe.com/docs/commerce-operations/configuration-guide/setup/application-modes.html#production-mode) is.
+- **slechts op-gebouw**: Deze configuratie is beschikbaar als uw plaats **niet** op [&#x200B; wijze van de Productie &#x200B;](https://experienceleague.adobe.com/docs/commerce-operations/configuration-guide/setup/application-modes.html#production-mode) is.
 - **Wolk**: Deze configuratie is verborgen omdat de wijze van de Productie strikt wordt afgedwongen; daarom moet u de bevellijn zoals hieronder getoond gebruiken.
 
-![ de Statische Montages van Dossiers ](../../assets/configuration/static-files-settings.png)
+![&#x200B; de Statische Montages van Dossiers &#x200B;](../../assets/configuration/static-files-settings.png)
 
 De status bepalen:
 

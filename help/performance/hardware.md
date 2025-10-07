@@ -32,7 +32,7 @@ Scenario&#39;s en verwachte PHP-geheugenvereisten:
 
 * Webnode die alleen winkelpagina&#39;s bedient: 256 MB
 * Webnode die beheerpagina&#39;s bedient met een grote catalogus: 1 GB
-* [!DNL Commerce] begin het indexeren van een plaats met een grote catalogus: >256 MB (Zie [ geavanceerd-opstelling ](../performance/advanced-setup.md) om voor optimale prestaties te stemmen.)
+* [!DNL Commerce] begin het indexeren van een plaats met een grote catalogus: >256 MB (Zie [&#x200B; geavanceerd-opstelling &#x200B;](../performance/advanced-setup.md) om voor optimale prestaties te stemmen.)
 * [!DNL Commerce] statische elementen compileren en implementeren: 756 MB
 * [!DNL Commerce] krachtige toolkit profile generation: > 1 GB PHP RAM, > 16 MB [!DNL MySQL] TMP_TABLE_SIZE &amp; MAX_HEAP_TABLE_SIZE settings
 

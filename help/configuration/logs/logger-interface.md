@@ -14,17 +14,17 @@ ht-degree: 0%
 
 Als u met een logger wilt gaan werken, moet u een instantie van `\Psr\Log\LoggerInterface` maken. Met deze interface kunt u de volgende functies aanroepen om gegevens naar logbestanden te schrijven:
 
-- [ alarm () ](https://github.com/php-fig/log/blob/master/src/LoggerInterface.php#L43)
-- [ kritiek () ](https://github.com/php-fig/log/blob/master/src/LoggerInterface.php#L55)
-- [ zuiveren () ](https://github.com/php-fig/log/blob/master/src/LoggerInterface.php#L111)
-- [ noodgeval () ](https://github.com/php-fig/log/blob/master/src/LoggerInterface.php#L30)
-- [ fout () ](https://github.com/php-fig/log/blob/master/src/LoggerInterface.php#L66)
-- [ info () ](https://github.com/php-fig/log/blob/master/src/LoggerInterface.php#L101)
-- [ logboek () ](https://github.com/php-fig/log/blob/master/src/LoggerInterface.php#L122)
-- [ bericht () ](https://github.com/php-fig/log/blob/master/src/LoggerInterface.php#L89)
-- [ waarschuwing () ](https://github.com/php-fig/log/blob/master/src/LoggerInterface.php#L79)
+- [&#x200B; alarm () &#x200B;](https://github.com/php-fig/log/blob/master/src/LoggerInterface.php#L43)
+- [&#x200B; kritiek () &#x200B;](https://github.com/php-fig/log/blob/master/src/LoggerInterface.php#L55)
+- [&#x200B; zuiveren () &#x200B;](https://github.com/php-fig/log/blob/master/src/LoggerInterface.php#L111)
+- [&#x200B; noodgeval () &#x200B;](https://github.com/php-fig/log/blob/master/src/LoggerInterface.php#L30)
+- [&#x200B; fout () &#x200B;](https://github.com/php-fig/log/blob/master/src/LoggerInterface.php#L66)
+- [&#x200B; info () &#x200B;](https://github.com/php-fig/log/blob/master/src/LoggerInterface.php#L101)
+- [&#x200B; logboek () &#x200B;](https://github.com/php-fig/log/blob/master/src/LoggerInterface.php#L122)
+- [&#x200B; bericht () &#x200B;](https://github.com/php-fig/log/blob/master/src/LoggerInterface.php#L89)
+- [&#x200B; waarschuwing () &#x200B;](https://github.com/php-fig/log/blob/master/src/LoggerInterface.php#L79)
 
-Één manier om dat te doen wordt verklaard in het [ het gegevensbestandactiviteit van het Logboek ](../logs/database-activity.md) voorbeeld.
+Één manier om dat te doen wordt verklaard in het [&#x200B; het gegevensbestandactiviteit van het Logboek &#x200B;](../logs/database-activity.md) voorbeeld.
 
 Een andere manier:
 
@@ -51,4 +51,4 @@ class SomeModel
 
 In het voorgaande voorbeeld wordt getoond dat `SomeModel` een `\Psr\Log\LoggerInterface` -object ontvangt met behulp van een constructorinjectie. Bij een methode `doSomething` wordt een fout gemeld bij een methode `critical` (`$this->logger->critical($e);`).
 
-[ RFC 5424 ](https://datatracker.ietf.org/doc/html/rfc5424) bepaalt acht logboekniveaus (zuivert, info, bericht, waarschuwing, fout, kritiek, alarm, en noodsituatie).
+[&#x200B; RFC 5424 &#x200B;](https://datatracker.ietf.org/doc/html/rfc5424) bepaalt acht logboekniveaus (zuivert, info, bericht, waarschuwing, fout, kritiek, alarm, en noodsituatie).

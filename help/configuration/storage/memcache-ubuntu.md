@@ -21,11 +21,11 @@ In deze sectie vindt u instructies voor het installeren van een memcached op Ubu
 Omdat PHP geen native ondersteuning heeft voor memcache, moet je een extensie installeren voor PHP om deze te kunnen gebruiken. Er zijn twee PHP-extensies beschikbaar en het is belangrijk te decoderen welke extensie moet worden gebruikt:
 
 - `memcache` (_geen d_) - een oudere maar populaire uitbreiding die niet regelmatig wordt gehandhaafd.
-De `memcache` uitbreiding momenteel _werkt niet_ met PHP 7. Zie [ PHP documentatie voor memcache ](https://www.php.net/manual/en/book.memcache.php).
+De `memcache` uitbreiding momenteel _werkt niet_ met PHP 7. Zie [&#x200B; PHP documentatie voor memcache &#x200B;](https://www.php.net/manual/en/book.memcache.php).
 
   De exacte naam is `php5-memcache` voor Ubuntu.
 
-- `memcached` (_met a`d`_) - een nieuwere en bewaarde uitbreiding die met PHP 7 compatibel is. Zie [ PHP documentatie voor in het geheugen ondergebracht ](https://www.php.net/manual/en/book.memcached.php).
+- `memcached` (_met a`d`_) - een nieuwere en bewaarde uitbreiding die met PHP 7 compatibel is. Zie [&#x200B; PHP documentatie voor in het geheugen ondergebracht &#x200B;](https://www.php.net/manual/en/book.memcached.php).
 
   De exacte naam is `php5-memcached` voor Ubuntu.
 
@@ -87,7 +87,7 @@ Om te controleren of het in een cache plaatsen wordt herkend door de webserver:
 
 1. Zorg ervoor dat in het geheugen opgeslagen weergaven als volgt zijn:
 
-   ![ bevestigt in het geheugen ondergebracht wordt erkend door de Webserver ](../../assets/configuration/memcache.png)
+   ![&#x200B; bevestigt in het geheugen ondergebracht wordt erkend door de Webserver &#x200B;](../../assets/configuration/memcache.png)
 
    Controleer of u versie 3.0.5 of hoger uit het geheugen gebruikt.
 
@@ -97,7 +97,7 @@ Om te controleren of het in een cache plaatsen wordt herkend door de webserver:
 
 Deze test gebruikt een PHP script om te controleren of in een cache opgeslagen en opgehaalde cachegegevens kunnen worden opgeslagen.
 
-Voor meer informatie over deze test, zie [ hoe te om Memcache op Ubuntu leerprogramma te installeren en te gebruiken ](https://www.digitalocean.com/community/tutorials/how-to-install-and-use-memcache-on-ubuntu-14-04).
+Voor meer informatie over deze test, zie [&#x200B; hoe te om Memcache op Ubuntu leerprogramma te installeren en te gebruiken &#x200B;](https://www.digitalocean.com/community/tutorials/how-to-install-and-use-memcache-on-ubuntu-14-04).
 
 Maak `cache-test.php` in de hoofdmap van de webserver met de volgende inhoud:
 
@@ -165,4 +165,4 @@ flush_all
 quit
 ```
 
-[ Aanvullende informatie over de test van Telnet ](https://darkcoding.net/software/memcached-list-all-keys/)
+[&#x200B; Aanvullende informatie over de test van Telnet &#x200B;](https://darkcoding.net/software/memcached-list-all-keys/)

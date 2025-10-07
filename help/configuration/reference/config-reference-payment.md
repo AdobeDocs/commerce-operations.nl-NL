@@ -14,7 +14,7 @@ ht-degree: 0%
 
 Deze configuratiewaarden zijn beschikbaar in Admin in **Opslag** > Montages > **Configuratie** > **Verkoop** > **de Methoden van de Betaling**.
 
-Het [`magento app:config:dump` bevel ](../cli/export-configuration.md) schrijft deze waarden aan het gedeelde configuratiedossier, `app/etc/config.php`, dat in broncontrole zou moeten zijn. Om naar keuze om het even welke configuratiemontages met voeten te treden of gevoelige montages te plaatsen, zie [ de milieuvariabelen van het Gebruik om configuratiemontages ](override-config-settings.md#environment-variables) met voeten te treden. Dit onderwerp __ lijst [ niet gevoelige en systeem-specifieke waarden ](config-reference-sens.md).
+Het [`magento app:config:dump` bevel &#x200B;](../cli/export-configuration.md) schrijft deze waarden aan het gedeelde configuratiedossier, `app/etc/config.php`, dat in broncontrole zou moeten zijn. Om naar keuze om het even welke configuratiemontages met voeten te treden of gevoelige montages te plaatsen, zie [&#x200B; de milieuvariabelen van het Gebruik om configuratiemontages &#x200B;](override-config-settings.md#environment-variables) met voeten te treden. Dit onderwerp __ lijst [&#x200B; niet gevoelige en systeem-specifieke waarden &#x200B;](config-reference-sens.md).
 
 De instellingen worden verder geordend via betalingsmethode.
 
@@ -100,7 +100,7 @@ De instellingen worden verder geordend via betalingsmethode.
 
 ## Payments Pro Hosted Solution (Verenigd Koninkrijk)
 
-Deze opties zijn beschikbaar slechts als u het Verenigd Koninkrijk als [ koopvaardijland ](../reference/config-reference-sens.md#payment-sensitive-and-system-specific-paths) koos.
+Deze opties zijn beschikbaar slechts als u het Verenigd Koninkrijk als [&#x200B; koopvaardijland &#x200B;](../reference/config-reference-sens.md#payment-sensitive-and-system-specific-paths) koos.
 
 | Naam | Config-pad | Alleen Commerce? | Versleuteld? |
 |--------------|--------------|--------------|--------------|
@@ -260,7 +260,7 @@ Deze opties zijn beschikbaar slechts als u het Verenigd Koninkrijk als [ koopvaa
 
 >[!INFO]
 >
->De beschikbare wegen worden bepaald door uw keus van [ Merchant land ](../reference/config-reference-sens.md#payment-sensitive-and-system-specific-paths).
+>De beschikbare wegen worden bepaald door uw keus van [&#x200B; Merchant land &#x200B;](../reference/config-reference-sens.md#payment-sensitive-and-system-specific-paths).
 
 | Naam | Config-pad | Alleen Commerce? | Versleuteld? |
 |--------------|--------------|--------------|--------------|
@@ -329,39 +329,39 @@ Deze opties zijn beschikbaar slechts als u het Verenigd Koninkrijk als [ koopvaa
 | Totaal minimumbestelling | `payment_nz/authorizenet_directpost/min_order_total` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 | Maximum aantal bestellingen | `payment_nz/authorizenet_directpost/max_order_total` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 | Sorteervolgorde | `payment_nz/authorizenet_directpost/sort_order` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
-| Ingeschakeld | `payment_nz/cybersource/active` | ![ Commerce-slechts ](/help/assets/configuration/cloud-ee.png) |
-| Betalingsactie | `payment_nz/cybersource/payment_action` | ![ Commerce-slechts ](/help/assets/configuration/cloud-ee.png) |
-| Titel | `payment_nz/cybersource/title` | ![ Commerce-slechts ](/help/assets/configuration/cloud-ee.png) |
-| Status van nieuwe bestelling | `payment_nz/cybersource/order_status` | ![ Commerce-slechts ](/help/assets/configuration/cloud-ee.png) |
-| Foutopsporing | `payment_nz/cybersource/debug` | ![ Commerce-slechts ](/help/assets/configuration/cloud-ee.png) |
-| Typen creditcard | `payment_nz/cybersource/cctypes` | ![ Commerce-slechts ](/help/assets/configuration/cloud-ee.png) |
-| Betaling door de kandidaat-lidstaten | `payment_nz/cybersource/allowspecific` | ![ Commerce-slechts ](/help/assets/configuration/cloud-ee.png) |
-| Betaling door specifieke landen | `payment_nz/cybersource/specificcountry` | ![ Commerce-slechts ](/help/assets/configuration/cloud-ee.png) |
-| Totaal minimumbestelling | `payment_nz/cybersource/min_order_total` | ![ Commerce-slechts ](/help/assets/configuration/cloud-ee.png) |
-| Maximum aantal bestellingen | `payment_nz/cybersource/max_order_total` | ![ Commerce-slechts ](/help/assets/configuration/cloud-ee.png) |
-| Sorteervolgorde | `payment_nz/cybersource/sort_order` | ![ Commerce-slechts ](/help/assets/configuration/cloud-ee.png) |
-| Ingeschakeld | `payment_nz/worldpay/active` | ![ Commerce-slechts ](/help/assets/configuration/cloud-ee.png) |
-| Titel | `payment_nz/worldpay/title` | ![ Commerce-slechts ](/help/assets/configuration/cloud-ee.png) |
-| Contactgegevens bewerken toestaan | `payment_nz/worldpay/fix_contact` | ![ Commerce-slechts ](/help/assets/configuration/cloud-ee.png) |
-| Contactgegevens verbergen | `payment_nz/worldpay/hide_contact` | ![ Commerce-slechts ](/help/assets/configuration/cloud-ee.png) |
-| Handtekeningvelden | `payment_nz/worldpay/signature_fields` | ![ Commerce-slechts ](/help/assets/configuration/cloud-ee.png) |
-| Foutopsporing | `payment_nz/worldpay/debug` | ![ Commerce-slechts ](/help/assets/configuration/cloud-ee.png) |
-| Betalingsactie voor test | `payment_nz/worldpay/test_action` | ![ Commerce-slechts ](/help/assets/configuration/cloud-ee.png) |
-| Betalingsactie | `payment_nz/worldpay/payment_action` | ![ Commerce-slechts ](/help/assets/configuration/cloud-ee.png) |
-| Betaling uit de betrokken landen | `payment_nz/worldpay/allowspecific` | ![ Commerce-slechts ](/help/assets/configuration/cloud-ee.png) |
-| Betaling door specifieke landen | `payment_nz/worldpay/specificcountry` | ![ Commerce-slechts ](/help/assets/configuration/cloud-ee.png) |
-| Status van bestelling instellen op vermoedelijke fraude voor CVV | `payment_nz/worldpay/cvv_fraud_case` | ![ Commerce-slechts ](/help/assets/configuration/cloud-ee.png) |
-| Status van bestelling instellen op vermoedelijke fraude voor Postcode AVS | `payment_nz/worldpay/avs_fraud_case` | ![ Commerce-slechts ](/help/assets/configuration/cloud-ee.png) |
-| Sorteervolgorde | `payment_nz/worldpay/sort_order` | ![ Commerce-slechts ](/help/assets/configuration/cloud-ee.png) |
-| Ingeschakeld | `payment_nz/eway/active` | ![ Commerce-slechts ](/help/assets/configuration/cloud-ee.png) |
-| Verbindingstype | `payment_nz/eway/connection_type` | ![ Commerce-slechts ](/help/assets/configuration/cloud-ee.png) |
-| Titel | `payment_nz/eway/title` | ![ Commerce-slechts ](/help/assets/configuration/cloud-ee.png) |
-| Betalingsactie | `payment_nz/eway/payment_action` | ![ Commerce-slechts ](/help/assets/configuration/cloud-ee.png) |
-| Foutopsporing | `payment_nz/eway/debug` | ![ Commerce-slechts ](/help/assets/configuration/cloud-ee.png) |
-| Typen creditcard | `payment_nz/eway/cctypes` | ![ Commerce-slechts ](/help/assets/configuration/cloud-ee.png) |
-| Betaling door de kandidaat-lidstaten | `payment_nz/eway/allowspecific` | ![ Commerce-slechts ](/help/assets/configuration/cloud-ee.png) |
-| Betaling door specifieke landen | `payment_nz/eway/specificcountry` | ![ Commerce-slechts ](/help/assets/configuration/cloud-ee.png) |
-| Sorteervolgorde | `payment_nz/eway/sort_order` | ![ Commerce-slechts ](/help/assets/configuration/cloud-ee.png) |
+| Ingeschakeld | `payment_nz/cybersource/active` | ![&#x200B; Commerce-slechts &#x200B;](/help/assets/configuration/cloud-ee.png) |
+| Betalingsactie | `payment_nz/cybersource/payment_action` | ![&#x200B; Commerce-slechts &#x200B;](/help/assets/configuration/cloud-ee.png) |
+| Titel | `payment_nz/cybersource/title` | ![&#x200B; Commerce-slechts &#x200B;](/help/assets/configuration/cloud-ee.png) |
+| Status van nieuwe bestelling | `payment_nz/cybersource/order_status` | ![&#x200B; Commerce-slechts &#x200B;](/help/assets/configuration/cloud-ee.png) |
+| Foutopsporing | `payment_nz/cybersource/debug` | ![&#x200B; Commerce-slechts &#x200B;](/help/assets/configuration/cloud-ee.png) |
+| Typen creditcard | `payment_nz/cybersource/cctypes` | ![&#x200B; Commerce-slechts &#x200B;](/help/assets/configuration/cloud-ee.png) |
+| Betaling door de kandidaat-lidstaten | `payment_nz/cybersource/allowspecific` | ![&#x200B; Commerce-slechts &#x200B;](/help/assets/configuration/cloud-ee.png) |
+| Betaling door specifieke landen | `payment_nz/cybersource/specificcountry` | ![&#x200B; Commerce-slechts &#x200B;](/help/assets/configuration/cloud-ee.png) |
+| Totaal minimumbestelling | `payment_nz/cybersource/min_order_total` | ![&#x200B; Commerce-slechts &#x200B;](/help/assets/configuration/cloud-ee.png) |
+| Maximum aantal bestellingen | `payment_nz/cybersource/max_order_total` | ![&#x200B; Commerce-slechts &#x200B;](/help/assets/configuration/cloud-ee.png) |
+| Sorteervolgorde | `payment_nz/cybersource/sort_order` | ![&#x200B; Commerce-slechts &#x200B;](/help/assets/configuration/cloud-ee.png) |
+| Ingeschakeld | `payment_nz/worldpay/active` | ![&#x200B; Commerce-slechts &#x200B;](/help/assets/configuration/cloud-ee.png) |
+| Titel | `payment_nz/worldpay/title` | ![&#x200B; Commerce-slechts &#x200B;](/help/assets/configuration/cloud-ee.png) |
+| Contactgegevens bewerken toestaan | `payment_nz/worldpay/fix_contact` | ![&#x200B; Commerce-slechts &#x200B;](/help/assets/configuration/cloud-ee.png) |
+| Contactgegevens verbergen | `payment_nz/worldpay/hide_contact` | ![&#x200B; Commerce-slechts &#x200B;](/help/assets/configuration/cloud-ee.png) |
+| Handtekeningvelden | `payment_nz/worldpay/signature_fields` | ![&#x200B; Commerce-slechts &#x200B;](/help/assets/configuration/cloud-ee.png) |
+| Foutopsporing | `payment_nz/worldpay/debug` | ![&#x200B; Commerce-slechts &#x200B;](/help/assets/configuration/cloud-ee.png) |
+| Betalingsactie voor test | `payment_nz/worldpay/test_action` | ![&#x200B; Commerce-slechts &#x200B;](/help/assets/configuration/cloud-ee.png) |
+| Betalingsactie | `payment_nz/worldpay/payment_action` | ![&#x200B; Commerce-slechts &#x200B;](/help/assets/configuration/cloud-ee.png) |
+| Betaling uit de betrokken landen | `payment_nz/worldpay/allowspecific` | ![&#x200B; Commerce-slechts &#x200B;](/help/assets/configuration/cloud-ee.png) |
+| Betaling door specifieke landen | `payment_nz/worldpay/specificcountry` | ![&#x200B; Commerce-slechts &#x200B;](/help/assets/configuration/cloud-ee.png) |
+| Status van bestelling instellen op vermoedelijke fraude voor CVV | `payment_nz/worldpay/cvv_fraud_case` | ![&#x200B; Commerce-slechts &#x200B;](/help/assets/configuration/cloud-ee.png) |
+| Status van bestelling instellen op vermoedelijke fraude voor Postcode AVS | `payment_nz/worldpay/avs_fraud_case` | ![&#x200B; Commerce-slechts &#x200B;](/help/assets/configuration/cloud-ee.png) |
+| Sorteervolgorde | `payment_nz/worldpay/sort_order` | ![&#x200B; Commerce-slechts &#x200B;](/help/assets/configuration/cloud-ee.png) |
+| Ingeschakeld | `payment_nz/eway/active` | ![&#x200B; Commerce-slechts &#x200B;](/help/assets/configuration/cloud-ee.png) |
+| Verbindingstype | `payment_nz/eway/connection_type` | ![&#x200B; Commerce-slechts &#x200B;](/help/assets/configuration/cloud-ee.png) |
+| Titel | `payment_nz/eway/title` | ![&#x200B; Commerce-slechts &#x200B;](/help/assets/configuration/cloud-ee.png) |
+| Betalingsactie | `payment_nz/eway/payment_action` | ![&#x200B; Commerce-slechts &#x200B;](/help/assets/configuration/cloud-ee.png) |
+| Foutopsporing | `payment_nz/eway/debug` | ![&#x200B; Commerce-slechts &#x200B;](/help/assets/configuration/cloud-ee.png) |
+| Typen creditcard | `payment_nz/eway/cctypes` | ![&#x200B; Commerce-slechts &#x200B;](/help/assets/configuration/cloud-ee.png) |
+| Betaling door de kandidaat-lidstaten | `payment_nz/eway/allowspecific` | ![&#x200B; Commerce-slechts &#x200B;](/help/assets/configuration/cloud-ee.png) |
+| Betaling door specifieke landen | `payment_nz/eway/specificcountry` | ![&#x200B; Commerce-slechts &#x200B;](/help/assets/configuration/cloud-ee.png) |
+| Sorteervolgorde | `payment_nz/eway/sort_order` | ![&#x200B; Commerce-slechts &#x200B;](/help/assets/configuration/cloud-ee.png) |
 | Gepland ophalen | `payment_hk/express_checkout_other/settings_ec/settings_ec_advanced/express_checkout_settlement_report/heading_schedule` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 | PayPal Merchant Pages Style | `payment_hk/express_checkout_other/settings_ec/settings_ec_advanced/express_checkout_frontend/paypal_pages` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 | Gepland ophalen | `payment_hk/paypal_group_all_in_one/payments_pro_hosted_solution_hk/pphs_settings/pphs_settings_advanced/pphs_settlement_report/heading_schedule` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
@@ -421,39 +421,39 @@ Deze opties zijn beschikbaar slechts als u het Verenigd Koninkrijk als [ koopvaa
 | Totaal minimumbestelling | `payment_hk/authorizenet_directpost/min_order_total` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 | Maximum aantal bestellingen | `payment_hk/authorizenet_directpost/max_order_total` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 | Sorteervolgorde | `payment_hk/authorizenet_directpost/sort_order` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
-| Ingeschakeld | `payment_hk/cybersource/active` | ![ Commerce-slechts ](/help/assets/configuration/cloud-ee.png) |
-| Betalingsactie | `payment_hk/cybersource/payment_action` | ![ Commerce-slechts ](/help/assets/configuration/cloud-ee.png) |
-| Titel | `payment_hk/cybersource/title` | ![ Commerce-slechts ](/help/assets/configuration/cloud-ee.png) |
-| Status van nieuwe bestelling | `payment_hk/cybersource/order_status` | ![ Commerce-slechts ](/help/assets/configuration/cloud-ee.png) |
-| Foutopsporing | `payment_hk/cybersource/debug` | ![ Commerce-slechts ](/help/assets/configuration/cloud-ee.png) |
-| Typen creditcard | `payment_hk/cybersource/cctypes` | ![ Commerce-slechts ](/help/assets/configuration/cloud-ee.png) |
-| Betaling door de kandidaat-lidstaten | `payment_hk/cybersource/allowspecific` | ![ Commerce-slechts ](/help/assets/configuration/cloud-ee.png) |
-| Betaling door specifieke landen | `payment_hk/cybersource/specificcountry` | ![ Commerce-slechts ](/help/assets/configuration/cloud-ee.png) |
-| Totaal minimumbestelling | `payment_hk/cybersource/min_order_total` | ![ Commerce-slechts ](/help/assets/configuration/cloud-ee.png) |
-| Maximum aantal bestellingen | `payment_hk/cybersource/max_order_total` | ![ Commerce-slechts ](/help/assets/configuration/cloud-ee.png) |
-| Sorteervolgorde | `payment_hk/cybersource/sort_order` | ![ Commerce-slechts ](/help/assets/configuration/cloud-ee.png) |
-| Ingeschakeld | `payment_hk/worldpay/active` | ![ Commerce-slechts ](/help/assets/configuration/cloud-ee.png) |
-| Titel | `payment_hk/worldpay/title` | ![ Commerce-slechts ](/help/assets/configuration/cloud-ee.png) |
-| Contactgegevens bewerken toestaan | `payment_hk/worldpay/fix_contact` | ![ Commerce-slechts ](/help/assets/configuration/cloud-ee.png) |
-| Contactgegevens verbergen | `payment_hk/worldpay/hide_contact` | ![ Commerce-slechts ](/help/assets/configuration/cloud-ee.png) |
-| Foutopsporing | `payment_hk/worldpay/debug` | ![ Commerce-slechts ](/help/assets/configuration/cloud-ee.png) |
-| Betalingsactie voor test | `payment_hk/worldpay/test_action` | ![ Commerce-slechts ](/help/assets/configuration/cloud-ee.png) |
-| Betalingsactie | `payment_hk/worldpay/payment_action` | ![ Commerce-slechts ](/help/assets/configuration/cloud-ee.png) |
-| Betaling uit de betrokken landen | `payment_hk/worldpay/allowspecific` | ![ Commerce-slechts ](/help/assets/configuration/cloud-ee.png) |
-| Betaling door specifieke landen | `payment_hk/worldpay/specificcountry` | ![ Commerce-slechts ](/help/assets/configuration/cloud-ee.png) |
-| Status van bestelling instellen op vermoedelijke fraude voor CVV | `payment_hk/worldpay/cvv_fraud_case` | ![ Commerce-slechts ](/help/assets/configuration/cloud-ee.png) |
-| Status van bestelling instellen op vermoedelijke fraude voor Postcode AVS | `payment_hk/worldpay/avs_fraud_case` | ![ Commerce-slechts ](/help/assets/configuration/cloud-ee.png) |
-| Sorteervolgorde | `payment_hk/worldpay/sort_order` | ![ Commerce-slechts ](/help/assets/configuration/cloud-ee.png) |
-| Ingeschakeld | `payment_hk/eway/active` | ![ Commerce-slechts ](/help/assets/configuration/cloud-ee.png) |
-| Verbindingstype | `payment_hk/eway/connection_type` | ![ Commerce-slechts ](/help/assets/configuration/cloud-ee.png) |
-| Titel | `payment_hk/eway/title` | ![ Commerce-slechts ](/help/assets/configuration/cloud-ee.png) |
-| Sandbox-modus | `payment_hk/eway/sandbox_flag` | ![ Commerce-slechts ](/help/assets/configuration/cloud-ee.png) |
-| Betalingsactie | `payment_hk/eway/payment_action` | ![ Commerce-slechts ](/help/assets/configuration/cloud-ee.png) |
-| Foutopsporing | `payment_hk/eway/debug` | ![ Commerce-slechts ](/help/assets/configuration/cloud-ee.png) |
-| Typen creditcard | `payment_hk/eway/cctypes` | ![ Commerce-slechts ](/help/assets/configuration/cloud-ee.png) |
-| Betaling door de kandidaat-lidstaten | `payment_hk/eway/allowspecific` | ![ Commerce-slechts ](/help/assets/configuration/cloud-ee.png) |
-| Betaling door specifieke landen | `payment_hk/eway/specificcountry` | ![ Commerce-slechts ](/help/assets/configuration/cloud-ee.png) |
-| Sorteervolgorde | `payment_hk/eway/sort_order` | ![ Commerce-slechts ](/help/assets/configuration/cloud-ee.png) |
+| Ingeschakeld | `payment_hk/cybersource/active` | ![&#x200B; Commerce-slechts &#x200B;](/help/assets/configuration/cloud-ee.png) |
+| Betalingsactie | `payment_hk/cybersource/payment_action` | ![&#x200B; Commerce-slechts &#x200B;](/help/assets/configuration/cloud-ee.png) |
+| Titel | `payment_hk/cybersource/title` | ![&#x200B; Commerce-slechts &#x200B;](/help/assets/configuration/cloud-ee.png) |
+| Status van nieuwe bestelling | `payment_hk/cybersource/order_status` | ![&#x200B; Commerce-slechts &#x200B;](/help/assets/configuration/cloud-ee.png) |
+| Foutopsporing | `payment_hk/cybersource/debug` | ![&#x200B; Commerce-slechts &#x200B;](/help/assets/configuration/cloud-ee.png) |
+| Typen creditcard | `payment_hk/cybersource/cctypes` | ![&#x200B; Commerce-slechts &#x200B;](/help/assets/configuration/cloud-ee.png) |
+| Betaling door de kandidaat-lidstaten | `payment_hk/cybersource/allowspecific` | ![&#x200B; Commerce-slechts &#x200B;](/help/assets/configuration/cloud-ee.png) |
+| Betaling door specifieke landen | `payment_hk/cybersource/specificcountry` | ![&#x200B; Commerce-slechts &#x200B;](/help/assets/configuration/cloud-ee.png) |
+| Totaal minimumbestelling | `payment_hk/cybersource/min_order_total` | ![&#x200B; Commerce-slechts &#x200B;](/help/assets/configuration/cloud-ee.png) |
+| Maximum aantal bestellingen | `payment_hk/cybersource/max_order_total` | ![&#x200B; Commerce-slechts &#x200B;](/help/assets/configuration/cloud-ee.png) |
+| Sorteervolgorde | `payment_hk/cybersource/sort_order` | ![&#x200B; Commerce-slechts &#x200B;](/help/assets/configuration/cloud-ee.png) |
+| Ingeschakeld | `payment_hk/worldpay/active` | ![&#x200B; Commerce-slechts &#x200B;](/help/assets/configuration/cloud-ee.png) |
+| Titel | `payment_hk/worldpay/title` | ![&#x200B; Commerce-slechts &#x200B;](/help/assets/configuration/cloud-ee.png) |
+| Contactgegevens bewerken toestaan | `payment_hk/worldpay/fix_contact` | ![&#x200B; Commerce-slechts &#x200B;](/help/assets/configuration/cloud-ee.png) |
+| Contactgegevens verbergen | `payment_hk/worldpay/hide_contact` | ![&#x200B; Commerce-slechts &#x200B;](/help/assets/configuration/cloud-ee.png) |
+| Foutopsporing | `payment_hk/worldpay/debug` | ![&#x200B; Commerce-slechts &#x200B;](/help/assets/configuration/cloud-ee.png) |
+| Betalingsactie voor test | `payment_hk/worldpay/test_action` | ![&#x200B; Commerce-slechts &#x200B;](/help/assets/configuration/cloud-ee.png) |
+| Betalingsactie | `payment_hk/worldpay/payment_action` | ![&#x200B; Commerce-slechts &#x200B;](/help/assets/configuration/cloud-ee.png) |
+| Betaling uit de betrokken landen | `payment_hk/worldpay/allowspecific` | ![&#x200B; Commerce-slechts &#x200B;](/help/assets/configuration/cloud-ee.png) |
+| Betaling door specifieke landen | `payment_hk/worldpay/specificcountry` | ![&#x200B; Commerce-slechts &#x200B;](/help/assets/configuration/cloud-ee.png) |
+| Status van bestelling instellen op vermoedelijke fraude voor CVV | `payment_hk/worldpay/cvv_fraud_case` | ![&#x200B; Commerce-slechts &#x200B;](/help/assets/configuration/cloud-ee.png) |
+| Status van bestelling instellen op vermoedelijke fraude voor Postcode AVS | `payment_hk/worldpay/avs_fraud_case` | ![&#x200B; Commerce-slechts &#x200B;](/help/assets/configuration/cloud-ee.png) |
+| Sorteervolgorde | `payment_hk/worldpay/sort_order` | ![&#x200B; Commerce-slechts &#x200B;](/help/assets/configuration/cloud-ee.png) |
+| Ingeschakeld | `payment_hk/eway/active` | ![&#x200B; Commerce-slechts &#x200B;](/help/assets/configuration/cloud-ee.png) |
+| Verbindingstype | `payment_hk/eway/connection_type` | ![&#x200B; Commerce-slechts &#x200B;](/help/assets/configuration/cloud-ee.png) |
+| Titel | `payment_hk/eway/title` | ![&#x200B; Commerce-slechts &#x200B;](/help/assets/configuration/cloud-ee.png) |
+| Sandbox-modus | `payment_hk/eway/sandbox_flag` | ![&#x200B; Commerce-slechts &#x200B;](/help/assets/configuration/cloud-ee.png) |
+| Betalingsactie | `payment_hk/eway/payment_action` | ![&#x200B; Commerce-slechts &#x200B;](/help/assets/configuration/cloud-ee.png) |
+| Foutopsporing | `payment_hk/eway/debug` | ![&#x200B; Commerce-slechts &#x200B;](/help/assets/configuration/cloud-ee.png) |
+| Typen creditcard | `payment_hk/eway/cctypes` | ![&#x200B; Commerce-slechts &#x200B;](/help/assets/configuration/cloud-ee.png) |
+| Betaling door de kandidaat-lidstaten | `payment_hk/eway/allowspecific` | ![&#x200B; Commerce-slechts &#x200B;](/help/assets/configuration/cloud-ee.png) |
+| Betaling door specifieke landen | `payment_hk/eway/specificcountry` | ![&#x200B; Commerce-slechts &#x200B;](/help/assets/configuration/cloud-ee.png) |
+| Sorteervolgorde | `payment_hk/eway/sort_order` | ![&#x200B; Commerce-slechts &#x200B;](/help/assets/configuration/cloud-ee.png) |
 | Gepland ophalen | `payment_es/express_checkout_other/settings_ec/settings_ec_advanced/express_checkout_settlement_report/heading_schedule` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 | PayPal Merchant Pages Style | `payment_es/express_checkout_other/settings_ec/settings_ec_advanced/express_checkout_frontend/paypal_pages` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 | Gepland ophalen | `payment_es/paypal_group_all_in_one/payments_pro_hosted_solution_es/pphs_settings/pphs_settings_advanced/pphs_settlement_report/heading_schedule` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
@@ -514,42 +514,42 @@ Deze opties zijn beschikbaar slechts als u het Verenigd Koninkrijk als [ koopvaa
 | Totaal minimumbestelling | `payment_es/authorizenet_directpost/min_order_total` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 | Maximum aantal bestellingen | `payment_es/authorizenet_directpost/max_order_total` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 | Sorteervolgorde | `payment_es/authorizenet_directpost/sort_order` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
-| Ingeschakeld | `payment_es/cybersource/active` | ![ Commerce-slechts ](/help/assets/configuration/cloud-ee.png) |
-| Betalingsactie | `payment_es/cybersource/payment_action` | ![ Commerce-slechts ](/help/assets/configuration/cloud-ee.png) |
-| Titel | `payment_es/cybersource/title` | ![ Commerce-slechts ](/help/assets/configuration/cloud-ee.png) |
-| Profiel-id | `payment_es/cybersource/profile_id` | ![ Commerce-slechts ](/help/assets/configuration/cloud-ee.png) | ![ Gecodeerd ](/help/assets/configuration/cloud-enc.png) |
-| Status van nieuwe bestelling | `payment_es/cybersource/order_status` | ![ Commerce-slechts ](/help/assets/configuration/cloud-ee.png) |
-| Foutopsporing | `payment_es/cybersource/debug` | ![ Commerce-slechts ](/help/assets/configuration/cloud-ee.png) |
-| Typen creditcard | `payment_es/cybersource/cctypes` | ![ Commerce-slechts ](/help/assets/configuration/cloud-ee.png) |
-| Betaling door de kandidaat-lidstaten | `payment_es/cybersource/allowspecific` | ![ Commerce-slechts ](/help/assets/configuration/cloud-ee.png) |
-| Betaling door specifieke landen | `payment_es/cybersource/specificcountry` | ![ Commerce-slechts ](/help/assets/configuration/cloud-ee.png) |
-| Totaal minimumbestelling | `payment_es/cybersource/min_order_total` | ![ Commerce-slechts ](/help/assets/configuration/cloud-ee.png) |
-| Maximum aantal bestellingen | `payment_es/cybersource/max_order_total` | ![ Commerce-slechts ](/help/assets/configuration/cloud-ee.png) |
-| Sorteervolgorde | `payment_es/cybersource/sort_order` | ![ Commerce-slechts ](/help/assets/configuration/cloud-ee.png) |
-| Ingeschakeld | `payment_es/worldpay/active` | ![ Commerce-slechts ](/help/assets/configuration/cloud-ee.png) |
-| Titel | `payment_es/worldpay/title` | ![ Commerce-slechts ](/help/assets/configuration/cloud-ee.png) |
-| Installatie-id | `payment_es/worldpay/installation_id` | ![ Commerce-slechts ](/help/assets/configuration/cloud-ee.png) |
-| Installatie-id voor extern beheer | `payment_es/worldpay/admin_installation_id` | ![ Commerce-slechts ](/help/assets/configuration/cloud-ee.png) |
-| Contactgegevens bewerken toestaan | `payment_es/worldpay/fix_contact` | ![ Commerce-slechts ](/help/assets/configuration/cloud-ee.png) |
-| Contactgegevens verbergen | `payment_es/worldpay/hide_contact` | ![ Commerce-slechts ](/help/assets/configuration/cloud-ee.png) |
-| Handtekeningvelden | `payment_es/worldpay/signature_fields` | ![ Commerce-slechts ](/help/assets/configuration/cloud-ee.png) |
-| Testmodus | `payment_es/worldpay/sandbox_flag` | ![ Commerce-slechts ](/help/assets/configuration/cloud-ee.png) |
-| Betalingsactie voor test | `payment_es/worldpay/test_action` | ![ Commerce-slechts ](/help/assets/configuration/cloud-ee.png) |
-| Betalingsactie | `payment_es/worldpay/payment_action` | ![ Commerce-slechts ](/help/assets/configuration/cloud-ee.png) |
-| Betaling uit de betrokken landen | `payment_es/worldpay/allowspecific` | ![ Commerce-slechts ](/help/assets/configuration/cloud-ee.png) |
-| Betaling door specifieke landen | `payment_es/worldpay/specificcountry` | ![ Commerce-slechts ](/help/assets/configuration/cloud-ee.png) |
-| Status van bestelling instellen op vermoedelijke fraude voor CVV | `payment_es/worldpay/cvv_fraud_case` | ![ Commerce-slechts ](/help/assets/configuration/cloud-ee.png) |
-| Status van bestelling instellen op vermoedelijke fraude voor Postcode AVS | `payment_es/worldpay/avs_fraud_case` | ![ Commerce-slechts ](/help/assets/configuration/cloud-ee.png) |
-| Sorteervolgorde | `payment_es/worldpay/sort_order` | ![ Commerce-slechts ](/help/assets/configuration/cloud-ee.png) |
-| Ingeschakeld | `payment_es/eway/active` | ![ Commerce-slechts ](/help/assets/configuration/cloud-ee.png) |
-| Verbindingstype | `payment_es/eway/connection_type` | ![ Commerce-slechts ](/help/assets/configuration/cloud-ee.png) |
-| Titel | `payment_es/eway/title` | ![ Commerce-slechts ](/help/assets/configuration/cloud-ee.png) |
-| Betalingsactie | `payment_es/eway/payment_action` | ![ Commerce-slechts ](/help/assets/configuration/cloud-ee.png) |
-| Foutopsporing | `payment_es/eway/debug` | ![ Commerce-slechts ](/help/assets/configuration/cloud-ee.png) |
-| Typen creditcard | `payment_es/eway/cctypes` | ![ Commerce-slechts ](/help/assets/configuration/cloud-ee.png) |
-| Betaling door de kandidaat-lidstaten | `payment_es/eway/allowspecific` | ![ Commerce-slechts ](/help/assets/configuration/cloud-ee.png) |
-| Betaling door specifieke landen | `payment_es/eway/specificcountry` | ![ Commerce-slechts ](/help/assets/configuration/cloud-ee.png) |
-| Sorteervolgorde | `payment_es/eway/sort_order` | ![ Commerce-slechts ](/help/assets/configuration/cloud-ee.png) |
+| Ingeschakeld | `payment_es/cybersource/active` | ![&#x200B; Commerce-slechts &#x200B;](/help/assets/configuration/cloud-ee.png) |
+| Betalingsactie | `payment_es/cybersource/payment_action` | ![&#x200B; Commerce-slechts &#x200B;](/help/assets/configuration/cloud-ee.png) |
+| Titel | `payment_es/cybersource/title` | ![&#x200B; Commerce-slechts &#x200B;](/help/assets/configuration/cloud-ee.png) |
+| Profiel-id | `payment_es/cybersource/profile_id` | ![&#x200B; Commerce-slechts &#x200B;](/help/assets/configuration/cloud-ee.png) | ![&#x200B; Gecodeerd &#x200B;](/help/assets/configuration/cloud-enc.png) |
+| Status van nieuwe bestelling | `payment_es/cybersource/order_status` | ![&#x200B; Commerce-slechts &#x200B;](/help/assets/configuration/cloud-ee.png) |
+| Foutopsporing | `payment_es/cybersource/debug` | ![&#x200B; Commerce-slechts &#x200B;](/help/assets/configuration/cloud-ee.png) |
+| Typen creditcard | `payment_es/cybersource/cctypes` | ![&#x200B; Commerce-slechts &#x200B;](/help/assets/configuration/cloud-ee.png) |
+| Betaling door de kandidaat-lidstaten | `payment_es/cybersource/allowspecific` | ![&#x200B; Commerce-slechts &#x200B;](/help/assets/configuration/cloud-ee.png) |
+| Betaling door specifieke landen | `payment_es/cybersource/specificcountry` | ![&#x200B; Commerce-slechts &#x200B;](/help/assets/configuration/cloud-ee.png) |
+| Totaal minimumbestelling | `payment_es/cybersource/min_order_total` | ![&#x200B; Commerce-slechts &#x200B;](/help/assets/configuration/cloud-ee.png) |
+| Maximum aantal bestellingen | `payment_es/cybersource/max_order_total` | ![&#x200B; Commerce-slechts &#x200B;](/help/assets/configuration/cloud-ee.png) |
+| Sorteervolgorde | `payment_es/cybersource/sort_order` | ![&#x200B; Commerce-slechts &#x200B;](/help/assets/configuration/cloud-ee.png) |
+| Ingeschakeld | `payment_es/worldpay/active` | ![&#x200B; Commerce-slechts &#x200B;](/help/assets/configuration/cloud-ee.png) |
+| Titel | `payment_es/worldpay/title` | ![&#x200B; Commerce-slechts &#x200B;](/help/assets/configuration/cloud-ee.png) |
+| Installatie-id | `payment_es/worldpay/installation_id` | ![&#x200B; Commerce-slechts &#x200B;](/help/assets/configuration/cloud-ee.png) |
+| Installatie-id voor extern beheer | `payment_es/worldpay/admin_installation_id` | ![&#x200B; Commerce-slechts &#x200B;](/help/assets/configuration/cloud-ee.png) |
+| Contactgegevens bewerken toestaan | `payment_es/worldpay/fix_contact` | ![&#x200B; Commerce-slechts &#x200B;](/help/assets/configuration/cloud-ee.png) |
+| Contactgegevens verbergen | `payment_es/worldpay/hide_contact` | ![&#x200B; Commerce-slechts &#x200B;](/help/assets/configuration/cloud-ee.png) |
+| Handtekeningvelden | `payment_es/worldpay/signature_fields` | ![&#x200B; Commerce-slechts &#x200B;](/help/assets/configuration/cloud-ee.png) |
+| Testmodus | `payment_es/worldpay/sandbox_flag` | ![&#x200B; Commerce-slechts &#x200B;](/help/assets/configuration/cloud-ee.png) |
+| Betalingsactie voor test | `payment_es/worldpay/test_action` | ![&#x200B; Commerce-slechts &#x200B;](/help/assets/configuration/cloud-ee.png) |
+| Betalingsactie | `payment_es/worldpay/payment_action` | ![&#x200B; Commerce-slechts &#x200B;](/help/assets/configuration/cloud-ee.png) |
+| Betaling uit de betrokken landen | `payment_es/worldpay/allowspecific` | ![&#x200B; Commerce-slechts &#x200B;](/help/assets/configuration/cloud-ee.png) |
+| Betaling door specifieke landen | `payment_es/worldpay/specificcountry` | ![&#x200B; Commerce-slechts &#x200B;](/help/assets/configuration/cloud-ee.png) |
+| Status van bestelling instellen op vermoedelijke fraude voor CVV | `payment_es/worldpay/cvv_fraud_case` | ![&#x200B; Commerce-slechts &#x200B;](/help/assets/configuration/cloud-ee.png) |
+| Status van bestelling instellen op vermoedelijke fraude voor Postcode AVS | `payment_es/worldpay/avs_fraud_case` | ![&#x200B; Commerce-slechts &#x200B;](/help/assets/configuration/cloud-ee.png) |
+| Sorteervolgorde | `payment_es/worldpay/sort_order` | ![&#x200B; Commerce-slechts &#x200B;](/help/assets/configuration/cloud-ee.png) |
+| Ingeschakeld | `payment_es/eway/active` | ![&#x200B; Commerce-slechts &#x200B;](/help/assets/configuration/cloud-ee.png) |
+| Verbindingstype | `payment_es/eway/connection_type` | ![&#x200B; Commerce-slechts &#x200B;](/help/assets/configuration/cloud-ee.png) |
+| Titel | `payment_es/eway/title` | ![&#x200B; Commerce-slechts &#x200B;](/help/assets/configuration/cloud-ee.png) |
+| Betalingsactie | `payment_es/eway/payment_action` | ![&#x200B; Commerce-slechts &#x200B;](/help/assets/configuration/cloud-ee.png) |
+| Foutopsporing | `payment_es/eway/debug` | ![&#x200B; Commerce-slechts &#x200B;](/help/assets/configuration/cloud-ee.png) |
+| Typen creditcard | `payment_es/eway/cctypes` | ![&#x200B; Commerce-slechts &#x200B;](/help/assets/configuration/cloud-ee.png) |
+| Betaling door de kandidaat-lidstaten | `payment_es/eway/allowspecific` | ![&#x200B; Commerce-slechts &#x200B;](/help/assets/configuration/cloud-ee.png) |
+| Betaling door specifieke landen | `payment_es/eway/specificcountry` | ![&#x200B; Commerce-slechts &#x200B;](/help/assets/configuration/cloud-ee.png) |
+| Sorteervolgorde | `payment_es/eway/sort_order` | ![&#x200B; Commerce-slechts &#x200B;](/help/assets/configuration/cloud-ee.png) |
 | Gepland ophalen | `payment_it/express_checkout_other/settings_ec/settings_ec_advanced/express_checkout_settlement_report/heading_schedule` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 | PayPal Merchant Pages Style | `payment_it/express_checkout_other/settings_ec/settings_ec_advanced/express_checkout_frontend/paypal_pages` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 | Gepland ophalen | `payment_it/paypal_group_all_in_one/payments_pro_hosted_solution_it/pphs_settings/pphs_settings_advanced/pphs_settlement_report/heading_schedule` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
@@ -609,39 +609,39 @@ Deze opties zijn beschikbaar slechts als u het Verenigd Koninkrijk als [ koopvaa
 | Totaal minimumbestelling | `payment_it/authorizenet_directpost/min_order_total` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 | Maximum aantal bestellingen | `payment_it/authorizenet_directpost/max_order_total` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 | Sorteervolgorde | `payment_it/authorizenet_directpost/sort_order` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
-| Ingeschakeld | `payment_it/cybersource/active` | ![ Commerce-slechts ](/help/assets/configuration/cloud-ee.png) |
-| Betalingsactie | `payment_it/cybersource/payment_action` | ![ Commerce-slechts ](/help/assets/configuration/cloud-ee.png) |
-| Titel | `payment_it/cybersource/title` | ![ Commerce-slechts ](/help/assets/configuration/cloud-ee.png) |
-| Status van nieuwe bestelling | `payment_it/cybersource/order_status` | ![ Commerce-slechts ](/help/assets/configuration/cloud-ee.png) |
-| Foutopsporing | `payment_it/cybersource/debug` | ![ Commerce-slechts ](/help/assets/configuration/cloud-ee.png) |
-| Typen creditcard | `payment_it/cybersource/cctypes` | ![ Commerce-slechts ](/help/assets/configuration/cloud-ee.png) |
-| Betaling door de kandidaat-lidstaten | `payment_it/cybersource/allowspecific` | ![ Commerce-slechts ](/help/assets/configuration/cloud-ee.png) |
-| Betaling door specifieke landen | `payment_it/cybersource/specificcountry` | ![ Commerce-slechts ](/help/assets/configuration/cloud-ee.png) |
-| Totaal minimumbestelling | `payment_it/cybersource/min_order_total` | ![ Commerce-slechts ](/help/assets/configuration/cloud-ee.png) |
-| Maximum aantal bestellingen | `payment_it/cybersource/max_order_total` | ![ Commerce-slechts ](/help/assets/configuration/cloud-ee.png) |
-| Sorteervolgorde | `payment_it/cybersource/sort_order` | ![ Commerce-slechts ](/help/assets/configuration/cloud-ee.png) |
-| Ingeschakeld | `payment_it/worldpay/active` | ![ Commerce-slechts ](/help/assets/configuration/cloud-ee.png) |
-| Titel | `payment_it/worldpay/title` | ![ Commerce-slechts ](/help/assets/configuration/cloud-ee.png) |
-| Contactgegevens bewerken toestaan | `payment_it/worldpay/fix_contact` | ![ Commerce-slechts ](/help/assets/configuration/cloud-ee.png) |
-| Contactgegevens verbergen | `payment_it/worldpay/hide_contact` | ![ Commerce-slechts ](/help/assets/configuration/cloud-ee.png) |
-| Handtekeningvelden | `payment_it/worldpay/signature_fields` | ![ Commerce-slechts ](/help/assets/configuration/cloud-ee.png) |
-| Foutopsporing | `payment_it/worldpay/debug` | ![ Commerce-slechts ](/help/assets/configuration/cloud-ee.png) |
-| Betalingsactie voor test | `payment_it/worldpay/test_action` | ![ Commerce-slechts ](/help/assets/configuration/cloud-ee.png) |
-| Betalingsactie | `payment_it/worldpay/payment_action` | ![ Commerce-slechts ](/help/assets/configuration/cloud-ee.png) |
-| Betaling uit de betrokken landen | `payment_it/worldpay/allowspecific` | ![ Commerce-slechts ](/help/assets/configuration/cloud-ee.png) |
-| Betaling door specifieke landen | `payment_it/worldpay/specificcountry` | ![ Commerce-slechts ](/help/assets/configuration/cloud-ee.png) |
-| Status van bestelling instellen op vermoedelijke fraude voor CVV | `payment_it/worldpay/cvv_fraud_case` | ![ Commerce-slechts ](/help/assets/configuration/cloud-ee.png) |
-| Status van bestelling instellen op vermoedelijke fraude voor Postcode AVS | `payment_it/worldpay/avs_fraud_case` | ![ Commerce-slechts ](/help/assets/configuration/cloud-ee.png) |
-| Sorteervolgorde | `payment_it/worldpay/sort_order` | ![ Commerce-slechts ](/help/assets/configuration/cloud-ee.png) |
-| Ingeschakeld | `payment_it/eway/active` | ![ Commerce-slechts ](/help/assets/configuration/cloud-ee.png) |
-| Verbindingstype | `payment_it/eway/connection_type` | ![ Commerce-slechts ](/help/assets/configuration/cloud-ee.png) |
-| Titel | `payment_it/eway/title` | ![ Commerce-slechts ](/help/assets/configuration/cloud-ee.png) |
-| Betalingsactie | `payment_it/eway/payment_action` | ![ Commerce-slechts ](/help/assets/configuration/cloud-ee.png) |
-| Foutopsporing | `payment_it/eway/debug` | ![ Commerce-slechts ](/help/assets/configuration/cloud-ee.png) |
-| Typen creditcard | `payment_it/eway/cctypes` | ![ Commerce-slechts ](/help/assets/configuration/cloud-ee.png) |
-| Betaling door de kandidaat-lidstaten | `payment_it/eway/allowspecific` | ![ Commerce-slechts ](/help/assets/configuration/cloud-ee.png) |
-| Betaling door specifieke landen | `payment_it/eway/specificcountry` | ![ Commerce-slechts ](/help/assets/configuration/cloud-ee.png) |
-| Sorteervolgorde | `payment_it/eway/sort_order` | ![ Commerce-slechts ](/help/assets/configuration/cloud-ee.png) |
+| Ingeschakeld | `payment_it/cybersource/active` | ![&#x200B; Commerce-slechts &#x200B;](/help/assets/configuration/cloud-ee.png) |
+| Betalingsactie | `payment_it/cybersource/payment_action` | ![&#x200B; Commerce-slechts &#x200B;](/help/assets/configuration/cloud-ee.png) |
+| Titel | `payment_it/cybersource/title` | ![&#x200B; Commerce-slechts &#x200B;](/help/assets/configuration/cloud-ee.png) |
+| Status van nieuwe bestelling | `payment_it/cybersource/order_status` | ![&#x200B; Commerce-slechts &#x200B;](/help/assets/configuration/cloud-ee.png) |
+| Foutopsporing | `payment_it/cybersource/debug` | ![&#x200B; Commerce-slechts &#x200B;](/help/assets/configuration/cloud-ee.png) |
+| Typen creditcard | `payment_it/cybersource/cctypes` | ![&#x200B; Commerce-slechts &#x200B;](/help/assets/configuration/cloud-ee.png) |
+| Betaling door de kandidaat-lidstaten | `payment_it/cybersource/allowspecific` | ![&#x200B; Commerce-slechts &#x200B;](/help/assets/configuration/cloud-ee.png) |
+| Betaling door specifieke landen | `payment_it/cybersource/specificcountry` | ![&#x200B; Commerce-slechts &#x200B;](/help/assets/configuration/cloud-ee.png) |
+| Totaal minimumbestelling | `payment_it/cybersource/min_order_total` | ![&#x200B; Commerce-slechts &#x200B;](/help/assets/configuration/cloud-ee.png) |
+| Maximum aantal bestellingen | `payment_it/cybersource/max_order_total` | ![&#x200B; Commerce-slechts &#x200B;](/help/assets/configuration/cloud-ee.png) |
+| Sorteervolgorde | `payment_it/cybersource/sort_order` | ![&#x200B; Commerce-slechts &#x200B;](/help/assets/configuration/cloud-ee.png) |
+| Ingeschakeld | `payment_it/worldpay/active` | ![&#x200B; Commerce-slechts &#x200B;](/help/assets/configuration/cloud-ee.png) |
+| Titel | `payment_it/worldpay/title` | ![&#x200B; Commerce-slechts &#x200B;](/help/assets/configuration/cloud-ee.png) |
+| Contactgegevens bewerken toestaan | `payment_it/worldpay/fix_contact` | ![&#x200B; Commerce-slechts &#x200B;](/help/assets/configuration/cloud-ee.png) |
+| Contactgegevens verbergen | `payment_it/worldpay/hide_contact` | ![&#x200B; Commerce-slechts &#x200B;](/help/assets/configuration/cloud-ee.png) |
+| Handtekeningvelden | `payment_it/worldpay/signature_fields` | ![&#x200B; Commerce-slechts &#x200B;](/help/assets/configuration/cloud-ee.png) |
+| Foutopsporing | `payment_it/worldpay/debug` | ![&#x200B; Commerce-slechts &#x200B;](/help/assets/configuration/cloud-ee.png) |
+| Betalingsactie voor test | `payment_it/worldpay/test_action` | ![&#x200B; Commerce-slechts &#x200B;](/help/assets/configuration/cloud-ee.png) |
+| Betalingsactie | `payment_it/worldpay/payment_action` | ![&#x200B; Commerce-slechts &#x200B;](/help/assets/configuration/cloud-ee.png) |
+| Betaling uit de betrokken landen | `payment_it/worldpay/allowspecific` | ![&#x200B; Commerce-slechts &#x200B;](/help/assets/configuration/cloud-ee.png) |
+| Betaling door specifieke landen | `payment_it/worldpay/specificcountry` | ![&#x200B; Commerce-slechts &#x200B;](/help/assets/configuration/cloud-ee.png) |
+| Status van bestelling instellen op vermoedelijke fraude voor CVV | `payment_it/worldpay/cvv_fraud_case` | ![&#x200B; Commerce-slechts &#x200B;](/help/assets/configuration/cloud-ee.png) |
+| Status van bestelling instellen op vermoedelijke fraude voor Postcode AVS | `payment_it/worldpay/avs_fraud_case` | ![&#x200B; Commerce-slechts &#x200B;](/help/assets/configuration/cloud-ee.png) |
+| Sorteervolgorde | `payment_it/worldpay/sort_order` | ![&#x200B; Commerce-slechts &#x200B;](/help/assets/configuration/cloud-ee.png) |
+| Ingeschakeld | `payment_it/eway/active` | ![&#x200B; Commerce-slechts &#x200B;](/help/assets/configuration/cloud-ee.png) |
+| Verbindingstype | `payment_it/eway/connection_type` | ![&#x200B; Commerce-slechts &#x200B;](/help/assets/configuration/cloud-ee.png) |
+| Titel | `payment_it/eway/title` | ![&#x200B; Commerce-slechts &#x200B;](/help/assets/configuration/cloud-ee.png) |
+| Betalingsactie | `payment_it/eway/payment_action` | ![&#x200B; Commerce-slechts &#x200B;](/help/assets/configuration/cloud-ee.png) |
+| Foutopsporing | `payment_it/eway/debug` | ![&#x200B; Commerce-slechts &#x200B;](/help/assets/configuration/cloud-ee.png) |
+| Typen creditcard | `payment_it/eway/cctypes` | ![&#x200B; Commerce-slechts &#x200B;](/help/assets/configuration/cloud-ee.png) |
+| Betaling door de kandidaat-lidstaten | `payment_it/eway/allowspecific` | ![&#x200B; Commerce-slechts &#x200B;](/help/assets/configuration/cloud-ee.png) |
+| Betaling door specifieke landen | `payment_it/eway/specificcountry` | ![&#x200B; Commerce-slechts &#x200B;](/help/assets/configuration/cloud-ee.png) |
+| Sorteervolgorde | `payment_it/eway/sort_order` | ![&#x200B; Commerce-slechts &#x200B;](/help/assets/configuration/cloud-ee.png) |
 | Gepland ophalen | `payment_fr/express_checkout_other/settings_ec/settings_ec_advanced/express_checkout_settlement_report/heading_schedule` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 | PayPal Merchant Pages Style | `payment_fr/express_checkout_other/settings_ec/settings_ec_advanced/express_checkout_frontend/paypal_pages` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 | Gepland ophalen | `payment_fr/paypal_group_all_in_one/payments_pro_hosted_solution_fr/pphs_settings/pphs_settings_advanced/pphs_settlement_report/heading_schedule` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
@@ -701,38 +701,38 @@ Deze opties zijn beschikbaar slechts als u het Verenigd Koninkrijk als [ koopvaa
 | Totaal minimumbestelling | `payment_fr/authorizenet_directpost/min_order_total` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 | Maximum aantal bestellingen | `payment_fr/authorizenet_directpost/max_order_total` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 | Sorteervolgorde | `payment_fr/authorizenet_directpost/sort_order` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
-| Ingeschakeld | `payment_fr/cybersource/active` | ![ Commerce-slechts ](/help/assets/configuration/cloud-ee.png) |
-| Betalingsactie | `payment_fr/cybersource/payment_action` | ![ Commerce-slechts ](/help/assets/configuration/cloud-ee.png) |
-| Titel | `payment_fr/cybersource/title` | ![ Commerce-slechts ](/help/assets/configuration/cloud-ee.png) |
-| Status van nieuwe bestelling | `payment_fr/cybersource/order_status` | ![ Commerce-slechts ](/help/assets/configuration/cloud-ee.png) |
-| Foutopsporing | `payment_fr/cybersource/debug` | ![ Commerce-slechts ](/help/assets/configuration/cloud-ee.png) |
-| Typen creditcard | `payment_fr/cybersource/cctypes` | ![ Commerce-slechts ](/help/assets/configuration/cloud-ee.png) |
-| Betaling door de kandidaat-lidstaten | `payment_fr/cybersource/allowspecific` | ![ Commerce-slechts ](/help/assets/configuration/cloud-ee.png) |
-| Betaling door specifieke landen | `payment_fr/cybersource/specificcountry` | ![ Commerce-slechts ](/help/assets/configuration/cloud-ee.png) |
-| Totaal minimumbestelling | `payment_fr/cybersource/min_order_total` | ![ Commerce-slechts ](/help/assets/configuration/cloud-ee.png) |
-| Maximum aantal bestellingen | `payment_fr/cybersource/max_order_total` | ![ Commerce-slechts ](/help/assets/configuration/cloud-ee.png) |
-| Sorteervolgorde | `payment_fr/cybersource/sort_order` | ![ Commerce-slechts ](/help/assets/configuration/cloud-ee.png) |
-| Ingeschakeld | `payment_fr/worldpay/active` | ![ Commerce-slechts ](/help/assets/configuration/cloud-ee.png) |
-| Titel | `payment_fr/worldpay/title` | ![ Commerce-slechts ](/help/assets/configuration/cloud-ee.png) |
-| Contactgegevens bewerken toestaan | `payment_fr/worldpay/fix_contact` | ![ Commerce-slechts ](/help/assets/configuration/cloud-ee.png) |
-| Contactgegevens verbergen | `payment_fr/worldpay/hide_contact` | ![ Commerce-slechts ](/help/assets/configuration/cloud-ee.png) |
-| Foutopsporing | `payment_fr/worldpay/debug` | ![ Commerce-slechts ](/help/assets/configuration/cloud-ee.png) |
-| Betalingsactie voor test | `payment_fr/worldpay/test_action` | ![ Commerce-slechts ](/help/assets/configuration/cloud-ee.png) |
-| Betalingsactie | `payment_fr/worldpay/payment_action` | ![ Commerce-slechts ](/help/assets/configuration/cloud-ee.png) |
-| Betaling uit de betrokken landen | `payment_fr/worldpay/allowspecific` | ![ Commerce-slechts ](/help/assets/configuration/cloud-ee.png) |
-| Betaling door specifieke landen | `payment_fr/worldpay/specificcountry` | ![ Commerce-slechts ](/help/assets/configuration/cloud-ee.png) |
-| Status van bestelling instellen op vermoedelijke fraude voor CVV | `payment_fr/worldpay/cvv_fraud_case` | ![ Commerce-slechts ](/help/assets/configuration/cloud-ee.png) |
-| Status van bestelling instellen op vermoedelijke fraude voor Postcode AVS | `payment_fr/worldpay/avs_fraud_case` | ![ Commerce-slechts ](/help/assets/configuration/cloud-ee.png) |
-| Sorteervolgorde | `payment_fr/worldpay/sort_order` | ![ Commerce-slechts ](/help/assets/configuration/cloud-ee.png) |
-| Ingeschakeld | `payment_fr/eway/active` | ![ Commerce-slechts ](/help/assets/configuration/cloud-ee.png) |
-| Verbindingstype | `payment_fr/eway/connection_type` | ![ Commerce-slechts ](/help/assets/configuration/cloud-ee.png) |
-| Titel | `payment_fr/eway/title` | ![ Commerce-slechts ](/help/assets/configuration/cloud-ee.png) |
-| Betalingsactie | `payment_fr/eway/payment_action` | ![ Commerce-slechts ](/help/assets/configuration/cloud-ee.png) |
-| Foutopsporing | `payment_fr/eway/debug` | ![ Commerce-slechts ](/help/assets/configuration/cloud-ee.png) |
-| Typen creditcard | `payment_fr/eway/cctypes` | ![ Commerce-slechts ](/help/assets/configuration/cloud-ee.png) |
-| Betaling door de kandidaat-lidstaten | `payment_fr/eway/allowspecific` | ![ Commerce-slechts ](/help/assets/configuration/cloud-ee.png) |
-| Betaling door specifieke landen | `payment_fr/eway/specificcountry` | ![ Commerce-slechts ](/help/assets/configuration/cloud-ee.png) |
-| Sorteervolgorde | `payment_fr/eway/sort_order` | ![ Commerce-slechts ](/help/assets/configuration/cloud-ee.png) |
+| Ingeschakeld | `payment_fr/cybersource/active` | ![&#x200B; Commerce-slechts &#x200B;](/help/assets/configuration/cloud-ee.png) |
+| Betalingsactie | `payment_fr/cybersource/payment_action` | ![&#x200B; Commerce-slechts &#x200B;](/help/assets/configuration/cloud-ee.png) |
+| Titel | `payment_fr/cybersource/title` | ![&#x200B; Commerce-slechts &#x200B;](/help/assets/configuration/cloud-ee.png) |
+| Status van nieuwe bestelling | `payment_fr/cybersource/order_status` | ![&#x200B; Commerce-slechts &#x200B;](/help/assets/configuration/cloud-ee.png) |
+| Foutopsporing | `payment_fr/cybersource/debug` | ![&#x200B; Commerce-slechts &#x200B;](/help/assets/configuration/cloud-ee.png) |
+| Typen creditcard | `payment_fr/cybersource/cctypes` | ![&#x200B; Commerce-slechts &#x200B;](/help/assets/configuration/cloud-ee.png) |
+| Betaling door de kandidaat-lidstaten | `payment_fr/cybersource/allowspecific` | ![&#x200B; Commerce-slechts &#x200B;](/help/assets/configuration/cloud-ee.png) |
+| Betaling door specifieke landen | `payment_fr/cybersource/specificcountry` | ![&#x200B; Commerce-slechts &#x200B;](/help/assets/configuration/cloud-ee.png) |
+| Totaal minimumbestelling | `payment_fr/cybersource/min_order_total` | ![&#x200B; Commerce-slechts &#x200B;](/help/assets/configuration/cloud-ee.png) |
+| Maximum aantal bestellingen | `payment_fr/cybersource/max_order_total` | ![&#x200B; Commerce-slechts &#x200B;](/help/assets/configuration/cloud-ee.png) |
+| Sorteervolgorde | `payment_fr/cybersource/sort_order` | ![&#x200B; Commerce-slechts &#x200B;](/help/assets/configuration/cloud-ee.png) |
+| Ingeschakeld | `payment_fr/worldpay/active` | ![&#x200B; Commerce-slechts &#x200B;](/help/assets/configuration/cloud-ee.png) |
+| Titel | `payment_fr/worldpay/title` | ![&#x200B; Commerce-slechts &#x200B;](/help/assets/configuration/cloud-ee.png) |
+| Contactgegevens bewerken toestaan | `payment_fr/worldpay/fix_contact` | ![&#x200B; Commerce-slechts &#x200B;](/help/assets/configuration/cloud-ee.png) |
+| Contactgegevens verbergen | `payment_fr/worldpay/hide_contact` | ![&#x200B; Commerce-slechts &#x200B;](/help/assets/configuration/cloud-ee.png) |
+| Foutopsporing | `payment_fr/worldpay/debug` | ![&#x200B; Commerce-slechts &#x200B;](/help/assets/configuration/cloud-ee.png) |
+| Betalingsactie voor test | `payment_fr/worldpay/test_action` | ![&#x200B; Commerce-slechts &#x200B;](/help/assets/configuration/cloud-ee.png) |
+| Betalingsactie | `payment_fr/worldpay/payment_action` | ![&#x200B; Commerce-slechts &#x200B;](/help/assets/configuration/cloud-ee.png) |
+| Betaling uit de betrokken landen | `payment_fr/worldpay/allowspecific` | ![&#x200B; Commerce-slechts &#x200B;](/help/assets/configuration/cloud-ee.png) |
+| Betaling door specifieke landen | `payment_fr/worldpay/specificcountry` | ![&#x200B; Commerce-slechts &#x200B;](/help/assets/configuration/cloud-ee.png) |
+| Status van bestelling instellen op vermoedelijke fraude voor CVV | `payment_fr/worldpay/cvv_fraud_case` | ![&#x200B; Commerce-slechts &#x200B;](/help/assets/configuration/cloud-ee.png) |
+| Status van bestelling instellen op vermoedelijke fraude voor Postcode AVS | `payment_fr/worldpay/avs_fraud_case` | ![&#x200B; Commerce-slechts &#x200B;](/help/assets/configuration/cloud-ee.png) |
+| Sorteervolgorde | `payment_fr/worldpay/sort_order` | ![&#x200B; Commerce-slechts &#x200B;](/help/assets/configuration/cloud-ee.png) |
+| Ingeschakeld | `payment_fr/eway/active` | ![&#x200B; Commerce-slechts &#x200B;](/help/assets/configuration/cloud-ee.png) |
+| Verbindingstype | `payment_fr/eway/connection_type` | ![&#x200B; Commerce-slechts &#x200B;](/help/assets/configuration/cloud-ee.png) |
+| Titel | `payment_fr/eway/title` | ![&#x200B; Commerce-slechts &#x200B;](/help/assets/configuration/cloud-ee.png) |
+| Betalingsactie | `payment_fr/eway/payment_action` | ![&#x200B; Commerce-slechts &#x200B;](/help/assets/configuration/cloud-ee.png) |
+| Foutopsporing | `payment_fr/eway/debug` | ![&#x200B; Commerce-slechts &#x200B;](/help/assets/configuration/cloud-ee.png) |
+| Typen creditcard | `payment_fr/eway/cctypes` | ![&#x200B; Commerce-slechts &#x200B;](/help/assets/configuration/cloud-ee.png) |
+| Betaling door de kandidaat-lidstaten | `payment_fr/eway/allowspecific` | ![&#x200B; Commerce-slechts &#x200B;](/help/assets/configuration/cloud-ee.png) |
+| Betaling door specifieke landen | `payment_fr/eway/specificcountry` | ![&#x200B; Commerce-slechts &#x200B;](/help/assets/configuration/cloud-ee.png) |
+| Sorteervolgorde | `payment_fr/eway/sort_order` | ![&#x200B; Commerce-slechts &#x200B;](/help/assets/configuration/cloud-ee.png) |
 | Gepland ophalen | `payment_jp/express_checkout_other/settings_ec/settings_ec_advanced/express_checkout_settlement_report/heading_schedule` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 | PayPal Merchant Pages Style | `payment_jp/express_checkout_other/settings_ec/settings_ec_advanced/express_checkout_frontend/paypal_pages` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 | Gepland ophalen | `payment_jp/paypal_group_all_in_one/payments_pro_hosted_solution_jp/pphs_settings/pphs_settings_advanced/pphs_settlement_report/heading_schedule` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
@@ -792,37 +792,37 @@ Deze opties zijn beschikbaar slechts als u het Verenigd Koninkrijk als [ koopvaa
 | Totaal minimumbestelling | `payment_jp/authorizenet_directpost/min_order_total` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 | Maximum aantal bestellingen | `payment_jp/authorizenet_directpost/max_order_total` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 | Sorteervolgorde | `payment_jp/authorizenet_directpost/sort_order` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
-| Ingeschakeld | `payment_jp/cybersource/active` | ![ Commerce-slechts ](/help/assets/configuration/cloud-ee.png) |
-| Betalingsactie | `payment_jp/cybersource/payment_action` | ![ Commerce-slechts ](/help/assets/configuration/cloud-ee.png) |
-| Titel | `payment_jp/cybersource/title` | ![ Commerce-slechts ](/help/assets/configuration/cloud-ee.png) |
-| Foutopsporing | `payment_jp/cybersource/debug` | ![ Commerce-slechts ](/help/assets/configuration/cloud-ee.png) |
-| Typen creditcard | `payment_jp/cybersource/cctypes` | ![ Commerce-slechts ](/help/assets/configuration/cloud-ee.png) |
-| Betaling door de kandidaat-lidstaten | `payment_jp/cybersource/allowspecific` | ![ Commerce-slechts ](/help/assets/configuration/cloud-ee.png) |
-| Betaling door specifieke landen | `payment_jp/cybersource/specificcountry` | ![ Commerce-slechts ](/help/assets/configuration/cloud-ee.png) |
-| Totaal minimumbestelling | `payment_jp/cybersource/min_order_total` | ![ Commerce-slechts ](/help/assets/configuration/cloud-ee.png) |
-| Maximum aantal bestellingen | `payment_jp/cybersource/max_order_total` | ![ Commerce-slechts ](/help/assets/configuration/cloud-ee.png) |
-| Sorteervolgorde | `payment_jp/cybersource/sort_order` | ![ Commerce-slechts ](/help/assets/configuration/cloud-ee.png) |
-| Ingeschakeld | `payment_jp/worldpay/active` | ![ Commerce-slechts ](/help/assets/configuration/cloud-ee.png) |
-| Titel | `payment_jp/worldpay/title` | ![ Commerce-slechts ](/help/assets/configuration/cloud-ee.png) |
-| Contactgegevens bewerken toestaan | `payment_jp/worldpay/fix_contact` | ![ Commerce-slechts ](/help/assets/configuration/cloud-ee.png) |
-| Contactgegevens verbergen | `payment_jp/worldpay/hide_contact` | ![ Commerce-slechts ](/help/assets/configuration/cloud-ee.png) |
-| Foutopsporing | `payment_jp/worldpay/debug` | ![ Commerce-slechts ](/help/assets/configuration/cloud-ee.png) |
-| Betalingsactie voor test | `payment_jp/worldpay/test_action` | ![ Commerce-slechts ](/help/assets/configuration/cloud-ee.png) |
-| Betalingsactie | `payment_jp/worldpay/payment_action` | ![ Commerce-slechts ](/help/assets/configuration/cloud-ee.png) |
-| Betaling uit de betrokken landen | `payment_jp/worldpay/allowspecific` | ![ Commerce-slechts ](/help/assets/configuration/cloud-ee.png) |
-| Betaling door specifieke landen | `payment_jp/worldpay/specificcountry` | ![ Commerce-slechts ](/help/assets/configuration/cloud-ee.png) |
-| Status van bestelling instellen op vermoedelijke fraude voor CVV | `payment_jp/worldpay/cvv_fraud_case` | ![ Commerce-slechts ](/help/assets/configuration/cloud-ee.png) |
-| Status van bestelling instellen op vermoedelijke fraude voor Postcode AVS | `payment_jp/worldpay/avs_fraud_case` | ![ Commerce-slechts ](/help/assets/configuration/cloud-ee.png) |
-| Sorteervolgorde | `payment_jp/worldpay/sort_order` | ![ Commerce-slechts ](/help/assets/configuration/cloud-ee.png) |
-| Ingeschakeld | `payment_jp/eway/active` | ![ Commerce-slechts ](/help/assets/configuration/cloud-ee.png) |
-| Verbindingstype | `payment_jp/eway/connection_type` | ![ Commerce-slechts ](/help/assets/configuration/cloud-ee.png) |
-| Titel | `payment_jp/eway/title` | ![ Commerce-slechts ](/help/assets/configuration/cloud-ee.png) |
-| Betalingsactie | `payment_jp/eway/payment_action` | ![ Commerce-slechts ](/help/assets/configuration/cloud-ee.png) |
-| Foutopsporing | `payment_jp/eway/debug` | ![ Commerce-slechts ](/help/assets/configuration/cloud-ee.png) |
-| Typen creditcard | `payment_jp/eway/cctypes` | ![ Commerce-slechts ](/help/assets/configuration/cloud-ee.png) |
-| Betaling door de kandidaat-lidstaten | `payment_jp/eway/allowspecific` | ![ Commerce-slechts ](/help/assets/configuration/cloud-ee.png) |
-| Betaling door specifieke landen | `payment_jp/eway/specificcountry` | ![ Commerce-slechts ](/help/assets/configuration/cloud-ee.png) |
-| Sorteervolgorde | `payment_jp/eway/sort_order` | ![ Commerce-slechts ](/help/assets/configuration/cloud-ee.png) |
+| Ingeschakeld | `payment_jp/cybersource/active` | ![&#x200B; Commerce-slechts &#x200B;](/help/assets/configuration/cloud-ee.png) |
+| Betalingsactie | `payment_jp/cybersource/payment_action` | ![&#x200B; Commerce-slechts &#x200B;](/help/assets/configuration/cloud-ee.png) |
+| Titel | `payment_jp/cybersource/title` | ![&#x200B; Commerce-slechts &#x200B;](/help/assets/configuration/cloud-ee.png) |
+| Foutopsporing | `payment_jp/cybersource/debug` | ![&#x200B; Commerce-slechts &#x200B;](/help/assets/configuration/cloud-ee.png) |
+| Typen creditcard | `payment_jp/cybersource/cctypes` | ![&#x200B; Commerce-slechts &#x200B;](/help/assets/configuration/cloud-ee.png) |
+| Betaling door de kandidaat-lidstaten | `payment_jp/cybersource/allowspecific` | ![&#x200B; Commerce-slechts &#x200B;](/help/assets/configuration/cloud-ee.png) |
+| Betaling door specifieke landen | `payment_jp/cybersource/specificcountry` | ![&#x200B; Commerce-slechts &#x200B;](/help/assets/configuration/cloud-ee.png) |
+| Totaal minimumbestelling | `payment_jp/cybersource/min_order_total` | ![&#x200B; Commerce-slechts &#x200B;](/help/assets/configuration/cloud-ee.png) |
+| Maximum aantal bestellingen | `payment_jp/cybersource/max_order_total` | ![&#x200B; Commerce-slechts &#x200B;](/help/assets/configuration/cloud-ee.png) |
+| Sorteervolgorde | `payment_jp/cybersource/sort_order` | ![&#x200B; Commerce-slechts &#x200B;](/help/assets/configuration/cloud-ee.png) |
+| Ingeschakeld | `payment_jp/worldpay/active` | ![&#x200B; Commerce-slechts &#x200B;](/help/assets/configuration/cloud-ee.png) |
+| Titel | `payment_jp/worldpay/title` | ![&#x200B; Commerce-slechts &#x200B;](/help/assets/configuration/cloud-ee.png) |
+| Contactgegevens bewerken toestaan | `payment_jp/worldpay/fix_contact` | ![&#x200B; Commerce-slechts &#x200B;](/help/assets/configuration/cloud-ee.png) |
+| Contactgegevens verbergen | `payment_jp/worldpay/hide_contact` | ![&#x200B; Commerce-slechts &#x200B;](/help/assets/configuration/cloud-ee.png) |
+| Foutopsporing | `payment_jp/worldpay/debug` | ![&#x200B; Commerce-slechts &#x200B;](/help/assets/configuration/cloud-ee.png) |
+| Betalingsactie voor test | `payment_jp/worldpay/test_action` | ![&#x200B; Commerce-slechts &#x200B;](/help/assets/configuration/cloud-ee.png) |
+| Betalingsactie | `payment_jp/worldpay/payment_action` | ![&#x200B; Commerce-slechts &#x200B;](/help/assets/configuration/cloud-ee.png) |
+| Betaling uit de betrokken landen | `payment_jp/worldpay/allowspecific` | ![&#x200B; Commerce-slechts &#x200B;](/help/assets/configuration/cloud-ee.png) |
+| Betaling door specifieke landen | `payment_jp/worldpay/specificcountry` | ![&#x200B; Commerce-slechts &#x200B;](/help/assets/configuration/cloud-ee.png) |
+| Status van bestelling instellen op vermoedelijke fraude voor CVV | `payment_jp/worldpay/cvv_fraud_case` | ![&#x200B; Commerce-slechts &#x200B;](/help/assets/configuration/cloud-ee.png) |
+| Status van bestelling instellen op vermoedelijke fraude voor Postcode AVS | `payment_jp/worldpay/avs_fraud_case` | ![&#x200B; Commerce-slechts &#x200B;](/help/assets/configuration/cloud-ee.png) |
+| Sorteervolgorde | `payment_jp/worldpay/sort_order` | ![&#x200B; Commerce-slechts &#x200B;](/help/assets/configuration/cloud-ee.png) |
+| Ingeschakeld | `payment_jp/eway/active` | ![&#x200B; Commerce-slechts &#x200B;](/help/assets/configuration/cloud-ee.png) |
+| Verbindingstype | `payment_jp/eway/connection_type` | ![&#x200B; Commerce-slechts &#x200B;](/help/assets/configuration/cloud-ee.png) |
+| Titel | `payment_jp/eway/title` | ![&#x200B; Commerce-slechts &#x200B;](/help/assets/configuration/cloud-ee.png) |
+| Betalingsactie | `payment_jp/eway/payment_action` | ![&#x200B; Commerce-slechts &#x200B;](/help/assets/configuration/cloud-ee.png) |
+| Foutopsporing | `payment_jp/eway/debug` | ![&#x200B; Commerce-slechts &#x200B;](/help/assets/configuration/cloud-ee.png) |
+| Typen creditcard | `payment_jp/eway/cctypes` | ![&#x200B; Commerce-slechts &#x200B;](/help/assets/configuration/cloud-ee.png) |
+| Betaling door de kandidaat-lidstaten | `payment_jp/eway/allowspecific` | ![&#x200B; Commerce-slechts &#x200B;](/help/assets/configuration/cloud-ee.png) |
+| Betaling door specifieke landen | `payment_jp/eway/specificcountry` | ![&#x200B; Commerce-slechts &#x200B;](/help/assets/configuration/cloud-ee.png) |
+| Sorteervolgorde | `payment_jp/eway/sort_order` | ![&#x200B; Commerce-slechts &#x200B;](/help/assets/configuration/cloud-ee.png) |
 | Gepland ophalen | `payment_au/express_checkout_other/settings_ec/settings_ec_advanced/express_checkout_settlement_report/heading_schedule` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 | PayPal Merchant Pages Style | `payment_au/express_checkout_other/settings_ec/settings_ec_advanced/express_checkout_frontend/paypal_pages` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 | Gepland ophalen | `payment_au/paypal_group_all_in_one/payments_pro_hosted_solution_au/pphs_settings/pphs_settings_advanced/pphs_settlement_report/heading_schedule` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
@@ -887,43 +887,43 @@ Deze opties zijn beschikbaar slechts als u het Verenigd Koninkrijk als [ koopvaa
 | Totaal minimumbestelling | `payment_au/authorizenet_directpost/min_order_total` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 | Maximum aantal bestellingen | `payment_au/authorizenet_directpost/max_order_total` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 | Sorteervolgorde | `payment_au/authorizenet_directpost/sort_order` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
-| Ingeschakeld | `payment_au/cybersource/active` | ![ Commerce-slechts ](/help/assets/configuration/cloud-ee.png) |
-| Betalingsactie | `payment_au/cybersource/payment_action` | ![ Commerce-slechts ](/help/assets/configuration/cloud-ee.png) |
-| Titel | `payment_au/cybersource/title` | ![ Commerce-slechts ](/help/assets/configuration/cloud-ee.png) |
-| Merchant ID | `payment_au/cybersource/merchant_id` | ![ Commerce-slechts ](/help/assets/configuration/cloud-ee.png) | ![ Gecodeerd ](/help/assets/configuration/cloud-enc.png) |
-| Profiel-id | `payment_au/cybersource/profile_id` | ![ Commerce-slechts ](/help/assets/configuration/cloud-ee.png) | ![ Gecodeerd ](/help/assets/configuration/cloud-enc.png) |
-| Status van nieuwe bestelling | `payment_au/cybersource/order_status` | ![ Commerce-slechts ](/help/assets/configuration/cloud-ee.png) |
-| Foutopsporing | `payment_au/cybersource/debug` | ![ Commerce-slechts ](/help/assets/configuration/cloud-ee.png) |
-| Typen creditcard | `payment_au/cybersource/cctypes` | ![ Commerce-slechts ](/help/assets/configuration/cloud-ee.png) |
-| Betaling door de kandidaat-lidstaten | `payment_au/cybersource/allowspecific` | ![ Commerce-slechts ](/help/assets/configuration/cloud-ee.png) |
-| Betaling door specifieke landen | `payment_au/cybersource/specificcountry` | ![ Commerce-slechts ](/help/assets/configuration/cloud-ee.png) |
-| Totaal minimumbestelling | `payment_au/cybersource/min_order_total` | ![ Commerce-slechts ](/help/assets/configuration/cloud-ee.png) |
-| Maximum aantal bestellingen | `payment_au/cybersource/max_order_total` | ![ Commerce-slechts ](/help/assets/configuration/cloud-ee.png) |
-| Sorteervolgorde | `payment_au/cybersource/sort_order` | ![ Commerce-slechts ](/help/assets/configuration/cloud-ee.png) |
-| Ingeschakeld | `payment_au/worldpay/active` | ![ Commerce-slechts ](/help/assets/configuration/cloud-ee.png) |
-| Titel | `payment_au/worldpay/title` | ![ Commerce-slechts ](/help/assets/configuration/cloud-ee.png) |
-| Installatie-id | `payment_au/worldpay/installation_id` | ![ Commerce-slechts ](/help/assets/configuration/cloud-ee.png) |
-| Contactgegevens bewerken toestaan | `payment_au/worldpay/fix_contact` | ![ Commerce-slechts ](/help/assets/configuration/cloud-ee.png) |
-| Contactgegevens verbergen | `payment_au/worldpay/hide_contact` | ![ Commerce-slechts ](/help/assets/configuration/cloud-ee.png) |
-| Handtekeningvelden | `payment_au/worldpay/signature_fields` | ![ Commerce-slechts ](/help/assets/configuration/cloud-ee.png) |
-| Foutopsporing | `payment_au/worldpay/debug` | ![ Commerce-slechts ](/help/assets/configuration/cloud-ee.png) |
-| Testmodus | `payment_au/worldpay/sandbox_flag` | ![ Commerce-slechts ](/help/assets/configuration/cloud-ee.png) |
-| Betalingsactie voor test | `payment_au/worldpay/test_action` | ![ Commerce-slechts ](/help/assets/configuration/cloud-ee.png) |
-| Betalingsactie | `payment_au/worldpay/payment_action` | ![ Commerce-slechts ](/help/assets/configuration/cloud-ee.png) |
-| Betaling uit de betrokken landen | `payment_au/worldpay/allowspecific` | ![ Commerce-slechts ](/help/assets/configuration/cloud-ee.png) |
-| Betaling door specifieke landen | `payment_au/worldpay/specificcountry` | ![ Commerce-slechts ](/help/assets/configuration/cloud-ee.png) |
-| Status van bestelling instellen op vermoedelijke fraude voor CVV | `payment_au/worldpay/cvv_fraud_case` | ![ Commerce-slechts ](/help/assets/configuration/cloud-ee.png) |
-| Status van bestelling instellen op vermoedelijke fraude voor Postcode AVS | `payment_au/worldpay/avs_fraud_case` | ![ Commerce-slechts ](/help/assets/configuration/cloud-ee.png) |
-| Sorteervolgorde | `payment_au/worldpay/sort_order` | ![ Commerce-slechts ](/help/assets/configuration/cloud-ee.png) |
-| Ingeschakeld | `payment_au/eway/active` | ![ Commerce-slechts ](/help/assets/configuration/cloud-ee.png) |
-| Verbindingstype | `payment_au/eway/connection_type` | ![ Commerce-slechts ](/help/assets/configuration/cloud-ee.png) |
-| Titel | `payment_au/eway/title` | ![ Commerce-slechts ](/help/assets/configuration/cloud-ee.png) |
-| Betalingsactie | `payment_au/eway/payment_action` | ![ Commerce-slechts ](/help/assets/configuration/cloud-ee.png) |
-| Foutopsporing | `payment_au/eway/debug` | ![ Commerce-slechts ](/help/assets/configuration/cloud-ee.png) |
-| Typen creditcard | `payment_au/eway/cctypes` | ![ Commerce-slechts ](/help/assets/configuration/cloud-ee.png) |
-| Betaling door de kandidaat-lidstaten | `payment_au/eway/allowspecific` | ![ Commerce-slechts ](/help/assets/configuration/cloud-ee.png) |
-| Betaling door specifieke landen | `payment_au/eway/specificcountry` | ![ Commerce-slechts ](/help/assets/configuration/cloud-ee.png) |
-| Sorteervolgorde | `payment_au/eway/sort_order` | ![ Commerce-slechts ](/help/assets/configuration/cloud-ee.png) |
+| Ingeschakeld | `payment_au/cybersource/active` | ![&#x200B; Commerce-slechts &#x200B;](/help/assets/configuration/cloud-ee.png) |
+| Betalingsactie | `payment_au/cybersource/payment_action` | ![&#x200B; Commerce-slechts &#x200B;](/help/assets/configuration/cloud-ee.png) |
+| Titel | `payment_au/cybersource/title` | ![&#x200B; Commerce-slechts &#x200B;](/help/assets/configuration/cloud-ee.png) |
+| Merchant ID | `payment_au/cybersource/merchant_id` | ![&#x200B; Commerce-slechts &#x200B;](/help/assets/configuration/cloud-ee.png) | ![&#x200B; Gecodeerd &#x200B;](/help/assets/configuration/cloud-enc.png) |
+| Profiel-id | `payment_au/cybersource/profile_id` | ![&#x200B; Commerce-slechts &#x200B;](/help/assets/configuration/cloud-ee.png) | ![&#x200B; Gecodeerd &#x200B;](/help/assets/configuration/cloud-enc.png) |
+| Status van nieuwe bestelling | `payment_au/cybersource/order_status` | ![&#x200B; Commerce-slechts &#x200B;](/help/assets/configuration/cloud-ee.png) |
+| Foutopsporing | `payment_au/cybersource/debug` | ![&#x200B; Commerce-slechts &#x200B;](/help/assets/configuration/cloud-ee.png) |
+| Typen creditcard | `payment_au/cybersource/cctypes` | ![&#x200B; Commerce-slechts &#x200B;](/help/assets/configuration/cloud-ee.png) |
+| Betaling door de kandidaat-lidstaten | `payment_au/cybersource/allowspecific` | ![&#x200B; Commerce-slechts &#x200B;](/help/assets/configuration/cloud-ee.png) |
+| Betaling door specifieke landen | `payment_au/cybersource/specificcountry` | ![&#x200B; Commerce-slechts &#x200B;](/help/assets/configuration/cloud-ee.png) |
+| Totaal minimumbestelling | `payment_au/cybersource/min_order_total` | ![&#x200B; Commerce-slechts &#x200B;](/help/assets/configuration/cloud-ee.png) |
+| Maximum aantal bestellingen | `payment_au/cybersource/max_order_total` | ![&#x200B; Commerce-slechts &#x200B;](/help/assets/configuration/cloud-ee.png) |
+| Sorteervolgorde | `payment_au/cybersource/sort_order` | ![&#x200B; Commerce-slechts &#x200B;](/help/assets/configuration/cloud-ee.png) |
+| Ingeschakeld | `payment_au/worldpay/active` | ![&#x200B; Commerce-slechts &#x200B;](/help/assets/configuration/cloud-ee.png) |
+| Titel | `payment_au/worldpay/title` | ![&#x200B; Commerce-slechts &#x200B;](/help/assets/configuration/cloud-ee.png) |
+| Installatie-id | `payment_au/worldpay/installation_id` | ![&#x200B; Commerce-slechts &#x200B;](/help/assets/configuration/cloud-ee.png) |
+| Contactgegevens bewerken toestaan | `payment_au/worldpay/fix_contact` | ![&#x200B; Commerce-slechts &#x200B;](/help/assets/configuration/cloud-ee.png) |
+| Contactgegevens verbergen | `payment_au/worldpay/hide_contact` | ![&#x200B; Commerce-slechts &#x200B;](/help/assets/configuration/cloud-ee.png) |
+| Handtekeningvelden | `payment_au/worldpay/signature_fields` | ![&#x200B; Commerce-slechts &#x200B;](/help/assets/configuration/cloud-ee.png) |
+| Foutopsporing | `payment_au/worldpay/debug` | ![&#x200B; Commerce-slechts &#x200B;](/help/assets/configuration/cloud-ee.png) |
+| Testmodus | `payment_au/worldpay/sandbox_flag` | ![&#x200B; Commerce-slechts &#x200B;](/help/assets/configuration/cloud-ee.png) |
+| Betalingsactie voor test | `payment_au/worldpay/test_action` | ![&#x200B; Commerce-slechts &#x200B;](/help/assets/configuration/cloud-ee.png) |
+| Betalingsactie | `payment_au/worldpay/payment_action` | ![&#x200B; Commerce-slechts &#x200B;](/help/assets/configuration/cloud-ee.png) |
+| Betaling uit de betrokken landen | `payment_au/worldpay/allowspecific` | ![&#x200B; Commerce-slechts &#x200B;](/help/assets/configuration/cloud-ee.png) |
+| Betaling door specifieke landen | `payment_au/worldpay/specificcountry` | ![&#x200B; Commerce-slechts &#x200B;](/help/assets/configuration/cloud-ee.png) |
+| Status van bestelling instellen op vermoedelijke fraude voor CVV | `payment_au/worldpay/cvv_fraud_case` | ![&#x200B; Commerce-slechts &#x200B;](/help/assets/configuration/cloud-ee.png) |
+| Status van bestelling instellen op vermoedelijke fraude voor Postcode AVS | `payment_au/worldpay/avs_fraud_case` | ![&#x200B; Commerce-slechts &#x200B;](/help/assets/configuration/cloud-ee.png) |
+| Sorteervolgorde | `payment_au/worldpay/sort_order` | ![&#x200B; Commerce-slechts &#x200B;](/help/assets/configuration/cloud-ee.png) |
+| Ingeschakeld | `payment_au/eway/active` | ![&#x200B; Commerce-slechts &#x200B;](/help/assets/configuration/cloud-ee.png) |
+| Verbindingstype | `payment_au/eway/connection_type` | ![&#x200B; Commerce-slechts &#x200B;](/help/assets/configuration/cloud-ee.png) |
+| Titel | `payment_au/eway/title` | ![&#x200B; Commerce-slechts &#x200B;](/help/assets/configuration/cloud-ee.png) |
+| Betalingsactie | `payment_au/eway/payment_action` | ![&#x200B; Commerce-slechts &#x200B;](/help/assets/configuration/cloud-ee.png) |
+| Foutopsporing | `payment_au/eway/debug` | ![&#x200B; Commerce-slechts &#x200B;](/help/assets/configuration/cloud-ee.png) |
+| Typen creditcard | `payment_au/eway/cctypes` | ![&#x200B; Commerce-slechts &#x200B;](/help/assets/configuration/cloud-ee.png) |
+| Betaling door de kandidaat-lidstaten | `payment_au/eway/allowspecific` | ![&#x200B; Commerce-slechts &#x200B;](/help/assets/configuration/cloud-ee.png) |
+| Betaling door specifieke landen | `payment_au/eway/specificcountry` | ![&#x200B; Commerce-slechts &#x200B;](/help/assets/configuration/cloud-ee.png) |
+| Sorteervolgorde | `payment_au/eway/sort_order` | ![&#x200B; Commerce-slechts &#x200B;](/help/assets/configuration/cloud-ee.png) |
 | Gepland ophalen | `payment_ca/express_checkout_other/settings_ec/settings_ec_advanced/express_checkout_settlement_report/heading_schedule` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 | PayPal Merchant Pages Style | `payment_ca/express_checkout_other/settings_ec/settings_ec_advanced/express_checkout_frontend/paypal_pages` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 | Gepland ophalen | `payment_ca/paypal_group_all_in_one/wps_other/settings_ec/settings_ec_advanced/express_checkout_settlement_report/heading_schedule` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
@@ -990,38 +990,38 @@ Deze opties zijn beschikbaar slechts als u het Verenigd Koninkrijk als [ koopvaa
 | Totaal minimumbestelling | `payment_ca/authorizenet_directpost/min_order_total` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 | Maximum aantal bestellingen | `payment_ca/authorizenet_directpost/max_order_total` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 | Sorteervolgorde | `payment_ca/authorizenet_directpost/sort_order` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
-| Ingeschakeld | `payment_ca/cybersource/active` | ![ Commerce-slechts ](/help/assets/configuration/cloud-ee.png) |
-| Betalingsactie | `payment_ca/cybersource/payment_action` | ![ Commerce-slechts ](/help/assets/configuration/cloud-ee.png) |
-| Titel | `payment_ca/cybersource/title` | ![ Commerce-slechts ](/help/assets/configuration/cloud-ee.png) |
-| Foutopsporing | `payment_ca/cybersource/debug` | ![ Commerce-slechts ](/help/assets/configuration/cloud-ee.png) |
-| Typen creditcard | `payment_ca/cybersource/cctypes` | ![ Commerce-slechts ](/help/assets/configuration/cloud-ee.png) |
-| Betaling door de kandidaat-lidstaten | `payment_ca/cybersource/allowspecific` | ![ Commerce-slechts ](/help/assets/configuration/cloud-ee.png) |
-| Betaling door specifieke landen | `payment_ca/cybersource/specificcountry` | ![ Commerce-slechts ](/help/assets/configuration/cloud-ee.png) |
-| Totaal minimumbestelling | `payment_ca/cybersource/min_order_total` | ![ Commerce-slechts ](/help/assets/configuration/cloud-ee.png) |
-| Maximum aantal bestellingen | `payment_ca/cybersource/max_order_total` | ![ Commerce-slechts ](/help/assets/configuration/cloud-ee.png) |
-| Sorteervolgorde | `payment_ca/cybersource/sort_order` | ![ Commerce-slechts ](/help/assets/configuration/cloud-ee.png) |
-| Ingeschakeld | `payment_ca/worldpay/active` | ![ Commerce-slechts ](/help/assets/configuration/cloud-ee.png) |
-| Titel | `payment_ca/worldpay/title` | ![ Commerce-slechts ](/help/assets/configuration/cloud-ee.png) |
-| Contactgegevens bewerken toestaan | `payment_ca/worldpay/fix_contact` | ![ Commerce-slechts ](/help/assets/configuration/cloud-ee.png) |
-| Contactgegevens verbergen | `payment_ca/worldpay/hide_contact` | ![ Commerce-slechts ](/help/assets/configuration/cloud-ee.png) |
-| Handtekeningvelden | `payment_ca/worldpay/signature_fields` | ![ Commerce-slechts ](/help/assets/configuration/cloud-ee.png) |
-| Foutopsporing | `payment_ca/worldpay/debug` | ![ Commerce-slechts ](/help/assets/configuration/cloud-ee.png) |
-| Betalingsactie voor test | `payment_ca/worldpay/test_action` | ![ Commerce-slechts ](/help/assets/configuration/cloud-ee.png) |
-| Betalingsactie | `payment_ca/worldpay/payment_action` | ![ Commerce-slechts ](/help/assets/configuration/cloud-ee.png) |
-| Betaling uit de betrokken landen | `payment_ca/worldpay/allowspecific` | ![ Commerce-slechts ](/help/assets/configuration/cloud-ee.png) |
-| Betaling door specifieke landen | `payment_ca/worldpay/specificcountry` | ![ Commerce-slechts ](/help/assets/configuration/cloud-ee.png) |
-| Status van bestelling instellen op vermoedelijke fraude voor CVV | `payment_ca/worldpay/cvv_fraud_case` | ![ Commerce-slechts ](/help/assets/configuration/cloud-ee.png) |
-| Status van bestelling instellen op vermoedelijke fraude voor Postcode AVS | `payment_ca/worldpay/avs_fraud_case` | ![ Commerce-slechts ](/help/assets/configuration/cloud-ee.png) |
-| Sorteervolgorde | `payment_ca/worldpay/sort_order` | ![ Commerce-slechts ](/help/assets/configuration/cloud-ee.png) |
-| Ingeschakeld | `payment_ca/eway/active` | ![ Commerce-slechts ](/help/assets/configuration/cloud-ee.png) |
-| Verbindingstype | `payment_ca/eway/connection_type` | ![ Commerce-slechts ](/help/assets/configuration/cloud-ee.png) |
-| Titel | `payment_ca/eway/title` | ![ Commerce-slechts ](/help/assets/configuration/cloud-ee.png) |
-| Betalingsactie | `payment_ca/eway/payment_action` | ![ Commerce-slechts ](/help/assets/configuration/cloud-ee.png) |
-| Foutopsporing | `payment_ca/eway/debug` | ![ Commerce-slechts ](/help/assets/configuration/cloud-ee.png) |
-| Typen creditcard | `payment_ca/eway/cctypes` | ![ Commerce-slechts ](/help/assets/configuration/cloud-ee.png) |
-| Betaling door de kandidaat-lidstaten | `payment_ca/eway/allowspecific` | ![ Commerce-slechts ](/help/assets/configuration/cloud-ee.png) |
-| Betaling door specifieke landen | `payment_ca/eway/specificcountry` | ![ Commerce-slechts ](/help/assets/configuration/cloud-ee.png) |
-| Sorteervolgorde | `payment_ca/eway/sort_order` | ![ Commerce-slechts ](/help/assets/configuration/cloud-ee.png) |
+| Ingeschakeld | `payment_ca/cybersource/active` | ![&#x200B; Commerce-slechts &#x200B;](/help/assets/configuration/cloud-ee.png) |
+| Betalingsactie | `payment_ca/cybersource/payment_action` | ![&#x200B; Commerce-slechts &#x200B;](/help/assets/configuration/cloud-ee.png) |
+| Titel | `payment_ca/cybersource/title` | ![&#x200B; Commerce-slechts &#x200B;](/help/assets/configuration/cloud-ee.png) |
+| Foutopsporing | `payment_ca/cybersource/debug` | ![&#x200B; Commerce-slechts &#x200B;](/help/assets/configuration/cloud-ee.png) |
+| Typen creditcard | `payment_ca/cybersource/cctypes` | ![&#x200B; Commerce-slechts &#x200B;](/help/assets/configuration/cloud-ee.png) |
+| Betaling door de kandidaat-lidstaten | `payment_ca/cybersource/allowspecific` | ![&#x200B; Commerce-slechts &#x200B;](/help/assets/configuration/cloud-ee.png) |
+| Betaling door specifieke landen | `payment_ca/cybersource/specificcountry` | ![&#x200B; Commerce-slechts &#x200B;](/help/assets/configuration/cloud-ee.png) |
+| Totaal minimumbestelling | `payment_ca/cybersource/min_order_total` | ![&#x200B; Commerce-slechts &#x200B;](/help/assets/configuration/cloud-ee.png) |
+| Maximum aantal bestellingen | `payment_ca/cybersource/max_order_total` | ![&#x200B; Commerce-slechts &#x200B;](/help/assets/configuration/cloud-ee.png) |
+| Sorteervolgorde | `payment_ca/cybersource/sort_order` | ![&#x200B; Commerce-slechts &#x200B;](/help/assets/configuration/cloud-ee.png) |
+| Ingeschakeld | `payment_ca/worldpay/active` | ![&#x200B; Commerce-slechts &#x200B;](/help/assets/configuration/cloud-ee.png) |
+| Titel | `payment_ca/worldpay/title` | ![&#x200B; Commerce-slechts &#x200B;](/help/assets/configuration/cloud-ee.png) |
+| Contactgegevens bewerken toestaan | `payment_ca/worldpay/fix_contact` | ![&#x200B; Commerce-slechts &#x200B;](/help/assets/configuration/cloud-ee.png) |
+| Contactgegevens verbergen | `payment_ca/worldpay/hide_contact` | ![&#x200B; Commerce-slechts &#x200B;](/help/assets/configuration/cloud-ee.png) |
+| Handtekeningvelden | `payment_ca/worldpay/signature_fields` | ![&#x200B; Commerce-slechts &#x200B;](/help/assets/configuration/cloud-ee.png) |
+| Foutopsporing | `payment_ca/worldpay/debug` | ![&#x200B; Commerce-slechts &#x200B;](/help/assets/configuration/cloud-ee.png) |
+| Betalingsactie voor test | `payment_ca/worldpay/test_action` | ![&#x200B; Commerce-slechts &#x200B;](/help/assets/configuration/cloud-ee.png) |
+| Betalingsactie | `payment_ca/worldpay/payment_action` | ![&#x200B; Commerce-slechts &#x200B;](/help/assets/configuration/cloud-ee.png) |
+| Betaling uit de betrokken landen | `payment_ca/worldpay/allowspecific` | ![&#x200B; Commerce-slechts &#x200B;](/help/assets/configuration/cloud-ee.png) |
+| Betaling door specifieke landen | `payment_ca/worldpay/specificcountry` | ![&#x200B; Commerce-slechts &#x200B;](/help/assets/configuration/cloud-ee.png) |
+| Status van bestelling instellen op vermoedelijke fraude voor CVV | `payment_ca/worldpay/cvv_fraud_case` | ![&#x200B; Commerce-slechts &#x200B;](/help/assets/configuration/cloud-ee.png) |
+| Status van bestelling instellen op vermoedelijke fraude voor Postcode AVS | `payment_ca/worldpay/avs_fraud_case` | ![&#x200B; Commerce-slechts &#x200B;](/help/assets/configuration/cloud-ee.png) |
+| Sorteervolgorde | `payment_ca/worldpay/sort_order` | ![&#x200B; Commerce-slechts &#x200B;](/help/assets/configuration/cloud-ee.png) |
+| Ingeschakeld | `payment_ca/eway/active` | ![&#x200B; Commerce-slechts &#x200B;](/help/assets/configuration/cloud-ee.png) |
+| Verbindingstype | `payment_ca/eway/connection_type` | ![&#x200B; Commerce-slechts &#x200B;](/help/assets/configuration/cloud-ee.png) |
+| Titel | `payment_ca/eway/title` | ![&#x200B; Commerce-slechts &#x200B;](/help/assets/configuration/cloud-ee.png) |
+| Betalingsactie | `payment_ca/eway/payment_action` | ![&#x200B; Commerce-slechts &#x200B;](/help/assets/configuration/cloud-ee.png) |
+| Foutopsporing | `payment_ca/eway/debug` | ![&#x200B; Commerce-slechts &#x200B;](/help/assets/configuration/cloud-ee.png) |
+| Typen creditcard | `payment_ca/eway/cctypes` | ![&#x200B; Commerce-slechts &#x200B;](/help/assets/configuration/cloud-ee.png) |
+| Betaling door de kandidaat-lidstaten | `payment_ca/eway/allowspecific` | ![&#x200B; Commerce-slechts &#x200B;](/help/assets/configuration/cloud-ee.png) |
+| Betaling door specifieke landen | `payment_ca/eway/specificcountry` | ![&#x200B; Commerce-slechts &#x200B;](/help/assets/configuration/cloud-ee.png) |
+| Sorteervolgorde | `payment_ca/eway/sort_order` | ![&#x200B; Commerce-slechts &#x200B;](/help/assets/configuration/cloud-ee.png) |
 | Gepland ophalen | `payment_other/express_checkout_other/settings_ec/settings_ec_advanced/express_checkout_settlement_report/heading_schedule` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 | PayPal Merchant Pages Style | `payment_other/express_checkout_other/settings_ec/settings_ec_advanced/express_checkout_frontend/paypal_pages` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 | Gepland ophalen | `payment_other/paypal_group_all_in_one/wps_other/settings_ec/settings_ec_advanced/express_checkout_settlement_report/heading_schedule` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
@@ -1080,38 +1080,38 @@ Deze opties zijn beschikbaar slechts als u het Verenigd Koninkrijk als [ koopvaa
 | Totaal minimumbestelling | `payment_other/authorizenet_directpost/min_order_total` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 | Maximum aantal bestellingen | `payment_other/authorizenet_directpost/max_order_total` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 | Sorteervolgorde | `payment_other/authorizenet_directpost/sort_order` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
-| Ingeschakeld | `payment_other/cybersource/active` | ![ Commerce-slechts ](/help/assets/configuration/cloud-ee.png) |
-| Betalingsactie | `payment_other/cybersource/payment_action` | ![ Commerce-slechts ](/help/assets/configuration/cloud-ee.png) |
-| Titel | `payment_other/cybersource/title` | ![ Commerce-slechts ](/help/assets/configuration/cloud-ee.png) |
-| Foutopsporing | `payment_other/cybersource/debug` | ![ Commerce-slechts ](/help/assets/configuration/cloud-ee.png) |
-| Typen creditcard | `payment_other/cybersource/cctypes` | ![ Commerce-slechts ](/help/assets/configuration/cloud-ee.png) |
-| Betaling door de kandidaat-lidstaten | `payment_other/cybersource/allowspecific` | ![ Commerce-slechts ](/help/assets/configuration/cloud-ee.png) |
-| Betaling door specifieke landen | `payment_other/cybersource/specificcountry` | ![ Commerce-slechts ](/help/assets/configuration/cloud-ee.png) |
-| Totaal minimumbestelling | `payment_other/cybersource/min_order_total` | ![ Commerce-slechts ](/help/assets/configuration/cloud-ee.png) |
-| Maximum aantal bestellingen | `payment_other/cybersource/max_order_total` | ![ Commerce-slechts ](/help/assets/configuration/cloud-ee.png) |
-| Sorteervolgorde | `payment_other/cybersource/sort_order` | ![ Commerce-slechts ](/help/assets/configuration/cloud-ee.png) |
-| Ingeschakeld | `payment_other/worldpay/active` | ![ Commerce-slechts ](/help/assets/configuration/cloud-ee.png) |
-| Titel | `payment_other/worldpay/title` | ![ Commerce-slechts ](/help/assets/configuration/cloud-ee.png) |
-| Contactgegevens bewerken toestaan | `payment_other/worldpay/fix_contact` | ![ Commerce-slechts ](/help/assets/configuration/cloud-ee.png) |
-| Contactgegevens verbergen | `payment_other/worldpay/hide_contact` | ![ Commerce-slechts ](/help/assets/configuration/cloud-ee.png) |
-| Handtekeningvelden | `payment_other/worldpay/signature_fields` | ![ Commerce-slechts ](/help/assets/configuration/cloud-ee.png) |
-| Foutopsporing | `payment_other/worldpay/debug` | ![ Commerce-slechts ](/help/assets/configuration/cloud-ee.png) |
-| Betalingsactie voor test | `payment_other/worldpay/test_action` | ![ Commerce-slechts ](/help/assets/configuration/cloud-ee.png) |
-| Betalingsactie | `payment_other/worldpay/payment_action` | ![ Commerce-slechts ](/help/assets/configuration/cloud-ee.png) |
-| Betaling uit de betrokken landen | `payment_other/worldpay/allowspecific` | ![ Commerce-slechts ](/help/assets/configuration/cloud-ee.png) |
-| Betaling door specifieke landen | `payment_other/worldpay/specificcountry` | ![ Commerce-slechts ](/help/assets/configuration/cloud-ee.png) |
-| Status van bestelling instellen op vermoedelijke fraude voor CVV | `payment_other/worldpay/cvv_fraud_case` | ![ Commerce-slechts ](/help/assets/configuration/cloud-ee.png) |
-| Status van bestelling instellen op vermoedelijke fraude voor Postcode AVS | `payment_other/worldpay/avs_fraud_case` | ![ Commerce-slechts ](/help/assets/configuration/cloud-ee.png) |
-| Sorteervolgorde | `payment_other/worldpay/sort_order` | ![ Commerce-slechts ](/help/assets/configuration/cloud-ee.png) |
-| Ingeschakeld | `payment_other/eway/active` | ![ Commerce-slechts ](/help/assets/configuration/cloud-ee.png) |
-| Verbindingstype | `payment_other/eway/connection_type` | ![ Commerce-slechts ](/help/assets/configuration/cloud-ee.png) |
-| Titel | `payment_other/eway/title` | ![ Commerce-slechts ](/help/assets/configuration/cloud-ee.png) |
-| Betalingsactie | `payment_other/eway/payment_action` | ![ Commerce-slechts ](/help/assets/configuration/cloud-ee.png) |
-| Foutopsporing | `payment_other/eway/debug` | ![ Commerce-slechts ](/help/assets/configuration/cloud-ee.png) |
-| Typen creditcard | `payment_other/eway/cctypes` | ![ Commerce-slechts ](/help/assets/configuration/cloud-ee.png) |
-| Betaling door de kandidaat-lidstaten | `payment_other/eway/allowspecific` | ![ Commerce-slechts ](/help/assets/configuration/cloud-ee.png) |
-| Betaling door specifieke landen | `payment_other/eway/specificcountry` | ![ Commerce-slechts ](/help/assets/configuration/cloud-ee.png) |
-| Sorteervolgorde | `payment_other/eway/sort_order` | ![ Commerce-slechts ](/help/assets/configuration/cloud-ee.png) |
+| Ingeschakeld | `payment_other/cybersource/active` | ![&#x200B; Commerce-slechts &#x200B;](/help/assets/configuration/cloud-ee.png) |
+| Betalingsactie | `payment_other/cybersource/payment_action` | ![&#x200B; Commerce-slechts &#x200B;](/help/assets/configuration/cloud-ee.png) |
+| Titel | `payment_other/cybersource/title` | ![&#x200B; Commerce-slechts &#x200B;](/help/assets/configuration/cloud-ee.png) |
+| Foutopsporing | `payment_other/cybersource/debug` | ![&#x200B; Commerce-slechts &#x200B;](/help/assets/configuration/cloud-ee.png) |
+| Typen creditcard | `payment_other/cybersource/cctypes` | ![&#x200B; Commerce-slechts &#x200B;](/help/assets/configuration/cloud-ee.png) |
+| Betaling door de kandidaat-lidstaten | `payment_other/cybersource/allowspecific` | ![&#x200B; Commerce-slechts &#x200B;](/help/assets/configuration/cloud-ee.png) |
+| Betaling door specifieke landen | `payment_other/cybersource/specificcountry` | ![&#x200B; Commerce-slechts &#x200B;](/help/assets/configuration/cloud-ee.png) |
+| Totaal minimumbestelling | `payment_other/cybersource/min_order_total` | ![&#x200B; Commerce-slechts &#x200B;](/help/assets/configuration/cloud-ee.png) |
+| Maximum aantal bestellingen | `payment_other/cybersource/max_order_total` | ![&#x200B; Commerce-slechts &#x200B;](/help/assets/configuration/cloud-ee.png) |
+| Sorteervolgorde | `payment_other/cybersource/sort_order` | ![&#x200B; Commerce-slechts &#x200B;](/help/assets/configuration/cloud-ee.png) |
+| Ingeschakeld | `payment_other/worldpay/active` | ![&#x200B; Commerce-slechts &#x200B;](/help/assets/configuration/cloud-ee.png) |
+| Titel | `payment_other/worldpay/title` | ![&#x200B; Commerce-slechts &#x200B;](/help/assets/configuration/cloud-ee.png) |
+| Contactgegevens bewerken toestaan | `payment_other/worldpay/fix_contact` | ![&#x200B; Commerce-slechts &#x200B;](/help/assets/configuration/cloud-ee.png) |
+| Contactgegevens verbergen | `payment_other/worldpay/hide_contact` | ![&#x200B; Commerce-slechts &#x200B;](/help/assets/configuration/cloud-ee.png) |
+| Handtekeningvelden | `payment_other/worldpay/signature_fields` | ![&#x200B; Commerce-slechts &#x200B;](/help/assets/configuration/cloud-ee.png) |
+| Foutopsporing | `payment_other/worldpay/debug` | ![&#x200B; Commerce-slechts &#x200B;](/help/assets/configuration/cloud-ee.png) |
+| Betalingsactie voor test | `payment_other/worldpay/test_action` | ![&#x200B; Commerce-slechts &#x200B;](/help/assets/configuration/cloud-ee.png) |
+| Betalingsactie | `payment_other/worldpay/payment_action` | ![&#x200B; Commerce-slechts &#x200B;](/help/assets/configuration/cloud-ee.png) |
+| Betaling uit de betrokken landen | `payment_other/worldpay/allowspecific` | ![&#x200B; Commerce-slechts &#x200B;](/help/assets/configuration/cloud-ee.png) |
+| Betaling door specifieke landen | `payment_other/worldpay/specificcountry` | ![&#x200B; Commerce-slechts &#x200B;](/help/assets/configuration/cloud-ee.png) |
+| Status van bestelling instellen op vermoedelijke fraude voor CVV | `payment_other/worldpay/cvv_fraud_case` | ![&#x200B; Commerce-slechts &#x200B;](/help/assets/configuration/cloud-ee.png) |
+| Status van bestelling instellen op vermoedelijke fraude voor Postcode AVS | `payment_other/worldpay/avs_fraud_case` | ![&#x200B; Commerce-slechts &#x200B;](/help/assets/configuration/cloud-ee.png) |
+| Sorteervolgorde | `payment_other/worldpay/sort_order` | ![&#x200B; Commerce-slechts &#x200B;](/help/assets/configuration/cloud-ee.png) |
+| Ingeschakeld | `payment_other/eway/active` | ![&#x200B; Commerce-slechts &#x200B;](/help/assets/configuration/cloud-ee.png) |
+| Verbindingstype | `payment_other/eway/connection_type` | ![&#x200B; Commerce-slechts &#x200B;](/help/assets/configuration/cloud-ee.png) |
+| Titel | `payment_other/eway/title` | ![&#x200B; Commerce-slechts &#x200B;](/help/assets/configuration/cloud-ee.png) |
+| Betalingsactie | `payment_other/eway/payment_action` | ![&#x200B; Commerce-slechts &#x200B;](/help/assets/configuration/cloud-ee.png) |
+| Foutopsporing | `payment_other/eway/debug` | ![&#x200B; Commerce-slechts &#x200B;](/help/assets/configuration/cloud-ee.png) |
+| Typen creditcard | `payment_other/eway/cctypes` | ![&#x200B; Commerce-slechts &#x200B;](/help/assets/configuration/cloud-ee.png) |
+| Betaling door de kandidaat-lidstaten | `payment_other/eway/allowspecific` | ![&#x200B; Commerce-slechts &#x200B;](/help/assets/configuration/cloud-ee.png) |
+| Betaling door specifieke landen | `payment_other/eway/specificcountry` | ![&#x200B; Commerce-slechts &#x200B;](/help/assets/configuration/cloud-ee.png) |
+| Sorteervolgorde | `payment_other/eway/sort_order` | ![&#x200B; Commerce-slechts &#x200B;](/help/assets/configuration/cloud-ee.png) |
 | Gepland ophalen | `payment_de/paypal_payment_solutions/express_checkout_de/settings_ec/settings_ec_advanced/express_checkout_settlement_report/heading_schedule` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 | PayPal Merchant Pages Style | `payment_de/paypal_payment_solutions/express_checkout_de/settings_ec/settings_ec_advanced/express_checkout_frontend/paypal_pages` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 | Ingeschakeld | `payment_de/checkmo/active` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
@@ -1155,17 +1155,17 @@ Deze opties zijn beschikbaar slechts als u het Verenigd Koninkrijk als [ koopvaa
 | Totaal minimumbestelling | `payment_de/purchaseorder/min_order_total` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 | Maximum aantal bestellingen | `payment_de/purchaseorder/max_order_total` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 | Sorteervolgorde | `payment_de/purchaseorder/sort_order` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
-| Ingeschakeld | `payment_de/cybersource/active` | ![ Commerce-slechts ](/help/assets/configuration/cloud-ee.png) |
-| Betalingsactie | `payment_de/cybersource/payment_action` | ![ Commerce-slechts ](/help/assets/configuration/cloud-ee.png) |
-| Titel | `payment_de/cybersource/title` | ![ Commerce-slechts ](/help/assets/configuration/cloud-ee.png) |
-| Status van nieuwe bestelling | `payment_de/cybersource/order_status` | ![ Commerce-slechts ](/help/assets/configuration/cloud-ee.png) |
-| Foutopsporing | `payment_de/cybersource/debug` | ![ Commerce-slechts ](/help/assets/configuration/cloud-ee.png) |
-| Typen creditcard | `payment_de/cybersource/cctypes` | ![ Commerce-slechts ](/help/assets/configuration/cloud-ee.png) |
-| Betaling door de kandidaat-lidstaten | `payment_de/cybersource/allowspecific` | ![ Commerce-slechts ](/help/assets/configuration/cloud-ee.png) |
-| Betaling door specifieke landen | `payment_de/cybersource/specificcountry` | ![ Commerce-slechts ](/help/assets/configuration/cloud-ee.png) |
-| Totaal minimumbestelling | `payment_de/cybersource/min_order_total` | ![ Commerce-slechts ](/help/assets/configuration/cloud-ee.png) |
-| Maximum aantal bestellingen | `payment_de/cybersource/max_order_total` | ![ Commerce-slechts ](/help/assets/configuration/cloud-ee.png) |
-| Sorteervolgorde | `payment_de/cybersource/sort_order` | ![ Commerce-slechts ](/help/assets/configuration/cloud-ee.png) |
+| Ingeschakeld | `payment_de/cybersource/active` | ![&#x200B; Commerce-slechts &#x200B;](/help/assets/configuration/cloud-ee.png) |
+| Betalingsactie | `payment_de/cybersource/payment_action` | ![&#x200B; Commerce-slechts &#x200B;](/help/assets/configuration/cloud-ee.png) |
+| Titel | `payment_de/cybersource/title` | ![&#x200B; Commerce-slechts &#x200B;](/help/assets/configuration/cloud-ee.png) |
+| Status van nieuwe bestelling | `payment_de/cybersource/order_status` | ![&#x200B; Commerce-slechts &#x200B;](/help/assets/configuration/cloud-ee.png) |
+| Foutopsporing | `payment_de/cybersource/debug` | ![&#x200B; Commerce-slechts &#x200B;](/help/assets/configuration/cloud-ee.png) |
+| Typen creditcard | `payment_de/cybersource/cctypes` | ![&#x200B; Commerce-slechts &#x200B;](/help/assets/configuration/cloud-ee.png) |
+| Betaling door de kandidaat-lidstaten | `payment_de/cybersource/allowspecific` | ![&#x200B; Commerce-slechts &#x200B;](/help/assets/configuration/cloud-ee.png) |
+| Betaling door specifieke landen | `payment_de/cybersource/specificcountry` | ![&#x200B; Commerce-slechts &#x200B;](/help/assets/configuration/cloud-ee.png) |
+| Totaal minimumbestelling | `payment_de/cybersource/min_order_total` | ![&#x200B; Commerce-slechts &#x200B;](/help/assets/configuration/cloud-ee.png) |
+| Maximum aantal bestellingen | `payment_de/cybersource/max_order_total` | ![&#x200B; Commerce-slechts &#x200B;](/help/assets/configuration/cloud-ee.png) |
+| Sorteervolgorde | `payment_de/cybersource/sort_order` | ![&#x200B; Commerce-slechts &#x200B;](/help/assets/configuration/cloud-ee.png) |
 | Ingeschakeld | `payment_de/authorizenet_directpost/active` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 | Betalingsactie | `payment_de/authorizenet_directpost/payment_action` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 | Titel | `payment_de/authorizenet_directpost/title` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
@@ -1179,28 +1179,28 @@ Deze opties zijn beschikbaar slechts als u het Verenigd Koninkrijk als [ koopvaa
 | Totaal minimumbestelling | `payment_de/authorizenet_directpost/min_order_total` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 | Maximum aantal bestellingen | `payment_de/authorizenet_directpost/max_order_total` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 | Sorteervolgorde | `payment_de/authorizenet_directpost/sort_order` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
-| Ingeschakeld | `payment_de/worldpay/active` | ![ Commerce-slechts ](/help/assets/configuration/cloud-ee.png) |
-| Titel | `payment_de/worldpay/title` | ![ Commerce-slechts ](/help/assets/configuration/cloud-ee.png) |
-| Contactgegevens bewerken toestaan | `payment_de/worldpay/fix_contact` | ![ Commerce-slechts ](/help/assets/configuration/cloud-ee.png) |
-| Contactgegevens verbergen | `payment_de/worldpay/hide_contact` | ![ Commerce-slechts ](/help/assets/configuration/cloud-ee.png) |
-| Handtekeningvelden | `payment_de/worldpay/signature_fields` | ![ Commerce-slechts ](/help/assets/configuration/cloud-ee.png) |
-| Testmodus | `payment_de/worldpay/sandbox_flag` | ![ Commerce-slechts ](/help/assets/configuration/cloud-ee.png) |
-| Betalingsactie voor test | `payment_de/worldpay/test_action` | ![ Commerce-slechts ](/help/assets/configuration/cloud-ee.png) |
-| Betalingsactie | `payment_de/worldpay/payment_action` | ![ Commerce-slechts ](/help/assets/configuration/cloud-ee.png) |
-| Betaling uit de betrokken landen | `payment_de/worldpay/allowspecific` | ![ Commerce-slechts ](/help/assets/configuration/cloud-ee.png) |
-| Betaling door specifieke landen | `payment_de/worldpay/specificcountry` | ![ Commerce-slechts ](/help/assets/configuration/cloud-ee.png) |
-| Status van bestelling instellen op vermoedelijke fraude voor CVV | `payment_de/worldpay/cvv_fraud_case` | ![ Commerce-slechts ](/help/assets/configuration/cloud-ee.png) |
-| Status van bestelling instellen op vermoedelijke fraude voor Postcode AVS | `payment_de/worldpay/avs_fraud_case` | ![ Commerce-slechts ](/help/assets/configuration/cloud-ee.png) |
-| Sorteervolgorde | `payment_de/worldpay/sort_order` | ![ Commerce-slechts ](/help/assets/configuration/cloud-ee.png) |
-| Ingeschakeld | `payment_de/eway/active` | ![ Commerce-slechts ](/help/assets/configuration/cloud-ee.png) |
-| Verbindingstype | `payment_de/eway/connection_type` | ![ Commerce-slechts ](/help/assets/configuration/cloud-ee.png) |
-| Titel | `payment_de/eway/title` | ![ Commerce-slechts ](/help/assets/configuration/cloud-ee.png) |
-| Betalingsactie | `payment_de/eway/payment_action` | ![ Commerce-slechts ](/help/assets/configuration/cloud-ee.png) |
-| Foutopsporing | `payment_de/eway/debug` | ![ Commerce-slechts ](/help/assets/configuration/cloud-ee.png) |
-| Typen creditcard | `payment_de/eway/cctypes` | ![ Commerce-slechts ](/help/assets/configuration/cloud-ee.png) |
-| Betaling door de kandidaat-lidstaten | `payment_de/eway/allowspecific` | ![ Commerce-slechts ](/help/assets/configuration/cloud-ee.png) |
-| Betaling door specifieke landen | `payment_de/eway/specificcountry` | ![ Commerce-slechts ](/help/assets/configuration/cloud-ee.png) |
-| Sorteervolgorde | `payment_de/eway/sort_order` | ![ Commerce-slechts ](/help/assets/configuration/cloud-ee.png) |
+| Ingeschakeld | `payment_de/worldpay/active` | ![&#x200B; Commerce-slechts &#x200B;](/help/assets/configuration/cloud-ee.png) |
+| Titel | `payment_de/worldpay/title` | ![&#x200B; Commerce-slechts &#x200B;](/help/assets/configuration/cloud-ee.png) |
+| Contactgegevens bewerken toestaan | `payment_de/worldpay/fix_contact` | ![&#x200B; Commerce-slechts &#x200B;](/help/assets/configuration/cloud-ee.png) |
+| Contactgegevens verbergen | `payment_de/worldpay/hide_contact` | ![&#x200B; Commerce-slechts &#x200B;](/help/assets/configuration/cloud-ee.png) |
+| Handtekeningvelden | `payment_de/worldpay/signature_fields` | ![&#x200B; Commerce-slechts &#x200B;](/help/assets/configuration/cloud-ee.png) |
+| Testmodus | `payment_de/worldpay/sandbox_flag` | ![&#x200B; Commerce-slechts &#x200B;](/help/assets/configuration/cloud-ee.png) |
+| Betalingsactie voor test | `payment_de/worldpay/test_action` | ![&#x200B; Commerce-slechts &#x200B;](/help/assets/configuration/cloud-ee.png) |
+| Betalingsactie | `payment_de/worldpay/payment_action` | ![&#x200B; Commerce-slechts &#x200B;](/help/assets/configuration/cloud-ee.png) |
+| Betaling uit de betrokken landen | `payment_de/worldpay/allowspecific` | ![&#x200B; Commerce-slechts &#x200B;](/help/assets/configuration/cloud-ee.png) |
+| Betaling door specifieke landen | `payment_de/worldpay/specificcountry` | ![&#x200B; Commerce-slechts &#x200B;](/help/assets/configuration/cloud-ee.png) |
+| Status van bestelling instellen op vermoedelijke fraude voor CVV | `payment_de/worldpay/cvv_fraud_case` | ![&#x200B; Commerce-slechts &#x200B;](/help/assets/configuration/cloud-ee.png) |
+| Status van bestelling instellen op vermoedelijke fraude voor Postcode AVS | `payment_de/worldpay/avs_fraud_case` | ![&#x200B; Commerce-slechts &#x200B;](/help/assets/configuration/cloud-ee.png) |
+| Sorteervolgorde | `payment_de/worldpay/sort_order` | ![&#x200B; Commerce-slechts &#x200B;](/help/assets/configuration/cloud-ee.png) |
+| Ingeschakeld | `payment_de/eway/active` | ![&#x200B; Commerce-slechts &#x200B;](/help/assets/configuration/cloud-ee.png) |
+| Verbindingstype | `payment_de/eway/connection_type` | ![&#x200B; Commerce-slechts &#x200B;](/help/assets/configuration/cloud-ee.png) |
+| Titel | `payment_de/eway/title` | ![&#x200B; Commerce-slechts &#x200B;](/help/assets/configuration/cloud-ee.png) |
+| Betalingsactie | `payment_de/eway/payment_action` | ![&#x200B; Commerce-slechts &#x200B;](/help/assets/configuration/cloud-ee.png) |
+| Foutopsporing | `payment_de/eway/debug` | ![&#x200B; Commerce-slechts &#x200B;](/help/assets/configuration/cloud-ee.png) |
+| Typen creditcard | `payment_de/eway/cctypes` | ![&#x200B; Commerce-slechts &#x200B;](/help/assets/configuration/cloud-ee.png) |
+| Betaling door de kandidaat-lidstaten | `payment_de/eway/allowspecific` | ![&#x200B; Commerce-slechts &#x200B;](/help/assets/configuration/cloud-ee.png) |
+| Betaling door specifieke landen | `payment_de/eway/specificcountry` | ![&#x200B; Commerce-slechts &#x200B;](/help/assets/configuration/cloud-ee.png) |
+| Sorteervolgorde | `payment_de/eway/sort_order` | ![&#x200B; Commerce-slechts &#x200B;](/help/assets/configuration/cloud-ee.png) |
 | Gepland ophalen | `payment_gb/paypal_alternative_payment_methods/express_checkout_gb/settings_ec/settings_ec_advanced/express_checkout_settlement_report/heading_schedule` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 | PayPal Merchant Pages Style | `payment_gb/paypal_alternative_payment_methods/express_checkout_gb/settings_ec/settings_ec_advanced/express_checkout_frontend/paypal_pages` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 | Gepland ophalen | `payment_gb/paypal_group_all_in_one/payments_pro_hosted_solution_with_express_checkout/pphs_settings/pphs_settings_advanced/pphs_settlement_report/heading_schedule` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
@@ -1249,17 +1249,17 @@ Deze opties zijn beschikbaar slechts als u het Verenigd Koninkrijk als [ koopvaa
 | Totaal minimumbestelling | `payment_gb/purchaseorder/min_order_total` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 | Maximum aantal bestellingen | `payment_gb/purchaseorder/max_order_total` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 | Sorteervolgorde | `payment_gb/purchaseorder/sort_order` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
-| Ingeschakeld | `payment_gb/cybersource/active` | ![ Commerce-slechts ](/help/assets/configuration/cloud-ee.png) |
-| Betalingsactie | `payment_gb/cybersource/payment_action` | ![ Commerce-slechts ](/help/assets/configuration/cloud-ee.png) |
-| Titel | `payment_gb/cybersource/title` | ![ Commerce-slechts ](/help/assets/configuration/cloud-ee.png) |
-| Status van nieuwe bestelling | `payment_gb/cybersource/order_status` | ![ Commerce-slechts ](/help/assets/configuration/cloud-ee.png) |
-| Foutopsporing | `payment_gb/cybersource/debug` | ![ Commerce-slechts ](/help/assets/configuration/cloud-ee.png) |
-| Typen creditcard | `payment_gb/cybersource/cctypes` | ![ Commerce-slechts ](/help/assets/configuration/cloud-ee.png) |
-| Betaling door de kandidaat-lidstaten | `payment_gb/cybersource/allowspecific` | ![ Commerce-slechts ](/help/assets/configuration/cloud-ee.png) |
-| Betaling door specifieke landen | `payment_gb/cybersource/specificcountry` | ![ Commerce-slechts ](/help/assets/configuration/cloud-ee.png) |
-| Totaal minimumbestelling | `payment_gb/cybersource/min_order_total` | ![ Commerce-slechts ](/help/assets/configuration/cloud-ee.png) |
-| Maximum aantal bestellingen | `payment_gb/cybersource/max_order_total` | ![ Commerce-slechts ](/help/assets/configuration/cloud-ee.png) |
-| Sorteervolgorde | `payment_gb/cybersource/sort_order` | ![ Commerce-slechts ](/help/assets/configuration/cloud-ee.png) |
+| Ingeschakeld | `payment_gb/cybersource/active` | ![&#x200B; Commerce-slechts &#x200B;](/help/assets/configuration/cloud-ee.png) |
+| Betalingsactie | `payment_gb/cybersource/payment_action` | ![&#x200B; Commerce-slechts &#x200B;](/help/assets/configuration/cloud-ee.png) |
+| Titel | `payment_gb/cybersource/title` | ![&#x200B; Commerce-slechts &#x200B;](/help/assets/configuration/cloud-ee.png) |
+| Status van nieuwe bestelling | `payment_gb/cybersource/order_status` | ![&#x200B; Commerce-slechts &#x200B;](/help/assets/configuration/cloud-ee.png) |
+| Foutopsporing | `payment_gb/cybersource/debug` | ![&#x200B; Commerce-slechts &#x200B;](/help/assets/configuration/cloud-ee.png) |
+| Typen creditcard | `payment_gb/cybersource/cctypes` | ![&#x200B; Commerce-slechts &#x200B;](/help/assets/configuration/cloud-ee.png) |
+| Betaling door de kandidaat-lidstaten | `payment_gb/cybersource/allowspecific` | ![&#x200B; Commerce-slechts &#x200B;](/help/assets/configuration/cloud-ee.png) |
+| Betaling door specifieke landen | `payment_gb/cybersource/specificcountry` | ![&#x200B; Commerce-slechts &#x200B;](/help/assets/configuration/cloud-ee.png) |
+| Totaal minimumbestelling | `payment_gb/cybersource/min_order_total` | ![&#x200B; Commerce-slechts &#x200B;](/help/assets/configuration/cloud-ee.png) |
+| Maximum aantal bestellingen | `payment_gb/cybersource/max_order_total` | ![&#x200B; Commerce-slechts &#x200B;](/help/assets/configuration/cloud-ee.png) |
+| Sorteervolgorde | `payment_gb/cybersource/sort_order` | ![&#x200B; Commerce-slechts &#x200B;](/help/assets/configuration/cloud-ee.png) |
 | Ingeschakeld | `payment_gb/authorizenet_directpost/active` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 | Betalingsactie | `payment_gb/authorizenet_directpost/payment_action` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 | Titel | `payment_gb/authorizenet_directpost/title` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
@@ -1273,29 +1273,29 @@ Deze opties zijn beschikbaar slechts als u het Verenigd Koninkrijk als [ koopvaa
 | Totaal minimumbestelling | `payment_gb/authorizenet_directpost/min_order_total` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 | Maximum aantal bestellingen | `payment_gb/authorizenet_directpost/max_order_total` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 | Sorteervolgorde | `payment_gb/authorizenet_directpost/sort_order` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
-| Ingeschakeld | `payment_gb/worldpay/active` | ![ Commerce-slechts ](/help/assets/configuration/cloud-ee.png) |
-| Titel | `payment_gb/worldpay/title` | ![ Commerce-slechts ](/help/assets/configuration/cloud-ee.png) |
-| MD5 Secret for Transactions | `payment_gb/worldpay/md5_secret` | ![ Commerce-slechts ](/help/assets/configuration/cloud-ee.png) |
-| Contactgegevens bewerken toestaan | `payment_gb/worldpay/fix_contact` | ![ Commerce-slechts ](/help/assets/configuration/cloud-ee.png) |
-| Contactgegevens verbergen | `payment_gb/worldpay/hide_contact` | ![ Commerce-slechts ](/help/assets/configuration/cloud-ee.png) |
-| Handtekeningvelden | `payment_gb/worldpay/signature_fields` | ![ Commerce-slechts ](/help/assets/configuration/cloud-ee.png) |
-| Foutopsporing | `payment_gb/worldpay/debug` | ![ Commerce-slechts ](/help/assets/configuration/cloud-ee.png) |
-| Betalingsactie voor test | `payment_gb/worldpay/test_action` | ![ Commerce-slechts ](/help/assets/configuration/cloud-ee.png) |
-| Betalingsactie | `payment_gb/worldpay/payment_action` | ![ Commerce-slechts ](/help/assets/configuration/cloud-ee.png) |
-| Betaling uit de betrokken landen | `payment_gb/worldpay/allowspecific` | ![ Commerce-slechts ](/help/assets/configuration/cloud-ee.png) |
-| Betaling door specifieke landen | `payment_gb/worldpay/specificcountry` | ![ Commerce-slechts ](/help/assets/configuration/cloud-ee.png) |
-| Status van bestelling instellen op vermoedelijke fraude voor CVV | `payment_gb/worldpay/cvv_fraud_case` | ![ Commerce-slechts ](/help/assets/configuration/cloud-ee.png) |
-| Status van bestelling instellen op vermoedelijke fraude voor Postcode AVS | `payment_gb/worldpay/avs_fraud_case` | ![ Commerce-slechts ](/help/assets/configuration/cloud-ee.png) |
-| Sorteervolgorde | `payment_gb/worldpay/sort_order` | ![ Commerce-slechts ](/help/assets/configuration/cloud-ee.png) |
-| Ingeschakeld | `payment_gb/eway/active` | ![ Commerce-slechts ](/help/assets/configuration/cloud-ee.png) |
-| Verbindingstype | `payment_gb/eway/connection_type` | ![ Commerce-slechts ](/help/assets/configuration/cloud-ee.png) |
-| Titel | `payment_gb/eway/title` | ![ Commerce-slechts ](/help/assets/configuration/cloud-ee.png) |
-| Betalingsactie | `payment_gb/eway/payment_action` | ![ Commerce-slechts ](/help/assets/configuration/cloud-ee.png) |
-| Foutopsporing | `payment_gb/eway/debug` | ![ Commerce-slechts ](/help/assets/configuration/cloud-ee.png) |
-| Typen creditcard | `payment_gb/eway/cctypes` | ![ Commerce-slechts ](/help/assets/configuration/cloud-ee.png) |
-| Betaling door de kandidaat-lidstaten | `payment_gb/eway/allowspecific` | ![ Commerce-slechts ](/help/assets/configuration/cloud-ee.png) |
-| Betaling door specifieke landen | `payment_gb/eway/specificcountry` | ![ Commerce-slechts ](/help/assets/configuration/cloud-ee.png) |
-| Sorteervolgorde | `payment_gb/eway/sort_order` | ![ Commerce-slechts ](/help/assets/configuration/cloud-ee.png) |
+| Ingeschakeld | `payment_gb/worldpay/active` | ![&#x200B; Commerce-slechts &#x200B;](/help/assets/configuration/cloud-ee.png) |
+| Titel | `payment_gb/worldpay/title` | ![&#x200B; Commerce-slechts &#x200B;](/help/assets/configuration/cloud-ee.png) |
+| MD5 Secret for Transactions | `payment_gb/worldpay/md5_secret` | ![&#x200B; Commerce-slechts &#x200B;](/help/assets/configuration/cloud-ee.png) |
+| Contactgegevens bewerken toestaan | `payment_gb/worldpay/fix_contact` | ![&#x200B; Commerce-slechts &#x200B;](/help/assets/configuration/cloud-ee.png) |
+| Contactgegevens verbergen | `payment_gb/worldpay/hide_contact` | ![&#x200B; Commerce-slechts &#x200B;](/help/assets/configuration/cloud-ee.png) |
+| Handtekeningvelden | `payment_gb/worldpay/signature_fields` | ![&#x200B; Commerce-slechts &#x200B;](/help/assets/configuration/cloud-ee.png) |
+| Foutopsporing | `payment_gb/worldpay/debug` | ![&#x200B; Commerce-slechts &#x200B;](/help/assets/configuration/cloud-ee.png) |
+| Betalingsactie voor test | `payment_gb/worldpay/test_action` | ![&#x200B; Commerce-slechts &#x200B;](/help/assets/configuration/cloud-ee.png) |
+| Betalingsactie | `payment_gb/worldpay/payment_action` | ![&#x200B; Commerce-slechts &#x200B;](/help/assets/configuration/cloud-ee.png) |
+| Betaling uit de betrokken landen | `payment_gb/worldpay/allowspecific` | ![&#x200B; Commerce-slechts &#x200B;](/help/assets/configuration/cloud-ee.png) |
+| Betaling door specifieke landen | `payment_gb/worldpay/specificcountry` | ![&#x200B; Commerce-slechts &#x200B;](/help/assets/configuration/cloud-ee.png) |
+| Status van bestelling instellen op vermoedelijke fraude voor CVV | `payment_gb/worldpay/cvv_fraud_case` | ![&#x200B; Commerce-slechts &#x200B;](/help/assets/configuration/cloud-ee.png) |
+| Status van bestelling instellen op vermoedelijke fraude voor Postcode AVS | `payment_gb/worldpay/avs_fraud_case` | ![&#x200B; Commerce-slechts &#x200B;](/help/assets/configuration/cloud-ee.png) |
+| Sorteervolgorde | `payment_gb/worldpay/sort_order` | ![&#x200B; Commerce-slechts &#x200B;](/help/assets/configuration/cloud-ee.png) |
+| Ingeschakeld | `payment_gb/eway/active` | ![&#x200B; Commerce-slechts &#x200B;](/help/assets/configuration/cloud-ee.png) |
+| Verbindingstype | `payment_gb/eway/connection_type` | ![&#x200B; Commerce-slechts &#x200B;](/help/assets/configuration/cloud-ee.png) |
+| Titel | `payment_gb/eway/title` | ![&#x200B; Commerce-slechts &#x200B;](/help/assets/configuration/cloud-ee.png) |
+| Betalingsactie | `payment_gb/eway/payment_action` | ![&#x200B; Commerce-slechts &#x200B;](/help/assets/configuration/cloud-ee.png) |
+| Foutopsporing | `payment_gb/eway/debug` | ![&#x200B; Commerce-slechts &#x200B;](/help/assets/configuration/cloud-ee.png) |
+| Typen creditcard | `payment_gb/eway/cctypes` | ![&#x200B; Commerce-slechts &#x200B;](/help/assets/configuration/cloud-ee.png) |
+| Betaling door de kandidaat-lidstaten | `payment_gb/eway/allowspecific` | ![&#x200B; Commerce-slechts &#x200B;](/help/assets/configuration/cloud-ee.png) |
+| Betaling door specifieke landen | `payment_gb/eway/specificcountry` | ![&#x200B; Commerce-slechts &#x200B;](/help/assets/configuration/cloud-ee.png) |
+| Sorteervolgorde | `payment_gb/eway/sort_order` | ![&#x200B; Commerce-slechts &#x200B;](/help/assets/configuration/cloud-ee.png) |
 | Gepland ophalen | `payment_us/paypal_alternative_payment_methods/express_checkout_us/settings_ec/settings_ec_advanced/express_checkout_settlement_report/heading_schedule` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 | PayPal Merchant Pages Style | `payment_us/paypal_alternative_payment_methods/express_checkout_us/settings_ec/settings_ec_advanced/express_checkout_frontend/paypal_pages` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 | Gepland ophalen | `payment_us/paypal_group_all_in_one/payflow_advanced/settings_payments_advanced/settings_payments_advanced_advanced/settlement_report/heading_schedule` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
@@ -1368,38 +1368,38 @@ Deze opties zijn beschikbaar slechts als u het Verenigd Koninkrijk als [ koopvaa
 | Totaal minimumbestelling | `payment_us/authorizenet_directpost/min_order_total` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 | Maximum aantal bestellingen | `payment_us/authorizenet_directpost/max_order_total` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 | Sorteervolgorde | `payment_us/authorizenet_directpost/sort_order` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
-| Ingeschakeld | `payment_us/cybersource/active` | ![ Commerce-slechts ](/help/assets/configuration/cloud-ee.png) |
-| Betalingsactie | `payment_us/cybersource/payment_action` | ![ Commerce-slechts ](/help/assets/configuration/cloud-ee.png) |
-| Titel | `payment_us/cybersource/title` | ![ Commerce-slechts ](/help/assets/configuration/cloud-ee.png) |
-| Status van nieuwe bestelling | `payment_us/cybersource/order_status` | ![ Commerce-slechts ](/help/assets/configuration/cloud-ee.png) |
-| Foutopsporing | `payment_us/cybersource/debug` | ![ Commerce-slechts ](/help/assets/configuration/cloud-ee.png) |
-| Typen creditcard | `payment_us/cybersource/cctypes` | ![ Commerce-slechts ](/help/assets/configuration/cloud-ee.png) |
-| Betaling door de kandidaat-lidstaten | `payment_us/cybersource/allowspecific` | ![ Commerce-slechts ](/help/assets/configuration/cloud-ee.png) |
-| Betaling door specifieke landen | `payment_us/cybersource/specificcountry` | ![ Commerce-slechts ](/help/assets/configuration/cloud-ee.png) |
-| Totaal minimumbestelling | `payment_us/cybersource/min_order_total` | ![ Commerce-slechts ](/help/assets/configuration/cloud-ee.png) |
-| Maximum aantal bestellingen | `payment_us/cybersource/max_order_total` | ![ Commerce-slechts ](/help/assets/configuration/cloud-ee.png) |
-| Sorteervolgorde | `payment_us/cybersource/sort_order` | ![ Commerce-slechts ](/help/assets/configuration/cloud-ee.png) |
-| Ingeschakeld | `payment_us/worldpay/active` | ![ Commerce-slechts ](/help/assets/configuration/cloud-ee.png) |
-| Titel | `payment_us/worldpay/title` | ![ Commerce-slechts ](/help/assets/configuration/cloud-ee.png) |
-| Contactgegevens bewerken toestaan | `payment_us/worldpay/fix_contact` | ![ Commerce-slechts ](/help/assets/configuration/cloud-ee.png) |
-| Contactgegevens verbergen | `payment_us/worldpay/hide_contact` | ![ Commerce-slechts ](/help/assets/configuration/cloud-ee.png) |
-| Handtekeningvelden | `payment_us/worldpay/signature_fields` | ![ Commerce-slechts ](/help/assets/configuration/cloud-ee.png) |
-| Foutopsporing | `payment_us/worldpay/debug` | ![ Commerce-slechts ](/help/assets/configuration/cloud-ee.png) |
-| Betalingsactie voor test | `payment_us/worldpay/test_action` | ![ Commerce-slechts ](/help/assets/configuration/cloud-ee.png) |
-| Betalingsactie | `payment_us/worldpay/payment_action` | ![ Commerce-slechts ](/help/assets/configuration/cloud-ee.png) |
-| Betaling uit de betrokken landen | `payment_us/worldpay/allowspecific` | ![ Commerce-slechts ](/help/assets/configuration/cloud-ee.png) |
-| Betaling door specifieke landen | `payment_us/worldpay/specificcountry` | ![ Commerce-slechts ](/help/assets/configuration/cloud-ee.png) |
-| Status van bestelling instellen op vermoedelijke fraude voor CVV | `payment_us/worldpay/cvv_fraud_case` | ![ Commerce-slechts ](/help/assets/configuration/cloud-ee.png) |
-| Status van bestelling instellen op vermoedelijke fraude voor Postcode AVS | `payment_us/worldpay/avs_fraud_case` | ![ Commerce-slechts ](/help/assets/configuration/cloud-ee.png) |
-| Sorteervolgorde | `payment_us/worldpay/sort_order` | ![ Commerce-slechts ](/help/assets/configuration/cloud-ee.png) |
-| Ingeschakeld | `payment_us/eway/active` | ![ Commerce-slechts ](/help/assets/configuration/cloud-ee.png) |
-| Verbindingstype | `payment_us/eway/connection_type` | ![ Commerce-slechts ](/help/assets/configuration/cloud-ee.png) |
-| Titel | `payment_us/eway/title` | ![ Commerce-slechts ](/help/assets/configuration/cloud-ee.png) |
-| Betalingsactie | `payment_us/eway/payment_action` | ![ Commerce-slechts ](/help/assets/configuration/cloud-ee.png) |
-| Foutopsporing | `payment_us/eway/debug` | ![ Commerce-slechts ](/help/assets/configuration/cloud-ee.png) |
-| Typen creditcard | `payment_us/eway/cctypes` | ![ Commerce-slechts ](/help/assets/configuration/cloud-ee.png) |
-| Betaling door de kandidaat-lidstaten | `payment_us/eway/allowspecific` | ![ Commerce-slechts ](/help/assets/configuration/cloud-ee.png) |
-| Betaling door specifieke landen | `payment_us/eway/specificcountry` | ![ Commerce-slechts ](/help/assets/configuration/cloud-ee.png) |
+| Ingeschakeld | `payment_us/cybersource/active` | ![&#x200B; Commerce-slechts &#x200B;](/help/assets/configuration/cloud-ee.png) |
+| Betalingsactie | `payment_us/cybersource/payment_action` | ![&#x200B; Commerce-slechts &#x200B;](/help/assets/configuration/cloud-ee.png) |
+| Titel | `payment_us/cybersource/title` | ![&#x200B; Commerce-slechts &#x200B;](/help/assets/configuration/cloud-ee.png) |
+| Status van nieuwe bestelling | `payment_us/cybersource/order_status` | ![&#x200B; Commerce-slechts &#x200B;](/help/assets/configuration/cloud-ee.png) |
+| Foutopsporing | `payment_us/cybersource/debug` | ![&#x200B; Commerce-slechts &#x200B;](/help/assets/configuration/cloud-ee.png) |
+| Typen creditcard | `payment_us/cybersource/cctypes` | ![&#x200B; Commerce-slechts &#x200B;](/help/assets/configuration/cloud-ee.png) |
+| Betaling door de kandidaat-lidstaten | `payment_us/cybersource/allowspecific` | ![&#x200B; Commerce-slechts &#x200B;](/help/assets/configuration/cloud-ee.png) |
+| Betaling door specifieke landen | `payment_us/cybersource/specificcountry` | ![&#x200B; Commerce-slechts &#x200B;](/help/assets/configuration/cloud-ee.png) |
+| Totaal minimumbestelling | `payment_us/cybersource/min_order_total` | ![&#x200B; Commerce-slechts &#x200B;](/help/assets/configuration/cloud-ee.png) |
+| Maximum aantal bestellingen | `payment_us/cybersource/max_order_total` | ![&#x200B; Commerce-slechts &#x200B;](/help/assets/configuration/cloud-ee.png) |
+| Sorteervolgorde | `payment_us/cybersource/sort_order` | ![&#x200B; Commerce-slechts &#x200B;](/help/assets/configuration/cloud-ee.png) |
+| Ingeschakeld | `payment_us/worldpay/active` | ![&#x200B; Commerce-slechts &#x200B;](/help/assets/configuration/cloud-ee.png) |
+| Titel | `payment_us/worldpay/title` | ![&#x200B; Commerce-slechts &#x200B;](/help/assets/configuration/cloud-ee.png) |
+| Contactgegevens bewerken toestaan | `payment_us/worldpay/fix_contact` | ![&#x200B; Commerce-slechts &#x200B;](/help/assets/configuration/cloud-ee.png) |
+| Contactgegevens verbergen | `payment_us/worldpay/hide_contact` | ![&#x200B; Commerce-slechts &#x200B;](/help/assets/configuration/cloud-ee.png) |
+| Handtekeningvelden | `payment_us/worldpay/signature_fields` | ![&#x200B; Commerce-slechts &#x200B;](/help/assets/configuration/cloud-ee.png) |
+| Foutopsporing | `payment_us/worldpay/debug` | ![&#x200B; Commerce-slechts &#x200B;](/help/assets/configuration/cloud-ee.png) |
+| Betalingsactie voor test | `payment_us/worldpay/test_action` | ![&#x200B; Commerce-slechts &#x200B;](/help/assets/configuration/cloud-ee.png) |
+| Betalingsactie | `payment_us/worldpay/payment_action` | ![&#x200B; Commerce-slechts &#x200B;](/help/assets/configuration/cloud-ee.png) |
+| Betaling uit de betrokken landen | `payment_us/worldpay/allowspecific` | ![&#x200B; Commerce-slechts &#x200B;](/help/assets/configuration/cloud-ee.png) |
+| Betaling door specifieke landen | `payment_us/worldpay/specificcountry` | ![&#x200B; Commerce-slechts &#x200B;](/help/assets/configuration/cloud-ee.png) |
+| Status van bestelling instellen op vermoedelijke fraude voor CVV | `payment_us/worldpay/cvv_fraud_case` | ![&#x200B; Commerce-slechts &#x200B;](/help/assets/configuration/cloud-ee.png) |
+| Status van bestelling instellen op vermoedelijke fraude voor Postcode AVS | `payment_us/worldpay/avs_fraud_case` | ![&#x200B; Commerce-slechts &#x200B;](/help/assets/configuration/cloud-ee.png) |
+| Sorteervolgorde | `payment_us/worldpay/sort_order` | ![&#x200B; Commerce-slechts &#x200B;](/help/assets/configuration/cloud-ee.png) |
+| Ingeschakeld | `payment_us/eway/active` | ![&#x200B; Commerce-slechts &#x200B;](/help/assets/configuration/cloud-ee.png) |
+| Verbindingstype | `payment_us/eway/connection_type` | ![&#x200B; Commerce-slechts &#x200B;](/help/assets/configuration/cloud-ee.png) |
+| Titel | `payment_us/eway/title` | ![&#x200B; Commerce-slechts &#x200B;](/help/assets/configuration/cloud-ee.png) |
+| Betalingsactie | `payment_us/eway/payment_action` | ![&#x200B; Commerce-slechts &#x200B;](/help/assets/configuration/cloud-ee.png) |
+| Foutopsporing | `payment_us/eway/debug` | ![&#x200B; Commerce-slechts &#x200B;](/help/assets/configuration/cloud-ee.png) |
+| Typen creditcard | `payment_us/eway/cctypes` | ![&#x200B; Commerce-slechts &#x200B;](/help/assets/configuration/cloud-ee.png) |
+| Betaling door de kandidaat-lidstaten | `payment_us/eway/allowspecific` | ![&#x200B; Commerce-slechts &#x200B;](/help/assets/configuration/cloud-ee.png) |
+| Betaling door specifieke landen | `payment_us/eway/specificcountry` | ![&#x200B; Commerce-slechts &#x200B;](/help/assets/configuration/cloud-ee.png) |
 | Sorteervolgorde | `payment_us/eway/sort_order` | |
 
 {style="table-layout:auto"}

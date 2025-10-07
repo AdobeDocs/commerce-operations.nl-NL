@@ -16,19 +16,19 @@ Met [!DNL Commerce] kunt u alternatieven configureren voor het in cache plaatsen
 
 - Stel de volgende cachemechanismen in de [!DNL Commerce] -configuratie in:
 
-   - [ Gegevensbestand ](https://developer.adobe.com/commerce/php/development/cache/partial/database-caching/)
+   - [&#x200B; Gegevensbestand &#x200B;](https://developer.adobe.com/commerce/php/development/cache/partial/database-caching/)
    - [Redis](config-redis.md)
    - Bestandssysteem (standaard): Er is geen configuratie nodig om standaardcaching van het bestandssysteem te gebruiken.
 
-- Opstelling de [ Vlek ](config-varnish.md) zonder de [!DNL Commerce] configuratie te wijzigen.
+- Opstelling de [&#x200B; Vlek &#x200B;](config-varnish.md) zonder de [!DNL Commerce] configuratie te wijzigen.
 
 ## Caching terminologie
 
 [!DNL Commerce] gebruikt de volgende terminologie in cache:
 
-- **Frontend** - Gelijkaardig aan een interface of een gateway aan geheim voorgeheugenopslag, die door [ Magento\Framework\Cache\Frontend ](https://github.com/magento/magento2/tree/2.4/lib/internal/Magento/Framework/Cache/Frontend) wordt uitgevoerd.
-- **types van Geheime voorgeheugen** - kan één van de types zijn die van [!DNL Commerce] worden voorzien of u kunt [ uw eigen ](https://developer.adobe.com/commerce/php/development/cache/partial/cache-type/) creëren.
-- **Achtergrond** - specificeert details over [ geheim voorgeheugenopslag ](https://framework.zend.com/manual/1.12/en/zend.cache.backends.html), die door [ Magento\Framework\Cache\Backend ](https://github.com/magento/magento2/tree/2.4/lib/internal/Magento/Framework/Cache/Backend) wordt uitgevoerd
+- **Frontend** - Gelijkaardig aan een interface of een gateway aan geheim voorgeheugenopslag, die door [&#x200B; Magento\Framework\Cache\Frontend &#x200B;](https://github.com/magento/magento2/tree/2.4/lib/internal/Magento/Framework/Cache/Frontend) wordt uitgevoerd.
+- **types van Geheime voorgeheugen** - kan één van de types zijn die van [!DNL Commerce] worden voorzien of u kunt [&#x200B; uw eigen &#x200B;](https://developer.adobe.com/commerce/php/development/cache/partial/cache-type/) creëren.
+- **Achtergrond** - specificeert details over [&#x200B; geheim voorgeheugenopslag &#x200B;](https://framework.zend.com/manual/1.12/en/zend.cache.backends.html), die door [&#x200B; Magento\Framework\Cache\Backend &#x200B;](https://github.com/magento/magento2/tree/2.4/lib/internal/Magento/Framework/Cache/Backend) wordt uitgevoerd
 - **dubbel-vlakke achtergrond** - slaat geheim voorgeheugenverslagen in twee achtergronden op: snellere en langzamere.
 
   >[!INFO]
@@ -47,4 +47,4 @@ Met [!DNL Commerce] kunt u alternatieven configureren voor het in cache plaatsen
 
 >[!TIP]
 >
->Voor vernis hoeft de configuratie van [!DNL Commerce] niet te worden gewijzigd. Zie [ vormen en gebruiken Vierkant ](config-varnish.md).
+>Voor vernis hoeft de configuratie van [!DNL Commerce] niet te worden gewijzigd. Zie [&#x200B; vormen en gebruiken Vierkant &#x200B;](config-varnish.md).

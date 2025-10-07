@@ -13,11 +13,11 @@ ht-degree: 0%
 
 Dit onderwerp bespreekt hoe te om een milieu veranderlijke naam af te leiden die een configuratiepad kent. U kunt de configuratie-instellingen van Adobe Commerce overschrijven met behulp van omgevingsvariabelen. U kunt bijvoorbeeld de waarde van de live URL van een betalingsprocessor overschrijven op uw productiesysteem.
 
-U kunt de waarde van _met voeten treden om het even welke_ configuratie die milieuvariabelen plaatst; nochtans, adviseert Adobe u verenigbare montages gebruikend het gedeelde configuratiedossier, `config.php`, en het systeem-specifieke configuratiedossier, `env.php`, zoals besproken in [ het algemene overzicht van de Plaatsing ](../deployment/overview.md) handhaaft.
+U kunt de waarde van _met voeten treden om het even welke_ configuratie die milieuvariabelen plaatst; nochtans, adviseert Adobe u verenigbare montages gebruikend het gedeelde configuratiedossier, `config.php`, en het systeem-specifieke configuratiedossier, `env.php`, zoals besproken in [&#x200B; het algemene overzicht van de Plaatsing &#x200B;](../deployment/overview.md) handhaaft.
 
 >[!TIP]
 >
->Controle uit [ vormt milieu&#39;s ](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure/env/stage/variables-intro.html) onderwerp in _Commerce op de gids van de Infrastructuur van de Wolk_.
+>Controle uit [&#x200B; vormt milieu&#39;s &#x200B;](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure/env/stage/variables-intro.html) onderwerp in _Commerce op de gids van de Infrastructuur van de Wolk_.
 
 ## Omgevingsvariabelen
 
@@ -25,12 +25,12 @@ Een omgevingsvariabele naam bestaat uit het bereik gevolgd door het configuratie
 
 U kunt variabelen voor om het even welk van het volgende gebruiken:
 
-- [ Gevoelige waarden ](config-reference-sens.md) moeten worden geplaatst gebruikend of omgevingsvariabelen of het [`magento config:sensitive:set`](../cli/set-configuration-values.md) bevel.
+- [&#x200B; Gevoelige waarden &#x200B;](config-reference-sens.md) moeten worden geplaatst gebruikend of omgevingsvariabelen of het [`magento config:sensitive:set`](../cli/set-configuration-values.md) bevel.
 - Systeemspecifieke waarden moeten worden ingesteld met:
 
    - Omgevingsvariabelen
    - De opdracht [`magento config:set`](../cli/set-configuration-values.md)
-   - De Admin die door het [`magento app:config:dump` bevel ](../cli/export-configuration.md) wordt gevolgd
+   - De Admin die door het [`magento app:config:dump` bevel &#x200B;](../cli/export-configuration.md) wordt gevolgd
 
 De wegen van de configuratie kunnen in worden gevonden:
 
@@ -62,10 +62,10 @@ De algemene indeling van namen van systeeminstellingenvariabelen is als volgt:
   Zie voor meer informatie over het bereik:
 
    - [Stap 1: Zoek de waarde van het bereik van de website- of winkelweergave](#step-1-find-the-website-or-store-view-scope-value)
-   - [ het onderwerp van de Gids van de Gebruiker van Commerce op werkingsgebied ](https://experienceleague.adobe.com/en/docs/commerce-admin/start/setup/websites-stores-views#scope-settings)
-   - [ Snelle verwijzing van het Bereik ](https://experienceleague.adobe.com/en/docs/commerce-admin/config/scope-change#scope-quick-reference)
+   - [&#x200B; het onderwerp van de Gids van de Gebruiker van Commerce op werkingsgebied &#x200B;](https://experienceleague.adobe.com/en/docs/commerce-admin/start/setup/websites-stores-views#scope-settings)
+   - [&#x200B; Snelle verwijzing van het Bereik &#x200B;](https://experienceleague.adobe.com/en/docs/commerce-admin/config/scope-change#scope-quick-reference)
 
-`<SYSTEM__VARIABLE__NAME>` is het configuratiepad met dubbele onderstrepingstekens die worden vervangen door `/` . Voor meer informatie, zie [ Stap 2: Plaats systeemvariabelen ](#step-2-set-global-website-or-store-view-variables).
+`<SYSTEM__VARIABLE__NAME>` is het configuratiepad met dubbele onderstrepingstekens die worden vervangen door `/` . Voor meer informatie, zie [&#x200B; Stap 2: Plaats systeemvariabelen &#x200B;](#step-2-set-global-website-or-store-view-variables).
 
 ### Variabele-indeling
 
@@ -84,7 +84,7 @@ Een volledige lijst met configuratiepaden vindt u in:
 
 ## Stap 1: Zoek de waarde van het bereik van de website- of winkelweergave
 
-Deze sectie bespreekt hoe u de waarden van de systeemconfiguratie per _werkingsgebied_ (opslagmening of website) kunt vinden en plaatsen. Om globale werkingsgebiedvariabelen te plaatsen, zie [ Stap 2: Plaats globaal, website, of de variabelen van de opslagmening ](#step-2-set-global-website-or-store-view-variables).
+Deze sectie bespreekt hoe u de waarden van de systeemconfiguratie per _werkingsgebied_ (opslagmening of website) kunt vinden en plaatsen. Om globale werkingsgebiedvariabelen te plaatsen, zie [&#x200B; Stap 2: Plaats globaal, website, of de variabelen van de opslagmening &#x200B;](#step-2-set-global-website-or-store-view-variables).
 
 Bereik waarden zijn afkomstig uit de tabellen `store` , `store_group` en `store_website` .
 
@@ -106,7 +106,7 @@ De tabel lezen:
    - De volledige variabelenaam is altijd ALL CAPS
    - Een variabelenaam beginnen met `CONFIG__` (twee onderstrepingstekens noteren)
    - U kunt het gedeelte `<STORE_VIEW_CODE>` of `<WEBSITE_CODE>` van een variabelenaam vinden in de beheerdersdatabase of in de Commerce-database, zoals aangegeven in de volgende secties.
-   - U kunt `<SYSTEM__VARIABLE__NAME>` vinden zoals die in [ Stap 2 wordt besproken: Plaats globaal, website, of de variabelen van de opslagmening ](#step-2-set-global-website-or-store-view-variables).
+   - U kunt `<SYSTEM__VARIABLE__NAME>` vinden zoals die in [&#x200B; Stap 2 wordt besproken: Plaats globaal, website, of de variabelen van de opslagmening &#x200B;](#step-2-set-global-website-or-store-view-variables).
 
 ### Een website of weergavebereik van de winkel zoeken in Admin
 
@@ -125,10 +125,10 @@ Als u bijvoorbeeld een website wilt zoeken of een waarde voor het weergavebereik
 
    Het rechterdeelvenster wordt op vergelijkbare wijze weergegeven als het volgende.
 
-   ![ vind een websitecode ](../../assets/configuration/website-code.png)
+   ![&#x200B; vind een websitecode &#x200B;](../../assets/configuration/website-code.png)
 
 1. De bereiknaam wordt weergegeven in het veld **[!UICONTROL Code]** .
-1. Ga met [ Stap 2 verder: Plaats globale, website, of de variabelen van de opslagmening ](#step-2-set-global-website-or-store-view-variables).
+1. Ga met [&#x200B; Stap 2 verder: Plaats globale, website, of de variabelen van de opslagmening &#x200B;](#step-2-set-global-website-or-store-view-variables).
 
 ### Een website zoeken of weergavebereik in de database opslaan
 
@@ -183,14 +183,14 @@ In deze sectie wordt besproken hoe systeemvariabelen moeten worden ingesteld.
 
 - Als u waarden wilt instellen voor het algemene bereik (dat wil zeggen alle websites, winkels en winkelweergaven), start u de naam van de variabele met `CONFIG__DEFAULT__` .
 
-- Om een waarde voor een bepaalde opslagmening of een website te plaatsen, begin de veranderlijke naam zoals die in [ Stap 1 wordt besproken: Vind de werkingsgebiedwaarde ](#step-1-find-the-website-or-store-view-scope-value):
+- Om een waarde voor een bepaalde opslagmening of een website te plaatsen, begin de veranderlijke naam zoals die in [&#x200B; Stap 1 wordt besproken: Vind de werkingsgebiedwaarde &#x200B;](#step-1-find-the-website-or-store-view-scope-value):
 
    - `CONFIG__WEBSITES`
    - `CONFIG__STORES`
 
 - Het laatste deel van de variabelenaam is de configuratiepad, die uniek is voor elke configuratie-instelling.
 
-[ zie sommige voorbeelden ](#examples).
+[&#x200B; zie sommige voorbeelden &#x200B;](#examples).
 
 In de volgende tabel staan enkele voorbeeldvariabelen.
 
@@ -224,7 +224,7 @@ U kunt als volgt de variabelenaam zoeken voor de oorsprong van het verzendland:
 
 1. Bepaal het bereik.
 
-   Vind het werkingsgebied in het [ gegevensbestand ](#find-a-website-or-store-view-scope-in-the-database) zoals die in Stap 1 wordt besproken: Vind de website of waarde van het het werkingsgebied van de opslagmening. (U kunt de waarde in Admin zoals aangetoond in de [ lijst in Stap 2 ook vinden: Plaats globale, website, of de variabelen van de opslagmening ] (#step-2-set-global-website-or-store-view-variables.
+   Vind het werkingsgebied in het [&#x200B; gegevensbestand &#x200B;](#find-a-website-or-store-view-scope-in-the-database) zoals die in Stap 1 wordt besproken: Vind de website of waarde van het het werkingsgebied van de opslagmening. (U kunt de waarde in Admin zoals aangetoond in de [ lijst in Stap 2 ook vinden: Plaats globale, website, of de variabelen van de opslagmening ] (#step-2-set-global-website-or-store-view-variables.
 
    Het bereik kan bijvoorbeeld `CONFIG__WEBSITES__DEFAULT` zijn.
 
@@ -234,7 +234,7 @@ U kunt als volgt de variabelenaam zoeken voor de oorsprong van het verzendland:
 
 ## Omgevingsvariabelen gebruiken
 
-Stel configuratiewaarden in als variabelen met behulp van de [`$_ENV` ](https://php.net/manual/en/reserved.variables.environment.php) associated array van PHP. U kunt de waarden instellen in elk PHP script dat wordt uitgevoerd wanneer Commerce wordt uitgevoerd.
+Stel configuratiewaarden in als variabelen met behulp van de [`$_ENV` &#x200B;](https://php.net/manual/en/reserved.variables.environment.php) associated array van PHP. U kunt de waarden instellen in elk PHP script dat wordt uitgevoerd wanneer Commerce wordt uitgevoerd.
 
 >[!TIP]
 >
@@ -247,12 +247,12 @@ $_ENV['CONFIG__DEFAULT__CATALOG__SEARCH__ELASTICSEARCH_SERVER_HOSTNAME'] = 'http
 $_ENV['CONFIG__DEFAULT__GENERAL__STORE_INFORMATION__MERCHANT_VAT_NUMBER'] = '1234';
 ```
 
-Een geleidelijke voorbeeld wordt getoond in [ Vastgestelde configuratiewaarden gebruikend omgevingsvariabelen ](../deployment/example-environment-variables.md).
+Een geleidelijke voorbeeld wordt getoond in [&#x200B; Vastgestelde configuratiewaarden gebruikend omgevingsvariabelen &#x200B;](../deployment/example-environment-variables.md).
 
 >[!WARNING]
 >
->- Als u waarden wilt gebruiken die u instelt in de array `$_ENV` , moet u `variables_order = "EGPCS"` (Environment, Get, Post, Cookie en Server) in uw `php.ini` -bestand instellen. Voor details, zie [ PHP documentatie ](https://www.php.net/manual/en/ini.core.php).
+>- Als u waarden wilt gebruiken die u instelt in de array `$_ENV` , moet u `variables_order = "EGPCS"` (Environment, Get, Post, Cookie en Server) in uw `php.ini` -bestand instellen. Voor details, zie [&#x200B; PHP documentatie &#x200B;](https://www.php.net/manual/en/ini.core.php).
 >
->- Voor Adobe Commerce op wolkeninfrastructuur, als u probeert om configuratiemontages met voeten te treden gebruikend de [ Interface van het Web van het Project ](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/project/overview.html#configure-the-project), moet u de veranderlijke naam met `env:` prepend. Bijvoorbeeld:
+>- Voor Adobe Commerce op wolkeninfrastructuur, als u probeert om configuratiemontages met voeten te treden gebruikend de [&#x200B; Interface van het Web van het Project &#x200B;](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/project/overview.html#configure-the-project), moet u de veranderlijke naam met `env:` prepend. Bijvoorbeeld:
 >
->![ veranderlijk voorbeeld van het Milieu ](../../assets/configuration/cloud-console-envvariable.png)
+>![&#x200B; veranderlijk voorbeeld van het Milieu &#x200B;](../../assets/configuration/cloud-console-envvariable.png)

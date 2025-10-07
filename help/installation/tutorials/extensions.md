@@ -12,7 +12,7 @@ ht-degree: 0%
 
 # Extensies van derden beheren
 
-Code die het gedrag van Adobe Commerce uitbreidt of aanpast, wordt een extensie genoemd. U kunt naar keuze uitbreidingen op [ Commerce Marketplace ](https://commercemarketplace.adobe.com/) of een ander systeem van de uitbreidingsdistributie verpakken en verdelen.
+Code die het gedrag van Adobe Commerce uitbreidt of aanpast, wordt een extensie genoemd. U kunt naar keuze uitbreidingen op [&#x200B; Commerce Marketplace &#x200B;](https://commercemarketplace.adobe.com/) of een ander systeem van de uitbreidingsdistributie verpakken en verdelen.
 
 Extensies zijn:
 
@@ -20,7 +20,7 @@ Extensies zijn:
 - Thema&#39;s (wijzig de vormgeving van uw winkel en Admin)
 - Taalpakketten (lokaliseer de winkel en Admin)
 
-Dit onderwerp verklaart hoe te om de bevel-lijn interface te gebruiken om derdeuitbreidingen te beheren die u van Commerce Marketplace voor _op-gebouw_ projecten koopt. Voor de projecten van de wolkeninfrastructuur, zie [ uitbreidingen ](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/configure-store/extensions) beheren.
+Dit onderwerp verklaart hoe te om de bevel-lijn interface te gebruiken om derdeuitbreidingen te beheren die u van Commerce Marketplace voor _op-gebouw_ projecten koopt. Voor de projecten van de wolkeninfrastructuur, zie [&#x200B; uitbreidingen &#x200B;](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/configure-store/extensions) beheren.
 
 U kunt de zelfde procedure gebruiken om _om het even welke_ uitbreiding te installeren; allen u hebt nodig is de naam en de versie van Composer van de uitbreiding. Als u de extensie wilt zoeken, opent u het `composer.json` -bestand en noteert u de waarden voor `"name"` en `"version"` .
 
@@ -56,23 +56,23 @@ Als u een extensie wilt installeren, moet u:
 
 ### Extensiegegevens ophalen
 
-Als u reeds de naam en de versie van Composer van de uitbreiding kent, sla deze stap over en ga met [ verder werk uw `composer.json` dossier ](#update-composer-dependencies) bij.
+Als u reeds de naam en de versie van Composer van de uitbreiding kent, sla deze stap over en ga met [&#x200B; verder werk uw `composer.json` dossier &#x200B;](#update-composer-dependencies) bij.
 
 De naam en versie van de componist van de extensie ophalen uit de Commerce Marketplace:
 
-1. Login aan [ Commerce Marketplace ](https://commercemarketplace.adobe.com/) met de gebruikersbenaming en het wachtwoord u gebruikte om de uitbreiding te kopen.
+1. Login aan [&#x200B; Commerce Marketplace &#x200B;](https://commercemarketplace.adobe.com/) met de gebruikersbenaming en het wachtwoord u gebruikte om de uitbreiding te kopen.
 
 1. In de hoger-juiste hoek, klik **Uw naam** > **Mijn Profiel**.
 
-   ![ heb toegang tot uw rekening van de Marketplace ](../../assets/installation/marketplace-my-profile.png)
+   ![&#x200B; heb toegang tot uw rekening van de Marketplace &#x200B;](../../assets/installation/marketplace-my-profile.png)
 
 1. Klik **Mijn Aankopen**.
 
-   ![ de aankoopgeschiedenis van de Marketplace ](../../assets/installation//marketplace-my-purchases.png)
+   ![&#x200B; de aankoopgeschiedenis van de Marketplace &#x200B;](../../assets/installation//marketplace-my-purchases.png)
 
 1. Zoek de extensie die u wilt installeren en noteer de naam en versie van de component.
 
-   ![ Technische details van de Uitbreiding die de Composer pakketnaam voor installatie tonen ](../../assets/installation/marketplace-extension-technical-details.png)
+   ![&#x200B; Technische details van de Uitbreiding die de Composer pakketnaam voor installatie tonen &#x200B;](../../assets/installation/marketplace-extension-technical-details.png)
 
 >[!TIP]
 >
@@ -94,7 +94,7 @@ Voeg de naam en de versie van de extensie toe aan het `composer.json` -bestand:
    composer require j2t/module-payplug:2.0.2
    ```
 
-1. Ga uw [ authentificatietoetsen ](../prerequisites/authentication-keys.md) in. Uw openbare sleutel is uw gebruikersnaam; uw persoonlijke sleutel is uw wachtwoord.
+1. Ga uw [&#x200B; authentificatietoetsen &#x200B;](../prerequisites/authentication-keys.md) in. Uw openbare sleutel is uw gebruikersnaam; uw persoonlijke sleutel is uw wachtwoord.
 
 1. Wacht op Composer om het bijwerken van uw projectgebiedsdelen te voltooien en ervoor te zorgen dat er geen fouten zijn:
 

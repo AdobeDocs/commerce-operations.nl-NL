@@ -76,7 +76,7 @@ Varnish minimaliseren:
 
 1. Vervang de waarde van `.host` met volledig - gekwalificeerd hostname of IP adres en luister haven van de Varnish _achterkant_ of _oorsprongserver_; namelijk zal de server die de inhoud verstrekt Varnish versnellen.
 
-   Dit is doorgaans uw webserver. Zie [ servers van het Achterste 1} in de ](https://varnish-cache.org/docs/trunk/users-guide/vcl-backends.html) Versijke gids _._
+   Dit is doorgaans uw webserver. Zie [&#x200B; servers van het Achterste 1&rbrace; in de &#x200B;](https://varnish-cache.org/docs/trunk/users-guide/vcl-backends.html) Versijke gids _._
 
 1. Vervang de waarde van `.port` door de listen-poort van de webserver (8080 in dit voorbeeld).
 
@@ -170,7 +170,7 @@ In het voorgaande ziet u Varnish die op poort 80 wordt uitgevoerd en Apache die 
 
 Als u de uitvoer voor `varnishd` niet ziet, controleert u of Varnish wordt uitgevoerd.
 
-Zie [`netstat` opties ](https://tldp.org/LDP/nag2/x-087-2-iface.netstat.html).
+Zie [`netstat` opties &#x200B;](https://tldp.org/LDP/nag2/x-087-2-iface.netstat.html).
 
 ## De Commerce-software installeren
 

@@ -14,7 +14,7 @@ ht-degree: 0%
 
 Deze sectie maakt een lijst van veranderlijke namen en config wegen beschikbaar voor opties in Admin onder **Slaat** > Montages > **Configuratie** > **Verkoop**.
 
-Het [`magento app:config:dump` bevel ](../cli/export-configuration.md) schrijft deze waarden aan het gedeelde configuratiedossier, `app/etc/config.php`, dat in broncontrole zou moeten zijn. Om naar keuze om het even welke configuratiemontages met voeten te treden of gevoelige montages te plaatsen, zie [ de milieuvariabelen van het Gebruik om configuratiemontages ](override-config-settings.md#environment-variables) met voeten te treden. Dit onderwerp __ lijst [ niet gevoelige en systeem-specifieke waarden ](config-reference-sens.md).
+Het [`magento app:config:dump` bevel &#x200B;](../cli/export-configuration.md) schrijft deze waarden aan het gedeelde configuratiedossier, `app/etc/config.php`, dat in broncontrole zou moeten zijn. Om naar keuze om het even welke configuratiemontages met voeten te treden of gevoelige montages te plaatsen, zie [&#x200B; de milieuvariabelen van het Gebruik om configuratiemontages &#x200B;](override-config-settings.md#environment-variables) met voeten te treden. Dit onderwerp __ lijst [&#x200B; niet gevoelige en systeem-specifieke waarden &#x200B;](config-reference-sens.md).
 
 ## Verkooppaden
 
@@ -29,8 +29,8 @@ Deze configuratiewaarden zijn beschikbaar in Admin in **Opslag** > Montages > **
 | Belasting | `sales/totals_sort/tax` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 | Vaste productbelasting | `sales/totals_sort/weee` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 | Eindtotaal | `sales/totals_sort/grand_total` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
-| Cadeaukaarten | `sales/totals_sort/giftcardaccount` | ![ Commerce-slechts ](/help/assets/configuration/cloud-ee.png) |
-| Winkelkrediet | `sales/totals_sort/customerbalance` | ![ Commerce-slechts ](/help/assets/configuration/cloud-ee.png) |
+| Cadeaukaarten | `sales/totals_sort/giftcardaccount` | ![&#x200B; Commerce-slechts &#x200B;](/help/assets/configuration/cloud-ee.png) |
+| Winkelkrediet | `sales/totals_sort/customerbalance` | ![&#x200B; Commerce-slechts &#x200B;](/help/assets/configuration/cloud-ee.png) |
 | Opnieuw ordenen toestaan | `sales/reorder/allow` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 | Logo voor PDF Print-outs (200 x 50) | `sales/identity/logo` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 | Logo voor afdrukweergave van HTML | `sales/identity/logo_html` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
@@ -47,25 +47,25 @@ Deze configuratiewaarden zijn beschikbaar in Admin in **Opslag** > Montages > **
 | Levensduur betalingsopdracht in behandeling (minuten) | `sales/orders/delete_pending_after` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 | Cadeausberichten op bestelniveau toestaan | `sales/gift_options/allow_order` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 | Cadeausberichten toestaan voor bestellingstitems | `sales/gift_options/allow_items` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
-| Gift Wrapping toestaan op bestelniveau | `sales/gift_options/wrapping_allow_order` | ![ Commerce-slechts ](/help/assets/configuration/cloud-ee.png) |
-| Gift Wrapping toestaan voor bestellingen | `sales/gift_options/wrapping_allow_items` | ![ Commerce-slechts ](/help/assets/configuration/cloud-ee.png) |
-| Cadeaubevestiging toestaan | `sales/gift_options/allow_gift_receipt` | ![ Commerce-slechts ](/help/assets/configuration/cloud-ee.png) |
-| Afgedrukte kaart toestaan | `sales/gift_options/allow_printed_card` | ![ Commerce-slechts ](/help/assets/configuration/cloud-ee.png) |
-| Standaardprijs voor afgedrukte kaart | `sales/gift_options/printed_card_price` | ![ Commerce-slechts ](/help/assets/configuration/cloud-ee.png) |
+| Gift Wrapping toestaan op bestelniveau | `sales/gift_options/wrapping_allow_order` | ![&#x200B; Commerce-slechts &#x200B;](/help/assets/configuration/cloud-ee.png) |
+| Gift Wrapping toestaan voor bestellingen | `sales/gift_options/wrapping_allow_items` | ![&#x200B; Commerce-slechts &#x200B;](/help/assets/configuration/cloud-ee.png) |
+| Cadeaubevestiging toestaan | `sales/gift_options/allow_gift_receipt` | ![&#x200B; Commerce-slechts &#x200B;](/help/assets/configuration/cloud-ee.png) |
+| Afgedrukte kaart toestaan | `sales/gift_options/allow_printed_card` | ![&#x200B; Commerce-slechts &#x200B;](/help/assets/configuration/cloud-ee.png) |
+| Standaardprijs voor afgedrukte kaart | `sales/gift_options/printed_card_price` | ![&#x200B; Commerce-slechts &#x200B;](/help/assets/configuration/cloud-ee.png) |
 | KAART inschakelen | `sales/msrp/enabled` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 | Werkelijke prijs weergeven | `sales/msrp/display_price_type` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 | Standaardbericht voor pop-uptekst | `sales/msrp/explanation_message` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 | Standaardtekstbericht &quot;Wat is dit?&quot; | `sales/msrp/explanation_message_whats_this` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
-| Bestelling door SKU inschakelen voor Mijn account in winkelcentrum | `sales/product_sku/my_account_enable` | ![ Commerce-slechts ](/help/assets/configuration/cloud-ee.png) |
+| Bestelling door SKU inschakelen voor Mijn account in winkelcentrum | `sales/product_sku/my_account_enable` | ![&#x200B; Commerce-slechts &#x200B;](/help/assets/configuration/cloud-ee.png) |
 | Ingeschakeld | `sales/instant_purchase/active` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 | Knoptekst | `sales/instant_purchase/button_text` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
-| Klantengroepen | `sales/product_sku/allowed_groups` | ![ Commerce-slechts ](/help/assets/configuration/cloud-ee.png) |
-| Archivering inschakelen | `sales/magento_salesarchive/active` | ![ Commerce-slechts ](/help/assets/configuration/cloud-ee.png) |
-| Aangeschafte archiefbestellingen | `sales/magento_salesarchive/age` | ![ Commerce-slechts ](/help/assets/configuration/cloud-ee.png) |
-| Te archiveren statussen bestellen | `sales/magento_salesarchive/order_statuses` | ![ Commerce-slechts ](/help/assets/configuration/cloud-ee.png) |
-| RMA inschakelen op Storefront | `sales/magento_rma/enabled` | ![ Commerce-slechts ](/help/assets/configuration/cloud-ee.png) |
-| RMA inschakelen op productniveau | `sales/magento_rma/enabled_on_product` | ![ Commerce-slechts ](/help/assets/configuration/cloud-ee.png) |
-| Winkeladres gebruiken | `sales/magento_rma/use_store_address` | ![ Commerce-slechts ](/help/assets/configuration/cloud-ee.png) |
+| Klantengroepen | `sales/product_sku/allowed_groups` | ![&#x200B; Commerce-slechts &#x200B;](/help/assets/configuration/cloud-ee.png) |
+| Archivering inschakelen | `sales/magento_salesarchive/active` | ![&#x200B; Commerce-slechts &#x200B;](/help/assets/configuration/cloud-ee.png) |
+| Aangeschafte archiefbestellingen | `sales/magento_salesarchive/age` | ![&#x200B; Commerce-slechts &#x200B;](/help/assets/configuration/cloud-ee.png) |
+| Te archiveren statussen bestellen | `sales/magento_salesarchive/order_statuses` | ![&#x200B; Commerce-slechts &#x200B;](/help/assets/configuration/cloud-ee.png) |
+| RMA inschakelen op Storefront | `sales/magento_rma/enabled` | ![&#x200B; Commerce-slechts &#x200B;](/help/assets/configuration/cloud-ee.png) |
+| RMA inschakelen op productniveau | `sales/magento_rma/enabled_on_product` | ![&#x200B; Commerce-slechts &#x200B;](/help/assets/configuration/cloud-ee.png) |
+| Winkeladres gebruiken | `sales/magento_rma/use_store_address` | ![&#x200B; Commerce-slechts &#x200B;](/help/assets/configuration/cloud-ee.png) |
 
 {style="table-layout:auto"}
 
@@ -116,26 +116,26 @@ Deze configuratiewaarden zijn beschikbaar in Admin in **Opslag** > Montages > **
 | E-mailsjabloon Opmerking creditcard | `sales_email/creditmemo_comment/template` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 | E-mailsjabloon voor opmerking via creditcard voor gast | `sales_email/creditmemo_comment/guest_template` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 | E-mailkopieermethode voor opmerkingen over creditcard verzenden | `sales_email/creditmemo_comment/copy_method` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
-| Ingeschakeld | `sales_email/magento_rma/enabled` | ![ Commerce-slechts ](/help/assets/configuration/cloud-ee.png) |
-| RMA E-mailafzender | `sales_email/magento_rma/identity` | ![ Commerce-slechts ](/help/assets/configuration/cloud-ee.png) |
-| RMA-e-mailsjabloon | `sales_email/magento_rma/template` | ![ Commerce-slechts ](/help/assets/configuration/cloud-ee.png) |
-| RMA-e-mailsjabloon voor gast | `sales_email/magento_rma/guest_template` | ![ Commerce-slechts ](/help/assets/configuration/cloud-ee.png) |
-| Methode voor kopiëren via RMA-e-mail verzenden | `sales_email/magento_rma/copy_method` | ![ Commerce-slechts ](/help/assets/configuration/cloud-ee.png) |
-| Ingeschakeld | `sales_email/magento_rma_auth/enabled` | ![ Commerce-slechts ](/help/assets/configuration/cloud-ee.png) |
-| E-mailafzender RMA-autorisatie | `sales_email/magento_rma_auth/identity` | ![ Commerce-slechts ](/help/assets/configuration/cloud-ee.png) |
-| E-mailsjabloon voor RMA-autorisatie | `sales_email/magento_rma_auth/template` | ![ Commerce-slechts ](/help/assets/configuration/cloud-ee.png) |
-| E-mailsjabloon voor RMA-autorisatie voor gast | `sales_email/magento_rma_auth/guest_template` | ![ Commerce-slechts ](/help/assets/configuration/cloud-ee.png) |
-| Kopieermethode voor RMA-autorisatie verzenden | `sales_email/magento_rma_auth/copy_method` | ![ Commerce-slechts ](/help/assets/configuration/cloud-ee.png) |
-| Ingeschakeld | `sales_email/magento_rma_comment/enabled` | ![ Commerce-slechts ](/help/assets/configuration/cloud-ee.png) |
-| RMA E-mailafzender opmerking | `sales_email/magento_rma_comment/identity` | ![ Commerce-slechts ](/help/assets/configuration/cloud-ee.png) |
-| E-mailsjabloon voor RMA-opmerkingen | `sales_email/magento_rma_comment/template` | ![ Commerce-slechts ](/help/assets/configuration/cloud-ee.png) |
-| E-mailsjabloon voor RMA-opmerkingen voor gast | `sales_email/magento_rma_comment/guest_template` | ![ Commerce-slechts ](/help/assets/configuration/cloud-ee.png) |
-| Methode voor kopiëren via RMA-e-mail verzenden | `sales_email/magento_rma_comment/copy_method` | ![ Commerce-slechts ](/help/assets/configuration/cloud-ee.png) |
-| Ingeschakeld | `sales_email/magento_rma_customer_comment/enabled` | ![ Commerce-slechts ](/help/assets/configuration/cloud-ee.png) |
-| RMA E-mailafzender opmerking | `sales_email/magento_rma_customer_comment/identity` | ![ Commerce-slechts ](/help/assets/configuration/cloud-ee.png) |
-| E-mailontvanger voor RMA-opmerkingen | `sales_email/magento_rma_customer_comment/recipient` | ![ Commerce-slechts ](/help/assets/configuration/cloud-ee.png) |
-| E-mailsjabloon voor RMA-opmerkingen | `sales_email/magento_rma_customer_comment/template` | ![ Commerce-slechts ](/help/assets/configuration/cloud-ee.png) |
-| Methode voor kopiëren via RMA-e-mail verzenden | `sales_email/magento_rma_customer_comment/copy_method` | ![ Commerce-slechts ](/help/assets/configuration/cloud-ee.png) |
+| Ingeschakeld | `sales_email/magento_rma/enabled` | ![&#x200B; Commerce-slechts &#x200B;](/help/assets/configuration/cloud-ee.png) |
+| RMA E-mailafzender | `sales_email/magento_rma/identity` | ![&#x200B; Commerce-slechts &#x200B;](/help/assets/configuration/cloud-ee.png) |
+| RMA-e-mailsjabloon | `sales_email/magento_rma/template` | ![&#x200B; Commerce-slechts &#x200B;](/help/assets/configuration/cloud-ee.png) |
+| RMA-e-mailsjabloon voor gast | `sales_email/magento_rma/guest_template` | ![&#x200B; Commerce-slechts &#x200B;](/help/assets/configuration/cloud-ee.png) |
+| Methode voor kopiëren via RMA-e-mail verzenden | `sales_email/magento_rma/copy_method` | ![&#x200B; Commerce-slechts &#x200B;](/help/assets/configuration/cloud-ee.png) |
+| Ingeschakeld | `sales_email/magento_rma_auth/enabled` | ![&#x200B; Commerce-slechts &#x200B;](/help/assets/configuration/cloud-ee.png) |
+| E-mailafzender RMA-autorisatie | `sales_email/magento_rma_auth/identity` | ![&#x200B; Commerce-slechts &#x200B;](/help/assets/configuration/cloud-ee.png) |
+| E-mailsjabloon voor RMA-autorisatie | `sales_email/magento_rma_auth/template` | ![&#x200B; Commerce-slechts &#x200B;](/help/assets/configuration/cloud-ee.png) |
+| E-mailsjabloon voor RMA-autorisatie voor gast | `sales_email/magento_rma_auth/guest_template` | ![&#x200B; Commerce-slechts &#x200B;](/help/assets/configuration/cloud-ee.png) |
+| Kopieermethode voor RMA-autorisatie verzenden | `sales_email/magento_rma_auth/copy_method` | ![&#x200B; Commerce-slechts &#x200B;](/help/assets/configuration/cloud-ee.png) |
+| Ingeschakeld | `sales_email/magento_rma_comment/enabled` | ![&#x200B; Commerce-slechts &#x200B;](/help/assets/configuration/cloud-ee.png) |
+| RMA E-mailafzender opmerking | `sales_email/magento_rma_comment/identity` | ![&#x200B; Commerce-slechts &#x200B;](/help/assets/configuration/cloud-ee.png) |
+| E-mailsjabloon voor RMA-opmerkingen | `sales_email/magento_rma_comment/template` | ![&#x200B; Commerce-slechts &#x200B;](/help/assets/configuration/cloud-ee.png) |
+| E-mailsjabloon voor RMA-opmerkingen voor gast | `sales_email/magento_rma_comment/guest_template` | ![&#x200B; Commerce-slechts &#x200B;](/help/assets/configuration/cloud-ee.png) |
+| Methode voor kopiëren via RMA-e-mail verzenden | `sales_email/magento_rma_comment/copy_method` | ![&#x200B; Commerce-slechts &#x200B;](/help/assets/configuration/cloud-ee.png) |
+| Ingeschakeld | `sales_email/magento_rma_customer_comment/enabled` | ![&#x200B; Commerce-slechts &#x200B;](/help/assets/configuration/cloud-ee.png) |
+| RMA E-mailafzender opmerking | `sales_email/magento_rma_customer_comment/identity` | ![&#x200B; Commerce-slechts &#x200B;](/help/assets/configuration/cloud-ee.png) |
+| E-mailontvanger voor RMA-opmerkingen | `sales_email/magento_rma_customer_comment/recipient` | ![&#x200B; Commerce-slechts &#x200B;](/help/assets/configuration/cloud-ee.png) |
+| E-mailsjabloon voor RMA-opmerkingen | `sales_email/magento_rma_customer_comment/template` | ![&#x200B; Commerce-slechts &#x200B;](/help/assets/configuration/cloud-ee.png) |
+| Methode voor kopiëren via RMA-e-mail verzenden | `sales_email/magento_rma_customer_comment/copy_method` | ![&#x200B; Commerce-slechts &#x200B;](/help/assets/configuration/cloud-ee.png) |
 | Order-id weergeven in koptekst | `sales_pdf/invoice/put_order_id` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 | Order-id weergeven in koptekst | `sales_pdf/shipment/put_order_id` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 | Order-id weergeven in koptekst | `sales_pdf/creditmemo/put_order_id` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
@@ -149,7 +149,7 @@ Deze configuratiewaarden zijn beschikbaar in Admin in **Opslag** > Montages > **
 | Naam | Config-pad | Alleen Commerce? |
 |--------------|--------------|--------------|
 | Belastingklasse voor verzending | `tax/classes/shipping_tax_class` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
-| Belastingsklasse voor Cadeauopties | `tax/classes/wrapping_tax_class` | ![ Commerce-slechts ](/help/assets/configuration/cloud-ee.png) |
+| Belastingsklasse voor Cadeauopties | `tax/classes/wrapping_tax_class` | ![&#x200B; Commerce-slechts &#x200B;](/help/assets/configuration/cloud-ee.png) |
 | Standaardbelastingklasse voor product | `tax/classes/default_product_tax_class` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 | Standaardbelastingklasse voor klant | `tax/classes/default_customer_tax_class` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 | Belastingberekeningsmethode gebaseerd op | `tax/calculation/algorithm` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
@@ -168,16 +168,16 @@ Deze configuratiewaarden zijn beschikbaar in Admin in **Opslag** > Montages > **
 | Prijzen weergeven | `tax/cart_display/price` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 | Subtotaal weergeven | `tax/cart_display/subtotal` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 | Verzendbedrag weergeven | `tax/cart_display/shipping` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
-| Wapprijzen voor geschenk weergeven | `tax/cart_display/gift_wrapping` | ![ Commerce-slechts ](/help/assets/configuration/cloud-ee.png) |
-| Afgedrukte kaartprijzen weergeven | `tax/cart_display/printed_card` | ![ Commerce-slechts ](/help/assets/configuration/cloud-ee.png) |
+| Wapprijzen voor geschenk weergeven | `tax/cart_display/gift_wrapping` | ![&#x200B; Commerce-slechts &#x200B;](/help/assets/configuration/cloud-ee.png) |
+| Afgedrukte kaartprijzen weergeven | `tax/cart_display/printed_card` | ![&#x200B; Commerce-slechts &#x200B;](/help/assets/configuration/cloud-ee.png) |
 | Inclusief BTW in besteltotaal | `tax/cart_display/grandtotal` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 | Volledige belastingoverzicht weergeven | `tax/cart_display/full_summary` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 | Subtotaal btw-nul weergeven | `tax/cart_display/zero_tax` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 | Prijzen weergeven | `tax/sales_display/price` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 | Subtotaal weergeven | `tax/sales_display/subtotal` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 | Verzendbedrag weergeven | `tax/sales_display/shipping` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
-| Wapprijzen voor geschenk weergeven | `tax/sales_display/gift_wrapping` | ![ Commerce-slechts ](/help/assets/configuration/cloud-ee.png) |
-| Afgedrukte kaartprijzen weergeven | `tax/sales_display/printed_card` | ![ Commerce-slechts ](/help/assets/configuration/cloud-ee.png) |
+| Wapprijzen voor geschenk weergeven | `tax/sales_display/gift_wrapping` | ![&#x200B; Commerce-slechts &#x200B;](/help/assets/configuration/cloud-ee.png) |
+| Afgedrukte kaartprijzen weergeven | `tax/sales_display/printed_card` | ![&#x200B; Commerce-slechts &#x200B;](/help/assets/configuration/cloud-ee.png) |
 | Inclusief BTW in besteltotaal | `tax/sales_display/grandtotal` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 | Volledige belastingoverzicht weergeven | `tax/sales_display/full_summary` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 | Subtotaal btw-nul weergeven | `tax/sales_display/zero_tax` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
@@ -205,7 +205,7 @@ Deze configuratiewaarden zijn beschikbaar in Admin in **Opslag** > Montages > **
 | Nadat een product is omgeleid naar winkelwagentje | `checkout/cart/redirect_to_cart` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 | Gegroepeerde productafbeelding | `checkout/cart/grouped_product_image` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 | Configureerbare productafbeelding | `checkout/cart/configurable_product_image` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
-| Aanbiedingslevensduur voorvertonen (minuten) | `checkout/cart/preview_quota_lifetime` | ![ Commerce-slechts ](/help/assets/configuration/cloud-ee.png) |
+| Aanbiedingslevensduur voorvertonen (minuten) | `checkout/cart/preview_quota_lifetime` | ![&#x200B; Commerce-slechts &#x200B;](/help/assets/configuration/cloud-ee.png) |
 | Winkeloverzicht weergeven | `checkout/cart_link/use_qty` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 | Winkelwagentje weergeven | `checkout/sidebar/display` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 | Maximum aantal onlangs toegevoegde items weergeven | `checkout/sidebar/count` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
@@ -280,7 +280,7 @@ Deze configuratiewaarden zijn beschikbaar in Admin in **Opslag** > Montages > **
 | Methode tonen indien niet van toepassing | `carriers/tablerate/showmethod` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 | Sorteervolgorde | `carriers/tablerate/sort_order` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 | Ingeschakeld voor Afhandeling | `carriers/ups/active` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
-| Ingeschakeld voor RMA | `carriers/ups/active_rma` | ![ Commerce-slechts ](/help/assets/configuration/cloud-ee.png) |
+| Ingeschakeld voor RMA | `carriers/ups/active_rma` | ![&#x200B; Commerce-slechts &#x200B;](/help/assets/configuration/cloud-ee.png) |
 | Type UPS | `carriers/ups/type` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 | Modus | `carriers/ups/mode_xml` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 | Oorsprong van de overbrenging | `carriers/ups/origin_shipment` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
@@ -307,7 +307,7 @@ Deze configuratiewaarden zijn beschikbaar in Admin in **Opslag** > Montages > **
 | Methode tonen indien niet van toepassing | `carriers/ups/showmethod` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 | Sorteervolgorde | `carriers/ups/sort_order` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 | Ingeschakeld voor Afhandeling | `carriers/usps/active` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
-| Ingeschakeld voor RMA | `carriers/usps/active_rma` | ![ Commerce-slechts ](/help/assets/configuration/cloud-ee.png) |
+| Ingeschakeld voor RMA | `carriers/usps/active_rma` | ![&#x200B; Commerce-slechts &#x200B;](/help/assets/configuration/cloud-ee.png) |
 | Modus | `carriers/usps/mode` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 | Type pakketaanvraag | `carriers/usps/shipment_requesttype` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 | Container | `carriers/usps/container` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
@@ -332,7 +332,7 @@ Deze configuratiewaarden zijn beschikbaar in Admin in **Opslag** > Montages > **
 | Methode tonen indien niet van toepassing | `carriers/usps/showmethod` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 | Sorteervolgorde | `carriers/usps/sort_order` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 | Ingeschakeld voor Afhandeling | `carriers/fedex/active` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
-| Ingeschakeld voor RMA | `carriers/fedex/active_rma` | ![ Commerce-slechts ](/help/assets/configuration/cloud-ee.png) |
+| Ingeschakeld voor RMA | `carriers/fedex/active_rma` | ![&#x200B; Commerce-slechts &#x200B;](/help/assets/configuration/cloud-ee.png) |
 | Titel | `carriers/fedex/title` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 | URL van webservices (productie) | `carriers/fedex/production_webservices_url` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 | URL voor webservices (sandbox) | `carriers/fedex/sandbox_webservices_url` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
@@ -357,7 +357,7 @@ Deze configuratiewaarden zijn beschikbaar in Admin in **Opslag** > Montages > **
 | Methode tonen indien niet van toepassing | `carriers/fedex/showmethod` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 | Sorteervolgorde | `carriers/fedex/sort_order` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 | Ingeschakeld voor Afhandeling | `carriers/dhl/active` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
-| Ingeschakeld voor RMA | `carriers/dhl/active_rma` | ![ Commerce-slechts ](/help/assets/configuration/cloud-ee.png) |
+| Ingeschakeld voor RMA | `carriers/dhl/active_rma` | ![&#x200B; Commerce-slechts &#x200B;](/help/assets/configuration/cloud-ee.png) |
 | Titel | `carriers/dhl/title` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 | Inhoudstype | `carriers/dhl/content_type` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 | Verhandelingskosten berekenen | `carriers/dhl/handling_type` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
@@ -391,14 +391,14 @@ Deze configuratiewaarden zijn beschikbaar in Admin in **Opslag** > Montages > **
 | Naam | Config-pad | Alleen Commerce? |
 |--------------|--------------|--------------|
 | Inschakelen | `google/analytics/active` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
-| Accounttype | `google/analytics/type` | ![ Commerce-slechts ](/help/assets/configuration/cloud-ee.png) |
+| Accounttype | `google/analytics/type` | ![&#x200B; Commerce-slechts &#x200B;](/help/assets/configuration/cloud-ee.png) |
 | Inhoud-experimenten inschakelen | `google/analytics/experiments` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
-| Eigenschap List voor de cataloguspagina | `google/analytics/catalog_page_list_value` | ![ Commerce-slechts ](/help/assets/configuration/cloud-ee.png) |
-| List, eigenschap voor het blok voor cross-sell | `google/analytics/crosssell_block_list_value` | ![ Commerce-slechts ](/help/assets/configuration/cloud-ee.png) |
-| De bezit van de lijst voor het up-sell blok | `google/analytics/upsell_block_list_value` | ![ Commerce-slechts ](/help/assets/configuration/cloud-ee.png) |
-| Eigenschap List voor het verwante productblok | `google/analytics/related_block_list_value` | ![ Commerce-slechts ](/help/assets/configuration/cloud-ee.png) |
-| De eigenschap List voor de pagina met zoekresultaten | `google/analytics/search_page_list_value` | ![ Commerce-slechts ](/help/assets/configuration/cloud-ee.png) |
-| &#39;Interne aanbiedingen&#39; voor promoties in het veld &#39;Label&#39;. | `google/analytics/promotions_list_value` | ![ Commerce-slechts ](/help/assets/configuration/cloud-ee.png) |
+| Eigenschap List voor de cataloguspagina | `google/analytics/catalog_page_list_value` | ![&#x200B; Commerce-slechts &#x200B;](/help/assets/configuration/cloud-ee.png) |
+| List, eigenschap voor het blok voor cross-sell | `google/analytics/crosssell_block_list_value` | ![&#x200B; Commerce-slechts &#x200B;](/help/assets/configuration/cloud-ee.png) |
+| De bezit van de lijst voor het up-sell blok | `google/analytics/upsell_block_list_value` | ![&#x200B; Commerce-slechts &#x200B;](/help/assets/configuration/cloud-ee.png) |
+| Eigenschap List voor het verwante productblok | `google/analytics/related_block_list_value` | ![&#x200B; Commerce-slechts &#x200B;](/help/assets/configuration/cloud-ee.png) |
+| De eigenschap List voor de pagina met zoekresultaten | `google/analytics/search_page_list_value` | ![&#x200B; Commerce-slechts &#x200B;](/help/assets/configuration/cloud-ee.png) |
+| &#39;Interne aanbiedingen&#39; voor promoties in het veld &#39;Label&#39;. | `google/analytics/promotions_list_value` | ![&#x200B; Commerce-slechts &#x200B;](/help/assets/configuration/cloud-ee.png) |
 | Inschakelen | `google/adwords/active` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 | Conversie-id | `google/adwords/conversion_id` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 | Conversietaal | `google/adwords/conversion_language` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |

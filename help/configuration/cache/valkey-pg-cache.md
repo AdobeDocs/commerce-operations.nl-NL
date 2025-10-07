@@ -15,7 +15,7 @@ ht-degree: 0%
 
 Commerce biedt opdrachtregelopties om de Valkey-pagina en de standaardcaching te configureren. Hoewel u caching kunt vormen door het `<Commerce-install-dir>app/etc/env.php` dossier uit te geven, is het gebruiken van de bevellijn de geadviseerde methode, vooral voor aanvankelijke configuraties. De bevellijn verstrekt bevestiging, die de configuratie verzekeren syntactisch correct is.
 
-U moet [ Valkey ](config-redis.md#install-redis) installeren alvorens verder te gaan.
+U moet [&#x200B; Valkey &#x200B;](config-redis.md#install-redis) installeren alvorens verder te gaan.
 
 ## Standaardcaching voor sleutels configureren
 
@@ -135,7 +135,7 @@ Als resultaat van de twee voorbeeldopdrachten voegt Commerce soortgelijke regels
 
 ## Nieuwe Valkey-cache-implementatie
 
-[!BADGE  2.4.9-alpha ]{type=Negative tooltip="Alleen beschikbaar in 2.4.9-alfa."}
+[!BADGE &#x200B; 2.4.9-alpha &#x200B;]{type=Negative tooltip="Alleen beschikbaar in 2.4.9-alfa."}
 
 Vanaf Adobe Commerce 2.4.9 raadt Adobe aan de Valkey-cache-implementatie te gebruiken: `\Magento\Framework\Cache\Backend\Valkey` .
 
@@ -281,4 +281,4 @@ Als beide opdrachten zijn uitgevoerd, wordt Valkey op de juiste wijze ingesteld.
 
 ### Gecomprimeerde gegevens controleren
 
-Om samengeperste zittingsgegevens en het paginacachegeheugen te inspecteren, [ RESP.app ](https://flathub.org/apps/app.resp.RESP) steunt automatische decompressie van Commerce 2 zitting en paginacache en toont PHP zittingsgegevens in een mens-leesbaar formaat.
+Om samengeperste zittingsgegevens en het paginacachegeheugen te inspecteren, [&#x200B; RESP.app &#x200B;](https://flathub.org/apps/app.resp.RESP) steunt automatische decompressie van Commerce 2 zitting en paginacache en toont PHP zittingsgegevens in een mens-leesbaar formaat.

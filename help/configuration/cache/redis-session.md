@@ -14,7 +14,7 @@ ht-degree: 1%
 
 >[!IMPORTANT]
 >
->U moet [ Redis ](config-redis.md#install-redis) installeren alvorens verder te gaan.
+>U moet [&#x200B; Redis &#x200B;](config-redis.md#install-redis) installeren alvorens verder te gaan.
 
 
 Commerce biedt nu opdrachtregelopties voor het configureren van Redis-sessieopslag. In vorige versies hebt u het bestand `<Commerce install dir>app/etc/env.php` bewerkt. De opdrachtregel biedt validatie en dit is de aanbevolen configuratiemethode, maar u kunt het `env.php` -bestand wel bewerken.
@@ -37,9 +37,9 @@ waar
 | session-save-redis-port | poort | Redis server listen port. | 6379 |
 | session-save-redis-password | password | Hiermee geeft u een wachtwoord op als uw Redis-server verificatie vereist. | leeg |
 | session-save-redis-timeout | timeout | Time-out verbinding, in seconden. | 2,5 |
-| session-save-redis-persistent-id | persistent_identifier | Unieke tekenreeks om permanente verbindingen in te schakelen (bijvoorbeeld sess-db0).<br>[ Bekende kwesties met phpredis en php-fpm ](https://github.com/phpredis/phpredis/issues/70). |
+| session-save-redis-persistent-id | persistent_identifier | Unieke tekenreeks om permanente verbindingen in te schakelen (bijvoorbeeld sess-db0).<br>[&#x200B; Bekende kwesties met phpredis en php-fpm &#x200B;](https://github.com/phpredis/phpredis/issues/70). |
 | session-save-redis-db | database | Uniek Redis-databasenummer, dat wordt aanbevolen om te beschermen tegen gegevensverlies.<br><br>**Belangrijk**: Als u Redis voor meer dan één type van caching gebruikt, moeten de gegevensbestandaantallen verschillend zijn. U wordt aangeraden het standaard cachedatabasenummer aan 0, het databasenummer voor het in cache plaatsen van pagina&#39;s aan 1 en het databasenummer voor de sessieopslag aan 2 toe te wijzen. | 0 |
-| session-save-hers-compression-threshold | compression_threshold | Stel de waarde in op 0 om compressie uit te schakelen (aanbevolen bij `suhosin.session.encrypt = On`).<br>[ Bekende kwestie met koorden van meer dan 64 KB ](https://github.com/colinmollenhour/Cm_Cache_Backend_Redis/issues/18). | 2048 |
+| session-save-hers-compression-threshold | compression_threshold | Stel de waarde in op 0 om compressie uit te schakelen (aanbevolen bij `suhosin.session.encrypt = On`).<br>[&#x200B; Bekende kwestie met koorden van meer dan 64 KB &#x200B;](https://github.com/colinmollenhour/Cm_Cache_Backend_Redis/issues/18). | 2048 |
 | session-save-redis-compression-lib | compression_library | Opties: gzip, lzf, lz4 of snappy. | gzip |
 | session-save-redis-log-level | log_level | Stel de volgende waarden in op een van de volgende volgorde, van minimale breedtegraad tot breedste breedte:<ul><li>0 (noodsituatie: alleen de ernstigste fouten)<li>1 (waarschuwing: onmiddellijke actie vereist)<li>2 (kritiek: toepassingscomponent niet beschikbaar)<li>3 (fout: fouten bij uitvoering, niet kritiek, maar moet worden gecontroleerd)<li>4 (waarschuwing: aanvullende informatie, aanbevolen)<li>5 (mededeling: normale maar significante toestand)<li>6 (info: informatieve berichten)<li>7 (foutopsporing: de meeste informatie die u alleen kunt ontwikkelen of testen)</ul> | 1 |
 | session-save-redis-max-gelijktijdige | max_concurrency | Maximum aantal processen dat op een slot op één zitting kan wachten. Voor grote productieclusters stelt u dit in op ten minste 10% van het aantal PHP-processen. | 6 |
@@ -131,4 +131,4 @@ Als beide opdrachten zijn uitgevoerd, wordt Redis op de juiste wijze ingesteld.
 
 ### Gecomprimeerde gegevens controleren
 
-Om de samengeperste gegevens van de Zitting en het Geheime voorgeheugen van de Pagina te inspecteren, [ RESP.app ](https://flathub.org/apps/details/app.resp.RESP) steunt de automatische decompressie van Commerce 2 Sessie en het geheime voorgeheugen van de Pagina en toont PHP zittingsgegevens in een mens-leesbare vorm.
+Om de samengeperste gegevens van de Zitting en het Geheime voorgeheugen van de Pagina te inspecteren, [&#x200B; RESP.app &#x200B;](https://flathub.org/apps/details/app.resp.RESP) steunt de automatische decompressie van Commerce 2 Sessie en het geheime voorgeheugen van de Pagina en toont PHP zittingsgegevens in een mens-leesbare vorm.

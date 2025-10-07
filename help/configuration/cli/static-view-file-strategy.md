@@ -14,17 +14,17 @@ ht-degree: 0%
 
 Bij het implementeren van statische weergavebestanden kunt u een van de drie beschikbare strategieën kiezen. Elk van hen verstrekt optimale plaatsingsresultaten voor verschillende gebruiksgevallen:
 
-- [ Norm ](#standard-strategy): het regelmatige plaatsingsproces.
-- [ Snel ](#quick-strategy) (_gebrek_): minimaliseert de tijd die voor plaatsing wordt vereist wanneer de dossiers voor meer dan één scène worden opgesteld.
-- [ Compact ](#compact-strategy): minimaliseert de ruimte die door de gepubliceerde meningsdossiers wordt genomen.
+- [&#x200B; Norm &#x200B;](#standard-strategy): het regelmatige plaatsingsproces.
+- [&#x200B; Snel &#x200B;](#quick-strategy) (_gebrek_): minimaliseert de tijd die voor plaatsing wordt vereist wanneer de dossiers voor meer dan één scène worden opgesteld.
+- [&#x200B; Compact &#x200B;](#compact-strategy): minimaliseert de ruimte die door de gepubliceerde meningsdossiers wordt genomen.
 
 In de volgende secties worden de implementatiedetails en -kenmerken van elke strategie beschreven.
 
 ## Standaardstrategie
 
-Wanneer de Standaardstrategie wordt gebruikt, worden alle statische meningsdossiers voor alle pakketten opgesteld, dat wil zeggen, verwerkt door [`\Magento\Framework\App\View\Asset\Publisher` ](https://github.com/magento/magento2/blob/2.4/lib/internal/Magento/Framework/App/View/Asset/Publisher.php).
+Wanneer de Standaardstrategie wordt gebruikt, worden alle statische meningsdossiers voor alle pakketten opgesteld, dat wil zeggen, verwerkt door [`\Magento\Framework\App\View\Asset\Publisher` &#x200B;](https://github.com/magento/magento2/blob/2.4/lib/internal/Magento/Framework/App/View/Asset/Publisher.php).
 
-Voor meer informatie, zie [ statische meningsdossiers ](../cli/static-view-file-deployment.md) opstellen.
+Voor meer informatie, zie [&#x200B; statische meningsdossiers &#x200B;](../cli/static-view-file-deployment.md) opstellen.
 
 ## Snelle strategie
 
@@ -66,7 +66,7 @@ De benadering van plaatsing die in de compacte strategie wordt gebruikt betekent
 - `map.php`
 - `requirejs-map.js`
 
-Het `map.php` dossier wordt gebruikt door [`Magento\Framework\View\Asset\Repository` ](https://github.com/magento/magento2/blob/2.4/lib/internal/Magento/Framework/View/Asset/Repository.php) om correcte URLs te bouwen.
+Het `map.php` dossier wordt gebruikt door [`Magento\Framework\View\Asset\Repository` &#x200B;](https://github.com/magento/magento2/blob/2.4/lib/internal/Magento/Framework/View/Asset/Repository.php) om correcte URLs te bouwen.
 
 De `requirejs-map.js` wordt gebruikt door de `baseUrlResolver` -insteekmodule voor RequireJS.
 
@@ -101,6 +101,6 @@ require.config({
 
 ## Tips voor ontwikkelaars van extensies
 
-Gebruik [`\Magento\Framework\View\Asset\Repository::createAsset()` ](https://github.com/magento/magento2/blob/2.4/lib/internal/Magento/Framework/View/Asset/Repository.php#L211-L244) om URLs aan statische meningsdossiers te bouwen.
+Gebruik [`\Magento\Framework\View\Asset\Repository::createAsset()` &#x200B;](https://github.com/magento/magento2/blob/2.4/lib/internal/Magento/Framework/View/Asset/Repository.php#L211-L244) om URLs aan statische meningsdossiers te bouwen.
 
 Gebruik geen URL-aaneenschakelingen om problemen te voorkomen waarbij statische bestanden niet worden gevonden en niet worden weergegeven tijdens het weergeven van pagina&#39;s.

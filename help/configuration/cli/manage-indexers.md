@@ -43,7 +43,7 @@ store_data_exporter                      Stores Feed
 
 >[!NOTE]
 >
-> De handelaars van Adobe Commerce die Live Onderzoek, de Dienst van de Catalogus, of de Aanbevelingen van het Product gebruiken hebben de optie om [ op SaaS-Gebaseerde prijs te gebruiken indexeert ](https://experienceleague.adobe.com/en/docs/commerce/price-indexer/price-indexing).
+> De handelaars van Adobe Commerce die Live Onderzoek, de Dienst van de Catalogus, of de Aanbevelingen van het Product gebruiken hebben de optie om [&#x200B; op SaaS-Gebaseerde prijs te gebruiken indexeert &#x200B;](https://experienceleague.adobe.com/en/docs/commerce/price-indexer/price-indexing).
 
 ## Indexstatus weergeven
 
@@ -89,7 +89,7 @@ Gebruik deze opdracht om alle of geselecteerde indexen slechts één keer opnieu
 
 >[!INFO]
 >
->Deze opdracht wordt slechts één keer opnieuw samengesteld. Om indexeerders bijgewerkt te houden, moet u opstelling a [ cron baan ](../cli/configure-cron-jobs.md).
+>Deze opdracht wordt slechts één keer opnieuw samengesteld. Om indexeerders bijgewerkt te houden, moet u opstelling a [&#x200B; cron baan &#x200B;](../cli/configure-cron-jobs.md).
 
 Opdrachtopties:
 
@@ -219,7 +219,7 @@ Gebruik deze opdracht om de volgende indexeropties in te stellen:
 - **Update op sparen (`realtime`)**: De geïndexeerde gegevens worden bijgewerkt wanneer een verandering in Admin wordt aangebracht. (Zo wordt de index van de categorie producten opnieuw geindexeerd nadat de producten aan een categorie in Admin zijn toegevoegd.)
 - **Update door programma (`schedule`)**: Het gegeven wordt geïndexeerd volgens het programma dat door uw kroonbaan wordt geplaatst.
 
-[ Leer meer over het indexeren ](https://developer.adobe.com/commerce/php/development/components/indexing/).
+[&#x200B; Leer meer over het indexeren &#x200B;](https://developer.adobe.com/commerce/php/development/components/indexing/).
 
 ### De huidige configuratie weergeven
 
@@ -269,11 +269,11 @@ Stores Feed:                                       Update by Schedule
 >
 >- **2.4.8 en later**: [!DNL Customer Grid] de indexer steunt zowel [!UICONTROL Update on Save] als [!UICONTROL Update by Schedule] wijzen, en gebreken aan [!UICONTROL Update by Schedule].
 >
->Zie [ Beste praktijken voor indexeerconfiguratie ](https://experienceleague.adobe.com/en/docs/commerce-operations/implementation-playbook/best-practices/maintenance/indexer-configuration) in _Playbook van de Implementatie_.
+>Zie [&#x200B; Beste praktijken voor indexeerconfiguratie &#x200B;](https://experienceleague.adobe.com/en/docs/commerce-operations/implementation-playbook/best-practices/maintenance/indexer-configuration) in _Playbook van de Implementatie_.
 
 >[!INFO]
 >
->Alvorens de wijzen van de omschakelingsindexeerder, plaats uw website aan [ onderhoud ](../../installation/tutorials/maintenance-mode.md) wijze en [ maak kanonbanen ](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/configure/app/properties/crons-property) onbruikbaar. Dit zorgt ervoor u geen gegevensbestandsloten ervaart.
+>Alvorens de wijzen van de omschakelingsindexeerder, plaats uw website aan [&#x200B; onderhoud &#x200B;](../../installation/tutorials/maintenance-mode.md) wijze en [&#x200B; maak kanonbanen &#x200B;](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/configure/app/properties/crons-property) onbruikbaar. Dit zorgt ervoor u geen gegevensbestandsloten ervaart.
 
 De indexeerconfiguratie opgeven:
 

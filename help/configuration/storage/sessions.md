@@ -14,8 +14,8 @@ ht-degree: 0%
 
 In dit onderwerp wordt besproken hoe u kunt bepalen waar uw sessiebestanden worden opgeslagen. Het systeem gebruikt de volgende logica om zittingsdossiers op te slaan:
 
-- Als u in het geheugen ondergebracht gevormde, de zittingen in RAM worden opgeslagen; zie [ Gebruik in het geheugen ondergebracht voor zittingsopslag ](memcached.md).
-- Als u Redis vormde, worden de zittingen opgeslagen op de Redis server; zie [ Redis van het Gebruik voor zittingsopslag ](../cache/redis-session.md).
+- Als u in het geheugen ondergebracht gevormde, de zittingen in RAM worden opgeslagen; zie [&#x200B; Gebruik in het geheugen ondergebracht voor zittingsopslag &#x200B;](memcached.md).
+- Als u Redis vormde, worden de zittingen opgeslagen op de Redis server; zie [&#x200B; Redis van het Gebruik voor zittingsopslag &#x200B;](../cache/redis-session.md).
 - Als u de standaard op een bestand gebaseerde sessieopslag gebruikt, slaan we sessies op de volgende locaties op in de weergegeven volgorde:
 
    1. Map gedefinieerd in [`env.php`](#example-in-envphp)
@@ -41,7 +41,7 @@ Als gebruiker met `root` rechten opent u het `php.ini` -bestand en zoekt u naar 
 
 ## Sessiegrootte beheren
 
-Zie het [ beheer van de Zitting ](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/security/security-session-management) in de _gids van de Gebruiker_.
+Zie het [&#x200B; beheer van de Zitting &#x200B;](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/security/security-session-management) in de _gids van de Gebruiker_.
 
 ## Configuratie van afvalophaling
 

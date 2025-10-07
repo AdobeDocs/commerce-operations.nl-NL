@@ -16,11 +16,11 @@ De volgende stappen lopen door het associëren van geheim voorste voorkant van h
 
 ## Stap 1: Definieer een voorkant van een cache
 
-De toepassing van Commerce heeft a `default` geheim voorfront dat u voor om het even welk [ geheim voorgeheugentype ](../cli/manage-cache.md#clean-and-flush-cache-types) kunt gebruiken. In deze sectie wordt beschreven hoe u desgewenst een voorkant van een cache met een andere naam kunt definiëren. Dit is aan te raden als u uw voorkant wilt aanpassen.
+De toepassing van Commerce heeft a `default` geheim voorfront dat u voor om het even welk [&#x200B; geheim voorgeheugentype &#x200B;](../cli/manage-cache.md#clean-and-flush-cache-types) kunt gebruiken. In deze sectie wordt beschreven hoe u desgewenst een voorkant van een cache met een andere naam kunt definiëren. Dit is aan te raden als u uw voorkant wilt aanpassen.
 
 >[!INFO]
 >
->Als u het cachetype `default` wilt gebruiken, hoeft u `env.php` helemaal niet te wijzigen. U wijzigt Commerce global `di.xml` . Zie [ laag-vlakke geheim voorgeheugenopties ](cache-options.md).
+>Als u het cachetype `default` wilt gebruiken, hoeft u `env.php` helemaal niet te wijzigen. U wijzigt Commerce global `di.xml` . Zie [&#x200B; laag-vlakke geheim voorgeheugenopties &#x200B;](cache-options.md).
 
 U moet een aangepaste cachevoorzijde opgeven `app/etc/env.php` of Commerce global `app/etc/di.xml` .
 
@@ -70,10 +70,10 @@ U kunt de configuratieopties voor de voorste cache en de achterste cache opgeven
 waar
 
 - `<frontend_type>` is het cachetype op laag niveau frontend. Geef de naam op van een klasse die compatibel is met `Zend\Cache\Core` .
-Als u `<frontend_type>` weglaat, [ Magento\Framework\Cache\Core ](https://github.com/magento/magento2/blob/2.4/lib/internal/Magento/Framework/Cache/Core.php) wordt gebruikt.
+Als u `<frontend_type>` weglaat, [&#x200B; Magento\Framework\Cache\Core &#x200B;](https://github.com/magento/magento2/blob/2.4/lib/internal/Magento/Framework/Cache/Core.php) wordt gebruikt.
 
 - `<frontend_option>` is `<frontend_option_value>` de naam en waarde van de opties die het Commerce-framework na het maken als een associatieve array doorgeeft aan de frontend-cache.
 - `<backend_type>` is het lage type achterste cache. Geef de naam op van een klasse die compatibel is met `Zend_Cache_Backend` en die `Zend_Cache_Backend_Interface` implementeert.
 - `<backend_option>` en `<backend_option_value>` zijn de naam en waarde van de opties die het Commerce-framework na het maken doorgeeft als een associatieve array om cache op te slaan als back-end.
 
-Zie de [ documentatie van Laminas ](https://docs.laminas.dev/) voor de recentste informatie van het Gebied.
+Zie de [&#x200B; documentatie van Laminas &#x200B;](https://docs.laminas.dev/) voor de recentste informatie van het Gebied.

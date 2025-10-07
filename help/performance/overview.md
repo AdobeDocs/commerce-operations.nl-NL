@@ -15,5 +15,5 @@ De _gids van Beste praktijken van Prestaties_ verstrekt aanbevelingen en instruc
 
 ## Veronderstellingen
 
-* U installeerde Adobe Commerce gebruikend [ Composer ](../installation/composer.md).
+* U installeerde Adobe Commerce gebruikend [&#x200B; Composer &#x200B;](../installation/composer.md).
 * U gebruikt deze installatie om een live productie-instantie van Adobe Commerce uit te voeren.

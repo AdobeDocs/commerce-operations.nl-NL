@@ -34,4 +34,4 @@ U kunt alle Versijke gastheren dan zuiveren wanneer u het geheime voorgeheugen v
 
 Om het geheime voorgeheugen te verfrissen dat Admin gebruikt, klik **> Hulpmiddelen >** het Beheer van het Geheime voorgeheugen **, dan klik** het Geheime voorgeheugen van Magento **bij de bovenkant van de pagina.** (U kunt ook afzonderlijke cachetypen vernieuwen.)
 
-Om het geheime voorgeheugen van veelvoudige instanties van Varnish van cli te verfrissen gebruik het [`magento cache:clean <type>`](../cli/manage-cache.md#clean-and-flush-cache-types) bevel als [ eigenaar van het dossiersysteem ](../../installation/prerequisites/file-system/overview.md).
+Om het geheime voorgeheugen van veelvoudige instanties van Varnish van cli te verfrissen gebruik het [`magento cache:clean <type>`](../cli/manage-cache.md#clean-and-flush-cache-types) bevel als [&#x200B; eigenaar van het dossiersysteem &#x200B;](../../installation/prerequisites/file-system/overview.md).

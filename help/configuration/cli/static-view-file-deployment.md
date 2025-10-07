@@ -13,7 +13,7 @@ ht-degree: 0%
 
 {{file-system-owner}}
 
-Het statische bevel van de meningsdossiers plaatsing laat u toe om statische dossiers aan het het dossiersysteem van Commerce te schrijven wanneer de software van Commerce voor [ productiemodus ](../bootstrap/application-modes.md#production-mode) wordt geplaatst.
+Het statische bevel van de meningsdossiers plaatsing laat u toe om statische dossiers aan het het dossiersysteem van Commerce te schrijven wanneer de software van Commerce voor [&#x200B; productiemodus &#x200B;](../bootstrap/application-modes.md#production-mode) wordt geplaatst.
 
 Het termijn _statische meningsdossier_ verwijst naar het volgende:
 
@@ -24,18 +24,18 @@ Statische weergavebestanden bevinden zich in de map `<magento_root>/pub/static` 
 
 De plaatsing van statische meningsdossiers wordt beïnvloed door toepassingswijzen als volgt:
 
-- [ Gebrek ](../bootstrap/application-modes.md#default-mode) en [ ontwikkelaar ](../bootstrap/application-modes.md#developer-mode) wijzen: Commerce produceert hen op bestelling, maar de rest wordt in het voorgeheugen ondergebracht in een dossier voor snelheid van toegang.
-- [ Productie ](../bootstrap/application-modes.md#production-mode) wijze: De statische dossiers worden _niet_ geproduceerd of in het voorgeheugen ondergebracht.
+- [&#x200B; Gebrek &#x200B;](../bootstrap/application-modes.md#default-mode) en [&#x200B; ontwikkelaar &#x200B;](../bootstrap/application-modes.md#developer-mode) wijzen: Commerce produceert hen op bestelling, maar de rest wordt in het voorgeheugen ondergebracht in een dossier voor snelheid van toegang.
+- [&#x200B; Productie &#x200B;](../bootstrap/application-modes.md#production-mode) wijze: De statische dossiers worden _niet_ geproduceerd of in het voorgeheugen ondergebracht.
 
 U moet statische meningsdossiers aan het het dossiersysteem van Commerce manueel schrijven gebruikend het bevel in dit onderwerp wordt besproken; daarna kunt u toestemmingen beperken om uw kwetsbaarheid te beperken en toevallig of kwaadwillig het beschrijven van dossiers te verhinderen.
 
 >[!WARNING]
 >
->_wijze van de Ontwikkelaar slechts_: Wanneer u installeert of een nieuwe module toelaat, zou het nieuwe JavaScript, CSS, lay-outs, etc. kunnen laden. Als u problemen met statische bestanden wilt voorkomen, moet u de oude bestanden opschonen om ervoor te zorgen dat alle wijzigingen voor de nieuwe module worden doorgevoerd. U kunt gegenereerde statische weergavebestanden op verschillende manieren opschonen. Verwijs naar [ Schone statische onderwerp van het dossiergeheime voorgeheugen voor details ](https://developer.adobe.com/commerce/frontend-core/guide/caching/#clean-static-files-cache) voor meer informatie.
+>_wijze van de Ontwikkelaar slechts_: Wanneer u installeert of een nieuwe module toelaat, zou het nieuwe JavaScript, CSS, lay-outs, etc. kunnen laden. Als u problemen met statische bestanden wilt voorkomen, moet u de oude bestanden opschonen om ervoor te zorgen dat alle wijzigingen voor de nieuwe module worden doorgevoerd. U kunt gegenereerde statische weergavebestanden op verschillende manieren opschonen. Verwijs naar [&#x200B; Schone statische onderwerp van het dossiergeheime voorgeheugen voor details &#x200B;](https://developer.adobe.com/commerce/frontend-core/guide/caching/#clean-static-files-cache) voor meer informatie.
 
 **om statische meningsdossiers** op te stellen:
 
-1. Login aan de server van Commerce als, of [ schakelaar aan de eigenaar van het dossiersysteem ](../../installation/prerequisites/file-system/overview.md).
+1. Login aan de server van Commerce als, of [&#x200B; schakelaar aan de eigenaar van het dossiersysteem &#x200B;](../../installation/prerequisites/file-system/overview.md).
 1. Verwijder de inhoud van `<magento_root>/pub/static` , met uitzondering van het `.htaccess` -bestand. Verwijder dit bestand niet.
 1. Voer het gereedschap voor het implementeren van statische weergavebestanden `<magento_root>/bin/magento setup:static-content:deploy` uit.
 
@@ -53,14 +53,14 @@ De volgende lijst verklaart de parameters en de waarden van dit bevel.
 
 | Optie | Beschrijving | Vereist? |
 | ------ | ----------- | --------- |
-| `<languages>` | Ruimte-gescheiden lijst van [ ISO-639 ](https://www.loc.gov/standards/iso639-2/php/code_list.php) taalcodes waarvoor aan output statische meningsdossiers. (Standaard is dit `en_US` .)<br> vind de lijst door te lopen: `bin/magento info:language:list` | Nee |
+| `<languages>` | Ruimte-gescheiden lijst van [&#x200B; ISO-639 &#x200B;](https://www.loc.gov/standards/iso639-2/php/code_list.php) taalcodes waarvoor aan output statische meningsdossiers. (Standaard is dit `en_US` .)<br> vind de lijst door te lopen: `bin/magento info:language:list` | Nee |
 | `--language (-l)` | Genereer bestanden alleen voor de opgegeven talen. Als er geen optie is opgegeven, worden standaard bestanden voor alle ISO-639-taalcodes gegenereerd. U kunt de naam van één taalcode tegelijk opgeven. De standaardwaarde is **allen**.<br> Bijvoorbeeld: `--language en_US --language es_ES` | Nee |
 | `--exclude-language` | Genereer bestanden voor de opgegeven taalcodes. Als er geen optie is opgegeven, wordt standaard niets uitgesloten. U kunt de naam van één taalcode of een komma-gescheiden lijst van taalcodes specificeren. De standaardwaarde is **niets**. | Nee |
 | `--theme <theme>` | Thema&#39;s waarvoor statische inhoud moet worden geïmplementeerd. De standaardwaarde is **allen**.<br> Bijvoorbeeld: `--theme Magento/blank --theme Magento/luma` | Nee |
 | `--exclude-theme <theme>` | Thema&#39;s die moeten worden uitgesloten bij het implementeren van statische inhoud. De standaardwaarde is **niets**.<br> Bijvoorbeeld, `--exclude-theme Magento/blank` | Nee |
 | `--area (-a)` | Alleen bestanden genereren voor de opgegeven gebieden. Als er geen optie is opgegeven, worden standaard bestanden voor alle gebieden gegenereerd. Geldige waarden zijn `adminhtml` en `frontend` . De standaardwaarde is **allen**.<br> Bijvoorbeeld: `--area adminhtml` | Nee |
 | `--exclude-area` | Genereer geen bestanden voor de opgegeven gebieden. Als er geen optie is opgegeven, wordt standaard niets uitgesloten. De standaardwaarde is **niets**. | Nee |
-| `--jobs (-j)` | Laat [ parallelle verwerking ](manage-indexers.md#reindexing-in-parallel-mode) toe gebruikend het gespecificeerde aantal banen. De standaardwaarde is 0 (niet in parallelle processen). De standaardwaarde is **0**. | Nee |
+| `--jobs (-j)` | Laat [&#x200B; parallelle verwerking &#x200B;](manage-indexers.md#reindexing-in-parallel-mode) toe gebruikend het gespecificeerde aantal banen. De standaardwaarde is 0 (niet in parallelle processen). De standaardwaarde is **0**. | Nee |
 | `--symlink-locale` | Creeer symlinks voor de dossiers van die scènes, die voor plaatsing worden overgegaan, maar geen aanpassingen hebben. | Nee |
 | `--content-version=CONTENT-VERSION` | Aangepaste versie van statische inhoud kan worden gebruikt als implementatie op meerdere knooppunten wordt uitgevoerd om ervoor te zorgen dat de versie van statische inhoud identiek is en dat caching correct werkt. | Nee |
 | `--no-javascript` | JavaScript-bestanden niet implementeren | Nee |
@@ -71,7 +71,7 @@ De volgende lijst verklaart de parameters en de waarden van dit bevel.
 | `--no-html` | Implementeer geen HTML-bestanden. | Nee |
 | `--no-misc` | Andere bestandstypen niet implementeren: MD, JBF, CSV, JSON, TXT, HTC, SWF | Nee |
 | `--no-html-minify` | Maak geen minieme HTML-bestanden. | Nee |
-| `-s <quick\|standard\|compact>` | De implementatiestrategie definiëren. Gebruik deze opties alleen als u meerdere lokale instellingen hebt.<ul><li>Gebruik de [ snelle strategie ](static-view-file-strategy.md#quick-strategy) om plaatsingstijd te minimaliseren. Dit is de standaardoptie van het bevel als niet gespecificeerd.</li><li>Gebruik de [ standaardstrategie ](static-view-file-strategy.md#standard-strategy) om alle statische meningsdossiers voor alle pakketten op te stellen.</li><li>Gebruik de [ compacte strategie ](static-view-file-strategy.md#compact-strategy) om schijfruimte op de server te besparen.</li></ul> | Nee |
+| `-s <quick\|standard\|compact>` | De implementatiestrategie definiëren. Gebruik deze opties alleen als u meerdere lokale instellingen hebt.<ul><li>Gebruik de [&#x200B; snelle strategie &#x200B;](static-view-file-strategy.md#quick-strategy) om plaatsingstijd te minimaliseren. Dit is de standaardoptie van het bevel als niet gespecificeerd.</li><li>Gebruik de [&#x200B; standaardstrategie &#x200B;](static-view-file-strategy.md#standard-strategy) om alle statische meningsdossiers voor alle pakketten op te stellen.</li><li>Gebruik de [&#x200B; compacte strategie &#x200B;](static-view-file-strategy.md#compact-strategy) om schijfruimte op de server te besparen.</li></ul> | Nee |
 | `--no-parent` | Genereer geen bestanden voor de bovenliggende thema&#39;s van het huidige thema. Het wordt sterk geadviseerd om deze vlag te gebruiken als u niet uitdrukkelijk het ouderthema van het huidige thema gebruikt u probeert op te stellen. Dit verhoogt de snelheid van het proces aanzienlijk. Deze markering is beschikbaar in Commerce 2.4.2 | Nee |
 | `--force (-f)` | Bestanden in elke modus implementeren. (standaard kan het hulpprogramma voor het implementeren van statische inhoud alleen worden uitgevoerd in de productiemodus. Gebruik deze optie als u deze wilt uitvoeren in de standaard- of ontwikkelmodus.) | Nee |
 
@@ -158,7 +158,7 @@ Voer hiertoe de volgende stappen uit:
 
 ## Problemen met het implementatieprogramma voor statische weergavebestanden oplossen
 
-[ installeer eerst de software van Commerce ](../../installation/overview.md); anders, kunt u niet het statische hulpmiddel van de de plaatsingsdossiers van meningsdossiers in werking stellen.
+[&#x200B; installeer eerst de software van Commerce &#x200B;](../../installation/overview.md); anders, kunt u niet het statische hulpmiddel van de de plaatsingsdossiers van meningsdossiers in werking stellen.
 
 **Symptom**: De volgende fout wordt getoond wanneer u het statische hulpmiddel van de de plaatsingsdossiers van meningsdossiers in werking stelt:
 
@@ -170,8 +170,8 @@ ERROR: You need to install the Commerce application before running this utility.
 
 Voer de volgende stappen uit:
 
-1. Installeer de software van Commerce gebruikend de [ bevellijn ](../../installation/composer.md).
-1. Login aan de toepassingsserver als, of [ schakelaar aan ](../../installation/prerequisites/file-system/overview.md), de eigenaar van het dossiersysteem.
+1. Installeer de software van Commerce gebruikend de [&#x200B; bevellijn &#x200B;](../../installation/composer.md).
+1. Login aan de toepassingsserver als, of [&#x200B; schakelaar aan &#x200B;](../../installation/prerequisites/file-system/overview.md), de eigenaar van het dossiersysteem.
 1. Verwijder de inhoud van de map `<app_root>/pub/static` , behalve het bestand `.htaccess` . Verwijder dit bestand niet.
 1. Statische weergavebestanden gebruiken: `bin/magento setup:static-content:deploy`
 
@@ -179,4 +179,4 @@ Voer de volgende stappen uit:
 
 Wanneer u een aangepaste implementatie van het hulpprogramma voor de implementatie van statische inhoud maakt, gebruikt u alleen het schrijven van atomische bestanden voor bestanden die op de client beschikbaar moeten zijn. Als u niet-atomische bestanden schrijft, kunnen deze bestanden op de client worden geladen met gedeeltelijke inhoud.
 
-Een van de opties om het atomisch te maken is naar bestanden te schrijven die zijn opgeslagen in een tijdelijke map en deze na schrijven naar de doelmap te kopiëren of te verplaatsen (van waar ze naar de client zijn geladen). Voor details over het schrijven aan dossiers, zie [ php schrijven ](https://www.php.net/manual/en/function.fwrite.php).
+Een van de opties om het atomisch te maken is naar bestanden te schrijven die zijn opgeslagen in een tijdelijke map en deze na schrijven naar de doelmap te kopiëren of te verplaatsen (van waar ze naar de client zijn geladen). Voor details over het schrijven aan dossiers, zie [&#x200B; php schrijven &#x200B;](https://www.php.net/manual/en/function.fwrite.php).

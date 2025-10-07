@@ -13,7 +13,7 @@ ht-degree: 0%
 
 In dit onderwerp wordt een algemene aanbevolen installatie voor Adobe Commerce-instanties beschreven met behulp van gewone servers die fysiek worden gehost in een datacenter (niet gevirtualiseerd) waarin bronnen niet met andere gebruikers worden gedeeld. Uw hostingprovider, met name als deze gespecialiseerd is in het hosten van hoge Commerce-prestaties, raadt mogelijk een andere instelling aan die even of effectiever is voor uw vereisten.
 
-Voor Adobe Commerce op de milieu&#39;s van de wolkeninfrastructuur, zie [ de architectuur van de Aanzet ](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/architecture/starter-architecture).
+Voor Adobe Commerce op de milieu&#39;s van de wolkeninfrastructuur, zie [&#x200B; de architectuur van de Aanzet &#x200B;](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/architecture/starter-architecture).
 
 ## [!DNL Commerce] Referentie-architectuurdiagram
 
@@ -25,7 +25,7 @@ De kleur van elk element in het diagram geeft aan of het element deel uitmaakt v
 * Grijswaarden zijn optioneel voor Magento Open Source
 * Blauwe elementen zijn optioneel voor Adobe Commerce
 
-![ Commerce het diagram van de verwijzingsarchitectuur ](../assets/performance/images/ref-architecture-2.3.png)
+![&#x200B; Commerce het diagram van de verwijzingsarchitectuur &#x200B;](../assets/performance/images/ref-architecture-2.3.png)
 
 De volgende secties geven aanbevelingen en overwegingen voor elk gedeelte van het Commerce Reference Architecture-diagram.
 
@@ -68,8 +68,8 @@ Magento biedt ondersteuning voor diverse engines (File, Memcache, Redis, [!DNL V
 
 Voor sites waarvoor geen hoge beschikbaarheid vereist is, raden we u aan een eenvoudige [!DNL Varnish] -installatie te gebruiken met Nginx SSL-beëindiging.
 
-![ Eenvoudige [!DNL Varnish] Configuratie met SSL Beëindiging ](../assets/performance/images/single-varnish-with-ssl-termination.png)
+![&#x200B; Eenvoudige [!DNL Varnish] Configuratie met SSL Beëindiging &#x200B;](../assets/performance/images/single-varnish-with-ssl-termination.png)
 
 Voor sites die hoge beschikbaarheid vereisen, raden we u aan een configuratie met twee niveaus [!DNL Varnish] te gebruiken met een SSL-terminating voor taakverdeling.
 
-![ Hoge beschikbaarheid twee-rij [!DNL Varnish] configuratie met SSL beëindigend ladingsverdelingsmechanisme ](../assets/performance/images/ha-2-tier-varnish-with-ssl-term-load-balancer.png)
+![&#x200B; Hoge beschikbaarheid twee-rij [!DNL Varnish] configuratie met SSL beëindigend ladingsverdelingsmechanisme &#x200B;](../assets/performance/images/ha-2-tier-varnish-with-ssl-term-load-balancer.png)

@@ -34,7 +34,7 @@ Voor verschillende Commerce-functies is minstens één snijtaak vereist, die act
 
 De systeemplanningstaken van UNIX die door bijzondere gebruikers worden uitgevoerd gebruikend a _contab_, die een dossier is dat instructies aan de cron daemon bevat die de daemon in feite vertellen om &quot;dit bevel op dit ogenblik op deze datum in werking te stellen&quot;. Elke gebruiker heeft zijn eigen contab, en de bevelen in om het even welk bepaald contab worden uitgevoerd als gebruiker die het bezit.
 
-Om te lopen brein in Webbrowser, zie [ Veilig cron.php in browser ](../security/secure-cron-php.md) te lopen.
+Om te lopen brein in Webbrowser, zie [&#x200B; Veilig cron.php in browser &#x200B;](../security/secure-cron-php.md) te lopen.
 
 ## De tab Commerce maken of verwijderen
 
@@ -46,7 +46,7 @@ De Commerce-toepassing gebruikt snijtaken die met verschillende configuraties ku
 
 >[!WARNING]
 >
->- Om problemen tijdens installatie en verbetering te vermijden, adviseren wij sterk u om de zelfde PHP montages op zowel de PHP bevel-lijn configuratie als op de configuratie van de PHP Webserver stop-in toe te passen. Voor meer informatie, zie [ Vereiste PHP montages ](../../installation/prerequisites/php-settings.md).
+>- Om problemen tijdens installatie en verbetering te vermijden, adviseren wij sterk u om de zelfde PHP montages op zowel de PHP bevel-lijn configuratie als op de configuratie van de PHP Webserver stop-in toe te passen. Voor meer informatie, zie [&#x200B; Vereiste PHP montages &#x200B;](../../installation/prerequisites/php-settings.md).
 >- In een systeem met meerdere knooppunten kan de tab op slechts één knooppunt worden uitgevoerd. Dit geldt alleen voor u als u meer dan één webnode instelt om redenen die te maken hebben met prestaties of schaalbaarheid.
 
 ### De tab Commerce maken
@@ -57,7 +57,7 @@ De tab Commerce bevindt zich in de tabbladen `#~ MAGENTO START` en `#~ MAGENTO E
 
 Het Commerce-tabblad maken:
 
-1. Login als, of schakelaar aan, de [ eigenaar van het dossiersysteem ](../../installation/prerequisites/file-system/overview.md).
+1. Login als, of schakelaar aan, de [&#x200B; eigenaar van het dossiersysteem &#x200B;](../../installation/prerequisites/file-system/overview.md).
 1. Ga naar de installatiemap van Commerce.
 1. Voer de volgende opdracht in:
 
@@ -98,7 +98,7 @@ U moet het Commerce-tabblad alleen verwijderen voordat u de Commerce-toepassing 
 
 Het Commerce-tabblad verwijderen:
 
-1. Login als of schakelaar aan de [ eigenaar van het dossiersysteem ](../../installation/prerequisites/file-system/overview.md).
+1. Login als of schakelaar aan de [&#x200B; eigenaar van het dossiersysteem &#x200B;](../../installation/prerequisites/file-system/overview.md).
 1. Ga naar de Commerce-installatiemap.
 1. Voer de volgende opdracht in:
 
@@ -132,7 +132,7 @@ Voer de volgende gegevens in om de standaarduitsnijdtaak uit te voeren:
 bin/magento cron:run --group default
 ```
 
-Aan opstellings de banen en de groepen van de douanecurn, zie [ de banen van de douanecurn en de kantelgroepen van de opstelling ](../cron/custom-cron.md) vormen.
+Aan opstellings de banen en de groepen van de douanecurn, zie [&#x200B; de banen van de douanecurn en de kantelgroepen van de opstelling &#x200B;](../cron/custom-cron.md) vormen.
 
 >[!INFO]
 >

@@ -44,14 +44,14 @@ De bevelen worden getoond in summiere vorm slechts; voor meer informatie over ee
 | [`magento dev:tests:run`](../cli/unit-tests.md) | Voert geautomatiseerde tests uit |
 | [`magento dev:xml:convert`](../cli/convert-layout-files.md) | Werk uw lay-outXML dossiers bij om de nieuwe Verlengbare stijlpagina van de Transformaties van de Taal van Stylesheet (XSLT) aan te passen |
 | [`magento setup:perf:generate-fixtures`](../cli/generate-data.md) | Gegevens genereren om te gebruiken voor het testen van de prestaties. |
-| [`magento sampledata:install`](../../installation/sample-data/overview.md) | Hiermee installeert u optionele voorbeeldgegevens nadat u de Commerce-toepassing hebt geïnstalleerd.<br><br> voor meer details over steekproefgegevens, zie [ Facultatieve steekproefgegevens ](../../installation/sample-data/overview.md). |
+| [`magento sampledata:install`](../../installation/sample-data/overview.md) | Hiermee installeert u optionele voorbeeldgegevens nadat u de Commerce-toepassing hebt geïnstalleerd.<br><br> voor meer details over steekproefgegevens, zie [&#x200B; Facultatieve steekproefgegevens &#x200B;](../../installation/sample-data/overview.md). |
 | [`magento config:{set/sensitive:set/show/}`](../cli/set-configuration-values.md) | Beheert back-endconfiguraties |
 | [`magento admin:user:{create/unlock}`](../../installation/tutorials/admin.md#create-edit-or-unloack-an-administrator-account) | Hiermee maakt u beheergebruikers, bewerkt of ontgrendelt u deze. |
 | [`magento dev:template-hints:{enable/disable}`](https://developer.adobe.com/commerce/frontend-core/guide/themes/debug/) | Hiermee schakelt u tips voor ontwikkelaarsjablonen in of uit. |
 
 ## Algemene argumenten
 
-De volgende argumenten zijn gemeenschappelijk aan [ alle bevelen ](/help/tools/reference/commerce-on-premises.md). Deze opdrachten kunnen worden uitgevoerd vóór of nadat de Commerce-software is geïnstalleerd:
+De volgende argumenten zijn gemeenschappelijk aan [&#x200B; alle bevelen &#x200B;](/help/tools/reference/commerce-on-premises.md). Deze opdrachten kunnen worden uitgevoerd vóór of nadat de Commerce-software is geïnstalleerd:
 
 | Lange versie | Korte versie | Betekenis |
 |--- |--- |--- |

@@ -35,7 +35,7 @@ Het volgende codefragment toont het blote skelet van het dossier:
 In het `system.xml` -bestand is het mogelijk vier verschillende typen entiteiten te definiëren, die aan elkaar zijn gerelateerd. In de volgende sectie wordt de relatie beschreven tussen tabbladen, secties, groepen en velden. In de volgende schermafbeelding wordt de Commerce 2 System Configuration weergegeven in de Admin-back-end.
 De rode vierkantjes geven de verschillende typen aan die in het `system.xml` -bestand zijn gedefinieerd:
 
-![ Screenshot die een gevormde sectie in Admin toont.](../../assets/configuration/magento2-system-configuration.png)
+![&#x200B; Screenshot die een gevormde sectie in Admin toont.](../../assets/configuration/magento2-system-configuration.png)
 
 Tabs worden gebruikt om verschillende configuratiegebieden semantisch te splitsen. Elk tabblad kan een of meer secties bevatten, die ook submenu&#39;s kunnen worden genoemd. Een sectie bevat een of meer groepen.
 Elke groep geeft een of meer velden weer. U kunt ook een groep gebruiken om een algemene beschrijving toe te voegen voor de volgende velden. Zoals vermeld, kan elke groep één of meerdere gebieden hebben. Velden zijn de kleinste entiteit
@@ -248,7 +248,7 @@ Een `<field>` -tag kan de volgende waarden voor het `type=""` -kenmerk hebben:
 | `select` | Bij een normale vervolgkeuzelijst is mogelijk een aangepaste `source_model` vereist. Wordt ook gebruikt voor `Yes/No` selecties. Zie `Magento\Search\Model\Adminhtml\System\Config\Source\Engine` voor een voorbeeld. |
 | `multiselect` | Net als `select` maar meerdere opties zijn geldig. |
 | `button` | Een knop die een directe gebeurtenis activeert. Vereist een aangepast front-end model om de knoptekst en de handeling te definiëren. Zie `Magento\ScheduledImportExport\Block\Adminhtml\System\Config\Clean` voor een voorbeeld. |
-| `obscure` | Een tekstveld met de waarde gecodeerd en weergegeven als `****` . Als u de tekst wijzigt met &#39;Element controleren&#39; in de browser, wordt de waarde niet weergegeven. |
+| `obscure` | Een tekstveld met de waarde gecodeerd en weergegeven als `**&#x200B;**` . Als u de tekst wijzigt met &#39;Element controleren&#39; in de browser, wordt de waarde niet weergegeven. |
 | `password` | Net als bij `obscure` wordt de verborgen waarde niet gecodeerd en wordt de waarde zichtbaar wanneer u het type met &#39;Inspect Element&#39; in de browser forceert wijzigt. |
 | `file` | Hiermee kan een bestand worden geüpload voor verwerking. |
 | `label` | Hiermee geeft u een label weer in plaats van een bewerkbaar veld. Gebruik dit type wanneer een veld alleen binnen een bepaald bereik kan worden bewerkt, bijvoorbeeld alleen in de weergave Winkel. |
@@ -262,7 +262,7 @@ Het is ook mogelijk een aangepast veldtype te maken. Dit wordt vaak gedaan wanne
 - Een blok maken in het gebied `adminhtml`
 - De `type=""` instellen op het pad naar dit blok
 
-Voor het blok zelf zijn ten minste een methode `__construct` en een methode `getElementHtml()` vereist. [ Magento_OfflineShipping ](https://github.com/magento/magento2/blob/2.4/app/code/Magento/OfflineShipping) is een eenvoudig voorbeeld van een douanetype.
+Voor het blok zelf zijn ten minste een methode `__construct` en een methode `getElementHtml()` vereist. [&#x200B; Magento_OfflineShipping &#x200B;](https://github.com/magento/magento2/blob/2.4/app/code/Magento/OfflineShipping) is een eenvoudig voorbeeld van een douanetype.
 
 In de module OfflineShipping bijvoorbeeld wordt de knop Exporteren gedefinieerd in `Magento\OfflineShipping\Block\Adminhtml\Form\Field\Export` en ziet de velddefinitie er als volgt uit:
 

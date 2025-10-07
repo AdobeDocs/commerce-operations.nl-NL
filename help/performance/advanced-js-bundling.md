@@ -18,13 +18,13 @@ Bij bundeling van [!DNL JavaScript] -modules voor betere prestaties gaat het om 
 
 In een modulaire toepassing, kan het aantal serververzoeken in honderden bereiken. De volgende schermafbeelding toont bijvoorbeeld alleen het begin van de lijst met [!DNL JavaScript] -modules die op de startpagina van een schone installatie zijn geladen.
 
-![ geen bundeling ](../assets/performance/images/noBundling.png)
+![&#x200B; geen bundeling &#x200B;](../assets/performance/images/noBundling.png)
 
 ## Samenvoegen en bundelen
 
 Uit het vak biedt [!DNL Commerce] twee manieren om het aantal serveraanvragen te verminderen: samenvoegen en bundelen. Deze instellingen zijn standaard uitgeschakeld. U kunt hen binnen Admin UI in **[!UICONTROL Stores]** > **Montages** > **[!UICONTROL Configuration]** > **[!UICONTROL Advanced]** > **[!UICONTROL Developer]** > **[!UICONTROL [!DNL JavaScript] Settings]**, of van de bevellijn aanzetten.
 
-![ het Bundelen ](../assets/performance/images/bundlingImage.png)
+![&#x200B; het Bundelen &#x200B;](../assets/performance/images/bundlingImage.png)
 
 ### Basisbundeling
 
@@ -36,7 +36,7 @@ php -f bin/magento config:set dev/js/enable_js_bundling 1
 
 Dit is een native [!DNL Commerce] mechanisme dat alle elementen in het systeem combineert en deze onder bundels van hetzelfde formaat distribueert (bundle_0.js, bundle_1.js ... bundle_x.js):
 
-![[!DNL Commerce] bundling ](../assets/performance/images/magentoBundling.png)
+![[!DNL Commerce] bundling &#x200B;](../assets/performance/images/magentoBundling.png)
 
 Beter, maar browser laadt nog ALLE [!DNL JavaScript] bundels, niet alleen nodig.
 
@@ -52,7 +52,7 @@ php -f bin/magento config:set dev/js/merge_files 1
 
 Met deze opdracht voegt u alle synchrone [!DNL JavaScript] bestanden samen in één bestand. Het inschakelen van samenvoeging zonder dat bundeling wordt ingeschakeld, is niet nuttig omdat [!DNL Commerce] gebruik maakt van RequireJS. Als u bundeling niet inschakelt, voegt [!DNL Commerce] alleen RequireJS en de bijbehorende configuratie samen. Wanneer u zowel bundelen als samenvoegen inschakelt, maakt [!DNL Commerce] één [!DNL JavaScript] -bestand:
 
-![ Reëel-wereld het samenvoegen ](../assets/performance/images/magentoMergingDevWorld.png)
+![&#x200B; Reëel-wereld het samenvoegen &#x200B;](../assets/performance/images/magentoMergingDevWorld.png)
 
 ## Rendertijden in de praktijk
 
@@ -60,13 +60,13 @@ De vorige gebundelde en samengevoegde laadtijden zien er goed uit in een ontwikk
 
 Om uw storefront plaatsing voor de echte wereld te testen en voor te bereiden, adviseren wij u met het Chrome inheemse throttling profiel van &quot;Traag 3G.&quot; te testen Met Trage 3G weerspiegelen onze vorige gebundelde uitvoertijden nu de verbindingsrealiteiten van veel gebruikers:
 
-![ Reëel-wereld die ](../assets/performance/images/magentoBundlingRealWorld.png) bundelt
+![&#x200B; Reëel-wereld die &#x200B;](../assets/performance/images/magentoBundlingRealWorld.png) bundelt
 
 Bij trage 3G-connectiviteit duurt het ongeveer 44 seconden om alle bundels te laden voor de startpagina van een schone [!DNL Commerce] -installatie.
 
 Dit geldt ook voor het samenvoegen van de bundels in één bestand. Gebruikers konden nog steeds ongeveer 42 seconden wachten op het laden van de eerste pagina, zoals hier wordt getoond:
 
-![ Reëel-wereld het samenvoegen ](../assets/performance/images/magentoMergingRealWorld.png)
+![&#x200B; Reëel-wereld het samenvoegen &#x200B;](../assets/performance/images/magentoMergingRealWorld.png)
 
 Met een geavanceerdere aanpak van [!DNL JavaScript] -bundeling kunnen we deze laadtijden verbeteren.
 
@@ -86,9 +86,9 @@ Met een schone [!DNL Commerce] -installatie kunnen voldoende goede prestaties wo
 
 In de volgende stappen moet u de volgende programma&#39;s installeren en vertrouwd zijn met deze programma&#39;s:
 
-- [ nodejs ](https://nodejs.org/en/download/)
-- [ r.js ](http://requirejs.org/docs/optimization.html#download)
-- [[!DNL PhantomJS] ](https://phantomjs.org/) (optioneel)
+- [&#x200B; nodejs &#x200B;](https://nodejs.org/en/download/)
+- [&#x200B; r.js &#x200B;](http://requirejs.org/docs/optimization.html#download)
+- [[!DNL PhantomJS] &#x200B;](https://phantomjs.org/) (optioneel)
 
 ### Voorbeeldcode
 
@@ -133,7 +133,7 @@ Voeg de volgende RequireJS knopen van de bouwstijlconfiguratie, `deps`, `shim`, 
 
 In deze stap moet u alle meerdere `deps` -, `shim` -, `paths` - en `map` configuratieknooppunten uit het `requirejs-config.js` -bestand van uw winkel samenvoegen tot de corresponderende knooppunten in uw `build.js` -bestand. Hiertoe opent u het tabblad **[!UICONTROL Network]** in het deelvenster Gereedschappen voor ontwikkelaars van uw browser en navigeert u naar elke pagina in uw winkel, zoals de startpagina. Op het tabblad Netwerk ziet u de instantie van het `requirejs-config.js` -bestand van uw winkel bovenaan, die hier wordt gemarkeerd:
 
-![ RequireJS configuratie ](../assets/performance/images/RequireJSConfig.png)
+![&#x200B; RequireJS configuratie &#x200B;](../assets/performance/images/RequireJSConfig.png)
 
 In dit bestand vindt u meerdere items voor elk van de configuratieknooppunten (`deps` , `shim` , `paths` , `map` ). U moet deze veelvoudige knoopwaarden in de enige configuratieknooppunt van uw build.js- dossier samenvoegen. Als de `requirejs-config.js` -instantie van uw winkel bijvoorbeeld items bevat voor 15 aparte `map` knooppunten, moet u de items voor alle 15 knooppunten samenvoegen tot één `map` -knooppunt in uw `build.js` -bestand. Hetzelfde geldt voor de knooppunten `deps` , `shim` en `paths` . Zonder een script om dit proces te automatiseren kan het enige tijd duren.
 
@@ -307,7 +307,7 @@ awk 'END {
 }' bundle/*.txt
 ```
 
-U kunt het manuscript in [ https://www.unix.com/shell-programming-and-scripting/140390-get-common-lines-multiple-files.html ](https://www.unix.com/shell-programming-and-scripting/140390-get-common-lines-multiple-files.html) ook vinden
+U kunt het manuscript in [&#x200B; https://www.unix.com/shell-programming-and-scripting/140390-get-common-lines-multiple-files.html &#x200B;](https://www.unix.com/shell-programming-and-scripting/140390-get-common-lines-multiple-files.html) ook vinden
 
 Open een terminal in de hoofdmap van [!DNL Commerce] en voer het bestand uit:
 
@@ -501,7 +501,7 @@ require.config({
 
 Nadat de pagina is geladen, ziet u dat de browser verschillende afhankelijkheden en bundels laadt. Hier volgen bijvoorbeeld de resultaten voor het profiel &#39;Langzaam 3G&#39;:
 
-![ tweemaal zo snel ](../assets/performance/images/TwiceAsFast.png)
+![&#x200B; tweemaal zo snel &#x200B;](../assets/performance/images/TwiceAsFast.png)
 
 De laadtijd van de pagina voor een lege startpagina is nu twee keer zo snel als het gebruik van native [!DNL Commerce] -pakketten. Maar we kunnen nog beter.
 
@@ -519,6 +519,6 @@ Als u de optimalisator in uw `build.js` -bestand wilt inschakelen, voegt u `ugli
 ```
 
 De resultaten kunnen significant zijn:
-![ drie keer sneller ](../assets/performance/images/ThreeTimesFaster.png)
+![&#x200B; drie keer sneller &#x200B;](../assets/performance/images/ThreeTimesFaster.png)
 
 De laadtijden zijn nu drie keer sneller dan bij native [!DNL Commerce] -bundeling.

@@ -13,13 +13,13 @@ ht-degree: 0%
 
 # Gebruik
 
-[[!DNL Quality Patches Tool] ](https://github.com/magento/quality-patches) levert individuele die flarden door Adobe en de gemeenschap van Magento Open Source worden ontwikkeld. Hiermee kunt u algemene informatie over alle afzonderlijke patches die beschikbaar zijn voor de geïnstalleerde versie van Adobe Commerce, toepassen, herstellen en weergeven. U kunt patches toepassen op Adobe Commerce-projecten, ongeacht wie de patch heeft ontwikkeld. U kunt bijvoorbeeld een patch toepassen die door de gemeenschap is ontwikkeld op Adobe Commerce-projecten.
+[[!DNL Quality Patches Tool] &#x200B;](https://github.com/magento/quality-patches) levert individuele die flarden door Adobe en de gemeenschap van Magento Open Source worden ontwikkeld. Hiermee kunt u algemene informatie over alle afzonderlijke patches die beschikbaar zijn voor de geïnstalleerde versie van Adobe Commerce, toepassen, herstellen en weergeven. U kunt patches toepassen op Adobe Commerce-projecten, ongeacht wie de patch heeft ontwikkeld. U kunt bijvoorbeeld een patch toepassen die door de gemeenschap is ontwikkeld op Adobe Commerce-projecten.
 
-Bekijk deze [ technische video ](https://experienceleague.adobe.com/docs/commerce-learn/tutorials/tools/quality-patch-tool.html?lang=en) en leer hoe te om het Hulpmiddel van de Patches van de Kwaliteit voor Adobe Commerce te gebruiken.
+Bekijk deze [&#x200B; technische video &#x200B;](https://experienceleague.adobe.com/docs/commerce-learn/tutorials/tools/quality-patch-tool.html?lang=en) en leer hoe te om het Hulpmiddel van de Patches van de Kwaliteit voor Adobe Commerce te gebruiken.
 
 >[!INFO]
 >
->Zie [ individuele flarden ](#apply-individual-patches) voor instructies op het toepassen van flarden op uw projecten van Adobe Commerce toepassen. Zie [[!DNL Quality Patches Tool]: Zoeken naar patches ](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html) voor een volledige lijst met vrijgegeven patches.
+>Zie [&#x200B; individuele flarden &#x200B;](#apply-individual-patches) voor instructies op het toepassen van flarden op uw projecten van Adobe Commerce toepassen. Zie [[!DNL Quality Patches Tool]: Zoeken naar patches &#x200B;](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html) voor een volledige lijst met vrijgegeven patches.
 
 >[!WARNING]
 >
@@ -29,7 +29,7 @@ Bekijk deze [ technische video ](https://experienceleague.adobe.com/docs/commerc
 
 >[!INFO]
 >
->Als het niet reeds geïnstalleerd is, moet u [[!DNL Git] installeren ](https://github.com/git-guides/install-git) of [ Reparatie ](https://man7.org/linux/man-pages/man1/patch.1.html) alvorens [!DNL Quality Patches Tool] te installeren. Voeg het `magento/quality-patches` Composer-pakket toe aan uw `composer.json` -bestand:
+>Als het niet reeds geïnstalleerd is, moet u [[!DNL Git] installeren &#x200B;](https://github.com/git-guides/install-git) of [&#x200B; Reparatie &#x200B;](https://man7.org/linux/man-pages/man1/patch.1.html) alvorens [!DNL Quality Patches Tool] te installeren. Voeg het `magento/quality-patches` Composer-pakket toe aan uw `composer.json` -bestand:
 
 ```bash
 composer require magento/quality-patches
@@ -62,7 +62,7 @@ Adobe Commerce 2.3.5.
 De statustabel bevat:
 
 - **Type**:
-   - `Optional` — Alle flarden van [!DNL Quality Patches Tool] en [ Commerce op de Gids van de Infrastructuur van de Wolk > passen flarden ](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html) pakket toe zijn facultatief voor de installaties van Adobe Commerce.
+   - `Optional` — Alle flarden van [!DNL Quality Patches Tool] en [&#x200B; Commerce op de Gids van de Infrastructuur van de Wolk > passen flarden &#x200B;](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html) pakket toe zijn facultatief voor de installaties van Adobe Commerce.
    - `Deprecated` — Adobe heeft de afzonderlijke patch vervangen. Als u de pleister hebt aangebracht, raden wij u aan deze weer in te voeren. De herstelbewerking verwijdert de patch ook uit de statustabel.
 
 - **Status**:
@@ -77,13 +77,13 @@ De statustabel bevat:
 
 >[!INFO]
 >
->Nadat u de upgrade naar een nieuwe versie van Adobe Commerce hebt uitgevoerd, moet u de patches opnieuw toepassen als de patches niet in de nieuwe versie zijn opgenomen. Zie [ passen flarden na een verbetering ](#re-apply-patches-after-an-upgrade) opnieuw toe.
+>Nadat u de upgrade naar een nieuwe versie van Adobe Commerce hebt uitgevoerd, moet u de patches opnieuw toepassen als de patches niet in de nieuwe versie zijn opgenomen. Zie [&#x200B; passen flarden na een verbetering &#x200B;](#re-apply-patches-after-an-upgrade) opnieuw toe.
 
 ## Afzonderlijke patches toepassen {#apply-individual-patches}
 
 >[!WARNING]
 >
->Het is aan te raden om alle patches in een testomgeving of ontwikkelomgeving te testen voordat ze worden geïmplementeerd. Het wordt ook aanbevolen een back-up van uw gegevens te maken voordat u een patch toepast. Zie [ Steun en terugdraaiend het dossiersysteem, media, en gegevensbestand ](https://experienceleague.adobe.com/docs/commerce-operations/installation-guide/tutorials/backup.html).
+>Het is aan te raden om alle patches in een testomgeving of ontwikkelomgeving te testen voordat ze worden geïmplementeerd. Het wordt ook aanbevolen een back-up van uw gegevens te maken voordat u een patch toepast. Zie [&#x200B; Steun en terugdraaiend het dossiersysteem, media, en gegevensbestand &#x200B;](https://experienceleague.adobe.com/docs/commerce-operations/installation-guide/tutorials/backup.html).
 
 Als u één patch wilt toepassen, voert u de volgende opdracht uit, waarbij `MAGETWO-XXXX` de patch-id is die in de statustabel is opgegeven:
 
@@ -105,13 +105,13 @@ U moet de cache wissen nadat u patches hebt toegepast om de wijzigingen in de Ad
 
 >[!INFO]
 >
->Bewaar een lijst met toegepaste patches op een aparte locatie. Mogelijk moet u een aantal van deze programma&#39;s opnieuw toepassen nadat u een upgrade hebt uitgevoerd naar een nieuwe versie van Adobe Commerce. Zie [ passen flarden na een verbetering ](#re-apply-patches-after-an-upgrade) opnieuw toe.
+>Bewaar een lijst met toegepaste patches op een aparte locatie. Mogelijk moet u een aantal van deze programma&#39;s opnieuw toepassen nadat u een upgrade hebt uitgevoerd naar een nieuwe versie van Adobe Commerce. Zie [&#x200B; passen flarden na een verbetering &#x200B;](#re-apply-patches-after-an-upgrade) opnieuw toe.
 
 ## Afzonderlijke patches herstellen
 
 >[!WARNING]
 >
->Het is aan te raden om alle patches in een testomgeving of ontwikkelomgeving te testen voordat ze worden geïmplementeerd. Het wordt ook aanbevolen een back-up van uw gegevens te maken voordat u een patch toepast. Zie [ Steun en terugdraaiend het dossiersysteem, media, en gegevensbestand ](https://experienceleague.adobe.com/docs/commerce-operations/installation-guide/tutorials/backup.html).
+>Het is aan te raden om alle patches in een testomgeving of ontwikkelomgeving te testen voordat ze worden geïmplementeerd. Het wordt ook aanbevolen een back-up van uw gegevens te maken voordat u een patch toepast. Zie [&#x200B; Steun en terugdraaiend het dossiersysteem, media, en gegevensbestand &#x200B;](https://experienceleague.adobe.com/docs/commerce-operations/installation-guide/tutorials/backup.html).
 
 Als u één patch wilt herstellen, voert u de volgende opdracht uit, waarbij `MAGETWO-XXXX` de patch-id is die in de statustabel is opgegeven:
 
@@ -167,7 +167,7 @@ Patches opnieuw toepassen:
    composer update magento/quality-patches.
    ```
 
-1. Open de lijst van eerder toegepaste flarden, die in [ werd geadviseerd individuele flarden ](#apply-individual-patches) toepassen.
+1. Open de lijst van eerder toegepaste flarden, die in [&#x200B; werd geadviseerd individuele flarden &#x200B;](#apply-individual-patches) toepassen.
 
 1. Pas de pleisters toe:
 

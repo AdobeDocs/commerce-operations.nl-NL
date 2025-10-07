@@ -15,8 +15,8 @@ ht-degree: 0%
 
 Gebruik deze opdracht om uw XML-bestanden voor lay-outs bij te werken als u de overeenkomstige XSLT-stijlpagina (Extensible Stylesheet Language Transformations) bijwerkt.
 
-- [ instructies van de Lay-out ](https://developer.adobe.com/commerce/frontend-core/guide/layouts/xml-instructions/)
-- [ de dossiertypes van de Lay-out ](https://developer.adobe.com/commerce/frontend-core/guide/layouts/types/)
+- [&#x200B; instructies van de Lay-out &#x200B;](https://developer.adobe.com/commerce/frontend-core/guide/layouts/xml-instructions/)
+- [&#x200B; de dossiertypes van de Lay-out &#x200B;](https://developer.adobe.com/commerce/frontend-core/guide/layouts/types/)
 
 Opdrachtopties:
 
