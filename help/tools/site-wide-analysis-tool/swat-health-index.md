@@ -1,9 +1,9 @@
 ---
 title: Scores en aanbevelingen voor SWAT-gezondheidsindex
 description: Leer wat de Health Index van het Hulpmiddel van de Analyse van de Plaats voor uw plaats van Adobe Commerce betekent. Ontdek hoe u scores kunt interpreteren en aanbevelingen effectief kunt gebruiken.
-source-git-commit: e39e0229538bb245fbe744ebfd642572fc2dc790
+source-git-commit: d9b598e9399c26c8fb7c52e9f211029689343ce9
 workflow-type: tm+mt
-source-wordcount: '331'
+source-wordcount: '330'
 ht-degree: 0%
 
 ---
@@ -12,7 +12,7 @@ ht-degree: 0%
 
 Wanneer u **[!DNL Recommendations Report]** van het SWAT Dashboard downloadt, omvat PDF a **[!DNL Site Wide Analysis Tool Health Index]** score in de **sectie van de Inleiding**:
 
-![&#x200B; score van de Index van de Gezondheid van het Hulpmiddel van de Analyse van de Plaats Wide in het geproduceerde Rapport van Aanbevelingen &#x200B;](https://git.corp.adobe.com/AdobeDocs/commerce-operations.en/assets/38345/cf56a076-e5a8-488d-927d-a3989966a089)
+![ score van de Index van de Gezondheid van het Hulpmiddel van de Analyse van de Plaats Wide in het geproduceerde Rapport van Aanbevelingen ](/help/assets/tools/swat-health-index-scroe.png)
 
 Met de SWAT Health Index kunt u de algemene gezondheid van uw Adobe Commerce-site controleren en verbeteren. Deze score is een hulpmiddel, geen absolute pas-of-mislukkingsmaat.
 
