@@ -13,7 +13,7 @@ ht-degree: 0%
 
 De [!UICONTROL Recommendations page] op de pagina [!DNL Site-Wide Analysis Tool] bevat:
 
-* De Score van de Index van de Gezondheid van A [ SWAT ](#swat-health-index.md) om u te helpen de algemene gezondheid van uw plaats van Adobe Commerce controleren en verbeteren
+* De Score van de Index van de Gezondheid van A [&#x200B; SWAT &#x200B;](#swat-health-index.md) om u te helpen de algemene gezondheid van uw plaats van Adobe Commerce controleren en verbeteren
 * Lijst met aanbevelingen op basis van aanbevolen procedures om problemen op uw site op te lossen.
 
 De aanbevelingen worden gesorteerd door prioriteit van PO aan P4, waar PO kritiek is en P4 laag is. De bevindingen omvatten een beschrijving, een aanbeveling, een impact op de site, de hoofdoorzaak, scenario&#39;s/voorwaarden, het verwachte resultaat en de gebruikte gereedschappen.
