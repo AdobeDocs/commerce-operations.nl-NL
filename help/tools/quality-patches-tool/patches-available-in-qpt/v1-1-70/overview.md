@@ -3,7 +3,7 @@ title: 'Overzicht: [!DNL Quality Patches Tool]  (QPT) v1.1.70'
 description: Deze subsectie verstrekt een gedetailleerde beschrijving van de kwesties die door de flarden beschikbaar in  [!DNL Quality Patches Tool]  (QPT) v1.1.70 worden bevestigd.
 feature: Tools and External Services
 role: Admin, Developer
-source-git-commit: 824b1d8a7994938d9f000764631647757f20799d
+source-git-commit: 19e32289f4a7954d070370e065bc683d5f9b54e5
 workflow-type: tm+mt
 source-wordcount: '150'
 ht-degree: 0%
@@ -20,7 +20,7 @@ QPT v1.1.70 omvat de volgende flarden:
 1. **ACSD-66157**: De speciale prijs wordt niet van kracht voor websites die in verschillende tijdstreken worden gecreeerd.
 1. **ACSD-67659**: Vertaalde foutenmeldingen keren een *ONGEDEFINIEERDE* code terug.
 1. **ACSD-67166**: De dubbele `cataloginventory_stock_status` vraaglooppas wanneer ladend citaat op storefront.
-1. **ACSD-67030**: De eenvoudige producten krijgen unassigned van configureerbaar wanneer uitgegeven door beperkt-rol admin.
+1. **[ACSD-67030](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-70/acsd-67030.md)**: De eenvoudige producten krijgen unassigned van configureerbaar wanneer uitgegeven door beperkt-rol admin.
 1. **ACSD-67289**: De regelmatige prijs ontbreekt om te tonen wanneer de speciale prijs wordt toegepast.
 
 Gebruik het menu links om naar een specifieke patchpagina te navigeren.
