@@ -15,7 +15,7 @@ Deze sectie bevat informatie over veiligheid, privacy, en regelgevende naleving.
 
 ## Beveiliging
 
-- [&#x200B; de Veiligheid van het Product van Adobe &#x200B;](https://helpx.adobe.com/security.html): Leer over de recentste flarden, veiligheidsupdates, en beste praktijken voor Adobe Commerce.
+- [&#x200B; de Veiligheid van het Product van Adobe &#x200B;](https://helpx.adobe.com/nl/security.html): Leer over de recentste flarden, veiligheidsupdates, en beste praktijken voor Adobe Commerce.
 - [&#x200B; het Vertrouwenscentrum van Adobe &#x200B;](https://www.adobe.com/trust.html): Heb toegang tot de recentste beschikbare informatie over de operationele gezondheid, de veiligheid, de privacy, en de naleving van alle de wolkendiensten van Adobe.
 - [&#x200B; Plaats-brede Hulpmiddel van de Analyse &#x200B;](../tools/site-wide-analysis-tool/dashboard.md): Mening gestroomlijnde veiligheidsinzichten over uw plaats van Adobe Commerce, met inbegrip van veiligheidsaftasten, de diensten van het eind van het leven, en veiligheidsaanbevelingen.
 
