@@ -25,8 +25,8 @@ De _gids van de Configuratie_ verstrekt verwijzingsmateriaal en beperkte begelei
 
 ## Commerce Admin-configuratie
 
-Er zijn overeenkomstige onderwerpen in de [ Gids van de Gebruiker van Commerce ](https://experienceleague.adobe.com/en/docs/commerce-admin/config/guide-overview) die u kan helpen om gebiedsbeschrijvingen voor elke configuratie te begrijpen die in Commerce Admin plaatst.
+Er zijn overeenkomstige onderwerpen in de [&#x200B; Gids van de Gebruiker van Commerce &#x200B;](https://experienceleague.adobe.com/en/docs/commerce-admin/config/guide-overview) die u kan helpen om gebiedsbeschrijvingen voor elke configuratie te begrijpen die in Commerce Admin plaatst.
 
 ## Cloud-configuratie
 
-[!DNL Commerce on cloud infrastructure] gebruikt a [ reeks configuratiedossiers ](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure/overview.html) om de de toepassingseigenschappen en diensten van Commerce in de ontvangen milieu&#39;s bij te werken. Wegens de unieke aard van de wolk-ontvangen milieu&#39;s van Adobe, zou u de [ gids van de Wolk ](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/overview.html) voor extra configuratievereisten altijd moeten herzien.
+[!DNL Commerce on cloud infrastructure] gebruikt a [&#x200B; reeks configuratiedossiers &#x200B;](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure/overview.html) om de de toepassingseigenschappen en diensten van Commerce in de ontvangen milieu&#39;s bij te werken. Wegens de unieke aard van de wolk-ontvangen milieu&#39;s van Adobe, zou u de [&#x200B; gids van de Wolk &#x200B;](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/overview.html) voor extra configuratievereisten altijd moeten herzien.
