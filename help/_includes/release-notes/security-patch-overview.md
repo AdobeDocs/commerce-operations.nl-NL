@@ -1,7 +1,7 @@
 ---
-source-git-commit: 0eb7528ebcc1515defd672830b8f00e460819aa1
+source-git-commit: 4a2266f2df235b98ed3b738af4b97cb4b74dc664
 workflow-type: tm+mt
-source-wordcount: '234'
+source-wordcount: '265'
 ht-degree: 0%
 
 ---
@@ -17,4 +17,8 @@ Beveiligingspatchreleases kunnen ook wijzigingen met betrekking tot de naleving 
 
 Elke beveiligingspatchrelease is gebaseerd op de vorige volledige patchrelease. Het bevat kwaliteits- en beveiligingsoplossingen van eerdere patchreleases en beveiligingsoplossingen die zijn gemaakt tussen de vorige volledige patchrelease en de beveiligingspatchrelease.
 
-Voor instructies bij het downloaden van en het toepassen van veiligheidspatches, zie [ hoe te om veiligheidspatches ](https://experienceleague.adobe.com/nl/docs/commerce-knowledge-base/kb/how-to/how-to-obtain-and-apply-security-patches) in _Adobe Commerce Knowledgebase_ te verkrijgen en toe te passen.
+Voor instructies bij het downloaden van en het toepassen van veiligheidspatches, zie [ hoe te om veiligheidspatches ](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/how-to/how-to-obtain-and-apply-security-patches) in _Adobe Commerce Knowledgebase_ te verkrijgen en toe te passen.
+
+>[!NOTE]
+>
+>Uitgebreide beveiligingspatches voor 2.4.4 en 2.4.5 zijn alleen beschikbaar voor Adobe Commerce-klanten en niet voor de Magento Open Source-codebasis. Zie [ Uitgebreide Steun ](https://experienceleague.adobe.com/en/docs/commerce-operations/release/planning/lifecycle-policy#extended-support).
