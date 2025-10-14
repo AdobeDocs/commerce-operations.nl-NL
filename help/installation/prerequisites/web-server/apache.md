@@ -26,11 +26,11 @@ Adobe Commerce ondersteunt Apache 2.4.x.
 
 ## Apache herschrijft en opent
 
-Dit onderwerp bespreekt hoe te om Apache 2.4 toe te laten herschrijft en specificeert het plaatsen voor het [ verdeelde configuratiedossier, `.htaccess` ](https://github.com/magento/magento2/blob/2.4-develop/.htaccess.sample).
+Dit onderwerp bespreekt hoe te om Apache 2.4 toe te laten herschrijft en specificeert het plaatsen voor het [&#x200B; verdeelde configuratiedossier, `.htaccess` &#x200B;](https://github.com/magento/magento2/blob/2.4-develop/.htaccess.sample).
 
 Adobe Commerce gebruikt herschrijvingen op de server en `.htaccess` voor instructies op directoryniveau voor Apache. De volgende instructies zijn ook inbegrepen in alle andere secties in dit onderwerp.
 
-Gebruik deze sectie om Apache 2.4 toe te laten herschrijft en specificeert het plaatsen voor het [ verdeelde configuratiedossier, `.htaccess` ](https://httpd.apache.org/docs/current/howto/htaccess.html)
+Gebruik deze sectie om Apache 2.4 toe te laten herschrijft en specificeert het plaatsen voor het [&#x200B; verdeelde configuratiedossier, `.htaccess` &#x200B;](https://httpd.apache.org/docs/current/howto/htaccess.html)
 
 Adobe Commerce gebruikt herschrijvingen op de server en `.htaccess` voor instructies op directoryniveau voor Apache.
 
@@ -44,7 +44,7 @@ Adobe Commerce gebruikt herschrijvingen op de server en `.htaccess` voor instruc
    a2enmod rewrite
    ```
 
-1. Om de toepassing toe te laten om het verdeelde `.htaccess` configuratiedossier te gebruiken, zie de richtlijnen in [ Apache 2.4 documentatie ](https://httpd.apache.org/docs/current/mod/mod_rewrite.html).
+1. Om de toepassing toe te laten om het verdeelde `.htaccess` configuratiedossier te gebruiken, zie de richtlijnen in [&#x200B; Apache 2.4 documentatie &#x200B;](https://httpd.apache.org/docs/current/mod/mod_rewrite.html).
 
    >[!TIP]
    >
@@ -60,7 +60,7 @@ Adobe Commerce gebruikt herschrijvingen op de server en `.htaccess` voor instruc
 
    >[!NOTE]
    >
-   >Soms zijn aanvullende parameters vereist. Voor meer informatie, zie [ Apache 2.4 documentatie ](https://httpd.apache.org/docs/2.4/mod/mod_access_compat.html#order).
+   >Soms zijn aanvullende parameters vereist. Voor meer informatie, zie [&#x200B; Apache 2.4 documentatie &#x200B;](https://httpd.apache.org/docs/2.4/mod/mod_access_compat.html#order).
 
 1. Als u Apache-instellingen hebt gewijzigd, start u Apache opnieuw:
 
@@ -81,12 +81,12 @@ Adobe Commerce gebruikt herschrijvingen op de server en `.htaccess` voor instruc
 
 Adobe Commerce vereist de installatie van de volgende Apache-modules:
 
-- [ mod_deflate.c ](https://httpd.apache.org/docs/2.4/mod/mod_deflate.html)
-- [ mod_expired.c ](https://httpd.apache.org/docs/2.4/mod/mod_expires.html)
-- [ mod_headers.c ](https://httpd.apache.org/docs/2.4/mod/mod_headers.html)
-- [ mod_rewrite.c ](https://httpd.apache.org/docs/2.4/mod/mod_rewrite.html)
-- [ mod_security.c ](https://modsecurity.org)
-- [ mod_ssl.c ](https://httpd.apache.org/docs/2.4/mod/mod_ssl.html)
+- [&#x200B; mod_deflate.c &#x200B;](https://httpd.apache.org/docs/2.4/mod/mod_deflate.html)
+- [&#x200B; mod_expired.c &#x200B;](https://httpd.apache.org/docs/2.4/mod/mod_expires.html)
+- [&#x200B; mod_headers.c &#x200B;](https://httpd.apache.org/docs/2.4/mod/mod_headers.html)
+- [&#x200B; mod_rewrite.c &#x200B;](https://httpd.apache.org/docs/2.4/mod/mod_rewrite.html)
+- [&#x200B; mod_security.c &#x200B;](https://modsecurity.org)
+- [&#x200B; mod_ssl.c &#x200B;](https://httpd.apache.org/docs/2.4/mod/mod_ssl.html)
 
 ## De Apache-versie verifiëren
 
@@ -137,7 +137,7 @@ De standaardversie van Apache installeren:
    Server built: 2020-04-15T18:00:57
    ```
 
-1. Schakel [ herschrijft en `.htaccess`](#apache-rewrites-and-htaccess) in.
+1. Schakel [&#x200B; herschrijft en `.htaccess`](#apache-rewrites-and-htaccess) in.
 
 ### Apache bijwerken op Ubuntu
 
@@ -165,7 +165,7 @@ Ga als volgt te werk om bij te werken naar Apache 2.4:
 
    >[!NOTE]
    >
-   >Als &quot;apt-get installeert&quot;bevel wegens onontmoet gebiedsdelen ontbreekt, raadpleeg een middel zoals [ https://askubuntu.com/ ](https://askubuntu.com/questions/140246/how-do-i-resolve-unmet-dependencies-after-adding-a-ppa).
+   >Als &quot;apt-get installeert&quot;bevel wegens onontmoet gebiedsdelen ontbreekt, raadpleeg een middel zoals [&#x200B; https://askubuntu.com/ &#x200B;](https://askubuntu.com/questions/140246/how-do-i-resolve-unmet-dependencies-after-adding-a-ppa).
 
 1. Controleer de installatie.
 
@@ -180,7 +180,7 @@ Ga als volgt te werk om bij te werken naar Apache 2.4:
    Server built: Jul 22 2020 22:46:25
    ```
 
-1. Schakel [ herschrijft en `.htaccess`](#apache-rewrites-and-htaccess) in.
+1. Schakel [&#x200B; herschrijft en `.htaccess`](#apache-rewrites-and-htaccess) in.
 
 ## Apache installeren op CentOS
 
@@ -244,7 +244,7 @@ Het installeren en configureren van Apache is in feite een proces in drie stappe
 
    >[!NOTE]
    >
-   >De voorafgaande waarden voor `Order` werken mogelijk niet in alle gevallen. Voor meer informatie, zie de documentatie Apache ([ 2.4 ](https://httpd.apache.org/docs/2.4/mod/mod_authz_host.html#order)).
+   >De voorafgaande waarden voor `Order` werken mogelijk niet in alle gevallen. Voor meer informatie, zie de documentatie Apache ([&#x200B; 2.4 &#x200B;](https://httpd.apache.org/docs/2.4/mod/mod_authz_host.html#order)).
 
 1. Sla het bestand op en sluit de teksteditor af.
 
@@ -307,7 +307,7 @@ Als u 403 Verboden fouten tegenkomt bij het openen van de site, kunt u uw Apache
 
 ### 403 Verboden fouten voor Apache 2.4 oplossen
 
-Om websitebezoekers toe te laten om tot uw plaats toegang te hebben, gebruik één van [ vereisen richtlijnen ](https://httpd.apache.org/docs/2.4/howto/access.html).
+Om websitebezoekers toe te laten om tot uw plaats toegang te hebben, gebruik één van [&#x200B; vereisen richtlijnen &#x200B;](https://httpd.apache.org/docs/2.4/howto/access.html).
 
 Bijvoorbeeld:
 
@@ -322,4 +322,4 @@ Bijvoorbeeld:
 
 >[!NOTE]
 >
->De voorafgaande waarden voor `Order` werken mogelijk niet in alle gevallen. Voor meer informatie, zie de [ documentatie Apache ](https://httpd.apache.org/docs/2.4/mod/mod_access_compat.html#order).
+>De voorafgaande waarden voor `Order` werken mogelijk niet in alle gevallen. Voor meer informatie, zie de [&#x200B; documentatie Apache &#x200B;](https://httpd.apache.org/docs/2.4/mod/mod_access_compat.html#order).

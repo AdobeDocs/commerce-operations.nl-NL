@@ -11,7 +11,7 @@ ht-degree: 0%
 
 # [!DNL Extensions]
 
-Een [!DNL extension] is een aangepaste module, een taalpakket of een combinatie van aangepaste modules en taalpakketten die nieuwe functionaliteit toevoegen aan het basis-Adobe Commerce-product. [ Commerce Marketplace ](https://marketplace.magento.com/extensions.html) biedt een selectie van [!DNL extensions] aan die voor vrij en die beschikbaar zijn te koop. De lijst met [!DNL extensions] die op uw Adobe Commerce-exemplaar is geïnstalleerd, vindt u in [!DNL Site-Wide Analysis Tool] .
+Een [!DNL extension] is een aangepaste module, een taalpakket of een combinatie van aangepaste modules en taalpakketten die nieuwe functionaliteit toevoegen aan het basis-Adobe Commerce-product. [&#x200B; Commerce Marketplace &#x200B;](https://marketplace.magento.com/extensions.html) biedt een selectie van [!DNL extensions] aan die voor vrij en die beschikbaar zijn te koop. De lijst met [!DNL extensions] die op uw Adobe Commerce-exemplaar is geïnstalleerd, vindt u in [!DNL Site-Wide Analysis Tool] .
 
 ## Wanneer gebruiken
 
@@ -31,4 +31,4 @@ Het tabblad [!DNL Extensions] in [!DNL Site-Wide Analysis Tool] biedt informatie
 
 * Als u [!DNL extensions] van derden niet up-to-date kunt houden met de meest recente versies, kunt u wellicht andere [!DNL extensions] gebruiken.
 
-* Om potentiële kwesties te vermijden, download/koop derde [!DNL extensions] van een vertrouwde op bron, als [ Commerce Marketplace ](https://marketplace.magento.com/extensions.html).
+* Om potentiële kwesties te vermijden, download/koop derde [!DNL extensions] van een vertrouwde op bron, als [&#x200B; Commerce Marketplace &#x200B;](https://marketplace.magento.com/extensions.html).

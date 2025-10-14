@@ -19,11 +19,11 @@ Met deze opdracht kunt u back-ups maken:
 
 Back-ups worden opgeslagen in de map `var/backups` en kunnen op elk gewenst moment worden hersteld met de opdracht [`magento setup:rollback`](uninstall-modules.md#roll-back-the-file-system-database-or-media-files) .
 
-Na het steunen, kunt u [ terugschroeven van prijzen ](#rollback) later.
+Na het steunen, kunt u [&#x200B; terugschroeven van prijzen &#x200B;](#rollback) later.
 
 >[!TIP]
 >
->Voor Adobe Commerce op de projecten van de wolkeninfrastructuur, zie [ Momentopnamen en reservebeheer ](https://experienceleague.adobe.com/nl/docs/commerce-cloud-service/user-guide/develop/storage/snapshots) in de _gids van de Wolk_.
+>Voor Adobe Commerce op de projecten van de wolkeninfrastructuur, zie [&#x200B; Momentopnamen en reservebeheer &#x200B;](https://experienceleague.adobe.com/nl/docs/commerce-cloud-service/user-guide/develop/storage/snapshots) in de _gids van de Wolk_.
 
 ## Back-ups inschakelen
 
@@ -46,11 +46,11 @@ Soms, veroorzaakt een lange vraagkoord de toegewezen geheugenruimte van de gebru
 
 ## Openen van bestanden instellen `ulimit`
 
-Wij adviseren plaatsend de open dossiers [`ulimit` ](https://ss64.com/bash/ulimit.html) voor de gebruiker van het dossiersysteem aan een waarde van `65536` of meer.
+Wij adviseren plaatsend de open dossiers [`ulimit` &#x200B;](https://ss64.com/bash/ulimit.html) voor de gebruiker van het dossiersysteem aan een waarde van `65536` of meer.
 
 U kunt dit doen of op de bevellijn of u kunt het een permanent het plaatsen voor de gebruiker door hun shell manuscript uit te geven maken.
 
-Alvorens u verdergaat, als u dit nog niet hebt gedaan, schakelaar aan de [ eigenaar van het dossiersysteem ](../prerequisites/file-system/overview.md).
+Alvorens u verdergaat, als u dit nog niet hebt gedaan, schakelaar aan de [&#x200B; eigenaar van het dossiersysteem &#x200B;](../prerequisites/file-system/overview.md).
 
 Opdracht:
 
@@ -66,7 +66,7 @@ Indien nodig kunt u dit wijzigen in een hogere waarde.
 
 U kunt als volgt de waarde in de Bash-shell van de gebruiker instellen:
 
-1. Als u dit nog niet hebt gedaan, schakelaar aan de [ eigenaar van het dossiersysteem ](../prerequisites/file-system/overview.md).
+1. Als u dit nog niet hebt gedaan, schakelaar aan de [&#x200B; eigenaar van het dossiersysteem &#x200B;](../prerequisites/file-system/overview.md).
 1. Open `/home/<username>/.bashrc` in een teksteditor.
 1. Voeg de volgende regel toe:
 
@@ -78,7 +78,7 @@ U kunt als volgt de waarde in de Bash-shell van de gebruiker instellen:
 
 >[!WARNING]
 >
->We raden u aan geen waarde in te stellen voor [`pcre.recursion_limit` ](https://www.php.net/manual/en/pcre.configuration.php) in het `php.ini` -bestand, omdat dit kan resulteren in onvolledige terugdraaiversies zonder foutmelding.
+>We raden u aan geen waarde in te stellen voor [`pcre.recursion_limit` &#x200B;](https://www.php.net/manual/en/pcre.configuration.php) in het `php.ini` -bestand, omdat dit kan resulteren in onvolledige terugdraaiversies zonder foutmelding.
 
 ## Back-up maken
 

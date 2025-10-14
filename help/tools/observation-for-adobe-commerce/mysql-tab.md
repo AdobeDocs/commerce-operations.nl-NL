@@ -14,37 +14,37 @@ ht-degree: 0%
 
 ## [!UICONTROL MySQL% free storage by node]
 
-![ MySQL% vrije opslag door knoop ](../../assets/tools/observation-for-adobe-commerce/mysql-tab-1.jpg)
+![&#x200B; MySQL% vrije opslag door knoop &#x200B;](../../assets/tools/observation-for-adobe-commerce/mysql-tab-1.jpg)
 
 Veel problemen worden veroorzaakt doordat MySQL onvoldoende opslagruimte heeft in de opslag die is toegewezen aan MySQL (`datadir` MySQL configuratie setting, default is `/data/mysql` ) of doordat `tmpdir` onvoldoende opslagruimte heeft. De standaardwaarde `tmpdir` (MySQL-instelling) is `/tmp` . In het **[!UICONTROL MySQL% free storage by node]** -frame wordt gekeken naar `/, /tmp` (als dit als een aparte hoeveelheid wordt gedefinieerd) en het `/data/mysql` -percentage voor vrije opslag. Niet-gecomprimeerde `tmp` tabellen worden vanaf MySQL versie 5.7 (MariaDB versie 10.2) naar een `tmp` tabelruimte in de map `/data/mysql` in het bestand (ibtmp1) geschreven. Dit bestand wordt standaard automatisch zonder limiet uitgebreid. Aangezien het een tabelruimte is, neemt de grootte niet af en wordt de waarde weer ingesteld op 12 MB wanneer MySQL opnieuw wordt gestart.
 
 ## [!UICONTROL MySQL Connections by Node]
 
-![ MySQL Verbindingen door Knoop ](../../assets/tools/observation-for-adobe-commerce/mysql-tab-2.jpg)
+![&#x200B; MySQL Verbindingen door Knoop &#x200B;](../../assets/tools/observation-for-adobe-commerce/mysql-tab-2.jpg)
 
 Het frame **[!UICONTROL MySQL Connections by Node]** geeft periodes van uitval van databaseknooppunten of grote volumes verbindingen aan.
 
 ## [!UICONTROL MySQL Node Summary]
 
-![ MySQL Overzicht van de Knoop ](../../assets/tools/observation-for-adobe-commerce/mysql-tab-3.jpg)
+![&#x200B; MySQL Overzicht van de Knoop &#x200B;](../../assets/tools/observation-for-adobe-commerce/mysql-tab-3.jpg)
 
 In de tabel **[!UICONTROL MySQL Node Summary]** worden de details van databaseknooppunten weergegeven, zoals de softwareversie en het instantietype (grootte).
 
 ## [!UICONTROL Galera Number of Nodes in cluster]
 
-![ Galerieaantal van Knoop in cluster ](../../assets/tools/observation-for-adobe-commerce/mysql-tab-4.jpg)
+![&#x200B; Galerieaantal van Knoop in cluster &#x200B;](../../assets/tools/observation-for-adobe-commerce/mysql-tab-4.jpg)
 
 In het frame **[!UICONTROL Galera Number of Nodes in cluster]** wordt informatie uit de MySQL-logboeken weergegeven. Als knooppunten zich aansluiten bij een cluster en dit verlaten, worden alleen de berichten voor het geselecteerde tijdframe weergegeven. Als een knooppunt de cluster verlaat vóór het tijdframe, bestaat er geen bericht tijdens dat tijdframe. Als u vermoedt dat de database te kort loopt voor een knooppunt, breidt u de tijdlijn uit naar een langere periode om te zien of u aanvullende informatie kunt zien. Als er tijdens de tijdsperiode informatie is die minder aangeeft dan alle knooppunten in de [!DNL Galera] -cluster, vouwt u het tijdframe uit om te zien of u kunt bepalen wanneer het knooppunt de cluster heeft verlaten.
 
 ## [!UICONTROL MySQL shutdowns and starts]
 
-![ afsluiten MySQL en beginnen ](../../assets/tools/observation-for-adobe-commerce/mysql-tab-5.jpg)
+![&#x200B; afsluiten MySQL en beginnen &#x200B;](../../assets/tools/observation-for-adobe-commerce/mysql-tab-5.jpg)
 
 Het frame **[!UICONTROL MySQL shutdowns and starts]** detecteert wanneer een knooppunt wordt afgesloten. De [!DNL Galera] -knooppunten worden verwijderd en worden automatisch verwijderd uit het knooppunt [!DNL Galera] . Dit zal typisch in een nieuw begin van de dienst MySQL resulteren.
 
 ## [!UICONTROL Galera log]
 
-![ Logboek van Galera ](../../assets/tools/observation-for-adobe-commerce/mysql-tab-6.jpg)
+![&#x200B; Logboek van Galera &#x200B;](../../assets/tools/observation-for-adobe-commerce/mysql-tab-6.jpg)
 
 In het frame **[!UICONTROL Galera log]** worden de tellingen weergegeven van bepaalde signalen uit de MySQL-logboeken met betrekking tot [!DNL Galera] -knooppunten, hun statussen en de statuswijzigingen van de [!DNL Galera] -cluster.
 
@@ -70,15 +70,15 @@ In het frame **[!UICONTROL Galera log]** worden de tellingen weergegeven van bep
 
 ## [!UICONTROL Galera Log by Host]
 
-![ Logboek van Galera door Gastheer ](../../assets/tools/observation-for-adobe-commerce/mysql-tab-7.jpg)
+![&#x200B; Logboek van Galera door Gastheer &#x200B;](../../assets/tools/observation-for-adobe-commerce/mysql-tab-7.jpg)
 
 Het **[!UICONTROL Galera Log by Host]** -frame is hetzelfde als het **[!UICONTROL Galera log]** -frame, behalve dat het frame wordt uitgesplitst per knooppunt voor hulp bij het oplossen van problemen.
 
 ## [!UICONTROL Database performance]
 
-![ prestaties van het Gegevensbestand ](../../assets/tools/observation-for-adobe-commerce/mysql-tab-8.jpg)
+![&#x200B; prestaties van het Gegevensbestand &#x200B;](../../assets/tools/observation-for-adobe-commerce/mysql-tab-8.jpg)
 
-In het **[!UICONTROL Database performance]** -frame worden de databaseprestaties tijdens specifieke aanvragen weergegeven. U kunt elke meting zien door erop te klikken in de gekleurde pictogrammen onder de grafiek. Veel van de metriek die in [ wordt geroepen de Prestaties van het Gegevensbestand MySQL van de Controle met New Relic ](https://newrelic.com/blog/how-to-relic/how-to-monitor-mysql) wordt gevonden in dit kader.
+In het **[!UICONTROL Database performance]** -frame worden de databaseprestaties tijdens specifieke aanvragen weergegeven. U kunt elke meting zien door erop te klikken in de gekleurde pictogrammen onder de grafiek. Veel van de metriek die in [&#x200B; wordt geroepen de Prestaties van het Gegevensbestand MySQL van de Controle met New Relic &#x200B;](https://newrelic.com/blog/how-to-relic/how-to-monitor-mysql) wordt gevonden in dit kader.
 
 * average(query.queryPerSecond)
 * average(query.slowQueriesPerSecond)
@@ -90,19 +90,19 @@ In het **[!UICONTROL Database performance]** -frame worden de databaseprestaties
 
 ## [!UICONTROL Transaction Database Call Count]
 
-![ Aantal van de Vraag van het Gegevensbestand van de Transactie ](../../assets/tools/observation-for-adobe-commerce/mysql-tab-9.jpg)
+![&#x200B; Aantal van de Vraag van het Gegevensbestand van de Transactie &#x200B;](../../assets/tools/observation-for-adobe-commerce/mysql-tab-9.jpg)
 
 In het frame **[!UICONTROL Transaction Database Call Count]** wordt het aantal databaseaanroepen weergegeven dat door elke transactiefacet wordt uitgevoerd. Dit lijkt rijgeoriënteerd te zijn en geen verklaringen.
 
 ## [!UICONTROL Cron_schedule table updates]
 
-![ Cron_planning lijstupdates ](../../assets/tools/observation-for-adobe-commerce/mysql-tab-10.jpg)
+![&#x200B; Cron_planning lijstupdates &#x200B;](../../assets/tools/observation-for-adobe-commerce/mysql-tab-10.jpg)
 
 Het frame **[!UICONTROL Cron_schedule table updates]** geeft de maximale duur weer van databaseupdates naar de tabel cron_planning voor de geselecteerde tijdsperiode.
 
 ## [!UICONTROL Slow Query Traces]
 
-![ de Trage Wegen van de Vraag ](../../assets/tools/observation-for-adobe-commerce/mysql-tab-11.jpg)
+![&#x200B; de Trage Wegen van de Vraag &#x200B;](../../assets/tools/observation-for-adobe-commerce/mysql-tab-11.jpg)
 
 In het frame **[!UICONTROL Slow Query Traces]** worden de tabel en het aanvraagtype weergegeven waarin trage querysporen voorkomen. Een langzaam vraagspoor wordt gecreeerd voor vraagtransacties die langer dan vijf seconden duren. Van belang voor dit kader zijn de updatequery&#39;s. Als een tabel door de instructies `UPDATE` , `DELETE` en `INSERT` wordt bijgewerkt, kunnen deze gedurende een bepaalde periode tabellen vergrendelen.
 
@@ -110,17 +110,17 @@ Even `SELECT` instructies kunnen rijen vergrendelen bij gebruik met FOR UPDATE.
 
 ## [!UICONTROL Datastore Operations tables]
 
-![ de lijsten van de Verrichtingen van de Datastore ](../../assets/tools/observation-for-adobe-commerce/mysql-tab-12.jpg)
+![&#x200B; de lijsten van de Verrichtingen van de Datastore &#x200B;](../../assets/tools/observation-for-adobe-commerce/mysql-tab-12.jpg)
 
 ## [!UICONTROL Cron table change]
 
-![ de lijstverandering van het Gewas ](../../assets/tools/observation-for-adobe-commerce/mysql-tab-13.jpg)
+![&#x200B; de lijstverandering van het Gewas &#x200B;](../../assets/tools/observation-for-adobe-commerce/mysql-tab-13.jpg)
 
 Het **[!UICONTROL Cron table change]** -frame zoekt naar &#39;kan geen vergrendeling voor een snijtaak verkrijgen:&#39;-foutberichten, samen met een specifieke PHP-geheugenfout en vergrendelingen voor de `cron_schedule` -tabel. Als de `cron_schedule` -tabel is vergrendeld (bijvoorbeeld door een `DELETE` -query die ertegen wordt uitgevoerd), blokkeert deze de uitvoering van andere koronnen.
 
 ## [!UICONTROL Deadlocks]
 
-![ Deadlocks ](../../assets/tools/observation-for-adobe-commerce/mysql-tab-14.jpg)
+![&#x200B; Deadlocks &#x200B;](../../assets/tools/observation-for-adobe-commerce/mysql-tab-14.jpg)
 
 In het frame **[!UICONTROL Deadlocks]** worden de volgende tekenreeksen uit de MySQL-logboeken geparseerd:
 
@@ -188,19 +188,19 @@ In het frame **[!UICONTROL Deadlocks]** worden de volgende tekenreeksen uit de M
 
 ## [!UICONTROL DB Statistics]
 
-![ Statistieken van DB ](../../assets/tools/observation-for-adobe-commerce/mysql-tab-15.jpg)
+![&#x200B; Statistieken van DB &#x200B;](../../assets/tools/observation-for-adobe-commerce/mysql-tab-15.jpg)
 
 In het frame **[!UICONTROL DB Statistics]** worden per seconde verwijderde, geschreven, gelezen rijen, updates en trage query&#39;s weergegeven.
 
 ## [!UICONTROL Request frequency]
 
-![ frequentie van het Verzoek ](../../assets/tools/observation-for-adobe-commerce/mysql-tab-16.jpg)
+![&#x200B; frequentie van het Verzoek &#x200B;](../../assets/tools/observation-for-adobe-commerce/mysql-tab-16.jpg)
 
 ## [!UICONTROL Database Errors]
 
-![ Fouten van het Gegevensbestand ](../../assets/tools/observation-for-adobe-commerce/mysql-tab-17.jpg)
+![&#x200B; Fouten van het Gegevensbestand &#x200B;](../../assets/tools/observation-for-adobe-commerce/mysql-tab-17.jpg)
 
-Het **[!UICONTROL Database Errors]** kader toont een verscheidenheid van gegevensbestand [ waarschuwingen en fouten ](https://mariadb.com/kb/en/mariadb-error-codes/):
+Het **[!UICONTROL Database Errors]** kader toont een verscheidenheid van gegevensbestand [&#x200B; waarschuwingen en fouten &#x200B;](https://mariadb.com/kb/en/mariadb-error-codes/):
 
 * &#39;%Geheugengrootte toegewezen voor de tijdelijke tabel is meer dan 20% van de waarde van onschuldig_buffer_pool_size%&#39; als &#39;temp_tbl_buff_pool&#39;
 * &#39;%\[ERROR\] WSREP: rbr write fail%&#39;) als &#39;rbr_write_fail&#39;
@@ -243,42 +243,42 @@ Het **[!UICONTROL Database Errors]** kader toont een verscheidenheid van gegeven
 
 ## [!UICONTROL DB Error Table]
 
-![ Lijst van de Fout van DB ](../../assets/tools/observation-for-adobe-commerce/mysql-tab-18.jpg)
+![&#x200B; Lijst van de Fout van DB &#x200B;](../../assets/tools/observation-for-adobe-commerce/mysql-tab-18.jpg)
 
-In het frame **[!UICONTROL DB Error Table]** wordt dezelfde informatie weergegeven als in het frame **[!UICONTROL Database Errors]** , maar u kunt dit per knooppunt en in een tabelindeling zien. Zie {de Codes van de Fout van 0} MariaDB [ voor meer informatie.](https://mariadb.com/kb/en/mariadb-error-codes/)
+In het frame **[!UICONTROL DB Error Table]** wordt dezelfde informatie weergegeven als in het frame **[!UICONTROL Database Errors]** , maar u kunt dit per knooppunt en in een tabelindeling zien. Zie {de Codes van de Fout van 0} MariaDB [&#x200B; voor meer informatie.](https://mariadb.com/kb/en/mariadb-error-codes/)
 
 ## [!UICONTROL Database Traces]
 
-![ Sporen van het Gegevensbestand ](../../assets/tools/observation-for-adobe-commerce/mysql-tab-19.jpg)
+![&#x200B; Sporen van het Gegevensbestand &#x200B;](../../assets/tools/observation-for-adobe-commerce/mysql-tab-19.jpg)
 
 In het **[!UICONTROL Database Traces]** -frame worden de databasetraces per type in de geselecteerde tijdlijn weergegeven.
 
 ## [!UICONTROL Database processes]
 
-![ processen van het Gegevensbestand ](../../assets/tools/observation-for-adobe-commerce/mysql-tab-20.jpg)
+![&#x200B; processen van het Gegevensbestand &#x200B;](../../assets/tools/observation-for-adobe-commerce/mysql-tab-20.jpg)
 
 In het frame **[!UICONTROL Database processes]** worden de databaseprocessen, -omgevingen en -knooppuntid&#39;s weergegeven.
 
 ## [!UICONTROL MySQL Non-Sleeping Threads by Node]
 
-![ MySQL niet-Slaapende Threads door Knoop ](../../assets/tools/observation-for-adobe-commerce/mysql-tab-21.jpg)
+![&#x200B; MySQL niet-Slaapende Threads door Knoop &#x200B;](../../assets/tools/observation-for-adobe-commerce/mysql-tab-21.jpg)
 
 In het frame **[!UICONTROL MySQL Non-Sleeping Threads by Node]** worden de verbindingsverbindingen met de database weergegeven. Dit kader toont de actieve draden.
 
 ## [!UICONTROL MySQL Running and Sleeping Threads by environment]
 
-![ MySQL die en het Slepen Threads door milieu ](../../assets/tools/observation-for-adobe-commerce/mysql-tab-22.jpg) in werking stellen
+![&#x200B; MySQL die en het Slepen Threads door milieu &#x200B;](../../assets/tools/observation-for-adobe-commerce/mysql-tab-22.jpg) in werking stellen
 
 In het frame **[!UICONTROL MySQL Running and Sleeping Threads by environment]** worden zowel actieve als slaapverbindingen met de database weergegeven. Als er verbindingen met het gegevensbestand zijn waar de langzame vragen naar slaap zijn gegaan, zullen er slaapverbindingen zijn. De slaapverbindingen kunnen gegevensbestandvragen zijn die door gesloten rijen of lijsten worden geblokkeerd. Deze slaapverbindingen houden ook PHP arbeidersverbindingen vast.
 
 ## [!UICONTROL MySQL mem used by node]
 
-![ Mam MySQL dat door knoop ](../../assets/tools/observation-for-adobe-commerce/mysql-tab-23.jpg) wordt gebruikt
+![&#x200B; Mam MySQL dat door knoop &#x200B;](../../assets/tools/observation-for-adobe-commerce/mysql-tab-23.jpg) wordt gebruikt
 
 In het frame **[!UICONTROL MySQL mem used by node]** wordt het knooppuntgebruik van MySQL weergegeven. Op grotere sites kan dit frame bestaan uit doorlopende balken met geheugencapaciteit van GB.
 
 ## [!UICONTROL Database mysql-slow.log]
 
-![ Gegevensbestand mysql-slow.log ](../../assets/tools/observation-for-adobe-commerce/mysql-tab-24.jpg)
+![&#x200B; Gegevensbestand mysql-slow.log &#x200B;](../../assets/tools/observation-for-adobe-commerce/mysql-tab-24.jpg)
 
 In het frame **[!UICONTROL Database mysql-slow.log]** worden de typen queryinstructies weergegeven die zich in het `mysql-slow.log` -bestand binnen de geselecteerde tijdlijn bevonden.

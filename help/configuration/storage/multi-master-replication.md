@@ -28,8 +28,8 @@ MySQL-databases worden asynchroon gerepliceerd. Dit betekent dat slaven niet per
 
 Een diepgaande bespreking van gegevensbestandreplicatie is voorbij het werkingsgebied van deze gids. Als u dit wilt instellen, kunt u een bron raadplegen zoals:
 
-- [ documentatie MySQL ](https://dev.mysql.com/doc/refman/5.6/en/replication.html)
-- [ hoe te Reeks HoofdSlave Replicatie in MySQL (digitalocean) ](https://www.digitalocean.com/community/tutorials/how-to-set-up-replication-in-mysql)
+- [&#x200B; documentatie MySQL &#x200B;](https://dev.mysql.com/doc/refman/5.6/en/replication.html)
+- [&#x200B; hoe te Reeks HoofdSlave Replicatie in MySQL (digitalocean) &#x200B;](https://www.digitalocean.com/community/tutorials/how-to-set-up-replication-in-mysql)
 
 Commerce biedt voorbeelden van MySQL-configuraties voor uw slave-databases. Een eenvoudige configuratie wordt geleverd bij de `ResourceConnections` -klasse `README.md` .
 

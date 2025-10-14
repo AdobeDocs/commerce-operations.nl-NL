@@ -28,25 +28,25 @@ In de dataflow-diagrammen worden de typen gegevens weergegeven die klanten en be
 
 Een gebruiker kan klant-, adres- en betalingsgegevens invoeren bij het registreren voor een account, tijdens het afrekenen en vergelijkbare gebeurtenissen.
 
-![ Voorste punten van de gegevensingang ](../../assets/security-compliance/frontend-data-entry-points.svg)
+![&#x200B; Voorste punten van de gegevensingang &#x200B;](../../assets/security-compliance/frontend-data-entry-points.svg)
 
 ### Punten voor gegevenstoegang vóór
 
 Commerce laadt klantgegevens wanneer de klant zich aanmeldt en bekijkt verschillende pagina&#39;s of checkt deze uit.
 
-![ de toegangspunten van de voorste gegevens ](../../assets/security-compliance/frontend-data-access-points.svg)
+![&#x200B; de toegangspunten van de voorste gegevens &#x200B;](../../assets/security-compliance/frontend-data-access-points.svg)
 
 ### Punten voor achtergrondgegevensinvoer
 
 Een handelaar kan klant, adres, en betalingsinformatie van Admin ingaan om een klant of orde tot stand te brengen.
 
-![ De punten van de de gegevensingang van het achtereind ](../../assets/security-compliance/backend-data-entry-points.svg)
+![&#x200B; De punten van de de gegevensingang van het achtereind &#x200B;](../../assets/security-compliance/backend-data-entry-points.svg)
 
 ### Gegevenstoegangspunten op de achtergrond
 
 Commerce laadt klanteninformatie wanneer een handelaar verscheidene types van netten bekijkt, op een net klikt om gedetailleerde informatie te zien, en diverse andere taken uitvoert.
 
-![ de toegangspunten van de achterste gegevens ](../../assets/security-compliance/backend-data-access-points.svg)
+![&#x200B; de toegangspunten van de achterste gegevens &#x200B;](../../assets/security-compliance/backend-data-access-points.svg)
 
 ## Database-entiteiten
 

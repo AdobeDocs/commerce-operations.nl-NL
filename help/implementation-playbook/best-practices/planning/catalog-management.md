@@ -29,7 +29,7 @@ Voor de beste prestaties gebruikt u de volgende richtlijnen voor het beheer van 
 
 ### Betrokken producten en versies
 
-[ Alle gesteunde versies ](../../../release/versions.md) van:
+[&#x200B; Alle gesteunde versies &#x200B;](../../../release/versions.md) van:
 
 - Adobe Commerce over cloudinfrastructuur
 - Adobe Commerce ter plaatse
@@ -47,7 +47,7 @@ Het vormen van een groot aantal categorieën kan prestaties beïnvloeden.
 
 ### Betrokken producten en versies
 
-[ Alle gesteunde versies ](../../../release/versions.md) van:
+[&#x200B; Alle gesteunde versies &#x200B;](../../../release/versions.md) van:
 
 - Adobe Commerce over cloudinfrastructuur
 - Adobe Commerce ter plaatse
@@ -70,7 +70,7 @@ Het configureren van te veel productkenmerken of productkenmerkopties kan de pre
 
 ### Betrokken producten en versies
 
-[ Alle gesteunde versies ](../../../release/versions.md) van:
+[&#x200B; Alle gesteunde versies &#x200B;](../../../release/versions.md) van:
 
 - Adobe Commerce over cloudinfrastructuur
 - Adobe Commerce ter plaatse
@@ -100,7 +100,7 @@ Verwijder ongebruikte productkenmerksets met MySQL.
 
 #### Configuratie kenmerkenset controleren
 
-1. [ verbind met het plaatsgegevensbestand ](https://experienceleague.adobe.com/nl/docs/commerce-cloud-service/user-guide/configure/service/mysql#connect-to-the-database).
+1. [&#x200B; verbind met het plaatsgegevensbestand &#x200B;](https://experienceleague.adobe.com/nl/docs/commerce-cloud-service/user-guide/configure/service/mysql#connect-to-the-database).
 
 1. Het aantal kenmerksets zoeken met MySQL
 
@@ -138,7 +138,7 @@ Het configureren van te veel productopties per product kan de prestaties beïnvl
 
 ### Betrokken producten en versies
 
-[ Alle gesteunde versies ](../../../release/versions.md) van:
+[&#x200B; Alle gesteunde versies &#x200B;](../../../release/versions.md) van:
 
 - Adobe Commerce over cloudinfrastructuur
 - Adobe Commerce ter plaatse
@@ -170,7 +170,7 @@ Het weergeven van te veel producten per pagina kan de prestaties beïnvloeden.
 
 ### Betrokken producten en versies
 
-[ Alle gesteunde versies ](../../../release/versions.md) van:
+[&#x200B; Alle gesteunde versies &#x200B;](../../../release/versions.md) van:
 
 - Adobe Commerce over cloudinfrastructuur
 - Adobe Commerce ter plaatse
@@ -179,7 +179,7 @@ Het weergeven van te veel producten per pagina kan de prestaties beïnvloeden.
 
 Als u teveel producten in een categorie hebt, werk de configuratie van de storefrontcatalogus bij om de optie onbruikbaar te maken om **Alle Producten per pagina** toe te staan.
 
-Nadat u deze optie hebt uitgeschakeld, gebruikt Adobe Commerce de besturingselementen voor de paginering van de winkelpagina van het product om het aantal producten te beheren dat in winkelcomponenten wordt weergegeven. Voor instructies, zie [ pagineringscontroles ](https://experienceleague.adobe.com/docs/commerce-admin/catalog/catalog/navigation/navigation-product-listings.html?lang=nl-NL#configure-the-pagination-controls) vormen.
+Nadat u deze optie hebt uitgeschakeld, gebruikt Adobe Commerce de besturingselementen voor de paginering van de winkelpagina van het product om het aantal producten te beheren dat in winkelcomponenten wordt weergegeven. Voor instructies, zie [&#x200B; pagineringscontroles &#x200B;](https://experienceleague.adobe.com/docs/commerce-admin/catalog/catalog/navigation/navigation-product-listings.html?lang=nl-NL#configure-the-pagination-controls) vormen.
 
 ## SKU-limieten voor producten
 
@@ -187,7 +187,7 @@ Het vormen van teveel product SKUs kan prestaties beïnvloeden door de terugwinn
 
 ### Betrokken producten en versies
 
-[ Alle gesteunde versies ](../../../release/versions.md) van:
+[&#x200B; Alle gesteunde versies &#x200B;](../../../release/versions.md) van:
 
 - Adobe Commerce over cloudinfrastructuur
 - Adobe Commerce ter plaatse
@@ -205,7 +205,7 @@ Gebruik de volgende strategieën om het aantal producten (SKU&#39;s) te verminde
    - Verlaag het aantal SKU&#39;s door het aantal websites, klantengroepen, gedeelde catalogi, het aantal producten of het aantal configureerbare productopties te verminderen
 - Verstrek meer productvariaties door douaneopties te gebruiken in plaats van het creëren van afzonderlijke producten.
 - Rekening houdend met het feit dat een effectieve SKU een aantal mogelijke prijsschommelingen kan omvatten, omdat de prijzen per winkel of klantengroep verschillend kunnen worden gespecificeerd.
-- Deactiveer of verwijder ongebruikte systeemcomponenten zoals modules. Zie [ modules ](../../../installation/tutorials/uninstall-modules.md) desinstalleren.
+- Deactiveer of verwijder ongebruikte systeemcomponenten zoals modules. Zie [&#x200B; modules &#x200B;](../../../installation/tutorials/uninstall-modules.md) desinstalleren.
 - Beheer producten in een extern Platform Management System (PMS).
 
 ## Productvariaties
@@ -214,7 +214,7 @@ Het configureren van te veel variaties per product kan de prestaties beïnvloede
 
 ### Betrokken producten en versies
 
-[ Alle gesteunde versies ](../../../release/versions.md) van:
+[&#x200B; Alle gesteunde versies &#x200B;](../../../release/versions.md) van:
 
 - Adobe Commerce over cloudinfrastructuur
 - Adobe Commerce ter plaatse
@@ -249,7 +249,7 @@ Volg deze aanbevolen procedures om verkoop en promoties voor objecten in een win
 
 ### Betrokken producten en versies
 
-[ Alle gesteunde versies ](../../../release/versions.md) van:
+[&#x200B; Alle gesteunde versies &#x200B;](../../../release/versions.md) van:
 
 - Adobe Commerce over cloudinfrastructuur
 - Adobe Commerce ter plaatse

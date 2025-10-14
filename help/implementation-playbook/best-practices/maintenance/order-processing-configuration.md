@@ -17,11 +17,11 @@ Naarmate het ordervolume op uw Commerce-sites toeneemt, kunt u de prestaties van
 
 - **[!UICONTROL Asynchronous indexing]** - Schakel deze optie in om databasestlokken en vertraagde verwerking te voorkomen die kunnen optreden wanneer grote aantallen bestellingen tegelijkertijd worden geplaatst.
 - **[!UICONTROL Asynchronous email notifications]**—Schakel deze optie in om de afrekenprestaties te versnellen door het verzenden van afrekenings- en bestelberichten voor de verwerking van e-mailberichten met bepaalde intervallen in plaats van deze onmiddellijk te verzenden.
-- **[!UICONTROL Enable Archiving]** - Schakel deze optie in om de prestaties van bestellingen, facturen, verzendingen en creditnota&#39;s te verbeteren en uw werkruimte vrij te houden van onnodige informatie, zodat u zich kunt concentreren op het huidige bedrijf. Zie [ archiveren ](https://experienceleague.adobe.com/nl/docs/commerce-admin/stores-sales/order-management/orders/order-archive) toelaten.
+- **[!UICONTROL Enable Archiving]** - Schakel deze optie in om de prestaties van bestellingen, facturen, verzendingen en creditnota&#39;s te verbeteren en uw werkruimte vrij te houden van onnodige informatie, zodat u zich kunt concentreren op het huidige bedrijf. Zie [&#x200B; archiveren &#x200B;](https://experienceleague.adobe.com/nl/docs/commerce-admin/stores-sales/order-management/orders/order-archive) toelaten.
 
 ## Betrokken producten en versies
 
-[ Alle gesteunde versies ](../../../release/versions.md) van:
+[&#x200B; Alle gesteunde versies &#x200B;](../../../release/versions.md) van:
 
 - Adobe Commerce over cloudinfrastructuur
 - Adobe Commerce ter plaatse
@@ -38,7 +38,7 @@ De stappen om asynchrone ordeverwerking toe te laten hangen van de plaatsingswij
 
 - Voor Adobe Commerce-sites op locatie in de modus Standaard of Productie schakelt u asynchrone indexering in door de configuratie Rasterinstellingen in Admin bij te werken.
 
-  Zie [ geplande netupdates en het opnieuw indexeren ](https://experienceleague.adobe.com/docs/commerce-admin/stores-sales/order-management/orders/order-scheduled-operations.html?lang=nl-NL#enable-scheduled-grid-updates-and-reindexing) toelaten
+  Zie [&#x200B; geplande netupdates en het opnieuw indexeren &#x200B;](https://experienceleague.adobe.com/docs/commerce-admin/stores-sales/order-management/orders/order-scheduled-operations.html?lang=nl-NL#enable-scheduled-grid-updates-and-reindexing) toelaten
 
   >[!WARNING]
   >

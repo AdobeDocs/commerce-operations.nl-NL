@@ -23,7 +23,7 @@ De Source-code doorloopt meerdere stabiliteitsfasen tijdens het ontwikkelingspro
 
 ## Betrokken producten en versies
 
-[ Alle gesteunde versies ](../../../release/versions.md) van:
+[&#x200B; Alle gesteunde versies &#x200B;](../../../release/versions.md) van:
 
 - Adobe Commerce over cloudinfrastructuur
 - Adobe Commerce in gebouwen
@@ -40,7 +40,7 @@ Elke ontwikkelingsfase zou een overeenkomstige tak in Git moeten hebben om codev
 
 >[!TIP]
 >
->Adobe Commerce op cloud-infrastructuurprojecten bevatten specifieke vertakkingen die overeenkomen met verschillende omgevingen. Zie het [ Pro projectwerkschema ](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/architecture/pro-develop-deploy-workflow.html?lang=nl-NL) en [ het projectwerkschema van de Aanzet ](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/architecture/starter-develop-deploy-workflow.html?lang=nl-NL) in de _Gids van de Wolk_.
+>Adobe Commerce op cloud-infrastructuurprojecten bevatten specifieke vertakkingen die overeenkomen met verschillende omgevingen. Zie het [&#x200B; Pro projectwerkschema &#x200B;](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/architecture/pro-develop-deploy-workflow.html?lang=nl-NL) en [&#x200B; het projectwerkschema van de Aanzet &#x200B;](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/architecture/starter-develop-deploy-workflow.html?lang=nl-NL) in de _Gids van de Wolk_.
 
 ## Branch-strategieën
 
@@ -48,9 +48,9 @@ Er zijn verschillende vertakkingsstrategieën die u kunt gebruiken. Kies een str
 
 Zie de volgende externe bronnen voor meer informatie:
 
-- [ Vertakkende werkschema&#39;s ](https://git-scm.com/book/en/v2/Git-Branching-Branching-Workflows)
-- [ Verdeelde werkschema&#39;s ](https://git-scm.com/book/en/v2/Distributed-Git-Distributed-Workflows)
-- [ Patronen voor het beheren van broncodetakken ](https://martinfowler.com/articles/branching-patterns.html)
-- [ Een succesvolle het vertakken van het Git model ](https://nvie.com/posts/a-successful-git-branching-model/)
-- [ GitHub stroom ](https://docs.github.com/en/get-started/quickstart/github-flow)
-- [ GitLab stroom ](https://about.gitlab.com/blog/2023/07/27/gitlab-flow-duo/)
+- [&#x200B; Vertakkende werkschema&#39;s &#x200B;](https://git-scm.com/book/en/v2/Git-Branching-Branching-Workflows)
+- [&#x200B; Verdeelde werkschema&#39;s &#x200B;](https://git-scm.com/book/en/v2/Distributed-Git-Distributed-Workflows)
+- [&#x200B; Patronen voor het beheren van broncodetakken &#x200B;](https://martinfowler.com/articles/branching-patterns.html)
+- [&#x200B; Een succesvolle het vertakken van het Git model &#x200B;](https://nvie.com/posts/a-successful-git-branching-model/)
+- [&#x200B; GitHub stroom &#x200B;](https://docs.github.com/en/get-started/quickstart/github-flow)
+- [&#x200B; GitLab stroom &#x200B;](https://about.gitlab.com/blog/2023/07/27/gitlab-flow-duo/)

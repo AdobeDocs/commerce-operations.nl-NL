@@ -15,11 +15,11 @@ ht-degree: 0%
 
 Wanneer een blok met inhoud van het type private de variabele `_isScopePrivate` bevat, kan het blok niet in cache worden geplaatst. Omdat het privéblok niet in de cache is opgeslagen, moet Adobe Commerce dezelfde gegevens ophalen voor elke aanvraag van de klant die de serverlading verhoogt.
 
-In plaats van de variabele `_isScopePrivate` te gebruiken voor persoonlijke inhoud, maakt u een blok en een sjabloon om gebruikersbewuste gegevens weer te geven. Deze gegevens worden vervangen door gebruikersspecifieke gegevens door de Adobe Commerce UI-component, die het renderen van gegevens efficiënter afhandelt. Voor instructies, zie [ Privé Inhoud ](https://developer.adobe.com/commerce/php/development/cache/page/private-content/) in _[!DNL Commerce PHP Extensions Guide]_.
+In plaats van de variabele `_isScopePrivate` te gebruiken voor persoonlijke inhoud, maakt u een blok en een sjabloon om gebruikersbewuste gegevens weer te geven. Deze gegevens worden vervangen door gebruikersspecifieke gegevens door de Adobe Commerce UI-component, die het renderen van gegevens efficiënter afhandelt. Voor instructies, zie [&#x200B; Privé Inhoud &#x200B;](https://developer.adobe.com/commerce/php/development/cache/page/private-content/) in _[!DNL Commerce PHP Extensions Guide]_.
 
 ## Betrokken producten en versies
 
-[ Alle gesteunde versies ](../../../release/versions.md) van:
+[&#x200B; Alle gesteunde versies &#x200B;](../../../release/versions.md) van:
 
 - Adobe Commerce over cloudinfrastructuur
 - Adobe Commerce ter plaatse
@@ -31,4 +31,4 @@ Sites met persoonlijke inhoudsblokken die de `_isScopePrivate` -variabelen bevat
 ## Aanvullende informatie
 
 - [Persoonlijke inhoud](../../../performance/configuration.md#client-side-optimization-settings)
-- [ Hoge de verzoeken van AJAX van de productie veroorzaken slechte prestaties ](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/high-throughput-ajax-requests-cause-poor-performance.html?lang=nl-NL)
+- [&#x200B; Hoge de verzoeken van AJAX van de productie veroorzaken slechte prestaties &#x200B;](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/high-throughput-ajax-requests-cause-poor-performance.html?lang=nl-NL)

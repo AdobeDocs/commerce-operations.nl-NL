@@ -13,11 +13,11 @@ ht-degree: 0%
 
 In deze sectie wordt besproken hoe u een of meer modules kunt verwijderen. Tijdens uninstallation, kunt u naar keuze de code van de modules, gegevensbestandschema, en gegevensbestandgegevens verwijderen. U kunt eerst back-ups maken, zodat u de gegevens later kunt herstellen.
 
-Verwijder een module alleen als u zeker weet dat u deze niet wilt gebruiken. In plaats van het verwijderen van een module, kunt u het zoals die in [ wordt besproken onbruikbaar maken of modules ](manage-modules.md) toelaten onbruikbaar maken.
+Verwijder een module alleen als u zeker weet dat u deze niet wilt gebruiken. In plaats van het verwijderen van een module, kunt u het zoals die in [&#x200B; wordt besproken onbruikbaar maken of modules &#x200B;](manage-modules.md) toelaten onbruikbaar maken.
 
 >[!NOTE]
 >
->Deze opdracht controleert of alleen afhankelijkheden zijn gedeclareerd in het `composer.json` -bestand. Als u een module verwijdert die _niet_ in het `composer.json` dossier wordt bepaald, schrapt dit bevel de module zonder gebiedsdelen te controleren. Dit bevel verwijdert __ niet, echter, de code van de module uit het dossiersysteem. U moet bestandssysteemgereedschappen gebruiken om de code van de module te verwijderen (bijvoorbeeld `rm -rf <path to module>` ). Als alternatief, kunt u [ niet-Composer modules ](manage-modules.md) onbruikbaar maken.
+>Deze opdracht controleert of alleen afhankelijkheden zijn gedeclareerd in het `composer.json` -bestand. Als u een module verwijdert die _niet_ in het `composer.json` dossier wordt bepaald, schrapt dit bevel de module zonder gebiedsdelen te controleren. Dit bevel verwijdert __ niet, echter, de code van de module uit het dossiersysteem. U moet bestandssysteemgereedschappen gebruiken om de code van de module te verwijderen (bijvoorbeeld `rm -rf <path to module>` ). Als alternatief, kunt u [&#x200B; niet-Composer modules &#x200B;](manage-modules.md) onbruikbaar maken.
 
 Opdrachtgebruik:
 
@@ -50,10 +50,10 @@ Met de opdracht Module verwijderen worden de volgende taken uitgevoerd:
 
 1. Als `--remove-data` is opgegeven, verwijdert u het databaseschema en de gegevens die zijn gedefinieerd in de `Uninstall` -klassen van de module.
 
-   Roept de methode `uninstall` in de klasse `Uninstall` aan om elke opgegeven module te verwijderen. Deze klasse moet van [ Magento\Framework\Setup\UninstallInterface ](https://github.com/magento/magento2/blob/2.4/lib/internal/Magento/Framework/Setup/UninstallInterface.php) erven.
+   Roept de methode `uninstall` in de klasse `Uninstall` aan om elke opgegeven module te verwijderen. Deze klasse moet van [&#x200B; Magento\Framework\Setup\UninstallInterface &#x200B;](https://github.com/magento/magento2/blob/2.4/lib/internal/Magento/Framework/Setup/UninstallInterface.php) erven.
 
 1. Hiermee worden de opgegeven modules verwijderd uit de databasetabel `setup_module` .
-1. Verwijdert de gespecificeerde modules uit de modulelijst in de [ plaatsingsconfiguratie ](../../configuration/reference/deployment-files.md).
+1. Verwijdert de gespecificeerde modules uit de modulelijst in de [&#x200B; plaatsingsconfiguratie &#x200B;](../../configuration/reference/deployment-files.md).
 1. Hiermee verwijdert u code uit de codebase met `composer remove` .
 
    >[!NOTE]
@@ -62,7 +62,7 @@ Met de opdracht Module verwijderen worden de volgende taken uitgevoerd:
 
 1. Wist de cache.
 1. Werkt gegenereerde klassen bij.
-1. Als `--clear-static-content` wordt gespecificeerd, ontruimt [ geproduceerde statische meningsdossiers ](../../configuration/cli/static-view-file-deployment.md).
+1. Als `--clear-static-content` wordt gespecificeerd, ontruimt [&#x200B; geproduceerde statische meningsdossiers &#x200B;](../../configuration/cli/static-view-file-deployment.md).
 1. Neemt de opslag uit onderhoudswijze.
 
 Als u bijvoorbeeld probeert een module te verwijderen waarvan een andere module afhankelijk is, wordt het volgende bericht weergegeven:

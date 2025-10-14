@@ -21,7 +21,7 @@ Dit onderwerp wordt ontworpen om u te helpen beslissen of om Git of Composer te 
 
 ## Betrokken producten en versies
 
-[ Alle gesteunde versies ](../../../release/versions.md) van:
+[&#x200B; Alle gesteunde versies &#x200B;](../../../release/versions.md) van:
 
 - Adobe Commerce over cloudinfrastructuur
 - Adobe Commerce ter plaatse
@@ -88,14 +88,14 @@ Dit onderwerp wordt ontworpen om u te helpen beslissen of om Git of Composer te 
 | Complexiteit verzoek volledig uitvoeren | eenvoudig | Complex |
 | Complexiteit van coderevisie | eenvoudig | eenvoudig |
 | Complexiteit van updates in Dev/QA/UAT-omgeving | eenvoudig | Complex |
-| GRA-ondersteuning | ![ ja pictogram ](../../../assets/yes.svg) | ![ ja pictogram ](../../../assets/yes.svg) |
-| Modules kunnen automatisch externe bibliotheken installeren | ![ Geen pictogram ](../../../assets/no.svg) | ![ ja pictogram ](../../../assets/yes.svg) |
-| Flexibiliteit in GRA-samenstelling | ![ Geen pictogram ](../../../assets/no.svg) | ![ ja pictogram ](../../../assets/yes.svg) |
-| Beheer van moduleafhankelijkheid | ![ ja pictogram ](../../../assets/yes.svg) slechts door `module.xml`, beperkte functionaliteit | ![ ja pictogram ](../../../assets/yes.svg) Volledige gebiedsdeelbeheer door `composer.json` |
-| Moduleversie | ![ ja pictogram ](../../../assets/yes.svg) U kunt een versie bepalen, maar u kunt geen specifieke versie installeren | ![ ja pictogram ](../../../assets/yes.svg) Volledige versiessteun |
+| GRA-ondersteuning | ![&#x200B; ja pictogram &#x200B;](../../../assets/yes.svg) | ![&#x200B; ja pictogram &#x200B;](../../../assets/yes.svg) |
+| Modules kunnen automatisch externe bibliotheken installeren | ![&#x200B; Geen pictogram &#x200B;](../../../assets/no.svg) | ![&#x200B; ja pictogram &#x200B;](../../../assets/yes.svg) |
+| Flexibiliteit in GRA-samenstelling | ![&#x200B; Geen pictogram &#x200B;](../../../assets/no.svg) | ![&#x200B; ja pictogram &#x200B;](../../../assets/yes.svg) |
+| Beheer van moduleafhankelijkheid | ![&#x200B; ja pictogram &#x200B;](../../../assets/yes.svg) slechts door `module.xml`, beperkte functionaliteit | ![&#x200B; ja pictogram &#x200B;](../../../assets/yes.svg) Volledige gebiedsdeelbeheer door `composer.json` |
+| Moduleversie | ![&#x200B; ja pictogram &#x200B;](../../../assets/yes.svg) U kunt een versie bepalen, maar u kunt geen specifieke versie installeren | ![&#x200B; ja pictogram &#x200B;](../../../assets/yes.svg) Volledige versiessteun |
 | Betaalde services vereist | Git-opslagplaats | Git-opslagplaats, Private Packagist (± 600 euro per jaar) |
-| Integratie van bitemand met Jira mogelijk | ![ ja pictogram ](../../../assets/yes.svg) | ![ ja pictogram ](../../../assets/yes.svg) |
-| Wijzigingen in code die direct beschikbaar is voor installatie | ![ ja pictogram ](../../../assets/yes.svg) | ![ ja pictogram ](../../../assets/yes.svg) |
+| Integratie van bitemand met Jira mogelijk | ![&#x200B; ja pictogram &#x200B;](../../../assets/yes.svg) | ![&#x200B; ja pictogram &#x200B;](../../../assets/yes.svg) |
+| Wijzigingen in code die direct beschikbaar is voor installatie | ![&#x200B; ja pictogram &#x200B;](../../../assets/yes.svg) | ![&#x200B; ja pictogram &#x200B;](../../../assets/yes.svg) |
 
 ## Oplossingen om te vermijden
 

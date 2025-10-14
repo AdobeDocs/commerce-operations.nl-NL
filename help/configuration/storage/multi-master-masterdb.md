@@ -28,7 +28,7 @@ Dit onderwerp bespreekt hoe te beginnen met de gespleten gegevensbestandoplossin
 
 ## De Adobe Commerce-software installeren
 
-U kunt gesplitste databases op elk gewenst moment inschakelen nadat u de Adobe Commerce-software hebt geïnstalleerd. Met andere woorden, u kunt gesplitste databases toevoegen aan een Adobe Commerce-systeem dat al gegevens voor kassa en bestelling bevat. Gebruik de instructies in Adobe Commerce README of de [ installatiegids ](../../installation/overview.md) om de software van Adobe Commerce te installeren gebruikend één enkel hoofdgegevensbestand.
+U kunt gesplitste databases op elk gewenst moment inschakelen nadat u de Adobe Commerce-software hebt geïnstalleerd. Met andere woorden, u kunt gesplitste databases toevoegen aan een Adobe Commerce-systeem dat al gegevens voor kassa en bestelling bevat. Gebruik de instructies in Adobe Commerce README of de [&#x200B; installatiegids &#x200B;](../../installation/overview.md) om de software van Adobe Commerce te installeren gebruikend één enkel hoofdgegevensbestand.
 
 ## Extra hoofddatabases instellen
 
@@ -92,7 +92,7 @@ Na vestiging in totaal van drie hoofdgegevensbestanden, gebruik de bevellijn om 
 
 ### Eerste stappen
 
-Zie [ Lopende bevelen ](../cli/config-cli.md#running-commands) aan login en looppas bevelen CLI.
+Zie [&#x200B; Lopende bevelen &#x200B;](../cli/config-cli.md#running-commands) aan login en looppas bevelen CLI.
 
 ### De database voor uitchecken configureren
 

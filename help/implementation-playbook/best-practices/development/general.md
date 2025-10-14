@@ -23,7 +23,7 @@ Deze beste praktijken zijn ontwikkeld op basis van jarenlange ervaring met het o
 
 ## Tekstconventies
 
-De sleutelwoorden &quot;MOET&quot;, &quot;MOET NIET&quot;, &quot;VEREIST&quot;, &quot;DIENT&quot;, &quot;DIENT NIET&quot;, &quot;DIENT NIET&quot;, &quot;AANBEVOLEN&quot;, &quot;MAY&quot;, en &quot;OPTIONEEL&quot;in dit onderwerp moeten worden geïnterpreteerd zoals die in [ RFC 2119 ](https://datatracker.ietf.org/doc/html/rfc2119) worden beschreven.
+De sleutelwoorden &quot;MOET&quot;, &quot;MOET NIET&quot;, &quot;VEREIST&quot;, &quot;DIENT&quot;, &quot;DIENT NIET&quot;, &quot;DIENT NIET&quot;, &quot;AANBEVOLEN&quot;, &quot;MAY&quot;, en &quot;OPTIONEEL&quot;in dit onderwerp moeten worden geïnterpreteerd zoals die in [&#x200B; RFC 2119 &#x200B;](https://datatracker.ietf.org/doc/html/rfc2119) worden beschreven.
 
 ## Proces
 
@@ -43,14 +43,14 @@ De sleutelwoorden &quot;MOET&quot;, &quot;MOET NIET&quot;, &quot;VEREIST&quot;, 
 ## Omgeving
 
 1. Alle ontwikkelaars MOETEN zelfde winde gebruiken. PhpStorm is de aanbevolen IDE voor Adobe Commerce-ontwikkeling.
-1. Alle ontwikkelaars MOETEN zich ontwikkelen en testen gebruikend de zelfde technologiestapel zoals die op de (toekomstige) productieservers wordt gebruikt. De versies van de software in deze technologiestapel MOETEN de belangrijkste en minder belangrijke versie van de software aanpassen die op de productieservers wordt geïnstalleerd. Zie [ systeemvereisten ](../../../installation/system-requirements.md) voor details over de typische technologiestapel voor Adobe Commerce.
+1. Alle ontwikkelaars MOETEN zich ontwikkelen en testen gebruikend de zelfde technologiestapel zoals die op de (toekomstige) productieservers wordt gebruikt. De versies van de software in deze technologiestapel MOETEN de belangrijkste en minder belangrijke versie van de software aanpassen die op de productieservers wordt geïnstalleerd. Zie [&#x200B; systeemvereisten &#x200B;](../../../installation/system-requirements.md) voor details over de typische technologiestapel voor Adobe Commerce.
 1. De systeembeheerder of technische architect kan het team voorzien van een centraal onderhouden lokale ontwikkelomgeving om gelijke en actuele lokale omgevingen te verzekeren en te bevorderen.
 1. De ontwikkelaars en de ingenieurs QA MOETEN toegang tot de bevellijn, het gegevensbestand, en de logboekdossiers van het milieu hebben QA. Dit kan een verbinding van VPN vereisen.
 
 ## Versioning
 
-De versies van de module MOETEN aan de [ Semantische Versioning 2.0.0 norm ](https://semver.org/) naleven.
-De gebiedsdelen op de codebase van Adobe Commerce MOETEN de [ richtlijnen van de Afhankelijkheid van de Versie van de Module volgen ](https://developer.adobe.com/commerce/php/development/versioning/dependencies/).
+De versies van de module MOETEN aan de [&#x200B; Semantische Versioning 2.0.0 norm &#x200B;](https://semver.org/) naleven.
+De gebiedsdelen op de codebase van Adobe Commerce MOETEN de [&#x200B; richtlijnen van de Afhankelijkheid van de Versie van de Module volgen &#x200B;](https://developer.adobe.com/commerce/php/development/versioning/dependencies/).
 
 ## HERZIENINGSCONTROLE
 
@@ -58,7 +58,7 @@ Verbintenissen MOETEN vergezeld gaan van zinvolle &quot;commit messages&quot;.
 
 ## Beveiliging
 
-1. [ niet-veilige functies ](https://developer.adobe.com/commerce/php/development/security/non-secure-functions/) MOGEN NIET worden gebruikt.
-1. [ XSS-preventie strategieën ](https://developer.adobe.com/commerce/php/development/security/cross-site-scripting/) ZOU MOETEN worden toegepast.
-1. [ het Beleid van de Veiligheid van de Inhoud ](https://developer.adobe.com/commerce/php/development/security/content-security-policies/) ZOU moeten worden toegepast.
-1. Nieuwe Adobe Commerce-instanties DIENEN te worden afgeleverd op de meest recente beveiligingsrelease van een versie die nog niet de datum &quot;Einde van beveiligingscorrecties&quot; heeft bereikt. Zie [ het Beleid van de Levenscyclus van de Software van Adobe Commerce ](../../../release/lifecycle-policy.md).
+1. [&#x200B; niet-veilige functies &#x200B;](https://developer.adobe.com/commerce/php/development/security/non-secure-functions/) MOGEN NIET worden gebruikt.
+1. [&#x200B; XSS-preventie strategieën &#x200B;](https://developer.adobe.com/commerce/php/development/security/cross-site-scripting/) ZOU MOETEN worden toegepast.
+1. [&#x200B; het Beleid van de Veiligheid van de Inhoud &#x200B;](https://developer.adobe.com/commerce/php/development/security/content-security-policies/) ZOU moeten worden toegepast.
+1. Nieuwe Adobe Commerce-instanties DIENEN te worden afgeleverd op de meest recente beveiligingsrelease van een versie die nog niet de datum &quot;Einde van beveiligingscorrecties&quot; heeft bereikt. Zie [&#x200B; het Beleid van de Levenscyclus van de Software van Adobe Commerce &#x200B;](../../../release/lifecycle-policy.md).

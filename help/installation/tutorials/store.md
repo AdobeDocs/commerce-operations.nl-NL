@@ -11,7 +11,7 @@ ht-degree: 0%
 
 # De winkel configureren
 
-Alvorens u dit bevel in werking stelt, moet u het volgende *doen of* u moet [ de toepassing ](../advanced.md) installeren:
+Alvorens u dit bevel in werking stelt, moet u het volgende *doen of* u moet [&#x200B; de toepassing &#x200B;](../advanced.md) installeren:
 
 * [Implementatieconfiguratie maken of bijwerken](deployment.md)
 * [Het databaseschema maken](database.md)

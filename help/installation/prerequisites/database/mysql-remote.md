@@ -39,8 +39,8 @@ De waarde `db-host` is de URL van Aurora, waarbij de URL `https://` en de URL aa
 
 Voordat u begint, moet u:
 
-* [ installeer server MySQL ](mysql.md) op de gegevensbestandserver.
-* [ creeer een gegevensbestandinstantie ](mysql.md#configuring-the-database-instance) op de gegevensbestandserver.
+* [&#x200B; installeer server MySQL &#x200B;](mysql.md) op de gegevensbestandserver.
+* [&#x200B; creeer een gegevensbestandinstantie &#x200B;](mysql.md#configuring-the-database-instance) op de gegevensbestandserver.
 * Installeer de MySQL-client op het Adobe Commerce-webknooppunt. Raadpleeg MySQL-documentatie voor meer informatie.
 
 ### Hoge beschikbaarheid
@@ -50,7 +50,7 @@ Gebruik de volgende richtlijnen om externe databaseverbindingen te configureren 
 * U moet een verbinding voor elke knoop van de Webserver vormen.
 * Typisch, vormt u een gegevensbestandverbinding aan het taakverdelingsmechanisme van het gegevensbestand; nochtans, kan het gegevensbestand zich groeperen complex zijn en het vormen is aan u. Adobe doet geen specifieke aanbevelingen voor database-clustering.
 
-  Voor meer informatie, zie [ documentatie MySQL ](https://dev.mysql.com/doc/refman/5.6/en/mysql-cluster.html).
+  Voor meer informatie, zie [&#x200B; documentatie MySQL &#x200B;](https://dev.mysql.com/doc/refman/5.6/en/mysql-cluster.html).
 
 ### Verbindingsproblemen oplossen
 
@@ -89,7 +89,7 @@ Een externe verbinding maken:
    bind-address = <ip address of your web node>
    ```
 
-   Zie [ documentatie MySQL ](https://dev.mysql.com/doc/refman/5.6/en/server-options.html), vooral als u een gegroepeerde Webserver hebt.
+   Zie [&#x200B; documentatie MySQL &#x200B;](https://dev.mysql.com/doc/refman/5.6/en/server-options.html), vooral als u een gegroepeerde Webserver hebt.
 
 1. Sla de wijzigingen in het configuratiebestand op en sluit de teksteditor af.
 1. Start de MySQL-service opnieuw:
@@ -100,7 +100,7 @@ Een externe verbinding maken:
 
    >[!NOTE]
    >
-   >Als MySQL er niet in slaagt om te beginnen, zoek in syslog naar de bron van de kwestie. Los de kwestie op gebruikend [ documentatie MySQL ](https://dev.mysql.com/doc/refman/5.6/en/server-options.html#option_mysqld_bind-address) of een andere gebiedende bron.
+   >Als MySQL er niet in slaagt om te beginnen, zoek in syslog naar de bron van de kwestie. Los de kwestie op gebruikend [&#x200B; documentatie MySQL &#x200B;](https://dev.mysql.com/doc/refman/5.6/en/server-options.html#option_mysqld_bind-address) of een andere gebiedende bron.
 
 ## Toegang tot een databasegebruiker verlenen
 

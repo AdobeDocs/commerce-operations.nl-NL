@@ -15,7 +15,7 @@ Je bent een van de 240.000 kooplieden wereldwijd die vertrouwen hebben in onze s
 
 ## De software ophalen
 
-Controleer de beschikbaarheid van opwindende nieuwe eigenschappen en versies en leer hoe u hen op onze [ pagina van de productbeschikbaarheid ](https://experienceleague.adobe.com/nl/docs/commerce-operations/release/product-availability) kunt krijgen.
+Controleer de beschikbaarheid van opwindende nieuwe eigenschappen en versies en leer hoe u hen op onze [&#x200B; pagina van de productbeschikbaarheid &#x200B;](https://experienceleague.adobe.com/nl/docs/commerce-operations/release/product-availability) kunt krijgen.
 
 Raadpleeg de volgende tabel om aan de slag te gaan met de installatie van Adobe Commerce.
 
@@ -62,4 +62,4 @@ UNIX-systemen vereisen `root` privileges om software als een webserver, PHP, te 
 
 Installeer *niet* de toepassing in de documentwortel van de Webserver als `root` gebruiker omdat de Webserver niet met die dossiers zou kunnen in wisselwerking staan.
 
-U hebt `root` voorrechten nodig om de [ eigenaar van het dossiersysteem ](file-system/overview.md) tot stand te brengen en die eigenaar aan de groep van de Webserver toe te voegen. Met de eigenaar van het bestandssysteem kunt u `bin/magento` -opdrachten uitvoeren vanaf de opdrachtregel en snijtaken instellen, die taken voor u plannen.
+U hebt `root` voorrechten nodig om de [&#x200B; eigenaar van het dossiersysteem &#x200B;](file-system/overview.md) tot stand te brengen en die eigenaar aan de groep van de Webserver toe te voegen. Met de eigenaar van het bestandssysteem kunt u `bin/magento` -opdrachten uitvoeren vanaf de opdrachtregel en snijtaken instellen, die taken voor u plannen.

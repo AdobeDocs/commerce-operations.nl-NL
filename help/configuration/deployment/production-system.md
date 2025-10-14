@@ -22,8 +22,8 @@ Je kunt één productiesysteem hebben. Alle volgende waarden moeten waar zijn:
    - `pub/media/wysiwyg` map (en submappen)
    - `pub/static` map (en submappen)
 
-- Commerce 2.2 of later moet worden geïnstalleerd en voor [ productiemodus ](../bootstrap/application-modes.md#production-mode) worden geplaatst
-- Het heeft bezit van het dossiersysteem en toestemmingen die zoals in [ worden besproken Vereiste voor uw ontwikkeling, bouwt, en productiesystemen ](../deployment/prerequisites.md).
+- Commerce 2.2 of later moet worden geïnstalleerd en voor [&#x200B; productiemodus &#x200B;](../bootstrap/application-modes.md#production-mode) worden geplaatst
+- Het heeft bezit van het dossiersysteem en toestemmingen die zoals in [&#x200B; worden besproken Vereiste voor uw ontwikkeling, bouwt, en productiesystemen &#x200B;](../deployment/prerequisites.md).
 
 ## Een productiemachine instellen
 
@@ -40,7 +40,7 @@ Een productiemachine instellen:
 
    Maak `auth.json` in die map.
 
-   `auth.json` moet uw [ authentificatietoetsen ](../../installation/prerequisites/authentication-keys.md) bevatten.
+   `auth.json` moet uw [&#x200B; authentificatietoetsen &#x200B;](../../installation/prerequisites/authentication-keys.md) bevatten.
 
    Hieronder volgt een monster:
 
@@ -68,7 +68,7 @@ In deze sectie wordt beschreven hoe u met de opdracht `magento config:sensitive:
 
 Om gevoelige waarden in te stellen:
 
-1. Vind een waarde om het gebruiken van de [ gevoelige waardeverwijzing ](../reference/config-reference-sens.md) te plaatsen.
+1. Vind een waarde om het gebruiken van de [&#x200B; gevoelige waardeverwijzing &#x200B;](../reference/config-reference-sens.md) te plaatsen.
 1. Noteer het configuratiepad voor de instelling.
 1. Meld u aan bij het productiesysteem als of schakel over naar de eigenaar van het bestandssysteem.
 1. Ga naar de Commerce-installatiemap.
@@ -99,4 +99,4 @@ Om gevoelige waarden in te stellen:
 
    De instelling wordt weergegeven in Beheer en kan niet worden bewerkt. In de volgende afbeelding ziet u een voorbeeld.
 
-   ![ Gevoelige het plaatsen in Admin ](../../assets/configuration/sensitive-set.png)
+   ![&#x200B; Gevoelige het plaatsen in Admin &#x200B;](../../assets/configuration/sensitive-set.png)

@@ -17,7 +17,7 @@ Vanaf versie 2.4.4, vereist Adobe Commerce of [ Elasticsearch ] of [ OpenSearch 
 - [Voorwaarden voor zoekmachines](../../installation/prerequisites/search-engine/overview.md)
 - [Nginx voor uw zoekmachine configureren](../../installation/prerequisites/search-engine/configure-nginx.md)
 - [Apache configureren voor uw zoekmachine](../../installation/prerequisites/search-engine/configure-apache.md)
-- [ installeer de software van Commerce ](../../installation/composer.md) (bevel-lijn interface)
+- [&#x200B; installeer de software van Commerce &#x200B;](../../installation/composer.md) (bevel-lijn interface)
 
 Nadat u de zoekfunctie hebt geïnstalleerd en geïntegreerd met Adobe Commerce, moet u extra onderhoud uitvoeren:
 

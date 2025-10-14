@@ -16,18 +16,18 @@ Op het tabblad **[!UICONTROL QuickView]** worden de verschillende waarschuwingst
 
 ## [!UICONTROL Alerts]
 
-![ Alarm ](../../assets/tools/observation-for-adobe-commerce/quickview_alerts.jpg)
+![&#x200B; Alarm &#x200B;](../../assets/tools/observation-for-adobe-commerce/quickview_alerts.jpg)
 
 In het frame **[!UICONTROL Alerts]** worden verschillende waarschuwingen weergegeven, zoals waarschuwingen over schijfruimte en waarschuwingen over servergebruik tijdens een geselecteerd tijdsbestek. In dit frame worden tabelbewerkingen met de database `SELECT` , `DELETE` en `UPDATE` gedurende een geselecteerd tijdsbestek bekeken.
 
 ## [!UICONTROL Upsize / Downsize by node]
 
-![ Upsize/Downsize door knoop ](../../assets/tools/observation-for-adobe-commerce/quickview_upsize_by_node.jpg)
+![&#x200B; Upsize/Downsize door knoop &#x200B;](../../assets/tools/observation-for-adobe-commerce/quickview_upsize_by_node.jpg)
 
 In het frame **[!UICONTROL Upsize / Downsize by node]** worden de upgrootten en downgrootten per knooppunt over een geselecteerd tijdframe weergegeven. Dit wordt gebruikt om te beoordelen of er een verandering in clustergrootte tijdens de geselecteerde tijdspanne was.
 
 ## [!UICONTROL CPU Utilization]
 
-![ het Gebruik van CPU ](../../assets/tools/observation-for-adobe-commerce/quickview_cpu.jpg)
+![&#x200B; het Gebruik van CPU &#x200B;](../../assets/tools/observation-for-adobe-commerce/quickview_cpu.jpg)
 
 In het frame **[!UICONTROL CPU Utilization]** wordt CPU-gebruik door knooppunten over het geselecteerde tijdframe weergegeven.

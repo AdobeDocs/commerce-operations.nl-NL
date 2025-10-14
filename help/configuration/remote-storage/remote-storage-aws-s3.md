@@ -12,7 +12,7 @@ ht-degree: 0%
 
 # AWS S3-emmertje voor externe opslag configureren
 
-De [ Eenvoudige Dienst van de Opslag van Amazon (Amazon S3) ][AWS S3] is de dienst van de objecten opslag die industrie-leidende scalability, gegevensbeschikbaarheid, veiligheid, en prestaties aanbiedt. De AWS S3-service gebruikt emmers, of containers, voor gegevensopslag. Deze configuratie vereist u om a _privé_ emmer tot stand te brengen. Voor Adobe Commerce op wolkeninfrastructuur, zie [ verre opslag voor Commerce op de infrastructuur van de Wolk vormen ](cloud-support.md).
+De [ Eenvoudige Dienst van de Opslag van Amazon (Amazon S3) ][AWS S3] is de dienst van de objecten opslag die industrie-leidende scalability, gegevensbeschikbaarheid, veiligheid, en prestaties aanbiedt. De AWS S3-service gebruikt emmers, of containers, voor gegevensopslag. Deze configuratie vereist u om a _privé_ emmer tot stand te brengen. Voor Adobe Commerce op wolkeninfrastructuur, zie [&#x200B; verre opslag voor Commerce op de infrastructuur van de Wolk vormen &#x200B;](cloud-support.md).
 
 >[!WARNING]
 >
@@ -32,7 +32,7 @@ De [ Eenvoudige Dienst van de Opslag van Amazon (Amazon S3) ][AWS S3] is de dien
    bin/magento config:set system/media_storage_configuration/media_database 0
    ```
 
-1. Configureer Commerce om het privéemmertje te gebruiken. Zie [ Verre opslagopties ](remote-storage.md#remote-storage-options) voor een volledige lijst van parameters.
+1. Configureer Commerce om het privéemmertje te gebruiken. Zie [&#x200B; Verre opslagopties &#x200B;](remote-storage.md#remote-storage-options) voor een volledige lijst van parameters.
 
    ```bash
    bin/magento setup:config:set --remote-storage-driver="aws-s3" --remote-storage-bucket="<bucket-name>" --remote-storage-region="<region-name>" --remote-storage-prefix="<optional-prefix>" --remote-storage-key=<optional-access-key> --remote-storage-secret=<optional-secret-key> -n
@@ -48,7 +48,7 @@ De [ Eenvoudige Dienst van de Opslag van Amazon (Amazon S3) ][AWS S3] is de dien
 
 >[!NOTE]
 >
->Deze aanpak is niet van toepassing op Adobe Commerce voor cloudinfrastructuurprojecten. Nginx kan niet worden geconfigureerd op Adobe Commerce op cloudinfrastructuur. Zie [ wolk-specifieke documentatie ](cloud-support.md) voor meer informatie.
+>Deze aanpak is niet van toepassing op Adobe Commerce voor cloudinfrastructuurprojecten. Nginx kan niet worden geconfigureerd op Adobe Commerce op cloudinfrastructuur. Zie [&#x200B; wolk-specifieke documentatie &#x200B;](cloud-support.md) voor meer informatie.
 
 Nginx vereist extra configuratie om Authentificatie met de `proxy_pass` richtlijn uit te voeren. Voeg de volgende proxygegevens toe aan het `nginx.conf` -bestand:
 
@@ -81,7 +81,7 @@ De S3-integratie is afhankelijk van de mogelijkheid om cacheafbeeldingen te gene
 
 ### Bestandsbewerkingen
 
-U wordt ten zeerste aangeraden om bij de ontwikkeling van de codering of extensie de methoden van de [!DNL Commerce] -bestandsadapter te gebruiken, ongeacht het type bestandsopslag. Wanneer u S3 gebruikt voor opslag, moet u geen native I/O-bewerkingen voor PHP-bestanden gebruiken, zoals `copy` , `rename` of `file_put_contents` , omdat S3-bestanden zich niet in het bestandssysteem bevinden. Zie [ DriverInterface.php ](https://github.com/magento/magento2/blob/2.4-develop/lib/internal/Magento/Framework/Filesystem/DriverInterface.php#L18) voor codevoorbeelden.
+U wordt ten zeerste aangeraden om bij de ontwikkeling van de codering of extensie de methoden van de [!DNL Commerce] -bestandsadapter te gebruiken, ongeacht het type bestandsopslag. Wanneer u S3 gebruikt voor opslag, moet u geen native I/O-bewerkingen voor PHP-bestanden gebruiken, zoals `copy` , `rename` of `file_put_contents` , omdat S3-bestanden zich niet in het bestandssysteem bevinden. Zie [&#x200B; DriverInterface.php &#x200B;](https://github.com/magento/magento2/blob/2.4-develop/lib/internal/Magento/Framework/Filesystem/DriverInterface.php#L18) voor codevoorbeelden.
 
 <!-- link definitions -->
 

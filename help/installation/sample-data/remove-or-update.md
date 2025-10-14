@@ -13,9 +13,9 @@ ht-degree: 0%
 
 Dit onderwerp bespreekt hoe te:
 
-* [ verwijder de modules van steekproefgegevens ](#remove-sample-data-modules) uit een installatie van Adobe Commerce `composer.json`. Deze optie verwijdert ** geen steekproefgegevens uit het gegevensbestand.
+* [&#x200B; verwijder de modules van steekproefgegevens &#x200B;](#remove-sample-data-modules) uit een installatie van Adobe Commerce `composer.json`. Deze optie verwijdert ** geen steekproefgegevens uit het gegevensbestand.
 
-* [ voorbereidingen om steekproefgegevens ](#prepare-to-update-sample-data) (bijvoorbeeld, vóór het bijwerken van de toepassing van Magento) bij te werken.
+* [&#x200B; voorbereidingen om steekproefgegevens &#x200B;](#prepare-to-update-sample-data) (bijvoorbeeld, vóór het bijwerken van de toepassing van Magento) bij te werken.
 
 ## Voorbeeldgegevensmodules verwijderen
 
@@ -59,4 +59,4 @@ Voer de volgende opdracht in om voorbeeldgegevens voor te bereiden voor het bijw
 bin/magento sampledata:reset
 ```
 
-Na dat, [ werk de toepassing ](../tutorials/uninstall.md#update-the-application) bij.
+Na dat, [&#x200B; werk de toepassing &#x200B;](../tutorials/uninstall.md#update-the-application) bij.

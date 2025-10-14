@@ -18,7 +18,7 @@ Deze hulpmiddelen gebruiken diverse metriek om krachtige inzichten en aanbevelin
 
 ## Betrokken producten en versies
 
-[ Alle gesteunde versies ](../../../release/versions.md) van:
+[&#x200B; Alle gesteunde versies &#x200B;](../../../release/versions.md) van:
 
 - Adobe Commerce over cloudinfrastructuur
 - Adobe Commerce ter plaatse
@@ -29,13 +29,13 @@ Om de frontend prestaties van uw websiteopslag te controleren:
 
 1. Voorwaartse prestaties van de controle gebruikend Webprestatieshulpmiddelen zoals:
 
-   - **[Lighthouse van Google ](https://web.dev/measure/)** - Lighthouse heeft controles voor prestaties, toegankelijkheid, progressieve Web apps, SEO, en meer. Voor details op verschillende manieren om vuurtoren in werking te stellen, zie het [ Overzicht van de Lighthouse ](https://developer.chrome.com/docs/lighthouse/overview).)
-   - **[de Inzichten van PageSpeed van Google ](https://pagespeed.web.dev/)** - de Inzichten PageSpeed levert snel een gedetailleerd rapport over de oorzaken van langzame Web-pagina prestaties samen met aanbevelingen op hoe te om het te bevestigen.
+   - **[Lighthouse van Google &#x200B;](https://web.dev/measure/)** - Lighthouse heeft controles voor prestaties, toegankelijkheid, progressieve Web apps, SEO, en meer. Voor details op verschillende manieren om vuurtoren in werking te stellen, zie het [&#x200B; Overzicht van de Lighthouse &#x200B;](https://developer.chrome.com/docs/lighthouse/overview).)
+   - **[de Inzichten van PageSpeed van Google &#x200B;](https://pagespeed.web.dev/)** - de Inzichten PageSpeed levert snel een gedetailleerd rapport over de oorzaken van langzame Web-pagina prestaties samen met aanbevelingen op hoe te om het te bevestigen.
 
 1. Herzie de controleverslagen en voer de verstrekte aanbevelingen uit om archiefprestaties te verbeteren.
 
 ## Aanvullende informatie
 
 - [Indexbeheer voor Admin-gebruikers](../../../configuration/cli/manage-indexers.md#configure-indexers)
-- [ Beheer van de Index gebruikend CLI ](https://experienceleague.adobe.com/docs/commerce-operations/configuration-guide/cli/manage-indexers.html?lang=nl-NL)
-- [ Indexerend overzicht voor ontwikkelaars ](https://developer.adobe.com/commerce/php/development/components/indexing/)
+- [&#x200B; Beheer van de Index gebruikend CLI &#x200B;](https://experienceleague.adobe.com/docs/commerce-operations/configuration-guide/cli/manage-indexers.html?lang=nl-NL)
+- [&#x200B; Indexerend overzicht voor ontwikkelaars &#x200B;](https://developer.adobe.com/commerce/php/development/components/indexing/)

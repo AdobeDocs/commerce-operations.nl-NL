@@ -17,7 +17,7 @@ Voor Adobe Commerce op cloudinfrastructuur zijn de beste werkwijzen specifiek va
 
 ## Betrokken producten en versies
 
-[ Alle gesteunde versies ](../../../release/versions.md) van:
+[&#x200B; Alle gesteunde versies &#x200B;](../../../release/versions.md) van:
 
 - Adobe Commerce over cloudinfrastructuur
 - Adobe Commerce ter plaatse
@@ -41,5 +41,5 @@ Websites en winkels zijn multipliers voor catalogusgegevens, zodat het hebben va
 
 ## Aanvullende informatie
 
-- [ Begrip websites, opslag, en opslagmeningen ](https://experienceleague.adobe.com/nl/docs/commerce-cloud-service/user-guide/configure-store/best-practices)
-- [ Opstelling veelvoudige websites of opslag ](https://experienceleague.adobe.com/nl/docs/commerce-cloud-service/user-guide/configure-store/multiple-sites)
+- [&#x200B; Begrip websites, opslag, en opslagmeningen &#x200B;](https://experienceleague.adobe.com/nl/docs/commerce-cloud-service/user-guide/configure-store/best-practices)
+- [&#x200B; Opstelling veelvoudige websites of opslag &#x200B;](https://experienceleague.adobe.com/nl/docs/commerce-cloud-service/user-guide/configure-store/multiple-sites)

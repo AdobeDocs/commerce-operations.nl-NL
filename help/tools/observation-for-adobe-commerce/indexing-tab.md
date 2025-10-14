@@ -16,7 +16,7 @@ Het tabblad **[!UICONTROL Indexing]** probeert problemen met indexering uit te l
 
 ## [!UICONTROL Core index invalidated]
 
-![ ongeldig gemaakte index van de Kern ](../../assets/tools/observation-for-adobe-commerce/indexing-tab-1.jpg)
+![&#x200B; ongeldig gemaakte index van de Kern &#x200B;](../../assets/tools/observation-for-adobe-commerce/indexing-tab-1.jpg)
 
 In het frame **[!UICONTROL Core index invalidated]** wordt de indexering van de validatie binnen een geselecteerd tijdkader weergegeven. Als indexering plaatsvindt op hetzelfde moment als andere bronnenintensieve [!DNL crons] , wordt de site zwaar belast.
 
@@ -36,7 +36,7 @@ In het frame **[!UICONTROL Core index invalidated]** wordt de indexering van de 
 
 ## [!UICONTROL Core index rebuilds]
 
-![ de indexherbouwt van de Kern ](../../assets/tools/observation-for-adobe-commerce/indexing-tab-2.jpg)
+![&#x200B; de indexherbouwt van de Kern &#x200B;](../../assets/tools/observation-for-adobe-commerce/indexing-tab-2.jpg)
 
 Het frame **[!UICONTROL Core index rebuilds]** bekijkt de rebuilds van de kernindex over een geselecteerd tijdkader. Hier volgen de tekenreeksen die vanuit de logbestanden worden geparseerd om aan te geven dat de index opnieuw is samengesteld.
 
@@ -57,12 +57,12 @@ Het frame **[!UICONTROL Core index rebuilds]** bekijkt de rebuilds van de kernin
 
 ## [!UICONTROL catalogsearch index table(s)]
 
-![ lijst(en) van de cataloguszoekindex van de catalogi ](../../assets/tools/observation-for-adobe-commerce/indexing-tab-3.jpg)
+![&#x200B; lijst(en) van de cataloguszoekindex van de catalogi &#x200B;](../../assets/tools/observation-for-adobe-commerce/indexing-tab-3.jpg)
 
 Het frame **[!UICONTROL catalogsearch index table(s)]** bekijkt cataloguszoekindextabellen in een geselecteerd tijdkader. In deze query wordt gekeken naar de duur van eventuele datastore-bewerkingen ten opzichte van tabellen met `%catalogsearch%` in de tabelnaam.
 
 ## [!UICONTROL product index table(s)]
 
-![ lijst(en) van de productindex ](../../assets/tools/observation-for-adobe-commerce/indexing-tab-4.jpg)
+![&#x200B; lijst(en) van de productindex &#x200B;](../../assets/tools/observation-for-adobe-commerce/indexing-tab-4.jpg)
 
 In het frame **[!UICONTROL product index table(s)]** wordt gekeken naar de tabellen met de productindex voor een geselecteerd tijdsbestek. In deze query wordt gekeken naar de duur van eventuele datastore-bewerkingen ten opzichte van tabellen met `%product%` in de tabelnaam.

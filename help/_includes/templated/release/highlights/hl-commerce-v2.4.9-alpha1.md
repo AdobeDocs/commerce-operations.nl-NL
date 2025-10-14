@@ -23,7 +23,7 @@ _AC-13916_
 
 ondersteuning voor composer-versies was alleen beschikbaar voor versie 2.2.x van de composer. De ondersteuning is nu ook uitgebreid naar versie 2.4.x.
 
-_AC-13792 - [ GitHub codebijdrage ](https://github.com/magento/magento2/commit/19844aa0)_
+_AC-13792 - [&#x200B; GitHub codebijdrage &#x200B;](https://github.com/magento/magento2/commit/19844aa0)_
 
 #### Compatibiliteit toevoegen voor Valkey 8.x voor 2.4.8, 2.4.7, 2.4.6 en 2.4.5, 2.4.9-alpha1
 
@@ -59,6 +59,6 @@ _AC-13258_
 
 ### Beveiliging
 
-Voor de recentste informatie over veiligheidsinsectenmoeilijke situaties, zie [ Bulletin APSB25-50 van de Veiligheid van Adobe ](https://helpx.adobe.com/nl/security/products/magento/apsb25-50.html).
+Voor de recentste informatie over veiligheidsinsectenmoeilijke situaties, zie [&#x200B; Bulletin APSB25-50 van de Veiligheid van Adobe &#x200B;](https://helpx.adobe.com/nl/security/products/magento/apsb25-50.html).
 
 {{$include /help/_includes/release-notes/highlights/security-2025-06.md}}

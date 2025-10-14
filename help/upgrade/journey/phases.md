@@ -17,4 +17,4 @@ Voor upgrades is nauwgezette aandacht, planning en beheer vereist. Om u te helpe
 - [Jaarlijkse planning](annual-planning.md)
 - [Implementatie](implementation.md)
 
-![ de reisfasen van de Verbetering ](../../assets/upgrade-guide/upgrade-journey-phases.svg)
+![&#x200B; de reisfasen van de Verbetering &#x200B;](../../assets/upgrade-guide/upgrade-journey-phases.svg)

@@ -26,7 +26,7 @@ U kunt de zelfde procedure gebruiken om het even welke niet gevoelige, niet syst
 
 ## Voordat u begint
 
-Alvorens u begint, de toestemmingen en de eigendom van het opstellingssysteem zoals besproken in [ Vereisten voor ontwikkeling, bouwt, en productiesystemen ](../deployment/prerequisites.md).
+Alvorens u begint, de toestemmingen en de eigendom van het opstellingssysteem zoals besproken in [&#x200B; Vereisten voor ontwikkeling, bouwt, en productiesystemen &#x200B;](../deployment/prerequisites.md).
 
 ## Veronderstellingen
 
@@ -48,7 +48,7 @@ U kunt als volgt de tijdzone- en gewichtseenheden in uw ontwikkelingssysteem ins
 
    In de volgende afbeelding ziet u een voorbeeld.
 
-   ![ plaats scèneopties in het ontwikkelingssysteem ](../../assets/configuration/split-deploy-set-locale.png)
+   ![&#x200B; plaats scèneopties in het ontwikkelingssysteem &#x200B;](../../assets/configuration/split-deploy-set-locale.png)
 
 1. Van de **lijst van de Tijdzone**, klik **GMT+00 :00 (UTC)**.
 1. Ontruim het **checkbox van de systeemwaarde van het Gebruik** naast het **3&rbrace; gebied van de Eenheid van de Gewicht.**
@@ -84,10 +84,10 @@ De laatste stap in het proces is uw productiesysteem van broncontrole bij te wer
 
    De opties die u zojuist hebt ingesteld, worden als volgt weergegeven:
 
-   ![ de opties van de Configuratie niet editable in Admin ](../../assets/configuration/split-deploy-not-editable.png)
+   ![&#x200B; de opties van de Configuratie niet editable in Admin &#x200B;](../../assets/configuration/split-deploy-not-editable.png)
 
 >[!INFO]
 >
->Als u een instelling wilt wijzigen die is vergrendeld in Beheer, gebruikt u de opdracht [`magento config:set --lock` ](../cli/set-configuration-values.md) .
+>Als u een instelling wilt wijzigen die is vergrendeld in Beheer, gebruikt u de opdracht [`magento config:set --lock` &#x200B;](../cli/set-configuration-values.md) .
 
 <!-- Last updated from includes: 2024-07-18 15:50:54 -->

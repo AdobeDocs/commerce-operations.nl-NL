@@ -14,9 +14,9 @@ ht-degree: 0%
 
 Het in het geheugen onderbrengen is een algemeen, verdeeld geheugen in het voorgeheugen onderbrengend systeem. Het wordt vaak gebruikt om dynamische database-gedreven websites te versnellen door gegevens en voorwerpen in RAM in het voorgeheugen op te nemen om het aantal tijden te verminderen een externe gegevensbron (zoals een gegevensbestand of API) moet worden gelezen.
 
-Het in geheugen ondergebracht verstrekt een grote haktafel die over veelvoudige machines kan worden verdeeld. Als de tabel vol is, zorgen de invoegingen ervoor dat oudere gegevens worden gewist in de volgorde die het minst recent is gebruikt (LRU). De grootte van deze hash-tabel is vaak erg groot. (Source: [ memcached.org ](https://www.memcached.org/))
+Het in geheugen ondergebracht verstrekt een grote haktafel die over veelvoudige machines kan worden verdeeld. Als de tabel vol is, zorgen de invoegingen ervoor dat oudere gegevens worden gewist in de volgorde die het minst recent is gebruikt (LRU). De grootte van deze hash-tabel is vaak erg groot. (Source: [&#x200B; memcached.org &#x200B;](https://www.memcached.org/))
 
-Commerce gebruikt gememcached voor sessieopslag, maar niet voor het in cache plaatsen van pagina&#39;s. Voor pagina in het voorgeheugen onderbrengen, adviseren wij [ Redis ](../cache/redis-pg-cache.md) of [ Vernis ](../cache/config-varnish.md).
+Commerce gebruikt gememcached voor sessieopslag, maar niet voor het in cache plaatsen van pagina&#39;s. Voor pagina in het voorgeheugen onderbrengen, adviseren wij [&#x200B; Redis &#x200B;](../cache/redis-pg-cache.md) of [&#x200B; Vernis &#x200B;](../cache/config-varnish.md).
 
 **om Commerce te vormen om in het geheugen ondergebracht** te gebruiken:
 
@@ -40,7 +40,7 @@ Commerce gebruikt gememcached voor sessieopslag, maar niet voor het in cache pla
    ),
    ```
 
-   in het geheugen ondergebracht heeft facultatieve startparameters die buiten het werkingsgebied van deze gids zijn. U kunt meer informatie over hen in de [ in het geheugen ondergebrachte ](https://www.php.net/manual/en/memcached.sessions.php) documentatie, broncode, en changelogs vinden.
+   in het geheugen ondergebracht heeft facultatieve startparameters die buiten het werkingsgebied van deze gids zijn. U kunt meer informatie over hen in de [&#x200B; in het geheugen ondergebrachte &#x200B;](https://www.php.net/manual/en/memcached.sessions.php) documentatie, broncode, en changelogs vinden.
 
 1. Ga verder met de volgende sectie.
 

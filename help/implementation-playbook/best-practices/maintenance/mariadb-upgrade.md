@@ -21,7 +21,7 @@ Voordat u Adobe Commerce op de cloudinfrastructuur kunt upgraden, moet u mogelij
 
 ## Adobe Commerce 2.4.6
 
-Vanaf MariaDB 10.5.1 worden kolommen met oude tijdelijke indelingen gemarkeerd met een `/* mariadb-5.3 */` -commentaar in de uitvoer van de instructies `SHOW CREATE TABLE` , `SHOW COLUMNS` , `DESCRIBE` en in de kolom `COLUMN_TYPE` van de tabel `INFORMATION_SCHEMA.COLUMNS` . [ zie documentatie MariaDB ](https://mariadb.com/kb/en/datetime/#internal-format).
+Vanaf MariaDB 10.5.1 worden kolommen met oude tijdelijke indelingen gemarkeerd met een `/* mariadb-5.3 */` -commentaar in de uitvoer van de instructies `SHOW CREATE TABLE` , `SHOW COLUMNS` , `DESCRIBE` en in de kolom `COLUMN_TYPE` van de tabel `INFORMATION_SCHEMA.COLUMNS` . [&#x200B; zie documentatie MariaDB &#x200B;](https://mariadb.com/kb/en/datetime/#internal-format).
 
 Adobe Commerce kan de datumkolommen niet toewijzen aan een juist gegevenstype vanwege de MariaDB-opmerking. Dit kan leiden tot onverwacht gedrag in aangepaste code.
 
@@ -70,7 +70,7 @@ Houd rekening met het volgende wanneer u de conversie plant en plant:
 
 - Voltooi het omzettingswerk tijdens een lage verkeersperiode op uw plaats.
 
-- Schakelaar uw plaats aan [ onderhoudswijze ](../../../installation/tutorials/maintenance-mode.md) alvorens de bevelen in werking te stellen om gegevensbestandlijsten om te zetten.
+- Schakelaar uw plaats aan [&#x200B; onderhoudswijze &#x200B;](../../../installation/tutorials/maintenance-mode.md) alvorens de bevelen in werking te stellen om gegevensbestandlijsten om te zetten.
 
 #### Opmaak databasetabelrij converteren
 
@@ -172,4 +172,4 @@ De dag vóór de geplande upgrade naar MariaDB-versie 10.3, 10.4 of 10.6 control
 
 ### De opslagengine wijzigen
 
-Zie [ lijsten MyISAM in InnoDB ](../planning/database-on-cloud.md) omzetten.
+Zie [&#x200B; lijsten MyISAM in InnoDB &#x200B;](../planning/database-on-cloud.md) omzetten.

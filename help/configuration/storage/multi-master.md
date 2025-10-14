@@ -36,7 +36,7 @@ MySQL-databases worden asynchroon gerepliceerd. Dit betekent dat slaven niet per
 
 In de volgende afbeelding ziet u hoe deze functie werkt.
 
-![ Adobe Commerce gebruikt verschillende gegevensbestanden om lijsten op te slaan ](../../assets/configuration/split-db-diagram-ee.png)
+![&#x200B; Adobe Commerce gebruikt verschillende gegevensbestanden om lijsten op te slaan &#x200B;](../../assets/configuration/split-db-diagram-ee.png)
 
 In Magento Open Source wordt slechts één hoofddatabase gebruikt.
 
@@ -64,7 +64,7 @@ Dit betekent ook dat u:
 
   Adobe raadt aan zo snel mogelijk gesplitste databases te configureren nadat u de Commerce-software hebt geïnstalleerd.
 
-- [ vormt manueel ](multi-master-manual.md) de gespleten gegevensbestandoplossing.
+- [&#x200B; vormt manueel &#x200B;](multi-master-manual.md) de gespleten gegevensbestandoplossing.
 
   U moet deze taak uitvoeren als u reeds componenten hebt geïnstalleerd of als Commerce reeds in productie is. (_werk_ geen productiesysteem bij; maak de updates in een ontwikkelingssysteem en synchroniseer de veranderingen nadat u hen hebt getest.)
 

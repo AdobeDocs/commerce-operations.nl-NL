@@ -14,16 +14,16 @@ ht-degree: 0%
 
 Wanneer u op het pictogram [!UICONTROL Observation for Adobe Commerce] klikt, wordt de [!DNL Observation for Adobe Commerce] -nerdlet geopend.
 
-1. Klik op **Uitgezocht een rekening** dropdown. Als u niet **selecteert een rekening** dropdown ziet, kunt u geen toegang hebben. Klik [ hier ](https://adobe.sharepoint.com/sites/MG/it/IT%20Services%20Wiki/Requesting%20access%20to%20Magento%20Commerce%20New%20Relic.aspx) om toegang te verzoeken.
+1. Klik op **Uitgezocht een rekening** dropdown. Als u niet **selecteert een rekening** dropdown ziet, kunt u geen toegang hebben. Klik [&#x200B; hier &#x200B;](https://adobe.sharepoint.com/sites/MG/it/IT%20Services%20Wiki/Requesting%20access%20to%20Magento%20Commerce%20New%20Relic.aspx) om toegang te verzoeken.
 
-   ![ Uitgezocht een rekening ](../../assets/tools/observation-for-adobe-commerce/start-using-1.jpeg)
+   ![&#x200B; Uitgezocht een rekening &#x200B;](../../assets/tools/observation-for-adobe-commerce/start-using-1.jpeg)
 
 1. U kunt project_id plakken, het [!DNL New Relic] accountnummer of de accountnaam typen of door de lijst met accounts bladeren.
 
-   ![ doorblader door de lijst van rekeningen ](../../assets/tools/observation-for-adobe-commerce/start-using-2.jpg)
+   ![&#x200B; doorblader door de lijst van rekeningen &#x200B;](../../assets/tools/observation-for-adobe-commerce/start-using-2.jpg)
 
 1. Klik op **lichtblauw** (naar het hoogste recht van het zenuwtelefoonvenster) dropdown menu met het klokpictogram.
 
-   ![ klik op het dropdown menu ](../../assets/tools/observation-for-adobe-commerce/start-using-3.jpg)
+   ![&#x200B; klik op het dropdown menu &#x200B;](../../assets/tools/observation-for-adobe-commerce/start-using-3.jpg)
 
 1. U zou de tijd vóór de tijd van de kaartdatum moeten plaatsen om te zien of waren er om het even welke voorafgaande gebeurtenissen/gegevens. U kunt vooraf ingestelde timeframes op de linkerzijde gebruiken of een douanetijdkader plaatsen door **te selecteren Reeks douane**.

@@ -17,7 +17,7 @@ Hieronder vindt u ideeën om u te helpen bij het voorbereiden van een escalatie 
 
 ## Betrokken producten en versies
 
-[ Alle gesteunde versies ](../../../release/versions.md) van:
+[&#x200B; Alle gesteunde versies &#x200B;](../../../release/versions.md) van:
 
 * Adobe Commerce over cloudinfrastructuur
 * Adobe Commerce ter plaatse

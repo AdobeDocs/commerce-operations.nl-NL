@@ -15,8 +15,8 @@ ht-degree: 0%
 
 Als resultaat van de analyse, kan [!DNL Upgrade Compatibility Tool] een rapport uitvoeren dat een lijst van kwesties voor elk dossier bevat die zijn strengheid, foutencode, en foutenbeschrijving specificeren. Het rapport wordt door [!DNL Upgrade Compatibility Tool] in twee verschillende indelingen geëxporteerd:
 
-- A [ JSON dossier ](reports.md#json-file).
-- Een [ rapport van HTML ](reports.md#html-report).
+- A [&#x200B; JSON dossier &#x200B;](reports.md#json-file).
+- Een [&#x200B; rapport van HTML &#x200B;](reports.md#html-report).
 
 Zie het volgende bevel-lijn interfacevoorbeeld van een rapport:
 
@@ -27,7 +27,7 @@ File: /app/code/Custom/CatalogExtension/Controller/Index/Index.php
  * [ERROR][1328] Line 10: Implemented interface 'Magento\Framework\App\Action\HttpGetActionInterface' that is non API on version '2.4.4'
 ```
 
-Controleer het [ onderwerp van de het berichtverwijzing van de Fout ](../upgrade-compatibility-tool/error-messages.md) voor meer informatie over de verschillende fouten dit rapport kan veroorzaken.
+Controleer het [&#x200B; onderwerp van de het berichtverwijzing van de Fout &#x200B;](../upgrade-compatibility-tool/error-messages.md) voor meer informatie over de verschillende fouten dit rapport kan veroorzaken.
 
 Dit verslag bevat ook een gedetailleerde samenvatting die het volgende laat zien:
 
@@ -88,7 +88,7 @@ U kunt het HTML-rapport ophalen terwijl u het gereedschap uitvoert op een opdrac
 - Een lijst met geïdentificeerde problemen.
 - Een samenvatting van de analyse.
 
-![ het rapport van HTML - Samenvatting ](../../assets/upgrade-guide/uct-html-summary.png)
+![&#x200B; het rapport van HTML - Samenvatting &#x200B;](../../assets/upgrade-guide/uct-html-summary.png)
 
 U kunt tijdens de [!DNL Upgrade Compatibility Tool] -analyse eenvoudig door de geïdentificeerde problemen navigeren.
 
@@ -96,7 +96,7 @@ U kunt de problemen in het rapport filteren op basis van het minimale emissieniv
 
 In de rechterbovenhoek bevindt zich een vervolgkeuzelijst waarin u een ander niveau kunt selecteren. De lijst met geïdentificeerde problemen wordt dienovereenkomstig gefilterd.
 
-![ het rapport van HTML - Daling Down gebruik ](../../assets/upgrade-guide/uct-html-filtered-issues-list.png)
+![&#x200B; het rapport van HTML - Daling Down gebruik &#x200B;](../../assets/upgrade-guide/uct-html-filtered-issues-list.png)
 
 >[!NOTE]
 >
@@ -111,13 +111,13 @@ Het HTML-rapport bevat ook vier verschillende grafieken:
 
 Deze grafieken staan u toe om de modules te identificeren die het meest gecompromitteerd zijn en degenen die meer werk vereisen om een verbetering uit te voeren.
 
-![ het rapport van HTML - Diagrammen ](../../assets/upgrade-guide/uct-html-diagrams.png)
+![&#x200B; het rapport van HTML - Diagrammen &#x200B;](../../assets/upgrade-guide/uct-html-diagrams.png)
 
 De HTML-rapportdiagrammen worden ook dienovereenkomstig bijgewerkt, met de enige uitzondering op `Modules with relative sizes and issues` , die wordt gegenereerd met de `min-issue-level` die oorspronkelijk is ingesteld.
 
 Als u verschillende resultaten voor het `Modules with relative sizes and issues` diagram wilt zien, moet u het bevel opnieuw in werking stellen die een andere waarde voor de `--min-issue-level` optie verstrekken.
 
-![ het rapport van HTML - het Diagram van het Diagram van het Bubble ](../../assets/upgrade-guide/uct-html-filtered-diagrams.png)
+![&#x200B; het rapport van HTML - het Diagram van het Diagram van het Bubble &#x200B;](../../assets/upgrade-guide/uct-html-filtered-diagrams.png)
 
 Dit HTML-rapport exporteren naar een andere uitvoermap:
 

@@ -19,7 +19,7 @@ Adobe Managed Services biedt gehoste en beheerde toepassing en infrastructuur vo
 
 ## Voordelen
 
-![ Infographic tonend voordelen van Adobe Managed Services ](../../assets/playbooks/managed-services-benefits.png)
+![&#x200B; Infographic tonend voordelen van Adobe Managed Services &#x200B;](../../assets/playbooks/managed-services-benefits.png)
 
 ### Vergelijking van implementatieopties
 
@@ -388,11 +388,11 @@ Adobe biedt een reeks services voor de levering, ontwikkeling, staging en produc
 
 De Adobe-beveiligingsstapel voor Managed Services bouwt beveiliging op elk niveau op met behulp van automatisering en consistentie om menselijke fouten te beperken. De ontwikkelings en verrichtingenteams erven automatisch veiligheidscontroles van verschillende niveaus van de stapel.
 
-Platformpartners, zoals Amazon Web Services en Microsoft Azure, zorgen voor maximale beveiligingsdekking bij het toepassen van platformaanpassingen, terwijl het Adobe Managed Services-team basisbeveiligingsservices biedt, zoals compatibiliteit, registratie, verificatie, scannen en controle, en serverbeveiliging en beveiligde toepassingsconfiguratie. Zie {de Veiligheid van 0} Adobe Commerce [ voor meer informatie.](https://business.adobe.com/products/magento/secure-ecommerce.html)
+Platformpartners, zoals Amazon Web Services en Microsoft Azure, zorgen voor maximale beveiligingsdekking bij het toepassen van platformaanpassingen, terwijl het Adobe Managed Services-team basisbeveiligingsservices biedt, zoals compatibiliteit, registratie, verificatie, scannen en controle, en serverbeveiliging en beveiligde toepassingsconfiguratie. Zie {de Veiligheid van 0} Adobe Commerce [&#x200B; voor meer informatie.](https://business.adobe.com/products/magento/secure-ecommerce.html)
 
 In het volgende diagram wordt de Adobe Managed Services-beveiligingstechnologiestapel weergegeven:
 
-![ Diagram die de veiligheidsstapel van Adobe Managed Services tonen ](../../assets/playbooks/managed-services-security-stack.svg)
+![&#x200B; Diagram die de veiligheidsstapel van Adobe Managed Services tonen &#x200B;](../../assets/playbooks/managed-services-security-stack.svg)
 
 ## Hulp bij upgrades
 

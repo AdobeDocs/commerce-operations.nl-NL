@@ -29,7 +29,7 @@ Wanneer
 
 >[!NOTE]
 >
->U kunt modules niet direct op wolkenprojecten toelaten of onbruikbaar maken. U moet deze opdrachten lokaal uitvoeren en vervolgens wijzigingen in het `app/etc/config.php` -bestand doorvoeren voor een omgeving. Zie [ Pro projectwerkschema: Het werkschema van de Plaatsing ](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/architecture/pro-develop-deploy-workflow.html?lang=nl-NL#deployment-workflow).
+>U kunt modules niet direct op wolkenprojecten toelaten of onbruikbaar maken. U moet deze opdrachten lokaal uitvoeren en vervolgens wijzigingen in het `app/etc/config.php` -bestand doorvoeren voor een omgeving. Zie [&#x200B; Pro projectwerkschema: Het werkschema van de Plaatsing &#x200B;](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/architecture/pro-develop-deploy-workflow.html?lang=nl-NL#deployment-workflow).
 
 ## Module in-/uitschakelen
 
@@ -47,12 +47,12 @@ Wanneer
 
 * `<module-list>` is een door spaties gescheiden lijst met modules die moeten worden in- of uitgeschakeld. Als een modulenaam speciale tekens bevat, plaatst u de naam tussen enkele of dubbele aanhalingstekens.
 * `--all` om alle modules tegelijkertijd in of uit te schakelen.
-* `-f` of `--force` gebruiken om een module in- of uit te schakelen ondanks afhankelijkheden. Alvorens u deze optie gebruikt, zie [ Ongeveer toelatend en onbruikbaar makend modules ](#about-enabling-and-disabling-modules).
-* `-c` of `--clear-static-content` ontruimt [ geproduceerde statische meningsdossiers ](../../configuration/cli/static-view-file-deployment.md).
+* `-f` of `--force` gebruiken om een module in- of uit te schakelen ondanks afhankelijkheden. Alvorens u deze optie gebruikt, zie [&#x200B; Ongeveer toelatend en onbruikbaar makend modules &#x200B;](#about-enabling-and-disabling-modules).
+* `-c` of `--clear-static-content` ontruimt [&#x200B; geproduceerde statische meningsdossiers &#x200B;](../../configuration/cli/static-view-file-deployment.md).
 
   Als u statische weergavebestanden niet wist, kunnen er problemen optreden als er meerdere bestanden met dezelfde naam zijn en u niet alle bestanden wist.
 
-  Met andere woorden, wegens de [ statische dossierreserve ](../../configuration/cli/static-view-file-deployment.md) regels, als u geen statische dossiers ontruimt en er meer dan één dossier genoemd `logo.svg` is die verschillend zijn, zou de reserve het verkeerde dossier aan vertoning kunnen veroorzaken.
+  Met andere woorden, wegens de [&#x200B; statische dossierreserve &#x200B;](../../configuration/cli/static-view-file-deployment.md) regels, als u geen statische dossiers ontruimt en er meer dan één dossier genoemd `logo.svg` is die verschillend zijn, zou de reserve het verkeerde dossier aan vertoning kunnen veroorzaken.
 
 Als u bijvoorbeeld de module `Magento_Weee` wilt uitschakelen, voert u het volgende in:
 
@@ -60,7 +60,7 @@ Als u bijvoorbeeld de module `Magento_Weee` wilt uitschakelen, voert u het volge
 bin/magento module:disable Magento_Weee
 ```
 
-Voor belangrijke informatie over het toelaten van en het onbruikbaar maken van modules, zie [ over het toelaten van en het onbruikbaar maken van modules ](#about-enabling-and-disabling-modules).
+Voor belangrijke informatie over het toelaten van en het onbruikbaar maken van modules, zie [&#x200B; over het toelaten van en het onbruikbaar maken van modules &#x200B;](#about-enabling-and-disabling-modules).
 
 ## De database bijwerken
 

@@ -16,7 +16,7 @@ Voordat u deze opdracht gebruikt, moet u weten welk relatief pad naar het thema 
 
 Het pad naar het thema Luma dat bij Adobe Commerce wordt geleverd, is bijvoorbeeld `frontend/Magento/luma` .
 
-Voor meer informatie over thema&#39;s, zie [ themastructuur ](https://developer.adobe.com/commerce/frontend-core/guide/themes/structure/).
+Voor meer informatie over thema&#39;s, zie [&#x200B; themastructuur &#x200B;](https://developer.adobe.com/commerce/frontend-core/guide/themes/structure/).
 
 ## Overzicht van het verwijderen van thema&#39;s
 
@@ -27,7 +27,7 @@ Dit bevel maakt *slechts* thema&#39;s ongedaan die in `composer.json` worden ges
 * De knooppuntinformatie `parent` in `theme.xml` bijwerken om verwijzingen naar het thema te verwijderen.
 * Themacode verwijderen uit het bestandssysteem.
 
-  [ Meer informatie over themaovererving ](https://developer.adobe.com/commerce/frontend-core/guide/themes/inheritance/).
+  [&#x200B; Meer informatie over themaovererving &#x200B;](https://developer.adobe.com/commerce/frontend-core/guide/themes/inheritance/).
 
 ## Thema&#39;s verwijderen
 
@@ -41,7 +41,7 @@ Wanneer
 
 * `{theme path}` is het relatieve pad naar het thema, te beginnen met de vlaknaam. Het pad naar het lege thema dat bij Adobe Commerce wordt geleverd, is bijvoorbeeld `frontend/Magento/blank` .
 * `--backup-code` maakt een back-up van de codebase zoals beschreven in de volgende alinea&#39;s.
-* `--clear-static-content` ontruimt geproduceerde [ statische meningsdossiers ](../../configuration/cli/static-view-file-deployment.md), die noodzakelijk is om statische meningsdossiers te veroorzaken om behoorlijk te tonen.
+* `--clear-static-content` ontruimt geproduceerde [&#x200B; statische meningsdossiers &#x200B;](../../configuration/cli/static-view-file-deployment.md), die noodzakelijk is om statische meningsdossiers te veroorzaken om behoorlijk te tonen.
 
 De opdracht voert de volgende taken uit:
 
@@ -64,7 +64,7 @@ De opdracht voert de volgende taken uit:
 1. Verwijder thema&#39;s uit de basis van de code met `composer remove` .
 1. Wist de cache.
 1. Hiermee worden gegenereerde klassen gewist
-1. Als `--clear-static-content` wordt gespecificeerd, ontruimt [ geproduceerde statische meningsdossiers ](../../configuration/cli/static-view-file-deployment.md).
+1. Als `--clear-static-content` wordt gespecificeerd, ontruimt [&#x200B; geproduceerde statische meningsdossiers &#x200B;](../../configuration/cli/static-view-file-deployment.md).
 
 Als u bijvoorbeeld probeert een thema te verwijderen waarvan een ander thema afhankelijk is, wordt het volgende bericht weergegeven:
 

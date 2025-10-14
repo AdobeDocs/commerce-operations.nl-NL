@@ -12,7 +12,7 @@ ht-degree: 0%
 
 # Wijzigingen migreren
 
-Het stijgende migratiehulpmiddel installeert lijstlijsten (met prefix `m2_cl_*`) en trekkers (voor het volgen van veranderingen) in Magento 1 gegevensbestand tijdens de [ migratie van gegevens ](data.md). Deze overzichtstabellen en triggers zijn essentieel om ervoor te zorgen dat u alleen de wijzigingen migreert die u hebt aangebracht in Magento 1 sinds de laatste keer dat u gegevens hebt gemigreerd. Deze wijzigingen zijn:
+Het stijgende migratiehulpmiddel installeert lijstlijsten (met prefix `m2_cl_*`) en trekkers (voor het volgen van veranderingen) in Magento 1 gegevensbestand tijdens de [&#x200B; migratie van gegevens &#x200B;](data.md). Deze overzichtstabellen en triggers zijn essentieel om ervoor te zorgen dat u alleen de wijzigingen migreert die u hebt aangebracht in Magento 1 sinds de laatste keer dat u gegevens hebt gemigreerd. Deze wijzigingen zijn:
 
 * Gegevens die klanten via winkel hebben toegevoegd (bestellingen, revisies en wijzigingen in klantprofielen)
 
@@ -25,10 +25,10 @@ Het stijgende migratiehulpmiddel installeert lijstlijsten (met prefix `m2_cl_*`)
 
 Voer de volgende stappen uit om voor te bereiden voordat u begint:
 
-1. Login aan de toepassingsserver als [ de eigenaar van het dossiersysteem ](../../../installation/prerequisites/file-system/overview.md).
+1. Login aan de toepassingsserver als [&#x200B; de eigenaar van het dossiersysteem &#x200B;](../../../installation/prerequisites/file-system/overview.md).
 1. Wijzig de map `/bin` of zorg ervoor dat deze aan uw systeem wordt toegevoegd `PATH` .
 
-Zie de [ eerste stappen ](overview.md#first-steps) sectie voor meer details.
+Zie de [&#x200B; eerste stappen &#x200B;](overview.md#first-steps) sectie voor meer details.
 
 ## De opdracht Incrementele migratie uitvoeren
 

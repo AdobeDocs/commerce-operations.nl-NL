@@ -14,10 +14,10 @@ ht-degree: 0%
 
 Voer de volgende stappen uit om voor te bereiden voordat u begint:
 
-1. Login aan uw toepassingsserver als [ de eigenaar van het dossiersysteem ](../../../installation/prerequisites/file-system/overview.md).
+1. Login aan uw toepassingsserver als [&#x200B; de eigenaar van het dossiersysteem &#x200B;](../../../installation/prerequisites/file-system/overview.md).
 1. Wijzig de installatiemap van de toepassing of zorg ervoor dat deze aan uw systeem wordt toegevoegd `PATH` .
 
-Zie de [ eerste stappen ](overview.md#first-steps) sectie voor meer details.
+Zie de [&#x200B; eerste stappen &#x200B;](overview.md#first-steps) sectie voor meer details.
 
 ## De opdracht voor gegevensmigratie uitvoeren
 
@@ -35,7 +35,7 @@ Waarbij:
 
 * `{<path to config.xml>}` is het absolute bestandsysteempad naar `config.xml` ; dit argument is vereist
 
-In deze stap maakt [!DNL Data Migration Tool] aanvullende tabellen en triggers voor de migratietabellen in de Magento 1-database. Zij worden gebruikt in de [ stijgende/delta ](delta.md) migratiestap. Aanvullende tabellen bevatten informatie over gewijzigde records na de laatste migratieuitvoering. De trekkers van het gegevensbestand worden gebruikt om deze extra lijsten te bevolken, zodat als een nieuwe verrichting op de bepaalde lijst (een verslag wordt toegevoegd/gewijzigd/verwijderd) wordt uitgevoerd, deze gegevensbestandtrekker sparen informatie over deze verrichting aan de extra lijst. Wanneer we een deltamigratieproces uitvoeren, controleert [!DNL Data Migration Tool] deze tabellen op de niet-verwerkte records en wordt de benodigde inhoud gemigreerd naar de Magento 2-database.
+In deze stap maakt [!DNL Data Migration Tool] aanvullende tabellen en triggers voor de migratietabellen in de Magento 1-database. Zij worden gebruikt in de [&#x200B; stijgende/delta &#x200B;](delta.md) migratiestap. Aanvullende tabellen bevatten informatie over gewijzigde records na de laatste migratieuitvoering. De trekkers van het gegevensbestand worden gebruikt om deze extra lijsten te bevolken, zodat als een nieuwe verrichting op de bepaalde lijst (een verslag wordt toegevoegd/gewijzigd/verwijderd) wordt uitgevoerd, deze gegevensbestandtrekker sparen informatie over deze verrichting aan de extra lijst. Wanneer we een deltamigratieproces uitvoeren, controleert [!DNL Data Migration Tool] deze tabellen op de niet-verwerkte records en wordt de benodigde inhoud gemigreerd naar de Magento 2-database.
 
 Elke nieuwe tabel bevat:
 
@@ -105,7 +105,7 @@ Tijdens het uitvoeren van de bewerking kan [!DNL Data Migration Tool] inconsiste
 * `Incompatibility in data. Source document: <EXTENSION_TABLE>. Field: <FIELD>. Error: <ERROR_MESSAGE>`
 * `Incompatibility in data. Destination document: <EXTENSION_TABLE>. Field: <FIELD>. Error: <ERROR_MESSAGE>`
 
-Zie de [ sectie van het Oplossen van problemen ](https://support.magento.com/hc/en-us/articles/360033020451) van deze gids voor meer informatie en aanbevelingen.
+Zie de [&#x200B; sectie van het Oplossen van problemen &#x200B;](https://support.magento.com/hc/en-us/articles/360033020451) van deze gids voor meer informatie en aanbevelingen.
 
 ## Volgende migratie
 

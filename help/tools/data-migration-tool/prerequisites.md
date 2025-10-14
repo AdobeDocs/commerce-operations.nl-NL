@@ -16,11 +16,11 @@ Voordat u de migratie start, moet u controleren of aan de volgende vereisten is 
 
 ## Magento 2-systeem
 
-* Opstelling uw Magento 2 systeem zodat het aan de [ systeemvereisten ](../../installation/system-requirements.md) voldoet.
+* Opstelling uw Magento 2 systeem zodat het aan de [&#x200B; systeemvereisten &#x200B;](../../installation/system-requirements.md) voldoet.
 
   Gebruik een topologie en een ontwerp dat minstens uw bestaand Magento 1 systeem aanpast.
 
-* [ installeer Magento 2 ](../../installation/overview.md).
+* [&#x200B; installeer Magento 2 &#x200B;](../../installation/overview.md).
 
 ## Cron
 
@@ -28,7 +28,7 @@ Start Magento 2-banen niet.
 
 ## Database
 
-* Na installatie, file of [ stortplaats ](https://dev.mysql.com/doc/refman/8.0/en/mysqldump.html) uw Magento 2 gegevensbestand zo spoedig mogelijk. Hierdoor kunt u de initiële databasestatus herstellen als de migratie niet succesvol is.
+* Na installatie, file of [&#x200B; stortplaats &#x200B;](https://dev.mysql.com/doc/refman/8.0/en/mysqldump.html) uw Magento 2 gegevensbestand zo spoedig mogelijk. Hierdoor kunt u de initiële databasestatus herstellen als de migratie niet succesvol is.
 
 * Controleer of de [!DNL Data Migration Tool] netwerktoegang heeft om de Magento 1- en Magento 2-databases te verbinden.
 
@@ -36,7 +36,7 @@ Start Magento 2-banen niet.
 
 * Zorg ervoor dat uw MySQL-accounts over alle benodigde rechten beschikken om toegang te krijgen tot Magento-databases.
 
-Als het Binaire Registreren voor uw Magento 1- gegevensbestand wordt toegelaten, plaats globale [`log_bin_trust_function_creators` ](https://dev.mysql.com/doc/refman/5.7/en/server-system-variables.html#sysvar_log_bin_trust_function_creators) MySQL systeemvariabele aan `1`, of geef het [ SUPER voorrecht ](https://dev.mysql.com/doc/refman/5.7/en/privileges-provided.html#priv_super) aan uw rekening toe.
+Als het Binaire Registreren voor uw Magento 1- gegevensbestand wordt toegelaten, plaats globale [`log_bin_trust_function_creators` &#x200B;](https://dev.mysql.com/doc/refman/5.7/en/server-system-variables.html#sysvar_log_bin_trust_function_creators) MySQL systeemvariabele aan `1`, of geef het [&#x200B; SUPER voorrecht &#x200B;](https://dev.mysql.com/doc/refman/5.7/en/privileges-provided.html#priv_super) aan uw rekening toe.
 
 * We raden u niet aan om vóór de migratie nieuwe entiteiten (producten, categorieën en kenmerken) in uw Magento 2-winkel te maken, omdat [!DNL Data Migration Tool] dergelijke nieuwe entiteiten vervangt door de oude entiteiten uit Magento 1.
 

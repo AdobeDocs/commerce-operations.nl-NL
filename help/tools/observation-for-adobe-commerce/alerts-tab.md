@@ -16,24 +16,24 @@ Het tabblad [!UICONTROL Alerts] bevat een reeks waarschuwingen, waaronder open e
 
 ## [!UICONTROL Open Alert Details]
 
-![ Open Kritieke Alarm ](../../assets/tools/observation-for-adobe-commerce/alerts-tab-1.jpg)
+![&#x200B; Open Kritieke Alarm &#x200B;](../../assets/tools/observation-for-adobe-commerce/alerts-tab-1.jpg)
 
 Het frame **[!UICONTROL Open Alert Details]** bevat een aantal open kritieke waarschuwingen over de geselecteerde tijdlijn. De waarschuwingen omvatten door Adobe gemaakte waarschuwingen en eventuele waarschuwingen die door de partner of handelaar zijn gemaakt.
 
 ## [!UICONTROL Closed Critical Alerts]
 
-![ Gesloten Kritieke Alarm ](../../assets/tools/observation-for-adobe-commerce/alerts-tab-2.jpg)
+![&#x200B; Gesloten Kritieke Alarm &#x200B;](../../assets/tools/observation-for-adobe-commerce/alerts-tab-2.jpg)
 
 Het frame **[!UICONTROL Closed Critical Alerts]** bevat een aantal gesloten kritieke waarschuwingen over de geselecteerde tijdlijn. De waarschuwingen omvatten door Adobe gemaakte waarschuwingen en eventuele waarschuwingen die door de partner of handelaar zijn gemaakt.
 
 ## [!UICONTROL Critical Alert Details]
 
-![ Kritieke Alarm Details ](../../assets/tools/observation-for-adobe-commerce/alerts-tab-3.jpg)
+![&#x200B; Kritieke Alarm Details &#x200B;](../../assets/tools/observation-for-adobe-commerce/alerts-tab-3.jpg)
 
 In het frame **[!UICONTROL Critical Alert Details]** wordt een telling weergegeven van de kritieke waarschuwingsgegevens over de geselecteerde tijdlijn, inclusief tijdstempel, naam van de voorwaarde en of de waarschuwingsgebeurtenis geopend of gesloten is.
 
 ## [!UICONTROL Infrastructure Alert Details]
 
-![ de Alarm Details van de Infrastructuur ](../../assets/tools/observation-for-adobe-commerce/alerts-tab-4.jpg)
+![&#x200B; de Alarm Details van de Infrastructuur &#x200B;](../../assets/tools/observation-for-adobe-commerce/alerts-tab-4.jpg)
 
 In het frame **[!UICONTROL Infrastructure Alert Details]** worden toepassingen, hosts en andere infrastructuurgebeurtenissen in de geselecteerde tijdlijn weergegeven.

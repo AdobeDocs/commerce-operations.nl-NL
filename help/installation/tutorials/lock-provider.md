@@ -11,7 +11,7 @@ ht-degree: 0%
 
 # De vergrendelingsprovider configureren
 
-Alvorens u dit bevel in werking stelt, moet u het volgende *doen of* u moet [ de toepassing ](../advanced.md) installeren:
+Alvorens u dit bevel in werking stelt, moet u het volgende *doen of* u moet [&#x200B; de toepassing &#x200B;](../advanced.md) installeren:
 
 * [Implementatieconfiguratie maken of bijwerken](deployment.md)
 * [Het databaseschema maken](database.md)
@@ -26,7 +26,7 @@ Configureer een vergrendelingsprovider om te voorkomen dat dubbele uitsnijdtaken
 
 Adobe Commerce gebruikt de database standaard om vergrendelingen op te slaan. Als u meerdere knooppunten op uw servers hebt, raden we u aan Zookeeper als vergrendelingsprovider te gebruiken.
 
-Als u Adobe Commerce uitvoert op een cloudinfrastructuur, hoeft u geen instellingen voor een vergrendelingsprovider te configureren. De toepassing vormt de leverancier van de dossierslot voor Pro projecten tijdens het leveringsproces. Zie [ variabelen van de Wolk ](https://experienceleague.adobe.com/nl/docs/commerce-cloud-service/user-guide/configure/env/stage/variables-cloud).
+Als u Adobe Commerce uitvoert op een cloudinfrastructuur, hoeft u geen instellingen voor een vergrendelingsprovider te configureren. De toepassing vormt de leverancier van de dossierslot voor Pro projecten tijdens het leveringsproces. Zie [&#x200B; variabelen van de Wolk &#x200B;](https://experienceleague.adobe.com/nl/docs/commerce-cloud-service/user-guide/configure/env/stage/variables-cloud).
 
 ### Opdrachtgebruik
 

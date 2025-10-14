@@ -68,7 +68,7 @@ Connection: keep-alive
 
 ## HTTP Basic-verificatie configureren in de beheerfunctie
 
-Voer de zelfde taken uit zoals die in [ de motorconfiguratie van het Onderzoek ](../configuration/search/configure-search-engine.md) *worden besproken behalve* klik **[!UICONTROL Yes]** van de **[!UICONTROL Enable HTTP Auth]** lijst en ga uw gebruikersbenaming en wachtwoord op de verstrekte gebieden in.
+Voer de zelfde taken uit zoals die in [&#x200B; de motorconfiguratie van het Onderzoek &#x200B;](../configuration/search/configure-search-engine.md) *worden besproken behalve* klik **[!UICONTROL Yes]** van de **[!UICONTROL Enable HTTP Auth]** lijst en ga uw gebruikersbenaming en wachtwoord op de verstrekte gebieden in.
 
 Klik op **[!UICONTROL Test Connection]** om te controleren of het werkt en klik vervolgens op **[!UICONTROL Save Config]** .
 

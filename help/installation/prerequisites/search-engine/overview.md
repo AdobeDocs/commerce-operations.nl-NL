@@ -12,17 +12,17 @@ ht-degree: 0%
 
 # Voorwaarden voor zoekmachines
 
-Vanaf Adobe Commerce 2.4, moeten alle installaties worden gevormd om [ Elasticsearch ](https://www.elastic.co) of [ OpenSearch ](https://opensearch.org/) als oplossing van het catalogusonderzoek te gebruiken.
+Vanaf Adobe Commerce 2.4, moeten alle installaties worden gevormd om [&#x200B; Elasticsearch &#x200B;](https://www.elastic.co) of [&#x200B; OpenSearch &#x200B;](https://opensearch.org/) als oplossing van het catalogusonderzoek te gebruiken.
 
 >[!NOTE]
 >
->Ondersteuning voor OpenSearch is toegevoegd in 2.4.4. OpenSearch is een compatibele vork van Elasticsearch. Alle instructies voor het configureren van Elasticsearch 7 zijn van toepassing op OpenSearch. [ migreren van Elasticsearch aan OpenSearch ](../../../upgrade/prepare/opensearch-migration.md) verstrekt begeleiding bij het schakelen naar OpenSearch.
+>Ondersteuning voor OpenSearch is toegevoegd in 2.4.4. OpenSearch is een compatibele vork van Elasticsearch. Alle instructies voor het configureren van Elasticsearch 7 zijn van toepassing op OpenSearch. [&#x200B; migreren van Elasticsearch aan OpenSearch &#x200B;](../../../upgrade/prepare/opensearch-migration.md) verstrekt begeleiding bij het schakelen naar OpenSearch.
 
 ## Ondersteunde versies
 
 U moet Elasticsearch of OpenSearch installeren en configureren voordat u Adobe Commerce 2.4.4 en hoger installeert.
 
-Verwijs naar de [ Vereisten van het Systeem ](../../system-requirements.md) voor specifieke versieinformatie.
+Verwijs naar de [&#x200B; Vereisten van het Systeem &#x200B;](../../system-requirements.md) voor specifieke versieinformatie.
 
 ## Aanbevolen configuratie
 
@@ -35,13 +35,13 @@ We raden het volgende aan:
 
 De volgende taken veronderstellen dat u uw systeem volgens het volgende diagram hebt gevormd:
 
-![ diagram van de Motor van het Onderzoek ](../../../assets/installation/search-engine-config.svg)
+![&#x200B; diagram van de Motor van het Onderzoek &#x200B;](../../../assets/installation/search-engine-config.svg)
 
 Het voorgaande diagram toont:
 
 * De Commerce-toepassing en het zoekprogramma zijn op verschillende hosts geïnstalleerd.
 
-  Als u op aparte hosts werkt, is proxy vereist. (Het groeperen van zich de onderzoeksmotor is voorbij het werkingsgebied van deze gids, maar u kunt meer informatie in [ Elasticsearch vinden die documentatie ](https://www.elastic.co/guide/en/elasticsearch/guide/current/distributed-cluster.html) groeperen.)
+  Als u op aparte hosts werkt, is proxy vereist. (Het groeperen van zich de onderzoeksmotor is voorbij het werkingsgebied van deze gids, maar u kunt meer informatie in [&#x200B; Elasticsearch vinden die documentatie &#x200B;](https://www.elastic.co/guide/en/elasticsearch/guide/current/distributed-cluster.html) groeperen.)
 
 * Elke host heeft een eigen webserver. De webservers hoeven niet hetzelfde te zijn.
 
@@ -82,10 +82,10 @@ Beveiligingsgerelateerde software (iptables, SELinux, AppArmor) kan standaard wo
 
 Raadpleeg de volgende bronnen als u regels wilt instellen voor communicatie met de firewall of SELinux ingeschakeld:
 
-* [ iptables hoe-aan ](https://help.ubuntu.com/community/IptablesHowTo)
-* [ hoe te om iptables regels (fedora project) uit te geven ](https://fedoraproject.org/wiki/How_to_edit_iptables_rules)
-* [ Inleiding aan SELinux (CentOS.org) ](https://www.centos.org)
-* [ SELinux hoe-aan Wiki (CentOS.org) ](https://wiki.centos.org/HowTos/SELinux)
+* [&#x200B; iptables hoe-aan &#x200B;](https://help.ubuntu.com/community/IptablesHowTo)
+* [&#x200B; hoe te om iptables regels (fedora project) uit te geven &#x200B;](https://fedoraproject.org/wiki/How_to_edit_iptables_rules)
+* [&#x200B; Inleiding aan SELinux (CentOS.org) &#x200B;](https://www.centos.org)
+* [&#x200B; SELinux hoe-aan Wiki (CentOS.org) &#x200B;](https://wiki.centos.org/HowTos/SELinux)
 
 ### De Java Software Development Kit installeren
 
@@ -104,7 +104,7 @@ Zie een van de volgende secties:
 
 #### De JDK installeren op CentOS
 
-Zie dit [ Digitale zelfstudie van de Oceaan ](https://www.digitalocean.com/community/tutorials/how-to-install-java-on-centos-and-fedora#install-oracle-java-8).
+Zie dit [&#x200B; Digitale zelfstudie van de Oceaan &#x200B;](https://www.digitalocean.com/community/tutorials/how-to-install-java-on-centos-and-fedora#install-oracle-java-8).
 
 Ben zeker om JDK te installeren en *niet* JRE.
 
@@ -114,7 +114,7 @@ yum -y install java-1.8.0-openjdk
 
 >[!NOTE]
 >
->Java versie 8 is mogelijk niet voor alle besturingssystemen beschikbaar. Bijvoorbeeld, kunt u [ de lijst van beschikbare pakketten voor Ubuntu ](https://packages.ubuntu.com/) zoeken.
+>Java versie 8 is mogelijk niet voor alle besturingssystemen beschikbaar. Bijvoorbeeld, kunt u [&#x200B; de lijst van beschikbare pakketten voor Ubuntu &#x200B;](https://packages.ubuntu.com/) zoeken.
 
 #### De JDK installeren op Ubuntu
 
@@ -132,7 +132,7 @@ Voor andere opties, zie {de documentatie van 0} Oracle [.](https://docs.oracle.c
 
 ### De zoekfunctie installeren
 
-Volg [ Installerend Elasticsearch ](https://www.elastic.co/guide/en/elasticsearch/reference/current/install-elasticsearch.html) of [ installeer en vorm OpenSearch ](https://opensearch.org/docs/latest/opensearch/install/index/) voor uw platform-specifieke stappen.
+Volg [&#x200B; Installerend Elasticsearch &#x200B;](https://www.elastic.co/guide/en/elasticsearch/reference/current/install-elasticsearch.html) of [&#x200B; installeer en vorm OpenSearch &#x200B;](https://opensearch.org/docs/latest/opensearch/install/index/) voor uw platform-specifieke stappen.
 
 Als u wilt controleren of Elasticsearch werkt, voert u de volgende opdracht in op de server waarop deze wordt uitgevoerd:
 
@@ -159,10 +159,10 @@ curl -XGET https://<host>:9200/_cat/plugins?v -u 'admin:admin' --insecure
 
 ## Elasticsearch upgraden
 
-Verwijs naar [ Bevorderend Elasticsearch ](https://www.elastic.co/guide/en/elasticsearch/reference/current/setup-upgrade.html) voor volledige instructies bij het steunen van uw gegevens, het ontdekken van potentiële migratiekwesties, en het testen van verbeteringen alvorens aan productie op te stellen. Afhankelijk van uw huidige versie van Elasticsearch is het mogelijk dat een volledige cluster opnieuw moet worden opgestart.
+Verwijs naar [&#x200B; Bevorderend Elasticsearch &#x200B;](https://www.elastic.co/guide/en/elasticsearch/reference/current/setup-upgrade.html) voor volledige instructies bij het steunen van uw gegevens, het ontdekken van potentiële migratiekwesties, en het testen van verbeteringen alvorens aan productie op te stellen. Afhankelijk van uw huidige versie van Elasticsearch is het mogelijk dat een volledige cluster opnieuw moet worden opgestart.
 
-Elasticsearch vereist JDK 1.8 of hoger. Zie [ installeer de Uitrusting van de Ontwikkeling van de Software van Java ](#install-the-java-software-development-kit) om te controleren welke versie van JDK geïnstalleerd is.
+Elasticsearch vereist JDK 1.8 of hoger. Zie [&#x200B; installeer de Uitrusting van de Ontwikkeling van de Software van Java &#x200B;](#install-the-java-software-development-kit) om te controleren welke versie van JDK geïnstalleerd is.
 
 ## Aanvullende bronnen
 
-Zie [ Elasticsearch ](https://www.elastic.co/guide/en/elasticsearch/reference/current/index.html) of [ OpenSearch ](https://opensearch.org/docs/latest/) documentatie.
+Zie [&#x200B; Elasticsearch &#x200B;](https://www.elastic.co/guide/en/elasticsearch/reference/current/index.html) of [&#x200B; OpenSearch &#x200B;](https://opensearch.org/docs/latest/) documentatie.

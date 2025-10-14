@@ -18,12 +18,12 @@ Het volgen van deze beste praktijken kan helpen onbevoegde toegang en malware aa
 
 >[!TIP]
 >
->Adobe heeft ontdekt dat de meeste veiligheidsincidenten voorkomen wanneer de bedreigingsactoren voordeel halen uit bestaande, ongepatcheerde kwetsbaarheid, slechte wachtwoorden, en zwakke eigendom en toestemmingsmontages in de toepassing en de infrastructuurconfiguratie van Commerce. Minimaliseer het voorkomen van veiligheidsincidenten door best practices voor Adobe-beveiliging te evalueren en te volgen wanneer u Adobe Commerce-installaties instelt, configureert en bijwerkt. Zie [ uw plaats en infrastructuur van Commerce beveiligen ](../launch/security-best-practices.md).
+>Adobe heeft ontdekt dat de meeste veiligheidsincidenten voorkomen wanneer de bedreigingsactoren voordeel halen uit bestaande, ongepatcheerde kwetsbaarheid, slechte wachtwoorden, en zwakke eigendom en toestemmingsmontages in de toepassing en de infrastructuurconfiguratie van Commerce. Minimaliseer het voorkomen van veiligheidsincidenten door best practices voor Adobe-beveiliging te evalueren en te volgen wanneer u Adobe Commerce-installaties instelt, configureert en bijwerkt. Zie [&#x200B; uw plaats en infrastructuur van Commerce beveiligen &#x200B;](../launch/security-best-practices.md).
 
 
 ## Betrokken producten en versies
 
-[ Alle gesteunde versies ](../../../release/versions.md) van:
+[&#x200B; Alle gesteunde versies &#x200B;](../../../release/versions.md) van:
 
 - Adobe Commerce over cloudinfrastructuur
 - Adobe Commerce ter plaatse
@@ -63,22 +63,22 @@ In het ongelukkige geval van een plaatscompromis, zijn er enkele belangrijke aan
 
 De eerste stap van de analyse van incidenten is om zoveel mogelijk feiten te verzamelen, zo snel mogelijk. Het verzamelen van informatie over het incident kan helpen de potentiële oorzaak van het incident te bepalen. Adobe Commerce biedt de onderstaande tools voor hulp bij uw analyse van incidenten.
 
-- [ Logboeken van de Actie Admin van de Controle &lbrace;](https://experienceleague.adobe.com/docs/commerce-admin/systems/action-logs/action-log-report.html?lang=nl-NL).
+- [&#x200B; Logboeken van de Actie Admin van de Controle &lbrace;](https://experienceleague.adobe.com/docs/commerce-admin/systems/action-logs/action-log-report.html?lang=nl-NL).
 
   In het rapport Handelingenlogboeken wordt een gedetailleerd overzicht weergegeven van alle beheeracties die zijn ingeschakeld voor loggen. Elke record heeft een tijdstempel en registreert het IP-adres en de naam van de gebruiker. Het logboekgegeven omvat admin gebruikersgegevens en verwante veranderingen die tijdens de actie werden aangebracht.
 
-- Analyseer gebeurtenissen met het [ Bevestiging voor het hulpmiddel van Adobe Commerce ](../../../tools/observation-for-adobe-commerce/intro.md).
+- Analyseer gebeurtenissen met het [&#x200B; Bevestiging voor het hulpmiddel van Adobe Commerce &#x200B;](../../../tools/observation-for-adobe-commerce/intro.md).
 
   Met het gereedschap Waarnemen voor Adobe Commerce kunt u complexe problemen analyseren om de onderliggende oorzaken te achterhalen. In plaats van het bijhouden van ongelijke gegevens kunt u tijd besteden aan het correleren van gebeurtenissen en fouten om dieper inzicht te krijgen in de oorzaken van knelpunten in de prestaties.
 
   Gebruik het **lusje van de Veiligheid** in het hulpmiddel om een duidelijke mening van potentiële veiligheidskwesties te krijgen helpen worteloorzaken identificeren en plaatsen houden die optimaal presteren.
 
-- Analyseer logboeken met [ Logboeken van New Relic ](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/monitor/new-relic/new-relic-service.html?lang=nl-NL)
+- Analyseer logboeken met [&#x200B; Logboeken van New Relic &#x200B;](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/monitor/new-relic/new-relic-service.html?lang=nl-NL)
 
-  Adobe Commerce op de Pro projecten van de wolkeninfrastructuur omvat de [ Logs van New Relic ](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/monitor/new-relic/log-management.html?lang=nl-NL) dienst. De dienst wordt pre-gevormd om alle logboekgegevens van uw het Opvoeren en milieu&#39;s van de Productie samen te voegen om het in een gecentraliseerd logboekbeheersdashboard te tonen waar u samengevoegde gegevens kunt zoeken en visualiseren.
+  Adobe Commerce op de Pro projecten van de wolkeninfrastructuur omvat de [&#x200B; Logs van New Relic &#x200B;](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/monitor/new-relic/log-management.html?lang=nl-NL) dienst. De dienst wordt pre-gevormd om alle logboekgegevens van uw het Opvoeren en milieu&#39;s van de Productie samen te voegen om het in een gecentraliseerd logboekbeheersdashboard te tonen waar u samengevoegde gegevens kunt zoeken en visualiseren.
 
-  Voor andere projecten van Commerce, kunt u opstelling en de [ dienst van de Logboeken van New Relic gebruiken ](https://docs.newrelic.com/docs/logs/get-started/get-started-log-management/) om de volgende taken te voltooien:
-   - Het gebruik [ vragen van New Relic ](https://docs.newrelic.com/docs/logs/new-relic-logs/ui-data/query-syntax-logs) aan onderzoek samengevoegde logboekgegevens.
+  Voor andere projecten van Commerce, kunt u opstelling en de [&#x200B; dienst van de Logboeken van New Relic gebruiken &#x200B;](https://docs.newrelic.com/docs/logs/get-started/get-started-log-management/) om de volgende taken te voltooien:
+   - Het gebruik [&#x200B; vragen van New Relic &#x200B;](https://docs.newrelic.com/docs/logs/new-relic-logs/ui-data/query-syntax-logs) aan onderzoek samengevoegde logboekgegevens.
    - Loggegevens visualiseren via New Relic Logs.
 
 ## Audit accounts, code en database
@@ -89,17 +89,17 @@ Blijf de site nauwlettend volgen na het incident, aangezien veel sites binnen en
 
 ### Gebruikersaccounts van Admin controleren
 
-- [ Admin van het Overzicht gebruikerstoegang ](https://experienceleague.adobe.com/docs/commerce-admin/systems/user-accounts/permissions-users-all.html?lang=nl-NL) - verwijder oude, ongebruikte, of verdachte rekeningen en roteer wachtwoorden voor alle gebruikers Admin.
+- [&#x200B; Admin van het Overzicht gebruikerstoegang &#x200B;](https://experienceleague.adobe.com/docs/commerce-admin/systems/user-accounts/permissions-users-all.html?lang=nl-NL) - verwijder oude, ongebruikte, of verdachte rekeningen en roteer wachtwoorden voor alle gebruikers Admin.
 
-- [ de veiligheidsmontages van Admin van het Overzicht ](https://experienceleague.adobe.com/docs/commerce-admin/systems/security/security-admin.html?lang=nl-NL) - verifieer dat de veiligheidsmontages van Admin veiligheid best praktijken volgen.
+- [&#x200B; de veiligheidsmontages van Admin van het Overzicht &#x200B;](https://experienceleague.adobe.com/docs/commerce-admin/systems/security/security-admin.html?lang=nl-NL) - verifieer dat de veiligheidsmontages van Admin veiligheid best praktijken volgen.
 
-- [ gebruikersrekeningen van het Overzicht voor Adobe Commerce op de projecten van de wolkeninfrastructuur ](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/project/user-access.html?lang=nl-NL) - verwijder oude, ongebruikte, of verdachte rekeningen en roteer wachtwoorden voor alle gebruikers van Admin van het wolkenproject. Controleer of de beveiligingsinstellingen van de account correct zijn geconfigureerd.
+- [&#x200B; gebruikersrekeningen van het Overzicht voor Adobe Commerce op de projecten van de wolkeninfrastructuur &#x200B;](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/project/user-access.html?lang=nl-NL) - verwijder oude, ongebruikte, of verdachte rekeningen en roteer wachtwoorden voor alle gebruikers van Admin van het wolkenproject. Controleer of de beveiligingsinstellingen van de account correct zijn geconfigureerd.
 
-- [ de sleutels van SSH van de Controle ](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/secure-connections.html?lang=nl-NL) voor Adobe Commerce op wolkeninfrastructuur-Overzicht, schrapt, en roteert de sleutels van SSH.
+- [&#x200B; de sleutels van SSH van de Controle &#x200B;](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/secure-connections.html?lang=nl-NL) voor Adobe Commerce op wolkeninfrastructuur-Overzicht, schrapt, en roteert de sleutels van SSH.
 
 ### Controlecode
 
-- Van Admin, herzie de [ configuratie van de Kopbal en van de Voettekst van HTML ](https://experienceleague.adobe.com/docs/commerce-admin/content-design/design/page-setup.html?lang=nl-NL) op alle werkingsgebiedniveaus, met inbegrip van `website` en `store view`. Verwijder alle onbekende JavaScript-code uit de scripts en stijlpagina&#39;s en andere HTML-instellingen. Alleen herkende code zoals tekstfragmenten bijhouden.
+- Van Admin, herzie de [&#x200B; configuratie van de Kopbal en van de Voettekst van HTML &#x200B;](https://experienceleague.adobe.com/docs/commerce-admin/content-design/design/page-setup.html?lang=nl-NL) op alle werkingsgebiedniveaus, met inbegrip van `website` en `store view`. Verwijder alle onbekende JavaScript-code uit de scripts en stijlpagina&#39;s en andere HTML-instellingen. Alleen herkende code zoals tekstfragmenten bijhouden.
 
 - Vergelijk de huidige basis van de productiecode met de codebasis die in het Systeem van de Controle van de Versie (VCS) wordt opgeslagen.
 
@@ -121,7 +121,7 @@ Blijf de site nauwlettend volgen na het incident, aangezien veel sites binnen en
 
 ## Google-waarschuwingen verwijderen
 
-Als de site door Google is gemarkeerd als een locatie met kwaadaardige code, vraagt u om een revisie zodra de site is gereinigd. Het duurt een paar dagen voordat sites die met malware zijn besmet, zijn gecontroleerd. Nadat Google heeft vastgesteld dat de site schoon is, worden waarschuwingen uit zoekresultaten weergegeven en verdwijnen de browsers binnen 72 uur. Zie [ Verzoek om een overzicht ](https://web.dev/articles/request-a-review).
+Als de site door Google is gemarkeerd als een locatie met kwaadaardige code, vraagt u om een revisie zodra de site is gereinigd. Het duurt een paar dagen voordat sites die met malware zijn besmet, zijn gecontroleerd. Nadat Google heeft vastgesteld dat de site schoon is, worden waarschuwingen uit zoekresultaten weergegeven en verdwijnen de browsers binnen 72 uur. Zie [&#x200B; Verzoek om een overzicht &#x200B;](https://web.dev/articles/request-a-review).
 
 ## Controlelijst voor malwaresultaten controleren
 
@@ -133,4 +133,4 @@ Wanneer het behandelen van verfijnde aanvallen, is de beste manier van actie met
 
 ## Aanvullende informatie
 
-- [ Kader van de Analyse van de Oorzaak van de wortel ](https://sansec.io/kb/incident-response/magento-root-cause-analysis).
+- [&#x200B; Kader van de Analyse van de Oorzaak van de wortel &#x200B;](https://sansec.io/kb/incident-response/magento-root-cause-analysis).

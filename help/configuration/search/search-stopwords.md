@@ -20,10 +20,10 @@ U moet de stopwoorden beheren met gebruik van CSV-bestanden in de map `<magento_
 
 Zie de volgende bronnen voor meer informatie over hoe Elasticsearch en OpenSearch gebruik maken van stopwords:
 
-- [ stoppenWoorden: Prestaties versus Precisie ](https://www.elastic.co/guide/en/elasticsearch/guide/current/stopwords.html)
-- [ Pros en Kons van Stopwords ](https://www.elastic.co/guide/en/elasticsearch/guide/current/pros-cons-stopwords.html)
-- [ Gebruikend Stopwords ](https://www.elastic.co/guide/en/elasticsearch/guide/current/using-stopwords.html)
-- [ stopwords en Prestaties ](https://www.elastic.co/guide/en/elasticsearch/guide/current/stopwords-performance.html)
+- [&#x200B; stoppenWoorden: Prestaties versus Precisie &#x200B;](https://www.elastic.co/guide/en/elasticsearch/guide/current/stopwords.html)
+- [&#x200B; Pros en Kons van Stopwords &#x200B;](https://www.elastic.co/guide/en/elasticsearch/guide/current/pros-cons-stopwords.html)
+- [&#x200B; Gebruikend Stopwords &#x200B;](https://www.elastic.co/guide/en/elasticsearch/guide/current/using-stopwords.html)
+- [&#x200B; stopwords en Prestaties &#x200B;](https://www.elastic.co/guide/en/elasticsearch/guide/current/stopwords-performance.html)
 
 ## Stopwoorden configureren
 
@@ -35,7 +35,7 @@ De standaardlevensduur voor de cache van stopwords-bestanden is 15 minuten.
 
 **om stopwords uit te geven**:
 
-1. Login aan uw server van Commerce, of schakelaar aan, de [ eigenaar van het dossiersysteem ](../../installation/prerequisites/file-system/overview.md).
+1. Login aan uw server van Commerce, of schakelaar aan, de [&#x200B; eigenaar van het dossiersysteem &#x200B;](../../installation/prerequisites/file-system/overview.md).
 1. Gebruik een teksteditor om een stopword-bestand te openen in de map `<magento_root>/vendor/magento/module-elasticsearch/etc/stopwords` .
 
    CSV-bestanden gebruiken de naamgevingsconventie `stopwords_<locale_code>.csv` . Het Duitse stopword-bestand heeft bijvoorbeeld de naam `stopwords_de_DE.csv` .
@@ -61,7 +61,7 @@ De standaardlevensduur voor de cache van stopwords-bestanden is 15 minuten.
 
 **om stopwords voor een scène** toe te voegen:
 
-1. Login aan uw server van Commerce, of schakelaar aan, de [ eigenaar van het dossiersysteem ](../../installation/prerequisites/file-system/overview.md).
+1. Login aan uw server van Commerce, of schakelaar aan, de [&#x200B; eigenaar van het dossiersysteem &#x200B;](../../installation/prerequisites/file-system/overview.md).
 
 1. Gebruik een teksteditor om een stopword-bestand met de naam `stopwords_<locale_code>.csv` in de map `<magento_root>/vendor/magento/module-elasticsearch/etc/stopwords` te maken.
 
@@ -126,7 +126,7 @@ De locatie is afhankelijk van de manier waarop u de Commerce-software hebt geïn
 
 ## Om de folder van uw module te veranderen
 
-1. [ creeer een module ](https://developer.adobe.com/commerce/php/development/build/component-file-structure/)
+1. [&#x200B; creeer een module &#x200B;](https://developer.adobe.com/commerce/php/development/build/component-file-structure/)
 1. Voeg instructies toe in de module `etc/di.xml` :
 
    ```xml

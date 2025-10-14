@@ -22,7 +22,7 @@ Na configuratie, worden de hoofdgegevensbestanden gevormd als volgt:
 - Commerce-quotadatabase: 11 tabellen
 - Commerce-verkoopdatabase: 55 tabellen
 
-Om te verifiëren dat uw gespleten gegevensbestanden behoorlijk werken, voer de volgende taken uit en verifieer dat het gegeven aan de gegevensbestandlijsten gebruikend een gegevensbestandhulpmiddel zoals [ phpmyadmin ](../../installation/prerequisites/optional-software.md#phpmyadmin) wordt toegevoegd:
+Om te verifiëren dat uw gespleten gegevensbestanden behoorlijk werken, voer de volgende taken uit en verifieer dat het gegeven aan de gegevensbestandlijsten gebruikend een gegevensbestandhulpmiddel zoals [&#x200B; phpmyadmin &#x200B;](../../installation/prerequisites/optional-software.md#phpmyadmin) wordt toegevoegd:
 
 | Te controleren wat | Controleren |
 | -------------- | ------------- |

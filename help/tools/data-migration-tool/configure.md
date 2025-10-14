@@ -106,7 +106,7 @@ Voordat u gegevens kunt migreren, moet u een Magento 2-module maken.
 
 1. In het `config.xml` -bestand moet u toegangsgegevens instellen voor de M1- en M2-databases en de coderingssleutel.
 
-1. Als uw M1-winkel aangepaste wijzigingen heeft, moet u de rest van uw configuratiebestanden toewijzen aan uw Magento 1-winkel-aanpassingen. Zie [ Werk met configuratie en kaartdossiers ](#migration-config).
+1. Als uw M1-winkel aangepaste wijzigingen heeft, moet u de rest van uw configuratiebestanden toewijzen aan uw Magento 1-winkel-aanpassingen. Zie [&#x200B; Werk met configuratie en kaartdossiers &#x200B;](#migration-config).
 
 ### Migratie configureren in map `vendor`
 
@@ -114,7 +114,7 @@ Voordat u gegevens migreert, moet u een `config.xml` -configuratiebestand maken 
 
 U kunt als volgt de [!DNL Data Migration Tool] for migration configureren:
 
-1. Login aan uw toepassingsserver als, of schakelaar aan, de [ eigenaar van het dossiersysteem ](../../installation/prerequisites/file-system/overview.md).
+1. Login aan uw toepassingsserver als, of schakelaar aan, de [&#x200B; eigenaar van het dossiersysteem &#x200B;](../../installation/prerequisites/file-system/overview.md).
 
 1. Ga naar de volgende map:
 
@@ -242,4 +242,4 @@ Hoewel u het grootste deel van de tijd met het `map.xml.dist` dossier werkt, bes
 | *slechts Adobe Commerce*. `visual_merchandiser_attribute_groups.xml.dist` | Bevat lijst van attributen die in Stap VisualMerchandiser worden gebruikt. |
 | *slechts Adobe Commerce*. `visual_merchandiser_document_groups.xml.dist` | Bevat lijst van lijsten die in Stap VisualMerchandiser worden gebruikt. |
 
-U kunt naar [[!DNL Data Migration Tool]  Technische Specificatie ](technical-specification.md) voor meer details verwijzen.
+U kunt naar [[!DNL Data Migration Tool]  Technische Specificatie &#x200B;](technical-specification.md) voor meer details verwijzen.

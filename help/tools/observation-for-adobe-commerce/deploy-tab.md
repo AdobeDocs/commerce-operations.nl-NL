@@ -16,13 +16,13 @@ Dit lusje is een poging om kwesties en oorzaken van plaatsingsproblemen snel te 
 
 ## [!UICONTROL Deploy log Deployment Troubleshooter]
 
-![ stelt de Troubleshooter van de Plaatsing van het Logboek ](../../assets/tools/observation-for-adobe-commerce/deploy-tab-1.jpg) op
+![&#x200B; stelt de Troubleshooter van de Plaatsing van het Logboek &#x200B;](../../assets/tools/observation-for-adobe-commerce/deploy-tab-1.jpg) op
 
 Het **[!UICONTROL Deploy log Deployment Troubleshooter]** kader toont een aantal gebeurtenissen van het plaatsingslogboek die over het geselecteerde tijdkader voorkwamen. De bedoeling is een overzichtsweergave van implementatieactiviteiten te bieden en de complexiteit van de implementatie door de telling te bepalen. De meer geregistreerde berichten, complexer de plaatsing typisch is.
 
 ## [!UICONTROL Deploy State]
 
-![ stelt Staat ](../../assets/tools/observation-for-adobe-commerce/deploy-tab-2.jpg) op
+![&#x200B; stelt Staat &#x200B;](../../assets/tools/observation-for-adobe-commerce/deploy-tab-2.jpg) op
 
 Het **[!UICONTROL Deploy State]** kader toont de plaatsingsgebeurtenissen die over het geselecteerde tijdkader voorkwamen. De parser voor dit kader zoekt naar deze specifieke signalen:
 
@@ -38,7 +38,7 @@ Het **[!UICONTROL Deploy State]** kader toont de plaatsingsgebeurtenissen die ov
 
 ## [!UICONTROL Deploy Log Detail]
 
-![ stelt het Detail van het Logboek ](../../assets/tools/observation-for-adobe-commerce/deploy-tab-3.jpg) op
+![&#x200B; stelt het Detail van het Logboek &#x200B;](../../assets/tools/observation-for-adobe-commerce/deploy-tab-3.jpg) op
 
 Het **[!UICONTROL Deploy Log Detail]** kader toont de summiere details van het plaatsingslogboekbericht die over het geselecteerde tijdkader voorkwamen. Het kader ontleedt voor de volgende koorden in de plaatsingslogboeken:
 
@@ -79,7 +79,7 @@ Het **[!UICONTROL Deploy Log Detail]** kader toont de summiere details van het p
 
 ## [!UICONTROL Post Deploy Log Detail]
 
-![ Post stelt logboekdetail ](../../assets/tools/observation-for-adobe-commerce/deploy-tab-4.jpg) op
+![&#x200B; Post stelt logboekdetail &#x200B;](../../assets/tools/observation-for-adobe-commerce/deploy-tab-4.jpg) op
 
 In het **[!UICONTROL Post Deploy Log Detail]** -frame worden de loggegevens weergegeven die zich na de implementatie binnen de geselecteerde tijdlijn hebben voorgedaan. Dit kader is geconcentreerd op bepaalde logboekberichten die de volgende koorden bevatten:
 
@@ -97,7 +97,7 @@ In het **[!UICONTROL Post Deploy Log Detail]** -frame worden de loggegevens weer
 
 ## [!UICONTROL Cloud Log Detail]
 
-![ het Detail van het Logboek van de Wolk ](../../assets/tools/observation-for-adobe-commerce/deploy-tab-5.jpg)
+![&#x200B; het Detail van het Logboek van de Wolk &#x200B;](../../assets/tools/observation-for-adobe-commerce/deploy-tab-5.jpg)
 
 In het frame **[!UICONTROL Cloud Log Detail]** worden de gegevens van het cloudlog weergegeven die zich tijdens het geselecteerde tijdsbestek hebben voorgedaan. De volgende tekenreeksen worden geparseerd en geretourneerd met het label &#39;AS&#39; hieronder:
 
@@ -151,12 +151,12 @@ In het frame **[!UICONTROL Cloud Log Detail]** worden de gegevens van het cloudl
 
 ## [!UICONTROL Count of modules imported during deploy]
 
-![ Telling van modules die tijdens opstellen ](../../assets/tools/observation-for-adobe-commerce/deploy-tab-6.jpg) worden ingevoerd
+![&#x200B; Telling van modules die tijdens opstellen &#x200B;](../../assets/tools/observation-for-adobe-commerce/deploy-tab-6.jpg) worden ingevoerd
 
 In het frame **[!UICONTROL Count of modules imported during deploy]** wordt het aantal modules weergegeven dat tijdens de implementatie in de geselecteerde tijdlijn wordt geïmporteerd.
 
 ## [!UICONTROL Deployed module list]
 
-![ Gedistribueerde modulelijst ](../../assets/tools/observation-for-adobe-commerce/deploy-tab-7.jpg)
+![&#x200B; Gedistribueerde modulelijst &#x200B;](../../assets/tools/observation-for-adobe-commerce/deploy-tab-7.jpg)
 
 Het **[!UICONTROL Deployed module list]** kader toont opgestelde modules over het geselecteerde timeframe.

@@ -27,7 +27,7 @@ In dit onderwerp wordt beschreven hoe u de Apache-hoofdmap van een bestaande ins
 
 ## Een opmerking over nginx
 
-Als u [ nginx ](../prerequisites/web-server/nginx.md) en het [`nginx.conf.sample` ](https://github.com/magento/magento2/blob/2.4/nginx.conf.sample) dossier inbegrepen in de installatiemap gebruikt, dient u waarschijnlijk reeds dossiers van de `pub/` folder.
+Als u [&#x200B; nginx &#x200B;](../prerequisites/web-server/nginx.md) en het [`nginx.conf.sample` &#x200B;](https://github.com/magento/magento2/blob/2.4/nginx.conf.sample) dossier inbegrepen in de installatiemap gebruikt, dient u waarschijnlijk reeds dossiers van de `pub/` folder.
 
 Wanneer de configuratie van `nginx.conf.sample` wordt gebruikt in uw serverblok dat uw site definieert, worden de hoofdmapinstellingen van uw server genegeerd om bestanden uit de map van `pub/` te bedienen. Zie bijvoorbeeld de laatste regel in de volgende configuratie:
 
@@ -60,7 +60,7 @@ Als u deze zelfstudie wilt voltooien, hebt u toegang nodig tot een werkende inst
 
 >[!NOTE]
 >
->Verwijs naar [ Eerste vereisten ](../prerequisites/overview.md) en de [ Gids van de Installatie ](../overview.md) voor meer informatie.
+>Verwijs naar [&#x200B; Eerste vereisten &#x200B;](../prerequisites/overview.md) en de [&#x200B; Gids van de Installatie &#x200B;](../overview.md) voor meer informatie.
 
 ## &#x200B;1. De serverconfiguratie bewerken
 
@@ -132,11 +132,11 @@ Voeg het volgende knooppunt toe aan het `env.php` -bestand.
 ]
 ```
 
-Verwijs naar de {[ verwijzing 0} env.php voor meer informatie.](../../configuration/reference/config-reference-envphp.md)
+Verwijs naar de {[&#x200B; verwijzing 0} env.php voor meer informatie.](../../configuration/reference/config-reference-envphp.md)
 
 ## &#x200B;4. Overschakelmodi
 
-[ de wijzen van de Toepassing ](../../configuration/bootstrap/application-modes.md), die `production` en `developer` omvatten, worden ontworpen om veiligheid te verbeteren en ontwikkeling gemakkelijker te maken. Zoals de namen suggereren, moet u overschakelen op de modus `developer` wanneer u de toepassing uitbreidt of aanpast en overschakelen op de modus `production` wanneer u in een live omgeving werkt.
+[&#x200B; de wijzen van de Toepassing &#x200B;](../../configuration/bootstrap/application-modes.md), die `production` en `developer` omvatten, worden ontworpen om veiligheid te verbeteren en ontwikkeling gemakkelijker te maken. Zoals de namen suggereren, moet u overschakelen op de modus `developer` wanneer u de toepassing uitbreidt of aanpast en overschakelen op de modus `production` wanneer u in een live omgeving werkt.
 
 Het schakelen tussen wijzen is een belangrijke stap om te verifiëren dat uw serverconfiguratie behoorlijk werkt. U kunt tussen wijzen schakelen gebruikend het CLI hulpmiddel:
 
@@ -172,12 +172,12 @@ Ga naar de winkel in webbrowser om te controleren of alles werkt.
 
    In de volgende afbeelding ziet u een voorbeeldwinkelpagina. Als het als volgt toont, was uw installatie een succes!
 
-   ![ Storefront die een succesvolle installatie ](../../assets/installation/install-success_store.png) verifieert
+   ![&#x200B; Storefront die een succesvolle installatie &#x200B;](../../assets/installation/install-success_store.png) verifieert
 
-   Verwijs naar de [ het oplossen van problemensectie ](https://support.magento.com/hc/en-us/articles/360032994352) als de pagina 404 (niet Gevonden) toont of er niet in slaagt om andere activa zoals beelden, CSS, en JS te laden.
+   Verwijs naar de [&#x200B; het oplossen van problemensectie &#x200B;](https://support.magento.com/hc/en-us/articles/360032994352) als de pagina 404 (niet Gevonden) toont of er niet in slaagt om andere activa zoals beelden, CSS, en JS te laden.
 
 1. Probeer een toepassingsmap vanuit een browser te openen. Voeg de mapnaam toe aan de hostnaam of het IP-adres van de server op de adresbalk:
 
    Als u een bericht van 404 of &quot;Toegang ontkend&quot;ziet, hebt u met succes toegang tot het dossiersysteem beperkt.
 
-   ![ Ontkende Toegang ](../../assets/installation/access-denied.png)
+   ![&#x200B; Ontkende Toegang &#x200B;](../../assets/installation/access-denied.png)

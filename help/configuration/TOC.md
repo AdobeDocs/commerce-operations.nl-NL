@@ -150,4 +150,4 @@ ht-degree: 0%
       + [Gesplitste database verifiëren](storage/multi-master-verify.md)
       + [Database-replicatie](storage/multi-master-replication.md)
       + [Eén database herstellen](storage/revert-split-database.md)
-+ [ Terugkeer aan Operationele Gidsen ](https://experienceleague.adobe.com/docs/commerce-operations/operational-guides/home.html?lang=nl-NL)
++ [&#x200B; Terugkeer aan Operationele Gidsen &#x200B;](https://experienceleague.adobe.com/docs/commerce-operations/operational-guides/home.html?lang=nl-NL)

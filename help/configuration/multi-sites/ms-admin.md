@@ -13,14 +13,14 @@ ht-degree: 0%
 
 Voor deze taak moet u een hoofdcategorie (en desgewenst extra categorieën) voor elke winkel maken. De taken die in dit onderwerp worden besproken verstrekken één manier aan opstelling veelvoudige opslag. Raadpleeg de volgende bronnen in de Commerce User Guide voor meer informatie:
 
-- [ Categorieën ](https://experienceleague.adobe.com/nl/docs/commerce-admin/catalog/categories/categories)
-- [ toevoegend Websites ](https://experienceleague.adobe.com/nl/docs/commerce-admin/stores-sales/site-store/stores#add-websites)
-- [ opslag URLs ](https://experienceleague.adobe.com/nl/docs/commerce-admin/stores-sales/site-store/store-urls)
-- [ Inhoud ](https://experienceleague.adobe.com/nl/docs/commerce-admin/content-design/content-menu)
+- [&#x200B; Categorieën &#x200B;](https://experienceleague.adobe.com/nl/docs/commerce-admin/catalog/categories/categories)
+- [&#x200B; toevoegend Websites &#x200B;](https://experienceleague.adobe.com/nl/docs/commerce-admin/stores-sales/site-store/stores#add-websites)
+- [&#x200B; opslag URLs &#x200B;](https://experienceleague.adobe.com/nl/docs/commerce-admin/stores-sales/site-store/store-urls)
+- [&#x200B; Inhoud &#x200B;](https://experienceleague.adobe.com/nl/docs/commerce-admin/content-design/content-menu)
 
 >[!INFO]
 >
->Alleen voor de doeleinden gebruiken we in dit onderwerp een Franse website met websitecode `french` . Voor geleidelijke leerprogramma&#39;s, zie [ Leerprogramma: Opstelling veelvoudige websites met Apache ](ms-apache.md) en [ Leerprogramma: Opstelling veelvoudige websites met nginx ](ms-nginx.md)
+>Alleen voor de doeleinden gebruiken we in dit onderwerp een Franse website met websitecode `french` . Voor geleidelijke leerprogramma&#39;s, zie [&#x200B; Leerprogramma: Opstelling veelvoudige websites met Apache &#x200B;](ms-apache.md) en [&#x200B; Leerprogramma: Opstelling veelvoudige websites met nginx &#x200B;](ms-nginx.md)
 
 ## Stap 1: Hoofdcategorieën maken
 
@@ -34,11 +34,11 @@ Een hoofdcategorie maken:
 1. Op het **gebied van de Naam van de Categorie 0&rbrace; &lbrace;, ga een unieke naam in om deze categorie te identificeren.**
 1. Zorg ervoor dat laat Categorie toe wordt geplaatst aan **ja**.
 
-   Voor informatie over de andere opties op deze pagina, zie [ de Categorieën van de Wortel ](https://experienceleague.adobe.com/nl/docs/commerce-admin/catalog/categories/category-root).
+   Voor informatie over de andere opties op deze pagina, zie [&#x200B; de Categorieën van de Wortel &#x200B;](https://experienceleague.adobe.com/nl/docs/commerce-admin/catalog/categories/category-root).
 
    In de volgende afbeelding ziet u een voorbeeld.
 
-   ![ creeer en laat een wortelcategorie ](../../assets/configuration/add-root-category.png) toe
+   ![&#x200B; creeer en laat een wortelcategorie &#x200B;](../../assets/configuration/add-root-category.png) toe
 
 1. Klik **sparen**.
 1. Herhaal deze taken zo vaak als nodig om wortelcategorieën voor uw opslag tot stand te brengen.
@@ -57,7 +57,7 @@ Een website maken:
 
    In de volgende afbeelding ziet u een voorbeeld.
 
-   ![ voeg een website ](../../assets/configuration/multi-site-website.png) toe
+   ![&#x200B; voeg een website &#x200B;](../../assets/configuration/multi-site-website.png) toe
 
 1. Klik **sparen Website**.
 1. Herhaal deze taken zo vaak als nodig is om uw websites te maken.
@@ -76,7 +76,7 @@ Een winkel maken:
 
    In de volgende afbeelding ziet u een voorbeeld.
 
-   ![ voeg een opslag ](../../assets/configuration/multi-site-store.png) toe
+   ![&#x200B; voeg een opslag &#x200B;](../../assets/configuration/multi-site-store.png) toe
 
 1. Klik **sparen Opslag**.
 1. Herhaal deze taken zo vaak als nodig is om uw winkels te maken.
@@ -95,7 +95,7 @@ Een winkelweergave maken:
 
    In de volgende afbeelding ziet u een voorbeeld.
 
-   ![ voeg een opslag ](../../assets/configuration/multi-site-storeview.png) toe
+   ![&#x200B; voeg een opslag &#x200B;](../../assets/configuration/multi-site-storeview.png) toe
 
 1. Klik **sparen Mening van de Opslag**.
 1. Herhaal deze taken zo vaak als nodig is om uw winkelweergaven te maken.
@@ -109,7 +109,7 @@ De URL van de websitebasis wijzigen:
 1. In het _Admin_ paneel, klik **Opslag** > **Montages** > **Configuratie** > **Algemeen** > **Web**.
 1. Van de **lijst van de Mening van de Opslag** bij de bovenkant van de pagina, klik de naam van één van uw websites aangezien het volgende cijfer toont.
 
-   ![ selecteer een werkingsgebied ](../../assets/configuration/multi-site-scope.png)
+   ![&#x200B; selecteer een werkingsgebied &#x200B;](../../assets/configuration/multi-site-scope.png)
 
 1. In de juiste ruit, breid **Basis URLs** uit.
 1. In de _sectie van 0&rbrace; Basis URLs &lbrace;, ontruim_ het systeemwaarde van het Gebruik **.**
@@ -131,20 +131,20 @@ Commerce biedt u de mogelijkheid om de winkelcode toe te voegen aan de URL van h
 
 Zo voorkomt u dat `index.php` en `.htaccess` in toekomstige upgrades niet meer synchroon raken met de Commerce-codebase.
 
-Zie de [ Gids van de Gebruiker van Commerce ](https://experienceleague.adobe.com/nl/docs/commerce-admin/stores-sales/site-store/store-urls).
+Zie de [&#x200B; Gids van de Gebruiker van Commerce &#x200B;](https://experienceleague.adobe.com/nl/docs/commerce-admin/stores-sales/site-store/store-urls).
 
 U voegt als volgt de code van de winkel toe aan de basis-URL:
 
 1. In het _Admin_ paneel, klik **Opslag** > **Montages** > **Configuratie** > **Algemeen** > **Web**.
 1. Van de **lijst van de Mening van de Opslag** bij de bovenkant van de pagina, klik **Standaard Config** aangezien het volgende cijfer toont.
 
-   ![ selecteer het gebrek config werkingsgebied ](../../assets/configuration/multi-site-default.png)
+   ![&#x200B; selecteer het gebrek config werkingsgebied &#x200B;](../../assets/configuration/multi-site-default.png)
 
 1. In de juiste ruit, breid **Opties Url** uit.
 1. Wis het **systeemwaarde van het Gebruik** checkbox naast _toevoegen de Code van de Opslag aan Urls_.
 1. Van _voeg de Code van de Opslag aan Urls_ lijst toe, klik **ja**.
 
-   ![ voeg de opslagcode aan de opslagbasis URL ](../../assets/configuration/multi-site-add-store-url.png) toe
+   ![&#x200B; voeg de opslagcode aan de opslagbasis URL &#x200B;](../../assets/configuration/multi-site-add-store-url.png) toe
 
 1. Klik **sparen Config**.
 1. Maak de cache leeg als daarom wordt gevraagd. (**Systeem** > **Beheer van het Geheime voorgeheugen**).
@@ -159,7 +159,7 @@ De standaard basis-URL van de winkelweergave wijzigen:
 
 1. Van de _lijst van de Mening van de Opslag_ bij de bovenkant van de pagina, klik **Standaard Config**.
 
-   ![ selecteer het gebrek config werkingsgebied ](../../assets/configuration/multi-site-default.png)
+   ![&#x200B; selecteer het gebrek config werkingsgebied &#x200B;](../../assets/configuration/multi-site-default.png)
 
 1. In de juiste ruit, breid **Basis URLs** uit.
 1. In de _sectie van 0&rbrace; Basis URLs &lbrace;, ontruim_ het systeemwaarde van het Gebruik **.**
@@ -175,4 +175,4 @@ De standaard basis-URL van de winkelweergave wijzigen:
 
 >[!INFO]
 >
->De website-, opslag- en winkelweergavecode kan alleen letters (a-z of A-Z), getallen (0-9) en onderstrepingstekens (_) bevatten. Het eerste teken moet ook een letter zijn. Als hoofdletters of hoofdletters worden gebruikt, is de overeenkomst intern niet hoofdlettergevoelig voor overschrijvingen van configuratie-instellingen via omgevingsvariabelen. Zie [ het omgevingsvariabelen van het Gebruik om configuratiemontages ](../reference/override-config-settings.md#environment-variables) met voeten te treden.
+>De website-, opslag- en winkelweergavecode kan alleen letters (a-z of A-Z), getallen (0-9) en onderstrepingstekens (_) bevatten. Het eerste teken moet ook een letter zijn. Als hoofdletters of hoofdletters worden gebruikt, is de overeenkomst intern niet hoofdlettergevoelig voor overschrijvingen van configuratie-instellingen via omgevingsvariabelen. Zie [&#x200B; het omgevingsvariabelen van het Gebruik om configuratiemontages &#x200B;](../reference/override-config-settings.md#environment-variables) met voeten te treden.

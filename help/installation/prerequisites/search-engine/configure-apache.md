@@ -18,9 +18,9 @@ ht-degree: 0%
 
 >[!NOTE]
 >
->Ondersteuning voor OpenSearch is toegevoegd in 2.4.4. OpenSearch is een compatibele vork van Elasticsearch. Zie [ Elasticsearch migreren aan OpenSearch ](../../../upgrade/prepare/opensearch-migration.md) voor meer informatie.
+>Ondersteuning voor OpenSearch is toegevoegd in 2.4.4. OpenSearch is een compatibele vork van Elasticsearch. Zie [&#x200B; Elasticsearch migreren aan OpenSearch &#x200B;](../../../upgrade/prepare/opensearch-migration.md) voor meer informatie.
 
-Deze sectie bespreekt hoe te om Apache als *onveilige* volmacht te vormen zodat Adobe Commerce een onderzoeksmotor kan gebruiken die op deze server loopt. Deze sectie bespreekt vestigingHTTP Basis geen authentificatie; dat in [ Veilige mededeling met Apache ](#secure-communication-with-apache) wordt besproken.
+Deze sectie bespreekt hoe te om Apache als *onveilige* volmacht te vormen zodat Adobe Commerce een onderzoeksmotor kan gebruiken die op deze server loopt. Deze sectie bespreekt vestigingHTTP Basis geen authentificatie; dat in [&#x200B; Veilige mededeling met Apache &#x200B;](#secure-communication-with-apache) wordt besproken.
 
 >[!NOTE]
 >
@@ -84,9 +84,9 @@ Deze sectie bespreekt hoe te om een volmacht te vormen gebruikend een virtuele g
 
 ## Beveiligde communicatie met Apache
 
-Deze sectie bespreekt hoe te om communicatie tussen Apache en de onderzoeksmotor te beveiligen gebruikend [ Basisauthentificatie van HTTP ](https://datatracker.ietf.org/doc/html/rfc2617) met Apache. Raadpleeg een van de volgende bronnen voor meer opties:
+Deze sectie bespreekt hoe te om communicatie tussen Apache en de onderzoeksmotor te beveiligen gebruikend [&#x200B; Basisauthentificatie van HTTP &#x200B;](https://datatracker.ietf.org/doc/html/rfc2617) met Apache. Raadpleeg een van de volgende bronnen voor meer opties:
 
-* [ Apache 2.4 authentificatie en vergunningsleerprogramma ](https://httpd.apache.org/docs/2.4/howto/auth.html)
+* [&#x200B; Apache 2.4 authentificatie en vergunningsleerprogramma &#x200B;](https://httpd.apache.org/docs/2.4/howto/auth.html)
 
 Zie een van de volgende secties:
 
@@ -174,7 +174,7 @@ htpasswd /usr/local/apache/password/.htpasswd <username>
 
 ### Beveiligde communicatie met Apache
 
-Deze sectie bespreekt hoe te opstelling [ de Basisauthentificatie van HTTP ](https://httpd.apache.org/docs/2.2/howto/auth.html). Als u TLS en HTTP Basic-verificatie gebruikt, kan niemand communicatie met Elasticsearch of OpenSearch of met uw toepassingsserver onderscheppen.
+Deze sectie bespreekt hoe te opstelling [&#x200B; de Basisauthentificatie van HTTP &#x200B;](https://httpd.apache.org/docs/2.2/howto/auth.html). Als u TLS en HTTP Basic-verificatie gebruikt, kan niemand communicatie met Elasticsearch of OpenSearch of met uw toepassingsserver onderscheppen.
 
 In deze sectie wordt besproken hoe u kunt opgeven wie toegang heeft tot de Apache-server.
 

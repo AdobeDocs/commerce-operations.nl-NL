@@ -19,13 +19,13 @@ In deze sectie worden de minimale instellingen besproken die u moet kiezen om El
 >In versies 2.4.4 en 2.4.3-p2, zijn alle gebieden geëtiketteerd **Elasticsearch** ook van toepassing op OpenSearch.
 >&#x200B;>Toen de steun voor Elasticsearch 8.x in versie 2.4.6 werd geïntroduceerd, werden de nieuwe etiketten gecreeerd om tussen Elasticsearch en configuraties te onderscheiden OpenSearch.
 
-Voor extra details over het vormen van uw onderzoeksmotor, zie de [ Gids van de Gebruiker ](https://experienceleague.adobe.com/docs/commerce-admin/catalog/catalog/search/search-configuration.html?lang=nl-NL).
+Voor extra details over het vormen van uw onderzoeksmotor, zie de [&#x200B; Gids van de Gebruiker &#x200B;](https://experienceleague.adobe.com/docs/commerce-admin/catalog/catalog/search/search-configuration.html?lang=nl-NL).
 
 ## De zoekfunctie configureren vanuit de beheerder
 
 >[!TIP]
 >
->Voor instructies bij bevordering aan een nieuwe versie van de onderzoeksmotor, zie [ verbeteringseerste vereisten ](../../upgrade/prepare/prerequisites.md).
+>Voor instructies bij bevordering aan een nieuwe versie van de onderzoeksmotor, zie [&#x200B; verbeteringseerste vereisten &#x200B;](../../upgrade/prepare/prerequisites.md).
 
 Om uw systeem te vormen om Elasticsearch of OpenSearch te gebruiken:
 
@@ -47,7 +47,7 @@ Om uw systeem te vormen om Elasticsearch of OpenSearch te gebruiken:
 
    Monsterrespons:
 
-   ![ succes ](../../assets/configuration/elastic_test-success.png)
+   ![&#x200B; succes &#x200B;](../../assets/configuration/elastic_test-success.png)
 
    Doorgaan met:
 
@@ -56,14 +56,14 @@ Om uw systeem te vormen om Elasticsearch of OpenSearch te gebruiken:
 
    of u ziet:
 
-   ![ ontbroken ](../../assets/configuration/elastic_test-fail.png)
+   ![&#x200B; ontbroken &#x200B;](../../assets/configuration/elastic_test-fail.png)
 
 Zo ja, probeer dan het volgende:
 
 - Zorg ervoor dat de zoekmachine-server actief is.
 - Als de server zich op een andere host dan Commerce bevindt, meldt u zich aan bij de Commerce-server en pingelt u de host van de zoekmachine. Los de kwesties van de netwerkconnectiviteit op en test opnieuw de verbinding.
 - Onderzoek het bevelvenster waarin u Elasticsearch of OpenSearch voor stapelsporen en uitzonderingen begon. U moet deze oplossen voordat u verdergaat. Zorg er met name voor dat u de zoekfunctie hebt gestart als een gebruiker met `root` rechten.
-- Zorg ervoor dat [ de firewall van UNIX en SELinux ](../../installation/prerequisites/search-engine/overview.md#firewall-and-selinux) allebei gehandicapt zijn, of opstellingsregels om uw onderzoeksmotor en Commerce toe te laten om met elkaar te communiceren.
+- Zorg ervoor dat [&#x200B; de firewall van UNIX en SELinux &#x200B;](../../installation/prerequisites/search-engine/overview.md#firewall-and-selinux) allebei gehandicapt zijn, of opstellingsregels om uw onderzoeksmotor en Commerce toe te laten om met elkaar te communiceren.
 - Controleer de waarde van het veld **[!UICONTROL Server Hostname]** . Controleer of de server beschikbaar is. U kunt in plaats daarvan het IP-adres van de server proberen.
 - Gebruik de opdracht `netstat -an | grep <listen-port>` om te controleren of de poort die in het veld **[!UICONTROL Server Port]** is opgegeven, niet door een ander proces wordt gebruikt.
 
@@ -89,13 +89,13 @@ De cache vernieuwen met behulp van Admin:
 1. Schakel het selectievakje naast **[!UICONTROL Page Cache]** in.
 1. Van de **[!UICONTROL Actions]** lijst in het hogere recht, verfrist de klik **zich**.
 
-   ![ geheim voorgeheugenbeheer ](../../assets/configuration/refresh-cache.png)
+   ![&#x200B; geheim voorgeheugenbeheer &#x200B;](../../assets/configuration/refresh-cache.png)
 
 De cache reinigen met de opdrachtregel: [`bin/magento cache:clean`](../cli/manage-cache.md#clean-and-flush-cache-types)
 
 Herindexeren met de opdrachtregel:
 
-1. Login aan uw server van Commerce als, of schakelaar aan, de [ eigenaar van het dossiersysteem ](../../installation/prerequisites/file-system/overview.md).
+1. Login aan uw server van Commerce als, of schakelaar aan, de [&#x200B; eigenaar van het dossiersysteem &#x200B;](../../installation/prerequisites/file-system/overview.md).
 1. Voer een van de volgende opdrachten in:
 
    Voer de volgende opdracht in om alleen de zoekindex van de catalogus opnieuw te indexeren:
@@ -114,4 +114,4 @@ Herindexeren met de opdrachtregel:
 
    >[!INFO]
    >
-   >In tegenstelling tot de cache worden indexeerders bijgewerkt door een uitsnijdtaak. Zorg ervoor [ uitsnede wordt toegelaten ](../cli/configure-cron-jobs.md) alvorens u begint uw onderzoeksmotor te gebruiken.
+   >In tegenstelling tot de cache worden indexeerders bijgewerkt door een uitsnijdtaak. Zorg ervoor [&#x200B; uitsnede wordt toegelaten &#x200B;](../cli/configure-cron-jobs.md) alvorens u begint uw onderzoeksmotor te gebruiken.

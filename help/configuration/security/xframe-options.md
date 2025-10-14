@@ -12,7 +12,7 @@ ht-degree: 0%
 
 # Klickjackingexplosies voorkomen
 
-Verhinder [ Klikjacking ](https://owasp.org/www-community/attacks/Clickjacking) door [ x-kader-Opties ](https://datatracker.ietf.org/doc/html/rfc7034) HTTP- verzoekkopbal in verzoeken aan uw storefront te omvatten.
+Verhinder [&#x200B; Klikjacking &#x200B;](https://owasp.org/www-community/attacks/Clickjacking) door [&#x200B; x-kader-Opties &#x200B;](https://datatracker.ietf.org/doc/html/rfc7034) HTTP- verzoekkopbal in verzoeken aan uw storefront te omvatten.
 
 Met de header `X-Frame-Options` kunt u als volgt opgeven of een browser een pagina mag weergeven in een `<frame>` , `<iframe>` of `<object>` :
 
@@ -21,7 +21,7 @@ Met de header `X-Frame-Options` kunt u als volgt opgeven of een browser een pagi
 
 >[!WARNING]
 >
->De optie `ALLOW-FROM <uri>` is vervangen omdat deze niet meer wordt ondersteund door browsers die door Commerce worden ondersteund. Zie [ Browser verenigbaarheid ](https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/X-Frame-Options#browser_compatibility).
+>De optie `ALLOW-FROM <uri>` is vervangen omdat deze niet meer wordt ondersteund door browsers die door Commerce worden ondersteund. Zie [&#x200B; Browser verenigbaarheid &#x200B;](https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/X-Frame-Options#browser_compatibility).
 
 >[!WARNING]
 >

@@ -17,15 +17,15 @@ Dit onderwerp bespreekt technische implementatiedetails over pijpleidingsplaatsi
 - [Wijzigingen in de beheerder](#changes-in-the-admin)
 - [Uitsnede installeren en verwijderen](#install-and-remove-cron)
 
-Dit onderwerp bespreekt ook het [ geadviseerde werkschema ](#recommended-workflow) voor pijpleidingsplaatsing en verstrekt sommige voorbeelden om u te helpen begrijpen hoe het werkt.
+Dit onderwerp bespreekt ook het [&#x200B; geadviseerde werkschema &#x200B;](#recommended-workflow) voor pijpleidingsplaatsing en verstrekt sommige voorbeelden om u te helpen begrijpen hoe het werkt.
 
-Alvorens u begonnen wordt, herzie de [ Vereisten voor uw ontwikkeling, bouwt, en productiesystemen ](../deployment/prerequisites.md).
+Alvorens u begonnen wordt, herzie de [&#x200B; Vereisten voor uw ontwikkeling, bouwt, en productiesystemen &#x200B;](../deployment/prerequisites.md).
 
 ## Configuratiebeheer
 
 Om u toe te laten om de configuratie van uw ontwikkeling en productiesystemen te synchroniseren en te handhaven, gebruik de volgende met voeten getreden regeling.
 
-![ Hoe de waarden van de configuratievariabele worden bepaald ](../../assets/configuration/override-flow-diagram.png)
+![&#x200B; Hoe de waarden van de configuratievariabele worden bepaald &#x200B;](../../assets/configuration/override-flow-diagram.png)
 
 Zoals het diagram toont, worden de configuratiewaarden gebruikt in de volgende orde:
 
@@ -38,13 +38,13 @@ Zoals het diagram toont, worden de configuratiewaarden gebruikt in de volgende o
 
 De gedeelde configuratie wordt opgeslagen in `app/etc/config.php`, die in broncontrole zou moeten zijn.
 
-Plaats de gedeelde configuratie in Admin in uw ontwikkeling (of Adobe Commerce op de integratie van de wolkeninfrastructuur __) systeem en schrijf de configuratie aan `config.php` gebruikend het [`magento app:config:dump` bevel ](../cli/export-configuration.md).
+Plaats de gedeelde configuratie in Admin in uw ontwikkeling (of Adobe Commerce op de integratie van de wolkeninfrastructuur __) systeem en schrijf de configuratie aan `config.php` gebruikend het [`magento app:config:dump` bevel &#x200B;](../cli/export-configuration.md).
 
 ### De systeemspecifieke configuratie beheren
 
 De systeem-specifieke configuratie wordt opgeslagen in `app/etc/env.php`, die _niet_ in broncontrole zou moeten zijn.
 
-Plaats de systeem-specifieke configuratie in Admin in uw ontwikkelings (of Adobe Commerce op de integratie van de wolkeninfrastructuur) systeem en schrijf de configuratie aan `env.php` gebruikend [`magento app:config:dump` bevel ](../cli/export-configuration.md).
+Plaats de systeem-specifieke configuratie in Admin in uw ontwikkelings (of Adobe Commerce op de integratie van de wolkeninfrastructuur) systeem en schrijf de configuratie aan `env.php` gebruikend [`magento app:config:dump` bevel &#x200B;](../cli/export-configuration.md).
 
 Met deze opdracht worden ook gevoelige instellingen naar `env.php` geschreven.
 
@@ -55,7 +55,7 @@ De gevoelige configuratie wordt ook opgeslagen in `app/etc/env.php`.
 U kunt de gevoelige configuratie op om het even welke volgende manieren beheren:
 
 - Omgevingsvariabelen
-- Sparen de gevoelige configuratie in `env.php` op uw productiesysteem gebruikend het [`magento config:set:sensitive` bevel ](../cli/set-configuration-values.md)
+- Sparen de gevoelige configuratie in `env.php` op uw productiesysteem gebruikend het [`magento config:set:sensitive` bevel &#x200B;](../cli/set-configuration-values.md)
 
 ### Configuratie-instellingen vergrendeld in de beheerder
 
@@ -78,7 +78,7 @@ Admin vertoont het volgende gedrag terwijl in productiemodus:
 
      Het volgende cijfer toont een voorbeeld van de **Plaatsende Rekening** > **Lijst van de Plaats van de Interface** in Admin die slechts twee opgestelde scènes tonen:
 
-     ![ u kunt de beheerderscène slechts veranderen in opgestelde scènes ](../../assets/configuration/split-deploy-admin-locale.png)
+     ![&#x200B; u kunt de beheerderscène slechts veranderen in opgestelde scènes &#x200B;](../../assets/configuration/split-deploy-admin-locale.png)
 
 - U kunt de configuratie van de landinstelling voor geen enkel bereik wijzigen met de beheerfunctie.
 
@@ -88,7 +88,7 @@ Admin vertoont het volgende gedrag terwijl in productiemodus:
 
 ## Uitsnede installeren en verwijderen
 
-In versie 2.2 voor het eerst, helpen wij u opstelling uw kroonbaan door het [`magento cron:install` bevel ](../cli/configure-cron-jobs.md) te verstrekken. Met deze opdracht stelt u een tab in als de gebruiker die de opdracht uitvoert.
+In versie 2.2 voor het eerst, helpen wij u opstelling uw kroonbaan door het [`magento cron:install` bevel &#x200B;](../cli/configure-cron-jobs.md) te verstrekken. Met deze opdracht stelt u een tab in als de gebruiker die de opdracht uitvoert.
 
 U kunt ook de tab verwijderen met de opdracht `magento cron:remove` .
 
@@ -96,7 +96,7 @@ U kunt ook de tab verwijderen met de opdracht `magento cron:remove` .
 
 Het volgende diagram toont hoe wij u aanbevelen pijpleidingsplaatsing te gebruiken om de configuratie te beheren.
 
-![ Aanbevolen werkschema van de pijpleidingsplaatsing ](../../assets/configuration/split-deploy-workflow.png)
+![&#x200B; Aanbevolen werkschema van de pijpleidingsplaatsing &#x200B;](../../assets/configuration/split-deploy-workflow.png)
 
 ### Ontwikkelingssysteem
 
@@ -142,7 +142,7 @@ Op uw bouwstijlsysteem:
 
 >[!INFO]
 >
->Zie [ strategieën van de Plaatsing voor statische meningsdossiers ](../cli/static-view-file-strategy.md).
+>Zie [&#x200B; strategieën van de Plaatsing voor statische meningsdossiers &#x200B;](../cli/static-view-file-strategy.md).
 
 ### Productiesysteem
 

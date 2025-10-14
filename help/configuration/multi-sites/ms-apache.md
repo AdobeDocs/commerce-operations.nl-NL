@@ -19,11 +19,11 @@ Kopieer indien nodig het bestaande script voor het `index.php` ingangspunt voor 
 
   Er kunnen extra taken nodig zijn om meerdere websites in een gehoste omgeving te implementeren. Neem contact op met uw hostingprovider voor meer informatie.
 
-  Er zijn extra taken nodig om Adobe Commerce in te stellen op cloudinfrastructuur. Nadat u de taken voltooit die in dit onderwerp worden besproken, zie [ Opstelling veelvoudige websites of opslag ](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure-store/multiple-sites.html?lang=nl-NL) in _Commerce op de gids van de Infrastructuur van de Wolk_.
+  Er zijn extra taken nodig om Adobe Commerce in te stellen op cloudinfrastructuur. Nadat u de taken voltooit die in dit onderwerp worden besproken, zie [&#x200B; Opstelling veelvoudige websites of opslag &#x200B;](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure-store/multiple-sites.html?lang=nl-NL) in _Commerce op de gids van de Infrastructuur van de Wolk_.
 
 - U gebruikt één virtuele host per website; het configuratiebestand van de virtuele host is `/etc/httpd/httpd.conf`
 
-  Met verschillende versies van Apache op verschillende besturingssystemen worden virtuele hosts op verschillende manieren ingesteld. Raadpleeg de [ documentatie Apache ](https://httpd.apache.org/docs/2.4/vhosts) of een netwerkbeheerder als u niet zeker bent hoe te opstelling een virtuele gastheer.
+  Met verschillende versies van Apache op verschillende besturingssystemen worden virtuele hosts op verschillende manieren ingesteld. Raadpleeg de [&#x200B; documentatie Apache &#x200B;](https://httpd.apache.org/docs/2.4/vhosts) of een netwerkbeheerder als u niet zeker bent hoe te opstelling een virtuele gastheer.
 
 - De Commerce-software wordt geïnstalleerd in `/var/www/html/magento2`
 - U hebt twee andere websites dan de standaard:
@@ -35,12 +35,12 @@ Kopieer indien nodig het bestaande script voor het `index.php` ingangspunt voor 
 
 De vestiging veelvoudige opslag bestaat uit de volgende taken:
 
-1. [ Opstelling websites, opslag, en opslagmeningen ](ms-admin.md) in Admin.
-1. Creeer één [ virtuele gastheer van Apache ](#step-2-create-apache-virtual-hosts) per website van Commerce.
+1. [&#x200B; Opstelling websites, opslag, en opslagmeningen &#x200B;](ms-admin.md) in Admin.
+1. Creeer één [&#x200B; virtuele gastheer van Apache &#x200B;](#step-2-create-apache-virtual-hosts) per website van Commerce.
 
 ## Stap 1: Websites maken, winkels maken en weergaven opslaan in Beheer
 
-Zie [ Opstelling veelvoudige websites, opslag, en opslagmeningen in Admin ](ms-admin.md).
+Zie [&#x200B; Opstelling veelvoudige websites, opslag, en opslagmeningen in Admin &#x200B;](ms-admin.md).
 
 ## Stap 2: virtuele Apache-hosts maken
 
@@ -48,8 +48,8 @@ In deze sectie wordt beschreven hoe u waarden instelt voor `MAGE_RUN_TYPE` en `M
 
 Zie voor meer informatie over `SetEnvIf` :
 
-- [ Apache 2.2 ](https://httpd.apache.org/docs/2.2/mod/mod_setenvif.html)
-- [ Apache 2.4 ](https://httpd.apache.org/docs/2.4/mod/mod_setenvif.html)
+- [&#x200B; Apache 2.2 &#x200B;](https://httpd.apache.org/docs/2.2/mod/mod_setenvif.html)
+- [&#x200B; Apache 2.4 &#x200B;](https://httpd.apache.org/docs/2.4/mod/mod_setenvif.html)
 
 **om virtuele gastheren Apache** te creëren:
 
@@ -110,10 +110,10 @@ Tenzij u DNS opstelling voor URLs van uw opslag hebt, moet u een statische route
 >[!INFO]
 >
 >- Er kunnen extra taken nodig zijn om meerdere websites in een gehoste omgeving te implementeren. Neem contact op met uw hostingprovider voor meer informatie.
->- De extra taken worden vereist aan opstelling Adobe Commerce op wolkeninfrastructuur; zie [ Opstelling veelvoudige websites of opslag van de Wolk ](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure-store/multiple-sites.html?lang=nl-NL) in _Commerce op de gids van de Infrastructuur van de Wolk_.
+>- De extra taken worden vereist aan opstelling Adobe Commerce op wolkeninfrastructuur; zie [&#x200B; Opstelling veelvoudige websites of opslag van de Wolk &#x200B;](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure-store/multiple-sites.html?lang=nl-NL) in _Commerce op de gids van de Infrastructuur van de Wolk_.
 
 ### Problemen oplossen
 
-- Als uw Franse en Duitse plaatsen 404s maar uw Admin laadt terugkeren, zorg u [ Stap 6 voltooide: voeg de opslagcode aan basisURL ](ms-admin.md#step-6-add-the-store-code-to-the-base-url) toe.
+- Als uw Franse en Duitse plaatsen 404s maar uw Admin laadt terugkeren, zorg u [&#x200B; Stap 6 voltooide: voeg de opslagcode aan basisURL &#x200B;](ms-admin.md#step-6-add-the-store-code-to-the-base-url) toe.
 - Als alle URL&#39;s 404 retourneren, moet u de webserver opnieuw starten.
 - Als de beheerder niet correct werkt, zorg ervoor u opstelling uw virtuele gastheren behoorlijk.

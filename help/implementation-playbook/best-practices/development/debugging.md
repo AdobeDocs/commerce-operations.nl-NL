@@ -118,9 +118,9 @@ Als de gebruikelijke verdachten geen oplossing voor het probleem bieden, is de s
 
 Zie de volgende diagrammen:
 
-![ Bisect diagram ](../../../assets/playbooks/bisect.png)
+![&#x200B; Bisect diagram &#x200B;](../../../assets/playbooks/bisect.png)
 
-![ Bisect diagram ](../../../assets/playbooks/bisect2.png)
+![&#x200B; Bisect diagram &#x200B;](../../../assets/playbooks/bisect2.png)
 
 Er zijn verschillende manieren om te discussiëren, maar Adobe raadt aan deze volgorde te volgen:
 
@@ -169,7 +169,7 @@ Is de beschrijving van het probleem duidelijk? Weet u zeker dat termen of beschr
 
 ### Internet zoeken
 
-Voer een internetzoekopdracht uit met termen die betrekking hebben op het probleem. Het is mogelijk dat iemand anders al hetzelfde probleem heeft ondervonden. Onderzoek door de [ kwesties van Adobe Commerce GitHub ](https://github.com/magento/magento2/issues).
+Voer een internetzoekopdracht uit met termen die betrekking hebben op het probleem. Het is mogelijk dat iemand anders al hetzelfde probleem heeft ondervonden. Onderzoek door de [&#x200B; kwesties van Adobe Commerce GitHub &#x200B;](https://github.com/magento/magento2/issues).
 
 ### Onderbreken
 
@@ -177,7 +177,7 @@ Als u een probleem te lang bekijkt, kan het uitdagend zijn om een oplossing te v
 
 ## Gereedschappen
 
-De n98 magerun CLI Hulpmiddelen ([ https://github.com/netz98/n98-magerun2 ](https://github.com/netz98/n98-magerun2)) verstrekken nuttige mogelijkheden om met Adobe Commerce van de bevellijn te werken. Dit zijn vooral de volgende opdrachten:
+De n98 magerun CLI Hulpmiddelen ([&#x200B; https://github.com/netz98/n98-magerun2 &#x200B;](https://github.com/netz98/n98-magerun2)) verstrekken nuttige mogelijkheden om met Adobe Commerce van de bevellijn te werken. Dit zijn vooral de volgende opdrachten:
 
 ```bash
 n98-magerun2.phar dev:console

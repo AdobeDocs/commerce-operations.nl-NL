@@ -16,8 +16,8 @@ Gebruik de volgende lijst om versienota&#39;s en belangrijke informatie met betr
 
 >[!TIP]
 >
->- Als u aan Adobe Commerce nieuw bent, zie de [ ondernemingsarchitectuur ](../../implementation-playbook/architecture/enterprise-blueprint.md) en [ over Adobe Commerce ](https://experienceleague.adobe.com/nl/docs/commerce-admin/start/about) onderwerpen om georiënteerd te worden.
->- Voor informatie over verbeteringen, zie [ geadviseerd lezing ](../../upgrade/resources/recommended-reading.md).
+>- Als u aan Adobe Commerce nieuw bent, zie de [&#x200B; ondernemingsarchitectuur &#x200B;](../../implementation-playbook/architecture/enterprise-blueprint.md) en [&#x200B; over Adobe Commerce &#x200B;](https://experienceleague.adobe.com/nl/docs/commerce-admin/start/about) onderwerpen om georiënteerd te worden.
+>- Voor informatie over verbeteringen, zie [&#x200B; geadviseerd lezing &#x200B;](../../upgrade/resources/recommended-reading.md).
 
 <table>
   <tbody>

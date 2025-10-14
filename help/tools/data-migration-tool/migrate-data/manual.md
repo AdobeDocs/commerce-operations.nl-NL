@@ -33,7 +33,7 @@ In deze sectie wordt beschreven hoe u mediabestanden handmatig kunt migreren.
 >De opslagmethode voor databasemedia wordt vanaf Magento 2.4.3 afgekeurd.
 
 
-Deze sectie is op u *slechts* van toepassing als u media dossiers in het gegevensbestand van Magento opslaat. Deze stap zou vóór [ migratie van gegevens ](data.md) moeten worden uitgevoerd:
+Deze sectie is op u *slechts* van toepassing als u media dossiers in het gegevensbestand van Magento opslaat. Deze stap zou vóór [&#x200B; migratie van gegevens &#x200B;](data.md) moeten worden uitgevoerd:
 
 1. Meld u als beheerder aan bij het deelvenster Magento 1 Admin.
 
@@ -69,4 +69,4 @@ U moet alle handmatig opnieuw maken:
 
 >[!NOTE]
 >
->U kunt de tijdzone voor een database-entiteit aanpassen met de handler `\Migration\Handler\Timezone` . Zie de [ follow-up ](follow-up.md) sectie voor meer details.
+>U kunt de tijdzone voor een database-entiteit aanpassen met de handler `\Migration\Handler\Timezone` . Zie de [&#x200B; follow-up &#x200B;](follow-up.md) sectie voor meer details.

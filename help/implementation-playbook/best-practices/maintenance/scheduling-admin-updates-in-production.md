@@ -24,14 +24,14 @@ Kritieke acties leiden tot invalidatie en herindexering van het cachegeheugen, w
 
 ## Betrokken producten en versies
 
-[ Alle gesteunde versies ](../../../release/versions.md) van:
+[&#x200B; Alle gesteunde versies &#x200B;](../../../release/versions.md) van:
 
 - Adobe Commerce over cloudinfrastructuur
 - Adobe Commerce ter plaatse
 
 ## Aanvullende informatie
 
-- [ Beste praktijken voor caching ](https://experienceleague.adobe.com/nl/docs/commerce-admin/systems/tools/cache-management#best-practices-for-caching)
-- [ Privé inhoud: Valideer privé inhoud ](https://developer.adobe.com/commerce/php/development/cache/page/private-content/#invalidate-private-content)
+- [&#x200B; Beste praktijken voor caching &#x200B;](https://experienceleague.adobe.com/nl/docs/commerce-admin/systems/tools/cache-management#best-practices-for-caching)
+- [&#x200B; Privé inhoud: Valideer privé inhoud &#x200B;](https://developer.adobe.com/commerce/php/development/cache/page/private-content/#invalidate-private-content)
 - [Hardware-aanbevelingen: Caches](../../../performance/hardware.md#caches)
 - [Geavanceerde instellingen: Redis instellen](../../../performance/advanced-setup.md#set-up-redis)

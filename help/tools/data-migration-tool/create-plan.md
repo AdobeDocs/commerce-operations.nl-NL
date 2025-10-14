@@ -32,9 +32,9 @@ Migratie is een ideaal moment om serieuze wijzigingen aan te brengen en uw site 
 
 * Stel een Magento 2-hardwaresysteem in met behulp van topologie en ontwerp die ten minste overeenkomen met uw bestaande Magento 1-systeem
 
-* Installeer Magento 2.x (met alle modules van deze versie) en [!DNL Data Migration Tool] op een systeem dat aan de [ systeemvereisten ](../../installation/system-requirements.md) voldoet
+* Installeer Magento 2.x (met alle modules van deze versie) en [!DNL Data Migration Tool] op een systeem dat aan de [&#x200B; systeemvereisten &#x200B;](../../installation/system-requirements.md) voldoet
 
-* Breng aangepaste aanpassingen aan de code van [!DNL Data Migration Tool] aan als u bepaalde gegevens niet hoeft te migreren (zoals CMS Pages, Verkoopregels) of als u uw Magento-aanpassingen tijdens de migratie wilt converteren. Lees de [!DNL Data Migration Tool] Technische Specificatie van 0&rbrace; [ om beter te begrijpen hoe de migratie van binnen werkt](technical-specification.md)
+* Breng aangepaste aanpassingen aan de code van [!DNL Data Migration Tool] aan als u bepaalde gegevens niet hoeft te migreren (zoals CMS Pages, Verkoopregels) of als u uw Magento-aanpassingen tijdens de migratie wilt converteren. Lees de [!DNL Data Migration Tool] Technische Specificatie van 0&rbrace; [&#x200B; om beter te begrijpen hoe de migratie van binnen werkt](technical-specification.md)
 
 ## Stap 3: Droge run
 
@@ -74,7 +74,7 @@ Voer bij dergelijke migratietests de volgende stappen uit:
 
    Als bepaalde extensies gegevens bevatten die u wilt migreren, moet u deze extensies mogelijk installeren, aangepast voor Magento 2. Als de structuur van de extensies anders is in de Magento 2-database, gebruikt u de toewijzingsbestanden die bij de [!DNL Data Migration Tool] worden geleverd.
 
-1. Alle Magento 2.x-indexen opnieuw indexeren. Voor details, zie [ indexeerders ](../../configuration/cli/manage-indexers.md) in de _gids van de Configuratie_ leiden.
+1. Alle Magento 2.x-indexen opnieuw indexeren. Voor details, zie [&#x200B; indexeerders &#x200B;](../../configuration/cli/manage-indexers.md) in de _gids van de Configuratie_ leiden.
 
 ## Stap 5: Breng wijzigingen aan in de gemigreerde gegevens (indien nodig)
 

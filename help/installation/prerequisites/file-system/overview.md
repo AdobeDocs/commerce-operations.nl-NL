@@ -31,7 +31,7 @@ Er zijn twee typen bestandssysteemeigenaars:
 
    - De _bevel-lijn gebruiker_ stelt gezamenlijke banen en bevel-lijn nut in werking.
 
-  Beide gebruikers vereisen de zelfde toestemmingen aan het dossiersysteem, zodat is het best om a [ gedeelde groep ](configure-permissions.md#set-ownership-and-permissions-for-two-users) te gebruiken en a [`umask`](#restrict-access-with-a-umask) te plaatsen.
+  Beide gebruikers vereisen de zelfde toestemmingen aan het dossiersysteem, zodat is het best om a [&#x200B; gedeelde groep &#x200B;](configure-permissions.md#set-ownership-and-permissions-for-two-users) te gebruiken en a [`umask`](#restrict-access-with-a-umask) te plaatsen.
 
 ### Toegang beperken met een masker
 
@@ -49,7 +49,7 @@ Bijvoorbeeld:
 
 - **664 voor dossiers** - Schrijfbaar door de gebruiker, schrijfbaar door de groep, en read-only voor iedereen anders.
 
-Voor meer informatie over het creëren van a `magento_umask` dossier, zie [ Plaats een masker ](../../next-steps/set-umask.md).
+Voor meer informatie over het creëren van a `magento_umask` dossier, zie [&#x200B; Plaats een masker &#x200B;](../../next-steps/set-umask.md).
 
 ## Machtigingen, eigendom en toepassingsmodi
 
@@ -59,10 +59,10 @@ We raden verschillende machtigingen en eigendom aan wanneer u de verschillende A
 - Ontwikkelaar
 - Productie
 
-Zie [ Ongeveer wijzen ](../../../configuration/bootstrap/application-modes.md) in de _gids van de Configuratie_.
+Zie [&#x200B; Ongeveer wijzen &#x200B;](../../../configuration/bootstrap/application-modes.md) in de _gids van de Configuratie_.
 
-Wij bespreken verder toestemmingsaanbevelingen in [ de toegangstoestemmingen van de systeemtoegang van het Dossier ](../../../configuration/deployment/file-system-permissions.md) in de _gids van de Configuratie_.
+Wij bespreken verder toestemmingsaanbevelingen in [&#x200B; de toegangstoestemmingen van de systeemtoegang van het Dossier &#x200B;](../../../configuration/deployment/file-system-permissions.md) in de _gids van de Configuratie_.
 
 >[!TIP]
 >
->Alvorens u Adobe Commerce installeert, overzicht [ vormt dossiereigendom en toestemmingen ](configure-permissions.md).
+>Alvorens u Adobe Commerce installeert, overzicht [&#x200B; vormt dossiereigendom en toestemmingen &#x200B;](configure-permissions.md).

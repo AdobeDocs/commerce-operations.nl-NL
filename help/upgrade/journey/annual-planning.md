@@ -13,7 +13,7 @@ ht-degree: 0%
 
 Veel bedrijven werken met jaarlijkse begrotingen en routekaarten. Het is tijdens deze jaarlijkse besprekingen absoluut noodzakelijk dat u over uw platformgezondheid, richting, en verbeteringsstrategie voor het jaar, samen met hoe het in de algemene doelstellingen en belangrijkste prestatiesindicatoren (KPIs) van de zaken past.
 
-Na het [ versieschema ](https://experienceleague.adobe.com/nl/docs/commerce-operations/release/planning/schedule), wijs begroting en vrijgavevensters voor verbeteringen toe, vermijdend vakanties, bedrijfssluitingen, en piektijden. Door het de versieschema van Adobe te begrijpen en op de hoogte te blijven van welke veranderingen en verbeteringen deel van elke versie door de [ versienota&#39;s ](https://experienceleague.adobe.com/nl/docs/commerce-operations/release/notes/overview) uitmaken, kunt u beter uw jaar plannen.
+Na het [&#x200B; versieschema &#x200B;](https://experienceleague.adobe.com/nl/docs/commerce-operations/release/planning/schedule), wijs begroting en vrijgavevensters voor verbeteringen toe, vermijdend vakanties, bedrijfssluitingen, en piektijden. Door het de versieschema van Adobe te begrijpen en op de hoogte te blijven van welke veranderingen en verbeteringen deel van elke versie door de [&#x200B; versienota&#39;s &#x200B;](https://experienceleague.adobe.com/nl/docs/commerce-operations/release/notes/overview) uitmaken, kunt u beter uw jaar plannen.
 
 Tijdens de planning, kunt u zich willen vragen:
 

@@ -17,7 +17,7 @@ Adobe Commerce 2.4.5 ondersteunt het gebruik van Amazon OpenSearch Service-clust
 ## Een AWS OpenSearch-servicedomein maken
 
 U moet eerst een OpenSearch-instantie in AWS maken.
-Lees [ Creërend en het leiden de domeinen van de Dienst van Amazon OpenSearch ](https://docs.aws.amazon.com/opensearch-service/latest/developerguide/createupdatedomains.html) voor gedetailleerde instructies.
+Lees [&#x200B; Creërend en het leiden de domeinen van de Dienst van Amazon OpenSearch &#x200B;](https://docs.aws.amazon.com/opensearch-service/latest/developerguide/createupdatedomains.html) voor gedetailleerde instructies.
 
 ## Gegevens ophalen naar AWS OpenSearch
 
@@ -33,11 +33,11 @@ Grotere installaties willen mogelijk overwegen hun gegevensindexen van de bestaa
 Het is niet nodig om indexen te migreren, omdat deze gemakkelijk opnieuw kunnen worden gemaakt op het AWS-exemplaar.
 Bij het migreren van gegevensindexen moet u er echter voor zorgen dat de versies van Elasticsearch/OpenSearch compatibel zijn.
 
-Zie Amazon [ migrerend aan de instructies van de Dienst OpenSearch van Amazon ](https://docs.aws.amazon.com/opensearch-service/latest/developerguide/migration.html) voor meer informatie.
+Zie Amazon [&#x200B; migrerend aan de instructies van de Dienst OpenSearch van Amazon &#x200B;](https://docs.aws.amazon.com/opensearch-service/latest/developerguide/migration.html) voor meer informatie.
 
 ### Commerce for OpenSearch configureren
 
-De stappen voor het vormen OpenSearch worden behandeld in [ Geavanceerd installeert ](../../advanced.md) onderwerp.
+De stappen voor het vormen OpenSearch worden behandeld in [&#x200B; Geavanceerd installeert &#x200B;](../../advanced.md) onderwerp.
 
 Om te testen dat de nieuwe configuratie werkt, test direct het eindpunt OpenSearch:
 
@@ -53,4 +53,4 @@ Als u producten wilt ophalen uit index, voegt u het volgende toe: `/magento2dock
 
 ## Aanvullende bronnen
 
-Voor extra informatie, zie de [ documentatie van OpenSearch AWS ](https://docs.aws.amazon.com/opensearch-service/index.html).
+Voor extra informatie, zie de [&#x200B; documentatie van OpenSearch AWS &#x200B;](https://docs.aws.amazon.com/opensearch-service/index.html).

@@ -8,7 +8,7 @@ ht-degree: 8%
 # Aanmelden bij server
 
 1. Meld u aan bij uw server.
-1. Schakelaar aan de [ eigenaar van het dossiersysteem ](../installation/prerequisites/file-system/overview.md).
+1. Schakelaar aan de [&#x200B; eigenaar van het dossiersysteem &#x200B;](../installation/prerequisites/file-system/overview.md).
 1. Ga naar de map waarin u de toepassing hebt gekloond. Bijvoorbeeld:
 
    ```bash

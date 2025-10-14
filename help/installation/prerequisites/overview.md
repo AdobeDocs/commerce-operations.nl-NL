@@ -13,7 +13,7 @@ ht-degree: 1%
 
 Voordat u Adobe Commerce installeert, moet u het volgende doen:
 
-* Opstelling één of meerdere gastheren die aan de [ systeemvereisten ](../system-requirements.md) voldoen die in *Commerce op-gebouw* tabel worden vermeld.
+* Opstelling één of meerdere gastheren die aan de [&#x200B; systeemvereisten &#x200B;](../system-requirements.md) voldoen die in *Commerce op-gebouw* tabel worden vermeld.
 * Als u opstelling meer dan één Webknoop met lading het in evenwicht brengen, opstelling en test dat deel van uw systeem _alvorens_ u de toepassing installeert.
 * Zorg ervoor dat u op verschillende punten tijdens de installatie een back-up van het gehele systeem kunt maken, zodat u het systeem kunt terugdraaien als er problemen zijn.
 
@@ -21,7 +21,7 @@ Voordat u Adobe Commerce installeert, moet u het volgende doen:
 >
 >Wij veronderstellen u de Adobe Commerce in a **ontwikkelomgeving** installeert, dat u de toegang van de wortelgebruiker tot de machine hebt, **en** dat de machine niet hoogst veilig moet zijn. Als u opstelling een veiliger machine bent, adviseren wij sterk u een netwerkbeheerder voor extra hulp raadplegen.
 
-We raden u ten zeerste aan uw besturingssysteemsoftware bij te werken en bij te werken. Deze verbeteringen kunnen veiligheid en softwaremoeilijke situaties verstrekken die toekomstige problemen zouden kunnen verhinderen. Weet u niet wat dit betekent? Controle uit onze [ pagina van het installatieoverzicht ](../overview.md).
+We raden u ten zeerste aan uw besturingssysteemsoftware bij te werken en bij te werken. Deze verbeteringen kunnen veiligheid en softwaremoeilijke situaties verstrekken die toekomstige problemen zouden kunnen verhinderen. Weet u niet wat dit betekent? Controle uit onze [&#x200B; pagina van het installatieoverzicht &#x200B;](../overview.md).
 
 Voer de volgende opdrachten in als een gebruiker met `root` -rechten:
 
@@ -62,15 +62,15 @@ Server version: Apache/2.4.0 (Unix)
 Server built:   Jul 23 2017 14:17:29
 ```
 
-Om Apache te installeren of te bevorderen, zie [ Apache ](web-server/apache.md).
+Om Apache te installeren of te bevorderen, zie [&#x200B; Apache &#x200B;](web-server/apache.md).
 
 ### PHP
 
-Zie *Commerce op-gebouw* lusje in [ systeemvereisten ](../system-requirements.md) voor gesteunde versies van PHP en [ PHP ](../system-requirements.md#php-settings) voor PHP vereisten.
+Zie *Commerce op-gebouw* lusje in [&#x200B; systeemvereisten &#x200B;](../system-requirements.md) voor gesteunde versies van PHP en [&#x200B; PHP &#x200B;](../system-requirements.md#php-settings) voor PHP vereisten.
 
 ### MySQL
 
-Controleer of u een compatibele versie van MySQL hebt voor de versie van Adobe Commerce die u installeert. Zie *Commerce op-gebouw* lusje in [ vereisten van het Systeem ](../system-requirements.md) voor gesteunde versies.
+Controleer of u een compatibele versie van MySQL hebt voor de versie van Adobe Commerce die u installeert. Zie *Commerce op-gebouw* lusje in [&#x200B; vereisten van het Systeem &#x200B;](../system-requirements.md) voor gesteunde versies.
 
 ```bash
 mysql -u <database root user or database owner name> -p
@@ -100,7 +100,7 @@ Typ `help` of `\h` voor hulp. Typ `\c` om de huidige invoerinstructie te wissen.
 
 Typ `exit` bij de `mysql>` -prompt om af te sluiten.
 
-Om MySQL te installeren of te bevorderen, zie [ MySQL ](database/mysql.md).
+Om MySQL te installeren of te bevorderen, zie [&#x200B; MySQL &#x200B;](database/mysql.md).
 
 ### Zoekmachine
 

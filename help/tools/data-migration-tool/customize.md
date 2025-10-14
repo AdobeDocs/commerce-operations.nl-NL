@@ -12,18 +12,18 @@ ht-degree: 0%
 
 # De [!DNL Data Migration Tool] configureren
 
-Soms is het gegevensformaat en de structuur die door [ wordt gecreeerd uitbreidingen ](https://marketplace.magento.com/extensions.html) of douanecode verschillend tussen Magento 1 en Magento 2. Gebruik extensiepunten in de [!DNL Data Migration Tool] om deze gegevens te migreren. Als de gegevensindeling en -structuur hetzelfde zijn, kunnen de gegevens automatisch worden gemigreerd zonder tussenkomst van de gebruiker.
+Soms is het gegevensformaat en de structuur die door [&#x200B; wordt gecreeerd uitbreidingen &#x200B;](https://marketplace.magento.com/extensions.html) of douanecode verschillend tussen Magento 1 en Magento 2. Gebruik extensiepunten in de [!DNL Data Migration Tool] om deze gegevens te migreren. Als de gegevensindeling en -structuur hetzelfde zijn, kunnen de gegevens automatisch worden gemigreerd zonder tussenkomst van de gebruiker.
 
-Tijdens migratie, scant de [ Stap van de Kaart ](technical-specification.md#map-step) en vergelijkt alle Magento 1 en Magento 2 lijsten, met inbegrip van die die door uitbreidingen worden gecreeerd. Als de tabellen overeenkomen, worden de gegevens automatisch gemigreerd. Als de tabellen verschillen, wordt het gereedschap beëindigd en wordt de gebruiker een melding gestuurd.
+Tijdens migratie, scant de [&#x200B; Stap van de Kaart &#x200B;](technical-specification.md#map-step) en vergelijkt alle Magento 1 en Magento 2 lijsten, met inbegrip van die die door uitbreidingen worden gecreeerd. Als de tabellen overeenkomen, worden de gegevens automatisch gemigreerd. Als de tabellen verschillen, wordt het gereedschap beëindigd en wordt de gebruiker een melding gestuurd.
 
 >[!NOTE]
 >
->Lees de [ Technische Specificatie ](technical-specification.md) alvorens te proberen om [!DNL Data Migration Tool] uit te breiden. Ook, herzie de [ Gids van de Migratie ](../overview.md) voor algemene informatie over het gebruiken van het migratiehulpmiddel.
+>Lees de [&#x200B; Technische Specificatie &#x200B;](technical-specification.md) alvorens te proberen om [!DNL Data Migration Tool] uit te breiden. Ook, herzie de [&#x200B; Gids van de Migratie &#x200B;](../overview.md) voor algemene informatie over het gebruiken van het migratiehulpmiddel.
 
 
 ## Kleine wijzigingen in gegevensindeling en -structuur
 
-In de meeste gevallen, verhelpt de [ Stap van de Kaart ](technical-specification.md#map-step) voldoende kleine gegevensformaat en structuurveranderingen gebruikend de volgende methodes in het `map.xml` dossier:
+In de meeste gevallen, verhelpt de [&#x200B; Stap van de Kaart &#x200B;](technical-specification.md#map-step) voldoende kleine gegevensformaat en structuurveranderingen gebruikend de volgende methodes in het `map.xml` dossier:
 
 - Tabel- of veldnamen wijzigen met toewijzingsregels
 - Gegevensindelingen transformeren met bestaande handlers of een aangepaste handler
@@ -82,7 +82,7 @@ In het volgende voorbeeld ziet u hoe u zowel toewijzingsregels als een handler k
 
 ### Toewijzing in andere stappen uitbreiden
 
-Andere stappen steunen afbeelding, zoals de [ Stap EAV ](technical-specification.md#eav-step) en de Stap van de Attributen van de Klant. Deze stappen migreren een vooraf gedefinieerde lijst met Magento-tabellen. Stel dat de extensie &quot;GreatBlog&quot; een extra veld heeft in de tabel `eav_attribute` en de naam is gewijzigd in Magento 2. Aangezien de lijst door de [ Stap EAV ](technical-specification.md#eav-step) wordt verwerkt, zouden de toewijzingsregels voor het `map-eav.xml` dossier moeten worden geschreven. De `map.xml` - en `map-eav.xml` -bestanden gebruiken hetzelfde `map.xsd` -schema, zodat de toewijzingsregels ongewijzigd blijven.
+Andere stappen steunen afbeelding, zoals de [&#x200B; Stap EAV &#x200B;](technical-specification.md#eav-step) en de Stap van de Attributen van de Klant. Deze stappen migreren een vooraf gedefinieerde lijst met Magento-tabellen. Stel dat de extensie &quot;GreatBlog&quot; een extra veld heeft in de tabel `eav_attribute` en de naam is gewijzigd in Magento 2. Aangezien de lijst door de [&#x200B; Stap EAV &#x200B;](technical-specification.md#eav-step) wordt verwerkt, zouden de toewijzingsregels voor het `map-eav.xml` dossier moeten worden geschreven. De `map.xml` - en `map-eav.xml` -bestanden gebruiken hetzelfde `map.xsd` -schema, zodat de toewijzingsregels ongewijzigd blijven.
 
 ## Belangrijke wijzigingen in gegevensindeling en -structuur
 
@@ -92,7 +92,7 @@ Naast de Map Step zijn er andere stappen in het `config.xml` -bestand die gegeve
 - Stap OrderGrids
 - [EAV-stap](technical-specification.md#eav-step)
 
-In tegenstelling tot de [ Stap van de Kaart ](technical-specification.md#map-step), scannen deze stappen een vooraf bepaalde lijst van lijsten in plaats van alle lijsten.
+In tegenstelling tot de [&#x200B; Stap van de Kaart &#x200B;](technical-specification.md#map-step), scannen deze stappen een vooraf bepaalde lijst van lijsten in plaats van alle lijsten.
 
 Maak een aangepaste stap voor belangrijke wijzigingen in de gegevensindeling en -structuur.
 
@@ -164,10 +164,10 @@ De stappen kunnen vier types van klassen omvatten:
 
 >[!NOTE]
 >
->Verwijs naar [ Configuratie ](technical-specification.md#configuration), [ Stap internals ](technical-specification.md#step-internals), [ Stages ](technical-specification.md#step-stages), en [ Lopende wijzen ](technical-specification.md#running-modes) voor meer informatie.
+>Verwijs naar [&#x200B; Configuratie &#x200B;](technical-specification.md#configuration), [&#x200B; Stap internals &#x200B;](technical-specification.md#step-internals), [&#x200B; Stages &#x200B;](technical-specification.md#step-stages), en [&#x200B; Lopende wijzen &#x200B;](technical-specification.md#running-modes) voor meer informatie.
 
 
-Complexe SQL-query&#39;s kunnen binnen deze klassen worden verzameld om gegevens op te halen en te migreren. Ook, zouden deze lijsten &quot;moeten worden genegeerd&quot;in de [ Stap van de Kaart ](technical-specification.md#map-step) omdat het alle bestaande lijsten aftasten en probeert om de gegevens te migreren tenzij het in de `<ignore>` markering van het `map.xml` dossier is.
+Complexe SQL-query&#39;s kunnen binnen deze klassen worden verzameld om gegevens op te halen en te migreren. Ook, zouden deze lijsten &quot;moeten worden genegeerd&quot;in de [&#x200B; Stap van de Kaart &#x200B;](technical-specification.md#map-step) omdat het alle bestaande lijsten aftasten en probeert om de gegevens te migreren tenzij het in de `<ignore>` markering van het `map.xml` dossier is.
 
 Definieer bij Integriteit controleren een extra kaartbestand in het `config.xml` -bestand om te controleren of de tabelstructuur naar verwachting is.
 
@@ -411,6 +411,6 @@ het verwerken met de klasse `Vendor\Migration\Step\GreatBlog\Data` en de gegeven
 
 ## Verboden extensiemethoden
 
-Aangezien de [!DNL Data Migration Tool] en Magento 2 voortdurend evolueren, kunnen bestaande stappen en handlers worden gewijzigd. Wij adviseren hoogst niet het gedrag van stappen zoals de [ Stap van de Kaart ](technical-specification.md#map-step) met voeten te treden, [ URL herschrijft Stap ](technical-specification.md#url-rewrite-step), en managers door hun klassen uit te breiden.
+Aangezien de [!DNL Data Migration Tool] en Magento 2 voortdurend evolueren, kunnen bestaande stappen en handlers worden gewijzigd. Wij adviseren hoogst niet het gedrag van stappen zoals de [&#x200B; Stap van de Kaart &#x200B;](technical-specification.md#map-step) met voeten te treden, [&#x200B; URL herschrijft Stap &#x200B;](technical-specification.md#url-rewrite-step), en managers door hun klassen uit te breiden.
 
-Sommige stappen ondersteunen geen toewijzing en kunnen niet worden gewijzigd zonder de code te wijzigen. U kunt of een extra stap schrijven die gegevens aan het eind van migratie verandert of de kwestie van a [ GitHub ](https://github.com/magento/data-migration-tool/issues) creëren en om een nieuw uitbreidingspunt op de bestaande stap vragen.
+Sommige stappen ondersteunen geen toewijzing en kunnen niet worden gewijzigd zonder de code te wijzigen. U kunt of een extra stap schrijven die gegevens aan het eind van migratie verandert of de kwestie van a [&#x200B; GitHub &#x200B;](https://github.com/magento/data-migration-tool/issues) creëren en om een nieuw uitbreidingspunt op de bestaande stap vragen.

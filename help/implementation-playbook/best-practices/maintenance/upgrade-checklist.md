@@ -21,11 +21,11 @@ Gebruik deze controlelijst tijdens uw jaarlijkse en driemaandelijkse gesprekken 
 
 >[!NOTE]
 >
->Voor een gedetailleerde beschrijving van de technische stappen om met succes te bevorderen, verwijs naar [ Volledige verbeteringseerste vereisten ](../../../upgrade/prepare/prerequisites.md) in onze gebruikersdocumentatie.
+>Voor een gedetailleerde beschrijving van de technische stappen om met succes te bevorderen, verwijs naar [&#x200B; Volledige verbeteringseerste vereisten &#x200B;](../../../upgrade/prepare/prerequisites.md) in onze gebruikersdocumentatie.
 
 ## Betrokken producten en versies
 
-[ Alle gesteunde versies ](../../../release/versions.md) van:
+[&#x200B; Alle gesteunde versies &#x200B;](../../../release/versions.md) van:
 
 - Adobe Commerce over cloudinfrastructuur
 - Adobe Commerce ter plaatse
@@ -60,14 +60,14 @@ Gebruik deze controlelijst tijdens uw jaarlijkse en driemaandelijkse gesprekken 
 
 ▢ Vroege toegang
 
-- De partner neemt aan [ Beta ](../../../release/beta.md) deel
+- De partner neemt aan [&#x200B; Beta &#x200B;](../../../release/beta.md) deel
 - Opmerking bij Beta-release.
 
 ▢ Akkoord over budget, tijdlijn, bereik.
 
-▢ stel het [ Hulpmiddel van de Verenigbaarheid van de Verbetering ](../../../upgrade/upgrade-compatibility-tool/overview.md) in werking
+▢ stel het [&#x200B; Hulpmiddel van de Verenigbaarheid van de Verbetering &#x200B;](../../../upgrade/upgrade-compatibility-tool/overview.md) in werking
 
-▢ overweeg het gebruiken van de verbetering om kwesties te richten die door het [ Wide Hulpmiddel van de Analyse van de Plaats ](../../../tools/site-wide-analysis-tool/intro.md) worden geïdentificeerd.
+▢ overweeg het gebruiken van de verbetering om kwesties te richten die door het [&#x200B; Wide Hulpmiddel van de Analyse van de Plaats &#x200B;](../../../tools/site-wide-analysis-tool/intro.md) worden geïdentificeerd.
 
 ▢ Documentafhankelijkheden en vereiste technische stackwijzigingen, zoals PHP- of Elastic Search-versies.
 
@@ -77,7 +77,7 @@ Gebruik deze controlelijst tijdens uw jaarlijkse en driemaandelijkse gesprekken 
 
 ▢ Het onderhoudsvenster van het plan als de onderbreking wordt voorzien.
 
-▢ Overzicht en keur de het testen strategie goed; denk na gebruikend het Adobe Commerce [ testkader ](https://developer.adobe.com/commerce/testing/) of een derde automatiseringsreeks.
+▢ Overzicht en keur de het testen strategie goed; denk na gebruikend het Adobe Commerce [&#x200B; testkader &#x200B;](https://developer.adobe.com/commerce/testing/) of een derde automatiseringsreeks.
 
 ▢ Bevestig dat alle extensies en aanpassingen compatibel zijn.
 

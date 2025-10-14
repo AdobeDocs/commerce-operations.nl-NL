@@ -12,11 +12,11 @@ ht-degree: 0%
 
 # De Admin-URI weergeven of wijzigen
 
-Alvorens u dit bevel in werking stelt, moet u [ creëren of de plaatsingsconfiguratie ](deployment.md) bijwerken.
+Alvorens u dit bevel in werking stelt, moet u [&#x200B; creëren of de plaatsingsconfiguratie &#x200B;](deployment.md) bijwerken.
 
 ## De Admin-URI weergeven
 
-Deze sectie bespreekt hoe te om de bevellijn te gebruiken om het Eenvormige Herkenningsteken van het Middel Admin ([ URI ](https://www.w3.org/Protocols/rfc2616/rfc2616-sec3.html#sec3.2)) te tonen.
+Deze sectie bespreekt hoe te om de bevellijn te gebruiken om het Eenvormige Herkenningsteken van het Middel Admin ([&#x200B; URI &#x200B;](https://www.w3.org/Protocols/rfc2616/rfc2616-sec3.html#sec3.2)) te tonen.
 
 Opdrachtopties:
 

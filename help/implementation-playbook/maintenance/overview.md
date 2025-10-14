@@ -24,7 +24,7 @@ De overdracht van kennis komt over de loop van het volledige project voor, en ee
 
 In het volgende diagram worden de fasen en activiteiten weergegeven die in een succesvol overgangsresultaat zouden worden opgenomen:
 
-![ Diagram die fasen van het overgangsproces tonen ](../../assets/playbooks/transition-diagram.svg)
+![&#x200B; Diagram die fasen van het overgangsproces tonen &#x200B;](../../assets/playbooks/transition-diagram.svg)
 
 >[!NOTE]
 >
@@ -33,5 +33,5 @@ In het volgende diagram worden de fasen en activiteiten weergegeven die in een s
 Het identificeren van het juiste steunmodel voor uw zaken om uw platform-en handelspraktijk te blijven verbeteren en optimaliseren als geheel-is een kritieke stap aan het handhaven van al hard werk dat tijdens het implementatieproces werd gedaan. Met een uitgebreid aan de gang zijnde steunplan op zijn plaats, kan uw handelsplaats omhoog met de verwachtingen van uw klanten houden en u kunt uw doelstellingen blijven bereiken.
 
 Bij de implementatie van Adobe Commerce is het van essentieel belang om na te denken over wat u moet opnemen in uw onderhouds- en ondersteuningsstrategie.
-Expert support is inbegrepen in een Adobe Commerce-licentie. Voor meer informatie over de Deskundige steun en de Plannen van de Steun van Adobe, gelieve te verwijzen naar [ Abonnementen van de Steun van Adobe ](https://business.adobe.com/customers/consulting-services/premier-support.html).
+Expert support is inbegrepen in een Adobe Commerce-licentie. Voor meer informatie over de Deskundige steun en de Plannen van de Steun van Adobe, gelieve te verwijzen naar [&#x200B; Abonnementen van de Steun van Adobe &#x200B;](https://business.adobe.com/customers/consulting-services/premier-support.html).
 Naast Adobe Support-plannen bestaan er oude ondersteuningsvoorwaarden voor Magento. Als u wilt weten welke supportservices op u van toepassing zijn, kunt u verwijzen naar uw contract om te zien welke ondersteuningsovereenkomst u hebt of kunt u contact opnemen met uw Adobe-accountteam.

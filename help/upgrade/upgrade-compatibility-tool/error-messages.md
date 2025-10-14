@@ -190,7 +190,7 @@ Er worden aangepaste codecouten gegenereerd wanneer aangepaste code de Adobe Com
 | 5082 | Het gebruik van $this in sjablonen is afgekeurd | Gebruik in plaats hiervan $block. |
 | 5083 | Constanten zijn niet toegestaan als het eerste argument van een vertaalfunctie | Gebruik in plaats hiervan letterlijke tekenreeks. |
 | 5085 | Het gebruik van bepaalde functies wordt afgeraden | Gebruik in plaats hiervan de alternatieve functie die op het bericht wordt geadviseerd. |
-| 5087 | Probleem met compatibiliteit met PHP-kruisversies | Volg de suggesties van het bericht en controleer de [ migratiegids ](https://www.php.net/manual/en/migration81.php). |
+| 5087 | Probleem met compatibiliteit met PHP-kruisversies | Volg de suggesties van het bericht en controleer de [&#x200B; migratiegids &#x200B;](https://www.php.net/manual/en/migration81.php). |
 | 5088 | Optionele parameters gevonden na vereiste parameters | Verplaats vereiste parameters na optionele parameters. |
 | 5089 | Zichtbaarheid van methode `final private` gevonden | Wijzig de zichtbaarheid van de methode van `final private` in alleen `private` . |
 | 5090 | De tovermethode `__set_state` wordt niet gedefinieerd als `static` | De tovermethode `__set_state` moet worden gedefinieerd als `static` . |

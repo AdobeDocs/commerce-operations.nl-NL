@@ -19,7 +19,7 @@ In het volgende voorbeeld ziet u hoe u databaseactiviteiten kunt registreren met
 
 >[!TIP]
 >
->U kunt Commerce CLI gebruiken om [ gegevensbestand het registreren ](../cli/enable-logging.md#database-logging) toe te laten en onbruikbaar te maken.
+>U kunt Commerce CLI gebruiken om [&#x200B; gegevensbestand het registreren &#x200B;](../cli/enable-logging.md#database-logging) toe te laten en onbruikbaar te maken.
 
 Als u de standaardconfiguratie van `\Magento\Framework\DB\Logger\LoggerProxy` wilt wijzigen, bewerkt u uw `app/etc/di.xml` .
 

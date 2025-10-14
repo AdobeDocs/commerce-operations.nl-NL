@@ -13,25 +13,25 @@ ht-degree: 0%
 
 [!DNL Site-Wide Analysis Tool] biedt 24/7 real-time prestatiebewaking, rapporten en aanbevelingen voor de beveiliging en operabiliteit van Adobe Commerce-instanties.
 
-[!DNL Upgrade Compatibility Tool] is nu geïntegreerd met [!DNL Site-Wide Analysis Tool] om de capaciteit voor niet-technische mensen te verstrekken om [!DNL Upgrade Compatibility Tool] in werking te stellen en a [ rapport ](../upgrade-compatibility-tool/reports.md) te krijgen die een lijst van kwesties voor elk dossier bevatten.
+[!DNL Upgrade Compatibility Tool] is nu geïntegreerd met [!DNL Site-Wide Analysis Tool] om de capaciteit voor niet-technische mensen te verstrekken om [!DNL Upgrade Compatibility Tool] in werking te stellen en a [&#x200B; rapport &#x200B;](../upgrade-compatibility-tool/reports.md) te krijgen die een lijst van kwesties voor elk dossier bevatten.
 
-Zie de [[!DNL Site-Wide Analysis Tool]  gebruikersgids ](https://experienceleague.adobe.com/nl/docs/commerce-operations/tools/site-wide-analysis-tool/access) voor meer informatie.
+Zie de [[!DNL Site-Wide Analysis Tool]  gebruikersgids &#x200B;](https://experienceleague.adobe.com/nl/docs/commerce-operations/tools/site-wide-analysis-tool/access) voor meer informatie.
 
 ## Voer de [!DNL Upgrade Compatibility Tool] uit vanaf de [!DNL Site-Wide Analysis Tool]
 
 Navigeer naar het [!DNL Site-Wide Analysis Tool] dashboard voor uw project en zoek de [!DNL Upgrade Compatibility Tool] -widget.
 
-![ UCT SWAT widget - Aanvankelijk ](../../assets/upgrade-guide/uct-swat-initial.png)
+![&#x200B; UCT SWAT widget - Aanvankelijk &#x200B;](../../assets/upgrade-guide/uct-swat-initial.png)
 
 Klik op **[!UICONTROL Run Upgrade Scan]**. Afhankelijk van de grootte van het project kan de scan enige tijd duren. Een spinner geeft aan dat de scan wordt uitgevoerd.
 
-![ UCT SWAT widget - Bezig ](../../assets/upgrade-guide/uct-swat-progress.png)
+![&#x200B; UCT SWAT widget - Bezig &#x200B;](../../assets/upgrade-guide/uct-swat-progress.png)
 
 Nadat de scan is voltooid, worden de resultaten op hoog niveau weergegeven in de widget.
 
-![ UCT SWAT widget - Resultaten ](../../assets/upgrade-guide/uct-swat-results.png)
+![&#x200B; UCT SWAT widget - Resultaten &#x200B;](../../assets/upgrade-guide/uct-swat-results.png)
 
-Klik **[!UICONTROL Download Report]** om het [!DNL Upgrade Compatibility Tool] [ HTML rapport ](../upgrade-compatibility-tool/reports.md#html-report) terug te winnen en de details te herzien.
+Klik **[!UICONTROL Download Report]** om het [!DNL Upgrade Compatibility Tool] [&#x200B; HTML rapport &#x200B;](../upgrade-compatibility-tool/reports.md#html-report) terug te winnen en de details te herzien.
 
 
 >[!NOTE]

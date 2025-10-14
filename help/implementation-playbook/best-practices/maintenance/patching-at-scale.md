@@ -14,15 +14,15 @@ ht-degree: 0%
 
 # Aanbevolen procedures voor het distribueren van Adobe Commerce-patches op schaal
 
-Als u veelvoudige installaties van Adobe Commerce beheert, [ het patchen ](../../../upgrade/patches/apply.md) kan een complex proces zijn. _Gecentraliseerde het opsluiten_ is beste praktijken voor ondernemingen. Hiermee kunt u de juiste patches toepassen op al uw Adobe Commerce-installaties. Dit onderwerp verklaart hoe te om gecentraliseerde flarddistributie voor alle types van de flarden van Adobe Commerce [ te bereiken ](../../../upgrade/patches/overview.md).
+Als u veelvoudige installaties van Adobe Commerce beheert, [&#x200B; het patchen &#x200B;](../../../upgrade/patches/apply.md) kan een complex proces zijn. _Gecentraliseerde het opsluiten_ is beste praktijken voor ondernemingen. Hiermee kunt u de juiste patches toepassen op al uw Adobe Commerce-installaties. Dit onderwerp verklaart hoe te om gecentraliseerde flarddistributie voor alle types van de flarden van Adobe Commerce [&#x200B; te bereiken &#x200B;](../../../upgrade/patches/overview.md).
 
 >[!NOTE]
 >
->De volgende inhoud werd oorspronkelijk gepubliceerd in [ het Verdelen van de Patches van Adobe Commerce bij de post van de Schaal ](https://blog.developer.adobe.com/distributing-adobe-commerce-patches-at-scale-137412e05a20) op het Blog van Tech van Adobe. Het is gewijzigd om zich op de stappen en codesteekproeven voor het uitvoeren van een gecentraliseerde het patchen strategie te concentreren. Zie het originele artikel voor meer informatie over de verschillende typen patches die hier worden beschreven.
+>De volgende inhoud werd oorspronkelijk gepubliceerd in [&#x200B; het Verdelen van de Patches van Adobe Commerce bij de post van de Schaal &#x200B;](https://blog.developer.adobe.com/distributing-adobe-commerce-patches-at-scale-137412e05a20) op het Blog van Tech van Adobe. Het is gewijzigd om zich op de stappen en codesteekproeven voor het uitvoeren van een gecentraliseerde het patchen strategie te concentreren. Zie het originele artikel voor meer informatie over de verschillende typen patches die hier worden beschreven.
 
 ## Betrokken producten en versies
 
-[ Alle gesteunde versies ](../../../release/versions.md) van:
+[&#x200B; Alle gesteunde versies &#x200B;](../../../release/versions.md) van:
 
 - Adobe Commerce over cloudinfrastructuur
 - Adobe Commerce in gebouwen
@@ -32,8 +32,8 @@ Als u veelvoudige installaties van Adobe Commerce beheert, [ het patchen ](../..
 Hoe weet u, aangezien er veel verschillende typen patches zijn en er vele manieren zijn om deze toe te passen, welke patch als eerste wordt toegepast? Hoe meer patches u hebt, des te groter de kans dat ze op hetzelfde bestand of op dezelfde coderegel worden toegepast. Patches worden in de volgende volgorde toegepast:
 
 1. **de flarden van de Veiligheid** maken deel uit van de statische codebasis van een versie van Adobe Commerce.
-1. **de flarden van Composer** door `composer install` en `composer update` stoppen zoals [ cweagans/composer-flarden ](https://packagist.org/packages/cweagans/composer-patches).
-1. Alle **vereiste flarden** inbegrepen in het [ Reparaties van de Wolk voor Commerce ](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/release-notes/cloud-patches.html?lang=nl-NL) pakket.
+1. **de flarden van Composer** door `composer install` en `composer update` stoppen zoals [&#x200B; cweagans/composer-flarden &#x200B;](https://packagist.org/packages/cweagans/composer-patches).
+1. Alle **vereiste flarden** inbegrepen in het [&#x200B; Reparaties van de Wolk voor Commerce &#x200B;](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/release-notes/cloud-patches.html?lang=nl-NL) pakket.
 1. Geselecteerde **kwaliteitspatches** inbegrepen in [[!DNL [Quality Patches Tool]]](../../../tools/quality-patches-tool/usage.md).
 1. **de flarden van de Douane** en de flarden van de Steun van Adobe Commerce in de `/m2-hotfixes` folder in alfabetische orde door flardnaam.
 
@@ -43,7 +43,7 @@ Hoe weet u, aangezien er veel verschillende typen patches zijn en er vele manier
 
 Als u verantwoordelijk bent voor het onderhoud van meerdere installaties van Adobe Commerce, kan het lastig zijn om ervoor te zorgen dat alle instanties dezelfde set geïnstalleerde patches hebben. Elke installatie heeft een eigen git-opslagplaats, `/m2-hotfixes` map en `composer.json` bestand. De enige garantie dat u hebt is dat de **veiligheidspatches** en **vereiste flarden** voor wolkengebruikers allen als deel van uw belangrijkste versie van Adobe Commerce geïnstalleerd zijn.
 
-Momenteel is er geen enkele gecentraliseerde oplossing voor dit probleem, maar Composer biedt een manier om de kloof te dichten. Het [`cweagans/composer-patches` ](https://packagist.org/packages/cweagans/composer-patches) pakket staat u toe om [ flarden van gebiedsdelen ](https://github.com/cweagans/composer-patches/tree/1.x#allowing-patches-to-be-applied-from-dependencies) toe te passen. U kunt een Composer-pakket maken waarin al uw patches worden geïnstalleerd en dat pakket vervolgens in al uw projecten wordt vereist.
+Momenteel is er geen enkele gecentraliseerde oplossing voor dit probleem, maar Composer biedt een manier om de kloof te dichten. Het [`cweagans/composer-patches` &#x200B;](https://packagist.org/packages/cweagans/composer-patches) pakket staat u toe om [&#x200B; flarden van gebiedsdelen &#x200B;](https://github.com/cweagans/composer-patches/tree/1.x#allowing-patches-to-be-applied-from-dependencies) toe te passen. U kunt een Composer-pakket maken waarin al uw patches worden geïnstalleerd en dat pakket vervolgens in al uw projecten wordt vereist.
 
 Dat behandelt **veiligheidspatches**, **vereiste flarden**, en **de flarden van Composer**, maar wat over kwaliteitsflarden en de inhoud van de `/m2-hotfixes` folder?
 
@@ -85,7 +85,7 @@ Het componentpakket `centralized-patcher` maken:
 
    >[!NOTE]
    >
-   >Het `require` attribuut in het volgende voorbeeld toont a `require` gebiedsdeel op het [ plugin pakket ](#centralized-patcher-composer-plugin) dat u later dit voorbeeld moet tot stand brengen.
+   >Het `require` attribuut in het volgende voorbeeld toont a `require` gebiedsdeel op het [&#x200B; plugin pakket &#x200B;](#centralized-patcher-composer-plugin) dat u later dit voorbeeld moet tot stand brengen.
 
    ```json
    {
@@ -148,7 +148,7 @@ Het componentpakket `centralized-patcher` maken:
    ```
 
 
-Het `quality-patches` attribuut in de voorafgaande codesteekproef bevat twee flarden van de [ volledige flardlijst ](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html?lang=nl-NL) als voorbeeld.  Deze kwaliteitspatches worden geïnstalleerd op elk project waarvoor het `centralized-patcher` -pakket is vereist met de opdracht `vendor/bin/magento-patches apply` .
+Het `quality-patches` attribuut in de voorafgaande codesteekproef bevat twee flarden van de [&#x200B; volledige flardlijst &#x200B;](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html?lang=nl-NL) als voorbeeld.  Deze kwaliteitspatches worden geïnstalleerd op elk project waarvoor het `centralized-patcher` -pakket is vereist met de opdracht `vendor/bin/magento-patches apply` .
 
 Voor testdoeleinden kunt u een voorbeeldflard (`/m2-hotfixes/EXAMPLE-PATCH_2.4.6.patch`) tot stand brengen.
 
@@ -331,7 +331,7 @@ Het componentpakket `centralized-patcher-compose-plugin` maken:
 
 >[!TIP]
 >
->Verwijs naar [ code-voorbeelden ](#code-examples) om de twee pakketten te zien die in dit voorbeeld in actie worden beschreven.
+>Verwijs naar [&#x200B; code-voorbeelden &#x200B;](#code-examples) om de twee pakketten te zien die in dit voorbeeld in actie worden beschreven.
 
 
 ## Wat u moet doen met projectspecifieke patches
@@ -365,12 +365,12 @@ Net als bij Adobe Commerce op cloudinfrastructuur wordt in dit artikel ervan uit
 
 Op deze manier kunt u al uw patches centraal beheren voor al uw installaties en kunt u de veiligheid en stabiliteit van uw Adobe Commerce-winkels beter garanderen. Gebruik de volgende methoden om de patchstatus te controleren:
 
-- [ de infrastructuurprojecten van de Wolk ](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html?lang=nl-NL#view-available-patches-and-status)
+- [&#x200B; de infrastructuurprojecten van de Wolk &#x200B;](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html?lang=nl-NL#view-available-patches-and-status)
 - [Projecten ter plaatse](../../../tools/quality-patches-tool/usage.md#view-individual-patches)
 
 ## Codevoorbeelden
 
-- [ Gecentraliseerde flarden in Magento Open Source ](https://github.com/AntonEvers/centralized-patches-on-magento-open-source)
-- [ Gecentraliseerde flarden in Adobe Commerce op wolkeninfrastructuur ](https://github.com/AntonEvers/centralized-patches-on-adobe-commerce-cloud)
-- [ Gecentraliseerde de stop van de Composer van de patcher ](https://github.com/AntonEvers/centralized-patcher-composer-plugin)
-- [ Gecentraliseerde patchercomponent ](https://github.com/AntonEvers/centralized-patcher)
+- [&#x200B; Gecentraliseerde flarden in Magento Open Source &#x200B;](https://github.com/AntonEvers/centralized-patches-on-magento-open-source)
+- [&#x200B; Gecentraliseerde flarden in Adobe Commerce op wolkeninfrastructuur &#x200B;](https://github.com/AntonEvers/centralized-patches-on-adobe-commerce-cloud)
+- [&#x200B; Gecentraliseerde de stop van de Composer van de patcher &#x200B;](https://github.com/AntonEvers/centralized-patcher-composer-plugin)
+- [&#x200B; Gecentraliseerde patchercomponent &#x200B;](https://github.com/AntonEvers/centralized-patcher)

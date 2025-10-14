@@ -16,31 +16,31 @@ Het **PHP** lusje toont PHP proceskwesties om een diepere analyse in PHP problem
 
 ## [!UICONTROL PHP active process details]
 
-![ PHP actieve procesdetails ](../../assets/tools/php-active-process-details.jpg)
+![&#x200B; PHP actieve procesdetails &#x200B;](../../assets/tools/php-active-process-details.jpg)
 
 Het frame **[!UICONTROL PHP active process details]** toont de PHP-processen, inclusief php-fpm, over de geselecteerde tijd.
 
 ## [!UICONTROL PHP process load (# of PHP processes and % of CPU load)]
 
-![ PHP proceslading ](../../assets/tools/php-process-load.jpg)
+![&#x200B; PHP proceslading &#x200B;](../../assets/tools/php-process-load.jpg)
 
 Het **[!UICONTROL PHP process load (# of PHP processes and % of CPU load)]** -frame toont de CPU load van PHP-FPM processen over de geselecteerde tijdsperiode.
 
 ## [!UICONTROL PHP Memory detail]
 
-![ PHP de detail van het Geheugen ](../../assets/tools/php-memory-detail.jpg)
+![&#x200B; PHP de detail van het Geheugen &#x200B;](../../assets/tools/php-memory-detail.jpg)
 
 In het frame **[!UICONTROL PHP Memory detail]** wordt het geheugengebruik van PHP-processen in de geselecteerde tijdsperiode weergegeven.
 
 ## [!UICONTROL PHP CPU Utilization]
 
-![ PHP CPU Utilization ](../../assets/tools/php-cpu-utilization.jpg)
+![&#x200B; PHP CPU Utilization &#x200B;](../../assets/tools/php-cpu-utilization.jpg)
 
 In het **[!UICONTROL PHP CPU Utilization]** frame wordt het CPU-percentage weergegeven van het gebruik van PHP processen gedurende de geselecteerde tijdsperiode.
 
 ## [!UICONTROL PHP Process states]
 
-![ PHP staten van het Proces ](../../assets/tools/php-process-states-image-1.jpg)
+![&#x200B; PHP staten van het Proces &#x200B;](../../assets/tools/php-process-states-image-1.jpg)
 
 In het frame **[!UICONTROL PHP Process states]** worden de PHP-processtatussen in de geselecteerde tijdlijn weergegeven. Het wordt weergegeven wanneer PHP-processen worden beëindigd en opnieuw worden gestart. Wees voorzichtig met afgesloten PHP-processen die geen nieuwe start laten zien.
 
@@ -51,7 +51,7 @@ In het frame **[!UICONTROL PHP Process states]** worden de PHP-processtatussen i
 
 ## [!UICONTROL PHP Errors]
 
-![ de Fouten van PHP ](../../assets/tools/php-errors-image-1.jpg)
+![&#x200B; de Fouten van PHP &#x200B;](../../assets/tools/php-errors-image-1.jpg)
 
 Het frame **[!UICONTROL PHP Errors]** toont het aantal PHP-arbeidersfouten in de geselecteerde tijdlijn. Foutberichten die worden geparseerd en weergegeven, zijn:
 
@@ -69,13 +69,13 @@ Het frame **[!UICONTROL PHP Errors]** toont het aantal PHP-arbeidersfouten in de
 
 ## [!UICONTROL PHP processes count]
 
-![ PHP procestelling ](../../assets/tools/php-processes-count.jpg)
+![&#x200B; PHP procestelling &#x200B;](../../assets/tools/php-processes-count.jpg)
 
 Het frame **[!UICONTROL PHP processes count]** toont een aantal PHP-processen over de geselecteerde tijd.
 
 ## [!UICONTROL Database Errors]
 
-![ Fouten van het Gegevensbestand ](../../assets/tools/php-tab-database-errors.jpg)
+![&#x200B; Fouten van het Gegevensbestand &#x200B;](../../assets/tools/php-tab-database-errors.jpg)
 
 In het frame **[!UICONTROL Database Errors]** worden databasefouten over de geselecteerde tijdlijn weergegeven. Voorbeelden van geparseerde fouten:
 
@@ -121,12 +121,12 @@ In het frame **[!UICONTROL Database Errors]** worden databasefouten over de gese
 
 ## [!UICONTROL Database traces]
 
-![ sporen van het Gegevensbestand ](../../assets/tools/php-tab-database-traces.jpg)
+![&#x200B; sporen van het Gegevensbestand &#x200B;](../../assets/tools/php-tab-database-traces.jpg)
 
 In het frame **[!UICONTROL Database traces]** worden traceergegevens van de database weergegeven. Dit frame wordt uitgelijnd op de APM-transactieoverzichtsweergave voor de geselecteerde tijdlijn.
 
 ## [!UICONTROL Database mysql-slow.log]
 
-![ Gegevensbestand mysql-slow.log ](../../assets/tools/php-tab-database-mysql-slow-log.jpg)
+![&#x200B; Gegevensbestand mysql-slow.log &#x200B;](../../assets/tools/php-tab-database-mysql-slow-log.jpg)
 
 In het frame **[!UICONTROL Database mysql-slow.log]** worden de typen queryinstructies weergegeven die zich in het `mysql-slow.log` -bestand binnen de geselecteerde tijdlijn bevonden.

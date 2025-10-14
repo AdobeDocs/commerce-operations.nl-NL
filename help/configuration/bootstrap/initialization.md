@@ -61,7 +61,7 @@ Om de toepassing van Commerce in werking te stellen, worden de volgende acties u
 
 Met het bootstrap-object wordt als volgt aangegeven hoe de Commerce-toepassing niet-afgevangen uitzonderingen verwerkt:
 
-- Op [ ontwikkelaarwijze ](../bootstrap/application-modes.md#developer-mode), toont de uitzondering zoals-is.
+- Op [&#x200B; ontwikkelaarwijze &#x200B;](../bootstrap/application-modes.md#developer-mode), toont de uitzondering zoals-is.
 - Op een andere wijze, probeert om uitzondering te registreren en een generisch foutenbericht te tonen.
 - Beëindigt Commerce met foutcode `1`
 
@@ -73,12 +73,12 @@ Er zijn de volgende toepassingen voor ingangspunten (toepassingen die door Comme
 
 [ \Magento\Framework\App\Http ][http] werkt als volgt:
 
-1. Bepaalt het [ toepassingsgebied ](https://developer.adobe.com/commerce/php/architecture/modules/areas/).
+1. Bepaalt het [&#x200B; toepassingsgebied &#x200B;](https://developer.adobe.com/commerce/php/architecture/modules/areas/).
 1. Begint het voorcontrolemechanisme en het verpletteren van systemen om een controlemechanismeactie te vinden en uit te voeren.
 1. Gebruikt een HTTP-reactieobject om het resultaat van de controlleractie te retourneren.
 1. Foutafhandeling (in de volgende prioriteitsvolgorde):
 
-   1. Als u [ ontwikkelaarwijze ](../bootstrap/application-modes.md#developer-mode) gebruikt:
+   1. Als u [&#x200B; ontwikkelaarwijze &#x200B;](../bootstrap/application-modes.md#developer-mode) gebruikt:
       - Als de Commerce-toepassing niet is geïnstalleerd, stuurt u deze om naar de wizard Setup.
       - Als de Commerce-toepassing is geïnstalleerd, geeft u een fout en HTTP-statuscode 500 weer (Interne serverfout).
    1. Als de Commerce-toepassing in de onderhoudsmodus staat, geeft u een gebruikersvriendelijke landingspagina met HTTP-statuscode 503 (Service Unavailable) weer.
@@ -93,13 +93,13 @@ Er zijn de volgende toepassingen voor ingangspunten (toepassingen die door Comme
 
 >[!INFO]
 >
->Het ingangspunt voor statische meningsdossiers wordt niet gebruikt op [ productiemodus ](application-modes.md#production-mode) om potentiële exploitaties op de server te vermijden. In de productiemodus verwacht de Commerce-toepassing dat de map `<your Commerce install dir>/pub/static` alle benodigde bronnen bevat.
+>Het ingangspunt voor statische meningsdossiers wordt niet gebruikt op [&#x200B; productiemodus &#x200B;](application-modes.md#production-mode) om potentiële exploitaties op de server te vermijden. In de productiemodus verwacht de Commerce-toepassing dat de map `<your Commerce install dir>/pub/static` alle benodigde bronnen bevat.
 
 In de standaard- of ontwikkelaarsmodus wordt een aanvraag voor een niet-bestaande statische bron omgeleid naar het statische ingangspunt volgens de herschrijfregels die door de betreffende `.htaccess` zijn opgegeven.
 Wanneer de aanvraag naar het ingangspunt wordt omgeleid, parseert de Commerce-toepassing de gevraagde URL op basis van opgehaalde parameters en zoekt de gevraagde bron.
 
-- Op [ ontwikkelaar ](application-modes.md#developer-mode) wijze, is de inhoud van het dossier teruggekeerd zodat telkens als het middel wordt gevraagd, de teruggekeerde inhoud bijgewerkt is.
-- Op [ gebrek ](application-modes.md#default-mode) wijze, wordt het teruggewonnen middel gepubliceerd zodat is het toegankelijk door eerder gevraagde URL.
+- Op [&#x200B; ontwikkelaar &#x200B;](application-modes.md#developer-mode) wijze, is de inhoud van het dossier teruggekeerd zodat telkens als het middel wordt gevraagd, de teruggekeerde inhoud bijgewerkt is.
+- Op [&#x200B; gebrek &#x200B;](application-modes.md#default-mode) wijze, wordt het teruggewonnen middel gepubliceerd zodat is het toegankelijk door eerder gevraagde URL.
 
   Alle toekomstige verzoeken om het statische middel worden verwerkt door de server het zelfde als statische dossiers; namelijk zonder het ingangspunt te impliceren. Als gepubliceerde bestanden moeten worden gesynchroniseerd met de originele bestanden, moet de map `pub/static` worden verwijderd. Als gevolg hiervan worden bestanden automatisch opnieuw gepubliceerd met de volgende aanvraag.
 

@@ -12,11 +12,11 @@ ht-degree: 0%
 
 # Instellingen voor gegevensmigratie
 
-De modus `Settings` migreert winkels, websites en systeemconfiguratie zoals de instellingen voor verzending, betaling en belasting. Volgens onze gegevensmigratie [ orde ](overview.md#migration-order), zou u montages eerst moeten migreren.
+De modus `Settings` migreert winkels, websites en systeemconfiguratie zoals de instellingen voor verzending, betaling en belasting. Volgens onze gegevensmigratie [&#x200B; orde &#x200B;](overview.md#migration-order), zou u montages eerst moeten migreren.
 
 Voer de volgende stappen uit om voor te bereiden voordat u begint:
 
-1. Login aan de toepassingsserver als [ eigenaar van het dossiersysteem ](../../../installation/prerequisites/file-system/overview.md).
+1. Login aan de toepassingsserver als [&#x200B; eigenaar van het dossiersysteem &#x200B;](../../../installation/prerequisites/file-system/overview.md).
 
 1. Wijzig de map `/bin` of zorg ervoor dat deze aan uw systeem wordt toegevoegd `PATH` .
 
@@ -25,7 +25,7 @@ Voer de volgende stappen uit om voor te bereiden voordat u begint:
 >Controleer of Magento 2 is geïmplementeerd in de `default` -modus. In de ontwikkelmodus kunnen validatiefouten optreden in het migratiehulpprogramma.
 
 
-Zie de [ eerste stappen ](overview.md#first-steps) sectie voor meer details.
+Zie de [&#x200B; eerste stappen &#x200B;](overview.md#first-steps) sectie voor meer details.
 
 ## De opdracht Instellingen migreren uitvoeren
 
@@ -54,7 +54,7 @@ Het `Migration completed` -bericht wordt weergegeven nadat de instellingen zijn 
 
 U kunt de systeemconfiguraties negeren, hernoemen of wijzigen tijdens het migreren van instellingen. Hiervoor geeft u uw aangepaste regels op in het `settings.xml` -bestand.
 
-1. Login aan de toepassingsserver als, of schakelaar aan, de [ eigenaar van het dossiersysteem ](../../../installation/prerequisites/file-system/overview.md).
+1. Login aan de toepassingsserver als, of schakelaar aan, de [&#x200B; eigenaar van het dossiersysteem &#x200B;](../../../installation/prerequisites/file-system/overview.md).
 
 1. Ga naar de volgende map:
 
@@ -80,7 +80,7 @@ U kunt de systeemconfiguraties negeren, hernoemen of wijzigen tijdens het migrer
 
 1. Als u de nieuwe naam wilt opgeven van het instellingenbestand voor toewijzing, wijzigt u de tag `<settings_map_file>` in het `path/to/config.xml` -bestand.
 
-Voor meer details, zie de [ de migratiewijze van Montages ](../technical-specification.md#settings-migration-mode) sectie van de 2&rbrace; specificatie van het Hulpmiddel [.](../technical-specification.md)
+Voor meer details, zie de [&#x200B; de migratiewijze van Montages &#x200B;](../technical-specification.md#settings-migration-mode) sectie van de 2&rbrace; specificatie van het Hulpmiddel [.](../technical-specification.md)
 
 ## Volgende migratie
 

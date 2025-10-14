@@ -17,7 +17,7 @@ De Commerce-databaseanalyse geeft alle query&#39;s weer die op een pagina zijn g
 
 ## Stap 1: Wijzig de plaatsingsconfiguratie
 
-Wijzig `<magento_root>/app/etc/env.php` om de volgende verwijzing naar de [ klasse van gegevensbestandanalyse ](https://github.com/magento/magento2/tree/2.4/lib/internal/Magento/Framework/DB/Profiler.php) toe te voegen:
+Wijzig `<magento_root>/app/etc/env.php` om de volgende verwijzing naar de [&#x200B; klasse van gegevensbestandanalyse &#x200B;](https://github.com/magento/magento2/tree/2.4/lib/internal/Magento/Framework/DB/Profiler.php) toe te voegen:
 
 ```php?start_inline=1
         'profiler' => [
@@ -91,4 +91,4 @@ echo "</table>";
 
 Ga naar een willekeurige pagina in uw winkel of Admin om de resultaten weer te geven. Hieronder volgt een monster:
 
-![ Resultaten van het gegevensbestandanalyse van de Steekproef ](../../assets/configuration/db-profiler-results.png)
+![&#x200B; Resultaten van het gegevensbestandanalyse van de Steekproef &#x200B;](../../assets/configuration/db-profiler-results.png)

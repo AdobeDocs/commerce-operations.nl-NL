@@ -18,11 +18,11 @@ De sectie Beveiliging bevat instellingen voor beveiligingsfuncties, zoals wachtw
 
 De onderwerpen in de sectie van de Veiligheid van de gids van de Configuratie zijn niet uitvoerig over alle functionaliteit van Commerce. Er zijn vele belangrijke veiligheidsgerelateerde onderwerpen in andere gidsen van Commerce, zoals:
 
-- [ PHP de gids van de Ontwikkelaar ](https://developer.adobe.com/commerce/php/development/security/) voor informatie die de ontwikkelaars van Adobe Commerce kunnen gebruiken om de veiligheid van de componenten te verbeteren die zij bouwen.
-- [ de gids van de Veiligheid en van de Naleving ](https://experienceleague.adobe.com/nl/docs/commerce-operations/security-and-compliance/overview) voor informatie over veiligheid, privacy, en regelgevende naleving, met verbindingen aan technische middelen.
+- [&#x200B; PHP de gids van de Ontwikkelaar &#x200B;](https://developer.adobe.com/commerce/php/development/security/) voor informatie die de ontwikkelaars van Adobe Commerce kunnen gebruiken om de veiligheid van de componenten te verbeteren die zij bouwen.
+- [&#x200B; de gids van de Veiligheid en van de Naleving &#x200B;](https://experienceleague.adobe.com/nl/docs/commerce-operations/security-and-compliance/overview) voor informatie over veiligheid, privacy, en regelgevende naleving, met verbindingen aan technische middelen.
 
 Verscheidene op veiligheid betrekking hebbende onderwerpen die in de gids van de Configuratie in één keer inbegrepen waren, worden nu gevestigd in de volgende gidsen:
 
-- [ Google reCAPTCHA ](https://experienceleague.adobe.com/nl/docs/commerce-admin/systems/security/captcha/security-google-recaptcha) in de _gids van de Uitbreiding_.
-- [ two-Factor Authentificatie ](https://developer.adobe.com/commerce/testing/functional-testing-framework/two-factor-authentication/) in de _gids van de Uitbreiding_.
-- [ Algemene naleving van de Verordening van de Bescherming van Gegevens (GDPR) ](https://experienceleague.adobe.com/nl/docs/commerce-operations/security-and-compliance/privacy/gdpr) in de _gids van de Veiligheid en van de Naleving_.
+- [&#x200B; Google reCAPTCHA &#x200B;](https://experienceleague.adobe.com/nl/docs/commerce-admin/systems/security/captcha/security-google-recaptcha) in de _gids van de Uitbreiding_.
+- [&#x200B; two-Factor Authentificatie &#x200B;](https://developer.adobe.com/commerce/testing/functional-testing-framework/two-factor-authentication/) in de _gids van de Uitbreiding_.
+- [&#x200B; Algemene naleving van de Verordening van de Bescherming van Gegevens (GDPR) &#x200B;](https://experienceleague.adobe.com/nl/docs/commerce-operations/security-and-compliance/privacy/gdpr) in de _gids van de Veiligheid en van de Naleving_.

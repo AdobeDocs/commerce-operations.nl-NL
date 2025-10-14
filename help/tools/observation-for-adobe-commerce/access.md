@@ -14,8 +14,8 @@ ht-degree: 0%
 
 Als u de [!DNL New Relic Observation for Adobe Commerce] -nerdlet wilt gebruiken, moet u ervoor zorgen dat u toegang hebt tot [!DNL New Relic] .
 
-[ New Relic rekeningsbeheer ](https://experienceleague.adobe.com/nl/docs/commerce-on-cloud/user-guide/monitor/new-relic/account-management)
+[&#x200B; New Relic rekeningsbeheer &#x200B;](https://experienceleague.adobe.com/nl/docs/commerce-on-cloud/user-guide/monitor/new-relic/account-management)
 
 Selecteer vervolgens op de startpagina van [!DNL New Relic] de menuoptie Apps.
 
-![ New Relic homepage ](../../assets/tools/observation-for-adobe-commerce/new-relic-homepage.jpeg)
+![&#x200B; New Relic homepage &#x200B;](../../assets/tools/observation-for-adobe-commerce/new-relic-homepage.jpeg)

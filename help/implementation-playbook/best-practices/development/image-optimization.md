@@ -17,7 +17,7 @@ Voor Adobe Commerce op implementaties van cloudinfrastructuren kunt u de respons
 
 ## Betrokken producten en versies
 
-[ Alle gesteunde versies ](../../../release/versions.md) van:
+[&#x200B; Alle gesteunde versies &#x200B;](../../../release/versions.md) van:
 
 Adobe Commerce over cloudinfrastructuur
 
@@ -32,9 +32,9 @@ Voordat u afbeeldingen uploadt naar uw Commerce-sites, optimaliseert en comprime
 
 ## Snelle optimalisatie van afbeeldingen inschakelen en configureren
 
-Nadat u opstelling de Snelle dienst voor uw project van de Wolk van de Handel van Adobe, [ Snelle beeldoptimalisering ](https://experienceleague.adobe.com/nl/docs/commerce-cloud-service/user-guide/cdn/fastly-image-optimization) voor instructies ziet om beeldoptimalisering toe te laten en te vormen.
+Nadat u opstelling de Snelle dienst voor uw project van de Wolk van de Handel van Adobe, [&#x200B; Snelle beeldoptimalisering &#x200B;](https://experienceleague.adobe.com/nl/docs/commerce-cloud-service/user-guide/cdn/fastly-image-optimization) voor instructies ziet om beeldoptimalisering toe te laten en te vormen.
 
 ## Aanvullende informatie
 
-- [ Opstelling snel ](https://experienceleague.adobe.com/nl/docs/commerce-cloud-service/user-guide/cdn/setup-fastly/fastly-configuration)
-- [ slecht geoptimaliseerde beelden kunnen tot prestatieskwesties leiden ](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/file-storage-low-specific-page-loads-are-slow.html?lang=nl-NL)
+- [&#x200B; Opstelling snel &#x200B;](https://experienceleague.adobe.com/nl/docs/commerce-cloud-service/user-guide/cdn/setup-fastly/fastly-configuration)
+- [&#x200B; slecht geoptimaliseerde beelden kunnen tot prestatieskwesties leiden &#x200B;](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/file-storage-low-specific-page-loads-are-slow.html?lang=nl-NL)

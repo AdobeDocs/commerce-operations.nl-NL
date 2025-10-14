@@ -13,11 +13,11 @@ ht-degree: 0%
 
 # Beste praktijken voor rapportconfiguratie
 
-Als uw zaken niet rapporterend of dynamische functionaliteit van de klantensegmenten vereisen, maak de [ functionaliteit van Rapporten ](https://experienceleague.adobe.com/nl/docs/commerce-admin/config/general/reports) onbruikbaar om opslagprestaties te verbeteren.
+Als uw zaken niet rapporterend of dynamische functionaliteit van de klantensegmenten vereisen, maak de [&#x200B; functionaliteit van Rapporten &#x200B;](https://experienceleague.adobe.com/nl/docs/commerce-admin/config/general/reports) onbruikbaar om opslagprestaties te verbeteren.
 
 ## Betrokken producten en versies
 
-[ Alle gesteunde versies ](../../../release/versions.md) van:
+[&#x200B; Alle gesteunde versies &#x200B;](../../../release/versions.md) van:
 
 - Adobe Commerce over cloudinfrastructuur
 - Adobe Commerce ter plaatse
@@ -32,5 +32,5 @@ Als u niet de Rapporten of dynamische klantensegmenten gebruikt, maak de functio
 
 ## Aanvullende informatie
 
-- [ produceer rapporten in Adobe Commerce ](https://experienceleague.adobe.com/nl/docs/commerce-admin/start/reporting/reports-menu)
-- [ dynamische segmenten van de Klant ](https://experienceleague.adobe.com/nl/docs/commerce-admin/customers/segments/customer-segments)
+- [&#x200B; produceer rapporten in Adobe Commerce &#x200B;](https://experienceleague.adobe.com/nl/docs/commerce-admin/start/reporting/reports-menu)
+- [&#x200B; dynamische segmenten van de Klant &#x200B;](https://experienceleague.adobe.com/nl/docs/commerce-admin/customers/segments/customer-segments)

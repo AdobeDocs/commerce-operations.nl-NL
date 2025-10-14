@@ -20,7 +20,7 @@ U kunt patches op een van de volgende manieren toepassen:
 
 >[!TIP]
 >
->Zie [ beste praktijken ](../../implementation-playbook/best-practices/maintenance/patching-at-scale.md) voor informatie over gecentraliseerde het opsluiten voor Adobe Commerce bij ondernemingsschaal.
+>Zie [&#x200B; beste praktijken &#x200B;](../../implementation-playbook/best-practices/maintenance/patching-at-scale.md) voor informatie over gecentraliseerde het opsluiten voor Adobe Commerce bij ondernemingsschaal.
 
 ## Composer
 
@@ -72,7 +72,7 @@ Een aangepaste patch toepassen met Composer:
 Patches toepassen vanaf de opdrachtregel:
 
 1. Upload het lokale bestand naar de map `<Magento_root>` op de server met behulp van FTP, SFTP, SSH of uw normale transportmethode.
-1. Logboek in de server als [ admin gebruiker ](../../configuration/cli/config-cli.md#prerequisites) en verifieert dat het dossier in de correcte folder is.
+1. Logboek in de server als [&#x200B; admin gebruiker &#x200B;](../../configuration/cli/config-cli.md#prerequisites) en verifieert dat het dossier in de correcte folder is.
 1. Voer in de opdrachtregelinterface de volgende opdrachten uit volgens de patchextensie:
 
    ```bash

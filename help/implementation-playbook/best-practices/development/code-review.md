@@ -38,7 +38,7 @@ Houd ook rekening met de volgende punten wanneer u codecontroleprocessen impleme
 
 ## Betrokken producten en versies
 
-[ Alle gesteunde versies ](../../../release/versions.md) van:
+[&#x200B; Alle gesteunde versies &#x200B;](../../../release/versions.md) van:
 
 - Adobe Commerce over cloudinfrastructuur
 - Adobe Commerce ter plaatse
@@ -49,7 +49,7 @@ Houd ook rekening met de volgende punten wanneer u codecontroleprocessen impleme
 
 Stijl kan automatisch worden getest door de PHPStorm-inspectie uit te voeren (zie hieronder).
 
-Zorg ervoor om [ PHPMD en PHPCS ](https://developer.adobe.com/commerce/php/best-practices/phpstorm/code-inspection/) te vormen en het [ Norm van de Codering ](https://github.com/magento/magento-coding-standard) hulpmiddel van CLI (ook hieronder) in werking te stellen. Er is wat overlapping, maar beide hebben ook unieke tests.
+Zorg ervoor om [&#x200B; PHPMD en PHPCS &#x200B;](https://developer.adobe.com/commerce/php/best-practices/phpstorm/code-inspection/) te vormen en het [&#x200B; Norm van de Codering &#x200B;](https://github.com/magento/magento-coding-standard) hulpmiddel van CLI (ook hieronder) in werking te stellen. Er is wat overlapping, maar beide hebben ook unieke tests.
 
 ### Conventie en structuur
 
@@ -95,7 +95,7 @@ Beveiligingsbeoordelingen worden handmatig uitgevoerd, wat kan worden ondersteun
 
 ### Privacy en GDPR
 
-De recensies voor privacy en [ GDPR ](../../../security-and-compliance/privacy/gdpr.md) worden gedaan manueel.
+De recensies voor privacy en [&#x200B; GDPR &#x200B;](../../../security-and-compliance/privacy/gdpr.md) worden gedaan manueel.
 
 - Verwerkt de code klantgegevens of e-mails? Let vooral op.
 - Als deze code in een lijn kan worden uitgevoerd, kan het klantengegevens van één luscyclus aan een andere lekken?

@@ -21,7 +21,7 @@ Deze sectie bevat de beste aanbevelingen om uw migratie te versnellen en te vere
 
 Dergelijke gegevens kunnen logboeken, orderaanhalingstekens, onlangs bekeken of vergeleken producten, bezoekers, gebeurtenisspecifieke categorieën, en promotieregels omvatten.
 
-* **volg de [ algemene regels voor succesvolle migratie](migrate-data/overview.md#migration-overview)**.
+* **volg de [&#x200B; algemene regels voor succesvolle migratie](migrate-data/overview.md#migration-overview)**.
 
 * Om prestaties op te voeren, **laat `direct_document_copy` optie** in uw `config.xml` dossier toe:
 

@@ -22,12 +22,12 @@ Voor Adobe Commerce op cloud Infrastructure Pro-planarchitectuur 2.3.x wordt aan
 
 ## Geheugen configureren
 
-Wijs minstens **2GB** van geheugen voor de [ PHP module OPCache ](https://www.php.net/manual/en/book.opcache.php) toe. De OPcache-module is geconfigureerd in het `php.ini` -bestand. Stel `opcache.memory_consumption = 2048` in om 2048 MB geheugen toe te wijzen.
+Wijs minstens **2GB** van geheugen voor de [&#x200B; PHP module OPCache &#x200B;](https://www.php.net/manual/en/book.opcache.php) toe. De OPcache-module is geconfigureerd in het `php.ini` -bestand. Stel `opcache.memory_consumption = 2048` in om 2048 MB geheugen toe te wijzen.
 
 ## Aanvullende informatie
 
-* [ Beste praktijken van Prestaties - PHP Montages ](../../../performance/software.md#php-settings)
-* [ vorm PHP opties ](https://experienceleague.adobe.com/nl/docs/commerce-cloud-service/user-guide/configure/app/configure-app-yaml)
+* [&#x200B; Beste praktijken van Prestaties - PHP Montages &#x200B;](../../../performance/software.md#php-settings)
+* [&#x200B; vorm PHP opties &#x200B;](https://experienceleague.adobe.com/nl/docs/commerce-cloud-service/user-guide/configure/app/configure-app-yaml)
 * [Best practices voor databases voor Adobe Commerce op cloudinfrastructuur](database-on-cloud.md)
 * [Meest voorkomende databaseproblemen in Adobe Commerce met cloudinfrastructuur](../maintenance/resolve-database-performance-issues.md)
 * [Indexers &quot;Update On Schedule&quot; optimaliseert de Adobe Commerce-prestaties](../maintenance/indexer-configuration.md)

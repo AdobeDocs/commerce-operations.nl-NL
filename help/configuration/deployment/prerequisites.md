@@ -22,8 +22,8 @@ Bestandsmachtigingen en eigendom moeten consistent zijn in alle ontwikkelings-, 
 
 - Wijzig desgewenst de machtigingen voor en het eigendom van Commerce-bestandssystemen op elk systeem aan de hand van de volgende richtlijnen:
 
-   - Ontwikkeling en bouwt: [ plaats pre-installatiereigenschap en toestemmingen (twee gebruikers) ](file-system-permissions.md#set-up-two-owners-for-default-or-developer-mode)
-   - Productie: [ Commerce eigendom en toestemmingen in ontwikkeling en productie ](file-system-permissions.md)
+   - Ontwikkeling en bouwt: [&#x200B; plaats pre-installatiereigenschap en toestemmingen (twee gebruikers) &#x200B;](file-system-permissions.md#set-up-two-owners-for-default-or-developer-mode)
+   - Productie: [&#x200B; Commerce eigendom en toestemmingen in ontwikkeling en productie &#x200B;](file-system-permissions.md)
 
 >[!INFO]
 >

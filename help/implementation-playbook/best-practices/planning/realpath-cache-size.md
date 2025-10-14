@@ -20,7 +20,7 @@ Als u de Commerce-prestaties wilt verbeteren, kunt u de volgende aanbevolen inst
 - Cachegrootte aan 10 MB (`realpath cache_size=10M`) plaatsen
 - Tijd instellen op live (ttl) tot 7200 seconden (`realpath_cache_ttl=7200`)
 
-Voor configuratieinstructies, zie [ hoe te om PHP opties ](../../../installation/prerequisites/php-settings.md#how-to-set-php-options) te plaatsen.
+Voor configuratieinstructies, zie [&#x200B; hoe te om PHP opties &#x200B;](../../../installation/prerequisites/php-settings.md#how-to-set-php-options) te plaatsen.
 
 ## Betrokken producten en versies
 

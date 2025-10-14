@@ -25,12 +25,12 @@ U kunt één bouwstijlsysteem hebben dat aan de volgende vereisten voldoet:
 
 - Hiervoor moet een compatibele PHP-versie zijn geïnstalleerd
 - Composer moet zijn geïnstalleerd
-- Het heeft bezit van het dossiersysteem en toestemmingen die zoals in [ worden besproken Vereiste voor uw ontwikkeling, bouwt, en productiesystemen ](../deployment/technical-details.md).
+- Het heeft bezit van het dossiersysteem en toestemmingen die zoals in [&#x200B; worden besproken Vereiste voor uw ontwikkeling, bouwt, en productiesystemen &#x200B;](../deployment/technical-details.md).
 - Voor het constructiesysteem hoeft Commerce niet te worden geïnstalleerd, maar de code moet wel beschikbaar zijn.
 
 >[!WARNING]
 >
->De gegevensbestandverbinding wordt niet vereist als het reeds in `config.php` bevat is; zie [ de configuratie ](../cli/export-configuration.md) uitvoeren. Anders is de databaseverbinding vereist.
+>De gegevensbestandverbinding wordt niet vereist als het reeds in `config.php` bevat is; zie [&#x200B; de configuratie &#x200B;](../cli/export-configuration.md) uitvoeren. Anders is de databaseverbinding vereist.
 
 >[!INFO]
 >
@@ -124,9 +124,9 @@ Het constructiesysteem instellen:
    git add .gitignore && git commit -m "Modify .gitignore for build and production"
    ```
 
-   Zie [`.gitignore` verwijzing ](../reference/config-reference-gitignore.md) voor meer informatie.
+   Zie [`.gitignore` verwijzing &#x200B;](../reference/config-reference-gitignore.md) voor meer informatie.
 
-1. Het bouwstijlsysteem zou [ standaardwijze ](../bootstrap/application-modes.md#default-mode) of [ ontwikkelaarwijze ](../bootstrap/application-modes.md#developer-mode) moeten gebruiken:
+1. Het bouwstijlsysteem zou [&#x200B; standaardwijze &#x200B;](../bootstrap/application-modes.md#default-mode) of [&#x200B; ontwikkelaarwijze &#x200B;](../bootstrap/application-modes.md#developer-mode) moeten gebruiken:
 
    ```bash
    bin/magento deploy:mode:set <mode>

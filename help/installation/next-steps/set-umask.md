@@ -12,7 +12,7 @@ ht-degree: 0%
 
 # Een masker instellen (optioneel)
 
-De webservergroep moet schrijfmachtigingen hebben voor bepaalde mappen in het bestandssysteem. Het is echter verstandig de beveiliging te verbeteren, met name in de productie. Wij verstrekken de flexibiliteit voor u om die toestemmingen verder te beperken gebruikend a [ masker ](https://www.cyberciti.biz/tips/understanding-linux-unix-umask-value-usage.html).
+De webservergroep moet schrijfmachtigingen hebben voor bepaalde mappen in het bestandssysteem. Het is echter verstandig de beveiliging te verbeteren, met name in de productie. Wij verstrekken de flexibiliteit voor u om die toestemmingen verder te beperken gebruikend a [&#x200B; masker &#x200B;](https://www.cyberciti.biz/tips/understanding-linux-unix-umask-value-usage.html).
 
 Het is onze oplossing om u desgewenst in staat te stellen een bestand met de naam `magento_umask` in de hoofdmap van de toepassing te maken dat machtigingen beperkt voor de webservergroep en voor alle anderen.
 
@@ -33,7 +33,7 @@ Een algemene suggestie is om de waarde `022` in het `magento_umask` -bestand te 
 
 Ga als volgt te werk om `magento_umask` in te stellen:
 
-1. In een bevel-lijn terminal, login aan uw toepassingsserver als eigenaar van het a [ dossiersysteem ](../prerequisites/file-system/overview.md).
+1. In een bevel-lijn terminal, login aan uw toepassingsserver als eigenaar van het a [&#x200B; dossiersysteem &#x200B;](../prerequisites/file-system/overview.md).
 1. Navigeer naar de installatiemap van de toepassing:
 
    ```bash
@@ -48,4 +48,4 @@ Ga als volgt te werk om `magento_umask` in te stellen:
 
    U moet nu een bestand met de naam `magento_umask` in de `<Magento install dir>` hebben, waarbij de enige inhoud het `umask` -nummer is.
 
-1. Logout en logboek terug binnen als [ eigenaar van het dossiersysteem ](../prerequisites/file-system/overview.md) om de veranderingen toe te passen.
+1. Logout en logboek terug binnen als [&#x200B; eigenaar van het dossiersysteem &#x200B;](../prerequisites/file-system/overview.md) om de veranderingen toe te passen.

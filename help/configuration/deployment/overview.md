@@ -14,7 +14,7 @@ ht-degree: 0%
 
 Deze onderwerpen bespreken het proces om de toepassing van Commerce aan een productiesite voor Adobe Commerce versie 2.2 en later op te stellen. Adobe raadt deze implementatiemethode aan voor iedereen met een grote site die tijdens de implementatie geen downtime wil ervaren.
 
-Als u Commerce op één enkele machine opstelt en wat onderbreking tijdens plaatsing kan tolereren, zie [ enig-machine plaatsing ](../deployment/single-machine.md).
+Als u Commerce op één enkele machine opstelt en wat onderbreking tijdens plaatsing kan tolereren, zie [&#x200B; enig-machine plaatsing &#x200B;](../deployment/single-machine.md).
 
 ## Implementatie van pijpleidingen
 
@@ -44,19 +44,19 @@ Wij gebruiken de volgende termijnen om de systemen te beschrijven betrokken bij 
 
 - **het Opvoeren systeem** - _Facultatief_. U kunt desgewenst een testsysteem instellen dat wordt gebruikt voor het testen van alle geïntegreerde code, inclusief het testen van gebruikersacceptatie (UAT). Stel een testsysteem in op dezelfde manier als u een productiesysteem instelt. Behalve het feit dat het opvoeren niet uw levende opslag is en geen orden van klanten verwerkt, is het identiek aan productie.
 
-- **systeem van de Productie** - Uw levende opslag. U zou minimale directe configuratieveranderingen hier moeten aanbrengen, en zeker niets dat niet op een het Plaatsen instantie is getest. Indien mogelijk, breng configuratieveranderingen met [ Patches van Gegevens ](https://developer.adobe.com/commerce/php/development/components/declarative-schema/patches/) aan die op een het Opvoeren/van de Ontwikkeling instantie zijn getest.
+- **systeem van de Productie** - Uw levende opslag. U zou minimale directe configuratieveranderingen hier moeten aanbrengen, en zeker niets dat niet op een het Plaatsen instantie is getest. Indien mogelijk, breng configuratieveranderingen met [&#x200B; Patches van Gegevens &#x200B;](https://developer.adobe.com/commerce/php/development/components/declarative-schema/patches/) aan die op een het Opvoeren/van de Ontwikkeling instantie zijn getest.
 
 ## Andere implementatiemethoden
 
 Naar keuze, kunt u andere plaatsingsmethodes gebruiken, die omvatten:
 
 - Veilig kopiëren met SCP of synchroniseren
-- [ Capistrano ](https://capistranorb.com/documentation/overview/what-is-capistrano)
-- Het [ hulpmiddel van de Laag ](https://deployer.org/)
+- [&#x200B; Capistrano &#x200B;](https://capistranorb.com/documentation/overview/what-is-capistrano)
+- Het [&#x200B; hulpmiddel van de Laag &#x200B;](https://deployer.org/)
 
 ## De configuratie beheren
 
-Het modelleren na [ factor 3 in het 12-factor toepassingsontwerp ](https://12factor.net/config), Commerce slaat nu de configuratie voor elk systeem in het systeem zelf op. (De de configuratiemontages van de ontwikkeling worden opgeslagen op het ontwikkelingssysteem, worden de productiemontages opgeslagen op het productiesysteem.)
+Het modelleren na [&#x200B; factor 3 in het 12-factor toepassingsontwerp &#x200B;](https://12factor.net/config), Commerce slaat nu de configuratie voor elk systeem in het systeem zelf op. (De de configuratiemontages van de ontwikkeling worden opgeslagen op het ontwikkelingssysteem, worden de productiemontages opgeslagen op het productiesysteem.)
 
 Wij bieden een manier om de configuratie van uw systemen te synchroniseren:
 
@@ -70,12 +70,12 @@ Wij bieden een manier om de configuratie van uw systemen te synchroniseren:
 
 - **Gevoelige configuratie** - Montages die _niet_ in broncontrole zou moeten zijn omdat zij persoonlijk identificeerbare informatie (PII) of montages zoals API sleutels of wachtwoorden blootstellen.
 
-  Het systeem-specifieke configuratiedossier, `app/etc/env.php`, zou _niet_ in broncontrole moeten worden omvat of anders tussen systemen worden gedeeld. In plaats daarvan, gebruik [`magento config:set` en `magento:sensitive:set` bevelen ](../cli/set-configuration-values.md) om waarden voor die montages in uw productiesysteem te verstrekken.
+  Het systeem-specifieke configuratiedossier, `app/etc/env.php`, zou _niet_ in broncontrole moeten worden omvat of anders tussen systemen worden gedeeld. In plaats daarvan, gebruik [`magento config:set` en `magento:sensitive:set` bevelen &#x200B;](../cli/set-configuration-values.md) om waarden voor die montages in uw productiesysteem te verstrekken.
 
 >[!INFO]
 >
 >Deze nieuwe methoden voor het beheer van uw configuratie zijn optioneel. U hoeft dit niet te doen, maar het wordt sterk aanbevolen om ze te gebruiken.
 
-Meestal kunnen de configuratieopties die u instelt in de gedeelde, systeemspecifieke of gevoelige configuratie niet worden bewerkt in de beheerfunctie. Hierdoor blijven uw instellingen op alle systemen consistent. (U kunt optioneel de opdracht [`magento config:set` ](../cli/set-configuration-values.md) zonder de optie `--lock` gebruiken om instellingen te configureren die kunnen worden bewerkt in Beheer.)
+Meestal kunnen de configuratieopties die u instelt in de gedeelde, systeemspecifieke of gevoelige configuratie niet worden bewerkt in de beheerfunctie. Hierdoor blijven uw instellingen op alle systemen consistent. (U kunt optioneel de opdracht [`magento config:set` &#x200B;](../cli/set-configuration-values.md) zonder de optie `--lock` gebruiken om instellingen te configureren die kunnen worden bewerkt in Beheer.)
 
 Elke de configuratieoptie van Commerce heeft een uniek _configuratiepad_. Om een waarde voor een configuratieoptie te plaatsen, kunt u of een bevel CLI of een omgevingsvariabele gebruiken om de waarde voor die configuratiepad op een specifiek systeem te plaatsen.

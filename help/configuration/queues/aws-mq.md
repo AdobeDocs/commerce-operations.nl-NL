@@ -13,7 +13,7 @@ ht-degree: 0%
 
 Vanaf Commerce 2.4.3 is de Rij van het Bericht van Amazon (MQ) beschikbaar als wolkklaar vervanging voor op-gebouw instanties van de berichtrij.
 
-Om een berichtrij op AWS tot stand te brengen, zie [ Vestiging Amazon MQ ](https://docs.aws.amazon.com/amazon-mq/latest/developer-guide/amazon-mq-setting-up.html) in de _documentatie van AWS_.
+Om een berichtrij op AWS tot stand te brengen, zie [&#x200B; Vestiging Amazon MQ &#x200B;](https://docs.aws.amazon.com/amazon-mq/latest/developer-guide/amazon-mq-setting-up.html) in de _documentatie van AWS_.
 
 ## Commerce voor AWS MQ configureren
 

@@ -26,14 +26,14 @@ De volgende secties bevatten informatie over best practices voor de opstartfase.
 
 | Beste praktijken | Beschrijving |
 |------------------------------------------------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| [ Dienst van het Bericht van de Veiligheid van Adobe ](https://www.adobe.com/subscription/adbeSecurityNotifications.html) | Abonneren op Adobe-beveiligingsberichten. |
-| [ Beveilig uw plaats en infrastructuur van Commerce ](security-best-practices.md) | Harden de veiligheidshouding van de installaties van Commerce om de Commerce opslag, beheerder, infrastructuur, en gegevens tegen onbevoegde toegang en cyberaanvallen te beschermen. |
-| [ Google reCAPTCHA ](https://experienceleague.adobe.com/docs/commerce-admin/systems/security/captcha/security-google-recaptcha.html?lang=nl-NL) | Configureer Google reCAPTCHA voor beheerdersrechten en verschillende storefront-acties die door geregistreerde klanten worden geïnitieerd. |
-| [ vorm Webkruiplers ](robots-txt.md) | Geef instructies over je Adobe Commerce-site door aan webcrawlers. |
-| [ verifieer veiligheidsconfiguratie ](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/launch/checklist.html?lang=nl-NL) | Controleer de controlelijsten voordat u een Adobe Commerce op de infrastructuursite van de cloud start. |
+| [&#x200B; Dienst van het Bericht van de Veiligheid van Adobe &#x200B;](https://www.adobe.com/subscription/adbeSecurityNotifications.html) | Abonneren op Adobe-beveiligingsberichten. |
+| [&#x200B; Beveilig uw plaats en infrastructuur van Commerce &#x200B;](security-best-practices.md) | Harden de veiligheidshouding van de installaties van Commerce om de Commerce opslag, beheerder, infrastructuur, en gegevens tegen onbevoegde toegang en cyberaanvallen te beschermen. |
+| [&#x200B; Google reCAPTCHA &#x200B;](https://experienceleague.adobe.com/docs/commerce-admin/systems/security/captcha/security-google-recaptcha.html?lang=nl-NL) | Configureer Google reCAPTCHA voor beheerdersrechten en verschillende storefront-acties die door geregistreerde klanten worden geïnitieerd. |
+| [&#x200B; vorm Webkruiplers &#x200B;](robots-txt.md) | Geef instructies over je Adobe Commerce-site door aan webcrawlers. |
+| [&#x200B; verifieer veiligheidsconfiguratie &#x200B;](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/launch/checklist.html?lang=nl-NL) | Controleer de controlelijsten voordat u een Adobe Commerce op de infrastructuursite van de cloud start. |
 
 ## Prestatiebewaking
 
 | Beste praktijken | Beschrijving |
 |------------------------------------------------------------------------------------------------------------------------------------------------|----------------------------------------------------------------------|
-| [ gebruik  [!DNL Site-Wide Analysis Tool]](../../../tools/site-wide-analysis-tool/intro.md#integrations-with-other-adobe-commerce-support-tools) | Bekijk op één plaats belangrijke inzichten over je Adobe Commerce-site. |
+| [&#x200B; gebruik  [!DNL Site-Wide Analysis Tool]](../../../tools/site-wide-analysis-tool/intro.md#integrations-with-other-adobe-commerce-support-tools) | Bekijk op één plaats belangrijke inzichten over je Adobe Commerce-site. |

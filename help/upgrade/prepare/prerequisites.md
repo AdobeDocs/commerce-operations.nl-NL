@@ -11,7 +11,7 @@ ht-degree: 0%
 
 # Volledige upgradevoorwaarden
 
-Het is belangrijk te begrijpen wat nodig is om Adobe Commerce te runnen. U moet eerst de [ systeemvereisten ](../../installation/system-requirements.md) voor de versie herzien u van plan bent te bevorderen aan.
+Het is belangrijk te begrijpen wat nodig is om Adobe Commerce te runnen. U moet eerst de [&#x200B; systeemvereisten &#x200B;](../../installation/system-requirements.md) voor de versie herzien u van plan bent te bevorderen aan.
 
 Nadat u de systeemvereisten hebt gecontroleerd, moet u aan de volgende voorwaarden voldoen voordat u de upgrade van uw systeem uitvoert:
 
@@ -27,13 +27,13 @@ Nadat u de systeemvereisten hebt gecontroleerd, moet u aan de volgende voorwaard
 
 ## Alle software bijwerken
 
-De [ systeemvereisten ](../../installation/system-requirements.md) beschrijven precies welke versies van derdesoftware met de versies van Adobe Commerce zijn getest.
+De [&#x200B; systeemvereisten &#x200B;](../../installation/system-requirements.md) beschrijven precies welke versies van derdesoftware met de versies van Adobe Commerce zijn getest.
 
-Zorg ervoor dat u alle systeemvereisten en afhankelijkheden in uw omgeving hebt bijgewerkt. Zie PHP [ 7.4 ](https://www.php.net/manual/en/migration74.php), PHP [ 8.0 ](https://www.php.net/manual/en/migration80.php), PHP [ 8.1 ](https://www.php.net/manual/en/migration81.php), en [ vereiste PHP montages ](../../installation/prerequisites/php-settings.md#php-settings).
+Zorg ervoor dat u alle systeemvereisten en afhankelijkheden in uw omgeving hebt bijgewerkt. Zie PHP [&#x200B; 7.4 &#x200B;](https://www.php.net/manual/en/migration74.php), PHP [&#x200B; 8.0 &#x200B;](https://www.php.net/manual/en/migration80.php), PHP [&#x200B; 8.1 &#x200B;](https://www.php.net/manual/en/migration81.php), en [&#x200B; vereiste PHP montages &#x200B;](../../installation/prerequisites/php-settings.md#php-settings).
 
 >[!NOTE]
 >
->Voor Adobe Commerce op de Pro projecten van de wolkeninfrastructuur, moet u a [ kaartje van de Steun {creëren 0} om de diensten in het Opvoeren en van de Productie milieu&#39;s te installeren of bij te werken. ](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html?lang=nl-NL#submit-ticket) Geef aan welke servicewijzigingen nodig zijn en neem de bijgewerkte `.magento.app.yaml` - en `services.yaml` -bestanden en PHP-versie op in het ticket. Het kan tot 48 uur duren voordat het infrastructuurteam van de cloud uw project kan bijwerken. Zie [ Ondersteunde software en de diensten ](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/architecture/cloud-architecture.html?lang=nl-NL#supported-software-and-services).
+>Voor Adobe Commerce op de Pro projecten van de wolkeninfrastructuur, moet u a [&#x200B; kaartje van de Steun {creëren 0} om de diensten in het Opvoeren en van de Productie milieu&#39;s te installeren of bij te werken. &#x200B;](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html?lang=nl-NL#submit-ticket) Geef aan welke servicewijzigingen nodig zijn en neem de bijgewerkte `.magento.app.yaml` - en `services.yaml` -bestanden en PHP-versie op in het ticket. Het kan tot 48 uur duren voordat het infrastructuurteam van de cloud uw project kan bijwerken. Zie [&#x200B; Ondersteunde software en de diensten &#x200B;](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/architecture/cloud-architecture.html?lang=nl-NL#supported-software-and-services).
 
 ## Controleren of een ondersteund zoekprogramma is geïnstalleerd
 
@@ -41,7 +41,7 @@ Adobe Commerce vereist dat Elasticsearch of OpenSearch is geïnstalleerd om de s
 
 **als u van 2.3.x aan 2.4** bevordert, moet u controleren of u MySQL, Elasticsearch, of een derdeuitbreiding als uw motor van de catalogusonderzoek in uw 2.3.x instantie gebruikt. Het resultaat bepaalt wat u _vóór_ bevordering aan 2.4 moet doen.
 
-**als u flardversies binnen de 2.3.x of 2.4.x versielijnen** bevordert, als Elasticsearch 7.x reeds geïnstalleerd is, kunt u naar keuze [ migreren aan OpenSearch ](opensearch-migration.md).
+**als u flardversies binnen de 2.3.x of 2.4.x versielijnen** bevordert, als Elasticsearch 7.x reeds geïnstalleerd is, kunt u naar keuze [&#x200B; migreren aan OpenSearch &#x200B;](opensearch-migration.md).
 
 U kunt de opdrachtregel of de beheerder gebruiken om de zoekengine voor de catalogus te bepalen:
 
@@ -56,9 +56,9 @@ In de volgende secties wordt beschreven welke handelingen u moet uitvoeren voord
 Vanaf 2.4, is MySQL niet meer een gesteunde motor van de catalogusonderzoek. U moet Elasticsearch of OpenSearch installeren en configureren voordat u een upgrade uitvoert. Gebruik de volgende bronnen om u door dit proces te begeleiden:
 
 * [Elasticsearch installeren en configureren](../../configuration/search/overview-search.md)
-* [ Installerend Elasticsearch ](https://www.elastic.co/guide/en/elasticsearch/reference/current/install-elasticsearch.html)
-* Vorm [ nginx ](../../installation/prerequisites/search-engine/configure-nginx.md) of [ Apache ](../../installation/prerequisites/search-engine/configure-apache.md) om met uw onderzoeksmotor te werken
-* [ vorm Commerce om Elasticsearch ](../../configuration/search/configure-search-engine.md) en herdex te gebruiken
+* [&#x200B; Installerend Elasticsearch &#x200B;](https://www.elastic.co/guide/en/elasticsearch/reference/current/install-elasticsearch.html)
+* Vorm [&#x200B; nginx &#x200B;](../../installation/prerequisites/search-engine/configure-nginx.md) of [&#x200B; Apache &#x200B;](../../installation/prerequisites/search-engine/configure-apache.md) om met uw onderzoeksmotor te werken
+* [&#x200B; vorm Commerce om Elasticsearch &#x200B;](../../configuration/search/configure-search-engine.md) en herdex te gebruiken
 
 Bepaalde zoekprogramma&#39;s voor catalogi van derden worden boven op de zoekfunctie van Adobe Commerce uitgevoerd. Neem contact op met de leverancier om te bepalen of u de extensie moet bijwerken.
 
@@ -69,7 +69,7 @@ Deze sectie beschrijft belangrijke veranderingen in MySQL 8.4 dat de ontwikkelaa
 
 #### Vervangen niet-standaardsleutel
 
-Het gebruik van niet-unieke of gedeeltelijke sleutels als buitenlandse sleutels is niet-standaard en is afgekeurd in MySQL 8.4. Vanaf MySQL 8.4.0 moet u deze toetsen expliciet inschakelen door [`restrict_fk_on_non_standard_key` ](https://dev.mysql.com/doc/refman/8.4/en/server-system-variables.html#sysvar_restrict_fk_on_non_standard_key) in te stellen op `OFF` of door de server te starten met de optie `--skip-restrict-fk-on-non-standard-key` .
+Het gebruik van niet-unieke of gedeeltelijke sleutels als buitenlandse sleutels is niet-standaard en is afgekeurd in MySQL 8.4. Vanaf MySQL 8.4.0 moet u deze toetsen expliciet inschakelen door [`restrict_fk_on_non_standard_key` &#x200B;](https://dev.mysql.com/doc/refman/8.4/en/server-system-variables.html#sysvar_restrict_fk_on_non_standard_key) in te stellen op `OFF` of door de server te starten met de optie `--skip-restrict-fk-on-non-standard-key` .
 
 #### Een upgrade uitvoeren van MySQL 8.0 (of oudere versies) naar MySQL 8.4
 
@@ -122,11 +122,11 @@ Als u MySQL van versie 8.0 naar versie 8.4 wilt bijwerken, moet u de volgende st
 
 ### Zoekmachine
 
-U moet Elasticsearch 7.6 of hoger of OpenSearch 1.2 installeren en configureren voordat u de upgrade naar 2.4.0 uitvoert. Adobe biedt niet langer ondersteuning voor Elasticsearch 2.x, 5.x en 6.x. [ de motorconfiguratie van het Onderzoek ](../../configuration/search/configure-search-engine.md) in de _Gids van de Configuratie_ beschrijft de taken u na de bevordering van Elasticsearch aan een gesteunde versie moet uitvoeren.
+U moet Elasticsearch 7.6 of hoger of OpenSearch 1.2 installeren en configureren voordat u de upgrade naar 2.4.0 uitvoert. Adobe biedt niet langer ondersteuning voor Elasticsearch 2.x, 5.x en 6.x. [&#x200B; de motorconfiguratie van het Onderzoek &#x200B;](../../configuration/search/configure-search-engine.md) in de _Gids van de Configuratie_ beschrijft de taken u na de bevordering van Elasticsearch aan een gesteunde versie moet uitvoeren.
 
-Verwijs naar [ Bevorderend Elasticsearch ](https://www.elastic.co/guide/en/elasticsearch/reference/current/setup-upgrade.html) voor volledige instructies bij het steunen van uw gegevens, het ontdekken van potentiële migratiekwesties, en het testen van verbeteringen alvorens aan productie op te stellen. Afhankelijk van uw huidige versie van Elasticsearch is het mogelijk dat een volledige cluster opnieuw moet worden opgestart.
+Verwijs naar [&#x200B; Bevorderend Elasticsearch &#x200B;](https://www.elastic.co/guide/en/elasticsearch/reference/current/setup-upgrade.html) voor volledige instructies bij het steunen van uw gegevens, het ontdekken van potentiële migratiekwesties, en het testen van verbeteringen alvorens aan productie op te stellen. Afhankelijk van uw huidige versie van Elasticsearch is het mogelijk dat een volledige cluster opnieuw moet worden opgestart.
 
-Elasticsearch vereist Java Development Kit (JDK) 1.8 of hoger. Zie [ de Uitrusting van de Ontwikkeling van de Software van Java installeren (JDK) ](../../installation/prerequisites/search-engine/overview.md#install-the-java-software-development-kit-jdk) om te controleren welke versie van JDK geïnstalleerd is.
+Elasticsearch vereist Java Development Kit (JDK) 1.8 of hoger. Zie [&#x200B; de Uitrusting van de Ontwikkeling van de Software van Java installeren (JDK) &#x200B;](../../installation/prerequisites/search-engine/overview.md#install-the-java-software-development-kit-jdk) om te controleren welke versie van JDK geïnstalleerd is.
 
 #### OpenSearch
 
@@ -138,11 +138,11 @@ OpenSearch is een open-source vork van Elasticsearch 7.10.2, na de licentiewijzi
 * 2.4.3-p2
 * 2.3.7-p3
 
-U kunt [ migreren van Elasticsearch aan OpenSearch ](opensearch-migration.md) slechts als u aan een versie van hierboven vermelde Adobe Commerce (of hoger) bevordert.
+U kunt [&#x200B; migreren van Elasticsearch aan OpenSearch &#x200B;](opensearch-migration.md) slechts als u aan een versie van hierboven vermelde Adobe Commerce (of hoger) bevordert.
 
-Voor OpenSearch is JDK 1.8 of hoger vereist. Zie [ de Uitrusting van de Ontwikkeling van de Software van Java installeren (JDK) ](../../installation/prerequisites/search-engine/overview.md#install-the-java-software-development-kit-jdk) om te controleren welke versie van JDK geïnstalleerd is.
+Voor OpenSearch is JDK 1.8 of hoger vereist. Zie [&#x200B; de Uitrusting van de Ontwikkeling van de Software van Java installeren (JDK) &#x200B;](../../installation/prerequisites/search-engine/overview.md#install-the-java-software-development-kit-jdk) om te controleren welke versie van JDK geïnstalleerd is.
 
-[ de motorconfiguratie van het Onderzoek ](../../configuration/search/configure-search-engine.md) beschrijft de taken u na het veranderen van onderzoeksmotoren moet uitvoeren.
+[&#x200B; de motorconfiguratie van het Onderzoek &#x200B;](../../configuration/search/configure-search-engine.md) beschrijft de taken u na het veranderen van onderzoeksmotoren moet uitvoeren.
 
 #### Upgrade uitvoeren voor Elasticsearch
 
@@ -152,7 +152,7 @@ Elasticsearch 8.x werd in Adobe Commerce 2.4.6 ondersteund. De volgende instruct
 >
 >In de aanstaande versie 2.4.8, zullen deze stappen niet noodzakelijk zijn omdat Elasticsearch 8 module door gebrek inbegrepen is en u zult niet het moeten afzonderlijk installeren.
 
-1. Voer een upgrade uit van de Elasticsearch 7.x-server naar 8.x en zorg ervoor dat deze actief is. Zie de [ documentatie van Elasticsearch ](https://www.elastic.co/guide/en/elasticsearch/reference/current/install-elasticsearch.html).
+1. Voer een upgrade uit van de Elasticsearch 7.x-server naar 8.x en zorg ervoor dat deze actief is. Zie de [&#x200B; documentatie van Elasticsearch &#x200B;](https://www.elastic.co/guide/en/elasticsearch/reference/current/install-elasticsearch.html).
 
 1. Schakel het veld `id_field_data` in door de volgende configuratie aan uw `elasticsearch.yml` -bestand toe te voegen en de Elasticsearch 8.x-service opnieuw te starten.
 
@@ -200,7 +200,7 @@ Elasticsearch 8.x werd in Adobe Commerce 2.4.6 ondersteund. De volgende instruct
    bin/magento setup:upgrade
    ```
 
-1. [ vorm Elasticsearch ](../../configuration/search/configure-search-engine.md#configure-your-search-engine-from-the-admin) in [!DNL Admin].
+1. [&#x200B; vorm Elasticsearch &#x200B;](../../configuration/search/configure-search-engine.md#configure-your-search-engine-from-the-admin) in [!DNL Admin].
 
 1. Indexeer de catalogusindex opnieuw.
 
@@ -218,7 +218,7 @@ Elasticsearch 8.x werd in Adobe Commerce 2.4.6 ondersteund. De volgende instruct
 
 Als u onbedoeld de versie van Elasticsearch op uw server verbetert of om een andere reden bepaalt dat u moet degraderen, moet u ook uw Adobe Commerce-projectgebiedsdelen bijwerken. Bijvoorbeeld om van Elasticsearch 8.x naar 7.x te verlagen
 
-1. Verlaag de Elasticsearch 8.x-server naar 7.x en zorg ervoor dat deze actief is. Zie de [ documentatie van Elasticsearch ](https://www.elastic.co/guide/en/elasticsearch/reference/current/install-elasticsearch.html).
+1. Verlaag de Elasticsearch 8.x-server naar 7.x en zorg ervoor dat deze actief is. Zie de [&#x200B; documentatie van Elasticsearch &#x200B;](https://www.elastic.co/guide/en/elasticsearch/reference/current/install-elasticsearch.html).
 
 1. Werk in de hoofdmap van uw Adobe Commerce-project uw Composer-afhankelijkheden bij om de module `Magento_Elasticsearch8` en de bijbehorende Composer-afhankelijkheden te verwijderen en installeer de module `Magento_Elasticsearch7` .
 
@@ -232,7 +232,7 @@ Als u onbedoeld de versie van Elasticsearch op uw server verbetert of om een and
    bin/magento setup:upgrade
    ```
 
-1. [ vorm Elasticsearch ](../../configuration/search/configure-search-engine.md#configure-your-search-engine-from-the-admin) in [!DNL Admin].
+1. [&#x200B; vorm Elasticsearch &#x200B;](../../configuration/search/configure-search-engine.md#configure-your-search-engine-from-the-admin) in [!DNL Admin].
 
 1. Indexeer de catalogusindex opnieuw.
 
@@ -252,17 +252,17 @@ We raden u aan contact op te nemen met uw leverancier van zoekprogramma&#39;s om
 
 ## Database-tabelindeling converteren
 
-U moet de indeling van alle databasetabellen omzetten van `COMPACT` in `DYNAMIC` . U moet ook het type opslagengine omzetten van `MyISAM` in `InnoDB` . Zie [ beste praktijken ](../../implementation-playbook/best-practices/maintenance/mariadb-upgrade.md).
+U moet de indeling van alle databasetabellen omzetten van `COMPACT` in `DYNAMIC` . U moet ook het type opslagengine omzetten van `MyISAM` in `InnoDB` . Zie [&#x200B; beste praktijken &#x200B;](../../implementation-playbook/best-practices/maintenance/mariadb-upgrade.md).
 
 ## Limiet voor geopende bestanden instellen
 
 Door de limiet voor geopende bestanden in te stellen (ulimit), kan worden voorkomen dat meerdere recursieve aanroepen van lange querytekenreeksen mislukken of dat er problemen optreden met de opdracht `bin/magento setup:rollback` . Deze opdracht is anders voor verschillende UNIX-schelpen. Raadpleeg uw eigen smaak voor details over het `ulimit` bevel.
 
-Adobe adviseert plaatsend de open dossiers [ grens ](https://ss64.com/bash/ulimit.html) aan een waarde van `65536` of meer, maar u kunt een grotere waarde indien nodig gebruiken. U kunt de limiet instellen op de opdrachtregel of u kunt deze instellen als een permanente instelling voor de shell van de gebruiker.
+Adobe adviseert plaatsend de open dossiers [&#x200B; grens &#x200B;](https://ss64.com/bash/ulimit.html) aan een waarde van `65536` of meer, maar u kunt een grotere waarde indien nodig gebruiken. U kunt de limiet instellen op de opdrachtregel of u kunt deze instellen als een permanente instelling voor de shell van de gebruiker.
 
 U stelt de limiet in vanaf de opdrachtregel:
 
-1. Schakelaar aan de [ eigenaar van het dossiersysteem ](../../installation/prerequisites/file-system/overview.md).
+1. Schakelaar aan de [&#x200B; eigenaar van het dossiersysteem &#x200B;](../../installation/prerequisites/file-system/overview.md).
 1. Stel de limiet in op `65536` .
 
    ```bash
@@ -271,7 +271,7 @@ U stelt de limiet in vanaf de opdrachtregel:
 
 De waarde in de Bash-shell instellen:
 
-1. Schakelaar aan de [ eigenaar van het dossiersysteem ](../../installation/prerequisites/file-system/overview.md).
+1. Schakelaar aan de [&#x200B; eigenaar van het dossiersysteem &#x200B;](../../installation/prerequisites/file-system/overview.md).
 1. Open `/home/<username>/.bashrc` in een teksteditor.
 1. Voeg de volgende regel toe:
 
@@ -309,13 +309,13 @@ Resultaten die vergelijkbaar zijn met het volgende, moeten worden weergegeven:
 
 Een ander symptoom van niet-actieve kroon is de volgende fout in de Admin:
 
-![ de berichten van het Systeem - krong loopt niet ](../../assets/upgrade-guide/cron-not-running.png)
+![&#x200B; de berichten van het Systeem - krong loopt niet &#x200B;](../../assets/upgrade-guide/cron-not-running.png)
 
 Om de fout te zien, klik **Berichten van het Systeem** bij de bovenkant van het venster als volgt:
 
-![ de berichten van het Systeem bericht ](../../assets/upgrade-guide/system-messages.png)
+![&#x200B; de berichten van het Systeem bericht &#x200B;](../../assets/upgrade-guide/system-messages.png)
 
-Zie [ uitsnede ](../../configuration/cli/configure-cron-jobs.md) voor meer informatie vormen en in werking stellen.
+Zie [&#x200B; uitsnede &#x200B;](../../configuration/cli/configure-cron-jobs.md) voor meer informatie vormen en in werking stellen.
 
 ## DATA_CONVERTER_BATCH_SIZE instellen
 
@@ -337,7 +337,7 @@ Als u veel gegevens hebt, kunt u de prestaties verbeteren door de waarde van een
 
 De omgevingsvariabele instellen:
 
-1. Schakelaar aan de [ eigenaar van het dossiersysteem ](../../installation/prerequisites/file-system/overview.md).
+1. Schakelaar aan de [&#x200B; eigenaar van het dossiersysteem &#x200B;](../../installation/prerequisites/file-system/overview.md).
 1. Stel de variabele in:
 
    ```bash
@@ -358,7 +358,7 @@ De omgevingsvariabele instellen:
 
 Om veiligheidsredenen vereist Adobe Commerce bepaalde machtigingen voor het bestandssysteem. De toestemmingen zijn verschillend van _[eigendom](../../upgrade/prepare/prerequisites.md#verify-file-system-permissions)_. Eigendom bepaalt wie handelingen op het bestandssysteem kan uitvoeren; machtigingen bepalen wat de gebruiker kan doen.
 
-De folders in het dossiersysteem moeten door de [ groep van de eigenaar van het 0&rbrace; dossiersysteem kunnen worden geschreven.](../../installation/prerequisites/file-system/overview.md)
+De folders in het dossiersysteem moeten door de [&#x200B; groep van de eigenaar van het 0&rbrace; dossiersysteem kunnen worden geschreven.](../../installation/prerequisites/file-system/overview.md)
 
 Om te controleren of de machtigingen voor het bestandssysteem correct zijn ingesteld, meldt u zich aan bij de toepassingsserver of gebruikt u de toepassing van het bestandsbeheer van de hostingprovider.
 
@@ -423,11 +423,11 @@ Voor meer informatie, zie {de systeemtoestemmingen en eigendom van het 0} Dossie
 
 ## De hoofdmap van de map `pub/` instellen
 
-Zie [ docroot wijzigen om veiligheid ](../../installation/tutorials/docroot.md) voor meer details te verbeteren.
+Zie [&#x200B; docroot wijzigen om veiligheid &#x200B;](../../installation/tutorials/docroot.md) voor meer details te verbeteren.
 
 ## De plug-in Composer-update installeren
 
-De [`magento/composer-root-update-plugin` ](https://github.com/magento/composer-root-update-plugin) Composer-plug-in verhelpt wijzigingen die moeten worden aangebracht in het hoofdprojectbestand `composer.json` voordat de toepassing wordt bijgewerkt naar een nieuwe productvereiste.
+De [`magento/composer-root-update-plugin` &#x200B;](https://github.com/magento/composer-root-update-plugin) Composer-plug-in verhelpt wijzigingen die moeten worden aangebracht in het hoofdprojectbestand `composer.json` voordat de toepassing wordt bijgewerkt naar een nieuwe productvereiste.
 
 De plug-in automatiseert de handmatige upgrade gedeeltelijk door afhankelijkheidsconflicten te identificeren en te helpen oplossen in plaats van deze handmatig te hoeven identificeren en te corrigeren.
 

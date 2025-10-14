@@ -22,7 +22,7 @@ Dit artikel biedt tips en trucs voor het gebruik van `robots.txt` - en `sitemap.
 
 ## Betrokken producten en versies
 
-[ Alle gesteunde versies ](../../../release/versions.md) van:
+[&#x200B; Alle gesteunde versies &#x200B;](../../../release/versions.md) van:
 
 - Adobe Commerce over cloudinfrastructuur
 - Adobe Commerce ter plaatse
@@ -35,7 +35,7 @@ Een standaard Adobe Commerce-project bevat een hiërarchie die één website, wi
 
 Volg de onderstaande tips en trucs bij het configureren van `robots.txt` - en `sitemap.xml` -bestanden voor Single-Site-winkels:
 
-- Zorg ervoor dat uw project [`ece-tools` ](https://experienceleague.adobe.com/nl/docs/commerce-cloud-service/user-guide/release-notes/ece-tools-package) versie 2002.0.12 of later gebruikt.
+- Zorg ervoor dat uw project [`ece-tools` &#x200B;](https://experienceleague.adobe.com/nl/docs/commerce-cloud-service/user-guide/release-notes/ece-tools-package) versie 2002.0.12 of later gebruikt.
 - Gebruik de beheertoepassing om inhoud toe te voegen aan het `robots.txt` -bestand.
 
   >[!TIP]
@@ -64,14 +64,14 @@ Volg de onderstaande tips en trucs bij het configureren van `robots.txt` - en `s
 
 >[!INFO]
 >
->Zie [ plaatskaart en onderzoekmachine robots ](https://experienceleague.adobe.com/nl/docs/commerce-cloud-service/user-guide/configure-store/robots-sitemap) voor gedetailleerde instructies toevoegen.
+>Zie [&#x200B; plaatskaart en onderzoekmachine robots &#x200B;](https://experienceleague.adobe.com/nl/docs/commerce-cloud-service/user-guide/configure-store/robots-sitemap) voor gedetailleerde instructies toevoegen.
 
 
 ### Meerdere winkelvoorkeuren
 
-U kunt meerdere winkels instellen en uitvoeren met één Adobe Commerce-implementatie op een cloudinfrastructuur. Zie [ Opstelling veelvoudige websites of opslag ](https://experienceleague.adobe.com/nl/docs/commerce-cloud-service/user-guide/configure-store/multiple-sites).
+U kunt meerdere winkels instellen en uitvoeren met één Adobe Commerce-implementatie op een cloudinfrastructuur. Zie [&#x200B; Opstelling veelvoudige websites of opslag &#x200B;](https://experienceleague.adobe.com/nl/docs/commerce-cloud-service/user-guide/configure-store/multiple-sites).
 
-De zelfde beste praktijken voor het vormen van de `robots.txt` en `sitemap.xml` dossiers voor [ enig-plaats opslagefronts ](#single-site-storefronts) zijn op multi-site storefronts met twee belangrijke verschillen van toepassing:
+De zelfde beste praktijken voor het vormen van de `robots.txt` en `sitemap.xml` dossiers voor [&#x200B; enig-plaats opslagefronts &#x200B;](#single-site-storefronts) zijn op multi-site storefronts met twee belangrijke verschillen van toepassing:
 
 - Zorg ervoor dat de bestandsnamen `robots.txt` en `sitemap.xml` de namen van de overeenkomende sites bevatten. Bijvoorbeeld:
    - `domaineone_robots.txt`
@@ -93,7 +93,7 @@ De zelfde beste praktijken voor het vormen van de `robots.txt` en `sitemap.xml` 
 
 ## Adobe Commerce ter plaatse
 
-Gebruik de toepassing Admin om de `robots.txt` en `sitemap.xml` dossiers te vormen om bots te verhinderen onnodige inhoud (zie [ Robots van de Motor van het Onderzoek ](https://experienceleague.adobe.com/docs/commerce-admin/marketing/seo/seo-overview.html?lang=nl-NL#search-engine-robots)) af te tasten en te indexeren.
+Gebruik de toepassing Admin om de `robots.txt` en `sitemap.xml` dossiers te vormen om bots te verhinderen onnodige inhoud (zie [&#x200B; Robots van de Motor van het Onderzoek &#x200B;](https://experienceleague.adobe.com/docs/commerce-admin/marketing/seo/seo-overview.html?lang=nl-NL#search-engine-robots)) af te tasten en te indexeren.
 
 >[!TIP]
 >
@@ -103,15 +103,15 @@ Gebruik de toepassing Admin om de `robots.txt` en `sitemap.xml` dossiers te vorm
 
 Maak het beheerpad niet zichtbaar in uw `robots.txt` -bestand. Het blootstellen van het Admin-pad is een kwetsbaarheid voor het hacken van sites en mogelijk gegevensverlies. Verwijder het beheerpad uit het `robots.txt` -bestand.
 
-Voor stappen om het `robots.txt` dossier uit te geven en alle ingangen van de weg te verwijderen Admin, zie [ de Gids van de Gebruiker van de Marketing > SEO en Onderzoek > de Robots van de Motor van het Onderzoek ](https://experienceleague.adobe.com/docs/commerce-admin/marketing/seo/seo-overview.html?lang=nl-NL#search-engine-robots).
+Voor stappen om het `robots.txt` dossier uit te geven en alle ingangen van de weg te verwijderen Admin, zie [&#x200B; de Gids van de Gebruiker van de Marketing > SEO en Onderzoek > de Robots van de Motor van het Onderzoek &#x200B;](https://experienceleague.adobe.com/docs/commerce-admin/marketing/seo/seo-overview.html?lang=nl-NL#search-engine-robots).
 
 >[!TIP]
 >
->Als u hulp nodig hebt, [ voorleggen een kaartje van de Steun van Adobe Commerce ](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html?lang=nl-NL#submit-ticket).
+>Als u hulp nodig hebt, [&#x200B; voorleggen een kaartje van de Steun van Adobe Commerce &#x200B;](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html?lang=nl-NL#submit-ticket).
 
 ## Aanvullende informatie
 
-- [ Begrip websites, opslag, en opslagmeningen ](https://experienceleague.adobe.com/nl/docs/commerce-cloud-service/user-guide/configure-store/best-practices)
-- [ Toevoegend websites ](https://experienceleague.adobe.com/nl/docs/commerce-admin/stores-sales/site-store/stores#add-websites)
-- [ Gebruik snel om kwaadwillig verkeer voor uw plaatsen van Adobe Commerce te blokkeren ](https://experienceleague.adobe.com/nl/docs/commerce-cloud-service/user-guide/cdn/custom-vcl-snippets/fastly-vcl-blocking)
-- [ robots.txt geeft een fout 404 in Adobe Commerce op wolkeninfrastructuur 2.3.x ](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/robots.txt-gives-404-error-magento-commerce-cloud-2.3.x.html?lang=nl-NL)
+- [&#x200B; Begrip websites, opslag, en opslagmeningen &#x200B;](https://experienceleague.adobe.com/nl/docs/commerce-cloud-service/user-guide/configure-store/best-practices)
+- [&#x200B; Toevoegend websites &#x200B;](https://experienceleague.adobe.com/nl/docs/commerce-admin/stores-sales/site-store/stores#add-websites)
+- [&#x200B; Gebruik snel om kwaadwillig verkeer voor uw plaatsen van Adobe Commerce te blokkeren &#x200B;](https://experienceleague.adobe.com/nl/docs/commerce-cloud-service/user-guide/cdn/custom-vcl-snippets/fastly-vcl-blocking)
+- [&#x200B; robots.txt geeft een fout 404 in Adobe Commerce op wolkeninfrastructuur 2.3.x &#x200B;](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/robots.txt-gives-404-error-magento-commerce-cloud-2.3.x.html?lang=nl-NL)

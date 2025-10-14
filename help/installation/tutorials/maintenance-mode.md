@@ -11,9 +11,9 @@ ht-degree: 0%
 
 # Onderhoudsmodus in- of uitschakelen
 
-De volgende handleiding verwijst naar een pagina voor de standaardonderhoudsmodus. Als u een pagina van het douaneonderhoud moet gebruiken, zie [ het onderwerp van de pagina van het douaneonderhoud ](../../upgrade/troubleshooting/maintenance-mode-options.md) creëren.
+De volgende handleiding verwijst naar een pagina voor de standaardonderhoudsmodus. Als u een pagina van het douaneonderhoud moet gebruiken, zie [&#x200B; het onderwerp van de pagina van het douaneonderhoud &#x200B;](../../upgrade/troubleshooting/maintenance-mode-options.md) creëren.
 
-Adobe Commerce gebruikt [ onderhoudswijze ](../../configuration/bootstrap/application-modes.md#maintenance-mode) om bootstrapping onbruikbaar te maken. Het uitschakelen van bootstrapping is handig als u uw site onderhoudt, bijwerkt of opnieuw configureert.
+Adobe Commerce gebruikt [&#x200B; onderhoudswijze &#x200B;](../../configuration/bootstrap/application-modes.md#maintenance-mode) om bootstrapping onbruikbaar te maken. Het uitschakelen van bootstrapping is handig als u uw site onderhoudt, bijwerkt of opnieuw configureert.
 
 De toepassing detecteert de onderhoudsmodus als volgt:
 
@@ -22,7 +22,7 @@ De toepassing detecteert de onderhoudsmodus als volgt:
 
 ## De toepassing installeren
 
-Alvorens u dit bevel gebruikt om onderhoudswijze toe te laten of onbruikbaar te maken, moet u [ de toepassing ](../advanced.md) installeren.
+Alvorens u dit bevel gebruikt om onderhoudswijze toe te laten of onbruikbaar te maken, moet u [&#x200B; de toepassing &#x200B;](../advanced.md) installeren.
 
 ## Onderhoudsmodus in- of uitschakelen
 
@@ -46,7 +46,7 @@ De optie `--ip=<ip address>` is een IP-adres dat wordt vrijgesteld van de onderh
 
 >[!NOTE]
 >
->Als u `--ip=<ip address>` gebruikt met `magento maintenance:disable` , wordt de lijst met IP&#39;s opgeslagen zodat u deze later kunt gebruiken. Om de lijst van vrijgestelde IPs te ontruimen, gebruik `magento maintenance:enable --ip=none` of zie [ de lijst van vrijgestelde IP adressen ](#maintain-the-list-of-exempt-ip-addresses) handhaven.
+>Als u `--ip=<ip address>` gebruikt met `magento maintenance:disable` , wordt de lijst met IP&#39;s opgeslagen zodat u deze later kunt gebruiken. Om de lijst van vrijgestelde IPs te ontruimen, gebruik `magento maintenance:enable --ip=none` of zie [&#x200B; de lijst van vrijgestelde IP adressen &#x200B;](#maintain-the-list-of-exempt-ip-addresses) handhaven.
 
 De opdracht `bin/magento maintenance:status` geeft de status van de onderhoudsmodus weer.
 
@@ -123,4 +123,4 @@ De parameter `skin` gebruiken:
 
 >[!NOTE]
 >
->[ nginx ](../../configuration/multi-sites/ms-nginx.md) het plaatsen moet voor multi-store montages worden toegevoegd.
+>[&#x200B; nginx &#x200B;](../../configuration/multi-sites/ms-nginx.md) het plaatsen moet voor multi-store montages worden toegevoegd.

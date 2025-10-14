@@ -40,15 +40,15 @@ Deze extra overhead kan de siteprestaties op de site negatief beïnvloeden als e
 
 >[!WARNING]
 >
->Adobe Commerce ondersteunt geen aangepaste triggers in de Adobe Commerce-database omdat aangepaste triggers incompatibiliteiten met toekomstige Adobe Commerce-versies kunnen introduceren. Voor beste praktijken, zie [ Algemene Richtlijnen MySQL ](../../../installation/prerequisites/database/mysql.md) in de documentatie van Adobe Commerce.
+>Adobe Commerce ondersteunt geen aangepaste triggers in de Adobe Commerce-database omdat aangepaste triggers incompatibiliteiten met toekomstige Adobe Commerce-versies kunnen introduceren. Voor beste praktijken, zie [&#x200B; Algemene Richtlijnen MySQL &#x200B;](../../../installation/prerequisites/database/mysql.md) in de documentatie van Adobe Commerce.
 
 ### Effectief gebruik
 
 Volg deze richtlijnen om prestatieproblemen te voorkomen bij het gebruik van triggers:
 
 - Als u douanetriggers hebt die sommige gegevens schrijven wanneer de trekker wordt uitgevoerd, beweeg deze logica om rechtstreeks aan de controletabellen in plaats daarvan te schrijven. Bijvoorbeeld, door een extra vraag in de toepassingscode toe te voegen, na de vraag u was bedoeld om de trekker voor tot stand te brengen.
-- Bekijk bestaande aangepaste triggers en overweeg deze te verwijderen en rechtstreeks vanuit de toepassingszijde naar de tabellen te schrijven. Controle voor bestaande trekkers in uw gegevensbestand door de [`SHOW TRIGGERS` SQL Verklaring ](https://dev.mysql.com/doc/refman/8.0/en/show-triggers.html) te gebruiken.
-- Voor extra hulp, vragen, of zorgen, [ voorleggen een kaartje van de Steun van Adobe Commerce ](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html?lang=nl-NL&#submit-ticket).
+- Bekijk bestaande aangepaste triggers en overweeg deze te verwijderen en rechtstreeks vanuit de toepassingszijde naar de tabellen te schrijven. Controle voor bestaande trekkers in uw gegevensbestand door de [`SHOW TRIGGERS` SQL Verklaring &#x200B;](https://dev.mysql.com/doc/refman/8.0/en/show-triggers.html) te gebruiken.
+- Voor extra hulp, vragen, of zorgen, [&#x200B; voorleggen een kaartje van de Steun van Adobe Commerce &#x200B;](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html?lang=nl-NL&#submit-ticket).
 
 ## Slave-verbindingen
 
@@ -62,7 +62,7 @@ Adobe Commerce op cloudinfrastructuur, alleen Pro-architectuur
 
 ### Configuratie
 
-In Adobe Commerce op wolkeninfrastructuur, kunt u de standaardconfiguratie voor de MYSQL slave verbinding met voeten treden door [ MYSQL_USE_SLAVE_CONNECTION ](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure/env/stage/variables-deploy.html?lang=nl-NL#mysql_use_slave_connection) variabele te plaatsen. Stel deze variabele in op `true` als u automatisch een alleen-lezen verbinding met de database wilt gebruiken.
+In Adobe Commerce op wolkeninfrastructuur, kunt u de standaardconfiguratie voor de MYSQL slave verbinding met voeten treden door [&#x200B; MYSQL_USE_SLAVE_CONNECTION &#x200B;](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure/env/stage/variables-deploy.html?lang=nl-NL#mysql_use_slave_connection) variabele te plaatsen. Stel deze variabele in op `true` als u automatisch een alleen-lezen verbinding met de database wilt gebruiken.
 
 **om de MySQL slave verbinding** toe te laten:
 

@@ -30,7 +30,7 @@ In deze sectie ziet u hoe u de [!DNL Data Migration Tool] uitvoert om instelling
 
 ### Eerste stappen
 
-1. Meld u aan bij de toepassingsserver of schakel over naar een gebruiker met schrijfmachtigingen naar het bestandssysteem. Zie [ schakelaar aan de eigenaar van het dossiersysteem ](../../../installation/prerequisites/file-system/overview.md).
+1. Meld u aan bij de toepassingsserver of schakel over naar een gebruiker met schrijfmachtigingen naar het bestandssysteem. Zie [&#x200B; schakelaar aan de eigenaar van het dossiersysteem &#x200B;](../../../installation/prerequisites/file-system/overview.md).
 
    Als u bash shell gebruikt, kunt u de volgende syntaxis gebruiken om aan de eigenaar van het dossiersysteem over te schakelen en het bevel tezelfdertijd in te gaan:
 
@@ -46,7 +46,7 @@ In deze sectie ziet u hoe u de [!DNL Data Migration Tool] uitvoert om instelling
 
 1. Als u Magento-opdrachten vanuit een willekeurige map wilt uitvoeren, voegt u `<magento_root>/bin` toe aan uw systeem `PATH` .
 
-   Omdat de cellen verschillende syntaxis hebben, raadpleeg een verwijzing als [ unix.stackexchange.com ](https://unix.stackexchange.com/questions/117467/how-to-permanently-set-environmental-variables).
+   Omdat de cellen verschillende syntaxis hebben, raadpleeg een verwijzing als [&#x200B; unix.stackexchange.com &#x200B;](https://unix.stackexchange.com/questions/117467/how-to-permanently-set-environmental-variables).
 
    Voorbeeld van bash-shell voor CentOS:
 

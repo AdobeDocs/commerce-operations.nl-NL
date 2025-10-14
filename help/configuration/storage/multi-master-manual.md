@@ -52,7 +52,7 @@ Adobe raadt u ten zeerste aan een back-up te maken van uw huidige database en be
 
 **aan file uw systeem**:
 
-1. Login aan uw server van Commerce als, of schakelaar aan, de [ eigenaar van het dossiersysteem ](../../installation/prerequisites/file-system/overview.md).
+1. Login aan uw server van Commerce als, of schakelaar aan, de [&#x200B; eigenaar van het dossiersysteem &#x200B;](../../installation/prerequisites/file-system/overview.md).
 1. Voer de volgende opdrachten in:
 
    ```bash
@@ -130,7 +130,7 @@ Tabelnamen van verkoopdatabase beginnen met:
 
 >[!INFO]
 >
->Deze sectie bevat manuscripten met specifieke namen van gegevensbestandlijsten. Als u aanpassingen hebt uitgevoerd of als u een volledige lijst van lijsten wilt zien alvorens u acties op hen uitvoert, zie [ manuscripten van de Verwijzing ](#reference-scripts).
+>Deze sectie bevat manuscripten met specifieke namen van gegevensbestandlijsten. Als u aanpassingen hebt uitgevoerd of als u een volledige lijst van lijsten wilt zien alvorens u acties op hen uitvoert, zie [&#x200B; manuscripten van de Verwijzing &#x200B;](#reference-scripts).
 
 Zie voor meer informatie:
 
@@ -263,7 +263,7 @@ Met dit script worden de verkoopgegevens in de quotadatabase hersteld.
 
 #### NDB-vereiste
 
-Als u de cluster van het a [ Gegevensbestand van het Netwerk (NDB) ](https://dev.mysql.com/doc/refman/5.6/en/mysql-cluster.html) gebruikt:
+Als u de cluster van het a [&#x200B; Gegevensbestand van het Netwerk (NDB) &#x200B;](https://dev.mysql.com/doc/refman/5.6/en/mysql-cluster.html) gebruikt:
 
 1. Tabellen van InnoDb naar NDB-type converteren in dump-bestanden:
 
@@ -309,7 +309,7 @@ Deze sectie bespreekt taken die worden vereist om buitenlandse sleutels van de l
 
 >[!INFO]
 >
->Deze sectie bevat manuscripten met specifieke namen van gegevensbestandlijsten. Als u aanpassingen hebt uitgevoerd of als u een volledige lijst van lijsten wilt zien alvorens u acties op hen uitvoert, zie [ manuscripten van de Verwijzing ](#reference-scripts).
+>Deze sectie bevat manuscripten met specifieke namen van gegevensbestandlijsten. Als u aanpassingen hebt uitgevoerd of als u een volledige lijst van lijsten wilt zien alvorens u acties op hen uitvoert, zie [&#x200B; manuscripten van de Verwijzing &#x200B;](#reference-scripts).
 
 De namen van de de gegevensbestandlijsten van de citaat beginnen met `quote`. De tabellen `magento_customercustomattributes_sales_flat_quote` en `magento_customercustomattributes_sales_flat_quote_address` worden ook beïnvloed
 
@@ -357,7 +357,7 @@ mysqldump -u <your database root username> -p <your main Commerce DB name> magen
 
 ### NDB-vereiste
 
-Als u de cluster van het a [ Gegevensbestand van het Netwerk (NDB) ](https://dev.mysql.com/doc/refman/5.6/en/mysql-cluster.html) gebruikt:
+Als u de cluster van het a [&#x200B; Gegevensbestand van het Netwerk (NDB) &#x200B;](https://dev.mysql.com/doc/refman/5.6/en/mysql-cluster.html) gebruikt:
 
 1. Tabellen van InnoDb naar NDB-type converteren in dump-bestanden:
 
@@ -477,7 +477,7 @@ De laatste stap bij het handmatig splitsen van databases is het toevoegen van ve
 
 Om de plaatsingsconfiguratie bij te werken:
 
-1. Login aan uw server van Commerce als, of schakelaar aan, de [ eigenaar van het dossiersysteem ](../../installation/prerequisites/file-system/overview.md).
+1. Login aan uw server van Commerce als, of schakelaar aan, de [&#x200B; eigenaar van het dossiersysteem &#x200B;](../../installation/prerequisites/file-system/overview.md).
 1. Maak een back-up van uw implementatieconfiguratie:
 
    ```bash

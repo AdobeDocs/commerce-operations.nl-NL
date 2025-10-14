@@ -12,7 +12,7 @@ ht-degree: 3%
 
 # Modules en extensies beheren
 
-Ontwikkelaars die een bijdrage leveren, upgraden modules en extensies door hun versies op te geven in het Adobe Commerce `composer.json` -bestand. Als u geen bijdragende ontwikkelaar bent, zie [ een verbetering ](../implementation/perform-upgrade.md) uitvoeren.
+Ontwikkelaars die een bijdrage leveren, upgraden modules en extensies door hun versies op te geven in het Adobe Commerce `composer.json` -bestand. Als u geen bijdragende ontwikkelaar bent, zie [&#x200B; een verbetering &#x200B;](../implementation/perform-upgrade.md) uitvoeren.
 
 U kunt een sectie `require` toevoegen aan het `composer.json` -bestand of u kunt de opdracht `composer require` als volgt gebruiken:
 

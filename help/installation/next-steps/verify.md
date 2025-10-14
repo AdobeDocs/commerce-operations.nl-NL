@@ -15,7 +15,7 @@ Ga naar de winkel in een webbrowser. Als de basis-URL van de installatie bijvoor
 
 In de volgende afbeelding ziet u een voorbeeldwinkelpagina. Als het als volgt toont, was uw installatie een succes!
 
-![ Storefront met het thema van de Luma ](../../assets/installation/install-success_store-luma.png)
+![&#x200B; Storefront met het thema van de Luma &#x200B;](../../assets/installation/install-success_store-luma.png)
 
 ## De opslagruimte controleren (geen voorbeeldgegevens)
 
@@ -23,9 +23,9 @@ Ga naar de winkel in een webbrowser. Als de basis-URL van de installatie bijvoor
 
 In de volgende afbeelding ziet u een voorbeeldwinkelpagina. Als het als volgt toont, was uw installatie een succes!
 
-![ Storefront die een succesvolle installatie ](../../assets/installation/install-success_store.png) verifieert
+![&#x200B; Storefront die een succesvolle installatie &#x200B;](../../assets/installation/install-success_store.png) verifieert
 
-Als de pagina a `404 (Not Found)` fout toont of stijlen niet toont, zie [ problemen oplossen ](https://support.magento.com/hc/en-us/articles/360032994352).
+Als de pagina a `404 (Not Found)` fout toont of stijlen niet toont, zie [&#x200B; problemen oplossen &#x200B;](https://support.magento.com/hc/en-us/articles/360032994352).
 
 ## De beheerder controleren
 
@@ -37,10 +37,10 @@ Meld u desgevraagd aan als beheerder.
 
 In de volgende afbeelding ziet u een voorbeeld van een beheerpagina. Als het als volgt toont, was uw installatie een succes!
 
-![ Admin die een succesvolle installatie ](../../assets/installation/install_success_admin.png) verifieert
+![&#x200B; Admin die een succesvolle installatie &#x200B;](../../assets/installation/install_success_admin.png) verifieert
 
-Als de pagina stijlen niet toont, zie [ het oplossen van problemen ](https://support.magento.com/hc/en-us/articles/360032994352).
+Als de pagina stijlen niet toont, zie [&#x200B; het oplossen van problemen &#x200B;](https://support.magento.com/hc/en-us/articles/360032994352).
 
-Als u een 404 (Niet Gevonden) fout gelijkend op het volgende krijgt, zie [ PHP versiefout of 404 wanneer het toegang tot van Adobe Commerce in browser ](https://support.magento.com/hc/en-us/articles/360033117152).
+Als u een 404 (Niet Gevonden) fout gelijkend op het volgende krijgt, zie [&#x200B; PHP versiefout of 404 wanneer het toegang tot van Adobe Commerce in browser &#x200B;](https://support.magento.com/hc/en-us/articles/360033117152).
 
 `The requested URL /magento2index.php/admin/admin/dashboard/index/key/0c81957145a968b697c32a846598dc2e/ was not found on this server.`

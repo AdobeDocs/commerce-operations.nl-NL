@@ -17,9 +17,9 @@ In dit onderwerp wordt besproken hoe u vereiste PHP-opties kunt instellen.
 
 >[!NOTE]
 >
->Voor de nieuwste versie van Adobe Commerce is minimaal PHP 8.1 vereist. Zie [ systeemvereisten ](../system-requirements.md) voor alle gesteunde versies van PHP.
+>Voor de nieuwste versie van Adobe Commerce is minimaal PHP 8.1 vereist. Zie [&#x200B; systeemvereisten &#x200B;](../system-requirements.md) voor alle gesteunde versies van PHP.
 
-Voor de configuratiebegeleiding van de Wolk, zie [ PHP montages ](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure/app/php-settings.html?lang=nl-NL) in _Commerce op de gids van de Infrastructuur van de Wolk_.
+Voor de configuratiebegeleiding van de Wolk, zie [&#x200B; PHP montages &#x200B;](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure/app/php-settings.html?lang=nl-NL) in _Commerce op de gids van de Infrastructuur van de Wolk_.
 
 ## PHP Process Control
 
@@ -65,7 +65,7 @@ Geïnstalleerde extensies controleren:
 
 >[!WARNING]
 >
->Als u PHP 7.4.20 gebruikt, stelt u `pcre.jit=0` in in uw `php.ini` -bestand. Dit krijgt rond een PHP [ insect ](https://bugs.php.net/bug.php?id=81101) dat CSS verhindert te laden.
+>Als u PHP 7.4.20 gebruikt, stelt u `pcre.jit=0` in in uw `php.ini` -bestand. Dit krijgt rond een PHP [&#x200B; insect &#x200B;](https://bugs.php.net/bug.php?id=81101) dat CSS verhindert te laden.
 
 - Stel de tijdzone van het systeem in voor PHP. Anders werken fouten zoals de volgende weergave tijdens de installatie en bewerkingen met betrekking tot tijd zoals cron mogelijk niet:
 
@@ -88,11 +88,11 @@ PHP Warning:  date(): It is not safe to rely on the system's timezone settings. 
   realpath_cache_ttl=7200
   ```
 
-  Met deze instellingen kunnen PHP-processen paden naar bestanden in cache plaatsen in plaats van ze te bekijken bij het laden van de pagina. Zie [ Prestaties die ](https://www.php.net/manual/en/ini.core.php) in de PHP documentatie stempelen.
+  Met deze instellingen kunnen PHP-processen paden naar bestanden in cache plaatsen in plaats van ze te bekijken bij het laden van de pagina. Zie [&#x200B; Prestaties die &#x200B;](https://www.php.net/manual/en/ini.core.php) in de PHP documentatie stempelen.
 
-- Schakel [`opcache.save_comments` ](https://www.php.net/manual/en/opcache.configuration.php#ini.opcache.save-comments) in. Dit is vereist voor Adobe Commerce 2.1 en hoger.
+- Schakel [`opcache.save_comments` &#x200B;](https://www.php.net/manual/en/opcache.configuration.php#ini.opcache.save-comments) in. Dit is vereist voor Adobe Commerce 2.1 en hoger.
 
-  Adobe adviseert toelatend [ PHP OPcache ](https://www.php.net/manual/en/book.opcache.php) voor prestatiesredenen. De OPcache is in veel PHP distributies ingeschakeld.
+  Adobe adviseert toelatend [&#x200B; PHP OPcache &#x200B;](https://www.php.net/manual/en/book.opcache.php) voor prestatiesredenen. De OPcache is in veel PHP distributies ingeschakeld.
 
   Adobe Commerce 2.1 en hoger gebruiken PHP-codeopmerkingen voor het genereren van code.
 
@@ -106,9 +106,9 @@ In deze sectie wordt beschreven hoe u de configuratiebestanden vindt die nodig z
 
 ### Configuratiebestand `php.ini` zoeken
 
-Als u de webserverconfiguratie wilt zoeken, voert u een [`phpinfo.php` bestand ](optional-software.md#create-phpinfophp) in uw webbrowser uit en zoekt u de `Loaded Configuration File` als volgt:
+Als u de webserverconfiguratie wilt zoeken, voert u een [`phpinfo.php` bestand &#x200B;](optional-software.md#create-phpinfophp) in uw webbrowser uit en zoekt u de `Loaded Configuration File` als volgt:
 
-![ PHP- infopagina ](../../assets/installation/config_phpini-webserver.png)
+![&#x200B; PHP- infopagina &#x200B;](../../assets/installation/config_phpini-webserver.png)
 
 Als u de PHP opdrachtregelconfiguratie wilt zoeken, typt u
 
@@ -147,7 +147,7 @@ Als u meer dan één `opcache.ini` hebt, wijzigt u ze allemaal.
 PHP-opties instellen:
 
 1. Open een `php.ini` in een teksteditor.
-1. Bepaal de plaats van de tijdzone van uw server in de beschikbare [ montages van de tijdzone ](https://www.php.net/manual/en/timezones.php)
+1. Bepaal de plaats van de tijdzone van uw server in de beschikbare [&#x200B; montages van de tijdzone &#x200B;](https://www.php.net/manual/en/timezones.php)
 1. Zoek de volgende instelling en verwijder indien nodig de commentaarmarkering:
 
    ```conf
@@ -205,10 +205,10 @@ U stelt `opcache.ini` -opties als volgt in:
 
 Raadpleeg de volgende Adobe Commerce Support-artikelen voor hulp bij het oplossen van problemen met PHP:
 
-- [ PHP versiefout of fout 404 wanneer het toegang tot van Adobe Commerce in browser ](https://support.magento.com/hc/en-us/articles/360033117152-PHP-version-error-or-404-error-when-accessing-Magento-in-browser)
-- [ PHP montagesfouten ](https://support.magento.com/hc/en-us/articles/360034599631-PHP-settings-errors)
-- [ PHP crypt uitbreiding niet behoorlijk geïnstalleerd ](https://support.magento.com/hc/en-us/articles/360034280132-PHP-mcrypt-extension-not-installed-properly-)
-- [ PHP de kwesties van de de versiescontrole ](https://support.magento.com/hc/en-us/articles/360033546411)
-- [ Gemeenschappelijke PHP Onherstelbare Fouten en oplossingen ](https://support.magento.com/hc/en-us/articles/360030568432)
+- [&#x200B; PHP versiefout of fout 404 wanneer het toegang tot van Adobe Commerce in browser &#x200B;](https://support.magento.com/hc/en-us/articles/360033117152-PHP-version-error-or-404-error-when-accessing-Magento-in-browser)
+- [&#x200B; PHP montagesfouten &#x200B;](https://support.magento.com/hc/en-us/articles/360034599631-PHP-settings-errors)
+- [&#x200B; PHP crypt uitbreiding niet behoorlijk geïnstalleerd &#x200B;](https://support.magento.com/hc/en-us/articles/360034280132-PHP-mcrypt-extension-not-installed-properly-)
+- [&#x200B; PHP de kwesties van de de versiescontrole &#x200B;](https://support.magento.com/hc/en-us/articles/360033546411)
+- [&#x200B; Gemeenschappelijke PHP Onherstelbare Fouten en oplossingen &#x200B;](https://support.magento.com/hc/en-us/articles/360030568432)
 
 <!-- Last updated from includes: 2025-04-04 22:27:22 -->

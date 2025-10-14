@@ -12,9 +12,9 @@ ht-degree: 0%
 
 # Toegangsrechten voor bestandssystemen
 
-In deze sectie wordt besproken hoe u de eigenaar of eigenaars van het Commerce-bestandssysteem kunt instellen voor een ontwikkelings- en productiesysteem. Alvorens u verdergaat, herzie de concepten die in [ Overzicht van de eigendom en de toestemmingen van het dossiersysteem ](../../installation/prerequisites/file-system/overview.md) worden besproken.
+In deze sectie wordt besproken hoe u de eigenaar of eigenaars van het Commerce-bestandssysteem kunt instellen voor een ontwikkelings- en productiesysteem. Alvorens u verdergaat, herzie de concepten die in [&#x200B; Overzicht van de eigendom en de toestemmingen van het dossiersysteem &#x200B;](../../installation/prerequisites/file-system/overview.md) worden besproken.
 
-Dit onderwerp is gericht op de ontwikkeling en productiesystemen van Commerce. Als u Commerce installeert, zie [ Vastgestelde pre-installatiereigenschap en toestemmingen ](../../installation/prerequisites/file-system/configure-permissions.md).
+Dit onderwerp is gericht op de ontwikkeling en productiesystemen van Commerce. Als u Commerce installeert, zie [&#x200B; Vastgestelde pre-installatiereigenschap en toestemmingen &#x200B;](../../installation/prerequisites/file-system/configure-permissions.md).
 
 De volgende secties bespreken vereisten voor één of twee eigenaars van bestandssystemen. Dat betekent:
 
@@ -104,7 +104,7 @@ Bestanden en mappen schrijfbaar maken, zodat u onderdelen kunt bijwerken en de C
 
 ### Optioneel instellen `magento_umask`
 
-Zie [ naar keuze plaatsen een masker ](../../installation/next-steps/set-umask.md) in de _gids van de Installatie_.
+Zie [&#x200B; naar keuze plaatsen een masker &#x200B;](../../installation/next-steps/set-umask.md) in de _gids van de Installatie_.
 
 ## Eigendom van productiebestandssysteem voor privéhosting (twee gebruikers)
 
@@ -122,7 +122,7 @@ Als u uw eigen server gebruikt (inclusief de privéserverinstallatie van een hos
   >
   >De bevel-lijn gebruiker wordt ook bedoeld als _eigenaar van het dossiersysteem_.
 
-Omdat deze gebruikers toegang tot de zelfde dossiers vereisen, adviseren wij u tot a [ gedeelde groep ](../../installation/prerequisites/file-system/configure-permissions.md#about-the-shared-group) tot welke zij allebei behoren. De volgende procedures gaan ervan uit dat u dit al hebt gedaan.
+Omdat deze gebruikers toegang tot de zelfde dossiers vereisen, adviseren wij u tot a [&#x200B; gedeelde groep &#x200B;](../../installation/prerequisites/file-system/configure-permissions.md#about-the-shared-group) tot welke zij allebei behoren. De volgende procedures gaan ervan uit dat u dit al hebt gedaan.
 
 Zie een van de volgende secties:
 
@@ -139,7 +139,7 @@ Bestanden in de volgende mappen moeten door beide gebruikers in de ontwikkelaar-
 - `pub/media`
 - `app/etc`
 
-Plaats het [`setgid` ](https://linuxg.net/how-to-set-the-setuid-and-setgid-bit-for-files-in-linux-and-unix/) beetje op folders zodat erven de toestemmingen altijd van de ouderfolder.
+Plaats het [`setgid` &#x200B;](https://linuxg.net/how-to-set-the-setuid-and-setgid-bit-for-files-in-linux-and-unix/) beetje op folders zodat erven de toestemmingen altijd van de ouderfolder.
 
 >[!INFO]
 >

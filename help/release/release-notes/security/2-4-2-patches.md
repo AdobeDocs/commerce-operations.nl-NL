@@ -18,10 +18,10 @@ ht-degree: 0%
 
 De veiligheidsversie van Adobe Commerce 2.4.2-p2 verstrekt veiligheidsinsectenmoeilijke situaties voor kwetsbaarheid die in vorige versies van 2.4.2 zijn geïdentificeerd.
 
-Voor de recentste informatie over de veiligheidsinsectenmoeilijke situaties, zie [ Bulletin van de Veiligheid van Adobe APSB21-64 ](https://helpx.adobe.com/nl/security/products/magento/apsb21-64.html).
+Voor de recentste informatie over de veiligheidsinsectenmoeilijke situaties, zie [&#x200B; Bulletin van de Veiligheid van Adobe APSB21-64 &#x200B;](https://helpx.adobe.com/nl/security/products/magento/apsb21-64.html).
 
 ## Toepassen op `AC-3022.patch` om DHL als scheepvaartmaatschappij te blijven aanbieden
 
-DHL heeft schemaversie 6.2 geïntroduceerd en zal schemaversie 6.0 in de nabije toekomst verwerpen. Adobe Commerce 2.4.4 en eerdere versies die de integratie van DHL steunen slechts versie 6.0. Handelaren die deze releases implementeren, moeten `AC-3022.patch` zo snel mogelijk toepassen om DHL als scheepvaartmaatschappij te blijven aanbieden. Zie [ een flard toepassen om DHL als het verschepen drager ](https://support.magento.com/hc/en-us/articles/7707818131597-Apply-a-patch-to-continue-offering-DHL-as-shipping-carrier) artikel van de Kennisbank voor informatie over het downloaden en het installeren van het flard te blijven aanbieden.
+DHL heeft schemaversie 6.2 geïntroduceerd en zal schemaversie 6.0 in de nabije toekomst verwerpen. Adobe Commerce 2.4.4 en eerdere versies die de integratie van DHL steunen slechts versie 6.0. Handelaren die deze releases implementeren, moeten `AC-3022.patch` zo snel mogelijk toepassen om DHL als scheepvaartmaatschappij te blijven aanbieden. Zie [&#x200B; een flard toepassen om DHL als het verschepen drager &#x200B;](https://support.magento.com/hc/en-us/articles/7707818131597-Apply-a-patch-to-continue-offering-DHL-as-shipping-carrier) artikel van de Kennisbank voor informatie over het downloaden en het installeren van het flard te blijven aanbieden.
 
 <!-- Last updated from includes: 2025-05-28 17:01:56 -->

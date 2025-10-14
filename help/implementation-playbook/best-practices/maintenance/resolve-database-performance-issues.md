@@ -29,8 +29,8 @@ Bepaal of u langzaam lopende vragen MySQL hebt. Afhankelijk van uw Adobe Commerc
 
 Met MySQL kunt u langdurige query&#39;s op elk Adobe Commerce-infrastructuurproject identificeren en oplossen.
 
-1. Voer de instructie [`SHOW \[FULL\] PROCESSLIST` ](https://dev.mysql.com/doc/refman/8.0/en/show-processlist.html) uit.
-1. Als u lange lopende vragen ziet, looppas [ MySQL `EXPLAIN` en `EXPLAIN ANALYZE` ](https://mysqlserverteam.com/mysql-explain-analyze/) voor elk van hen, om te weten te komen wat tot de vraaglooppas voor een lange tijd maakt.
+1. Voer de instructie [`SHOW \[FULL\] PROCESSLIST` &#x200B;](https://dev.mysql.com/doc/refman/8.0/en/show-processlist.html) uit.
+1. Als u lange lopende vragen ziet, looppas [&#x200B; MySQL `EXPLAIN` en `EXPLAIN ANALYZE` &#x200B;](https://mysqlserverteam.com/mysql-explain-analyze/) voor elk van hen, om te weten te komen wat tot de vraaglooppas voor een lange tijd maakt.
 1. Gebaseerd op de gevonden kwesties, onderneem stappen om de vraag te bevestigen zodat loopt het sneller.
 
 ### Vragen analyseren met de Percona Toolkit (alleen voor Pro-architectuur)
@@ -39,7 +39,7 @@ Als uw project van Adobe Commerce op Pro architectuur wordt opgesteld, kunt u To
 
 1. Voer de opdracht `pt-query-digest --type=slowlog` uit op basis van MySQL langzame querylogs.
    * Zie **[!UICONTROL Log locations > Service Logs]** (https://experienceleague.adobe.com/nl/docs/commerce-cloud-service/user-guide/develop/test/log-locations#service-logs) in de ontwikkelaarsdocumentatie voor informatie over de locatie van de trage querylogboeken.
-   * Zie [ Toolkit Percona > pt-vraag-samenvatting ](https://www.percona.com/doc/percona-toolkit/LATEST/pt-query-digest.html#pt-query-digest) documentatie.
+   * Zie [&#x200B; Toolkit Percona > pt-vraag-samenvatting &#x200B;](https://www.percona.com/doc/percona-toolkit/LATEST/pt-query-digest.html#pt-query-digest) documentatie.
 1. Gebaseerd op de gevonden kwesties, onderneem stappen om de vraag te bevestigen zodat loopt het sneller.
 
 ## Controleren of alle tabellen een primaire sleutel hebben
@@ -66,7 +66,7 @@ Vermijd deze kwesties door een primaire sleutel voor om het even welke lijsten t
 
    Wanneer u het knooppunt toevoegt, vervangt u de variabelen `referenceID` en `column name` door uw aangepaste waarden.
 
-Voor meer informatie, zie [ declaratief schema ](https://developer.adobe.com/commerce/php/development/components/declarative-schema/configuration/) in onze ontwikkelaarsdocumentatie vormen.
+Voor meer informatie, zie [&#x200B; declaratief schema &#x200B;](https://developer.adobe.com/commerce/php/development/components/declarative-schema/configuration/) in onze ontwikkelaarsdocumentatie vormen.
 
 ## Dubbele indexen identificeren en verwijderen
 
@@ -86,7 +86,7 @@ Pro-architectuurhandelaren kunnen de controle ook uitvoeren met de opdracht Perc
 
 ### Dubbele indexen verwijderen
 
-Gebruik de SQL [ Verklaring van de INDEX van de DROP ](https://dev.mysql.com/doc/refman/8.0/en/drop-index.html) om dubbele indexen te verwijderen.
+Gebruik de SQL [&#x200B; Verklaring van de INDEX van de DROP &#x200B;](https://dev.mysql.com/doc/refman/8.0/en/drop-index.html) om dubbele indexen te verwijderen.
 
 ```SQL
 DROP INDEX

@@ -25,4 +25,4 @@ ht-degree: 0%
    - [Geavanceerde instellingen](advanced-setup.md)
    - [Geavanceerde  [!DNL JavaScript]  het bundelen](advanced-js-bundling.md)
    - [GraphQL Application Server](application-server.md)
-- [ Terugkeer aan Operationele Gidsen ](https://experienceleague.adobe.com/docs/commerce-operations/operational-guides/home.html?lang=nl-NL)
+- [&#x200B; Terugkeer aan Operationele Gidsen &#x200B;](https://experienceleague.adobe.com/docs/commerce-operations/operational-guides/home.html?lang=nl-NL)

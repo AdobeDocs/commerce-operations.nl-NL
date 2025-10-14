@@ -29,7 +29,7 @@ U kunt profiler toelaten en vormen gebruikend een variabele MAGE_PROFILER of de 
 
 ## MAGE_PROFILER instellen
 
-U kunt de waarde van `MAGE_PROFILER` op om het even welke die manieren plaatsen in [ worden besproken de waarde van laarzentrekkerparameters ](../bootstrap/set-parameters.md) plaatsen.
+U kunt de waarde van `MAGE_PROFILER` op om het even welke die manieren plaatsen in [&#x200B; worden besproken de waarde van laarzentrekkerparameters &#x200B;](../bootstrap/set-parameters.md) plaatsen.
 
 `MAGE_PROFILER` ondersteunt de volgende waarden:
 
@@ -44,7 +44,7 @@ U kunt de waarde van `MAGE_PROFILER` op om het even welke die manieren plaatsen 
 
   Afhankelijkheidsgrafieken worden doorgaans onder aan een pagina weergegeven. In de volgende afbeelding ziet u een gedeelte van de uitvoer:
 
-  ![ grafieken van de Afhankelijkheid ](../../assets/configuration/depend-graphs.png)
+  ![&#x200B; grafieken van de Afhankelijkheid &#x200B;](../../assets/configuration/depend-graphs.png)
 
 ## CLI-opdrachten
 
