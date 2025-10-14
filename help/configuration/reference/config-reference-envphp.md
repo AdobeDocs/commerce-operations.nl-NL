@@ -2,9 +2,9 @@
 title: env.php reference
 description: Meer informatie over de configuratiewaarden en secties van het bestand env.php in Adobe Commerce. Omgevingsinstellingen en configuratieopties ontdekken.
 exl-id: cf02da8f-e0de-4f0e-bab6-67ae02e9166f
-source-git-commit: 10f324478e9a5e80fc4d28ce680929687291e990
+source-git-commit: cb89f0c0a576cf6cd8b53a4ade12c21106e2cdf3
 workflow-type: tm+mt
-source-wordcount: '1016'
+source-wordcount: '1033'
 ht-degree: 0%
 
 ---
@@ -27,8 +27,8 @@ Het bestand `env.php` bevat de volgende secties:
 | `downloadable_domains` | Lijst met downloadbare domeinen |
 | `install` | De installatiedatum |
 | `lock` | Providerinstellingen vergrendelen |
-| `MAGE_MODE` | De [&#x200B; toepassingswijze &#x200B;](../bootstrap/application-modes.md) |
-| `queue` | [&#x200B; de rijen van het Bericht &#x200B;](../queues/manage-message-queues.md) montages |
+| `MAGE_MODE` | De [ toepassingswijze ](../bootstrap/application-modes.md) |
+| `queue` | [ de rijen van het Bericht ](../queues/manage-message-queues.md) montages |
 | `resource` | Toewijzing van de resourcenaam aan een verbinding |
 | `session` | Opslaggegevens sessie |
 | `system` | Schakelt het veld voor bewerken in de beheerder uit |
@@ -72,7 +72,7 @@ Configureer opnieuw pagina en zorg dat de standaardcaching plaatsvindt met het k
 ]
 ```
 
-Leer meer in [&#x200B; Redis Configuratie &#x200B;](../cache/redis-pg-cache.md).
+Leer meer in [ Redis Configuratie ](../cache/redis-pg-cache.md).
 
 ## cache_types
 
@@ -98,7 +98,7 @@ Alle configuraties van cachetypen zijn beschikbaar bij dit knooppunt.
 ]
 ```
 
-Leer meer over verschillende [&#x200B; Types van Geheime voorgeheugen &#x200B;](../cli/manage-cache.md).
+Leer meer over verschillende [ Types van Geheime voorgeheugen ](../cli/manage-cache.md).
 
 ## consumer_wait_for_messages
 
@@ -134,7 +134,7 @@ Hiermee schakelt u snijtaken voor de Commerce-toepassing in of uit. Standaard zi
 >
 >Wees voorzichtig wanneer u snijtaken uitschakelt. Als ze zijn uitgeschakeld, worden de essentiële processen die door de Commerce-toepassing worden vereist, niet uitgevoerd.
 
-Leer meer over [&#x200B; Crons &#x200B;](../cli/configure-cron-jobs.md).
+Leer meer over [ Crons ](../cli/configure-cron-jobs.md).
 
 ## coderen
 
@@ -146,7 +146,7 @@ Commerce gebruikt een coderingssleutel om wachtwoorden en andere vertrouwelijke 
 ]
 ```
 
-Leer meer over [&#x200B; Sleutel van de Encryptie &#x200B;](https://experienceleague.adobe.com/nl/docs/commerce-admin/systems/security/encryption-key) in de _gids van de Gebruiker van Commerce_.
+Leer meer over [ Sleutel van de Encryptie ](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/security/encryption-key) in de _gids van de Gebruiker van Commerce_.
 
 ## db
 
@@ -172,11 +172,19 @@ Alle gegevensbestandconfiguraties zijn beschikbaar in deze knoop.
 
 ## default_connection
 
-Bepaalt de standaardverbinding voor berichtrijen. De waarde kan `db`, `amqp`, of een systeem van de douanerij zoals `redismq` zijn. Als u een andere waarde dan `db` opgeeft, moet de software voor de wachtrij van berichten eerst worden geïnstalleerd en geconfigureerd. Anders worden berichten niet correct verwerkt.
+Bepaalt de standaardverbinding voor berichtrijen. De waarde kan `db`, `amqp`, `stomp` of een aangepast wachtrijsysteem zijn, zoals `redismq` . Als u een andere waarde dan `db` opgeeft, moet de software voor de wachtrij van berichten eerst worden geïnstalleerd en geconfigureerd. Anders worden berichten niet correct verwerkt.
 
 ```conf
 'queue' => [
     'default_connection' => 'amqp'
+]
+```
+
+Voor STOMP (ActiveMQ Artemis):
+
+```conf
+'queue' => [
+    'default_connection' => 'stomp'
 ]
 ```
 
@@ -185,7 +193,7 @@ Als `queue/default_connection` bijvoorbeeld `amqp` in `env.php` is maar een `db`
 
 ## mappen
 
-De facultatieve opties van de folderafbeelding die moeten worden geplaatst wanneer de Webserver wordt gevormd om Commerce te dienen app van de `/pub` folder voor [&#x200B; betere veiligheid &#x200B;](../../installation/tutorials/docroot.md).
+De facultatieve opties van de folderafbeelding die moeten worden geplaatst wanneer de Webserver wordt gevormd om Commerce te dienen app van de `/pub` folder voor [ betere veiligheid ](../../installation/tutorials/docroot.md).
 
 ```conf
 'directories' => [
@@ -203,7 +211,7 @@ Een lijst met downloadbare domeinen beschikbaar in dit knooppunt. De extra domei
 ]
 ```
 
-Leer meer over [&#x200B; Downloadbare Domeinen &#x200B;](https://experienceleague.adobe.com/nl/docs/commerce-operations/tools/cli-reference/commerce-on-premises#downloadabledomainsadd).
+Leer meer over [ Downloadbare Domeinen ](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/cli-reference/commerce-on-premises#downloadabledomainsadd).
 
 ## installeren
 
@@ -219,7 +227,7 @@ De installatiedatum van de Commerce-toepassing.
 
 Instellingen voor vergrendelingsproviders worden geconfigureerd met het knooppunt `lock` .
 
-Leer meer over [&#x200B; de Configuratie van de Leverancier van het Slot &#x200B;](../../installation/tutorials/lock-provider.md).
+Leer meer over [ de Configuratie van de Leverancier van het Slot ](../../installation/tutorials/lock-provider.md).
 
 ## MAGE_MODE
 
@@ -229,17 +237,17 @@ De opstellen wijze kan in deze knoop worden gevormd.
 'MAGE_MODE' => 'developer'
 ```
 
-Leer meer over [&#x200B; toepassingswijzen &#x200B;](../cli/set-mode.md).
+Leer meer over [ toepassingswijzen ](../cli/set-mode.md).
 
 ## wachtrij
 
-De de rijconfiguraties van het bericht zijn beschikbaar in deze knoop.
+De de rijconfiguraties van het bericht zijn beschikbaar in deze knoop. U kunt RabbitMQ (AMQP) of ActiveMQ Artemis (STOMP) configureren als berichtbroker.
 
 ```conf
 'queue' => [
   'topics' => [
-    'customer.created' => [publisher="default-rabitmq"],
-    'order.created' => [publisher="default-rabitmq"],
+    'customer.created' => [publisher="default-broker"],
+    'order.created' => [publisher="default-broker"],
   ]
 ]
 ```
@@ -268,7 +276,7 @@ Sessieconfiguraties worden opgeslagen in het knooppunt `session` .
 ],
 ```
 
-Leer meer over [&#x200B; Zitting &#x200B;](../storage/sessions.md).
+Leer meer over [ Zitting ](../storage/sessions.md).
 
 ## x-frame-opties
 
@@ -278,7 +286,7 @@ De header x-frame-options kan worden geconfigureerd met dit knooppunt.
 'x-frame-options' => 'SAMEORIGIN'
 ```
 
-Leer meer over [&#x200B; x-kader-opties &#x200B;](../security/xframe-options.md).
+Leer meer over [ x-kader-opties ](../security/xframe-options.md).
 
 ## systeem
 
@@ -295,7 +303,7 @@ Met dit knooppunt worden de configuratiewaarden in het `env.php` -bestand vergre
   ]
 ```
 
-Leer meer in [&#x200B; env-php-config-reeks &#x200B;](../cli/set-configuration-values.md).
+Leer meer in [ env-php-config-reeks ](../cli/set-configuration-values.md).
 
 <!-- Link definitions -->
 

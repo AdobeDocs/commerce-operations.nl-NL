@@ -1,15 +1,15 @@
 ---
-title: Berichtenmakelaar
+title: Berichtenmakelaar (RabbitMQ)
 description: Volg deze stappen om vereiste software van de berichtmakelaar (zoals  [!DNL RabbitMQ]) voor op-gebouw installaties van Adobe Commerce te installeren en te vormen.
 exl-id: ae6200d6-540f-46b3-92ba-7df7f6bb6fae
-source-git-commit: ddf988826c29b4ebf054a4d4fb5f4c285662ef4e
+source-git-commit: 73faaa2a3b9ce773e9a381d103735403966f568b
 workflow-type: tm+mt
-source-wordcount: '544'
+source-wordcount: '546'
 ht-degree: 0%
 
 ---
 
-# Berichtenmakelaar
+# Berichtenmakelaar (RabbitMQ)
 
 Adobe Commerce gebruikt de open-source berichtbroker van [!DNL RabbitMQ] . Het biedt een betrouwbaar, hoogst beschikbaar, scalable, en draagbaar overseinensysteem aan.
 

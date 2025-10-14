@@ -2,9 +2,9 @@
 title: Releasebeleid
 description: Meer informatie over de verschillende typen Adobe Commerce-releases.
 exl-id: 61a83de6-6a7b-4a88-8fff-1638b4fe472a
-source-git-commit: 55512521254c49511100a557a4b00cf3ebee0311
+source-git-commit: fd2ebc358850e47975ce6a3b8df058774440bcf2
 workflow-type: tm+mt
-source-wordcount: '810'
+source-wordcount: '746'
 ht-degree: 0%
 
 ---
@@ -61,15 +61,6 @@ Pre-General Availability-releases van Adobe Commerce-functies worden openbaar ge
 
 Beta-releases kunnen defecten bevatten en worden geleverd als &quot;AS IS&quot; zonder enige garantie. Adobe is niet verplicht om Beta-releases te onderhouden, te corrigeren, bij te werken, te wijzigen of anderszins te ondersteunen (via Adobe Support Services of anderszins). Klanten mogen niet vertrouwen op de correcte werking of prestaties van Beta-releases of begeleidende documentatie of materialen. Bijgevolg is elk gebruik van de Beta-releases volledig op eigen risico van een klant.
 
-## Functies, cloudinfrastructuur en uitbreidingsrelease
-
-Cloudinfrastructuur- en functiereleases bevatten nieuwe functies en functies-updates die als onafhankelijke services worden geleverd, apart van patchreleases. Voorbeelden zijn onder meer:
-
-- Updates voor cloudhostservices en -infrastructuur
-- B2B
-- SaaS-producten (Catalog Service, Data Connection, Product Recommendations en Live Search)
-- Uitbreidingstechnologie (Admin UI SDK, API Mesh, App Builder Starter Kits, Event, en Webhooks)
-
 ## Hotfix
 
 Hotfixes zijn flarden die high-impact veiligheid of kwaliteitsmoeilijke situaties, zoals moeilijke situaties aan nul-dag kwetsbaarheid bevatten, die vele verkopers beïnvloeden. Adobe brengt hotfixes (indien nodig) voor ondersteunde Adobe Commerce-versies uit wanneer deze van invloed zijn op kritieke beveiligings- of kwaliteitsproblemen. Hotfixes worden gepubliceerd aan de [ Bekende sectie van Kwesties ](https://support.magento.com/hc/en-us/sections/360003869892-Known-issues-patches-attached-) van de Kennisbank. Deze correcties zijn opgenomen in de volgende geplande patchrelease.
@@ -86,14 +77,14 @@ Afzonderlijke patches bevatten oplossingen voor een bepaalde kwestie met een lag
 >
 >Afzonderlijke patches bevatten geen achterwaarts incompatibele wijzigingen.
 
-## Geïsoleerde patch
+## Geïsoleerde beveiligingsoplossingen
 
-Geïsoleerde patches zijn beveiligingsoplossingen die onafhankelijk van een volledige beveiligingspatch worden vrijgegeven om een snellere implementatie mogelijk te maken. Elke geïsoleerde patch is gericht op een specifiek beveiligingsprobleem en is opgenomen in de meest recente of een aanstaande volledige beveiligingspatch. De details over de kwestie worden verstrekt in het verwante veiligheidsbulletin, dat met een artikel van de Kennisbank (KB) verbindt die de fixdetails, hoe te om het flard, en extra informatie bevatten toe te passen.
+Geïsoleerde patches zijn niet-cumulatieve beveiligingsoplossingen die onafhankelijk van een volledige beveiligingspatch worden vrijgegeven om een snellere implementatie mogelijk te maken. Elke geïsoleerde veiligheidsmoeilijke situatie richt een specifiek veiligheidsprobleem en of inbegrepen in het recentste of een aanstaande volledige veiligheidspatch. De details over de kwestie worden verstrekt in het verwante veiligheidsbulletin, dat met een artikel van de Kennisbank (KB) verbindt die de fixdetails, hoe te om de moeilijke situatie, en extra informatie bevatten toe te passen.
 
-Zie het [ Centrum van de Veiligheid ](https://helpx.adobe.com/nl/security/products/magento.html) om de recentste veiligheidsupdates beschikbaar voor Adobe Commerce te vinden.
+Zie het [ Centrum van de Veiligheid ](https://helpx.adobe.com/security/products/magento.html) om de recentste veiligheidsupdates beschikbaar voor Adobe Commerce te vinden.
 
 ## Aangepaste patch
 
-Gemaakt door niet-Adobe-personeel om een probleem op te lossen of om verschillende redenen de Adobe Commerce-code te wijzigen. De flarden van de douane worden geleverd door het [ Hulpmiddel van de Patches van de Kwaliteit ](https://experienceleague.adobe.com/nl/docs/commerce-operations/tools/quality-patches-tool/usage).
+Gemaakt door niet-Adobe-personeel om een probleem op te lossen of om verschillende redenen de Adobe Commerce-code te wijzigen. De flarden van de douane worden geleverd door het [ Hulpmiddel van de Patches van de Kwaliteit ](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/usage).
 
 <!-- Last updated from includes: 2025-05-28 16:37:31 -->

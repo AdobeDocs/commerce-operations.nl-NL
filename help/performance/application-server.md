@@ -2,9 +2,9 @@
 title: GraphQL Application Server
 description: Meer informatie over de grafische toepassingsserver in Adobe Commerce. Ontdek implementatierichtlijnen en optimalisatiestrategieën.
 exl-id: 9b223d92-0040-4196-893b-2cf52245ec33
-source-git-commit: 10f324478e9a5e80fc4d28ce680929687291e990
+source-git-commit: cb89f0c0a576cf6cd8b53a4ade12c21106e2cdf3
 workflow-type: tm+mt
-source-wordcount: '2212'
+source-wordcount: '2360'
 ht-degree: 0%
 
 ---
@@ -14,11 +14,11 @@ ht-degree: 0%
 
 Met de Commerce GraphQL Application Server kan Adobe Commerce de status onderhouden van Commerce GraphQL API-aanvragen. De Server van de Toepassing van GraphQL, die op de uitbreiding van de Steekproef wordt voortgebouwd, werkt als proces met arbeidersdraden die verzoekverwerking behandelen. GraphQL Application Server bewaart de status van een bootstrapped toepassing bij GraphQL API-aanvragen en verbetert de verwerking van aanvragen en de algehele productprestaties. API-aanvragen worden aanzienlijk efficiënter.
 
-GraphQL Application Server is alleen beschikbaar voor Adobe Commerce. Deze is niet beschikbaar voor Magento Open Source. Voor de Pro projecten van de Wolk, moet u [&#x200B; een 1&rbrace; kaartje van de Steun van Adobe Commerce voorleggen om de Server van de Toepassing van GraphQL toe te laten.](https://experienceleague.adobe.com/nl/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide)
+GraphQL Application Server is alleen beschikbaar voor Adobe Commerce. Deze is niet beschikbaar voor Magento Open Source. Voor de Pro projecten van de Wolk, moet u [ een 1} kaartje van de Steun van Adobe Commerce voorleggen om de Server van de Toepassing van GraphQL toe te laten.](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide)
 
 >[!NOTE]
 >
->GraphQL Application Server is momenteel niet compatibel met [[!DNL Amazon Simple Storage Service (AWS S3)] &#x200B;](https://aws.amazon.com/s3/) . Adobe Commerce op klanten van de wolkeninfrastructuur die momenteel [!DNL AWS S3] voor [&#x200B; verre opslag &#x200B;](../configuration/remote-storage/cloud-support.md) gebruiken kan de Server van de Toepassing van GraphQL niet gebruiken.
+>GraphQL Application Server is momenteel niet compatibel met [[!DNL Amazon Simple Storage Service (AWS S3)] ](https://aws.amazon.com/s3/) . Adobe Commerce op klanten van de wolkeninfrastructuur die momenteel [!DNL AWS S3] voor [ verre opslag ](../configuration/remote-storage/cloud-support.md) gebruiken kan de Server van de Toepassing van GraphQL niet gebruiken.
 
 ## Architectuur
 
@@ -43,7 +43,7 @@ Voor het uitvoeren van GraphQL Application Server is het volgende vereist:
 
 ### Cloud-projecten
 
-Adobe Commerce on cloud Infrastructure-projecten hebben standaard de extensie SWOLE. U kunt [&#x200B; &#x200B;](https://experienceleague.adobe.com/nl/docs/commerce-on-cloud/user-guide/configure/app/php-settings#enable-extensions) het in het `runtime` bezit van het `.magento.app.yaml` dossier toelaten. Bijvoorbeeld:
+Adobe Commerce on cloud Infrastructure-projecten hebben standaard de extensie SWOLE. U kunt [ ](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/configure/app/php-settings#enable-extensions) het in het `runtime` bezit van het `.magento.app.yaml` dossier toelaten. Bijvoorbeeld:
 
 ```yaml
 runtime:
@@ -53,7 +53,7 @@ runtime:
 
 ### Projecten ter plaatse
 
-U moet manueel [&#x200B; installeren en &#x200B;](#install-and-configure-swoole) vormen de uitbreiding van PHP van de Steek voor op-gebouwprojecten.
+U moet manueel [ installeren en ](#install-and-configure-swoole) vormen de uitbreiding van PHP van de Steek voor op-gebouwprojecten.
 
 ## Inschakelen en implementeren op cloudinfrastructuur
 
@@ -67,8 +67,8 @@ Met de module `ApplicationServer` (`Magento/ApplicationServer/` ) schakelt u Gra
 
 Nadat de eigenschap van de Server van de Toepassing op uw Proproject wordt toegelaten, voltooi de volgende stappen alvorens de Server van de Toepassing van GraphQL op te stellen:
 
-1. Stel Adobe Commerce op wolkeninfrastructuur op gebruikend het wolkenmalplaatje van [&#x200B; 2.4.7-appserver tak &#x200B;](https://github.com/magento/magento-cloud/tree/2.4.7-appserver).
-1. Zorg ervoor dat al uw aanpassingen en uitbreidingen van Commerce [&#x200B; &#x200B;](https://developer.adobe.com/commerce/php/development/components/app-server/) met de Server van de Toepassing van GraphQL compatibel zijn.
+1. Stel Adobe Commerce op wolkeninfrastructuur op gebruikend het wolkenmalplaatje van [ 2.4.7-appserver tak ](https://github.com/magento/magento-cloud/tree/2.4.7-appserver).
+1. Zorg ervoor dat al uw aanpassingen en uitbreidingen van Commerce [ ](https://developer.adobe.com/commerce/php/development/components/app-server/) met de Server van de Toepassing van GraphQL compatibel zijn.
 1. Clone your Commerce Cloud project.
 1. Pas indien nodig de instellingen in het bestand &#39;application-server/nginx.conf.sample&#39; aan.
 1. Maak een volledige commentaarregel van de actieve sectie &#39;Web&#39; in het `project_root/.magento.app.yaml` -bestand.
@@ -113,7 +113,7 @@ git push
 
 Voltooi de volgende stappen alvorens de Server van de Toepassing van GraphQL op de projecten van de Aanzet op te stellen:
 
-1. Stel Adobe Commerce op wolkeninfrastructuur op gebruikend het wolkenmalplaatje van [&#x200B; 2.4.7-appserver tak &#x200B;](https://github.com/magento/magento-cloud/tree/2.4.7-appserver).
+1. Stel Adobe Commerce op wolkeninfrastructuur op gebruikend het wolkenmalplaatje van [ 2.4.7-appserver tak ](https://github.com/magento/magento-cloud/tree/2.4.7-appserver).
 1. Zorg ervoor dat al uw Commerce-aanpassingen en -extensies compatibel zijn met GraphQL Application Server.
 1. Controleer of de omgevingsvariabele `CRYPT_KEY` voor uw instantie is ingesteld. U kunt de status van deze variabele controleren in de Cloud Console.
 1. Clone your Commerce Cloud project.
@@ -273,7 +273,7 @@ Voltooi de volgende stappen alvorens de Server van de Toepassing van GraphQL op 
 
 >[!NOTE]
 >
->Zorg ervoor dat alle aangepaste instellingen in het basisbestand van `.magento.app.yaml` op de juiste wijze naar het `application-server/.magento/.magento.app.yaml` -bestand worden gemigreerd. Nadat het `application-server/.magento/.magento.app.yaml` dossier aan uw project wordt toegevoegd, zou u het naast het wortel `.magento.app.yaml` dossier moeten handhaven. Bijvoorbeeld, als u de dienst RabbitMQ [&#x200B; moet vormen of &#x200B;](https://experienceleague.adobe.com/nl/docs/commerce-on-cloud/user-guide/configure/service/rabbitmq) Webeigenschappen [&#x200B; beheert u de zelfde configuratie aan &#x200B;](https://experienceleague.adobe.com/nl/docs/commerce-on-cloud/user-guide/configure/app/properties/web-property) eveneens zou moeten toevoegen.`application-server/.magento/.magento.app.yaml`
+>Zorg ervoor dat alle aangepaste instellingen in het basisbestand van `.magento.app.yaml` op de juiste wijze naar het `application-server/.magento/.magento.app.yaml` -bestand worden gemigreerd. Nadat het `application-server/.magento/.magento.app.yaml` dossier aan uw project wordt toegevoegd, zou u het naast het wortel `.magento.app.yaml` dossier moeten handhaven. Bijvoorbeeld, als u de dienst RabbitMQ [ moet vormen of ](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/configure/service/rabbitmq) Webeigenschappen [ beheert u de zelfde configuratie aan ](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/configure/app/properties/web-property) eveneens zou moeten toevoegen.`application-server/.magento/.magento.app.yaml`
 
 ### Inschakelen voor cloudprojecten verifiëren
 
@@ -322,7 +322,7 @@ Voer de volgende stappen uit voordat u de module `ApplicationServer` inschakelt:
 
 #### Nginx configureren
 
-Uw specifieke Commerce-implementatie bepaalt hoe u Nginx kunt configureren. In het algemeen wordt het Nginx-configuratiebestand standaard met de naam `nginx.conf` geplaatst en in een van de volgende mappen geplaatst: `/usr/local/nginx/conf`, `/etc/nginx` of `/usr/local/etc/nginx` . Zie de _[Gids van de Begin &#x200B;](https://nginx.org/en/docs/beginners_guide.html)_ voor meer informatie bij het vormen van Nginx.
+Uw specifieke Commerce-implementatie bepaalt hoe u Nginx kunt configureren. In het algemeen wordt het Nginx-configuratiebestand standaard met de naam `nginx.conf` geplaatst en in een van de volgende mappen geplaatst: `/usr/local/nginx/conf`, `/etc/nginx` of `/usr/local/etc/nginx` . Zie de _[Gids van de Begin ](https://nginx.org/en/docs/beginners_guide.html)_ voor meer informatie bij het vormen van Nginx.
 
 Voorbeeld-Nginxconfiguratie:
 
@@ -432,7 +432,7 @@ GraphQL Application Server voegt de header `X-Backend` response met de waarde `g
 
 ### Compatibiliteit met extensies en aanpassingen bevestigen
 
-De ontwikkelaars en de handelaars van de uitbreiding zouden eerst moeten verifiëren dat hun uitbreiding en aanpassingscode aan de richtlijnen naleven die in _[worden beschreven Technische richtlijnen &#x200B;](https://developer.adobe.com/commerce/php/coding-standards/technical-guidelines/)_.
+De ontwikkelaars en de handelaars van de uitbreiding zouden eerst moeten verifiëren dat hun uitbreiding en aanpassingscode aan de richtlijnen naleven die in _[worden beschreven Technische richtlijnen ](https://developer.adobe.com/commerce/php/coding-standards/technical-guidelines/)_.
 
 Overweeg deze richtlijnen tijdens codeevaluatie:
 
@@ -537,3 +537,30 @@ Deze bestanden kunnen worden geïnspecteerd met elk gereedschap dat u gebruikt o
 >[!NOTE]
 >
 >`--state-monitor` is niet compatibel met PHP-versies `8.3.0` - `8.3.4` vanwege een bug in de PHP-opschoonfunctie. Als u PHP 8.3 gebruikt, moet u een upgrade uitvoeren naar `8.3.5` of hoger om deze functie te kunnen gebruiken.
+
+## Alternatieve headers configureren voor client IP-detectie
+
+GraphQL Application Server biedt standaard ondersteuning voor een standaardconfiguratie voor de header `x-forwarded-for` die is gedefinieerd in het `app/etc/di.xml` -bestand, zodat het IP-adres van de client correct kan worden opgehaald in gangbare proxy- en CDN-omgevingen.
+
+Als u aanvullende of aangepaste kopteksten (zoals `x-client-ip` , `fastly-client-ip` of `x-real-ip` ) moet ondersteunen, kunt u het argument `alternativeHeaders` in het `app/etc/di.xml` -bestand uitbreiden of overschrijven. Dit is alleen nodig als uw omgeving andere headers dan `x-forwarded-for` gebruikt om het IP-adres van de client door te geven.
+
+Als u bijvoorbeeld ondersteuning voor andere headers wilt toevoegen, werkt u de `app/etc/di.xml` als volgt bij:
+
+```xml
+<type name="Magento\Framework\HTTP\PhpEnvironment\RemoteAddress">
+    <arguments>
+        <argument name="alternativeHeaders" xsi:type="array">
+            <item name="x-client-ip" xsi:type="string">HTTP_X_CLIENT_IP</item>
+            <item name="fastly-client-ip" xsi:type="string">HTTP_FASTLY_CLIENT_IP</item>
+            <item name="x-real-ip" xsi:type="string">HTTP_X_REAL_IP</item>
+            <item name="x-forwarded-for" xsi:type="string">HTTP_X_FORWARDED_FOR</item>
+        </argument>
+    </arguments>
+</type>
+```
+
+U kunt de kopballen toevoegen, verwijderen of herschikken zonodig om ervoor te zorgen dat cliëntIP van de correcte bron voor uw opstelling wordt teruggewonnen.
+
+>[!NOTE]
+>
+>Als u Adobe Commerce Cloud gebruikt met de Fastly CDN-module, wordt deze configuratie automatisch verwerkt en zijn er geen handmatige wijzigingen vereist. Handmatige configuratie is alleen nodig voor aangepaste CDN-, proxy- of niet-standaard koptekstinstellingen.

@@ -1,78 +1,37 @@
 ---
-title: Releaseplanning
-description: Leer wanneer Adobe nieuwe functies en releases voor Adobe Commerce wil aankondigen. Ontdek de komende patchschema's en de tijdlijnen van de eigenschaplevering voor betere planning.
+title: Patchrelease-schema
+description: Leer wanneer Adobe de release van nieuwe patches en beveiligingsoplossingen voor Adobe Commerce wil aankondigen.
 exl-id: ae1e09cd-966f-44a3-9e4d-b90bb838429d
-source-git-commit: 10f324478e9a5e80fc4d28ce680929687291e990
+source-git-commit: 5f9f0e1dab7f5e4580f077693039ea387df23880
 workflow-type: tm+mt
-source-wordcount: '493'
+source-wordcount: '297'
 ht-degree: 0%
 
 ---
 
 
-# Releaseplanning
+# Patchrelease-schema
 
-Adobe streeft voortdurend naar het juiste evenwicht tussen het maken van productverbeteringen eenvoudig en voorspelbaar terwijl het leveren van verbeteringen en nieuwe eigenschappen aan vroege adopters sneller (zie [&#x200B; versioning beleid &#x200B;](versioning-policy.md)). Het doel van dit schema is om data te geven waarop Adobe van plan is de introductie van belangrijke nieuwe functies aan te kondigen.
+Adobe streeft voortdurend naar het juiste evenwicht tussen het maken van productverbeteringen eenvoudig en voorspelbaar terwijl het leveren van verbeteringen aan vroege adopters sneller (zie [ versioning beleid ](versioning-policy.md)).
 
-## Functies, cloudinfrastructuur en uitbreidbaarheid
-
-Nieuwe functies, functie-updates, cloudinfrastructuur en uitbreidbaarheidsupdates worden onafhankelijk van patchreleases geleverd en zijn beschikbaar via externe modules, extensies, gereedschappen of webservices. Voorbeelden zijn:
-
-- ![&#x200B; &#x200B;](../assets/icons/feature.svg) Eigenschappen en functionaliteit [**&#x200B;** het pictogram van de Eigenschap van 0&rbrace; &lbrace;](https://experienceleague.adobe.com/nl/docs/commerce/user-guides/release-information/release-notes-all) - Nieuwe eigenschappen en functionaliteit die onafhankelijk van flardversies worden geleverd. Bijvoorbeeld, [&#x200B; B2B &#x200B;](https://experienceleague.adobe.com/nl/docs/commerce-admin/b2b/release-notes), de Dienst van de Catalogus, de Verbinding van Gegevens, Levend Onderzoek, en de Aanbevelingen van het Product.
-
-- ![&#x200B; &#x200B;](../assets/icons/servers.svg) het pictogram van de Infrastructuur van de Infrastructuur 1&rbrace; [**&#x200B;** - Nieuwe eigenschappen en verhogingen aan Adobe Commerce op wolkeninfrastructuur en de Reeks van Hulpmiddelen van de Wolk voor de pakketten van Commerce, die de installaties en verbeteringen van Adobe Commerce op het platform van de Wolk opstellen en beheren.](https://experienceleague.adobe.com/nl/docs/commerce-on-cloud/user-guide/release-notes/cloud-tools-suite)
-
-- ![&#x200B; het pictogram van de Rekbaarheid &#x200B;](../assets/icons/brackets.svg) [**Uitbreidbaarheid** &#x200B;](https://developer.adobe.com/commerce/extensibility/) - Nieuwe ontwikkelaarshulpmiddelen en de diensten voor uit-van-procesrekbaarheid die onafhankelijk van flardversies wordt geleverd. Bijvoorbeeld: Integration Starter Kit, Admin UI SDK, Adobe I/O Events for Commerce en API Mesh.
-
-De volgende lijst bevat de datums voor geplande functies, cloudinfrastructuur en uitbreidbaarheidsreleases (datums kunnen worden gewijzigd):
-
-- 11 februari 2025
-- 8 april 2025
-- 10 juni 2025
-- 12 augustus 2025
-- 14 oktober 2025
+Het doel van dit programma is data te verstrekken voor wanneer Adobe van plan is de versie van [ flarden ](versioning-policy.md#patch-release) voor elke gesteunde versielijn van de kernAdobe Commerce PHP toepassing aan te kondigen. De versies van de flard zijn kansen om de kern codebase te bevorderen om uw platform veilig, betrouwbaar, en prestatieshoog te houden.
 
 >[!NOTE]
 >
->De functies, de cloudinfrastructuur en de uitbreidbaarheidsreleases kunnen het hele jaar door variëren. Adobe geeft echter regelmatig en voortdurend verbeteringen voor deze gebieden door tussen de data die op deze pagina zijn vermeld. Zie [&#x200B; wat is Adobe Commerce?](https://business.adobe.com/products/magento/magento-commerce.html) voor meer informatie over de nieuwste functies.
+>Om meer over nieuwe eigenschappen, wolkeninfrastructuur, en uitbreidingsversies te leren, zie de [ de versiedocumentatie van de Diensten van Adobe Commerce ](https://experienceleague.adobe.com/en/docs/commerce/user-guides/release-information/release-notes-all).
 
-## Patches
+Naast de geplande kwaliteit, veiligheid, en bètaflarden die op deze pagina worden vermeld, verleent Adobe toegang tot [ individuele flarden ](versioning-policy.md#individual-patch) door het [ Hulpmiddel van de Patches van de Kwaliteit ](../tools/quality-patches-tool/usage.md). Met dit gereedschap kunt u algemene informatie over alle afzonderlijke patches die beschikbaar zijn voor de geïnstalleerde versie van Adobe Commerce, toepassen, herstellen en weergeven.
 
-Adobe geeft ook [&#x200B; flarden &#x200B;](versioning-policy.md#patch-release) voor elke gesteunde versielijn van de kernAdobe Commerce PHP toepassing vrij. De versies van de flard zijn kansen om de kern codebase te bevorderen om uw platform veilig, betrouwbaar, en prestatieshoog te houden.
+Vanaf januari 2026 gaat Adobe Commerce over naar een maandelijks patchreleaseschema met de volgende strategie:
 
-Naast de geplande kwaliteit, veiligheid, en bètaflarden die op deze pagina worden vermeld, verleent Adobe toegang tot [&#x200B; individuele flarden &#x200B;](versioning-policy.md#individual-patch) door het [&#x200B; Hulpmiddel van de Patches van de Kwaliteit &#x200B;](../tools/quality-patches-tool/usage.md). Met dit gereedschap kunt u algemene informatie over alle afzonderlijke patches die beschikbaar zijn voor de geïnstalleerde versie van Adobe Commerce, toepassen, herstellen en weergeven.
+- **Geïsoleerde veiligheidsmoeilijke situaties** - Individuele, niet-cumulatieve [ veiligheidsmoeilijke situaties ](versioning-policy.md#isolated-patch) kunnen maandelijks worden vrijgegeven en veiligheidsmoeilijke situaties voor alle [ omvatten ](lifecycle-policy.md) gesteunde versielijnen (omvat regelmatige en uitgebreide steun).
 
-De volgende tabel bevat de datums voor geplande patchreleases (datums kunnen worden gewijzigd):
+- **de flarden van de Veiligheid** - bij minimium, [ veiligheidspatches ](versioning-policy.md#security-patch-release) worden vrijgegeven jaarlijks (Mei) voor alle [ gesteunde ](lifecycle-policy.md) versielijnen. Deze flarden omvatten alle eerder vrijgegeven geïsoleerde veiligheidsmoeilijke situaties. Adobe kan indien nodig in november extra beveiligingspatches vrijgeven, maar dit is niet gegarandeerd.
 
-<table>
-<thead>
-  <tr>
-    <th>Algemene beschikbaarheid</th>
-    <th>Patches</th>
-  </tr>
-</thead>
-<tbody>
-  <tr>
-  <tr>
-    <td>11 februari 2025</td>
-    <td><img alt="Patchvrijgavepictogram" src="../assets/icons/file-code.svg"></img> <a href="versioning-policy.md#beta-patch-release"> het flard van Beta </a>: 2.4.8-bèta2 <br><img alt="Patchvrijgavepictogram" src="../assets/icons/file-code.svg"></img> <a href="release-notes/security/overview.md"> flarden van de Veiligheid </a>: voor 2.4.7, 2.4.6, 2.4.5, en 2.4.4</td>
-  </tr>
-  <tr>
-    <tr>
-    <td>8 april 2025</td>
-    <td><img alt="Patchvrijgavepictogram" src="../assets/icons/file-code.svg"></img> <a href="release-notes/commerce/overview.md"><strong> Adobe Commerce 2.4.8 </a></strong>:<ul><li>Prestatieverbeteringen</li><li>Kwaliteitsverbeteringen</li><li>Verbeterde beveiliging</li><li>Afhankelijkheidsupdates van derden</li></ul><img alt="Patchvrijgavepictogram" src="../assets/icons/file-code.svg"></img> <a href="release-notes/security/overview.md"> de flarden van de Veiligheid </a>: voor 2.4.7, 2.4.6, 2.4.5, en 2.4.4</td>
-  </tr>
-  <tr>
-    <td>10 juni 2025</td>
-    <td><img alt="Patchvrijgavepictogram" src="../assets/icons/file-code.svg"></img> <a href="versioning-policy.md#alpha-patch-release"> het flard van Alpha </a>: 2.4.9-alpha1 <br><img alt="Patchvrijgavepictogram" src="../assets/icons/file-code.svg"></img> <a href="release-notes/security/overview.md"> flarden van de Veiligheid </a>: voor 2.4.8, 2.4.7, 2.4.6, en 2.4.5</td>
-  </tr>
-  <tr>
-    <td>12 augustus 2025</td>
-    <td><img alt="Patchvrijgavepictogram" src="../assets/icons/file-code.svg"></img> <a href="versioning-policy.md#alpha-patch-release"> het flard van Alpha </a>: 2.4.9-alpha2 <br><img alt="Patchvrijgavepictogram" src="../assets/icons/file-code.svg"></img> <a href="release-notes/security/overview.md"> flarden van de Veiligheid </a>: voor 2.4.8, 2.4.7, 2.4.6, en 2.4.5</td>
-  </tr>
-  <tr>
-    <td>14 oktober 2025</td>
-    <td><img alt="Patchvrijgavepictogram" src="../assets/icons/file-code.svg"></img> <a href="versioning-policy.md#alpha-patch-release"> het flard van Alpha </a>: 2.4.9-alpha3 <br><img alt="Patchvrijgavepictogram" src="../assets/icons/file-code.svg"></img> <a href="release-notes/security/overview.md"> flarden van de Veiligheid </a>: voor 2.4.8, 2.4.7, en 2.4.6</td>
-  </tr>
-</tbody>
-</table>
+- **Reparatie** - een volledig [ flard ](versioning-policy.md#patch-release) voor Adobe Commerce 2.4.x LTS versielijn (3 jaar steunperiode) wordt jaarlijks vrijgegeven (Mei).
+
+- **de flarden van Beta** - Twee [ bètaflarden ](versioning-policy.md#beta-patch-release) voor Adobe Commerce 2.4.x LTS worden de versielijn tweemaal per jaar vrijgegeven (Maart en november).
+
+Zie de volgende afbeelding voor meer informatie:
+
+![ 2026 de versiekalender van Adobe Commerce ](../assets/release/release-calendar.drawio.svg)

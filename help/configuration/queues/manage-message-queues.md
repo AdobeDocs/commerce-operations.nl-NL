@@ -2,16 +2,16 @@
 title: Berichtenrijen beheren
 description: Leer hoe u berichtrijen van de bevellijn voor Adobe Commerce kunt beheren.
 exl-id: 619e5df1-39cb-49b6-b636-618b12682d32
-source-git-commit: 8dce1f1e961ec02d7783a7423a51a7d4567dce79
+source-git-commit: 47525e8d8379061b254bfa90ab46e27a1ee2f524
 workflow-type: tm+mt
-source-wordcount: '387'
+source-wordcount: '427'
 ht-degree: 0%
 
 ---
 
 # Berichtenrijen beheren
 
-U kunt berichtrijen van de bevellijn beheren gebruikend kroonbanen of een externe procesmanager om ervoor te zorgen dat de consumenten berichten terugwinnen.
+U kunt berichtrijen van de bevellijn beheren gebruikend kroonbanen of een externe procesmanager om ervoor te zorgen dat de consumenten berichten terugwinnen. Dit geldt voor alle ondersteunde berichtbrokers, waaronder RabbitMQ (AMQP), Apache ActiveMQ Artemis (STOMP) en MySQL-adapter.
 
 ## Procesbeheer
 
@@ -49,7 +49,7 @@ U kunt een procesmanager zoals [ Supervisor ](https://supervisord.readthedocs.io
 
 >[!INFO]
 >
->Als uw Adobe Commerce-winkel op het Cloud-platform wordt gehost, gebruikt u [`CRON_CONSUMERS_RUNNER` ](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure/env/stage/variables-deploy.html?lang=nl-NL#cron_consumers_runner) om de `consumers_runner` cron-taak te configureren.
+>Als uw Adobe Commerce-winkel op het Cloud-platform wordt gehost, gebruikt u [`CRON_CONSUMERS_RUNNER` ](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure/env/stage/variables-deploy.html#cron_consumers_runner) om de `consumers_runner` cron-taak te configureren.
 
 ### Specifieke configuratie
 
@@ -78,10 +78,14 @@ Bewerk het bestand `/app/etc/env.php` om de uitsnijdtaak te configureren `consum
 
   >[!INFO]
   >
-  >Het wordt niet geadviseerd om veelvoudige consumenten op een MySQL-Bediende rij in werking te stellen. Zie [ het berichtrij van de Verandering van MySQL aan AMQP ](https://developer.adobe.com/commerce/php/development/components/message-queues/#change-message-queue-from-mysql-to-amqp) voor meer informatie.
+  >Het wordt niet geadviseerd om veelvoudige consumenten op een MySQL-Bediende rij in werking te stellen. Zie [ het berichtrij van de Verandering van MySQL aan externe makelaars ](https://developer.adobe.com/commerce/php/development/components/message-queues/#change-message-queue-from-mysql-to-external-brokers) voor meer informatie over het schakelen naar AMQP (RabbitMQ) of STOMP (ActiveMQ Artemis).
 
   >[!INFO]
   >
-  >Als uw opslag van Adobe Commerce op het platform van de Wolk wordt ontvangen, gebruik [`CONSUMERS_WAIT_FOR_MAX_MESSAGES` ](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure/env/stage/variables-deploy.html?lang=nl-NL#consumers_wait_for_max_messages) om te vormen hoe de consumenten berichten van de berichtrij verwerken.
+  >Als uw opslag van Adobe Commerce op het platform van de Wolk wordt ontvangen, gebruik [`CONSUMERS_WAIT_FOR_MAX_MESSAGES` ](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure/env/stage/variables-deploy.html#consumers_wait_for_max_messages) om te vormen hoe de consumenten berichten van de berichtrij verwerken.
+
+  >[!NOTE]
+  >
+  >ActiveMQ Artemis (STOMP) werd geïntroduceerd in Adobe Commerce 2.4.6 en latere versies.
 
 Zie [ de gebruikers van de het berichtrij van het Begin ](../cli/start-message-queues.md).

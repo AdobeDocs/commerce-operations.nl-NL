@@ -2,9 +2,9 @@
 title: Beta-releases
 description: Leer meer over de bètareleases van Adobe Commerce en hoe u hieraan kunt deelnemen.
 exl-id: 662cb061-995f-4e09-a2ef-9e607cc0000b
-source-git-commit: 879160b11fe4840eb3af97c64f080deb5f002827
+source-git-commit: d467ada97a81d64dff358bc83acd489f69ba0677
 workflow-type: tm+mt
-source-wordcount: '862'
+source-wordcount: '1021'
 ht-degree: 0%
 
 ---
@@ -28,9 +28,32 @@ Het krijgen van vroege toegang tot eigenschappen die Adobe ontwikkelt verstrekt 
 
 Zie de volgende secties voor een lijst van actieve bètaprogramma&#39;s.
 
+### Cloud Automation Patching Service (Private Beta)
+
+De [ Dienst van het Patching van de Automatisering van de Wolk ](../tools/caps-tool/intro.md) automatiseert het proces om geïsoleerde veiligheidspatches op uw [ Adobe Commerce op de milieu&#39;s van de Infrastructuur van de Wolk toe te passen ](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/overview).
+
+In oktober 2025, zal de bètaversie van de het Patcheren van de Automatisering van de Wolk de Dienst aan het [ het hulpmiddeldashboard van de Analyse van plaats-brede ](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/site-wide-analysis-tool/dashboard) worden toegevoegd. Deze service biedt ondersteuning voor Commerce-projectbeheerders met een gestroomlijnde patchworkflow die het volgende omvat:
+
+- Geautomatiseerde patchinstallatie
+- Terugwinning terugdraaien
+- Verificatie na de implementatie.
+
+De service zorgt ervoor dat u veilige, stabiele en bijgewerkte omgevingen kunt onderhouden met minimale handmatige inspanningen en risico&#39;s.
+
+De bètaversie bevat de volgende functies:
+
+- **automatiseer flardinstallatie**: Vereenvoudig en automatiseer het proces om kritieke kwetsbaarheid over milieu&#39;s te patchen.
+- **minimaliseer risico**: Vermijd plaatsstroomonderbrekingen met post-plaatsingsgezondheidscontrole en terugdraaimogelijkheden.
+
+>[!NOTE]
+>
+>Aangezien de Dienst van het Patching van de Automatisering van de Wolk automatisch geïsoleerde veiligheidspatches toepast, moet u de [ Medewerker of rol van Admin van het Project hebben ](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/project/user-access) om het te gebruiken.
+
+Om aan deze bèta deel te nemen, voltooi en voorleg de [ Dienst van het Patching van de Automatisering van de Wolk - de Vorm van de Registratie van Beta ](https://forms.office.com/r/3Wfxj5nPdB).
+
 ### Verbeterde zoekmogelijkheden voor Live zoeken (Public Beta)
 
-Deze bèta steunt drie nieuwe mogelijkheden in [`productSearch` vraag ](https://developer.adobe.com/commerce/services/graphql/live-search/product-search/):
+Deze bèta steunt drie nieuwe mogelijkheden in [`productSearch` vraag ](https://developer.adobe.com/commerce/webapi/graphql/schema/live-search/queries/product-search/):
 
 - **Gelaagd onderzoek** - Onderzoek binnen een andere onderzoekscontext - met dit vermogen, kunt u tot twee lagen van onderzoek naar uw onderzoeksvragen ondernemen. Bijvoorbeeld:
 
@@ -48,11 +71,13 @@ Deze bèta steunt drie nieuwe mogelijkheden in [`productSearch` vraag ](https://
 
    - Zoeken naar een query binnen een grotere tekenreeks. Als een winkel bijvoorbeeld het productnummer &quot;PE-123&quot; zoekt in de tekenreeks &quot;HAPE-123&quot;.
 
-      - Nota: Dit onderzoekstype is verschillend van het bestaande [ uitdrukkingsonderzoek ](https://developer.adobe.com/commerce/services/graphql/live-search/product-search/#phrase), dat een autocomplete onderzoek uitvoert. Als de waarde van het kenmerk van het product bijvoorbeeld &quot;outdoorbroek&quot; is, retourneert een zoekopdracht met woordgroepen een reactie voor &quot;out pan&quot;, maar wordt geen reactie voor &quot;of ants&quot; geretourneerd. A contains search, echter, retourneert wel een reactie op ‘or ants’.
+     >[!NOTE]
+     >
+     >Dit onderzoekstype is verschillend van het bestaande [ uitdrukkingsonderzoek ](https://developer.adobe.com/commerce/webapi/graphql/schema/live-search/queries/product-search/), dat een autocomplete onderzoek uitvoert. Als de waarde van het kenmerk van het product bijvoorbeeld &quot;outdoorbroek&quot; is, retourneert een zoekopdracht met woordgroepen een reactie voor &quot;out pan&quot;, maar wordt geen reactie voor &quot;of ants&quot; geretourneerd. A contains search, echter, retourneert wel een reactie op ‘or ants’.
 
 Deze nieuwe voorwaarden verbeteren het het filtreren van de onderzoeksvraag mechanisme om onderzoeksresultaten te raffineren. Deze nieuwe voorwaarden hebben geen invloed op de hoofdzoekquery. Om aan bèta deel te nemen, verzend een e-mailverzoek naar [ handel-opslag-diensten ](mailto:commerce-storefront-services@adobe.com).
 
-Om Live Onderzoek bèta te installeren, zie de [ Levende gids van het Onderzoek ](https://experienceleague.adobe.com/nl/docs/commerce/live-search/install#install-the-live-search-beta).
+Om Live Onderzoek bèta te installeren, zie de [ Levende gids van het Onderzoek ](https://experienceleague.adobe.com/en/docs/commerce/live-search/install#install-the-live-search-beta).
 
 ### IBM Sterling Order Management System Integration (Private Beta)
 
@@ -74,7 +99,7 @@ Elke Adobe Commerce Foundation alfa- en bètaversie bevat alle wijzigingen die t
 - GraphQL-verbeteringen
 - Oplossingen voor algemene problemen met kwaliteit
 - Communautaire bijdragen
-- Veranderingen die worden vereist om verenigbaarheid met [ de diensten van Adobe Commerce ](https://experienceleague.adobe.com/nl/docs/commerce/user-guides/home) te steunen
+- Veranderingen die worden vereist om verenigbaarheid met [ de diensten van Adobe Commerce ](https://experienceleague.adobe.com/en/docs/commerce/user-guides/home) te steunen
 
 #### Naamgevingsconventie en -schema
 

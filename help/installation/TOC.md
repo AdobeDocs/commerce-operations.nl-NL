@@ -2,9 +2,9 @@
 user-guide-title: Installatiehandleiding
 user-guide-description: Leer hoe u Adobe Commerce installeert voor implementaties op locatie.
 feature: Install
-source-git-commit: 8d0d8f9822b88f2dd8cbae8f6d7e3cdb14cc4848
+source-git-commit: 73faaa2a3b9ce773e9a381d103735403966f568b
 workflow-type: tm+mt
-source-wordcount: '169'
+source-wordcount: '173'
 ht-degree: 0%
 
 ---
@@ -31,7 +31,9 @@ ht-degree: 0%
       - [Nginx configureren](prerequisites/search-engine/configure-nginx.md)
       - [Apache configureren](prerequisites/search-engine/configure-apache.md)
    - [PHP](prerequisites/php-settings.md)
-   - [Berichtenmakelaar](prerequisites/rabbitmq.md)
+   - Berichtenmakelaars {#message-brokers}
+      - [ Konijn MQ ](prerequisites/rabbitmq.md)
+      - [Active MQ](prerequisites/activemq.md)
    - [Beveiliging](prerequisites/security.md)
    - [Verificatietoetsen](prerequisites/authentication-keys.md)
    - [Adobe Commerce](prerequisites/commerce.md)
@@ -67,4 +69,4 @@ ht-degree: 0%
    - [Commerce verwijderen of opnieuw installeren](tutorials/uninstall.md)
    - [Thema&#39;s verwijderen](tutorials/themes.md)
    - [Het databaseschema bijwerken](tutorials/database-upgrade.md)
-- [ Terugkeer aan Operationele Gidsen ](https://experienceleague.adobe.com/docs/commerce-operations/operational-guides/home.html?lang=nl-NL)
+- [ Terugkeer aan Operationele Gidsen ](https://experienceleague.adobe.com/docs/commerce-operations/operational-guides/home.html)
