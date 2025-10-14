@@ -30,9 +30,9 @@ Zie de volgende secties voor een lijst van actieve bètaprogramma&#39;s.
 
 ### Cloud Automation Patching Service (Private Beta)
 
-De [&#x200B; Dienst van het Patching van de Automatisering van de Wolk &#x200B;](../tools/caps-tool/intro.md) automatiseert het proces om geïsoleerde veiligheidspatches op uw [&#x200B; Adobe Commerce op de milieu&#39;s van de Infrastructuur van de Wolk toe te passen &#x200B;](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/overview).
+De [&#x200B; Dienst van het Patching van de Automatisering van de Wolk &#x200B;](../tools/caps-tool/intro.md) automatiseert het proces om geïsoleerde veiligheidspatches op uw [&#x200B; Adobe Commerce op de milieu&#39;s van de Infrastructuur van de Wolk toe te passen &#x200B;](https://experienceleague.adobe.com/nl/docs/commerce-on-cloud/user-guide/overview).
 
-In oktober 2025, zal de bètaversie van de het Patcheren van de Automatisering van de Wolk de Dienst aan het [&#x200B; het hulpmiddeldashboard van de Analyse van plaats-brede &#x200B;](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/site-wide-analysis-tool/dashboard) worden toegevoegd. Deze service biedt ondersteuning voor Commerce-projectbeheerders met een gestroomlijnde patchworkflow die het volgende omvat:
+In oktober 2025, zal de bètaversie van de het Patcheren van de Automatisering van de Wolk de Dienst aan het [&#x200B; het hulpmiddeldashboard van de Analyse van plaats-brede &#x200B;](https://experienceleague.adobe.com/nl/docs/commerce-operations/tools/site-wide-analysis-tool/dashboard) worden toegevoegd. Deze service biedt ondersteuning voor Commerce-projectbeheerders met een gestroomlijnde patchworkflow die het volgende omvat:
 
 - Geautomatiseerde patchinstallatie
 - Terugwinning terugdraaien
@@ -47,7 +47,7 @@ De bètaversie bevat de volgende functies:
 
 >[!NOTE]
 >
->Aangezien de Dienst van het Patching van de Automatisering van de Wolk automatisch geïsoleerde veiligheidspatches toepast, moet u de [&#x200B; Medewerker of rol van Admin van het Project hebben &#x200B;](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/project/user-access) om het te gebruiken.
+>Aangezien de Dienst van het Patching van de Automatisering van de Wolk automatisch geïsoleerde veiligheidspatches toepast, moet u de [&#x200B; Medewerker of rol van Admin van het Project hebben &#x200B;](https://experienceleague.adobe.com/nl/docs/commerce-on-cloud/user-guide/project/user-access) om het te gebruiken.
 
 Om aan deze bèta deel te nemen, voltooi en voorleg de [&#x200B; Dienst van het Patching van de Automatisering van de Wolk - de Vorm van de Registratie van Beta &#x200B;](https://forms.office.com/r/3Wfxj5nPdB).
 
@@ -77,7 +77,7 @@ Deze bèta steunt drie nieuwe mogelijkheden in [`productSearch` vraag &#x200B;](
 
 Deze nieuwe voorwaarden verbeteren het het filtreren van de onderzoeksvraag mechanisme om onderzoeksresultaten te raffineren. Deze nieuwe voorwaarden hebben geen invloed op de hoofdzoekquery. Om aan bèta deel te nemen, verzend een e-mailverzoek naar [&#x200B; handel-opslag-diensten &#x200B;](mailto:commerce-storefront-services@adobe.com).
 
-Om Live Onderzoek bèta te installeren, zie de [&#x200B; Levende gids van het Onderzoek &#x200B;](https://experienceleague.adobe.com/en/docs/commerce/live-search/install#install-the-live-search-beta).
+Om Live Onderzoek bèta te installeren, zie de [&#x200B; Levende gids van het Onderzoek &#x200B;](https://experienceleague.adobe.com/nl/docs/commerce/live-search/install#install-the-live-search-beta).
 
 ### IBM Sterling Order Management System Integration (Private Beta)
 
@@ -99,7 +99,7 @@ Elke Adobe Commerce Foundation alfa- en bètaversie bevat alle wijzigingen die t
 - GraphQL-verbeteringen
 - Oplossingen voor algemene problemen met kwaliteit
 - Communautaire bijdragen
-- Veranderingen die worden vereist om verenigbaarheid met [&#x200B; de diensten van Adobe Commerce &#x200B;](https://experienceleague.adobe.com/en/docs/commerce/user-guides/home) te steunen
+- Veranderingen die worden vereist om verenigbaarheid met [&#x200B; de diensten van Adobe Commerce &#x200B;](https://experienceleague.adobe.com/nl/docs/commerce/user-guides/home) te steunen
 
 #### Naamgevingsconventie en -schema
 

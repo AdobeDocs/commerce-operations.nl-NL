@@ -18,7 +18,7 @@ Het doel van dit programma is data te verstrekken voor wanneer Adobe van plan is
 
 >[!NOTE]
 >
->Om meer over nieuwe eigenschappen, wolkeninfrastructuur, en uitbreidingsversies te leren, zie de [&#x200B; de versiedocumentatie van de Diensten van Adobe Commerce &#x200B;](https://experienceleague.adobe.com/en/docs/commerce/user-guides/release-information/release-notes-all).
+>Om meer over nieuwe eigenschappen, wolkeninfrastructuur, en uitbreidingsversies te leren, zie de [&#x200B; de versiedocumentatie van de Diensten van Adobe Commerce &#x200B;](https://experienceleague.adobe.com/nl/docs/commerce/user-guides/release-information/release-notes-all).
 
 Naast de geplande kwaliteit, veiligheid, en bètaflarden die op deze pagina worden vermeld, verleent Adobe toegang tot [&#x200B; individuele flarden &#x200B;](versioning-policy.md#individual-patch) door het [&#x200B; Hulpmiddel van de Patches van de Kwaliteit &#x200B;](../tools/quality-patches-tool/usage.md). Met dit gereedschap kunt u algemene informatie over alle afzonderlijke patches die beschikbaar zijn voor de geïnstalleerde versie van Adobe Commerce, toepassen, herstellen en weergeven.
 
