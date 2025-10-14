@@ -47,7 +47,7 @@ _AC-14558_
 
 De afhankelijkheid van chart.js wordt bevorderd tot de recentste versie 4.5.0
 
-_AC-15133 - [ GitHub codebijdrage ](https://github.com/magento/magento2/commit/657f983e)_
+_AC-15133 - [&#x200B; GitHub codebijdrage &#x200B;](https://github.com/magento/magento2/commit/657f983e)_
 
 #### Migratie van Laminas MVC
 
@@ -57,6 +57,6 @@ _AC-15160_
 
 ### Beveiliging
 
-Voor de recentste informatie over de veiligheidsinsectenmoeilijke situaties, zie [ Bulletin van de Veiligheid van Adobe APSB25-94 ](https://helpx.adobe.com/security/products/magento/apsb25-94.html).
+Voor de recentste informatie over de veiligheidsinsectenmoeilijke situaties, zie [&#x200B; Bulletin van de Veiligheid van Adobe APSB25-94 &#x200B;](https://helpx.adobe.com/security/products/magento/apsb25-94.html).
 
 {{$include /help/_includes/release-notes/highlights/security-2025-10.md}}

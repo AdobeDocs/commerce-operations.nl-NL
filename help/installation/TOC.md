@@ -15,7 +15,7 @@ ht-degree: 0%
 - [Overzicht](overview.md)
 - [Systeemvereisten](system-requirements.md)
 - Vereisten {#prerequisites}
-   - [ Overzicht ](prerequisites/overview.md)
+   - [&#x200B; Overzicht &#x200B;](prerequisites/overview.md)
    - Bestandssysteem {#file-system}
       - [Overzicht](prerequisites/file-system/overview.md)
       - [Machtigingen configureren](prerequisites/file-system/configure-permissions.md)
@@ -32,7 +32,7 @@ ht-degree: 0%
       - [Apache configureren](prerequisites/search-engine/configure-apache.md)
    - [PHP](prerequisites/php-settings.md)
    - Berichtenmakelaars {#message-brokers}
-      - [ Konijn MQ ](prerequisites/rabbitmq.md)
+      - [&#x200B; Konijn MQ &#x200B;](prerequisites/rabbitmq.md)
       - [Active MQ](prerequisites/activemq.md)
    - [Beveiliging](prerequisites/security.md)
    - [Verificatietoetsen](prerequisites/authentication-keys.md)
@@ -69,4 +69,4 @@ ht-degree: 0%
    - [Commerce verwijderen of opnieuw installeren](tutorials/uninstall.md)
    - [Thema&#39;s verwijderen](tutorials/themes.md)
    - [Het databaseschema bijwerken](tutorials/database-upgrade.md)
-- [ Terugkeer aan Operationele Gidsen ](https://experienceleague.adobe.com/docs/commerce-operations/operational-guides/home.html)
+- [&#x200B; Terugkeer aan Operationele Gidsen &#x200B;](https://experienceleague.adobe.com/docs/commerce-operations/operational-guides/home.html)

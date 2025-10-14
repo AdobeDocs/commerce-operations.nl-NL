@@ -13,15 +13,15 @@ ht-degree: 0%
 
 Voer de volgende stappen uit voordat u begint:
 
-* Verifieer dat uw systeem aan de vereisten voldoet die in de [ systeemvereisten ](../system-requirements.md) worden besproken.
+* Verifieer dat uw systeem aan de vereisten voldoet die in de [&#x200B; systeemvereisten &#x200B;](../system-requirements.md) worden besproken.
 
-* Voltooi alle [ voorwaarde ](../prerequisites/overview.md) taken.
+* Voltooi alle [&#x200B; voorwaarde &#x200B;](../prerequisites/overview.md) taken.
 
-* Voer de eerste installatiestappen uit. Zie [ Uw installeer of verbeteringspad ](../overview.md).
+* Voer de eerste installatiestappen uit. Zie [&#x200B; Uw installeer of verbeteringspad &#x200B;](../overview.md).
 
-* Nadat u login aan de toepassingsserver, [ schakelaar aan de eigenaar van het dossiersysteem ](../prerequisites/file-system/overview.md).
+* Nadat u login aan de toepassingsserver, [&#x200B; schakelaar aan de eigenaar van het dossiersysteem &#x200B;](../prerequisites/file-system/overview.md).
 
-* Herzie [ begonnen worden met bevel-lijn installatie ](../composer.md) overzicht.
+* Herzie [&#x200B; begonnen worden met bevel-lijn installatie &#x200B;](../composer.md) overzicht.
 
 >[!NOTE]
 >
@@ -39,7 +39,7 @@ U kunt het installatieprogramma meerdere keren uitvoeren met verschillende optie
 >
 >Standaard overschrijft het installatieprogramma de database niet als u de Commerce-software in dezelfde database-instantie installeert. U kunt de optionele parameter `cleanup-database` gebruiken om dit gedrag te wijzigen.
 
-Zie ook [ Update, herinstalleer, desinstalleer ](uninstall.md).
+Zie ook [&#x200B; Update, herinstalleer, desinstalleer &#x200B;](uninstall.md).
 
 ## Beveiligde installatie
 
@@ -57,7 +57,7 @@ U kunt de volgende opdrachten uitvoeren om naar waarden voor bepaalde vereiste a
 
 >[!NOTE]
 >
->Als een foutenvertoningen wanneer u deze bevelen in werking stelt, verifieer dat u installatiegebiedsdelen zoals besproken in [ de installatiegebiedsdelen van de Update ](https://developer.adobe.com/commerce/contributor/guides/install/update-dependencies/) bijwerkte.
+>Als een foutenvertoningen wanneer u deze bevelen in werking stelt, verifieer dat u installatiegebiedsdelen zoals besproken in [&#x200B; de installatiegebiedsdelen van de Update &#x200B;](https://developer.adobe.com/commerce/contributor/guides/install/update-dependencies/) bijwerkte.
 
 ## Installeren vanaf de opdrachtregel
 
@@ -67,7 +67,7 @@ Voor de installatieopdracht wordt de volgende indeling gebruikt:
 magento setup:install --<option>=<value> ... --<option>=<value>
 ```
 
-In de volgende tabellen worden de namen en waarden van de installatieopties beschreven, zoals installatieopdrachten. Zie [ installaties van de Steekproef localhost ](#sample-localhost-installations).
+In de volgende tabellen worden de namen en waarden van de installatieopties beschreven, zoals installatieopdrachten. Zie [&#x200B; installaties van de Steekproef localhost &#x200B;](#sample-localhost-installations).
 
 >[!NOTE]
 >
@@ -77,7 +77,7 @@ In de volgende tabellen worden de namen en waarden van de installatieopties besc
 
 Met de volgende opties geeft u de gebruikersgegevens en gebruikersgegevens voor de beheerder op.
 
-In Adobe Commerce versie 2.2.8 en hoger kunt u tijdens of na de installatie de beheerder-gebruiker maken. Als u de gebruiker tijdens de installatie creeert, zijn alle admin credentievariabelen vereist. Zie [ installaties van de Steekproef localhost ](#sample-localhost-installations).
+In Adobe Commerce versie 2.2.8 en hoger kunt u tijdens of na de installatie de beheerder-gebruiker maken. Als u de gebruiker tijdens de installatie creeert, zijn alle admin credentievariabelen vereist. Zie [&#x200B; installaties van de Steekproef localhost &#x200B;](#sample-localhost-installations).
 
 | Naam | Waarde | Vereist? |
 |--- |--- |--- |
@@ -93,7 +93,7 @@ In Adobe Commerce versie 2.2.8 en hoger kunt u tijdens of na de installatie de b
 |--- |--- |--- |
 | `--base-url` | Basis URL aan gebruik om tot uw Admin en opslag in om het even welke volgende formaten toegang te hebben:<br><br>`http[s]://<host or ip>/<your install dir>/`.<br><br>**Nota:** de regeling (http:// of https://) en een het slepen schuine streep worden allebei vereist.<br><br>`<your install dir>` is het documentafhankelijke relatieve pad waarin de toepassing wordt geïnstalleerd. Afhankelijk van hoe u opstelling uw Webserver en virtuele gastheren, de weg magento2 zou kunnen zijn of het zou leeg kunnen zijn.<br><br> om tot de toepassing op localhost toegang te hebben, kunt u of `http://127.0.0.1/<your install dir>/` of `http://127.0.0.1/<your install dir>/` gebruiken.<br><br> - `{{base_url}}` die een basis-URL vertegenwoordigt die wordt gedefinieerd door een virtuele hostinstelling of door een virtualisatieomgeving zoals Docker. Als u bijvoorbeeld een virtuele host instelt met de hostnaam commerce.example.com, kunt u de toepassing installeren met `--base-url={{base_url}}` en toegang krijgen tot de beheerder met een URL zoals `http://commerce.example.com/admin` . | Ja |
 | `--backend-frontname` | Uniform Resource Identifier (URI) voor toegang tot de beheerder. U kunt deze parameter weglaten om de toepassing willekeurige URI voor u met het volgende patroon <code> te laten produceren admin_jkhgdfq</code>.<br><br> wij adviseren willekeurige URI voor veiligheidsdoeleinden. Willekeurige URI is moeilijker voor hakkers of kwaadwillige software om te exploiteren.<br><br> de vertoningen van URI aan het eind van de installatie. U kunt deze later op elk gewenst moment weergeven met de opdracht `magento info:adminuri` .<br><br> als u verkiest om een waarde in te gaan, adviseren wij u geen gemeenschappelijk woord zoals admin, backend. De Admin-URI kan alleen alfanumerieke waarden en het onderstrepingsteken (`_`) bevatten. | Nee |
-| `--db-host` | Gebruik om het even welk van het volgende:<br><br> - de volledig gekwalificeerde hostname van de gegevensbestandserver of IP adres.<br><br>- `localhost` (standaardwaarde) of `127.0.0.1` als uw databaseserver zich op dezelfde host bevindt als uw webserver.localhost betekent dat de MySQL-clientbibliotheek gebruikmaakt van UNIX-sockets om verbinding te maken met de database. `127.0.0.1` zorgt ervoor dat de clientbibliotheek het TCP-protocol gebruikt. Voor meer informatie over contactdozen, zie de [ PHP documentatie BOB_MYSQL ](https://www.php.net/manual/en/ref.pdo-mysql.php).<br><br>**Nota:** U kunt naar keuze de haven van de gegevensbestandserver in zijn hostname als www.example.com specificeren :9000 | Ja |
+| `--db-host` | Gebruik om het even welk van het volgende:<br><br> - de volledig gekwalificeerde hostname van de gegevensbestandserver of IP adres.<br><br>- `localhost` (standaardwaarde) of `127.0.0.1` als uw databaseserver zich op dezelfde host bevindt als uw webserver.localhost betekent dat de MySQL-clientbibliotheek gebruikmaakt van UNIX-sockets om verbinding te maken met de database. `127.0.0.1` zorgt ervoor dat de clientbibliotheek het TCP-protocol gebruikt. Voor meer informatie over contactdozen, zie de [&#x200B; PHP documentatie BOB_MYSQL &#x200B;](https://www.php.net/manual/en/ref.pdo-mysql.php).<br><br>**Nota:** U kunt naar keuze de haven van de gegevensbestandserver in zijn hostname als www.example.com specificeren :9000 | Ja |
 | `--db-name` | Naam van de database-instantie waarin u de databasetabellen wilt installeren.<br><br> Standaard is `magento2`. | Ja |
 | `--db-user` | Gebruikersnaam van de eigenaar van de databaseinstantie.<br><br> Standaard is `root`. | Ja |
 | `--db-password` | Het wachtwoord van de eigenaar van de databaseinstantie. | Ja |
@@ -117,7 +117,7 @@ In Adobe Commerce versie 2.2.8 en hoger kunt u tijdens of na de installatie de b
 
 >[!TIP]
 >
->Om de verre opslagdiensten tijdens installatie toe te laten, zie [ Verre Opslag ](../../configuration/remote-storage/remote-storage.md) in de _Gids van de Configuratie_ vormen.
+>Om de verre opslagdiensten tijdens installatie toe te laten, zie [&#x200B; Verre Opslag &#x200B;](../../configuration/remote-storage/remote-storage.md) in de _Gids van de Configuratie_ vormen.
 
 **de configuratieopties van de motor van het Onderzoek:**
 
@@ -163,7 +163,7 @@ In Adobe Commerce versie 2.2.8 en hoger kunt u tijdens of na de installatie de b
 
 | Naam | Beschrijving | Vereist? |
 |--- |--- |--- |
-| `remote-storage-driver` | De naam van de adapter <br> Mogelijke waarden:<br>**dossier**: Maakt verre opslag onbruikbaar en gebruikt het lokale filesystem <br>**aws-s3**: Gebruik de [ Eenvoudige Dienst van de Opslag van Amazon (Amazon S3) ](https://aws.amazon.com/s3/) | Nee |
+| `remote-storage-driver` | De naam van de adapter <br> Mogelijke waarden:<br>**dossier**: Maakt verre opslag onbruikbaar en gebruikt het lokale filesystem <br>**aws-s3**: Gebruik de [&#x200B; Eenvoudige Dienst van de Opslag van Amazon (Amazon S3) &#x200B;](https://aws.amazon.com/s3/) | Nee |
 | `remote-storage-bucket` | Objectopslag of containernaam | Nee |
 | `remote-storage-prefix` | Optioneel voorvoegsel (locatie binnen opslag van object) | Nee |
 | `remote-storage-region` | Naam regio | Nee |
@@ -186,7 +186,7 @@ In Adobe Commerce versie 2.2.8 en hoger kunt u tijdens of na de installatie de b
 
 >[!NOTE]
 >
->Om modules toe te laten of onbruikbaar te maken na het installeren van de toepassing, zie [ modules ](manage-modules.md) toelaten en onbruikbaar maken.
+>Om modules toe te laten of onbruikbaar te maken na het installeren van de toepassing, zie [&#x200B; modules &#x200B;](manage-modules.md) toelaten en onbruikbaar maken.
 
 **Gevoelige gegevens:**
 
@@ -264,7 +264,7 @@ For security, remove write permissions from these directories: '/var/www/html/ma
 ```
 
 Na de installatie kunt u een beheerder maken met de opdracht `admin:user:create` :
-[ creeer of geef een beheerder ](admin.md#create-or-edit-an-administrator) uit
+[&#x200B; creeer of geef een beheerder &#x200B;](admin.md#create-or-edit-an-administrator) uit
 
 #### Voorbeeld 3—Installeren met extra opties
 
@@ -339,6 +339,6 @@ magento setup:install --base-url=http://127.0.0.1/magento2/ \
 
 >[!TIP]
 >
->Als u één gebruikersrekening hebt om tot de toepassingsserver toegang te hebben, zie [ plaats een masker ](../next-steps/set-umask.md). Dit type installatie is standaard voor gedeelde hosting.
+>Als u één gebruikersrekening hebt om tot de toepassingsserver toegang te hebben, zie [&#x200B; plaats een masker &#x200B;](../next-steps/set-umask.md). Dit type installatie is standaard voor gedeelde hosting.
 
 <!-- Last updated from includes: 2024-04-16 09:42:31 -->
