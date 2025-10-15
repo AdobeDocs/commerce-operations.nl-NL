@@ -57,6 +57,6 @@ _AC-15160_
 
 ### Beveiliging
 
-Voor de recentste informatie over de veiligheidsinsectenmoeilijke situaties, zie [&#x200B; Bulletin van de Veiligheid van Adobe APSB25-94 &#x200B;](https://helpx.adobe.com/security/products/magento/apsb25-94.html).
+Voor de recentste informatie over de veiligheidsinsectenmoeilijke situaties, zie [&#x200B; Bulletin van de Veiligheid van Adobe APSB25-94 &#x200B;](https://helpx.adobe.com/nl/security/products/magento/apsb25-94.html).
 
 {{$include /help/_includes/release-notes/highlights/security-2025-10.md}}

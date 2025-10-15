@@ -24,7 +24,7 @@ Adobe biedt een verlenging van één jaar zonder extra kosten voor Adobe Commerc
 >
 >- Adobe raadt u aan Adobe Commerce te installeren of te upgraden naar de recentste beveiligingspatch die voor elke release beschikbaar is.
 >- Voor andere veiligheidsupdates, zie [&#x200B; Updates van de Veiligheid voor Magento / Adobe Commerce &#x200B;](https://helpx.adobe.com/nl/security/products/magento.html).
->- Voor tarifering, zie [&#x200B; Adobe Commerce tarifering &#x200B;](https://business.adobe.com/products/magento/pricing.html).
+>- Voor tarifering, zie [&#x200B; Adobe Commerce tarifering &#x200B;](https://business.adobe.com/nl/products/magento/pricing.html).
 
 {{$include /help/_includes/templated/release/core-releases.md}}
 
