@@ -30,31 +30,31 @@ _AC-14104_
 
 De jQuery Validate-bibliotheek is bijgewerkt naar versie 1.21.0 om de validatiemogelijkheden van formulieren te verbeteren, gebruikerservaring te verbeteren en te zorgen voor moderne browsercompatibiliteit in alle Adobe Commerce-formulieren in zowel de beheerdersinterface als de frontendinterfaces.
 
-_AC-14403 - [ GitHub codebijdrage ](https://github.com/magento/magento2/commit/98b2848a)_
+_AC-14403 - [&#x200B; GitHub codebijdrage &#x200B;](https://github.com/magento/magento2/commit/98b2848a)_
 
 #### De meest recente versie van jquery-ui onderzoeken
 
 De jQuery-gebruikersinterfacebibliotheek is bijgewerkt naar versie 1.14.1 om de widgets van de gebruikersinterface te verbeteren, de toegankelijkheid te verbeteren en te zorgen voor moderne browsercompatibiliteit in alle Adobe Commerce-admin- en frontendinterfacecomponenten.
 
-_AC-14417 - [ GitHub codebijdrage ](https://github.com/magento/magento2/commit/77c589a6)_
+_AC-14417 - [&#x200B; GitHub codebijdrage &#x200B;](https://github.com/magento/magento2/commit/77c589a6)_
 
 #### De nieuwste versie van less.js bekijken
 
 De CSS-preprocessor van Minder.js is bijgewerkt naar versie 4.2.2 om de prestaties van de CSS-compilatie te verbeteren, de syntaxisondersteuning te verbeteren en het proces voor het maken van thema&#39;s te moderniseren voor alle Adobe Commerce-thema&#39;s frontend en admin.
 
-_AC-14418 - [ GitHub codebijdrage ](https://github.com/magento/magento2/commit/98b2848a)_
+_AC-14418 - [&#x200B; GitHub codebijdrage &#x200B;](https://github.com/magento/magento2/commit/98b2848a)_
 
 #### Onderzoek de recentste versie moment-timezone-with-data.js
 
 De tijdzonebibliotheek van het Moment aan versie 0.5.43 werd bijgewerkt om timezone behandelingsmogelijkheden te verbeteren, tijdzonegegevens met recentste veranderingen van het Gegevensbestand van de Tijdzone van IANA bij te werken, en datum/tijd verwerkingsnauwkeurigheid over alle internationale en multi-timezoneverrichtingen van Adobe Commerce te verbeteren.
 
-_AC-14419 - [ GitHub codebijdrage ](https://github.com/magento/magento2/commit/98b2848a)_
+_AC-14419 - [&#x200B; GitHub codebijdrage &#x200B;](https://github.com/magento/magento2/commit/98b2848a)_
 
 #### De meest recente versie van underscore.js bekijken
 
 De Underscore.js-hulpprogrammabibliotheek is bijgewerkt naar versie 1.13.7 om de functionaliteit van JavaScript-programmering te verbeteren, de prestaties van gegevensmanipulatie te verbeteren en te zorgen voor moderne browsercompatibiliteit in alle Adobe Commerce-componenten voor frontend- en beheerinterface.
 
-_AC-14420 - [ GitHub codebijdrage ](https://github.com/magento/magento2/commit/98b2848a)_
+_AC-14420 - [&#x200B; GitHub codebijdrage &#x200B;](https://github.com/magento/magento2/commit/98b2848a)_
 
 #### Migreren van TinyMCE naar Hugerte.org
 
