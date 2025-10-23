@@ -4,9 +4,9 @@ description: Deze subsectie verstrekt een gedetailleerde beschrijving van de kwe
 feature: Tools and External Services
 role: Admin, Developer
 type: Troubleshooting
-source-git-commit: a6a18a4cbab9d2e5a0c4824fc5ad9463f9e61c1c
+source-git-commit: fddde045789cdbbe811975b06635574b9835d497
 workflow-type: tm+mt
-source-wordcount: '292'
+source-wordcount: '291'
 ht-degree: 0%
 
 ---
@@ -25,7 +25,7 @@ QPT v1.1.72 omvat de volgende flarden:
 1. **ACSD-67639**: Creërend een creditmemo ontbreekt voor bundelproducten met **[!UICONTROL Dynamic Price]** die aan *worden geplaatst Nr*.
 1. **[ACSD-67696](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-72/acsd-67696.md)**: `media_gallery` de ingangen keren niet in de het productknoop van GraphQL van de Kar na een geheim voorgeheugenspoeling terug.
 1. **ACSD-67946**: De updates van de kunst tonen dubbele foutenbanners.
-1. **ACSD-68011**: Het niet-bestaande SKUs kan aan een gedeelde catalogus via `/V1/sharedCatalog/:id/assignProducts` worden toegewezen [!DNL REST] API.
+1. **ACSD-68011**: Niet-Bestaande SKUs die aan gedeelde catalogus via /V1/sharedCatalog/:id wordt toegewezen/assignProducts API.
 1. **ACSD-68118**: `customerCart` de vraagwinst van GraphQL productkenmerkwaarden die niet op de opslagkopbal wijzen, veroorzakend inconsistente localisatie.
 1. **ACSD-68092**: De opties van het product van de bundel worden verloren na veelvoudige besparingen toe te schrijven aan onjuiste synchronisatie tussen geplande updates en basisproductgegevens.
 1. **ACSD-67424**: `updated_at` waarde in de `GET /carts/search` [!DNL REST] API reactie past niet de waarde aan die in **[!UICONTROL Admin panel]** wordt getoond wanneer het gebruiken van Negotiable Citaten.
