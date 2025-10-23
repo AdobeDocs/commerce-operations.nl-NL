@@ -2,9 +2,9 @@
 title: Een upgrade uitvoeren
 description: Volg deze stappen om plaatsingen op-gebouw van Adobe Commerce te bevorderen.
 exl-id: 9183f1d2-a8dd-4232-bdee-7c431e0133df
-source-git-commit: ddf988826c29b4ebf054a4d4fb5f4c285662ef4e
+source-git-commit: 4cf6f81ce43ddcccf20db12b8735f29a151d420d
 workflow-type: tm+mt
-source-wordcount: '730'
+source-wordcount: '769'
 ht-degree: 0%
 
 ---
@@ -19,18 +19,24 @@ U kunt _op-gebouw_ plaatsingen van de toepassing van Adobe Commerce van de bevel
 
 >[!NOTE]
 >
->- Voor Adobe Commerce op de projecten van de wolkeninfrastructuur, zie [&#x200B; versie van Commerce van de Verbetering &#x200B;](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/commerce-version.html?lang=nl-NL) in de Gids van de Wolk.
->- Gebruik deze methode niet om te bevorderen als u de bewaarplaats GitHub kloond. Zie [&#x200B; Verbetering een op git-Gebaseerde installatie &#x200B;](../developer/git-installs.md).
+>- Voor Adobe Commerce op de projecten van de wolkeninfrastructuur, zie [ versie van Commerce van de Verbetering ](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/commerce-version.html) in de Gids van de Wolk.
+>- Gebruik deze methode niet om te bevorderen als u de bewaarplaats GitHub kloond. Zie [ Verbetering een op git-Gebaseerde installatie ](../developer/git-installs.md).
 
-De volgende instructies tonen u hoe te om te bevorderen gebruikend Composer pakketmanager. Adobe Commerce 2.4.2 introduceerde ondersteuning voor Composer 2. Als u probeert om van &lt;2.4.1 te bevorderen, moet u eerst aan een versie bevorderen die met Composer 2 (bijvoorbeeld, 2.4.2) compatibel is gebruikend Composer 1 _vóór_ bevordering aan Composer 2 voor >2.4.2 verbeteringen. Bovendien moet u a [&#x200B; gesteunde versie &#x200B;](../../installation/system-requirements.md) van PHP in werking stellen.
+De volgende instructies tonen u hoe te om te bevorderen gebruikend Composer pakketmanager. Adobe Commerce 2.4.2 introduceerde ondersteuning voor Composer 2. Als u probeert om van &lt;2.4.1 te bevorderen, moet u eerst aan een versie bevorderen die met Composer 2 (bijvoorbeeld, 2.4.2) compatibel is gebruikend Composer 1 _vóór_ bevordering aan Composer 2 voor >2.4.2 verbeteringen. Bovendien moet u a [ gesteunde versie ](../../installation/system-requirements.md) van PHP in werking stellen.
 
 >[!WARNING]
 >
->De procedure voor de modernisering van Adobe Commerce is gewijzigd. U moet een nieuwe versie van het `magento/composer-root-update-plugin` pakket installeren (zie [&#x200B; eerste vereisten &#x200B;](../prepare/prerequisites.md)). Bovendien zijn de opdrachten voor de upgrade gewijzigd van `composer require magento/<package_name>` in `composer require-commerce magento/<package_name>` .
+>De procedure voor de modernisering van Adobe Commerce is gewijzigd. U moet een nieuwe versie van het `magento/composer-root-update-plugin` pakket installeren (zie [ eerste vereisten ](../prepare/prerequisites.md)). Bovendien zijn de opdrachten voor de upgrade gewijzigd van `composer require magento/<package_name>` in `composer require-commerce magento/<package_name>` .
 
 ## Voordat u begint
 
-U moet de [&#x200B; verbeteringseerste vereisten &#x200B;](../prepare/prerequisites.md) voltooien om uw milieu voor te bereiden alvorens het verbeteringsproces te beginnen.
+U moet de [ verbeteringseerste vereisten ](../prepare/prerequisites.md) voltooien om uw milieu voor te bereiden alvorens het verbeteringsproces te beginnen.
+
+>[!IMPORTANT]
+>
+>Adobe Commerce versie 2.4.6-p13 bevat niet het `magento/inventory-composer-installer` -pakket. Dit is vereist voor een vloeiende upgrade van oudere kleine versies met wijzigingen die niet compatibel zijn met oudere versies. <br>
+>>Als u een upgrade uitvoert van 2.3 naar 2.4.6-p13, voert u de volgende opdracht uit om het `magento/inventory-composer-installer` -pakket te installeren voordat u de upgrade uitvoert:
+>>`composer require magento/inventory-composer-installer`
 
 ## Pakketten beheren
 
@@ -44,7 +50,7 @@ U moet de [&#x200B; verbeteringseerste vereisten &#x200B;](../prepare/prerequisi
    bin/magento maintenance:enable
    ```
 
-   Zie [&#x200B; toelaten of onderhoudswijze &#x200B;](../../installation/tutorials/maintenance-mode.md) voor extra opties onbruikbaar maken. Naar keuze, kunt u a [&#x200B; pagina van de de wijze van het douaneonderhoud &#x200B;](../troubleshooting/maintenance-mode-options.md) tot stand brengen.
+   Zie [ toelaten of onderhoudswijze ](../../installation/tutorials/maintenance-mode.md) voor extra opties onbruikbaar maken. Naar keuze, kunt u a [ pagina van de de wijze van het douaneonderhoud ](../troubleshooting/maintenance-mode-options.md) tot stand brengen.
 
 1. De aanvang van het verbeteringsproces terwijl de asynchrone processen, zoals de consumenten van de berichtrij, lopen kan gegevenscorruptie veroorzaken. Schakel alle snijtaken uit om gegevensbeschadiging te voorkomen.
 
@@ -120,7 +126,7 @@ U moet de [&#x200B; verbeteringseerste vereisten &#x200B;](../prepare/prerequisi
 
    - `--help` — (Optioneel) Hiermee worden gebruiksgegevens over de plug-in weergegeven.
 
-   Als `--interactive-root-conflicts` noch `--force-root-updates` zijn opgegeven, behoudt de opdracht de bestaande waarden in conflict en wordt een waarschuwingsbericht weergegeven. Meer over de stop leren, verwijs naar [&#x200B; ReADME van het Gebruik van de Insteekmodule &#x200B;](https://github.com/magento/composer-root-update-plugin/blob/develop/src/Magento/ComposerRootUpdatePlugin/README.md).
+   Als `--interactive-root-conflicts` noch `--force-root-updates` zijn opgegeven, behoudt de opdracht de bestaande waarden in conflict en wordt een waarschuwingsbericht weergegeven. Meer over de stop leren, verwijs naar [ ReADME van het Gebruik van de Insteekmodule ](https://github.com/magento/composer-root-update-plugin/blob/develop/src/Magento/ComposerRootUpdatePlugin/README.md).
 
 1. Werk de gebiedsdelen bij.
 
@@ -234,7 +240,7 @@ Als u wilt controleren of de upgrade is gelukt, opent u de URL van de winkel in 
 
 Als de toepassing mislukt met een `We're sorry, an error has occurred while generating this email.` -fout:
 
-1. De eigendom van het het dossiersysteem van het terugstellen [&#x200B; en toestemmingen &#x200B;](../../installation/prerequisites/file-system/configure-permissions.md) als gebruiker met `root` voorrechten.
+1. De eigendom van het het dossiersysteem van het terugstellen [ en toestemmingen ](../../installation/prerequisites/file-system/configure-permissions.md) als gebruiker met `root` voorrechten.
 1. Wis de volgende directory&#39;s:
    - `var/cache/`
    - `var/page_cache/`

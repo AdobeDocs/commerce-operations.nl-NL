@@ -2,7 +2,7 @@
 title: Opmerkingen bij de release Adobe Commerce 2.4.7 Security Patch
 description: Leer meer over oplossingen voor beveiligingsproblemen, beveiligingsverbeteringen en andere beveiligingsupdates die zijn opgenomen in de beveiligingspatchreleases voor Adobe Commerce versie 2.4.7.
 exl-id: 38e5632b-c795-47d8-89dd-26bbaeb34e67
-source-git-commit: 898fb6a9a2e4a8346dd5d1196bd91636721b2d3d
+source-git-commit: 4cf6f81ce43ddcccf20db12b8735f29a151d420d
 workflow-type: tm+mt
 source-wordcount: '762'
 ht-degree: 0%
@@ -17,7 +17,7 @@ ht-degree: 0%
 
 De beveiligingsrelease van Adobe Commerce 2.4.7-p8 biedt oplossingen voor beveiligingsproblemen voor kwetsbaarheden die zijn geïdentificeerd in eerdere versies van 2.4.7.
 
-Voor de recentste informatie over de veiligheidsinsectenmoeilijke situaties, zie [&#x200B; Bulletin van de Veiligheid van Adobe APSB25-94 &#x200B;](https://helpx.adobe.com/nl/security/products/magento/apsb25-94.html).
+Voor de recentste informatie over de veiligheidsinsectenmoeilijke situaties, zie [ Bulletin van de Veiligheid van Adobe APSB25-94 ](https://helpx.adobe.com/security/products/magento/apsb25-94.html).
 
 {{b2b-patches}}
 
@@ -31,7 +31,7 @@ Deze release bevat de volgende hooglichten:
 
 De Adobe Commerce 2.4.7-p7 veiligheidsversie verstrekt veiligheidsinsectenmoeilijke situaties voor kwetsbaarheid die in vorige versies van 2.4.7 worden geïdentificeerd.
 
-Voor de recentste informatie over de veiligheidsinsectenmoeilijke situaties, zie [&#x200B; Bulletin van de Veiligheid van Adobe APSB25-71 &#x200B;](https://helpx.adobe.com/nl/security/products/magento/apsb25-71.html).
+Voor de recentste informatie over de veiligheidsinsectenmoeilijke situaties, zie [ Bulletin van de Veiligheid van Adobe APSB25-71 ](https://helpx.adobe.com/security/products/magento/apsb25-71.html).
 
 {{b2b-patches}}
 
@@ -39,7 +39,7 @@ Voor de recentste informatie over de veiligheidsinsectenmoeilijke situaties, zie
 
 De beveiligingsrelease van Adobe Commerce 2.4.7-p6 biedt oplossingen voor beveiligingsproblemen voor kwetsbaarheden die zijn geïdentificeerd in eerdere versies van 2.4.7.
 
-Voor de recentste informatie over de veiligheidsinsectenmoeilijke situaties, zie [&#x200B; Bulletin van de Veiligheid van Adobe APSB25-50 &#x200B;](https://helpx.adobe.com/nl/security/products/magento/apsb25-50.html).
+Voor de recentste informatie over de veiligheidsinsectenmoeilijke situaties, zie [ Bulletin van de Veiligheid van Adobe APSB25-50 ](https://helpx.adobe.com/security/products/magento/apsb25-50.html).
 
 {{b2b-patches}}
 
@@ -63,7 +63,7 @@ Deze release bevat de volgende hooglichten:
 
 De Adobe Commerce 2.4.7-p5-beveiligingsrelease biedt oplossingen voor beveiligingsproblemen voor kwetsbaarheden die zijn geïdentificeerd in eerdere versies van 2.4.7.
 
-Voor de recentste informatie over de veiligheidsinsectenmoeilijke situaties, zie [&#x200B; Bulletin van de Veiligheid van Adobe APSB25-26 &#x200B;](https://helpx.adobe.com/nl/security/products/magento/apsb25-26.html).
+Voor de recentste informatie over de veiligheidsinsectenmoeilijke situaties, zie [ Bulletin van de Veiligheid van Adobe APSB25-26 ](https://helpx.adobe.com/security/products/magento/apsb25-26.html).
 
 {{b2b-patches}}
 
@@ -73,7 +73,7 @@ Voor de recentste informatie over de veiligheidsinsectenmoeilijke situaties, zie
 
 >[!BEGINSHADEBOX]
 
-Deze versie introduceert ook steun voor de Adobe Commerce [&#x200B; HIPAA-Klaar uitbreiding &#x200B;](https://experienceleague.adobe.com/nl/docs/commerce-admin/start/compliance/hipaa-ready-service/overview).
+Deze versie introduceert ook steun voor de Adobe Commerce [ HIPAA-Klaar uitbreiding ](https://experienceleague.adobe.com/en/docs/commerce-admin/start/compliance/hipaa-ready-service/overview).
 
 >[!ENDSHADEBOX]
 
@@ -89,7 +89,7 @@ Daarnaast kan voor de versies 2.4.7-p3, 2.4.7-p4 en 2.4.7-p5 de Braintree-extens
 
 De Adobe Commerce 2.4.7-p4 veiligheidsversie verstrekt veiligheidsinsectenmoeilijke situaties voor kwetsbaarheid die in vorige versies van 2.4.7 worden geïdentificeerd.
 
-Voor de recentste informatie over de veiligheidsinsectenmoeilijke situaties, zie [&#x200B; Bulletin van de Veiligheid van Adobe APSB25-08 &#x200B;](https://helpx.adobe.com/nl/security/products/magento/apsb25-08.html).
+Voor de recentste informatie over de veiligheidsinsectenmoeilijke situaties, zie [ Bulletin van de Veiligheid van Adobe APSB25-08 ](https://helpx.adobe.com/security/products/magento/apsb25-08.html).
 
 {{b2b-patches}}
 
@@ -101,7 +101,7 @@ Voor de recentste informatie over de veiligheidsinsectenmoeilijke situaties, zie
 
 De Adobe Commerce 2.4.7-p3 veiligheidsversie verstrekt veiligheidsinsectenmoeilijke situaties voor kwetsbaarheid die in vorige versies van 2.4.7 worden geïdentificeerd.
 
-Voor de recentste informatie over de veiligheidsinsectenmoeilijke situaties, zie [&#x200B; Bulletin van de Veiligheid van Adobe APSB24-73 &#x200B;](https://helpx.adobe.com/nl/security/products/magento/apsb24-73.html).
+Voor de recentste informatie over de veiligheidsinsectenmoeilijke situaties, zie [ Bulletin van de Veiligheid van Adobe APSB24-73 ](https://helpx.adobe.com/security/products/magento/apsb24-73.html).
 
 {{b2b-patches}}
 
@@ -117,7 +117,7 @@ Voor de recentste informatie over de veiligheidsinsectenmoeilijke situaties, zie
 
 De Adobe Commerce 2.4.7-p2 veiligheidsversie verstrekt veiligheidsinsectenmoeilijke situaties voor kwetsbaarheid die in vorige versies van 2.4.7 worden geïdentificeerd.
 
-Voor de recentste informatie over de veiligheidsinsectenmoeilijke situaties, zie [&#x200B; Bulletin van de Veiligheid van Adobe APSB24-61 &#x200B;](https://helpx.adobe.com/nl/security/products/magento/apsb24-61.html).
+Voor de recentste informatie over de veiligheidsinsectenmoeilijke situaties, zie [ Bulletin van de Veiligheid van Adobe APSB24-61 ](https://helpx.adobe.com/security/products/magento/apsb24-61.html).
 
 ### Hooglichten
 
@@ -131,7 +131,7 @@ Voor de recentste informatie over de veiligheidsinsectenmoeilijke situaties, zie
 
 De Adobe Commerce 2.4.7-p1 veiligheidsversie verstrekt veiligheidsinsectenmoeilijke situaties voor kwetsbaarheid die in vorige versies van 2.4.7 zijn geïdentificeerd.
 
-Voor de recentste informatie over de veiligheidsinsectenmoeilijke situaties, zie [&#x200B; Bulletin van de Veiligheid van Adobe APSB24-40 &#x200B;](https://helpx.adobe.com/nl/security/products/magento/apsb24-40.html).
+Voor de recentste informatie over de veiligheidsinsectenmoeilijke situaties, zie [ Bulletin van de Veiligheid van Adobe APSB24-40 ](https://helpx.adobe.com/security/products/magento/apsb24-40.html).
 
 ### Hotfix toepassen voor CVE-2024-34102
 
@@ -141,12 +141,12 @@ Voor de recentste informatie over de veiligheidsinsectenmoeilijke situaties, zie
 
 Deze release bevat de volgende hooglichten:
 
-* **eenmalig wachtwoord van de Update [&#x200B; (OTP) montages &#x200B;](https://experienceleague.adobe.com/nl/docs/commerce-admin/systems/security/2fa/security-two-factor-authentication#google) voor de Authenticator van Google** - Deze update wordt vereist om een fout op te lossen die door a [&#x200B; achteruit-onverenigbaar verandering &#x200B;](https://developer.adobe.com/commerce/php/development/backward-incompatible-changes/highlights/#new-system-configuration-validation-for-two-factor-authentication-otp_window-value) in 2.4.7 werd geïntroduceerd. De beschrijving van het veld **[!UICONTROL OTP Window]** bevat nu een nauwkeurige uitleg van de instelling en de standaardwaarde is gewijzigd van `1` in `29` .
+* **eenmalig wachtwoord van de Update [ (OTP) montages ](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/security/2fa/security-two-factor-authentication#google) voor de Authenticator van Google** - Deze update wordt vereist om een fout op te lossen die door a [ achteruit-onverenigbaar verandering ](https://developer.adobe.com/commerce/php/development/backward-incompatible-changes/highlights/#new-system-configuration-validation-for-two-factor-authentication-otp_window-value) in 2.4.7 werd geïntroduceerd. De beschrijving van het veld **[!UICONTROL OTP Window]** bevat nu een nauwkeurige uitleg van de instelling en de standaardwaarde is gewijzigd van `1` in `29` .
 
-* **B2B versiecompatibiliteit** - voor verenigbaarheid met versie 2.4.7-p1 van Commerce, de verkopers die de uitbreiding hebben van Adobe Commerce B2B moeten aan [&#x200B; B2B versie 1.4.2-p1 &#x200B;](https://experienceleague.adobe.com/nl/docs/commerce-admin/b2b/release-notes#b2b-v142-p1) bevorderen.
+* **B2B versiecompatibiliteit** - voor verenigbaarheid met versie 2.4.7-p1 van Commerce, de verkopers die de uitbreiding hebben van Adobe Commerce B2B moeten aan [ B2B versie 1.4.2-p1 ](https://experienceleague.adobe.com/en/docs/commerce-admin/b2b/release-notes#b2b-v142-p1) bevorderen.
 
 ### Hotfixes die in deze release zijn opgenomen
 
-Adobe Commerce 2.4.7-p1 verhelpt een probleem dat is ontstaan in het bereik van de UPS-integratiemigratie van SOAP naar REST API. Dit probleem betrof klanten die buiten de VS verschepen en belette hen de Metric System/SI-metingen van kilo en centimeters voor pakketten te gebruiken om zendingen met UPS te maken. Zie [&#x200B; UPS die de migratie van de methodeintegratie van SOAP aan RESTful API &#x200B;](https://experienceleague.adobe.com/nl/docs/commerce-knowledge-base/kb/troubleshooting/known-issues-patches-attached/ups-shipping-method-integration-migration-from-soap-to-restful-api) kennisbankartikel voor details verschepen.
+Adobe Commerce 2.4.7-p1 verhelpt een probleem dat is ontstaan in het bereik van de UPS-integratiemigratie van SOAP naar REST API. Dit probleem betrof klanten die buiten de VS verschepen en belette hen de Metric System/SI-metingen van kilo en centimeters voor pakketten te gebruiken om zendingen met UPS te maken. Zie [ UPS die de migratie van de methodeintegratie van SOAP aan RESTful API ](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/troubleshooting/known-issues-patches-attached/ups-shipping-method-integration-migration-from-soap-to-restful-api) kennisbankartikel voor details verschepen.
 
-<!-- Last updated from includes: 2025-10-06 13:12:34 -->
+<!-- Last updated from includes: 2025-10-22 11:16:25 -->
