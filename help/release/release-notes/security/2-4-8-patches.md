@@ -2,9 +2,9 @@
 title: Opmerkingen bij de release Adobe Commerce 2.4.8 Security Patch
 description: Leer meer over oplossingen voor beveiligingsproblemen, beveiligingsverbeteringen en andere beveiligingsupdates die zijn opgenomen in de beveiligingspatchreleases voor Adobe Commerce versie 2.4.7.
 exl-id: 5f8866ed-9215-4b2e-9c77-b2d474f6c1f9
-source-git-commit: 4cf6f81ce43ddcccf20db12b8735f29a151d420d
+source-git-commit: e625670e741c0669050ab758d4f87c5ca06fe3df
 workflow-type: tm+mt
-source-wordcount: '356'
+source-wordcount: '366'
 ht-degree: 0%
 
 ---
@@ -17,7 +17,7 @@ ht-degree: 0%
 
 De Adobe Commerce 2.4.8-p3 veiligheidsversie verstrekt veiligheidsinsectenmoeilijke situaties voor kwetsbaarheid die in vorige versies van 2.4.8 worden geïdentificeerd.
 
-Voor de recentste informatie over de veiligheidsinsectenmoeilijke situaties, zie [&#x200B; Bulletin van de Veiligheid van Adobe APSB25-94 &#x200B;](https://helpx.adobe.com/nl/security/products/magento/apsb25-94.html).
+Voor de recentste informatie over de veiligheidsinsectenmoeilijke situaties, zie [ Bulletin van de Veiligheid van Adobe APSB25-94 ](https://helpx.adobe.com/security/products/magento/apsb25-94.html).
 
 {{b2b-patches}}
 
@@ -29,15 +29,21 @@ Deze release bevat de volgende hooglichten:
 
 * Correctie voor ACP2E-3874: De REST API-reactie voor orderdetails bevat nu correcte waarden voor `base_row_total` en `row_total` -kenmerken voor het geval dat meerdere, dezelfde items werden besteld.
 
-* Oplossing voor -AC-15446: Probleem verholpen waarbij `Magento\Framework\Mail\EmailMessage` probeerde een `getBodyText()` niet-bestaande `getTextBody()` methode aan te roepen op `Symfony\Component\Mime\Message` . Dit zorgt voor compatibiliteit met Magento 2.4.8-p2 en `magento/framework` 103.0.8-p2.
+* Oplossing voor AC-15446: Probleem verholpen waarbij `Magento\Framework\Mail\EmailMessage` probeerde een `getBodyText()` niet-bestaande `getTextBody()` methode aan te roepen op `Symfony\Component\Mime\Message` . Dit zorgt voor compatibiliteit met Magento 2.4.8-p2 en `magento/framework` 103.0.8-p2.
 
 {{oct-2025-backports}}
+
+### Bekende problemen
+
+#### De uitcheckpagina kan static.min.js en mixins.min.js niet laden.
+
+{{checkout-page-fails-to-load-static-min-js-and-mixins-min-js}}
 
 ## 2.4.8-p2
 
 De Adobe Commerce 2.4.8-p2 veiligheidsversie verstrekt veiligheidsinsectenmoeilijke situaties voor kwetsbaarheid die in vorige versies van 2.4.8 worden geïdentificeerd.
 
-Voor de recentste informatie over de veiligheidsinsectenmoeilijke situaties, zie [&#x200B; Bulletin van de Veiligheid van Adobe APSB25-71 &#x200B;](https://helpx.adobe.com/nl/security/products/magento/apsb25-71.html).
+Voor de recentste informatie over de veiligheidsinsectenmoeilijke situaties, zie [ Bulletin van de Veiligheid van Adobe APSB25-71 ](https://helpx.adobe.com/security/products/magento/apsb25-71.html).
 
 {{b2b-patches}}
 
@@ -45,7 +51,7 @@ Voor de recentste informatie over de veiligheidsinsectenmoeilijke situaties, zie
 
 De Adobe Commerce 2.4.8-p1 veiligheidsversie verstrekt veiligheidsinsectenmoeilijke situaties voor kwetsbaarheid die in vorige versies van 2.4.8 worden geïdentificeerd.
 
-Voor de recentste informatie over de veiligheidsinsectenmoeilijke situaties, zie [&#x200B; Bulletin van de Veiligheid van Adobe APSB25-50 &#x200B;](https://helpx.adobe.com/nl/security/products/magento/apsb25-50.html).
+Voor de recentste informatie over de veiligheidsinsectenmoeilijke situaties, zie [ Bulletin van de Veiligheid van Adobe APSB25-50 ](https://helpx.adobe.com/security/products/magento/apsb25-50.html).
 
 {{b2b-patches}}
 
@@ -69,7 +75,7 @@ Deze release bevat de volgende hooglichten:
 
 >[!BEGINSHADEBOX]
 
-De correcties voor CVE-2025-47110 en VULN-31547 zijn ook beschikbaar als een geïsoleerde patch. Zie het [&#x200B; artikel van de Kennisbank &#x200B;](https://experienceleague.adobe.com/nl/docs/commerce-knowledge-base/kb/troubleshooting/known-issues-patches-attached/security-update-available-for-adobe-commerce-apsb25-50) voor details.
+De correcties voor CVE-2025-47110 en VULN-31547 zijn ook beschikbaar als een geïsoleerde patch. Zie het [ artikel van de Kennisbank ](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/troubleshooting/known-issues-patches-attached/security-update-available-for-adobe-commerce-apsb25-50) voor details.
 
 >[!ENDSHADEBOX]
 

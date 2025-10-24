@@ -1,7 +1,7 @@
 ---
-source-git-commit: 4cf6f81ce43ddcccf20db12b8735f29a151d420d
+source-git-commit: e625670e741c0669050ab758d4f87c5ca06fe3df
 workflow-type: tm+mt
-source-wordcount: '607'
+source-wordcount: '724'
 ht-degree: 0%
 
 ---
@@ -19,7 +19,7 @@ ht-degree: 0%
 
 >[!WARNING]
 >
->Alle bevelen van Magento CLI moeten door de [&#x200B; eigenaar van het dossiersysteem &#x200B;](/help/configuration/cli/config-cli.md#prerequisites) worden in werking gesteld.
+>Alle bevelen van Magento CLI moeten door de [ eigenaar van het dossiersysteem ](/help/configuration/cli/config-cli.md#prerequisites) worden in werking gesteld.
 
 ## Back-upopdrachten {#tip-backup-command}
 
@@ -31,7 +31,7 @@ ht-degree: 0%
 
 >[!NOTE]
 >
->Nadat u deze beveiligingspatch hebt geïnstalleerd, moeten Adobe Commerce B2B-handelaren ook een update uitvoeren naar de nieuwste compatibele B2B-beveiligingspatchrelease. Zie [&#x200B; B2B versienota&#39;s &#x200B;](https://experienceleague.adobe.com/nl/docs/commerce-admin/b2b/release-notes).
+>Nadat u deze beveiligingspatch hebt geïnstalleerd, moeten Adobe Commerce B2B-handelaren ook een update uitvoeren naar de nieuwste compatibele B2B-beveiligingspatchrelease. Zie [ B2B versienota&#39;s ](https://experienceleague.adobe.com/en/docs/commerce-admin/b2b/release-notes).
 
 ## Alleen Adobe Commerce {#ee-only}
 
@@ -43,7 +43,7 @@ ht-degree: 0%
 
 >[!IMPORTANT]
 >
->De gespleten gegevensbestandeigenschap was [&#x200B; afgekeurd &#x200B;](https://community.magento.com/t5/Magento-DevBlog/Deprecation-of-Split-Database-in-Magento-Commerce/ba-p/465187?_ga=2.128934671.2024864496.1657558157-1596100530.1657558157) in versie 2.4.2 van Adobe Commerce. Zie [&#x200B; terugkeren van een gespleten gegevensbestand aan één enkel gegevensbestand &#x200B;](/help/configuration/storage/revert-split-database.md).
+>De gespleten gegevensbestandeigenschap was [ afgekeurd ](https://community.magento.com/t5/Magento-DevBlog/Deprecation-of-Split-Database-in-Magento-Commerce/ba-p/465187?_ga=2.128934671.2024864496.1657558157-1596100530.1657558157) in versie 2.4.2 van Adobe Commerce. Zie [ terugkeren van een gespleten gegevensbestand aan één enkel gegevensbestand ](/help/configuration/storage/revert-split-database.md).
 
 <!-- End of Configuration guide snippets -->
 
@@ -51,13 +51,13 @@ ht-degree: 0%
 
 >[!NOTE]
 >
->Adobe Commerce-releases kunnen niet-compatibele wijzigingen (BIC&#39;s) bevatten. Om achteruit-onverenigbaar veranderingen te herzien, zie [&#x200B; verwijzing BIC &#x200B;](https://developer.adobe.com/commerce/php/development/backward-incompatible-changes/reference/). De grote achteruit-onverenigbaar kwesties worden beschreven in [&#x200B; hoogtepunten BIC &#x200B;](https://developer.adobe.com/commerce/php/development/backward-incompatible-changes/). Niet alle introducties introduceren grote BIC&#39;s.
+>Adobe Commerce-releases kunnen niet-compatibele wijzigingen (BIC&#39;s) bevatten. Om achteruit-onverenigbaar veranderingen te herzien, zie [ verwijzing BIC ](https://developer.adobe.com/commerce/php/development/backward-incompatible-changes/reference/). De grote achteruit-onverenigbaar kwesties worden beschreven in [ hoogtepunten BIC ](https://developer.adobe.com/commerce/php/development/backward-incompatible-changes/). Niet alle introducties introduceren grote BIC&#39;s.
 
 ## Alpha disclaimer {#alpha}
 
 >[!IMPORTANT]
 >
->[&#x200B; de versies van Alpha &#x200B;](/help/release/versioning-policy.md#alpha-patch-release) kunnen onvolledig zijn, en zullen waarschijnlijk gebreken bevatten. Ze worden geleverd &quot;AS IS&quot; zonder enige garantie. Adobe is niet verplicht om Alpha-releases te onderhouden, te corrigeren, bij te werken, te wijzigen of anderszins te ondersteunen (via Adobe Support Services of anderszins). Klanten mogen niet vertrouwen op de correcte werking of prestaties van Alpha-releases of begeleidende documentatie of materialen. Het gebruik van Alpha-releases is volledig op eigen risico van de klant.
+>[ de versies van Alpha ](/help/release/versioning-policy.md#alpha-patch-release) kunnen onvolledig zijn, en zullen waarschijnlijk gebreken bevatten. Ze worden geleverd &quot;AS IS&quot; zonder enige garantie. Adobe is niet verplicht om Alpha-releases te onderhouden, te corrigeren, bij te werken, te wijzigen of anderszins te ondersteunen (via Adobe Support Services of anderszins). Klanten mogen niet vertrouwen op de correcte werking of prestaties van Alpha-releases of begeleidende documentatie of materialen. Het gebruik van Alpha-releases is volledig op eigen risico van de klant.
 
 ## Beta disclaimer {#beta}
 
@@ -69,23 +69,23 @@ ht-degree: 0%
 
 >[!NOTE]
 >
->Vanaf de versie 2.3.2 wijzen we geïndexeerde CVE-nummers (Common Vulnerabilities and Exposure) toe aan en publiceren we deze voor elke beveiligingsfout die door externe partijen aan ons wordt gemeld. Hierdoor kunnen gebruikers gemakkelijker niet-verholpen kwetsbaarheden in hun implementatie identificeren. U kunt meer over CVE herkenningstekens bij [&#x200B; CVE &#x200B;](https://cve.mitre.org/) leren.
+>Vanaf de versie 2.3.2 wijzen we geïndexeerde CVE-nummers (Common Vulnerabilities and Exposure) toe aan en publiceren we deze voor elke beveiligingsfout die door externe partijen aan ons wordt gemeld. Hierdoor kunnen gebruikers gemakkelijker niet-verholpen kwetsbaarheden in hun implementatie identificeren. U kunt meer over CVE herkenningstekens bij [ CVE ](https://cve.mitre.org/) leren.
 
 ## Overige releasegegevens {#other-release-info}
 
 >[!NOTE]
 >
->Hoewel de code voor verhogingen en insectenmoeilijke situaties die in deze versienota&#39;s worden beschreven met Adobe Commerce worden gebundeld, worden verscheidene van deze projecten (bijvoorbeeld, B2B, de Bouwer van de Pagina, en de Progressieve Studio van het Web (PWA)) ook vrijgegeven onafhankelijk. De fixes van de insect voor deze projecten worden gedocumenteerd in de afzonderlijke, project-specifieke versieinformatie die in de documentatie voor elk project beschikbaar is. Zie [&#x200B; overzicht van de productversie &#x200B;](/help/release/release-notes/overview.md).
+>Hoewel de code voor verhogingen en insectenmoeilijke situaties die in deze versienota&#39;s worden beschreven met Adobe Commerce worden gebundeld, worden verscheidene van deze projecten (bijvoorbeeld, B2B, de Bouwer van de Pagina, en de Progressieve Studio van het Web (PWA)) ook vrijgegeven onafhankelijk. De fixes van de insect voor deze projecten worden gedocumenteerd in de afzonderlijke, project-specifieke versieinformatie die in de documentatie voor elk project beschikbaar is. Zie [ overzicht van de productversie ](/help/release/release-notes/overview.md).
 
 ## PHP Process Control {#php-process-control}
 
-Voordat u indexeerders in parallelle modus kunt uitvoeren, moet u ondersteuning voor procesbesturing (`pcntl`) inschakelen in PHP. Zie [&#x200B; Installatie &#x200B;](https://www.php.net/manual/en/pcntl.installation.php) in de PHP documentatie.
+Voordat u indexeerders in parallelle modus kunt uitvoeren, moet u ondersteuning voor procesbesturing (`pcntl`) inschakelen in PHP. Zie [ Installatie ](https://www.php.net/manual/en/pcntl.installation.php) in de PHP documentatie.
 
 ## Aangepaste patches {#custom-patches-disclaimer}
 
 >[!IMPORTANT]
 >
->Adobe biedt geen ondersteuning voor het toepassen van officiële, door Adobe geleverde patches met deze methode. Gebruik de volgende methode voor eigen risico. Om officiële flarden toe te passen, gebruik [[!DNL Quality Patches Tool] &#x200B;](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html?lang=nl-NL){target="_blank"}. Voer altijd uitgebreide tests uit voordat u een aangepaste patch implementeert.
+>Adobe biedt geen ondersteuning voor het toepassen van officiële, door Adobe geleverde patches met deze methode. Gebruik de volgende methode voor eigen risico. Om officiële flarden toe te passen, gebruik [[!DNL Quality Patches Tool] ](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html){target="_blank"}. Voer altijd uitgebreide tests uit voordat u een aangepaste patch implementeert.
 
 ## Oktober 2025 de flardhavens van de veiligheidsflard {#oct-2025-backports}
 
@@ -93,10 +93,27 @@ Voordat u indexeerders in parallelle modus kunt uitvoeren, moet u ondersteuning 
 
 * **Migreer van TinyMCE aan Hugerte.org**
 
-  Wegens het eind van steun voor TinyMCE 5 en 6 en het verlenen van vergunningen onverenigbaarheden met TinyMCE 7, wordt de huidige implementatie van de redacteur van Adobe Commerce WYSIWYG gemigreerd van TinyMCE aan de open-bron [&#x200B; redacteur HugeRTE &#x200B;](https://hugerte.org/).
+  Wegens het eind van steun voor TinyMCE 5 en 6 en het verlenen van vergunningen onverenigbaarheden met TinyMCE 7, wordt de huidige implementatie van de redacteur van Adobe Commerce WYSIWYG gemigreerd van TinyMCE aan de open-bron [ redacteur HugeRTE ](https://hugerte.org/).
 
   Deze migratie zorgt ervoor dat Adobe Commerce compatibel blijft met open-sourcinglicenties, bekende TinyMCE 6-kwetsbaarheden voorkomt en een moderne, ondersteunde bewerkingservaring biedt voor handelaren en ontwikkelaars.
 
 * **Toegevoegde steun voor Apache ActiveMQ het protocol van de STOMP van Artemis**
 
-  Toegevoegde steun voor de open-bronberichtbroker van de Artemis van ActiveMQ Artemis door het Eenvoudige Text Oriented Messaging Protocol (STOMP). Het levert een betrouwbaar en scalable overseinensysteem, dat flexibiliteit voor op STOMP-Gebaseerde integratie biedt. Zie [&#x200B; Apache ActiveMQ Artemis &#x200B;](https://experienceleague.adobe.com/nl/docs/commerce-operations/configuration-guide/message-queues/message-queue-framework#apache-activemq-artemis-stomp) in de *Gids van de Configuratie van Commerce*.
+  Toegevoegde steun voor de open-bronberichtbroker van de Artemis van ActiveMQ Artemis door het Eenvoudige Text Oriented Messaging Protocol (STOMP). Het levert een betrouwbaar en scalable overseinensysteem, dat flexibiliteit voor op STOMP-Gebaseerde integratie biedt. Zie [ Apache ActiveMQ Artemis ](https://experienceleague.adobe.com/en/docs/commerce-operations/configuration-guide/message-queues/message-queue-framework#apache-activemq-artemis-stomp) in de *Gids van de Configuratie van Commerce*.
+
+## De uitcheckpagina kan static.min.js en mixins.min.js niet laden. {#checkout-page-fails-to-load-static-min-js-and-mixins-min-js}
+
+Na recente wijzigingen in CSP/SRI laadt de uitcheckpagina static.min.js en mixins.min.js niet wanneer JavaScript-pakketten en -miniaturen beide zijn ingeschakeld in de productiemodus. Als gevolg hiervan worden de Mengsels RequireJS niet uitgevoerd en kunnen afdeksjablonen niet worden uitgecheckt (bijvoorbeeld `"Failed to load the 'Magento_Checkout/shipping' template requested by 'checkout.steps.shipping-step.shippingAddress'"` ).
+
+**Oplossing**:
+
+* JavaScript-pakketten uitschakelen; of
+* Als u JavaScript-pakketten ingeschakeld houdt, schakelt u JavaScript-miniaturen uit.
+
+>[!IMPORTANT]
+>
+>Schakel CSP niet uit of verwijder SRI-beveiliging in de productie. Eventuele passages op het niveau van de insteekmodule mogen alleen als laatste redmiddel voor een hotfix worden gebruikt en moeten door het beveiligingsteam worden gecontroleerd.
+
+**Hotfix**:
+
+Er wordt zo snel mogelijk een hotfix voor dit probleem gepubliceerd. Controleer deze releasepagina voor updates.
