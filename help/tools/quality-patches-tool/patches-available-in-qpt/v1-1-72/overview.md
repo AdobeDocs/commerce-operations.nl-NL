@@ -4,9 +4,9 @@ description: Deze subsectie verstrekt een gedetailleerde beschrijving van de kwe
 feature: Tools and External Services
 role: Admin, Developer
 type: Troubleshooting
-source-git-commit: 4a3060235a4d22764cbb231aca7c1f835d357906
+source-git-commit: 3493a89d40e3dee377be715e71e2f977a3afd382
 workflow-type: tm+mt
-source-wordcount: '286'
+source-wordcount: '280'
 ht-degree: 0%
 
 ---
@@ -26,7 +26,7 @@ QPT v1.1.72 omvat de volgende flarden:
 1. **[ACSD-67696](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-72/acsd-67696.md)**: `media_gallery` de ingangen keren niet in de het productknoop van GraphQL van de Kar na een geheim voorgeheugenspoeling terug.
 1. **ACSD-67946**: De updates van de kunst tonen dubbele foutenbanners.
 1. **ACSD-68011**: Niet-Bestaande SKUs die aan gedeelde catalogus via /V1/sharedCatalog/:id wordt toegewezen/assignProducts API.
-1. **ACSD-68118**: `customerCart` de vraagwinst van GraphQL productkenmerkwaarden die niet op de opslagkopbal wijzen, veroorzakend inconsistente localisatie.
+1. **ACSD-68118**: `customerCart` [!DNL GraphQL] de vraagwinst onjuiste waarden van de productattributen voor archiefmening.
 1. **ACSD-68092**: De opties van het product van de bundel worden verloren na veelvoudige besparingen toe te schrijven aan onjuiste synchronisatie tussen geplande updates en basisproductgegevens.
 1. **ACSD-67424**: `updated_at` waarde in de `GET /carts/search` [!DNL REST] API reactie past niet de waarde aan die in **[!UICONTROL Admin panel]** wordt getoond wanneer het gebruiken van Negotiable Citaten.
 1. **ACSD-67187**: De gebruikers Admin die tot niet-gebrek websites worden beperkt zien de fout, *&quot;*gelieve te creëren minstens een openbare gedeelde catalogus te werk te gaan*, en kan niet tot de **[!UICONTROL Add New Company]** knoop op het net van het Bedrijf toegang hebben.
