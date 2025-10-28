@@ -4,9 +4,9 @@ description: Deze subsectie verstrekt een gedetailleerde beschrijving van de kwe
 feature: Tools and External Services
 role: Admin, Developer
 type: Troubleshooting
-source-git-commit: fddde045789cdbbe811975b06635574b9835d497
+source-git-commit: 4a3060235a4d22764cbb231aca7c1f835d357906
 workflow-type: tm+mt
-source-wordcount: '291'
+source-wordcount: '286'
 ht-degree: 0%
 
 ---
@@ -16,7 +16,7 @@ ht-degree: 0%
 Deze subsectie bevat een gedetailleerde beschrijving van de problemen die zijn opgelost door de patches die beschikbaar zijn in [!DNL Quality Patches Tool] (QPT) v1.1.72.
 
 QPT v1.1.72 omvat de volgende flarden:
-1. **ACSD-68040**: De prestaties van de voorste onderzoekspagina ervaart verslechtering op [!DNL MariaDB] 10.6 en 11.4 met vele historische onderzoeksverzoeken.
+1. **ACSD-68040**: Voorste onderzoekspagina vertraagt neer op [!DNL MariaDB] 10.6 met grote geschiedenis.
 1. **ACSD-67941**: De verzoeken van GraphQL met onbekende filternamen veroorzaken PHP uitzonderingslogboeken.
 1. **ACSD-68064**: Het creëren van geplande updates resulteert in dubbele ingangen in milieu&#39;s met een hoog aantal genestelde categorieën.
 1. **ACSD-66807**: `report_viewed_product_index` de lijst toont een onjuiste telling van de meningen van de productpagina.
