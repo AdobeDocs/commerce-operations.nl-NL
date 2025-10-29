@@ -4,9 +4,9 @@ description: Deze subsectie verstrekt een gedetailleerde beschrijving van de kwe
 feature: Tools and External Services
 role: Admin, Developer
 type: Troubleshooting
-source-git-commit: 3493a89d40e3dee377be715e71e2f977a3afd382
+source-git-commit: 87f2d57e60ca74e2c90107a0d38517049802c89e
 workflow-type: tm+mt
-source-wordcount: '280'
+source-wordcount: '288'
 ht-degree: 0%
 
 ---
@@ -23,6 +23,7 @@ QPT v1.1.72 omvat de volgende flarden:
 1. **ACSD-67383**: Login als Klant met twee bedrijf admin rekeningen in de zelfde zitting veroorzaakt a *geen dergelijke entiteit met cartId* fout.
 1. **ACSD-67518**: De geavanceerde rapportering produceert gedupliceerde kopbalrijen wanneer de rijtelling de partijgrootte overschrijdt.
 1. **ACSD-67639**: Creërend een creditmemo ontbreekt voor bundelproducten met **[!UICONTROL Dynamic Price]** die aan *worden geplaatst Nr*.
+1. **ACSD-67946**: De update van de kunst toont dubbele foutenbanners.
 1. **[ACSD-67696](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-72/acsd-67696.md)**: `media_gallery` de ingangen keren niet in de het productknoop van GraphQL van de Kar na een geheim voorgeheugenspoeling terug.
 1. **ACSD-67946**: De updates van de kunst tonen dubbele foutenbanners.
 1. **ACSD-68011**: Niet-Bestaande SKUs die aan gedeelde catalogus via /V1/sharedCatalog/:id wordt toegewezen/assignProducts API.
