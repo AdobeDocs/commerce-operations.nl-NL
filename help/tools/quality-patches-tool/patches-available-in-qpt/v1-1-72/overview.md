@@ -4,9 +4,9 @@ description: Deze subsectie verstrekt een gedetailleerde beschrijving van de kwe
 feature: Tools and External Services
 role: Admin, Developer
 type: Troubleshooting
-source-git-commit: 87f2d57e60ca74e2c90107a0d38517049802c89e
+source-git-commit: 4e2c22626701e342920c8f60caff56af23712306
 workflow-type: tm+mt
-source-wordcount: '288'
+source-wordcount: '284'
 ht-degree: 0%
 
 ---
@@ -18,7 +18,7 @@ Deze subsectie bevat een gedetailleerde beschrijving van de problemen die zijn o
 QPT v1.1.72 omvat de volgende flarden:
 1. **ACSD-68040**: Voorste onderzoekspagina vertraagt neer op [!DNL MariaDB] 10.6 met grote geschiedenis.
 1. **ACSD-67941**: De verzoeken van GraphQL met onbekende filternamen veroorzaken PHP uitzonderingslogboeken.
-1. **ACSD-68064**: Het creëren van geplande updates resulteert in dubbele ingangen in milieu&#39;s met een hoog aantal genestelde categorieën.
+1. **ACSD-68064**: De dubbele ingangen die tijdens geplande updates in milieu&#39;s met diep genestelde categorieën worden gecreeerd.
 1. **ACSD-66807**: `report_viewed_product_index` de lijst toont een onjuiste telling van de meningen van de productpagina.
 1. **ACSD-67383**: Login als Klant met twee bedrijf admin rekeningen in de zelfde zitting veroorzaakt a *geen dergelijke entiteit met cartId* fout.
 1. **ACSD-67518**: De geavanceerde rapportering produceert gedupliceerde kopbalrijen wanneer de rijtelling de partijgrootte overschrijdt.
