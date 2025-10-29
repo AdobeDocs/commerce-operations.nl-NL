@@ -18,7 +18,7 @@ ht-degree: 0%
 
 De veiligheidsversie van Adobe Commerce 2.4.2-p2 verstrekt veiligheidsinsectenmoeilijke situaties voor kwetsbaarheid die in vorige versies van 2.4.2 zijn geïdentificeerd.
 
-Voor de recentste informatie over de veiligheidsinsectenmoeilijke situaties, zie [&#x200B; Bulletin van de Veiligheid van Adobe APSB21-64 &#x200B;](https://helpx.adobe.com/security/products/magento/apsb21-64.html).
+Voor de recentste informatie over de veiligheidsinsectenmoeilijke situaties, zie [&#x200B; Bulletin van de Veiligheid van Adobe APSB21-64 &#x200B;](https://helpx.adobe.com/nl/security/products/magento/apsb21-64.html).
 
 ## AC-3022.patch toepassen om DHL als scheepvaartmaatschappij te blijven aanbieden
 
