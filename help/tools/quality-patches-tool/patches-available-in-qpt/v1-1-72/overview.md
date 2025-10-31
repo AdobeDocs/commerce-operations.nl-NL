@@ -4,9 +4,9 @@ description: Deze subsectie verstrekt een gedetailleerde beschrijving van de kwe
 feature: Tools and External Services
 role: Admin, Developer
 type: Troubleshooting
-source-git-commit: 4e2c22626701e342920c8f60caff56af23712306
+source-git-commit: 43696165e24e39e25007b5864f8b0c3d0bcb92c2
 workflow-type: tm+mt
-source-wordcount: '284'
+source-wordcount: '280'
 ht-degree: 0%
 
 ---
@@ -20,7 +20,7 @@ QPT v1.1.72 omvat de volgende flarden:
 1. **ACSD-67941**: De verzoeken van GraphQL met onbekende filternamen veroorzaken PHP uitzonderingslogboeken.
 1. **ACSD-68064**: De dubbele ingangen die tijdens geplande updates in milieu&#39;s met diep genestelde categorieën worden gecreeerd.
 1. **ACSD-66807**: `report_viewed_product_index` de lijst toont een onjuiste telling van de meningen van de productpagina.
-1. **ACSD-67383**: Login als Klant met twee bedrijf admin rekeningen in de zelfde zitting veroorzaakt a *geen dergelijke entiteit met cartId* fout.
+1. **ACSD-67383**: Fout wanneer het programma openen als Klant met twee bedrijf admin rekeningen in de zelfde zitting.
 1. **ACSD-67518**: De geavanceerde rapportering produceert gedupliceerde kopbalrijen wanneer de rijtelling de partijgrootte overschrijdt.
 1. **ACSD-67639**: Creërend een creditmemo ontbreekt voor bundelproducten met **[!UICONTROL Dynamic Price]** die aan *worden geplaatst Nr*.
 1. **ACSD-67946**: De update van de kunst toont dubbele foutenbanners.
