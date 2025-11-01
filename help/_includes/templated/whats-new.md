@@ -23,7 +23,7 @@ Deze pagina bevat de wijzigingen die in de afgelopen 60 dagen zijn aangebracht. 
   </thead>
   <tbody>
     <tr>
-      <td><p>Toegevoegde gedetailleerde beschrijving van QPT 1.1.72 moeilijke situatie voor <a href="https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-72/acsd-67424"> ACSD-67424: Bijgewerkte_bij waarde in de GET /carts/onderzoek REST API reactie past niet de waarde aan die in het Comité Admin wordt getoond wanneer het gebruiken van Negotiable Citaten </a>.</p>
+      <td><p>Toegevoegde gedetailleerde beschrijving van QPT 1.1.72 moeilijke situatie voor <a href="https://experienceleague.adobe.com/nl/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-72/acsd-67424"> ACSD-67424: Bijgewerkte_bij waarde in de GET /carts/onderzoek REST API reactie past niet de waarde aan die in het Comité Admin wordt getoond wanneer het gebruiken van Negotiable Citaten </a>.</p>
 </td>
       <td>
         Nieuw onderwerp, qpt
@@ -31,7 +31,7 @@ Deze pagina bevat de wijzigingen die in de afgelopen 60 dagen zijn aangebracht. 
       <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/b8967a4cc8006fc5fa4319f7ffd6d8c7f3edf3d1">begaan</a></td>
     </tr>
     <tr>
-      <td><p>Toegevoegde gedetailleerde beschrijving van QPT 1.1.72 moeilijke situatie voor <a href="https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-72/acsd-67383"> ACSD-67383: Login als Klant met twee bedrijf admin rekeningen in de zelfde zitting veroorzaakt "Geen dergelijke entiteit met cartId"fout </a>.</p>
+      <td><p>Toegevoegde gedetailleerde beschrijving van QPT 1.1.72 moeilijke situatie voor <a href="https://experienceleague.adobe.com/nl/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-72/acsd-67383"> ACSD-67383: Login als Klant met twee bedrijf admin rekeningen in de zelfde zitting veroorzaakt "Geen dergelijke entiteit met cartId"fout </a>.</p>
 </td>
       <td>
         Nieuw onderwerp, qpt
@@ -53,7 +53,7 @@ Deze pagina bevat de wijzigingen die in de afgelopen 60 dagen zijn aangebracht. 
   </thead>
   <tbody>
     <tr>
-      <td><p>Toegevoegd <a href="https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-73/overview"> Overzicht: Het Hulpmiddel van de Patronen van de Kwaliteit (QPT) v1.1.73 </a>.</p>
+      <td><p>Toegevoegd <a href="https://experienceleague.adobe.com/nl/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-73/overview"> Overzicht: Het Hulpmiddel van de Patronen van de Kwaliteit (QPT) v1.1.73 </a>.</p>
 </td>
       <td>
         Nieuw onderwerp, qpt
@@ -75,7 +75,7 @@ Deze pagina bevat de wijzigingen die in de afgelopen 60 dagen zijn aangebracht. 
   </thead>
   <tbody>
     <tr>
-      <td><p>Toegevoegde gedetailleerde beschrijving van QPT 1.1.72 moeilijke situatie voor <a href="https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-72/acsd-68064"> ACSD-68064: Het creëren van geplande updates resulteert in dubbele ingangen in milieu's met een hoog aantal genestelde categorieën </a>.</p>
+      <td><p>Toegevoegde gedetailleerde beschrijving van QPT 1.1.72 moeilijke situatie voor <a href="https://experienceleague.adobe.com/nl/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-72/acsd-68064"> ACSD-68064: Het creëren van geplande updates resulteert in dubbele ingangen in milieu's met een hoog aantal genestelde categorieën </a>.</p>
 </td>
       <td>
         Nieuw onderwerp, qpt
@@ -83,7 +83,7 @@ Deze pagina bevat de wijzigingen die in de afgelopen 60 dagen zijn aangebracht. 
       <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/b8d4046ce9ea0d085cc11f5631d04a8b3adb3239">begaan</a></td>
     </tr>
     <tr>
-      <td><p>Toegevoegde gedetailleerde beschrijving van QPT 1.1.72 moeilijke situatie voor <a href="https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-72/acsd-67946"> ACSD-67946: De updates van de kunst tonen dubbele foutenbanners </a>.</p>
+      <td><p>Toegevoegde gedetailleerde beschrijving van QPT 1.1.72 moeilijke situatie voor <a href="https://experienceleague.adobe.com/nl/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-72/acsd-67946"> ACSD-67946: De updates van de kunst tonen dubbele foutenbanners </a>.</p>
 </td>
       <td>
         Nieuw onderwerp, qpt
@@ -113,7 +113,7 @@ Deze pagina bevat de wijzigingen die in de afgelopen 60 dagen zijn aangebracht. 
   </thead>
   <tbody>
     <tr>
-      <td><p>Toegevoegde gedetailleerde beschrijving van QPT 1.1.72 moeilijke situatie voor <a href="https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-72/acsd-68040"> ACSD-68040: Frontend de prestaties van de onderzoekspagina op MariaDB 10.6 en 11.4 met vele historische onderzoeksverzoeken </a> ervaart.</p>
+      <td><p>Toegevoegde gedetailleerde beschrijving van QPT 1.1.72 moeilijke situatie voor <a href="https://experienceleague.adobe.com/nl/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-72/acsd-68040"> ACSD-68040: Frontend de prestaties van de onderzoekspagina op MariaDB 10.6 en 11.4 met vele historische onderzoeksverzoeken </a> ervaart.</p>
 </td>
       <td>
         Nieuw onderwerp, qpt
@@ -121,7 +121,7 @@ Deze pagina bevat de wijzigingen die in de afgelopen 60 dagen zijn aangebracht. 
       <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/6dff1447a89c083fb8bd867281d20462cc843baa">begaan</a></td>
     </tr>
     <tr>
-      <td><p>Toegevoegde gedetailleerde beschrijving van QPT 1.1.72 moeilijke situatie voor <a href="https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-72/acsd-68118"> ACSD-68118: De vraag van CustomerCart GraphQL keert productkenmerkwaarden terug die niet op de opslagkopbal wijzen, veroorzakend inconsistente localisatie </a>.</p>
+      <td><p>Toegevoegde gedetailleerde beschrijving van QPT 1.1.72 moeilijke situatie voor <a href="https://experienceleague.adobe.com/nl/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-72/acsd-68118"> ACSD-68118: De vraag van CustomerCart GraphQL keert productkenmerkwaarden terug die niet op de opslagkopbal wijzen, veroorzakend inconsistente localisatie </a>.</p>
 </td>
       <td>
         Nieuw onderwerp, qpt
@@ -129,7 +129,7 @@ Deze pagina bevat de wijzigingen die in de afgelopen 60 dagen zijn aangebracht. 
       <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/7dec696f3d87d91902a166314199cf3b6c161f85">begaan</a></td>
     </tr>
     <tr>
-      <td><p>Toegevoegde gedetailleerde beschrijving van QPT 1.1.72 moeilijke situatie voor <a href="https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-72/acsd-66807"> ACSD-66807: De lijst Report_viewing_product_index toont een onjuiste telling van de meningen van de productpagina </a>.</p>
+      <td><p>Toegevoegde gedetailleerde beschrijving van QPT 1.1.72 moeilijke situatie voor <a href="https://experienceleague.adobe.com/nl/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-72/acsd-66807"> ACSD-66807: De lijst Report_viewing_product_index toont een onjuiste telling van de meningen van de productpagina </a>.</p>
 </td>
       <td>
         Nieuw onderwerp, qpt
@@ -151,7 +151,7 @@ Deze pagina bevat de wijzigingen die in de afgelopen 60 dagen zijn aangebracht. 
   </thead>
   <tbody>
     <tr>
-      <td><p>Toegevoegde gedetailleerde beschrijving van QPT 1.1.72 moeilijke situatie voor <a href="https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-72/acsd-67639"> ACSD-67639: Creërend een creditmemo ontbreekt voor bundelproducten met Dynamische Prijs die aan Geen </a> wordt geplaatst.</p>
+      <td><p>Toegevoegde gedetailleerde beschrijving van QPT 1.1.72 moeilijke situatie voor <a href="https://experienceleague.adobe.com/nl/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-72/acsd-67639"> ACSD-67639: Creërend een creditmemo ontbreekt voor bundelproducten met Dynamische Prijs die aan Geen </a> wordt geplaatst.</p>
 </td>
       <td>
         Nieuw onderwerp, qpt
