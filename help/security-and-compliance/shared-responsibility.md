@@ -796,7 +796,7 @@ Merchants zijn verantwoordelijk voor het synchroniseren van gegevens tussen omge
 >
 >Handelaars moeten de meest recente versie van Live zoeken, productaanbevelingen en betalingsservices gebruiken om de hoogste stabiliteit, functionaliteit en geschiktheid voor ondersteuning te garanderen.
 >Adobe biedt geen ondersteuning voor verouderde versies en upgrades om ervoor te zorgen dat u profiteert van de nieuwste verbeteringen en foutoplossingen.
->Voor details op gesteunde versies, zie de [&#x200B; Matrijs van de Beschikbaarheid van het Product voor de Diensten van Commerce &#x200B;](https://experienceleague.adobe.com/en/docs/commerce-operations/release/product-availability#commerce-services).
+>Voor details op gesteunde versies, zie de [&#x200B; Matrijs van de Beschikbaarheid van het Product voor de Diensten van Commerce &#x200B;](https://experienceleague.adobe.com/nl/docs/commerce-operations/release/product-availability#commerce-services).
 
 #### Aanbevelingen voor producten
 
