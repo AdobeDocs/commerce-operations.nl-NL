@@ -3,9 +3,9 @@ user-guide-title: Upgradehandleiding
 user-guide-description: Leer waarom het upgraden van uw Adobe Commerce-toepassing zo belangrijk is en hoe u een upgrade kunt plannen en uitvoeren.
 feature: Upgrade
 topic: Administration, Commerce, Development, Upgrade
-source-git-commit: ee69fcec4986fc85f93e336dc654a9bfff486d8b
+source-git-commit: 4616cc6990921b531483213f2904a24b483fb7ac
 workflow-type: tm+mt
-source-wordcount: '139'
+source-wordcount: '144'
 ht-degree: 0%
 
 ---
@@ -24,6 +24,7 @@ ht-degree: 0%
    - [Platformwijzigingen controleren](prepare/platform-changes.md)
    - [Volledige upgradevoorwaarden](prepare/prerequisites.md)
    - [Migreren van Elasticsearch naar OpenSearch](prepare/opensearch-migration.md)
+   - [Migreren van RabbitMQ naar ActiveMQ](prepare/activemq-migration.md)
    - [Omgaan met upgradebereik](prepare/scope.md)
 - Implementatie {#implementation}
    - [Een upgrade uitvoeren](implementation/perform-upgrade.md)
@@ -54,4 +55,4 @@ ht-degree: 0%
 - Bronnen {#resources}
    - [Aanbevolen lezen](resources/recommended-reading.md)
    - [Modernisering van uw platform met Adobe Commerce](resources/recommended-upgrade-paths.md)
-- [&#x200B; Terugkeer aan Operationele Gidsen &#x200B;](https://experienceleague.adobe.com/docs/commerce-operations/operational-guides/home.html?lang=nl-NL)
+- [ Terugkeer aan Operationele Gidsen ](https://experienceleague.adobe.com/docs/commerce-operations/operational-guides/home.html)
