@@ -55,4 +55,4 @@ ht-degree: 0%
 - Bronnen {#resources}
    - [Aanbevolen lezen](resources/recommended-reading.md)
    - [Modernisering van uw platform met Adobe Commerce](resources/recommended-upgrade-paths.md)
-- [ Terugkeer aan Operationele Gidsen ](https://experienceleague.adobe.com/docs/commerce-operations/operational-guides/home.html)
+- [&#x200B; Terugkeer aan Operationele Gidsen &#x200B;](https://experienceleague.adobe.com/docs/commerce-operations/operational-guides/home.html)
