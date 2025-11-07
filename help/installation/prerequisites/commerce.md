@@ -2,9 +2,9 @@
 title: De Adobe Commerce-software ophalen
 description: Leer hoe u de Adobe Commerce-software downloadt.
 exl-id: 7a769d5b-5397-4572-8db5-7602068e6aad
-source-git-commit: 987d65b52437fbd21f41600bb5741b3cc43d01f3
+source-git-commit: 0659c19e24e90ca4e3a7ac1c04914bda82b766dd
 workflow-type: tm+mt
-source-wordcount: '358'
+source-wordcount: '414'
 ht-degree: 0%
 
 ---
@@ -15,7 +15,13 @@ Je bent een van de 240.000 kooplieden wereldwijd die vertrouwen hebben in onze s
 
 ## De software ophalen
 
-Controleer de beschikbaarheid van opwindende nieuwe eigenschappen en versies en leer hoe u hen op onze [&#x200B; pagina van de productbeschikbaarheid &#x200B;](https://experienceleague.adobe.com/nl/docs/commerce-operations/release/product-availability) kunt krijgen.
+Controleer de beschikbaarheid en de verenigbaarheid van Adobe-Authored uitbreidingen en de Diensten van Commerce voor Adobe Commerce en Magento Open Source op onze [ pagina van de productbeschikbaarheid ](https://experienceleague.adobe.com/en/docs/commerce-operations/release/product-availability).
+
+>[!NOTE]
+>
+>Adobe Commerce-codebases worden nu uitsluitend via Composer gedistribueerd vanwege beleidswijzigingen. Gebruik Composer om een van de vermelde Adobe Commerce-versies te downloaden omdat de codebase niet meer beschikbaar is in de sectie Downloads.
+>
+>Voor meer informatie, verwijs naar [ kan tot het factureren verklaring niet toegang hebben en download codebase op Adobe Commerce op wolkeninfrastructuur ](https://experienceleague.adobe.com/en/docs/experience-cloud-kcs/kbarticles/ka-26611)
 
 Raadpleeg de volgende tabel om aan de slag te gaan met de installatie van Adobe Commerce.
 
@@ -62,4 +68,4 @@ UNIX-systemen vereisen `root` privileges om software als een webserver, PHP, te 
 
 Installeer *niet* de toepassing in de documentwortel van de Webserver als `root` gebruiker omdat de Webserver niet met die dossiers zou kunnen in wisselwerking staan.
 
-U hebt `root` voorrechten nodig om de [&#x200B; eigenaar van het dossiersysteem &#x200B;](file-system/overview.md) tot stand te brengen en die eigenaar aan de groep van de Webserver toe te voegen. Met de eigenaar van het bestandssysteem kunt u `bin/magento` -opdrachten uitvoeren vanaf de opdrachtregel en snijtaken instellen, die taken voor u plannen.
+U hebt `root` voorrechten nodig om de [ eigenaar van het dossiersysteem ](file-system/overview.md) tot stand te brengen en die eigenaar aan de groep van de Webserver toe te voegen. Met de eigenaar van het bestandssysteem kunt u `bin/magento` -opdrachten uitvoeren vanaf de opdrachtregel en snijtaken instellen, die taken voor u plannen.
