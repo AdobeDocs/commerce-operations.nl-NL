@@ -614,7 +614,7 @@ Deze pagina bevat de wijzigingen die in de afgelopen 60 dagen zijn aangebracht. 
       <td>
         Belangrijke update
       </td>
-      <td><a href="https://github.com/AdobeDocs/commerce-operations.en/pull/161">pull-verzoek</a></td>
+      <td><a href="https://github.com/AdobeDocs/commerce-operations.nl-NL/pull/161">pull-verzoek</a></td>
     </tr>
   </tbody>
 </table>

@@ -18,7 +18,7 @@ Adobe aanvaardt verzoeken van zowel interne als externe belanghebbenden, met inb
 
 ## Hoe maak ik een aanvraag?
 
-**Interne belanghebbenden** kunnen verzoeken voorleggen door een kwestie van Jira in het COMDOX project te openen. **Externe belanghebbenden** kunnen verzoeken voorleggen door de kwestie van a [&#x200B; GitHub &#x200B;](https://github.com/AdobeDocs/commerce-operations.en/issues/new/choose) in deze bewaarplaats te openen.
+**Interne belanghebbenden** kunnen verzoeken voorleggen door een kwestie van Jira in het COMDOX project te openen. **Externe belanghebbenden** kunnen verzoeken voorleggen door de kwestie van a [&#x200B; GitHub &#x200B;](https://github.com/AdobeDocs/commerce-operations.nl-NL/issues/new/choose) in deze bewaarplaats te openen.
 
 U kunt de volgende typen verzoeken verzenden:
 
@@ -29,7 +29,7 @@ U kunt de volgende typen verzoeken verzenden:
 ## Wat is het algemene proces?
 
 
-**creeer een kaartje van Jira of kwestie** - de interne belanghebbenden creëren een kaartje van Jira in het COMDOX project. Externe belanghebbenden dienen een GitHub-probleem in. Omvat volledige details in Jira of [&#x200B; GitHub kwestie &#x200B;](https://github.com/AdobeDocs/commerce-operations.en/issues/new/choose) om het team te helpen de context begrijpen en voorrang geven aan het verzoek.
+**creeer een kaartje van Jira of kwestie** - de interne belanghebbenden creëren een kaartje van Jira in het COMDOX project. Externe belanghebbenden dienen een GitHub-probleem in. Omvat volledige details in Jira of [&#x200B; GitHub kwestie &#x200B;](https://github.com/AdobeDocs/commerce-operations.nl-NL/issues/new/choose) om het team te helpen de context begrijpen en voorrang geven aan het verzoek.
 
 **het projectteam van Adobe evalueert en geeft voorrang aan het verzoek** - het team controleert regelmatig verzoeken om prioriteit te bepalen en de gevraagde veranderingen voor opneming in de Beste praktijken van Playbook van de Toepassing te evalueren. Bijvoorbeeld, zou het team kunnen bepalen dat in plaats van het creëren van een nieuw onderwerp van Beste praktijken, de gevraagde inhoud aan bestaande productdocumentatie op Experience League of de plaats van Adobe Developer zou moeten worden toegevoegd.
 
