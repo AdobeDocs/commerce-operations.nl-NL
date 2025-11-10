@@ -17,4 +17,4 @@ Leer meer over de nieuwste verbeteringen in Adobe Commerce, waaronder verbeterin
 
 {{bics}}
 
-Gebruik Composer om de Commerce-installatie bij te werken naar de nieuwste releaseversie om te profiteren van nieuwe functies, prestatieverbeteringen en beveiligingspatches. Voor gedetailleerde verbeteringsinstructies, zie de [ de verbeteringsgids van Adobe Commerce ](https://experienceleague.adobe.com/docs/commerce-operations/upgrade-guide/overview.html).
+Gebruik Composer om de Commerce-installatie bij te werken naar de nieuwste releaseversie om te profiteren van nieuwe functies, prestatieverbeteringen en beveiligingspatches. Voor gedetailleerde verbeteringsinstructies, zie de [&#x200B; de verbeteringsgids van Adobe Commerce &#x200B;](https://experienceleague.adobe.com/docs/commerce-operations/upgrade-guide/overview.html).

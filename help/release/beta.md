@@ -39,13 +39,13 @@ Met deze technologie wordt een belangrijke beperking van de traditionele zoekopd
 - Intelligente verwerking van vage, verkeerd gespelde of samengestelde query&#39;s
 - Kennis van de natuurlijke, conversatie-taal
 
-Om een uitnodiging aan het bètaprogramma te verzoeken, verzend een e-mail naar [ commerce-storefront-services@adobe.com ](mailto:commerce-storefront-services@adobe.com). Het Adobe-team zal reageren met de volgende stappen en toelatingseisen.
+Om een uitnodiging aan het bètaprogramma te verzoeken, verzend een e-mail naar [&#x200B; commerce-storefront-services@adobe.com &#x200B;](mailto:commerce-storefront-services@adobe.com). Het Adobe-team zal reageren met de volgende stappen en toelatingseisen.
 
 ### Cloud Automation Patching Service (Private Beta)
 
-De [ Dienst van het Patching van de Automatisering van de Wolk ](../tools/caps-tool/intro.md) automatiseert het proces om geïsoleerde veiligheidspatches op uw [ Adobe Commerce op de milieu&#39;s van de Infrastructuur van de Wolk toe te passen ](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/overview).
+De [&#x200B; Dienst van het Patching van de Automatisering van de Wolk &#x200B;](../tools/caps-tool/intro.md) automatiseert het proces om geïsoleerde veiligheidspatches op uw [&#x200B; Adobe Commerce op de milieu&#39;s van de Infrastructuur van de Wolk toe te passen &#x200B;](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/overview).
 
-In oktober 2025, zal de bètaversie van de het Patcheren van de Automatisering van de Wolk de Dienst aan het [ het hulpmiddeldashboard van de Analyse van plaats-brede ](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/site-wide-analysis-tool/dashboard) worden toegevoegd. Deze service biedt ondersteuning voor Commerce-projectbeheerders met een gestroomlijnde patchworkflow die het volgende omvat:
+In oktober 2025, zal de bètaversie van de het Patcheren van de Automatisering van de Wolk de Dienst aan het [&#x200B; het hulpmiddeldashboard van de Analyse van plaats-brede &#x200B;](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/site-wide-analysis-tool/dashboard) worden toegevoegd. Deze service biedt ondersteuning voor Commerce-projectbeheerders met een gestroomlijnde patchworkflow die het volgende omvat:
 
 - Geautomatiseerde patchinstallatie
 - Terugwinning terugdraaien
@@ -60,9 +60,9 @@ De bètaversie bevat de volgende functies:
 
 >[!NOTE]
 >
->Aangezien de Dienst van het Patching van de Automatisering van de Wolk automatisch geïsoleerde veiligheidspatches toepast, moet u de [ Medewerker of rol van Admin van het Project hebben ](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/project/user-access) om het te gebruiken.
+>Aangezien de Dienst van het Patching van de Automatisering van de Wolk automatisch geïsoleerde veiligheidspatches toepast, moet u de [&#x200B; Medewerker of rol van Admin van het Project hebben &#x200B;](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/project/user-access) om het te gebruiken.
 
-Om aan deze bèta deel te nemen, voltooi en voorleg de [ Dienst van het Patching van de Automatisering van de Wolk - de Vorm van de Registratie van Beta ](https://forms.office.com/r/3Wfxj5nPdB).
+Om aan deze bèta deel te nemen, voltooi en voorleg de [&#x200B; Dienst van het Patching van de Automatisering van de Wolk - de Vorm van de Registratie van Beta &#x200B;](https://forms.office.com/r/3Wfxj5nPdB).
 
 ### IBM Sterling Order Management System Integration (Private Beta)
 
@@ -73,7 +73,7 @@ Met deze integratieversneller voor IBM Sterling Order Management kunnen Adobe Co
 - Een universele weergave van bestellingen tussen kanalen vanaf één dashboard, zodat uw supportteams de uitzonderlijke service kunnen leveren en uitzonderingen snel kunnen identificeren en afhandelen.
 - Een getemplitste stroom van het terugkeerbeheer om terugkeerbeheer te vereenvoudigen.
 
-Om aan deze bèta deel te nemen, verzend een e-mailverzoek naar [ sbieber@adobe.com ](mailto:sbieber@adobe.com).
+Om aan deze bèta deel te nemen, verzend een e-mailverzoek naar [&#x200B; sbieber@adobe.com &#x200B;](mailto:sbieber@adobe.com).
 
 ### Adobe Commerce Foundation (Public Alpha/Beta)
 
@@ -84,7 +84,7 @@ Elke Adobe Commerce Foundation alfa- en bètaversie bevat alle wijzigingen die t
 - GraphQL-verbeteringen
 - Oplossingen voor algemene problemen met kwaliteit
 - Communautaire bijdragen
-- Veranderingen die worden vereist om verenigbaarheid met [ de diensten van Adobe Commerce ](https://experienceleague.adobe.com/en/docs/commerce/user-guides/home) te steunen
+- Veranderingen die worden vereist om verenigbaarheid met [&#x200B; de diensten van Adobe Commerce &#x200B;](https://experienceleague.adobe.com/en/docs/commerce/user-guides/home) te steunen
 
 #### Naamgevingsconventie en -schema
 
@@ -100,18 +100,18 @@ Beta-releasepakketten hebben het achtervoegsel `-betaX` . Voor de release van Ad
 - `2.4.7-beta1`
 - `2.4.7-beta2`
 
-Zie het [ versieschema ](schedule.md) voor de lijst van aanstaande openbare alpha en bètaversiedata.
+Zie het [&#x200B; versieschema &#x200B;](schedule.md) voor de lijst van aanstaande openbare alpha en bètaversiedata.
 
 #### Geen toegang
 
-Adobe Commerce alfa- en bètareleases worden op dezelfde manier gedistribueerd als elke andere Adobe Commerce-patchrelease: als Composer-metapakketten op `https://repo.magento.com` . De broncode is beschikbaar op [ GitHub ](https://github.com/magento/magento2).
+Adobe Commerce alfa- en bètareleases worden op dezelfde manier gedistribueerd als elke andere Adobe Commerce-patchrelease: als Composer-metapakketten op `https://repo.magento.com` . De broncode is beschikbaar op [&#x200B; GitHub &#x200B;](https://github.com/magento/magento2).
 
-Zie [ Snel begin van de Installatie Composer ](../installation/composer.md) voor meer details.
+Zie [&#x200B; Snel begin van de Installatie Composer &#x200B;](../installation/composer.md) voor meer details.
 
 #### Melding van problemen
 
 Adobe biedt de standaard Adobe Support Service niet voor alfa- en bètareleases.
 
-Om terugkoppelen met betrekking tot alpha- en bètaversies voor te leggen, volg de [ regelmatige kwestie die stroom ](https://developer.adobe.com/commerce/contributor/guides/code-contributions/) op [ GitHub ](https://github.com/magento/magento2) meldt.
+Om terugkoppelen met betrekking tot alpha- en bètaversies voor te leggen, volg de [&#x200B; regelmatige kwestie die stroom &#x200B;](https://developer.adobe.com/commerce/contributor/guides/code-contributions/) op [&#x200B; GitHub &#x200B;](https://github.com/magento/magento2) meldt.
 
 Adobe houdt toezicht op alle kritieke problemen die zijn gemeld in vergelijking met de nieuwste alfa- of bètaversie en geeft prioriteit aan deze problemen om te worden opgelost vóór de GA-releasedatum.
