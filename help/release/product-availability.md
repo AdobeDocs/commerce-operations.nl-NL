@@ -19,7 +19,7 @@ Ondersteunde versies zijn volledig getest door Adobe. Voor ondersteuning van ond
 
 >[!NOTE]
 >
->De steun voor de versies van Adobe Commerce omvat ook steun voor [ beschikbare veiligheidspatches ](versions.md).
+>De steun voor de versies van Adobe Commerce omvat ook steun voor [&#x200B; beschikbare veiligheidspatches &#x200B;](versions.md).
 
 ## Door Adobe gemaakte extensies
 
@@ -31,7 +31,7 @@ In de volgende tabel ziet u de versieondersteuning voor elke extensie ten opzich
 
 ## Commerce Services
 
-[ de Diensten van Commerce ](https://experienceleague.adobe.com/docs/commerce/user-guides/home.html) zijn een reeks van Adobe-ontvangen eigenschappen die robuuste functionaliteit en snelle reactietijden, samen met uw instantie van Commerce verstrekken.
+[&#x200B; de Diensten van Commerce &#x200B;](https://experienceleague.adobe.com/docs/commerce/user-guides/home.html) zijn een reeks van Adobe-ontvangen eigenschappen die robuuste functionaliteit en snelle reactietijden, samen met uw instantie van Commerce verstrekken.
 
 Aanbevolen wordt dat verkopers de meest recente versie van een service gebruiken om de hoogste stabiliteit en functionaliteit te garanderen. In de documentatie wordt de versie beschreven die momenteel wordt uitgebracht.
 
