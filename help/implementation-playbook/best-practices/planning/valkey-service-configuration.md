@@ -25,13 +25,13 @@ stage:
     VALKEY_BACKEND: '\Magento\Framework\Cache\Backend\RemoteSynchronizedCache'
 ```
 
-Voor milieuconfiguratie op de infrastructuur van de Wolk, zie [`VALKEY_BACKEND` &#x200B;](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/configure/env/stage/variables-deploy#valkey_backend) in _Commerce op de Gids van de Infrastructuur van de Wolk_.
+Voor milieuconfiguratie op de infrastructuur van de Wolk, zie [`VALKEY_BACKEND` &#x200B;](https://experienceleague.adobe.com/nl/docs/commerce-on-cloud/user-guide/configure/env/stage/variables-deploy#valkey_backend) in _Commerce op de Gids van de Infrastructuur van de Wolk_.
 
 Voor installaties op-gebouw, zie [&#x200B; Valkey pagina caching &#x200B;](../../../configuration/cache/valkey-pg-cache.md#configure-page-caching) in de _Gids van de Configuratie_ vormen.
 
 >[!NOTE]
 >
->Controleer of u de nieuwste versie van het pakket `ece-tools` gebruikt. Als niet, [&#x200B; verbetering aan de recentste versie &#x200B;](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/dev-tools/ece-tools/update-package). U kunt de versie controleren die in uw lokale omgeving is geïnstalleerd met de opdracht `composer show magento/ece-tools` CLI.
+>Controleer of u de nieuwste versie van het pakket `ece-tools` gebruikt. Als niet, [&#x200B; verbetering aan de recentste versie &#x200B;](https://experienceleague.adobe.com/nl/docs/commerce-on-cloud/user-guide/dev-tools/ece-tools/update-package). U kunt de versie controleren die in uw lokale omgeving is geïnstalleerd met de opdracht `composer show magento/ece-tools` CLI.
 
 ### Grootte van L2-cachegeheugen (Adobe Commerce Cloud)
 
@@ -85,13 +85,13 @@ stage:
     VALKEY_USE_SLAVE_CONNECTION: true
 ```
 
-Voor meer details, zie [&#x200B; VALKEY_USE_SLAVE_CONNECTION &#x200B;](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/configure/env/stage/variables-deploy#valkey_use_slave_connection) in _Commerce op de Gids van de Infrastructuur van de Wolk_.
+Voor meer details, zie [&#x200B; VALKEY_USE_SLAVE_CONNECTION &#x200B;](https://experienceleague.adobe.com/nl/docs/commerce-on-cloud/user-guide/configure/env/stage/variables-deploy#valkey_use_slave_connection) in _Commerce op de Gids van de Infrastructuur van de Wolk_.
 
 Voor Adobe Commerce-installaties op locatie configureert u de nieuwe Valkey-casimplementatie met behulp van de `bin/magento:setup` -opdrachten. Voor meer informatie, zie [&#x200B; Valkey van het Gebruik voor standaardgeheime voorgeheugen &#x200B;](../../../configuration/cache/valkey-pg-cache.md#configure-page-caching) in de _Gids van de Configuratie_.
 
 >[!WARNING]
 >
->Vorm __ geen Valkeyslave verbinding voor de projecten van de wolkeninfrastructuur met a [&#x200B; geschraapte/gespleten architectuur &#x200B;](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/architecture/scaled-architecture). Dit veroorzaakt verbindingsfouten van Valkey. Voor meer informatie, voor meer informatie, zie de [&#x200B; Valkey configuratiebegeleiding &#x200B;](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/configure/env/stage/variables-deploy#valkey_use_slave_connection) in _Commerce op de gids van de Infrastructuur van de Wolk_.
+>Vorm __ geen Valkeyslave verbinding voor de projecten van de wolkeninfrastructuur met a [&#x200B; geschraapte/gespleten architectuur &#x200B;](https://experienceleague.adobe.com/nl/docs/commerce-on-cloud/user-guide/architecture/scaled-architecture). Dit veroorzaakt verbindingsfouten van Valkey. Voor meer informatie, voor meer informatie, zie de [&#x200B; Valkey configuratiebegeleiding &#x200B;](https://experienceleague.adobe.com/nl/docs/commerce-on-cloud/user-guide/configure/env/stage/variables-deploy#valkey_use_slave_connection) in _Commerce op de gids van de Infrastructuur van de Wolk_.
 
 ## Toetsen vooraf laden
 
@@ -153,11 +153,11 @@ stage:
 
 >[!NOTE]
 >
->In het vorige voorbeeld, is het `full_page` geheime voorgeheugen niet relevant voor Adobe Commerce op de projecten van de wolkeninfrastructuur, omdat die projecten [&#x200B; Fastly &#x200B;](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/cdn/fastly) gebruiken.
+>In het vorige voorbeeld, is het `full_page` geheime voorgeheugen niet relevant voor Adobe Commerce op de projecten van de wolkeninfrastructuur, omdat die projecten [&#x200B; Fastly &#x200B;](https://experienceleague.adobe.com/nl/docs/commerce-on-cloud/user-guide/cdn/fastly) gebruiken.
 
 Voor het vormen van installaties op-gebouw, zie [&#x200B; het geheim voorgeheugenopties van de Stale &#x200B;](../../../configuration/cache/level-two-cache.md#stale-cache-options) in de _Gids van de Configuratie_.
 
-Tijdens plaatsing, zou u de volgende lijnen in [&#x200B; moeten zien bouwen en logboek &#x200B;](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/develop/test/log-locations#build-and-deploy-logs) opstellen:
+Tijdens plaatsing, zou u de volgende lijnen in [&#x200B; moeten zien bouwen en logboek &#x200B;](https://experienceleague.adobe.com/nl/docs/commerce-on-cloud/user-guide/develop/test/log-locations#build-and-deploy-logs) opstellen:
 
 ```
 W:   - Downloading colinmollenhour/credis (1.11.1)
