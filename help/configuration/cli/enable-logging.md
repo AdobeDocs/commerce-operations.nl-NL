@@ -3,9 +3,9 @@ title: Logbestand inschakelen
 description: Leer hoe u verschillende typen aanmelding in Adobe Commerce in- en uitschakelt. Ontdek registrerenconfiguratie en beheerstechnieken.
 feature: Configuration, Logs
 exl-id: 78b0416a-5bad-42a9-a918-603600e98928
-source-git-commit: 10f324478e9a5e80fc4d28ce680929687291e990
+source-git-commit: aff705cefcd4de38d17cad41628bc8dbd6d630cb
 workflow-type: tm+mt
-source-wordcount: '268'
+source-wordcount: '352'
 ht-degree: 0%
 
 ---
@@ -54,6 +54,23 @@ Door gebrek, schrijft Commerce aan het zuivert logboek (`<install_directory>/var
 
 Standaard schrijft Commerce de logboeken voor databaseactiviteiten naar het `<install-dir>/var/debug/db.log` -bestand.
 
+### Opslaglocatie voor query-logboekregistratie
+
+Wanneer databaselogbestanden zijn ingeschakeld, slaat Commerce querylogbestanden op de volgende locatie op:
+
+- **het logboekdossier van de Vraag**: `<install-directory>/var/debug/db.log`
+- **folder van het Logboek**: `<install-directory>/var/debug/`
+
+Het querylogboek bevat:
+- SQL-query&#39;s uitgevoerd door de toepassing
+- Uitvoeringstijden van query
+- Parameters en bindingen voor query
+- Gegevens databaseverbinding
+
+>[!NOTE]
+>
+>Het dossier van het vraaglogboek kan snel in hoog-verkeersmilieu&#39;s groeien. De schijfruimte van de monitor en overweegt het uitvoeren van logboekomwenteling of periodieke schoonmaak van het dossier van het vraaglogboek.
+
 ### Databaseregistratie inschakelen
 
 1. Gebruik de opdracht `dev:query-log` om databaselogboekingen in of uit te schakelen.
@@ -71,6 +88,24 @@ Standaard schrijft Commerce de logboeken voor databaseactiviteiten naar het `<in
    ```bash
    bin/magento cache:flush
    ```
+
+### Zoeklogs weergeven
+
+U kunt de vraaglogboeken bekijken gebruikend standaarddossier het bekijken bevelen:
+
+```bash
+# View the entire query log
+cat var/debug/db.log
+
+# View the last 100 lines of the query log
+tail -n 100 var/debug/db.log
+
+# Monitor the query log in real-time
+tail -f var/debug/db.log
+
+# Search for specific queries
+grep "SELECT" var/debug/db.log
+```
 
 ## Gekruist registreren
 
