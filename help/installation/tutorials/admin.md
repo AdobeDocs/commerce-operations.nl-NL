@@ -3,9 +3,9 @@ title: Een beheerdersaccount maken, bewerken of ontgrendelen
 description: Voer de volgende stappen uit om het beheerdersaccount voor uw Adobe Commerce Admin-toepassing te beheren.
 feature: Install, User Account
 exl-id: d87871a1-717d-4662-b84d-98a018518286
-source-git-commit: ca8dc855e0598d2c3d43afae2e055aa27035a09b
+source-git-commit: aaed7dba7d11085eb8e2793cefffb8c8b082e750
 workflow-type: tm+mt
-source-wordcount: '319'
+source-wordcount: '320'
 ht-degree: 0%
 
 ---
@@ -39,12 +39,12 @@ bin/magento admin:user:create [--<parameter_name>=<value>, ...]
 In de volgende tabel worden parameters en waarden gedefinieerd:
 
 | Naam | Waarde | Vereist? |
-|--- |--- |--- |
+|--- |-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|--- |
 | `--admin-firstname` | Voornaam van beheerder. | Ja |
 | `--admin-lastname` | Achternaam van beheerder. | Ja |
 | `--admin-email` | E-mailadres van de beheerder. | Ja |
 | `--admin-user` | Gebruikersnaam beheerder. | Ja |
-| `--admin-password` | Beheerderswachtwoord. Het wachtwoord moet ten minste 7 tekens lang zijn en ten minste één alfabetisch en numeriek teken bevatten. <br><br> wij adviseren een langer, complexer wachtwoord. Als de wachtwoordtekenreeks speciale tekens bevat die letterlijke interpretatie vereisen (zoals backslashes of spaties), plaatst u het wachtwoord tussen enkele aanhalingstekens. | Ja |
+| `--admin-password` | Beheerderswachtwoord. Het wachtwoord moet ten minste 12 tekens lang zijn en ten minste één alfabetisch en numeriek teken bevatten. <br><br> Adobe adviseert het specificeren van een langer, complexer wachtwoord. Als de wachtwoordtekenreeks speciale tekens bevat die letterlijke interpretatie vereisen (zoals backslashes of spaties), plaatst u het wachtwoord tussen enkele aanhalingstekens. | Ja |
 | `--magento-init-params` | Voeg aan om het even welk bevel toe om toepassings initialisatieparameters aan te passen <br/><br/> bijvoorbeeld: `MAGE_MODE=developer&MAGE_DIRS[base][path]=/var/www/example.com&MAGE_DIRS[cache][path]=/var/tmp/cache` | Nee |
 
 Voorbeeld van het gebruik:
