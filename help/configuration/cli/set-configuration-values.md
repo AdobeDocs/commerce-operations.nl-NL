@@ -2,9 +2,9 @@
 title: Configuratiewaarden instellen
 description: Leer hoe u configuratiewaarden instelt en vergrendelde beheerwaarden wijzigt in Adobe Commerce. Ontdek geavanceerde configuratiebevelen en technieken.
 exl-id: 1dc2412d-50b3-41fb-ab22-3eccbb086302
-source-git-commit: 10f324478e9a5e80fc4d28ce680929687291e990
+source-git-commit: 2672c696d672ad72bef7537570ed630bc33c41b4
 workflow-type: tm+mt
-source-wordcount: '1043'
+source-wordcount: '1101'
 ht-degree: 0%
 
 ---
@@ -68,9 +68,9 @@ U kunt de bereikcode vinden in de Commerce-database of in Commerce Admin.
 
    In de volgende afbeelding ziet u een voorbeeldcode voor de website.
 
-   ![&#x200B; krijg een website of opslag meningscode van Admin &#x200B;](../../assets/configuration/website-code.png)
+   ![ krijg een website of opslag meningscode van Admin ](../../assets/configuration/website-code.png)
 
-1. Ga met [&#x200B; Vastgestelde waarden &#x200B;](#set-values) verder.
+1. Ga met [ Vastgestelde waarden ](#set-values) verder.
 
 **om de werkingsgebiedcode in het gegevensbestand** te vinden:
 
@@ -124,25 +124,25 @@ bin/magento config:set [--scope="..."] [--scope-code="..."] [-le | --lock-env] [
 **om gevoelige configuratiewaarden** te plaatsen:
 
 ```bash
-bin/magento config:sensitive:set [--scope="..."] [--scope-code="..."] path value
+bin/magento config:sensitive:set [--scope="..."] [--scope-code="..."] path
 ```
 
 In de volgende tabel worden de opdrachtparameters `set` beschreven:
 
 | Parameter | Beschrijving |
-| --- | --- |
+| --- |----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | `--scope` | Het bereik van de configuratie. De mogelijke waarden zijn `default` , `website` of `store` . De standaardwaarde is `default` . |
 | `--scope-code` | De bereikcode van de configuratie (code van de website of van de opslagmening) |
 | `-e or --lock-env` | Hiermee vergrendelt u de waarde zodat deze niet kan worden bewerkt in de beheerfunctie of wijzigt u een instelling die al is vergrendeld in de beheerfunctie. De opdracht schrijft de waarde naar het `<Commerce base dir>/app/etc/env.php` -bestand. |
 | `-c or --lock-config` | Hiermee vergrendelt u de waarde zodat deze niet kan worden bewerkt in de beheerfunctie of wijzigt u een instelling die al is vergrendeld in de beheerfunctie. De opdracht schrijft de waarde naar het `<Commerce base dir>/app/etc/config.php` -bestand. De optie `--lock-config` overschrijft `--lock-env` als u beide opties opgeeft. |
 | `path` | _Vereiste_. Het configuratiepad |
-| `value` | _Vereiste_. De waarde van de configuratie |
+| `value` | _Vereiste_. De waarde van de configuratie. Hoewel het als afzonderlijk argument in een CLI bevel kan worden overgegaan, adviseert Adobe dat u het niet in het originele bevel specificeert. Voer in plaats daarvan de opdracht uit zonder de waarde en voer vervolgens de waarde in wanneer hierom wordt gevraagd. Het gebruiken van deze methode verhindert het schrijven van gevoelige toegangswaarden aan bash_history, die de veiligste manier is om config te plaatsen. |
 
 >[!INFO]
 >
 >Vanaf Commerce 2.2.4 vervangen de opties `--lock-env` en `--lock-config` de optie `--lock` .
 >
->Als u `--lock-env` of `--lock-config` optie gebruikt om een waarde te plaatsen of te veranderen, moet u het [`bin/magento app:config:import` bevel &#x200B;](../cli/import-configuration.md) gebruiken om het plaatsen in te voeren alvorens u tot Admin of opslag toegang hebt.
+>Als u `--lock-env` of `--lock-config` optie gebruikt om een waarde te plaatsen of te veranderen, moet u het [`bin/magento app:config:import` bevel ](../cli/import-configuration.md) gebruiken om het plaatsen in te voeren alvorens u tot Admin of opslag toegang hebt.
 
 Als u een onjuist configuratiepad invoert, retourneert deze opdracht een fout
 
@@ -221,7 +221,7 @@ waar
 
 >[!INFO]
 >
->Het `bin/magento config:show` bevel toont de waarden van om het even welke [&#x200B; gecodeerde waarden &#x200B;](../reference/config-reference-sens.md) als reeks asterisken: `**&#x200B;**&#x200B;**`.
+>Het `bin/magento config:show` bevel toont de waarden van om het even welke [ gecodeerde waarden ](../reference/config-reference-sens.md) als reeks asterisken: `******`.
 
 ### Voorbeelden
 
@@ -292,5 +292,5 @@ web/unsecure/base_url - http://example-for-store.com/
 
 >[!INFO]
 >
->De bereikcode kan alleen letters (a-z of A-Z), getallen (0-9) en onderstrepingstekens (_) bevatten. Het eerste teken moet ook een letter zijn. Als hoofdletters of hoofdletters worden gebruikt bij het maken van een website- of winkelweergave, is de overeenkomst intern niet hoofdlettergevoelig voor overschrijvingen van configuratie-instellingen via omgevingsvariabelen. Zie [&#x200B; het omgevingsvariabelen van het Gebruik om configuratiemontages &#x200B;](../reference/override-config-settings.md#environment-variables) met voeten te treden.
+>De bereikcode kan alleen letters (a-z of A-Z), getallen (0-9) en onderstrepingstekens (_) bevatten. Het eerste teken moet ook een letter zijn. Als hoofdletters of hoofdletters worden gebruikt bij het maken van een website- of winkelweergave, is de overeenkomst intern niet hoofdlettergevoelig voor overschrijvingen van configuratie-instellingen via omgevingsvariabelen. Zie [ het omgevingsvariabelen van het Gebruik om configuratiemontages ](../reference/override-config-settings.md#environment-variables) met voeten te treden.
 
