@@ -68,9 +68,9 @@ U kunt de bereikcode vinden in de Commerce-database of in Commerce Admin.
 
    In de volgende afbeelding ziet u een voorbeeldcode voor de website.
 
-   ![ krijg een website of opslag meningscode van Admin ](../../assets/configuration/website-code.png)
+   ![&#x200B; krijg een website of opslag meningscode van Admin &#x200B;](../../assets/configuration/website-code.png)
 
-1. Ga met [ Vastgestelde waarden ](#set-values) verder.
+1. Ga met [&#x200B; Vastgestelde waarden &#x200B;](#set-values) verder.
 
 **om de werkingsgebiedcode in het gegevensbestand** te vinden:
 
@@ -219,7 +219,7 @@ waar
 
 >[!INFO]
 >
->Het `bin/magento config:show` bevel toont de waarden van om het even welke [ gecodeerde waarden ](../reference/config-reference-sens.md) als reeks asterisken: `******`.
+>Het `bin/magento config:show` bevel toont de waarden van om het even welke [&#x200B; gecodeerde waarden &#x200B;](../reference/config-reference-sens.md) als reeks asterisken: `**&#x200B;**&#x200B;**`.
 
 ### Voorbeelden
 
@@ -290,5 +290,5 @@ web/unsecure/base_url - http://example-for-store.com/
 
 >[!INFO]
 >
->De bereikcode kan alleen letters (a-z of A-Z), getallen (0-9) en onderstrepingstekens (_) bevatten. Het eerste teken moet ook een letter zijn. Als hoofdletters of hoofdletters worden gebruikt bij het maken van een website- of winkelweergave, is de overeenkomst intern niet hoofdlettergevoelig voor overschrijvingen van configuratie-instellingen via omgevingsvariabelen. Zie [ het omgevingsvariabelen van het Gebruik om configuratiemontages ](../reference/override-config-settings.md#environment-variables) met voeten te treden.
+>De bereikcode kan alleen letters (a-z of A-Z), getallen (0-9) en onderstrepingstekens (_) bevatten. Het eerste teken moet ook een letter zijn. Als hoofdletters of hoofdletters worden gebruikt bij het maken van een website- of winkelweergave, is de overeenkomst intern niet hoofdlettergevoelig voor overschrijvingen van configuratie-instellingen via omgevingsvariabelen. Zie [&#x200B; het omgevingsvariabelen van het Gebruik om configuratiemontages &#x200B;](../reference/override-config-settings.md#environment-variables) met voeten te treden.
 
