@@ -14,13 +14,13 @@ ht-degree: 3%
 
 Voor Adobe Commerce 2.4.4 en latere versies:
 
-- Om het levenscyclusbeleid van Adobe Commerce te stroomlijnen en de opdracht-kritieke behoeften van klanten te steunen, breidde Adobe het steunvenster tot drie jaar uit van de Algemene datum van de Beschikbaarheid (GA) voor Adobe Commerce 2.4.4 en later. Adobe biedt kwaliteitscorrecties voor 2.4.4 en latere releases voor een periode van drie jaar. De klanten kunnen tot kwaliteitsmoeilijke situaties toegang hebben door [ Steun van Adobe Commerce ](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide) te contacteren of door zelf-dient [[!DNL Quality Patches Tool] ](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html) als hun versie nog voor kwaliteitssteun verkiest. In de volgende tabel wordt het einde van de softwaresupportdatums voor de Adobe Commerce-releaselijnen beschreven.
+- Om het levenscyclusbeleid van Adobe Commerce te stroomlijnen en de opdracht-kritieke behoeften van klanten te steunen, breidde Adobe het steunvenster tot drie jaar uit van de Algemene datum van de Beschikbaarheid (GA) voor Adobe Commerce 2.4.4 en later. Adobe biedt kwaliteitscorrecties voor 2.4.4 en latere releases voor een periode van drie jaar. De klanten kunnen tot kwaliteitsmoeilijke situaties toegang hebben door [&#x200B; Steun van Adobe Commerce &#x200B;](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide) te contacteren of door zelf-dient [[!DNL Quality Patches Tool] &#x200B;](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html) als hun versie nog voor kwaliteitssteun verkiest. In de volgende tabel wordt het einde van de softwaresupportdatums voor de Adobe Commerce-releaselijnen beschreven.
 
 - Adobe biedt beveiligingsoplossingen via een beveiligingspatchrelease voor de ondersteuningsperiode van drie jaar.
 
-- Voor kritieke veiligheidskwesties, zoals nul-dag kwetsbaarheid, verstrekt Adobe [ hotfixes ](https://support.magento.com/hc/en-us/sections/360003869892-Known-issues-patches-attached-) voor alle klanten op een gesteunde versie, zelfs als zij niet op het recentste flard of de versie van het veiligheidspatch zijn. Een hotfix is niet uitgebreid en biedt geen oplossing voor alle beveiligingsproblemen die worden opgelost door een upgrade naar de nieuwste versie uit te voeren.
+- Voor kritieke veiligheidskwesties, zoals nul-dag kwetsbaarheid, verstrekt Adobe [&#x200B; hotfixes &#x200B;](https://support.magento.com/hc/en-us/sections/360003869892-Known-issues-patches-attached-) voor alle klanten op een gesteunde versie, zelfs als zij niet op het recentste flard of de versie van het veiligheidspatch zijn. Een hotfix is niet uitgebreid en biedt geen oplossing voor alle beveiligingsproblemen die worden opgelost door een upgrade naar de nieuwste versie uit te voeren.
 
-- Adobe biedt geen beveiligings- en kwaliteitsoplossingen voor services en softwareafhankelijkheden van derden (zoals PHP en MySQL) die het einde van de levensduur kunnen bereiken terwijl klanten de ondersteuningsperiode van drie jaar voor Adobe Commerce hebben. Zie de [ systeemvereisten ](../installation/system-requirements.md) voor een volledige lijst van geteste en gesteunde derdetechnologieën.
+- Adobe biedt geen beveiligings- en kwaliteitsoplossingen voor services en softwareafhankelijkheden van derden (zoals PHP en MySQL) die het einde van de levensduur kunnen bereiken terwijl klanten de ondersteuningsperiode van drie jaar voor Adobe Commerce hebben. Zie de [&#x200B; systeemvereisten &#x200B;](../installation/system-requirements.md) voor een volledige lijst van geteste en gesteunde derdetechnologieën.
 
 - Voor Adobe Commerce op Cloud-klanten die versie 2.4.4 en 2.4.5 gebruiken, past Adobe automatisch PHP 8.1 levenslange beveiligingsoplossingen toe op de infrastructuur, zodat deze klanten niet worden beïnvloed door PHP 8.1 end-of-support. Klanten op locatie die Adobe Commerce 2.4.4 en 2.4.5 gebruiken, moeten contact opnemen met de ondersteuning van Adobe om zo nodig beveiligingspatches voor de PHP 8.1-levensduur aan te vragen.
 
@@ -54,7 +54,7 @@ Adobe moedigt klanten aan om zo snel mogelijk een upgrade uit te voeren. Om echt
 >- <sup> 4 </sup> Beginnend met 2.4.6-p11 veiligheidspatch.
 >- <sup> 5 </sup> Beginnend met 2.4.5-p11 veiligheidspatch.
 >- <sup> 6 </sup> Beginnend met 2.4.4-p12 veiligheidspatch.
->- Zie [ Beleid van de Levenscyclus van de Software ](https://www.adobe.com/content/dam/cc/en/legal/terms/enterprise/pdfs/Adobe-Commerce-Software-Lifecycle-Policy.pdf).
+>- Zie [&#x200B; Beleid van de Levenscyclus van de Software &#x200B;](https://www.adobe.com/content/dam/cc/en/legal/terms/enterprise/pdfs/Adobe-Commerce-Software-Lifecycle-Policy.pdf).
 
 <table style="table-layout:auto">
 <thead>
