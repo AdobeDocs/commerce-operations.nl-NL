@@ -4,9 +4,9 @@ description: Deze subsectie verstrekt een gedetailleerde beschrijving van de kwe
 feature: Tools and External Services
 role: Admin, Developer
 type: Troubleshooting
-source-git-commit: a604879f63b1cfcf8f21fec53e69984bff0c66d4
+source-git-commit: ae994d8185516dabf88b682a33f1775c0d636515
 workflow-type: tm+mt
-source-wordcount: '192'
+source-wordcount: '185'
 ht-degree: 0%
 
 ---
@@ -20,7 +20,7 @@ QPT v1.1.73 omvat de volgende flarden:
 1. **ACSD-67908**: Oplossing de kwestie waar de dossiers JS er niet in slagen behoorlijk in multi-store montages samen te voegen.
 1. **ACSD-68190**: Vaste de kwestie waar de kortingen niet van toepassing zijn, toegepaste kortingen tonen niet correct in de reactie van de het kartonmening van GraphQL, en non-coupon kortingen worden verwijderd bij het verwijderen van een couponkorting.
 1. **ACSD-68206**: Vaste de fout wanneer het gebruiken van de server van de Toepassing van GraphQL met de **[!UICONTROL Rate Limiting]** eigenschap met PHP [!DNL Redis] geïnstalleerde uitbreiding.
-1. **ACSD-68356**: Vaste de kwestie waar een de kartvraag van GraphQL een onjuist kortingsbedrag voor virtuele citaten terugkeerde.
+1. **ACSD-68356**: [!DNL GraphQL] de vraagwinst van de kar onjuiste disconteringsbedrag voor virtuele citaten.
 1. **ACSD-68391**: Oplossing de kwestie waar de op categorie betrekking hebbende toestemmingen niet correct werden toegepast in **[!UICONTROL Quick Order]** en **[!UICONTROL Requisition Lists]**.
 1. **ACSD-68400**: Oplossing een kwestie waar het virtuele aantal van de giftekaart niet nauwkeurig in **[!UICONTROL Inventory reservation table]** werd weerspiegeld.
 
