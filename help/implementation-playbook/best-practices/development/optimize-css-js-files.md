@@ -4,9 +4,9 @@ description: Leer hoe u CSS- en JavaScript-bestanden (JS) voor Adobe Commerce-pr
 role: Developer
 feature: Best Practices
 exl-id: ff0bc407-b563-418b-9d6a-7c1dc8f235df
-source-git-commit: 19f874130645fcabe3178a37ec6dedcf75b93afa
+source-git-commit: 5f4edc2e694c9bdbdffbe48b0e5d69907cbc0027
 workflow-type: tm+mt
-source-wordcount: '430'
+source-wordcount: '395'
 ht-degree: 0%
 
 ---
@@ -16,11 +16,11 @@ ht-degree: 0%
 Voor een meer responsieve Commerce-site optimaliseert u CSS- en JavaScript-bronbestanden (JS) en elimineert u bronnen voor het blokkeren van renderbestanden.
 
 - **optimaliseer CSS en JS dossiers** - verklein de tijd die wordt vereist om CSS en de dossiers van JavaScript (JS) te laden door Adobe Commerce te vormen om, afzonderlijke dossiers in één enkel dossier samen te voegen, te minimaliseren en te bundelen.
-- **elimineer renderen-blokkerende middelen** - overweeg het leveren van kritieke eigenschappen JS en CSS inline en het uitstellen van alle niet-kritieke stijlen JS/CSS. Voor begeleiding, zie [&#x200B; teruggeven-blokkerende middelen &#x200B;](https://web.dev/render-blocking-resources/) elimineren.
+- **elimineer renderen-blokkerende middelen** - overweeg het leveren van kritieke eigenschappen JS en CSS inline en het uitstellen van alle niet-kritieke stijlen JS/CSS. Voor begeleiding, zie [ teruggeven-blokkerende middelen ](https://web.dev/render-blocking-resources/) elimineren.
 
 ## Betrokken producten en versies
 
-[&#x200B; Alle gesteunde versies, 2.3 en later &#x200B;](../../../release/versions.md) van:
+[ Alle gesteunde versies, 2.3 en later ](../../../release/versions.md) van:
 
 - Adobe Commerce over cloudinfrastructuur
 - Adobe Commerce ter plaatse
@@ -89,19 +89,9 @@ U kunt ook ingebouwde Adobe Commerce-bundeling (basisbundeling) inschakelen via 
 php -f bin/magento config:set dev/js/enable_js_bundling 1
 ```
 
-## Niet-kritieke hoofdscripts uitstellen
-
-Automatisch vertragen niet-kritieke Javascripts die in de hoofdsectie automatisch worden geladen door dit het plaatsen toe te laten: [!UICONTROL **opslag** > **Montages** > **Configuratie** > **Geavanceerd** > **Ontwikkelaar** > **de Montages van JavaScript**].
-
-U kunt deze markering ook inschakelen vanaf de opdrachtregel:
-
-```bash
-php -f bin/magento config:set dev/js/defer_non_critical 1
-```
-
 ## Aanvullende informatie
 
 - [Optimalisatie-instellingen aan de clientzijde](../../../performance/configuration.md#client-side-optimization-settings)
-- [&#x200B; Gids van de Gebruiker: Het optimaliseren van middeldossiers &#x200B;](https://experienceleague.adobe.com/nl/docs/commerce-admin/systems/tools/developer-tools#optimizing-resource-files)
-- [&#x200B; Voorste Gids van de Ontwikkelaar: CSS het samenvoegen, minificatie, en plaatsprestaties &#x200B;](https://developer.adobe.com/commerce/frontend-core/guide/css/#css-merging-minification-and-performance)
+- [ Gids van de Gebruiker: Het optimaliseren van middeldossiers ](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/tools/developer-tools#optimizing-resource-files)
+- [ Voorste Gids van de Ontwikkelaar: CSS het samenvoegen, minificatie, en plaatsprestaties ](https://developer.adobe.com/commerce/frontend-core/guide/css/#css-merging-minification-and-performance)
 - [Geavanceerde JavaScript-pakketten](../../../performance/advanced-js-bundling.md)
