@@ -13,29 +13,29 @@ ht-degree: 0%
 
 In de instructies op deze pagina wordt beschreven hoe u Adobe Commerce op zelfgehoste infrastructuur kunt installeren. Voor begeleiding bij de bevordering van een bestaande installatie, zie de [_Gids van de Verbetering_](../upgrade/overview.md).
 
-Adobe gebruikt [ Composer ](https://getcomposer.org/) om de componenten van Adobe Commerce en hun gebiedsdelen te beheren. Het gebruik van Composer voor het ophalen van het Adobe Commerce-pakket biedt de volgende voordelen:
+Adobe gebruikt [&#x200B; Composer &#x200B;](https://getcomposer.org/) om de componenten van Adobe Commerce en hun gebiedsdelen te beheren. Het gebruik van Composer voor het ophalen van het Adobe Commerce-pakket biedt de volgende voordelen:
 
 - Bibliotheken van derden opnieuw gebruiken zonder deze te bundelen met broncode
 - Verminder uitbreidingsconflicten en compatibiliteitskwesties door een op componenten-gebaseerde architectuur met robuust gebiedsbeheer te gebruiken
-- Adhere aan [ PHP-Kader de Groep van de Interoperabiliteit (FIG) ](https://www.php-fig.org/) normen
+- Adhere aan [&#x200B; PHP-Kader de Groep van de Interoperabiliteit (FIG) &#x200B;](https://www.php-fig.org/) normen
 - Magento Open Source opnieuw verpakken met andere componenten
 - De Adobe Commerce-software gebruiken in een productieomgeving
 
 >[!NOTE]
 >
->De ontwikkelaars die tot Magento Open Source bijdragen zouden de [ op git-Gebaseerde ](https://developer.adobe.com/commerce/contributor/guides/install) installatiemethode moeten gebruiken.
+>De ontwikkelaars die tot Magento Open Source bijdragen zouden de [&#x200B; op git-Gebaseerde &#x200B;](https://developer.adobe.com/commerce/contributor/guides/install) installatiemethode moeten gebruiken.
 
 ## Vereisten
 
 Voordat u verdergaat, moet u het volgende doen:
 
-- Voltooi alle [ in eerste instantie vereiste taken ](system-requirements.md).
-- [ installeer Composer ](https://getcomposer.org/download/).
-- Krijg [ authentificatietoetsen ](prerequisites/authentication-keys.md) aan de bewaarplaats van de Composer van Adobe Commerce.
+- Voltooi alle [&#x200B; in eerste instantie vereiste taken &#x200B;](system-requirements.md).
+- [&#x200B; installeer Composer &#x200B;](https://getcomposer.org/download/).
+- Krijg [&#x200B; authentificatietoetsen &#x200B;](prerequisites/authentication-keys.md) aan de bewaarplaats van de Composer van Adobe Commerce.
 
 ## Aanmelden als eigenaar van bestandssysteem
 
-Leer over eigendom, toestemmingen, en de eigenaar van het dossiersysteem in het [ Overzicht van eigendom en toestemmingenonderwerp ](prerequisites/file-system/overview.md).
+Leer over eigendom, toestemmingen, en de eigenaar van het dossiersysteem in het [&#x200B; Overzicht van eigendom en toestemmingenonderwerp &#x200B;](prerequisites/file-system/overview.md).
 
 Ga naar de eigenaar van het bestandssysteem:
 
@@ -55,7 +55,7 @@ Ga naar de eigenaar van het bestandssysteem:
 
 1. Als u CLI-opdrachten vanuit een willekeurige map wilt uitvoeren, voegt u `<app_root>/bin` toe aan uw systeem `PATH` .
 
-   Omdat de cellen verschillende syntaxis hebben, raadpleeg een verwijzing als [ unix.stackexchange.com ](https://unix.stackexchange.com/questions/117467/how-to-permanently-set-environmental-variables).
+   Omdat de cellen verschillende syntaxis hebben, raadpleeg een verwijzing als [&#x200B; unix.stackexchange.com &#x200B;](https://unix.stackexchange.com/questions/117467/how-to-permanently-set-environmental-variables).
 
    Voorbeeld van bash-shell voor CentOS:
 
@@ -73,7 +73,7 @@ Ga naar de eigenaar van het bestandssysteem:
 
 Zo krijgt u het Adobe Commerce-pakket:
 
-1. Login aan uw toepassingsserver als, of schakelaar aan, de [ eigenaar van het dossiersysteem ](prerequisites/file-system/overview.md).
+1. Login aan uw toepassingsserver als, of schakelaar aan, de [&#x200B; eigenaar van het dossiersysteem &#x200B;](prerequisites/file-system/overview.md).
 1. Wijzig de hoofdmap van de webserver of een map die u hebt geconfigureerd als een virtueel hoofddocument van de host.
 1. Maak een Composer-project met een Commerce-metapakket.
 
@@ -89,15 +89,15 @@ Zo krijgt u het Adobe Commerce-pakket:
    composer create-project --repository-url=https://repo.magento.com/ magento/project-enterprise-edition <install-directory-name>
    ```
 
-   Voer desgevraagd uw verificatietoetsen in. Openbare en privé sleutels worden gecreeerd en gevormd van [ Commerce Marketplace - de Sleutels van de Toegang ](https://commercemarketplace.adobe.com/customer/account/login/). Kopieer en plak voor de `[!UICONTROL username]` de waarde voor de openbare sleutel. Kopieer en plak voor de `[!UICONTROL password]` de waarde van de persoonlijke sleutel.
+   Voer desgevraagd uw verificatietoetsen in. Openbare en privé sleutels worden gecreeerd en gevormd van [&#x200B; Commerce Marketplace - de Sleutels van de Toegang &#x200B;](https://commercemarketplace.adobe.com/customer/account/login/). Kopieer en plak voor de `[!UICONTROL username]` de waarde voor de openbare sleutel. Kopieer en plak voor de `[!UICONTROL password]` de waarde van de persoonlijke sleutel.
 
    >[!NOTE]
    >
    > Als u een Composer `[auth.json](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/develop/authentication-keys)` -bestand of een omgevingsvariabele gebruikt die is geconfigureerd met de Commerce-verificatietoetsen, wordt u niet gevraagd verificatietoetsen in te voeren.
 
-   Als er fouten optreden, zoals `Could not find package...` of `...no matching package found` , controleert u of de opdracht geen typos bevat. Als er nog steeds fouten optreden, kunt u geen Adobe Commerce downloaden. Contact {de Steun van 0} Adobe Commerce [ voor hulp.](https://support.magento.com/hc/en-us)
+   Als er fouten optreden, zoals `Could not find package...` of `...no matching package found` , controleert u of de opdracht geen typos bevat. Als er nog steeds fouten optreden, kunt u geen Adobe Commerce downloaden. Contact {de Steun van 0} Adobe Commerce [&#x200B; voor hulp.](https://support.magento.com/hc/en-us)
 
-   Zie [ het Oplossen van problemen ](https://support.magento.com/hc/en-us/articles/360033818091) voor hulp met meer fouten.
+   Zie [&#x200B; het Oplossen van problemen &#x200B;](https://support.magento.com/hc/en-us/articles/360033818091) voor hulp met meer fouten.
 
 ### Voorbeeld - kleine release
 
@@ -172,7 +172,7 @@ bin/magento setup:install \
 
 >[!TIP]
 >
->Voor een volledige beschrijving van CLI installeert opties, zie [ de toepassing van de bevellijn ](advanced.md) installeren.
+>Voor een volledige beschrijving van CLI installeert opties, zie [&#x200B; de toepassing van de bevellijn &#x200B;](advanced.md) installeren.
 
 ## Overzicht van Command
 
@@ -232,4 +232,4 @@ De volgende argumenten gelden voor alle opdrachten. Deze opdrachten kunnen worde
 
 >[!NOTE]
 >
->Gefeliciteerd! U hebt de snelle installatie voltooid. Hebt u meer geavanceerde hulp nodig? Controle uit [ Geavanceerde installeert ](advanced.md) gids.
+>Gefeliciteerd! U hebt de snelle installatie voltooid. Hebt u meer geavanceerde hulp nodig? Controle uit [&#x200B; Geavanceerde installeert &#x200B;](advanced.md) gids.

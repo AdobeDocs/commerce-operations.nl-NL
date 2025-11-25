@@ -12,9 +12,9 @@ Het opnieuw indexeren op MariaDB 10.4 en 10.6 vergt meer tijd in vergelijking me
 * [`optimizer_switch='rowid_filter=off'`](https://mariadb.com/kb/en/optimizer-switch/)
 * [`optimizer_use_condition_selectivity = 1`](https://mariadb.com/docs/server/server-management/variables-and-modes/server-system-variables#optimizer_use_condition_selectivity)
 
-Als u prestatiesdegradatie niet verwant met indexatie na bevordering aan MariaDB 10.6 ervaart, denk na toelatend het [`--query-cache-type` ](https://mariadb.com/kb/en/server-system-variables/#query_cache_type) plaatsen. Bijvoorbeeld `--query-cache-type=ON` .
+Als u prestatiesdegradatie niet verwant met indexatie na bevordering aan MariaDB 10.6 ervaart, denk na toelatend het [`--query-cache-type` &#x200B;](https://mariadb.com/kb/en/server-system-variables/#query_cache_type) plaatsen. Bijvoorbeeld `--query-cache-type=ON` .
 
-Alvorens Adobe Commerce op de projecten van de wolkeninfrastructuur te bevorderen, kunt u ook MariaDB moeten bevorderen ([ zie MariaDB beste praktijken ](../implementation-playbook/best-practices/maintenance/mariadb-upgrade.md) bevorderen).
+Alvorens Adobe Commerce op de projecten van de wolkeninfrastructuur te bevorderen, kunt u ook MariaDB moeten bevorderen ([&#x200B; zie MariaDB beste praktijken &#x200B;](../implementation-playbook/best-practices/maintenance/mariadb-upgrade.md) bevorderen).
 
 Bijvoorbeeld:
 
