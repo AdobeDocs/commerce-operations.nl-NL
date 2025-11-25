@@ -17,10 +17,10 @@ Voor toegangsrechten voor Adobe Commerce-pakketten moet u sleutels gebruiken die
 
 >[!TIP]
 >
->Als u [&#x200B; fouten &#x200B;](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/deployment/magento-commerce-cloud-repo-could-not-be-accessed-403-forbidden-or-404-not-found-error-when-deploying.html) ontmoet of niet de [!UICONTROL Access Keys] sectie in het lusje van de Marketplace ziet, kunt u geen toestemming hebben om tot het pakket toegang te hebben, of de toegangsrechten zijn verlopen toe te schrijven aan een opmerkelijke factuur op uw rekening.
+>Als u [&#x200B; fouten &#x200B;](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/deployment/magento-commerce-cloud-repo-could-not-be-accessed-403-forbidden-or-404-not-found-error-when-deploying.html?lang=nl-NL) ontmoet of niet de [!UICONTROL Access Keys] sectie in het lusje van de Marketplace ziet, kunt u geen toestemming hebben om tot het pakket toegang te hebben, of de toegangsrechten zijn verlopen toe te schrijven aan een opmerkelijke factuur op uw rekening.
 >
 >* Als je de primaire contactpersoon voor de account bent, zorg er dan voor dat er geen openstaande factuur op de account wordt vermeld.
->* Als de sleutels die door het Primaire Contact worden verstrekt niet werken en er geen uitstaande facturen op de rekening zijn, zou het Primaire Contact [&#x200B; Steun van Adobe Commerce &#x200B;](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html#submit-ticket) voor hulp moeten contacteren.
+>* Als de sleutels die door het Primaire Contact worden verstrekt niet werken en er geen uitstaande facturen op de rekening zijn, zou het Primaire Contact [&#x200B; Steun van Adobe Commerce &#x200B;](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html?lang=nl-NL#submit-ticket) voor hulp moeten contacteren.
 
 Zo maakt u verificatietoetsen:
 

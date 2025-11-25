@@ -20,7 +20,7 @@ U kunt de Adobe Commerce-software op locatie in ongeveer 30 tot 60 minuten insta
 >
 >U zou tussenliggende technische kennis en servertoegang moeten hebben om met succes te werk te gaan.
 
-De installatie leidt tot een volledig functionele opslag van Adobe Commerce met zowel a [&#x200B; klant-onder ogen ziet storefront &#x200B;](https://experienceleague.adobe.com/en/docs/commerce-admin/start/storefront/storefront) als een [&#x200B; administratief paneel &#x200B;](https://experienceleague.adobe.com/en/docs/commerce-admin/start/admin/admin). U moet uw gegevensbestandgeloofsbrieven, domeininformatie, en authentificatietoetsen klaar hebben alvorens met het proces te beginnen.
+De installatie leidt tot een volledig functionele opslag van Adobe Commerce met zowel a [&#x200B; klant-onder ogen ziet storefront &#x200B;](https://experienceleague.adobe.com/nl/docs/commerce-admin/start/storefront/storefront) als een [&#x200B; administratief paneel &#x200B;](https://experienceleague.adobe.com/nl/docs/commerce-admin/start/admin/admin). U moet uw gegevensbestandgeloofsbrieven, domeininformatie, en authentificatietoetsen klaar hebben alvorens met het proces te beginnen.
 
 ## Handelstaken
 

@@ -14,11 +14,11 @@ ht-degree: 0%
 # Beheerde waarschuwingen voor Adobe Commerce
 
 
-We hebben belangrijke dashboards en waarschuwingen ingesteld om u te helpen te begrijpen wanneer uw site kritieke opslag en [!DNL Apdex] -niveaus bereikt (tevredenheid van gebruikers over toepassingen en serviceresponstijd). Dit kan u helpen actie te ondernemen voordat u langzame reactietijden of een stroomonderbreking opmerkt. U kunt de waarschuwingen met de onderstaande artikelen oplossen. Voordat u de waarschuwingen kunt gebruiken, moet u eerst meldingskanalen instellen. Gelieve te verwijzen naar [[!DNL New Relic]  vormen de Kanalen van het Bericht &#x200B;](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/monitor/new-relic/new-relic-service) in Commerce op de Gids van de Wolk.
+We hebben belangrijke dashboards en waarschuwingen ingesteld om u te helpen te begrijpen wanneer uw site kritieke opslag en [!DNL Apdex] -niveaus bereikt (tevredenheid van gebruikers over toepassingen en serviceresponstijd). Dit kan u helpen actie te ondernemen voordat u langzame reactietijden of een stroomonderbreking opmerkt. U kunt de waarschuwingen met de onderstaande artikelen oplossen. Voordat u de waarschuwingen kunt gebruiken, moet u eerst meldingskanalen instellen. Gelieve te verwijzen naar [[!DNL New Relic]  vormen de Kanalen van het Bericht &#x200B;](https://experienceleague.adobe.com/nl/docs/commerce-on-cloud/user-guide/monitor/new-relic/new-relic-service) in Commerce op de Gids van de Wolk.
 
 >[!NOTE]
 >
->Als beheerde waarschuwingen voor het Adobe Commerce-waarschuwingsbeleid niet beschikbaar zijn, kan dit mogelijk komen doordat dit account nieuw is gemaakt of omdat [!DNL New Relic] onlangs is geconfigureerd. Elke dinsdag wordt een proces uitgevoerd om het waarschuwingsbeleid aan deze accounts toe te voegen. Het waarschuwingsbeleid moet u de dag nadat het volgende proces wordt uitgevoerd, ter beschikking staan. Als het beleid nog mist, [&#x200B; voorlegt een de steunverzoek van Adobe Commerce &#x200B;](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide#support-case) en omvat uw project identiteitskaart
+>Als beheerde waarschuwingen voor het Adobe Commerce-waarschuwingsbeleid niet beschikbaar zijn, kan dit mogelijk komen doordat dit account nieuw is gemaakt of omdat [!DNL New Relic] onlangs is geconfigureerd. Elke dinsdag wordt een proces uitgevoerd om het waarschuwingsbeleid aan deze accounts toe te voegen. Het waarschuwingsbeleid moet u de dag nadat het volgende proces wordt uitgevoerd, ter beschikking staan. Als het beleid nog mist, [&#x200B; voorlegt een de steunverzoek van Adobe Commerce &#x200B;](https://experienceleague.adobe.com/nl/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide#support-case) en omvat uw project identiteitskaart
 
 Zie hieronder in de tabel voor koppelingen naar de KB-artikelen met stappen voor het oplossen van problemen voor deze waarschuwingen:
 
@@ -54,4 +54,4 @@ Zie hieronder in de tabel voor koppelingen naar de KB-artikelen met stappen voor
 
 ## Waarschuwingsdrempels voor beheerde waarschuwingen controleren
 
-U kunt de waarschuwingsdrempels controleren die voor beheerde waarschuwingen van uw New Relic-account zijn geconfigureerd. Voor instructies, zie [&#x200B; prestaties van de Monitor met beheerde alarm &#x200B;](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/monitor/new-relic/investigate/investigate-performance#monitor-performance-with-managed-alerts).
+U kunt de waarschuwingsdrempels controleren die voor beheerde waarschuwingen van uw New Relic-account zijn geconfigureerd. Voor instructies, zie [&#x200B; prestaties van de Monitor met beheerde alarm &#x200B;](https://experienceleague.adobe.com/nl/docs/commerce-on-cloud/user-guide/monitor/new-relic/investigate/investigate-performance#monitor-performance-with-managed-alerts).

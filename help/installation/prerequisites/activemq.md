@@ -15,7 +15,7 @@ Adobe Commerce ondersteunt ook de open-source berichtbroker van ActiveMQ Artemis
 
 >[!NOTE]
 >
->ActiveMQ Artemis is geïntroduceerd in Adobe Commerce 2.4.6 en latere versies. Voor details bij het installeren van Artemis ActiveMQ in Adobe Commerce op de projecten van de wolkeninfrastructuur, zie &lbrace;de dienst ActiveMQ van de Opstelling [&#x200B; in &#x200B;](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/configure/service/activemq) Commerce op de Gids van de Wolk *.*
+>ActiveMQ Artemis is geïntroduceerd in Adobe Commerce 2.4.6 en latere versies. Voor details bij het installeren van Artemis ActiveMQ in Adobe Commerce op de projecten van de wolkeninfrastructuur, zie &lbrace;de dienst ActiveMQ van de Opstelling [&#x200B; in &#x200B;](https://experienceleague.adobe.com/nl/docs/commerce-on-cloud/user-guide/configure/service/activemq) Commerce op de Gids van de Wolk *.*
 
 De rijen van het bericht verstrekken een asynchroon communicatie mechanisme waarin de afzender en de ontvanger van een bericht niet elkaar contacteren. Noch moeten zij met de berichtrij tezelfdertijd communiceren. Wanneer een afzender een bericht in een rij plaatst, wordt het opgeslagen tot de ontvanger hen ontvangt.
 
