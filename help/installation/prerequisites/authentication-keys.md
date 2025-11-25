@@ -2,9 +2,9 @@
 title: Uw verificatietoetsen ophalen
 description: Ga als volgt te werk om referenties op te halen voor toegang tot Adobe Commerce Composer-pakketten op repo.magento.com.
 exl-id: 7ec2a410-d81f-476a-bf6a-f3c61982a734
-source-git-commit: fc63ca58cd2ff7c5ec597751980a39bfbe68aa5f
+source-git-commit: 84a20012a81278cc95587ec14281b05330261687
 workflow-type: tm+mt
-source-wordcount: '470'
+source-wordcount: '479'
 ht-degree: 0%
 
 ---
@@ -17,20 +17,20 @@ Voor toegangsrechten voor Adobe Commerce-pakketten moet u sleutels gebruiken die
 
 >[!TIP]
 >
->Als u [&#x200B; fouten &#x200B;](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/deployment/magento-commerce-cloud-repo-could-not-be-accessed-403-forbidden-or-404-not-found-error-when-deploying.html?lang=nl-NL) ontmoet, kunt u geen toestemming hebben om tot het pakket toegang te hebben, of de toegangsrechten zijn verlopen toe te schrijven aan een opmerkelijke factuur op uw rekening.
+>Als u [ fouten ](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/deployment/magento-commerce-cloud-repo-could-not-be-accessed-403-forbidden-or-404-not-found-error-when-deploying.html) ontmoet of niet de [!UICONTROL Access Keys] sectie in het lusje van de Marketplace ziet, kunt u geen toestemming hebben om tot het pakket toegang te hebben, of de toegangsrechten zijn verlopen toe te schrijven aan een opmerkelijke factuur op uw rekening.
 >
 >* Als je de primaire contactpersoon voor de account bent, zorg er dan voor dat er geen openstaande factuur op de account wordt vermeld.
->* Als de sleutels die door het Primaire Contact worden verstrekt niet werken en er geen uitstaande facturen op de rekening zijn, zou het Primaire Contact [&#x200B; Steun van Adobe Commerce &#x200B;](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html?lang=nl-NL#submit-ticket) voor hulp moeten contacteren.
+>* Als de sleutels die door het Primaire Contact worden verstrekt niet werken en er geen uitstaande facturen op de rekening zijn, zou het Primaire Contact [ Steun van Adobe Commerce ](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html#submit-ticket) voor hulp moeten contacteren.
 
 Zo maakt u verificatietoetsen:
 
-1. Login aan [&#x200B; Commerce Marketplace &#x200B;](https://commercemarketplace.adobe.com/). Als u geen rekening hebt, klik **Register**.
+1. Login aan [ Commerce Marketplace ](https://commercemarketplace.adobe.com/). Als u geen rekening hebt, klik **Register**.
 
 1. Klik uw rekeningsnaam in het hoogste recht van de pagina en selecteer **Mijn Profiel**.
 
 1. Klik **Sleutels van de Toegang** in het lusje van de Marketplace.
 
-   ![&#x200B; krijgt uw veilige toegangstoetsen op Commerce Marketplace &#x200B;](../../assets/installation/cloud_access-key.png)
+   ![ krijgt uw veilige toegangstoetsen op Commerce Marketplace ](../../assets/installation/cloud_access-key.png)
 
 1. Klik **creeer een Nieuwe Sleutel van de Toegang**. Ga een specifieke naam voor de sleutels (bijvoorbeeld, de naam van de ontwikkelaar in die de sleutels ontvangt) en klik **O.K.**.
 
@@ -48,11 +48,11 @@ U kunt verificatietoetsen ook uitschakelen of verwijderen. U kunt bijvoorbeeld t
 
 Als u Adobe Commerce-releases wilt downloaden met behulp van SSH, moet u een Toegangstoken voor downloads genereren. Een token genereren:
 
-1. Login aan uw [&#x200B; magento.com rekening &#x200B;](https://account.magento.com/customer/account/login).
+1. Login aan uw [ magento.com rekening ](https://account.magento.com/customer/account/login).
 1. Klik **Mijn Rekening** bij de bovenkant van de pagina.
 1. Klik **de Montages van de Rekening** > **het Token van de Toegang van Downloads**.
 
-   ![&#x200B; heb toegang tot uw sleutels &#x200B;](../../assets/installation/connect_keys1.png)
+   ![ heb toegang tot uw sleutels ](../../assets/installation/connect_keys1.png)
 
 1. Klik **produceer nieuw teken** om een bestaand teken te vervangen en onbruikbaar te maken.
 
@@ -67,5 +67,5 @@ curl -k https://MAGEID:TOKEN@www.magentocommerce.com/products/downloads/info/hel
 Gebruik uw verificatietoetsen om:
 
 * [Haal het pakket metapakketten op (integrators, packagers)](../composer.md)
-* [&#x200B; Kloon de bewaarplaats GitHub &#x200B;](https://developer.adobe.com/commerce/contributor/guides/install/clone-repository/) (bijdragende ontwikkelaars slechts)
+* [ Kloon de bewaarplaats GitHub ](https://developer.adobe.com/commerce/contributor/guides/install/clone-repository) (bijdragende ontwikkelaars slechts)
 * [Modules upgraden en beheren](../../upgrade/modules/upgrade.md)

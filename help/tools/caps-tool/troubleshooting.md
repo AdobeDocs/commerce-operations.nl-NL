@@ -3,7 +3,7 @@ title: '[!DNL Cloud Automation Patching Service (CAPS)] Handleiding voor problee
 description: Los gemeenschappelijke kwesties en foutenmeldingen in  [!DNL Cloud Automation Patching Service (CAPS)] problemen op
 hide: true
 hidefromtoc: true
-source-git-commit: eff8c0ae9e1d9db6b46ba7cfbb915685ab5b194d
+source-git-commit: 84a20012a81278cc95587ec14281b05330261687
 workflow-type: tm+mt
 source-wordcount: '946'
 ht-degree: 0%
@@ -218,8 +218,8 @@ Voor meer gedetailleerde technische informatie:
 
 ### Verwante onderwerpen
 
-* [&#x200B; documentatie van de Wolk van de Handel van Adobe &#x200B;](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/overview.html)
-* [&#x200B; de Gids van de Installatie van Adobe Commerce &#x200B;](https://experienceleague.adobe.com/en/docs/commerce-operations/installation-guide/overview.html)
+* [ documentatie van de Wolk van de Handel van Adobe ](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/overview)
+* [ de Gids van de Installatie van Adobe Commerce ](https://experienceleague.adobe.com/en/docs/commerce-operations/installation-guide/overview)
 * [CAPS-introductie](intro.md)
 * [Toegang krijgen](access.md)
 * [Workflow](workflow.md)

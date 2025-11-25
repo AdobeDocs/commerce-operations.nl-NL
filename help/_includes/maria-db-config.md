@@ -1,5 +1,5 @@
 ---
-source-git-commit: d7926b9150137813b1161581bb1d7884a6fe11e9
+source-git-commit: 84a20012a81278cc95587ec14281b05330261687
 workflow-type: tm+mt
 source-wordcount: '138'
 ht-degree: 1%
@@ -10,11 +10,11 @@ ht-degree: 1%
 Het opnieuw indexeren op MariaDB 10.4 en 10.6 vergt meer tijd in vergelijking met vorige versies MariaDB of MySQL. Om het opnieuw indexeren te versnellen, adviseren wij plaatsend deze MariaDB configuratieparameters:
 
 * [`optimizer_switch='rowid_filter=off'`](https://mariadb.com/kb/en/optimizer-switch/)
-* [`optimizer_use_condition_selectivity = 1`](https://mariadb.com/products/skysql/docs/reference/es/system-variables/optimizer_use_condition_selectivity/)
+* [`optimizer_use_condition_selectivity = 1`](https://mariadb.com/docs/server/server-management/variables-and-modes/server-system-variables#optimizer_use_condition_selectivity)
 
-Als u prestatiesdegradatie niet verwant met indexatie na bevordering aan MariaDB 10.6 ervaart, denk na toelatend het [`--query-cache-type` &#x200B;](https://mariadb.com/kb/en/server-system-variables/#query_cache_type) plaatsen. Bijvoorbeeld `--query-cache-type=ON` .
+Als u prestatiesdegradatie niet verwant met indexatie na bevordering aan MariaDB 10.6 ervaart, denk na toelatend het [`--query-cache-type` ](https://mariadb.com/kb/en/server-system-variables/#query_cache_type) plaatsen. Bijvoorbeeld `--query-cache-type=ON` .
 
-Alvorens Adobe Commerce op de projecten van de wolkeninfrastructuur te bevorderen, kunt u ook MariaDB moeten bevorderen ([&#x200B; zie MariaDB beste praktijken &#x200B;](../implementation-playbook/best-practices/maintenance/mariadb-upgrade.md) bevorderen).
+Alvorens Adobe Commerce op de projecten van de wolkeninfrastructuur te bevorderen, kunt u ook MariaDB moeten bevorderen ([ zie MariaDB beste praktijken ](../implementation-playbook/best-practices/maintenance/mariadb-upgrade.md) bevorderen).
 
 Bijvoorbeeld:
 

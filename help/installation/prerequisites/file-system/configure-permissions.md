@@ -2,7 +2,7 @@
 title: Eigendom en machtigingen van bestanden configureren
 description: Voer de volgende stappen uit om bestandssysteemmachtigingen te configureren voor installaties op locatie van Adobe Commerce.
 exl-id: 2410ee4f-978c-4b71-b3f6-0c042f9f4dc4
-source-git-commit: ddf988826c29b4ebf054a4d4fb5f4c285662ef4e
+source-git-commit: 84a20012a81278cc95587ec14281b05330261687
 workflow-type: tm+mt
 source-wordcount: '981'
 ht-degree: 0%
@@ -13,7 +13,7 @@ ht-degree: 0%
 
 Dit onderwerp bespreekt hoe te om lees-schrijf toestemmingen voor de groep van de Webserver te plaatsen alvorens u Adobe Commerce installeert. Dit is nodig, zodat de opdrachtregel bestanden naar het bestandssysteem kan schrijven.
 
-De procedure u gebruikt is verschillend, afhankelijk van of u [&#x200B; gedeelde het ontvangen &#x200B;](#set-permissions-for-one-user-on-shared-hosting) gebruikt en één gebruiker hebt of als u a [&#x200B; privé server &#x200B;](#set-ownership-and-permissions-for-two-users) gebruikt en twee gebruikers hebt.
+De procedure u gebruikt is verschillend, afhankelijk van of u [ gedeelde het ontvangen ](#set-permissions-for-one-user-on-shared-hosting) gebruikt en één gebruiker hebt of als u a [ privé server ](#set-ownership-and-permissions-for-two-users) gebruikt en twee gebruikers hebt.
 
 ## Machtigingen instellen voor één gebruiker bij gedeelde hosting
 
@@ -58,13 +58,13 @@ U kunt als volgt machtigingen instellen voordat u de toepassing installeert:
 1. Als u dit nog niet hebt gedaan, kunt u de toepassing op een van de volgende manieren ophalen:
 
    * [Composer-pakket](../../composer.md)
-   * [&#x200B; Kloon de bewaarplaats (bijdragende ontwikkelaars slechts) &#x200B;](https://developer.adobe.com/commerce/contributor/guides/install/clone-repository/)
+   * [ Kloon de bewaarplaats (bijdragende ontwikkelaars slechts) ](https://developer.adobe.com/commerce/contributor/guides/install/clone-repository)
 
-1. Nadat u de eigendom en de toestemmingen van het dossiersysteem hebt geplaatst, [&#x200B; installeert de toepassing &#x200B;](../../advanced.md)
+1. Nadat u de eigendom en de toestemmingen van het dossiersysteem hebt geplaatst, [ installeert de toepassing ](../../advanced.md)
 
 >[!NOTE]
 >
->Om toestemmingen na het installeren van de toepassing verder te beperken, kunt u [&#x200B; een masker &#x200B;](../../next-steps/set-umask.md) vormen.
+>Om toestemmingen na het installeren van de toepassing verder te beperken, kunt u [ een masker ](../../next-steps/set-umask.md) vormen.
 
 ## Eigendom en machtigingen voor twee gebruikers instellen
 
@@ -89,7 +89,7 @@ In deze sectie wordt besproken hoe u een eigenaar van een bestandssysteem kunt m
 
 >[!NOTE]
 >
->Skip aan [&#x200B; vind de de gebruikersgroep van de Webserver &#x200B;](#find-the-web-server-user-group) als u op het gebruiken van een bestaande gebruikersrekening van plan bent.
+>Skip aan [ vind de de gebruikersgroep van de Webserver ](#find-the-web-server-user-group) als u op het gebruiken van een bestaande gebruikersrekening van plan bent.
 
 ### De eigenaar van het bestandssysteem maken en de gebruiker een sterk wachtwoord geven
 
@@ -111,7 +111,7 @@ Volg de aanwijzingen op het scherm om een wachtwoord voor de gebruiker te maken.
 
 >[!WARNING]
 >
->Als u geen `root` bevoegdheden hebt op uw toepassingsserver, kunt u een andere lokale gebruikersaccount gebruiken. Zorg ervoor dat de gebruiker een sterk wachtwoord heeft en met [&#x200B; verdergaat zet de eigenaar van het dossiersysteem in de groep van de Webserver &#x200B;](#step-3-put-the-file-system-owner-in-the-web-servers-group).
+>Als u geen `root` bevoegdheden hebt op uw toepassingsserver, kunt u een andere lokale gebruikersaccount gebruiken. Zorg ervoor dat de gebruiker een sterk wachtwoord heeft en met [ verdergaat zet de eigenaar van het dossiersysteem in de groep van de Webserver ](#step-3-put-the-file-system-owner-in-the-web-servers-group).
 
 Als u bijvoorbeeld een gebruiker met de naam `magento_user` wilt maken en de gebruiker een wachtwoord wilt geven, voert u het volgende in:
 
@@ -125,7 +125,7 @@ sudo passwd magento_user
 
 >[!WARNING]
 >
->Omdat het punt om deze gebruiker te creëren extra veiligheid moet verstrekken, zorg ervoor u a [&#x200B; sterk wachtwoord &#x200B;](https://en.wikipedia.org/wiki/Password_strength) creeert.
+>Omdat het punt om deze gebruiker te creëren extra veiligheid moet verstrekken, zorg ervoor u a [ sterk wachtwoord ](https://en.wikipedia.org/wiki/Password_strength) creeert.
 
 ### De gebruikersgroep van de webserver zoeken
 
@@ -158,7 +158,7 @@ Als u de eigenaar van het bestandssysteem in de primaire groep van de webserver 
 
 >[!NOTE]
 >
->De `-a -G` opties zijn belangrijk omdat zij `apache` of `www-data` als a *secundaire* groep aan de gebruikersrekening toevoegen, die de 5&rbrace; primaire *groep van de gebruiker &lbrace;bewaart.* Het toevoegen van een secundaire groep aan een hulp van de gebruikersrekening [&#x200B; beperkt dossiereigendom en toestemmingen &#x200B;](#set-ownership-and-permissions-for-two-users) om leden van een gedeelde groep slechts toegang tot bepaalde dossiers te verzekeren.
+>De `-a -G` opties zijn belangrijk omdat zij `apache` of `www-data` als a *secundaire* groep aan de gebruikersrekening toevoegen, die de 5} primaire *groep van de gebruiker {bewaart.* Het toevoegen van een secundaire groep aan een hulp van de gebruikersrekening [ beperkt dossiereigendom en toestemmingen ](#set-ownership-and-permissions-for-two-users) om leden van een gedeelde groep slechts toegang tot bepaalde dossiers te verzekeren.
 
 Als u bijvoorbeeld de gebruiker `magento_user` wilt toevoegen aan de `apache` primaire groep op CentOS:
 
@@ -192,7 +192,7 @@ Start de webserver opnieuw om de taak te voltooien:
 Als u dit nog niet hebt gedaan, kunt u de software op een van de volgende manieren ophalen:
 
 * [Composer-pakket](../../composer.md)
-* [&#x200B; Kloon de bewaarplaats (bijdragende ontwikkelaars slechts) &#x200B;](https://developer.adobe.com/commerce/contributor/guides/install/clone-repository/)
+* [ Kloon de bewaarplaats (bijdragende ontwikkelaars slechts) ](https://developer.adobe.com/commerce/contributor/guides/install/clone-repository)
 
 ### Eigendom en machtigingen voor de gedeelde groep instellen
 

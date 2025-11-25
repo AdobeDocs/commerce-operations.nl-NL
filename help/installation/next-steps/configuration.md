@@ -3,7 +3,7 @@ title: De toepassing configureren
 description: Meer informatie over de configuratie na installatie die vereist is voor Adobe Commerce-implementaties op locatie.
 feature: Install, Configuration
 exl-id: b1808664-10ec-4147-8251-a99f8b58f4be
-source-git-commit: a7c98879e027948fc887e28d4baa5fb04214ca95
+source-git-commit: 84a20012a81278cc95587ec14281b05330261687
 workflow-type: tm+mt
 source-wordcount: '713'
 ht-degree: 0%
@@ -20,18 +20,18 @@ De UNIX taakplanner, cron, is kritiek aan de verrichtingen van dag tot dag van d
 
 U moet de diensten van Adobe Commerce in *contab* installeren, of sommige kernfunctionaliteit (en sommige derdeuitbreidingen) functioneren niet behoorlijk.
 
-Voor meer informatie over kroon, met inbegrip van hoe te om een krontab te verwijderen en kroon in werking te stellen van de bevellijn, zie [&#x200B; kroon &#x200B;](../../configuration/cli/configure-cron-jobs.md) vormen en in werking stellen.
+Voor meer informatie over kroon, met inbegrip van hoe te om een krontab te verwijderen en kroon in werking te stellen van de bevellijn, zie [ kroon ](../../configuration/cli/configure-cron-jobs.md) vormen en in werking stellen.
 
 ## Beveiligingsinstellingen en aanbevelingen
 
 Na de installatie raden we het volgende aan:
 
-* Zorg ervoor dat uw dossiereigendom en toestemmingen [&#x200B; behoorlijk &#x200B;](../prerequisites/file-system/configure-permissions.md) worden geplaatst
-* Wij adviseren sterk [&#x200B; veranderend standaardAdmin URI &#x200B;](../tutorials/admin-uri.md) van `admin` in iets anders
-* Zorg ervoor dat de [`X-Frame-Option` HTTP-header &#x200B;](../../configuration/security/xframe-options.md) juist is ingesteld.
-* Neem voorzorgsmaatregelen tegen dwars-plaats scripting (XSS) door [&#x200B; uw malplaatjes &#x200B;](https://developer.adobe.com/commerce/php/development/security/cross-site-scripting/) te beveiligen
+* Zorg ervoor dat uw dossiereigendom en toestemmingen [ behoorlijk ](../prerequisites/file-system/configure-permissions.md) worden geplaatst
+* Wij adviseren sterk [ veranderend standaardAdmin URI ](../tutorials/admin-uri.md) van `admin` in iets anders
+* Zorg ervoor dat de [`X-Frame-Option` HTTP-header ](../../configuration/security/xframe-options.md) juist is ingesteld.
+* Neem voorzorgsmaatregelen tegen dwars-plaats scripting (XSS) door [ uw malplaatjes ](https://developer.adobe.com/commerce/php/development/security/cross-site-scripting) te beveiligen
 
-Als u door [&#x200B; het klonen van de bewaarplaats GitHub &#x200B;](https://developer.adobe.com/commerce/contributor/guides/install/clone-repository/) installeerde, zorg ervoor dat wanneer u de toepassing opstelt, u slechts dossiers en omslagen omvat die voor het productiemilieu worden vereist. Bestanden en mappen die niet vereist zijn, kunnen beveiligingsrisico&#39;s opleveren.
+Als u door [ het klonen van de bewaarplaats GitHub ](https://developer.adobe.com/commerce/contributor/guides/install/clone-repository) installeerde, zorg ervoor dat wanneer u de toepassing opstelt, u slechts dossiers en omslagen omvat die voor het productiemilieu worden vereist. Bestanden en mappen die niet vereist zijn, kunnen beveiligingsrisico&#39;s opleveren.
 
 ## Herschrijvingen van Apache-servers inschakelen
 
@@ -43,7 +43,7 @@ Als u de Apache-webserver gebruikt, moet u de weergave van herschrijvingen van p
 
 Als u veelvoudige Webknopen hebt, kunt u *niet* het standaard dossier caching van de toepassing gebruiken omdat er geen synchronisatie tussen Webknopen is. Met andere woorden, de activiteit op één webknooppunt wordt alleen naar het bestandssysteem van dat webknooppunt geschreven. Als een volgende activiteit wordt uitgevoerd op een ander webknooppunt, kunnen er onnodige bestanden worden geschreven of kunnen er fouten optreden.
 
-In plaats daarvan, gebruikt [&#x200B; opnieuw &#x200B;](../../configuration/cache/config-redis.md) voor zowel het standaardgeheime voorgeheugen als het paginacache.
+In plaats daarvan, gebruikt [ opnieuw ](../../configuration/cache/config-redis.md) voor zowel het standaardgeheime voorgeheugen als het paginacache.
 
 ## Serverinstellingen
 
@@ -55,9 +55,9 @@ Met het hulpprogramma UNIX `logrotate` kunt u systemen beheren die een groot aan
 
 Zie een van de volgende bronnen voor meer informatie:
 
-* [&#x200B; HowTo: Het uiteindelijke logboek roteert bevelleerprogramma met tien voorbeelden &#x200B;](https://www.thegeekstuff.com/2010/07/logrotate-examples)
-* [&#x200B; Uitwisseling van de Stapel &#x200B;](https://unix.stackexchange.com/questions/85662/how-to-properly-automatically-manually-rotate-log-files-for-production-rails-app)
-* [`logrotate` man page &#x200B;](https://linuxconfig.org/logrotate-8-manual-page)
+* [ HowTo: Het uiteindelijke logboek roteert bevelleerprogramma met tien voorbeelden ](https://www.thegeekstuff.com/2010/07/logrotate-examples)
+* [ Uitwisseling van de Stapel ](https://unix.stackexchange.com/questions/85662/how-to-properly-automatically-manually-rotate-log-files-for-production-rails-app)
+* [`logrotate` man page ](https://linuxconfig.org/logrotate-8-manual-page)
 
 >[!AVAILABILITY]
 >
@@ -65,7 +65,7 @@ Zie een van de volgende bronnen voor meer informatie:
 >
 >* Starteromgevingen hebben geen logrotatie.
 >
->* U kunt logrotatie niet configureren in Pro Integration-omgevingen. U moet een douaneoplossing/manuscript uitvoeren en [&#x200B; vormt uw kruin &#x200B;](https://experienceleague.adobe.com/nl/docs/commerce-on-cloud/user-guide/configure/app/properties/crons-property) om het manuscript in werking te stellen zoals nodig.
+>* U kunt logrotatie niet configureren in Pro Integration-omgevingen. U moet een douaneoplossing/manuscript uitvoeren en [ vormt uw kruin ](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/configure/app/properties/crons-property) om het manuscript in werking te stellen zoals nodig.
 
 ### Opstelling iptables regels om de diverse diensten toe te laten om mee te delen
 
@@ -73,8 +73,8 @@ Of u één server of vele hebt, moet u havens in de firewall openen om de dienst
 
 Meer informatie:
 
-* Ubuntu: [&#x200B; Ubuntu documentatiepagina &#x200B;](https://help.ubuntu.com/community/IptablesHowTo).
-* CentOS: [&#x200B; CentOS hoe-aan &#x200B;](https://wiki.centos.org/HowTos%282f%29Network%282f%29IPTables.html).
+* Ubuntu: [ Ubuntu documentatiepagina ](https://help.ubuntu.com/community/IptablesHowTo).
+* CentOS: [ CentOS hoe-aan ](https://wiki.centos.org/HowTos%282f%29Network%282f%29IPTables.html).
 
 ### Security Enhanced Linux (SELinux)-regels
 
@@ -82,15 +82,15 @@ Wij hebben geen aanbeveling voor of u SELinux gebruikt; nochtans, als u het gebr
 
 Meer informatie:
 
-* Ubuntu: [&#x200B; Debian handboek &#x200B;](https://debian-handbook.info/browse/stable/sect.selinux.html)
-* CentOS: [&#x200B; wiki CentOS &#x200B;](https://wiki.centos.org/HowTos/SELinux)
+* Ubuntu: [ Debian handboek ](https://debian-handbook.info/browse/stable/sect.selinux.html)
+* CentOS: [ wiki CentOS ](https://wiki.centos.org/HowTos/SELinux)
 
 ### Een e-mailserver instellen
 
 Adobe Commerce heeft een e-mailserver nodig. Wij adviseren geen bepaalde server, maar u kunt om het even welke volgend proberen:
 
-* Postfix voor CentOS ([&#x200B; Digital Ocean tutorial &#x200B;](https://www.digitalocean.com/community/tutorials/how-to-install-postfix-on-centos-6), [&#x200B; documentatie CentOS &#x200B;](https://www.centos.org))
-* Postfix voor Ubuntu ([&#x200B; Digital Ocean tutorial &#x200B;](https://www.digitalocean.com/community/tutorials/how-to-install-and-setup-postfix-on-ubuntu-14-04), [&#x200B; documentatie Ubuntu &#x200B;](https://help.ubuntu.com/community/MailServer))
+* Postfix voor CentOS ([ Digital Ocean tutorial ](https://www.digitalocean.com/community/tutorials/how-to-install-postfix-on-centos-6), [ documentatie CentOS ](https://www.centos.org))
+* Postfix voor Ubuntu ([ Digital Ocean tutorial ](https://www.digitalocean.com/community/tutorials/how-to-install-and-setup-postfix-on-ubuntu-14-04), [ documentatie Ubuntu ](https://help.ubuntu.com/community/MailServer))
 
 ### Verfijn de zoekmachine voor verbeterde prestaties:
 

@@ -4,7 +4,7 @@ description: Leer hoe te om  [!DNL Data Migration Tool]  te installeren om gegev
 exl-id: 5f57067b-3ce8-4b51-b9ae-f60ae089c4ba
 topic: Commerce, Migration
 feature: Configuration, Install
-source-git-commit: ddf988826c29b4ebf054a4d4fb5f4c285662ef4e
+source-git-commit: 84a20012a81278cc95587ec14281b05330261687
 workflow-type: tm+mt
 source-wordcount: '365'
 ht-degree: 0%
@@ -47,14 +47,14 @@ cd <your Magento 2 clone directory>
 git branch
 ```
 
-Als u momenteel in de `develop` tak bent, moet u in a [&#x200B; vrijgegeven tak &#x200B;](https://developer.adobe.com/commerce/contributor/guides/install/change-version/) veranderen alvorens u verdergaat.
+Als u momenteel in de `develop` tak bent, moet u in a [ vrijgegeven tak ](https://developer.adobe.com/commerce/contributor/guides/install/change-version) veranderen alvorens u verdergaat.
 
-Als u de software van Adobe Commerce nog niet hebt geïnstalleerd, [&#x200B; installeert het nu &#x200B;](../../installation/prerequisites/commerce.md).
-Als u de bewaarplaats GitHub kloont, zorg ervoor u een versiemarkering zoals besproken in [&#x200B; (Medewerker) kloon de bewaarplaats GitHub &#x200B;](https://developer.adobe.com/commerce/contributor/guides/install/clone-repository/) controleert.
+Als u de software van Adobe Commerce nog niet hebt geïnstalleerd, [ installeert het nu ](../../installation/prerequisites/commerce.md).
+Als u de bewaarplaats GitHub kloont, zorg ervoor u een versiemarkering zoals besproken in [ (Medewerker) kloon de bewaarplaats GitHub ](https://developer.adobe.com/commerce/contributor/guides/install/clone-repository) controleert.
 
 ## Uitgebrachte versies van [!DNL Data Migration Tool] zoeken
 
-Ga naar de [&#x200B; Versies &#x200B;](https://github.com/magento/data-migration-tool/releases) pagina van de [!DNL Data Migration Tool] bewaarplaats GitHub om beschikbare vrijgegeven versies te vinden.
+Ga naar de [ Versies ](https://github.com/magento/data-migration-tool/releases) pagina van de [!DNL Data Migration Tool] bewaarplaats GitHub om beschikbare vrijgegeven versies te vinden.
 
 ## De [!DNL Data Migration Tool] installeren
 
@@ -65,14 +65,14 @@ U kunt de [!DNL Data Migration Tool] installeren vanaf:
 
 Controleer voordat u gaat installeren of:
 
-- Voltooid alle die taken in de [&#x200B; worden vermeld Voorwaarden &#x200B;](prerequisites.md) sectie
-- [&#x200B; verifieerde de versie &#x200B;](install.md#check-your-version) van Magento 2 software
+- Voltooid alle die taken in de [ worden vermeld Voorwaarden ](prerequisites.md) sectie
+- [ verifieerde de versie ](install.md#check-your-version) van Magento 2 software
 
 ### Installeren vanuit `repo.magento.com`
 
 Als u [!DNL Data Migration Tool] wilt installeren, moet u `composer.json` in de Magento-hoofdinstallatiemap bijwerken om de locatie van het [!DNL Data Migration Tool] -pakket op te geven.
 
-1. Login aan uw toepassingsserver als, of schakelaar aan, de [&#x200B; eigenaar van het dossiersysteem &#x200B;](../../installation/prerequisites/file-system/overview.md).
+1. Login aan uw toepassingsserver als, of schakelaar aan, de [ eigenaar van het dossiersysteem ](../../installation/prerequisites/file-system/overview.md).
 1. Wijzig de hoofdmap van de toepassing.
 1. Voer de volgende opdrachten in:
 
@@ -96,13 +96,13 @@ Als u [!DNL Data Migration Tool] wilt installeren, moet u `composer.json` in de 
    composer require magento/data-migration-tool:2.2.0
    ```
 
-1. Wanneer ertoe aangezet, ga uw [&#x200B; authentificatietoetsen &#x200B;](../../installation/prerequisites/authentication-keys.md) in. Uw openbare sleutel is uw gebruikersnaam; uw persoonlijke sleutel is uw wachtwoord.
+1. Wanneer ertoe aangezet, ga uw [ authentificatietoetsen ](../../installation/prerequisites/authentication-keys.md) in. Uw openbare sleutel is uw gebruikersnaam; uw persoonlijke sleutel is uw wachtwoord.
 
 ### Installeren vanuit GitHub
 
 Als u de gegevensopslagplaats GitHub hebt gekloond, volg de stappen hieronder om [!DNL Data Migration Tool] te installeren.
 
-1. Login aan uw toepassingsserver als, of schakelaar aan, de [&#x200B; eigenaar van het dossiersysteem &#x200B;](../../installation/prerequisites/file-system/overview.md).
+1. Login aan uw toepassingsserver als, of schakelaar aan, de [ eigenaar van het dossiersysteem ](../../installation/prerequisites/file-system/overview.md).
 1. Wijzig de hoofdmap van de toepassing.
 1. Voer de volgende opdrachten in:
 
@@ -130,6 +130,6 @@ Als u de gegevensopslagplaats GitHub hebt gekloond, volg de stappen hieronder om
 
 1. Ga naar de map [!DNL Data Migration Tool] : `<vendor>/magento/data-migration-tool` .
 
-1. Open [`composer.json` &#x200B;](https://github.com/magento/data-migration-tool/blob/2.4/composer.json) in een tekstredacteur.
+1. Open [`composer.json` ](https://github.com/magento/data-migration-tool/blob/2.4/composer.json) in een tekstredacteur.
 
 1. De vermelding `version` in dat bestand is de versie van [!DNL Data Migration Tool] .
