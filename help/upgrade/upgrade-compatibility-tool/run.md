@@ -29,7 +29,7 @@ chmod +x ./uct/bin/uct
 
 [!DNL Upgrade Compatibility Tool] is een hulpmiddel dat een Adobe Commerce aangepaste instantie tegen een specifieke versie door alle modules controleert te analyseren die in het worden geïnstalleerd. Er wordt een lijst geretourneerd met kritieke problemen, fouten en waarschuwingen die moeten worden opgelost voordat u de upgrade naar de nieuwste versie van Adobe Commerce uitvoert.
 
-Zie dit [ videoleerprogramma ](https://experienceleague.adobe.com/docs/commerce-learn/tutorials/upgrade/upgrade-compatibility-tool-overview.html) (06 :02) om meer over [!DNL Upgrade Compatibility Tool] te leren.
+Zie dit [&#x200B; videoleerprogramma &#x200B;](https://experienceleague.adobe.com/docs/commerce-learn/tutorials/upgrade/upgrade-compatibility-tool-overview.html) (06 :02) om meer over [!DNL Upgrade Compatibility Tool] te leren.
 
 Beschikbare opdrachten voor de [!DNL Upgrade Compatibility Tool] in een opdrachtregelinterface:
 
@@ -146,7 +146,7 @@ Beschikbare opties voor de opdracht `core:code:changes` :
 
 >[!NOTE]
 >
-> Het wordt aanbevolen aangepaste code buiten de kerncode te houden. Zie Adobe Commerce 2.4 [ verbeteringsgids ](https://experienceleague.adobe.com/docs/commerce-operations/assets/adobe-commerce-2-4-upgrade-guide.pdf) voor meer verbeteringsbeste praktijken.
+> Het wordt aanbevolen aangepaste code buiten de kerncode te houden. Zie Adobe Commerce 2.4 [&#x200B; verbeteringsgids &#x200B;](https://experienceleague.adobe.com/docs/commerce-operations/assets/adobe-commerce-2-4-upgrade-guide.pdf) voor meer verbeteringsbeste praktijken.
 
 ### Vanilla-installatie
 
@@ -156,7 +156,7 @@ De opdracht `bin/uct core:code:changes` controleert of er een vanilla-instantie 
 
 U kunt een opdracht [!DNL Upgrade Compatibility Tool] uitvoeren met de optie `--vanilla-dir` om de installatiemap van Adobe Commerce vanilla op te geven.
 
-Zie [ opstellen vanilla instantie ](https://developer.adobe.com/commerce/contributor/guides/code-contributions#deploy-vanilla-magento-open-source-instance) onderwerp voor meer informatie.
+Zie [&#x200B; opstellen vanilla instantie &#x200B;](https://developer.adobe.com/commerce/contributor/guides/code-contributions#deploy-vanilla-magento-open-source-instance) onderwerp voor meer informatie.
 
 ## De opdracht `refactor` gebruiken
 
@@ -258,9 +258,9 @@ Hiermee worden specifieke opties geretourneerd die voor de opdracht `upgrade:che
 ## Aanbevolen procedures voor Adobe Commerce volgen
 
 - Vermijd het gebruik van twee modules met dezelfde naam.
-- Volg Adobe Commerce [ coderingsnormen ](https://developer.adobe.com/commerce/php/coding-standards).
-- Adobe Commerce 2.4 [ de gids van de Verbetering ](https://experienceleague.adobe.com/docs/commerce-operations/assets/adobe-commerce-2-4-upgrade-guide.pdf) beste praktijken.
-- Stel [!DNL Upgrade Compatibility Tool] van [[!DNL Site-Wide Analysis Tool] in werking ](https://experienceleague.adobe.com/docs/commerce-operations/upgrade-guide/upgrade-compatibility-tool/use-upgrade-compatibility-tool/integrate-analysis-tool.html) voor [ Adobe Commerce op de projecten van de wolkeninfrastructuur ](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/project/overview.html){target=_blank}.
+- Volg Adobe Commerce [&#x200B; coderingsnormen &#x200B;](https://developer.adobe.com/commerce/php/coding-standards).
+- Adobe Commerce 2.4 [&#x200B; de gids van de Verbetering &#x200B;](https://experienceleague.adobe.com/docs/commerce-operations/assets/adobe-commerce-2-4-upgrade-guide.pdf) beste praktijken.
+- Stel [!DNL Upgrade Compatibility Tool] van [[!DNL Site-Wide Analysis Tool] in werking &#x200B;](https://experienceleague.adobe.com/docs/commerce-operations/upgrade-guide/upgrade-compatibility-tool/use-upgrade-compatibility-tool/integrate-analysis-tool.html) voor [&#x200B; Adobe Commerce op de projecten van de wolkeninfrastructuur &#x200B;](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/project/overview.html){target=_blank}.
 
 ## De resultaten optimaliseren
 
