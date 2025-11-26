@@ -2,7 +2,7 @@
 title: MySQL-richtlijnen
 description: Voer de volgende stappen uit om MySQL en MariaDB te installeren en te configureren voor installaties op locatie van Adobe Commerce.
 exl-id: dc5771a8-4066-445c-b1cd-9d5f449ec9e9
-source-git-commit: 55512521254c49511100a557a4b00cf3ebee0311
+source-git-commit: 2d17da1f8cbda1462839ad2fa3ea569833443827
 workflow-type: tm+mt
 source-wordcount: '1037'
 ht-degree: 0%
@@ -11,31 +11,31 @@ ht-degree: 0%
 
 # Algemene MySQL-richtlijnen
 
-Zie {de Vereisten van het 0} Systeem [&#x200B; voor gesteunde versies van MySQL.](../../system-requirements.md)
+Zie {de Vereisten van het 0} Systeem [ voor gesteunde versies van MySQL.](../../system-requirements.md)
 
 Adobe _adviseert sterk_ u de volgende norm waarneemt wanneer u opstelling uw gegevensbestand:
 
-* Adobe Commerce gebruikt [&#x200B; MySQL gegevensbestandtrekkers &#x200B;](https://dev.mysql.com/doc/refman/8.0/en/triggers.html) om gegevensbestandtoegang tijdens het opnieuw indexeren te verbeteren. Deze worden gecreeerd wanneer de indexeerwijze aan [&#x200B; programma &#x200B;](../../../configuration/cli/manage-indexers.md#configure-indexers) wordt geplaatst. De toepassing ondersteunt geen aangepaste triggers in de database omdat aangepaste triggers incompatibiliteiten met toekomstige Adobe Commerce-versies kunnen introduceren.
-* Verken zich met [&#x200B; deze potentiële MySQL trekkerbeperkingen &#x200B;](https://dev.mysql.com/doc/mysql-reslimits-excerpt/8.0/en/stored-program-restrictions.html) alvorens u verdergaat.
-* Om uw houding van de gegevensbestandveiligheid te verbeteren, laat [`STRICT_ALL_TABLES` &#x200B;](https://dev.mysql.com/doc/refman/5.7/en/sql-mode.html#sqlmode_strict_all_tables) SQL wijze toe om het opslaan van ongeldige gegevenswaarden te verhinderen, die ongewenste gegevensbestandinteractie zou kunnen veroorzaken.
-* Adobe Commerce steunt __ geen op verklaring-gebaseerde replicatie MySQL. Zorg ervoor u _slechts_ [&#x200B; op rij-gebaseerde replicatie &#x200B;](https://dev.mysql.com/doc/refman/8.0/en/replication-formats.html) gebruikt.
+* Adobe Commerce gebruikt [ MySQL gegevensbestandtrekkers ](https://dev.mysql.com/doc/refman/8.0/en/triggers.html) om gegevensbestandtoegang tijdens het opnieuw indexeren te verbeteren. Deze worden gecreeerd wanneer de indexeerwijze aan [ programma ](../../../configuration/cli/manage-indexers.md#configure-indexers) wordt geplaatst. De toepassing ondersteunt geen aangepaste triggers in de database omdat aangepaste triggers incompatibiliteiten met toekomstige Adobe Commerce-versies kunnen introduceren.
+* Verken zich met [ deze potentiële MySQL trekkerbeperkingen ](https://dev.mysql.com/doc/mysql-reslimits-excerpt/8.0/en/stored-program-restrictions.html) alvorens u verdergaat.
+* Om uw houding van de gegevensbestandveiligheid te verbeteren, laat [`STRICT_ALL_TABLES` ](https://dev.mysql.com/doc/refman/5.7/en/sql-mode.html#sqlmode_strict_all_tables) SQL wijze toe om het opslaan van ongeldige gegevenswaarden te verhinderen, die ongewenste gegevensbestandinteractie zou kunnen veroorzaken.
+* Adobe Commerce steunt __ geen op verklaring-gebaseerde replicatie MySQL. Zorg ervoor u _slechts_ [ op rij-gebaseerde replicatie ](https://dev.mysql.com/doc/refman/8.0/en/replication-formats.html) gebruikt.
 
 >[!WARNING]
 >
->Adobe Commerce gebruikt momenteel `CREATE TEMPORARY TABLE` verklaringen binnen transacties, die [&#x200B; onverenigbaar &#x200B;](https://dev.mysql.com/doc/refman/5.7/en/replication-gtids-restrictions.html) met gegevensbestandimplementaties zijn gebruiken GTID-Gebaseerde replicatie, zoals [&#x200B; SQL van de Wolk van Google tweede generatie instanties &#x200B;](https://cloud.google.com/sql/docs/features#differences). Bekijk MySQL voor Cloud SQL 8.0 als alternatief.
+>Adobe Commerce gebruikt momenteel `CREATE TEMPORARY TABLE` verklaringen binnen transacties, die [ onverenigbaar ](https://dev.mysql.com/doc/refman/5.7/en/replication-gtids-restrictions.html) met gegevensbestandimplementaties zijn gebruiken GTID-Gebaseerde replicatie, zoals [ SQL van de Wolk van Google tweede generatie instanties ](https://cloud.google.com/sql/docs/features#differences). Bekijk MySQL voor Cloud SQL 8.0 als alternatief.
 
 >[!NOTE]
 >
->Als uw Webserver en gegevensbestandserver op verschillende gastheren zijn, voer de taken uit die in dit onderwerp op de gastheer van de gegevensbestandserver dan worden besproken [&#x200B; Opstelling een verre MySQL gegevensbestandverbinding &#x200B;](mysql-remote.md).
+>Als uw Webserver en gegevensbestandserver op verschillende gastheren zijn, voer de taken uit die in dit onderwerp op de gastheer van de gegevensbestandserver dan worden besproken [ Opstelling een verre MySQL gegevensbestandverbinding ](mysql-remote.md).
 
 ## MySQL installeren op Ubuntu
 
 Adobe Commerce 2.4 vereist een schone installatie van MySQL 8.0. Volg de onderstaande koppelingen voor instructies over het installeren van MySQL op uw computer.
 
-* [&#x200B; Ubuntu &#x200B;](https://ubuntu.com/server/docs/databases-mysql)
-* [&#x200B; CentOS &#x200B;](https://dev.mysql.com/doc/refman/8.0/en/linux-installation-yum-repo.html)
+* [ Ubuntu ](https://ubuntu.com/server/docs/databases-mysql)
+* [ CentOS ](https://dev.mysql.com/doc/refman/8.0/en/linux-installation-yum-repo.html)
 
-Als u verwacht om grote aantallen producten in te voeren, kunt u de waarde voor [`max_allowed_packet` &#x200B;](https://dev.mysql.com/doc/refman/5.6/en/program-variables.html) verhogen die groter is dan het gebrek, 16 MB.
+Als u verwacht om grote aantallen producten in te voeren, kunt u de waarde voor [`max_allowed_packet` ](https://dev.mysql.com/doc/refman/5.6/en/program-variables.html) verhogen die groter is dan het gebrek, 16 MB.
 
 >[!NOTE]
 >
@@ -49,7 +49,7 @@ Als u optioneel de waarde wilt verifiëren die u instelt, voert u de volgende op
 SHOW VARIABLES LIKE 'max_allowed_packet';
 ```
 
-Dan, [&#x200B; vorm de gegevensbestandinstantie &#x200B;](#configuring-the-database-instance).
+Dan, [ vorm de gegevensbestandinstantie ](#configuring-the-database-instance).
 
 ## Wijzigingen in MySQL 8
 
@@ -79,7 +79,7 @@ Beschrijf admin_user op mysql 8.19
 
 Behalve _TINYINT (1)_, zou al geheel het opvullen (TINYINT > 1, SMALLINT, MEDIUMINT, INT, BIGINT) uit het `db_schema.xml` dossier moeten worden verwijderd.
 
-Voor meer informatie, zie [&#x200B; https://dev.mysql.com/doc/relnotes/mysql/8.0/en/news-8-0-19.html#mysqld-8-0-19-feature &#x200B;](https://dev.mysql.com/doc/relnotes/mysql/8.0/en/news-8-0-19.html#mysqld-8-0-19-feature).
+Voor meer informatie, zie [ https://dev.mysql.com/doc/relnotes/mysql/8.0/en/news-8-0-19.html#mysqld-8-0-19-feature ](https://dev.mysql.com/doc/relnotes/mysql/8.0/en/news-8-0-19.html#mysqld-8-0-19-feature).
 
 ### Standaardvolgorde OP, gedrag
 
@@ -172,22 +172,22 @@ Om een MySQL gegevensbestandinstantie te vormen:
 
    Als de MySQL monitorvertoningen, u het gegevensbestand behoorlijk creeerde. Als er een fout wordt weergegeven, herhaalt u de voorgaande opdrachten.
 
-1. Als uw Webserver en gegevensbestandserver op verschillende gastheren zijn, voer de taken uit die in dit onderwerp op de gastheer van de gegevensbestandserver dan worden besproken [&#x200B; Opstelling een verre MySQL gegevensbestandverbinding &#x200B;](mysql-remote.md).
+1. Als uw Webserver en gegevensbestandserver op verschillende gastheren zijn, voer de taken uit die in dit onderwerp op de gastheer van de gegevensbestandserver dan worden besproken [ Opstelling een verre MySQL gegevensbestandverbinding ](mysql-remote.md).
 
    Wij adviseren u uw gegevensbestandinstantie zoals aangewezen voor uw zaken vormt. Houd rekening met het volgende wanneer u uw database configureert:
 
-   * Indexeerders vereisen hogere waarden `tmp_table_size` en `max_heap_table_size` (bijvoorbeeld 64 M). Als u de parameter `batch_size` configureert, kunt u die waarde samen met de instellingen voor de tabelgrootte aanpassen om de indexeerprestaties te verbeteren. Verwijs naar de [&#x200B; Gids van de Optimalisering &#x200B;](../../../performance/configuration.md) voor meer informatie.
+   * Indexeerders vereisen hogere waarden `tmp_table_size` en `max_heap_table_size` (bijvoorbeeld 64 M). Als u de parameter `batch_size` configureert, kunt u die waarde samen met de instellingen voor de tabelgrootte aanpassen om de indexeerprestaties te verbeteren. Verwijs naar de [ Gids van de Optimalisering ](../../../performance/configuration.md) voor meer informatie.
 
    * Voor optimale prestaties moet u ervoor zorgen dat alle MySQL- en Adobe Commerce-indextabellen in het geheugen kunnen worden opgeslagen (bijvoorbeeld `innodb_buffer_pool_size` configureren).
 
-   * Het opnieuw indexeren op MariaDB 10.4 neemt meer tijd in vergelijking met andere versies MariaDB of MySQL. Zie [&#x200B; beste praktijken van de Configuratie &#x200B;](../../../performance/configuration.md#indexers).
+   * Het opnieuw indexeren op MariaDB 10.4 neemt meer tijd in vergelijking met andere versies MariaDB of MySQL. Zie [ beste praktijken van de Configuratie ](../../../performance/configuration.md#indexers).
 
 1. Als u wilt dat MySQL `TIMESTAMP` -velden de voorkeuren en compositie volgen die worden verwacht door de declaratieve schemaarchitectuur van de toepassing, moet de systeemvariabele `explicit_defaults_for_timestamp` worden ingesteld op `on` .
 
    Referenties:
 
-   * [&#x200B; MySQL 5.7 &#x200B;](https://dev.mysql.com/doc/refman/5.7/en/server-system-variables.html#sysvar_explicit_defaults_for_timestamp)
-   * [&#x200B; MariaDB &#x200B;](https://mariadb.com/kb/en/server-system-variables/#explicit_defaults_for_timestamp)
+   * [ MySQL 5.7 ](https://dev.mysql.com/doc/refman/5.7/en/server-system-variables.html#sysvar_explicit_defaults_for_timestamp)
+   * [ MariaDB ](https://mariadb.com/kb/en/server-system-variables/#explicit_defaults_for_timestamp)
 
    Als deze instelling niet is ingeschakeld, rapporteert `bin/magento setup:db:status` altijd dat de `Declarative Schema is not up to date` .
 
@@ -201,4 +201,4 @@ Om een MySQL gegevensbestandinstantie te vormen:
 
 {{$include /help/_includes/maria-db-config.md}}
 
-<!-- Last updated from includes: 2024-02-12 09:51:27 -->
+<!-- Last updated from includes: 2025-11-25 11:39:51 -->
