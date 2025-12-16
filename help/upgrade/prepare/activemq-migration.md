@@ -32,7 +32,7 @@ Bij deze migratieinstructies wordt ervan uitgegaan dat Adobe Commerce de enige t
 
 ### Stap 1: Plaats de site in de onderhoudsmodus
 
-1. Plaats de plaats in [ Wijze van het Onderhoud ](../../installation/tutorials/maintenance-mode.md):
+1. Plaats de plaats in [&#x200B; Wijze van het Onderhoud &#x200B;](../../installation/tutorials/maintenance-mode.md):
 
    ```bash
    bin/magento maintenance:enable
@@ -55,7 +55,7 @@ Controleer voordat u verdergaat of alle berichten in RabbitMQ zijn verwerkt. Geb
 1. Navigeer aan het **lusje van de Opsommingen**
 1. Verifieer alle rijen tonen **0 berichten**
 
-   ![ RabbitMQ Management Dashboard ](../../assets/upgrade-guide/rabbitmq_mgmt_dashboard.png)
+   ![&#x200B; RabbitMQ Management Dashboard &#x200B;](../../assets/upgrade-guide/rabbitmq_mgmt_dashboard.png)
 
 #### Methode B: gebruik van de opdrachtregel rabbitmqctl
 
@@ -168,7 +168,7 @@ U kunt RabbitMQ verwijderen als dit niet meer nodig is.
 
 ### Stap 8: ActiveMQ installeren en configureren in Adobe Commerce
 
-Om installatie ActiveMQ en configuratietaken zoals het vormen van het protocol van STOMP te voltooien en de verbinding te verifiëren, zie de [ Gids van de Installatie en van de Configuratie ](../../installation/prerequisites/activemq.md).
+Om installatie ActiveMQ en configuratietaken zoals het vormen van het protocol van STOMP te voltooien en de verbinding te verifiëren, zie de [&#x200B; Gids van de Installatie en van de Configuratie &#x200B;](../../installation/prerequisites/activemq.md).
 
 ### Stap 9: Cron-taken opnieuw installeren
 

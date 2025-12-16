@@ -11,16 +11,16 @@ ht-degree: 0%
 
 # Overzicht van wachtrij met berichten
 
-Het Kader van de Rij van het Bericht (MQF) is een systeem dat een module toestaat om berichten aan rijen te publiceren. Het bepaalt ook de [ consumenten ](consumers.md) die de berichten asynchroon zullen ontvangen. MQF steunt veelvoudige overseinenmakers:
+Het Kader van de Rij van het Bericht (MQF) is een systeem dat een module toestaat om berichten aan rijen te publiceren. Het bepaalt ook de [&#x200B; consumenten &#x200B;](consumers.md) die de berichten asynchroon zullen ontvangen. MQF steunt veelvoudige overseinenmakers:
 
 - **[[!DNL RabbitMQ]](https://www.rabbitmq.com)** - de primaire overseinenmakelaar, die een scalable platform voor het verzenden van en het ontvangen van berichten verstrekt. Het omvat een mechanisme voor het opslaan van niet geleverde berichten en is gebaseerd op de Geavanceerde specificatie van het een rij vormen van het Bericht van het Protocol (AMQP) 0.9.1.
-- **[Apache ActiveMQ Artemis ](https://activemq.apache.org/components/artemis/)** - een alternatieve overseinenmakelaar die STOMP (het Eenvoudige Text Oriented Messaging Protocol) voor betrouwbaar en scalable overseinen gebruikt. Inleiding in Adobe Commerce 2.4.5 en latere versies.
+- **[Apache ActiveMQ Artemis &#x200B;](https://activemq.apache.org/components/artemis/)** - een alternatieve overseinenmakelaar die STOMP (het Eenvoudige Text Oriented Messaging Protocol) voor betrouwbaar en scalable overseinen gebruikt. Inleiding in Adobe Commerce 2.4.5 en latere versies.
 
 ## Konijn-MQ (AMQP)
 
 Het volgende diagram illustreert het Kader van de Rij van het Bericht:
 
-![ Kader van de Rij van het Bericht ](../../assets/configuration/mq-framework.png)
+![&#x200B; Kader van de Rij van het Bericht &#x200B;](../../assets/configuration/mq-framework.png)
 
 - Een uitgever is een component die berichten naar een uitwisseling verzendt. Het weet aan welke uitwisseling te publiceren aan en het formaat van de berichten het verzendt.
 
@@ -34,7 +34,7 @@ Het volgende diagram illustreert het Kader van de Rij van het Bericht:
 
 ## Apache ActiveMQ Artemis (STOMP)
 
-Als alternatief voor RabbitMQ, steunt Adobe Commerce ook [ Apache ActiveMQ Artemis ](https://activemq.apache.org/components/artemis/) als overseinenmakelaar gebruikend het Eenvoudige Text Oriented Messaging Protocol (STOMP).
+Als alternatief voor RabbitMQ, steunt Adobe Commerce ook [&#x200B; Apache ActiveMQ Artemis &#x200B;](https://activemq.apache.org/components/artemis/) als overseinenmakelaar gebruikend het Eenvoudige Text Oriented Messaging Protocol (STOMP).
 
 >[!NOTE]
 >
@@ -42,7 +42,7 @@ Als alternatief voor RabbitMQ, steunt Adobe Commerce ook [ Apache ActiveMQ Artem
 
 Het volgende diagram illustreert het STOMP-framework met ActiveMQ-artemis:
 
-![ STOMP Framework ](../../assets/configuration/stomp-framework.png)
+![&#x200B; STOMP Framework &#x200B;](../../assets/configuration/stomp-framework.png)
 
 ### onderdelen van STOMP Framework
 
