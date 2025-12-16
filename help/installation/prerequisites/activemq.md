@@ -1,7 +1,7 @@
 ---
 title: Berichtenmakelaar (ActiveMQ Artemis)
 description: Voer de volgende stappen uit om Apache ActiveMQ Artemis berichtbroker voor installaties in de bedrijfsruimten van Adobe Commerce te installeren en te configureren.
-source-git-commit: aee02c258acaeb7a248e10b867017ef8f72b544d
+source-git-commit: 7610a5843b526a765dd35188722b7be8e6051049
 workflow-type: tm+mt
 source-wordcount: '902'
 ht-degree: 0%
@@ -15,7 +15,7 @@ Adobe Commerce ondersteunt ook de open-source berichtbroker van ActiveMQ Artemis
 
 >[!NOTE]
 >
->ActiveMQ Artemis is geïntroduceerd in Adobe Commerce 2.4.6 en latere versies. Voor details bij het installeren van Artemis ActiveMQ in Adobe Commerce op de projecten van de wolkeninfrastructuur, zie &lbrace;de dienst ActiveMQ van de Opstelling [&#x200B; in &#x200B;](https://experienceleague.adobe.com/nl/docs/commerce-on-cloud/user-guide/configure/service/activemq) Commerce op de Gids van de Wolk *.*
+>ActiveMQ Artemis is geïntroduceerd in Adobe Commerce 2.4.5 en latere versies. Voor details bij het installeren van Artemis ActiveMQ in Adobe Commerce op de projecten van de wolkeninfrastructuur, zie {de dienst ActiveMQ van de Opstelling [ in ](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/configure/service/activemq) Commerce op de Gids van de Wolk *.*
 
 De rijen van het bericht verstrekken een asynchroon communicatie mechanisme waarin de afzender en de ontvanger van een bericht niet elkaar contacteren. Noch moeten zij met de berichtrij tezelfdertijd communiceren. Wanneer een afzender een bericht in een rij plaatst, wordt het opgeslagen tot de ontvanger hen ontvangt.
 
@@ -26,11 +26,11 @@ Het systeem van de berichtrij moet worden gevestigd alvorens u Adobe Commerce in
 
 >[!NOTE]
 >
->U kunt MySQL, ActiveMQ of [!DNL RabbitMQ] gebruiken voor de verwerking van een wachtrij met berichten. Voor details bij vestiging het systeem van de berichtrij, zie [&#x200B; een rij van het Bericht overzicht &#x200B;](https://developer.adobe.com/commerce/php/development/components/message-queues/). Als u de Bulk-API met Adobe Commerce gebruikt, wordt de systeemconfiguratie van de wachtrij voor berichten standaard ingesteld op het gebruik van [!DNL RabbitMQ] als de berichtenbroker. Zie [&#x200B; de gebruikers van de het berichtrij van het Begin &#x200B;](../../configuration/cli/start-message-queues.md) voor meer informatie.
+>U kunt MySQL, ActiveMQ of [!DNL RabbitMQ] gebruiken voor de verwerking van een wachtrij met berichten. Voor details bij vestiging het systeem van de berichtrij, zie [ een rij van het Bericht overzicht ](https://developer.adobe.com/commerce/php/development/components/message-queues/). Als u de Bulk-API met Adobe Commerce gebruikt, wordt de systeemconfiguratie van de wachtrij voor berichten standaard ingesteld op het gebruik van [!DNL RabbitMQ] als de berichtenbroker. Zie [ de gebruikers van de het berichtrij van het Begin ](../../configuration/cli/start-message-queues.md) voor meer informatie.
 
 >[!TIP]
 >
->Controleer altijd de [&#x200B; Apache ActiveMQ Artemis downloadpagina &#x200B;](https://activemq.apache.org/components/artemis/download/) voor de recentste stabiele versie vóór installatie. In de voorbeelden in dit document wordt versie 2.42.0 gebruikt. Dit was de meest recente stabiele release in september 2025.
+>Controleer altijd de [ Apache ActiveMQ Artemis downloadpagina ](https://activemq.apache.org/components/artemis/download/) voor de recentste stabiele versie vóór installatie. In de voorbeelden in dit document wordt versie 2.42.0 gebruikt. Dit was de meest recente stabiele release in september 2025.
 
 
 ## Apache ActiveMQ Artemis installeren
@@ -45,7 +45,7 @@ Controleer of Docker op uw systeem is geïnstalleerd en wordt uitgevoerd.
 
 >[!TIP]
 >
->Voor meer informatie over het officiële beeld van het Docker van ActiveMQ Artemis, zie de [&#x200B; Apache ActiveMQ Artemis de pagina van de Hub van de Doopper van Docker Artemis &#x200B;](https://hub.docker.com/r/apache/activemq-artemis).
+>Voor meer informatie over het officiële beeld van het Docker van ActiveMQ Artemis, zie de [ Apache ActiveMQ Artemis de pagina van de Hub van de Doopper van Docker Artemis ](https://hub.docker.com/r/apache/activemq-artemis).
 
 #### Installatiestappen
 
@@ -113,7 +113,7 @@ Controleer of Java 17 of hoger is geïnstalleerd (vereist voor ActiveMQ Artemis 
 
 ### Installatiestappen
 
-1. Download en installeer de recentste versie van de [&#x200B; Apache ActiveMQ Artemis website &#x200B;](https://activemq.apache.org/components/artemis/download/). Vanaf september 2025 is de meest recente stabiele versie 2.42.0:
+1. Download en installeer de recentste versie van de [ Apache ActiveMQ Artemis website ](https://activemq.apache.org/components/artemis/download/). Vanaf september 2025 is de meest recente stabiele versie 2.42.0:
 
    ```bash
    sudo mkdir -p /opt/artemis
@@ -352,5 +352,5 @@ De verwachte output zou verbinding gevestigd en STOMP protocolreactie moeten ton
 
 ## Gebruikers in de wachtrij met berichten starten
 
-Nadat u Adobe Commerce en ActiveMQ Artemis hebt aangesloten, moet u de gebruikers van de berichtrij beginnen. Zie [&#x200B; berichtrijen &#x200B;](../../configuration/cli/start-message-queues.md) voor details vormen.
+Nadat u Adobe Commerce en ActiveMQ Artemis hebt aangesloten, moet u de gebruikers van de berichtrij beginnen. Zie [ berichtrijen ](../../configuration/cli/start-message-queues.md) voor details vormen.
 

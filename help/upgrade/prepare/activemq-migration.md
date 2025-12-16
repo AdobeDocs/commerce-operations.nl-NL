@@ -2,9 +2,9 @@
 title: Migreren van RabbitMQ naar ActiveMQ
 description: Leer over het vervangen van de broker van de berichtrij die voor op-gebouw installaties van Adobe Commerce wordt gebruikt.
 feature: Services, Configuration
-source-git-commit: 8f57a4fa7744f4647ab96d0fcfae08b8eb4927c6
+source-git-commit: 7610a5843b526a765dd35188722b7be8e6051049
 workflow-type: tm+mt
-source-wordcount: '648'
+source-wordcount: '649'
 ht-degree: 0%
 
 ---
@@ -13,7 +13,7 @@ ht-degree: 0%
 
 ActiveMQ (Apache ActiveMQ Artemis) is een krachtige, multi-protocol berichtmakelaar die een alternatief voor RabbitMQ voor de behandeling van berichtrijen in Adobe Commerce verstrekt.
 
-Vanaf 2.4.8-p3, 2.4.7-p8, en 2.4.6-p13, steunt Adobe Commerce ActiveMQ als broker van de berichtrij. Dit verstrekt extra flexibiliteit voor installaties op-gebouw om tussen RabbitMQ en ActiveMQ te kiezen die op hun infrastructuurvereisten en deskundigheid wordt gebaseerd.
+Vanaf 2.4.8-p3, 2.4.7-p8, 2.4.6-p13 en 2.4.5-p16, steunt Adobe Commerce ActiveMQ als broker van de berichtrij. Dit verstrekt extra flexibiliteit voor installaties op-gebouw om tussen RabbitMQ en ActiveMQ te kiezen die op hun infrastructuurvereisten en deskundigheid wordt gebaseerd.
 
 ## Voordat u begint
 
@@ -32,7 +32,7 @@ Bij deze migratieinstructies wordt ervan uitgegaan dat Adobe Commerce de enige t
 
 ### Stap 1: Plaats de site in de onderhoudsmodus
 
-1. Plaats de plaats in [&#x200B; Wijze van het Onderhoud &#x200B;](../../installation/tutorials/maintenance-mode.md):
+1. Plaats de plaats in [ Wijze van het Onderhoud ](../../installation/tutorials/maintenance-mode.md):
 
    ```bash
    bin/magento maintenance:enable
@@ -55,7 +55,7 @@ Controleer voordat u verdergaat of alle berichten in RabbitMQ zijn verwerkt. Geb
 1. Navigeer aan het **lusje van de Opsommingen**
 1. Verifieer alle rijen tonen **0 berichten**
 
-   ![&#x200B; RabbitMQ Management Dashboard &#x200B;](../../assets/upgrade-guide/rabbitmq_mgmt_dashboard.png)
+   ![ RabbitMQ Management Dashboard ](../../assets/upgrade-guide/rabbitmq_mgmt_dashboard.png)
 
 #### Methode B: gebruik van de opdrachtregel rabbitmqctl
 
@@ -168,7 +168,7 @@ U kunt RabbitMQ verwijderen als dit niet meer nodig is.
 
 ### Stap 8: ActiveMQ installeren en configureren in Adobe Commerce
 
-Om installatie ActiveMQ en configuratietaken zoals het vormen van het protocol van STOMP te voltooien en de verbinding te verifiëren, zie de [&#x200B; Gids van de Installatie en van de Configuratie &#x200B;](../../installation/prerequisites/activemq.md).
+Om installatie ActiveMQ en configuratietaken zoals het vormen van het protocol van STOMP te voltooien en de verbinding te verifiëren, zie de [ Gids van de Installatie en van de Configuratie ](../../installation/prerequisites/activemq.md).
 
 ### Stap 9: Cron-taken opnieuw installeren
 
