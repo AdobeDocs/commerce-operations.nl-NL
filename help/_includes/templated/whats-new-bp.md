@@ -23,12 +23,12 @@ Deze pagina bevat de wijzigingen die in de afgelopen 60 dagen zijn aangebracht. 
   </thead>
   <tbody>
     <tr>
-      <td><p>Verstrekte meer details over de <a href="https://experienceleague.adobe.com/en/docs/commerce-operations/configuration-guide/cli/configuration-management/set-configuration-values"> Vastgestelde configuratiewaarden </a>.</p>
+      <td><p>Verstrekte meer details over de <a href="https://experienceleague.adobe.com/nl/docs/commerce-operations/configuration-guide/cli/configuration-management/set-configuration-values"> Vastgestelde configuratiewaarden </a>.</p>
 </td>
       <td>
         Aanbevolen procedures
       </td>
-      <td><a href="https://github.com/AdobeDocs/commerce-operations.en/pull/147">pull-verzoek</a></td>
+      <td><a href="https://github.com/AdobeDocs/commerce-operations.nl-NL/pull/147">pull-verzoek</a></td>
     </tr>
   </tbody>
 </table>
@@ -45,12 +45,12 @@ Deze pagina bevat de wijzigingen die in de afgelopen 60 dagen zijn aangebracht. 
   </thead>
   <tbody>
     <tr>
-      <td><p>Bijgewerkt het <code class="language-plaintext highlighter-rouge">bin/magento setup:config:set</code> CLI bevel in <a href="https://experienceleague.adobe.com/en/docs/commerce-operations/configuration-guide/cache/valkey/valkey-pg-cache#configure-valkey-default-caching"> vormt Valkey gebrek caching </a> instructies om de correcte waarde voor de <code class="language-plaintext highlighter-rouge">cache-backend</code> parameter te specificeren.</p>
+      <td><p>Bijgewerkt het <code class="language-plaintext highlighter-rouge">bin/magento setup:config:set</code> CLI bevel in <a href="https://experienceleague.adobe.com/nl/docs/commerce-operations/configuration-guide/cache/valkey/valkey-pg-cache#configure-valkey-default-caching"> vormt Valkey gebrek caching </a> instructies om de correcte waarde voor de <code class="language-plaintext highlighter-rouge">cache-backend</code> parameter te specificeren.</p>
 </td>
       <td>
         Aanbevolen procedures
       </td>
-      <td><a href="https://github.com/AdobeDocs/commerce-operations.en/pull/159">pull-verzoek</a></td>
+      <td><a href="https://github.com/AdobeDocs/commerce-operations.nl-NL/pull/159">pull-verzoek</a></td>
     </tr>
   </tbody>
 </table>
