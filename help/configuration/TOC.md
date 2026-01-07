@@ -2,9 +2,9 @@
 user-guide-title: Configuratiegids
 user-guide-description: Configureer uw Adobe Commerce-toepassingsfuncties en -services.
 feature: Configuration
-source-git-commit: 1850301e0b7f1abbc54613209940dd63d16ef145
+source-git-commit: d86b9eb07a9da6dc93234f8a02103c543bbead68
 workflow-type: tm+mt
-source-wordcount: '367'
+source-wordcount: '372'
 ht-degree: 0%
 
 ---
@@ -41,6 +41,7 @@ ht-degree: 0%
       + [Redis configureren](cache/config-redis.md)
       + [Redis gebruiken voor standaardcache](cache/redis-pg-cache.md)
       + [Redis gebruiken voor sessieopslag](cache/redis-session.md)
+      + [ElastiCache voor EC2-instanties configureren](cache/redis-elasticache-for-ec2.md)
    + Valkey {#valkey}
       + [Valkey configureren](cache/config-valkey.md)
       + [Valkey gebruiken voor standaardcache](cache/valkey-pg-cache.md)
@@ -150,4 +151,4 @@ ht-degree: 0%
       + [Gesplitste database verifiëren](storage/multi-master-verify.md)
       + [Database-replicatie](storage/multi-master-replication.md)
       + [Eén database herstellen](storage/revert-split-database.md)
-+ [&#x200B; Terugkeer aan Operationele Gidsen &#x200B;](https://experienceleague.adobe.com/docs/commerce-operations/operational-guides/home.html?lang=nl-NL)
++ [ Terugkeer aan Operationele Gidsen ](https://experienceleague.adobe.com/docs/commerce-operations/operational-guides/home.html)
