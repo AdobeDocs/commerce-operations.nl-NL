@@ -43,13 +43,13 @@ Dit project heeft de [Adobe-gedragscode voor open source](code-of-conduct.md) of
 
 ## Over je bijdragen aan Adobe-inhoud
 
-Zie de [ Gids van de Medewerker van de Docent van Adobe ](https://experienceleague.adobe.com/docs/contributor/contributor-guide/introduction.html).
+Zie de [&#x200B; Gids van de Medewerker van de Docent van Adobe &#x200B;](https://experienceleague.adobe.com/docs/contributor/contributor-guide/introduction.html).
 
 Hoe u een bijdrage levert, hangt af van wie u bent en van het soort veranderingen dat u wilt bijdragen:
 
 ### Kleine wijzigingen
 
-Als u minder belangrijke updates bijdraagt, bezoek het artikel en klik het terugkoppelen gebied dat bij de bodem van het artikel verschijnt, klik **Gedetailleerde terugkoppelt opties**, en klik dan **Voorstellen en** uitgeven om naar het prijsonderdrukkingsbrondossier op GitHub te gaan. Gebruik GitHub UI om uw updates te maken. Zie de algemene [ de contributorgids van Adobe Docs ](https://experienceleague.adobe.com/docs/contributor/contributor-guide/introduction.html) voor meer informatie.
+Als u minder belangrijke updates bijdraagt, bezoek het artikel en klik het terugkoppelen gebied dat bij de bodem van het artikel verschijnt, klik **Gedetailleerde terugkoppelt opties**, en klik dan **Voorstellen en** uitgeven om naar het prijsonderdrukkingsbrondossier op GitHub te gaan. Gebruik GitHub UI om uw updates te maken. Zie de algemene [&#x200B; de contributorgids van Adobe Docs &#x200B;](https://experienceleague.adobe.com/docs/contributor/contributor-guide/introduction.html) voor meer informatie.
 
 Kleine correcties of verduidelijkingen die u ter documentatie en codevoorbeelden in dit antwoord aanbrengt, worden behandeld in de gebruiksvoorwaarden van Adobe.
 
@@ -67,14 +67,14 @@ Als u een technisch schrijver, programmamanager, of ontwikkelaar van het product
 
 Communautaire contribuanten kunnen GitHub UI voor basishet uitgeven of vork gebruiken het repo om belangrijke bijdragen te leveren.
 
-Zie de [ Gids van de Medewerker van de Docent van Adobe ](https://experienceleague.adobe.com/docs/contributor/contributor-guide/introduction.html) voor details.
+Zie de [&#x200B; Gids van de Medewerker van de Docent van Adobe &#x200B;](https://experienceleague.adobe.com/docs/contributor/contributor-guide/introduction.html) voor details.
 
 ## Hoe te om prijsdaling te gebruiken om uw onderwerp te formatteren
 
 Alle artikelen in deze repository gebruiken GitHub gearomatiseerde prijsopgave. Als u niet vertrouwd bent met markering, zie:
 
-- [ Grondbeginselen van de Prijsverlaging ](https://help.github.com/articles/getting-started-with-writing-and-formatting-on-github/)
-- [ Afdrukbare prijsdaling ](https://guides.github.com/pdfs/markdown-cheatsheet-online.pdf)
+- [&#x200B; Grondbeginselen van de Prijsverlaging &#x200B;](https://help.github.com/articles/getting-started-with-writing-and-formatting-on-github/)
+- [&#x200B; Afdrukbare prijsdaling &#x200B;](https://guides.github.com/pdfs/markdown-cheatsheet-online.pdf)
 
 ## Sjablonen
 
@@ -85,9 +85,9 @@ Voor sommige onderwerpen, gebruiken wij gegevensdossiers en malplaatjes om gepub
 
 Voorbeelden van sjablooninhoud zijn onder andere:
 
-- [ CLI hulpmiddelverwijzing ](https://experienceleague.adobe.com/docs/commerce-operations/reference/commerce-on-premises.html)
-- [ de beschikbaarheidstabellen van het Product ](https://experienceleague.adobe.com/docs/commerce-operations/release/product-availability.html)
-- [ de lijsten van de systeemvereisten ](https://experienceleague.adobe.com/docs/commerce-operations/installation-guide/system-requirements.html)
+- [&#x200B; CLI hulpmiddelverwijzing &#x200B;](https://experienceleague.adobe.com/docs/commerce-operations/reference/commerce-on-premises.html)
+- [&#x200B; de beschikbaarheidstabellen van het Product &#x200B;](https://experienceleague.adobe.com/docs/commerce-operations/release/product-availability.html)
+- [&#x200B; de lijsten van de systeemvereisten &#x200B;](https://experienceleague.adobe.com/docs/commerce-operations/installation-guide/system-requirements.html)
 
 ### Sjablooninhoud genereren
 
@@ -96,7 +96,7 @@ In het algemeen, moeten de meeste schrijvers slechts een versieversie aan de de 
 >**NOTA:**
 >
 >- Voor het genereren van gesjabloonde inhoud moet u op de opdrachtregel in een terminal werken.
->- Ruby moet zijn geïnstalleerd om het renderscript uit te voeren. Zie [_jekyll/.ruby-version ](_jekyll/.ruby-version) voor de vereiste versie.
+>- Ruby moet zijn geïnstalleerd om het renderscript uit te voeren. Zie [_jekyll/.ruby-version ] (_jekyll/.ruby-version) voor de vereiste versie.
 
 Zie het volgende voor een beschrijving van de bestandsstructuur voor sjablooninhoud:
 
@@ -109,8 +109,8 @@ Sjablooninhoud bijwerken:
 
 1. Open een gegevensbestand in de map `/jekyll/_data` in de teksteditor. Bijvoorbeeld:
 
-   - [ de beschikbaarheidstabellen van het Product ](https://experienceleague.adobe.com/docs/commerce-operations/release/product-availability.html): `/jekyll/_data/product-availability.yml`
-   - [ Eisen van het Systeem lijsten ](https://experienceleague.adobe.com/docs/commerce-operations/installation-guide/system-requirements.html): `/jekyll/_data/system-requirements.yml`
+   - [&#x200B; de beschikbaarheidstabellen van het Product &#x200B;](https://experienceleague.adobe.com/docs/commerce-operations/release/product-availability.html): `/jekyll/_data/product-availability.yml`
+   - [&#x200B; Eisen van het Systeem lijsten &#x200B;](https://experienceleague.adobe.com/docs/commerce-operations/installation-guide/system-requirements.html): `/jekyll/_data/system-requirements.yml`
 
 1. Gebruik de bestaande YAML-structuur om items te maken.
 
@@ -163,7 +163,7 @@ Sjablooninhoud bijwerken:
    git push
    ```
 
-Zie de documentatie van Jekyll voor meer details over [ Dossiers van Gegevens ](https://jekyllrb.com/docs/datafiles), [ Vloeiende filters ](https://jekyllrb.com/docs/liquid/filters/), en andere eigenschappen.
+Zie de documentatie van Jekyll voor meer details over [&#x200B; Dossiers van Gegevens &#x200B;](https://jekyllrb.com/docs/datafiles), [&#x200B; Vloeiende filters &#x200B;](https://jekyllrb.com/docs/liquid/filters/), en andere eigenschappen.
 
 ## Beschikbare taken
 
