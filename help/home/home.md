@@ -2,7 +2,7 @@
 title: Startpagina operationele hulplijnen
 description: Leer meer over het systeembeheer van Adobe Commerce en operationele concepten. Doorblader uitvoerige gidsen voor planning, het vormen, en het handhaven van uw plaatsing van Commerce.
 exl-id: 45ec4948-338f-4276-8a70-d0db720322d9
-source-git-commit: 86d7fba92705b808b45d655a432bb92ed9f9181a
+source-git-commit: 152c932b6eca3e131f46e5ade93c4e87fc0811a6
 workflow-type: tm+mt
 source-wordcount: '171'
 ht-degree: 0%
@@ -102,4 +102,4 @@ Gebruik deze volgende inzameling van gidsen om over de concepten van het systeem
 
 {{$include /help/_includes/templated/whats-new.md}}
 
-<!-- Last updated from includes: 2026-01-02 21:47:52 -->
+<!-- Last updated from includes: 2026-01-07 14:57:09 -->

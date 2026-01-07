@@ -1,7 +1,7 @@
 ---
-source-git-commit: 9994f486c38df4c0dc2ff477c48f3e8f3259aa9f
+source-git-commit: 4589c405bab743001e967a9825d578ee1a03c216
 workflow-type: tm+mt
-source-wordcount: '602'
+source-wordcount: '672'
 ht-degree: 0%
 
 ---
@@ -76,13 +76,39 @@ rake whatsnew_bp since="jul 4"
 
 ### `azure_regions`
 
-Genereert een kaart met Azure-gebieden. Het invoergegevensbestand moet in `_jekyll/tmp/azure-regions.json` worden geplaatst. Het resultaat wordt gevonden in `_jekyll/tmp/azure-regions.svg` . Merk op dat u Python, [&#x200B; PyGMT &#x200B;](https://www.pygmt.org/latest/install.html) nodig hebt, en [&#x200B; pdf2svg &#x200B;](https://formulae.brew.sh/formula/pdf2svg) geïnstalleerd.
+Genereert een kaart met Azure-gebieden. Het invoergegevensbestand moet in `_jekyll/tmp/azure-regions.json` worden geplaatst. Het resultaat wordt gevonden in `_jekyll/tmp/azure-regions.svg` . Merk op dat u Python, [ PyGMT ](https://www.pygmt.org/latest/install.html) nodig hebt, en [ pdf2svg ](https://formulae.brew.sh/formula/pdf2svg) geïnstalleerd.
 
 **Gebruik:**
 
 ```sh
 rake azure_regions
 ```
+
+### `get_released_versions`
+
+Haalt de laatste 10 releaseversies op uit de `magento/magento2` -opslagplaats. Vereist [ CLI GitHub ](https://cli.github.com/) om worden geïnstalleerd en voor authentiek verklaard.
+
+**Gebruik:**
+
+```sh
+rake get_released_versions
+```
+
+**Output:** produceert `tmp/core-release.txt` met de namen en data van de versietag.
+
+### `first_merge_date`
+
+Hiermee wordt de datum van de eerste samenvoeging in een opgegeven vertakking opgehaald. Vereist [ CLI GitHub ](https://cli.github.com/) om worden geïnstalleerd en voor authentiek verklaard.
+
+**Gebruik:**
+
+```sh
+rake first_merge_date base=develop
+```
+
+**Argumenten:**
+
+- `base` (vereist): de naam van de doelvertakking die moet worden gecontroleerd op samenvoegingen.
 
 ### `includes:maintain_relationships`
 
@@ -215,8 +241,9 @@ Hoofdinhoudsbestanden gebruiken de volgende syntaxis om andere bestanden op te n
 ## Vereisten
 
 - Ruby en Bundler geïnstalleerd.
-- Vereiste gems gespecificeerd in Gemfile.
-- Python, [&#x200B; PyGMT &#x200B;](https://www.pygmt.org/latest/install.html), en [&#x200B; pdf2svg &#x200B;](https://formulae.brew.sh/formula/pdf2svg) voor de `azure_regions` taak.
+- Vereiste gems opgegeven in het Gemfile (kernafhankelijkheden worden opgegeven door `adobe-comdox-exl-rake-tasks`).
+- [ CLI GitHub ](https://cli.github.com/) voor de `get_released_versions` en `first_merge_date` taken.
+- Python, [ PyGMT ](https://www.pygmt.org/latest/install.html), en [ pdf2svg ](https://formulae.brew.sh/formula/pdf2svg) voor de `azure_regions` taak.
 
 ## Instellen
 
@@ -226,4 +253,4 @@ Hoofdinhoudsbestanden gebruiken de volgende syntaxis om andere bestanden op te n
    bundle install
    ```
 
-2. Controleer of Python, PyGMT en pdf2svg zijn geïnstalleerd voor de `azure_regions` -taak. Voor meer details op de opstelling zie documentatie in commentaren in [&#x200B; _scripts/azure_regions.py &#x200B;](_scripts/azure_regions.py).
+2. Controleer of Python, PyGMT en pdf2svg zijn geïnstalleerd voor de `azure_regions` -taak. Voor meer details op de opstelling zie documentatie in commentaren in [ _scripts/azure_regions.py ](_scripts/azure_regions.py).
