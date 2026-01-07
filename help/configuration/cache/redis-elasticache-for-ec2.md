@@ -75,4 +75,4 @@ bin/magento setup:config:set --session-save=redis --session-save-redis-host=<Ela
    ```
 
 1. Open een pagina in de gebruikersinterface van Commerce.
-1. Verifieer de [ geheim voorgeheugenoutput ](#verify-the-redis-connection) in uw terminal.
+1. Verifieer de [&#x200B; geheim voorgeheugenoutput &#x200B;](#verify-the-redis-connection) in uw terminal.
