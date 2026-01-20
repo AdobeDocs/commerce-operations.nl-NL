@@ -2,7 +2,7 @@
 title: Systeemvereisten
 description: Meer informatie over softwareafhankelijkheden en systeemvereisten voor Adobe Commerce. Ontdek geteste configuraties om ervoor te zorgen dat deze compatibel zijn met uw implementatieomgeving.
 exl-id: 008c9edc-7d72-403c-847f-0e3b77bbb197
-source-git-commit: bf7049ad5b805397f823e7e4cb430e9ecca5965e
+source-git-commit: 96cdbae2fd6754e88e7e781b972f72ca6593d505
 workflow-type: tm+mt
 source-wordcount: '818'
 ht-degree: 0%
@@ -17,7 +17,7 @@ Er zijn enkele verschillen in de afhankelijkheden voor Commerce op Cloud. Servic
 
 >[!NOTE]
 >
->De systeemvereisten gelden alleen voor vrijgegeven versies van Adobe Commerce. Beta of eerdere versies voor toegang zijn niet inbegrepen. Zie de [&#x200B; versienota&#39;s &#x200B;](../release/release-notes/overview.md) om meer over de recentste vrijgegeven versies van Adobe Commerce te leren.
+>De systeemvereisten gelden alleen voor vrijgegeven versies van Adobe Commerce. Beta of eerdere versies voor toegang zijn niet inbegrepen. Zie de [ versienota&#39;s ](../release/release-notes/overview.md) om meer over de recentste vrijgegeven versies van Adobe Commerce te leren.
 
 In de volgende tabellen worden versies weergegeven van softwareafhankelijkheden van derden die Adobe heeft getest met specifieke Adobe Commerce-releases.
 
@@ -29,11 +29,11 @@ Adobe raadt u aan de RabbitMQ-versies incrementeel te upgraden om een soepel upg
 
 >[!TAB  Commerce op Wolk ]
 
-[&#x200B; Commerce op het malplaatje van de Wolk &#x200B;](https://github.com/magento/magento-cloud) verstrekt een standaardconfiguratie voor de diensten compatibel met een specifieke versie van Commerce.
+[ Commerce op het malplaatje van de Wolk ](https://github.com/magento/magento-cloud) verstrekt een standaardconfiguratie voor de diensten compatibel met een specifieke versie van Commerce.
 
 {{$include /help/_includes/templated/cloud-requirements-table.md}}
 
-De diensten en de versies worden bepaald in [&#x200B; het `services.yaml` dossier &#x200B;](https://github.com/magento/magento-cloud/blob/master/.magento/services.yaml). Hier volgt de standaardserviceconfiguratie voor Commerce 2.4.6 op Cloud-infrastructuur:
+De diensten en de versies worden bepaald in [ het `services.yaml` dossier ](https://github.com/magento/magento-cloud/blob/master/.magento/services.yaml). Hier volgt de standaardserviceconfiguratie voor Commerce 2.4.6 op Cloud-infrastructuur:
 
 ```yaml
 mysql:
@@ -48,7 +48,7 @@ opensearch:
     disk: 1024
 ```
 
-Zie [&#x200B; de diensten &#x200B;](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure/service/services-yaml.html?lang=nl-NL) in _Commerce op de gids van de Infrastructuur van de Wolk_ vormen.
+Zie [ de diensten ](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure/service/services-yaml.html) in _Commerce op de gids van de Infrastructuur van de Wolk_ vormen.
 
 >[!TAB  Commerce op-gebouw ]
 
@@ -58,17 +58,17 @@ Zie [&#x200B; de diensten &#x200B;](https://experienceleague.adobe.com/docs/comm
 
 ## PHP-instellingen
 
-Er zijn bepaalde PHP-configuratie-instellingen, zoals de `memory_limit` -instelling, die u kunnen helpen veelvoorkomende problemen te voorkomen bij het gebruik van Adobe Commerce. Zie [&#x200B; Vereiste PHP montages &#x200B;](prerequisites/php-settings.md).
+Er zijn bepaalde PHP-configuratie-instellingen, zoals de `memory_limit` -instelling, die u kunnen helpen veelvoorkomende problemen te voorkomen bij het gebruik van Adobe Commerce. Zie [ Vereiste PHP montages ](prerequisites/php-settings.md).
 
-Voor de configuratiebegeleiding van de Wolk, zie [&#x200B; PHP montages &#x200B;](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure/app/php-settings.html?lang=nl-NL) in _Commerce op de gids van de Infrastructuur van de Wolk_.
+Voor de configuratiebegeleiding van de Wolk, zie [ PHP montages ](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure/app/php-settings.html) in _Commerce op de gids van de Infrastructuur van de Wolk_.
 
 ### PHP OPcache
 
-Men adviseert dat u verifieert dat [&#x200B; PHP OPcache &#x200B;](https://www.php.net/manual/en/intro.opcache.php) om prestatiesredenen wordt toegelaten. De OPcache is in veel PHP distributies ingeschakeld. De extensie `opcache` wordt standaard geïnstalleerd in de Commerce-infrastructuur voor de cloud.
+Men adviseert dat u verifieert dat [ PHP OPcache ](https://www.php.net/manual/en/intro.opcache.php) om prestatiesredenen wordt toegelaten. De OPcache is in veel PHP distributies ingeschakeld. De extensie `opcache` wordt standaard geïnstalleerd in de Commerce-infrastructuur voor de cloud.
 
-Voor op-gebouw, verifieer dat PHP OPcache geïnstalleerd is, zie [&#x200B; PHP montages &#x200B;](prerequisites/php-settings.md). Of voor specifieke begeleiding op prestatiesmontages, zie de softwareaanbevelingen voor [&#x200B; PHP montages &#x200B;](https://experienceleague.adobe.com/docs/commerce-operations/performance-best-practices/software.html?lang=nl-NL#php-settings) in de _Beste praktijken van Prestaties_ gids.
+Voor op-gebouw, verifieer dat PHP OPcache geïnstalleerd is, zie [ PHP montages ](prerequisites/php-settings.md). Of voor specifieke begeleiding op prestatiesmontages, zie de softwareaanbevelingen voor [ PHP montages ](https://experienceleague.adobe.com/docs/commerce-operations/performance-best-practices/software.html#php-settings) in de _Beste praktijken van Prestaties_ gids.
 
-Als u OPcache afzonderlijk moet installeren, zie de [&#x200B; documentatie PHP OPcache &#x200B;](https://www.php.net/manual/en/opcache.setup.php).
+Als u OPcache afzonderlijk moet installeren, zie de [ documentatie PHP OPcache ](https://www.php.net/manual/en/opcache.setup.php).
 
 ### PHP Process Control
 
@@ -80,11 +80,11 @@ PHPUnit v9 (als opdrachtregelprogramma).
 
 ### PHP-extensies
 
-De [&#x200B; PHP installatieinstructies &#x200B;](prerequisites/php-settings.md) omvatten een stap voor het installeren van deze uitbreidingen.
+De [ PHP installatieinstructies ](prerequisites/php-settings.md) omvatten een stap voor het installeren van deze uitbreidingen.
 
 >[!TIP]
 >
->Voor PHP uitbreidingen in de infrastructuur van de Wolk, zie [&#x200B; PHP uitbreidingen &#x200B;](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure/app/php-settings.html?lang=nl-NL#enable-extensions) in _Commerce op de gids van de Infrastructuur van de Wolk_ toelaten.
+>Voor PHP uitbreidingen in de infrastructuur van de Wolk, zie [ PHP uitbreidingen ](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure/app/php-settings.html#enable-extensions) in _Commerce op de gids van de Infrastructuur van de Wolk_ toelaten.
 
 >[!BEGINTABS]
 
@@ -98,7 +98,7 @@ In de volgende tabel worden de ondersteunde PHP-extensies weergegeven wanneer Ad
 
 {{$include /help/_includes/templated/php-extensions.md}}
 
-Verwijs naar [&#x200B; officiële PHP documentatie &#x200B;](https://www.php.net/manual/en/extensions.php) voor installatiedetails.
+Verwijs naar [ officiële PHP documentatie ](https://www.php.net/manual/en/extensions.php) voor installatiedetails.
 
 >[!ENDTABS]
 
@@ -123,11 +123,11 @@ Storefront en Admin:
 
 ### E-mailserver
 
-De Agent van de Overdracht van de post (MTA) of een server SMTP. Commerce op de infrastructuur van de Wolk gebruikt de [&#x200B; SendGrid e-maildienst &#x200B;](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/project/sendgrid.html?lang=nl-NL).
+De Agent van de Overdracht van de post (MTA) of een server SMTP. Commerce op de infrastructuur van de Wolk gebruikt de [ SendGrid e-maildienst ](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/project/sendgrid.html).
 
 ### Geheugen
 
-Voor het upgraden van de toepassingen en extensies die u van de Commerce Marketplace en andere bronnen ontvangt, is maximaal 2 GB RAM vereist. Als u een systeem met minder dan 2 GB van RAM gebruikt, creeer a [&#x200B; wisseldossier &#x200B;](https://support.magento.com/hc/en-us/articles/360032980432); anders, zou uw verbetering kunnen ontbreken.
+Voor het upgraden van de toepassingen en extensies die u van de Commerce Marketplace en andere bronnen ontvangt, is maximaal 2 GB RAM vereist. Als u een systeem met minder dan 2 GB van RAM gebruikt, creeer a [ wisseldossier ](https://support.magento.com/hc/en-us/articles/360032980432); anders, zou uw verbetering kunnen ontbreken.
 
 ### Besturingssystemen (Linux x86-64)
 
@@ -153,17 +153,17 @@ Adobe Commerce heeft voor bepaalde bewerkingen de volgende systeemgereedschappen
 - Zelfondertekende SSL-certificaten worden niet ondersteund.
 - TLS (Transport Layer Security)-vereiste - zowel PayPal als `repo.magento.com` vereisen TLS 1.2 of hoger.
 
-Voor Commerce op de infrastructuur van de Wolk, zie [&#x200B; Snelle configuratie &#x200B;](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/cdn/setup-fastly/fastly-configuration.html?lang=nl-NL) in _Commerce op de gids van de Infrastructuur van de Wolk_.
+Voor Commerce op de infrastructuur van de Wolk, zie [ Snelle configuratie ](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/cdn/setup-fastly/fastly-configuration.html) in _Commerce op de gids van de Infrastructuur van de Wolk_.
 
 ### Xdebug
 
-Voor Adobe Commerce, gebruik [&#x200B; php_xdebug 2.5.x &#x200B;](https://xdebug.org/download) of recenter (ontwikkelomgevingen slechts; kan een negatief effect op prestaties hebben).
+Voor Adobe Commerce, gebruik [ php_xdebug 2.5.x ](https://xdebug.org/download) of recenter (ontwikkelomgevingen slechts; kan een negatief effect op prestaties hebben).
 
-Voor Adobe Commerce op Cloud, zie [&#x200B; Xdebug &#x200B;](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/test/debug.html?lang=nl-NL) in _Commerce op de gids van de Infrastructuur van de Wolk_ vormen.
+Voor Adobe Commerce op Cloud, zie [ Xdebug ](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/test/debug.html) in _Commerce op de gids van de Infrastructuur van de Wolk_ vormen.
 
 >[!NOTE]
 >
->Er is een bekend probleem met `xdebug` dat invloed kan hebben op Adobe Commerce-installaties of op de toegang tot de winkel of beheerder na de installatie. Zie [&#x200B; Bekende kwestie die `xdebug` installatie &#x200B;](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/known-issues-that-affect-installation.html?lang=nl-NL) in de _Kennisbank van de Steun van Commerce_ beïnvloedt.
+>Er is een bekend probleem met `xdebug` dat invloed kan hebben op Adobe Commerce-installaties of op de toegang tot de winkel of beheerder na de installatie. Zie [ Bekende kwestie die `xdebug` installatie ](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/known-issues-that-affect-installation.html) in de _Kennisbank van de Steun van Commerce_ beïnvloedt.
 
 
-<!-- Last updated from includes: 2025-10-10 11:54:17 -->
+<!-- Last updated from includes: 2026-01-15 16:27:25 -->
