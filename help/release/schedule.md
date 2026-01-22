@@ -12,41 +12,41 @@ ht-degree: 0%
 
 # Patchrelease-schema
 
-Adobe streeft voortdurend naar het juiste evenwicht tussen het maken van productverbeteringen eenvoudig en voorspelbaar terwijl het leveren van verbeteringen aan vroege adopters sneller (zie [ versioning beleid ](versioning-policy.md)).
+Adobe streeft voortdurend naar het juiste evenwicht tussen het maken van productverbeteringen eenvoudig en voorspelbaar terwijl het leveren van verbeteringen aan vroege adopters sneller (zie [&#x200B; versioning beleid &#x200B;](versioning-policy.md)).
 
-Het doel van dit programma is data te verstrekken voor wanneer Adobe van plan is de versie van [ flarden ](versioning-policy.md#patch-release) voor elke gesteunde versielijn van de kernAdobe Commerce PHP toepassing aan te kondigen. De versies van de flard zijn kansen om de kern codebase te bevorderen om uw platform veilig, betrouwbaar, en prestatieshoog te houden.
+Het doel van dit programma is data te verstrekken voor wanneer Adobe van plan is de versie van [&#x200B; flarden &#x200B;](versioning-policy.md#patch-release) voor elke gesteunde versielijn van de kernAdobe Commerce PHP toepassing aan te kondigen. De versies van de flard zijn kansen om de kern codebase te bevorderen om uw platform veilig, betrouwbaar, en prestatieshoog te houden.
 
 >[!NOTE]
 >
->Om meer over nieuwe eigenschappen, wolkeninfrastructuur, en uitbreidingsversies te leren, zie de [ de versiedocumentatie van de Diensten van Adobe Commerce ](https://experienceleague.adobe.com/en/docs/commerce/user-guides/release-information/release-notes-all).
+>Om meer over nieuwe eigenschappen, wolkeninfrastructuur, en uitbreidingsversies te leren, zie de [&#x200B; de versiedocumentatie van de Diensten van Adobe Commerce &#x200B;](https://experienceleague.adobe.com/en/docs/commerce/user-guides/release-information/release-notes-all).
 
-Naast de geplande kwaliteit, veiligheid, en bètaflarden die op deze pagina worden vermeld, verleent Adobe toegang tot [ individuele flarden ](versioning-policy.md#individual-patch) door het [ Hulpmiddel van de Patches van de Kwaliteit ](../tools/quality-patches-tool/usage.md). Met dit gereedschap kunt u algemene informatie over alle afzonderlijke patches die beschikbaar zijn voor de geïnstalleerde versie van Adobe Commerce, toepassen, herstellen en weergeven.
+Naast de geplande kwaliteit, veiligheid, en bètaflarden die op deze pagina worden vermeld, verleent Adobe toegang tot [&#x200B; individuele flarden &#x200B;](versioning-policy.md#individual-patch) door het [&#x200B; Hulpmiddel van de Patches van de Kwaliteit &#x200B;](../tools/quality-patches-tool/usage.md). Met dit gereedschap kunt u algemene informatie over alle afzonderlijke patches die beschikbaar zijn voor de geïnstalleerde versie van Adobe Commerce, toepassen, herstellen en weergeven.
 
 Adobe Commerce volgt een maandelijks schema voor de release van de patch met de volgende strategie:
 
-- **Geïsoleerde veiligheidsmoeilijke situaties** - Individuele, niet-cumulatieve [ veiligheidsmoeilijke situaties ](versioning-policy.md#isolated-patch) kunnen maandelijks worden vrijgegeven en veiligheidsmoeilijke situaties voor alle [ omvatten ](lifecycle-policy.md) gesteunde versielijnen (omvat regelmatige en uitgebreide steun).
+- **Geïsoleerde veiligheidsmoeilijke situaties** - Individuele, niet-cumulatieve [&#x200B; veiligheidsmoeilijke situaties &#x200B;](versioning-policy.md#isolated-patch) kunnen maandelijks worden vrijgegeven en veiligheidsmoeilijke situaties voor alle [&#x200B; omvatten &#x200B;](lifecycle-policy.md) gesteunde versielijnen (omvat regelmatige en uitgebreide steun).
 
-- **de flarden van de Veiligheid** - bij minimium, [ veiligheidspatches ](versioning-policy.md#security-patch-release) worden vrijgegeven jaarlijks (Mei) voor alle [ gesteunde ](lifecycle-policy.md) versielijnen. Deze flarden omvatten alle eerder vrijgegeven geïsoleerde veiligheidsmoeilijke situaties. Adobe kan indien nodig in november extra beveiligingspatches vrijgeven, maar dit is niet gegarandeerd.
+- **de flarden van de Veiligheid** - bij minimium, [&#x200B; veiligheidspatches &#x200B;](versioning-policy.md#security-patch-release) worden vrijgegeven jaarlijks (Mei) voor alle [&#x200B; gesteunde &#x200B;](lifecycle-policy.md) versielijnen. Deze flarden omvatten alle eerder vrijgegeven geïsoleerde veiligheidsmoeilijke situaties. Adobe kan indien nodig in november extra beveiligingspatches vrijgeven, maar dit is niet gegarandeerd.
 
-- **Reparatie** - een volledig [ flard ](versioning-policy.md#patch-release) voor Adobe Commerce 2.4.x LTS versielijn (3 jaar steunperiode) wordt jaarlijks vrijgegeven (Mei).
+- **Reparatie** - een volledig [&#x200B; flard &#x200B;](versioning-policy.md#patch-release) voor Adobe Commerce 2.4.x LTS versielijn (3 jaar steunperiode) wordt jaarlijks vrijgegeven (Mei).
 
-- **de flarden van Beta** - Twee [ bètaflarden ](versioning-policy.md#beta-patch-release) voor Adobe Commerce 2.4.x LTS worden de versielijn tweemaal per jaar vrijgegeven (Maart en november).
+- **de flarden van Beta** - Twee [&#x200B; bètaflarden &#x200B;](versioning-policy.md#beta-patch-release) voor Adobe Commerce 2.4.x LTS worden de versielijn tweemaal per jaar vrijgegeven (Maart en november).
 
 Zie de volgende afbeelding voor meer informatie:
 
 <!-- The SVG source for the following image is located here: /help/assets/release/release-calendar.drawio.svg -->
 
-![ 2026 de versiekalender van Adobe Commerce ](../assets/release/release-calendar.drawio.png)
+![&#x200B; 2026 de versiekalender van Adobe Commerce &#x200B;](../assets/release/release-calendar.drawio.png)
 
 
 ## Waarschuwingskanalen vrijgeven
 
 Adobe brengt klanten via de volgende kanalen op de hoogte van nieuwe patchreleases:
 
-- [ Bulletins en Advisories van de Veiligheid van Adobe ](https://helpx.adobe.com/security/security-bulletin.html#magento)
+- [&#x200B; Bulletins en Advisories van de Veiligheid van Adobe &#x200B;](https://helpx.adobe.com/security/security-bulletin.html#magento)
 - E-mail
 - Waarschuwingen in producten
 
 >[!NOTE]
 >
-> Voor versiedata voor elke minder belangrijke, flard, en veiligheidsversie en data voor het eind van regelmatige steun, zie [ Vrijgegeven versies ](https://experienceleague.adobe.com/en/docs/commerce-operations/release/versions).
+> Voor versiedata voor elke minder belangrijke, flard, en veiligheidsversie en data voor het eind van regelmatige steun, zie [&#x200B; Vrijgegeven versies &#x200B;](https://experienceleague.adobe.com/en/docs/commerce-operations/release/versions).
