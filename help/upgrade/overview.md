@@ -2,7 +2,7 @@
 title: Overzicht van het upgradeproces
 description: Leer hoe een upgrade van uw Adobe Commerce-project uw winkel veilig en efficiënt houdt. Ontdek beste praktijken voor planning en het uitvoeren van succesvolle verbeteringen.
 exl-id: 40bd97ca-6648-40d4-9c61-7d159391976a
-source-git-commit: 10f324478e9a5e80fc4d28ce680929687291e990
+source-git-commit: 6896d31a202957d7354c3dd5eb6459eda426e8d7
 workflow-type: tm+mt
 source-wordcount: '901'
 ht-degree: 0%
@@ -13,7 +13,7 @@ ht-degree: 0%
 
 Het upgraden van uw Adobe Commerce-project is van essentieel belang om ervoor te zorgen dat uw winkel veilig blijft, voldoet aan PCI en optimaal functioneert. Deze gids begeleidt u door zeer belangrijke overwegingen wanneer het voorbereiden van een verbetering.
 
-De gids geeft een overzicht van de typische Adobe Commerce upgrade-reis en de beste praktijken om die reis te volgen. Het beschrijft ook technische details van het verbeteringsproces met een geschikte voorbeeld en geleidelijke instructies voor verbetering aan de recentste versie van Adobe Commerce. Het is belangrijk om het de versieschema van Adobe Commerce [&#x200B; &#x200B;](../release/schedule.md) te herzien en begin voor verbeteringen vroegtijdig voor te bereiden. Adobe publiceert de releaseschema jaarlijks om het planningsproces van verkopers te vergemakkelijken en raadt aan elke patchreleasecyclus te upgraden. Om PCI-compatibel te blijven, moeten handelaren op de nieuwste patch of beveiligingspatch zitten.
+De gids geeft een overzicht van de typische Adobe Commerce upgrade-reis en de beste praktijken om die reis te volgen. Het beschrijft ook technische details van het verbeteringsproces met een geschikte voorbeeld en geleidelijke instructies voor verbetering aan de recentste versie van Adobe Commerce. Het is belangrijk om het de versieschema van Adobe Commerce [ ](../release/schedule.md) te herzien en begin voor verbeteringen vroegtijdig voor te bereiden. Adobe publiceert de releaseschema jaarlijks om het planningsproces van verkopers te vergemakkelijken en raadt aan elke patchreleasecyclus te upgraden. Om PCI-compatibel te blijven, moeten handelaren op de nieuwste patch of beveiligingspatch zitten.
 
 ## Voor wie is deze gids?
 
@@ -39,14 +39,14 @@ Door een upgrade uit te voeren, kunt u uw bedrijf in de razendsnelle en voortdur
 
 ### Beveiliging
 
-Beveiliging is een van de belangrijkste redenen voor een upgrade omdat 83% van de beveiligingsincidenten met verouderde software plaatsvindt. Volgens [&#x200B; IBM &#x200B;](https://www.ibm.com/reports/data-breach), zijn de gemiddelde kosten van een gegevensinbreuk $3.86 miljoen-veel groter dan wat het kost om dit risico door bevordering te verlichten. Adobe biedt twee manieren om je winkel het hele jaar veilig te houden:
+Beveiliging is een van de belangrijkste redenen voor een upgrade omdat 83% van de beveiligingsincidenten met verouderde software plaatsvindt. Volgens [ IBM ](https://www.ibm.com/reports/data-breach), zijn de gemiddelde kosten van een gegevensinbreuk $3.86 miljoen-veel groter dan wat het kost om dit risico door bevordering te verlichten. Adobe biedt twee manieren om je winkel het hele jaar veilig te houden:
 
 - **de versies van het Reparatie** - omvat veiligheid, prestaties, kwaliteit, en high-priority insectenmoeilijke situaties.
 - **de flardversies van de Veiligheid** - omvatten moeilijke situaties en verhogingen om uw plaats veilig te houden en gemakkelijker te implementeren zijn.
 
 ### Prestaties
 
-Prestaties zijn een andere belangrijke reden voor een upgrade. Volgens [&#x200B; HubSpot &#x200B;](https://blog.hubspot.com/marketing/page-load-time-conversion-rates), hebben de eerste vijf seconden van ladingstijd een significant effect op omzettingspercentages en elke seconde van latentie daarna heeft - 4.4% effect. Dat, samen met het feit dat paginasnelheid een belangrijke SEO rangschikkingsfactor is, aantoont waarom plaatsprestaties een kritiek element van uw plaats zijn om te handhaven en regelmatig te verbeteren. Elke flardversie omvat prestatiesverbeteringen, zodat steunt het voordeel van nieuwe versies uw groeiplannen en houdt uw zaken concurrerend.
+Prestaties zijn een andere belangrijke reden voor een upgrade. Volgens [ HubSpot ](https://blog.hubspot.com/marketing/page-load-time-conversion-rates), hebben de eerste vijf seconden van ladingstijd een significant effect op omzettingspercentages en elke seconde van latentie daarna heeft - 4.4% effect. Dat, samen met het feit dat paginasnelheid een belangrijke SEO rangschikkingsfactor is, aantoont waarom plaatsprestaties een kritiek element van uw plaats zijn om te handhaven en regelmatig te verbeteren. Elke flardversie omvat prestatiesverbeteringen, zodat steunt het voordeel van nieuwe versies uw groeiplannen en houdt uw zaken concurrerend.
 
 ### Kosten van vertraging
 
@@ -54,7 +54,7 @@ De reden voor het uitstellen of uitstellen van platformupgrades is vaak de direc
 
 Het lijkt misschien contraintuïtief, maar het uitvoeren van regelmatige platformupdates vereist minder algemene inspanningen dan het uitvoeren van niet-frequente updates vanwege het bedrag van de geaccumuleerde technische schuld die het gevolg is van vertragingen. Adobe heeft onlangs samengewerkt met een partner die een detailhandelaar heeft die vroeger zelden en inconsistent (jaarlijks of langer) upgrades uitvoerde. Door te transformeren hoe zij verbeteringen naderen en een Adobe-geadviseerde regelmatige verbeteringsweg in de loop van 12 maanden te volgen, kon de partner de cliënt vier weken&#39; waarde van cumulatieve ontwikkelingstijd, inspanning, en bijbehorende kosten besparen. Deze kosten zouden dan kunnen worden omgeleid naar initiatieven om de groei van het bedrijfsleven te stimuleren.
 
-Wanneer de updates regelmatig worden uitgevoerd, zijn de veranderingen stijgende en de overeenkomstige verbeteringsinspanning wijst op dit. Wanneer platformupdates gedurende een langere periode worden uitgesteld, kunnen ze een veel meer betrokken proces worden. Voorts kunnen de uitbreidingen u van [&#x200B; Adobe Commerce Marketplace &#x200B;](https://marketplace.magento.com/) en andere derdesintegraties gebruikt ook worden beïnvloed. Tot slot duurt het langer om een vertraagde upgrade te onderzoeken, te plannen en uit te voeren, wat vermijdbare inspanningen en kosten met zich meebrengt.
+Wanneer de updates regelmatig worden uitgevoerd, zijn de veranderingen stijgende en de overeenkomstige verbeteringsinspanning wijst op dit. Wanneer platformupdates gedurende een langere periode worden uitgesteld, kunnen ze een veel meer betrokken proces worden. Voorts kunnen de uitbreidingen u van [ Adobe Commerce Marketplace ](https://commercemarketplace.adobe.com//) en andere derdesintegraties gebruikt ook worden beïnvloed. Tot slot duurt het langer om een vertraagde upgrade te onderzoeken, te plannen en uit te voeren, wat vermijdbare inspanningen en kosten met zich meebrengt.
 
 Enkele algemene factoren die van invloed zijn op de mate van inspanning om uw project te upgraden, zijn onder andere:
 

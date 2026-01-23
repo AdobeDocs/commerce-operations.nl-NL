@@ -2,7 +2,7 @@
 title: Basismappaden aanpassen
 description: Gebruik de variabele MAGE_DIRS om een array van absolute paden in te stellen.
 exl-id: ee8e1a3a-f1d4-412c-8767-16447113f0cd
-source-git-commit: 4116d0983edc797ce42d24e711fb5ecdbf8fdec9
+source-git-commit: 6896d31a202957d7354c3dd5eb6459eda426e8d7
 workflow-type: tm+mt
 source-wordcount: '116'
 ht-degree: 0%
@@ -15,7 +15,7 @@ Met de omgevingsvariabele `MAGE_DIRS` kunt u aangepaste basismappaden en fragmen
 
 ## MAGE_DIRS instellen
 
-Specificeer een associatieve serie waar de sleutels constanten van [ \\Magento\\App\\Filesystem\\DirectoryList ][directory-list] zijn en de waarden zijn absolute wegen van folders of hun wegen URL, respectievelijk.
+Specificeer een associatieve serie waar de sleutels constanten van [ \\Magento\\App\\Filesystem\\DirectoryList ](https://github.com/magento/magento2/blob/2.4/lib/internal/Magento/Framework/App/Filesystem/DirectoryList.php) zijn en de waarden zijn absolute wegen van folders of hun wegen URL, respectievelijk.
 
 U kunt `MAGE_DIRS` op een van de volgende manieren instellen:
 
@@ -50,6 +50,3 @@ U kunt `MAGE_DIRS` op een van de volgende manieren instellen:
 
 In het voorgaande voorbeeld worden paden voor `[cache]` - en `[media]` -mappen ingesteld op `/mnt/nfs/cache` respectievelijk `/mnt/nfs/media` .
 
-<!-- link definitions -->
-
-[directory-list]: https://github.com/magento/magento2/blob/2.4/lib/internal/Magento/Framework/App/Filesystem/DirectoryList.php

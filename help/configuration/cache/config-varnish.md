@@ -3,34 +3,34 @@ title: Varnish configureren en gebruiken
 description: Leer hoe u het cachegeheugen van Varnish configureert en gebruikt voor Adobe Commerce. Ontdek HTTP-versnellings-, bestands- en optimalisatietechnieken.
 feature: Configuration, Cache
 exl-id: 57614878-e349-43bb-b22b-1aa321907be1
-source-git-commit: 10f324478e9a5e80fc4d28ce680929687291e990
+source-git-commit: 6896d31a202957d7354c3dd5eb6459eda426e8d7
 workflow-type: tm+mt
-source-wordcount: '1060'
+source-wordcount: '1042'
 ht-degree: 0%
 
 ---
 
 # Varnish configureren
 
-[ Varnish Geheime voorgeheugen ] is een open-bron de toepassingsaccelerator van het Web (die ook als a _wordt bedoeld de accelerator van HTTP_ of _caching de omgekeerde volmacht van HTTP_). Varnish slaat (of geheime voorgeheugens) dossiers of fragmenten van dossiers in geheugen op, die Varnish toelaat om de reactietijd en het verbruik van de netwerkbandbreedte op toekomstige, gelijkwaardige verzoeken te verminderen. In tegenstelling tot webservers als Apache en nginx, werd Varnish uitsluitend ontworpen voor gebruik met het HTTP-protocol.
+[ Varnish Geheime voorgeheugen ](https://varnish-cache.org) is een open-bron de toepassingsaccelerator van het Web (die ook als a _wordt bedoeld de accelerator van HTTP_ of _caching de omgekeerde volmacht van HTTP_). Varnish slaat (of geheime voorgeheugens) dossiers of fragmenten van dossiers in geheugen op, die Varnish toelaat om de reactietijd en het verbruik van de netwerkbandbreedte op toekomstige, gelijkwaardige verzoeken te verminderen. In tegenstelling tot webservers als Apache en nginx, werd Varnish uitsluitend ontworpen voor gebruik met het HTTP-protocol.
 
-[&#x200B; de vereisten van het Systeem &#x200B;](../../installation/system-requirements.md) maakt een lijst van de gesteunde versies van Varnish.
+[ de vereisten van het Systeem ](../../installation/system-requirements.md) maakt een lijst van de gesteunde versies van Varnish.
 
 >[!WARNING]
 >
->Wij _adviseren sterk_ u Varnish in productie gebruikt. Ingebouwd volledig-pagina caching-aan of het dossiersysteem of [&#x200B; gegevensbestand &#x200B;](https://developer.adobe.com/commerce/php/development/cache/partial/database-caching/) - is veel langzamer dan Varnish, en Varnish wordt ontworpen om het verkeer van HTTP te versnellen.
+>Wij _adviseren sterk_ u Varnish in productie gebruikt. Ingebouwd volledig-pagina caching-aan of het dossiersysteem of [ gegevensbestand ](https://developer.adobe.com/commerce/php/development/cache/partial/database-caching/) - is veel langzamer dan Varnish, en Varnish wordt ontworpen om het verkeer van HTTP te versnellen.
 
 Zie voor meer informatie over Varnish:
 
-- [ het Grote Vierige Beeld ]
-- [ Varnish startopties ]
-- [ Varnish en de Prestaties van de Website ]
+- [ het Grote Vierige Beeld ](https://www.varnish-cache.org/docs/trunk/users-guide/intro.html)
+- [ Varnish startopties ](https://www.varnish-cache.org/docs/trunk/reference/varnishd.html#ref-varnishd-options)
+- [ Varnish en de Prestaties van de Website ](https://www.varnish-cache.org/docs/trunk/users-guide/performance.html#users-performance)
 
 ## Varnish topologiediagram
 
 Het volgende cijfer toont een basismening van Varnish in uw topologie van Commerce.
 
-![&#x200B; Basis Varnish diagram &#x200B;](../../assets/configuration/varnish-basic.png)
+![ Basis Varnish diagram ](../../assets/configuration/varnish-basic.png)
 
 In het voorafgaande cijfer, resulteren de verzoeken van HTTP van gebruikers over Internet in talrijke verzoeken om CSS, HTML, JavaScript, en beelden (die collectief als _worden bedoeld activa_). Varnish bevindt zich vóór de webserver en verzendt deze aanvragen bij de webserver.
 
@@ -61,7 +61,7 @@ Het proces kan als volgt worden samengevat:
 
 We kennen de volgende kwesties met Varnish:
 
-- [ Varnish steunt geen SSL ]
+- [ Varnish steunt geen SSL ](https://www.varnish-cache.org/docs/3.0/phk/ssl.html)
 
   Als alternatief, gebruiksSSL beëindiging of een SSL beëindigingsvolmacht.
 
@@ -90,9 +90,9 @@ We kennen de volgende kwesties met Varnish:
 
 Varnish caching werkt met Commerce met behulp van:
 
-- [`nginx.conf.sample` &#x200B;](https://github.com/magento/magento2/blob/2.4/nginx.conf.sample) uit de Magento 2 GitHub-opslagplaats
+- [`nginx.conf.sample` ](https://github.com/magento/magento2/blob/2.4/nginx.conf.sample) uit de Magento 2 GitHub-opslagplaats
 - `.htaccess` gedistribueerd configuratiebestand voor Apache dat bij Commerce wordt geleverd
-- `default.vcl` configuratie voor Varnish produceerde gebruikend [&#x200B; Admin &#x200B;](../cache/configure-varnish-commerce.md)
+- `default.vcl` configuratie voor Varnish produceerde gebruikend [ Admin ](../cache/configure-varnish-commerce.md)
 
 >[!INFO]
 >
@@ -114,7 +114,7 @@ In deze sectie wordt een browsercontrole gebruikt om te tonen hoe elementen in d
 
 In de volgende afbeelding ziet u een voorbeeld met een browsercontrole:
 
-![&#x200B; de eerste keer een verzoek voor een cacheable voorwerp wordt gemaakt, levert Varnish het aan browser &#x200B;](../../assets/configuration/varnish-apache-first-visit.png)
+![ de eerste keer een verzoek voor een cacheable voorwerp wordt gemaakt, levert Varnish het aan browser ](../../assets/configuration/varnish-apache-first-visit.png)
 
 Het voorgaande voorbeeld toont een verzoek om de hoofdpagina van de storefront (`m2_ce_my`). CSS- en JavaScript-elementen worden in cache geplaatst in de clientbrowser.
 
@@ -126,7 +126,7 @@ Het voorgaande voorbeeld toont een verzoek om de hoofdpagina van de storefront (
 
 Als dezelfde browser dezelfde pagina opnieuw opvraagt, worden deze elementen geleverd vanuit de lokale browsercache, zoals in de volgende afbeelding wordt getoond.
 
-![&#x200B; de volgende tijd het zelfde voorwerp wordt gevraagd, laden de activa van het lokale browser geheime voorgeheugen &#x200B;](../../assets/configuration/varnish-apache-second-visit.png)
+![ de volgende tijd het zelfde voorwerp wordt gevraagd, laden de activa van het lokale browser geheime voorgeheugen ](../../assets/configuration/varnish-apache-second-visit.png)
 
 Let op het verschil in responstijd tussen het eerste en het tweede verzoek. Ook hier hebben statische elementen een antwoordcode van 200 (OK), omdat ze voor het eerst worden geleverd via de lokale cache.
 
@@ -134,22 +134,15 @@ Let op het verschil in responstijd tussen het eerste en het tweede verzoek. Ook 
 
 In het volgende voorbeeld worden responsheaders voor een bepaald statisch element weergegeven.
 
-![&#x200B; ETag maakt het gemakkelijker om te bepalen of een statisch element of niet is veranderd &#x200B;](../../assets/configuration/varnish-etag.png)
+![ ETag maakt het gemakkelijker om te bepalen of een statisch element of niet is veranderd ](../../assets/configuration/varnish-etag.png)
 
 `calendar.css` heeft een ETag- antwoordkopbal wat betekent het CSS dossier op cliëntbrowser kan worden vergeleken met die op de server.
 
 Daarnaast worden statische elementen geretourneerd met de HTTP-statuscode 304 (Niet gewijzigd), zoals in de volgende afbeelding wordt getoond.
 
-![&#x200B; HTTP 304 (Gewijzigd niet) antwoordcode wijst op het statische element in het lokale geheime voorgeheugen het zelfde als op de server &#x200B;](../../assets/configuration/varnish-304.png) is
+![ HTTP 304 (Gewijzigd niet) antwoordcode wijst op het statische element in het lokale geheime voorgeheugen het zelfde als op de server ](../../assets/configuration/varnish-304.png) is
 
 De 304-statuscode treedt op omdat de gebruiker de lokale cache ongeldig heeft gemaakt en de inhoud op de server niet is gewijzigd. Wegens de 304 statuscode, wordt de statische activa _inhoud_ niet overgebracht; slechts worden de kopballen van HTTP gedownload aan browser.
 
 Als de inhoud op de server verandert, downloadt de client het statische element met een HTTP 200 (OK)-statuscode en een nieuwe ETag.
 
-<!-- Link Definitions -->
-
-[De Big Varnish Picture]: https://www.varnish-cache.org/docs/trunk/users-guide/intro.html
-[Varnish Cache]: https://varnish-cache.org
-[Opstartopties vervagen]: https://www.varnish-cache.org/docs/trunk/reference/varnishd.html#ref-varnishd-options
-[Vernish en Websites]: https://www.varnish-cache.org/docs/trunk/users-guide/performance.html#users-performance
-[Varnish ondersteunt SSL niet]: https://www.varnish-cache.org/docs/3.0/phk/ssl.html

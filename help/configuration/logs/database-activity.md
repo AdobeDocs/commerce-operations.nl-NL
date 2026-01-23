@@ -3,23 +3,23 @@ title: Logboekdatabaseactiviteit
 description: Configureer Commerce om databaseactiviteiten te registreren met behulp van de Logger-interface.
 feature: Configuration, Logs, Storage
 exl-id: 2487c5ec-a01e-4d87-bc5e-c33643b032df
-source-git-commit: 991bd5fb34a2ffe61aa194ec46e2b04b4ce5b3e7
+source-git-commit: 6896d31a202957d7354c3dd5eb6459eda426e8d7
 workflow-type: tm+mt
-source-wordcount: '87'
+source-wordcount: '86'
 ht-degree: 0%
 
 ---
 
 # Logboekdatabaseactiviteit
 
-In het volgende voorbeeld ziet u hoe u databaseactiviteiten kunt registreren met de [`Magento\Framework\DB\LoggerInterface`][interface] , die twee implementaties heeft:
+In het volgende voorbeeld ziet u hoe u databaseactiviteiten kunt registreren met de `[Magento\Framework\DB\LoggerInterface](https://github.com/magento/magento2/blob/2.4.8/lib/internal/Magento/Framework/DB/LoggerInterface.php)` , die twee implementaties heeft:
 
-- Er wordt niets geregistreerd (standaard): [`Magento\Framework\DB\Logger\Quiet`][quiet]
-- Hiermee meldt u zich aan bij de map `var/log` : [`Magento\Framework\DB\Logger\File`][file]
+- Er wordt niets geregistreerd (standaard): [`Magento\Framework\DB\Logger\Quiet` ](https://github.com/magento/magento2/blob/2.4.8/lib/internal/Magento/Framework/DB/Logger/Quiet.php)
+- Logs to the `var/log` directory: [`Magento\Framework\DB\Logger\File` ](https://github.com/magento/magento2/blob/2.4.8/lib/internal/Magento/Framework/DB/Logger/File.php)
 
 >[!TIP]
 >
->U kunt Commerce CLI gebruiken om [&#x200B; gegevensbestand het registreren &#x200B;](../cli/enable-logging.md#database-logging) toe te laten en onbruikbaar te maken.
+>U kunt Commerce CLI gebruiken om [ gegevensbestand het registreren ](../cli/enable-logging.md#database-logging) toe te laten en onbruikbaar te maken.
 
 Als u de standaardconfiguratie van `\Magento\Framework\DB\Logger\LoggerProxy` wilt wijzigen, bewerkt u uw `app/etc/di.xml` .
 
@@ -58,8 +58,3 @@ En maak de cache schoon met:
 bin/magento cache:clean
 ```
 
-<!-- link definitions -->
-
-[file]: https://github.com/magento/magento2/blob/2.4/lib/internal/Magento/Framework/DB/Logger/File.php
-[interface]: https://github.com/magento/magento2/blob/2.4/lib/internal/Magento/Framework/DB/LoggerInterface.php
-[quiet]: https://github.com/magento/magento2/blob/2.4/lib/internal/Magento/Framework/DB/Logger/Quiet.php

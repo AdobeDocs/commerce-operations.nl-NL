@@ -4,7 +4,7 @@ description: Leer hoe u aangepaste logbestanden maakt en configureert in Adobe C
 feature: Configuration, Logs
 badge: label="Bijgedragen door Atwix" type="Informative" url="https://www.atwix.com/" tooltip="Atwix"
 exl-id: 875f45e7-30c9-4b1b-afe9-d1a8d51ccdf0
-source-git-commit: 10f324478e9a5e80fc4d28ce680929687291e990
+source-git-commit: 6896d31a202957d7354c3dd5eb6459eda426e8d7
 workflow-type: tm+mt
 source-wordcount: '321'
 ht-degree: 0%
@@ -17,11 +17,11 @@ De module `Magento\Framework\Logger` bevat de volgende handlerklassen:
 
 | Klasse | Logbestand |
 | ----- | -------- |
-| [ Magento\Framework\Logger\Handler\Base][base] | - |
-| [ Magento\Framework\Logger\Handler\Debug][debug] | `/var/log/debug.log` |
-| [ Magento\Framework\Logger\Handler\Exception][exception] | `/var/log/exception.log` |
-| [ Magento\Framework\Logger\Handler\Syslog][syslog] | - |
-| [ Magento\Framework\Logger\Handler\System][system] | `/var/log/system.log` |
+| [ Magento\Framework\Logger\Handler\Base](https://github.com/magento/magento2/blob/2.4/lib/internal/Magento/Framework/Logger/Handler/Base.php) | - |
+| [ Magento\Framework\Logger\Handler\Debug](https://github.com/magento/magento2/blob/2.4/lib/internal/Magento/Framework/Logger/Handler/Debug.php) | `/var/log/debug.log` |
+| [ Magento\Framework\Logger\Handler\Exception](https://github.com/magento/magento2/blob/2.4/lib/internal/Magento/Framework/Logger/Handler/Exception.php) | `/var/log/exception.log` |
+| [ Magento\Framework\Logger\Handler\Syslog](https://github.com/magento/magento2/blob/2.4/lib/internal/Magento/Framework/Logger/Handler/Syslog.php) | - |
+| [ Magento\Framework\Logger\Handler\System](https://github.com/magento/magento2/blob/2.4/lib/internal/Magento/Framework/Logger/Handler/System.php) | `/var/log/system.log` |
 
 U vindt ze mogelijk in de map `lib/internal/Magento/Framework/Logger/Handler` .
 
@@ -32,9 +32,9 @@ U kunt een van de volgende methoden gebruiken om u aan te melden bij een aangepa
 
 ## Een aangepast logbestand instellen in het dialoogvenster `di.xml`
 
-Dit voorbeeld toont hoe te om [&#x200B; virtuele types &#x200B;](https://developer.adobe.com/commerce/php/development/build/dependency-injection-file/#virtual-types) te gebruiken om `debug` berichten in een dossier van het douanelogboek in plaats van een norm `/var/log/debug.log` te registreren.
+Dit voorbeeld toont hoe te om [ virtuele types ](https://developer.adobe.com/commerce/php/development/build/dependency-injection-file/#virtual-types) te gebruiken om `debug` berichten in een dossier van het douanelogboek in plaats van een norm `/var/log/debug.log` te registreren.
 
-1. In het `di.xml` dossier van uw module, bepaal een dossier van het douanelogboek als a [&#x200B; virtueel type &#x200B;](https://developer.adobe.com/commerce/php/development/build/dependency-injection-file/#virtual-types).
+1. In het `di.xml` dossier van uw module, bepaal een dossier van het douanelogboek als a [ virtueel type ](https://developer.adobe.com/commerce/php/development/build/dependency-injection-file/#virtual-types).
 
    ```xml
    <virtualType name="Magento\Payment\Model\Method\MyCustomDebug" type="Magento\Framework\Logger\Handler\Base">
@@ -46,7 +46,7 @@ Dit voorbeeld toont hoe te om [&#x200B; virtuele types &#x200B;](https://develop
 
    De `name` waarde van `Magento\Payment\Model\Method\MyCustomDebug` moet uniek zijn.
 
-1. Bepaal de manager in een ander [&#x200B; virtueel type &#x200B;](https://developer.adobe.com/commerce/php/development/build/dependency-injection-file/#virtual-types) met een uniek `name`:
+1. Bepaal de manager in een ander [ virtueel type ](https://developer.adobe.com/commerce/php/development/build/dependency-injection-file/#virtual-types) met een uniek `name`:
 
    ```xml
    <virtualType name="Magento\Payment\Model\Method\MyCustomLogger" type="Magento\Framework\Logger\Monolog">
@@ -58,7 +58,7 @@ Dit voorbeeld toont hoe te om [&#x200B; virtuele types &#x200B;](https://develop
    </virtualType>
    ```
 
-1. Injecteer het `MyCustomLogger` [&#x200B; virtuele type &#x200B;](https://developer.adobe.com/commerce/php/development/build/dependency-injection-file/#virtual-types) in het `Magento\Payment\Model\Method\Logger` voorwerp:
+1. Injecteer het `MyCustomLogger` [ virtuele type ](https://developer.adobe.com/commerce/php/development/build/dependency-injection-file/#virtual-types) in het `Magento\Payment\Model\Method\Logger` voorwerp:
 
    ```xml
    <type name="Magento\Payment\Model\Method\Logger">
@@ -117,7 +117,7 @@ In dit voorbeeld wordt getoond hoe u een aangepaste logboekafhandelingsklasse ku
    }
    ```
 
-1. Bepaal de manager voor deze klasse als a [&#x200B; virtueel type &#x200B;](https://developer.adobe.com/commerce/php/development/build/dependency-injection-file/#virtual-types) in het 2&rbrace; dossier van de module &lbrace;.`di.xml`
+1. Bepaal de manager voor deze klasse als a [ virtueel type ](https://developer.adobe.com/commerce/php/development/build/dependency-injection-file/#virtual-types) in het 2} dossier van de module {.`di.xml`
 
    ```xml
    <virtualType name="MyCustomLogger" type="Magento\Framework\Logger\Monolog">
@@ -205,10 +205,3 @@ In dit voorbeeld wordt getoond hoe u een aangepaste logboekafhandelingsklasse ku
 
 Uitzonderingsberichten worden in het `/var/log/my_custom_logger/error.log` -bestand aangemeld.
 
-<!-- link definitions -->
-
-[base]: https://github.com/magento/magento2/blob/2.4/lib/internal/Magento/Framework/Logger/Handler/Base.php
-[debug]: https://github.com/magento/magento2/blob/2.4/lib/internal/Magento/Framework/Logger/Handler/Debug.php
-[exception]: https://github.com/magento/magento2/blob/2.4/lib/internal/Magento/Framework/Logger/Handler/Exception.php
-[syslog]: https://github.com/magento/magento2/blob/2.4/lib/internal/Magento/Framework/Logger/Handler/Syslog.php
-[system]: https://github.com/magento/magento2/blob/2.4/lib/internal/Magento/Framework/Logger/Handler/System.php

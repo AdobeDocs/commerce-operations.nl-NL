@@ -3,7 +3,7 @@ title: Implementatie van één computer
 description: Leer hoe u updates voor Commerce op een productieserver kunt implementeren via de opdrachtregel.
 feature: Configuration, Deploy
 exl-id: ca73309c-7584-4506-99de-dd933651eeb6
-source-git-commit: 84a20012a81278cc95587ec14281b05330261687
+source-git-commit: 6896d31a202957d7354c3dd5eb6459eda426e8d7
 workflow-type: tm+mt
 source-wordcount: '180'
 ht-degree: 1%
@@ -16,17 +16,17 @@ Dit onderwerp verstrekt instructies voor het opstellen van updates aan Commerce 
 
 ## Veronderstellingen
 
-- U installeerde Commerce gebruikend [&#x200B; Composer &#x200B;](../../installation/composer.md).
+- U installeerde Commerce gebruikend [ Composer ](../../installation/composer.md).
 - U past rechtstreeks updates toe op de server.
 
 >[!WARNING]
 >
 >Deze handleiding is niet van toepassing als u Commerce hebt geïnstalleerd met `git clone` .
->De bijdragende ontwikkelaars zouden [ deze gids ][install] moeten gebruiken om hun installatie van Commerce bij te werken.
+>De bijdragende ontwikkelaars zouden [ deze gids ](https://developer.adobe.com/commerce/contributor/guides/install/update-dependencies) moeten gebruiken om hun installatie van Commerce bij te werken.
 
 ## Implementatiestappen
 
-1. Login aan uw productieserver als, of schakelaar aan, de [&#x200B; eigenaar van het dossiersysteem &#x200B;](../../installation/prerequisites/file-system/overview.md).
+1. Login aan uw productieserver als, of schakelaar aan, de [ eigenaar van het dossiersysteem ](../../installation/prerequisites/file-system/overview.md).
 
 1. Map wijzigen in de basismap van Commerce:
 
@@ -91,6 +91,3 @@ Dit onderwerp verstrekt instructies voor het opstellen van updates aan Commerce 
    bin/magento maintenance:disable
    ```
 
-<!-- link definitions -->
-
-[install]: https://developer.adobe.com/commerce/contributor/guides/install/update-dependencies

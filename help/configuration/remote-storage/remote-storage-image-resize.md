@@ -3,7 +3,7 @@ title: Afbeeldingsgrootte configureren voor externe opslag
 description: U kunt schijfbronnen optimaliseren door de grootte van afbeeldingen op de server te configureren.
 feature: Configuration, Storage
 exl-id: 51c2b9b3-0f5f-4868-9191-911d5df341ec
-source-git-commit: 4caabd1578e56b74600441c9c779b7b2dfd06987
+source-git-commit: 6896d31a202957d7354c3dd5eb6459eda426e8d7
 workflow-type: tm+mt
 source-wordcount: '247'
 ht-degree: 1%
@@ -16,11 +16,11 @@ Adobe Commerce biedt standaard ondersteuning voor het vergroten of verkleinen va
 
 In het volgende diagram ziet u hoe Nginx afbeeldingen in het cachegeheugen ophaalt, vergroot of verkleint en opslaat. Het formaat wordt bepaald door de parameters die in de URL zijn opgenomen, zoals hoogte en breedte.
 
-![&#x200B; Nginx configuratie voor het verre beeld van de opslag resizing die de montages van het serverblok &#x200B;](../../assets/configuration/remote-storage-nginx-image-resize.png) tonen
+![ Nginx configuratie voor het verre beeld van de opslag resizing die de montages van het serverblok ](../../assets/configuration/remote-storage-nginx-image-resize.png) tonen
 
 >[!TIP]
 >
->Voor Adobe Commerce op de projecten van de wolkeninfrastructuur, zie [&#x200B; verre opslag voor Commerce op de infrastructuur van de Wolk vormen &#x200B;](cloud-support.md)
+>Voor Adobe Commerce op de projecten van de wolkeninfrastructuur, zie [ verre opslag voor Commerce op de infrastructuur van de Wolk vormen ](cloud-support.md)
 
 ## URL-indeling configureren in Adobe Commerce
 
@@ -38,7 +38,7 @@ Als u het formaat van afbeeldingen aan de serverzijde wilt wijzigen, moet u Adob
 
 1. Klik op **[!UICONTROL Save Config]**.
 
-1. Ga aan de [&#x200B; configuratie Nginx &#x200B;](#configure-nginx) verder.
+1. Ga aan de [ configuratie Nginx ](#configure-nginx) verder.
 
 ## Nginx configureren
 
@@ -46,7 +46,7 @@ Als u de grootte van afbeeldingen aan de serverzijde wilt blijven configureren, 
 
 **om Nginx toe te laten om beelden** resize:
 
-1. Installeer de [ Nginx module van de beeldfilter ][nginx-module].
+1. Installeer de [ Nginx module van de beeldfilter ](https://nginx.org/en/docs/http/ngx_http_image_filter_module.html).
 
    ```shell
    load_module /etc/nginx/modules/ngx_http_image_filter_module.so;
@@ -73,6 +73,3 @@ Als u de grootte van afbeeldingen aan de serverzijde wilt blijven configureren, 
 
    - [Amazon Simple Storage Service (Amazon S3)](remote-storage-aws-s3.md)
 
-<!-- link definitions -->
-
-[nginx-module]: https://nginx.org/en/docs/http/ngx_http_image_filter_module.html

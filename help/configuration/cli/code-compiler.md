@@ -2,7 +2,7 @@
 title: Codecompiler
 description: Leer hoe u de Adobe Commerce-codecompiler uitvoert vanaf de opdrachtregel. Ontdek compilatieprocessen en optimalisatietechnieken.
 exl-id: 08dbf808-ea79-4956-a0bc-f464bb80eee7
-source-git-commit: 10f324478e9a5e80fc4d28ce680929687291e990
+source-git-commit: 6896d31a202957d7354c3dd5eb6459eda426e8d7
 workflow-type: tm+mt
 source-wordcount: '169'
 ht-degree: 0%
@@ -22,7 +22,7 @@ De compilatie van de code omvat het volgende (in geen bepaalde orde):
 - Opslagplaatsen voor het genereren van code (gegenereerde code voor API&#39;s)
 - De gegevensattributen van de dienst produceren (geproduceerde uitbreidingsklassen voor gegevensvoorwerpen)
 
-U kunt de klassen van de codecompilatie in [ \Magento\Setup\Module\Di\App\Task\Operation ][operation] namespace vinden.
+U kunt de klassen van de codecompilatie in [ \Magento\Setup\Module\Di\App\Task\Operation ](https://github.com/magento/magento2/blob/2.4.8/setup/src/Magento/Setup/Module/Di/App/Task/Operation) namespace vinden.
 
 Om de enig-huurderscompiler in werking te stellen:
 
@@ -46,7 +46,7 @@ In sommige gevallen kunt u code compileren voordat u de Commerce-toepassing inst
 
    Gebruik de optie `[-c|--clear-static-content]` om statische inhoud te wissen. Dit is nodig als u eerder modules hebt in- of uitgeschakeld en u de statische inhoud moet wissen die eerder voor deze modules is gegenereerd.
 
-   Zie [&#x200B; modules &#x200B;](../../installation/tutorials/manage-modules.md) toelaten.
+   Zie [ modules ](../../installation/tutorials/manage-modules.md) toelaten.
 
 1. Compileer de code.
 
@@ -58,8 +58,5 @@ In sommige gevallen kunt u code compileren voordat u de Commerce-toepassing inst
    Generated code and dependency injection configuration successfully.
    ```
 
-Om code zonder een gegevensbestand te compileren, zie [&#x200B; statische meningsdossiers opstellen zonder Magento &#x200B;](../cli/static-view-file-deployment.md) te installeren.
+Om code zonder een gegevensbestand te compileren, zie [ statische meningsdossiers opstellen zonder Magento ](../cli/static-view-file-deployment.md) te installeren.
 
-<!-- link definitions -->
-
-[operation]: https://github.com/magento/magento2/blob/2.4/setup/src/Magento/Setup/Module/Di/App/Task/Operation
