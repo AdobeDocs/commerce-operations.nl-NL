@@ -35,7 +35,7 @@ U genereert het woordenboek als volgt en u begint met vertalen:
 
 1. U kunt de vertaalwoordenboeken verpakken in een taalpakket en het pakket leveren aan de beheerder van de Commerce-winkel.
 
-1. In Admin, vormt de opslagbeheerder [&#x200B; de vertalingen &#x200B;](https://experienceleague.adobe.com/en/docs/commerce-admin/stores-sales/site-store/store-localize).
+1. In Admin, vormt de opslagbeheerder [&#x200B; de vertalingen &#x200B;](https://experienceleague.adobe.com/nl/docs/commerce-admin/stores-sales/site-store/store-localize).
 
 Opdrachtopties:
 

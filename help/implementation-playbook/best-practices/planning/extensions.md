@@ -36,5 +36,5 @@ Adobe Commerce-extensies (modules) van derden kunnen verschillende problemen ver
 
 - [Aanbevolen procedures voor het plannen van upgrades](../../../upgrade/prepare/best-practices.md)
 - Extensies van derden gebruiken met Adobe Commerce op cloudinfrastructuur
-   - [&#x200B; Technologieën en vereisten - Ontwikkeling en het testen &#x200B;](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/develop/overview#cloud-req-devtest)
-   - [&#x200B; waarom test volledig in Integratie en het Opvoeren?](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/launch/overview#why-test-fully-in-integration-staging-and-production)
+   - [&#x200B; Technologieën en vereisten - Ontwikkeling en het testen &#x200B;](https://experienceleague.adobe.com/nl/docs/commerce-cloud-service/user-guide/develop/overview#cloud-req-devtest)
+   - [&#x200B; waarom test volledig in Integratie en het Opvoeren?](https://experienceleague.adobe.com/nl/docs/commerce-cloud-service/user-guide/launch/overview#why-test-fully-in-integration-staging-and-production)

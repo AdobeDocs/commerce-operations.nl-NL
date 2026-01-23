@@ -18,7 +18,7 @@ ht-degree: 0%
 
 Het beveiligingsrelease van Adobe Commerce 2.4.3-p3 biedt beveiligingsoplossingen voor kwetsbaarheden die zijn geïdentificeerd in eerdere versies van 2.4.3. Deze release bevat ook beveiligingsverbeteringen die de naleving van de meest recente best practices op het gebied van beveiliging verbeteren.
 
-Voor de recentste informatie over de veiligheidsinsectenmoeilijke situaties, zie [&#x200B; Bulletin van de Veiligheid van Adobe APSB22-38 &#x200B;](https://helpx.adobe.com/security/products/magento/apsb22-38.html).
+Voor de recentste informatie over de veiligheidsinsectenmoeilijke situaties, zie [&#x200B; Bulletin van de Veiligheid van Adobe APSB22-38 &#x200B;](https://helpx.adobe.com/nl/security/products/magento/apsb22-38.html).
 
 ### AC-3022.patch toepassen om DHL als scheepvaartmaatschappij te blijven aanbieden
 
@@ -35,7 +35,7 @@ DHL heeft schemaversie 6.2 geïntroduceerd en zal schemaversie 6.0 in de nabije 
 
 De Adobe Commerce 2.4.3-p2 veiligheidsversie verstrekt veiligheidsinsectenmoeilijke situaties voor kwetsbaarheid die in vorige versies zijn geïdentificeerd. Deze release bevat ook beveiligingsverbeteringen die de naleving van de meest recente best practices op het gebied van beveiliging verbeteren.
 
-Voor de recentste informatie over de veiligheidsinsectenmoeilijke situaties, zie [&#x200B; Bulletin van de Veiligheid van Adobe APSB22-13 &#x200B;](https://helpx.adobe.com/security/products/magento/apsb22-13.html).  De patchrelease verhelpt ook de kwetsbaarheid die `MDVA-43395_EE_2.4.3-p1_COMPOSER_v1.patch.zip`, `MDVA-43443_EE_2.4.3-p1_COMPOSER_v1.patch.zip`, `MDVA-43395_EE_2.4.3-p1_COMPOSER_v1.patch` en `MDVA-43443_EE_2.4.3-p1_COMPOSER_v1.patch` verhelpen.
+Voor de recentste informatie over de veiligheidsinsectenmoeilijke situaties, zie [&#x200B; Bulletin van de Veiligheid van Adobe APSB22-13 &#x200B;](https://helpx.adobe.com/nl/security/products/magento/apsb22-13.html).  De patchrelease verhelpt ook de kwetsbaarheid die `MDVA-43395_EE_2.4.3-p1_COMPOSER_v1.patch.zip`, `MDVA-43443_EE_2.4.3-p1_COMPOSER_v1.patch.zip`, `MDVA-43395_EE_2.4.3-p1_COMPOSER_v1.patch` en `MDVA-43443_EE_2.4.3-p1_COMPOSER_v1.patch` verhelpen.
 
 
 ### AC-3022.patch toepassen om DHL als scheepvaartmaatschappij te blijven aanbieden
@@ -46,7 +46,7 @@ DHL heeft schemaversie 6.2 geïntroduceerd en zal schemaversie 6.0 in de nabije 
 
 * Het gebruik van e-mailvariabelen is in 2.3.4 afgekeurd als onderdeel van een beperking van het beveiligingsrisico ten gunste van een striktere variabele syntaxis. Dit verouderde gedrag is volledig verwijderd in deze versie als voortzetting van die beperking van het veiligheidsrisico.
 
-  Sjablonen voor e-mail- of nieuwsbrieven die in eerdere versies hebben gewerkt, werken dus mogelijk niet correct na de upgrade naar Adobe Commerce 2.4.3-p2. Betrokken sjablonen zijn onder andere overschrijvingen van beheer, thema&#39;s, onderliggende thema&#39;s en sjablonen van aangepaste modules of uitbreidingen van derden. Uw plaatsing kan nog worden beïnvloed zelfs na het gebruiken van het [&#x200B; verenigbaarheidshulpmiddel van de Verbetering &#x200B;](https://experienceleague.adobe.com/docs/commerce-operations/upgrade-guide/upgrade-compatibility-tool/overview.html) om verouderde gebruik te bevestigen. Zie [&#x200B; het Migreren van douane e-mailmalplaatjes &#x200B;](https://developer.adobe.com/commerce/frontend-core/guide/templates/email-migration/) voor informatie over potentiële gevolgen en richtlijnen voor het migreren van beïnvloede malplaatjes.
+  Sjablonen voor e-mail- of nieuwsbrieven die in eerdere versies hebben gewerkt, werken dus mogelijk niet correct na de upgrade naar Adobe Commerce 2.4.3-p2. Betrokken sjablonen zijn onder andere overschrijvingen van beheer, thema&#39;s, onderliggende thema&#39;s en sjablonen van aangepaste modules of uitbreidingen van derden. Uw plaatsing kan nog worden beïnvloed zelfs na het gebruiken van het [&#x200B; verenigbaarheidshulpmiddel van de Verbetering &#x200B;](https://experienceleague.adobe.com/docs/commerce-operations/upgrade-guide/upgrade-compatibility-tool/overview.html?lang=nl-NL) om verouderde gebruik te bevestigen. Zie [&#x200B; het Migreren van douane e-mailmalplaatjes &#x200B;](https://developer.adobe.com/commerce/frontend-core/guide/templates/email-migration/) voor informatie over potentiële gevolgen en richtlijnen voor het migreren van beïnvloede malplaatjes.
 
 * De tokens van de de toegangstoegang en van het wachtwoord terugstellen worden nu gecodeerd wanneer opgeslagen in het gegevensbestand. <!-- AC-520 1323-->
 
@@ -64,7 +64,7 @@ DHL heeft schemaversie 6.2 geïntroduceerd en zal schemaversie 6.0 in de nabije 
 De beveiligingsrelease van Adobe Commerce 2.4.3-p1 biedt oplossingen voor beveiligingsproblemen voor kwetsbaarheden die in de vorige versie zijn geïdentificeerd (Adobe Commerce 2.4.3 en Magento Open Source 2.4.3). Deze release bevat ook beveiligingsverbeteringen die de naleving van de meest recente best practices op het gebied van beveiliging verbeteren.
 
 
-Voor de recentste informatie over de veiligheidsinsectenmoeilijke situaties, zie [&#x200B; Bulletin van de Veiligheid van Adobe APSB21-86 &#x200B;](https://helpx.adobe.com/security/products/magento/apsb21-86.html). De flardversie verstrekt ook insectenmoeilijke situaties voor [&#x200B; Braintree &#x200B;](https://experienceleague.adobe.com/docs/commerce-admin/stores-sales/payments/braintree.html), [&#x200B; Klarna &#x200B;](https://commercemarketplace.adobe.com//klarna-m2-klarna.html), en [&#x200B; Vertex &#x200B;](https://commercemarketplace.adobe.com//vertexinc-vertex-tax-module.html) leverancier-ontwikkelde uitbreidingen.
+Voor de recentste informatie over de veiligheidsinsectenmoeilijke situaties, zie [&#x200B; Bulletin van de Veiligheid van Adobe APSB21-86 &#x200B;](https://helpx.adobe.com/nl/security/products/magento/apsb21-86.html). De flardversie verstrekt ook insectenmoeilijke situaties voor [&#x200B; Braintree &#x200B;](https://experienceleague.adobe.com/docs/commerce-admin/stores-sales/payments/braintree.html?lang=nl-NL), [&#x200B; Klarna &#x200B;](https://commercemarketplace.adobe.com//klarna-m2-klarna.html), en [&#x200B; Vertex &#x200B;](https://commercemarketplace.adobe.com//vertexinc-vertex-tax-module.html) leverancier-ontwikkelde uitbreidingen.
 
 ### AC-3022.patch toepassen om DHL als scheepvaartmaatschappij te blijven aanbieden
 
