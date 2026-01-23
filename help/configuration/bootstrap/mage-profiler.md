@@ -23,13 +23,13 @@ Met Commerce-profielen kunt u:
 
   U zou in de lijst van _ongebruikte gebiedsdelen_ bijzonder geinteresseerd moeten zijn, die voorwerpen zijn die werden gecreeerd omdat zij in één of andere aannemer werden gevraagd, maar nooit werden gebruikt (namelijk werd geen van hun methodes geroepen). Dientengevolge, worden de bewerkertijd en het geheugen besteed om deze gebiedsdelen tot stand te brengen verspild.
 
-Commerce verstrekt de basisfunctionaliteit in [`Magento\Framework\Profiler` ](https://github.com/magento/magento2/blob/2.4.8/lib/internal/Magento/Framework/Profiler.php).
+Commerce verstrekt de basisfunctionaliteit in [`Magento\Framework\Profiler` &#x200B;](https://github.com/magento/magento2/blob/2.4.8/lib/internal/Magento/Framework/Profiler.php).
 
 U kunt profiler toelaten en vormen gebruikend een variabele MAGE_PROFILER of de bevellijn.
 
 ## MAGE_PROFILER instellen
 
-U kunt de waarde van `MAGE_PROFILER` op om het even welke die manieren plaatsen in [ worden besproken de waarde van laarzentrekkerparameters ](../bootstrap/set-parameters.md) plaatsen.
+U kunt de waarde van `MAGE_PROFILER` op om het even welke die manieren plaatsen in [&#x200B; worden besproken de waarde van laarzentrekkerparameters &#x200B;](../bootstrap/set-parameters.md) plaatsen.
 
 `MAGE_PROFILER` ondersteunt de volgende waarden:
 
@@ -37,14 +37,14 @@ U kunt de waarde van `MAGE_PROFILER` op om het even welke die manieren plaatsen 
 
   U kunt een van de volgende waarden gebruiken om een specifieke analyse in te schakelen:
 
-   - `csvfile` dat [`Magento\Framework\Profiler\Driver\Standard\Output\Csvfile` ](https://github.com/magento/magento2/blob/2.4.8/lib/internal/Magento/Framework/Profiler/Driver/Standard/Output/Csvfile.php) gebruikt
-   - Een andere waarde (behalve `2`), met inbegrip van een lege waarde, die [`Magento\Framework\Profiler\Driver\Standard\Output\Html` ](https://github.com/magento/magento2/blob/2.4.8/lib/internal/Magento/Framework/Profiler/Driver/Standard/Output/Html.php) gebruikt
+   - `csvfile` dat [`Magento\Framework\Profiler\Driver\Standard\Output\Csvfile` &#x200B;](https://github.com/magento/magento2/blob/2.4.8/lib/internal/Magento/Framework/Profiler/Driver/Standard/Output/Csvfile.php) gebruikt
+   - Een andere waarde (behalve `2`), met inbegrip van een lege waarde, die [`Magento\Framework\Profiler\Driver\Standard\Output\Html` &#x200B;](https://github.com/magento/magento2/blob/2.4.8/lib/internal/Magento/Framework/Profiler/Driver/Standard/Output/Html.php) gebruikt
 
 - `2` om afhankelijkheidsgrafieken in te schakelen.
 
   Afhankelijkheidsgrafieken worden doorgaans onder aan een pagina weergegeven. In de volgende afbeelding ziet u een gedeelte van de uitvoer:
 
-  ![ grafieken van de Afhankelijkheid ](../../assets/configuration/depend-graphs.png)
+  ![&#x200B; grafieken van de Afhankelijkheid &#x200B;](../../assets/configuration/depend-graphs.png)
 
 ## CLI-opdrachten
 

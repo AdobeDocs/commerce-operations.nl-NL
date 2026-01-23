@@ -11,7 +11,7 @@ ht-degree: 1%
 
 # Bootstrap-parameters
 
-Dit onderwerp toont aan hoe te om de waarden van de parameters van de toepassingslaarzentrekker van Commerce te plaatsen. Zie [ Overzicht van toepassingsinitialisatie en bootstrapping ](initialization.md).
+Dit onderwerp toont aan hoe te om de waarden van de parameters van de toepassingslaarzentrekker van Commerce te plaatsen. Zie [&#x200B; Overzicht van toepassingsinitialisatie en bootstrapping &#x200B;](initialization.md).
 
 De volgende lijst bespreekt de laarzentrekkerparameters die u kunt plaatsen:
 
@@ -39,7 +39,7 @@ U kunt bijvoorbeeld de systeemomgevingsvariabele `MAGE_PROFILER` als volgt gebru
 MAGE_PROFILER={firebug|csv|<custom value>}
 ```
 
-Stel de variabele in met behulp van een shell-specifieke opdracht. Omdat de cellen verschillende syntaxis hebben, raadpleeg een verwijzing als [ unix.stackexchange.com ](https://unix.stackexchange.com/questions/117467/how-to-permanently-set-environmental-variables).
+Stel de variabele in met behulp van een shell-specifieke opdracht. Omdat de cellen verschillende syntaxis hebben, raadpleeg een verwijzing als [&#x200B; unix.stackexchange.com &#x200B;](https://unix.stackexchange.com/questions/117467/how-to-permanently-set-environmental-variables).
 
 Bash shell voorbeeld voor CentOS:
 
@@ -57,7 +57,7 @@ In deze sectie wordt besproken hoe u de modus voor Apache of Nginx kunt opgeven.
 
 ### Nginx-instelling
 
-Zie de [ Nginx steekproefconfiguratie ](https://github.com/magento/magento2/blob/2.4/nginx.conf.sample#L16) op _GitHub_.
+Zie de [&#x200B; Nginx steekproefconfiguratie &#x200B;](https://github.com/magento/magento2/blob/2.4/nginx.conf.sample#L16) op _GitHub_.
 
 ### Instelling Apache.htaccess
 
@@ -72,7 +72,7 @@ U kunt `.htaccess` op elk van de volgende locaties wijzigen, afhankelijk van het
 
 1. Open de voorgaande bestanden in een teksteditor en voeg de gewenste instelling toe of verwijder de commentaarmarkering.
 
-   Bijvoorbeeld, om a [ wijze ](application-modes.md) te specificeren, verwijder commentaar het volgende:
+   Bijvoorbeeld, om a [&#x200B; wijze &#x200B;](application-modes.md) te specificeren, verwijder commentaar het volgende:
 
    ```conf
    #   SetEnv MAGE_PROFILER firebug
@@ -92,13 +92,13 @@ U kunt `.htaccess` op elk van de volgende locaties wijzigen, afhankelijk van het
 
 De Apache-webserver ondersteunt het instellen van de toepassingsmodus met `mod_env` -instructies.
 
-De Apache `mod_env` richtlijn is lichtjes verschillend in [ Apache versie 2.2 ](https://httpd.apache.org/docs/2.2/mod/mod_env.html#setenv) en [ Apache versie 2.4 ](https://httpd.apache.org/docs/2.4/mod/mod_env.html#setenv).
+De Apache `mod_env` richtlijn is lichtjes verschillend in [&#x200B; Apache versie 2.2 &#x200B;](https://httpd.apache.org/docs/2.2/mod/mod_env.html#setenv) en [&#x200B; Apache versie 2.4 &#x200B;](https://httpd.apache.org/docs/2.4/mod/mod_env.html#setenv).
 
 De volgende procedures tonen hoe u de toepassingsmodus instelt in een virtuele Apache-host. Dit is niet de enige manier om `mod_env` richtlijnen te gebruiken; raadpleeg de documentatie van Apache voor details.
 
 >[!TIP]
 >
->In de volgende sectie wordt ervan uitgegaan dat u uw virtuele host al hebt ingesteld. Als u niet hebt, raadpleeg een middel zoals [ dit leerprogramma DigitalOcean ](https://www.digitalocean.com/community/tutorials/how-to-set-up-apache-virtual-hosts-on-ubuntu-14-04-lts).
+>In de volgende sectie wordt ervan uitgegaan dat u uw virtuele host al hebt ingesteld. Als u niet hebt, raadpleeg een middel zoals [&#x200B; dit leerprogramma DigitalOcean &#x200B;](https://www.digitalocean.com/community/tutorials/how-to-set-up-apache-virtual-hosts-on-ubuntu-14-04-lts).
 
 **om een bootstrap variabele voor Apache op Ubuntu** te specificeren:
 
@@ -141,7 +141,7 @@ De volgende procedures tonen hoe u de toepassingsmodus instelt in een virtuele A
 
 >[!TIP]
 >
->In deze sectie wordt ervan uitgegaan dat u al een virtuele host hebt ingesteld. Als u niet hebt, raadpleeg een middel zoals [ dit leerprogramma DigitalOcean ](https://www.digitalocean.com/community/tutorials/how-to-set-up-apache-virtual-hosts-on-centos-6).
+>In deze sectie wordt ervan uitgegaan dat u al een virtuele host hebt ingesteld. Als u niet hebt, raadpleeg een middel zoals [&#x200B; dit leerprogramma DigitalOcean &#x200B;](https://www.digitalocean.com/community/tutorials/how-to-set-up-apache-virtual-hosts-on-centos-6).
 
 **om een bootstrap variabele voor Apache op CentOS** te specificeren:
 

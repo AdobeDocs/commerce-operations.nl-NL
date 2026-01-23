@@ -24,21 +24,21 @@ U kunt niet zowel externe opslag _als_ die gegevensbestandopslag hebben tezelfde
 bin/magento config:set system/media_storage_configuration/media_database 0
 ```
 
-Het inschakelen van externe opslag kan van invloed zijn op uw bestaande ontwikkelervaring. Bepaalde PHP-bestandsfuncties werken bijvoorbeeld mogelijk niet naar behoren. Het gebruik van Commerce Framework voor bestandsbewerkingen moet worden afgedwongen. De lijst van verboden PHP inheemse functies is beschikbaar in [ magento-coding-standard ](https://github.com/magento/magento-coding-standard/blob/develop/Magento2/Sniffs/Functions/DiscouragedFunctionSniff.php) bewaarplaats.
+Het inschakelen van externe opslag kan van invloed zijn op uw bestaande ontwikkelervaring. Bepaalde PHP-bestandsfuncties werken bijvoorbeeld mogelijk niet naar behoren. Het gebruik van Commerce Framework voor bestandsbewerkingen moet worden afgedwongen. De lijst van verboden PHP inheemse functies is beschikbaar in [&#x200B; magento-coding-standard &#x200B;](https://github.com/magento/magento-coding-standard/blob/develop/Magento2/Sniffs/Functions/DiscouragedFunctionSniff.php) bewaarplaats.
 
 >[!ENDSHADEBOX]
 
 >[!INFO]
 >
->- Externe opslag is alleen beschikbaar voor Commerce versie 2.4.2 en hoger. Zie [ 2.4.2 versienota&#39;s ](https://experienceleague.adobe.com/en/docs/commerce-operations/release/notes/magento-open-source/2-4-2).
+>- Externe opslag is alleen beschikbaar voor Commerce versie 2.4.2 en hoger. Zie [&#x200B; 2.4.2 versienota&#39;s &#x200B;](https://experienceleague.adobe.com/en/docs/commerce-operations/release/notes/magento-open-source/2-4-2).
 >
->- De Verre opslagmodule heeft _beperkte_ steun op Adobe Commerce op wolkeninfrastructuur. Adobe kan de service voor opslagadapters van derden niet volledig oplossen. Zie [ verre opslag voor Commerce op de infrastructuur van de Wolk ](cloud-support.md) voor begeleiding die verre opslag voor wolkenprojecten uitvoeren.
+>- De Verre opslagmodule heeft _beperkte_ steun op Adobe Commerce op wolkeninfrastructuur. Adobe kan de service voor opslagadapters van derden niet volledig oplossen. Zie [&#x200B; verre opslag voor Commerce op de infrastructuur van de Wolk &#x200B;](cloud-support.md) voor begeleiding die verre opslag voor wolkenprojecten uitvoeren.
 
-![ Verre het schema van de opslagconfiguratie illustrerend het verband tussen lokale en wolkenopslag ](../../assets/configuration/remote-storage-schema.png)
+![&#x200B; Verre het schema van de opslagconfiguratie illustrerend het verband tussen lokale en wolkenopslag &#x200B;](../../assets/configuration/remote-storage-schema.png)
 
 ## Opties voor externe opslag
 
-U kunt verre opslag vormen gebruikend de `remote-storage` optie met het [`setup` bevel CLI ](../../installation/tutorials/deployment.md). Voor de optie `remote-storage` wordt de volgende syntaxis gebruikt:
+U kunt verre opslag vormen gebruikend de `remote-storage` optie met het [`setup` bevel CLI &#x200B;](../../installation/tutorials/deployment.md). Voor de optie `remote-storage` wordt de volgende syntaxis gebruikt:
 
 ```text
 --remote-storage-<parameter-name>="<parameter-value>"
@@ -48,7 +48,7 @@ U kunt verre opslag vormen gebruikend de `remote-storage` optie met het [`setup`
 
 | Opdrachtregelparameter | Parameternaam | Beschrijving | Standaardwaarde |
 |--- |--- |--- |--- |
-| `remote-storage-driver` | chauffeur | De naam van de adapter <br> Mogelijke waarden:<br>**dossier**: Maakt verre opslag onbruikbaar en gebruikt het lokale filesystem <br>**aws-s3**: Gebruik de [ Eenvoudige Dienst van de Opslag van Amazon (Amazon S3) ](remote-storage-aws-s3.md) | none |
+| `remote-storage-driver` | chauffeur | De naam van de adapter <br> Mogelijke waarden:<br>**dossier**: Maakt verre opslag onbruikbaar en gebruikt het lokale filesystem <br>**aws-s3**: Gebruik de [&#x200B; Eenvoudige Dienst van de Opslag van Amazon (Amazon S3) &#x200B;](remote-storage-aws-s3.md) | none |
 | `remote-storage-bucket` | emmer | Objectopslag of containernaam | none |
 | `remote-storage-prefix` | prefix | Optioneel voorvoegsel (locatie binnen opslag van object) | leeg |
 | `remote-storage-region` | regio | Naam regio | none |
@@ -79,7 +79,7 @@ U kunt externe opslag installeren tijdens een Adobe Commerce-installatie of exte
 
 >[!TIP]
 >
->Voor Adobe Commerce op wolkeninfrastructuur, zie [ verre opslag voor Commerce op de infrastructuur van de Wolk vormen ](cloud-support.md).
+>Voor Adobe Commerce op wolkeninfrastructuur, zie [&#x200B; verre opslag voor Commerce op de infrastructuur van de Wolk vormen &#x200B;](cloud-support.md).
 
 ## Inhoud migreren
 
@@ -91,5 +91,5 @@ Nadat u verre opslag voor een specifieke adapter toelaat, kunt u CLI gebruiken o
 
 >[!INFO]
 >
->Het synchronisatiebevel migreert slechts dossiers in de `pub/media` folder, _niet_ de invoer/de uitvoerdossiers in de `var` folder. Zie [ Geplande Invoer/de Uitvoer ](https://experienceleague.adobe.com/docs/commerce-admin/systems/data-transfer/data-scheduled-import-export.html) in _Commerce 2.4 Gids van de Gebruiker_.
+>Het synchronisatiebevel migreert slechts dossiers in de `pub/media` folder, _niet_ de invoer/de uitvoerdossiers in de `var` folder. Zie [&#x200B; Geplande Invoer/de Uitvoer &#x200B;](https://experienceleague.adobe.com/docs/commerce-admin/systems/data-transfer/data-scheduled-import-export.html) in _Commerce 2.4 Gids van de Gebruiker_.
 

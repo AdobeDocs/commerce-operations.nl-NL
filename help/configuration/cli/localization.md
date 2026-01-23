@@ -18,11 +18,11 @@ Met Commerce-vertalingen kunt u uw winkel voor meerdere regio&#39;s en markten a
 - **Vertaal woordenboeken**, die een geschikte manier zijn om _sommige_ woorden en uitdrukkingen, zoals die voor een douanemodule of een thema aan te passen of te vertalen.
 - **pakketten van de Taal** die u toelaten om _om het even welk of alle_ woorden en uitdrukkingen in de toepassing van Commerce te vertalen.
 
-Zie [ Overzicht van Vertalingen ](https://developer.adobe.com/commerce/frontend-core/guide/translations/).
+Zie [&#x200B; Overzicht van Vertalingen &#x200B;](https://developer.adobe.com/commerce/frontend-core/guide/translations/).
 
 ## Een vertaalwoordenboek genereren
 
-U kunt a [ vertaalwoordenboek ](https://developer.adobe.com/commerce/frontend-core/guide/translations/#translation-dictionaries) produceren om bestaande koorden aan te passen, woorden en uitdrukkingen in een douanemodule vertalen, een thema lokaliseren, of taalpakketten tot stand brengen.
+U kunt a [&#x200B; vertaalwoordenboek &#x200B;](https://developer.adobe.com/commerce/frontend-core/guide/translations/#translation-dictionaries) produceren om bestaande koorden aan te passen, woorden en uitdrukkingen in een douanemodule vertalen, een thema lokaliseren, of taalpakketten tot stand brengen.
 
 Als u wilt beginnen met het vertalen, gebruikt u een opdracht om een CSV-woordenboekbestand te genereren met een verzamelde lijst van alle bestaande woordgroepen en woorden.
 
@@ -35,7 +35,7 @@ U genereert het woordenboek als volgt en u begint met vertalen:
 
 1. U kunt de vertaalwoordenboeken verpakken in een taalpakket en het pakket leveren aan de beheerder van de Commerce-winkel.
 
-1. In Admin, vormt de opslagbeheerder [ de vertalingen ](https://experienceleague.adobe.com/en/docs/commerce-admin/stores-sales/site-store/store-localize).
+1. In Admin, vormt de opslagbeheerder [&#x200B; de vertalingen &#x200B;](https://experienceleague.adobe.com/en/docs/commerce-admin/stores-sales/site-store/store-localize).
 
 Opdrachtopties:
 
@@ -85,14 +85,14 @@ Een voorbeeld van het vertalen van een woordgroep:
 
 ## Een taalpakket maken
 
-In tegenstelling tot een vertaalwoordenboek kunt u een of meer woorden en woordgroepen in de Commerce-toepassing vertalen met behulp van een taalpakket. U kunt een bepaalde component, zoals een module of een thema, vertalen met een vertaalwoordenboek. [ leer meer over taalpakketten ](https://developer.adobe.com/commerce/frontend-core/guide/translations/#language-packages).
+In tegenstelling tot een vertaalwoordenboek kunt u een of meer woorden en woordgroepen in de Commerce-toepassing vertalen met behulp van een taalpakket. U kunt een bepaalde component, zoals een module of een thema, vertalen met een vertaalwoordenboek. [&#x200B; leer meer over taalpakketten &#x200B;](https://developer.adobe.com/commerce/frontend-core/guide/translations/#language-packages).
 
 In deze sectie wordt besproken hoe u een taalpakket kunt maken, waarin CSV-bestanden naar modules en thema&#39;s worden geschreven. Als u een taalpakket wilt maken, moet u de in de volgende secties beschreven taken uitvoeren:
 
-1. [ verzamel en vertaal woorden en uitdrukkingen ](#generate-a-translation-dictionary). (De parameter `--magento` is vereist.)
-1. [ stel het bevel van het taalpakket in werking ](#run-the-language-package-command).
-1. [ creeer folders en dossiers ](#create-directories-and-files).
-1. (Facultatief.) [ vorm veelvoudige pakketten voor een taal ](#configure-multiple-packages-for-a-language).
+1. [&#x200B; verzamel en vertaal woorden en uitdrukkingen &#x200B;](#generate-a-translation-dictionary). (De parameter `--magento` is vereist.)
+1. [&#x200B; stel het bevel van het taalpakket in werking &#x200B;](#run-the-language-package-command).
+1. [&#x200B; creeer folders en dossiers &#x200B;](#create-directories-and-files).
+1. (Facultatief.) [&#x200B; vorm veelvoudige pakketten voor een taal &#x200B;](#configure-multiple-packages-for-a-language).
 
 ### De opdracht Taalpakket uitvoeren
 
@@ -106,8 +106,8 @@ In de volgende tabel worden de parameters en waarden voor de opdracht Taalpakket
 
 | Parameter | Waarde | Vereist? |
 |--- |--- |--- |
-| `<source>` | Absoluut pad naar bestandssysteem en bestandsnaam van een CSV-bestand met het gecombineerde vertaalwoordenboek en de metagegevens die nodig zijn voor de indeling in een taalpakket.<br><br> Gebruik [`bin/magento i18n:collect-phrases`](#config-cli-subcommands-xlate-dict-dict) om het Csv- dossier tot stand te brengen dan tot het taalpakket zoals die in [ wordt besproken leidt tot folders en dossiers ](#m2devgde-xlate-files). | Ja |
-| `<locale>` | [ ISO 639-1 ](https://www.iso.org/iso-639-language-codes.html) (taal) en [ ISO 3166 ](https://www.iso.org/iso-3166-country-codes.html) (land) herkenningsteken van taal die als dossiernaam voor alle resulterende Csv- dossiers wordt gebruikt. Voorbeelden: `de_DE` , `pt_PT` , `pt_BR` . | Ja |
+| `<source>` | Absoluut pad naar bestandssysteem en bestandsnaam van een CSV-bestand met het gecombineerde vertaalwoordenboek en de metagegevens die nodig zijn voor de indeling in een taalpakket.<br><br> Gebruik [`bin/magento i18n:collect-phrases`](#config-cli-subcommands-xlate-dict-dict) om het Csv- dossier tot stand te brengen dan tot het taalpakket zoals die in [&#x200B; wordt besproken leidt tot folders en dossiers &#x200B;](#m2devgde-xlate-files). | Ja |
+| `<locale>` | [&#x200B; ISO 639-1 &#x200B;](https://www.iso.org/iso-639-language-codes.html) (taal) en [&#x200B; ISO 3166 &#x200B;](https://www.iso.org/iso-3166-country-codes.html) (land) herkenningsteken van taal die als dossiernaam voor alle resulterende Csv- dossiers wordt gebruikt. Voorbeelden: `de_DE` , `pt_PT` , `pt_BR` . | Ja |
 | `-m --mode` | Als er een doelbestand bestaat, geeft u op of het bestaande taalpakket moet worden vervangen of moet worden samengevoegd met het nieuwe taalpakket. Bij het samenvoegen worden alle bestaande woordgroepen overschreven en worden er nieuwe toegevoegd.<br><br> Waarden: fusie of vervang (gebrek). | Nee |
 | `-d --allow-duplicates` | Neem deze optie op als u duplicaten in het taalpakket wilt toestaan. Anders mislukt de opdracht met een fout als dezelfde woordgroep wordt aangetroffen in meerdere items met verschillende vertalingen. | Nee |
 
@@ -117,12 +117,12 @@ Taalpakketten bevinden zich in een map onder `app/i18n/<VendorName>` in het Comm
 
 - Vereiste licentiebestanden
 - `composer.json`
-- `registration.php` dat [ registers ](https://developer.adobe.com/commerce/php/development/build/component-registration/) het taalpakket
+- `registration.php` dat [&#x200B; registers &#x200B;](https://developer.adobe.com/commerce/php/development/build/component-registration/) het taalpakket
 - [`language.xml`](#language-package-languagexml) bestand met metagegevens
 
 >[!INFO]
 >
->U moet het hele pad in kleine letters plaatsen. Zie bijvoorbeeld [`de_de` ](https://github.com/magento/magento2/blob/2.4/app/i18n/Magento/de_DE/registration.php) .
+>U moet het hele pad in kleine letters plaatsen. Zie bijvoorbeeld [`de_de` &#x200B;](https://github.com/magento/magento2/blob/2.4/app/i18n/Magento/de_DE/registration.php) .
 
 U kunt als volgt deze bestanden maken:
 
@@ -131,15 +131,15 @@ U kunt als volgt deze bestanden maken:
    Commerce-taalpakketten bevinden zich bijvoorbeeld in `app/i18n/magento`
 
 1. Voeg de vereiste licentiebestanden toe.
-1. Voeg [`composer.json` toe ](https://developer.adobe.com/commerce/php/development/build/composer-integration/) die gebiedsdelen voor uw taalpakket specificeert.
-1. Het taalpakket registreren met [`registration.php` ](https://developer.adobe.com/commerce/php/development/build/component-registration/)
+1. Voeg [`composer.json` toe &#x200B;](https://developer.adobe.com/commerce/php/development/build/composer-integration/) die gebiedsdelen voor uw taalpakket specificeert.
+1. Het taalpakket registreren met [`registration.php` &#x200B;](https://developer.adobe.com/commerce/php/development/build/component-registration/)
 1. Voeg `language.xml` meta-informatiedossier toe zoals die in de volgende sectie wordt besproken.
 
 #### Taalpakket taal.xml
 
 Wanneer u een taalpakket in het configuratiebestand van `language.xml` declareert, moet u de volgorde van de taalovererving voor dit pakket opgeven.
 
-De overerving van de taal laat u toe om een vertaling tot stand te brengen genoemd a _kind_ dat op een bestaande vertaling wordt gebaseerd geroepen a _ouder_. De onderliggende vertalingen overschrijven het bovenliggende element. Als de onderliggende vertaling echter niet kan worden geüpload of weergegeven of als er een woordgroep of woord ontbreekt, gebruikt Commerce de bovenliggende landinstelling. [ Voorbeelden van taalpakketovererving ](#example-of-language-inheritance).
+De overerving van de taal laat u toe om een vertaling tot stand te brengen genoemd a _kind_ dat op een bestaande vertaling wordt gebaseerd geroepen a _ouder_. De onderliggende vertalingen overschrijven het bovenliggende element. Als de onderliggende vertaling echter niet kan worden geüpload of weergegeven of als er een woordgroep of woord ontbreekt, gebruikt Commerce de bovenliggende landinstelling. [&#x200B; Voorbeelden van taalpakketovererving &#x200B;](#example-of-language-inheritance).
 
 Geef de volgende informatie op om een pakket te declareren:
 
@@ -195,7 +195,7 @@ Als de Commerce-toepassing geen woord of woordgroep kan vinden in het `en_GB` -p
 1. `<vendorname>/en_ca_package`
 1. `<vendorname>/en_us_package`
 
-Als u alle overervingen tussen de taalpakketten opgeeft, kan dit leiden tot circulaire overervingsketens. Gebruik [ Magento\Test\Integrity\App\Language\CircularDependencyTest ](https://github.com/magento/magento2/blob/2.4/dev/tests/static/testsuite/Magento/Test/Integrity/App/Language/CircularDependencyTest.php) test om van dergelijke ketens de plaats te bepalen en te bevestigen.
+Als u alle overervingen tussen de taalpakketten opgeeft, kan dit leiden tot circulaire overervingsketens. Gebruik [&#x200B; Magento\Test\Integrity\App\Language\CircularDependencyTest &#x200B;](https://github.com/magento/magento2/blob/2.4/dev/tests/static/testsuite/Magento/Test/Integrity/App/Language/CircularDependencyTest.php) test om van dergelijke ketens de plaats te bepalen en te bevestigen.
 
 ### Meerdere pakketten voor een taal configureren
 
@@ -221,7 +221,7 @@ U voegt als volgt een Duitse vertaling toe aan een module of thema dat u wilt ve
    >
    >Het CSV- dossier - naam moet _precies_ de scène aanpassen, met inbegrip van het geval van karakters.
 
-1. Vertaal de woorden en de uitdrukkingen gebruikend [ deze richtlijnen ](#translation-guidelines).
+1. Vertaal de woorden en de uitdrukkingen gebruikend [&#x200B; deze richtlijnen &#x200B;](#translation-guidelines).
 1. Kopieer indien nodig `xx_YY.csv` naar `/var/www/html/magento2/app/code/ExampleCorp/SampleModule/i18n` of naar de themamap van de module (afhankelijk van of het vertaalwoordenboek voor een module of een thema is).
 
 ### Voorbeeld: Een taalpakket maken
@@ -238,7 +238,7 @@ Vergelijkbaar met het voorgaande voorbeeld genereert u een CSV-bestand. In plaat
    >
    >Het CSV- dossier - naam moet _precies_ de scène aanpassen, met inbegrip van het geval van karakters.
 
-1. Vertaal de woorden en de uitdrukkingen gebruikend [ deze richtlijnen ](#translation-guidelines).
+1. Vertaal de woorden en de uitdrukkingen gebruikend [&#x200B; deze richtlijnen &#x200B;](#translation-guidelines).
 1. Maak het taalpakket.
 
    ```bash

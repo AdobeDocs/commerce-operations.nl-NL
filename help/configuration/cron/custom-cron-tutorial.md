@@ -11,7 +11,7 @@ ht-degree: 0%
 
 # Een aangepaste uitsnijdtaak configureren
 
-Deze geleidelijke zelfstudie laat zien hoe u een aangepaste uitsnijdtaak en eventueel een uitsnijdgroep in een voorbeeldmodule kunt maken. U kunt een module gebruiken u reeds hebt of u kunt een steekproefmodule van onze [`magento2-samples` bewaarplaats ](https://github.com/magento/magento2-samples) gebruiken.
+Deze geleidelijke zelfstudie laat zien hoe u een aangepaste uitsnijdtaak en eventueel een uitsnijdgroep in een voorbeeldmodule kunt maken. U kunt een module gebruiken u reeds hebt of u kunt een steekproefmodule van onze [`magento2-samples` bewaarplaats &#x200B;](https://github.com/magento/magento2-samples) gebruiken.
 
 Als u de uitsnijdtaak uitvoert, wordt een rij toegevoegd aan de `cron_schedule` -tabel met de naam van de uitsnijdtaak, `custom_cron` .
 
@@ -21,7 +21,7 @@ In deze zelfstudie gaan we uit van het volgende:
 
 - De Commerce-toepassing wordt geïnstalleerd in `/var/www/html/magento2`
 - De gebruikersnaam en het wachtwoord voor de Commerce-database zijn allebei `magento`
-- U voert alle acties als [ eigenaar van het dossiersysteem ](../../installation/prerequisites/file-system/overview.md) uit
+- U voert alle acties als [&#x200B; eigenaar van het dossiersysteem &#x200B;](../../installation/prerequisites/file-system/overview.md) uit
 
 ## Stap 1: Een voorbeeldmodule ophalen
 
@@ -31,15 +31,15 @@ Als u reeds een steekproefmodule hebt, kunt u het gebruiken; sla deze stap en de
 
 **om een steekproefmodule** te krijgen:
 
-1. Login aan uw server van Commerce als, of schakelaar aan, de [ eigenaar van het dossiersysteem ](../../installation/prerequisites/file-system/overview.md).
+1. Login aan uw server van Commerce als, of schakelaar aan, de [&#x200B; eigenaar van het dossiersysteem &#x200B;](../../installation/prerequisites/file-system/overview.md).
 1. Ga naar een map die zich niet in de hoofdmap van de Commerce-toepassing bevindt (bijvoorbeeld de thuismap).
-1. Kloont de [`magento2-samples` bewaarplaats ](https://github.com/magento/magento2-samples).
+1. Kloont de [`magento2-samples` bewaarplaats &#x200B;](https://github.com/magento/magento2-samples).
 
    ```bash
    git clone git@github.com:magento/magento2-samples.git
    ```
 
-   Als het bevel met de fout `Permission denied (publickey).` ontbreekt, moet u [ uw openbare sleutel van SSH aan GitHub.com ](https://docs.github.com/en/authentication/connecting-to-github-with-ssh/adding-a-new-ssh-key-to-your-github-account) toevoegen.
+   Als het bevel met de fout `Permission denied (publickey).` ontbreekt, moet u [&#x200B; uw openbare sleutel van SSH aan GitHub.com &#x200B;](https://docs.github.com/en/authentication/connecting-to-github-with-ssh/adding-a-new-ssh-key-to-your-github-account) toevoegen.
 
 1. Maak een map waarnaar de voorbeeldcode moet worden gekopieerd:
 
@@ -103,7 +103,7 @@ Controleer voordat u verdergaat of de voorbeeldmodule is geregistreerd en ingesc
 
 >[!TIP]
 >
->Als de output erop wijst dat `Module does not exist`, overzicht [ Stap 1 ](#step-1-get-a-sample-module) zorgvuldig. Zorg ervoor dat de code in de juiste map staat. Spelling en hoofdletters/kleine letters zijn belangrijk. Als iets anders is, wordt de module niet geladen. Vergeet ook niet `magento setup:upgrade` uit te voeren.
+>Als de output erop wijst dat `Module does not exist`, overzicht [&#x200B; Stap 1 &#x200B;](#step-1-get-a-sample-module) zorgvuldig. Zorg ervoor dat de code in de juiste map staat. Spelling en hoofdletters/kleine letters zijn belangrijk. Als iets anders is, wordt de module niet geladen. Vergeet ook niet `magento setup:upgrade` uit te voeren.
 
 ## Stap 3: Een klasse maken om afsnijden uit te voeren
 
@@ -273,7 +273,7 @@ Een aangepaste uitsnijdgroep instellen:
    </config>
    ```
 
-Voor een beschrijving van wat de opties betekenen, zie [ Aanpassen van de krantenverwijzing ](custom-cron-reference.md).
+Voor een beschrijving van wat de opties betekenen, zie [&#x200B; Aanpassen van de krantenverwijzing &#x200B;](custom-cron-reference.md).
 
 ## Stap 8: De aangepaste uitsnijdgroep verifiëren
 
@@ -301,5 +301,5 @@ De aangepaste uitsnijdgroep verifiëren:
 
    Uw uitsnijdgroep wordt als volgt weergegeven:
 
-   ![ Uw groep van de douanecorrectie ](../../assets/configuration/cron-group.png)
+   ![&#x200B; Uw groep van de douanecorrectie &#x200B;](../../assets/configuration/cron-group.png)
 

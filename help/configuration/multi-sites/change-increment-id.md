@@ -17,7 +17,7 @@ In dit artikel wordt besproken hoe u de verhogings-id voor een Commerce-database
 
 - Adobe Commerce (op locatie): 2.x.x
 - Adobe Commerce op cloud-infrastructuur: 2.x.x
-- MySQL: [ om het even welke gesteunde versie ](../../installation/prerequisites/database/mysql.md)
+- MySQL: [&#x200B; om het even welke gesteunde versie &#x200B;](../../installation/prerequisites/database/mysql.md)
 
 ## Wanneer moet u de increment-id wijzigen?
 
@@ -28,7 +28,7 @@ In de volgende gevallen moet u mogelijk de increment-id wijzigen voor nieuwe DB-
 
 >[!INFO]
 >
->U kunt het probleem met de betaalgateway voor PayPal ook verhelpen door meerdere betalingen per factuur-ID toe te staan in de voorkeuren voor betalingsontvangst van PayPal. Zie {de gateway van 0} PayPal verworpen verzoek - dubbele factuurkwestie [ in de ](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/payments/paypal-gateway-rejected-request-duplicate-invoice-issue.html) Kennisbank _._
+>U kunt het probleem met de betaalgateway voor PayPal ook verhelpen door meerdere betalingen per factuur-ID toe te staan in de voorkeuren voor betalingsontvangst van PayPal. Zie {de gateway van 0} PayPal verworpen verzoek - dubbele factuurkwestie [&#x200B; in de &#x200B;](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/payments/paypal-gateway-rejected-request-duplicate-invoice-issue.html) Kennisbank _._
 
 ## Vereiste stappen
 
@@ -70,5 +70,5 @@ De volgende volgorde die met `ID=1` bij de winkel wordt geplaatst, heeft de id &
 Voordat we de query voor `ALTER TABLE` uitvoeren op een productieomgeving van Adobe Commerce op een cloudinfrastructuur, raden we u ten zeerste aan deze stappen uit te voeren:
 
 - Test de volledige procedure om verhogingsidentiteitskaart op uw het opvoeren milieu te veranderen
-- [ creeer een steun van DB ](https://support.magento.com/hc/en-us/articles/360003254334) om uw Productie-OB in het geval van mislukking te herstellen
+- [&#x200B; creeer een steun van DB &#x200B;](https://support.magento.com/hc/en-us/articles/360003254334) om uw Productie-OB in het geval van mislukking te herstellen
 

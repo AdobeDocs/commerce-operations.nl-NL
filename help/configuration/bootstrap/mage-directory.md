@@ -15,7 +15,7 @@ Met de omgevingsvariabele `MAGE_DIRS` kunt u aangepaste basismappaden en fragmen
 
 ## MAGE_DIRS instellen
 
-Specificeer een associatieve serie waar de sleutels constanten van [ \\Magento\\App\\Filesystem\\DirectoryList ](https://github.com/magento/magento2/blob/2.4/lib/internal/Magento/Framework/App/Filesystem/DirectoryList.php) zijn en de waarden zijn absolute wegen van folders of hun wegen URL, respectievelijk.
+Specificeer een associatieve serie waar de sleutels constanten van [&#x200B; \\Magento\\App\\Filesystem\\DirectoryList &#x200B;](https://github.com/magento/magento2/blob/2.4/lib/internal/Magento/Framework/App/Filesystem/DirectoryList.php) zijn en de waarden zijn absolute wegen van folders of hun wegen URL, respectievelijk.
 
 U kunt `MAGE_DIRS` op een van de volgende manieren instellen:
 

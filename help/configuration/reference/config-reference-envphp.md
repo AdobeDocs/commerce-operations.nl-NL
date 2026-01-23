@@ -27,12 +27,12 @@ Het bestand `env.php` bevat de volgende secties:
 | `downloadable_domains` | Lijst met downloadbare domeinen |
 | `install` | De installatiedatum |
 | `lock` | Providerinstellingen vergrendelen |
-| `MAGE_MODE` | De [ toepassingswijze ](../bootstrap/application-modes.md) |
-| `queue` | [ de rijen van het Bericht ](../queues/manage-message-queues.md) montages |
+| `MAGE_MODE` | De [&#x200B; toepassingswijze &#x200B;](../bootstrap/application-modes.md) |
+| `queue` | [&#x200B; de rijen van het Bericht &#x200B;](../queues/manage-message-queues.md) montages |
 | `resource` | Toewijzing van de resourcenaam aan een verbinding |
 | `session` | Opslaggegevens sessie |
 | `system` | Schakelt het veld voor bewerken in de beheerder uit |
-| `x-frame-options` | Het plaatsen voor [ x-kader-opties ](../security/xframe-options.md) |
+| `x-frame-options` | Het plaatsen voor [&#x200B; x-kader-opties &#x200B;](../security/xframe-options.md) |
 
 ## achterste
 
@@ -72,7 +72,7 @@ Configureer opnieuw pagina en zorg dat de standaardcaching plaatsvindt met het k
 ]
 ```
 
-Leer meer in [ Redis Configuratie ](../cache/redis-pg-cache.md).
+Leer meer in [&#x200B; Redis Configuratie &#x200B;](../cache/redis-pg-cache.md).
 
 ## cache_types
 
@@ -98,7 +98,7 @@ Alle configuraties van cachetypen zijn beschikbaar bij dit knooppunt.
 ]
 ```
 
-Leer meer over verschillende [ Types van Geheime voorgeheugen ](../cli/manage-cache.md).
+Leer meer over verschillende [&#x200B; Types van Geheime voorgeheugen &#x200B;](../cli/manage-cache.md).
 
 ## consumer_wait_for_messages
 
@@ -134,7 +134,7 @@ Hiermee schakelt u snijtaken voor de Commerce-toepassing in of uit. Standaard zi
 >
 >Wees voorzichtig wanneer u snijtaken uitschakelt. Als ze zijn uitgeschakeld, worden de essentiële processen die door de Commerce-toepassing worden vereist, niet uitgevoerd.
 
-Leer meer over [ Crons ](../cli/configure-cron-jobs.md).
+Leer meer over [&#x200B; Crons &#x200B;](../cli/configure-cron-jobs.md).
 
 ## coderen
 
@@ -146,7 +146,7 @@ Commerce gebruikt een coderingssleutel om wachtwoorden en andere vertrouwelijke 
 ]
 ```
 
-Leer meer over [ Sleutel van de Encryptie ](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/security/encryption-key) in de _gids van de Gebruiker van Commerce_.
+Leer meer over [&#x200B; Sleutel van de Encryptie &#x200B;](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/security/encryption-key) in de _gids van de Gebruiker van Commerce_.
 
 ## db
 
@@ -193,7 +193,7 @@ Als `queue/default_connection` bijvoorbeeld `amqp` in `env.php` is maar een `db`
 
 ## mappen
 
-De facultatieve opties van de folderafbeelding die moeten worden geplaatst wanneer de Webserver wordt gevormd om Commerce te dienen app van de `/pub` folder voor [ betere veiligheid ](../../installation/tutorials/docroot.md).
+De facultatieve opties van de folderafbeelding die moeten worden geplaatst wanneer de Webserver wordt gevormd om Commerce te dienen app van de `/pub` folder voor [&#x200B; betere veiligheid &#x200B;](../../installation/tutorials/docroot.md).
 
 ```conf
 'directories' => [
@@ -211,7 +211,7 @@ Een lijst met downloadbare domeinen beschikbaar in dit knooppunt. De extra domei
 ]
 ```
 
-Leer meer over [ Downloadbare Domeinen ](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/cli-reference/commerce-on-premises#downloadabledomainsadd).
+Leer meer over [&#x200B; Downloadbare Domeinen &#x200B;](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/cli-reference/commerce-on-premises#downloadabledomainsadd).
 
 ## installeren
 
@@ -227,7 +227,7 @@ De installatiedatum van de Commerce-toepassing.
 
 Instellingen voor vergrendelingsproviders worden geconfigureerd met het knooppunt `lock` .
 
-Leer meer over [ de Configuratie van de Leverancier van het Slot ](../../installation/tutorials/lock-provider.md).
+Leer meer over [&#x200B; de Configuratie van de Leverancier van het Slot &#x200B;](../../installation/tutorials/lock-provider.md).
 
 ## MAGE_MODE
 
@@ -237,7 +237,7 @@ De opstellen wijze kan in deze knoop worden gevormd.
 'MAGE_MODE' => 'developer'
 ```
 
-Leer meer over [ toepassingswijzen ](../cli/set-mode.md).
+Leer meer over [&#x200B; toepassingswijzen &#x200B;](../cli/set-mode.md).
 
 ## wachtrij
 
@@ -252,7 +252,7 @@ De de rijconfiguraties van het bericht zijn beschikbaar in deze knoop. U kunt Ra
 ]
 ```
 
-Leer meer over [ Rij van het Bericht ](https://developer.adobe.com/commerce/php/development/components/message-queues/).
+Leer meer over [&#x200B; Rij van het Bericht &#x200B;](https://developer.adobe.com/commerce/php/development/components/message-queues/).
 
 ## resource
 
@@ -276,7 +276,7 @@ Sessieconfiguraties worden opgeslagen in het knooppunt `session` .
 ],
 ```
 
-Leer meer over [ Zitting ](../storage/sessions.md).
+Leer meer over [&#x200B; Zitting &#x200B;](../storage/sessions.md).
 
 ## x-frame-opties
 
@@ -286,7 +286,7 @@ De header x-frame-options kan worden geconfigureerd met dit knooppunt.
 'x-frame-options' => 'SAMEORIGIN'
 ```
 
-Leer meer over [ x-kader-opties ](../security/xframe-options.md).
+Leer meer over [&#x200B; x-kader-opties &#x200B;](../security/xframe-options.md).
 
 ## systeem
 
@@ -303,7 +303,7 @@ Met dit knooppunt worden de configuratiewaarden in het `env.php` -bestand vergre
   ]
 ```
 
-Leer meer in [ env-php-config-reeks ](../cli/set-configuration-values.md).
+Leer meer in [&#x200B; env-php-config-reeks &#x200B;](../cli/set-configuration-values.md).
 
 
 

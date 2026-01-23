@@ -31,13 +31,13 @@ Dit onderwerp biedt een overzicht op hoog niveau van de manier waarop gegevens w
 1. **Wijze van Gegevens**: migreert gegevensbestandactiva in bulk.
 1. **Wijze van Delta**: migreert stijgende veranderingen (veranderingen sinds de laatste looppas), zoals nieuwe klanten en orden.
 
-![ de Wijzen van de Migratie ](../../assets/data-migration/MigrationModes2.png)
+![&#x200B; de Wijzen van de Migratie &#x200B;](../../assets/data-migration/MigrationModes2.png)
 
 ## Stappen
 
-[!DNL Data Migration Tool] gebruikt een lijst van *stappen* binnen elke wijze om een bepaald type van gegevens te migreren. In de modus Instellingen worden bijvoorbeeld twee stappen gebruikt om alle instellingsgegevens te migreren: de stap Opslag en de stap Instellingen. De details over de specifieke gegevens die in elk van deze stappen (en voor stappen in de andere wijzen) worden gemigreerd, kunnen in de [[!DNL Data Migration Tool]  Technische Specificatie ](technical-specification.md) worden gevonden.
+[!DNL Data Migration Tool] gebruikt een lijst van *stappen* binnen elke wijze om een bepaald type van gegevens te migreren. In de modus Instellingen worden bijvoorbeeld twee stappen gebruikt om alle instellingsgegevens te migreren: de stap Opslag en de stap Instellingen. De details over de specifieke gegevens die in elk van deze stappen (en voor stappen in de andere wijzen) worden gemigreerd, kunnen in de [[!DNL Data Migration Tool]  Technische Specificatie &#x200B;](technical-specification.md) worden gevonden.
 
-![ Overzicht van de Migratie ](../../assets/data-migration/MigrationOverview2.png)
+![&#x200B; Overzicht van de Migratie &#x200B;](../../assets/data-migration/MigrationOverview2.png)
 
 ## Staven
 
@@ -47,7 +47,7 @@ Binnen elke stap zijn drie *stadia* die altijd in deze orde worden uitgevoerd om
 1. **Overdracht van Gegevens**: Brengt de gegevenslijst door lijst van Magento 1 en 2 over.
 1. **Controle van het Volume**: Vergelijkt het aantal verslagen tussen lijsten om te verifiëren dat de overdracht succesvol was.
 
-![ de stadia van de Migratie ](../../assets/data-migration/MigrationSteps2.png)
+![&#x200B; de stadia van de Migratie &#x200B;](../../assets/data-migration/MigrationSteps2.png)
 
 ## Bestanden toewijzen
 
@@ -61,7 +61,7 @@ De dossiers van de toewijzing worden besproken meer in detail in [[!DNL Data Mig
 
 ## Migratiestroomdiagram
 
-![ Stroom van de Migratie ](../../assets/data-migration/migration_flow.png)
+![&#x200B; Stroom van de Migratie &#x200B;](../../assets/data-migration/migration_flow.png)
 
 [[!DNL Data Migration Tool] Technische specificaties](technical-specification.md)
 
@@ -77,15 +77,15 @@ Wij hebben **Magento 2[!DNL Data Migration Tool]** ontwikkeld om u te helpen eff
 
 ### Extensies en aangepaste code
 
-We hebben hard samengewerkt met de ontwikkelingsgemeenschap om u te helpen uw Magento 1-extensies te gebruiken in Magento 2. Nu zijn wij trots om [ Commerce Marketplace ](https://commercemarketplace.adobe.com//) voor te stellen, waar u de recentste versies van uw favoriete uitbreidingen kunt downloaden of kopen.
+We hebben hard samengewerkt met de ontwikkelingsgemeenschap om u te helpen uw Magento 1-extensies te gebruiken in Magento 2. Nu zijn wij trots om [&#x200B; Commerce Marketplace &#x200B;](https://commercemarketplace.adobe.com//) voor te stellen, waar u de recentste versies van uw favoriete uitbreidingen kunt downloaden of kopen.
 
-Meer informatie bij het ontwikkelen van uitbreidingen voor Magento 2 is beschikbaar in de [ Gids van de Ontwikkelaar PHP ](https://developer.adobe.com/commerce/php/development/).
+Meer informatie bij het ontwikkelen van uitbreidingen voor Magento 2 is beschikbaar in de [&#x200B; Gids van de Ontwikkelaar PHP &#x200B;](https://developer.adobe.com/commerce/php/development/).
 
 ### Thema&#39;s en aanpassingen
 
-Magento 2 maakt gebruik van nieuwe benaderingen en technologieën die handelaren een ongeëvenaarde mogelijkheid bieden om innovatieve boodschappenervaringen te creëren en op een hoger niveau te schalen. Om van deze vooruitgang te profiteren, moeten de ontwikkelaars veranderingen in hun thema&#39;s en aanpassingen aanbrengen. De documentatie is online beschikbaar voor het creëren van Magento 2 [ thema&#39;s ](https://developer.adobe.com/commerce/frontend-core/guide/themes/), [ lay-outs ](https://developer.adobe.com/commerce/frontend-core/guide/layouts/), en [ aanpassingen ](https://developer.adobe.com/commerce/frontend-core/guide/layouts/xml-manage/).
+Magento 2 maakt gebruik van nieuwe benaderingen en technologieën die handelaren een ongeëvenaarde mogelijkheid bieden om innovatieve boodschappenervaringen te creëren en op een hoger niveau te schalen. Om van deze vooruitgang te profiteren, moeten de ontwikkelaars veranderingen in hun thema&#39;s en aanpassingen aanbrengen. De documentatie is online beschikbaar voor het creëren van Magento 2 [&#x200B; thema&#39;s &#x200B;](https://developer.adobe.com/commerce/frontend-core/guide/themes/), [&#x200B; lay-outs &#x200B;](https://developer.adobe.com/commerce/frontend-core/guide/layouts/), en [&#x200B; aanpassingen &#x200B;](https://developer.adobe.com/commerce/frontend-core/guide/layouts/xml-manage/).
 
 ## Migratiepogingen
 
 Net als bij een upgrade tussen 1.x-versies (bijvoorbeeld van v1.12 naar v1.14), is de mate van inspanning voor het migreren van Magento 1 naar Magento 2 afhankelijk van de manier waarop u uw site hebt gemaakt en het niveau van aanpassing.
-Nochtans, verbeteren wij constant [!DNL Data Migration Tool] (zie [ Changelog ](https://github.com/magento/data-migration-tool/blob/2.3/CHANGELOG.md) voor meer details); zodat nemen de migratieinspanningen voortdurend af.
+Nochtans, verbeteren wij constant [!DNL Data Migration Tool] (zie [&#x200B; Changelog &#x200B;](https://github.com/magento/data-migration-tool/blob/2.3/CHANGELOG.md) voor meer details); zodat nemen de migratieinspanningen voortdurend af.

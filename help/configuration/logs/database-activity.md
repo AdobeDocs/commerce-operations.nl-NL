@@ -14,12 +14,12 @@ ht-degree: 0%
 
 In het volgende voorbeeld ziet u hoe u databaseactiviteiten kunt registreren met de `[Magento\Framework\DB\LoggerInterface](https://github.com/magento/magento2/blob/2.4.8/lib/internal/Magento/Framework/DB/LoggerInterface.php)` , die twee implementaties heeft:
 
-- Er wordt niets geregistreerd (standaard): [`Magento\Framework\DB\Logger\Quiet` ](https://github.com/magento/magento2/blob/2.4.8/lib/internal/Magento/Framework/DB/Logger/Quiet.php)
-- Logs to the `var/log` directory: [`Magento\Framework\DB\Logger\File` ](https://github.com/magento/magento2/blob/2.4.8/lib/internal/Magento/Framework/DB/Logger/File.php)
+- Er wordt niets geregistreerd (standaard): [`Magento\Framework\DB\Logger\Quiet` &#x200B;](https://github.com/magento/magento2/blob/2.4.8/lib/internal/Magento/Framework/DB/Logger/Quiet.php)
+- Logs to the `var/log` directory: [`Magento\Framework\DB\Logger\File` &#x200B;](https://github.com/magento/magento2/blob/2.4.8/lib/internal/Magento/Framework/DB/Logger/File.php)
 
 >[!TIP]
 >
->U kunt Commerce CLI gebruiken om [ gegevensbestand het registreren ](../cli/enable-logging.md#database-logging) toe te laten en onbruikbaar te maken.
+>U kunt Commerce CLI gebruiken om [&#x200B; gegevensbestand het registreren &#x200B;](../cli/enable-logging.md#database-logging) toe te laten en onbruikbaar te maken.
 
 Als u de standaardconfiguratie van `\Magento\Framework\DB\Logger\LoggerProxy` wilt wijzigen, bewerkt u uw `app/etc/di.xml` .
 

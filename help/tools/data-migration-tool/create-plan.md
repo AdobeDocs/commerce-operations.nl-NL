@@ -24,7 +24,7 @@ Migratie is een goed moment om serieuze wijzigingen aan te brengen en uw site kl
 
 * Hebt u vastgesteld of u al deze extensies op uw nieuwe site nodig hebt? Er kunnen oude zijn die u veilig kunt verwijderen.
 
-* Hebt u vastgesteld of er Magento 2-versies van uw extensies bestaan? Bezoek [ Commerce Marketplace ](https://commercemarketplace.adobe.com/) om de recentste versies te vinden of uw uitbreidingsleverancier te contacteren.
+* Hebt u vastgesteld of er Magento 2-versies van uw extensies bestaan? Bezoek [&#x200B; Commerce Marketplace &#x200B;](https://commercemarketplace.adobe.com/) om de recentste versies te vinden of uw uitbreidingsleverancier te contacteren.
 
 * Welke database-elementen van uw extensies wilt u migreren?
 
@@ -32,9 +32,9 @@ Migratie is een goed moment om serieuze wijzigingen aan te brengen en uw site kl
 
 * Stel een Magento 2-hardwaresysteem in met een topologie en een ontwerp die ten minste overeenkomen met uw bestaande Magento 1-systeem
 
-* Installeer Magento 2 (met alle modules van deze versie) en [!DNL Data Migration Tool] op een systeem dat aan de [ systeemvereisten ](../../installation/system-requirements.md) voldoet
+* Installeer Magento 2 (met alle modules van deze versie) en [!DNL Data Migration Tool] op een systeem dat aan de [&#x200B; systeemvereisten &#x200B;](../../installation/system-requirements.md) voldoet
 
-* Pas de [!DNL Data Migration Tool] -code aan om bepaalde gegevens over te slaan (zoals CMS-pagina&#39;s, verkoopregels) of om aanpassingen tijdens de migratie om te zetten. Lees de [!DNL Data Migration Tool] Technische Specificatie van 0} [ om meer over te leren hoe de migratie werkt](technical-specification.md)
+* Pas de [!DNL Data Migration Tool] -code aan om bepaalde gegevens over te slaan (zoals CMS-pagina&#39;s, verkoopregels) of om aanpassingen tijdens de migratie om te zetten. Lees de [!DNL Data Migration Tool] Technische Specificatie van 0&rbrace; [&#x200B; om meer over te leren hoe de migratie werkt](technical-specification.md)
 
 ## Stap 3: Droge run
 
@@ -74,7 +74,7 @@ Voer bij dergelijke migratietests de volgende stappen uit:
 
    Als bepaalde extensies gegevens bevatten die u wilt migreren, moet u deze extensies mogelijk installeren, aangepast voor Magento 2. Als de structuur van de extensies anders is in de Magento 2-database, gebruikt u de toewijzingsbestanden die bij de [!DNL Data Migration Tool] worden geleverd.
 
-1. Alle Magento 2-indexen opnieuw indexeren. Voor details, zie [ indexeerders ](../../configuration/cli/manage-indexers.md) in de _gids van de Configuratie_ leiden.
+1. Alle Magento 2-indexen opnieuw indexeren. Voor details, zie [&#x200B; indexeerders &#x200B;](../../configuration/cli/manage-indexers.md) in de _gids van de Configuratie_ leiden.
 
 ## Stap 5: Breng wijzigingen aan in de gemigreerde gegevens (indien nodig)
 
@@ -106,7 +106,7 @@ Zodra uw Magento 2-site volledig is gemigreerd en normaal functioneert, voltooit
 
 1. Start je Magento 2 cron-taken.
 
-1. In uw Magento 2-systeem moet u de aandelenindex opnieuw indexeren. Voor meer informatie, zie [ indexeerders ](../../configuration/cli/manage-indexers.md) in de _gids van de Configuratie_ leiden.
+1. In uw Magento 2-systeem moet u de aandelenindex opnieuw indexeren. Voor meer informatie, zie [&#x200B; indexeerders &#x200B;](../../configuration/cli/manage-indexers.md) in de _gids van de Configuratie_ leiden.
 
 1. Met een hulpprogramma van uw keuze kunt u pagina&#39;s in uw Magento 2-systeem slaan om pagina&#39;s in cache te plaatsen voor klanten die uw winkel gebruiken.
 
