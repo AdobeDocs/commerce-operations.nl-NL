@@ -53,7 +53,7 @@ Deze pagina bevat de wijzigingen die in de afgelopen 60 dagen zijn aangebracht. 
   </thead>
   <tbody>
     <tr>
-      <td><p>Voegt de <a href="https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-67/acsd-65935-customerorders-graphql-query-returned-an-internal-server-error-when-a-product-was-deleted"> gedetailleerde beschrijving van de kwestie toe die door ACSD-65935 flard in QPT 1.1.67 versie </a> wordt bevestigd.</p>
+      <td><p>Voegt de <a href="https://experienceleague.adobe.com/nl/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-67/acsd-65935-customerorders-graphql-query-returned-an-internal-server-error-when-a-product-was-deleted"> gedetailleerde beschrijving van de kwestie toe die door ACSD-65935 flard in QPT 1.1.67 versie </a> wordt bevestigd.</p>
 </td>
       <td>
         Nieuw onderwerp, qpt
@@ -61,7 +61,7 @@ Deze pagina bevat de wijzigingen die in de afgelopen 60 dagen zijn aangebracht. 
       <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/8921d17196230f97b6f940621e8236c5d85e1b9f">begaan</a></td>
     </tr>
     <tr>
-      <td><p>Toegevoegde gedetailleerde beschrijving van QPT 1.1.73 moeilijke situatie voor <a href="https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-73/acsd-68190"> ACSD-68190: Kortingen zijn niet van toepassing, toegepaste kortingen tonen niet correct in de reactie van de het kartonmening van GraphQL, en non-coupon kortingen worden verwijderd bij het verwijderen van een couponkorting </a>.</p>
+      <td><p>Toegevoegde gedetailleerde beschrijving van QPT 1.1.73 moeilijke situatie voor <a href="https://experienceleague.adobe.com/nl/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-73/acsd-68190"> ACSD-68190: Kortingen zijn niet van toepassing, toegepaste kortingen tonen niet correct in de reactie van de het kartonmening van GraphQL, en non-coupon kortingen worden verwijderd bij het verwijderen van een couponkorting </a>.</p>
 </td>
       <td>
         Nieuw onderwerp, qpt
