@@ -2,7 +2,7 @@
 title: Redis configureren met AWS ElastiCache
 description: Voor Commerce-instanties die worden gehost op EC2, leert u hoe u AWS ElastiCache gebruikt in plaats van een lokale Redis-instantie. Ontdek opdrachtregelopstelling, configuratieopties en validatietechnieken.
 feature: Configuration, Cache
-source-git-commit: 908796587e78b80d699354c0506ca948d0f37518
+source-git-commit: b66479ee1350d92c1d59212283222e5068c263a6
 workflow-type: tm+mt
 source-wordcount: '293'
 ht-degree: 0%
@@ -20,7 +20,7 @@ Vanaf Commerce 2.4.3 kunnen instanties die worden gehost op Amazon EC2 een AWS E
 
 ## Vereisten
 
-- **creeer een Redis OSS serverless geheime voorgeheugen** - van de Console van het Beheer van AWS, creeer het geheime voorgeheugen van Redis in het zelfde gebied en VPC van de instantie EC2. Voor instructies, zie de [ documentatie van Elasticache van AWS ] (https://docs.aws.amazon.com/AmazonElastiCache/latest/dg/GettingStarted.serverless-redis.step1.html.
+- **creeer een Redis OSS serverless geheime voorgeheugen** - van de Console van het Beheer van AWS, creeer het geheime voorgeheugen van Redis in het zelfde gebied en VPC van de instantie EC2. Voor instructies, zie de [ documentatie van Elasticache van AWS ](https://docs.aws.amazon.com/AmazonElastiCache/latest/dg/GettingStarted.serverless-redis.step1.html).
 
 - **verifieer de verbinding aan uw instantie van EC2 Commerce**
 
@@ -75,4 +75,4 @@ bin/magento setup:config:set --session-save=redis --session-save-redis-host=<Ela
    ```
 
 1. Open een pagina in de gebruikersinterface van Commerce.
-1. Verifieer de [&#x200B; geheim voorgeheugenoutput &#x200B;](#verify-the-redis-connection) in uw terminal.
+1. Verifieer de [ geheim voorgeheugenoutput ](#verify-the-redis-connection) in uw terminal.
