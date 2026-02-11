@@ -4,9 +4,9 @@ description: Deze subsectie verstrekt een gedetailleerde beschrijving van de kwe
 feature: Tools and External Services
 role: Admin, Developer
 type: Troubleshooting
-source-git-commit: d952deb1c82ce0d99c3e13909cfc18b7a48034c3
+source-git-commit: 588320e7221f492cd8c3f50e4175eadf4d1b7cfe
 workflow-type: tm+mt
-source-wordcount: '308'
+source-wordcount: '299'
 ht-degree: 0%
 
 ---
@@ -21,7 +21,7 @@ QPT v1.1.75 omvat de volgende flarden:
 1. **ACSD-68451**: Verhelpt een kwestie voor veelvoudige websites waar een bedrijfadmin zich op één website aanmeldt, leidt tot een niet-gerelateerd bedrijf op een andere website, maar verkeerd verbonden met dat niet verwante bedrijf.
 1. **ACSD-68490**: **[!UICONTROL Add New Attribute]** knoop zichtbaar aan beperkte admin tijdens configureerbare productverwezenlijking.
 1. **ACSD-68517**: Bevestigt een fout van het vormopnieuw voorleggen op de pagina&#39;s van het Onderzoek van de Catalogus en van de Catalogus.
-1. **ACSD-68573**: Verhelpt de kwestie waar de categorietoestemmingen niet behoorlijk op punten van de klantenwenslijst werden toegepast. Na de correctie worden de items in de wenslijst correct weergegeven en gepagineerd op het web en in GraphQL.
+1. **ACSD-68573**: De toestemmingen van de categorie werden niet toegepast op punten van de klantenwenslijst, veroorzakend onjuiste vertoning en paginering op het Webopslag en in [!DNL GraphQL].
 1. **ACSD-68615**: Verhelpt de kwestie waar de compensatie CLI van de inventarisreserve een uitzondering toonde als de verwerkte combinatie een ontbrekende orde identiteitskaart had.
 1. **ACSD-68793**: Verhelpt een kwestie waar de geldige producten verkeerd werden verworpen toen het toewijzen van hen aan een gedeelde catalogus.
 1. **ACSD-68925**: Verhelpt een kwestie waar de reacties voor de verzoeken van GraphQL nu met GraphQL over HTTP specs worden gericht. Een 4XX antwoordcode is teruggekeerd wanneer het verzoek niet kan worden ontleed, onbevoegd is, of een algemeen probleem ontmoet als het verzoek wordt ontleed.
