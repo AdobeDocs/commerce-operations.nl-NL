@@ -4,7 +4,7 @@ description: Deze subsectie biedt een gedetailleerde beschrijving van de problem
 feature: Tools and External Services
 role: Admin, Developer
 exl-id: b5b80bfa-a52c-466b-b95c-23590e850aed
-source-git-commit: 8e7cec268cf4d0022cf5037f5effcaa8a13b55ca
+source-git-commit: ac3f3b37b5c5705722b411f92be0ba21c6155449
 workflow-type: tm+mt
 source-wordcount: '179'
 ht-degree: 0%
@@ -16,6 +16,7 @@ ht-degree: 0%
 Deze subsectie bevat een gedetailleerde beschrijving van de problemen die zijn opgelost door de patches die beschikbaar zijn in [!DNL Quality Patches Tool] (QPT) v1.1.66.
 
 QPT v1.1.66 omvat de volgende flarden:
+
 1. **ACP2E-3918**: De mislukking van de Controle voor bedrijfklanten die in-store bestelwagen gebruiken.
 1. **ACP2E-3789**: De dossiers van media gedupliceerd op productupdate via WebAPI.
 1. **ACSD-65750**: De &quot;route&quot;vraag van GraphQL keerde producten uit orde in de inhoudstypen van de Producten van de Bouwer van de Pagina terug.

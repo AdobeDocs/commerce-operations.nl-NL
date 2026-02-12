@@ -4,9 +4,9 @@ description: Deze subsectie biedt een gedetailleerde beschrijving van de problem
 feature: Tools and External Services
 role: Admin, Developer
 exl-id: 39af00ed-3559-462e-9627-e32d6e7c71a8
-source-git-commit: e72c99bbb5e82cd2dc77e33b7d17dfe8955e945a
+source-git-commit: ac3f3b37b5c5705722b411f92be0ba21c6155449
 workflow-type: tm+mt
-source-wordcount: '278'
+source-wordcount: '257'
 ht-degree: 0%
 
 ---
@@ -16,17 +16,16 @@ ht-degree: 0%
 Deze subsectie bevat een gedetailleerde beschrijving van de problemen die zijn opgelost door de patches die beschikbaar zijn in [!DNL Quality Patches Tool] (QPT) v1.1.69.
 
 QPT v1.1.69 omvat de volgende flarden:
+
 1. **AC-15223**: De pagina van de Storefront toont caching inhoud na omschakelingsopslag.
 1. **ACP2E-3731**: De uitvoer van het product met *[!UICONTROL Catalog, Search]* zicht omvat verslagen van andere archiefmeningen.
 1. **ACP2E-3767**: De laatste bundeloptie verschijnt na het opslaan van een bundelproduct.
 1. **ACP2E-3964**: Configurable kindproducten met video die niet via REST API wordt vermeld.
 1. **ACP2E-3977**: **[!UICONTROL Cap Reward Points Balance At]** kan niet leeg worden verlaten.
 1. **ACP2E-4050**: **[!UICONTROL Free Shipping]** wordt niet toegepast met multi-adrescontrole.
-1. **ACP2E-3977**: [!UICONTROL Cap Reward Points Balance At] het gebied kan niet leeg worden verlaten.
-1. **ACP2E-4050**: De prijsregels van de auto ontbreken voor multi-verschepen met bundelproducten en vrije verzending.
 1. **ACSD-56226**: De vragen van de LEZING keren verouderde gegevens met `synchronous_replication` toegelaten terug.
 1. **ACSD-57477**: De verwerking van de regel van de verkoop vertraagt prestaties op kar-verwante verzoeken.
-1. **[ACSD-58108](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-69/acsd-58108-missing-join-table-name-causes-sql-errors-in-order-grid-custom-module-extension.md)**: Het ontbreken sluit zich bij lijstnaam veroorzaakt SQL fouten in de uitbreiding van de de douanemodule van het ordenset.
+1. **ACSD-58108**: Het ontbreken sluit zich bij lijstnaam veroorzaakt SQL fouten in de uitbreiding van de de douanemodule van het ordenset.
 1. **ACSD-65983**: De fout komt voor wanneer het opnieuw vormen van gebundeld productcitaat in Admin.
 1. **ACSD-66149**: De manager van IPN keert 500 voor niet gesteunde types terug.
 1. **ACSD-66153**: De pagina keert 500 fout wegens caching onjuiste lay-outstructuur terug.

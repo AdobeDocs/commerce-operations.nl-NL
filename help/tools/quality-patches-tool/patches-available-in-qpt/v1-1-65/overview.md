@@ -5,7 +5,7 @@ feature: Tools and External Services
 role: Admin, Developer
 type: Troubleshooting
 exl-id: 6cfe4f4c-cdb3-49b3-84d0-ad794dfcafc3
-source-git-commit: 9acccaadf718775430e858da3390e666633ecbd7
+source-git-commit: ac3f3b37b5c5705722b411f92be0ba21c6155449
 workflow-type: tm+mt
 source-wordcount: '162'
 ht-degree: 0%
@@ -17,6 +17,7 @@ ht-degree: 0%
 Deze subsectie bevat een gedetailleerde beschrijving van de problemen die zijn opgelost door de patches die beschikbaar zijn in [!DNL Quality Patches Tool] (QPT) v1.1.65.
 
 QPT v1.1.65 omvat de volgende flarden:
+
 1. **ACP2E-3753**: De waakzame e-mails van de voorraad die geen opslag-specifieke themasjablonen in multi-store opstelling gebruiken.
 1. **ACSD-64118**: Het gelijktijdig product sparen verzoeken voor het zelfde product veroorzaakt gegevensinconsistentie en dubbele ingangen.
 1. **ACSD-64813**: Het ongedaan maken van het toewijzen van categorieën in B2B gedeelde catalogus via REST API is langzaam.
