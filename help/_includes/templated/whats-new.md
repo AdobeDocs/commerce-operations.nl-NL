@@ -23,7 +23,7 @@ Deze pagina bevat de wijzigingen die in de afgelopen 60 dagen zijn aangebracht. 
   </thead>
   <tbody>
     <tr>
-      <td><p>Toegevoegde gedetailleerde beschrijving van QPT 1.1.75 moeilijke situatie voor <a href="https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-75/acsd-68517"> ACSD-68517: Vestigt een fout van de vormherindiening op de pagina's van het Onderzoek van de Catalogus en van de Catalogus </a> op.</p>
+      <td><p>Toegevoegde gedetailleerde beschrijving van QPT 1.1.75 moeilijke situatie voor <a href="https://experienceleague.adobe.com/nl/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-75/acsd-68517"> ACSD-68517: Vestigt een fout van de vormherindiening op de pagina's van het Onderzoek van de Catalogus en van de Catalogus </a> op.</p>
 </td>
       <td>
         Nieuw onderwerp, qpt
@@ -53,7 +53,7 @@ Deze pagina bevat de wijzigingen die in de afgelopen 60 dagen zijn aangebracht. 
       <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/8ee6404271170b19ff27a3ab64711061505494b3">begaan</a></td>
     </tr>
     <tr>
-      <td><p>Toegevoegd <a href="https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-76/overview"> Overzicht: Het Hulpmiddel van de Patronen van de Kwaliteit (QPT) v1.1.76 </a>.</p>
+      <td><p>Toegevoegd <a href="https://experienceleague.adobe.com/nl/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-76/overview"> Overzicht: Het Hulpmiddel van de Patronen van de Kwaliteit (QPT) v1.1.76 </a>.</p>
 </td>
       <td>
         Nieuw onderwerp, qpt

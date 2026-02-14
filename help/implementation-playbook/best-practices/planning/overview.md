@@ -42,7 +42,7 @@ De volgende secties omvatten beste praktijkinformatie voor de planningsfase.
     <td>Configureer sites, sla weergaven op en sla ze op om de prestaties van de site te maximaliseren.</td>
   </tr>
   <tr>
-    <td><a href="https://business.adobe.com/blog/how-to/the-usual-suspects-5-configuration-issues-to-maximize-your-peak-sales">Algemene configuratieproblemen</a></td>
+    <td><a href="https://business.adobe.com/nl/blog/how-to/the-usual-suspects-5-configuration-issues-to-maximize-your-peak-sales">Algemene configuratieproblemen</a></td>
     <td>Los en verhinder de vijf gemeenschappelijkste configuratiekwesties voor de plaatsen van Adobe Commerce.</td>
   </tr>
   <tr>

@@ -71,7 +71,7 @@ De volgende secties bevatten informatie over best practices voor de onderhoudsfa
 | Beste praktijken | Beschrijving |
 |-------------------------------------------------------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------|
 | [&#x200B; controle frontend prestaties &#x200B;](frontend-performance.md) | Identificeer en verhelp problemen die de prestaties van de site negatief beïnvloeden met behulp van webprestatiegereedschappen. |
-| [&#x200B; Klaar, Reeks, handhaaf &#x200B;](https://business.adobe.com/blog/basics/ready-set-maintain) | Tips voor het onderhoud van uw Adobe Commerce-sites om uw bedrijfswaarde en uptime te maximaliseren. |
+| [&#x200B; Klaar, Reeks, handhaaf &#x200B;](https://business.adobe.com/nl/blog/basics/ready-set-maintain) | Tips voor het onderhoud van uw Adobe Commerce-sites om uw bedrijfswaarde en uptime te maximaliseren. |
 | [&#x200B; gebruik  [!DNL Site-Wide Analysis Tool]](../../../tools/site-wide-analysis-tool/intro.md#integrations-with-other-adobe-commerce-support-tools) | Bekijk op één plaats belangrijke inzichten over je Adobe Commerce-site. |
 | [&#x200B; de prestaties van de Monitor, schijfruimte, en logboeken &#x200B;](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/monitor/performance.html?lang=nl-NL) | Gebruik New Relic om belangrijke prestatiegegevens van uw Adobe Commerce op de cloudinframesite te controleren. |
 | [&#x200B; Reageer op veiligheidsincidenten &#x200B;](respond-to-security-incident.md) | Gebruik New Relic om belangrijke prestatiegegevens van uw Adobe Commerce op de cloudinframesite te controleren. |

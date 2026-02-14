@@ -226,7 +226,7 @@ Volg de onderstaande richtlijnen om ervoor te zorgen dat de PCI-compatibiliteit 
 
 >[!TIP]
 >
->Voor gedetailleerde begeleiding, zie [&#x200B; best practices van het onderhoud &#x200B;](overview.md), [&#x200B; verpersoonlijking &#x200B;](https://business.adobe.com/blog/the-latest/adobe-commerce-continues-investment-in-composable-development-tools-and-ai-powered-personalization), en [&#x200B; eigenschapontwikkeling &#x200B;](https://business.adobe.com/blog/the-latest/adobe-commerce-continues-investment-in-composable-development-tools-and-ai-powered-personalization).
+>Voor gedetailleerde begeleiding, zie [&#x200B; best practices van het onderhoud &#x200B;](overview.md), [&#x200B; verpersoonlijking &#x200B;](https://business.adobe.com/nl/blog/the-latest/adobe-commerce-continues-investment-in-composable-development-tools-and-ai-powered-personalization), en [&#x200B; eigenschapontwikkeling &#x200B;](https://business.adobe.com/nl/blog/the-latest/adobe-commerce-continues-investment-in-composable-development-tools-and-ai-powered-personalization).
 
 ### Rapportage en analyse
 

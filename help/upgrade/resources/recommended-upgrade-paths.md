@@ -20,7 +20,7 @@ Een implementatie van eCommerce is evolutie-het is nooit echt gebeëindigd. Uw b
 - Betere ontwikkelaarservaring en beter gereedschap
 - Vermogen om dieper met andere toepassingen van Adobe Experience Cloud te integreren
 
-Om onze handelaren van meer flexibiliteit te voorzien wanneer het plannen van verbeteringen, hebben wij onlangs het Adobe Commerce [&#x200B; versieschema &#x200B;](../../release/schedule.md) bijgewerkt, het 2.3 Eind van Steun (EOS) datum, uitgebreid en nieuwe uitgebreide steunopties voor geselecteerde versies van onze software aangekondigd. Voor meer informatie over deze updates, zie [&#x200B; Uitgebreide steun voor Adobe Commerce &#x200B;](https://business.adobe.com/blog/the-latest/adobe-announces-expanded-support).
+Om onze handelaren van meer flexibiliteit te voorzien wanneer het plannen van verbeteringen, hebben wij onlangs het Adobe Commerce [&#x200B; versieschema &#x200B;](../../release/schedule.md) bijgewerkt, het 2.3 Eind van Steun (EOS) datum, uitgebreid en nieuwe uitgebreide steunopties voor geselecteerde versies van onze software aangekondigd. Voor meer informatie over deze updates, zie [&#x200B; Uitgebreide steun voor Adobe Commerce &#x200B;](https://business.adobe.com/nl/blog/the-latest/adobe-announces-expanded-support).
 
 Hieronder vindt u upgradepaden die door Adobe Commerce worden aanbevolen om uw site veilig en presterend te houden terwijl u een upgrade uitvoert naar een van de meest recente versies.
 
