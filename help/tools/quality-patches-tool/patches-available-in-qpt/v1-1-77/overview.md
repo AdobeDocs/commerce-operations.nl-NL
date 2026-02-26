@@ -4,7 +4,7 @@ description: Deze subsectie verstrekt een gedetailleerde beschrijving van de kwe
 feature: Tools and External Services
 role: Admin, Developer
 type: Troubleshooting
-source-git-commit: 4ee77d46bb32afcfd7fd12cfbc4a5111c247bed4
+source-git-commit: ba9d41179fe253634b9de3e3711c19b6fe797a69
 workflow-type: tm+mt
 source-wordcount: '191'
 ht-degree: 0%
@@ -18,7 +18,7 @@ Deze subsectie bevat een gedetailleerde beschrijving van de problemen die zijn o
 QPT v1.1.77 omvat de volgende flarden:
 
 1. **ACSD-63687**: De onjuiste prijzen worden getoond toe te schrijven aan [!DNL Redis] geheim voorgeheugenschoonmaakproblemen.
-1. **ACSD-68341**: De veelvoudige `X‑Magento‑Vary` koekjesupdates komen op lading PDP voor.
+1. **[ACSD-68341](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-77/acsd-68341.md)**: De veelvoudige `X‑Magento‑Vary` koekjesupdates komen op lading PDP voor.
 1. **ACSD-68537**: De prestaties van de kassa degraderen met vele klantensegmenten.
 1. **ACSD-68664**: De geplande updatevoorproef heeft fouten op de domeinen van de douaneopslag.
 1. **ACSD-68759**: De fout van de de rekeningsverwezenlijking van de klant met Arabische scène wanneer de Datum van Macht wordt getoond.
