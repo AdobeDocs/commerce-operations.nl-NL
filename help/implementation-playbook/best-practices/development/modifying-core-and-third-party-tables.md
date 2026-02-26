@@ -54,7 +54,7 @@ Twee voorbeelden van opslaglocaties zijn databasetabellen en [!DNL Redis] . Bij 
 
 Als ontwikkelaar is het van essentieel belang om altijd te overwegen om hulpprogramma&#39;s te gebruiken buiten uw [!DNL Adobe Commerce] -omgeving, zoals GraphQL mesh en Adobe App Builder. Deze hulpmiddelen kunnen u helpen toegang tot de gegevens behouden maar hebben geen invloed op de kernhandelstoepassing of zijn onderliggende gegevensbestandlijsten. Met deze aanpak maakt u uw gegevens beschikbaar via een API. Vervolgens voegt u een gegevensbron toe aan uw App Builder-configuratie. Gebruikend het Net van GraphQL, kunt u die gegevensbronnen combineren en één enkele reactie produceren zoals vermeld in [&#x200B; erfenisgegevens &#x200B;](#legacy-data).
 
-Voor extra details op het net van GraphQL, zie [&#x200B; Gateway van het Net van GraphQL &#x200B;](https://developer.adobe.com/graphql-mesh-gateway/){target="_blank"}. Voor informatie over Adobe App Builder, zie [&#x200B; Introducerend App Builder &#x200B;](https://experienceleague.adobe.com/docs/adobe-developers-live-events/events/2021/oct2021/introduction-app-builder.html){target="_blank"}.
+Voor extra details op het net van GraphQL, zie [&#x200B; Gateway van het Net van GraphQL &#x200B;](https://developer.adobe.com/graphql-mesh-gateway/){target="_blank"}. Voor informatie over Adobe App Builder, zie [&#x200B; Introducerend App Builder &#x200B;](https://experienceleague.adobe.com/docs/adobe-developers-live-events/events/2021/oct2021/introduction-app-builder.html?lang=nl-NL){target="_blank"}.
 
 ## Een kerntabel of tabel van derden wijzigen
 
@@ -73,7 +73,7 @@ Adobe raadt u aan de volgende stappen uit te voeren wanneer u een kolom toevoegt
 
    Bijvoorbeeld: `app/code/YourCompany/Customer`
 
-1. Creeer de aangewezen dossiers om de module toe te laten (zie [&#x200B; een module &#x200B;](https://experienceleague.adobe.com/docs/commerce-learn/tutorials/backend-development/create-module.html){target="_blank"} creëren.
+1. Creeer de aangewezen dossiers om de module toe te laten (zie [&#x200B; een module &#x200B;](https://experienceleague.adobe.com/docs/commerce-learn/tutorials/backend-development/create-module.html?lang=nl-NL){target="_blank"} creëren.
 
 1. Maak een bestand met de naam `db_schema.xml` in de map `etc` en breng de gewenste wijzigingen aan.
 
@@ -155,7 +155,7 @@ MariaDB [magento]> SELECT DISTINCT TABLE_NAME FROM INFORMATION_SCHEMA.COLUMNS WH
 
 ## Grote MySQL-tabellen zoeken
 
-Om de grote lijsten te identificeren, verbind met het gegevensbestand zoals die in [&#x200B; wordt beschreven verbindt met het gegevensbestand &#x200B;](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/configure/service/mysql#connect-to-the-database) artikel, en stel het volgende bevel in werking. Gebruik `project_id` voor de productieomgeving. Gebruik `[project_id]_stg`, `[project_id]_stg2` voor testomgevingen.
+Om de grote lijsten te identificeren, verbind met het gegevensbestand zoals die in [&#x200B; wordt beschreven verbindt met het gegevensbestand &#x200B;](https://experienceleague.adobe.com/nl/docs/commerce-cloud-service/user-guide/configure/service/mysql#connect-to-the-database) artikel, en stel het volgende bevel in werking. Gebruik `project_id` voor de productieomgeving. Gebruik `[project_id]_stg`, `[project_id]_stg2` voor testomgevingen.
 
 ```sql
 SELECT TABLE_NAME AS `Table`,
