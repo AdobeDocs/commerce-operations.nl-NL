@@ -4,9 +4,9 @@ description: Deze subsectie verstrekt een gedetailleerde beschrijving van de kwe
 feature: Tools and External Services
 role: Admin, Developer
 type: Troubleshooting
-source-git-commit: cb5efec8e323dbe49fe38a4cf2977718b28c835f
+source-git-commit: f7205d2558f79798cf25c7c51326eae9fcfa8d19
 workflow-type: tm+mt
-source-wordcount: '193'
+source-wordcount: '195'
 ht-degree: 0%
 
 ---
@@ -28,6 +28,6 @@ QPT v1.1.77 omvat de volgende flarden:
 1. **ACSD-69237**: `sales_*_async_insert` de banen van de cron verwerken slechts 100 ingangen per looppas.
 1. **[ACSD-69311](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-77/acsd-69311.md)**: Verhelpt de onjuiste belastingberekening in creditmemo&#39;s na gedeeltelijke terugbetalingen van facturen.
 1. **ACSD-69351**: De saldi van de kaartenrekening van het kaartje en vervaldata die over onjuiste websites worden getoond.
-1. **ACSD-69494**: De verzoeken van de teruggave van Async met `is_online` brengen online geen terugbetalingen teweeg.
+1. **[ACSD-69494](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-77/acsd-69494.md)**: Bevestigt de asynchrone terugbetalingsverzoeken met `is_online` teweegbrengen geen online terugbetalingen.
 
 Gebruik het menu links om naar een specifieke patchpagina te navigeren.
