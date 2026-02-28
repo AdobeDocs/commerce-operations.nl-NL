@@ -31,7 +31,7 @@ Deze pagina bevat de wijzigingen die in de afgelopen 60 dagen zijn aangebracht. 
       <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/c6d81e7aeb4e2b4d2d5a140e9bf7b8c8ba5f5deb">begaan</a></td>
     </tr>
     <tr>
-      <td><p>Toegevoegde gedetailleerde beschrijving van QPT 1.1.77 moeilijke situatie voor <a href="https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-77/acsd-69494"> ACSD-69494: De verzoeken van de teruggave van Async met is_online brengen online geen terugbetalingen </a> teweeg.</p>
+      <td><p>Toegevoegde gedetailleerde beschrijving van QPT 1.1.77 moeilijke situatie voor <a href="https://experienceleague.adobe.com/nl/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-77/acsd-69494"> ACSD-69494: De verzoeken van de teruggave van Async met is_online brengen online geen terugbetalingen </a> teweeg.</p>
 </td>
       <td>
         Nieuw onderwerp, qpt
@@ -39,7 +39,7 @@ Deze pagina bevat de wijzigingen die in de afgelopen 60 dagen zijn aangebracht. 
       <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/29a5f90122336bde78ed00e778b43b7c56549eef">begaan</a></td>
     </tr>
     <tr>
-      <td><p>Toegevoegde gedetailleerde beschrijving van QPT 1.1.77 moeilijke situatie voor <a href="https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-77/acsd-68537"> ACSD-68537: De prestaties van de Controle degraderen met vele klantensegmenten </a>.</p>
+      <td><p>Toegevoegde gedetailleerde beschrijving van QPT 1.1.77 moeilijke situatie voor <a href="https://experienceleague.adobe.com/nl/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-77/acsd-68537"> ACSD-68537: De prestaties van de Controle degraderen met vele klantensegmenten </a>.</p>
 </td>
       <td>
         Nieuw onderwerp, qpt
