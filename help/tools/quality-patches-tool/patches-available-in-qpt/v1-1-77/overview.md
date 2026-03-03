@@ -4,7 +4,7 @@ description: Deze subsectie verstrekt een gedetailleerde beschrijving van de kwe
 feature: Tools and External Services
 role: Admin, Developer
 type: Troubleshooting
-source-git-commit: 77e2401d76a95ff15ba47a3ee0e2c228b2ecd39f
+source-git-commit: da3647e87926e35309a138a9d9aff4dbf44a5334
 workflow-type: tm+mt
 source-wordcount: '197'
 ht-degree: 0%
@@ -20,7 +20,7 @@ QPT v1.1.77 omvat de volgende flarden:
 1. **ACSD-63687**: Verhelpt een kwestie waar de onjuiste prijsvertoning omdat [!DNL Redis] geheim voorgeheugenschoonmaakbeurt ontbreekt.
 1. **ACSD-68341**: De veelvoudige `X‑Magento‑Vary` koekjesupdates komen op lading PDP voor.
 1. **ACSD-68537**: De prestaties van de kassa degraderen met vele klantensegmenten.
-1. **ACSD-68664**: De geplande updatevoorproef heeft fouten op de domeinen van de douaneopslag.
+1. **[ACSD-68664](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-77/acsd-68664.md)**: De geplande updatevoorproef heeft fouten op de domeinen van de douaneopslag.
 1. **ACSD-68759**: De fout van de de rekeningsverwezenlijking van de klant met Arabische scène wanneer de Datum van Macht wordt getoond.
 1. **ACSD-68892**: Het inconsistente [!DNL Fastly] in het voorgeheugen onderbrengende gedrag voor cacheable pagina&#39;s.
 1. **ACSD-69016**: De speciale prijs wordt niet toegepast op websites met verschillende tijdstreken.
