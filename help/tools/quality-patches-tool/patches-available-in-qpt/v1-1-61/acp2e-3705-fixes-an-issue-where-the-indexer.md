@@ -1,13 +1,13 @@
 ---
-title: 'ACP2E-3705: &grave; indexer_update_all_views &grave; de kroonuitvoering ontbreekt wanneer &grave; MAGE_INDEXER_THREADS_COUNT wordt geplaatst'
-description: Pas het ACS2E-3705 flard toe om de kwestie van Adobe Commerce te bevestigen waar de &grave; indexer_update_all_views' kroonuitvoering ontbreekt wanneer &grave; MAGE_INDEXER_THREADS_COUNT &grave; wordt geplaatst.
+title: 'ACP2E-3705: ` indexer_update_all_views ` de kroonuitvoering ontbreekt wanneer ` MAGE_INDEXER_THREADS_COUNT wordt geplaatst'
+description: Pas het ACS2E-3705 flard toe om de kwestie van Adobe Commerce te bevestigen waar de ` indexer_update_all_views' kroonuitvoering ontbreekt wanneer ` MAGE_INDEXER_THREADS_COUNT ` wordt geplaatst.
 feature: Catalog Management, B2B
 role: Admin, Developer
 exl-id: 111325fa-8ed5-45f9-9e68-b52f4425d253
 type: Troubleshooting
-source-git-commit: 7fdb02a6d89d50ea593c5fd99d78101f89198424
+source-git-commit: 8124ce31fbe3a94638fba057419efa7f2a139b84
 workflow-type: tm+mt
-source-wordcount: '326'
+source-wordcount: '336'
 ht-degree: 0%
 
 ---
@@ -16,7 +16,7 @@ ht-degree: 0%
 
 >[!NOTE]
 >
->Dit flard vervangt [&#x200B; ACSD-64112 &#x200B;](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-59/acsd-64112-indexer-update-all-views-cron-execution-fails.md) voor versies 2.4.7 en hierboven.
+>Dit flard vervangt [ ACSD-64112 ](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-59/acsd-64112-indexer-update-all-views-cron-execution-fails.md) voor versies 2.4.7 en hierboven.
 
 De ACP2E-3705-patch verhelpt het probleem waarbij het uitvoeren van de `indexer_update_all_views` -uitsnede mislukt wanneer `MAGE_INDEXER_THREADS_COUNT` wordt ingesteld. Deze patch is beschikbaar wanneer [[!DNL Quality Patches Tool (QPT)]](/help/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches.md) 1.1.61 wordt geïnstalleerd. De patch-id is ACP2E-3705. Dit probleem wordt volgens de planning opgelost in Adobe Commerce 2.4.9.
 
@@ -32,7 +32,7 @@ De ACP2E-3705-patch verhelpt het probleem waarbij het uitvoeren van de `indexer_
 
 >[!NOTE]
 >
->De patch kan van toepassing worden op andere versies met nieuwe [!DNL Quality Patches Tool] versies. Om te controleren of de patch compatibel is met uw Adobe Commerce-versie, werkt u het `magento/quality-patches` -pakket bij naar de meest recente versie en controleert u de compatibiliteit op de [[!DNL Quality Patches Tool] : zoek naar patches op de pagina &#x200B;](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html?lang=nl-NL) . Gebruik de patch-id als een zoekwoord om de patch te zoeken.
+>De patch kan van toepassing worden op andere versies met nieuwe [!DNL Quality Patches Tool] versies. Om te controleren of de patch compatibel is met uw Adobe Commerce-versie, werkt u het `magento/quality-patches` -pakket bij naar de meest recente versie en controleert u de compatibiliteit op de [[!DNL Quality Patches Tool] : zoek naar patches op de pagina ](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html) . Gebruik de patch-id als een zoekwoord om de patch te zoeken.
 
 ## Probleem
 
@@ -40,7 +40,7 @@ De `indexer_update_all_views` bouwstijluitvoering ontbreekt wanneer `MAGE_INDEXE
 
 <u> Stappen om </u> te reproduceren:
 
-1. Pas het QPT flard [&#x200B; ACSD-64112 &#x200B;](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-59/acsd-64112-indexer-update-all-views-cron-execution-fails.md) toe.
+1. Pas het QPT flard [ ACSD-64112 ](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-59/acsd-64112-indexer-update-all-views-cron-execution-fails.md) toe.
 1. Ga naar **[!UICONTROL Admin]** > **[!UICONTROL Stores]** > **[!UICONTROL Configuration]** > **[!UICONTROL Catalog]** > **[!UICONTROL Category permissions]** .
 1. Schakel **[!UICONTROL Category Permissions]** in.
 1. Stel de volgende indexen in op de modus **[!UICONTROL Update on Schedule]** :
@@ -71,11 +71,12 @@ Magento\Framework\DB\Adapter\TableNotFoundException: SQLSTATE[42S02]: Base table
 
 Om individuele flarden toe te passen, gebruik de volgende verbindingen afhankelijk van uw plaatsingsmethode:
 
-* Op locatie Adobe Commerce of Magento Open Source: [[!DNL Quality Patches Tool] > Gebruik &#x200B;](/help/tools/quality-patches-tool/usage.md) in de handleiding [!DNL Quality Patches Tool] .
+* Op locatie Adobe Commerce of Magento Open Source: [[!DNL Quality Patches Tool] > Gebruik ](/help/tools/quality-patches-tool/usage.md) in de handleiding [!DNL Quality Patches Tool] .
 * Adobe Commerce on cloud Infrastructure: Upgrades and Patches > Apply Patches in the Commerce on Cloud Infrastructure guide.
 
 ## Gerelateerde lezing
 
 Meer informatie over [!DNL Quality Patches Tool] vindt u in:
 
-* [[!DNL Quality Patches Tool]: Een zelfbedieningshulpmiddel voor kwaliteitspatches &#x200B;](/help/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches.md) in de gids van Hulpmiddelen.
+* [[!DNL Quality Patches Tool]: Een zelfbedieningshulpmiddel voor kwaliteitspatches ](/help/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches.md) in de gids van Hulpmiddelen.
+* [ het opnieuw indexeren op parallelle wijze ](https://experienceleague.adobe.com/en/docs/commerce-operations/configuration-guide/cli/manage-indexers#reindexing-in-parallel-mode) in de Gids van de Configuratie van Commerce.
