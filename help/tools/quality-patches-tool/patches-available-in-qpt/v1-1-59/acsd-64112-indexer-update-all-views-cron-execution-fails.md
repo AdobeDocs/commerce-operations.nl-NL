@@ -1,6 +1,6 @@
 ---
 title: 'ACSD-64112: De uitvoering van de cron van "indexer_update_all_views" mislukt wanneer "MAGE_INDEXER_THREADS_COUNT" is ingesteld'
-description: Pas het ACSD-64112 flard toe om de kwestie van Adobe Commerce te bevestigen waar de ` indexer_update_all_views' kroonuitvoering ontbreekt wanneer ` MAGE_INDEXER_THREADS_COUNT ` wordt geplaatst.
+description: Pas het ACSD-64112 flard toe om de kwestie van Adobe Commerce te bevestigen waar de &grave; indexer_update_all_views' kroonuitvoering ontbreekt wanneer &grave; MAGE_INDEXER_THREADS_COUNT &grave; wordt geplaatst.
 feature: Catalog Management, B2B
 role: Admin, Developer
 exl-id: c95f179d-5291-481f-b655-08a9db608513
@@ -16,7 +16,7 @@ ht-degree: 0%
 
 >[!NOTE]
 >
->Dit flard werd vervangen met [ ACP2E-3705 ](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-61/acp2e-3705-fixes-an-issue-where-the-indexer.md) voor de versies van Adobe Commerce boven 2.4.7.
+>Dit flard werd vervangen met [&#x200B; ACP2E-3705 &#x200B;](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-61/acp2e-3705-fixes-an-issue-where-the-indexer.md) voor de versies van Adobe Commerce boven 2.4.7.
 
 De ACSD-64112-patch verhelpt het probleem waarbij de uitvoering van de `indexer_update_all_views` -uitsnede mislukt wanneer `MAGE_INDEXER_THREADS_COUNT` wordt ingesteld. Deze patch is beschikbaar wanneer [[!DNL Quality Patches Tool (QPT)]](/help/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches.md) 1.1.59 wordt geïnstalleerd. De patch-id is ACSD-64112. Het probleem wordt volgens de planning opgelost in Adobe Commerce 2.4.8.
 
@@ -32,7 +32,7 @@ De ACSD-64112-patch verhelpt het probleem waarbij de uitvoering van de `indexer_
 
 >[!NOTE]
 >
->De patch kan van toepassing worden op andere versies met nieuwe [!DNL Quality Patches Tool] versies. Om te controleren of de patch compatibel is met uw Adobe Commerce-versie, werkt u het `magento/quality-patches` -pakket bij naar de meest recente versie en controleert u de compatibiliteit op de [[!DNL Quality Patches Tool] : zoek naar patches op de pagina ](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html) . Gebruik de patch-id als een zoekwoord om de patch te zoeken.
+>De patch kan van toepassing worden op andere versies met nieuwe [!DNL Quality Patches Tool] versies. Om te controleren of de patch compatibel is met uw Adobe Commerce-versie, werkt u het `magento/quality-patches` -pakket bij naar de meest recente versie en controleert u de compatibiliteit op de [[!DNL Quality Patches Tool] : zoek naar patches op de pagina &#x200B;](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html) . Gebruik de patch-id als een zoekwoord om de patch te zoeken.
 
 ## Probleem
 
@@ -87,8 +87,8 @@ report.CRITICAL: PDOException: There is no active transaction in /home/vendor/ma
 
 Om individuele flarden toe te passen, gebruik de volgende verbindingen afhankelijk van uw plaatsingsmethode:
 
-* Op locatie Adobe Commerce of Magento Open Source: [[!DNL Quality Patches Tool] > Gebruik ](/help/tools/quality-patches-tool/usage.md) in de handleiding [!DNL Quality Patches Tool] .
-* Adobe Commerce op wolkeninfrastructuur: [ Verbeteringen en Patches > Pas Patches ](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html) in Commerce op de gids van de Infrastructuur van de Wolk toe.
+* Op locatie Adobe Commerce of Magento Open Source: [[!DNL Quality Patches Tool] > Gebruik &#x200B;](/help/tools/quality-patches-tool/usage.md) in de handleiding [!DNL Quality Patches Tool] .
+* Adobe Commerce op wolkeninfrastructuur: [&#x200B; Verbeteringen en Patches > Pas Patches &#x200B;](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html) in Commerce op de gids van de Infrastructuur van de Wolk toe.
 
 ## Aanvullende stappen vereist na de installatie van de patch
 
@@ -98,5 +98,5 @@ Om individuele flarden toe te passen, gebruik de volgende verbindingen afhankeli
 
 Meer informatie over [!DNL Quality Patches Tool] vindt u in:
 
-* [[!DNL Quality Patches Tool]: Een zelfbedieningshulpmiddel voor kwaliteitspatches ](/help/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches.md) in de gids van Hulpmiddelen.
-* [ het opnieuw indexeren op parallelle wijze ](https://experienceleague.adobe.com/en/docs/commerce-operations/configuration-guide/cli/manage-indexers#reindexing-in-parallel-mode) in de Gids van de Configuratie van Commerce.
+* [[!DNL Quality Patches Tool]: Een zelfbedieningshulpmiddel voor kwaliteitspatches &#x200B;](/help/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches.md) in de gids van Hulpmiddelen.
+* [&#x200B; het opnieuw indexeren op parallelle wijze &#x200B;](https://experienceleague.adobe.com/en/docs/commerce-operations/configuration-guide/cli/manage-indexers#reindexing-in-parallel-mode) in de Gids van de Configuratie van Commerce.
