@@ -4,9 +4,9 @@ description: Deze subsectie verstrekt een gedetailleerde beschrijving van de kwe
 feature: Tools and External Services
 role: Admin, Developer
 type: Troubleshooting
-source-git-commit: da3647e87926e35309a138a9d9aff4dbf44a5334
+source-git-commit: 0e76a5bbc2d44dc8c7d77cb764e9376e5c4aa69f
 workflow-type: tm+mt
-source-wordcount: '197'
+source-wordcount: '199'
 ht-degree: 0%
 
 ---
@@ -22,7 +22,7 @@ QPT v1.1.77 omvat de volgende flarden:
 1. **ACSD-68537**: De prestaties van de kassa degraderen met vele klantensegmenten.
 1. **[ACSD-68664](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-77/acsd-68664.md)**: De geplande updatevoorproef heeft fouten op de domeinen van de douaneopslag.
 1. **ACSD-68759**: De fout van de de rekeningsverwezenlijking van de klant met Arabische scène wanneer de Datum van Macht wordt getoond.
-1. **ACSD-68892**: Het inconsistente [!DNL Fastly] in het voorgeheugen onderbrengende gedrag voor cacheable pagina&#39;s.
+1. **[ACSD-68892](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-77/acsd-68892.md)**: Verhelpt een inconsequent [!DNL Fastly] cachegedrag voor cacheable pagina&#39;s in het cachegeheugen.
 1. **ACSD-69016**: De speciale prijs wordt niet toegepast op websites met verschillende tijdstreken.
 1. **ACSD-69020**: De configureerbare producten verschijnen in [!UICONTROL Page Builder] carrousels wanneer de kindproducten filters aanpassen.
 1. **ACSD-69237**: `sales_*_async_insert` de banen van de cron verwerken slechts 100 ingangen per looppas.
