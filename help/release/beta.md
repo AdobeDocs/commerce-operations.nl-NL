@@ -2,8 +2,8 @@
 title: Beta-releases
 description: Leer meer over de bètareleases van Adobe Commerce en hoe u hieraan kunt deelnemen.
 exl-id: 662cb061-995f-4e09-a2ef-9e607cc0000b
-badgePaas: label="PaaS" type="Informative" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Is alleen van toepassing op Adobe Commerce op Cloud-projecten (door Adobe beheerde PaaS-infrastructuur) en op projecten in het veld."
-badgeSaas: label="SaaS" type="Positive" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Alleen van toepassing op Adobe Commerce as a Cloud Service- en Adobe Commerce Optimizer-projecten (door Adobe beheerde SaaS-infrastructuur)."
+badgePaas: label="PaaS" type="Informative" url="https://experienceleague.adobe.com/nl/docs/commerce/user-guides/product-solutions" tooltip="Is alleen van toepassing op Adobe Commerce op Cloud-projecten (door Adobe beheerde PaaS-infrastructuur) en op projecten in het veld."
+badgeSaas: label="SaaS" type="Positive" url="https://experienceleague.adobe.com/nl/docs/commerce/user-guides/product-solutions" tooltip="Alleen van toepassing op Adobe Commerce as a Cloud Service- en Adobe Commerce Optimizer-projecten (door Adobe beheerde SaaS-infrastructuur)."
 source-git-commit: 6024fafd5cbe04455f29c4f5ae74fb4d7eda20d7
 workflow-type: tm+mt
 source-wordcount: '1395'
@@ -33,7 +33,7 @@ Zie de volgende secties voor een lijst van actieve bètaprogramma&#39;s.
 
 ### Globaal en per Catalogusweergave (Openbare Beta) geldende regels voor het verhandelen
 
-[!BADGE &#x200B; slechts SaaS &#x200B;]{type=Positive url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Alleen van toepassing op Adobe Commerce as a Cloud Service- en Adobe Commerce Optimizer-projecten (door Adobe beheerde SaaS-infrastructuur)."}
+[!BADGE &#x200B; slechts SaaS &#x200B;]{type=Positive url="https://experienceleague.adobe.com/nl/docs/commerce/user-guides/product-solutions" tooltip="Alleen van toepassing op Adobe Commerce as a Cloud Service- en Adobe Commerce Optimizer-projecten (door Adobe beheerde SaaS-infrastructuur)."}
 
 Adobe Commerce Optimizer introduceert de mogelijkheid om handelsregels te definiëren met een flexibel bereik, zodat handelaren regels kunnen toepassen op alle catalogusweergaven of op het bereik ervan in een specifieke catalogusweergave. Deze mogelijkheid vereenvoudigt het beheer van de handelsregels voor verkopers die meerdere winkeliers, merken of talen gebruiken. Met weergavespecifieke regels voor catalogi kunnen verkopers zoekresultaten en verkooplogica op maat maken voor afzonderlijke kanalen wanneer ze een gelokaliseerde of merkspecifieke ervaring nodig hebben. Als de catalogusmening-specifieke regels bestaan, treden zij de globale regel voor die mening met voeten, die nauwkeurige controle terwijl het handhaven van efficiënt configuratiebeheer verstrekken.
 
@@ -44,7 +44,7 @@ Adobe Commerce Optimizer introduceert de mogelijkheid om handelsregels te defini
 - Verminder configuratieduplicatie over storefronts.
 - Verbeter scalability voor multi-brand en multi-taal handelsimplementaties.
 
-Deze mogelijkheid verbetert de flexibiliteit van de handel en de operationele efficiëntie, waardoor handelaren meer relevante productontdekking op schaal kunnen bieden. Meer leren, zie [&#x200B; het veranderen regels &#x200B;](https://experienceleague.adobe.com/en/docs/commerce/optimizer/merchandising/rules/add).
+Deze mogelijkheid verbetert de flexibiliteit van de handel en de operationele efficiëntie, waardoor handelaren meer relevante productontdekking op schaal kunnen bieden. Meer leren, zie [&#x200B; het veranderen regels &#x200B;](https://experienceleague.adobe.com/nl/docs/commerce/optimizer/merchandising/rules/add).
 
 >[!NOTE]
 >
@@ -54,7 +54,7 @@ Om uw te delen terugkoppelt aangezien u deze bètaeigenschap gebruikt, verzend e
 
 ### Productaanbevelingen wereldwijd en per catalogusweergave (Openbare Beta)
 
-[!BADGE &#x200B; slechts SaaS &#x200B;]{type=Positive url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Alleen van toepassing op Adobe Commerce as a Cloud Service- en Adobe Commerce Optimizer-projecten (door Adobe beheerde SaaS-infrastructuur)."}
+[!BADGE &#x200B; slechts SaaS &#x200B;]{type=Positive url="https://experienceleague.adobe.com/nl/docs/commerce/user-guides/product-solutions" tooltip="Alleen van toepassing op Adobe Commerce as a Cloud Service- en Adobe Commerce Optimizer-projecten (door Adobe beheerde SaaS-infrastructuur)."}
 
 Adobe Commerce Optimizer introduceert een verbeterde controle over de configuratie van de Aanbevelingen van het Product, waardoor handelaren aanbevelingen kunnen definiëren die globaal gelden voor alle catalogusweergaven of specifiek voor afzonderlijke catalogusweergaven.
 
@@ -69,7 +69,7 @@ De gebeurtenissen en aanbevelingen van de betrokkenheid van het winkelfront word
 - Verminder dubbele configuratie voor meerdere merken of meerdere talen.
 - Verkrijg nauwkeuriger inzicht met metriek en gebeurtenissen die door catalogusmening worden gevolgd.
 
-Deze verbetering helpt handelaren om relevantere ervaring op het gebied van productontdekking te bieden en het beheer van aanbevelingen in complexe handelsomgevingen te vereenvoudigen. Meer leren, zie [&#x200B; aanbevelingen &#x200B;](https://experienceleague.adobe.com/en/docs/commerce/optimizer/manage-results/recommendation-performance)
+Deze verbetering helpt handelaren om relevantere ervaring op het gebied van productontdekking te bieden en het beheer van aanbevelingen in complexe handelsomgevingen te vereenvoudigen. Meer leren, zie [&#x200B; aanbevelingen &#x200B;](https://experienceleague.adobe.com/nl/docs/commerce/optimizer/manage-results/recommendation-performance)
 
 >[!NOTE]
 >
@@ -83,7 +83,7 @@ Om uw te delen terugkoppelt aangezien u deze bètaeigenschap gebruikt, verzend e
 
 ### Semantische zoekopdracht: slimmere, contextbewuste boodschappen (Private Beta)
 
-[!BADGE &#x200B; slechts SaaS &#x200B;]{type=Positive url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Alleen van toepassing op Adobe Commerce as a Cloud Service- en Adobe Commerce Optimizer-projecten (door Adobe beheerde SaaS-infrastructuur)."}
+[!BADGE &#x200B; slechts SaaS &#x200B;]{type=Positive url="https://experienceleague.adobe.com/nl/docs/commerce/user-guides/product-solutions" tooltip="Alleen van toepassing op Adobe Commerce as a Cloud Service- en Adobe Commerce Optimizer-projecten (door Adobe beheerde SaaS-infrastructuur)."}
 
 Het semantische onderzoek is een technologie van het e-handelonderzoek die *betekenis* achter de vraag van een verkoopster begrijpt, niet alleen de nauwkeurige woorden. In tegenstelling tot traditionele zoekopdrachten op basis van trefwoorden, die vaak mislukken wanneer query&#39;s onbekende of verkeerd gespelde termen bevatten, interpreteert deze door AI aangedreven benadering de intentie met behulp van natuurlijke taalverwerking (NLP) en context voor meer relevante resultaten.
 
@@ -98,11 +98,11 @@ Om een uitnodiging aan het bètaprogramma te verzoeken, verzend een e-mail naar 
 
 ### Cloud Automation Patching Service (Private Beta)
 
-[!BADGE &#x200B; slechts PaaS &#x200B;]{type=Informative url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Is alleen van toepassing op Adobe Commerce op Cloud-projecten (door Adobe beheerde PaaS-infrastructuur) en op projecten in het veld."}
+[!BADGE &#x200B; slechts PaaS &#x200B;]{type=Informative url="https://experienceleague.adobe.com/nl/docs/commerce/user-guides/product-solutions" tooltip="Is alleen van toepassing op Adobe Commerce op Cloud-projecten (door Adobe beheerde PaaS-infrastructuur) en op projecten in het veld."}
 
-De [&#x200B; Dienst van het Patching van de Automatisering van de Wolk &#x200B;](../tools/caps-tool/intro.md) automatiseert het proces om geïsoleerde veiligheidspatches op uw [&#x200B; Adobe Commerce op de milieu&#39;s van de Infrastructuur van de Wolk toe te passen &#x200B;](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/overview).
+De [&#x200B; Dienst van het Patching van de Automatisering van de Wolk &#x200B;](../tools/caps-tool/intro.md) automatiseert het proces om geïsoleerde veiligheidspatches op uw [&#x200B; Adobe Commerce op de milieu&#39;s van de Infrastructuur van de Wolk toe te passen &#x200B;](https://experienceleague.adobe.com/nl/docs/commerce-on-cloud/user-guide/overview).
 
-In oktober 2025, zal de bètaversie van de het Patcheren van de Automatisering van de Wolk de Dienst aan het [&#x200B; het hulpmiddeldashboard van de Analyse van plaats-brede &#x200B;](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/site-wide-analysis-tool/dashboard) worden toegevoegd. Deze service biedt ondersteuning voor Commerce-projectbeheerders met een gestroomlijnde patchworkflow die het volgende omvat:
+In oktober 2025, zal de bètaversie van de het Patcheren van de Automatisering van de Wolk de Dienst aan het [&#x200B; het hulpmiddeldashboard van de Analyse van plaats-brede &#x200B;](https://experienceleague.adobe.com/nl/docs/commerce-operations/tools/site-wide-analysis-tool/dashboard) worden toegevoegd. Deze service biedt ondersteuning voor Commerce-projectbeheerders met een gestroomlijnde patchworkflow die het volgende omvat:
 
 - Geautomatiseerde patchinstallatie
 - Terugwinning terugdraaien
@@ -117,13 +117,13 @@ De bètaversie bevat de volgende functies:
 
 >[!NOTE]
 >
->Aangezien de Dienst van het Patching van de Automatisering van de Wolk automatisch geïsoleerde veiligheidspatches toepast, moet u de [&#x200B; Medewerker of rol van Admin van het Project hebben &#x200B;](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/project/user-access) om het te gebruiken.
+>Aangezien de Dienst van het Patching van de Automatisering van de Wolk automatisch geïsoleerde veiligheidspatches toepast, moet u de [&#x200B; Medewerker of rol van Admin van het Project hebben &#x200B;](https://experienceleague.adobe.com/nl/docs/commerce-on-cloud/user-guide/project/user-access) om het te gebruiken.
 
 Om aan deze bèta deel te nemen, voltooi en voorleg de [&#x200B; Dienst van het Patching van de Automatisering van de Wolk - de Vorm van de Registratie van Beta &#x200B;](https://forms.office.com/r/3Wfxj5nPdB).
 
 ### Adobe Commerce Foundation (Public Alpha/Beta)
 
-[!BADGE &#x200B; slechts PaaS &#x200B;]{type=Informative url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Is alleen van toepassing op Adobe Commerce op Cloud-projecten (door Adobe beheerde PaaS-infrastructuur) en op projecten in het veld."}
+[!BADGE &#x200B; slechts PaaS &#x200B;]{type=Informative url="https://experienceleague.adobe.com/nl/docs/commerce/user-guides/product-solutions" tooltip="Is alleen van toepassing op Adobe Commerce op Cloud-projecten (door Adobe beheerde PaaS-infrastructuur) en op projecten in het veld."}
 
 Elke Adobe Commerce Foundation alfa- en bètaversie bevat alle wijzigingen die tegen de geplande releasedatum aan de Adobe Commerce core-code worden geleverd, inclusief maar niet beperkt tot de volgende functionele gebieden:
 
@@ -132,7 +132,7 @@ Elke Adobe Commerce Foundation alfa- en bètaversie bevat alle wijzigingen die t
 - GraphQL-verbeteringen
 - Oplossingen voor algemene problemen met kwaliteit
 - Communautaire bijdragen
-- Veranderingen die worden vereist om verenigbaarheid met [&#x200B; de diensten van Adobe Commerce &#x200B;](https://experienceleague.adobe.com/en/docs/commerce/user-guides/home) te steunen
+- Veranderingen die worden vereist om verenigbaarheid met [&#x200B; de diensten van Adobe Commerce &#x200B;](https://experienceleague.adobe.com/nl/docs/commerce/user-guides/home) te steunen
 
 #### Naamgevingsconventie en -schema
 
