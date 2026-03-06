@@ -4,9 +4,9 @@ description: Deze subsectie verstrekt een gedetailleerde beschrijving van de kwe
 feature: Tools and External Services
 role: Admin, Developer
 type: Troubleshooting
-source-git-commit: 0e76a5bbc2d44dc8c7d77cb764e9376e5c4aa69f
+source-git-commit: 7dd35627836160bf1e892ea920a21ddd107642ad
 workflow-type: tm+mt
-source-wordcount: '199'
+source-wordcount: '205'
 ht-degree: 0%
 
 ---
@@ -24,7 +24,7 @@ QPT v1.1.77 omvat de volgende flarden:
 1. **ACSD-68759**: De fout van de de rekeningsverwezenlijking van de klant met Arabische scène wanneer de Datum van Macht wordt getoond.
 1. **[ACSD-68892](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-77/acsd-68892.md)**: Verhelpt een inconsequent [!DNL Fastly] cachegedrag voor cacheable pagina&#39;s in het cachegeheugen.
 1. **ACSD-69016**: De speciale prijs wordt niet toegepast op websites met verschillende tijdstreken.
-1. **ACSD-69020**: De configureerbare producten verschijnen in [!UICONTROL Page Builder] carrousels wanneer de kindproducten filters aanpassen.
+1. **[ACSD-69020](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-77/acsd-69020.md)**: Verhelpt een kwestie waar de configureerbare producten in [!DNL Page Builder] productcarrousels verschijnen wanneer de kindproducten het filtreren voorwaarden aanpassen.
 1. **ACSD-69237**: `sales_*_async_insert` de banen van de cron verwerken slechts 100 ingangen per looppas.
 1. **ACSD-69311**: Verhelpt de onjuiste belastingberekening in creditmemo&#39;s na gedeeltelijke terugbetalingen van facturen.
 1. **ACSD-69351**: De saldi van de kaartenrekening van het kaartje en vervaldata die over onjuiste websites worden getoond.
