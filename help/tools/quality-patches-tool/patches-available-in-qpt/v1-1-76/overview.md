@@ -4,9 +4,9 @@ description: Deze subsectie biedt een gedetailleerde beschrijving van de problem
 feature: Tools and External Services
 role: Admin, Developer
 type: Troubleshooting
-source-git-commit: 9d24eeeeedc02e2e086560b5f18baa4a1a61b972
+source-git-commit: 9b73f6e893a2d68029237407fa525e4d001960e9
 workflow-type: tm+mt
-source-wordcount: '480'
+source-wordcount: '465'
 ht-degree: 0%
 
 ---
@@ -24,7 +24,7 @@ QPT v1.1.76 omvat de volgende flarden:
 1. **[ACSD-69129](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-76/acsd-69129.md)**: Verhelpt een kwestie waar het schrappen van de standaard basiswebsite en het gebruiken van de secundaire website als gebrek in een fout resulteert wanneer het proberen om de laagprijs voor de secundaire website via [!DNL REST] API bij te werken.
 1. **ACSD-69203**: Bevestigt een kwestie waar **[!UICONTROL Products List]** widget onjuiste resultaten terugkeert wanneer de veelvoudige categorieën in de categorietoestand werden vermeld.
 1. **ACSD-69261**: Verhelpt een kwestie waar een coupon van de de regelregel van de kartprijs die voor enig gebruik per klant wordt gevormd veelvoudige tijden wegens onjuiste behandeling van het `times_used` attribuut in gedeeltelijke factuur en resterende scenario&#39;s van de kwantitatieve annulering werd opnieuw gebruikt.
-1. **ACSD-69308**: Verhelpt een kwestie waar de regels van de catalogusprijs niet van toepassing waren toen `special_price` slechts op het websiteniveau (niet bij **[!UICONTROL All Store Views]**) werd geplaatst. Na de correctie worden de regels voor catalogusprijzen correct toegepast door eerst de standaardopslag van de website te controleren.
+1. **[ACSD-69308](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-76/acsd-69308.md)**: Verhelpt een kwestie waar de regels van de catalogusprijs niet van toepassing waren toen `special_price` slechts op het websiteniveau (niet bij **[!UICONTROL All Store Views]**) werd geplaatst.
 1. **ACSD-69319**: Verhelpt een kwestie waar de bundelprijzen niet behoorlijk werden geïndexeerd wanneer de kindproducten voorraad onder douanebronnen hadden.
 1. **[ACSD-69325](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-76/acsd-69325.md)**: Verhelpt een kwestie waar het wijzigen van het geval van SKU het product om uit voorraad op de winkel veroorzaakt te verschijnen.
 1. **ACSD-69331**: Verhelpt een kwestie waar de inhoudsmakers in de media galerie geen omslagen met slechts de `create_folder` toestemming konden tot stand brengen. Na de correctie kunnen ze naar behoren mappen maken.
