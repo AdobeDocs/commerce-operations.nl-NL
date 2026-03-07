@@ -23,7 +23,7 @@ Deze pagina bevat de wijzigingen die in de afgelopen 60 dagen zijn aangebracht. 
   </thead>
   <tbody>
     <tr>
-      <td><p>Gedetailleerde beschrijving van de QPT 1.1.76-correctie voor <a href="https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-76/acsd-69308"> ACSD-69308: de catalogusprijsregels waren niet van toepassing wanneer <code class="language-plaintext highlighter-rouge">special_price</code> alleen op websiteniveau werd ingesteld (niet bij "Alle winkelweergaven"). Na de moeilijke situatie, passen de regels van de catalogusprijs correct toe door de standaard opslag van de website eerst te controleren </a>.</p>
+      <td><p>Gedetailleerde beschrijving van de QPT 1.1.76-correctie voor <a href="https://experienceleague.adobe.com/nl/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-76/acsd-69308"> ACSD-69308: de catalogusprijsregels waren niet van toepassing wanneer <code class="language-plaintext highlighter-rouge">special_price</code> alleen op websiteniveau werd ingesteld (niet bij "Alle winkelweergaven"). Na de moeilijke situatie, passen de regels van de catalogusprijs correct toe door de standaard opslag van de website eerst te controleren </a>.</p>
 </td>
       <td>
         Nieuw onderwerp, qpt
@@ -31,7 +31,7 @@ Deze pagina bevat de wijzigingen die in de afgelopen 60 dagen zijn aangebracht. 
       <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/db07a5d6f991ff36536a4365ee88fa25062dbe43">begaan</a></td>
     </tr>
     <tr>
-      <td><p>Toegevoegde gedetailleerde beschrijving van QPT 1.1.76 moeilijke situatie voor <a href="https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-76/acsd-69541"> ACSD-69541: Het verminderen van de hoeveelheid van een product in admin aan minder dan wat reeds in een kart bestaat maakte het onmogelijk om de producthoeveelheid in die kar via GraphQL uit te geven </a>.</p>
+      <td><p>Toegevoegde gedetailleerde beschrijving van QPT 1.1.76 moeilijke situatie voor <a href="https://experienceleague.adobe.com/nl/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-76/acsd-69541"> ACSD-69541: Het verminderen van de hoeveelheid van een product in admin aan minder dan wat reeds in een kart bestaat maakte het onmogelijk om de producthoeveelheid in die kar via GraphQL uit te geven </a>.</p>
 </td>
       <td>
         Nieuw onderwerp, qpt
@@ -39,7 +39,7 @@ Deze pagina bevat de wijzigingen die in de afgelopen 60 dagen zijn aangebracht. 
       <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/b2b801b88aee7fc6c275be3fb32a2e75bbe6f20d">begaan</a></td>
     </tr>
     <tr>
-      <td><p>Toegevoegde gedetailleerde beschrijving van QPT 1.1.77 moeilijke situatie voor <a href="https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-77/acsd-69020"> ACSD-69020: De configureerbare producten verschijnen in de carrousels van de Bouwer van de Pagina wanneer de kindproducten filters </a> aanpassen.</p>
+      <td><p>Toegevoegde gedetailleerde beschrijving van QPT 1.1.77 moeilijke situatie voor <a href="https://experienceleague.adobe.com/nl/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-77/acsd-69020"> ACSD-69020: De configureerbare producten verschijnen in de carrousels van de Bouwer van de Pagina wanneer de kindproducten filters </a> aanpassen.</p>
 </td>
       <td>
         Nieuw onderwerp, qpt
