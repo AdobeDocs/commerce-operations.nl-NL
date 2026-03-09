@@ -4,7 +4,7 @@ description: Deze subsectie biedt een gedetailleerde beschrijving van de problem
 feature: Tools and External Services
 role: Admin, Developer
 type: Troubleshooting
-source-git-commit: 9b73f6e893a2d68029237407fa525e4d001960e9
+source-git-commit: 8eac0cdbf303e307b7734845c09c9d652d901d7b
 workflow-type: tm+mt
 source-wordcount: '465'
 ht-degree: 0%
@@ -16,7 +16,7 @@ ht-degree: 0%
 Deze subsectie bevat een gedetailleerde beschrijving van de problemen die zijn opgelost door de patches die beschikbaar zijn in [!DNL Quality Patches Tool] (QPT) v1.1.76.
 
 QPT v1.1.76 omvat de volgende flarden:
-1. **ACSD-67091**: Bevestigt de maximum schrijvers grootte fout om de indexschoonmaakbeurt van de catalogusregel te verzekeren door twee schrappingsstrategieën uit te voeren die op gegevensvolume worden gebaseerd.
+1. **[ACSD-67091](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-76/acsd-67091.md)**: Bevestigt de maximum schrijvers grootte fout om de indexschoonmaakbeurt van de catalogusregel te verzekeren door twee schrappingsstrategieën uit te voeren die op gegevensvolume worden gebaseerd.
 1. **ACSD-67370**: lost veelvoudige kwesties op waar de onjuiste prijzen voor de producten van de Bundel op PDP/PLP en de kartpagina voor multi-muntopslag werden getoond.
 1. **[ACSD-68410](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-76/acsd-68410.md)**: Verhelpt een kwestie waar het plaatsen van een orde voor een verhandelbaar citaat verkeerd toevoegt of extra wortellijnen aan het citaat samenvoegt. Producten worden nu correct toegevoegd aan het winkelwagentje nadat de laatste stap van het afrekenen van prijsnoteringen is verlaten.
 1. **ACSD-69086**: Verhelpt de kwestie waar de cron baan er niet in slaagt om veranderingslijsten te ontruimen, veroorzakend [!DNL Galera Cluster] neerstortingen wanneer het behandelen van grote hoeveelheden gegevens.
