@@ -4,9 +4,9 @@ description: Deze subsectie biedt een gedetailleerde beschrijving van de problem
 feature: Tools and External Services
 role: Admin, Developer
 type: Troubleshooting
-source-git-commit: 8eac0cdbf303e307b7734845c09c9d652d901d7b
+source-git-commit: 535934d92c0bd8a0d029c2c9a6c06be161db266f
 workflow-type: tm+mt
-source-wordcount: '465'
+source-wordcount: '537'
 ht-degree: 0%
 
 ---
@@ -23,6 +23,8 @@ QPT v1.1.76 omvat de volgende flarden:
 1. **ACSD-69115**: Verhelpt een kwestie waar de het winkelwagentfouten niet aan de admin gebruiker werden getoond toen het beheren van het het winkelwagentje voor een klant die aan een niet-standaard website wordt toegewezen.
 1. **[ACSD-69129](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-76/acsd-69129.md)**: Verhelpt een kwestie waar het schrappen van de standaard basiswebsite en het gebruiken van de secundaire website als gebrek in een fout resulteert wanneer het proberen om de laagprijs voor de secundaire website via [!DNL REST] API bij te werken.
 1. **ACSD-69203**: Bevestigt een kwestie waar **[!UICONTROL Products List]** widget onjuiste resultaten terugkeert wanneer de veelvoudige categorieën in de categorietoestand werden vermeld.
+1. **[ACSD-69261](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-76/acsd-69261.md)**: Verhelpt een kwestie waar een coupon van de de regelregel van de kartprijs die voor enig gebruik per klant wordt gevormd veelvoudige tijden wegens onjuiste behandeling van het `times_used` attribuut in gedeeltelijke factuur en resterende scenario&#39;s van de kwantitatieve annulering werd opnieuw gebruikt.
+1. **ACSD-69308**: Verhelpt een kwestie waar de regels van de catalogusprijs niet van toepassing waren toen `special_price` slechts op het websiteniveau (niet bij **[!UICONTROL All Store Views]**) werd geplaatst. Na de correctie worden de regels voor catalogusprijzen correct toegepast door eerst de standaardopslag van de website te controleren.
 1. **ACSD-69261**: Verhelpt een kwestie waar een coupon van de de regelregel van de kartprijs die voor enig gebruik per klant wordt gevormd veelvoudige tijden wegens onjuiste behandeling van het `times_used` attribuut in gedeeltelijke factuur en resterende scenario&#39;s van de kwantitatieve annulering werd opnieuw gebruikt.
 1. **[ACSD-69308](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-76/acsd-69308.md)**: Verhelpt een kwestie waar de regels van de catalogusprijs niet van toepassing waren toen `special_price` slechts op het websiteniveau (niet bij **[!UICONTROL All Store Views]**) werd geplaatst.
 1. **ACSD-69319**: Verhelpt een kwestie waar de bundelprijzen niet behoorlijk werden geïndexeerd wanneer de kindproducten voorraad onder douanebronnen hadden.
