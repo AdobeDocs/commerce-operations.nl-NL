@@ -4,7 +4,7 @@ description: Deze subsectie biedt een gedetailleerde beschrijving van de problem
 feature: Tools and External Services
 role: Admin, Developer
 type: Troubleshooting
-source-git-commit: 535934d92c0bd8a0d029c2c9a6c06be161db266f
+source-git-commit: f56050886f28692286c42102222dfb580e52aef1
 workflow-type: tm+mt
 source-wordcount: '537'
 ht-degree: 0%
@@ -16,8 +16,8 @@ ht-degree: 0%
 Deze subsectie bevat een gedetailleerde beschrijving van de problemen die zijn opgelost door de patches die beschikbaar zijn in [!DNL Quality Patches Tool] (QPT) v1.1.76.
 
 QPT v1.1.76 omvat de volgende flarden:
+1. **[ACSD-67370](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-76/acsd-67370.md)**: lost veelvoudige kwesties op waar de onjuiste prijzen voor de producten van de Bundel op PDP/PLP en de kartpagina voor multi-muntopslag werden getoond.
 1. **[ACSD-67091](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-76/acsd-67091.md)**: Bevestigt de maximum schrijvers grootte fout om de indexschoonmaakbeurt van de catalogusregel te verzekeren door twee schrappingsstrategieën uit te voeren die op gegevensvolume worden gebaseerd.
-1. **ACSD-67370**: lost veelvoudige kwesties op waar de onjuiste prijzen voor de producten van de Bundel op PDP/PLP en de kartpagina voor multi-muntopslag werden getoond.
 1. **[ACSD-68410](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-76/acsd-68410.md)**: Verhelpt een kwestie waar het plaatsen van een orde voor een verhandelbaar citaat verkeerd toevoegt of extra wortellijnen aan het citaat samenvoegt. Producten worden nu correct toegevoegd aan het winkelwagentje nadat de laatste stap van het afrekenen van prijsnoteringen is verlaten.
 1. **ACSD-69086**: Verhelpt de kwestie waar de cron baan er niet in slaagt om veranderingslijsten te ontruimen, veroorzakend [!DNL Galera Cluster] neerstortingen wanneer het behandelen van grote hoeveelheden gegevens.
 1. **ACSD-69115**: Verhelpt een kwestie waar de het winkelwagentfouten niet aan de admin gebruiker werden getoond toen het beheren van het het winkelwagentje voor een klant die aan een niet-standaard website wordt toegewezen.
