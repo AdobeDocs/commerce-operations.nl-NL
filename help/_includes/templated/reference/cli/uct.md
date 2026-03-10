@@ -19,15 +19,15 @@ De eerste lijst wordt automatisch gegenereerd met de opdracht `bin/uct list` in 
 
 ## Algemeen
 
-Leer meer over het hulpmiddel in [ Overzicht ](/help/upgrade/upgrade-compatibility-tool/overview.md).
+Leer meer over het hulpmiddel in [&#x200B; Overzicht &#x200B;](/help/upgrade/upgrade-compatibility-tool/overview.md).
 
 >[!NOTE]
 >
->Het `composer update` bevel werkt niet voor de bevordering van dit hulpmiddel-u moet [ downloaden en de recentste versie ](/help/upgrade/upgrade-compatibility-tool/run.md) installeren.
+>Het `composer update` bevel werkt niet voor de bevordering van dit hulpmiddel-u moet [&#x200B; downloaden en de recentste versie &#x200B;](/help/upgrade/upgrade-compatibility-tool/run.md) installeren.
 
 Deze referentiedocumentatie wordt geproduceerd van de code van de toepassingsbron. Als u de documentatie wilt wijzigen, opent u
-een trekkingsverzoek voor het overeenkomstige bevel in de relevante [ codebase ](https://github.com/magento) bewaarplaats. Zie
-[ de Bijdragen van de Code ](https://developer.adobe.com/commerce/contributor/guides/code-contributions/) voor meer informatie.
+een trekkingsverzoek voor het overeenkomstige bevel in de relevante [&#x200B; codebase &#x200B;](https://github.com/magento) bewaarplaats. Zie
+[&#x200B; de Bijdragen van de Code &#x200B;](https://developer.adobe.com/commerce/contributor/guides/code-contributions/) voor meer informatie.
 
 ### Algemene opties
 
@@ -89,7 +89,7 @@ Interne opdracht voor suggesties voor shell-voltooiing
 
 ### Opties
 
-Voor globale opties, zie [ Globale opties ](#global-options).
+Voor globale opties, zie [&#x200B; Globale opties &#x200B;](#global-options).
 
 #### `--shell`, `-s`
 
@@ -168,7 +168,7 @@ Het shell type (bijvoorbeeld &quot;bash&quot;), de waarde van &quot;$SHELL&quot;
 
 ### Opties
 
-Voor globale opties, zie [ Globale opties ](#global-options).
+Voor globale opties, zie [&#x200B; Globale opties &#x200B;](#global-options).
 
 #### `--debug`
 
@@ -208,7 +208,7 @@ De opdrachtnaam
 
 ### Opties
 
-Voor globale opties, zie [ Globale opties ](#global-options).
+Voor globale opties, zie [&#x200B; Globale opties &#x200B;](#global-options).
 
 #### `--format`
 
@@ -259,7 +259,7 @@ De naamruimtenaam
 
 ### Opties
 
-Voor globale opties, zie [ Globale opties ](#global-options).
+Voor globale opties, zie [&#x200B; Globale opties &#x200B;](#global-options).
 
 #### `--raw`
 
@@ -301,7 +301,7 @@ Pad om problemen op te lossen in.
 
 ### Opties
 
-Voor globale opties, zie [ Globale opties ](#global-options).
+Voor globale opties, zie [&#x200B; Globale opties &#x200B;](#global-options).
 
 
 ## `core:code:changes`
@@ -327,7 +327,7 @@ Adobe Commerce vanilla-installatiemap.
 
 ### Opties
 
-Voor globale opties, zie [ Globale opties ](#global-options).
+Voor globale opties, zie [&#x200B; Globale opties &#x200B;](#global-options).
 
 #### `--output`, `-o`
 
@@ -361,7 +361,7 @@ doelversie (bijvoorbeeld 2.4.5).
 
 ### Opties
 
-Voor globale opties, zie [ Globale opties ](#global-options).
+Voor globale opties, zie [&#x200B; Globale opties &#x200B;](#global-options).
 
 
 ## `graphql:compare`
@@ -389,7 +389,7 @@ Eindpunt-URL die verwijst naar het tweede GraphQL-schema.
 
 ### Opties
 
-Voor globale opties, zie [ Globale opties ](#global-options).
+Voor globale opties, zie [&#x200B; Globale opties &#x200B;](#global-options).
 
 #### `--output`, `-o`
 
@@ -416,7 +416,7 @@ Adobe Commerce-installatiemap.
 
 ### Opties
 
-Voor globale opties, zie [ Globale opties ](#global-options).
+Voor globale opties, zie [&#x200B; Globale opties &#x200B;](#global-options).
 
 #### `--current-version`, `-a`
 
