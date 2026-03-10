@@ -2,9 +2,9 @@
 title: Opmerkingen bij de release Adobe Commerce 2.4.8 Security Patch
 description: Leer meer over oplossingen voor beveiligingsproblemen, beveiligingsverbeteringen en andere beveiligingsupdates die zijn opgenomen in de beveiligingspatchreleases voor Adobe Commerce versie 2.4.7.
 exl-id: 5f8866ed-9215-4b2e-9c77-b2d474f6c1f9
-source-git-commit: e625670e741c0669050ab758d4f87c5ca06fe3df
+source-git-commit: a1a8e9192dbdccbc758be972612f8a8828202299
 workflow-type: tm+mt
-source-wordcount: '366'
+source-wordcount: '461'
 ht-degree: 0%
 
 ---
@@ -13,11 +13,29 @@ ht-degree: 0%
 
 {{$include /help/_includes/release-notes/security-patch-intro.md}}
 
+## 2.4.8-p4
+
+De Adobe Commerce 2.4.8-p4 veiligheidsversie verstrekt veiligheidsinsectenmoeilijke situaties voor kwetsbaarheid die in vorige versies van 2.4.8 worden geïdentificeerd.
+
+{{b2b-patches}}
+
+### Hooglichten
+
+Deze release bevat de volgende hooglichten:
+
+#### Ondersteuning voor MyDHL REST API voor integratie van DHL-scheepvaart
+
+De integratie van DHL voor scheepvaart ondersteunt nu MyDHL REST API&#39;s naast de bestaande integratie van DHL Express XML. Deze update wordt uitgelijnd op de huidige API-stapel van DHL en bereidt de veroudering van de oudere XML API&#39;s voor.
+
+#### Compatibiliteit toevoegen met de nieuwste Composer-versie
+
+Adobe Commerce 2.4.8 is bijgewerkt ter ondersteuning van Composer 2.9.x en blijft compatibel met Composer 2.2 LTS.
+
 ## 2.4.8-p3
 
 De Adobe Commerce 2.4.8-p3 veiligheidsversie verstrekt veiligheidsinsectenmoeilijke situaties voor kwetsbaarheid die in vorige versies van 2.4.8 worden geïdentificeerd.
 
-Voor de recentste informatie over de veiligheidsinsectenmoeilijke situaties, zie [&#x200B; Bulletin van de Veiligheid van Adobe APSB25-94 &#x200B;](https://helpx.adobe.com/nl/security/products/magento/apsb25-94.html).
+Voor de recentste informatie over de veiligheidsinsectenmoeilijke situaties, zie [ Bulletin van de Veiligheid van Adobe APSB25-94 ](https://helpx.adobe.com/security/products/magento/apsb25-94.html).
 
 {{b2b-patches}}
 
@@ -43,7 +61,7 @@ Deze release bevat de volgende hooglichten:
 
 De Adobe Commerce 2.4.8-p2 veiligheidsversie verstrekt veiligheidsinsectenmoeilijke situaties voor kwetsbaarheid die in vorige versies van 2.4.8 worden geïdentificeerd.
 
-Voor de recentste informatie over de veiligheidsinsectenmoeilijke situaties, zie [&#x200B; Bulletin van de Veiligheid van Adobe APSB25-71 &#x200B;](https://helpx.adobe.com/nl/security/products/magento/apsb25-71.html).
+Voor de recentste informatie over de veiligheidsinsectenmoeilijke situaties, zie [ Bulletin van de Veiligheid van Adobe APSB25-71 ](https://helpx.adobe.com/security/products/magento/apsb25-71.html).
 
 {{b2b-patches}}
 
@@ -51,7 +69,7 @@ Voor de recentste informatie over de veiligheidsinsectenmoeilijke situaties, zie
 
 De Adobe Commerce 2.4.8-p1 veiligheidsversie verstrekt veiligheidsinsectenmoeilijke situaties voor kwetsbaarheid die in vorige versies van 2.4.8 worden geïdentificeerd.
 
-Voor de recentste informatie over de veiligheidsinsectenmoeilijke situaties, zie [&#x200B; Bulletin van de Veiligheid van Adobe APSB25-50 &#x200B;](https://helpx.adobe.com/nl/security/products/magento/apsb25-50.html).
+Voor de recentste informatie over de veiligheidsinsectenmoeilijke situaties, zie [ Bulletin van de Veiligheid van Adobe APSB25-50 ](https://helpx.adobe.com/security/products/magento/apsb25-50.html).
 
 {{b2b-patches}}
 
@@ -75,8 +93,8 @@ Deze release bevat de volgende hooglichten:
 
 >[!BEGINSHADEBOX]
 
-De correcties voor CVE-2025-47110 en VULN-31547 zijn ook beschikbaar als een geïsoleerde patch. Zie het [&#x200B; artikel van de Kennisbank &#x200B;](https://experienceleague.adobe.com/nl/docs/commerce-knowledge-base/kb/troubleshooting/known-issues-patches-attached/security-update-available-for-adobe-commerce-apsb25-50) voor details.
+De correcties voor CVE-2025-47110 en VULN-31547 zijn ook beschikbaar als een geïsoleerde patch. Zie het [ artikel van de Kennisbank ](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/troubleshooting/known-issues-patches-attached/security-update-available-for-adobe-commerce-apsb25-50) voor details.
 
 >[!ENDSHADEBOX]
 
-<!-- Last updated from includes: 2025-10-22 11:16:25 -->
+<!-- Last updated from includes: 2026-02-20 15:30:03 -->

@@ -3,22 +3,22 @@ user-guide-title: Gegevens vrijgeven
 user-guide-description: Open op één locatie alle releasegegevens voor Adobe Commerce-patches en -services.
 feature: Release Notes
 recommendations: noDisplay, noCatalog
-source-git-commit: 5e8ff044ed2426bfdcfea79f6ed26407caf94444
+source-git-commit: c76154516c3b800c530769f35d4c52f794e47076
 workflow-type: tm+mt
 source-wordcount: '114'
-ht-degree: 0%
+ht-degree: 1%
 
 ---
 
 
 # Gegevens vrijgeven {#release}
 
-- Opmerkingen bij de release {#notes}
+- Aanvullende informatie {#notes}
    - [Overzicht](release-notes/overview.md)
    - [Achteruit incompatibele wijzigingen](backward-incompatible-changes.md)
    - Adobe Commerce {#adobe-commerce}
       - [Overzicht](release-notes/commerce/overview.md)
-      - [2.4.9-alfa](release-notes/commerce/2-4-9.md)
+      - [2.4.9-bèta](release-notes/commerce/2-4-9.md)
       - [2.4.8.](release-notes/commerce/2-4-8.md)
       - [2.4.7.](release-notes/commerce/2-4-7.md)
       - [2.4.6.](release-notes/commerce/2-4-6.md)
@@ -30,7 +30,7 @@ ht-degree: 0%
       - [2.4.0.](release-notes/commerce/2-4-0.md)
    - Magento Open Source {#magento-open-source}
       - [Overzicht](release-notes/open-source/overview.md)
-      - [2.4.9-alfa](release-notes/open-source/2-4-9.md)
+      - [2.4.9-bèta](release-notes/open-source/2-4-9.md)
       - [2.4.8.](release-notes/open-source/2-4-8.md)
       - [2.4.7.](release-notes/open-source/2-4-7.md)
       - [2.4.6.](release-notes/open-source/2-4-6.md)
@@ -60,4 +60,4 @@ ht-degree: 0%
 - Pakketten {#packages}
    - [Adobe Commerce](packages/adobe-commerce.md)
    - [Magento Open Source](packages/magento-open-source.md)
-- [&#x200B; Terugkeer aan Operationele Gidsen &#x200B;](https://experienceleague.adobe.com/docs/commerce-operations/operational-guides/home.html?lang=nl-NL)
+- [ Terugkeer aan Operationele Gidsen ](https://experienceleague.adobe.com/docs/commerce-operations/operational-guides/home.html)
