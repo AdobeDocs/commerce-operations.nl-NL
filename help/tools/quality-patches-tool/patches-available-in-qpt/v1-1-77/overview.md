@@ -4,9 +4,9 @@ description: Deze subsectie verstrekt een gedetailleerde beschrijving van de kwe
 feature: Tools and External Services
 role: Admin, Developer
 type: Troubleshooting
-source-git-commit: 7dd35627836160bf1e892ea920a21ddd107642ad
+source-git-commit: 5ad8f9ce930ca8484c355561f8bfa2f19dba3e9c
 workflow-type: tm+mt
-source-wordcount: '205'
+source-wordcount: '221'
 ht-degree: 0%
 
 ---
@@ -26,8 +26,9 @@ QPT v1.1.77 omvat de volgende flarden:
 1. **ACSD-69016**: De speciale prijs wordt niet toegepast op websites met verschillende tijdstreken.
 1. **[ACSD-69020](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-77/acsd-69020.md)**: Verhelpt een kwestie waar de configureerbare producten in [!DNL Page Builder] productcarrousels verschijnen wanneer de kindproducten het filtreren voorwaarden aanpassen.
 1. **ACSD-69237**: `sales_*_async_insert` de banen van de cron verwerken slechts 100 ingangen per looppas.
+1. **ACSD-69351**: Verhelpt de kwestie waar de tegoeden van de geschenkkaart en de vervaldatums over onjuiste websites tonen.
 1. **ACSD-69311**: Verhelpt de onjuiste belastingberekening in creditmemo&#39;s na gedeeltelijke terugbetalingen van facturen.
-1. **ACSD-69351**: De saldi van de kaartenrekening van het kaartje en vervaldata die over onjuiste websites worden getoond.
+1. **ACSD-69494**: Bevestigt de asynchrone terugbetalingsverzoeken met `is_online` teweegbrengen geen online terugbetalingen.
 1. **[ACSD-69494](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-77/acsd-69494.md)**: Bevestigt de asynchrone terugbetalingsverzoeken met `is_online` teweegbrengen geen online terugbetalingen.
 
 Gebruik het menu links om naar een specifieke patchpagina te navigeren.
