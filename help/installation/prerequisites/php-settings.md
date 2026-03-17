@@ -19,7 +19,7 @@ In dit onderwerp wordt besproken hoe u vereiste PHP-opties kunt instellen.
 >
 >Ondersteunde PHP-versies verschillen per Adobe Commerce-release. Zie [&#x200B; systeemvereisten &#x200B;](../system-requirements.md) voor de nauwkeurige PHP versies die door de versie worden gesteund u installeert.
 
-Voor de configuratiebegeleiding van de Wolk, zie [&#x200B; PHP montages &#x200B;](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/configure/app/php-settings) in _Commerce op de gids van de Infrastructuur van de Wolk_.
+Voor de configuratiebegeleiding van de Wolk, zie [&#x200B; PHP montages &#x200B;](https://experienceleague.adobe.com/nl/docs/commerce-on-cloud/user-guide/configure/app/php-settings) in _Commerce op de gids van de Infrastructuur van de Wolk_.
 
 ## PHP Process Control
 
@@ -206,9 +206,9 @@ U stelt `opcache.ini` -opties als volgt in:
 Raadpleeg de volgende Adobe Commerce Support-artikelen voor hulp bij het oplossen van problemen met PHP:
 
 - [&#x200B; PHP versiefout of fout 404 wanneer het toegang tot van Adobe Commerce in browser &#x200B;](https://support.magento.com/hc/en-us/articles/360033117152-PHP-version-error-or-404-error-when-accessing-Magento-in-browser)
-- [&#x200B; PHP montagesfouten &#x200B;](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/php-settings-errors)
-- [&#x200B; PHP crypt uitbreiding niet behoorlijk geïnstalleerd &#x200B;](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/php-mcrypt-extension-not-installed-properly)
-- [&#x200B; PHP de kwesties van de de versiescontrole &#x200B;](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/cron-readiness-check-issues)
-- [&#x200B; Gemeenschappelijke PHP Onherstelbare Fouten en oplossingen &#x200B;](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/common-php-fatal-errors-and-solutions)
+- [&#x200B; PHP montagesfouten &#x200B;](https://experienceleague.adobe.com/nl/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/php-settings-errors)
+- [&#x200B; PHP crypt uitbreiding niet behoorlijk geïnstalleerd &#x200B;](https://experienceleague.adobe.com/nl/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/php-mcrypt-extension-not-installed-properly)
+- [&#x200B; PHP de kwesties van de de versiescontrole &#x200B;](https://experienceleague.adobe.com/nl/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/cron-readiness-check-issues)
+- [&#x200B; Gemeenschappelijke PHP Onherstelbare Fouten en oplossingen &#x200B;](https://experienceleague.adobe.com/nl/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/common-php-fatal-errors-and-solutions)
 
 <!-- Last updated from includes: 2025-04-04 22:27:22 -->
