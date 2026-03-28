@@ -3152,7 +3152,7 @@ _ACP2E-4212 - [&#x200B; de codebijdrage van GitHub &#x200B;](https://github.com/
 
 #### Kan niet navigeren tussen websites in voorvertoning voor update van schema
 
-Vóór deze correctie wordt de voorvertoning van de geplande update afgebroken wanneer wordt geprobeerd een voorvertoning van inhoud weer te geven voor winkels met aangepaste domeinen. Na deze correctie kunnen aangepaste store-domeinen ongewijzigd worden voorvertoond en in de voorvertoning van iframe worden genavigeerd. De moeilijke situatie behandelt producten, categorieën, de pagina&#39;s van CMS, en de blokken van CMS, en steunt navigatiekoppelingen die `{{store url}}` prijsverhogingstags gebruiken zoals die in [&#x200B; de Variabelen van Adobe Commerce en de Markeringen van de Prijsverhoging &#x200B;](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/variables/markup-tags) worden gedocumenteerd.
+Vóór deze correctie wordt de voorvertoning van de geplande update afgebroken wanneer wordt geprobeerd een voorvertoning van inhoud weer te geven voor winkels met aangepaste domeinen. Na deze correctie kunnen aangepaste store-domeinen ongewijzigd worden voorvertoond en in de voorvertoning van iframe worden genavigeerd. De moeilijke situatie behandelt producten, categorieën, de pagina&#39;s van CMS, en de blokken van CMS, en steunt navigatiekoppelingen die `{{store url}}` prijsverhogingstags gebruiken zoals die in [&#x200B; de Variabelen van Adobe Commerce en de Markeringen van de Prijsverhoging &#x200B;](https://experienceleague.adobe.com/nl/docs/commerce-admin/systems/variables/markup-tags) worden gedocumenteerd.
 
 _ACP2E-4308 - [&#x200B; de codebijdrage van GitHub &#x200B;](https://github.com/magento/magento2/commit/0a3b7032)_
 
