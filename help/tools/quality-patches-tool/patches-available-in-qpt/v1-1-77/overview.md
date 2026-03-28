@@ -4,9 +4,9 @@ description: Deze subsectie verstrekt een gedetailleerde beschrijving van de kwe
 feature: Tools and External Services
 role: Admin, Developer
 type: Troubleshooting
-source-git-commit: fa839814adf83d2a22840e13d4d70540270269b1
+source-git-commit: 98ccb5c357ebcb3bc2a7bb48e61b8557a65049f9
 workflow-type: tm+mt
-source-wordcount: '257'
+source-wordcount: '333'
 ht-degree: 0%
 
 ---
@@ -17,21 +17,17 @@ Deze subsectie bevat een gedetailleerde beschrijving van de problemen die zijn o
 
 QPT v1.1.77 omvat de volgende flarden:
 
-1. **ACSD-63687**: Verhelpt een kwestie waar de onjuiste prijsvertoning omdat [!DNL Redis] geheim voorgeheugenschoonmaakbeurt ontbreekt.
-1. **ACSD-68341**: De veelvoudige `X‑Magento‑Vary` koekjesupdates komen op lading PDP voor.
-1. **ACSD-68537**: De prestaties van de kassa degraderen met vele klantensegmenten.
-1. **[ACSD-68664](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-77/acsd-68664.md)**: De geplande updatevoorproef heeft fouten op de domeinen van de douaneopslag.
-1. **ACSD-68759**: De fout van de de rekeningsverwezenlijking van de klant met Arabische scène wanneer de Datum van Macht wordt getoond.
-1. **ACSD-68892**: Het inconsistente [!DNL Fastly] in het voorgeheugen onderbrengende gedrag voor cacheable pagina&#39;s.
-1. **[ACSD-69016](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-77/acsd-69016.md)**: Verhelpt een kwestie waar de speciale prijs niet op websites met verschillende tijdstreken wordt toegepast.
-1. **ACSD-69020**: De configureerbare producten verschijnen in [!UICONTROL Page Builder] carrousels wanneer de kindproducten filters aanpassen.
-1. **[ACSD-68892](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-77/acsd-68892.md)**: Verhelpt een inconsequent [!DNL Fastly] cachegedrag voor cacheable pagina&#39;s in het cachegeheugen.
-1. **ACSD-69016**: De speciale prijs wordt niet toegepast op websites met verschillende tijdstreken.
-1. **[ACSD-69020](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-77/acsd-69020.md)**: Verhelpt een kwestie waar de configureerbare producten in [!DNL Page Builder] productcarrousels verschijnen wanneer de kindproducten het filtreren voorwaarden aanpassen.
-1. **ACSD-69237**: `sales_*_async_insert` de banen van de cron verwerken slechts 100 ingangen per looppas.
-1. **ACSD-69351**: Verhelpt de kwestie waar de tegoeden van de geschenkkaart en de vervaldatums over onjuiste websites tonen.
-1. **ACSD-69311**: Verhelpt de onjuiste belastingberekening in creditmemo&#39;s na gedeeltelijke terugbetalingen van facturen.
-1. **ACSD-69494**: Bevestigt de asynchrone terugbetalingsverzoeken met `is_online` teweegbrengen geen online terugbetalingen.
-1. **[ACSD-69494](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-77/acsd-69494.md)**: Bevestigt de asynchrone terugbetalingsverzoeken met `is_online` teweegbrengen geen online terugbetalingen.
+1. **[ACSD-63687](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-77/acsd-63687.md)**: Verhelpt een kwestie waar de onjuiste prijzen worden getoond omdat het niet mogelijk is om [!DNL Redis] geheime voorgeheugen schoon te maken.
+1. **[ACSD-68341](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-77/acsd-68341.md)**: Verhelpt een kwestie waar `X-Magento-Vary` de koekjesreeksen verscheidene tijden tijdens het laden PDP, wanneer de veelvoudige klantensegmenten bij de opslag worden gecreeerd.
+1. **[ACSD-68537](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-77/acsd-68537.md)**: Verhelpt een kwestie waar de controleprestaties verminderden aangezien het aantal klantensegmenten toenam.
+1. **[ACSD-68664](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-77/acsd-68664.md)**: Verhelpt een kwestie waar de geplande updatevoorproef wanneer het proberen om inhoud voor opslag met douanedomeinen voor te vertonen afbreekt.
+1. **[ACSD-68759](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-77/acsd-68759.md)**: Bevestigt een kwestie waar het creëren van een klantenrekening ontbreekt wanneer het gebruiken van de Arabische scène en het attribuut van de Geboortedatum (DOB) wordt geplaatst om op de storefront te tonen.
+1. **[ACSD-68892](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-77/acsd-68892.md)**: Verhelpt een kwestie waar de cacheable pagina&#39;s niet behoorlijk worden opgeslagen of van het [!DNL Fastly] geheime voorgeheugen worden gediend, resulterend in inconsequent caching gedrag en verminderde prestaties.
+1. **[ACSD-69016](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-77/acsd-69016.md)**: Verhelpt een kwestie waar de speciale prijs niet voor websites van kracht wordt die in verschillende tijdstreken worden gecreeerd.
+1. **[ACSD-69020](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-77/acsd-69020.md)**: Bevestigt een kwestie waar een configureerbaar product automatisch inbegrepen in [!DNL Page Builder] lijst van de productcarrousel is als om het even welk van zijn kindproducten aan de het filtreren voorwaarden voldoet.
+1. **[ACSD-69237](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-77/acsd-69237.md)**: Bevestigt een kwestie waar het aantal ingangen die door de `sales_*_async_insert` kroonbanen kunnen worden verwerkt en worden opgenomen beperkt tot *100* per looppas.
+1. **[ACSD-69311](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-77/acsd-69311.md)**: Verhelpt een kwestie met de onjuiste belastingberekening in creditmemo&#39;s wanneer het creëren van een gedeeltelijke terugbetaling van een factuur, als een vorige creditmemo van de pagina van de ordemening werd gecreeerd.
+1. **[ACSD-69351](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-77/acsd-69351.md)**: Verhelpt een kwestie waar de saldi van de giftekaart en de vervaldata niet in overeenstemming met het toegewezen websitewerkingsgebied worden getoond.
+1. **[ACSD-69494](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-77/acsd-69494.md)**: Verhelpt een kwestie met de asynchrone terugbetalingsverrichtingen waar de terugbetalingsverzoeken met de `is_online` parameter niet correct worden verwerkt.
 
 Gebruik het menu links om naar een specifieke patchpagina te navigeren.

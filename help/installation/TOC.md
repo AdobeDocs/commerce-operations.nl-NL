@@ -2,10 +2,10 @@
 user-guide-title: Installatiehandleiding
 user-guide-description: Leer hoe u Adobe Commerce installeert voor implementaties op locatie.
 feature: Install
-source-git-commit: 73faaa2a3b9ce773e9a381d103735403966f568b
+source-git-commit: 53f21e0588603ecf19d4d904a8926c978009d449
 workflow-type: tm+mt
-source-wordcount: '173'
-ht-degree: 0%
+source-wordcount: '175'
+ht-degree: 4%
 
 ---
 
@@ -15,13 +15,13 @@ ht-degree: 0%
 - [Overzicht](overview.md)
 - [Systeemvereisten](system-requirements.md)
 - Vereisten {#prerequisites}
-   - [&#x200B; Overzicht &#x200B;](prerequisites/overview.md)
+   - [Overzicht](prerequisites/overview.md)
    - Bestandssysteem {#file-system}
       - [Overzicht](prerequisites/file-system/overview.md)
       - [Machtigingen configureren](prerequisites/file-system/configure-permissions.md)
    - Webserver {#web-server}
-      - [Nginx](prerequisites/web-server/nginx.md)
-      - [Apache](prerequisites/web-server/apache.md)
+      - [Nginx installeren](prerequisites/web-server/nginx.md)
+      - [Apache installeren](prerequisites/web-server/apache.md)
    - Databaseserver {#database-server}
       - [MySQL](prerequisites/database/mysql.md)
       - [Externe verbindingen](prerequisites/database/mysql-remote.md)
@@ -32,7 +32,7 @@ ht-degree: 0%
       - [Apache configureren](prerequisites/search-engine/configure-apache.md)
    - [PHP](prerequisites/php-settings.md)
    - Berichtenmakelaars {#message-brokers}
-      - [&#x200B; Konijn MQ &#x200B;](prerequisites/rabbitmq.md)
+      - [Konijn MQ](prerequisites/rabbitmq.md)
       - [Active MQ](prerequisites/activemq.md)
    - [Beveiliging](prerequisites/security.md)
    - [Verificatietoetsen](prerequisites/authentication-keys.md)
@@ -69,4 +69,4 @@ ht-degree: 0%
    - [Commerce verwijderen of opnieuw installeren](tutorials/uninstall.md)
    - [Thema&#39;s verwijderen](tutorials/themes.md)
    - [Het databaseschema bijwerken](tutorials/database-upgrade.md)
-- [&#x200B; Terugkeer aan Operationele Gidsen &#x200B;](https://experienceleague.adobe.com/docs/commerce-operations/operational-guides/home.html?lang=nl-NL)
+- [ Terugkeer aan Operationele Gidsen ](https://experienceleague.adobe.com/docs/commerce-operations/operational-guides/home.html)

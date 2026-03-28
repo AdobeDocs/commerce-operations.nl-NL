@@ -2,7 +2,7 @@
 title: Beveiliging en operationeel model van gedeelde verantwoordelijkheid
 description: Leer meer over de beveiligingsverantwoordelijkheden van elke partij die betrokken is bij uw Adobe Commerce-project voor cloudinfrastructuur.
 exl-id: f3cc1685-e469-4e30-b18e-55ce10dd69ce
-source-git-commit: aac78fc95b86951f352a636eef33e0b79b22a183
+source-git-commit: 7054a5286f01e26e324401f4d8505e4e0faed93e
 workflow-type: tm+mt
 source-wordcount: '2939'
 ht-degree: 0%
@@ -793,10 +793,11 @@ Merchants zijn verantwoordelijk voor het synchroniseren van gegevens tussen omge
 
 {style="table-layout:auto"}
 
+>[!NOTE]
 >
 >Handelaars moeten de meest recente versie van Live zoeken, productaanbevelingen en betalingsservices gebruiken om de hoogste stabiliteit, functionaliteit en geschiktheid voor ondersteuning te garanderen.
 >Adobe biedt geen ondersteuning voor verouderde versies en upgrades om ervoor te zorgen dat u profiteert van de nieuwste verbeteringen en foutoplossingen.
->Voor details op gesteunde versies, zie de [&#x200B; Matrijs van de Beschikbaarheid van het Product voor de Diensten van Commerce &#x200B;](https://experienceleague.adobe.com/nl/docs/commerce-operations/release/product-availability#commerce-services).
+>Voor details op gesteunde versies, zie de [ Matrijs van de Beschikbaarheid van het Product voor de Diensten van Commerce ](https://experienceleague.adobe.com/en/docs/commerce-operations/release/product-availability#commerce-services).
 
 #### Aanbevelingen voor producten
 

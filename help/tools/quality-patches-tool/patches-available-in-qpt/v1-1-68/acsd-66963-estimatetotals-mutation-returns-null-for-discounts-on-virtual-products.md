@@ -1,16 +1,16 @@
 ---
-title: 'ACSD-66963: de mutatie van &grave; estimals &grave; keert ongeldig voor kortingen op virtuele producten terug'
-description: Pas de ACSD-66963-patch toe om het Adobe Commerce-probleem op te lossen waarbij &grave; estimals' *null* retourneert voor kortingen wanneer een kortingscode wordt toegepast op een winkelwagentje met alleen virtuele producten.
+title: 'ACSD-66963: de mutatie van ` estimals ` keert ongeldig voor kortingen op virtuele producten terug'
+description: Pas de ACSD-66963-patch toe om het Adobe Commerce-probleem op te lossen waarbij ` estimals' *null* retourneert voor kortingen wanneer een kortingscode wordt toegepast op een winkelwagentje met alleen virtuele producten.
 feature: GraphQL
 role: Admin, Developer
 type: Troubleshooting
-source-git-commit: 0eede09026df98426cd3b6b1550be274c26d7e13
+exl-id: b62e48f5-a9d6-456a-97e7-96f740d8e927
+source-git-commit: 7054a5286f01e26e324401f4d8505e4e0faed93e
 workflow-type: tm+mt
-source-wordcount: '346'
+source-wordcount: '310'
 ht-degree: 0%
 
 ---
-
 
 # ACSD-66963: `estimateTotals` mutatie retourneert null voor kortingen op virtuele producten
 
@@ -28,7 +28,7 @@ ACSD-66963 flardfixes de kwestie waar `estimateTotals` *ongeldig* voor kortingen
 
 >[!NOTE]
 >
->De patch kan van toepassing worden op andere versies met nieuwe [!DNL Quality Patches Tool] versies. Om te controleren of de patch compatibel is met uw Adobe Commerce-versie, werkt u het `magento/quality-patches` -pakket bij naar de meest recente versie en controleert u de compatibiliteit op de [[!DNL Quality Patches Tool] : zoek naar patches op de pagina &#x200B;](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html?lang=nl-NL) . Gebruik de patch-id als een zoekwoord om de patch te zoeken.
+>De patch kan van toepassing worden op andere versies met nieuwe [!DNL Quality Patches Tool] versies. Om te controleren of de patch compatibel is met uw Adobe Commerce-versie, werkt u het `magento/quality-patches` -pakket bij naar de meest recente versie en controleert u de compatibiliteit op de [[!DNL Quality Patches Tool] : zoek naar patches op de pagina ](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html) . Gebruik de patch-id als een zoekwoord om de patch te zoeken.
 
 ## Probleem
 
@@ -81,63 +81,62 @@ De `estimateTotals` mutatie keert *ongeldig* voor kortingen terug wanneer een ko
 
 De informatie van de korting is inbegrepen voor wortels die slechts virtuele producten bevatten.
 
-    &quot;
-     &lbrace;
-     &quot;data&quot;: 
-     &quot;estimals&quot;: 
-     &quot;kar&quot;: 
-     &quot;prijzen&quot;: 
-     &quot;kortingen&quot;: &lbrack;
-     
-     &quot;bedrag&quot;: 
-     &quot;waarde&quot;: 100.5, 
-     &quot;valuta&quot;: &quot;USD&quot;
-    , 
-     12&rbrace; &quot;etiket&quot;: &quot;Een tweede disconteringscode voor het testen&quot;, 
-     &quot;coupon&quot;: 
-     &quot;code&quot;: &quot;z3r0c00l&quot;
-    , 
-     &quot;applied_to&quot;: &quot;ITEM&quot;, 
-     &quot;type&quot;: null 
-     
-    &rbrack; 
-     21&rbrace; 
-     
-     
-    , 
-     &quot;uitbreidingen&quot;: {} 
-     
-    &quot;
+```
+    {
+      "data": {
+        "estimateTotals": {
+          "cart": {
+            "prices": {
+              "discounts": [
+                {
+                  "amount": {
+                    "value": 100.5,
+                    "currency": "USD"
+                  },
+                  "label": "A second discount code for testing",
+                  "coupon": {
+                    "code": "z3r0c00l"
+                  },
+                  "applied_to": "ITEM",
+                  "type": null
+                }
+              ]
+            }
+          }
+        }
+      },
+      "extensions": {}
+    }
+```
 
 <u> Ware resultaten </u>:
 
 De informatie van de korting keert terug als *ongeldig* voor wortels met slechts virtuele producten.
 
-    &quot;
-    &lbrace;
-     &quot;data&quot;: 
-     &quot;estimals&quot;: 
-     &quot;kar&quot;: 
-     &quot;prijzen&quot;: 
-     &quot;kortingen&quot;: ongeldig 
-     
-     
-     
-    , 
-     &quot;uitbreidingen&quot;: {} 
-     
-    &quot;
- 5&rbrace;
+```
+    {
+      "data": {
+        "estimateTotals": {
+          "cart": {
+            "prices": {
+              "discounts": null
+            }
+          }
+        }
+      },
+      "extensions": {}
+    }
+```
 
 ## De patch toepassen
 
 Om individuele flarden toe te passen, gebruik de volgende verbindingen afhankelijk van uw plaatsingsmethode:
 
-* Op locatie Adobe Commerce of Magento Open Source: [[!DNL Quality Patches Tool] > Gebruik &#x200B;](/help/tools/quality-patches-tool/usage.md) in de handleiding [!DNL Quality Patches Tool] .
-* Adobe Commerce op wolkeninfrastructuur: [&#x200B; Verbeteringen en Patches > Pas Patches &#x200B;](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html?lang=nl-NL) in Commerce op de gids van de Infrastructuur van de Wolk toe.
+* Op locatie Adobe Commerce of Magento Open Source: [[!DNL Quality Patches Tool] > Gebruik ](/help/tools/quality-patches-tool/usage.md) in de handleiding [!DNL Quality Patches Tool] .
+* Adobe Commerce op wolkeninfrastructuur: [ Verbeteringen en Patches > Pas Patches ](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html) in Commerce op de gids van de Infrastructuur van de Wolk toe.
 
 ## Gerelateerde lezing
 
 Meer informatie over [!DNL Quality Patches Tool] vindt u in:
 
-* [[!DNL Quality Patches Tool]: Een zelfbedieningshulpmiddel voor kwaliteitspatches &#x200B;](/help/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches.md) in de gids van Hulpmiddelen.
+* [[!DNL Quality Patches Tool]: Een zelfbedieningshulpmiddel voor kwaliteitspatches ](/help/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches.md) in de gids van Hulpmiddelen.
