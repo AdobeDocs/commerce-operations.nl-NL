@@ -14,15 +14,15 @@ ht-degree: 0%
 
 Dit onderwerp maakt een lijst van configuratiepaden voor systeem-specifieke en gevoelige montages:
 
-- Het [`magento app:config:dump` bevel ](../cli/export-configuration.md) schrijft systeem-specifieke montages aan het systeem-specifieke configuratiedossier, `app/etc/env.php`, dat __ niet in broncontrole zou moeten zijn. Het schrijft ook gedeelde configuratie voor alle instanties van Commerce aan `app/etc/config.php`, zou dit dossier __ in broncontrole moeten zijn.
-- De [`magento config:sensitive:set` bevel ](../cli/set-configuration-values.md) schrijft gevoelige montages aan `app/etc/env.php`.
+- Het [`magento app:config:dump` bevel &#x200B;](../cli/export-configuration.md) schrijft systeem-specifieke montages aan het systeem-specifieke configuratiedossier, `app/etc/env.php`, dat __ niet in broncontrole zou moeten zijn. Het schrijft ook gedeelde configuratie voor alle instanties van Commerce aan `app/etc/config.php`, zou dit dossier __ in broncontrole moeten zijn.
+- De [`magento config:sensitive:set` bevel &#x200B;](../cli/set-configuration-values.md) schrijft gevoelige montages aan `app/etc/env.php`.
 
-  U kunt gevoelige waarden ook plaatsen gebruikend configuratievariabelen zoals die in [ het omgevingsvariabelen van het Gebruik worden besproken om configuratiemontages ](../reference/override-config-settings.md#environment-variables) met voeten te treden.
+  U kunt gevoelige waarden ook plaatsen gebruikend configuratievariabelen zoals die in [&#x200B; het omgevingsvariabelen van het Gebruik worden besproken om configuratiemontages &#x200B;](../reference/override-config-settings.md#environment-variables) met voeten te treden.
 
 Voor een lijst van andere configuratiepaden raadpleegt u:
 
 - [Alle configuratiepaden behalve betalingen](../reference/config-reference-general.md)
-- [ de configuratiewegen van de Betaling ](../reference/config-reference-payment.md).
+- [&#x200B; de configuratiewegen van de Betaling &#x200B;](../reference/config-reference-payment.md).
 
 >[!INFO]
 >
@@ -364,7 +364,7 @@ Deze configuratiewaarden zijn beschikbaar in Admin in **Slaat** > Montages > **C
 
 | Naam | Config-pad | Ondersteuning voor Commerce-versies | Versleuteld? | Systeemspecifiek? | gevoelig? |
 |--------------|--------------|--------------|--------------|--------------|--------------|
-| Logbestand JS-fouten in opslagsleutel voor sessie | `dev/js/session_storage_key` | ![ niet Commerce-slechts ](/help/assets/configuration/red-x.png) | | Systeemspecifiek | |
+| Logbestand JS-fouten in opslagsleutel voor sessie | `dev/js/session_storage_key` | ![&#x200B; niet Commerce-slechts &#x200B;](/help/assets/configuration/red-x.png) | | Systeemspecifiek | |
 
 {style="table-layout:auto"}
 
@@ -382,7 +382,7 @@ Deze sectie maakt een lijst van veranderlijke namen en config wegen beschikbaar 
 
 >[!INFO]
 >
->Uw keus voor deze variabele bepaalt welke [ Internationale wegen ](#international-paths) u kunt gebruiken.
+>Uw keus voor deze variabele bepaalt welke [&#x200B; Internationale wegen &#x200B;](#international-paths) u kunt gebruiken.
 
 ### PayPal-gevoelige en systeemspecifieke paden
 

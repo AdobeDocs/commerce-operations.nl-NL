@@ -14,7 +14,7 @@ ht-degree: 0%
 
 Deze configuratiewaarden zijn beschikbaar in Admin in **Opslag** > Montages > **Configuratie** > **Verkoop** > **de Methoden van de Betaling**.
 
-Het [`magento app:config:dump` bevel ](../cli/export-configuration.md) schrijft deze waarden aan het gedeelde configuratiedossier, `app/etc/config.php`, dat in broncontrole zou moeten zijn. Om naar keuze om het even welke configuratiemontages met voeten te treden of gevoelige montages te plaatsen, zie [ de milieuvariabelen van het Gebruik om configuratiemontages ](override-config-settings.md#environment-variables) met voeten te treden. Dit onderwerp staat _lijst_ gevoelige en systeem-specifieke waarden [ toe.](config-reference-sens.md)
+Het [`magento app:config:dump` bevel &#x200B;](../cli/export-configuration.md) schrijft deze waarden aan het gedeelde configuratiedossier, `app/etc/config.php`, dat in broncontrole zou moeten zijn. Om naar keuze om het even welke configuratiemontages met voeten te treden of gevoelige montages te plaatsen, zie [&#x200B; de milieuvariabelen van het Gebruik om configuratiemontages &#x200B;](override-config-settings.md#environment-variables) met voeten te treden. Dit onderwerp staat _lijst_ gevoelige en systeem-specifieke waarden [&#x200B; toe.](config-reference-sens.md)
 
 De instellingen worden verder geordend via betalingsmethode.
 
@@ -104,7 +104,7 @@ De instellingen worden verder geordend via betalingsmethode.
 
 ## Payments Pro Hosted Solution (Verenigd Koninkrijk)
 
-Deze opties zijn beschikbaar slechts als u het Verenigd Koninkrijk als [ koopvaardijland ](../reference/config-reference-sens.md#payment-sensitive-and-system-specific-paths) koos.
+Deze opties zijn beschikbaar slechts als u het Verenigd Koninkrijk als [&#x200B; koopvaardijland &#x200B;](../reference/config-reference-sens.md#payment-sensitive-and-system-specific-paths) koos.
 
 | Naam | Config-pad | Ondersteuning voor Commerce-versies? |
 |--------------|--------------|--------------|
@@ -264,7 +264,7 @@ Deze opties zijn beschikbaar slechts als u het Verenigd Koninkrijk als [ koopvaa
 
 >[!INFO]
 >
->De beschikbare wegen worden bepaald door uw keus van [ Merchant land ](../reference/config-reference-sens.md#payment-sensitive-and-system-specific-paths).
+>De beschikbare wegen worden bepaald door uw keus van [&#x200B; Merchant land &#x200B;](../reference/config-reference-sens.md#payment-sensitive-and-system-specific-paths).
 
 | Naam | Config-pad | Ondersteuning voor Commerce-versies? |
 |--------------|--------------|--------------|
@@ -521,7 +521,7 @@ Deze opties zijn beschikbaar slechts als u het Verenigd Koninkrijk als [ koopvaa
 | Ingeschakeld | `payment_es/cybersource/active` | Alleen Commerce Enterprise |
 | Betalingsactie | `payment_es/cybersource/payment_action` | Alleen Commerce Enterprise |
 | Titel | `payment_es/cybersource/title` | Alleen Commerce Enterprise |
-| Profiel-id | `payment_es/cybersource/profile_id` | Commerce Onderneming slechts \| ![ Gecodeerd ](/help/assets/configuration/cloud-enc.png) |
+| Profiel-id | `payment_es/cybersource/profile_id` | Commerce Onderneming slechts \| ![&#x200B; Gecodeerd &#x200B;](/help/assets/configuration/cloud-enc.png) |
 | Status van nieuwe bestelling | `payment_es/cybersource/order_status` | Alleen Commerce Enterprise |
 | Foutopsporing | `payment_es/cybersource/debug` | Alleen Commerce Enterprise |
 | Typen creditcard | `payment_es/cybersource/cctypes` | Alleen Commerce Enterprise |
@@ -894,8 +894,8 @@ Deze opties zijn beschikbaar slechts als u het Verenigd Koninkrijk als [ koopvaa
 | Ingeschakeld | `payment_au/cybersource/active` | Alleen Commerce Enterprise |
 | Betalingsactie | `payment_au/cybersource/payment_action` | Alleen Commerce Enterprise |
 | Titel | `payment_au/cybersource/title` | Alleen Commerce Enterprise |
-| Merchant ID | `payment_au/cybersource/merchant_id` | De Onderneming van Commerce \| ![ Gecodeerde ](/help/assets/configuration/cloud-enc.png) |
-| Profiel-id | `payment_au/cybersource/profile_id` | De Onderneming van Commerce \| ![ Gecodeerde ](/help/assets/configuration/cloud-enc.png) |
+| Merchant ID | `payment_au/cybersource/merchant_id` | De Onderneming van Commerce \| ![&#x200B; Gecodeerde &#x200B;](/help/assets/configuration/cloud-enc.png) |
+| Profiel-id | `payment_au/cybersource/profile_id` | De Onderneming van Commerce \| ![&#x200B; Gecodeerde &#x200B;](/help/assets/configuration/cloud-enc.png) |
 | Status van nieuwe bestelling | `payment_au/cybersource/order_status` | Alleen Commerce Enterprise |
 | Foutopsporing | `payment_au/cybersource/debug` | Alleen Commerce Enterprise |
 | Typen creditcard | `payment_au/cybersource/cctypes` | Alleen Commerce Enterprise |

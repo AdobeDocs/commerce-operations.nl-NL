@@ -38,7 +38,7 @@ Template instruction: Add details for the product and versions where the best pr
 
 <!-- Example 1: -->
 
-[ Alle gesteunde versies ](../../release/versions.md) van:
+[&#x200B; Alle gesteunde versies &#x200B;](../../release/versions.md) van:
 
 - Adobe Commerce over cloudinfrastructuur
 - Adobe Commerce in gebouwen
