@@ -1,30 +1,32 @@
 ---
-title: Geavanceerde  [!DNL JavaScript]  Bundelen
-description: Leer over geavanceerd  [!DNL javascript]  het bundelen in Adobe Commerce. Ontdek implementatierichtlijnen en optimalisatiestrategieën.
+title: Geavanceerde JavaScript-bundeling
+description: Meer informatie over geavanceerde JavaScript-pakketten in Adobe Commerce. Ontdek implementatierichtlijnen en optimalisatiestrategieën.
 exl-id: 81a313f8-e541-4da6-801b-8bbd892d6252
-source-git-commit: 10f324478e9a5e80fc4d28ce680929687291e990
+source-git-commit: 5d827da35414fa75649f86a2d96fa8ab9086601a
 workflow-type: tm+mt
-source-wordcount: '2133'
+source-wordcount: '2224'
 ht-degree: 0%
 
 ---
 
-# Geavanceerde [!DNL JavaScript] bundeling
+# Geavanceerde JavaScript-pakketten
 
-Bij bundeling van [!DNL JavaScript] -modules voor betere prestaties gaat het om het reduceren van twee dingen:
+Bij het bundelen van JavaScript-modules voor betere prestaties gaat het om het reduceren van twee dingen:
 
 1. Het aantal serveraanvragen.
 1. De grootte van die serververzoeken.
 
-In een modulaire toepassing, kan het aantal serververzoeken in honderden bereiken. De volgende schermafbeelding toont bijvoorbeeld alleen het begin van de lijst met [!DNL JavaScript] -modules die op de startpagina van een schone installatie zijn geladen.
+In een modulaire toepassing, kan het aantal serververzoeken in honderden bereiken. De volgende schermafbeelding toont bijvoorbeeld alleen het begin van de lijst met JavaScript-modules die op de startpagina van een schone installatie zijn geladen.
 
-![&#x200B; geen bundeling &#x200B;](../assets/performance/images/noBundling.png)
+![ geen bundeling ](../assets/performance/images/noBundling.png)
 
 ## Samenvoegen en bundelen
 
-Uit het vak biedt [!DNL Commerce] twee manieren om het aantal serveraanvragen te verminderen: samenvoegen en bundelen. Deze instellingen zijn standaard uitgeschakeld. U kunt hen binnen Admin UI in **[!UICONTROL Stores]** > **Montages** > **[!UICONTROL Configuration]** > **[!UICONTROL Advanced]** > **[!UICONTROL Developer]** > **[!UICONTROL [!DNL JavaScript] Settings]**, of van de bevellijn aanzetten.
+Commerce ondersteunt bundeling om het aantal serveraanvragen te verminderen. Bundelen is standaard uitgeschakeld. U kunt het in **[!UICONTROL Stores]** > **Montages** > **[!UICONTROL Configuration]** > **[!UICONTROL Advanced]** > **[!UICONTROL Developer]** > **[!UICONTROL JavaScript Settings]**, of van de bevellijn aanzetten.
 
-![&#x200B; het Bundelen &#x200B;](../assets/performance/images/bundlingImage.png)
+Zie [ Bundling uiteinden ](configuration.md#bundling-tips) in *beste praktijken van de Configuratie* voor derdetooling, HTTP/2, en begeleiding op afgekeurde JS en CSS fusie.
+
+![ het Bundelen ](../assets/performance/images/bundlingImage.png)
 
 ### Basisbundeling
 
@@ -34,15 +36,20 @@ Om ingebouwde bundeling van de bevellijn toe te laten:
 php -f bin/magento config:set dev/js/enable_js_bundling 1
 ```
 
-Dit is een native [!DNL Commerce] mechanisme dat alle elementen in het systeem combineert en deze onder bundels van hetzelfde formaat distribueert (bundle_0.js, bundle_1.js ... bundle_x.js):
+Dit is een native Commerce-mechanisme dat alle in het systeem aanwezige elementen combineert en deze onder bundels van hetzelfde formaat distribueert (bundle_0.js, bundle_1.js ... bundle_x.js):
 
-![[!DNL Commerce] bundling &#x200B;](../assets/performance/images/magentoBundling.png)
+![ het bundelen van Commerce ](../assets/performance/images/magentoBundling.png)
 
-Beter, maar browser laadt nog ALLE [!DNL JavaScript] bundels, niet alleen nodig.
+Beter, maar browser laadt nog ALLE bundels van JavaScript, niet alleen nodig.
 
-[!DNL Commerce] het bundelen vermindert het aantal verbindingen per pagina, maar voor elke paginaverzoek laadt het alle bundels, zelfs wanneer de gevraagde pagina slechts van dossiers binnen één of twee van de bundels kan afhangen. De prestaties verbeteren nadat de bundels in de cache van de browser zijn geplaatst. Maar omdat de browser deze bundels synchroon laadt, kan het eerste bezoek van de gebruiker aan een [!DNL Commerce] winkel even duren om de gebruikerservaring te renderen en te beschadigen.
+Commerce-pakketten verminderen het aantal verbindingen per pagina, maar voor elke paginaaanvraag worden alle bundels geladen, zelfs als de aangevraagde pagina alleen afhankelijk is van bestanden binnen een of twee van de bundels. De prestaties verbeteren nadat de bundels in de cache van de browser zijn geplaatst. Maar omdat de browser deze bundels synchroon laadt, kan het eerste bezoek van de gebruiker aan een Commerce-winkel even duren om de gebruikerservaring te renderen en te beschadigen.
 
-### Basissamenvoeging
+### Basissamenvoeging (niet aanbevolen)
+
+>[!NOTE]
+>
+>We raden u niet aan **[!UICONTROL Merge JavaScript Files]** te gebruiken. Deze instelling is alleen ontworpen voor JavaScript die synchroon is geladen in de HEAD-sectie van de pagina en kan ertoe leiden dat het maken van pakketten en [!DNL RequireJS] -logica onjuist werken. Deze eigenschap wordt alleen behouden voor achterwaartse compatibiliteit en biedt geen prestatievoordeel wanneer HTTP/2 is ingeschakeld.
+>Als u **[!UICONTROL Merge JavaScript Files]** hebt ingeschakeld en problemen ondervindt, schakelt u deze uit voordat u patches toepast. Zie [ ACSD-67908 ](../tools/quality-patches-tool/patches-available-in-qpt/v1-1-73/acsd-67908.md) als u het samenvoegen niet kunt onbruikbaar maken.
 
 Ingebouwde samenvoeging via de opdrachtregel inschakelen:
 
@@ -50,9 +57,9 @@ Ingebouwde samenvoeging via de opdrachtregel inschakelen:
 php -f bin/magento config:set dev/js/merge_files 1
 ```
 
-Met deze opdracht voegt u alle synchrone [!DNL JavaScript] bestanden samen in één bestand. Het inschakelen van samenvoeging zonder dat bundeling wordt ingeschakeld, is niet nuttig omdat [!DNL Commerce] gebruik maakt van RequireJS. Als u bundeling niet inschakelt, voegt [!DNL Commerce] alleen RequireJS en de bijbehorende configuratie samen. Wanneer u zowel bundelen als samenvoegen inschakelt, maakt [!DNL Commerce] één [!DNL JavaScript] -bestand:
+Met deze opdracht voegt u alle synchrone JavaScript-bestanden samen tot één bestand. Samenvoegen inschakelen zonder ook bundelen in te schakelen is niet nuttig omdat Commerce [!DNL RequireJS] gebruikt. Als u bundelen niet inschakelt, voegt Commerce alleen [!DNL RequireJS] en de bijbehorende configuratie samen. Wanneer u zowel bundelen als samenvoegen inschakelt, maakt Commerce één JavaScript-bestand:
 
-![&#x200B; Reëel-wereld het samenvoegen &#x200B;](../assets/performance/images/magentoMergingDevWorld.png)
+![ Reëel-wereld het samenvoegen ](../assets/performance/images/magentoMergingDevWorld.png)
 
 ## Rendertijden in de praktijk
 
@@ -60,35 +67,35 @@ De vorige gebundelde en samengevoegde laadtijden zien er goed uit in een ontwikk
 
 Om uw storefront plaatsing voor de echte wereld te testen en voor te bereiden, adviseren wij u met het Chrome inheemse throttling profiel van &quot;Traag 3G.&quot; te testen Met Trage 3G weerspiegelen onze vorige gebundelde uitvoertijden nu de verbindingsrealiteiten van veel gebruikers:
 
-![&#x200B; Reëel-wereld die &#x200B;](../assets/performance/images/magentoBundlingRealWorld.png) bundelt
+![ Reëel-wereld die ](../assets/performance/images/magentoBundlingRealWorld.png) bundelt
 
-Bij trage 3G-connectiviteit duurt het ongeveer 44 seconden om alle bundels te laden voor de startpagina van een schone [!DNL Commerce] -installatie.
+Bij Trage 3G-connectiviteit duurt het ongeveer 44 seconden om alle bundels te laden voor de startpagina van een schone Commerce-installatie.
 
 Dit geldt ook voor het samenvoegen van de bundels in één bestand. Gebruikers konden nog steeds ongeveer 42 seconden wachten op het laden van de eerste pagina, zoals hier wordt getoond:
 
-![&#x200B; Reëel-wereld het samenvoegen &#x200B;](../assets/performance/images/magentoMergingRealWorld.png)
+![ Reëel-wereld het samenvoegen ](../assets/performance/images/magentoMergingRealWorld.png)
 
-Met een geavanceerdere aanpak van [!DNL JavaScript] -bundeling kunnen we deze laadtijden verbeteren.
+Met een geavanceerdere aanpak van JavaScript-bundeling kunnen we deze laadtijden verbeteren.
 
 ## Geavanceerde bundeling
 
-Het doel van [!DNL JavaScript] -bundeling is het aantal en de grootte van aangevraagde elementen te verminderen voor elke pagina die in de browser wordt geladen. Hiervoor willen we onze bundels maken, zodat elke pagina in onze winkel alleen een gemeenschappelijke bundel en een paginaspecifieke bundel hoeft te downloaden voor elke pagina die wordt geopend.
+Het doel van JavaScript-pakketten is om het aantal en de grootte van aangevraagde elementen voor elke pagina die in de browser wordt geladen, te reduceren. Hiervoor willen we onze bundels maken, zodat elke pagina in onze winkel alleen een gemeenschappelijke bundel en een paginaspecifieke bundel hoeft te downloaden voor elke pagina die wordt geopend.
 
-U kunt dit bereiken door uw bundels op paginatypen te definiëren. U kunt de pagina&#39;s van [!DNL Commerce] indelen in verschillende paginatypen, zoals Categorie, Product, CMS, Klant, Winkel en Afhandeling. Elke pagina die in één van deze paginatypen wordt gecategoriseerd heeft een verschillende reeks module RequireJS gebiedsdelen. Wanneer u uw modules RequireJS door paginatype bundelt, zult u omhoog met slechts een handvol bundels beëindigen die de gebiedsdelen van om het even welke pagina in uw opslag behandelen.
+U kunt dit bereiken door uw bundels op paginatypen te definiëren. U kunt Commerce-pagina&#39;s indelen in verschillende paginatypen, zoals Categorie, Product, CMS, Klant, Winkel en Afhandeling. Elke pagina die in een van deze paginatypen is gecategoriseerd, heeft een andere set [!DNL RequireJS] module-afhankelijkheden. Wanneer u de [!DNL RequireJS] -modules bundelt op paginatype, krijgt u uiteindelijk slechts een handvol bundels die de afhankelijkheden van elke pagina in uw winkel bedekken.
 
 U kunt bijvoorbeeld een bundel maken voor de afhankelijkheden die op alle pagina&#39;s van toepassing zijn, een bundel voor alleen CMS-pagina&#39;s, een bundel voor alleen Catalog-pagina&#39;s, een andere bundel voor alleen Search-pagina&#39;s en een bundel voor uitcheckpagina&#39;s.
 
 U kunt ook pakketten maken op doeleinde: voor algemene functies, productgerelateerde functies, verzendfuncties, afrekenfuncties, belastingen en formuliervalidaties. Hoe u uw bundels bepaalt is aan u en de structuur van uw opslag. Sommige bundelingstrategieën werken mogelijk beter dan andere.
 
-Met een schone [!DNL Commerce] -installatie kunnen voldoende goede prestaties worden bereikt door bundels te splitsen op paginatypen, maar voor sommige aanpassingen kan een diepgaande analyse en andere distributies van elementen nodig zijn.
+Een schone Commerce-installatie biedt voldoende goede prestaties door bundels op paginatypen te splitsen, maar voor sommige aanpassingen is mogelijk een diepgaande analyse en andere distributies van bedrijfsmiddelen vereist.
 
 ### Vereiste gereedschappen
 
 In de volgende stappen moet u de volgende programma&#39;s installeren en vertrouwd zijn met deze programma&#39;s:
 
-- [&#x200B; nodejs &#x200B;](https://nodejs.org/en/download/)
-- [&#x200B; r.js &#x200B;](http://requirejs.org/docs/optimization.html#download)
-- [[!DNL PhantomJS] &#x200B;](https://phantomjs.org/) (optioneel)
+- [ nodejs ](https://nodejs.org/en/download/)
+- [ r.js ](http://requirejs.org/docs/optimization.html#download)
+- [[!DNL PhantomJS] ](https://phantomjs.org/) (optioneel)
 
 ### Voorbeeldcode
 
@@ -102,7 +109,7 @@ Volledige versies van de voorbeeldcode die in dit artikel worden gebruikt, zijn 
 
 #### 1\. Een bestand build.js toevoegen
 
-Maak een `build.js` -bestand in de hoofdmap van [!DNL Commerce] . Dit dossier zal de volledige bouwstijlconfiguratie voor uw bundels bevatten.
+Maak een `build.js` -bestand in de hoofdmap van de Commerce. Dit dossier zal de volledige bouwstijlconfiguratie voor uw bundels bevatten.
 
 ```javascript
 ({
@@ -113,9 +120,9 @@ Maak een `build.js` -bestand in de hoofdmap van [!DNL Commerce] . Dit dossier za
 
 Later wijzigen we de instelling `optimize:` van_ `none` in `uglify2` om de uitvoer van de bundel te minimaliseren. Maar voor nu, tijdens de ontwikkeling, kunt u het plaatsen aan `none` verlaten om snellere bouwstijlen te verzekeren.
 
-#### 2\. Vereiste JS-afhankelijkheden, vormen, paden en kaarten toevoegen
+#### 2\. [!DNL RequireJS] afhankelijkheden, vormen, paden en kaarten toevoegen
 
-Voeg de volgende RequireJS knopen van de bouwstijlconfiguratie, `deps`, `shim`, `paths`, en `map`, aan uw bouwstijldossier toe:
+Voeg de volgende [!DNL RequireJS] buildconfiguratieknooppunten `deps` , `shim` , `paths` en `map` toe aan het constructiebestand:
 
 ```javascript
 ({
@@ -129,11 +136,11 @@ Voeg de volgende RequireJS knopen van de bouwstijlconfiguratie, `deps`, `shim`, 
 })
 ```
 
-#### 3 De eisen-config.js-instantiewaarden samenvoegen
+#### 3 Instantiewaarden van `requirejs-config.js` samenvoegen
 
 In deze stap moet u alle meerdere `deps` -, `shim` -, `paths` - en `map` configuratieknooppunten uit het `requirejs-config.js` -bestand van uw winkel samenvoegen tot de corresponderende knooppunten in uw `build.js` -bestand. Hiertoe opent u het tabblad **[!UICONTROL Network]** in het deelvenster Gereedschappen voor ontwikkelaars van uw browser en navigeert u naar elke pagina in uw winkel, zoals de startpagina. Op het tabblad Netwerk ziet u de instantie van het `requirejs-config.js` -bestand van uw winkel bovenaan, die hier wordt gemarkeerd:
 
-![&#x200B; RequireJS configuratie &#x200B;](../assets/performance/images/RequireJSConfig.png)
+![[!DNL RequireJS] configuration ](../assets/performance/images/RequireJSConfig.png)
 
 In dit bestand vindt u meerdere items voor elk van de configuratieknooppunten (`deps` , `shim` , `paths` , `map` ). U moet deze veelvoudige knoopwaarden in de enige configuratieknooppunt van uw build.js- dossier samenvoegen. Als de `requirejs-config.js` -instantie van uw winkel bijvoorbeeld items bevat voor 15 aparte `map` knooppunten, moet u de items voor alle 15 knooppunten samenvoegen tot één `map` -knooppunt in uw `build.js` -bestand. Hetzelfde geldt voor de knooppunten `deps` , `shim` en `paths` . Zonder een script om dit proces te automatiseren kan het enige tijd duren.
 
@@ -167,16 +174,16 @@ Aan het eind van het `build.js` dossier, voeg de modules [] serie als placeholde
 })
 ```
 
-#### 5 RequireJS-afhankelijkheden ophalen
+#### 5 [!DNL RequireJS] afhankelijkheden ophalen
 
 U kunt alle [!DNL RequireJS] module gebiedsdelen van de de paginatypen van uw opslag terugwinnen door te gebruiken:
 
 1. [!DNL PhantomJS] via de opdrachtregel (ervan uitgaande dat u [!DNL PhantomJS] hebt geïnstalleerd).
-1. Vereisen JS bevel in de console van uw browser.
+1. [!DNL RequireJS] in de browserconsole.
 
 #### Als u [!DNL PhantomJS] wilt gebruiken:
 
-Maak in de hoofdmap van [!DNL Commerce] een nieuw bestand met de naam `deps.js` en kopieer het bestand in de onderstaande code. Deze code gebruikt [!DNL [!DNL PhantomJS]] om een pagina te openen en te wachten totdat de browser alle pagina-elementen laadt. Vervolgens worden alle [!DNL RequireJS] -afhankelijkheden voor een bepaalde pagina uitgevoerd.
+Maak in de hoofdmap van Commerce een nieuw bestand met de naam `deps.js` en kopieer het bestand in de onderstaande code. Deze code gebruikt [!DNL [!DNL PhantomJS]] om een pagina te openen en te wachten totdat de browser alle pagina-elementen laadt. Vervolgens worden alle [!DNL RequireJS] -afhankelijkheden voor een bepaalde pagina uitgevoerd.
 
 ```javascript
 "use strict";
@@ -204,7 +211,7 @@ if (system.args.length === 1) {
 }
 ```
 
-Open een terminal in de hoofdmap van [!DNL Commerce] en voer het script uit op elke pagina in uw winkel die een specifiek paginatype vertegenwoordigt:
+Open een terminal in de hoofdmap van Commerce en voer het script uit op elke pagina in uw winkel die een specifiek paginatype vertegenwoordigt:
 
 <pre>
 phantomjs deps.js <i> url-aan-specifiek-pagina </i> &gt; <i> tekst-dossier-vertegenwoordigen-pagina-gebiedsdelen </i>
@@ -252,9 +259,9 @@ sed -i -e 's/mixins\!.*$//g' bundle/product.txt
 
 #### 7\ Unieke en algemene bundels identificeren
 
-Het doel is om een gemeenschappelijke bundel [!DNL JavaScript] dossiers tot stand te brengen nodig door alle pagina&#39;s. Op die manier hoeft de browser alleen de algemene bundel te laden samen met een of meer specifieke paginatypen.
+Het doel is om een gemeenschappelijke bundel van JavaScript dossiers tot stand te brengen nodig door alle pagina&#39;s. Op die manier hoeft de browser alleen de algemene bundel te laden samen met een of meer specifieke paginatypen.
 
-Open een terminal in de hoofdmap van [!DNL Commerce] en gebruik de volgende opdracht om te controleren of u afhankelijkheden hebt die u in afzonderlijke bundels kunt splitsen:
+Open een terminal in de hoofdmap van Commerce en gebruik de volgende opdracht om te controleren of u afhankelijkheden hebt die u in afzonderlijke bundels kunt splitsen:
 
 ```bash
 sort bundle/*.txt |uniq -c |sort -n
@@ -287,7 +294,7 @@ Dit vertelt ons dat wij de pagina-ladingssnelheden van onze opslag waarschijnlij
 
 #### &#x200B;8. Een bestand voor afhankelijkheidsverdeling maken
 
-Als u wilt weten welke paginatypen welke afhankelijkheden nodig hebben, maakt u een nieuw bestand in de hoofdmap van [!DNL Commerce] met de naam `deps-map.sh` en kopieert u dit bestand in de onderstaande code:
+Als u wilt weten welke paginatypen welke afhankelijkheden nodig hebben, maakt u een nieuw bestand in de Commerce-hoofdmap met de naam `deps-map.sh` en kopieert u dit bestand in de onderstaande code:
 
 ```shell
 awk 'END {
@@ -307,9 +314,9 @@ awk 'END {
 }' bundle/*.txt
 ```
 
-U kunt het manuscript in [&#x200B; https://www.unix.com/shell-programming-and-scripting/140390-get-common-lines-multiple-files.html &#x200B;](https://www.unix.com/shell-programming-and-scripting/140390-get-common-lines-multiple-files.html) ook vinden
+U kunt het manuscript in [ https://www.unix.com/shell-programming-and-scripting/140390-get-common-lines-multiple-files.html ](https://www.unix.com/shell-programming-and-scripting/140390-get-common-lines-multiple-files.html) ook vinden
 
-Open een terminal in de hoofdmap van [!DNL Commerce] en voer het bestand uit:
+Open een terminal in de hoofdmap van Commerce en voer het bestand uit:
 
 ```bash
 bash deps-map.sh
@@ -341,7 +348,7 @@ Open het configuratiebestand van `build.js` en voeg uw bundels toe aan het knoop
 
 - `create`— een Booleaanse markering om de bundel te maken (waarden: `true` of `false`).
 
-- `include`— een array met elementen (tekenreeksen) die zijn opgenomen als afhankelijkheden voor de pagina. RequireJS traceert alle gebiedsdelen en omvat hen in de bundel tenzij uitgesloten.
+- `include`— een array met elementen (tekenreeksen) die zijn opgenomen als afhankelijkheden voor de pagina. [!DNL RequireJS] traceert alle afhankelijkheden en neemt deze op in de bundel, tenzij deze worden uitgesloten.
 
 - `exclude`— een array van bundels of elementen die van de bundel moeten worden uitgesloten.
 
@@ -378,7 +385,7 @@ In dit voorbeeld worden elementen `mage/bootstrap` en `requirejs/require` opnieu
 
 ### Deel 2: Bundels genereren
 
-De onderstaande stappen beschrijven het basisproces voor het genereren van efficiëntere [!DNL Commerce] -bundels. U kunt dit proces op elke gewenste manier automatiseren, maar u moet toch `nodejs` en `r.js` gebruiken om daadwerkelijk uw bundels te genereren. En als uw thema&#39;s zijn aangepast aan [!DNL JavaScript] en hetzelfde `build.js` -bestand niet opnieuw kunnen gebruiken, moet u mogelijk verschillende `build.js` configuraties per thema maken.
+In de onderstaande stappen wordt het basisproces beschreven voor het genereren van efficiëntere Commerce-bundels. U kunt dit proces op elke gewenste manier automatiseren, maar u moet toch `nodejs` en `r.js` gebruiken om daadwerkelijk uw bundels te genereren. En als uw thema&#39;s zijn aangepast aan JavaScript en hetzelfde `build.js` -bestand niet opnieuw kunnen gebruiken, moet u mogelijk verschillende `build.js` -configuraties per thema maken.
 
 #### &#x200B;1. Genereer statische winkelsites
 
@@ -399,7 +406,7 @@ Herhaal de onderstaande stappen voor elk winkelthema en elke landinstelling om b
 
 #### &#x200B;2. Verplaats de statische opslaginhoud naar een tijdelijke map
 
-Eerst, moet u de statische inhoud van de doelfolder naar één of andere tijdelijke folder verplaatsen omdat RequireJS alle inhoud binnen de doelfolder vervangt.
+Eerst moet u de statische inhoud verplaatsen van de doelmap naar een tijdelijke map, omdat [!DNL RequireJS] alle inhoud in de doelmap vervangt.
 
 ```bash
 mv pub/static/frontend/Magento/{theme}/{locale} pub/static/frontend/Magento/{theme}/{locale}_tmp
@@ -413,7 +420,7 @@ mv pub/static/frontend/Magento/luma/en_US pub/static/frontend/Magento/luma/en_US
 
 #### &#x200B;3. Voer de optimalisatiefunctie voor r.js uit
 
-Voer vervolgens de optimalisator voor r.js uit op het `build.js` -bestand vanuit de hoofdmap van [!DNL Commerce] . Paden naar alle mappen en bestanden zijn relatief ten opzichte van de werkmap.
+Voer vervolgens de optimalisatiefunctie voor r.js in het `build.js` -bestand uit vanuit de hoofdmap van Commerce. Paden naar alle mappen en bestanden zijn relatief ten opzichte van de werkmap.
 
 ```bash
 r.js -o build.js baseUrl=pub/static/frontend/Magento/luma/en_US_tmp dir=pub/static/frontend/Magento/luma/en_US
@@ -438,9 +445,9 @@ drwxr-xr-x 70 root root    4096 Mar 28 11:24 ../
 -rw-r--r--  1 root root   74233 Mar 28 11:24 shipping.js
 ```
 
-#### &#x200B;4. Configureer RequireJS om bundels te gebruiken
+#### &#x200B;4. Configureer [!DNL RequireJS] voor het gebruik van bundels
 
-Om RequireJS te krijgen om uw bundels te gebruiken, voeg een `onModuleBundleComplete` callback na de `modules` knoop in het `build.js` dossier toe:
+Als u wilt dat [!DNL RequireJS] de bundels kan gebruiken, voegt u een `onModuleBundleComplete` callback na het knooppunt `modules` in het `build.js` -bestand toe:
 
 ```javascript
 [
@@ -482,7 +489,7 @@ Voer de volgende opdracht uit om te implementeren:
 r.js -o app/design/frontend/Magento/luma/build.js baseUrl=pub/static/frontend/Magento/luma/en_US_tmp dir=pub/static/frontend/Magento/luma/en_US
 ```
 
-Open `requirejs-config.js` in de `pub/static/frontend/Magento/luma/en_US` folder om te verifiëren dat RequireJS het dossier met bundelconfiguratievraag toevoegde:
+Open `requirejs-config.js` in de `pub/static/frontend/Magento/luma/en_US` -map om te controleren of [!DNL RequireJS] het bestand heeft toegevoegd met oproepen tot bundelconfiguratie:
 
 ```javascript
 require.config({
@@ -501,13 +508,13 @@ require.config({
 
 Nadat de pagina is geladen, ziet u dat de browser verschillende afhankelijkheden en bundels laadt. Hier volgen bijvoorbeeld de resultaten voor het profiel &#39;Langzaam 3G&#39;:
 
-![&#x200B; tweemaal zo snel &#x200B;](../assets/performance/images/TwiceAsFast.png)
+![ tweemaal zo snel ](../assets/performance/images/TwiceAsFast.png)
 
-De laadtijd van de pagina voor een lege startpagina is nu twee keer zo snel als het gebruik van native [!DNL Commerce] -pakketten. Maar we kunnen nog beter.
+De laadtijd van de pagina voor een lege startpagina is nu twee keer zo snel als het gebruik van native Commerce-pakketten. Maar we kunnen nog beter.
 
 #### &#x200B;7. De bundels optimaliseren
 
-Zelfs als deze worden gecomprimeerd, zijn de [!DNL JavaScript] -bestanden nog steeds groot. U kunt ze miniateren met RequireJS, dat versterker gebruikt om [!DNL JavaScript] tot een goed resultaat te beperken.
+Zelfs als ze worden gecomprimeerd, zijn de JavaScript-bestanden nog steeds groot. U kunt deze miniaturen maken met [!DNL RequireJS] . Hierbij wordt de miniatuur van JavaScript gebruikt voor goede resultaten.
 
 Als u de optimalisator in uw `build.js` -bestand wilt inschakelen, voegt u `uglify2` toe als waarde voor de eigenschap optimize boven aan het `build.js` -bestand:
 
@@ -519,6 +526,6 @@ Als u de optimalisator in uw `build.js` -bestand wilt inschakelen, voegt u `ugli
 ```
 
 De resultaten kunnen significant zijn:
-![&#x200B; drie keer sneller &#x200B;](../assets/performance/images/ThreeTimesFaster.png)
+![ drie keer sneller ](../assets/performance/images/ThreeTimesFaster.png)
 
-De laadtijden zijn nu drie keer sneller dan bij native [!DNL Commerce] -bundeling.
+De laadtijden zijn nu drie keer sneller dan bij native Commerce-pakketten.

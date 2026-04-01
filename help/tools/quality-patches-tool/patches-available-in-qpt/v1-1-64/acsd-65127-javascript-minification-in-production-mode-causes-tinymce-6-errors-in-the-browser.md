@@ -5,9 +5,9 @@ feature: Page Builder, Page Content
 role: Admin, Developer
 exl-id: c878d5a4-8059-4bfc-93a8-0a9606e866fc
 type: Troubleshooting
-source-git-commit: 7fdb02a6d89d50ea593c5fd99d78101f89198424
+source-git-commit: d98a8f60d2bcd818ae50d754bb96a2bf0becb810
 workflow-type: tm+mt
-source-wordcount: '333'
+source-wordcount: '344'
 ht-degree: 0%
 
 ---
@@ -28,7 +28,7 @@ De ACSD-65127-patch verhelpt het probleem dat het inschakelen van JavaScript min
 
 >[!NOTE]
 >
->De patch kan van toepassing worden op andere versies met nieuwe [!DNL Quality Patches Tool] versies. Als u wilt controleren of de patch compatibel is met uw Adobe Commerce-versie, werkt u het `magento/quality-patches` -pakket bij naar de meest recente versie en controleert u de compatibiliteit op de pagina [[!DNL Quality Patches Tool] : zoek naar patches &#x200B;](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html?lang=nl-NL) . Gebruik de patch-id als een zoekwoord om de patch te zoeken.
+>De patch kan van toepassing worden op andere versies met nieuwe [!DNL Quality Patches Tool] versies. Als u wilt controleren of de patch compatibel is met uw Adobe Commerce-versie, werkt u het `magento/quality-patches` -pakket bij naar de meest recente versie en controleert u de compatibiliteit op de pagina [[!DNL Quality Patches Tool] : zoek naar patches ](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html) . Gebruik de patch-id als een zoekwoord om de patch te zoeken.
 
 ## Probleem
 
@@ -43,6 +43,10 @@ bin/magento config:set --lock-config dev/js/minify_files 1
 bin/magento config:set --lock-config dev/js/enable_js_bundling 1
 bin/magento config:set --lock-config dev/js/merge_files 1
 ```
+
+>[!NOTE]
+>
+>Adobe raadt u niet aan **[!UICONTROL Merge JavaScript Files]** in te schakelen. Zie [ JS- dossiers van de Fusie (niet geadviseerd) ](/help/implementation-playbook/best-practices/development/optimize-css-js-files.md#merge-js-files).
 
 1. Productiemodus inschakelen.
 
@@ -64,11 +68,11 @@ Geen JS-fouten in de browserconsole.
 
 Om individuele flarden toe te passen, gebruik de volgende verbindingen afhankelijk van uw plaatsingsmethode:
 
-* Op locatie Adobe Commerce of Magento Open Source: [[!DNL Quality Patches Tool] > Gebruik &#x200B;](/help/tools/quality-patches-tool/usage.md) in de handleiding [!DNL Quality Patches Tool] .
-* Adobe Commerce op wolkeninfrastructuur: [&#x200B; Verbeteringen en Patches > Pas Patches &#x200B;](https://experienceleague.adobe.com/nl/docs/commerce-on-cloud/user-guide/develop/upgrade/apply-patches) in Commerce op de gids van de Infrastructuur van de Wolk toe.
+* Op locatie Adobe Commerce of Magento Open Source: [[!DNL Quality Patches Tool] > Gebruik ](/help/tools/quality-patches-tool/usage.md) in de handleiding [!DNL Quality Patches Tool]
+* Adobe Commerce op wolkeninfrastructuur: [ Verbeteringen en Patches > Patches toepassen ](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/develop/upgrade/apply-patches) in Commerce op de gids van de Infrastructuur van de Wolk
 
 ## Gerelateerde lezing
 
 Meer informatie over [!DNL Quality Patches Tool] vindt u in:
 
-* [[!DNL Quality Patches Tool]: Een zelfbedieningshulpmiddel voor kwaliteitspatches &#x200B;](/help/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches.md) in de gids van Hulpmiddelen.
+* [[!DNL Quality Patches Tool]: Een zelfbedieningshulpmiddel voor kwaliteitspatches ](/help/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches.md) in de gids van Hulpmiddelen

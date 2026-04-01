@@ -4,9 +4,9 @@ description: Leer hoe u CSS- en JavaScript-bestanden (JS) voor Adobe Commerce-pr
 role: Developer
 feature: Best Practices
 exl-id: ff0bc407-b563-418b-9d6a-7c1dc8f235df
-source-git-commit: 5f4edc2e694c9bdbdffbe48b0e5d69907cbc0027
+source-git-commit: a08560eb307638a36fdc52224c41bdf2c5d47763
 workflow-type: tm+mt
-source-wordcount: '395'
+source-wordcount: '449'
 ht-degree: 0%
 
 ---
@@ -15,12 +15,12 @@ ht-degree: 0%
 
 Voor een meer responsieve Commerce-site optimaliseert u CSS- en JavaScript-bronbestanden (JS) en elimineert u bronnen voor het blokkeren van renderbestanden.
 
-- **optimaliseer CSS en JS dossiers** - verklein de tijd die wordt vereist om CSS en de dossiers van JavaScript (JS) te laden door Adobe Commerce te vormen om, afzonderlijke dossiers in één enkel dossier samen te voegen, te minimaliseren en te bundelen.
-- **elimineer renderen-blokkerende middelen** - overweeg het leveren van kritieke eigenschappen JS en CSS inline en het uitstellen van alle niet-kritieke stijlen JS/CSS. Voor begeleiding, zie [&#x200B; teruggeven-blokkerende middelen &#x200B;](https://web.dev/render-blocking-resources/) elimineren.
+- **optimaliseer CSS en JS dossiers** - verklein de tijd die wordt vereist om CSS en de dossiers van JavaScript (JS) te laden door Adobe Commerce te vormen om dossiers te miniaturen en te bundelen.
+- **elimineer renderen-blokkerende middelen** - overweeg het leveren van kritieke eigenschappen JS en CSS inline en het uitstellen van alle niet-kritieke stijlen JS/CSS. Voor begeleiding, zie [ teruggeven-blokkerende middelen ](https://web.dev/render-blocking-resources/) elimineren.
 
 ## Betrokken producten en versies
 
-[&#x200B; Alle gesteunde versies, 2.3 en later &#x200B;](../../../release/versions.md) van:
+[ Alle gesteunde versies, 2.3 en later ](../../../release/versions.md) van:
 
 - Adobe Commerce over cloudinfrastructuur
 - Adobe Commerce ter plaatse
@@ -37,7 +37,7 @@ Voeg of bundel geen dossiers samen als uw plaatsing HTTP/2 gebruikt. HTTP/2 down
 
 ### Admin gebruiken
 
-Om CSS samen te voegen of minificatie toe te laten, ga in [!UICONTROL **Admin** > **Slaat** > **Vestigend** > **Configuratie** > **Geavanceerd** > **Ontwikkelaar** > **CSS Montages**].
+Ga naar **[!UICONTROL Admin]** > **[!UICONTROL Stores]** > **[!UICONTROL Settings]** > **[!UICONTROL Configuration]** > **[!UICONTROL Advanced]** > **[!UICONTROL Developer]** > **[!UICONTROL CSS Settings]** om samenvoegen of miniaturen van CSS in te schakelen.
 
 ### De opdrachtregel gebruiken
 
@@ -63,9 +63,9 @@ CSS-minificatie inschakelen in Adobe Commerce op cloudinfrastructuur:
 
 ## JS-bestanden miniaturen
 
-### Admin gebruiken
+### [!UICONTROL Admin] gebruiken
 
-Op *Admin* sidebar, ga **Opslag** > **Montages** > **Configuratie** > **Geavanceerd** > **Ontwikkelaar** > **de Montages van JavaScript**.
+Ga op de zijbalk van [!UICONTROL Admin] naar **[!UICONTROL Stores]** > **[!UICONTROL Settings]** > **[!UICONTROL Configuration]** > **[!UICONTROL Advanced]** > **[!UICONTROL Developer]** > **[!UICONTROL JavaScript Settings]** .
 
 ### De opdrachtregel gebruiken
 
@@ -79,9 +79,13 @@ JS-minificatie in Adobe Commerce inschakelen op cloudinfrastructuur:
 
 1. Wijzigingen vastleggen in het `app/etc/config.php` -bestand en opnieuw implementeren.
 
-## JS-bestanden samenvoegen en bundelen
+## JS-bestanden bundelen
 
-U kunt het samenvoegen of het bundelen in Commerce Admin (het samenvoegen en het bundelen kunnen niet tezelfdertijd worden toegelaten) aanzetten: [!UICONTROL **Slaat** > **Montages** > **Configuratie** > **Geavanceerd** > **Ontwikkelaar** > **Montages van JavaScript**].
+U kunt bundeling inschakelen in de Commerce [!UICONTROL Admin] : **[!UICONTROL Stores]** > * **[!UICONTROL Settings]** > **[!UICONTROL Configuration]** > **[!UICONTROL Advanced]** > **[!UICONTROL Developer]** > **[!UICONTROL JavaScript Settings]** .
+
+>[!NOTE]
+>
+>Samenvoegen en bundelen kunnen niet tegelijkertijd worden ingeschakeld.
 
 U kunt ook ingebouwde Adobe Commerce-bundeling (basisbundeling) inschakelen via de opdrachtregel:
 
@@ -89,9 +93,18 @@ U kunt ook ingebouwde Adobe Commerce-bundeling (basisbundeling) inschakelen via 
 php -f bin/magento config:set dev/js/enable_js_bundling 1
 ```
 
+## JS-bestanden samenvoegen (niet aanbevolen) {#merge-js-files}
+
+>[!WARNING]
+>
+>We raden u niet aan **[!UICONTROL Merge JavaScript Files]** in te schakelen. Deze instelling is alleen ontworpen voor JavaScript die synchroon is geladen in de sectie **[!UICONTROL HEAD]** van de pagina en kan ertoe leiden dat het maken van pakketten en [!DNL RequireJS] -logica onjuist werken. Het wordt behouden voor achterwaartse verenigbaarheid slechts en verstrekt geen prestatiesvoordeel wanneer HTTP/2 wordt toegelaten.
+>
+>Als u **[!UICONTROL Merge JavaScript Files]** hebt ingeschakeld en problemen ondervindt, schakelt u deze uit voordat u patches toepast. Zie [ ACSD-67908 ](../../../tools/quality-patches-tool/patches-available-in-qpt/v1-1-73/acsd-67908.md) als u het samenvoegen niet kunt onbruikbaar maken.
+
 ## Aanvullende informatie
 
 - [Optimalisatie-instellingen aan de clientzijde](../../../performance/configuration.md#client-side-optimization-settings)
-- [&#x200B; Gids van de Gebruiker: Het optimaliseren van middeldossiers &#x200B;](https://experienceleague.adobe.com/nl/docs/commerce-admin/systems/tools/developer-tools#optimizing-resource-files)
-- [&#x200B; Voorste Gids van de Ontwikkelaar: CSS het samenvoegen, minificatie, en plaatsprestaties &#x200B;](https://developer.adobe.com/commerce/frontend-core/guide/css/#css-merging-minification-and-performance)
+- [ het Bundelen uiteinden ](../../../performance/configuration.md#bundling-tips) in *beste praktijken van de Configuratie* - derde het bundelen hulpmiddelen, HTTP/2, en begeleiding op afgekeurde JS en CSS samenvoegen
+- [ Gids van de Gebruiker: Het optimaliseren van middeldossiers ](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/tools/developer-tools#optimizing-resource-files)
+- [ Voorste Gids van de Ontwikkelaar: CSS het samenvoegen, minificatie, en plaatsprestaties ](https://developer.adobe.com/commerce/frontend-core/guide/css/#css-merging-minification-and-performance)
 - [Geavanceerde JavaScript-pakketten](../../../performance/advanced-js-bundling.md)
