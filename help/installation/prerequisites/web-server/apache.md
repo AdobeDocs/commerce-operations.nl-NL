@@ -1,6 +1,6 @@
 ---
 title: Apache installeren voor implementaties op locatie
-description: Leer Apache installeren en configureren voor Adobe Commerce-implementaties op locatie. Vereiste modules inschakelen, herschrijven en `.htaccess`-instellingen.
+description: Leer Apache installeren en configureren voor Adobe Commerce-implementaties op locatie. Vereiste modules inschakelen, herschrijven en &grave;.htaccess&grave;-instellingen.
 feature: Install, Configuration
 badgePaas: label="In de bedrijfsruimten" type="Informative" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Alleen van toepassing op Adobe Commerce-projecten ter plaatse."
 exl-id: a9a394c9-389f-42ef-9029-dd22c979cfb8
@@ -15,13 +15,13 @@ ht-degree: 0%
 
 Deze handleiding begeleidt u bij het installeren van Apache voor Adobe Commerce-implementaties op locatie en bij het configureren van de Apache-instellingen die Commerce nodig heeft. Dit omvat gedeelde Apache-vereisten en specifieke procedures voor het besturingssysteem voor Ubuntu en CentOS. Adobe raadt u aan de configuratie-instructies in deze handleiding op te volgen om zowel de functionaliteit als de beveiliging van de Commerce-toepassing te behouden.
 
-Adobe steunt de versies Apache die in de [ systeemvereisten ](../../system-requirements.md) voor uw versie van Adobe Commerce worden vermeld. Ondersteunde versies verschillen per release. Voor Apache is ook een ondersteunde PHP-configuratie vereist. Voor verwante PHP vereisten, zie [ PHP montages ](../php-settings.md).
+Adobe steunt de versies Apache die in de [&#x200B; systeemvereisten &#x200B;](../../system-requirements.md) voor uw versie van Adobe Commerce worden vermeld. Ondersteunde versies verschillen per release. Voor Apache is ook een ondersteunde PHP-configuratie vereist. Voor verwante PHP vereisten, zie [&#x200B; PHP montages &#x200B;](../php-settings.md).
 
 Begin met de sectie die uw milieu aanpast:
 
-- Als Apache reeds geïnstalleerd is, begin met [ de vereisten van Apache van het Overzicht ](#review-apache-requirements).
-- Als u Apache op Ubuntu moet installeren of bevorderen, ga [ installeren of bevorderen Apache op Ubuntu ](#installing-or-upgrading-apache-on-ubuntu).
-- Als u Apache op CentOS moet installeren, ga [ installeren Apache op CentOS ](#installing-apache-on-centos).
+- Als Apache reeds geïnstalleerd is, begin met [&#x200B; de vereisten van Apache van het Overzicht &#x200B;](#review-apache-requirements).
+- Als u Apache op Ubuntu moet installeren of bevorderen, ga [&#x200B; installeren of bevorderen Apache op Ubuntu &#x200B;](#installing-or-upgrading-apache-on-ubuntu).
+- Als u Apache op CentOS moet installeren, ga [&#x200B; installeren Apache op CentOS &#x200B;](#installing-apache-on-centos).
 
 ## Apache-vereisten bekijken
 
@@ -40,7 +40,7 @@ Stel `AllowEncodedSlashes` in de serverconfiguratie (globaal) of in de virtuele 
 
 ### Herschrijvingen en .htaccess configureren {#apache-rewrites-and-htaccess}
 
-Gebruik deze sectie om Apache toe te laten herschrijft en vormt het [ verdeelde `.htaccess` dossier ](https://httpd.apache.org/docs/current/howto/htaccess.html). Adobe Commerce gebruikt herschrijvingen op de server en `.htaccess` voor instructies op directoryniveau voor Apache.
+Gebruik deze sectie om Apache toe te laten herschrijft en vormt het [&#x200B; verdeelde `.htaccess` dossier &#x200B;](https://httpd.apache.org/docs/current/howto/htaccess.html). Adobe Commerce gebruikt herschrijvingen op de server en `.htaccess` voor instructies op directoryniveau voor Apache.
 
 >[!IMPORTANT]
 >
@@ -54,7 +54,7 @@ Gebruik deze sectie om Apache toe te laten herschrijft en vormt het [ verdeelde 
 
 1. Laat de toepassing toe om het verdeelde `.htaccess` configuratiedossier te gebruiken.
 
-   1. Bewerk `/etc/apache2/sites-available/000-default.conf` in Ubuntu. Voor andere lay-outs Apache of als de extra parameters worden vereist, zie de [ documentatie van Apache ](https://httpd.apache.org/docs/current/mod/mod_rewrite.html) en de [ documentatie van de de toegangscontrole van Apache ](https://httpd.apache.org/docs/2.4/mod/mod_access_compat.html#order).
+   1. Bewerk `/etc/apache2/sites-available/000-default.conf` in Ubuntu. Voor andere lay-outs Apache of als de extra parameters worden vereist, zie de [&#x200B; documentatie van Apache &#x200B;](https://httpd.apache.org/docs/current/mod/mod_rewrite.html) en de [&#x200B; documentatie van de de toegangscontrole van Apache &#x200B;](https://httpd.apache.org/docs/2.4/mod/mod_access_compat.html#order).
 
    1. Voeg de aanwijzing `AllowOverride` toe of werk deze bij voor de map waarin u Adobe Commerce wilt installeren.
 
@@ -80,12 +80,12 @@ Gebruik deze sectie om Apache toe te laten herschrijft en vormt het [ verdeelde 
 
 Adobe Commerce vereist de installatie van de volgende Apache-modules:
 
-- [ mod_deflate.c ](https://httpd.apache.org/docs/2.4/mod/mod_deflate.html)
-- [ mod_expired.c ](https://httpd.apache.org/docs/2.4/mod/mod_expires.html)
-- [ mod_headers.c ](https://httpd.apache.org/docs/2.4/mod/mod_headers.html)
-- [ mod_rewrite.c ](https://httpd.apache.org/docs/2.4/mod/mod_rewrite.html)
-- [ mod_security.c ](https://modsecurity.org)
-- [ mod_ssl.c ](https://httpd.apache.org/docs/2.4/mod/mod_ssl.html)
+- [&#x200B; mod_deflate.c &#x200B;](https://httpd.apache.org/docs/2.4/mod/mod_deflate.html)
+- [&#x200B; mod_expired.c &#x200B;](https://httpd.apache.org/docs/2.4/mod/mod_expires.html)
+- [&#x200B; mod_headers.c &#x200B;](https://httpd.apache.org/docs/2.4/mod/mod_headers.html)
+- [&#x200B; mod_rewrite.c &#x200B;](https://httpd.apache.org/docs/2.4/mod/mod_rewrite.html)
+- [&#x200B; mod_security.c &#x200B;](https://modsecurity.org)
+- [&#x200B; mod_ssl.c &#x200B;](https://httpd.apache.org/docs/2.4/mod/mod_ssl.html)
 
 ## Controleren of Apache is geïnstalleerd
 
@@ -145,7 +145,7 @@ Wanneer u Apache-serverherschrijvingen configureert, moet u het type instructies
 
 ### Upgrade van Apache op Ubuntu
 
-Als Apache al is geïnstalleerd en u een eerdere versie dan `2.4` gebruikt, voert u een upgrade uit naar Apache `2.4` of naar de meest recente versie die wordt ondersteund door de Adobe Commerce-versie die u hebt geïmplementeerd. Zie [ systeemvereisten ](../../system-requirements.md).
+Als Apache al is geïnstalleerd en u een eerdere versie dan `2.4` gebruikt, voert u een upgrade uit naar Apache `2.4` of naar de meest recente versie die wordt ondersteund door de Adobe Commerce-versie die u hebt geïmplementeerd. Zie [&#x200B; systeemvereisten &#x200B;](../../system-requirements.md).
 
 1. Pakketgegevens bijwerken:
 
@@ -171,9 +171,9 @@ Als Apache al is geïnstalleerd en u een eerdere versie dan `2.4` gebruikt, voer
    apache2 -v
    ```
 
-1. Bevestig dat de geïnstalleerde versie de versie aanpast die voor uw versie van Adobe Commerce in [ systeemvereisten ](../../system-requirements.md) wordt gesteund.
+1. Bevestig dat de geïnstalleerde versie de versie aanpast die voor uw versie van Adobe Commerce in [&#x200B; systeemvereisten &#x200B;](../../system-requirements.md) wordt gesteund.
 
-1. Laat [ toe herschrijft en `.htaccess` voor Ubuntu ](#enable-rewrites-and-htaccess-for-ubuntu).
+1. Laat [&#x200B; toe herschrijft en `.htaccess` voor Ubuntu &#x200B;](#enable-rewrites-and-htaccess-for-ubuntu).
 
 ### Herschrijven en .htaccess voor Ubuntu inschakelen
 
@@ -290,7 +290,7 @@ Wanneer u Apache-serverherschrijvingen configureert, moet u het type instructies
 
    >[!NOTE]
    >
-   >De voorafgaande waarden voor `Order` werken mogelijk niet in alle gevallen. Voor meer informatie, zie de [ documentatie Apache ](https://httpd.apache.org/docs/2.4/mod/mod_authz_host.html#order).
+   >De voorafgaande waarden voor `Order` werken mogelijk niet in alle gevallen. Voor meer informatie, zie de [&#x200B; documentatie Apache &#x200B;](https://httpd.apache.org/docs/2.4/mod/mod_authz_host.html#order).
 
 1. Sla het bestand op en sluit de teksteditor af.
 
@@ -310,7 +310,7 @@ Als u 403 Verboden fouten tegenkomt bij het openen van de site, kunt u uw Apache
 
 ### 403 Verboden fouten voor Apache oplossen
 
-Om websitebezoekers toe te laten om tot uw plaats toegang te hebben, gebruik één van [ vereisen richtlijnen ](https://httpd.apache.org/docs/2.4/howto/access.html).
+Om websitebezoekers toe te laten om tot uw plaats toegang te hebben, gebruik één van [&#x200B; vereisen richtlijnen &#x200B;](https://httpd.apache.org/docs/2.4/howto/access.html).
 
 Bijvoorbeeld:
 
@@ -325,4 +325,4 @@ Bijvoorbeeld:
 
 >[!NOTE]
 >
->De voorafgaande waarden voor `Order` werken mogelijk niet in alle gevallen. Voor meer informatie, zie de [ documentatie Apache ](https://httpd.apache.org/docs/2.4/mod/mod_access_compat.html#order).
+>De voorafgaande waarden voor `Order` werken mogelijk niet in alle gevallen. Voor meer informatie, zie de [&#x200B; documentatie Apache &#x200B;](https://httpd.apache.org/docs/2.4/mod/mod_access_compat.html#order).

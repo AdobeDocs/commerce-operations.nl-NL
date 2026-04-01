@@ -15,7 +15,7 @@ ht-degree: 0%
 
 Deze gids begeleidt u door het installeren van Nginx voor Adobe Commerce op-gebouw plaatsingen en het vormen van de montages van Nginx die Commerce vereist. Het bevat besturingssysteemspecifieke procedures voor Ubuntu en CentOS, samen met richtlijnen voor het configureren van PHP-FPM. Adobe raadt u aan de configuratie-instructies in deze handleiding op te volgen om zowel de functionaliteit als de beveiliging van de Commerce-toepassing te behouden.
 
-Adobe steunt de versies van Nginx die in de [ systeemvereisten ](../../system-requirements.md) voor uw versie van Adobe Commerce worden vermeld. Ondersteunde versies verschillen per release. Nginx vereist ook een ondersteunde PHP-FPM configuratie. Voor verwante PHP vereisten, zie [ PHP ](../php-settings.md).
+Adobe steunt de versies van Nginx die in de [&#x200B; systeemvereisten &#x200B;](../../system-requirements.md) voor uw versie van Adobe Commerce worden vermeld. Ondersteunde versies verschillen per release. Nginx vereist ook een ondersteunde PHP-FPM configuratie. Voor verwante PHP vereisten, zie [&#x200B; PHP &#x200B;](../php-settings.md).
 
 ## Installeren op Ubuntu
 
@@ -27,13 +27,13 @@ Gebruik deze sectie om Adobe Commerce op Ubuntu met Nginx, PHP en MySQL te insta
 sudo apt -y install nginx
 ```
 
-U kunt ook [ Nginx van bron ](https://www.armanism.com/blog/install-nginx-on-ubuntu) bouwen.
+U kunt ook [&#x200B; Nginx van bron &#x200B;](https://www.armanism.com/blog/install-nginx-on-ubuntu) bouwen.
 
-Nadat u de volgende secties voltooit en de toepassing installeert, gebruik het dossier van de steekproefconfiguratie om [ te vormen Nginx ](#configure-nginx). Bij deze aanbevolen configuratie blijven zowel de functionaliteit als de beveiliging van de Commerce-toepassing behouden.
+Nadat u de volgende secties voltooit en de toepassing installeert, gebruik het dossier van de steekproefconfiguratie om [&#x200B; te vormen Nginx &#x200B;](#configure-nginx). Bij deze aanbevolen configuratie blijven zowel de functionaliteit als de beveiliging van de Commerce-toepassing behouden.
 
 ### PHP-FPM installeren en configureren
 
-Adobe Commerce vereist verscheidene [ PHP uitbreidingen ](../php-settings.md) om behoorlijk te functioneren. Naast deze extensies moet u ook de extensie `php-fpm` installeren en configureren als u Nginx gebruikt.
+Adobe Commerce vereist verscheidene [&#x200B; PHP uitbreidingen &#x200B;](../php-settings.md) om behoorlijk te functioneren. Naast deze extensies moet u ook de extensie `php-fpm` installeren en configureren als u Nginx gebruikt.
 
 U installeert en configureert `php-fpm` als volgt:
 
@@ -45,7 +45,7 @@ U installeert en configureert `php-fpm` als volgt:
 
    >[!NOTE]
    >
-   >Vervang `<php-version>` met gesteunde PHP minder belangrijke die versie in [ systeemvereisten ](../../system-requirements.md) voor de versie van Adobe Commerce wordt vermeld u installeert. Gebruik in de volgende stappen dezelfde waarde in de bestandspaden, de servicenaam en het socketpad.
+   >Vervang `<php-version>` met gesteunde PHP minder belangrijke die versie in [&#x200B; systeemvereisten &#x200B;](../../system-requirements.md) voor de versie van Adobe Commerce wordt vermeld u installeert. Gebruik in de volgende stappen dezelfde waarde in de bestandspaden, de servicenaam en het socketpad.
 
 1. Open de `php.ini` bestanden in een editor:
 
@@ -67,7 +67,7 @@ U installeert en configureert `php-fpm` als volgt:
 
    >[!NOTE]
    >
-   >Adobe raadt u aan de geheugenlimiet in te stellen op 2 GB wanneer u Adobe Commerce test. Verwijs naar [ Vereiste PHP montages ](../php-settings.md) voor meer informatie.
+   >Adobe raadt u aan de geheugenlimiet in te stellen op 2 GB wanneer u Adobe Commerce test. Verwijs naar [&#x200B; Vereiste PHP montages &#x200B;](../php-settings.md) voor meer informatie.
 
 1. Sla de editor op en sluit deze af.
 
@@ -79,7 +79,7 @@ U installeert en configureert `php-fpm` als volgt:
 
 ### MySQL installeren en configureren
 
-Verwijs naar [ MySQL ](../database/mysql.md) voor meer informatie.
+Verwijs naar [&#x200B; MySQL &#x200B;](../database/mysql.md) voor meer informatie.
 
 ### Adobe Commerce installeren
 
@@ -87,11 +87,11 @@ U kunt Adobe Commerce op verschillende manieren downloaden:
 
 * [De Composer-metapakket ophalen](../../composer.md)
 
-* [ Kloon de git bewaarplaats ](https://developer.adobe.com/commerce/contributor/guides/install/clone-repository)
+* [&#x200B; Kloon de git bewaarplaats &#x200B;](https://developer.adobe.com/commerce/contributor/guides/install/clone-repository)
 
 In dit voorbeeld ziet u een op composers gebaseerde installatie die de opdrachtregel gebruikt.
 
-1. Als [ eigenaar van het dossiersysteem ](../file-system/overview.md), login aan uw toepassingsserver.
+1. Als [&#x200B; eigenaar van het dossiersysteem &#x200B;](../file-system/overview.md), login aan uw toepassingsserver.
 
 1. Wijzig de hoofdmap van de webserver of een map die u hebt geconfigureerd als een virtueel hoofddocument van de host. In dit voorbeeld gebruiken we de standaardinstelling Ubuntu `/var/www/html` .
 
@@ -119,7 +119,7 @@ In dit voorbeeld ziet u een op composers gebaseerde installatie die de opdrachtr
    composer create-project --repository=https://repo.magento.com/ magento/project-enterprise-edition <install-directory-name>
    ```
 
-   Wanneer ertoe aangezet, ga uw [ authentificatietoetsen ](../authentication-keys.md) in. Uw _openbare sleutel_ is uw gebruikersbenaming; uw _privé sleutel_ is uw wachtwoord.
+   Wanneer ertoe aangezet, ga uw [&#x200B; authentificatietoetsen &#x200B;](../authentication-keys.md) in. Uw _openbare sleutel_ is uw gebruikersbenaming; uw _privé sleutel_ is uw wachtwoord.
 
 1. Stel lees- en schrijfmachtigingen in voor de webservergroep voordat u de toepassing installeert. Dit is nodig, zodat de opdrachtregel bestanden naar het bestandssysteem kan schrijven.
 
@@ -143,7 +143,7 @@ In dit voorbeeld ziet u een op composers gebaseerde installatie die de opdrachtr
    chmod u+x bin/magento
    ```
 
-1. Installeer van de [ bevellijn ](../../advanced.md). In dit voorbeeld wordt ervan uitgegaan dat de installatiemap `magento2ee` heet en dat de databasehost zich op dezelfde computer bevindt (`localhost`):
+1. Installeer van de [&#x200B; bevellijn &#x200B;](../../advanced.md). In dit voorbeeld wordt ervan uitgegaan dat de installatiemap `magento2ee` heet en dat de databasehost zich op dezelfde computer bevindt (`localhost`):
 
    ```bash
    bin/magento setup:install \
@@ -241,7 +241,7 @@ In deze instructies wordt ervan uitgegaan dat u de standaardlocatie Ubuntu voor 
 
 ### De installatie controleren
 
-Als u de installatie wilt controleren, opent u een webbrowser en navigeert u naar de basis-URL van uw site. Voor meer informatie, zie [ de installatie ](../../next-steps/verify.md) verifiëren.
+Als u de installatie wilt controleren, opent u een webbrowser en navigeert u naar de basis-URL van uw site. Voor meer informatie, zie [&#x200B; de installatie &#x200B;](../../next-steps/verify.md) verifiëren.
 
 ## Installeren op CentOS 7
 
@@ -271,7 +271,7 @@ Nadat u de volgende secties voltooit en de toepassing installeert, gebruik een d
 
 ### PHP-FPM installeren en configureren
 
-Adobe Commerce vereist verscheidene [ PHP ](../php-settings.md) uitbreidingen om behoorlijk te functioneren. Naast deze extensies moet u ook de extensie `php-fpm` installeren en configureren als u Nginx gebruikt.
+Adobe Commerce vereist verscheidene [&#x200B; PHP &#x200B;](../php-settings.md) uitbreidingen om behoorlijk te functioneren. Naast deze extensies moet u ook de extensie `php-fpm` installeren en configureren als u Nginx gebruikt.
 
 1. Installeren `php-fpm`:
 
@@ -283,7 +283,7 @@ Adobe Commerce vereist verscheidene [ PHP ](../php-settings.md) uitbreidingen om
 
    >[!NOTE]
    >
-   >Installeer het pakket met `php-fpm` de PHP-versie die wordt ondersteund door de Adobe Commerce-versie die u installeert. Pakketnamen variëren per opslagplaats en besturingssysteem. Zie [ systeemvereisten ](../../system-requirements.md).
+   >Installeer het pakket met `php-fpm` de PHP-versie die wordt ondersteund door de Adobe Commerce-versie die u installeert. Pakketnamen variëren per opslagplaats en besturingssysteem. Zie [&#x200B; systeemvereisten &#x200B;](../../system-requirements.md).
 
 1. Verwijder de commentaarmarkering van de regel `cgi.fix_pathinfo` en wijzig de waarde in `0` .
 
@@ -297,7 +297,7 @@ Adobe Commerce vereist verscheidene [ PHP ](../php-settings.md) uitbreidingen om
 
    >[!NOTE]
    >
-   >Adobe raadt u aan de geheugenlimiet in te stellen op 2 GB wanneer u Adobe Commerce test. Verwijs naar [ Vereiste PHP montages ](../php-settings.md) voor meer informatie.
+   >Adobe raadt u aan de geheugenlimiet in te stellen op 2 GB wanneer u Adobe Commerce test. Verwijs naar [&#x200B; Vereiste PHP montages &#x200B;](../php-settings.md) voor meer informatie.
 
 1. Verwijder de commentaarmarkering van de map met het sessiepad en stel het pad in:
 
@@ -370,7 +370,7 @@ Adobe Commerce vereist verscheidene [ PHP ](../php-settings.md) uitbreidingen om
 
 ### MySQL installeren en configureren
 
-Verwijs naar [ MySQL ](../database/mysql.md) voor meer informatie.
+Verwijs naar [&#x200B; MySQL &#x200B;](../database/mysql.md) voor meer informatie.
 
 ### Adobe Commerce installeren
 
@@ -378,11 +378,11 @@ U kunt Adobe Commerce op verschillende manieren downloaden:
 
 * [De Composer-metapakket ophalen](../../composer.md)
 
-* [ Kloon de git bewaarplaats ](https://developer.adobe.com/commerce/contributor/guides/install/clone-repository)
+* [&#x200B; Kloon de git bewaarplaats &#x200B;](https://developer.adobe.com/commerce/contributor/guides/install/clone-repository)
 
 In dit voorbeeld ziet u een op composers gebaseerde installatie die de opdrachtregel gebruikt.
 
-1. Als [ eigenaar van het dossiersysteem ](../file-system/overview.md), login aan uw toepassingsserver.
+1. Als [&#x200B; eigenaar van het dossiersysteem &#x200B;](../file-system/overview.md), login aan uw toepassingsserver.
 
 1. Wijzig de hoofdmap van de webserver of een map die u hebt geconfigureerd als een virtueel hoofddocument van de host. In dit voorbeeld gebruikt u de CentOS-standaardinstelling `/usr/share/nginx/html` .
 
@@ -410,7 +410,7 @@ In dit voorbeeld ziet u een op composers gebaseerde installatie die de opdrachtr
    composer create-project --repository=https://repo.magento.com/ magento/project-enterprise-edition <install-directory-name>
    ```
 
-   Wanneer ertoe aangezet, ga uw [ authentificatietoetsen ](../authentication-keys.md) in. Uw _openbare sleutel_ is uw gebruikersbenaming; uw _privé sleutel_ is uw wachtwoord.
+   Wanneer ertoe aangezet, ga uw [&#x200B; authentificatietoetsen &#x200B;](../authentication-keys.md) in. Uw _openbare sleutel_ is uw gebruikersbenaming; uw _privé sleutel_ is uw wachtwoord.
 
 1. Stel lees- en schrijfmachtigingen in voor de webservergroep voordat u de toepassing installeert. Dit is nodig, zodat de opdrachtregel bestanden naar het bestandssysteem kan schrijven.
 
@@ -434,7 +434,7 @@ In dit voorbeeld ziet u een op composers gebaseerde installatie die de opdrachtr
    chmod u+x bin/magento
    ```
 
-1. Installeer van de [ bevellijn ](../../advanced.md). In dit voorbeeld wordt ervan uitgegaan dat de installatiemap `magento2ee` heet en dat de databasehost zich op dezelfde computer bevindt (`localhost`):
+1. Installeer van de [&#x200B; bevellijn &#x200B;](../../advanced.md). In dit voorbeeld wordt ervan uitgegaan dat de installatiemap `magento2ee` heet en dat de databasehost zich op dezelfde computer bevindt (`localhost`):
 
    ```bash
    bin/magento setup:install \
@@ -587,4 +587,4 @@ Om SELinux en firewalld te vormen:
 
 ### De installatie controleren
 
-Als u de installatie wilt controleren, opent u een webbrowser en navigeert u naar de basis-URL van uw site. Voor meer informatie, zie [ de installatie ](../../next-steps/verify.md) verifiëren.
+Als u de installatie wilt controleren, opent u een webbrowser en navigeert u naar de basis-URL van uw site. Voor meer informatie, zie [&#x200B; de installatie &#x200B;](../../next-steps/verify.md) verifiëren.
