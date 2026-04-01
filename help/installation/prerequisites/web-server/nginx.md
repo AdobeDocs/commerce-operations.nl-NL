@@ -2,7 +2,7 @@
 title: Nginx installeren voor implementaties op locatie
 description: Leer hoe u de Nginx-webserver installeert en configureert voor Adobe Commerce-implementaties op locatie. Stel PHP-FPM en uw virtuele host in.
 feature: Install, Configuration
-badgePaas: label="In de bedrijfsruimten" type="Informative" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Alleen van toepassing op Adobe Commerce-projecten ter plaatse."
+badgePaas: label="In de bedrijfsruimten" type="Informative" url="https://experienceleague.adobe.com/nl/docs/commerce/user-guides/product-solutions" tooltip="Alleen van toepassing op Adobe Commerce-projecten ter plaatse."
 exl-id: 041ddb9d-868e-4021-9388-1c9ea11bfd8f
 source-git-commit: 352a71cb88ff38c0920201f49f1d7b889509fd61
 workflow-type: tm+mt
