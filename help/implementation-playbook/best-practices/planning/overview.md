@@ -42,11 +42,11 @@ De volgende secties omvatten beste praktijkinformatie voor de planningsfase.
     <td>Configureer sites, sla weergaven op en sla ze op om de prestaties van de site te maximaliseren.</td>
   </tr>
   <tr>
-    <td><a href="https://business.adobe.com/blog/how-to/the-usual-suspects-5-configuration-issues-to-maximize-your-peak-sales">Algemene configuratieproblemen</a></td>
+    <td><a href="https://business.adobe.com/nl/blog/how-to/the-usual-suspects-5-configuration-issues-to-maximize-your-peak-sales">Algemene configuratieproblemen</a></td>
     <td>Los en verhinder de vijf gemeenschappelijkste configuratiekwesties voor de plaatsen van Adobe Commerce.</td>
   </tr>
   <tr>
-    <td><a href="https://experienceleague.adobe.com/docs/commerce-admin/systems/tools/cache-management.html">Caching</a></td>
+    <td><a href="https://experienceleague.adobe.com/docs/commerce-admin/systems/tools/cache-management.html?lang=nl-NL">Caching</a></td>
     <td>Gebruik de tools voor cachebeheer om de prestaties van uw site te verbeteren.</td>
   </tr>
   <tr>
@@ -76,11 +76,11 @@ De volgende secties omvatten beste praktijkinformatie voor de planningsfase.
     <td colspan="2"><em>Services configureren</em></td>
   </tr>
   <tr>
-    <td><a href="https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/cdn/setup-fastly/fastly-configuration.html">Snel instellen</a></td>
+    <td><a href="https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/cdn/setup-fastly/fastly-configuration.html?lang=nl-NL">Snel instellen</a></td>
     <td>Configureer snel services voor uw Adobe Commerce op het infrastructuurproject voor de cloud.</td>
   </tr>
   <tr>
-    <td><a href="https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/monitor/new-relic.html">Meldingskanalen voor New Relic configureren</a></td>
+    <td><a href="https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/monitor/new-relic.html?lang=nl-NL">Meldingskanalen voor New Relic configureren</a></td>
     <td>Open uw New Relic-dashboard en analyseer gegevens van uw Adobe Commerce over het infrastructuurproject in de cloud.</td>
   </tr>
   <tr>

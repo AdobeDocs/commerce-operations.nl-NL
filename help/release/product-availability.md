@@ -31,7 +31,7 @@ In de volgende tabel ziet u de versieondersteuning voor elke extensie ten opzich
 
 ## Commerce Services
 
-[&#x200B; de Diensten van Commerce &#x200B;](https://experienceleague.adobe.com/docs/commerce/user-guides/home.html) zijn een reeks van Adobe-ontvangen eigenschappen die robuuste functionaliteit en snelle reactietijden, samen met uw instantie van Commerce verstrekken.
+[&#x200B; de Diensten van Commerce &#x200B;](https://experienceleague.adobe.com/docs/commerce/user-guides/home.html?lang=nl-NL) zijn een reeks van Adobe-ontvangen eigenschappen die robuuste functionaliteit en snelle reactietijden, samen met uw instantie van Commerce verstrekken.
 
 Aanbevolen wordt dat verkopers de meest recente versie van een service gebruiken om de hoogste stabiliteit en functionaliteit te garanderen. In de documentatie wordt de versie beschreven die momenteel wordt uitgebracht.
 

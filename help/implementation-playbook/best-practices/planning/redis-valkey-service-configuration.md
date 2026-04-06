@@ -30,7 +30,7 @@ Gebruik deze aanbevelingen om Redis of Valkey voor Adobe Commerce caching en zit
 
 >[!NOTE]
 >
->Voor Commerce on Cloud-infrastructuuromgevingen controleert u of u de nieuwste versie van het `ece-tools` -pakket gebruikt. Als niet, [&#x200B; verbetering aan de recentste versie &#x200B;](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/dev-tools/ece-tools/update-package.html). U kunt de versie controleren die in uw lokale omgeving is geïnstalleerd met de opdracht `composer show magento/ece-tools` CLI.
+>Voor Commerce on Cloud-infrastructuuromgevingen controleert u of u de nieuwste versie van het `ece-tools` -pakket gebruikt. Als niet, [&#x200B; verbetering aan de recentste versie &#x200B;](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/dev-tools/ece-tools/update-package.html?lang=nl-NL). U kunt de versie controleren die in uw lokale omgeving is geïnstalleerd met de opdracht `composer show magento/ece-tools` CLI.
 
 ## L2-cache configureren
 
@@ -48,7 +48,7 @@ stage:
     REDIS_BACKEND: '\Magento\Framework\Cache\Backend\RemoteSynchronizedCache'
 ```
 
-Voor milieuconfiguratie op de infrastructuur van de Wolk, zie [`REDIS_BACKEND` &#x200B;](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure/env/stage/variables-deploy.html#redis_backend) configuratieverwijzing in _Commerce op de Gids van de Infrastructuur van de Wolk_.
+Voor milieuconfiguratie op de infrastructuur van de Wolk, zie [`REDIS_BACKEND` &#x200B;](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure/env/stage/variables-deploy.html?lang=nl-NL#redis_backend) configuratieverwijzing in _Commerce op de Gids van de Infrastructuur van de Wolk_.
 
 Voor installaties op-gebouw, zie [&#x200B; Redis pagina caching &#x200B;](../../../configuration/cache/redis-pg-cache.md#configure-redis-page-caching) in de _Gids van de Configuratie_ vormen.
 
@@ -62,7 +62,7 @@ stage:
     VALKEY_BACKEND: '\Magento\Framework\Cache\Backend\RemoteSynchronizedCache'
 ```
 
-Voor milieuconfiguratie op wolkeninfrastructuur, zie [`VALKEY_BACKEND` &#x200B;](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/configure/env/stage/variables-deploy#valkey_backend) configuratieverwijzing in _Commerce op de Gids van de Infrastructuur van de Wolk_.
+Voor milieuconfiguratie op wolkeninfrastructuur, zie [`VALKEY_BACKEND` &#x200B;](https://experienceleague.adobe.com/nl/docs/commerce-on-cloud/user-guide/configure/env/stage/variables-deploy#valkey_backend) configuratieverwijzing in _Commerce op de Gids van de Infrastructuur van de Wolk_.
 
 Voor installaties op-gebouw, zie [&#x200B; Valkey &#x200B;](../../../configuration/cache/config-valkey.md) in de _Gids van de Configuratie_ vormen.
 
@@ -199,7 +199,7 @@ stage:
     REDIS_USE_SLAVE_CONNECTION: true
 ```
 
-Voor milieuconfiguratie op de infrastructuur van Commerce Cloud, zie [&#x200B; REDIS_USE_SLAVE_CONNECTION &#x200B;](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure/env/stage/variables-deploy.html#redis_use_slave_connection) in _Commerce op de Gids van de Infrastructuur van de Wolk_.
+Voor milieuconfiguratie op de infrastructuur van Commerce Cloud, zie [&#x200B; REDIS_USE_SLAVE_CONNECTION &#x200B;](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure/env/stage/variables-deploy.html?lang=nl-NL#redis_use_slave_connection) in _Commerce op de Gids van de Infrastructuur van de Wolk_.
 
 Voor Adobe Commerce-installaties op locatie configureert u de nieuwe Redis-casimplementatie met de opdrachten `bin/magento setup` . Zie [&#x200B; Redis van het Gebruik voor standaardgeheime voorgeheugen &#x200B;](../../../configuration/cache/redis-pg-cache.md#configure-redis-page-caching) in de _Gids van de Configuratie_.
 
@@ -213,7 +213,7 @@ stage:
     VALKEY_USE_SLAVE_CONNECTION: true
 ```
 
-Voor milieuconfiguratie op de infrastructuur van Commerce Cloud, zie [&#x200B; VALKEY_USE_SLAVE_CONNECTION &#x200B;](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure/env/stage/variables-deploy.html#valkey_use_slave_connection) in _Commerce op de Gids van de Infrastructuur van de Wolk_.
+Voor milieuconfiguratie op de infrastructuur van Commerce Cloud, zie [&#x200B; VALKEY_USE_SLAVE_CONNECTION &#x200B;](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure/env/stage/variables-deploy.html?lang=nl-NL#valkey_use_slave_connection) in _Commerce op de Gids van de Infrastructuur van de Wolk_.
 
 Voor Adobe Commerce-installaties op locatie configureert u de nieuwe Valkey-casimplementatie met behulp van de `bin/magento setup` -opdrachten. Zie [&#x200B; Valkey &#x200B;](../../../configuration/cache/config-valkey.md) in de _Gids van de Configuratie_ vormen.
 
@@ -359,7 +359,7 @@ stage:
 
 >[!NOTE]
 >
->Het `full_page` geheim voorgeheugentype is niet relevant voor Adobe Commerce op de infrastructuurprojecten van de Wolk omdat zij [&#x200B; Fastly &#x200B;](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/cdn/fastly) gebruiken.
+>Het `full_page` geheim voorgeheugentype is niet relevant voor Adobe Commerce op de infrastructuurprojecten van de Wolk omdat zij [&#x200B; Fastly &#x200B;](https://experienceleague.adobe.com/nl/docs/commerce-cloud-service/user-guide/cdn/fastly) gebruiken.
 
 Voor installaties op-gebouw, zie [&#x200B; het geheim voorgeheugenopties van de Stale &#x200B;](../../../configuration/cache/level-two-cache.md#stale-cache-options) in de _Gids van de Configuratie_.
 
@@ -544,7 +544,7 @@ Voer de onderstaande stappen uit om een speciaal exemplaar voor sessies beschikb
 
 1. Vraag om een nieuwe instantie Redis die gewijd is aan sessies over productie- en parkeeromgevingen.
 
-   Verzend een [&#x200B; kaartje van de Steun van Adobe Commerce &#x200B;](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html#submit-ticket). Neem de bijgewerkte configuratiebestanden `.magento/services.yaml` en `.magento.app.yaml` op.
+   Verzend een [&#x200B; kaartje van de Steun van Adobe Commerce &#x200B;](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html?lang=nl-NL#submit-ticket). Neem de bijgewerkte configuratiebestanden `.magento/services.yaml` en `.magento.app.yaml` op.
 
    Deze update veroorzaakt geen onderbreking, maar het vereist een plaatsing om de nieuwe dienst te activeren.
 
@@ -619,7 +619,7 @@ Voer de onderstaande stappen uit om een speciaal exemplaar voor sessies beschikb
 
 1. Vraag om een nieuwe instantie Valkey die aan zittingen op Productie en het Opvoeren milieu&#39;s wordt gewijd.
 
-   Verzend een [&#x200B; kaartje van de Steun van Adobe Commerce &#x200B;](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html#submit-ticket). Neem de bijgewerkte configuratiebestanden `.magento/services.yaml` en `.magento.app.yaml` op.
+   Verzend een [&#x200B; kaartje van de Steun van Adobe Commerce &#x200B;](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html?lang=nl-NL#submit-ticket). Neem de bijgewerkte configuratiebestanden `.magento/services.yaml` en `.magento.app.yaml` op.
 
    Deze update veroorzaakt geen onderbreking, maar het vereist een plaatsing om de nieuwe dienst te activeren.
 
@@ -679,7 +679,7 @@ stage:
 
 ## Asynchrone vastzetten inschakelen
 
-Om `lazyfree` op Adobe Commerce op wolkeninfrastructuur toe te laten, leg een [&#x200B; kaartje van de Steun van Adobe Commerce voor &#x200B;](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html#submit-ticket) verzoekend dat de volgende Redis of Valkey configuratie op uw milieu&#39;s wordt toegepast:
+Om `lazyfree` op Adobe Commerce op wolkeninfrastructuur toe te laten, leg een [&#x200B; kaartje van de Steun van Adobe Commerce voor &#x200B;](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html?lang=nl-NL#submit-ticket) verzoekend dat de volgende Redis of Valkey configuratie op uw milieu&#39;s wordt toegepast:
 
 ```text
 lazyfree-lazy-eviction yes
@@ -701,7 +701,7 @@ Wanneer `lazyfree` wordt toegelaten, schrapt Redis of Valkey geheugenterugwinnin
 
 ## Multithreaded I/O inschakelen
 
-Om Redis I/O-threading op Adobe Commerce op wolkeninfrastructuur toe te laten, leg een [&#x200B; kaartje van de Steun van Adobe Commerce voor &#x200B;](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html#submit-ticket) verzoekend om de I/O-threading hieronder configuratie. Deze configuratie kan productie verbeteren door contactdooslezen te ontladen en schrijft en bevel het ontleden van de belangrijkste draad, ten koste van hoger gebruik CPU. Valideer onder lading en controleer uw gastheren.
+Om Redis I/O-threading op Adobe Commerce op wolkeninfrastructuur toe te laten, leg een [&#x200B; kaartje van de Steun van Adobe Commerce voor &#x200B;](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html?lang=nl-NL#submit-ticket) verzoekend om de I/O-threading hieronder configuratie. Deze configuratie kan productie verbeteren door contactdooslezen te ontladen en schrijft en bevel het ontleden van de belangrijkste draad, ten koste van hoger gebruik CPU. Valideer onder lading en controleer uw gastheren.
 
 >[!BEGINTABS]
 

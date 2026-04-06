@@ -68,4 +68,4 @@ ht-degree: 4%
       - [Controlelijst voor upgraden](best-practices/maintenance/upgrade-checklist.md)
       - [Voorwaarden voor upgrades voor MariaDB](best-practices/maintenance/mariadb-upgrade.md)
 - [Verklarende woordenlijst](glossary.md)
-- [&#x200B; Terugkeer aan Operationele Gidsen &#x200B;](https://experienceleague.adobe.com/docs/commerce-operations/operational-guides/home.html)
+- [&#x200B; Terugkeer aan Operationele Gidsen &#x200B;](https://experienceleague.adobe.com/docs/commerce-operations/operational-guides/home.html?lang=nl-NL)
