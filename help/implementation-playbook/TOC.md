@@ -48,7 +48,7 @@ ht-degree: 4%
       - [Persoonlijke inhoudsblokken](best-practices/development/private-content-block-configuration.md)
       - [Statische implementatie van inhoud](best-practices/development/static-content-deployment.md)
       - [Databasetabellen wijzigen](best-practices/development/modifying-core-and-third-party-tables.md)
-      - [ Wijzend kern en derdecode ](best-practices/development/modifying-core-and-third-party-code.md)
+      - [&#x200B; Wijzend kern en derdecode &#x200B;](best-practices/development/modifying-core-and-third-party-code.md)
    - Starten {#launch}
       - [Overzicht](best-practices/launch/overview.md)
       - [Webcrawlers configureren](best-practices/launch/robots-txt.md)
@@ -68,4 +68,4 @@ ht-degree: 4%
       - [Controlelijst voor upgraden](best-practices/maintenance/upgrade-checklist.md)
       - [Voorwaarden voor upgrades voor MariaDB](best-practices/maintenance/mariadb-upgrade.md)
 - [Verklarende woordenlijst](glossary.md)
-- [ Terugkeer aan Operationele Gidsen ](https://experienceleague.adobe.com/docs/commerce-operations/operational-guides/home.html)
+- [&#x200B; Terugkeer aan Operationele Gidsen &#x200B;](https://experienceleague.adobe.com/docs/commerce-operations/operational-guides/home.html)
