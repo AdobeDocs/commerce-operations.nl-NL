@@ -2,10 +2,10 @@
 user-guide-title: Afspeelmap voor implementatie
 user-guide-description: Leer meer over strategieën voor het plannen en implementeren van een geslaagde Adobe Commerce-site.
 mini-toc-levels: 3
-source-git-commit: 8d2dd409741717b534e4aef5e252a614ccb81f4a
+source-git-commit: 28ca422543728123edcaa41dedca6e3cc53536b6
 workflow-type: tm+mt
-source-wordcount: '163'
-ht-degree: 0%
+source-wordcount: '161'
+ht-degree: 4%
 
 ---
 
@@ -27,8 +27,7 @@ ht-degree: 0%
       - [Rapportageconfiguratie](best-practices/planning/reporting-configuration.md)
       - [Databaseconfiguratie voor cloud-implementaties &#x200B;](best-practices/planning/database-on-cloud.md)
       - [MySQL-configuratie](best-practices/planning/mysql-configuration.md)
-      - [Redis-serviceconfiguratie](best-practices/planning/redis-service-configuration.md)
-      - [Valkey-serviceconfiguratie](best-practices/planning/valkey-service-configuration.md)
+      - [Redis/Valkey-serviceconfiguratie](best-practices/planning/redis-valkey-service-configuration.md)
       - [OPcache-geheugengrootte](best-practices/planning/opcache-memory-size.md)
       - [Realpath cache-grootte](best-practices/planning/realpath-cache-size.md)
       - [Extensies](best-practices/planning/extensions.md)
@@ -49,7 +48,7 @@ ht-degree: 0%
       - [Persoonlijke inhoudsblokken](best-practices/development/private-content-block-configuration.md)
       - [Statische implementatie van inhoud](best-practices/development/static-content-deployment.md)
       - [Databasetabellen wijzigen](best-practices/development/modifying-core-and-third-party-tables.md)
-      - [&#x200B; Wijzend kern en derdecode &#x200B;](best-practices/development/modifying-core-and-third-party-code.md)
+      - [ Wijzend kern en derdecode ](best-practices/development/modifying-core-and-third-party-code.md)
    - Starten {#launch}
       - [Overzicht](best-practices/launch/overview.md)
       - [Webcrawlers configureren](best-practices/launch/robots-txt.md)
@@ -69,4 +68,4 @@ ht-degree: 0%
       - [Controlelijst voor upgraden](best-practices/maintenance/upgrade-checklist.md)
       - [Voorwaarden voor upgrades voor MariaDB](best-practices/maintenance/mariadb-upgrade.md)
 - [Verklarende woordenlijst](glossary.md)
-- [&#x200B; Terugkeer aan Operationele Gidsen &#x200B;](https://experienceleague.adobe.com/docs/commerce-operations/operational-guides/home.html?lang=nl-NL)
+- [ Terugkeer aan Operationele Gidsen ](https://experienceleague.adobe.com/docs/commerce-operations/operational-guides/home.html)
