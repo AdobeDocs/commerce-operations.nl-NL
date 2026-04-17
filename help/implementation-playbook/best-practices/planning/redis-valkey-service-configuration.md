@@ -8,9 +8,9 @@ feature: Best Practices, Cache
 feature-set: Commerce
 topic: Performance
 exl-id: 8b3c9167-d2fa-4894-af45-6924eb983487
-source-git-commit: aedff83fe473691340f0f254e7c79ef7e632ac0d
+source-git-commit: 381d58d5fc9844aca88239e8e7ac39151dfc766c
 workflow-type: tm+mt
-source-wordcount: '2139'
+source-wordcount: '1909'
 ht-degree: 0%
 
 ---
@@ -30,7 +30,7 @@ Gebruik deze aanbevelingen om Redis of Valkey voor Adobe Commerce caching en zit
 
 >[!NOTE]
 >
->Voor Commerce on Cloud-infrastructuuromgevingen controleert u of u de nieuwste versie van het `ece-tools` -pakket gebruikt. Als niet, [&#x200B; verbetering aan de recentste versie &#x200B;](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/dev-tools/ece-tools/update-package.html?lang=nl-NL). U kunt de versie controleren die in uw lokale omgeving is geïnstalleerd met de opdracht `composer show magento/ece-tools` CLI.
+>Voor Commerce on Cloud-infrastructuuromgevingen controleert u of u de nieuwste versie van het `ece-tools` -pakket gebruikt. Als niet, [ verbetering aan de recentste versie ](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/dev-tools/ece-tools/update-package.html). U kunt de versie controleren die in uw lokale omgeving is geïnstalleerd met de opdracht `composer show magento/ece-tools` CLI.
 
 ## L2-cache configureren
 
@@ -48,9 +48,9 @@ stage:
     REDIS_BACKEND: '\Magento\Framework\Cache\Backend\RemoteSynchronizedCache'
 ```
 
-Voor milieuconfiguratie op de infrastructuur van de Wolk, zie [`REDIS_BACKEND` &#x200B;](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure/env/stage/variables-deploy.html?lang=nl-NL#redis_backend) configuratieverwijzing in _Commerce op de Gids van de Infrastructuur van de Wolk_.
+Voor milieuconfiguratie op de infrastructuur van de Wolk, zie [`REDIS_BACKEND` ](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure/env/stage/variables-deploy.html#redis_backend) configuratieverwijzing in _Commerce op de Gids van de Infrastructuur van de Wolk_.
 
-Voor installaties op-gebouw, zie [&#x200B; Redis pagina caching &#x200B;](../../../configuration/cache/redis-pg-cache.md#configure-redis-page-caching) in de _Gids van de Configuratie_ vormen.
+Voor installaties op-gebouw, zie [ Redis pagina caching ](../../../configuration/cache/redis-pg-cache.md#configure-redis-page-caching) in de _Gids van de Configuratie_ vormen.
 
 >[!TAB  Valkeyconfiguratie ]
 
@@ -62,16 +62,16 @@ stage:
     VALKEY_BACKEND: '\Magento\Framework\Cache\Backend\RemoteSynchronizedCache'
 ```
 
-Voor milieuconfiguratie op wolkeninfrastructuur, zie [`VALKEY_BACKEND` &#x200B;](https://experienceleague.adobe.com/nl/docs/commerce-on-cloud/user-guide/configure/env/stage/variables-deploy#valkey_backend) configuratieverwijzing in _Commerce op de Gids van de Infrastructuur van de Wolk_.
+Voor milieuconfiguratie op wolkeninfrastructuur, zie [`VALKEY_BACKEND` ](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/configure/env/stage/variables-deploy#valkey_backend) configuratieverwijzing in _Commerce op de Gids van de Infrastructuur van de Wolk_.
 
-Voor installaties op-gebouw, zie [&#x200B; Valkey &#x200B;](../../../configuration/cache/config-valkey.md) in de _Gids van de Configuratie_ vormen.
+Voor installaties op-gebouw, zie [ Valkey ](../../../configuration/cache/config-valkey.md) in de _Gids van de Configuratie_ vormen.
 
 >[!ENDTABS]
 
 
 ### Grootte L2-cachegeheugen voor Adobe Commerce Cloud
 
-L2 geheim voorgeheugen gebruikt a [&#x200B; tijdelijk dossiersysteem &#x200B;](https://en.wikipedia.org/wiki/Tmpfs) (`/dev/shm`) als zijn opslagmechanisme. In tegenstelling tot gespecialiseerde sleutelwaardewinkels, heeft tmpfs geen zeer belangrijk uitzettingsbeleid, zodat kan het geheugengebruik onbegrensd groeien. Om uitputting te verhinderen, ontruimt Adobe Commerce automatisch de L2 opslag wanneer het gebruik een configureerbare drempel (95% door gebrek) bereikt. U kunt het geheugengebruik beheren door een grotere `/dev/shm` hoeveelheid aan te vragen of door de opschoningsdrempel te verlagen.
+L2 geheim voorgeheugen gebruikt a [ tijdelijk dossiersysteem ](https://en.wikipedia.org/wiki/Tmpfs) (`/dev/shm`) als zijn opslagmechanisme. In tegenstelling tot gespecialiseerde sleutelwaardewinkels, heeft tmpfs geen zeer belangrijk uitzettingsbeleid, zodat kan het geheugengebruik onbegrensd groeien. Om uitputting te verhinderen, ontruimt Adobe Commerce automatisch de L2 opslag wanneer het gebruik een configureerbare drempel (95% door gebrek) bereikt. U kunt het geheugengebruik beheren door een grotere `/dev/shm` hoeveelheid aan te vragen of door de opschoningsdrempel te verlagen.
 
 Pas het maximale L2-cachegeheugengebruik aan op basis van uw projectvereisten. Gebruik een van de volgende methoden:
 
@@ -129,60 +129,6 @@ df -h /dev/shm
 
 Het gebruik kan over knopen variëren, maar het zou in een gelijkaardige waarde moeten samenkomen.
 
-## Aangepaste mappen voor L2-cache configureren
-
-Wanneer het optimaliseren van L2 geheim voorgeheugenprestaties, kunt u verkiezen om de lokale geheim voorgeheugendossiers in een douane, krachtige folder, zoals een schijf van RAM op te slaan (`/dev/shm/`).
-
-Voor consistentie in de hele toepassing en om gefragmenteerde cacheopslag te voorkomen, configureert u zowel de specifieke L2-backendopties als het algemene directoryregister in het `app/etc/env.php` -bestand.
-
-**Beste praktijken:** bepaal zowel `local_backend_options['cache_dir']` als globaal `directories['cache']['path']`.
-
-- **`local_backend_options['cache_dir']`**: hiermee stuurt u de cacheadapter voor de back-end (bijvoorbeeld `Cm_Cache_Backend_File` ) naar de gesynchroniseerde L2-cachebestanden op de opgegeven locatie.
-- **`directories['cache']['path']`**: werkt het Adobe Commerce `DirectoryList` -register bij en stelt het aangepaste pad in als de definitieve systeemcachemap voor de gehele toepassing.
-
-### Meten van gesplitste cachemappen en GlusterFS-segmentatiefouten voorkomen
-
-Als u het aangepaste pad uitsluitend definieert in de `local_backend_options` , werkt de L2-cache-engine correct, maar blijft het algemene toepassingsregister `var/cache` herkennen als de standaardcachelocatie.
-
-Deze configuratiestoornis resulteert in een &quot;split-brain&quot; scenario waarbij externe extensies of kernfallback-processen tijdelijke bestanden naar de standaardmap `var/cache` schrijven.
-
-**Kritieke Gevolgen voor de Wolk van de Handel van Adobe:** Op Pro architectuur, wordt de `var/` folder opgezet op een gedeeld verdeeld dossiersysteem. Dwingend hoog-snelheidsgeheime voorgeheugen I/O over dit netwerk overweldigt de cliënt en is een primaire trekker voor **GlusterFS segmentatiefouten en cluster-brede stroomonderbrekingen**. Als u beide instellingen configureert, blijft alle I/O-cache volledig op de lokale, krachtige schijf staan.
-
-### Voorbeeld van configuratie
-
-Als u één, verenigde cachemap wilt afdwingen, werkt u het `env.php` -bestand bij en voegt u beide configuraties in:
-
-```php
-return [
-    // 1. Override the global directory registry
-    'directories' => [
-        'cache' => [
-            'path' => '/dev/shm/magento_cache'
-        ]
-    ],
-    // 2. Configure the L2 cache engine
-    'cache' => [
-        'frontend' => [
-            'default' => [
-                'backend' => '\\Magento\\Framework\\Cache\\Backend\\RemoteSynchronizedCache',
-                'backend_options' => [
-                    'remote_backend' => '\\Magento\\Framework\\Cache\\Backend\\Redis',
-                    'server' => '127.0.0.1',
-                    'port' => '6379',
-                    'database' => '1',
-                    // ... other redis configurations ...
-                    'local_backend' => 'Cm_Cache_Backend_File',
-                    'local_backend_options' => [
-                        'cache_dir' => '/dev/shm/magento_cache' 
-                    ]
-                ]
-            ]
-        ]
-    ],
-    // ...
-];
-```
-
 ## Enable slave connection
 
 Schakel de slave-verbinding in het `.magento.env.yaml` -bestand in als u wilt dat Adobe Commerce een extra alleen-lezen cacheverbinding gebruikt voor lezen terwijl het primaire eindpunt voor schrijven wordt gebruikt. Deze configuratie kan leesbelasting op de primaire cacheservice verminderen en leesverkeer effectiever distribueren.
@@ -199,9 +145,9 @@ stage:
     REDIS_USE_SLAVE_CONNECTION: true
 ```
 
-Voor milieuconfiguratie op de infrastructuur van Commerce Cloud, zie [&#x200B; REDIS_USE_SLAVE_CONNECTION &#x200B;](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure/env/stage/variables-deploy.html?lang=nl-NL#redis_use_slave_connection) in _Commerce op de Gids van de Infrastructuur van de Wolk_.
+Voor milieuconfiguratie op de infrastructuur van Commerce Cloud, zie [ REDIS_USE_SLAVE_CONNECTION ](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure/env/stage/variables-deploy.html#redis_use_slave_connection) in _Commerce op de Gids van de Infrastructuur van de Wolk_.
 
-Voor Adobe Commerce-installaties op locatie configureert u de nieuwe Redis-casimplementatie met de opdrachten `bin/magento setup` . Zie [&#x200B; Redis van het Gebruik voor standaardgeheime voorgeheugen &#x200B;](../../../configuration/cache/redis-pg-cache.md#configure-redis-page-caching) in de _Gids van de Configuratie_.
+Voor Adobe Commerce-installaties op locatie configureert u de nieuwe Redis-casimplementatie met de opdrachten `bin/magento setup` . Zie [ Redis van het Gebruik voor standaardgeheime voorgeheugen ](../../../configuration/cache/redis-pg-cache.md#configure-redis-page-caching) in de _Gids van de Configuratie_.
 
 >[!TAB  Valkeyconfiguratie ]
 
@@ -213,9 +159,9 @@ stage:
     VALKEY_USE_SLAVE_CONNECTION: true
 ```
 
-Voor milieuconfiguratie op de infrastructuur van Commerce Cloud, zie [&#x200B; VALKEY_USE_SLAVE_CONNECTION &#x200B;](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure/env/stage/variables-deploy.html?lang=nl-NL#valkey_use_slave_connection) in _Commerce op de Gids van de Infrastructuur van de Wolk_.
+Voor milieuconfiguratie op de infrastructuur van Commerce Cloud, zie [ VALKEY_USE_SLAVE_CONNECTION ](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure/env/stage/variables-deploy.html#valkey_use_slave_connection) in _Commerce op de Gids van de Infrastructuur van de Wolk_.
 
-Voor Adobe Commerce-installaties op locatie configureert u de nieuwe Valkey-casimplementatie met behulp van de `bin/magento setup` -opdrachten. Zie [&#x200B; Valkey &#x200B;](../../../configuration/cache/config-valkey.md) in de _Gids van de Configuratie_ vormen.
+Voor Adobe Commerce-installaties op locatie configureert u de nieuwe Valkey-casimplementatie met behulp van de `bin/magento setup` -opdrachten. Zie [ Valkey ](../../../configuration/cache/config-valkey.md) in de _Gids van de Configuratie_ vormen.
 
 >[!ENDTABS]
 
@@ -266,7 +212,7 @@ In dit logbestand worden de toetsen weergegeven die u vooraf kunt laden. Voer de
 redis-cli -p 6370 -n 1 hgetall "<key_name>"
 ```
 
-Voor installaties op-gebouw, zie [&#x200B; Redis preload eigenschap &#x200B;](../../../configuration/cache/redis-pg-cache.md#redis-preload-feature) in de _Gids van de Configuratie_.
+Voor installaties op-gebouw, zie [ Redis preload eigenschap ](../../../configuration/cache/redis-pg-cache.md#redis-preload-feature) in de _Gids van de Configuratie_.
 
 >[!TAB  Valkey preload zeer belangrijke configuratie ]
 
@@ -307,7 +253,7 @@ In dit logbestand worden de toetsen weergegeven die u vooraf kunt laden. Voer de
 valkey-cli -p 6370 -n 1 hgetall "<key_name>"
 ```
 
-Voor installaties op-gebouw, zie [&#x200B; Valkey preload eigenschap &#x200B;](../../../configuration/cache/valkey-pg-cache.md#valkey-preload-feature) in de _Gids van de Configuratie_.
+Voor installaties op-gebouw, zie [ Valkey preload eigenschap ](../../../configuration/cache/valkey-pg-cache.md#valkey-preload-feature) in de _Gids van de Configuratie_.
 
 >[!ENDTABS]
 
@@ -359,16 +305,16 @@ stage:
 
 >[!NOTE]
 >
->Het `full_page` geheim voorgeheugentype is niet relevant voor Adobe Commerce op de infrastructuurprojecten van de Wolk omdat zij [&#x200B; Fastly &#x200B;](https://experienceleague.adobe.com/nl/docs/commerce-cloud-service/user-guide/cdn/fastly) gebruiken.
+>Het `full_page` geheim voorgeheugentype is niet relevant voor Adobe Commerce op de infrastructuurprojecten van de Wolk omdat zij [ Fastly ](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/cdn/fastly) gebruiken.
 
-Voor installaties op-gebouw, zie [&#x200B; het geheim voorgeheugenopties van de Stale &#x200B;](../../../configuration/cache/level-two-cache.md#stale-cache-options) in de _Gids van de Configuratie_.
+Voor installaties op-gebouw, zie [ het geheim voorgeheugenopties van de Stale ](../../../configuration/cache/level-two-cache.md#stale-cache-options) in de _Gids van de Configuratie_.
 
 >[!WARNING]
 >
 >In de bovenstaande configuratie is de verouderde cache beschikbaar op de voorkant van de cache van `default` , die een &#39;verval-cache&#39;-gedrag toepast op alle cachemarkeringen die gebruikmaken van die voorkant. Magento core-cachetypen werken over het algemeen zoals u verwacht met deze instelling. Als uw project echter aangepaste code of extensies bevat die via de algemene `\Magento\Framework\App\Cache` API (bijvoorbeeld `$this->cache->save()` ) naar de cache schrijven zonder een toegewezen cachefront, kunnen die gegevens ook tijdens het opnieuw genereren worden gebruikt voor waarden van het type static.
 >
 >
->Als dit in onverwacht gedrag in uw aanpassingen resulteert, verlaten het geheime voorgeheugen van de schaal op `default` wordt onbruikbaar gemaakt en laat het slechts voor geselecteerde geheim voorgeheugentypes toe, zoals algemeen [&#x200B; op-gebouw &#x200B;](../../../configuration/cache/level-two-cache.md#stale-cache-options) wordt gedaan.
+>Als dit in onverwacht gedrag in uw aanpassingen resulteert, verlaten het geheime voorgeheugen van de schaal op `default` wordt onbruikbaar gemaakt en laat het slechts voor geselecteerde geheim voorgeheugentypes toe, zoals algemeen [ op-gebouw ](../../../configuration/cache/level-two-cache.md#stale-cache-options) wordt gedaan.
 
 ### Statische cache per cachetype afzonderlijk inschakelen
 
@@ -544,7 +490,7 @@ Voer de onderstaande stappen uit om een speciaal exemplaar voor sessies beschikb
 
 1. Vraag om een nieuwe instantie Redis die gewijd is aan sessies over productie- en parkeeromgevingen.
 
-   Verzend een [&#x200B; kaartje van de Steun van Adobe Commerce &#x200B;](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html?lang=nl-NL#submit-ticket). Neem de bijgewerkte configuratiebestanden `.magento/services.yaml` en `.magento.app.yaml` op.
+   Verzend een [ kaartje van de Steun van Adobe Commerce ](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html#submit-ticket). Neem de bijgewerkte configuratiebestanden `.magento/services.yaml` en `.magento.app.yaml` op.
 
    Deze update veroorzaakt geen onderbreking, maar het vereist een plaatsing om de nieuwe dienst te activeren.
 
@@ -576,7 +522,7 @@ Voer de onderstaande stappen uit om een speciaal exemplaar voor sessies beschikb
        min_lifetime: 60
    ```
 
-1. Verwijder zittingen van het [&#x200B; standaardgegevensbestand &#x200B;](../../../configuration/cache/redis-pg-cache.md) (`db 0`) op Redis geheim voorgeheugeninstantie.
+1. Verwijder zittingen van het [ standaardgegevensbestand ](../../../configuration/cache/redis-pg-cache.md) (`db 0`) op Redis geheim voorgeheugeninstantie.
 
    ```terminal
    redis-cli -h 127.0.0.1 -p 6370 -n 0 FLUSHDB
@@ -619,7 +565,7 @@ Voer de onderstaande stappen uit om een speciaal exemplaar voor sessies beschikb
 
 1. Vraag om een nieuwe instantie Valkey die aan zittingen op Productie en het Opvoeren milieu&#39;s wordt gewijd.
 
-   Verzend een [&#x200B; kaartje van de Steun van Adobe Commerce &#x200B;](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html?lang=nl-NL#submit-ticket). Neem de bijgewerkte configuratiebestanden `.magento/services.yaml` en `.magento.app.yaml` op.
+   Verzend een [ kaartje van de Steun van Adobe Commerce ](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html#submit-ticket). Neem de bijgewerkte configuratiebestanden `.magento/services.yaml` en `.magento.app.yaml` op.
 
    Deze update veroorzaakt geen onderbreking, maar het vereist een plaatsing om de nieuwe dienst te activeren.
 
@@ -651,7 +597,7 @@ Voer de onderstaande stappen uit om een speciaal exemplaar voor sessies beschikb
        min_lifetime: 60
    ```
 
-1. Verwijder zittingen van het [&#x200B; standaardgegevensbestand &#x200B;](../../../configuration/cache/redis-pg-cache.md) (`db 0`) op de Valkey geheim voorgeheugeninstantie.
+1. Verwijder zittingen van het [ standaardgegevensbestand ](../../../configuration/cache/redis-pg-cache.md) (`db 0`) op de Valkey geheim voorgeheugeninstantie.
 
    ```terminal
    valkey-cli -h 127.0.0.1 -p 6370 -n 0 FLUSHDB
@@ -661,7 +607,7 @@ Voer de onderstaande stappen uit om een speciaal exemplaar voor sessies beschikb
 
 ## Cachecompressie
 
-Als u meer dan 6 GB Redis of Valkey `maxmemory` gebruikt, kunt u cachecompressie inschakelen om de ruimte te verminderen die door sleutels wordt verbruikt. Houd er rekening mee dat deze instelling de client-side prestaties voor geheugenbesparingen op zich neemt. Als u over onbenutte CPU-capaciteit beschikt, kunt u het ook inschakelen. Zie [&#x200B; Redis van het Gebruik voor zittingsopslag &#x200B;](../../../configuration/cache/redis-session.md) of [&#x200B; Valkey van het Gebruik voor zittingsopslag &#x200B;](../../../configuration/cache/valkey-session.md) in de _Gids van de Configuratie_.
+Als u meer dan 6 GB Redis of Valkey `maxmemory` gebruikt, kunt u cachecompressie inschakelen om de ruimte te verminderen die door sleutels wordt verbruikt. Houd er rekening mee dat deze instelling de client-side prestaties voor geheugenbesparingen op zich neemt. Als u over onbenutte CPU-capaciteit beschikt, kunt u het ook inschakelen. Zie [ Redis van het Gebruik voor zittingsopslag ](../../../configuration/cache/redis-session.md) of [ Valkey van het Gebruik voor zittingsopslag ](../../../configuration/cache/valkey-session.md) in de _Gids van de Configuratie_.
 
 ```yaml
 stage:
@@ -679,7 +625,7 @@ stage:
 
 ## Asynchrone vastzetten inschakelen
 
-Om `lazyfree` op Adobe Commerce op wolkeninfrastructuur toe te laten, leg een [&#x200B; kaartje van de Steun van Adobe Commerce voor &#x200B;](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html?lang=nl-NL#submit-ticket) verzoekend dat de volgende Redis of Valkey configuratie op uw milieu&#39;s wordt toegepast:
+Om `lazyfree` op Adobe Commerce op wolkeninfrastructuur toe te laten, leg een [ kaartje van de Steun van Adobe Commerce voor ](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html#submit-ticket) verzoekend dat de volgende Redis of Valkey configuratie op uw milieu&#39;s wordt toegepast:
 
 ```text
 lazyfree-lazy-eviction yes
@@ -701,7 +647,7 @@ Wanneer `lazyfree` wordt toegelaten, schrapt Redis of Valkey geheugenterugwinnin
 
 ## Multithreaded I/O inschakelen
 
-Om Redis I/O-threading op Adobe Commerce op wolkeninfrastructuur toe te laten, leg een [&#x200B; kaartje van de Steun van Adobe Commerce voor &#x200B;](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html?lang=nl-NL#submit-ticket) verzoekend om de I/O-threading hieronder configuratie. Deze configuratie kan productie verbeteren door contactdooslezen te ontladen en schrijft en bevel het ontleden van de belangrijkste draad, ten koste van hoger gebruik CPU. Valideer onder lading en controleer uw gastheren.
+Om Redis I/O-threading op Adobe Commerce op wolkeninfrastructuur toe te laten, leg een [ kaartje van de Steun van Adobe Commerce voor ](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html#submit-ticket) verzoekend om de I/O-threading hieronder configuratie. Deze configuratie kan productie verbeteren door contactdooslezen te ontladen en schrijft en bevel het ontleden van de belangrijkste draad, ten koste van hoger gebruik CPU. Valideer onder lading en controleer uw gastheren.
 
 >[!BEGINTABS]
 
