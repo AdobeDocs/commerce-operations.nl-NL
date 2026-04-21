@@ -2,33 +2,31 @@
 title: Levenscyclusbeleid voor software
 description: Leer meer over de belangrijkste datums voor het einde van de softwareondersteuning voor Adobe Commerce-releases.
 exl-id: 9ee4ecc8-d893-412a-a605-5a8606a1b9a9
-source-git-commit: 2e81a28502d369bc8903e6b9e9154e693260234d
+source-git-commit: 3e7cef954a2be506c6f72e704710d16ed1d9b7a3
 workflow-type: tm+mt
-source-wordcount: '612'
-ht-degree: 3%
+source-wordcount: '807'
+ht-degree: 2%
 
 ---
 
 
 # Adobe Commerce-levenscyclusbeleid
 
-Voor Adobe Commerce 2.4.4 en latere versies:
+Om het Adobe Commerce-levenscyclusbeleid te stroomlijnen en de bedrijfskritieke behoeften van klanten te ondersteunen, biedt Adobe een ondersteuningsvenster van drie jaar vanaf de datum van de algemene beschikbaarheid (GA) voor elke versie en biedt het tijdens deze periode kwaliteitsoplossingen. Voor data en details op het eind van softwaresteun voor elke versie, zie het [ Eind van softwaresteun ](#end-of-software-support) lijst.
 
-- Om het levenscyclusbeleid van Adobe Commerce te stroomlijnen en de opdracht-kritieke behoeften van klanten te steunen, breidde Adobe het steunvenster tot drie jaar uit van de Algemene datum van de Beschikbaarheid (GA) voor Adobe Commerce 2.4.4 en later. Adobe biedt kwaliteitscorrecties voor 2.4.4 en latere releases voor een periode van drie jaar. De klanten kunnen tot kwaliteitsmoeilijke situaties toegang hebben door [&#x200B; Steun van Adobe Commerce &#x200B;](https://experienceleague.adobe.com/nl/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide) te contacteren of door zelf-dient [[!DNL Quality Patches Tool] &#x200B;](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html?lang=nl-NL) als hun versie nog voor kwaliteitssteun verkiest. In de volgende tabel wordt het einde van de softwaresupportdatums voor de Adobe Commerce-releaselijnen beschreven.
+Tijdens het drie jaar durende supportvenster hebben klanten toegang tot:
 
-- Adobe biedt beveiligingsoplossingen via een beveiligingspatchrelease voor de ondersteuningsperiode van drie jaar.
+- **de moeilijke situaties van de Kwaliteit** - Klanten kunnen tot kwaliteitsmoeilijke situaties toegang hebben door [ Steun van Adobe Commerce ](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide) of door zelf-dient [[!DNL Quality Patches Tool] te contacteren ](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html). In de volgende tabel wordt het einde van de softwaresupportdatums voor de Adobe Commerce-releaselijnen beschreven.
 
-- Voor kritieke veiligheidskwesties, zoals nul-dag kwetsbaarheid, verstrekt Adobe [&#x200B; hotfixes &#x200B;](https://support.magento.com/hc/en-us/sections/360003869892-Known-issues-patches-attached-) voor alle klanten op een gesteunde versie, zelfs als zij niet op het recentste flard of de versie van het veiligheidspatch zijn. Een hotfix is niet uitgebreid en biedt geen oplossing voor alle beveiligingsproblemen die worden opgelost door een upgrade naar de nieuwste versie uit te voeren.
+- **de moeilijke situaties van de Veiligheid** - Adobe verstrekt veiligheidsmoeilijke situaties door cumulatieve veiligheidspatches en niet-cumulatieve [ geïsoleerde dossiers van het veiligheidspatch ](versioning-policy.md#isolated-security-fixes) voor de periode van de drie jaar steun.
 
-- Adobe biedt geen beveiligings- en kwaliteitsoplossingen voor services en softwareafhankelijkheden van derden (zoals PHP en MySQL) die het einde van de levensduur kunnen bereiken terwijl klanten de ondersteuningsperiode van drie jaar voor Adobe Commerce hebben. Zie de [&#x200B; systeemvereisten &#x200B;](../installation/system-requirements.md) voor een volledige lijst van geteste en gesteunde derdetechnologieën.
+- **Hotfixes** - voor kritieke veiligheidskwesties, zoals nul-dag kwetsbaarheid, verstrekt Adobe [ hotfixes ](https://support.magento.com/hc/en-us/sections/360003869892-Known-issues-patches-attached-) voor alle klanten op een gesteunde versie, zelfs als zij niet op de recentste flardversie of veiligheidsflardversie zijn. Een hotfix is niet uitgebreid en biedt geen oplossing voor alle beveiligingsproblemen die worden opgelost door een upgrade naar de nieuwste versie uit te voeren.
 
-- Voor Adobe Commerce op Cloud-klanten die versie 2.4.4 en 2.4.5 gebruiken, past Adobe automatisch PHP 8.1 levenslange beveiligingsoplossingen toe op de infrastructuur, zodat deze klanten niet worden beïnvloed door PHP 8.1 end-of-support. Klanten op locatie die Adobe Commerce 2.4.4 en 2.4.5 gebruiken, moeten contact opnemen met de ondersteuning van Adobe om zo nodig beveiligingspatches voor de PHP 8.1-levensduur aan te vragen.
-
-- Adobe biedt compatibiliteit met services en softwareafhankelijkheden van derden, terwijl klanten de ondersteuningsperiode van drie jaar voor Adobe Commerce gebruiken in het bereik van patchreleases die alleen betrekking hebben op beveiliging, maar alleen wanneer dit mogelijk is zonder dat dit wijzigingen met terugwerkende kracht tot gevolg heeft.
+Adobe biedt geen beveiligings- en kwaliteitsoplossingen voor services en softwareafhankelijkheden van derden (zoals PHP en MySQL) die het einde van de levensduur kunnen bereiken terwijl klanten in de drie jaar durende of verlengde ondersteuningsperiode voor Adobe Commerce zitten. Zie de [ systeemvereisten ](../installation/system-requirements.md) voor een volledige lijst van geteste en gesteunde derdetechnologieën.
 
 ## Uitgebreide ondersteuning
 
-Adobe moedigt klanten aan om zo snel mogelijk een upgrade uit te voeren. Om echter meer flexibiliteit te bieden om af te stemmen op upgradeplannen en bedrijfsbehoeften, biedt Adobe een ondersteuningsverlenging van één jaar zonder extra kosten voor Adobe Commerce-klanten op versies 2.4.4 en 2.4.5. De ondersteuningsextensie omvat kwaliteits- en beveiligingspatches voor de kerntoepassing gedurende maximaal één jaar.
+Adobe moedigt klanten aan om zo snel mogelijk een upgrade uit te voeren. Om echter meer flexibiliteit te bieden om af te stemmen op upgradeplannen en bedrijfsbehoeften, biedt Adobe een ondersteuningsverlenging van één jaar zonder extra kosten voor Adobe Commerce-klanten op versie 2.4.6. De ondersteuningsextensie omvat kwaliteits- en beveiligingspatches voor de kerntoepassing gedurende maximaal één jaar. De uitgebreide ondersteuning voor Adobe Commerce 2.4.4- en 2.4.5-versies loopt af in april en augustus 2026, zoals gepland.
 
 >[!NOTE]
 >
@@ -36,25 +34,52 @@ Adobe moedigt klanten aan om zo snel mogelijk een upgrade uit te voeren. Om echt
 
 ## Einde van softwareondersteuning
 
-| Geen | Algemene beschikbaarheid | Eind van regelmatige steun <sup> 1 </sup> | Einde van uitgebreide ondersteuning | Afhankelijke PHP-versie | Afhankelijke MariaDB-versie |
-|----------------------|----------------------|------------------------------------|-------------------------|-----------------------|---------------------------|
-| Adobe Commerce 2.4.8 | 8 april 2025 | 11 april 2028 | NVT | 8.3 en 8.4 | 11,4 |
-| Adobe Commerce 2.4.7 | 9 april 2024 | 9 april 2027 | NVT | 8.2 en 8.3 | 10.11 <sup> 3 </sup> |
-| Adobe Commerce 2.4.6 | 14 maart 2023 | 11 augustus, 2026 <sup> 2 </sup> | NVT | 8.1 en 8.2 | 10.11 <sup> 4 </sup> |
-| Adobe Commerce 2.4.5 | 9 augustus 2022 | 12 augustus 2025 | 11 augustus 2026 | 8,1 | 10.6 <sup> 5 </sup> |
-| Adobe Commerce 2.4.4 | 12 april 2022 | 12 april 2025 | 14 april 2026 | 8,1 | 10.6 <sup> 6 </sup> |
+| Geen | Algemene beschikbaarheid | Eind van regelmatige steun <sup> 1 </sup> | Einde van uitgebreide ondersteuning |
+|----------------------|----------------------|------------------------------------|-------------------------|
+| Adobe Commerce 2.4.8 | 8 april 2025 | 31 mei 2028 | TBD |
+| Adobe Commerce 2.4.7 | 9 april 2024 | 31 mei 2027 | TBD |
+| Adobe Commerce 2.4.6 | 14 maart 2023 | 11 augustus 2026 | 30 augustus 2027 |
+| Adobe Commerce 2.4.5 | 9 augustus 2022 | 12 augustus 2025 | 11 augustus 2026 |
+| Adobe Commerce 2.4.4 | 12 april 2022 | 12 april 2025 | 14 april 2026 |
 
 {style="table-layout:auto"}
 
 >[!NOTE]
 >
->- <sup> 1 </sup> Eind van softwaresteun omvat zowel eind van kwaliteitsmoeilijke situaties als eind van veiligheidsmoeilijke situaties.
->- <sup> 2 </sup> Bijgewerkt om zich op het eind van uitgebreide steun voor 2.4.5 te richten.
->- <sup> 3 </sup> Beginnend met het 2.4.7-p6 veiligheidspatch.
->- <sup> 4 </sup> Beginnend met 2.4.6-p11 veiligheidspatch.
->- <sup> 5 </sup> Beginnend met 2.4.5-p11 veiligheidspatch.
->- <sup> 6 </sup> Beginnend met 2.4.4-p12 veiligheidspatch.
->- Zie [&#x200B; Beleid van de Levenscyclus van de Software &#x200B;](https://www.adobe.com/content/dam/cc/en/legal/terms/enterprise/pdfs/Adobe-Commerce-Software-Lifecycle-Policy.pdf).
+>- <sup> 1 </sup> als u een klant van Adobe Commerce bent, kunt u veiligheid en kwaliteitsmoeilijke situaties voor een extra jaar door de uitgebreide steunperiode blijven ontvangen.
+>- Zie [ Beleid van de Levenscyclus van de Software ](https://www.adobe.com/content/dam/cc/en/legal/terms/enterprise/pdfs/Adobe-Commerce-Software-Lifecycle-Policy.pdf).
+
+## Extra beveiligingsoplossingen voor Adobe Commerce 2.4.4 en 2.4.5
+
+Bij wijze van eenmalige uitzondering biedt Adobe een uitgebreide beveiligingstijd voor Adobe Commerce-versies 2.4.4 en 2.4.5 om klanten extra tijd te geven om naar Adobe Commerce as a Cloud Service te migreren of een upgrade naar een ondersteunde releaselijn uit te voeren.
+
+Houd rekening met het volgende tijdens deze beveiligingsperiode voor inrichtingsopdrachten:
+
+- **Geïsoleerd dossier van het veiligheidspatch slechts** - een geïsoleerd dossier van het veiligheidspatch zal voor deze versies volgens het versieschema worden vrijgegeven. Tijdens deze periode worden geen beveiligingspatchreleases (geen nieuwe -p-versies) geleverd.
+
+  Om een geïsoleerd dossier van het veiligheidspatch toe te passen, moeten de klanten op de recentste veiligheid-enige flardversie (de recentste - p versie) voor hun gesteunde versielijn zijn, aangezien de geïsoleerde veiligheidsmoeilijke situaties exclusief tegen die versie worden getest.
+
+- **geen kwaliteitsmoeilijke situaties of ingenieursbijstand** - geen insectenmoeilijke situaties, kwaliteitsupdates ([ Hulpmiddel van de Patches van de Kwaliteit ](../tools/quality-patches-tool/usage.md)), of technische bijstand ([ de Steun van Adobe Commerce ](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide)) zal voor versies 2.4.4 of 2.4.5 tijdens deze periode worden verstrekt.
+
+- **naleving PCI wordt niet gewaarborgd:** - Omdat 2.4.4 en 2.4.5 PHP versies gebruiken die eind van het leven hebben bereikt, kan de naleving PCI niet voor verkopers op die versies worden gewaarborgd. Als u deze versies blijft uitvoeren, kan de PCI-compatibiliteit in gevaar komen.
+
+Om volledige veiligheidsdekking te handhaven en naleving PCI te verzekeren, moeten de klanten aan een momenteel gesteunde versie van Adobe Commerce zo spoedig mogelijk bevorderen of aan [ Adobe Commerce as a Cloud Service ](https://experienceleague.adobe.com/en/docs/commerce/cloud-service/overview) migreren.
+
+| Geen | Algemene beschikbaarheid | Einde van uitgebreide ondersteuning | Oplossingen voor einde van beveiliging |
+|----------------------|----------------------|-------------------------|------------------------------------|
+| Adobe Commerce 2.4.5 | 9 augustus 2022 | 11 augustus 2026 | Mei 2027 |
+| Adobe Commerce 2.4.4 | 12 april 2022 | 14 april 2026 | Mei 2027 |
+
+{style="table-layout:auto"}
+
+>[!NOTE]
+>
+>Aanvullende beveiligingsoplossingen zijn alleen beschikbaar voor Adobe Commerce-klanten en zijn niet beschikbaar voor de Magento Open Source-codebasis.
+
+
+## Tijdlijn voor ondersteuning
+
+De steunchronologie kaarten steunen periodes kwartaal door kwartaal voor elke de versielijn van Adobe Commerce. Gebruik de lijsten die vroeger in dit onderwerp voor nauwkeurige einddata worden verstrekt.
 
 <table style="table-layout:auto">
 <thead>
@@ -106,6 +131,7 @@ Adobe moedigt klanten aan om zo snel mogelijk een upgrade uit te voeren. Om echt
     <td></td>
     <td colspan="13" style="background-color:#67ac68;"></td>
     <td colspan="4" style="background-color:#ffd700;"></td>
+    <td colspan="5" style="background-color:#FFBF00"></td>
     <td colspan="10"></td>
   </tr>
   <tr>
@@ -113,12 +139,14 @@ Adobe moedigt klanten aan om zo snel mogelijk een upgrade uit te voeren. Om echt
     <td colspan="2"></td>
     <td colspan="13" style="background-color:#67ac68;"></td>
     <td colspan="4" style="background-color:#ffd700;"></td>
+    <td colspan="4" style="background-color:#FFBF00"></td>
     <td colspan="9"></td>
   </tr>
   <tr>
     <td>2.4.6.</td>
     <td colspan="4"></td>
     <td colspan="15" style="background-color:#67ac68;"></td>
+    <td colspan="4" style="background-color:#ffd700;"></td>
     <td colspan="10"></td>
   </tr>
   <tr>
@@ -147,6 +175,10 @@ Adobe moedigt klanten aan om zo snel mogelijk een upgrade uit te voeren. Om echt
   <tr>
    <td style="background-color:#ffd700;"></td>
    <td>Uitgebreide ondersteuning</td>
+  </tr>
+    <tr>
+   <td style="background-color:#FFBF00;"> </td>
+   <td>Uitgebreide beveiligingsoplossingen</td>
   </tr>
  </tbody>
 </table>

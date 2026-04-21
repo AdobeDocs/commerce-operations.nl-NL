@@ -1,7 +1,7 @@
 ---
-source-git-commit: 4a2266f2df235b98ed3b738af4b97cb4b74dc664
+source-git-commit: 52c330f62d722a4cae7f7f360ca61eca0f04b961
 workflow-type: tm+mt
-source-wordcount: '265'
+source-wordcount: '388'
 ht-degree: 0%
 
 ---
@@ -17,8 +17,17 @@ Beveiligingspatchreleases kunnen ook wijzigingen met betrekking tot de naleving 
 
 Elke beveiligingspatchrelease is gebaseerd op de vorige volledige patchrelease. Het bevat kwaliteits- en beveiligingsoplossingen van eerdere patchreleases en beveiligingsoplossingen die zijn gemaakt tussen de vorige volledige patchrelease en de beveiligingspatchrelease.
 
-Voor instructies bij het downloaden van en het toepassen van veiligheidspatches, zie [&#x200B; hoe te om veiligheidspatches &#x200B;](https://experienceleague.adobe.com/nl/docs/commerce-knowledge-base/kb/how-to/how-to-obtain-and-apply-security-patches) in _Adobe Commerce Knowledgebase_ te verkrijgen en toe te passen.
+Voor instructies bij het downloaden van en het toepassen van veiligheidspatches, zie [ hoe te om veiligheidspatches ](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/how-to/how-to-obtain-and-apply-security-patches) in _Adobe Commerce Knowledgebase_ te verkrijgen en toe te passen.
 
 >[!NOTE]
 >
->Uitgebreide beveiligingspatches voor 2.4.4 en 2.4.5 zijn alleen beschikbaar voor Adobe Commerce-klanten en niet voor de Magento Open Source-codebasis. Zie [&#x200B; Uitgebreide Steun &#x200B;](https://experienceleague.adobe.com/nl/docs/commerce-operations/release/planning/lifecycle-policy#extended-support).
+>Uitgebreide beveiligingspatches zijn alleen beschikbaar voor Adobe Commerce-klanten en zijn niet beschikbaar voor de Magento Open Source-codebasis. Zie [ Uitgebreide Steun ](https://experienceleague.adobe.com/en/docs/commerce-operations/release/planning/lifecycle-policy#extended-support).
+
+## Geïsoleerd bestand met beveiligingspatches
+
+Geïsoleerde beveiligingspatchbestanden zijn niet-cumulatieve, zelfstandige patchbestanden die alleen oplossingen voor een of meer beveiligingskwetsbaarheden bevatten, zonder aanvullende functie-updates of niet-beveiligingsupdates. Deze patches worden onafhankelijk vrijgegeven om sneller herstel mogelijk te maken en worden opgenomen in de volgende volledige beveiligingspatch. Details over de kwetsbaarheden worden verstrekt in het bijbehorende veiligheidsbulletin, dat met een artikel van de Kennisbank (KB) met instructies voor het toepassen van de flard en extra informatie verbindt.
+
+Om een geïsoleerd dossier van het veiligheidspatch toe te passen, moeten de klanten op de recentste veiligheid-enige flardversie (de recentste - p versie) voor hun gesteunde versielijn zijn, aangezien de geïsoleerde dossiers van het veiligheidspatch uitsluitend tegen die versie worden getest.
+
+Zie het [ Centrum van de Veiligheid ](https://helpx.adobe.com/security/products/magento.html) om de recentste veiligheidsupdates beschikbaar voor Adobe Commerce te vinden.
+
