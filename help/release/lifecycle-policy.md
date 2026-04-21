@@ -16,7 +16,7 @@ Om het Adobe Commerce-levenscyclusbeleid te stroomlijnen en de bedrijfskritieke 
 
 Tijdens het drie jaar durende supportvenster hebben klanten toegang tot:
 
-- **de moeilijke situaties van de Kwaliteit** - Klanten kunnen tot kwaliteitsmoeilijke situaties toegang hebben door [&#x200B; Steun van Adobe Commerce &#x200B;](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide) of door zelf-dient [[!DNL Quality Patches Tool] te contacteren &#x200B;](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html). In de volgende tabel wordt het einde van de softwaresupportdatums voor de Adobe Commerce-releaselijnen beschreven.
+- **de moeilijke situaties van de Kwaliteit** - Klanten kunnen tot kwaliteitsmoeilijke situaties toegang hebben door [&#x200B; Steun van Adobe Commerce &#x200B;](https://experienceleague.adobe.com/nl/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide) of door zelf-dient [[!DNL Quality Patches Tool] te contacteren &#x200B;](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html?lang=nl-NL). In de volgende tabel wordt het einde van de softwaresupportdatums voor de Adobe Commerce-releaselijnen beschreven.
 
 - **de moeilijke situaties van de Veiligheid** - Adobe verstrekt veiligheidsmoeilijke situaties door cumulatieve veiligheidspatches en niet-cumulatieve [&#x200B; geïsoleerde dossiers van het veiligheidspatch &#x200B;](versioning-policy.md#isolated-security-fixes) voor de periode van de drie jaar steun.
 
@@ -59,11 +59,11 @@ Houd rekening met het volgende tijdens deze beveiligingsperiode voor inrichtings
 
   Om een geïsoleerd dossier van het veiligheidspatch toe te passen, moeten de klanten op de recentste veiligheid-enige flardversie (de recentste - p versie) voor hun gesteunde versielijn zijn, aangezien de geïsoleerde veiligheidsmoeilijke situaties exclusief tegen die versie worden getest.
 
-- **geen kwaliteitsmoeilijke situaties of ingenieursbijstand** - geen insectenmoeilijke situaties, kwaliteitsupdates ([&#x200B; Hulpmiddel van de Patches van de Kwaliteit &#x200B;](../tools/quality-patches-tool/usage.md)), of technische bijstand ([&#x200B; de Steun van Adobe Commerce &#x200B;](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide)) zal voor versies 2.4.4 of 2.4.5 tijdens deze periode worden verstrekt.
+- **geen kwaliteitsmoeilijke situaties of ingenieursbijstand** - geen insectenmoeilijke situaties, kwaliteitsupdates ([&#x200B; Hulpmiddel van de Patches van de Kwaliteit &#x200B;](../tools/quality-patches-tool/usage.md)), of technische bijstand ([&#x200B; de Steun van Adobe Commerce &#x200B;](https://experienceleague.adobe.com/nl/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide)) zal voor versies 2.4.4 of 2.4.5 tijdens deze periode worden verstrekt.
 
 - **naleving PCI wordt niet gewaarborgd:** - Omdat 2.4.4 en 2.4.5 PHP versies gebruiken die eind van het leven hebben bereikt, kan de naleving PCI niet voor verkopers op die versies worden gewaarborgd. Als u deze versies blijft uitvoeren, kan de PCI-compatibiliteit in gevaar komen.
 
-Om volledige veiligheidsdekking te handhaven en naleving PCI te verzekeren, moeten de klanten aan een momenteel gesteunde versie van Adobe Commerce zo spoedig mogelijk bevorderen of aan [&#x200B; Adobe Commerce as a Cloud Service &#x200B;](https://experienceleague.adobe.com/en/docs/commerce/cloud-service/overview) migreren.
+Om volledige veiligheidsdekking te handhaven en naleving PCI te verzekeren, moeten de klanten aan een momenteel gesteunde versie van Adobe Commerce zo spoedig mogelijk bevorderen of aan [&#x200B; Adobe Commerce as a Cloud Service &#x200B;](https://experienceleague.adobe.com/nl/docs/commerce/cloud-service/overview) migreren.
 
 | Geen | Algemene beschikbaarheid | Einde van uitgebreide ondersteuning | Oplossingen voor einde van beveiliging |
 |----------------------|----------------------|-------------------------|------------------------------------|
