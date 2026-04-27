@@ -4,9 +4,9 @@ description: Deze subsectie verstrekt een gedetailleerde beschrijving van de kwe
 feature: Tools and External Services
 role: Admin, Developer
 type: Troubleshooting
-source-git-commit: 0494717c06fcabcb093a2b168ae714f773ed6f7b
+source-git-commit: f0aa5266d54a205cba36d9015fe9ed5dca50b599
 workflow-type: tm+mt
-source-wordcount: '574'
+source-wordcount: '573'
 ht-degree: 0%
 
 ---
@@ -28,7 +28,7 @@ QPT v1.1.78 omvat de volgende flarden:
 1. **ACP2E-4528**: Bevestigt de kwestie met plaatsbevestiging in klantenadressen, die nu een voorwaartse schuine streep (/) karakter toestaat en ongeldige karakters zoals !, &quot;, #, en verwerpt?.
 1. **ACP2E-4535**: Verhelpt een kwestie waar het voorleggen van de vergat-wachtwoordvorm de te vernietigen of opnieuw te produceren zitting veroorzaakt (veranderingen PHPSESSID) en de gastkar wordt ontruimd.
 1. **ACP2E-4540**: Verhelpt de kwestie waar de bibliotheek Fotorama niet correct laadde, veroorzakend slechts het eerste in bijlage beeld om zichtbaar te zijn.
-1. **ACP2E-4555**: Verhelpt de kwestie waar de moderne telefoonaantallen &quot;.&quot; bevatten of &quot;/&quot; niet correct zijn gevalideerd.
+1. **[ACP2E-4555](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-78/acp2e-4555.md)**: Verhelpt de kwestie waar de moderne telefoonaantallen &quot;.&quot; bevatten of &quot;/&quot; niet correct zijn gevalideerd.
 1. **[ACP2E-4565](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-78/acp2e-4565.md)**: Verhelpt de kwestie waar de vraag van GraphQL van het Bedrijf &quot;de huidige klant niet&quot;terugkeert wanneer de x-Adobe-Bedrijfs kopbal wordt gebruikt.
 1. **ACP2E-4591**: Verhelpt de kwestie waar de klantensegmenten die op ordertelling, zoals &quot;Eerste-tijdekopers&quot;worden gebaseerd, niet bijwerkten toen de orden via REST API werden geplaatst.
 1. **ACP2E-4609**: Verhelpt de kwestie waar de Mijn pagina van Citaten geen citaten toont wanneer sommige citaten geschrapte producten bevatten.
