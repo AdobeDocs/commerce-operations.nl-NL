@@ -4,7 +4,7 @@ description: Deze subsectie verstrekt een gedetailleerde beschrijving van de kwe
 feature: Tools and External Services
 role: Admin, Developer
 type: Troubleshooting
-source-git-commit: 3e003e0cf2428a5e6ec45292fa19aaa2b9e9324d
+source-git-commit: 5d52a3d956054c1d4cb8922f0cfd26ae600c4b8d
 workflow-type: tm+mt
 source-wordcount: '574'
 ht-degree: 0%
@@ -17,7 +17,7 @@ Deze subsectie bevat een gedetailleerde beschrijving van de problemen die zijn o
 
 QPT v1.1.78 omvat de volgende flarden:
 1. **ACP2E-4416**: Verhelpt de kwestie waar de punten van de klantenbeloning niet worden geïnitialiseerd wanneer gecreeerd in Admin.
-1. **ACP2E-4419**: Verhelpt de kwestie waar de giftekaarten niet correct bij kassa na succesvolle reCAPTCHA v2 (&#39;ik ben geen robot&#39;) bevestiging op de storefront worden toegepast.
+1. **[ACP2E-4419](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-78/acp2e-4419.md)**: Verhelpt de kwestie waar de giftekaarten niet correct bij kassa na succesvolle reCAPTCHA v2 (&#39;ik ben geen robot&#39;) bevestiging op de storefront worden toegepast.
 1. **ACP2E-4431**: Verhelpt de kwestie waar de Verwante Producten die door de doelregels worden aangepast tijdens het herindexeringsproces worden geschrapt.
 1. **ACP2E-4448**: Verhelpt de kwestie waar de configuratieveranderingen die tijdens de stroomonderbrekingen van Redis worden aangebracht niet worden weerspiegeld nadat Redis terugkrijgt, veroorzakend de schaalwaarden om blijven bestaan.
 1. **ACP2E-4452**: Verhelpt de kwestie waar de productprijzen op de Snelle pagina van de Orde belasting ongeacht de configuratie van de belastingvertoning omvatten.
