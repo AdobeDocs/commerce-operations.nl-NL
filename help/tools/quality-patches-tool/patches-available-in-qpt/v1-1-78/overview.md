@@ -4,7 +4,7 @@ description: Deze subsectie verstrekt een gedetailleerde beschrijving van de kwe
 feature: Tools and External Services
 role: Admin, Developer
 type: Troubleshooting
-source-git-commit: cc3bd15a0c11762812e4e51e4c01bfa64756421a
+source-git-commit: 0494717c06fcabcb093a2b168ae714f773ed6f7b
 workflow-type: tm+mt
 source-wordcount: '574'
 ht-degree: 0%
@@ -29,7 +29,7 @@ QPT v1.1.78 omvat de volgende flarden:
 1. **ACP2E-4535**: Verhelpt een kwestie waar het voorleggen van de vergat-wachtwoordvorm de te vernietigen of opnieuw te produceren zitting veroorzaakt (veranderingen PHPSESSID) en de gastkar wordt ontruimd.
 1. **ACP2E-4540**: Verhelpt de kwestie waar de bibliotheek Fotorama niet correct laadde, veroorzakend slechts het eerste in bijlage beeld om zichtbaar te zijn.
 1. **ACP2E-4555**: Verhelpt de kwestie waar de moderne telefoonaantallen &quot;.&quot; bevatten of &quot;/&quot; niet correct zijn gevalideerd.
-1. **ACP2E-4565**: Verhelpt de kwestie waar de vraag van GraphQL van het Bedrijf &quot;de huidige klant niet&quot;terugkeert wanneer de x-Adobe-Bedrijfs kopbal wordt gebruikt.
+1. **[ACP2E-4565](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-78/acp2e-4565.md)**: Verhelpt de kwestie waar de vraag van GraphQL van het Bedrijf &quot;de huidige klant niet&quot;terugkeert wanneer de x-Adobe-Bedrijfs kopbal wordt gebruikt.
 1. **ACP2E-4591**: Verhelpt de kwestie waar de klantensegmenten die op ordertelling, zoals &quot;Eerste-tijdekopers&quot;worden gebaseerd, niet bijwerkten toen de orden via REST API werden geplaatst.
 1. **ACP2E-4609**: Verhelpt de kwestie waar de Mijn pagina van Citaten geen citaten toont wanneer sommige citaten geschrapte producten bevatten.
 1. **ACP2E-4613**: Verhelpt de kwestie waar de grote media folderstructuren langzame getrouwe reacties veroorzaakten, leidend tot de uitgebreide tijden van het laden van de folderboom van de Galerij van Media.
