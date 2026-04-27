@@ -47,7 +47,7 @@ ht-degree: 0%
    - [Beheerde waarschuwingen voor Adobe Commerce: waarschuwing voor CPU](/help/tools/managed-alerts-for-adobe-commerce/managed-alerts-for-magento-commerce-cpu-warning-alert.md)
 - Gereedschap Kwaliteitspatches {#quality-patches-tool}
    - [[!DNL Quality Patches Tool]: een zelfbedieningsprogramma voor kwaliteitspatches](/help/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches.md)
-   - [[!DNL Quality Patches Tool]: zoeken naar patches](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html){target="_blank"}
+   - [[!DNL Quality Patches Tool]: zoeken naar patches](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html?lang=nl-NL){target="_blank"}
    - [Gebruik](quality-patches-tool/usage.md)
    - [Aanvullende informatie](quality-patches-tool/release-notes.md)
    - Patches beschikbaar in het gereedschap Kwaliteitspatches {#patches-available-in-qpt}
@@ -1023,6 +1023,6 @@ ht-degree: 0%
       - [Gegevens die handmatige migratie vereisen](data-migration-tool/migrate-data/manual.md)
       - [Stappen voor migratie na gegevens](data-migration-tool/migrate-data/post-migration.md)
    - Bronnen {#resources}
-      - [Problemen oplossen](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/data-migration-tool-troubleshooting.html)
+      - [Problemen oplossen](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/data-migration-tool-troubleshooting.html?lang=nl-NL)
       - [Changelog](https://github.com/magento/data-migration-tool/blob/2.4/CHANGELOG.md)
-- [Terugkeren naar operationele hulplijnen](https://experienceleague.adobe.com/docs/commerce-operations/operational-guides/home.html)
+- [Terugkeren naar operationele hulplijnen](https://experienceleague.adobe.com/docs/commerce-operations/operational-guides/home.html?lang=nl-NL)
