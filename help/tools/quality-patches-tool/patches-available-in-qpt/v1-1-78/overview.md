@@ -4,7 +4,7 @@ description: Deze subsectie verstrekt een gedetailleerde beschrijving van de kwe
 feature: Tools and External Services
 role: Admin, Developer
 type: Troubleshooting
-source-git-commit: 5d52a3d956054c1d4cb8922f0cfd26ae600c4b8d
+source-git-commit: cc3bd15a0c11762812e4e51e4c01bfa64756421a
 workflow-type: tm+mt
 source-wordcount: '574'
 ht-degree: 0%
@@ -24,7 +24,7 @@ QPT v1.1.78 omvat de volgende flarden:
 1. **ACP2E-4456**: Verhelpt een kwestie waar het annuleren van een orde die een verandering van GraphQL gebruikt geen orde overgaat die volledig met giftekaarten aan de Gesloten status wordt betaald.
 1. **ACP2E-4507**: Verhelpt de kwestie waar de configuratie van de Opties van het Wachtwoord niet wordt toegepast voor het terugstellen van het klantenwachtwoord verzoeken die door de mutaties van GraphQL worden gemaakt.
 1. **ACP2E-4513**: Verhelpt de kwestie waar de verlopen beelden CAPTCHA niet van het systeem worden geschrapt.
-1. **ACP2E-4522**: Verhelpt de kwestie waar een periodiek dubbele zeer belangrijke fout op de quote_coupons lijst voorkomt wanneer de veelvoudige kartsamenvoeging of citaat sparen verzoeken tezelfdertijd lopen.
+1. **[ACP2E-4522](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-78/acp2e-4522.md)**: Verhelpt de kwestie waar een periodiek dubbele zeer belangrijke fout op de quote_coupons lijst voorkomt wanneer de veelvoudige kartsamenvoeging of citaat sparen verzoeken tezelfdertijd lopen.
 1. **ACP2E-4528**: Bevestigt de kwestie met plaatsbevestiging in klantenadressen, die nu een voorwaartse schuine streep (/) karakter toestaat en ongeldige karakters zoals !, &quot;, #, en verwerpt?.
 1. **ACP2E-4535**: Verhelpt een kwestie waar het voorleggen van de vergat-wachtwoordvorm de te vernietigen of opnieuw te produceren zitting veroorzaakt (veranderingen PHPSESSID) en de gastkar wordt ontruimd.
 1. **ACP2E-4540**: Verhelpt de kwestie waar de bibliotheek Fotorama niet correct laadde, veroorzakend slechts het eerste in bijlage beeld om zichtbaar te zijn.
