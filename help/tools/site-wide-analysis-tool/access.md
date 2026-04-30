@@ -13,7 +13,7 @@ ht-degree: 0%
 
 U hebt toegang tot het dashboard van [!DNL Site-Wide Analysis Tool] via het [!UICONTROL Admin Panel] -bestand van uw winkel.
 
-De [!DNL Site-Wide Analysis Tool] dienst is beschikbaar op [&#x200B; productiemodus &#x200B;](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/tools/developer-tools#operation-modes) voor [!UICONTROL Admin] gebruikers met toestemming om tot gebruiker [&#x200B; rolmiddelen &#x200B;](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/user-accounts/permissions-user-roles) toegang te hebben.
+De [!DNL Site-Wide Analysis Tool] dienst is beschikbaar op [&#x200B; productiemodus &#x200B;](https://experienceleague.adobe.com/nl/docs/commerce-admin/systems/tools/developer-tools#operation-modes) voor [!UICONTROL Admin] gebruikers met toestemming om tot gebruiker [&#x200B; rolmiddelen &#x200B;](https://experienceleague.adobe.com/nl/docs/commerce-admin/systems/user-accounts/permissions-user-roles) toegang te hebben.
 
 >[!NOTE]
 >
@@ -31,7 +31,7 @@ De [!DNL Site-Wide Analysis Tool] dienst is beschikbaar op [&#x200B; productiemo
 
 ### Stap 1: Machtigingen verifiëren
 
-Verifieer dat de [!UICONTROL Admin] gebruikersrekening toestemming heeft om tot [!DNL Site-Wide Analysis Tool] door hun [&#x200B; toegewezen gebruikersrol &#x200B;](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/user-accounts/permissions-user-roles) toegang te hebben.
+Verifieer dat de [!UICONTROL Admin] gebruikersrekening toestemming heeft om tot [!DNL Site-Wide Analysis Tool] door hun [&#x200B; toegewezen gebruikersrol &#x200B;](https://experienceleague.adobe.com/nl/docs/commerce-admin/systems/user-accounts/permissions-user-roles) toegang te hebben.
 
 >[!IMPORTANT]
 >
@@ -50,7 +50,7 @@ Ga als volgt te werk voor de aangepaste rol die [!DNL Site-Wide Analysis Tool] t
 
 >[!NOTE]
 >
->Als u hebt gecontroleerd dat de gebruikersaccount toestemming heeft om toegang te krijgen tot [!DNL Site-Wide Analysis Tool] en de gebruiker een fout van 403 ontvangt wanneer deze probeert toegang te krijgen tot het hulpprogramma vanuit [!UICONTROL Admin] , kan het zijn dat in uw Adobe Commerce-instantie in de cloudinfrastructuur HTTP-toegangsbeheer is ingeschakeld. Het dashboard van [!DNL Site-Wide Analysis Tool] wordt NIET ondersteund als u HTTP Auth hebt ingeschakeld. Voor meer informatie over het oplossen van deze kwestie, zie ons [&#x200B; artikel van de Steun &#x200B;](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/403-errors-when-accessing-site-wide-analysis-tool-on-magento).
+>Als u hebt gecontroleerd dat de gebruikersaccount toestemming heeft om toegang te krijgen tot [!DNL Site-Wide Analysis Tool] en de gebruiker een fout van 403 ontvangt wanneer deze probeert toegang te krijgen tot het hulpprogramma vanuit [!UICONTROL Admin] , kan het zijn dat in uw Adobe Commerce-instantie in de cloudinfrastructuur HTTP-toegangsbeheer is ingeschakeld. Het dashboard van [!DNL Site-Wide Analysis Tool] wordt NIET ondersteund als u HTTP Auth hebt ingeschakeld. Voor meer informatie over het oplossen van deze kwestie, zie ons [&#x200B; artikel van de Steun &#x200B;](https://experienceleague.adobe.com/nl/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/403-errors-when-accessing-site-wide-analysis-tool-on-magento).
 
 ### Stap 2: Toegang [!DNL Site-Wide Analysis Tool]
 
