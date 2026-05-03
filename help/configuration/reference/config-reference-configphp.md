@@ -34,7 +34,7 @@ Bevat een array van modules en hun statussen. Als module is ingeschakeld, is de 
 ]
 ```
 
-Leer meer over [&#x200B; Modules &#x200B;](https://experienceleague.adobe.com/docs/commerce-learn/tutorials/backend-development/create-module.html).
+Leer meer over [&#x200B; Modules &#x200B;](https://experienceleague.adobe.com/docs/commerce-learn/tutorials/backend-development/create-module.html?lang=nl-NL).
 
 ## bereik
 
@@ -82,7 +82,7 @@ Bevat een array van bereikconfiguratiewaarden. Het heeft de volgende subnodes:
 ]
 ```
 
-Leer meer over [&#x200B; Scopes van Commerce &#x200B;](https://experienceleague.adobe.com/docs/commerce-admin/start/setup/websites-stores-views.html#scope-settings).
+Leer meer over [&#x200B; Scopes van Commerce &#x200B;](https://experienceleague.adobe.com/docs/commerce-admin/start/setup/websites-stores-views.html?lang=nl-NL#scope-settings).
 
 ## systeem
 

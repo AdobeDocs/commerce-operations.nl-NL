@@ -21,17 +21,17 @@ Gebruik de bronnen op deze pagina om meer te leren over Adobe Commerce-upgrades.
           <ul>
             <li><a href="https://blog.adobe.com/">Adobe Blog</a></li>
             <li><a href="https://blog.adobe.com/">Adobe Developers Blog</a></li>
-            <li><a href="https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/overview.html">Adobe Help Center</a></li>
-            <li><a href="https://helpx.adobe.com/security/security-bulletin.html">Adobe Security Bulletin</a></li>
+            <li><a href="https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/overview.html?lang=nl-NL">Adobe Help Center</a></li>
+            <li><a href="https://helpx.adobe.com/nl/security/security-bulletin.html">Adobe Security Bulletin</a></li>
             <li><a href="https://developer.adobe.com/commerce/">Adobe Commerce op Adobe Developer-site</a></li>
-            <li><a href="https://experienceleague.adobe.com/docs/commerce-operations/release/notes/overview.html">Adobe Commerce op Opmerkingen bij de release in cloud of op locatie</a></li>
+            <li><a href="https://experienceleague.adobe.com/docs/commerce-operations/release/notes/overview.html?lang=nl-NL">Adobe Commerce op Opmerkingen bij de release in cloud of op locatie</a></li>
             <li><a href="https://solutionpartners.adobe.com/solution-partners.html">Partnerportal voor oplossingen</a></li>
           </ul>
         </td>
       <td><strong> Hulpmiddelen </strong>
         <p>Blader door gereedschappen die zijn ontworpen om het voor u gemakkelijker te maken om Adobe Commerce-software te zoeken en te gebruiken.</p>
           <ul>
-            <li><a href="https://experienceleague.adobe.com/en/docs/commerce-learn/tutorials/extensibility/backend-development/upgrade/uct-phpstorm"> de insteekmodule van PhpStorm van de Verenigbaarheid van de Verbetering van het Hulpmiddel </a> (video)</li>
+            <li><a href="https://experienceleague.adobe.com/nl/docs/commerce-learn/tutorials/extensibility/backend-development/upgrade/uct-phpstorm"> de insteekmodule van PhpStorm van de Verenigbaarheid van de Verbetering van het Hulpmiddel </a> (video)</li>
             <li><a href="../upgrade-compatibility-tool/overview.md">Compatibiliteit upgraden</a></li>
             <li><a href="https://magentocommeng.slack.com/archives/C019Y143U9F">#UpgradeCompatibilityTool Slack-kanaal</a></li>
             <li><a href="../../tools/quality-patches-tool/usage.md">Gereedschap Kwaliteitspatches</a></li>
@@ -42,9 +42,9 @@ Gebruik de bronnen op deze pagina om meer te leren over Adobe Commerce-upgrades.
       <td><strong> Kalenders en Beleid </strong>
         <p>Bekijk de details over de releases en het beleid van Adobe Commerce.</p>
           <ul>
-            <li><a href="https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/faq/adobe-commerce-eos-policy-faq.html">Veelgestelde vragen over einde Adobe Commerce-software</a></li>
+            <li><a href="https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/faq/adobe-commerce-eos-policy-faq.html?lang=nl-NL">Veelgestelde vragen over einde Adobe Commerce-software</a></li>
             <li><a href="https://developer.adobe.com/commerce/marketplace/guides/sellers/compatibility/requirements">Beleid Commerce Marketplace</a></li>
-            <li><a href="https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/faq/adobe-commerce-release-strategy-lifecycle-policy.html">Veelgestelde vragen over de nieuwe Adobe Commerce-releasestrategie, het bijgewerkte levenscyclusbeleid en de uitgebreide ondersteuning</a></li>
+            <li><a href="https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/faq/adobe-commerce-release-strategy-lifecycle-policy.html?lang=nl-NL">Veelgestelde vragen over de nieuwe Adobe Commerce-releasestrategie, het bijgewerkte levenscyclusbeleid en de uitgebreide ondersteuning</a></li>
             <li><a href="https://www.adobe.com/content/dam/cc/en/legal/terms/enterprise/pdfs/Adobe-Commerce-Software-Lifecycle-Policy.pdf">Levenscyclusbeleid</a></li>
             <li><a href="../../release/schedule.md">Releaseplanning</a></li>
             <li><a href="../../release/versioning-policy.md">Releasetypen</a></li>
@@ -65,8 +65,8 @@ Gebruik de bronnen op deze pagina om meer te leren over Adobe Commerce-upgrades.
         <p>Behoud uw winkel veilig en efficiënt. Voorbereiden op de Adobe Commerce-upgrade door de uitgebreide technische documentatie van Adobe te bekijken.</p>
           <ul>
             <li><a href="recommended-upgrade-paths.md">Aanbevolen upgradepaden</a></li>
-            <li><a href="https://experienceleague.adobe.com/en/docs/commerce-learn/tutorials/extensibility/backend-development/upgrade/2-4-upgrade-workshop">2.4 Workshop over technische upgrade</a></li>
-            <li><a href="https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/cannot-access-the-latest-magento-commerce-pre-release.html">Toegang tot pre-releases</a></li>
+            <li><a href="https://experienceleague.adobe.com/nl/docs/commerce-learn/tutorials/extensibility/backend-development/upgrade/2-4-upgrade-workshop">2.4 Workshop over technische upgrade</a></li>
+            <li><a href="https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/cannot-access-the-latest-magento-commerce-pre-release.html?lang=nl-NL">Toegang tot pre-releases</a></li>
             <li><a href="../../release/beta.md">Overzicht van Beta-releases</a></li>
             <li><a href="https://developer.adobe.com/commerce/contributor/guides/code-contributions/backward-compatibility-policy">Achterwaartse incompatibele ontwikkeling</a></li>
             <li><a href="https://developer.adobe.com/commerce/php/development/backward-incompatible-changes">Achterwaartse incompatibele wijzigingen</a></li>

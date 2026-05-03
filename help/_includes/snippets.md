@@ -11,7 +11,7 @@ ht-degree: 0%
 
 >[!NOTE]
 >
->Uitgebreide beveiligingspatches voor 2.4.5 zijn alleen beschikbaar voor Adobe Commerce-klanten. Deze patches zijn niet beschikbaar voor de Magento Open Source-codebasis. Zie [&#x200B; Uitgebreide Steun &#x200B;](https://experienceleague.adobe.com/en/docs/commerce-operations/release/planning/lifecycle-policy#extended-support).
+>Uitgebreide beveiligingspatches voor 2.4.5 zijn alleen beschikbaar voor Adobe Commerce-klanten. Deze patches zijn niet beschikbaar voor de Magento Open Source-codebasis. Zie [&#x200B; Uitgebreide Steun &#x200B;](https://experienceleague.adobe.com/nl/docs/commerce-operations/release/planning/lifecycle-policy#extended-support).
 
 ## Alleen Commerce {#commerce-only}
 
@@ -37,7 +37,7 @@ ht-degree: 0%
 
 >[!NOTE]
 >
->Nadat u deze beveiligingspatch hebt geïnstalleerd, moeten Adobe Commerce B2B-handelaren ook een update uitvoeren naar de nieuwste compatibele B2B-beveiligingspatchrelease. Zie [&#x200B; B2B versienota&#39;s &#x200B;](https://experienceleague.adobe.com/en/docs/commerce-admin/b2b/release-notes).
+>Nadat u deze beveiligingspatch hebt geïnstalleerd, moeten Adobe Commerce B2B-handelaren ook een update uitvoeren naar de nieuwste compatibele B2B-beveiligingspatchrelease. Zie [&#x200B; B2B versienota&#39;s &#x200B;](https://experienceleague.adobe.com/nl/docs/commerce-admin/b2b/release-notes).
 
 ## Alleen Adobe Commerce {#ee-only}
 
@@ -91,7 +91,7 @@ Voordat u indexeerders in parallelle modus kunt uitvoeren, moet u ondersteuning 
 
 >[!IMPORTANT]
 >
->Adobe biedt geen ondersteuning voor het toepassen van officiële, door Adobe geleverde patches met deze methode. Gebruik de volgende methode voor eigen risico. Om officiële flarden toe te passen, gebruik [[!DNL Quality Patches Tool] &#x200B;](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html){target="_blank"}. Voer altijd uitgebreide tests uit voordat u een aangepaste patch implementeert.
+>Adobe biedt geen ondersteuning voor het toepassen van officiële, door Adobe geleverde patches met deze methode. Gebruik de volgende methode voor eigen risico. Om officiële flarden toe te passen, gebruik [[!DNL Quality Patches Tool] &#x200B;](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html?lang=nl-NL){target="_blank"}. Voer altijd uitgebreide tests uit voordat u een aangepaste patch implementeert.
 
 ## Oktober 2025 de flardhavens van de veiligheidsflard {#oct-2025-backports}
 
@@ -105,7 +105,7 @@ Voordat u indexeerders in parallelle modus kunt uitvoeren, moet u ondersteuning 
 
 * **Toegevoegde steun voor Apache ActiveMQ het protocol van de STOMP van Artemis**
 
-  Toegevoegde steun voor de open-bronberichtbroker van de Artemis van ActiveMQ Artemis door het Eenvoudige Text Oriented Messaging Protocol (STOMP). Het levert een betrouwbaar en scalable overseinensysteem, dat flexibiliteit voor op STOMP-Gebaseerde integratie biedt. Zie [&#x200B; Apache ActiveMQ Artemis &#x200B;](https://experienceleague.adobe.com/en/docs/commerce-operations/configuration-guide/message-queues/message-queue-framework#apache-activemq-artemis-stomp) in de *Gids van de Configuratie van Commerce*.
+  Toegevoegde steun voor de open-bronberichtbroker van de Artemis van ActiveMQ Artemis door het Eenvoudige Text Oriented Messaging Protocol (STOMP). Het levert een betrouwbaar en scalable overseinensysteem, dat flexibiliteit voor op STOMP-Gebaseerde integratie biedt. Zie [&#x200B; Apache ActiveMQ Artemis &#x200B;](https://experienceleague.adobe.com/nl/docs/commerce-operations/configuration-guide/message-queues/message-queue-framework#apache-activemq-artemis-stomp) in de *Gids van de Configuratie van Commerce*.
 
 ## De uitcheckpagina kan static.min.js en mixins.min.js niet laden. {#checkout-page-fails-to-load-static-min-js-and-mixins-min-js}
 
@@ -122,4 +122,4 @@ Na recente wijzigingen in CSP/SRI laadt de uitcheckpagina static.min.js en mixin
 
 **Hotfix**:
 
-Er is een hotfix beschikbaar. Zie [&#x200B; Controle ontbreekt wanneer JS minificatie en bundeling &#x200B;](https://experienceleague.adobe.com/en/docs/experience-cloud-kcs/kbarticles/ka-27997) in de Kennisbank voor flarddetails worden toegelaten.
+Er is een hotfix beschikbaar. Zie [&#x200B; Controle ontbreekt wanneer JS minificatie en bundeling &#x200B;](https://experienceleague.adobe.com/nl/docs/experience-cloud-kcs/kbarticles/ka-27997) in de Kennisbank voor flarddetails worden toegelaten.

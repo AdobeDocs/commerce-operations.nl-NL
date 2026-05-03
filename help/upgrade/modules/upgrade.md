@@ -47,7 +47,7 @@ Een module of extensie bijwerken of bijwerken:
 
 ## Door leverancier gebundelde extensies (VBE&#39;s)
 
-Adobe verwijderde al [&#x200B; VBEs &#x200B;](https://experienceleague.adobe.com/en/docs/commerce-operations/upgrade-guide/modules/upgrade) in 2.4.4. Leveranciers blijven deze extensies ondersteunen op de Adobe Commerce Marketplace.
+Adobe verwijderde al [&#x200B; VBEs &#x200B;](https://experienceleague.adobe.com/nl/docs/commerce-operations/upgrade-guide/modules/upgrade) in 2.4.4. Leveranciers blijven deze extensies ondersteunen op de Adobe Commerce Marketplace.
 
 Als u deze uitbreidingen met Adobe Commerce 2.4.4 en later wilt blijven gebruiken, moet u de overeenkomstige pakketgebiedsdelen in uw `composer.json` dossier _vóór_ bevordering aan 2.4.4 bijwerken. Neem contact op met de leverancier voor de pakketnaam en -versie die u wilt gebruiken.
 

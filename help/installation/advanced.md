@@ -119,7 +119,7 @@ Met de volgende opties geeft u de gebruikersgegevens en gebruikersgegevens voor 
 
 U kunt de Admin-gebruiker tijdens of na de installatie maken. Als u de gebruiker tijdens de installatie creeert, zijn alle admin credentievariabelen vereist. Zie [&#x200B; installaties van de Steekproef localhost &#x200B;](#sample-localhost-installations).
 
-De volgende tabellen bevatten veel, maar niet alle beschikbare installatieparameters. Voor een volledige lijst, zie de [&#x200B; bevel-lijn Verwijzing van Hulpmiddelen &#x200B;](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/cli-reference/commerce-on-premises).
+De volgende tabellen bevatten veel, maar niet alle beschikbare installatieparameters. Voor een volledige lijst, zie de [&#x200B; bevel-lijn Verwijzing van Hulpmiddelen &#x200B;](https://experienceleague.adobe.com/nl/docs/commerce-operations/tools/cli-reference/commerce-on-premises).
 
 | Naam | Waarde | Vereist? |
 |--- |--- |--- |

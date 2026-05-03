@@ -28,7 +28,7 @@ De ACSD-64813-patch verhelpt het probleem dat het verwijderen van de toewijzing 
 
 >[!NOTE]
 >
->De patch kan van toepassing worden op andere versies met nieuwe [!DNL Quality Patches Tool] versies. Als u wilt controleren of de patch compatibel is met uw Adobe Commerce-versie, werkt u het `magento/quality-patches` -pakket bij naar de meest recente versie en controleert u de compatibiliteit op de [[!DNL Quality Patches Tool] : Zoek naar de pagina van flarden &#x200B;](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html). Gebruik de patch-id als een zoekwoord om de patch te zoeken.
+>De patch kan van toepassing worden op andere versies met nieuwe [!DNL Quality Patches Tool] versies. Als u wilt controleren of de patch compatibel is met uw Adobe Commerce-versie, werkt u het `magento/quality-patches` -pakket bij naar de meest recente versie en controleert u de compatibiliteit op de [[!DNL Quality Patches Tool] : Zoek naar de pagina van flarden &#x200B;](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html?lang=nl-NL). Gebruik de patch-id als een zoekwoord om de patch te zoeken.
 
 ## Probleem
 
@@ -38,7 +38,7 @@ Het verwijderen van de toewijzing van categorieën in een [!DNL B2B] gedeelde ca
 
 1. Schakel **[!UICONTROL B2B]** , **[!UICONTROL Company]** en **[!UICONTROL Shared Catalog]** in.
 1. Genereer 30.000 actieve producten in voorraad.
-1. Creeer a [&#x200B; douane gedeelde catalogus &#x200B;](https://experienceleague.adobe.com/en/docs/commerce-admin/b2b/shared-catalogs/catalog-shared#actions-controls) en wijs alle producten aan het toe.
+1. Creeer a [&#x200B; douane gedeelde catalogus &#x200B;](https://experienceleague.adobe.com/nl/docs/commerce-admin/b2b/shared-catalogs/catalog-shared#actions-controls) en wijs alle producten aan het toe.
 1. Maak een nieuwe categorie onder de standaardhoofdcategorie en wijs er een aantal producten aan toe.
 1. Gebruik het beheerdertoken om het REST API-eindpunt `rest/all/V1/sharedCatalog/<shared_catalog_id>/assignCategories` aan te roepen met de nieuwe categorie-id.
 
@@ -75,7 +75,7 @@ De uitvoering neemt ongeveer 30 minuten in beslag of resulteert in een time-outf
 Om individuele flarden toe te passen, gebruik de volgende verbindingen afhankelijk van uw plaatsingsmethode:
 
 * Adobe Commerce of Magento Open Source ter plaatse: [[!DNL Quality Patches Tool] > Gebruik &#x200B;](/help/tools/quality-patches-tool/usage.md) in de [!DNL Quality Patches Tool] gids.
-* Adobe Commerce op cloudinfrastructuur: [&#x200B; Verbeteringen en Patches > pas Patches &#x200B;](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html) in Commerce op de gids van de Infrastructuur van de Wolk toe.
+* Adobe Commerce op cloudinfrastructuur: [&#x200B; Verbeteringen en Patches > pas Patches &#x200B;](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html?lang=nl-NL) in Commerce op de gids van de Infrastructuur van de Wolk toe.
 
 ## Gerelateerde lezing
 

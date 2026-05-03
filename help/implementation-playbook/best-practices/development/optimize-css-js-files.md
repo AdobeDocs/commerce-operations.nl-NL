@@ -105,6 +105,6 @@ php -f bin/magento config:set dev/js/enable_js_bundling 1
 
 - [Optimalisatie-instellingen aan de clientzijde](../../../performance/configuration.md#client-side-optimization-settings)
 - [&#x200B; het Bundelen uiteinden &#x200B;](../../../performance/configuration.md#bundling-tips) in *beste praktijken van de Configuratie* - derde het bundelen hulpmiddelen, HTTP/2, en begeleiding op afgekeurde JS en CSS samenvoegen
-- [Handboek: Bronbestanden optimaliseren](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/tools/developer-tools#optimizing-resource-files)
+- [Handboek: Bronbestanden optimaliseren](https://experienceleague.adobe.com/nl/docs/commerce-admin/systems/tools/developer-tools#optimizing-resource-files)
 - [Frontend Developer Guide: Samenvoegen, miniaturen en siteprestaties van CSS](https://developer.adobe.com/commerce/frontend-core/guide/css/#css-merging-minification-and-performance)
 - [Geavanceerde JavaScript-pakketten](../../../performance/advanced-js-bundling.md)

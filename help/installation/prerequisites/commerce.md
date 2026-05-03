@@ -15,13 +15,13 @@ Je bent een van de 240.000 kooplieden wereldwijd die vertrouwen hebben in onze s
 
 ## De software ophalen
 
-Controleer de beschikbaarheid en de verenigbaarheid van Adobe-Authored uitbreidingen en de Diensten van Commerce voor Adobe Commerce en Magento Open Source op onze [&#x200B; pagina van de productbeschikbaarheid &#x200B;](https://experienceleague.adobe.com/en/docs/commerce-operations/release/product-availability).
+Controleer de beschikbaarheid en de verenigbaarheid van Adobe-Authored uitbreidingen en de Diensten van Commerce voor Adobe Commerce en Magento Open Source op onze [&#x200B; pagina van de productbeschikbaarheid &#x200B;](https://experienceleague.adobe.com/nl/docs/commerce-operations/release/product-availability).
 
 >[!NOTE]
 >
 >Adobe Commerce-codebases worden nu uitsluitend via Composer gedistribueerd vanwege beleidswijzigingen. Gebruik Composer om een van de vermelde Adobe Commerce-versies te downloaden omdat de codebase niet meer beschikbaar is in de sectie Downloads.
 >
->Voor meer informatie, verwijs naar [&#x200B; kan tot het factureren verklaring niet toegang hebben en download codebase op Adobe Commerce op wolkeninfrastructuur &#x200B;](https://experienceleague.adobe.com/en/docs/experience-cloud-kcs/kbarticles/ka-26611)
+>Voor meer informatie, verwijs naar [&#x200B; kan tot het factureren verklaring niet toegang hebben en download codebase op Adobe Commerce op wolkeninfrastructuur &#x200B;](https://experienceleague.adobe.com/nl/docs/experience-cloud-kcs/kbarticles/ka-26611)
 
 Raadpleeg de volgende tabel om aan de slag te gaan met de installatie van Adobe Commerce.
 
