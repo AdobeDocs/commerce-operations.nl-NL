@@ -1,18 +1,18 @@
 ---
-title: 'ACSD-65848: Categorieën in beheer laden zeer langzaam'
+title: 'ACSD-65848: Categorieën in admin laden erg langzaam'
 description: Pas de ACSD-65848-patch toe om het Adobe Commerce-probleem op te lossen, waarbij het totale aantal producten in een categorie werd berekend met behulp van een subselectie, waardoor de laadtijd van de categorie werd vertraagd.
 feature: Admin Workspace
 role: Admin, Developer
 type: Troubleshooting
 exl-id: 0233db9b-86b1-4320-a566-7e7e207dab84
-source-git-commit: 1ccb4c1dda5141934e04509b27fdafbfdc436a15
+source-git-commit: 48624d70761117ed0b9f8a7be913fce0572577b6
 workflow-type: tm+mt
-source-wordcount: '437'
+source-wordcount: '454'
 ht-degree: 0%
 
 ---
 
-# ACSD-65848: Categorieën in beheer laden zeer langzaam
+# ACSD-65848: Categorieën in admin laden erg langzaam
 
 De ACSD-65848-patch verhelpt het probleem waarbij het totale aantal producten in een categorie werd berekend aan de hand van een subselectie, die de laadtijd van de categorie vertraagde. Deze patch is beschikbaar wanneer [[!DNL Quality Patches Tool (QPT)]](/help/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches.md) 1.1.66 wordt geïnstalleerd. De patch-id is ACSD-65848. Dit probleem wordt volgens de planning opgelost in Adobe Commerce 2.4.9.
 
@@ -28,7 +28,7 @@ De ACSD-65848-patch verhelpt het probleem waarbij het totale aantal producten in
 
 >[!NOTE]
 >
->De patch kan van toepassing worden op andere versies met nieuwe [!DNL Quality Patches Tool] versies. Om te controleren of de patch compatibel is met uw Adobe Commerce-versie, werkt u het `magento/quality-patches` -pakket bij naar de meest recente versie en controleert u de compatibiliteit op de [[!DNL Quality Patches Tool] : zoek naar patches op de pagina &#x200B;](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html?lang=nl-NL) . Gebruik de patch-id als een zoekwoord om de patch te zoeken.
+>De patch kan van toepassing worden op andere versies met nieuwe [!DNL Quality Patches Tool] versies. Als u wilt controleren of de patch compatibel is met uw Adobe Commerce-versie, werkt u het `magento/quality-patches` -pakket bij naar de meest recente versie en controleert u de compatibiliteit op de [[!DNL Quality Patches Tool] : Zoek naar de pagina van flarden ](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html). Gebruik de patch-id als een zoekwoord om de patch te zoeken.
 
 ## Probleem
 
@@ -42,7 +42,7 @@ De weergave-/bewerkingspagina van de categorie Admin heeft aanzienlijke vertragi
    1. Open het `small.xml` -profiel en werk dit bij zodat het 2.500 categorieën en 250.000 producten bevat (zodat het overeenkomt met de setup van de leverancier).
    1. Voer de volgende opdracht uit om de correcties te genereren:
 
-      ```bash
+      ```shell
       bin/magento 
       setup:performance:generate-fixtures var/setup/performance-toolkit/profiles/ce/small.xml
       ```
@@ -62,7 +62,7 @@ De weergave-/bewerkingspagina van de categorie Admin heeft aanzienlijke vertragi
 1. Maak in het deelvenster Beheer een diepere categoriestructuur:
    * Verplaats categorie 2 onder categorie 1 om deze dieper in de boomstructuur te nesten.
 1. Probeer een categoriepagina in het deelvenster Beheer te openen met bijvoorbeeld een URL:
-   ```/admin/catalog/category/edit/id/xx/```
+   `/admin/catalog/category/edit/id/xx/`
 
 <u> Verwachte resultaten </u>:
 
@@ -76,11 +76,11 @@ Het duurt langer dan een minuut om rubriekpagina&#39;s te openen.
 
 Om individuele flarden toe te passen, gebruik de volgende verbindingen afhankelijk van uw plaatsingsmethode:
 
-* Op locatie Adobe Commerce of Magento Open Source: [[!DNL Quality Patches Tool] > Gebruik &#x200B;](/help/tools/quality-patches-tool/usage.md) in de handleiding [!DNL Quality Patches Tool] .
-* Adobe Commerce op wolkeninfrastructuur: [&#x200B; Verbeteringen en Patches > Pas Patches &#x200B;](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html?lang=nl-NL) in Commerce op de gids van de Infrastructuur van de Wolk toe.
+* Adobe Commerce of Magento Open Source ter plaatse: [[!DNL Quality Patches Tool] > Gebruik ](/help/tools/quality-patches-tool/usage.md) in de [!DNL Quality Patches Tool] gids.
+* Adobe Commerce op cloudinfrastructuur: [ Verbeteringen en Patches > pas Patches ](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html) in Commerce op de gids van de Infrastructuur van de Wolk toe.
 
 ## Gerelateerde lezing
 
 Meer informatie over [!DNL Quality Patches Tool] vindt u in:
 
-* [[!DNL Quality Patches Tool]: Een zelfbedieningshulpmiddel voor kwaliteitspatches &#x200B;](/help/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches.md) in de gids van Hulpmiddelen.
+* [[!DNL Quality Patches Tool] : Een zelfbedieningshulpmiddel voor kwaliteitspatches ](/help/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches.md) in de gids van Hulpmiddelen.

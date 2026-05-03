@@ -3,9 +3,9 @@ title: Laatste verificatie
 description: Leer hoe u de laatste verificatie van uw Varnish-configuratie met Adobe Commerce kunt uitvoeren. Ontdek teststappen en technieken voor probleemoplossing.
 feature: Configuration, Cache
 exl-id: 01f28c93-75cd-4969-9142-b8dac0aa2adb
-source-git-commit: 10f324478e9a5e80fc4d28ce680929687291e990
+source-git-commit: 319f3232d1ba5f5ed7cdd10ce85b9d7ffbeec89a
 workflow-type: tm+mt
-source-wordcount: '348'
+source-wordcount: '361'
 ht-degree: 0%
 
 ---
@@ -18,17 +18,17 @@ Nu u `default.vcl` gebruikt die voor u door Commerce wordt geproduceerd, kunt u 
 
 Gebruik `curl` of een ander hulpprogramma om HTTP-antwoordheaders weer te geven wanneer u een Commerce-pagina in een webbrowser bezoekt.
 
-Eerst, zorg ervoor u [&#x200B; ontwikkelaarwijze &#x200B;](../cli/set-mode.md#change-to-developer-mode) gebruikt; anders, zult u niet de kopballen zien.
+Eerst, zorg ervoor u [ ontwikkelaarwijze ](../cli/set-mode.md#change-to-developer-mode) gebruikt; anders ziet u de koppen niet.
 
 Bijvoorbeeld:
 
-```bash
+```shell
 curl -I -v --location-trusted 'http://192.0.2.55/magento2'
 ```
 
 Belangrijke koppen:
 
-```
+```text
 X-Magento-Cache-Control: max-age=86400, public, s-maxage=86400
 Age: 0
 X-Magento-Cache-Debug: MISS
@@ -36,7 +36,7 @@ X-Magento-Cache-Debug: MISS
 
 >[!INFO]
 >
->Deze waarde is ook acceptabel: `X-Magento-Cache-Debug: HIT` .
+>Deze waarde is ook acceptabel: `X-Magento-Cache-Debug: HIT`.
 
 ## De laadtijden van de pagina controleren
 
@@ -55,7 +55,7 @@ Als u bijvoorbeeld de Chrome-controle wilt gebruiken:
 
    In de volgende afbeelding ziet u een voorbeeld van het laden van de indexpagina `magento2` .
 
-   ![&#x200B; klik de pagina u &#x200B;](../../assets/configuration/varnish-inspector.png) bekijkt
+   ![ klik de pagina u ](../../assets/configuration/varnish-inspector.png) bekijkt
 
    De laadtijd van de pagina wordt weergegeven naast de pagina-URL. In dit geval is de laadtijd 5 ms. Zo kunt u bevestigen dat Varnish de pagina in het cachegeheugen heeft opgeslagen.
 
@@ -70,7 +70,7 @@ Controleer of de map `<magento_root>/var/page_cache` leeg is:
 1. Meld u aan bij uw Commerce-server of schakel over naar de eigenaar van het bestandssysteem.
 1. Voer de volgende opdracht in:
 
-   ```bash
+   ```shell
    rm -rf <magento_root>/var/page_cache/*
    ```
 
@@ -83,4 +83,4 @@ Controleer of de map `<magento_root>/var/page_cache` leeg is:
 
 >[!TIP]
 >
->Als u 503 (Ontbroken de Ophalen van de Achterkant) fouten ontmoet, zie [&#x200B; het Oplossen van problemen 503 (de Dienst niet beschikbaar) fouten &#x200B;](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/troubleshooting-503-errors.html?lang=nl-NL) in het _Adobe Commerce Help Center_.
+>Als u 503 (Ontbroken de Ophalen van de Achterkant) fouten ontmoet, zie [ het Oplossen van problemen 503 (de Dienst niet beschikbaar) fouten ](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/troubleshooting-503-errors.html) in het _Adobe Commerce Help Center_.

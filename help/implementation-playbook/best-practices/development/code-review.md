@@ -4,9 +4,9 @@ description: Leer over code overzicht beste praktijken voor de ontwikkelingsfase
 feature: Best Practices
 role: Developer
 exl-id: 1ef78bce-2e69-4c95-a26e-1bf7196ce546
-source-git-commit: 823498f041a6d12cfdedd6757499d62ac2aced3d
+source-git-commit: 48624d70761117ed0b9f8a7be913fce0572577b6
 workflow-type: tm+mt
-source-wordcount: '1161'
+source-wordcount: '1180'
 ht-degree: 0%
 
 ---
@@ -38,7 +38,7 @@ Houd ook rekening met de volgende punten wanneer u codecontroleprocessen impleme
 
 ## Betrokken producten en versies
 
-[&#x200B; Alle gesteunde versies &#x200B;](../../../release/versions.md) van:
+[ Alle gesteunde versies ](../../../release/versions.md) van:
 
 - Adobe Commerce over cloudinfrastructuur
 - Adobe Commerce ter plaatse
@@ -49,7 +49,7 @@ Houd ook rekening met de volgende punten wanneer u codecontroleprocessen impleme
 
 Stijl kan automatisch worden getest door de PHPStorm-inspectie uit te voeren (zie hieronder).
 
-Zorg ervoor om [&#x200B; PHPMD en PHPCS &#x200B;](https://developer.adobe.com/commerce/php/best-practices/phpstorm/code-inspection/) te vormen en het [&#x200B; Norm van de Codering &#x200B;](https://github.com/magento/magento-coding-standard) hulpmiddel van CLI (ook hieronder) in werking te stellen. Er is wat overlapping, maar beide hebben ook unieke tests.
+Zorg ervoor om [ PHPMD en PHPCS ](https://developer.adobe.com/commerce/php/best-practices/phpstorm/code-inspection/) te vormen en het [ Norm van de Codering ](https://github.com/magento/magento-coding-standard) hulpmiddel van CLI (ook hieronder) in werking te stellen. Er is wat overlapping, maar beide hebben ook unieke tests.
 
 ### Conventie en structuur
 
@@ -95,7 +95,7 @@ Beveiligingsbeoordelingen worden handmatig uitgevoerd, wat kan worden ondersteun
 
 ### Privacy en GDPR
 
-De recensies voor privacy en [&#x200B; GDPR &#x200B;](../../../security-and-compliance/privacy/gdpr.md) worden gedaan manueel.
+De recensies voor privacy en [ GDPR ](../../../security-and-compliance/privacy/gdpr.md) worden gedaan manueel.
 
 - Verwerkt de code klantgegevens of e-mails? Let vooral op.
 - Als deze code in een lijn kan worden uitgevoerd, kan het klantengegevens van één luscyclus aan een andere lekken?
@@ -116,7 +116,7 @@ De ontwikkelaars kunnen automatisering gebruiken om de compilatie van DI, gegeve
 
 - De compilatie-looppas van DI de volgende bevelen CLI om te zien of kan de code zonder enige kwesties worden gecompileerd.
 
-  ```bash
+  ```shell
   bin/magento module:disable -n -q --all || exit;
   bin/magento module:enable -n -q --all || exit;
   bin/magento cache:enable -n -q || exit;
@@ -133,26 +133,26 @@ De ontwikkelaars kunnen automatisering gebruiken om de compilatie van DI, gegeve
 
 - Databaseschema `whitelist.json` - Voer de volgende CLI-opdracht uit en controleer of het `db_schema_whitelist.json` -bestand niet is toegevoegd of gewijzigd.
 
-  ```bash
+  ```shell
   bin/magento setup:db-declaration:generate-whitelist --module-name[=MODULE-NAME]
   ```
 
 - Composer valideert - Valideer het `composer.json` dossier door het volgende CLI bevel in de folder in werking te stellen die het `composer.json` dossier bevat.
 
-  ```bash
+  ```shell
   composer validate
   ```
 
 - Codering standaard—Installeer en voer het gereedschap Coderingsstandaard uit en voer dit uit op de module. In het volgende bestand ziet u hoe u kunt instellen dat het bestand overal kan worden uitgevoerd door `mcs ./app/code/Vendor/Module/` te typen.
 
-  ```bash
+  ```shell
   #!/usr/bin/env bash
   $HOME/web/magento/magento-coding-standard/vendor/bin/phpcs --standard=Magento2 "$@"
   ```
 
 - Phpstan
 
-  ```bash
+  ```shell
   ./vendor/bin/phpstan analyze app/code/Vendor/Module
   ```
 

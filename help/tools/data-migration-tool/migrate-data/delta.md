@@ -3,16 +3,16 @@ title: Wijzigingen migreren
 description: Leer hoe te om slechts gegevens te migreren die sinds uw laatste Magento 1 gegevensmigratie met  [!DNL Data Migration Tool] zijn veranderd.
 exl-id: c300c567-77d3-4c25-8b28-a7ae4ab0092e
 topic: Commerce, Migration
-source-git-commit: e83e2359377f03506178c28f8b30993c172282c7
+source-git-commit: 48624d70761117ed0b9f8a7be913fce0572577b6
 workflow-type: tm+mt
-source-wordcount: '355'
+source-wordcount: '358'
 ht-degree: 0%
 
 ---
 
 # Wijzigingen migreren
 
-Het stijgende migratiehulpmiddel installeert lijstlijsten (met prefix `m2_cl_*`) en trekkers (voor het volgen van veranderingen) in Magento 1 gegevensbestand tijdens de [&#x200B; migratie van gegevens &#x200B;](data.md). Deze overzichtstabellen en triggers zijn essentieel om ervoor te zorgen dat u alleen de wijzigingen migreert die u hebt aangebracht in Magento 1 sinds de laatste keer dat u gegevens hebt gemigreerd. Deze wijzigingen zijn:
+Het stijgende migratiehulpmiddel installeert lijstlijsten (met prefix `m2_cl_*`) en trekkers (voor het volgen van veranderingen) in Magento 1 gegevensbestand tijdens de [ migratie van gegevens ](data.md). Deze overzichtstabellen en triggers zijn essentieel om ervoor te zorgen dat u alleen de wijzigingen migreert die u hebt aangebracht in Magento 1 sinds de laatste keer dat u gegevens hebt gemigreerd. Deze wijzigingen zijn:
 
 * Gegevens die klanten via winkel hebben toegevoegd (bestellingen, revisies en wijzigingen in klantprofielen)
 
@@ -25,16 +25,16 @@ Het stijgende migratiehulpmiddel installeert lijstlijsten (met prefix `m2_cl_*`)
 
 Voer de volgende stappen uit om voor te bereiden voordat u begint:
 
-1. Login aan de toepassingsserver als [&#x200B; de eigenaar van het dossiersysteem &#x200B;](../../../installation/prerequisites/file-system/overview.md).
+1. Login aan de toepassingsserver als [ de eigenaar van het dossiersysteem ](../../../installation/prerequisites/file-system/overview.md).
 1. Wijzig de map `/bin` of zorg ervoor dat deze aan uw systeem wordt toegevoegd `PATH` .
 
-Zie de [&#x200B; eerste stappen &#x200B;](overview.md#first-steps) sectie voor meer details.
+Zie de [ eerste stappen ](overview.md#first-steps) sectie voor meer details.
 
 ## De opdracht Incrementele migratie uitvoeren
 
 Voer de volgende handelingen uit om de migratie van incrementele wijzigingen te starten:
 
-```bash
+```shell
 bin/magento migrate:delta [-r|--reset] [-a|--auto] {<path to config.xml>}
 ```
 
@@ -44,11 +44,11 @@ Waarbij:
 
 * `[-a|--auto]` is een optioneel argument dat voorkomt dat de migratie stopt wanneer integriteitscontroles worden uitgevoerd.
 
-* `{<path to config.xml>}` is het absolute bestandsysteempad naar `config.xml` . Dit argument is vereist.
+* `{<path to config.xml>}` is het absolute pad van het bestandssysteem naar `config.xml` ; dit argument is vereist .
 
 >[!NOTE]
 >
->De stijgende migratie is een ononderbroken proces; het begint automatisch om de 5 seconden opnieuw. Gebruik CTRL-C om het migratieproces af te breken.
+>Incrementele migratie is een continu proces; deze start automatisch om de 5 seconden opnieuw op. Gebruik CTRL-C om het migratieproces af te breken.
 
 
 ## Gegevens migreren die door externe extensies zijn gemaakt

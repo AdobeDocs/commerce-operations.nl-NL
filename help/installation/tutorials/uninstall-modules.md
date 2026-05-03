@@ -1,10 +1,10 @@
 ---
 title: Modules verwijderen
-description: Voer de volgende stappen uit om een Adobe Commerce-module te verwijderen.
+description: Leer hoe u Adobe Commerce-modules kunt verwijderen met de optionele verwijdering van code, schema en gegevens en wanneer u modules wilt uitschakelen in plaats van deze te verwijderen.
 exl-id: 66879ef5-47c7-4b61-8c7e-78b60441980a
-source-git-commit: ca8dc855e0598d2c3d43afae2e055aa27035a09b
+source-git-commit: 319f3232d1ba5f5ed7cdd10ce85b9d7ffbeec89a
 workflow-type: tm+mt
-source-wordcount: '727'
+source-wordcount: '754'
 ht-degree: 0%
 
 ---
@@ -13,15 +13,15 @@ ht-degree: 0%
 
 In deze sectie wordt besproken hoe u een of meer modules kunt verwijderen. Tijdens uninstallation, kunt u naar keuze de code van de modules, gegevensbestandschema, en gegevensbestandgegevens verwijderen. U kunt eerst back-ups maken, zodat u de gegevens later kunt herstellen.
 
-Verwijder een module alleen als u zeker weet dat u deze niet wilt gebruiken. In plaats van het verwijderen van een module, kunt u het zoals die in [&#x200B; wordt besproken onbruikbaar maken of modules &#x200B;](manage-modules.md) toelaten onbruikbaar maken.
+Verwijder een module alleen als u zeker weet dat u deze niet wilt gebruiken. In plaats van het verwijderen van een module, kunt u het zoals die in [ wordt besproken onbruikbaar maken of modules ](manage-modules.md) toelaten onbruikbaar maken.
 
 >[!NOTE]
 >
->Deze opdracht controleert of alleen afhankelijkheden zijn gedeclareerd in het `composer.json` -bestand. Als u een module verwijdert die _niet_ in het `composer.json` dossier wordt bepaald, schrapt dit bevel de module zonder gebiedsdelen te controleren. Dit bevel verwijdert __ niet, echter, de code van de module uit het dossiersysteem. U moet bestandssysteemgereedschappen gebruiken om de code van de module te verwijderen (bijvoorbeeld `rm -rf <path to module>` ). Als alternatief, kunt u [&#x200B; niet-Composer modules &#x200B;](manage-modules.md) onbruikbaar maken.
+>Deze opdracht controleert of alleen afhankelijkheden zijn gedeclareerd in het `composer.json` -bestand. Als u een module verwijdert die _niet_ in het `composer.json` dossier wordt bepaald, schrapt dit bevel de module zonder gebiedsdelen te controleren. Dit bevel verwijdert __ niet, echter, de code van de module uit het dossiersysteem. U moet bestandssysteemgereedschappen gebruiken om de code van de module te verwijderen (bijvoorbeeld `rm -rf <path to module>` ). Als alternatief, kunt u ](manage-modules.md) niet-Composer modules [ onbruikbaar maken.
 
 Opdrachtgebruik:
 
-```bash
+```shell
 bin/magento module:uninstall [--backup-code] [--backup-media] [--backup-db] [-r|--remove-data] [-c|--clear-static-content] \
   {ModuleName} ... {ModuleName}
 ```
@@ -50,10 +50,10 @@ Met de opdracht Module verwijderen worden de volgende taken uitgevoerd:
 
 1. Als `--remove-data` is opgegeven, verwijdert u het databaseschema en de gegevens die zijn gedefinieerd in de `Uninstall` -klassen van de module.
 
-   Roept de methode `uninstall` in de klasse `Uninstall` aan om elke opgegeven module te verwijderen. Deze klasse moet van [&#x200B; Magento\Framework\Setup\UninstallInterface &#x200B;](https://github.com/magento/magento2/blob/2.4/lib/internal/Magento/Framework/Setup/UninstallInterface.php) erven.
+   Roept de methode `uninstall` in de klasse `Uninstall` aan om elke opgegeven module te verwijderen. Deze klasse moet van [ Magento\Framework\Setup\UninstallInterface ](https://github.com/magento/magento2/blob/2.4/lib/internal/Magento/Framework/Setup/UninstallInterface.php) erven.
 
 1. Hiermee worden de opgegeven modules verwijderd uit de databasetabel `setup_module` .
-1. Verwijdert de gespecificeerde modules uit de modulelijst in de [&#x200B; plaatsingsconfiguratie &#x200B;](../../configuration/reference/deployment-files.md).
+1. Verwijdert de gespecificeerde modules uit de modulelijst in de [ plaatsingsconfiguratie ](../../configuration/reference/deployment-files.md).
 1. Hiermee verwijdert u code uit de codebase met `composer remove` .
 
    >[!NOTE]
@@ -62,12 +62,12 @@ Met de opdracht Module verwijderen worden de volgende taken uitgevoerd:
 
 1. Wist de cache.
 1. Werkt gegenereerde klassen bij.
-1. Als `--clear-static-content` wordt gespecificeerd, ontruimt [&#x200B; geproduceerde statische meningsdossiers &#x200B;](../../configuration/cli/static-view-file-deployment.md).
+1. Als `--clear-static-content` wordt gespecificeerd, ontruimt [ geproduceerde statische meningsdossiers ](../../configuration/cli/static-view-file-deployment.md).
 1. Neemt de opslag uit onderhoudswijze.
 
 Als u bijvoorbeeld probeert een module te verwijderen waarvan een andere module afhankelijk is, wordt het volgende bericht weergegeven:
 
-```
+```shell
 magento module:uninstall Magento_SampleMinimal
     Cannot uninstall module 'Magento_SampleMinimal' because the following module(s) depend on it:
         Magento_SampleModifyContent
@@ -75,13 +75,13 @@ magento module:uninstall Magento_SampleMinimal
 
 Één alternatief moet beide modules na het steunen van het systeem van het moduledossier, `pub/media` dossiers, en gegevensbestandlijsten desinstalleren maar _niet_ verwijderend het het gegevensbestandschema of gegevens van de module:
 
-```bash
+```shell
 bin/magento module:uninstall Magento_SampleMinimal Magento_SampleModifyContent --backup-code --backup-media --backup-db
 ```
 
 Berichten die lijken op de volgende weergave:
 
-```
+```text
 You are about to remove code and/or database tables. Are you sure?[y/N]y
 Enabling maintenance mode
 Code backup is starting...
@@ -116,13 +116,13 @@ Disabling maintenance mode
 
 >[!NOTE]
 >
->De vertoning van fouten als u probeert om een module met een gebiedsdeel van een andere module te desinstalleren. In dat geval kunt u één module niet verwijderen. U moet beide verwijderen.
+>De vertoning van fouten als u probeert om een module met een gebiedsdeel van een andere module te desinstalleren. In dat geval kunt u één module niet verwijderen. u moet beide verwijderen.
 
 ## Bestandssysteem, database of mediabestanden terugdraaien
 
 Gebruik de volgende opdracht om de codebase te herstellen naar de toestand waarin u er een back-up van hebt gemaakt:
 
-```bash
+```shell
 bin/magento setup:rollback [-c|--code-file="<filename>"] [-m|--media-file="<filename>"] [-d|--db-file="<filename>"]
 ```
 
@@ -142,23 +142,23 @@ Deze opdracht voert de volgende taken uit:
 1. Controleert de naam van het back-upbestand.
 1. Als u een bestand voor het terugdraaien van code opgeeft:
 
-   a. Controleert of de terugdraaidoellocaties schrijfbaar zijn (de mappen `pub/static` en `var` worden genegeerd).
+   a. Hiermee wordt gecontroleerd of de terugdraaidoellocaties schrijfbaar zijn (de mappen `pub/static` en `var` worden genegeerd).
 
-   b. Verwijdert alle bestanden en mappen in de installatiemap van de toepassing.
+   b. Hiermee verwijdert u alle bestanden en mappen in de installatiemap van de toepassing.
 
    c. Extraheert het archiefbestand naar de doellocaties.
 
 1. Als u een terugdraaibestand voor de database opgeeft:
 
-   a. De gehele database wordt verwijderd.
+   a. Hiermee wordt de gehele database neergezet.
 
    b. Herstelt de database met behulp van de back-up van de database.
 
 1. Als u een terugdraaibestand voor media opgeeft:
 
-   a. Verifieert dat de het terugschroeven van prijzenbestemmingsplaatsen beschrijfbaar zijn.
+   a. Verifieert dat de het terugschroeven van prijzenbestemmingsplaatsen schrijfbaar zijn.
 
-   b. Hiermee worden alle bestanden en mappen verwijderd onder `pub/media`
+   b. Hiermee verwijdert u alle bestanden en mappen onder `pub/media` .
 
    c. Extraheert het archiefbestand naar de doellocaties.
 
@@ -168,19 +168,19 @@ Als u bijvoorbeeld een back-up van een code (dat wil zeggen bestandssysteem) wil
 
 * Een lijst met back-ups weergeven:
 
-  ```bash
+  ```shell
   magento info:backups:list
   ```
 
 * Een back-up van een bestand met de naam `1433876616_filesystem.tgz` herstellen:
 
-  ```bash
+  ```shell
   magento setup:rollback --code-file="1433876616_filesystem.tgz"
   ```
 
   Berichten die lijken op de volgende weergave:
 
-  ```
+  ```text
   Enabling maintenance mode
   Code rollback is starting ...
   Code rollback filename: 1433876616_filesystem.tgz

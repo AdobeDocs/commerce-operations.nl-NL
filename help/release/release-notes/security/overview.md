@@ -1,10 +1,10 @@
 ---
 title: Opmerkingen bij de release van beveiligingspatches
-description: Opmerkingen bij de release van Adobe Commerce bekijken voor beveiligingspatches.
+description: Bekijk de opmerkingen bij de release van de Adobe Commerce-beveiligingspatch voor ondersteunde versies, waaronder beveiligingsverbeteringen, oplossingen en de inhoud van elke patchrelease.
 exl-id: a3d78211-41ff-4df2-ad29-21465c096027
-source-git-commit: e0905f357c5ab84b30304eeaad00d9ae4ec0c168
+source-git-commit: 41b8d77793f1c24f08ff7e6a2d35826a62477534
 workflow-type: tm+mt
-source-wordcount: '40'
+source-wordcount: '52'
 ht-degree: 0%
 
 ---

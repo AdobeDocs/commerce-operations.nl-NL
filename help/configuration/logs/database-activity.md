@@ -3,9 +3,9 @@ title: Logboekdatabaseactiviteit
 description: Configureer Commerce om databaseactiviteiten te registreren met behulp van de Logger-interface.
 feature: Configuration, Logs, Storage
 exl-id: 2487c5ec-a01e-4d87-bc5e-c33643b032df
-source-git-commit: 6896d31a202957d7354c3dd5eb6459eda426e8d7
+source-git-commit: 48624d70761117ed0b9f8a7be913fce0572577b6
 workflow-type: tm+mt
-source-wordcount: '86'
+source-wordcount: '110'
 ht-degree: 0%
 
 ---
@@ -14,12 +14,12 @@ ht-degree: 0%
 
 In het volgende voorbeeld ziet u hoe u databaseactiviteiten kunt registreren met de `[Magento\Framework\DB\LoggerInterface](https://github.com/magento/magento2/blob/2.4.8/lib/internal/Magento/Framework/DB/LoggerInterface.php)` , die twee implementaties heeft:
 
-- Er wordt niets geregistreerd (standaard): [`Magento\Framework\DB\Logger\Quiet` &#x200B;](https://github.com/magento/magento2/blob/2.4.8/lib/internal/Magento/Framework/DB/Logger/Quiet.php)
-- Logs to the `var/log` directory: [`Magento\Framework\DB\Logger\File` &#x200B;](https://github.com/magento/magento2/blob/2.4.8/lib/internal/Magento/Framework/DB/Logger/File.php)
+- Er wordt niets geregistreerd (standaard): [`Magento\Framework\DB\Logger\Quiet` ](https://github.com/magento/magento2/blob/2.4.8/lib/internal/Magento/Framework/DB/Logger/Quiet.php)
+- Hiermee wordt u aangemeld bij de map `var/log` : [`Magento\Framework\DB\Logger\File` ](https://github.com/magento/magento2/blob/2.4.8/lib/internal/Magento/Framework/DB/Logger/File.php)
 
 >[!TIP]
 >
->U kunt Commerce CLI gebruiken om [&#x200B; gegevensbestand het registreren &#x200B;](../cli/enable-logging.md#database-logging) toe te laten en onbruikbaar te maken.
+>U kunt Commerce CLI gebruiken om [ gegevensbestand het registreren ](../cli/enable-logging.md#database-logging) toe te laten en onbruikbaar te maken.
 
 Als u de standaardconfiguratie van `\Magento\Framework\DB\Logger\LoggerProxy` wilt wijzigen, bewerkt u uw `app/etc/di.xml` .
 
@@ -48,13 +48,13 @@ Geef vervolgens het bestandspad op voor `Magento\Framework\DB\Logger\File` :
 
 Ten slotte compileert u de code met:
 
-```bash
+```shell
 bin/magento setup:di:compile
 ```
 
 En maak de cache schoon met:
 
-```bash
+```shell
 bin/magento cache:clean
 ```
 

@@ -3,9 +3,9 @@ title: Redis gebruiken voor sessieopslag
 description: Leer hoe u Redis voor sessieopslag in Adobe Commerce configureert. Ontdek opdrachtregelinstellingen, configuratieopties en optimalisatietechnieken.
 feature: Configuration, Cache
 exl-id: f93f500d-65b0-4788-96ab-f1c3d2d40a38
-source-git-commit: 7054a5286f01e26e324401f4d8505e4e0faed93e
+source-git-commit: 48624d70761117ed0b9f8a7be913fce0572577b6
 workflow-type: tm+mt
-source-wordcount: '724'
+source-wordcount: '836'
 ht-degree: 1%
 
 ---
@@ -14,14 +14,14 @@ ht-degree: 1%
 
 >[!IMPORTANT]
 >
->U moet [&#x200B; Redis &#x200B;](config-redis.md#install-redis) installeren alvorens verder te gaan.
+>U moet [ Redis ](config-redis.md#install-redis) installeren alvorens verder te gaan.
 
 
 Commerce biedt nu opdrachtregelopties voor het configureren van Redis-sessieopslag. In vorige versies hebt u het bestand `<Commerce install dir>app/etc/env.php` bewerkt. De opdrachtregel biedt validatie en dit is de aanbevolen configuratiemethode, maar u kunt het `env.php` -bestand wel bewerken.
 
 Voer de opdracht `setup:config:set` uit en geef Redis-specifieke parameters op.
 
-```bash
+```shell
 bin/magento setup:config:set --session-save=redis --session-save-redis-<parameter_name>=<parameter_value>...
 ```
 
@@ -36,12 +36,12 @@ waar
 | session-save-redis-host | host | Volledig - gekwalificeerde hostname, IP adres, of absolute weg als het gebruiken van de contactdozen van UNIX. | localhost |
 | session-save-redis-port | poort | Redis server listen port. | 6379 |
 | session-save-redis-password | password | Hiermee geeft u een wachtwoord op als uw Redis-server verificatie vereist. | leeg |
-| session-save-redis-timeout | timeout | Time-out verbinding, in seconden. | 2,5 |
-| session-save-redis-persistent-id | persistent_identifier | Unieke tekenreeks om permanente verbindingen in te schakelen (bijvoorbeeld sess-db0).<br>[&#x200B; Bekende kwesties met phpredis en php-fpm &#x200B;](https://github.com/phpredis/phpredis/issues/70). |  |
-| session-save-redis-db | database | Uniek Redis-databasenummer, dat wordt aanbevolen om te beschermen tegen gegevensverlies.<br><br>**Belangrijk**: Als u Redis voor meer dan één type van caching gebruikt, moeten de gegevensbestandaantallen verschillend zijn. U wordt aangeraden het standaard cachedatabasenummer aan 0, het databasenummer voor het in cache plaatsen van pagina&#39;s aan 1 en het databasenummer voor de sessieopslag aan 2 toe te wijzen. | 0 |
-| session-save-hers-compression-threshold | compression_threshold | Stel de waarde in op 0 om compressie uit te schakelen (aanbevolen bij `suhosin.session.encrypt = On`).<br>[&#x200B; Bekende kwestie met koorden van meer dan 64 KB &#x200B;](https://github.com/colinmollenhour/Cm_Cache_Backend_Redis/issues/18). | 2048 |
+| session-save-redis-timeout | timeout | Time-out verbinding, in seconden. | 2.5 |
+| session-save-redis-persistent-id | persistent_identifier | Unieke koord om blijvende verbindingen (bijvoorbeeld, sess-db0) toe te laten.<br>[ Bekende kwesties met phpredis en php-fpm ](https://github.com/phpredis/phpredis/issues/70). |  |
+| session-save-redis-db | database | Het unieke Redis gegevensbestandaantal, dat wordt geadviseerd om tegen gegevensverlies te beschermen.<br><br>**Belangrijk**: Als u Redis voor meer dan één type caching gebruikt, moeten de gegevensbestandaantallen verschillend zijn. U wordt aangeraden het standaard cachedatabasenummer aan 0, het databasenummer voor het in cache plaatsen van pagina&#39;s aan 1 en het databasenummer voor de sessieopslag aan 2 toe te wijzen. | 0 |
+| session-save-hers-compression-threshold | compression_threshold | Reeks aan 0 om compressie (geadviseerd wanneer `suhosin.session.encrypt = On`) onbruikbaar te maken.<br>[ Bekende kwestie met koorden van meer dan 64 KB ](https://github.com/colinmollenhour/Cm_Cache_Backend_Redis/issues/18). | 2048 |
 | session-save-redis-compression-lib | compression_library | Opties: gzip, lzf, lz4 of snappy. | gzip |
-| session-save-redis-log-level | log_level | Stel de volgende waarden in op een van de volgende volgorde, van minimale breedtegraad tot breedste breedte:<ul><li>0 (noodsituatie: alleen de ernstigste fouten)<li>1 (waarschuwing: onmiddellijke actie vereist)<li>2 (kritiek: toepassingscomponent niet beschikbaar)<li>3 (fout: fouten bij uitvoering, niet kritiek, maar moet worden gecontroleerd)<li>4 (waarschuwing: aanvullende informatie, aanbevolen)<li>5 (mededeling: normale maar significante toestand)<li>6 (info: informatieve berichten)<li>7 (foutopsporing: de meeste informatie die u alleen kunt ontwikkelen of testen)</ul> | 1 |
+| session-save-redis-log-level | log_level | Stel de volgende waarden in op een van de volgende volgorde, van minimale breedtegraad tot breedste breedte:<ul><li>0 (noodsituatie: alleen de ernstigste fouten)<li>1 (waarschuwing: onmiddellijke actie vereist)<li>2 (kritiek: toepassingscomponent niet beschikbaar)<li>3 (fout: fouten bij uitvoering, niet kritiek, maar moet worden gecontroleerd)<li>4 (waarschuwing: aanvullende informatie, aanbevolen)<li>5 (kennisgeving): normale maar significante toestand)<li>6 (info: informatieberichten)<li>7 (foutopsporing: de meeste informatie (alleen voor ontwikkeling of testen)</ul> | 1 |
 | session-save-redis-max-gelijktijdige | max_concurrency | Maximum aantal processen dat op een slot op één zitting kan wachten. Voor grote productieclusters stelt u dit in op ten minste 10% van het aantal PHP-processen. | 6 |
 | session-save-break-after-frontend | break_after_frontend | Aantal seconden dat moet worden gewacht voordat wordt geprobeerd de vergrendeling voor de voorste (dat wil zeggen: storefront) sessie te verbreken. | 5 |
 | session-save-redis-break-after-adminhtml | break_after_adminhtml | Aantal seconden dat moet worden gewacht voordat wordt geprobeerd de vergrendeling te verbreken voor een beheersessie (dat wil zeggen Admin). | 30 |
@@ -60,7 +60,7 @@ waar
 
 In het volgende voorbeeld wordt Redis ingesteld als opslaglocatie voor sessiegegevens, wordt de host ingesteld op `127.0.0.1` , wordt het logniveau ingesteld op 4 en wordt het databasenummer ingesteld op 2. Alle andere parameters worden ingesteld op de standaardwaarde.
 
-```bash
+```shell
 bin/magento setup:config:set --session-save=redis --session-save-redis-host=127.0.0.1 --session-save-redis-log-level=4 --session-save-redis-db=2
 ```
 
@@ -104,13 +104,13 @@ Om te verifiëren dat Redis en Commerce samenwerken, login aan de server die Red
 
 ### Redis-monitor, opdracht
 
-```bash
+```shell
 redis-cli monitor
 ```
 
 Voorbeeld van sessieopslaguitvoer:
 
-```
+```text
 1476824834.187250 [0 127.0.0.1:52353] "select" "0"
 1476824834.187587 [0 127.0.0.1:52353] "hmget" "sess_sgmeh2k3t7obl2tsot3h2ss0p1" "data" "writes"
 1476824834.187939 [0 127.0.0.1:52353] "expire" "sess_sgmeh2k3t7obl2tsot3h2ss0p1" "1200"
@@ -121,7 +121,7 @@ Voorbeeld van sessieopslaguitvoer:
 
 ### Redis, ping, opdracht
 
-```bash
+```shell
 redis-cli ping
 ```
 
@@ -131,4 +131,4 @@ Als beide opdrachten zijn uitgevoerd, wordt Redis op de juiste wijze ingesteld.
 
 ### Gecomprimeerde gegevens controleren
 
-Om de samengeperste gegevens van de Zitting en het Geheime voorgeheugen van de Pagina te inspecteren, [&#x200B; RESP.app &#x200B;](https://flathub.org/apps/details/app.resp.RESP) steunt de automatische decompressie van Commerce 2 Sessie en het geheime voorgeheugen van de Pagina en toont PHP zittingsgegevens in een mens-leesbare vorm.
+Om de samengeperste gegevens van de Zitting en het Geheime voorgeheugen van de Pagina te inspecteren, [ RESP.app ](https://flathub.org/apps/details/app.resp.RESP) steunt de automatische decompressie van Commerce 2 Sessie en het geheime voorgeheugen van de Pagina en toont PHP zittingsgegevens in een mens-leesbare vorm.

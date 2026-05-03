@@ -1,18 +1,18 @@
 ---
-title: 'ACSD-64118: Gelijktijdige opslagaanvragen voor hetzelfde product veroorzaken inconsistentie van gegevens en dubbele vermeldingen'
+title: 'ACSD-6418: Gelijktijdige opslagaanvragen voor hetzelfde product veroorzaken inconsistentie van gegevens en dubbele vermeldingen'
 description: Pas de ACSD-64118-patch toe om het Adobe Commerce-probleem op te lossen waarbij gelijktijdige aanvragen om hetzelfde product op te slaan en bij te werken leiden tot inconsistentie van gegevens of gedupliceerde producten.
 feature: REST
 role: Admin, Developer
 type: Troubleshooting
 exl-id: e014645e-72b2-4b3d-8b44-3daca502c950
-source-git-commit: 5c84dc5c27f6e57b4116bc1a3d4fb001b55b63f1
+source-git-commit: 48624d70761117ed0b9f8a7be913fce0572577b6
 workflow-type: tm+mt
-source-wordcount: '399'
+source-wordcount: '418'
 ht-degree: 0%
 
 ---
 
-# ACSD-64118: Gelijktijdige opslagaanvragen voor hetzelfde product veroorzaken inconsistentie van gegevens en dubbele vermeldingen
+# ACSD-6418: Gelijktijdige opslagaanvragen voor hetzelfde product veroorzaken inconsistentie van gegevens en dubbele vermeldingen
 
 De ACSD-64118-patch verhelpt het probleem waarbij gelijktijdige aanvragen om hetzelfde product op te slaan en bij te werken leiden tot inconsistentie van gegevens of gedupliceerde producten. Deze patch is beschikbaar wanneer [[!DNL Quality Patches Tool (QPT)]](/help/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches.md) 1.1.65 wordt geïnstalleerd. De patch-id is ACSD-64118. Dit probleem wordt volgens de planning opgelost in Adobe Commerce 2.4.9.
 
@@ -28,7 +28,7 @@ De ACSD-64118-patch verhelpt het probleem waarbij gelijktijdige aanvragen om het
 
 >[!NOTE]
 >
->De patch kan van toepassing worden op andere versies met nieuwe [!DNL Quality Patches Tool] versies. Om te controleren of de patch compatibel is met uw Adobe Commerce-versie, werkt u het `magento/quality-patches` -pakket bij naar de meest recente versie en controleert u de compatibiliteit op de [[!DNL Quality Patches Tool] : zoek naar patches op de pagina &#x200B;](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html?lang=nl-NL) . Gebruik de patch-id als een zoekwoord om de patch te zoeken.
+>De patch kan van toepassing worden op andere versies met nieuwe [!DNL Quality Patches Tool] versies. Als u wilt controleren of de patch compatibel is met uw Adobe Commerce-versie, werkt u het `magento/quality-patches` -pakket bij naar de meest recente versie en controleert u de compatibiliteit op de [[!DNL Quality Patches Tool] : Zoek naar de pagina van flarden ](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html). Gebruik de patch-id als een zoekwoord om de patch te zoeken.
 
 ## Probleem
 
@@ -38,7 +38,7 @@ Gelijktijdige aanvragen om hetzelfde product op te slaan en bij te werken, leide
 
 1. Meerdere processen voor consumenten instellen in `env.php` :
 
-   ```
+   ```text
    'multiple_processes' =>
        array (
            'async.operations.all' => 4,
@@ -48,7 +48,7 @@ Gelijktijdige aanvragen om hetzelfde product op te slaan en bij te werken, leide
 1. Voeg een extra winkel en een nieuwe voorvertoning toe aan de hoofdwebsite.
 1. Verzend een bulk API verzoek naar het standaardstoreview eindpunt `/rest/default/async/bulk/V1/products` met de volgende nuttige lading om een product tot stand te brengen:
 
-   ```
+   ```text
    [
      {
        "product": {
@@ -78,11 +78,11 @@ De tabel `catalog_product_entity` bevat meerdere items voor dezelfde SKU.
 
 Om individuele flarden toe te passen, gebruik de volgende verbindingen afhankelijk van uw plaatsingsmethode:
 
-* Op locatie Adobe Commerce of Magento Open Source: [[!DNL Quality Patches Tool] > Gebruik &#x200B;](/help/tools/quality-patches-tool/usage.md) in de handleiding [!DNL Quality Patches Tool] .
-* Adobe Commerce op wolkeninfrastructuur: [&#x200B; Verbeteringen en Patches > Pas Patches &#x200B;](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html?lang=nl-NL) in Commerce op de gids van de Infrastructuur van de Wolk toe.
+* Adobe Commerce of Magento Open Source ter plaatse: [[!DNL Quality Patches Tool] > Gebruik ](/help/tools/quality-patches-tool/usage.md) in de [!DNL Quality Patches Tool] gids.
+* Adobe Commerce op cloudinfrastructuur: [ Verbeteringen en Patches > pas Patches ](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html) in Commerce op de gids van de Infrastructuur van de Wolk toe.
 
 ## Gerelateerde lezing
 
 Meer informatie over [!DNL Quality Patches Tool] vindt u in:
 
-* [[!DNL Quality Patches Tool]: Een zelfbedieningshulpmiddel voor kwaliteitspatches &#x200B;](/help/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches.md) in de gids van Hulpmiddelen.
+* [[!DNL Quality Patches Tool] : Een zelfbedieningshulpmiddel voor kwaliteitspatches ](/help/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches.md) in de gids van Hulpmiddelen.

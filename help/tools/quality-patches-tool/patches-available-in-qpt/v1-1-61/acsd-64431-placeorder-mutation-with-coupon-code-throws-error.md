@@ -1,18 +1,18 @@
 ---
-title: 'ACSD-64431: De "placeOrder"-mutatie met couponcode in de aanvraag veroorzaakt een interne serverfout'
+title: ACSD-64431 De "placeOrder"-mutatie met couponcode in de aanvraag veroorzaakt een interne serverfout
 description: Pas de ACSD-64431-patch toe om het Adobe Commerce-probleem op te lossen waarbij de "placeOrder"-mutatie die de gegevens van de couponcode in het verzoek bevat, een interne serverfout veroorzaakt in plaats van dat de order met succes is geplaatst.
 feature: GraphQL, Orders, Promotions/Events
 role: Admin, Developer
 exl-id: 13918f3e-842b-4b2e-b2e2-2d8add542a87
 type: Troubleshooting
-source-git-commit: 7fdb02a6d89d50ea593c5fd99d78101f89198424
+source-git-commit: 319f3232d1ba5f5ed7cdd10ce85b9d7ffbeec89a
 workflow-type: tm+mt
-source-wordcount: '392'
+source-wordcount: '410'
 ht-degree: 0%
 
 ---
 
-# ACSD-64431: De &quot;placeOrder&quot;-mutatie met couponcode in de aanvraag veroorzaakt een interne serverfout
+# ACSD-64431 De &quot;placeOrder&quot;-mutatie met couponcode in de aanvraag veroorzaakt een interne serverfout
 
 De ACSD-64431-patch verhelpt het probleem waarbij de `placeOrder` -mutatie die de gegevens van de couponcode in de aanvraag bevat, een interne serverfout veroorzaakt in plaats van de order succesvol te plaatsen. Deze patch is beschikbaar wanneer [[!DNL Quality Patches Tool (QPT)]](/help/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches.md) 1.1.61 wordt geïnstalleerd. De patch-id is ACSD-64431. Het probleem wordt volgens de planning opgelost in Adobe Commerce 2.4.8.
 
@@ -28,7 +28,7 @@ De ACSD-64431-patch verhelpt het probleem waarbij de `placeOrder` -mutatie die d
 
 >[!NOTE]
 >
->De patch kan van toepassing worden op andere versies met nieuwe [!DNL Quality Patches Tool] versies. Om te controleren of de patch compatibel is met uw Adobe Commerce-versie, werkt u het `magento/quality-patches` -pakket bij naar de meest recente versie en controleert u de compatibiliteit op de [[!DNL Quality Patches Tool] : zoek naar patches op de pagina &#x200B;](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html?lang=nl-NL) . Gebruik de patch-id als een zoekwoord om de patch te zoeken.
+>De patch kan van toepassing worden op andere versies met nieuwe [!DNL Quality Patches Tool] versies. Als u wilt controleren of de patch compatibel is met uw Adobe Commerce-versie, werkt u het `magento/quality-patches` -pakket bij naar de meest recente versie en controleert u de compatibiliteit op de [[!DNL Quality Patches Tool] : Zoek naar de pagina van flarden ](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html). Gebruik de patch-id als een zoekwoord om de patch te zoeken.
 
 ## Probleem
 
@@ -40,7 +40,7 @@ De `placeOrder` -mutatie die de gegevens van de waardeboncode in de aanvraag bev
 1. Creeer a **[!UICONTROL Cart Price Rule]**, plaats **[!UICONTROL Coupon]** aan `Specific Coupon` en ga _TEST1234_ als couponcode in.
 1. Een klant maken:
 
-   ```
+   ```graphql
    mutation {
    createCustomer(
        input: {
@@ -63,7 +63,7 @@ De `placeOrder` -mutatie die de gegevens van de waardeboncode in de aanvraag bev
 
 1. Een klanttoken genereren. U kunt deze token gebruiken voor volgende aanvragen.
 
-   ```
+   ```graphql
    mutation {
    generateCustomerToken(email: "john.doe@example.com", password: "b1b2b3l@w+") {
        token
@@ -73,7 +73,7 @@ De `placeOrder` -mutatie die de gegevens van de waardeboncode in de aanvraag bev
 
 1. Maak een lege wagen. Sla de kaart-id op en gebruik deze voor de volgende aanvragen.
 
-   ```
+   ```graphql
    mutation {
        createEmptyCart
    } 
@@ -81,7 +81,7 @@ De `placeOrder` -mutatie die de gegevens van de waardeboncode in de aanvraag bev
 
 1. Voeg het product toe aan het winkelwagentje:
 
-   ```
+   ```graphql
    mutation {
        addProductsToCart(
            cartId: "xxxx"
@@ -120,7 +120,7 @@ De `placeOrder` -mutatie die de gegevens van de waardeboncode in de aanvraag bev
 
 1. De coupon toepassen:
 
-   ```
+   ```graphql
    mutation {
        applyCouponToCart(input: { cart_id: "xxxx", coupon_code: "TEST1234" }) {
            cart {
@@ -154,7 +154,7 @@ De `placeOrder` -mutatie die de gegevens van de waardeboncode in de aanvraag bev
 
 1. Stel een verzendadres in:
 
-   ```
+   ```graphql
    mutation {
        setShippingAddressesOnCart(
            input: {
@@ -209,7 +209,7 @@ De `placeOrder` -mutatie die de gegevens van de waardeboncode in de aanvraag bev
 
 1. Een verzendmethode instellen:
 
-   ```
+   ```graphql
    mutation {
        setShippingMethodsOnCart(
            input: {
@@ -237,7 +237,7 @@ De `placeOrder` -mutatie die de gegevens van de waardeboncode in de aanvraag bev
 
 1. Stel een factuuradres in:
 
-   ```
+   ```graphql
    mutation {
        setBillingAddressOnCart(
            input: {
@@ -284,7 +284,7 @@ De `placeOrder` -mutatie die de gegevens van de waardeboncode in de aanvraag bev
 
 1. Een betalingsmethode instellen:
 
-   ```
+   ```graphql
    mutation {
        setPaymentMethodOnCart(
            input: { cart_id: "xxxx", payment_method: { code: "checkmo" } }
@@ -300,7 +300,7 @@ De `placeOrder` -mutatie die de gegevens van de waardeboncode in de aanvraag bev
 
 1. Plaats de volgorde:
 
-   ```
+   ```graphql
    mutation {
    placeOrder(
        input: {
@@ -331,7 +331,7 @@ Het volgende foutbericht wordt weergegeven:
 
 `exception.log` bevat de volgende fout:
 
-```
+```text
     report.ERROR: "discount_model" value should be specifiedGraphQL (1:135)
     1: mutation { placeOrder(input: {cart_id: "xxxx"}) { orderV2 { total { discounts { amount { currency value } coupon { code } } } } errors { message code } } }
 ```
@@ -340,11 +340,11 @@ Het volgende foutbericht wordt weergegeven:
 
 Om individuele flarden toe te passen, gebruik de volgende verbindingen afhankelijk van uw plaatsingsmethode:
 
-* Op locatie Adobe Commerce of Magento Open Source: [[!DNL Quality Patches Tool] > Gebruik &#x200B;](/help/tools/quality-patches-tool/usage.md) in de handleiding [!DNL Quality Patches Tool] .
-* Adobe Commerce op wolkeninfrastructuur: [&#x200B; Verbeteringen en Patches > Pas Patches &#x200B;](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html?lang=nl-NL) in Commerce op de gids van de Infrastructuur van de Wolk toe.
+* Adobe Commerce of Magento Open Source ter plaatse: [[!DNL Quality Patches Tool] > Gebruik ](/help/tools/quality-patches-tool/usage.md) in de [!DNL Quality Patches Tool] gids.
+* Adobe Commerce op cloudinfrastructuur: [ Verbeteringen en Patches > pas Patches ](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html) in Commerce op de gids van de Infrastructuur van de Wolk toe.
 
 ## Gerelateerde lezing
 
 Meer informatie over [!DNL Quality Patches Tool] vindt u in:
 
-* [[!DNL Quality Patches Tool]: Een zelfbedieningshulpmiddel voor kwaliteitspatches &#x200B;](/help/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches.md) in de gids van Hulpmiddelen.
+* [[!DNL Quality Patches Tool] : Een zelfbedieningshulpmiddel voor kwaliteitspatches ](/help/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches.md) in de gids van Hulpmiddelen.

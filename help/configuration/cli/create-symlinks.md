@@ -2,9 +2,9 @@
 title: Symlinks naar LESS-bestanden maken
 description: Leer hoe u symlinks naar LESS-bestanden maakt voor Adobe Commerce-ontwikkeling. Ontdek stijlpagina-koppelingen en optimalisatie van de ontwikkelingsworkflow.
 exl-id: 58a6123a-28b4-445b-b3f9-f524233ac127
-source-git-commit: 10f324478e9a5e80fc4d28ce680929687291e990
+source-git-commit: 48624d70761117ed0b9f8a7be913fce0572577b6
 workflow-type: tm+mt
-source-wordcount: '172'
+source-wordcount: '173'
 ht-degree: 0%
 
 ---
@@ -17,7 +17,7 @@ Symbolen maken met LESS-bestanden:
 
 Opdrachtopties:
 
-```bash
+```shell
 bin/magento dev:source-theme:deploy [--type="..."] [--locale="..."] [--area="..."] [--theme="..."] [file1] ... [fileN]
 ```
 
@@ -29,7 +29,7 @@ De volgende lijst verklaart de parameters en de waarden van dit bevel.
 
 | Parameter | Waarde | Vereist? |
 | --------- | ----- | --------- |
-| `--type` | Type van brondossiers: [ minder ] (gebrek: &quot;minder&quot;) <br> momenteel, is LESS het enige gesteunde dossiertype. | Nee |
+| `--type` | Type bronbestanden: [ minder ] (gebrek: &quot;minder&quot;) <br> momenteel, is LESS het enige gesteunde dossiertype. | Nee |
 | `--locale` | Landcode.<br> Voer `bin/magento info:language:list` in om de lijst met landinstellingscodes weer te geven | Nee |
 | `--area` | Gebied (`adminhtml` voor het beheergebied, `frontend` voor de winkelier). | Nee |
 | `--theme` | Themanaam in `<VendorName>/<theme-name>` -indeling. Bijvoorbeeld `Magento/blank` of `Magento/backend` . | Nee |
@@ -37,13 +37,13 @@ De volgende lijst verklaart de parameters en de waarden van dit bevel.
 
 Als u bijvoorbeeld LESS-bestanden wilt maken voor het voorste thema met de naam `VendorName/themeName` in de `en_US` -landinstelling met behulp van een CSS-bestand met de naam `<magento_root>/pub/static/frontend/VendorName/themeName/en_US/css/styles-l.css` , voert u de volgende opdracht in:
 
-```bash
+```shell
 bin/magento dev:source-theme:deploy --type="less" --locale="en_US" --area="frontend" --theme="VendorName/themeName" css/styles-l
 ```
 
 De volgende berichten tonen om succes te bevestigen:
 
-```
+```text
 Processed Area: frontend, Locale: en_US, Theme: VendorName/themeName, File type: less.
 -> css/styles-l.less
 Successfully processed.
@@ -51,6 +51,6 @@ Successfully processed.
 
 LESS-bestanden maken voor de beheerder:
 
-```bash
+```shell
 bin/magento dev:source-theme:deploy --locale="en_US" --area="adminhtml" --theme="Magento/backend" css/styles css/styles-old
 ```

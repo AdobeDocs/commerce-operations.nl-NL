@@ -1,11 +1,11 @@
 ---
 title: System Setup (Systeeminstellingen) bouwen
-description: Leer hoe u Commerce in een build-systeem kunt implementeren.
+description: Leer hoe te opstelling een bouwstijlsysteem voor de plaatsing van Adobe Commerce met broncontrole, geproduceerde activa, en statische inhoudsvereisten.
 feature: Configuration, Build, Deploy
 exl-id: f6daf5c6-6d12-46b0-b775-76791bacea53
-source-git-commit: 6896d31a202957d7354c3dd5eb6459eda426e8d7
+source-git-commit: 41b8d77793f1c24f08ff7e6a2d35826a62477534
 workflow-type: tm+mt
-source-wordcount: '365'
+source-wordcount: '386'
 ht-degree: 0%
 
 ---
@@ -25,12 +25,12 @@ U kunt één bouwstijlsysteem hebben dat aan de volgende vereisten voldoet:
 
 - Hiervoor moet een compatibele PHP-versie zijn geïnstalleerd
 - Composer moet zijn geïnstalleerd
-- Het heeft bezit van het dossiersysteem en toestemmingen die zoals in [&#x200B; worden besproken Vereiste voor uw ontwikkeling, bouwt, en productiesystemen &#x200B;](../deployment/technical-details.md).
+- Het heeft bezit van het dossiersysteem en toestemmingen die zoals in [ worden besproken Vereiste voor uw ontwikkeling, bouwt, en productiesystemen ](../deployment/technical-details.md).
 - Voor het constructiesysteem hoeft Commerce niet te worden geïnstalleerd, maar de code moet wel beschikbaar zijn.
 
 >[!WARNING]
 >
->De gegevensbestandverbinding wordt niet vereist als het reeds in `config.php` bevat is; zie [&#x200B; de configuratie &#x200B;](../cli/export-configuration.md) uitvoeren. Anders is de databaseverbinding vereist.
+>De databaseverbinding is niet vereist als deze al in `config.php` is opgenomen. zie [ de Uitvoer van de configuratie ](../cli/export-configuration.md). Anders is de databaseverbinding vereist.
 
 >[!INFO]
 >
@@ -59,19 +59,19 @@ Composer installeren:
 
 1. Voer de volgende opdrachten in:
 
-   ```bash
+   ```shell
    curl -sS https://getcomposer.org/installer | php
    ```
 
-   ```bash
+   ```shell
    mv composer.phar /usr/local/bin/composer
    ```
 
-Voor extra installatieopties, zie de [&#x200B; documentatie van de de installatieinstallatie van Composer &#x200B;](https://getcomposer.org/download/).
+Voor extra installatieopties, zie de [ documentatie van de de installatieinstallatie van Composer ](https://getcomposer.org/download/).
 
 ### PHP installeren
 
-Installeer PHP op [&#x200B; CentOS &#x200B;](https://wiki.centos.org/HowTos/php7) of [&#x200B; Ubuntu &#x200B;](https://help.ubuntu.com/lts/serverguide/php.html).
+Installeer PHP op [ CentOS ](https://wiki.centos.org/HowTos/php7) of [ Ubuntu ](https://help.ubuntu.com/lts/serverguide/php.html).
 
 ### Het constructiesysteem instellen
 
@@ -82,26 +82,26 @@ Het constructiesysteem instellen:
 
    Gebruik de volgende opdracht als u Git gebruikt:
 
-   ```bash
+   ```shell
    git clone [-b <branch name>] <repository URL>
    ```
 
 1. Ga naar de Commerce-hoofdmap en voer de volgende gegevens in:
 
-   ```bash
+   ```shell
    composer install
    ```
 
 1. Wacht op gebiedsdelen om bij te werken.
 1. Eigendom instellen:
 
-   ```bash
+   ```shell
    chown -R <Commerce file system owner name>:<web server username> .
    ```
 
    Bijvoorbeeld:
 
-   ```bash
+   ```shell
    chown -R commerce-username:apache .
    ```
 
@@ -120,15 +120,15 @@ Het constructiesysteem instellen:
 1. Sla de wijzigingen in `.gitignore` op en sluit de teksteditor af.
 1. Als u Git gebruikt, gebruik de volgende bevelen om de verandering vast te leggen:
 
-   ```bash
+   ```shell
    git add .gitignore && git commit -m "Modify .gitignore for build and production"
    ```
 
-   Zie [`.gitignore` verwijzing &#x200B;](../reference/config-reference-gitignore.md) voor meer informatie.
+   Zie [`.gitignore` verwijzing ](../reference/config-reference-gitignore.md) voor meer informatie.
 
-1. Het bouwstijlsysteem zou [&#x200B; standaardwijze &#x200B;](../bootstrap/application-modes.md#default-mode) of [&#x200B; ontwikkelaarwijze &#x200B;](../bootstrap/application-modes.md#developer-mode) moeten gebruiken:
+1. Het bouwstijlsysteem zou [ standaardwijze ](../bootstrap/application-modes.md#default-mode) of [ ontwikkelaarwijze ](../bootstrap/application-modes.md#developer-mode) moeten gebruiken:
 
-   ```bash
+   ```shell
    bin/magento deploy:mode:set <mode>
    ```
 

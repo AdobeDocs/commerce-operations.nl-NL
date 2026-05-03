@@ -2,9 +2,9 @@
 title: Migreren van RabbitMQ naar ActiveMQ
 description: Leer over het vervangen van de broker van de berichtrij die voor op-gebouw installaties van Adobe Commerce wordt gebruikt.
 feature: Services, Configuration
-source-git-commit: 7610a5843b526a765dd35188722b7be8e6051049
+source-git-commit: 48624d70761117ed0b9f8a7be913fce0572577b6
 workflow-type: tm+mt
-source-wordcount: '649'
+source-wordcount: '658'
 ht-degree: 0%
 
 ---
@@ -32,36 +32,36 @@ Bij deze migratieinstructies wordt ervan uitgegaan dat Adobe Commerce de enige t
 
 ### Stap 1: Plaats de site in de onderhoudsmodus
 
-1. Plaats de plaats in [&#x200B; Wijze van het Onderhoud &#x200B;](../../installation/tutorials/maintenance-mode.md):
+1. Plaats de plaats in [ Wijze van het Onderhoud ](../../installation/tutorials/maintenance-mode.md):
 
-   ```bash
+   ```shell
    bin/magento maintenance:enable
    ```
 
 1. Controleren of de onderhoudsmodus is ingeschakeld:
 
-   ```bash
+   ```shell
    bin/magento maintenance:status
    ```
 
-### Stap 2: Telling van RabbitMQ-berichten controleren
+### Stap 2: RabbitMQ-berichtentelling controleren
 
 Controleer voordat u verdergaat of alle berichten in RabbitMQ zijn verwerkt. Gebruik een van de volgende methoden:
 
-#### Methode A: Het beheerdashboard van Konijn gebruiken
+#### Methode A: RabbitMQ Management Dashboard gebruiken
 
 1. Open de beheerinterface van RabbitMQ op `http://<host>:15672`
 1. Standaardreferenties: `guest/guest`
 1. Navigeer aan het **lusje van de Opsommingen**
 1. Verifieer alle rijen tonen **0 berichten**
 
-   ![&#x200B; RabbitMQ Management Dashboard &#x200B;](../../assets/upgrade-guide/rabbitmq_mgmt_dashboard.png)
+   ![ RabbitMQ Management Dashboard ](../../assets/upgrade-guide/rabbitmq_mgmt_dashboard.png)
 
-#### Methode B: gebruik van de opdrachtregel rabbitmqctl
+#### Methode B: De opdrachtregel rabbitmqctl gebruiken
 
 1. Controleer alle rijen en hun berichttellingen:
 
-   ```bash
+   ```shell
    rabbitmqctl list_queues name messages consumers
    ```
 
@@ -69,19 +69,19 @@ Controleer voordat u verdergaat of alle berichten in RabbitMQ zijn verwerkt. Geb
 
 1. Gedetailleerde rijgegevens controleren:
 
-   ```bash
+   ```shell
    rabbitmqctl list_queues name messages messages_ready messages_unacknowledged consumers
    ```
 
    <img src="../../assets/upgrade-guide/rabbitmqctl_detailed.png" alt="CLI Gedetailleerde uitvoer van RabbitMQ" width="500" />
 
-### Stap 3: Verwerken van lopende berichten
+### Stap 3: In behandeling zijnde berichten
 
 Als de berichten in om het even welke rijen in behandeling zijn, proces hen alvorens te werk te gaan.
 
 1. Bekijk de lijst met beschikbare consumenten:
 
-   ```bash
+   ```shell
    bin/magento queue:consumers:list
    ```
 
@@ -89,7 +89,7 @@ Als de berichten in om het even welke rijen in behandeling zijn, proces hen alvo
 
    - **de consumenten van het Proces als groep**
 
-     ```bash
+     ```shell
      bin/magento cron:run --group=consumers
      ```
 
@@ -99,13 +99,13 @@ Als de berichten in om het even welke rijen in behandeling zijn, proces hen alvo
 
    - **Proces een specifieke berichtrij**
 
-     ```bash
+     ```shell
      bin/magento queue:consumers:start <consumer_name> --max-messages=<number>
      ```
 
      Bijvoorbeeld om asynchrone bewerkingen te verwerken:
 
-     ```bash
+     ```shell
      bin/magento queue:consumers:start async.operations.all --max-messages=1000
      ```
 
@@ -117,12 +117,12 @@ Als de berichten in om het even welke rijen in behandeling zijn, proces hen alvo
 
      Ononderbroken tellen van het controlebericht tot alle rijen leeg zijn:
 
-     ```bash
+     ```shell
      # Check every few seconds until 0 messages remain
      watch -n 5 "rabbitmqctl list_queues name messages | grep -v '^Listing' | grep -v '0$'"
      ```
 
-### Stap 4: controleer of alle berichten zijn verwerkt
+### Stap 4: Controleren of alle berichten zijn verwerkt
 
 Alvorens aan de volgende stap te werk te gaan, zorg **alle rijen tonen 0 berichten**. Voer de verificatieopdrachten opnieuw uit vanuit Stap 2.
 
@@ -130,11 +130,11 @@ Alvorens aan de volgende stap te werk te gaan, zorg **alle rijen tonen 0 bericht
 >
 >Ga niet verder met de volgende stap als er berichten onverwerkt blijven. Het gegevensverlies kan voorkomen als u makelaars schakelt terwijl de berichten nog in behandeling zijn.
 
-### Stap 5: stoppen van consumenten en banen in de bouwsector
+### Stap 5: Consumenten en kruisbanen stoppen
 
 1. Alle actieve gebruikers in de wachtrij met berichten stoppen:
 
-   ```bash
+   ```shell
    # If using supervisor
    supervisorctl stop all
    
@@ -144,43 +144,43 @@ Alvorens aan de volgende stap te werk te gaan, zorg **alle rijen tonen 0 bericht
 
 1. Snijtaken uitschakelen:
 
-   ```bash
+   ```shell
    bin/magento cron:remove
    ```
 
 1. Controleren of snijtaken zijn verwijderd:
 
-   ```bash
+   ```shell
    crontab -l
    ```
 
-### Stap 6: Back-up maken van huidige configuratie
+### Stap 6: Huidige configuratie back-up
 
 Maak een back-up van uw huidige configuratie:
 
-```bash
+```shell
 cp app/etc/env.php app/etc/env.php.backup.rabbitmq
 ```
 
-### Stap 7: Optioneel verwijderen van RabbitMQ
+### Stap 7: RabbitMQ optioneel verwijderen
 
 U kunt RabbitMQ verwijderen als dit niet meer nodig is.
 
 ### Stap 8: ActiveMQ installeren en configureren in Adobe Commerce
 
-Om installatie ActiveMQ en configuratietaken zoals het vormen van het protocol van STOMP te voltooien en de verbinding te verifiëren, zie de [&#x200B; Gids van de Installatie en van de Configuratie &#x200B;](../../installation/prerequisites/activemq.md).
+Om installatie ActiveMQ en configuratietaken zoals het vormen van het protocol van STOMP te voltooien en de verbinding te verifiëren, zie de [ Gids van de Installatie en van de Configuratie ](../../installation/prerequisites/activemq.md).
 
 ### Stap 9: Cron-taken opnieuw installeren
 
 1. Nadat de tests met succes zijn voltooid, installeert u de snijtaken opnieuw:
 
-   ```bash
+   ```shell
    bin/magento cron:install
    ```
 
 1. Controleren of uitsnijdtaken zijn gepland:
 
-   ```bash
+   ```shell
    crontab -l
    ```
 
@@ -188,17 +188,17 @@ Om installatie ActiveMQ en configuratietaken zoals het vormen van het protocol v
 
 1. Nadat u hebt gecontroleerd of alles correct werkt, schakelt u de onderhoudsmodus uit:
 
-   ```bash
+   ```shell
    bin/magento maintenance:disable
    ```
 
 1. Controleren of de onderhoudsmodus is uitgeschakeld:
 
-   ```bash
+   ```shell
    bin/magento maintenance:status
    ```
 
-### Stap 11: Het systeem bewaken
+### Stap 11: Het systeem controleren
 
 Controleer uw systeem 24-48 uur na migratie om ervoor te zorgen dat alle rijverrichtingen correct functioneren:
 
@@ -207,7 +207,7 @@ Controleer uw systeem 24-48 uur na migratie om ervoor te zorgen dat alle rijverr
 - Verifieer dat de asynchrone verrichtingen (config bewaart, uitvoert, etc.) werken
 - Snijlogboeken controleren om ervoor te zorgen dat consumenten actief zijn
 
-```bash
+```shell
 # Monitor system logs for queue activity
 tail -f var/log/system.log | grep -i queue
 
@@ -224,44 +224,44 @@ Als er problemen optreden tijdens of na de migratie, kunt u terugdraaien naar Ra
 
 1. Onderhoudsmodus inschakelen:
 
-   ```bash
+   ```shell
    bin/magento maintenance:enable
    ```
 
 1. Stop alle consumenten en schakel de kroon uit:
 
-   ```bash
+   ```shell
    pkill -f "queue:consumers:start"
    bin/magento cron:remove
    ```
 
 1. De vorige configuratie herstellen:
 
-   ```bash
+   ```shell
    cp app/etc/env.php.backup.rabbitmq app/etc/env.php
    ```
 
 1. RabbitMQ starten (indien gestopt):
 
-   ```bash
+   ```shell
    sudo systemctl start rabbitmq-server
    ```
 
 1. Cache wissen:
 
-   ```bash
+   ```shell
    bin/magento cache:flush
    ```
 
 1. Uitsnijden opnieuw installeren:
 
-   ```bash
+   ```shell
    bin/magento cron:install
    ```
 
 1. Onderhoudsmodus uitschakelen:
 
-   ```bash
+   ```shell
    bin/magento maintenance:disable
    ```
 

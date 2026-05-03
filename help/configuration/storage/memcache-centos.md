@@ -3,16 +3,16 @@ title: In cache plaatsen op CentOS
 description: Leer hoe u in cache geplaatste bestanden op CentOS voor Adobe Commerce installeert en configureert. Ontdek installatie-instructies en optimalisatietips.
 feature: Configuration, Cache, Storage
 exl-id: fc4ad18b-7e99-496e-aebc-1d7640d8716c
-source-git-commit: 10f324478e9a5e80fc4d28ce680929687291e990
+source-git-commit: 48624d70761117ed0b9f8a7be913fce0572577b6
 workflow-type: tm+mt
-source-wordcount: '563'
+source-wordcount: '593'
 ht-degree: 0%
 
 ---
 
 # In cache plaatsen op CentOS
 
-In deze sectie vindt u instructies voor het installeren van een memcachegeheugen op CentOS. Voor extra informatie, raadpleeg [&#x200B; memcached wiki &#x200B;](https://github.com/memcached/old-wiki).
+In deze sectie vindt u instructies voor het installeren van een memcachegeheugen op CentOS. Voor extra informatie, raadpleeg [ memcached wiki ](https://github.com/memcached/old-wiki).
 
 >[!INFO]
 >
@@ -21,11 +21,11 @@ In deze sectie vindt u instructies voor het installeren van een memcachegeheugen
 Omdat PHP geen native ondersteuning heeft voor memcache, moet je een extensie installeren voor PHP om deze te kunnen gebruiken. Er zijn twee PHP-extensies beschikbaar en het is belangrijk te decoderen welke extensie moet worden gebruikt:
 
 - `memcache` (_geen d_) - een oudere maar populaire uitbreiding die niet regelmatig wordt gehandhaafd.
-De `memcache` uitbreiding momenteel _werkt niet_ met PHP 7. Zie [&#x200B; PHP documentatie voor memcache &#x200B;](https://www.php.net/manual/en/book.memcache.php).
+De `memcache` uitbreiding momenteel _werkt niet_ met PHP 7. Zie [ PHP documentatie voor memcache ](https://www.php.net/manual/en/book.memcache.php).
 
   De exacte naam is `php-pecl-memcache` voor CentOS.
 
-- `memcached` (_met a`d`_) - een nieuwere en bewaarde uitbreiding die met PHP 7 compatibel is. Zie [&#x200B; PHP documentatie voor in het geheugen ondergebracht &#x200B;](https://www.php.net/manual/en/book.memcached.php).
+- `memcached` (_met a`d`_) - een nieuwere en bewaarde uitbreiding die met PHP 7 compatibel is. Zie [ PHP documentatie voor in het geheugen ondergebracht ](https://www.php.net/manual/en/book.memcached.php).
 
   De exacte naam is `php-pecl-memcached` voor CentOS.
 
@@ -35,19 +35,19 @@ Als u in een cache geplaatste bestanden wilt installeren op CentOS, voert u de v
 
 1. Installeer in het geheugen opgeslagen onderdelen en de afhankelijkheden ervan:
 
-   ```bash
+   ```shell
    yum -y update
    ```
 
-   ```bash
+   ```shell
    yum install -y libevent libevent-devel
    ```
 
-   ```bash
+   ```shell
    yum install -y memcached
    ```
 
-   ```bash
+   ```shell
    yum install -y php-pecl-memcache
    ```
 
@@ -70,7 +70,7 @@ Als u in een cache geplaatste bestanden wilt installeren op CentOS, voert u de v
 1. Sla de wijzigingen in `memcached` op en sluit de teksteditor af.
 1. Start de cache opnieuw.
 
-   ```bash
+   ```shell
    service memcached restart
    ```
 
@@ -78,7 +78,7 @@ Als u in een cache geplaatste bestanden wilt installeren op CentOS, voert u de v
 
    Voor Apache:
 
-   ```bash
+   ```shell
    service httpd restart
    ```
 
@@ -106,7 +106,7 @@ Om te controleren dat het in een cache plaatsen wordt herkend door de webserver:
 
 1. Controleer of de geheugencache als volgt wordt weergegeven:
 
-![&#x200B; Bevestig memcache wordt erkend door de Webserver &#x200B;](../../assets/configuration/memcache.png)
+![ Bevestig memcache wordt erkend door de Webserver ](../../assets/configuration/memcache.png)
 
 Controleer of u versie 3.0.5 of hoger uit het geheugen gebruikt.
 
@@ -116,11 +116,11 @@ Als het geheugen niet wordt weergegeven, start u de webserver opnieuw en vernieu
 
 De test gebruikt een gegevensbestand MySQL, een lijst, en gegevens om te verifiëren u de gegevensbestandgegevens kunt terugwinnen en het in geheugen opslaan. Een PHP script zoekt eerst naar de cache. Als het resultaat niet bestaat, vraagt het manuscript gegevensbestand. Nadat de query door de oorspronkelijke database is uitgevoerd, slaat het script het resultaat op in het geheugen, met de opdracht `set` .
 
-[&#x200B; Meer details over deze test &#x200B;](https://www.digitalocean.com/community/tutorials/how-to-install-and-use-memcache-on-ubuntu-12-04)
+[Meer informatie over deze test](https://www.digitalocean.com/community/tutorials/how-to-install-and-use-memcache-on-ubuntu-12-04)
 
 Maak de MySQL-database:
 
-```bash
+```shell
 mysql -u root -p
 ```
 
@@ -163,15 +163,15 @@ print "got result from memcached\n";
 return 0;
 ```
 
-Waar `<memcached hostname or ip>` `localhost` , `127.0.0.1` of de hostnaam of het IP-adres van de memcache is. De `<memcached port>` is de listen poort; standaard is dit `11211` .
+Waar `<memcached hostname or ip>` `localhost` , `127.0.0.1` of de hostnaam of het IP-adres van de memcache is. `<memcached port>` is de luisterpoort; standaard, `11211` .
 
 Voer het script uit vanaf de opdrachtregel.
 
-```bash
+```shell
 cd <web server docroot>
 ```
 
-```bash
+```shell
 php cache-test.php
 ```
 
@@ -181,19 +181,19 @@ Het tweede resultaat is `got result from memcached` , waarmee wordt gecontroleer
 
 Tot slot kunt u de memachetoetsen bekijken gebruikend Telnet:
 
-```bash
+```shell
 telnet localhost <memcache port>
 ```
 
 Bij de herinnering, ga
 
-```bash
+```shell
 stats items
 ```
 
 Het resultaat is vergelijkbaar met het volgende:
 
-```
+```text
 STAT items:3:number 1
 STAT items:3:age 1075
 STAT items:3:evicted 0
@@ -205,12 +205,12 @@ STAT items:3:tailrepairs 0
 
 Maak de geheugenopslag leeg en sluit Telnet weg:
 
-```bash
+```shell
 flush_all
 ```
 
-```bash
+```shell
 quit
 ```
 
-[&#x200B; Aanvullende informatie over de test van Telnet &#x200B;](https://darkcoding.net/software/memcached-list-all-keys/)
+[Aanvullende informatie over de Telnet-test](https://darkcoding.net/software/memcached-list-all-keys/)

@@ -3,9 +3,9 @@ title: Logbestand inschakelen
 description: Leer hoe u verschillende typen aanmelding in Adobe Commerce in- en uitschakelt. Ontdek registrerenconfiguratie en beheerstechnieken.
 feature: Configuration, Logs
 exl-id: 78b0416a-5bad-42a9-a918-603600e98928
-source-git-commit: aff705cefcd4de38d17cad41628bc8dbd6d630cb
+source-git-commit: 48624d70761117ed0b9f8a7be913fce0572577b6
 workflow-type: tm+mt
-source-wordcount: '352'
+source-wordcount: '350'
 ht-degree: 0%
 
 ---
@@ -26,13 +26,13 @@ Door gebrek, schrijft Commerce aan het zuivert logboek (`<install_directory>/var
 
 1. Gebruik de opdracht `setup:config:set` om foutopsporingslogboeken in te schakelen voor de huidige modus.
 
-   ```bash
+   ```shell
    bin/magento setup:config:set --enable-debug-logging=true
    ```
 
 1. Maak de cache leeg.
 
-   ```bash
+   ```shell
    bin/magento cache:flush
    ```
 
@@ -40,13 +40,13 @@ Door gebrek, schrijft Commerce aan het zuivert logboek (`<install_directory>/var
 
 1. Gebruik de opdracht `setup:config:set` om foutopsporingsregistratie voor de huidige modus uit te schakelen.
 
-   ```bash
+   ```shell
    bin/magento setup:config:set --enable-debug-logging=false
    ```
 
 1. Maak de cache leeg.
 
-   ```bash
+   ```shell
    bin/magento cache:flush
    ```
 
@@ -75,17 +75,17 @@ Het querylogboek bevat:
 
 1. Gebruik de opdracht `dev:query-log` om databaselogboekingen in of uit te schakelen.
 
-   ```bash
+   ```shell
    bin/magento dev:query-log:enable
    ```
 
-   ```bash
+   ```shell
    bin/magento dev:query-log:disable
    ```
 
 1. Maak de cache leeg.
 
-   ```bash
+   ```shell
    bin/magento cache:flush
    ```
 
@@ -93,7 +93,7 @@ Het querylogboek bevat:
 
 U kunt de vraaglogboeken bekijken gebruikend standaarddossier het bekijken bevelen:
 
-```bash
+```shell
 # View the entire query log
 cat var/debug/db.log
 
@@ -127,13 +127,13 @@ Logboekregistratie naar `syslog` is standaard uitgeschakeld.
 
 1. Gebruik de opdracht `setup:config:set` om de databasewaarde `dev/syslog/syslog_logging` in `true` te wijzigen.
 
-   ```bash
+   ```shell
    bin/magento setup:config:set --enable-syslog-logging=true
    ```
 
 1. Maak de cache leeg.
 
-   ```bash
+   ```shell
    bin/magento cache:flush
    ```
 
@@ -141,12 +141,12 @@ Logboekregistratie naar `syslog` is standaard uitgeschakeld.
 
 1. Gebruik de opdracht `setup:config:set` om de databasewaarde `dev/syslog/syslog_logging` in `false` te wijzigen.
 
-   ```bash
+   ```shell
    bin/magento setup:config:set --enable-syslog-logging=false
    ```
 
 1. Maak de cache leeg.
 
-   ```bash
+   ```shell
    bin/magento cache:flush
    ```

@@ -5,9 +5,9 @@ feature: Search
 role: Admin, Developer
 type: Troubleshooting
 exl-id: 984db32e-1a0d-4e0a-a83b-7fe909226ed3
-source-git-commit: e24b62305ef97c5fff13582b4bb68f622dffb6d3
+source-git-commit: 48624d70761117ed0b9f8a7be913fce0572577b6
 workflow-type: tm+mt
-source-wordcount: '427'
+source-wordcount: '441'
 ht-degree: 0%
 
 ---
@@ -28,7 +28,7 @@ De ACSD-65913-patch verhelpt het probleem waarbij [!DNL OpenSearch] een `illegal
 
 >[!NOTE]
 >
->De patch kan van toepassing worden op andere versies met nieuwe [!DNL Quality Patches Tool] versies. Om te controleren of de patch compatibel is met uw Adobe Commerce-versie, werkt u het `magento/quality-patches` -pakket bij naar de meest recente versie en controleert u de compatibiliteit op de [[!DNL Quality Patches Tool] : zoek naar patches op de pagina &#x200B;](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html?lang=nl-NL) . Gebruik de patch-id als een zoekwoord om de patch te zoeken.
+>De patch kan van toepassing worden op andere versies met nieuwe [!DNL Quality Patches Tool] versies. Als u wilt controleren of de patch compatibel is met uw Adobe Commerce-versie, werkt u het `magento/quality-patches` -pakket bij naar de meest recente versie en controleert u de compatibiliteit op de [[!DNL Quality Patches Tool] : Zoek naar de pagina van flarden ](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html). Gebruik de patch-id als een zoekwoord om de patch te zoeken.
 
 ## Probleem
 
@@ -38,17 +38,17 @@ De ACSD-65913-patch verhelpt het probleem waarbij [!DNL OpenSearch] een `illegal
 
 1. Installeer [!DNL OpenSearch] versie 2.19.1 en stel deze in als de standaard zoekengine.
 1. Configureer het productkenmerk **[!UICONTROL Price]** dat zichtbaar moet zijn in Gelaagde navigatie:
-   1. **[!UICONTROL Visible in Advanced Search]**: *ja*
-   1. **[!UICONTROL Comparable on Storefront]**: *ja*
-   1. **[!UICONTROL Use in Layered Navigation]**: *Filterable (met resultaten)*
+   1. **[!UICONTROL Visible in Advanced Search]** : *ja*
+   1. **[!UICONTROL Comparable on Storefront]** : *ja*
+   1. **[!UICONTROL Use in Layered Navigation]** : *Filterable (met resultaten)*
 1. Ga naar **[!UICONTROL Stores]** > **[!UICONTROL Configuration]** > **[!UICONTROL Catalog]** > **[!UICONTROL Catalog]** > **[!UICONTROL Layered Navigation]** . Plaats **[!UICONTROL Price Navigation Step Calculation]** aan *Automatisch (vergelijk producttellingen)*.
 1. Maak een categorie met zes producten die allemaal dezelfde prijs hebben:
-   1. SKU: product_super_0-1-1-1, Prijs: $150
-   1. SKU: product_super_0-1-1, Prijs: $48
-   1. SKU: product_super_0-1, Prijs: $48
-   1. SKU: product_super_0, Prijs: $48
-   1. SKU: product_super_0-1-1-1-1-1-1-1-1-1-1-1-1-1-1, Prijs: $48
-   1. SKU: product_super_0-1-1-1-1-1-1-1-1-1-1-1, Prijs: $48
+   1. SKU: product_super_0-1-1-1, Prijs: $ 150
+   1. SKU: product_super_0-1-1, Prijs: $ 48
+   1. SKU: product_super_0-1, Prijs: $ 48
+   1. SKU: product_super_0, Prijs: $ 48
+   1. SKU: product_super_0-1-1-1-1-1-1-1-1-1-1-1-1-1-1, Prijs: $ 48
+   1. SKU: product_super_0-1-1-1-1-1-1-1-1-1-1, Prijs: $ 48
 1. Voer de volgende opdracht uit:
    `bin/magento indexer:reindex`
 1. Open de categoriepagina. Er wordt een fout weergegeven:
@@ -65,7 +65,7 @@ De ACSD-65913-patch verhelpt het probleem waarbij [!DNL OpenSearch] een `illegal
 
 * Het bestand `var/log/exception.log` bevat:
 
-  ```
+  ```text
   [2025-05-14T22:39:33.595272+00:00] report.CRITICAL: [!DNL OpenSearch]\Common\Exceptions\BadRequest400Exception: {"error":{"root_cause":[{"type":"illegal_argument_exception","reason":"[from] parameter cannot be negative, found [-1]"}],"type":"illegal_argument_exception","reason":"[from] parameter cannot be negative, found [-1]"},"status":400}
   ```
 
@@ -73,11 +73,11 @@ De ACSD-65913-patch verhelpt het probleem waarbij [!DNL OpenSearch] een `illegal
 
 Om individuele flarden toe te passen, gebruik de volgende verbindingen afhankelijk van uw plaatsingsmethode:
 
-* Op locatie Adobe Commerce of Magento Open Source: [[!DNL Quality Patches Tool] > Gebruik &#x200B;](/help/tools/quality-patches-tool/usage.md) in de handleiding [!DNL Quality Patches Tool] .
-* Adobe Commerce op wolkeninfrastructuur: [&#x200B; Verbeteringen en Patches > Pas Patches &#x200B;](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html?lang=nl-NL) in Commerce op de gids van de Infrastructuur van de Wolk toe.
+* Adobe Commerce of Magento Open Source ter plaatse: [[!DNL Quality Patches Tool] > Gebruik ](/help/tools/quality-patches-tool/usage.md) in de [!DNL Quality Patches Tool] gids.
+* Adobe Commerce op cloudinfrastructuur: [ Verbeteringen en Patches > pas Patches ](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html) in Commerce op de gids van de Infrastructuur van de Wolk toe.
 
 ## Gerelateerde lezing
 
 Meer informatie over [!DNL Quality Patches Tool] vindt u in:
 
-* [[!DNL Quality Patches Tool]: Een zelfbedieningshulpmiddel voor kwaliteitspatches &#x200B;](/help/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches.md) in de gids van Hulpmiddelen.
+* [[!DNL Quality Patches Tool] : Een zelfbedieningshulpmiddel voor kwaliteitspatches ](/help/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches.md) in de gids van Hulpmiddelen.

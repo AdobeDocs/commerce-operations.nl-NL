@@ -1,11 +1,11 @@
 ---
 title: In cache geplaatste bestanden voor sessieopslag gebruiken
-description: Meer informatie over het gebruik van een memcachegeheugen voor Commerce-sessieopslag.
+description: Leer hoe u Adobe Commerce configureert voor gebruik van memcaching voor sessieopslag in env.php en wanneer u Redis of Varnish wilt gebruiken voor andere caching-lagen.
 feature: Configuration, Cache, Storage
 exl-id: 24077929-e732-4579-8d7d-717a4902fc64
-source-git-commit: ca8dc855e0598d2c3d43afae2e055aa27035a09b
+source-git-commit: 41b8d77793f1c24f08ff7e6a2d35826a62477534
 workflow-type: tm+mt
-source-wordcount: '281'
+source-wordcount: '305'
 ht-degree: 0%
 
 ---
@@ -14,9 +14,9 @@ ht-degree: 0%
 
 Het in het geheugen onderbrengen is een algemeen, verdeeld geheugen in het voorgeheugen onderbrengend systeem. Het wordt vaak gebruikt om dynamische database-gedreven websites te versnellen door gegevens en voorwerpen in RAM in het voorgeheugen op te nemen om het aantal tijden te verminderen een externe gegevensbron (zoals een gegevensbestand of API) moet worden gelezen.
 
-Het in geheugen ondergebracht verstrekt een grote haktafel die over veelvoudige machines kan worden verdeeld. Als de tabel vol is, zorgen de invoegingen ervoor dat oudere gegevens worden gewist in de volgorde die het minst recent is gebruikt (LRU). De grootte van deze hash-tabel is vaak erg groot. (Source: [&#x200B; memcached.org &#x200B;](https://www.memcached.org/))
+Het in geheugen ondergebracht verstrekt een grote haktafel die over veelvoudige machines kan worden verdeeld. Als de tabel vol is, zorgen de invoegingen ervoor dat oudere gegevens worden gewist in de volgorde die het minst recent is gebruikt (LRU). De grootte van deze hash-tabel is vaak erg groot. (Source: [ memcached.org ](https://www.memcached.org/))
 
-Commerce gebruikt gememcached voor sessieopslag, maar niet voor het in cache plaatsen van pagina&#39;s. Voor pagina in het voorgeheugen onderbrengen, adviseren wij [&#x200B; Redis &#x200B;](../cache/redis-pg-cache.md) of [&#x200B; Vernis &#x200B;](../cache/config-varnish.md).
+Commerce gebruikt gememcached voor sessieopslag, maar niet voor het in cache plaatsen van pagina&#39;s. Voor pagina in het voorgeheugen onderbrengen, adviseren wij [ Redis ](../cache/redis-pg-cache.md) of [ Vernis ](../cache/config-varnish.md).
 
 **om Commerce te vormen om in het geheugen ondergebracht** te gebruiken:
 
@@ -40,7 +40,7 @@ Commerce gebruikt gememcached voor sessieopslag, maar niet voor het in cache pla
    ),
    ```
 
-   in het geheugen ondergebracht heeft facultatieve startparameters die buiten het werkingsgebied van deze gids zijn. U kunt meer informatie over hen in de [&#x200B; in het geheugen ondergebrachte &#x200B;](https://www.php.net/manual/en/memcached.sessions.php) documentatie, broncode, en changelogs vinden.
+   in het geheugen ondergebracht heeft facultatieve startparameters die buiten het werkingsgebied van deze gids zijn. U kunt meer informatie over hen in de [ in het geheugen ondergebrachte ](https://www.php.net/manual/en/memcached.sessions.php) documentatie, broncode, en changelogs vinden.
 
 1. Ga verder met de volgende sectie.
 
@@ -48,7 +48,7 @@ Commerce gebruikt gememcached voor sessieopslag, maar niet voor het in cache pla
 
 1. Verwijder de inhoud van de volgende mappen in de installatiemap van Commerce:
 
-   ```bash
+   ```shell
    rm -rf var/cache/* var/page_cache/* var/session/*
    ```
 
@@ -62,17 +62,17 @@ Commerce gebruikt gememcached voor sessieopslag, maar niet voor het in cache pla
 
 1. (Optioneel.) Gebruik Telnet om de in het geheugen ondergebrachte opslag te bekijken.
 
-   ```bash
+   ```shell
    telnet <memcached host or ip> <memcached port>
    ```
 
-   ```bash
+   ```shell
    stats items
    ```
 
    De resultaten worden als volgt weergegeven:
 
-   ```
+   ```text
    STAT items:3:number 1
    STAT items:3:age 7714
    STAT items:3:evicted 0

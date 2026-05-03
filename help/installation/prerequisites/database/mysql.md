@@ -2,40 +2,40 @@
 title: MySQL-richtlijnen
 description: Voer de volgende stappen uit om MySQL en MariaDB te installeren en te configureren voor installaties op locatie van Adobe Commerce.
 exl-id: dc5771a8-4066-445c-b1cd-9d5f449ec9e9
-source-git-commit: 766226dc998aafe54bc84d77cabee6fb0a969e6c
+source-git-commit: 48624d70761117ed0b9f8a7be913fce0572577b6
 workflow-type: tm+mt
-source-wordcount: '1053'
+source-wordcount: '1177'
 ht-degree: 0%
 
 ---
 
 # Algemene MySQL-richtlijnen
 
-Zie {de Vereisten van het 0} Systeem [&#x200B; voor gesteunde versies van MySQL.](../../system-requirements.md)
+Zie {de Vereisten van het 0} Systeem ](../../system-requirements.md) voor gesteunde versies van MySQL.[
 
 Adobe _adviseert sterk_ u de volgende norm waarneemt wanneer u opstelling uw gegevensbestand:
 
-* Adobe Commerce gebruikt [&#x200B; MySQL gegevensbestandtrekkers &#x200B;](https://dev.mysql.com/doc/refman/8.4/en/triggers.html) om gegevensbestandtoegang tijdens het opnieuw indexeren te verbeteren. Deze worden gecreeerd wanneer de indexeerwijze aan [&#x200B; programma &#x200B;](../../../configuration/cli/manage-indexers.md#configure-indexers) wordt geplaatst. De toepassing ondersteunt geen aangepaste triggers in de database omdat aangepaste triggers incompatibiliteiten met toekomstige Adobe Commerce-versies kunnen introduceren.
-* Verken zich met [&#x200B; deze potentiële MySQL trekkerbeperkingen &#x200B;](https://dev.mysql.com/doc/refman/8.4/en/stored-program-restrictions.html) alvorens u verdergaat.
-* Om uw houding van de gegevensbestandveiligheid te verbeteren, laat [`STRICT_ALL_TABLES` &#x200B;](https://dev.mysql.com/doc/refman/8.4/en/sql-mode.html#sqlmode_strict_all_tables) SQL wijze toe om het opslaan van ongeldige gegevenswaarden te verhinderen, die ongewenste gegevensbestandinteractie zou kunnen veroorzaken.
-* Adobe Commerce steunt __ geen op verklaring-gebaseerde replicatie MySQL. Zorg ervoor u _slechts_ [&#x200B; op rij-gebaseerde replicatie &#x200B;](https://dev.mysql.com/doc/refman/8.4/en/replication-formats.html) gebruikt.
+* Adobe Commerce gebruikt [ MySQL gegevensbestandtrekkers ](https://dev.mysql.com/doc/refman/8.4/en/triggers.html) om gegevensbestandtoegang tijdens het opnieuw indexeren te verbeteren. Deze worden gecreeerd wanneer de indexeerwijze aan [ programma ](../../../configuration/cli/manage-indexers.md#configure-indexers) wordt geplaatst. De toepassing ondersteunt geen aangepaste triggers in de database omdat aangepaste triggers incompatibiliteiten met toekomstige Adobe Commerce-versies kunnen introduceren.
+* Verken zich met [ deze potentiële MySQL trekkerbeperkingen ](https://dev.mysql.com/doc/refman/8.4/en/stored-program-restrictions.html) alvorens u verdergaat.
+* Om uw houding van de gegevensbestandveiligheid te verbeteren, laat [`STRICT_ALL_TABLES` ](https://dev.mysql.com/doc/refman/8.4/en/sql-mode.html#sqlmode_strict_all_tables) SQL wijze toe om het opslaan van ongeldige gegevenswaarden te verhinderen, die ongewenste gegevensbestandinteractie zou kunnen veroorzaken.
+* Adobe Commerce steunt __ geen op verklaring-gebaseerde replicatie MySQL. Zorg ervoor u _slechts_ [ op rij-gebaseerde replicatie ](https://dev.mysql.com/doc/refman/8.4/en/replication-formats.html) gebruikt.
 
 >[!WARNING]
 >
->Adobe Commerce gebruikt momenteel `CREATE TEMPORARY TABLE` verklaringen binnen transacties, die [&#x200B; onverenigbaar &#x200B;](https://dev.mysql.com/doc/refman/8.4/en/replication-gtids-restrictions.html) met gegevensbestandimplementaties zijn gebruiken GTID-Gebaseerde replicatie, zoals [&#x200B; SQL van de Wolk van Google tweede generatie instanties &#x200B;](https://docs.cloud.google.com/sql/docs/features#differences). Bekijk MySQL voor Cloud SQL 8.0 als alternatief.
+>Adobe Commerce gebruikt momenteel `CREATE TEMPORARY TABLE` verklaringen binnen transacties, die [ onverenigbaar ](https://dev.mysql.com/doc/refman/8.4/en/replication-gtids-restrictions.html) met gegevensbestandimplementaties zijn gebruiken GTID-Gebaseerde replicatie, zoals [ SQL van de Wolk van Google tweede generatie instanties ](https://docs.cloud.google.com/sql/docs/features#differences). Bekijk MySQL voor Cloud SQL 8.0 als alternatief.
 
 >[!NOTE]
 >
->Als uw Webserver en gegevensbestandserver op verschillende gastheren zijn, voer de taken uit die in dit onderwerp op de gastheer van de gegevensbestandserver dan worden besproken [&#x200B; Opstelling een verre MySQL gegevensbestandverbinding &#x200B;](mysql-remote.md).
+>Als uw Webserver en gegevensbestandserver op verschillende gastheren zijn, voer de taken uit die in dit onderwerp op de gastheer van de gegevensbestandserver dan worden besproken [ Opstelling een verre MySQL gegevensbestandverbinding ](mysql-remote.md).
 
 ## MySQL installeren op Ubuntu
 
-Adobe Commerce 2.4 ondersteunt verschillende MySQL 8-versies, afhankelijk van de release die u installeert. Gebruik een versie die in [&#x200B; Vereisten van het Systeem &#x200B;](../../system-requirements.md) wordt vermeld, dan volg de verbindingen hieronder voor instructies bij het installeren van MySQL op uw machine.
+Adobe Commerce 2.4 ondersteunt verschillende MySQL 8-versies, afhankelijk van de release die u installeert. Gebruik een versie die in [ Vereisten van het Systeem ](../../system-requirements.md) wordt vermeld, dan volg de verbindingen hieronder voor instructies bij het installeren van MySQL op uw machine.
 
-* [&#x200B; Ubuntu &#x200B;](https://ubuntu.com/server/docs/databases-mysql/)
-* [&#x200B; CentOS &#x200B;](https://dev.mysql.com/doc/refman/8.4/en/linux-installation-yum-repo.html)
+* [Ubuntu](https://ubuntu.com/server/docs/databases-mysql/)
+* [CentOS](https://dev.mysql.com/doc/refman/8.4/en/linux-installation-yum-repo.html)
 
-Als u verwacht om grote aantallen producten in te voeren, kunt u de waarde voor [`max_allowed_packet` &#x200B;](https://dev.mysql.com/doc/refman/8.4/en/server-system-variables.html#sysvar_max_allowed_packet) aan een waarde verhogen die groter is dan het gebrek, 16 MB.
+Als u verwacht om grote aantallen producten in te voeren, kunt u de waarde voor [`max_allowed_packet` ](https://dev.mysql.com/doc/refman/8.4/en/server-system-variables.html#sysvar_max_allowed_packet) aan een waarde verhogen die groter is dan het gebrek, 16 MB.
 
 >[!NOTE]
 >
@@ -49,7 +49,7 @@ Als u optioneel de waarde wilt verifiëren die u instelt, voert u de volgende op
 SHOW VARIABLES LIKE 'max_allowed_packet';
 ```
 
-Dan, [&#x200B; vorm de gegevensbestandinstantie &#x200B;](#configuring-the-database-instance).
+Dan, [ vorm de gegevensbestandinstantie ](#configuring-the-database-instance).
 
 ## Wijzigingen in MySQL 8
 
@@ -79,7 +79,7 @@ Beschrijf admin_user op mysql 8.19
 
 Behalve _TINYINT (1)_, zou al geheel het opvullen (TINYINT > 1, SMALLINT, MEDIUMINT, INT, BIGINT) uit het `db_schema.xml` dossier moeten worden verwijderd.
 
-Voor meer informatie, zie [&#x200B; https://dev.mysql.com/doc/relnotes/mysql/8.0/en/news-8-0-19.html#mysqld-8-0-19-feature &#x200B;](https://dev.mysql.com/doc/relnotes/mysql/8.0/en/news-8-0-19.html#mysqld-8-0-19-feature).
+Voor meer informatie, zie [ https://dev.mysql.com/doc/relnotes/mysql/8.0/en/news-8-0-19.html#mysqld-8-0-19-feature ](https://dev.mysql.com/doc/relnotes/mysql/8.0/en/news-8-0-19.html#mysqld-8-0-19-feature).
 
 ### Standaardvolgorde OP, gedrag
 
@@ -96,7 +96,7 @@ Er zijn enkele wijzigingen aangebracht in Adobe Commerce om MySQL 8 correct te o
 
 ### Werking query en invoegen
 
-Adobe Commerce heeft het normale validatiegedrag uitgeschakeld door SET SQL_MODE=&#39;&#39; in te stellen in `/lib/internal/Magento/Framework/DB/Adapter/Pdo/Mysql.php:424.` . Als validatie is uitgeschakeld, is het mogelijk dat MySQL gegevens afkapt. In MySQL is het gedrag Query gewijzigd: `Select * on my_table where IP='127.0.0.1'` retourneert niet langer de resultaten omdat het IP-adres nu correct als een tekenreeks wordt beschouwd in plaats van als een geheel getal.
+Adobe Commerce heeft het normale validatiegedrag uitgeschakeld door SET SQL_MODE=&#39;&#39; in te stellen in `/lib/internal/Magento/Framework/DB/Adapter/Pdo/Mysql.php:424.` . Als validatie is uitgeschakeld, is het mogelijk dat MySQL gegevens afkapt. In MySQL is het gedrag Query gewijzigd: `Select * on my_table where IP='127.0.0.1'` retourneert geen resultaten meer omdat het IP-adres nu correct als een tekenreeks wordt beschouwd in plaats van als een geheel getal.
 
 ## Upgrade uitvoeren van MySQL 5.7 naar MySQL 8
 
@@ -106,13 +106,13 @@ Als u MySQL van versie 5.7 naar versie 8 correct wilt bijwerken, moet u de volge
 Test alles en controleer of uw systeem werkt zoals u had verwacht.
 1. Onderhoudsmodus inschakelen:
 
-   ```bash
+   ```shell
    bin/magento maintenance:enable
    ```
 
 1. Maak een databaseback-up:
 
-   ```bash
+   ```shell
    bin/magento setup:backup --db
    ```
 
@@ -120,13 +120,13 @@ Test alles en controleer of uw systeem werkt zoals u had verwacht.
 1. Importeer de back-upgegevens in MySQL.
 1. De cache reinigen:
 
-   ```bash
+   ```shell
    bin/magento cache:clean
    ```
 
 1. Onderhoudsmodus uitschakelen:
 
-   ```bash
+   ```shell
    bin/magento maintenance:disable
    ```
 
@@ -139,7 +139,7 @@ Om een MySQL gegevensbestandinstantie te vormen:
 1. Meld u als elke gebruiker aan bij uw databaseserver.
 1. Krijg aan een MySQL bevelherinnering:
 
-   ```bash
+   ```shell
    mysql -u root -p
    ```
 
@@ -166,28 +166,28 @@ Om een MySQL gegevensbestandinstantie te vormen:
 
 1. De database controleren:
 
-   ```bash
+   ```shell
    mysql -u magento -p
    ```
 
    Als de MySQL monitorvertoningen, u het gegevensbestand behoorlijk creeerde. Als er een fout wordt weergegeven, herhaalt u de voorgaande opdrachten.
 
-1. Als uw Webserver en gegevensbestandserver op verschillende gastheren zijn, voer de taken uit die in dit onderwerp op de gastheer van de gegevensbestandserver dan worden besproken [&#x200B; Opstelling een verre MySQL gegevensbestandverbinding &#x200B;](mysql-remote.md).
+1. Als uw Webserver en gegevensbestandserver op verschillende gastheren zijn, voer de taken uit die in dit onderwerp op de gastheer van de gegevensbestandserver dan worden besproken [ Opstelling een verre MySQL gegevensbestandverbinding ](mysql-remote.md).
 
    Wij adviseren u uw gegevensbestandinstantie zoals aangewezen voor uw zaken vormt. Houd rekening met het volgende wanneer u uw database configureert:
 
-   * Indexeerders vereisen hogere waarden `tmp_table_size` en `max_heap_table_size` (bijvoorbeeld 64 M). Als u de parameter `batch_size` configureert, kunt u die waarde samen met de instellingen voor de tabelgrootte aanpassen om de indexeerprestaties te verbeteren. Verwijs naar de [&#x200B; Gids van de Optimalisering &#x200B;](../../../performance/configuration.md) voor meer informatie.
+   * Indexeerders vereisen hogere waarden `tmp_table_size` en `max_heap_table_size` (bijvoorbeeld 64 M). Als u de parameter `batch_size` configureert, kunt u die waarde samen met de instellingen voor de tabelgrootte aanpassen om de indexeerprestaties te verbeteren. Verwijs naar de [ Gids van de Optimalisering ](../../../performance/configuration.md) voor meer informatie.
 
    * Voor optimale prestaties moet u ervoor zorgen dat alle MySQL- en Adobe Commerce-indextabellen in het geheugen kunnen worden opgeslagen (bijvoorbeeld `innodb_buffer_pool_size` configureren).
 
-   * Het opnieuw indexeren op MariaDB 10.4 neemt meer tijd in vergelijking met andere versies MariaDB of MySQL. Zie [&#x200B; beste praktijken van de Configuratie &#x200B;](../../../performance/configuration.md#indexers).
+   * Het opnieuw indexeren op MariaDB 10.4 neemt meer tijd in vergelijking met andere versies MariaDB of MySQL. Zie [ beste praktijken van de Configuratie ](../../../performance/configuration.md#indexers).
 
 1. Als u wilt dat MySQL `TIMESTAMP` -velden de voorkeuren en compositie volgen die worden verwacht door de declaratieve schemaarchitectuur van de toepassing, moet de systeemvariabele `explicit_defaults_for_timestamp` worden ingesteld op `on` .
 
    Referenties:
 
-   * [&#x200B; MySQL 8.4 &#x200B;](https://dev.mysql.com/doc/refman/8.4/en/server-system-variables.html#sysvar_explicit_defaults_for_timestamp)
-   * [&#x200B; MariaDB &#x200B;](https://mariadb.com/docs/server/server-management/variables-and-modes/server-system-variables#explicit_defaults_for_timestamp)
+   * [MySQL 8.4](https://dev.mysql.com/doc/refman/8.4/en/server-system-variables.html#sysvar_explicit_defaults_for_timestamp)
+   * [MariaDB](https://mariadb.com/docs/server/server-management/variables-and-modes/server-system-variables#explicit_defaults_for_timestamp)
 
    Als deze instelling niet is ingeschakeld, rapporteert `bin/magento setup:db:status` altijd dat de `Declarative Schema is not up to date` .
 

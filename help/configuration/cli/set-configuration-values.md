@@ -2,9 +2,9 @@
 title: Configuratiewaarden instellen
 description: Leer hoe u configuratiewaarden instelt en vergrendelde beheerwaarden wijzigt in Adobe Commerce. Ontdek geavanceerde configuratiebevelen en technieken.
 exl-id: 1dc2412d-50b3-41fb-ab22-3eccbb086302
-source-git-commit: 5e2d11330d3334df36ba8b3d176fbe2d8bfe0486
+source-git-commit: 48624d70761117ed0b9f8a7be913fce0572577b6
 workflow-type: tm+mt
-source-wordcount: '1116'
+source-wordcount: '1122'
 ht-degree: 0%
 
 ---
@@ -36,7 +36,7 @@ Gebruik de volgende opdrachten:
 
 - `bin/magento config:set` stelt elke niet-vertrouwelijke configuratiewaarde in volgens het configuratiepad
 - `bin/magento config:sensitive:set` stelt elke gevoelige configuratiewaarde in volgens het configuratiepad
-- `bin/magento config:show` geeft opgeslagen configuratiewaarden weer; waarden van gecodeerde instellingen worden weergegeven als sterretjes
+- `bin/magento config:show` toont opgeslagen configuratiewaarden; waarden van gecodeerde instellingen worden weergegeven als sterretjes
 
 ## Vereisten
 
@@ -68,9 +68,9 @@ U kunt de bereikcode vinden in de Commerce-database of in Commerce Admin.
 
    In de volgende afbeelding ziet u een voorbeeldcode voor de website.
 
-   ![&#x200B; krijg een website of opslag meningscode van Admin &#x200B;](../../assets/configuration/website-code.png)
+   ![ krijg een website of opslag meningscode van Admin ](../../assets/configuration/website-code.png)
 
-1. Ga met [&#x200B; Vastgestelde waarden &#x200B;](#set-values) verder.
+1. Ga met [ Vastgestelde waarden ](#set-values) verder.
 
 **om de werkingsgebiedcode in het gegevensbestand** te vinden:
 
@@ -78,7 +78,7 @@ Toepassingscodes voor websites en winkelweergaven worden opgeslagen in de Commer
 
 1. Maak verbinding met de Commerce-database.
 
-   ```bash
+   ```shell
    mysql -u <Commerce database username> -p
    ```
 
@@ -98,7 +98,7 @@ Toepassingscodes voor websites en winkelweergaven worden opgeslagen in de Commer
 
    Hieronder volgt een voorbeeldresultaat:
 
-   ```
+   ```ini
    [mysql]> SELECT * FROM store_website;
    +------------+-------+--------------+------------+------------------+------------+
    | website_id | code  | name         | sort_order | default_group_id | is_default |
@@ -117,13 +117,13 @@ Toepassingscodes voor websites en winkelweergaven worden opgeslagen in de Commer
 
 **om systeem-specifieke configuratiewaarden** te plaatsen:
 
-```bash
+```shell
 bin/magento config:set [--scope="..."] [--scope-code="..."] [-le | --lock-env] [-lc | --lock-config] path value
 ```
 
 **om gevoelige configuratiewaarden** te plaatsen:
 
-```bash
+```shell
 bin/magento config:sensitive:set [--scope="..."] [--scope-code="..."] path
 ```
 
@@ -161,19 +161,19 @@ Hier volgen enkele voorbeelden voor het instellen van de basis-URL van de winkel
 
 Stel de basis-URL in voor het standaardbereik:
 
-```bash
+```shell
 bin/magento config:set web/unsecure/base_url http://example.com/
 ```
 
 Stel de basis-URL voor de `base` -website in:
 
-```bash
+```shell
 bin/magento config:set --scope=websites --scope-code=base web/unsecure/base_url http://example2.com/
 ```
 
 Stel de basis-URL in voor de opslagweergave van `test` :
 
-```bash
+```shell
 bin/magento config:set --scope=stores --scope-code=test web/unsecure/base_url http://example3.com/
 ```
 
@@ -181,7 +181,7 @@ bin/magento config:set --scope=stores --scope-code=test web/unsecure/base_url ht
 
 Als u de optie `--lock-env` als volgt gebruikt, slaat de opdracht de configuratiewaarde op in `<Commerce base dir>/app/etc/env.php` en schakelt het veld voor het bewerken van deze waarde in de beheerfunctie uit.
 
-```bash
+```shell
 bin/magento config:set --lock-env --scope=stores --scope-code=default web/unsecure/base_url http://example3.com
 ```
 
@@ -193,7 +193,7 @@ Met de optie `--lock-env` kunt u configuratiewaarden instellen als Commerce niet
 
 Als u de optie `--lock-config` als volgt gebruikt, wordt de configuratiewaarde opgeslagen in `<Commerce base dir>/app/etc/config.php` . Het veld voor het bewerken van deze waarde in Admin is uitgeschakeld.
 
-```bash
+```shell
 bin/magento config:set --lock-config --scope=stores --scope-code=default web/url/use_store 1
 ```
 
@@ -207,7 +207,7 @@ Met `--lock-config` kunt u configuratiewaarden instellen als Commerce niet is ge
 
 Opdrachtopties:
 
-```bash
+```shell
 bin/magento config:show [--scope[="..."]] [--scope-code[="..."]] path
 ```
 
@@ -215,23 +215,23 @@ waar
 
 - `--scope` is het bereik van de configuratie (standaard, website, winkel). De standaardwaarde is `default`
 - `--scope-code` is de bereikcode van de configuratie (code van de website of van de opslagmening)
-- `path` is de configuratiepad in formaat first_part/second_part/third_part/etc (_vereist_)
+- `path` is de configuratiepad in formaat first _part/second_ part/third_part/etc (_ vereist _)
 
 >[!INFO]
 >
->Het `bin/magento config:show` bevel toont de waarden van om het even welke [&#x200B; gecodeerde waarden &#x200B;](../reference/config-reference-sens.md) als reeks asterisken: `**&#x200B;**&#x200B;**`.
+>Het `bin/magento config:show` bevel toont de waarden van om het even welke [ gecodeerde waarden ](../reference/config-reference-sens.md) als reeks sterretjes: `******` .
 
 ### Voorbeelden
 
 **om alle bewaarde configuraties** te tonen:
 
-```bash
+```shell
 bin/magento config:show
 ```
 
 Resultaat
 
-```
+```text
 web/unsecure/base_url - http://example.com/
 general/region/display_all - 1
 general/region/state_required - AT,BR,CA,CH,EE,ES,FI,LT,LV,RO,US
@@ -241,54 +241,54 @@ analytics/subscription/enabled - 1
 
 **om alle opgeslagen configuraties voor de `base` website** te tonen:
 
-```bash
+```shell
 bin/magento config:show --scope=websites --scope-code=base
 ```
 
 Resultaat
 
-```
+```text
 web/unsecure/base_url - http://example-for-website.com/
 general/region/state_required - AT,BR,CA
 ```
 
 **om basis URL voor het standaardwerkingsgebied** te tonen:
 
-```bash
+```shell
 bin/magento config:show web/unsecure/base_url
 ```
 
 Resultaat
 
-```
+```text
 web/unsecure/base_url - http://example.com/
 ```
 
 **om basis URL voor de `base` website** te tonen:
 
-```bash
+```shell
 bin/magento config:show --scope=websites --scope-code=base web/unsecure/base_url
 ```
 
 Resultaat
 
-```
+```text
 web/unsecure/base_url - http://example-for-website.com/
 ```
 
 **om basis URL voor de `default` opslag** te tonen:
 
-```bash
+```shell
 bin/magento config:show --scope=stores --scope-code=default web/unsecure/base_url
 ```
 
 Resultaat
 
-```
+```text
 web/unsecure/base_url - http://example-for-store.com/
 ```
 
 >[!INFO]
 >
->De bereikcode kan alleen letters (a-z of A-Z), getallen (0-9) en onderstrepingstekens (_) bevatten. Het eerste teken moet ook een letter zijn. Als hoofdletters of hoofdletters worden gebruikt bij het maken van een website- of winkelweergave, is de overeenkomst intern niet hoofdlettergevoelig voor overschrijvingen van configuratie-instellingen via omgevingsvariabelen. Zie [&#x200B; het omgevingsvariabelen van het Gebruik om configuratiemontages &#x200B;](../reference/override-config-settings.md#environment-variables) met voeten te treden.
+>De bereikcode kan alleen letters (a-z of A-Z), getallen (0-9) en onderstrepingstekens (_) bevatten. Het eerste teken moet ook een letter zijn. Als hoofdletters of hoofdletters worden gebruikt bij het maken van een website- of winkelweergave, is de overeenkomst intern niet hoofdlettergevoelig voor overschrijvingen van configuratie-instellingen via omgevingsvariabelen. Zie [ het omgevingsvariabelen van het Gebruik om configuratiemontages ](../reference/override-config-settings.md#environment-variables) met voeten te treden.
 

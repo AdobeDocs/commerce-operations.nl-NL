@@ -3,9 +3,9 @@ title: Valkey gebruiken voor standaardcache
 description: Leer hoe u Valkey configureert als de standaardcache voor Adobe Commerce. Ontdek opdrachtregelopstelling, configuratieopties en validatietechnieken.
 feature: Configuration, Cache
 exl-id: d0baa2a6-8aa8-4f3f-9edf-102d621430e0
-source-git-commit: e9f1bef9f97a0e1d738f1221758f1b9a0a238da1
+source-git-commit: 48624d70761117ed0b9f8a7be913fce0572577b6
 workflow-type: tm+mt
-source-wordcount: '1056'
+source-wordcount: '1084'
 ht-degree: 0%
 
 ---
@@ -15,13 +15,13 @@ ht-degree: 0%
 
 Commerce biedt opdrachtregelopties om de Valkey-pagina en de standaardcaching te configureren. Hoewel u caching kunt vormen door het `<Commerce-install-dir>app/etc/env.php` dossier uit te geven, is het gebruiken van de bevellijn de geadviseerde methode, vooral voor aanvankelijke configuraties. De bevellijn verstrekt bevestiging, die de configuratie verzekeren syntactisch correct is.
 
-U moet [&#x200B; Valkey &#x200B;](config-redis.md#install-redis) installeren alvorens verder te gaan.
+U moet [ Valkey ](config-redis.md#install-redis) installeren alvorens verder te gaan.
 
 ## Standaardcaching voor sleutels configureren
 
 Voer de opdracht `setup:config:set` uit en geef parameters op voor het standaard in cache plaatsen van Valkey.
 
-```bash
+```shell
 bin/magento setup:config:set --cache-backend=valkey --cache-backend-valkey-<parameter>=<value>...
 ```
 
@@ -33,7 +33,7 @@ bin/magento setup:config:set --cache-backend=valkey --cache-backend-valkey-<para
 >
 >Beginnend met **Adobe Commerce 2.4.9-alpha2**, **Valkey** heeft officieel Redis in CLI tooling wegens veranderingen in het verlenen van vergunningen vervangen. Valkey is een vork van Redis en behoudt vrijwel dezelfde functionaliteit. Voor **versies 2.4.8 en vroeger**, blijven de bevelen CLI die worden gebruikt om Valkey te vormen het zelfde als die voor Redis, die naadloze achterwaartse verenigbaarheid verzekeren en migratie of dubbel-milieu steun vereenvoudigen. In het volgende voorbeeld wordt de opdracht Valkey-specific getoond.
 
-```bash
+```shell
 bin/magento setup:config:set --cache-backend=valkey --cache-backend-valkey-<parameter>=<value>...
 ```
 
@@ -41,14 +41,14 @@ bin/magento setup:config:set --cache-backend=valkey --cache-backend-valkey-<para
 |---------------------------------| --------- |--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------| ------------- |
 | `cache-backend-valkey-server` | server | Volledig gekwalificeerde hostnaam, IP-adres of een absoluut pad naar een UNIX-socket. De standaardwaarde van `127.0.0.1` geeft aan dat Valkey is geïnstalleerd op de Commerce-server. | `127.0.0.1` |
 | `cache-backend-valkey-port` | poort | Luisterpoort Valkey-server | `6379` |
-| `cache-backend-valkey-db` | database | Vereist als u Valkey gebruikt voor zowel het standaard als volledig-paginacachegeheugen. U moet het databasenummer opgeven van een van de caches; de andere cache gebruikt standaard `0` .<br><br>**Belangrijk**: Als u Valkey voor meer dan één type van caching gebruikt, moeten de gegevensbestandaantallen verschillend zijn. Adobe raadt u aan het standaard cachedatabasenummer aan `0` toe te wijzen, het databasenummer voor het in cache plaatsen van pagina&#39;s in te stellen op `1` en het databasenummer voor de sessieopslag op `2` . | `0` |
-| `cache-backend-valkey-password` | password | Wanneer u een wachtwoord voor Valkey configureert, wordt een van de ingebouwde beveiligingsfuncties ingeschakeld: de opdracht `auth` , waarvoor clients moeten worden geverifieerd voor toegang tot de database. Het wachtwoord is rechtstreeks geconfigureerd in het configuratiebestand van Valkey: `/etc/valkey/valkey.conf` | |
+| `cache-backend-valkey-db` | database | Vereist als u Valkey gebruikt voor zowel het standaard als volledig-paginacachegeheugen. U moet het databasenummer van een van de caches opgeven. het andere geheime voorgeheugengebruik `0` door gebrek.<br><br>**Belangrijk**: Als u Valkey voor meer dan één type caching gebruikt, moeten de gegevensbestandaantallen verschillend zijn. Adobe raadt u aan het standaard cachedatabasenummer aan `0` toe te wijzen, het databasenummer voor het in cache plaatsen van pagina&#39;s in te stellen op `1` en het databasenummer voor de sessieopslag op `2` . | `0` |
+| `cache-backend-valkey-password` | password | Als u een Valkey-wachtwoord configureert, wordt een van de ingebouwde beveiligingsfuncties ingeschakeld: de opdracht `auth` , die vereist dat clients worden geverifieerd voor toegang tot de database. Het wachtwoord wordt direct geconfigureerd in het configuratiebestand van Valkey: `/etc/valkey/valkey.conf` | |
 
 ### Voorbeeld, opdracht
 
 In het volgende voorbeeld wordt standaard het in cache plaatsen van Valkey ingeschakeld, wordt de host ingesteld op `127.0.0.1` en wordt het databasenummer toegewezen aan `0` . Valkey gebruikt standaardwaarden voor alle andere parameters.
 
-```bash
+```shell
 bin/magento setup:config:set --cache-backend=valkey --cache-backend-valkey-server=127.0.0.1 --cache-backend-valkey-db=0
 ```
 
@@ -56,7 +56,7 @@ bin/magento setup:config:set --cache-backend=valkey --cache-backend-valkey-serve
 >
 >Beginnend met **Adobe Commerce 2.4.9-alpha2**, **Valkey** heeft officieel Redis in CLI tooling wegens veranderingen in het verlenen van vergunningen vervangen. Valkey is een vork van Redis en behoudt vrijwel dezelfde functionaliteit. Voor **versies 2.4.8 en vroeger**, blijven de bevelen CLI die worden gebruikt om Valkey te vormen het zelfde als die voor Redis, die naadloze achterwaartse verenigbaarheid verzekeren en migratie of dubbel-milieu steun vereenvoudigen. In het volgende voorbeeld wordt de opdracht Valkey-specific getoond.
 
-```bash
+```shell
 bin/magento setup:config:set --cache-backend=redis --cache-backend-redis-server=127.0.0.1 --cache-backend-redis-db=0
 ```
 
@@ -64,7 +64,7 @@ bin/magento setup:config:set --cache-backend=redis --cache-backend-redis-server=
 
 Als u het in cache plaatsen van Valkey-pagina op Commerce wilt configureren, voert u de opdracht `setup:config:set` uit met extra parameters.
 
-```bash
+```shell
 bin/magento setup:config:set --page-cache=valkey --page-cache-valkey-<parameter>=<value>...
 ```
 
@@ -78,7 +78,7 @@ Met de volgende parameters:
 >
 >Beginnend met **Adobe Commerce 2.4.9-alpha2**, **Valkey** heeft officieel Redis in CLI tooling wegens veranderingen in het verlenen van vergunningen vervangen. Valkey is een vork van Redis en behoudt vrijwel dezelfde functionaliteit. Voor **versies 2.4.8 en vroeger**, blijven de bevelen CLI die worden gebruikt om Valkey te vormen het zelfde als die voor Redis, die naadloze achterwaartse verenigbaarheid verzekeren en migratie of dubbel-milieu steun vereenvoudigen. In het volgende voorbeeld wordt de opdracht Valkey-specific getoond.
 
-```bash
+```shell
 bin/magento setup:config:set --page-cache=redis --page-cache-redis-<parameter>=<value>...
 ```
 
@@ -86,14 +86,14 @@ bin/magento setup:config:set --page-cache=redis --page-cache-redis-<parameter>=<
 |------------------------------| --------- |-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------| ------------- |
 | `page-cache-valkey-server` | server | Volledig gekwalificeerde hostnaam, IP-adres of een absoluut pad naar een UNIX-socket. De standaardwaarde van `127.0.0.1` geeft aan dat Valkey is geïnstalleerd op de Commerce-server. | `127.0.0.1` |
 | `page-cache-valkey-port` | poort | De luisterpoort van de Valkey-server. | `6379` |
-| `page-cache-valkey-db` | database | Vereist als u Valkey gebruikt voor zowel standaard als volledig-paginacache. U moet het databasenummer opgeven van een van de caches; de andere cache gebruikt standaard `0` .<br/>**Belangrijk**: Als u Valkey voor meer dan één type van caching gebruikt, moeten de gegevensbestandaantallen verschillend zijn. U wordt aangeraden het standaarddatabasenummer voor caching toe te wijzen aan `0` , het databasenummer voor het in cache plaatsen van pagina&#39;s aan `1` en het databasenummer voor sessieopslag aan `2` . | `0` |
-| `page-cache-valkey-password` | password | Wanneer u een wachtwoord voor Valkey configureert, wordt een van de ingebouwde beveiligingsfuncties ingeschakeld: de opdracht `auth` , waarvoor clients moeten worden geverifieerd voor toegang tot de database. Configureer het wachtwoord in het configuratiebestand Valkey: `/etc/valkey/valkey.conf` | |
+| `page-cache-valkey-db` | database | Vereist als u Valkey gebruikt voor zowel standaard als volledig-paginacache. U moet het databasenummer van een van de caches opgeven. het andere geheime voorgeheugengebruik `0` door gebrek.<br/>**Belangrijk**: Als u Valkey voor meer dan één type caching gebruikt, moeten de gegevensbestandaantallen verschillend zijn. U wordt aangeraden het standaarddatabasenummer voor caching toe te wijzen aan `0` , het databasenummer voor het in cache plaatsen van pagina&#39;s aan `1` en het databasenummer voor sessieopslag aan `2` . | `0` |
+| `page-cache-valkey-password` | password | Als u een Valkey-wachtwoord configureert, wordt een van de ingebouwde beveiligingsfuncties ingeschakeld: de opdracht `auth` , die vereist dat clients worden geverifieerd voor toegang tot de database. Vorm het wachtwoord binnen het Valkey configuratiedossier: `/etc/valkey/valkey.conf` | |
 
 ### Voorbeeld, opdracht
 
 In het volgende voorbeeld wordt het in cache plaatsen van Valkey-pagina ingeschakeld, wordt de host ingesteld op `127.0.0.1` en wordt het databasenummer toegewezen aan `1` . Alle andere parameters worden ingesteld op de standaardwaarde.
 
-```bash
+```shell
 bin/magento setup:config:set --page-cache=valkey --page-cache-valkey-server=127.0.0.1 --page-cache-valkey-db=1
 ```
 
@@ -101,7 +101,7 @@ bin/magento setup:config:set --page-cache=valkey --page-cache-valkey-server=127.
 >
 >Beginnend met **Adobe Commerce 2.4.9-alpha2**, **Valkey** heeft officieel Redis in CLI tooling wegens veranderingen in het verlenen van vergunningen vervangen. Valkey is een vork van Redis en behoudt vrijwel dezelfde functionaliteit. Voor **versies 2.4.8 en vroeger**, blijven de bevelen CLI die worden gebruikt om Valkey te vormen het zelfde als die voor Redis, die naadloze achterwaartse verenigbaarheid verzekeren en migratie of dubbel-milieu steun vereenvoudigen. In het volgende voorbeeld wordt de opdracht Valkey-specific getoond.
 
-```bash
+```shell
 bin/magento setup:config:set --page-cache=redis --page-cache-redis-server=127.0.0.1 --page-cache-valkey-db=1
 ```
 
@@ -135,9 +135,9 @@ Als resultaat van de twee voorbeeldopdrachten voegt Commerce soortgelijke regels
 
 ## Nieuwe Valkey-cache-implementatie
 
-[!BADGE &#x200B; 2.4.9-alpha &#x200B;]{type=Negative tooltip="Alleen beschikbaar in 2.4.9-alfa."}
+[!BADGE  2.4.9-alpha ]{type=Negative tooltip="Alleen beschikbaar in 2.4.9-alfa."}
 
-Vanaf Adobe Commerce 2.4.9 raadt Adobe aan de Valkey-cache-implementatie te gebruiken: `\Magento\Framework\Cache\Backend\Valkey` .
+Vanaf Adobe Commerce 2.4.9 raadt Adobe u aan de Valkey-cache-implementatie te gebruiken: `\Magento\Framework\Cache\Backend\Valkey`.
 
 ```php
 'cache' => [
@@ -157,7 +157,7 @@ Vanaf Adobe Commerce 2.4.9 raadt Adobe aan de Valkey-cache-implementatie te gebr
 
 Aangezien Commerce configuratiegegevens opslaat in de cache van Valkey, kunt u vooraf gegevens laden die opnieuw worden gebruikt tussen pagina&#39;s. Als u toetsen wilt zoeken die vooraf moeten worden geladen, analyseert u de gegevens die van Valkey naar Commerce worden overgebracht. Adobe stelt voor om gegevens die op elke pagina worden geladen, zoals `SYSTEM_DEFAULT` , `EAV_ENTITY_TYPES` en `DB_IS_UP_TO_DATE` , vooraf te laden.
 
-Valkey gebruikt `pipeline` voor samengestelde laadaanvragen. Toetsen moeten het databasevoorvoegsel bevatten. Als het databasevoorvoegsel bijvoorbeeld `061_` is, ziet de voorladertoets er als volgt uit: `061_SYSTEM_DEFAULT`
+Valkey gebruikt `pipeline` voor samengestelde laadaanvragen. Toetsen moeten het databasevoorvoegsel bevatten; Als het databasevoorvoegsel bijvoorbeeld `061_` is, ziet de voorlaadsleutel er als volgt uit: `061_SYSTEM_DEFAULT`
 
 ```php
 'cache' => [
@@ -205,7 +205,7 @@ Deze functie is standaard uitgeschakeld en Adobe raadt u aan deze uit te schakel
 
 **om parallelle generatie** toe te laten:
 
-```bash
+```shell
 bin/magento setup:config:set --allow-parallel-generation
 ```
 
@@ -240,13 +240,13 @@ Als u wilt controleren of Valkey en Commerce goed samenwerken, meldt u zich aan 
 
 ### Valkey, opdracht
 
-```bash
+```shell
 valkey-cli monitor
 ```
 
 Voorbeeld van uitvoer in cache plaatsen van pagina:
 
-```
+```text
 1476826133.810090 [0 127.0.0.1:52366] "select" "1"
 1476826133.816293 [0 127.0.0.1:52367] "select" "0"
 1476826133.817461 [0 127.0.0.1:52367] "hget" "zc:k:ea6_GLOBAL__DICONFIG" "d"
@@ -271,7 +271,7 @@ Voorbeeld van uitvoer in cache plaatsen van pagina:
 
 ### Valkey, ping, opdracht
 
-```bash
+```shell
 valkey-cli ping
 ```
 
@@ -281,4 +281,4 @@ Als beide opdrachten zijn uitgevoerd, wordt Valkey op de juiste wijze ingesteld.
 
 ### Gecomprimeerde gegevens controleren
 
-Om samengeperste zittingsgegevens en het paginacachegeheugen te inspecteren, [&#x200B; RESP.app &#x200B;](https://flathub.org/apps/app.resp.RESP) steunt automatische decompressie van Commerce 2 zitting en paginacache en toont PHP zittingsgegevens in een mens-leesbaar formaat.
+Om samengeperste zittingsgegevens en het paginacachegeheugen te inspecteren, [ RESP.app ](https://flathub.org/apps/app.resp.RESP) steunt automatische decompressie van Commerce 2 zitting en paginacache en toont PHP zittingsgegevens in een mens-leesbaar formaat.

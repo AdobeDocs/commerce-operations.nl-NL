@@ -2,9 +2,9 @@
 title: Geavanceerde installatie op locatie
 description: Meer informatie over geavanceerde installatiescenario's voor Adobe Commerce-implementaties op locatie. Ontdek complexe configuraties en aangepaste instellingsopties.
 exl-id: e16e750a-e068-4a63-8ad9-62043e2a8231
-source-git-commit: 7054a5286f01e26e324401f4d8505e4e0faed93e
+source-git-commit: 319f3232d1ba5f5ed7cdd10ce85b9d7ffbeec89a
 workflow-type: tm+mt
-source-wordcount: '2484'
+source-wordcount: '2527'
 ht-degree: 0%
 
 ---
@@ -13,15 +13,15 @@ ht-degree: 0%
 
 >[!TIP]
 >
->Verloren? Hebt u een helpende hand nodig? Probeer onze [&#x200B; Snelle begin installeert &#x200B;](composer.md) of [&#x200B; Medewerker &#x200B;](https://developer.adobe.com/commerce/contributor/guides/install/) gidsen installeert.
+>Verloren? Hebt u een helpende hand nodig? Probeer onze [ Snelle begin installeert ](composer.md) of [ Medewerker ](https://developer.adobe.com/commerce/contributor/guides/install/) gidsen installeert.
 
 >[!NOTE]
 >
->Als u verkoos om SELinux toe te laten, zie [&#x200B; SELinux en iptables &#x200B;](prerequisites/security.md).
+>Als u verkoos om SELinux toe te laten, zie [ SELinux en iptables ](prerequisites/security.md).
 
 ## Command-lijn interface (CLI)
 
-Adobe Commerce heeft één opdrachtregelinterface voor installatie- en configuratietaken: `<magento_root>/bin/magento` . De interface voert veelvoudige taken uit, die omvatten:
+Adobe Commerce heeft één opdrachtregelinterface voor installatie- en configuratietaken: `<magento_root>/bin/magento`. De interface voert veelvoudige taken uit, die omvatten:
 
 * Installatie (en verwante taken zoals het creëren of bijwerken van het gegevensbestandschema, het creëren van de plaatsingsconfiguratie).
 * De cache wissen.
@@ -38,7 +38,7 @@ Overige uitkeringen:
 * CLI is verlengbaar zodat kunnen de derdeontwikkelaars &quot;binnen&quot;aan het &quot;stoppen. Dit heeft het extra voordeel om de het leren kromme van gebruikers te elimineren.
 * Opdrachten voor uitgeschakelde modules worden niet weergegeven.
 
-Dit onderwerp bespreekt het installeren van de software van Adobe Commerce gebruikend CLI. Voor informatie over configuratie, zie de [&#x200B; Gids van de Configuratie &#x200B;](../configuration/overview.md).
+Dit onderwerp bespreekt het installeren van de software van Adobe Commerce gebruikend CLI. Voor informatie over configuratie, zie de [ Gids van de Configuratie ](../configuration/overview.md).
 
 Het installatieprogramma kan indien nodig meerdere keren worden uitgevoerd, zodat u:
 
@@ -53,15 +53,15 @@ Het installatieprogramma kan indien nodig meerdere keren worden uitgevoerd, zoda
 
 Voer de volgende stappen uit voordat u begint:
 
-* Verifieer dat uw systeem aan de vereisten voldoet die in [&#x200B; worden besproken systeemvereisten &#x200B;](system-requirements.md).
+* Verifieer dat uw systeem aan de vereisten voldoet die in [ worden besproken systeemvereisten ](system-requirements.md).
 
-* Voltooi alle [&#x200B; voorwaarde &#x200B;](prerequisites/overview.md) taken.
+* Voltooi alle [ voorwaarde ](prerequisites/overview.md) taken.
 
-* Voer de eerste installatiestappen uit. Zie [&#x200B; uw installeer of verbeteringspad &#x200B;](overview.md).
+* Voer de eerste installatiestappen uit. Zie [ uw installeer of verbeteringspad ](overview.md).
 
-* Nadat u login aan de toepassingsserver, [&#x200B; schakelaar aan de eigenaar van het dossiersysteem &#x200B;](prerequisites/file-system/overview.md).
+* Nadat u login aan de toepassingsserver, [ schakelaar aan de eigenaar van het dossiersysteem ](prerequisites/file-system/overview.md).
 
-* Herzie het [&#x200B; snel begin van de installatie &#x200B;](composer.md) overzicht.
+* Herzie het [ snel begin van de installatie ](composer.md) overzicht.
 
 >[!NOTE]
 >
@@ -79,7 +79,7 @@ U kunt het installatieprogramma meerdere keren uitvoeren met verschillende optie
 >
 >Standaard overschrijft het installatieprogramma de database niet als u de software in dezelfde database-instantie installeert. U kunt de optionele parameter `cleanup-database` gebruiken om dit gedrag te wijzigen.
 
-Zie ook [&#x200B; Update, herinstalleer, desinstalleer &#x200B;](tutorials/uninstall.md).
+Zie ook [ Update, herinstalleer, desinstalleer ](tutorials/uninstall.md).
 
 ### Beveiligde installatie
 
@@ -97,17 +97,17 @@ U kunt de volgende opdrachten uitvoeren om naar waarden voor bepaalde vereiste a
 
 >[!NOTE]
 >
->Als een foutenvertoningen wanneer u deze bevelen in werking stelt, verifieer dat u installatiegebiedsdelen zoals besproken in [&#x200B; de installatiegebiedsdelen van de Update &#x200B;](https://developer.adobe.com/commerce/contributor/guides/install/update-dependencies) bijwerkte.
+>Als een foutenvertoningen wanneer u deze bevelen in werking stelt, verifieer dat u installatiegebiedsdelen zoals besproken in [ de installatiegebiedsdelen van de Update ](https://developer.adobe.com/commerce/contributor/guides/install/update-dependencies) bijwerkte.
 
 ## Installeren vanaf de opdrachtregel
 
 Voor de installatieopdracht wordt de volgende indeling gebruikt:
 
-```bash
+```shell
 bin/magento setup:install --<option>=<value> ... --<option>=<value>
 ```
 
-In de volgende tabellen worden de namen en waarden van de installatieopties beschreven. Bijvoorbeeld installatiebevelen, zie [&#x200B; de installaties van de Steekproef localhost &#x200B;](#sample-localhost-installations).
+In de volgende tabellen worden de namen en waarden van de installatieopties beschreven. Bijvoorbeeld installatiebevelen, zie [ de installaties van de Steekproef localhost ](#sample-localhost-installations).
 
 >[!NOTE]
 >
@@ -117,9 +117,9 @@ In de volgende tabellen worden de namen en waarden van de installatieopties besc
 
 Met de volgende opties geeft u de gebruikersgegevens en gebruikersgegevens voor de Admin-gebruiker op.
 
-U kunt de Admin-gebruiker tijdens of na de installatie maken. Als u de gebruiker tijdens de installatie creeert, zijn alle admin credentievariabelen vereist. Zie [&#x200B; installaties van de Steekproef localhost &#x200B;](#sample-localhost-installations).
+U kunt de Admin-gebruiker tijdens of na de installatie maken. Als u de gebruiker tijdens de installatie creeert, zijn alle admin credentievariabelen vereist. Zie [ installaties van de Steekproef localhost ](#sample-localhost-installations).
 
-De volgende tabellen bevatten veel, maar niet alle beschikbare installatieparameters. Voor een volledige lijst, zie de [&#x200B; bevel-lijn Verwijzing van Hulpmiddelen &#x200B;](https://experienceleague.adobe.com/nl/docs/commerce-operations/tools/cli-reference/commerce-on-premises).
+De volgende tabellen bevatten veel, maar niet alle beschikbare installatieparameters. Voor een volledige lijst, zie de [ bevel-lijn Verwijzing van Hulpmiddelen ](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/cli-reference/commerce-on-premises).
 
 | Naam | Waarde | Vereist? |
 |--- |--- |--- |
@@ -133,9 +133,9 @@ De volgende tabellen bevatten veel, maar niet alle beschikbare installatieparame
 
 | Naam | Waarde | Vereist? |
 |--- |--- |--- |
-| `--base-url` | Basis URL aan gebruik om tot uw Admin en opslag in om het even welke volgende formaten toegang te hebben:<br><br>`http[s]://<host or ip>/<your install dir>/`.<br><br>**Nota:** de regeling (http:// of https://) en een het slepen schuine streep worden allebei vereist.<br><br>`<your install dir>` is het documentafhankelijke relatieve pad voor de installatie van de Adobe Commerce-software. Afhankelijk van hoe u opstelling uw Webserver en virtuele gastheren, de weg magento2 zou kunnen zijn of het zou leeg kunnen zijn.<br><br> om tot Adobe Commerce of tot MagenAdobe Commercieel toegang te hebben `http://127.0.0.1/<your install dir>/` of `http://127.0.0.1/<your install dir>/`.<br><br> - `{{base_url}}` die een basis-URL vertegenwoordigt die wordt gedefinieerd door een virtuele hostinstelling of door een virtualisatieomgeving zoals Docker. Als u bijvoorbeeld een virtuele host instelt met de hostnaam `magento.example.com` , kunt u de software installeren met `--base-url={{base_url}}` en toegang krijgen tot de beheerder met een URL zoals `http://magento.example.com/admin` . | Ja |
+| `--base-url` | Basis URL aan gebruik om tot uw Admin en storefront in om het even welke volgende formaten toegang te hebben:<br><br>`http[s]://<host or ip>/<your install dir>/`.<br><br>**Nota:** de regeling (http:// of https://) en een het slepen schuine streep worden allebei vereist.<br><br>`<your install dir>` is het documentafhankelijke relatieve pad voor de installatie van de Adobe Commerce-software. Afhankelijk van hoe u opstelling uw Webserver en virtuele gastheren, de weg magento2 zou kunnen zijn of het zou leeg kunnen zijn.<br><br> om tot Adobe Commerce of tot MagenAdobe Commercieel toegang te hebben of `http://127.0.0.1/<your install dir>/` of `http://127.0.0.1/<your install dir>/`.<br><br> - `{{base_url}}` die een basis URL vertegenwoordigt die door een virtuele gastheerinstelling of door een virtualisatiemilieu zoals Docker wordt bepaald. Als u bijvoorbeeld een virtuele host instelt met de hostnaam `magento.example.com` , kunt u de software installeren met `--base-url={{base_url}}` en toegang krijgen tot de beheerder met een URL zoals `http://magento.example.com/admin` . | Ja |
 | `--backend-frontname` | Uniform Resource Identifier (URI) voor toegang tot de beheerder. U kunt deze parameter weglaten om de toepassing willekeurige URI voor u met het volgende patroon <code> te laten produceren admin_jkhgdfq</code>.<br><br> wij adviseren willekeurige URI voor veiligheidsdoeleinden. Willekeurige URI is moeilijker voor hakkers of kwaadwillige software om te exploiteren.<br><br> de vertoningen van URI aan het eind van de installatie. U kunt deze later op elk gewenst moment weergeven met de opdracht `bin/magento info:adminuri` .<br><br> als u verkiest om een waarde in te gaan, adviseren wij u geen gemeenschappelijk woord zoals admin, backend. De Admin-URI kan alleen alfanumerieke waarden en het onderstrepingsteken (`_`) bevatten. | Nee |
-| `--db-host` | Gebruik om het even welk van het volgende:<br><br> - de volledig gekwalificeerde hostname van de gegevensbestandserver of IP adres.<br><br>- `localhost` (standaardwaarde) of `127.0.0.1` als uw databaseserver zich op dezelfde host bevindt als uw webserver.localhost betekent dat de MySQL-clientbibliotheek gebruikmaakt van UNIX-sockets om verbinding te maken met de database. `127.0.0.1` zorgt ervoor dat de clientbibliotheek het TCP-protocol gebruikt. Voor meer informatie over contactdozen, zie de [&#x200B; PHP documentatie BOB_MYSQL &#x200B;](https://www.php.net/manual/en/ref.pdo-mysql.php).<br><br>**Nota:** U kunt naar keuze de haven van de gegevensbestandserver in zijn hostname als `www.example.com:9000` specificeren | Ja |
+| `--db-host` | Gebruik om het even welke volgend:<br><br> - de volledig gekwalificeerde hostname van de gegevensbestandserver of IP adres.<br><br> - `localhost` (gebrek) of `127.0.0.1` als uw gegevensbestandserver op de zelfde gastheer zoals uw Webserver.localhost is betekent de MySQL cliëntbibliotheek gebruiksUNIX contactpunten om met het gegevensbestand te verbinden. `127.0.0.1` zorgt ervoor dat de clientbibliotheek het TCP-protocol gebruikt. Voor meer informatie over contactdozen, zie de [ PHP documentatie BOB_MYSQL ](https://www.php.net/manual/en/ref.pdo-mysql.php).<br><br>**Nota:** U kunt naar keuze de haven van de gegevensbestandserver in zijn hostname als `www.example.com:9000` specificeren | Ja |
 | `--db-name` | Naam van de database-instantie waarin u de databasetabellen wilt installeren.<br><br> Standaard is `magento2`. | Ja |
 | `--db-user` | Gebruikersnaam van de eigenaar van de databaseinstantie.<br><br> Standaard is `root`. | Ja |
 | `--db-password` | Het wachtwoord van de eigenaar van de databaseinstantie. | Ja |
@@ -146,12 +146,12 @@ De volgende tabellen bevatten veel, maar niet alle beschikbare installatieparame
 | `--language` | Taalcode die moet worden gebruikt in Admin en storefront. (Als u dit nog niet hebt gedaan, kunt u de lijst met taalcodes weergeven door `bin/magento info:language:list` in te voeren in de map bin.) | Nee |
 | `--currency` | Standaardvaluta voor gebruik in de winkel. (Als u dit nog niet hebt gedaan, kunt u de lijst met valuta&#39;s weergeven door `bin/magento info:currency:list` in te voeren in de map bin.) | Nee |
 | `--timezone` | Standaardtijdzone die moet worden gebruikt in Admin en Storage. (Als u dit nog niet hebt gedaan, kunt u de lijst met tijdzones weergeven door `bin/magento info:timezone:list` in te voeren in de map `bin/` .) | Nee |
-| `--use-rewrites` | `1` betekent dat u herschrijvingen van webservers gebruikt voor gegenereerde koppelingen in de winkel en in Admin.<br><br>`0` schakelt het gebruik van herschrijven van webservers uit. Dit is de standaardinstelling. | Nee |
-| `--use-secure` | `1` maakt het gebruik van SSL (Secure Sockets Layer) in winkel-URL&#39;s mogelijk. Zorg ervoor dat uw webserver SSL ondersteunt voordat u deze optie selecteert.<br><br>`0` schakelt het gebruik van SSL uit. In dit geval wordt aangenomen dat alle andere veilige URL-opties ook 0 zijn. Dit is de standaardinstelling. | Nee |
-| `--base-url-secure` | Beveilig basis-URL voor toegang tot uw beheerder en winkel in de volgende indeling: `http[s]://<host or ip>/<your install dir>/` | Nee |
-| `--use-secure-admin` | `1` betekent dat u SSL gebruikt om toegang te krijgen tot Admin. Zorg ervoor dat uw webserver SSL ondersteunt voordat u deze optie selecteert.<br><br>`0` betekent dat u geen SSL gebruikt met de Admin. Dit is de standaardinstelling. | Nee |
-| `--admin-use-security-key` | 1 zorgt ervoor dat de toepassing een willekeurig gegenereerde sleutelwaarde gebruikt om toegang te krijgen tot pagina&#39;s in de Admin en in formulieren. Deze zeer belangrijke waarden helpen dwars-plaats manuscriptvervalsingsaanvallen verhinderen. Dit is de standaardinstelling.<br><br>`0` schakelt het gebruik van de toets uit. | Nee |
-| `--session-save` | Gebruik om het even welke volgend:<br><br> - `db` om zittingsgegevens in het gegevensbestand op te slaan. Kies gegevensbestandopslag als u een gegroepeerd gegevensbestand hebt; anders, zou er niet veel voordeel over op dossier-gebaseerde opslag kunnen zijn.<br><br> - `files` om sessiegegevens op te slaan in het bestandssysteem. De op dossier-gebaseerde zittingsopslag is aangewezen tenzij de toegang van het dossiersysteem langzaam is, hebt u een gegroepeerd gegevensbestand, of u wilt zittingsgegevens in Redis opslaan.<br><br> - `redis` om sessiegegevens op te slaan in Redis. Als u Redis gebruikt als standaardinstelling of als u pagina&#39;s in cache plaatst, moet Redis al zijn geïnstalleerd. Zie Redis gebruiken voor sessieopslag voor aanvullende informatie over het configureren van ondersteuning voor Redis. | Nee |
+| `--use-rewrites` | `1` betekent dat u herschrijvingen van webservers gebruikt voor gegenereerde koppelingen in de winkel en in Admin.<br><br>`0` Hiermee schakelt u het gebruik van herschrijvingen van webservers uit. Dit is de standaardinstelling. | Nee |
+| `--use-secure` | `1` maakt het gebruik van SSL (Secure Sockets Layer) in winkel-URL&#39;s mogelijk. Zorg ervoor dat uw Webserver SSL steunt alvorens u deze optie selecteert.<br><br>`0` schakelt het gebruik van SSL uit. In dit geval wordt aangenomen dat alle andere veilige URL-opties ook 0 zijn. Dit is de standaardinstelling. | Nee |
+| `--base-url-secure` | Beveilig basis-URL voor toegang tot uw Admin en winkel in de volgende indeling: `http[s]://<host or ip>/<your install dir>/` | Nee |
+| `--use-secure-admin` | `1` betekent dat u SSL gebruikt om toegang te krijgen tot Admin. Zorg ervoor dat uw Webserver SSL steunt alvorens u deze optie selecteert.<br><br>`0` betekent dat u geen SSL gebruikt met de Admin. Dit is de standaardinstelling. | Nee |
+| `--admin-use-security-key` | 1 zorgt ervoor dat de toepassing een willekeurig gegenereerde sleutelwaarde gebruikt om toegang te krijgen tot pagina&#39;s in de Admin en in formulieren. Deze zeer belangrijke waarden helpen dwars-plaats manuscriptvervalsingsaanvallen verhinderen. Dit is het gebrek.<br><br>`0` Hiermee schakelt u het gebruik van de toets uit. | Nee |
+| `--session-save` | Gebruik om het even welke volgend:<br><br> - `db` om zittingsgegevens in het gegevensbestand op te slaan. Kies gegevensbestandopslag als u een gegroepeerd gegevensbestand hebt; anders, zou er niet veel voordeel over op dossier-gebaseerde opslag kunnen zijn.<br><br> - `files` om zittingsgegevens in het dossiersysteem op te slaan. De op dossier-gebaseerde zittingsopslag is aangewezen tenzij de toegang van het dossiersysteem langzaam is, hebt u een gegroepeerd gegevensbestand, of u wilt zittingsgegevens in Redis opslaan.<br><br> - `redis` om zittingsgegevens in Redis op te slaan. Als u Redis gebruikt als standaardinstelling of als u pagina&#39;s in cache plaatst, moet Redis al zijn geïnstalleerd. Zie Redis gebruiken voor sessieopslag voor aanvullende informatie over het configureren van ondersteuning voor Redis. | Nee |
 | `--key` | Als u er een hebt, geeft u een sleutel op om vertrouwelijke gegevens in de database te coderen. Als u er geen hebt, genereert de toepassing er een voor u. | Ja |
 | `--cleanup-database` | Als u databasetabellen wilt neerzetten voordat u Adobe Commerce installeert, geeft u deze parameter zonder waarde op. Anders blijft de database intact. | Nee |
 | `--db-init-statements` | Geavanceerde MySQL-configuratieparameter. Gebruikt de verklaringen van de gegevensbestandinitialisatie om te lopen wanneer het verbinden met het gegevensbestand MySQL. Raadpleeg een verwijzing die vergelijkbaar is met deze voordat u waarden instelt.<br><br> Standaard is `SET NAMES utf8;`. | Nee |
@@ -181,7 +181,7 @@ De volgende tabellen bevatten veel, maar niet alle beschikbare installatieparame
 
 | Naam | Waarde | Vereist? |
 |--- |--- |--- |
-| `--amqp-host` | Gebruik de opties voor `--amqp` alleen als u al een installatie van [!DNL RabbitMQ] hebt ingesteld. Zie [!DNL RabbitMQ] voor meer informatie over het installeren en configureren van [!DNL RabbitMQ] .<br><br> hostname waar [!DNL RabbitMQ] geïnstalleerd is. | Nee |
+| `--amqp-host` | Gebruik de opties voor `--amqp` alleen als u al een installatie van [!DNL RabbitMQ] hebt ingesteld. Zie [!DNL RabbitMQ] installatie voor meer informatie over het installeren en het vormen [!DNL RabbitMQ].<br><br> hostname waar [!DNL RabbitMQ] geïnstalleerd is. | Nee |
 | `--amqp-port` | De poort die moet worden gebruikt om verbinding te maken met [!DNL RabbitMQ] . De standaardwaarde is 5672. | Nee |
 | `--amqp-user` | De gebruikersnaam voor het verbinden met [!DNL RabbitMQ] . Gebruik de standaardgebruiker `guest` niet. | Nee |
 | `--amqp-password` | Het wachtwoord voor het maken van verbinding met [!DNL RabbitMQ] . Gebruik het standaardwachtwoord niet `guest` . | Nee |
@@ -197,7 +197,7 @@ De volgende tabellen bevatten veel, maar niet alle beschikbare installatieparame
 
 | Naam | Waarde | Vereist? |
 |--- |--- |--- |
-| `--stomp-host` | Gebruik de `--stomp` -opties alleen als u al een installatie van ActiveMQ-artemis hebt ingesteld. Zie de Artemis-installatie van ActiveMQ voor meer informatie over het installeren en configureren van ActiveMQ-artemis.<br><br> hostname waar de Artemis ActiveMQ geïnstalleerd is. | Nee |
+| `--stomp-host` | Gebruik de `--stomp` -opties alleen als u al een installatie van ActiveMQ-artemis hebt ingesteld. Zie Artemis ActiveMQ installatie voor meer informatie over het installeren van en het vormen van Artemis ActiveMQ.<br><br> hostname waar Artemis ActiveMQ geïnstalleerd is. | Nee |
 | `--stomp-port` | De poort die moet worden gebruikt om verbinding te maken met ActiveMQ Artemis. De standaardwaarde is 61613. | Nee |
 | `--stomp-user` | De gebruikersnaam voor het maken van verbinding met ActiveMQ Artemis. Gebruik de standaardgebruiker `artemis` niet. | Nee |
 | `--stomp-password` | Het wachtwoord voor het maken van verbinding met ActiveMQ-artemis. Gebruik het standaardwachtwoord niet `artemis` . | Nee |
@@ -208,10 +208,10 @@ De volgende tabellen bevatten veel, maar niet alle beschikbare installatieparame
 
 | Naam | Waarde | Vereist? |
 |--- |--- |--- |
-| `--lock-provider` | Naam provider vergrendelen.<br><br> Beschikbare vergrendelingsproviders: `db`, `zookeeper`, `file` .<br><br> De standaardvergrendelingsprovider: `db` | Nee |
-| `--lock-db-prefix` | Het specifieke voorvoegsel van de tab om vergrendelingsconflicten te voorkomen wanneer u `db` vergrendelingsprovider gebruikt.<br><br> De standaardwaarde: `NULL` | Nee |
-| `--lock-zookeeper-host` | Gastheer en poort om verbinding te maken met de Zookeeper-cluster wanneer u `zookeeper` lock provider gebruikt.<br><br> Bijvoorbeeld: `127.0.0.1:2181` | Ja, als u `--lock-provider=zookeeper` instelt |
-| `--lock-zookeeper-path` | Het pad waar Zookeeper vergrendelingen opslaat.<br><br> Het standaardpad is: `/magento/locks` | Nee |
+| `--lock-provider` | Naam provider vergrendelen.<br><br> Beschikbare slotleveranciers: `db`, `zookeeper`, `file`.<br><br> de standaardslotleverancier: `db` | Nee |
+| `--lock-db-prefix` | Het specifieke voorvoegsel van de tab om vergrendelingsconflicten te voorkomen wanneer u `db` vergrendelingsprovider gebruikt.<br><br> de standaardwaarde: `NULL` | Nee |
+| `--lock-zookeeper-host` | Gastheer en poort om verbinding te maken met de Zookeeper-cluster wanneer u `zookeeper` lock provider gebruikt.<br><br> bijvoorbeeld: `127.0.0.1:2181` | Ja, als u `--lock-provider=zookeeper` instelt |
+| `--lock-zookeeper-path` | Het pad waar Zookeeper vergrendelingen opslaat.<br><br> de standaardweg is: `/magento/locks` | Nee |
 | `--lock-file-path` | Het pad waar de bestandsvergrendelingen worden opgeslagen. | Ja, als u `--lock-provider=file` instelt |
 
 **de configuratieopties van de Consumenten:**
@@ -220,7 +220,7 @@ De volgende tabellen bevatten veel, maar niet alle beschikbare installatieparame
 
 >[!NOTE]
 >
->Om modules toe te laten of onbruikbaar te maken na het installeren van Adobe Commerce, zie [&#x200B; modules &#x200B;](tutorials/manage-modules.md) toelaten en onbruikbaar maken.
+>Om modules toe te laten of onbruikbaar te maken na het installeren van Adobe Commerce, zie [ modules ](tutorials/manage-modules.md) toelaten en onbruikbaar maken.
 
 **Gevoelige gegevens:**
 
@@ -234,7 +234,7 @@ In de volgende voorbeelden ziet u de opdrachten voor het lokaal installeren van 
 
 In het volgende voorbeeld wordt Adobe Commerce geïnstalleerd met de volgende opties:
 
-* De toepassing wordt geïnstalleerd in de map `magento2` ten opzichte van de hoofdmap van de webserver op `localhost` en het pad naar de beheerdersmap is `admin` . Dit betekent dat:
+* De toepassing wordt geïnstalleerd in de map `magento2` ten opzichte van de hoofdmap van de webserver op `localhost` en het pad naar de beheerder is `admin` . derhalve:
 
   De URL van uw winkel is `http://127.0.0.1`
 
@@ -255,7 +255,7 @@ In het volgende voorbeeld wordt Adobe Commerce geïnstalleerd met de volgende op
 * Standaardtijdzone is VS Central (Amerika/Chicago)
 * OpenSearch 1.2 is geïnstalleerd op `os-host.example.com` en maakt verbinding op poort 9200
 
-```bash
+```shell
 magento setup:install --base-url=http://127.0.0.1/magento2/ \
 --db-host=localhost --db-name=magento --db-user=magento --db-password=magento \
 --admin-firstname=Magento --admin-lastname=User --admin-email=user@example.com \
@@ -267,7 +267,7 @@ magento setup:install --base-url=http://127.0.0.1/magento2/ \
 
 Berichten die lijken op de volgende weergave om aan te geven dat de installatie is gelukt:
 
-```
+```text
 Post installation file permissions check...
 For security, remove write permissions from these directories: '/var/www/html/magento2/app/etc'
 [Progress: 274 / 274]
@@ -279,7 +279,7 @@ For security, remove write permissions from these directories: '/var/www/html/ma
 
 U kunt Adobe Commerce installeren zonder de beheerdersgebruiker te maken, zoals in het volgende voorbeeld wordt getoond.
 
-```bash
+```shell
 magento setup:install --base-url=http://127.0.0.1/magento2/ \
 --db-host=localhost --db-name=magento --db-user=magento --db-password=magento \
 --language=en_US --currency=USD --timezone=America/Chicago --use-rewrites=1 \
@@ -289,7 +289,7 @@ magento setup:install --base-url=http://127.0.0.1/magento2/ \
 
 Berichten zoals de volgende weergave als de installatie is gelukt:
 
-```
+```text
 Post installation file permissions check...
 For security, remove write permissions from these directories: '/var/www/html/magento2/app/etc'
 [Progress: 274 / 274]
@@ -298,13 +298,13 @@ For security, remove write permissions from these directories: '/var/www/html/ma
 ```
 
 Na de installatie kunt u een beheerder maken met de opdracht `admin:user:create` :
-[&#x200B; creeer of geef een beheerder &#x200B;](tutorials/admin.md#create-or-edit-an-administrator) uit
+[ creeer of geef een beheerder ](tutorials/admin.md#create-or-edit-an-administrator) uit
 
 #### Voorbeeld 3—Installeren met extra opties
 
 In het volgende voorbeeld wordt Adobe Commerce geïnstalleerd met de volgende opties:
 
-* De toepassing wordt geïnstalleerd in de map `magento2` ten opzichte van de hoofdmap van de webserver op `localhost` en het pad naar de beheerdersmap is `admin` . Dit betekent dat:
+* De toepassing wordt geïnstalleerd in de map `magento2` ten opzichte van de hoofdmap van de webserver op `localhost` en het pad naar de beheerder is `admin` . derhalve:
 
   De URL van uw winkel is `http://127.0.0.1`
 
@@ -327,7 +327,7 @@ In het volgende voorbeeld wordt Adobe Commerce geïnstalleerd met de volgende op
 * Gebruikt herschrijvingen van server
 * OpenSearch is geïnstalleerd op `os-host.example.com` en maakt verbinding op poort 9200
 
-```bash
+```shell
 magento setup:install --base-url=http://127.0.0.1/magento2/ \
 --db-host=localhost --db-name=magento --db-user=magento --db-password=magento \
 --admin-firstname=Magento --admin-lastname=User --admin-email=user@example.com \
@@ -344,7 +344,7 @@ magento setup:install --base-url=http://127.0.0.1/magento2/ \
 
 Berichten zoals de volgende weergave als de installatie is gelukt:
 
-```
+```text
 Post installation file permissions check...
 For security, remove write permissions from these directories: '/var/www/html/magento2/app/etc'
 [Progress: 274 / 274]
@@ -356,7 +356,7 @@ For security, remove write permissions from these directories: '/var/www/html/ma
 
 In het volgende voorbeeld wordt getoond hoe u Adobe Commerce met ActiveMQ-artemis als berichtbroker installeert:
 
-```bash
+```shell
 bin/magento setup:install --base-url=http://127.0.0.1/magento2/ \
 --db-host=localhost --db-name=magento --db-user=magento --db-password=magento \
 --admin-firstname=Magento --admin-lastname=User --admin-email=user@example.com \

@@ -3,9 +3,9 @@ title: Nginx voor uw zoekmachine configureren
 description: Voer de volgende stappen uit om een zoekmachine te configureren met de Nginx-webserver voor installaties in de bedrijfsruimten van Adobe Commerce.
 feature: Install, Search
 exl-id: 8d2f8695-e30a-4acc-bba3-d122212b0a53
-source-git-commit: 55512521254c49511100a557a4b00cf3ebee0311
+source-git-commit: 48624d70761117ed0b9f8a7be913fce0572577b6
 workflow-type: tm+mt
-source-wordcount: '603'
+source-wordcount: '638'
 ht-degree: 0%
 
 ---
@@ -18,13 +18,13 @@ ht-degree: 0%
 
 >[!NOTE]
 >
->Ondersteuning voor OpenSearch is toegevoegd in 2.4.4. OpenSearch is een compatibele vork van Elasticsearch. Zie [&#x200B; Elasticsearch migreren aan OpenSearch &#x200B;](../../../upgrade/prepare/opensearch-migration.md) voor meer informatie.
+>Ondersteuning voor OpenSearch is toegevoegd in 2.4.4. OpenSearch is een compatibele vork van Elasticsearch. Zie [ Elasticsearch migreren aan OpenSearch ](../../../upgrade/prepare/opensearch-migration.md) voor meer informatie.
 
-Deze sectie bespreekt hoe te om nginx als *onveilige* volmacht te vormen zodat Adobe Commerce een onderzoeksmotor kan gebruiken die op deze server loopt. Deze sectie bespreekt vestigingHTTP Basis geen authentificatie; dat in [&#x200B; Veilige mededeling met nginx &#x200B;](#secure-communication-with-nginx) wordt besproken.
+Deze sectie bespreekt hoe te om nginx als *onveilige* volmacht te vormen zodat Adobe Commerce een onderzoeksmotor kan gebruiken die op deze server loopt. In deze sectie wordt het instellen van HTTP Basic-verificatie niet besproken. dat in [ Veilige mededeling met nginx ](#secure-communication-with-nginx) wordt besproken.
 
 >[!NOTE]
 >
->De reden dat de proxy in dit voorbeeld niet is beveiligd, is dat het makkelijker is om een proxy in te stellen en te verifiëren. U kunt TLS desgewenst gebruiken met deze proxy. Hiervoor moet u de proxygegevens toevoegen aan de configuratie van het beveiligde serverblok.
+>De reden dat de proxy in dit voorbeeld niet is beveiligd, is dat het makkelijker is om een proxy in te stellen en te verifiëren. U kunt TLS desgewenst gebruiken met deze proxy. om dit te doen, zorg ervoor u de volmachtsinformatie aan uw veilige configuratie van het serverblok toevoegt.
 
 ### Geef aanvullende configuratiebestanden op in uw algemene configuratie
 
@@ -51,25 +51,25 @@ In deze sectie wordt besproken hoe u kunt opgeven wie toegang heeft tot de nginx
 
 1. Nginx opnieuw starten:
 
-   ```bash
+   ```shell
    service nginx restart
    ```
 
 1. Verifieer de volmachtswerken door het volgende bevel in te gaan:
 
-   ```bash
+   ```shell
    curl -i http://localhost:<proxy port>/_cluster/health
    ```
 
    Als uw proxy bijvoorbeeld poort 8080 gebruikt:
 
-   ```bash
+   ```shell
    curl -i http://localhost:8080/_cluster/health
    ```
 
    Berichten die op de volgende vertoning lijken om op succes te wijzen:
 
-   ```
+   ```text
    HTTP/1.1 200 OK
    Date: Tue, 23 Feb 2019 20:38:03 GMT
    Content-Type: application/json; charset=UTF-8
@@ -81,15 +81,15 @@ In deze sectie wordt besproken hoe u kunt opgeven wie toegang heeft tot de nginx
 
 ## Beveiligde communicatie met nginx
 
-Deze sectie bespreekt hoe te opstelling [&#x200B; de Basisauthentificatie van HTTP &#x200B;](https://nginx.org/en/docs/http/ngx_http_auth_basic_module.html) met uw veilige volmacht. Als u TLS en HTTP Basic-verificatie gebruikt, kan niemand communicatie met Elasticsearch of OpenSearch of met uw toepassingsserver onderscheppen.
+Deze sectie bespreekt hoe te opstelling [ de Basisauthentificatie van HTTP ](https://nginx.org/en/docs/http/ngx_http_auth_basic_module.html) met uw veilige volmacht. Als u TLS en HTTP Basic-verificatie gebruikt, kan niemand communicatie met Elasticsearch of OpenSearch of met uw toepassingsserver onderscheppen.
 
-Omdat nginx nationaal authentificatie steunt van HTTP Basis, adviseren wij het over, bijvoorbeeld, [&#x200B; de authentificatie van de Samenvatting &#x200B;](https://www.nginx.com/resources/wiki/modules/auth_digest/), die niet in productie wordt geadviseerd.
+Omdat nginx nationaal authentificatie steunt van HTTP Basis, adviseren wij het over, bijvoorbeeld, [ de authentificatie van de Samenvatting ](https://www.nginx.com/resources/wiki/modules/auth_digest/), die niet in productie wordt geadviseerd.
 
 Aanvullende bronnen:
 
-* [&#x200B; hoe te Authentificatie van het Wachtwoord van de opstelling met Nginx op Ubuntu 14.04 (Digitale Oceaan) &#x200B;](https://www.digitalocean.com/community/tutorials/how-to-set-up-password-authentication-with-nginx-on-ubuntu-14-04)
-* [&#x200B; BasisHTTP Authentificatie met Nginx (HowtoForge) &#x200B;](https://www.howtoforge.com/basic-http-authentication-with-nginx)
-* [&#x200B; de Configuraties van Nginx van het Voorbeeld voor Elasticsearch &#x200B;](https://gist.github.com/karmi/b0a9b4c111ed3023a52d)
+* [Hoe te om de Authentificatie van het Wachtwoord met Nginx op Ubuntu 14.04 (Digitale Oceaan) op te zetten](https://www.digitalocean.com/community/tutorials/how-to-set-up-password-authentication-with-nginx-on-ubuntu-14-04)
+* [Standaard HTTP-verificatie met Nginx (HowtoForge)](https://www.howtoforge.com/basic-http-authentication-with-nginx)
+* [Voorbeeld van Nginx-configuraties voor Elasticsearch](https://gist.github.com/karmi/b0a9b4c111ed3023a52d)
 
 Zie de volgende secties voor meer informatie:
 
@@ -106,11 +106,11 @@ Een wachtwoord maken:
 
 1. Voer de volgende opdracht in om te bepalen of `htpasswd` al is geïnstalleerd:
 
-   ```bash
+   ```shell
    which htpasswd
    ```
 
-   Als een pad wordt weergegeven, wordt dit geïnstalleerd. Als de opdracht geen uitvoer retourneert, wordt `htpasswd` niet geïnstalleerd.
+   Als een pad wordt weergegeven, wordt het geïnstalleerd; als de opdracht geen uitvoer retourneert, wordt `htpasswd` niet geïnstalleerd.
 
 1. Indien nodig installeert u `htpasswd` :
 
@@ -119,21 +119,21 @@ Een wachtwoord maken:
 
 1. Maak een map `/etc/nginx/passwd` waarin wachtwoorden worden opgeslagen:
 
-   ```bash
+   ```shell
    mkdir -p /etc/nginx/passwd
    ```
 
-   ```bash
+   ```shell
    htpasswd -c /etc/nginx/passwd/.<filename> <username>
    ```
 
    >[!WARNING]
    >
-   >Om veiligheidsredenen moet `<filename>` verborgen zijn, dat wil zeggen dat het moet beginnen met een punt.
+   >Om veiligheidsredenen moet `<filename>` verborgen zijn. dat wil zeggen dat het met een periode moet beginnen .
 
-1. *(Optioneel).* Als u nog een gebruiker aan het wachtwoordbestand wilt toevoegen, voert u dezelfde opdracht in zonder de optie `-c` (Maken):
+1. *(Optioneel).* Als u nog een gebruiker aan het wachtwoordbestand wilt toevoegen, voert u dezelfde opdracht in zonder de optie `-c` (maken):
 
-   ```bash
+   ```shell
    htpasswd /etc/nginx/passwd/.<filename> <username>
    ```
 
@@ -188,7 +188,7 @@ In deze sectie wordt besproken hoe u kunt opgeven wie toegang heeft tot de zoekm
 
 1. Ga het volgende bevel in om een folder tot stand te brengen om de authentificatieconfiguratie op te slaan:
 
-   ```bash
+   ```shell
    mkdir /etc/nginx/auth/
    ```
 
@@ -209,7 +209,7 @@ In deze sectie wordt besproken hoe u kunt opgeven wie toegang heeft tot de zoekm
 1. Als u een veilige proxy instelt, verwijdert u `/etc/nginx/conf.d/magento_es_auth.conf` .
 1. Start de engine opnieuw en ga verder met de volgende sectie:
 
-   ```bash
+   ```shell
    service nginx restart
    ```
 

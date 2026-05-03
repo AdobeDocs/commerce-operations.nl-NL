@@ -2,7 +2,7 @@
 title: Eenheidstests uitvoeren
 description: Leer hoe u eenheidstests uitvoert die zijn gedefinieerd in de Adobe Commerce-codebase. Ontdek testopdrachten, uitvoeringsopties en resultaatrapportage.
 exl-id: 23200420-d15c-4910-8ce6-abd0cc070777
-source-git-commit: 10f324478e9a5e80fc4d28ce680929687291e990
+source-git-commit: 48624d70761117ed0b9f8a7be913fce0572577b6
 workflow-type: tm+mt
 source-wordcount: '152'
 ht-degree: 0%
@@ -21,7 +21,7 @@ Alvorens u dit bevel in werking stelt, moet het volgende __ waar zijn:
 
 - De module `Magento_Developer` moet zijn ingeschakeld. U kunt deze als volgt inschakelen:
 
-  ```bash
+  ```shell
   bin/magento module:enable [--force] Magento_Developer
   ```
 
@@ -35,24 +35,24 @@ Als u bijvoorbeeld integratietests wilt uitvoeren, moet u `dev/tests/integration
 
 Opdrachtgebruik:
 
-```bash
+```shell
 bin/magento dev:tests:run <test>
 ```
 
 U kunt als volgt de beschikbare testtypen weergeven:
 
-```bash
+```shell
 bin/magento dev:tests:run --help
 ```
 
 Voorbeeld van retournering:
 
-```
+```text
 all, unit, integration, integration-all, static, static-all, integrity, legacy, default
 ```
 
 Bijvoorbeeld om integratietests uit te voeren:
 
-```bash
+```shell
 bin/magento dev:tests:run integration
 ```

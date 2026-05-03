@@ -1,17 +1,17 @@
 ---
 title: Releasebeleid
-description: Meer informatie over de verschillende typen Adobe Commerce-releases.
+description: Leer over de versietypes van Adobe Commerce, marketing tegenover module versioning, flard en veiligheidsversies, bèta's, hotfixes, en het algemene versiebeleid.
 exl-id: 61a83de6-6a7b-4a88-8fff-1638b4fe472a
-source-git-commit: e0905f357c5ab84b30304eeaad00d9ae4ec0c168
+source-git-commit: 41b8d77793f1c24f08ff7e6a2d35826a62477534
 workflow-type: tm+mt
-source-wordcount: '680'
+source-wordcount: '692'
 ht-degree: 0%
 
 ---
 
 # Adobe Commerce-releasebeleid
 
-Adobe Commerce gebruikt [&#x200B; semantische versioning &#x200B;](https://semver.org/) op het individuele moduleniveau (bijvoorbeeld `magento/framework 101.1.1`), maar niet voor het marketing versieaantal. Bijvoorbeeld:
+Adobe Commerce gebruikt [ semantische versioning ](https://semver.org/) op het individuele moduleniveau (bijvoorbeeld `magento/framework 101.1.1`), maar niet voor het marketing versieaantal. Bijvoorbeeld:
 
 - **MAJOR versie** - 2
 - **MINDERE versie** - 2.4
@@ -30,7 +30,7 @@ Adobe Commerce gebruikt [&#x200B; semantische versioning &#x200B;](https://semve
 
 De volgende richtsnoeren zijn van toepassing op kleine introducties:
 
-- Breukwijzigingen zijn mogelijk; code die is geschreven voor Adobe Commerce 2.2.x werkt mogelijk niet meer met Adobe Commerce 2.3.x. Kleine versies kunnen bijvoorbeeld ondersteuning introduceren voor belangrijke systeemvereisten en afhankelijkheden, zoals PHP.
+- Scheidingswijzigingen zijn mogelijk; code geschreven voor Adobe Commerce 2.2.x werkt mogelijk niet meer met Adobe Commerce 2.3.x. Kleine versies kunnen bijvoorbeeld ondersteuning introduceren voor belangrijke systeemvereisten en afhankelijkheden, zoals PHP.
 - De versies van de module kunnen variëren. Sommige modulewijzigingen worden bijvoorbeeld in een nieuwe patch geïntroduceerd, terwijl andere in een kleine release worden geïntroduceerd.
 - De kleine versies kunnen nieuwe eigenschappen omvatten die extra werk door u of uw oplossingspartner tijdens een verbetering kunnen vereisen om verenigbaarheid te verzekeren.
 - Kleine releases kunnen oplossingen voor beveiligings- en kwaliteitsproblemen bevatten.
@@ -43,7 +43,7 @@ De volgende richtlijnen zijn van toepassing op patchreleases:
 
 - De nieuwste, ondersteunde secundaire release ontvangt oplossingen en verbeteringen voor volledige functionele kwaliteit.
 - Wijzigingen die extensies of compatibiliteit met code kunnen onderbreken, worden vermeden. Code die is geschreven voor versie 2.2.0 werkt bijvoorbeeld nog steeds op versie 2.2.7.
-- Bij wijze van uitzondering kunnen verbreken van wijzigingen of extra patches of hotfixes worden vrijgegeven om beveiligings- of nalevingsproblemen en kwaliteitsproblemen met een hoog effect aan te pakken. Op moduleniveau zijn deze wijzigingen meestal op PATCH-niveau; soms op MINOR-niveau.
+- Bij wijze van uitzondering kunnen verbreken van wijzigingen of extra patches of hotfixes worden vrijgegeven om beveiligings- of nalevingsproblemen en kwaliteitsproblemen met een hoog effect aan te pakken. Op moduleniveau zijn deze wijzigingen meestal op PATCH-niveau; soms van mindere kwaliteit.
 
 ### VEILIGHEIDSpatchrelease
 
@@ -63,7 +63,7 @@ Beta-releases kunnen defecten bevatten en worden geleverd als &quot;AS IS&quot; 
 
 ## Hotfix
 
-Hotfixes zijn flarden die high-impact veiligheid of kwaliteitsmoeilijke situaties, zoals moeilijke situaties aan nul-dag kwetsbaarheid bevatten, die vele verkopers beïnvloeden. Adobe brengt hotfixes (indien nodig) voor ondersteunde Adobe Commerce-versies uit wanneer deze van invloed zijn op kritieke beveiligings- of kwaliteitsproblemen. Hotfixes worden geleverd door het [&#x200B; Hulpmiddel van de Patches van de Kwaliteit &#x200B;](../tools/quality-patches-tool/usage.md). Deze correcties zijn opgenomen in de volgende geplande patchrelease.
+Hotfixes zijn flarden die high-impact veiligheid of kwaliteitsmoeilijke situaties, zoals moeilijke situaties aan nul-dag kwetsbaarheid bevatten, die vele verkopers beïnvloeden. Adobe brengt hotfixes (indien nodig) voor ondersteunde Adobe Commerce-versies uit wanneer deze van invloed zijn op kritieke beveiligings- of kwaliteitsproblemen. Hotfixes worden geleverd door het [ Hulpmiddel van de Patches van de Kwaliteit ](../tools/quality-patches-tool/usage.md). Deze correcties zijn opgenomen in de volgende geplande patchrelease.
 
 >[!NOTE]
 >
@@ -71,7 +71,7 @@ Hotfixes zijn flarden die high-impact veiligheid of kwaliteitsmoeilijke situatie
 
 ## Individuele patch
 
-Afzonderlijke patches bevatten oplossingen voor een bepaalde kwestie met een lage-effectkwaliteit. Deze correcties worden toegepast op de ondersteunde kleine versies van Adobe Commerce. Adobe geeft individuele flarden zoals nodig voor Adobe Commerce in overeenstemming met het [&#x200B; Beleid van de Levenscyclus van de Software &#x200B;](https://www.adobe.com/content/dam/cc/en/legal/terms/enterprise/pdfs/Adobe-Commerce-Software-Lifecycle-Policy.pdf) vrij. Zij worden geleverd door het [&#x200B; Hulpmiddel van de Patches van de Kwaliteit &#x200B;](../tools/quality-patches-tool/usage.md).
+Afzonderlijke patches bevatten oplossingen voor een bepaalde kwestie met een lage-effectkwaliteit. Deze correcties worden toegepast op de ondersteunde kleine versies van Adobe Commerce. Adobe geeft individuele flarden zoals nodig voor Adobe Commerce in overeenstemming met het [ Beleid van de Levenscyclus van de Software ](https://www.adobe.com/content/dam/cc/en/legal/terms/enterprise/pdfs/Adobe-Commerce-Software-Lifecycle-Policy.pdf) vrij. Zij worden geleverd door het [ Hulpmiddel van de Patches van de Kwaliteit ](../tools/quality-patches-tool/usage.md).
 
 >[!NOTE]
 >

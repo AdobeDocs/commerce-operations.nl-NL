@@ -3,49 +3,49 @@ title: Beveiliging van installatie op locatie
 description: Meer informatie over manieren om de beveiligingspositie van uw Adobe Commerce-installatie op locatie te verbeteren.
 feature: Install, Security
 exl-id: 56724a72-c64d-44d4-a886-90d97ae5fb6d
-source-git-commit: ddf988826c29b4ebf054a4d4fb5f4c285662ef4e
+source-git-commit: 48624d70761117ed0b9f8a7be913fce0572577b6
 workflow-type: tm+mt
-source-wordcount: '302'
+source-wordcount: '339'
 ht-degree: 0%
 
 ---
 
 # Beveiliging van installatie op locatie
 
-[&#x200B; Veiligheid Verbeterde Linux (SELinux) &#x200B;](https://selinuxproject.org/page/Main_Page) laat CentOS en de beheerders van Ubuntu grotere toegangsbeheer over hun servers toe. Als u SELinux *en* Apache gebruikt moet een verbinding aan een andere gastheer in werking stellen, moet u de bevelen in werking stellen die in deze sectie worden besproken.
+[ Veiligheid Verbeterde Linux (SELinux) ](https://selinuxproject.org/page/Main_Page) laat CentOS en de beheerders van Ubuntu grotere toegangsbeheer over hun servers toe. Als u SELinux *en* Apache gebruikt moet een verbinding aan een andere gastheer in werking stellen, moet u de bevelen in werking stellen die in deze sectie worden besproken.
 
 >[!NOTE]
 >
->Adobe heeft geen aanbeveling voor het gebruik van SELinux. U kunt het desgewenst gebruiken voor uitgebreide beveiliging. Als u SELinux gebruikt, moet u het op de juiste wijze configureren of kan de Adobe Commerce onvoorspelbaar werken. Als u verkiest om SELinux te gebruiken, raadpleeg een middel zoals de [&#x200B; wiki CentOS &#x200B;](https://wiki.centos.org/HowTos/SELinux) aan opstellingsregels om mededeling toe te laten.
+>Adobe heeft geen aanbeveling over het gebruik van SELinux. U kunt deze desgewenst gebruiken voor uitgebreide beveiliging. Als u SELinux gebruikt, moet u het op de juiste wijze configureren of kan de Adobe Commerce onvoorspelbaar werken. Als u verkiest om SELinux te gebruiken, raadpleeg een middel zoals de [ wiki CentOS ](https://wiki.centos.org/HowTos/SELinux) aan opstellingsregels om mededeling toe te laten.
 
 ## Suggesties voor installatie met Apache
 
 Als u verkiest om SELinux toe te laten, zou u kwesties kunnen hebben die het installatieprogramma in werking stellen tenzij u de *veiligheidscontext* van sommige folders als volgt verandert:
 
-```bash
+```shell
 chcon -R --type httpd_sys_rw_content_t <magento_root>/app/etc
 ```
 
-```bash
+```shell
 chcon -R --type httpd_sys_rw_content_t <magento_root>/var
 ```
 
-```bash
+```shell
 chcon -R --type httpd_sys_rw_content_t <magento_root>/pub/media
 ```
 
-```bash
+```shell
 chcon -R --type httpd_sys_rw_content_t <magento_root>/pub/static
 ```
 
-```bash
+```shell
 chcon -R --type httpd_sys_rw_content_t <magento_root>/generated
 ```
 
 De voorgaande opdrachten werken alleen met de Apache-webserver. Wegens de verscheidenheid van configuraties en veiligheidsvereisten, waarborgen wij deze bevelen werk in alle situaties niet. Zie voor meer informatie:
 
-* [&#x200B; man pagina &#x200B;](https://linux.die.net/man/8/httpd_selinux)
-* [&#x200B; Laboratorium van de Server &#x200B;](https://www.serverlab.ca/tutorials/linux/web-servers-linux/configuring-selinux-policies-for-apache-web-servers/)
+* [man page](https://linux.die.net/man/8/httpd_selinux)
+* [Server Lab](https://www.serverlab.ca/tutorials/linux/web-servers-linux/configuring-selinux-policies-for-apache-web-servers/)
 
 ## Communicatie tussen servers inschakelen
 
@@ -54,7 +54,7 @@ Om Apache in staat te stellen een verbinding met een andere gastheer met toegela
 
 1. Gebruik de volgende opdracht om te bepalen of SELinux is ingeschakeld:
 
-   ```bash
+   ```shell
    getenforce
    ```
 
@@ -67,5 +67,5 @@ Om Apache in staat te stellen een verbinding met een andere gastheer met toegela
 
 Afhankelijk van uw veiligheidsvereisten, zou u het noodzakelijk kunnen vinden om haven 80 en andere havens in uw firewall te openen. Vanwege de gevoelige aard van netwerkbeveiliging raadt Adobe u ten zeerste aan uw IT-afdeling te raadplegen voordat u verdergaat. Hier volgen enkele suggesties voor verwijzingen:
 
-* Ubuntu: [&#x200B; de documentatiepagina van Ubuntu &#x200B;](https://help.ubuntu.com/community/IptablesHowTo)
-* CentOS: [&#x200B; CentOS hoe-aan &#x200B;](https://wiki.centos.org/HowTos%282f%29Network%282f%29IPTables.html).
+* Ubuntu: [ de documentatiepagina van Ubuntu ](https://help.ubuntu.com/community/IptablesHowTo)
+* CentOS: [ CentOS hoe-aan ](https://wiki.centos.org/HowTos%282f%29Network%282f%29IPTables.html).

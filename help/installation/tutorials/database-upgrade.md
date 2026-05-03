@@ -2,7 +2,7 @@
 title: Het databaseschema en de gegevens bijwerken
 description: Voer de volgende stappen uit om uw Adobe Commerce-databaseschema bij te werken.
 exl-id: bef04561-6c6b-4636-a8ab-a1ade44f5a8f
-source-git-commit: ddf988826c29b4ebf054a4d4fb5f4c285662ef4e
+source-git-commit: 48624d70761117ed0b9f8a7be913fce0572577b6
 workflow-type: tm+mt
 source-wordcount: '169'
 ht-degree: 0%
@@ -11,7 +11,7 @@ ht-degree: 0%
 
 # Het databaseschema en de gegevens bijwerken
 
-Alvorens u dit bevel gebruikt, moet u [&#x200B; de toepassing &#x200B;](../advanced.md) installeren.
+Alvorens u dit bevel gebruikt, moet u [ de toepassing ](../advanced.md) installeren.
 
 ## Het databaseschema en de gegevens bijwerken
 
@@ -23,18 +23,18 @@ Telkens wanneer u een actie uitvoert die het gegevensbestandschema of de gegeven
 
 >[!NOTE]
 >
->A *component* kan een module, een thema, of taalpak zijn; het maakt niet uit of de component uit Commerce Marketplace of niet komt.
+>A *component* kan een module, een thema, of taalpak zijn; Het maakt niet uit of de component uit de Commerce Marketplace komt of niet.
 
 1. Start de upgrade:
 
-   ```bash
+   ```shell
    bin/magento setup:upgrade [--keep-generated]
    ```
 
-   Waar `--keep-generated` een facultatief argument is dat niet [&#x200B; statische meningsdossiers &#x200B;](../../configuration/cli/static-view-file-deployment.md) bijwerkt. Dit facultatieve argument is voor gebruik *slechts* in beperkte omstandigheden door ervaren systeemintegrators. Het zou *slechts* op [&#x200B; productiemodus &#x200B;](../../configuration/bootstrap/application-modes.md#production-mode) moeten worden gebruikt. Het zou ** niet moeten worden gebruikt op [&#x200B; ontwikkelaarwijze &#x200B;](../../configuration/bootstrap/application-modes.md#developer-mode).
+   Waar `--keep-generated` een facultatief argument is dat niet [ statische meningsdossiers ](../../configuration/cli/static-view-file-deployment.md) bijwerkt. Dit facultatieve argument is voor gebruik *slechts* in beperkte omstandigheden door ervaren systeemintegrators. Het zou *slechts* op [ productiemodus ](../../configuration/bootstrap/application-modes.md#production-mode) moeten worden gebruikt. Het zou ** niet moeten worden gebruikt op [ ontwikkelaarwijze ](../../configuration/bootstrap/application-modes.md#developer-mode).
 
 1. De cache reinigen:
 
-   ```bash
+   ```shell
    bin/magento cache:clean
    ```

@@ -2,9 +2,9 @@
 title: Snelle start van de installatie op locatie
 description: Leer hoe u Adobe Commerce met Composer op uw eigen infrastructuur installeert. Ontdek de snelstartstappen en configuratievereisten.
 exl-id: a93476e8-2b30-461a-91df-e73eb1a14d3c
-source-git-commit: 0532977ff0aeb5d221b1901d73a374cadf95f83b
+source-git-commit: 48624d70761117ed0b9f8a7be913fce0572577b6
 workflow-type: tm+mt
-source-wordcount: '964'
+source-wordcount: '1003'
 ht-degree: 0%
 
 ---
@@ -13,29 +13,29 @@ ht-degree: 0%
 
 In de instructies op deze pagina wordt beschreven hoe u Adobe Commerce op zelfgehoste infrastructuur kunt installeren. Voor begeleiding bij de bevordering van een bestaande installatie, zie de [_Gids van de Verbetering_](../upgrade/overview.md).
 
-Adobe gebruikt [&#x200B; Composer &#x200B;](https://getcomposer.org/) om de componenten van Adobe Commerce en hun gebiedsdelen te beheren. Het gebruik van Composer voor het ophalen van het Adobe Commerce-pakket biedt de volgende voordelen:
+Adobe gebruikt [ Composer ](https://getcomposer.org/) om de componenten van Adobe Commerce en hun gebiedsdelen te beheren. Het gebruik van Composer voor het ophalen van het Adobe Commerce-pakket biedt de volgende voordelen:
 
 - Bibliotheken van derden opnieuw gebruiken zonder deze te bundelen met broncode
 - Verminder uitbreidingsconflicten en compatibiliteitskwesties door een op componenten-gebaseerde architectuur met robuust gebiedsbeheer te gebruiken
-- Adhere aan [&#x200B; PHP-Kader de Groep van de Interoperabiliteit (FIG) &#x200B;](https://www.php-fig.org/) normen
+- Adhere aan [ PHP-Kader de Groep van de Interoperabiliteit (FIG) ](https://www.php-fig.org/) normen
 - Magento Open Source opnieuw verpakken met andere componenten
 - De Adobe Commerce-software gebruiken in een productieomgeving
 
 >[!NOTE]
 >
->De ontwikkelaars die tot Magento Open Source bijdragen zouden de [&#x200B; op git-Gebaseerde &#x200B;](https://developer.adobe.com/commerce/contributor/guides/install/) installatiemethode moeten gebruiken.
+>De ontwikkelaars die tot Magento Open Source bijdragen zouden de [ op git-Gebaseerde ](https://developer.adobe.com/commerce/contributor/guides/install/) installatiemethode moeten gebruiken.
 
 ## Vereisten
 
 Voordat u verdergaat, moet u het volgende doen:
 
-- Voltooi alle [&#x200B; in eerste instantie vereiste taken &#x200B;](system-requirements.md).
-- [&#x200B; installeer Composer &#x200B;](https://getcomposer.org/download/).
-- Krijg [&#x200B; authentificatietoetsen &#x200B;](prerequisites/authentication-keys.md) aan de bewaarplaats van de Composer van Adobe Commerce.
+- Voltooi alle [ in eerste instantie vereiste taken ](system-requirements.md).
+- [ installeer Composer ](https://getcomposer.org/download/).
+- Krijg [ authentificatietoetsen ](prerequisites/authentication-keys.md) aan de bewaarplaats van de Composer van Adobe Commerce.
 
 ## Aanmelden als eigenaar van bestandssysteem
 
-Leer over eigendom, toestemmingen, en de eigenaar van het dossiersysteem in het [&#x200B; Overzicht van eigendom en toestemmingenonderwerp &#x200B;](prerequisites/file-system/overview.md).
+Leer over eigendom, toestemmingen, en de eigenaar van het dossiersysteem in het [ Overzicht van eigendom en toestemmingenonderwerp ](prerequisites/file-system/overview.md).
 
 Ga naar de eigenaar van het bestandssysteem:
 
@@ -43,23 +43,23 @@ Ga naar de eigenaar van het bestandssysteem:
 
    Als u bash shell gebruikt, kunt u de volgende syntaxis gebruiken om aan de eigenaar van het dossiersysteem over te schakelen en het bevel tezelfdertijd in te gaan:
 
-   ```bash
+   ```shell
    su <file system owner> -s /bin/bash -c <command>
    ```
 
    Als de eigenaar van het bestandssysteem geen aanmeldingen toestaat, kunt u het volgende doen:
 
-   ```bash
+   ```shell
    sudo -u <file system owner>  <command>
    ```
 
 1. Als u CLI-opdrachten vanuit een willekeurige map wilt uitvoeren, voegt u `<app_root>/bin` toe aan uw systeem `PATH` .
 
-   Omdat de cellen verschillende syntaxis hebben, raadpleeg een verwijzing als [&#x200B; unix.stackexchange.com &#x200B;](https://unix.stackexchange.com/questions/117467/how-to-permanently-set-environmental-variables).
+   Omdat de cellen verschillende syntaxis hebben, raadpleeg een verwijzing als [ unix.stackexchange.com ](https://unix.stackexchange.com/questions/117467/how-to-permanently-set-environmental-variables).
 
    Voorbeeld van bash-shell voor CentOS:
 
-   ```bash
+   ```shell
    export PATH=$PATH:/var/www/html/magento2/bin
    ```
 
@@ -73,37 +73,37 @@ Ga naar de eigenaar van het bestandssysteem:
 
 Zo krijgt u het Adobe Commerce-pakket:
 
-1. Login aan uw toepassingsserver als, of schakelaar aan, de [&#x200B; eigenaar van het dossiersysteem &#x200B;](prerequisites/file-system/overview.md).
+1. Login aan uw toepassingsserver als, of schakelaar aan, de [ eigenaar van het dossiersysteem ](prerequisites/file-system/overview.md).
 1. Wijzig de hoofdmap van de webserver of een map die u hebt geconfigureerd als een virtueel hoofddocument van de host.
 1. Maak een Composer-project met een Commerce-metapakket.
 
    **Magento Open Source**
 
-   ```bash
+   ```shell
    composer create-project --repository-url=https://repo.magento.com/ magento/project-community-edition <install-directory-name>
    ```
 
    **Adobe Commerce**
 
-   ```bash
+   ```shell
    composer create-project --repository-url=https://repo.magento.com/ magento/project-enterprise-edition <install-directory-name>
    ```
 
-   Voer desgevraagd uw verificatietoetsen in. Openbare en privé sleutels worden gecreeerd en gevormd van [&#x200B; Commerce Marketplace - de Sleutels van de Toegang &#x200B;](https://commercemarketplace.adobe.com/customer/account/login/). Kopieer en plak voor de `[!UICONTROL username]` de waarde voor de openbare sleutel. Kopieer en plak voor de `[!UICONTROL password]` de waarde van de persoonlijke sleutel.
+   Voer desgevraagd uw verificatietoetsen in. Openbare en privé sleutels worden gecreeerd en gevormd van [ Commerce Marketplace - de Sleutels van de Toegang ](https://commercemarketplace.adobe.com/customer/account/login/). Kopieer en plak voor de `[!UICONTROL username]` de waarde voor de openbare sleutel. Kopieer en plak voor de `[!UICONTROL password]` de waarde van de persoonlijke sleutel.
 
    >[!NOTE]
    >
-   > Als u een Composer `[auth.json](https://experienceleague.adobe.com/nl/docs/commerce-cloud-service/user-guide/develop/authentication-keys)` -bestand of een omgevingsvariabele gebruikt die is geconfigureerd met de Commerce-verificatietoetsen, wordt u niet gevraagd verificatietoetsen in te voeren.
+   > Als u een Composer `[auth.json](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/develop/authentication-keys)` -bestand of een omgevingsvariabele gebruikt die is geconfigureerd met de Commerce-verificatietoetsen, wordt u niet gevraagd verificatietoetsen in te voeren.
 
-   Als er fouten optreden, zoals `Could not find package...` of `...no matching package found` , controleert u of de opdracht geen typos bevat. Als er nog steeds fouten optreden, kunt u geen Adobe Commerce downloaden. Contact {de Steun van 0} Adobe Commerce [&#x200B; voor hulp.](https://support.magento.com/hc/en-us)
+   Als er fouten optreden, zoals `Could not find package...` of `...no matching package found` , controleert u of de opdracht geen typos bevat. Als er nog steeds fouten optreden, kunt u geen Adobe Commerce downloaden. Contact {de Steun van 0} Adobe Commerce ](https://support.magento.com/hc/en-us) voor hulp.[
 
-   Zie [&#x200B; het Oplossen van problemen &#x200B;](https://support.magento.com/hc/en-us/articles/360033818091) voor hulp met meer fouten.
+   Zie [ het Oplossen van problemen ](https://support.magento.com/hc/en-us/articles/360033818091) voor hulp met meer fouten.
 
 ### Voorbeeld - kleine release
 
 Kleine versies bevatten nieuwe functies, oplossingen voor de kwaliteit en beveiligingsoplossingen. Gebruik Composer om een kleine release op te geven. U kunt bijvoorbeeld als volgt het metapakket Adobe Commerce 2.4.6 opgeven:
 
-```bash
+```shell
 composer create-project --repository-url=https://repo.magento.com/ magento/project-enterprise-edition=2.4.6 <install-directory-name>
 ```
 
@@ -111,7 +111,7 @@ composer create-project --repository-url=https://repo.magento.com/ magento/proje
 
 De flarden van de kwaliteit bevatten hoofdzakelijk functionele _en_ veiligheidsmoeilijke situaties. Soms kunnen ze echter ook nieuwe, achterwaartse compatibele functies bevatten. Gebruik Composer om een kwaliteitspatch te downloaden. U kunt bijvoorbeeld als volgt het metapakket Adobe Commerce 2.4.6 opgeven:
 
-```bash
+```shell
 composer create-project --repository-url=https://repo.magento.com/ magento/project-enterprise-edition=2.4.6 <install-directory-name>
 ```
 
@@ -121,7 +121,7 @@ Beveiligingspatches bevatten alleen beveiligingsoplossingen. Ze zijn ontworpen o
 
 Beveiligingspatches maken gebruik van de naamgevingsconventie van Composer `2.4.6-px` . Gebruik Composer om een patch op te geven. Als u bijvoorbeeld het pakket met Adobe Commerce 2.4.6-p1 wilt downloaden:
 
-```bash
+```shell
 composer create-project --repository-url=https://repo.magento.com/ magento/project-enterprise-edition=2.4.6-p1 <install-directory-name>
 ```
 
@@ -129,7 +129,7 @@ composer create-project --repository-url=https://repo.magento.com/ magento/proje
 
 U moet lees- en schrijfmachtigingen instellen voor de webservergroep voordat u Adobe Commerce installeert. Dit is nodig, zodat de opdrachtregel bestanden naar het bestandssysteem kan schrijven.
 
-```bash
+```shell
 cd /var/www/html/<magento install directory>
 find var generated vendor pub/static pub/media app/etc -type f -exec chmod g+w {} +
 find var generated vendor pub/static pub/media app/etc -type d -exec chmod g+ws {} +
@@ -143,7 +143,7 @@ U moet de opdrachtregel gebruiken om Adobe Commerce te installeren.
 
 In dit voorbeeld wordt ervan uitgegaan dat de installatiemap de naam `magento2ee` heeft, `db-host` zich op dezelfde computer bevindt (`localhost`) en `db-name` , `db-user` en `db-password` alle `magento` zijn:
 
-```bash
+```shell
 bin/magento setup:install \
 --base-url=http://localhost/magento2ee \
 --db-host=localhost \
@@ -172,29 +172,29 @@ bin/magento setup:install \
 
 >[!TIP]
 >
->Voor een volledige beschrijving van CLI installeert opties, zie [&#x200B; de toepassing van de bevellijn &#x200B;](advanced.md) installeren.
+>Voor een volledige beschrijving van CLI installeert opties, zie [ de toepassing van de bevellijn ](advanced.md) installeren.
 
 ## Overzicht van Command
 
 Als u een volledige lijst met opdrachten wilt weergeven, voert u in:
 
-```bash
+```shell
 bin/magento list
 ```
 
 Om hulp voor een bepaald bevel te krijgen, ga binnen:
 
-```bash
+```shell
 bin/magento help <command>
 ```
 
 Bijvoorbeeld:
 
-```bash
+```shell
 bin/magento help setup:install
 ```
 
-```bash
+```shell
 bin/magento help cache:enable
 ```
 
@@ -223,7 +223,7 @@ De volgende argumenten gelden voor alle opdrachten. Deze opdrachten kunnen worde
 | Lange versie | Korte versie | Betekenis |
 |--- |--- |--- |
 | `--help` | `-h` | Krijg hulp voor om het even welk bevel. Bijvoorbeeld `./magento help setup:install` of `./magento help setup:config:set` . |
-| `--quiet` | `-q` | Stille modus; geen uitvoer. |
+| `--quiet` | `-q` | stille modus; geen uitvoer. |
 | `--no-interaction` | `-n` | Geen interactieve vragen. |
 | `--verbose=1,2,3` | `-v, -vv, -vvv` | Verbositeitsniveau. `--verbose=3` of `-vvv` geeft bijvoorbeeld een uitgebreide foutopsporing weer. Dit is de meest uitgebreide uitvoer. De standaardwaarde is `--verbose=1` of `-v` . |
 | `--version` | `-V` | Deze toepassingsversie weergeven |
@@ -232,4 +232,4 @@ De volgende argumenten gelden voor alle opdrachten. Deze opdrachten kunnen worde
 
 >[!NOTE]
 >
->Gefeliciteerd! U hebt de snelle installatie voltooid. Hebt u meer geavanceerde hulp nodig? Controle uit [&#x200B; Geavanceerde installeert &#x200B;](advanced.md) gids.
+>Gefeliciteerd. U hebt de snelle installatie voltooid. Hebt u meer geavanceerde hulp nodig? Controle uit [ Geavanceerde installeert ](advanced.md) gids.

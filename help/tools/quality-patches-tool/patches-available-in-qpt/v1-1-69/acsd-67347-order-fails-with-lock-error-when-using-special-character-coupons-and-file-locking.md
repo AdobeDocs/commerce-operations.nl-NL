@@ -1,16 +1,16 @@
 ---
-title: 'ACSD-67347: bestelling mislukt met de fout ''''Kan geen vergrendeling verkrijgen'''' bij gebruik van couponcodes'
+title: 'ACSD-67347: De volgorde mislukt met de fout ''''Kan geen vergrendeling verkrijgen'''' bij het gebruik van couponcodes'
 description: Pas de ACSD-67347-patch toe op de Adobe Commerce-uitgave waar orders mislukken met de fout ''Kan geen vergrendeling verkrijgen'' wanneer couponcodes speciale tekens bevatten (bijvoorbeeld BIT/123456) en bestandsvergrendeling is ingeschakeld.
 feature: Checkout, Shopping Cart
 role: Admin, Developer
 type: Troubleshooting
-source-git-commit: 1a48428efbb022b53320370f68691eaed44809b3
+exl-id: a439e163-8b09-456c-91bd-6ee67528744e
+source-git-commit: 48624d70761117ed0b9f8a7be913fce0572577b6
 workflow-type: tm+mt
-source-wordcount: '372'
+source-wordcount: '393'
 ht-degree: 0%
 
 ---
-
 
 # ACSD-67347: De orde ontbreekt met *kan geen slot* fout verwerven wanneer het gebruiken van couponcodes
 
@@ -28,7 +28,7 @@ ACSD-67347 flardfixes de kwestie waar de orden met a *ontbreken kan een slot* fo
 
 >[!NOTE]
 >
->De patch kan van toepassing worden op andere versies met nieuwe [!DNL Quality Patches Tool] versies. Om te controleren of de patch compatibel is met uw Adobe Commerce-versie, werkt u het `magento/quality-patches` -pakket bij naar de meest recente versie en controleert u de compatibiliteit op de [[!DNL Quality Patches Tool] : zoek naar patches op de pagina &#x200B;](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html?lang=nl-NL) . Gebruik de patch-id als een zoekwoord om de patch te zoeken.
+>De patch kan van toepassing worden op andere versies met nieuwe [!DNL Quality Patches Tool] versies. Als u wilt controleren of de patch compatibel is met uw Adobe Commerce-versie, werkt u het `magento/quality-patches` -pakket bij naar de meest recente versie en controleert u de compatibiliteit op de [[!DNL Quality Patches Tool] : Zoek naar de pagina van flarden ](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html). Gebruik de patch-id als een zoekwoord om de patch te zoeken.
 
 ## Probleem
 
@@ -39,7 +39,7 @@ De orden ontbreken met *kan geen slot* fout verwerven wanneer de coupons met spe
 1. Installeer 2.4-ontwikkelen.
 1. Stel de vergrendelingsconfiguratie van het bestand in in het `env.php` -bestand:
 
-   ```
+   ```text
    'lock' => [
            'provider' => 'file',
            'config' => [
@@ -48,7 +48,7 @@ De orden ontbreken met *kan geen slot* fout verwerven wanneer de coupons met spe
        ],
    ```
 
-1. Creeer een kartregel met een coupon gebruikend het formaat van de couponcode: *BIT/123456*.
+1. Maak een regel met een winkelwagentje met een coupon in de notatie van de couponcode: *BIT/123456.*
 1. Maak een eenvoudig product.
 1. Voeg het product toe aan het winkelwagentje en pas de couponcode toe.
 1. Ga door met het afrekenen en plaats de bestelling.
@@ -59,9 +59,9 @@ Bestellingen worden correct geplaatst omdat er geen beperkingen zijn voor het ma
 
 <u> Ware resultaten </u>:
 
-De volgorde kan niet worden geplaatst. De volgende fout verschijnt: *kan slot niet verwerven.*
+De volgorde kan niet worden geplaatst. De volgende fout wordt weergegeven: *kan slot niet verwerven.*
 
-```
+```text
 File "/Users/test/sites/test/locks/coupon_code_123/abc" cannot be opened Warning!fopen(/Users/test/sites/test/locks/coupon_code_123/abc): Failed to open stream: No such file or directory
 ```
 
@@ -69,11 +69,11 @@ File "/Users/test/sites/test/locks/coupon_code_123/abc" cannot be opened Warning
 
 Om individuele flarden toe te passen, gebruik de volgende verbindingen afhankelijk van uw plaatsingsmethode:
 
-* Op locatie Adobe Commerce of Magento Open Source: [[!DNL Quality Patches Tool] > Gebruik &#x200B;](/help/tools/quality-patches-tool/usage.md) in de handleiding [!DNL Quality Patches Tool] .
-* Adobe Commerce op wolkeninfrastructuur: [&#x200B; Verbeteringen en Patches > Pas Patches &#x200B;](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html?lang=nl-NL) in Commerce op de gids van de Infrastructuur van de Wolk toe.
+* Adobe Commerce of Magento Open Source ter plaatse: [[!DNL Quality Patches Tool] > Gebruik ](/help/tools/quality-patches-tool/usage.md) in de [!DNL Quality Patches Tool] gids.
+* Adobe Commerce op cloudinfrastructuur: [ Verbeteringen en Patches > pas Patches ](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html) in Commerce op de gids van de Infrastructuur van de Wolk toe.
 
 ## Gerelateerde lezing
 
 Meer informatie over [!DNL Quality Patches Tool] vindt u in:
 
-* [[!DNL Quality Patches Tool]: Een zelfbedieningshulpmiddel voor kwaliteitspatches &#x200B;](/help/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches.md) in de gids van Hulpmiddelen.
+* [[!DNL Quality Patches Tool] : Een zelfbedieningshulpmiddel voor kwaliteitspatches ](/help/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches.md) in de gids van Hulpmiddelen.

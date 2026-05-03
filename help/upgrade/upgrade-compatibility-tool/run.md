@@ -2,9 +2,9 @@
 title: Voer  [!DNL Upgrade Compatibility Tool] in
 description: Volg deze stappen om  [!DNL Upgrade Compatibility Tool]  in een bevel-lijn interface voor uw project van Adobe Commerce in werking te stellen.
 exl-id: ea467a74-18eb-476b-96e2-23f4fc257d73
-source-git-commit: 2d17da1f8cbda1462839ad2fa3ea569833443827
+source-git-commit: f9a135fc63574ccbecd3f564a87fc5c4ac03f009
 workflow-type: tm+mt
-source-wordcount: '1079'
+source-wordcount: '1164'
 ht-degree: 0%
 
 ---
@@ -15,13 +15,13 @@ ht-degree: 0%
 
 Als u wilt beginnen met de [!DNL Upgrade Compatibility Tool] in een opdrachtregelinterface, downloadt u deze via de volgende opdracht:
 
-```bash
+```shell
 composer create-project magento/upgrade-compatibility-tool uct --repository https://repo.magento.com
 ```
 
 U moet mogelijk uitvoerbare machtigingen voor het gereedschap opgeven met de opdracht `chmod` :
 
-```bash
+```shell
 chmod +x ./uct/bin/uct
 ```
 
@@ -29,7 +29,7 @@ chmod +x ./uct/bin/uct
 
 [!DNL Upgrade Compatibility Tool] is een hulpmiddel dat een Adobe Commerce aangepaste instantie tegen een specifieke versie door alle modules controleert te analyseren die in het worden geïnstalleerd. Er wordt een lijst geretourneerd met kritieke problemen, fouten en waarschuwingen die moeten worden opgelost voordat u de upgrade naar de nieuwste versie van Adobe Commerce uitvoert.
 
-Zie dit [&#x200B; videoleerprogramma &#x200B;](https://experienceleague.adobe.com/docs/commerce-learn/tutorials/upgrade/upgrade-compatibility-tool-overview.html?lang=nl-NL) (06 :02) om meer over [!DNL Upgrade Compatibility Tool] te leren.
+Zie dit [ videoleerprogramma ](https://experienceleague.adobe.com/en/docs/commerce-learn/tutorials/extensibility/backend-development/upgrade/upgrade-compatibility-tool-overview) (06 :02) om meer over [!DNL Upgrade Compatibility Tool] te leren.
 
 Beschikbare opdrachten voor de [!DNL Upgrade Compatibility Tool] in een opdrachtregelinterface:
 
@@ -49,7 +49,7 @@ De opdracht `upgrade:check` controleert op kerncodewijzigingen voor die specifie
 
 De opdracht `upgrade:check` is de belangrijkste opdracht voor het uitvoeren van het gereedschap:
 
-```bash
+```shell
 bin/uct upgrade:check <dir>
 ```
 
@@ -59,11 +59,11 @@ Beschikbare opties voor de opdracht `upgrade:check` :
 
 | **Bevel** | **Beschikbare opties** |
 |----------------|-----------------|
-| `upgrade:check` | <ul><li>—help: Geeft alle beschikbare opties.</li><li>—huidige versie: huidige Adobe Commerce-versie. Versie van de Adobe Commerce-installatie wordt gebruikt als deze wordt weggelaten.</li><li>—min-issue-level: U kunt kwesties filtreren volgens het minimumemissieniveau (de standaardwaarde is WAARSCHUWING).</li><li>—ignore-current-version-Compatibility-issues (of -i): Als u geen kritieke kwesties, fouten, en waarschuwingen van de huidige versie in uw rapport wilt omvatten.</li><li>—komende versie (of -c): doel een specifieke Adobe Commerce-versie. Als u deze optie weglaat, wordt de meest recente versie gebruikt.</li></ul> |
+| `upgrade:check` | <ul><li>—help: Retourneert alle beschikbare opties.</li><li>—huidige versie: Huidige Adobe Commerce-versie. Versie van de Adobe Commerce-installatie wordt gebruikt als deze wordt weggelaten.</li><li>—min-issue-level: U kunt problemen filteren op basis van het minimale uitgifteniveau (de standaardwaarde is WAARSCHUWING).</li><li>—ignore-current-version-compatibility-issues (or -i): Als u geen kritieke kwesties, fouten, en waarschuwingen van de huidige versie in uw rapport wilt omvatten.</li><li>—volgende versie (of -c): Geef een specifieke Adobe Commerce-versie op. Als u deze optie weglaat, wordt de meest recente versie gebruikt.</li></ul> |
 
 Met [!DNL Upgrade Compatibility Tool] kunt u de opdracht `upgrade:check` uitvoeren met een optie `--ignore-current-version-compatibility-issues` . Gebruik deze optie als u alleen nieuwe uitgaven wilt ophalen die worden geïntroduceerd met de update van uw huidige versie naar de doelversie in uw [!DNL Upgrade Compatibility Tool] -rapport:
 
-```bash
+```shell
 bin/uct upgrade:check --ignore-current-version-compatibility-issues <dir>
 ```
 
@@ -73,11 +73,11 @@ bin/uct upgrade:check --ignore-current-version-compatibility-issues <dir>
 
 ### De optie `--coming-version` toevoegen
 
-Met de optie `>=2.3` kunt u de huidige Adobe Commerce-installatie vergelijken met elke Adobe Commerce-versie `--coming-version` .
+Met de optie `--coming-version` kunt u de huidige Adobe Commerce-installatie vergelijken met elke Adobe Commerce-versie `>=2.3` .
 
 U moet de versie opgeven als parameter wanneer u de opdracht `upgrade:check` uitvoert:
 
-```bash
+```shell
 bin/uct upgrade:check <dir> -c 2.4.3
 ```
 
@@ -86,26 +86,26 @@ Waar `-c, --coming-version[=COMING-VERSION]` verwijst naar de beoogde Adobe Comm
 Er zijn enkele beperkingen wanneer u `--coming-version` uitvoert:
 
 - Deze parameter verwijst naar elke tag die een specifieke versie van Adobe Commerce identificeert.
-- Het is een vereiste om dit uitdrukkelijk te verstrekken; het verstrekken van slechts de waarde van het werkt niet.
-- Verstrek de markeringsversie zonder enige of dubbele aanhalingstekens (noch enkel noch dubbel): ~~&quot;2.4.1-develop&#39;~~.
+- Het is een vereiste om dit uitdrukkelijk te bepalen; alleen de waarde ervan opgeven werkt niet.
+- Geef de versie van de tag zonder aanhalingstekens op (niet enkele of dubbele aanhalingstekens): ~~&quot;2.4.1-develop&quot;~~.
 - Geef GEEN oudere versies op dan de versie die u momenteel hebt geïnstalleerd, of ouder dan versie 2.3, de oudste versie die op dit moment wordt ondersteund.
 
 ## De opdracht `dbschema:diff` gebruiken
 
 U kunt het verschil tussen het databaseschema van twee Adobe Commerce-versies ophalen.
 
-```bash
+```shell
 bin/uct dbschema:diff <current-version> <target-version>
 ```
 
 Waar de argumenten als volgt zijn:
 
-- `<current-version>`: elke Adobe Commerce-versie die kan worden vergeleken.
-- `<target-version>`: ook elke Adobe Commerce-versie die kan worden vergeleken.
+- `<current-version>` : alle Adobe Commerce-versies ter vergelijking.
+- `<target-version>` : ook om het even welke versie van Adobe Commerce voor vergelijking.
 
 Voorbeeld van uitvoering:
 
-```bash
+```text
 bin/uct dbschema:diff 2.4.3 2.4.3-p3
 
 DB schema differences between versions 2.4.3 and 2.4.3-p3:
@@ -129,24 +129,24 @@ Total detected differences between version 2.4.3 and 2.4.3-p3: 11
 
 U kunt uw huidige Adobe Commerce-installatie vergelijken om te valideren of de kerncode van Adobe Commerce is gewijzigd om een aanpassing te implementeren. Dit bevel toont een lijst van kernwijzigingen slechts:
 
-```bash
+```shell
 bin/uct core:code:changes <dir> <vanilla dir>
 ```
 
 Waar de argumenten als volgt zijn:
 
-- `<dir>`: Adobe Commerce-installatiemap.
-- `<vanilla dir>`: Adobe Commerce vanilla-installatiemap.
+- `<dir>` : Adobe Commerce-installatiemap.
+- `<vanilla dir>` : Adobe Commerce vanilla-installatiemap.
 
 Beschikbare opties voor de opdracht `core:code:changes` :
 
 | **Bevel** | **Beschikbare opties** |
 |----------------|-----------------|
-| `core:code:changes` | `--help`: retourneert alle beschikbare `--help` -opties. |
+| `core:code:changes` | `--help` : Retourneert alle beschikbare `--help` -opties. |
 
 >[!NOTE]
 >
-> Het wordt aanbevolen aangepaste code buiten de kerncode te houden. Zie Adobe Commerce 2.4 [&#x200B; verbeteringsgids &#x200B;](https://experienceleague.adobe.com/docs/commerce-operations/assets/adobe-commerce-2-4-upgrade-guide.pdf?lang=nl-NL) voor meer verbeteringsbeste praktijken.
+> Het wordt aanbevolen aangepaste code buiten de kerncode te houden. Zie Adobe Commerce 2.4 [ verbeteringsgids ](https://experienceleague.adobe.com/docs/commerce-operations/assets/adobe-commerce-2-4-upgrade-guide.pdf) voor meer verbeteringsbeste praktijken.
 
 ### Vanilla-installatie
 
@@ -156,7 +156,7 @@ De opdracht `bin/uct core:code:changes` controleert of er een vanilla-instantie 
 
 U kunt een opdracht [!DNL Upgrade Compatibility Tool] uitvoeren met de optie `--vanilla-dir` om de installatiemap van Adobe Commerce vanilla op te geven.
 
-Zie [&#x200B; opstellen vanilla instantie &#x200B;](https://developer.adobe.com/commerce/contributor/guides/code-contributions#deploy-vanilla-magento-open-source-instance) onderwerp voor meer informatie.
+Zie [ opstellen vanilla instantie ](https://developer.adobe.com/commerce/contributor/guides/install/) onderwerp voor meer informatie.
 
 ## De opdracht `refactor` gebruiken
 
@@ -168,7 +168,7 @@ Met [!DNL Upgrade Compatibility Tool] kunt u automatisch een beperkte set proble
 
 Hiervoor voert u de opdracht `refactor` uit:
 
-```bash
+```shell
 bin/uct refactor <dir>
 ```
 
@@ -178,32 +178,32 @@ Beschikbare opties voor de opdracht `refactor` :
 
 | **Bevel** | **Beschikbare opties** |
 |----------------|-----------------|
-| `refactor` | `--help`: retourneert alle beschikbare `--help` -opties. |
+| `refactor` | `--help` : Retourneert alle beschikbare `--help` -opties. |
 
 ## De opdracht `graphql:compare` gebruiken
 
 Deze opdracht biedt de [!DNL Upgrade Compatibility Tool] de mogelijkheid om twee GraphQL-eindpunten te bekijken en hun schema&#39;s te vergelijken op zoek naar onderbrekingen en gevaarlijke wijzigingen:
 
-```bash
+```shell
 bin/uct graphql:compare <schema1> <schema2>
 ```
 
 Waar de argumenten als volgt zijn:
 
-- `<schema1>`: URL van eindpunt voor de bestaande installatie.
-- `<schema2>`: eindpunt-URL voor de vanilla-installatie.
+- `<schema1>` : Eindpunt-URL voor de bestaande installatie.
+- `<schema2>` : Endpoint URL for the vanilla installation.
 
 Beschikbare opties voor de opdracht `graphql:compare` :
 
 | **Bevel** | **Beschikbare opties** |
 |----------------|-----------------|
-| `graphql:compare` | `--help`: retourneert alle beschikbare `--help` -opties. |
+| `graphql:compare` | `--help` : Retourneert alle beschikbare `--help` -opties. |
 
 ## De opdracht `list` gebruiken
 
 Voer de volgende handelingen uit om een lijst met de [!DNL Upgrade Compatibility Tool] beschikbare opdrachten te retourneren:
 
-```bash
+```shell
 bin/uct list
 ```
 
@@ -211,13 +211,13 @@ bin/uct list
 
 Voer de volgende handelingen uit om de algemene opties en Help van de opdracht [!DNL Upgrade Compatibility Tool] weer te geven:
 
-```bash
+```shell
 bin/uct --help
 ```
 
 Dit retourneert een lijst met alle beschikbare `help` -opties voor de [!DNL Upgrade Compatibility Tool] in een opdrachtregelinterface:
 
-```
+```text
 - --raw             To output raw command list
 - --format=FORMAT   The output format (txt, xml, json, or md) [default: "txt"]
 - --short           To skip describing commands' arguments
@@ -233,13 +233,13 @@ Dit retourneert een lijst met alle beschikbare `help` -opties voor de [!DNL Upgr
 
 Voorbeeld van de optie `upgrade:check` command met `--help` :
 
-```bash
+```shell
 bin/uct upgrade:check --help
 ```
 
 Hiermee worden specifieke opties geretourneerd die voor de opdracht `upgrade:check` kunnen worden uitgevoerd:
 
-```
+```shell
 - -a, --current-version[=CURRENT-VERSION]: Current Adobe Commerce version, version of the Adobe Commerce installation will be used if omitted.
 - -c, --coming-version[=COMING-VERSION]: Target Adobe Commerce version, latest released version of Adobe Commerce will be used if omitted. Provides a list of all available Adobe Commerce versions.
 - --json-output-path[=JSON-OUTPUT-PATH]: Path of the file where the output will be exported in json format.
@@ -258,9 +258,9 @@ Hiermee worden specifieke opties geretourneerd die voor de opdracht `upgrade:che
 ## Aanbevolen procedures voor Adobe Commerce volgen
 
 - Vermijd het gebruik van twee modules met dezelfde naam.
-- Volg Adobe Commerce [&#x200B; coderingsnormen &#x200B;](https://developer.adobe.com/commerce/php/coding-standards).
-- Adobe Commerce 2.4 [&#x200B; de gids van de Verbetering &#x200B;](https://experienceleague.adobe.com/docs/commerce-operations/assets/adobe-commerce-2-4-upgrade-guide.pdf?lang=nl-NL) beste praktijken.
-- Stel [!DNL Upgrade Compatibility Tool] van [[!DNL Site-Wide Analysis Tool] in werking &#x200B;](https://experienceleague.adobe.com/docs/commerce-operations/upgrade-guide/upgrade-compatibility-tool/use-upgrade-compatibility-tool/integrate-analysis-tool.html?lang=nl-NL) voor [&#x200B; Adobe Commerce op de projecten van de wolkeninfrastructuur &#x200B;](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/project/overview.html?lang=nl-NL){target=_blank}.
+- Volg Adobe Commerce [ coderingsnormen ](https://developer.adobe.com/commerce/php/coding-standards).
+- Adobe Commerce 2.4 [ de gids van de Verbetering ](https://experienceleague.adobe.com/docs/commerce-operations/assets/adobe-commerce-2-4-upgrade-guide.pdf) beste praktijken.
+- Stel [!DNL Upgrade Compatibility Tool] van [[!DNL Site-Wide Analysis Tool] in werking ](https://experienceleague.adobe.com/docs/commerce-operations/upgrade-guide/upgrade-compatibility-tool/use-upgrade-compatibility-tool/integrate-analysis-tool.html) voor [ Adobe Commerce op de projecten van de wolkeninfrastructuur ](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/project/overview.html){target=_blank}.
 
 ## De resultaten optimaliseren
 

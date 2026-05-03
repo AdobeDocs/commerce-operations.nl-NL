@@ -2,9 +2,9 @@
 title: Installatie van productiesysteem
 description: Leer hoe u een productiesysteem instelt voor de Commerce-toepassing.
 exl-id: e678e97e-d9f2-4f24-bb6b-1994a2a1167c
-source-git-commit: 95ffff39d82cc9027fa633dffedf15193040802d
+source-git-commit: 48624d70761117ed0b9f8a7be913fce0572577b6
 workflow-type: tm+mt
-source-wordcount: '377'
+source-wordcount: '378'
 ht-degree: 0%
 
 ---
@@ -22,8 +22,8 @@ Je kunt één productiesysteem hebben. Alle volgende waarden moeten waar zijn:
    - `pub/media/wysiwyg` map (en submappen)
    - `pub/static` map (en submappen)
 
-- Commerce 2.2 of later moet worden geïnstalleerd en voor [&#x200B; productiemodus &#x200B;](../bootstrap/application-modes.md#production-mode) worden geplaatst
-- Het heeft bezit van het dossiersysteem en toestemmingen die zoals in [&#x200B; worden besproken Vereiste voor uw ontwikkeling, bouwt, en productiesystemen &#x200B;](../deployment/prerequisites.md).
+- Commerce 2.2 of later moet worden geïnstalleerd en voor [ productiemodus ](../bootstrap/application-modes.md#production-mode) worden geplaatst
+- Het heeft bezit van het dossiersysteem en toestemmingen die zoals in [ worden besproken Vereiste voor uw ontwikkeling, bouwt, en productiesystemen ](../deployment/prerequisites.md).
 
 ## Een productiemachine instellen
 
@@ -34,13 +34,13 @@ Een productiemachine instellen:
 
    Maak de map:
 
-   ```bash
+   ```shell
    mkdir -p ~/.ssh/.composer
    ```
 
    Maak `auth.json` in die map.
 
-   `auth.json` moet uw [&#x200B; authentificatietoetsen &#x200B;](../../installation/prerequisites/authentication-keys.md) bevatten.
+   `auth.json` moet uw [ authentificatietoetsen ](../../installation/prerequisites/authentication-keys.md) bevatten.
 
    Hieronder volgt een monster:
 
@@ -68,25 +68,25 @@ In deze sectie wordt beschreven hoe u met de opdracht `magento config:sensitive:
 
 Om gevoelige waarden in te stellen:
 
-1. Vind een waarde om het gebruiken van de [&#x200B; gevoelige waardeverwijzing &#x200B;](../reference/config-reference-sens.md) te plaatsen.
+1. Vind een waarde om het gebruiken van de [ gevoelige waardeverwijzing ](../reference/config-reference-sens.md) te plaatsen.
 1. Noteer het configuratiepad voor de instelling.
 1. Meld u aan bij het productiesysteem als of schakel over naar de eigenaar van het bestandssysteem.
 1. Ga naar de Commerce-installatiemap.
 1. Voer de volgende opdracht in:
 
-   ```bash
+   ```shell
    bin/magento config:sensitive:set {configuration path} {value}
    ```
 
    Als u bijvoorbeeld de waarde van de YouTube API-sleutel wilt instellen op `1234` , voert u
 
-   ```bash
+   ```shell
    bin/magento config:sensitive:set catalog/product_video/youtube_api_key 1234
    ```
 
    U kunt ook als volgt een of meer waarden interactief instellen:
 
-   ```bash
+   ```shell
    bin/magento config:sensitive:set -i
    ```
 
@@ -99,4 +99,4 @@ Om gevoelige waarden in te stellen:
 
    De instelling wordt weergegeven in Beheer en kan niet worden bewerkt. In de volgende afbeelding ziet u een voorbeeld.
 
-   ![&#x200B; Gevoelige het plaatsen in Admin &#x200B;](../../assets/configuration/sensitive-set.png)
+   ![ Gevoelige het plaatsen in Admin ](../../assets/configuration/sensitive-set.png)

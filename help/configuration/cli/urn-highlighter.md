@@ -2,9 +2,9 @@
 title: URN-markering
 description: Leer hoe u URL-markering kunt instellen in uw IDE for Adobe Commerce-ontwikkeling. Ontdek de configuratie en optimalisering van het XSD-schema.
 exl-id: 6389ab58-af70-4b33-800e-be3191c5a4cc
-source-git-commit: 10f324478e9a5e80fc4d28ce680929687291e990
+source-git-commit: 48624d70761117ed0b9f8a7be913fce0572577b6
 workflow-type: tm+mt
-source-wordcount: '187'
+source-wordcount: '191'
 ht-degree: 0%
 
 ---
@@ -13,19 +13,19 @@ ht-degree: 0%
 
 {{file-system-owner}}
 
-De codeverwijzingen van Commerce alle XSD schema&#39;s als [&#x200B; Uniform Namen van het Middel (URNs) &#x200B;](https://www.ietf.org/rfc/rfc2141.txt). Als u code ontwikkelt en XSDs moet van verwijzingen voorzien, vormt dit bevel uw geïntegreerde ontwikkelaarmilieu (winde) om URNs te erkennen en te benadrukken. Dit maakt ontwikkeling gemakkelijker.
+De codeverwijzingen van Commerce alle XSD schema&#39;s als [ Uniform Namen van het Middel (URNs) ](https://www.ietf.org/rfc/rfc2141.txt). Als u code ontwikkelt en XSDs moet van verwijzingen voorzien, vormt dit bevel uw geïntegreerde ontwikkelaarmilieu (winde) om URNs te erkennen en te benadrukken. Dit maakt ontwikkeling gemakkelijker.
 
 Door gebrek, wordt IDE als PhpStorm niet gevormd om URNs te erkennen en, dientengevolge, tonen zij als volgt in rode tekst:
 
-![&#x200B; PhpStorm niet gevormd om URN &#x200B;](../../assets/configuration/urn-before.png) te erkennen
+![ PhpStorm niet gevormd om URN ](../../assets/configuration/urn-before.png) te erkennen
 
 Het `bin/magento dev:urn-catalog:generate` bevel laat uw winde (momenteel, slechts PhpStorm en de Code van Visual Studio) toe om URNs als het volgende te erkennen en te benadrukken:
 
-![&#x200B; laat winde toe om URN &#x200B;](../../assets/configuration/urn-after.png) te erkennen
+![ laat winde toe om URN ](../../assets/configuration/urn-after.png) te erkennen
 
 Specifiek, leidt dit bevel tot de volgende configuratie PhpStorm:
 
-![&#x200B; PhpStorm configuratievoorbeeld &#x200B;](../../assets/configuration/urn-settings.png)
+![ PhpStorm configuratievoorbeeld ](../../assets/configuration/urn-settings.png)
 
 ## Vorm uw winde
 
@@ -33,7 +33,7 @@ Momenteel, slechts worden PhpStorm en de Code van Visual Studio gesteund.
 
 Command syntaxis:
 
-```bash
+```shell
 bin/magento dev:urn-catalog:generate <path>
 ```
 

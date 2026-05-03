@@ -3,20 +3,20 @@ title: Externe opslag voor Commerce op cloudinfrastructuur
 description: Zie de richtlijnen voor het instellen van externe opslag voor Adobe Commerce op cloudinfrastructuur.
 feature: Configuration, Cloud, Storage
 exl-id: da352466-13f2-42e4-a589-3b0a89728467
-source-git-commit: af45ac46afffeef5cd613628b2a98864fd7da69b
+source-git-commit: 48624d70761117ed0b9f8a7be913fce0572577b6
 workflow-type: tm+mt
-source-wordcount: '579'
+source-wordcount: '667'
 ht-degree: 0%
 
 ---
 
 # Externe opslag voor Commerce configureren op Cloud-infrastructuur
 
-Beginnend met het `ece-tools` pakket 2002.1.5, kunt u een omgevingsvariabele gebruiken om de Verre module van de Opslag toe te laten; nochtans, heeft de Verre module van de Opslag _beperkte_ steun op Adobe Commerce op wolkeninfrastructuur. Adobe kan de service voor opslagadapters van derden niet volledig oplossen.
+Vanaf `ece-tools` package 2002.1.5 kunt u een omgevingsvariabele gebruiken om de externe opslagmodule in te schakelen. nochtans, heeft de Verre module van de Opslag _beperkte_ steun op Adobe Commerce op wolkeninfrastructuur. Adobe kan de service voor opslagadapters van derden niet volledig oplossen.
 
 ## Omgevingsvariabele
 
-De `REMOTE_STORAGE` variabele wordt gebruikt tijdens [&#x200B; stelt fase &#x200B;](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/deploy/process.html?lang=nl-NL) van een project van de wolkeninfrastructuur op.
+De `REMOTE_STORAGE` variabele wordt gebruikt tijdens [ stelt fase ](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/deploy/process.html) van een project van de wolkeninfrastructuur op.
 
 ### `REMOTE_STORAGE`
 
@@ -40,11 +40,11 @@ stage:
 
 ### Variabele instellen met Cloud CLI
 
-Plaats de `REMOTE_STORAGE` variabele als [&#x200B; milieu-vlakke veranderlijke &#x200B;](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure/env/variable-levels.html?lang=nl-NL) zodat de dossiers niet tussen de Productie, het Opvoeren, en milieu&#39;s van de Integratie worden gedeeld. Door de variabelen op het niveau van de omgeving in te stellen, hebt u de flexibiliteit om alleen externe opslag te gebruiken in bepaalde omgevingen, zoals het gebruik van externe opslag in de integratieomgeving.
+Plaats de `REMOTE_STORAGE` variabele als [ milieu-vlakke veranderlijke ](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure/env/variable-levels.html) zodat de dossiers niet tussen de Productie, het Opvoeren, en milieu&#39;s van de Integratie worden gedeeld. Door de variabelen op het niveau van de omgeving in te stellen, hebt u de flexibiliteit om alleen externe opslag te gebruiken in bepaalde omgevingen, zoals het gebruik van externe opslag in de integratieomgeving.
 
 **om de verre opslagvariabele toe te voegen gebruikend Cloud CLI**:
 
-```bash
+```shell
 magento-cloud variable:create --level environment --name REMOTE_STORAGE --json true --inheritable false --value '{"driver":"aws-s3","prefix":"uat","config":{"bucket":"aws-bucket-id","region":"eu-west-1","key":"optional-key","secret":"optional-secret"}}'
 ```
 
@@ -83,13 +83,13 @@ Alternatief, kunt u de Interface van het Web van het Project gebruiken om de var
 
 1. Op het _gebied van de Waarde_, voeg de configuratie JSON toe.
 
-1. Selecteer **waarde JSON** en **Gevoelig**; schrap **Inheritable door kindmilieu&#39;s**.
+1. Selecteer **waarde JSON** en **Gevoelig**; schrap **Overerving door kindmilieu&#39;s**.
 
 1. Klik **toevoegen Variabele**.
 
 ### Optionele verificatie gebruiken
 
-`key` en `secret` zijn optioneel. Wanneer u de variabele maakt, kunt u de opties `key` en `secret` verbergen door de optie `sensitive` te selecteren. Met deze instelling zijn de waarden niet zichtbaar in de webinterface. Zie [&#x200B; Variabele zicht &#x200B;](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure/env/variable-levels.html?lang=nl-NL#visibility) in _Commerce op de gids van de Infrastructuur van de Wolk_.
+`key` en `secret` zijn optioneel. Wanneer u de variabele maakt, kunt u de opties `key` en `secret` verbergen door de optie `sensitive` te selecteren. Met deze instelling zijn de waarden niet zichtbaar in de webinterface. Zie [ Variabele zicht ](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure/env/variable-levels.html#visibility) in _Commerce op de gids van de Infrastructuur van de Wolk_.
 
 Als u een andere verificatiemethode wilt gebruiken, laat u `key` en `secret` weg uit de JSON-configuratie. Vorm de alternatieve authentificatiemethode, en verifieer dat de server aan het S3 emmertje wordt gemachtigd.
 
@@ -103,20 +103,20 @@ Nadat u de externe opslagmodule hebt ingeschakeld, synchroniseert u de huidige m
 
 1. Start de synchronisatie.
 
-```bash
+```shell
 bin/magento remote-storage:sync 
 ```
 
 ## Snelle configuratie
 
-Als u verkiest om de verre opslagoplossing met een Adobe Commerce op het project van de wolkeninfrastructuur te gebruiken, gebruik [&#x200B; Amazon S3 &#x200B;](https://docs.fastly.com/en/guides/amazon-s3) begeleiding in de _snelst_ documentatie om ervoor te zorgen dat de Snelle Optimalisering van het Beeld met AWS S3 werkt.
+Als u verkiest om de verre opslagoplossing met een Adobe Commerce op het project van de wolkeninfrastructuur te gebruiken, gebruik [ Amazon S3 ](https://docs.fastly.com/en/guides/amazon-s3) begeleiding in de _snelst_ documentatie om ervoor te zorgen dat de Snelle Optimalisering van het Beeld met AWS S3 werkt.
 
-Ben voorbereid met uw [&#x200B; Snelle geloofsbrieven &#x200B;](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/cdn/setup-fastly/fastly-configuration.html?lang=nl-NL#get-fastly-credentials). Bij Pro-projecten gebruikt u SSH om verbinding te maken met uw server en de snelste referenties van het `/mnt/shared/fastly_tokens.txt` -bestand op te halen. Staging- en productieomgevingen hebben unieke gegevens. U moet de geloofsbrieven voor elke milieu krijgen.
+Ben voorbereid met uw [ Snelle geloofsbrieven ](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/cdn/setup-fastly/fastly-configuration.html#get-fastly-credentials). Bij Pro-projecten gebruikt u SSH om verbinding te maken met uw server en de snelste referenties van het `/mnt/shared/fastly_tokens.txt` -bestand op te halen. Staging- en productieomgevingen hebben unieke gegevens. U moet de geloofsbrieven voor elke milieu krijgen.
 
 De externe opslag voor cloudprojecten blijven instellen met de volgende taken:
 
-1. Vorm de integratie van de a [&#x200B; snel steunen &#x200B;](https://github.com/fastly/fastly-magento2/blob/master/Documentation/Guides/Edge-Modules/EDGE-MODULE-OTHER-CMS-INTEGRATION.md).
+1. Vorm de integratie van de a [ snel steunen ](https://github.com/fastly/fastly-magento2/blob/master/Documentation/Guides/Edge-Modules/EDGE-MODULE-OTHER-CMS-INTEGRATION.md).
 
-1. Creeer logica VCL voor [&#x200B; de authentificatie van AWS S3 &#x200B;](https://docs.fastly.com/en/guides/amazon-s3#using-an-amazon-s3-private-bucket).
+1. Creeer logica VCL voor [ de authentificatie van AWS S3 ](https://docs.fastly.com/en/guides/amazon-s3#using-an-amazon-s3-private-bucket).
 
-1. Creeer logica VCL voor [&#x200B; achterste verzoeken aan het emmertje van AWS S3 &#x200B;](https://developer.fastly.com/reference/vcl/variables/backend-connection/req-backend/).
+1. Creeer logica VCL voor [ achterste verzoeken aan het emmertje van AWS S3 ](https://developer.fastly.com/reference/vcl/variables/backend-connection/req-backend/).

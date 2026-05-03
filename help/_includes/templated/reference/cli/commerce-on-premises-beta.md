@@ -1,7 +1,7 @@
 ---
-source-git-commit: 7054a5286f01e26e324401f4d8505e4e0faed93e
+source-git-commit: ef3abc83e2c699ebfbb53ad367aaceb9ecb92491
 workflow-type: tm+mt
-source-wordcount: '9178'
+source-wordcount: '9249'
 ht-degree: 0%
 
 ---
@@ -20,13 +20,13 @@ De eerste lijst wordt automatisch gegenereerd met de opdracht `bin/magento list`
 
 ## Algemeen
 
-Gebruik [&#x200B; &quot;voeg CLI bevelen&quot;](https://developer.adobe.com/commerce/php/development/cli-commands/) gids toe om een douanebevel CLI toe te voegen.
+Gebruik [ &quot;voeg CLI bevelen&quot;](https://developer.adobe.com/commerce/php/development/cli-commands/) gids toe om een douanebevel CLI toe te voegen.
 
-U kunt `bin/magento` CLI bevelen roepen gebruikend kortere weg in plaats van de volledige bevelnaam. U kunt bijvoorbeeld `bin/magento setup:upgrade` aanroepen met `bin/magento s:up` , `bin/magento s:upg` . Zie [&#x200B; kortere wegsyntaxis &#x200B;](https://symfony.com/doc/current/components/console/usage.html#shortcut-syntax) om te begrijpen hoe te om kortere weg met om het even welk bevel te gebruiken CLI.
+U kunt `bin/magento` CLI bevelen roepen gebruikend kortere weg in plaats van de volledige bevelnaam. U kunt bijvoorbeeld `bin/magento setup:upgrade` aanroepen met `bin/magento s:up` , `bin/magento s:upg` . Zie [ kortere wegsyntaxis ](https://symfony.com/doc/current/components/console/usage.html#shortcut-syntax) om te begrijpen hoe te om kortere weg met om het even welk bevel te gebruiken CLI.
 
 Deze referentiedocumentatie wordt geproduceerd van de code van de toepassingsbron. Als u de documentatie wilt wijzigen, opent u
-een trekkingsverzoek voor het overeenkomstige bevel in de relevante [&#x200B; codebase &#x200B;](https://github.com/magento) bewaarplaats. Zie
-[&#x200B; de Bijdragen van de Code &#x200B;](https://developer.adobe.com/commerce/contributor/guides/code-contributions/) voor meer informatie.
+een trekkingsverzoek voor het overeenkomstige bevel in de relevante [ codebase ](https://github.com/magento) bewaarplaats. Zie
+[ de Bijdragen van de Code ](https://developer.adobe.com/commerce/contributor/guides/code-contributions/) voor meer informatie.
 
 ### Algemene opties
 
@@ -53,7 +53,7 @@ Alleen fouten worden weergegeven. Alle andere uitvoer wordt onderdrukt
 
 #### `--verbose`, `-v|-vv|-vvv`
 
-Verhoog de breedheid van berichten: 1 voor normale output, 2 voor meer uitgebreide output en 3 voor zuivert
+Verhoog de breedheid van berichten: 1 voor normale output, 2 voor meer uitgebreide output en 3 voor zuiveren
 
 - Standaard: `false`
 - Accepteert geen waarde
@@ -87,7 +87,7 @@ Geen interactieve vraag stellen
 
 ## `_complete`
 
-```bash
+```shell
 bin/magento _complete [-s|--shell SHELL] [-i|--input INPUT] [-c|--current CURRENT] [-a|--api-version API-VERSION] [-S|--symfony SYMFONY]
 ```
 
@@ -95,7 +95,7 @@ Interne opdracht voor suggesties voor shell-voltooiing
 
 ### Opties
 
-Voor globale opties, zie [&#x200B; Globale opties &#x200B;](#global-options).
+Voor globale opties, zie [ Globale opties ](#global-options).
 
 #### `--shell`, `-s`
 
@@ -131,13 +131,13 @@ verouderd
 
 ## `completion`
 
-```bash
+```shell
 bin/magento completion [--debug] [--] [<shell>]
 ```
 
 Het shell-voltooiingsscript dumpen
 
-```
+```text
 The completion command dumps the shell completion script required
 to use shell autocompletion (currently, bash, fish, zsh completion are supported).
 
@@ -170,11 +170,11 @@ Add this to the end of your shell configuration file (e.g. "~/.bashrc"):
 
 #### `shell`
 
-Het shell type (bijvoorbeeld &quot;bash&quot;), de waarde van &quot;$SHELL&quot; env var zal worden gebruikt als dit niet wordt gegeven
+Het shell-type (bijvoorbeeld &quot;bash&quot;), wordt de waarde van &quot;$SHELL&quot; env var gebruikt als dit niet wordt gegeven
 
 ### Opties
 
-Voor globale opties, zie [&#x200B; Globale opties &#x200B;](#global-options).
+Voor globale opties, zie [ Globale opties ](#global-options).
 
 #### `--debug`
 
@@ -186,13 +186,13 @@ Tik op het logbestand voor foutopsporing bij voltooien
 
 ## `help`
 
-```bash
+```shell
 bin/magento help [--format FORMAT] [--raw] [--] [<command_name>]
 ```
 
 Help weergeven voor een opdracht
 
-```
+```text
 The help command displays help for a given command:
 
   bin/magento help list
@@ -214,7 +214,7 @@ De opdrachtnaam
 
 ### Opties
 
-Voor globale opties, zie [&#x200B; Globale opties &#x200B;](#global-options).
+Voor globale opties, zie [ Globale opties ](#global-options).
 
 #### `--format`
 
@@ -233,13 +233,13 @@ Help bij de opdracht Uitvoeren
 
 ## `list`
 
-```bash
+```shell
 bin/magento list [--raw] [--format FORMAT] [--short] [--] [<namespace>]
 ```
 
 Lijstopdrachten
 
-```
+```text
 The list command lists all commands:
 
   bin/magento list
@@ -265,7 +265,7 @@ De naamruimtenaam
 
 ### Opties
 
-Voor globale opties, zie [&#x200B; Globale opties &#x200B;](#global-options).
+Voor globale opties, zie [ Globale opties ](#global-options).
 
 #### `--raw`
 
@@ -291,7 +291,7 @@ Om het beschrijven van de argumenten van bevelen over te slaan
 
 ## `admin:adobe-ims:disable`
 
-```bash
+```shell
 bin/magento admin:adobe-ims:disable
 ```
 
@@ -299,12 +299,12 @@ Adobe IMS-module uitschakelen
 
 ### Opties
 
-Voor globale opties, zie [&#x200B; Globale opties &#x200B;](#global-options).
+Voor globale opties, zie [ Globale opties ](#global-options).
 
 
 ## `admin:adobe-ims:enable`
 
-```bash
+```shell
 bin/magento admin:adobe-ims:enable [-o|--organization-id [ORGANIZATION-ID]] [-c|--client-id [CLIENT-ID]] [-s|--client-secret [CLIENT-SECRET]] [-t|--2fa [2FA]]
 ```
 
@@ -312,7 +312,7 @@ Schakel Adobe IMS Module in.
 
 ### Opties
 
-Voor globale opties, zie [&#x200B; Globale opties &#x200B;](#global-options).
+Voor globale opties, zie [ Globale opties ](#global-options).
 
 #### `--organization-id`, `-o`
 
@@ -341,7 +341,7 @@ Controleer of 2FA is ingeschakeld voor Organisatie in Adobe Admin Console. Verei
 
 ## `admin:adobe-ims:info`
 
-```bash
+```shell
 bin/magento admin:adobe-ims:info
 ```
 
@@ -349,12 +349,12 @@ Informatie over de configuratie van de Adobe IMS-module
 
 ### Opties
 
-Voor globale opties, zie [&#x200B; Globale opties &#x200B;](#global-options).
+Voor globale opties, zie [ Globale opties ](#global-options).
 
 
 ## `admin:adobe-ims:status`
 
-```bash
+```shell
 bin/magento admin:adobe-ims:status
 ```
 
@@ -362,12 +362,12 @@ Status van de Adobe IMS-module
 
 ### Opties
 
-Voor globale opties, zie [&#x200B; Globale opties &#x200B;](#global-options).
+Voor globale opties, zie [ Globale opties ](#global-options).
 
 
 ## `admin:user:create`
 
-```bash
+```shell
 bin/magento admin:user:create [--admin-user ADMIN-USER] [--admin-password ADMIN-PASSWORD] [--admin-email ADMIN-EMAIL] [--admin-firstname ADMIN-FIRSTNAME] [--admin-lastname ADMIN-LASTNAME] [--magento-init-params MAGENTO-INIT-PARAMS]
 ```
 
@@ -375,7 +375,7 @@ Hiermee wordt een beheerder gemaakt
 
 ### Opties
 
-Voor globale opties, zie [&#x200B; Globale opties &#x200B;](#global-options).
+Voor globale opties, zie [ Globale opties ](#global-options).
 
 #### `--admin-user`
 
@@ -409,20 +409,20 @@ Voor globale opties, zie [&#x200B; Globale opties &#x200B;](#global-options).
 
 #### `--magento-init-params`
 
-Voeg aan een willekeurige opdracht toe om Magento-initialisatieparameters aan te passen Bijvoorbeeld: `MAGE_MODE=developer&MAGE_DIRS[base][path]=/var/www/example.com&MAGE_DIRS[cache][path]=/var/tmp/cache`
+Voeg aan om het even welke bevel toe om de initialisatieparameters van Magento aan te passen Bijvoorbeeld: `MAGE_MODE=developer&MAGE_DIRS[base][path]=/var/www/example.com&MAGE_DIRS[cache][path]=/var/tmp/cache`
 
 - Vereist een waarde
 
 
 ## `admin:user:unlock`
 
-```bash
+```shell
 bin/magento admin:user:unlock <username>
 ```
 
 Beheerdersaccount ontgrendelen
 
-```
+```text
 This command unlocks an admin account by its username.
 To unlock:
       bin/magento admin:user:unlock username
@@ -438,12 +438,12 @@ De te ontgrendelen admin-gebruikersnaam
 
 ### Opties
 
-Voor globale opties, zie [&#x200B; Globale opties &#x200B;](#global-options).
+Voor globale opties, zie [ Globale opties ](#global-options).
 
 
 ## `app:config:dump`
 
-```bash
+```shell
 bin/magento app:config:dump [<config-types>...]
 ```
 
@@ -460,12 +460,12 @@ De ruimte-gescheiden lijst van configuratietypen of laat weg om alle [ werkingsg
 
 ### Opties
 
-Voor globale opties, zie [&#x200B; Globale opties &#x200B;](#global-options).
+Voor globale opties, zie [ Globale opties ](#global-options).
 
 
 ## `app:config:import`
 
-```bash
+```shell
 bin/magento app:config:import
 ```
 
@@ -473,12 +473,12 @@ Gegevens uit gedeelde configuratiebestanden importeren naar de juiste gegevensop
 
 ### Opties
 
-Voor globale opties, zie [&#x200B; Globale opties &#x200B;](#global-options).
+Voor globale opties, zie [ Globale opties ](#global-options).
 
 
 ## `app:config:status`
 
-```bash
+```shell
 bin/magento app:config:status
 ```
 
@@ -486,12 +486,12 @@ Controleert of config-propagatie update vereist
 
 ### Opties
 
-Voor globale opties, zie [&#x200B; Globale opties &#x200B;](#global-options).
+Voor globale opties, zie [ Globale opties ](#global-options).
 
 
 ## `braintree:migrate`
 
-```bash
+```shell
 bin/magento braintree:migrate [--host HOST] [--dbname DBNAME] [--username USERNAME] [--password PASSWORD]
 ```
 
@@ -499,7 +499,7 @@ Opgeslagen kaarten migreren uit een Magento 1-database
 
 ### Opties
 
-Voor globale opties, zie [&#x200B; Globale opties &#x200B;](#global-options).
+Voor globale opties, zie [ Globale opties ](#global-options).
 
 #### `--host`
 
@@ -528,7 +528,7 @@ Wachtwoord
 
 ## `cache:clean`
 
-```bash
+```shell
 bin/magento cache:clean [--bootstrap BOOTSTRAP] [--] [<types>...]
 ```
 
@@ -545,7 +545,7 @@ Lijst met door spaties gescheiden cachetypen of laten deze niet toe op alle cach
 
 ### Opties
 
-Voor globale opties, zie [&#x200B; Globale opties &#x200B;](#global-options).
+Voor globale opties, zie [ Globale opties ](#global-options).
 
 #### `--bootstrap`
 
@@ -556,7 +556,7 @@ parameters van de bootstrap toevoegen of overschrijven
 
 ## `cache:clean:payment_services_merchant_scopes`
 
-```bash
+```shell
 bin/magento cache:clean:payment_services_merchant_scopes
 ```
 
@@ -564,12 +564,12 @@ Cache van Merchant-bereik voor Clean Payment Services
 
 ### Opties
 
-Voor globale opties, zie [&#x200B; Globale opties &#x200B;](#global-options).
+Voor globale opties, zie [ Globale opties ](#global-options).
 
 
 ## `cache:disable`
 
-```bash
+```shell
 bin/magento cache:disable [--bootstrap BOOTSTRAP] [--] [<types>...]
 ```
 
@@ -586,7 +586,7 @@ Lijst met door spaties gescheiden cachetypen of laten deze niet toe op alle cach
 
 ### Opties
 
-Voor globale opties, zie [&#x200B; Globale opties &#x200B;](#global-options).
+Voor globale opties, zie [ Globale opties ](#global-options).
 
 #### `--bootstrap`
 
@@ -597,7 +597,7 @@ parameters van de bootstrap toevoegen of overschrijven
 
 ## `cache:enable`
 
-```bash
+```shell
 bin/magento cache:enable [--bootstrap BOOTSTRAP] [--] [<types>...]
 ```
 
@@ -614,7 +614,7 @@ Lijst met door spaties gescheiden cachetypen of laten deze niet toe op alle cach
 
 ### Opties
 
-Voor globale opties, zie [&#x200B; Globale opties &#x200B;](#global-options).
+Voor globale opties, zie [ Globale opties ](#global-options).
 
 #### `--bootstrap`
 
@@ -625,7 +625,7 @@ parameters van de bootstrap toevoegen of overschrijven
 
 ## `cache:flush`
 
-```bash
+```shell
 bin/magento cache:flush [--bootstrap BOOTSTRAP] [--] [<types>...]
 ```
 
@@ -642,7 +642,7 @@ Lijst met door spaties gescheiden cachetypen of laten deze niet toe op alle cach
 
 ### Opties
 
-Voor globale opties, zie [&#x200B; Globale opties &#x200B;](#global-options).
+Voor globale opties, zie [ Globale opties ](#global-options).
 
 #### `--bootstrap`
 
@@ -653,7 +653,7 @@ parameters van de bootstrap toevoegen of overschrijven
 
 ## `cache:status`
 
-```bash
+```shell
 bin/magento cache:status [--bootstrap BOOTSTRAP]
 ```
 
@@ -661,7 +661,7 @@ Hiermee wordt de cachestatus gecontroleerd
 
 ### Opties
 
-Voor globale opties, zie [&#x200B; Globale opties &#x200B;](#global-options).
+Voor globale opties, zie [ Globale opties ](#global-options).
 
 #### `--bootstrap`
 
@@ -672,7 +672,7 @@ parameters van de bootstrap toevoegen of overschrijven
 
 ## `catalog:images:resize`
 
-```bash
+```shell
 bin/magento catalog:images:resize [-a|--async] [--skip_hidden_images]
 ```
 
@@ -680,7 +680,7 @@ Hiermee maakt u productafbeeldingen waarvan het formaat is gewijzigd
 
 ### Opties
 
-Voor globale opties, zie [&#x200B; Globale opties &#x200B;](#global-options).
+Voor globale opties, zie [ Globale opties ](#global-options).
 
 #### `--async`, `-a`
 
@@ -699,7 +699,7 @@ Afbeeldingen die als verborgen op de productpagina zijn gemarkeerd, niet verwerk
 
 ## `catalog:product:attributes:cleanup`
 
-```bash
+```shell
 bin/magento catalog:product:attributes:cleanup
 ```
 
@@ -707,12 +707,12 @@ Verwijdert ongebruikte productkenmerken.
 
 ### Opties
 
-Voor globale opties, zie [&#x200B; Globale opties &#x200B;](#global-options).
+Voor globale opties, zie [ Globale opties ](#global-options).
 
 
 ## `cms:wysiwyg:restrict`
 
-```bash
+```shell
 bin/magento cms:wysiwyg:restrict <restrict>
 ```
 
@@ -728,12 +728,12 @@ y\n
 
 ### Opties
 
-Voor globale opties, zie [&#x200B; Globale opties &#x200B;](#global-options).
+Voor globale opties, zie [ Globale opties ](#global-options).
 
 
 ## `config:sensitive:set`
 
-```bash
+```shell
 bin/magento config:sensitive:set [-i|--interactive] [--scope [SCOPE]] [--scope-code [SCOPE-CODE]] [--] [<path> [<value>]]
 ```
 
@@ -752,7 +752,7 @@ Configuratiewaarde
 
 ### Opties
 
-Voor globale opties, zie [&#x200B; Globale opties &#x200B;](#global-options).
+Voor globale opties, zie [ Globale opties ](#global-options).
 
 #### `--interactive`, `-i`
 
@@ -778,7 +778,7 @@ Toepassingscode voor configuratie, standaard lege tekenreeks
 
 ## `config:set`
 
-```bash
+```shell
 bin/magento config:set [--scope SCOPE] [--scope-code SCOPE-CODE] [-e|--lock-env] [-c|--lock-config] [-l|--lock] [--] <path> <value>
 ```
 
@@ -801,7 +801,7 @@ Configuratiewaarde
 
 ### Opties
 
-Voor globale opties, zie [&#x200B; Globale opties &#x200B;](#global-options).
+Voor globale opties, zie [ Globale opties ](#global-options).
 
 #### `--scope`
 
@@ -840,7 +840,7 @@ Vervangen, gebruik in plaats hiervan de optie —lock-env.
 
 ## `config:show`
 
-```bash
+```shell
 bin/magento config:show [--scope [SCOPE]] [--scope-code [SCOPE-CODE]] [--] [<path>]
 ```
 
@@ -854,7 +854,7 @@ Configuratiepad, bijvoorbeeld section_id/group_id/field_id
 
 ### Opties
 
-Voor globale opties, zie [&#x200B; Globale opties &#x200B;](#global-options).
+Voor globale opties, zie [ Globale opties ](#global-options).
 
 #### `--scope`
 
@@ -873,7 +873,7 @@ Code bereik (alleen vereist als bereik niet `default` is)
 
 ## `cron:install`
 
-```bash
+```shell
 bin/magento cron:install [-f|--force] [-d|--non-optional]
 ```
 
@@ -881,7 +881,7 @@ Genereert en installeert een tab voor de huidige gebruiker
 
 ### Opties
 
-Voor globale opties, zie [&#x200B; Globale opties &#x200B;](#global-options).
+Voor globale opties, zie [ Globale opties ](#global-options).
 
 #### `--force`, `-f`
 
@@ -900,7 +900,7 @@ Alleen de niet-optionele (standaard)taken installeren
 
 ## `cron:remove`
 
-```bash
+```shell
 bin/magento cron:remove
 ```
 
@@ -908,12 +908,12 @@ Hiermee worden taken uit het tabblad Crontab verwijderd
 
 ### Opties
 
-Voor globale opties, zie [&#x200B; Globale opties &#x200B;](#global-options).
+Voor globale opties, zie [ Globale opties ](#global-options).
 
 
 ## `cron:run`
 
-```bash
+```shell
 bin/magento cron:run [--group GROUP] [--exclude-group [EXCLUDE-GROUP]] [--bootstrap BOOTSTRAP]
 ```
 
@@ -921,7 +921,7 @@ Hiermee worden taken volgens schema uitgevoerd
 
 ### Opties
 
-Voor globale opties, zie [&#x200B; Globale opties &#x200B;](#global-options).
+Voor globale opties, zie [ Globale opties ](#global-options).
 
 #### `--group`
 
@@ -945,7 +945,7 @@ Parameters van de bootstrap toevoegen of overschrijven
 
 ## `customer:hash:upgrade`
 
-```bash
+```shell
 bin/magento customer:hash:upgrade
 ```
 
@@ -953,12 +953,12 @@ De hash van de klant bijwerken volgens het meest recente algoritme
 
 ### Opties
 
-Voor globale opties, zie [&#x200B; Globale opties &#x200B;](#global-options).
+Voor globale opties, zie [ Globale opties ](#global-options).
 
 
 ## `deploy:mode:set`
 
-```bash
+```shell
 bin/magento deploy:mode:set [-s|--skip-compilation] [--] <mode>
 ```
 
@@ -974,7 +974,7 @@ De toepassingsmodus die moet worden ingesteld. Beschikbare opties zijn &quot;dev
 
 ### Opties
 
-Voor globale opties, zie [&#x200B; Globale opties &#x200B;](#global-options).
+Voor globale opties, zie [ Globale opties ](#global-options).
 
 #### `--skip-compilation`, `-s`
 
@@ -986,7 +986,7 @@ Verwijdert het wissen en opnieuw genereren van statische inhoud (gegenereerde co
 
 ## `deploy:mode:show`
 
-```bash
+```shell
 bin/magento deploy:mode:show
 ```
 
@@ -994,12 +994,12 @@ Geeft de huidige toepassingsmodus weer.
 
 ### Opties
 
-Voor globale opties, zie [&#x200B; Globale opties &#x200B;](#global-options).
+Voor globale opties, zie [ Globale opties ](#global-options).
 
 
 ## `dev:di:info`
 
-```bash
+```shell
 bin/magento dev:di:info <class> [<area>]
 ```
 
@@ -1020,12 +1020,12 @@ Netnummer
 
 ### Opties
 
-Voor globale opties, zie [&#x200B; Globale opties &#x200B;](#global-options).
+Voor globale opties, zie [ Globale opties ](#global-options).
 
 
 ## `dev:email:newsletter-compatibility-check`
 
-```bash
+```shell
 bin/magento dev:email:newsletter-compatibility-check
 ```
 
@@ -1033,12 +1033,12 @@ Scant nieuwsbrieven sjablonen voor mogelijke compatibiliteitsproblemen met varia
 
 ### Opties
 
-Voor globale opties, zie [&#x200B; Globale opties &#x200B;](#global-options).
+Voor globale opties, zie [ Globale opties ](#global-options).
 
 
 ## `dev:email:override-compatibility-check`
 
-```bash
+```shell
 bin/magento dev:email:override-compatibility-check
 ```
 
@@ -1046,12 +1046,12 @@ Scant e-mailsjabloonoverschrijvingen voor mogelijke compatibiliteitsproblemen me
 
 ### Opties
 
-Voor globale opties, zie [&#x200B; Globale opties &#x200B;](#global-options).
+Voor globale opties, zie [ Globale opties ](#global-options).
 
 
 ## `dev:profiler:disable`
 
-```bash
+```shell
 bin/magento dev:profiler:disable
 ```
 
@@ -1059,12 +1059,12 @@ Maak profiler onbruikbaar.
 
 ### Opties
 
-Voor globale opties, zie [&#x200B; Globale opties &#x200B;](#global-options).
+Voor globale opties, zie [ Globale opties ](#global-options).
 
 
 ## `dev:profiler:enable`
 
-```bash
+```shell
 bin/magento dev:profiler:enable [<type>]
 ```
 
@@ -1078,12 +1078,12 @@ Type analyse
 
 ### Opties
 
-Voor globale opties, zie [&#x200B; Globale opties &#x200B;](#global-options).
+Voor globale opties, zie [ Globale opties ](#global-options).
 
 
 ## `dev:query-log:disable`
 
-```bash
+```shell
 bin/magento dev:query-log:disable
 ```
 
@@ -1091,12 +1091,12 @@ Logboekregistratie van DB-query uitschakelen
 
 ### Opties
 
-Voor globale opties, zie [&#x200B; Globale opties &#x200B;](#global-options).
+Voor globale opties, zie [ Globale opties ](#global-options).
 
 
 ## `dev:query-log:enable`
 
-```bash
+```shell
 bin/magento dev:query-log:enable [--include-all-queries [INCLUDE-ALL-QUERIES]] [--query-time-threshold [QUERY-TIME-THRESHOLD]] [--include-call-stack [INCLUDE-CALL-STACK]] [--include-index-check [INCLUDE-INDEX-CHECK]]
 ```
 
@@ -1104,7 +1104,7 @@ Logbestand van DB-query inschakelen
 
 ### Opties
 
-Voor globale opties, zie [&#x200B; Globale opties &#x200B;](#global-options).
+Voor globale opties, zie [ Globale opties ](#global-options).
 
 #### `--include-all-queries`
 
@@ -1129,7 +1129,7 @@ Inclusief aanroepstack. [ waar \|vals ]
 
 #### `--include-index-check`
 
-Inclusief indexcontrole. Waarschuwing: kan de prestaties nadelig beïnvloeden. [ waar \|vals ]
+Inclusief indexcontrole. Waarschuwing: kan de prestaties verminderen. [ waar \|vals ]
 
 - Standaard: `false`
 - Accepteert een waarde
@@ -1137,7 +1137,7 @@ Inclusief indexcontrole. Waarschuwing: kan de prestaties nadelig beïnvloeden. [
 
 ## `dev:source-theme:deploy`
 
-```bash
+```shell
 bin/magento dev:source-theme:deploy [--type TYPE] [--locale LOCALE] [--area AREA] [--theme THEME] [--] [<file>...]
 ```
 
@@ -1155,11 +1155,11 @@ Bestanden die vooraf moeten worden verwerkt (bestand moet worden opgegeven zonde
 
 ### Opties
 
-Voor globale opties, zie [&#x200B; Globale opties &#x200B;](#global-options).
+Voor globale opties, zie [ Globale opties ](#global-options).
 
 #### `--type`
 
-Type van brondossiers: [ minder ]
+Type bronbestanden: [ minder ]
 
 - Standaard: `less`
 - Vereist een waarde
@@ -1188,7 +1188,7 @@ Thema: [ Verkoper/thema ]
 
 ## `dev:template-hints:disable`
 
-```bash
+```shell
 bin/magento dev:template-hints:disable
 ```
 
@@ -1196,12 +1196,12 @@ Tips voor frontend-sjablonen uitschakelen. Wellicht is het leegmaken van de cach
 
 ### Opties
 
-Voor globale opties, zie [&#x200B; Globale opties &#x200B;](#global-options).
+Voor globale opties, zie [ Globale opties ](#global-options).
 
 
 ## `dev:template-hints:enable`
 
-```bash
+```shell
 bin/magento dev:template-hints:enable
 ```
 
@@ -1209,12 +1209,12 @@ Tips voor frontendsjablonen inschakelen. Wellicht is het leegmaken van de cache 
 
 ### Opties
 
-Voor globale opties, zie [&#x200B; Globale opties &#x200B;](#global-options).
+Voor globale opties, zie [ Globale opties ](#global-options).
 
 
 ## `dev:template-hints:status`
 
-```bash
+```shell
 bin/magento dev:template-hints:status
 ```
 
@@ -1222,12 +1222,12 @@ Toon de status van frontend malplaatjewenken.
 
 ### Opties
 
-Voor globale opties, zie [&#x200B; Globale opties &#x200B;](#global-options).
+Voor globale opties, zie [ Globale opties ](#global-options).
 
 
 ## `dev:tests:run`
 
-```bash
+```shell
 bin/magento dev:tests:run [-c|--arguments ARGUMENTS] [--] [<type>]
 ```
 
@@ -1237,13 +1237,13 @@ Tests bij uitvoering
 
 #### `type`
 
-Type test dat moet worden uitgevoerd. Beschikbare types: allen, eenheid, integratie, integratie-allen, statisch, statisch-allen, integriteit, erfenis, gebrek
+Type test dat moet worden uitgevoerd. Beschikbare typen: all, unit, integration, integration-all, static, static-all, integriteit, legacy, default
 
 - Standaard: `default`
 
 ### Opties
 
-Voor globale opties, zie [&#x200B; Globale opties &#x200B;](#global-options).
+Voor globale opties, zie [ Globale opties ](#global-options).
 
 #### `--arguments`, `-c`
 
@@ -1255,7 +1255,7 @@ Aanvullende argumenten voor PHPUnit. Voorbeeld: &quot;-c&#39;—filter=MyTest&#3
 
 ## `dev:urn-catalog:generate`
 
-```bash
+```shell
 bin/magento dev:urn-catalog:generate [--ide IDE] [--] <path>
 ```
 
@@ -1271,7 +1271,7 @@ Pad naar bestand voor uitvoer van catalogus. Voor PHPStorm-gebruik .idea/misc.xm
 
 ### Opties
 
-Voor globale opties, zie [&#x200B; Globale opties &#x200B;](#global-options).
+Voor globale opties, zie [ Globale opties ](#global-options).
 
 #### `--ide`
 
@@ -1283,7 +1283,7 @@ Indeling waarin de catalogus wordt gegenereerd. Ondersteund: [ phpstorm, vscode 
 
 ## `dev:xml:convert`
 
-```bash
+```shell
 bin/magento dev:xml:convert [-o|--overwrite] [--] <xml-file> <processor>
 ```
 
@@ -1306,7 +1306,7 @@ Pad naar XSL-stijlpagina die wordt toegepast op XML-bestand
 
 ### Opties
 
-Voor globale opties, zie [&#x200B; Globale opties &#x200B;](#global-options).
+Voor globale opties, zie [ Globale opties ](#global-options).
 
 #### `--overwrite`, `-o`
 
@@ -1318,7 +1318,7 @@ XML-bestand overschrijven
 
 ## `downloadable:domains:add`
 
-```bash
+```shell
 bin/magento downloadable:domains:add [<domains>...]
 ```
 
@@ -1335,12 +1335,12 @@ Naam van domein
 
 ### Opties
 
-Voor globale opties, zie [&#x200B; Globale opties &#x200B;](#global-options).
+Voor globale opties, zie [ Globale opties ](#global-options).
 
 
 ## `downloadable:domains:remove`
 
-```bash
+```shell
 bin/magento downloadable:domains:remove [<domains>...]
 ```
 
@@ -1357,12 +1357,12 @@ Domeinnamen
 
 ### Opties
 
-Voor globale opties, zie [&#x200B; Globale opties &#x200B;](#global-options).
+Voor globale opties, zie [ Globale opties ](#global-options).
 
 
 ## `downloadable:domains:show`
 
-```bash
+```shell
 bin/magento downloadable:domains:show
 ```
 
@@ -1370,12 +1370,12 @@ Downloadbare whitelist van domeinen weergeven
 
 ### Opties
 
-Voor globale opties, zie [&#x200B; Globale opties &#x200B;](#global-options).
+Voor globale opties, zie [ Globale opties ](#global-options).
 
 
 ## `encryption:data:list-re-encryptors`
 
-```bash
+```shell
 bin/magento encryption:data:list-re-encryptors
 ```
 
@@ -1383,12 +1383,12 @@ Toont een lijst van beschikbare gegevens re-encryptors.
 
 ### Opties
 
-Voor globale opties, zie [&#x200B; Globale opties &#x200B;](#global-options).
+Voor globale opties, zie [ Globale opties ](#global-options).
 
 
 ## `encryption:data:re-encrypt`
 
-```bash
+```shell
 bin/magento encryption:data:re-encrypt [<encryptors>...]
 ```
 
@@ -1405,12 +1405,12 @@ Lijst met hercoderingsapparaten met spaties als scheidingsteken.
 
 ### Opties
 
-Voor globale opties, zie [&#x200B; Globale opties &#x200B;](#global-options).
+Voor globale opties, zie [ Globale opties ](#global-options).
 
 
 ## `encryption:key:change`
 
-```bash
+```shell
 bin/magento encryption:key:change [-k|--key [KEY]]
 ```
 
@@ -1418,7 +1418,7 @@ Wijzig de coderingssleutel in het bestand env.php.
 
 ### Opties
 
-Voor globale opties, zie [&#x200B; Globale opties &#x200B;](#global-options).
+Voor globale opties, zie [ Globale opties ](#global-options).
 
 #### `--key`, `-k`
 
@@ -1429,7 +1429,7 @@ De sleutel moet een lange tekenreeks van 32 tekens zijn. Indien niet opgegeven, 
 
 ## `encryption:payment-data:update`
 
-```bash
+```shell
 bin/magento encryption:payment-data:update
 ```
 
@@ -1437,12 +1437,12 @@ Codeert gecodeerde creditcardgegevens opnieuw met de nieuwste coderingssleutel.
 
 ### Opties
 
-Voor globale opties, zie [&#x200B; Globale opties &#x200B;](#global-options).
+Voor globale opties, zie [ Globale opties ](#global-options).
 
 
 ## `events:create-event-provider`
 
-```bash
+```shell
 bin/magento events:create-event-provider [--label [LABEL]] [--description [DESCRIPTION]]events:provider:create 
 ```
 
@@ -1450,7 +1450,7 @@ Maak een aangepaste gebeurtenisprovider in Adobe I/O Events voor deze instantie.
 
 ### Opties
 
-Voor globale opties, zie [&#x200B; Globale opties &#x200B;](#global-options).
+Voor globale opties, zie [ Globale opties ](#global-options).
 
 #### `--label`
 
@@ -1467,7 +1467,7 @@ Een beschrijving van uw provider.
 
 ## `events:generate:module`
 
-```bash
+```shell
 bin/magento events:generate:module
 ```
 
@@ -1475,12 +1475,12 @@ Module genereren op basis van de lijst met insteekmodules
 
 ### Opties
 
-Voor globale opties, zie [&#x200B; Globale opties &#x200B;](#global-options).
+Voor globale opties, zie [ Globale opties ](#global-options).
 
 
 ## `events:info`
 
-```bash
+```shell
 bin/magento events:info [--depth [DEPTH]] [--] <event-code>
 ```
 
@@ -1496,7 +1496,7 @@ Gebeurteniscode
 
 ### Opties
 
-Voor globale opties, zie [&#x200B; Globale opties &#x200B;](#global-options).
+Voor globale opties, zie [ Globale opties ](#global-options).
 
 #### `--depth`
 
@@ -1508,7 +1508,7 @@ Het aantal niveaus in de gebeurtenislading om terug te keren
 
 ## `events:list`
 
-```bash
+```shell
 bin/magento events:list
 ```
 
@@ -1516,12 +1516,12 @@ Geeft een lijst met geabonneerde gebeurtenissen weer
 
 ### Opties
 
-Voor globale opties, zie [&#x200B; Globale opties &#x200B;](#global-options).
+Voor globale opties, zie [ Globale opties ](#global-options).
 
 
 ## `events:list:all`
 
-```bash
+```shell
 bin/magento events:list:all <module_name>
 ```
 
@@ -1537,12 +1537,12 @@ Modulenaam
 
 ### Opties
 
-Voor globale opties, zie [&#x200B; Globale opties &#x200B;](#global-options).
+Voor globale opties, zie [ Globale opties ](#global-options).
 
 
 ## `events:metadata:populate`
 
-```bash
+```shell
 bin/magento events:metadata:populate
 ```
 
@@ -1550,12 +1550,12 @@ Hiermee maakt u metagegevens in Adobe I/O op basis van de configuratielijst (XML
 
 ### Opties
 
-Voor globale opties, zie [&#x200B; Globale opties &#x200B;](#global-options).
+Voor globale opties, zie [ Globale opties ](#global-options).
 
 
 ## `events:provider:info`
 
-```bash
+```shell
 bin/magento events:provider:info [--provider-id [PROVIDER-ID]]
 ```
 
@@ -1563,7 +1563,7 @@ Retourneert gegevens over een gebeurtenisprovider
 
 ### Opties
 
-Voor globale opties, zie [&#x200B; Globale opties &#x200B;](#global-options).
+Voor globale opties, zie [ Globale opties ](#global-options).
 
 #### `--provider-id`
 
@@ -1574,7 +1574,7 @@ De id van een gebeurtenisprovider. Wanneer deze optie niet wordt gebruikt, wordt
 
 ## `events:registrations:list`
 
-```bash
+```shell
 bin/magento events:registrations:list [--provider-id [PROVIDER-ID]]
 ```
 
@@ -1582,7 +1582,7 @@ Somt gebeurtenisregistraties in uw App Builder-project op
 
 ### Opties
 
-Voor globale opties, zie [&#x200B; Globale opties &#x200B;](#global-options).
+Voor globale opties, zie [ Globale opties ](#global-options).
 
 #### `--provider-id`
 
@@ -1593,7 +1593,7 @@ De id van een gebeurtenisprovider. Wanneer u deze optie opgeeft, worden de regis
 
 ## `events:subscribe`
 
-```bash
+```shell
 bin/magento events:subscribe [-f|--force] [--fields FIELDS] [--parent PARENT] [--rules RULES] [-p|--priority] [-d|--destination DESTINATION] [--providerId PROVIDERID] [--hipaaAuditRequired] [--] <event-code>
 ```
 
@@ -1609,7 +1609,7 @@ Gebeurteniscode
 
 ### Opties
 
-Voor globale opties, zie [&#x200B; Globale opties &#x200B;](#global-options).
+Voor globale opties, zie [ Globale opties ](#global-options).
 
 #### `--force`, `-f`
 
@@ -1668,7 +1668,7 @@ Geeft aan dat de gebeurtenis gegevens bevat die worden gecontroleerd door HIPAA.
 
 ## `events:sync-events-metadata`
 
-```bash
+```shell
 bin/magento events:sync-events-metadata [-d|--delete]
 ```
 
@@ -1676,7 +1676,7 @@ Metagegevens van gebeurtenissen synchroniseren voor deze instantie
 
 ### Opties
 
-Voor globale opties, zie [&#x200B; Globale opties &#x200B;](#global-options).
+Voor globale opties, zie [ Globale opties ](#global-options).
 
 #### `--delete`, `-d`
 
@@ -1688,7 +1688,7 @@ Metagegevens van gebeurtenissen verwijderen is niet langer vereist
 
 ## `events:unsubscribe`
 
-```bash
+```shell
 bin/magento events:unsubscribe <event-code>
 ```
 
@@ -1704,12 +1704,12 @@ Gebeurteniscode waarvan abonnement moet worden opgezegd
 
 ### Opties
 
-Voor globale opties, zie [&#x200B; Globale opties &#x200B;](#global-options).
+Voor globale opties, zie [ Globale opties ](#global-options).
 
 
 ## `i18n:collect-phrases`
 
-```bash
+```shell
 bin/magento i18n:collect-phrases [-o|--output OUTPUT] [-m|--magento] [--] [<directory>]
 ```
 
@@ -1723,7 +1723,7 @@ Mappad om te parseren. Niet nodig indien —magento-markering is ingesteld
 
 ### Opties
 
-Voor globale opties, zie [&#x200B; Globale opties &#x200B;](#global-options).
+Voor globale opties, zie [ Globale opties ](#global-options).
 
 #### `--output`, `-o`
 
@@ -1741,7 +1741,7 @@ Gebruik de parameter —magento om de huidige Magento-codebase te parseren. Laat
 
 ## `i18n:pack`
 
-```bash
+```shell
 bin/magento i18n:pack [-m|--mode MODE] [-d|--allow-duplicates] [--] <source> <locale>
 ```
 
@@ -1764,7 +1764,7 @@ Doellandinstelling voor woordenboek, bijvoorbeeld &quot;de_DE&quot;
 
 ### Opties
 
-Voor globale opties, zie [&#x200B; Globale opties &#x200B;](#global-options).
+Voor globale opties, zie [ Globale opties ](#global-options).
 
 #### `--mode`, `-m`
 
@@ -1783,7 +1783,7 @@ Gebruik de parameter —allow-duplicates om het opslaan van duplicaten van trans
 
 ## `i18n:uninstall`
 
-```bash
+```shell
 bin/magento i18n:uninstall [-b|--backup-code] [--] <package>...
 ```
 
@@ -1802,7 +1802,7 @@ Taalpakketnaam
 
 ### Opties
 
-Voor globale opties, zie [&#x200B; Globale opties &#x200B;](#global-options).
+Voor globale opties, zie [ Globale opties ](#global-options).
 
 #### `--backup-code`, `-b`
 
@@ -1814,7 +1814,7 @@ Back-up maken van code- en configuratiebestanden (behalve tijdelijke bestanden)
 
 ## `indexer:info`
 
-```bash
+```shell
 bin/magento indexer:info
 ```
 
@@ -1822,12 +1822,12 @@ Toegestane indexen weergeven
 
 ### Opties
 
-Voor globale opties, zie [&#x200B; Globale opties &#x200B;](#global-options).
+Voor globale opties, zie [ Globale opties ](#global-options).
 
 
 ## `indexer:reindex`
 
-```bash
+```shell
 bin/magento indexer:reindex [<index>...]
 ```
 
@@ -1844,12 +1844,12 @@ Lijst met door spaties gescheiden indextypen of laat toe om op alle indexen toe 
 
 ### Opties
 
-Voor globale opties, zie [&#x200B; Globale opties &#x200B;](#global-options).
+Voor globale opties, zie [ Globale opties ](#global-options).
 
 
 ## `indexer:reset`
 
-```bash
+```shell
 bin/magento indexer:reset [<index>...]
 ```
 
@@ -1866,12 +1866,12 @@ Lijst met door spaties gescheiden indextypen of laat toe om op alle indexen toe 
 
 ### Opties
 
-Voor globale opties, zie [&#x200B; Globale opties &#x200B;](#global-options).
+Voor globale opties, zie [ Globale opties ](#global-options).
 
 
 ## `indexer:set-dimensions-mode`
 
-```bash
+```shell
 bin/magento indexer:set-dimensions-mode [<indexer> [<mode>]]
 ```
 
@@ -1886,16 +1886,16 @@ Indexernaam [ catalog_product_price|catalogispermissions_category ]
 
 #### `mode`
 
-Index_dimensiemodi catalog_product_price          none,website,klant_groep,website_and_customer_group catalogi_category    none,customer_group
+Indexer-dimensie-modi catalog_product_price none,website,customer_group,website_and_customer_group catalogispermissions_category none,customer_group
 
 ### Opties
 
-Voor globale opties, zie [&#x200B; Globale opties &#x200B;](#global-options).
+Voor globale opties, zie [ Globale opties ](#global-options).
 
 
 ## `indexer:set-mode`
 
-```bash
+```shell
 bin/magento indexer:set-mode [<mode> [<index>...]]
 ```
 
@@ -1917,12 +1917,12 @@ Lijst met door spaties gescheiden indextypen of laat toe om op alle indexen toe 
 
 ### Opties
 
-Voor globale opties, zie [&#x200B; Globale opties &#x200B;](#global-options).
+Voor globale opties, zie [ Globale opties ](#global-options).
 
 
 ## `indexer:set-status`
 
-```bash
+```shell
 bin/magento indexer:set-status <status> [<index>...]
 ```
 
@@ -1946,12 +1946,12 @@ Lijst met door spaties gescheiden indextypen of laat toe om op alle indexen toe 
 
 ### Opties
 
-Voor globale opties, zie [&#x200B; Globale opties &#x200B;](#global-options).
+Voor globale opties, zie [ Globale opties ](#global-options).
 
 
 ## `indexer:show-dimensions-mode`
 
-```bash
+```shell
 bin/magento indexer:show-dimensions-mode [<indexer>...]
 ```
 
@@ -1968,12 +1968,12 @@ Lijst met door spaties gescheiden indextypen of laat deze weg om toe te passen o
 
 ### Opties
 
-Voor globale opties, zie [&#x200B; Globale opties &#x200B;](#global-options).
+Voor globale opties, zie [ Globale opties ](#global-options).
 
 
 ## `indexer:show-mode`
 
-```bash
+```shell
 bin/magento indexer:show-mode [<index>...]
 ```
 
@@ -1990,12 +1990,12 @@ Lijst met door spaties gescheiden indextypen of laat toe om op alle indexen toe 
 
 ### Opties
 
-Voor globale opties, zie [&#x200B; Globale opties &#x200B;](#global-options).
+Voor globale opties, zie [ Globale opties ](#global-options).
 
 
 ## `indexer:status`
 
-```bash
+```shell
 bin/magento indexer:status [<index>...]
 ```
 
@@ -2012,12 +2012,12 @@ Lijst met door spaties gescheiden indextypen of laat toe om op alle indexen toe 
 
 ### Opties
 
-Voor globale opties, zie [&#x200B; Globale opties &#x200B;](#global-options).
+Voor globale opties, zie [ Globale opties ](#global-options).
 
 
 ## `info:adminuri`
 
-```bash
+```shell
 bin/magento info:adminuri
 ```
 
@@ -2025,12 +2025,12 @@ Hiermee wordt de Magento Admin URI weergegeven
 
 ### Opties
 
-Voor globale opties, zie [&#x200B; Globale opties &#x200B;](#global-options).
+Voor globale opties, zie [ Globale opties ](#global-options).
 
 
 ## `info:backups:list`
 
-```bash
+```shell
 bin/magento info:backups:list
 ```
 
@@ -2038,12 +2038,12 @@ Lijst met beschikbare back-upbestanden afdrukken
 
 ### Opties
 
-Voor globale opties, zie [&#x200B; Globale opties &#x200B;](#global-options).
+Voor globale opties, zie [ Globale opties ](#global-options).
 
 
 ## `info:currency:list`
 
-```bash
+```shell
 bin/magento info:currency:list
 ```
 
@@ -2051,12 +2051,12 @@ Geeft de lijst met beschikbare valuta&#39;s weer
 
 ### Opties
 
-Voor globale opties, zie [&#x200B; Globale opties &#x200B;](#global-options).
+Voor globale opties, zie [ Globale opties ](#global-options).
 
 
 ## `info:dependencies:show-framework`
 
-```bash
+```shell
 bin/magento info:dependencies:show-framework [-o|--output OUTPUT]
 ```
 
@@ -2064,7 +2064,7 @@ Geeft een aantal afhankelijkheden van het Magento-framework weer
 
 ### Opties
 
-Voor globale opties, zie [&#x200B; Globale opties &#x200B;](#global-options).
+Voor globale opties, zie [ Globale opties ](#global-options).
 
 #### `--output`, `-o`
 
@@ -2076,7 +2076,7 @@ Bestandsnaam rapport
 
 ## `info:dependencies:show-modules`
 
-```bash
+```shell
 bin/magento info:dependencies:show-modules [-o|--output OUTPUT]
 ```
 
@@ -2084,7 +2084,7 @@ Toont aantal gebiedsdelen tussen modules
 
 ### Opties
 
-Voor globale opties, zie [&#x200B; Globale opties &#x200B;](#global-options).
+Voor globale opties, zie [ Globale opties ](#global-options).
 
 #### `--output`, `-o`
 
@@ -2096,7 +2096,7 @@ Bestandsnaam rapport
 
 ## `info:dependencies:show-modules-circular`
 
-```bash
+```shell
 bin/magento info:dependencies:show-modules-circular [-o|--output OUTPUT]
 ```
 
@@ -2104,7 +2104,7 @@ Toont aantal kringafhankelijkheden tussen modules
 
 ### Opties
 
-Voor globale opties, zie [&#x200B; Globale opties &#x200B;](#global-options).
+Voor globale opties, zie [ Globale opties ](#global-options).
 
 #### `--output`, `-o`
 
@@ -2116,7 +2116,7 @@ Bestandsnaam rapport
 
 ## `info:language:list`
 
-```bash
+```shell
 bin/magento info:language:list
 ```
 
@@ -2124,12 +2124,12 @@ Geeft de lijst met beschikbare taallandinstellingen weer
 
 ### Opties
 
-Voor globale opties, zie [&#x200B; Globale opties &#x200B;](#global-options).
+Voor globale opties, zie [ Globale opties ](#global-options).
 
 
 ## `info:timezone:list`
 
-```bash
+```shell
 bin/magento info:timezone:list
 ```
 
@@ -2137,12 +2137,12 @@ Hiermee geeft u de lijst met beschikbare tijdzones weer
 
 ### Opties
 
-Voor globale opties, zie [&#x200B; Globale opties &#x200B;](#global-options).
+Voor globale opties, zie [ Globale opties ](#global-options).
 
 
 ## `inventory:reservation:create-compensations`
 
-```bash
+```shell
 bin/magento inventory:reservation:create-compensations [-r|--raw] [--] [<compensations>...]
 ```
 
@@ -2159,7 +2159,7 @@ Lijst met argumenten voor compensatie in de notatie &quot;:::&quot;
 
 ### Opties
 
-Voor globale opties, zie [&#x200B; Globale opties &#x200B;](#global-options).
+Voor globale opties, zie [ Globale opties ](#global-options).
 
 #### `--raw`, `-r`
 
@@ -2171,7 +2171,7 @@ Onbewerkte uitvoer
 
 ## `inventory:reservation:list-inconsistencies`
 
-```bash
+```shell
 bin/magento inventory:reservation:list-inconsistencies [-c|--complete-orders] [-i|--incomplete-orders] [-b|--bunch-size [BUNCH-SIZE]] [-r|--raw]
 ```
 
@@ -2179,7 +2179,7 @@ Alle bestellingen en producten met inconsistenties in verkoopbare hoeveelheid to
 
 ### Opties
 
-Voor globale opties, zie [&#x200B; Globale opties &#x200B;](#global-options).
+Voor globale opties, zie [ Globale opties ](#global-options).
 
 #### `--complete-orders`, `-c`
 
@@ -2212,7 +2212,7 @@ Onbewerkte uitvoer
 
 ## `inventory-geonames:import`
 
-```bash
+```shell
 bin/magento inventory-geonames:import <countries>...
 ```
 
@@ -2231,12 +2231,12 @@ Lijst van landcodes die moeten worden ingevoerd
 
 ### Opties
 
-Voor globale opties, zie [&#x200B; Globale opties &#x200B;](#global-options).
+Voor globale opties, zie [ Globale opties ](#global-options).
 
 
 ## `maintenance:allow-ips`
 
-```bash
+```shell
 bin/magento maintenance:allow-ips [--none] [--add] [--magento-init-params MAGENTO-INIT-PARAMS] [--] [<ip>...]
 ```
 
@@ -2253,7 +2253,7 @@ Toegestane IP adressen
 
 ### Opties
 
-Voor globale opties, zie [&#x200B; Globale opties &#x200B;](#global-options).
+Voor globale opties, zie [ Globale opties ](#global-options).
 
 #### `--none`
 
@@ -2271,14 +2271,14 @@ IP-adres toevoegen aan bestaande lijst
 
 #### `--magento-init-params`
 
-Voeg aan een willekeurige opdracht toe om Magento-initialisatieparameters aan te passen Bijvoorbeeld: `MAGE_MODE=developer&MAGE_DIRS[base][path]=/var/www/example.com&MAGE_DIRS[cache][path]=/var/tmp/cache`
+Voeg aan om het even welke bevel toe om de initialisatieparameters van Magento aan te passen Bijvoorbeeld: `MAGE_MODE=developer&MAGE_DIRS[base][path]=/var/www/example.com&MAGE_DIRS[cache][path]=/var/tmp/cache`
 
 - Vereist een waarde
 
 
 ## `maintenance:disable`
 
-```bash
+```shell
 bin/magento maintenance:disable [--ip IP] [--magento-init-params MAGENTO-INIT-PARAMS]
 ```
 
@@ -2286,7 +2286,7 @@ Onderhoudsmodus uitschakelen
 
 ### Opties
 
-Voor globale opties, zie [&#x200B; Globale opties &#x200B;](#global-options).
+Voor globale opties, zie [ Globale opties ](#global-options).
 
 #### `--ip`
 
@@ -2297,14 +2297,14 @@ Toegestane IP adressen (gebruik &quot;niets&quot;om toegestane IP lijst te ontru
 
 #### `--magento-init-params`
 
-Voeg aan een willekeurige opdracht toe om Magento-initialisatieparameters aan te passen Bijvoorbeeld: `MAGE_MODE=developer&MAGE_DIRS[base][path]=/var/www/example.com&MAGE_DIRS[cache][path]=/var/tmp/cache`
+Voeg aan om het even welke bevel toe om de initialisatieparameters van Magento aan te passen Bijvoorbeeld: `MAGE_MODE=developer&MAGE_DIRS[base][path]=/var/www/example.com&MAGE_DIRS[cache][path]=/var/tmp/cache`
 
 - Vereist een waarde
 
 
 ## `maintenance:enable`
 
-```bash
+```shell
 bin/magento maintenance:enable [--ip IP] [--magento-init-params MAGENTO-INIT-PARAMS]
 ```
 
@@ -2312,7 +2312,7 @@ Onderhoudsmodus inschakelen
 
 ### Opties
 
-Voor globale opties, zie [&#x200B; Globale opties &#x200B;](#global-options).
+Voor globale opties, zie [ Globale opties ](#global-options).
 
 #### `--ip`
 
@@ -2323,14 +2323,14 @@ Toegestane IP adressen (gebruik &quot;niets&quot;om toegestane IP lijst te ontru
 
 #### `--magento-init-params`
 
-Voeg aan een willekeurige opdracht toe om Magento-initialisatieparameters aan te passen Bijvoorbeeld: `MAGE_MODE=developer&MAGE_DIRS[base][path]=/var/www/example.com&MAGE_DIRS[cache][path]=/var/tmp/cache`
+Voeg aan om het even welke bevel toe om de initialisatieparameters van Magento aan te passen Bijvoorbeeld: `MAGE_MODE=developer&MAGE_DIRS[base][path]=/var/www/example.com&MAGE_DIRS[cache][path]=/var/tmp/cache`
 
 - Vereist een waarde
 
 
 ## `maintenance:status`
 
-```bash
+```shell
 bin/magento maintenance:status [--magento-init-params MAGENTO-INIT-PARAMS]
 ```
 
@@ -2338,18 +2338,18 @@ De status van de onderhoudsmodus weergeven
 
 ### Opties
 
-Voor globale opties, zie [&#x200B; Globale opties &#x200B;](#global-options).
+Voor globale opties, zie [ Globale opties ](#global-options).
 
 #### `--magento-init-params`
 
-Voeg aan een willekeurige opdracht toe om Magento-initialisatieparameters aan te passen Bijvoorbeeld: `MAGE_MODE=developer&MAGE_DIRS[base][path]=/var/www/example.com&MAGE_DIRS[cache][path]=/var/tmp/cache`
+Voeg aan om het even welke bevel toe om de initialisatieparameters van Magento aan te passen Bijvoorbeeld: `MAGE_MODE=developer&MAGE_DIRS[base][path]=/var/www/example.com&MAGE_DIRS[cache][path]=/var/tmp/cache`
 
 - Vereist een waarde
 
 
 ## `media-content:sync`
 
-```bash
+```shell
 bin/magento media-content:sync
 ```
 
@@ -2357,12 +2357,12 @@ Inhoud synchroniseren met elementen
 
 ### Opties
 
-Voor globale opties, zie [&#x200B; Globale opties &#x200B;](#global-options).
+Voor globale opties, zie [ Globale opties ](#global-options).
 
 
 ## `media-gallery:sync`
 
-```bash
+```shell
 bin/magento media-gallery:sync
 ```
 
@@ -2370,12 +2370,12 @@ Mediaopslag en media-elementen in de database synchroniseren
 
 ### Opties
 
-Voor globale opties, zie [&#x200B; Globale opties &#x200B;](#global-options).
+Voor globale opties, zie [ Globale opties ](#global-options).
 
 
 ## `module:config:status`
 
-```bash
+```shell
 bin/magento module:config:status
 ```
 
@@ -2383,12 +2383,12 @@ Controleert de moduleconfiguratie in het &quot;app/etc/config.php&quot;dossier e
 
 ### Opties
 
-Voor globale opties, zie [&#x200B; Globale opties &#x200B;](#global-options).
+Voor globale opties, zie [ Globale opties ](#global-options).
 
 
 ## `module:disable`
 
-```bash
+```shell
 bin/magento module:disable [-f|--force] [--all] [-c|--clear-static-content] [--magento-init-params MAGENTO-INIT-PARAMS] [--] [<module>...]
 ```
 
@@ -2405,7 +2405,7 @@ Naam van de module
 
 ### Opties
 
-Voor globale opties, zie [&#x200B; Globale opties &#x200B;](#global-options).
+Voor globale opties, zie [ Globale opties ](#global-options).
 
 #### `--force`, `-f`
 
@@ -2430,14 +2430,14 @@ Gegenereerde statische weergavebestanden wissen. Noodzakelijk als de module(s) s
 
 #### `--magento-init-params`
 
-Voeg aan een willekeurige opdracht toe om Magento-initialisatieparameters aan te passen Bijvoorbeeld: `MAGE_MODE=developer&MAGE_DIRS[base][path]=/var/www/example.com&MAGE_DIRS[cache][path]=/var/tmp/cache`
+Voeg aan om het even welke bevel toe om de initialisatieparameters van Magento aan te passen Bijvoorbeeld: `MAGE_MODE=developer&MAGE_DIRS[base][path]=/var/www/example.com&MAGE_DIRS[cache][path]=/var/tmp/cache`
 
 - Vereist een waarde
 
 
 ## `module:enable`
 
-```bash
+```shell
 bin/magento module:enable [-f|--force] [--all] [-c|--clear-static-content] [--magento-init-params MAGENTO-INIT-PARAMS] [--] [<module>...]
 ```
 
@@ -2454,7 +2454,7 @@ Naam van de module
 
 ### Opties
 
-Voor globale opties, zie [&#x200B; Globale opties &#x200B;](#global-options).
+Voor globale opties, zie [ Globale opties ](#global-options).
 
 #### `--force`, `-f`
 
@@ -2479,14 +2479,14 @@ Gegenereerde statische weergavebestanden wissen. Noodzakelijk als de module(s) s
 
 #### `--magento-init-params`
 
-Voeg aan een willekeurige opdracht toe om Magento-initialisatieparameters aan te passen Bijvoorbeeld: `MAGE_MODE=developer&MAGE_DIRS[base][path]=/var/www/example.com&MAGE_DIRS[cache][path]=/var/tmp/cache`
+Voeg aan om het even welke bevel toe om de initialisatieparameters van Magento aan te passen Bijvoorbeeld: `MAGE_MODE=developer&MAGE_DIRS[base][path]=/var/www/example.com&MAGE_DIRS[cache][path]=/var/tmp/cache`
 
 - Vereist een waarde
 
 
 ## `module:status`
 
-```bash
+```shell
 bin/magento module:status [--enabled] [--disabled] [--magento-init-params MAGENTO-INIT-PARAMS] [--] [<module-names>...]
 ```
 
@@ -2503,7 +2503,7 @@ Optionele modulenaam
 
 ### Opties
 
-Voor globale opties, zie [&#x200B; Globale opties &#x200B;](#global-options).
+Voor globale opties, zie [ Globale opties ](#global-options).
 
 #### `--enabled`
 
@@ -2521,14 +2521,14 @@ Alleen uitgeschakelde modules afdrukken
 
 #### `--magento-init-params`
 
-Voeg aan een willekeurige opdracht toe om Magento-initialisatieparameters aan te passen Bijvoorbeeld: `MAGE_MODE=developer&MAGE_DIRS[base][path]=/var/www/example.com&MAGE_DIRS[cache][path]=/var/tmp/cache`
+Voeg aan om het even welke bevel toe om de initialisatieparameters van Magento aan te passen Bijvoorbeeld: `MAGE_MODE=developer&MAGE_DIRS[base][path]=/var/www/example.com&MAGE_DIRS[cache][path]=/var/tmp/cache`
 
 - Vereist een waarde
 
 
 ## `module:uninstall`
 
-```bash
+```shell
 bin/magento module:uninstall [-r|--remove-data] [--backup-code] [--backup-media] [--backup-db] [--non-composer] [-c|--clear-static-content] [--magento-init-params MAGENTO-INIT-PARAMS] [--] <module>...
 ```
 
@@ -2547,7 +2547,7 @@ Naam van de module
 
 ### Opties
 
-Voor globale opties, zie [&#x200B; Globale opties &#x200B;](#global-options).
+Voor globale opties, zie [ Globale opties ](#global-options).
 
 #### `--remove-data`, `-r`
 
@@ -2593,14 +2593,14 @@ Gegenereerde statische weergavebestanden wissen. Noodzakelijk als de module(s) s
 
 #### `--magento-init-params`
 
-Voeg aan een willekeurige opdracht toe om Magento-initialisatieparameters aan te passen Bijvoorbeeld: `MAGE_MODE=developer&MAGE_DIRS[base][path]=/var/www/example.com&MAGE_DIRS[cache][path]=/var/tmp/cache`
+Voeg aan om het even welke bevel toe om de initialisatieparameters van Magento aan te passen Bijvoorbeeld: `MAGE_MODE=developer&MAGE_DIRS[base][path]=/var/www/example.com&MAGE_DIRS[cache][path]=/var/tmp/cache`
 
 - Vereist een waarde
 
 
 ## `newrelic:create:deploy-marker`
 
-```bash
+```shell
 bin/magento newrelic:create:deploy-marker [-c|--commit [COMMIT]] [-d|--deep-link [DEEP-LINK]] [-g|--group-id [GROUP-ID]] [--] <message> <change_log> [<user> [<revision>]]
 ```
 
@@ -2633,7 +2633,7 @@ Revisie/versie
 
 ### Opties
 
-Voor globale opties, zie [&#x200B; Globale opties &#x200B;](#global-options).
+Voor globale opties, zie [ Globale opties ](#global-options).
 
 #### `--commit`, `-c`
 
@@ -2656,47 +2656,47 @@ Groep-id voor het organiseren van implementaties (alleen NerdGraph)
 
 ## `queue:consumers:list`
 
-```bash
+```shell
 bin/magento queue:consumers:list
 ```
 
 Lijst met consumenten van MessageQueue
 
-```
+```text
 This command shows list of MessageQueue consumers.
 ```
 
 ### Opties
 
-Voor globale opties, zie [&#x200B; Globale opties &#x200B;](#global-options).
+Voor globale opties, zie [ Globale opties ](#global-options).
 
 
 ## `queue:consumers:restart`
 
-```bash
+```shell
 bin/magento queue:consumers:restart
 ```
 
 Gebruikers van MessageQueue opnieuw starten
 
-```
+```text
 Command put poison pill for MessageQueue consumers and force to restart them after next status check.
 ```
 
 ### Opties
 
-Voor globale opties, zie [&#x200B; Globale opties &#x200B;](#global-options).
+Voor globale opties, zie [ Globale opties ](#global-options).
 
 
 ## `queue:consumers:start`
 
-```bash
+```shell
 bin/magento queue:consumers:start [--max-messages MAX-MESSAGES] [--batch-size BATCH-SIZE] [--area-code AREA-CODE] [--single-thread] [--multi-process [MULTI-PROCESS]] [--pid-file-path PID-FILE-PATH] [--] <consumer>
 ```
 
 MessageQueue-consument starten
 
-```
+```text
 This command starts MessageQueue consumer by its name.
 
 To start consumer which will process all queued messages and terminate execution:
@@ -2738,7 +2738,7 @@ De naam van de consument die moet worden gestart.
 
 ### Opties
 
-Voor globale opties, zie [&#x200B; Globale opties &#x200B;](#global-options).
+Voor globale opties, zie [ Globale opties ](#global-options).
 
 #### `--max-messages`
 
@@ -2754,7 +2754,7 @@ Het aantal berichten per partij. Alleen van toepassing op de partijconsument.
 
 #### `--area-code`
 
-De standaardinstelling voor het voorkeursgebied (global, adminhtml, etc..) is global.
+Het voorkeursgebied (globaal, adminhtml, enz..) default is global.
 
 - Vereist een waarde
 
@@ -2780,7 +2780,7 @@ Het bestandspad voor het opslaan van PID (deze optie is afgekeurd, gebruik —en
 
 ## `remote-storage:sync`
 
-```bash
+```shell
 bin/magento remote-storage:sync
 ```
 
@@ -2788,12 +2788,12 @@ Mediabestanden synchroniseren met externe opslag.
 
 ### Opties
 
-Voor globale opties, zie [&#x200B; Globale opties &#x200B;](#global-options).
+Voor globale opties, zie [ Globale opties ](#global-options).
 
 
 ## `saas:initialize:project`
 
-```bash
+```shell
 bin/magento saas:initialize:project [-p|--projectName PROJECTNAME]
 ```
 
@@ -2801,7 +2801,7 @@ Initialiseer een nieuw project voor de handelaar die in de de dienstschakelaar w
 
 ### Opties
 
-Voor globale opties, zie [&#x200B; Globale opties &#x200B;](#global-options).
+Voor globale opties, zie [ Globale opties ](#global-options).
 
 #### `--projectName`, `-p`
 
@@ -2812,7 +2812,7 @@ Projectnaam
 
 ## `saas:list:projects`
 
-```bash
+```shell
 bin/magento saas:list:projects [-p|--projectId [PROJECTID]] [-e|--environmentId [ENVIRONMENTID]]
 ```
 
@@ -2820,7 +2820,7 @@ Maakt een lijst van projectinfo voor de handelaar die in de de dienstschakelaar 
 
 ### Opties
 
-Voor globale opties, zie [&#x200B; Globale opties &#x200B;](#global-options).
+Voor globale opties, zie [ Globale opties ](#global-options).
 
 #### `--projectId`, `-p`
 
@@ -2837,7 +2837,7 @@ Omgevingsid
 
 ## `saas:resync`
 
-```bash
+```shell
 bin/magento saas:resync [--feed FEED] [--no-reindex] [--cleanup-feed] [--dry-run] [--thread-count THREAD-COUNT] [--batch-size BATCH-SIZE] [--continue-resync] [--by-ids BY-IDS] [--id-type ID-TYPE]
 ```
 
@@ -2845,11 +2845,11 @@ Hersynchroniseert voedergegevens aan de dienst SaaS.
 
 ### Opties
 
-Voor globale opties, zie [&#x200B; Globale opties &#x200B;](#global-options).
+Voor globale opties, zie [ Globale opties ](#global-options).
 
 #### `--feed`
 
-Geef de feed-naam op om opnieuw te synchroniseren met SaaS-service. Beschikbare feeds: orderproductie van betalingsservices, betalingsservicesbestelsandbox, orderstatus van betalingsservices, betalingsservicestatus sandbox, betalingsservices, winkelproductie van betalingsservices, zandbak in de winkel voor betalingsservices
+Geef de feed-naam op om opnieuw te synchroniseren met SaaS-service. Beschikbare feeds: Bestelproductie betalingsservices, zandbak betalingsservices, status van betalingsservices, productie van betalingsdiensten, status van betalingsservices, status van betalingsservices, winkelproductie van betalingsservices, Sandbox van de winkel voor betalingsservices
 
 - Vereist een waarde
 
@@ -2901,14 +2901,14 @@ Gedeeltelijk opnieuw synchroniseren door lijst met opgegeven id&#39;s. (Deze opt
 
 #### `--id-type`
 
-Type id&#39;s voor gedeeltelijke resync (bijvoorbeeld: sku, productId, enz.)
+Type id’s voor gedeeltelijke resync (bijvoorbeeld: sku, productId, enz.)
 
 - Vereist een waarde
 
 
 ## `sampledata:deploy`
 
-```bash
+```shell
 bin/magento sampledata:deploy [--no-update]
 ```
 
@@ -2916,7 +2916,7 @@ Stel steekproefgegevensmodules voor op composer-gebaseerde installaties van Mage
 
 ### Opties
 
-Voor globale opties, zie [&#x200B; Globale opties &#x200B;](#global-options).
+Voor globale opties, zie [ Globale opties ](#global-options).
 
 #### `--no-update`
 
@@ -2928,7 +2928,7 @@ Composer.json bijwerken zonder componentupdate uit te voeren
 
 ## `sampledata:remove`
 
-```bash
+```shell
 bin/magento sampledata:remove [--no-update]
 ```
 
@@ -2936,7 +2936,7 @@ Alle pakketten met voorbeeldgegevens verwijderen uit composer.json
 
 ### Opties
 
-Voor globale opties, zie [&#x200B; Globale opties &#x200B;](#global-options).
+Voor globale opties, zie [ Globale opties ](#global-options).
 
 #### `--no-update`
 
@@ -2948,7 +2948,7 @@ Composer.json bijwerken zonder componentupdate uit te voeren
 
 ## `sampledata:reset`
 
-```bash
+```shell
 bin/magento sampledata:reset
 ```
 
@@ -2956,12 +2956,12 @@ Alle modules met voorbeeldgegevens opnieuw instellen voor herinstallatie
 
 ### Opties
 
-Voor globale opties, zie [&#x200B; Globale opties &#x200B;](#global-options).
+Voor globale opties, zie [ Globale opties ](#global-options).
 
 
 ## `security:recaptcha:disable-for-user-forgot-password`
 
-```bash
+```shell
 bin/magento security:recaptcha:disable-for-user-forgot-password
 ```
 
@@ -2969,12 +2969,12 @@ reCAPTCHA uitschakelen voor wachtwoordformulier voor vergeten gebruiker van behe
 
 ### Opties
 
-Voor globale opties, zie [&#x200B; Globale opties &#x200B;](#global-options).
+Voor globale opties, zie [ Globale opties ](#global-options).
 
 
 ## `security:recaptcha:disable-for-user-login`
 
-```bash
+```shell
 bin/magento security:recaptcha:disable-for-user-login
 ```
 
@@ -2982,12 +2982,12 @@ reCAPTCHA uitschakelen voor aanmeldingsformulier voor beheerder
 
 ### Opties
 
-Voor globale opties, zie [&#x200B; Globale opties &#x200B;](#global-options).
+Voor globale opties, zie [ Globale opties ](#global-options).
 
 
 ## `security:tfa:google:set-secret`
 
-```bash
+```shell
 bin/magento security:tfa:google:set-secret <user> <secret>
 ```
 
@@ -3010,12 +3010,12 @@ Geheim
 
 ### Opties
 
-Voor globale opties, zie [&#x200B; Globale opties &#x200B;](#global-options).
+Voor globale opties, zie [ Globale opties ](#global-options).
 
 
 ## `security:tfa:providers`
 
-```bash
+```shell
 bin/magento security:tfa:providers
 ```
 
@@ -3023,12 +3023,12 @@ Alle beschikbare providers weergeven
 
 ### Opties
 
-Voor globale opties, zie [&#x200B; Globale opties &#x200B;](#global-options).
+Voor globale opties, zie [ Globale opties ](#global-options).
 
 
 ## `security:tfa:reset`
 
-```bash
+```shell
 bin/magento security:tfa:reset <user> <provider>
 ```
 
@@ -3051,12 +3051,12 @@ Providercode
 
 ### Opties
 
-Voor globale opties, zie [&#x200B; Globale opties &#x200B;](#global-options).
+Voor globale opties, zie [ Globale opties ](#global-options).
 
 
 ## `server:run`
 
-```bash
+```shell
 bin/magento server:run [-p|--port [PORT]] [-b|--background [BACKGROUND]] [-wn|--workerNum [WORKERNUM]] [-dm|--dispatchMode [DISPATCHMODE]] [-mr|--maxRequests [MAXREQUESTS]] [-a|--area [AREA]] [-mip|--magento-init-params [MAGENTO-INIT-PARAMS]] [-mwt|--maxWaitTime [MAXWAITTIME]] [--state-monitor]
 ```
 
@@ -3064,7 +3064,7 @@ Toepassingsserver uitvoeren
 
 ### Opties
 
-Voor globale opties, zie [&#x200B; Globale opties &#x200B;](#global-options).
+Voor globale opties, zie [ Globale opties ](#global-options).
 
 #### `--port`, `-p`
 
@@ -3132,7 +3132,7 @@ Statusbewaking inschakelen. Gebruik dit alleen voor foutopsporingsstatusprobleme
 
 ## `server:state-monitor:aggregate-output`
 
-```bash
+```shell
 bin/magento server:state-monitor:aggregate-output
 ```
 
@@ -3140,12 +3140,12 @@ Samengevoegde output van staatsmonitor van ApplicationServer
 
 ### Opties
 
-Voor globale opties, zie [&#x200B; Globale opties &#x200B;](#global-options).
+Voor globale opties, zie [ Globale opties ](#global-options).
 
 
 ## `setup:backup`
 
-```bash
+```shell
 bin/magento setup:backup [--code] [--media] [--db] [--magento-init-params MAGENTO-INIT-PARAMS]
 ```
 
@@ -3153,7 +3153,7 @@ Maakt back-up van Magento Application Code base, media en database
 
 ### Opties
 
-Voor globale opties, zie [&#x200B; Globale opties &#x200B;](#global-options).
+Voor globale opties, zie [ Globale opties ](#global-options).
 
 #### `--code`
 
@@ -3178,14 +3178,14 @@ Volledige back-up van de database maken
 
 #### `--magento-init-params`
 
-Voeg aan een willekeurige opdracht toe om Magento-initialisatieparameters aan te passen Bijvoorbeeld: `MAGE_MODE=developer&MAGE_DIRS[base][path]=/var/www/example.com&MAGE_DIRS[cache][path]=/var/tmp/cache`
+Voeg aan om het even welke bevel toe om de initialisatieparameters van Magento aan te passen Bijvoorbeeld: `MAGE_MODE=developer&MAGE_DIRS[base][path]=/var/www/example.com&MAGE_DIRS[cache][path]=/var/tmp/cache`
 
 - Vereist een waarde
 
 
 ## `setup:config:set`
 
-```bash
+```shell
 bin/magento setup:config:set [--remote-storage-driver REMOTE-STORAGE-DRIVER] [--remote-storage-prefix REMOTE-STORAGE-PREFIX] [--remote-storage-endpoint REMOTE-STORAGE-ENDPOINT] [--remote-storage-bucket REMOTE-STORAGE-BUCKET] [--remote-storage-region REMOTE-STORAGE-REGION] [--remote-storage-key REMOTE-STORAGE-KEY] [--remote-storage-secret REMOTE-STORAGE-SECRET] [--remote-storage-path-style REMOTE-STORAGE-PATH-STYLE] [--backend-frontname BACKEND-FRONTNAME] [--enable-debug-logging ENABLE-DEBUG-LOGGING] [--enable-syslog-logging ENABLE-SYSLOG-LOGGING] [--id_salt ID_SALT] [--checkout-async CHECKOUT-ASYNC] [--config-async CONFIG-ASYNC] [--amqp-host AMQP-HOST] [--amqp-port AMQP-PORT] [--amqp-user AMQP-USER] [--amqp-password AMQP-PASSWORD] [--amqp-virtualhost AMQP-VIRTUALHOST] [--amqp-ssl AMQP-SSL] [--amqp-ssl-options AMQP-SSL-OPTIONS] [--consumers-wait-for-messages CONSUMERS-WAIT-FOR-MESSAGES] [--queue-default-connection QUEUE-DEFAULT-CONNECTION] [--stomp-host STOMP-HOST] [--stomp-port STOMP-PORT] [--stomp-user STOMP-USER] [--stomp-password STOMP-PASSWORD] [--stomp-ssl STOMP-SSL] [--stomp-ssl-options STOMP-SSL-OPTIONS] [--deferred-total-calculating DEFERRED-TOTAL-CALCULATING] [--key KEY] [--db-host DB-HOST] [--db-name DB-NAME] [--db-user DB-USER] [--db-engine DB-ENGINE] [--db-password DB-PASSWORD] [--db-prefix DB-PREFIX] [--db-model DB-MODEL] [--db-init-statements DB-INIT-STATEMENTS] [-s|--skip-db-validation] [--http-cache-hosts HTTP-CACHE-HOSTS] [--db-ssl-key DB-SSL-KEY] [--db-ssl-cert DB-SSL-CERT] [--db-ssl-ca DB-SSL-CA] [--db-ssl-verify] [--session-save SESSION-SAVE] [--session-save-redis-host SESSION-SAVE-REDIS-HOST] [--session-save-redis-port SESSION-SAVE-REDIS-PORT] [--session-save-redis-password SESSION-SAVE-REDIS-PASSWORD] [--session-save-redis-timeout SESSION-SAVE-REDIS-TIMEOUT] [--session-save-redis-retries SESSION-SAVE-REDIS-RETRIES] [--session-save-redis-persistent-id SESSION-SAVE-REDIS-PERSISTENT-ID] [--session-save-redis-db SESSION-SAVE-REDIS-DB] [--session-save-redis-compression-threshold SESSION-SAVE-REDIS-COMPRESSION-THRESHOLD] [--session-save-redis-compression-lib SESSION-SAVE-REDIS-COMPRESSION-LIB] [--session-save-redis-log-level SESSION-SAVE-REDIS-LOG-LEVEL] [--session-save-redis-max-concurrency SESSION-SAVE-REDIS-MAX-CONCURRENCY] [--session-save-redis-break-after-frontend SESSION-SAVE-REDIS-BREAK-AFTER-FRONTEND] [--session-save-redis-break-after-adminhtml SESSION-SAVE-REDIS-BREAK-AFTER-ADMINHTML] [--session-save-redis-first-lifetime SESSION-SAVE-REDIS-FIRST-LIFETIME] [--session-save-redis-bot-first-lifetime SESSION-SAVE-REDIS-BOT-FIRST-LIFETIME] [--session-save-redis-bot-lifetime SESSION-SAVE-REDIS-BOT-LIFETIME] [--session-save-redis-disable-locking SESSION-SAVE-REDIS-DISABLE-LOCKING] [--session-save-redis-min-lifetime SESSION-SAVE-REDIS-MIN-LIFETIME] [--session-save-redis-max-lifetime SESSION-SAVE-REDIS-MAX-LIFETIME] [--session-save-redis-sentinel-master SESSION-SAVE-REDIS-SENTINEL-MASTER] [--session-save-redis-sentinel-servers SESSION-SAVE-REDIS-SENTINEL-SERVERS] [--session-save-redis-sentinel-verify-master SESSION-SAVE-REDIS-SENTINEL-VERIFY-MASTER] [--session-save-redis-sentinel-connect-retries SESSION-SAVE-REDIS-SENTINEL-CONNECT-RETRIES] [--session-save-valkey-host SESSION-SAVE-VALKEY-HOST] [--session-save-valkey-port SESSION-SAVE-VALKEY-PORT] [--session-save-valkey-password SESSION-SAVE-VALKEY-PASSWORD] [--session-save-valkey-timeout SESSION-SAVE-VALKEY-TIMEOUT] [--session-save-valkey-retries SESSION-SAVE-VALKEY-RETRIES] [--session-save-valkey-persistent-id SESSION-SAVE-VALKEY-PERSISTENT-ID] [--session-save-valkey-db SESSION-SAVE-VALKEY-DB] [--session-save-valkey-compression-threshold SESSION-SAVE-VALKEY-COMPRESSION-THRESHOLD] [--session-save-valkey-compression-lib SESSION-SAVE-VALKEY-COMPRESSION-LIB] [--session-save-valkey-log-level SESSION-SAVE-VALKEY-LOG-LEVEL] [--session-save-valkey-max-concurrency SESSION-SAVE-VALKEY-MAX-CONCURRENCY] [--session-save-valkey-break-after-frontend SESSION-SAVE-VALKEY-BREAK-AFTER-FRONTEND] [--session-save-valkey-break-after-adminhtml SESSION-SAVE-VALKEY-BREAK-AFTER-ADMINHTML] [--session-save-valkey-first-lifetime SESSION-SAVE-VALKEY-FIRST-LIFETIME] [--session-save-valkey-bot-first-lifetime SESSION-SAVE-VALKEY-BOT-FIRST-LIFETIME] [--session-save-valkey-bot-lifetime SESSION-SAVE-VALKEY-BOT-LIFETIME] [--session-save-valkey-disable-locking SESSION-SAVE-VALKEY-DISABLE-LOCKING] [--session-save-valkey-min-lifetime SESSION-SAVE-VALKEY-MIN-LIFETIME] [--session-save-valkey-max-lifetime SESSION-SAVE-VALKEY-MAX-LIFETIME] [--session-save-valkey-sentinel-master SESSION-SAVE-VALKEY-SENTINEL-MASTER] [--session-save-valkey-sentinel-servers SESSION-SAVE-VALKEY-SENTINEL-SERVERS] [--session-save-valkey-sentinel-verify-master SESSION-SAVE-VALKEY-SENTINEL-VERIFY-MASTER] [--session-save-valkey-sentinel-connect-retries SESSION-SAVE-VALKEY-SENTINEL-CONNECT-RETRIES] [--cache-backend CACHE-BACKEND] [--cache-backend-redis-server CACHE-BACKEND-REDIS-SERVER] [--cache-backend-redis-db CACHE-BACKEND-REDIS-DB] [--cache-backend-redis-port CACHE-BACKEND-REDIS-PORT] [--cache-backend-redis-password CACHE-BACKEND-REDIS-PASSWORD] [--cache-backend-redis-compress-data CACHE-BACKEND-REDIS-COMPRESS-DATA] [--cache-backend-redis-compression-lib CACHE-BACKEND-REDIS-COMPRESSION-LIB] [--cache-backend-redis-serializer CACHE-BACKEND-REDIS-SERIALIZER] [--cache-backend-redis-use-lua CACHE-BACKEND-REDIS-USE-LUA] [--cache-backend-redis-use-lua-on-gc CACHE-BACKEND-REDIS-USE-LUA-ON-GC] [--cache-backend-valkey-server CACHE-BACKEND-VALKEY-SERVER] [--cache-backend-valkey-db CACHE-BACKEND-VALKEY-DB] [--cache-backend-valkey-port CACHE-BACKEND-VALKEY-PORT] [--cache-backend-valkey-password CACHE-BACKEND-VALKEY-PASSWORD] [--cache-backend-valkey-compress-data CACHE-BACKEND-VALKEY-COMPRESS-DATA] [--cache-backend-valkey-compression-lib CACHE-BACKEND-VALKEY-COMPRESSION-LIB] [--cache-backend-valkey-serializer CACHE-BACKEND-VALKEY-SERIALIZER] [--cache-backend-valkey-use-lua CACHE-BACKEND-VALKEY-USE-LUA] [--cache-backend-valkey-use-lua-on-gc CACHE-BACKEND-VALKEY-USE-LUA-ON-GC] [--cache-id-prefix CACHE-ID-PREFIX] [--allow-parallel-generation] [--page-cache PAGE-CACHE] [--page-cache-redis-server PAGE-CACHE-REDIS-SERVER] [--page-cache-redis-db PAGE-CACHE-REDIS-DB] [--page-cache-redis-port PAGE-CACHE-REDIS-PORT] [--page-cache-redis-password PAGE-CACHE-REDIS-PASSWORD] [--page-cache-redis-compress-data PAGE-CACHE-REDIS-COMPRESS-DATA] [--page-cache-redis-compression-lib PAGE-CACHE-REDIS-COMPRESSION-LIB] [--page-cache-redis-serializer PAGE-CACHE-REDIS-SERIALIZER] [--page-cache-id-prefix PAGE-CACHE-ID-PREFIX] [--page-cache-valkey-server PAGE-CACHE-VALKEY-SERVER] [--page-cache-valkey-db PAGE-CACHE-VALKEY-DB] [--page-cache-valkey-port PAGE-CACHE-VALKEY-PORT] [--page-cache-valkey-password PAGE-CACHE-VALKEY-PASSWORD] [--page-cache-valkey-compress-data PAGE-CACHE-VALKEY-COMPRESS-DATA] [--page-cache-valkey-compression-lib PAGE-CACHE-VALKEY-COMPRESSION-LIB] [--page-cache-valkey-serializer PAGE-CACHE-VALKEY-SERIALIZER] [--lock-provider LOCK-PROVIDER] [--lock-db-prefix LOCK-DB-PREFIX] [--lock-zookeeper-host LOCK-ZOOKEEPER-HOST] [--lock-zookeeper-path LOCK-ZOOKEEPER-PATH] [--lock-file-path LOCK-FILE-PATH] [--document-root-is-pub DOCUMENT-ROOT-IS-PUB] [--backpressure-logger BACKPRESSURE-LOGGER] [--backpressure-logger-redis-server BACKPRESSURE-LOGGER-REDIS-SERVER] [--backpressure-logger-redis-port BACKPRESSURE-LOGGER-REDIS-PORT] [--backpressure-logger-redis-timeout BACKPRESSURE-LOGGER-REDIS-TIMEOUT] [--backpressure-logger-redis-persistent BACKPRESSURE-LOGGER-REDIS-PERSISTENT] [--backpressure-logger-redis-db BACKPRESSURE-LOGGER-REDIS-DB] [--backpressure-logger-redis-password BACKPRESSURE-LOGGER-REDIS-PASSWORD] [--backpressure-logger-redis-user BACKPRESSURE-LOGGER-REDIS-USER] [--backpressure-logger-id-prefix BACKPRESSURE-LOGGER-ID-PREFIX] [--magento-init-params MAGENTO-INIT-PARAMS]
 ```
 
@@ -3193,7 +3193,7 @@ Creeert of wijzigt de plaatsingsconfiguratie
 
 ### Opties
 
-Voor globale opties, zie [&#x200B; Globale opties &#x200B;](#global-options).
+Voor globale opties, zie [ Globale opties ](#global-options).
 
 #### `--remote-storage-driver`
 
@@ -3340,7 +3340,7 @@ Moeten consumenten wachten op een bericht uit de wachtrij? 1 - Ja, 0 - Nee
 
 #### `--queue-default-connection`
 
-Standaardverbinding in wachtrij met berichten. Kan &#39;db&#39;, &#39;amqp&#39; of een aangepast wachtrijsysteem zijn. Het wachtrijsysteem moet worden geïnstalleerd en geconfigureerd, anders worden de berichten niet correct verwerkt.
+Standaardverbinding in wachtrij met berichten. Kan &#39;db&#39;, &#39;amqp&#39; of een aangepast wachtrijsysteem zijn.Het rijsysteem moet worden geïnstalleerd en gevormd, anders zullen de berichten niet correct worden verwerkt.
 
 - Vereist een waarde
 
@@ -3621,7 +3621,7 @@ Redis Sentinel-servers, gescheiden door komma&#39;s
 
 #### `--session-save-redis-sentinel-verify-master`
 
-Redis Sentinel verify master. Waarden: false (standaardwaarde), true
+Redis Sentinel verify master. Waarden: false (standaard), true
 
 - Vereist een waarde
 
@@ -3759,7 +3759,7 @@ Valkey Sentinel-servers, gescheiden door komma&#39;s
 
 #### `--session-save-valkey-sentinel-verify-master`
 
-Valkey Sentinel verifieert het origineel. Waarden: false (standaardwaarde), true
+Valkey Sentinel verifieert het origineel. Waarden: false (standaard), true
 
 - Vereist een waarde
 
@@ -4084,14 +4084,14 @@ ID-voorvoegsel voor toetsen
 
 #### `--magento-init-params`
 
-Voeg aan een willekeurige opdracht toe om Magento-initialisatieparameters aan te passen Bijvoorbeeld: `MAGE_MODE=developer&MAGE_DIRS[base][path]=/var/www/example.com&MAGE_DIRS[cache][path]=/var/tmp/cache`
+Voeg aan om het even welke bevel toe om de initialisatieparameters van Magento aan te passen Bijvoorbeeld: `MAGE_MODE=developer&MAGE_DIRS[base][path]=/var/www/example.com&MAGE_DIRS[cache][path]=/var/tmp/cache`
 
 - Vereist een waarde
 
 
 ## `setup:db-data:upgrade`
 
-```bash
+```shell
 bin/magento setup:db-data:upgrade [--magento-init-params MAGENTO-INIT-PARAMS]
 ```
 
@@ -4099,18 +4099,18 @@ Hiermee installeert en verbetert u gegevens in de database
 
 ### Opties
 
-Voor globale opties, zie [&#x200B; Globale opties &#x200B;](#global-options).
+Voor globale opties, zie [ Globale opties ](#global-options).
 
 #### `--magento-init-params`
 
-Voeg aan een willekeurige opdracht toe om Magento-initialisatieparameters aan te passen Bijvoorbeeld: `MAGE_MODE=developer&MAGE_DIRS[base][path]=/var/www/example.com&MAGE_DIRS[cache][path]=/var/tmp/cache`
+Voeg aan om het even welke bevel toe om de initialisatieparameters van Magento aan te passen Bijvoorbeeld: `MAGE_MODE=developer&MAGE_DIRS[base][path]=/var/www/example.com&MAGE_DIRS[cache][path]=/var/tmp/cache`
 
 - Vereist een waarde
 
 
 ## `setup:db-declaration:generate-patch`
 
-```bash
+```shell
 bin/magento setup:db-declaration:generate-patch [--revertable [REVERTABLE]] [--type [TYPE]] [--] <module> <patch>
 ```
 
@@ -4133,7 +4133,7 @@ Patchnaam
 
 ### Opties
 
-Voor globale opties, zie [&#x200B; Globale opties &#x200B;](#global-options).
+Voor globale opties, zie [ Globale opties ](#global-options).
 
 #### `--revertable`
 
@@ -4144,7 +4144,7 @@ Controleer of de patch teruggedraaid kan worden.
 
 #### `--type`
 
-Ontdek welk type patch moet worden gegenereerd. Beschikbare waarden: `data`, `schema` .
+Ontdek welk type patch moet worden gegenereerd. Beschikbare waarden: `data` , `schema` .
 
 - Standaard: `data`
 - Accepteert een waarde
@@ -4152,7 +4152,7 @@ Ontdek welk type patch moet worden gegenereerd. Beschikbare waarden: `data`, `sc
 
 ## `setup:db-declaration:generate-whitelist`
 
-```bash
+```shell
 bin/magento setup:db-declaration:generate-whitelist [--module-name [MODULE-NAME]]
 ```
 
@@ -4160,7 +4160,7 @@ Een whitelist genereren van tabellen en kolommen die door het installatieprogram
 
 ### Opties
 
-Voor globale opties, zie [&#x200B; Globale opties &#x200B;](#global-options).
+Voor globale opties, zie [ Globale opties ](#global-options).
 
 #### `--module-name`
 
@@ -4172,7 +4172,7 @@ Naam van de module waar whitelist wordt gegenereerd
 
 ## `setup:db-schema:add-slave`
 
-```bash
+```shell
 bin/magento setup:db-schema:add-slave [--host HOST] [--dbname DBNAME] [--username USERNAME] [--password [PASSWORD]] [--connection [CONNECTION]] [--resource [RESOURCE]] [--maxAllowedLag [MAXALLOWEDLAG]] [--magento-init-params MAGENTO-INIT-PARAMS]
 ```
 
@@ -4180,7 +4180,7 @@ Aan een betalingsaanhalingsteken gerelateerde tabellen verplaatsen naar een apar
 
 ### Opties
 
-Voor globale opties, zie [&#x200B; Globale opties &#x200B;](#global-options).
+Voor globale opties, zie [ Globale opties ](#global-options).
 
 #### `--host`
 
@@ -4231,14 +4231,14 @@ Max. toegestane lave-verbinding voor lave (in seconden)
 
 #### `--magento-init-params`
 
-Voeg aan een willekeurige opdracht toe om Magento-initialisatieparameters aan te passen Bijvoorbeeld: `MAGE_MODE=developer&MAGE_DIRS[base][path]=/var/www/example.com&MAGE_DIRS[cache][path]=/var/tmp/cache`
+Voeg aan om het even welke bevel toe om de initialisatieparameters van Magento aan te passen Bijvoorbeeld: `MAGE_MODE=developer&MAGE_DIRS[base][path]=/var/www/example.com&MAGE_DIRS[cache][path]=/var/tmp/cache`
 
 - Vereist een waarde
 
 
 ## `setup:db-schema:split-quote`
 
-```bash
+```shell
 bin/magento setup:db-schema:split-quote [--host HOST] [--dbname DBNAME] [--username USERNAME] [--password [PASSWORD]] [--connection [CONNECTION]] [--resource [RESOURCE]] [--magento-init-params MAGENTO-INIT-PARAMS]
 ```
 
@@ -4246,7 +4246,7 @@ Verplaats de aan uitchecken gerelateerde tabellen naar een aparte DB-server. Ver
 
 ### Opties
 
-Voor globale opties, zie [&#x200B; Globale opties &#x200B;](#global-options).
+Voor globale opties, zie [ Globale opties ](#global-options).
 
 #### `--host`
 
@@ -4288,14 +4288,14 @@ Naam van resource voor uitchecken
 
 #### `--magento-init-params`
 
-Voeg aan een willekeurige opdracht toe om Magento-initialisatieparameters aan te passen Bijvoorbeeld: `MAGE_MODE=developer&MAGE_DIRS[base][path]=/var/www/example.com&MAGE_DIRS[cache][path]=/var/tmp/cache`
+Voeg aan om het even welke bevel toe om de initialisatieparameters van Magento aan te passen Bijvoorbeeld: `MAGE_MODE=developer&MAGE_DIRS[base][path]=/var/www/example.com&MAGE_DIRS[cache][path]=/var/tmp/cache`
 
 - Vereist een waarde
 
 
 ## `setup:db-schema:split-sales`
 
-```bash
+```shell
 bin/magento setup:db-schema:split-sales [--host HOST] [--dbname DBNAME] [--username USERNAME] [--password [PASSWORD]] [--connection [CONNECTION]] [--resource [RESOURCE]] [--magento-init-params MAGENTO-INIT-PARAMS]
 ```
 
@@ -4303,7 +4303,7 @@ Verplaats verkoopgerelateerde tabellen naar een aparte DB-server. Vervangen vana
 
 ### Opties
 
-Voor globale opties, zie [&#x200B; Globale opties &#x200B;](#global-options).
+Voor globale opties, zie [ Globale opties ](#global-options).
 
 #### `--host`
 
@@ -4345,14 +4345,14 @@ Naam verkoopbron
 
 #### `--magento-init-params`
 
-Voeg aan een willekeurige opdracht toe om Magento-initialisatieparameters aan te passen Bijvoorbeeld: `MAGE_MODE=developer&MAGE_DIRS[base][path]=/var/www/example.com&MAGE_DIRS[cache][path]=/var/tmp/cache`
+Voeg aan om het even welke bevel toe om de initialisatieparameters van Magento aan te passen Bijvoorbeeld: `MAGE_MODE=developer&MAGE_DIRS[base][path]=/var/www/example.com&MAGE_DIRS[cache][path]=/var/tmp/cache`
 
 - Vereist een waarde
 
 
 ## `setup:db-schema:upgrade`
 
-```bash
+```shell
 bin/magento setup:db-schema:upgrade [--convert-old-scripts [CONVERT-OLD-SCRIPTS]] [--magento-init-params MAGENTO-INIT-PARAMS]
 ```
 
@@ -4360,7 +4360,7 @@ Installeert en verbetert het schema van DB
 
 ### Opties
 
-Voor globale opties, zie [&#x200B; Globale opties &#x200B;](#global-options).
+Voor globale opties, zie [ Globale opties ](#global-options).
 
 #### `--convert-old-scripts`
 
@@ -4371,14 +4371,14 @@ Hiermee kunt u oude scripts (InstallSchema, UpgradeSchema) converteren naar de i
 
 #### `--magento-init-params`
 
-Voeg aan een willekeurige opdracht toe om Magento-initialisatieparameters aan te passen Bijvoorbeeld: `MAGE_MODE=developer&MAGE_DIRS[base][path]=/var/www/example.com&MAGE_DIRS[cache][path]=/var/tmp/cache`
+Voeg aan om het even welke bevel toe om de initialisatieparameters van Magento aan te passen Bijvoorbeeld: `MAGE_MODE=developer&MAGE_DIRS[base][path]=/var/www/example.com&MAGE_DIRS[cache][path]=/var/tmp/cache`
 
 - Vereist een waarde
 
 
 ## `setup:db:status`
 
-```bash
+```shell
 bin/magento setup:db:status [--magento-init-params MAGENTO-INIT-PARAMS]
 ```
 
@@ -4386,18 +4386,18 @@ Controleert of het schema of de gegevens van DB verbetering vereisen
 
 ### Opties
 
-Voor globale opties, zie [&#x200B; Globale opties &#x200B;](#global-options).
+Voor globale opties, zie [ Globale opties ](#global-options).
 
 #### `--magento-init-params`
 
-Voeg aan een willekeurige opdracht toe om Magento-initialisatieparameters aan te passen Bijvoorbeeld: `MAGE_MODE=developer&MAGE_DIRS[base][path]=/var/www/example.com&MAGE_DIRS[cache][path]=/var/tmp/cache`
+Voeg aan om het even welke bevel toe om de initialisatieparameters van Magento aan te passen Bijvoorbeeld: `MAGE_MODE=developer&MAGE_DIRS[base][path]=/var/www/example.com&MAGE_DIRS[cache][path]=/var/tmp/cache`
 
 - Vereist een waarde
 
 
 ## `setup:di:compile`
 
-```bash
+```shell
 bin/magento setup:di:compile
 ```
 
@@ -4405,12 +4405,12 @@ Genereert DI-configuratie en alle ontbrekende klassen die automatisch kunnen wor
 
 ### Opties
 
-Voor globale opties, zie [&#x200B; Globale opties &#x200B;](#global-options).
+Voor globale opties, zie [ Globale opties ](#global-options).
 
 
 ## `setup:install`
 
-```bash
+```shell
 bin/magento setup:install [--remote-storage-driver REMOTE-STORAGE-DRIVER] [--remote-storage-prefix REMOTE-STORAGE-PREFIX] [--remote-storage-endpoint REMOTE-STORAGE-ENDPOINT] [--remote-storage-bucket REMOTE-STORAGE-BUCKET] [--remote-storage-region REMOTE-STORAGE-REGION] [--remote-storage-key REMOTE-STORAGE-KEY] [--remote-storage-secret REMOTE-STORAGE-SECRET] [--remote-storage-path-style REMOTE-STORAGE-PATH-STYLE] [--backend-frontname BACKEND-FRONTNAME] [--enable-debug-logging ENABLE-DEBUG-LOGGING] [--enable-syslog-logging ENABLE-SYSLOG-LOGGING] [--id_salt ID_SALT] [--checkout-async CHECKOUT-ASYNC] [--config-async CONFIG-ASYNC] [--amqp-host AMQP-HOST] [--amqp-port AMQP-PORT] [--amqp-user AMQP-USER] [--amqp-password AMQP-PASSWORD] [--amqp-virtualhost AMQP-VIRTUALHOST] [--amqp-ssl AMQP-SSL] [--amqp-ssl-options AMQP-SSL-OPTIONS] [--consumers-wait-for-messages CONSUMERS-WAIT-FOR-MESSAGES] [--queue-default-connection QUEUE-DEFAULT-CONNECTION] [--stomp-host STOMP-HOST] [--stomp-port STOMP-PORT] [--stomp-user STOMP-USER] [--stomp-password STOMP-PASSWORD] [--stomp-ssl STOMP-SSL] [--stomp-ssl-options STOMP-SSL-OPTIONS] [--deferred-total-calculating DEFERRED-TOTAL-CALCULATING] [--key KEY] [--db-host DB-HOST] [--db-name DB-NAME] [--db-user DB-USER] [--db-engine DB-ENGINE] [--db-password DB-PASSWORD] [--db-prefix DB-PREFIX] [--db-model DB-MODEL] [--db-init-statements DB-INIT-STATEMENTS] [-s|--skip-db-validation] [--http-cache-hosts HTTP-CACHE-HOSTS] [--db-ssl-key DB-SSL-KEY] [--db-ssl-cert DB-SSL-CERT] [--db-ssl-ca DB-SSL-CA] [--db-ssl-verify] [--session-save SESSION-SAVE] [--session-save-redis-host SESSION-SAVE-REDIS-HOST] [--session-save-redis-port SESSION-SAVE-REDIS-PORT] [--session-save-redis-password SESSION-SAVE-REDIS-PASSWORD] [--session-save-redis-timeout SESSION-SAVE-REDIS-TIMEOUT] [--session-save-redis-retries SESSION-SAVE-REDIS-RETRIES] [--session-save-redis-persistent-id SESSION-SAVE-REDIS-PERSISTENT-ID] [--session-save-redis-db SESSION-SAVE-REDIS-DB] [--session-save-redis-compression-threshold SESSION-SAVE-REDIS-COMPRESSION-THRESHOLD] [--session-save-redis-compression-lib SESSION-SAVE-REDIS-COMPRESSION-LIB] [--session-save-redis-log-level SESSION-SAVE-REDIS-LOG-LEVEL] [--session-save-redis-max-concurrency SESSION-SAVE-REDIS-MAX-CONCURRENCY] [--session-save-redis-break-after-frontend SESSION-SAVE-REDIS-BREAK-AFTER-FRONTEND] [--session-save-redis-break-after-adminhtml SESSION-SAVE-REDIS-BREAK-AFTER-ADMINHTML] [--session-save-redis-first-lifetime SESSION-SAVE-REDIS-FIRST-LIFETIME] [--session-save-redis-bot-first-lifetime SESSION-SAVE-REDIS-BOT-FIRST-LIFETIME] [--session-save-redis-bot-lifetime SESSION-SAVE-REDIS-BOT-LIFETIME] [--session-save-redis-disable-locking SESSION-SAVE-REDIS-DISABLE-LOCKING] [--session-save-redis-min-lifetime SESSION-SAVE-REDIS-MIN-LIFETIME] [--session-save-redis-max-lifetime SESSION-SAVE-REDIS-MAX-LIFETIME] [--session-save-redis-sentinel-master SESSION-SAVE-REDIS-SENTINEL-MASTER] [--session-save-redis-sentinel-servers SESSION-SAVE-REDIS-SENTINEL-SERVERS] [--session-save-redis-sentinel-verify-master SESSION-SAVE-REDIS-SENTINEL-VERIFY-MASTER] [--session-save-redis-sentinel-connect-retries SESSION-SAVE-REDIS-SENTINEL-CONNECT-RETRIES] [--session-save-valkey-host SESSION-SAVE-VALKEY-HOST] [--session-save-valkey-port SESSION-SAVE-VALKEY-PORT] [--session-save-valkey-password SESSION-SAVE-VALKEY-PASSWORD] [--session-save-valkey-timeout SESSION-SAVE-VALKEY-TIMEOUT] [--session-save-valkey-retries SESSION-SAVE-VALKEY-RETRIES] [--session-save-valkey-persistent-id SESSION-SAVE-VALKEY-PERSISTENT-ID] [--session-save-valkey-db SESSION-SAVE-VALKEY-DB] [--session-save-valkey-compression-threshold SESSION-SAVE-VALKEY-COMPRESSION-THRESHOLD] [--session-save-valkey-compression-lib SESSION-SAVE-VALKEY-COMPRESSION-LIB] [--session-save-valkey-log-level SESSION-SAVE-VALKEY-LOG-LEVEL] [--session-save-valkey-max-concurrency SESSION-SAVE-VALKEY-MAX-CONCURRENCY] [--session-save-valkey-break-after-frontend SESSION-SAVE-VALKEY-BREAK-AFTER-FRONTEND] [--session-save-valkey-break-after-adminhtml SESSION-SAVE-VALKEY-BREAK-AFTER-ADMINHTML] [--session-save-valkey-first-lifetime SESSION-SAVE-VALKEY-FIRST-LIFETIME] [--session-save-valkey-bot-first-lifetime SESSION-SAVE-VALKEY-BOT-FIRST-LIFETIME] [--session-save-valkey-bot-lifetime SESSION-SAVE-VALKEY-BOT-LIFETIME] [--session-save-valkey-disable-locking SESSION-SAVE-VALKEY-DISABLE-LOCKING] [--session-save-valkey-min-lifetime SESSION-SAVE-VALKEY-MIN-LIFETIME] [--session-save-valkey-max-lifetime SESSION-SAVE-VALKEY-MAX-LIFETIME] [--session-save-valkey-sentinel-master SESSION-SAVE-VALKEY-SENTINEL-MASTER] [--session-save-valkey-sentinel-servers SESSION-SAVE-VALKEY-SENTINEL-SERVERS] [--session-save-valkey-sentinel-verify-master SESSION-SAVE-VALKEY-SENTINEL-VERIFY-MASTER] [--session-save-valkey-sentinel-connect-retries SESSION-SAVE-VALKEY-SENTINEL-CONNECT-RETRIES] [--cache-backend CACHE-BACKEND] [--cache-backend-redis-server CACHE-BACKEND-REDIS-SERVER] [--cache-backend-redis-db CACHE-BACKEND-REDIS-DB] [--cache-backend-redis-port CACHE-BACKEND-REDIS-PORT] [--cache-backend-redis-password CACHE-BACKEND-REDIS-PASSWORD] [--cache-backend-redis-compress-data CACHE-BACKEND-REDIS-COMPRESS-DATA] [--cache-backend-redis-compression-lib CACHE-BACKEND-REDIS-COMPRESSION-LIB] [--cache-backend-redis-serializer CACHE-BACKEND-REDIS-SERIALIZER] [--cache-backend-redis-use-lua CACHE-BACKEND-REDIS-USE-LUA] [--cache-backend-redis-use-lua-on-gc CACHE-BACKEND-REDIS-USE-LUA-ON-GC] [--cache-backend-valkey-server CACHE-BACKEND-VALKEY-SERVER] [--cache-backend-valkey-db CACHE-BACKEND-VALKEY-DB] [--cache-backend-valkey-port CACHE-BACKEND-VALKEY-PORT] [--cache-backend-valkey-password CACHE-BACKEND-VALKEY-PASSWORD] [--cache-backend-valkey-compress-data CACHE-BACKEND-VALKEY-COMPRESS-DATA] [--cache-backend-valkey-compression-lib CACHE-BACKEND-VALKEY-COMPRESSION-LIB] [--cache-backend-valkey-serializer CACHE-BACKEND-VALKEY-SERIALIZER] [--cache-backend-valkey-use-lua CACHE-BACKEND-VALKEY-USE-LUA] [--cache-backend-valkey-use-lua-on-gc CACHE-BACKEND-VALKEY-USE-LUA-ON-GC] [--cache-id-prefix CACHE-ID-PREFIX] [--allow-parallel-generation] [--page-cache PAGE-CACHE] [--page-cache-redis-server PAGE-CACHE-REDIS-SERVER] [--page-cache-redis-db PAGE-CACHE-REDIS-DB] [--page-cache-redis-port PAGE-CACHE-REDIS-PORT] [--page-cache-redis-password PAGE-CACHE-REDIS-PASSWORD] [--page-cache-redis-compress-data PAGE-CACHE-REDIS-COMPRESS-DATA] [--page-cache-redis-compression-lib PAGE-CACHE-REDIS-COMPRESSION-LIB] [--page-cache-redis-serializer PAGE-CACHE-REDIS-SERIALIZER] [--page-cache-id-prefix PAGE-CACHE-ID-PREFIX] [--page-cache-valkey-server PAGE-CACHE-VALKEY-SERVER] [--page-cache-valkey-db PAGE-CACHE-VALKEY-DB] [--page-cache-valkey-port PAGE-CACHE-VALKEY-PORT] [--page-cache-valkey-password PAGE-CACHE-VALKEY-PASSWORD] [--page-cache-valkey-compress-data PAGE-CACHE-VALKEY-COMPRESS-DATA] [--page-cache-valkey-compression-lib PAGE-CACHE-VALKEY-COMPRESSION-LIB] [--page-cache-valkey-serializer PAGE-CACHE-VALKEY-SERIALIZER] [--lock-provider LOCK-PROVIDER] [--lock-db-prefix LOCK-DB-PREFIX] [--lock-zookeeper-host LOCK-ZOOKEEPER-HOST] [--lock-zookeeper-path LOCK-ZOOKEEPER-PATH] [--lock-file-path LOCK-FILE-PATH] [--document-root-is-pub DOCUMENT-ROOT-IS-PUB] [--backpressure-logger BACKPRESSURE-LOGGER] [--backpressure-logger-redis-server BACKPRESSURE-LOGGER-REDIS-SERVER] [--backpressure-logger-redis-port BACKPRESSURE-LOGGER-REDIS-PORT] [--backpressure-logger-redis-timeout BACKPRESSURE-LOGGER-REDIS-TIMEOUT] [--backpressure-logger-redis-persistent BACKPRESSURE-LOGGER-REDIS-PERSISTENT] [--backpressure-logger-redis-db BACKPRESSURE-LOGGER-REDIS-DB] [--backpressure-logger-redis-password BACKPRESSURE-LOGGER-REDIS-PASSWORD] [--backpressure-logger-redis-user BACKPRESSURE-LOGGER-REDIS-USER] [--backpressure-logger-id-prefix BACKPRESSURE-LOGGER-ID-PREFIX] [--base-url BASE-URL] [--language LANGUAGE] [--timezone TIMEZONE] [--currency CURRENCY] [--use-rewrites USE-REWRITES] [--use-secure USE-SECURE] [--base-url-secure BASE-URL-SECURE] [--use-secure-admin USE-SECURE-ADMIN] [--admin-use-security-key ADMIN-USE-SECURITY-KEY] [--admin-user [ADMIN-USER]] [--admin-password [ADMIN-PASSWORD]] [--admin-email [ADMIN-EMAIL]] [--admin-firstname [ADMIN-FIRSTNAME]] [--admin-lastname [ADMIN-LASTNAME]] [--search-engine SEARCH-ENGINE] [--elasticsearch-host ELASTICSEARCH-HOST] [--elasticsearch-port ELASTICSEARCH-PORT] [--elasticsearch-enable-auth ELASTICSEARCH-ENABLE-AUTH] [--elasticsearch-username ELASTICSEARCH-USERNAME] [--elasticsearch-password ELASTICSEARCH-PASSWORD] [--elasticsearch-index-prefix ELASTICSEARCH-INDEX-PREFIX] [--elasticsearch-timeout ELASTICSEARCH-TIMEOUT] [--opensearch-host OPENSEARCH-HOST] [--opensearch-port OPENSEARCH-PORT] [--opensearch-enable-auth OPENSEARCH-ENABLE-AUTH] [--opensearch-username OPENSEARCH-USERNAME] [--opensearch-password OPENSEARCH-PASSWORD] [--opensearch-index-prefix OPENSEARCH-INDEX-PREFIX] [--opensearch-timeout OPENSEARCH-TIMEOUT] [--cleanup-database] [--sales-order-increment-prefix SALES-ORDER-INCREMENT-PREFIX] [--use-sample-data] [--enable-modules [ENABLE-MODULES]] [--disable-modules [DISABLE-MODULES]] [--convert-old-scripts [CONVERT-OLD-SCRIPTS]] [-i|--interactive] [--safe-mode [SAFE-MODE]] [--data-restore [DATA-RESTORE]] [--dry-run [DRY-RUN]] [--magento-init-params MAGENTO-INIT-PARAMS]
 ```
 
@@ -4418,7 +4418,7 @@ De Magento-toepassing installeren
 
 ### Opties
 
-Voor globale opties, zie [&#x200B; Globale opties &#x200B;](#global-options).
+Voor globale opties, zie [ Globale opties ](#global-options).
 
 #### `--remote-storage-driver`
 
@@ -4565,7 +4565,7 @@ Moeten consumenten wachten op een bericht uit de wachtrij? 1 - Ja, 0 - Nee
 
 #### `--queue-default-connection`
 
-Standaardverbinding in wachtrij met berichten. Kan &#39;db&#39;, &#39;amqp&#39; of een aangepast wachtrijsysteem zijn. Het wachtrijsysteem moet worden geïnstalleerd en geconfigureerd, anders worden de berichten niet correct verwerkt.
+Standaardverbinding in wachtrij met berichten. Kan &#39;db&#39;, &#39;amqp&#39; of een aangepast wachtrijsysteem zijn.Het rijsysteem moet worden geïnstalleerd en gevormd, anders zullen de berichten niet correct worden verwerkt.
 
 - Vereist een waarde
 
@@ -4846,7 +4846,7 @@ Redis Sentinel-servers, gescheiden door komma&#39;s
 
 #### `--session-save-redis-sentinel-verify-master`
 
-Redis Sentinel verify master. Waarden: false (standaardwaarde), true
+Redis Sentinel verify master. Waarden: false (standaard), true
 
 - Vereist een waarde
 
@@ -4984,7 +4984,7 @@ Valkey Sentinel-servers, gescheiden door komma&#39;s
 
 #### `--session-save-valkey-sentinel-verify-master`
 
-Valkey Sentinel verifieert het origineel. Waarden: false (standaardwaarde), true
+Valkey Sentinel verifieert het origineel. Waarden: false (standaard), true
 
 - Vereist een waarde
 
@@ -5548,14 +5548,14 @@ Magento Installation will be run in dry-run mode
 
 #### `--magento-init-params`
 
-Voeg aan een willekeurige opdracht toe om Magento-initialisatieparameters aan te passen Bijvoorbeeld: `MAGE_MODE=developer&MAGE_DIRS[base][path]=/var/www/example.com&MAGE_DIRS[cache][path]=/var/tmp/cache`
+Voeg aan om het even welke bevel toe om de initialisatieparameters van Magento aan te passen Bijvoorbeeld: `MAGE_MODE=developer&MAGE_DIRS[base][path]=/var/www/example.com&MAGE_DIRS[cache][path]=/var/tmp/cache`
 
 - Vereist een waarde
 
 
 ## `setup:performance:generate-fixtures`
 
-```bash
+```shell
 bin/magento setup:performance:generate-fixtures [-s|--skip-reindex] [--] <profile>
 ```
 
@@ -5571,7 +5571,7 @@ Pad naar profielconfiguratiebestand
 
 ### Opties
 
-Voor globale opties, zie [&#x200B; Globale opties &#x200B;](#global-options).
+Voor globale opties, zie [ Globale opties ](#global-options).
 
 #### `--skip-reindex`, `-s`
 
@@ -5583,7 +5583,7 @@ Herindexeren overslaan
 
 ## `setup:rollback`
 
-```bash
+```shell
 bin/magento setup:rollback [-c|--code-file CODE-FILE] [-m|--media-file MEDIA-FILE] [-d|--db-file DB-FILE] [--magento-init-params MAGENTO-INIT-PARAMS]
 ```
 
@@ -5591,7 +5591,7 @@ Hiermee wordt de Magento Application-codebase, -media en -database teruggedraaid
 
 ### Opties
 
-Voor globale opties, zie [&#x200B; Globale opties &#x200B;](#global-options).
+Voor globale opties, zie [ Globale opties ](#global-options).
 
 #### `--code-file`, `-c`
 
@@ -5613,14 +5613,14 @@ Basename van het db reservedossier in var/steunen
 
 #### `--magento-init-params`
 
-Voeg aan een willekeurige opdracht toe om Magento-initialisatieparameters aan te passen Bijvoorbeeld: `MAGE_MODE=developer&MAGE_DIRS[base][path]=/var/www/example.com&MAGE_DIRS[cache][path]=/var/tmp/cache`
+Voeg aan om het even welke bevel toe om de initialisatieparameters van Magento aan te passen Bijvoorbeeld: `MAGE_MODE=developer&MAGE_DIRS[base][path]=/var/www/example.com&MAGE_DIRS[cache][path]=/var/tmp/cache`
 
 - Vereist een waarde
 
 
 ## `setup:static-content:deploy`
 
-```bash
+```shell
 bin/magento setup:static-content:deploy [-f|--force] [-s|--strategy [STRATEGY]] [-a|--area [AREA]] [--exclude-area [EXCLUDE-AREA]] [-t|--theme [THEME]] [--exclude-theme [EXCLUDE-THEME]] [-l|--language [LANGUAGE]] [--exclude-language [EXCLUDE-LANGUAGE]] [-j|--jobs [JOBS]] [--max-execution-time [MAX-EXECUTION-TIME]] [--symlink-locale] [--content-version CONTENT-VERSION] [--refresh-content-version-only] [--no-javascript] [--no-js-bundle] [--no-css] [--no-less] [--no-images] [--no-fonts] [--no-html] [--no-misc] [--no-html-minify] [--no-parent] [--] [<languages>...]
 ```
 
@@ -5637,7 +5637,7 @@ Lijst met door spaties gescheiden ISO-639-taalcodes waarvoor statische weergaveb
 
 ### Opties
 
-Voor globale opties, zie [&#x200B; Globale opties &#x200B;](#global-options).
+Voor globale opties, zie [ Globale opties ](#global-options).
 
 #### `--force`, `-f`
 
@@ -5802,7 +5802,7 @@ Bovenliggende thema&#39;s niet compileren. Alleen ondersteund in snelle en stand
 
 ## `setup:store-config:set`
 
-```bash
+```shell
 bin/magento setup:store-config:set [--base-url BASE-URL] [--language LANGUAGE] [--timezone TIMEZONE] [--currency CURRENCY] [--use-rewrites USE-REWRITES] [--use-secure USE-SECURE] [--base-url-secure BASE-URL-SECURE] [--use-secure-admin USE-SECURE-ADMIN] [--admin-use-security-key ADMIN-USE-SECURITY-KEY] [--magento-init-params MAGENTO-INIT-PARAMS]
 ```
 
@@ -5810,7 +5810,7 @@ Installeert de opslagconfiguratie. Vervangen vanaf 2.2.0. In plaats hiervan conf
 
 ### Opties
 
-Voor globale opties, zie [&#x200B; Globale opties &#x200B;](#global-options).
+Voor globale opties, zie [ Globale opties ](#global-options).
 
 #### `--base-url`
 
@@ -5868,14 +5868,14 @@ Of een functie &#39;beveiligingssleutel&#39; moet worden gebruikt in Magento Adm
 
 #### `--magento-init-params`
 
-Voeg aan een willekeurige opdracht toe om Magento-initialisatieparameters aan te passen Bijvoorbeeld: `MAGE_MODE=developer&MAGE_DIRS[base][path]=/var/www/example.com&MAGE_DIRS[cache][path]=/var/tmp/cache`
+Voeg aan om het even welke bevel toe om de initialisatieparameters van Magento aan te passen Bijvoorbeeld: `MAGE_MODE=developer&MAGE_DIRS[base][path]=/var/www/example.com&MAGE_DIRS[cache][path]=/var/tmp/cache`
 
 - Vereist een waarde
 
 
 ## `setup:uninstall`
 
-```bash
+```shell
 bin/magento setup:uninstall [--magento-init-params MAGENTO-INIT-PARAMS]
 ```
 
@@ -5883,18 +5883,18 @@ De Magento-toepassing wordt verwijderd
 
 ### Opties
 
-Voor globale opties, zie [&#x200B; Globale opties &#x200B;](#global-options).
+Voor globale opties, zie [ Globale opties ](#global-options).
 
 #### `--magento-init-params`
 
-Voeg aan een willekeurige opdracht toe om Magento-initialisatieparameters aan te passen Bijvoorbeeld: `MAGE_MODE=developer&MAGE_DIRS[base][path]=/var/www/example.com&MAGE_DIRS[cache][path]=/var/tmp/cache`
+Voeg aan om het even welke bevel toe om de initialisatieparameters van Magento aan te passen Bijvoorbeeld: `MAGE_MODE=developer&MAGE_DIRS[base][path]=/var/www/example.com&MAGE_DIRS[cache][path]=/var/tmp/cache`
 
 - Vereist een waarde
 
 
 ## `setup:upgrade`
 
-```bash
+```shell
 bin/magento setup:upgrade [--keep-generated] [--convert-old-scripts [CONVERT-OLD-SCRIPTS]] [--safe-mode [SAFE-MODE]] [--data-restore [DATA-RESTORE]] [--dry-run [DRY-RUN]] [--magento-init-params MAGENTO-INIT-PARAMS]
 ```
 
@@ -5902,7 +5902,7 @@ Hiermee worden de Magento-toepassing, DB-gegevens en het schema bijgewerkt
 
 ### Opties
 
-Voor globale opties, zie [&#x200B; Globale opties &#x200B;](#global-options).
+Voor globale opties, zie [ Globale opties ](#global-options).
 
 #### `--keep-generated`
 
@@ -5939,14 +5939,14 @@ Magento Installation will be run in dry-run mode
 
 #### `--magento-init-params`
 
-Voeg aan een willekeurige opdracht toe om Magento-initialisatieparameters aan te passen Bijvoorbeeld: `MAGE_MODE=developer&MAGE_DIRS[base][path]=/var/www/example.com&MAGE_DIRS[cache][path]=/var/tmp/cache`
+Voeg aan om het even welke bevel toe om de initialisatieparameters van Magento aan te passen Bijvoorbeeld: `MAGE_MODE=developer&MAGE_DIRS[base][path]=/var/www/example.com&MAGE_DIRS[cache][path]=/var/tmp/cache`
 
 - Vereist een waarde
 
 
 ## `store:list`
 
-```bash
+```shell
 bin/magento store:list
 ```
 
@@ -5954,12 +5954,12 @@ Hiermee wordt de lijst met winkels weergegeven
 
 ### Opties
 
-Voor globale opties, zie [&#x200B; Globale opties &#x200B;](#global-options).
+Voor globale opties, zie [ Globale opties ](#global-options).
 
 
 ## `store:website:list`
 
-```bash
+```shell
 bin/magento store:website:list
 ```
 
@@ -5967,12 +5967,12 @@ De lijst met websites weergeven
 
 ### Opties
 
-Voor globale opties, zie [&#x200B; Globale opties &#x200B;](#global-options).
+Voor globale opties, zie [ Globale opties ](#global-options).
 
 
 ## `support:backup:code`
 
-```bash
+```shell
 bin/magento support:backup:code [--name [NAME]] [-o|--output [OUTPUT]] [-l|--logs]
 ```
 
@@ -5980,7 +5980,7 @@ Codeback-up maken
 
 ### Opties
 
-Voor globale opties, zie [&#x200B; Globale opties &#x200B;](#global-options).
+Voor globale opties, zie [ Globale opties ](#global-options).
 
 #### `--name`
 
@@ -6004,7 +6004,7 @@ Logbestanden opnemen
 
 ## `support:backup:db`
 
-```bash
+```shell
 bin/magento support:backup:db [--name [NAME]] [-o|--output [OUTPUT]] [-l|--logs] [-i|--ignore-sanitize]
 ```
 
@@ -6012,7 +6012,7 @@ DB-back-up maken
 
 ### Opties
 
-Voor globale opties, zie [&#x200B; Globale opties &#x200B;](#global-options).
+Voor globale opties, zie [ Globale opties ](#global-options).
 
 #### `--name`
 
@@ -6043,7 +6043,7 @@ ontsmetten negeren
 
 ## `support:utility:check`
 
-```bash
+```shell
 bin/magento support:utility:check [--hide-paths]
 ```
 
@@ -6051,7 +6051,7 @@ Vereiste back-uphulpprogramma&#39;s controleren
 
 ### Opties
 
-Voor globale opties, zie [&#x200B; Globale opties &#x200B;](#global-options).
+Voor globale opties, zie [ Globale opties ](#global-options).
 
 #### `--hide-paths`
 
@@ -6063,7 +6063,7 @@ Alleen vereiste consolehulpprogramma&#39;s controleren
 
 ## `support:utility:paths`
 
-```bash
+```shell
 bin/magento support:utility:paths [-f|--force]
 ```
 
@@ -6071,7 +6071,7 @@ Lijst met paden voor hulpprogramma&#39;s maken
 
 ### Opties
 
-Voor globale opties, zie [&#x200B; Globale opties &#x200B;](#global-options).
+Voor globale opties, zie [ Globale opties ](#global-options).
 
 #### `--force`, `-f`
 
@@ -6083,7 +6083,7 @@ Kracht
 
 ## `theme:uninstall`
 
-```bash
+```shell
 bin/magento theme:uninstall [--backup-code] [-c|--clear-static-content] [--] <theme>...
 ```
 
@@ -6102,7 +6102,7 @@ Pad van het thema. Het themapad moet worden opgegeven als een volledig pad dat g
 
 ### Opties
 
-Voor globale opties, zie [&#x200B; Globale opties &#x200B;](#global-options).
+Voor globale opties, zie [ Globale opties ](#global-options).
 
 #### `--backup-code`
 
@@ -6121,7 +6121,7 @@ Gegenereerde statische weergavebestanden wissen.
 
 ## `varnish:vcl:generate`
 
-```bash
+```shell
 bin/magento varnish:vcl:generate [--access-list ACCESS-LIST] [--backend-host BACKEND-HOST] [--backend-port BACKEND-PORT] [--export-version EXPORT-VERSION] [--grace-period GRACE-PERIOD] [--input-file INPUT-FILE] [--output-file OUTPUT-FILE]
 ```
 
@@ -6129,7 +6129,7 @@ Genereert Varnish VCL en echo het aan de bevellijn
 
 ### Opties
 
-Voor globale opties, zie [&#x200B; Globale opties &#x200B;](#global-options).
+Voor globale opties, zie [ Globale opties ](#global-options).
 
 #### `--access-list`
 
@@ -6181,7 +6181,7 @@ Pad naar het bestand om vcl te schrijven
 
 ## `webhooks:dev:run`
 
-```bash
+```shell
 bin/magento webhooks:dev:run <name> <payload>
 ```
 
@@ -6204,12 +6204,12 @@ De payload van de webhaak in JSON-indeling
 
 ### Opties
 
-Voor globale opties, zie [&#x200B; Globale opties &#x200B;](#global-options).
+Voor globale opties, zie [ Globale opties ](#global-options).
 
 
 ## `webhooks:generate:module`
 
-```bash
+```shell
 bin/magento webhooks:generate:module
 ```
 
@@ -6217,12 +6217,12 @@ Insteekmodules genereren op basis van webharegistraties
 
 ### Opties
 
-Voor globale opties, zie [&#x200B; Globale opties &#x200B;](#global-options).
+Voor globale opties, zie [ Globale opties ](#global-options).
 
 
 ## `webhooks:info`
 
-```bash
+```shell
 bin/magento webhooks:info [--depth [DEPTH]] [--] <webhook-name> [<webhook-type>]
 ```
 
@@ -6245,7 +6245,7 @@ Het type Webhaak (voor, na)
 
 ### Opties
 
-Voor globale opties, zie [&#x200B; Globale opties &#x200B;](#global-options).
+Voor globale opties, zie [ Globale opties ](#global-options).
 
 #### `--depth`
 
@@ -6257,7 +6257,7 @@ Het aantal niveaus in de WebHaakshlading om terug te keren
 
 ## `webhooks:list`
 
-```bash
+```shell
 bin/magento webhooks:list
 ```
 
@@ -6265,12 +6265,12 @@ Lijst met geabonneerde websites weergeven
 
 ### Opties
 
-Voor globale opties, zie [&#x200B; Globale opties &#x200B;](#global-options).
+Voor globale opties, zie [ Globale opties ](#global-options).
 
 
 ## `webhooks:list:all`
 
-```bash
+```shell
 bin/magento webhooks:list:all <module_name>
 ```
 
@@ -6286,4 +6286,4 @@ Modulenaam
 
 ### Opties
 
-Voor globale opties, zie [&#x200B; Globale opties &#x200B;](#global-options).
+Voor globale opties, zie [ Globale opties ](#global-options).

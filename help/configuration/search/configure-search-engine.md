@@ -3,9 +3,9 @@ title: Configuratie van zoekmachine
 description: Configureer een zoekmachine voor on-premisse implementaties van Adobe Commerce.
 feature: Configuration, Search
 exl-id: 61fbe0c2-bdd5-4f57-a518-23e180401804
-source-git-commit: ca8dc855e0598d2c3d43afae2e055aa27035a09b
+source-git-commit: 48624d70761117ed0b9f8a7be913fce0572577b6
 workflow-type: tm+mt
-source-wordcount: '643'
+source-wordcount: '652'
 ht-degree: 0%
 
 ---
@@ -17,15 +17,15 @@ In deze sectie worden de minimale instellingen besproken die u moet kiezen om El
 >[!TIP]
 >
 >In versies 2.4.4 en 2.4.3-p2, zijn alle gebieden geëtiketteerd **Elasticsearch** ook van toepassing op OpenSearch.
->&#x200B;>Toen de steun voor Elasticsearch 8.x in versie 2.4.6 werd geïntroduceerd, werden de nieuwe etiketten gecreeerd om tussen Elasticsearch en configuraties te onderscheiden OpenSearch.
+>Toen de steun voor Elasticsearch 8.x in versie 2.4.6 werd geïntroduceerd, werden de nieuwe etiketten gecreeerd om tussen Elasticsearch en configuraties te onderscheiden OpenSearch.
 
-Voor extra details over het vormen van uw onderzoeksmotor, zie de [&#x200B; Gids van de Gebruiker &#x200B;](https://experienceleague.adobe.com/docs/commerce-admin/catalog/catalog/search/search-configuration.html?lang=nl-NL).
+Voor extra details over het vormen van uw onderzoeksmotor, zie de [ Gids van de Gebruiker ](https://experienceleague.adobe.com/docs/commerce-admin/catalog/catalog/search/search-configuration.html).
 
 ## De zoekfunctie configureren vanuit de beheerder
 
 >[!TIP]
 >
->Voor instructies bij bevordering aan een nieuwe versie van de onderzoeksmotor, zie [&#x200B; verbeteringseerste vereisten &#x200B;](../../upgrade/prepare/prerequisites.md).
+>Voor instructies bij bevordering aan een nieuwe versie van de onderzoeksmotor, zie [ verbeteringseerste vereisten ](../../upgrade/prepare/prerequisites.md).
 
 Om uw systeem te vormen om Elasticsearch of OpenSearch te gebruiken:
 
@@ -37,17 +37,17 @@ Om uw systeem te vormen om Elasticsearch of OpenSearch te gebruiken:
 
    | Optie | Beschrijving |
    |--- |--- |
-   | **[!UICONTROL Server Hostname]** | Voer de volledig gekwalificeerde hostnaam of het IP-adres in van de computer waarop Elasticsearch of OpenSearch wordt uitgevoerd.<br> Adobe Commerce op wolkeninfrastructuur: Krijg deze waarde van uw integratiesysteem. |
-   | **[!UICONTROL Server Port]** | Voer de proxypoort van de webserver in. Het gebrek is 9200 <br> Adobe Commerce op wolkeninfrastructuur: Krijg deze waarde van uw integratiesysteem. |
+   | **[!UICONTROL Server Hostname]** | Ga volledig in - gekwalificeerde hostname of IP adres van de machine die Elasticsearch of OpenSearch in werking stelt.<br> Adobe Commerce op wolkeninfrastructuur: Haal deze waarde op van uw integratiesysteem. |
+   | **[!UICONTROL Server Port]** | Voer de proxypoort van de webserver in. Het gebrek is 9200 <br> Adobe Commerce op wolkeninfrastructuur: Haal deze waarde op van uw integratiesysteem. |
    | **[!UICONTROL Index Prefix]** | Voer het voorvoegsel van de index van het zoekprogramma in. Als u één exemplaar voor meer dan één installatie van Commerce (het Opvoeren en de milieu&#39;s van de Productie) gebruikt, moet u een uniek voorvoegsel voor elke installatie specificeren. Anders kunt u het standaardvoorvoegsel magento2 gebruiken. |
    | **[!UICONTROL Enable HTTP Auth]** | Klik **[!UICONTROL Yes]** slechts als u authentificatie voor uw server van het onderzoeksmotor toeliet. Geef in dat geval een gebruikersnaam en wachtwoord op in de opgegeven velden. |
    | **[!UICONTROL Server Timeout]** | Voer de hoeveelheid tijd (in seconden) in die moet worden gewacht wanneer u probeert verbinding te maken met de Elasticsearch- of OpenSearch-server. |
 
-1. Klik op **[!UICONTROL Test Connection]**.
+1. Klik op **[!UICONTROL Test Connection]** .
 
    Monsterrespons:
 
-   ![&#x200B; succes &#x200B;](../../assets/configuration/elastic_test-success.png)
+   ![ succes ](../../assets/configuration/elastic_test-success.png)
 
    Doorgaan met:
 
@@ -56,26 +56,26 @@ Om uw systeem te vormen om Elasticsearch of OpenSearch te gebruiken:
 
    of u ziet:
 
-   ![&#x200B; ontbroken &#x200B;](../../assets/configuration/elastic_test-fail.png)
+   ![ ontbroken ](../../assets/configuration/elastic_test-fail.png)
 
 Zo ja, probeer dan het volgende:
 
 - Zorg ervoor dat de zoekmachine-server actief is.
 - Als de server zich op een andere host dan Commerce bevindt, meldt u zich aan bij de Commerce-server en pingelt u de host van de zoekmachine. Los de kwesties van de netwerkconnectiviteit op en test opnieuw de verbinding.
 - Onderzoek het bevelvenster waarin u Elasticsearch of OpenSearch voor stapelsporen en uitzonderingen begon. U moet deze oplossen voordat u verdergaat. Zorg er met name voor dat u de zoekfunctie hebt gestart als een gebruiker met `root` rechten.
-- Zorg ervoor dat [&#x200B; de firewall van UNIX en SELinux &#x200B;](../../installation/prerequisites/search-engine/overview.md#firewall-and-selinux) allebei gehandicapt zijn, of opstellingsregels om uw onderzoeksmotor en Commerce toe te laten om met elkaar te communiceren.
+- Zorg ervoor dat [ de firewall van UNIX en SELinux ](../../installation/prerequisites/search-engine/overview.md#firewall-and-selinux) allebei gehandicapt zijn, of opstellingsregels om uw onderzoeksmotor en Commerce toe te laten om met elkaar te communiceren.
 - Controleer de waarde van het veld **[!UICONTROL Server Hostname]** . Controleer of de server beschikbaar is. U kunt in plaats daarvan het IP-adres van de server proberen.
 - Gebruik de opdracht `netstat -an | grep <listen-port>` om te controleren of de poort die in het veld **[!UICONTROL Server Port]** is opgegeven, niet door een ander proces wordt gebruikt.
 
   Als u bijvoorbeeld wilt zien of de zoekmachine op de standaardpoort wordt uitgevoerd, gebruikt u de volgende opdracht:
 
-  ```bash
+  ```shell
   netstat -an | grep 9200
   ```
 
   Als het op haven 9200 loopt, toont het gelijkaardig aan het volgende:
 
-  ```
+  ```text
   `tcp        0      0 :::9200            :::-         LISTEN`
   ```
 
@@ -89,24 +89,24 @@ De cache vernieuwen met behulp van Admin:
 1. Schakel het selectievakje naast **[!UICONTROL Page Cache]** in.
 1. Van de **[!UICONTROL Actions]** lijst in het hogere recht, verfrist de klik **zich**.
 
-   ![&#x200B; geheim voorgeheugenbeheer &#x200B;](../../assets/configuration/refresh-cache.png)
+   ![ geheim voorgeheugenbeheer ](../../assets/configuration/refresh-cache.png)
 
 De cache reinigen met de opdrachtregel: [`bin/magento cache:clean`](../cli/manage-cache.md#clean-and-flush-cache-types)
 
 Herindexeren met de opdrachtregel:
 
-1. Login aan uw server van Commerce als, of schakelaar aan, de [&#x200B; eigenaar van het dossiersysteem &#x200B;](../../installation/prerequisites/file-system/overview.md).
+1. Login aan uw server van Commerce als, of schakelaar aan, de [ eigenaar van het dossiersysteem ](../../installation/prerequisites/file-system/overview.md).
 1. Voer een van de volgende opdrachten in:
 
    Voer de volgende opdracht in om alleen de zoekindex van de catalogus opnieuw te indexeren:
 
-   ```bash
+   ```shell
    bin/magento indexer:reindex catalogsearch_fulltext
    ```
 
    Voer de volgende opdracht in om alle indexen opnieuw te indexeren:
 
-   ```bash
+   ```shell
    bin/magento indexer:reindex
    ```
 
@@ -114,4 +114,4 @@ Herindexeren met de opdrachtregel:
 
    >[!INFO]
    >
-   >In tegenstelling tot de cache worden indexeerders bijgewerkt door een uitsnijdtaak. Zorg ervoor [&#x200B; uitsnede wordt toegelaten &#x200B;](../cli/configure-cron-jobs.md) alvorens u begint uw onderzoeksmotor te gebruiken.
+   >In tegenstelling tot de cache worden indexeerders bijgewerkt door een uitsnijdtaak. Zorg ervoor [ uitsnede wordt toegelaten ](../cli/configure-cron-jobs.md) alvorens u begint uw onderzoeksmotor te gebruiken.

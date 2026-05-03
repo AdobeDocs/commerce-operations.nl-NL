@@ -1,18 +1,18 @@
 ---
-title: 'ACP2E-3918: Afhandelingsfout voor klanten van bedrijven die in-store-pickup gebruiken'
+title: 'ACS2E-3918: Afhandelingsfout voor klanten van het bedrijf die in-store halen gebruiken'
 description: Pas de ACS2E-3918-patch toe om het Adobe Commerce-probleem op te lossen waarbij het uitchecken mislukt voor aangemelde bedrijfklanten die in-store-pickup gebruiken zonder standaard factureringsadres.
 feature: B2B, Companies, Purchase Orders
 role: Admin, Developer
 type: Troubleshooting
 exl-id: b3a01d6d-4e25-4089-9f47-e898a8d7a76e
-source-git-commit: fcbc85eaa6aceb5c02929d5b9dbee24f184c03b4
+source-git-commit: 48624d70761117ed0b9f8a7be913fce0572577b6
 workflow-type: tm+mt
-source-wordcount: '359'
+source-wordcount: '383'
 ht-degree: 0%
 
 ---
 
-# ACP2E-3918: Afhandelingsfout voor klanten van bedrijven die in-store-pickup gebruiken
+# ACS2E-3918: Afhandelingsfout voor klanten van het bedrijf die in-store halen gebruiken
 
 De ACS2E-3918-patch verhelpt het probleem waarbij het uitchecken mislukt voor aangemelde bedrijfklanten die in-store-pickup gebruiken zonder een standaardfactureringsadres. Deze patch is beschikbaar wanneer [[!DNL Quality Patches Tool (QPT)]](/help/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches.md) 1.1.66 wordt geïnstalleerd. De patch-id is ACP2E-3918. Dit probleem wordt volgens de planning opgelost in Adobe Commerce 2.4.9.
 
@@ -28,7 +28,7 @@ De ACS2E-3918-patch verhelpt het probleem waarbij het uitchecken mislukt voor aa
 
 >[!NOTE]
 >
->De patch kan van toepassing worden op andere versies met nieuwe [!DNL Quality Patches Tool] versies. Om te controleren of de patch compatibel is met uw Adobe Commerce-versie, werkt u het `magento/quality-patches` -pakket bij naar de meest recente versie en controleert u de compatibiliteit op de [[!DNL Quality Patches Tool] : zoek naar patches op de pagina &#x200B;](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html?lang=nl-NL) . Gebruik de patch-id als een zoekwoord om de patch te zoeken.
+>De patch kan van toepassing worden op andere versies met nieuwe [!DNL Quality Patches Tool] versies. Als u wilt controleren of de patch compatibel is met uw Adobe Commerce-versie, werkt u het `magento/quality-patches` -pakket bij naar de meest recente versie en controleert u de compatibiliteit op de [[!DNL Quality Patches Tool] : Zoek naar de pagina van flarden ](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html). Gebruik de patch-id als een zoekwoord om de patch te zoeken.
 
 ## Probleem
 
@@ -57,7 +57,7 @@ De betalingsstap wordt tijdens het uitchecken correct geladen en er worden geen 
 
 De betalingsstap wordt niet geladen en de browserconsole geeft de volgende JavaScript-fout weer:
 
-```
+```text
         Uncaught TypeError: Unable to process binding "text: function(){return currentBillingAddress().street.join(', ') }"
         Message: Cannot read properties of undefined (reading 'join')
 ```
@@ -66,11 +66,11 @@ De betalingsstap wordt niet geladen en de browserconsole geeft de volgende JavaS
 
 Om individuele flarden toe te passen, gebruik de volgende verbindingen afhankelijk van uw plaatsingsmethode:
 
-* Op locatie Adobe Commerce of Magento Open Source: [[!DNL Quality Patches Tool] > Gebruik &#x200B;](/help/tools/quality-patches-tool/usage.md) in de handleiding [!DNL Quality Patches Tool] .
-* Adobe Commerce op wolkeninfrastructuur: [&#x200B; Verbeteringen en Patches > Pas Patches &#x200B;](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html?lang=nl-NL) in Commerce op de gids van de Infrastructuur van de Wolk toe.
+* Adobe Commerce of Magento Open Source ter plaatse: [[!DNL Quality Patches Tool] > Gebruik ](/help/tools/quality-patches-tool/usage.md) in de [!DNL Quality Patches Tool] gids.
+* Adobe Commerce op cloudinfrastructuur: [ Verbeteringen en Patches > pas Patches ](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html) in Commerce op de gids van de Infrastructuur van de Wolk toe.
 
 ## Gerelateerde lezing
 
 Meer informatie over [!DNL Quality Patches Tool] vindt u in:
 
-* [[!DNL Quality Patches Tool]: Een zelfbedieningshulpmiddel voor kwaliteitspatches &#x200B;](/help/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches.md) in de gids van Hulpmiddelen.
+* [[!DNL Quality Patches Tool] : Een zelfbedieningshulpmiddel voor kwaliteitspatches ](/help/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches.md) in de gids van Hulpmiddelen.

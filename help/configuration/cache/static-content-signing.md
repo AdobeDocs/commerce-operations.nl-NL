@@ -3,9 +3,9 @@ title: Statische inhoudcache
 description: Meer informatie over het ondertekenen van statische inhoudcache en het optimaliseren van prestaties in Adobe Commerce. Ontdek hoe u caching-functies kunt inschakelen, uitschakelen en configureren.
 feature: Configuration, Cache, SCD
 exl-id: b54ceea2-b3a1-4dbb-ba87-743f2af0d2fb
-source-git-commit: 10f324478e9a5e80fc4d28ce680929687291e990
+source-git-commit: 48624d70761117ed0b9f8a7be913fce0572577b6
 workflow-type: tm+mt
-source-wordcount: '468'
+source-wordcount: '496'
 ht-degree: 0%
 
 ---
@@ -14,7 +14,7 @@ ht-degree: 0%
 
 Om de prestaties te verbeteren, stelt Commerce de `Expires` -headers in voor statische bronnen, zoals afbeeldingen, JavaScript- en CSS-bestanden.
 Als u de header `Expires` instelt op een statische bron, geeft u de browser de opdracht de bron in de cache bij die URL in te stellen en de versie in de cache te verzenden tot deze is verlopen.
-Dit is een gemeenschappelijke [&#x200B; beste praktijk &#x200B;](https://developer.yahoo.com/performance/rules.html#expires=) voor het in cache plaatsen van statische middelen.
+Dit is een gemeenschappelijke [ beste praktijk ](https://developer.yahoo.com/performance/rules.html#expires=) voor het in cache plaatsen van statische middelen.
 
 Wanneer de browser een statische bron in cache plaatst en die resource op de server verandert, moet u het cachegeheugen van de browser wissen, zodat de nieuwe versie kan worden gedownload.
 Het handmatig wissen van het cachegeheugen van de browser werkt als u een websitebeheerder bent, maar dit is geen geschikte aanvraag om van uw gebruikers te maken wanneer u ze nieuwe versies van een statische bron wilt downloaden.
@@ -26,7 +26,7 @@ Commerce doet dit door een implementatieversie toe te voegen aan de URL van stat
 
 Hieronder ziet u een voorbeeld van een URL die is ondertekend met een versie:
 
-```
+```text
 http://magento2.com/pub/static/version1475604434/frontend/Magento/luma/en_US/images/logo.svg
 ```
 
@@ -35,22 +35,22 @@ Hierdoor wordt de URL van de statische bestanden gewijzigd en wordt de browser g
 
 Commerce schakelt deze functie standaard in en Adobe raadt aan deze functie ingeschakeld te houden om problemen te voorkomen die te maken hebben met browsers die oude statische bronnen gebruiken.
 
-De configuratie voor het ondertekenen van statische inhoud vindt u in [**[!UICONTROL Stores]**> Instellingen > Configuratie >**[!UICONTROL Advanced]**>**[!UICONTROL Developer]**>**[!UICONTROL Static Files Settings]**](https://experienceleague.adobe.com/nl/docs/commerce-admin/systems/tools/developer-tools#static-file-signatures) .
+De configuratie voor het ondertekenen van statische inhoud vindt u in [**[!UICONTROL Stores]**> Instellingen > Configuratie >**[!UICONTROL Advanced]**>**[!UICONTROL Developer]**>**[!UICONTROL Static Files Settings]**](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/tools/developer-tools#static-file-signatures) .
 
-- **slechts op-gebouw**: Deze configuratie is beschikbaar als uw plaats **niet** op [&#x200B; wijze van de Productie &#x200B;](https://experienceleague.adobe.com/docs/commerce-operations/configuration-guide/setup/application-modes.html?lang=nl-NL#production-mode) is.
-- **Wolk**: Deze configuratie is verborgen omdat de wijze van de Productie strikt wordt afgedwongen; daarom moet u de bevellijn zoals hieronder getoond gebruiken.
+- **slechts op-gebouw**: Deze configuratie is beschikbaar als uw plaats **niet** op [ wijze van de Productie ](https://experienceleague.adobe.com/docs/commerce-operations/configuration-guide/setup/application-modes.html#production-mode) is.
+- **Wolk**: Deze configuratie wordt verborgen omdat de wijze van de Productie strikt wordt afgedwongen; daarom moet u de opdrachtregel gebruiken zoals hieronder wordt getoond.
 
-![&#x200B; de Statische Montages van Dossiers &#x200B;](../../assets/configuration/static-files-settings.png)
+![ de Statische Montages van Dossiers ](../../assets/configuration/static-files-settings.png)
 
 De status bepalen:
 
-```bash
+```shell
 bin/magento config:show dev/static/sign
 ```
 
 Ondertekening van statische inhoud in- of uitschakelen:
 
-```bash
+```shell
 bin/magento config:set dev/static/sign <value>
 ```
 

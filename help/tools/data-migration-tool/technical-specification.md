@@ -3,9 +3,9 @@ title: '[!DNL Data Migration Tool] technische specificatie'
 description: Leer over de implementatiedetails van  [!DNL Data Migration Tool]  en hoe te wanneer het overbrengen van gegevens tussen Magento 1 en Magento 2 uit te breiden.
 exl-id: fec3ac3a-dd67-4533-a29f-db917f54d606
 topic: Commerce, Migration
-source-git-commit: ca8dc855e0598d2c3d43afae2e055aa27035a09b
+source-git-commit: 48624d70761117ed0b9f8a7be913fce0572577b6
 workflow-type: tm+mt
-source-wordcount: '2098'
+source-wordcount: '2113'
 ht-degree: 0%
 
 ---
@@ -16,11 +16,11 @@ In deze sectie worden de implementatiedetails van [!DNL Data Migration Tool] bes
 
 ## Opslagplaatsen
 
-Om tot de [!DNL Data Migration Tool] broncode toegang te hebben, zie de [&#x200B; bewaarplaats GitHub &#x200B;](https://github.com/magento/data-migration-tool).
+Om tot de [!DNL Data Migration Tool] broncode toegang te hebben, zie de [ bewaarplaats GitHub ](https://github.com/magento/data-migration-tool).
 
 ## Systeemvereisten
 
-De [&#x200B; systeemvereisten &#x200B;](../../installation/system-requirements.md) voor [!DNL Data Migration Tool] zijn het zelfde als voor Magento 2.
+De [ systeemvereisten ](../../installation/system-requirements.md) voor [!DNL Data Migration Tool] zijn het zelfde als voor Magento 2.
 
 ## Interne structuur
 
@@ -28,7 +28,7 @@ De [&#x200B; systeemvereisten &#x200B;](../../installation/system-requirements.m
 
 In het volgende diagram wordt de mapstructuur van [!DNL Data Migration Tool] weergegeven:
 
-```
+```shell
 ├── etc                                    --- all configuration files
 │   ├── opensource-to-opensource            --- configuration files for migration from Magento Open Source 1 to Magento Open Source 2
 │   │   ├── 1.9.1.1
@@ -103,13 +103,13 @@ In het volgende diagram wordt de mapstructuur van [!DNL Data Migration Tool] wee
 
 ## Invoerpunt
 
-Het script waarmee het migratieproces wordt uitgevoerd, bevindt zich in: `magento-root/bin/magento` .
+Het script waarmee het migratieproces wordt uitgevoerd, bevindt zich in: `magento-root/bin/magento`.
 
 ## Configuratie
 
 Het schema voor het configuratiebestand `config.xsd` bevindt zich in de map `etc/` . Het standaardconfiguratiebestand (`config.xml.dist`) wordt gemaakt voor elke versie van Magento 1.x. Deze bevindt zich in een aparte map onder `etc/` .
 
-Het standaardconfiguratiedossier kan door douane worden vervangen één (zie [&#x200B; bevelsyntaxis &#x200B;](migrate-data/overview.md#command-syntax)).
+Het standaardconfiguratiedossier kan door douane worden vervangen één (zie [ bevelsyntaxis ](migrate-data/overview.md#command-syntax)).
 
 Het configuratiebestand heeft de volgende structuur:
 
@@ -227,7 +227,7 @@ Het migratieproces bestaat uit stappen.
 
 Stap is een eenheid die functionaliteit verstrekt die voor migratie sommige gescheiden gegevens wordt vereist. De stap kan uit één of meerdere stadia (integriteitscontrole, gegevens, volumecontrole, en delta) bestaan.
 
-Door gebrek, zijn er verscheidene stappen ([&#x200B; Kaart &#x200B;](#map-step), [&#x200B; EAV &#x200B;](#eav), [&#x200B; URL herschrijft &#x200B;](#url-rewrite-step), etc.). U kunt desgewenst ook uw eigen stappen toevoegen.
+Door gebrek, zijn er verscheidene stappen ([ Kaart ](#map-step), [ EAV ](#eav), [ URL herschrijft ](#url-rewrite-step), etc.). U kunt desgewenst ook uw eigen stappen toevoegen.
 
 De stappen verwante klassen worden gevestigd in de src/Migration/Step folder.
 
@@ -265,7 +265,7 @@ class StageClass implements StageInterface
 
 Als het gegevenswerkgebied terugdraaiacties ondersteunt, moet de interface `RollbackInterface` worden geïmplementeerd.
 
-Visualisatie van de lopende stap wordt verstrekt door de component ProgressBar van Symfony (zie [&#x200B; bar van de Voortgang &#x200B;](https://symfony.com/doc/current/components/console/helpers/progressbar.html)). Open deze component in een stap als LogLevelProcessor.
+Visualisatie van de lopende stap wordt verstrekt door de component ProgressBar van Symfony (zie [ bar van de Voortgang ](https://symfony.com/doc/current/components/console/helpers/progressbar.html)). Open deze component in een stap als LogLevelProcessor.
 
 De belangrijkste gebruiksmethoden zijn:
 
@@ -453,7 +453,7 @@ Enkele tabellen die in de stap worden verwerkt:
 
 ### Delta-migratiemodus
 
-Na de hoofdmigratie hadden aanvullende gegevens kunnen worden toegevoegd aan de Magento 1-database (bijvoorbeeld door klanten op de winkel). Om deze gegevens te volgen, plaatst het Hulpmiddel omhoog de gegevensbestandtrekkers voor lijsten in het begin van migratieproces. Voor meer informatie, zie [&#x200B; gegevens migreren die door derdeuitbreidingen &#x200B;](migrate-data/delta.md#migrate-data-created-by-third-party-extensions) worden gecreeerd.
+Na de hoofdmigratie hadden aanvullende gegevens kunnen worden toegevoegd aan de Magento 1-database (bijvoorbeeld door klanten op de winkel). Om deze gegevens te volgen, plaatst het Hulpmiddel omhoog de gegevensbestandtrekkers voor lijsten in het begin van migratieproces. Voor meer informatie, zie [ gegevens migreren die door derdeuitbreidingen ](migrate-data/delta.md#migrate-data-created-by-third-party-extensions) worden gecreeerd.
 
 ## Gegevensbronnen
 
@@ -461,7 +461,7 @@ Om de gegevensbronnen van Magento 1 en Magento 2 te bereiken en met zijn gegeven
 
 Hier volgt een klassediagram van deze klassen:
 
-![&#x200B; Structuur van de Gegevens van het Hulpmiddel van de Migratie &#x200B;](../../assets/data-migration/MmigrationToolDataStructure.png)
+![ Structuur van de Gegevens van het Hulpmiddel van de Migratie ](../../assets/data-migration/MmigrationToolDataStructure.png)
 
 ## Logboekregistratie
 
@@ -492,9 +492,9 @@ $this->logger->warning("Some warning message");
 
 Het is mogelijk aan te passen waar de logboekinformatie moet worden geschreven. U kunt dat doen door handler aan logboekregistratie toe te voegen met de methode pushHandler() van het logger. Elke handler moet de interface `\Monolog\Handler\HandlerInterface` implementeren. Er zijn nu twee handlers:
 
-* ConsoleHandler: schrijft berichten naar console
+* ConsoleHandler: schrijft berichten aan console
 
-* FileHandler: schrijft berichten naar logbestand dat is ingesteld in de configuratieoptie &quot;log_file&quot;
+* FileHandler: schrijft berichten aan logboekdossier dat in &quot;log_file&quot;configuratieoptie is geplaatst
 
 Het is ook mogelijk om het even welke extra manager uit te voeren. Er is een set handlers in Magento-framework. Voorbeeld van het toevoegen van handlers aan registreerapparaat:
 
@@ -535,12 +535,12 @@ De [!DNL Data Migration Tool] bevat drie typen tests:
 
 Deze bevinden zich in de map `tests/` van het gereedschap. Dit is hetzelfde type test (eenheidstests staan in de map `tests/unit` ). Als u de test wilt starten, moet u de punit hebben geïnstalleerd. Wijzig de huidige map in de testmap en start de punit. Bijvoorbeeld:
 
-```bash
+```shell
 [10:32 AM]-[vagrant@debian-70rc1-x64-vbox4210]-[/var/www/magento2/vendor/magento/data-migration-tool]-[git master]
 $ cd tests/unit
 ```
 
-```bash
+```shell
 [10:33 AM]-[vagrant@debian-70rc1-x64-vbox4210]-[/var/www/magento2/vendor/magento/data-migration-tool/tests/unit]-[git master]
 $ phpunit
 PHPUnit 8.1.0 by Sebastian Bergmann.

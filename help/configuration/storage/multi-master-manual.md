@@ -3,9 +3,9 @@ title: Hoofddatabases handmatig configureren
 description: Zie begeleiding bij het manueel vormen van de gespleten gegevensbestandoplossing.
 recommendations: noCatalog
 exl-id: 2c357486-4a8a-4a36-9e13-b53c83f69456
-source-git-commit: af45ac46afffeef5cd613628b2a98864fd7da69b
+source-git-commit: 48624d70761117ed0b9f8a7be913fce0572577b6
 workflow-type: tm+mt
-source-wordcount: '1373'
+source-wordcount: '1391'
 ht-degree: 0%
 
 ---
@@ -52,10 +52,10 @@ Adobe raadt u ten zeerste aan een back-up te maken van uw huidige database en be
 
 **aan file uw systeem**:
 
-1. Login aan uw server van Commerce als, of schakelaar aan, de [&#x200B; eigenaar van het dossiersysteem &#x200B;](../../installation/prerequisites/file-system/overview.md).
+1. Login aan uw server van Commerce als, of schakelaar aan, de [ eigenaar van het dossiersysteem ](../../installation/prerequisites/file-system/overview.md).
 1. Voer de volgende opdrachten in:
 
-   ```bash
+   ```shell
    magento setup:backup --code --media --db
    ```
 
@@ -70,7 +70,7 @@ Deze sectie bespreekt hoe te om gegevensbestandinstanties voor verkoop en citaat
 1. Meld u als elke gebruiker aan bij uw databaseserver.
 1. Ga het volgende bevel in om aan een MySQL bevelherinnering te krijgen:
 
-   ```bash
+   ```shell
    mysql -u root -p
    ```
 
@@ -93,7 +93,7 @@ Deze sectie bespreekt hoe te om gegevensbestandinstanties voor verkoop en citaat
 
    quotadatabase:
 
-   ```bash
+   ```shell
    mysql -u magento_quote -p
    ```
 
@@ -101,11 +101,11 @@ Deze sectie bespreekt hoe te om gegevensbestandinstanties voor verkoop en citaat
    exit
    ```
 
-   ```bash
+   ```shell
    mysql -u magento_quote -p
    ```
 
-   ```bash
+   ```shell
    mysql -u magento_sales -p
    ```
 
@@ -130,7 +130,7 @@ Tabelnamen van verkoopdatabase beginnen met:
 
 >[!INFO]
 >
->Deze sectie bevat manuscripten met specifieke namen van gegevensbestandlijsten. Als u aanpassingen hebt uitgevoerd of als u een volledige lijst van lijsten wilt zien alvorens u acties op hen uitvoert, zie [&#x200B; manuscripten van de Verwijzing &#x200B;](#reference-scripts).
+>Deze sectie bevat manuscripten met specifieke namen van gegevensbestandlijsten. Als u aanpassingen hebt uitgevoerd of als u een volledige lijst van lijsten wilt zien alvorens u acties op hen uitvoert, zie [ manuscripten van de Verwijzing ](#reference-scripts).
 
 Zie voor meer informatie:
 
@@ -202,7 +202,7 @@ Voer het voorgaande script uit:
 
 1. Meld u aan bij uw MySQL-database als de `root` - of beheergebruiker:
 
-   ```bash
+   ```shell
    mysql -u root -p
    ```
 
@@ -235,25 +235,25 @@ Voer de volgende `mysqldump` opdrachten één voor één uit vanuit de opdrachts
 
 #### Script 1
 
-```bash
+```shell
 mysqldump -u <your database root username> -p <your main Commerce DB name> sales_bestsellers_aggregated_daily sales_bestsellers_aggregated_monthly sales_bestsellers_aggregated_yearly sales_creditmemo sales_creditmemo_comment sales_creditmemo_grid sales_creditmemo_item sales_invoice sales_invoice_comment sales_invoice_grid sales_invoice_item sales_invoiced_aggregated sales_invoiced_aggregated_order sales_order sales_order_address sales_order_aggregated_created sales_order_aggregated_updated sales_order_grid sales_order_item sales_order_payment sales_order_status sales_order_status_history sales_order_status_label sales_order_status_state sales_order_tax sales_order_tax_item sales_payment_transaction sales_refunded_aggregated sales_refunded_aggregated_order sales_sequence_meta sales_sequence_profile sales_shipment sales_shipment_comment sales_shipment_grid sales_shipment_item sales_shipment_track sales_shipping_aggregated sales_shipping_aggregated_order > /<path>/sales.sql
 ```
 
 #### Script 2
 
-```bash
+```shell
 mysqldump -u <your database root username> -p <your main Commerce DB name> magento_sales_creditmemo_grid_archive magento_sales_invoice_grid_archive magento_sales_order_grid_archive magento_sales_shipment_grid_archive > /<path>/salesarchive.sql
 ```
 
 #### Script 3
 
-```bash
+```shell
 mysqldump -u <your database root username> -p <your main Commerce DB name> magento_customercustomattributes_sales_flat_order magento_customercustomattributes_sales_flat_order_address > /<path>/customercustomattributes.sql
 ```
 
 #### Script 4
 
-```bash
+```shell
 mysqldump -u <your database root username> -p <your main Commerce DB name> sequence_creditmemo_0 sequence_creditmemo_1 sequence_invoice_0 sequence_invoice_1 sequence_order_0 sequence_order_1 sequence_rma_item_0 sequence_rma_item_1 sequence_shipment_0 sequence_shipment_1 > /<path>/sequence.sql
 ```
 
@@ -263,11 +263,11 @@ Met dit script worden de verkoopgegevens in de quotadatabase hersteld.
 
 #### NDB-vereiste
 
-Als u de cluster van het a [&#x200B; Gegevensbestand van het Netwerk (NDB) &#x200B;](https://dev.mysql.com/doc/refman/5.6/en/mysql-cluster.html) gebruikt:
+Als u de cluster van het a [ Gegevensbestand van het Netwerk (NDB) ](https://dev.mysql.com/doc/refman/5.6/en/mysql-cluster.html) gebruikt:
 
 1. Tabellen van InnoDb naar NDB-type converteren in dump-bestanden:
 
-   ```bash
+   ```shell
    sed -ei 's/InnoDb/NDB/' <file name>.sql
    ```
 
@@ -277,19 +277,19 @@ Als u de cluster van het a [&#x200B; Gegevensbestand van het Netwerk (NDB) &#x20
 
 Voer de volgende opdrachten uit:
 
-```bash
+```shell
 mysql -u <root username> -p <your sales DB name> < /<path>/sales.sql
 ```
 
-```bash
+```shell
 mysql -u <root username> -p <your sales DB name> < /<path>/sequence.sql
 ```
 
-```bash
+```shell
 mysql -u <root username> -p <your sales DB name> < /<path>/salesarchive.sql
 ```
 
-```bash
+```shell
 mysql -u <root username> -p <your sales DB name> < /<path>/customercustomattributes.sql
 ```
 
@@ -309,7 +309,7 @@ Deze sectie bespreekt taken die worden vereist om buitenlandse sleutels van de l
 
 >[!INFO]
 >
->Deze sectie bevat manuscripten met specifieke namen van gegevensbestandlijsten. Als u aanpassingen hebt uitgevoerd of als u een volledige lijst van lijsten wilt zien alvorens u acties op hen uitvoert, zie [&#x200B; manuscripten van de Verwijzing &#x200B;](#reference-scripts).
+>Deze sectie bevat manuscripten met specifieke namen van gegevensbestandlijsten. Als u aanpassingen hebt uitgevoerd of als u een volledige lijst van lijsten wilt zien alvorens u acties op hen uitvoert, zie [ manuscripten van de Verwijzing ](#reference-scripts).
 
 De namen van de de gegevensbestandlijsten van de citaat beginnen met `quote`. De tabellen `magento_customercustomattributes_sales_flat_quote` en `magento_customercustomattributes_sales_flat_quote_address` worden ook beïnvloed
 
@@ -330,7 +330,7 @@ Voer het script als volgt uit:
 
 1. Meld u aan bij uw MySQL-database als de basis- of beheergebruiker:
 
-   ```bash
+   ```shell
    mysql -u root -p
    ```
 
@@ -351,17 +351,17 @@ In deze sectie wordt beschreven hoe u een back-up kunt maken van aanhalingstekst
 
 Voer het volgende bevel van een bevelherinnering in werking:
 
-```bash
+```shell
 mysqldump -u <your database root username> -p <your main Commerce DB name> magento_customercustomattributes_sales_flat_quote magento_customercustomattributes_sales_flat_quote_address quote quote_address quote_address_item quote_item quote_item_option quote_payment quote_shipping_rate quote_id_mask > /<path>/quote.sql;
 ```
 
 ### NDB-vereiste
 
-Als u de cluster van het a [&#x200B; Gegevensbestand van het Netwerk (NDB) &#x200B;](https://dev.mysql.com/doc/refman/5.6/en/mysql-cluster.html) gebruikt:
+Als u de cluster van het a [ Gegevensbestand van het Netwerk (NDB) ](https://dev.mysql.com/doc/refman/5.6/en/mysql-cluster.html) gebruikt:
 
 1. Tabellen van InnoDb naar NDB-type converteren in dump-bestanden:
 
-   ```bash
+   ```shell
    sed -ei 's/InnoDb/NDB/' <file name>.sql
    ```
 
@@ -369,7 +369,7 @@ Als u de cluster van het a [&#x200B; Gegevensbestand van het Netwerk (NDB) &#x20
 
 ### Tabellen herstellen naar de quotadatabase
 
-```bash
+```shell
 mysql -u root -p magento_quote < /<path>/quote.sql
 ```
 
@@ -453,7 +453,7 @@ Voer het script als volgt uit:
 
 1. Meld u aan bij uw MySQL-database als de basis- of beheergebruiker:
 
-   ```bash
+   ```shell
    mysql -u root -p
    ```
 
@@ -477,10 +477,10 @@ De laatste stap bij het handmatig splitsen van databases is het toevoegen van ve
 
 Om de plaatsingsconfiguratie bij te werken:
 
-1. Login aan uw server van Commerce als, of schakelaar aan, de [&#x200B; eigenaar van het dossiersysteem &#x200B;](../../installation/prerequisites/file-system/overview.md).
+1. Login aan uw server van Commerce als, of schakelaar aan, de [ eigenaar van het dossiersysteem ](../../installation/prerequisites/file-system/overview.md).
 1. Maak een back-up van uw implementatieconfiguratie:
 
-   ```bash
+   ```shell
    cp <magento_root>/app/etc/env.php <magento_root>/app/etc/env.php.orig
    ```
 

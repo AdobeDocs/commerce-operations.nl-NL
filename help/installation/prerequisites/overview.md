@@ -2,10 +2,10 @@
 title: Voorwaarden voor installatie op locatie
 description: Meer informatie over de softwareafhankelijkheden die vereist zijn voor installaties in Adobe Commerce op locatie.
 exl-id: dd4694e7-5437-440c-bb67-804ae36149de
-source-git-commit: 766226dc998aafe54bc84d77cabee6fb0a969e6c
+source-git-commit: 319f3232d1ba5f5ed7cdd10ce85b9d7ffbeec89a
 workflow-type: tm+mt
-source-wordcount: '350'
-ht-degree: 1%
+source-wordcount: '356'
+ht-degree: 0%
 
 ---
 
@@ -13,7 +13,7 @@ ht-degree: 1%
 
 Voordat u Adobe Commerce installeert, moet u het volgende doen:
 
-* Opstelling één of meerdere gastheren die aan de [&#x200B; systeemvereisten &#x200B;](../system-requirements.md) voldoen die in *Commerce op-gebouw* tabel worden vermeld.
+* Opstelling één of meerdere gastheren die aan de [ systeemvereisten ](../system-requirements.md) voldoen die in *Commerce op-gebouw* tabel worden vermeld.
 * Als u opstelling meer dan één Webknoop met lading het in evenwicht brengen, opstelling en test dat deel van uw systeem _alvorens_ u de toepassing installeert.
 * Zorg ervoor dat u op verschillende punten tijdens de installatie een back-up van het gehele systeem kunt maken, zodat u het systeem kunt terugdraaien als er problemen zijn.
 
@@ -21,27 +21,27 @@ Voordat u Adobe Commerce installeert, moet u het volgende doen:
 >
 >Wij veronderstellen u de Adobe Commerce in a **ontwikkelomgeving** installeert, dat u de toegang van de wortelgebruiker tot de machine hebt, **en** dat de machine niet hoogst veilig moet zijn. Als u opstelling een veiliger machine bent, adviseren wij sterk u een netwerkbeheerder voor extra hulp raadplegen.
 
-We raden u ten zeerste aan uw besturingssysteemsoftware bij te werken en bij te werken. Deze verbeteringen kunnen veiligheid en softwaremoeilijke situaties verstrekken die toekomstige problemen zouden kunnen verhinderen. Weet u niet wat dit betekent? Controle uit onze [&#x200B; pagina van het installatieoverzicht &#x200B;](../overview.md).
+We raden u ten zeerste aan uw besturingssysteemsoftware bij te werken en bij te werken. Deze verbeteringen kunnen veiligheid en softwaremoeilijke situaties verstrekken die toekomstige problemen zouden kunnen verhinderen. Weet u niet wat dit betekent? Controle uit onze [ pagina van het installatieoverzicht ](../overview.md).
 
 Voer de volgende opdrachten in als een gebruiker met `root` -rechten:
 
 * Ubuntu
 
-  ```bash
+  ```shell
   apt-get update
   ```
 
-  ```bash
+  ```shell
   apt-get upgrade
   ```
 
 * CentOS
 
-  ```bash
+  ```shell
   yum -y update
   ```
 
-  ```bash
+  ```shell
   yum -y upgrade
   ```
 
@@ -57,34 +57,34 @@ Ubuntu: `apache2 -v`
 
 Adobe Commerce ondersteunt Apache versie 2.4 zoals het volgende resultaat aangeeft:
 
-```
+```text
 Server version: Apache/2.4.0 (Unix)
 Server built:   Jul 23 2017 14:17:29
 ```
 
-Om Apache te installeren of te bevorderen, zie [&#x200B; Apache &#x200B;](web-server/apache.md).
+Om Apache te installeren of te bevorderen, zie [ Apache ](web-server/apache.md).
 
 ### PHP
 
-Zie *Commerce op-gebouw* lusje in [&#x200B; systeemvereisten &#x200B;](../system-requirements.md) voor gesteunde versies van PHP en [&#x200B; PHP &#x200B;](../system-requirements.md#php-settings) voor PHP vereisten.
+Zie *Commerce op-gebouw* lusje in [ systeemvereisten ](../system-requirements.md) voor gesteunde versies van PHP en [ PHP ](../system-requirements.md#php-settings) voor PHP vereisten.
 
 ### MySQL
 
-Controleer of u een compatibele versie van MySQL hebt voor de versie van Adobe Commerce die u installeert. Zie *Commerce op-gebouw* lusje in [&#x200B; vereisten van het Systeem &#x200B;](../system-requirements.md) voor gesteunde versies.
+Controleer of u een compatibele versie van MySQL hebt voor de versie van Adobe Commerce die u installeert. Zie *Commerce op-gebouw* lusje in [ vereisten van het Systeem ](../system-requirements.md) voor gesteunde versies.
 
-```bash
+```shell
 mysql -u <database root user or database owner name> -p
 ```
 
 Bijvoorbeeld:
 
-```bash
+```shell
 mysql -u magento -p
 ```
 
 In de beveloutput, wijst de `Server version` lijn op de versie die u loopt. Bevestig dat deze overeenkomt met een versie die wordt ondersteund voor de Adobe Commerce-release die u installeert.
 
-```
+```text
 Welcome to the MySQL monitor.  Commands end with ; or \g.
 Your MySQL connection id is 871
 Server version: <supported MySQL version> MySQL Community Server (GPL)
@@ -100,29 +100,29 @@ Typ `help` of `\h` voor hulp. Typ `\c` om de huidige invoerinstructie te wissen.
 
 Typ `exit` bij de `mysql>` -prompt om af te sluiten.
 
-Om MySQL te installeren of te bevorderen, zie [&#x200B; MySQL &#x200B;](database/mysql.md).
+Om MySQL te installeren of te bevorderen, zie [ MySQL ](database/mysql.md).
 
 ### Zoekmachine
 
 Om uw installatie van OpenSearch te verifiëren:
 
-```bash
+```shell
 curl -XGET '<opensearch-hostname>:<opensearch-port>'
 ```
 
 Ga als volgt te werk om uw Elasticsearch-installatie te verifiëren:
 
-```bash
+```shell
 curl -XGET '<elasticsearch-hostname>:<elasticsearch-port>'
 ```
 
 Bijvoorbeeld:
 
-```bash
+```shell
 curl -XGET 'localhost:9200'
 ```
 
-```
+```json
 {
   "name" : "Z0S2B05",
   "cluster_name" : "elasticsearch_myname",

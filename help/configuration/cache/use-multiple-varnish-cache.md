@@ -3,10 +3,10 @@ title: Cache wissen met meerdere instanties van Varnish
 description: Leer hoe cachewissen werkt met meerdere instanties van Varnish in Adobe Commerce. Ontdek best practices voor configuratie en beheer.
 feature: Configuration, Cache
 exl-id: 289a4e54-9e73-454c-bfb9-e78e405af56c
-source-git-commit: 10f324478e9a5e80fc4d28ce680929687291e990
+source-git-commit: 48624d70761117ed0b9f8a7be913fce0572577b6
 workflow-type: tm+mt
-source-wordcount: '185'
-ht-degree: 1%
+source-wordcount: '186'
+ht-degree: 0%
 
 ---
 
@@ -26,12 +26,12 @@ De parameterindeling moet `<hostname or ip>:<listen port>` zijn, waarbij u `<lis
 
 Bijvoorbeeld:
 
-```bash
+```shell
 bin/magento setup:config:set --http-cache-hosts=192.0.2.100,192.0.2.155:8080
 ```
 
 U kunt alle Versijke gastheren dan zuiveren wanneer u het geheime voorgeheugen van Commerce (die ook als _wordt bedoeld schoonmaken_ het geheime voorgeheugen) in Admin of het gebruiken van de bevellijn verfrist.
 
-Om het geheime voorgeheugen te verfrissen dat Admin gebruikt, klik **> Hulpmiddelen >** het Beheer van het Geheime voorgeheugen **, dan klik** het Geheime voorgeheugen van Magento **bij de bovenkant van de pagina.** (U kunt ook afzonderlijke cachetypen vernieuwen.)
+Om het geheime voorgeheugen te verfrissen dat Admin gebruikt, klik **> Hulpmiddelen >** het Beheer van het Geheime voorgeheugen **, dan klik** het Geheime voorgeheugen van Magento **bij de bovenkant van de pagina.**(U kunt ook afzonderlijke cachetypen vernieuwen.)
 
-Om het geheime voorgeheugen van veelvoudige instanties van Varnish van cli te verfrissen gebruik het [`magento cache:clean <type>`](../cli/manage-cache.md#clean-and-flush-cache-types) bevel als [&#x200B; eigenaar van het dossiersysteem &#x200B;](../../installation/prerequisites/file-system/overview.md).
+Om het geheime voorgeheugen van veelvoudige instanties van Varnish van cli te verfrissen gebruik het [`magento cache:clean <type>`](../cli/manage-cache.md#clean-and-flush-cache-types) bevel als [ eigenaar van het dossiersysteem ](../../installation/prerequisites/file-system/overview.md).

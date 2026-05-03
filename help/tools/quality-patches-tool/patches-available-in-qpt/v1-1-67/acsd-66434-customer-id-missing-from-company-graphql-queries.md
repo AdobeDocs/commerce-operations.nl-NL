@@ -1,18 +1,18 @@
 ---
-title: 'ACSD-66434: [!UICONTROL Customer ID] het ontbreken van bedrijf  [!DNL GraphQL]  vragen'
+title: 'ACSD-66434: [!UICONTROL Customer ID] het missen van bedrijf  [!DNL GraphQL]  vragen'
 description: Pas ACSD-66434 flard toe om de kwestie van Adobe Commerce te bevestigen waar [!UICONTROL Customer ID] van de bedrijf  [!DNL GraphQL]  vragen mist.
 feature: B2B, GraphQL
 role: Admin, Developer
 type: Troubleshooting
 exl-id: cd83c868-29d8-4d7c-9067-af7597056d35
-source-git-commit: e60194341bf79ca3ecdc505cf30f226b8f1b6c7f
+source-git-commit: 48624d70761117ed0b9f8a7be913fce0572577b6
 workflow-type: tm+mt
-source-wordcount: '300'
+source-wordcount: '321'
 ht-degree: 0%
 
 ---
 
-# ACSD-66434: [!UICONTROL Customer ID] ontbreekt in bedrijf [!DNL GraphQL] query&#39;s
+# ACSD-66434: [!UICONTROL Customer ID] missing from company [!DNL GraphQL] query&#39;s
 
 De ACSD-66434-patch verhelpt het probleem waarbij **[!UICONTROL Customer ID]** ontbreekt in bedrijf [!DNL GraphQL] -query&#39;s. Deze patch is beschikbaar wanneer [[!DNL Quality Patches Tool (QPT)]](/help/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches.md) 1.1.67 wordt geïnstalleerd. De patch-id is ACSD-66434. Dit probleem wordt volgens de planning opgelost in Adobe Commerce 2.4.9.
 
@@ -28,7 +28,7 @@ De ACSD-66434-patch verhelpt het probleem waarbij **[!UICONTROL Customer ID]** o
 
 >[!NOTE]
 >
->De patch kan van toepassing worden op andere versies met nieuwe [!DNL Quality Patches Tool] versies. Om te controleren of de patch compatibel is met uw Adobe Commerce-versie, werkt u het `magento/quality-patches` -pakket bij naar de meest recente versie en controleert u de compatibiliteit op de [[!DNL Quality Patches Tool] : zoek naar patches op de pagina &#x200B;](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html?lang=nl-NL) . Gebruik de patch-id als een zoekwoord om de patch te zoeken.
+>De patch kan van toepassing worden op andere versies met nieuwe [!DNL Quality Patches Tool] versies. Als u wilt controleren of de patch compatibel is met uw Adobe Commerce-versie, werkt u het `magento/quality-patches` -pakket bij naar de meest recente versie en controleert u de compatibiliteit op de [[!DNL Quality Patches Tool] : Zoek naar de pagina van flarden ](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html). Gebruik de patch-id als een zoekwoord om de patch te zoeken.
 
 ## Probleem
 
@@ -40,7 +40,7 @@ De [!DNL GraphQL] bedrijfsquery retourneert `null` for the **[!UICONTROL Custome
 1. Schakel via Commerce Admin B2B-functies in en maak een testbedrijf.
 1. Genereer een token voor de bedrijfbeheerder met de volgende [!DNL GraphQL] -mutatie:
 
-```
+```graphql
 mutation {
   generateCustomerToken(email: "admin_email@example.com", password: "admin_password") {
     token
@@ -50,7 +50,7 @@ mutation {
 
 1. Gebruik het gegenereerde token om de bedrijfsstructuur van de klant op te halen met de volgende [!DNL GraphQL] -query:
 
-```
+```graphql
 query {
   company {
     id
@@ -86,11 +86,11 @@ query {
 
 Om individuele flarden toe te passen, gebruik de volgende verbindingen afhankelijk van uw plaatsingsmethode:
 
-* Op locatie Adobe Commerce of Magento Open Source: [[!DNL Quality Patches Tool] > Gebruik &#x200B;](/help/tools/quality-patches-tool/usage.md) in de handleiding [!DNL Quality Patches Tool] .
-* Adobe Commerce op wolkeninfrastructuur: [&#x200B; Verbeteringen en Patches > Pas Patches &#x200B;](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html?lang=nl-NL) in Commerce op de gids van de Infrastructuur van de Wolk toe.
+* Adobe Commerce of Magento Open Source ter plaatse: [[!DNL Quality Patches Tool] > Gebruik ](/help/tools/quality-patches-tool/usage.md) in de [!DNL Quality Patches Tool] gids.
+* Adobe Commerce op cloudinfrastructuur: [ Verbeteringen en Patches > pas Patches ](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html) in Commerce op de gids van de Infrastructuur van de Wolk toe.
 
 ## Gerelateerde lezing
 
 Meer informatie over [!DNL Quality Patches Tool] vindt u in:
 
-* [[!DNL Quality Patches Tool]: Een zelfbedieningshulpmiddel voor kwaliteitspatches &#x200B;](/help/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches.md) in de gids van Hulpmiddelen.
+* [[!DNL Quality Patches Tool] : Een zelfbedieningshulpmiddel voor kwaliteitspatches ](/help/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches.md) in de gids van Hulpmiddelen.

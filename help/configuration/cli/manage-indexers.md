@@ -2,9 +2,9 @@
 title: De indexen beheren
 description: Leer hoe u Adobe Commerce-indexen kunt weergeven en beheren met opdrachtregelprogramma's. Ontdek indexeropdrachten, statuscontrole en herindexeringstechnieken.
 exl-id: d2cd1399-231e-4c42-aa0c-c2ed5d7557a0
-source-git-commit: 10f324478e9a5e80fc4d28ce680929687291e990
+source-git-commit: ed21cbaf145493614d274da6eee41f6b1ae39ff2
 workflow-type: tm+mt
-source-wordcount: '974'
+source-wordcount: '1025'
 ht-degree: 0%
 
 ---
@@ -43,7 +43,7 @@ store_data_exporter                      Stores Feed
 
 >[!NOTE]
 >
-> De handelaars van Adobe Commerce die Live Onderzoek, de Dienst van de Catalogus, of de Aanbevelingen van het Product gebruiken hebben de optie om [&#x200B; op SaaS-Gebaseerde prijs te gebruiken indexeert &#x200B;](https://experienceleague.adobe.com/nl/docs/commerce/price-indexer/price-indexing).
+> De handelaars van Adobe Commerce die Live Onderzoek, de Dienst van de Catalogus, of de Aanbevelingen van het Product gebruiken hebben de optie om [ op SaaS-Gebaseerde prijs te gebruiken indexeert ](https://experienceleague.adobe.com/en/docs/commerce/price-indexer/price-indexing).
 
 ## Indexstatus weergeven
 
@@ -89,7 +89,7 @@ Gebruik deze opdracht om alle of geselecteerde indexen slechts één keer opnieu
 
 >[!INFO]
 >
->Deze opdracht wordt slechts één keer opnieuw samengesteld. Om indexeerders bijgewerkt te houden, moet u opstelling a [&#x200B; cron baan &#x200B;](../cli/configure-cron-jobs.md).
+>Deze opdracht wordt slechts één keer opnieuw samengesteld. Om indexeerders bijgewerkt te houden, moet u opstelling a [ cron baan ](../cli/configure-cron-jobs.md).
 
 Opdrachtopties:
 
@@ -217,9 +217,9 @@ Stores Feed indexer has been invalidated.
 Gebruik deze opdracht om de volgende indexeropties in te stellen:
 
 - **Update op sparen (`realtime`)**: De geïndexeerde gegevens worden bijgewerkt wanneer een verandering in Admin wordt aangebracht. (Zo wordt de index van de categorie producten opnieuw geindexeerd nadat de producten aan een categorie in Admin zijn toegevoegd.)
-- **Update door programma (`schedule`)**: Het gegeven wordt geïndexeerd volgens het programma dat door uw kroonbaan wordt geplaatst.
+- **Update door programma (`schedule`)**: Gegevens worden geïndexeerd volgens het schema dat is ingesteld door de snijtaak.
 
-[&#x200B; Leer meer over het indexeren &#x200B;](https://developer.adobe.com/commerce/php/development/components/indexing/).
+[ Leer meer over het indexeren ](https://developer.adobe.com/commerce/php/development/components/indexing/).
 
 ### De huidige configuratie weergeven
 
@@ -259,7 +259,7 @@ Stores Feed:                                       Update by Schedule
 >
 >Het gedrag van de [!DNL Customer Grid] -index is in 2.4.8 gewijzigd:
 >
->- **Voorafgaand aan 2.4.8**: [!DNL Customer Grid] indexeer kan slechts opnieuw worden gefixeerd gebruikend de [!UICONTROL Update on Save] optie en steunt niet de [!UICONTROL Update by Schedule] optie.
+>- **voorafgaand aan 2.4.8**: De indexeerfunctie van [!DNL Customer Grid] kan alleen opnieuw worden ingesteld met de optie [!UICONTROL Update on Save] en biedt geen ondersteuning voor de optie [!UICONTROL Update by Schedule] .
 >
 >   Gebruik de volgende opdracht om deze indexeer in te stellen op bijwerken bij opslaan:
 >
@@ -267,13 +267,13 @@ Stores Feed:                                       Update by Schedule
 >   bin/magento indexer:set-mode realtime customer_grid
 >   ```
 >
->- **2.4.8 en later**: [!DNL Customer Grid] de indexer steunt zowel [!UICONTROL Update on Save] als [!UICONTROL Update by Schedule] wijzen, en gebreken aan [!UICONTROL Update by Schedule].
+>- **2.4.8 en later**: De [!DNL Customer Grid] indexer ondersteunt zowel de [!UICONTROL Update on Save] - als de [!UICONTROL Update by Schedule] -modus en heeft standaard de waarde [!UICONTROL Update by Schedule] .
 >
->Zie [&#x200B; Beste praktijken voor indexeerconfiguratie &#x200B;](https://experienceleague.adobe.com/nl/docs/commerce-operations/implementation-playbook/best-practices/maintenance/indexer-configuration) in _Playbook van de Implementatie_.
+>Zie [ Beste praktijken voor indexeerconfiguratie ](https://experienceleague.adobe.com/en/docs/commerce-operations/implementation-playbook/best-practices/maintenance/indexer-configuration) in _Playbook van de Implementatie_.
 
 >[!INFO]
 >
->Alvorens de wijzen van de omschakelingsindexeerder, plaats uw website aan [&#x200B; onderhoud &#x200B;](../../installation/tutorials/maintenance-mode.md) wijze en [&#x200B; maak kanonbanen &#x200B;](https://experienceleague.adobe.com/nl/docs/commerce-on-cloud/user-guide/configure/app/properties/crons-property) onbruikbaar. Dit zorgt ervoor u geen gegevensbestandsloten ervaart.
+>Alvorens de wijzen van de omschakelingsindexeerder, plaats uw website aan [ onderhoud ](../../installation/tutorials/maintenance-mode.md) wijze en [ maak kanonbanen ](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/configure/app/properties/crons-property) onbruikbaar. Dit zorgt ervoor u geen gegevensbestandsloten ervaart.
 
 De indexeerconfiguratie opgeven:
 
@@ -295,7 +295,7 @@ bin/magento indexer:set-mode schedule catalog_category_product catalog_product_c
 
 Monsterresultaat:
 
-```
+```text
 Index mode for Indexer Category Products was changed from 'Update on Save' to 'Update by Schedule'
 Index mode for Indexer Product Categories was changed from 'Update on Save' to 'Update by Schedule'
 ```
@@ -327,7 +327,7 @@ bin/magento indexer:set-status suspended catalog_category_product catalog_produc
 
 Monsterresultaat:
 
-```
+```text
 Index status for Indexer 'Category Products' was changed from 'valid' to 'suspended'.
 Index status for Indexer 'Product Categories' was changed from 'valid' to 'suspended'.
 ```
@@ -336,9 +336,9 @@ Index status for Indexer 'Product Categories' was changed from 'valid' to 'suspe
 
 Wanneer een indexeerfunctie is ingesteld op een `suspended` -status, heeft dit vooral invloed op de automatische re-indexering en op gematerialiseerde weergave-updates. Hier volgt een kort overzicht:
 
-**het Reindexeren Overgeslagen**: Het systeem slaat automatisch opnieuw indexeren voor `suspended` indexeerders en om het even welke indexen over die het zelfde `shared_index` delen. Met deze methode worden de systeembronnen behouden doordat gegevens met betrekking tot stilgezette processen niet opnieuw hoeven te worden gekoppeld.
+**opnieuw indexerend Overgeslagen**: Het systeem slaat automatische re-dexing voor `suspended` indexeerders en om het even welke indexeerders over die het zelfde `shared_index` delen. Met deze methode worden de systeembronnen behouden doordat gegevens met betrekking tot stilgezette processen niet opnieuw hoeven te worden gekoppeld.
 
-**Gematerialiseerde Overgeslagen Updates van de Mening**: Gelijkaardig aan het opnieuw indexeren, pauzeert het systeem ook updates aan materialized meningen met betrekking tot `suspended` indexeerders of hun gedeelde indexen. Deze pauze vermindert de belasting van het systeem tijdens de ophanging.
+**Gematerialiseerde Overgeslagen Updates van de Mening**: Net als bij het opnieuw indexeren pauzeert het systeem ook updates naar geconcretiseerde weergaven met betrekking tot `suspended` indexeerders of hun gedeelde indexen. Deze pauze vermindert de belasting van het systeem tijdens de ophanging.
 
 >[!INFO]
 >

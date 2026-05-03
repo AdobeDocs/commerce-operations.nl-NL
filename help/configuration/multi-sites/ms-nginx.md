@@ -2,9 +2,9 @@
 title: Meerdere websites instellen met Nginx
 description: Volg deze zelfstudie om meerdere websites in te stellen met Nginx.
 exl-id: f13926a2-182c-4ce2-b091-19c5f978f267
-source-git-commit: ca8dc855e0598d2c3d43afae2e055aa27035a09b
+source-git-commit: 48624d70761117ed0b9f8a7be913fce0572577b6
 workflow-type: tm+mt
-source-wordcount: '943'
+source-wordcount: '972'
 ht-degree: 0%
 
 ---
@@ -15,11 +15,11 @@ Wij gaan ervan uit dat:
 
 - U werkt op een ontwikkelcomputer (laptop, virtuele machine of dergelijke).
 
-  Er kunnen extra taken nodig zijn om meerdere websites in een gehoste omgeving te implementeren. Neem contact op met uw hostingprovider voor meer informatie.
+  Er kunnen extra taken nodig zijn om meerdere websites in een gehoste omgeving te implementeren. Raadpleeg uw hostingprovider voor meer informatie.
 
-  Er zijn extra taken nodig om Adobe Commerce in te stellen op cloudinfrastructuur. Nadat u de taken voltooit die in dit onderwerp worden besproken, zie [&#x200B; Opstelling veelvoudige websites of opslag &#x200B;](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure-store/multiple-sites.html?lang=nl-NL) in _Commerce op de gids van de Infrastructuur van de Wolk_.
+  Er zijn extra taken nodig om Adobe Commerce in te stellen op cloudinfrastructuur. Nadat u de taken voltooit die in dit onderwerp worden besproken, zie [ Opstelling veelvoudige websites of opslag ](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure-store/multiple-sites.html) in _Commerce op de gids van de Infrastructuur van de Wolk_.
 
-- U accepteert meerdere domeinen in één virtueel hostbestand of gebruikt één virtuele host per website. De configuratiebestanden van de virtuele host bevinden zich in `/etc/nginx/sites-available` .
+- U accepteert meerdere domeinen in één virtueel hostbestand of gebruikt één virtuele host per website. De virtuele dossiers van de gastheerconfiguratie worden gevestigd in `/etc/nginx/sites-available`.
 - U gebruikt de `nginx.conf.sample` die door Commerce wordt geleverd, alleen de wijzigingen die in deze zelfstudie worden besproken.
 - De Commerce-software wordt geïnstalleerd in `/var/www/html/magento2` .
 - U hebt twee andere websites dan de standaard:
@@ -30,13 +30,13 @@ Wij gaan ervan uit dat:
 
 >[!TIP]
 >
->Verwijs naar [&#x200B; creeer websites &#x200B;](ms-admin.md#step-2-create-websites) en [&#x200B; creeer opslagmeningen &#x200B;](ms-admin.md#step-4-create-store-views) voor hulp bij het bepalen van deze waarden.
+>Verwijs naar [ creeer websites ](ms-admin.md#step-2-create-websites) en [ creeer opslagmeningen ](ms-admin.md#step-4-create-store-views) voor hulp bij het bepalen van deze waarden.
 
 Hieronder volgt een routekaart voor het instellen van meerdere websites met nginx:
 
-1. [&#x200B; Opstelling websites, opslag, en opslagmeningen &#x200B;](ms-admin.md) in Admin.
-1. Creeer een [&#x200B; virtuele gastheer Nginx &#x200B;](#step-2-create-nginx-virtual-hosts)) om vele websites of één virtuele gastheer Nginx per website van Commerce (hieronder gedetailleerde stappen) in kaart te brengen.
-1. Geef de waarden van de [&#x200B; variabelen van de GROOTTE &#x200B;](ms-overview.md) `$MAGE_RUN_TYPE` en `$MAGE_RUN_CODE` aan nginx door Magento-Geleverde `nginx.conf.sample` (hieronder gedetailleerde stappen) te gebruiken.
+1. [ Opstelling websites, opslag, en opslagmeningen ](ms-admin.md) in Admin.
+1. Creeer een [ virtuele gastheer Nginx ](#step-2-create-nginx-virtual-hosts)) om vele websites of één virtuele gastheer Nginx per website van Commerce (hieronder gedetailleerde stappen) in kaart te brengen.
+1. Geef de waarden van de [ variabelen van de GROOTTE ](ms-overview.md) `$MAGE_RUN_TYPE` en `$MAGE_RUN_CODE` aan nginx door Magento-Geleverde `nginx.conf.sample` (hieronder gedetailleerde stappen) te gebruiken.
 
    - `$MAGE_RUN_TYPE` kan `store` of `website` zijn:
 
@@ -49,17 +49,17 @@ Hieronder volgt een routekaart voor het instellen van meerdere websites met ngin
 
 ## Stap 1: Websites maken, winkels maken en weergaven opslaan in Beheer
 
-Zie [&#x200B; Opstelling veelvoudige websites, opslag, en opslagmeningen in Admin &#x200B;](ms-admin.md).
+Zie [ Opstelling veelvoudige websites, opslag, en opslagmeningen in Admin ](ms-admin.md).
 
 ## Stap 2: Nginx virtuele hosts maken
 
-In deze stap wordt beschreven hoe u websites op de winkel kunt laden. U kunt websites of opslagweergaven gebruiken. Als u opslagweergaven gebruikt, moet u de parameterwaarden dienovereenkomstig aanpassen. U moet de taken in deze sectie uitvoeren als een gebruiker met `sudo` rechten.
+In deze stap wordt beschreven hoe u websites op de winkel kunt laden. U kunt websites gebruiken of meningen opslaan; als u opslagweergaven gebruikt, moet u de parameterwaarden dienovereenkomstig aanpassen. U moet de taken in deze sectie uitvoeren als een gebruiker met `sudo` rechten.
 
-Door enkel één [&#x200B; nginx virtueel gastheerdossier &#x200B;](#step-2-create-nginx-virtual-hosts) te gebruiken, kunt u uw nginxconfiguratie eenvoudig en schoon houden. Door verschillende virtuele hostbestanden te gebruiken, kunt u elke winkel aanpassen (bijvoorbeeld om een aangepaste locatie voor `french.mysite.mg` te gebruiken).
+Door enkel één [ nginx virtueel gastheerdossier ](#step-2-create-nginx-virtual-hosts) te gebruiken, kunt u uw nginxconfiguratie eenvoudig en schoon houden. Door verschillende virtuele hostbestanden te gebruiken, kunt u elke winkel aanpassen (bijvoorbeeld om een aangepaste locatie voor `french.mysite.mg` te gebruiken).
 
 **om één virtuele gastheer** (vereenvoudigd) tot stand te brengen:
 
-Deze configuratie breidt zich op [&#x200B; nginx configuratie &#x200B;](../../installation/prerequisites/web-server/nginx.md) uit.
+Deze configuratie breidt zich op [ nginx configuratie ](../../installation/prerequisites/web-server/nginx.md) uit.
 
 1. Open een teksteditor en voeg de volgende inhoud toe aan een nieuw bestand met de naam `/etc/nginx/sites-available/magento` :
 
@@ -83,13 +83,13 @@ Deze configuratie breidt zich op [&#x200B; nginx configuratie &#x200B;](../../in
 1. Sla de wijzigingen in de bestanden op en sluit de teksteditor af.
 1. Controleer de serverconfiguratie:
 
-   ```bash
+   ```shell
    nginx -t
    ```
 
 1. Als dit gelukt is, wordt het volgende bericht weergegeven:
 
-   ```
+   ```yaml
    nginx: configuration file /etc/nginx/nginx.conf test is successful
    ```
 
@@ -97,15 +97,15 @@ Deze configuratie breidt zich op [&#x200B; nginx configuratie &#x200B;](../../in
 
 1. Een symbolische koppeling maken in de map `/etc/nginx/sites-enabled` :
 
-   ```bash
+   ```shell
    cd /etc/nginx/sites-enabled
    ```
 
-   ```bash
+   ```shell
    ln -s /etc/nginx/sites-available/magento magento
    ```
 
-Voor meer detail over de kaartrichtlijn, zie [&#x200B; nginx documentatie over de kaartrichtlijn &#x200B;](http://nginx.org/en/docs/http/ngx_http_map_module.html#map).
+Voor meer detail over de kaartrichtlijn, zie [ nginx documentatie over de kaartrichtlijn ](http://nginx.org/en/docs/http/ngx_http_map_module.html#map).
 
 
 **om veelvoudige virtuele gastheren** tot stand te brengen:
@@ -141,13 +141,13 @@ Voor meer detail over de kaartrichtlijn, zie [&#x200B; nginx documentatie over d
 1. Sla de wijzigingen in de bestanden op en sluit de teksteditor af.
 1. Controleer de serverconfiguratie:
 
-   ```bash
+   ```shell
    nginx -t
    ```
 
 1. Als dit gelukt is, wordt het volgende bericht weergegeven:
 
-   ```
+   ```yaml
    nginx: configuration file /etc/nginx/nginx.conf test is successful
    ```
 
@@ -155,23 +155,23 @@ Voor meer detail over de kaartrichtlijn, zie [&#x200B; nginx documentatie over d
 
 1. Symbolische koppelingen maken in de map `/etc/nginx/sites-enabled` :
 
-   ```bash
+   ```shell
    cd /etc/nginx/sites-enabled
    ```
 
-   ```bash
+   ```shell
    ln -s /etc/nginx/sites-available/french.mysite.mg french.mysite.mg
    ```
 
-   ```bash
+   ```shell
    ln -s /etc/nginx/sites-available/german.mysite.mg german.mysite.mg
    ```
 
-## Stap 3: Nginx.conf.sample wijzigen
+## Stap 3: nginx.conf.sample wijzigen
 
 >[!TIP]
 >
->Bewerk het `nginx.conf.sample` -bestand niet. Het is een Commerce-kernbestand dat bij elke nieuwe release kan worden bijgewerkt. Kopieer in plaats daarvan het `nginx.conf.sample` -bestand, wijzig de naam ervan en bewerk vervolgens het gekopieerde bestand.
+>Bewerk het `nginx.conf.sample` -bestand niet. het is een Commerce-kernbestand dat bij elke nieuwe release kan worden bijgewerkt. Kopieer in plaats daarvan het `nginx.conf.sample` -bestand, wijzig de naam ervan en bewerk vervolgens het gekopieerde bestand.
 
 **om het PHP ingangspunt voor de belangrijkste toepassing uit te geven**:
 
@@ -229,7 +229,7 @@ location ~ (index|get|static|report|404|503|health_check)\.php$ {
 }
 ```
 
-## Stap 4: Werk de basis-URL-configuratie bij
+## Stap 4: De configuratie voor basis-URL bijwerken
 
 U moet de basis-URL voor de `french` - en `german` -websites bijwerken in de Commerce-beheerder.
 
@@ -253,7 +253,7 @@ U moet de basis-URL voor de `french` - en `german` -websites bijwerken in de Com
 
 Voer de volgende opdracht uit om de cache van `config` en `full_page` leeg te maken.
 
-```bash
+```shell
 bin/magento cache:clean config full_page
 ```
 
@@ -279,11 +279,11 @@ Tenzij u DNS opstelling voor URLs van uw opslag hebt, moet u een statische route
 
 >[!INFO]
 >
->- Er kunnen extra taken nodig zijn om meerdere websites in een gehoste omgeving te implementeren. Neem contact op met uw hostingprovider voor meer informatie.
->- De extra taken worden vereist aan opstelling Adobe Commerce op wolkeninfrastructuur; zie [&#x200B; Opstelling veelvoudige websites of opslag van de Wolk &#x200B;](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure-store/multiple-sites.html?lang=nl-NL) in _Commerce op de gids van de Infrastructuur van de Wolk_.
+>- Er kunnen extra taken nodig zijn om meerdere websites in een gehoste omgeving te implementeren. Raadpleeg uw hostingprovider voor meer informatie.
+>- Er zijn extra taken nodig om Adobe Commerce op cloudinfrastructuur in te stellen. zie [ Opstelling veelvoudige de websites of opslag van de Wolk ](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure-store/multiple-sites.html) in _Commerce op de gids van de Infrastructuur van de Wolk_.
 
 ### Problemen oplossen
 
-- Als uw Franse en Duitse plaatsen 404s maar uw Admin laadt terugkeren, zorg u [&#x200B; Stap 6 voltooide: voeg de opslagcode aan basisURL &#x200B;](ms-admin.md#step-6-add-the-store-code-to-the-base-url) toe.
+- Als uw Franse en Duitse plaatsen 404s maar uw Admin laadt terugkeren, zorg ervoor u [ Stap 6 voltooide: Voeg de opslagcode aan basisURL ](ms-admin.md#step-6-add-the-store-code-to-the-base-url) toe.
 - Als alle URL&#39;s 404 retourneren, moet u de webserver opnieuw starten.
 - Als de beheerder niet correct werkt, zorg ervoor u opstelling uw virtuele gastheren behoorlijk.

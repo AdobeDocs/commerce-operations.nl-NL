@@ -1,18 +1,18 @@
 ---
-title: 'ACSD-58566: interne serverfout van GraphQL voor opmerkingen over inkooporders'
-description: Pas de ACSD-58566-patch toe om het Adobe Commerce-probleem te verhelpen, waarbij GraphQL een interne serverfout retourneert bij het opvragen van het &grave; created_at'-veld in de addPurchaseOrderComment-mutatie.
+title: 'ACSD-5856: Interne GraphQL-serverfout voor opmerkingen bij inkooporder'
+description: Pas de ACSD-58566-patch toe om het Adobe Commerce-probleem te verhelpen, waarbij GraphQL een interne serverfout retourneert bij het opvragen van het ` created_at'-veld in de addPurchaseOrderComment-mutatie.
 feature: B2B, Purchase Orders, GraphQL
 role: Admin, Developer
 exl-id: 6d051f57-7a2f-44a5-a1c9-834917ed986c
 type: Troubleshooting
-source-git-commit: 7fdb02a6d89d50ea593c5fd99d78101f89198424
+source-git-commit: 48624d70761117ed0b9f8a7be913fce0572577b6
 workflow-type: tm+mt
-source-wordcount: '335'
+source-wordcount: '353'
 ht-degree: 0%
 
 ---
 
-# ACSD-58566: interne serverfout van GraphQL voor opmerkingen over inkooporders
+# ACSD-5856: Interne GraphQL-serverfout voor opmerkingen bij inkooporder
 
 De ACSD-58566-patch verhelpt het probleem waarbij het opvragen van het `created_at` -veld in de `addPurchaseOrderComment` -mutatie een null-waarde retourneert in plaats van de verwachte datetime. Deze patch is beschikbaar wanneer [[!DNL Quality Patches Tool (QPT)]](/help/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches.md) 1.1.55 wordt geïnstalleerd. De patch-id is ACSD-58566. Het probleem wordt volgens de planning opgelost in Adobe Commerce 2.4.8.
 
@@ -28,7 +28,7 @@ De ACSD-58566-patch verhelpt het probleem waarbij het opvragen van het `created_
 
 >[!NOTE]
 >
->De patch kan van toepassing worden op andere versies met nieuwe [!DNL Quality Patches Tool] versies. Om te controleren of de patch compatibel is met uw Adobe Commerce-versie, werkt u het `magento/quality-patches` -pakket bij naar de meest recente versie en controleert u de compatibiliteit op de [[!DNL Quality Patches Tool] : zoek naar patches op de pagina &#x200B;](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html?lang=nl-NL) . Gebruik de patch-id als een zoekwoord om de patch te zoeken.
+>De patch kan van toepassing worden op andere versies met nieuwe [!DNL Quality Patches Tool] versies. Als u wilt controleren of de patch compatibel is met uw Adobe Commerce-versie, werkt u het `magento/quality-patches` -pakket bij naar de meest recente versie en controleert u de compatibiliteit op de [[!DNL Quality Patches Tool] : Zoek naar de pagina van flarden ](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html). Gebruik de patch-id als een zoekwoord om de patch te zoeken.
 
 ## Probleem
 
@@ -47,7 +47,7 @@ B2B-modules zijn geïnstalleerd en de optie Bedrijf en inkooporders zijn ingesch
    1. Plaats de volgorde met `placePurchaseOrder` .
    1. Voeg met `addPurchaseOrderComment` een opmerking toe aan de inkooporder.
 
-   ```
+   ```graphql
    mutation {
        addPurchaseOrderComment(
            input: { purchase_order_uid: "MQ==", comment: "Looks good to me" }
@@ -74,7 +74,7 @@ Het veld `created_at` retourneert de datum van de opmerking bij de inkooporder.
 
 Geeft null weer in plaats van de `created_at` -datum.
 
-```
+```json
 {
   "errors": [
     {
@@ -102,11 +102,11 @@ Geeft null weer in plaats van de `created_at` -datum.
 
 Om individuele flarden toe te passen, gebruik de volgende verbindingen afhankelijk van uw plaatsingsmethode:
 
-* Op locatie Adobe Commerce of Magento Open Source: [[!DNL Quality Patches Tool] > Gebruik &#x200B;](/help/tools/quality-patches-tool/usage.md) in de handleiding [!DNL Quality Patches Tool] .
-* Adobe Commerce op wolkeninfrastructuur: [&#x200B; Verbeteringen en Patches > Pas Patches &#x200B;](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html?lang=nl-NL) in Commerce op de gids van de Infrastructuur van de Wolk toe.
+* Adobe Commerce of Magento Open Source ter plaatse: [[!DNL Quality Patches Tool] > Gebruik ](/help/tools/quality-patches-tool/usage.md) in de [!DNL Quality Patches Tool] gids.
+* Adobe Commerce op cloudinfrastructuur: [ Verbeteringen en Patches > pas Patches ](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html) in Commerce op de gids van de Infrastructuur van de Wolk toe.
 
 ## Gerelateerde lezing
 
 Meer informatie over [!DNL Quality Patches Tool] vindt u in:
 
-[[!DNL Quality Patches Tool]: Een zelfbedieningshulpmiddel voor kwaliteitspatches &#x200B;](/help/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches.md) in de gids van Hulpmiddelen.
+[[!DNL Quality Patches Tool] : Een zelfbedieningshulpmiddel voor kwaliteitspatches ](/help/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches.md) in de gids van Hulpmiddelen.

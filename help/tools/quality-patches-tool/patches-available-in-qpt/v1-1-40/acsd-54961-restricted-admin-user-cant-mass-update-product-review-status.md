@@ -1,20 +1,20 @@
 ---
-title: 'ACSD-54961: gebruikers met beperkte beheerdersrechten kunnen geen massaupdate uitvoeren [!UICONTROL Product Review status]'
+title: 'ACSD-54961: Gebruikers met beperkte beheerdersrechten kunnen geen massale update uitvoeren [!UICONTROL Product Review status]'
 description: Pas de ACSD-54961-patch toe om het Adobe Commerce-probleem op te lossen, waarbij een gebruiker met beperkte bevoegdheden de status Product Review niet massaal kan bijwerken.
 feature: Products
 role: Admin, Developer
 exl-id: d303365c-d7c7-4aca-9f33-75d67bcbe573
 type: Troubleshooting
-source-git-commit: 7fdb02a6d89d50ea593c5fd99d78101f89198424
+source-git-commit: 319f3232d1ba5f5ed7cdd10ce85b9d7ffbeec89a
 workflow-type: tm+mt
-source-wordcount: '355'
+source-wordcount: '413'
 ht-degree: 0%
 
 ---
 
-# ACSD-54961: gebruikers met beperkte beheerdersrechten kunnen geen massaupdate uitvoeren [!UICONTROL Product Review status]
+# ACSD-54961: Gebruikers met beperkte beheerdersrechten kunnen geen massale update uitvoeren [!UICONTROL Product Review status]
 
-De ACSD-54961-patch verhelpt het probleem waarbij een gebruiker met beperkte beheerdersrechten geen massale update kan uitvoeren [!UICONTROL Product Review status] . Deze patch is beschikbaar wanneer [[!DNL Quality Patches Tool (QPT)] &#x200B;](https://experienceleague.adobe.com/nl/docs/commerce-operations/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches) 1.1.40 wordt geïnstalleerd. De patch-id is ACSD-54961. Het probleem wordt volgens de planning opgelost in Adobe Commerce 2.4.7.
+De ACSD-54961-patch verhelpt het probleem waarbij een gebruiker met beperkte beheerdersrechten geen massale update kan uitvoeren [!UICONTROL Product Review status] . Deze patch is beschikbaar wanneer [[!DNL Quality Patches Tool (QPT)] ](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches) 1.1.40 wordt geïnstalleerd. De patch-id is ACSD-54961. Het probleem wordt volgens de planning opgelost in Adobe Commerce 2.4.7.
 
 ## Betrokken producten en versies
 
@@ -28,7 +28,7 @@ De ACSD-54961-patch verhelpt het probleem waarbij een gebruiker met beperkte beh
 
 >[!NOTE]
 >
->De patch kan van toepassing worden op andere versies met nieuwe [!DNL Quality Patches Tool] versies. Om te controleren of de patch compatibel is met uw Adobe Commerce-versie, werkt u het `magento/quality-patches` -pakket bij naar de meest recente versie en controleert u de compatibiliteit op de [[!DNL Quality Patches Tool] : zoek naar patches op de pagina &#x200B;](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html?lang=nl-NL) . Gebruik de patch-id als een zoekwoord om de patch te zoeken.
+>De patch kan van toepassing worden op andere versies met nieuwe [!DNL Quality Patches Tool] versies. Als u wilt controleren of de patch compatibel is met uw Adobe Commerce-versie, werkt u het `magento/quality-patches` -pakket bij naar de meest recente versie en controleert u de compatibiliteit op de [[!DNL Quality Patches Tool] : Zoek naar de pagina van flarden ](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html). Gebruik de patch-id als een zoekwoord om de patch te zoeken.
 
 ## Probleem
 
@@ -39,7 +39,7 @@ Een gebruiker met beperkte beheerdersrechten kan geen massale update uitvoeren [
 1. Maak een aanvullende website-, opslag- en winkelweergave.
 1. Voeg een product toe aan de tweede winkel en voeg vervolgens een revisie toe.
 1. Creeer een beperkte admin gebruiker met toegang tot slechts de tweede opslag.
-1. Login als beperkte admin gebruiker, ga dan naar **[!UICONTROL &#x200B; Marketings]** > **[!UICONTROL Reviews]** > **[!UICONTROL Mass Update]**, en plaats de **Status** aan *Goedgekeurd* of *Hangende*.
+1. Login als beperkte admin gebruiker, ga dan naar **[!UICONTROL  Marketings]** > **[!UICONTROL Reviews]** > **[!UICONTROL Mass Update]**, en plaats de **Status** aan *Goedgekeurd* of *Hangende*.
 
 <u> Verwachte resultaten </u>:
 
@@ -48,9 +48,9 @@ De gebruiker met beperkte beheerdersrechten kan revisies bijwerken met de handel
 <u> Ware resultaten </u>:
 
 Er treedt een fout op bij het bijwerken van revisies met behulp van de handeling **[!UICONTROL Mass Update]** .<br>
-`var/log/exception.log` bevat een vergelijkbare fout:
+De instructie `var/log/exception.log` bevat een vergelijkbare fout:
 
-```
+```text
 report.CRITICAL: TypeError: array_intersect(): Argument #1 ($array) must be of type array, null given in app/code/Magento/AdminGws/Model/Models.php:439
 ```
 
@@ -58,15 +58,15 @@ report.CRITICAL: TypeError: array_intersect(): Argument #1 ($array) must be of t
 
 Om individuele flarden toe te passen, gebruik de volgende verbindingen afhankelijk van uw plaatsingsmethode:
 
-* Op locatie Adobe Commerce of Magento Open Source: [[!DNL Quality Patches Tool] > Gebruik &#x200B;](/help/tools/quality-patches-tool/usage.md) in de handleiding [!DNL Quality Patches Tool] .
-* Adobe Commerce op wolkeninfrastructuur: [&#x200B; Verbeteringen en Patches > Pas Patches &#x200B;](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html?lang=nl-NL) in Commerce op de gids van de Infrastructuur van de Wolk toe.
+* Adobe Commerce of Magento Open Source ter plaatse: [[!DNL Quality Patches Tool] > Gebruik ](/help/tools/quality-patches-tool/usage.md) in de [!DNL Quality Patches Tool] gids.
+* Adobe Commerce op cloudinfrastructuur: [ Verbeteringen en Patches > pas Patches ](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html) in Commerce op de gids van de Infrastructuur van de Wolk toe.
 
 ## Gerelateerde lezing
 
 Meer informatie over [!DNL Quality Patches Tool] vindt u in:
 
-* [[!DNL Quality Patches Tool]  vrijgegeven: een nieuw hulpmiddel om kwaliteitspatches &#x200B;](https://experienceleague.adobe.com/nl/docs/commerce-operations/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches) in de steunkennisbasis zelf-te dienen.
-* [&#x200B; Controle als het flard voor uw kwestie van Adobe Commerce beschikbaar is gebruikend  [!DNL Quality Patches Tool]](/help/tools/quality-patches-tool/patches-available-in-qpt/check-patch-for-magento-issue-with-magento-quality-patches.md) in de [!UICONTROL Quality Patches Tool] gids.
+* [[!DNL Quality Patches Tool]  vrijgegeven: een nieuw hulpmiddel om kwaliteitsflarden ](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches) in de steunkennisbasis zelf-te dienen.
+* [ Controle als het flard voor uw kwestie van Adobe Commerce beschikbaar is gebruikend  [!DNL Quality Patches Tool]](/help/tools/quality-patches-tool/patches-available-in-qpt/check-patch-for-magento-issue-with-magento-quality-patches.md) in de [!UICONTROL Quality Patches Tool] gids.
 
 
-Voor informatie over andere flarden beschikbaar in QPT, verwijs naar [[!DNL Quality Patches Tool]: Onderzoek naar flarden &#x200B;](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html?lang=nl-NL) in de [!DNL Quality Patches Tool] gids.
+Zie [[!DNL Quality Patches Tool] voor meer informatie over andere patches die beschikbaar zijn in QPT: Zoek naar flarden ](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html) in de [!DNL Quality Patches Tool] gids.

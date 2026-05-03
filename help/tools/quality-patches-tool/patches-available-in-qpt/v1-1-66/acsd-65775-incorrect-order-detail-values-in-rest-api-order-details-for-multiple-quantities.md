@@ -1,18 +1,18 @@
 ---
-title: 'ACSD-65775: Onjuiste "base_row_total"- en "row_total"-waarden in REST API-ordergegevens voor meerdere hoeveelheden'
+title: 'ACSD-6575: Onjuiste ` base_row_total`- en ` row_total`-waarden in REST API-ordergegevens voor meerdere hoeveelheden'
 description: Pas de ACSD-65775-patch toe om het Adobe Commerce-probleem op te lossen waarbij de REST API-orderdetails onjuiste "base_row_total"- en "row_total"-waarden retourneren wanneer meerdere hoeveelheden van hetzelfde item zijn geordend.
 feature: REST
 role: Admin, Developer
 type: Troubleshooting
 exl-id: c2a8f4ef-3998-4e73-af9e-69b17a10d684
-source-git-commit: ce5a136dd59c52d5fa5b555b3ee74fe14d7e53a4
+source-git-commit: 48624d70761117ed0b9f8a7be913fce0572577b6
 workflow-type: tm+mt
-source-wordcount: '394'
+source-wordcount: '409'
 ht-degree: 0%
 
 ---
 
-# ACSD-65775: onjuiste `base_row_total` en `row_total` waarden in REST API-ordergegevens voor meerdere hoeveelheden
+# ACSD-6575: Onjuiste waarden `base_row_total` en `row_total` in REST API-ordergegevens voor meerdere hoeveelheden
 
 De ACSD-65775-patch verhelpt het probleem waarbij de REST API-ordergegevens onjuiste `base_row_total` - en `row_total` -waarden retourneren wanneer meerdere hoeveelheden van hetzelfde item zijn geordend. Deze patch is beschikbaar wanneer [[!DNL Quality Patches Tool (QPT)]](/help/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches.md) 1.1.66 wordt geïnstalleerd. De patch-id is ACSD-65775. Dit probleem wordt volgens de planning opgelost in Adobe Commerce 2.4.9.
 
@@ -28,7 +28,7 @@ De ACSD-65775-patch verhelpt het probleem waarbij de REST API-ordergegevens onju
 
 >[!NOTE]
 >
->De patch kan van toepassing worden op andere versies met nieuwe [!DNL Quality Patches Tool] versies. Om te controleren of de patch compatibel is met uw Adobe Commerce-versie, werkt u het `magento/quality-patches` -pakket bij naar de meest recente versie en controleert u de compatibiliteit op de [[!DNL Quality Patches Tool] : zoek naar patches op de pagina &#x200B;](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html?lang=nl-NL) . Gebruik de patch-id als een zoekwoord om de patch te zoeken.
+>De patch kan van toepassing worden op andere versies met nieuwe [!DNL Quality Patches Tool] versies. Als u wilt controleren of de patch compatibel is met uw Adobe Commerce-versie, werkt u het `magento/quality-patches` -pakket bij naar de meest recente versie en controleert u de compatibiliteit op de [[!DNL Quality Patches Tool] : Zoek naar de pagina van flarden ](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html). Gebruik de patch-id als een zoekwoord om de patch te zoeken.
 
 ## Probleem
 
@@ -36,13 +36,13 @@ De antwoorden `base_row_total` en `row_total` in de orderdetails REST API tonen 
 
 <u> Stappen om </u> te reproduceren:
 
-1. Maak twee eenvoudige producten: simple1 geprijsd voor $10 en simple2 geprijsd voor $15.
+1. Twee eenvoudige producten maken: simple1 geprijsd voor $10 en simple2 geprijsd voor $15.
 1. Maak een nieuwe klantenaccount.
 1. Voeg simple1 toe aan het winkelwagentje met hoeveelheid 2 en simple2 met hoeveelheid 3.
 1. Plaats de bestelling met behulp van de klantenaccount.
 1. Verkrijg een beheerstoken door een POST- verzoek naar `/rest/V1/integration/admin/token` met de volgende nuttige lading te verzenden:
 
-   ```
+   ```json
    {
      "username": "admin",
      "password": "password"
@@ -63,11 +63,11 @@ De antwoorden `base_row_total` en `row_total` in de orderdetails REST API tonen 
 
 Om individuele flarden toe te passen, gebruik de volgende verbindingen afhankelijk van uw plaatsingsmethode:
 
-* Op locatie Adobe Commerce of Magento Open Source: [[!DNL Quality Patches Tool] > Gebruik &#x200B;](/help/tools/quality-patches-tool/usage.md) in de handleiding [!DNL Quality Patches Tool] .
-* Adobe Commerce op wolkeninfrastructuur: [&#x200B; Verbeteringen en Patches > Pas Patches &#x200B;](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html?lang=nl-NL) in Commerce op de gids van de Infrastructuur van de Wolk toe.
+* Adobe Commerce of Magento Open Source ter plaatse: [[!DNL Quality Patches Tool] > Gebruik ](/help/tools/quality-patches-tool/usage.md) in de [!DNL Quality Patches Tool] gids.
+* Adobe Commerce op cloudinfrastructuur: [ Verbeteringen en Patches > pas Patches ](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html) in Commerce op de gids van de Infrastructuur van de Wolk toe.
 
 ## Gerelateerde lezing
 
 Meer informatie over [!DNL Quality Patches Tool] vindt u in:
 
-* [[!DNL Quality Patches Tool]: Een zelfbedieningshulpmiddel voor kwaliteitspatches &#x200B;](/help/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches.md) in de gids van Hulpmiddelen.
+* [[!DNL Quality Patches Tool] : Een zelfbedieningshulpmiddel voor kwaliteitspatches ](/help/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches.md) in de gids van Hulpmiddelen.

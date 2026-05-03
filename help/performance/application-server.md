@@ -2,9 +2,9 @@
 title: GraphQL Application Server
 description: Meer informatie over de grafische toepassingsserver in Adobe Commerce. Ontdek implementatierichtlijnen en optimalisatiestrategieën.
 exl-id: 9b223d92-0040-4196-893b-2cf52245ec33
-source-git-commit: cb89f0c0a576cf6cd8b53a4ade12c21106e2cdf3
+source-git-commit: 48624d70761117ed0b9f8a7be913fce0572577b6
 workflow-type: tm+mt
-source-wordcount: '2360'
+source-wordcount: '2464'
 ht-degree: 0%
 
 ---
@@ -14,11 +14,11 @@ ht-degree: 0%
 
 Met de Commerce GraphQL Application Server kan Adobe Commerce de status onderhouden van Commerce GraphQL API-aanvragen. De Server van de Toepassing van GraphQL, die op de uitbreiding van de Steekproef wordt voortgebouwd, werkt als proces met arbeidersdraden die verzoekverwerking behandelen. GraphQL Application Server bewaart de status van een bootstrapped toepassing bij GraphQL API-aanvragen en verbetert de verwerking van aanvragen en de algehele productprestaties. API-aanvragen worden aanzienlijk efficiënter.
 
-GraphQL Application Server is alleen beschikbaar voor Adobe Commerce. Deze is niet beschikbaar voor Magento Open Source. Voor de Pro projecten van de Wolk, moet u [&#x200B; een 1&rbrace; kaartje van de Steun van Adobe Commerce voorleggen om de Server van de Toepassing van GraphQL toe te laten.](https://experienceleague.adobe.com/nl/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide)
+GraphQL Application Server is alleen beschikbaar voor Adobe Commerce. Deze is niet beschikbaar voor Magento Open Source. Voor de Pro projecten van de Wolk, moet u [ een 1} kaartje van de Steun van Adobe Commerce voorleggen om de Server van de Toepassing van GraphQL toe te laten.](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide)
 
 >[!NOTE]
 >
->GraphQL Application Server is momenteel niet compatibel met [[!DNL Amazon Simple Storage Service (AWS S3)] &#x200B;](https://aws.amazon.com/s3/) . Adobe Commerce op klanten van de wolkeninfrastructuur die momenteel [!DNL AWS S3] voor [&#x200B; verre opslag &#x200B;](../configuration/remote-storage/cloud-support.md) gebruiken kan de Server van de Toepassing van GraphQL niet gebruiken.
+>GraphQL Application Server is momenteel niet compatibel met [[!DNL Amazon Simple Storage Service (AWS S3)] ](https://aws.amazon.com/s3/) . Adobe Commerce op klanten van de wolkeninfrastructuur die momenteel [!DNL AWS S3] voor [ verre opslag ](../configuration/remote-storage/cloud-support.md) gebruiken kan de Server van de Toepassing van GraphQL niet gebruiken.
 
 ## Architectuur
 
@@ -43,7 +43,7 @@ Voor het uitvoeren van GraphQL Application Server is het volgende vereist:
 
 ### Cloud-projecten
 
-Adobe Commerce on cloud Infrastructure-projecten hebben standaard de extensie SWOLE. U kunt [&#x200B; &#x200B;](https://experienceleague.adobe.com/nl/docs/commerce-on-cloud/user-guide/configure/app/php-settings#enable-extensions) het in het `runtime` bezit van het `.magento.app.yaml` dossier toelaten. Bijvoorbeeld:
+Adobe Commerce on cloud Infrastructure-projecten hebben standaard de extensie SWOLE. U kunt [ ](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/configure/app/php-settings#enable-extensions) het in het `runtime` bezit van het `.magento.app.yaml` dossier toelaten. Bijvoorbeeld:
 
 ```yaml
 runtime:
@@ -53,7 +53,7 @@ runtime:
 
 ### Projecten ter plaatse
 
-U moet manueel [&#x200B; installeren en &#x200B;](#install-and-configure-swoole) vormen de uitbreiding van PHP van de Steek voor op-gebouwprojecten.
+U moet manueel [ installeren en ](#install-and-configure-swoole) vormen de uitbreiding van PHP van de Steek voor op-gebouwprojecten.
 
 ## Inschakelen en implementeren op cloudinfrastructuur
 
@@ -67,8 +67,8 @@ Met de module `ApplicationServer` (`Magento/ApplicationServer/` ) schakelt u Gra
 
 Nadat de eigenschap van de Server van de Toepassing op uw Proproject wordt toegelaten, voltooi de volgende stappen alvorens de Server van de Toepassing van GraphQL op te stellen:
 
-1. Stel Adobe Commerce op wolkeninfrastructuur op gebruikend het wolkenmalplaatje van [&#x200B; 2.4.7-appserver tak &#x200B;](https://github.com/magento/magento-cloud/tree/2.4.7-appserver).
-1. Zorg ervoor dat al uw aanpassingen en uitbreidingen van Commerce [&#x200B; &#x200B;](https://developer.adobe.com/commerce/php/development/components/app-server/) met de Server van de Toepassing van GraphQL compatibel zijn.
+1. Stel Adobe Commerce op wolkeninfrastructuur op gebruikend het wolkenmalplaatje van [ 2.4.7-appserver tak ](https://github.com/magento/magento-cloud/tree/2.4.7-appserver).
+1. Zorg ervoor dat al uw aanpassingen en uitbreidingen van Commerce [ ](https://developer.adobe.com/commerce/php/development/components/app-server/) met de Server van de Toepassing van GraphQL compatibel zijn.
 1. Clone your Commerce Cloud project.
 1. Pas indien nodig de instellingen in het bestand &#39;application-server/nginx.conf.sample&#39; aan.
 1. Maak een volledige commentaarregel van de actieve sectie &#39;Web&#39; in het `project_root/.magento.app.yaml` -bestand.
@@ -85,19 +85,19 @@ Nadat de eigenschap van de Server van de Toepassing op uw Proproject wordt toege
 
 1. Zorg ervoor dat `/application-server/start.sh` uitvoerbaar is door de volgende opdracht uit te voeren:
 
-   ```bash
+   ```shell
    chmod +x application-server/start.sh
    ```
 
 1. Voeg met deze opdracht bijgewerkte bestanden toe aan de git-index:
 
-   ```bash
+   ```shell
    git add -f .magento.app.yaml application-server/*
    ```
 
 1. Leg uw wijzigingen vast met deze opdracht:
 
-   ```bash
+   ```shell
    git commit -m "AppServer Enabled"
    ```
 
@@ -105,7 +105,7 @@ Nadat de eigenschap van de Server van de Toepassing op uw Proproject wordt toege
 
 Nadat u de stappen voor activering hebt uitgevoerd, voert u wijzigingen door in uw Git-opslagplaats om GraphQL Application Server te implementeren:
 
-```bash
+```shell
 git push
 ```
 
@@ -113,7 +113,7 @@ git push
 
 Voltooi de volgende stappen alvorens de Server van de Toepassing van GraphQL op de projecten van de Aanzet op te stellen:
 
-1. Stel Adobe Commerce op wolkeninfrastructuur op gebruikend het wolkenmalplaatje van [&#x200B; 2.4.7-appserver tak &#x200B;](https://github.com/magento/magento-cloud/tree/2.4.7-appserver).
+1. Stel Adobe Commerce op wolkeninfrastructuur op gebruikend het wolkenmalplaatje van [ 2.4.7-appserver tak ](https://github.com/magento/magento-cloud/tree/2.4.7-appserver).
 1. Zorg ervoor dat al uw Commerce-aanpassingen en -extensies compatibel zijn met GraphQL Application Server.
 1. Controleer of de omgevingsvariabele `CRYPT_KEY` voor uw instantie is ingesteld. U kunt de status van deze variabele controleren in de Cloud Console.
 1. Clone your Commerce Cloud project.
@@ -157,26 +157,26 @@ Voltooi de volgende stappen alvorens de Server van de Toepassing van GraphQL op 
 
 1. Bijgewerkte bestanden toevoegen aan de it-index:
 
-   ```bash
+   ```shell
    git add -f .magento.app.yaml .magento/routes.yaml .magento/services.yaml application-server/.magento/*
    ```
 
 1. Leg uw wijzigingen vast en duw ze erop om een implementatie te activeren:
 
-   ```bash
+   ```shell
    git commit -m "Enabling AppServer: initial changes"
    git push
    ```
 
 1. Gebruik SSH aan login aan het verre wolkenmilieu (_niet_ app):`application-server`
 
-   ```bash
+   ```shell
    magento-cloud ssh -p <project-ID> -e <environment-ID>
    ```
 
 1. Synchroniseer de gegevens van de lokale montage naar de gedeelde montage:
 
-   ```bash
+   ```shell
    rsync -avz var/* var_shared/
    rsync -avz app/etc/* app/etc_shared/
    rsync -avz pub/media/* pub/media_shared/
@@ -237,7 +237,7 @@ Voltooi de volgende stappen alvorens de Server van de Toepassing van GraphQL op 
 
 1. Voeg het bijgewerkte bestand toe aan de git-index, wijs wijzigingen toe en druk op om een implementatie te activeren:
 
-   ```bash
+   ```shell
    git add -f .magento.app.yaml
    git commit -m "Enabling AppServer: switch mounts"
    git push
@@ -247,7 +247,7 @@ Voltooi de volgende stappen alvorens de Server van de Toepassing van GraphQL op 
 
 1. Oude lokale montage opschonen:
 
-   ```bash
+   ```shell
    rm -rf var_old/*
    rm -rf app/etc_old/*
    rm -rf pub/media_old/*
@@ -265,7 +265,7 @@ Voltooi de volgende stappen alvorens de Server van de Toepassing van GraphQL op 
 
 1. Voeg het bijgewerkte bestand toe aan de git-index, wijs wijzigingen toe en druk op om een implementatie te activeren:
 
-   ```bash
+   ```shell
    git add -f .magento.app.yaml
    git commit -m "Enabling AppServer: finish"
    git push
@@ -273,13 +273,13 @@ Voltooi de volgende stappen alvorens de Server van de Toepassing van GraphQL op 
 
 >[!NOTE]
 >
->Zorg ervoor dat alle aangepaste instellingen in het basisbestand van `.magento.app.yaml` op de juiste wijze naar het `application-server/.magento/.magento.app.yaml` -bestand worden gemigreerd. Nadat het `application-server/.magento/.magento.app.yaml` dossier aan uw project wordt toegevoegd, zou u het naast het wortel `.magento.app.yaml` dossier moeten handhaven. Bijvoorbeeld, als u de dienst RabbitMQ [&#x200B; moet vormen of &#x200B;](https://experienceleague.adobe.com/nl/docs/commerce-on-cloud/user-guide/configure/service/rabbitmq) Webeigenschappen [&#x200B; beheert u de zelfde configuratie aan &#x200B;](https://experienceleague.adobe.com/nl/docs/commerce-on-cloud/user-guide/configure/app/properties/web-property) eveneens zou moeten toevoegen.`application-server/.magento/.magento.app.yaml`
+>Zorg ervoor dat alle aangepaste instellingen in het basisbestand van `.magento.app.yaml` op de juiste wijze naar het `application-server/.magento/.magento.app.yaml` -bestand worden gemigreerd. Nadat het `application-server/.magento/.magento.app.yaml` dossier aan uw project wordt toegevoegd, zou u het naast het wortel `.magento.app.yaml` dossier moeten handhaven. Bijvoorbeeld, als u de dienst RabbitMQ ](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/configure/service/rabbitmq) moet vormen of [ Webeigenschappen ](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/configure/app/properties/web-property) beheert u de zelfde configuratie aan `application-server/.magento/.magento.app.yaml` eveneens zou moeten toevoegen.[
 
 ### Inschakelen voor cloudprojecten verifiëren
 
 1. Voer een GraphQL-query of -mutatie uit op uw instantie om te bevestigen dat het `graphql` -eindpunt toegankelijk is. Bijvoorbeeld:
 
-   ```
+   ```graphql
    mutation {  
     createEmptyCart
    }
@@ -299,7 +299,7 @@ Voltooi de volgende stappen alvorens de Server van de Toepassing van GraphQL op 
 
 1. U kunt ook controleren of GraphQL Application Server wordt uitgevoerd door de volgende opdracht uit te voeren:
 
-   ```bash
+   ```shell
    ps aux|grep php
    ```
 
@@ -322,7 +322,7 @@ Voer de volgende stappen uit voordat u de module `ApplicationServer` inschakelt:
 
 #### Nginx configureren
 
-Uw specifieke Commerce-implementatie bepaalt hoe u Nginx kunt configureren. In het algemeen wordt het Nginx-configuratiebestand standaard met de naam `nginx.conf` geplaatst en in een van de volgende mappen geplaatst: `/usr/local/nginx/conf`, `/etc/nginx` of `/usr/local/etc/nginx` . Zie de _[Gids van de Begin &#x200B;](https://nginx.org/en/docs/beginners_guide.html)_ voor meer informatie bij het vormen van Nginx.
+Uw specifieke Commerce-implementatie bepaalt hoe u Nginx kunt configureren. In het algemeen is het Nginx-configuratiebestand standaard genaamd `nginx.conf` en wordt het in een van de volgende mappen geplaatst: `/usr/local/nginx/conf` , `/etc/nginx` of `/usr/local/etc/nginx` . Zie de _[Gids van de Begin ](https://nginx.org/en/docs/beginners_guide.html)_ voor meer informatie bij het vormen van Nginx.
 
 Voorbeeld-Nginxconfiguratie:
 
@@ -341,7 +341,7 @@ Als u de GraphQL Application Server lokaal wilt uitvoeren, installeert u de exte
 
 In de volgende procedure wordt beschreven hoe u de SWOLE-extensie voor PHP 8.2 kunt installeren op OSX-systemen. Het is een van de verschillende manieren om de extensie Swoole te installeren.
 
-```bash
+```shell
 pecl install swoole
 ```
 
@@ -351,7 +351,7 @@ Tijdens de installatie geeft Adobe Commerce aanwijzingen weer om ondersteuning v
 
 Controleer of de extensie is ingeschakeld:
 
-```bash
+```shell
 php -m | grep swoole
 ```
 
@@ -361,7 +361,7 @@ Eventuele fouten die optreden tijdens de installatie van een wisselaar treden ge
 
 * Controleer de locatie van `openssl` door uit te voeren:
 
-```bash
+```shell
 openssl version -d
 ```
 
@@ -369,17 +369,17 @@ Deze opdracht geeft het pad weer waarop `openssl` is geïnstalleerd.
 
 * Controleer de locatie van `pcre2` door uit te voeren:
 
-```bash
+```shell
 pcre2-config --prefix 
 ```
 
 Gebruik Homebrew om de ontbrekende pakketten te installeren als de opdrachtuitvoer aangeeft dat bestanden ontbreken:
 
-```bash
+```shell
 brew install openssl
 ```
 
-```bash
+```shell
 brew install pcre2
 ```
 
@@ -387,7 +387,7 @@ brew install pcre2
 
 Voer de volgende handelingen uit om problemen met betrekking tot `openssl` op te lossen:
 
-```bash
+```shell
 export LDFLAGS="-L/opt/homebrew/etc/openssl@3/lib" export CPPFLAGS="-I/opt/homebrew/etc/openssl@3/include"
 ```
 
@@ -397,7 +397,7 @@ Bevestig dat u het pad vanuit uw lokale `dev` omgeving gebruikt.
 
 U kunt de volgende opdracht opnieuw uitvoeren om te controleren of aan opensels gerelateerde problemen zijn opgelost:
 
-```bash
+```shell
 pecl install swoole
 ```
 
@@ -409,7 +409,7 @@ Als u problemen met `pcre2.h` wilt oplossen, symboliseert u het `pcre2.h` -pad n
 
 GraphQL Application Server starten:
 
-```bash
+```shell
 bin/magento server:run
 ```
 
@@ -417,14 +417,14 @@ Deze opdracht start een HTTP-poort op 9501. Zodra GraphQL Application Server wor
 
 Om te bevestigen dat de Server van de Toepassing van GraphQL in uw plaatsing loopt:
 
-```bash
+```shell
 ps aux | grep php
 ```
 
 U kunt onder andere controleren of GraphQL Application Server wordt uitgevoerd:
 
 * Controleer het `/var/log/application-server.log` -bestand op items die betrekking hebben op verwerkte GraphQL-aanvragen.
-* Probeer verbinding te maken met de HTTP-poort waarop GraphQL Application Server wordt uitgevoerd. Bijvoorbeeld: `curl -g 'http://localhost:9501/graph` .
+* Probeer verbinding te maken met de HTTP-poort waarop GraphQL Application Server wordt uitgevoerd. Bijvoorbeeld: `curl -g 'http://localhost:9501/graph`.
 
 ### Bevestig dat GraphQL-verzoeken worden verwerkt
 
@@ -432,7 +432,7 @@ GraphQL Application Server voegt de header `X-Backend` response met de waarde `g
 
 ### Compatibiliteit met extensies en aanpassingen bevestigen
 
-De ontwikkelaars en de handelaars van de uitbreiding zouden eerst moeten verifiëren dat hun uitbreiding en aanpassingscode aan de richtlijnen naleven die in _[worden beschreven Technische richtlijnen &#x200B;](https://developer.adobe.com/commerce/php/coding-standards/technical-guidelines/)_.
+De ontwikkelaars en de handelaars van de uitbreiding zouden eerst moeten verifiëren dat hun uitbreiding en aanpassingscode aan de richtlijnen naleven die in _[worden beschreven Technische richtlijnen ](https://developer.adobe.com/commerce/php/coding-standards/technical-guidelines/)_.
 
 Overweeg deze richtlijnen tijdens codeevaluatie:
 
@@ -449,13 +449,13 @@ De procedures voor het uitschakelen van de GraphQL Application Server variëren 
 
 1. Leg uw wijzigingen vast met deze opdracht:
 
-   ```bash
+   ```shell
    git commit -m "AppServer Disabled"
    ```
 
 1. Deze wijzigingen implementeren met deze opdracht:
 
-   ```bash
+   ```shell
    git push
    ```
 
@@ -468,7 +468,7 @@ Deze methode om de GraphQL Application Server uit te schakelen kan nuttig zijn o
 
 ### Bevestig dat GraphQL Application Server is uitgeschakeld
 
-Om te bevestigen dat `php-fpm` GraphQL-aanvragen verwerkt in plaats van de GraphQL Application Server, voert u de volgende opdracht in: `ps aux | grep php` .
+Als u wilt bevestigen dat `php-fpm` GraphQL-aanvragen verwerkt in plaats van de GraphQL Application Server, voert u de volgende opdracht in: `ps aux | grep php` .
 
 Nadat GraphQL Application Server is uitgeschakeld:
 
@@ -505,7 +505,7 @@ Voer `GraphQlStateTest` uit door `vendor/bin/phpunit -c $(pwd)/dev/tests/integra
 
 * **Typed bezit $x moet niet vóór initialisatiebericht** worden betreden. Dit probleem doet zich ook voor bij `GraphQlStateTest` .
 
-  Voer `ResetAfterRequestTest` uit door: `vendor/bin/phpunit -c $(pwd)/dev/tests/integration/phpunit.xml dev/tests/integration/testsuite/Magento/Framework/ObjectManager/ResetAfterRequestTest.php` uit.
+  `ResetAfterRequestTest` uitvoeren: `vendor/bin/phpunit -c $(pwd)/dev/tests/integration/phpunit.xml dev/tests/integration/testsuite/Magento/Framework/ObjectManager/ResetAfterRequestTest.php` .
 
 ### Functionele tests
 
@@ -515,7 +515,7 @@ Tijdens de implementatie van de GraphQL Application Server moeten extensieontwik
 
 Tijdens het uitvoeren van functionele tests (of het manueel testen), kan de Server van de Toepassing van GraphQL met `--state-monitor mode` worden in werking gesteld helpen klassen vinden waar de staat onbedoeld wordt hergebruikt. Start de toepassingsserver normaal, behalve voeg de parameter `--state-monitor` toe.
 
-```
+```shell
 bin/magento server:run --state-monitor
 ```
 
@@ -523,7 +523,7 @@ Nadat elke aanvraag is verwerkt, wordt een nieuw bestand toegevoegd aan de map `
 
 Voorbeelden:
 
-```
+```text
 /var/workspace/var/tmp/StateMonitor-json-2024-04-10T18:50:39Z-hW0ucN.json
 /var/workspace/var/tmp/StateMonitor-junit-2024-04-10T18:50:39Z-oreUco.xml
 ```

@@ -5,9 +5,9 @@ role: Developer
 feature: Best Practices
 last-substantial-update: 2023-12-8
 exl-id: 32b3137d-fc00-4be8-ba02-5d8d48a51fe1
-source-git-commit: 7054a5286f01e26e324401f4d8505e4e0faed93e
+source-git-commit: 48624d70761117ed0b9f8a7be913fce0572577b6
 workflow-type: tm+mt
-source-wordcount: '1747'
+source-wordcount: '1767'
 ht-degree: 0%
 
 ---
@@ -26,7 +26,7 @@ Een flard is een dossier dat instructies bevat om code binnen een dossier direct
 
 Patches worden gemakkelijk verbroken. Als de bestanden waarop de patch is gericht, worden bijgewerkt, werkt de patch vaak niet meer. Dat is omdat een flarddossier lijnaantallen en kolomaantallen bevat die specifiek wijzen op wat door de flardflatie moet worden veranderd. Als er niets overeenkomt met wat de patch had verwacht, wordt de code niet meer toegepast en wordt de code verbroken.
 
-```bash
+```shell
 diff --git a/vendor/magento/module-quote/Model/QuoteManagement.php b/vendor/magento/module-quote/Model/QuoteManagement.php
 index 51b68411d40..ac4a3468322 100644
 --- a/vendor/magento/module-quote/Model/QuoteManagement.php

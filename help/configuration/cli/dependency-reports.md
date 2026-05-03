@@ -2,9 +2,9 @@
 title: Afhankelijkheidsrapporten
 description: Leer hoe u afhankelijkheidsrapporten kunt maken met module-, circulaire en frameafhankelijkheden in Adobe Commerce. Analyse- en rapportagetools ontdekken.
 exl-id: b7a32fe1-71c5-495f-8276-242503fb50ae
-source-git-commit: 10f324478e9a5e80fc4d28ce680929687291e990
+source-git-commit: 48624d70761117ed0b9f8a7be913fce0572577b6
 workflow-type: tm+mt
-source-wordcount: '248'
+source-wordcount: '249'
 ht-degree: 0%
 
 ---
@@ -16,8 +16,8 @@ ht-degree: 0%
 U kunt de volgende typen rapporten uitvoeren:
 
 - **de gebiedsdelen van de Module**: Toont het totale aantal gebiedsdelen tussen modules en of de gebiedsdelen hard of zacht zijn.
-- **Cirkelgebiedsdelen**: Toont het totale aantal gebiedsketens en het aantal en de lijst van cirkelgebiedsdelen voor elke module.
-- **gebiedsdelen van het Kader**: Toont het totale aantal gebiedsdelen op het kader van Commerce door module (met inbegrip van het totale aantal kaderingangen voor elke bibliotheek).
+- **Cirkelgebiedsdelen**: Toont het totale aantal gebiedsketens en het aantal en de lijst van kringafhankelijkheden voor elke module.
+- **gebiedsdelen van het Kader**: Geeft het totale aantal afhankelijkheden van het Commerce-framework per module weer (inclusief het totale aantal frameworkitems voor elke bibliotheek).
 
 Een afhankelijkheid in een opmerking is ook een afhankelijkheid.
 
@@ -25,7 +25,7 @@ Een afhankelijkheid in een opmerking is ook een afhankelijkheid.
 
 Opdrachtopties:
 
-```bash
+```shell
 bin/magento info:dependencies:{show-modules|show-modules-circular|show-framework} [-d|--directory="<path>"] [-o|--output="<path and filename"]
 ```
 
@@ -51,7 +51,7 @@ Als er geen map of bestandsnaam als argument wordt doorgegeven, wordt de volgend
 
 Het volgende is een gedeelte van de output voor een rapport van de gebiedsdelen van de steekproefmodule:
 
-```
+```text
 "","All","Hard","Soft"
 "Total number of dependencies","602","587","15"
 
@@ -75,7 +75,7 @@ Het volgende is een gedeelte van de output voor een rapport van de gebiedsdelen 
 
 Het volgende is een gedeelte van de output voor een steekproef cirkelafhankelijkheidsrapport:
 
-```
+```text
 "Circular dependencies:","Total number of chains"
 "","848"
 
@@ -101,7 +101,7 @@ Het volgende is een gedeelte van de output voor een steekproef cirkelafhankelijk
 
 Het volgende is een deel van de output voor een rapport van de gebiedsdelen van het steekproefkader:
 
-```
+```text
 "Dependencies of framework:","Total number"
 "","111"
 

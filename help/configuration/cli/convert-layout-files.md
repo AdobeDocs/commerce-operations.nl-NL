@@ -2,9 +2,9 @@
 title: Layoutbestanden converteren
 description: Leer hoe u XML-lay-outbestanden omzet met behulp van opdrachtregelprogramma's van Adobe Commerce. Ontdek XSLT-stijlpagina-updates en bestandsconversieprocessen.
 exl-id: 9852b735-9b4b-43ce-887f-5c37d398bbf7
-source-git-commit: 10f324478e9a5e80fc4d28ce680929687291e990
+source-git-commit: f9a135fc63574ccbecd3f564a87fc5c4ac03f009
 workflow-type: tm+mt
-source-wordcount: '98'
+source-wordcount: '118'
 ht-degree: 0%
 
 ---
@@ -15,12 +15,12 @@ ht-degree: 0%
 
 Gebruik deze opdracht om uw XML-bestanden voor lay-outs bij te werken als u de overeenkomstige XSLT-stijlpagina (Extensible Stylesheet Language Transformations) bijwerkt.
 
-- [&#x200B; instructies van de Lay-out &#x200B;](https://developer.adobe.com/commerce/frontend-core/guide/layouts/xml-instructions/)
-- [&#x200B; de dossiertypes van de Lay-out &#x200B;](https://developer.adobe.com/commerce/frontend-core/guide/layouts/types/)
+- [Layout-instructies](https://developer.adobe.com/commerce/frontend-core/guide/layouts/xml-instructions)
+- [Bestandstypen layout](https://developer.adobe.com/commerce/frontend-core/guide/layouts/#layout-files-types-and-conventions)
 
 Opdrachtopties:
 
-```bash
+```shell
 bin/magento dev:xml:convert [-o|--overwrite] {xml file} {xslt stylesheet}
 ```
 

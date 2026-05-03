@@ -2,26 +2,26 @@
 title: Configuratieinstellingen exporteren
 description: Leer hoe te om de configuratiemontages van Adobe Commerce naar dossiers uit te voeren gebruikend config stortplaats. Ontdek pijpleiding plaatsing en configuratiebeheer.
 exl-id: db680f5e-547a-48f3-b017-d77b8cb07bfd
-source-git-commit: 10f324478e9a5e80fc4d28ce680929687291e990
+source-git-commit: 48624d70761117ed0b9f8a7be913fce0572577b6
 workflow-type: tm+mt
-source-wordcount: '210'
+source-wordcount: '244'
 ht-degree: 0%
 
 ---
 
 # Configuratieinstellingen exporteren
 
-In Commerce 2.2 en later [&#x200B; model van de pijpleidingsplaatsing &#x200B;](../deployment/technical-details.md), kunt u een verenigbare configuratie over systemen handhaven. Nadat u montages in Admin op uw ontwikkelingssysteem vormt, voer die montages naar configuratiedossiers uit gebruikend het volgende bevel:
+In Commerce 2.2 en later [ model van de pijpleidingsplaatsing ](../deployment/technical-details.md), kunt u een verenigbare configuratie over systemen handhaven. Nadat u montages in Admin op uw ontwikkelingssysteem vormt, voer die montages naar configuratiedossiers uit gebruikend het volgende bevel:
 
-```bash
+```shell
 bin/magento app:config:dump {config-types}
 ```
 
-_config_types_ is een ruimte-gescheiden lijst van config types aan stortplaats. Beschikbare typen zijn `scopes` , `system` , `themes` en `i18n` . Als geen config types worden gespecificeerd, dumpt het bevel alle informatie van de systeemconfiguratie.
+_config_ types_ is een ruimte-gescheiden lijst van config types aan stortplaats. Beschikbare typen zijn `scopes` , `system` , `themes` en `i18n` . Als geen config types worden gespecificeerd, dumpt het bevel alle informatie van de systeemconfiguratie.
 
 In het volgende voorbeeld worden alleen het bereik en de thema&#39;s dumpt:
 
-```bash
+```shell
 bin/magento app:config:dump scopes themes
 ```
 
@@ -32,7 +32,7 @@ Als resultaat van de beveluitvoering, worden de volgende configuratiedossiers bi
   Dit is het gedeelde configuratiebestand voor al uw Commerce-instanties.
 Neem dit op in de broncontrole zodat het kan worden gedeeld tussen de ontwikkelings-, bouw- en productiesystemen.
 
-  Zie [&#x200B; config.php verwijzing &#x200B;](../reference/config-reference-configphp.md).
+  Zie [ config.php verwijzing ](../reference/config-reference-configphp.md).
 
 - `app/etc/env.php`
 
@@ -41,12 +41,12 @@ Het bevat gevoelige en systeemspecifieke instellingen voor afzonderlijke omgevin
 
   __ omvat dit dossier niet in broncontrole.
 
-  Zie [&#x200B; env.php verwijzing &#x200B;](../reference/config-reference-envphp.md).
+  Zie [ env.php verwijzing ](../reference/config-reference-envphp.md).
 
 ## Gevoelige of systeemspecifieke instellingen
 
-Gebruik de opdracht `env.php` om de gevoelige instellingen in te stellen die naar [`bin/magento config:sensitive:set`](set-configuration-values.md#set-values) worden geschreven.
+Gebruik de opdracht [`bin/magento config:sensitive:set`](set-configuration-values.md#set-values) om de gevoelige instellingen in te stellen die naar `env.php` worden geschreven.
 
-De waarden van de configuratie worden gespecificeerd als of gevoelig of systeem-specifiek door [`Magento\Config\Model\Config\TypePool` van verwijzingen te voorzien &#x200B;](https://github.com/magento/magento2/blob/2.4/app/code/Magento/Config/Model/Config/TypePool.php) in het 2&rbrace; [`di.xml` dossier van de module &lbrace;.](https://developer.adobe.com/commerce/php/development/configuration/sensitive-environment-settings/#how-to-specify-values-as-sensitive-or-system-specific)
+De waarden van de configuratie worden gespecificeerd als of gevoelig of systeem-specifiek door [`Magento\Config\Model\Config\TypePool` van verwijzingen te voorzien ](https://github.com/magento/magento2/blob/2.4/app/code/Magento/Config/Model/Config/TypePool.php) in het 2} ](https://developer.adobe.com/commerce/php/development/configuration/sensitive-environment-settings/#how-to-specify-values-as-sensitive-or-system-specific) dossier van de module {.[`di.xml`
 
 Als u aanvullende systeeminstellingen wilt exporteren wanneer u `config_types` gebruikt, kunt u de opdracht [`bin/magento config:set`](set-configuration-values.md#set-values) gebruiken.

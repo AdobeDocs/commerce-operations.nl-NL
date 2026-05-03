@@ -4,9 +4,9 @@ description: Leer beste praktijken voor het vormen van privé inhoudsblokken om 
 role: Developer
 feature: Best Practices
 exl-id: a6d2f324-f9b9-4b2b-997f-36df02c37465
-source-git-commit: 94d7a57dcd006251e8eefbdb4ec3a5e140bf43f9
+source-git-commit: f9a135fc63574ccbecd3f564a87fc5c4ac03f009
 workflow-type: tm+mt
-source-wordcount: '186'
+source-wordcount: '210'
 ht-degree: 0%
 
 ---
@@ -15,11 +15,11 @@ ht-degree: 0%
 
 Wanneer een blok met inhoud van het type private de variabele `_isScopePrivate` bevat, kan het blok niet in cache worden geplaatst. Omdat het privéblok niet in de cache is opgeslagen, moet Adobe Commerce dezelfde gegevens ophalen voor elke aanvraag van de klant die de serverlading verhoogt.
 
-In plaats van de variabele `_isScopePrivate` te gebruiken voor persoonlijke inhoud, maakt u een blok en een sjabloon om gebruikersbewuste gegevens weer te geven. Deze gegevens worden vervangen door gebruikersspecifieke gegevens door de Adobe Commerce UI-component, die het renderen van gegevens efficiënter afhandelt. Voor instructies, zie [&#x200B; Privé Inhoud &#x200B;](https://developer.adobe.com/commerce/php/development/cache/page/private-content/) in _[!DNL Commerce PHP Extensions Guide]_.
+In plaats van de variabele `_isScopePrivate` te gebruiken voor persoonlijke inhoud, maakt u een blok en een sjabloon om gebruikersbewuste gegevens weer te geven. Deze gegevens worden vervangen door gebruikersspecifieke gegevens door de Adobe Commerce UI-component, die het renderen van gegevens efficiënter afhandelt. Voor instructies, zie [ Privé Inhoud ](https://developer.adobe.com/commerce/php/development/cache/page/private-content/) in _[!DNL Commerce PHP Extensions Guide]_.
 
 ## Betrokken producten en versies
 
-[&#x200B; Alle gesteunde versies &#x200B;](../../../release/versions.md) van:
+[ Alle gesteunde versies ](../../../release/versions.md) van:
 
 - Adobe Commerce over cloudinfrastructuur
 - Adobe Commerce ter plaatse
@@ -31,4 +31,4 @@ Sites met persoonlijke inhoudsblokken die de `_isScopePrivate` -variabelen bevat
 ## Aanvullende informatie
 
 - [Persoonlijke inhoud](../../../performance/configuration.md#client-side-optimization-settings)
-- [&#x200B; Hoge de verzoeken van AJAX van de productie veroorzaken slechte prestaties &#x200B;](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/high-throughput-ajax-requests-cause-poor-performance.html?lang=nl-NL)
+- [ Kabel en Privé Blokken ](https://developer.adobe.com/commerce/php/development/cache/page/private-content/#cacheable-and-private-blocks) in _[!DNL Commerce PHP Extensions Guide]_

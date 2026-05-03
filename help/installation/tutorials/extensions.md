@@ -2,9 +2,9 @@
 title: Extensies van derden beheren
 description: Voer de volgende stappen uit om Adobe Commerce-extensies te installeren, in te schakelen, te upgraden en te verwijderen.
 exl-id: b564662a-2e5f-4fa9-bae1-ca7498478fa9
-source-git-commit: 4caabd1578e56b74600441c9c779b7b2dfd06987
+source-git-commit: 48624d70761117ed0b9f8a7be913fce0572577b6
 workflow-type: tm+mt
-source-wordcount: '805'
+source-wordcount: '831'
 ht-degree: 0%
 
 ---
@@ -12,7 +12,7 @@ ht-degree: 0%
 
 # Extensies van derden beheren
 
-Code die het gedrag van Adobe Commerce uitbreidt of aanpast, wordt een extensie genoemd. U kunt naar keuze uitbreidingen op [&#x200B; Commerce Marketplace &#x200B;](https://commercemarketplace.adobe.com/) of een ander systeem van de uitbreidingsdistributie verpakken en verdelen.
+Code die het gedrag van Adobe Commerce uitbreidt of aanpast, wordt een extensie genoemd. U kunt naar keuze uitbreidingen op [ Commerce Marketplace ](https://commercemarketplace.adobe.com/) of een ander systeem van de uitbreidingsdistributie verpakken en verdelen.
 
 Extensies zijn:
 
@@ -20,9 +20,9 @@ Extensies zijn:
 - Thema&#39;s (wijzig de vormgeving van uw winkel en Admin)
 - Taalpakketten (lokaliseer de winkel en Admin)
 
-Dit onderwerp verklaart hoe te om de bevel-lijn interface te gebruiken om derdeuitbreidingen te beheren die u van Commerce Marketplace voor _op-gebouw_ projecten koopt. Voor de projecten van de wolkeninfrastructuur, zie [&#x200B; uitbreidingen &#x200B;](https://experienceleague.adobe.com/nl/docs/commerce-cloud-service/user-guide/configure-store/extensions) beheren.
+Dit onderwerp verklaart hoe te om de bevel-lijn interface te gebruiken om derdeuitbreidingen te beheren die u van Commerce Marketplace voor _op-gebouw_ projecten koopt. Voor de projecten van de wolkeninfrastructuur, zie [ uitbreidingen ](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/configure-store/extensions) beheren.
 
-U kunt de zelfde procedure gebruiken om _om het even welke_ uitbreiding te installeren; allen u hebt nodig is de naam en de versie van Composer van de uitbreiding. Als u de extensie wilt zoeken, opent u het `composer.json` -bestand en noteert u de waarden voor `"name"` en `"version"` .
+U kunt de zelfde procedure gebruiken om _om het even welke_ uitbreiding te installeren; u hebt alleen de Composer-naam en -versie van de extensie nodig. Als u de extensie wilt zoeken, opent u het `composer.json` -bestand en noteert u de waarden voor `"name"` en `"version"` .
 
 ## Installeren
 
@@ -31,7 +31,7 @@ Voordat u gaat installeren, kunt u het volgende doen:
 1. Maak een back-up van uw database.
 1. Onderhoudsmodus inschakelen:
 
-   ```bash
+   ```shell
    bin/magento maintenance:enable
    ```
 
@@ -40,7 +40,7 @@ Als u een extensie wilt installeren, moet u:
 1. Haal de extensie op van de Commerce Marketplace of een andere extensieontwikkelaar.
 1. Als u een extensie installeert vanuit de Commerce Marketplace, moet u ervoor zorgen dat de `repo.magento.com` -opslagplaats bestaat in uw `composer.json` -bestand:
 
-   ```bash
+   ```shell
    "repositories": [
        {
            "type": "composer",
@@ -56,23 +56,23 @@ Als u een extensie wilt installeren, moet u:
 
 ### Extensiegegevens ophalen
 
-Als u reeds de naam en de versie van Composer van de uitbreiding kent, sla deze stap over en ga met [&#x200B; verder werk uw `composer.json` dossier &#x200B;](#update-composer-dependencies) bij.
+Als u reeds de naam en de versie van Composer van de uitbreiding kent, sla deze stap over en ga met [ verder werk uw `composer.json` dossier ](#update-composer-dependencies) bij.
 
 De naam en versie van de componist van de extensie ophalen uit de Commerce Marketplace:
 
-1. Login aan [&#x200B; Commerce Marketplace &#x200B;](https://commercemarketplace.adobe.com/) met de gebruikersbenaming en het wachtwoord u gebruikte om de uitbreiding te kopen.
+1. Login aan [ Commerce Marketplace ](https://commercemarketplace.adobe.com/) met de gebruikersbenaming en het wachtwoord u gebruikte om de uitbreiding te kopen.
 
 1. In de hoger-juiste hoek, klik **Uw naam** > **Mijn Profiel**.
 
-   ![&#x200B; heb toegang tot uw rekening van de Marketplace &#x200B;](../../assets/installation/marketplace-my-profile.png)
+   ![ heb toegang tot uw rekening van de Marketplace ](../../assets/installation/marketplace-my-profile.png)
 
 1. Klik **Mijn Aankopen**.
 
-   ![&#x200B; de aankoopgeschiedenis van de Marketplace &#x200B;](../../assets/installation//marketplace-my-purchases.png)
+   ![ de aankoopgeschiedenis van de Marketplace ](../../assets/installation//marketplace-my-purchases.png)
 
 1. Zoek de extensie die u wilt installeren en noteer de naam en versie van de component.
 
-   ![&#x200B; Technische details van de Uitbreiding die de Composer pakketnaam voor installatie tonen &#x200B;](../../assets/installation/marketplace-extension-technical-details.png)
+   ![ Technische details van de Uitbreiding die de Composer pakketnaam voor installatie tonen ](../../assets/installation/marketplace-extension-technical-details.png)
 
 >[!TIP]
 >
@@ -84,21 +84,21 @@ Voeg de naam en de versie van de extensie toe aan het `composer.json` -bestand:
 
 1. Navigeer naar de projectmap en werk het `composer.json` -bestand bij.
 
-   ```bash
+   ```shell
    composer require <component-name>:<version>
    ```
 
    Bijvoorbeeld:
 
-   ```bash
+   ```shell
    composer require j2t/module-payplug:2.0.2
    ```
 
-1. Ga uw [&#x200B; authentificatietoetsen &#x200B;](../prerequisites/authentication-keys.md) in. Uw openbare sleutel is uw gebruikersnaam; uw persoonlijke sleutel is uw wachtwoord.
+1. Ga uw [ authentificatietoetsen ](../prerequisites/authentication-keys.md) in. Uw openbare sleutel is uw gebruikersnaam; uw persoonlijke sleutel is uw wachtwoord.
 
 1. Wacht op Composer om het bijwerken van uw projectgebiedsdelen te voltooien en ervoor te zorgen dat er geen fouten zijn:
 
-   ```
+   ```text
    Updating dependencies (including require-dev)
    Package operations: 1 install, 0 updates, 0 removals
      - Installing j2t/module-payplug (2.0.2): Downloading (100%)
@@ -110,19 +110,19 @@ Voeg de naam en de versie van de extensie toe aan het `composer.json` -bestand:
 
 Voer de volgende opdracht uit om te controleren of de extensie correct is geïnstalleerd:
 
-```bash
+```shell
 bin/magento module:status J2t_Payplug
 ```
 
 Standaard is de extensie waarschijnlijk uitgeschakeld:
 
-```
+```text
 Module is disabled
 ```
 
-De naam van de extensie heeft de indeling `<VendorName>_<ComponentName>` . Dit is een andere indeling dan de naam van de componist. Gebruik deze indeling om de extensie in te schakelen. Voer de volgende handelingen uit als u niet zeker bent van de naam van de extensie:
+De extensienaam heeft de notatie `<VendorName>_<ComponentName>` . Dit is een andere indeling dan de naam van de componist. Gebruik deze indeling om de extensie in te schakelen. Voer de volgende handelingen uit als u niet zeker bent van de naam van de extensie:
 
-```bash
+```shell
 bin/magento module:status
 ```
 
@@ -134,13 +134,13 @@ Sommige extensies werken alleen correct als u gegenereerde statische weergavebes
 
 1. De extensie inschakelen en statische weergavebestanden wissen:
 
-   ```bash
+   ```shell
    bin/magento module:enable J2t_Payplug --clear-static-content
    ```
 
    U zou de volgende output moeten zien:
 
-   ```
+   ```text
    The following modules have been enabled:
    - J2t_Payplug
    
@@ -152,31 +152,31 @@ Sommige extensies werken alleen correct als u gegenereerde statische weergavebes
 
 1. De extensie registreren:
 
-   ```bash
+   ```shell
    bin/magento setup:upgrade
    ```
 
-1. Uw project opnieuw compileren: in de productiemodus ontvangt u mogelijk het bericht &quot;Voer de Magento-opdracht voor compileren opnieuw uit&quot;. De toepassing vraagt u niet om het compileerbevel op de wijze van de Ontwikkelaar in werking te stellen.
+1. Uw project opnieuw compileren: In de productiemodus ontvangt u mogelijk het bericht &quot;Voer de Magento-opdracht voor compileren opnieuw uit&quot;. De toepassing vraagt u niet om het compileerbevel op de wijze van de Ontwikkelaar in werking te stellen.
 
-   ```bash
+   ```shell
    bin/magento setup:di:compile
    ```
 
 1. Controleer of de extensie is ingeschakeld:
 
-   ```bash
+   ```shell
    bin/magento module:status J2t_Payplug
    ```
 
    De uitvoer moet controleren of de extensie niet meer is uitgeschakeld:
 
-   ```
+   ```text
    Module is enabled
    ```
 
 1. De cache reinigen:
 
-   ```bash
+   ```shell
    bin/magento cache:clean
    ```
 
@@ -184,7 +184,7 @@ Sommige extensies werken alleen correct als u gegenereerde statische weergavebes
 
 >[!TIP]
 >
->Als er fouten optreden bij het laden van de storefront in een browser, gebruikt u de volgende opdracht om de cache te wissen: `bin/magento cache:flush` .
+>Als u fouten tegenkomt bij het laden van de storefront in een browser, gebruikt u de volgende opdracht om de cache te wissen: `bin/magento cache:flush`.
 
 ## Upgrade
 
@@ -198,27 +198,27 @@ Een module of extensie bijwerken of bijwerken:
 
    Bijwerken per modulenaam:
 
-   ```bash
+   ```shell
    composer update vendor/module-name
    ```
 
    Bijwerken per versie:
 
-   ```bash
+   ```shell
    composer require vendor/module-name ^x.x.x
    ```
 
 1. Voer de volgende opdrachten uit om de cache te upgraden, te implementeren en schoon te maken.
 
-   ```bash
+   ```shell
    bin/magento setup:upgrade --keep-generated
    ```
 
-   ```bash
+   ```shell
    bin/magento setup:static-content:deploy
    ```
 
-   ```bash
+   ```shell
    bin/magento cache:clean
    ```
 
@@ -240,13 +240,13 @@ De volgende instructies bevatten algemene informatie voor het verwijderen van ex
 
    - Voor op Composer gebaseerde extensies verwijdert u de extensie uit het Adobe Commerce `composer.json` -bestand.
 
-     ```bash
+     ```shell
      composer remove <component-name>
      ```
 
    - Voor extensies die niet op Composer zijn gebaseerd, verwijdert u de fysieke bestanden uit de Adobe Commerce-projectopslagplaats.
 
-     ```bash
+     ```shell
      rm -rf app/code/<vendor-name>/<component-name>
      ```
 

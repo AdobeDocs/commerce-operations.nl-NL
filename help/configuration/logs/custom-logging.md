@@ -1,18 +1,18 @@
 ---
 title: Aangepaste logboekregistratie
-description: Leer hoe u fouten kunt onderzoeken met behulp van aangepaste logboekregistratie.
+description: Leer hoe u fouten kunt onderzoeken met aangepaste, op bestanden gebaseerde aanmeldingen in Adobe Commerce, waaronder PSR-3-compatibiliteit en gecentraliseerde logingoverwegingen.
 feature: Configuration, Logs
 exl-id: 6c94ebcf-70df-4818-a17b-32512eba516d
-source-git-commit: 6896d31a202957d7354c3dd5eb6459eda426e8d7
+source-git-commit: 41b8d77793f1c24f08ff7e6a2d35826a62477534
 workflow-type: tm+mt
-source-wordcount: '390'
+source-wordcount: '429'
 ht-degree: 0%
 
 ---
 
 # Overzicht van aangepaste logboekregistratie
 
-Logs verstrekken zicht in systeemprocessen; bijvoorbeeld, het zuiveren informatie die u met begrip helpt wanneer een fout voorkwam of wat tot de fout leidt.
+Logboeken geven zichtbaarheid in systeemprocessen; bijvoorbeeld, het zuiveren informatie die u met inzicht helpt wanneer een fout voorkwam of wat tot de fout leidt.
 
 Dit onderwerp concentreert zich op dossier-gebaseerd registreren, hoewel Commerce de flexibiliteit verstrekt om logboeken in het gegevensbestand eveneens op te slaan.
 
@@ -20,7 +20,7 @@ Adobe raadt u aan om gecentraliseerde registratie van toepassingen te gebruiken 
 
 - Hierdoor kunnen logbestanden worden opgeslagen op een andere server dan de toepassingsserver en worden I/O-bewerkingen op de schijf verminderd, waardoor de ondersteuning van de toepassingsserver wordt vereenvoudigd.
 
-- Het maakt de verwerking van logboekgegevens effectiever door speciale hulpmiddelen-zulke als [&#x200B; Logstash &#x200B;](https://www.elastic.co/products/logstash), [&#x200B; Logplex &#x200B;](https://devcenter.heroku.com/articles/logplex), of [&#x200B; fluentd &#x200B;](https://www.fluentd.org/) te gebruiken - zonder effect aan een productieserver.
+- Het maakt de verwerking van logboekgegevens effectiever door speciale hulpmiddelen-zulke als [ Logstash ](https://www.elastic.co/products/logstash), [ Logplex ](https://devcenter.heroku.com/articles/logplex), of [ fluentd ](https://www.fluentd.org/) te gebruiken - zonder effect aan een productieserver.
 
   >[!INFO]
   >
@@ -28,13 +28,13 @@ Adobe raadt u aan om gecentraliseerde registratie van toepassingen te gebruiken 
 
 ## Compatibiliteit met PSR-3
 
-De [&#x200B; norm PSR-3 &#x200B;](https://docs.laminas.dev/laminas-log/) bepaalt een gemeenschappelijke PHP interface voor registrerenbibliotheken. Het hoofddoel van PSR-3 is bibliotheken toe te staan om een `Psr\Log\LoggerInterface` voorwerp te ontvangen en logboeken aan het te schrijven op een eenvoudige en universele manier.
+De [ norm PSR-3 ](https://docs.laminas.dev/laminas-log/) bepaalt een gemeenschappelijke PHP interface voor registrerenbibliotheken. Het hoofddoel van PSR-3 is bibliotheken toe te staan om een `Psr\Log\LoggerInterface` voorwerp te ontvangen en logboeken aan het te schrijven op een eenvoudige en universele manier.
 
 Hierdoor kan de implementatie gemakkelijk worden vervangen zonder dat er zorgen zijn dat deze vervanging de toepassingscode kan doorbreken. Het waarborgt ook een douanecomponent zal werken zelfs wanneer de logboekimplementatie in een toekomstige versie van het systeem wordt veranderd.
 
 ## Monolog
 
-Commerce 2 voldoet aan de norm PSR-3. Door gebrek, gebruikt Commerce [&#x200B; Monolog &#x200B;](https://github.com/Seldaek/monolog). Monolog uitgevoerd als voorkeur voor `Psr\Log\LoggerInterface` in de toepassing van Commerce [`di.xml` &#x200B;](https://github.com/magento/magento2/blob/2.4/app/etc/di.xml#L9).
+Commerce 2 voldoet aan de norm PSR-3. Door gebrek, gebruikt Commerce [ Monolog ](https://github.com/Seldaek/monolog). Monolog uitgevoerd als voorkeur voor `Psr\Log\LoggerInterface` in de toepassing van Commerce [`di.xml` ](https://github.com/magento/magento2/blob/2.4/app/etc/di.xml#L9).
 
 Monolog is een populaire PHP-logboekoplossing met een groot aantal handlers waarmee u geavanceerde logboekstrategieën kunt ontwikkelen. Hieronder volgt een overzicht van de werking van Monolog.
 

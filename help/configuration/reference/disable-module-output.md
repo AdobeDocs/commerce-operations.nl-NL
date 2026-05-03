@@ -2,9 +2,9 @@
 title: Uitvoer van module uitschakelen
 description: Leer hoe u de uitvoer van modules in Adobe Commerce kunt uitschakelen zonder afhankelijkheden te verwijderen. Ontdek configuratiestappen en gebruiksgevallen.
 exl-id: af556bf5-8454-4d65-8ac8-4a64c108f092
-source-git-commit: 10f324478e9a5e80fc4d28ce680929687291e990
+source-git-commit: 48624d70761117ed0b9f8a7be913fce0572577b6
 workflow-type: tm+mt
-source-wordcount: '374'
+source-wordcount: '401'
 ht-degree: 0%
 
 ---
@@ -21,8 +21,8 @@ De module `Customer` is bijvoorbeeld afhankelijk van de module `Review` , zodat 
 
 Uitschakelen van uitvoer wordt uitgevoerd in de volgende klassen:
 
-- [&#x200B; \Magento\Framework\View\Element\AbstractBlock::toHtml &#x200B;](https://github.com/magento/magento2/blob/36097739bbb0b8939ad9a2a0dadee64318153dca/lib/internal/Magento/Framework/View/Element/AbstractBlock.php#L651)
-- [&#x200B; \Magento\Backend\Block\Template::isOutputEnabled &#x200B;](https://github.com/magento/magento2/blob/0c786907ffe03d0e2990612eec16ee58b00379c5/app/code/Magento/Backend/Block/Template.php#L96)
+- [\Magento\Framework\View\Element\AbstractBlock:toHTML](https://github.com/magento/magento2/blob/36097739bbb0b8939ad9a2a0dadee64318153dca/lib/internal/Magento/Framework/View/Element/AbstractBlock.php#L651)
+- [\Magento\Backend\Block\Template::isOutputEnabled](https://github.com/magento/magento2/blob/0c786907ffe03d0e2990612eec16ee58b00379c5/app/code/Magento/Backend/Block/Template.php#L96)
 
 >[!WARNING]
 >
@@ -32,7 +32,7 @@ Uitschakelen van uitvoer wordt uitgevoerd in de volgende klassen:
 
 Om moduleoutput in de pijpleidingsplaatsing of een andere plaatsing, met veelvoudige instanties van de toepassing van Commerce onbruikbaar te maken:
 
-1. Bewerk het bestand `Backend` van de module `config.xml` .
+1. Bewerk het bestand `config.xml` van de module `Backend` .
 1. Exporteer de configuratiewijzigingen.
 
 ### Het bestand `Backend` module `config.xml` bewerken
@@ -60,7 +60,7 @@ Als voorbeeldresultaat van deze configuratie kunnen klanten zich niet meer aanme
 
 Voer het volgende bevel in werking om de configuratieveranderingen uit te voeren:
 
-```bash
+```shell
 bin/magento app:config:dump
 ```
 
@@ -68,11 +68,11 @@ De resultaten worden naar het `<Magento_install_dir>/app/etc/config.php` -bestan
 
 Wis vervolgens de cache om de nieuwe instelling in te schakelen:
 
-```bash
+```shell
 bin/magento cache:clean config
 ```
 
-Zie [&#x200B; de configuratie &#x200B;](../cli/export-configuration.md) uitvoeren.
+Zie [ de configuratie ](../cli/export-configuration.md) uitvoeren.
 
 ## Module-uitvoer uitschakelen in een eenvoudige implementatie
 

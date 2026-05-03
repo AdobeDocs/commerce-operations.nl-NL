@@ -1,11 +1,11 @@
 ---
 title: Oplossing voor gesplitste databaseprestaties
-description: Lees over de gesplitste databaseoplossing voor Adobe Commerce.
+description: Meer informatie over de gesplitste oplossing voor databaseprestaties voor Adobe Commerce, het scheiden van afhandeling, bestellingen en productmasters voor schaalbaarheid op locatie.
 recommendations: noCatalog
 exl-id: 922a9af7-2c46-4bf3-b1ad-d966f5564ec0
-source-git-commit: 8d0d8f9822b88f2dd8cbae8f6d7e3cdb14cc4848
+source-git-commit: 41b8d77793f1c24f08ff7e6a2d35826a62477534
 workflow-type: tm+mt
-source-wordcount: '623'
+source-wordcount: '635'
 ht-degree: 0%
 
 ---
@@ -36,7 +36,7 @@ MySQL-databases worden asynchroon gerepliceerd. Dit betekent dat slaven niet per
 
 In de volgende afbeelding ziet u hoe deze functie werkt.
 
-![&#x200B; Adobe Commerce gebruikt verschillende gegevensbestanden om lijsten op te slaan &#x200B;](../../assets/configuration/split-db-diagram-ee.png)
+![ Adobe Commerce gebruikt verschillende gegevensbestanden om lijsten op te slaan ](../../assets/configuration/split-db-diagram-ee.png)
 
 In Magento Open Source wordt slechts één hoofddatabase gebruikt.
 
@@ -64,9 +64,9 @@ Dit betekent ook dat u:
 
   Adobe raadt aan zo snel mogelijk gesplitste databases te configureren nadat u de Commerce-software hebt geïnstalleerd.
 
-- [&#x200B; vormt manueel &#x200B;](multi-master-manual.md) de gespleten gegevensbestandoplossing.
+- [ vormt manueel ](multi-master-manual.md) de gespleten gegevensbestandoplossing.
 
-  U moet deze taak uitvoeren als u reeds componenten hebt geïnstalleerd of als Commerce reeds in productie is. (_werk_ geen productiesysteem bij; maak de updates in een ontwikkelingssysteem en synchroniseer de veranderingen nadat u hen hebt getest.)
+  U moet deze taak uitvoeren als u reeds componenten hebt geïnstalleerd of als Commerce reeds in productie is. (_werk_ geen productiesysteem bij; Breng de updates in een ontwikkelingssysteem aan en synchroniseer de veranderingen nadat u hen hebt getest.)
 
   >[!WARNING]
   >

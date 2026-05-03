@@ -1,9 +1,9 @@
 ---
 title: Berichtenmakelaar (ActiveMQ Artemis)
 description: Voer de volgende stappen uit om Apache ActiveMQ Artemis berichtbroker voor installaties in de bedrijfsruimten van Adobe Commerce te installeren en te configureren.
-source-git-commit: 7610a5843b526a765dd35188722b7be8e6051049
+source-git-commit: 48624d70761117ed0b9f8a7be913fce0572577b6
 workflow-type: tm+mt
-source-wordcount: '902'
+source-wordcount: '936'
 ht-degree: 0%
 
 ---
@@ -15,7 +15,7 @@ Adobe Commerce ondersteunt ook de open-source berichtbroker van ActiveMQ Artemis
 
 >[!NOTE]
 >
->ActiveMQ Artemis is geïntroduceerd in Adobe Commerce 2.4.5 en latere versies. Voor details bij het installeren van Artemis ActiveMQ in Adobe Commerce op de projecten van de wolkeninfrastructuur, zie &lbrace;de dienst ActiveMQ van de Opstelling [&#x200B; in &#x200B;](https://experienceleague.adobe.com/nl/docs/commerce-on-cloud/user-guide/configure/service/activemq) Commerce op de Gids van de Wolk *.*
+>ActiveMQ Artemis is geïntroduceerd in Adobe Commerce 2.4.5 en latere versies. Voor details bij het installeren van Artemis ActiveMQ in Adobe Commerce op de projecten van de wolkeninfrastructuur, zie {de dienst ActiveMQ van de Opstelling ](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/configure/service/activemq) in *Commerce op de Gids van de Wolk*.[
 
 De rijen van het bericht verstrekken een asynchroon communicatie mechanisme waarin de afzender en de ontvanger van een bericht niet elkaar contacteren. Noch moeten zij met de berichtrij tezelfdertijd communiceren. Wanneer een afzender een bericht in een rij plaatst, wordt het opgeslagen tot de ontvanger hen ontvangt.
 
@@ -26,18 +26,18 @@ Het systeem van de berichtrij moet worden gevestigd alvorens u Adobe Commerce in
 
 >[!NOTE]
 >
->U kunt MySQL, ActiveMQ of [!DNL RabbitMQ] gebruiken voor de verwerking van een wachtrij met berichten. Voor details bij vestiging het systeem van de berichtrij, zie [&#x200B; een rij van het Bericht overzicht &#x200B;](https://developer.adobe.com/commerce/php/development/components/message-queues/). Als u de Bulk-API met Adobe Commerce gebruikt, wordt de systeemconfiguratie van de wachtrij voor berichten standaard ingesteld op het gebruik van [!DNL RabbitMQ] als de berichtenbroker. Zie [&#x200B; de gebruikers van de het berichtrij van het Begin &#x200B;](../../configuration/cli/start-message-queues.md) voor meer informatie.
+>U kunt MySQL, ActiveMQ of [!DNL RabbitMQ] gebruiken voor de verwerking van een wachtrij met berichten. Voor details bij vestiging het systeem van de berichtrij, zie [ een rij van het Bericht overzicht ](https://developer.adobe.com/commerce/php/development/components/message-queues/). Als u de Bulk-API met Adobe Commerce gebruikt, wordt de systeemconfiguratie van de wachtrij voor berichten standaard ingesteld op het gebruik van [!DNL RabbitMQ] als de berichtenbroker. Zie [ de gebruikers van de het berichtrij van het Begin ](../../configuration/cli/start-message-queues.md) voor meer informatie.
 
 >[!TIP]
 >
->Controleer altijd de [&#x200B; Apache ActiveMQ Artemis downloadpagina &#x200B;](https://activemq.apache.org/components/artemis/download/) voor de recentste stabiele versie vóór installatie. In de voorbeelden in dit document wordt versie 2.42.0 gebruikt. Dit was de meest recente stabiele release in september 2025.
+>Controleer altijd de [ Apache ActiveMQ Artemis downloadpagina ](https://activemq.apache.org/components/artemis/download/) voor de recentste stabiele versie vóór installatie. In de voorbeelden in dit document wordt versie 2.42.0 gebruikt. Dit was de meest recente stabiele release in september 2025.
 
 
 ## Apache ActiveMQ Artemis installeren
 
 U kunt ActiveMQ-artemis installeren met Docker (aanbevolen voor ontwikkeling) of met de hand (aanbevolen voor productie).
 
-### Optie 1: Docker-installatie (aanbevolen voor ontwikkeling)
+### Optie 1: Installatie van docker (aanbevolen voor ontwikkeling)
 
 #### Vereisten
 
@@ -45,13 +45,13 @@ Controleer of Docker op uw systeem is geïnstalleerd en wordt uitgevoerd.
 
 >[!TIP]
 >
->Voor meer informatie over het officiële beeld van het Docker van ActiveMQ Artemis, zie de [&#x200B; Apache ActiveMQ Artemis de pagina van de Hub van de Doopper van Docker Artemis &#x200B;](https://hub.docker.com/r/apache/activemq-artemis).
+>Voor meer informatie over het officiële beeld van het Docker van ActiveMQ Artemis, zie de [ Apache ActiveMQ Artemis de pagina van de Hub van de Doopper van Docker Artemis ](https://hub.docker.com/r/apache/activemq-artemis).
 
 #### Installatiestappen
 
 1. Voer ActiveMQ-artemis uit met de officiële Docker-afbeelding:
 
-   ```bash
+   ```shell
    # Run with default configuration
    docker run --detach \
      --name artemis \
@@ -63,7 +63,7 @@ Controleer of Docker op uw systeem is geïnstalleerd en wordt uitgevoerd.
 
 1. Uitvoeren met aangepaste referenties:
 
-   ```bash
+   ```shell
    # Run with custom username/password
    docker run --detach \
      --name artemis \
@@ -77,7 +77,7 @@ Controleer of Docker op uw systeem is geïnstalleerd en wordt uitgevoerd.
 
 #### Opdrachten voor Docker-beheer
 
-```bash
+```shell
 # Check container status
 docker ps | grep artemis
 
@@ -98,8 +98,8 @@ docker rm artemis
 
 Zodra de container van de Dokker loopt, kunt u tot:
 
-- **console van het Web**: http://localhost :8161/console (standaardgeloofsbrieven: artemis/artemis)
-- **STOMP haven**: localhost :61613 (voor de verbinding van Adobe Commerce)
+- **console van het Web**: http://localhost:8161/console (standaardreferenties: artemis/artemis)
+- **haven VAN DE STOPE**: localhost :61613 (voor Adobe Commerce-verbinding)
 
 >[!NOTE]
 >
@@ -113,9 +113,9 @@ Controleer of Java 17 of hoger is geïnstalleerd (vereist voor ActiveMQ Artemis 
 
 ### Installatiestappen
 
-1. Download en installeer de recentste versie van de [&#x200B; Apache ActiveMQ Artemis website &#x200B;](https://activemq.apache.org/components/artemis/download/). Vanaf september 2025 is de meest recente stabiele versie 2.42.0:
+1. Download en installeer de recentste versie van de [ Apache ActiveMQ Artemis website ](https://activemq.apache.org/components/artemis/download/). Vanaf september 2025 is de meest recente stabiele versie 2.42.0:
 
-   ```bash
+   ```shell
    sudo mkdir -p /opt/artemis
    cd /opt/artemis
    sudo curl -O https://downloads.apache.org/activemq/activemq-artemis/2.42.0/apache-artemis-2.42.0-bin.tar.gz
@@ -125,7 +125,7 @@ Controleer of Java 17 of hoger is geïnstalleerd (vereist voor ActiveMQ Artemis 
 
 1. Maak de `artemis` -gebruiker en stel de eigendom in:
 
-   ```bash
+   ```shell
    # Create artemis user and set ownership
    sudo useradd -r -s /bin/false artemis 2>/dev/null || true
    sudo chown -R artemis:artemis /opt/artemis
@@ -133,14 +133,14 @@ Controleer of Java 17 of hoger is geïnstalleerd (vereist voor ActiveMQ Artemis 
 
 1. Een makelaarinstantie maken:
 
-   ```bash
+   ```shell
    sudo /opt/artemis/bin/artemis create /var/lib/artemis-instance --user artemis --password artemis --allow-anonymous
    sudo chown -R artemis:artemis /var/lib/artemis-instance
    ```
 
 1. Start de makelaar:
 
-   ```bash
+   ```shell
    # Start in foreground (for testing)
    sudo /var/lib/artemis-instance/bin/artemis run
    
@@ -195,7 +195,7 @@ Als u SSL wilt inschakelen bij STOMP, moet u de `stomp-ssl` -acceptor expliciet 
 
 Als u Adobe Commerce _na_ installeert u Artemis ActiveMQ, voeg de volgende bevel-lijn parameters tijdens installatie toe:
 
-```bash
+```shell
 --stomp-host="<hostname>" --stomp-port="61613" --stomp-user="<user_name>" --stomp-password="<password>"
 ```
 
@@ -232,7 +232,7 @@ Als het `<install_directory>/app/etc/env.php` -bestand al een Adobe Commerce-ins
 
 U kunt ActiveMQ-configuratiewaarden ook instellen met de opdracht `bin/magento setup:config:set` (verwijder de AMQP-configuratie als deze bestaat in het `app/etc/env.php` -bestand):
 
-```bash
+```shell
 bin/magento setup:config:set --stomp-host="activemq.example.com" --stomp-port="61613" --stomp-user="magento" --stomp-password="magento"
 ```
 
@@ -326,8 +326,8 @@ ActiveMQ Artemis biedt een webgebaseerde beheerconsole die toegankelijk is op:
 
 ### Algemene kwesties
 
-1. **Verweigerde Verbinding**: Verzeker Artemis ActiveMQ loopt en de accepteerder van STOMP wordt gevormd.
-1. **Ontbroken Authentificatie**: Controle gebruikersbenaming/wachtwoord in zowel makelaarconfiguratie als het `env.php` dossier.
+1. **Verweigerde Verbinding**: Zorg ervoor dat de ActiveMQ-artemis wordt uitgevoerd en dat de STOMP-accepteerder is geconfigureerd.
+1. **Ontbroken Authentificatie**: Controleer gebruikersnaam/wachtwoord in zowel de makelaarconfiguratie als het `env.php` -bestand.
 1. **ontbroken SSL handshake**: Verifieer SSL certificaten en configuratie.
 
 
@@ -337,13 +337,13 @@ ActiveMQ Artemis biedt een webgebaseerde beheerconsole die toegankelijk is op:
 
 STOMP-verbinding testen met Telnet:
 
-```bash
+```shell
 telnet localhost 61613
 ```
 
 Er moet een verbinding tot stand worden gebracht. Testen met een STOMP-opdracht:
 
-```bash
+```shell
 # Test basic STOMP connection
 echo -e "CONNECT\nhost:localhost\n\n\x00" | telnet localhost 61613
 ```
@@ -352,5 +352,5 @@ De verwachte output zou verbinding gevestigd en STOMP protocolreactie moeten ton
 
 ## Gebruikers in de wachtrij met berichten starten
 
-Nadat u Adobe Commerce en ActiveMQ Artemis hebt aangesloten, moet u de gebruikers van de berichtrij beginnen. Zie [&#x200B; berichtrijen &#x200B;](../../configuration/cli/start-message-queues.md) voor details vormen.
+Nadat u Adobe Commerce en ActiveMQ Artemis hebt aangesloten, moet u de gebruikers van de berichtrij beginnen. Zie [ berichtrijen ](../../configuration/cli/start-message-queues.md) voor details vormen.
 

@@ -2,7 +2,7 @@
 title: Onderhoudsmodusopties voor upgrade
 description: Maak een aangepaste pagina voor de onderhoudsmodus die uw klanten op uw Adobe Commerce-winkel zien wanneer u een upgrade uitvoert.
 exl-id: 77e6d82d-5cc6-4d14-8b5c-1d2108f27b29
-source-git-commit: ca8dc855e0598d2c3d43afae2e055aa27035a09b
+source-git-commit: 48624d70761117ed0b9f8a7be913fce0572577b6
 workflow-type: tm+mt
 source-wordcount: '379'
 ht-degree: 0%
@@ -72,7 +72,7 @@ Verkeer omleiden naar een aangepaste onderhoudspagina:
 
    Voeg het volgende toe aan het einde van het Apache-configuratiebestand:
 
-   ```
+   ```text
    RewriteEngine On
    RewriteCond %{REMOTE_ADDR} !^192\.0\.2\.110
    RewriteCond %{DOCUMENT_ROOT}/maintenance.html -f
@@ -90,11 +90,11 @@ Verkeer omleiden naar een aangepaste onderhoudspagina:
 
 1. Voer de volgende opdracht in:
 
-   ```bash
+   ```shell
    touch <web server docroot>/maintenance.enable
    ```
 
-1. [&#x200B; bevorder uw systeem &#x200B;](../implementation/perform-upgrade.md).
+1. [ bevorder uw systeem ](../implementation/perform-upgrade.md).
 1. Test uw site om te controleren of deze correct werkt.
 1. Verwijder `maintenance.enable` nadat de upgrade is voltooid.
 
@@ -105,7 +105,7 @@ Deze sectie bespreekt hoe te om een pagina van het douaneonderhoud tot stand te 
 Verkeer omleiden naar een aangepaste onderhoudspagina:
 
 1. Gebruik een tekstverwerker om het configuratiebestand van de nginx te openen dat uw serverblok bevat.
-1. Voeg het volgende aan het serverblok toe (`server` wordt getoond voor duidelijkheid slechts; voeg geen tweede serverblok toe).
+1. Voeg het volgende toe aan het serverblok (`server` wordt getoond voor slechts duidelijkheid; voeg geen tweede serverblok toe).
 
    De volgende lijsten van gewenste personen IP adres 192.0.2.110 en 192.0.2.115 op een systeem waar Magento in `/var/www/html/magento2` wordt geïnstalleerd:
 
@@ -144,21 +144,21 @@ Verkeer omleiden naar een aangepaste onderhoudspagina:
 
 1. Voer de volgende opdracht in:
 
-   ```bash
+   ```shell
    touch <magento_root>/maintenance.enable
    ```
 
 1. Laad de configuratie nginx opnieuw:
 
-   ```bash
+   ```shell
    service nginx reload
    ```
 
-1. [&#x200B; bevorder uw systeem &#x200B;](../implementation/perform-upgrade.md).
+1. [ bevorder uw systeem ](../implementation/perform-upgrade.md).
 1. Test uw site om te controleren of deze correct werkt.
 1. Nadat de upgrade is voltooid, verwijdert u de upgrade of wijzigt u de naam van de toepassing `maintenance.enable`
 1. Laad de configuratie nginx opnieuw:
 
-   ```bash
+   ```shell
    service nginx reload
    ```

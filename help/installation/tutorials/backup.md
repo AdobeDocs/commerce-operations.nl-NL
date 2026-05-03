@@ -2,9 +2,9 @@
 title: Back-up maken van het bestandssysteem, de media en de database en deze terugdraaien
 description: Ga als volgt te werk om een back-up te maken van uw Adobe Commerce-toepassing en deze te herstellen.
 exl-id: b9925198-37b4-4456-aa82-7c55d060c9eb
-source-git-commit: 987d65b52437fbd21f41600bb5741b3cc43d01f3
+source-git-commit: 48624d70761117ed0b9f8a7be913fce0572577b6
 workflow-type: tm+mt
-source-wordcount: '506'
+source-wordcount: '522'
 ht-degree: 0%
 
 ---
@@ -19,24 +19,24 @@ Met deze opdracht kunt u back-ups maken:
 
 Back-ups worden opgeslagen in de map `var/backups` en kunnen op elk gewenst moment worden hersteld met de opdracht [`magento setup:rollback`](uninstall-modules.md#roll-back-the-file-system-database-or-media-files) .
 
-Na het steunen, kunt u [&#x200B; terugschroeven van prijzen &#x200B;](#rollback) later.
+Na het steunen, kunt u [ terugschroeven van prijzen ](#rollback) later.
 
 >[!TIP]
 >
->Voor Adobe Commerce op de projecten van de wolkeninfrastructuur, zie [&#x200B; Momentopnamen en reservebeheer &#x200B;](https://experienceleague.adobe.com/nl/docs/commerce-cloud-service/user-guide/develop/storage/snapshots) in de _gids van de Wolk_.
+>Voor Adobe Commerce op de projecten van de wolkeninfrastructuur, zie [ Momentopnamen en reservebeheer ](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/develop/storage/snapshots) in de _gids van de Wolk_.
 
 ## Back-ups inschakelen
 
 De back-upfunctie is standaard uitgeschakeld. Om toe te laten, ga het volgende CLI bevel in:
 
-```bash
+```shell
 bin/magento config:set system/backup/functionality_enabled 1
 ```
 
 >[!WARNING]
 >
 >**Bericht van de Verdringing:**
->&#x200B;>Back-upfunctionaliteit is vanaf 2.1.16, 2.2.7 en 2.3.0 verouderd. We raden u aan aanvullende back-uptechnologieën en binaire back-uptools (zoals Percona XtraBackup) te onderzoeken.
+>Back-upfunctionaliteit is vanaf 2.1.16, 2.2.7 en 2.3.0 verouderd. We raden u aan aanvullende back-uptechnologieën en binaire back-uptools (zoals Percona XtraBackup) te onderzoeken.
 
 ## Limiet voor geopende bestanden instellen
 
@@ -46,15 +46,15 @@ Soms, veroorzaakt een lange vraagkoord de toegewezen geheugenruimte van de gebru
 
 ## Openen van bestanden instellen `ulimit`
 
-Wij adviseren plaatsend de open dossiers [`ulimit` &#x200B;](https://ss64.com/bash/ulimit.html) voor de gebruiker van het dossiersysteem aan een waarde van `65536` of meer.
+Wij adviseren plaatsend de open dossiers [`ulimit` ](https://ss64.com/bash/ulimit.html) voor de gebruiker van het dossiersysteem aan een waarde van `65536` of meer.
 
 U kunt dit doen of op de bevellijn of u kunt het een permanent het plaatsen voor de gebruiker door hun shell manuscript uit te geven maken.
 
-Alvorens u verdergaat, als u dit nog niet hebt gedaan, schakelaar aan de [&#x200B; eigenaar van het dossiersysteem &#x200B;](../prerequisites/file-system/overview.md).
+Alvorens u verdergaat, als u dit nog niet hebt gedaan, schakelaar aan de [ eigenaar van het dossiersysteem ](../prerequisites/file-system/overview.md).
 
 Opdracht:
 
-```bash
+```shell
 ulimit -s 65536
 ```
 
@@ -66,11 +66,11 @@ Indien nodig kunt u dit wijzigen in een hogere waarde.
 
 U kunt als volgt de waarde in de Bash-shell van de gebruiker instellen:
 
-1. Als u dit nog niet hebt gedaan, schakelaar aan de [&#x200B; eigenaar van het dossiersysteem &#x200B;](../prerequisites/file-system/overview.md).
+1. Als u dit nog niet hebt gedaan, schakelaar aan de [ eigenaar van het dossiersysteem ](../prerequisites/file-system/overview.md).
 1. Open `/home/<username>/.bashrc` in een teksteditor.
 1. Voeg de volgende regel toe:
 
-   ```bash
+   ```shell
    ulimit -s 65536
    ```
 
@@ -78,13 +78,13 @@ U kunt als volgt de waarde in de Bash-shell van de gebruiker instellen:
 
 >[!WARNING]
 >
->We raden u aan geen waarde in te stellen voor [`pcre.recursion_limit` &#x200B;](https://www.php.net/manual/en/pcre.configuration.php) in het `php.ini` -bestand, omdat dit kan resulteren in onvolledige terugdraaiversies zonder foutmelding.
+>We raden u aan geen waarde in te stellen voor [`pcre.recursion_limit` ](https://www.php.net/manual/en/pcre.configuration.php) in het `php.ini` -bestand, omdat dit kan resulteren in onvolledige terugdraaiversies zonder foutmelding.
 
 ## Back-up maken
 
 Opdrachtgebruik:
 
-```bash
+```shell
 bin/magento setup:backup [--code] [--media] [--db]
 ```
 
@@ -103,13 +103,13 @@ De opdracht voert de volgende taken uit:
 
 Als u bijvoorbeeld een back-up wilt maken van het bestandssysteem en de database,
 
-```bash
+```shell
 bin/magento setup:backup --code --db
 ```
 
 Berichten die lijken op de volgende weergave:
 
-```
+```shell
 Enabling maintenance mode
 Code backup is starting...
 Code backup filename: 1434133011_filesystem.tgz (The archive can be uncompressed with 7-Zip on Windows systems)
@@ -128,7 +128,7 @@ In deze sectie wordt beschreven hoe u een back-up kunt maken die u eerder hebt g
 
 Voer de volgende gegevens in om de naam van uw back-ups te zoeken:
 
-```bash
+```shell
 bin/magento info:backups:list
 ```
 
@@ -136,19 +136,19 @@ De eerste tekenreeks in de naam van het back-upbestand is de tijdstempel.
 
 Als u wilt terugdraaien naar een vorige reservekopie, voert u het volgende in:
 
-```bash
+```shell
 bin/magento setup:rollback [-c|--code-file="<name>"] [-m|--media-file="<name>"] [-d|--db-file="<name>"]
 ```
 
 Als u bijvoorbeeld een back-up van een medium met de naam `1440611839_filesystem_media.tgz` wilt herstellen, voert u
 
-```bash
+```shell
 bin/magento setup:rollback -m 1440611839_filesystem_media.tgz
 ```
 
 Berichten die lijken op de volgende weergave:
 
-```
+```shell
 [SUCCESS]: Media rollback completed successfully.
 Please set file permission of bin/magento to executable
 Disabling maintenance mode

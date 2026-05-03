@@ -4,9 +4,9 @@ description: Leer technieken om algemene Adobe Commerce-ontwikkelingsproblemen o
 feature: Best Practices
 role: Developer
 exl-id: 78fbea7b-28e8-4713-990d-b4cae159250c
-source-git-commit: 823498f041a6d12cfdedd6757499d62ac2aced3d
+source-git-commit: 48624d70761117ed0b9f8a7be913fce0572577b6
 workflow-type: tm+mt
-source-wordcount: '1139'
+source-wordcount: '1164'
 ht-degree: 0%
 
 ---
@@ -15,7 +15,7 @@ ht-degree: 0%
 
 In dit onderwerp worden manieren uitgelegd om het Adobe Commerce-framework systematisch en effectief te debuggen. Het doel is om u te helpen snel de wortel van een probleem bereiken en onderzoekstijd minimaliseren.
 
-## Problemen oplossen: standaardverdachten
+## Problemen oplossen: Gebruikelijke verdachten
 
 Deze sectie beschrijft de gemeenschappelijkste kwesties die u tijdens ontwikkeling zou kunnen ontmoeten.
 
@@ -27,7 +27,7 @@ Deze sectie beschrijft de gemeenschappelijkste kwesties die u tijdens ontwikkeli
 
 Het volgende codevoorbeeld verstrekt nuttige bevelen met betrekking tot het beheren van het geheime voorgeheugen (loopt niet op productiemilieu&#39;s):
 
-```bash
+```shell
 # restart php-fpm to flush APC
 sudo service php-fpm restart
  
@@ -78,7 +78,7 @@ Wijzig de index van alles als de uitgave betrekking kan hebben op een index. Fou
 
 U zou verouderde code wegens een takverandering of wegens kerndossiers kunnen hebben die in een vorige het zuiveren inspanning werden uitgegeven. Voer de volgende opdrachten uit om potentiële problemen te voorkomen:
 
-```bash
+```shell
 rm -rf vendor/*
 composer clear-cache
 composer install
@@ -88,7 +88,7 @@ composer install
 
 Voordat u fouten opspoort in de gegenereerde inhoud in JS, CSS, afbeeldingen, vertalingen en andere bestanden, moet u de bestanden opnieuw samenstellen.
 
-```bash
+```shell
 rm -rf generated/* var/cache/* var/page_cache/* var/session/* var/view_preprocessed/* pub/static/*
 bin/magento setup:static-content:deploy
 bin/magento cache:flush
@@ -104,7 +104,7 @@ Als u een module hebt gemaakt, controleert u op de volgende problemen:
 
 - Is de module toegelaten?
 
-  ```bash
+  ```shell
   bin/magento module --enable Your_Module
   ```
 
@@ -112,15 +112,15 @@ Als u een module hebt gemaakt, controleert u op de volgende problemen:
 
 - Controleer het nesten van de bestand- en mapstructuur. Zijn lay-outbestanden bijvoorbeeld in de map `view/layout/` in plaats van in de map `view/frontend/layout` ? Worden sjablonen in de map `view/frontend/template` in plaats van in de map `view/frontend/templates` ?
 
-## Problemen oplossen: halfsplitsen
+## Problemen oplossen: Halfsplitsen
 
 Als de gebruikelijke verdachten geen oplossing voor het probleem bieden, is de snelste manier om verder te gaan door het probleem te halveren (of te bedelen). Met deze methode, elimineert u grote brokken en verdeelt wat wordt verlaten om van de worteloorzaak de plaats te bepalen in plaats van lineair door de code te gaan.
 
 Zie de volgende diagrammen:
 
-![&#x200B; Bisect diagram &#x200B;](../../../assets/playbooks/bisect.png)
+![ Bisect diagram ](../../../assets/playbooks/bisect.png)
 
-![&#x200B; Bisect diagram &#x200B;](../../../assets/playbooks/bisect2.png)
+![ Bisect diagram ](../../../assets/playbooks/bisect2.png)
 
 Er zijn verschillende manieren om te discussiëren, maar Adobe raadt aan deze volgorde te volgen:
 
@@ -139,13 +139,13 @@ Als het probleem code-verwant zou kunnen zijn, elimineer eerst de grote brokken.
 - **Gegevensbestand** - komt het probleem op elk milieu voor dat de zelfde code in werking stelt? Als niet, zoek problemen in configuratie en andere op gegevensbestand betrekking hebbende onderwerpen.
 - **code** - zoek codekwesties als niets van bovengenoemd het probleem oplost.
 
-### Stap 2: Bisect by commit
+### Stap 2: Bisect op verbintenissen
 
 Als het probleem tussen nu en twee maanden geleden begon, rolt u de code terug naar twee maanden geleden. Controleer of het probleem nog steeds bestaat. Eén maand vooruit. Doet het probleem zich daar voor? Indien niet, ga twee weken verder. Komt het nu voor? Ga een week terug. Nog steeds? Ga vier dagen terug. Op een bepaald punt, hebt u slechts één verlaten begaat die waarschijnlijk code met betrekking tot het probleem zal bevatten. De hoofdoorzaak is nu waarschijnlijk beperkt tot de bestanden die zijn bewerkt in de toewijzing.
 
 U kunt weken en dagen vervangen door verbintenissen. Bijvoorbeeld, rol terug 100 begaat, door:sturen 50, door:sturen 25, terug 12.
 
-### Stap 3: Bestanden archiveren
+### Stap 3: Bestanden verbergen
 
 - Verdeel Adobe Commerce op bestandstypen (core en non-core). Eerst, maak alle klant en marktplaatsmodules onbruikbaar. Bestaat dit probleem nog? Het is hoogstwaarschijnlijk een niet-kernkwestie.
 - Schakel (ongeveer) de helft van de modules opnieuw in het `app/etc/config.php` -bestand in. Houd rekening met afhankelijkheden. Het is best om moduleclusters met het zelfde onderwerp allen in één keer toe te laten. Bestaat dit probleem nog?
@@ -161,7 +161,7 @@ Overweeg of u de volledige catalogus of alle opslagmeningen nodig hebt om de kwe
 
 ### Meer informatie vragen
 
-Soms is het een eenvoudige stap om te vergeten hoe de code en het technische werk zijn: om meer informatie vragen. Op volledig scherm worden beelden vastgelegd, een video, een videoconferentiegesprek met de persoon die het probleem heeft geïdentificeerd, replicatiestappen, vragen of er andere schijnbaar onbelangrijke dingen zijn gebeurd rond de problematische gebeurtenis. Vraag wat iemand had verwacht. Is dit echt een bug of misschien gewoon een misverstand over de manier waarop de code werkt?
+Soms is het een eenvoudige stap om te vergeten hoe de code en het technische werk zijn: Meer informatie vragen. Op volledig scherm worden beelden vastgelegd, een video, een videoconferentiegesprek met de persoon die het probleem heeft geïdentificeerd, replicatiestappen, vragen of er andere schijnbaar onbelangrijke dingen zijn gebeurd rond de problematische gebeurtenis. Vraag wat iemand had verwacht. Is dit echt een bug of misschien gewoon een misverstand over de manier waarop de code werkt?
 
 ### Taal en interpretatie
 
@@ -169,7 +169,7 @@ Is de beschrijving van het probleem duidelijk? Weet u zeker dat termen of beschr
 
 ### Internet zoeken
 
-Voer een internetzoekopdracht uit met termen die betrekking hebben op het probleem. Het is mogelijk dat iemand anders al hetzelfde probleem heeft ondervonden. Onderzoek door de [&#x200B; kwesties van Adobe Commerce GitHub &#x200B;](https://github.com/magento/magento2/issues).
+Voer een internetzoekopdracht uit met termen die betrekking hebben op het probleem. Het is mogelijk dat iemand anders al hetzelfde probleem heeft ondervonden. Onderzoek door de [ kwesties van Adobe Commerce GitHub ](https://github.com/magento/magento2/issues).
 
 ### Onderbreken
 
@@ -177,9 +177,9 @@ Als u een probleem te lang bekijkt, kan het uitdagend zijn om een oplossing te v
 
 ## Gereedschappen
 
-De n98 magerun CLI Hulpmiddelen ([&#x200B; https://github.com/netz98/n98-magerun2 &#x200B;](https://github.com/netz98/n98-magerun2)) verstrekken nuttige mogelijkheden om met Adobe Commerce van de bevellijn te werken. Dit zijn vooral de volgende opdrachten:
+De n98 magerun CLI Hulpmiddelen ([ https://github.com/netz98/n98-magerun2 ](https://github.com/netz98/n98-magerun2)) verstrekken nuttige mogelijkheden om met Adobe Commerce van de bevellijn te werken. Dit zijn vooral de volgende opdrachten:
 
-```bash
+```shell
 n98-magerun2.phar dev:console
 n98-magerun2.phar sys:cron:run
 n98-magerun2.phar db:console

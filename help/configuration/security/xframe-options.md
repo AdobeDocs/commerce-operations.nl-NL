@@ -3,25 +3,25 @@ title: Klickjackingexplosies voorkomen
 description: Voorkomen dat klikaanvallen worden misbruikt door de header 'X-Frame-Options' te gebruiken om paginaweergaven te beheren.
 feature: Configuration, Security
 exl-id: 83cf5fd2-3eb8-4bd9-99e2-1c701dcd1382
-source-git-commit: 6cc04211fedddab68087bcf2f3603ae0403862b9
+source-git-commit: 48624d70761117ed0b9f8a7be913fce0572577b6
 workflow-type: tm+mt
-source-wordcount: '209'
+source-wordcount: '234'
 ht-degree: 0%
 
 ---
 
 # Klickjackingexplosies voorkomen
 
-Verhinder [&#x200B; Klikjacking &#x200B;](https://owasp.org/www-community/attacks/Clickjacking) door [&#x200B; x-kader-Opties &#x200B;](https://datatracker.ietf.org/doc/html/rfc7034) HTTP- verzoekkopbal in verzoeken aan uw storefront te omvatten.
+Verhinder [ Klikjacking ](https://owasp.org/www-community/attacks/Clickjacking) door [ x-kader-Opties ](https://datatracker.ietf.org/doc/html/rfc7034) HTTP- verzoekkopbal in verzoeken aan uw storefront te omvatten.
 
 Met de header `X-Frame-Options` kunt u als volgt opgeven of een browser een pagina mag weergeven in een `<frame>` , `<iframe>` of `<object>` :
 
-- `DENY`: de pagina kan niet in een kader worden weergegeven.
-- `SAMEORIGIN`: (standaard) Pagina kan alleen worden weergegeven in een frame dat zich op dezelfde oorsprong bevindt als de pagina zelf.
+- `DENY` : De pagina kan niet in een kader worden weergegeven.
+- `SAMEORIGIN` : (standaard) Pagina kan alleen worden weergegeven in een kader dat zich op dezelfde oorsprong bevindt als de pagina zelf.
 
 >[!WARNING]
 >
->De optie `ALLOW-FROM <uri>` is vervangen omdat deze niet meer wordt ondersteund door browsers die door Commerce worden ondersteund. Zie [&#x200B; Browser verenigbaarheid &#x200B;](https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/X-Frame-Options#browser_compatibility).
+>De optie `ALLOW-FROM <uri>` is vervangen omdat deze niet meer wordt ondersteund door browsers die door Commerce worden ondersteund. Zie [ Browser verenigbaarheid ](https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/X-Frame-Options#browser_compatibility).
 
 >[!WARNING]
 >
@@ -47,7 +47,7 @@ Als u de instelling wilt controleren, geeft u de HTTP-headers op een willekeurig
 
 In het volgende voorbeeld wordt curl gebruikt, die u kunt uitvoeren vanaf elke computer die via het HTTP-protocol verbinding kan maken met uw Commerce-server.
 
-```bash
+```shell
 curl -I -v --location-trusted '<storefront-URL>'
 ```
 

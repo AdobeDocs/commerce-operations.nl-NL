@@ -3,9 +3,9 @@ title: Webserver configureren
 description: Leer hoe u uw webserver configureert voor gebruik met Varnish caching voor Adobe Commerce. Ontdek havenconfiguratie en opstellingsvereisten.
 feature: Configuration, Cache, Install, Logs
 exl-id: b31179ef-3c0e-4a6b-a118-d3be1830ba4e
-source-git-commit: 10f324478e9a5e80fc4d28ce680929687291e990
+source-git-commit: 319f3232d1ba5f5ed7cdd10ce85b9d7ffbeec89a
 workflow-type: tm+mt
-source-wordcount: '747'
+source-wordcount: '764'
 ht-degree: 0%
 
 ---
@@ -60,7 +60,7 @@ Varnish minimaliseren:
 
 1. Back-up maken `default.vcl` :
 
-   ```bash
+   ```shell
    cp /etc/varnish/default.vcl /etc/varnish/default.vcl.bak
    ```
 
@@ -74,9 +74,9 @@ Varnish minimaliseren:
    }
    ```
 
-1. Vervang de waarde van `.host` met volledig - gekwalificeerd hostname of IP adres en luister haven van de Varnish _achterkant_ of _oorsprongserver_; namelijk zal de server die de inhoud verstrekt Varnish versnellen.
+1. Vervang de waarde van `.host` met volledig - gekwalificeerd hostname of IP adres en luister haven van de Varnish _achterkant_ of _oorsprongserver_; Dat wil zeggen dat de server die de inhoud levert Varnish zal versnellen.
 
-   Dit is doorgaans uw webserver. Zie [&#x200B; servers van het Achterste 1&rbrace; in de &#x200B;](https://varnish-cache.org/docs/trunk/users-guide/vcl-backends.html) Versijke gids _._
+   Dit is doorgaans uw webserver. Zie [ servers van het Achterste 1} in de _Versijke gids_.](https://varnish-cache.org/docs/trunk/users-guide/vcl-backends.html)
 
 1. Vervang de waarde van `.port` door de listen-poort van de webserver (8080 in dit voorbeeld).
 
@@ -97,13 +97,13 @@ Varnish minimaliseren:
 
 1. Varnish opnieuw starten:
 
-   ```bash
+   ```shell
    service varnish restart
    ```
 
 Als Varnish er niet in slaagt te beginnen, probeer het in werking stellen van het van de bevellijn als volgt:
 
-```bash
+```shell
 varnishd -d -f /etc/varnish/default.vcl
 ```
 
@@ -121,7 +121,7 @@ De volgende secties bespreken hoe u kunt verifiëren dat Varnish maar _werkt zon
 Voer de taken uit die in de volgende secties in de getoonde orde worden besproken:
 
 - [Varnish starten](#start-varnish)
-- [&quot;netstat&quot;](#netstat)
+- [`netstat`](#netstat)
 
 ### Varnish starten
 
@@ -131,7 +131,7 @@ Als Varnish er niet in slaagt om als dienst te beginnen, begin het van de bevell
 
 1. Start de Varnish CLI:
 
-   ```bash
+   ```shell
    varnishd -d -f /etc/varnish/default.vcl
    ```
 
@@ -141,7 +141,7 @@ Als Varnish er niet in slaagt om als dienst te beginnen, begin het van de bevell
 
    De volgende berichten worden weergegeven om te bevestigen dat het programma is gestart:
 
-   ```
+   ```text
    child (29805) Started
    200 0
    
@@ -153,13 +153,13 @@ Als Varnish er niet in slaagt om als dienst te beginnen, begin het van de bevell
 
 Meld u aan bij de Varnish-server en voer de volgende opdracht in:
 
-```bash
+```shell
 netstat -tulpn
 ```
 
 Zoek in het bijzonder de volgende output:
 
-```
+```text
 tcp        0      0 0.0.0.0:80                  0.0.0.0:*                   LISTEN      32614/varnishd
 tcp        0      0 127.0.0.1:58484             0.0.0.0:*                   LISTEN      32604/varnishd
 tcp        0      0 :::8080                     :::*                        LISTEN      26822/httpd
@@ -170,7 +170,7 @@ In het voorgaande ziet u Varnish die op poort 80 wordt uitgevoerd en Apache die 
 
 Als u de uitvoer voor `varnishd` niet ziet, controleert u of Varnish wordt uitgevoerd.
 
-Zie [`netstat` opties &#x200B;](https://tldp.org/LDP/nag2/x-087-2-iface.netstat.html).
+Zie [`netstat` opties ](https://tldp.org/LDP/nag2/x-087-2-iface.netstat.html).
 
 ## De Commerce-software installeren
 
@@ -178,7 +178,7 @@ Installeer de Commerce-software als u dat nog niet hebt gedaan. Wanneer ertoe aa
 
 Mogelijke fout bij het installeren van Commerce:
 
-```
+```text
 Error 503 Service Unavailable
 Service Unavailable
 XID: 303394517
@@ -209,7 +209,7 @@ Gebruik de opdracht [`magento deploy:mode:set`](../cli/set-mode.md#change-to-dev
 
 Zorg ervoor dat Varnish dan het volgende bevel op de server van Varnish loopt ingaat:
 
-```bash
+```shell
 varnishlog
 ```
 
@@ -217,7 +217,7 @@ Ga in een webbrowser naar een willekeurige Commerce-pagina.
 
 Een lange lijst van reactiekopballen tonen in uw bevel snelle venster. Zoek naar kopballen als het volgende:
 
-```
+```text
 -   BereqHeader    X-Varnish: 3
 -   VCL_call       BACKEND_FETCH
 -   VCL_return     fetch
@@ -240,19 +240,19 @@ Er zijn verschillende manieren om naar antwoordheaders te kijken, bijvoorbeeld m
 
 In het volgende voorbeeld wordt `curl` gebruikt. U kunt deze opdracht invoeren vanaf elke computer die via HTTP toegang heeft tot de Commerce-server.
 
-```bash
+```shell
 curl -I -v --location-trusted '<your Commerce base URL>'
 ```
 
 Bijvoorbeeld:
 
-```bash
+```shell
 curl -I -v --location-trusted 'http://192.0.2.55/magento2'
 ```
 
 Zoek naar kopballen als het volgende:
 
-```
+```text
 Content-Type: text/html; charset=iso-8859-1
 X-Varnish: 15
 Age: 0

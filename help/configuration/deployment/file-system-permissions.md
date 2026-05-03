@@ -3,24 +3,24 @@ title: Toegangsrechten voor bestandssystemen
 description: Zie hoe u de eigenaar of eigenaars van het Commerce-toepassingsbestandssysteem instelt voor een ontwikkelings- en productiesysteem.
 feature: Configuration, Roles/Permissions
 exl-id: 95b27db9-5247-4f58-a9af-1590897d73db
-source-git-commit: dcc283b901917e3681863370516771763ae87462
+source-git-commit: f9a135fc63574ccbecd3f564a87fc5c4ac03f009
 workflow-type: tm+mt
-source-wordcount: '864'
+source-wordcount: '887'
 ht-degree: 0%
 
 ---
 
 # Toegangsrechten voor bestandssystemen
 
-In deze sectie wordt besproken hoe u de eigenaar of eigenaars van het Commerce-bestandssysteem kunt instellen voor een ontwikkelings- en productiesysteem. Alvorens u verdergaat, herzie de concepten die in [&#x200B; Overzicht van de eigendom en de toestemmingen van het dossiersysteem &#x200B;](../../installation/prerequisites/file-system/overview.md) worden besproken.
+In deze sectie wordt besproken hoe u de eigenaar of eigenaars van het Commerce-bestandssysteem kunt instellen voor een ontwikkelings- en productiesysteem. Alvorens u verdergaat, herzie de concepten die in [ Overzicht van de eigendom en de toestemmingen van het dossiersysteem ](../../installation/prerequisites/file-system/overview.md) worden besproken.
 
-Dit onderwerp is gericht op de ontwikkeling en productiesystemen van Commerce. Als u Commerce installeert, zie [&#x200B; Vastgestelde pre-installatiereigenschap en toestemmingen &#x200B;](../../installation/prerequisites/file-system/configure-permissions.md).
+Dit onderwerp is gericht op de ontwikkeling en productiesystemen van Commerce. Als u Commerce installeert, zie [ Vastgestelde pre-installatiereigenschap en toestemmingen ](../../installation/prerequisites/file-system/configure-permissions.md).
 
 De volgende secties bespreken vereisten voor één of twee eigenaars van bestandssystemen. Dat betekent:
 
 - **Één gebruiker** - typisch noodzakelijk op gedeelde ontvangende leveranciers, die u toestaan om tot slechts één gebruiker op de server toegang te hebben Deze gebruiker kan login, overdrachtdossiers gebruikend FTP, en deze gebruiker stelt ook de Webserver in werking.
 
-- **twee gebruikers** - wij adviseren twee gebruikers als u uw eigen server van Commerce in werking stelt: één om dossiers over te brengen en bevel-lijn nut in werking te stellen, en een afzonderlijke gebruiker voor de software van de Webserver. Dit verdient de voorkeur wanneer dat mogelijk is, omdat het veiliger is.
+- **twee gebruikers** - wij adviseren twee gebruikers als u uw eigen server van Commerce in werking stelt: één om bestanden over te brengen en opdrachtregelprogramma&#39;s uit te voeren, en een afzonderlijke gebruiker voor de webserversoftware. Dit verdient de voorkeur wanneer dat mogelijk is, omdat het veiliger is.
 
   In plaats daarvan hebt u verschillende gebruikers:
 
@@ -74,19 +74,19 @@ U verwijdert schrijfmachtigingen voor bestanden en mappen uit de gebruikersgroep
 
 1. Overschakelen naar productiemodus.
 
-   ```bash
+   ```shell
    bin/magento deploy:mode:set production
    ```
 
 1. Verwijder schrijfmachtigingen naar de volgende directory&#39;s.
 
-   ```bash
+   ```shell
    find app/code var/view_preprocessed vendor pub/static app/etc generated/code generated/metadata \( -type f -or -type d \) -exec chmod u-w {} + && chmod o-rwx app/etc/env.php
    ```
 
 1. Maak het bevel-lijn hulpmiddel uitvoerbaar.
 
-   ```bash
+   ```shell
    chmod u+x bin/magento
    ```
 
@@ -98,13 +98,13 @@ Bestanden en mappen schrijfbaar maken, zodat u onderdelen kunt bijwerken en de C
 1. Ga naar de installatiemap van Commerce.
 1. Voer de volgende opdrachten in:
 
-   ```bash
+   ```shell
    chmod -R u+w .
    ```
 
 ### Optioneel instellen `magento_umask`
 
-Zie [&#x200B; naar keuze plaatsen een masker &#x200B;](../../installation/next-steps/set-umask.md) in de _gids van de Installatie_.
+Zie [ naar keuze plaatsen een masker ](../../installation/next-steps/set-umask.md) in de _gids van de Installatie_.
 
 ## Eigendom van productiebestandssysteem voor privéhosting (twee gebruikers)
 
@@ -112,7 +112,7 @@ Als u uw eigen server gebruikt (inclusief de privéserverinstallatie van een hos
 
 - De **gebruiker van de Webserver**, die Admin en storefront in werking stelt.
 
-  Linux-systemen bieden doorgaans geen shell voor deze gebruiker. U kunt zich niet aanmelden bij de Commerce-server als of overschakelen naar de webservergebruiker.
+  Linux-systemen bieden doorgaans geen shell voor deze gebruiker; u kunt zich niet aanmelden bij de Commerce-server als of overschakelen naar de gebruiker van de webserver.
 
 - De **bevel-lijn gebruiker**, die u login aan uw server van Commerce als of schakelaar aan.
 
@@ -122,7 +122,7 @@ Als u uw eigen server gebruikt (inclusief de privéserverinstallatie van een hos
   >
   >De bevel-lijn gebruiker wordt ook bedoeld als _eigenaar van het dossiersysteem_.
 
-Omdat deze gebruikers toegang tot de zelfde dossiers vereisen, adviseren wij u tot a [&#x200B; gedeelde groep &#x200B;](../../installation/prerequisites/file-system/configure-permissions.md#about-the-shared-group) tot welke zij allebei behoren. De volgende procedures gaan ervan uit dat u dit al hebt gedaan.
+Omdat deze gebruikers toegang tot de zelfde dossiers vereisen, adviseren wij u tot a [ gedeelde groep ](../../installation/prerequisites/file-system/configure-permissions.md#about-the-shared-group) tot welke zij allebei behoren. De volgende procedures gaan ervan uit dat u dit al hebt gedaan.
 
 Zie een van de volgende secties:
 
@@ -139,7 +139,7 @@ Bestanden in de volgende mappen moeten door beide gebruikers in de ontwikkelaar-
 - `pub/media`
 - `app/etc`
 
-Plaats het [`setgid` &#x200B;](https://linuxg.net/how-to-set-the-setuid-and-setgid-bit-for-files-in-linux-and-unix/) beetje op folders zodat erven de toestemmingen altijd van de ouderfolder.
+Plaats het [`setgid` ](https://linuxconfig.org/how-to-use-special-permissions-the-setuid-setgid-and-sticky-bits) beetje op folders zodat erven de toestemmingen altijd van de ouderfolder.
 
 >[!INFO]
 >
@@ -154,15 +154,15 @@ U kunt als volgt `setgid` en machtigingen voor de modus Ontwikkelaar instellen:
 1. Meld u aan bij uw Commerce-server als eigenaar van het bestandssysteem of schakel over naar de eigenaar van het bestandssysteem.
 1. Voer de volgende opdrachten in de getoonde volgorde in:
 
-   ```bash
+   ```shell
    cd <magento_root>
    ```
 
-   ```bash
+   ```shell
    find var generated pub/static pub/media app/etc -type f -exec chmod g+w {} +
    ```
 
-   ```bash
+   ```shell
    find var generated pub/static pub/media app/etc -type d -exec chmod g+ws {} +
    ```
 
@@ -188,13 +188,13 @@ U verwijdert schrijfbare machtigingen voor bestanden en mappen uit de gebruikers
 1. Ga naar de installatiemap van Commerce.
 1. Als eigenaar van het bestandssysteem voert u de volgende opdracht in om over te schakelen op de productiemodus:
 
-   ```bash
+   ```shell
    bin/magento deploy:mode:set production
    ```
 
 1. Voer de volgende opdracht in als een gebruiker met `root` -rechten:
 
-   ```bash
+   ```shell
    find app/code lib pub/static app/etc generated/code generated/metadata var/view_preprocessed \( -type d -or -type f \) -exec chmod g-w {} + && chmod o-rwx app/etc/env.php
    ```
 
@@ -206,6 +206,6 @@ Bestanden en mappen schrijfbaar maken, zodat u onderdelen kunt bijwerken en de C
 1. Ga naar de installatiemap van Commerce.
 1. Voer de volgende opdracht in:
 
-   ```bash
+   ```shell
    find app/code lib var generated vendor pub/static pub/media app/etc \( -type d -or -type f \) -exec chmod g+w {} + && chmod o+rwx app/etc/env.php
    ```

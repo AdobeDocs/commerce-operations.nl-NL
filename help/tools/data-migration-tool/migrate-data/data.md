@@ -3,9 +3,9 @@ title: Gegevens migreren
 description: Leer hoe te beginnen migrerend gegevens van Magento 1 aan Magento 2 met  [!DNL Data Migration Tool].
 exl-id: f4ea8f6a-21f8-4db6-b598-c5efecec254f
 topic: Commerce, Migration
-source-git-commit: e83e2359377f03506178c28f8b30993c172282c7
+source-git-commit: 48624d70761117ed0b9f8a7be913fce0572577b6
 workflow-type: tm+mt
-source-wordcount: '331'
+source-wordcount: '337'
 ht-degree: 0%
 
 ---
@@ -14,16 +14,16 @@ ht-degree: 0%
 
 Voer de volgende stappen uit om voor te bereiden voordat u begint:
 
-1. Login aan uw toepassingsserver als [&#x200B; de eigenaar van het dossiersysteem &#x200B;](../../../installation/prerequisites/file-system/overview.md).
+1. Login aan uw toepassingsserver als [ de eigenaar van het dossiersysteem ](../../../installation/prerequisites/file-system/overview.md).
 1. Wijzig de installatiemap van de toepassing of zorg ervoor dat deze aan uw systeem wordt toegevoegd `PATH` .
 
-Zie de [&#x200B; eerste stappen &#x200B;](overview.md#first-steps) sectie voor meer details.
+Zie de [ eerste stappen ](overview.md#first-steps) sectie voor meer details.
 
 ## De opdracht voor gegevensmigratie uitvoeren
 
 Voer de volgende handelingen uit om het migreren van gegevens te starten:
 
-```bash
+```shell
 bin/magento migrate:data [-r|--reset] [-a|--auto] {<path to config.xml>}
 ```
 
@@ -33,9 +33,9 @@ Waarbij:
 
 * `[-r|--reset]` is een optioneel argument dat de migratie vanaf het begin start. U kunt dit argument gebruiken voor het testen van migratie.
 
-* `{<path to config.xml>}` is het absolute bestandsysteempad naar `config.xml` ; dit argument is vereist
+* `{<path to config.xml>}` is het absolute pad van het bestandssysteem naar `config.xml` ; dit argument is vereist
 
-In deze stap maakt [!DNL Data Migration Tool] aanvullende tabellen en triggers voor de migratietabellen in de Magento 1-database. Zij worden gebruikt in de [&#x200B; stijgende/delta &#x200B;](delta.md) migratiestap. Aanvullende tabellen bevatten informatie over gewijzigde records na de laatste migratieuitvoering. De trekkers van het gegevensbestand worden gebruikt om deze extra lijsten te bevolken, zodat als een nieuwe verrichting op de bepaalde lijst (een verslag wordt toegevoegd/gewijzigd/verwijderd) wordt uitgevoerd, deze gegevensbestandtrekker sparen informatie over deze verrichting aan de extra lijst. Wanneer we een deltamigratieproces uitvoeren, controleert [!DNL Data Migration Tool] deze tabellen op de niet-verwerkte records en wordt de benodigde inhoud gemigreerd naar de Magento 2-database.
+In deze stap maakt [!DNL Data Migration Tool] aanvullende tabellen en triggers voor de migratietabellen in de Magento 1-database. Zij worden gebruikt in de [ stijgende/delta ](delta.md) migratiestap. Aanvullende tabellen bevatten informatie over gewijzigde records na de laatste migratieuitvoering. De trekkers van het gegevensbestand worden gebruikt om deze extra lijsten te bevolken, zodat als een nieuwe verrichting op de bepaalde lijst (een verslag wordt toegevoegd/gewijzigd/verwijderd) wordt uitgevoerd, deze gegevensbestandtrekker sparen informatie over deze verrichting aan de extra lijst. Wanneer we een deltamigratieproces uitvoeren, controleert [!DNL Data Migration Tool] deze tabellen op de niet-verwerkte records en wordt de benodigde inhoud gemigreerd naar de Magento 2-database.
 
 Elke nieuwe tabel bevat:
 
@@ -85,7 +85,7 @@ Voor de lus `sales_flat_order` [!DNL Data Migration Tool] maakt u bijvoorbeeld:
 
 >[!NOTE]
 >
->De [!DNL Data Migration Tool] slaat de huidige voortgang op terwijl deze wordt uitgevoerd. Als de fouten of een gebruikersinterventie het van het lopen tegenhouden, hervat het Hulpmiddel vooruitgang bij het laatst bekende goede staat. Gebruik het argument [!DNL Data Migration Tool] om te zorgen dat `--reset` vanaf het begin wordt uitgevoerd. In dat geval raden we u aan de Magento 2-databasedumpit te herstellen om te voorkomen dat eerder gemigreerde gegevens worden gedupliceerd.
+>De [!DNL Data Migration Tool] slaat de huidige voortgang op terwijl deze wordt uitgevoerd. Als de fouten of een gebruikersinterventie het van het lopen tegenhouden, hervat het Hulpmiddel vooruitgang bij het laatst bekende goede staat. Gebruik het argument `--reset` om te zorgen dat [!DNL Data Migration Tool] vanaf het begin wordt uitgevoerd. In dat geval raden we u aan de Magento 2-databasedumpit te herstellen om te voorkomen dat eerder gemigreerde gegevens worden gedupliceerd.
 
 
 ## Mogelijke consistentiefouten
@@ -105,7 +105,7 @@ Tijdens het uitvoeren van de bewerking kan [!DNL Data Migration Tool] inconsiste
 * `Incompatibility in data. Source document: <EXTENSION_TABLE>. Field: <FIELD>. Error: <ERROR_MESSAGE>`
 * `Incompatibility in data. Destination document: <EXTENSION_TABLE>. Field: <FIELD>. Error: <ERROR_MESSAGE>`
 
-Zie de [&#x200B; sectie van het Oplossen van problemen &#x200B;](https://support.magento.com/hc/en-us/articles/360033020451) van deze gids voor meer informatie en aanbevelingen.
+Zie de [ sectie van het Oplossen van problemen ](https://support.magento.com/hc/en-us/articles/360033020451) van deze gids voor meer informatie en aanbevelingen.
 
 ## Volgende migratie
 

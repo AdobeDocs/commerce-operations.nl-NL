@@ -1,7 +1,7 @@
 ---
-source-git-commit: 0e125de563b4c50ae9e6a657873a3b02aed810fe
+source-git-commit: ef3abc83e2c699ebfbb53ad367aaceb9ecb92491
 workflow-type: tm+mt
-source-wordcount: '1004'
+source-wordcount: '1155'
 ht-degree: 0%
 
 ---
@@ -12,22 +12,22 @@ ht-degree: 0%
 
 
 <!-- The template to render with above values -->
-**Versie**: 3.0.26
+**Versie**: 3,0,26
 
 Deze verwijzing bevat 9 opdrachten die beschikbaar zijn via het opdrachtregelprogramma van `bin/uct` .
 De eerste lijst wordt automatisch gegenereerd met de opdracht `bin/uct list` in Adobe Commerce.
 
 ## Algemeen
 
-Leer meer over het hulpmiddel in [&#x200B; Overzicht &#x200B;](/help/upgrade/upgrade-compatibility-tool/overview.md).
+Leer meer over het hulpmiddel in [ Overzicht ](/help/upgrade/upgrade-compatibility-tool/overview.md).
 
 >[!NOTE]
 >
->Het `composer update` bevel werkt niet voor de bevordering van dit hulpmiddel-u moet [&#x200B; downloaden en de recentste versie &#x200B;](/help/upgrade/upgrade-compatibility-tool/run.md) installeren.
+>Het `composer update` bevel werkt niet voor de bevordering van dit hulpmiddel-u moet [ downloaden en de recentste versie ](/help/upgrade/upgrade-compatibility-tool/run.md) installeren.
 
 Deze referentiedocumentatie wordt geproduceerd van de code van de toepassingsbron. Als u de documentatie wilt wijzigen, opent u
-een trekkingsverzoek voor het overeenkomstige bevel in de relevante [&#x200B; codebase &#x200B;](https://github.com/magento) bewaarplaats. Zie
-[&#x200B; de Bijdragen van de Code &#x200B;](https://developer.adobe.com/commerce/contributor/guides/code-contributions/) voor meer informatie.
+een trekkingsverzoek voor het overeenkomstige bevel in de relevante [ codebase ](https://github.com/magento) bewaarplaats. Zie
+[ de Bijdragen van de Code ](https://developer.adobe.com/commerce/contributor/guides/code-contributions/) voor meer informatie.
 
 ### Algemene opties
 
@@ -47,7 +47,7 @@ Geen bericht uitvoeren
 
 #### `--verbose`, `-v|-vv|-vvv`
 
-Verhoog de breedheid van berichten: 1 voor normale output, 2 voor meer uitgebreide output en 3 voor zuivert
+Verhoog de breedheid van berichten: 1 voor normale output, 2 voor meer uitgebreide output en 3 voor zuiveren
 
 - Standaard: `false`
 - Accepteert geen waarde
@@ -81,7 +81,7 @@ Geen interactieve vraag stellen
 
 ## `_complete`
 
-```bash
+```shell
 bin/uct _complete [-s|--shell SHELL] [-i|--input INPUT] [-c|--current CURRENT] [-a|--api-version API-VERSION] [-S|--symfony SYMFONY]
 ```
 
@@ -89,7 +89,7 @@ Interne opdracht voor suggesties voor shell-voltooiing
 
 ### Opties
 
-Voor globale opties, zie [&#x200B; Globale opties &#x200B;](#global-options).
+Voor globale opties, zie [ Globale opties ](#global-options).
 
 #### `--shell`, `-s`
 
@@ -125,13 +125,13 @@ verouderd
 
 ## `completion`
 
-```bash
+```shell
 bin/uct completion [--debug] [--] [<shell>]
 ```
 
 Het shell-voltooiingsscript dumpen
 
-```
+```text
 The completion command dumps the shell completion script required
 to use shell autocompletion (currently, bash, fish, zsh completion are supported).
 
@@ -164,11 +164,11 @@ Add this to the end of your shell configuration file (e.g. "~/.bashrc"):
 
 #### `shell`
 
-Het shell type (bijvoorbeeld &quot;bash&quot;), de waarde van &quot;$SHELL&quot; env var zal worden gebruikt als dit niet wordt gegeven
+Het shell-type (bijvoorbeeld &quot;bash&quot;), wordt de waarde van &quot;$SHELL&quot; env var gebruikt als dit niet wordt gegeven
 
 ### Opties
 
-Voor globale opties, zie [&#x200B; Globale opties &#x200B;](#global-options).
+Voor globale opties, zie [ Globale opties ](#global-options).
 
 #### `--debug`
 
@@ -180,13 +180,13 @@ Tik op het logbestand voor foutopsporing bij voltooien
 
 ## `help`
 
-```bash
+```shell
 bin/uct help [--format FORMAT] [--raw] [--] [<command_name>]
 ```
 
 Help weergeven voor een opdracht
 
-```
+```text
 The help command displays help for a given command:
 
   ./uct/bin/uct help list
@@ -208,7 +208,7 @@ De opdrachtnaam
 
 ### Opties
 
-Voor globale opties, zie [&#x200B; Globale opties &#x200B;](#global-options).
+Voor globale opties, zie [ Globale opties ](#global-options).
 
 #### `--format`
 
@@ -227,13 +227,13 @@ Help bij de opdracht Uitvoeren
 
 ## `list`
 
-```bash
+```shell
 bin/uct list [--raw] [--format FORMAT] [--short] [--] [<namespace>]
 ```
 
 Lijstopdrachten
 
-```
+```text
 The list command lists all commands:
 
   ./uct/bin/uct list
@@ -259,7 +259,7 @@ De naamruimtenaam
 
 ### Opties
 
-Voor globale opties, zie [&#x200B; Globale opties &#x200B;](#global-options).
+Voor globale opties, zie [ Globale opties ](#global-options).
 
 #### `--raw`
 
@@ -285,7 +285,7 @@ Om het beschrijven van de argumenten van bevelen over te slaan
 
 ## `refactor`
 
-```bash
+```shell
 bin/uct refactor <path>
 ```
 
@@ -301,12 +301,12 @@ Pad om problemen op te lossen in.
 
 ### Opties
 
-Voor globale opties, zie [&#x200B; Globale opties &#x200B;](#global-options).
+Voor globale opties, zie [ Globale opties ](#global-options).
 
 
 ## `core:code:changes`
 
-```bash
+```shell
 bin/uct core:code:changes [-o|--output [OUTPUT]] [--] <dir> [<vanilla-dir>]
 ```
 
@@ -327,7 +327,7 @@ Adobe Commerce vanilla-installatiemap.
 
 ### Opties
 
-Voor globale opties, zie [&#x200B; Globale opties &#x200B;](#global-options).
+Voor globale opties, zie [ Globale opties ](#global-options).
 
 #### `--output`, `-o`
 
@@ -338,11 +338,11 @@ Pad van het bestand waarnaar de uitvoer wordt geëxporteerd (JSON-indeling)
 
 ## `dbschema:diff`
 
-```bash
+```shell
 bin/uct dbschema:diff <current-version> <target-version>
 ```
 
-Adobe Commerce DB-schemaverschillen tussen twee geselecteerde versies weergeven. Beschikbare versies: 2.3.0 | 2.3.1. | 2.3.2. | 2.3.2-p2 | 2,3,3 | 2.3.3-p1 | 2.3.4. | 2.3.4-p1 | 2.3.4-p2 | 2.3.5. | 2.3.5-p1 | 2.3.5-p2 | 2.3.6. | 2.3.6-p1 | 2.3.7. | 2.3.7-p1 | 2.3.7-p2 | 2.3.7-p3 | 2.3.7-p4 | 2.4.0. | 2.4.0-p1 | 2.4.1. | 2.4.1-p1 | 2.4.2. | 2.4.2-p1 | 2.4.2-p2 | 2.4.3. | 2.4.3-p1 | 2.4.3-p2 | 2.4.3-p3 | 2.4.4. | 2.4.4-p1 | 2.4.5. | 2.4.4-p2 | 2.4.5-p1 | 2.4.4-p3 | 2.4.4-p4 | 2.4.4-p5 | 2.4.5-p2 | 2.4.5-p3 | 2.4.5-p4 | 2.4.6. | 2.4.6-p1 | 2.4.6-p2 | 2.4.7-bèta1 | 2.4.4-p6 | 2.4.5-p5 | 2.4.6-p3 | 2.4.7-bèta2 | 2.4.4-p7 | 2.4.5-p6 | 2.4.6-p4 | 2.4.7-bèta3 | 2.4.7. | 2.4.6-p5 | 2.4.5-p7 | 2.4.4-p8 | 2.4.4-p9 | 2.4.5-p8 | 2.4.6-p6 | 2.4.7-p1 | 2.4.4-p10 | 2.4.5-p9 | 2.4.6-p7 | 2.4.7-p2 | 2.4.4-p11 | 2.4.5-p10 | 2.4.6-p8 | 2.4.7-p3 | 2.4.8-bèta1 | 2.4.4-p12 | 2.4.5-p11 | 2.4.6-p9 | 2.4.7-p4 | 2.4.8-bèta2 | 2.4.4-p13 | 2.4.5-p12 | 2.4.6-p10 | 2.4.7-p5 | 2.4.8. | 2.4.9-alpha2 | 2.4.8-p2 | 2.4.7-p7 | 2.4.6-p12 | 2.4.5-p14 | 2.4.4-p15 | 2.4.9-alpha1 | 2.4.8-p1 | 2.4.7-p6 | 2.4.6-p11 | 2.4.5-p13 | 2.4.4-p14 | 2.4.9-alpha3 | 2.4.8-p3 | 2.4.7-p8 | 2.4.6-p13 | 2.4.5-p15 | 2.4.4-p16 | 2.4.9-bèta1 | 2.4.8-p4 | 2.4.7-p9 | 2.4.6-p14 | 2.4.5-p16 | 2.4.4-p17
+Adobe Commerce DB-schemaverschillen tussen twee geselecteerde versies weergeven. Beschikbare versies: 2.3.0. | 2.3.1 | 2.3.2 | 2.3.2-p2 | 2.3.3 | 2.3.3-p1 | 2.3.4 | 2.3.4-p1 | 2.3.4-p2 | 2.3.5 | 2.3.5-p1 | 2.3.5-p2 | 2,3,6 | 2.3.6-p1 | 2,3,7 | 2.3.7-p1 | 2.3.7-p2 | 2.3.7-p3 | 2.3.7-p4 | 2,4,0 | 2.4.0-p1 | 2.4.1 | 2.4.1-p1 | 2.4.2 | 2.4.2-p1 | 2.4.2-p2 | 2.4.3 | 2.4.3-p1 | 2.4.3-p2 | 2.4.3-p3 | 2,4,4 | 2.4.4-p1 | 2,4,5 | 2.4.4-p2 | 2.4.5-p1 | 2.4.4-p3 | 2.4.4-p4 | 2.4.4-p5 | 2.4.5-p2 | 2.4.5-p3 | 2.4.5-p4 | 2,4,6 | 2.4.6-p1 | 2.4.6-p2 | 2.4.7-bèta1 | 2.4.4-p6 | 2.4.5-p5 | 2.4.6-p3 | 2.4.7-bèta2 | 2.4.4-p7 | 2.4.5-p6 | 2.4.6-p4 | 2.4.7-bèta3 | 2,4,7 | 2.4.6-p5 | 2.4.5-p7 | 2.4.4-p8 | 2.4.4-p9 | 2.4.5-p8 | 2.4.6-p6 | 2.4.7-p1 | 2.4.4-p10 | 2.4.5-p9 | 2.4.6-p7 | 2.4.7-p2 | 2.4.4-p11 | 2.4.5-p10 | 2.4.6-p8 | 2.4.7-p3 | 2.4.8-bèta1 | 2.4.4-p12 | 2.4.5-p11 | 2.4.6-p9 | 2.4.7-p4 | 2.4.8-bèta2 | 2.4.4-p13 | 2.4.5-p12 | 2.4.6-p10 | 2.4.7-p5 | 2,4,8 | 2.4.9-alpha2 | 2.4.8-p2 | 2.4.7-p7 | 2.4.6-p12 | 2.4.5-p14 | 2.4.4-p15 | 2.4.9-alpha1 | 2.4.8-p1 | 2.4.7-p6 | 2.4.6-p11 | 2.4.5-p13 | 2.4.4-p14 | 2.4.9-alfa3 | 2.4.8-p3 | 2.4.7-p8 | 2.4.6-p13 | 2.4.5-p15 | 2.4.4-p16 | 2.4.9-bèta1 | 2.4.8-p4 | 2.4.7-p9 | 2.4.6-p14 | 2.4.5-p16 | 2.4.4-p17
 
 ### Argumenten
 
@@ -361,12 +361,12 @@ doelversie (bijvoorbeeld 2.4.5).
 
 ### Opties
 
-Voor globale opties, zie [&#x200B; Globale opties &#x200B;](#global-options).
+Voor globale opties, zie [ Globale opties ](#global-options).
 
 
 ## `graphql:compare`
 
-```bash
+```shell
 bin/uct graphql:compare [-o|--output [OUTPUT]] [--] <schema1> <schema2>
 ```
 
@@ -389,7 +389,7 @@ Eindpunt-URL die verwijst naar het tweede GraphQL-schema.
 
 ### Opties
 
-Voor globale opties, zie [&#x200B; Globale opties &#x200B;](#global-options).
+Voor globale opties, zie [ Globale opties ](#global-options).
 
 #### `--output`, `-o`
 
@@ -400,7 +400,7 @@ Pad van het bestand waarnaar de uitvoer wordt geëxporteerd (JSON-indeling)
 
 ## `upgrade:check`
 
-```bash
+```shell
 bin/uct upgrade:check [-a|--current-version [CURRENT-VERSION]] [-c|--coming-version [COMING-VERSION]] [--json-output-path [JSON-OUTPUT-PATH]] [--html-output-path [HTML-OUTPUT-PATH]] [--min-issue-level [MIN-ISSUE-LEVEL]] [-i|--ignore-current-version-compatibility-issues] [--context CONTEXT] [--] <dir>
 ```
 
@@ -416,7 +416,7 @@ Adobe Commerce-installatiemap.
 
 ### Opties
 
-Voor globale opties, zie [&#x200B; Globale opties &#x200B;](#global-options).
+Voor globale opties, zie [ Globale opties ](#global-options).
 
 #### `--current-version`, `-a`
 
@@ -426,7 +426,7 @@ De huidige Adobe Commerce-versie, versie van de Adobe Commerce-installatie, word
 
 #### `--coming-version`, `-c`
 
-Doel Adobe Commerce-versie. De meest recente, stabiele versie van Adobe Commerce wordt gebruikt als deze wordt weggelaten. Beschikbare Adobe Commerce-versies: 2.3.0 \| 2.3.1 \| 2.3.2 \| 2.3.2-p2 \| 2.3.3 \| 2.3.3-p1 \| 2.3.4 \| 2.3.4-p1 \| 2.3.4-p2 \| 2.3.5 \| 2.3.5-p1 \| 2.3.5-p2 \| 2.3.6 \| 2.3.6-p1 \| 2.3.7 \| 2.3.7-p1 \| 2.3.7-p2 \| 2.3.7-p3 \| 2.3.7-p4 \| 2.4.0 \| 2.4.0-p1 \| 2.4.1 \| 2.4.1-p1 \| 2.4.2 \| 2.4.2-p1 \| 2.4.2-p2 \| 2.4.3 \| 2.4.3-p1 \| 2.4.3-p2 \| 2.4.3-p3 \| 2.4.4 \| 2.4.4-p1 \| 2.4.4-p2 \| 2.4.4-p3 \| 2.4.4-p4 \| 2.4.4-p5 \| 2.4.4-p6 \| 2.4.4-p7 \| 2.4.4-p8 \| 2.4.4-p9 \| 2.4.4-p10 \| 2.4.4-p11 \| 2.4.4-p12 \| 2.4.4-p13 \| 2.4.4-p14 \| 2.4.4-p15 \| 2.4.4-p16 \| 2.4.4-p17 \| 2.4.5 \| 2.4.5-p1 \| 2.4.5-p2 \| 2.4.5-p3 \| 2.4.5-p4 \| 2.4.5-p5 \| 2.4.5-p6 \| 2.4.5-p7 \| 2.4.5-p8 \| 2.4.5-p9 \| 2.4.5-p10 \| 2.4.5-p11 \| 2.4.5-p12 \| 2.4.5-p13 \| 2.4.5-p14 \| 2.4.5-p15 \| 2.4.5-p16 \| 2.4.6 \| 2.4.6-p1 \| 2.4.6-p2 \| 2.4.6-p3 \| 2.4.6-p4 \| 2.4.6-p5 \| 2.4.6-p6 \| 2.4.6-p7 \| 2.4.6-p8 \| 2.4.6-p9 \| 2.4.6-p10 \| 2.4.6-p11 \| 2.4.6-p12 \| 2.4.6-p13 \| 2.4.6-p14 \| 2.4.7-bèta1 \| 2.4.7-bèta2 \| 2.4.7-bèta3 \| 2.4.7 \| 2.4.7-p1 \| 2.4.7-p2 \| 2.4.7-p3 \| 2.4.7-p4 \| 2.4.7-p5 \| 2.4.7-p6 \| 2.4.7-p7 \| 2.4.7-p8 \| 2.4.7-p9 \| 2.4.8-bèta1 \| 2.4.8-bèta2 \| 2.4.8 \| 2.4.8-p1 \| 2.4.8-p2 \| 2.4.8-p3 \| 2.4.8-p4 \| 2.4.9-alpha1 \| 2.4.9-alpha2 \| 2.4.9-alpha3 \| 2.4.9-bèta1
+Doel Adobe Commerce-versie. De meest recente, stabiele versie van Adobe Commerce wordt gebruikt als deze wordt weggelaten. Beschikbare Adobe Commerce-versies: 2.3.0 \| 2.3.1 \| 2.3.2 \| 2.3.2-p2 \| 2.3.3 \| 2.3.3-p1 \| 2.3.4 \| 2.3.4-p1 \| 2.3.4-p2 \| 2.3.5 \| 2.3.5-p1 \| 2.3.5-p2 \| 2.3.6 \| 2.3.6-p1 \| 2.3.7 \| 2.3.7-p1 \| 2.3.7-p2 \| 2.3.7-p3 \| 2.3.7-p4 \| 2.4.0 \| 2.4.0-p1 \| 2.4.1 \| 2.4.1-p1 2.4.2 \| 2.4.2-p1 \| 2.4.2-p2 \| 2.4.3 \| 2.4.3-p1 \| 2.4.3-p2 \| 2.4.3-p3 \| 2.4.4 \| 2.4.4-p1 \| 2.4.4-p2 \| 2.4.4-p3| 2.4.4-p4 \| 2.4.4-p5 \| 2.4.4-p6 \| 2.4.4-p7 \| 2.4.4-p8 \| 2.4.4-p9 \| 2.4.4-p10 \| 2.4.4-p11 \| 2.4.4-p12 \| 2.4.4-p13 \| 2.4.4-p14 \| 2.4.4-p15 \| 2.4.4-p16 \| 2.4.4-p17 \| 2.4.5 \| 2.4.5-p1 \| 2.4.5-p2 \| 2.4.5-p3 \| 2.4.5-p4 \| 2.4.5-p5 \| 2.4.5-p6 \| 2.4.5-p7 \| 2.4.5-p8 \| 2.4.5-p9 \| 2.4.5-p10 \| 2.4.5-p11 \| 2.4.5-p12| 2.4.5-p13 \| 2.4.5-p14 \| 2.4.5-p15 \| 2.4.5-p16 \| 2.4.6 \| 2.4.6-p1 \| 2.4.6-p2 \| 2.4.6-p3 \| 2.4.6-p4 2.4.6-p5 \| 2.4.6-p6 \| 2.4.6-p7 \| 2.4.6-p8 \| 2.4.6-p9 \| 2.4.6-p10 \| 2.4.6-p11 \| 2.4.6-p12 \| 2.4.6-p13 \| 2.4.6-p14 \| 2.4.7-beta1 \| 2.4.7-beta2 \| 2.4.7-beta3 \| 2.4.7 \| 2.4.7-p1 \| 2.4.7-p2 \| 2.4.7-p3 \| 2.4.7-p4 \| 2.4.7-p5 \| 2.4.7-p6 \| 2.4.7-p7 \| 2.4.7-p8 \| 2.4.7-p9 \| 2.4.8-beta1 \| 2.4.8-beta2 \| 2.4.8 \| 2.4.8-p1 \| 2.4.8-p2 \| 2.4.8-p3.4.8-p4 \| 2.4.9-alpha1 \| 2.4.9-alpha2 \| 2.4.9-alpha3 \| 2.4.9-beta1
 
 - Accepteert een waarde
 

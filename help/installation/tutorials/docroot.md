@@ -3,16 +3,16 @@ title: Documenthoofdmap wijzigen om de beveiliging te verbeteren
 description: Ongeoorloofde browsertoegang tot het Adobe Commerce-bestandssysteem op locatie voorkomen.
 feature: Install, Security
 exl-id: aabe148d-00c8-4011-a629-aa5abfa6c682
-source-git-commit: ddf988826c29b4ebf054a4d4fb5f4c285662ef4e
+source-git-commit: 48624d70761117ed0b9f8a7be913fce0572577b6
 workflow-type: tm+mt
-source-wordcount: '578'
+source-wordcount: '593'
 ht-degree: 0%
 
 ---
 
 # Documenthoofdmap wijzigen om de beveiliging te verbeteren
 
-In een standaardinstallatie met een Apache-webserver wordt Adobe Commerce geïnstalleerd als de standaardhoofdmap van het web: `/var/www/html/magento2` .
+In een standaardinstallatie met een Apache-webserver wordt Adobe Commerce geïnstalleerd in de standaardhoofdmap van het web: `/var/www/html/magento2`.
 
 De map `magento2/` bevat het volgende:
 
@@ -27,7 +27,7 @@ In dit onderwerp wordt beschreven hoe u de Apache-hoofdmap van een bestaande ins
 
 ## Een opmerking over nginx
 
-Als u [&#x200B; nginx &#x200B;](../prerequisites/web-server/nginx.md) en het [`nginx.conf.sample` &#x200B;](https://github.com/magento/magento2/blob/2.4/nginx.conf.sample) dossier inbegrepen in de installatiemap gebruikt, dient u waarschijnlijk reeds dossiers van de `pub/` folder.
+Als u [ nginx ](../prerequisites/web-server/nginx.md) en het [`nginx.conf.sample` ](https://github.com/magento/magento2/blob/2.4/nginx.conf.sample) dossier inbegrepen in de installatiemap gebruikt, dient u waarschijnlijk reeds dossiers van de `pub/` folder.
 
 Wanneer de configuratie van `nginx.conf.sample` wordt gebruikt in uw serverblok dat uw site definieert, worden de hoofdmapinstellingen van uw server genegeerd om bestanden uit de map van `pub/` te bedienen. Zie bijvoorbeeld de laatste regel in de volgende configuratie:
 
@@ -60,16 +60,16 @@ Als u deze zelfstudie wilt voltooien, hebt u toegang nodig tot een werkende inst
 
 >[!NOTE]
 >
->Verwijs naar [&#x200B; Eerste vereisten &#x200B;](../prerequisites/overview.md) en de [&#x200B; Gids van de Installatie &#x200B;](../overview.md) voor meer informatie.
+>Verwijs naar [ Eerste vereisten ](../prerequisites/overview.md) en de [ Gids van de Installatie ](../overview.md) voor meer informatie.
 
-## &#x200B;1. De serverconfiguratie bewerken
+## &#x200B;1. Uw serverconfiguratie bewerken
 
 De naam en locatie van het virtuele hostbestand zijn afhankelijk van de versie van Apache die u uitvoert. In dit voorbeeld worden de naam en locatie van het virtuele hostbestand op Apache v2.4 weergegeven.
 
 1. Meld u aan bij uw toepassingsserver.
 1. Bewerk uw virtuele hostbestand:
 
-   ```bash
+   ```shell
    vim /etc/apache2/sites-available/000-default.conf
    ```
 
@@ -92,11 +92,11 @@ De naam en locatie van het virtuele hostbestand zijn afhankelijk van de versie v
 
 1. Apache opnieuw starten:
 
-   ```bash
+   ```shell
    systemctl restart apache2
    ```
 
-## &#x200B;2. Werk uw basis-URL bij
+## &#x200B;2. De basis-URL bijwerken
 
 Als u een mapnaam aan de hostnaam of het IP-adres van de server hebt toegevoegd om de basis-URL te maken wanneer u de toepassing hebt geïnstalleerd (bijvoorbeeld `http://192.168.33.10/magento2` ), moet u deze verwijderen.
 
@@ -106,7 +106,7 @@ Als u een mapnaam aan de hostnaam of het IP-adres van de server hebt toegevoegd 
 
 1. Meld u aan bij de database:
 
-   ```bash
+   ```shell
    mysql -u <user> -p
    ```
 
@@ -122,7 +122,7 @@ Als u een mapnaam aan de hostnaam of het IP-adres van de server hebt toegevoegd 
    UPDATE core_config_data SET value='http://192.168.33.10' WHERE path='web/unsecure/base_url';
    ```
 
-## &#x200B;3. Werk het bestand env.php bij
+## &#x200B;3. Het bestand env.php bijwerken
 
 Voeg het volgende knooppunt toe aan het `env.php` -bestand.
 
@@ -132,39 +132,39 @@ Voeg het volgende knooppunt toe aan het `env.php` -bestand.
 ]
 ```
 
-Verwijs naar de {[&#x200B; verwijzing 0} env.php voor meer informatie.](../../configuration/reference/config-reference-envphp.md)
+Verwijs naar de {](../../configuration/reference/config-reference-envphp.md) verwijzing 0} env.php voor meer informatie.[
 
-## &#x200B;4. Overschakelmodi
+## &#x200B;4. Schakelen tussen modi
 
-[&#x200B; de wijzen van de Toepassing &#x200B;](../../configuration/bootstrap/application-modes.md), die `production` en `developer` omvatten, worden ontworpen om veiligheid te verbeteren en ontwikkeling gemakkelijker te maken. Zoals de namen suggereren, moet u overschakelen op de modus `developer` wanneer u de toepassing uitbreidt of aanpast en overschakelen op de modus `production` wanneer u in een live omgeving werkt.
+[ de wijzen van de Toepassing ](../../configuration/bootstrap/application-modes.md), die `production` en `developer` omvatten, worden ontworpen om veiligheid te verbeteren en ontwikkeling gemakkelijker te maken. Zoals de namen suggereren, moet u overschakelen op de modus `developer` wanneer u de toepassing uitbreidt of aanpast en overschakelen op de modus `production` wanneer u in een live omgeving werkt.
 
 Het schakelen tussen wijzen is een belangrijke stap om te verifiëren dat uw serverconfiguratie behoorlijk werkt. U kunt tussen wijzen schakelen gebruikend het CLI hulpmiddel:
 
 1. Ga naar de installatiemap.
 1. Schakel over naar de modus `production` .
 
-   ```bash
+   ```shell
    bin/magento deploy:mode:set production
    ```
 
-   ```bash
+   ```shell
    bin/magento cache:flush
    ```
 
 1. Vernieuw de browser en controleer of de winkel goed wordt weergegeven.
 1. Schakel over naar de modus `developer` .
 
-   ```bash
+   ```shell
    bin/magento deploy:mode:set developer
    ```
 
-   ```bash
+   ```shell
    bin/magento cache:flush
    ```
 
 1. Vernieuw de browser en controleer of de winkel goed wordt weergegeven.
 
-## &#x200B;5. Controleer de opslagplaats
+## &#x200B;5. De winkel controleren
 
 Ga naar de winkel in webbrowser om te controleren of alles werkt.
 
@@ -172,12 +172,12 @@ Ga naar de winkel in webbrowser om te controleren of alles werkt.
 
    In de volgende afbeelding ziet u een voorbeeldwinkelpagina. Als het als volgt toont, was uw installatie een succes!
 
-   ![&#x200B; Storefront die een succesvolle installatie &#x200B;](../../assets/installation/install-success_store.png) verifieert
+   ![ Storefront die een succesvolle installatie ](../../assets/installation/install-success_store.png) verifieert
 
-   Verwijs naar de [&#x200B; het oplossen van problemensectie &#x200B;](https://support.magento.com/hc/en-us/articles/360032994352) als de pagina 404 (niet Gevonden) toont of er niet in slaagt om andere activa zoals beelden, CSS, en JS te laden.
+   Verwijs naar de [ het oplossen van problemensectie ](https://support.magento.com/hc/en-us/articles/360032994352) als de pagina 404 (niet Gevonden) toont of er niet in slaagt om andere activa zoals beelden, CSS, en JS te laden.
 
 1. Probeer een toepassingsmap vanuit een browser te openen. Voeg de mapnaam toe aan de hostnaam of het IP-adres van de server op de adresbalk:
 
    Als u een bericht van 404 of &quot;Toegang ontkend&quot;ziet, hebt u met succes toegang tot het dossiersysteem beperkt.
 
-   ![&#x200B; Ontkende Toegang &#x200B;](../../assets/installation/access-denied.png)
+   ![ Ontkende Toegang ](../../assets/installation/access-denied.png)

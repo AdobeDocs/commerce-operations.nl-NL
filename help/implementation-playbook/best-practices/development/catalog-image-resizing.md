@@ -4,9 +4,9 @@ description: Leer hoe u kunt voorkomen dat de prestaties achteruitgaan voordat u
 feature: Best Practices
 role: Developer
 exl-id: 591b1a62-bdba-4301-858a-77620ee657a9
-source-git-commit: 84a20012a81278cc95587ec14281b05330261687
+source-git-commit: 48624d70761117ed0b9f8a7be913fce0572577b6
 workflow-type: tm+mt
-source-wordcount: '464'
+source-wordcount: '496'
 ht-degree: 0%
 
 ---
@@ -19,7 +19,7 @@ Alle catalogusafbeeldingen moeten worden vergroot of verkleind voordat een winke
 
 Gebruik het standaard CLI bevel resize alle beelden:
 
-```bash
+```shell
 bin/magento catalog:images:resize
 ```
 
@@ -41,19 +41,19 @@ Asynchrone afbeeldingsformaatwijziging is geïntroduceerd in Adobe Commerce 2.4 
 
 1. Verifieer dat de rijmanagers lopen:
 
-   ```bash
+   ```shell
    pgrep -fl media.storage.catalog.image.resize
    ```
 
 1. Vul de wachtrij met alle aanvragen voor het vergroten of verkleinen van afbeeldingen:
 
-   ```bash
+   ```shell
    bin/magento catalog:images:resize --async
    ```
 
 1. Nadat de grootte van alle afbeeldingen is gewijzigd, beëindigt u het proces:
 
-   ```bash
+   ```shell
    pkill -f media.storage.catalog.image.resize
    ```
 
@@ -77,7 +77,7 @@ Deze benadering resizes 100.000 beelden in minder dan 8 uren, terwijl het CLI be
 
 >[!TAB  gebruikt ]
 
-```bash
+```shell
 cd pub/
 find ./media/catalog/product -path ./media/catalog/product/cache -prune -o -type f -print | sed 's~./media/catalog/product/~https://www.example.com/media/catalog/product/cache/0047d83143a5a3a4683afdf1116df680/~g' > images.txt
 ```
@@ -86,13 +86,13 @@ find ./media/catalog/product -path ./media/catalog/product/cache -prune -o -type
 
 Het nadeel van `siege` is dat het alle URL&#39;s in de 10 keer bezoekt als de gelijktijdige uitvoering is ingesteld op 10.
 
-```bash
+```shell
 siege --file=./images.txt --user-agent="image-resizer" --no-follow --no-parser --concurrent=10 --reps=once
 ```
 
 >[!TAB  krullen ]
 
-```bash
+```shell
 xargs -0 -n 1 -P 10 curl -X HEAD -s -w "%{http_code} %{time_starttransfer} %{url_effective}\n" < <(tr \\n \\0 <images.txt)
 ```
 
@@ -102,7 +102,7 @@ Het argument `-P` bepaalt het aantal draden.
 
 De één-lijn voor het voorbeeld `find/curl`, voor het geval u `curl` van de zelfde machine kunt in werking stellen de beelden zijn:
 
-```bash
+```shell
 find ./media/catalog/product -path ./media/catalog/product/cache -prune -o -type f -print | sed 's~./media/catalog/product/~https://www.example.com/media/catalog/product/cache/0047d83143a5a3a4683afdf1116df680/~g' | xargs -n 1 -P 10 curl -X HEAD -s -w "%{http_code} %{time_starttransfer} %{url_effective}\n"
 ```
 
@@ -116,5 +116,5 @@ Als u één URL voor de afbeeldingscache bezoekt, worden alle afbeeldingsgrootte
 
 >[!NOTE]
 >
->- Adobe Commerce op cloud-infrastructuurprojecten kan de grootte van productafbeeldingen verschuiven naar de Fastly-service. Zie [&#x200B; Diepe beeldoptimalisering &#x200B;](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/cdn/fastly-image-optimization.html?lang=nl-NL#deep-image-optimization) in de _Gids van de Wolk_.
->- Als u de externe opslagmodule gebruikt, kunt u ook proberen de afbeeldingsgrootte te verschuiven naar nginx. Zie [&#x200B; beeld het resizing voor verre opslag &#x200B;](https://experienceleague.adobe.com/docs/commerce-operations/configuration-guide/storage/remote-storage/remote-storage-image-resize.html?lang=nl-NL) in de _Gids van de Configuratie_ vormen.
+>- Adobe Commerce op cloud-infrastructuurprojecten kan de grootte van productafbeeldingen verschuiven naar de Fastly-service. Zie [ Diepe beeldoptimalisering ](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/cdn/fastly-image-optimization.html#deep-image-optimization) in de _Gids van de Wolk_.
+>- Als u de externe opslagmodule gebruikt, kunt u ook proberen de afbeeldingsgrootte te verschuiven naar nginx. Zie [ beeld het resizing voor verre opslag ](https://experienceleague.adobe.com/docs/commerce-operations/configuration-guide/storage/remote-storage/remote-storage-image-resize.html) in de _Gids van de Configuratie_ vormen.

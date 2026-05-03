@@ -2,23 +2,23 @@
 title: Omgaan met upgradebereik
 description: Leer over achterwaartse onverenigbare veranderingen in een versie die de douanemodules van Adobe Commerce of derdeuitbreidingen zou kunnen beïnvloeden.
 exl-id: dab2a14f-dbf0-422e-afb4-642e2220ec7a
-source-git-commit: 9eeb0e3a1c75b25cc70b092d23f02ebfe355d6bd
+source-git-commit: 48624d70761117ed0b9f8a7be913fce0572577b6
 workflow-type: tm+mt
-source-wordcount: '897'
+source-wordcount: '946'
 ht-degree: 0%
 
 ---
 
 # Begrijp het werkingsgebied van verbetering
 
-Herzie de [&#x200B; versienota&#39;s &#x200B;](https://experienceleague.adobe.com/nl/docs/commerce-operations/release/notes/overview) om het werkingsgebied van een versie, met inbegrip van verhogingen, insectenmoeilijke situaties, en bekende kwesties te begrijpen die derde en douanemodules zouden kunnen beïnvloeden.
+Herzie de [ versienota&#39;s ](https://experienceleague.adobe.com/en/docs/commerce-operations/release/notes/overview) om het werkingsgebied van een versie, met inbegrip van verhogingen, insectenmoeilijke situaties, en bekende kwesties te begrijpen die derde en douanemodules zouden kunnen beïnvloeden.
 
 ## Achteruit incompatibele wijzigingen
 
 Adobe Commerce-releases kunnen niet-compatibele wijzigingen bevatten. Raadpleeg de volgende bronnen voor documentatie over achterwaartse en incompatibele wijzigingen:
 
-- **[Belangrijke veranderingshoogtepunten &#x200B;](https://developer.adobe.com/commerce/php/development/backward-incompatible-changes/)** - Veranderingen die een belangrijk effect hebben en gedetailleerde verklaring en speciale instructies vereisen om ervoor te zorgen dat de derdemodules blijven werkend.
-- **[kleine veranderingsverwijzing &#x200B;](https://developer.adobe.com/commerce/php/development/backward-incompatible-changes/reference/)** - de documentatie van de Verwijzing die van de codebasis wordt geproduceerd die minder belangrijke veranderingen in klassen, API lidmaatschap, gegevensbestand, gebiedsinjectie, interfaces, lay-outs, systeem, en XSD beschrijft.
+- **[Belangrijke veranderingshoogtepunten ](https://developer.adobe.com/commerce/php/development/backward-incompatible-changes/)** - Veranderingen die een belangrijk effect hebben en gedetailleerde verklaring en speciale instructies vereisen om ervoor te zorgen dat de derdemodules blijven werkend.
+- **[kleine veranderingsverwijzing ](https://developer.adobe.com/commerce/php/development/backward-incompatible-changes/reference/)** - de documentatie van de Verwijzing die van de codebasis wordt geproduceerd die minder belangrijke veranderingen in klassen, API lidmaatschap, gegevensbestand, gebiedsinjectie, interfaces, lay-outs, systeem, en XSD beschrijft.
 
 ## Extensies van derden
 
@@ -26,7 +26,7 @@ Het nieuwe verenigbaarheidsbeleid van Adobe Commerce Marketplace zorgt ervoor da
 
 ## Aangepaste modules
 
-Alle douanemodules zouden tegen de doelversie moeten worden gecontroleerd u aan bevordert. Dit is het meest tijd- en middel-intensieve proces van een verbetering. Wanneer het evalueren van uw douanemodules, moet u achteruit-incompatibele veranderingen zoeken en zich van nieuwe praktijken, zoals controlemechanismedecompositie bewust zijn. U kunt meer over dit in de [&#x200B; versienota&#39;s &#x200B;](https://experienceleague.adobe.com/nl/docs/commerce-operations/release/notes/overview) leren. Ook, zorg ervoor dat u [&#x200B; beste praktijken &#x200B;](https://developer.adobe.com/commerce/php/best-practices/extensions/) voor moduleontwikkeling volgt.
+Alle douanemodules zouden tegen de doelversie moeten worden gecontroleerd u aan bevordert. Dit is het meest tijd- en middel-intensieve proces van een verbetering. Wanneer het evalueren van uw douanemodules, moet u achteruit-incompatibele veranderingen zoeken en zich van nieuwe praktijken, zoals controlemechanismedecompositie bewust zijn. U kunt meer over dit in de [ versienota&#39;s ](https://experienceleague.adobe.com/en/docs/commerce-operations/release/notes/overview) leren. Ook, zorg ervoor dat u [ beste praktijken ](https://developer.adobe.com/commerce/php/best-practices/extensions/) voor moduleontwikkeling volgt.
 
 ## [!DNL Upgrade Compatibility Tool]
 
@@ -34,13 +34,13 @@ Alle douanemodules zouden tegen de doelversie moeten worden gecontroleerd u aan 
 
 Het gebruik van dit hulpmiddel vermindert de inspanning die van uw team wordt vereist om het werkingsgebied en het effect van een verbetering te begrijpen. Het helpt u gemeenschappelijke codekwesties te vermijden wanneer bevordering en verstrekt duidelijke richting op hoe te om geïdentificeerde kwesties op te lossen. Het helpt ook om voorrang te geven aan de meest kritieke kwesties noodzakelijk om een succesvolle verbetering te verzekeren, die zowel tijd als kosten bespaart wanneer het bevorderen.
 
-Zie de volgende secties om aan de slag te gaan met de [!DNL Upgrade Compatibility Tool] . Zie de [!DNL Upgrade Compatibility Tool] [&#x200B; gids &#x200B;](../upgrade-compatibility-tool/overview.md) voor meer technische details en geavanceerde gebruiksgevallen.
+Zie de volgende secties om aan de slag te gaan met de [!DNL Upgrade Compatibility Tool] . Zie de [!DNL Upgrade Compatibility Tool] [ gids ](../upgrade-compatibility-tool/overview.md) voor meer technische details en geavanceerde gebruiksgevallen.
 
 ### Het gereedschap downloaden
 
 Gebruik Composer om het gereedschap te downloaden. Hiervoor is PHP 7.3 of hoger vereist, ten minste 2 GB RAM, Node.js (als u de compatibiliteit met GraphQL controleert) en een Adobe Commerce-licentie.
 
-```bash
+```shell
 composer create-project magento/upgrade-compatibility-tool uct --repository https://repo.magento.com
 ```
 
@@ -48,7 +48,7 @@ composer create-project magento/upgrade-compatibility-tool uct --repository http
 
 Om uw exemplaar te analyseren en op fouten, waarschuwingen, en kritieke kwesties te controleren:
 
-```bash
+```shell
 bin/uct upgrade:check <dir> -c <coming version> 
 ```
 
@@ -58,7 +58,7 @@ bin/uct upgrade:check <dir> -c <coming version>
 
 Om de meest kritieke kwesties voor uw team te identificeren om te richten:
 
-```bash
+```shell
 bin/uct upgrade:check /path/to/magento/ --ignore-current-compatibility-issues –min-issue-level critical --vanilla-dir /path/to/vanilla/code/ /path/to/magento/app/code/Vendor/
 ```
 
@@ -103,7 +103,7 @@ De volgende output toont een voorbeeld samenvattingsrapport:
 
 ### Tips en advies
 
-Alle kwesties die het geïdentificeerde hulpmiddel zijn vermeld zijn in het rapport met specifieke foutencodes. Gebruik de [&#x200B; verwijzing van het foutenbericht &#x200B;](../upgrade-compatibility-tool/error-messages.md) om meer details over elke kwestie te krijgen. Adobe biedt ook suggesties om elk type probleem te verhelpen, zodat u de stappen voor het verhelpen van problemen kunt plannen.
+Alle kwesties die het geïdentificeerde hulpmiddel zijn vermeld zijn in het rapport met specifieke foutencodes. Gebruik de [ verwijzing van het foutenbericht ](../upgrade-compatibility-tool/error-messages.md) om meer details over elke kwestie te krijgen. Adobe biedt ook suggesties om elk type probleem te verhelpen, zodat u de stappen voor het verhelpen van problemen kunt plannen.
 
 Gebruik het rapport om te schatten hoeveel moeite het zal vergen om uw code voor de verbetering bij te werken. Op basis van uw ervaring kunt u een schatting maken van de vereiste inspanning om een upgrade uit te voeren op basis van het totale aantal geïdentificeerde problemen en de ernst van de problemen. Aangezien dit een opdrachtregelprogramma is, kunt u dit opnemen in automatische test- en codeselecties en de JSON-uitvoer gebruiken om uw rapporten te genereren.
 

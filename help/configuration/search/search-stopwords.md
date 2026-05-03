@@ -3,9 +3,9 @@ title: Zoekstopwoorden configureren
 description: Leer hoe u stopwords voor Adobe Commerce kunt beheren met gebruik van CSV-bestanden.
 feature: Configuration, Search
 exl-id: 75320868-9939-4a6e-8dbb-73ca68c9f0ee
-source-git-commit: 8d0d8f9822b88f2dd8cbae8f6d7e3cdb14cc4848
+source-git-commit: 48624d70761117ed0b9f8a7be913fce0572577b6
 workflow-type: tm+mt
-source-wordcount: '616'
+source-wordcount: '656'
 ht-degree: 0%
 
 ---
@@ -20,10 +20,10 @@ U moet de stopwoorden beheren met gebruik van CSV-bestanden in de map `<magento_
 
 Zie de volgende bronnen voor meer informatie over hoe Elasticsearch en OpenSearch gebruik maken van stopwords:
 
-- [&#x200B; stoppenWoorden: Prestaties versus Precisie &#x200B;](https://www.elastic.co/guide/en/elasticsearch/guide/current/stopwords.html)
-- [&#x200B; Pros en Kons van Stopwords &#x200B;](https://www.elastic.co/guide/en/elasticsearch/guide/current/pros-cons-stopwords.html)
-- [&#x200B; Gebruikend Stopwords &#x200B;](https://www.elastic.co/guide/en/elasticsearch/guide/current/using-stopwords.html)
-- [&#x200B; stopwords en Prestaties &#x200B;](https://www.elastic.co/guide/en/elasticsearch/guide/current/stopwords-performance.html)
+- [Stopwoorden: Prestaties versus precisie](https://www.elastic.co/guide/en/elasticsearch/guide/current/stopwords.html)
+- [Pros en klokken van stopwords](https://www.elastic.co/guide/en/elasticsearch/guide/current/pros-cons-stopwords.html)
+- [Stopwoorden gebruiken](https://www.elastic.co/guide/en/elasticsearch/guide/current/using-stopwords.html)
+- [Stopwoorden en prestaties](https://www.elastic.co/guide/en/elasticsearch/guide/current/stopwords-performance.html)
 
 ## Stopwoorden configureren
 
@@ -35,7 +35,7 @@ De standaardlevensduur voor de cache van stopwords-bestanden is 15 minuten.
 
 **om stopwords uit te geven**:
 
-1. Login aan uw server van Commerce, of schakelaar aan, de [&#x200B; eigenaar van het dossiersysteem &#x200B;](../../installation/prerequisites/file-system/overview.md).
+1. Login aan uw server van Commerce, of schakelaar aan, de [ eigenaar van het dossiersysteem ](../../installation/prerequisites/file-system/overview.md).
 1. Gebruik een teksteditor om een stopword-bestand te openen in de map `<magento_root>/vendor/magento/module-elasticsearch/etc/stopwords` .
 
    CSV-bestanden gebruiken de naamgevingsconventie `stopwords_<locale_code>.csv` . Het Duitse stopword-bestand heeft bijvoorbeeld de naam `stopwords_de_DE.csv` .
@@ -47,11 +47,11 @@ De standaardlevensduur voor de cache van stopwords-bestanden is 15 minuten.
 1. Sla de wijzigingen op en sluit de teksteditor af.
 1. Reinig de configuratiecache.
 
-   - Admin: **Systeem** > Hulpmiddelen > **Beheer van het Geheime voorgeheugen**. Selecteer **checkbox van de Configuratie** en, van de lijst boven het, klik **verfrissen**. Klik **voorleggen** om de actie te voltooien.
+   - Beheerder: **Systeem** > Hulpmiddelen > **het Beheer van het Geheime voorgeheugen**. Selecteer **checkbox van de Configuratie** en, van de lijst boven het, klik **verfrissen**. Klik **voorleggen** om de actie te voltooien.
 
-   - Opdrachtregel: Voer de volgende opdracht in als de eigenaar van het bestandssysteem:
+   - Opdrachtregel: Voer als eigenaar van het bestandssysteem de volgende opdracht in:
 
-     ```bash
+     ```shell
      php <magento_root>/bin/magento cache:clean config
      ```
 
@@ -61,7 +61,7 @@ De standaardlevensduur voor de cache van stopwords-bestanden is 15 minuten.
 
 **om stopwords voor een scène** toe te voegen:
 
-1. Login aan uw server van Commerce, of schakelaar aan, de [&#x200B; eigenaar van het dossiersysteem &#x200B;](../../installation/prerequisites/file-system/overview.md).
+1. Login aan uw server van Commerce, of schakelaar aan, de [ eigenaar van het dossiersysteem ](../../installation/prerequisites/file-system/overview.md).
 
 1. Gebruik een teksteditor om een stopword-bestand met de naam `stopwords_<locale_code>.csv` in de map `<magento_root>/vendor/magento/module-elasticsearch/etc/stopwords` te maken.
 
@@ -85,11 +85,11 @@ De standaardlevensduur voor de cache van stopwords-bestanden is 15 minuten.
 1. Sla de wijzigingen in `esconfig.xml` op en sluit de teksteditor af.
 1. Reinig de configuratiecache.
 
-   - Admin: **Systeem** > Hulpmiddelen > **Beheer van het Geheime voorgeheugen**. Selecteer **checkbox van de Configuratie** en, van de lijst boven het, klik **verfrissen**. Klik **voorleggen** om de actie te voltooien.
+   - Beheerder: **Systeem** > Hulpmiddelen > **het Beheer van het Geheime voorgeheugen**. Selecteer **checkbox van de Configuratie** en, van de lijst boven het, klik **verfrissen**. Klik **voorleggen** om de actie te voltooien.
 
-   - Opdrachtregel: Voer de volgende opdracht in als de eigenaar van het bestandssysteem:
+   - Opdrachtregel: Voer als eigenaar van het bestandssysteem de volgende opdracht in:
 
-     ```bash
+     ```shell
      php <magento_root>/bin/magento magento cache:clean config
      ```
 
@@ -126,7 +126,7 @@ De locatie is afhankelijk van de manier waarop u de Commerce-software hebt geïn
 
 ## Om de folder van uw module te veranderen
 
-1. [&#x200B; creeer een module &#x200B;](https://developer.adobe.com/commerce/php/development/build/component-file-structure/)
+1. [Een module maken](https://developer.adobe.com/commerce/php/development/build/component-file-structure/)
 1. Voeg instructies toe in de module `etc/di.xml` :
 
    ```xml

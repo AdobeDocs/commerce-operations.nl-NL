@@ -3,9 +3,9 @@ title: Valkey gebruiken voor sessieopslag
 description: Leer hoe u Valkey voor sessieopslag in Adobe Commerce configureert. Ontdek de installatiestappen, configuratieopties en optimalisatietechnieken voor prestaties.
 feature: Configuration, Cache
 exl-id: 986ddb5c-8fc5-4210-8a41-a29e3a7625b7
-source-git-commit: 7054a5286f01e26e324401f4d8505e4e0faed93e
+source-git-commit: 48624d70761117ed0b9f8a7be913fce0572577b6
 workflow-type: tm+mt
-source-wordcount: '807'
+source-wordcount: '915'
 ht-degree: 1%
 
 ---
@@ -15,13 +15,13 @@ ht-degree: 1%
 
 >[!IMPORTANT]
 >
->U moet [&#x200B; Valkey &#x200B;](config-valkey.md#install-valkey) installeren alvorens verder te gaan.
+>U moet [ Valkey ](config-valkey.md#install-valkey) installeren alvorens verder te gaan.
 
 Adobe Commerce biedt opdrachtregelopties voor het configureren van de opslag van Valkey-sessies.
 
 Voer de opdracht `setup:config:set` uit en geef specifieke parameters voor Valkey op.
 
-```bash
+```shell
 bin/magento setup:config:set --session-save=valkey --session-save-valkey-<parameter_name>=<parameter_value>...
 ```
 
@@ -34,7 +34,7 @@ bin/magento setup:config:set --session-save=valkey --session-save-valkey-<parame
 >
 >Beginnend met **Adobe Commerce 2.4.9-alpha2**, **Valkey** heeft officieel Redis in CLI tooling wegens veranderingen in het verlenen van vergunningen vervangen. Valkey is een vork van Redis en behoudt vrijwel dezelfde functionaliteit. Voor **versies 2.4.8 en vroeger**, blijven de bevelen CLI die worden gebruikt om Valkey te vormen het zelfde als die voor Redis, die naadloze achterwaartse verenigbaarheid verzekeren en migratie of dubbel-milieu steun vereenvoudigen. In het volgende voorbeeld wordt de opdracht Valkey-specific getoond.
 
-```bash
+```shell
 bin/magento setup:config:set --session-save=redis --session-save-redis-<parameter_name>=<parameter_value>...
 ```
 
@@ -43,12 +43,12 @@ bin/magento setup:config:set --session-save=redis --session-save-redis-<paramete
 | session-save-valkey-host | host | Volledig - gekwalificeerde hostname, IP adres, of absolute weg als het gebruiken van de contactdozen van UNIX. | localhost |
 | session-save-valkey-port | poort | De luisterpoort van de Valkey-server. | 6379 |
 | session-save-valkey-password | password | Hiermee geeft u een wachtwoord op als uw Valkey-server verificatie vereist. | leeg |
-| session-save-valkey-timeout | timeout | Time-out verbinding, in seconden. | 2,5 |
-| session-save-valkey-persistent-id | persistent_identifier | Unieke tekenreeks om permanente verbindingen in te schakelen (bijvoorbeeld sess-db0).<br>[&#x200B; Bekende kwesties met phpredis en php-fpm &#x200B;](https://github.com/phpredis/phpredis/issues/70). |  |
-| session-save-valkey-db | database | Uniek Valkey-databasenummer, dat wordt aanbevolen om te beschermen tegen gegevensverlies.<br><br>**Belangrijk**: Als u Valkey voor meer dan één type van caching gebruikt, moeten de gegevensbestandaantallen verschillend zijn. U wordt aangeraden het standaarddatabasenummer voor caching toe te wijzen aan `0` , het databasenummer voor het in cache plaatsen van pagina&#39;s aan `1` en het databasenummer voor sessieopslag aan `2` . | 0 |
+| session-save-valkey-timeout | timeout | Time-out verbinding, in seconden. | 2.5 |
+| session-save-valkey-persistent-id | persistent_identifier | Unieke koord om blijvende verbindingen (bijvoorbeeld, sess-db0) toe te laten.<br>[ Bekende kwesties met phpredis en php-fpm ](https://github.com/phpredis/phpredis/issues/70). |  |
+| session-save-valkey-db | database | Unieke Valkey gegevensbestandaantal, dat wordt geadviseerd om tegen gegevensverlies te beschermen.<br><br>**Belangrijk**: Als u Valkey voor meer dan één type caching gebruikt, moeten de gegevensbestandaantallen verschillend zijn. U wordt aangeraden het standaarddatabasenummer voor caching toe te wijzen aan `0` , het databasenummer voor het in cache plaatsen van pagina&#39;s aan `1` en het databasenummer voor sessieopslag aan `2` . | 0 |
 | session-save-valkey-compression-threshold | compression_threshold | Stel in op `0` om compressie uit te schakelen (aanbevolen bij `suhosin.session.encrypt = On` ). | 2048 |
 | session-save-valkey-compression-lib | compression_library | Opties: gzip, lzf, lz4 of snappy. | gzip |
-| session-save-valkey-log-level | log_level | Stel de volgende waarden in op een van de volgende volgorde, van minimale breedtegraad tot breedste breedte:<ul><li>0 (noodsituatie: alleen de ernstigste fouten)<li>1 (waarschuwing: onmiddellijke actie vereist)<li>2 (kritiek: toepassingscomponent niet beschikbaar)<li>3 (fout: fouten bij uitvoering, niet kritiek, maar moet worden gecontroleerd)<li>4 (waarschuwing: aanvullende informatie, aanbevolen)<li>5 (mededeling: normale maar significante toestand)<li>6 (info: informatieve berichten)<li>7 (foutopsporing: de meeste informatie die u alleen kunt ontwikkelen of testen)</ul> | 1 |
+| session-save-valkey-log-level | log_level | Stel de volgende waarden in op een van de volgende volgorde, van minimale breedtegraad tot breedste breedte:<ul><li>0 (noodsituatie: alleen de ernstigste fouten)<li>1 (waarschuwing: onmiddellijke actie vereist)<li>2 (kritiek: toepassingscomponent niet beschikbaar)<li>3 (fout: fouten bij uitvoering, niet kritiek, maar moet worden gecontroleerd)<li>4 (waarschuwing: aanvullende informatie, aanbevolen)<li>5 (kennisgeving): normale maar significante toestand)<li>6 (info: informatieberichten)<li>7 (foutopsporing: de meeste informatie (alleen voor ontwikkeling of testen)</ul> | 1 |
 | session-save-valkey-max-gelijktijdige | max_concurrency | Maximum aantal processen dat op een slot op één zitting kan wachten. Voor grote productieclusters stelt u dit in op ten minste 10% van het aantal PHP-processen. | 6 |
 | session-save-valkey-break-after-frontend | break_after_frontend | Aantal seconden dat moet worden gewacht voordat wordt geprobeerd de vergrendeling voor de voorste (dat wil zeggen: storefront) sessie te verbreken. | 5 |
 | session-save-valkey-break-after-adminhtml | break_after_adminhtml | Aantal seconden dat moet worden gewacht voordat wordt geprobeerd de vergrendeling te verbreken voor een beheersessie (dat wil zeggen Admin). | 30 |
@@ -67,7 +67,7 @@ bin/magento setup:config:set --session-save=redis --session-save-redis-<paramete
 
 In het volgende voorbeeld wordt Valkey ingesteld als de opslag van sessiegegevens, wordt de host ingesteld op `127.0.0.1` , wordt het logniveau ingesteld op `4` en wordt het databasenummer ingesteld op `2` . Alle andere parameters worden ingesteld op de standaardwaarde.
 
-```bash
+```shell
 bin/magento setup:config:set --session-save=valkey --session-save-valkey-host=127.0.0.1 --session-save-valkey-log-level=4 --session-save-valkey-db=2
 ```
 
@@ -75,7 +75,7 @@ bin/magento setup:config:set --session-save=valkey --session-save-valkey-host=12
 >
 >Beginnend met **Adobe Commerce 2.4.9**, **Valkey** heeft officieel Redis in CLI tooling wegens veranderingen in het verlenen van vergunningen vervangen. Valkey is een vork van Redis en behoudt vrijwel dezelfde functionaliteit. Voor **versies 2.4.8 en vroeger**, blijven de bevelen CLI die worden gebruikt om Valkey te vormen het zelfde als die voor Redis, die naadloze achterwaartse verenigbaarheid verzekeren en migratie of dubbel-milieu steun vereenvoudigen. In het volgende voorbeeld wordt de opdracht Valkey-specific getoond.
 
-```bash
+```shell
 bin/magento setup:config:set --session-save=redis --session-save-redis-host=127.0.0.1 --session-save-redis-log-level=4 --session-save-redis-db=2
 ```
 
@@ -119,13 +119,13 @@ Als u wilt controleren of Valkey en Commerce goed samenwerken, meldt u zich aan 
 
 ### Valkey, opdracht
 
-```bash
+```shell
 valkey-cli monitor
 ```
 
 Voorbeeld van sessieopslaguitvoer:
 
-```
+```text
 1476824834.187250 [0 127.0.0.1:52353] "select" "0"
 1476824834.187587 [0 127.0.0.1:52353] "hmget" "sess_sgmeh2k3t7obl2tsot3h2ss0p1" "data" "writes"
 1476824834.187939 [0 127.0.0.1:52353] "expire" "sess_sgmeh2k3t7obl2tsot3h2ss0p1" "1200"
@@ -136,7 +136,7 @@ Voorbeeld van sessieopslaguitvoer:
 
 ### Valkey, ping, opdracht
 
-```bash
+```shell
 valkey-cli ping
 ```
 
@@ -146,4 +146,4 @@ Als beide opdrachten zijn uitgevoerd, wordt Valkey op de juiste wijze ingesteld.
 
 ### Gecomprimeerde gegevens controleren
 
-Om samengeperste zittingsgegevens en het paginacachegeheugen te inspecteren, [&#x200B; RESP.app &#x200B;](https://flathub.org/apps/app.resp.RESP) steunt automatische decompressie van Commerce 2 zitting en paginacache en toont PHP zittingsgegevens in een mens-leesbaar formaat.
+Om samengeperste zittingsgegevens en het paginacachegeheugen te inspecteren, [ RESP.app ](https://flathub.org/apps/app.resp.RESP) steunt automatische decompressie van Commerce 2 zitting en paginacache en toont PHP zittingsgegevens in een mens-leesbaar formaat.

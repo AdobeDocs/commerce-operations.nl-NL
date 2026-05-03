@@ -1,11 +1,11 @@
 ---
 title: Database-replicatie
-description: Zie de voordelen van het vormen van gegevensbestandreplicatie.
+description: Meer informatie over de voordelen van replicatie van databases voor Adobe Commerce, zoals back-up, offload van analysemogelijkheden en asynchrone MySQL-slave-configuratie.
 recommendations: noCatalog
 exl-id: 0e41dca0-5a23-4d12-96fe-241c511ae366
-source-git-commit: af45ac46afffeef5cd613628b2a98864fd7da69b
+source-git-commit: 41b8d77793f1c24f08ff7e6a2d35826a62477534
 workflow-type: tm+mt
-source-wordcount: '166'
+source-wordcount: '194'
 ht-degree: 0%
 
 ---
@@ -28,8 +28,8 @@ MySQL-databases worden asynchroon gerepliceerd. Dit betekent dat slaven niet per
 
 Een diepgaande bespreking van gegevensbestandreplicatie is voorbij het werkingsgebied van deze gids. Als u dit wilt instellen, kunt u een bron raadplegen zoals:
 
-- [&#x200B; documentatie MySQL &#x200B;](https://dev.mysql.com/doc/refman/5.6/en/replication.html)
-- [&#x200B; hoe te Reeks HoofdSlave Replicatie in MySQL (digitalocean) &#x200B;](https://www.digitalocean.com/community/tutorials/how-to-set-up-replication-in-mysql)
+- [MySQL-documentatie](https://dev.mysql.com/doc/refman/5.6/en/replication.html)
+- [Masterslave-replicatie instellen in MySQL (digitalocean)](https://www.digitalocean.com/community/tutorials/how-to-set-up-replication-in-mysql)
 
 Commerce biedt voorbeelden van MySQL-configuraties voor uw slave-databases. Een eenvoudige configuratie wordt geleverd bij de `ResourceConnections` -klasse `README.md` .
 

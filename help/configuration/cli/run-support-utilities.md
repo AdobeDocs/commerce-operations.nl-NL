@@ -2,9 +2,9 @@
 title: Voer de hulpprogramma's voor ondersteuning uit
 description: Leer hoe u hulpprogramma's voor ondersteuning kunt uitvoeren om uw Adobe Commerce-project op te lossen. Ontdek ingebouwde diagnose- en ondersteuningstools.
 exl-id: 021b795f-e00d-43b5-9cbb-5b57a4795be7
-source-git-commit: 10f324478e9a5e80fc4d28ce680929687291e990
+source-git-commit: 319f3232d1ba5f5ed7cdd10ce85b9d7ffbeec89a
 workflow-type: tm+mt
-source-wordcount: '470'
+source-wordcount: '484'
 ht-degree: 0%
 
 ---
@@ -15,7 +15,7 @@ ht-degree: 0%
 
 {{file-system-owner}}
 
-Het nut-ook wordt bedoeld van de Steun van Adobe Commerce als [&#x200B; Collector van Gegevens &#x200B;](https://experienceleague.adobe.com/nl/docs/commerce-admin/systems/tools/support#data-collector) - laat gebruikers toe om het oplossen van problemeninformatie over uw systeem te verzamelen die door ons team van de Steun kan worden gebruikt.
+Het nut-ook wordt bedoeld van de Steun van Adobe Commerce als [ Collector van Gegevens ](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/tools/support#data-collector) - laat gebruikers toe om het oplossen van problemeninformatie over uw systeem te verzamelen die door ons team van de Steun kan worden gebruikt.
 
 Adobe Commerce gebruikt deze steunen, die ook als _worden bedoeld dumps_, om kwesties te analyseren die toegang tot uw code vereisen. Een typisch scenario volgt:
 
@@ -42,7 +42,7 @@ Met deze opdracht maakt u een back-up van code en comprimeert u deze in `tar.gz`
 
 Opdrachtopties:
 
-```bash
+```shell
 bin/magento support:backup:code [--name=<file name>] [-o|--output=<path>] [-l|--logs]
 ```
 
@@ -54,7 +54,7 @@ Waarbij:
 
 Als u bijvoorbeeld een back-up van een code wilt maken met de naam `/var/www/html/magento2/var/log/mycodebackup.tar.gz` :
 
-```bash
+```shell
 bin/magento support:backup:code --name mycodebackup -o /var/www/html/magento2/var/log
 ```
 
@@ -68,7 +68,7 @@ Met deze opdracht maakt u een back-up van de Commerce-database en comprimeert u 
 
 Opdrachtopties:
 
-```bash
+```shell
 bin/magento support:backup:db [--name=<name>] [-o|--output=<path>] [-l|--logs] [-i|--ignore-sanitize]
 ```
 
@@ -77,11 +77,11 @@ Waarbij:
 - **`--name`** geeft de naam van het dump-bestand op (optioneel). Als u deze parameter weglaat, is het dumpdossier tijd en datum-gestempeld.
 - ** `-o|--output=<path>` is de absolute weg van het dossiersysteem om (vereiste) steun op te slaan.
 - **`-l|--logs`** bevat logbestanden (optioneel).
-- **`-i|--ignore-sanitize`** betekent dat de gegevens behouden blijven; laat de vlag weg om gevoelige gegevens te hakken die in het gegevensbestand worden opgeslagen wanneer het creëren van de steun (facultatief).
+- **`-i|--ignore-sanitize`** betekent dat gegevens behouden blijven; Laat de vlag weg om gevoelige gegevens te hakken die in het gegevensbestand worden opgeslagen wanneer het creëren van de steun (facultatief).
 
 De gevoelige gegevens omvatten klanteninformatie van de volgende gegevensbestandlijsten:
 
-```
+```text
 'customer_entity',
 'customer_entity_varchar',
 'customer_address_entity',
@@ -96,11 +96,11 @@ De gevoelige gegevens omvatten klanteninformatie van de volgende gegevensbestand
 
 Nadat het bevel voltooit, verstrek de gegevensbestandsteun aan de Steun van Adobe Commerce.
 
-## Problemen oplossen: hulpprogramma&#39;s en paden weergeven
+## Problemen oplossen: weergavehulpprogramma&#39;s en paden
 
 Wij verstrekken bevelen die wegen aan nut tonen die door de Collector van Gegevens en de bevellijn worden vereist. U kunt deze opdrachten bijvoorbeeld gebruiken als er fouten optreden zoals in de volgende weergave in Beheer of op de opdrachtregel:
 
-```
+```text
 Utility lsof not found
 ```
 
@@ -119,7 +119,7 @@ Voer de volgende opdrachten uit in de volgorde waarin de paden worden weergegeve
 
 Hieronder volgt een monster:
 
-```
+```text
    gzip => /bin/gzip
    lsof => /usr/sbin/lsof
    mysqldump => /usr/bin/mysqldump

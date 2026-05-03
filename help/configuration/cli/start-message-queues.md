@@ -2,9 +2,9 @@
 title: Gebruikers in de wachtrij met berichten starten
 description: Leer hoe u gebruikers in de wachtrij met berichten kunt starten voor asynchrone bewerkingen in Adobe Commerce. Ontdek consumentenbeheer en B2B-functionaliteit.
 exl-id: fd6edb24-8ebe-4b67-8a03-6cc759b60fa8
-source-git-commit: 10f324478e9a5e80fc4d28ce680929687291e990
+source-git-commit: 48624d70761117ed0b9f8a7be913fce0572577b6
 workflow-type: tm+mt
-source-wordcount: '189'
+source-wordcount: '191'
 ht-degree: 0%
 
 ---
@@ -13,23 +13,23 @@ ht-degree: 0%
 
 {{file-system-owner}}
 
-U moet de consument van de a [&#x200B; rij van de berichtrij &#x200B;](../queues/consumers.md) beginnen om asynchrone verrichtingen zoals de massaacties van Inventory management en REST bulkgoederen en asynchrone eindpunten toe te laten. Om B2B functionaliteit toe te laten, moet u veelvoudige consumenten beginnen. De modules van de derde zouden ook kunnen vereisen dat u een douaneconsument begint.
+U moet de consument van de a [ rij van de berichtrij ](../queues/consumers.md) beginnen om asynchrone verrichtingen zoals de massaacties van Inventory management en REST bulkgoederen en asynchrone eindpunten toe te laten. Om B2B functionaliteit toe te laten, moet u veelvoudige consumenten beginnen. De modules van de derde zouden ook kunnen vereisen dat u een douaneconsument begint.
 
 Een lijst met alle consumenten weergeven:
 
-```bash
+```shell
 bin/magento queue:consumers:list
 ```
 
 Gebruikers in de wachtrij met berichten starten:
 
-```bash
+```shell
 bin/magento queue:consumers:start [--max-messages=<value>] [--batch-size=<value>] [--single-thread] [--area-code=<value>] [--multi-process=<value>] <consumer_name>
 ```
 
 Na het verbruiken van alle beschikbare berichten, eindigt het bevel. U kunt de opdracht opnieuw handmatig of met een uitsnijdtaak uitvoeren. U kunt ook meerdere instanties van de opdracht `magento queue:consumers:start` uitvoeren om grote rijen berichten te verwerken. U kunt bijvoorbeeld `&` aan de opdracht toevoegen om deze op de achtergrond uit te voeren, terug te keren naar een vraag en door te gaan met het uitvoeren van opdrachten:
 
-```bash
+```shell
 bin/magento queue:consumers:start <consumer_name> &
 ```
 

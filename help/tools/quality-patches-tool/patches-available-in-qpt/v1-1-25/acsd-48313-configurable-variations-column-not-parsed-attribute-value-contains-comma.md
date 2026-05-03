@@ -1,20 +1,20 @@
 ---
-title: 'ACSD-48313: [!UICONTROL configurable_variations] kolom niet geparseerd als kenmerkwaarde een komma bevat'
+title: 'ACSD-48313: [!UICONTROL configurable_variations] column not parsed if attribute value contains comma'
 description: Pas de ACSD-48313-patch toe om het Adobe Commerce-probleem op te lossen waarbij de [!UICONTROL configurable_variations] -kolom niet wordt geparseerd als de kenmerkwaarde een komma bevat.
 feature: Attributes, Configuration
 role: Admin
 exl-id: 1ce0c8dc-0d03-4ebd-b02a-08090b244190
 type: Troubleshooting
-source-git-commit: 7fdb02a6d89d50ea593c5fd99d78101f89198424
+source-git-commit: 48624d70761117ed0b9f8a7be913fce0572577b6
 workflow-type: tm+mt
-source-wordcount: '399'
+source-wordcount: '456'
 ht-degree: 0%
 
 ---
 
-# ACSD-48313: **[!UICONTROL configurable_variations]** kolom niet geparseerd als kenmerkwaarde een komma bevat
+# ACSD-48313: **[!UICONTROL configurable_variations]** column not parsed if attribute value contains comma
 
-De ACSD-48313-patch lost het probleem op waarbij de **[!UICONTROL configurable_variations]** -kolom niet wordt geparseerd als de kenmerkwaarde een komma bevat. Deze patch is beschikbaar wanneer [[!DNL Quality Patches Tool (QPT)] &#x200B;](https://experienceleague.adobe.com/nl/docs/commerce-operations/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches) 1.1.25 wordt geïnstalleerd. De patch-id is ACSD-48313. De versie waarin dit probleem wordt opgelost, is nog niet beschikbaar.
+De ACSD-48313-patch lost het probleem op waarbij de **[!UICONTROL configurable_variations]** -kolom niet wordt geparseerd als de kenmerkwaarde een komma bevat. Deze patch is beschikbaar wanneer [[!DNL Quality Patches Tool (QPT)] ](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches) 1.1.25 wordt geïnstalleerd. De patch-id is ACSD-48313. De versie waarin dit probleem wordt opgelost, is nog niet beschikbaar.
 
 ## Betrokken producten en versies
 
@@ -26,7 +26,7 @@ De ACSD-48313-patch lost het probleem op waarbij de **[!UICONTROL configurable_v
 
 >[!NOTE]
 >
->De patch kan van toepassing worden op andere versies met nieuwe [!DNL Quality Patches Tool] versies. Om te controleren of de patch compatibel is met uw Adobe Commerce-versie, werkt u het `magento/quality-patches` -pakket bij naar de meest recente versie en controleert u de compatibiliteit op de [[!DNL Quality Patches Tool] : zoek naar patches op de pagina &#x200B;](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html?lang=nl-NL) . Gebruik de patch-id als een zoekwoord om de patch te zoeken.
+>De patch kan van toepassing worden op andere versies met nieuwe [!DNL Quality Patches Tool] versies. Als u wilt controleren of de patch compatibel is met uw Adobe Commerce-versie, werkt u het `magento/quality-patches` -pakket bij naar de meest recente versie en controleert u de compatibiliteit op de [[!DNL Quality Patches Tool] : Zoek naar de pagina van flarden ](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html). Gebruik de patch-id als een zoekwoord om de patch te zoeken.
 
 ## Probleem
 
@@ -35,11 +35,11 @@ Na het exporteren van configureerbare producten kan het resulterende bestand nie
 <u> Stappen om </u> te reproduceren:
 
 1. Ga naar **[!UICONTROL Stores]** > **[!UICONTROL Attributes]** > **[!UICONTROL Product]** en creeer een nieuw attribuut _Grootte_:
-1. Invoertype catalogus voor winkeleigenaar: **[!UICONTROL Dropdown]** .
+1. Invoertype catalogus voor winkeleigenaar: **[!UICONTROL Dropdown]**.
 1. Opties maken die een komma bevatten, bijvoorbeeld:
    * 10,2 cm
    * 15,5 cm
-1. **[!UICONTROL Advanced Attribute Properties]** - werkingsgebied: _Globaal_.
+1. **[!UICONTROL Advanced Attribute Properties]** - Bereik: _Globaal_.
 1. Maak een nieuw configureerbaar product met de functie Configuraties maken.
 1. Selecteer de bovengenoemde attributen _Grootte_ en de twee opties die de komma omvatten.
 1. Ga naar **[!UICONTROL System]** > **[!UICONTROL Data Transfer]** > **[!UICONTROL Export]** en maak een nieuwe exportbewerking voor producten (voer de uitsnede uit om het genereren van het CSV-bestand te activeren).
@@ -51,7 +51,7 @@ De gebruiker moet het bestand kunnen importeren.
 
 <u> Ware resultaten </u>:
 
-```
+```text
 1. Column configurable_variations: Attribute with code "2cm" does not exist or is missing from product attribute set in row(s): 3
 2. Column configurable_variations: Attribute with code "5cm" does not exist or is missing from product attribute set in row(s): 3
 3. Column configurable_variations: Invalid option value for attribute "size" in row(s): 3
@@ -61,16 +61,16 @@ De gebruiker moet het bestand kunnen importeren.
 
 Om individuele flarden toe te passen, gebruik de volgende verbindingen afhankelijk van uw plaatsingsmethode:
 
-* Op locatie Adobe Commerce of Magento Open Source: [[!DNL Quality Patches Tool] > Gebruik &#x200B;](/help/tools/quality-patches-tool/usage.md) in de handleiding [!DNL Quality Patches Tool] .
-* Adobe Commerce op wolkeninfrastructuur: [&#x200B; Verbeteringen en Patches > Pas Patches &#x200B;](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html?lang=nl-NL) in Commerce op de gids van de Infrastructuur van de Wolk toe.
+* Adobe Commerce of Magento Open Source ter plaatse: [[!DNL Quality Patches Tool] > Gebruik ](/help/tools/quality-patches-tool/usage.md) in de [!DNL Quality Patches Tool] gids.
+* Adobe Commerce op cloudinfrastructuur: [ Verbeteringen en Patches > pas Patches ](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html) in Commerce op de gids van de Infrastructuur van de Wolk toe.
 
 
 ## Gerelateerde lezing
 
 Meer informatie over [!DNL Quality Patches Tool] vindt u in:
 
-* [[!DNL Quality Patches Tool]  vrijgegeven: een nieuw hulpmiddel om kwaliteitspatches &#x200B;](https://experienceleague.adobe.com/nl/docs/commerce-operations/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches) in de steunkennisbasis zelf-te dienen.
-* [&#x200B; Controle als het flard voor uw kwestie van Adobe Commerce beschikbaar is gebruikend  [!DNL Quality Patches Tool]](/help/tools/quality-patches-tool/patches-available-in-qpt/check-patch-for-magento-issue-with-magento-quality-patches.md) in de [!UICONTROL Quality Patches Tool] gids.
+* [[!DNL Quality Patches Tool]  vrijgegeven: een nieuw hulpmiddel om kwaliteitsflarden ](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches) in de steunkennisbasis zelf-te dienen.
+* [ Controle als het flard voor uw kwestie van Adobe Commerce beschikbaar is gebruikend  [!DNL Quality Patches Tool]](/help/tools/quality-patches-tool/patches-available-in-qpt/check-patch-for-magento-issue-with-magento-quality-patches.md) in de [!UICONTROL Quality Patches Tool] gids.
 
 
-Voor informatie over andere flarden beschikbaar in QPT, verwijs naar [[!DNL Quality Patches Tool]: Onderzoek naar flarden &#x200B;](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html?lang=nl-NL) in de [!DNL Quality Patches Tool] gids.
+Zie [[!DNL Quality Patches Tool] voor meer informatie over andere patches die beschikbaar zijn in QPT: Zoek naar flarden ](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html) in de [!DNL Quality Patches Tool] gids.

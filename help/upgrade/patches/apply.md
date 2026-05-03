@@ -2,9 +2,9 @@
 title: Patches toepassen
 description: Leer hoe u patches kunt toepassen op een Adobe Commerce-project.
 exl-id: 1d5d81ad-0115-4575-adfd-dde7c2826d85
-source-git-commit: c8a20ad1b0b57724f389cfa5c63f6ae542758c2b
+source-git-commit: 48624d70761117ed0b9f8a7be913fce0572577b6
 workflow-type: tm+mt
-source-wordcount: '312'
+source-wordcount: '324'
 ht-degree: 0%
 
 ---
@@ -13,14 +13,14 @@ ht-degree: 0%
 
 U kunt patches op een van de volgende manieren toepassen:
 
-- [[!DNL Quality Patches Tool]](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html?lang=nl-NL){target="_blank"}
+- [[!DNL Quality Patches Tool]](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html){target="_blank"}
 - [Opdrachtregel](../patches/apply.md#command-line)
 - [Composer](../patches/apply.md#composer)
 
 
 >[!TIP]
 >
->Zie [&#x200B; beste praktijken &#x200B;](../../implementation-playbook/best-practices/maintenance/patching-at-scale.md) voor informatie over gecentraliseerde het opsluiten voor Adobe Commerce bij ondernemingsschaal.
+>Zie [ beste praktijken ](../../implementation-playbook/best-practices/maintenance/patching-at-scale.md) voor informatie over gecentraliseerde het opsluiten voor Adobe Commerce bij ondernemingsschaal.
 
 ## Composer
 
@@ -31,13 +31,13 @@ Een aangepaste patch toepassen met Composer:
 1. Open de opdrachtregeltoepassing en navigeer naar de projectmap.
 1. Voeg de `cweagans/composer-patches` -plug-in toe aan het `composer.json` -bestand.
 
-   ```bash
+   ```shell
    composer require cweagans/composer-patches
    ```
 
 1. Bewerk het `composer.json` -bestand en voeg de volgende sectie toe om op te geven:
    - **Module:** *\ &quot;magento/module-payment\&quot;*
-   - **Titel:** *\ &quot;MAGETWO-56934: De pagina van de Afhandeling bevriest wanneer het opdracht geven tot met Authorize.net met ongeldige creditcard \&quot;*
+   - **Titel:** *\&quot;MAGETWO-56934: Afhandelingspagina loopt vast bij bestellen met Authorize.net met ongeldige creditcard\&quot;*
    - **Weg aan flard:** *\ &quot;patches/composer/github-issue-6474.diff \&quot;*
 
    Bijvoorbeeld:
@@ -57,13 +57,13 @@ Een aangepaste patch toepassen met Composer:
 
 1. Breng de pleister aan. Gebruik de optie `-v` alleen als u foutopsporingsinformatie wilt zien.
 
-   ```bash
+   ```shell
    composer -v install
    ```
 
 1. Werk het `composer.lock` bestand bij. In het vergrendelingsbestand wordt bijgehouden welke patches zijn toegepast op elk Composer-pakket in een object.
 
-   ```bash
+   ```shell
    composer update --lock
    ```
 
@@ -72,10 +72,10 @@ Een aangepaste patch toepassen met Composer:
 Patches toepassen vanaf de opdrachtregel:
 
 1. Upload het lokale bestand naar de map `<Magento_root>` op de server met behulp van FTP, SFTP, SSH of uw normale transportmethode.
-1. Logboek in de server als [&#x200B; admin gebruiker &#x200B;](../../configuration/cli/config-cli.md#prerequisites) en verifieert dat het dossier in de correcte folder is.
+1. Logboek in de server als [ admin gebruiker ](../../configuration/cli/config-cli.md#prerequisites) en verifieert dat het dossier in de correcte folder is.
 1. Voer in de opdrachtregelinterface de volgende opdrachten uit volgens de patchextensie:
 
-   ```bash
+   ```shell
    patch < patch_file_name.patch
    ```
 
@@ -83,7 +83,7 @@ Patches toepassen vanaf de opdrachtregel:
 
    >[!NOTE]
    >
-   >Als op de opdrachtregel het volgende wordt weergegeven: `File to patch:` , betekent dit dat het bedoelde bestand niet kan worden gevonden, zelfs niet als het pad juist lijkt. In de doos die in de bevel-lijn terminal wordt getoond, toont de eerste lijn het te patchen dossier. Kopieer het bestandspad en plak het in de `File to patch:` prompt en druk op `Enter` . De patch moet dan zijn voltooid.
+   >Als de opdrachtregel het volgende weergeeft: `File to patch:` , betekent dit dat het bedoelde bestand niet kan worden gevonden, zelfs niet als het pad juist lijkt. In de doos die in de bevel-lijn terminal wordt getoond, toont de eerste lijn het te patchen dossier. Kopieer het bestandspad en plak het in de `File to patch:` prompt en druk op `Enter` . De patch moet dan zijn voltooid.
 
 1. Voor de veranderingen die moeten worden weerspiegeld, vernieuw het geheime voorgeheugen in Admin onder **Systeem** > Hulpmiddelen > **het Beheer van het Geheime voorgeheugen**.
 

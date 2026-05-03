@@ -3,10 +3,10 @@ title: Automatisch hoofddatabases configureren
 description: Zie begeleiding bij het automatisch vormen van de gespleten gegevensbestandoplossing.
 recommendations: noCatalog
 exl-id: a27ad097-de60-4cdd-81f9-eb1ae84587e4
-source-git-commit: ca8dc855e0598d2c3d43afae2e055aa27035a09b
+source-git-commit: 48624d70761117ed0b9f8a7be913fce0572577b6
 workflow-type: tm+mt
 source-wordcount: '355'
-ht-degree: 1%
+ht-degree: 0%
 
 ---
 
@@ -28,7 +28,7 @@ Dit onderwerp bespreekt hoe te beginnen met de gespleten gegevensbestandoplossin
 
 ## De Adobe Commerce-software installeren
 
-U kunt gesplitste databases op elk gewenst moment inschakelen nadat u de Adobe Commerce-software hebt geïnstalleerd. Met andere woorden, u kunt gesplitste databases toevoegen aan een Adobe Commerce-systeem dat al gegevens voor kassa en bestelling bevat. Gebruik de instructies in Adobe Commerce README of de [&#x200B; installatiegids &#x200B;](../../installation/overview.md) om de software van Adobe Commerce te installeren gebruikend één enkel hoofdgegevensbestand.
+U kunt gesplitste databases op elk gewenst moment inschakelen nadat u de Adobe Commerce-software hebt geïnstalleerd. Met andere woorden, u kunt gesplitste databases toevoegen aan een Adobe Commerce-systeem dat al gegevens voor kassa&#39;s en bestellingen heeft. Gebruik de instructies in Adobe Commerce README of de [ installatiegids ](../../installation/overview.md) om de software van Adobe Commerce te installeren gebruikend één enkel hoofdgegevensbestand.
 
 ## Extra hoofddatabases instellen
 
@@ -37,7 +37,7 @@ Maak als volgt uitcheckdatabases en OMS-hoofddatabases:
 1. Meld u als elke gebruiker aan bij uw databaseserver.
 1. Ga het volgende bevel in om aan een MySQL bevelherinnering te krijgen:
 
-   ```bash
+   ```shell
    mysql -u root -p
    ```
 
@@ -66,7 +66,7 @@ Maak als volgt uitcheckdatabases en OMS-hoofddatabases:
 
    Database uitchecken:
 
-   ```bash
+   ```shell
    mysql -u magento_quote -p
    ```
 
@@ -76,7 +76,7 @@ Maak als volgt uitcheckdatabases en OMS-hoofddatabases:
 
    Database van het systeem voor orderbeheer:
 
-   ```bash
+   ```shell
    mysql -u magento_sales -p
    ```
 
@@ -92,25 +92,25 @@ Na vestiging in totaal van drie hoofdgegevensbestanden, gebruik de bevellijn om 
 
 ### Eerste stappen
 
-Zie [&#x200B; Lopende bevelen &#x200B;](../cli/config-cli.md#running-commands) aan login en looppas bevelen CLI.
+Zie [ Lopende bevelen ](../cli/config-cli.md#running-commands) aan login en looppas bevelen CLI.
 
 ### De database voor uitchecken configureren
 
 Command syntaxis:
 
-```bash
+```shell
 bin/magento setup:db-schema:split-quote --host="<checkout db host or ip>" --dbname="<name>" --username="<checkout db username>" --password="<password>"
 ```
 
 Bijvoorbeeld:
 
-```bash
+```shell
 bin/magento setup:db-schema:split-quote --host="localhost" --dbname="magento_quote" --username="magento_quote" --password="magento_quote"
 ```
 
 Het volgende bericht wordt weergegeven ter bevestiging van een geslaagde installatie:
 
-```
+```text
 Migration has been finished successfully!
 ```
 
@@ -118,22 +118,22 @@ Migration has been finished successfully!
 
 Command syntaxis:
 
-```bash
+```shell
 bin/magento setup:db-schema:split-sales --host="<checkout db host or ip>" --dbname="<name>" --username="<checkout db username>" --password="<password>"
 ```
 
 Bijvoorbeeld:
 
-```bash
+```shell
 bin/magento setup:db-schema:split-sales --host="localhost" --dbname="magento_sales" --username="magento_sales" --password="magento_sales"
 ```
 
-```bash
+```shell
 bin/magento setup:upgrade
 ```
 
 Het volgende bericht wordt weergegeven ter bevestiging van een geslaagde installatie:
 
-```
+```text
 Migration has been finished successfully!
 ```

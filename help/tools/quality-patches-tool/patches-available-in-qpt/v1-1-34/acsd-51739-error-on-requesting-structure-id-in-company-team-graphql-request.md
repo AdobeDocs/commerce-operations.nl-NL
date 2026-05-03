@@ -1,18 +1,18 @@
 ---
-title: 'ACSD-51739: Fout bij het aanvragen van &grave; structure_id&grave; in &grave; CompanyTeam&grave; GraphQL request'
-description: Pas ACSD-51739 flard toe om de kwestie van Adobe Commerce te bevestigen waar een fout is teruggekeerd wanneer &grave; structure_id &grave; in een &grave; CompanyTeam &grave; GraphQL verzoek wordt gevraagd.
+title: 'ACSD-51739: Fout bij het aanvragen van ` structure_id` in ` CompanyTeam` GraphQL request'
+description: Pas ACSD-51739 flard toe om de kwestie van Adobe Commerce te bevestigen waar een fout is teruggekeerd wanneer ` structure_id ` in een ` CompanyTeam ` GraphQL verzoek wordt gevraagd.
 exl-id: 74c78278-779d-4fb6-ba10-501b25b9f1fe
 type: Troubleshooting
-source-git-commit: 7fdb02a6d89d50ea593c5fd99d78101f89198424
+source-git-commit: 48624d70761117ed0b9f8a7be913fce0572577b6
 workflow-type: tm+mt
-source-wordcount: '384'
+source-wordcount: '438'
 ht-degree: 0%
 
 ---
 
-# ACSD-51739: Fout bij aanvragen `structure_id` in `CompanyTeam` GraphQL-verzoek
+# ACSD-51739: Fout bij aanvragen van `structure_id` in `CompanyTeam` GraphQL-verzoek
 
-De ACSD-51739-patch verhelpt het probleem waarbij een fout wordt geretourneerd wanneer `structure_id` wordt aangevraagd in een `CompanyTeam` GraphQL-aanvraag. Deze patch is beschikbaar wanneer [[!DNL Quality Patches Tool (QPT)] &#x200B;](https://experienceleague.adobe.com/nl/docs/commerce-operations/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches) 1.1.34 wordt geïnstalleerd. De patch-id is ACSD-51739. De kwestie is opgelost in Adobe Commerce 2.4.7.
+De ACSD-51739-patch verhelpt het probleem waarbij een fout wordt geretourneerd wanneer `structure_id` wordt aangevraagd in een `CompanyTeam` GraphQL-aanvraag. Deze patch is beschikbaar wanneer [[!DNL Quality Patches Tool (QPT)] ](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches) 1.1.34 wordt geïnstalleerd. De patch-id is ACSD-51739. De kwestie is opgelost in Adobe Commerce 2.4.7.
 
 ## Betrokken producten en versies
 
@@ -26,7 +26,7 @@ De ACSD-51739-patch verhelpt het probleem waarbij een fout wordt geretourneerd w
 
 >[!NOTE]
 >
->De patch kan van toepassing worden op andere versies met nieuwe [!DNL Quality Patches Tool] versies. Om te controleren of de patch compatibel is met uw Adobe Commerce-versie, werkt u het `magento/quality-patches` -pakket bij naar de meest recente versie en controleert u de compatibiliteit op de [[!DNL Quality Patches Tool] : zoek naar patches op de pagina &#x200B;](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html?lang=nl-NL) . Gebruik de patch-id als een zoekwoord om de patch te zoeken.
+>De patch kan van toepassing worden op andere versies met nieuwe [!DNL Quality Patches Tool] versies. Als u wilt controleren of de patch compatibel is met uw Adobe Commerce-versie, werkt u het `magento/quality-patches` -pakket bij naar de meest recente versie en controleert u de compatibiliteit op de [[!DNL Quality Patches Tool] : Zoek naar de pagina van flarden ](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html). Gebruik de patch-id als een zoekwoord om de patch te zoeken.
 
 ## Probleem
 
@@ -81,7 +81,7 @@ Er worden geen fouten geretourneerd en alle aangevraagde gegevens bevinden zich 
 * De reactie bevat een *Interne serverfout*.
 * `var/log/exception.log` bevat:
 
-  ```
+  ```yaml
   report.ERROR: Cannot return null for non-nullable field "CompanyTeam.structure_id"
   ```
 
@@ -89,15 +89,15 @@ Er worden geen fouten geretourneerd en alle aangevraagde gegevens bevinden zich 
 
 Om individuele flarden toe te passen, gebruik de volgende verbindingen afhankelijk van uw plaatsingsmethode:
 
-* Op locatie Adobe Commerce of Magento Open Source: [[!DNL Quality Patches Tool] > Gebruik &#x200B;](/help/tools/quality-patches-tool/usage.md) in de handleiding [!DNL Quality Patches Tool] .
-* Adobe Commerce op wolkeninfrastructuur: [&#x200B; Verbeteringen en Patches > Pas Patches &#x200B;](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html?lang=nl-NL) in Commerce op de gids van de Infrastructuur van de Wolk toe.
+* Adobe Commerce of Magento Open Source ter plaatse: [[!DNL Quality Patches Tool] > Gebruik ](/help/tools/quality-patches-tool/usage.md) in de [!DNL Quality Patches Tool] gids.
+* Adobe Commerce op cloudinfrastructuur: [ Verbeteringen en Patches > pas Patches ](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html) in Commerce op de gids van de Infrastructuur van de Wolk toe.
 
 ## Gerelateerde lezing
 
 Meer informatie over [!DNL Quality Patches Tool] vindt u in:
 
-* [[!DNL Quality Patches Tool]  vrijgegeven: een nieuw hulpmiddel om kwaliteitspatches &#x200B;](https://experienceleague.adobe.com/nl/docs/commerce-operations/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches) in de steunkennisbasis zelf-te dienen.
-* [&#x200B; Controle als het flard voor uw kwestie van Adobe Commerce beschikbaar is gebruikend  [!DNL Quality Patches Tool]](/help/tools/quality-patches-tool/patches-available-in-qpt/check-patch-for-magento-issue-with-magento-quality-patches.md) in de [!UICONTROL Quality Patches Tool] gids.
+* [[!DNL Quality Patches Tool]  vrijgegeven: een nieuw hulpmiddel om kwaliteitsflarden ](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches) in de steunkennisbasis zelf-te dienen.
+* [ Controle als het flard voor uw kwestie van Adobe Commerce beschikbaar is gebruikend  [!DNL Quality Patches Tool]](/help/tools/quality-patches-tool/patches-available-in-qpt/check-patch-for-magento-issue-with-magento-quality-patches.md) in de [!UICONTROL Quality Patches Tool] gids.
 
 
-Voor informatie over andere flarden beschikbaar in QPT, verwijs naar [[!DNL Quality Patches Tool]: Onderzoek naar flarden &#x200B;](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html?lang=nl-NL) in de [!DNL Quality Patches Tool] gids.
+Zie [[!DNL Quality Patches Tool] voor meer informatie over andere patches die beschikbaar zijn in QPT: Zoek naar flarden ](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html) in de [!DNL Quality Patches Tool] gids.

@@ -2,16 +2,16 @@
 title: Een aangepaste uitsnijdtaak en uitsnijdgroep configureren (zelfstudie)
 description: Leer hoe u met deze stapsgewijze zelfstudie voor Adobe Commerce aangepaste uitsnijdtaken kunt maken. De configuratie van de module en de groep van de cron ontdekken.
 exl-id: d8efcafc-3ae1-4c2d-a8ad-4a806fb48932
-source-git-commit: 6896d31a202957d7354c3dd5eb6459eda426e8d7
+source-git-commit: 48624d70761117ed0b9f8a7be913fce0572577b6
 workflow-type: tm+mt
-source-wordcount: '821'
+source-wordcount: '850'
 ht-degree: 0%
 
 ---
 
 # Een aangepaste uitsnijdtaak configureren
 
-Deze geleidelijke zelfstudie laat zien hoe u een aangepaste uitsnijdtaak en eventueel een uitsnijdgroep in een voorbeeldmodule kunt maken. U kunt een module gebruiken u reeds hebt of u kunt een steekproefmodule van onze [`magento2-samples` bewaarplaats &#x200B;](https://github.com/magento/magento2-samples) gebruiken.
+Deze geleidelijke zelfstudie laat zien hoe u een aangepaste uitsnijdtaak en eventueel een uitsnijdgroep in een voorbeeldmodule kunt maken. U kunt een module gebruiken u reeds hebt of u kunt een steekproefmodule van onze [`magento2-samples` bewaarplaats ](https://github.com/magento/magento2-samples) gebruiken.
 
 Als u de uitsnijdtaak uitvoert, wordt een rij toegevoegd aan de `cron_schedule` -tabel met de naam van de uitsnijdtaak, `custom_cron` .
 
@@ -21,47 +21,47 @@ In deze zelfstudie gaan we uit van het volgende:
 
 - De Commerce-toepassing wordt geïnstalleerd in `/var/www/html/magento2`
 - De gebruikersnaam en het wachtwoord voor de Commerce-database zijn allebei `magento`
-- U voert alle acties als [&#x200B; eigenaar van het dossiersysteem &#x200B;](../../installation/prerequisites/file-system/overview.md) uit
+- U voert alle acties als [ eigenaar van het dossiersysteem ](../../installation/prerequisites/file-system/overview.md) uit
 
 ## Stap 1: Een voorbeeldmodule ophalen
 
 Als u een aangepaste uitsnijdtaak wilt instellen, hebt u een voorbeeldmodule nodig. We raden de module `magento-module-minimal` aan.
 
-Als u reeds een steekproefmodule hebt, kunt u het gebruiken; sla deze stap en de volgende stap over en ga met Stap 3 verder: creeer een klasse om kroon in werking te stellen.
+Als u reeds een steekproefmodule hebt, kunt u het gebruiken; Sla deze stap en de volgende stap over en ga verder met stap 3: Maak een klasse om af te snijden.
 
 **om een steekproefmodule** te krijgen:
 
-1. Login aan uw server van Commerce als, of schakelaar aan, de [&#x200B; eigenaar van het dossiersysteem &#x200B;](../../installation/prerequisites/file-system/overview.md).
+1. Login aan uw server van Commerce als, of schakelaar aan, de [ eigenaar van het dossiersysteem ](../../installation/prerequisites/file-system/overview.md).
 1. Ga naar een map die zich niet in de hoofdmap van de Commerce-toepassing bevindt (bijvoorbeeld de thuismap).
-1. Kloont de [`magento2-samples` bewaarplaats &#x200B;](https://github.com/magento/magento2-samples).
+1. Kloont de [`magento2-samples` bewaarplaats ](https://github.com/magento/magento2-samples).
 
-   ```bash
+   ```shell
    git clone git@github.com:magento/magento2-samples.git
    ```
 
-   Als het bevel met de fout `Permission denied (publickey).` ontbreekt, moet u [&#x200B; uw openbare sleutel van SSH aan GitHub.com &#x200B;](https://docs.github.com/en/authentication/connecting-to-github-with-ssh/adding-a-new-ssh-key-to-your-github-account) toevoegen.
+   Als het bevel met de fout `Permission denied (publickey).` ontbreekt, moet u [ uw openbare sleutel van SSH aan GitHub.com ](https://docs.github.com/en/authentication/connecting-to-github-with-ssh/adding-a-new-ssh-key-to-your-github-account) toevoegen.
 
 1. Maak een map waarnaar de voorbeeldcode moet worden gekopieerd:
 
-   ```bash
+   ```shell
    mkdir -p /var/www/html/magento2/app/code/Magento/SampleMinimal
    ```
 
 1. Kopieer de code van de voorbeeldmodule:
 
-   ```bash
+   ```shell
    cp -r ~/magento2-samples/sample-module-minimal/* /var/www/html/magento2/app/code/Magento/SampleMinimal
    ```
 
 1. Controleer of de gekopieerde bestanden correct zijn gekopieerd:
 
-   ```bash
+   ```shell
    ls -al /var/www/html/magento2/app/code/Magento/SampleMinimal
    ```
 
    U zou het volgende resultaat moeten zien:
 
-   ```
+   ```text
    drwxrwsr-x.   4 magento_user apache  4096 Oct 30 13:19 .
    drwxrwsr-x. 121 magento_user apache  4096 Oct 30 13:19 ..
    -rw-rw-r--.   1 magento_user apache   372 Oct 30 13:19 composer.json
@@ -75,37 +75,37 @@ Als u reeds een steekproefmodule hebt, kunt u het gebruiken; sla deze stap en de
 
 1. De Commerce-database en -schema bijwerken:
 
-   ```bash
+   ```shell
    bin/magento setup:upgrade
    ```
 
 1. De cache reinigen:
 
-   ```bash
+   ```shell
    bin/magento cache:clean
    ```
 
-## Stap 2: Verifieer de steekproefmodule
+## Stap 2: De voorbeeldmodule controleren
 
 Controleer voordat u verdergaat of de voorbeeldmodule is geregistreerd en ingeschakeld.
 
 1. Voer de volgende opdracht uit:
 
-   ```bash
+   ```shell
    bin/magento module:status Magento_SampleMinimal
    ```
 
 1. Zorg ervoor dat de module wordt toegelaten.
 
-   ```
+   ```text
    Module is enabled
    ```
 
 >[!TIP]
 >
->Als de output erop wijst dat `Module does not exist`, overzicht [&#x200B; Stap 1 &#x200B;](#step-1-get-a-sample-module) zorgvuldig. Zorg ervoor dat de code in de juiste map staat. Spelling en hoofdletters/kleine letters zijn belangrijk. Als iets anders is, wordt de module niet geladen. Vergeet ook niet `magento setup:upgrade` uit te voeren.
+>Als de output erop wijst dat `Module does not exist`, overzicht [ Stap 1 ](#step-1-get-a-sample-module) zorgvuldig. Zorg ervoor dat de code in de juiste map staat. Spelling en case zijn belangrijk; als om het even wat verschillend is, zal de module niet laden. Vergeet ook niet `magento setup:upgrade` uit te voeren.
 
-## Stap 3: Een klasse maken om afsnijden uit te voeren
+## Stap 3: Een klasse maken om af te snijden
 
 In deze stap wordt een eenvoudige klasse weergegeven voor het maken van een uitsnijdtaak. De klasse schrijft alleen een rij naar de tabel `cron_schedule` die bevestigt dat deze is ingesteld.
 
@@ -113,7 +113,7 @@ Een klasse maken:
 
 1. Maak een map voor de klasse en wijzig deze in de map:
 
-   ```bash
+   ```shell
    mkdir /var/www/html/magento2/app/code/Magento/SampleMinimal/Cron && cd /var/www/html/magento2/app/code/Magento/SampleMinimal/Cron
    ```
 
@@ -181,17 +181,17 @@ Hierbij is `system/config/path` een systeemconfiguratiepad dat is gedefinieerd i
 
 Compileer de code met deze opdracht:
 
-```bash
+```shell
 bin/magento setup:di:compile
 ```
 
 En maak de cache schoon met deze opdracht:
 
-```bash
+```shell
 bin/magento cache:clean
 ```
 
-## Stap 6: De uitsnijdtaak verifiëren
+## Stap 6: De uitsnijdtaak controleren
 
 In deze stap ziet u hoe u de aangepaste uitsnijdtaak kunt verifiëren met een SQL-query in de databasetabel `cron_schedule` .
 
@@ -199,23 +199,23 @@ Uitsnijden verifiëren:
 
 1. Uitvoeren van Commerce-taken voor uitsnijden:
 
-   ```bash
+   ```shell
    bin/magento cron:run
    ```
 
 1. Voer de opdracht `magento cron:run` twee of drie keer in.
 
-   De eerste keer dat u de opdracht invoert, worden de taken in de wachtrij geplaatst en daarna worden de uitsnijdtaken uitgevoerd. U moet het bevel _minstens_ tweemaal ingaan.
+   De eerste keer dat u het bevel ingaat, vormt het banen een rij; vervolgens worden de banen in de kron gerund . U moet het bevel _minstens_ tweemaal ingaan.
 
 1. Voer de SQL-query `SELECT * from cron_schedule WHERE job_code like '%custom%'` als volgt uit:
 
    1. Enter `mysql -u magento -p`
-   1. Typ `mysql>` bij de aanwijzing `use magento;` .
+   1. Typ `use magento;` bij de aanwijzing `mysql>` .
    1. Enter `SELECT * from cron_schedule WHERE job_code like '%custom%';`
 
       Het resultaat moet vergelijkbaar zijn met het volgende:
 
-      ```
+      ```text
       +-------------+----------------+---------+----------+---------------------+---------------------+---------------------+---------------------+
       | schedule_id | job_code       | status  | messages | created_at        | scheduled_at        | executed_at         | finished_at     |
       +-------------+----------------+---------+----------+---------------------+---------------------+---------------------+---------------------+
@@ -228,13 +228,13 @@ Uitsnijden verifiëren:
 
 1. (Optioneel) Controleer of berichten naar het logboek van het Commerce-systeem worden geschreven:
 
-   ```bash
+   ```shell
    cat /var/www/html/magento2/var/log/system.log
    ```
 
    U zou één of meerdere ingangen als het volgende moeten zien:
 
-   ```
+   ```text
    [2016-11-02 22:17:03] main.INFO: Cron Works [] []
    ```
 
@@ -273,9 +273,9 @@ Een aangepaste uitsnijdgroep instellen:
    </config>
    ```
 
-Voor een beschrijving van wat de opties betekenen, zie [&#x200B; Aanpassen van de krantenverwijzing &#x200B;](custom-cron-reference.md).
+Voor een beschrijving van wat de opties betekenen, zie [ Aanpassen van de krantenverwijzing ](custom-cron-reference.md).
 
-## Stap 8: De aangepaste uitsnijdgroep verifiëren
+## Stap 8: Aangepaste uitsnijdgroep verifiëren
 
 Deze _facultatieve_ stap toont hoe te om uw groep van de douanecurn te verifiëren gebruikend Admin.
 
@@ -283,7 +283,7 @@ De aangepaste uitsnijdgroep verifiëren:
 
 1. Commerce-taken voor uitsnijden uitvoeren voor uw aangepaste groep:
 
-   ```bash
+   ```shell
    php /var/www/html/magento2/bin/magento cron:run --group="custom_crongroup"
    ```
 
@@ -291,7 +291,7 @@ De aangepaste uitsnijdgroep verifiëren:
 
 1. De cache reinigen:
 
-   ```bash
+   ```shell
    php /var/www/html/magento2/bin/magento cache:clean
    ```
 
@@ -301,5 +301,5 @@ De aangepaste uitsnijdgroep verifiëren:
 
    Uw uitsnijdgroep wordt als volgt weergegeven:
 
-   ![&#x200B; Uw groep van de douanecorrectie &#x200B;](../../assets/configuration/cron-group.png)
+   ![ Uw groep van de douanecorrectie ](../../assets/configuration/cron-group.png)
 

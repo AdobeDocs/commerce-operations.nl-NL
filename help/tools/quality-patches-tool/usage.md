@@ -4,22 +4,22 @@ description: Leer hoe u patches voor Adobe Commerce toepast en beheert met het g
 exl-id: f9ad37e9-2d0f-4bc8-a98b-6d60b6f56d42
 feature: Configuration, Install
 type: Troubleshooting
-source-git-commit: 7054a5286f01e26e324401f4d8505e4e0faed93e
+source-git-commit: 48624d70761117ed0b9f8a7be913fce0572577b6
 workflow-type: tm+mt
-source-wordcount: '863'
+source-wordcount: '939'
 ht-degree: 0%
 
 ---
 
 # Gebruik
 
-[[!DNL Quality Patches Tool] &#x200B;](https://github.com/magento/quality-patches) levert individuele die flarden door Adobe en de gemeenschap van Magento Open Source worden ontwikkeld. Hiermee kunt u algemene informatie over alle afzonderlijke patches die beschikbaar zijn voor de geïnstalleerde versie van Adobe Commerce, toepassen, herstellen en weergeven. U kunt patches toepassen op Adobe Commerce-projecten, ongeacht wie de patch heeft ontwikkeld. U kunt bijvoorbeeld een patch toepassen die door de gemeenschap is ontwikkeld op Adobe Commerce-projecten.
+[[!DNL Quality Patches Tool] ](https://github.com/magento/quality-patches) levert individuele die flarden door Adobe en de gemeenschap van Magento Open Source worden ontwikkeld. Hiermee kunt u algemene informatie over alle afzonderlijke patches die beschikbaar zijn voor de geïnstalleerde versie van Adobe Commerce, toepassen, herstellen en weergeven. U kunt patches toepassen op Adobe Commerce-projecten, ongeacht wie de patch heeft ontwikkeld. U kunt bijvoorbeeld een patch toepassen die door de gemeenschap is ontwikkeld op Adobe Commerce-projecten.
 
-Bekijk deze [&#x200B; technische video &#x200B;](https://experienceleague.adobe.com/docs/commerce-learn/tutorials/tools/quality-patch-tool.html?lang=nl-NL) en leer hoe te om het Hulpmiddel van de Patches van de Kwaliteit voor Adobe Commerce te gebruiken.
+Bekijk deze [ technische video ](https://experienceleague.adobe.com/docs/commerce-learn/tutorials/tools/quality-patch-tool.html) en leer hoe te om het Hulpmiddel van de Patches van de Kwaliteit voor Adobe Commerce te gebruiken.
 
 >[!INFO]
 >
->Zie [&#x200B; individuele flarden &#x200B;](#apply-individual-patches) voor instructies op het toepassen van flarden op uw projecten van Adobe Commerce toepassen. Zie [[!DNL Quality Patches Tool]: Zoeken naar patches &#x200B;](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html?lang=nl-NL) voor een volledige lijst met vrijgegeven patches.
+>Zie [ individuele flarden ](#apply-individual-patches) voor instructies op het toepassen van flarden op uw projecten van Adobe Commerce toepassen. Zie [[!DNL Quality Patches Tool] : Zoek naar flarden ](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html) om een volledige lijst van vrijgegeven flarden te herzien.
 
 >[!WARNING]
 >
@@ -29,9 +29,9 @@ Bekijk deze [&#x200B; technische video &#x200B;](https://experienceleague.adobe.
 
 >[!INFO]
 >
->Als het niet reeds geïnstalleerd is, moet u [[!DNL Git] installeren &#x200B;](https://github.com/git-guides/install-git) of [&#x200B; Reparatie &#x200B;](https://man7.org/linux/man-pages/man1/patch.1.html) alvorens [!DNL Quality Patches Tool] te installeren. Voeg het `magento/quality-patches` Composer-pakket toe aan uw `composer.json` -bestand:
+>Als het niet reeds geïnstalleerd is, moet u [[!DNL Git] installeren ](https://github.com/git-guides/install-git) of [ Reparatie ](https://man7.org/linux/man-pages/man1/patch.1.html) alvorens [!DNL Quality Patches Tool] te installeren. Voeg het `magento/quality-patches` Composer-pakket toe aan uw `composer.json` -bestand:
 
-```bash
+```shell
 composer require magento/quality-patches
 ```
 
@@ -39,7 +39,7 @@ composer require magento/quality-patches
 
 U kunt als volgt de lijst met afzonderlijke patches voor uw versie van Adobe Commerce weergeven:
 
-```bash
+```shell
 ./vendor/bin/magento-patches status
 ```
 
@@ -49,20 +49,20 @@ De uitvoer ziet er ongeveer als volgt uit:
 |--- |--- |--- |--- |--- |
 | MAGECLOUD-5069 | FPC wordt uitgeschakeld tijdens implementaties | Optioneel | Niet toegepast | Betrokken componenten:<br> - magento/module-page-cache |
 | MCLOUD-5650 | Implementatieconfiguratie bewaren na lezen van bestand | Optioneel | Niet toegepast | Betrokken componenten:<br> - magento/framework |
-| MCLOUD-5684 | Paginering werkt niet - product_list_limit=all | Optioneel | Niet toegepast | Betrokken componenten: - magento/module-elasticsearch |
+| MCLOUD-5684 | Paginering werkt niet - product_list_limit=all | Optioneel | Niet toegepast | Betrokken onderdelen: - magento/module-elasticsearch |
 | MCLOUD-5837 | Probleem met taakverdelingsmechanisme verhelpen | Vervangen | Toegepast | Aanbevolen vervanging: MC-1 <br> Betrokken componenten: - magento/framework |
-| BUNDLE-2554 | Fout in betalingsgegevens instellen | Optioneel | Niet toegepast | Betrokken componenten: <br>- amzn/amazon-pay-module |
-| MC-1 | Opgeloste problemen 1 | Optioneel | Toegepast | Betrokken componenten: <br> - magento/module-cms |
-| MC-2 | Opgeloste problemen 2 | Optioneel | Niet toegepast | Betrokken componenten: <br> - magento/module-cms |
+| BUNDLE-2554 | Fout in betalingsgegevens instellen | Optioneel | Niet toegepast | Betrokken onderdelen: <br>- amzn/amazon-pay-module |
+| MC-1 | Opgeloste problemen 1 | Optioneel | Toegepast | Betrokken onderdelen: <br> - magento/module-cms |
+| MC-2 | Opgeloste problemen 2 | Optioneel | Niet toegepast | Betrokken onderdelen: <br> - magento/module-cms |
 | MC-3 | Opgeloste problemen 3 | Optioneel | Niet toegepast | Vereiste flarden:<br> - mc-2 <br> Betrokken componenten: <br> - magento/module-cms |
-| MC-3-V2 | Bijgewerkte oplossing voor probleem 3; vervangt MC-3-patch | Optioneel | NVT | Betrokken componenten: <br> magento/module-cms |
+| MC-3-V2 | Bijgewerkte oplossing voor probleem 3; vervangt MC-3-patch | Optioneel | NVT | Betrokken onderdelen:  <br> - magento/module-cms |
 
 Adobe Commerce 2.3.5.
 
 De statustabel bevat:
 
 - **Type**:
-   - `Optional` — Alle flarden van [!DNL Quality Patches Tool] en [&#x200B; Commerce op de Gids van de Infrastructuur van de Wolk > passen flarden &#x200B;](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html?lang=nl-NL) pakket toe zijn facultatief voor de installaties van Adobe Commerce.
+   - `Optional` — Alle flarden van [!DNL Quality Patches Tool] en [ Commerce op de Gids van de Infrastructuur van de Wolk > passen flarden ](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html) pakket toe zijn facultatief voor de installaties van Adobe Commerce.
    - `Deprecated` — Adobe heeft de afzonderlijke patch vervangen. Als u de pleister hebt aangebracht, raden wij u aan deze weer in te voeren. De herstelbewerking verwijdert de patch ook uit de statustabel.
 
 - **Status**:
@@ -77,63 +77,63 @@ De statustabel bevat:
 
 >[!INFO]
 >
->Nadat u de upgrade naar een nieuwe versie van Adobe Commerce hebt uitgevoerd, moet u de patches opnieuw toepassen als de patches niet in de nieuwe versie zijn opgenomen. Zie [&#x200B; passen flarden na een verbetering &#x200B;](#re-apply-patches-after-an-upgrade) opnieuw toe.
+>Nadat u de upgrade naar een nieuwe versie van Adobe Commerce hebt uitgevoerd, moet u de patches opnieuw toepassen als de patches niet in de nieuwe versie zijn opgenomen. Zie [ passen flarden na een verbetering ](#re-apply-patches-after-an-upgrade) opnieuw toe.
 
 ## Afzonderlijke patches toepassen {#apply-individual-patches}
 
 >[!WARNING]
 >
->Het is aan te raden om alle patches in een testomgeving of ontwikkelomgeving te testen voordat ze worden geïmplementeerd. Het wordt ook aanbevolen een back-up van uw gegevens te maken voordat u een patch toepast. Zie [&#x200B; Steun en terugdraaiend het dossiersysteem, media, en gegevensbestand &#x200B;](https://experienceleague.adobe.com/docs/commerce-operations/installation-guide/tutorials/backup.html?lang=nl-NL).
+>Het is aan te raden om alle patches in een testomgeving of ontwikkelomgeving te testen voordat ze worden geïmplementeerd. Het wordt ook aanbevolen een back-up van uw gegevens te maken voordat u een patch toepast. Zie [ Steun en terugdraaiend het dossiersysteem, media, en gegevensbestand ](https://experienceleague.adobe.com/docs/commerce-operations/installation-guide/tutorials/backup.html).
 
 Als u één patch wilt toepassen, voert u de volgende opdracht uit, waarbij `MAGETWO-XXXX` de patch-id is die in de statustabel is opgegeven:
 
-```bash
+```shell
 ./vendor/bin/magento-patches apply MAGETWO-XXXX
 ```
 
 U kunt ook meerdere patches tegelijk toepassen door elke extra patch-id te scheiden met een spatie:
 
-```bash
+```shell
 ./vendor/bin/magento-patches apply MAGETWO-XXXX MAGETWO-YYYY
 ```
 
 U moet de cache wissen nadat u patches hebt toegepast om de wijzigingen in de Adobe Commerce-toepassing te kunnen zien:
 
-```bash
+```shell
 ./bin/magento cache:clean
 ```
 
 >[!INFO]
 >
->Bewaar een lijst met toegepaste patches op een aparte locatie. Mogelijk moet u een aantal van deze programma&#39;s opnieuw toepassen nadat u een upgrade hebt uitgevoerd naar een nieuwe versie van Adobe Commerce. Zie [&#x200B; passen flarden na een verbetering &#x200B;](#re-apply-patches-after-an-upgrade) opnieuw toe.
+>Bewaar een lijst met toegepaste patches op een aparte locatie. Mogelijk moet u een aantal van deze programma&#39;s opnieuw toepassen nadat u een upgrade hebt uitgevoerd naar een nieuwe versie van Adobe Commerce. Zie [ passen flarden na een verbetering ](#re-apply-patches-after-an-upgrade) opnieuw toe.
 
 ## Afzonderlijke patches herstellen
 
 >[!WARNING]
 >
->Het is aan te raden om alle patches in een testomgeving of ontwikkelomgeving te testen voordat ze worden geïmplementeerd. Het wordt ook aanbevolen een back-up van uw gegevens te maken voordat u een patch toepast. Zie [&#x200B; Steun en terugdraaiend het dossiersysteem, media, en gegevensbestand &#x200B;](https://experienceleague.adobe.com/docs/commerce-operations/installation-guide/tutorials/backup.html?lang=nl-NL).
+>Het is aan te raden om alle patches in een testomgeving of ontwikkelomgeving te testen voordat ze worden geïmplementeerd. Het wordt ook aanbevolen een back-up van uw gegevens te maken voordat u een patch toepast. Zie [ Steun en terugdraaiend het dossiersysteem, media, en gegevensbestand ](https://experienceleague.adobe.com/docs/commerce-operations/installation-guide/tutorials/backup.html).
 
 Als u één patch wilt herstellen, voert u de volgende opdracht uit, waarbij `MAGETWO-XXXX` de patch-id is die in de statustabel is opgegeven:
 
-```bash
+```shell
 ./vendor/bin/magento-patches revert MAGETWO-XXXX
 ```
 
 U kunt ook meerdere patches tegelijk herstellen door elke extra patch-id te scheiden met een spatie:
 
-```bash
+```shell
 ./vendor/bin/magento-patches revert MAGETWO-XXXX MAGETWO-YYYY
 ```
 
 Alle toegepaste patches herstellen:
 
-```bash
+```shell
 ./vendor/bin/magento-patches revert --all
 ```
 
 U moet de cache wissen nadat u de patches hebt teruggedraaid om de wijzigingen in de Adobe Commerce-toepassing te kunnen zien:
 
-```bash
+```shell
 ./bin/magento cache:clean
 ```
 
@@ -141,7 +141,7 @@ U moet de cache wissen nadat u de patches hebt teruggedraaid om de wijzigingen i
 
 Adobe Commerce brengt regelmatig nieuwe afzonderlijke patches uit. U moet de [!DNL Quality Patches Tool] bijwerken voor nieuwe afzonderlijke patches:
 
-```bash
+```shell
 composer update magento/quality-patches
 ```
 
@@ -151,7 +151,7 @@ De toegevoegde patches weergeven:
 >
 >Nieuwe patches toevoegen worden onder aan de tabel weergegeven.
 
-```bash
+```shell
 ./vendor/bin/magento-patches status
 ```
 
@@ -163,15 +163,15 @@ Patches opnieuw toepassen:
 
 1. Werk [!DNL Quality Patches Tool] bij:
 
-   ```bash
+   ```shell
    composer update magento/quality-patches.
    ```
 
-1. Open de lijst van eerder toegepaste flarden, die in [&#x200B; werd geadviseerd individuele flarden &#x200B;](#apply-individual-patches) toepassen.
+1. Open de lijst van eerder toegepaste flarden, die in [ werd geadviseerd individuele flarden ](#apply-individual-patches) toepassen.
 
 1. Pas de pleisters toe:
 
-   ```bash
+   ```shell
    ./vendor/bin/magento-patches apply MAGETWO-XXXX
    ```
 
@@ -179,7 +179,7 @@ Patches opnieuw toepassen:
 
 1. De cache reinigen:
 
-   ```bash
+   ```shell
    ./bin/magento cache:clean
    ```
 

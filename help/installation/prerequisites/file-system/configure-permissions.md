@@ -2,9 +2,9 @@
 title: Eigendom en machtigingen van bestanden configureren
 description: Voer de volgende stappen uit om bestandssysteemmachtigingen te configureren voor installaties op locatie van Adobe Commerce.
 exl-id: 2410ee4f-978c-4b71-b3f6-0c042f9f4dc4
-source-git-commit: 84a20012a81278cc95587ec14281b05330261687
+source-git-commit: 48624d70761117ed0b9f8a7be913fce0572577b6
 workflow-type: tm+mt
-source-wordcount: '981'
+source-wordcount: '1005'
 ht-degree: 0%
 
 ---
@@ -13,7 +13,7 @@ ht-degree: 0%
 
 Dit onderwerp bespreekt hoe te om lees-schrijf toestemmingen voor de groep van de Webserver te plaatsen alvorens u Adobe Commerce installeert. Dit is nodig, zodat de opdrachtregel bestanden naar het bestandssysteem kan schrijven.
 
-De procedure u gebruikt is verschillend, afhankelijk van of u [&#x200B; gedeelde het ontvangen &#x200B;](#set-permissions-for-one-user-on-shared-hosting) gebruikt en één gebruiker hebt of als u a [&#x200B; privé server &#x200B;](#set-ownership-and-permissions-for-two-users) gebruikt en twee gebruikers hebt.
+De procedure u gebruikt is verschillend, afhankelijk van of u [ gedeelde het ontvangen ](#set-permissions-for-one-user-on-shared-hosting) gebruikt en één gebruiker hebt of als u a [ privé server ](#set-ownership-and-permissions-for-two-users) gebruikt en twee gebruikers hebt.
 
 ## Machtigingen instellen voor één gebruiker bij gedeelde hosting
 
@@ -33,38 +33,38 @@ U kunt als volgt machtigingen instellen voordat u de toepassing installeert:
 
 1. Als u bevel-lijn toegang hebt, ga de volgende bevelen in de getoonde orde in:
 
-   ```bash
+   ```shell
    cd <app_root>
    ```
 
-   ```bash
+   ```shell
    find var generated vendor pub/static pub/media app/etc -type f -exec chmod u+w {} +
    ```
 
-   ```bash
+   ```shell
    find var generated vendor pub/static pub/media app/etc -type d -exec chmod u+w {} +
    ```
 
-   ```bash
+   ```shell
    chmod u+x bin/magento
    ```
 
    Als u desgewenst alle opdrachten op één regel wilt invoeren, voert u het volgende in, ervan uitgaande dat de toepassing is geïnstalleerd in `/var/www/html/magento2` :
 
-   ```bash
+   ```shell
    cd /var/www/html/magento2 && find var generated vendor pub/static pub/media app/etc -type f -exec chmod u+w {} + && find var generated vendor pub/static pub/media app/etc -type d -exec chmod u+w {} + && chmod u+x bin/magento
    ```
 
 1. Als u dit nog niet hebt gedaan, kunt u de toepassing op een van de volgende manieren ophalen:
 
    * [Composer-pakket](../../composer.md)
-   * [&#x200B; Kloon de bewaarplaats (bijdragende ontwikkelaars slechts) &#x200B;](https://developer.adobe.com/commerce/contributor/guides/install/clone-repository)
+   * [De opslagplaats klonen (alleen voor ontwikkelaars die een bijdrage leveren)](https://developer.adobe.com/commerce/contributor/guides/install/clone-repository)
 
-1. Nadat u de eigendom en de toestemmingen van het dossiersysteem hebt geplaatst, [&#x200B; installeert de toepassing &#x200B;](../../advanced.md)
+1. Nadat u de eigendom en de toestemmingen van het dossiersysteem hebt geplaatst, [ installeert de toepassing ](../../advanced.md)
 
 >[!NOTE]
 >
->Om toestemmingen na het installeren van de toepassing verder te beperken, kunt u [&#x200B; een masker &#x200B;](../../next-steps/set-umask.md) vormen.
+>Om toestemmingen na het installeren van de toepassing verder te beperken, kunt u [ een masker ](../../next-steps/set-umask.md) vormen.
 
 ## Eigendom en machtigingen voor twee gebruikers instellen
 
@@ -85,11 +85,11 @@ Voltooi de volgende taken in de getoonde orde:
 
 Om de Webserver toe te laten om dossiers en folders in het dossiersysteem te schrijven maar ook *eigendom* door de eigenaar van het dossiersysteem te handhaven, moeten beide gebruikers in de zelfde groep zijn. Dit is nodig, zodat beide gebruikers toegang kunnen delen tot bestanden (inclusief bestanden die zijn gemaakt met de beheerfunctie of andere hulpprogramma&#39;s op het web).
 
-In deze sectie wordt besproken hoe u een eigenaar van een bestandssysteem kunt maken en deze gebruiker in de groep van de webserver kunt plaatsen. U kunt desgewenst een bestaande gebruikersaccount gebruiken. Om veiligheidsredenen raden we de gebruiker aan een sterk wachtwoord in te voeren.
+In deze sectie wordt besproken hoe u een eigenaar van een bestandssysteem kunt maken en deze gebruiker in de groep van de webserver kunt plaatsen. U kunt desgewenst een bestaande gebruikersaccount gebruiken; wij adviseren dat de gebruiker een sterk wachtwoord om veiligheidsredenen heeft.
 
 >[!NOTE]
 >
->Skip aan [&#x200B; vind de de gebruikersgroep van de Webserver &#x200B;](#find-the-web-server-user-group) als u op het gebruiken van een bestaande gebruikersrekening van plan bent.
+>Skip aan [ vind de de gebruikersgroep van de Webserver ](#find-the-web-server-user-group) als u op het gebruiken van een bestaande gebruikersrekening van plan bent.
 
 ### De eigenaar van het bestandssysteem maken en de gebruiker een sterk wachtwoord geven
 
@@ -97,13 +97,13 @@ In deze sectie wordt besproken hoe u de eigenaar van het bestandssysteem kunt ma
 
 Als u een gebruiker wilt maken op CentOS of Ubuntu, voert u de volgende opdracht in als een gebruiker met `root` -rechten:
 
-```bash
+```shell
 adduser <username>
 ```
 
 Als u de gebruiker een wachtwoord wilt geven, voert u de volgende opdracht in als een gebruiker met `root` -rechten:
 
-```bash
+```shell
 passwd <username>
 ```
 
@@ -111,21 +111,21 @@ Volg de aanwijzingen op het scherm om een wachtwoord voor de gebruiker te maken.
 
 >[!WARNING]
 >
->Als u geen `root` bevoegdheden hebt op uw toepassingsserver, kunt u een andere lokale gebruikersaccount gebruiken. Zorg ervoor dat de gebruiker een sterk wachtwoord heeft en met [&#x200B; verdergaat zet de eigenaar van het dossiersysteem in de groep van de Webserver &#x200B;](#step-3-put-the-file-system-owner-in-the-web-servers-group).
+>Als u geen `root` bevoegdheden hebt op uw toepassingsserver, kunt u een andere lokale gebruikersaccount gebruiken. Zorg ervoor dat de gebruiker een sterk wachtwoord heeft en met [ verdergaat zet de eigenaar van het dossiersysteem in de groep van de Webserver ](#step-3-put-the-file-system-owner-in-the-web-servers-group).
 
 Als u bijvoorbeeld een gebruiker met de naam `magento_user` wilt maken en de gebruiker een wachtwoord wilt geven, voert u het volgende in:
 
-```bash
+```shell
 sudo adduser magento_user
 ```
 
-```bash
+```shell
 sudo passwd magento_user
 ```
 
 >[!WARNING]
 >
->Omdat het punt om deze gebruiker te creëren extra veiligheid moet verstrekken, zorg ervoor u a [&#x200B; sterk wachtwoord &#x200B;](https://en.wikipedia.org/wiki/Password_strength) creeert.
+>Omdat het punt om deze gebruiker te creëren extra veiligheid moet verstrekken, zorg ervoor u a [ sterk wachtwoord ](https://en.wikipedia.org/wiki/Password_strength) creeert.
 
 ### De gebruikersgroep van de webserver zoeken
 
@@ -133,13 +133,13 @@ De gebruikersgroep van de webserver zoeken:
 
 * CentOS:
 
-  ```bash
+  ```shell
   grep -E -i '^user|^group' /etc/httpd/conf/httpd.conf
   ```
 
   of
 
-  ```bash
+  ```shell
   grep -Ei '^user|^group' /etc/httpd/conf/httpd.conf
   ```
 
@@ -158,23 +158,23 @@ Als u de eigenaar van het bestandssysteem in de primaire groep van de webserver 
 
 >[!NOTE]
 >
->De `-a -G` opties zijn belangrijk omdat zij `apache` of `www-data` als a *secundaire* groep aan de gebruikersrekening toevoegen, die de 5&rbrace; primaire *groep van de gebruiker &lbrace;bewaart.* Het toevoegen van een secundaire groep aan een hulp van de gebruikersrekening [&#x200B; beperkt dossiereigendom en toestemmingen &#x200B;](#set-ownership-and-permissions-for-two-users) om leden van een gedeelde groep slechts toegang tot bepaalde dossiers te verzekeren.
+>De `-a -G` opties zijn belangrijk omdat zij `apache` of `www-data` als a *secundaire* groep aan de gebruikersrekening toevoegen, die de 5} primaire *groep van de gebruiker {bewaart.* Het toevoegen van een secundaire groep aan een hulp van de gebruikersrekening [ beperkt dossiereigendom en toestemmingen ](#set-ownership-and-permissions-for-two-users) om leden van een gedeelde groep slechts toegang tot bepaalde dossiers te verzekeren.
 
 Als u bijvoorbeeld de gebruiker `magento_user` wilt toevoegen aan de `apache` primaire groep op CentOS:
 
-```bash
+```shell
 sudo usermod -a -G apache magento_user
 ```
 
 Om te bevestigen dat uw gebruiker lid van de groep van de Webserver is, ga het volgende bevel in:
 
-```bash
+```shell
 groups magento_user
 ```
 
 Het volgende steekproefresultaat toont de primaire (`magento`) en secundaire (`apache`) groepen van de gebruiker.
 
-```bash
+```shell
 magento_user : magento_user apache
 ```
 
@@ -192,7 +192,7 @@ Start de webserver opnieuw om de taak te voltooien:
 Als u dit nog niet hebt gedaan, kunt u de software op een van de volgende manieren ophalen:
 
 * [Composer-pakket](../../composer.md)
-* [&#x200B; Kloon de bewaarplaats (bijdragende ontwikkelaars slechts) &#x200B;](https://developer.adobe.com/commerce/contributor/guides/install/clone-repository)
+* [De opslagplaats klonen (alleen voor ontwikkelaars die een bijdrage leveren)](https://developer.adobe.com/commerce/contributor/guides/install/clone-repository)
 
 ### Eigendom en machtigingen voor de gedeelde groep instellen
 
@@ -201,35 +201,35 @@ U stelt de eigendom en machtigingen in voordat u de toepassing installeert:
 1. Meld u aan bij uw toepassingsserver als eigenaar van het bestandssysteem of schakel over naar de eigenaar van het bestandssysteem.
 1. Voer de volgende opdrachten in de getoonde volgorde in:
 
-   ```bash
+   ```shell
    cd <app_root>
    ```
 
-   ```bash
+   ```shell
    find var generated vendor pub/static pub/media app/etc -type f -exec chmod g+w {} +
    ```
 
-   ```bash
+   ```shell
    find var generated vendor pub/static pub/media app/etc -type d -exec chmod g+ws {} +
    ```
 
-   ```bash
+   ```shell
    chown -R :<web server group> .
    ```
 
-   ```bash
+   ```shell
    chmod u+x bin/magento
    ```
 
 Als u desgewenst alle opdrachten op één regel wilt invoeren, voert u het volgende in, ervan uitgaande dat de toepassing is geïnstalleerd in `/var/www/html/magento2` en dat de naam van de webservergroep `apache` is:
 
-```bash
+```shell
 cd /var/www/html/magento2 && find var generated vendor pub/static pub/media app/etc -type f -exec chmod g+w {} + && find var generated vendor pub/static pub/media app/etc -type d -exec chmod g+ws {} + && chown -R :apache . && chmod u+x bin/magento
 ```
 
 Als de systeemmachtigingen voor het gebeurtenisbestand onjuist zijn ingesteld en niet kunnen worden gewijzigd door de eigenaar van het bestandssysteem, kunt u de opdracht invoeren als een gebruiker met `root` -bevoegdheden:
 
-```bash
+```shell
 cd /var/www/html/magento2 && sudo find var generated vendor pub/static pub/media app/etc -type f -exec chmod g+w {} + && sudo find var generated vendor pub/static pub/media app/etc -type d -exec chmod g+ws {} + && sudo chown -R :apache . && sudo chmod u+x bin/magento
 ```
 
@@ -242,6 +242,6 @@ Nadat u de andere taken in dit onderwerp hebt uitgevoerd, ga één van de volgen
 
 Bijvoorbeeld:
 
-```bash
+```shell
 su magento_user
 ```

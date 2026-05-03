@@ -2,9 +2,9 @@
 title: Geavanceerde instellingen
 description: Leer hoe u geavanceerde instellingen voor Adobe Commerce kunt gebruiken. Ontdek de stapsgewijze instructies en configuratievereisten.
 exl-id: eb9ca9fa-b099-4e77-ab33-16cd0f382ffe
-source-git-commit: da9ce645d4d32c1368da442d9bd260f5fb3cdb98
+source-git-commit: f9a135fc63574ccbecd3f564a87fc5c4ac03f009
 workflow-type: tm+mt
-source-wordcount: '1171'
+source-wordcount: '1192'
 ht-degree: 0%
 
 ---
@@ -36,7 +36,7 @@ Als u bijvoorbeeld een profiel uitvoert dat lijkt op B2B Medium, kunt u de confi
 
 Een groot aantal product-SKU&#39;s, websites, klantgroepen of gedeelde catalogi is van invloed op de runtime van de indexeerders Product Price en Catalog Rule. Dit komt doordat standaard alle websites zijn toegewezen aan alle klantengroepen (gedeelde catalogi).
 
-Om indexatietijd te verminderen, kunt u [&#x200B; bepaalde websites van klantengroepen (gedeelde catalogi) uitsluiten &#x200B;](https://developer.adobe.com/commerce/php/development/components/indexing/optimization/#customer-group-limitations-by-websites).
+Om indexatietijd te verminderen, kunt u [ bepaalde websites van klantengroepen (gedeelde catalogi) uitsluiten ](https://developer.adobe.com/commerce/php/development/components/indexing/optimization/#customer-group-limitations-by-websites).
 
 ## Redis instellen
 
@@ -56,7 +56,7 @@ Adobe Commerce ondersteunt berichtrijen die zijn geïmplementeerd via [!DNL Rabb
 
 >[!WARNING]
 >
->De gespleten gegevensbestandeigenschap was [&#x200B; afgekeurd &#x200B;](https://community.magento.com/t5/Magento-DevBlog/Deprecation-of-Split-Database-in-Magento-Commerce/ba-p/465187) in versie 2.4.2 van Adobe Commerce. Zie [&#x200B; terugkeren van een gespleten gegevensbestand aan één enkel gegevensbestand &#x200B;](../configuration/storage/revert-split-database.md).
+>De functie voor gesplitste databases is vervangen in versie 2.4.2 van Adobe Commerce. Zie [ terugkeren van een gespleten gegevensbestand aan één enkel gegevensbestand ](../configuration/storage/revert-split-database.md).
 
 Adobe Commerce staat u toe om scalable gegevensbestandopslag te vormen om aan de behoeften van groeiende zaken te voldoen. U kunt drie aparte hoofddatabases instellen die specifieke domeinen bedienen:
 
@@ -68,13 +68,13 @@ Om extra gegevensbestanden te vormen, moet u een leeg gegevensbestand creëren e
 
 Hoofddatabase voor uitchecken
 
-```bash
+```shell
 bin/magento setup:db-schema:split-quote
 ```
 
 Voor OMS Master DB
 
-```bash
+```shell
 bin/magento setup:db-schema:split-sales
 ```
 
@@ -86,7 +86,7 @@ Naast hoofddatabases kunt u met [!DNL Commerce] een aantal slave-databases confi
 
 U kunt een slave-database toevoegen door de volgende opdracht uit te voeren:
 
-```bash
+```shell
 bin/magento setup:db-schema:add-slave
 ```
 
@@ -95,7 +95,7 @@ Dit bevel voert configuratieveranderingen uit maar vormt replicatie zelf niet. D
 Nadat u de hoofddatabase hebt gesplitst en slave-databases hebt ingesteld, reguleert [!DNL Commerce] automatisch verbindingen met een specifieke database. Daarbij worden beslissingen genomen op basis van het type aanvraag (POST, PUT, GET, enz.) en de gegevensbron. Als [!DNL Commerce] of de extensies hiervan schrijfbewerkingen uitvoeren op een GET-aanvraag, schakelt het systeem automatisch de verbinding van slave naar masterdatabase. Het werkt de zelfde manier met hoofdgegevensbestanden: zodra u met een controle-verwante lijst werkt, richt het systeem alle vragen aan een specifiek gegevensbestand opnieuw. Ondertussen, zullen alle op catalogus betrekking hebbende vragen naar het belangrijkste gegevensbestand gaan.
 
 Voor meer details over de configuratie en de voordelen van veelvoudige hoofd/slave configuratie, zie
-[&#x200B; Splitste oplossing van de gegevensbestandprestaties &#x200B;](../configuration/storage/multi-master.md).
+[ Splitste oplossing van de gegevensbestandprestaties ](../configuration/storage/multi-master.md).
 
 ## Media-inhoud serveren
 

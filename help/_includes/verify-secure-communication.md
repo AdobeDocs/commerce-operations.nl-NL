@@ -1,8 +1,8 @@
 ---
-source-git-commit: ca8dc855e0598d2c3d43afae2e055aa27035a09b
+source-git-commit: 48624d70761117ed0b9f8a7be913fce0572577b6
 workflow-type: tm+mt
 source-wordcount: '147'
-ht-degree: 1%
+ht-degree: 0%
 
 ---
 # Controleren of communicatie veilig is
@@ -16,19 +16,19 @@ Deze sectie bespreekt twee manieren om te verifiëren dat de Basisauthentificati
 
 Voer de volgende opdracht in:
 
-```bash
+```shell
 curl -i http://<hostname, ip, or localhost>:<proxy port>/_cluster/health
 ```
 
 Bijvoorbeeld, als u het bevel op de server van de onderzoeksmotor ingaat en uw volmacht gebruikt haven 8080:
 
-```bash
+```shell
 curl -i http://localhost:8080/_cluster/health
 ```
 
 Het volgende bericht geeft aan dat verificatie is mislukt:
 
-```
+```text
 HTTP/1.1 401 Unauthorized
 Date: Tue, 23 Feb 2016 20:35:29 GMT
 Content-Type: text/html
@@ -45,19 +45,19 @@ WWW-Authenticate: Basic realm="Restricted"
 
 Probeer nu het volgende bevel:
 
-```bash
+```shell
 curl -i -u <username>:<password> http://<hostname, ip, or localhost>:<proxy port>/_cluster/health
 ```
 
 Bijvoorbeeld:
 
-```bash
+```shell
 curl -i -u magento_elasticsearch:mypassword http://localhost:8080/_cluster/health
 ```
 
 Dit keer slaagt het bevel met een bericht gelijkend op het volgende:
 
-```
+```text
 HTTP/1.1 200 OK
 Date: Tue, 23 Feb 2016 20:38:03 GMT
 Content-Type: application/json; charset=UTF-8
@@ -68,7 +68,7 @@ Connection: keep-alive
 
 ## HTTP Basic-verificatie configureren in de beheerfunctie
 
-Voer de zelfde taken uit zoals die in [&#x200B; de motorconfiguratie van het Onderzoek &#x200B;](../configuration/search/configure-search-engine.md) *worden besproken behalve* klik **[!UICONTROL Yes]** van de **[!UICONTROL Enable HTTP Auth]** lijst en ga uw gebruikersbenaming en wachtwoord op de verstrekte gebieden in.
+Voer de zelfde taken uit zoals die in [ de motorconfiguratie van het Onderzoek ](../configuration/search/configure-search-engine.md) *worden besproken behalve* klik **[!UICONTROL Yes]** van de **[!UICONTROL Enable HTTP Auth]** lijst en ga uw gebruikersbenaming en wachtwoord op de verstrekte gebieden in.
 
 Klik op **[!UICONTROL Test Connection]** om te controleren of het werkt en klik vervolgens op **[!UICONTROL Save Config]** .
 

@@ -2,9 +2,9 @@
 title: Technische details
 description: Lees over de technische details van pijpleidingsplaatsing, types van configuraties, en geadviseerde werkschema's.
 exl-id: a396d241-f895-4414-92af-3abf3511e62a
-source-git-commit: 95ffff39d82cc9027fa633dffedf15193040802d
+source-git-commit: 48624d70761117ed0b9f8a7be913fce0572577b6
 workflow-type: tm+mt
-source-wordcount: '1254'
+source-wordcount: '1269'
 ht-degree: 0%
 
 ---
@@ -17,15 +17,15 @@ Dit onderwerp bespreekt technische implementatiedetails over pijpleidingsplaatsi
 - [Wijzigingen in de beheerder](#changes-in-the-admin)
 - [Uitsnede installeren en verwijderen](#install-and-remove-cron)
 
-Dit onderwerp bespreekt ook het [&#x200B; geadviseerde werkschema &#x200B;](#recommended-workflow) voor pijpleidingsplaatsing en verstrekt sommige voorbeelden om u te helpen begrijpen hoe het werkt.
+Dit onderwerp bespreekt ook het [ geadviseerde werkschema ](#recommended-workflow) voor pijpleidingsplaatsing en verstrekt sommige voorbeelden om u te helpen begrijpen hoe het werkt.
 
-Alvorens u begonnen wordt, herzie de [&#x200B; Vereisten voor uw ontwikkeling, bouwt, en productiesystemen &#x200B;](../deployment/prerequisites.md).
+Alvorens u begonnen wordt, herzie de [ Vereisten voor uw ontwikkeling, bouwt, en productiesystemen ](../deployment/prerequisites.md).
 
 ## Configuratiebeheer
 
 Om u toe te laten om de configuratie van uw ontwikkeling en productiesystemen te synchroniseren en te handhaven, gebruik de volgende met voeten getreden regeling.
 
-![&#x200B; Hoe de waarden van de configuratievariabele worden bepaald &#x200B;](../../assets/configuration/override-flow-diagram.png)
+![ Hoe de waarden van de configuratievariabele worden bepaald ](../../assets/configuration/override-flow-diagram.png)
 
 Zoals het diagram toont, worden de configuratiewaarden gebruikt in de volgende orde:
 
@@ -38,13 +38,13 @@ Zoals het diagram toont, worden de configuratiewaarden gebruikt in de volgende o
 
 De gedeelde configuratie wordt opgeslagen in `app/etc/config.php`, die in broncontrole zou moeten zijn.
 
-Plaats de gedeelde configuratie in Admin in uw ontwikkeling (of Adobe Commerce op de integratie van de wolkeninfrastructuur __) systeem en schrijf de configuratie aan `config.php` gebruikend het [`magento app:config:dump` bevel &#x200B;](../cli/export-configuration.md).
+Plaats de gedeelde configuratie in Admin in uw ontwikkeling (of Adobe Commerce op de integratie van de wolkeninfrastructuur __) systeem en schrijf de configuratie aan `config.php` gebruikend het [`magento app:config:dump` bevel ](../cli/export-configuration.md).
 
 ### De systeemspecifieke configuratie beheren
 
 De systeem-specifieke configuratie wordt opgeslagen in `app/etc/env.php`, die _niet_ in broncontrole zou moeten zijn.
 
-Plaats de systeem-specifieke configuratie in Admin in uw ontwikkelings (of Adobe Commerce op de integratie van de wolkeninfrastructuur) systeem en schrijf de configuratie aan `env.php` gebruikend [`magento app:config:dump` bevel &#x200B;](../cli/export-configuration.md).
+Plaats de systeem-specifieke configuratie in Admin in uw ontwikkelings (of Adobe Commerce op de integratie van de wolkeninfrastructuur) systeem en schrijf de configuratie aan `env.php` gebruikend [`magento app:config:dump` bevel ](../cli/export-configuration.md).
 
 Met deze opdracht worden ook gevoelige instellingen naar `env.php` geschreven.
 
@@ -55,11 +55,11 @@ De gevoelige configuratie wordt ook opgeslagen in `app/etc/env.php`.
 U kunt de gevoelige configuratie op om het even welke volgende manieren beheren:
 
 - Omgevingsvariabelen
-- Sparen de gevoelige configuratie in `env.php` op uw productiesysteem gebruikend het [`magento config:set:sensitive` bevel &#x200B;](../cli/set-configuration-values.md)
+- Sparen de gevoelige configuratie in `env.php` op uw productiesysteem gebruikend het [`magento config:set:sensitive` bevel ](../cli/set-configuration-values.md)
 
 ### Configuratie-instellingen vergrendeld in de beheerder
 
-Configuratie-instellingen in `config.php` of `env.php` zijn vergrendeld in de beheerfunctie. Deze instellingen kunnen dus niet worden gewijzigd in de beheerdersinstelling.
+Alle configuratie-instellingen in `config.php` of `env.php` zijn vergrendeld in de beheerder. Dat wil zeggen dat deze instellingen niet kunnen worden gewijzigd in Admin.
 Gebruik de opdracht [`magento config:set` of `magento config:set --lock`](../cli/export-configuration.md#config-cli-config-set) om de instellingen in de `config.php` - of `env.php` -bestanden te wijzigen.
 
 ## Commerce Admin
@@ -78,7 +78,7 @@ Admin vertoont het volgende gedrag terwijl in productiemodus:
 
      Het volgende cijfer toont een voorbeeld van de **Plaatsende Rekening** > **Lijst van de Plaats van de Interface** in Admin die slechts twee opgestelde scènes tonen:
 
-     ![&#x200B; u kunt de beheerderscène slechts veranderen in opgestelde scènes &#x200B;](../../assets/configuration/split-deploy-admin-locale.png)
+     ![ u kunt de beheerderscène slechts veranderen in opgestelde scènes ](../../assets/configuration/split-deploy-admin-locale.png)
 
 - U kunt de configuratie van de landinstelling voor geen enkel bereik wijzigen met de beheerfunctie.
 
@@ -88,7 +88,7 @@ Admin vertoont het volgende gedrag terwijl in productiemodus:
 
 ## Uitsnede installeren en verwijderen
 
-In versie 2.2 voor het eerst, helpen wij u opstelling uw kroonbaan door het [`magento cron:install` bevel &#x200B;](../cli/configure-cron-jobs.md) te verstrekken. Met deze opdracht stelt u een tab in als de gebruiker die de opdracht uitvoert.
+In versie 2.2 voor het eerst, helpen wij u opstelling uw kroonbaan door het [`magento cron:install` bevel ](../cli/configure-cron-jobs.md) te verstrekken. Met deze opdracht stelt u een tab in als de gebruiker die de opdracht uitvoert.
 
 U kunt ook de tab verwijderen met de opdracht `magento cron:remove` .
 
@@ -96,7 +96,7 @@ U kunt ook de tab verwijderen met de opdracht `magento cron:remove` .
 
 Het volgende diagram toont hoe wij u aanbevelen pijpleidingsplaatsing te gebruiken om de configuratie te beheren.
 
-![&#x200B; Aanbevolen werkschema van de pijpleidingsplaatsing &#x200B;](../../assets/configuration/split-deploy-workflow.png)
+![ Aanbevolen werkschema van de pijpleidingsplaatsing ](../../assets/configuration/split-deploy-workflow.png)
 
 ### Ontwikkelingssysteem
 
@@ -117,7 +117,7 @@ Op uw ontwikkelingssysteem:
 
 1. Voer de volgende opdrachten uit om gegenereerde php-code en statische elementbestanden tijdens de ontwikkeling te verwijderen:
 
-   ```bash
+   ```shell
    rm -r var/view_preprocessed/*
    rm -r pub/static/*/*
    rm -r generated/*/*
@@ -131,7 +131,7 @@ Nadat Commerce de opdrachten heeft uitgevoerd om de elementen te wissen, worden 
 
 ### Systeem bouwen
 
-Het bouwstijlsysteem compileert code en produceert statische meningsdossiers voor thema&#39;s die in Commerce worden geregistreerd. Er is geen verbinding met de Commerce-database nodig, maar alleen met de Commerce-codebase.
+Het bouwstijlsysteem compileert code en produceert statische meningsdossiers voor thema&#39;s die in Commerce worden geregistreerd. Er is geen verbinding met de Commerce-database nodig; alleen de Commerce-codebase nodig.
 
 Op uw bouwstijlsysteem:
 
@@ -142,7 +142,7 @@ Op uw bouwstijlsysteem:
 
 >[!INFO]
 >
->Zie [&#x200B; strategieën van de Plaatsing voor statische meningsdossiers &#x200B;](../cli/static-view-file-strategy.md).
+>Zie [ strategieën van de Plaatsing voor statische meningsdossiers ](../cli/static-view-file-strategy.md).
 
 ### Productiesysteem
 
@@ -202,7 +202,7 @@ Deze sectie bespreekt het aanbrengen van de volgende configuratieveranderingen:
 - Het veranderen van het standaard e-maildomein (**Slaat** > Montages > **Configuratie** > Klanten > **Configuratie van de Klant**) op
 - Het plaatsen van de Gebruikersnaam en het API wachtwoord van PayPal API (**opslag** > Montages > **Configuratie** > Verkoop > **de Methoden van de Betaling** > **PayPal** > **Vereiste Montages PayPal**)
 
-Nadat u de wijziging in Admin hebt aangebracht, voert u `bin/magento app:config:dump` uit op uw ontwikkelingssysteem. Dit keer worden niet al uw wijzigingen naar `config.php` geschreven. In feite worden alleen de website-, opslag- en winkelweergave naar dat bestand geschreven zoals in de volgende fragmenten wordt getoond.
+Nadat u de wijziging in Admin hebt aangebracht, voert u `bin/magento app:config:dump` uit op uw ontwikkelingssysteem. Dit keer worden niet al uw wijzigingen naar `config.php` geschreven. in feite worden alleen de website-, opslag- en winkelweergave naar dat bestand geschreven, zoals in de volgende fragmenten wordt getoond.
 
 ### config.php
 
@@ -287,10 +287,10 @@ De standaardinstelling voor de systeemspecifieke configuratie van het e-maildome
 
 De PayPal-instellingen worden naar geen van beide bestanden geschreven, omdat de opdracht `bin/magento app:config:dump` geen gevoelige instellingen schrijft. U moet de PayPal-instellingen op het productiesysteem instellen met de volgende opdrachten:
 
-```bash
+```shell
 bin/magento config:sensitive:set paypal/wpp/api_username <username>
 ```
 
-```bash
+```shell
 bin/magento config:sensitive:set paypal/wpp/api_password <password>
 ```

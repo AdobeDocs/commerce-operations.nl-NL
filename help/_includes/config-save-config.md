@@ -1,5 +1,5 @@
 ---
-source-git-commit: ca8dc855e0598d2c3d43afae2e055aa27035a09b
+source-git-commit: 48624d70761117ed0b9f8a7be913fce0572577b6
 workflow-type: tm+mt
 source-wordcount: '94'
 ht-degree: 0%
@@ -13,27 +13,27 @@ ht-degree: 0%
 
 1. Verandering in de toepassingswortel en stel het dumpbevel in werking.
 
-   ```bash
+   ```shell
    cd <Magento root dir>
    php bin/magento app:config:dump
    ```
 
    Als Commerce bijvoorbeeld is geïnstalleerd in `/var/www/html/magento2` , voert u het volgende in:
 
-   ```bash
+   ```shell
    cd /var/www/html/magento2
    php bin/magento app:config:dump
    ```
 
 1. Controleer of `app/etc/config.php` is bijgewerkt.
 
-   ```bash
+   ```shell
    git status
    ```
 
    Monsterrespons:
 
-   ```
+   ```text
    On branch m2.2_deploy
    Changed but not updated:
      (use "git add <file>..." to update what will be committed)
@@ -47,6 +47,6 @@ ht-degree: 0%
 
 1. Controleer uw wijzigingen in `app/etc/config.php` alleen om broncontrole te verkrijgen.
 
-   ```bash
+   ```shell
    git add app/etc/config.php && git commit -m "Updated shared configuration" && git push mconfig m2.2_deploy
    ```

@@ -1,18 +1,18 @@
 ---
-title: 'ACSD-63883: Het bevestigen van onjuiste &grave; items_count &grave; in  [!DNL GraphQL]  reactie voor [!UICONTROL Requisition List]'
-description: Pas ACSD-63883 flard toe om de kwestie te bevestigen waar [!UICONTROL Requisition List] onjuiste &grave; items_count &grave; in de  [!DNL GraphQL]  reactie terugkeert.
+title: 'ACSD-6383: Het bevestigen onjuiste ` items_count ` in  [!DNL GraphQL]  reactie voor [!UICONTROL Requisition List]'
+description: Pas ACSD-63883 flard toe om de kwestie te bevestigen waar [!UICONTROL Requisition List] onjuiste ` items_count ` in de  [!DNL GraphQL]  reactie terugkeert.
 feature: B2B, GraphQL
 role: Admin, Developer
 exl-id: 8946d7fb-558a-4867-a843-a61715416f25
 type: Troubleshooting
-source-git-commit: 7fdb02a6d89d50ea593c5fd99d78101f89198424
+source-git-commit: 48624d70761117ed0b9f8a7be913fce0572577b6
 workflow-type: tm+mt
-source-wordcount: '298'
+source-wordcount: '314'
 ht-degree: 0%
 
 ---
 
-# ACSD-63883: onjuiste `items_count` correcties in [!DNL GraphQL] reactie voor [!UICONTROL Requisition List]
+# ACSD-6383: Onjuist corrigeren `items_count` in [!DNL GraphQL] reactie voor [!UICONTROL Requisition List]
 
 De ACSD-63883-patch verhelpt het probleem waarbij de **[!UICONTROL Requisition List]** onjuiste `items_count` in het [!DNL GraphQL] -antwoord retourneert. Deze patch is beschikbaar wanneer [[!DNL Quality Patches Tool (QPT)]](/help/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches.md) 1.1.61 wordt geïnstalleerd. De patch-id is ACSD-63883. Het probleem wordt volgens de planning opgelost in Adobe Commerce B2B 1.5.3.
 
@@ -28,7 +28,7 @@ De ACSD-63883-patch verhelpt het probleem waarbij de **[!UICONTROL Requisition L
 
 >[!NOTE]
 >
->De patch kan van toepassing worden op andere versies met nieuwe [!DNL Quality Patches Tool] versies. Om te controleren of de patch compatibel is met uw Adobe Commerce-versie, werkt u het `magento/quality-patches` -pakket bij naar de meest recente versie en controleert u de compatibiliteit op de [[!DNL Quality Patches Tool] : zoek naar patches op de pagina &#x200B;](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html?lang=nl-NL) . Gebruik de patch-id als een zoekwoord om de patch te zoeken.
+>De patch kan van toepassing worden op andere versies met nieuwe [!DNL Quality Patches Tool] versies. Als u wilt controleren of de patch compatibel is met uw Adobe Commerce-versie, werkt u het `magento/quality-patches` -pakket bij naar de meest recente versie en controleert u de compatibiliteit op de [[!DNL Quality Patches Tool] : Zoek naar de pagina van flarden ](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html). Gebruik de patch-id als een zoekwoord om de patch te zoeken.
 
 ## Probleem
 
@@ -40,10 +40,10 @@ De **[!UICONTROL Requisition List]** retourneert een onjuiste `items_count` in h
 1. Schakel de functie B2B **[!UICONTROL Requisition List]** in.
 1. Maak een paar producten.
 1. Maak een klantenaccount.
-1. Klik op **[!UICONTROL Create new Requisition List]**.
+1. Klik op **[!UICONTROL Create new Requisition List]** .
 1. Verzend de mutatieaanvraag `addProductsToRequisitionList` [!DNL GraphQL] met een product om deze toe te voegen aan de [!UICONTROL Requisition List] .
 
-   ```
+   ```graphql
    mutation addProductsToRequisitionList(
    $requisitionListUid: ID!
    $requisitionListItems: [RequisitionListItemsInput!]!
@@ -63,22 +63,22 @@ De **[!UICONTROL Requisition List]** retourneert een onjuiste `items_count` in h
 
 **Verwachte resultaten**:
 
-* `items_count`: 4 moet worden geretourneerd in het antwoord.
+* `items_count` : 4 dient te worden gegeven in de respons.
 
 **Ware resultaten**:
 
-* `items_count`: 2 wordt geretourneerd in het antwoord.
+* `items_count` : 2 wordt geretourneerd in de reactie.
 
 ## De patch toepassen
 
 Om individuele flarden toe te passen, gebruik de volgende verbindingen afhankelijk van uw plaatsingsmethode:
 
-* Op locatie Adobe Commerce of Magento Open Source: [[!DNL Quality Patches Tool] > Gebruik &#x200B;](/help/tools/quality-patches-tool/usage.md) in de handleiding [!DNL Quality Patches Tool] .
-* Adobe Commerce op wolkeninfrastructuur: [&#x200B; Verbeteringen en Patches > Pas Patches &#x200B;](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html?lang=nl-NL) in Commerce op de gids van de Infrastructuur van de Wolk toe.
+* Adobe Commerce of Magento Open Source ter plaatse: [[!DNL Quality Patches Tool] > Gebruik ](/help/tools/quality-patches-tool/usage.md) in de [!DNL Quality Patches Tool] gids.
+* Adobe Commerce op cloudinfrastructuur: [ Verbeteringen en Patches > pas Patches ](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html) in Commerce op de gids van de Infrastructuur van de Wolk toe.
 
 
 ## Gerelateerde lezing
 
 Meer informatie over [!DNL Quality Patches Tool] vindt u in:
 
-* [[!DNL Quality Patches Tool]: Een zelfbedieningshulpmiddel voor kwaliteitspatches &#x200B;](/help/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches.md) in de gids van Hulpmiddelen.
+* [[!DNL Quality Patches Tool] : Een zelfbedieningshulpmiddel voor kwaliteitspatches ](/help/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches.md) in de gids van Hulpmiddelen.

@@ -3,16 +3,16 @@ title: Modules en extensies beheren (ontwikkelaar)
 description: Adobe Commerce-modules en -extensies beheren met behulp van de opdrachtregelinterface en Composer-pakketbeheer.
 feature: Upgrade, Extensions
 exl-id: 447eb317-83e1-4900-83a5-9ac1a008e752
-source-git-commit: 55512521254c49511100a557a4b00cf3ebee0311
+source-git-commit: 48624d70761117ed0b9f8a7be913fce0572577b6
 workflow-type: tm+mt
-source-wordcount: '131'
-ht-degree: 3%
+source-wordcount: '132'
+ht-degree: 0%
 
 ---
 
 # Modules en extensies beheren
 
-Ontwikkelaars die een bijdrage leveren, upgraden modules en extensies door hun versies op te geven in het Adobe Commerce `composer.json` -bestand. Als u geen bijdragende ontwikkelaar bent, zie [&#x200B; een verbetering &#x200B;](../implementation/perform-upgrade.md) uitvoeren.
+Ontwikkelaars die een bijdrage leveren, upgraden modules en extensies door hun versies op te geven in het Adobe Commerce `composer.json` -bestand. Als u geen bijdragende ontwikkelaar bent, zie [ een verbetering ](../implementation/perform-upgrade.md) uitvoeren.
 
 U kunt een sectie `require` toevoegen aan het `composer.json` -bestand of u kunt de opdracht `composer require` als volgt gebruiken:
 
@@ -24,13 +24,13 @@ U hebt de volgende opties:
 
 Opdrachtgebruik:
 
-```bash
+```shell
 composer show --all <vendor>/<name>
 ```
 
 Bijvoorbeeld:
 
-```bash
+```shell
 composer show --all example/module
 ```
 
@@ -38,13 +38,13 @@ composer show --all example/module
 
 Opdrachtgebruik:
 
-```bash
+```shell
 composer require <vendor>/<name>:<version>
 ```
 
 Bijvoorbeeld:
 
-```bash
+```shell
 composer require example/module:1.0.0
 ```
 
@@ -67,7 +67,7 @@ Wacht terwijl Composer gebiedsdelen bijwerkt en de module installeert.
 
 1. Los gebiedsdelen op en schrijf nauwkeurige versies aan het `composer.lock` dossier.
 
-   ```bash
+   ```shell
    composer update
    ```
 

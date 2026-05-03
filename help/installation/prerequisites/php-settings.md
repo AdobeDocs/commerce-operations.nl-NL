@@ -3,9 +3,9 @@ title: PHP-instellingen
 description: Volg deze stappen om vereiste PHP uitbreidingen te installeren en vereiste PHP montages voor op-gebouw installaties van Adobe Commerce te vormen.
 feature: Install, Configuration
 exl-id: 84064442-7053-42ab-a8a6-9b313e5efc78
-source-git-commit: 766226dc998aafe54bc84d77cabee6fb0a969e6c
+source-git-commit: e0c62575f71a6d212ba9dab33e38587950e3d783
 workflow-type: tm+mt
-source-wordcount: '757'
+source-wordcount: '847'
 ht-degree: 0%
 
 ---
@@ -17,9 +17,9 @@ In dit onderwerp wordt besproken hoe u vereiste PHP-opties kunt instellen.
 
 >[!NOTE]
 >
->Ondersteunde PHP-versies verschillen per Adobe Commerce-release. Zie [&#x200B; systeemvereisten &#x200B;](../system-requirements.md) voor de nauwkeurige PHP versies die door de versie worden gesteund u installeert.
+>Ondersteunde PHP-versies verschillen per Adobe Commerce-release. Zie [ systeemvereisten ](../system-requirements.md) voor de nauwkeurige PHP versies die door de versie worden gesteund u installeert.
 
-Voor de configuratiebegeleiding van de Wolk, zie [&#x200B; PHP montages &#x200B;](https://experienceleague.adobe.com/nl/docs/commerce-on-cloud/user-guide/configure/app/php-settings) in _Commerce op de gids van de Infrastructuur van de Wolk_.
+Voor de configuratiebegeleiding van de Wolk, zie [ PHP montages ](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/configure/app/php-settings) in _Commerce op de gids van de Infrastructuur van de Wolk_.
 
 ## PHP Process Control
 
@@ -29,13 +29,13 @@ Voor de configuratiebegeleiding van de Wolk, zie [&#x200B; PHP montages &#x200B;
 
 PHP is standaard geïnstalleerd op de meeste Linux distributies. In dit onderwerp wordt ervan uitgegaan dat u PHP al hebt geïnstalleerd. Om te controleren of PHP is geïnstalleerd, voert u het volgende in op de opdrachtregel:
 
-```bash
+```shell
 php -v
 ```
 
 Als PHP is geïnstalleerd, wordt een bericht weergegeven dat lijkt op het volgende:
 
-```
+```text
 PHP <supported-version> (cli) (built: <build-date>) (NTS)
 Copyright (c) The PHP Group
 Zend Engine v<matching-version>, Copyright (c) Zend Technologies
@@ -54,7 +54,7 @@ Geïnstalleerde extensies controleren:
 
 1. Geïnstalleerde modules weergeven.
 
-   ```bash
+   ```shell
    php -m
    ```
 
@@ -65,11 +65,11 @@ Geïnstalleerde extensies controleren:
 
 >[!WARNING]
 >
->Als u het oplossen van problemen een erfenismilieu door PHP [&#x200B; wordt beïnvloed insect 81101 &#x200B;](https://bugs.php.net/bug.php?id=81101), plaats `pcre.jit=0` in uw `php.ini` dossier om rond de kwestie te werken waar CSS niet laadt.
+>Als u het oplossen van problemen een erfenismilieu door PHP [ wordt beïnvloed insect 81101 ](https://bugs.php.net/bug.php?id=81101), plaats `pcre.jit=0` in uw `php.ini` dossier om rond de kwestie te werken waar CSS niet laadt.
 
-- Stel de tijdzone van het systeem in voor PHP. Anders werken fouten zoals de volgende weergave tijdens de installatie en bewerkingen met betrekking tot tijd zoals cron mogelijk niet:
+- Stel de systeemtijdzone voor PHP in. anders werken fouten zoals de volgende weergave tijdens de installatie en bewerkingen met betrekking tot tijd zoals cron mogelijk niet:
 
-```
+```text
 PHP Warning:  date(): It is not safe to rely on the system's timezone settings. [more messages follow]
 ```
 
@@ -88,11 +88,11 @@ PHP Warning:  date(): It is not safe to rely on the system's timezone settings. 
   realpath_cache_ttl=7200
   ```
 
-  Met deze instellingen kunnen PHP-processen paden naar bestanden in cache plaatsen in plaats van ze te bekijken bij het laden van de pagina. Zie [&#x200B; Prestaties die &#x200B;](https://www.php.net/manual/en/ini.core.php) in de PHP documentatie stempelen.
+  Met deze instellingen kunnen PHP-processen paden naar bestanden in cache plaatsen in plaats van ze te bekijken bij het laden van de pagina. Zie [ Prestaties die ](https://www.php.net/manual/en/ini.core.php) in de PHP documentatie stempelen.
 
-- Schakel [`opcache.save_comments` &#x200B;](https://www.php.net/manual/en/opcache.configuration.php#ini.opcache.save-comments) in. Dit is vereist voor Adobe Commerce 2.1 en hoger.
+- Schakel [`opcache.save_comments` ](https://www.php.net/manual/en/opcache.configuration.php#ini.opcache.save-comments) in. Dit is vereist voor Adobe Commerce 2.1 en hoger.
 
-  Adobe adviseert toelatend [&#x200B; PHP OPcache &#x200B;](https://www.php.net/manual/en/book.opcache.php) voor prestatiesredenen. De OPcache is in veel PHP distributies ingeschakeld.
+  Adobe adviseert toelatend [ PHP OPcache ](https://www.php.net/manual/en/book.opcache.php) voor prestatiesredenen. De OPcache is in veel PHP distributies ingeschakeld.
 
   Adobe Commerce 2.1 en hoger gebruiken PHP-codeopmerkingen voor het genereren van code.
 
@@ -106,13 +106,13 @@ In deze sectie wordt beschreven hoe u de configuratiebestanden vindt die nodig z
 
 ### Configuratiebestand `php.ini` zoeken
 
-Als u de webserverconfiguratie wilt zoeken, voert u een [`phpinfo.php` bestand &#x200B;](optional-software.md#create-phpinfophp) in uw webbrowser uit en zoekt u de `Loaded Configuration File` als volgt:
+Als u de webserverconfiguratie wilt zoeken, voert u een [`phpinfo.php` bestand ](optional-software.md#create-phpinfophp) in uw webbrowser uit en zoekt u de `Loaded Configuration File` als volgt:
 
-![&#x200B; PHP- infopagina &#x200B;](../../assets/installation/config_phpini-webserver.png)
+![ PHP- infopagina ](../../assets/installation/config_phpini-webserver.png)
 
 Als u de PHP opdrachtregelconfiguratie wilt zoeken, typt u
 
-```bash
+```shell
 php --ini | grep "Loaded Configuration File"
 ```
 
@@ -134,11 +134,11 @@ Gebruik de volgende richtlijnen om het te vinden:
 
   Als niet, gebruik het volgende bevel om van het de plaats te bepalen:
 
-  ```bash
+  ```shell
   sudo find / -name 'opcache.ini'
   ```
 
-- nginx-webserver met PHP-FPM: `/etc/php/<supported-php-version>/fpm/php.ini`
+- Nginx-webserver met PHP-FPM: `/etc/php/<supported-php-version>/fpm/php.ini`
 
 Als u meer dan één `opcache.ini` hebt, wijzigt u ze allemaal.
 
@@ -147,7 +147,7 @@ Als u meer dan één `opcache.ini` hebt, wijzigt u ze allemaal.
 PHP-opties instellen:
 
 1. Open een `php.ini` in een teksteditor.
-1. Bepaal de plaats van de tijdzone van uw server in de beschikbare [&#x200B; montages van de tijdzone &#x200B;](https://www.php.net/manual/en/timezones.php)
+1. Bepaal de plaats van de tijdzone van uw server in de beschikbare [ montages van de tijdzone ](https://www.php.net/manual/en/timezones.php)
 1. Zoek de volgende instelling en verwijder indien nodig de commentaarmarkering:
 
    ```conf
@@ -205,10 +205,9 @@ U stelt `opcache.ini` -opties als volgt in:
 
 Raadpleeg de volgende Adobe Commerce Support-artikelen voor hulp bij het oplossen van problemen met PHP:
 
-- [&#x200B; PHP versiefout of fout 404 wanneer het toegang tot van Adobe Commerce in browser &#x200B;](https://support.magento.com/hc/en-us/articles/360033117152-PHP-version-error-or-404-error-when-accessing-Magento-in-browser)
-- [&#x200B; PHP montagesfouten &#x200B;](https://experienceleague.adobe.com/nl/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/php-settings-errors)
-- [&#x200B; PHP crypt uitbreiding niet behoorlijk geïnstalleerd &#x200B;](https://experienceleague.adobe.com/nl/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/php-mcrypt-extension-not-installed-properly)
-- [&#x200B; PHP de kwesties van de de versiescontrole &#x200B;](https://experienceleague.adobe.com/nl/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/cron-readiness-check-issues)
-- [&#x200B; Gemeenschappelijke PHP Onherstelbare Fouten en oplossingen &#x200B;](https://experienceleague.adobe.com/nl/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/common-php-fatal-errors-and-solutions)
+- [PHP-versiefout of 404-fout bij toegang tot Adobe Commerce in een browser](https://support.magento.com/hc/en-us/articles/360033117152-PHP-version-error-or-404-error-when-accessing-Magento-in-browser)
+- [Fouten in PHP-instellingen](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/php-settings-errors)
+- [Problemen met gereedheid voor PHP-versie](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/cron-readiness-check-issues)
+- [Veelvoorkomende fatale fouten en oplossingen in PHP](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/common-php-fatal-errors-and-solutions)
 
 <!-- Last updated from includes: 2025-04-04 22:27:22 -->

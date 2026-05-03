@@ -1,20 +1,20 @@
 ---
-title: 'ACSD-60326: GraphQL-query voor status van klant [!UICONTROL Returns] geeft een fout'
+title: 'ACSD-60326: GraphQL-query op status van klant [!UICONTROL Returns] geeft een fout'
 description: Pas de ACSD-60326-patch toe om het Adobe Commerce-probleem op te lossen waarbij een fout optreedt in de GraphQL-query voor de status [!UICONTROL Returns] van de klant.
 feature: GraphQL, Returns, Customers
 role: Admin, Developer
 exl-id: 5cfd7e0d-8703-43a0-86d3-e69612347534
 type: Troubleshooting
-source-git-commit: 7fdb02a6d89d50ea593c5fd99d78101f89198424
+source-git-commit: 48624d70761117ed0b9f8a7be913fce0572577b6
 workflow-type: tm+mt
-source-wordcount: '464'
+source-wordcount: '529'
 ht-degree: 0%
 
 ---
 
-# ACSD-60326: GraphQL-query voor status van klant [!UICONTROL Returns] geeft een fout
+# ACSD-60326: GraphQL-query op status van klant [!UICONTROL Returns] geeft een fout
 
-De ACSD-60326-patch verhelpt het probleem waarbij een fout optreedt in de GraphQL-query voor de status [!UICONTROL Returns] van de klant. Deze patch is beschikbaar wanneer [[!DNL Quality Patches Tool (QPT)] &#x200B;](https://experienceleague.adobe.com/nl/docs/commerce-operations/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches) 1.1.51 wordt geïnstalleerd. De patch-id is ACSD-60326. Het probleem wordt volgens de planning opgelost in Adobe Commerce 2.4.8.
+De ACSD-60326-patch verhelpt het probleem waarbij een fout optreedt in de GraphQL-query voor de status [!UICONTROL Returns] van de klant. Deze patch is beschikbaar wanneer [[!DNL Quality Patches Tool (QPT)] ](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches) 1.1.51 wordt geïnstalleerd. De patch-id is ACSD-60326. Het probleem wordt volgens de planning opgelost in Adobe Commerce 2.4.8.
 
 ## Betrokken producten en versies
 
@@ -28,7 +28,7 @@ De ACSD-60326-patch verhelpt het probleem waarbij een fout optreedt in de GraphQ
 
 >[!NOTE]
 >
->De patch kan van toepassing worden op andere versies met nieuwe [!DNL Quality Patches Tool] versies. Om te controleren of de patch compatibel is met uw Adobe Commerce-versie, werkt u het `magento/quality-patches` -pakket bij naar de meest recente versie en controleert u de compatibiliteit op de [[!DNL Quality Patches Tool] : zoek naar patches op de pagina &#x200B;](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html?lang=nl-NL) . Gebruik de patch-id als een zoekwoord om de patch te zoeken.
+>De patch kan van toepassing worden op andere versies met nieuwe [!DNL Quality Patches Tool] versies. Als u wilt controleren of de patch compatibel is met uw Adobe Commerce-versie, werkt u het `magento/quality-patches` -pakket bij naar de meest recente versie en controleert u de compatibiliteit op de [[!DNL Quality Patches Tool] : Zoek naar de pagina van flarden ](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html). Gebruik de patch-id als een zoekwoord om de patch te zoeken.
 
 ## Probleem
 
@@ -53,7 +53,7 @@ GraphQL-query over de status van de klant [!UICONTROL Returns] geeft een fout.
       * Plaats **[!UICONTROL Return Reason]** aan *uit Dienst*
       * Plaats **[!UICONTROL Item Condition]** aan *Geopend*
       * Plaats **[!UICONTROL Resolution]** aan *Terugkeer*
-   * Klik op **[!UICONTROL Submit Returns]**.
+   * Klik op **[!UICONTROL Submit Returns]** .
 1. Open **[!UICONTROL Returns]** en selecteer **[!UICONTROL Return Items]** aan de linkerkant.
    * Plaats **[!UICONTROL Authorized]** = *1* voor beide producten
    * Plaats **[!UICONTROL Status]** als *Gemachtigd* voor *WSH12-32-Paars*
@@ -73,7 +73,7 @@ GraphQL-query over de status van de klant [!UICONTROL Returns] geeft een fout.
 
 1. Autoriseer met het ontvangen teken en voer volgende vraag uit:
 
-   ```
+   ```graphql
    {
    customer {
        returns(pageSize: 20, currentPage: 1) {
@@ -97,7 +97,7 @@ Er wordt geen fout weergegeven in de query. Het statuut van de tweede terugkeer 
 
 De query retourneert een interne serverfout:
 
-```
+```json
     {
     "errors": [
         {
@@ -145,14 +145,14 @@ De query retourneert een interne serverfout:
 
 Om individuele flarden toe te passen, gebruik de volgende verbindingen afhankelijk van uw plaatsingsmethode:
 
-* Op locatie Adobe Commerce of Magento Open Source: [[!DNL Quality Patches Tool] > Gebruik &#x200B;](/help/tools/quality-patches-tool/usage.md) in de handleiding [!DNL Quality Patches Tool] .
-* Adobe Commerce op wolkeninfrastructuur: [&#x200B; Verbeteringen en Patches > Pas Patches &#x200B;](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html?lang=nl-NL) in Commerce op de gids van de Infrastructuur van de Wolk toe.
+* Adobe Commerce of Magento Open Source ter plaatse: [[!DNL Quality Patches Tool] > Gebruik ](/help/tools/quality-patches-tool/usage.md) in de [!DNL Quality Patches Tool] gids.
+* Adobe Commerce op cloudinfrastructuur: [ Verbeteringen en Patches > pas Patches ](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html) in Commerce op de gids van de Infrastructuur van de Wolk toe.
 
 ## Gerelateerde lezing
 
 Meer informatie over [!DNL Quality Patches Tool] vindt u in:
 
-* [[!DNL Quality Patches Tool]  vrijgegeven: een nieuw hulpmiddel om kwaliteitspatches &#x200B;](https://experienceleague.adobe.com/nl/docs/commerce-operations/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches) in de steunkennisbasis zelf-te dienen.
-* [&#x200B; Controle als het flard voor uw kwestie van Adobe Commerce beschikbaar is gebruikend  [!DNL Quality Patches Tool]](/help/tools/quality-patches-tool/patches-available-in-qpt/check-patch-for-magento-issue-with-magento-quality-patches.md) in de [!UICONTROL Quality Patches Tool] gids.
+* [[!DNL Quality Patches Tool]  vrijgegeven: een nieuw hulpmiddel om kwaliteitsflarden ](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches) in de steunkennisbasis zelf-te dienen.
+* [ Controle als het flard voor uw kwestie van Adobe Commerce beschikbaar is gebruikend  [!DNL Quality Patches Tool]](/help/tools/quality-patches-tool/patches-available-in-qpt/check-patch-for-magento-issue-with-magento-quality-patches.md) in de [!UICONTROL Quality Patches Tool] gids.
 
-Voor informatie over andere flarden beschikbaar in QPT, verwijs naar [[!DNL Quality Patches Tool]: Onderzoek naar flarden &#x200B;](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html?lang=nl-NL) in de [!DNL Quality Patches Tool] gids.
+Zie [[!DNL Quality Patches Tool] voor meer informatie over andere patches die beschikbaar zijn in QPT: Zoek naar flarden ](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html) in de [!DNL Quality Patches Tool] gids.

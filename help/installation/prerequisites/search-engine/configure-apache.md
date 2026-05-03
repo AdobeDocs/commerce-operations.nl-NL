@@ -3,9 +3,9 @@ title: Apache configureren voor uw zoekmachine
 description: Voer de volgende stappen uit om een zoekmachine te configureren met de Apache-webserver voor installaties in de bedrijfsruimten van Adobe Commerce.
 feature: Install, Search
 exl-id: b35c95a7-0c00-48e5-b37d-7c9e17feebec
-source-git-commit: 55512521254c49511100a557a4b00cf3ebee0311
+source-git-commit: 48624d70761117ed0b9f8a7be913fce0572577b6
 workflow-type: tm+mt
-source-wordcount: '643'
+source-wordcount: '657'
 ht-degree: 0%
 
 ---
@@ -18,9 +18,9 @@ ht-degree: 0%
 
 >[!NOTE]
 >
->Ondersteuning voor OpenSearch is toegevoegd in 2.4.4. OpenSearch is een compatibele vork van Elasticsearch. Zie [&#x200B; Elasticsearch migreren aan OpenSearch &#x200B;](../../../upgrade/prepare/opensearch-migration.md) voor meer informatie.
+>Ondersteuning voor OpenSearch is toegevoegd in 2.4.4. OpenSearch is een compatibele vork van Elasticsearch. Zie [ Elasticsearch migreren aan OpenSearch ](../../../upgrade/prepare/opensearch-migration.md) voor meer informatie.
 
-Deze sectie bespreekt hoe te om Apache als *onveilige* volmacht te vormen zodat Adobe Commerce een onderzoeksmotor kan gebruiken die op deze server loopt. Deze sectie bespreekt vestigingHTTP Basis geen authentificatie; dat in [&#x200B; Veilige mededeling met Apache &#x200B;](#secure-communication-with-apache) wordt besproken.
+Deze sectie bespreekt hoe te om Apache als *onveilige* volmacht te vormen zodat Adobe Commerce een onderzoeksmotor kan gebruiken die op deze server loopt. In deze sectie wordt het instellen van HTTP Basic-verificatie niet besproken. dat in [ Veilige communicatie met Apache ](#secure-communication-with-apache) wordt besproken.
 
 >[!NOTE]
 >
@@ -32,7 +32,7 @@ Deze sectie bespreekt hoe te om een volmacht te vormen gebruikend een virtuele g
 
 1. Schakel `mod_proxy` als volgt in:
 
-   ```bash
+   ```shell
    a2enmod proxy_http
    ```
 
@@ -54,25 +54,25 @@ Deze sectie bespreekt hoe te om een volmacht te vormen gebruikend een virtuele g
 
 1. Apache opnieuw starten:
 
-   ```bash
+   ```shell
    service apache2 restart
    ```
 
 1. Verifieer de volmachtswerken door het volgende bevel in te gaan:
 
-   ```bash
+   ```shell
    curl -i http://localhost:<proxy port>/_cluster/health
    ```
 
    Als u bijvoorbeeld Elasticsearch gebruikt en uw proxy poort 8080 gebruikt:
 
-   ```bash
+   ```shell
    curl -i http://localhost:8080/_cluster/health
    ```
 
    Berichten die op de volgende vertoning lijken om op succes te wijzen:
 
-   ```
+   ```text
    HTTP/1.1 200 OK
    Date: Tue, 23 Feb 2019 20:38:03 GMT
    Content-Type: application/json; charset=UTF-8
@@ -84,9 +84,9 @@ Deze sectie bespreekt hoe te om een volmacht te vormen gebruikend een virtuele g
 
 ## Beveiligde communicatie met Apache
 
-Deze sectie bespreekt hoe te om communicatie tussen Apache en de onderzoeksmotor te beveiligen gebruikend [&#x200B; Basisauthentificatie van HTTP &#x200B;](https://datatracker.ietf.org/doc/html/rfc2617) met Apache. Raadpleeg een van de volgende bronnen voor meer opties:
+Deze sectie bespreekt hoe te om communicatie tussen Apache en de onderzoeksmotor te beveiligen gebruikend [ Basisauthentificatie van HTTP ](https://datatracker.ietf.org/doc/html/rfc2617) met Apache. Raadpleeg een van de volgende bronnen voor meer opties:
 
-* [&#x200B; Apache 2.4 authentificatie en vergunningsleerprogramma &#x200B;](https://httpd.apache.org/docs/2.4/howto/auth.html)
+* [Zelfstudie over verificatie en autorisatie voor Apache 2.4](https://httpd.apache.org/docs/2.4/howto/auth.html)
 
 Zie een van de volgende secties:
 
@@ -103,11 +103,11 @@ Controleer eerst of het hulpprogramma Apache `htpasswd` als volgt is geïnstalle
 
 1. Voer de volgende opdracht in om te bepalen of `htpasswd` al is geïnstalleerd:
 
-   ```bash
+   ```shell
    which htpasswd
    ```
 
-   Als een pad wordt weergegeven, wordt dit geïnstalleerd. Als de opdracht geen uitvoer retourneert, wordt `htpasswd` niet geïnstalleerd.
+   Als een pad wordt weergegeven, wordt het geïnstalleerd; als de opdracht geen uitvoer retourneert, wordt `htpasswd` niet geïnstalleerd.
 
 1. Indien nodig installeert u `htpasswd` :
 
@@ -118,11 +118,11 @@ Controleer eerst of het hulpprogramma Apache `htpasswd` als volgt is geïnstalle
 
 Voer de volgende opdrachten in als een gebruiker met `root` -rechten:
 
-```bash
+```shell
 mkdir -p /usr/local/apache/password
 ```
 
-```bash
+```shell
 htpasswd -c /usr/local/apache/password/.<password file name> <username>
 ```
 
@@ -130,11 +130,11 @@ Wanneer
 
 * `<username>` kan zijn:
 
-   * Uitsnijden instellen: de gebruiker van de webserver of een andere gebruiker.
+   * Uitsnede instellen: de webservergebruiker of een andere gebruiker.
 
   In dit voorbeeld gebruiken wij de gebruiker van de Webserver, maar de keus van gebruiker is aan u.
 
-   * Elasticsearch instellen: de gebruiker krijgt in dit voorbeeld de naam `magento_elasticsearch`
+   * Elasticsearch instellen: de gebruiker heeft de naam `magento_elasticsearch` in dit voorbeeld
 
 * `<password file name>` moet een verborgen bestand zijn (begint met `.` ) en moet de naam van de gebruiker weerspiegelen. Zie de voorbeelden verderop in deze sectie voor meer informatie.
 
@@ -142,25 +142,25 @@ Volg de aanwijzingen op het scherm om een wachtwoord voor de gebruiker te maken.
 
 #### Voorbeelden
 
-**Voorbeeld 1: kruin**
-U moet verificatie instellen voor slechts één gebruiker voor uitsnijden; in dit voorbeeld gebruiken we de gebruiker van de webserver. Voer de volgende opdrachten in om een wachtwoordbestand voor de gebruiker van de webserver te maken:
+**Voorbeeld 1: kraan**
+U moet authentificatie voor slechts één gebruiker voor cron plaatsen; in dit voorbeeld gebruiken we de webservergebruiker. Voer de volgende opdrachten in om een wachtwoordbestand voor de gebruiker van de webserver te maken:
 
-```bash
+```shell
 mkdir -p /usr/local/apache/password
 ```
 
-```bash
+```shell
 htpasswd -c /usr/local/apache/password/.htpasswd apache
 ```
 
 **Voorbeeld 2: Elasticsearch**
 U moet verificatie instellen voor twee gebruikers: één met toegang tot nginx en één met toegang tot Elasticsearch. Voer de volgende opdrachten in om wachtwoordbestanden voor deze gebruikers te maken:
 
-```bash
+```shell
 mkdir -p /usr/local/apache/password
 ```
 
-```bash
+```shell
 htpasswd -c /usr/local/apache/password/.htpasswd_elasticsearch magento_elasticsearch
 ```
 
@@ -168,13 +168,13 @@ htpasswd -c /usr/local/apache/password/.htpasswd_elasticsearch magento_elasticse
 
 Als u nog een gebruiker aan het wachtwoordbestand wilt toevoegen, voert u de volgende opdracht in als een gebruiker met `root` -rechten:
 
-```bash
+```shell
 htpasswd /usr/local/apache/password/.htpasswd <username>
 ```
 
 ### Beveiligde communicatie met Apache
 
-Deze sectie bespreekt hoe te opstelling [&#x200B; de Basisauthentificatie van HTTP &#x200B;](https://httpd.apache.org/docs/2.2/howto/auth.html). Als u TLS en HTTP Basic-verificatie gebruikt, kan niemand communicatie met Elasticsearch of OpenSearch of met uw toepassingsserver onderscheppen.
+Deze sectie bespreekt hoe te opstelling [ de Basisauthentificatie van HTTP ](https://httpd.apache.org/docs/2.2/howto/auth.html). Als u TLS en HTTP Basic-verificatie gebruikt, kan niemand communicatie met Elasticsearch of OpenSearch of met uw toepassingsserver onderscheppen.
 
 In deze sectie wordt besproken hoe u kunt opgeven wie toegang heeft tot de Apache-server.
 

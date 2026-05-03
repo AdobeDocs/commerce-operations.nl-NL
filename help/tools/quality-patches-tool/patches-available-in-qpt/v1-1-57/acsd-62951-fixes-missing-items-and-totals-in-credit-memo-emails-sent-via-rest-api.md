@@ -1,18 +1,18 @@
 ---
-title: 'ACSD-62951: verhelpt ontbrekende items en totalen in [!UICONTROL Credit Memo] e-mails die via REST API worden verzonden'
+title: 'ACSD-62951: Oplossingen voor ontbrekende items en totalen in [!UICONTROL Credit Memo] e-mails die via REST API worden verzonden'
 description: Pas de ACSD-62951-patch toe om het Adobe Commerce-probleem op te lossen waarbij het [!UICONTROL Credit Memo] -e-mailbericht wordt verzonden zonder de orderitems en totalen op te nemen.
 feature: REST
 role: Admin, Developer
 exl-id: e0c6d4c1-ecaf-46e7-af2d-05a148970d71
 type: Troubleshooting
-source-git-commit: 7fdb02a6d89d50ea593c5fd99d78101f89198424
+source-git-commit: 48624d70761117ed0b9f8a7be913fce0572577b6
 workflow-type: tm+mt
-source-wordcount: '344'
+source-wordcount: '362'
 ht-degree: 0%
 
 ---
 
-# ACSD-62951: verhelpt ontbrekende items en totalen in *[!UICONTROL Credit Memo]* e-mails die via REST API worden verzonden
+# ACSD-62951: Oplossingen voor ontbrekende items en totalen in *[!UICONTROL Credit Memo]* e-mails die via REST API worden verzonden
 
 De markering ACSD-62951 verhelpt de kwestie waar [!UICONTROL Credit Memo] e-mail wordt verzonden zonder de orde punten en totalen te omvatten. Deze patch is beschikbaar wanneer [[!DNL Quality Patches Tool (QPT)]](/help/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches.md) 1.1.57 wordt geïnstalleerd. De patch-id is ACSD-62951. Het probleem wordt volgens de planning opgelost in Adobe Commerce 2.4.8.
 
@@ -28,7 +28,7 @@ Adobe Commerce (alle implementatiemethoden) 2.4.4 - 2.4.7-p3
 
 >[!NOTE]
 >
->De patch kan van toepassing worden op andere versies met nieuwe [!DNL Quality Patches Tool] versies. Om te controleren of de patch compatibel is met uw Adobe Commerce-versie, werkt u het `magento/quality-patches` -pakket bij naar de meest recente versie en controleert u de compatibiliteit op de [[!DNL Quality Patches Tool] : zoek naar patches op de pagina &#x200B;](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html?lang=nl-NL) . Gebruik de patch-id als een zoekwoord om de patch te zoeken.
+>De patch kan van toepassing worden op andere versies met nieuwe [!DNL Quality Patches Tool] versies. Als u wilt controleren of de patch compatibel is met uw Adobe Commerce-versie, werkt u het `magento/quality-patches` -pakket bij naar de meest recente versie en controleert u de compatibiliteit op de [[!DNL Quality Patches Tool] : Zoek naar de pagina van flarden ](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html). Gebruik de patch-id als een zoekwoord om de patch te zoeken.
 
 ## Probleem
 
@@ -43,7 +43,7 @@ De *[!UICONTROL Credit Memo]* -e-mail die wordt verzonden wanneer een creditmemo
    1. Eindpunt: `POST V1/order/:orderId/refund`
    1. Vragen om lading:
 
-      ```
+      ```json
       {  
           "notify": true,  
           "items": [  
@@ -67,12 +67,12 @@ Het e-mailbericht van *[!UICONTROL Credit Memo]* bevat geen items of totalen, wa
 
 Om individuele flarden toe te passen, gebruik de volgende verbindingen afhankelijk van uw plaatsingsmethode:
 
-* Op locatie Adobe Commerce of Magento Open Source: [[!DNL Quality Patches Tool] > Gebruik &#x200B;](/help/tools/quality-patches-tool/usage.md) in de handleiding [!DNL Quality Patches Tool] .
-* Adobe Commerce op wolkeninfrastructuur: [&#x200B; Verbeteringen en Patches > Pas Patches &#x200B;](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html?lang=nl-NL) in Commerce op de gids van de Infrastructuur van de Wolk toe.
+* Adobe Commerce of Magento Open Source ter plaatse: [[!DNL Quality Patches Tool] > Gebruik ](/help/tools/quality-patches-tool/usage.md) in de [!DNL Quality Patches Tool] gids.
+* Adobe Commerce op cloudinfrastructuur: [ Verbeteringen en Patches > pas Patches ](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html) in Commerce op de gids van de Infrastructuur van de Wolk toe.
 
 
 ## Gerelateerde lezing
 
 Meer informatie over [!DNL Quality Patches Tool] vindt u in:
 
-* [[!DNL Quality Patches Tool]: Een zelfbedieningshulpmiddel voor kwaliteitspatches &#x200B;](/help/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches.md) in de gids van Hulpmiddelen.
+* [[!DNL Quality Patches Tool] : Een zelfbedieningshulpmiddel voor kwaliteitspatches ](/help/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches.md) in de gids van Hulpmiddelen.

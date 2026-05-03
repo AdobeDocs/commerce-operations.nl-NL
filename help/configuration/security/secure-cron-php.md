@@ -1,12 +1,12 @@
 ---
 title: Beveiligde uitsnede PHP
-description: Beperk wie het bestand cron.php in een browser kan uitvoeren.
+description: Leer hoe u browsertoegang tot pub/cron.php kunt beperken en Adobe Commerce-taken kunt beveiligen tegen ongeoorloofde of kwaadaardige uitvoering van bewerkingen.
 feature: Configuration, Security
 exl-id: c81fcab2-1ee3-4ec7-a300-0a416db98614
-source-git-commit: 56a2461edea2799a9d569bd486f995b0fe5b5947
+source-git-commit: 41b8d77793f1c24f08ff7e6a2d35826a62477534
 workflow-type: tm+mt
-source-wordcount: '924'
-ht-degree: 1%
+source-wordcount: '975'
+ht-degree: 0%
 
 ---
 
@@ -23,7 +23,7 @@ De bouwbaan stelt verscheidene geplande taken in werking en is een essentieel de
 
 >[!INFO]
 >
->Verwijs naar [&#x200B; vormen en in werking stellen kruin &#x200B;](../cli/configure-cron-jobs.md#run-cron-from-the-command-line) voor meer informatie over cron groepen.
+>Verwijs naar [ vormen en in werking stellen kruin ](../cli/configure-cron-jobs.md#run-cron-from-the-command-line) voor meer informatie over cron groepen.
 
 U kunt een uitsnijdtaak op de volgende manieren uitvoeren:
 
@@ -38,8 +38,8 @@ U kunt een uitsnijdtaak op de volgende manieren uitvoeren:
 
 In deze sectie wordt beschreven hoe u de uitsnede kunt beveiligen met HTTP Basic-verificatie met Apache. Deze instructies zijn gebaseerd op Apache 2.2 met CentOS 6. Raadpleeg een van de volgende bronnen voor meer informatie:
 
-- [&#x200B; Apache 2.2 authentificatie en vergunningsleerprogramma &#x200B;](https://httpd.apache.org/docs/2.2/howto/auth.html)
-- [&#x200B; Apache 2.4 authentificatie en vergunningsleerprogramma &#x200B;](https://httpd.apache.org/docs/2.4/howto/auth.html)
+- [Zelfstudie over verificatie en autorisatie voor Apache 2.2](https://httpd.apache.org/docs/2.2/howto/auth.html)
+- [Zelfstudie over verificatie en autorisatie voor Apache 2.4](https://httpd.apache.org/docs/2.4/howto/auth.html)
 
 ### Een wachtwoordbestand maken
 
@@ -47,11 +47,11 @@ Uit veiligheidsoverwegingen kunt u het wachtwoordbestand overal vinden, behalve 
 
 Voer de volgende opdrachten in als een gebruiker met `root` -rechten:
 
-```bash
+```shell
 mkdir -p /usr/local/apache/password
 ```
 
-```bash
+```shell
 htpasswd -c /usr/local/apache/password/passwords <username>
 ```
 
@@ -61,7 +61,7 @@ Volg de aanwijzingen op het scherm om een wachtwoord voor de gebruiker te maken.
 
 Als u nog een gebruiker aan het wachtwoordbestand wilt toevoegen, voert u de volgende opdracht in als een gebruiker met `root` -rechten:
 
-```bash
+```shell
 htpasswd /usr/local/apache/password/passwords <username>
 ```
 
@@ -71,13 +71,13 @@ U kunt toestaan meer dan één gebruiker om te lopen door deze gebruikers aan uw
 
 Een andere gebruiker toevoegen aan uw wachtwoordbestand:
 
-```bash
+```shell
 htpasswd /usr/local/apache/password/passwords <username>
 ```
 
 Als u een geoorloofde groep wilt maken, maakt u overal buiten de hoofdmap van de webserver een groepsbestand. In het groepsbestand worden de naam van de groep en de gebruikers in de groep opgegeven. In dit voorbeeld is de groepsnaam `MagentoCronGroup` .
 
-```bash
+```shell
 vim /usr/local/apache/password/group
 ```
 
@@ -120,7 +120,7 @@ Uitsnijden beveiligen in `.htaccess` -bestand:
    ```
 
 1. Sla de wijzigingen in `.htaccess` op en sluit de teksteditor af.
-1. Ga met [&#x200B; verder verifiëren kruin veilig &#x200B;](#verify-cron-is-secure) is.
+1. Ga met [ verder verifiëren kruin veilig ](#verify-cron-is-secure) is.
 
 ## Beveiligde uitsnede met Nginx
 
@@ -133,14 +133,14 @@ In deze sectie wordt besproken hoe u de uitsnede kunt beveiligen met behulp van 
 
 Raadpleeg een van de volgende bronnen om een wachtwoordbestand te maken voordat u doorgaat:
 
-- [&#x200B; hoe te Authentificatie van het Wachtwoord van de opstelling met Nginx op Ubuntu 14.04 (DigitalOcean) &#x200B;](https://www.digitalocean.com/community/tutorials/how-to-set-up-password-authentication-with-nginx-on-ubuntu-14-04)
-- [&#x200B; BasisHTTP Authentificatie met Nginx (hoe te forge) &#x200B;](https://www.howtoforge.com/basic-http-authentication-with-nginx)
+- [Hoe te om de Authentificatie van het Wachtwoord van de Opstelling met Nginx op Ubuntu 14.04 (DigitaleOceaan) te vestigen](https://www.digitalocean.com/community/tutorials/how-to-set-up-password-authentication-with-nginx-on-ubuntu-14-04)
+- [Standaard HTTP-verificatie met Nginx (howtoforge)](https://www.howtoforge.com/basic-http-authentication-with-nginx)
 
 ### Uitsnede beveiligen in `nginx.conf.sample`
 
 Commerce beschikt over een geoptimaliseerd voorbeeld-nginx-configuratiebestand uit het vak. We raden u aan het te wijzigen om de afbeelding te beveiligen.
 
-1. Voeg het volgende toe aan uw [`nginx.conf.sample` &#x200B;](https://github.com/magento/magento2/blob/2.4/nginx.conf.sample) dossier:
+1. Voeg het volgende toe aan uw [`nginx.conf.sample` ](https://github.com/magento/magento2/blob/2.4/nginx.conf.sample) dossier:
 
    ```conf
    #Securing cron
@@ -163,11 +163,11 @@ Commerce beschikt over een geoptimaliseerd voorbeeld-nginx-configuratiebestand u
 
 &#x200B;1. Start de engine opnieuw:
 
-```bash
+```shell
 systemctl restart nginx
 ```
 
-1. Ga met [&#x200B; verder verifiëren kruin veilig &#x200B;](#verify-cron-is-secure) is.
+1. Ga met [ verder verifiëren kruin veilig ](#verify-cron-is-secure) is.
 
 ## Controleren of de uitsnede beveiligd is
 
@@ -183,7 +183,7 @@ De eenvoudigste manier om te controleren of `pub/cron.php` veilig is, is om te c
 
    Bijvoorbeeld:
 
-   ```bash
+   ```shell
    mysql -u magento -p
    ```
 
@@ -219,7 +219,7 @@ De eenvoudigste manier om te controleren of `pub/cron.php` veilig is, is om te c
 
 1. Voer desgevraagd de naam en het wachtwoord van een geautoriseerde gebruiker in. In de volgende afbeelding ziet u een voorbeeld.
 
-   ![&#x200B; Authorizing cron using HTTP Basic &#x200B;](../../assets/configuration/cron-auth.png)
+   ![ Authorizing cron using HTTP Basic ](../../assets/configuration/cron-auth.png)
 
 1. Controleer of er rijen aan de tabel zijn toegevoegd:
 
@@ -311,4 +311,4 @@ https://magento.example.com/magento2/pub/cron.php?group=index
 
 >[!INFO]
 >
->U moet tweemaal uitsnijden uitvoeren: eerst om taken te ontdekken en opnieuw om de taken zelf uit te voeren. Verwijs naar [&#x200B; vormen en in werking stellen kruin &#x200B;](../cli/configure-cron-jobs.md) voor meer informatie over cron groepen.
+>U moet de bewerking tweemaal uitvoeren: eerst om taken te ontdekken om te lopen en opnieuw om de taken zelf in werking te stellen. Verwijs naar [ vormen en in werking stellen kruin ](../cli/configure-cron-jobs.md) voor meer informatie over cron groepen.

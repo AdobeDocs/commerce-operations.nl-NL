@@ -5,14 +5,14 @@ feature: GraphQL, User Account
 role: Admin, Developer
 type: Troubleshooting
 exl-id: a97daceb-98f6-4bb8-9847-692af700c0fd
-source-git-commit: 7054a5286f01e26e324401f4d8505e4e0faed93e
+source-git-commit: 48624d70761117ed0b9f8a7be913fce0572577b6
 workflow-type: tm+mt
-source-wordcount: '353'
+source-wordcount: '369'
 ht-degree: 0%
 
 ---
 
-# ACSD-65254: E-mailmelding wordt niet verzonden na het bijwerken van de e-mail van de klant via `updateCustomerEmail` [!DNL GraphQL] -mutatie
+# ACSD-65254: E-mailmelding niet verzonden na bijwerken van e-mail van klant via `updateCustomerEmail` [!DNL GraphQL] -mutatie
 
 De ACSD-65254-patch verhelpt het probleem dat e-mailmeldingen niet naar klanten zijn verzonden nadat ze hun e-mailadressen op hun accounts hadden bijgewerkt met de mutatie `updateCustomerEmail` [!DNL GraphQL] . Deze patch is beschikbaar wanneer [[!DNL Quality Patches Tool (QPT)]](/help/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches.md) 1.1.65 wordt geïnstalleerd. De patch-id is ACSD-65254. Dit probleem wordt volgens de planning opgelost in Adobe Commerce 2.4.9.
 
@@ -28,7 +28,7 @@ De ACSD-65254-patch verhelpt het probleem dat e-mailmeldingen niet naar klanten 
 
 >[!NOTE]
 >
->De patch kan van toepassing worden op andere versies met nieuwe [!DNL Quality Patches Tool] versies. Om te controleren of de patch compatibel is met uw Adobe Commerce-versie, werkt u het `magento/quality-patches` -pakket bij naar de meest recente versie en controleert u de compatibiliteit op de [[!DNL Quality Patches Tool] : zoek naar patches op de pagina &#x200B;](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html?lang=nl-NL) . Gebruik de patch-id als een zoekwoord om de patch te zoeken.
+>De patch kan van toepassing worden op andere versies met nieuwe [!DNL Quality Patches Tool] versies. Als u wilt controleren of de patch compatibel is met uw Adobe Commerce-versie, werkt u het `magento/quality-patches` -pakket bij naar de meest recente versie en controleert u de compatibiliteit op de [[!DNL Quality Patches Tool] : Zoek naar de pagina van flarden ](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html). Gebruik de patch-id als een zoekwoord om de patch te zoeken.
 
 ## Probleem
 
@@ -38,7 +38,7 @@ E-mailmeldingen zijn niet naar klanten verzonden nadat ze hun e-mailadressen had
 
 1. Gebruiker maken met onderstaande mutatie:
 
-   ```
+   ```graphql
    mutation {
        createCustomer(
            input: {
@@ -58,7 +58,7 @@ E-mailmeldingen zijn niet naar klanten verzonden nadat ze hun e-mailadressen had
 
 1. Genereer een token voor de eerder gemaakte gebruiker en gebruik dit als token voor toonder:
 
-   ```
+   ```graphql
    mutation {
    generateCustomerToken(email: "test@test.com", password: "Admin@123") {
        token
@@ -68,7 +68,7 @@ E-mailmeldingen zijn niet naar klanten verzonden nadat ze hun e-mailadressen had
 
 1. Probeer het e-mailbericht voor de eerder gemaakte gebruiker bij te werken met de laatst gemaakte token voor toonder:
 
-   ```
+   ```graphql
    mutation {
        updateCustomerEmail(email: "test+updated@test.com", password: "Admin@123") {
            customer {
@@ -84,17 +84,17 @@ Klanten moeten e-mailmeldingen ontvangen nadat ze de e-mailadressen op hun accou
 
 <u> Ware resultaten </u>:
 
-Alleen een e-mailbericht met abonnement wordt naar het nieuwe adres verzonden. Het bevestigingsbericht voor de wijziging van het e-mailadres wordt niet verzonden.
+Er wordt alleen een e-mailbericht met abonnement naar het nieuwe adres verzonden. De bevestigingsmail voor de wijziging van het e-mailadres wordt niet verzonden.
 
 ## De patch toepassen
 
 Om individuele flarden toe te passen, gebruik de volgende verbindingen afhankelijk van uw plaatsingsmethode:
 
-* Op locatie Adobe Commerce of Magento Open Source: [[!DNL Quality Patches Tool] > Gebruik &#x200B;](/help/tools/quality-patches-tool/usage.md) in de handleiding [!DNL Quality Patches Tool] .
-* Adobe Commerce op wolkeninfrastructuur: [&#x200B; Verbeteringen en Patches > Pas Patches &#x200B;](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html?lang=nl-NL) in Commerce op de gids van de Infrastructuur van de Wolk toe.
+* Adobe Commerce of Magento Open Source ter plaatse: [[!DNL Quality Patches Tool] > Gebruik ](/help/tools/quality-patches-tool/usage.md) in de [!DNL Quality Patches Tool] gids.
+* Adobe Commerce op cloudinfrastructuur: [ Verbeteringen en Patches > pas Patches ](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html) in Commerce op de gids van de Infrastructuur van de Wolk toe.
 
 ## Gerelateerde lezing
 
 Meer informatie over [!DNL Quality Patches Tool] vindt u in:
 
-* [[!DNL Quality Patches Tool]: Een zelfbedieningshulpmiddel voor kwaliteitspatches &#x200B;](/help/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches.md) in de gids van Hulpmiddelen.
+* [[!DNL Quality Patches Tool] : Een zelfbedieningshulpmiddel voor kwaliteitspatches ](/help/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches.md) in de gids van Hulpmiddelen.

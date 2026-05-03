@@ -3,9 +3,9 @@ title: Hardwareaanbevelingen
 description: Meer informatie over hardwareaanbevelingen voor optimale Adobe Commerce-prestaties. Ontdek CPU-, geheugen- en opslagvereisten voor productieimplementaties.
 feature: Best Practices, Install
 exl-id: ab548c4b-6f56-4409-a4ed-5c959939e04b
-source-git-commit: 10f324478e9a5e80fc4d28ce680929687291e990
+source-git-commit: 48624d70761117ed0b9f8a7be913fce0572577b6
 workflow-type: tm+mt
-source-wordcount: '470'
+source-wordcount: '480'
 ht-degree: 0%
 
 ---
@@ -16,7 +16,7 @@ ht-degree: 0%
 
 [!DNL Commerce] -webknooppunten dienen voor alle aanvragen die niet in de cache zijn opgeslagen of die niet in de cache kunnen worden opgeslagen via de toepassing. Eén CPU-core kan op effectieve wijze ongeveer twee (soms wel vier) [!DNL Commerce] -aanvragen verwerken. Gebruik de volgende vergelijking om te bepalen hoeveel Webknopen/cores u alle inkomende verzoeken moet verwerken zonder hen in rij te zetten:
 
-```
+```text
 N[Cores] = (N[Expected Requests] / 2) + N [Expected Cron Processes]
 ```
 
@@ -30,11 +30,11 @@ Magento heeft verschillende PHP-geheugenvereisten, afhankelijk van hoe uw systee
 
 Scenario&#39;s en verwachte PHP-geheugenvereisten:
 
-* Webnode die alleen winkelpagina&#39;s bedient: 256 MB
+* Webnode die alleen storefront-pagina&#39;s aanbiedt: 256 MB
 * Webnode die beheerpagina&#39;s bedient met een grote catalogus: 1 GB
-* [!DNL Commerce] begin het indexeren van een plaats met een grote catalogus: >256 MB (Zie [&#x200B; geavanceerd-opstelling &#x200B;](../performance/advanced-setup.md) om voor optimale prestaties te stemmen.)
+* [!DNL Commerce] een site met een grote catalogus indexeren: >256 MB (Zie [ geavanceerd-opstelling ](../performance/advanced-setup.md) om voor optimale prestaties te stemmen.)
 * [!DNL Commerce] statische elementen compileren en implementeren: 756 MB
-* [!DNL Commerce] krachtige toolkit profile generation: > 1 GB PHP RAM, > 16 MB [!DNL MySQL] TMP_TABLE_SIZE &amp; MAX_HEAP_TABLE_SIZE settings
+* [!DNL Commerce] prestatie-toolkit-profielgeneratie: >1 GB PHP RAM, >16 MB [!DNL MySQL] TMP_TABLE_SIZE &amp; MAX_HEAP_TABLE_SIZE-instellingen
 
 ### [!DNL MySQL]
 

@@ -1,20 +1,20 @@
 ---
-title: 'MDVA-43451: Fout bij het instellen van Prijs en Structuur voor gedeelde catalogus'
-description: Met de MDVA-43451-patch wordt het probleem opgelost waarbij de gebruiker de prijs en structuur voor een gedeelde catalogus niet kan instellen. Deze patch is beschikbaar wanneer [Quality Patches Tool (QPT)] (https://experienceleague.adobe.com/nl/docs/commerce-operations/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches) 1.1.13 is geïnstalleerd. De patch-id is MDVA-43451. Het probleem wordt volgens de planning opgelost in Adobe Commerce 2.4.5.
+title: MDVA-43451 Fout bij het instellen van Prijs en Structuur voor gedeelde catalogus
+description: Met de MDVA-43451-patch wordt het probleem opgelost waarbij de gebruiker de prijs en structuur voor een gedeelde catalogus niet kan instellen. Deze patch is beschikbaar wanneer [Quality Patches Tool (QPT)] (https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches) 1.1.13 is geïnstalleerd. De patch-id is MDVA-43451. Het probleem wordt volgens de planning opgelost in Adobe Commerce 2.4.5.
 feature: Catalog Management
 role: Admin
 exl-id: 2cddfca2-ee32-4e73-9ef6-78125fbaa13d
 type: Troubleshooting
-source-git-commit: 7fdb02a6d89d50ea593c5fd99d78101f89198424
+source-git-commit: 48624d70761117ed0b9f8a7be913fce0572577b6
 workflow-type: tm+mt
-source-wordcount: '495'
+source-wordcount: '576'
 ht-degree: 0%
 
 ---
 
-# MDVA-43451: Fout bij het instellen van Prijs en Structuur voor gedeelde catalogus
+# MDVA-43451 Fout bij het instellen van Prijs en Structuur voor gedeelde catalogus
 
-Met de MDVA-43451-patch wordt het probleem opgelost waarbij de gebruiker de prijs en structuur voor een gedeelde catalogus niet kan instellen. Dit flard is beschikbaar wanneer het [&#x200B; Hulpmiddel van de Patches van de Kwaliteit (QPT) &#x200B;](https://experienceleague.adobe.com/nl/docs/commerce-operations/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches) 1.1.13 geïnstalleerd is. De patch-id is MDVA-43451. Het probleem wordt volgens de planning opgelost in Adobe Commerce 2.4.5.
+Met de MDVA-43451-patch wordt het probleem opgelost waarbij de gebruiker de prijs en structuur voor een gedeelde catalogus niet kan instellen. Dit flard is beschikbaar wanneer het [ Hulpmiddel van de Patches van de Kwaliteit (QPT) ](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches) 1.1.13 geïnstalleerd is. De patch-id is MDVA-43451. Het probleem wordt volgens de planning opgelost in Adobe Commerce 2.4.5.
 
 ## Betrokken producten en versies
 
@@ -28,11 +28,11 @@ Met de MDVA-43451-patch wordt het probleem opgelost waarbij de gebruiker de prij
 
 >[!NOTE]
 >
->De patch kan van toepassing worden op andere versies met nieuwe versies van het Hulpprogramma voor kwaliteitspatches. Om te controleren of de patch compatibel is met uw Adobe Commerce-versie, werkt u het `magento/quality-patches` -pakket bij naar de meest recente versie en controleert u de compatibiliteit op de [[!DNL Quality Patches Tool] : zoek naar patches op de pagina &#x200B;](https://experienceleague.adobe.com/nl/docs/commerce-operations/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches) . Gebruik de patch-id als een zoekwoord om de patch te zoeken.
+>De patch kan van toepassing worden op andere versies met nieuwe versies van het Hulpprogramma voor kwaliteitspatches. Als u wilt controleren of de patch compatibel is met uw Adobe Commerce-versie, werkt u het `magento/quality-patches` -pakket bij naar de meest recente versie en controleert u de compatibiliteit op de [[!DNL Quality Patches Tool] : Zoek naar de pagina van flarden ](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches). Gebruik de patch-id als een zoekwoord om de patch te zoeken.
 
 ## Probleem
 
-De gebruiker kan geen Prijs en Structuur voor een gedeelde catalogus plaatsen. Het volgende bericht wordt getoond: *de opslag die werd gevraagd werd niet gevonden. Verifieer de opslag en probeer opnieuw.*
+De gebruiker kan geen Prijs en Structuur voor een gedeelde catalogus plaatsen. Het volgende bericht wordt weergegeven: *de opslag die werd gevraagd werd niet gevonden. Verifieer de opslag en probeer opnieuw.*
 
 <u> Stappen om </u> te reproduceren:
 
@@ -41,7 +41,7 @@ De gebruiker kan geen Prijs en Structuur voor een gedeelde catalogus plaatsen. H
 1. Maak drie winkelweergaven voor de bovenstaande winkel. De id&#39;s van de winkelweergaven moeten 0,1, 2, 3, 4 zijn.
 1. Verwijder de winkelweergave met id 2. De opslagtabel moet er nu ongeveer zo uitzien als de onderstaande tabel.
 
-   ```bash
+   ```shell
    MariaDB [m24devinvb2b]> SELECT store_id,code,website_id,group_id,name FROM store;
    +----------+----------------+------------+----------+--------------------+
    | store_id | code           | website_id | group_id | name               |
@@ -70,14 +70,14 @@ U kunt de gedeelde catalogus niet opslaan. De volgende fout wordt weergegeven:
 
 Om individuele flarden toe te passen, gebruik de volgende verbindingen afhankelijk van uw plaatsingsmethode:
 
-* Op locatie Adobe Commerce of Magento Open Source: [[!DNL Quality Patches Tool] > Gebruik &#x200B;](/help/tools/quality-patches-tool/usage.md) in de handleiding [!DNL Quality Patches Tool] .
-* Adobe Commerce op wolkeninfrastructuur: [&#x200B; Verbeteringen en Patches > Pas Patches &#x200B;](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html?lang=nl-NL) in Commerce op de gids van de Infrastructuur van de Wolk toe.
+* Adobe Commerce of Magento Open Source ter plaatse: [[!DNL Quality Patches Tool] > Gebruik ](/help/tools/quality-patches-tool/usage.md) in de [!DNL Quality Patches Tool] gids.
+* Adobe Commerce op cloudinfrastructuur: [ Verbeteringen en Patches > pas Patches ](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html) in Commerce op de gids van de Infrastructuur van de Wolk toe.
 
 ## Gerelateerde lezing
 
 Raadpleeg voor meer informatie over het gereedschap Kwaliteitspatches:
 
-* [&#x200B; vrijgegeven het Hulpmiddel van de Patches van de Kwaliteit: een nieuw hulpmiddel om kwaliteitspatches &#x200B;](https://experienceleague.adobe.com/nl/docs/commerce-operations/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches) in de steunkennisbasis zelf-te dienen.
-* [&#x200B; Controle als het flard voor uw kwestie van Adobe Commerce beschikbaar is gebruikend het Hulpmiddel van de Patches van de Kwaliteit &#x200B;](/help/tools/quality-patches-tool/patches-available-in-qpt/check-patch-for-magento-issue-with-magento-quality-patches.md) in de [!DNL Quality Patches Tool] gids.
+* [ vrijgegeven Hulpmiddel van de Patches van de Kwaliteit: een nieuw hulpmiddel om kwaliteitsflarden ](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches) in de steunkennisbasis zelf-te dienen.
+* [ Controle als het flard voor uw kwestie van Adobe Commerce beschikbaar is gebruikend het Hulpmiddel van de Patches van de Kwaliteit ](/help/tools/quality-patches-tool/patches-available-in-qpt/check-patch-for-magento-issue-with-magento-quality-patches.md) in de [!DNL Quality Patches Tool] gids.
 
-Voor informatie over andere flarden beschikbaar in QPT, verwijs naar [[!DNL Quality Patches Tool]: Onderzoek naar flarden &#x200B;](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html?lang=nl-NL) in de [!DNL Quality Patches Tool] gids.
+Zie [[!DNL Quality Patches Tool] voor meer informatie over andere patches die beschikbaar zijn in QPT: Zoek naar flarden ](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html) in de [!DNL Quality Patches Tool] gids.

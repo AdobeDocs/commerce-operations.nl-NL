@@ -2,18 +2,18 @@
 title: Onderhoudsmodus in- of uitschakelen
 description: Voer de volgende stappen uit om aan te passen wat klanten zien wanneer uw Adobe Commerce-implementatie niet beschikbaar is voor onderhoud.
 exl-id: 5d9f1493-e771-47b4-b906-3771026cf07a
-source-git-commit: a5dbefda6b77d993756143ef0e7270425f824c44
+source-git-commit: 48624d70761117ed0b9f8a7be913fce0572577b6
 workflow-type: tm+mt
-source-wordcount: '531'
+source-wordcount: '533'
 ht-degree: 0%
 
 ---
 
 # Onderhoudsmodus in- of uitschakelen
 
-De volgende handleiding verwijst naar een pagina voor de standaardonderhoudsmodus. Als u een pagina van het douaneonderhoud moet gebruiken, zie [&#x200B; het onderwerp van de pagina van het douaneonderhoud &#x200B;](../../upgrade/troubleshooting/maintenance-mode-options.md) creëren.
+De volgende handleiding verwijst naar een pagina voor de standaardonderhoudsmodus. Als u een pagina van het douaneonderhoud moet gebruiken, zie [ het onderwerp van de pagina van het douaneonderhoud ](../../upgrade/troubleshooting/maintenance-mode-options.md) creëren.
 
-Adobe Commerce gebruikt [&#x200B; onderhoudswijze &#x200B;](../../configuration/bootstrap/application-modes.md#maintenance-mode) om bootstrapping onbruikbaar te maken. Het uitschakelen van bootstrapping is handig als u uw site onderhoudt, bijwerkt of opnieuw configureert.
+Adobe Commerce gebruikt [ onderhoudswijze ](../../configuration/bootstrap/application-modes.md#maintenance-mode) om bootstrapping onbruikbaar te maken. Het uitschakelen van bootstrapping is handig als u uw site onderhoudt, bijwerkt of opnieuw configureert.
 
 De toepassing detecteert de onderhoudsmodus als volgt:
 
@@ -22,7 +22,7 @@ De toepassing detecteert de onderhoudsmodus als volgt:
 
 ## De toepassing installeren
 
-Alvorens u dit bevel gebruikt om onderhoudswijze toe te laten of onbruikbaar te maken, moet u [&#x200B; de toepassing &#x200B;](../advanced.md) installeren.
+Alvorens u dit bevel gebruikt om onderhoudswijze toe te laten of onbruikbaar te maken, moet u [ de toepassing ](../advanced.md) installeren.
 
 ## Onderhoudsmodus in- of uitschakelen
 
@@ -30,15 +30,15 @@ Gebruik het `magento maintenance` CLI bevel om onderhoudswijze in of onbruikbaar
 
 Opdrachtgebruik:
 
-```bash
+```shell
 bin/magento maintenance:enable [--ip=<ip address> ... --ip=<ip address>] | [ip=none]
 ```
 
-```bash
+```shell
 bin/magento maintenance:disable [--ip=<ip address> ... --ip=<ip address>] | [ip=none]
 ```
 
-```bash
+```shell
 bin/magento maintenance:status
 ```
 
@@ -46,19 +46,19 @@ De optie `--ip=<ip address>` is een IP-adres dat wordt vrijgesteld van de onderh
 
 >[!NOTE]
 >
->Als u `--ip=<ip address>` gebruikt met `magento maintenance:disable` , wordt de lijst met IP&#39;s opgeslagen zodat u deze later kunt gebruiken. Om de lijst van vrijgestelde IPs te ontruimen, gebruik `magento maintenance:enable --ip=none` of zie [&#x200B; de lijst van vrijgestelde IP adressen &#x200B;](#maintain-the-list-of-exempt-ip-addresses) handhaven.
+>Als u `--ip=<ip address>` gebruikt met `magento maintenance:disable` , wordt de lijst met IP&#39;s opgeslagen zodat u deze later kunt gebruiken. Om de lijst van vrijgestelde IPs te ontruimen, gebruik `magento maintenance:enable --ip=none` of zie [ de lijst van vrijgestelde IP adressen ](#maintain-the-list-of-exempt-ip-addresses) handhaven.
 
 De opdracht `bin/magento maintenance:status` geeft de status van de onderhoudsmodus weer.
 
 Bijvoorbeeld, om onderhoudswijze zonder IP adresvrijstellingen toe te laten:
 
-```bash
+```shell
 bin/magento maintenance:enable
 ```
 
 De onderhoudsmodus inschakelen voor alle clients behalve 192.0.2.10 en 192.0.2.11 :
 
-```bash
+```shell
 bin/magento maintenance:enable --ip=192.0.2.10 --ip=192.0.2.11
 ```
 
@@ -69,7 +69,7 @@ U kunt deze processen vinden door de opdracht `ps -ef | grep queue:consumers:sta
 
 Als u de lijst met vrijgestelde IP-adressen wilt bijhouden, kunt u de optie `[--ip=<ip list>]` in de voorafgaande opdrachten gebruiken of het volgende gebruiken:
 
-```bash
+```shell
 bin/magento maintenance:allow-ips <ip address> .. <ip address> [--none]
 ```
 
@@ -123,4 +123,4 @@ De parameter `skin` gebruiken:
 
 >[!NOTE]
 >
->[&#x200B; nginx &#x200B;](../../configuration/multi-sites/ms-nginx.md) het plaatsen moet voor multi-store montages worden toegevoegd.
+>[ nginx ](../../configuration/multi-sites/ms-nginx.md) het plaatsen moet voor multi-store montages worden toegevoegd.

@@ -4,9 +4,9 @@ description: Leer hoe u database- en toepassingsinstellingen configureert om de 
 role: Developer, Admin
 feature: Best Practices
 exl-id: ca377dc8-c8bd-4f77-a24b-22a298e2bba4
-source-git-commit: 987d65b52437fbd21f41600bb5741b3cc43d01f3
+source-git-commit: 48624d70761117ed0b9f8a7be913fce0572577b6
 workflow-type: tm+mt
-source-wordcount: '651'
+source-wordcount: '727'
 ht-degree: 0%
 
 ---
@@ -37,7 +37,7 @@ SELECT table_schema, CONCAT(ROUND((index_length+data_length)/1024/1024),'MB')
 
 ### De opslagengine wijzigen in InnoDB
 
-In het `db_schema.xml` -bestand dat de tabel declareert, stelt u de `engine` kenmerkwaarde voor het corresponderende `table` -knooppunt in op `innodb` . Voor verwijzing, zie [&#x200B; declaratief schema > lijstknoop &#x200B;](https://developer.adobe.com/commerce/php/development/components/declarative-schema/configuration/) in onze ontwikkelaarsdocumentatie vormen.
+In het `db_schema.xml` -bestand dat de tabel declareert, stelt u de `engine` kenmerkwaarde voor het corresponderende `table` -knooppunt in op `innodb` . Voor verwijzing, zie [ declaratief schema > lijstknoop ](https://developer.adobe.com/commerce/php/development/components/declarative-schema/configuration/) in onze ontwikkelaarsdocumentatie vormen.
 
 De declaratieve regeling werd ingevoerd in Adobe Commerce op cloudinfrastructuur versie 2.3.
 
@@ -53,15 +53,15 @@ Het zoekprogramma dat u gebruikt, is afhankelijk van de geïnstalleerde Adobe Co
 
 Voer de volgende opdracht uit om te bepalen welke zoekengine momenteel wordt gebruikt:
 
-```bash
+```shell
 ./bin/magento config:show catalog/search/engine
 ```
 
 Zie voor configuratieinstructies de Developer Guide for Adobe Commerce on cloud:
 
-- [&#x200B; Opstelling de dienst OpenSearch &#x200B;](https://experienceleague.adobe.com/nl/docs/commerce-cloud-service/user-guide/configure/service/opensearch)
+- [De OpenSearch-service instellen](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/configure/service/opensearch)
 
-- [&#x200B; opstelling de dienst van Elasticsearch &#x200B;](https://experienceleague.adobe.com/nl/docs/commerce-cloud-service/user-guide/configure/service/elasticsearch)
+- [De Elasticsearch-service instellen](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/configure/service/elasticsearch)
 
 ## Aangepaste triggers voorkomen
 
@@ -72,18 +72,18 @@ De trekkers worden gebruikt om veranderingen in controletabellen te registreren.
 - Triggers worden geïnterpreteerd als code en MySQL compileert ze niet vooraf. Hooking op de transactieruimte van uw vraag, voegen zij de overheadkosten aan een parser en een interpreter voor elke vraag toe die met de lijst wordt uitgevoerd.
 - De trekkers delen de zelfde transactieruimte zoals de originele vragen, en terwijl die vragen voor sloten op de lijst concurreren, concurreren de trekkers onafhankelijk op sloten op een andere lijst.
 
-Om over alternatieven te leren om douanetriggers te gebruiken, zie [&#x200B; trekkers MySQL &#x200B;](mysql-configuration.md#triggers).
+Om over alternatieven te leren om douanetriggers te gebruiken, zie [ trekkers MySQL ](mysql-configuration.md#triggers).
 
 ## Upgrade [!DNL ECE-Tools] naar versie 2002.0.21 of hoger {#ece-tools-version}
 
-Om potentiële problemen met kroonsloten te vermijden, bevorder ECE-Hulpmiddelen aan versie 2002.0.21 of hoger. Voor instructies, zie [&#x200B; versie `ece-tools` van de Update 0&rbrace; &lbrace;in onze ontwikkelaarsdocumentatie.](https://experienceleague.adobe.com/nl/docs/commerce-cloud-service/user-guide/dev-tools/ece-tools/update-package)
+Om potentiële problemen met kroonsloten te vermijden, bevorder ECE-Hulpmiddelen aan versie 2002.0.21 of hoger. Voor instructies, zie `ece-tools` versie ](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/dev-tools/ece-tools/update-package) van de Update 0} {in onze ontwikkelaarsdocumentatie.[
 
 ## Veilig overschakelen op indexmodus
 
 <!--This best practice might belong in the Maintenance phase. Database lock prevention might be consolidated under a single heading-->
 
 Als u overschakelt op indexen, worden [!DNL data definition language] (DDL)-instructies gegenereerd om triggers te maken die databaseslokken kunnen veroorzaken. U kunt dit probleem voorkomen door uw website in de onderhoudsmodus te plaatsen en de taken voor uitsnijden uit te schakelen voordat u de configuratie wijzigt.
-Voor instructies, zie [&#x200B; indexeerders &#x200B;](https://experienceleague.adobe.com/docs/commerce-operations/configuration-guide/cli/manage-indexers.html?lang=nl-NL#configure-indexers-1) in de *Gids van de Configuratie van Adobe Commerce* vormen.
+Voor instructies, zie [ indexeerders ](https://experienceleague.adobe.com/docs/commerce-operations/configuration-guide/cli/manage-indexers.html#configure-indexers-1) in de *Gids van de Configuratie van Adobe Commerce* vormen.
 
 ## DDL-instructies niet uitvoeren in productie
 
@@ -95,10 +95,10 @@ Als u een DDL-instructie moet uitvoeren, zet u de website in de onderhoudsmodus 
 
 Archivering van bestellingen via de beheerder inschakelen om de benodigde ruimte voor verkooptabellen te verkleinen naarmate de gegevens van uw bestelling toenemen. Met archivering bespaart u MySQL-schijfruimte en verbetert u de afrekenprestaties.
 
-Zie [&#x200B; archivering &#x200B;](https://experienceleague.adobe.com/docs/commerce-admin/stores-sales/order-management/orders/order-archive.html?lang=nl-NL) in de documentatie van de Merchant van Adobe Commerce toelaten.
+Zie [ archivering ](https://experienceleague.adobe.com/docs/commerce-admin/stores-sales/order-management/orders/order-archive.html) in de documentatie van de Merchant van Adobe Commerce toelaten.
 
 ## Aanvullende informatie
 
-- [&#x200B; MySQL de Motoren van de Opslag &#x200B;](https://dev.mysql.com/doc/refman/8.0/en/storage-engines.html)
+- [MySQL-opslagengines](https://dev.mysql.com/doc/refman/8.0/en/storage-engines.html)
 - [Adobe Commerce 2.3.5-upgradevoorwaarden voor MariaDB](../maintenance/mariadb-upgrade.md)
 - [Aanbevolen procedures om prestatieproblemen met databases op te lossen](../maintenance/resolve-database-performance-issues.md)

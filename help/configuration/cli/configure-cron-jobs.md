@@ -2,9 +2,9 @@
 title: Cron-taken configureren en uitvoeren
 description: Leer hoe u taken voor uitsnijden in Adobe Commerce configureert en beheert. Ontdek planning, configuratie, en het oplossen van problementechnieken.
 exl-id: 8ba2b2f9-5200-4e96-9799-1b00d7d23ce1
-source-git-commit: 10f324478e9a5e80fc4d28ce680929687291e990
+source-git-commit: 48624d70761117ed0b9f8a7be913fce0572577b6
 workflow-type: tm+mt
-source-wordcount: '759'
+source-wordcount: '764'
 ht-degree: 0%
 
 ---
@@ -34,7 +34,7 @@ Voor verschillende Commerce-functies is minstens één snijtaak vereist, die act
 
 De systeemplanningstaken van UNIX die door bijzondere gebruikers worden uitgevoerd gebruikend a _contab_, die een dossier is dat instructies aan de cron daemon bevat die de daemon in feite vertellen om &quot;dit bevel op dit ogenblik op deze datum in werking te stellen&quot;. Elke gebruiker heeft zijn eigen contab, en de bevelen in om het even welk bepaald contab worden uitgevoerd als gebruiker die het bezit.
 
-Om te lopen brein in Webbrowser, zie [&#x200B; Veilig cron.php in browser &#x200B;](../security/secure-cron-php.md) te lopen.
+Om te lopen brein in Webbrowser, zie [ Veilig cron.php in browser ](../security/secure-cron-php.md) te lopen.
 
 ## De tab Commerce maken of verwijderen
 
@@ -46,7 +46,7 @@ De Commerce-toepassing gebruikt snijtaken die met verschillende configuraties ku
 
 >[!WARNING]
 >
->- Om problemen tijdens installatie en verbetering te vermijden, adviseren wij sterk u om de zelfde PHP montages op zowel de PHP bevel-lijn configuratie als op de configuratie van de PHP Webserver stop-in toe te passen. Voor meer informatie, zie [&#x200B; Vereiste PHP montages &#x200B;](../../installation/prerequisites/php-settings.md).
+>- Om problemen tijdens installatie en verbetering te vermijden, adviseren wij sterk u om de zelfde PHP montages op zowel de PHP bevel-lijn configuratie als op de configuratie van de PHP Webserver stop-in toe te passen. Voor meer informatie, zie [ Vereiste PHP montages ](../../installation/prerequisites/php-settings.md).
 >- In een systeem met meerdere knooppunten kan de tab op slechts één knooppunt worden uitgevoerd. Dit geldt alleen voor u als u meer dan één webnode instelt om redenen die te maken hebben met prestaties of schaalbaarheid.
 
 ### De tab Commerce maken
@@ -57,11 +57,11 @@ De tab Commerce bevindt zich in de tabbladen `#~ MAGENTO START` en `#~ MAGENTO E
 
 Het Commerce-tabblad maken:
 
-1. Login als, of schakelaar aan, de [&#x200B; eigenaar van het dossiersysteem &#x200B;](../../installation/prerequisites/file-system/overview.md).
+1. Login als, of schakelaar aan, de [ eigenaar van het dossiersysteem ](../../installation/prerequisites/file-system/overview.md).
 1. Ga naar de installatiemap van Commerce.
 1. Voer de volgende opdracht in:
 
-   ```bash
+   ```shell
    bin/magento cron:install [--force]
    ```
 
@@ -74,13 +74,13 @@ Gebruik `--force` om een bestaande tab te herschrijven.
 
 Als u het tabblad wilt weergeven, voert u de volgende opdracht in als de eigenaar van het bestandssysteem:
 
-```bash
+```shell
 crontab -l
 ```
 
 Hieronder volgt een monster:
 
-```
+```shell
 #~ MAGENTO START c5f9e5ed71cceaabc4d4fd9b3e827a2b
 * * * * * /usr/bin/php /var/www/html/magento2/bin/magento cron:run 2>&1 | grep -v "Ran jobs by schedule" >> /var/www/html/magento2/var/log/magento.cron.log
 #~ MAGENTO END c5f9e5ed71cceaabc4d4fd9b3e827a2b
@@ -98,11 +98,11 @@ U moet het Commerce-tabblad alleen verwijderen voordat u de Commerce-toepassing 
 
 Het Commerce-tabblad verwijderen:
 
-1. Login als of schakelaar aan de [&#x200B; eigenaar van het dossiersysteem &#x200B;](../../installation/prerequisites/file-system/overview.md).
+1. Login als of schakelaar aan de [ eigenaar van het dossiersysteem ](../../installation/prerequisites/file-system/overview.md).
 1. Ga naar de Commerce-installatiemap.
 1. Voer de volgende opdracht in:
 
-   ```bash
+   ```shell
    bin/magento cron:remove
    ```
 
@@ -114,7 +114,7 @@ Het Commerce-tabblad verwijderen:
 
 Opdrachtopties:
 
-```bash
+```shell
 bin/magento cron:run [--group="<cron group name>"]
 ```
 
@@ -122,21 +122,21 @@ waarbij `--group` de uit te voeren uitsnijdgroep aangeeft (deze optie weglaten o
 
 Voer de volgende gegevens in om de indexeringstaak uit te voeren:
 
-```bash
+```shell
 bin/magento cron:run --group index
 ```
 
 Voer de volgende gegevens in om de standaarduitsnijdtaak uit te voeren:
 
-```bash
+```shell
 bin/magento cron:run --group default
 ```
 
-Aan opstellings de banen en de groepen van de douanecurn, zie [&#x200B; de banen van de douanecurn en de kantelgroepen van de opstelling &#x200B;](../cron/custom-cron.md) vormen.
+Aan opstellings de banen en de groepen van de douanecurn, zie [ de banen van de douanecurn en de kantelgroepen van de opstelling ](../cron/custom-cron.md) vormen.
 
 >[!INFO]
 >
->Je moet twee keer uitsnijden: de eerste keer dat je taken ontdekt die je moet uitvoeren en de tweede keer — om de taken zelf uit te voeren. De tweede uitvoering voor uitsnijden moet plaatsvinden op of na de `scheduled_at` -tijd voor elke taak.
+>U moet de bewerking tweemaal uitvoeren: de eerste keer om taken te ontdekken die moeten worden uitgevoerd en de tweede keer — om de taken zelf uit te voeren. De tweede uitvoering voor uitsnijden moet plaatsvinden op of na de `scheduled_at` -tijd voor elke taak.
 
 ## Logboekregistratie
 

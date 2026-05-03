@@ -3,9 +3,9 @@ title: Redis gebruiken voor standaardcache
 description: Leer hoe u Redis configureert als de standaardcache voor Adobe Commerce. Ontdek opdrachtregelopstelling, configuratieopties en validatietechnieken.
 feature: Configuration, Cache
 exl-id: 8c097cfc-85d0-4e96-b56e-284fde40d459
-source-git-commit: ee4a873a73e8fd747e7d4c8e157327fab1074cc9
+source-git-commit: 48624d70761117ed0b9f8a7be913fce0572577b6
 workflow-type: tm+mt
-source-wordcount: '890'
+source-wordcount: '907'
 ht-degree: 0%
 
 ---
@@ -14,17 +14,17 @@ ht-degree: 0%
 
 Commerce biedt opdrachtregelopties voor het configureren van de pagina Redis en het in cache plaatsen van standaardgegevens. Hoewel u caching kunt vormen door het `<Commerce-install-dir>app/etc/env.php` dossier uit te geven, is het gebruiken van de bevellijn de geadviseerde methode, vooral voor aanvankelijke configuraties. De bevellijn verstrekt bevestiging, die de configuratie verzekeren syntactisch correct is.
 
-U moet [&#x200B; Redis &#x200B;](config-redis.md#install-redis) installeren alvorens verder te gaan.
+U moet [ Redis ](config-redis.md#install-redis) installeren alvorens verder te gaan.
 
 >[!NOTE]
 >
->Voor Commerce-instanties die worden gehost op EC2, kunt u AWS ElastiCache gebruiken in plaats van een lokale Redis-instantie. Zie [&#x200B; Elasticache voor instanties EC2 &#x200B;](redis-elasticache-for-ec2.md) vormen.
+>Voor Commerce-instanties die worden gehost op EC2, kunt u AWS ElastiCache gebruiken in plaats van een lokale Redis-instantie. Zie [ Elasticache voor instanties EC2 ](redis-elasticache-for-ec2.md) vormen.
 
 ## Standaardcaching van Redis configureren
 
 Voer de opdracht `setup:config:set` uit en geef parameters op die specifiek zijn voor de standaardcaching Redis.
 
-```bash
+```shell
 bin/magento setup:config:set --cache-backend=redis --cache-backend-redis-<parameter>=<value>...
 ```
 
@@ -38,16 +38,16 @@ Met de volgende parameters:
 | ------------------------------ | --------- | ------- | ------------- |
 | `cache-backend-redis-server` | server | Volledig gekwalificeerde hostnaam, IP-adres of een absoluut pad naar een UNIX-socket. De standaardwaarde van 127.0.0.1 geeft aan dat Redis is geïnstalleerd op de Commerce-server. | `127.0.0.1` |
 | `cache-backend-redis-port` | poort | Redis-poort voor luisteren naar server | `6379` |
-| `cache-backend-redis-db` | database | Vereist als u Redis gebruikt voor zowel de standaardcache als de cache van de volledige pagina. U moet het databasenummer van een van de caches opgeven; de andere cache gebruikt standaard 0.<br><br>**Belangrijk**: Als u Redis voor meer dan één type van caching gebruikt, moeten de gegevensbestandaantallen verschillend zijn. U wordt aangeraden het standaard cachedatabasenummer aan 0, het databasenummer voor het in cache plaatsen van pagina&#39;s aan 1 en het databasenummer voor de sessieopslag aan 2 toe te wijzen. | `0` |
-| `cache-backend-redis-password` | password | Als u een Redis-wachtwoord configureert, wordt een van de ingebouwde beveiligingsfuncties ingeschakeld: de opdracht `auth` , waarvoor clients moeten worden geverifieerd voor toegang tot de database. Het wachtwoord wordt rechtstreeks geconfigureerd in het configuratiebestand van Redis: `/etc/redis/redis.conf` | |
-| `--cache-backend-redis-use-lua` | use_lua | LUA in- of uitschakelen. <br><br>**LUA**: Lua laat ons toe om een deel van de toepassingslogica binnen Redis in werking te stellen, die prestaties verbeteren en gegevensconsistentie door zijn atomische uitvoering verzekeren. | `0` |
-| `--cache-backend-redis-use-lua-on-gc` | use_lua_on_gc | Schakel LUA in of uit voor opschonen. <br><br>**LUA**: Lua laat ons toe om een deel van de toepassingslogica binnen Redis in werking te stellen, die prestaties verbeteren en gegevensconsistentie door zijn atomische uitvoering verzekeren. | `1` |
+| `cache-backend-redis-db` | database | Vereist als u Redis gebruikt voor zowel de standaardcache als de cache van de volledige pagina. U moet het databasenummer van een van de caches opgeven. het andere geheime voorgeheugen gebruikt 0 door gebrek.<br><br>**Belangrijk**: Als u Redis voor meer dan één type caching gebruikt, moeten de gegevensbestandaantallen verschillend zijn. U wordt aangeraden het standaard cachedatabasenummer aan 0, het databasenummer voor het in cache plaatsen van pagina&#39;s aan 1 en het databasenummer voor de sessieopslag aan 2 toe te wijzen. | `0` |
+| `cache-backend-redis-password` | password | Als u een Redis-wachtwoord configureert, wordt een van de ingebouwde beveiligingsfuncties ingeschakeld: de opdracht `auth` , die vereist dat clients worden geverifieerd voor toegang tot de database. Het wachtwoord wordt direct geconfigureerd in het configuratiebestand van Redis: `/etc/redis/redis.conf` | |
+| `--cache-backend-redis-use-lua` | use_lua | LUA in- of uitschakelen. <br><br>**LUA**: Lua stelt ons in staat om een deel van de toepassingslogica binnen Redis uit te voeren, die prestaties verbetert en gegevensconsistentie door zijn atoomuitvoering verzekert. | `0` |
+| `--cache-backend-redis-use-lua-on-gc` | use_lua_on_gc | Schakel LUA in of uit voor opschonen. <br><br>**LUA**: Lua stelt ons in staat om een deel van de toepassingslogica binnen Redis uit te voeren, die prestaties verbetert en gegevensconsistentie door zijn atoomuitvoering verzekert. | `1` |
 
 ### Voorbeeld, opdracht
 
 In het volgende voorbeeld wordt de standaardcaching Redis ingeschakeld, wordt de host ingesteld op `127.0.0.1` en wordt het databasenummer toegewezen aan 0. Redis gebruikt standaardwaarden voor alle andere parameters.
 
-```bash
+```shell
 bin/magento setup:config:set --cache-backend=redis --cache-backend-redis-server=127.0.0.1 --cache-backend-redis-db=0
 ```
 
@@ -55,7 +55,7 @@ bin/magento setup:config:set --cache-backend=redis --cache-backend-redis-server=
 
 Als u het in cache plaatsen van pagina&#39;s opnieuw wilt configureren op Commerce, voert u de opdracht `setup:config:set` uit met extra parameters.
 
-```bash
+```shell
 bin/magento setup:config:set --page-cache=redis --page-cache-redis-<parameter>=<value>...
 ```
 
@@ -69,14 +69,14 @@ Met de volgende parameters:
 | ------------------------------ | --------- | ------- | ------------- |
 | `page-cache-redis-server` | server | Volledig gekwalificeerde hostnaam, IP-adres of een absoluut pad naar een UNIX-socket. De standaardwaarde van 127.0.0.1 geeft aan dat Redis is geïnstalleerd op de Commerce-server. | `127.0.0.1` |
 | `page-cache-redis-port` | poort | Redis-poort voor luisteren naar server | `6379` |
-| `page-cache-redis-db` | database | Vereist als u Redis gebruikt voor zowel de standaardcache als de volledige paginacache. U moet het databasenummer van een van de caches opgeven; de andere cache gebruikt standaard 0.<br/>**Belangrijk**: Als u Redis voor meer dan één type van caching gebruikt, moeten de gegevensbestandaantallen verschillend zijn. U wordt aangeraden het standaard cachedatabasenummer aan 0, het databasenummer voor het in cache plaatsen van pagina&#39;s aan 1 en het databasenummer voor de sessieopslag aan 2 toe te wijzen. | `0` |
-| `page-cache-redis-password` | password | Als u een Redis-wachtwoord configureert, wordt een van de ingebouwde beveiligingsfuncties ingeschakeld: de opdracht `auth` , waarvoor clients moeten worden geverifieerd voor toegang tot de database. Configureer het wachtwoord in het Redis-configuratiebestand: `/etc/redis/redis.conf` | |
+| `page-cache-redis-db` | database | Vereist als u Redis gebruikt voor zowel de standaardcache als de volledige paginacache. U moet het databasenummer van een van de caches opgeven. het andere geheime voorgeheugen gebruikt 0 door gebrek.<br/>**Belangrijk**: Als u Redis voor meer dan één type caching gebruikt, moeten de gegevensbestandaantallen verschillend zijn. U wordt aangeraden het standaard cachedatabasenummer aan 0, het databasenummer voor het in cache plaatsen van pagina&#39;s aan 1 en het databasenummer voor de sessieopslag aan 2 toe te wijzen. | `0` |
+| `page-cache-redis-password` | password | Als u een Redis-wachtwoord configureert, wordt een van de ingebouwde beveiligingsfuncties ingeschakeld: de opdracht `auth` , die vereist dat clients worden geverifieerd voor toegang tot de database. Configureer het wachtwoord in het Redis-configuratiebestand: `/etc/redis/redis.conf` | |
 
 ### Voorbeeld, opdracht
 
 In het volgende voorbeeld wordt het in cache plaatsen van pagina&#39;s opnieuw verzonden ingeschakeld, wordt de host ingesteld op `127.0.0.1` en wordt het databasenummer toegewezen aan 1. Alle andere parameters worden ingesteld op de standaardwaarde.
 
-```bash
+```shell
 bin/magento setup:config:set --page-cache=redis --page-cache-redis-server=127.0.0.1 --page-cache-redis-db=1
 ```
 
@@ -116,7 +116,7 @@ In deze sectie wordt beschreven hoe u optionele configuratie-instellingen kunt i
 
 Aangezien Commerce configuratiegegevens opslaat in de cache van Redis, kunnen we gegevens vooraf laden die opnieuw worden gebruikt tussen pagina&#39;s. Als u toetsen wilt zoeken die vooraf moeten worden geladen, analyseert u de gegevens die van Redis naar Commerce worden overgedragen. We raden u aan gegevens die op elke pagina worden geladen, bijvoorbeeld `SYSTEM_DEFAULT` , `EAV_ENTITY_TYPES` , `DB_IS_UP_TO_DATE` vooraf te laden.
 
-Redis gebruikt `pipeline` om aanvragen voor samengestelde laden samen te stellen. Toetsen moeten het databasevoorvoegsel bevatten; als het databasevoorvoegsel bijvoorbeeld `061_` is, ziet de voorladertoets er als volgt uit: `061_SYSTEM_DEFAULT`
+Redis gebruikt `pipeline` om aanvragen voor samengestelde laden samen te stellen. Toetsen moeten het databasevoorvoegsel bevatten; Als het databasevoorvoegsel bijvoorbeeld `061_` is, ziet de voorlaadsleutel er als volgt uit: `061_SYSTEM_DEFAULT`
 
 ```php
 'cache' => [
@@ -165,7 +165,7 @@ Deze optie is standaard uitgeschakeld en Adobe raadt u aan de optie uit te schak
 
 **om parallelle generatie** toe te laten:
 
-```bash
+```shell
 bin/magento setup:config:set --allow-parallel-generation
 ```
 
@@ -200,13 +200,13 @@ Om te verifiëren dat Redis en Commerce samenwerken, login aan de server die Red
 
 ### Redis-monitor, opdracht
 
-```bash
+```shell
 redis-cli monitor
 ```
 
 Voorbeeld van uitvoer in cache plaatsen van pagina:
 
-```
+```text
 1476826133.810090 [0 127.0.0.1:52366] "select" "1"
 1476826133.816293 [0 127.0.0.1:52367] "select" "0"
 1476826133.817461 [0 127.0.0.1:52367] "hget" "zc:k:ea6_GLOBAL__DICONFIG" "d"
@@ -231,7 +231,7 @@ Voorbeeld van uitvoer in cache plaatsen van pagina:
 
 ### Redis, ping, opdracht
 
-```bash
+```shell
 redis-cli ping
 ```
 
@@ -241,4 +241,4 @@ Als beide opdrachten zijn uitgevoerd, wordt Redis op de juiste wijze ingesteld.
 
 ### Gecomprimeerde gegevens controleren
 
-Om de samengeperste gegevens van de Zitting en het Geheime voorgeheugen van de Pagina te inspecteren, [&#x200B; RESP.app &#x200B;](https://flathub.org/apps/details/app.resp.RESP) steunt de automatische decompressie van Commerce 2 Sessie en het geheime voorgeheugen van de Pagina en toont PHP zittingsgegevens in een mens-leesbare vorm.
+Om de samengeperste gegevens van de Zitting en het Geheime voorgeheugen van de Pagina te inspecteren, [ RESP.app ](https://flathub.org/apps/details/app.resp.RESP) steunt de automatische decompressie van Commerce 2 Sessie en het geheime voorgeheugen van de Pagina en toont PHP zittingsgegevens in een mens-leesbare vorm.

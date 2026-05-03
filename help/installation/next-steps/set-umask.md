@@ -3,22 +3,22 @@ title: Een masker instellen (optioneel)
 description: Verbeter de beveiligingspositie van uw Adobe Commerce-installatie op locatie door de machtigingen voor het bestandssysteem te beperken.
 feature: Install, Configuration
 exl-id: 18d65d75-7be0-4488-bf35-4b058e4ae5ea
-source-git-commit: ddf988826c29b4ebf054a4d4fb5f4c285662ef4e
+source-git-commit: 48624d70761117ed0b9f8a7be913fce0572577b6
 workflow-type: tm+mt
-source-wordcount: '296'
+source-wordcount: '310'
 ht-degree: 0%
 
 ---
 
 # Een masker instellen (optioneel)
 
-De webservergroep moet schrijfmachtigingen hebben voor bepaalde mappen in het bestandssysteem. Het is echter verstandig de beveiliging te verbeteren, met name in de productie. Wij verstrekken de flexibiliteit voor u om die toestemmingen verder te beperken gebruikend a [&#x200B; masker &#x200B;](https://www.cyberciti.biz/tips/understanding-linux-unix-umask-value-usage.html).
+De webservergroep moet schrijfmachtigingen hebben voor bepaalde mappen in het bestandssysteem. maar u wilt misschien een betere beveiliging , met name in de produktie . Wij verstrekken de flexibiliteit voor u om die toestemmingen verder te beperken gebruikend a [ masker ](https://www.cyberciti.biz/tips/understanding-linux-unix-umask-value-usage.html).
 
 Het is onze oplossing om u desgewenst in staat te stellen een bestand met de naam `magento_umask` in de hoofdmap van de toepassing te maken dat machtigingen beperkt voor de webservergroep en voor alle anderen.
 
 >[!NOTE]
 >
->We raden u aan het masker alleen te wijzigen op een hostsysteem voor één gebruiker of een gedeeld hostsysteem. Als u een privétoepassingsserver hebt, moet de groep schrijftoegang tot het bestandssysteem hebben. Het masker verwijdert schrijftoegang van de groep.
+>We raden u aan het masker alleen te wijzigen op een hostsysteem voor één gebruiker of een gedeeld hostsysteem. Als u een privétoepassingsserver hebt, moet de groep schrijftoegang hebben tot het bestandssysteem. Met het masker verwijdert u schrijftoegang uit de groep.
 
 Het standaardmasker (zonder `magento_umask` opgegeven) is `002` , wat betekent:
 
@@ -28,24 +28,24 @@ Het standaardmasker (zonder `magento_umask` opgegeven) is `002` , wat betekent:
 
 Een algemene suggestie is om de waarde `022` in het `magento_umask` -bestand te gebruiken, wat betekent:
 
-* 755 voor directory&#39;s: volledige controle voor de gebruiker, en alle anderen kunnen folders doorlopen.
-* 644 voor bestanden: lees- en schrijfmachtigingen voor de gebruiker en alleen-lezen voor alle anderen.
+* 755 voor directory&#39;s: de volledige controle voor de gebruiker, en iedereen anders kan folders doorkruisen.
+* 644 voor bestanden: lees-schrijf toestemmingen voor de gebruiker, en read-only voor iedereen anders.
 
 Ga als volgt te werk om `magento_umask` in te stellen:
 
-1. In een bevel-lijn terminal, login aan uw toepassingsserver als eigenaar van het a [&#x200B; dossiersysteem &#x200B;](../prerequisites/file-system/overview.md).
+1. In een bevel-lijn terminal, login aan uw toepassingsserver als eigenaar van het a [ dossiersysteem ](../prerequisites/file-system/overview.md).
 1. Navigeer naar de installatiemap van de toepassing:
 
-   ```bash
+   ```shell
    cd <Application install directory>
    ```
 
 1. Gebruik de volgende opdracht om een bestand met de naam `magento_umask` te maken en de waarde `umask` eraan te schrijven.
 
-   ```bash
+   ```shell
    echo <desired umask number> > magento_umask
    ```
 
    U moet nu een bestand met de naam `magento_umask` in de `<Magento install dir>` hebben, waarbij de enige inhoud het `umask` -nummer is.
 
-1. Logout en logboek terug binnen als [&#x200B; eigenaar van het dossiersysteem &#x200B;](../prerequisites/file-system/overview.md) om de veranderingen toe te passen.
+1. Logout en logboek terug binnen als [ eigenaar van het dossiersysteem ](../prerequisites/file-system/overview.md) om de veranderingen toe te passen.

@@ -3,9 +3,9 @@ title: Gegevens genereren voor het testen van prestaties
 description: Leer hoe u grote hoeveelheden gegevens genereert voor het testen van Adobe Commerce-prestaties. Ontdek profielen voor gegevensgeneratie en teststrategieën.
 feature: Configuration, Orders
 exl-id: 2f54701d-88c4-464a-b4dc-56db14d54160
-source-git-commit: 10f324478e9a5e80fc4d28ce680929687291e990
+source-git-commit: 48624d70761117ed0b9f8a7be913fce0572577b6
 workflow-type: tm+mt
-source-wordcount: '768'
+source-wordcount: '775'
 ht-degree: 8%
 
 ---
@@ -20,7 +20,7 @@ Bijvoorbeeld: `/var/www/html/magento2/setup/performance-toolkit/profiles/ce`
 
 Het volgende cijfer toont aan hoe een product op de storefront gebruikend het _kleine_ profiel wordt getoond:
 
-![&#x200B; opslag van de Steekproef met geproduceerde gegevens &#x200B;](../../assets/configuration/generate-data.png)
+![ opslag van de Steekproef met geproduceerde gegevens ](../../assets/configuration/generate-data.png)
 
 De volgende tabel bevat details over de profielen van de gegevensgenerator: klein, middelgroot, groot en extra groot.
 
@@ -29,18 +29,18 @@ De volgende tabel bevat details over de profielen van de gegevensgenerator: klei
 | `websites` | 1 | 3 | 25 | 5 | 5 |
 | `store_groups` | 1 | 3 | 25 | 5 | 5 |
 | `store_views` | 1 | 3 | 50 | 5 | 5 |
-| `simple_products` | 800 | 24.000 | 4.000 | 300.000 | 600.000 |
+| `simple_products` | 800 | 24,000 | 4,000 | 300,000 | 600,000 |
 | `configurable_products` | 16 met 24 opties | 640 met 24 opties | 800 met 24 opties en 79 met 200 opties | 8.000 met 24 opties | 16.000 met 24 opties |
 | `product_images` | 100 afbeeldingen / 3 afbeeldingen per product | 1000 afbeeldingen / 3 afbeeldingen per product | 1000 afbeeldingen / 3 afbeeldingen per product | 2000 afbeeldingen / 3 afbeeldingen per product | 2000 afbeeldingen / 3 afbeeldingen per product |
-| `categories` | 30 | 300 | 100 | 3.000 | 6.000 |
+| `categories` | 30 | 300 | 100 | 3,000 | 6,000 |
 | `categories_nesting_level` | 3 | 3 | 3 | 5 | 5 |
 | `catalog_price_rules` | 20 | 20 | 20 | 20 | 20 |
 | `catalog_target_rules` | 5 | 5 | 5 | 5 | 5 |
 | `cart_price_rules` | 20 | 20 | 20 | 20 | 20 |
 | `cart_price_rules_floor` | 2 | 2 | 2 | 2 | 2 |
-| `customers` | 200 | 2.000 | 2.000 | 5.000 | 10.000 |
-| `tax rates` | 130 | 40.000 | 40.000 | 40.000 | 40.000 |
-| `orders` | 80 | 50.000 | 50.000 | 100.000 | 150.000 |
+| `customers` | 200 | 2,000 | 2,000 | 5,000 | 10,000 |
+| `tax rates` | 130 | 40,000 | 40,000 | 40,000 | 40,000 |
+| `orders` | 80 | 50,000 | 50,000 | 100,000 | 150,000 |
 
 ### De gegevensgenerator uitvoeren
 
@@ -50,13 +50,13 @@ De volgende tabel bevat details over de profielen van de gegevensgenerator: klei
 >
 >Voordat u de gegevensgenerator uitvoert, schakelt u alle snijtaken uit die op de server worden uitgevoerd. Als u de functie voor uitsnijden uitschakelt, voorkomt u dat de gegevensgenerator handelingen uitvoert die een conflict veroorzaken met actieve uitsnijdtaken en dat onnodige fouten worden voorkomen.
 >
->Als u gebeurtenis met [!DNL Adobe I/O Events for Adobe Commerce] terwijl het testen van prestaties van plan bent uit te voeren, stel dit bevel in werking alvorens [&#x200B; gebeurtenissen &#x200B;](https://developer.adobe.com/commerce/extensibility/events/) in te tekenen. Als u zich eerst abonneert op gebeurtenissen, kunnen er fouten optreden.
+>Als u gebeurtenis met [!DNL Adobe I/O Events for Adobe Commerce] terwijl het testen van prestaties van plan bent uit te voeren, stel dit bevel in werking alvorens [ gebeurtenissen ](https://developer.adobe.com/commerce/extensibility/events/) in te tekenen. Als u zich eerst abonneert op gebeurtenissen, kunnen er fouten optreden.
 
-Voer de opdracht uit zoals in deze sectie wordt beschreven. Na de bevellooppas, moet u [&#x200B; alle indexeerders &#x200B;](../cli/manage-indexers.md) opnieuw indexeren.
+Voer de opdracht uit zoals in deze sectie wordt beschreven. Na de bevellooppas, moet u [ alle indexeerders ](../cli/manage-indexers.md) opnieuw indexeren.
 
 Opdrachtopties:
 
-```bash
+```shell
 bin/magento setup:perf:generate-fixtures <path-to-profile>
 ```
 
@@ -64,13 +64,13 @@ Hier geeft `<path-to-profile>` het absolute pad van het bestandssysteem op naar 
 
 Bijvoorbeeld:
 
-```bash
+```shell
 bin/magento setup:perf:generate-fixtures /var/www/html/magento2/setup/performance-toolkit/profiles/ce/small.xml
 ```
 
 Voorbeelduitvoer voor het kleine profiel:
 
-```
+```text
 Generating profile with following params:
     |- Websites: 1
     |- Store Groups Count: 1
@@ -163,7 +163,7 @@ Genereert prijsregels voor catalogi. XML-profielknooppunt:
 
 ### Categorieën
 
-Hiermee genereert u categorieën. Als `assign_entities_to_all_websites` is ingesteld op `0` , worden alle categorieën gelijkmatig verdeeld per hoofdcategorie. Als dit niet het geval is, worden alle categorieën toegewezen aan één hoofdcategorie.
+Hiermee genereert u categorieën. Als `assign_entities_to_all_websites` is ingesteld op `0` , worden alle categorieën gelijkmatig verdeeld per hoofdcategorie. anders, worden alle categorieën toegewezen aan één wortelcategorie.
 
 XML-profielknooppunt:
 
@@ -380,7 +380,7 @@ XML-profielknooppunt:
 
 ### Eenvoudige producten
 
-Hiermee genereert u eenvoudige producten. De producten worden verdeeld per gebrek en vooraf bepaalde attributenreeksen. Als extra kenmerkenreeksen in profiel als: `<product_attribute_sets>{int}</product_attribute_sets>` worden gespecificeerd, worden de producten ook verdeeld per extra attributenreeksen.
+Hiermee genereert u eenvoudige producten. De producten worden verdeeld per gebrek en vooraf bepaalde attributenreeksen. Als extra kenmerksets in profiel worden opgegeven als: `<product_attribute_sets>{int}</product_attribute_sets>` worden producten ook gedistribueerd per extra kenmerkenset.
 
 Producten worden gelijkmatig verdeeld over categorieën en websites. Als `assign_entities_to_all_websites` is ingesteld op `1` , worden producten toegewezen aan alle websites.
 

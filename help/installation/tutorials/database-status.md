@@ -2,22 +2,22 @@
 title: De databasestatus controleren
 description: Ga als volgt te werk om de status van uw Adobe Commerce-database te controleren.
 exl-id: 33d9b30a-4504-4955-b11a-0a642f23209b
-source-git-commit: ca8dc855e0598d2c3d43afae2e055aa27035a09b
+source-git-commit: 48624d70761117ed0b9f8a7be913fce0572577b6
 workflow-type: tm+mt
 source-wordcount: '104'
-ht-degree: 2%
+ht-degree: 3%
 
 ---
 
 # De databasestatus controleren
 
-Alvorens u dit bevel in werking stelt, moet u [&#x200B; creëren of de plaatsingsconfiguratie &#x200B;](deployment.md) bijwerken.
+Alvorens u dit bevel in werking stelt, moet u [ creëren of de plaatsingsconfiguratie ](deployment.md) bijwerken.
 
 ## Opdrachtgebruik
 
 De status van de database controleren.
 
-```bash
+```shell
 bin/magento setup:db:status
 ```
 
@@ -25,7 +25,7 @@ Deze opdracht heeft geen argumenten of opties.
 
 Monsteruitvoer volgt:
 
-```
+```text
 All modules are up to date.
 ```
 

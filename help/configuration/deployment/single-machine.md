@@ -3,10 +3,10 @@ title: Implementatie van één computer
 description: Leer hoe u updates voor Commerce op een productieserver kunt implementeren via de opdrachtregel.
 feature: Configuration, Deploy
 exl-id: ca73309c-7584-4506-99de-dd933651eeb6
-source-git-commit: 6896d31a202957d7354c3dd5eb6459eda426e8d7
+source-git-commit: 48624d70761117ed0b9f8a7be913fce0572577b6
 workflow-type: tm+mt
-source-wordcount: '180'
-ht-degree: 1%
+source-wordcount: '188'
+ht-degree: 0%
 
 ---
 
@@ -16,78 +16,78 @@ Dit onderwerp verstrekt instructies voor het opstellen van updates aan Commerce 
 
 ## Veronderstellingen
 
-- U installeerde Commerce gebruikend [&#x200B; Composer &#x200B;](../../installation/composer.md).
+- U installeerde Commerce gebruikend [ Composer ](../../installation/composer.md).
 - U past rechtstreeks updates toe op de server.
 
 >[!WARNING]
 >
 >Deze handleiding is niet van toepassing als u Commerce hebt geïnstalleerd met `git clone` .
->De bijdragende ontwikkelaars zouden [&#x200B; deze gids &#x200B;](https://developer.adobe.com/commerce/contributor/guides/install/update-dependencies) moeten gebruiken om hun installatie van Commerce bij te werken.
+>De bijdragende ontwikkelaars zouden [ deze gids ](https://developer.adobe.com/commerce/contributor/guides/install/update-dependencies) moeten gebruiken om hun installatie van Commerce bij te werken.
 
 ## Implementatiestappen
 
-1. Login aan uw productieserver als, of schakelaar aan, de [&#x200B; eigenaar van het dossiersysteem &#x200B;](../../installation/prerequisites/file-system/overview.md).
+1. Login aan uw productieserver als, of schakelaar aan, de [ eigenaar van het dossiersysteem ](../../installation/prerequisites/file-system/overview.md).
 
 1. Map wijzigen in de basismap van Commerce:
 
-   ```bash
+   ```shell
    cd <Commerce base directory>
    ```
 
 1. Onderhoudsmodus inschakelen met de opdracht:
 
-   ```bash
+   ```shell
    bin/magento maintenance:enable
    ```
 
 1. Pas updates toe op Commerce of de componenten ervan met behulp van het volgende opdrachtpatroon:
 
-   ```bash
+   ```shell
    composer require-commerce <package> <version> --no-update
    ```
 
-   **pakket**: De naam van het pakket u wilt bijwerken.
+   **pakket**: De naam van het pakket dat u wilt bijwerken.
 
    Bijvoorbeeld:
 
    - `magento/product-community-edition`
    - `magento/product-enterprise-edition`
 
-   **versie**: De doelversie van het pakket u wilt bijwerken.
+   **versie**: De doelversie van het pakket dat u wilt bijwerken.
 
 1. Componenten bijwerken met Composer:
 
-   ```bash
+   ```shell
    composer update
    ```
 
 1. Werk het databaseschema en de gegevens bij:
 
-   ```bash
+   ```shell
    bin/magento setup:upgrade
    ```
 
 1. Compileer de code:
 
-   ```bash
+   ```shell
    bin/magento setup:di:compile
    ```
 
 1. Statische inhoud implementeren:
 
-   ```bash
+   ```shell
    bin/magento setup:static-content:deploy
    ```
 
 1. De cache reinigen:
 
-   ```bash
+   ```shell
    bin/magento cache:clean
    ```
 
 1. Onderhoudsmodus afsluiten:
 
-   ```bash
+   ```shell
    bin/magento maintenance:disable
    ```
 

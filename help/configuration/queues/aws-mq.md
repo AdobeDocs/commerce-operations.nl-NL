@@ -1,10 +1,10 @@
 ---
 title: Amazon-berichtenwachtrij instellen
-description: Leer hoe u Commerce configureert voor gebruik van de AWS MQ-service.
+description: Leer hoe u Adobe Commerce-berichtenrijen voor Amazon MQ configureert in env.php, inclusief SSL- en TLS-vereisten voor AMQP-verbindingen die klaar zijn voor de cloud.
 exl-id: 463e513f-e8d4-4450-845e-312cbf00d843
-source-git-commit: 95ffff39d82cc9027fa633dffedf15193040802d
+source-git-commit: 41b8d77793f1c24f08ff7e6a2d35826a62477534
 workflow-type: tm+mt
-source-wordcount: '334'
+source-wordcount: '357'
 ht-degree: 0%
 
 ---
@@ -13,7 +13,7 @@ ht-degree: 0%
 
 Vanaf Commerce 2.4.3 is de Rij van het Bericht van Amazon (MQ) beschikbaar als wolkklaar vervanging voor op-gebouw instanties van de berichtrij.
 
-Om een berichtrij op AWS tot stand te brengen, zie [&#x200B; Vestiging Amazon MQ &#x200B;](https://docs.aws.amazon.com/amazon-mq/latest/developer-guide/amazon-mq-setting-up.html) in de _documentatie van AWS_.
+Om een berichtrij op AWS tot stand te brengen, zie [ Vestiging Amazon MQ ](https://docs.aws.amazon.com/amazon-mq/latest/developer-guide/amazon-mq-setting-up.html) in de _documentatie van AWS_.
 
 ## Commerce voor AWS MQ configureren
 
@@ -37,7 +37,7 @@ AWS Message Queue vereist een SSL/TLS-verbinding.
 
 Waarbij:
 
-- `host` - De URL voor het AMQP-eindpunt; beschikbaar door op de naam van de makelaar in AWS te klikken (verwijder &quot;https://&quot; en het navolgende poortnummer)
+- `host` - URL voor het eindpunt AMQP; beschikbaar door op de naam van de makelaar in AWS te klikken (verwijder &quot;https://&quot; en het volgpoortnummer)
 - `user`—De gebruikersnaam die is ingevoerd bij het maken van de AWS MQ-broker
 - `password`—De wachtwoordwaarde die wordt ingevoerd bij het maken van de AWS MQ-broker
 
@@ -47,7 +47,7 @@ Waarbij:
 
 Nadat u het `env.php` -bestand hebt bewerkt, voert u de volgende opdracht uit om de installatie te voltooien:
 
-```bash
+```shell
 bin/magento setup:upgrade
 ```
 
@@ -65,7 +65,7 @@ async.V1.inventory.bulk-product-source-unassign.POST
 async.V1.inventory.bulk-product-source-transfer.POST
 ```
 
-In de standaardconfiguratie voor `InventoryCatalog` worden geen berichten naar [!DNL RabbitMQ] gepubliceerd. Standaard wordt de handeling in dezelfde gebruikersthread uitgevoerd. Schakel `InventoryCatalog` in als u wilt weten dat `cataloginventory/bulk_operations/async` berichten moet publiceren. Van admin, ga **> Configuratie >** Catalogus **>** Inventaris **> de bulkverrichtingen van Admin** aan `Run asynchronously` ja **plaatsen.**
+In de standaardconfiguratie voor `InventoryCatalog` worden geen berichten naar [!DNL RabbitMQ] gepubliceerd. het standaardgedrag moet de actie in de zelfde gebruikersdraad uitvoeren. Schakel `cataloginventory/bulk_operations/async` in als u wilt weten dat `InventoryCatalog` berichten moet publiceren. Van admin, ga **> Configuratie >** Catalogus **>** Inventaris **> de bulkverrichtingen van Admin `Run asynchronously` aan** ja **plaatsen.**
 
 ## De wachtrij met berichten testen
 
@@ -82,7 +82,7 @@ Om het verzenden van berichten van Commerce naar [!DNL RabbitMQ] te testen:
 
 1. Start de consument van de `async.operations.all` wachtrij met berichten.
 
-   ```bash
+   ```shell
    bin/magento queue:consumers:start async.operations.all
    ```
 

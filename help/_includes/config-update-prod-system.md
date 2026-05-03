@@ -1,5 +1,5 @@
 ---
-source-git-commit: d263e412022a89255b7d33b267b696a8bb1bc8a2
+source-git-commit: 48624d70761117ed0b9f8a7be913fce0572577b6
 workflow-type: tm+mt
 source-wordcount: '85'
 ht-degree: 0%
@@ -12,11 +12,11 @@ ht-degree: 0%
 1. Meld u als eigenaar van het bestandssysteem aan bij het productiesysteem.
 1. Schakel over naar de hoofdmap van de toepassing en schakel de onderhoudsmodus in.
 
-   ```bash
+   ```shell
    cd <Magento root dir>
    ```
 
-   ```bash
+   ```shell
    bin/magento maintenance:enable
    ```
 
@@ -32,42 +32,42 @@ ht-degree: 0%
 
 1. Werk de configuratie bij.
 
-   ```bash
+   ```shell
    bin/magento app:config:import
    ```
 
 1. Tot slot `kill` alle actieve consumentenprocessen.
 
-   ```bash
+   ```shell
    kill <PID>
    ```
 
    Waar `PID` de proces-id is die moet worden gedood, bijvoorbeeld:
 
-   ```bash
+   ```shell
    kill 1234
    ```
 
 1. Trek code van broncontrole.
 
-   ```bash
+   ```shell
    git pull mconfig m2.2_deploy
    ```
 
 1. Werk de configuratie bij.
 
-   ```bash
+   ```shell
    bin/magento app:config:import
    ```
 
 1. Maak de cache leeg.
 
-   ```bash
+   ```shell
    bin/magento cache:clean
    ```
 
 1. Eindonderhoudsmodus.
 
-   ```bash
+   ```shell
    bin/magento maintenance:disable
    ```

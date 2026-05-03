@@ -1,18 +1,18 @@
 ---
-title: 'ACSD-63244: Los de kwesties van JavaScript van het admin paneel, met inbegrip van  [!DNL Google Maps]  teruggevende en consolefouten op'
-description: ACSD-63244 herstelt de veelvoudige kwesties van JavaScript in het admin paneel, met inbegrip van problemen met  [!DNL Google Maps]  teruggevend en terugkerend "Uncaught TypeError dit._each is not a function&grave; errors in the browser console.
+title: 'ACSD-6324: Los de kwesties van JavaScript van het admin paneel, met inbegrip van  [!DNL Google Maps]  teruggevende en consolefouten op'
+description: ACSD-63244 herstelt de veelvoudige kwesties van JavaScript in het admin paneel, met inbegrip van problemen met  [!DNL Google Maps]  teruggevend en terugkerend "Uncaught TypeError this._each is geen functie"fouten in de browser console.
 feature: Admin Workspace
 role: Admin, Developer
 exl-id: 1985c845-219e-4af4-8f70-62dd57722494
 type: Troubleshooting
-source-git-commit: 7fdb02a6d89d50ea593c5fd99d78101f89198424
+source-git-commit: 48624d70761117ed0b9f8a7be913fce0572577b6
 workflow-type: tm+mt
-source-wordcount: '323'
+source-wordcount: '338'
 ht-degree: 0%
 
 ---
 
-# ACSD-63244: Los JavaScript-problemen met het deelvenster Beheer op, inclusief [!DNL Google Maps] rendering en consolefouten
+# ACSD-6324: Los JavaScript-problemen in het beheerpaneel op, waaronder [!DNL Google Maps] rendering en consolefouten
 
 De ACSD-63244-patch verhelpt meerdere JavaScript-problemen in het beheerpaneel, zoals problemen met [!DNL Google Maps] rendering en terugkerende `Uncaught TypeError: this._each is not a function` fouten in de browserconsole. Deze patch is beschikbaar bij [[!DNL Quality Patches Tool (QPT)]](/help/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches.md) 1.1.56. De patch-id is ACSD-63244. De kwestie zou volgens de planning in Adobe Commerce 2.4.8 worden opgelost.
 
@@ -28,7 +28,7 @@ Adobe Commerce (alle implementatiemethoden) 2.4.4 - 2.4.7-p3
 
 >[!NOTE]
 >
->De patch kan van toepassing worden op andere versies met nieuwe [!DNL Quality Patches Tool] versies. Om te controleren of de patch compatibel is met uw Adobe Commerce-versie, werkt u het `magento/quality-patches` -pakket bij naar de meest recente versie en controleert u de compatibiliteit op de [[!DNL Quality Patches Tool] : zoek naar patches op de pagina &#x200B;](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html?lang=nl-NL) . Gebruik de patch-id als een zoekwoord om de patch te zoeken.
+>De patch kan van toepassing worden op andere versies met nieuwe [!DNL Quality Patches Tool] versies. Als u wilt controleren of de patch compatibel is met uw Adobe Commerce-versie, werkt u het `magento/quality-patches` -pakket bij naar de meest recente versie en controleert u de compatibiliteit op de [[!DNL Quality Patches Tool] : Zoek naar de pagina van flarden ](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html). Gebruik de patch-id als een zoekwoord om de patch te zoeken.
 
 ## Probleem
 
@@ -40,7 +40,7 @@ Adobe Commerce (alle implementatiemethoden) 2.4.4 - 2.4.7-p3
 1. Laad de gebruikersinterface voor Adobe Commerce-beheer.
 1. Open de browserconsole en voer het volgende script uit:
 
-   ```
+   ```text
    Object.values([] || {}).forEach((function(e) {  
    e("dd")  
    }));  
@@ -54,7 +54,7 @@ De JavaScript-functies die beschikbaar zijn in de standaard JS-bibliotheek worde
 
 JavaScript-fouten worden weergegeven in de browserconsole:
 
-```
+```text
 Uncaught TypeError: this._each is not a function
 ```
 
@@ -62,11 +62,11 @@ Uncaught TypeError: this._each is not a function
 
 Om individuele flarden toe te passen, gebruik de volgende verbindingen afhankelijk van uw plaatsingsmethode:
 
-* Op locatie Adobe Commerce of Magento Open Source: [[!DNL Quality Patches Tool] > Gebruik &#x200B;](/help/tools/quality-patches-tool/usage.md) in de handleiding [!DNL Quality Patches Tool] .
-* Adobe Commerce op wolkeninfrastructuur: [&#x200B; Verbeteringen en Patches > Pas Patches &#x200B;](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html?lang=nl-NL) in Commerce op de gids van de Infrastructuur van de Wolk toe.
+* Adobe Commerce of Magento Open Source ter plaatse: [[!DNL Quality Patches Tool] > Gebruik ](/help/tools/quality-patches-tool/usage.md) in de [!DNL Quality Patches Tool] gids.
+* Adobe Commerce op cloudinfrastructuur: [ Verbeteringen en Patches > pas Patches ](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html) in Commerce op de gids van de Infrastructuur van de Wolk toe.
 
 ## Gerelateerde lezing
 
 Meer informatie over [!DNL Quality Patches Tool] vindt u in:
 
-* [[!DNL Quality Patches Tool]: Een zelfbedieningshulpmiddel voor kwaliteitspatches &#x200B;](/help/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches.md) in de gids van Hulpmiddelen.
+* [[!DNL Quality Patches Tool] : Een zelfbedieningshulpmiddel voor kwaliteitspatches ](/help/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches.md) in de gids van Hulpmiddelen.

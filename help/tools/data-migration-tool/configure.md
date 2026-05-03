@@ -3,9 +3,9 @@ title: Vorm  [!DNL Data Migration Tool]
 description: Leer over de twee methodes om  [!DNL Data Migration Tool]  te vormen om gegevens tussen Magento 1 en Magento 2 over te brengen.
 exl-id: 273be997-8085-4488-a455-f6005a85b406
 topic: Commerce, Migration
-source-git-commit: e83e2359377f03506178c28f8b30993c172282c7
+source-git-commit: 48624d70761117ed0b9f8a7be913fce0572577b6
 workflow-type: tm+mt
-source-wordcount: '808'
+source-wordcount: '811'
 ht-degree: 0%
 
 ---
@@ -15,11 +15,11 @@ ht-degree: 0%
 Nadat u [!DNL Data Migration Tool] hebt geïnstalleerd, bevat de volgende map toewijzings- en configuratiebestanden:
 
 * Magento Open Source:
-   * `<your Magento 2 install dir>/vendor/magento/data-migration-tool/etc/opensource-to-opensource`: Configuratie en scripts voor migratie van Magento Open Source 1 naar Magento Open Source 2
+   * `<your Magento 2 install dir>/vendor/magento/data-migration-tool/etc/opensource-to-opensource` : Configuratie en scripts voor migratie van Magento Open Source 1 naar Magento Open Source 2
 
 * Adobe Commerce:
-   * `<your Magento 2 install dir>/vendor/magento/data-migration-tool/etc/opensource-to-commerce`: Configuratie en scripts voor migratie van Magento Open Source 1 naar Adobe Commerce 2
-   * `<your Magento 2 install dir>/vendor/magento/data-migration-tool/etc/commerce-to-commerce`: Configuratie en scripts voor migratie van Adobe Commerce 1 naar Adobe Commerce 2
+   * `<your Magento 2 install dir>/vendor/magento/data-migration-tool/etc/opensource-to-commerce` : Configuratie en scripts voor migratie van Magento Open Source 1 naar Adobe Commerce 2
+   * `<your Magento 2 install dir>/vendor/magento/data-migration-tool/etc/commerce-to-commerce` : Configuratie en scripts voor migratie van Adobe Commerce 1 naar Adobe Commerce 2
 
 De voorgaande mappen bevatten submappen voor elke ondersteunde versie.
 
@@ -96,17 +96,17 @@ Voordat u gegevens kunt migreren, moet u een Magento 2-module maken.
 
    Als u bijvoorbeeld `Magento 1.9.3.6 Community Edition` naar `Magento 2 Open Source` migreert:
 
-   ```bash
+   ```shell
    cd <your Magento 2 install dir>
    ```
 
-   ```bash
+   ```shell
    cp vendor/magento/data-migration-tool/etc/opensource-to-opensource/1.9.3.6/config.xml.dist app/code/Vendor/Migration/etc/opensource-to-opensource/1.9.3.6/config.xml
    ```
 
 1. In het `config.xml` -bestand moet u toegangsgegevens instellen voor de M1- en M2-databases en de coderingssleutel.
 
-1. Als uw M1-winkel aangepaste wijzigingen heeft, moet u de rest van uw configuratiebestanden toewijzen aan uw Magento 1-winkel-aanpassingen. Zie [&#x200B; Werk met configuratie en kaartdossiers &#x200B;](#migration-config).
+1. Als uw M1-winkel aangepaste wijzigingen heeft, moet u de rest van uw configuratiebestanden toewijzen aan uw Magento 1-winkel-aanpassingen. Zie [ Werk met configuratie en kaartdossiers ](#migration-config).
 
 ### Migratie configureren in map `vendor`
 
@@ -114,17 +114,17 @@ Voordat u gegevens migreert, moet u een `config.xml` -configuratiebestand maken 
 
 U kunt als volgt de [!DNL Data Migration Tool] for migration configureren:
 
-1. Login aan uw toepassingsserver als, of schakelaar aan, de [&#x200B; eigenaar van het dossiersysteem &#x200B;](../../installation/prerequisites/file-system/overview.md).
+1. Login aan uw toepassingsserver als, of schakelaar aan, de [ eigenaar van het dossiersysteem ](../../installation/prerequisites/file-system/overview.md).
 
 1. Ga naar de volgende map:
 
-   ```bash
+   ```shell
    <your Magento 2 install dir>/vendor/magento/data-migration-tool/etc/<migration edition>/<ce or version>
    ```
 
 1. Voer de volgende opdracht in om een `config.xml` van het opgegeven voorbeeld te maken:
 
-   ```bash
+   ```shell
    cp config.xml.dist config.xml
    ```
 
@@ -148,7 +148,7 @@ U kunt als volgt de [!DNL Data Migration Tool] for migration configureren:
 
    Optionele parameters:
 
-   * Wachtwoord databasegebruiker: `password=<password>`
+   * Gebruikerswachtwoord database: `password=<password>`
    * Aangepaste poort database: `port=<port>`
    * Tabelvoorvoegsel: `<source_prefix>`, `<dest_prefix>`
 
@@ -208,8 +208,8 @@ De toewijzingsbestanden gebruiken:
 
 1. Werk het pad naar het zojuist gekopieerde bestand bij in het knooppunt `<options>` van `config.xml` . Het bijgewerkte pad moet een van de volgende zijn:
 
-   1. Absoluut bestandspad, bijvoorbeeld `/var/www/html/app/code/Vendor/Migration/etc/opensource-to-opensource/1.9.4.1/map.xml`
-   1. magento/data-migration-tool module relatief bestandspad: `etc/opensource-to-opensource/1.9.4.1/map.xml`
+   1. Absoluut bestandspad, bijvoorbeeld g. `/var/www/html/app/code/Vendor/Migration/etc/opensource-to-opensource/1.9.4.1/map.xml`
+   1. relatief bestandspad magento/data-migration-tool module: `etc/opensource-to-opensource/1.9.4.1/map.xml`
    1. Magento-pad naar hoofdmapafhankelijk bestand: `app/code/Vendor/Migration/etc/opensource-to-opensource/1.9.4.1/map.xml`
 
 De mappen `<Magento 2 dir>/vendor/magento/data-migration-tool/etc` en `<Magento 2 dir>/vendor/magento/data-migration-tool/etc/<ce version>` bevatten de volgende configuratiebestanden:
@@ -242,4 +242,4 @@ Hoewel u het grootste deel van de tijd met het `map.xml.dist` dossier werkt, bes
 | *slechts Adobe Commerce*. `visual_merchandiser_attribute_groups.xml.dist` | Bevat lijst van attributen die in Stap VisualMerchandiser worden gebruikt. |
 | *slechts Adobe Commerce*. `visual_merchandiser_document_groups.xml.dist` | Bevat lijst van lijsten die in Stap VisualMerchandiser worden gebruikt. |
 
-U kunt naar [[!DNL Data Migration Tool]  Technische Specificatie &#x200B;](technical-specification.md) voor meer details verwijzen.
+U kunt naar [[!DNL Data Migration Tool]  Technische Specificatie ](technical-specification.md) voor meer details verwijzen.

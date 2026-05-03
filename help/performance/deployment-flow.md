@@ -3,9 +3,9 @@ title: Implementatiestroom
 description: Meer informatie over het implementatiestroom voor Adobe Commerce-productieomgevingen. Ontdek stappen om maximale prestaties en betrouwbaarheid te bereiken.
 feature: Best Practices, Deploy
 exl-id: 88da0b1b-5aa7-4f1c-9d01-ae58324b2754
-source-git-commit: 10f324478e9a5e80fc4d28ce680929687291e990
+source-git-commit: 48624d70761117ed0b9f8a7be913fce0572577b6
 workflow-type: tm+mt
-source-wordcount: '473'
+source-wordcount: '478'
 ht-degree: 0%
 
 ---
@@ -16,11 +16,11 @@ De [!DNL Commerce] -workflow voor productieimplementatie helpt een winkel maxima
 
 ## Afhankelijkheden installeren
 
-De `composer.json` - en `composer.lock` -bestanden beheren [!DNL Commerce] -afhankelijkheden en installeren de juiste versie voor elk pakket. U moet gebiedsdelen installeren vóór [&#x200B; preprocessing de instructies van de gebiedsinjectie &#x200B;](#preprocess-dependency-injection-instructions) als u van plan bent om [&#x200B; autoloader &#x200B;](#update-the-autoloader) bij te werken.
+De `composer.json` - en `composer.lock` -bestanden beheren [!DNL Commerce] -afhankelijkheden en installeren de juiste versie voor elk pakket. U moet gebiedsdelen installeren vóór [ preprocessing de instructies van de gebiedsinjectie ](#preprocess-dependency-injection-instructions) als u van plan bent om [ autoloader ](#update-the-autoloader) bij te werken.
 
 Om [!DNL Commerce] gebiedsdelen te installeren:
 
-```bash
+```shell
 composer install --no-dev
 ```
 
@@ -35,13 +35,13 @@ Magento:
 
 Om instructies vooraf te verwerken en te compileren DI:
 
-```bash
+```shell
 bin/magento setup:di:compile
 ```
 
 ## De autoloader bijwerken
 
-Na compilatie voltooit, bevestig dat [&#x200B; APCu &#x200B;](../performance/software.md#php-settings) wordt toegelaten en autoloader bijwerkt:
+Na compilatie voltooit, bevestig dat [ APCu ](../performance/software.md#php-settings) wordt toegelaten en autoloader bijwerkt:
 
 De autoloader bijwerken:
 
@@ -49,25 +49,25 @@ De autoloader bijwerken:
 >
 >Met de optie `-o` wordt automatisch laden van PSR-0/4 omgezet in een klasse-toewijzing voor een snellere autoloader. De optie `--apcu` gebruikt APCu om gevonden/niet-gevonden klassen in de cache op te slaan.
 
-```bash
+```shell
 composer dump-autoload -o --apcu
 ```
 
 Als u van plan bent om autoloader bij te werken, moet u de volgende bevelen in orde in werking stellen:
 
-```bash
+```shell
 composer install --no-dev
 ```
 
-```bash
+```shell
 bin/magento setup:di:compile
 ```
 
-```bash
+```shell
 composer dump-autoload -o
 ```
 
-```bash
+```shell
 bin/magento setup:static-content:deploy
 ```
 
@@ -83,11 +83,11 @@ Door het implementeren van statische inhoud voert [!DNL Commerce] de volgende ha
 
 Als uw statische inhoud niet wordt geïmplementeerd, voert [!DNL Commerce] alle vermelde bewerkingen direct uit, wat resulteert in een aanzienlijke toename van de responstijd.
 
-U kunt een verscheidenheid van opties gebruiken om plaatsingsverrichtingen aan te passen die op archiefgrootte en vervulling behoeften worden gebaseerd. Het meest algemeen is compact opstellen strategie. Zie [&#x200B; Statische strategieën van de dossierplaatsing &#x200B;](../configuration/cli/static-view-file-strategy.md)
+U kunt een verscheidenheid van opties gebruiken om plaatsingsverrichtingen aan te passen die op archiefgrootte en vervulling behoeften worden gebaseerd. Het meest algemeen is compact opstellen strategie. Zie [ Statische strategieën van de dossierplaatsing ](../configuration/cli/static-view-file-strategy.md)
 
 Statische inhoud implementeren:
 
-```bash
+```shell
 bin/magento setup:static-content:deploy
 ```
 
@@ -105,7 +105,7 @@ Tot slot moet u uw winkel in de productiemodus plaatsen. De productiemodus is sp
 
 U kunt statische inhoud ook opstellen, de inhoud compileren, en de wijze in één CLI bevel plaatsen:
 
-```bash
+```shell
 bin/magento deploy:mode:set production
 ```
 
