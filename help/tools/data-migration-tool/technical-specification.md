@@ -16,11 +16,11 @@ In deze sectie worden de implementatiedetails van [!DNL Data Migration Tool] bes
 
 ## Opslagplaatsen
 
-Om tot de [!DNL Data Migration Tool] broncode toegang te hebben, zie de [ bewaarplaats GitHub ](https://github.com/magento/data-migration-tool).
+Om tot de [!DNL Data Migration Tool] broncode toegang te hebben, zie de [&#x200B; bewaarplaats GitHub &#x200B;](https://github.com/magento/data-migration-tool).
 
 ## Systeemvereisten
 
-De [ systeemvereisten ](../../installation/system-requirements.md) voor [!DNL Data Migration Tool] zijn het zelfde als voor Magento 2.
+De [&#x200B; systeemvereisten &#x200B;](../../installation/system-requirements.md) voor [!DNL Data Migration Tool] zijn het zelfde als voor Magento 2.
 
 ## Interne structuur
 
@@ -109,7 +109,7 @@ Het script waarmee het migratieproces wordt uitgevoerd, bevindt zich in: `magent
 
 Het schema voor het configuratiebestand `config.xsd` bevindt zich in de map `etc/` . Het standaardconfiguratiebestand (`config.xml.dist`) wordt gemaakt voor elke versie van Magento 1.x. Deze bevindt zich in een aparte map onder `etc/` .
 
-Het standaardconfiguratiedossier kan door douane worden vervangen één (zie [ bevelsyntaxis ](migrate-data/overview.md#command-syntax)).
+Het standaardconfiguratiedossier kan door douane worden vervangen één (zie [&#x200B; bevelsyntaxis &#x200B;](migrate-data/overview.md#command-syntax)).
 
 Het configuratiebestand heeft de volgende structuur:
 
@@ -227,7 +227,7 @@ Het migratieproces bestaat uit stappen.
 
 Stap is een eenheid die functionaliteit verstrekt die voor migratie sommige gescheiden gegevens wordt vereist. De stap kan uit één of meerdere stadia (integriteitscontrole, gegevens, volumecontrole, en delta) bestaan.
 
-Door gebrek, zijn er verscheidene stappen ([ Kaart ](#map-step), [ EAV ](#eav), [ URL herschrijft ](#url-rewrite-step), etc.). U kunt desgewenst ook uw eigen stappen toevoegen.
+Door gebrek, zijn er verscheidene stappen ([&#x200B; Kaart &#x200B;](#map-step), [&#x200B; EAV &#x200B;](#eav), [&#x200B; URL herschrijft &#x200B;](#url-rewrite-step), etc.). U kunt desgewenst ook uw eigen stappen toevoegen.
 
 De stappen verwante klassen worden gevestigd in de src/Migration/Step folder.
 
@@ -265,7 +265,7 @@ class StageClass implements StageInterface
 
 Als het gegevenswerkgebied terugdraaiacties ondersteunt, moet de interface `RollbackInterface` worden geïmplementeerd.
 
-Visualisatie van de lopende stap wordt verstrekt door de component ProgressBar van Symfony (zie [ bar van de Voortgang ](https://symfony.com/doc/current/components/console/helpers/progressbar.html)). Open deze component in een stap als LogLevelProcessor.
+Visualisatie van de lopende stap wordt verstrekt door de component ProgressBar van Symfony (zie [&#x200B; bar van de Voortgang &#x200B;](https://symfony.com/doc/current/components/console/helpers/progressbar.html)). Open deze component in een stap als LogLevelProcessor.
 
 De belangrijkste gebruiksmethoden zijn:
 
@@ -453,7 +453,7 @@ Enkele tabellen die in de stap worden verwerkt:
 
 ### Delta-migratiemodus
 
-Na de hoofdmigratie hadden aanvullende gegevens kunnen worden toegevoegd aan de Magento 1-database (bijvoorbeeld door klanten op de winkel). Om deze gegevens te volgen, plaatst het Hulpmiddel omhoog de gegevensbestandtrekkers voor lijsten in het begin van migratieproces. Voor meer informatie, zie [ gegevens migreren die door derdeuitbreidingen ](migrate-data/delta.md#migrate-data-created-by-third-party-extensions) worden gecreeerd.
+Na de hoofdmigratie hadden aanvullende gegevens kunnen worden toegevoegd aan de Magento 1-database (bijvoorbeeld door klanten op de winkel). Om deze gegevens te volgen, plaatst het Hulpmiddel omhoog de gegevensbestandtrekkers voor lijsten in het begin van migratieproces. Voor meer informatie, zie [&#x200B; gegevens migreren die door derdeuitbreidingen &#x200B;](migrate-data/delta.md#migrate-data-created-by-third-party-extensions) worden gecreeerd.
 
 ## Gegevensbronnen
 
@@ -461,7 +461,7 @@ Om de gegevensbronnen van Magento 1 en Magento 2 te bereiken en met zijn gegeven
 
 Hier volgt een klassediagram van deze klassen:
 
-![ Structuur van de Gegevens van het Hulpmiddel van de Migratie ](../../assets/data-migration/MmigrationToolDataStructure.png)
+![&#x200B; Structuur van de Gegevens van het Hulpmiddel van de Migratie &#x200B;](../../assets/data-migration/MmigrationToolDataStructure.png)
 
 ## Logboekregistratie
 

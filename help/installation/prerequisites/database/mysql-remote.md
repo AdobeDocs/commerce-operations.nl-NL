@@ -39,8 +39,8 @@ De waarde `db-host` is de URL van Aurora, waarbij de URL `https://` en de URL aa
 
 Voordat u begint, moet u:
 
-* [ installeer server MySQL ](mysql.md) op de gegevensbestandserver.
-* [ creeer een gegevensbestandinstantie ](mysql.md#configuring-the-database-instance) op de gegevensbestandserver.
+* [&#x200B; installeer server MySQL &#x200B;](mysql.md) op de gegevensbestandserver.
+* [&#x200B; creeer een gegevensbestandinstantie &#x200B;](mysql.md#configuring-the-database-instance) op de gegevensbestandserver.
 * Installeer de MySQL-client op het Adobe Commerce-webknooppunt. Raadpleeg MySQL-documentatie voor meer informatie.
 
 ### Hoge beschikbaarheid
@@ -50,7 +50,7 @@ Gebruik de volgende richtlijnen om externe databaseverbindingen te configureren 
 * U moet een verbinding voor elke knoop van de Webserver vormen.
 * Meestal configureert u een databaseverbinding met het taakverdelingsmechanisme van de database. nochtans, gegevensbestand dat zich groepeert kan complex zijn en het vormen is aan u. Adobe doet geen specifieke aanbevelingen voor database-clustering.
 
-  Voor meer informatie, zie [ documentatie MySQL ](https://dev.mysql.com/doc/refman/5.6/en/mysql-cluster.html).
+  Voor meer informatie, zie [&#x200B; documentatie MySQL &#x200B;](https://dev.mysql.com/doc/refman/5.6/en/mysql-cluster.html).
 
 ### Verbindingsproblemen oplossen
 
@@ -89,7 +89,7 @@ Een externe verbinding maken:
    bind-address = <ip address of your web node>
    ```
 
-   Zie [ documentatie MySQL ](https://dev.mysql.com/doc/refman/5.6/en/server-options.html), vooral als u een gegroepeerde Webserver hebt.
+   Zie [&#x200B; documentatie MySQL &#x200B;](https://dev.mysql.com/doc/refman/5.6/en/server-options.html), vooral als u een gegroepeerde Webserver hebt.
 
 1. Sla de wijzigingen in het configuratiebestand op en sluit de teksteditor af.
 1. Start de MySQL-service opnieuw:
@@ -100,7 +100,7 @@ Een externe verbinding maken:
 
    >[!NOTE]
    >
-   >Als MySQL er niet in slaagt om te beginnen, zoek in syslog naar de bron van de kwestie. Los de kwestie op gebruikend [ documentatie MySQL ](https://dev.mysql.com/doc/refman/5.6/en/server-options.html#option_mysqld_bind-address) of een andere gebiedende bron.
+   >Als MySQL er niet in slaagt om te beginnen, zoek in syslog naar de bron van de kwestie. Los de kwestie op gebruikend [&#x200B; documentatie MySQL &#x200B;](https://dev.mysql.com/doc/refman/5.6/en/server-options.html#option_mysqld_bind-address) of een andere gebiedende bron.
 
 ## Toegang tot een databasegebruiker verlenen
 
@@ -156,7 +156,7 @@ Als uw webserver is geclusterd, voert u de opdracht in op elke host van de webse
 Wanneer u Adobe Commerce installeert, moet u het volgende opgeven:
 
 * De basis URL (die ook als *wordt bedoeld opslagadres*) specificeert hostname of IP adres van de *Webknoop*
-* De gastheer van het gegevensbestand is het *IP van de 0} verre gegevensbestandserver {adres (of ladingsverdelingsmechanisme als de gegevensbestandserver gegroepeerd is)*
+* De gastheer van het gegevensbestand is het *IP van de 0&rbrace; verre gegevensbestandserver &lbrace;adres (of ladingsverdelingsmechanisme als de gegevensbestandserver gegroepeerd is)*
 * De gebruikersbenaming van het gegevensbestand is de *lokale knoop van het Web* gegevensbestandgebruiker waaraan u toegang gaf
 * Databasewachtwoord is het wachtwoord van de gebruiker van het lokale webknooppunt
 * Databasenaam is de naam van de database op de externe server

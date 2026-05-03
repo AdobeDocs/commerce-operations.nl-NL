@@ -15,7 +15,7 @@ ht-degree: 0%
 
 {{file-system-owner}}
 
-Het nut-ook wordt bedoeld van de Steun van Adobe Commerce als [ Collector van Gegevens ](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/tools/support#data-collector) - laat gebruikers toe om het oplossen van problemeninformatie over uw systeem te verzamelen die door ons team van de Steun kan worden gebruikt.
+Het nut-ook wordt bedoeld van de Steun van Adobe Commerce als [&#x200B; Collector van Gegevens &#x200B;](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/tools/support#data-collector) - laat gebruikers toe om het oplossen van problemeninformatie over uw systeem te verzamelen die door ons team van de Steun kan worden gebruikt.
 
 Adobe Commerce gebruikt deze steunen, die ook als _worden bedoeld dumps_, om kwesties te analyseren die toegang tot uw code vereisen. Een typisch scenario volgt:
 

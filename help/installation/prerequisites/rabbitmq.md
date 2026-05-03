@@ -22,7 +22,7 @@ Het systeem van de berichtrij moet worden gevestigd alvorens u Adobe Commerce in
 
 >[!NOTE]
 >
->U kunt MySQL of [!DNL RabbitMQ] gebruiken voor de verwerking van de berichtwachtrij. Voor details bij vestiging het systeem van de berichtrij, zie [ een rij van het Bericht overzicht ](https://developer.adobe.com/commerce/php/development/components/message-queues/). Als u de Bulk-API met Adobe Commerce gebruikt, wordt de systeemconfiguratie van de wachtrij voor berichten standaard ingesteld op het gebruik van [!DNL RabbitMQ] als de berichtenbroker. Zie [ de gebruikers van de het berichtrij van het Begin ](../../configuration/cli/start-message-queues.md) voor meer informatie.
+>U kunt MySQL of [!DNL RabbitMQ] gebruiken voor de verwerking van de berichtwachtrij. Voor details bij vestiging het systeem van de berichtrij, zie [&#x200B; een rij van het Bericht overzicht &#x200B;](https://developer.adobe.com/commerce/php/development/components/message-queues/). Als u de Bulk-API met Adobe Commerce gebruikt, wordt de systeemconfiguratie van de wachtrij voor berichten standaard ingesteld op het gebruik van [!DNL RabbitMQ] als de berichtenbroker. Zie [&#x200B; de gebruikers van de het berichtrij van het Begin &#x200B;](../../configuration/cli/start-message-queues.md) voor meer informatie.
 
 ## [!DNL RabbitMQ] installeren op Ubuntu
 
@@ -36,10 +36,10 @@ Deze opdracht installeert ook de vereiste Erlang-pakketten.
 
 Als u een oudere versie van Ubuntu hebt, raadt [!DNL RabbitMQ] u aan het pakket vanaf hun website te installeren.
 
-1. Download het .deb pakket van [ rabbitmq-server ](https://www.rabbitmq.com/download.html).
+1. Download het .deb pakket van [&#x200B; rabbitmq-server &#x200B;](https://www.rabbitmq.com/download.html).
 1. Installeer het pakket met `dpkg` .
 
-Verwijs naar [ het Installeren op Debian/Ubuntu ](https://www.rabbitmq.com/install-debian.html) voor meer informatie.
+Verwijs naar [&#x200B; het Installeren op Debian/Ubuntu &#x200B;](https://www.rabbitmq.com/install-debian.html) voor meer informatie.
 
 ## [!DNL RabbitMQ] installeren op CentOS
 
@@ -47,9 +47,9 @@ Verwijs naar [ het Installeren op Debian/Ubuntu ](https://www.rabbitmq.com/insta
 
 [!DNL RabbitMQ] is geschreven met de programmeertaal Erlang, die op hetzelfde systeem moet worden geïnstalleerd als [!DNL RabbitMQ] .
 
-Zie [ Handmatige installatie ](https://www.erlang-solutions.com/downloads/) voor meer informatie.
+Zie [&#x200B; Handmatige installatie &#x200B;](https://www.erlang-solutions.com/downloads/) voor meer informatie.
 
-Raadpleeg de [[!DNL RabbitMQ] /Erlang-versiematrix ](https://www.rabbitmq.com/which-erlang.html) om de juiste versie te installeren.
+Raadpleeg de [[!DNL RabbitMQ] /Erlang-versiematrix &#x200B;](https://www.rabbitmq.com/which-erlang.html) om de juiste versie te installeren.
 
 ### Installeren [!DNL RabbitMQ]
 
@@ -57,7 +57,7 @@ De [!DNL RabbitMQ] -server wordt opgenomen in CentOS, maar de versie is vaak oud
 
 Raadpleeg de installatiepagina van [!DNL RabbitMQ] voor de nieuwste ondersteunde versie. Adobe Commerce 2.3 en 2.4 ondersteunen [!DNL RabbitMQ] 3.8.x.
 
-Verwijs naar [ het Installeren op op RPM-Gebaseerde Linux ](https://www.rabbitmq.com/install-rpm.html) voor meer informatie.
+Verwijs naar [&#x200B; het Installeren op op RPM-Gebaseerde Linux &#x200B;](https://www.rabbitmq.com/install-rpm.html) voor meer informatie.
 
 ## Configureren [!DNL RabbitMQ]
 
@@ -140,4 +140,4 @@ Als u ondersteuning voor SSL wilt configureren, bewerkt u de parameters `ssl` en
 
 ## Gebruikers in de wachtrij met berichten starten
 
-Nadat u Adobe Commerce en [!DNL RabbitMQ] hebt verbonden, moet u de gebruikers van de berichtrij beginnen. Zie [ berichtrijen ](../../configuration/cli/start-message-queues.md) voor details vormen.
+Nadat u Adobe Commerce en [!DNL RabbitMQ] hebt verbonden, moet u de gebruikers van de berichtrij beginnen. Zie [&#x200B; berichtrijen &#x200B;](../../configuration/cli/start-message-queues.md) voor details vormen.

@@ -13,7 +13,7 @@ ht-degree: 0%
 
 {{file-system-owner}}
 
-U moet de consument van de a [ rij van de berichtrij ](../queues/consumers.md) beginnen om asynchrone verrichtingen zoals de massaacties van Inventory management en REST bulkgoederen en asynchrone eindpunten toe te laten. Om B2B functionaliteit toe te laten, moet u veelvoudige consumenten beginnen. De modules van de derde zouden ook kunnen vereisen dat u een douaneconsument begint.
+U moet de consument van de a [&#x200B; rij van de berichtrij &#x200B;](../queues/consumers.md) beginnen om asynchrone verrichtingen zoals de massaacties van Inventory management en REST bulkgoederen en asynchrone eindpunten toe te laten. Om B2B functionaliteit toe te laten, moet u veelvoudige consumenten beginnen. De modules van de derde zouden ook kunnen vereisen dat u een douaneconsument begint.
 
 Een lijst met alle consumenten weergeven:
 

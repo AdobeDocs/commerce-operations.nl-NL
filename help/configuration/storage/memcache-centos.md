@@ -12,7 +12,7 @@ ht-degree: 0%
 
 # In cache plaatsen op CentOS
 
-In deze sectie vindt u instructies voor het installeren van een memcachegeheugen op CentOS. Voor extra informatie, raadpleeg [ memcached wiki ](https://github.com/memcached/old-wiki).
+In deze sectie vindt u instructies voor het installeren van een memcachegeheugen op CentOS. Voor extra informatie, raadpleeg [&#x200B; memcached wiki &#x200B;](https://github.com/memcached/old-wiki).
 
 >[!INFO]
 >
@@ -21,11 +21,11 @@ In deze sectie vindt u instructies voor het installeren van een memcachegeheugen
 Omdat PHP geen native ondersteuning heeft voor memcache, moet je een extensie installeren voor PHP om deze te kunnen gebruiken. Er zijn twee PHP-extensies beschikbaar en het is belangrijk te decoderen welke extensie moet worden gebruikt:
 
 - `memcache` (_geen d_) - een oudere maar populaire uitbreiding die niet regelmatig wordt gehandhaafd.
-De `memcache` uitbreiding momenteel _werkt niet_ met PHP 7. Zie [ PHP documentatie voor memcache ](https://www.php.net/manual/en/book.memcache.php).
+De `memcache` uitbreiding momenteel _werkt niet_ met PHP 7. Zie [&#x200B; PHP documentatie voor memcache &#x200B;](https://www.php.net/manual/en/book.memcache.php).
 
   De exacte naam is `php-pecl-memcache` voor CentOS.
 
-- `memcached` (_met a`d`_) - een nieuwere en bewaarde uitbreiding die met PHP 7 compatibel is. Zie [ PHP documentatie voor in het geheugen ondergebracht ](https://www.php.net/manual/en/book.memcached.php).
+- `memcached` (_met a`d`_) - een nieuwere en bewaarde uitbreiding die met PHP 7 compatibel is. Zie [&#x200B; PHP documentatie voor in het geheugen ondergebracht &#x200B;](https://www.php.net/manual/en/book.memcached.php).
 
   De exacte naam is `php-pecl-memcached` voor CentOS.
 
@@ -106,7 +106,7 @@ Om te controleren dat het in een cache plaatsen wordt herkend door de webserver:
 
 1. Controleer of de geheugencache als volgt wordt weergegeven:
 
-![ Bevestig memcache wordt erkend door de Webserver ](../../assets/configuration/memcache.png)
+![&#x200B; Bevestig memcache wordt erkend door de Webserver &#x200B;](../../assets/configuration/memcache.png)
 
 Controleer of u versie 3.0.5 of hoger uit het geheugen gebruikt.
 

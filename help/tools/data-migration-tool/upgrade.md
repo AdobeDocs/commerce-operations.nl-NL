@@ -26,7 +26,7 @@ Voordat u de upgrade van [!DNL Data Migration Tool] uitvoert, moet u:
 
 ### Upgrade uw Magento-software
 
-Als u dit nog niet hebt gedaan, [ bevorder de software van Magento ](../../upgrade/overview.md).
+Als u dit nog niet hebt gedaan, [&#x200B; bevorder de software van Magento &#x200B;](../../upgrade/overview.md).
 
 ### Maak een back-up van de map `vendor/magento/data-migration-tool`
 
@@ -47,17 +47,17 @@ php <magento_root>/bin/magento setup:backup --code --db
 
 De versies van [!DNL Data Migration Tool] en uw Magento-software moeten exact overeenkomen. Magento 2.1.2 vereist bijvoorbeeld versie 2.1.2 van de [!DNL Data Migration Tool] .
 
-Zie [ installeer  [!DNL Data Migration Tool]](install.md) onderwerp om te weten hoe te:
+Zie [&#x200B; installeer  [!DNL Data Migration Tool]](install.md) onderwerp om te weten hoe te:
 
-* [ Controle ](install.md#check-your-version) uw versie van Magento 2
+* [&#x200B; Controle &#x200B;](install.md#check-your-version) uw versie van Magento 2
 
-* [ vind ](install.md#find-released-versions-of-data-migration-tool) vrijgegeven versies van [!DNL Data Migration Tool]
+* [&#x200B; vind &#x200B;](install.md#find-released-versions-of-data-migration-tool) vrijgegeven versies van [!DNL Data Migration Tool]
 
-* [ Controle ](install.md#check-version-of-installed-data-migration-tool) de [!DNL Data Migration Tool] versie
+* [&#x200B; Controle &#x200B;](install.md#check-version-of-installed-data-migration-tool) de [!DNL Data Migration Tool] versie
 
 ## Een upgrade uitvoeren van de [!DNL Data Migration Tool]
 
-1. Login aan uw toepassingsserver als, of schakelaar aan, [ de eigenaar van het dossiersysteem ](../../installation/prerequisites/file-system/overview.md).
+1. Login aan uw toepassingsserver als, of schakelaar aan, [&#x200B; de eigenaar van het dossiersysteem &#x200B;](../../installation/prerequisites/file-system/overview.md).
 1. Wijzig de hoofdmap van de toepassing.
 1. Voer de volgende opdracht in:
 

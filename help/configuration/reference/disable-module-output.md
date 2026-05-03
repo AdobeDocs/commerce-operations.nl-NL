@@ -72,7 +72,7 @@ Wis vervolgens de cache om de nieuwe instelling in te schakelen:
 bin/magento cache:clean config
 ```
 
-Zie [ de configuratie ](../cli/export-configuration.md) uitvoeren.
+Zie [&#x200B; de configuratie &#x200B;](../cli/export-configuration.md) uitvoeren.
 
 ## Module-uitvoer uitschakelen in een eenvoudige implementatie
 

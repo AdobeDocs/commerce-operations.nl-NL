@@ -17,9 +17,9 @@ In dit onderwerp wordt besproken hoe u vereiste PHP-opties kunt instellen.
 
 >[!NOTE]
 >
->Ondersteunde PHP-versies verschillen per Adobe Commerce-release. Zie [ systeemvereisten ](../system-requirements.md) voor de nauwkeurige PHP versies die door de versie worden gesteund u installeert.
+>Ondersteunde PHP-versies verschillen per Adobe Commerce-release. Zie [&#x200B; systeemvereisten &#x200B;](../system-requirements.md) voor de nauwkeurige PHP versies die door de versie worden gesteund u installeert.
 
-Voor de configuratiebegeleiding van de Wolk, zie [ PHP montages ](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/configure/app/php-settings) in _Commerce op de gids van de Infrastructuur van de Wolk_.
+Voor de configuratiebegeleiding van de Wolk, zie [&#x200B; PHP montages &#x200B;](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/configure/app/php-settings) in _Commerce op de gids van de Infrastructuur van de Wolk_.
 
 ## PHP Process Control
 
@@ -65,7 +65,7 @@ Geïnstalleerde extensies controleren:
 
 >[!WARNING]
 >
->Als u het oplossen van problemen een erfenismilieu door PHP [ wordt beïnvloed insect 81101 ](https://bugs.php.net/bug.php?id=81101), plaats `pcre.jit=0` in uw `php.ini` dossier om rond de kwestie te werken waar CSS niet laadt.
+>Als u het oplossen van problemen een erfenismilieu door PHP [&#x200B; wordt beïnvloed insect 81101 &#x200B;](https://bugs.php.net/bug.php?id=81101), plaats `pcre.jit=0` in uw `php.ini` dossier om rond de kwestie te werken waar CSS niet laadt.
 
 - Stel de systeemtijdzone voor PHP in. anders werken fouten zoals de volgende weergave tijdens de installatie en bewerkingen met betrekking tot tijd zoals cron mogelijk niet:
 
@@ -88,11 +88,11 @@ PHP Warning:  date(): It is not safe to rely on the system's timezone settings. 
   realpath_cache_ttl=7200
   ```
 
-  Met deze instellingen kunnen PHP-processen paden naar bestanden in cache plaatsen in plaats van ze te bekijken bij het laden van de pagina. Zie [ Prestaties die ](https://www.php.net/manual/en/ini.core.php) in de PHP documentatie stempelen.
+  Met deze instellingen kunnen PHP-processen paden naar bestanden in cache plaatsen in plaats van ze te bekijken bij het laden van de pagina. Zie [&#x200B; Prestaties die &#x200B;](https://www.php.net/manual/en/ini.core.php) in de PHP documentatie stempelen.
 
-- Schakel [`opcache.save_comments` ](https://www.php.net/manual/en/opcache.configuration.php#ini.opcache.save-comments) in. Dit is vereist voor Adobe Commerce 2.1 en hoger.
+- Schakel [`opcache.save_comments` &#x200B;](https://www.php.net/manual/en/opcache.configuration.php#ini.opcache.save-comments) in. Dit is vereist voor Adobe Commerce 2.1 en hoger.
 
-  Adobe adviseert toelatend [ PHP OPcache ](https://www.php.net/manual/en/book.opcache.php) voor prestatiesredenen. De OPcache is in veel PHP distributies ingeschakeld.
+  Adobe adviseert toelatend [&#x200B; PHP OPcache &#x200B;](https://www.php.net/manual/en/book.opcache.php) voor prestatiesredenen. De OPcache is in veel PHP distributies ingeschakeld.
 
   Adobe Commerce 2.1 en hoger gebruiken PHP-codeopmerkingen voor het genereren van code.
 
@@ -106,9 +106,9 @@ In deze sectie wordt beschreven hoe u de configuratiebestanden vindt die nodig z
 
 ### Configuratiebestand `php.ini` zoeken
 
-Als u de webserverconfiguratie wilt zoeken, voert u een [`phpinfo.php` bestand ](optional-software.md#create-phpinfophp) in uw webbrowser uit en zoekt u de `Loaded Configuration File` als volgt:
+Als u de webserverconfiguratie wilt zoeken, voert u een [`phpinfo.php` bestand &#x200B;](optional-software.md#create-phpinfophp) in uw webbrowser uit en zoekt u de `Loaded Configuration File` als volgt:
 
-![ PHP- infopagina ](../../assets/installation/config_phpini-webserver.png)
+![&#x200B; PHP- infopagina &#x200B;](../../assets/installation/config_phpini-webserver.png)
 
 Als u de PHP opdrachtregelconfiguratie wilt zoeken, typt u
 
@@ -147,7 +147,7 @@ Als u meer dan één `opcache.ini` hebt, wijzigt u ze allemaal.
 PHP-opties instellen:
 
 1. Open een `php.ini` in een teksteditor.
-1. Bepaal de plaats van de tijdzone van uw server in de beschikbare [ montages van de tijdzone ](https://www.php.net/manual/en/timezones.php)
+1. Bepaal de plaats van de tijdzone van uw server in de beschikbare [&#x200B; montages van de tijdzone &#x200B;](https://www.php.net/manual/en/timezones.php)
 1. Zoek de volgende instelling en verwijder indien nodig de commentaarmarkering:
 
    ```conf

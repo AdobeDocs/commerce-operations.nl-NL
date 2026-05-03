@@ -14,7 +14,7 @@ ht-degree: 0%
 
 {{ee-only}}
 
-Voor de klanten van Adobe Commerce die [ Gesplitste Gegevensbestand ](multi-master.md) hebben uitgevoerd, beschrijft het volgende onderwerp hoe te terug naar één enkel gegevensbestand terugkeren of migreren. Wij adviseren dat de verkopers van Adobe Commerce momenteel het Gesplitste Gegevensbestand gebruiken en van plan zijn om aan 2.4.2 te bevorderen en later deze stappen te herzien.
+Voor de klanten van Adobe Commerce die [&#x200B; Gesplitste Gegevensbestand &#x200B;](multi-master.md) hebben uitgevoerd, beschrijft het volgende onderwerp hoe te terug naar één enkel gegevensbestand terugkeren of migreren. Wij adviseren dat de verkopers van Adobe Commerce momenteel het Gesplitste Gegevensbestand gebruiken en van plan zijn om aan 2.4.2 te bevorderen en later deze stappen te herzien.
 
 Als u een gesplitste database wilt terugzetten naar één database, maakt u back-ups van de `magento_quote` - en `magento_sales` -databases voordat u deze laadt in de enige `magento_main` -database.
 
@@ -65,7 +65,7 @@ In dit voorbeeld, login aan alle drie gegevensbestanden, die op de zelfde gasthe
 
 ## Uw werk controleren
 
-Om te verifiëren dat uw enige gegevensbestandimplementatie behoorlijk werkt, voer de volgende taken uit en verifieer dat het gegeven aan de `magento_main` gegevensbestandlijsten gebruikend een gegevensbestandhulpmiddel zoals [ phpMyAdmin ](../../installation/prerequisites/optional-software.md#phpmyadmin) wordt toegevoegd:
+Om te verifiëren dat uw enige gegevensbestandimplementatie behoorlijk werkt, voer de volgende taken uit en verifieer dat het gegeven aan de `magento_main` gegevensbestandlijsten gebruikend een gegevensbestandhulpmiddel zoals [&#x200B; phpMyAdmin &#x200B;](../../installation/prerequisites/optional-software.md#phpmyadmin) wordt toegevoegd:
 
 1. Controleer of vreemde sleutels zijn hersteld. Bijvoorbeeld de `QUOTE_STORE_ID_STORE_STORE_ID` -toets in de `quote` -databasetabel.
 1. Verifieer dat de klanten orden van de opslagront kunnen plaatsen.

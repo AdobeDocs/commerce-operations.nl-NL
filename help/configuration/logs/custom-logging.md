@@ -20,7 +20,7 @@ Adobe raadt u aan om gecentraliseerde registratie van toepassingen te gebruiken 
 
 - Hierdoor kunnen logbestanden worden opgeslagen op een andere server dan de toepassingsserver en worden I/O-bewerkingen op de schijf verminderd, waardoor de ondersteuning van de toepassingsserver wordt vereenvoudigd.
 
-- Het maakt de verwerking van logboekgegevens effectiever door speciale hulpmiddelen-zulke als [ Logstash ](https://www.elastic.co/products/logstash), [ Logplex ](https://devcenter.heroku.com/articles/logplex), of [ fluentd ](https://www.fluentd.org/) te gebruiken - zonder effect aan een productieserver.
+- Het maakt de verwerking van logboekgegevens effectiever door speciale hulpmiddelen-zulke als [&#x200B; Logstash &#x200B;](https://www.elastic.co/products/logstash), [&#x200B; Logplex &#x200B;](https://devcenter.heroku.com/articles/logplex), of [&#x200B; fluentd &#x200B;](https://www.fluentd.org/) te gebruiken - zonder effect aan een productieserver.
 
   >[!INFO]
   >
@@ -28,13 +28,13 @@ Adobe raadt u aan om gecentraliseerde registratie van toepassingen te gebruiken 
 
 ## Compatibiliteit met PSR-3
 
-De [ norm PSR-3 ](https://docs.laminas.dev/laminas-log/) bepaalt een gemeenschappelijke PHP interface voor registrerenbibliotheken. Het hoofddoel van PSR-3 is bibliotheken toe te staan om een `Psr\Log\LoggerInterface` voorwerp te ontvangen en logboeken aan het te schrijven op een eenvoudige en universele manier.
+De [&#x200B; norm PSR-3 &#x200B;](https://docs.laminas.dev/laminas-log/) bepaalt een gemeenschappelijke PHP interface voor registrerenbibliotheken. Het hoofddoel van PSR-3 is bibliotheken toe te staan om een `Psr\Log\LoggerInterface` voorwerp te ontvangen en logboeken aan het te schrijven op een eenvoudige en universele manier.
 
 Hierdoor kan de implementatie gemakkelijk worden vervangen zonder dat er zorgen zijn dat deze vervanging de toepassingscode kan doorbreken. Het waarborgt ook een douanecomponent zal werken zelfs wanneer de logboekimplementatie in een toekomstige versie van het systeem wordt veranderd.
 
 ## Monolog
 
-Commerce 2 voldoet aan de norm PSR-3. Door gebrek, gebruikt Commerce [ Monolog ](https://github.com/Seldaek/monolog). Monolog uitgevoerd als voorkeur voor `Psr\Log\LoggerInterface` in de toepassing van Commerce [`di.xml` ](https://github.com/magento/magento2/blob/2.4/app/etc/di.xml#L9).
+Commerce 2 voldoet aan de norm PSR-3. Door gebrek, gebruikt Commerce [&#x200B; Monolog &#x200B;](https://github.com/Seldaek/monolog). Monolog uitgevoerd als voorkeur voor `Psr\Log\LoggerInterface` in de toepassing van Commerce [`di.xml` &#x200B;](https://github.com/magento/magento2/blob/2.4/app/etc/di.xml#L9).
 
 Monolog is een populaire PHP-logboekoplossing met een groot aantal handlers waarmee u geavanceerde logboekstrategieën kunt ontwikkelen. Hieronder volgt een overzicht van de werking van Monolog.
 

@@ -35,7 +35,7 @@ De standaardlevensduur voor de cache van stopwords-bestanden is 15 minuten.
 
 **om stopwords uit te geven**:
 
-1. Login aan uw server van Commerce, of schakelaar aan, de [ eigenaar van het dossiersysteem ](../../installation/prerequisites/file-system/overview.md).
+1. Login aan uw server van Commerce, of schakelaar aan, de [&#x200B; eigenaar van het dossiersysteem &#x200B;](../../installation/prerequisites/file-system/overview.md).
 1. Gebruik een teksteditor om een stopword-bestand te openen in de map `<magento_root>/vendor/magento/module-elasticsearch/etc/stopwords` .
 
    CSV-bestanden gebruiken de naamgevingsconventie `stopwords_<locale_code>.csv` . Het Duitse stopword-bestand heeft bijvoorbeeld de naam `stopwords_de_DE.csv` .
@@ -61,7 +61,7 @@ De standaardlevensduur voor de cache van stopwords-bestanden is 15 minuten.
 
 **om stopwords voor een scène** toe te voegen:
 
-1. Login aan uw server van Commerce, of schakelaar aan, de [ eigenaar van het dossiersysteem ](../../installation/prerequisites/file-system/overview.md).
+1. Login aan uw server van Commerce, of schakelaar aan, de [&#x200B; eigenaar van het dossiersysteem &#x200B;](../../installation/prerequisites/file-system/overview.md).
 
 1. Gebruik een teksteditor om een stopword-bestand met de naam `stopwords_<locale_code>.csv` in de map `<magento_root>/vendor/magento/module-elasticsearch/etc/stopwords` te maken.
 

@@ -11,7 +11,7 @@ ht-degree: 0%
 
 # Het databaseschema en de gegevens bijwerken
 
-Alvorens u dit bevel gebruikt, moet u [ de toepassing ](../advanced.md) installeren.
+Alvorens u dit bevel gebruikt, moet u [&#x200B; de toepassing &#x200B;](../advanced.md) installeren.
 
 ## Het databaseschema en de gegevens bijwerken
 
@@ -31,7 +31,7 @@ Telkens wanneer u een actie uitvoert die het gegevensbestandschema of de gegeven
    bin/magento setup:upgrade [--keep-generated]
    ```
 
-   Waar `--keep-generated` een facultatief argument is dat niet [ statische meningsdossiers ](../../configuration/cli/static-view-file-deployment.md) bijwerkt. Dit facultatieve argument is voor gebruik *slechts* in beperkte omstandigheden door ervaren systeemintegrators. Het zou *slechts* op [ productiemodus ](../../configuration/bootstrap/application-modes.md#production-mode) moeten worden gebruikt. Het zou ** niet moeten worden gebruikt op [ ontwikkelaarwijze ](../../configuration/bootstrap/application-modes.md#developer-mode).
+   Waar `--keep-generated` een facultatief argument is dat niet [&#x200B; statische meningsdossiers &#x200B;](../../configuration/cli/static-view-file-deployment.md) bijwerkt. Dit facultatieve argument is voor gebruik *slechts* in beperkte omstandigheden door ervaren systeemintegrators. Het zou *slechts* op [&#x200B; productiemodus &#x200B;](../../configuration/bootstrap/application-modes.md#production-mode) moeten worden gebruikt. Het zou ** niet moeten worden gebruikt op [&#x200B; ontwikkelaarwijze &#x200B;](../../configuration/bootstrap/application-modes.md#developer-mode).
 
 1. De cache reinigen:
 

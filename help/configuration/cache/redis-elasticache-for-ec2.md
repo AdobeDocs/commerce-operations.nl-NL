@@ -20,7 +20,7 @@ Vanaf Commerce 2.4.3 kunnen instanties die worden gehost op Amazon EC2 een AWS E
 
 ## Vereisten
 
-- **creeer een Redis OSS serverless geheime voorgeheugen** - van de Console van het Beheer van AWS, creeer het geheime voorgeheugen van Redis in het zelfde gebied en VPC van de instantie EC2. Voor instructies, zie de [ documentatie van Elasticache van AWS ](https://docs.aws.amazon.com/AmazonElastiCache/latest/dg/GettingStarted.serverless-redis.step1.html).
+- **creeer een Redis OSS serverless geheime voorgeheugen** - van de Console van het Beheer van AWS, creeer het geheime voorgeheugen van Redis in het zelfde gebied en VPC van de instantie EC2. Voor instructies, zie de [&#x200B; documentatie van Elasticache van AWS &#x200B;](https://docs.aws.amazon.com/AmazonElastiCache/latest/dg/GettingStarted.serverless-redis.step1.html).
 
 - **verifieer de verbinding aan uw instantie van EC2 Commerce**
 
@@ -75,4 +75,4 @@ bin/magento setup:config:set --session-save=redis --session-save-redis-host=<Ela
    ```
 
 1. Open een pagina in de gebruikersinterface van Commerce.
-1. Verifieer de [ geheim voorgeheugenoutput ](#verify-the-redis-connection) in uw terminal.
+1. Verifieer de [&#x200B; geheim voorgeheugenoutput &#x200B;](#verify-the-redis-connection) in uw terminal.

@@ -94,7 +94,7 @@ Verkeer omleiden naar een aangepaste onderhoudspagina:
    touch <web server docroot>/maintenance.enable
    ```
 
-1. [ bevorder uw systeem ](../implementation/perform-upgrade.md).
+1. [&#x200B; bevorder uw systeem &#x200B;](../implementation/perform-upgrade.md).
 1. Test uw site om te controleren of deze correct werkt.
 1. Verwijder `maintenance.enable` nadat de upgrade is voltooid.
 
@@ -154,7 +154,7 @@ Verkeer omleiden naar een aangepaste onderhoudspagina:
    service nginx reload
    ```
 
-1. [ bevorder uw systeem ](../implementation/perform-upgrade.md).
+1. [&#x200B; bevorder uw systeem &#x200B;](../implementation/perform-upgrade.md).
 1. Test uw site om te controleren of deze correct werkt.
 1. Nadat de upgrade is voltooid, verwijdert u de upgrade of wijzigt u de naam van de toepassing `maintenance.enable`
 1. Laad de configuratie nginx opnieuw:

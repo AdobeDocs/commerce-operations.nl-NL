@@ -12,12 +12,12 @@ ht-degree: 0%
 
 # Overzicht van zoekprogramma&#39;s
 
-Vanaf versie 2.4.4, vereist Adobe Commerce of [ Elasticsearch ](https://www.elastic.co) of [ OpenSearch ](https://opensearch.org/docs/latest/opensearch/install/index/) om de motor van het catalogusonderzoek te zijn. Voor eerdere versies van 2.4.x was Elasticsearch vereist. Raadpleeg de volgende onderwerpen voor meer informatie over het installeren van een zoekmachine en de initiële configuratie:
+Vanaf versie 2.4.4, vereist Adobe Commerce of [&#x200B; Elasticsearch &#x200B;](https://www.elastic.co) of [&#x200B; OpenSearch &#x200B;](https://opensearch.org/docs/latest/opensearch/install/index/) om de motor van het catalogusonderzoek te zijn. Voor eerdere versies van 2.4.x was Elasticsearch vereist. Raadpleeg de volgende onderwerpen voor meer informatie over het installeren van een zoekmachine en de initiële configuratie:
 
 - [Voorwaarden voor zoekmachines](../../installation/prerequisites/search-engine/overview.md)
 - [Nginx voor uw zoekmachine configureren](../../installation/prerequisites/search-engine/configure-nginx.md)
 - [Apache configureren voor uw zoekmachine](../../installation/prerequisites/search-engine/configure-apache.md)
-- [ installeer de software van Commerce ](../../installation/composer.md) (bevel-lijn interface)
+- [&#x200B; installeer de software van Commerce &#x200B;](../../installation/composer.md) (bevel-lijn interface)
 
 Nadat u de zoekfunctie hebt geïnstalleerd en geïntegreerd met Adobe Commerce, moet u extra onderhoud uitvoeren:
 

@@ -23,7 +23,7 @@ De bouwbaan stelt verscheidene geplande taken in werking en is een essentieel de
 
 >[!INFO]
 >
->Verwijs naar [ vormen en in werking stellen kruin ](../cli/configure-cron-jobs.md#run-cron-from-the-command-line) voor meer informatie over cron groepen.
+>Verwijs naar [&#x200B; vormen en in werking stellen kruin &#x200B;](../cli/configure-cron-jobs.md#run-cron-from-the-command-line) voor meer informatie over cron groepen.
 
 U kunt een uitsnijdtaak op de volgende manieren uitvoeren:
 
@@ -120,7 +120,7 @@ Uitsnijden beveiligen in `.htaccess` -bestand:
    ```
 
 1. Sla de wijzigingen in `.htaccess` op en sluit de teksteditor af.
-1. Ga met [ verder verifiëren kruin veilig ](#verify-cron-is-secure) is.
+1. Ga met [&#x200B; verder verifiëren kruin veilig &#x200B;](#verify-cron-is-secure) is.
 
 ## Beveiligde uitsnede met Nginx
 
@@ -140,7 +140,7 @@ Raadpleeg een van de volgende bronnen om een wachtwoordbestand te maken voordat 
 
 Commerce beschikt over een geoptimaliseerd voorbeeld-nginx-configuratiebestand uit het vak. We raden u aan het te wijzigen om de afbeelding te beveiligen.
 
-1. Voeg het volgende toe aan uw [`nginx.conf.sample` ](https://github.com/magento/magento2/blob/2.4/nginx.conf.sample) dossier:
+1. Voeg het volgende toe aan uw [`nginx.conf.sample` &#x200B;](https://github.com/magento/magento2/blob/2.4/nginx.conf.sample) dossier:
 
    ```conf
    #Securing cron
@@ -167,7 +167,7 @@ Commerce beschikt over een geoptimaliseerd voorbeeld-nginx-configuratiebestand u
 systemctl restart nginx
 ```
 
-1. Ga met [ verder verifiëren kruin veilig ](#verify-cron-is-secure) is.
+1. Ga met [&#x200B; verder verifiëren kruin veilig &#x200B;](#verify-cron-is-secure) is.
 
 ## Controleren of de uitsnede beveiligd is
 
@@ -219,7 +219,7 @@ De eenvoudigste manier om te controleren of `pub/cron.php` veilig is, is om te c
 
 1. Voer desgevraagd de naam en het wachtwoord van een geautoriseerde gebruiker in. In de volgende afbeelding ziet u een voorbeeld.
 
-   ![ Authorizing cron using HTTP Basic ](../../assets/configuration/cron-auth.png)
+   ![&#x200B; Authorizing cron using HTTP Basic &#x200B;](../../assets/configuration/cron-auth.png)
 
 1. Controleer of er rijen aan de tabel zijn toegevoegd:
 
@@ -311,4 +311,4 @@ https://magento.example.com/magento2/pub/cron.php?group=index
 
 >[!INFO]
 >
->U moet de bewerking tweemaal uitvoeren: eerst om taken te ontdekken om te lopen en opnieuw om de taken zelf in werking te stellen. Verwijs naar [ vormen en in werking stellen kruin ](../cli/configure-cron-jobs.md) voor meer informatie over cron groepen.
+>U moet de bewerking tweemaal uitvoeren: eerst om taken te ontdekken om te lopen en opnieuw om de taken zelf in werking te stellen. Verwijs naar [&#x200B; vormen en in werking stellen kruin &#x200B;](../cli/configure-cron-jobs.md) voor meer informatie over cron groepen.

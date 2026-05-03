@@ -11,7 +11,7 @@ ht-degree: 0%
 
 # Het databaseschema maken
 
-Alvorens u dit bevel in werking stelt, moet u [ creëren of de plaatsingsconfiguratie ](deployment.md) bijwerken.
+Alvorens u dit bevel in werking stelt, moet u [&#x200B; creëren of de plaatsingsconfiguratie &#x200B;](deployment.md) bijwerken.
 
 ## De database configureren en gegevens toevoegen
 

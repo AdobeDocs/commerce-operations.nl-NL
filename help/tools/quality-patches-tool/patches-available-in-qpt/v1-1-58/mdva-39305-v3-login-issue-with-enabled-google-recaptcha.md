@@ -16,11 +16,11 @@ ht-degree: 0%
 
 >[!NOTE]
 >
->Dit flard is een update van [ mDVA-39305 ](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-1/mdva-39305-login-issues-with-enabled-google-recaptcha.md) flard.
+>Dit flard is een update van [&#x200B; mDVA-39305 &#x200B;](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-1/mdva-39305-login-issues-with-enabled-google-recaptcha.md) flard.
 
 De MDVA-39305-V3 patch verhelpt het probleem dat geregistreerde klanten zich niet kunnen aanmelden wanneer [!DNL Google reCAPTCHA] is ingeschakeld. Deze patch verhelpt ook het probleem waarbij een formulier kan worden verzonden voordat [!DNL Google reCAPTCHA] volledig is geladen. Bovendien, bevestigt het de fout *Vraag aan een lidfunctie isDisabled () op ongeldig* wanneer de blokken in niet-standaardplaatsen op een pagina van CMS worden gebruikt.
 
-Dit flard werd toegevoegd in het [ Hulpmiddel van de Patches van de Kwaliteit (QPT) ](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches) 1.1.48 versie. Het is bijgewerkt in de QPT 1.1.58-release en bevat nu nieuwe Adobe Commerce-versies 2.4.7 - 2.4.7-p4. De patch-id is MDVA-39305-V3. Het probleem is opgelost in Adobe Commerce versie 2.4.4, 2.4.5-p2 en 2.4.7.
+Dit flard werd toegevoegd in het [&#x200B; Hulpmiddel van de Patches van de Kwaliteit (QPT) &#x200B;](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches) 1.1.48 versie. Het is bijgewerkt in de QPT 1.1.58-release en bevat nu nieuwe Adobe Commerce-versies 2.4.7 - 2.4.7-p4. De patch-id is MDVA-39305-V3. Het probleem is opgelost in Adobe Commerce versie 2.4.4, 2.4.5-p2 en 2.4.7.
 
 ## Betrokken producten en versies
 
@@ -34,7 +34,7 @@ Dit flard werd toegevoegd in het [ Hulpmiddel van de Patches van de Kwaliteit (Q
 
 >[!NOTE]
 >
->De patch kan van toepassing worden op andere versies met nieuwe versies van het Hulpprogramma voor kwaliteitspatches. Als u wilt controleren of de patch compatibel is met uw Adobe Commerce-versie, werkt u het `magento/quality-patches` -pakket bij naar de meest recente versie en controleert u de compatibiliteit op de [[!DNL Quality Patches Tool] : Zoek naar de pagina van flarden ](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches). Gebruik de patch-id als een zoekwoord om de patch te zoeken.
+>De patch kan van toepassing worden op andere versies met nieuwe versies van het Hulpprogramma voor kwaliteitspatches. Als u wilt controleren of de patch compatibel is met uw Adobe Commerce-versie, werkt u het `magento/quality-patches` -pakket bij naar de meest recente versie en controleert u de compatibiliteit op de [[!DNL Quality Patches Tool] : Zoek naar de pagina van flarden &#x200B;](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches). Gebruik de patch-id als een zoekwoord om de patch te zoeken.
 
 ## Problemen
 
@@ -45,7 +45,7 @@ Dit flard werd toegevoegd in het [ Hulpmiddel van de Patches van de Kwaliteit (Q
 
 <u> Stappen om </u> te reproduceren:
 
-1. Ga naar **[!UICONTROL Store]** > **[!UICONTROL Configuration]** > **[!UICONTROL Security]** > **[!DNL Google reCAPTCHA Storefront]** en schakel *** [!DNL Google reCAPTCHA] *** in.
+1. Ga naar **[!UICONTROL Store]** > **[!UICONTROL Configuration]** > **[!UICONTROL Security]** > **[!DNL Google reCAPTCHA Storefront]** en schakel *** [!DNL Google reCAPTCHA] &#x200B;*** in.
 1. Ga naar de voorkant.
 1. Open **[!UICONTROL Developer Tool Console]** in de browser.
 
@@ -85,11 +85,11 @@ Er treedt een fout van 500 op op de pagina in de winkel.
 
 Om individuele flarden toe te passen, gebruik de volgende verbindingen afhankelijk van uw plaatsingsmethode:
 
-* Adobe Commerce of Magento Open Source ter plaatse: [[!DNL Quality Patches Tool] > Gebruik ](/help/tools/quality-patches-tool/usage.md) in de [!DNL Quality Patches Tool] gids.
-* Adobe Commerce op cloudinfrastructuur: [ Verbeteringen en Patches > pas Patches ](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html) in Commerce op de gids van de Infrastructuur van de Wolk toe.
+* Adobe Commerce of Magento Open Source ter plaatse: [[!DNL Quality Patches Tool] > Gebruik &#x200B;](/help/tools/quality-patches-tool/usage.md) in de [!DNL Quality Patches Tool] gids.
+* Adobe Commerce op cloudinfrastructuur: [&#x200B; Verbeteringen en Patches > pas Patches &#x200B;](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html) in Commerce op de gids van de Infrastructuur van de Wolk toe.
 
 ## Gerelateerde lezing
 
 Meer informatie over [!DNL Quality Patches Tool] vindt u in:
 
-* [[!DNL Quality Patches Tool] : Een zelfbedieningshulpmiddel voor kwaliteitspatches ](/help/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches.md) in de gids van Hulpmiddelen.
+* [[!DNL Quality Patches Tool] : Een zelfbedieningshulpmiddel voor kwaliteitspatches &#x200B;](/help/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches.md) in de gids van Hulpmiddelen.

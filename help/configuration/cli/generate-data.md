@@ -20,7 +20,7 @@ Bijvoorbeeld: `/var/www/html/magento2/setup/performance-toolkit/profiles/ce`
 
 Het volgende cijfer toont aan hoe een product op de storefront gebruikend het _kleine_ profiel wordt getoond:
 
-![ opslag van de Steekproef met geproduceerde gegevens ](../../assets/configuration/generate-data.png)
+![&#x200B; opslag van de Steekproef met geproduceerde gegevens &#x200B;](../../assets/configuration/generate-data.png)
 
 De volgende tabel bevat details over de profielen van de gegevensgenerator: klein, middelgroot, groot en extra groot.
 
@@ -50,9 +50,9 @@ De volgende tabel bevat details over de profielen van de gegevensgenerator: klei
 >
 >Voordat u de gegevensgenerator uitvoert, schakelt u alle snijtaken uit die op de server worden uitgevoerd. Als u de functie voor uitsnijden uitschakelt, voorkomt u dat de gegevensgenerator handelingen uitvoert die een conflict veroorzaken met actieve uitsnijdtaken en dat onnodige fouten worden voorkomen.
 >
->Als u gebeurtenis met [!DNL Adobe I/O Events for Adobe Commerce] terwijl het testen van prestaties van plan bent uit te voeren, stel dit bevel in werking alvorens [ gebeurtenissen ](https://developer.adobe.com/commerce/extensibility/events/) in te tekenen. Als u zich eerst abonneert op gebeurtenissen, kunnen er fouten optreden.
+>Als u gebeurtenis met [!DNL Adobe I/O Events for Adobe Commerce] terwijl het testen van prestaties van plan bent uit te voeren, stel dit bevel in werking alvorens [&#x200B; gebeurtenissen &#x200B;](https://developer.adobe.com/commerce/extensibility/events/) in te tekenen. Als u zich eerst abonneert op gebeurtenissen, kunnen er fouten optreden.
 
-Voer de opdracht uit zoals in deze sectie wordt beschreven. Na de bevellooppas, moet u [ alle indexeerders ](../cli/manage-indexers.md) opnieuw indexeren.
+Voer de opdracht uit zoals in deze sectie wordt beschreven. Na de bevellooppas, moet u [&#x200B; alle indexeerders &#x200B;](../cli/manage-indexers.md) opnieuw indexeren.
 
 Opdrachtopties:
 
