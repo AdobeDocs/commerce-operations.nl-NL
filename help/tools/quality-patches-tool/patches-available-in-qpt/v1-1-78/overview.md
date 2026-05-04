@@ -4,9 +4,9 @@ description: Deze subsectie verstrekt een gedetailleerde beschrijving van de kwe
 feature: Tools and External Services
 role: Admin, Developer
 type: Troubleshooting
-source-git-commit: f78520918618a750cdca062a0543eb4821dfc525
+source-git-commit: 371cca36da675d8b9ad8e7b0281e48a3067073e2
 workflow-type: tm+mt
-source-wordcount: '722'
+source-wordcount: '808'
 ht-degree: 0%
 
 ---
@@ -16,6 +16,10 @@ ht-degree: 0%
 Deze subsectie bevat een gedetailleerde beschrijving van de problemen die zijn opgelost door de patches die beschikbaar zijn in [!DNL Quality Patches Tool] (QPT) v1.1.78.
 
 QPT v1.1.78 omvat de volgende flarden:
+1. **ACP2E-4416**: Hiermee wordt het probleem verholpen waarbij beloningspunten voor klanten niet worden geïnitialiseerd wanneer ze in Admin worden gemaakt.
+1. **ACP2E-4419**: Hiermee wordt het probleem verholpen waarbij cadeaukaarten niet correct worden toegepast bij het uitchecken na geslaagde reCAPTCHA v2-validatie (&#39;Ik ben geen robot&#39;) op de winkel.
+1. **ACP2E-4431**: Hiermee wordt het probleem verholpen waarbij Verwante producten die overeenkomen met de doelregels, tijdens het herindexeringsproces worden verwijderd.
+1. **[ACP2E-4448](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-78/acp2e-4448.md)**: Hiermee wordt het probleem verholpen waarbij configuratiewijzigingen die tijdens een storing met Redis zijn aangebracht, niet worden doorgevoerd nadat Redis is hersteld, waardoor schaalwaarden blijven bestaan.
 1. **[ACP2E-4416](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-78/acp2e-4416.md)**: Hiermee wordt het probleem verholpen waarbij beloningspunten voor klanten niet worden geïnitialiseerd wanneer ze in Admin worden gemaakt.
 1. **[ACP2E-4431](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-78/acp2e-4431.md)**: Hiermee wordt het probleem verholpen waarbij [!UICONTROL Related Products] dat overeenkomt met de doelregels, tijdens het herindexeringsproces wordt verwijderd.
 1. **[ACP2E-4419](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-78/acp2e-4419.md)**: Hiermee wordt het probleem verholpen waarbij cadeaukaarten niet correct worden toegepast bij het uitchecken na geslaagde reCAPTCHA v2-validatie (&#39;Ik ben geen robot&#39;) op de winkel.
