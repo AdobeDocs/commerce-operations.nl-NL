@@ -3,9 +3,9 @@ title: Hoe te om tot  [!DNL Cloud Automation Patching Service (CAPS)] toegang te
 description: Leer hoe te om tot toegang te hebben en te gebruiken  [!DNL Cloud Automation Patching Service (CAPS)]
 hide: true
 hidefromtoc: true
-source-git-commit: ca388bd78affd4def19a5539d8529f2563d35e8c
+source-git-commit: f6f690af56df3de737a9f72c2e727b1752bc94b3
 workflow-type: tm+mt
-source-wordcount: '265'
+source-wordcount: '276'
 ht-degree: 0%
 
 ---
@@ -36,9 +36,9 @@ Als u geen projecten ziet in de gebruikersinterface van [!DNL CAPS] , moet u toe
 
 ## Toegang verkrijgen tot [!DNL CAPS]
 
-Het hulpmiddel CAPS is beschikbaar van het plaats-brede dashboard van het Hulpmiddel van de Analyse in [&#x200B; https://supportinsights.adobe.com/commerce/ &#x200B;](https://supportinsights.adobe.com/commerce/). Onder het tabblad Patchautomatisering kunt u uw project en omgeving selecteren.
+Het hulpmiddel CAPS is beschikbaar van het plaats-brede dashboard van het Hulpmiddel van de Analyse in [ https://supportinsights.adobe.com/commerce/ ](https://supportinsights.adobe.com/commerce/). Onder het tabblad Patchautomatisering kunt u uw project en omgeving selecteren.
 
-1. Navigeer aan het Hulpmiddel van de Analyse van plaats-brede in [&#x200B; https://supportinsights.adobe.com/commerce/ &#x200B;](https://supportinsights.adobe.com/commerce/).
+1. Navigeer aan het Hulpmiddel van de Analyse van plaats-brede in [ https://supportinsights.adobe.com/commerce/ ](https://supportinsights.adobe.com/commerce/).
 1. Klik op het tabblad [!UICONTROL Patching Automation] in de interface.
 1. Selecteer het project en de omgeving waarop u patches wilt toepassen.
 1. Bekijk de beschikbare patches en hun compatibiliteitsstatus.

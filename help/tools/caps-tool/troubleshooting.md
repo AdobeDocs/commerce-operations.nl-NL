@@ -3,9 +3,9 @@ title: '[!DNL Cloud Automation Patching Service (CAPS)] Handleiding voor problee
 description: Los gemeenschappelijke kwesties en foutenmeldingen in  [!DNL Cloud Automation Patching Service (CAPS)] problemen op
 hide: true
 hidefromtoc: true
-source-git-commit: 84a20012a81278cc95587ec14281b05330261687
+source-git-commit: f6f690af56df3de737a9f72c2e727b1752bc94b3
 workflow-type: tm+mt
-source-wordcount: '946'
+source-wordcount: '967'
 ht-degree: 0%
 
 ---
@@ -126,7 +126,7 @@ Voor de meeste omgevingen wordt in de volgende tijdlijn beschreven hoe lang het 
 
 Er zijn twee aanbevolen opties voor het oplossen van dit probleem:
 
-**Optie 1: Repareer `env:COMPOSER_AUTH` (Geadviseerde) variabele van het milieuniveau**
+**Optie 1: Repareer `env:COMPOSER_AUTH` milieu vlakke variabele (geadviseerd)**
 
 * Controleer of u de juiste referenties voor `env:COMPOSER_AUTH` hebt ingesteld.
 * De toegang globale configuratie door op het tandwielpictogram bij de hoogste linkerzijde van uw wolkenproject UI te klikken, dan selecteren de **Variabelen** tabel.
@@ -134,7 +134,7 @@ Er zijn twee aanbevolen opties voor het oplossen van dit probleem:
 
 Als Optie 1 uw probleem niet oplost, ga met Optie 2 te werk.
 
-**Optie 2: Creeer en stel `auth.json` dossier manueel** op
+**Optie 2: `auth.json` -bestand handmatig maken en implementeren**
 
 * SSH in uw server.
 * De inhoud van de huidige `env:COMPOSER_AUTH` variabele ophalen met:\
@@ -218,8 +218,8 @@ Voor meer gedetailleerde technische informatie:
 
 ### Verwante onderwerpen
 
-* [&#x200B; documentatie van de Wolk van de Handel van Adobe &#x200B;](https://experienceleague.adobe.com/nl/docs/commerce-cloud-service/user-guide/overview)
-* [&#x200B; de Gids van de Installatie van Adobe Commerce &#x200B;](https://experienceleague.adobe.com/nl/docs/commerce-operations/installation-guide/overview)
+* [Adobe Commerce Cloud-documentatie](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/overview)
+* [Adobe Commerce-installatiehandleiding](https://experienceleague.adobe.com/en/docs/commerce-operations/installation-guide/overview)
 * [CAPS-introductie](intro.md)
 * [Toegang krijgen](access.md)
 * [Workflow](workflow.md)

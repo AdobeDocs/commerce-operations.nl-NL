@@ -3,9 +3,9 @@ title: Hoe  [!DNL Cloud Automation Patching Service (CAPS)]  werkschema werkt
 description: Leer over het  [!DNL Cloud Automation Patching Service (CAPS)]  werkschemaproces, met inbegrip van terminologie, werkschemafasen, en verrichtingen voor geautomatiseerd flardbeheer.
 hide: true
 hidefromtoc: true
-source-git-commit: eff8c0ae9e1d9db6b46ba7cfbb915685ab5b194d
+source-git-commit: f6f690af56df3de737a9f72c2e727b1752bc94b3
 workflow-type: tm+mt
-source-wordcount: '831'
+source-wordcount: '834'
 ht-degree: 0%
 
 ---
@@ -63,7 +63,7 @@ De voorbereidingscontrolefase controleert of de patch veilig op uw omgeving kan 
 * **opsporing van het Conflict** - identificeert potentiële conflicten met bestaande code
 * **Controle van de Afhankelijkheid** - bevestigt de versiecompatibiliteit van Adobe Commerce
 
-### Fase 2: Repareren
+### Fase 2: Reparatie
 
 De patchfase past de pleister toe of keert deze terug in een tijdelijke integratieomgeving voor het testen. Tijdens dit stadium, creeert [!DNL CAPS] een tijdelijke testmilieu om de flard veilig toe te passen en te testen alvorens veranderingen in uw daadwerkelijke milieu aan te brengen.
 
@@ -74,7 +74,7 @@ Deze aanpak voorziet in:
 * **vermogen van het Terugschroeven van prijzen** - als de kwesties worden ontdekt
 * **Isolatie** - voor elke flardverrichting
 
-#### Fase 2a: Integratieomgeving creëren
+#### Fase 2a: Integratie-omgeving
 
 **de verwezenlijking van de Tak** - [!DNL CAPS] leidt tot een tijdelijke genoemde tak van het integratiemilieu `{target-environment}-CAPS-{patch-id}`
 
@@ -84,7 +84,7 @@ Deze aanpak voorziet in:
 
 **vereisten van het Middel** - [!DNL CAPS] leidt tot een tijdelijk milieu gebruikend codebase van uw doelmilieu. Volgens de documentatie van Adobe Commerce Cloud beschikt elke omgeving (inclusief integratieomgevingen) over een aparte opslagtoewijzing op basis van uw gecontracteerde opslagabonnement. De hoeveelheid opslagruimte die u hebt gecontracteerd, geeft de totale opslagruimte voor elke omgeving aan. In de meeste gevallen zult u geen problemen met bronbeperkingen ondervinden. Als er een fout optreedt met betrekking tot de bronbeperkingen, controleert u de grootte van uw toepassing en de gecontracteerde opslag in uw abonnement.
 
-#### Fase 2b: Patch application in integration environment
+#### Fase 2b: Patroontoepassing in integratieomgeving
 
 **Veilig het testen** - het flard wordt toegepast op het integratiemilieu, niet direct op uw doelmilieu
 
@@ -94,7 +94,7 @@ Deze aanpak voorziet in:
 
 **activering van het Milieu** - het integratiemilieu wordt geactiveerd om de gepatcheerde code op te stellen
 
-#### Stap 2c: Samenvoegen naar doelomgeving
+#### Fase 2c: Terug samenvoegen tot doelomgeving
 
 **Controle van het Milieu** - [!DNL CAPS] controleert plaatselijk uw doelmilieu
 
