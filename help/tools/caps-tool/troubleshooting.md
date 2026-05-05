@@ -218,8 +218,8 @@ Voor meer gedetailleerde technische informatie:
 
 ### Verwante onderwerpen
 
-* [Adobe Commerce Cloud-documentatie](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/overview)
-* [Adobe Commerce-installatiehandleiding](https://experienceleague.adobe.com/en/docs/commerce-operations/installation-guide/overview)
+* [Adobe Commerce Cloud-documentatie](https://experienceleague.adobe.com/nl/docs/commerce-cloud-service/user-guide/overview)
+* [Adobe Commerce-installatiehandleiding](https://experienceleague.adobe.com/nl/docs/commerce-operations/installation-guide/overview)
 * [CAPS-introductie](intro.md)
 * [Toegang krijgen](access.md)
 * [Workflow](workflow.md)
