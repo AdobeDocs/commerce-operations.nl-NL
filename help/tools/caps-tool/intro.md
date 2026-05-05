@@ -53,7 +53,7 @@ Deze handleiding is ontworpen voor Adobe Commerce Cloud-handelaren en -partners 
 
 Leer meer over de Adobe Cloud Automated Patching Service en hoe gebruikers met dit hulpprogramma snel beveiligingspatches kunnen vinden en toepassen. De volgende video bedekt hoe te om tot het door het SWAT dashboard toegang te hebben, uw project en milieu te kiezen, en flarden toe te passen met één klik.
 
->[!VIDEO](https://video.tv.adobe.com/v/3476247/?learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/3476253/?captions=dut&learn=on&enablevpops)
 
 ## Vaak voorkomende gevallen
 
