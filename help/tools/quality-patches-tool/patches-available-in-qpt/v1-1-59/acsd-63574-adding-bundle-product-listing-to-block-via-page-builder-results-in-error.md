@@ -1,13 +1,13 @@
 ---
 title: 'ACSD-63574: Het toevoegen van [!UICONTROL Bundle Product] lijst aan blok via  [!DNL Page Builder]  resulteert in fout'
-description: Pas ACSD-63574 flard toe om de kwestie van Adobe Commerce te bevestigen waar het toevoegen ** [!UICONTROL Bundle Product]** met &grave; Checkbox &grave; of &grave; Multi Uitgezochte opties &grave; aan een blok via  [!DNL Page Builder]  in een fout resulteert.
+description: Pas ACSD-63574 flard toe om de kwestie van Adobe Commerce te bevestigen waar het toevoegen ** [!UICONTROL Bundle Product]** met ` Checkbox ` of ` Multi Uitgezochte opties ` aan een blok via  [!DNL Page Builder]  in een fout resulteert.
 feature: Page Builder, Page Content
 role: Admin, Developer
 exl-id: bb56c0c2-e094-4173-8260-da154df79748
 type: Troubleshooting
-source-git-commit: 48624d70761117ed0b9f8a7be913fce0572577b6
+source-git-commit: 0382d65a4d2ab24e595ede662be113a04db99450
 workflow-type: tm+mt
-source-wordcount: '433'
+source-wordcount: '408'
 ht-degree: 0%
 
 ---
@@ -28,15 +28,15 @@ Adobe Commerce (alle implementatiemethoden) 2.4.4 - 2.4.4-p11
 
 >[!NOTE]
 >
->De patch kan van toepassing worden op andere versies met nieuwe [!DNL Quality Patches Tool] versies. Als u wilt controleren of de patch compatibel is met uw Adobe Commerce-versie, werkt u het `magento/quality-patches` -pakket bij naar de meest recente versie en controleert u de compatibiliteit op de [[!DNL Quality Patches Tool] : Zoek naar de pagina van flarden &#x200B;](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html?lang=nl-NL). Gebruik de patch-id als een zoekwoord om de patch te zoeken.
+>De patch kan van toepassing worden op andere versies met nieuwe [!DNL Quality Patches Tool] versies. Als u wilt controleren of de patch compatibel is met uw Adobe Commerce-versie, werkt u het `magento/quality-patches` -pakket bij naar de meest recente versie en controleert u de compatibiliteit op de [[!DNL Quality Patches Tool] : Zoek naar de pagina van flarden ](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html). Gebruik de patch-id als een zoekwoord om de patch te zoeken.
 
 ## Probleem
 
 Wanneer het toevoegen van **[!UICONTROL Bundle Product]** aan een blok gebruikend [!DNL Page Builder], de voorproef van de product widget breekt en toont het foutenbericht *Wij vinden het jammer, is een fout voorgekomen terwijl het produceren van deze inhoud*. Dit probleem treedt specifiek op wanneer het bundelproduct `Checkbox` of `Multi Select` optietypen bevat en `indexer dimension mode` is ingesteld op `website_and_customer_group` . In het uitzonderingenlogboek wordt de volgende fout weergegeven:
 
-     &quot;yaml 
-     report.CRITICAL: PDOE-uitzondering: SQLSTATE[42S02]: Basistabel of -weergave niet gevonden: 1146 de Lijst &quot;db_name.catalog_product_index_price_cg0_ws0&quot;bestaat niet in /home/vendor/magento/framework/DB/Statement/Pdo/Mysql.php:90 
-    &quot;
+```yaml
+report.CRITICAL: PDOException: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'db_name.catalog_product_index_price_cg0_ws0' doesn't exist in /home/vendor/magento/framework/DB/Statement/Pdo/Mysql.php:90
+```
 
 <u> Stappen om </u> te reproduceren:
 
@@ -64,12 +64,12 @@ Kan geen product toevoegen tot en met [!DNL Page Builder] wanneer het optietype 
 
 Om individuele flarden toe te passen, gebruik de volgende verbindingen afhankelijk van uw plaatsingsmethode:
 
-* Adobe Commerce of Magento Open Source ter plaatse: [[!DNL Quality Patches Tool] > Gebruik &#x200B;](/help/tools/quality-patches-tool/usage.md) in de [!DNL Quality Patches Tool] gids.
-* Adobe Commerce op cloudinfrastructuur: [&#x200B; Verbeteringen en Patches > pas Patches &#x200B;](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html?lang=nl-NL) in Commerce op de gids van de Infrastructuur van de Wolk toe.
+* Adobe Commerce of Magento Open Source ter plaatse: [[!DNL Quality Patches Tool] > Gebruik ](/help/tools/quality-patches-tool/usage.md) in de [!DNL Quality Patches Tool] gids.
+* Adobe Commerce op cloudinfrastructuur: [ Verbeteringen en Patches > pas Patches ](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html) in Commerce op de gids van de Infrastructuur van de Wolk toe.
 
 
 ## Gerelateerde lezing
 
 Meer informatie over [!DNL Quality Patches Tool] vindt u in:
 
-* [[!DNL Quality Patches Tool] : Een zelfbedieningshulpmiddel voor kwaliteitspatches &#x200B;](/help/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches.md) in de gids van Hulpmiddelen.
+* [[!DNL Quality Patches Tool] : Een zelfbedieningshulpmiddel voor kwaliteitspatches ](/help/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches.md) in de gids van Hulpmiddelen.
