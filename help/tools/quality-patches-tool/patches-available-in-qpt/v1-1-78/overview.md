@@ -4,7 +4,7 @@ description: Deze subsectie verstrekt een gedetailleerde beschrijving van de kwe
 feature: Tools and External Services
 role: Admin, Developer
 type: Troubleshooting
-source-git-commit: 4c95c5a6c60ff701e81a3d58cbcd587810322a24
+source-git-commit: 0c45d7ba61be21d0983b242cfdbe0b9591dd5c5c
 workflow-type: tm+mt
 source-wordcount: '942'
 ht-degree: 0%
@@ -20,8 +20,8 @@ QPT v1.1.78 omvat de volgende flarden:
 1. **ACP2E-4419**: Hiermee wordt het probleem verholpen waarbij cadeaukaarten niet correct worden toegepast bij het uitchecken na geslaagde reCAPTCHA v2-validatie (&#39;Ik ben geen robot&#39;) op de winkel.
 1. **ACP2E-4431**: Hiermee wordt het probleem verholpen waarbij Verwante producten die overeenkomen met de doelregels, tijdens het herindexeringsproces worden verwijderd.
 1. **ACP2E-4448**: Hiermee wordt het probleem verholpen waarbij configuratiewijzigingen die tijdens een storing met Redis zijn aangebracht, niet worden doorgevoerd nadat Redis is hersteld, waardoor schaalwaarden blijven bestaan.
+1. **[ACP2E-4456](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-78/acp2e-4456.md)**: Oplossing van een probleem waarbij bij het annuleren van een bestelling met een GraphQL-mutatie een bestelling die volledig met een cadeaukaart is betaald, niet wordt overgebracht naar de status Gesloten.
 1. **[ACP2E-4452](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-78/acp2e-4452.md)**: Hiermee wordt het probleem verholpen waarbij de productprijzen op de pagina [!UICONTROL Quick Order] belasting bevatten, ongeacht de configuratie van de belastingweergave.
-1. **ACP2E-4456**: Oplossing van een probleem waarbij bij het annuleren van een bestelling met een GraphQL-mutatie een bestelling die volledig met een cadeaukaart is betaald, niet wordt overgebracht naar de status Gesloten.
 1. **ACP2E-4507**: Hiermee wordt het probleem verholpen waarbij de configuratie met wachtwoordopties niet wordt toegepast voor aanvragen voor het opnieuw instellen van het wachtwoord van de klant die via GraphQL-mutaties zijn gemaakt.
 1. **ACP2E-4513**: Hiermee verhelpt u het probleem waarbij verlopen CAPTCHA-afbeeldingen niet van het systeem worden verwijderd.
 1. **ACP2E-4522**: Hiermee wordt het probleem verholpen waarbij een periodiek dubbele-sleutelfout optreedt in de quote_coupons-tabel wanneer meerdere samenvoegaanvragen voor winkelwagentjes of aanhalingstekens tegelijk worden uitgevoerd.
