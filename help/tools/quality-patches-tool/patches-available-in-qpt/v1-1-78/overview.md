@@ -4,7 +4,7 @@ description: Deze subsectie verstrekt een gedetailleerde beschrijving van de kwe
 feature: Tools and External Services
 role: Admin, Developer
 type: Troubleshooting
-source-git-commit: 0c45d7ba61be21d0983b242cfdbe0b9591dd5c5c
+source-git-commit: 88d68b8ad28dfe044808a304d947bde4f5dfb054
 workflow-type: tm+mt
 source-wordcount: '942'
 ht-degree: 0%
@@ -50,9 +50,9 @@ QPT v1.1.78 omvat de volgende flarden:
 1. **ACP2E-4609**: Hiermee wordt het probleem verholpen waarbij op de pagina Mijn aanhalingstekens geen aanhalingstekens worden weergegeven wanneer sommige aanhalingstekens verwijderde producten bevatten.
 1. **[ACP2E-4613](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-78/acp2e-4613.md)**: Hiermee wordt het probleem verholpen waarbij grote mediamapstructuren trage reacties met getrouwe getrouwe getrouwe waarden veroorzaakten, wat tot langere laadtijden voor de mappenstructuur van **[!UICONTROL Media Gallery]** leidde.
 1. **ACP2E-4628**: Oplossing voor het probleem dat bij het importeren van klanten met e-mailadressen in hoofdletters de fout met de ongedefinieerde arraysleutel optreedt wanneer Account Sharing is ingesteld op Global.
+1. **[ACP2E-4732](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-78/acp2e-4732.md)**: Oplossingen een kwestie waar de gedeeltelijke indexatie voor klanten met een groot aantal updates ophield toen version_id kolom in de veranderingslijst zijn maximumwaarde bereikte.
 1. **[ACP2E-4665](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-78/acp2e-4665.md)**: Hiermee wordt het probleem verholpen waarbij onderliggende producten van configureerbare producten die video&#39;s bevatten in de productgalerieën, niet worden vermeld wanneer ze via de REST API worden aangevraagd.
 1. **ACP2E-4665**: Hiermee wordt het probleem verholpen waarbij onderliggende producten van configureerbare producten die video&#39;s in de productgalerieën bevatten, niet worden vermeld wanneer ze via de REST API worden aangevraagd.
-1. **ACP2E-4732**: Oplossingen een kwestie waar de gedeeltelijke indexatie voor klanten met een groot aantal updates ophield toen version_id kolom in de veranderingslijst zijn maximumwaarde bereikte.
 1. **ACP2E-4763**: Hiermee wordt het probleem verholpen waarbij de GraphQL-query voor CustomerOrders de opgeblazen original_price_include_tax en original_row_total_include_tax waarden retourneert wanneer Catalog Prices is ingesteld op Including Tax, omdat de belasting tweemaal wordt toegepast.
 1. **ACSD-60989: Hiermee wordt het probleem verholpen waarbij het wijzigen van een kolom met een buitenlandse sleutel via een declaratief schema fouten veroorzaakt op MariaDB.**
 
