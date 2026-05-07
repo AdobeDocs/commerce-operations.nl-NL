@@ -4,9 +4,9 @@ description: Deze subsectie verstrekt een gedetailleerde beschrijving van de kwe
 feature: Tools and External Services
 role: Admin, Developer
 type: Troubleshooting
-source-git-commit: 88d68b8ad28dfe044808a304d947bde4f5dfb054
+source-git-commit: fcc363df787b5d2f35e8109481d0f9d94c6da9e7
 workflow-type: tm+mt
-source-wordcount: '942'
+source-wordcount: '887'
 ht-degree: 0%
 
 ---
@@ -40,13 +40,11 @@ QPT v1.1.78 omvat de volgende flarden:
 1. **ACP2E-4540**: Hiermee wordt het probleem verholpen waarbij de Fotorama-bibliotheek niet correct werd geladen, zodat alleen de eerste bijgevoegde afbeelding zichtbaar was.
 1. **ACP2E-4555**: Hiermee wordt het probleem opgelost waarbij moderne telefoonnummers &quot;.&quot; bevatten of &quot;/&quot; niet correct zijn gevalideerd.
 1. **ACP2E-4565**: Verhelpt de kwestie waar de vraag van het Bedrijf GraphQL &quot;De huidige klant wordt niet geautoriseerd&quot;terugkeert wanneer de x-Adobe-Bedrijfs kopbal wordt gebruikt.
-1. **ACP2E-4591**: Hiermee wordt het probleem verholpen waarbij klantsegmenten op basis van het aantal bestellingen, zoals &quot;Eerste kopers&quot;, niet werden bijgewerkt toen bestellingen via de REST-API werden geplaatst.
+1. **[ACP2E-4591](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-78/acp2e-4591.md)**: Hiermee wordt het probleem verholpen waarbij klantsegmenten op basis van het aantal bestellingen, zoals &quot;Eerste kopers&quot;, niet werden bijgewerkt toen bestellingen via de REST-API werden geplaatst.
 1. **[ACP2E-4540](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-78/acp2e-4540.md)**: Hiermee wordt het probleem verholpen waarbij de bibliotheek Fotorama niet correct werd geladen, zodat alleen de eerste bijgevoegde afbeelding zichtbaar was.
 1. **[ACP2E-4555](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-78/acp2e-4555.md)**: Hiermee wordt het probleem opgelost waarbij moderne telefoonnummers &quot;.&quot; bevatten of &quot;/&quot; niet correct zijn gevalideerd.
 1. **[ACP2E-4565](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-78/acp2e-4565.md)**: Verhelpt de kwestie waar de vraag van het Bedrijf GraphQL &quot;De huidige klant wordt niet geautoriseerd&quot;terugkeert wanneer de x-Adobe-Bedrijfs kopbal wordt gebruikt.
-1. **ACP2E-4591**: Hiermee wordt het probleem verholpen waarbij klantsegmenten op basis van het aantal bestellingen, zoals &quot;Eerste kopers&quot;, niet werden bijgewerkt toen bestellingen via de REST-API werden geplaatst.
 1. **[ACP2E-4609](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-78/acp2e-4609.md)**: Hiermee wordt het probleem verholpen waarbij op de pagina Mijn aanhalingstekens geen aanhalingstekens worden weergegeven wanneer sommige aanhalingstekens verwijderde producten bevatten.
-1. **ACP2E-4591**: Hiermee wordt het probleem verholpen waarbij klantsegmenten op basis van het aantal bestellingen, zoals &quot;Eerste kopers&quot;, niet werden bijgewerkt toen bestellingen via de REST-API werden geplaatst.
 1. **ACP2E-4609**: Hiermee wordt het probleem verholpen waarbij op de pagina Mijn aanhalingstekens geen aanhalingstekens worden weergegeven wanneer sommige aanhalingstekens verwijderde producten bevatten.
 1. **[ACP2E-4613](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-78/acp2e-4613.md)**: Hiermee wordt het probleem verholpen waarbij grote mediamapstructuren trage reacties met getrouwe getrouwe getrouwe waarden veroorzaakten, wat tot langere laadtijden voor de mappenstructuur van **[!UICONTROL Media Gallery]** leidde.
 1. **ACP2E-4628**: Oplossing voor het probleem dat bij het importeren van klanten met e-mailadressen in hoofdletters de fout met de ongedefinieerde arraysleutel optreedt wanneer Account Sharing is ingesteld op Global.
