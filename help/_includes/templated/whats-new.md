@@ -23,7 +23,7 @@ Deze pagina bevat de wijzigingen die in de afgelopen 60 dagen zijn aangebracht. 
   </thead>
   <tbody>
     <tr>
-      <td><p>Toegevoegde gedetailleerde beschrijving van QPT 1.1.78 moeilijke situatie voor <a href="https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-78/acp2e-4665"> ACP2E-4665: De producten van het kind van configureerbare producten met video's in de productgalerieën verschijnen niet wanneer gevraagd door REST API </a>.</p>
+      <td><p>Toegevoegde gedetailleerde beschrijving van QPT 1.1.78 moeilijke situatie voor <a href="https://experienceleague.adobe.com/nl/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-78/acp2e-4665"> ACP2E-4665: De producten van het kind van configureerbare producten met video's in de productgalerieën verschijnen niet wanneer gevraagd door REST API </a>.</p>
 </td>
       <td>
         Nieuw onderwerp, qpt
@@ -45,7 +45,7 @@ Deze pagina bevat de wijzigingen die in de afgelopen 60 dagen zijn aangebracht. 
   </thead>
   <tbody>
     <tr>
-      <td><p>Toegevoegde gedetailleerde beschrijving van QPT 1.1.78 moeilijke situatie voor <a href="https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-78/acp2e-4613"> ACP2E-4613: Grote mediamapstructuren vertragen getrouwe antwoorden op de boomstructuur en vertragen het laden van de mappenstructuur in de medialerie </a> .</p>
+      <td><p>Toegevoegde gedetailleerde beschrijving van QPT 1.1.78 moeilijke situatie voor <a href="https://experienceleague.adobe.com/nl/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-78/acp2e-4613"> ACP2E-4613: Grote mediamapstructuren vertragen getrouwe antwoorden op de boomstructuur en vertragen het laden van de mappenstructuur in de medialerie </a> .</p>
 </td>
       <td>
         Nieuw onderwerp, qpt
@@ -67,7 +67,7 @@ Deze pagina bevat de wijzigingen die in de afgelopen 60 dagen zijn aangebracht. 
   </thead>
   <tbody>
     <tr>
-      <td><p>Toegevoegde gedetailleerde beschrijving van QPT 1.1.78 moeilijke situatie voor <a href="https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-78/acp2e-4535"> ACP2E-4535: Het voorleggen van de vergat-wachtwoord vorm vernietigt of regenereert de zitting (veranderingen PHPSESSID) en ontruimt de gastkar </a>.</p>
+      <td><p>Toegevoegde gedetailleerde beschrijving van QPT 1.1.78 moeilijke situatie voor <a href="https://experienceleague.adobe.com/nl/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-78/acp2e-4535"> ACP2E-4535: Het voorleggen van de vergat-wachtwoord vorm vernietigt of regenereert de zitting (veranderingen PHPSESSID) en ontruimt de gastkar </a>.</p>
 </td>
       <td>
         Nieuw onderwerp, qpt
@@ -75,7 +75,7 @@ Deze pagina bevat de wijzigingen die in de afgelopen 60 dagen zijn aangebracht. 
       <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/953e231d2161d84e2444fa46ac95b93dbba28241">begaan</a></td>
     </tr>
     <tr>
-      <td><p>Toegevoegde gedetailleerde beschrijving van QPT 1.1.78 moeilijke situatie voor <a href="https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-78/acp2e-4507"> ACP2E-4507: De configuratie van de Opties van het wachtwoord is niet op de verzoeken van het klantenwachtwoord van toepassing die door de mutaties van GraphQL </a> worden gemaakt.</p>
+      <td><p>Toegevoegde gedetailleerde beschrijving van QPT 1.1.78 moeilijke situatie voor <a href="https://experienceleague.adobe.com/nl/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-78/acp2e-4507"> ACP2E-4507: De configuratie van de Opties van het wachtwoord is niet op de verzoeken van het klantenwachtwoord van toepassing die door de mutaties van GraphQL </a> worden gemaakt.</p>
 </td>
       <td>
         Nieuw onderwerp, qpt
@@ -83,7 +83,7 @@ Deze pagina bevat de wijzigingen die in de afgelopen 60 dagen zijn aangebracht. 
       <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/b657f2e50d48c9179d1c6b3559ee7e6ee99b306d">begaan</a></td>
     </tr>
     <tr>
-      <td><p>Toegevoegde gedetailleerde beschrijving van QPT 1.1.78 moeilijke situatie voor <a href="https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-78/acp2e-4609"> ACP2E-4609: Op de pagina Mijn aanhalingstekens worden geen aanhalingstekens weergegeven wanneer sommige aanhalingstekens verwijderde producten bevatten </a> .</p>
+      <td><p>Toegevoegde gedetailleerde beschrijving van QPT 1.1.78 moeilijke situatie voor <a href="https://experienceleague.adobe.com/nl/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-78/acp2e-4609"> ACP2E-4609: Op de pagina Mijn aanhalingstekens worden geen aanhalingstekens weergegeven wanneer sommige aanhalingstekens verwijderde producten bevatten </a> .</p>
 </td>
       <td>
         Nieuw onderwerp, qpt
@@ -91,7 +91,7 @@ Deze pagina bevat de wijzigingen die in de afgelopen 60 dagen zijn aangebracht. 
       <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/670dacfa2bdc211eb9f4ed6788144ba6c1dac678">begaan</a></td>
     </tr>
     <tr>
-      <td><p>Toegevoegde gedetailleerde beschrijving van QPT 1.1.78 moeilijke situatie voor <a href="https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-78/acp2e-4431"> ACP2E-4431: De verwante Producten die door doelregels worden aangepast worden geschrapt tijdens het herindexatieproces </a>.</p>
+      <td><p>Toegevoegde gedetailleerde beschrijving van QPT 1.1.78 moeilijke situatie voor <a href="https://experienceleague.adobe.com/nl/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-78/acp2e-4431"> ACP2E-4431: De verwante Producten die door doelregels worden aangepast worden geschrapt tijdens het herindexatieproces </a>.</p>
 </td>
       <td>
         Nieuw onderwerp, qpt
@@ -99,7 +99,7 @@ Deze pagina bevat de wijzigingen die in de afgelopen 60 dagen zijn aangebracht. 
       <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/f9424da66669c54eb0a794555ea7df66625f6c71">begaan</a></td>
     </tr>
     <tr>
-      <td><p>Toegevoegde gedetailleerde beschrijving van QPT 1.1.78 moeilijke situatie voor <a href="https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-78/acp2e-4416"> ACP2E-4416: De bonuspunten van de klant initialiseren niet wanneer gecreeerd in Admin </a>.</p>
+      <td><p>Toegevoegde gedetailleerde beschrijving van QPT 1.1.78 moeilijke situatie voor <a href="https://experienceleague.adobe.com/nl/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-78/acp2e-4416"> ACP2E-4416: De bonuspunten van de klant initialiseren niet wanneer gecreeerd in Admin </a>.</p>
 </td>
       <td>
         Nieuw onderwerp, qpt
