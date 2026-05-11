@@ -31,7 +31,7 @@ Merchants zijn verantwoordelijk voor:
 * Zorgen voor veilige ontwikkeling van toepassingen
 * Bezig met verkrijgen van PCI-certificering op verzoek van de betalingsprocessor van de handelaar
 * Reageren op en reageren op beveiligingsincidenten
-* Alle afhankelijkheden, platformservices en Adobe Commerce Services-extensies van derden onderhouden op versies die actief worden ondersteund. Adobe biedt geen beveiligingsondersteuning of ondersteuning voor implementaties met niet-ondersteunde afhankelijkheidsversies. Zie {de vereisten van het 0} Systeem ](https://experienceleague.adobe.com/docs/commerce-operations/installation-guide/system-requirements.html) en de [ de beschikbaarheidsmatrijs van het Product ](https://experienceleague.adobe.com/en/docs/commerce-operations/release/product-availability) voor gesteunde versies.[
+* Alle afhankelijkheden, platformservices en Adobe Commerce Services-extensies van derden onderhouden op versies die actief worden ondersteund. Adobe biedt geen beveiligingsondersteuning of ondersteuning voor implementaties met niet-ondersteunde afhankelijkheidsversies. Zie {de vereisten van het 0} Systeem [&#128279;](https://experienceleague.adobe.com/docs/commerce-operations/installation-guide/system-requirements.html) en de [&#x200B; de beschikbaarheidsmatrijs van het Product &#x200B;](https://experienceleague.adobe.com/en/docs/commerce-operations/release/product-availability) voor gesteunde versies.
 
 {{supported-versions-only}}
 
@@ -96,7 +96,7 @@ De handelaar is verantwoordelijk voor het volgen van best practices op het gebie
    * Adobe Commerce Services-extensies
    * Alle externe extensies en aangepaste integratie
 
-  Adobe biedt geen ondersteuning voor implementaties met niet-ondersteunde versies. Zie {de vereisten van het 0} Systeem ](https://experienceleague.adobe.com/docs/commerce-operations/installation-guide/system-requirements.html) en de [ de beschikbaarheidsmatrijs van het Product ](https://experienceleague.adobe.com/en/docs/commerce-operations/release/product-availability) voor gesteunde versies.[
+  Adobe biedt geen ondersteuning voor implementaties met niet-ondersteunde versies. Zie {de vereisten van het 0} Systeem [&#128279;](https://experienceleague.adobe.com/docs/commerce-operations/installation-guide/system-requirements.html) en de [&#x200B; de beschikbaarheidsmatrijs van het Product &#x200B;](https://experienceleague.adobe.com/en/docs/commerce-operations/release/product-availability) voor gesteunde versies.
 
 ## Verantwoordelijkheden van cloudserviceproviders
 
