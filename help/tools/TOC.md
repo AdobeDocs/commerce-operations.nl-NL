@@ -521,7 +521,7 @@ ht-degree: 0%
          - [ACSD-54040: Het veld [!UICONTROL Created] is leeg in de volgorde waarin de B2B-modules zijn ingeschakeld](quality-patches-tool/patches-available-in-qpt/v1-1-40/acsd-54040-created-field-is-blank-in-order-details-page.md)
          - [ACSD-52801: GraphQL-productfilterquery geeft resultaten die niet gedeeltelijk overeenkomen weer](quality-patches-tool/patches-available-in-qpt/v1-1-40/acsd-52801-graphql-product-filter-query-not-showing-partial-match-results.md)
          - [ACSD-54961: Beperkte admin-gebruiker kan geen massa-update  [!DNL Product Review status] uitvoeren](quality-patches-tool/patches-available-in-qpt/v1-1-40/acsd-54961-restricted-admin-user-cant-mass-update-product-review-status.md)
-         - [ ACSD-55031: De fout &#39;Type &quot;gemengd&quot; kan niet null zijn&#39; tijdens compilatie ](quality-patches-tool/patches-available-in-qpt/v1-1-40/acsd-55031-type-mixed-cannot-be-nullable-error-during-compilation.md)
+         - [&#x200B; ACSD-55031: De fout &#39;Type &quot;gemengd&quot; kan niet null zijn&#39; tijdens compilatie &#x200B;](quality-patches-tool/patches-available-in-qpt/v1-1-40/acsd-55031-type-mixed-cannot-be-nullable-error-during-compilation.md)
          - [ACSD-54319: De prijs van het product staat nul in het rapport [!UICONTROL Products in Carts]](quality-patches-tool/patches-available-in-qpt/v1-1-40/acsd-54319-product-price-shows-zero-in-product-in-cart-report.md)
          - [ACSD-54989: Bedrijfsleiders kunnen geen bestelling uitvoeren als [!UICONTROL Enable Purchase Orders] is ingesteld op Ja en [!UICONTROL Purchase Order] is ingesteld op Nee](quality-patches-tool/patches-available-in-qpt/v1-1-40/acsd-54989-order-placement-restrictions-in-company-admin-settings.md)
          - [ACSD-5378: Verbeterde uitcheckervaring voor klanten met uitgebreide adresboeken](quality-patches-tool/patches-available-in-qpt/v1-1-40/acsd-53378-swift-checkout-for-users-with-extensive-address-books.md)
@@ -629,7 +629,7 @@ ht-degree: 0%
          - [Overzicht: [!DNL Quality Patches Tool]  (QPT) v1.1.50](quality-patches-tool/patches-available-in-qpt/v1-1-50/overview.md)
          - [ACSD-59036: Uitzondering bij het laden van productprijzen](quality-patches-tool/patches-available-in-qpt/v1-1-50/acsd-59036-exception-occurs-when-loading-product-prices.md)
          - [ACSD-45049: Kenmerken van klant [!UICONTROL Is required] instellen werkt niet zoals per websitebereik in Admin](quality-patches-tool/patches-available-in-qpt/v1-1-50/acsd-45049-customer-attribute-is-required-setting-doesnt-work.md)
-         - [ ACSD-59378: Store-level  [!DNL URL]  herschrijft verkeerd bijgewerkt tijdens de invoer ](quality-patches-tool/patches-available-in-qpt/v1-1-50/acsd-59378-store-level-url-rewrites-incorrectly-updated-during-import.md)
+         - [&#x200B; ACSD-59378: Store-level  [!DNL URL]  herschrijft verkeerd bijgewerkt tijdens de invoer &#x200B;](quality-patches-tool/patches-available-in-qpt/v1-1-50/acsd-59378-store-level-url-rewrites-incorrectly-updated-during-import.md)
          - [ACSD-46938: De kwesties van prestaties met de trekkers van DB tijdens opstelling :upgrade](quality-patches-tool/patches-available-in-qpt/v1-1-50/acsd-46938-fix-for-db-triggers-performance-issue-during-setup-upgrade.md)
          - [ACSD-5487: Winkelwagentje voor klanten wordt gewist nadat de klantensessie is verlopen](quality-patches-tool/patches-available-in-qpt/v1-1-50/acsd-54887-customer-shopping-cart-gets-cleared-after-session-expiry.md)
          - [ACSD-58141: PHPSESSID regenereert op POST- verzoeken voor het programma geopende klanten als L2 Redis geheim voorgeheugen wordt toegelaten](quality-patches-tool/patches-available-in-qpt/v1-1-50/acsd-58141-phpsessid-regenerates-on-post-requests-for-logged-in-customers.md)
@@ -766,7 +766,7 @@ ht-degree: 0%
          - [ACSD-63793: Importprocessen interfereren met elkaar op verschillende browsertabbladen](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-59/acsd-63793-import-processes-are-interfering-with-each-other-in-different-browser-tabs.md)
          - [ACSD-63574: Het toevoegen van [!UICONTROL Bundle Product] lijst aan blok via  [!DNL Page Builder]  resulteert in fout](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-59/acsd-63574-adding-bundle-product-listing-to-block-via-page-builder-results-in-error.md)
       - v1.1.60 {#v1-1-60}
-         - [ Overzicht: [!DNL Quality Patches Tool]  (QPT) v1.1.60 ](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-60/overview.md)
+         - [&#x200B; Overzicht: [!DNL Quality Patches Tool]  (QPT) v1.1.60 &#x200B;](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-60/overview.md)
          - [ACSD-6323: Hiermee wordt de functionaliteit van [!UICONTROL Select All] omgezet en de paginering en het aantal records in de productcategorie popup verbeterd](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-60/acsd-63323-resolves-select-all-functionality-and-enhances-pagination-and-record-count-in-product-category-popup.md)
          - [ACSD-64149: Klantsegment met een voorwaarde [!UICONTROL Date range] kan worden opgeslagen wanneer slechts één datum wordt bewerkt](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-60/ascd-64149-customer-segment-with-a-date-range-condition.md)
          - [ACSD-6411: Hiermee wordt de uitzondering InvalidArgumentException gecorrigeerd: De klasse bestaat geen fout wanneer het plaatsen van genestelde voorwaarden voor een component van het Product in  [!DNL Page Builder]](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-60/acsd-64111-fixes-issue-where-invalidargumentexceptionclass-does-not-exist-error-occurs-in-vendor-magento-module-rule-model-conditionfactoryphp50-when-setting-nested-conditions-for-a-product-component-in-page-builder.md)
@@ -775,7 +775,7 @@ ht-degree: 0%
       - v1.1.61 {#v1-1-61}
          - [ACSD-64546: Generieke foutmelding in UI en Array naar uitzondering van tekenreeksomzetting tijdens het maken van UPS-labels](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-61/acsd-64546-generic-error-message-in-ui-and-array-to-string-conversion.md)
          - [Overzicht: [!DNL Quality Patches Tool]  (QPT) v1.1.61](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-61/overview.md)
-         - [ ACP2E-3689: De veelvoudige kwesties met categorieboom tonen op diepere niveaus en weerspiegelen anker/niet-ankerverhoudingen ](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-61/acp2e-3689-issues-with-category-tree-display-reflect-anchor-non-anchor-relationships.md)
+         - [&#x200B; ACP2E-3689: De veelvoudige kwesties met categorieboom tonen op diepere niveaus en weerspiegelen anker/niet-ankerverhoudingen &#x200B;](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-61/acp2e-3689-issues-with-category-tree-display-reflect-anchor-non-anchor-relationships.md)
          - [ACSD-64178: [!UICONTROL Edit Attribute Set] pagina wordt langzaam geladen met duizenden productkenmerken](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-61/acsd-64178-attribute-set-edit-page-loads-slow-with-thousands-of-attributes.md)
          - [ACSD-64431 De &quot;placeOrder&quot;-mutatie met couponcode in de aanvraag veroorzaakt een interne serverfout](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-61/acsd-64431-placeorder-mutation-with-coupon-code-throws-error.md)
          - [ACSD-64684: Validatiefout bij het opslaan van een cadeaukaart met een waarde groter dan 999 vanwege de komma in duizend (1.000)](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-61/acsd-64684-validation-error-for-gift-card-value-over-999-due-to-comma-in-one-thousand.md)
@@ -796,7 +796,7 @@ ht-degree: 0%
       - v1.1.63 {#v1-1-63}
          - [Overzicht: [!DNL Quality Patches Tool]  (QPT) v1.1.63](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-63/overview.md)
          - [ACSD-64627: Kan aangepaste klantkenmerken niet opslaan in [!UICONTROL Company Structure]](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-63/acsd-64627-fixes-saving-issues-for-custom-attributes-in-user-profiles.md)
-         - [ ACSD-65195: De verandering van GraphQL createCompany keert een fout voor een land zonder een vereist gebied terug ](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-63/acsd-65195-fixes-the-issue-where-the-graphql-mutation-createcompany.md)
+         - [&#x200B; ACSD-65195: De verandering van GraphQL createCompany keert een fout voor een land zonder een vereist gebied terug &#x200B;](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-63/acsd-65195-fixes-the-issue-where-the-graphql-mutation-createcompany.md)
          - [ACSD-64753: Vooraf geselecteerde winkel in Ophalen in winkel wordt niet bijgewerkt wanneer het verzendadres verandert](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-63/pre-selected-store-in-pickup-in-store-doesnt-update-when-shipping-address-changes.md)
       - v1.1.64 {#v1-1-64}
          - [Overzicht: [!DNL Quality Patches Tool]  (QPT) v1.1.64](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-64/overview.md)
@@ -843,7 +843,7 @@ ht-degree: 0%
          - [AC-14985: Fout bij verzenden van SMTP-e-mails met TLS](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-67/ac-14985-error-when-sending-smtp-emails-using-tls.md)
          - [ACSD-66434: [!UICONTROL Customer ID] het missen van bedrijf  [!DNL GraphQL]  vragen](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-67/acsd-66434-customer-id-missing-from-company-graphql-queries.md)
       - v1.1.68 {#v1-1-68}
-         - [ ACSD-66072: GraphQL kan verwante producten niet retourneren op de pagina Productdetails vanwege een interne serverfout tijdens [!UICONTROL Related Products Rule] configuratie ](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-68/acsd-66072-graphql-fails-to-return-related-products-due-to-server-error-in-related-product-rules.md)
+         - [&#x200B; ACSD-66072: GraphQL kan verwante producten niet retourneren op de pagina Productdetails vanwege een interne serverfout tijdens [!UICONTROL Related Products Rule] configuratie &#x200B;](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-68/acsd-66072-graphql-fails-to-return-related-products-due-to-server-error-in-related-product-rules.md)
          - [Overzicht: [!DNL Quality Patches Tool]  (QPT) v1.1.68](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-68/overview.md)
          - [ACSD-58131: De oude mediagalerie kan geen afbeeldingen laden vanwege het afbeeldingsbestand van 0 byte](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-68/acsd-58131-old-media-gallery-fails-to-load-images-due-to-0-byte-image-file.md)
          - [ACSD-66963: de mutatie van schattingenTotals keert ongeldig voor kortingen op virtuele producten](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-68/acsd-66963-estimatetotals-mutation-returns-null-for-discounts-on-virtual-products.md)
@@ -891,12 +891,12 @@ ht-degree: 0%
       - v1.1.71 {#v1-1-71}
          - [Overzicht: [!DNL Quality Patches Tool]  (QPT) v1.1.71](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-71/overview.md)
          - [ACSD-67089: voorraad/export-stock-salable-quality API retourneert onjuiste total_count wanneer page_size is ingesteld](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-71/acsd-67089.md)
-         - [ ACSD-67643: Dubbele ingangen die tijdens geplande updates in hoog-genestelde categoriemilieu&#39;s worden gecreeerd ](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-71/acsd-67643.md)
+         - [&#x200B; ACSD-67643: Dubbele ingangen die tijdens geplande updates in hoog-genestelde categoriemilieu&#39;s worden gecreeerd &#x200B;](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-71/acsd-67643.md)
          - [ACSD-67603: Sitemap-productie met lange verwerkingstijd voor producten met ingeschakelde afbeeldingsopname](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-71/acsd-67603.md)
          - [ACSD-67093: Als u via GraphQL orders ophaalt met het filter voor het datumbereik, worden onjuiste resultaten geretourneerd](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-71/acsd-67093.md)
          - [ACSD-67652: Bundle product status returned as out of stock in GraphQL call with child and parent products in stock](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-71/acsd-67652.md)
-         - [ ACSD-60624: Upload Image mislukt voor lege inhoud in de secties Image, Banner en Slider in  [!DNL Page Builder]](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-71/acsd-60624.md)
-         - [ ACSD-67904: De orden kunnen niet worden geplaatst als de plaatsnaam cijfers (0-9), ampersand (&amp;), periode (.), of haakjes () bevat ](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-71/acsd-67904.md)
+         - [&#x200B; ACSD-60624: Upload Image mislukt voor lege inhoud in de secties Image, Banner en Slider in  [!DNL Page Builder]](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-71/acsd-60624.md)
+         - [&#x200B; ACSD-67904: De orden kunnen niet worden geplaatst als de plaatsnaam cijfers (0-9), ampersand (&amp;), periode (.), of haakjes () bevat &#x200B;](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-71/acsd-67904.md)
          - [ACSD-67459: Kan geen producten importeren met beschrijvingen langer dan 65.536 tekens](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-71/acsd-67459.md)
       - v1.1.72 {#v1-1-72}
          - [Overzicht: [!DNL Quality Patches Tool]  (QPT) v1.1.72](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-72/overview.md)
@@ -1006,7 +1006,7 @@ ht-degree: 0%
    - [De focustabs kiezen](observation-for-adobe-commerce/choosing-focus-tabs.md)
    - [Het tabblad Overzicht](observation-for-adobe-commerce/summary.md)
    - [Het tabblad Elasticsearch](observation-for-adobe-commerce/elasticsearch.md)
-   - [ Redis lusje ](observation-for-adobe-commerce/redis-tab.md)
+   - [&#x200B; Redis lusje &#x200B;](observation-for-adobe-commerce/redis-tab.md)
    - [Het tabblad MySQL](observation-for-adobe-commerce/mysql-tab.md)
    - [Het tabblad PHP](observation-for-adobe-commerce/php-tab.md)
    - [Het tabblad Bots](observation-for-adobe-commerce/bots.md)
@@ -1018,7 +1018,7 @@ ht-degree: 0%
    - [Het tabblad Uitsnijden](observation-for-adobe-commerce/cron-tab.md)
    - [Het tabblad Indexering](observation-for-adobe-commerce/indexing-tab.md)
    - [Het tabblad QuickView](observation-for-adobe-commerce/oac-quickview-tab.md)
-   - [ het lusje van de Veiligheid ](observation-for-adobe-commerce/security-tab.md)
+   - [&#x200B; het lusje van de Veiligheid &#x200B;](observation-for-adobe-commerce/security-tab.md)
    - [Het tabblad Infra](observation-for-adobe-commerce/oac-infra.md)
    - [Hoe wordt Observatie voor Adobe Commerce gebruikt](observation-for-adobe-commerce/how-to-use.md)
 - Gegevensmigratie {#data-migration}
