@@ -1,7 +1,7 @@
 ---
-source-git-commit: ef3abc83e2c699ebfbb53ad367aaceb9ecb92491
+source-git-commit: 44f5debe62afeb55d301a769ca8a3af957e5b6fd
 workflow-type: tm+mt
-source-wordcount: '5029'
+source-wordcount: '5164'
 ht-degree: 0%
 
 ---
@@ -19,19 +19,20 @@ Adobe Commerce gebruikt Composer om PHP-pakketten te beheren.
 
 In het bestand `composer.json` wordt de lijst met pakketten gedeclareerd, terwijl in het bestand van `composer.lock` een volledige lijst met pakketten (een volledige versie van elk pakket en de bijbehorende afhankelijkheden) is opgeslagen die zijn gebruikt om een installatie van Adobe Commerce te maken.
 
-De volgende referentiedocumentatie wordt gegenereerd uit het `composer.lock` -bestand en omvat de vereiste pakketten die in Adobe Commerce 2.4.8 zijn opgenomen.
+De volgende referentiedocumentatie wordt gegenereerd uit het `composer.lock` -bestand en omvat de vereiste pakketten die zijn opgenomen in Adobe Commerce 2.4.9.
 
 ## Afhankelijkheden
 
-`magento/product-enterprise-edition 2.4.8` heeft de volgende afhankelijkheden:
+`magento/product-enterprise-edition 2.4.9` heeft de volgende afhankelijkheden:
 
-- adobe-commerce/extensions-metapakket: 2.0.1.
+- adobe-commerce/adobe-ims-metappackage: ~2.2.4
+- adobe-commerce/extensions-metapakket: ^2.0.3
 - colinmolenhour/cache-backend-file: ^1.4
 - colinmolenhour/cache-backend-redis: ^1.16
 - colinmolenhour/credits: ^1.15
 - colinmolenhour/php-redis-session-abstract: ^2.0
-- composer/composer: ^2.0, !=2.2.16
-- duosecurity/duo_api_php: ^1.1
+- composer/composer: ^2.2
+- duosecurity/duo_api_php: ^1.2
 - duosecurity/duo_Universal_php: ^1.0
 - elasticsearch/elasticsearch: ^8.15
 - Text-bcmath: *
@@ -54,181 +55,187 @@ De volgende referentiedocumentatie wordt gegenereerd uit het `composer.lock` -be
 - text-zip: *
 - ezyang/htmlpurifier: ^4.17
 - guzzlehttp/guzzle: ^7.5
-- laminas/laminas-captcha: ^2.18
+- laminas/laminas-captcha: ^2.20
 - laminas/laminascode: ^4.13
-- laminas/laminas-di: ^3.15
+- laminas/laminas-di: ^3.16
 - laminas/laminas-escaper: ^2.13
 - laminas/laminas-eventmanager: ^3.11
-- laminas/laminas-voeder: ^2.22
+- laminas/laminas-voeder: ^2.26
 - laminas/laminafilter: ^2.33
-- laminas/laminas-http: ^2.15
+- laminas/laminas-http: ^2.23
 - laminas/laminas-i18n: ^2.17
-- laminas/laminas-modulemanager: ^2.11
-- laminas/laminas-mvc: ^3.6
-- laminas/laminas-permissions-acl: ^2.10
+- laminas/laminas-modulemanager: ^2.19
+- laminas/laminas-permissions-acl: ^2.18
+- laminas/laminas-server: ^2.19
 - laminas/laminas-servicemanager: ^3.16
-- laminas/laminaszeep: ^2.10
+- laminas/laminaszeep: ^2.15
 - laminas/laminas-stdlib: ^3.11
-- laminas/laminas-uri: ^2.9
+- laminas/laminas-uri: ^2.14
 - laminas/laminas-validator: ^2.23
+- laminas/laminasweergave: ^2.43
 - liga/vliegsysteem: ^3.0
 - liga/flysystem-aws-s3-v3: ^3.0
 - lib-libxml: *
-- magento/composer: ^1.10.1-bèta1
+- magento/composer: ^1.10.2-bèta4
 - magento/composer-dependency-version-audit-plugin: ^0.1
-- magento/framework-foreign-key: 100,4,7
+- magento/framework-foreign-key: 100,4,8
 - magento/magento-composer-installer: >=0.4.0
-- magento/magento-zf-db: ^3.21
-- magento/magento2-ee-base: 2.4.8.
-- [&#x200B; magento/module-admin-gws &#x200B;](https://developer.adobe.com/commerce/php/module-reference/module-admin-gws): 100,4,8
-- [&#x200B; magento/module-admin-gws-configureerbaar-product &#x200B;](https://developer.adobe.com/commerce/php/module-reference/module-admin-gws-configurable-product): 100,4,5
-- [&#x200B; magento/module-admin-gws-staging &#x200B;](https://developer.adobe.com/commerce/php/module-reference/module-admin-gws-staging): 100,4,5
-- [&#x200B; magento/module-geavanceerd-catalogus &#x200B;](https://developer.adobe.com/commerce/php/module-reference/module-advanced-catalog): 100,4,5
-- [&#x200B; magento/module-geavanceerd-checkout &#x200B;](https://developer.adobe.com/commerce/php/module-reference/module-advanced-checkout): 100,4,8
-- [&#x200B; magento/module-geavanceerd-regel &#x200B;](https://developer.adobe.com/commerce/php/module-reference/module-advanced-rule): 100,4,5
-- [&#x200B; magento/module-advanced-sales-rule &#x200B;](https://developer.adobe.com/commerce/php/module-reference/module-advanced-sales-rule): 100,4,5
-- [&#x200B; magento/module-toepassing-server &#x200B;](https://developer.adobe.com/commerce/php/module-reference/module-application-server): 100,4,1
-- [&#x200B; magento/module-application-server-new-relic &#x200B;](https://developer.adobe.com/commerce/php/module-reference/module-application-server-new-relic): 100,4,1
-- [&#x200B; magento/module-toepassing-server-prestaties-monitor &#x200B;](https://developer.adobe.com/commerce/php/module-reference/module-application-server-performance-monitor): 100,4,1
-- [&#x200B; magento/module-toepassing-server-staat-monitor &#x200B;](https://developer.adobe.com/commerce/php/module-reference/module-application-server-state-monitor): 100,4,1
-- [&#x200B; magento/module-toepassing-server-staat-monitor-grafiek-ql &#x200B;](https://developer.adobe.com/commerce/php/module-reference/module-application-server-state-monitor-graph-ql): 100,4,1
-- [&#x200B; magento/module-async-orde &#x200B;](https://developer.adobe.com/commerce/php/module-reference/module-async-order): 100,4,4
-- [&#x200B; magento/module-async-orde-grafiek-ql &#x200B;](https://developer.adobe.com/commerce/php/module-reference/module-async-order-graph-ql): 100,4,3
-- [&#x200B; magento/module-ws-s3-klant-douane-attributen &#x200B;](https://developer.adobe.com/commerce/php/module-reference/module-aws-s3-customer-custom-attributes): 100,4,5
-- [&#x200B; magento/module-ws-s3-gift-kaart-invoer-uitvoer &#x200B;](https://developer.adobe.com/commerce/php/module-reference/module-aws-s3-gift-card-import-export): 100,4,5
-- [&#x200B; magento/module-ws-s3-geplande-invoer-uitvoer &#x200B;](https://developer.adobe.com/commerce/php/module-reference/module-aws-s3-scheduled-import-export): 100,4,5
-- [&#x200B; magento/module-banner &#x200B;](https://developer.adobe.com/commerce/php/module-reference/module-banner): 101,2,8
-- [&#x200B; magento/module-banner-klant-segment &#x200B;](https://developer.adobe.com/commerce/php/module-reference/module-banner-customer-segment): 100,4,6
-- [&#x200B; magento/module-banner-grafiek-ql &#x200B;](https://developer.adobe.com/commerce/php/module-reference/module-banner-graph-ql): 100,4,4
-- [&#x200B; magento/module-banner-staging &#x200B;](https://developer.adobe.com/commerce/php/module-reference/module-banner-staging): 100,4,2
-- [&#x200B; magento/module-bundle-import-export-staging &#x200B;](https://developer.adobe.com/commerce/php/module-reference/module-bundle-import-export-staging): 100,4,5
-- [&#x200B; magento/module-bundle-staging &#x200B;](https://developer.adobe.com/commerce/php/module-reference/module-bundle-staging): 100,4,8
-- [&#x200B; magento/module-catalogus-gebeurtenis &#x200B;](https://developer.adobe.com/commerce/php/module-reference/module-catalog-event): 101,1,7
-- [&#x200B; magento/module-catalogus-import-export-staging &#x200B;](https://developer.adobe.com/commerce/php/module-reference/module-catalog-import-export-staging): 100,4,5
-- [&#x200B; magento/module-catalogus-inventaris-staging &#x200B;](https://developer.adobe.com/commerce/php/module-reference/module-catalog-inventory-staging): 100,4,6
-- [&#x200B; magento/module-catalogus-toestemmingen &#x200B;](https://developer.adobe.com/commerce/php/module-reference/module-catalog-permissions): 100,4,8
-- [&#x200B; magento/module-catalogus-toestemmingen-grafiek-ql &#x200B;](https://developer.adobe.com/commerce/php/module-reference/module-catalog-permissions-graph-ql): 100,4,6
-- [&#x200B; magento/module-catalogus-regel-staging &#x200B;](https://developer.adobe.com/commerce/php/module-reference/module-catalog-rule-staging): 100,4,8
-- [&#x200B; magento/module-catalogus-opvoeren &#x200B;](https://developer.adobe.com/commerce/php/module-reference/module-catalog-staging): 100,4,8
-- [&#x200B; magento/module-catalogus-staging-grafiek-ql &#x200B;](https://developer.adobe.com/commerce/php/module-reference/module-catalog-staging-graph-ql): 100,4,7
-- [&#x200B; magento/module-catalogus-url-rewrite-staging &#x200B;](https://developer.adobe.com/commerce/php/module-reference/module-catalog-url-rewrite-staging): 100,4,7
-- [&#x200B; magento/module-checkout-adres-onderzoek &#x200B;](https://developer.adobe.com/commerce/php/module-reference/module-checkout-address-search): 100,4,7
-- [&#x200B; magento/module-checkout-address-gift-register &#x200B;](https://developer.adobe.com/commerce/php/module-reference/module-checkout-address-search-gift-registry): 100,4,4
-- [&#x200B; magento/module-checkout-staging &#x200B;](https://developer.adobe.com/commerce/php/module-reference/module-checkout-staging): 100,4,7
-- [&#x200B; magento/module-cms-staging &#x200B;](https://developer.adobe.com/commerce/php/module-reference/module-cms-staging): 100,4,8
-- [&#x200B; magento/module-configureerbaar-product-staging &#x200B;](https://developer.adobe.com/commerce/php/module-reference/module-configurable-product-staging): 100,4,7
-- [&#x200B; magento/module-douane-attribuut-beheer &#x200B;](https://developer.adobe.com/commerce/php/module-reference/module-custom-attribute-management): 100,4,7
-- [&#x200B; magento/module-klant-balans &#x200B;](https://developer.adobe.com/commerce/php/module-reference/module-customer-balance): 100,4,8
-- [&#x200B; magento/module-klant-balans-grafiek-ql &#x200B;](https://developer.adobe.com/commerce/php/module-reference/module-customer-balance-graph-ql): 100,4,5
-- [&#x200B; magento/module-klant-douane-attributen &#x200B;](https://developer.adobe.com/commerce/php/module-reference/module-customer-custom-attributes): 100,4,8
-- [&#x200B; magento/module-klant-douane-attributen-grafiek-ql &#x200B;](https://developer.adobe.com/commerce/php/module-reference/module-customer-custom-attributes-graph-ql): 100,4,1
-- [&#x200B; magento/module-klant-financiering &#x200B;](https://developer.adobe.com/commerce/php/module-reference/module-customer-finance): 100,4,5
-- [&#x200B; magento/module-klant-segment &#x200B;](https://developer.adobe.com/commerce/php/module-reference/module-customer-segment): 102,1,8
-- [&#x200B; magento/module-klant-segment-grafiek-ql &#x200B;](https://developer.adobe.com/commerce/php/module-reference/module-customer-segment-graph-ql): 100,4,1
-- [&#x200B; magento/module-uitgesteld-totaal-het berekenen &#x200B;](https://developer.adobe.com/commerce/php/module-reference/module-deferred-total-calculating): 100,4,3
-- [&#x200B; magento/module-downloadbaar-opvoeren &#x200B;](https://developer.adobe.com/commerce/php/module-reference/module-downloadable-staging): 100,4,7
-- [&#x200B; magento/module-elasticsearch-catalog-toestemmingen &#x200B;](https://developer.adobe.com/commerce/php/module-reference/module-elasticsearch-catalog-permissions): 100,4,4
-- [&#x200B; magento/module-elasticsearch-catalog-permissions-grafiek-ql &#x200B;](https://developer.adobe.com/commerce/php/module-reference/module-elasticsearch-catalog-permissions-graph-ql): 100,4,3
-- [&#x200B; magento/module-onderneming &#x200B;](https://developer.adobe.com/commerce/php/module-reference/module-enterprise): 100,4,6
-- [&#x200B; magento/module-gift-kaart &#x200B;](https://developer.adobe.com/commerce/php/module-reference/module-gift-card): 101,3,8
-- [&#x200B; magento/module-gift-kaart-rekening &#x200B;](https://developer.adobe.com/commerce/php/module-reference/module-gift-card-account): 101,2,8
-- [&#x200B; magento/module-gift-kaart-rekening-grafiek-ql &#x200B;](https://developer.adobe.com/commerce/php/module-reference/module-gift-card-account-graph-ql): 100,4,6
-- [&#x200B; magento/module-gift-kaart-grafiek-ql &#x200B;](https://developer.adobe.com/commerce/php/module-reference/module-gift-card-graph-ql): 100,4,8
-- [&#x200B; magento/module-gift-kaart-invoer-uitvoer &#x200B;](https://developer.adobe.com/commerce/php/module-reference/module-gift-card-import-export): 100,4,5
-- [&#x200B; magento/module-gift-kaart-staging &#x200B;](https://developer.adobe.com/commerce/php/module-reference/module-gift-card-staging): 100,4,5
-- [&#x200B; magento/module-gift-bericht-staging &#x200B;](https://developer.adobe.com/commerce/php/module-reference/module-gift-message-staging): 100,4,5
-- [&#x200B; magento/module-gift-register &#x200B;](https://developer.adobe.com/commerce/php/module-reference/module-gift-registry): 101,2,8
-- [&#x200B; magento/module-gift-register-grafiek-ql &#x200B;](https://developer.adobe.com/commerce/php/module-reference/module-gift-registry-graph-ql): 100,4,4
-- [&#x200B; magento/module-gift-verpakken &#x200B;](https://developer.adobe.com/commerce/php/module-reference/module-gift-wrapping): 101,2,7
-- [&#x200B; magento/module-gift-wrapping-grafiek-ql &#x200B;](https://developer.adobe.com/commerce/php/module-reference/module-gift-wrapping-graph-ql): 100,4,5
-- [&#x200B; magento/module-gift-verpakken-staging &#x200B;](https://developer.adobe.com/commerce/php/module-reference/module-gift-wrapping-staging): 100,4,5
-- [&#x200B; magento/module-google-optimizer-staging &#x200B;](https://developer.adobe.com/commerce/php/module-reference/module-google-optimizer-staging): 100,4,5
-- [&#x200B; magento/module-google-markering-manager &#x200B;](https://developer.adobe.com/commerce/php/module-reference/module-google-tag-manager): 100,4,8
-- [&#x200B; magento/module-gegroepeerd-product-staging &#x200B;](https://developer.adobe.com/commerce/php/module-reference/module-grouped-product-staging): 100,4,6
-- [&#x200B; magento/module-invoer-csv &#x200B;](https://developer.adobe.com/commerce/php/module-reference/module-import-csv): 100,4,2
-- [&#x200B; magento/module-invoer-csv-api &#x200B;](https://developer.adobe.com/commerce/php/module-reference/module-import-csv-api): 100,4,2
-- [&#x200B; magento/module-import-json &#x200B;](https://developer.adobe.com/commerce/php/module-reference/module-import-json): 100,4,1
-- [&#x200B; magento/module-import-json-api &#x200B;](https://developer.adobe.com/commerce/php/module-reference/module-import-json-api): 100,4,1
-- [&#x200B; magento/module-uitnodiging &#x200B;](https://developer.adobe.com/commerce/php/module-reference/module-invitation): 100,4,7
-- [&#x200B; magento/module-gelaagd-navigatie-staging &#x200B;](https://developer.adobe.com/commerce/php/module-reference/module-layered-navigation-staging): 100,4,5
-- [&#x200B; magento/module-registreren &#x200B;](https://developer.adobe.com/commerce/php/module-reference/module-logging): 101,2,8
-- [&#x200B; magento/module-login-as-klant-registreren &#x200B;](https://developer.adobe.com/commerce/php/module-reference/module-login-as-customer-logging): 100,4,8
-- [&#x200B; magento/module-login-as-klant-website-beperking &#x200B;](https://developer.adobe.com/commerce/php/module-reference/module-login-as-customer-website-restriction): 100,4,6
-- [&#x200B; magento/module-media-content-catalog-staging &#x200B;](https://developer.adobe.com/commerce/php/module-reference/module-media-content-catalog-staging): 100,4,5
-- [&#x200B; magento/module-msrp-staging &#x200B;](https://developer.adobe.com/commerce/php/module-reference/module-msrp-staging): 100,4,6
-- [&#x200B; magento/module-multicoupon &#x200B;](https://developer.adobe.com/commerce/php/module-reference/module-multicoupon): 100,4,1
-- [&#x200B; magento/module-multicoupon-graph-ql &#x200B;](https://developer.adobe.com/commerce/php/module-reference/module-multicoupon-graph-ql): 100,4,1
-- [&#x200B; magento/module-multicoupon-ui &#x200B;](https://developer.adobe.com/commerce/php/module-reference/module-multicoupon-ui): 100,4,1
-- [&#x200B; magento/module-veelvoudig-wenslijst &#x200B;](https://developer.adobe.com/commerce/php/module-reference/module-multiple-wishlist): 100,4,8
-- [&#x200B; magento/module-veelvoudig-wenslist-grafiek-ql &#x200B;](https://developer.adobe.com/commerce/php/module-reference/module-multiple-wishlist-graph-ql): 100,4,4
-- [&#x200B; magento/module-betaling-staging &#x200B;](https://developer.adobe.com/commerce/php/module-reference/module-payment-staging): 100,4,5
-- [&#x200B; magento/module-persistente-history &#x200B;](https://developer.adobe.com/commerce/php/module-reference/module-persistent-history): 100,4,5
-- [&#x200B; magento/module-prijs-toestemmingen &#x200B;](https://developer.adobe.com/commerce/php/module-reference/module-price-permissions): 100,4,4
-- [&#x200B; magento/module-product-video-het opvoeren &#x200B;](https://developer.adobe.com/commerce/php/module-reference/module-product-video-staging): 100,4,5
-- [&#x200B; magento/module-bevordering-toestemmingen &#x200B;](https://developer.adobe.com/commerce/php/module-reference/module-promotion-permissions): 100,4,5
-- [&#x200B; magento/module-citaat-handel-grafiek-ql &#x200B;](https://developer.adobe.com/commerce/php/module-reference/module-quote-commerce-graph-ql): 100,4,1
-- [&#x200B; magento/module-citaat-gift-kaart-opties &#x200B;](https://developer.adobe.com/commerce/php/module-reference/module-quote-gift-card-options): 100,4,5
-- [&#x200B; magento/module-citaat-staging &#x200B;](https://developer.adobe.com/commerce/php/module-reference/module-quote-staging): 100,4,5
-- [&#x200B; magento/module-herinnering &#x200B;](https://developer.adobe.com/commerce/php/module-reference/module-reminder): 101,2,7
-- [&#x200B; magento/module-ver-opslag-handel &#x200B;](https://developer.adobe.com/commerce/php/module-reference/module-remote-storage-commerce): 100,4,4
-- [&#x200B; magento/module-middel-verbindingen &#x200B;](https://developer.adobe.com/commerce/php/module-reference/module-resource-connections): 100,4,5
-- [&#x200B; magento/module-overzicht-staging &#x200B;](https://developer.adobe.com/commerce/php/module-reference/module-review-staging): 100,4,5
-- [&#x200B; magento/module-beloning &#x200B;](https://developer.adobe.com/commerce/php/module-reference/module-reward): 101,2,8
-- [&#x200B; magento/module-beloning-grafiek-ql &#x200B;](https://developer.adobe.com/commerce/php/module-reference/module-reward-graph-ql): 100,4,7
-- [&#x200B; magento/module-beloning-staging &#x200B;](https://developer.adobe.com/commerce/php/module-reference/module-reward-staging): 100,4,5
-- [&#x200B; magento/module-rma &#x200B;](https://developer.adobe.com/commerce/php/module-reference/module-rma): 101,2,8
-- [&#x200B; magento/module-rma-grafiek-ql &#x200B;](https://developer.adobe.com/commerce/php/module-reference/module-rma-graph-ql): 100,4,7
-- [&#x200B; magento/module-rma-staging &#x200B;](https://developer.adobe.com/commerce/php/module-reference/module-rma-staging): 100,4,5
-- [&#x200B; magento/module-verkoop-archief &#x200B;](https://developer.adobe.com/commerce/php/module-reference/module-sales-archive): 101,0,6
-- [&#x200B; magento/module-verkoop-regel-staging &#x200B;](https://developer.adobe.com/commerce/php/module-reference/module-sales-rule-staging): 100,4,7
-- [&#128279;](https://developer.adobe.com/commerce/php/module-reference/module-scalable-checkout) magento/module-scalable-checkout: 100,4,7
-- [&#x200B; magento/module-scalable-voorraad &#x200B;](https://developer.adobe.com/commerce/php/module-reference/module-scalable-inventory): 100,4,6
-- [&#x200B; magento/module-scalable-oms &#x200B;](https://developer.adobe.com/commerce/php/module-reference/module-scalable-oms): 100,4,6
-- [&#x200B; magento/module-gepland-invoer-uitvoer &#x200B;](https://developer.adobe.com/commerce/php/module-reference/module-scheduled-import-export): 101,2,8
-- [&#x200B; magento/module-onderzoek-staging &#x200B;](https://developer.adobe.com/commerce/php/module-reference/module-search-staging): 100,4,6
-- [&#x200B; magento/module-staging &#x200B;](https://developer.adobe.com/commerce/php/module-reference/module-staging): 101,2,8
-- [&#x200B; magento/module-staging-grafiek-ql &#x200B;](https://developer.adobe.com/commerce/php/module-reference/module-staging-graph-ql): 100,4,5
-- [&#x200B; magento/module-steun &#x200B;](https://developer.adobe.com/commerce/php/module-reference/module-support): 101,2,7
-- [&#x200B; magento/module-swat &#x200B;](https://developer.adobe.com/commerce/php/module-reference/module-swat): 100,4,6
-- [&#x200B; magento/module-doel-regel &#x200B;](https://developer.adobe.com/commerce/php/module-reference/module-target-rule): 101,2,8
-- [&#x200B; magento/module-doel-regel-grafiek-ql &#x200B;](https://developer.adobe.com/commerce/php/module-reference/module-target-rule-graph-ql): 100,4,5
-- [&#x200B; magento/module-versies-cms &#x200B;](https://developer.adobe.com/commerce/php/module-reference/module-versions-cms): 101,2,8
-- [&#x200B; magento/module-versies-cms-pagina-geheime voorgeheugen &#x200B;](https://developer.adobe.com/commerce/php/module-reference/module-versions-cms-page-cache): 100,4,4
-- [&#x200B; magento/module-versies-cms-url-rewrite &#x200B;](https://developer.adobe.com/commerce/php/module-reference/module-versions-cms-url-rewrite): 100,4,6
-- [&#x200B; magento/module-versies-cms-url-rewrite-graph-ql &#x200B;](https://developer.adobe.com/commerce/php/module-reference/module-versions-cms-url-rewrite-graph-ql): 100,4,4
-- [&#x200B; magento/module-visual-merchandiser &#x200B;](https://developer.adobe.com/commerce/php/module-reference/module-visual-merchandiser): 100,4,8
-- [&#x200B; magento/module-webapi-rest-gws &#x200B;](https://developer.adobe.com/commerce/php/module-reference/module-webapi-rest-gws): 100,4,0
-- [&#x200B; magento/module-website-beperking &#x200B;](https://developer.adobe.com/commerce/php/module-reference/module-website-restriction): 100,4,7
-- [&#x200B; magento/module-weee-staging &#x200B;](https://developer.adobe.com/commerce/php/module-reference/module-weee-staging): 100,4,5
-- [&#x200B; magento/module-wishlist-gift-kaart &#x200B;](https://developer.adobe.com/commerce/php/module-reference/module-wishlist-gift-card): 100,4,4
-- [&#x200B; magento/module-wishlist-gift-kaart-grafiek-ql &#x200B;](https://developer.adobe.com/commerce/php/module-reference/module-wishlist-gift-card-graph-ql): 100,4,4
-- magento/page-builder-commerce: 1.7.5.
-- magento/product-community-edition: 2.4.8.
-- magento/security-package-ee: 1.0.3.
-- magento/theme-adminhtml-spectrum: 100,4,3
+- magento/magento2-ee-base: 2.4.9.
+- [ magento/module-admin-gws ](https://developer.adobe.com/commerce/php/module-reference/module-admin-gws): 100,4,9
+- [ magento/module-admin-gws-configureerbaar-product ](https://developer.adobe.com/commerce/php/module-reference/module-admin-gws-configurable-product): 100,4,6
+- [ magento/module-admin-gws-staging ](https://developer.adobe.com/commerce/php/module-reference/module-admin-gws-staging): 100,4,6
+- [ magento/module-geavanceerd-catalogus ](https://developer.adobe.com/commerce/php/module-reference/module-advanced-catalog): 100,4,6
+- [ magento/module-geavanceerd-checkout ](https://developer.adobe.com/commerce/php/module-reference/module-advanced-checkout): 100,4,9
+- [ magento/module-geavanceerd-regel ](https://developer.adobe.com/commerce/php/module-reference/module-advanced-rule): 100,4,6
+- [ magento/module-advanced-sales-rule ](https://developer.adobe.com/commerce/php/module-reference/module-advanced-sales-rule): 100,4,6
+- [ magento/module-toepassing-server ](https://developer.adobe.com/commerce/php/module-reference/module-application-server): 100,4,2
+- [ magento/module-application-server-new-relic ](https://developer.adobe.com/commerce/php/module-reference/module-application-server-new-relic): 100,4,2
+- [ magento/module-toepassing-server-prestaties-monitor ](https://developer.adobe.com/commerce/php/module-reference/module-application-server-performance-monitor): 100,4,2
+- [ magento/module-toepassing-server-staat-monitor ](https://developer.adobe.com/commerce/php/module-reference/module-application-server-state-monitor): 100,4,2
+- [ magento/module-toepassing-server-staat-monitor-grafiek-ql ](https://developer.adobe.com/commerce/php/module-reference/module-application-server-state-monitor-graph-ql): 100,4,2
+- [ magento/module-async-orde ](https://developer.adobe.com/commerce/php/module-reference/module-async-order): 100,4,5
+- [ magento/module-async-orde-grafiek-ql ](https://developer.adobe.com/commerce/php/module-reference/module-async-order-graph-ql): 100,4,4
+- [ magento/module-ws-s3-klant-douane-attributen ](https://developer.adobe.com/commerce/php/module-reference/module-aws-s3-customer-custom-attributes): 100,4,6
+- [ magento/module-ws-s3-gift-kaart-invoer-uitvoer ](https://developer.adobe.com/commerce/php/module-reference/module-aws-s3-gift-card-import-export): 100,4,6
+- [ magento/module-ws-s3-geplande-invoer-uitvoer ](https://developer.adobe.com/commerce/php/module-reference/module-aws-s3-scheduled-import-export): 100,4,6
+- [ magento/module-banner ](https://developer.adobe.com/commerce/php/module-reference/module-banner): 101,2,9
+- [ magento/module-banner-klant-segment ](https://developer.adobe.com/commerce/php/module-reference/module-banner-customer-segment): 100,4,7
+- [ magento/module-banner-grafiek-ql ](https://developer.adobe.com/commerce/php/module-reference/module-banner-graph-ql): 100,4,5
+- [ magento/module-banner-staging ](https://developer.adobe.com/commerce/php/module-reference/module-banner-staging): 100,4,3
+- [ magento/module-bundle-import-export-staging ](https://developer.adobe.com/commerce/php/module-reference/module-bundle-import-export-staging): 100,4,6
+- [ magento/module-bundle-staging ](https://developer.adobe.com/commerce/php/module-reference/module-bundle-staging): 100,4,9
+- [ magento/module-catalogus-gebeurtenis ](https://developer.adobe.com/commerce/php/module-reference/module-catalog-event): 101.1.8.
+- [ magento/module-catalogus-import-export-staging ](https://developer.adobe.com/commerce/php/module-reference/module-catalog-import-export-staging): 100,4,6
+- [ magento/module-catalogus-inventaris-staging ](https://developer.adobe.com/commerce/php/module-reference/module-catalog-inventory-staging): 100,4,7
+- [ magento/module-catalogus-toestemmingen ](https://developer.adobe.com/commerce/php/module-reference/module-catalog-permissions): 100,4,9
+- [ magento/module-catalogus-toestemmingen-grafiek-ql ](https://developer.adobe.com/commerce/php/module-reference/module-catalog-permissions-graph-ql): 100,4,7
+- [ magento/module-catalogus-regel-staging ](https://developer.adobe.com/commerce/php/module-reference/module-catalog-rule-staging): 100,4,9
+- [ magento/module-catalogus-opvoeren ](https://developer.adobe.com/commerce/php/module-reference/module-catalog-staging): 100,4,9
+- [ magento/module-catalogus-staging-grafiek-ql ](https://developer.adobe.com/commerce/php/module-reference/module-catalog-staging-graph-ql): 100,4,8
+- [ magento/module-catalogus-url-rewrite-staging ](https://developer.adobe.com/commerce/php/module-reference/module-catalog-url-rewrite-staging): 100,4,8
+- [ magento/module-checkout-adres-onderzoek ](https://developer.adobe.com/commerce/php/module-reference/module-checkout-address-search): 100,4,8
+- [ magento/module-checkout-address-gift-register ](https://developer.adobe.com/commerce/php/module-reference/module-checkout-address-search-gift-registry): 100,4,5
+- [ magento/module-checkout-staging ](https://developer.adobe.com/commerce/php/module-reference/module-checkout-staging): 100,4,8
+- [ magento/module-cms-staging ](https://developer.adobe.com/commerce/php/module-reference/module-cms-staging): 100,4,9
+- [ magento/module-configureerbaar-product-staging ](https://developer.adobe.com/commerce/php/module-reference/module-configurable-product-staging): 100,4,8
+- [ magento/module-douane-attribuut-beheer ](https://developer.adobe.com/commerce/php/module-reference/module-custom-attribute-management): 100,4,8
+- [ magento/module-klant-balans ](https://developer.adobe.com/commerce/php/module-reference/module-customer-balance): 100,4,9
+- [ magento/module-klant-balans-grafiek-ql ](https://developer.adobe.com/commerce/php/module-reference/module-customer-balance-graph-ql): 100,4,6
+- [ magento/module-klant-douane-attributen ](https://developer.adobe.com/commerce/php/module-reference/module-customer-custom-attributes): 100,4,9
+- [ magento/module-klant-douane-attributen-grafiek-ql ](https://developer.adobe.com/commerce/php/module-reference/module-customer-custom-attributes-graph-ql): 100,4,2
+- [ magento/module-klant-financiering ](https://developer.adobe.com/commerce/php/module-reference/module-customer-finance): 100,4,6
+- [ magento/module-klant-segment ](https://developer.adobe.com/commerce/php/module-reference/module-customer-segment): 102,1,9
+- [ magento/module-klant-segment-grafiek-ql ](https://developer.adobe.com/commerce/php/module-reference/module-customer-segment-graph-ql): 100,4,2
+- [ magento/module-uitgesteld-totaal-het berekenen ](https://developer.adobe.com/commerce/php/module-reference/module-deferred-total-calculating): 100,4,4
+- [ magento/module-downloadbaar-opvoeren ](https://developer.adobe.com/commerce/php/module-reference/module-downloadable-staging): 100,4,8
+- [ magento/module-elasticsearch-catalog-toestemmingen ](https://developer.adobe.com/commerce/php/module-reference/module-elasticsearch-catalog-permissions): 100,4,5
+- [ magento/module-elasticsearch-catalog-permissions-grafiek-ql ](https://developer.adobe.com/commerce/php/module-reference/module-elasticsearch-catalog-permissions-graph-ql): 100,4,4
+- [ magento/module-onderneming ](https://developer.adobe.com/commerce/php/module-reference/module-enterprise): 100,4,7
+- [ magento/module-gift-kaart ](https://developer.adobe.com/commerce/php/module-reference/module-gift-card): 101,3,9
+- [ magento/module-gift-kaart-rekening ](https://developer.adobe.com/commerce/php/module-reference/module-gift-card-account): 101,2,9
+- [ magento/module-gift-kaart-rekening-grafiek-ql ](https://developer.adobe.com/commerce/php/module-reference/module-gift-card-account-graph-ql): 100,4,7
+- [ magento/module-gift-kaart-grafiek-ql ](https://developer.adobe.com/commerce/php/module-reference/module-gift-card-graph-ql): 100,4,9
+- [ magento/module-gift-kaart-invoer-uitvoer ](https://developer.adobe.com/commerce/php/module-reference/module-gift-card-import-export): 100,4,6
+- [ magento/module-gift-kaart-staging ](https://developer.adobe.com/commerce/php/module-reference/module-gift-card-staging): 100,4,6
+- [ magento/module-gift-bericht-staging ](https://developer.adobe.com/commerce/php/module-reference/module-gift-message-staging): 100,4,6
+- [ magento/module-gift-register ](https://developer.adobe.com/commerce/php/module-reference/module-gift-registry): 101,2,9
+- [ magento/module-gift-register-grafiek-ql ](https://developer.adobe.com/commerce/php/module-reference/module-gift-registry-graph-ql): 100,4,5
+- [ magento/module-gift-verpakken ](https://developer.adobe.com/commerce/php/module-reference/module-gift-wrapping): 101,2,8
+- [ magento/module-gift-wrapping-grafiek-ql ](https://developer.adobe.com/commerce/php/module-reference/module-gift-wrapping-graph-ql): 100,4,6
+- [ magento/module-gift-verpakken-staging ](https://developer.adobe.com/commerce/php/module-reference/module-gift-wrapping-staging): 100,4,6
+- [ magento/module-google-optimizer-staging ](https://developer.adobe.com/commerce/php/module-reference/module-google-optimizer-staging): 100,4,6
+- [ magento/module-google-markering-manager ](https://developer.adobe.com/commerce/php/module-reference/module-google-tag-manager): 100,4,9
+- [ magento/module-gegroepeerd-product-staging ](https://developer.adobe.com/commerce/php/module-reference/module-grouped-product-staging): 100,4,7
+- [ magento/module-invoer-csv ](https://developer.adobe.com/commerce/php/module-reference/module-import-csv): 100,4,3
+- [ magento/module-invoer-csv-api ](https://developer.adobe.com/commerce/php/module-reference/module-import-csv-api): 100,4,3
+- [ magento/module-import-json ](https://developer.adobe.com/commerce/php/module-reference/module-import-json): 100,4,2
+- [ magento/module-import-json-api ](https://developer.adobe.com/commerce/php/module-reference/module-import-json-api): 100,4,2
+- [ magento/module-uitnodiging ](https://developer.adobe.com/commerce/php/module-reference/module-invitation): 100,4,8
+- [ magento/module-gelaagd-navigatie-staging ](https://developer.adobe.com/commerce/php/module-reference/module-layered-navigation-staging): 100,4,6
+- [ magento/module-registreren ](https://developer.adobe.com/commerce/php/module-reference/module-logging): 101,2,9
+- [ magento/module-login-as-klant-registreren ](https://developer.adobe.com/commerce/php/module-reference/module-login-as-customer-logging): 100,4,9
+- [ magento/module-login-as-klant-website-beperking ](https://developer.adobe.com/commerce/php/module-reference/module-login-as-customer-website-restriction): 100,4,7
+- [ magento/module-media-content-catalog-staging ](https://developer.adobe.com/commerce/php/module-reference/module-media-content-catalog-staging): 100,4,6
+- [ magento/module-msrp-staging ](https://developer.adobe.com/commerce/php/module-reference/module-msrp-staging): 100,4,7
+- [ magento/module-multicoupon ](https://developer.adobe.com/commerce/php/module-reference/module-multicoupon): 100,4,2
+- [ magento/module-multicoupon-graph-ql ](https://developer.adobe.com/commerce/php/module-reference/module-multicoupon-graph-ql): 100,4,2
+- [ magento/module-multicoupon-ui ](https://developer.adobe.com/commerce/php/module-reference/module-multicoupon-ui): 100,4,2
+- [ magento/module-veelvoudig-wenslijst ](https://developer.adobe.com/commerce/php/module-reference/module-multiple-wishlist): 100,4,9
+- [ magento/module-veelvoudig-wenslist-grafiek-ql ](https://developer.adobe.com/commerce/php/module-reference/module-multiple-wishlist-graph-ql): 100,4,5
+- [ magento/module-betaling-staging ](https://developer.adobe.com/commerce/php/module-reference/module-payment-staging): 100,4,6
+- [ magento/module-persistente-history ](https://developer.adobe.com/commerce/php/module-reference/module-persistent-history): 100,4,6
+- [ magento/module-prijs-toestemmingen ](https://developer.adobe.com/commerce/php/module-reference/module-price-permissions): 100,4,5
+- [ magento/module-product-video-het opvoeren ](https://developer.adobe.com/commerce/php/module-reference/module-product-video-staging): 100,4,6
+- [ magento/module-bevordering-toestemmingen ](https://developer.adobe.com/commerce/php/module-reference/module-promotion-permissions): 100,4,6
+- [ magento/module-citaat-gift-kaart-opties ](https://developer.adobe.com/commerce/php/module-reference/module-quote-gift-card-options): 100,4,6
+- [ magento/module-citaat-staging ](https://developer.adobe.com/commerce/php/module-reference/module-quote-staging): 100,4,6
+- [ magento/module-herinnering ](https://developer.adobe.com/commerce/php/module-reference/module-reminder): 101,2,8
+- [ magento/module-ver-opslag-handel ](https://developer.adobe.com/commerce/php/module-reference/module-remote-storage-commerce): 100,4,5
+- [ magento/module-middel-verbindingen ](https://developer.adobe.com/commerce/php/module-reference/module-resource-connections): 100,4,6
+- [ magento/module-overzicht-staging ](https://developer.adobe.com/commerce/php/module-reference/module-review-staging): 100,4,6
+- [ magento/module-beloning ](https://developer.adobe.com/commerce/php/module-reference/module-reward): 101,2,9
+- [ magento/module-beloning-grafiek-ql ](https://developer.adobe.com/commerce/php/module-reference/module-reward-graph-ql): 100,4,8
+- [ magento/module-beloning-staging ](https://developer.adobe.com/commerce/php/module-reference/module-reward-staging): 100,4,6
+- [ magento/module-rma ](https://developer.adobe.com/commerce/php/module-reference/module-rma): 101,2,9
+- [ magento/module-rma-grafiek-ql ](https://developer.adobe.com/commerce/php/module-reference/module-rma-graph-ql): 100,4,8
+- [ magento/module-rma-staging ](https://developer.adobe.com/commerce/php/module-reference/module-rma-staging): 100,4,6
+- [ magento/module-verkoop-archief ](https://developer.adobe.com/commerce/php/module-reference/module-sales-archive): 101,0,7
+- [ magento/module-verkoop-regel-staging ](https://developer.adobe.com/commerce/php/module-reference/module-sales-rule-staging): 100,4,8
+- ](https://developer.adobe.com/commerce/php/module-reference/module-scalable-checkout) magento/module-scalable-checkout: 100,4,8[
+- [ magento/module-scalable-voorraad ](https://developer.adobe.com/commerce/php/module-reference/module-scalable-inventory): 100,4,7
+- [ magento/module-scalable-oms ](https://developer.adobe.com/commerce/php/module-reference/module-scalable-oms): 100,4,7
+- [ magento/module-gepland-invoer-uitvoer ](https://developer.adobe.com/commerce/php/module-reference/module-scheduled-import-export): 101,2,9
+- [ magento/module-onderzoek-staging ](https://developer.adobe.com/commerce/php/module-reference/module-search-staging): 100,4,7
+- [ magento/module-social-login ](https://developer.adobe.com/commerce/php/module-reference/module-social-login): 100,4,0
+- [ magento/module-sociaal-login-grafiek-ql ](https://developer.adobe.com/commerce/php/module-reference/module-social-login-graph-ql): 100,4,0
+- [ magento/module-staging ](https://developer.adobe.com/commerce/php/module-reference/module-staging): 101,2,9
+- [ magento/module-staging-grafiek-ql ](https://developer.adobe.com/commerce/php/module-reference/module-staging-graph-ql): 100,4,6
+- [ magento/module-steun ](https://developer.adobe.com/commerce/php/module-reference/module-support): 101,2,8
+- [ magento/module-swat ](https://developer.adobe.com/commerce/php/module-reference/module-swat): 100,4,7
+- [ magento/module-doel-regel ](https://developer.adobe.com/commerce/php/module-reference/module-target-rule): 101,2,9
+- [ magento/module-doel-regel-grafiek-ql ](https://developer.adobe.com/commerce/php/module-reference/module-target-rule-graph-ql): 100,4,6
+- [ magento/module-versies-cms ](https://developer.adobe.com/commerce/php/module-reference/module-versions-cms): 101,2,9
+- [ magento/module-versies-cms-pagina-geheime voorgeheugen ](https://developer.adobe.com/commerce/php/module-reference/module-versions-cms-page-cache): 100,4,5
+- [ magento/module-versies-cms-url-rewrite ](https://developer.adobe.com/commerce/php/module-reference/module-versions-cms-url-rewrite): 100,4,7
+- [ magento/module-versies-cms-url-rewrite-graph-ql ](https://developer.adobe.com/commerce/php/module-reference/module-versions-cms-url-rewrite-graph-ql): 100,4,5
+- [ magento/module-visual-merchandiser ](https://developer.adobe.com/commerce/php/module-reference/module-visual-merchandiser): 100,4,9
+- [ magento/module-webapi-rest-gws ](https://developer.adobe.com/commerce/php/module-reference/module-webapi-rest-gws): 100,4,1
+- [ magento/module-website-beperking ](https://developer.adobe.com/commerce/php/module-reference/module-website-restriction): 100,4,8
+- [ magento/module-weee-staging ](https://developer.adobe.com/commerce/php/module-reference/module-weee-staging): 100,4,6
+- [ magento/module-wishlist-gift-kaart ](https://developer.adobe.com/commerce/php/module-reference/module-wishlist-gift-card): 100,4,5
+- [ magento/module-wishlist-gift-kaart-grafiek-ql ](https://developer.adobe.com/commerce/php/module-reference/module-wishlist-gift-card-graph-ql): 100,4,5
+- magento/page-builder-commerce: 1.7.6.
+- magento/product-community-edition: 2.4.9.
+- magento/security-package-ee: 1.0.4.
+- magento/theme-adminhtml-spectrum: 100,4,4
 - magento/zend-cache: ^1.16
 - magento/zend-db: ^1.16
 - magento/zend-pdf: ^1.16
 - monoloog/monoloog: ^3.6
 - openssearch-project/openssearch-php: ^2.3
-- pelago/emogrifier: ^7.0
-- php: ~8.2.0||~8.3.0||~8.4.0
+- pelago/emogrifier: ^8.1
+- php: ~8.3.0||~8.4.0||~8.5.0
 - php-amqplib/php-amqplib: ^3.2
+- php-db/phpdb: ^0.4
 - phpseclib/mcrypt_compat: ^2.0
 - phpseclib/phpseclib: ^3.0
+- predis/predis: ^2.0
 - psr/log: ^2 || ^3
 - ramsey/uuid: ^4.2
-- symfony/console: ^6.4
-- symfony/intl: ^6.4
-- symfony/mailer: ^6.4
-- symfony/mime: ^6.4
-- symfonie/proces: ^6.4
-- symfony/tekenreeks: ^6.4
+- spomky-labs/aes-key-wrap: ^7.0
+- stomp/stomp-php: ^5.1
+- symfony/cache: ^7.4
+- symfony/console: ^7.4
+- symfony/intl: ^7.4
+- symfony/mailer: ^7.4
+- symfony/mime: ^7.4
+- symfonie/proces: ^7.4
+- symfony/tekenreeks: ^7.4
 - tedivm/jkrimpink: ^1.4
 - tubalmartin/cssmin: ^4.1
-- web-token/jwt-framework: ^3.4
+- web-token/jwt-framework: ^4.0
 - webonyx/grafisch-php: ^15.0
-- wikimedia/less.php: ^5.0
+- wikimedia/less.php: ^5.5
 
 ## Licenties van derden
 
@@ -287,6 +294,13 @@ De volgende referentiedocumentatie wordt gegenereerd uit het `composer.lock` -be
   </tr>
   <tr>
     <td>
+      <a href="https://github.com/giggsey/libphonenumber-for-php"> giggsey/libphonenumber-for-php </a>
+    </td>
+    <td>Bibliotheek</td>
+    <td>Een bibliotheek voor het parseren, formatteren, opslaan en valideren van internationale telefoonnummers, een PHP-poort van een Google libphonenumber.</td>
+  </tr>
+  <tr>
+    <td>
       <a href="https://github.com/opentelemetry-php/api"> open-telemetry/api </a>
     </td>
     <td>Bibliotheek</td>
@@ -305,6 +319,13 @@ De volgende referentiedocumentatie wordt gegenereerd uit het `composer.lock` -be
     </td>
     <td>Metapakket</td>
     <td>Braintree Magento</td>
+  </tr>
+  <tr>
+    <td>
+      <a href="https://github.com/stomp-php/stomp-php"> stomp-php/stomp-php </a>
+    </td>
+    <td>Bibliotheek</td>
+    <td>Ondersteuning voor Stompen in PHP</td>
   </tr>
   <tr>
     <td>
@@ -385,7 +406,7 @@ De volgende referentiedocumentatie wordt gegenereerd uit het `composer.lock` -be
   </tr>
   <tr>
     <td>
-      <a href="https://github.com/firebase/php-jwt"> firebase/php-jwt </a>
+      <a href="https://github.com/googleapis/php-jwt"> firebase/php-jwt </a>
     </td>
     <td>Bibliotheek</td>
     <td>Een eenvoudige bibliotheek voor het coderen en decoderen van JSON Web Tokens (JWT) in PHP. Moet in overeenstemming zijn met de huidige specificatie.</td>
@@ -483,13 +504,6 @@ De volgende referentiedocumentatie wordt gegenereerd uit het `composer.lock` -be
   </tr>
   <tr>
     <td>
-      <a href="https://github.com/laminas/laminas-mvc"> laminas/laminas-mvc </a>
-    </td>
-    <td>Bibliotheek</td>
-    <td>De gebeurtenis-gedreven laag MVC van Laminas, met inbegrip van Toepassingen MVC, Controllers, en Insteekmodules</td>
-  </tr>
-  <tr>
-    <td>
       <a href="https://github.com/laminas/laminas-permissions-acl"> laminas/laminas-permissions-acl </a>
     </td>
     <td>Bibliotheek</td>
@@ -501,13 +515,6 @@ De volgende referentiedocumentatie wordt gegenereerd uit het `composer.lock` -be
     </td>
     <td>Bibliotheek</td>
     <td>OOP-wrapper voor de ReCaptcha-webservice</td>
-  </tr>
-  <tr>
-    <td>
-      <a href="https://github.com/laminas/laminas-router"> laminas/laminas-router </a>
-    </td>
-    <td>Bibliotheek</td>
-    <td>Flexibel verpletterend systeem voor HTTP en consoletoepassingen</td>
   </tr>
   <tr>
     <td>
@@ -595,6 +602,13 @@ De volgende referentiedocumentatie wordt gegenereerd uit het `composer.lock` -be
   </tr>
   <tr>
     <td>
+      <a href="https://github.com/php-db/phpdb"> php-db/phpdb </a>
+    </td>
+    <td>Bibliotheek</td>
+    <td>De abstractielaag van het gegevensbestand, SQL abstractie, resultaatvastgestelde abstractie, en implementaties RowDataGateway en TableDataGateway</td>
+  </tr>
+  <tr>
+    <td>
       <a href="https://github.com/phpfui/recaptcha"> phpfui/recaptcha </a>
     </td>
     <td>Bibliotheek</td>
@@ -634,27 +648,6 @@ De volgende referentiedocumentatie wordt gegenereerd uit het `composer.lock` -be
     </td>
     <td>Magento-module</td>
     <td>Zend_Cache backend met Redis met volledige ondersteuning voor tags.</td>
-  </tr>
-  </tbody>
-</table>
-
-### ISC
-
-<table>
-  <thead>
-    <tr>
-      <th>Naam</th>
-      <th>Type</th>
-      <th>Beschrijving</th>
-    </tr>
-  </thead>
-  <tbody>
-  <tr>
-    <td>
-      <a href="https://github.com/paragonie/sodium_compat"> paragonie/natrium_compat </a>
-    </td>
-    <td>Bibliotheek</td>
-    <td>Pure PHP implementatie van libnatrium; gebruikt de PHP extensie als deze bestaat</td>
   </tr>
   </tbody>
 </table>
@@ -711,6 +704,13 @@ De volgende referentiedocumentatie wordt gegenereerd uit het `composer.lock` -be
     </td>
     <td>Bibliotheek</td>
     <td>Rekenkundige bibliotheek met willekeurige precisie</td>
+  </tr>
+  <tr>
+    <td>
+      <a href="https://github.com/brick/phonenumber"> steen/phonenumber </a>
+    </td>
+    <td>Bibliotheek</td>
+    <td>Telefoonnummerbibliotheek</td>
   </tr>
   <tr>
     <td>
@@ -840,6 +840,13 @@ De volgende referentiedocumentatie wordt gegenereerd uit het `composer.lock` -be
   </tr>
   <tr>
     <td>
+      <a href="https://github.com/giggsey/Locale"> giggsey/locale </a>
+    </td>
+    <td>Bibliotheek</td>
+    <td>Landinstellingen vereist door libphonenumber-for-php</td>
+  </tr>
+  <tr>
+    <td>
       <a href="https://github.com/guzzle/guzzle"> guzzlehttp/guzzle </a>
     </td>
     <td>Bibliotheek</td>
@@ -952,14 +959,14 @@ De volgende referentiedocumentatie wordt gegenereerd uit het `composer.lock` -be
   </tr>
   <tr>
     <td>
-      <a href="https://github.com/PhpGt/CssXPath"> phpgt/cssxpath </a>
+      <a href="https://github.com/phpgt/CssXPath"> phpgt/cssxpath </a>
     </td>
     <td>Bibliotheek</td>
     <td>CSS-kiezers converteren naar XPath-query's.</td>
   </tr>
   <tr>
     <td>
-      <a href="https://github.com/PhpGt/Dom"> phpgt/dom </a>
+      <a href="https://github.com/phpgt/Dom"> phpgt/dom </a>
     </td>
     <td>Bibliotheek</td>
     <td>Moderne DOM API.</td>
@@ -984,6 +991,13 @@ De volgende referentiedocumentatie wordt gegenereerd uit het `composer.lock` -be
     </td>
     <td>Bibliotheek</td>
     <td>PHP Secure Communications Library - Pure-PHP implementaties van RSA, AES, SSH2, SFTP, X.509 enz.</td>
+  </tr>
+  <tr>
+    <td>
+      <a href="https://github.com/predis/predis"> predis/predis </a>
+    </td>
+    <td>Bibliotheek</td>
+    <td>Een flexibele en functies-complete Redis/Valkey client voor PHP.</td>
   </tr>
   <tr>
     <td>
@@ -1120,6 +1134,20 @@ De volgende referentiedocumentatie wordt gegenereerd uit het `composer.lock` -be
   </tr>
   <tr>
     <td>
+      <a href="https://github.com/symfony/cache"> symfony/geheim voorgeheugen </a>
+    </td>
+    <td>Bibliotheek</td>
+    <td>Verstrekt uitgebreide PSR-6, PSR-16 (en markeringen) implementaties</td>
+  </tr>
+  <tr>
+    <td>
+      <a href="https://github.com/symfony/cache-contracts"> symfony/geheim voorgeheugen-contracten </a>
+    </td>
+    <td>Bibliotheek</td>
+    <td>Algemene abstracties in verband met caching</td>
+  </tr>
+  <tr>
+    <td>
       <a href="https://github.com/symfony/config"> symfony/config </a>
     </td>
     <td>Bibliotheek</td>
@@ -1187,13 +1215,6 @@ De volgende referentiedocumentatie wordt gegenereerd uit het `composer.lock` -be
     </td>
     <td>Bibliotheek</td>
     <td>Hiermee zoekt u bestanden en mappen via een intuïtieve fluent-interface</td>
-  </tr>
-  <tr>
-    <td>
-      <a href="https://github.com/symfony/http-client"> symfony/http-client </a>
-    </td>
-    <td>Bibliotheek</td>
-    <td>Biedt krachtige methoden om HTTP-bronnen synchroon of asynchroon op te halen</td>
   </tr>
   <tr>
     <td>
@@ -1302,10 +1323,17 @@ De volgende referentiedocumentatie wordt gegenereerd uit het `composer.lock` -be
   </tr>
   <tr>
     <td>
-      <a href="https://github.com/symfony/polyfill-php83"> symfony/polyfill-php83 </a>
+      <a href="https://github.com/symfony/polyfill-php84"> symfony/polyfill-php84 </a>
     </td>
     <td>Bibliotheek</td>
-    <td>Symfony polyfill geeft een aantal functies van PHP 8.3+ terug naar lagere PHP versies</td>
+    <td>Symfony polyfill geeft een aantal functies van PHP 8.4+ terug naar lagere PHP versies</td>
+  </tr>
+  <tr>
+    <td>
+      <a href="https://github.com/symfony/polyfill-php85"> symfony/polyfill-php85 </a>
+    </td>
+    <td>Bibliotheek</td>
+    <td>Symfony polyfill geeft een aantal functies van PHP 8.5+ terug naar lagere PHP versies</td>
   </tr>
   <tr>
     <td>
@@ -1348,6 +1376,13 @@ De volgende referentiedocumentatie wordt gegenereerd uit het `composer.lock` -be
     </td>
     <td>Bibliotheek</td>
     <td>YAML-bestanden laden en dumpen</td>
+  </tr>
+  <tr>
+    <td>
+      <a href="https://github.com/thecodingmachine/safe"> de codeermachine/veilige </a>
+    </td>
+    <td>Bibliotheek</td>
+    <td>PHP-kernfuncties die uitzonderingen genereren in plaats van FALSE te retourneren bij een fout</td>
   </tr>
   <tr>
     <td>

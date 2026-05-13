@@ -2,9 +2,9 @@
 title: Voorbeeld met een gedeelde configuratie
 description: Zie een voorbeeld van hoe te om montages in een ontwikkelingssysteem met een gedeeld configuratiedossier te veranderen.
 exl-id: c980ec01-ca2d-43db-b68d-8e9435e07e6a
-source-git-commit: 55512521254c49511100a557a4b00cf3ebee0311
+source-git-commit: 87302734f3ff91f0403beac283ff21925d89318d
 workflow-type: tm+mt
-source-wordcount: '464'
+source-wordcount: '469'
 ht-degree: 0%
 
 ---
@@ -26,7 +26,7 @@ U kunt de zelfde procedure gebruiken om het even welke niet gevoelige, niet syst
 
 ## Voordat u begint
 
-Alvorens u begint, de toestemmingen en de eigendom van het opstellingssysteem zoals besproken in [&#x200B; Vereisten voor ontwikkeling, bouwt, en productiesystemen &#x200B;](../deployment/prerequisites.md).
+Alvorens u begint, de toestemmingen en de eigendom van het opstellingssysteem zoals besproken in [ Vereisten voor ontwikkeling, bouwt, en productiesystemen ](../deployment/prerequisites.md).
 
 ## Veronderstellingen
 
@@ -38,7 +38,7 @@ In dit voorbeeld gaan we uit van het volgende:
 - Het ontwikkelingssysteem is beschikbaar in een Git-opslagplaats op afstand met de naam `mconfig`
 - Uw Git-werkvertakking krijgt de naam `m2.2_deploy`
 
-## Stap 1: Plaats de configuratie in het ontwikkelingssysteem
+## Stap 1: De configuratie instellen in het ontwikkelingssysteem
 
 U kunt als volgt de tijdzone- en gewichtseenheden in uw ontwikkelingssysteem instellen:
 
@@ -48,15 +48,15 @@ U kunt als volgt de tijdzone- en gewichtseenheden in uw ontwikkelingssysteem ins
 
    In de volgende afbeelding ziet u een voorbeeld.
 
-   ![&#x200B; plaats scèneopties in het ontwikkelingssysteem &#x200B;](../../assets/configuration/split-deploy-set-locale.png)
+   ![ plaats scèneopties in het ontwikkelingssysteem ](../../assets/configuration/split-deploy-set-locale.png)
 
 1. Van de **lijst van de Tijdzone**, klik **GMT+00 :00 (UTC)**.
-1. Ontruim het **checkbox van de systeemwaarde van het Gebruik** naast het **3&rbrace; gebied van de Eenheid van de Gewicht.**
-1. Van de **lijst van de Eenheid van 0&rbrace; Gewicht, klik** kgs **.**
+1. Ontruim het **checkbox van de systeemwaarde van het Gebruik** naast het **3} gebied van de Eenheid van de Gewicht.**
+1. Van de **lijst van de Eenheid van 0} Gewicht, klik** kgs **.**
 1. Klik **sparen Config**.
 1. Maak de cache leeg als daarom wordt gevraagd.
 
-## Stap 2: Werk de gedeelde configuratie bij
+## Stap 2: De gedeelde configuratie bijwerken
 
 Genereer het gedeelde configuratiedossier, `app/etc/config.php`, in uw ontwikkelingssysteem en breng het over gebruikend broncontrole aan uw bouwstijlsysteem zoals die in deze sectie wordt besproken.
 
@@ -84,10 +84,10 @@ De laatste stap in het proces is uw productiesysteem van broncontrole bij te wer
 
    De opties die u zojuist hebt ingesteld, worden als volgt weergegeven:
 
-   ![&#x200B; de opties van de Configuratie niet editable in Admin &#x200B;](../../assets/configuration/split-deploy-not-editable.png)
+   ![ de opties van de Configuratie niet editable in Admin ](../../assets/configuration/split-deploy-not-editable.png)
 
 >[!INFO]
 >
->Als u een instelling wilt wijzigen die is vergrendeld in Beheer, gebruikt u de opdracht [`magento config:set --lock` &#x200B;](../cli/set-configuration-values.md) .
+>Als u een instelling wilt wijzigen die is vergrendeld in Beheer, gebruikt u de opdracht [`magento config:set --lock` ](../cli/set-configuration-values.md) .
 
-<!-- Last updated from includes: 2024-07-18 15:50:54 -->
+<!-- Last updated from includes: 2026-04-17 13:49:36 -->

@@ -3,7 +3,7 @@ title: Huidige zoekengine wordt niet ondersteund
 description: Los uw verbetering van Adobe Commerce na het ontmoeten van een fout over een niet gestaafd onderzoeksmotor problemen op.
 feature: Upgrade, Search
 exl-id: 11479d23-53a5-4086-9f9a-c3420ccad073
-source-git-commit: 48624d70761117ed0b9f8a7be913fce0572577b6
+source-git-commit: d20f9d38a06fcd0eed872fe6f7ef1f3ee015a00f
 workflow-type: tm+mt
 source-wordcount: '411'
 ht-degree: 0%
@@ -66,12 +66,12 @@ De waarde `elasticsearch` geeft aan dat uw versie op downniveau van Adobe Commer
 
 U moet de volgende taken uitvoeren alvorens aan 2.4 te bevorderen:
 
-1. Update uitvoeren naar een versie van Elasticsearch die wordt ondersteund door Commerce. Verwijs naar [&#x200B; Bevorderend Elasticsearch &#x200B;](https://www.elastic.co/guide/en/elasticsearch/reference/current/setup-upgrade.html) voor volledige instructies bij het steunen van uw gegevens, het ontdekken van potentiële migratiekwesties, en het testen van verbeteringen alvorens aan productie op te stellen. Afhankelijk van uw huidige versie van Elasticsearch is het mogelijk dat een volledige cluster opnieuw moet worden opgestart.
+1. Update uitvoeren naar een versie van Elasticsearch die wordt ondersteund door Commerce. Verwijs naar [ Bevorderend Elasticsearch ](https://www.elastic.co/guide/en/elasticsearch/reference/current/setup-upgrade.html) voor volledige instructies bij het steunen van uw gegevens, het ontdekken van potentiële migratiekwesties, en het testen van verbeteringen alvorens aan productie op te stellen. Afhankelijk van uw huidige versie van Elasticsearch is het mogelijk dat een volledige cluster opnieuw moet worden opgestart.
 
    >[!NOTE]
    >
-   >Elasticsearch vereist JDK 1.8 of hoger. Zie [&#x200B; de Uitrusting van de Ontwikkeling van de Software van Java installeren (JDK) &#x200B;](../../installation/prerequisites/search-engine/overview.md#install-the-java-software-development-kit-jdk) om te controleren welke versie van JDK geïnstalleerd is.
+   >Elasticsearch vereist JDK 1.8 of hoger. Zie [ de Uitrusting van de Ontwikkeling van de Software van Java installeren (JDK) ](../../installation/prerequisites/search-engine/overview.md#install-the-java-software-development-kit) om te controleren welke versie van JDK geïnstalleerd is.
 
-1. [&#x200B; vorm Elasticsearch &#x200B;](../../configuration/search/configure-search-engine.md) en herdex.
+1. [ vorm Elasticsearch ](../../configuration/search/configure-search-engine.md) en herdex.
 
 Nadat u het onderzoeksmotor en de herindex vormt, bent u bereid aan verbetering 2.4.

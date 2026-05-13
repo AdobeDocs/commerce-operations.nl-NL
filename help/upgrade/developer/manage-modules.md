@@ -3,7 +3,7 @@ title: Modules en extensies beheren (ontwikkelaar)
 description: Adobe Commerce-modules en -extensies beheren met behulp van de opdrachtregelinterface en Composer-pakketbeheer.
 feature: Upgrade, Extensions
 exl-id: 447eb317-83e1-4900-83a5-9ac1a008e752
-source-git-commit: 48624d70761117ed0b9f8a7be913fce0572577b6
+source-git-commit: 87302734f3ff91f0403beac283ff21925d89318d
 workflow-type: tm+mt
 source-wordcount: '132'
 ht-degree: 0%
@@ -12,7 +12,7 @@ ht-degree: 0%
 
 # Modules en extensies beheren
 
-Ontwikkelaars die een bijdrage leveren, upgraden modules en extensies door hun versies op te geven in het Adobe Commerce `composer.json` -bestand. Als u geen bijdragende ontwikkelaar bent, zie [&#x200B; een verbetering &#x200B;](../implementation/perform-upgrade.md) uitvoeren.
+Ontwikkelaars die een bijdrage leveren, upgraden modules en extensies door hun versies op te geven in het Adobe Commerce `composer.json` -bestand. Als u geen bijdragende ontwikkelaar bent, zie [ een verbetering ](../implementation/perform-upgrade.md) uitvoeren.
 
 U kunt een sectie `require` toevoegen aan het `composer.json` -bestand of u kunt de opdracht `composer require` als volgt gebruiken:
 
@@ -71,4 +71,4 @@ Wacht terwijl Composer gebiedsdelen bijwerkt en de module installeert.
    composer update
    ```
 
-<!-- Last updated from includes: 2022-09-08 16:00:49 -->
+<!-- Last updated from includes: 2026-04-17 13:49:36 -->

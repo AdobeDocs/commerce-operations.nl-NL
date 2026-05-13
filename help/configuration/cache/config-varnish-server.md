@@ -1,16 +1,16 @@
 ---
-title: Webserver configureren
+title: Webserver voor Varnish-caching configureren
 description: Leer hoe u uw webserver configureert voor gebruik met Varnish caching voor Adobe Commerce. Ontdek havenconfiguratie en opstellingsvereisten.
 feature: Configuration, Cache, Install, Logs
 exl-id: b31179ef-3c0e-4a6b-a118-d3be1830ba4e
-source-git-commit: 319f3232d1ba5f5ed7cdd10ce85b9d7ffbeec89a
+source-git-commit: d20f9d38a06fcd0eed872fe6f7ef1f3ee015a00f
 workflow-type: tm+mt
-source-wordcount: '764'
+source-wordcount: '769'
 ht-degree: 0%
 
 ---
 
-# Uw webserver configureren
+# Webserver voor Varnish Caching configureren
 
 Vorm uw Webserver om op een haven buiten standaardhaven 80 te luisteren omdat Varnish direct aan inkomende HTTP- verzoeken, niet de Webserver antwoordt.
 
@@ -76,7 +76,7 @@ Varnish minimaliseren:
 
 1. Vervang de waarde van `.host` met volledig - gekwalificeerd hostname of IP adres en luister haven van de Varnish _achterkant_ of _oorsprongserver_; Dat wil zeggen dat de server die de inhoud levert Varnish zal versnellen.
 
-   Dit is doorgaans uw webserver. Zie [&#x200B; servers van het Achterste 1&rbrace; in de _Versijke gids_.](https://varnish-cache.org/docs/trunk/users-guide/vcl-backends.html)
+   Dit is doorgaans uw webserver. Zie [ servers van het Achterste 1} in de _Versijke gids_.](https://varnish-cache.org/docs/trunk/users-guide/vcl-backends.html)
 
 1. Vervang de waarde van `.port` door de listen-poort van de webserver (8080 in dit voorbeeld).
 
@@ -170,7 +170,7 @@ In het voorgaande ziet u Varnish die op poort 80 wordt uitgevoerd en Apache die 
 
 Als u de uitvoer voor `varnishd` niet ziet, controleert u of Varnish wordt uitgevoerd.
 
-Zie [`netstat` opties &#x200B;](https://tldp.org/LDP/nag2/x-087-2-iface.netstat.html).
+Zie [`netstat` opties ](https://tldp.org/LDP/nag2/x-087-2-iface.netstat.html).
 
 ## De Commerce-software installeren
 

@@ -1,50 +1,62 @@
 ---
-title: Caching configureren
-description: Meer informatie over cachemechanismen en configuratieopties voor Adobe Commerce-toepassingen. Alternatieven voor standaardcaching van bestandssystemen ontdekken.
+title: Overzicht en configuratieopties in cache plaatsen
+description: Leer over caching in Adobe Commerce, met inbegrip van backend opslag, frontend configuratie, en volledige paginaconcering met Varnish, Redis, Valkey, en L2 geheime voorgeheugen.
 feature: Configuration, Cache
 exl-id: 6effa069-c043-411a-b161-01210be17391
-source-git-commit: 10f324478e9a5e80fc4d28ce680929687291e990
+source-git-commit: 9cd0f2a84772e2d68fd15a00651216abfa9ec91c
 workflow-type: tm+mt
-source-wordcount: '207'
+source-wordcount: '544'
 ht-degree: 0%
 
 ---
 
-# Caching configureren
+# Overzicht en configuratieopties van caching
 
-Met [!DNL Commerce] kunt u alternatieven configureren voor het in cache plaatsen van het standaardbestandssysteem. In deze gids worden enkele van die alternatieven besproken, namelijk:
+Adobe Commerce vertrouwt op een architectuur met meerdere lagen voor caching om databasebelasting te verminderen, redundante verwerking tot een minimum te beperken en de levering van pagina&#39;s te versnellen. Op het toepassingsniveau, handhaaft Commerce meer dan een dozijn [ geheim voorgeheugentypes ](../cli/manage-cache.md#clean-and-flush-cache-types) - zoals configuratie, lay-out, blok HTML, en inzameling-elk waarvan u aan een specifieke opslagsteun zoals [ kunt leiden Redis ](config-redis.md) of [ Valkey ](config-valkey.md). Voor volledig-pagina caching, adviseert Adobe sterk [ Varnish ](config-varnish.md), een accelerator van HTTP die caching pagina&#39;s van geheugen direct dient. De extra lagen zoals [ L2 caching ](level-two-cache.md) en [ statische inhoud die ](static-content-signing.md) ondertekenen verbeteren prestaties voor hoog-verkeer, multi-knoopplaatsingen verder.
 
-- Stel de volgende cachemechanismen in de [!DNL Commerce] -configuratie in:
+Deze gids verklaart hoe elke caching laag werkt en toont u hoe te om voorkanten, achtergronden, en geavanceerde opties te vormen om uw plaatsingsvereisten aan te passen.
 
-   - [&#x200B; Gegevensbestand &#x200B;](https://developer.adobe.com/commerce/php/development/cache/partial/database-caching/)
-   - [Redis](config-redis.md)
-   - Bestandssysteem (standaard): Er is geen configuratie nodig om standaardcaching van het bestandssysteem te gebruiken.
+## Voorkanten in cache plaatsen
 
-- Opstelling de [&#x200B; Vlek &#x200B;](config-varnish.md) zonder de [!DNL Commerce] configuratie te wijzigen.
+Een cachefront is een interface tussen Commerce en de back-end van de cacheopslag. U kunt veelvoudige frontends, elk met verschillende achterste montages bepalen, en dan specifieke [ geheim voorgeheugentypes ](../cli/manage-cache.md#clean-and-flush-cache-types) toewijzen aan elk front.  Voor configuratiedetails, zie [ cache vooraf instelt ](cache-types.md).
+
+## Achtergronden in cache plaatsen
+
+Een cache-backend is het onderliggende opslagmechanisme voor gegevens in de cache. Commerce biedt een standaard back-end voor het bestandssysteem, maar u kunt andere back-endbestanden, zoals Redis of Valkey, configureren voor betere prestaties en schaalbaarheid. Voor details op de beschikbare opties, zie [ achterste opties van het Geheime voorgeheugen ](cache-options.md).
+
+## Volledige caching met Varnish
+
+[ Vernis Geheime voorgeheugen ](config-varnish.md) is een accelerator van HTTP die volledige pagina&#39;s in geheugen in cache plaatst. Adobe raadt Varnish ten zeerste aan voor productieomgevingen omdat het aanzienlijk sneller is dan de ingebouwde cache van volledige pagina&#39;s.
+
+>[!NOTE]
+>
+>Varnish werkt als een reverse-proxy vóór uw webserver en vereist geen wijzigingen in de Commerce cache-backendconfiguratie.
+
+## L2-caching (twee niveaus)
+
+[ L2 geheime voorgeheugen ](level-two-cache.md) slaat geheim voorgeheugengegevens op elke Webknoop terwijl het gebruiken van een ver geheime voorgeheugen (Redis of Valkey) als bron van waarheid op. Dit vermindert netwerkverkeer tussen uw Webknopen en het verre geheime voorgeheugen, dat prestaties voor hoge verkeersplaatsen verbetert.
+
+## Statische inhoud in cache plaatsen
+
+[ Statische inhoud die ](static-content-signing.md) ondertekent ongeldig het browser geheime voorgeheugen voor statische middelen (CSS, JavaScript, beelden) door een plaatsingsversie in dossier URLs in te bedden.
 
 ## Caching terminologie
 
 [!DNL Commerce] gebruikt de volgende terminologie in cache:
 
-- **Frontend** - Gelijkaardig aan een interface of een gateway aan geheim voorgeheugenopslag, die door [&#x200B; Magento\Framework\Cache\Frontend &#x200B;](https://github.com/magento/magento2/tree/2.4/lib/internal/Magento/Framework/Cache/Frontend) wordt uitgevoerd.
-- **types van Geheime voorgeheugen** - kan één van de types zijn die van [!DNL Commerce] worden voorzien of u kunt [&#x200B; uw eigen &#x200B;](https://developer.adobe.com/commerce/php/development/cache/partial/cache-type/) creëren.
-- **Achtergrond** - specificeert details over [&#x200B; geheim voorgeheugenopslag &#x200B;](https://framework.zend.com/manual/1.12/en/zend.cache.backends.html), die door [&#x200B; Magento\Framework\Cache\Backend &#x200B;](https://github.com/magento/magento2/tree/2.4/lib/internal/Magento/Framework/Cache/Backend) wordt uitgevoerd
-- **dubbel-vlakke achtergrond** - slaat geheim voorgeheugenverslagen in twee achtergronden op: snellere en langzamere.
-
-  >[!INFO]
-  >
-  >De twee-vlakke backend geheim voorgeheugenconfiguratie is voorbij het werkingsgebied van deze gids.
+- **Frontend** — Een interface of een gateway om opslag in het voorgeheugen onder te brengen, die door [ Magento\Framework\Cache\Frontend ](https://github.com/magento/magento2/tree/2.4/lib/internal/Magento/Framework/Cache/Frontend) wordt uitgevoerd.
+- **types van Geheime voorgeheugen** — Één van de ingebouwde types die van [!DNL Commerce] worden voorzien (zoals `config`, `layout`, `block_html`, `full_page`) of a [ douanetype ](https://developer.adobe.com/commerce/php/development/cache/partial/cache-type/).
+- **Achtergrond** — Specificeert de details van [ geheim voorgeheugenopslag ](https://framework.zend.com/manual/1.12/en/zend.cache.backends.html), die door [ Magento\Framework\Cache\Backend ](https://github.com/magento/magento2/tree/2.4/lib/internal/Magento/Framework/Cache/Backend) wordt uitgevoerd.
+- **dubbel-vlakke achterste** — Slaat geheim voorgeheugenverslagen in twee achtergronden op: een lokale (snelle) cache en een externe (gedeelde) cache. Zie [ L2 geheim voorgeheugenconfiguratie ](level-two-cache.md).
 
 ## Configuratieopties
 
-- De meegeleverde voorzijde van de `default` cache wijzigen—
+Cacheconfiguratie wordt opgeslagen in twee bestanden:
 
-  U wijzigt alleen het `<magento_root>/app/etc/di.xml` -bestand, de algemene configuratie voor het injecteren van afhankelijkheden van de Commerce-toepassing.
+- `<magento_root>/app/etc/di.xml` — De algemene configuratie voor injectie van afhankelijkheid. Wijzig dit bestand om het cachevooreinde van `default` te wijzigen.
+- `<magento_root>/app/etc/env.php` — Omgevingsspecifieke configuratie. Wijzig dit bestand om de voorkanten van de aangepaste cache te configureren. Dit bestand negeert de equivalente configuratie in `di.xml` .
 
-- Uw eigen voorste cache configureren—
+Voor details op frontend-aan-type afbeelding en de syntaxis van de geheim voorgeheugenconfiguratie, zie:
 
-  U wijzigt alleen het `<magento_root>/app/etc/env.php` -bestand omdat dit de equivalente configuratie in het `di.xml` -bestand overschrijft.
-
->[!TIP]
->
->Voor vernis hoeft de configuratie van [!DNL Commerce] niet te worden gewijzigd. Zie [&#x200B; vormen en gebruiken Vierkant &#x200B;](config-varnish.md).
+- [ vorm geheim voorhoede van het geheime voorgeheugen ](cache-types.md) - associeer een geheim voorhoede met specifieke geheim voorgeheugentypes
+- [ de achterste van het Geheime voorgeheugen opties ](cache-options.md) - de optieverwijzing van de achterkant van de achterkant van het achtereind

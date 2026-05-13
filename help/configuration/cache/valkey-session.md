@@ -1,9 +1,9 @@
 ---
-title: Valkey gebruiken voor sessieopslag
-description: Leer hoe u Valkey voor sessieopslag in Adobe Commerce configureert. Ontdek de installatiestappen, configuratieopties en optimalisatietechnieken voor prestaties.
+title: Valkey configureren voor sessieopslag
+description: Leer hoe u Valkey voor sessieopslag in Adobe Commerce configureert. Ontdek CLI opstelling, zittingsparameters, en technieken van de verbindingscontrole.
 feature: Configuration, Cache
 exl-id: 986ddb5c-8fc5-4210-8a41-a29e3a7625b7
-source-git-commit: 48624d70761117ed0b9f8a7be913fce0572577b6
+source-git-commit: d20f9d38a06fcd0eed872fe6f7ef1f3ee015a00f
 workflow-type: tm+mt
 source-wordcount: '915'
 ht-degree: 1%
@@ -11,11 +11,11 @@ ht-degree: 1%
 ---
 
 
-# Valkey gebruiken voor sessieopslag
+# Valkey configureren voor sessieopslag
 
 >[!IMPORTANT]
 >
->U moet [&#x200B; Valkey &#x200B;](config-valkey.md#install-valkey) installeren alvorens verder te gaan.
+>U moet [ Valkey ](config-valkey.md#install-valkey) installeren alvorens verder te gaan.
 
 Adobe Commerce biedt opdrachtregelopties voor het configureren van de opslag van Valkey-sessies.
 
@@ -44,7 +44,7 @@ bin/magento setup:config:set --session-save=redis --session-save-redis-<paramete
 | session-save-valkey-port | poort | De luisterpoort van de Valkey-server. | 6379 |
 | session-save-valkey-password | password | Hiermee geeft u een wachtwoord op als uw Valkey-server verificatie vereist. | leeg |
 | session-save-valkey-timeout | timeout | Time-out verbinding, in seconden. | 2.5 |
-| session-save-valkey-persistent-id | persistent_identifier | Unieke koord om blijvende verbindingen (bijvoorbeeld, sess-db0) toe te laten.<br>[&#x200B; Bekende kwesties met phpredis en php-fpm &#x200B;](https://github.com/phpredis/phpredis/issues/70). |  |
+| session-save-valkey-persistent-id | persistent_identifier | Unieke koord om blijvende verbindingen (bijvoorbeeld, sess-db0) toe te laten.<br>[ Bekende kwesties met phpredis en php-fpm ](https://github.com/phpredis/phpredis/issues/70). |  |
 | session-save-valkey-db | database | Unieke Valkey gegevensbestandaantal, dat wordt geadviseerd om tegen gegevensverlies te beschermen.<br><br>**Belangrijk**: Als u Valkey voor meer dan één type caching gebruikt, moeten de gegevensbestandaantallen verschillend zijn. U wordt aangeraden het standaarddatabasenummer voor caching toe te wijzen aan `0` , het databasenummer voor het in cache plaatsen van pagina&#39;s aan `1` en het databasenummer voor sessieopslag aan `2` . | 0 |
 | session-save-valkey-compression-threshold | compression_threshold | Stel in op `0` om compressie uit te schakelen (aanbevolen bij `suhosin.session.encrypt = On` ). | 2048 |
 | session-save-valkey-compression-lib | compression_library | Opties: gzip, lzf, lz4 of snappy. | gzip |
@@ -146,4 +146,4 @@ Als beide opdrachten zijn uitgevoerd, wordt Valkey op de juiste wijze ingesteld.
 
 ### Gecomprimeerde gegevens controleren
 
-Om samengeperste zittingsgegevens en het paginacachegeheugen te inspecteren, [&#x200B; RESP.app &#x200B;](https://flathub.org/apps/app.resp.RESP) steunt automatische decompressie van Commerce 2 zitting en paginacache en toont PHP zittingsgegevens in een mens-leesbaar formaat.
+Om samengeperste zittingsgegevens en het paginacachegeheugen te inspecteren, [ RESP.app ](https://flathub.org/apps/app.resp.RESP) steunt automatische decompressie van Commerce 2 zitting en paginacache en toont PHP zittingsgegevens in een mens-leesbaar formaat.

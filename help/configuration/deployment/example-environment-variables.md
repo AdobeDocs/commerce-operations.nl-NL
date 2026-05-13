@@ -2,9 +2,9 @@
 title: Voorbeeld met omgevingsvariabelen
 description: Zie een voorbeeld van hoe te om gedeelde, systeem-specifieke, en gevoelige waarden in uw ontwikkelingssysteem te plaatsen gebruikend omgevingsvariabelen.
 exl-id: 98438674-e7f8-4143-9a76-3cc8bf0a73dc
-source-git-commit: 55512521254c49511100a557a4b00cf3ebee0311
+source-git-commit: 87302734f3ff91f0403beac283ff21925d89318d
 workflow-type: tm+mt
-source-wordcount: '1089'
+source-wordcount: '1102'
 ht-degree: 0%
 
 ---
@@ -31,7 +31,7 @@ U kunt de zelfde procedure gebruiken om het even welke montages in de volgende v
 
 ## Voordat u begint
 
-Alvorens u begint, de toestemmingen en de eigendom van het opstellingssysteem zoals besproken in [&#x200B; Vereiste voor ontwikkeling, bouwt, en productiesystemen &#x200B;](../deployment/prerequisites.md).
+Alvorens u begint, de toestemmingen en de eigendom van het opstellingssysteem zoals besproken in [ Vereiste voor ontwikkeling, bouwt, en productiesystemen ](../deployment/prerequisites.md).
 
 ## Veronderstellingen
 
@@ -43,7 +43,7 @@ In dit voorbeeld gaan we uit van het volgende:
 - Het ontwikkelingssysteem is beschikbaar in een Git-opslagplaats op afstand met de naam `mconfig`
 - Uw Git-werkvertakking krijgt de naam `m2.2_deploy`
 
-## Stap 1: Plaats de configuratie in het ontwikkelingssysteem
+## Stap 1: De configuratie instellen in het ontwikkelingssysteem
 
 U kunt als volgt de standaardwaarden voor landinstelling en gewicht in uw ontwikkelingssysteem instellen:
 
@@ -51,16 +51,16 @@ U kunt als volgt de standaardwaarden voor landinstelling en gewicht in uw ontwik
 1. Klik **Slaat** op > Montages > **Configuratie** > Algemeen > **Algemeen**.
 1. Als u meer dan één beschikbare website hebt, gebruik de **lijst van de Mening van de Opslag** in de hogere linkerhoek om naar een verschillende website te schakelen aangezien het volgende cijfer toont.
 
-   ![&#x200B; de websites van de Schakelaar &#x200B;](../../assets/configuration/split-deploy-switch-website.png)
+   ![ de websites van de Schakelaar ](../../assets/configuration/split-deploy-switch-website.png)
 
 1. In de juiste ruit, breid **Informatie van de Opslag** uit.
-1. Indien nodig, ontruim het **Gebrek van het Gebruik** checkbox naast het **&#x200B;**&#x200B;gebied van het Aantal van BTW.
+1. Indien nodig, ontruim het **Gebrek van het Gebruik** checkbox naast het **** gebied van het Aantal van BTW.
 1. Voer een getal in het veld in (bijvoorbeeld `12345` ).
 1. Op het **gebied van de Naam van de Opslag**, ga een waarde (als `My Store`) in.
 1. Klik **sparen Config**.
 1. Gebruik de **lijst van de Mening van de Opslag** om **StandaardConfig** te selecteren aangezien het volgende cijfer toont.
 
-   ![&#x200B; Schakelaar aan het gebrek config &#x200B;](../../assets/configuration/split-deploy-default-config.png)
+   ![ Schakelaar aan het gebrek config ](../../assets/configuration/split-deploy-default-config.png)
 
 1. In de linkernavigatie, onder Algemeen, klik **Contacten**.
 1. Ontruim het **Standaardvakje van het Gebruik** naast **verzendt E-mail naar** gebied.
@@ -73,7 +73,7 @@ U kunt als volgt de standaardwaarden voor landinstelling en gewicht in uw ontwik
 1. Klik **sparen Config**.
 1. Maak de cache leeg als daarom wordt gevraagd.
 
-## Stap 2: Werk de configuratie bij
+## Stap 2: De configuratie bijwerken
 
 Nu u de configuratie in Admin hebt veranderd, schrijf de gedeelde configuratie aan een dossier zoals die in deze sectie wordt besproken.
 
@@ -102,7 +102,7 @@ Als u de gevoelige en systeemspecifieke instellingen wilt instellen met omgeving
 
   Als u de instructies in Stap 1 volgde, is het werkingsgebied voor het verzenden van e-mails naar globaal (namelijk het werkingsgebied Standaard Config) en het werkingsgebied voor Standaard e-maildomein is website.
 
-  U moet de code van de website kennen om de configuratiewaarde van het StandaardE-maildomein te plaatsen. Zie [&#x200B; het omgevingsvariabelen van het Gebruik om configuratiemontages &#x200B;](../reference/override-config-settings.md#environment-variables) voor meer informatie met voeten te treden bij het vinden van het.
+  U moet de code van de website kennen om de configuratiewaarde van het StandaardE-maildomein te plaatsen. Zie [ het omgevingsvariabelen van het Gebruik om configuratiemontages ](../reference/override-config-settings.md#environment-variables) voor meer informatie met voeten te treden bij het vinden van het.
 
 - Configuratiepad voor elke instelling
 
@@ -113,11 +113,11 @@ Als u de gevoelige en systeemspecifieke instellingen wilt instellen met omgeving
   | E-mails verzenden naar | `contact/email/recipient_email` |
   | Standaard-e-maildomein | `customer/create_account/email_domain` |
 
-  U kunt alle gevoelige en systeem-specifieke configuratiewegen in [&#x200B; Gevoelige en systeem-specifieke verwijzing van configuratiepaden &#x200B;](../reference/config-reference-sens.md) vinden.
+  U kunt alle gevoelige en systeem-specifieke configuratiewegen in [ Gevoelige en systeem-specifieke verwijzing van configuratiepaden ](../reference/config-reference-sens.md) vinden.
 
 #### Configuratiepaden omzetten in variabelenamen
 
-Zoals besproken in [&#x200B; het omgevingsvariabelen van het Gebruik om configuratiemontages &#x200B;](../reference/override-config-settings.md#environment-variables) met voeten te treden, is het formaat van variabelen:
+Zoals besproken in [ het omgevingsvariabelen van het Gebruik om configuratiemontages ](../reference/override-config-settings.md#environment-variables) met voeten te treden, is het formaat van variabelen:
 
 ```text
 <SCOPE>__<SYSTEM__VARIABLE__NAME>
@@ -178,7 +178,7 @@ Deze sectie bespreekt hoe u de configuratiemontages in uw Admin van het producti
 
    De gedeelde configuratieopties die u in het ontwikkelingssysteem instelt, worden als volgt weergegeven.
 
-   ![&#x200B; de montages van de Controle in het productiesysteem &#x200B;](../../assets/configuration/split-deploy-verify-storeinfo.png)
+   ![ de montages van de Controle in het productiesysteem ](../../assets/configuration/split-deploy-verify-storeinfo.png)
 
    >[!INFO]
    >
@@ -189,13 +189,13 @@ Deze sectie bespreekt hoe u de configuratiemontages in uw Admin van het producti
 
    **verzendt E-mail naar** gebied is niet editable, aangezien het volgende cijfer toont. Dit is een gevoelige instelling.
 
-   ![&#x200B; de montages van de Controle in het productiesysteem &#x200B;](../../assets/configuration/split-deploy-verify-contacts.png)
+   ![ de montages van de Controle in het productiesysteem ](../../assets/configuration/split-deploy-verify-contacts.png)
 
 1. In de linkerruit, klik Klanten > **Configuratie van de Klant**.
 1. In de juiste ruit, breid **uit tot Nieuwe Opties van de Rekening**.
 
    De waarde van het **StandaardE-mailDomein** gebied wordt getoond als volgt. Dit is een systeemspecifieke instelling.
 
-   ![&#x200B; de montages van de Controle in het productiesysteem &#x200B;](../../assets/configuration/split-default-domain.png)
+   ![ de montages van de Controle in het productiesysteem ](../../assets/configuration/split-default-domain.png)
 
-<!-- Last updated from includes: 2024-07-18 15:50:54 -->
+<!-- Last updated from includes: 2026-04-17 13:49:36 -->

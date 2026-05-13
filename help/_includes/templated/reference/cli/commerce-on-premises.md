@@ -1,7 +1,7 @@
 ---
-source-git-commit: ef3abc83e2c699ebfbb53ad367aaceb9ecb92491
+source-git-commit: 44f5debe62afeb55d301a769ca8a3af957e5b6fd
 workflow-type: tm+mt
-source-wordcount: '8072'
+source-wordcount: '9246'
 ht-degree: 0%
 
 ---
@@ -13,20 +13,20 @@ ht-degree: 0%
 
 <!-- The template to render with above values -->
 
-**Versie**: 2.4.8.
+**Versie**: 2.4.9.
 
-Deze verwijzing bevat 145 opdrachten die beschikbaar zijn via het opdrachtregelprogramma van `bin/magento` .
+Deze verwijzing bevat 147 opdrachten die beschikbaar zijn via het opdrachtregelprogramma van `bin/magento` .
 De eerste lijst wordt automatisch gegenereerd met de opdracht `bin/magento list` in Adobe Commerce.
 
 ## Algemeen
 
-Gebruik [&#x200B; &quot;voeg CLI bevelen&quot;](https://developer.adobe.com/commerce/php/development/cli-commands/) gids toe om een douanebevel CLI toe te voegen.
+Gebruik [ &quot;voeg CLI bevelen&quot;](https://developer.adobe.com/commerce/php/development/cli-commands/) gids toe om een douanebevel CLI toe te voegen.
 
-U kunt `bin/magento` CLI bevelen roepen gebruikend kortere weg in plaats van de volledige bevelnaam. U kunt bijvoorbeeld `bin/magento setup:upgrade` aanroepen met `bin/magento s:up` , `bin/magento s:upg` . Zie [&#x200B; kortere wegsyntaxis &#x200B;](https://symfony.com/doc/current/components/console/usage.html#shortcut-syntax) om te begrijpen hoe te om kortere weg met om het even welk bevel te gebruiken CLI.
+U kunt `bin/magento` CLI bevelen roepen gebruikend kortere weg in plaats van de volledige bevelnaam. U kunt bijvoorbeeld `bin/magento setup:upgrade` aanroepen met `bin/magento s:up` , `bin/magento s:upg` . Zie [ kortere wegsyntaxis ](https://symfony.com/doc/current/components/console/usage.html#shortcut-syntax) om te begrijpen hoe te om kortere weg met om het even welk bevel te gebruiken CLI.
 
 Deze referentiedocumentatie wordt geproduceerd van de code van de toepassingsbron. Als u de documentatie wilt wijzigen, opent u
-een trekkingsverzoek voor het overeenkomstige bevel in de relevante [&#x200B; codebase &#x200B;](https://github.com/magento) bewaarplaats. Zie
-[&#x200B; de Bijdragen van de Code &#x200B;](https://developer.adobe.com/commerce/contributor/guides/code-contributions/) voor meer informatie.
+een trekkingsverzoek voor het overeenkomstige bevel in de relevante [ codebase ](https://github.com/magento) bewaarplaats. Zie
+[ de Bijdragen van de Code ](https://developer.adobe.com/commerce/contributor/guides/code-contributions/) voor meer informatie.
 
 ### Algemene opties
 
@@ -37,9 +37,16 @@ Help weergeven voor de opgegeven opdracht. Wanneer geen bevel vertoningshulp voo
 - Standaard: `false`
 - Accepteert geen waarde
 
-#### `--quiet`, `-q`
+#### `--silent`
 
 Geen bericht uitvoeren
+
+- Standaard: `false`
+- Accepteert geen waarde
+
+#### `--quiet`, `-q`
+
+Alleen fouten worden weergegeven. Alle andere uitvoer wordt onderdrukt
 
 - Standaard: `false`
 - Accepteert geen waarde
@@ -68,7 +75,6 @@ ANSI-uitvoer forceren (of uitschakelen —no-ansi)
 
 De optie &quot;—ansi&quot; negeren
 
-- Standaard: `false`
 - Accepteert geen waarde
 
 #### `--no-interaction`, `-n`
@@ -89,7 +95,7 @@ Interne opdracht voor suggesties voor shell-voltooiing
 
 ### Opties
 
-Voor globale opties, zie [&#x200B; Globale opties &#x200B;](#global-options).
+Voor globale opties, zie [ Globale opties ](#global-options).
 
 #### `--shell`, `-s`
 
@@ -168,7 +174,7 @@ Het shell-type (bijvoorbeeld &quot;bash&quot;), wordt de waarde van &quot;$SHELL
 
 ### Opties
 
-Voor globale opties, zie [&#x200B; Globale opties &#x200B;](#global-options).
+Voor globale opties, zie [ Globale opties ](#global-options).
 
 #### `--debug`
 
@@ -208,7 +214,7 @@ De opdrachtnaam
 
 ### Opties
 
-Voor globale opties, zie [&#x200B; Globale opties &#x200B;](#global-options).
+Voor globale opties, zie [ Globale opties ](#global-options).
 
 #### `--format`
 
@@ -259,7 +265,7 @@ De naamruimtenaam
 
 ### Opties
 
-Voor globale opties, zie [&#x200B; Globale opties &#x200B;](#global-options).
+Voor globale opties, zie [ Globale opties ](#global-options).
 
 #### `--raw`
 
@@ -293,7 +299,7 @@ Adobe IMS-module uitschakelen
 
 ### Opties
 
-Voor globale opties, zie [&#x200B; Globale opties &#x200B;](#global-options).
+Voor globale opties, zie [ Globale opties ](#global-options).
 
 
 ## `admin:adobe-ims:enable`
@@ -306,7 +312,7 @@ Schakel Adobe IMS Module in.
 
 ### Opties
 
-Voor globale opties, zie [&#x200B; Globale opties &#x200B;](#global-options).
+Voor globale opties, zie [ Globale opties ](#global-options).
 
 #### `--organization-id`, `-o`
 
@@ -343,7 +349,7 @@ Informatie over de configuratie van de Adobe IMS-module
 
 ### Opties
 
-Voor globale opties, zie [&#x200B; Globale opties &#x200B;](#global-options).
+Voor globale opties, zie [ Globale opties ](#global-options).
 
 
 ## `admin:adobe-ims:status`
@@ -356,7 +362,7 @@ Status van de Adobe IMS-module
 
 ### Opties
 
-Voor globale opties, zie [&#x200B; Globale opties &#x200B;](#global-options).
+Voor globale opties, zie [ Globale opties ](#global-options).
 
 
 ## `admin:user:create`
@@ -369,7 +375,7 @@ Hiermee wordt een beheerder gemaakt
 
 ### Opties
 
-Voor globale opties, zie [&#x200B; Globale opties &#x200B;](#global-options).
+Voor globale opties, zie [ Globale opties ](#global-options).
 
 #### `--admin-user`
 
@@ -432,7 +438,7 @@ De te ontgrendelen admin-gebruikersnaam
 
 ### Opties
 
-Voor globale opties, zie [&#x200B; Globale opties &#x200B;](#global-options).
+Voor globale opties, zie [ Globale opties ](#global-options).
 
 
 ## `app:config:dump`
@@ -454,7 +460,7 @@ De ruimte-gescheiden lijst van configuratietypen of laat weg om alle [ werkingsg
 
 ### Opties
 
-Voor globale opties, zie [&#x200B; Globale opties &#x200B;](#global-options).
+Voor globale opties, zie [ Globale opties ](#global-options).
 
 
 ## `app:config:import`
@@ -467,7 +473,7 @@ Gegevens uit gedeelde configuratiebestanden importeren naar de juiste gegevensop
 
 ### Opties
 
-Voor globale opties, zie [&#x200B; Globale opties &#x200B;](#global-options).
+Voor globale opties, zie [ Globale opties ](#global-options).
 
 
 ## `app:config:status`
@@ -480,7 +486,7 @@ Controleert of config-propagatie update vereist
 
 ### Opties
 
-Voor globale opties, zie [&#x200B; Globale opties &#x200B;](#global-options).
+Voor globale opties, zie [ Globale opties ](#global-options).
 
 
 ## `braintree:migrate`
@@ -493,7 +499,7 @@ Opgeslagen kaarten migreren uit een Magento 1-database
 
 ### Opties
 
-Voor globale opties, zie [&#x200B; Globale opties &#x200B;](#global-options).
+Voor globale opties, zie [ Globale opties ](#global-options).
 
 #### `--host`
 
@@ -539,7 +545,7 @@ Lijst met door spaties gescheiden cachetypen of laten deze niet toe op alle cach
 
 ### Opties
 
-Voor globale opties, zie [&#x200B; Globale opties &#x200B;](#global-options).
+Voor globale opties, zie [ Globale opties ](#global-options).
 
 #### `--bootstrap`
 
@@ -558,7 +564,7 @@ Cache van Merchant-bereik voor Clean Payment Services
 
 ### Opties
 
-Voor globale opties, zie [&#x200B; Globale opties &#x200B;](#global-options).
+Voor globale opties, zie [ Globale opties ](#global-options).
 
 
 ## `cache:disable`
@@ -580,7 +586,7 @@ Lijst met door spaties gescheiden cachetypen of laten deze niet toe op alle cach
 
 ### Opties
 
-Voor globale opties, zie [&#x200B; Globale opties &#x200B;](#global-options).
+Voor globale opties, zie [ Globale opties ](#global-options).
 
 #### `--bootstrap`
 
@@ -608,7 +614,7 @@ Lijst met door spaties gescheiden cachetypen of laten deze niet toe op alle cach
 
 ### Opties
 
-Voor globale opties, zie [&#x200B; Globale opties &#x200B;](#global-options).
+Voor globale opties, zie [ Globale opties ](#global-options).
 
 #### `--bootstrap`
 
@@ -636,7 +642,7 @@ Lijst met door spaties gescheiden cachetypen of laten deze niet toe op alle cach
 
 ### Opties
 
-Voor globale opties, zie [&#x200B; Globale opties &#x200B;](#global-options).
+Voor globale opties, zie [ Globale opties ](#global-options).
 
 #### `--bootstrap`
 
@@ -655,7 +661,7 @@ Hiermee wordt de cachestatus gecontroleerd
 
 ### Opties
 
-Voor globale opties, zie [&#x200B; Globale opties &#x200B;](#global-options).
+Voor globale opties, zie [ Globale opties ](#global-options).
 
 #### `--bootstrap`
 
@@ -674,7 +680,7 @@ Hiermee maakt u productafbeeldingen waarvan het formaat is gewijzigd
 
 ### Opties
 
-Voor globale opties, zie [&#x200B; Globale opties &#x200B;](#global-options).
+Voor globale opties, zie [ Globale opties ](#global-options).
 
 #### `--async`, `-a`
 
@@ -701,7 +707,7 @@ Verwijdert ongebruikte productkenmerken.
 
 ### Opties
 
-Voor globale opties, zie [&#x200B; Globale opties &#x200B;](#global-options).
+Voor globale opties, zie [ Globale opties ](#global-options).
 
 
 ## `cms:wysiwyg:restrict`
@@ -722,7 +728,7 @@ y\n
 
 ### Opties
 
-Voor globale opties, zie [&#x200B; Globale opties &#x200B;](#global-options).
+Voor globale opties, zie [ Globale opties ](#global-options).
 
 
 ## `config:sensitive:set`
@@ -746,7 +752,7 @@ Configuratiewaarde
 
 ### Opties
 
-Voor globale opties, zie [&#x200B; Globale opties &#x200B;](#global-options).
+Voor globale opties, zie [ Globale opties ](#global-options).
 
 #### `--interactive`, `-i`
 
@@ -795,7 +801,7 @@ Configuratiewaarde
 
 ### Opties
 
-Voor globale opties, zie [&#x200B; Globale opties &#x200B;](#global-options).
+Voor globale opties, zie [ Globale opties ](#global-options).
 
 #### `--scope`
 
@@ -848,7 +854,7 @@ Configuratiepad, bijvoorbeeld section_id/group_id/field_id
 
 ### Opties
 
-Voor globale opties, zie [&#x200B; Globale opties &#x200B;](#global-options).
+Voor globale opties, zie [ Globale opties ](#global-options).
 
 #### `--scope`
 
@@ -875,7 +881,7 @@ Genereert en installeert een tab voor de huidige gebruiker
 
 ### Opties
 
-Voor globale opties, zie [&#x200B; Globale opties &#x200B;](#global-options).
+Voor globale opties, zie [ Globale opties ](#global-options).
 
 #### `--force`, `-f`
 
@@ -902,7 +908,7 @@ Hiermee worden taken uit het tabblad Crontab verwijderd
 
 ### Opties
 
-Voor globale opties, zie [&#x200B; Globale opties &#x200B;](#global-options).
+Voor globale opties, zie [ Globale opties ](#global-options).
 
 
 ## `cron:run`
@@ -915,7 +921,7 @@ Hiermee worden taken volgens schema uitgevoerd
 
 ### Opties
 
-Voor globale opties, zie [&#x200B; Globale opties &#x200B;](#global-options).
+Voor globale opties, zie [ Globale opties ](#global-options).
 
 #### `--group`
 
@@ -947,7 +953,7 @@ De hash van de klant bijwerken volgens het meest recente algoritme
 
 ### Opties
 
-Voor globale opties, zie [&#x200B; Globale opties &#x200B;](#global-options).
+Voor globale opties, zie [ Globale opties ](#global-options).
 
 
 ## `deploy:mode:set`
@@ -968,7 +974,7 @@ De toepassingsmodus die moet worden ingesteld. Beschikbare opties zijn &quot;dev
 
 ### Opties
 
-Voor globale opties, zie [&#x200B; Globale opties &#x200B;](#global-options).
+Voor globale opties, zie [ Globale opties ](#global-options).
 
 #### `--skip-compilation`, `-s`
 
@@ -988,7 +994,7 @@ Geeft de huidige toepassingsmodus weer.
 
 ### Opties
 
-Voor globale opties, zie [&#x200B; Globale opties &#x200B;](#global-options).
+Voor globale opties, zie [ Globale opties ](#global-options).
 
 
 ## `dev:di:info`
@@ -1014,7 +1020,7 @@ Netnummer
 
 ### Opties
 
-Voor globale opties, zie [&#x200B; Globale opties &#x200B;](#global-options).
+Voor globale opties, zie [ Globale opties ](#global-options).
 
 
 ## `dev:email:newsletter-compatibility-check`
@@ -1027,7 +1033,7 @@ Scant nieuwsbrieven sjablonen voor mogelijke compatibiliteitsproblemen met varia
 
 ### Opties
 
-Voor globale opties, zie [&#x200B; Globale opties &#x200B;](#global-options).
+Voor globale opties, zie [ Globale opties ](#global-options).
 
 
 ## `dev:email:override-compatibility-check`
@@ -1040,7 +1046,7 @@ Scant e-mailsjabloonoverschrijvingen voor mogelijke compatibiliteitsproblemen me
 
 ### Opties
 
-Voor globale opties, zie [&#x200B; Globale opties &#x200B;](#global-options).
+Voor globale opties, zie [ Globale opties ](#global-options).
 
 
 ## `dev:profiler:disable`
@@ -1053,7 +1059,7 @@ Maak profiler onbruikbaar.
 
 ### Opties
 
-Voor globale opties, zie [&#x200B; Globale opties &#x200B;](#global-options).
+Voor globale opties, zie [ Globale opties ](#global-options).
 
 
 ## `dev:profiler:enable`
@@ -1072,7 +1078,7 @@ Type analyse
 
 ### Opties
 
-Voor globale opties, zie [&#x200B; Globale opties &#x200B;](#global-options).
+Voor globale opties, zie [ Globale opties ](#global-options).
 
 
 ## `dev:query-log:disable`
@@ -1085,20 +1091,20 @@ Logboekregistratie van DB-query uitschakelen
 
 ### Opties
 
-Voor globale opties, zie [&#x200B; Globale opties &#x200B;](#global-options).
+Voor globale opties, zie [ Globale opties ](#global-options).
 
 
 ## `dev:query-log:enable`
 
 ```shell
-bin/magento dev:query-log:enable [--include-all-queries [INCLUDE-ALL-QUERIES]] [--query-time-threshold [QUERY-TIME-THRESHOLD]] [--include-call-stack [INCLUDE-CALL-STACK]]
+bin/magento dev:query-log:enable [--include-all-queries [INCLUDE-ALL-QUERIES]] [--query-time-threshold [QUERY-TIME-THRESHOLD]] [--include-call-stack [INCLUDE-CALL-STACK]] [--include-index-check [INCLUDE-INDEX-CHECK]]
 ```
 
 Logbestand van DB-query inschakelen
 
 ### Opties
 
-Voor globale opties, zie [&#x200B; Globale opties &#x200B;](#global-options).
+Voor globale opties, zie [ Globale opties ](#global-options).
 
 #### `--include-all-queries`
 
@@ -1119,6 +1125,13 @@ Drempelwaarden voor zoektijd.
 Inclusief aanroepstack. [ waar \|vals ]
 
 - Standaard: `true`
+- Accepteert een waarde
+
+#### `--include-index-check`
+
+Inclusief indexcontrole. Waarschuwing: kan de prestaties verminderen. [ waar \|vals ]
+
+- Standaard: `false`
 - Accepteert een waarde
 
 
@@ -1142,7 +1155,7 @@ Bestanden die vooraf moeten worden verwerkt (bestand moet worden opgegeven zonde
 
 ### Opties
 
-Voor globale opties, zie [&#x200B; Globale opties &#x200B;](#global-options).
+Voor globale opties, zie [ Globale opties ](#global-options).
 
 #### `--type`
 
@@ -1183,7 +1196,7 @@ Tips voor frontend-sjablonen uitschakelen. Wellicht is het leegmaken van de cach
 
 ### Opties
 
-Voor globale opties, zie [&#x200B; Globale opties &#x200B;](#global-options).
+Voor globale opties, zie [ Globale opties ](#global-options).
 
 
 ## `dev:template-hints:enable`
@@ -1196,7 +1209,7 @@ Tips voor frontendsjablonen inschakelen. Wellicht is het leegmaken van de cache 
 
 ### Opties
 
-Voor globale opties, zie [&#x200B; Globale opties &#x200B;](#global-options).
+Voor globale opties, zie [ Globale opties ](#global-options).
 
 
 ## `dev:template-hints:status`
@@ -1209,7 +1222,7 @@ Toon de status van frontend malplaatjewenken.
 
 ### Opties
 
-Voor globale opties, zie [&#x200B; Globale opties &#x200B;](#global-options).
+Voor globale opties, zie [ Globale opties ](#global-options).
 
 
 ## `dev:tests:run`
@@ -1230,7 +1243,7 @@ Type test dat moet worden uitgevoerd. Beschikbare typen: all, unit, integration,
 
 ### Opties
 
-Voor globale opties, zie [&#x200B; Globale opties &#x200B;](#global-options).
+Voor globale opties, zie [ Globale opties ](#global-options).
 
 #### `--arguments`, `-c`
 
@@ -1258,7 +1271,7 @@ Pad naar bestand voor uitvoer van catalogus. Voor PHPStorm-gebruik .idea/misc.xm
 
 ### Opties
 
-Voor globale opties, zie [&#x200B; Globale opties &#x200B;](#global-options).
+Voor globale opties, zie [ Globale opties ](#global-options).
 
 #### `--ide`
 
@@ -1293,7 +1306,7 @@ Pad naar XSL-stijlpagina die wordt toegepast op XML-bestand
 
 ### Opties
 
-Voor globale opties, zie [&#x200B; Globale opties &#x200B;](#global-options).
+Voor globale opties, zie [ Globale opties ](#global-options).
 
 #### `--overwrite`, `-o`
 
@@ -1322,7 +1335,7 @@ Naam van domein
 
 ### Opties
 
-Voor globale opties, zie [&#x200B; Globale opties &#x200B;](#global-options).
+Voor globale opties, zie [ Globale opties ](#global-options).
 
 
 ## `downloadable:domains:remove`
@@ -1344,7 +1357,7 @@ Domeinnamen
 
 ### Opties
 
-Voor globale opties, zie [&#x200B; Globale opties &#x200B;](#global-options).
+Voor globale opties, zie [ Globale opties ](#global-options).
 
 
 ## `downloadable:domains:show`
@@ -1357,7 +1370,7 @@ Downloadbare whitelist van domeinen weergeven
 
 ### Opties
 
-Voor globale opties, zie [&#x200B; Globale opties &#x200B;](#global-options).
+Voor globale opties, zie [ Globale opties ](#global-options).
 
 
 ## `encryption:data:list-re-encryptors`
@@ -1370,7 +1383,7 @@ Toont een lijst van beschikbare gegevens re-encryptors.
 
 ### Opties
 
-Voor globale opties, zie [&#x200B; Globale opties &#x200B;](#global-options).
+Voor globale opties, zie [ Globale opties ](#global-options).
 
 
 ## `encryption:data:re-encrypt`
@@ -1392,7 +1405,7 @@ Lijst met hercoderingsapparaten met spaties als scheidingsteken.
 
 ### Opties
 
-Voor globale opties, zie [&#x200B; Globale opties &#x200B;](#global-options).
+Voor globale opties, zie [ Globale opties ](#global-options).
 
 
 ## `encryption:key:change`
@@ -1405,7 +1418,7 @@ Wijzig de coderingssleutel in het bestand env.php.
 
 ### Opties
 
-Voor globale opties, zie [&#x200B; Globale opties &#x200B;](#global-options).
+Voor globale opties, zie [ Globale opties ](#global-options).
 
 #### `--key`, `-k`
 
@@ -1424,7 +1437,7 @@ Codeert gecodeerde creditcardgegevens opnieuw met de nieuwste coderingssleutel.
 
 ### Opties
 
-Voor globale opties, zie [&#x200B; Globale opties &#x200B;](#global-options).
+Voor globale opties, zie [ Globale opties ](#global-options).
 
 
 ## `events:create-event-provider`
@@ -1437,7 +1450,7 @@ Maak een aangepaste gebeurtenisprovider in Adobe I/O Events voor deze instantie.
 
 ### Opties
 
-Voor globale opties, zie [&#x200B; Globale opties &#x200B;](#global-options).
+Voor globale opties, zie [ Globale opties ](#global-options).
 
 #### `--label`
 
@@ -1462,7 +1475,7 @@ Module genereren op basis van de lijst met insteekmodules
 
 ### Opties
 
-Voor globale opties, zie [&#x200B; Globale opties &#x200B;](#global-options).
+Voor globale opties, zie [ Globale opties ](#global-options).
 
 
 ## `events:info`
@@ -1483,7 +1496,7 @@ Gebeurteniscode
 
 ### Opties
 
-Voor globale opties, zie [&#x200B; Globale opties &#x200B;](#global-options).
+Voor globale opties, zie [ Globale opties ](#global-options).
 
 #### `--depth`
 
@@ -1503,7 +1516,7 @@ Geeft een lijst met geabonneerde gebeurtenissen weer
 
 ### Opties
 
-Voor globale opties, zie [&#x200B; Globale opties &#x200B;](#global-options).
+Voor globale opties, zie [ Globale opties ](#global-options).
 
 
 ## `events:list:all`
@@ -1524,7 +1537,7 @@ Modulenaam
 
 ### Opties
 
-Voor globale opties, zie [&#x200B; Globale opties &#x200B;](#global-options).
+Voor globale opties, zie [ Globale opties ](#global-options).
 
 
 ## `events:metadata:populate`
@@ -1537,39 +1550,51 @@ Hiermee maakt u metagegevens in Adobe I/O op basis van de configuratielijst (XML
 
 ### Opties
 
-Voor globale opties, zie [&#x200B; Globale opties &#x200B;](#global-options).
+Voor globale opties, zie [ Globale opties ](#global-options).
 
 
 ## `events:provider:info`
 
 ```shell
-bin/magento events:provider:info
+bin/magento events:provider:info [--provider-id [PROVIDER-ID]]
 ```
 
-Hiermee worden gegevens over de geconfigureerde gebeurtenisprovider geretourneerd
+Retourneert gegevens over een gebeurtenisprovider
 
 ### Opties
 
-Voor globale opties, zie [&#x200B; Globale opties &#x200B;](#global-options).
+Voor globale opties, zie [ Globale opties ](#global-options).
+
+#### `--provider-id`
+
+De id van een gebeurtenisprovider. Wanneer deze optie niet wordt gebruikt, wordt informatie voor de gebeurtenisleverancier die in de systeemconfiguratie wordt geplaatst teruggegeven.
+
+- Accepteert een waarde
 
 
 ## `events:registrations:list`
 
 ```shell
-bin/magento events:registrations:list
+bin/magento events:registrations:list [--provider-id [PROVIDER-ID]]
 ```
 
 Somt gebeurtenisregistraties in uw App Builder-project op
 
 ### Opties
 
-Voor globale opties, zie [&#x200B; Globale opties &#x200B;](#global-options).
+Voor globale opties, zie [ Globale opties ](#global-options).
+
+#### `--provider-id`
+
+De id van een gebeurtenisprovider. Wanneer u deze optie opgeeft, worden de registratiegegevens van de gebeurtenis voor uw App Builder-project gefilterd met de opgegeven id.
+
+- Accepteert een waarde
 
 
 ## `events:subscribe`
 
 ```shell
-bin/magento events:subscribe [-f|--force] [--fields FIELDS] [--parent PARENT] [--rules RULES] [-p|--priority] [-d|--destination DESTINATION] [--hipaaAuditRequired] [--] <event-code>
+bin/magento events:subscribe [-f|--force] [--fields FIELDS] [--parent PARENT] [--rules RULES] [-p|--priority] [-d|--destination DESTINATION] [--providerId PROVIDERID] [--hipaaAuditRequired] [--] <event-code>
 ```
 
 Abonneren op de gebeurtenis
@@ -1584,7 +1609,7 @@ Gebeurteniscode
 
 ### Opties
 
-Voor globale opties, zie [&#x200B; Globale opties &#x200B;](#global-options).
+Voor globale opties, zie [ Globale opties ](#global-options).
 
 #### `--force`, `-f`
 
@@ -1627,6 +1652,12 @@ De bestemming van deze gebeurtenis. Geef deze optie op voor de gebeurtenissen di
 - Standaard: `default`
 - Vereist een waarde
 
+#### `--providerId`
+
+De gebeurtenisprovider waaraan gebeurtenissen worden geleverd
+
+- Vereist een waarde
+
 #### `--hipaaAuditRequired`
 
 Geeft aan dat de gebeurtenis gegevens bevat die worden gecontroleerd door HIPAA.
@@ -1645,7 +1676,7 @@ Metagegevens van gebeurtenissen synchroniseren voor deze instantie
 
 ### Opties
 
-Voor globale opties, zie [&#x200B; Globale opties &#x200B;](#global-options).
+Voor globale opties, zie [ Globale opties ](#global-options).
 
 #### `--delete`, `-d`
 
@@ -1673,7 +1704,7 @@ Gebeurteniscode waarvan abonnement moet worden opgezegd
 
 ### Opties
 
-Voor globale opties, zie [&#x200B; Globale opties &#x200B;](#global-options).
+Voor globale opties, zie [ Globale opties ](#global-options).
 
 
 ## `i18n:collect-phrases`
@@ -1692,7 +1723,7 @@ Mappad om te parseren. Niet nodig indien —magento-markering is ingesteld
 
 ### Opties
 
-Voor globale opties, zie [&#x200B; Globale opties &#x200B;](#global-options).
+Voor globale opties, zie [ Globale opties ](#global-options).
 
 #### `--output`, `-o`
 
@@ -1733,7 +1764,7 @@ Doellandinstelling voor woordenboek, bijvoorbeeld &quot;de_DE&quot;
 
 ### Opties
 
-Voor globale opties, zie [&#x200B; Globale opties &#x200B;](#global-options).
+Voor globale opties, zie [ Globale opties ](#global-options).
 
 #### `--mode`, `-m`
 
@@ -1771,7 +1802,7 @@ Taalpakketnaam
 
 ### Opties
 
-Voor globale opties, zie [&#x200B; Globale opties &#x200B;](#global-options).
+Voor globale opties, zie [ Globale opties ](#global-options).
 
 #### `--backup-code`, `-b`
 
@@ -1791,7 +1822,7 @@ Toegestane indexen weergeven
 
 ### Opties
 
-Voor globale opties, zie [&#x200B; Globale opties &#x200B;](#global-options).
+Voor globale opties, zie [ Globale opties ](#global-options).
 
 
 ## `indexer:reindex`
@@ -1813,7 +1844,7 @@ Lijst met door spaties gescheiden indextypen of laat toe om op alle indexen toe 
 
 ### Opties
 
-Voor globale opties, zie [&#x200B; Globale opties &#x200B;](#global-options).
+Voor globale opties, zie [ Globale opties ](#global-options).
 
 
 ## `indexer:reset`
@@ -1835,7 +1866,7 @@ Lijst met door spaties gescheiden indextypen of laat toe om op alle indexen toe 
 
 ### Opties
 
-Voor globale opties, zie [&#x200B; Globale opties &#x200B;](#global-options).
+Voor globale opties, zie [ Globale opties ](#global-options).
 
 
 ## `indexer:set-dimensions-mode`
@@ -1859,7 +1890,7 @@ Indexer-dimensie-modi catalog_product_price none,website,customer_group,website_
 
 ### Opties
 
-Voor globale opties, zie [&#x200B; Globale opties &#x200B;](#global-options).
+Voor globale opties, zie [ Globale opties ](#global-options).
 
 
 ## `indexer:set-mode`
@@ -1886,7 +1917,7 @@ Lijst met door spaties gescheiden indextypen of laat toe om op alle indexen toe 
 
 ### Opties
 
-Voor globale opties, zie [&#x200B; Globale opties &#x200B;](#global-options).
+Voor globale opties, zie [ Globale opties ](#global-options).
 
 
 ## `indexer:set-status`
@@ -1915,7 +1946,7 @@ Lijst met door spaties gescheiden indextypen of laat toe om op alle indexen toe 
 
 ### Opties
 
-Voor globale opties, zie [&#x200B; Globale opties &#x200B;](#global-options).
+Voor globale opties, zie [ Globale opties ](#global-options).
 
 
 ## `indexer:show-dimensions-mode`
@@ -1937,7 +1968,7 @@ Lijst met door spaties gescheiden indextypen of laat deze weg om toe te passen o
 
 ### Opties
 
-Voor globale opties, zie [&#x200B; Globale opties &#x200B;](#global-options).
+Voor globale opties, zie [ Globale opties ](#global-options).
 
 
 ## `indexer:show-mode`
@@ -1959,7 +1990,7 @@ Lijst met door spaties gescheiden indextypen of laat toe om op alle indexen toe 
 
 ### Opties
 
-Voor globale opties, zie [&#x200B; Globale opties &#x200B;](#global-options).
+Voor globale opties, zie [ Globale opties ](#global-options).
 
 
 ## `indexer:status`
@@ -1981,7 +2012,7 @@ Lijst met door spaties gescheiden indextypen of laat toe om op alle indexen toe 
 
 ### Opties
 
-Voor globale opties, zie [&#x200B; Globale opties &#x200B;](#global-options).
+Voor globale opties, zie [ Globale opties ](#global-options).
 
 
 ## `info:adminuri`
@@ -1994,7 +2025,7 @@ Hiermee wordt de Magento Admin URI weergegeven
 
 ### Opties
 
-Voor globale opties, zie [&#x200B; Globale opties &#x200B;](#global-options).
+Voor globale opties, zie [ Globale opties ](#global-options).
 
 
 ## `info:backups:list`
@@ -2007,7 +2038,7 @@ Lijst met beschikbare back-upbestanden afdrukken
 
 ### Opties
 
-Voor globale opties, zie [&#x200B; Globale opties &#x200B;](#global-options).
+Voor globale opties, zie [ Globale opties ](#global-options).
 
 
 ## `info:currency:list`
@@ -2020,7 +2051,7 @@ Geeft de lijst met beschikbare valuta&#39;s weer
 
 ### Opties
 
-Voor globale opties, zie [&#x200B; Globale opties &#x200B;](#global-options).
+Voor globale opties, zie [ Globale opties ](#global-options).
 
 
 ## `info:dependencies:show-framework`
@@ -2033,7 +2064,7 @@ Geeft een aantal afhankelijkheden van het Magento-framework weer
 
 ### Opties
 
-Voor globale opties, zie [&#x200B; Globale opties &#x200B;](#global-options).
+Voor globale opties, zie [ Globale opties ](#global-options).
 
 #### `--output`, `-o`
 
@@ -2053,7 +2084,7 @@ Toont aantal gebiedsdelen tussen modules
 
 ### Opties
 
-Voor globale opties, zie [&#x200B; Globale opties &#x200B;](#global-options).
+Voor globale opties, zie [ Globale opties ](#global-options).
 
 #### `--output`, `-o`
 
@@ -2073,7 +2104,7 @@ Toont aantal kringafhankelijkheden tussen modules
 
 ### Opties
 
-Voor globale opties, zie [&#x200B; Globale opties &#x200B;](#global-options).
+Voor globale opties, zie [ Globale opties ](#global-options).
 
 #### `--output`, `-o`
 
@@ -2093,7 +2124,7 @@ Geeft de lijst met beschikbare taallandinstellingen weer
 
 ### Opties
 
-Voor globale opties, zie [&#x200B; Globale opties &#x200B;](#global-options).
+Voor globale opties, zie [ Globale opties ](#global-options).
 
 
 ## `info:timezone:list`
@@ -2106,7 +2137,7 @@ Hiermee geeft u de lijst met beschikbare tijdzones weer
 
 ### Opties
 
-Voor globale opties, zie [&#x200B; Globale opties &#x200B;](#global-options).
+Voor globale opties, zie [ Globale opties ](#global-options).
 
 
 ## `inventory:reservation:create-compensations`
@@ -2128,7 +2159,7 @@ Lijst met argumenten voor compensatie in de notatie &quot;:::&quot;
 
 ### Opties
 
-Voor globale opties, zie [&#x200B; Globale opties &#x200B;](#global-options).
+Voor globale opties, zie [ Globale opties ](#global-options).
 
 #### `--raw`, `-r`
 
@@ -2148,7 +2179,7 @@ Alle bestellingen en producten met inconsistenties in verkoopbare hoeveelheid to
 
 ### Opties
 
-Voor globale opties, zie [&#x200B; Globale opties &#x200B;](#global-options).
+Voor globale opties, zie [ Globale opties ](#global-options).
 
 #### `--complete-orders`, `-c`
 
@@ -2200,7 +2231,7 @@ Lijst van landcodes die moeten worden ingevoerd
 
 ### Opties
 
-Voor globale opties, zie [&#x200B; Globale opties &#x200B;](#global-options).
+Voor globale opties, zie [ Globale opties ](#global-options).
 
 
 ## `maintenance:allow-ips`
@@ -2222,7 +2253,7 @@ Toegestane IP adressen
 
 ### Opties
 
-Voor globale opties, zie [&#x200B; Globale opties &#x200B;](#global-options).
+Voor globale opties, zie [ Globale opties ](#global-options).
 
 #### `--none`
 
@@ -2255,7 +2286,7 @@ Onderhoudsmodus uitschakelen
 
 ### Opties
 
-Voor globale opties, zie [&#x200B; Globale opties &#x200B;](#global-options).
+Voor globale opties, zie [ Globale opties ](#global-options).
 
 #### `--ip`
 
@@ -2281,7 +2312,7 @@ Onderhoudsmodus inschakelen
 
 ### Opties
 
-Voor globale opties, zie [&#x200B; Globale opties &#x200B;](#global-options).
+Voor globale opties, zie [ Globale opties ](#global-options).
 
 #### `--ip`
 
@@ -2307,7 +2338,7 @@ De status van de onderhoudsmodus weergeven
 
 ### Opties
 
-Voor globale opties, zie [&#x200B; Globale opties &#x200B;](#global-options).
+Voor globale opties, zie [ Globale opties ](#global-options).
 
 #### `--magento-init-params`
 
@@ -2326,7 +2357,7 @@ Inhoud synchroniseren met elementen
 
 ### Opties
 
-Voor globale opties, zie [&#x200B; Globale opties &#x200B;](#global-options).
+Voor globale opties, zie [ Globale opties ](#global-options).
 
 
 ## `media-gallery:sync`
@@ -2339,7 +2370,7 @@ Mediaopslag en media-elementen in de database synchroniseren
 
 ### Opties
 
-Voor globale opties, zie [&#x200B; Globale opties &#x200B;](#global-options).
+Voor globale opties, zie [ Globale opties ](#global-options).
 
 
 ## `module:config:status`
@@ -2352,7 +2383,7 @@ Controleert de moduleconfiguratie in het &quot;app/etc/config.php&quot;dossier e
 
 ### Opties
 
-Voor globale opties, zie [&#x200B; Globale opties &#x200B;](#global-options).
+Voor globale opties, zie [ Globale opties ](#global-options).
 
 
 ## `module:disable`
@@ -2374,7 +2405,7 @@ Naam van de module
 
 ### Opties
 
-Voor globale opties, zie [&#x200B; Globale opties &#x200B;](#global-options).
+Voor globale opties, zie [ Globale opties ](#global-options).
 
 #### `--force`, `-f`
 
@@ -2423,7 +2454,7 @@ Naam van de module
 
 ### Opties
 
-Voor globale opties, zie [&#x200B; Globale opties &#x200B;](#global-options).
+Voor globale opties, zie [ Globale opties ](#global-options).
 
 #### `--force`, `-f`
 
@@ -2472,7 +2503,7 @@ Optionele modulenaam
 
 ### Opties
 
-Voor globale opties, zie [&#x200B; Globale opties &#x200B;](#global-options).
+Voor globale opties, zie [ Globale opties ](#global-options).
 
 #### `--enabled`
 
@@ -2516,7 +2547,7 @@ Naam van de module
 
 ### Opties
 
-Voor globale opties, zie [&#x200B; Globale opties &#x200B;](#global-options).
+Voor globale opties, zie [ Globale opties ](#global-options).
 
 #### `--remove-data`, `-r`
 
@@ -2570,16 +2601,16 @@ Voeg aan om het even welke bevel toe om de initialisatieparameters van Magento a
 ## `newrelic:create:deploy-marker`
 
 ```shell
-bin/magento newrelic:create:deploy-marker <message> <change_log> [<user> [<revision>]]
+bin/magento newrelic:create:deploy-marker [-c|--commit [COMMIT]] [-d|--deep-link [DEEP-LINK]] [-g|--group-id [GROUP-ID]] [--] <message> <change_log> [<user> [<revision>]]
 ```
 
-Controleer de opstellen rij voor ingangen en creeer aangewezen plaatsingsteller.
+Een implementatiemarkering maken in New Relic (ondersteunt zowel v2 REST als NerdGraph)
 
 ### Argumenten
 
 #### `message`
 
-Bericht implementeren?
+Bericht/beschrijving implementeren
 
 - Vereist
 
@@ -2598,11 +2629,29 @@ Implementatiegebruiker
 
 #### `revision`
 
-Herziening
+Revisie/versie
 
 ### Opties
 
-Voor globale opties, zie [&#x200B; Globale opties &#x200B;](#global-options).
+Voor globale opties, zie [ Globale opties ](#global-options).
+
+#### `--commit`, `-c`
+
+Hash voor deze implementatie vastleggen (alleen NerdGraph)
+
+- Accepteert een waarde
+
+#### `--deep-link`, `-d`
+
+Diepe koppeling naar implementatiedetails (alleen NerdGraph)
+
+- Accepteert een waarde
+
+#### `--group-id`, `-g`
+
+Groep-id voor het organiseren van implementaties (alleen NerdGraph)
+
+- Accepteert een waarde
 
 
 ## `queue:consumers:list`
@@ -2619,7 +2668,7 @@ This command shows list of MessageQueue consumers.
 
 ### Opties
 
-Voor globale opties, zie [&#x200B; Globale opties &#x200B;](#global-options).
+Voor globale opties, zie [ Globale opties ](#global-options).
 
 
 ## `queue:consumers:restart`
@@ -2636,7 +2685,7 @@ Command put poison pill for MessageQueue consumers and force to restart them aft
 
 ### Opties
 
-Voor globale opties, zie [&#x200B; Globale opties &#x200B;](#global-options).
+Voor globale opties, zie [ Globale opties ](#global-options).
 
 
 ## `queue:consumers:start`
@@ -2689,7 +2738,7 @@ De naam van de consument die moet worden gestart.
 
 ### Opties
 
-Voor globale opties, zie [&#x200B; Globale opties &#x200B;](#global-options).
+Voor globale opties, zie [ Globale opties ](#global-options).
 
 #### `--max-messages`
 
@@ -2739,7 +2788,51 @@ Mediabestanden synchroniseren met externe opslag.
 
 ### Opties
 
-Voor globale opties, zie [&#x200B; Globale opties &#x200B;](#global-options).
+Voor globale opties, zie [ Globale opties ](#global-options).
+
+
+## `saas:initialize:project`
+
+```shell
+bin/magento saas:initialize:project [-p|--projectName PROJECTNAME]
+```
+
+Initialiseer een nieuw project voor de handelaar die in de de dienstschakelaar wordt gevormd
+
+### Opties
+
+Voor globale opties, zie [ Globale opties ](#global-options).
+
+#### `--projectName`, `-p`
+
+Projectnaam
+
+- Vereist een waarde
+
+
+## `saas:list:projects`
+
+```shell
+bin/magento saas:list:projects [-p|--projectId [PROJECTID]] [-e|--environmentId [ENVIRONMENTID]]
+```
+
+Maakt een lijst van projectinfo voor de handelaar die in de de dienstschakelaar wordt gevormd
+
+### Opties
+
+Voor globale opties, zie [ Globale opties ](#global-options).
+
+#### `--projectId`, `-p`
+
+Projectidentificatie
+
+- Accepteert een waarde
+
+#### `--environmentId`, `-e`
+
+Omgevingsid
+
+- Accepteert een waarde
 
 
 ## `saas:resync`
@@ -2752,7 +2845,7 @@ Hersynchroniseert voedergegevens aan de dienst SaaS.
 
 ### Opties
 
-Voor globale opties, zie [&#x200B; Globale opties &#x200B;](#global-options).
+Voor globale opties, zie [ Globale opties ](#global-options).
 
 #### `--feed`
 
@@ -2823,7 +2916,7 @@ Stel steekproefgegevensmodules voor op composer-gebaseerde installaties van Mage
 
 ### Opties
 
-Voor globale opties, zie [&#x200B; Globale opties &#x200B;](#global-options).
+Voor globale opties, zie [ Globale opties ](#global-options).
 
 #### `--no-update`
 
@@ -2843,7 +2936,7 @@ Alle pakketten met voorbeeldgegevens verwijderen uit composer.json
 
 ### Opties
 
-Voor globale opties, zie [&#x200B; Globale opties &#x200B;](#global-options).
+Voor globale opties, zie [ Globale opties ](#global-options).
 
 #### `--no-update`
 
@@ -2863,7 +2956,7 @@ Alle modules met voorbeeldgegevens opnieuw instellen voor herinstallatie
 
 ### Opties
 
-Voor globale opties, zie [&#x200B; Globale opties &#x200B;](#global-options).
+Voor globale opties, zie [ Globale opties ](#global-options).
 
 
 ## `security:recaptcha:disable-for-user-forgot-password`
@@ -2876,7 +2969,7 @@ reCAPTCHA uitschakelen voor wachtwoordformulier voor vergeten gebruiker van behe
 
 ### Opties
 
-Voor globale opties, zie [&#x200B; Globale opties &#x200B;](#global-options).
+Voor globale opties, zie [ Globale opties ](#global-options).
 
 
 ## `security:recaptcha:disable-for-user-login`
@@ -2889,7 +2982,7 @@ reCAPTCHA uitschakelen voor aanmeldingsformulier voor beheerder
 
 ### Opties
 
-Voor globale opties, zie [&#x200B; Globale opties &#x200B;](#global-options).
+Voor globale opties, zie [ Globale opties ](#global-options).
 
 
 ## `security:tfa:google:set-secret`
@@ -2917,7 +3010,7 @@ Geheim
 
 ### Opties
 
-Voor globale opties, zie [&#x200B; Globale opties &#x200B;](#global-options).
+Voor globale opties, zie [ Globale opties ](#global-options).
 
 
 ## `security:tfa:providers`
@@ -2930,7 +3023,7 @@ Alle beschikbare providers weergeven
 
 ### Opties
 
-Voor globale opties, zie [&#x200B; Globale opties &#x200B;](#global-options).
+Voor globale opties, zie [ Globale opties ](#global-options).
 
 
 ## `security:tfa:reset`
@@ -2958,7 +3051,7 @@ Providercode
 
 ### Opties
 
-Voor globale opties, zie [&#x200B; Globale opties &#x200B;](#global-options).
+Voor globale opties, zie [ Globale opties ](#global-options).
 
 
 ## `server:run`
@@ -2971,7 +3064,7 @@ Toepassingsserver uitvoeren
 
 ### Opties
 
-Voor globale opties, zie [&#x200B; Globale opties &#x200B;](#global-options).
+Voor globale opties, zie [ Globale opties ](#global-options).
 
 #### `--port`, `-p`
 
@@ -3047,7 +3140,7 @@ Samengevoegde output van staatsmonitor van ApplicationServer
 
 ### Opties
 
-Voor globale opties, zie [&#x200B; Globale opties &#x200B;](#global-options).
+Voor globale opties, zie [ Globale opties ](#global-options).
 
 
 ## `setup:backup`
@@ -3060,7 +3153,7 @@ Maakt back-up van Magento Application Code base, media en database
 
 ### Opties
 
-Voor globale opties, zie [&#x200B; Globale opties &#x200B;](#global-options).
+Voor globale opties, zie [ Globale opties ](#global-options).
 
 #### `--code`
 
@@ -3093,14 +3186,14 @@ Voeg aan om het even welke bevel toe om de initialisatieparameters van Magento a
 ## `setup:config:set`
 
 ```shell
-bin/magento setup:config:set [--remote-storage-driver REMOTE-STORAGE-DRIVER] [--remote-storage-prefix REMOTE-STORAGE-PREFIX] [--remote-storage-endpoint REMOTE-STORAGE-ENDPOINT] [--remote-storage-bucket REMOTE-STORAGE-BUCKET] [--remote-storage-region REMOTE-STORAGE-REGION] [--remote-storage-key REMOTE-STORAGE-KEY] [--remote-storage-secret REMOTE-STORAGE-SECRET] [--remote-storage-path-style REMOTE-STORAGE-PATH-STYLE] [--backend-frontname BACKEND-FRONTNAME] [--enable-debug-logging ENABLE-DEBUG-LOGGING] [--enable-syslog-logging ENABLE-SYSLOG-LOGGING] [--id_salt ID_SALT] [--checkout-async CHECKOUT-ASYNC] [--config-async CONFIG-ASYNC] [--amqp-host AMQP-HOST] [--amqp-port AMQP-PORT] [--amqp-user AMQP-USER] [--amqp-password AMQP-PASSWORD] [--amqp-virtualhost AMQP-VIRTUALHOST] [--amqp-ssl AMQP-SSL] [--amqp-ssl-options AMQP-SSL-OPTIONS] [--consumers-wait-for-messages CONSUMERS-WAIT-FOR-MESSAGES] [--queue-default-connection QUEUE-DEFAULT-CONNECTION] [--deferred-total-calculating DEFERRED-TOTAL-CALCULATING] [--key KEY] [--db-host DB-HOST] [--db-name DB-NAME] [--db-user DB-USER] [--db-engine DB-ENGINE] [--db-password DB-PASSWORD] [--db-prefix DB-PREFIX] [--db-model DB-MODEL] [--db-init-statements DB-INIT-STATEMENTS] [-s|--skip-db-validation] [--http-cache-hosts HTTP-CACHE-HOSTS] [--db-ssl-key DB-SSL-KEY] [--db-ssl-cert DB-SSL-CERT] [--db-ssl-ca DB-SSL-CA] [--db-ssl-verify] [--session-save SESSION-SAVE] [--session-save-redis-host SESSION-SAVE-REDIS-HOST] [--session-save-redis-port SESSION-SAVE-REDIS-PORT] [--session-save-redis-password SESSION-SAVE-REDIS-PASSWORD] [--session-save-redis-timeout SESSION-SAVE-REDIS-TIMEOUT] [--session-save-redis-retries SESSION-SAVE-REDIS-RETRIES] [--session-save-redis-persistent-id SESSION-SAVE-REDIS-PERSISTENT-ID] [--session-save-redis-db SESSION-SAVE-REDIS-DB] [--session-save-redis-compression-threshold SESSION-SAVE-REDIS-COMPRESSION-THRESHOLD] [--session-save-redis-compression-lib SESSION-SAVE-REDIS-COMPRESSION-LIB] [--session-save-redis-log-level SESSION-SAVE-REDIS-LOG-LEVEL] [--session-save-redis-max-concurrency SESSION-SAVE-REDIS-MAX-CONCURRENCY] [--session-save-redis-break-after-frontend SESSION-SAVE-REDIS-BREAK-AFTER-FRONTEND] [--session-save-redis-break-after-adminhtml SESSION-SAVE-REDIS-BREAK-AFTER-ADMINHTML] [--session-save-redis-first-lifetime SESSION-SAVE-REDIS-FIRST-LIFETIME] [--session-save-redis-bot-first-lifetime SESSION-SAVE-REDIS-BOT-FIRST-LIFETIME] [--session-save-redis-bot-lifetime SESSION-SAVE-REDIS-BOT-LIFETIME] [--session-save-redis-disable-locking SESSION-SAVE-REDIS-DISABLE-LOCKING] [--session-save-redis-min-lifetime SESSION-SAVE-REDIS-MIN-LIFETIME] [--session-save-redis-max-lifetime SESSION-SAVE-REDIS-MAX-LIFETIME] [--session-save-redis-sentinel-master SESSION-SAVE-REDIS-SENTINEL-MASTER] [--session-save-redis-sentinel-servers SESSION-SAVE-REDIS-SENTINEL-SERVERS] [--session-save-redis-sentinel-verify-master SESSION-SAVE-REDIS-SENTINEL-VERIFY-MASTER] [--session-save-redis-sentinel-connect-retries SESSION-SAVE-REDIS-SENTINEL-CONNECT-RETRIES] [--cache-backend CACHE-BACKEND] [--cache-backend-redis-server CACHE-BACKEND-REDIS-SERVER] [--cache-backend-redis-db CACHE-BACKEND-REDIS-DB] [--cache-backend-redis-port CACHE-BACKEND-REDIS-PORT] [--cache-backend-redis-password CACHE-BACKEND-REDIS-PASSWORD] [--cache-backend-redis-compress-data CACHE-BACKEND-REDIS-COMPRESS-DATA] [--cache-backend-redis-compression-lib CACHE-BACKEND-REDIS-COMPRESSION-LIB] [--cache-backend-redis-use-lua CACHE-BACKEND-REDIS-USE-LUA] [--cache-backend-redis-use-lua-on-gc CACHE-BACKEND-REDIS-USE-LUA-ON-GC] [--cache-id-prefix CACHE-ID-PREFIX] [--allow-parallel-generation] [--page-cache PAGE-CACHE] [--page-cache-redis-server PAGE-CACHE-REDIS-SERVER] [--page-cache-redis-db PAGE-CACHE-REDIS-DB] [--page-cache-redis-port PAGE-CACHE-REDIS-PORT] [--page-cache-redis-password PAGE-CACHE-REDIS-PASSWORD] [--page-cache-redis-compress-data PAGE-CACHE-REDIS-COMPRESS-DATA] [--page-cache-redis-compression-lib PAGE-CACHE-REDIS-COMPRESSION-LIB] [--page-cache-id-prefix PAGE-CACHE-ID-PREFIX] [--lock-provider LOCK-PROVIDER] [--lock-db-prefix LOCK-DB-PREFIX] [--lock-zookeeper-host LOCK-ZOOKEEPER-HOST] [--lock-zookeeper-path LOCK-ZOOKEEPER-PATH] [--lock-file-path LOCK-FILE-PATH] [--document-root-is-pub DOCUMENT-ROOT-IS-PUB] [--backpressure-logger BACKPRESSURE-LOGGER] [--backpressure-logger-redis-server BACKPRESSURE-LOGGER-REDIS-SERVER] [--backpressure-logger-redis-port BACKPRESSURE-LOGGER-REDIS-PORT] [--backpressure-logger-redis-timeout BACKPRESSURE-LOGGER-REDIS-TIMEOUT] [--backpressure-logger-redis-persistent BACKPRESSURE-LOGGER-REDIS-PERSISTENT] [--backpressure-logger-redis-db BACKPRESSURE-LOGGER-REDIS-DB] [--backpressure-logger-redis-password BACKPRESSURE-LOGGER-REDIS-PASSWORD] [--backpressure-logger-redis-user BACKPRESSURE-LOGGER-REDIS-USER] [--backpressure-logger-id-prefix BACKPRESSURE-LOGGER-ID-PREFIX] [--magento-init-params MAGENTO-INIT-PARAMS]
+bin/magento setup:config:set [--remote-storage-driver REMOTE-STORAGE-DRIVER] [--remote-storage-prefix REMOTE-STORAGE-PREFIX] [--remote-storage-endpoint REMOTE-STORAGE-ENDPOINT] [--remote-storage-bucket REMOTE-STORAGE-BUCKET] [--remote-storage-region REMOTE-STORAGE-REGION] [--remote-storage-key REMOTE-STORAGE-KEY] [--remote-storage-secret REMOTE-STORAGE-SECRET] [--remote-storage-path-style REMOTE-STORAGE-PATH-STYLE] [--backend-frontname BACKEND-FRONTNAME] [--enable-debug-logging ENABLE-DEBUG-LOGGING] [--enable-syslog-logging ENABLE-SYSLOG-LOGGING] [--id_salt ID_SALT] [--checkout-async CHECKOUT-ASYNC] [--config-async CONFIG-ASYNC] [--amqp-host AMQP-HOST] [--amqp-port AMQP-PORT] [--amqp-user AMQP-USER] [--amqp-password AMQP-PASSWORD] [--amqp-virtualhost AMQP-VIRTUALHOST] [--amqp-ssl AMQP-SSL] [--amqp-ssl-options AMQP-SSL-OPTIONS] [--consumers-wait-for-messages CONSUMERS-WAIT-FOR-MESSAGES] [--queue-default-connection QUEUE-DEFAULT-CONNECTION] [--stomp-host STOMP-HOST] [--stomp-port STOMP-PORT] [--stomp-user STOMP-USER] [--stomp-password STOMP-PASSWORD] [--stomp-ssl STOMP-SSL] [--stomp-ssl-options STOMP-SSL-OPTIONS] [--deferred-total-calculating DEFERRED-TOTAL-CALCULATING] [--key KEY] [--db-host DB-HOST] [--db-name DB-NAME] [--db-user DB-USER] [--db-engine DB-ENGINE] [--db-password DB-PASSWORD] [--db-prefix DB-PREFIX] [--db-model DB-MODEL] [--db-init-statements DB-INIT-STATEMENTS] [-s|--skip-db-validation] [--http-cache-hosts HTTP-CACHE-HOSTS] [--db-ssl-key DB-SSL-KEY] [--db-ssl-cert DB-SSL-CERT] [--db-ssl-ca DB-SSL-CA] [--db-ssl-verify] [--session-save SESSION-SAVE] [--session-save-redis-host SESSION-SAVE-REDIS-HOST] [--session-save-redis-port SESSION-SAVE-REDIS-PORT] [--session-save-redis-password SESSION-SAVE-REDIS-PASSWORD] [--session-save-redis-timeout SESSION-SAVE-REDIS-TIMEOUT] [--session-save-redis-retries SESSION-SAVE-REDIS-RETRIES] [--session-save-redis-persistent-id SESSION-SAVE-REDIS-PERSISTENT-ID] [--session-save-redis-db SESSION-SAVE-REDIS-DB] [--session-save-redis-compression-threshold SESSION-SAVE-REDIS-COMPRESSION-THRESHOLD] [--session-save-redis-compression-lib SESSION-SAVE-REDIS-COMPRESSION-LIB] [--session-save-redis-log-level SESSION-SAVE-REDIS-LOG-LEVEL] [--session-save-redis-max-concurrency SESSION-SAVE-REDIS-MAX-CONCURRENCY] [--session-save-redis-break-after-frontend SESSION-SAVE-REDIS-BREAK-AFTER-FRONTEND] [--session-save-redis-break-after-adminhtml SESSION-SAVE-REDIS-BREAK-AFTER-ADMINHTML] [--session-save-redis-first-lifetime SESSION-SAVE-REDIS-FIRST-LIFETIME] [--session-save-redis-bot-first-lifetime SESSION-SAVE-REDIS-BOT-FIRST-LIFETIME] [--session-save-redis-bot-lifetime SESSION-SAVE-REDIS-BOT-LIFETIME] [--session-save-redis-disable-locking SESSION-SAVE-REDIS-DISABLE-LOCKING] [--session-save-redis-min-lifetime SESSION-SAVE-REDIS-MIN-LIFETIME] [--session-save-redis-max-lifetime SESSION-SAVE-REDIS-MAX-LIFETIME] [--session-save-redis-sentinel-master SESSION-SAVE-REDIS-SENTINEL-MASTER] [--session-save-redis-sentinel-servers SESSION-SAVE-REDIS-SENTINEL-SERVERS] [--session-save-redis-sentinel-verify-master SESSION-SAVE-REDIS-SENTINEL-VERIFY-MASTER] [--session-save-redis-sentinel-connect-retries SESSION-SAVE-REDIS-SENTINEL-CONNECT-RETRIES] [--session-save-valkey-host SESSION-SAVE-VALKEY-HOST] [--session-save-valkey-port SESSION-SAVE-VALKEY-PORT] [--session-save-valkey-password SESSION-SAVE-VALKEY-PASSWORD] [--session-save-valkey-timeout SESSION-SAVE-VALKEY-TIMEOUT] [--session-save-valkey-retries SESSION-SAVE-VALKEY-RETRIES] [--session-save-valkey-persistent-id SESSION-SAVE-VALKEY-PERSISTENT-ID] [--session-save-valkey-db SESSION-SAVE-VALKEY-DB] [--session-save-valkey-compression-threshold SESSION-SAVE-VALKEY-COMPRESSION-THRESHOLD] [--session-save-valkey-compression-lib SESSION-SAVE-VALKEY-COMPRESSION-LIB] [--session-save-valkey-log-level SESSION-SAVE-VALKEY-LOG-LEVEL] [--session-save-valkey-max-concurrency SESSION-SAVE-VALKEY-MAX-CONCURRENCY] [--session-save-valkey-break-after-frontend SESSION-SAVE-VALKEY-BREAK-AFTER-FRONTEND] [--session-save-valkey-break-after-adminhtml SESSION-SAVE-VALKEY-BREAK-AFTER-ADMINHTML] [--session-save-valkey-first-lifetime SESSION-SAVE-VALKEY-FIRST-LIFETIME] [--session-save-valkey-bot-first-lifetime SESSION-SAVE-VALKEY-BOT-FIRST-LIFETIME] [--session-save-valkey-bot-lifetime SESSION-SAVE-VALKEY-BOT-LIFETIME] [--session-save-valkey-disable-locking SESSION-SAVE-VALKEY-DISABLE-LOCKING] [--session-save-valkey-min-lifetime SESSION-SAVE-VALKEY-MIN-LIFETIME] [--session-save-valkey-max-lifetime SESSION-SAVE-VALKEY-MAX-LIFETIME] [--session-save-valkey-sentinel-master SESSION-SAVE-VALKEY-SENTINEL-MASTER] [--session-save-valkey-sentinel-servers SESSION-SAVE-VALKEY-SENTINEL-SERVERS] [--session-save-valkey-sentinel-verify-master SESSION-SAVE-VALKEY-SENTINEL-VERIFY-MASTER] [--session-save-valkey-sentinel-connect-retries SESSION-SAVE-VALKEY-SENTINEL-CONNECT-RETRIES] [--cache-backend CACHE-BACKEND] [--cache-backend-redis-server CACHE-BACKEND-REDIS-SERVER] [--cache-backend-redis-db CACHE-BACKEND-REDIS-DB] [--cache-backend-redis-port CACHE-BACKEND-REDIS-PORT] [--cache-backend-redis-password CACHE-BACKEND-REDIS-PASSWORD] [--cache-backend-redis-compress-data CACHE-BACKEND-REDIS-COMPRESS-DATA] [--cache-backend-redis-compression-lib CACHE-BACKEND-REDIS-COMPRESSION-LIB] [--cache-backend-redis-serializer CACHE-BACKEND-REDIS-SERIALIZER] [--cache-backend-redis-use-lua CACHE-BACKEND-REDIS-USE-LUA] [--cache-backend-redis-use-lua-on-gc CACHE-BACKEND-REDIS-USE-LUA-ON-GC] [--cache-backend-valkey-server CACHE-BACKEND-VALKEY-SERVER] [--cache-backend-valkey-db CACHE-BACKEND-VALKEY-DB] [--cache-backend-valkey-port CACHE-BACKEND-VALKEY-PORT] [--cache-backend-valkey-password CACHE-BACKEND-VALKEY-PASSWORD] [--cache-backend-valkey-compress-data CACHE-BACKEND-VALKEY-COMPRESS-DATA] [--cache-backend-valkey-compression-lib CACHE-BACKEND-VALKEY-COMPRESSION-LIB] [--cache-backend-valkey-serializer CACHE-BACKEND-VALKEY-SERIALIZER] [--cache-backend-valkey-use-lua CACHE-BACKEND-VALKEY-USE-LUA] [--cache-backend-valkey-use-lua-on-gc CACHE-BACKEND-VALKEY-USE-LUA-ON-GC] [--cache-id-prefix CACHE-ID-PREFIX] [--allow-parallel-generation] [--page-cache PAGE-CACHE] [--page-cache-redis-server PAGE-CACHE-REDIS-SERVER] [--page-cache-redis-db PAGE-CACHE-REDIS-DB] [--page-cache-redis-port PAGE-CACHE-REDIS-PORT] [--page-cache-redis-password PAGE-CACHE-REDIS-PASSWORD] [--page-cache-redis-compress-data PAGE-CACHE-REDIS-COMPRESS-DATA] [--page-cache-redis-compression-lib PAGE-CACHE-REDIS-COMPRESSION-LIB] [--page-cache-redis-serializer PAGE-CACHE-REDIS-SERIALIZER] [--page-cache-id-prefix PAGE-CACHE-ID-PREFIX] [--page-cache-valkey-server PAGE-CACHE-VALKEY-SERVER] [--page-cache-valkey-db PAGE-CACHE-VALKEY-DB] [--page-cache-valkey-port PAGE-CACHE-VALKEY-PORT] [--page-cache-valkey-password PAGE-CACHE-VALKEY-PASSWORD] [--page-cache-valkey-compress-data PAGE-CACHE-VALKEY-COMPRESS-DATA] [--page-cache-valkey-compression-lib PAGE-CACHE-VALKEY-COMPRESSION-LIB] [--page-cache-valkey-serializer PAGE-CACHE-VALKEY-SERIALIZER] [--lock-provider LOCK-PROVIDER] [--lock-db-prefix LOCK-DB-PREFIX] [--lock-zookeeper-host LOCK-ZOOKEEPER-HOST] [--lock-zookeeper-path LOCK-ZOOKEEPER-PATH] [--lock-file-path LOCK-FILE-PATH] [--document-root-is-pub DOCUMENT-ROOT-IS-PUB] [--backpressure-logger BACKPRESSURE-LOGGER] [--backpressure-logger-redis-server BACKPRESSURE-LOGGER-REDIS-SERVER] [--backpressure-logger-redis-port BACKPRESSURE-LOGGER-REDIS-PORT] [--backpressure-logger-redis-timeout BACKPRESSURE-LOGGER-REDIS-TIMEOUT] [--backpressure-logger-redis-persistent BACKPRESSURE-LOGGER-REDIS-PERSISTENT] [--backpressure-logger-redis-db BACKPRESSURE-LOGGER-REDIS-DB] [--backpressure-logger-redis-password BACKPRESSURE-LOGGER-REDIS-PASSWORD] [--backpressure-logger-redis-user BACKPRESSURE-LOGGER-REDIS-USER] [--backpressure-logger-id-prefix BACKPRESSURE-LOGGER-ID-PREFIX] [--magento-init-params MAGENTO-INIT-PARAMS]
 ```
 
 Creeert of wijzigt de plaatsingsconfiguratie
 
 ### Opties
 
-Voor globale opties, zie [&#x200B; Globale opties &#x200B;](#global-options).
+Voor globale opties, zie [ Globale opties ](#global-options).
 
 #### `--remote-storage-driver`
 
@@ -3249,6 +3342,48 @@ Moeten consumenten wachten op een bericht uit de wachtrij? 1 - Ja, 0 - Nee
 
 Standaardverbinding in wachtrij met berichten. Kan &#39;db&#39;, &#39;amqp&#39; of een aangepast wachtrijsysteem zijn.Het rijsysteem moet worden geïnstalleerd en gevormd, anders zullen de berichten niet correct worden verwerkt.
 
+- Vereist een waarde
+
+#### `--stomp-host`
+
+Stomp-serverhost
+
+- Standaard: &quot;
+- Vereist een waarde
+
+#### `--stomp-port`
+
+Stomp-serverpoort
+
+- Standaard: `61613`
+- Vereist een waarde
+
+#### `--stomp-user`
+
+Gebruikersnaam stempelserver
+
+- Standaard: &quot;
+- Vereist een waarde
+
+#### `--stomp-password`
+
+Wachtwoord Stomp-server
+
+- Standaard: &quot;
+- Vereist een waarde
+
+#### `--stomp-ssl`
+
+Stomp SSL
+
+- Standaard: &quot;
+- Vereist een waarde
+
+#### `--stomp-ssl-options`
+
+SSL-opties stempelen (JSON)
+
+- Standaard: &quot;
 - Vereist een waarde
 
 #### `--deferred-total-calculating`
@@ -3496,6 +3631,144 @@ Redis Sentinel verbindt opnieuw pogingen.
 
 - Vereist een waarde
 
+#### `--session-save-valkey-host`
+
+Volledig - gekwalificeerde gastheernaam, IP adres, of absolute weg als het gebruiken van de contactdozen van UNIX
+
+- Vereist een waarde
+
+#### `--session-save-valkey-port`
+
+Luisterpoort Valkey-server
+
+- Vereist een waarde
+
+#### `--session-save-valkey-password`
+
+Wachtwoord voor Valkey-server
+
+- Vereist een waarde
+
+#### `--session-save-valkey-timeout`
+
+Time-out verbinding, in seconden
+
+- Vereist een waarde
+
+#### `--session-save-valkey-retries`
+
+Opnieuw proberen van geldige verbinding.
+
+- Vereist een waarde
+
+#### `--session-save-valkey-persistent-id`
+
+Unieke tekenreeks om permanente verbindingen in te schakelen
+
+- Vereist een waarde
+
+#### `--session-save-valkey-db`
+
+Valkey-databasenummer
+
+- Vereist een waarde
+
+#### `--session-save-valkey-compression-threshold`
+
+Valkey-compressiedrempel
+
+- Vereist een waarde
+
+#### `--session-save-valkey-compression-lib`
+
+Valkey-compressiebibliotheek. Waarden: gzip (standaardwaarde), lzf, lz4, snappy
+
+- Vereist een waarde
+
+#### `--session-save-valkey-log-level`
+
+Logniveau valkey. Waarden: 0 (minst uitgebreid) tot 7 (meest uitgebreide)
+
+- Vereist een waarde
+
+#### `--session-save-valkey-max-concurrency`
+
+Maximum aantal processen dat op een slot op één zitting kan wachten
+
+- Vereist een waarde
+
+#### `--session-save-valkey-break-after-frontend`
+
+Aantal seconden dat moet worden gewacht voordat wordt geprobeerd een vergrendeling voor een frontendsessie te verbreken
+
+- Vereist een waarde
+
+#### `--session-save-valkey-break-after-adminhtml`
+
+Aantal seconden dat moet worden gewacht voordat wordt geprobeerd een vergrendeling voor beheersessie te verbreken
+
+- Vereist een waarde
+
+#### `--session-save-valkey-first-lifetime`
+
+Levensduur, in seconden, van sessie voor niet-bots bij eerste schrijven (gebruik 0 om uit te schakelen)
+
+- Vereist een waarde
+
+#### `--session-save-valkey-bot-first-lifetime`
+
+Levensduur, in seconden, van sessie voor bots bij de eerste schrijfbewerking (gebruik 0 om uit te schakelen)
+
+- Vereist een waarde
+
+#### `--session-save-valkey-bot-lifetime`
+
+De levensduur van de sessie voor bots bij volgende schrijvingen (gebruik 0 om uit te schakelen)
+
+- Vereist een waarde
+
+#### `--session-save-valkey-disable-locking`
+
+Valkey schakelt vergrendeling uit. Waarden: false (standaardwaarde), true
+
+- Vereist een waarde
+
+#### `--session-save-valkey-min-lifetime`
+
+Levensduur van geldige hoofdsessie, in seconden
+
+- Vereist een waarde
+
+#### `--session-save-valkey-max-lifetime`
+
+Maximale levensduur van Valkey-sessie, in seconden
+
+- Vereist een waarde
+
+#### `--session-save-valkey-sentinel-master`
+
+Valkey Sentinel, master
+
+- Vereist een waarde
+
+#### `--session-save-valkey-sentinel-servers`
+
+Valkey Sentinel-servers, gescheiden door komma&#39;s
+
+- Vereist een waarde
+
+#### `--session-save-valkey-sentinel-verify-master`
+
+Valkey Sentinel verifieert het origineel. Waarden: false (standaard), true
+
+- Vereist een waarde
+
+#### `--session-save-valkey-sentinel-connect-retries`
+
+Valkey Sentinel verbindt opnieuw probeert.
+
+- Vereist een waarde
+
 #### `--cache-backend`
 
 Standaardcachehandler
@@ -3538,6 +3811,12 @@ Compressiellib om [ snappy, lzf, l4z, zstd, gzip ] te gebruiken (verlaten leeg o
 
 - Vereist een waarde
 
+#### `--cache-backend-redis-serializer`
+
+Serializer voor gebruik (igbinary is 70% sneller, 58% kleiner dan PHP serialize)
+
+- Vereist een waarde
+
 #### `--cache-backend-redis-use-lua`
 
 Ingesteld op 1 om lua in te schakelen (standaardwaarde is 0, uitgeschakeld)
@@ -3545,6 +3824,60 @@ Ingesteld op 1 om lua in te schakelen (standaardwaarde is 0, uitgeschakeld)
 - Vereist een waarde
 
 #### `--cache-backend-redis-use-lua-on-gc`
+
+Ingesteld op 0 om lua uit te schakelen bij opschonen (standaard is 1, ingeschakeld)
+
+- Vereist een waarde
+
+#### `--cache-backend-valkey-server`
+
+Valkey-server
+
+- Vereist een waarde
+
+#### `--cache-backend-valkey-db`
+
+Databasenummer voor de cache
+
+- Vereist een waarde
+
+#### `--cache-backend-valkey-port`
+
+Luisterpoort Valkey-server
+
+- Vereist een waarde
+
+#### `--cache-backend-valkey-password`
+
+Wachtwoord voor Valkey-server
+
+- Vereist een waarde
+
+#### `--cache-backend-valkey-compress-data`
+
+Instellen op 0 om compressie uit te schakelen (standaard is 1, ingeschakeld)
+
+- Vereist een waarde
+
+#### `--cache-backend-valkey-compression-lib`
+
+Compressiellib om [ snappy, lzf, l4z, zstd, gzip ] te gebruiken (verlaten leeg om automatisch te bepalen)
+
+- Vereist een waarde
+
+#### `--cache-backend-valkey-serializer`
+
+Serializer voor gebruik (igbinary is 70% sneller, 58% kleiner dan PHP serialize)
+
+- Vereist een waarde
+
+#### `--cache-backend-valkey-use-lua`
+
+Ingesteld op 1 om lua in te schakelen (standaardwaarde is 0, uitgeschakeld)
+
+- Vereist een waarde
+
+#### `--cache-backend-valkey-use-lua-on-gc`
 
 Ingesteld op 0 om lua uit te schakelen bij opschonen (standaard is 1, ingeschakeld)
 
@@ -3605,9 +3938,57 @@ De bibliotheek van de compressie om [ snappy, lzf, l4z, zstd, gzip ] te gebruike
 
 - Vereist een waarde
 
+#### `--page-cache-redis-serializer`
+
+Serializer voor gebruik (igbinary is 70% sneller, 58% kleiner dan PHP serialize)
+
+- Vereist een waarde
+
 #### `--page-cache-id-prefix`
 
 ID-voorvoegsel voor cachesleutels
+
+- Vereist een waarde
+
+#### `--page-cache-valkey-server`
+
+Valkey-server
+
+- Vereist een waarde
+
+#### `--page-cache-valkey-db`
+
+Databasenummer voor de cache
+
+- Vereist een waarde
+
+#### `--page-cache-valkey-port`
+
+Luisterpoort Valkey-server
+
+- Vereist een waarde
+
+#### `--page-cache-valkey-password`
+
+Wachtwoord voor Valkey-server
+
+- Vereist een waarde
+
+#### `--page-cache-valkey-compress-data`
+
+Ingesteld op 1 om de cache van de volledige pagina te comprimeren (gebruik 0 om uit te schakelen)
+
+- Vereist een waarde
+
+#### `--page-cache-valkey-compression-lib`
+
+De bibliotheek van de compressie om [ snappy, lzf, l4z, zstd, gzip ] te gebruiken (verlaten leeg om automatisch te bepalen)
+
+- Vereist een waarde
+
+#### `--page-cache-valkey-serializer`
+
+Serializer voor gebruik (igbinary is 70% sneller, 58% kleiner dan PHP serialize)
 
 - Vereist een waarde
 
@@ -3718,7 +4099,7 @@ Hiermee installeert en verbetert u gegevens in de database
 
 ### Opties
 
-Voor globale opties, zie [&#x200B; Globale opties &#x200B;](#global-options).
+Voor globale opties, zie [ Globale opties ](#global-options).
 
 #### `--magento-init-params`
 
@@ -3752,7 +4133,7 @@ Patchnaam
 
 ### Opties
 
-Voor globale opties, zie [&#x200B; Globale opties &#x200B;](#global-options).
+Voor globale opties, zie [ Globale opties ](#global-options).
 
 #### `--revertable`
 
@@ -3779,7 +4160,7 @@ Een whitelist genereren van tabellen en kolommen die door het installatieprogram
 
 ### Opties
 
-Voor globale opties, zie [&#x200B; Globale opties &#x200B;](#global-options).
+Voor globale opties, zie [ Globale opties ](#global-options).
 
 #### `--module-name`
 
@@ -3799,7 +4180,7 @@ Aan een betalingsaanhalingsteken gerelateerde tabellen verplaatsen naar een apar
 
 ### Opties
 
-Voor globale opties, zie [&#x200B; Globale opties &#x200B;](#global-options).
+Voor globale opties, zie [ Globale opties ](#global-options).
 
 #### `--host`
 
@@ -3865,7 +4246,7 @@ Verplaats de aan uitchecken gerelateerde tabellen naar een aparte DB-server. Ver
 
 ### Opties
 
-Voor globale opties, zie [&#x200B; Globale opties &#x200B;](#global-options).
+Voor globale opties, zie [ Globale opties ](#global-options).
 
 #### `--host`
 
@@ -3922,7 +4303,7 @@ Verplaats verkoopgerelateerde tabellen naar een aparte DB-server. Vervangen vana
 
 ### Opties
 
-Voor globale opties, zie [&#x200B; Globale opties &#x200B;](#global-options).
+Voor globale opties, zie [ Globale opties ](#global-options).
 
 #### `--host`
 
@@ -3979,7 +4360,7 @@ Installeert en verbetert het schema van DB
 
 ### Opties
 
-Voor globale opties, zie [&#x200B; Globale opties &#x200B;](#global-options).
+Voor globale opties, zie [ Globale opties ](#global-options).
 
 #### `--convert-old-scripts`
 
@@ -4005,7 +4386,7 @@ Controleert of het schema of de gegevens van DB verbetering vereisen
 
 ### Opties
 
-Voor globale opties, zie [&#x200B; Globale opties &#x200B;](#global-options).
+Voor globale opties, zie [ Globale opties ](#global-options).
 
 #### `--magento-init-params`
 
@@ -4024,20 +4405,20 @@ Genereert DI-configuratie en alle ontbrekende klassen die automatisch kunnen wor
 
 ### Opties
 
-Voor globale opties, zie [&#x200B; Globale opties &#x200B;](#global-options).
+Voor globale opties, zie [ Globale opties ](#global-options).
 
 
 ## `setup:install`
 
 ```shell
-bin/magento setup:install [--remote-storage-driver REMOTE-STORAGE-DRIVER] [--remote-storage-prefix REMOTE-STORAGE-PREFIX] [--remote-storage-endpoint REMOTE-STORAGE-ENDPOINT] [--remote-storage-bucket REMOTE-STORAGE-BUCKET] [--remote-storage-region REMOTE-STORAGE-REGION] [--remote-storage-key REMOTE-STORAGE-KEY] [--remote-storage-secret REMOTE-STORAGE-SECRET] [--remote-storage-path-style REMOTE-STORAGE-PATH-STYLE] [--backend-frontname BACKEND-FRONTNAME] [--enable-debug-logging ENABLE-DEBUG-LOGGING] [--enable-syslog-logging ENABLE-SYSLOG-LOGGING] [--id_salt ID_SALT] [--checkout-async CHECKOUT-ASYNC] [--config-async CONFIG-ASYNC] [--amqp-host AMQP-HOST] [--amqp-port AMQP-PORT] [--amqp-user AMQP-USER] [--amqp-password AMQP-PASSWORD] [--amqp-virtualhost AMQP-VIRTUALHOST] [--amqp-ssl AMQP-SSL] [--amqp-ssl-options AMQP-SSL-OPTIONS] [--consumers-wait-for-messages CONSUMERS-WAIT-FOR-MESSAGES] [--queue-default-connection QUEUE-DEFAULT-CONNECTION] [--deferred-total-calculating DEFERRED-TOTAL-CALCULATING] [--key KEY] [--db-host DB-HOST] [--db-name DB-NAME] [--db-user DB-USER] [--db-engine DB-ENGINE] [--db-password DB-PASSWORD] [--db-prefix DB-PREFIX] [--db-model DB-MODEL] [--db-init-statements DB-INIT-STATEMENTS] [-s|--skip-db-validation] [--http-cache-hosts HTTP-CACHE-HOSTS] [--db-ssl-key DB-SSL-KEY] [--db-ssl-cert DB-SSL-CERT] [--db-ssl-ca DB-SSL-CA] [--db-ssl-verify] [--session-save SESSION-SAVE] [--session-save-redis-host SESSION-SAVE-REDIS-HOST] [--session-save-redis-port SESSION-SAVE-REDIS-PORT] [--session-save-redis-password SESSION-SAVE-REDIS-PASSWORD] [--session-save-redis-timeout SESSION-SAVE-REDIS-TIMEOUT] [--session-save-redis-retries SESSION-SAVE-REDIS-RETRIES] [--session-save-redis-persistent-id SESSION-SAVE-REDIS-PERSISTENT-ID] [--session-save-redis-db SESSION-SAVE-REDIS-DB] [--session-save-redis-compression-threshold SESSION-SAVE-REDIS-COMPRESSION-THRESHOLD] [--session-save-redis-compression-lib SESSION-SAVE-REDIS-COMPRESSION-LIB] [--session-save-redis-log-level SESSION-SAVE-REDIS-LOG-LEVEL] [--session-save-redis-max-concurrency SESSION-SAVE-REDIS-MAX-CONCURRENCY] [--session-save-redis-break-after-frontend SESSION-SAVE-REDIS-BREAK-AFTER-FRONTEND] [--session-save-redis-break-after-adminhtml SESSION-SAVE-REDIS-BREAK-AFTER-ADMINHTML] [--session-save-redis-first-lifetime SESSION-SAVE-REDIS-FIRST-LIFETIME] [--session-save-redis-bot-first-lifetime SESSION-SAVE-REDIS-BOT-FIRST-LIFETIME] [--session-save-redis-bot-lifetime SESSION-SAVE-REDIS-BOT-LIFETIME] [--session-save-redis-disable-locking SESSION-SAVE-REDIS-DISABLE-LOCKING] [--session-save-redis-min-lifetime SESSION-SAVE-REDIS-MIN-LIFETIME] [--session-save-redis-max-lifetime SESSION-SAVE-REDIS-MAX-LIFETIME] [--session-save-redis-sentinel-master SESSION-SAVE-REDIS-SENTINEL-MASTER] [--session-save-redis-sentinel-servers SESSION-SAVE-REDIS-SENTINEL-SERVERS] [--session-save-redis-sentinel-verify-master SESSION-SAVE-REDIS-SENTINEL-VERIFY-MASTER] [--session-save-redis-sentinel-connect-retries SESSION-SAVE-REDIS-SENTINEL-CONNECT-RETRIES] [--cache-backend CACHE-BACKEND] [--cache-backend-redis-server CACHE-BACKEND-REDIS-SERVER] [--cache-backend-redis-db CACHE-BACKEND-REDIS-DB] [--cache-backend-redis-port CACHE-BACKEND-REDIS-PORT] [--cache-backend-redis-password CACHE-BACKEND-REDIS-PASSWORD] [--cache-backend-redis-compress-data CACHE-BACKEND-REDIS-COMPRESS-DATA] [--cache-backend-redis-compression-lib CACHE-BACKEND-REDIS-COMPRESSION-LIB] [--cache-backend-redis-use-lua CACHE-BACKEND-REDIS-USE-LUA] [--cache-backend-redis-use-lua-on-gc CACHE-BACKEND-REDIS-USE-LUA-ON-GC] [--cache-id-prefix CACHE-ID-PREFIX] [--allow-parallel-generation] [--page-cache PAGE-CACHE] [--page-cache-redis-server PAGE-CACHE-REDIS-SERVER] [--page-cache-redis-db PAGE-CACHE-REDIS-DB] [--page-cache-redis-port PAGE-CACHE-REDIS-PORT] [--page-cache-redis-password PAGE-CACHE-REDIS-PASSWORD] [--page-cache-redis-compress-data PAGE-CACHE-REDIS-COMPRESS-DATA] [--page-cache-redis-compression-lib PAGE-CACHE-REDIS-COMPRESSION-LIB] [--page-cache-id-prefix PAGE-CACHE-ID-PREFIX] [--lock-provider LOCK-PROVIDER] [--lock-db-prefix LOCK-DB-PREFIX] [--lock-zookeeper-host LOCK-ZOOKEEPER-HOST] [--lock-zookeeper-path LOCK-ZOOKEEPER-PATH] [--lock-file-path LOCK-FILE-PATH] [--document-root-is-pub DOCUMENT-ROOT-IS-PUB] [--backpressure-logger BACKPRESSURE-LOGGER] [--backpressure-logger-redis-server BACKPRESSURE-LOGGER-REDIS-SERVER] [--backpressure-logger-redis-port BACKPRESSURE-LOGGER-REDIS-PORT] [--backpressure-logger-redis-timeout BACKPRESSURE-LOGGER-REDIS-TIMEOUT] [--backpressure-logger-redis-persistent BACKPRESSURE-LOGGER-REDIS-PERSISTENT] [--backpressure-logger-redis-db BACKPRESSURE-LOGGER-REDIS-DB] [--backpressure-logger-redis-password BACKPRESSURE-LOGGER-REDIS-PASSWORD] [--backpressure-logger-redis-user BACKPRESSURE-LOGGER-REDIS-USER] [--backpressure-logger-id-prefix BACKPRESSURE-LOGGER-ID-PREFIX] [--base-url BASE-URL] [--language LANGUAGE] [--timezone TIMEZONE] [--currency CURRENCY] [--use-rewrites USE-REWRITES] [--use-secure USE-SECURE] [--base-url-secure BASE-URL-SECURE] [--use-secure-admin USE-SECURE-ADMIN] [--admin-use-security-key ADMIN-USE-SECURITY-KEY] [--admin-user [ADMIN-USER]] [--admin-password [ADMIN-PASSWORD]] [--admin-email [ADMIN-EMAIL]] [--admin-firstname [ADMIN-FIRSTNAME]] [--admin-lastname [ADMIN-LASTNAME]] [--search-engine SEARCH-ENGINE] [--elasticsearch-host ELASTICSEARCH-HOST] [--elasticsearch-port ELASTICSEARCH-PORT] [--elasticsearch-enable-auth ELASTICSEARCH-ENABLE-AUTH] [--elasticsearch-username ELASTICSEARCH-USERNAME] [--elasticsearch-password ELASTICSEARCH-PASSWORD] [--elasticsearch-index-prefix ELASTICSEARCH-INDEX-PREFIX] [--elasticsearch-timeout ELASTICSEARCH-TIMEOUT] [--opensearch-host OPENSEARCH-HOST] [--opensearch-port OPENSEARCH-PORT] [--opensearch-enable-auth OPENSEARCH-ENABLE-AUTH] [--opensearch-username OPENSEARCH-USERNAME] [--opensearch-password OPENSEARCH-PASSWORD] [--opensearch-index-prefix OPENSEARCH-INDEX-PREFIX] [--opensearch-timeout OPENSEARCH-TIMEOUT] [--cleanup-database] [--sales-order-increment-prefix SALES-ORDER-INCREMENT-PREFIX] [--use-sample-data] [--enable-modules [ENABLE-MODULES]] [--disable-modules [DISABLE-MODULES]] [--convert-old-scripts [CONVERT-OLD-SCRIPTS]] [-i|--interactive] [--safe-mode [SAFE-MODE]] [--data-restore [DATA-RESTORE]] [--dry-run [DRY-RUN]] [--magento-init-params MAGENTO-INIT-PARAMS]
+bin/magento setup:install [--remote-storage-driver REMOTE-STORAGE-DRIVER] [--remote-storage-prefix REMOTE-STORAGE-PREFIX] [--remote-storage-endpoint REMOTE-STORAGE-ENDPOINT] [--remote-storage-bucket REMOTE-STORAGE-BUCKET] [--remote-storage-region REMOTE-STORAGE-REGION] [--remote-storage-key REMOTE-STORAGE-KEY] [--remote-storage-secret REMOTE-STORAGE-SECRET] [--remote-storage-path-style REMOTE-STORAGE-PATH-STYLE] [--backend-frontname BACKEND-FRONTNAME] [--enable-debug-logging ENABLE-DEBUG-LOGGING] [--enable-syslog-logging ENABLE-SYSLOG-LOGGING] [--id_salt ID_SALT] [--checkout-async CHECKOUT-ASYNC] [--config-async CONFIG-ASYNC] [--amqp-host AMQP-HOST] [--amqp-port AMQP-PORT] [--amqp-user AMQP-USER] [--amqp-password AMQP-PASSWORD] [--amqp-virtualhost AMQP-VIRTUALHOST] [--amqp-ssl AMQP-SSL] [--amqp-ssl-options AMQP-SSL-OPTIONS] [--consumers-wait-for-messages CONSUMERS-WAIT-FOR-MESSAGES] [--queue-default-connection QUEUE-DEFAULT-CONNECTION] [--stomp-host STOMP-HOST] [--stomp-port STOMP-PORT] [--stomp-user STOMP-USER] [--stomp-password STOMP-PASSWORD] [--stomp-ssl STOMP-SSL] [--stomp-ssl-options STOMP-SSL-OPTIONS] [--deferred-total-calculating DEFERRED-TOTAL-CALCULATING] [--key KEY] [--db-host DB-HOST] [--db-name DB-NAME] [--db-user DB-USER] [--db-engine DB-ENGINE] [--db-password DB-PASSWORD] [--db-prefix DB-PREFIX] [--db-model DB-MODEL] [--db-init-statements DB-INIT-STATEMENTS] [-s|--skip-db-validation] [--http-cache-hosts HTTP-CACHE-HOSTS] [--db-ssl-key DB-SSL-KEY] [--db-ssl-cert DB-SSL-CERT] [--db-ssl-ca DB-SSL-CA] [--db-ssl-verify] [--session-save SESSION-SAVE] [--session-save-redis-host SESSION-SAVE-REDIS-HOST] [--session-save-redis-port SESSION-SAVE-REDIS-PORT] [--session-save-redis-password SESSION-SAVE-REDIS-PASSWORD] [--session-save-redis-timeout SESSION-SAVE-REDIS-TIMEOUT] [--session-save-redis-retries SESSION-SAVE-REDIS-RETRIES] [--session-save-redis-persistent-id SESSION-SAVE-REDIS-PERSISTENT-ID] [--session-save-redis-db SESSION-SAVE-REDIS-DB] [--session-save-redis-compression-threshold SESSION-SAVE-REDIS-COMPRESSION-THRESHOLD] [--session-save-redis-compression-lib SESSION-SAVE-REDIS-COMPRESSION-LIB] [--session-save-redis-log-level SESSION-SAVE-REDIS-LOG-LEVEL] [--session-save-redis-max-concurrency SESSION-SAVE-REDIS-MAX-CONCURRENCY] [--session-save-redis-break-after-frontend SESSION-SAVE-REDIS-BREAK-AFTER-FRONTEND] [--session-save-redis-break-after-adminhtml SESSION-SAVE-REDIS-BREAK-AFTER-ADMINHTML] [--session-save-redis-first-lifetime SESSION-SAVE-REDIS-FIRST-LIFETIME] [--session-save-redis-bot-first-lifetime SESSION-SAVE-REDIS-BOT-FIRST-LIFETIME] [--session-save-redis-bot-lifetime SESSION-SAVE-REDIS-BOT-LIFETIME] [--session-save-redis-disable-locking SESSION-SAVE-REDIS-DISABLE-LOCKING] [--session-save-redis-min-lifetime SESSION-SAVE-REDIS-MIN-LIFETIME] [--session-save-redis-max-lifetime SESSION-SAVE-REDIS-MAX-LIFETIME] [--session-save-redis-sentinel-master SESSION-SAVE-REDIS-SENTINEL-MASTER] [--session-save-redis-sentinel-servers SESSION-SAVE-REDIS-SENTINEL-SERVERS] [--session-save-redis-sentinel-verify-master SESSION-SAVE-REDIS-SENTINEL-VERIFY-MASTER] [--session-save-redis-sentinel-connect-retries SESSION-SAVE-REDIS-SENTINEL-CONNECT-RETRIES] [--session-save-valkey-host SESSION-SAVE-VALKEY-HOST] [--session-save-valkey-port SESSION-SAVE-VALKEY-PORT] [--session-save-valkey-password SESSION-SAVE-VALKEY-PASSWORD] [--session-save-valkey-timeout SESSION-SAVE-VALKEY-TIMEOUT] [--session-save-valkey-retries SESSION-SAVE-VALKEY-RETRIES] [--session-save-valkey-persistent-id SESSION-SAVE-VALKEY-PERSISTENT-ID] [--session-save-valkey-db SESSION-SAVE-VALKEY-DB] [--session-save-valkey-compression-threshold SESSION-SAVE-VALKEY-COMPRESSION-THRESHOLD] [--session-save-valkey-compression-lib SESSION-SAVE-VALKEY-COMPRESSION-LIB] [--session-save-valkey-log-level SESSION-SAVE-VALKEY-LOG-LEVEL] [--session-save-valkey-max-concurrency SESSION-SAVE-VALKEY-MAX-CONCURRENCY] [--session-save-valkey-break-after-frontend SESSION-SAVE-VALKEY-BREAK-AFTER-FRONTEND] [--session-save-valkey-break-after-adminhtml SESSION-SAVE-VALKEY-BREAK-AFTER-ADMINHTML] [--session-save-valkey-first-lifetime SESSION-SAVE-VALKEY-FIRST-LIFETIME] [--session-save-valkey-bot-first-lifetime SESSION-SAVE-VALKEY-BOT-FIRST-LIFETIME] [--session-save-valkey-bot-lifetime SESSION-SAVE-VALKEY-BOT-LIFETIME] [--session-save-valkey-disable-locking SESSION-SAVE-VALKEY-DISABLE-LOCKING] [--session-save-valkey-min-lifetime SESSION-SAVE-VALKEY-MIN-LIFETIME] [--session-save-valkey-max-lifetime SESSION-SAVE-VALKEY-MAX-LIFETIME] [--session-save-valkey-sentinel-master SESSION-SAVE-VALKEY-SENTINEL-MASTER] [--session-save-valkey-sentinel-servers SESSION-SAVE-VALKEY-SENTINEL-SERVERS] [--session-save-valkey-sentinel-verify-master SESSION-SAVE-VALKEY-SENTINEL-VERIFY-MASTER] [--session-save-valkey-sentinel-connect-retries SESSION-SAVE-VALKEY-SENTINEL-CONNECT-RETRIES] [--cache-backend CACHE-BACKEND] [--cache-backend-redis-server CACHE-BACKEND-REDIS-SERVER] [--cache-backend-redis-db CACHE-BACKEND-REDIS-DB] [--cache-backend-redis-port CACHE-BACKEND-REDIS-PORT] [--cache-backend-redis-password CACHE-BACKEND-REDIS-PASSWORD] [--cache-backend-redis-compress-data CACHE-BACKEND-REDIS-COMPRESS-DATA] [--cache-backend-redis-compression-lib CACHE-BACKEND-REDIS-COMPRESSION-LIB] [--cache-backend-redis-serializer CACHE-BACKEND-REDIS-SERIALIZER] [--cache-backend-redis-use-lua CACHE-BACKEND-REDIS-USE-LUA] [--cache-backend-redis-use-lua-on-gc CACHE-BACKEND-REDIS-USE-LUA-ON-GC] [--cache-backend-valkey-server CACHE-BACKEND-VALKEY-SERVER] [--cache-backend-valkey-db CACHE-BACKEND-VALKEY-DB] [--cache-backend-valkey-port CACHE-BACKEND-VALKEY-PORT] [--cache-backend-valkey-password CACHE-BACKEND-VALKEY-PASSWORD] [--cache-backend-valkey-compress-data CACHE-BACKEND-VALKEY-COMPRESS-DATA] [--cache-backend-valkey-compression-lib CACHE-BACKEND-VALKEY-COMPRESSION-LIB] [--cache-backend-valkey-serializer CACHE-BACKEND-VALKEY-SERIALIZER] [--cache-backend-valkey-use-lua CACHE-BACKEND-VALKEY-USE-LUA] [--cache-backend-valkey-use-lua-on-gc CACHE-BACKEND-VALKEY-USE-LUA-ON-GC] [--cache-id-prefix CACHE-ID-PREFIX] [--allow-parallel-generation] [--page-cache PAGE-CACHE] [--page-cache-redis-server PAGE-CACHE-REDIS-SERVER] [--page-cache-redis-db PAGE-CACHE-REDIS-DB] [--page-cache-redis-port PAGE-CACHE-REDIS-PORT] [--page-cache-redis-password PAGE-CACHE-REDIS-PASSWORD] [--page-cache-redis-compress-data PAGE-CACHE-REDIS-COMPRESS-DATA] [--page-cache-redis-compression-lib PAGE-CACHE-REDIS-COMPRESSION-LIB] [--page-cache-redis-serializer PAGE-CACHE-REDIS-SERIALIZER] [--page-cache-id-prefix PAGE-CACHE-ID-PREFIX] [--page-cache-valkey-server PAGE-CACHE-VALKEY-SERVER] [--page-cache-valkey-db PAGE-CACHE-VALKEY-DB] [--page-cache-valkey-port PAGE-CACHE-VALKEY-PORT] [--page-cache-valkey-password PAGE-CACHE-VALKEY-PASSWORD] [--page-cache-valkey-compress-data PAGE-CACHE-VALKEY-COMPRESS-DATA] [--page-cache-valkey-compression-lib PAGE-CACHE-VALKEY-COMPRESSION-LIB] [--page-cache-valkey-serializer PAGE-CACHE-VALKEY-SERIALIZER] [--lock-provider LOCK-PROVIDER] [--lock-db-prefix LOCK-DB-PREFIX] [--lock-zookeeper-host LOCK-ZOOKEEPER-HOST] [--lock-zookeeper-path LOCK-ZOOKEEPER-PATH] [--lock-file-path LOCK-FILE-PATH] [--document-root-is-pub DOCUMENT-ROOT-IS-PUB] [--backpressure-logger BACKPRESSURE-LOGGER] [--backpressure-logger-redis-server BACKPRESSURE-LOGGER-REDIS-SERVER] [--backpressure-logger-redis-port BACKPRESSURE-LOGGER-REDIS-PORT] [--backpressure-logger-redis-timeout BACKPRESSURE-LOGGER-REDIS-TIMEOUT] [--backpressure-logger-redis-persistent BACKPRESSURE-LOGGER-REDIS-PERSISTENT] [--backpressure-logger-redis-db BACKPRESSURE-LOGGER-REDIS-DB] [--backpressure-logger-redis-password BACKPRESSURE-LOGGER-REDIS-PASSWORD] [--backpressure-logger-redis-user BACKPRESSURE-LOGGER-REDIS-USER] [--backpressure-logger-id-prefix BACKPRESSURE-LOGGER-ID-PREFIX] [--base-url BASE-URL] [--language LANGUAGE] [--timezone TIMEZONE] [--currency CURRENCY] [--use-rewrites USE-REWRITES] [--use-secure USE-SECURE] [--base-url-secure BASE-URL-SECURE] [--use-secure-admin USE-SECURE-ADMIN] [--admin-use-security-key ADMIN-USE-SECURITY-KEY] [--admin-user [ADMIN-USER]] [--admin-password [ADMIN-PASSWORD]] [--admin-email [ADMIN-EMAIL]] [--admin-firstname [ADMIN-FIRSTNAME]] [--admin-lastname [ADMIN-LASTNAME]] [--search-engine SEARCH-ENGINE] [--elasticsearch-host ELASTICSEARCH-HOST] [--elasticsearch-port ELASTICSEARCH-PORT] [--elasticsearch-enable-auth ELASTICSEARCH-ENABLE-AUTH] [--elasticsearch-username ELASTICSEARCH-USERNAME] [--elasticsearch-password ELASTICSEARCH-PASSWORD] [--elasticsearch-index-prefix ELASTICSEARCH-INDEX-PREFIX] [--elasticsearch-timeout ELASTICSEARCH-TIMEOUT] [--opensearch-host OPENSEARCH-HOST] [--opensearch-port OPENSEARCH-PORT] [--opensearch-enable-auth OPENSEARCH-ENABLE-AUTH] [--opensearch-username OPENSEARCH-USERNAME] [--opensearch-password OPENSEARCH-PASSWORD] [--opensearch-index-prefix OPENSEARCH-INDEX-PREFIX] [--opensearch-timeout OPENSEARCH-TIMEOUT] [--cleanup-database] [--sales-order-increment-prefix SALES-ORDER-INCREMENT-PREFIX] [--use-sample-data] [--enable-modules [ENABLE-MODULES]] [--disable-modules [DISABLE-MODULES]] [--convert-old-scripts [CONVERT-OLD-SCRIPTS]] [-i|--interactive] [--safe-mode [SAFE-MODE]] [--data-restore [DATA-RESTORE]] [--dry-run [DRY-RUN]] [--magento-init-params MAGENTO-INIT-PARAMS]
 ```
 
 De Magento-toepassing installeren
 
 ### Opties
 
-Voor globale opties, zie [&#x200B; Globale opties &#x200B;](#global-options).
+Voor globale opties, zie [ Globale opties ](#global-options).
 
 #### `--remote-storage-driver`
 
@@ -4186,6 +4567,48 @@ Moeten consumenten wachten op een bericht uit de wachtrij? 1 - Ja, 0 - Nee
 
 Standaardverbinding in wachtrij met berichten. Kan &#39;db&#39;, &#39;amqp&#39; of een aangepast wachtrijsysteem zijn.Het rijsysteem moet worden geïnstalleerd en gevormd, anders zullen de berichten niet correct worden verwerkt.
 
+- Vereist een waarde
+
+#### `--stomp-host`
+
+Stomp-serverhost
+
+- Standaard: &quot;
+- Vereist een waarde
+
+#### `--stomp-port`
+
+Stomp-serverpoort
+
+- Standaard: `61613`
+- Vereist een waarde
+
+#### `--stomp-user`
+
+Gebruikersnaam stempelserver
+
+- Standaard: &quot;
+- Vereist een waarde
+
+#### `--stomp-password`
+
+Wachtwoord Stomp-server
+
+- Standaard: &quot;
+- Vereist een waarde
+
+#### `--stomp-ssl`
+
+Stomp SSL
+
+- Standaard: &quot;
+- Vereist een waarde
+
+#### `--stomp-ssl-options`
+
+SSL-opties stempelen (JSON)
+
+- Standaard: &quot;
 - Vereist een waarde
 
 #### `--deferred-total-calculating`
@@ -4433,6 +4856,144 @@ Redis Sentinel verbindt opnieuw pogingen.
 
 - Vereist een waarde
 
+#### `--session-save-valkey-host`
+
+Volledig - gekwalificeerde gastheernaam, IP adres, of absolute weg als het gebruiken van de contactdozen van UNIX
+
+- Vereist een waarde
+
+#### `--session-save-valkey-port`
+
+Luisterpoort Valkey-server
+
+- Vereist een waarde
+
+#### `--session-save-valkey-password`
+
+Wachtwoord voor Valkey-server
+
+- Vereist een waarde
+
+#### `--session-save-valkey-timeout`
+
+Time-out verbinding, in seconden
+
+- Vereist een waarde
+
+#### `--session-save-valkey-retries`
+
+Opnieuw proberen van geldige verbinding.
+
+- Vereist een waarde
+
+#### `--session-save-valkey-persistent-id`
+
+Unieke tekenreeks om permanente verbindingen in te schakelen
+
+- Vereist een waarde
+
+#### `--session-save-valkey-db`
+
+Valkey-databasenummer
+
+- Vereist een waarde
+
+#### `--session-save-valkey-compression-threshold`
+
+Valkey-compressiedrempel
+
+- Vereist een waarde
+
+#### `--session-save-valkey-compression-lib`
+
+Valkey-compressiebibliotheek. Waarden: gzip (standaardwaarde), lzf, lz4, snappy
+
+- Vereist een waarde
+
+#### `--session-save-valkey-log-level`
+
+Logniveau valkey. Waarden: 0 (minst uitgebreid) tot 7 (meest uitgebreide)
+
+- Vereist een waarde
+
+#### `--session-save-valkey-max-concurrency`
+
+Maximum aantal processen dat op een slot op één zitting kan wachten
+
+- Vereist een waarde
+
+#### `--session-save-valkey-break-after-frontend`
+
+Aantal seconden dat moet worden gewacht voordat wordt geprobeerd een vergrendeling voor een frontendsessie te verbreken
+
+- Vereist een waarde
+
+#### `--session-save-valkey-break-after-adminhtml`
+
+Aantal seconden dat moet worden gewacht voordat wordt geprobeerd een vergrendeling voor beheersessie te verbreken
+
+- Vereist een waarde
+
+#### `--session-save-valkey-first-lifetime`
+
+Levensduur, in seconden, van sessie voor niet-bots bij eerste schrijven (gebruik 0 om uit te schakelen)
+
+- Vereist een waarde
+
+#### `--session-save-valkey-bot-first-lifetime`
+
+Levensduur, in seconden, van sessie voor bots bij de eerste schrijfbewerking (gebruik 0 om uit te schakelen)
+
+- Vereist een waarde
+
+#### `--session-save-valkey-bot-lifetime`
+
+De levensduur van de sessie voor bots bij volgende schrijvingen (gebruik 0 om uit te schakelen)
+
+- Vereist een waarde
+
+#### `--session-save-valkey-disable-locking`
+
+Valkey schakelt vergrendeling uit. Waarden: false (standaardwaarde), true
+
+- Vereist een waarde
+
+#### `--session-save-valkey-min-lifetime`
+
+Levensduur van geldige hoofdsessie, in seconden
+
+- Vereist een waarde
+
+#### `--session-save-valkey-max-lifetime`
+
+Maximale levensduur van Valkey-sessie, in seconden
+
+- Vereist een waarde
+
+#### `--session-save-valkey-sentinel-master`
+
+Valkey Sentinel, master
+
+- Vereist een waarde
+
+#### `--session-save-valkey-sentinel-servers`
+
+Valkey Sentinel-servers, gescheiden door komma&#39;s
+
+- Vereist een waarde
+
+#### `--session-save-valkey-sentinel-verify-master`
+
+Valkey Sentinel verifieert het origineel. Waarden: false (standaard), true
+
+- Vereist een waarde
+
+#### `--session-save-valkey-sentinel-connect-retries`
+
+Valkey Sentinel verbindt opnieuw probeert.
+
+- Vereist een waarde
+
 #### `--cache-backend`
 
 Standaardcachehandler
@@ -4475,6 +5036,12 @@ Compressiellib om [ snappy, lzf, l4z, zstd, gzip ] te gebruiken (verlaten leeg o
 
 - Vereist een waarde
 
+#### `--cache-backend-redis-serializer`
+
+Serializer voor gebruik (igbinary is 70% sneller, 58% kleiner dan PHP serialize)
+
+- Vereist een waarde
+
 #### `--cache-backend-redis-use-lua`
 
 Ingesteld op 1 om lua in te schakelen (standaardwaarde is 0, uitgeschakeld)
@@ -4482,6 +5049,60 @@ Ingesteld op 1 om lua in te schakelen (standaardwaarde is 0, uitgeschakeld)
 - Vereist een waarde
 
 #### `--cache-backend-redis-use-lua-on-gc`
+
+Ingesteld op 0 om lua uit te schakelen bij opschonen (standaard is 1, ingeschakeld)
+
+- Vereist een waarde
+
+#### `--cache-backend-valkey-server`
+
+Valkey-server
+
+- Vereist een waarde
+
+#### `--cache-backend-valkey-db`
+
+Databasenummer voor de cache
+
+- Vereist een waarde
+
+#### `--cache-backend-valkey-port`
+
+Luisterpoort Valkey-server
+
+- Vereist een waarde
+
+#### `--cache-backend-valkey-password`
+
+Wachtwoord voor Valkey-server
+
+- Vereist een waarde
+
+#### `--cache-backend-valkey-compress-data`
+
+Instellen op 0 om compressie uit te schakelen (standaard is 1, ingeschakeld)
+
+- Vereist een waarde
+
+#### `--cache-backend-valkey-compression-lib`
+
+Compressiellib om [ snappy, lzf, l4z, zstd, gzip ] te gebruiken (verlaten leeg om automatisch te bepalen)
+
+- Vereist een waarde
+
+#### `--cache-backend-valkey-serializer`
+
+Serializer voor gebruik (igbinary is 70% sneller, 58% kleiner dan PHP serialize)
+
+- Vereist een waarde
+
+#### `--cache-backend-valkey-use-lua`
+
+Ingesteld op 1 om lua in te schakelen (standaardwaarde is 0, uitgeschakeld)
+
+- Vereist een waarde
+
+#### `--cache-backend-valkey-use-lua-on-gc`
 
 Ingesteld op 0 om lua uit te schakelen bij opschonen (standaard is 1, ingeschakeld)
 
@@ -4542,9 +5163,57 @@ De bibliotheek van de compressie om [ snappy, lzf, l4z, zstd, gzip ] te gebruike
 
 - Vereist een waarde
 
+#### `--page-cache-redis-serializer`
+
+Serializer voor gebruik (igbinary is 70% sneller, 58% kleiner dan PHP serialize)
+
+- Vereist een waarde
+
 #### `--page-cache-id-prefix`
 
 ID-voorvoegsel voor cachesleutels
+
+- Vereist een waarde
+
+#### `--page-cache-valkey-server`
+
+Valkey-server
+
+- Vereist een waarde
+
+#### `--page-cache-valkey-db`
+
+Databasenummer voor de cache
+
+- Vereist een waarde
+
+#### `--page-cache-valkey-port`
+
+Luisterpoort Valkey-server
+
+- Vereist een waarde
+
+#### `--page-cache-valkey-password`
+
+Wachtwoord voor Valkey-server
+
+- Vereist een waarde
+
+#### `--page-cache-valkey-compress-data`
+
+Ingesteld op 1 om de cache van de volledige pagina te comprimeren (gebruik 0 om uit te schakelen)
+
+- Vereist een waarde
+
+#### `--page-cache-valkey-compression-lib`
+
+De bibliotheek van de compressie om [ snappy, lzf, l4z, zstd, gzip ] te gebruiken (verlaten leeg om automatisch te bepalen)
+
+- Vereist een waarde
+
+#### `--page-cache-valkey-serializer`
+
+Serializer voor gebruik (igbinary is 70% sneller, 58% kleiner dan PHP serialize)
 
 - Vereist een waarde
 
@@ -4902,7 +5571,7 @@ Pad naar profielconfiguratiebestand
 
 ### Opties
 
-Voor globale opties, zie [&#x200B; Globale opties &#x200B;](#global-options).
+Voor globale opties, zie [ Globale opties ](#global-options).
 
 #### `--skip-reindex`, `-s`
 
@@ -4922,7 +5591,7 @@ Hiermee wordt de Magento Application-codebase, -media en -database teruggedraaid
 
 ### Opties
 
-Voor globale opties, zie [&#x200B; Globale opties &#x200B;](#global-options).
+Voor globale opties, zie [ Globale opties ](#global-options).
 
 #### `--code-file`, `-c`
 
@@ -4968,7 +5637,7 @@ Lijst met door spaties gescheiden ISO-639-taalcodes waarvoor statische weergaveb
 
 ### Opties
 
-Voor globale opties, zie [&#x200B; Globale opties &#x200B;](#global-options).
+Voor globale opties, zie [ Globale opties ](#global-options).
 
 #### `--force`, `-f`
 
@@ -5141,7 +5810,7 @@ Installeert de opslagconfiguratie. Vervangen vanaf 2.2.0. In plaats hiervan conf
 
 ### Opties
 
-Voor globale opties, zie [&#x200B; Globale opties &#x200B;](#global-options).
+Voor globale opties, zie [ Globale opties ](#global-options).
 
 #### `--base-url`
 
@@ -5214,7 +5883,7 @@ De Magento-toepassing wordt verwijderd
 
 ### Opties
 
-Voor globale opties, zie [&#x200B; Globale opties &#x200B;](#global-options).
+Voor globale opties, zie [ Globale opties ](#global-options).
 
 #### `--magento-init-params`
 
@@ -5233,7 +5902,7 @@ Hiermee worden de Magento-toepassing, DB-gegevens en het schema bijgewerkt
 
 ### Opties
 
-Voor globale opties, zie [&#x200B; Globale opties &#x200B;](#global-options).
+Voor globale opties, zie [ Globale opties ](#global-options).
 
 #### `--keep-generated`
 
@@ -5285,7 +5954,7 @@ Hiermee wordt de lijst met winkels weergegeven
 
 ### Opties
 
-Voor globale opties, zie [&#x200B; Globale opties &#x200B;](#global-options).
+Voor globale opties, zie [ Globale opties ](#global-options).
 
 
 ## `store:website:list`
@@ -5298,7 +5967,7 @@ De lijst met websites weergeven
 
 ### Opties
 
-Voor globale opties, zie [&#x200B; Globale opties &#x200B;](#global-options).
+Voor globale opties, zie [ Globale opties ](#global-options).
 
 
 ## `support:backup:code`
@@ -5311,7 +5980,7 @@ Codeback-up maken
 
 ### Opties
 
-Voor globale opties, zie [&#x200B; Globale opties &#x200B;](#global-options).
+Voor globale opties, zie [ Globale opties ](#global-options).
 
 #### `--name`
 
@@ -5343,7 +6012,7 @@ DB-back-up maken
 
 ### Opties
 
-Voor globale opties, zie [&#x200B; Globale opties &#x200B;](#global-options).
+Voor globale opties, zie [ Globale opties ](#global-options).
 
 #### `--name`
 
@@ -5382,7 +6051,7 @@ Vereiste back-uphulpprogramma&#39;s controleren
 
 ### Opties
 
-Voor globale opties, zie [&#x200B; Globale opties &#x200B;](#global-options).
+Voor globale opties, zie [ Globale opties ](#global-options).
 
 #### `--hide-paths`
 
@@ -5402,7 +6071,7 @@ Lijst met paden voor hulpprogramma&#39;s maken
 
 ### Opties
 
-Voor globale opties, zie [&#x200B; Globale opties &#x200B;](#global-options).
+Voor globale opties, zie [ Globale opties ](#global-options).
 
 #### `--force`, `-f`
 
@@ -5433,7 +6102,7 @@ Pad van het thema. Het themapad moet worden opgegeven als een volledig pad dat g
 
 ### Opties
 
-Voor globale opties, zie [&#x200B; Globale opties &#x200B;](#global-options).
+Voor globale opties, zie [ Globale opties ](#global-options).
 
 #### `--backup-code`
 
@@ -5460,7 +6129,7 @@ Genereert Varnish VCL en echo het aan de bevellijn
 
 ### Opties
 
-Voor globale opties, zie [&#x200B; Globale opties &#x200B;](#global-options).
+Voor globale opties, zie [ Globale opties ](#global-options).
 
 #### `--access-list`
 
@@ -5535,7 +6204,7 @@ De payload van de webhaak in JSON-indeling
 
 ### Opties
 
-Voor globale opties, zie [&#x200B; Globale opties &#x200B;](#global-options).
+Voor globale opties, zie [ Globale opties ](#global-options).
 
 
 ## `webhooks:generate:module`
@@ -5548,7 +6217,7 @@ Insteekmodules genereren op basis van webharegistraties
 
 ### Opties
 
-Voor globale opties, zie [&#x200B; Globale opties &#x200B;](#global-options).
+Voor globale opties, zie [ Globale opties ](#global-options).
 
 
 ## `webhooks:info`
@@ -5576,7 +6245,7 @@ Het type Webhaak (voor, na)
 
 ### Opties
 
-Voor globale opties, zie [&#x200B; Globale opties &#x200B;](#global-options).
+Voor globale opties, zie [ Globale opties ](#global-options).
 
 #### `--depth`
 
@@ -5596,7 +6265,7 @@ Lijst met geabonneerde websites weergeven
 
 ### Opties
 
-Voor globale opties, zie [&#x200B; Globale opties &#x200B;](#global-options).
+Voor globale opties, zie [ Globale opties ](#global-options).
 
 
 ## `webhooks:list:all`
@@ -5617,4 +6286,4 @@ Modulenaam
 
 ### Opties
 
-Voor globale opties, zie [&#x200B; Globale opties &#x200B;](#global-options).
+Voor globale opties, zie [ Globale opties ](#global-options).

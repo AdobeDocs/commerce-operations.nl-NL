@@ -1,18 +1,18 @@
 ---
-title: Valkey configureren
-description: Leer hoe u valkey-caching configureert voor optimalisatie van Adobe Commerce-prestaties. Ontdek eigenschappen, opstellingsstappen, en configuratie beste praktijken.
+title: Valkey installeren en instellen
+description: Leer Valkey installeren en configureren voor caching en sessieopslag met Adobe Commerce. Ontdek opties voor optimalisatie en prestaties afstemmen.
 feature: Configuration, Cache
 exl-id: 12dbc171-3df6-4413-869b-a3450b5647b4
-source-git-commit: 10f324478e9a5e80fc4d28ce680929687291e990
+source-git-commit: de613310ad701dd594a6ee8fcd973aa2c3769870
 workflow-type: tm+mt
-source-wordcount: '349'
+source-wordcount: '395'
 ht-degree: 0%
 
 ---
 
-# Valkey configureren
+# Valkey installeren en instellen
 
-Voorbeelden van geldige functies zijn:
+Valkey is een opensource, Redis-compatibele gegevensopslag in het geheugen die als cacheback en voor sessieopslag kan worden gebruikt. Belangrijkste kenmerken zijn:
 
 - PHP-sessieopslag
 - Cache opruimen op basis van tags zonder loops van `foreach`
@@ -22,9 +22,9 @@ Voorbeelden van geldige functies zijn:
 
 Raadpleeg de volgende bronnen voor installatie en configuratie van de Valkey-software:
 
-- [&#x200B; Download Valkey pagina &#x200B;](https://valkey.io/download/)
-- [&#x200B; Valkey snel begin &#x200B;](https://valkey.io/topics/quickstart/)
-- [&#x200B; Valkey documentatiepagina &#x200B;](https://valkey.io/docs)
+- [Valkey-pagina downloaden](https://valkey.io/download/){target="_blank"}
+- [Snelstarten met Valkey](https://valkey.io/topics/quickstart/){target="_blank"}
+- [Documentatiepagina Valkey](https://valkey.io/docs){target="_blank"}
 
 ## Valkey-configuratie instellen
 
@@ -38,7 +38,7 @@ Adobe raadt aan dat tijdens sessies geldige gegevens naar de schijf worden gekop
 
 - **voegt slechts Dossier** (AOF) toe slaat elke schrijfverrichting die naar Valkey in een dagboekdossier wordt verzonden op. Valkey leest dit dossier bij nieuw begin slechts en gebruikt het om de originele dataset te herstellen.
 
-U kunt zowel de opties RDB als AOF tegelijkertijd inschakelen. Voor extra details met inbegrip van de voordelen en de nadelen van de persistentieopties, zie de [&#x200B; documentatie van de Persistentie van de Sleutel &#x200B;](https://valkey.io/topics/persistence/).
+U kunt zowel de opties RDB als AOF tegelijkertijd inschakelen. Voor extra details met inbegrip van de voordelen en de nadelen van de persistentieopties, zie de [ documentatie van de Persistentie van de Sleutel ](https://valkey.io/topics/persistence/).
 
 Voor de cacheinstantie moet u de instantie zo instellen dat deze groot genoeg is om de gehele Commerce-cache op te slaan. De groottevereisten zijn afhankelijk van verschillende factoren, zoals het aantal producten en de winkelweergave. Als uitgangspunt kunt u de grootte van de cachemap op uw bestandssysteem gebruiken. Als de map `var/cache` op uw bestandssysteem bijvoorbeeld 5 GB is, stelt u de instantie Valkey in met ten minste 5 GB om te starten. Voor de cacheinstantie is persistentie niet vereist omdat de Commerce-cache kan worden hersteld.
 

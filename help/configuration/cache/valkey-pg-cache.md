@@ -1,21 +1,47 @@
 ---
-title: Valkey gebruiken voor standaardcache
-description: Leer hoe u Valkey configureert als de standaardcache voor Adobe Commerce. Ontdek opdrachtregelopstelling, configuratieopties en validatietechnieken.
+title: Valkey configureren voor standaard- en paginacache
+description: Leer hoe u Valkey configureert als de standaard- en paginacacheback voor Adobe Commerce. Ontdek CLI bevelen, env.php montages, en verbindingscontrole.
 feature: Configuration, Cache
 exl-id: d0baa2a6-8aa8-4f3f-9edf-102d621430e0
-source-git-commit: 48624d70761117ed0b9f8a7be913fce0572577b6
+source-git-commit: d20f9d38a06fcd0eed872fe6f7ef1f3ee015a00f
 workflow-type: tm+mt
-source-wordcount: '1084'
+source-wordcount: '1262'
 ht-degree: 0%
 
 ---
 
 
-# Valkey gebruiken voor standaardcache
+# Valkey configureren voor standaard- en paginacache
 
-Commerce biedt opdrachtregelopties om de Valkey-pagina en de standaardcaching te configureren. Hoewel u caching kunt vormen door het `<Commerce-install-dir>app/etc/env.php` dossier uit te geven, is het gebruiken van de bevellijn de geadviseerde methode, vooral voor aanvankelijke configuraties. De bevellijn verstrekt bevestiging, die de configuratie verzekeren syntactisch correct is.
+Commerce biedt opdrachtregelopties voor het configureren van de standaardwaarden voor Valkey en het in cache plaatsen van pagina&#39;s. Hoewel u caching kunt vormen door het `<Commerce-install-dir>app/etc/env.php` dossier uit te geven, is het gebruiken van de bevellijn de geadviseerde methode, vooral voor aanvankelijke configuraties. De bevellijn verstrekt bevestiging, die de configuratie verzekeren syntactisch correct is.
 
-U moet [&#x200B; Valkey &#x200B;](config-redis.md#install-redis) installeren alvorens verder te gaan.
+**Vereiste:**
+
+[ installeer Valkey ](config-valkey.md#install-valkey) alvorens verder te gaan.
+
+## Ondersteunde frameworks
+
+
+>[!BEGINTABS]
+
+>[!TAB  Gebied Geheime voorgeheugen (2.4.8 en vroeger) ]
+
+- **Gebied Geheime voorgeheugen van het Gebied (2.4.8 en vroeger)** — De achtergrond van de Verouderde Valtoets voor Commerce 2.4.8 en vroeger:
+   - **Verouderde Valse backend** — Gebruikt de volledige klassenweg (`Magento\Framework\Cache\Backend\Valkey`)
+   - **Preload sleutels** — Steunt het vooraf laden van vaak gebruikte geheim voorgeheugensleutels
+   - **manuscripten Lua** — Lua voor huisvuilinzameling
+   - **Compressie** — Steunt gegevenscompressie
+
+>[!TAB  het Geheime voorgeheugen van de Symfony (2.4.9+) ]
+
+- **het Geheime voorgeheugen van de Symfony (2.4.9+)** — Beginnend met Commerce 2.4.9, verstrekt het Geheime voorgeheugen van de Symfony een moderne, volgzame het in het voorgeheugen onderbrengende implementatie PSR-6 voor Valkey met significante prestatiesverbeteringen:
+   - **Automatische Valkey die** door buizen leidt — stapelt veelvoudige verrichtingen in enige verzoeken in, die latentie verminderen
+   - **PSR-6 TagAwareAdapter** — Efficiënte op markering-gebaseerde geheim voorgeheugenbevestiging met atomische verrichtingen
+   - **Igbinary rangschikking** - de Binaire rangschikking vermindert geheim voorgeheugeningangsgrootte met 45% en verbetert snelheid door 5-10%
+   - **Verbeterde blijvende verbindingen** — stabielere verbinding die met betere behandeling van verfprocessen samenvoegt
+   - **Geoptimaliseerde manuscripten van Lua** — Server-zijuitvoering die met het buizen leiden voor maximumefficiency wordt gecombineerd
+
+>[!ENDTABS]
 
 ## Standaardcaching voor sleutels configureren
 
@@ -25,26 +51,22 @@ Voer de opdracht `setup:config:set` uit en geef parameters op voor het standaard
 bin/magento setup:config:set --cache-backend=valkey --cache-backend-valkey-<parameter>=<value>...
 ```
 
-- `--cache-backend=valkey` schakelt de standaardcaching voor sleutels in. Laat deze parameter weg als deze functie reeds is toegelaten.
+- `--cache-backend=valkey` schakelt de standaardcaching van Valkey in. Laat deze parameter weg als deze functie reeds is toegelaten.
 
 - `--cache-backend-valkey-<parameter>=<value>` is een lijst van zeer belangrijk-waardeparen die het gebrek caching vormen:
 
->[!NOTE]
->
->Beginnend met **Adobe Commerce 2.4.9-alpha2**, **Valkey** heeft officieel Redis in CLI tooling wegens veranderingen in het verlenen van vergunningen vervangen. Valkey is een vork van Redis en behoudt vrijwel dezelfde functionaliteit. Voor **versies 2.4.8 en vroeger**, blijven de bevelen CLI die worden gebruikt om Valkey te vormen het zelfde als die voor Redis, die naadloze achterwaartse verenigbaarheid verzekeren en migratie of dubbel-milieu steun vereenvoudigen. In het volgende voorbeeld wordt de opdracht Valkey-specific getoond.
-
-```shell
-bin/magento setup:config:set --cache-backend=valkey --cache-backend-valkey-<parameter>=<value>...
-```
+{{valkey-redis-cli-note}}
 
 | Opdrachtregelparameter | Waarde | Betekenis | Standaardwaarde |
 |---------------------------------| --------- |--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------| ------------- |
 | `cache-backend-valkey-server` | server | Volledig gekwalificeerde hostnaam, IP-adres of een absoluut pad naar een UNIX-socket. De standaardwaarde van `127.0.0.1` geeft aan dat Valkey is geïnstalleerd op de Commerce-server. | `127.0.0.1` |
 | `cache-backend-valkey-port` | poort | Luisterpoort Valkey-server | `6379` |
-| `cache-backend-valkey-db` | database | Vereist als u Valkey gebruikt voor zowel het standaard als volledig-paginacachegeheugen. U moet het databasenummer van een van de caches opgeven. het andere geheime voorgeheugengebruik `0` door gebrek.<br><br>**Belangrijk**: Als u Valkey voor meer dan één type caching gebruikt, moeten de gegevensbestandaantallen verschillend zijn. Adobe raadt u aan het standaard cachedatabasenummer aan `0` toe te wijzen, het databasenummer voor het in cache plaatsen van pagina&#39;s in te stellen op `1` en het databasenummer voor de sessieopslag op `2` . | `0` |
-| `cache-backend-valkey-password` | password | Als u een Valkey-wachtwoord configureert, wordt een van de ingebouwde beveiligingsfuncties ingeschakeld: de opdracht `auth` , die vereist dat clients worden geverifieerd voor toegang tot de database. Het wachtwoord wordt direct geconfigureerd in het configuratiebestand van Valkey: `/etc/valkey/valkey.conf` | |
+| `cache-backend-valkey-db` | database | Vereist als u Valkey gebruikt voor zowel het standaard als volledig-paginacachegeheugen. Geef het databasenummer van een van de cache op; het andere geheime voorgeheugengebruik `0` door gebrek.<br><br>**Belangrijk**: Als u Valkey voor meer dan één type caching gebruikt, moeten de gegevensbestandaantallen verschillend zijn. Adobe raadt u aan het standaard cachedatabasenummer aan `0` toe te wijzen, het databasenummer voor het in cache plaatsen van pagina&#39;s in te stellen op `1` en het databasenummer voor de sessieopslag op `2` . | `0` |
+| `cache-backend-valkey-password` | password | Als u een Valkey-wachtwoord configureert, wordt een van de ingebouwde beveiligingsfuncties ingeschakeld: de opdracht `auth` , die vereist dat clients worden geverifieerd voor toegang tot de database. Het wachtwoord wordt direct gevormd in het configuratiedossier van Valkey: `/etc/valkey/valkey.conf` | |
+| `cache-backend-valkey-use-lua` | use_lua | LUA in- of uitschakelen. <br><br>**LUA**: Lua stelt ons in staat om een deel van de toepassingslogica binnen Valkey uit te voeren, die prestaties verbetert en gegevensconsistentie door zijn atomische uitvoering verzekert. | `0` |
+| `cache-backend-valkey-use-lua-on-gc` | use_lua_on_gc | Schakel LUA in of uit voor opschonen. <br><br>**LUA**: Lua stelt ons in staat om een deel van de toepassingslogica binnen Valkey uit te voeren, die prestaties verbetert en gegevensconsistentie door zijn atomische uitvoering verzekert. | `1` |
 
-### Voorbeeld, opdracht
+## Voorbeeld, opdracht (standaardcache)
 
 In het volgende voorbeeld wordt standaard het in cache plaatsen van Valkey ingeschakeld, wordt de host ingesteld op `127.0.0.1` en wordt het databasenummer toegewezen aan `0` . Valkey gebruikt standaardwaarden voor alle andere parameters.
 
@@ -52,15 +74,9 @@ In het volgende voorbeeld wordt standaard het in cache plaatsen van Valkey inges
 bin/magento setup:config:set --cache-backend=valkey --cache-backend-valkey-server=127.0.0.1 --cache-backend-valkey-db=0
 ```
 
->[!NOTE]
->
->Beginnend met **Adobe Commerce 2.4.9-alpha2**, **Valkey** heeft officieel Redis in CLI tooling wegens veranderingen in het verlenen van vergunningen vervangen. Valkey is een vork van Redis en behoudt vrijwel dezelfde functionaliteit. Voor **versies 2.4.8 en vroeger**, blijven de bevelen CLI die worden gebruikt om Valkey te vormen het zelfde als die voor Redis, die naadloze achterwaartse verenigbaarheid verzekeren en migratie of dubbel-milieu steun vereenvoudigen. In het volgende voorbeeld wordt de opdracht Valkey-specific getoond.
+{{valkey-redis-cli-note}}
 
-```shell
-bin/magento setup:config:set --cache-backend=redis --cache-backend-redis-server=127.0.0.1 --cache-backend-redis-db=0
-```
-
-## Pagina in cache plaatsen configureren
+## Opslaan van geldige pagina&#39;s in cache configureren
 
 Als u het in cache plaatsen van Valkey-pagina op Commerce wilt configureren, voert u de opdracht `setup:config:set` uit met extra parameters.
 
@@ -74,22 +90,14 @@ Met de volgende parameters:
 
 - `--page-cache-valkey-<parameter>=<value>` is een lijst van sleutel-en-waardeparen die pagina in het voorgeheugen onderbrengen vormen:
 
->[!NOTE]
->
->Beginnend met **Adobe Commerce 2.4.9-alpha2**, **Valkey** heeft officieel Redis in CLI tooling wegens veranderingen in het verlenen van vergunningen vervangen. Valkey is een vork van Redis en behoudt vrijwel dezelfde functionaliteit. Voor **versies 2.4.8 en vroeger**, blijven de bevelen CLI die worden gebruikt om Valkey te vormen het zelfde als die voor Redis, die naadloze achterwaartse verenigbaarheid verzekeren en migratie of dubbel-milieu steun vereenvoudigen. In het volgende voorbeeld wordt de opdracht Valkey-specific getoond.
-
-```shell
-bin/magento setup:config:set --page-cache=redis --page-cache-redis-<parameter>=<value>...
-```
-
 | Opdrachtregelparameter | Waarde | Betekenis | Standaardwaarde |
-|------------------------------| --------- |-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------| ------------- |
+|----------------------------------------| --------- |---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------| ------------- |
 | `page-cache-valkey-server` | server | Volledig gekwalificeerde hostnaam, IP-adres of een absoluut pad naar een UNIX-socket. De standaardwaarde van `127.0.0.1` geeft aan dat Valkey is geïnstalleerd op de Commerce-server. | `127.0.0.1` |
 | `page-cache-valkey-port` | poort | De luisterpoort van de Valkey-server. | `6379` |
-| `page-cache-valkey-db` | database | Vereist als u Valkey gebruikt voor zowel standaard als volledig-paginacache. U moet het databasenummer van een van de caches opgeven. het andere geheime voorgeheugengebruik `0` door gebrek.<br/>**Belangrijk**: Als u Valkey voor meer dan één type caching gebruikt, moeten de gegevensbestandaantallen verschillend zijn. U wordt aangeraden het standaarddatabasenummer voor caching toe te wijzen aan `0` , het databasenummer voor het in cache plaatsen van pagina&#39;s aan `1` en het databasenummer voor sessieopslag aan `2` . | `0` |
+| `page-cache-valkey-db` | database | Vereist als u Valkey gebruikt voor zowel standaard als volledig-paginacache. Geef het databasenummer van een van de cache op; het andere geheime voorgeheugengebruik `0` door gebrek.<br/>**Belangrijk**: Als u Valkey voor meer dan één type caching gebruikt, moeten de gegevensbestandaantallen verschillend zijn. U wordt aangeraden het standaarddatabasenummer voor caching toe te wijzen aan `0` , het databasenummer voor het in cache plaatsen van pagina&#39;s aan `1` en het databasenummer voor sessieopslag aan `2` . | `0` |
 | `page-cache-valkey-password` | password | Als u een Valkey-wachtwoord configureert, wordt een van de ingebouwde beveiligingsfuncties ingeschakeld: de opdracht `auth` , die vereist dat clients worden geverifieerd voor toegang tot de database. Vorm het wachtwoord binnen het Valkey configuratiedossier: `/etc/valkey/valkey.conf` | |
 
-### Voorbeeld, opdracht
+### Voorbeeld, opdracht (paginacache)
 
 In het volgende voorbeeld wordt het in cache plaatsen van Valkey-pagina ingeschakeld, wordt de host ingesteld op `127.0.0.1` en wordt het databasenummer toegewezen aan `1` . Alle andere parameters worden ingesteld op de standaardwaarde.
 
@@ -97,17 +105,15 @@ In het volgende voorbeeld wordt het in cache plaatsen van Valkey-pagina ingescha
 bin/magento setup:config:set --page-cache=valkey --page-cache-valkey-server=127.0.0.1 --page-cache-valkey-db=1
 ```
 
->[!NOTE]
->
->Beginnend met **Adobe Commerce 2.4.9-alpha2**, **Valkey** heeft officieel Redis in CLI tooling wegens veranderingen in het verlenen van vergunningen vervangen. Valkey is een vork van Redis en behoudt vrijwel dezelfde functionaliteit. Voor **versies 2.4.8 en vroeger**, blijven de bevelen CLI die worden gebruikt om Valkey te vormen het zelfde als die voor Redis, die naadloze achterwaartse verenigbaarheid verzekeren en migratie of dubbel-milieu steun vereenvoudigen. In het volgende voorbeeld wordt de opdracht Valkey-specific getoond.
+{{valkey-redis-cli-note}}
 
-```shell
-bin/magento setup:config:set --page-cache=redis --page-cache-redis-server=127.0.0.1 --page-cache-valkey-db=1
-```
+### Commerce-omgevingsconfiguratie controleren
 
-## Resultaten
+Als u de opdrachten uitvoert om Valkey-caching te configureren, wordt de Commerce-omgevingsconfiguratie (`<Commerce-install-dir>app/etc/env.php`) bijgewerkt:
 
-Als resultaat van de twee voorbeeldopdrachten voegt Commerce soortgelijke regels toe aan `<Commerce-install-dir>app/etc/env.php` :
+>[!BEGINTABS]
+
+>[!TAB  Gebied Geheime voorgeheugen (2.4.8 en vroeger) ]
 
 ```php
 'cache' => [
@@ -133,31 +139,49 @@ Als resultaat van de twee voorbeeldopdrachten voegt Commerce soortgelijke regels
 ],
 ```
 
-## Nieuwe Valkey-cache-implementatie
-
-[!BADGE &#x200B; 2.4.9-alpha &#x200B;]{type=Negative tooltip="Alleen beschikbaar in 2.4.9-alfa."}
-
-Vanaf Adobe Commerce 2.4.9 raadt Adobe u aan de Valkey-cache-implementatie te gebruiken: `\Magento\Framework\Cache\Backend\Valkey`.
+>[!TAB  het Geheime voorgeheugen van de Symfony (2.4.9+) ]
 
 ```php
 'cache' => [
     'frontend' => [
         'default' => [
-            'backend' => '\\Magento\\Framework\\Cache\\Backend\\Valkey',
+            'backend' => 'valkey',
             'backend_options' => [
                 'server' => '127.0.0.1',
                 'database' => '0',
                 'port' => '6379'
             ],
         ],
+        'page_cache' => [
+            'backend' => 'valkey',
+            'backend_options' => [
+                'server' => '127.0.0.1',
+                'port' => '6379',
+                'database' => '1',
+                'compress_data' => '0'
+            ]
+        ]
+    ]
 ],
 ```
 
-## Functie Voorladen van Valkey
+>[!NOTE]
+>
+>Vanaf Commerce 2.4.9 gebruikt u het vereenvoudigde achtergrondtype `'backend' => 'valkey'` in plaats van het volledige klassenpad. Het Geheime voorgeheugen van de symfony wordt automatisch gebruikt wanneer de vereenvoudigde naam wordt gespecificeerd.
+
+>[!ENDTABS]
+
+## Aanvullende opties voor caching configureren
+
+### Functie Voorladen van Valkey
 
 Aangezien Commerce configuratiegegevens opslaat in de cache van Valkey, kunt u vooraf gegevens laden die opnieuw worden gebruikt tussen pagina&#39;s. Als u toetsen wilt zoeken die vooraf moeten worden geladen, analyseert u de gegevens die van Valkey naar Commerce worden overgebracht. Adobe stelt voor om gegevens die op elke pagina worden geladen, zoals `SYSTEM_DEFAULT` , `EAV_ENTITY_TYPES` en `DB_IS_UP_TO_DATE` , vooraf te laden.
 
-Valkey gebruikt `pipeline` voor samengestelde laadaanvragen. Toetsen moeten het databasevoorvoegsel bevatten; Als het databasevoorvoegsel bijvoorbeeld `061_` is, ziet de voorlaadsleutel er als volgt uit: `061_SYSTEM_DEFAULT`
+Valkey gebruikt `pipeline` voor samengestelde laadaanvragen. Toetsen moeten het databasevoorvoegsel bevatten; Als het databasevoorvoegsel bijvoorbeeld `061_` is, ziet de voorlaadtoets er als volgt uit: `061_SYSTEM_DEFAULT`
+
+>[!BEGINTABS]
+
+>[!TAB  Gebied Geheime voorgeheugen ]
 
 ```php
 'cache' => [
@@ -187,6 +211,38 @@ Valkey gebruikt `pipeline` voor samengestelde laadaanvragen. Toetsen moeten het 
 ]
 ```
 
+>[!TAB  het Geheime voorgeheugen van de Symfony ]
+
+```php
+'cache' => [
+    'frontend' => [
+        'default' => [
+            'id_prefix' => '061_',
+            'backend' => 'valkey',
+            'backend_options' => [
+                'server' => 'valkey',
+                'database' => '0',
+                'port' => '6379',
+                'password' => '',
+                'compress_data' => '1',
+                'compression_lib' => '',
+                'preload_keys' => [
+                    '061_EAV_ENTITY_TYPES',
+                    '061_GLOBAL_PLUGIN_LIST',
+                    '061_DB_IS_UP_TO_DATE',
+                    '061_SYSTEM_DEFAULT',
+                ],
+            ]
+        ],
+        'page_cache' => [
+            'id_prefix' => '061_'
+        ]
+    ]
+]
+```
+
+>[!ENDTABS]
+
 Wanneer u de functie voor voorladen gebruikt met een L2-cache, moet u het achtervoegsel `:hash` aan de toetsen toevoegen. Het L2 geheime voorgeheugen brengt slechts de knoeiboel van de gegevens over, niet de daadwerkelijke gegevens.
 
 ```php
@@ -198,10 +254,9 @@ Wanneer u de functie voor voorladen gebruikt met een L2-cache, moet u het achter
 ],
 ```
 
-## Parallelle generatie
+### Parallelle generatie
 
-Vanaf de Commerce 2.4.0-release heeft Adobe de optie `allow_parallel_generation` geïntroduceerd voor gebruikers die wachten op vergrendelingen willen elimineren.
-Deze functie is standaard uitgeschakeld en Adobe raadt u aan deze uit te schakelen totdat u te veel configuraties en/of blokken hebt.
+Vanaf de Commerce 2.4.0-release heeft Adobe de optie `allow_parallel_generation` geïntroduceerd voor gebruikers die wachten op vergrendelingen niet meer hoeven te wachten. Deze functie is standaard uitgeschakeld en Adobe raadt u aan deze uit te schakelen totdat u te veel configuraties en/of blokken hebt.
 
 **om parallelle generatie** toe te laten:
 
@@ -209,7 +264,11 @@ Deze functie is standaard uitgeschakeld en Adobe raadt u aan deze uit te schakel
 bin/magento setup:config:set --allow-parallel-generation
 ```
 
-Aangezien het een vlag is, kunt u het met een bevel niet onbruikbaar maken. U moet de configuratiewaarde handmatig instellen op `false` :
+Aangezien het een vlag is, kunt u het met een bevel niet onbruikbaar maken. Stel handmatig de configuratiewaarde in op `false` :
+
+>[!BEGINTABS]
+
+>[!TAB  Gebied Geheime voorgeheugen ]
 
 ```php
     'cache' => [
@@ -218,7 +277,7 @@ Aangezien het een vlag is, kunt u het met een bevel niet onbruikbaar maken. U mo
                 'id_prefix' => 'b0b_',
                 'backend' => 'Magento\\Framework\\Cache\\Backend\\Valkey',
                 'backend_options' => [
-                    'server' => 'redis',
+                    'server' => 'valkey',
                     'database' => '0',
                     'port' => '6379',
                     'password' => '',
@@ -234,9 +293,209 @@ Aangezien het een vlag is, kunt u het met een bevel niet onbruikbaar maken. U mo
     ],
 ```
 
+>[!TAB  het Geheime voorgeheugen van de Symfony ]
+
+```php
+    'cache' => [
+        'frontend' => [
+            'default' => [
+                'id_prefix' => 'b0b_',
+                'backend' => 'valkey',
+                'backend_options' => [
+                    'server' => 'valkey',
+                    'database' => '0',
+                    'port' => '6379',
+                    'serializer' => 'igbinary',
+                    'compress_data' => '1',
+                    'compression_lib' => 'gzip'
+                ]
+            ],
+            'page_cache' => [
+                'id_prefix' => 'b0b_'
+            ]
+        ],
+        'allow_parallel_generation' => false
+    ],
+```
+
+>[!ENDTABS]
+
+## Optimalisatie van Symfony Cache-prestaties
+
+Als u Symfony Cache gebruikt, kunt u prestaties verder optimaliseren door de Igbinary serializer te vormen, de igbinary extensie PHP en phpredis te installeren, en blijvende verbindingen toe te laten.
+
+### Igbinary serializer
+
+De Igbinary serializer verstrekt significante prestatiesverbeteringen over de standaardrangschikking van PHP. Deze moet handmatig worden geconfigureerd in `app/etc/env.php` :
+
+```php
+'cache' => [
+    'frontend' => [
+        'default' => [
+            'backend_options' => [
+                'server' => 'valkey',
+                'database' => '0',
+                'port' => '6379',
+                'serializer' => 'igbinary',  // Enable Igbinary serialization
+            ]
+        ],
+        'page_cache' => [
+            'backend_options' => [
+                'server' => 'valkey',
+                'database' => '1',
+                'port' => '6379',
+                'serializer' => 'igbinary',  // Enable Igbinary for page cache too
+            ]
+        ]
+    ]
+]
+```
+
+### De extensie PHP Igbinary installeren
+
+Om de igbinary rangschikking te gebruiken, moet u de PHP Igbinary uitbreiding installeren.
+
+**Gebruikend apt (geadviseerd voor Debian/Ubuntu)**:
+
+```bash
+sudo apt-get install php-igbinary
+sudo systemctl restart php-fpm
+php -m | grep igbinary
+```
+
+**Gebruikend pecl (alternatieve methode)**:
+
+```bash
+sudo pecl install igbinary
+echo "extension=igbinary.so" | sudo tee /etc/php/8.3/mods-available/igbinary.ini
+sudo phpenmod igbinary
+sudo systemctl restart php-fpm
+php -m | grep igbinary
+```
+
+### PHP Redis-extensies: phpredis vs Predis
+
+Commerce 2.4.9+ bevat automatische fallback tussen phpredis (native C-extensie) en Predis (pure PHP-bibliotheek). Installeer de volgende phpredis voor optimale prestaties:
+
+**Gebruikend apt (geadviseerd voor Debian/Ubuntu)**:
+
+```bash
+sudo apt-get install php-redis
+sudo systemctl restart php-fpm
+php -m | grep redis
+```
+
+**Gebruikend pecl (alternatieve methode)**:
+
+```bash
+sudo pecl install redis
+echo "extension=redis.so" | sudo tee /etc/php/8.3/mods-available/redis.ini
+sudo phpenmod redis
+sudo systemctl restart php-fpm
+php -m | grep redis
+```
+
+**vergelijking van Prestaties**:
+
+| Bewerking | Predis | phpredis | Verbetering |
+|-----------|--------|----------|-------------|
+| Cache GET | 1-5 ms | 0,5-2 ms | 2-3 keer sneller |
+| Cacheset | 2-6 ms | 0,8 - 2,5 ms | 2-3 keer sneller |
+| Tagbewerkingen | 10-30 ms | 3-10 ms | 3-4 keer sneller |
+
+### Blijvende verbindingen
+
+Blijvende verbindingen maken opnieuw gebruik van bestaande Valkey-verbindingen tussen verschillende aanvragen, waardoor cachebewerkingen van 5 tot 15% sneller verlopen. Configureren in `app/etc/env.php` :
+
+```php
+'cache' => [
+    'frontend' => [
+        'default' => [
+            'backend_options' => [
+                'server' => 'valkey',
+                'database' => '0',
+                'port' => '6379',
+                'persistent' => '1',
+                'persistent_id' => 'cache_default',
+                'timeout' => '2.5',
+                'read_timeout' => '2.0',
+            ]
+        ],
+        'page_cache' => [
+            'backend_options' => [
+                'server' => 'valkey',
+                'database' => '1',
+                'port' => '6379',
+                'persistent' => '1',
+                'persistent_id' => 'cache_fpc',
+            ]
+        ]
+    ]
+]
+```
+
+>[!IMPORTANT]
+>
+>Gebruik voor elk cachetype een unieke `persistent_id` om verbindingsconflicten te voorkomen.
+
+### Volledige geoptimaliseerde configuratie
+
+Hier is een productie-klaar configuratie die alle prestatiesoptimalisaties combineert:
+
+```php
+'cache' => [
+    'frontend' => [
+        'default' => [
+            'id_prefix' => 'b0b_',
+            'backend' => 'valkey',
+            'backend_options' => [
+                'server' => 'valkey',
+                'database' => '0',
+                'port' => '6379',
+                'serializer' => 'igbinary',
+                'compress_data' => '1',
+                'compression_lib' => 'gzip',
+                'persistent' => '1',
+                'persistent_id' => 'cache_default',
+                'timeout' => '2.5',
+                'read_timeout' => '2.0',
+                'use_lua' => '1',
+                'use_lua_on_gc' => '1',
+                'preload_keys' => [
+                    'b0b_EAV_ENTITY_TYPES',
+                    'b0b_GLOBAL_PLUGIN_LIST',
+                    'b0b_DB_IS_UP_TO_DATE',
+                    'b0b_SYSTEM_DEFAULT',
+                ],
+            ]
+        ],
+        'page_cache' => [
+            'id_prefix' => 'b0b_',
+            'backend' => 'valkey',
+            'backend_options' => [
+                'server' => 'valkey',
+                'database' => '1',
+                'port' => '6379',
+                'serializer' => 'igbinary',
+                'compress_data' => '0',
+                'persistent' => '1',
+                'persistent_id' => 'cache_fpc',
+            ]
+        ]
+    ],
+    'allow_parallel_generation' => false
+]
+```
+
 ## Valkeyverbinding verifiëren
 
-Als u wilt controleren of Valkey en Commerce goed samenwerken, meldt u zich aan bij de server waarop Valkey wordt uitgevoerd, opent u een terminal en gebruikt u de opdracht `valkey-cli monitor` of `redis-cli ping` .
+Ga als volgt te werk om te controleren of Valkey en Commerce goed samenwerken:
+
+1. Meld u aan bij de server waarop Valkey en Commerce worden uitgevoerd.
+1. Open een terminal.
+1. Controleer de verbinding met de opdracht `valkey-cli monitor` of `valkey-cli ping` .
+
+Als de opdrachten slagen, wordt Valkey uitgevoerd en kan deze communiceren met de Commerce-toepassing. Als ze mislukken, is er een verbindingsprobleem tussen Valkey en Commerce dat u moet oplossen.
 
 ### Valkey, opdracht
 
@@ -281,4 +540,5 @@ Als beide opdrachten zijn uitgevoerd, wordt Valkey op de juiste wijze ingesteld.
 
 ### Gecomprimeerde gegevens controleren
 
-Om samengeperste zittingsgegevens en het paginacachegeheugen te inspecteren, [&#x200B; RESP.app &#x200B;](https://flathub.org/apps/app.resp.RESP) steunt automatische decompressie van Commerce 2 zitting en paginacache en toont PHP zittingsgegevens in een mens-leesbaar formaat.
+Om samengeperste zittingsgegevens en paginacache te inspecteren, gebruik het {](https://flathub.org/apps/app.resp.RESP) hulpmiddel 0} RESP.app. [Deze ondersteunt automatische decompressie van Commerce 2-sessies en cachegegevens van pagina&#39;s en geeft PHP-sessiegegevens weer in een voor mensen leesbare indeling.
+

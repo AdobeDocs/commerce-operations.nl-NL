@@ -2,10 +2,10 @@
 user-guide-title: Configuratiegids
 user-guide-description: Configureer uw Adobe Commerce-toepassingsfuncties en -services.
 feature: Configuration
-source-git-commit: d86b9eb07a9da6dc93234f8a02103c543bbead68
+source-git-commit: 605b2e59d200bc8eeab43e91006a3f95e6a6c138
 workflow-type: tm+mt
-source-wordcount: '372'
-ht-degree: 0%
+source-wordcount: '399'
+ht-degree: 1%
 
 ---
 
@@ -34,28 +34,28 @@ ht-degree: 0%
       + [Omgevingsvariabelen gebruiken](deployment/example-environment-variables.md)
 + Cache {#cache}
    + [Overzicht van caching](cache/caching-overview.md)
-   + [Cachetypen](cache/cache-types.md)
-   + [Cacheopties](cache/cache-options.md)
-   + [L2-cache](cache/level-two-cache.md)
+   + [Vooruiteinden van cache configureren](cache/cache-types.md)
+   + [Achtergrondopties cache](cache/cache-options.md)
+   + [L2-cacheconfiguratie](cache/level-two-cache.md)
    + Redis {#redis}
-      + [Redis configureren](cache/config-redis.md)
-      + [Redis gebruiken voor standaardcache](cache/redis-pg-cache.md)
-      + [Redis gebruiken voor sessieopslag](cache/redis-session.md)
-      + [ElastiCache voor EC2-instanties configureren](cache/redis-elasticache-for-ec2.md)
+      + [Redis installeren en instellen](cache/config-redis.md)
+      + [Redis configureren voor standaard- en paginacache](cache/redis-pg-cache.md)
+      + [Redis voor sessieopslag configureren](cache/redis-session.md)
+      + [Redis configureren met AWS ElastiCache](cache/redis-elasticache-for-ec2.md)
    + Valkey {#valkey}
-      + [Valkey configureren](cache/config-valkey.md)
-      + [Valkey gebruiken voor standaardcache](cache/valkey-pg-cache.md)
-      + [Valkey gebruiken voor sessieopslag](cache/valkey-session.md)
+      + [Valkey installeren en instellen](cache/config-valkey.md)
+      + [Valkey configureren voor standaard- en paginacache](cache/valkey-pg-cache.md)
+      + [Valkey configureren voor sessieopslag](cache/valkey-session.md)
    + Varnish {#varnish}
       + [Varnish, overzicht](cache/config-varnish.md)
       + [Varnish installeren](cache/config-varnish-install.md)
-   + [Webserver](cache/config-varnish-server.md)
-   + [Commerce-toepassing configureren](cache/configure-varnish-commerce.md)
-   + [Geavanceerde Varnish-configuratie](cache/config-varnish-advanced.md)
-   + [Cache wissen](cache/use-varnish-cache.md)
-   + [Cache wissen van meerdere instanties van Varnish](cache/use-multiple-varnish-cache.md)
-   + [Varnish-configuratie verifiëren](cache/config-varnish-final.md)
-   + [Varnish ESI-blok](cache/use-varnish-esi.md)
+      + [De webserver configureren](cache/config-varnish-server.md)
+      + [Commerce-toepassing configureren](cache/configure-varnish-commerce.md)
+      + [Geavanceerde Varnish-configuratie](cache/config-varnish-advanced.md)
+      + [Varnish-configuratie verifiëren](cache/config-varnish-final.md)
+      + [Cache wissen met Varnish](cache/use-varnish-cache.md)
+      + [Cache wissen met meerdere instanties van Varnish](cache/use-multiple-varnish-cache.md)
+      + [Varnish ESI-blok](cache/use-varnish-esi.md)
    + [Statische inhoudcache](cache/static-content-signing.md)
 + Opdrachtregel {#cli}
    + [Gereedschap Command-lijn](cli/config-cli.md)
@@ -151,4 +151,4 @@ ht-degree: 0%
       + [Gesplitste database verifiëren](storage/multi-master-verify.md)
       + [Database-replicatie](storage/multi-master-replication.md)
       + [Eén database herstellen](storage/revert-split-database.md)
-+ [&#x200B; Terugkeer aan Operationele Gidsen &#x200B;](https://experienceleague.adobe.com/docs/commerce-operations/operational-guides/home.html?lang=nl-NL)
++ [Terugkeren naar operationele hulplijnen](https://experienceleague.adobe.com/docs/commerce-operations/operational-guides/home.html)

@@ -3,7 +3,7 @@ title: Apache configureren voor uw zoekmachine
 description: Voer de volgende stappen uit om een zoekmachine te configureren met de Apache-webserver voor installaties in de bedrijfsruimten van Adobe Commerce.
 feature: Install, Search
 exl-id: b35c95a7-0c00-48e5-b37d-7c9e17feebec
-source-git-commit: 48624d70761117ed0b9f8a7be913fce0572577b6
+source-git-commit: 87302734f3ff91f0403beac283ff21925d89318d
 workflow-type: tm+mt
 source-wordcount: '657'
 ht-degree: 0%
@@ -18,9 +18,9 @@ ht-degree: 0%
 
 >[!NOTE]
 >
->Ondersteuning voor OpenSearch is toegevoegd in 2.4.4. OpenSearch is een compatibele vork van Elasticsearch. Zie [&#x200B; Elasticsearch migreren aan OpenSearch &#x200B;](../../../upgrade/prepare/opensearch-migration.md) voor meer informatie.
+>Ondersteuning voor OpenSearch is toegevoegd in 2.4.4. OpenSearch is een compatibele vork van Elasticsearch. Zie [ Elasticsearch migreren aan OpenSearch ](../../../upgrade/prepare/opensearch-migration.md) voor meer informatie.
 
-Deze sectie bespreekt hoe te om Apache als *onveilige* volmacht te vormen zodat Adobe Commerce een onderzoeksmotor kan gebruiken die op deze server loopt. In deze sectie wordt het instellen van HTTP Basic-verificatie niet besproken. dat in [&#x200B; Veilige communicatie met Apache &#x200B;](#secure-communication-with-apache) wordt besproken.
+Deze sectie bespreekt hoe te om Apache als *onveilige* volmacht te vormen zodat Adobe Commerce een onderzoeksmotor kan gebruiken die op deze server loopt. In deze sectie wordt het instellen van HTTP Basic-verificatie niet besproken. dat in [ Veilige communicatie met Apache ](#secure-communication-with-apache) wordt besproken.
 
 >[!NOTE]
 >
@@ -84,7 +84,7 @@ Deze sectie bespreekt hoe te om een volmacht te vormen gebruikend een virtuele g
 
 ## Beveiligde communicatie met Apache
 
-Deze sectie bespreekt hoe te om communicatie tussen Apache en de onderzoeksmotor te beveiligen gebruikend [&#x200B; Basisauthentificatie van HTTP &#x200B;](https://datatracker.ietf.org/doc/html/rfc2617) met Apache. Raadpleeg een van de volgende bronnen voor meer opties:
+Deze sectie bespreekt hoe te om communicatie tussen Apache en de onderzoeksmotor te beveiligen gebruikend [ Basisauthentificatie van HTTP ](https://datatracker.ietf.org/doc/html/rfc2617) met Apache. Raadpleeg een van de volgende bronnen voor meer opties:
 
 * [Zelfstudie over verificatie en autorisatie voor Apache 2.4](https://httpd.apache.org/docs/2.4/howto/auth.html)
 
@@ -174,7 +174,7 @@ htpasswd /usr/local/apache/password/.htpasswd <username>
 
 ### Beveiligde communicatie met Apache
 
-Deze sectie bespreekt hoe te opstelling [&#x200B; de Basisauthentificatie van HTTP &#x200B;](https://httpd.apache.org/docs/2.2/howto/auth.html). Als u TLS en HTTP Basic-verificatie gebruikt, kan niemand communicatie met Elasticsearch of OpenSearch of met uw toepassingsserver onderscheppen.
+Deze sectie bespreekt hoe te opstelling [ de Basisauthentificatie van HTTP ](https://httpd.apache.org/docs/2.2/howto/auth.html). Als u TLS en HTTP Basic-verificatie gebruikt, kan niemand communicatie met Elasticsearch of OpenSearch of met uw toepassingsserver onderscheppen.
 
 In deze sectie wordt besproken hoe u kunt opgeven wie toegang heeft tot de Apache-server.
 
@@ -211,4 +211,4 @@ In deze sectie wordt besproken hoe u kunt opgeven wie toegang heeft tot de Apach
 
 {{$include /help/_includes/verify-secure-communication.md}}
 
-<!-- Last updated from includes: 2024-07-18 15:50:54 -->
+<!-- Last updated from includes: 2026-04-17 13:49:36 -->
