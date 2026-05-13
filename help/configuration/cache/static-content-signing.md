@@ -35,7 +35,7 @@ Hierdoor wordt de URL van de statische bestanden gewijzigd en wordt de browser g
 
 Commerce schakelt deze functie standaard in en Adobe raadt aan deze functie ingeschakeld te houden om problemen te voorkomen die te maken hebben met browsers die oude statische bronnen gebruiken.
 
-De configuratie voor het ondertekenen van statische inhoud vindt u in [**[!UICONTROL Stores]**> Instellingen > Configuratie >**[!UICONTROL Advanced]**>**[!UICONTROL Developer]**>**[!UICONTROL Static Files Settings]**](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/tools/developer-tools#static-file-signatures) .
+De configuratie voor het ondertekenen van statische inhoud vindt u in [**[!UICONTROL Stores]**> Instellingen > Configuratie >**[!UICONTROL Advanced]**>**[!UICONTROL Developer]**>**[!UICONTROL Static Files Settings]**](https://experienceleague.adobe.com/nl/docs/commerce-admin/systems/tools/developer-tools#static-file-signatures) .
 
 - **slechts op-gebouw**: Deze configuratie is beschikbaar als uw plaats **niet** op [&#x200B; wijze van de Productie &#x200B;](../bootstrap/application-modes.md#production-mode) is.
 - **Wolk**: Deze configuratie wordt verborgen omdat de wijze van de Productie strikt wordt afgedwongen; daarom moet u de opdrachtregel gebruiken zoals hieronder wordt getoond.
