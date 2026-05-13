@@ -16,7 +16,7 @@ De Commerce-toepassing gebruikt een cachefront op laag niveau en biedt toegang t
 
 >[!NOTE]
 >
->Voor details over frontend geheim voorgeheugenconfiguratie, zie [ voorkanten van het geheime voorgeheugen vormen ](cache-types.md).
+>Voor details over frontend geheim voorgeheugenconfiguratie, zie [&#x200B; voorkanten van het geheime voorgeheugen vormen &#x200B;](cache-types.md).
 
 ## Opties voor achtergrondcache
 
@@ -25,13 +25,13 @@ De volgende tabel geeft een overzicht van de beschikbare backend-caches:
 | Achtergrond | Beschrijving | Configuratiegids |
 | ------- | ----------- | ------------------- |
 | Bestandssysteem | Standaard. Hiermee worden cachegegevens opgeslagen in bestanden onder `var/cache/` . Geen configuratie vereist. | NVT |
-| [ Redis ](config-redis.md) | Opslag van gegevens in het geheugen voor krachtige caching. | [ Redis van het Gebruik voor standaardgeheime voorgeheugen ](redis-pg-cache.md) |
-| [ Valkey ](config-valkey.md) | Open-source, Redis-compatibel alternatief. | [ Valkey van het Gebruik voor standaardgeheime voorgeheugen ](valkey-pg-cache.md) |
-| [ Gegevensbestand ](https://developer.adobe.com/commerce/php/development/cache/partial/database-caching/) | Door database ondersteund in cache plaatsen. | [ creeer de motoren van het douanegeheime voorgeheugen ](https://developer.adobe.com/commerce/php/development/cache/partial/database-caching/){target="_blank"} (de documentatie van de ontwikkelaar van Adobe) |
+| [&#x200B; Redis &#x200B;](config-redis.md) | Opslag van gegevens in het geheugen voor krachtige caching. | [&#x200B; Redis van het Gebruik voor standaardgeheime voorgeheugen &#x200B;](redis-pg-cache.md) |
+| [&#x200B; Valkey &#x200B;](config-valkey.md) | Open-source, Redis-compatibel alternatief. | [&#x200B; Valkey van het Gebruik voor standaardgeheime voorgeheugen &#x200B;](valkey-pg-cache.md) |
+| [&#x200B; Gegevensbestand &#x200B;](https://developer.adobe.com/commerce/php/development/cache/partial/database-caching/) | Door database ondersteund in cache plaatsen. | [&#x200B; creeer de motoren van het douanegeheime voorgeheugen &#x200B;](https://developer.adobe.com/commerce/php/development/cache/partial/database-caching/){target="_blank"} (de documentatie van de ontwikkelaar van Adobe) |
 
 >[!NOTE]
 >
->[ Varkenshaar ](config-varnish.md) behandelt volledige pagina caching op het niveau van HTTP en gebruikt niet de laag-vlakke geheim voorgeheugensteun.
+>[&#x200B; Varkenshaar &#x200B;](config-varnish.md) behandelt volledige pagina caching op het niveau van HTTP en gebruikt niet de laag-vlakke geheim voorgeheugensteun.
 
 ## Implementatiebenaderingen
 
@@ -96,4 +96,4 @@ Voor volledige configuratieopties, zie:
 - [Valkey gebruiken voor standaardcache](valkey-pg-cache.md)
 - [L2-cacheconfiguratie](level-two-cache.md)
 
-Zie de [ documentatie van Laminas ](https://docs.laminas.dev/) voor erfenis Zend-based opties.
+Zie de [&#x200B; documentatie van Laminas &#x200B;](https://docs.laminas.dev/) voor erfenis Zend-based opties.

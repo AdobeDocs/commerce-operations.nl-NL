@@ -25,11 +25,11 @@ Deze handleiding biedt een holistisch overzicht van de [!DNL Site-Wide Analysis 
 >
 >Nadat u een aanbeveling hebt toegepast, kan het enkele dagen duren voordat deze wordt bijgewerkt in het dashboard of het gegenereerde rapport van het hulpprogramma voor de analyse voor de hele site.
 >
->De [!DNL Site-Wide Analysis Tool] rapporteert gegevens op systeemniveau. Voor rapporten over het product van Adobe Commerce, verkoop, marketing, en andere gegevens van de handelstoepassing, zie [ Rapporten van Adobe Commerce ](https://experienceleague.adobe.com/en/docs/commerce-admin/start/reporting/reports-menu).
+>De [!DNL Site-Wide Analysis Tool] rapporteert gegevens op systeemniveau. Voor rapporten over het product van Adobe Commerce, verkoop, marketing, en andere gegevens van de handelstoepassing, zie [&#x200B; Rapporten van Adobe Commerce &#x200B;](https://experienceleague.adobe.com/en/docs/commerce-admin/start/reporting/reports-menu).
 
-![ plaats-brede het dashboard van het Hulpmiddel van de Analyse ](../../assets/tools/swat-dashboard.png){width="700" zoomable="yes"}
+![&#x200B; plaats-brede het dashboard van het Hulpmiddel van de Analyse &#x200B;](../../assets/tools/swat-dashboard.png){width="700" zoomable="yes"}
 
-Zie deze [ inleidende video ](https://www.youtube.com/watch?v=KW2R8ki_RG4) om meer te leren.
+Zie deze [&#x200B; inleidende video &#x200B;](https://www.youtube.com/watch?v=KW2R8ki_RG4) om meer te leren.
 
 ## Overzicht van gereedschappen
 
@@ -44,10 +44,10 @@ Het bevat ook een historisch overzicht waarin wordt bijgehouden hoe de gezondhei
 
 - **Informatie** - verstrekt de informatie van het klantencontact en een samenvatting van huidige kaartjes, van gedetailleerde informatie over elk geïnstalleerd product van Adobe Commerce.
 
-- **Aanbevelingen** - Verstrekt de Score van de Index van de Gezondheid van de a [ SWAT ](swat-health-index.md) aan de gezondheid van de spoorplaats en lijsten aanbevelingen die op beste praktijken worden gebaseerd om kwesties te richten die op uw plaats worden ontdekt:
+- **Aanbevelingen** - Verstrekt de Score van de Index van de Gezondheid van de a [&#x200B; SWAT &#x200B;](swat-health-index.md) aan de gezondheid van de spoorplaats en lijsten aanbevelingen die op beste praktijken worden gebaseerd om kwesties te richten die op uw plaats worden ontdekt:
    - Voor wijzigingen die een infrastructuurupdate vereisen, dient u een supportverzoek in.
    - Breng de wijzigingen zelf aan voor wijzigingen die een toepassingsupdate vereisen.
-   - Voor veranderingen die handinterventie zoals de plaatsing van de a [ code ](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/architecture/pro-develop-deploy-workflow#deployment-workflow) vereisen, vraag uw systeembeheerder of ontwikkelaars voor hulp.
+   - Voor veranderingen die handinterventie zoals de plaatsing van de a [&#x200B; code &#x200B;](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/architecture/pro-develop-deploy-workflow#deployment-workflow) vereisen, vraag uw systeembeheerder of ontwikkelaars voor hulp.
 
 - **Uitzonderingen** - maakt een lijst van fouten die door de toepassing worden geworpen die door abnormale voorwaarden zonder een foutenmanager wordt veroorzaakt.
 
@@ -60,9 +60,9 @@ Het bevat ook een historisch overzicht waarin wordt bijgehouden hoe de gezondhei
 Belangrijke inzichten van uw site op één locatie weergeven. Met [!DNL Site-Wide Analysis Tool] hebt u rechtstreeks toegang tot en informatie van de [!UICONTROL Security Center Widget] , [!DNL Upgrade Compatibility Tool] en [!DNL Managed Alerts] .
 
 - **[!UICONTROL Security Center Widget]** - Geeft beveiligingsinzichten voor uw site weer.<br>
-De veiligheidsinformatie omvat  [!DNL Stack]  de Naleving van de Versie van de Tech [ { [!DNL end of life (EOL)]](https://experienceleague.adobe.com/en/docs/commerce-operations/installation-guide/system-requirements), [Adobe Security Bulletin](https://helpx.adobe.com/security/security-bulletin.html), [Recommendations from the [!DNL Security Scan Tool]](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/security/security-scan), and [[!DNL Site-Wide Analysis Tool]  Aanbevelingen van de Veiligheid van de Beste praktijken ](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/site-wide-analysis-tool/recommendations).
+De veiligheidsinformatie omvat  [!DNL Stack]  de Naleving van de Versie van de Tech [&#x200B; &lbrace; [!DNL end of life (EOL)]](https://experienceleague.adobe.com/en/docs/commerce-operations/installation-guide/system-requirements), [Adobe Security Bulletin](https://helpx.adobe.com/security/security-bulletin.html), [Recommendations from the [!DNL Security Scan Tool]](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/security/security-scan), and [[!DNL Site-Wide Analysis Tool]  Aanbevelingen van de Veiligheid van de Beste praktijken &#x200B;](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/site-wide-analysis-tool/recommendations).
 
-  [[!DNL Security Scan Tool] ](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/security/security-scan) voorziet Adobe Commerce en Magento open-Source klanten van inzicht in real time in de veiligheidshouding van hun opslag door malware proactively te ontdekken en hen te waarschuwen als hun opslag wordt gecompromitteerd.
+  [[!DNL Security Scan Tool] &#x200B;](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/security/security-scan) voorziet Adobe Commerce en Magento open-Source klanten van inzicht in real time in de veiligheidshouding van hun opslag door malware proactively te ontdekken en hen te waarschuwen als hun opslag wordt gecompromitteerd.
 
 - **[[!DNL Upgrade Compatibility Tool]](../../upgrade/upgrade-compatibility-tool/overview.md)** - Controleert uw Adobe Commerce-exemplaar op de upgradeversie en geeft kritieke problemen, fouten en waarschuwingen weer die moeten worden verholpen voordat de upgrade wordt uitgevoerd. Het oplossen van deze kwesties stroomlijnt het verbeteringsproces.&quot;
 

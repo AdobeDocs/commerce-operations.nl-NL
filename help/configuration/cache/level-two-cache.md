@@ -25,12 +25,12 @@ Er zijn twee beschikbare L2 geheim voorgeheugenimplementaties:
 
 | Implementatie | Versie | Beschrijving |
 | -------------- | ------- | ----------- |
-| [ Verouderd (`RemoteSynchronizedCache`) ](#legacy-l2-cache-configuration-remotesynchronizedcache) | 2,4 x | Cache van twee niveaus met `Cm_Cache_Backend_File` de waarde Zend voor lokale opslag |
-| [ Modern (`symfony_l2`) ](#modern-symfony-l2-cache-implementation) | 2.4.9+ | Symfony op cache gebaseerde L2 met PSR-6-compatibiliteit en verbeterde prestaties |
+| [&#x200B; Verouderd (`RemoteSynchronizedCache`) &#x200B;](#legacy-l2-cache-configuration-remotesynchronizedcache) | 2,4 x | Cache van twee niveaus met `Cm_Cache_Backend_File` de waarde Zend voor lokale opslag |
+| [&#x200B; Modern (`symfony_l2`) &#x200B;](#modern-symfony-l2-cache-implementation) | 2.4.9+ | Symfony op cache gebaseerde L2 met PSR-6-compatibiliteit en verbeterde prestaties |
 
 >[!INFO]
 >
->Voor Adobe Commerce op wolkeninfrastructuur, kunt u [ gebruiken stelt variabelen ](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure/env/stage/variables-deploy.html#redis_backend) voor L2 geheim voorgeheugenconfiguratie op.
+>Voor Adobe Commerce op wolkeninfrastructuur, kunt u [&#x200B; gebruiken stelt variabelen &#x200B;](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure/env/stage/variables-deploy.html#redis_backend) voor L2 geheim voorgeheugenconfiguratie op.
 
 ## Verouderde L2-cacheconfiguratie (RemoteSynchronizedCache)
 
@@ -167,7 +167,7 @@ De volgende code toont een voorbeeldconfiguratie:
 
 ## Moderne implementatie van Symfony L2-cache
 
-[!BADGE  2.4.9-bèta ]{type=Negative tooltip="Alleen beschikbaar in bèta-2.4.9."}
+[!BADGE &#x200B; 2.4.9-bèta &#x200B;]{type=Negative tooltip="Alleen beschikbaar in bèta-2.4.9."}
 
 Vanaf Commerce 2.4.9 kunt u de Symfony Cache-gebaseerde L2 cache-implementatie (`symfony_l2` backend) gebruiken, die een moderne, PSR-6-compatibele caching-implementatie biedt met aanzienlijke prestatieverbeteringen ten opzichte van de traditionele `RemoteSynchronizedCache` .
 
