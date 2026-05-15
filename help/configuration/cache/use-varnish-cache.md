@@ -16,7 +16,7 @@ Dit onderwerp bespreekt de grondbeginselen van het gebruiken van Varnish als web
 
 ## Varnish puring
 
-Volgens [ de documentatie van Varnish ](https://www.varnish-cache.org/docs/trunk/users-guide/purging.html), &quot;A *zuivering* is wat gebeurt wanneer u een voorwerp uit het geheime voorgeheugen plukt en het samen met zijn varianten verwerpen.&quot; Een lade van de Varnish is gelijkaardig aan een geheim voorgeheugenschoon bevel (of het klikken van **het Geheime voorgeheugen van Magento** in Admin).
+Volgens [&#x200B; de documentatie van Varnish &#x200B;](https://www.varnish-cache.org/docs/trunk/users-guide/purging.html), &quot;A *zuivering* is wat gebeurt wanneer u een voorwerp uit het geheime voorgeheugen plukt en het samen met zijn varianten verwerpen.&quot; Een lade van de Varnish is gelijkaardig aan een geheim voorgeheugenschoon bevel (of het klikken van **het Geheime voorgeheugen van Magento** in Admin).
 
 Als u de Commerce cache schoonmaakt, leegmaakt of vernieuwt, wordt Varnish ook gezuiverd.
 
@@ -42,7 +42,7 @@ Nadat u Varnish hebt geïnstalleerd en geconfigureerd om met Commerce te werken,
 
 ## Commerce configureren om vernis te zuiveren
 
-Commerce zuivert de gastheren van Varnish nadat u de gastheren van Varnish gebruikend het [`magento setup:config:set` ](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/cli-reference/commerce-on-premises#setupconfigset) bevel vormt.
+Commerce zuivert de gastheren van Varnish nadat u de gastheren van Varnish gebruikend het [`magento setup:config:set` &#x200B;](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/cli-reference/commerce-on-premises#setupconfigset) bevel vormt.
 
 U kunt de optionele parameter `--http-cache-hosts` gebruiken om een door komma&#39;s gescheiden lijst met varens-hosts op te geven en poorten te beluisteren. Vorm alle gastheren van Varnish, of u één of vele hebt. (Plaats geen spatie tussen de hosts.)
 
@@ -58,4 +58,4 @@ U kunt Varnish gastheren dan zuiveren wanneer u het geheime voorgeheugen van Com
 
 Om het geheime voorgeheugen te verfrissen gebruikend Admin, klik **[!UICONTROL SYSTEM]** > Hulpmiddelen > **het Beheer van het Geheime voorgeheugen**, dan klik **het Geheime voorgeheugen van Magento** bij de bovenkant van de pagina. (U kunt ook afzonderlijke cachetypen vernieuwen.)
 
-Om het geheime voorgeheugen te verfrissen gebruikend de bevellijn, gebruikt u typisch het [`magento cache:clean <type>`](../cli/manage-cache.md#clean-and-flush-cache-types) bevel als [ eigenaar van het dossiersysteem ](../../installation/prerequisites/file-system/overview.md).
+Om het geheime voorgeheugen te verfrissen gebruikend de bevellijn, gebruikt u typisch het [`magento cache:clean <type>`](../cli/manage-cache.md#clean-and-flush-cache-types) bevel als [&#x200B; eigenaar van het dossiersysteem &#x200B;](../../installation/prerequisites/file-system/overview.md).
