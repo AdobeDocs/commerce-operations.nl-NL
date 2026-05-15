@@ -24,15 +24,15 @@ Wanneer u producten bijwerkt via REST API op het niveau van de winkelweergave:
 
 Deze wijziging zorgt ervoor dat de opslagweergaven de standaardgaleriewaarden eenvoudig kunnen behouden of herstellen, verwarring verminderen en het galeriebeheer consistenter maken.
 
-_ACP2E-4358 - [&#x200B; de codebijdrage van GitHub &#x200B;](https://github.com/magento/magento2/commit/f7bbcb4e)_
+_ACP2E-4358 - [ de codebijdrage van GitHub ](https://github.com/magento/magento2/commit/f7bbcb4e)_
 
 ### Wijzigingen in GraphQL API
 
 #### `clearCart` GraphQL-mutatie is nu beschikbaar in Magento Open Source
 
-De [&#x200B; clearCart &#x200B;](https://developer.adobe.com/commerce/webapi/graphql/schema/cart/mutations/clear-cart/) mutatie van GraphQL is nu beschikbaar aan alle gebruikers van Magento Open Source. Voorheen was deze mutatie alleen toegankelijk in Adobe Commerce.
+De [ clearCart ](https://developer.adobe.com/commerce/webapi/graphql/schema/cart/mutations/clear-cart/) mutatie van GraphQL is nu beschikbaar aan alle gebruikers van Magento Open Source. Voorheen was deze mutatie alleen toegankelijk in Adobe Commerce.
 
-_AC-16683 - [&#x200B; GitHub codebijdrage &#x200B;](https://github.com/magento/magento2/commit/4449d914)_
+_AC-16683 - [ GitHub codebijdrage ](https://github.com/magento/magento2/commit/4449d914)_
 
 #### Fouten in de beschrijving van de GraphQL-mutatie van `applyGiftCardToCart`
 
@@ -111,7 +111,7 @@ _LYNX-955_
 
 #### Menu Handelingen voor raster met catalogusprijsregels
 
-Het **net van de Regels van de Prijs van de Catalogus** in Commerce Admin omvat nu een **3&rbrace; menu van Acties &lbrace;, toestaand verkopers om, veelvoudige regels te activeren te deactiveren of te schrappen meteen.** Dit brengt het beheer van de catalogusprijsregel in lijn met de bestaande bulkacties beschikbaar voor **Regels van de Prijs van de Kar**, beduidend verminderend de tijd die wordt vereist om grote regelreeksen te beheren.
+Het **net van de Regels van de Prijs van de Catalogus** in Commerce Admin omvat nu een **3} menu van Acties {, toestaand verkopers om, veelvoudige regels te activeren te deactiveren of te schrappen meteen.** Dit brengt het beheer van de catalogusprijsregel in lijn met de bestaande bulkacties beschikbaar voor **Regels van de Prijs van de Kar**, beduidend verminderend de tijd die wordt vereist om grote regelreeksen te beheren.
 
 _AC-13916_
 
@@ -119,7 +119,7 @@ _AC-13916_
 
 Met de voorvertoningsfunctie voor trapsgewijze voorvertoningen van mobiele apparaten die in de browser worden gesimuleerd, worden voorvertoningen van mobiele apparaten nu op de juiste wijze weergegeven, zodat verkopers kunnen zien hoe een gefaseerde update op een mobiel apparaat wordt weergegeven voordat het apparaat actief wordt.
 
-_ACP2E-3397 - [&#x200B; de codebijdrage van GitHub &#x200B;](https://github.com/magento/magento2/commit/520f9e30)_
+_ACP2E-3397 - [ de codebijdrage van GitHub ](https://github.com/magento/magento2/commit/520f9e30)_
 
 #### Nieuwe beheerdersconfiguratiecontroles gast en de fusiemontages van de klantenkar bij login
 
@@ -229,7 +229,7 @@ _LYNX-889_
 
 SRI-hash-opslag genereert nu afzonderlijke bestanden per gebied, thema en landinstelling in plaats van één groot `sri-hashes.json` -bestand. Deze wijziging zorgt ervoor dat alleen het desbetreffende hash-bestand voor elke pagina wordt geladen, waardoor de laadtijden van de pagina worden verbeterd en het geheugengebruik in winkels met meerdere thema&#39;s of landinstellingen wordt verminderd.
 
-_AC-16113 - [&#x200B; GitHub codebijdrage &#x200B;](https://github.com/magento/magento2/commit/bc83cd2c)_
+_AC-16113 - [ GitHub codebijdrage ](https://github.com/magento/magento2/commit/bc83cd2c)_
 
 #### Compatibiliteit toevoegen met PHPUnit 12
 
@@ -248,7 +248,7 @@ _AC-16117_
 Apache ActiveMQ Artemis is de aanbevolen lange-termijn berichtenmakelaar voor Adobe Commerce, aangedreven door end risico&#39;s aan het einde van de ondersteuning in verband met RabbitMQ 4.1. ActiveMQ Artemis wordt volledig ondersteund in Commerce releaselijnen 2.4.6 tot en met 2.4.9. Op Adobe Commerce Cloud wordt het geleverd als AWS ActiveMQ voor implementaties in de cloud. Zowel gebruikers in de wachtrij als uitgevers kunnen worden geconfigureerd voor gebruik van STOMP.
 
 
-De bestaande installaties RabbitMQ 4 blijven compatibel voor handelaren die verkiezen om hun huidige dienst van de berichtrij op de korte termijn te blijven gebruiken — zie [&#x200B; verenigbaarheid met RabbitMQ 4.2 &#x200B;](#add-compatibility-with-rabbitmq-42) hierboven toevoegen. Plan een migratie naar de Artemis van ActiveMQ voor steun op lange termijn.
+De bestaande installaties RabbitMQ 4 blijven compatibel voor handelaren die verkiezen om hun huidige dienst van de berichtrij op de korte termijn te blijven gebruiken — zie [ verenigbaarheid met RabbitMQ 4.2 ](#add-compatibility-with-rabbitmq-42) hierboven toevoegen. Plan een migratie naar de Artemis van ActiveMQ voor steun op lange termijn.
 
 _AC-14558_
 
@@ -302,7 +302,7 @@ _AC-14481_
 
 Als onderdeel van ononderbroken platformveiligheidscontrole, is de web-token JWT kaderafhankelijkheid geëvalueerd en bijgewerkt naar de recentste belangrijke versie, die toekomstige verenigbaarheid en sterke veiligheidsnormen voor symbolisch-gebaseerde authentificatie over de integratie van Commerce verzekert. Bestaande functionaliteit blijft volledig behouden.
 
-_AC-13209 - [&#x200B; GitHub codebijdrage &#x200B;](https://github.com/magento/magento2/commit/2bac8114) - [&#x200B; GitHub codebijdrage &#x200B;](https://github.com/magento/magento2/commit/09b36ebb) - [&#x200B; GitHub codebijdrage &#x200B;](https://github.com/magento/magento2/commit/33b81f28)_
+_AC-13209 - [ GitHub codebijdrage ](https://github.com/magento/magento2/commit/2bac8114) - [ GitHub codebijdrage ](https://github.com/magento/magento2/commit/09b36ebb) - [ GitHub codebijdrage ](https://github.com/magento/magento2/commit/33b81f28)_
 
 #### Adobe Commerce Functional Testing Framework bijgewerkt naar Symfony LTS-afhankelijkheden
 
@@ -314,7 +314,7 @@ _AC-13244_
 
 De `carlos-mg89/oauth` -bibliotheek van derden is vervangen door native PHP OAuth-functies, die de beveiliging verbeteren, externe afhankelijkheden verminderen en de stabiliteit van het platform verbeteren.
 
-_AC-14075 - [&#x200B; GitHub codebijdrage &#x200B;](https://github.com/magento/magento2/commit/7b8064f7)_
+_AC-14075 - [ GitHub codebijdrage ](https://github.com/magento/magento2/commit/7b8064f7)_
 
 #### De component Symfony Cache vervangt Zend_Cache
 
@@ -324,7 +324,7 @@ _AC-15823_
 
 #### WYSIWYG-editor migreerde van TinyMCE naar HugeRTE
 
-Wegens het eind van steun voor TinyMCE 5 en 6 en het verlenen van vergunningen onverenigbaarheden met TinyMCE 7, is de redacteur van Adobe Commerce WYSIWYG gemigreerd aan de open-bron [&#x200B; &#x200B;](https://hugerte.org/) redacteur HugeRTE. Deze migratie zorgt ervoor dat Adobe Commerce compatibel blijft met open-sourcinglicenties, bekende TinyMCE 6-kwetsbaarheden voorkomt en een moderne, ondersteunde bewerkingservaring biedt voor handelaren en ontwikkelaars.
+Wegens het eind van steun voor TinyMCE 5 en 6 en het verlenen van vergunningen onverenigbaarheden met TinyMCE 7, is de redacteur van Adobe Commerce WYSIWYG gemigreerd aan de open-bron [ ](https://hugerte.org/) redacteur HugeRTE. Deze migratie zorgt ervoor dat Adobe Commerce compatibel blijft met open-sourcinglicenties, bekende TinyMCE 6-kwetsbaarheden voorkomt en een moderne, ondersteunde bewerkingservaring biedt voor handelaren en ontwikkelaars.
 
 _AC-14568_
 
@@ -338,13 +338,13 @@ _AC-15160_
 
 Als onderdeel van de Adobe Commerce 2.4.9-platformupdates zijn alle Symfony-afhankelijkheden bijgewerkt naar de nieuwste Symfony LTS 7.4-versies. Alle aangepaste klassen die de kernklassen van Symfony uitbreiden, hebben typeverklaringen en methodehandtekeningen bijgewerkt die op de recentste vereisten van de Symfony worden gericht, verenigbaarheidskwesties verhinderen en een vlotte overgang aan de bijgewerkte kadercomponenten verzekeren.
 
-_AC-15170 - [&#x200B; GitHub codebijdrage &#x200B;](https://github.com/magento/magento2/commit/c127d10b)_
+_AC-15170 - [ GitHub codebijdrage ](https://github.com/magento/magento2/commit/c127d10b)_
 
 #### Alle PHPUnit-afhankelijkheid bijgewerkt naar versie 3
 
 De `allure-framework/allure-phpunit` afhankelijkheid is bijgewerkt naar belangrijke versie 3, die ondersteuning biedt voor PHP 8.4 en PHP 8.5 en de Allure-based testrapportstack moderniseert. De native afhankelijkheid die eerder werd vereist door oudere versies van Alure PHPUnit is verwijderd, waardoor installatie en onderhoud eenvoudiger zijn geworden.
 
-_AC-14548 - [&#x200B; GitHub codebijdrage &#x200B;](https://github.com/magento/magento2/commit/87b8b34e)_
+_AC-14548 - [ GitHub codebijdrage ](https://github.com/magento/magento2/commit/87b8b34e)_
 
 #### New Relic-rapportage bijgewerkt naar NerdGraph API
 
@@ -358,43 +358,43 @@ _AC-15461_
 
   De grafiekbibliotheek Chart.js van JavaScript aan versie 4.5.0 werd bijgewerkt om grafiekteruggevende prestaties te verbeteren, visuele mogelijkheden te verbeteren, en veiligheidskwetsbaarheid in het admin dashboard en rapporteringsmodules te richten.
 
-  _AC-14304, AC-15133 - [&#x200B; GitHub codebijdrage &#x200B;](https://github.com/magento/magento2/commit/768b4442), [&#x200B; GitHub codebijdrage &#x200B;](https://github.com/magento/magento2/commit/657f983e)_
+  _AC-14304, AC-15133 - [ GitHub codebijdrage ](https://github.com/magento/magento2/commit/768b4442), [ GitHub codebijdrage ](https://github.com/magento/magento2/commit/657f983e)_
 
 - **van de gebruiks dossier uploadt bibliotheek die aan versie 4.13.4 wordt bijgewerkt**
 
   De Uppy-bibliotheek voor het uploaden van bestanden is bijgewerkt naar versie 4.13.4 om de mogelijkheden voor het uploaden van bestanden te verbeteren, gebruikerservaring te verbeteren en beveiligingskwetsbaarheden in het verwerken van bestanden te verhelpen via de Adobe Commerce-beheerinterface en frontend-componenten.
 
-  _AC-14307 - [&#x200B; GitHub codebijdrage &#x200B;](https://github.com/magento/magento2/commit/eb491c05)_
+  _AC-14307 - [ GitHub codebijdrage ](https://github.com/magento/magento2/commit/eb491c05)_
 
 - **jQuery bevestigt bibliotheek bevorderd aan versie 1.21.0**
 
   De jQuery Validate-bibliotheek is bijgewerkt naar versie 1.21.0 om de validatiemogelijkheden van formulieren te verbeteren, gebruikerservaring te verbeteren en te zorgen voor moderne browsercompatibiliteit in alle Adobe Commerce-formulieren in zowel de beheerdersinterface als de frontendinterfaces.
 
-  _AC-14403 - [&#x200B; GitHub codebijdrage &#x200B;](https://github.com/magento/magento2/commit/98b2848a)_
+  _AC-14403 - [ GitHub codebijdrage ](https://github.com/magento/magento2/commit/98b2848a)_
 
 - **jQuery UI bibliotheek bevorderd aan versie 1.14.1**
 
   De jQuery-gebruikersinterfacebibliotheek is bijgewerkt naar versie 1.14.1 om de widgets van de gebruikersinterface te verbeteren, de toegankelijkheid te verbeteren en te zorgen voor moderne browsercompatibiliteit in alle Adobe Commerce-admin- en frontendinterfacecomponenten.
 
-  _AC-14417 - [&#x200B; GitHub codebijdrage &#x200B;](https://github.com/magento/magento2/commit/77c589a6)_
+  _AC-14417 - [ GitHub codebijdrage ](https://github.com/magento/magento2/commit/77c589a6)_
 
 - **Less.js CSS preprocessor die aan versie 4.2.2 wordt bevorderd**
 
   De CSS-preprocessor van Minder.js is bijgewerkt naar versie 4.2.2 om de prestaties van de CSS-compilatie te verbeteren, de syntaxisondersteuning te verbeteren en het proces voor het maken van thema&#39;s te moderniseren voor alle Adobe Commerce-thema&#39;s frontend en admin.
 
-  _AC-14418 - [&#x200B; GitHub codebijdrage &#x200B;](https://github.com/magento/magento2/commit/98b2848a)_
+  _AC-14418 - [ GitHub codebijdrage ](https://github.com/magento/magento2/commit/98b2848a)_
 
 - **de bibliotheek van de Tijdzone van het Moment die aan versie 0.5.43 wordt bevorderd**
 
   De tijdzonebibliotheek van het Moment (`moment-timezone-with-data.js`) aan versie 0.5.43 werd bijgewerkt om timezone behandelingsmogelijkheden te verbeteren, tijdzonegegevens met de recentste veranderingen van het Gegevensbestand van de Tijdzone van IANA bij te werken het Gegevensbestand van de Tijdzone, en datum en tijdverwerkingsnauwkeurigheid over alle internationale en multi-timezoneverrichtingen van Adobe Commerce te verbeteren.
 
-  _AC-14419 - [&#x200B; GitHub codebijdrage &#x200B;](https://github.com/magento/magento2/commit/98b2848a)_
+  _AC-14419 - [ GitHub codebijdrage ](https://github.com/magento/magento2/commit/98b2848a)_
 
 - **Underscore.js nutsbibliotheek die aan versie 1.13.7 wordt bevorderd**
 
   De Underscore.js-hulpprogrammabibliotheek is bijgewerkt naar versie 1.13.7 om de functionaliteit van JavaScript-programmering te verbeteren, de prestaties van gegevensmanipulatie te verbeteren en te zorgen voor moderne browsercompatibiliteit in alle Adobe Commerce-componenten voor frontend- en beheerinterface.
 
-  _AC-14420 - [&#x200B; GitHub codebijdrage &#x200B;](https://github.com/magento/magento2/commit/98b2848a)_
+  _AC-14420 - [ GitHub codebijdrage ](https://github.com/magento/magento2/commit/98b2848a)_
 
 ### Beveiliging
 
@@ -408,13 +408,13 @@ _AC-16245_
 
 Deze correctie verhelpt prestatievermindering in bulksgewijs asynchrone web API-eindpunten die zijn geïntroduceerd na de beveiligingspatch van APSB25-08, waardoor de verwachte uitvoeringstijden worden hersteld.
 
-_AC-14078 - [&#x200B; GitHub codebijdrage &#x200B;](https://github.com/magento/magento2/commit/9a7352b7)_
+_AC-14078 - [ GitHub codebijdrage ](https://github.com/magento/magento2/commit/9a7352b7)_
 
 #### Vereenvoudigde configuratie met twee verificatiefactoren
 
 Admin-gebruikers moeten nu slechts een van de door de handelaar ingeschakelde 2FA-providers (bijvoorbeeld Google Authenticator of U2F) configureren voor toegang tot het beheerpaneel. Extra toegelaten leveranciers kunnen later worden gevormd zoals nodig. Eerder, toen veelvoudige 2FA leveranciers werden toegelaten, werd elke gebruiker Admin vereist om alle hen te vormen alvorens zij konden binnen ondertekenen, die tot wrijving voor gebruikers leidde die geen toegang tot elke leverancier hadden.
 
-_AC-8253 - [&#x200B; GitHub codebijdrage &#x200B;](https://github.com/magento-commerce/security-package/commit/41e5a26bd36528cb6b1bdc27b249696a2c721779)_
+_AC-8253 - [ GitHub codebijdrage ](https://github.com/magento-commerce/security-package/commit/41e5a26bd36528cb6b1bdc27b249696a2c721779)_
 
 ### Verzending
 

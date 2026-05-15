@@ -17,7 +17,7 @@ Commerce biedt opdrachtregelopties voor het configureren van de standaardwaarden
 
 **Vereiste:**
 
-[&#x200B; installeer Valkey &#x200B;](config-valkey.md#install-valkey) alvorens verder te gaan.
+[ installeer Valkey ](config-valkey.md#install-valkey) alvorens verder te gaan.
 
 ## Ondersteunde frameworks
 
@@ -540,5 +540,5 @@ Als beide opdrachten zijn uitgevoerd, wordt Valkey op de juiste wijze ingesteld.
 
 ### Gecomprimeerde gegevens controleren
 
-Om samengeperste zittingsgegevens en paginacache te inspecteren, gebruik het {[&#128279;](https://flathub.org/apps/app.resp.RESP) hulpmiddel 0} RESP.app. Deze ondersteunt automatische decompressie van Commerce 2-sessies en cachegegevens van pagina&#39;s en geeft PHP-sessiegegevens weer in een voor mensen leesbare indeling.
+Om samengeperste zittingsgegevens en paginacache te inspecteren, gebruik het {](https://flathub.org/apps/app.resp.RESP) hulpmiddel 0} RESP.app. [Deze ondersteunt automatische decompressie van Commerce 2-sessies en cachegegevens van pagina&#39;s en geeft PHP-sessiegegevens weer in een voor mensen leesbare indeling.
 

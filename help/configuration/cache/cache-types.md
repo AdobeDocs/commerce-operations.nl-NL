@@ -12,15 +12,15 @@ ht-degree: 0%
 
 # Vooruiteinden van cache configureren
 
-Een cachefront is een interface tussen Commerce en de back-end van de cacheopslag. U kunt veelvoudige frontends, elk met verschillende achterste montages bepalen, en dan specifieke [&#x200B; geheim voorgeheugentypes &#x200B;](../cli/manage-cache.md#clean-and-flush-cache-types) toewijzen aan elk front.
+Een cachefront is een interface tussen Commerce en de back-end van de cacheopslag. U kunt veelvoudige frontends, elk met verschillende achterste montages bepalen, en dan specifieke [ geheim voorgeheugentypes ](../cli/manage-cache.md#clean-and-flush-cache-types) toewijzen aan elk front.
 
 Dit is nuttig wanneer u verschillende geheim voorgeheugenachtergronden of configuraties voor verschillende types van caching gegevens wilt gebruiken. U wilt bijvoorbeeld dat `full_page` in cache wordt geplaatst op een toegewezen Redis-database terwijl u een aparte database gebruikt voor `default` caching.
 
 ## De standaardvoorzijde gebruiken
 
-Commerce biedt een voorzijde voor de cache van `default` die geschikt is voor alle typen cache. Het breidt [&#x200B; Zend_Cache_Core &#x200B;](https://framework.zend.com/manual/1.12/en/zend.cache.frontends.html) uit door het [&#x200B; Magento\Framework\Cache\Core &#x200B;](https://github.com/magento/magento2/blob/2.4/lib/internal/Magento/Framework/Cache/Core.php) frontend geheime voorgeheugen uit te voeren.
+Commerce biedt een voorzijde voor de cache van `default` die geschikt is voor alle typen cache. Het breidt [ Zend_Cache_Core ](https://framework.zend.com/manual/1.12/en/zend.cache.frontends.html) uit door het [ Magento\Framework\Cache\Core ](https://github.com/magento/magento2/blob/2.4/lib/internal/Magento/Framework/Cache/Core.php) frontend geheime voorgeheugen uit te voeren.
 
-In de meeste gevallen hoeft u de voorkant niet aan te passen. U hoeft alleen de backend te configureren. Zie [&#x200B; achterste opties van het Geheime voorgeheugen &#x200B;](cache-options.md).
+In de meeste gevallen hoeft u de voorkant niet aan te passen. U hoeft alleen de backend te configureren. Zie [ achterste opties van het Geheime voorgeheugen ](cache-options.md).
 
 ## Een voorzijde voor een aangepaste cache definiëren
 
@@ -51,12 +51,12 @@ Als u een voorkant van een aangepaste cache wilt definiëren, voegt u de configu
 Waarbij:
 
 - `<unique frontend id>` — Een unieke naam voor de identificatie van de voorkant (bijvoorbeeld `default` , `page_cache` , `stale_cache_enabled` )
-- `<cache options>` — Het type van achtergrond en de opties voor dit vooruitlopen (zie [&#x200B; opties van het Geheime voorgeheugen &#x200B;](cache-options.md))
+- `<cache options>` — Het type van achtergrond en de opties voor dit vooruitlopen (zie [ opties van het Geheime voorgeheugen ](cache-options.md))
 - `<cache type>` — Een Commerce-cachetype dat aan dit front-end moet worden toegewezen (bijvoorbeeld `config` , `layout` , `block_html` , `full_page`)
 
 >[!TIP]
 >
->**Moderne implementatie van het Geheime voorgeheugen van het Symfony (2.4.9+):** Beginnend met Commerce 2.4.9, kunt u vereenvoudigde achterste types zoals `redis`, `valkey`, of `file` met de moderne implementatie van het Geheime voorgeheugen van het Symfony gebruiken. Zie [&#x200B; Redis van het Gebruik voor standaardgeheime voorgeheugen &#x200B;](redis-pg-cache.md) en [&#x200B; Valkey van het Gebruik voor standaardgeheime voorgeheugen &#x200B;](valkey-pg-cache.md) voor details.
+>**Moderne implementatie van het Geheime voorgeheugen van het Symfony (2.4.9+):** Beginnend met Commerce 2.4.9, kunt u vereenvoudigde achterste types zoals `redis`, `valkey`, of `file` met de moderne implementatie van het Geheime voorgeheugen van het Symfony gebruiken. Zie [ Redis van het Gebruik voor standaardgeheime voorgeheugen ](redis-pg-cache.md) en [ Valkey van het Gebruik voor standaardgeheime voorgeheugen ](valkey-pg-cache.md) voor details.
 
 ### Stap 2: Opties voor front-end en back-end configureren
 
@@ -80,7 +80,7 @@ U kunt de configuratieopties voor de voorste cache en de achterste cache opgeven
 Waarbij:
 
 - `<frontend_type>` — Het front-end cachetype op laag niveau. Geef een klassenaam op die compatibel is met `Zend\Cache\Core` .
-Als weggelaten, [&#x200B; Magento\Framework\Cache\Core &#x200B;](https://github.com/magento/magento2/blob/2.4/lib/internal/Magento/Framework/Cache/Core.php) wordt gebruikt.
+Als weggelaten, [ Magento\Framework\Cache\Core ](https://github.com/magento/magento2/blob/2.4/lib/internal/Magento/Framework/Cache/Core.php) wordt gebruikt.
 
 - `<frontend_option>` , `<frontend_option_value>` — De naam en waarde van de opties die het Commerce-framework als een associatieve array doorgeeft aan de frontend-cache bij het maken.
 
@@ -99,4 +99,4 @@ Als weggelaten, [&#x200B; Magento\Framework\Cache\Core &#x200B;](https://github.
 >
 >De moderne implementatie van het Geheime voorgeheugen van Symfony verstrekt betere prestaties door naleving PSR-6, Igbinary rangschikking, gzip compressie, manuscripten Lua, en blijvende verbindingen.
 
-Zie de [&#x200B; documentatie van Laminas &#x200B;](https://docs.laminas.dev/) voor op Zend-Gebaseerde opties, of de moderne gidsen van het Geheime voorgeheugen van het Symfony voor [&#x200B; Redis &#x200B;](redis-pg-cache.md) en [&#x200B; Valkey &#x200B;](valkey-pg-cache.md).
+Zie de [ documentatie van Laminas ](https://docs.laminas.dev/) voor op Zend-Gebaseerde opties, of de moderne gidsen van het Geheime voorgeheugen van het Symfony voor [ Redis ](redis-pg-cache.md) en [ Valkey ](valkey-pg-cache.md).

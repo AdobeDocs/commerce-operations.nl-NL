@@ -16,11 +16,11 @@ Commerce biedt opdrachtregelopties voor het configureren van de pagina Redis en 
 
 **Vereiste:**
 
-[&#x200B; installeer Redis &#x200B;](config-redis.md#install-redis) alvorens verder te gaan.
+[ installeer Redis ](config-redis.md#install-redis) alvorens verder te gaan.
 
 >[!NOTE]
 >
->Voor Commerce-instanties die worden gehost op EC2, kunt u AWS ElastiCache gebruiken in plaats van een lokale Redis-instantie. Zie [&#x200B; Elasticache voor instanties EC2 &#x200B;](redis-elasticache-for-ec2.md) vormen.
+>Voor Commerce-instanties die worden gehost op EC2, kunt u AWS ElastiCache gebruiken in plaats van een lokale Redis-instantie. Zie [ Elasticache voor instanties EC2 ](redis-elasticache-for-ec2.md) vormen.
 
 ## Ondersteunde frameworks
 
@@ -523,4 +523,4 @@ Als beide opdrachten slagen, wordt Redis op de juiste wijze ingesteld.
 
 ### Gecomprimeerde gegevens controleren
 
-Om samengeperste zittingsgegevens en paginacache te inspecteren, gebruik het {[&#128279;](https://flathub.org/apps/details/app.resp.RESP) hulpmiddel 0} RESP.app. Deze ondersteunt automatische decompressie van Commerce 2-sessies en cachegegevens van pagina&#39;s en geeft PHP-sessiegegevens weer in een voor mensen leesbare vorm.
+Om samengeperste zittingsgegevens en paginacache te inspecteren, gebruik het {](https://flathub.org/apps/details/app.resp.RESP) hulpmiddel 0} RESP.app. [Deze ondersteunt automatische decompressie van Commerce 2-sessies en cachegegevens van pagina&#39;s en geeft PHP-sessiegegevens weer in een voor mensen leesbare vorm.

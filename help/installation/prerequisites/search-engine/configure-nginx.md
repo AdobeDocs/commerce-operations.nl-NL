@@ -18,9 +18,9 @@ ht-degree: 0%
 
 >[!NOTE]
 >
->Ondersteuning voor OpenSearch is toegevoegd in 2.4.4. OpenSearch is een compatibele vork van Elasticsearch. Zie [&#x200B; Elasticsearch migreren aan OpenSearch &#x200B;](../../../upgrade/prepare/opensearch-migration.md) voor meer informatie.
+>Ondersteuning voor OpenSearch is toegevoegd in 2.4.4. OpenSearch is een compatibele vork van Elasticsearch. Zie [ Elasticsearch migreren aan OpenSearch ](../../../upgrade/prepare/opensearch-migration.md) voor meer informatie.
 
-Deze sectie bespreekt hoe te om nginx als *onveilige* volmacht te vormen zodat Adobe Commerce een onderzoeksmotor kan gebruiken die op deze server loopt. In deze sectie wordt het instellen van HTTP Basic-verificatie niet besproken. dat in [&#x200B; Veilige mededeling met nginx &#x200B;](#secure-communication-with-nginx) wordt besproken.
+Deze sectie bespreekt hoe te om nginx als *onveilige* volmacht te vormen zodat Adobe Commerce een onderzoeksmotor kan gebruiken die op deze server loopt. In deze sectie wordt het instellen van HTTP Basic-verificatie niet besproken. dat in [ Veilige mededeling met nginx ](#secure-communication-with-nginx) wordt besproken.
 
 >[!NOTE]
 >
@@ -81,9 +81,9 @@ In deze sectie wordt besproken hoe u kunt opgeven wie toegang heeft tot de nginx
 
 ## Beveiligde communicatie met nginx
 
-Deze sectie bespreekt hoe te opstelling [&#x200B; de Basisauthentificatie van HTTP &#x200B;](https://nginx.org/en/docs/http/ngx_http_auth_basic_module.html) met uw veilige volmacht. Als u TLS en HTTP Basic-verificatie gebruikt, kan niemand communicatie met Elasticsearch of OpenSearch of met uw toepassingsserver onderscheppen.
+Deze sectie bespreekt hoe te opstelling [ de Basisauthentificatie van HTTP ](https://nginx.org/en/docs/http/ngx_http_auth_basic_module.html) met uw veilige volmacht. Als u TLS en HTTP Basic-verificatie gebruikt, kan niemand communicatie met Elasticsearch of OpenSearch of met uw toepassingsserver onderscheppen.
 
-Omdat nginx nationaal authentificatie steunt van HTTP Basis, adviseren wij het over, bijvoorbeeld, [&#x200B; de authentificatie van de Samenvatting &#x200B;](https://www.nginx.com/resources/wiki/modules/auth_digest/), die niet in productie wordt geadviseerd.
+Omdat nginx nationaal authentificatie steunt van HTTP Basis, adviseren wij het over, bijvoorbeeld, [ de authentificatie van de Samenvatting ](https://www.nginx.com/resources/wiki/modules/auth_digest/), die niet in productie wordt geadviseerd.
 
 Aanvullende bronnen:
 
